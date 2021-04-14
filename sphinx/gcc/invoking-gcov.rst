@@ -369,66 +369,63 @@ is what you see when you use the basic :command:`gcov` facility:
 The file tmp.cpp.gcov contains output from :command:`gcov`.
 Here is a sample:
 
-.. code-block:: c++
-
-          -:    0:Source:tmp.cpp
-          -:    0:Working directory:/home/gcc/testcase
-          -:    0:Graph:tmp.gcno
-          -:    0:Data:tmp.gcda
-          -:    0:Runs:1
-          -:    0:Programs:1
-          -:    1:#include <stdio.h>
-          -:    2:
-          -:    3:template<class T>
-          -:    4:class Foo
-          -:    5:{
-          -:    6:  public:
-         1*:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<char>::Foo():
-      #####:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<int>::Foo():
-          1:    7:  Foo(): b (1000) {}
-  ------------------
-         2*:    8:  void inc () { b++; }
-  ------------------
-  Foo<char>::inc():
-      #####:    8:  void inc () { b++; }
-  ------------------
-  Foo<int>::inc():
-          2:    8:  void inc () { b++; }
-  ------------------
-          -:    9:
-          -:   10:  private:
-          -:   11:  int b;
-          -:   12:};
-          -:   13:
-          -:   14:template class Foo<int>;
-          -:   15:template class Foo<char>;
-          -:   16:
-          -:   17:int
-          1:   18:main (void)
-          -:   19:{
-          -:   20:  int i, total;
-          1:   21:  Foo<int> counter;
-          -:   22:
-          1:   23:  counter.inc();
-          1:   24:  counter.inc();
-          1:   25:  total = 0;
-          -:   26:
-         11:   27:  for (i = 0; i < 10; i++)
-         10:   28:    total += i;
-          -:   29:
-         1*:   30:  int v = total > 100 ? 1 : 2;
-          -:   31:
-          1:   32:  if (total != 45)
-      #####:   33:    printf ("Failure\n");
-          -:   34:  else
-          1:   35:    printf ("Success\n");
-          1:   36:  return 0;
-          -:   37:}
-
+        :option:`-:`    0:Source:tmp.cpp
+        :option:`-:`    0:Working directory:/home/gcc/testcase
+        :option:`-:`    0:Graph:tmp.gcno
+        :option:`-:`    0:Data:tmp.gcda
+        :option:`-:`    0:Runs:1
+        :option:`-:`    0:Programs:1
+        :option:`-:`    1:#include <stdio.h>
+        :option:`-:`    2:
+        :option:`-:`    3:template<class T>
+        :option:`-:`    4:class Foo
+        :option:`-:`    5:{
+        :option:`-:`    6:  public:
+       1*:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<char>::Foo():
+    #####:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<int>::Foo():
+        1:    7:  Foo(): b (1000) {}
+:option:`------------------`
+       2*:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<char>::inc():
+    #####:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<int>::inc():
+        2:    8:  void inc () { b++; }
+:option:`------------------`
+        :option:`-:`    9:
+        :option:`-:`   10:  private:
+        :option:`-:`   11:  int b;
+        :option:`-:`   12:};
+        :option:`-:`   13:
+        :option:`-:`   14:template class Foo<int>;
+        :option:`-:`   15:template class Foo<char>;
+        :option:`-:`   16:
+        :option:`-:`   17:int
+        1:   18:main (void)
+        :option:`-:`   19:{
+        :option:`-:`   20:  int i, total;
+        1:   21:  Foo<int> counter;
+        :option:`-:`   22:
+        1:   23:  counter.inc();
+        1:   24:  counter.inc();
+        1:   25:  total = 0;
+        :option:`-:`   26:
+       11:   27:  for (i = 0; i < 10; i++)
+       10:   28:    total += i;
+        :option:`-:`   29:
+       1*:   30:  int v = total > 100 ? 1 : 2;
+        :option:`-:`   31:
+        1:   32:  if (total != 45)
+    #####:   33:    printf ("Failure\n");
+        :option:`-:`   34:  else
+        1:   35:    printf ("Success\n");
+        1:   36:  return 0;
+        :option:`-:`   37:}
 Note that line 7 is shown in the report multiple times.  First occurrence
 presents total number of execution of the line and the next two belong
 to instances of class Foo constructors.  As you can also see, line 30 contains
@@ -437,79 +434,76 @@ some unexecuted basic blocks and thus execution count has asterisk symbol.
 When you use the :option:`-a` option, you will get individual block
 counts, and the output looks like this:
 
-.. code-block:: c++
-
-          -:    0:Source:tmp.cpp
-          -:    0:Working directory:/home/gcc/testcase
-          -:    0:Graph:tmp.gcno
-          -:    0:Data:tmp.gcda
-          -:    0:Runs:1
-          -:    0:Programs:1
-          -:    1:#include <stdio.h>
-          -:    2:
-          -:    3:template<class T>
-          -:    4:class Foo
-          -:    5:{
-          -:    6:  public:
-         1*:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<char>::Foo():
-      #####:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<int>::Foo():
-          1:    7:  Foo(): b (1000) {}
-  ------------------
-         2*:    8:  void inc () { b++; }
-  ------------------
-  Foo<char>::inc():
-      #####:    8:  void inc () { b++; }
-  ------------------
-  Foo<int>::inc():
-          2:    8:  void inc () { b++; }
-  ------------------
-          -:    9:
-          -:   10:  private:
-          -:   11:  int b;
-          -:   12:};
-          -:   13:
-          -:   14:template class Foo<int>;
-          -:   15:template class Foo<char>;
-          -:   16:
-          -:   17:int
-          1:   18:main (void)
-          -:   19:{
-          -:   20:  int i, total;
-          1:   21:  Foo<int> counter;
-          1:   21-block  0
-          -:   22:
-          1:   23:  counter.inc();
-          1:   23-block  0
-          1:   24:  counter.inc();
-          1:   24-block  0
-          1:   25:  total = 0;
-          -:   26:
-         11:   27:  for (i = 0; i < 10; i++)
-          1:   27-block  0
-         11:   27-block  1
-         10:   28:    total += i;
-         10:   28-block  0
-          -:   29:
-         1*:   30:  int v = total > 100 ? 1 : 2;
-          1:   30-block  0
-      %%%%%:   30-block  1
-          1:   30-block  2
-          -:   31:
-          1:   32:  if (total != 45)
-          1:   32-block  0
-      #####:   33:    printf ("Failure\n");
-      %%%%%:   33-block  0
-          -:   34:  else
-          1:   35:    printf ("Success\n");
-          1:   35-block  0
-          1:   36:  return 0;
-          1:   36-block  0
-          -:   37:}
-
+        :option:`-:`    0:Source:tmp.cpp
+        :option:`-:`    0:Working directory:/home/gcc/testcase
+        :option:`-:`    0:Graph:tmp.gcno
+        :option:`-:`    0:Data:tmp.gcda
+        :option:`-:`    0:Runs:1
+        :option:`-:`    0:Programs:1
+        :option:`-:`    1:#include <stdio.h>
+        :option:`-:`    2:
+        :option:`-:`    3:template<class T>
+        :option:`-:`    4:class Foo
+        :option:`-:`    5:{
+        :option:`-:`    6:  public:
+       1*:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<char>::Foo():
+    #####:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<int>::Foo():
+        1:    7:  Foo(): b (1000) {}
+:option:`------------------`
+       2*:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<char>::inc():
+    #####:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<int>::inc():
+        2:    8:  void inc () { b++; }
+:option:`------------------`
+        :option:`-:`    9:
+        :option:`-:`   10:  private:
+        :option:`-:`   11:  int b;
+        :option:`-:`   12:};
+        :option:`-:`   13:
+        :option:`-:`   14:template class Foo<int>;
+        :option:`-:`   15:template class Foo<char>;
+        :option:`-:`   16:
+        :option:`-:`   17:int
+        1:   18:main (void)
+        :option:`-:`   19:{
+        :option:`-:`   20:  int i, total;
+        1:   21:  Foo<int> counter;
+        1:   21 :option:`-block`  0
+        :option:`-:`   22:
+        1:   23:  counter.inc();
+        1:   23 :option:`-block`  0
+        1:   24:  counter.inc();
+        1:   24 :option:`-block`  0
+        1:   25:  total = 0;
+        :option:`-:`   26:
+       11:   27:  for (i = 0; i < 10; i++)
+        1:   27 :option:`-block`  0
+       11:   27 :option:`-block`  1
+       10:   28:    total += i;
+       10:   28 :option:`-block`  0
+        :option:`-:`   29:
+       1*:   30:  int v = total > 100 ? 1 : 2;
+        1:   30 :option:`-block`  0
+    %%%%%:   30 :option:`-block`  1
+        1:   30 :option:`-block`  2
+        :option:`-:`   31:
+        1:   32:  if (total != 45)
+        1:   32 :option:`-block`  0
+    #####:   33:    printf ("Failure\n");
+    %%%%%:   33 :option:`-block`  0
+        :option:`-:`   34:  else
+        1:   35:    printf ("Success\n");
+        1:   35 :option:`-block`  0
+        1:   36:  return 0;
+        1:   36 :option:`-block`  0
+        :option:`-:`   37:}
 In this mode, each basic block is only shown on one line - the last
 line of the block.  A multi-line block will only contribute to the
 execution count of that last line, and other lines will not be shown
@@ -525,92 +519,89 @@ As you can see, line 33 contains a basic block that was not executed.
 
 When you use the :option:`-b` option, your output looks like this:
 
-.. code-block:: c++
-
-          -:    0:Source:tmp.cpp
-          -:    0:Working directory:/home/gcc/testcase
-          -:    0:Graph:tmp.gcno
-          -:    0:Data:tmp.gcda
-          -:    0:Runs:1
-          -:    0:Programs:1
-          -:    1:#include <stdio.h>
-          -:    2:
-          -:    3:template<class T>
-          -:    4:class Foo
-          -:    5:{
-          -:    6:  public:
-         1*:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<char>::Foo():
-  function Foo<char>::Foo() called 0 returned 0% blocks executed 0%
-      #####:    7:  Foo(): b (1000) {}
-  ------------------
-  Foo<int>::Foo():
-  function Foo<int>::Foo() called 1 returned 100% blocks executed 100%
-          1:    7:  Foo(): b (1000) {}
-  ------------------
-         2*:    8:  void inc () { b++; }
-  ------------------
-  Foo<char>::inc():
-  function Foo<char>::inc() called 0 returned 0% blocks executed 0%
-      #####:    8:  void inc () { b++; }
-  ------------------
-  Foo<int>::inc():
-  function Foo<int>::inc() called 2 returned 100% blocks executed 100%
-          2:    8:  void inc () { b++; }
-  ------------------
-          -:    9:
-          -:   10:  private:
-          -:   11:  int b;
-          -:   12:};
-          -:   13:
-          -:   14:template class Foo<int>;
-          -:   15:template class Foo<char>;
-          -:   16:
-          -:   17:int
-  function main called 1 returned 100% blocks executed 81%
-          1:   18:main (void)
-          -:   19:{
-          -:   20:  int i, total;
-          1:   21:  Foo<int> counter;
-  call    0 returned 100%
-  branch  1 taken 100% (fallthrough)
-  branch  2 taken 0% (throw)
-          -:   22:
-          1:   23:  counter.inc();
-  call    0 returned 100%
-  branch  1 taken 100% (fallthrough)
-  branch  2 taken 0% (throw)
-          1:   24:  counter.inc();
-  call    0 returned 100%
-  branch  1 taken 100% (fallthrough)
-  branch  2 taken 0% (throw)
-          1:   25:  total = 0;
-          -:   26:
-         11:   27:  for (i = 0; i < 10; i++)
-  branch  0 taken 91% (fallthrough)
-  branch  1 taken 9%
-         10:   28:    total += i;
-          -:   29:
-         1*:   30:  int v = total > 100 ? 1 : 2;
-  branch  0 taken 0% (fallthrough)
-  branch  1 taken 100%
-          -:   31:
-          1:   32:  if (total != 45)
-  branch  0 taken 0% (fallthrough)
-  branch  1 taken 100%
-      #####:   33:    printf ("Failure\n");
-  call    0 never executed
-  branch  1 never executed
-  branch  2 never executed
-          -:   34:  else
-          1:   35:    printf ("Success\n");
-  call    0 returned 100%
-  branch  1 taken 100% (fallthrough)
-  branch  2 taken 0% (throw)
-          1:   36:  return 0;
-          -:   37:}
-
+        :option:`-:`    0:Source:tmp.cpp
+        :option:`-:`    0:Working directory:/home/gcc/testcase
+        :option:`-:`    0:Graph:tmp.gcno
+        :option:`-:`    0:Data:tmp.gcda
+        :option:`-:`    0:Runs:1
+        :option:`-:`    0:Programs:1
+        :option:`-:`    1:#include <stdio.h>
+        :option:`-:`    2:
+        :option:`-:`    3:template<class T>
+        :option:`-:`    4:class Foo
+        :option:`-:`    5:{
+        :option:`-:`    6:  public:
+       1*:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<char>::Foo():
+function Foo<char>::Foo() called 0 returned 0% blocks executed 0%
+    #####:    7:  Foo(): b (1000) {}
+:option:`------------------`
+Foo<int>::Foo():
+function Foo<int>::Foo() called 1 returned 100% blocks executed 100%
+        1:    7:  Foo(): b (1000) {}
+:option:`------------------`
+       2*:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<char>::inc():
+function Foo<char>::inc() called 0 returned 0% blocks executed 0%
+    #####:    8:  void inc () { b++; }
+:option:`------------------`
+Foo<int>::inc():
+function Foo<int>::inc() called 2 returned 100% blocks executed 100%
+        2:    8:  void inc () { b++; }
+:option:`------------------`
+        :option:`-:`    9:
+        :option:`-:`   10:  private:
+        :option:`-:`   11:  int b;
+        :option:`-:`   12:};
+        :option:`-:`   13:
+        :option:`-:`   14:template class Foo<int>;
+        :option:`-:`   15:template class Foo<char>;
+        :option:`-:`   16:
+        :option:`-:`   17:int
+function main called 1 returned 100% blocks executed 81%
+        1:   18:main (void)
+        :option:`-:`   19:{
+        :option:`-:`   20:  int i, total;
+        1:   21:  Foo<int> counter;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        :option:`-:`   22:
+        1:   23:  counter.inc();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   24:  counter.inc();
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   25:  total = 0;
+        :option:`-:`   26:
+       11:   27:  for (i = 0; i < 10; i++)
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+       10:   28:    total += i;
+        :option:`-:`   29:
+       1*:   30:  int v = total > 100 ? 1 : 2;
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        :option:`-:`   31:
+        1:   32:  if (total != 45)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   33:    printf ("Failure\n");
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        :option:`-:`   34:  else
+        1:   35:    printf ("Success\n");
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        1:   36:  return 0;
+        :option:`-:`   37:}
 For each function, a line is printed showing how many times the function
 is called, how many times it returns and what percentage of the
 function's blocks were executed.

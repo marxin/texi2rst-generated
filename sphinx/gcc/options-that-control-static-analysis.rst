@@ -13,28 +13,26 @@ This analysis is much more expensive than other GCC warnings.
 
 Enabling this option effectively enables the following warnings:
 
-.. code-block:: c++
-
-  -Wanalyzer-double-fclose 
-  -Wanalyzer-double-free 
-  -Wanalyzer-exposure-through-output-file 
-  -Wanalyzer-file-leak 
-  -Wanalyzer-free-of-non-heap 
-  -Wanalyzer-malloc-leak 
-  -Wanalyzer-mismatching-deallocation 
-  -Wanalyzer-possible-null-argument 
-  -Wanalyzer-possible-null-dereference 
-  -Wanalyzer-null-argument 
-  -Wanalyzer-null-dereference 
-  -Wanalyzer-shift-count-negative 
-  -Wanalyzer-shift-count-overflow 
-  -Wanalyzer-stale-setjmp-buffer 
-  -Wanalyzer-tainted-array-index 
-  -Wanalyzer-unsafe-call-within-signal-handler 
-  -Wanalyzer-use-after-free 
-  -Wanalyzer-use-of-pointer-in-stale-stack-frame 
-  -Wanalyzer-write-to-const 
-  -Wanalyzer-write-to-string-literal 
+:option:`-Wanalyzer-double-fclose` 
+:option:`-Wanalyzer-double-free` 
+:option:`-Wanalyzer-exposure-through-output-file` 
+:option:`-Wanalyzer-file-leak` 
+:option:`-Wanalyzer-free-of-non-heap` 
+:option:`-Wanalyzer-malloc-leak` 
+:option:`-Wanalyzer-mismatching-deallocation` 
+:option:`-Wanalyzer-possible-null-argument` 
+:option:`-Wanalyzer-possible-null-dereference` 
+:option:`-Wanalyzer-null-argument` 
+:option:`-Wanalyzer-null-dereference` 
+:option:`-Wanalyzer-shift-count-negative` 
+:option:`-Wanalyzer-shift-count-overflow` 
+:option:`-Wanalyzer-stale-setjmp-buffer` 
+:option:`-Wanalyzer-tainted-array-index` 
+:option:`-Wanalyzer-unsafe-call-within-signal-handler` 
+:option:`-Wanalyzer-use-after-free` 
+:option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
+:option:`-Wanalyzer-write-to-const` 
+:option:`-Wanalyzer-write-to-string-literal` 
 
 This option is only available if GCC was configured with analyzer
 support enabled.

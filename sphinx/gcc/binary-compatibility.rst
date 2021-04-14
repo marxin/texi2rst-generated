@@ -127,10 +127,7 @@ build was configured, but can be seen by using the G++ :option:`-v` option.
 With default configuration options for G++ 3.3 the compile line for a
 different C++ compiler needs to include
 
-.. code-block:: c++
-
-      -I :samp:`{gcc_install_directory}` /include/c++/3.3
-
+    :option:`-I`:samp:`{gcc_install_directory}` /include/c++/3.3
 Similarly, compiling code with G++ that must use a C++ library other
 than the GNU C++ library requires specifying the location of the header
 files for that other library.

@@ -457,17 +457,15 @@ in the following sections.
 *Linker Options*
   See :ref:`Options for Linking <link-options>`.
 
-  .. code-block:: c++
-
-    :samp:`{object-file-name}`  -fuse-ld= :samp:`{linker}`  -l :samp:`{library}` 
-    -nostartfiles  -nodefaultlibs  -nolibc  -nostdlib 
-    -e :samp:`{entry}`  --entry= :samp:`{entry}` 
-    -pie  -pthread  -r  -rdynamic 
-    -s  -static  -static-pie  -static-libgcc  -static-libstdc++ 
-    -static-libasan  -static-libtsan  -static-liblsan  -static-libubsan 
-    -shared  -shared-libgcc  -symbolic 
-    -T :samp:`{script}`  -Wl, :samp:`{option}`  -Xlinker :samp:`{option}` 
-    -u :samp:`{symbol}`  -z :samp:`{keyword}`
+  :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
+  :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` 
+  :option:`-e` :samp:`{entry}`  :option:`--entry`:samp:`={entry}` 
+  :option:`-pie`  :option:`-pthread`  :option:`-r`  :option:`-rdynamic` 
+  :option:`-s`  :option:`-static`  :option:`-static-pie`  :option:`-static-libgcc`  :option:`-static-libstdc++` 
+  :option:`-static-libasan`  :option:`-static-libtsan`  :option:`-static-liblsan`  :option:`-static-libubsan` 
+  :option:`-shared`  :option:`-shared-libgcc`  :option:`-symbolic` 
+  :option:`-T` :samp:`{script}`  :option:`-Wl,`:samp:`{option}`  :option:`-Xlinker` :samp:`{option}` 
+  :option:`-u` :samp:`{symbol}`  :option:`-z` :samp:`{keyword}`
 
 *Directory Options*
   See :ref:`Options for Directory Search <directory-options>`.
