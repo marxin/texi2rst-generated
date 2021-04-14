@@ -1,0 +1,60 @@
+  .. _cshift:
+
+``CSHIFT`` - Circular shift elements of an array
+************************************************
+
+.. index:: CSHIFT
+
+.. index:: array, shift circularly
+
+.. index:: array, permutation
+
+.. index:: array, rotate
+
+:samp:`{Description}:`
+  ``CSHIFT(ARRAY, SHIFT [, DIM])`` performs a circular shift on elements of
+  :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is omitted it is
+  taken to be ``1``.  :samp:`{DIM}` is a scalar of type ``INTEGER`` in the
+  range of 1 \leq DIM \leq n) where n is the rank of :samp:`{ARRAY}`.
+  If the rank of :samp:`{ARRAY}` is one, then all elements of :samp:`{ARRAY}` are shifted
+  by :samp:`{SHIFT}` places.  If rank is greater than one, then all complete rank one
+  sections of :samp:`{ARRAY}` along the given dimension are shifted.  Elements
+  shifted out one end of each rank one section are shifted back in the other end.
+
+:samp:`{Standard}:`
+  Fortran 90 and later
+
+:samp:`{Class}:`
+  Transformational function
+
+:samp:`{Syntax}:`
+  ``RESULT = CSHIFT(ARRAY, SHIFT [, DIM])``
+
+:samp:`{Arguments}:`
+  ===============  ==============================
+  :samp:`{ARRAY}`  Shall be an array of any type.
+  ===============  ==============================
+  :samp:`{SHIFT}`  The type shall be ``INTEGER``.
+  :samp:`{DIM}`    The type shall be ``INTEGER``.
+  ===============  ==============================
+
+:samp:`{Return value}:`
+  Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
+
+:samp:`{Example}:`
+
+  .. code-block:: c++
+
+    program test_cshift
+        integer, dimension(3,3) :: a
+        a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
+        print '(3i3)', a(1,:)
+        print '(3i3)', a(2,:)
+        print '(3i3)', a(3,:)    
+        a = cshift(a, SHIFT=(/1, 2, -1/), DIM=2)
+        print *
+        print '(3i3)', a(1,:)
+        print '(3i3)', a(2,:)
+        print '(3i3)', a(3,:)
+    end program test_cshift
+

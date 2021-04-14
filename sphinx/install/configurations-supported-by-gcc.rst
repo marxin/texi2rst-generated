@@ -1,0 +1,107 @@
+.. _configurations:
+
+Configurations Supported by GCC
+*******************************
+
+.. index:: configurations supported by GCC
+
+Here are the possible CPU types:
+
+.. gmicro, fx80, spur and tahoe omitted since they don't work.
+
+1750a, a29k, alpha, arm, avr, c :samp:`{n}` , clipper, dsp16xx, elxsi, fr30, h8300,
+hppa1.0, hppa1.1, i370, i386, i486, i586, i686, i786, i860, i960, ip2k, m32r,
+m68000, m68k, m88k, mcore, mips, mipsel, mips64, mips64el,
+mn10200, mn10300, ns32k, pdp11, powerpc, powerpcle, romp, rs6000, sh, sparc,
+sparclite, sparc64, v850, vax, we32k.
+
+Here are the recognized company names.  As you can see, customary
+abbreviations are used rather than the longer official names.
+
+.. What should be done about merlin, tek*, dolphin?
+
+acorn, alliant, altos, apollo, apple, att, bull,
+cbm, convergent, convex, crds, dec, dg, dolphin,
+elxsi, encore, harris, hitachi, hp, ibm, intergraph, isi,
+mips, motorola, ncr, next, ns, omron, plexus,
+sequent, sgi, sony, sun, tti, unicom, wrs.
+
+The company name is meaningful only to disambiguate when the rest of
+the information supplied is insufficient.  You can omit it, writing
+just :samp:`:samp:`{cpu}` - :samp:`{system}``, if it is not needed.  For example,
+:samp:`vax-ultrix4.2` is equivalent to :samp:`vax-dec-ultrix4.2`.
+
+Here is a list of system types:
+
+386bsd, aix, acis, amigaos, aos, aout, aux, bosx, bsd, clix, coff, ctix, cxux,
+dgux, dynix, ebmon, ecoff, elf, esix, freebsd, hms, genix, gnu, linux,
+linux-gnu, hiux, hpux, iris, irix, isc, luna, lynxos, mach, minix, msdos, mvs,
+netbsd, newsos, nindy, ns, osf, osfrose, ptx, riscix, riscos, rtu, sco, sim,
+solaris, sunos, sym, sysv, udi, ultrix, unicos, uniplus, unos, vms, vsta,
+vxworks, winnt, xenix.
+
+You can omit the system type; then configure guesses the
+operating system from the CPU and company.
+
+You can add a version number to the system type; this may or may not
+make a difference.  For example, you can write :samp:`bsd4.3` or
+:samp:`bsd4.4` to distinguish versions of BSD.  In practice, the version
+number is most needed for :samp:`sysv3` and :samp:`sysv4`, which are often
+treated differently.
+
+:samp:`linux-gnu` is the canonical name for the GNU/Linux target; however
+GCC will also accept :samp:`linux`.  The version of the kernel in use is
+not relevant on these systems.  A suffix such as :samp:`libc1` or :samp:`aout`
+distinguishes major versions of the C library; all of the suffixed versions
+are obsolete.
+
+If you specify an impossible combination such as :samp:`i860-dg-vms`,
+then you may get an error message from configure, or it may
+ignore part of the information and do the best it can with the rest.
+configure always prints the canonical name for the alternative
+that it used.  GCC does not support all possible alternatives.
+
+Often a particular model of machine has a name.  Many machine names are
+recognized as aliases for CPU/company combinations.  Thus, the machine
+name :samp:`sun3`, mentioned above, is an alias for :samp:`m68k-sun`.
+Sometimes we accept a company name as a machine name, when the name is
+popularly used for a particular machine.  Here is a table of the known
+machine names:
+
+3300, 3b1, 3b :samp:`{n}` , 7300, altos3068, altos,
+apollo68, att-7300, balance,
+convex-c :samp:`{n}` , crds, decstation-3100,
+decstation, delta, encore,
+fx2800, gmicro, hp7 :samp:`{nn}` , hp8 :samp:`{nn}` ,
+hp9k2 :samp:`{nn}` , hp9k3 :samp:`{nn}` , hp9k7 :samp:`{nn}` ,
+hp9k8 :samp:`{nn}` , iris4d, iris, isi68,
+m3230, magnum, merlin, miniframe,
+mmax, news-3600, news800, news, next,
+pbd, pc532, pmax, powerpc, powerpcle, ps2, risc-news,
+rtpc, sun2, sun386i, sun386, sun3,
+sun4, symmetry, tower-32, tower.
+
+Remember that a machine name specifies both the cpu type and the company
+name.
+
+.. ***GFDL********************************************************************
+
+@c Set file name and title for man page.
+@setfilename gfdl
+@settitle GNU Free Documentation License
+@c man begin SEEALSO
+gpl(7), fsf-funding(7).
+@c man end
+@c man begin COPYRIGHT
+Copyright @copyright{} 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
+@uref{http://fsf.org/}
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+@c This file is intended to be included within another document,
+@c hence no sectioning command or @node.
+@c man end
+
+.. Special handling for inclusion in the install manual.
+    comment node-name,     next,          previous, up
+

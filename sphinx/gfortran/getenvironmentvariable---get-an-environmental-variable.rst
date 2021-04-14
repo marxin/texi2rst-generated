@@ -1,0 +1,64 @@
+  .. _get_environment_variable:
+
+``GET_ENVIRONMENT_VARIABLE`` - Get an environmental variable
+************************************************************
+
+.. index:: GET_ENVIRONMENT_VARIABLE
+
+.. index:: environment variable
+
+:samp:`{Description}:`
+  Get the :samp:`{VALUE}` of the environmental variable :samp:`{NAME}`.
+
+  Note that ``GET_ENVIRONMENT_VARIABLE`` need not be thread-safe. It
+  is the responsibility of the user to ensure that the environment is
+  not being updated concurrently with a call to the
+  ``GET_ENVIRONMENT_VARIABLE`` intrinsic.
+
+:samp:`{Standard}:`
+  Fortran 2003 and later
+
+:samp:`{Class}:`
+  Subroutine
+
+:samp:`{Syntax}:`
+  ``CALL GET_ENVIRONMENT_VARIABLE(NAME[, VALUE, LENGTH, STATUS, TRIM_NAME)``
+
+:samp:`{Arguments}:`
+  ===================  ==================================================
+  :samp:`{NAME}`       Shall be a scalar of type ``CHARACTER``
+                       and of default kind.
+  ===================  ==================================================
+  :samp:`{VALUE}`      (Optional) Shall be a scalar of type ``CHARACTER``
+                       and of default kind.
+  :samp:`{LENGTH}`     (Optional) Shall be a scalar of type ``INTEGER``
+                       and of default kind.
+  :samp:`{STATUS}`     (Optional) Shall be a scalar of type ``INTEGER``
+                       and of default kind.
+  :samp:`{TRIM_NAME}`  (Optional) Shall be a scalar of type ``LOGICAL``
+                       and of default kind.
+  ===================  ==================================================
+
+:samp:`{Return value}:`
+  Stores the value of :samp:`{NAME}` in :samp:`{VALUE}`. If :samp:`{VALUE}` is 
+  not large enough to hold the data, it is truncated. If :samp:`{NAME}`
+  is not set, :samp:`{VALUE}` will be filled with blanks. Argument :samp:`{LENGTH}`
+  contains the length needed for storing the environment variable :samp:`{NAME}`
+  or zero if it is not present. :samp:`{STATUS}` is -1 if :samp:`{VALUE}` is present
+  but too short for the environment variable; it is 1 if the environment
+  variable does not exist and 2 if the processor does not support environment
+  variables; in all other cases :samp:`{STATUS}` is zero. If :samp:`{TRIM_NAME}` is
+  present with the value ``.FALSE.``, the trailing blanks in :samp:`{NAME}`
+  are significant; otherwise they are not part of the environment variable
+  name.
+
+:samp:`{Example}:`
+
+  .. code-block:: c++
+
+    PROGRAM test_getenv
+      CHARACTER(len=255) :: homedir
+      CALL get_environment_variable("HOME", homedir)
+      WRITE (*,*) TRIM(homedir)
+    END PROGRAM
+

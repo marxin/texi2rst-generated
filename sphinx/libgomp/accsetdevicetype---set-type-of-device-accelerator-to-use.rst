@@ -1,0 +1,26 @@
+  .. _acc_set_device_type:
+
+``acc_set_device_type`` - Set type of device accelerator to use.
+****************************************************************
+
+Description
+  This function indicates to the runtime library which device type, specified
+  in :samp:`{devicetype}` , to use when executing a parallel or kernels region. 
+
+:samp:`{C/C++}:`
+  ============  =================================================
+  *Prototype*:  ``acc_set_device_type(acc_device_t devicetype);``
+  ============  =================================================
+  ============  =================================================
+
+:samp:`{Fortran}:`
+  ============  ==============================================
+  *Interface*:  ``subroutine acc_set_device_type(devicetype)``
+  ============  ==============================================
+                ``integer(kind=acc_device_kind) devicetype``
+  ============  ==============================================
+
+:samp:`{Reference}:`
+  https://www.openacc.orgOpenACC specification v2.6, section
+  3.2.2.
+

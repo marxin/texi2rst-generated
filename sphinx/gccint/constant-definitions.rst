@@ -1,0 +1,180 @@
+.. _constant-definitions:
+
+Constant Definitions
+********************
+
+.. index:: constant definitions
+
+.. index:: define_constants
+
+Using literal constants inside instruction patterns reduces legibility and
+can be a maintenance problem.
+
+To overcome this problem, you may use the ``define_constants``
+expression.  It contains a vector of name-value pairs.  From that
+point on, wherever any of the names appears in the MD file, it is as
+if the corresponding value had been written instead.  You may use
+``define_constants`` multiple times; each appearance adds more
+constants to the table.  It is an error to redefine a constant with
+a different value.
+
+To come back to the a29k load multiple example, instead of
+
+.. code-block:: c++
+
+  (define_insn ""
+    [(match_parallel 0 "load_multiple_operation"
+       [(set (match_operand:SI 1 "gpc_reg_operand" "=r")
+             (match_operand:SI 2 "memory_operand" "m"))
+        (use (reg:SI 179))
+        (clobber (reg:SI 179))])]
+    ""
+    "loadm 0,0,%1,%2")
+
+You could write:
+
+.. code-block:: c++
+
+  (define_constants [
+      (R_BP 177)
+      (R_FC 178)
+      (R_CR 179)
+      (R_Q  180)
+  ])
+
+  (define_insn ""
+    [(match_parallel 0 "load_multiple_operation"
+       [(set (match_operand:SI 1 "gpc_reg_operand" "=r")
+             (match_operand:SI 2 "memory_operand" "m"))
+        (use (reg:SI R_CR))
+        (clobber (reg:SI R_CR))])]
+    ""
+    "loadm 0,0,%1,%2")
+
+The constants that are defined with a define_constant are also output
+in the insn-codes.h header file as #defines.
+
+.. index:: enumerations
+
+.. index:: define_c_enum
+
+You can also use the machine description file to define enumerations.
+Like the constants defined by ``define_constant``, these enumerations
+are visible to both the machine description file and the main C code.
+
+The syntax is as follows:
+
+.. code-block:: c++
+
+  (define_c_enum " :samp:`{name}` " [
+    :samp:`{value0}`
+    :samp:`{value1}`
+    ...
+    :samp:`{valuen}`
+  ])
+
+This definition causes the equivalent of the following C code to appear
+in insn-constants.h:
+
+.. code-block:: c++
+
+  enum :samp:`{name}` {
+    :samp:`{value0}` = 0,
+    :samp:`{value1}` = 1,
+    ...
+    :samp:`{valuen}` = :samp:`{n}`
+  };
+  #define NUM_ :samp:`{cname}` _VALUES ( :samp:`{n}` + 1)
+
+where :samp:`{cname}` is the capitalized form of :samp:`{name}`.
+It also makes each :samp:`{valuei}` available in the machine description
+file, just as if it had been declared with:
+
+.. code-block:: c++
+
+  (define_constants [( :samp:`{valuei}` :samp:`{i}` )])
+
+Each :samp:`{valuei}` is usually an upper-case identifier and usually
+begins with :samp:`{cname}`.
+
+You can split the enumeration definition into as many statements as
+you like.  The above example is directly equivalent to:
+
+.. code-block:: c++
+
+  (define_c_enum " :samp:`{name}` " [ :samp:`{value0}` ])
+  (define_c_enum " :samp:`{name}` " [ :samp:`{value1}` ])
+  ...
+  (define_c_enum " :samp:`{name}` " [ :samp:`{valuen}` ])
+
+Splitting the enumeration helps to improve the modularity of each
+individual ``.md`` file.  For example, if a port defines its
+synchronization instructions in a separate sync.md file,
+it is convenient to define all synchronization-specific enumeration
+values in sync.md rather than in the main .md file.
+
+Some enumeration names have special significance to GCC:
+
+``unspecv``
+
+  .. index:: unspec_volatile
+
+  If an enumeration called ``unspecv`` is defined, GCC will use it
+  when printing out ``unspec_volatile`` expressions.  For example:
+
+  .. code-block:: c++
+
+    (define_c_enum "unspecv" [
+      UNSPECV_BLOCKAGE
+    ])
+
+  causes GCC to print :samp:`(unspec_volatile ... 0)` as:
+
+  .. code-block:: c++
+
+    (unspec_volatile ... UNSPECV_BLOCKAGE)
+
+``unspec``
+
+  .. index:: unspec
+
+  If an enumeration called ``unspec`` is defined, GCC will use
+  it when printing out ``unspec`` expressions.  GCC will also use
+  it when printing out ``unspec_volatile`` expressions unless an
+  ``unspecv`` enumeration is also defined.  You can therefore
+  decide whether to keep separate enumerations for volatile and
+  non-volatile expressions or whether to use the same enumeration
+  for both.
+
+.. index:: define_enum
+
+.. _define_enum:
+Another way of defining an enumeration is to use ``define_enum``:
+
+.. code-block:: c++
+
+  (define_enum " :samp:`{name}` " [
+    :samp:`{value0}`
+    :samp:`{value1}`
+    ...
+    :samp:`{valuen}`
+  ])
+
+This directive implies:
+
+.. code-block:: c++
+
+  (define_c_enum " :samp:`{name}` " [
+    :samp:`{cname}` _ :samp:`{cvalue0}`
+    :samp:`{cname}` _ :samp:`{cvalue1}`
+    ...
+    :samp:`{cname}` _ :samp:`{cvaluen}`
+  ])
+
+.. index:: define_enum_attr
+
+where :samp:`{cvaluei}` is the capitalized form of :samp:`{valuei}`.
+However, unlike ``define_c_enum``, the enumerations defined
+by ``define_enum`` can be used in attribute specifications
+(see :ref:`define_enum_attr`).
+

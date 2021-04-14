@@ -1,0 +1,22 @@
+  .. _acc_detach:
+
+``acc_detach`` - Let device pointer point to host-pointer target.
+*****************************************************************
+
+Description
+  This function updates a pointer on the device from pointing to a device-pointer
+  address to pointing to the corresponding host data.
+
+:samp:`{C/C++}:`
+  ============  =======================================================
+  *Prototype*:  ``acc_detach(h_void **ptr);``
+  ============  =======================================================
+  *Prototype*:  ``acc_detach_async(h_void **ptr, int async);``
+  *Prototype*:  ``acc_detach_finalize(h_void **ptr);``
+  *Prototype*:  ``acc_detach_finalize_async(h_void **ptr, int async);``
+  ============  =======================================================
+
+:samp:`{Reference}:`
+  https://www.openacc.orgOpenACC specification v2.6, section
+  3.2.35.
+

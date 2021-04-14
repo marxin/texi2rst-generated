@@ -1,0 +1,24 @@
+  .. _acc_set_cuda_stream:
+
+``acc_set_cuda_stream`` - Set CUDA stream handle.
+*************************************************
+
+Description
+  This function associates the stream handle specified by :samp:`{stream}` with
+  the queue :samp:`{async}`.
+
+  This cannot be used to change the stream handle associated with
+  ``acc_async_sync``.
+
+  The return value is not specified.
+
+:samp:`{C/C++}:`
+  ============  =====================================================
+  *Prototype*:  ``int acc_set_cuda_stream(int async, void *stream);``
+  ============  =====================================================
+  ============  =====================================================
+
+:samp:`{Reference}:`
+  https://www.openacc.orgOpenACC specification v2.6, section
+  A.2.1.4.
+

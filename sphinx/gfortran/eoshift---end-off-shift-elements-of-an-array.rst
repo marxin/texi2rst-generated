@@ -1,0 +1,68 @@
+  .. _eoshift:
+
+``EOSHIFT`` - End-off shift elements of an array
+************************************************
+
+.. index:: EOSHIFT
+
+.. index:: array, shift
+
+:samp:`{Description}:`
+  ``EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])`` performs an end-off shift on
+  elements of :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is
+  omitted it is taken to be ``1``.  :samp:`{DIM}` is a scalar of type
+  ``INTEGER`` in the range of 1 \leq DIM \leq n) where n is the
+  rank of :samp:`{ARRAY}`.  If the rank of :samp:`{ARRAY}` is one, then all elements of
+  :samp:`{ARRAY}` are shifted by :samp:`{SHIFT}` places.  If rank is greater than one,
+  then all complete rank one sections of :samp:`{ARRAY}` along the given dimension are
+  shifted.  Elements shifted out one end of each rank one section are dropped.  If
+  :samp:`{BOUNDARY}` is present then the corresponding value of from :samp:`{BOUNDARY}`
+  is copied back in the other end.  If :samp:`{BOUNDARY}` is not present then the
+  following are copied in depending on the type of :samp:`{ARRAY}`.
+
+  ==========================  ==========================================
+  *Array Type*                *Boundary Value*
+  ==========================  ==========================================
+  Numeric                     0 of the type and kind of :samp:`{ARRAY}`.
+  Logical                     ``.FALSE.``.
+  Character( :samp:`{len}` )  :samp:`{len}` blanks.
+  ==========================  ==========================================
+
+:samp:`{Standard}:`
+  Fortran 90 and later
+
+:samp:`{Class}:`
+  Transformational function
+
+:samp:`{Syntax}:`
+  ``RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])``
+
+:samp:`{Arguments}:`
+  ==================  ==============================
+  :samp:`{ARRAY}`     May be any type, not scalar.
+  ==================  ==============================
+  :samp:`{SHIFT}`     The type shall be ``INTEGER``.
+  :samp:`{BOUNDARY}`  Same type as :samp:`{ARRAY}`.
+  :samp:`{DIM}`       The type shall be ``INTEGER``.
+  ==================  ==============================
+
+:samp:`{Return value}:`
+  Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
+
+:samp:`{Example}:`
+
+  .. code-block:: c++
+
+    program test_eoshift
+        integer, dimension(3,3) :: a
+        a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
+        print '(3i3)', a(1,:)
+        print '(3i3)', a(2,:)
+        print '(3i3)', a(3,:)    
+        a = EOSHIFT(a, SHIFT=(/1, 2, 1/), BOUNDARY=-5, DIM=2)
+        print *
+        print '(3i3)', a(1,:)
+        print '(3i3)', a(2,:)
+        print '(3i3)', a(3,:)
+    end program test_eoshift
+

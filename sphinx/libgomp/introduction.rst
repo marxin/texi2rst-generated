@@ -1,0 +1,16 @@
+Introduction
+************
+
+The OpenACC library uses the CUDA Driver API, and may interact with
+programs that use the Runtime library directly, or another library
+based on the Runtime library, e.g., CUBLASSee section 2.26,
+"Interactions with the CUDA Driver API" in
+"CUDA Runtime API", Version 5.5, and section 2.27, "VDPAU
+Interoperability", in "CUDA Driver API", TRM-06703-001, Version 5.5,
+for additional information on library interoperability.
+
+.
+This chapter describes the use cases and what changes are
+required in order to use both the OpenACC library and the CUBLAS and Runtime
+libraries within a program.
+

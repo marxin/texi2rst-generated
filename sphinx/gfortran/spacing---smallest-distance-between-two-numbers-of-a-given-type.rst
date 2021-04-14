@@ -1,0 +1,48 @@
+  .. _spacing:
+
+``SPACING`` - Smallest distance between two numbers of a given type
+*******************************************************************
+
+.. index:: SPACING
+
+.. index:: real number, relative spacing
+
+.. index:: floating point, relative spacing
+
+:samp:`{Description}:`
+  Determines the distance between the argument :samp:`{X}` and the nearest 
+  adjacent number of the same type.
+
+:samp:`{Standard}:`
+  Fortran 90 and later
+
+:samp:`{Class}:`
+  Elemental function
+
+:samp:`{Syntax}:`
+  ``RESULT = SPACING(X)``
+
+:samp:`{Arguments}:`
+  ===========  ==========================
+  :samp:`{X}`  Shall be of type ``REAL``.
+  ===========  ==========================
+  ===========  ==========================
+
+:samp:`{Return value}:`
+  The result is of the same type as the input argument :samp:`{X}`.
+
+:samp:`{Example}:`
+
+  .. code-block:: c++
+
+    PROGRAM test_spacing
+      INTEGER, PARAMETER :: SGL = SELECTED_REAL_KIND(p=6, r=37)
+      INTEGER, PARAMETER :: DBL = SELECTED_REAL_KIND(p=13, r=200)
+
+      WRITE(*,*) spacing(1.0_SGL)      ! "1.1920929E-07"          on i686
+      WRITE(*,*) spacing(1.0_DBL)      ! "2.220446049250313E-016" on i686
+    END PROGRAM
+
+:samp:`{See also}:`
+  RRSPACING
+

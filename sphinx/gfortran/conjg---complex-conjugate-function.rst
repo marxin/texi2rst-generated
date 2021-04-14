@@ -1,0 +1,52 @@
+  .. _conjg:
+
+``CONJG`` - Complex conjugate function
+**************************************
+
+.. index:: CONJG
+
+.. index:: DCONJG
+
+.. index:: complex conjugate
+
+:samp:`{Description}:`
+  ``CONJG(Z)`` returns the conjugate of :samp:`{Z}`.  If :samp:`{Z}` is ``(x, y)``
+  then the result is ``(x, -y)``
+
+:samp:`{Standard}:`
+  Fortran 77 and later, has an overload that is a GNU extension
+
+:samp:`{Class}:`
+  Elemental function
+
+:samp:`{Syntax}:`
+  ``Z = CONJG(Z)``
+
+:samp:`{Arguments}:`
+  ===========  ==============================
+  :samp:`{Z}`  The type shall be ``COMPLEX``.
+  ===========  ==============================
+  ===========  ==============================
+
+:samp:`{Return value}:`
+  The return value is of type ``COMPLEX``.
+
+:samp:`{Example}:`
+
+  .. code-block:: c++
+
+    program test_conjg
+        complex :: z = (2.0, 3.0)
+        complex(8) :: dz = (2.71_8, -3.14_8)
+        z= conjg(z)
+        print *, z
+        dz = dconjg(dz)
+        print *, dz
+    end program test_conjg
+
+:samp:`{Specific names}:`
+  =============  ================  ==============  =============
+  Name           Argument          Return type     Standard
+  =============  ================  ==============  =============
+  ``DCONJG(Z)``  ``COMPLEX(8) Z``  ``COMPLEX(8)``  GNU extension
+  =============  ================  ==============  =============

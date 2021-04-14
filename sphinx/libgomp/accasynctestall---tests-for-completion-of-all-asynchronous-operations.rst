@@ -1,0 +1,29 @@
+  .. _acc_async_test_all:
+
+``acc_async_test_all`` - Tests for completion of all asynchronous operations.
+*****************************************************************************
+
+Description
+  This function tests for completion of all asynchronous operations.
+  In C/C++, a non-zero value will be returned to indicate all asynchronous
+  operations have completed. While Fortran will return a ``true``. If
+  any asynchronous operation has not completed, C/C++ returns a zero and
+  Fortran returns a ``false``.
+
+:samp:`{C/C++}:`
+  ============  =================================
+  *Prototype*:  ``int acc_async_test_all(void);``
+  ============  =================================
+  ============  =================================
+
+:samp:`{Fortran}:`
+  ============  ==============================
+  *Interface*:  ``function acc_async_test()``
+  ============  ==============================
+                ``logical acc_get_device_num``
+  ============  ==============================
+
+:samp:`{Reference}:`
+  https://www.openacc.orgOpenACC specification v2.6, section
+  3.2.10.
+
