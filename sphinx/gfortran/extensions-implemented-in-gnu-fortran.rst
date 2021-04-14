@@ -1118,10 +1118,13 @@ Similar to the D/C prefixes to real functions to specify the input/output
 types, GNU Fortran offers B/I/J/K prefixes to integer functions for
 compatibility with DEC programs. The types implied by each are:
 
-``B`` - ``INTEGER(kind=1)``
-``I`` - ``INTEGER(kind=2)``
-``J`` - ``INTEGER(kind=4)``
-``K`` - ``INTEGER(kind=8)``
+.. code-block:: c++
+
+  ``B`` - ``INTEGER(kind=1)``
+  ``I`` - ``INTEGER(kind=2)``
+  ``J`` - ``INTEGER(kind=4)``
+  ``K`` - ``INTEGER(kind=8)``
+
 GNU Fortran supports these with the flag :option:`-fdec-intrinsic-ints`.
 Intrinsics for which prefixed versions are available and in what form are noted
 in Intrinsic Procedures. The complete list of supported intrinsics is
