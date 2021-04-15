@@ -17,6 +17,20 @@ D ABI parameters
   Similarly to ``TARGET_D_CPU_VERSIONS``, but is used for versions
   relating to the target operating system.
 
+.. function:: void TARGET_D_REGISTER_CPU_TARGET_INFO(void )
+
+  Register all target information keys relating to the target CPU using the
+  function ``d_add_target_info_handlers``, which takes a
+  :samp:`struct d_target_info_spec` (defined in d/d-target.h).  The keys
+  added by this hook are made available at compile time by the
+  ``__traits(getTargetInfo)`` extension, the result is an expression
+  describing the requested target information.
+
+.. function:: void TARGET_D_REGISTER_OS_TARGET_INFO(void )
+
+  Same as ``TARGET_D_CPU_TARGET_INFO``, but is used for keys relating to
+  the target operating system.
+
 .. index:: TARGET_D_MINFO_SECTION
 
 D Target Hookconst char *TARGET_D_MINFO_SECTIONContains the name of the section in which module info references should be
@@ -36,4 +50,12 @@ section
 D Target Hookconst char *TARGET_D_MINFO_END_NAMEIf ``TARGET_D_MINFO_SECTION`` is defined, then this must also be defined
 as the name of the symbol indicating the end address of the module info
 section
+
+.. function:: bool TARGET_D_HAS_STDCALL_CONVENTION(unsigned int* link_system,unsigned int* link_windows)
+
+  Returns ``true`` if the target supports the stdcall calling convention.
+  The hook should also set :samp:`{link_system}` to ``1`` if the ``stdcall``
+  attribute should be applied to functions with ``extern(System)`` linkage,
+  and :samp:`{link_windows}` to ``1`` to apply ``stdcall`` to functions with
+  ``extern(Windows)`` linkage.
 
