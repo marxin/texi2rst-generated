@@ -73,9 +73,11 @@ Introduction
 This manual documents the internals of :command:`gfortran`, 
 the GNU Fortran compiler.
 
+ifsetDEVELOPMENT
 *Warning:* This document, and the compiler it describes, are still
 under development.  While efforts are made to keep it up-to-date, it might
 not accurately reflect the status of the most recent GNU Fortran compiler.
+endifset
 
 ..  comment
     comment  When you add a new menu item, please keep the right hand

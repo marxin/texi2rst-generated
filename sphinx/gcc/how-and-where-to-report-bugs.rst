@@ -5,7 +5,7 @@ How and Where to Report Bugs
 
 .. index:: compiler bugs, reporting
 
-Bugs should be reported to the bug database at https://gcc.gnu.org/bugs/.
+Bugs should be reported to the bug database at $$BUGURL$$.
 
 .. Copyright (C) 1988-2021 Free Software Foundation, Inc.
 

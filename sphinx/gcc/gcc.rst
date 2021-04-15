@@ -79,8 +79,8 @@ Introduction
 This manual documents how to use the GNU compilers,
 as well as their features and incompatibilities, and how to report
 bugs.  It corresponds to the compilers
-(GCC)
-version 11.0.1.
+$$VERSION_PACKAGE$$
+version $$version-GCC$$.
 The internals of the GNU compilers, including how to port them to new
 targets and some information about how to write front ends for new
 languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
