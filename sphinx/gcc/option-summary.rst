@@ -576,6 +576,7 @@ in the following sections.
   :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={sysreg}` 
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mtrack-speculation` 
   :option:`-moutline-atomics` 
+
   *Adapteva Epiphany Options*
 
   :option:`-mhalf-reg-file`  :option:`-mprefer-short-insn-regs` 
@@ -584,9 +585,11 @@ in the following sections.
   :option:`-mround-nearest`  :option:`-mlong-calls`  :option:`-mshort-calls`  :option:`-msmall16` 
   :option:`-mfp-mode`:samp:`={mode}`  :option:`-mvect-double`  :option:`-max-vect-align`:samp:`={num}` 
   :option:`-msplit-vecmove-early`  :option:`-m1reg-`:samp:`{reg}`
+
   *AMD GCN Options*
 
   :option:`-march`:samp:`={gpu}` :option:`-mtune`:samp:`={gpu}` :option:`-mstack-size`:samp:`={bytes}`
+
   *ARC Options*
 
   :option:`-mbarrel-shifter`  :option:`-mjli-always` 
@@ -607,6 +610,7 @@ in the following sections.
   :option:`-mtune`:samp:`={cpu}`  :option:`-mmultcost`:samp:`={num}`  :option:`-mcode-density-frame` 
   :option:`-munalign-prob-threshold`:samp:`={probability}`  :option:`-mmpy-option`:samp:`={multo}` 
   :option:`-mdiv-rem`  :option:`-mcode-density`  :option:`-mll64`  :option:`-mfpu`:samp:`={fpu}`  :option:`-mrf16`  :option:`-mbranch-index`
+
   *ARM Options*
 
   :option:`-mapcs-frame`  :option:`-mno-apcs-frame` 
@@ -644,6 +648,7 @@ in the following sections.
   :option:`-mpure-code` 
   :option:`-mcmse` 
   :option:`-mfdpic`
+
   *AVR Options*
 
   :option:`-mmcu`:samp:`={mcu}`  :option:`-mabsdata`  :option:`-maccumulate-args` 
@@ -655,6 +660,7 @@ in the following sections.
   :option:`-mfract-convert-truncate` 
   :option:`-mshort-calls`  :option:`-nodevicelib`  :option:`-nodevicespecs` 
   :option:`-Waddr-space-convert`  :option:`-Wmisspelled-isr`
+
   *Blackfin Options*
 
   :option:`-mcpu`:samp:`={cpu}` [- :samp:`{sirevision}` ] 
@@ -666,10 +672,12 @@ in the following sections.
   :option:`-msep-data`  :option:`-mno-sep-data`  :option:`-mlong-calls`  :option:`-mno-long-calls` 
   :option:`-mfast-fp`  :option:`-minline-plt`  :option:`-mmulticore`  :option:`-mcorea`  :option:`-mcoreb`  :option:`-msdram` 
   :option:`-micplb`
+
   *C6X Options*
 
   :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-march`:samp:`={cpu}` 
   :option:`-msim`  :option:`-msdata`:samp:`={sdata-type}`
+
   *CRIS Options*
 
   :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`  :option:`-mtune`:samp:`={cpu}` 
@@ -679,12 +687,14 @@ in the following sections.
   :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue`  :option:`-mno-gotplt` 
   :option:`-melf`  :option:`-maout`  :option:`-melinux`  :option:`-mlinux`  :option:`-sim`  :option:`-sim2` 
   :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
+
   *CR16 Options*
 
   :option:`-mmac` 
   :option:`-mcr16cplus`  :option:`-mcr16c` 
   :option:`-msim`  :option:`-mint32`  :option:`-mbit-ops`
   :option:`-mdata-model`:samp:`={model}`
+
   *C-SKY Options*
 
   :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}` 
@@ -696,6 +706,7 @@ in the following sections.
   :option:`-mdiv`  :option:`-msmart`  :option:`-mhigh-registers`  :option:`-manchor` 
   :option:`-mpushpop`  :option:`-mmultiple-stld`  :option:`-mconstpool`  :option:`-mstack-size`  :option:`-mccrt` 
   :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcse-cc`  :option:`-msched-prolog` :option:`-msim`
+
   *Darwin Options*
 
   :option:`-all_load`  :option:`-allowable_client`  :option:`-arch`  :option:`-arch_errors_fatal` 
@@ -723,6 +734,7 @@ in the following sections.
   :option:`-unexported_symbols_list`  :option:`-weak_reference_mismatches` 
   :option:`-whatsloaded`  :option:`-F`  :option:`-gused`  :option:`-gfull`  :option:`-mmacosx-version-min`:samp:`={version}` 
   :option:`-mkernel`  :option:`-mone-byte-bool`
+
   *DEC Alpha Options*
 
   :option:`-mno-fp-regs`  :option:`-msoft-float` 
@@ -735,16 +747,20 @@ in the following sections.
   :option:`-mexplicit-relocs`  :option:`-msmall-data`  :option:`-mlarge-data` 
   :option:`-msmall-text`  :option:`-mlarge-text` 
   :option:`-mmemory-latency`:samp:`={time}`
+
   *eBPF Options*
 
   :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel`:samp:`={version}`
   :option:`-mframe-limit`:samp:`={bytes}` :option:`-mxbpf`
+
   *FR30 Options*
 
   :option:`-msmall-model`  :option:`-mno-lsim`
+
   *FT32 Options*
 
   :option:`-msim`  :option:`-mlra`  :option:`-mnodiv`  :option:`-mft32b`  :option:`-mcompress`  :option:`-mnopm`
+
   *FRV Options*
 
   :option:`-mgpr-32`  :option:`-mgpr-64`  :option:`-mfpr-32`  :option:`-mfpr-64` 
@@ -763,13 +779,16 @@ in the following sections.
   :option:`-mno-nested-cond-exec`  :option:`-mtomcat-stats` 
   :option:`-mTLS`  :option:`-mtls` 
   :option:`-mcpu`:samp:`={cpu}`
+
   *GNU/Linux Options*
 
   :option:`-mglibc`  :option:`-muclibc`  :option:`-mmusl`  :option:`-mbionic`  :option:`-mandroid` 
   :option:`-tno-android-cc`  :option:`-tno-android-ld`
+
   *H8/300 Options*
 
   :option:`-mrelax`  :option:`-mh`  :option:`-ms`  :option:`-mn`  :option:`-mexr`  :option:`-mno-exr`  :option:`-mint32`  :option:`-malign-300`
+
   *HPPA Options*
 
   :option:`-march`:samp:`={architecture-type}` 
@@ -785,6 +804,7 @@ in the following sections.
   :option:`-mpa-risc-1-1`  :option:`-mpa-risc-2-0`  :option:`-mportable-runtime` 
   :option:`-mschedule`:samp:`={cpu-type}`  :option:`-mspace-regs`  :option:`-msio`  :option:`-mwsio` 
   :option:`-munix`:samp:`={unix-std}`  :option:`-nolibdld`  :option:`-static`  :option:`-threads`
+
   *IA-64 Options*
 
   :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mgnu-as`  :option:`-mgnu-ld`  :option:`-mno-pic` 
@@ -808,10 +828,12 @@ in the following sections.
   :option:`-msched-stop-bits-after-every-cycle`  :option:`-msched-count-spec-in-critical-path` 
   :option:`-msel-sched-dont-check-control-spec`  :option:`-msched-fp-mem-deps-zero-cost` 
   :option:`-msched-max-memory-insns-hard-limit`  :option:`-msched-max-memory-insns`:samp:`={max-insns}`
+
   *LM32 Options*
 
   :option:`-mbarrel-shift-enabled`  :option:`-mdivide-enabled`  :option:`-mmultiply-enabled` 
   :option:`-msign-extend-enabled`  :option:`-muser-enabled`
+
   *M32R/D Options*
 
   :option:`-m32r2`  :option:`-m32rx`  :option:`-m32r` 
@@ -824,9 +846,11 @@ in the following sections.
   :option:`-mno-flush-func`  :option:`-mflush-func`:samp:`={name}` 
   :option:`-mno-flush-trap`  :option:`-mflush-trap`:samp:`={number}` 
   :option:`-G` :samp:`{num}`
+
   *M32C Options*
 
   :option:`-mcpu`:samp:`={cpu}`  :option:`-msim`  :option:`-memregs`:samp:`={number}`
+
   *M680x0 Options*
 
   :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}`  :option:`-mtune`:samp:`={tune}` 
@@ -838,6 +862,7 @@ in the following sections.
   :option:`-malign-int`  :option:`-mstrict-align`  :option:`-msep-data`  :option:`-mno-sep-data` 
   :option:`-mshared-library-id=n`  :option:`-mid-shared-library`  :option:`-mno-id-shared-library` 
   :option:`-mxgot`  :option:`-mno-xgot`  :option:`-mlong-jump-table-offsets`
+
   *MCore Options*
 
   :option:`-mhardlit`  :option:`-mno-hardlit`  :option:`-mdiv`  :option:`-mno-div`  :option:`-mrelax-immediates` 
@@ -845,6 +870,7 @@ in the following sections.
   :option:`-m4byte-functions`  :option:`-mno-4byte-functions`  :option:`-mcallgraph-data` 
   :option:`-mno-callgraph-data`  :option:`-mslow-bytes`  :option:`-mno-slow-bytes`  :option:`-mno-lsim` 
   :option:`-mlittle-endian`  :option:`-mbig-endian`  :option:`-m210`  :option:`-m340`  :option:`-mstack-increment`
+
   *MeP Options*
 
   :option:`-mabsdiff`  :option:`-mall-opts`  :option:`-maverage`  :option:`-mbased`:samp:`={n}`  :option:`-mbitops` 
@@ -852,6 +878,7 @@ in the following sections.
   :option:`-mdc`  :option:`-mdiv`  :option:`-meb`  :option:`-mel`  :option:`-mio-volatile`  :option:`-ml`  :option:`-mleadz`  :option:`-mm`  :option:`-mminmax` 
   :option:`-mmult`  :option:`-mno-opts`  :option:`-mrepeat`  :option:`-ms`  :option:`-msatur`  :option:`-msdram`  :option:`-msim`  :option:`-msimnovec`  :option:`-mtf` 
   :option:`-mtiny`:samp:`={n}`
+
   *MicroBlaze Options*
 
   :option:`-msoft-float`  :option:`-mhard-float`  :option:`-msmall-divides`  :option:`-mcpu`:samp:`={cpu}` 
@@ -860,6 +887,7 @@ in the following sections.
   :option:`-mxl-multiply-high`  :option:`-mxl-float-convert`  :option:`-mxl-float-sqrt` 
   :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mxl-reorder`  :option:`-mxl-mode-`:samp:`{app-model}` 
   :option:`-mpic-data-is-text-relative`
+
   *MIPS Options*
 
   :option:`-EL`  :option:`-EB`  :option:`-march`:samp:`={arch}`  :option:`-mtune`:samp:`={arch}` 
@@ -917,12 +945,14 @@ in the following sections.
   :option:`-mlxc1-sxc1`  :option:`-mno-lxc1-sxc1`  :option:`-mmadd4`  :option:`-mno-madd4` 
   :option:`-mrelax-pic-calls`  :option:`-mno-relax-pic-calls`  :option:`-mmcount-ra-address` 
   :option:`-mframe-header-opt`  :option:`-mno-frame-header-opt`
+
   *MMIX Options*
 
   :option:`-mlibfuncs`  :option:`-mno-libfuncs`  :option:`-mepsilon`  :option:`-mno-epsilon`  :option:`-mabi=gnu` 
   :option:`-mabi=mmixware`  :option:`-mzero-extend`  :option:`-mknuthdiv`  :option:`-mtoplevel-symbols` 
   :option:`-melf`  :option:`-mbranch-predict`  :option:`-mno-branch-predict`  :option:`-mbase-addresses` 
   :option:`-mno-base-addresses`  :option:`-msingle-exit`  :option:`-mno-single-exit`
+
   *MN10300 Options*
 
   :option:`-mmult-bug`  :option:`-mno-mult-bug` 
@@ -930,9 +960,11 @@ in the following sections.
   :option:`-mtune`:samp:`={cpu-type}` 
   :option:`-mreturn-pointer-on-d0` 
   :option:`-mno-crt0`  :option:`-mrelax`  :option:`-mliw`  :option:`-msetlb`
+
   *Moxie Options*
 
   :option:`-meb`  :option:`-mel`  :option:`-mmul.x`  :option:`-mno-crt0`
+
   *MSP430 Options*
 
   :option:`-msim`  :option:`-masm-hex`  :option:`-mmcu` =  :option:`-mcpu` =  :option:`-mlarge`  :option:`-msmall`  :option:`-mrelax` 
@@ -940,6 +972,7 @@ in the following sections.
   :option:`-mcode-region` =  :option:`-mdata-region` = 
   :option:`-msilicon-errata` =  :option:`-msilicon-errata-warn` = 
   :option:`-mhwmult` =  :option:`-minrt`  :option:`-mtiny-printf`  :option:`-mmax-inline-shift` =
+
   *NDS32 Options*
 
   :option:`-mbig-endian`  :option:`-mlittle-endian` 
@@ -955,6 +988,7 @@ in the following sections.
   :option:`-march`:samp:`={arch}` 
   :option:`-mcmodel`:samp:`={code-model}` 
   :option:`-mctor-dtor`  :option:`-mrelax`
+
   *Nios II Options*
 
   :option:`-G` :samp:`{num}`  :option:`-mgpopt`:samp:`={option}`  :option:`-mgpopt`  :option:`-mno-gpopt` 
@@ -968,24 +1002,29 @@ in the following sections.
   :option:`-mcustom-fpu-cfg`:samp:`={name}` 
   :option:`-mhal`  :option:`-msmallc`  :option:`-msys-crt0`:samp:`={name}`  :option:`-msys-lib`:samp:`={name}` 
   :option:`-march`:samp:`={arch}`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
+
   *Nvidia PTX Options*
 
   :option:`-m64`  :option:`-mmainkernel`  :option:`-moptimize`
+
   *OpenRISC Options*
 
   :option:`-mboard`:samp:`={name}`  :option:`-mnewlib`  :option:`-mhard-mul`  :option:`-mhard-div` 
   :option:`-msoft-mul`  :option:`-msoft-div` 
   :option:`-msoft-float`  :option:`-mhard-float`  :option:`-mdouble-float` :option:`-munordered-float` 
   :option:`-mcmov`  :option:`-mror`  :option:`-mrori`  :option:`-msext`  :option:`-msfimm`  :option:`-mshftimm`
+
   *PDP-11 Options*
 
   :option:`-mfpu`  :option:`-msoft-float`  :option:`-mac0`  :option:`-mno-ac0`  :option:`-m40`  :option:`-m45`  :option:`-m10` 
   :option:`-mint32`  :option:`-mno-int16`  :option:`-mint16`  :option:`-mno-int32` 
   :option:`-msplit`  :option:`-munix-asm`  :option:`-mdec-asm`  :option:`-mgnu-asm`  :option:`-mlra`
+
   *picoChip Options*
 
   :option:`-mae`:samp:`={ae_type}`  :option:`-mvliw-lookahead`:samp:`={N}` 
   :option:`-msymbol-as-address`  :option:`-mno-inefficient-warnings`
+
   *PowerPC Options*
   See RS/6000 and PowerPC Options.
 
@@ -993,6 +1032,7 @@ in the following sections.
 
   :option:`-mmcu`:samp:`={mcu}`  :option:`-minrt`  :option:`-mno-relax`  :option:`-mloop` 
   :option:`-mabi`:samp:`={variant}` 
+
   *RISC-V Options*
 
   :option:`-mbranch-cost`:samp:`={N-instruction}` 
@@ -1015,11 +1055,13 @@ in the following sections.
   :option:`-mbig-endian`  :option:`-mlittle-endian` 
   + :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
   + :option:`-mstack-protector-guard-offset`:samp:`={offset}`
+
   *RL78 Options*
 
   :option:`-msim`  :option:`-mmul=none`  :option:`-mmul=g13`  :option:`-mmul=g14`  :option:`-mallregs` 
   :option:`-mcpu=g10`  :option:`-mcpu=g13`  :option:`-mcpu=g14`  :option:`-mg10`  :option:`-mg13`  :option:`-mg14` 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-msave-mduc-in-interrupts`
+
   *RS/6000 and PowerPC Options*
 
   :option:`-mcpu`:samp:`={cpu-type}` 
@@ -1080,6 +1122,7 @@ in the following sections.
   :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mprefixed` :option:`-mno-prefixed` 
   :option:`-mpcrel` :option:`-mno-pcrel` :option:`-mmma` :option:`-mno-mmma`
+
   *RX Options*
 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu`
@@ -1096,6 +1139,7 @@ in the following sections.
   :option:`-mjsr`
   :option:`-mno-warn-multiple-fast-interrupts`
   :option:`-msave-acc-in-interrupts`
+
   *S/390 and zSeries Options*
 
   :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
@@ -1109,6 +1153,7 @@ in the following sections.
   :option:`-mfused-madd`  :option:`-mno-fused-madd` 
   :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` 
   :option:`-mhotpatch`:samp:`={halfwords}` , :samp:`{halfwords}`
+
   *Score Options*
 
   :option:`-meb`  :option:`-mel` 
@@ -1116,6 +1161,7 @@ in the following sections.
   :option:`-muls` 
   :option:`-mmac` 
   :option:`-mscore5`  :option:`-mscore5u`  :option:`-mscore7`  :option:`-mscore7d`
+
   *SH Options*
 
   :option:`-m1`  :option:`-m2`  :option:`-m2e` 
@@ -1134,10 +1180,12 @@ in the following sections.
   :option:`-mcbranch-force-delay-slot` 
   :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-mfsca`  :option:`-mno-fsca`  :option:`-mfsrra`  :option:`-mno-fsrra` 
   :option:`-mpretend-cmove`  :option:`-mtas`
+
   *Solaris 2 Options*
 
   :option:`-mclear-hwcap`  :option:`-mno-clear-hwcap`  :option:`-mimpure-text`  :option:`-mno-impure-text` 
   :option:`-pthreads`
+
   *SPARC Options*
 
   :option:`-mcpu`:samp:`={cpu-type}` 
@@ -1159,16 +1207,20 @@ in the following sections.
   :option:`-mpopc`  :option:`-mno-popc`  :option:`-msubxc`  :option:`-mno-subxc` 
   :option:`-mfix-at697f`  :option:`-mfix-ut699`  :option:`-mfix-ut700`  :option:`-mfix-gr712rc` 
   :option:`-mlra`  :option:`-mno-lra`
+
   *System V Options*
 
   :option:`-Qy`  :option:`-Qn`  :option:`-YP,`:samp:`{paths}`  :option:`-Ym,`:samp:`{dir}`
+
   *TILE-Gx Options*
 
   :option:`-mcpu=CPU`  :option:`-m32`  :option:`-m64`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
   :option:`-mcmodel`:samp:`={code-model}`
+
   *TILEPro Options*
 
   :option:`-mcpu`:samp:`={cpu}`  :option:`-m32`
+
   *V850 Options*
 
   :option:`-mlong-calls`  :option:`-mno-long-calls`  :option:`-mep`  :option:`-mno-ep` 
@@ -1186,21 +1238,26 @@ in the following sections.
   :option:`-mgcc-abi` 
   :option:`-mrh850-abi` 
   :option:`-mbig-switch`
+
   *VAX Options*
 
   :option:`-mg`  :option:`-mgnu`  :option:`-munix`
+
   *Visium Options*
 
   :option:`-mdebug`  :option:`-msim`  :option:`-mfpu`  :option:`-mno-fpu`  :option:`-mhard-float`  :option:`-msoft-float` 
   :option:`-mcpu`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}`  :option:`-msv-mode`  :option:`-muser-mode`
+
   *VMS Options*
 
   :option:`-mvms-return-codes`  :option:`-mdebug-main`:samp:`={prefix}`  :option:`-mmalloc64` 
   :option:`-mpointer-size`:samp:`={size}`
+
   *VxWorks Options*
 
   :option:`-mrtp`  :option:`-non-static`  :option:`-Bstatic`  :option:`-Bdynamic` 
   :option:`-Xbind-lazy`  :option:`-Xbind-now`
+
   *x86 Options*
 
   :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
@@ -1249,14 +1306,17 @@ in the following sections.
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` 
   :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
   :option:`-mindirect-branch-register` :option:`-mneeded`
+
   *x86 Windows Options*
 
   :option:`-mconsole`  :option:`-mcygwin`  :option:`-mno-cygwin`  :option:`-mdll` 
   :option:`-mnop-fun-dllimport`  :option:`-mthread` 
   :option:`-municode`  :option:`-mwin32`  :option:`-mwindows`  :option:`-fno-set-stack-executable`
+
   *Xstormy16 Options*
 
   :option:`-msim`
+
   *Xtensa Options*
 
   :option:`-mconst16`  :option:`-mno-const16` 
@@ -1268,6 +1328,7 @@ in the following sections.
   :option:`-mtarget-align`  :option:`-mno-target-align` 
   :option:`-mlongcalls`  :option:`-mno-longcalls` 
   :option:`-mabi`:samp:`={abi-type}`
+
   *zSeries Options*
   See S/390 and zSeries Options.
 
