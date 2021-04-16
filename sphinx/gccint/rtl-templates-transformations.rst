@@ -18,10 +18,10 @@ case based on the initial one:
 
 .. code-block:: c++
 
-  (define_subst " :samp:`{name}` "
-    [ :samp:`{input-template}` ]
-    " :samp:`{condition}` "
-    [ :samp:`{output-template}` ])
+  (define_subst "name"
+    [input-template]
+    "condition"
+    [output-template])
 
 :samp:`{input-template}` is a pattern describing the source RTL template,
 which will be transformed.

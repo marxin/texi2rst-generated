@@ -19,7 +19,7 @@ in ``gimple.c``.
 
 You will probably want to create a function to build the new
 gimple statement in ``gimple.c``.  The function should be called
-``gimple_build_ :samp:`{new-tuple-name}```, and should return the new tuple
+``gimple_build_new-tuple-name``, and should return the new tuple
 as a pointer to the appropriate gimple subclass.
 
 If your new statement requires accessors for any members or

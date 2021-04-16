@@ -52,8 +52,8 @@
   representation of a variable of the same type as :samp:`{MOLD}` , the results
   are undefined, and subsequent operations on the result cannot be
   guaranteed to produce sensible behavior.  For example, it is possible to
-  create ``LOGICAL`` variables for which ``:samp:`{VAR}``` and
-  ``.NOT.:samp:`{VAR}``` both appear to be true.
+  create ``LOGICAL`` variables for which ``VAR`` and
+  ``.NOT.VAR`` both appear to be true.
 
 :samp:`{Example}:`
 

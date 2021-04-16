@@ -23,7 +23,7 @@ accessed in a void context:
 
 .. code-block:: c++
 
-  volatile int *src = :samp:`{somevalue}` ;
+  volatile int *src = somevalue;
   *src;
 
 The C++ standard specifies that such expressions do not undergo lvalue
@@ -56,5 +56,5 @@ expected, in the following example:
 .. code-block:: c++
 
   volatile int vobj;
-  volatile int &vref = vobj = :samp:`{something}` ;
+  volatile int &vref = vobj = something;
 

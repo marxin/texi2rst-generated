@@ -26,7 +26,7 @@ Some RTL nodes have special annotations associated with them.
     If this register is known to hold the value of some user-level
     declaration, this is that tree node.  It may also be a
     ``COMPONENT_REF``, in which case this is some field reference,
-    and ``TREE_OPERAND ( :samp:`{x}` , 0)`` contains the declaration,
+    and ``TREE_OPERAND (x, 0)`` contains the declaration,
     or another ``COMPONENT_REF``, or null if there is no compile-time
     object associated with the reference.
 

@@ -221,7 +221,7 @@ Operand validation
 When adding a new operand to a gimple statement, the operand will
 be validated according to what each tuple accepts in its operand
 vector.  These predicates are called by the
-``gimple_ :samp:`{name}` _set_...()``.  Each tuple will use one of the
+``gimple_name_set_...()``.  Each tuple will use one of the
 following predicates (Note, this list is not exhaustive):
 
 .. function:: bool is_gimple_val(tree t)

@@ -141,7 +141,7 @@ other fields in the same word of the structure, but to different bytes.
   :samp:`{mode}` and :samp:`{alignment}` parameters have a cost many times greater
   than aligned accesses, for example if they are emulated in a trap handler.
   This hook is invoked only for unaligned accesses, i.e. when
-  ``:samp:`{alignment}` < GET_MODE_ALIGNMENT ( :samp:`{mode}` )``.
+  ``alignment < GET_MODE_ALIGNMENT (mode)``.
 
   When this hook returns true, the compiler will act as if
   ``STRICT_ALIGNMENT`` were true when generating code for block
@@ -344,10 +344,10 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   do not have a mode, the mode in which :samp:`{x}` is used.
 
   In implementing this hook, you can use the construct
-  ``COSTS_N_INSNS ( :samp:`{n}` )`` to specify a cost equal to :samp:`{n}` fast
+  ``COSTS_N_INSNS (n)`` to specify a cost equal to :samp:`{n}` fast
   instructions.
 
-  On entry to the hook, ``* :samp:`{total}``` contains a default estimate
+  On entry to the hook, ``*total`` contains a default estimate
   for the cost of the expression.  The hook should modify this value as
   necessary.  Traditionally, the default costs are ``COSTS_N_INSNS (5)``
   for multiplications, ``COSTS_N_INSNS (7)`` for division and modulus
@@ -400,7 +400,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   This target hook describes the relative costs of RTL instructions.
 
   In implementing this hook, you can use the construct
-  ``COSTS_N_INSNS ( :samp:`{n}` )`` to specify a cost equal to :samp:`{n}` fast
+  ``COSTS_N_INSNS (n)`` to specify a cost equal to :samp:`{n}` fast
   instructions.
 
   When optimizing for code size, i.e. when ``speed`` is
@@ -414,8 +414,8 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   if-conversion pass when conditional execution is not available.
   The RTL if-conversion pass attempts to convert conditional operations
   that would require a branch to a series of unconditional operations and
-  ``mov :samp:`{mode}` cc`` insns.  This hook returns the maximum cost of the
-  unconditional instructions and the ``mov :samp:`{mode}` cc`` insns.
+  ``movmodecc`` insns.  This hook returns the maximum cost of the
+  unconditional instructions and the ``movmodecc`` insns.
   RTL if-conversion is cancelled if the cost of the converted sequence
   is greater than the value returned by this hook.
 

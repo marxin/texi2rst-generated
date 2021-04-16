@@ -31,10 +31,10 @@ Function, Variable, and Macro Listing.
   Like ``sprintf``, but instead of passing a pointer to a buffer, you
   pass a pointer to a pointer.  This function will compute the size of
   the buffer needed, allocate memory with ``malloc``, and store a
-  pointer to the allocated memory in ``* :samp:`{resptr}```.  The value
+  pointer to the allocated memory in ``*resptr``.  The value
   returned is the same as ``sprintf`` would return.  If memory could
   not be allocated, minus one is returned and ``NULL`` is stored in
-  ``* :samp:`{resptr}```.
+  ``*resptr``.
 
 .. atexit.c:6
 
@@ -715,11 +715,11 @@ sets of characters:
 
 .. function:: void* memchr(const void* s,int c,size_t n)
 
-  This function searches memory starting at ``* :samp:`{s}``` for the
+  This function searches memory starting at ``*s`` for the
   character :samp:`{c}`.  The search only ends with the first occurrence of
   :samp:`{c}` , or after :samp:`{length}` characters; in particular, a null
   character does not terminate the search.  If the character :samp:`{c}` is
-  found within :samp:`{length}` characters of ``* :samp:`{s}```, a pointer
+  found within :samp:`{length}` characters of ``*s``, a pointer
   to the character is returned.  If :samp:`{c}` is not found, then ``NULL`` is
   returned.
 
@@ -778,7 +778,7 @@ sets of characters:
 
   .. code-block:: c++
 
-       :samp:`{path}` /ccXXXXXX :samp:`{suffix}`
+       path/ccXXXXXXsuffix
 
   :samp:`{suffix_len}` tells us how long :samp:`{suffix}` is (it can be zero
   length).  The last six characters of :samp:`{pattern}` before :samp:`{suffix}`
@@ -918,7 +918,7 @@ sets of characters:
   for a call to ``pex_run``.  :samp:`{flags}` is restricted to a
   combination of ``PEX_SEARCH``, ``PEX_STDERR_TO_STDOUT``, and
   ``PEX_BINARY_OUTPUT``.  :samp:`{outname}` is interpreted as if
-  ``PEX_LAST`` were set.  On a successful return, ``* :samp:`{status}``` will
+  ``PEX_LAST`` were set.  On a successful return, ``*status`` will
   be set to the exit status of the program.
 
 .. pexecute.txh:237
@@ -1012,7 +1012,7 @@ sets of characters:
     flag can be specified only on the last program in pipeline.
 
   :samp:`{executable}` is the program to execute.  :samp:`{argv}` is the set of
-  arguments to pass to the program; normally ``:samp:`{argv}` [0]`` will
+  arguments to pass to the program; normally ``argv[0]`` will
   be a copy of :samp:`{executable}`.
 
   :samp:`{outname}` is used to set the name of the file to use for standard
@@ -1050,7 +1050,7 @@ sets of characters:
   it is ``NULL``, standard error is the same as the caller's.
   Otherwise, standard error is written to the named file.
 
-  On an error return, the code sets ``* :samp:`{err}``` to an ``errno``
+  On an error return, the code sets ``*err`` to an ``errno``
   value, or to 0 if there is no relevant ``errno``.
 
 .. pexecute.txh:145
@@ -1184,7 +1184,7 @@ sets of characters:
 
   Compare :samp:`{attrs1}` and :samp:`{attrs2}`.  If they could be linked
   together without error, return ``NULL``.  Otherwise, return an
-  error message and set ``* :samp:`{err}``` to an errno value or ``0``
+  error message and set ``*err`` to an errno value or ``0``
   if there is no relevant errno.
 
 .. simple-object.txh:81
@@ -1197,8 +1197,8 @@ sets of characters:
   ``simple_object_attributes_release`` is called, even if
   :samp:`{simple_object}` itself is released.
 
-  On error this returns ``NULL``, sets ``* :samp:`{errmsg}``` to an
-  error message, and sets ``* :samp:`{err}``` to an errno value or
+  On error this returns ``NULL``, sets ``*errmsg`` to an
+  error message, and sets ``*err`` to an errno value or
   ``0`` if there is no relevant errno.
 
 .. simple-object.txh:49
@@ -1208,19 +1208,19 @@ sets of characters:
   Look for the section :samp:`{name}` in :samp:`{simple_object}`.  This returns
   information for the first section with that name.
 
-  If found, return 1 and set ``* :samp:`{offset}``` to the offset in the
-  file of the section contents and set ``* :samp:`{length}``` to the
-  length of the section contents.  The value in ``* :samp:`{offset}```
+  If found, return 1 and set ``*offset`` to the offset in the
+  file of the section contents and set ``*length`` to the
+  length of the section contents.  The value in ``*offset``
   will be relative to the offset passed to
   ``simple_object_open_read``.
 
   If the section is not found, and no error occurs,
   ``simple_object_find_section`` returns ``0`` and set
-  ``* :samp:`{errmsg}``` to ``NULL``.
+  ``*errmsg`` to ``NULL``.
 
   If an error occurs, ``simple_object_find_section`` returns
-  ``0``, sets ``* :samp:`{errmsg}``` to an error message, and sets
-  ``* :samp:`{err}``` to an errno value or ``0`` if there is no
+  ``0``, sets ``*errmsg`` to an error message, and sets
+  ``*err`` to an errno value or ``0`` if there is no
   relevant errno.
 
 .. simple-object.txh:27
@@ -1239,7 +1239,7 @@ sets of characters:
   other value, the loop continues.
 
   On success ``simple_object_find_sections`` returns.  On error it
-  returns an error string, and sets ``* :samp:`{err}``` to an errno value
+  returns an error string, and sets ``*err`` to an errno value
   or ``0`` if there is no relevant errno.
 
 .. simple-object.txh:2
@@ -1262,7 +1262,7 @@ sets of characters:
   parameter is ignored on other systems.
 
   If an error occurs, this functions returns ``NULL`` and sets
-  ``* :samp:`{errmsg}``` to an error string and sets ``* :samp:`{err}``` to
+  ``*errmsg`` to an error string and sets ``*err`` to
   an errno value or ``0`` if there is no relevant errno.
 
 .. simple-object.txh:107
@@ -1299,7 +1299,7 @@ sets of characters:
   other object file formats.
 
   On error ``simple_object_start_write`` returns ``NULL``, sets
-  ``* :samp:`{ERRMSG}``` to an error message, and sets ``* :samp:`{err}```
+  ``*ERRMSG`` to an error message, and sets ``*err``
   to an errno value or ``0`` if there is no relevant errno.
 
 .. simple-object.txh:153
@@ -1313,7 +1313,7 @@ sets of characters:
   released.
 
   On success this returns ``NULL``.  On error this returns an error
-  message, and sets ``* :samp:`{err}``` to an errno value or 0 if there is
+  message, and sets ``*err`` to an errno value or 0 if there is
   no relevant erro.
 
 .. simple-object.txh:134
@@ -1329,8 +1329,8 @@ sets of characters:
   executable, not loaded at runtime.  The section is not written to the
   file until ``simple_object_write_to_file`` is called.
 
-  On error this returns ``NULL``, sets ``* :samp:`{errmsg}``` to an
-  error message, and sets ``* :samp:`{err}``` to an errno value or
+  On error this returns ``NULL``, sets ``*errmsg`` to an
+  error message, and sets ``*err`` to an errno value or
   ``0`` if there is no relevant errno.
 
 .. simple-object.txh:170
@@ -1343,7 +1343,7 @@ sets of characters:
   :samp:`{simple_object_write_add_data}`.
 
   This returns ``NULL`` on success.  On error this returns an error
-  message and sets ``* :samp:`{err}``` to an errno value or ``0`` if
+  message and sets ``*err`` to an errno value or ``0`` if
   there is no relevant errno.
 
 .. snprintf.c:28
@@ -1351,7 +1351,7 @@ sets of characters:
 .. function:: int snprintf(char *buf,size_t n,const char* format,... )
 
   This function is similar to ``sprintf``, but it will write to
-  :samp:`{buf}` at most ``:samp:`{n}` -1`` bytes of text, followed by a
+  :samp:`{buf}` at most ``n-1`` bytes of text, followed by a
   terminating null byte, for a total of :samp:`{n}` bytes.
   On error the return value is -1, otherwise it returns the number of
   bytes, not including the terminating null byte, that would have been
@@ -1703,10 +1703,10 @@ because filenames frequently hold indices/version numbers.
   Like ``vsprintf``, but instead of passing a pointer to a buffer,
   you pass a pointer to a pointer.  This function will compute the size
   of the buffer needed, allocate memory with ``malloc``, and store a
-  pointer to the allocated memory in ``* :samp:`{resptr}```.  The value
+  pointer to the allocated memory in ``*resptr``.  The value
   returned is the same as ``vsprintf`` would return.  If memory could
   not be allocated, minus one is returned and ``NULL`` is stored in
-  ``* :samp:`{resptr}```.
+  ``*resptr``.
 
 .. vfork.c:6
 
@@ -1730,7 +1730,7 @@ because filenames frequently hold indices/version numbers.
 .. function:: int vsnprintf(char *buf,size_t n,const char* format,va_list ap)
 
   This function is similar to ``vsprintf``, but it will write to
-  :samp:`{buf}` at most ``:samp:`{n}` -1`` bytes of text, followed by a
+  :samp:`{buf}` at most ``n-1`` bytes of text, followed by a
   terminating null byte, for a total of :samp:`{n}` bytes.  On error the
   return value is -1, otherwise it returns the number of characters that
   would have been printed had :samp:`{n}` been sufficiently large,

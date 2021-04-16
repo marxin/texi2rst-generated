@@ -13,7 +13,7 @@ RTL Classes and Formats
 
 The various expression codes are divided into several :dfn:`classes`,
 which are represented by single characters.  You can determine the class
-of an RTX code with the macro ``GET_RTX_CLASS ( :samp:`{code}` )``.
+of an RTX code with the macro ``GET_RTX_CLASS (code)``.
 Currently, rtl.def defines these classes:
 
 .. envvar:: RTX_OBJ

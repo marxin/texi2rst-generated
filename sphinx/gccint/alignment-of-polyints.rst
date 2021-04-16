@@ -36,7 +36,7 @@ misalignments.  In each case the alignment must be a power of 2.
 
   .. code-block:: c++
 
-    aligned_lower_bound ( :samp:`{limit}` - :samp:`{size}` , :samp:`{align}` )
+    aligned_lower_bound (limit - size, align)
 
 :samp:`aligned_upper_bound ({value}, {align})`
   Likewise return a result that is no less than :samp:`{value}` and that is

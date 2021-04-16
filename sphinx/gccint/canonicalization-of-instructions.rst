@@ -78,12 +78,12 @@ are performed:
   ``minus`` is made the first operand under the same conditions as
   above.
 
-* ``(ltu (plus :samp:`{a}`:samp:`{b}` ) :samp:`{b}` )`` is converted to
-  ``(ltu (plus :samp:`{a}`:samp:`{b}` ) :samp:`{a}` )``. Likewise with ``geu`` instead
+* ``(ltu (plus ab) b)`` is converted to
+  ``(ltu (plus ab) a)``. Likewise with ``geu`` instead
   of ``ltu``.
 
-* ``(minus :samp:`{x}` (const_int :samp:`{n}` ))`` is converted to
-  ``(plus :samp:`{x}` (const_int :samp:`{-n}` ))``.
+* ``(minus x (const_int n))`` is converted to
+  ``(plus x (const_int -n))``.
 
 * Within address computations (i.e., inside ``mem``), a left shift is
   converted into the appropriate multiplication by a power of two.
@@ -105,9 +105,9 @@ are performed:
   .. code-block:: c++
 
     (define_insn ""
-      [(set (match_operand: :samp:`{m}` 0 ...)
-            (and: :samp:`{m}` (not: :samp:`{m}` (match_operand: :samp:`{m}` 1 ...))
-                         (match_operand: :samp:`{m}` 2 ...)))]
+      [(set (match_operand:m 0 ...)
+            (and:m (not:m (match_operand:m 1 ...))
+                         (match_operand:m 2 ...)))]
       "..."
       "...")
 
@@ -116,9 +116,9 @@ are performed:
   .. code-block:: c++
 
     (define_insn ""
-      [(set (match_operand: :samp:`{m}` 0 ...)
-            (ior: :samp:`{m}` (not: :samp:`{m}` (match_operand: :samp:`{m}` 1 ...))
-                         (not: :samp:`{m}` (match_operand: :samp:`{m}` 2 ...))))]
+      [(set (match_operand:m 0 ...)
+            (ior:m (not:m (match_operand:m 1 ...))
+                         (not:m (match_operand:m 2 ...))))]
       "..."
       "...")
 
@@ -128,15 +128,15 @@ are performed:
   .. index:: xor, canonicalization of
 
 * The only possible RTL expressions involving both bitwise exclusive-or
-  and bitwise negation are ``(xor: :samp:`{m}`:samp:`{x}`:samp:`{y}` )``
-  and ``(not: :samp:`{m}` (xor: :samp:`{m}`:samp:`{x}`:samp:`{y}` ))``.
+  and bitwise negation are ``(xor:mxy)``
+  and ``(not:m (xor:mxy))``.
 
 * The sum of three items, one of which is a constant, will only appear in
   the form
 
   .. code-block:: c++
 
-    (plus: :samp:`{m}` (plus: :samp:`{m}` :samp:`{x}` :samp:`{y}` ) :samp:`{constant}` )
+    (plus:m (plus:m x y) constant)
 
   .. index:: zero_extract, canonicalization of
 
@@ -148,13 +148,13 @@ are performed:
 
   .. index:: mult, canonicalization of
 
-* ``(sign_extend: :samp:`{m1}` (mult: :samp:`{m2}` (sign_extend: :samp:`{m2}`:samp:`{x}` )
-  (sign_extend: :samp:`{m2}`:samp:`{y}` )))`` is converted to ``(mult: :samp:`{m1}`
-  (sign_extend: :samp:`{m1}`:samp:`{x}` ) (sign_extend: :samp:`{m1}`:samp:`{y}` ))``, and likewise
+* ``(sign_extend:m1 (mult:m2 (sign_extend:m2x)
+  (sign_extend:m2y)))`` is converted to ``(mult:m1
+  (sign_extend:m1x) (sign_extend:m1y))``, and likewise
   for ``zero_extend``.
 
-* ``(sign_extend: :samp:`{m1}` (mult: :samp:`{m2}` (ashiftrt: :samp:`{m2}`:samp:`{x}`:samp:`{s}` ) (sign_extend: :samp:`{m2}`:samp:`{y}` )))`` is converted
-  to ``(mult: :samp:`{m1}` (sign_extend: :samp:`{m1}` (ashiftrt: :samp:`{m2}`:samp:`{x}`:samp:`{s}` )) (sign_extend: :samp:`{m1}`:samp:`{y}` ))``, and likewise for
+* ``(sign_extend:m1 (mult:m2 (ashiftrt:m2xs) (sign_extend:m2y)))`` is converted
+  to ``(mult:m1 (sign_extend:m1 (ashiftrt:m2xs)) (sign_extend:m1y))``, and likewise for
   patterns using ``zero_extend`` and ``lshiftrt``.  If the second
   operand of ``mult`` is also a shift, then that is extended also.
   This transformation is only applied when it can be proven that the

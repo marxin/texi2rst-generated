@@ -25,7 +25,7 @@ macros for which the default definition is inappropriate.  For example:
   /* Initialize the GCC target structure.  */
 
   #undef TARGET_COMP_TYPE_ATTRIBUTES
-  #define TARGET_COMP_TYPE_ATTRIBUTES :samp:`{machine}` _comp_type_attributes
+  #define TARGET_COMP_TYPE_ATTRIBUTES machine_comp_type_attributes
 
   struct gcc_target targetm = TARGET_INITIALIZER;
 

@@ -24,13 +24,13 @@ two arguments: an expression-pointer (RTX) and an operand number
 
 .. code-block:: c++
 
-  XEXP ( :samp:`{x}` , 2)
+  XEXP (x, 2)
 
 accesses operand 2 of expression :samp:`{x}` , as an expression.
 
 .. code-block:: c++
 
-  XINT ( :samp:`{x}` , 2)
+  XINT (x, 2)
 
 accesses the same operand as an integer.  ``XSTR``, used in the same
 fashion, would access it as a string.
@@ -42,11 +42,11 @@ the containing expression.  That is also how you would know how many
 operands there are.
 
 For example, if :samp:`{x}` is an ``int_list`` expression, you know that it has
-two operands which can be correctly accessed as ``XINT ( :samp:`{x}` , 0)``
-and ``XEXP ( :samp:`{x}` , 1)``.  Incorrect accesses like
-``XEXP ( :samp:`{x}` , 0)`` and ``XINT ( :samp:`{x}` , 1)`` would compile,
+two operands which can be correctly accessed as ``XINT (x, 0)``
+and ``XEXP (x, 1)``.  Incorrect accesses like
+``XEXP (x, 0)`` and ``XINT (x, 1)`` would compile,
 but would trigger an internal compiler error when rtl checking is enabled.
-Nothing stops you from writing ``XEXP ( :samp:`{x}` , 28)`` either, but
+Nothing stops you from writing ``XEXP (x, 28)`` either, but
 this will access memory past the end of the expression with
 unpredictable results.
 
@@ -73,7 +73,7 @@ vector.
   in operand number :samp:`{idx}` in :samp:`{exp}`.  This value is an RTX.
 
   It is up to you to make sure that :samp:`{eltnum}` is not negative
-  and is less than ``XVECLEN ( :samp:`{exp}` , :samp:`{idx}` )``.
+  and is less than ``XVECLEN (exp, idx)``.
 
   All the macros defined in this section expand into lvalues and therefore
 can be used to assign the operands, lengths and vector elements as well as

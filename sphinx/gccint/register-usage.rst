@@ -420,10 +420,10 @@ The default is always nonzero.
   This hook returns true if a value of mode :samp:`{mode1}` is accessible
   in mode :samp:`{mode2}` without copying.
 
-  If ``TARGET_HARD_REGNO_MODE_OK ( :samp:`{r}` , :samp:`{mode1}` )`` and
-  ``TARGET_HARD_REGNO_MODE_OK ( :samp:`{r}` , :samp:`{mode2}` )`` are always
+  If ``TARGET_HARD_REGNO_MODE_OK (r, mode1)`` and
+  ``TARGET_HARD_REGNO_MODE_OK (r, mode2)`` are always
   the same for any :samp:`{r}` , then
-  ``TARGET_MODES_TIEABLE_P ( :samp:`{mode1}` , :samp:`{mode2}` )``
+  ``TARGET_MODES_TIEABLE_P (mode1, mode2)``
   should be true.  If they differ for any :samp:`{r}` , you should define
   this hook to return false unless some other mechanism ensures the
   accessibility of the value in a narrower mode.

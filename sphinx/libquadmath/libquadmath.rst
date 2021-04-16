@@ -494,7 +494,7 @@ license notices just after the title page:
 
 .. code-block:: c++
 
-    Copyright (C)  :samp:`{year}`  :samp:`{your name}`.
+    Copyright (C)  year  your name.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -507,9 +507,9 @@ replace the 'with...Texts.' line with this:
 
 .. code-block:: c++
 
-      with the Invariant Sections being :samp:`{list their titles}` , with
-      the Front-Cover Texts being :samp:`{list}` , and with the Back-Cover Texts
-      being :samp:`{list}`.
+      with the Invariant Sections being list their titles, with
+      the Front-Cover Texts being list, and with the Back-Cover Texts
+      being list.
 
 If you have Invariant Sections without Cover Texts, or some other
 combination of the three, merge those two alternatives to suit the

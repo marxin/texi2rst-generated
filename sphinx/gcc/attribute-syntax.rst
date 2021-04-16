@@ -32,7 +32,7 @@ See :ref:`statement-attributes`, for details of the semantics of attributes
 applying to statements.
 
 An :dfn:`attribute specifier` is of the form
-``__attribute__ (( :samp:`{attribute-list}` ))``.  An :dfn:`attribute list`
+``__attribute__ ((attribute-list))``.  An :dfn:`attribute list`
 is a possibly empty comma-separated sequence of :dfn:`attributes`, where
 each attribute is one of the following:
 
@@ -204,14 +204,14 @@ contains an identifier :samp:`{ident}`.  The type specified for :samp:`{ident}`
 for derived declarators whose type does not include an attribute
 specifier is as in the ISO C standard.
 
-If ``D1`` has the form ``( :samp:`{attribute-specifier-list}` D )``,
+If ``D1`` has the form ``( attribute-specifier-list D )``,
 and the declaration ``T D`` specifies the type
 ' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}` , then
 ``T D1`` specifies the type ' :samp:`{derived-declarator-type-list}`
 :samp:`{attribute-specifier-list}` :samp:`{Type}` ' for :samp:`{ident}`.
 
 If ``D1`` has the form ``*
-:samp:`{type-qualifier-and-attribute-specifier-list}` D``, and the
+type-qualifier-and-attribute-specifier-list D``, and the
 declaration ``T D`` specifies the type
 ' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}` , then
 ``T D1`` specifies the type ' :samp:`{derived-declarator-type-list}`

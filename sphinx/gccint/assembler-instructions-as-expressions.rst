@@ -21,11 +21,11 @@ the value that is stored in ``outputvar``:
 
 .. code-block:: c++
 
-  (set :samp:`{rtx-for-outputvar}`
+  (set rtx-for-outputvar
        (asm_operands "foo %1,%2,%0" "a" 0
-                     [ :samp:`{rtx-for-addition-result}` :samp:`{rtx-for-*z}` ]
-                     [(asm_input: :samp:`{m1}` "g")
-                      (asm_input: :samp:`{m2}` "di")]))
+                     [rtx-for-addition-result rtx-for-*z]
+                     [(asm_input:m1 "g")
+                      (asm_input:m2 "di")]))
 
 Here the operands of the ``asm_operands`` RTX are the assembler
 template string, the output-operand's constraint, the index-number of the

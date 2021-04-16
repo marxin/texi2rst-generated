@@ -740,8 +740,8 @@ the 'copyright' line and a pointer to where the full notice is found.
 
 .. code-block:: c++
 
-  :samp:`{one line to give the program's name and a brief idea of what it does.}`  
-  Copyright (C) :samp:`{year}` :samp:`{name of author}`
+  one line to give the program's name and a brief idea of what it does.  
+  Copyright (C) year name of author
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -763,10 +763,10 @@ notice like this when it starts in an interactive mode:
 
 .. code-block:: c++
 
-  :samp:`{program}` Copyright (C) :samp:`{year}` :samp:`{name of author}` 
-  This program comes with ABSOLUTELY NO WARRANTY; for details type :samp:`show w`.
+  program Copyright (C) year name of author 
+  This program comes with ABSOLUTELY NO WARRANTY; for details type show w.
   This is free software, and you are welcome to redistribute it
-  under certain conditions; type :samp:`show c` for details.
+  under certain conditions; type show c for details.
 
 The hypothetical commands :samp:`show w` and :samp:`show c` should show
 the appropriate parts of the General Public License.  Of course, your
@@ -1253,7 +1253,7 @@ license notices just after the title page:
 
 .. code-block:: c++
 
-    Copyright (C)  :samp:`{year}`  :samp:`{your name}`.
+    Copyright (C)  year  your name.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -1266,9 +1266,9 @@ replace the 'with...Texts.' line with this:
 
 .. code-block:: c++
 
-      with the Invariant Sections being :samp:`{list their titles}` , with
-      the Front-Cover Texts being :samp:`{list}` , and with the Back-Cover Texts
-      being :samp:`{list}`.
+      with the Invariant Sections being list their titles, with
+      the Front-Cover Texts being list, and with the Back-Cover Texts
+      being list.
 
 If you have Invariant Sections without Cover Texts, or some other
 combination of the three, merge those two alternatives to suit the

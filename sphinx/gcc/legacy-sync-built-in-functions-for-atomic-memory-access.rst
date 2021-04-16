@@ -71,7 +71,7 @@ accessible variables should be protected.
 
   .. code-block:: c++
 
-    { tmp = *ptr; *ptr :samp:`{op}` = value; return tmp; }
+    { tmp = *ptr; *ptr op= value; return tmp; }
     { tmp = *ptr; *ptr = ~(tmp & value); return tmp; }   // nand
 
   The object pointed to by the first argument must be of integer or pointer
@@ -101,7 +101,7 @@ accessible variables should be protected.
 
   .. code-block:: c++
 
-    { *ptr :samp:`{op}` = value; return *ptr; }
+    { *ptr op= value; return *ptr; }
     { *ptr = ~(*ptr & value); return *ptr; }   // nand
 
   The same constraints on arguments apply as for the corresponding
@@ -119,12 +119,12 @@ accessible variables should be protected.
 
   These built-in functions perform an atomic compare and swap.
   That is, if the current
-  value of ``* :samp:`{ptr}``` is :samp:`{oldval}` , then write :samp:`{newval}` into
-  ``* :samp:`{ptr}```.
+  value of ``*ptr`` is :samp:`{oldval}` , then write :samp:`{newval}` into
+  ``*ptr``.
 
   The 'bool' version returns ``true`` if the comparison is successful and
   :samp:`{newval}` is written.  The 'val' version returns the contents
-  of ``* :samp:`{ptr}``` before the operation.
+  of ``*ptr`` before the operation.
 
 ``__sync_synchronize (...)``
 
@@ -138,13 +138,13 @@ accessible variables should be protected.
 
   This built-in function, as described by Intel, is not a traditional test-and-set
   operation, but rather an atomic exchange operation.  It writes :samp:`{value}`
-  into ``* :samp:`{ptr}```, and returns the previous contents of
-  ``* :samp:`{ptr}```.
+  into ``*ptr``, and returns the previous contents of
+  ``*ptr``.
 
   Many targets have only minimal support for such locks, and do not support
   a full exchange operation.  In this case, a target may support reduced
   functionality here by which the *only* valid value to store is the
-  immediate constant 1.  The exact value actually stored in ``* :samp:`{ptr}```
+  immediate constant 1.  The exact value actually stored in ``*ptr``
   is implementation defined.
 
   This built-in function is not a full barrier,
@@ -160,7 +160,7 @@ accessible variables should be protected.
 
   This built-in function releases the lock acquired by
   ``__sync_lock_test_and_set``.
-  Normally this means writing the constant 0 to ``* :samp:`{ptr}```.
+  Normally this means writing the constant 0 to ``*ptr``.
 
   This built-in function is not a full barrier,
   but rather a :dfn:`release barrier`.

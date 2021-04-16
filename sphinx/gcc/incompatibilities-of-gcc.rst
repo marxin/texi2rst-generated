@@ -78,7 +78,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
         return a;
 
       a = fun2 ();
-      /* ``longjmp (j)`` may occur in ``fun3``. */
+      /* longjmp (j) may occur in fun3. */
       return a + fun3 ();
     }
 

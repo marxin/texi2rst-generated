@@ -19,7 +19,7 @@ A ``call`` expression has two operands, as follows:
 
 .. code-block:: c++
 
-  (call (mem: :samp:`{fm}` :samp:`{addr}` ) :samp:`{nbytes}` )
+  (call (mem:fm addr) nbytes)
 
 Here :samp:`{nbytes}` is an operand that represents the number of bytes of
 argument data being passed to the subroutine, :samp:`{fm}` is a machine mode
@@ -39,8 +39,8 @@ the value is returned in a hard register.  If this register's number is
 
 .. code-block:: c++
 
-  (set (reg: :samp:`{m}` :samp:`{r}` )
-       (call (mem: :samp:`{fm}` :samp:`{addr}` ) :samp:`{nbytes}` ))
+  (set (reg:m r)
+       (call (mem:fm addr) nbytes))
 
 This RTL expression makes it clear (to the optimizer passes) that the
 appropriate register receives a useful value in this insn.

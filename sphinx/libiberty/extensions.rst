@@ -648,7 +648,7 @@ This is equivalent to
 
 .. code-block:: c++
 
-  ((size_t) (obstack_next_free ( :samp:`{obstack-ptr}` ) - obstack_base ( :samp:`{obstack-ptr}` )))
+  ((size_t) (obstack_next_free (obstack-ptr) - obstack_base (obstack-ptr)))
 
 .. _obstacks-data-alignment:
 
@@ -753,8 +753,8 @@ is how to do so cleanly:
 
 .. code-block:: c++
 
-  if (obstack_chunk_size (obstack_ptr) < :samp:`{new-chunk-size}` )
-    obstack_chunk_size (obstack_ptr) = :samp:`{new-chunk-size}` ;
+  if (obstack_chunk_size (obstack_ptr) < new-chunk-size)
+    obstack_chunk_size (obstack_ptr) = new-chunk-size;
 
 .. _summary-of-obstacks:
 

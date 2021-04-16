@@ -5,7 +5,7 @@ Invoking :command:`gcov`
 
 .. code-block:: c++
 
-  gcov  [:samp:`{options}` ] :samp:`{files}`
+  gcov [options] files
 
 :command:`gcov` accepts the following options:
 
@@ -75,11 +75,11 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
   .. code-block:: c++
 
     {
-      "current_working_directory": :samp:`{current_working_directory}` ,
-      "data_file": :samp:`{data_file}` ,
-      "format_version": :samp:`{format_version}` ,
-      "gcc_version": :samp:`{gcc_version}`
-      "files": [ :samp:`{file}` ]
+      "current_working_directory": current_working_directory,
+      "data_file": data_file,
+      "format_version": format_version,
+      "gcc_version": gcc_version
+      "files": [file]
     }
 
   Fields of the root element have following semantics:
@@ -98,9 +98,9 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
   .. code-block:: c++
 
     {
-      "file": :samp:`{file_name}` ,
-      "functions": [ :samp:`{function}` ],
-      "lines": [ :samp:`{line}` ]
+      "file": file_name,
+      "functions": [function],
+      "lines": [line]
     }
 
   Fields of the :samp:`{file}` element have following semantics:
@@ -112,15 +112,15 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
   .. code-block:: c++
 
     {
-      "blocks": :samp:`{blocks}` ,
-      "blocks_executed": :samp:`{blocks_executed}` ,
-      "demangled_name": " :samp:`{demangled_name}` ,
-      "end_column": :samp:`{end_column}` ,
-      "end_line": :samp:`{end_line}` ,
-      "execution_count": :samp:`{execution_count}` ,
-      "name": :samp:`{name}` ,
-      "start_column": :samp:`{start_column}`
-      "start_line": :samp:`{start_line}`
+      "blocks": blocks,
+      "blocks_executed": blocks_executed,
+      "demangled_name": "demangled_name,
+      "end_column": end_column,
+      "end_line": end_line,
+      "execution_count": execution_count,
+      "name": name,
+      "start_column": start_column
+      "start_line": start_line
     }
 
   Fields of the :samp:`{function}` element have following semantics:
@@ -153,11 +153,11 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
   .. code-block:: c++
 
     {
-      "branches": [ :samp:`{branch}` ],
-      "count": :samp:`{count}` ,
-      "line_number": :samp:`{line_number}` ,
-      "unexecuted_block": :samp:`{unexecuted_block}`
-      "function_name": :samp:`{function_name}` ,
+      "branches": [branch],
+      "count": count,
+      "line_number": line_number,
+      "unexecuted_block": unexecuted_block
+      "function_name": function_name,
     }
 
   Branches are present only with :samp:`{-b}` option.
@@ -178,9 +178,9 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
   .. code-block:: c++
 
     {
-      "count": :samp:`{count}` ,
-      "fallthrough": :samp:`{fallthrough}` ,
-      "throw": :samp:`{throw}`
+      "count": count,
+      "fallthrough": fallthrough,
+      "throw": throw
     }
 
   Fields of the :samp:`{branch}` element have following semantics:
@@ -296,7 +296,7 @@ program source code.  The format is
 
 .. code-block:: c++
 
-  :samp:`{execution_count}` : :samp:`{line_number}` : :samp:`{source line text}`
+  execution_count:line_number:source line text
 
 Additional block information may succeed each line, when requested by
 command line option.  The :samp:`{execution_count}` is :samp:`-` for lines
@@ -329,7 +329,7 @@ The additional block information is of the form
 
 .. code-block:: c++
 
-  :samp:`{tag}` :samp:`{information}`
+  tag information
 
 The :samp:`{information}` is human readable, but designed to be simple
 enough for machine parsing too.

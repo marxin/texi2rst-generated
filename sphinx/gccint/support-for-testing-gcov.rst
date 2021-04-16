@@ -30,7 +30,7 @@ checking both, as well as passing :option:`-b` to :command:`gcov`:
 
 A line count command appears within a comment on the source line
 that is expected to get the specified count and has the form
-``count( :samp:`{cnt}` )``.  A test should only check line counts for
+``count(cnt)``.  A test should only check line counts for
 lines that will get the same count for any architecture.
 
 Commands to check branch percentages (``branch``) and call

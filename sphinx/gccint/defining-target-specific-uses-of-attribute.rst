@@ -96,7 +96,7 @@ on this implementation detail.
   created.  The :samp:`{attr_ptr}` argument is a pointer to the attribute list
   for this decl.  The list itself should not be modified, since it may be
   shared with other decls, but attributes may be chained on the head of
-  the list and ``* :samp:`{attr_ptr}``` modified to point to the new
+  the list and ``*attr_ptr`` modified to point to the new
   attributes, or a copy of the list may be made if further changes are
   needed.
 

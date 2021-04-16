@@ -5,7 +5,7 @@ Invoking :command:`gcov-tool`
 
 .. code-block:: c++
 
-  gcov-tool  [:samp:`{global-options}` ] SUB_COMMAND  [:samp:`{sub_command-options}` ] :samp:`{profile_dir}`
+  gcov-tool [global-options] SUB_COMMAND [sub_command-options] profile_dir
 
 :command:`gcov-tool` accepts the following options:
 

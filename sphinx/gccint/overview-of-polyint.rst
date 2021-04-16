@@ -8,7 +8,7 @@ only known at runtime and use polynomials of the form:
 
 .. code-block:: c++
 
-  :samp:`{c0}` + :samp:`{c1}` * :samp:`{x1}` + ... + :samp:`{cn}` * :samp:`{xn}`
+  c0 + c1 * x1 + ... + cn * xn
 
 to represent a size or offset whose value might depend on some
 of these indeterminates.  The coefficients :samp:`{c0}` , ..., :samp:`{cn}`

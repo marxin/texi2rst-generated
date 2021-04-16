@@ -824,9 +824,9 @@ The Front End Make-lang.in File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each language subdirectory contains a Make-lang.in file.  It contains
-targets ``:samp:`{lang}`.:samp:`{hook}``` (where ``:samp:`{lang}``` is the
+targets ``lang.hook`` (where ``lang`` is the
 setting of ``language`` in config-lang.in) for the following
-values of ``:samp:`{hook}```, and any other Makefile rules required to
+values of ``hook``, and any other Makefile rules required to
 build those targets (which may if necessary use other Makefiles
 specified in ``outputs`` in config-lang.in, although this is
 deprecated).  It also adds any testsuite targets that can use the
@@ -909,7 +909,7 @@ standard rule in gcc/Makefile.in to the variable
   all generated files in the source directory that are not version-controlled,
   but should not delete anything that is.
 
-  Make-lang.in must also define a variable ``:samp:`{lang}` _OBJS``
+  Make-lang.in must also define a variable ``lang_OBJS``
 to a list of host object files that are used by that language.
 
 .. _back-end:

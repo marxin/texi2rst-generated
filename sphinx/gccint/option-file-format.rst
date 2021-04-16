@@ -133,9 +133,9 @@ The files can contain the following types of record:
 * A target mask record.  These records have one field of the form
   :samp:`Mask( :samp:`{x}` )`.  The options-processing script will automatically
   allocate a bit in ``target_flags`` (see :ref:`run-time-target`) for
-  each mask name :samp:`{x}` and set the macro ``MASK_ :samp:`{x}``` to the
-  appropriate bitmask.  It will also declare a ``TARGET_ :samp:`{x}```
-  macro that has the value 1 when bit ``MASK_ :samp:`{x}``` is set and
+  each mask name :samp:`{x}` and set the macro ``MASK_x`` to the
+  appropriate bitmask.  It will also declare a ``TARGET_x``
+  macro that has the value 1 when bit ``MASK_x`` is set and
   0 otherwise.
 
   They are primarily intended to declare target masks that are not

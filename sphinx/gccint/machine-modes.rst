@@ -478,10 +478,10 @@ named modes.
 
 .. index:: opt_mode
 
-machmode.h also defines a template class ``opt_mode< :samp:`{T}` >``
+machmode.h also defines a template class ``opt_mode<T>``
 that holds a ``T`` or nothing, where ``T`` can be either
 ``machine_mode`` or one of the wrapper classes above.  The main
-operations on an ``opt_mode< :samp:`{T}` >`` :samp:`{x}` are as follows:
+operations on an ``opt_mode<T>`` :samp:`{x}` are as follows:
 
 :samp:`{x}.exists ()`
   Return true if :samp:`{x}` holds a mode rather than nothing.
@@ -497,7 +497,7 @@ operations on an ``opt_mode< :samp:`{T}` >`` :samp:`{x}` are as follows:
   Set :samp:`{x}` to :samp:`{y}` , where :samp:`{y}` is a :samp:`{T}` or implicitly converts
   to a :samp:`{T}`.
 
-  The default constructor sets an ``opt_mode< :samp:`{T}` >`` to nothing.
+  The default constructor sets an ``opt_mode<T>`` to nothing.
 There is also a constructor that takes an initial value of type :samp:`{T}`.
 
 It is possible to use the is-a.h accessors on a ``machine_mode``
@@ -518,7 +518,7 @@ or machine mode wrapper :samp:`{x}` :
   and return it as a :samp:`{T}`.
 
 :samp:`dyn_cast <{T}> ({x})`
-  Return an ``opt_mode< :samp:`{T}` >`` that holds :samp:`{x}` if :samp:`{x}` meets
+  Return an ``opt_mode<T>`` that holds :samp:`{x}` if :samp:`{x}` meets
   the conditions for wrapper class :samp:`{T}` and that holds nothing otherwise.
 
   The purpose of these wrapper classes is to give stronger static type
@@ -530,7 +530,7 @@ the functions above.
 The wrapper classes are normal C++ classes, with user-defined
 constructors.  Sometimes it is useful to have a POD version of
 the same type, particularly if the type appears in a ``union``.
-The template class ``pod_mode< :samp:`{T}` >`` provides a POD version
+The template class ``pod_mode<T>`` provides a POD version
 of wrapper class :samp:`{T}`.  It is assignment-compatible with :samp:`{T}`
 and implicitly converts to both ``machine_mode`` and :samp:`{T}`.
 

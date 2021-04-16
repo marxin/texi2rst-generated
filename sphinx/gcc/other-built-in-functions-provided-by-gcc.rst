@@ -931,12 +931,12 @@ that are recognized in any mode since ISO C90 reserves these names for
 the purpose to which ISO C99 puts them.  All these functions have
 corresponding versions prefixed with ``__builtin_``.
 
-There are also built-in functions ``__builtin_fabsf :samp:`{n}```,
-``__builtin_fabsf :samp:`{n}` x``, ``__builtin_copysignf :samp:`{n}``` and
-``__builtin_copysignf :samp:`{n}` x``, corresponding to the TS 18661-3
-functions ``fabsf :samp:`{n}```, ``fabsf :samp:`{n}` x``,
-``copysignf :samp:`{n}``` and ``copysignf :samp:`{n}` x``, for supported
-types ``_Float :samp:`{n}``` and ``_Float :samp:`{n}` x``.
+There are also built-in functions ``__builtin_fabsfn``,
+``__builtin_fabsfnx``, ``__builtin_copysignfn`` and
+``__builtin_copysignfnx``, corresponding to the TS 18661-3
+functions ``fabsfn``, ``fabsfnx``,
+``copysignfn`` and ``copysignfnx``, for supported
+types ``_Floatn`` and ``_Floatnx``.
 
 There are also GNU extension functions ``clog10``, ``clog10f`` and
 ``clog10l`` which names are reserved by ISO C99 for future use.
@@ -1348,7 +1348,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   whose types vary between the functions; complex integer types (a GNU
   extension) are treated like ``_Complex double`` for this purpose
   (or ``_Complex _Float64`` if all the function return types are the
-  same ``_Float :samp:`{n}``` or ``_Float :samp:`{n}` x`` type).
+  same ``_Floatn`` or ``_Floatnx`` type).
   If the function return types vary, or are all the same integer type,
   the function called is the one for which :samp:`{t}` is :samp:`{u}` , and it is
   an error if there is no such function.  If the function return types
@@ -1721,12 +1721,12 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 .. function:: _Floatn __builtin_huge_valfn(void )
 
   Similar to ``__builtin_huge_val``, except the return type is
-  ``_Float :samp:`{n}```.
+  ``_Floatn``.
 
 .. function:: _Floatnx __builtin_huge_valfnx(void )
 
   Similar to ``__builtin_huge_val``, except the return type is
-  ``_Float :samp:`{n}` x``.
+  ``_Floatnx``.
 
 .. function:: int __builtin_fpclassify(int ,int ,int ,int ,int ,... )
 
@@ -1769,12 +1769,12 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 .. function:: _Floatn __builtin_inffn(void )
 
   Similar to ``__builtin_inf``, except the return
-  type is ``_Float :samp:`{n}```.
+  type is ``_Floatn``.
 
 .. function:: _Floatn __builtin_inffnx(void )
 
   Similar to ``__builtin_inf``, except the return
-  type is ``_Float :samp:`{n}` x``.
+  type is ``_Floatnx``.
 
 .. function:: int __builtin_isinf_sign(... )
 
@@ -1825,12 +1825,12 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 .. function:: _Floatn __builtin_nanfn(const char*str )
 
   Similar to ``__builtin_nan``, except the return type is
-  ``_Float :samp:`{n}```.
+  ``_Floatn``.
 
 .. function:: _Floatnx __builtin_nanfnx(const char*str )
 
   Similar to ``__builtin_nan``, except the return type is
-  ``_Float :samp:`{n}` x``.
+  ``_Floatnx``.
 
 .. function:: double __builtin_nans(const char*str )
 
@@ -1861,12 +1861,12 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 .. function:: _Floatn __builtin_nansfn(const char*str )
 
   Similar to ``__builtin_nans``, except the return type is
-  ``_Float :samp:`{n}```.
+  ``_Floatn``.
 
 .. function:: _Floatnx __builtin_nansfnx(const char*str )
 
   Similar to ``__builtin_nans``, except the return type is
-  ``_Float :samp:`{n}` x``.
+  ``_Floatnx``.
 
 .. function:: int __builtin_ffs(int x)
 

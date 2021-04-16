@@ -394,7 +394,7 @@ Each array element should have four elements: the directory name (a
 string constant), the component name (also a string constant), a flag
 for C++-only directories,
 and a flag showing that the includes in the directory don't need to be
-wrapped in ``extern :samp:`C``` when compiling C++.  Mark the end of
+wrapped in ``extern C`` when compiling C++.  Mark the end of
 the array with a null element.
 
 The component name denotes what GNU package the include file is part of,

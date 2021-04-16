@@ -16,7 +16,7 @@ It looks like:
 .. code-block:: c++
 
   (include
-    :samp:`{pathname}` )
+    pathname)
 
 For example:
 

@@ -53,17 +53,17 @@ Arithmetic functions
 .. function:: short fract __subqq3(short fracta,short fractb)
 
   These functions return the difference of :samp:`{a}` and :samp:`{b}` ;
-  that is, ``:samp:`{a}` - :samp:`{b}```.
+  that is, ``a - b``.
 
 .. function:: short fract __sssubqq3(short fracta,short fractb)
 
   These functions return the difference of :samp:`{a}` and :samp:`{b}` with signed
-  saturation;  that is, ``:samp:`{a}` - :samp:`{b}```.
+  saturation;  that is, ``a - b``.
 
 .. function:: unsigned short fract __ussubuqq3(unsigned shortfract a,unsigned shortfract b)
 
   These functions return the difference of :samp:`{a}` and :samp:`{b}` with unsigned
-  saturation;  that is, ``:samp:`{a}` - :samp:`{b}```.
+  saturation;  that is, ``a - b``.
 
 .. function:: short fract __mulqq3(short fracta,short fractb)
 

@@ -1968,8 +1968,8 @@ warn at all unless optimization is enabled.
 
     void f (char c, int i)
     {
-      c = c + i; // warns with :option:`-Wconversion`
-      c = c + 1; // only warns with :option:`-Warith-conversion`
+      c = c + i; // warns with -Wconversion
+      c = c + 1; // only warns with -Warith-conversion
     }
 
 .. option:: -Warray-bounds, -Wno-array-bounds
@@ -2815,7 +2815,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wwrite-strings, -Wno-write-strings
 
   When compiling C, give string constants the type ``const
-  char[ :samp:`{length}` ]`` so that copying the address of one into a
+  char[length]`` so that copying the address of one into a
   non-``const`` ``char *`` pointer produces a warning.  These
   warnings help you find at compile time code that can try to write
   into a string constant, but only if you have been very careful about

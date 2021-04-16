@@ -5,7 +5,7 @@ Invoking :command:`gcov-dump`
 
 .. code-block:: c++
 
-  Usage: gcov-dump  [:samp:`{OPTION}` ] ... :samp:`{gcovfiles}`
+  Usage: gcov-dump [OPTION] ... gcovfiles
 
 :command:`gcov-dump` accepts the following options:
 

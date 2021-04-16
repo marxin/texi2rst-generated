@@ -12,7 +12,7 @@ like this:
 
 .. code-block:: c++
 
-  case :samp:`{low}` ... :samp:`{high}` :
+  case low ... high:
 
 This has the same effect as the proper number of individual ``case``
 labels, one for each integer value from :samp:`{low}` to :samp:`{high}` , inclusive.

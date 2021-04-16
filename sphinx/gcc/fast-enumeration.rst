@@ -100,14 +100,14 @@ Here is a more technical description with the gory details.  Consider the code
 
 .. code-block:: objective-c
 
-    for ( :samp:`{object expression}` in :samp:`{collection expression}` )
+    for (object expression in collection expression)
     {
-      :samp:`{statements}`
+      statements
     }
 
 here is what happens when you run it:
 
-* ``:samp:`{collection expression}``` is evaluated exactly once and the
+* ``collection expression`` is evaluated exactly once and the
   result is used as the collection object to iterate over.  This means
   it is safe to write code such as ``for (object in [NSDictionary
   keyEnumerator]) ...``.
@@ -119,26 +119,26 @@ here is what happens when you run it:
   retrieved one by one (hence the name 'fast enumeration').
 
 * if there are no objects in the collection, then
-  ``:samp:`{object expression}``` is set to ``nil`` and the loop
+  ``object expression`` is set to ``nil`` and the loop
   immediately terminates.
 
 * if there are objects in the collection, then for each object in the
-  collection (in the order they are returned) ``:samp:`{object expression}```
-  is set to the object, then ``:samp:`{statements}``` are executed.
+  collection (in the order they are returned) ``object expression``
+  is set to the object, then ``statements`` are executed.
 
-* ``:samp:`{statements}``` can contain ``break`` and ``continue``
+* ``statements`` can contain ``break`` and ``continue``
   commands, which will abort the iteration or skip to the next loop
   iteration as expected.
 
 * when the iteration ends because there are no more objects to iterate
-  over, ``:samp:`{object expression}``` is set to ``nil``.  This allows
+  over, ``object expression`` is set to ``nil``.  This allows
   you to determine whether the iteration finished because a ``break``
-  command was used (in which case ``:samp:`{object expression}``` will remain
+  command was used (in which case ``object expression`` will remain
   set to the last object that was iterated over) or because it iterated
-  over all the objects (in which case ``:samp:`{object expression}``` will be
+  over all the objects (in which case ``object expression`` will be
   set to ``nil``).
 
-* ``:samp:`{statements}``` must not make any changes to the collection
+* ``statements`` must not make any changes to the collection
   object; if they do, it is a hard error and the fast enumeration
   terminates by invoking ``objc_enumerationMutation``, a runtime
   function that normally aborts the program but which can be customized

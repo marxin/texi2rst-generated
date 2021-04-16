@@ -69,12 +69,12 @@ functions:
 
 .. code-block:: c++
 
-  known_lt ( :samp:`{a}` , :samp:`{b}` ) == !maybe_ge ( :samp:`{a}` , :samp:`{b}` )
-  known_le ( :samp:`{a}` , :samp:`{b}` ) == !maybe_gt ( :samp:`{a}` , :samp:`{b}` )
-  known_eq ( :samp:`{a}` , :samp:`{b}` ) == !maybe_ne ( :samp:`{a}` , :samp:`{b}` )
-  known_ge ( :samp:`{a}` , :samp:`{b}` ) == !maybe_lt ( :samp:`{a}` , :samp:`{b}` )
-  known_gt ( :samp:`{a}` , :samp:`{b}` ) == !maybe_le ( :samp:`{a}` , :samp:`{b}` )
-  known_ne ( :samp:`{a}` , :samp:`{b}` ) == !maybe_eq ( :samp:`{a}` , :samp:`{b}` )
+  known_lt (a, b) == !maybe_ge (a, b)
+  known_le (a, b) == !maybe_gt (a, b)
+  known_eq (a, b) == !maybe_ne (a, b)
+  known_ge (a, b) == !maybe_lt (a, b)
+  known_gt (a, b) == !maybe_le (a, b)
+  known_ne (a, b) == !maybe_eq (a, b)
 
 Properties of the ``poly_int`` comparisons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -83,44 +83,44 @@ All 'maybe' relations except ``maybe_ne`` are transitive, so for example:
 
 .. code-block:: c++
 
-  maybe_lt ( :samp:`{a}` , :samp:`{b}` ) && maybe_lt ( :samp:`{b}` , :samp:`{c}` ) implies maybe_lt ( :samp:`{a}` , :samp:`{c}` )
+  maybe_lt (a, b) && maybe_lt (b, c) implies maybe_lt (a, c)
 
 for all :samp:`{a}` , :samp:`{b}` and :samp:`{c}`.  ``maybe_lt``, ``maybe_gt``
 and ``maybe_ne`` are irreflexive, so for example:
 
 .. code-block:: c++
 
-  !maybe_lt ( :samp:`{a}` , :samp:`{a}` )
+  !maybe_lt (a, a)
 
 is true for all :samp:`{a}`.  ``maybe_le``, ``maybe_eq`` and ``maybe_ge``
 are reflexive, so for example:
 
 .. code-block:: c++
 
-  maybe_le ( :samp:`{a}` , :samp:`{a}` )
+  maybe_le (a, a)
 
 is true for all :samp:`{a}`.  ``maybe_eq`` and ``maybe_ne`` are symmetric, so:
 
 .. code-block:: c++
 
-  maybe_eq ( :samp:`{a}` , :samp:`{b}` ) == maybe_eq ( :samp:`{b}` , :samp:`{a}` )
-  maybe_ne ( :samp:`{a}` , :samp:`{b}` ) == maybe_ne ( :samp:`{b}` , :samp:`{a}` )
+  maybe_eq (a, b) == maybe_eq (b, a)
+  maybe_ne (a, b) == maybe_ne (b, a)
 
 for all :samp:`{a}` and :samp:`{b}`.  In addition:
 
 .. code-block:: c++
 
-  maybe_le ( :samp:`{a}` , :samp:`{b}` ) == maybe_lt ( :samp:`{a}` , :samp:`{b}` ) || maybe_eq ( :samp:`{a}` , :samp:`{b}` )
-  maybe_ge ( :samp:`{a}` , :samp:`{b}` ) == maybe_gt ( :samp:`{a}` , :samp:`{b}` ) || maybe_eq ( :samp:`{a}` , :samp:`{b}` )
-  maybe_lt ( :samp:`{a}` , :samp:`{b}` ) == maybe_gt ( :samp:`{b}` , :samp:`{a}` )
-  maybe_le ( :samp:`{a}` , :samp:`{b}` ) == maybe_ge ( :samp:`{b}` , :samp:`{a}` )
+  maybe_le (a, b) == maybe_lt (a, b) || maybe_eq (a, b)
+  maybe_ge (a, b) == maybe_gt (a, b) || maybe_eq (a, b)
+  maybe_lt (a, b) == maybe_gt (b, a)
+  maybe_le (a, b) == maybe_ge (b, a)
 
 However:
 
 .. code-block:: c++
 
-  maybe_le ( :samp:`{a}` , :samp:`{b}` ) && maybe_le ( :samp:`{b}` , :samp:`{a}` ) does not imply !maybe_ne ( :samp:`{a}` , :samp:`{b}` ) [== known_eq ( :samp:`{a}` , :samp:`{b}` )]
-  maybe_ge ( :samp:`{a}` , :samp:`{b}` ) && maybe_ge ( :samp:`{b}` , :samp:`{a}` ) does not imply !maybe_ne ( :samp:`{a}` , :samp:`{b}` ) [== known_eq ( :samp:`{a}` , :samp:`{b}` )]
+  maybe_le (a, b) && maybe_le (b, a) does not imply !maybe_ne (a, b) [== known_eq (a, b)]
+  maybe_ge (a, b) && maybe_ge (b, a) does not imply !maybe_ne (a, b) [== known_eq (a, b)]
 
 One example is again :samp:`:samp:`{a}` == 3 + 4 :samp:`{x}``
 and :samp:`:samp:`{b}` == 1 + 5 :samp:`{x}``, where :samp:`maybe_le ( :samp:`{a}` , :samp:`{b}` )`,
@@ -140,24 +140,24 @@ Also:
 
 .. code-block:: c++
 
-  known_lt ( :samp:`{a}` , :samp:`{b}` ) == known_gt ( :samp:`{b}` , :samp:`{a}` )
-  known_le ( :samp:`{a}` , :samp:`{b}` ) == known_ge ( :samp:`{b}` , :samp:`{a}` )
-  known_lt ( :samp:`{a}` , :samp:`{b}` ) implies !known_lt ( :samp:`{b}` , :samp:`{a}` )  [asymmetry]
-  known_gt ( :samp:`{a}` , :samp:`{b}` ) implies !known_gt ( :samp:`{b}` , :samp:`{a}` )
-  known_le ( :samp:`{a}` , :samp:`{b}` ) && known_le ( :samp:`{b}` , :samp:`{a}` ) == known_eq ( :samp:`{a}` , :samp:`{b}` ) [== !maybe_ne ( :samp:`{a}` , :samp:`{b}` )]
-  known_ge ( :samp:`{a}` , :samp:`{b}` ) && known_ge ( :samp:`{b}` , :samp:`{a}` ) == known_eq ( :samp:`{a}` , :samp:`{b}` ) [== !maybe_ne ( :samp:`{a}` , :samp:`{b}` )]
+  known_lt (a, b) == known_gt (b, a)
+  known_le (a, b) == known_ge (b, a)
+  known_lt (a, b) implies !known_lt (b, a)  [asymmetry]
+  known_gt (a, b) implies !known_gt (b, a)
+  known_le (a, b) && known_le (b, a) == known_eq (a, b) [== !maybe_ne (a, b)]
+  known_ge (a, b) && known_ge (b, a) == known_eq (a, b) [== !maybe_ne (a, b)]
 
 ``known_le`` and ``known_ge`` are therefore antisymmetric and are
 partial orders.  However:
 
 .. code-block:: c++
 
-  known_le ( :samp:`{a}` , :samp:`{b}` ) does not imply known_lt ( :samp:`{a}` , :samp:`{b}` ) || known_eq ( :samp:`{a}` , :samp:`{b}` )
-  known_ge ( :samp:`{a}` , :samp:`{b}` ) does not imply known_gt ( :samp:`{a}` , :samp:`{b}` ) || known_eq ( :samp:`{a}` , :samp:`{b}` )
+  known_le (a, b) does not imply known_lt (a, b) || known_eq (a, b)
+  known_ge (a, b) does not imply known_gt (a, b) || known_eq (a, b)
 
 For example, :samp:`known_le (4, 4 + 4 :samp:`{x}` )` holds because the runtime
 indeterminate :samp:`{x}` is a nonnegative integer, but neither
-``known_lt (4, 4 + 4 :samp:`{x}` )`` nor ``known_eq (4, 4 + 4 :samp:`{x}` )`` hold.
+``known_lt (4, 4 + 4x)`` nor ``known_eq (4, 4 + 4x)`` hold.
 
 Comparing potentially-unordered ``poly_int``s
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,13 +172,13 @@ One way of checking whether [ :samp:`{begin1}` , :samp:`{end1}` ) might overlap
 
 .. code-block:: c++
 
-  maybe_gt ( :samp:`{end1}` , :samp:`{begin2}` ) && maybe_gt ( :samp:`{end2}` , :samp:`{begin1}` )
+  maybe_gt (end1, begin2) && maybe_gt (end2, begin1)
 
 and another (equivalent) way is:
 
 .. code-block:: c++
 
-  !(known_le ( :samp:`{end1}` , :samp:`{begin2}` ) || known_le ( :samp:`{end2}` , :samp:`{begin1}` ))
+  !(known_le (end1, begin2) || known_le (end2, begin1))
 
 However, in this particular example, it is better to use the range helper
 functions instead.  See :ref:`range-checks-on-poly_ints`.

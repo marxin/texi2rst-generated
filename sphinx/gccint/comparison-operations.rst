@@ -38,8 +38,8 @@ deduced from it, but such a comparison should never exist in RTL due to
 constant folding.
 
 In the example above, if ``(cc0)`` were last set to
-``(compare :samp:`{x}`:samp:`{y}` )``, the comparison operation is
-identical to ``(eq :samp:`{x}`:samp:`{y}` )``.  Usually only one style
+``(compare xy)``, the comparison operation is
+identical to ``(eq xy)``.  Usually only one style
 of comparisons is supported on a particular machine, but the combine
 pass will try to merge the operations to produce the ``eq`` shown
 in case it exists in the context of the particular insn involved.

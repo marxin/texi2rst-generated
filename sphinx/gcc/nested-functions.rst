@@ -103,7 +103,7 @@ containing function, exiting the nested function that did the
     /* ... */
     return 0;
 
-   /* Control comes here from ``access``
+   /* Control comes here from access
       if it detects an error.  */
    failure:
     return -1;

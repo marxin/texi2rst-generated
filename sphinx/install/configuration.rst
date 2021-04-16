@@ -62,9 +62,9 @@ To configure GCC:
 
 .. code-block:: c++
 
-  % mkdir :samp:`{objdir}`
-  % cd :samp:`{objdir}`
-  % :samp:`{srcdir}` /configure [ :samp:`{options}` ] [ :samp:`{target}` ]
+  % mkdir objdir
+  % cd objdir
+  % srcdir/configure [options] [target]
 
 Distributor optionsIf you will be distributing binary versions of GCC, with modifications
 to the source code, you should use the options described in this
@@ -93,7 +93,7 @@ section to make clear that your version contains modifications.
 
 :samp:`--with-changes-root-url={url}`
   Specify the URL root that contains information about changes in GCC
-  releases like ``gcc- :samp:`{version}` /changes.html``.
+  releases like ``gcc-version/changes.html``.
   The :samp:`{url}` should end with a ``/`` character.
 
   The default value is https://gcc.gnu.org/https://gcc.gnu.org/.
@@ -1053,7 +1053,7 @@ aix`, :samp:`svr4` or :samp:`both`
       * indicates whether :samp:`libNAME.so.V(shr.o)` is 32 or 64 bit
 
       * lists all the public symbols exported by :samp:`lib.so.V(shr.o)`,
-           eventually decorated with the ``:samp:`weak` Keyword``
+           eventually decorated with the ``weak Keyword``
 
       * is necessary for shared linking against :samp:`lib.so.V(shr.o)`
 
@@ -1222,7 +1222,7 @@ aix`, :samp:`svr4` or :samp:`both`
 
   .. code-block:: c++
 
-    ``HKEY_LOCAL_MACHINE\SOFTWARE\Free Software Foundation\ :samp:`{key}```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Free Software Foundation\key
 
   :samp:`{key}` defaults to GCC version number, and can be overridden by the
   :option:`--enable-win32-registry`:samp:`={key}` option.  Vendors and distributors
@@ -1518,7 +1518,7 @@ aix`, :samp:`svr4` or :samp:`both`
 
   .. code-block:: c++
 
-    % :samp:`{srcdir}` /configure \
+    % srcdir/configure \
         --host=x86_64-pc-linux-gnu \
         --enable-linker-plugin-configure-flags=--host=i686-pc-linux-gnu \
         --enable-linker-plugin-flags='CC=gcc\ -m32\ -Wl,-rpath,[...]/i686-pc-linux-gnu/lib'
@@ -1560,7 +1560,7 @@ aix`, :samp:`svr4` or :samp:`both`
 
   .. code-block:: c++
 
-    % :samp:`{srcdir}` /configure \
+    % srcdir/configure \
         --enable-offload-targets=x86_64-intelmicemul-linux-gnu=/path/to/x86_64/compiler,nvptx-none
 
 :samp:`--with-hsa-runtime={pathname}` :samp:`--with-hsa-runtime-include={pathname}` :samp:`--with-hsa-runtime-lib={pathname}`

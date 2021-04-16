@@ -124,7 +124,7 @@ Do not define this macro if it would never modify :samp:`{m}`.
 
   Like ``PROMOTE_MODE``, but it is applied to outgoing function arguments or
   function return values.  The target hook should return the new mode
-  and possibly change ``* :samp:`{punsignedp}``` if the promotion should
+  and possibly change ``*punsignedp`` if the promotion should
   change signedness.  This function is called only for scalar *or
   pointer* types.
 
@@ -209,7 +209,7 @@ on machines that don't have byte or half-word store operations.
 MacroBIGGEST_FIELD_ALIGNMENTBiggest alignment that any structure or union field can require on this
 machine, in bits.  If defined, this overrides ``BIGGEST_ALIGNMENT`` for
 structure and union fields only, unless the field alignment has been set
-by the ``__attribute__ ((aligned ( :samp:`{n}` )))`` construct.
+by the ``__attribute__ ((aligned (n)))`` construct.
 
 .. index:: ADJUST_FIELD_ALIGN
 
@@ -218,7 +218,7 @@ type :samp:`{type}` if the alignment computed in the usual way (including
 applying of ``BIGGEST_ALIGNMENT`` and ``BIGGEST_FIELD_ALIGNMENT`` to the
 alignment) is :samp:`{computed}`.  It overrides alignment only if the
 field alignment has not been set by the
-``__attribute__ ((aligned ( :samp:`{n}` )))`` construct.  Note that :samp:`{field}`
+``__attribute__ ((aligned (n)))`` construct.  Note that :samp:`{field}`
 may be ``NULL_TREE`` in case we just query for the minimum alignment
 of a field of type :samp:`{type}` in structure context.
 
@@ -238,7 +238,7 @@ If not defined, the default value is ``STACK_BOUNDARY``.
 
 MacroMAX_OFILE_ALIGNMENTBiggest alignment supported by the object file format of this machine.
 Use this macro to limit the alignment which can be specified using the
-``__attribute__ ((aligned ( :samp:`{n}` )))`` construct for functions and
+``__attribute__ ((aligned (n)))`` construct for functions and
 objects with static storage duration.  The alignment of automatic
 objects may exceed the object file format maximum up to the maximum
 supported by GCC.  If not defined, the default value is
@@ -344,7 +344,7 @@ MacroLOCAL_DECL_ALIGNMENT(:samp:`{decl}`)If defined, a C expression to compute t
 variable :samp:`{decl}`.
 
 If this macro is not defined, then
-``LOCAL_ALIGNMENT (TREE_TYPE ( :samp:`{decl}` ), DECL_ALIGN ( :samp:`{decl}` ))``
+``LOCAL_ALIGNMENT (TREE_TYPE (decl), DECL_ALIGN (decl))``
 is used.
 
 One use of this macro is to increase alignment of medium-size data to
@@ -502,14 +502,14 @@ appropriate sizes.  If this macro is undefined, ``GET_MODE_BITSIZE
 
 MacroSTACK_SAVEAREA_MODE(:samp:`{save_level}`)If defined, an expression of type ``machine_mode`` that
 specifies the mode of the save area operand of a
-``save_stack_ :samp:`{level}``` named pattern (see :ref:`standard-names`).
+``save_stack_level`` named pattern (see :ref:`standard-names`).
 :samp:`{save_level}` is one of ``SAVE_BLOCK``, ``SAVE_FUNCTION``, or
 ``SAVE_NONLOCAL`` and selects which of the three named patterns is
 having its mode specified.
 
 You need not define this macro if it always returns ``Pmode``.  You
 would most commonly define this macro if the
-``save_stack_ :samp:`{level}``` patterns need to support both a 32- and a
+``save_stack_level`` patterns need to support both a 32- and a
 64-bit mode.
 
 .. index:: STACK_SIZE_MODE

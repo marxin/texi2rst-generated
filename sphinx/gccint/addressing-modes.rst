@@ -44,7 +44,7 @@ post-address side-effect generation involving a register displacement.
 
 MacroCONSTANT_ADDRESS_P(:samp:`{x}`)A C expression that is 1 if the RTX :samp:`{x}` is a constant which
 is a valid address.  On most machines the default definition of
-``(CONSTANT_P ( :samp:`{x}` ) && GET_CODE ( :samp:`{x}` ) != CONST_DOUBLE)``
+``(CONSTANT_P (x) && GET_CODE (x) != CONST_DOUBLE)``
 is acceptable, but a few machines are more restrictive as to which
 constant addresses are supported.
 
@@ -114,9 +114,9 @@ accept.
 
   .. code-block:: c++
 
-    #define GO_IF_LEGITIMATE_ADDRESS ( :samp:`{mode}` , :samp:`{x}` , :samp:`{label}` )
+    #define GO_IF_LEGITIMATE_ADDRESS (mode, x, label)
 
-  and should ``goto :samp:`{label}``` if the address :samp:`{x}` is a valid
+  and should ``goto label`` if the address :samp:`{x}` is a valid
   address on the target machine for a memory operand of mode :samp:`{mode}`.
 
   .. index:: REG_OK_STRICT
@@ -348,7 +348,7 @@ address;  but often a machine-dependent strategy can generate better code.
   a single element, in which case the vectorizer will not try to optimize
   for alignment.
 
-  The default hook returns ``TYPE_ALIGN ( :samp:`{type}` )``, which is
+  The default hook returns ``TYPE_ALIGN (type)``, which is
   correct for most targets.
 
 .. function:: bool TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE(const_tree type,bool is_packed)
@@ -599,6 +599,6 @@ address;  but often a machine-dependent strategy can generate better code.
   and :samp:`:samp:`{ops}` [1]` are conditionally added together.
 
   This hook is only relevant if the target supports conditional patterns
-  like ``cond_add :samp:`{m}```.  The default implementation returns a zero
+  like ``cond_addm``.  The default implementation returns a zero
   constant of type :samp:`{type}`.
 

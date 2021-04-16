@@ -162,7 +162,7 @@ second operand.
 
   .. code-block:: c++
 
-    (mult: :samp:`{m}` (sign_extend: :samp:`{m}` :samp:`{x}` ) (sign_extend: :samp:`{m}` :samp:`{y}` ))
+    (mult:m (sign_extend:m x) (sign_extend:m y))
 
   where :samp:`{m}` is wider than the modes of :samp:`{x}` and :samp:`{y}` , which need
   not be the same.
@@ -203,7 +203,7 @@ second operand.
 
   .. code-block:: c++
 
-    (truncate: :samp:`{m1}` (div: :samp:`{m2}` :samp:`{x}` (sign_extend: :samp:`{m2}` :samp:`{y}` )))
+    (truncate:m1 (div:m2 x (sign_extend:m2 y)))
 
   .. index:: udiv
 
@@ -406,7 +406,7 @@ second operand.
   integer of mode :samp:`{m}` , starting at the least significant bit position.
   If :samp:`{x}` is zero, the value is determined by
   ``CTZ_DEFINED_VALUE_AT_ZERO`` (see :ref:`misc`).  Except for this case,
-  ``ctz(x)`` is equivalent to ``ffs( :samp:`{x}` ) - 1``.  The mode of
+  ``ctz(x)`` is equivalent to ``ffs(x) - 1``.  The mode of
   :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.
 
   .. index:: popcount

@@ -66,11 +66,11 @@ The syntax is as follows:
 
 .. code-block:: c++
 
-  (define_c_enum " :samp:`{name}` " [
-    :samp:`{value0}`
-    :samp:`{value1}`
+  (define_c_enum "name" [
+    value0
+    value1
     ...
-    :samp:`{valuen}`
+    valuen
   ])
 
 This definition causes the equivalent of the following C code to appear
@@ -78,13 +78,13 @@ in insn-constants.h:
 
 .. code-block:: c++
 
-  enum :samp:`{name}` {
-    :samp:`{value0}` = 0,
-    :samp:`{value1}` = 1,
+  enum name {
+    value0 = 0,
+    value1 = 1,
     ...
-    :samp:`{valuen}` = :samp:`{n}`
+    valuen = n
   };
-  #define NUM_ :samp:`{cname}` _VALUES ( :samp:`{n}` + 1)
+  #define NUM_cname_VALUES (n + 1)
 
 where :samp:`{cname}` is the capitalized form of :samp:`{name}`.
 It also makes each :samp:`{valuei}` available in the machine description
@@ -92,7 +92,7 @@ file, just as if it had been declared with:
 
 .. code-block:: c++
 
-  (define_constants [( :samp:`{valuei}` :samp:`{i}` )])
+  (define_constants [(valuei i)])
 
 Each :samp:`{valuei}` is usually an upper-case identifier and usually
 begins with :samp:`{cname}`.
@@ -102,10 +102,10 @@ you like.  The above example is directly equivalent to:
 
 .. code-block:: c++
 
-  (define_c_enum " :samp:`{name}` " [ :samp:`{value0}` ])
-  (define_c_enum " :samp:`{name}` " [ :samp:`{value1}` ])
+  (define_c_enum "name" [value0])
+  (define_c_enum "name" [value1])
   ...
-  (define_c_enum " :samp:`{name}` " [ :samp:`{valuen}` ])
+  (define_c_enum "name" [valuen])
 
 Splitting the enumeration helps to improve the modularity of each
 individual ``.md`` file.  For example, if a port defines its
@@ -153,22 +153,22 @@ Another way of defining an enumeration is to use ``define_enum``:
 
 .. code-block:: c++
 
-  (define_enum " :samp:`{name}` " [
-    :samp:`{value0}`
-    :samp:`{value1}`
+  (define_enum "name" [
+    value0
+    value1
     ...
-    :samp:`{valuen}`
+    valuen
   ])
 
 This directive implies:
 
 .. code-block:: c++
 
-  (define_c_enum " :samp:`{name}` " [
-    :samp:`{cname}` _ :samp:`{cvalue0}`
-    :samp:`{cname}` _ :samp:`{cvalue1}`
+  (define_c_enum "name" [
+    cname_cvalue0
+    cname_cvalue1
     ...
-    :samp:`{cname}` _ :samp:`{cvaluen}`
+    cname_cvaluen
   ])
 
 .. index:: define_enum_attr

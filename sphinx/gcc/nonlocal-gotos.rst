@@ -33,7 +33,7 @@ built-in functions as:
 .. code-block:: c++
 
   #include <stdint.h>
-  intptr_t :samp:`{buf}` [5];
+  intptr_t buf[5];
 
 .. function:: int __builtin_setjmp(intptr_t *buf)
 

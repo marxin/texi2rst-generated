@@ -143,7 +143,7 @@ acc_event_info.data_event.host_ptr
 
 typedef union acc_api_info
   ... as printed in 5.2.3. Third Argument: API-Specific
-  Information.  This should obviously be ``typedef *struct*
+  Information.  This should obviously be ``typedef struct
   acc_api_info``.
 
 acc_api_info.device_api

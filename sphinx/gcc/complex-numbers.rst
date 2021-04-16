@@ -41,7 +41,7 @@ GNU extension.  The :samp:`j` suffix still has the GNU meaning.
 .. index:: __imag__ keyword
 
 To extract the real part of a complex-valued expression :samp:`{exp}` , write
-``__real__ :samp:`{exp}```.  Likewise, use ``__imag__`` to
+``__real__ exp``.  Likewise, use ``__imag__`` to
 extract the imaginary part.  This is a GNU extension; for values of
 floating type, you should use the ISO C99 functions ``crealf``,
 ``creal``, ``creall``, ``cimagf``, ``cimag`` and

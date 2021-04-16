@@ -28,7 +28,7 @@ Fortran is called an assigned goto, but that name seems inappropriate in
 C, where one can do more than simply store label addresses in label
 variables.
 
-, ``goto * :samp:`{exp}` ;``.  For example,
+, ``goto *exp;``.  For example,
 
 .. code-block:: c++
 

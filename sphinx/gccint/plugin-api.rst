@@ -20,8 +20,8 @@ and exit with the error message:
 
 .. code-block:: c++
 
-  fatal error: plugin :samp:`{name}` is not licensed under a GPL-compatible license
-  :samp:`{name}` : undefined symbol: plugin_is_GPL_compatible
+  fatal error: plugin name is not licensed under a GPL-compatible license
+  name: undefined symbol: plugin_is_GPL_compatible
   compilation terminated
 
 The declared type of the symbol should be int, to match a forward declaration

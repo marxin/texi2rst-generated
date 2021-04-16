@@ -6,7 +6,7 @@ contrib/test_summary shell script.  Start it in the :samp:`{objdir}` with
 
 .. code-block:: c++
 
-  :samp:`{srcdir}` /contrib/test_summary -p your_commentary.txt \
+  srcdir/contrib/test_summary -p your_commentary.txt \
       -m gcc-testresults@gcc.gnu.org |sh
 
 This script uses the :command:`Mail` program to send the results, so

@@ -13,7 +13,7 @@ compile time whether:
 
 .. code-block:: c++
 
-  3 + 4 :samp:`{x}` <= 1 + 5 :samp:`{x}`
+  3 + 4x <= 1 + 5x
 
 since the condition is false when :samp:`{x}` <= 1 and true when :samp:`{x}` >= 2.
 
@@ -21,31 +21,31 @@ Similarly, ``poly_int`` cannot represent the result of:
 
 .. code-block:: c++
 
-  (3 + 4 :samp:`{x}` ) * (1 + 5 :samp:`{x}` )
+  (3 + 4x) * (1 + 5x)
 
 since it cannot (and in practice does not need to) store powers greater
 than one.  It also cannot represent the result of:
 
 .. code-block:: c++
 
-  (3 + 4 :samp:`{x}` ) / (1 + 5 :samp:`{x}` )
+  (3 + 4x) / (1 + 5x)
 
 The following sections describe how we deal with these restrictions.
 
 .. index:: poly_int, use in target-independent code
 
-As described earlier, a ``poly_int<1, :samp:`{T}` >`` has no indeterminates
+As described earlier, a ``poly_int<1, T>`` has no indeterminates
 and so degenerates to a compile-time constant of type :samp:`{T}`.  It would
 be possible in that case to do all normal arithmetic on the :samp:`{T}` ,
 and to compare the :samp:`{T}` using the normal C++ operators.  We deliberately
 prevent target-independent code from doing this, since the compiler needs
-to support other ``poly_int< :samp:`{n}` , :samp:`{T}` >`` as well, regardless of
+to support other ``poly_int<n, T>`` as well, regardless of
 the current target's ``NUM_POLY_INT_COEFFS``.
 
 .. index:: poly_int, use in target-specific code
 
 However, it would be very artificial to force target-specific code
 to follow these restrictions if the target has no runtime indeterminates.
-There is therefore an implicit conversion from ``poly_int<1, :samp:`{T}` >``
+There is therefore an implicit conversion from ``poly_int<1, T>``
 to :samp:`{T}` when compiling target-specific translation units.
 

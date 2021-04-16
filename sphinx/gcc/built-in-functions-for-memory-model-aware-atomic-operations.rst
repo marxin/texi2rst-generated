@@ -111,7 +111,7 @@ ensures proper usage.
 .. function:: type __atomic_load_n(type*ptr ,int memorder)
 
   This built-in function implements an atomic load operation.  It returns the
-  contents of ``* :samp:`{ptr}```.
+  contents of ``*ptr``.
 
   The valid memory order variants are
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, ``__ATOMIC_ACQUIRE``,
@@ -120,12 +120,12 @@ ensures proper usage.
 .. function:: void __atomic_load(type*ptr ,type*ret ,int memorder)
 
   This is the generic version of an atomic load.  It returns the
-  contents of ``* :samp:`{ptr}``` in ``* :samp:`{ret}```.
+  contents of ``*ptr`` in ``*ret``.
 
 .. function:: void __atomic_store_n(type*ptr ,typeval ,int memorder)
 
   This built-in function implements an atomic store operation.  It writes 
-  ``:samp:`{val}``` into ``* :samp:`{ptr}```.  
+  ``val`` into ``*ptr``.  
 
   The valid memory order variants are
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, and ``__ATOMIC_RELEASE``.
@@ -133,13 +133,13 @@ ensures proper usage.
 .. function:: void __atomic_store(type*ptr ,type*val ,int memorder)
 
   This is the generic version of an atomic store.  It stores the value
-  of ``* :samp:`{val}``` into ``* :samp:`{ptr}```.
+  of ``*val`` into ``*ptr``.
 
 .. function:: type __atomic_exchange_n(type*ptr ,typeval ,int memorder)
 
   This built-in function implements an atomic exchange operation.  It writes
-  :samp:`{val}` into ``* :samp:`{ptr}```, and returns the previous contents of
-  ``* :samp:`{ptr}```.
+  :samp:`{val}` into ``*ptr``, and returns the previous contents of
+  ``*ptr``.
 
   The valid memory order variants are
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, ``__ATOMIC_ACQUIRE``,
@@ -148,23 +148,23 @@ ensures proper usage.
 .. function:: void __atomic_exchange(type*ptr ,type*val ,type*ret ,int memorder)
 
   This is the generic version of an atomic exchange.  It stores the
-  contents of ``* :samp:`{val}``` into ``* :samp:`{ptr}```. The original value
-  of ``* :samp:`{ptr}``` is copied into ``* :samp:`{ret}```.
+  contents of ``*val`` into ``*ptr``. The original value
+  of ``*ptr`` is copied into ``*ret``.
 
 .. function:: bool __atomic_compare_exchange_n(type*ptr ,type*expected ,typedesired ,bool weak,int success_memorder,int failure_memorder)
 
   This built-in function implements an atomic compare and exchange operation.
-  This compares the contents of ``* :samp:`{ptr}``` with the contents of
-  ``* :samp:`{expected}```. If equal, the operation is a *read-modify-write*
-  operation that writes :samp:`{desired}` into ``* :samp:`{ptr}```.  If they are not
+  This compares the contents of ``*ptr`` with the contents of
+  ``*expected``. If equal, the operation is a *read-modify-write*
+  operation that writes :samp:`{desired}` into ``*ptr``.  If they are not
   equal, the operation is a *read* and the current contents of
-  ``* :samp:`{ptr}``` are written into ``* :samp:`{expected}```.  :samp:`{weak}` is ``true``
+  ``*ptr`` are written into ``*expected``.  :samp:`{weak}` is ``true``
   for weak compare_exchange, which may fail spuriously, and ``false`` for
   the strong variation, which never fails spuriously.  Many targets
   only offer the strong variation and ignore the parameter.  When in doubt, use
   the strong variation.
 
-  If :samp:`{desired}` is written into ``* :samp:`{ptr}``` then ``true`` is returned
+  If :samp:`{desired}` is written into ``*ptr`` then ``true`` is returned
   and memory is affected according to the
   memory order specified by :samp:`{success_memorder}`.  There are no
   restrictions on what memory order can be used here.
@@ -190,7 +190,7 @@ ensures proper usage.
 
   .. code-block:: c++
 
-    { *ptr :samp:`{op}` = val; return *ptr; }
+    { *ptr op= val; return *ptr; }
     { *ptr = ~(*ptr & val); return *ptr; } // nand
 
   The object pointed to by the first argument must be of integer or pointer
@@ -199,14 +199,14 @@ ensures proper usage.
 .. function:: type __atomic_fetch_add(type*ptr ,typeval ,int memorder)
 
   These built-in functions perform the operation suggested by the name, and
-  return the value that had previously been in ``* :samp:`{ptr}```.  Operations
+  return the value that had previously been in ``*ptr``.  Operations
   on pointer arguments are performed as if the operands were of
   the ``uintptr_t`` type.  That is, they are not scaled by the size of
   the type to which the pointer points.
 
   .. code-block:: c++
 
-    { tmp = *ptr; *ptr :samp:`{op}` = val; return tmp; }
+    { tmp = *ptr; *ptr op= val; return tmp; }
     { tmp = *ptr; *ptr = ~(*ptr & val); return tmp; } // nand
 
   The same constraints on arguments apply as for the corresponding
@@ -215,7 +215,7 @@ ensures proper usage.
 .. function:: bool __atomic_test_and_set(void *ptr,int memorder)
 
   This built-in function performs an atomic test-and-set operation on
-  the byte at ``* :samp:`{ptr}```.  The byte is set to some implementation
+  the byte at ``*ptr``.  The byte is set to some implementation
   defined nonzero 'set' value and the return value is ``true`` if and only
   if the previous contents were 'set'.
   It should be only used for operands of type ``bool`` or ``char``. For 
@@ -226,7 +226,7 @@ ensures proper usage.
 .. function:: void __atomic_clear(bool *ptr,int memorder)
 
   This built-in function performs an atomic clear operation on
-  ``* :samp:`{ptr}```.  After the operation, ``* :samp:`{ptr}``` contains 0.
+  ``*ptr``.  After the operation, ``*ptr`` contains 0.
   It should be only used for operands of type ``bool`` or ``char`` and 
   in conjunction with ``__atomic_test_and_set``.
   For other types it may only clear partially. If the type is not ``bool``

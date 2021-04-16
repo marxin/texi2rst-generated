@@ -15,14 +15,14 @@ of sections.
 
 varasm.c provides several well-known sections, such as
 ``text_section``, ``data_section`` and ``bss_section``.
-The normal way of controlling a ``:samp:`{foo}` _section`` variable
-is to define the associated ``:samp:`{FOO}` _SECTION_ASM_OP`` macro,
+The normal way of controlling a ``foo_section`` variable
+is to define the associated ``FOO_SECTION_ASM_OP`` macro,
 as described below.  The macros are only read once, when varasm.c
 initializes itself, so their values must be run-time constants.
 They may however depend on command-line flags.
 
 *Note:* Some run-time files, such crtstuff.c, also make
-use of the ``:samp:`{FOO}` _SECTION_ASM_OP`` macros, and expect them
+use of the ``FOO_SECTION_ASM_OP`` macros, and expect them
 to be string literals.
 
 Some assemblers require a different string to be written every time a
@@ -298,7 +298,7 @@ the string if a different section name should be used.
   The hook is executed immediately after rtl has been created for
   :samp:`{decl}` , which may be a variable or function declaration or
   an entry in the constant pool.  In either case, :samp:`{rtl}` is the
-  rtl in question.  Do *not* use ``DECL_RTL ( :samp:`{decl}` )``
+  rtl in question.  Do *not* use ``DECL_RTL (decl)``
   in this hook; that field may not have been initialized yet.
 
   In the case of a constant, it is safe to assume that the rtl is

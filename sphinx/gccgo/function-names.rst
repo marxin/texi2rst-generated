@@ -49,7 +49,7 @@ The name of Go functions accessed from C is subject to change.  At
 present the name of a Go function that does not have a receiver is
 ``pkgpath.Functionname``.  The :samp:`{pkgpath}` is set by the
 :option:`-fgo-pkgpath` option used when the package is compiled; if the
-option is not used, the default is ``go.:samp:`{packagename}```.  To
+option is not used, the default is ``go.packagename``.  To
 call the function from C you must set the name using the :command:`gcc`
 ``__asm__`` extension.
 

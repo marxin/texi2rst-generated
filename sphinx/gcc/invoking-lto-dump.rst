@@ -5,7 +5,7 @@ Invoking :command:`lto-dump`
 
 .. code-block:: c++
 
-  Usage: lto-dump  [:samp:`{OPTION}` ] ... :samp:`{objfiles}`
+  Usage: lto-dump [OPTION] ... objfiles
 
 :command:`lto-dump` accepts the following options:
 

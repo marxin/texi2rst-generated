@@ -21,7 +21,7 @@ produced as the result of macro expansion.  ``_Pragma`` is an
 operator, much like ``sizeof`` or ``defined``, and can be embedded
 in a macro.
 
-Its syntax is ``_Pragma ( :samp:`{string-literal}` )``, where
+Its syntax is ``_Pragma (string-literal)``, where
 :samp:`{string-literal}` can be either a normal or wide-character string
 literal.  It is destringized, by replacing all :samp:`\\` with a single
 :samp:`\` and all :samp:`\"` with a :samp:`"`.  The result is then

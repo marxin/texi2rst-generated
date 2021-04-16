@@ -139,9 +139,9 @@ Under the hood, all of these routines are implemented as
 
 .. code-block:: c++
 
-    if (__unord :samp:`{X}` f2 (a, b))
-      return :samp:`{E}` ;
-    return __cmp :samp:`{X}` f2 (a, b);
+    if (__unordXf2 (a, b))
+      return E;
+    return __cmpXf2 (a, b);
 
 where :samp:`{E}` is a constant chosen to give the proper behavior for
 NaN.  Thus, the meaning of the return value is different for each set.

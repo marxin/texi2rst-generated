@@ -34,11 +34,11 @@ The simplest sort of conditional is
 
 .. code-block:: c++
 
-  #ifdef :samp:`{MACRO}`
+  #ifdef MACRO
 
-  :samp:`{controlled text}`
+  controlled text
 
-  #endif /* :samp:`{MACRO}` */
+  #endif /* MACRO */
 
 .. index:: conditional group
 
@@ -111,11 +111,11 @@ expression, rather than the mere existence of one macro.  Its syntax is
 
 .. code-block:: c++
 
-  #if :samp:`{expression}`
+  #if expression
 
-  :samp:`{controlled text}`
+  controlled text
 
-  #endif /* :samp:`{expression}` */
+  #endif /* expression */
 
 :samp:`{expression}` is a C expression of integer type, subject to stringent
 restrictions.  It may contain
@@ -169,7 +169,7 @@ Defined
 
 The special operator ``defined`` is used in :samp:`#if` and
 :samp:`#elif` expressions to test whether a certain name is defined as a
-macro.  ``defined :samp:`{name}``` and ``defined ( :samp:`{name}` )`` are
+macro.  ``defined name`` and ``defined (name)`` are
 both expressions whose value is 1 if :samp:`{name}` is defined as a macro at
 the current point in the program, and 0 otherwise.  Thus,  ``#if
 defined MACRO`` is precisely equivalent to ``#ifdef MACRO``.
@@ -215,11 +215,11 @@ looks like:
 
 .. code-block:: c++
 
-  #if :samp:`{expression}`
-  :samp:`{text-if-true}`
-  #else /* Not :samp:`{expression}` */
-  :samp:`{text-if-false}`
-  #endif /* Not :samp:`{expression}` */
+  #if expression
+  text-if-true
+  #else /* Not expression */
+  text-if-false
+  #endif /* Not expression */
 
 If :samp:`{expression}` is nonzero, the :samp:`{text-if-true}` is included and
 the :samp:`{text-if-false}` is skipped.  If :samp:`{expression}` is zero, the
@@ -282,13 +282,13 @@ condition succeeds after the original :samp:`#if` and all previous
 
 .. index:: __has_attribute
 
-The special operator ``__has_attribute ( :samp:`{operand}` )`` may be used
+The special operator ``__has_attribute (operand)`` may be used
 in :samp:`#if` and :samp:`#elif` expressions to test whether the attribute
 referenced by its :samp:`{operand}` is recognized by GCC.  Using the operator
 in other contexts is not valid.  In C code, if compiling for strict
 conformance to standards before C2x, :samp:`{operand}` must be
 a valid identifier.  Otherwise, :samp:`{operand}` may be optionally
-introduced by the ``:samp:`{attribute-scope}` ::`` prefix.
+introduced by the ``attribute-scope::`` prefix.
 The :samp:`{attribute-scope}` prefix identifies the 'namespace' within
 which the attribute is recognized.  The scope of GCC attributes is
 :samp:`gnu` or :samp:`__gnu__`.  The ``__has_attribute`` operator by
@@ -322,11 +322,11 @@ but not with others that don't.
 
 .. index:: __has_cpp_attribute
 
-The special operator ``__has_cpp_attribute ( :samp:`{operand}` )`` may be used
+The special operator ``__has_cpp_attribute (operand)`` may be used
 in :samp:`#if` and :samp:`#elif` expressions in C++ code to test whether
 the attribute referenced by its :samp:`{operand}` is recognized by GCC.
-``__has_cpp_attribute ( :samp:`{operand}` )`` is equivalent to
-``__has_attribute ( :samp:`{operand}` )`` except that when :samp:`{operand}`
+``__has_cpp_attribute (operand)`` is equivalent to
+``__has_attribute (operand)`` except that when :samp:`{operand}`
 designates a supported standard attribute it evaluates to an integer
 constant of the form ``YYYYMM`` indicating the year and month when
 the attribute was first introduced into the C++ standard.  For additional
@@ -338,7 +338,7 @@ attributes, see https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test
 
 .. index:: __has_c_attribute
 
-The special operator ``__has_c_attribute ( :samp:`{operand}` )`` may be
+The special operator ``__has_c_attribute (operand)`` may be
 used in :samp:`#if` and :samp:`#elif` expressions in C code to test
 whether the attribute referenced by its :samp:`{operand}` is recognized by
 GCC in attributes using the :samp:`[[]]` syntax.  GNU attributes must
@@ -354,7 +354,7 @@ to the attribute was extended in the C standard.
 
 .. index:: __has_builtin
 
-The special operator ``__has_builtin ( :samp:`{operand}` )`` may be used in
+The special operator ``__has_builtin (operand)`` may be used in
 constant integer contexts and in preprocessor :samp:`#if` and :samp:`#elif`
 expressions to test whether the symbol named by its :samp:`{operand}` is
 recognized as a built-in function by GCC in the current language and
@@ -382,7 +382,7 @@ the operator is as follows:
 
 .. index:: __has_include
 
-The special operator ``__has_include ( :samp:`{operand}` )`` may be used in
+The special operator ``__has_include (operand)`` may be used in
 :samp:`#if` and :samp:`#elif` expressions to test whether the header referenced
 by its :samp:`{operand}` can be included using the :samp:`#include` directive.  Using
 the operator in other contexts is not valid.  The :samp:`{operand}` takes

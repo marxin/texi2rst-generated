@@ -309,7 +309,7 @@ identical.  If we are considering an insn of the form
 
 .. code-block:: c++
 
-  (insn :samp:`{n}` :samp:`{prev}` :samp:`{next}`
+  (insn n prev next
     (set (reg:SI 3)
          (plus:SI (reg:SI 6) (reg:SI 109)))
     ...)
@@ -324,11 +324,11 @@ results might look like this:
 
 .. code-block:: c++
 
-  (insn :samp:`{n2}` :samp:`{prev}` :samp:`{n}`
+  (insn n2 prev n
     (set (reg:SI 3) (reg:SI 6))
     ...)
 
-  (insn :samp:`{n}` :samp:`{n2}` :samp:`{next}`
+  (insn n n2 next
     (set (reg:SI 3)
          (plus:SI (reg:SI 3) (reg:SI 109)))
     ...)
@@ -2243,7 +2243,7 @@ the meanings of that architecture's constraints.
     therefore on PowerPC targets in that case it is only safe
     to use ``m<>`` in an ``asm`` statement if that ``asm`` statement
     accesses the operand exactly once.  The ``asm`` statement must also
-    use ``%U :samp:`{<opno>}``` as a placeholder for the 'update' flag in the
+    use ``%U<opno>`` as a placeholder for the 'update' flag in the
     corresponding load or store instruction.  For example:
 
     .. code-block:: c++
@@ -2906,11 +2906,11 @@ the meanings of that architecture's constraints.
     ``si``, ``di``, ``bp``, ``sp``).
 
   ``q``
-    Any register accessible as ``:samp:`{r}` l``.  In 32-bit mode, ``a``,
+    Any register accessible as ``rl``.  In 32-bit mode, ``a``,
     ``b``, ``c``, and ``d``; in 64-bit mode, any integer register.
 
   ``Q``
-    Any register accessible as ``:samp:`{r}` h``: ``a``, ``b``,
+    Any register accessible as ``rh``: ``a``, ``b``,
     ``c``, and ``d``.
 
   ``l``
@@ -3485,10 +3485,10 @@ it correctly:
 
 .. code-block:: c++
 
-  (define_constraint "[ :samp:`{GHIJKLMNOP}` ]..."
-    " :samp:`{doc}`..."
-    (and (match_code "const_int")  ; ``const_double`` for G/H
-         :samp:`{condition}`...))            ; usually a ``match_test``
+  (define_constraint "[GHIJKLMNOP]..."
+    "doc..."
+    (and (match_code "const_int")  ; const_double for G/H
+         condition...))            ; usually a match_test
 
 .. the semicolons line up in the formatted manual
 
@@ -3569,7 +3569,7 @@ before tm_p.h.
 
 .. index:: constraint_satisfied_p
 
-Functionboolconstraint_satisfied_p(rtx:samp:`{exp}`,enumconstraint_num:samp:`{c}`)Like the ``satisfies_constraint_ :samp:`{m}``` functions, but the
+Functionboolconstraint_satisfied_p(rtx:samp:`{exp}`,enumconstraint_num:samp:`{c}`)Like the ``satisfies_constraint_m`` functions, but the
 constraint to test is given as an argument, :samp:`{c}`.  If :samp:`{c}`
 specifies a register constraint, this function will always return
 ``false``.
@@ -3580,7 +3580,7 @@ Functionenum reg_classreg_class_for_constraint(enumconstraint_num:samp:`{c}`)Ret
 a register constraint, or those registers are not available for the
 currently selected subtarget, returns ``NO_REGS``.
 
-Here is an example use of ``satisfies_constraint_ :samp:`{m}```.  In
+Here is an example use of ``satisfies_constraint_m``.  In
 peephole optimizations (see :ref:`peephole-definitions`), operand
 constraint strings are ignored, so if there are relevant constraints,
 they must be tested in the C condition.  In the example, the

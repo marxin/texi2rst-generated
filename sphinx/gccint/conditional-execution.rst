@@ -19,10 +19,10 @@ can be quite tedious to describe these forms directly in the
 .. code-block:: c++
 
   (define_cond_exec
-    [ :samp:`{predicate-pattern}` ]
-    " :samp:`{condition}` "
-    " :samp:`{output-template}` "
-    " :samp:`{optional-insn-attribues}` ")
+    [predicate-pattern]
+    "condition"
+    "output-template"
+    "optional-insn-attribues")
 
 :samp:`{predicate-pattern}` is the condition that must be true for the
 insn to be executed at runtime and should match a relational operator.
@@ -72,13 +72,13 @@ For example,
     [(set (match_operand:SI 0 "register_operand" "r")
           (plus:SI (match_operand:SI 1 "register_operand" "r")
                    (match_operand:SI 2 "register_operand" "r")))]
-    " :samp:`{test1}` "
+    "test1"
     "add %2,%1,%0")
 
   (define_cond_exec
     [(ne (match_operand:CC 0 "register_operand" "c")
          (const_int 0))]
-    " :samp:`{test2}` "
+    "test2"
     "(%0)")
 
 generates a new pattern
@@ -91,6 +91,6 @@ generates a new pattern
        (set (match_operand:SI 0 "register_operand" "r")
             (plus:SI (match_operand:SI 1 "register_operand" "r")
                      (match_operand:SI 2 "register_operand" "r"))))]
-    "( :samp:`{test2}` ) && ( :samp:`{test1}` )"
+    "(test2) && (test1)"
     "(%3) add %2,%1,%0")
 

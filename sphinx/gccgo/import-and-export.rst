@@ -26,7 +26,7 @@ typically contain nothing but export data.  This can be generated from
 
 .. code-block:: c++
 
-  objcopy -j .go_export :samp:`{gopackage}`.o :samp:`{gopackage}`.gox
+  objcopy -j .go_export gopackage.o gopackage.gox
 
 For example, it may be desirable to extract the export information
 from several different packages into their independent

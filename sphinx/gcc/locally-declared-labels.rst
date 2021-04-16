@@ -16,20 +16,20 @@ A local label declaration looks like this:
 
 .. code-block:: c++
 
-  __label__ :samp:`{label}` ;
+  __label__ label;
 
 or
 
 .. code-block:: c++
 
-  __label__ :samp:`{label1}` , :samp:`{label2}` , /* ... */;
+  __label__ label1, label2, /* ... */;
 
 Local label declarations must come at the beginning of the block,
 before any ordinary declarations or statements.
 
 The label declaration defines the label *name*, but does not define
 the label itself.  You must do this in the usual way, with
-``:samp:`{label}` :``, within the statements of the statement expression.
+``label:``, within the statements of the statement expression.
 
 The local label feature is useful for complex macros.  If a macro
 contains nested loops, a ``goto`` can be useful for breaking out of

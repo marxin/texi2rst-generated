@@ -44,8 +44,8 @@ both directories contain signal.h.  Ordinary ``#include
 file contains ``#include_next <signal.h>``, it starts searching
 after that directory, and finds the file in /usr/include.
 
-:samp:`#include_next` does not distinguish between ``< :samp:`{file}` >``
-and ``" :samp:`{file}` "`` inclusion, nor does it check that the file you
+:samp:`#include_next` does not distinguish between ``<file>``
+and ``"file"`` inclusion, nor does it check that the file you
 specify has the same name as the current file.  It simply looks for the
 file named, starting with the directory in the search path after the one
 where the current file was found.

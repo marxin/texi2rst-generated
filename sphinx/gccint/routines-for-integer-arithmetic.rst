@@ -92,21 +92,21 @@ call the libc function ``abort`` upon signed arithmetic overflow.
 .. function:: int __addvsi3(int a,int b)
 
   These functions return the sum of :samp:`{a}` and :samp:`{b}` ; that is
-  ``:samp:`{a}` + :samp:`{b}```.
+  ``a + b``.
 
 .. function:: int __mulvsi3(int a,int b)
 
   The functions return the product of :samp:`{a}` and :samp:`{b}` ; that is
-  ``:samp:`{a}` * :samp:`{b}```.
+  ``a * b``.
 
 .. function:: int __negvsi2(int a)
 
-  These functions return the negation of :samp:`{a}` ; that is ``- :samp:`{a}```.
+  These functions return the negation of :samp:`{a}` ; that is ``-a``.
 
 .. function:: int __subvsi3(int a,int b)
 
   These functions return the difference between :samp:`{b}` and :samp:`{a}` ;
-  that is ``:samp:`{a}` - :samp:`{b}```.
+  that is ``a - b``.
 
 Bit operations
 ^^^^^^^^^^^^^^

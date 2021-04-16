@@ -93,7 +93,7 @@ character on the line, which can be one of the following:
 
     .. code-block:: c++
 
-      :samp:`{name}` compiler not installed on this system.
+      name compiler not installed on this system.
 
     GCC already has an extensive list of suffixes built into it.
   This directive adds an entry to the end of the list of suffixes, but
@@ -117,7 +117,7 @@ targets can also add their own spec strings to this list.
   libgcc       Decides which GCC support library to pass to the linker
   linker       Sets the name of the linker
   predefines   Defines to be passed to the C preprocessor
-  signed_char  Defines to pass to CPP to say whether ``char`` is signed
+  signed_char  Defines to pass to CPP to say whether char is signed
                by default
   startfile    Object files to include at the start of the link
 

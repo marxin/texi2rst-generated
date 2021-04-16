@@ -113,7 +113,7 @@ with ``__FILE__`` and ``__LINE__``, though.
 
 ``__STDC_VERSION__``
   This macro expands to the C Standard's version number, a long integer
-  constant of the form ``:samp:`{yyyy}`:samp:`{mm}` L`` where :samp:`{yyyy}` and
+  constant of the form ``yyyymmL`` where :samp:`{yyyy}` and
   :samp:`{mm}` are the year and month of the Standard version.  This signifies
   which version of the C Standard the compiler conforms to.  Like
   ``__STDC__``, this is not necessarily accurate for the entire
@@ -513,10 +513,10 @@ double underscores.
 
 ``__FP_FAST_FMAF16`` ``__FP_FAST_FMAF32`` ``__FP_FAST_FMAF64`` ``__FP_FAST_FMAF128`` ``__FP_FAST_FMAF32X`` ``__FP_FAST_FMAF64X`` ``__FP_FAST_FMAF128X``
   These macros are defined with the value 1 if the backend supports the
-  ``fma`` functions using the additional ``_Float :samp:`{n}``` and
-  ``_Float :samp:`{n}` x`` types that are defined in ISO/IEC TS
+  ``fma`` functions using the additional ``_Floatn`` and
+  ``_Floatnx`` types that are defined in ISO/IEC TS
   18661-3:2015.  The include file math.h can define the
-  ``FP_FAST_FMAF :samp:`{n}``` and ``FP_FAST_FMAF :samp:`{n}` x`` macros if
+  ``FP_FAST_FMAFn`` and ``FP_FAST_FMAFnx`` macros if
   the user defined ``__STDC_WANT_IEC_60559_TYPES_EXT__`` before
   including math.h.
 

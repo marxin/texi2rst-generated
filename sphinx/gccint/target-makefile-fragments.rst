@@ -116,8 +116,8 @@ Target makefile fragments can set these Makefile variables.
 
   .. code-block:: c++
 
-    ``MULTILIB_REQUIRED`` =  mthumb/march=armv7-m
-    ``MULTILIB_REQUIRED`` += march=armv7-r/mfloat-abi=hard/mfpu=vfpv3-d16
+    MULTILIB_REQUIRED =  mthumb/march=armv7-m
+    MULTILIB_REQUIRED += march=armv7-r/mfloat-abi=hard/mfpu=vfpv3-d16
 
   The ``MULTILIB_REQUIRED`` can be used together with
   ``MULTILIB_EXCEPTIONS``.  The option combinations generated from
@@ -150,7 +150,7 @@ Target makefile fragments can set these Makefile variables.
 
   .. code-block:: c++
 
-    ``MULTILIB_REUSE`` = mthumb/march.armv7-r=marm/march.armv7-r
+    MULTILIB_REUSE = mthumb/march.armv7-r=marm/march.armv7-r
 
   Before the advent of ``MULTILIB_REUSE``, GCC select multilib by comparing command
   line options with options used to build multilib.  The ``MULTILIB_REUSE`` is

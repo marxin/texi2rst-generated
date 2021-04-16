@@ -219,7 +219,7 @@ The following macros can be used to examine ``SSA_NAME`` nodes
 
 MacroSSA_NAME_DEF_STMT(:samp:`{var}`)Returns the statement :samp:`{s}` that creates the ``SSA_NAME``
 :samp:`{var}`.  If :samp:`{s}` is an empty statement (i.e., ``IS_EMPTY_STMT
-( :samp:`{s}` )`` returns ``true``), it means that the first reference to
+(s)`` returns ``true``), it means that the first reference to
 this variable is a USE or a VUSE.
 
 .. index:: SSA_NAME_VERSION

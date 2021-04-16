@@ -31,9 +31,9 @@ instance:
 
 .. code-block:: c++
 
-  int *ptr = :samp:`{something}` ;
+  int *ptr = something;
   volatile int vobj;
-  *ptr = :samp:`{something}` ;
+  *ptr = something;
   vobj = 1;
 
 Unless :samp:`{*ptr}` and :samp:`{vobj}` can be aliased, it is not guaranteed
@@ -43,9 +43,9 @@ a stronger memory barrier such as:
 
 .. code-block:: c++
 
-  int *ptr = :samp:`{something}` ;
+  int *ptr = something;
   volatile int vobj;
-  *ptr = :samp:`{something}` ;
+  *ptr = something;
   asm volatile ("" : : : "memory");
   vobj = 1;
 
@@ -53,7 +53,7 @@ A scalar volatile object is read when it is accessed in a void context:
 
 .. code-block:: c++
 
-  volatile int *src = :samp:`{somevalue}` ;
+  volatile int *src = somevalue;
   *src;
 
 Such expressions are rvalues, and GCC implements this as a
@@ -70,10 +70,10 @@ in all the following cases:
 
   int obj;
   volatile int vobj;
-  vobj = :samp:`{something}` ;
-  obj = vobj = :samp:`{something}` ;
-  obj ? vobj = :samp:`{onething}` : vobj = :samp:`{anotherthing}` ;
-  obj = ( :samp:`{something}` , vobj = :samp:`{anotherthing}` );
+  vobj = something;
+  obj = vobj = something;
+  obj ? vobj = onething : vobj = anotherthing;
+  obj = (something, vobj = anotherthing);
 
 If you need to read the volatile object after an assignment has
 occurred, you must use a separate expression with an intervening

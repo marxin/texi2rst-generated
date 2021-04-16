@@ -14,7 +14,7 @@ The simplest RTL expressions are those that represent constant values.
 :samp:`(const_int {i})`
   This type of expression represents the integer value :samp:`{i}`.  :samp:`{i}`
   is customarily accessed with the macro ``INTVAL`` as in
-  ``INTVAL ( :samp:`{exp}` )``, which is equivalent to ``XWINT ( :samp:`{exp}` , 0)``.
+  ``INTVAL (exp)``, which is equivalent to ``XWINT (exp, 0)``.
 
   Constants generated for modes with fewer bits than in
   ``HOST_WIDE_INT`` must be sign extended to full width (e.g., with
@@ -93,13 +93,13 @@ The simplest RTL expressions are those that represent constant values.
 
   .. code-block:: c++
 
-    (const_double_zero: :samp:`{m}` )
+    (const_double_zero:m)
 
   standing for:
 
   .. code-block:: c++
 
-    (const_double: :samp:`{m}` 0 0 ...)
+    (const_double:m 0 0 ...)
 
   for matching the floating-point value zero, possibly the only useful one.
 
@@ -172,7 +172,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. code-block:: c++
 
-    { :samp:`{base0}` , :samp:`{base1}` , :samp:`{base1}` + :samp:`{step}` , :samp:`{base1}` + :samp:`{step}` * 2, ... }
+    { base0, base1, base1 + step, base1 + step * 2, ... }
 
   The first three elements in each pattern are enough to determine the
   values of the other elements.  However, if all :samp:`{step}` s are zero,
@@ -198,15 +198,15 @@ The simplest RTL expressions are those that represent constant values.
 
   .. code-block:: c++
 
-    :samp:`{base0}` == 0, :samp:`{base1}` == 2, :samp:`{step}` == 1
-    :samp:`{base0}` == 1, :samp:`{base1}` == 6, :samp:`{step}` == 2
+    base0 == 0, base1 == 2, step == 1
+    base0 == 1, base1 == 6, step == 2
 
   In this case:
 
   .. code-block:: c++
 
-    CONST_VECTOR_NPATTERNS ( :samp:`{v}` ) == 2
-    CONST_VECTOR_NELTS_PER_PATTERN ( :samp:`{v}` ) == 3
+    CONST_VECTOR_NPATTERNS (v) == 2
+    CONST_VECTOR_NELTS_PER_PATTERN (v) == 3
 
   Thus the first 6 elements (:samp:`{ 0, 1, 2, 6, 3, 8 }`) are enough
   to determine the whole sequence; we refer to them as the 'encoded'
@@ -228,7 +228,7 @@ The simplest RTL expressions are those that represent constant values.
 
   :samp:`const_vector_encoding_nelts ( :samp:`{v}` )` gives the total number of
   encoded elements in :samp:`{v}` , which is 6 in the example above.
-  ``CONST_VECTOR_ENCODED_ELT ( :samp:`{v}` , :samp:`{i}` )`` accesses the value
+  ``CONST_VECTOR_ENCODED_ELT (v, i)`` accesses the value
   of encoded element :samp:`{i}`.
 
   :samp:`CONST_VECTOR_DUPLICATE_P ( :samp:`{v}` )` is true if :samp:`{v}` simply contains
@@ -239,7 +239,7 @@ The simplest RTL expressions are those that represent constant values.
   pattern in :samp:`{v}` has a nonzero step.  This is a shorthand for
   testing :samp:`CONST_VECTOR_NELTS_PER_PATTERN ( :samp:`{v}` ) == 3`.
 
-  ``CONST_VECTOR_NUNITS ( :samp:`{v}` )`` gives the total number of elements
+  ``CONST_VECTOR_NUNITS (v)`` gives the total number of elements
   in :samp:`{v}` ; it is a shorthand for getting the number of units in
   :samp:`GET_MODE ( :samp:`{v}` )`.
 
@@ -308,13 +308,13 @@ The simplest RTL expressions are those that represent constant values.
 
 .. index:: CONST2_RTX
 
-The macro ``CONST0_RTX ( :samp:`{mode}` )`` refers to an expression with
+The macro ``CONST0_RTX (mode)`` refers to an expression with
 value 0 in mode :samp:`{mode}`.  If mode :samp:`{mode}` is of mode class
 ``MODE_INT``, it returns ``const0_rtx``.  If mode :samp:`{mode}` is of
 mode class ``MODE_FLOAT``, it returns a ``CONST_DOUBLE``
 expression in mode :samp:`{mode}`.  Otherwise, it returns a
 ``CONST_VECTOR`` expression in mode :samp:`{mode}`.  Similarly, the macro
-``CONST1_RTX ( :samp:`{mode}` )`` refers to an expression with value 1 in
+``CONST1_RTX (mode)`` refers to an expression with value 1 in
 mode :samp:`{mode}` and similarly for ``CONST2_RTX``.  The
 ``CONST1_RTX`` and ``CONST2_RTX`` macros are undefined
 for vector modes.

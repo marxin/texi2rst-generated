@@ -50,7 +50,7 @@ Finally, you can run the testsuite (which may take a long time):
 
 .. code-block:: c++
 
-  cd :samp:`{objdir}` ; make -k check
+  cd objdir; make -k check
 
 This will test various components of GCC, such as compiler
 front ends and runtime libraries.  While running the testsuite, DejaGnu

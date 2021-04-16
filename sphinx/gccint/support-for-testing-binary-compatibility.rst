@@ -40,8 +40,8 @@ These can be overridden by defining the environment variable
 
 .. code-block:: c++
 
-  COMPAT_OPTIONS="[list [list { :samp:`{tst1}` } { :samp:`{alt1}` }]
-    ...[list { :samp:`{tstn}` } { :samp:`{altn}` }]]"
+  COMPAT_OPTIONS="[list [list {tst1} {alt1}]
+    ...[list {tstn} {altn}]]"
 
 where :samp:`{tsti}` and :samp:`{alti}` are lists of options, with :samp:`{tsti}`
 used by the compiler under test and :samp:`{alti}` used by the alternate
@@ -73,7 +73,7 @@ following from :samp:`{objdir}` /gcc:
   rm site.exp
   make -k \
     ALT_CXX_UNDER_TEST=${alt_prefix}/bin/g++ \
-    COMPAT_OPTIONS=" :samp:`{lists as shown above}` " \
+    COMPAT_OPTIONS="lists as shown above" \
     check-c++ \
     RUNTESTFLAGS="compat.exp"
 

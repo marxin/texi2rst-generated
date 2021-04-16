@@ -12,8 +12,8 @@ Qualifiers
 
   .. code-block:: c++
 
-    volatile int *dst = :samp:`{somevalue}` ;
-    volatile int *src = :samp:`{someothervalue}` ;
+    volatile int *dst = somevalue;
+    volatile int *src = someothervalue;
     *dst = *src;
 
   will cause a read of the volatile object pointed to by :samp:`{src}` and store the
@@ -27,7 +27,7 @@ Qualifiers
 
   .. code-block:: c++
 
-    volatile int *src = :samp:`{somevalue}` ;
+    volatile int *src = somevalue;
     *src;
 
   According to the C standard, such an expression is an rvalue whose type

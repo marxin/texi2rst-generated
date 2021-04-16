@@ -1571,9 +1571,9 @@ The following attributes are supported on most targets.
     __attribute__ ((alias ("foo_v1")))
     int symver_foo_v1 (void);
 
-  Finally if the parameter is ``" :samp:`{name2}` @@ :samp:`{nodename}` "`` then in
+  Finally if the parameter is ``"name2@@nodename"`` then in
   addition to creating a symbol version (as if
-  ``" :samp:`{name2}` @ :samp:`{nodename}` "`` was used) the version will be also used
+  ``"name2@nodename"`` was used) the version will be also used
   to resolve :samp:`{name2}` by the linker.
 
 :samp:`target_clones ({options})`
@@ -2025,14 +2025,14 @@ per-function basis.
 
 .. code-block:: c++
 
-  __attribute__((target(" :samp:`{attr-string}` ")))
+  __attribute__((target("attr-string")))
   int
   f (int a)
   {
     return a + 5;
   }
 
-where ``:samp:`{attr-string}``` is one of the attribute strings specified above.
+where ``attr-string`` is one of the attribute strings specified above.
 
 Additionally, the architectural extension string may be specified on its
 own.  This can be used to turn on and off particular architectural extensions
@@ -3854,8 +3854,8 @@ These function attributes are supported by the PowerPC back end:
     .. index:: target("tune=TUNE") function attribute, PowerPC
 
     Specify the architecture to tune for when compiling the function.  If
-    you do not specify the ``target("tune= :samp:`{TUNE}` ")`` attribute and
-    you do specify the ``target("cpu= :samp:`{CPU}` ")`` attribute,
+    you do not specify the ``target("tune=TUNE")`` attribute and
+    you do specify the ``target("cpu=CPU")`` attribute,
     compilation tunes for the :samp:`{CPU}` architecture, and not the
     default tuning specified on the command line.
 
@@ -4045,7 +4045,7 @@ These function attributes are supported on the S/390:
 
   .. code-block:: c++
 
-    ``target("no-vx")``
+    target("no-vx")
 
   does not undefine the ``__VEC__`` macro.
 

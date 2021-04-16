@@ -2118,12 +2118,12 @@ optimizations to be performed is desired.
 
   .. code-block:: c++
 
-    :option:`-fPIC` + :option:`-fpic` = :option:`-fpic`
-    :option:`-fPIC` + :option:`-fno-pic` = :option:`-fno-pic`
-    :option:`-fpic/-fPIC` + (no option) = (no option)
-    :option:`-fPIC` + :option:`-fPIE` = :option:`-fPIE`
-    :option:`-fpic` + :option:`-fPIE` = :option:`-fpie`
-    :option:`-fPIC/-fpic` + :option:`-fpie` = :option:`-fpie`
+    -fPIC + -fpic = -fpic
+    -fPIC + -fno-pic = -fno-pic
+    -fpic/-fPIC + (no option) = (no option)
+    -fPIC + -fPIE = -fPIE
+    -fpic + -fPIE = -fpie
+    -fPIC/-fpic + -fpie = -fpie
 
   Certain ABI-changing flags are required to match in all compilation units,
   and trying to override this at link time with a conflicting value

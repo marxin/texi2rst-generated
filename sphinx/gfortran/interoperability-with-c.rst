@@ -140,7 +140,7 @@ Thus, the following C prototype
 
 .. code-block:: c++
 
-  ``int func(int i, int *j)``
+  int func(int i, int *j)
 
 matches the Fortran declaration
 

@@ -279,19 +279,18 @@ possible to supply secondary ``location_t`` values via
 ``rich_location``.
 
 For example, in the example of imprecise wording above, generating the
-diagnostic using ``.. _input_location_example:
-warning``:
+diagnostic using ``warning``:
 
 .. code-block:: c++
 
-    // BAD: implicitly uses ``input_location``
+    // BAD: implicitly uses input_location
     warning (OPT_Wattributes, "%qE attribute ignored", name);
 
 leads to:
 
 .. code-block:: c++
 
-  // BAD: uses ``input_location``
+  // BAD: uses input_location
   demo.c:1:1: warning: 'noinline' attribute ignored [-Wattributes]
       1 | int foo __attribute__((noinline));
         | ^~~

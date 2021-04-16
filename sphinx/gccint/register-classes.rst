@@ -106,7 +106,7 @@ constants.  These names are used in writing some of the debugging dumps.
 MacroREG_CLASS_CONTENTSAn initializer containing the contents of the register classes, as integers
 which are bit masks.  The :samp:`{n}` th integer specifies the contents of class
 :samp:`{n}`.  The way the integer :samp:`{mask}` is interpreted is that
-register :samp:`{r}` is in the class if ``:samp:`{mask}` & (1 << :samp:`{r}` )`` is 1.
+register :samp:`{r}` is in the class if ``mask & (1 << r)`` is 1.
 
 When the machine has more than 32 registers, an integer does not suffice.
 Then the integers are replaced by sub-initializers, braced groupings containing
@@ -469,7 +469,7 @@ These macros should not be used in the case where a particular class of
 registers can only be copied to memory and not to another class of
 registers.  In that case, secondary reload registers are not needed and
 would not be helpful.  Instead, a stack location must be used to perform
-the copy and the ``mov :samp:`{m}``` pattern should use memory as an
+the copy and the ``movm`` pattern should use memory as an
 intermediate storage.  This case often occurs between floating-point and
 general registers.
 
@@ -548,9 +548,9 @@ Do not define this macro if you do not define
   of class :samp:`{rclass}` needed to hold a value of mode :samp:`{mode}`.
 
   This is closely related to the macro ``TARGET_HARD_REGNO_NREGS``.
-  In fact, the value returned by ``TARGET_CLASS_MAX_NREGS ( :samp:`{rclass}` ,
-  :samp:`{mode}` )`` target hook should be the maximum value of
-  ``TARGET_HARD_REGNO_NREGS ( :samp:`{regno}` , :samp:`{mode}` )`` for all :samp:`{regno}`
+  In fact, the value returned by ``TARGET_CLASS_MAX_NREGS (rclass,
+  mode)`` target hook should be the maximum value of
+  ``TARGET_HARD_REGNO_NREGS (regno, mode)`` for all :samp:`{regno}`
   values in the class :samp:`{rclass}`.
 
   This target hook helps control the handling of multiple-word values
@@ -565,9 +565,9 @@ MacroCLASS_MAX_NREGS(:samp:`{class}`,:samp:`{mode}`)A C expression for the maxim
 of class :samp:`{class}` needed to hold a value of mode :samp:`{mode}`.
 
 This is closely related to the macro ``TARGET_HARD_REGNO_NREGS``.  In fact,
-the value of the macro ``CLASS_MAX_NREGS ( :samp:`{class}` , :samp:`{mode}` )``
-should be the maximum value of ``TARGET_HARD_REGNO_NREGS ( :samp:`{regno}` ,
-:samp:`{mode}` )`` for all :samp:`{regno}` values in the class :samp:`{class}`.
+the value of the macro ``CLASS_MAX_NREGS (class, mode)``
+should be the maximum value of ``TARGET_HARD_REGNO_NREGS (regno,
+mode)`` for all :samp:`{regno}` values in the class :samp:`{class}`.
 
 This macro helps control the handling of multiple-word values
 in the reload pass.

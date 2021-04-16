@@ -519,8 +519,8 @@ convey the exclusion of warranty; and each file should have at least the
 
 .. code-block:: c++
 
-  :samp:`{one line to give the library's name and an idea of what it does.}`
-  Copyright (C) :samp:`{year}`  :samp:`{name of author}`
+  one line to give the library's name and an idea of what it does.
+  Copyright (C) year  name of author
 
   This library is free software; you can redistribute it and/or modify it
   under the terms of the GNU Lesser General Public License as published by
@@ -548,7 +548,7 @@ necessary.  Here is a sample; alter the names:
   Yoyodyne, Inc., hereby disclaims all copyright interest in the library
   `Frob' (a library for tweaking knobs) written by James Random Hacker.
 
-  :samp:`{signature of Ty Coon}` , 1 April 1990
+  signature of Ty Coon, 1 April 1990
   Ty Coon, President of Vice
 
 That's all there is to it!

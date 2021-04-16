@@ -58,9 +58,9 @@ Six special side-effect expression codes appear as memory addresses.
   :samp:`{m}` must be the machine mode for pointers on the machine in use.
 
   The expression :samp:`{y}` must be one of three forms:
-  ``(plus: :samp:`{m}`:samp:`{x}`:samp:`{z}` )``,
-  ``(minus: :samp:`{m}`:samp:`{x}`:samp:`{z}` )``, or
-  ``(plus: :samp:`{m}`:samp:`{x}`:samp:`{i}` )``,
+  ``(plus:mxz)``,
+  ``(minus:mxz)``, or
+  ``(plus:mxi)``,
   where :samp:`{z}` is an index register and :samp:`{i}` is a constant.
 
   Here is an example of its use:

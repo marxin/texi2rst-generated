@@ -145,7 +145,7 @@ kinds of expressions:
 
   .. code-block:: c++
 
-    { :samp:`{base0}` , :samp:`{base1}` , :samp:`{base1}` + :samp:`{step}` , :samp:`{base1}` + :samp:`{step}` * 2, ... }
+    { base0, base1, base1 + step, base1 + step * 2, ... }
 
   The first three elements in each pattern are enough to determine the
   values of the other elements.  However, if all :samp:`{step}` s are zero,
@@ -171,15 +171,15 @@ kinds of expressions:
 
   .. code-block:: c++
 
-    :samp:`{base0}` == 0, :samp:`{base1}` == 2, :samp:`{step}` == 1
-    :samp:`{base0}` == 1, :samp:`{base1}` == 6, :samp:`{step}` == 2
+    base0 == 0, base1 == 2, step == 1
+    base0 == 1, base1 == 6, step == 2
 
   In this case:
 
   .. code-block:: c++
 
-    VECTOR_CST_NPATTERNS ( :samp:`{v}` ) == 2
-    VECTOR_CST_NELTS_PER_PATTERN ( :samp:`{v}` ) == 3
+    VECTOR_CST_NPATTERNS (v) == 2
+    VECTOR_CST_NELTS_PER_PATTERN (v) == 3
 
   The vector is therefore encoded using the first 6 elements
   (:samp:`{ 0, 1, 2, 6, 3, 8 }`), with the remaining 10 elements
@@ -194,8 +194,8 @@ kinds of expressions:
 
   :samp:`vector_cst_encoding_nelts ( :samp:`{v}` )` gives the total number of
   encoded elements in :samp:`{v}` , which is 6 in the example above.
-  ``VECTOR_CST_ENCODED_ELTS ( :samp:`{v}` )`` gives a pointer to the elements
-  encoded in :samp:`{v}` and ``VECTOR_CST_ENCODED_ELT ( :samp:`{v}` , :samp:`{i}` )``
+  ``VECTOR_CST_ENCODED_ELTS (v)`` gives a pointer to the elements
+  encoded in :samp:`{v}` and ``VECTOR_CST_ENCODED_ELT (v, i)``
   accesses the value of encoded element :samp:`{i}`.
 
   :samp:`VECTOR_CST_DUPLICATE_P ( :samp:`{v}` )` is true if :samp:`{v}` simply contains
@@ -237,7 +237,7 @@ kinds of expressions:
   coefficients, with the first coefficient being the constant term and
   the others being multipliers that are applied to the runtime parameters.
 
-  ``POLY_INT_CST_ELT ( :samp:`{x}` , :samp:`{i}` )`` references coefficient number
+  ``POLY_INT_CST_ELT (x, i)`` references coefficient number
   :samp:`{i}` of ``POLY_INT_CST`` node :samp:`{x}`.  Each coefficient is an
   ``INTEGER_CST``.
 

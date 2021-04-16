@@ -459,15 +459,15 @@ in the following sections.
 
   .. code-block:: c++
 
-    :samp:`{object-file-name}`  -fuse-ld= :samp:`{linker}`  -l :samp:`{library}` 
+    object-file-name  -fuse-ld=linker  -llibrary 
     -nostartfiles  -nodefaultlibs  -nolibc  -nostdlib 
-    -e :samp:`{entry}`  --entry= :samp:`{entry}` 
+    -e entry  --entry=entry 
     -pie  -pthread  -r  -rdynamic 
     -s  -static  -static-pie  -static-libgcc  -static-libstdc++ 
     -static-libasan  -static-libtsan  -static-liblsan  -static-libubsan 
     -shared  -shared-libgcc  -symbolic 
-    -T :samp:`{script}`  -Wl, :samp:`{option}`  -Xlinker :samp:`{option}` 
-    -u :samp:`{symbol}`  -z :samp:`{keyword}`
+    -T script  -Wl,option  -Xlinker option 
+    -u symbol  -z keyword
 
 *Directory Options*
   See :ref:`Options for Directory Search <directory-options>`.

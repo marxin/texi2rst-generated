@@ -70,7 +70,7 @@ first do:
 
 .. code-block:: c++
 
-  crtl->ssa = new rtl_ssa::function_info ( :samp:`{fn}` );
+  crtl->ssa = new rtl_ssa::function_info (fn);
 
 where :samp:`{fn}` is the function that the pass is processing.
 (Passes that are ``using namespace rtl_ssa`` do not need
@@ -124,7 +124,7 @@ to use the C++ comparison operators, such as:
 
 .. code-block:: c++
 
-  * :samp:`{insn1}` < * :samp:`{insn2}`
+  *insn1 < *insn2
 
 Another way is to use the ``compare_with`` function:
 
@@ -208,7 +208,7 @@ four-level hierarchy:
 
 * instructions (``rtl_ssa::insn_info``)
 
-In dumps, a basic block is identified as ``bb :samp:`{n}```, where :samp:`{n}`
+In dumps, a basic block is identified as ``bbn``, where :samp:`{n}`
 is the index of the associated CFG ``basic_block`` structure.
 An EBB is in turn identified by the index of its first block.
 For example, an EBB that contains :samp:`bb10`, ``bb5``, ``bb6``
@@ -329,7 +329,7 @@ the following RTL:
   ;; live in: R1 ...
   (code_label bb5)
   ...
-  (set (reg:SI :samp:`{R2}` )
+  (set (reg:SI R2)
        (plus:SI (reg:SI R1) ...))  ;; C
 
 The value of R1 on entry to block 5 can come from either A or B.
@@ -417,13 +417,13 @@ things are more complex  if code has a structure like the following:
 .. code-block:: c++
 
   // ebb2, bb2
-  R = :samp:`{va}` ;        // A
+  R = va;        // A
   if (...)
     {
       // ebb2, bb3
       use1 (R);  // B
       ...
-      R = :samp:`{vc}` ;    // C
+      R = vc;    // C
     }
   else
     {

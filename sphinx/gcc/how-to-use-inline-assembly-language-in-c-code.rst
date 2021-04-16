@@ -46,7 +46,7 @@ A basic ``asm`` statement has the following syntax:
 
 .. code-block:: c++
 
-  asm :samp:`{asm-qualifiers}` ( :samp:`{AssemblerInstructions}` )
+  asm asm-qualifiers ( AssemblerInstructions )
 
 The ``asm`` keyword is a GNU extension.
 When writing code that can be compiled with :option:`-ansi` and the
@@ -181,16 +181,16 @@ the operand parameters after the assembler template:
 
 .. code-block:: c++
 
-  asm :samp:`{asm-qualifiers}` ( :samp:`{AssemblerTemplate}` 
-                   : :samp:`{OutputOperands}` 
-                   [ : :samp:`{InputOperands}`
-                   [ : :samp:`{Clobbers}` ] ])
+  asm asm-qualifiers ( AssemblerTemplate 
+                   : OutputOperands 
+                   [ : InputOperands
+                   [ : Clobbers ] ])
 
-  asm :samp:`{asm-qualifiers}` ( :samp:`{AssemblerTemplate}` 
-                        : :samp:`{OutputOperands}`
-                        : :samp:`{InputOperands}`
-                        : :samp:`{Clobbers}`
-                        : :samp:`{GotoLabels}` )
+  asm asm-qualifiers ( AssemblerTemplate 
+                        : OutputOperands
+                        : InputOperands
+                        : Clobbers
+                        : GotoLabels)
 
 where in the last form, :samp:`{asm-qualifiers}` contains ``goto`` (and in the
 first form, not).
@@ -558,7 +558,7 @@ Operands are separated by commas.  Each operand has this format:
 
 .. code-block:: c++
 
-  [ [ :samp:`{asmSymbolicName}` ] ] :samp:`{constraint}` ( :samp:`{cvariablename}` )
+  [ [asmSymbolicName] ] constraint (cvariablename)
 
 :samp:`{asmSymbolicName}`
   Specifies a symbolic name for the operand.
@@ -784,8 +784,8 @@ ARM AArch64
 x86 family
   The flag output constraints for the x86 family are of the form
   :samp:`=@cc :samp:`{cond}`` where :samp:`{cond}` is one of the standard
-  conditions defined in the ISA manual for ``j :samp:`{cc}``` or
-  ``set :samp:`{cc}```.
+  conditions defined in the ISA manual for ``jcc`` or
+  ``setcc``.
 
   ``a``
     'above' or unsigned greater than
@@ -845,7 +845,7 @@ Operands are separated by commas.  Each operand has this format:
 
 .. code-block:: c++
 
-  [ [ :samp:`{asmSymbolicName}` ] ] :samp:`{constraint}` ( :samp:`{cexpression}` )
+  [ [asmSymbolicName] ] constraint (cexpression)
 
 :samp:`{asmSymbolicName}`
   Specifies a symbolic name for the operand.
@@ -3385,7 +3385,7 @@ the meanings of that architecture's constraints.
     therefore on PowerPC targets in that case it is only safe
     to use ``m<>`` in an ``asm`` statement if that ``asm`` statement
     accesses the operand exactly once.  The ``asm`` statement must also
-    use ``%U :samp:`{<opno>}``` as a placeholder for the 'update' flag in the
+    use ``%U<opno>`` as a placeholder for the 'update' flag in the
     corresponding load or store instruction.  For example:
 
     .. code-block:: c++
@@ -4008,11 +4008,11 @@ the meanings of that architecture's constraints.
     ``si``, ``di``, ``bp``, ``sp``).
 
   ``q``
-    Any register accessible as ``:samp:`{r}` l``.  In 32-bit mode, ``a``,
+    Any register accessible as ``rl``.  In 32-bit mode, ``a``,
     ``b``, ``c``, and ``d``; in 64-bit mode, any integer register.
 
   ``Q``
-    Any register accessible as ``:samp:`{r}` h``: ``a``, ``b``,
+    Any register accessible as ``rh``: ``a``, ``b``,
     ``c``, and ``d``.
 
   ``a``

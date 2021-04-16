@@ -53,7 +53,7 @@ somewhere.  It will be called gtype- :samp:`{lang}`.h, where
 :samp:`{lang}` is the name of the subdirectory the language is contained in.
 
 Plugins can add additional root tables.  Run the ``gengtype``
-utility in plugin mode as ``gengtype -P pluginout.h :samp:`{source-dir}`:samp:`{file-list}`:samp:`{plugin*.c}``` with your plugin files
+utility in plugin mode as ``gengtype -P pluginout.h source-dirfile-listplugin*.c`` with your plugin files
 :samp:`{plugin*.c}` using ``GTY`` to generate the :samp:`{pluginout.h}` file.
 The GCC build tree is needed to be present in that mode.
 

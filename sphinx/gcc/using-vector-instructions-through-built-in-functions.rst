@@ -249,7 +249,3 @@ intrinsics:
   v128 foo (v128);
   x = foo ((v128) {_mm_adds_epu8 (x.mm, y.mm)});
 
-  .. This could be done implicitly with __attribute__((transparent_union)),
-
-  .. but GCC does not accept it for unions of vector types (PR 88955).
-

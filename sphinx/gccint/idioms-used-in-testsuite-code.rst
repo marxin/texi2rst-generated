@@ -29,11 +29,11 @@ that generates the error, is used for this:
 .. code-block:: c++
 
   /* { dg-bogus "warning" "warning in place of error" } */
-  /* { dg-error " :samp:`{regexp}` " " :samp:`{message}` " { target *-*-* } :samp:`{line}` } */
+  /* { dg-error "regexp" "message" { target *-*-* } line } */
 
 It may be necessary to check that an expression is an integer constant
-expression and has a certain value.  To check that ``:samp:`{E}``` has
-value ``:samp:`{V}```, an idiom similar to the following is used:
+expression and has a certain value.  To check that ``E`` has
+value ``V``, an idiom similar to the following is used:
 
 .. code-block:: c++
 

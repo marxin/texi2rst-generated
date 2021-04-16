@@ -52,7 +52,7 @@ special makefile target:
 
 .. code-block:: c++
 
-  make -j :samp:`{N}` check- :samp:`{testsuite}` // :samp:`{test-target}` / :samp:`{option1}` / :samp:`{option2}` /...
+  make -jN check-testsuite//test-target/option1/option2/...
 
 For example,
 

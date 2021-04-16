@@ -52,13 +52,13 @@ the first insn,
 
 .. code-block:: c++
 
-  NEXT_INSN (PREV_INSN ( :samp:`{insn}` )) == :samp:`{insn}`
+  NEXT_INSN (PREV_INSN (insn)) == insn
 
 is always true and if :samp:`{insn}` is not the last insn,
 
 .. code-block:: c++
 
-  PREV_INSN (NEXT_INSN ( :samp:`{insn}` )) == :samp:`{insn}`
+  PREV_INSN (NEXT_INSN (insn)) == insn
 
 is always true.
 
@@ -71,9 +71,9 @@ which it is contained.  Similar rules apply for ``PREV_INSN``.
 
 This means that the above invariants are not necessarily true for insns
 inside ``sequence`` expressions.  Specifically, if :samp:`{insn}` is the
-first insn in a ``sequence``, ``NEXT_INSN (PREV_INSN ( :samp:`{insn}` ))``
+first insn in a ``sequence``, ``NEXT_INSN (PREV_INSN (insn))``
 is the insn containing the ``sequence`` expression, as is the value
-of ``PREV_INSN (NEXT_INSN ( :samp:`{insn}` ))`` if :samp:`{insn}` is the last
+of ``PREV_INSN (NEXT_INSN (insn))`` if :samp:`{insn}` is the last
 insn in the ``sequence`` expression.  You can use these expressions
 to find the containing ``sequence`` expression.
 
@@ -450,9 +450,9 @@ the kind of note.
 
 .. index:: PUT_REG_NOTE_KIND
 
-The macro ``REG_NOTE_KIND ( :samp:`{x}` )`` returns the kind of
+The macro ``REG_NOTE_KIND (x)`` returns the kind of
 register note.  Its counterpart, the macro ``PUT_REG_NOTE_KIND
-( :samp:`{x}` , :samp:`{newkind}` )`` sets the register note type of :samp:`{x}` to be
+(x, newkind)`` sets the register note type of :samp:`{x}` to be
 :samp:`{newkind}`.
 
 Register notes are of three classes: They may say something about an

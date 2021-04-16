@@ -193,7 +193,7 @@ For example:
   #define f(x) =x=
   +PLUS -EMPTY- PLUS+ f(=)
           → + + - - + + = = =
-  *not*
+  not
           → ++ -- ++ ===
 
 One solution would be to simply insert a space between all adjacent

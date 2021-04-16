@@ -7,7 +7,7 @@ Now that GCC has been built (and optionally tested), you can install it with
 
 .. code-block:: c++
 
-  cd :samp:`{objdir}` && make install
+  cd objdir && make install
 
 We strongly recommend to install into a target directory where there is
 no previous version of GCC present.  Also, the GNAT runtime should not
@@ -40,7 +40,7 @@ jail can be achieved with the command
 
 .. code-block:: c++
 
-  make DESTDIR= :samp:`{path-to-rootdir}` install
+  make DESTDIR=path-to-rootdir install
 
 where :samp:`{path-to-rootdir}` is the absolute path of
 a directory relative to which all installation paths will be

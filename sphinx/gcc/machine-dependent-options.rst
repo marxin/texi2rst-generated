@@ -1259,7 +1259,7 @@ The following options fine tune code generation:
 .. option:: -mno-brcc
 
   This option disables a target-specific pass in arc_reorg to
-  generate compare-and-branch (``br :samp:`{cc}```) instructions.  
+  generate compare-and-branch (``brcc``) instructions.  
   It has no effect on
   generation of these instructions driven by the combiner pass.
 
@@ -2743,7 +2743,7 @@ These options are defined for AVR implementations:
   .. code-block:: c++
 
     adiw r26, const   ; X += const
-    ld   :samp:`{Rn}` , X        ; :samp:`{Rn}` = *X
+    ld   Rn, X        ; Rn = *X
     sbiw r26, const   ; X -= const
 
 .. option:: -mtiny-stack
@@ -2770,7 +2770,7 @@ These options are defined for AVR implementations:
   This option can also serve as a replacement for the older way of
   specifying custom device-specs files that needed :option:`-B `:samp:`{some-path}` to point to a directory
   which contains a folder named ``device-specs`` which contains a specs file named
-  ``specs- :samp:`{mcu}```, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
+  ``specs-mcu``, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
 
 .. option:: -Waddr-space-convert, -Wno-addr-space-convert
 
@@ -2862,8 +2862,8 @@ the compiler and are subject to some limitations:
 
     .. code-block:: c++
 
-      LDI r24, lo8(gs( :samp:`{func}` ))
-      LDI r25, hi8(gs( :samp:`{func}` ))
+      LDI r24, lo8(gs(func))
+      LDI r25, hi8(gs(func))
 
   * The final location of that label is in a code segment
     *outside* the segment where the stubs are located.
@@ -2993,7 +2993,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
   ``__AVR_ATtiny261A__``, etc.
 
   The built-in macros' names follow
-  the scheme ``__AVR_ :samp:`{Device}` __`` where :samp:`{Device}` is
+  the scheme ``__AVR_Device__`` where :samp:`{Device}` is
   the device name as from the AVR user manual. The difference between
   :samp:`{Device}` in the built-in macro and :samp:`{device}` in
   :option:`-mmcu`:samp:`={device}` is that the latter is always lowercase.
@@ -3016,16 +3016,16 @@ AVR Named Address Spaces and AVR Built-in Functions.
   The device has the ``ELPM`` instruction.
 
 ``__AVR_HAVE_ELPMX__``
-  The device has the ``ELPM R :samp:`{n}` ,Z`` and ``ELPM
-  R :samp:`{n}` ,Z+`` instructions.
+  The device has the ``ELPM Rn,Z`` and ``ELPM
+  Rn,Z+`` instructions.
 
 ``__AVR_HAVE_MOVW__``
   The device has the ``MOVW`` instruction to perform 16-bit
   register-register moves.
 
 ``__AVR_HAVE_LPMX__``
-  The device has the ``LPM R :samp:`{n}` ,Z`` and
-  ``LPM R :samp:`{n}` ,Z+`` instructions.
+  The device has the ``LPM Rn,Z`` and
+  ``LPM Rn,Z+`` instructions.
 
 ``__AVR_HAVE_MUL__``
   The device has a hardware multiplier.
@@ -5289,7 +5289,7 @@ are given below.
   and the permissible values are: :samp:`isaa`, :samp:`isaaplus`,
   :samp:`isab` and :samp:`isac`.
 
-  GCC defines a macro ``__mcf :samp:`{arch}` __`` whenever it is generating
+  GCC defines a macro ``__mcfarch__`` whenever it is generating
   code for a ColdFire target.  The :samp:`{arch}` in this macro is one of the
   :option:`-march` arguments given above.
 
@@ -5336,8 +5336,8 @@ are given below.
   :samp:`{arch}` is compatible with :samp:`{cpu}`.  Other combinations of
   :option:`-mcpu` and :option:`-march` are rejected.
 
-  GCC defines the macro ``__mcf_cpu_ :samp:`{cpu}``` when ColdFire target
-  :samp:`{cpu}` is selected.  It also defines ``__mcf_family_ :samp:`{family}```,
+  GCC defines the macro ``__mcf_cpu_cpu`` when ColdFire target
+  :samp:`{cpu}` is selected.  It also defines ``__mcf_family_family``,
   where the value of :samp:`{family}` is given by the table above.
 
 .. option:: -mtune=tune
@@ -5355,14 +5355,14 @@ are given below.
   as well.  These two options select the same tuning decisions as
   :option:`-m68020-40` and :option:`-m68020-60` respectively.
 
-  GCC defines the macros ``__mc :samp:`{arch}``` and ``__mc :samp:`{arch}` __``
+  GCC defines the macros ``__mcarch`` and ``__mcarch__``
   when tuning for 680x0 architecture :samp:`{arch}`.  It also defines
-  ``mc :samp:`{arch}``` unless either :option:`-ansi` or a non-GNU :option:`-std`
+  ``mcarch`` unless either :option:`-ansi` or a non-GNU :option:`-std`
   option is used.  If GCC is tuning for a range of architectures,
   as selected by :option:`-mtune=68020-40` or :option:`-mtune=68020-60` ,
   it defines the macros for every architecture in the range.
 
-  GCC also defines the macro ``__m :samp:`{uarch}` __`` when tuning for
+  GCC also defines the macro ``__muarch__`` when tuning for
   ColdFire microarchitecture :samp:`{uarch}` , where :samp:`{uarch}` is one
   of the arguments given above.
 
@@ -6049,7 +6049,7 @@ MIPS Options
 
   GCC defines two macros based on the value of this option.  The first
   is ``_MIPS_ARCH``, which gives the name of target architecture, as
-  a string.  The second has the form ``_MIPS_ARCH_ :samp:`{foo}```,
+  a string.  The second has the form ``_MIPS_ARCH_foo``,
   where :samp:`{foo}` is the capitalized value of ``_MIPS_ARCH``.
   For example, :option:`-march=r2000` sets ``_MIPS_ARCH``
   to ``"r2000"`` and defines the macro ``_MIPS_ARCH_R2000``.
@@ -6075,7 +6075,7 @@ MIPS Options
   particular member of that family.
 
   :option:`-mtune` defines the macros ``_MIPS_TUNE`` and
-  ``_MIPS_TUNE_ :samp:`{foo}```, which work in the same way as the
+  ``_MIPS_TUNE_foo``, which work in the same way as the
   :option:`-march` ones described above.
 
 .. option:: -mips1
@@ -6911,7 +6911,7 @@ MIPS Options
 
   ** Returning the new address in register ``$31``.
 
-  * Storing the new address in ``* :samp:`{ra-address}```,
+  * Storing the new address in ``*ra-address``,
     if :samp:`{ra-address}` is nonnull.
 
   The default is :option:`-mno-mcount-ra-address`.
@@ -7660,8 +7660,8 @@ These are the options defined for the Altera Nios II processor.
     Read the value of Y and store it into :samp:`{dest}`.
 
     Note that you can gain more local control over generation of Nios II custom
-  instructions by using the ``target("custom- :samp:`{insn}` = :samp:`{N}` ")``
-  and ``target("no-custom- :samp:`{insn}` ")`` function attributes
+  instructions by using the ``target("custom-insn=N")``
+  and ``target("no-custom-insn")`` function attributes
   (see :ref:`function-attributes`)
   or pragmas (see :ref:`function-specific-option-pragmas`).
 
@@ -7724,7 +7724,7 @@ These are the options defined for the Altera Nios II processor.
   order of the options on the command line.
 
   Note that you can gain more local control over selection of a FPU
-  configuration by using the ``target("custom-fpu-cfg= :samp:`{name}` ")``
+  configuration by using the ``target("custom-fpu-cfg=name")``
   function attribute (see :ref:`function-attributes`)
   or pragma (see :ref:`function-specific-option-pragmas`).
 
@@ -11755,7 +11755,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -mrtd
 
   Use a different function-calling convention, in which functions that
-  take a fixed number of arguments return with the ``ret :samp:`{num}```
+  take a fixed number of arguments return with the ``ret num``
   instruction, which pops their arguments while returning.  This saves one
   instruction in the caller since there is no need to pop the arguments
   there.
@@ -12034,12 +12034,12 @@ These :samp:`-m` options are defined for the x86 family of computers.
   of the non-reciprocal instruction, the precision of the sequence can be
   decreased by up to 2 ulp (i.e. the inverse of 1.0 equals 0.99999994).
 
-  Note that GCC implements ``1.0f/sqrtf( :samp:`{x}` )`` in terms of ``RSQRTSS``
+  Note that GCC implements ``1.0f/sqrtf(x)`` in terms of ``RSQRTSS``
   (or ``RSQRTPS``) already with :option:`-ffast-math` (or the above option
   combination), and doesn't need :option:`-mrecip`.
 
   Also note that GCC emits the above sequence with additional Newton-Raphson step
-  for vectorized single-float division and vectorized ``sqrtf( :samp:`{x}` )``
+  for vectorized single-float division and vectorized ``sqrtf(x)``
   already with :option:`-ffast-math` (or the above option combination), and
   doesn't need :option:`-mrecip`.
 
@@ -12334,7 +12334,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   the max byte size with which inline algorithm :samp:`{alg}` is allowed.  For the last
   triplet, the :samp:`{max_size}` must be ``-1``. The :samp:`{max_size}` of the triplets
   in the list must be specified in increasing order.  The minimal byte size for 
-  :samp:`{alg}` is ``0`` for the first triplet and ``:samp:`{max_size}` + 1`` of the 
+  :samp:`{alg}` is ``0`` for the first triplet and ``max_size + 1`` of the 
   preceding range.
 
 .. option:: -mmemset-strategy=strategy

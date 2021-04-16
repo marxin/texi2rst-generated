@@ -24,11 +24,11 @@ Additional Floating Types
 .. index:: Q floating point suffix
 
 ISO/IEC TS 18661-3:2015 defines C support for additional floating
-types ``_Float :samp:`{n}``` and ``_Float :samp:`{n}` x``, and GCC supports
+types ``_Floatn`` and ``_Floatnx``, and GCC supports
 these type names; the set of types supported depends on the target
 architecture.  These types are not supported when compiling C++.
-Constants with these types use suffixes ``f :samp:`{n}``` or
-``F :samp:`{n}``` and ``f :samp:`{n}` x`` or ``F :samp:`{n}` x``.  These type
+Constants with these types use suffixes ``fn`` or
+``Fn`` and ``fnx`` or ``Fnx``.  These type
 names can be used together with ``_Complex`` to declare complex
 types.
 

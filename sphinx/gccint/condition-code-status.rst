@@ -207,7 +207,7 @@ in :samp:`{machine}` -modes.def.
 MacroREVERSIBLE_CC_MODE(:samp:`{mode}`)A C expression whose value is one if it is always safe to reverse a
 comparison whose mode is :samp:`{mode}`.  If ``SELECT_CC_MODE``
 can ever return :samp:`{mode}` for a floating-point inequality comparison,
-then ``REVERSIBLE_CC_MODE ( :samp:`{mode}` )`` must be zero.
+then ``REVERSIBLE_CC_MODE (mode)`` must be zero.
 
 You need not define this macro if it would always returns zero or if the
 floating-point format is anything other than ``IEEE_FLOAT_FORMAT``.
@@ -223,7 +223,7 @@ inequality comparisons are given either ``CCFPEmode`` or ``CCFPmode``:
 
 MacroREVERSE_CONDITION(:samp:`{code}`,:samp:`{mode}`)A C expression whose value is reversed condition code of the :samp:`{code}` for
 comparison done in CC_MODE :samp:`{mode}`.  The macro is used only in case
-``REVERSIBLE_CC_MODE ( :samp:`{mode}` )`` is nonzero.  Define this macro in case
+``REVERSIBLE_CC_MODE (mode)`` is nonzero.  Define this macro in case
 machine has some non-standard way how to reverse certain conditionals.  For
 instance in case all floating point conditions are non-trapping, compiler may
 freely convert unordered compares to ordered ones.  Then definition may look

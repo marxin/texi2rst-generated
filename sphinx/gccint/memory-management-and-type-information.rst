@@ -28,7 +28,7 @@ The full format of a marker is
 
 .. code-block:: c++
 
-  GTY (([ :samp:`{option}` ] [( :samp:`{param}` )], [ :samp:`{option}` ] [( :samp:`{param}` )] ...))
+  GTY (([option] [(param)], [option] [(param)] ...))
 
 but in most cases no options are needed.  The outer double parentheses
 are still necessary, though: ``GTY(())``.  Markers can appear:
@@ -44,22 +44,22 @@ Here are some examples of marking simple data structures and globals.
 
 .. code-block:: c++
 
-  struct GTY(()) :samp:`{tag}`
+  struct GTY(()) tag
   {
-    :samp:`{fields}`...
+    fields...
   };
 
-  typedef struct GTY(()) :samp:`{tag}`
+  typedef struct GTY(()) tag
   {
-    :samp:`{fields}`...
-  } * :samp:`{typename}` ;
+    fields...
+  } *typename;
 
-  static GTY(()) struct :samp:`{tag}` * :samp:`{list}` ;   /* points to GC memory */
-  static GTY(()) int :samp:`{counter}` ;        /* save counter in a PCH */
+  static GTY(()) struct tag *list;   /* points to GC memory */
+  static GTY(()) int counter;        /* save counter in a PCH */
 
 The parser understands simple typedefs such as
-``typedef struct :samp:`{tag}` * :samp:`{name}` ;`` and
-``typedef int :samp:`{name}` ;``.
+``typedef struct tag *name;`` and
+``typedef int name;``.
 These don't need to be marked.
 
 Since ``gengtype``'s understanding of C++ is limited, there are

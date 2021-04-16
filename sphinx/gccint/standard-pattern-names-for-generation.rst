@@ -194,8 +194,8 @@ vec_load_lanesmn
 
   .. code-block:: c++
 
-    int c = GET_MODE_SIZE ( :samp:`{m}` ) / GET_MODE_SIZE ( :samp:`{n}` );
-    for (j = 0; j < GET_MODE_NUNITS ( :samp:`{n}` ); j++)
+    int c = GET_MODE_SIZE (m) / GET_MODE_SIZE (n);
+    for (j = 0; j < GET_MODE_NUNITS (n); j++)
       for (i = 0; i < c; i++)
         operand0[i][j] = operand1[j * c + i];
 
@@ -207,7 +207,7 @@ vec_load_lanesmn
 
   .. code-block:: c++
 
-    TARGET_ARRAY_MODE_SUPPORTED_P ( :samp:`{n}` , :samp:`{c}` )
+    TARGET_ARRAY_MODE_SUPPORTED_P (n, c)
 
   is true.  GCC assumes that, if a target supports this kind of
   instruction for some mode :samp:`{n}` , it also supports unaligned
@@ -225,8 +225,8 @@ vec_mask_load_lanesmn
 
   .. code-block:: c++
 
-    int c = GET_MODE_SIZE ( :samp:`{m}` ) / GET_MODE_SIZE ( :samp:`{n}` );
-    for (j = 0; j < GET_MODE_NUNITS ( :samp:`{n}` ); j++)
+    int c = GET_MODE_SIZE (m) / GET_MODE_SIZE (n);
+    for (j = 0; j < GET_MODE_NUNITS (n); j++)
       if (operand2[j])
         for (i = 0; i < c; i++)
           operand0[i][j] = operand1[j * c + i];
@@ -245,8 +245,8 @@ vec_store_lanesmn
 
   .. code-block:: c++
 
-    int c = GET_MODE_SIZE ( :samp:`{m}` ) / GET_MODE_SIZE ( :samp:`{n}` );
-    for (j = 0; j < GET_MODE_NUNITS ( :samp:`{n}` ); j++)
+    int c = GET_MODE_SIZE (m) / GET_MODE_SIZE (n);
+    for (j = 0; j < GET_MODE_NUNITS (n); j++)
       for (i = 0; i < c; i++)
         operand0[j * c + i] = operand1[i][j];
 
@@ -263,8 +263,8 @@ vec_mask_store_lanesmn
 
   .. code-block:: c++
 
-    int c = GET_MODE_SIZE ( :samp:`{m}` ) / GET_MODE_SIZE ( :samp:`{n}` );
-    for (j = 0; j < GET_MODE_NUNITS ( :samp:`{n}` ); j++)
+    int c = GET_MODE_SIZE (m) / GET_MODE_SIZE (n);
+    for (j = 0; j < GET_MODE_NUNITS (n); j++)
       if (operand2[j])
         for (i = 0; i < c; i++)
           operand0[j * c + i] = operand1[i][j];
@@ -360,7 +360,7 @@ vec_duplicatem
   the mode appropriate for one element of :samp:`{m}`.
 
   This pattern only handles duplicates of non-constant inputs.  Constant
-  vectors go through the ``mov :samp:`{m}``` pattern instead.
+  vectors go through the ``movm`` pattern instead.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -389,7 +389,7 @@ while_ultmn
   .. code-block:: c++
 
     operand0[0] = operand1 < operand2;
-    for (i = 1; i < GET_MODE_NUNITS ( :samp:`{n}` ); i++)
+    for (i = 1; i < GET_MODE_NUNITS (n); i++)
       operand0[i] = operand0[i - 1] && (operand1 + i < operand2);
 
   .. index:: check_raw_ptrsm instruction pattern
@@ -410,7 +410,7 @@ check_raw_ptrsm
 
   .. code-block:: c++
 
-    :samp:`{a}` == :samp:`{b}` || :samp:`{a}` + :samp:`{len}` <= :samp:`{b}` || :samp:`{b}` + :samp:`{len}` <= :samp:`{a}`
+    a == b || a + len <= b || b + len <= a
 
   You should only define this pattern if the target has a way of accelerating
   the test without having to do the individual comparisons.
@@ -423,7 +423,7 @@ check_war_ptrsm
 
   .. code-block:: c++
 
-    :samp:`{b}` <= :samp:`{a}` || :samp:`{a}` + :samp:`{len}` <= :samp:`{b}`
+    b <= a || a + len <= b
 
   .. index:: vec_cmpmn instruction pattern
 
@@ -437,15 +437,15 @@ vec_cmpmn
   .. index:: vec_cmpumn instruction pattern
 
 vec_cmpumn
-  Similar to ``vec_cmp :samp:`{m}`:samp:`{n}``` but perform unsigned vector comparison.
+  Similar to ``vec_cmpmn`` but perform unsigned vector comparison.
 
   .. index:: vec_cmpeqmn instruction pattern
 
 vec_cmpeqmn
-  Similar to ``vec_cmp :samp:`{m}`:samp:`{n}``` but perform equality or non-equality
-  vector comparison only.  If ``vec_cmp :samp:`{m}`:samp:`{n}```
-  or ``vec_cmpu :samp:`{m}`:samp:`{n}``` instruction pattern is supported,
-  it will be preferred over ``vec_cmpeq :samp:`{m}`:samp:`{n}```, so there is
+  Similar to ``vec_cmpmn`` but perform equality or non-equality
+  vector comparison only.  If ``vec_cmpmn``
+  or ``vec_cmpumn`` instruction pattern is supported,
+  it will be preferred over ``vec_cmpeqmn``, so there is
   no need to define this instruction pattern if the others are supported.
 
   .. index:: vcondmn instruction pattern
@@ -463,22 +463,22 @@ vcondmn
   .. index:: vcondumn instruction pattern
 
 vcondumn
-  Similar to ``vcond :samp:`{m}`:samp:`{n}``` but performs unsigned vector
+  Similar to ``vcondmn`` but performs unsigned vector
   comparison.
 
   .. index:: vcondeqmn instruction pattern
 
 vcondeqmn
-  Similar to ``vcond :samp:`{m}`:samp:`{n}``` but performs equality or
-  non-equality vector comparison only.  If ``vcond :samp:`{m}`:samp:`{n}```
-  or ``vcondu :samp:`{m}`:samp:`{n}``` instruction pattern is supported,
-  it will be preferred over ``vcondeq :samp:`{m}`:samp:`{n}```, so there is
+  Similar to ``vcondmn`` but performs equality or
+  non-equality vector comparison only.  If ``vcondmn``
+  or ``vcondumn`` instruction pattern is supported,
+  it will be preferred over ``vcondeqmn``, so there is
   no need to define this instruction pattern if the others are supported.
 
   .. index:: vcond_mask_mn instruction pattern
 
 vcond_mask_mn
-  Similar to ``vcond :samp:`{m}`:samp:`{n}``` but operand 3 holds a pre-computed
+  Similar to ``vcondmn`` but operand 3 holds a pre-computed
   result of vector comparison.
 
   .. index:: maskloadmn instruction pattern
@@ -610,7 +610,7 @@ addm3
   .. index:: addvm4 instruction pattern
 
 addvm4
-  Like ``add :samp:`{m}` 3`` but takes a ``code_label`` as operand 3 and
+  Like ``addm3`` but takes a ``code_label`` as operand 3 and
   emits code to jump to it if signed overflow occurs during the addition.
   This pattern is used to implement the built-in functions performing
   signed integer addition with overflow checking.
@@ -625,7 +625,7 @@ addvm4
   .. index:: uaddvm4 instruction pattern
 
 uaddvm4
-  Like ``addv :samp:`{m}` 4`` but for unsigned addition.  That is to
+  Like ``addvm4`` but for unsigned addition.  That is to
   say, the operation is the same as signed addition but the jump
   is taken only on unsigned overflow.
 
@@ -639,14 +639,14 @@ uaddvm4
   .. index:: addptrm3 instruction pattern
 
 addptrm3
-  Like ``add :samp:`{m}` 3`` but is guaranteed to only be used for address
+  Like ``addm3`` but is guaranteed to only be used for address
   calculations.  The expanded code is not allowed to clobber the
-  condition code.  It only needs to be defined if ``add :samp:`{m}` 3``
+  condition code.  It only needs to be defined if ``addm3``
   sets the condition code.  If adds used for address calculations and
   normal adds are not compatible it is required to expand a distinct
   pattern (e.g. using an unspec).  The pattern is used by LRA to emit
-  address calculations.  ``add :samp:`{m}` 3`` is used if
-  ``addptr :samp:`{m}` 3`` is not defined.
+  address calculations.  ``addm3`` is used if
+  ``addptrm3`` is not defined.
 
   .. index:: fmam4 instruction pattern
 
@@ -660,35 +660,35 @@ fmam4
   .. index:: fmsm4 instruction pattern
 
 fmsm4
-  Like ``fma :samp:`{m}` 4``, except operand 3 subtracted from the
+  Like ``fmam4``, except operand 3 subtracted from the
   product instead of added to the product.  This is represented
   in the rtl as
 
   .. code-block:: c++
 
-    (fma: :samp:`{m}` :samp:`{op1}` :samp:`{op2}` (neg: :samp:`{m}` :samp:`{op3}` ))
+    (fma:m op1 op2 (neg:m op3))
 
   .. index:: fnmam4 instruction pattern
 
 fnmam4
-  Like ``fma :samp:`{m}` 4`` except that the intermediate product
+  Like ``fmam4`` except that the intermediate product
   is negated before being added to operand 3.  This is represented
   in the rtl as
 
   .. code-block:: c++
 
-    (fma: :samp:`{m}` (neg: :samp:`{m}` :samp:`{op1}` ) :samp:`{op2}` :samp:`{op3}` )
+    (fma:m (neg:m op1) op2 op3)
 
   .. index:: fnmsm4 instruction pattern
 
 fnmsm4
-  Like ``fms :samp:`{m}` 4`` except that the intermediate product
+  Like ``fmsm4`` except that the intermediate product
   is negated before subtracting operand 3.  This is represented
   in the rtl as
 
   .. code-block:: c++
 
-    (fma: :samp:`{m}` (neg: :samp:`{m}` :samp:`{op1}` ) :samp:`{op2}` (neg: :samp:`{m}` :samp:`{op3}` ))
+    (fma:m (neg:m op1) op2 (neg:m op3))
 
   .. index:: minm3 instruction pattern
 
@@ -915,7 +915,7 @@ vec_pack_sbool_trunc_m
   is the number of elements in the output vector 2*N as a ``CONST_INT``.
   This instruction pattern is used when all the vector input and output
   operands have the same scalar mode :samp:`{m}` and thus using
-  ``vec_pack_trunc_ :samp:`{m}``` would be ambiguous.
+  ``vec_pack_trunc_m`` would be ambiguous.
 
   .. index:: vec_pack_ssat_m instruction pattern
 
@@ -979,8 +979,8 @@ vec_pack_sbool_trunc_m
   vector (operand 0) has N/2 elements.  The last operand (operand 2) is the
   number of elements of the input vector N as a ``CONST_INT``.  These
   patterns are used if both the input and output vectors have the same scalar
-  mode :samp:`{m}` and thus using ``vec_unpacks_hi_ :samp:`{m}``` or
-  ``vec_unpacks_lo_ :samp:`{m}``` would be ambiguous.
+  mode :samp:`{m}` and thus using ``vec_unpacks_hi_m`` or
+  ``vec_unpacks_lo_m`` would be ambiguous.
 
   .. index:: vec_unpacks_float_hi_m instruction pattern
 
@@ -1132,27 +1132,27 @@ maddmn4
   Both modes must be integer or fixed-point modes and :samp:`{n}` must be twice
   the size of :samp:`{m}`.
 
-  In other words, ``madd :samp:`{m}`:samp:`{n}` 4`` is like
-  ``mul :samp:`{m}`:samp:`{n}` 3`` except that it also adds operand 3.
+  In other words, ``maddmn4`` is like
+  ``mulmn3`` except that it also adds operand 3.
 
   These instructions are not allowed to ``FAIL``.
 
   .. index:: umaddmn4 instruction pattern
 
 umaddmn4
-  Like ``madd :samp:`{m}`:samp:`{n}` 4``, but zero-extend the multiplication
+  Like ``maddmn4``, but zero-extend the multiplication
   operands instead of sign-extending them.
 
   .. index:: ssmaddmn4 instruction pattern
 
 ssmaddmn4
-  Like ``madd :samp:`{m}`:samp:`{n}` 4``, but all involved operations must be
+  Like ``maddmn4``, but all involved operations must be
   signed-saturating.
 
   .. index:: usmaddmn4 instruction pattern
 
 usmaddmn4
-  Like ``umadd :samp:`{m}`:samp:`{n}` 4``, but all involved operations must be
+  Like ``umaddmn4``, but all involved operations must be
   unsigned-saturating.
 
   .. index:: msubmn4 instruction pattern
@@ -1164,8 +1164,8 @@ msubmn4
   Both modes must be integer or fixed-point modes and :samp:`{n}` must be twice
   the size of :samp:`{m}`.
 
-  In other words, ``msub :samp:`{m}`:samp:`{n}` 4`` is like
-  ``mul :samp:`{m}`:samp:`{n}` 3`` except that it also subtracts the result
+  In other words, ``msubmn4`` is like
+  ``mulmn3`` except that it also subtracts the result
   from operand 3.
 
   These instructions are not allowed to ``FAIL``.
@@ -1173,19 +1173,19 @@ msubmn4
   .. index:: umsubmn4 instruction pattern
 
 umsubmn4
-  Like ``msub :samp:`{m}`:samp:`{n}` 4``, but zero-extend the multiplication
+  Like ``msubmn4``, but zero-extend the multiplication
   operands instead of sign-extending them.
 
   .. index:: ssmsubmn4 instruction pattern
 
 ssmsubmn4
-  Like ``msub :samp:`{m}`:samp:`{n}` 4``, but all involved operations must be
+  Like ``msubmn4``, but all involved operations must be
   signed-saturating.
 
   .. index:: usmsubmn4 instruction pattern
 
 usmsubmn4
-  Like ``umsub :samp:`{m}`:samp:`{n}` 4``, but all involved operations must be
+  Like ``umsubmn4``, but all involved operations must be
   unsigned-saturating.
 
   .. index:: divmodm4 instruction pattern
@@ -1241,7 +1241,7 @@ udivmodm4
 
 :samp:`ashr :samp:`{m}` 3`, :samp:`lshr :samp:`{m}` 3`, :samp:`rotl :samp:`{m}` 3`, :samp:`rotr :samp:`{m}` 3`
   Other shift and rotate instructions, analogous to the
-  ``ashl :samp:`{m}` 3`` instructions.  Operand 2 is always a scalar type.
+  ``ashlm3`` instructions.  Operand 2 is always a scalar type.
 
   .. index:: vashlm3 instruction pattern
 
@@ -1307,7 +1307,7 @@ bswapm2
   .. index:: negvm3 instruction pattern
 
 negvm3
-  Like ``neg :samp:`{m}` 2`` but takes a ``code_label`` as operand 2 and
+  Like ``negm2`` but takes a ``code_label`` as operand 2 and
   emits code to jump to it if signed overflow occurs during the negation.
 
   .. index:: absm2 instruction pattern
@@ -1402,9 +1402,9 @@ sincosm3
 
   Targets that can calculate the sine and cosine simultaneously can
   implement this pattern as opposed to implementing individual
-  ``sin :samp:`{m}` 2`` and ``cos :samp:`{m}` 2`` patterns.  The ``sin``
+  ``sinm2`` and ``cosm2`` patterns.  The ``sin``
   and ``cos`` built-in functions will then be expanded to the
-  ``sincos :samp:`{m}` 3`` pattern, with one of the output values
+  ``sincosm3`` pattern, with one of the output values
   left unused.
 
   .. index:: tanm2 instruction pattern
@@ -1456,7 +1456,7 @@ expm1m2
   mode :samp:`{m}` , which is a scalar or vector floating-point mode.
 
   For inputs close to zero, the pattern is expected to be more
-  accurate than a separate ``exp :samp:`{m}` 2`` and ``sub :samp:`{m}` 3``
+  accurate than a separate ``expm2`` and ``subm3``
   would be.
 
   This pattern is not allowed to ``FAIL``.
@@ -1495,7 +1495,7 @@ log1pm2
   a scalar or vector floating-point mode.
 
   For inputs close to zero, the pattern is expected to be more
-  accurate than a separate ``add :samp:`{m}` 3`` and ``log :samp:`{m}` 2``
+  accurate than a separate ``addm3`` and ``logm2``
   would be.
 
   This pattern is not allowed to ``FAIL``.
@@ -1983,13 +1983,13 @@ cpymemm
   all cases. This expected alignment is also in bytes, just like operand 4.
   Expected size, when unknown, is set to ``(const_int -1)``.
 
-  Descriptions of multiple ``cpymem :samp:`{m}``` patterns can only be
+  Descriptions of multiple ``cpymemm`` patterns can only be
   beneficial if the patterns for smaller modes have fewer restrictions
   on their first, second and fourth operands.  Note that the mode :samp:`{m}`
-  in ``cpymem :samp:`{m}``` does not impose any restriction on the mode of
+  in ``cpymemm`` does not impose any restriction on the mode of
   individually copied data units in the block.
 
-  The ``cpymem :samp:`{m}``` patterns need not give special consideration
+  The ``cpymemm`` patterns need not give special consideration
   to the possibility that the source and destination strings might
   overlap. These patterns are used to do inline expansion of
   ``__builtin_memcpy``.
@@ -2021,13 +2021,13 @@ movmemm
   all cases. This expected alignment is also in bytes, just like operand 4.
   Expected size, when unknown, is set to ``(const_int -1)``.
 
-  Descriptions of multiple ``movmem :samp:`{m}``` patterns can only be
+  Descriptions of multiple ``movmemm`` patterns can only be
   beneficial if the patterns for smaller modes have fewer restrictions
   on their first, second and fourth operands.  Note that the mode :samp:`{m}`
-  in ``movmem :samp:`{m}``` does not impose any restriction on the mode of
+  in ``movmemm`` does not impose any restriction on the mode of
   individually copied data units in the block.
 
-  The ``movmem :samp:`{m}``` patterns must correctly handle the case where
+  The ``movmemm`` patterns must correctly handle the case where
   the source and destination strings overlap. These patterns are used to
   do inline expansion of ``__builtin_memmove``.
 
@@ -2070,7 +2070,7 @@ setmemm
   correctness, but it can be used for choosing proper code sequence for a
   given size).
 
-  The use for multiple ``setmem :samp:`{m}``` is as for ``cpymem :samp:`{m}```.
+  The use for multiple ``setmemm`` is as for ``cpymemm``.
 
   .. index:: cmpstrnm instruction pattern
 
@@ -2319,7 +2319,7 @@ extv
   before it is stored in operand 0.
 
   This pattern is deprecated; please use :samp:`extv :samp:`{m}`` and
-  ``extvmisalign :samp:`{m}``` instead.
+  ``extvmisalignm`` instead.
 
   .. index:: extzv instruction pattern
 
@@ -2327,7 +2327,7 @@ extzv
   Like :samp:`extv` except that the bit-field value is zero-extended.
 
   This pattern is deprecated; please use :samp:`extzv :samp:`{m}`` and
-  ``extzvmisalign :samp:`{m}``` instead.
+  ``extzvmisalignm`` instead.
 
   .. index:: insv instruction pattern
 
@@ -2342,7 +2342,7 @@ insv
   for operands 1 and 2 and the constant is never zero for operand 1.
 
   This pattern is deprecated; please use :samp:`insv :samp:`{m}`` and
-  ``insvmisalign :samp:`{m}``` instead.
+  ``insvmisalignm`` instead.
 
   .. index:: movmodecc instruction pattern
 
@@ -2404,14 +2404,14 @@ cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode c
 
   .. code-block:: c++
 
-    op0 = op1 ? op2 :samp:`{op}` op3 : op4;
+    op0 = op1 ? op2 op op3 : op4;
 
   while the vector case is equivalent to:
 
   .. code-block:: c++
 
-    for (i = 0; i < GET_MODE_NUNITS ( :samp:`{m}` ); i++)
-      op0[i] = op1[i] ? op2[i] :samp:`{op}` op3[i] : op4[i];
+    for (i = 0; i < GET_MODE_NUNITS (m); i++)
+      op0[i] = op1[i] ? op2[i] op op3[i] : op4[i];
 
   where, for example, :samp:`{op}` is ``+`` for :samp:`cond_add :samp:`{mode}``.
 
@@ -2438,7 +2438,7 @@ cond_fmamode cond_fmsmode cond_fnmamode cond_fnmsmode
 
   .. code-block:: c++
 
-    for (i = 0; i < GET_MODE_NUNITS ( :samp:`{m}` ); i++)
+    for (i = 0; i < GET_MODE_NUNITS (m); i++)
       op0[i] = op1[i] ? fma (op2[i], op3[i], op4[i]) : op5[i];
 
   .. index:: negmodecc instruction pattern
@@ -2624,7 +2624,7 @@ simple_return
                              [(cc0) (const_int 0)])
                           (return)
                           (pc)))]
-      " :samp:`{condition}` "
+      "condition"
       "...")
 
   where :samp:`{condition}` would normally be the same condition specified on the
@@ -3091,7 +3091,7 @@ sync_compare_and_swapmode
   avoid a separate compare operation and issue the subsequent
   branch or store-flag operation immediately after the compare-and-swap.
   To this end, GCC will look for a ``MODE_CC`` set in the
-  output of ``sync_compare_and_swap :samp:`{mode}```; if the machine
+  output of ``sync_compare_and_swapmode``; if the machine
   description includes such a set, the target should also define special
   ``cbranchcc4`` and/or ``cstorecc4`` instructions.  GCC will then
   be able to take the destination of the ``MODE_CC`` set and pass it
@@ -3101,7 +3101,7 @@ sync_compare_and_swapmode
   For targets where the operating system may provide support for this
   operation via library calls, the ``sync_compare_and_swap_optab``
   may be initialized to a function with the same interface as the
-  ``__sync_val_compare_and_swap_ :samp:`{n}``` built-in.  If the entire
+  ``__sync_val_compare_and_swap_n`` built-in.  If the entire
   set of :samp:`{__sync}` builtins are supported via library calls, the
   target can initialize all of the optabs at once with
   ``init_sync_libfuncs``.
@@ -3174,7 +3174,7 @@ sync_compare_and_swapmode
   .. index:: sync_new_nandmode instruction pattern
 
 :samp:`sync_new_add :samp:`{mode}``, :samp:`sync_new_sub :samp:`{mode}`` :samp:`sync_new_ior :samp:`{mode}``, :samp:`sync_new_and :samp:`{mode}`` :samp:`sync_new_xor :samp:`{mode}``, :samp:`sync_new_nand :samp:`{mode}``
-  These patterns are like their ``sync_old_ :samp:`{op}``` counterparts,
+  These patterns are like their ``sync_old_op`` counterparts,
   except that they return the value that exists in the memory location
   after the operation, rather than before the operation.
 
@@ -3207,11 +3207,11 @@ sync_lock_test_and_setmode
 
 sync_lock_releasemode
   This pattern, if defined, releases a lock set by
-  ``sync_lock_test_and_set :samp:`{mode}```.  Operand 0 is the memory
+  ``sync_lock_test_and_setmode``.  Operand 0 is the memory
   that contains the lock; operand 1 is the value to store in the lock.
 
   If the target doesn't implement full semantics for
-  ``sync_lock_test_and_set :samp:`{mode}```, any value operand which is not
+  ``sync_lock_test_and_setmode``, any value operand which is not
   the constant 0 should be rejected with ``FAIL``, and the true contents
   of the memory operand are implementation defined.
 
@@ -3392,14 +3392,14 @@ atomic_bit_test_and_setmode atomic_bit_test_and_complementmode atomic_bit_test_a
   if operand 0 should contain the original value of the specified bit in the
   least significant bit of the operand, and ``const0_rtx`` if the bit should
   be in its original position in the operand.
-  ``atomic_bit_test_and_set :samp:`{mode}``` atomically sets the specified bit after
-  remembering its original value, ``atomic_bit_test_and_complement :samp:`{mode}```
-  inverts the specified bit and ``atomic_bit_test_and_reset :samp:`{mode}``` clears
+  ``atomic_bit_test_and_setmode`` atomically sets the specified bit after
+  remembering its original value, ``atomic_bit_test_and_complementmode``
+  inverts the specified bit and ``atomic_bit_test_and_resetmode`` clears
   the specified bit.
 
   If these patterns are not defined, attempts will be made to use
-  ``atomic_fetch_or :samp:`{mode}```, ``atomic_fetch_xor :samp:`{mode}``` or
-  ``atomic_fetch_and :samp:`{mode}``` instruction patterns, or their ``sync``
+  ``atomic_fetch_ormode``, ``atomic_fetch_xormode`` or
+  ``atomic_fetch_andmode`` instruction patterns, or their ``sync``
   counterparts.  If none of these are available a compare-and-swap
   loop will be used.
 

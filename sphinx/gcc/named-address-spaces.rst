@@ -66,8 +66,8 @@ using (inline) assembler code, special address spaces are needed.
   .. index:: __flash5 AVR Named Address Spaces
 
   These are 16-bit address spaces locating data in section
-  ``.progmem :samp:`{N}`.data`` where :samp:`{N}` refers to
-  address space ``__flash :samp:`{N}```.
+  ``.progmemN.data`` where :samp:`{N}` refers to
+  address space ``__flashN``.
   The compiler sets the ``RAMPZ`` segment register appropriately 
   before reading data by means of the ``ELPM`` instruction.
 
@@ -145,14 +145,14 @@ together with attribute ``progmem``.
 Limitations and caveats
 
 ** Reading across the 64 KiB section boundary of
-  the ``__flash`` or ``__flash :samp:`{N}``` address spaces
+  the ``__flash`` or ``__flashN`` address spaces
   shows undefined behavior. The only address space that
   supports reading across the 64 KiB flash segment boundaries is
   ``__memx``.
 
-* If you use one of the ``__flash :samp:`{N}``` address spaces
+* If you use one of the ``__flashN`` address spaces
   you must arrange your linker script to locate the
-  ``.progmem :samp:`{N}`.data`` sections according to your needs.
+  ``.progmemN.data`` sections according to your needs.
 
 * Any data or pointers to the non-generic address spaces must
   be qualified as ``const``, i.e. as read-only data.

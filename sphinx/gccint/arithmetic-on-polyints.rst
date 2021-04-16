@@ -81,23 +81,23 @@ As well as the C++ operators, ``poly_int`` supports the following
 
 .. code-block:: c++
 
-  wi::neg ( :samp:`{p1}` , & :samp:`{overflow}` )
+  wi::neg (p1, &overflow)
 
-  wi::add ( :samp:`{p1}` , :samp:`{p2}` )
-  wi::add ( :samp:`{p1}` , :samp:`{c2}` )
-  wi::add ( :samp:`{c1}` , :samp:`{p1}` )
-  wi::add ( :samp:`{p1}` , :samp:`{p2}` , :samp:`{sign}` , & :samp:`{overflow}` )
+  wi::add (p1, p2)
+  wi::add (p1, c2)
+  wi::add (c1, p1)
+  wi::add (p1, p2, sign, &overflow)
 
-  wi::sub ( :samp:`{p1}` , :samp:`{p2}` )
-  wi::sub ( :samp:`{p1}` , :samp:`{c2}` )
-  wi::sub ( :samp:`{c1}` , :samp:`{p1}` )
-  wi::sub ( :samp:`{p1}` , :samp:`{p2}` , :samp:`{sign}` , & :samp:`{overflow}` )
+  wi::sub (p1, p2)
+  wi::sub (p1, c2)
+  wi::sub (c1, p1)
+  wi::sub (p1, p2, sign, &overflow)
 
-  wi::mul ( :samp:`{p1}` , :samp:`{c2}` )
-  wi::mul ( :samp:`{c1}` , :samp:`{p1}` )
-  wi::mul ( :samp:`{p1}` , :samp:`{c2}` , :samp:`{sign}` , & :samp:`{overflow}` )
+  wi::mul (p1, c2)
+  wi::mul (c1, p1)
+  wi::mul (p1, c2, sign, &overflow)
 
-  wi::lshift ( :samp:`{p1}` , :samp:`{c2}` )
+  wi::lshift (p1, c2)
 
 These routines just check whether overflow occurs on any individual
 coefficient; it is not possible to know at compile time whether the

@@ -319,12 +319,12 @@ GCC CMIs use ELF32 as an architecture-neutral encapsulation mechanism.
 You may use :command:`readelf` to inspect them, although section
 contents are largely undecipherable.  There is a section named
 ``.gnu.c++.README``, which contains human-readable text.  Other
-than the first line, each line consists of ``:samp:`{tag}` : ``value````
+than the first line, each line consists of ``tag: value``
 tuples.
 
 .. code-block:: c++
 
-  > :command:`readelf -p.gnu.c++.README gcm.cache/foo.gcm`
+  > readelf -p.gnu.c++.README gcm.cache/foo.gcm
 
   String dump of section '.gnu.c++.README':
     [     0]  GNU C++ primary module interface

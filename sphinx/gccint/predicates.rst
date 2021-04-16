@@ -119,13 +119,13 @@ a limitation in the machine-description reader.
 
 .. code-block:: c++
 
-  (match_operand :samp:`{n}` "pmode_register_operand" :samp:`{constraint}` )
+  (match_operand n "pmode_register_operand" constraint)
 
 means exactly what
 
 .. code-block:: c++
 
-  (match_operand:P :samp:`{n}` "register_operand" :samp:`{constraint}` )
+  (match_operand:P n "register_operand" constraint)
 
 would mean, if the machine-description reader accepted :samp:`:P`
 mode suffixes.  Unfortunately, it cannot, because ``Pmode`` is an
@@ -310,7 +310,7 @@ machine description:
 
 .. code-block:: c++
 
-  ;; True if :samp:`{op}` is a ``SYMBOL_REF`` which refers to the sdata section.
+  ;; True if op is a SYMBOL_REF which refers to the sdata section.
   (define_predicate "small_addr_symbolic_operand"
     (and (match_code "symbol_ref")
          (match_test "SYMBOL_REF_SMALL_ADDR_P (op)")))
@@ -319,7 +319,7 @@ And here is another, showing the use of the C block.
 
 .. code-block:: c++
 
-  ;; True if :samp:`{op}` is a register operand that is (or could be) a GR reg.
+  ;; True if op is a register operand that is (or could be) a GR reg.
   (define_predicate "gr_register_operand"
     (match_operand 0 "register_operand")
   {

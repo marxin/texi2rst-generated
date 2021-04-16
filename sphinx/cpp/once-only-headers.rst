@@ -23,7 +23,7 @@ of the file in a conditional, like this:
   #ifndef FILE_FOO_SEEN
   #define FILE_FOO_SEEN
 
-  :samp:`{the entire file}`
+  the entire file
 
   #endif /* !FILE_FOO_SEEN */
 

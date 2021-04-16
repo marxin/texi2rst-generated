@@ -242,7 +242,7 @@ terminate the stack backtrace.  New ports should avoid this.
 
   .. code-block:: c++
 
-    value_of( :samp:`{R}` ) / :samp:`{factor}` - :samp:`{offset}`
+    value_of(R) / factor - offset
 
   A target only needs to define this hook if it sets
   :samp:`NUM_POLY_INT_COEFFS` to a value greater than 1.
@@ -712,15 +712,15 @@ MacroDWARF_FRAME_REGNUM(:samp:`{regno}`)Define this macro if the target's repres
 used in .eh_frame or .debug_frame is different from that used in other
 debug info sections.  Given a GCC hard register number, this macro
 should return the .eh_frame register number.  The default is
-``DBX_REGISTER_NUMBER ( :samp:`{regno}` )``.
+``DBX_REGISTER_NUMBER (regno)``.
 
 .. index:: DWARF2_FRAME_REG_OUT
 
 MacroDWARF2_FRAME_REG_OUT(:samp:`{regno}`,:samp:`{for_eh}`)Define this macro to map register numbers held in the call frame info
 that GCC has collected using ``DWARF_FRAME_REGNUM`` to those that
-should be output in .debug_frame (``:samp:`{for_eh}``` is zero) and
-.eh_frame (``:samp:`{for_eh}``` is nonzero).  The default is to
-return ``:samp:`{regno}```.
+should be output in .debug_frame (``for_eh`` is zero) and
+.eh_frame (``for_eh`` is nonzero).  The default is to
+return ``regno``.
 
 .. index:: REG_VALUE_IN_UNWIND_CONTEXT
 
@@ -1134,7 +1134,7 @@ the stack.
   This target hook should return ``true`` if argument :samp:`{arg}` at the
   position indicated by :samp:`{cum}` should be passed by reference.  This
   predicate is queried after target independent reasons for being
-  passed by reference, such as ``TREE_ADDRESSABLE ( :samp:`{arg}`.type)``.
+  passed by reference, such as ``TREE_ADDRESSABLE (arg.type)``.
 
   If the hook returns true, a copy of that argument is made in memory and a
   pointer to the argument is passed instead of the argument itself.
@@ -1459,8 +1459,8 @@ stack.
 .. function:: opt_scalar_float_mode TARGET_FLOATN_MODE(int n,bool extended)
 
   Define this to return the machine mode to use for the type 
-  ``_Float :samp:`{n}```, if :samp:`{extended}` is false, or the type 
-  ``_Float :samp:`{n}` x``, if :samp:`{extended}` is true.  If such a type is not
+  ``_Floatn``, if :samp:`{extended}` is false, or the type 
+  ``_Floatnx``, if :samp:`{extended}` is true.  If such a type is not
   supported, return ``opt_scalar_float_mode ()``.  The default version of
   this hook returns ``SFmode`` for ``_Float32``, ``DFmode`` for
   ``_Float64`` and ``_Float32x`` and ``TFmode`` for 
@@ -1476,8 +1476,8 @@ stack.
 
 .. function:: bool TARGET_FLOATN_BUILTIN_P(int func)
 
-  Define this to return true if the ``_Float :samp:`{n}``` and
-  ``_Float :samp:`{n}` x`` built-in functions should implicitly enable the
+  Define this to return true if the ``_Floatn`` and
+  ``_Floatnx`` built-in functions should implicitly enable the
   built-in function without the ``__builtin_`` prefix in addition to the
   normal built-in function with the ``__builtin_`` prefix.  The default is
   to only enable built-in functions without the ``__builtin_`` prefix for
@@ -1542,7 +1542,7 @@ values-values that can fit in registers.
   Otherwise, the hook should return an RTX representing the place where
   a function returns a value.
 
-  On many machines, only ``TYPE_MODE ( :samp:`{ret_type}` )`` is relevant.
+  On many machines, only ``TYPE_MODE (ret_type)`` is relevant.
   (Actually, on most machines, scalar values are returned in the same
   place regardless of mode.)  The value of the expression is usually a
   ``reg`` RTX for the hard register where the return value is stored.

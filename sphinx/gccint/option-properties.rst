@@ -60,7 +60,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 ``Joined`` ``Separate``
   The option takes a mandatory argument.  ``Joined`` indicates
   that the option and argument can be included in the same ``argv``
-  entry (as with ``-mflush-func= :samp:`{name}```, for example).
+  entry (as with ``-mflush-func=name``, for example).
   ``Separate`` indicates that the option and argument can be
   separate ``argv`` entries (as with ``-o``).  An option is
   allowed to have both of these properties.
@@ -134,7 +134,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`Var({var})`
   The state of this option should be stored in variable :samp:`{var}`
-  (actually a macro for ``global_options.x_ :samp:`{var}```).
+  (actually a macro for ``global_options.x_var``).
   The way that the state is stored depends on the type of option:
 
 ``WarnRemoved``
@@ -144,7 +144,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 :samp:`Var({var}, {set})`
   The option controls an integer variable :samp:`{var}` and is active when
   :samp:`{var}` equals :samp:`{set}`.  The option parser will set :samp:`{var}` to
-  :samp:`{set}` when the positive form of the option is used and ``! :samp:`{set}```
+  :samp:`{set}` when the positive form of the option is used and ``!set``
   when the 'no-' form is used.
 
   :samp:`{var}` is declared in the same way as for the single-argument form
@@ -192,16 +192,16 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
   The options-processing script will automatically allocate a unique bit
   for the option.  If the option is attached to :samp:`target_flags`,
-  the script will set the macro ``MASK_ :samp:`{name}``` to the appropriate
-  bitmask.  It will also declare a ``TARGET_ :samp:`{name}``` macro that has
+  the script will set the macro ``MASK_name`` to the appropriate
+  bitmask.  It will also declare a ``TARGET_name`` macro that has
   the value 1 when the option is active and 0 otherwise.  If you use ``Var``
   to attach the option to a different variable, the bitmask macro with be
-  called ``OPTION_MASK_ :samp:`{name}```.
+  called ``OPTION_MASK_name``.
 
 :samp:`InverseMask({othername})` :samp:`InverseMask({othername}, {thisname})`
   The option is the inverse of another option that has the
-  ``Mask( :samp:`{othername}` )`` property.  If :samp:`{thisname}` is given,
-  the options-processing script will declare a ``TARGET_ :samp:`{thisname}```
+  ``Mask(othername)`` property.  If :samp:`{thisname}` is given,
+  the options-processing script will declare a ``TARGET_thisname``
   macro that is 1 when the option is active and 0 otherwise.
 
 :samp:`Enum({name})`
@@ -240,7 +240,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   places.
 
 ``NegativeAlias``
-  For an option marked with ``Alias( :samp:`{opt}` )``, the option is
+  For an option marked with ``Alias(opt)``, the option is
   considered to be an alias for the positive form of :option:`-`:samp:`{opt}`
   if negated and for the negative form of :option:`-`:samp:`{opt}` if not
   negated.  ``NegativeAlias`` may not be used with the forms of
@@ -306,7 +306,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 ``SetByCombined``
   The option may also be set by a combined option such as
   :option:`-ffast-math`.  This causes the ``gcc_options`` struct to
-  have a field ``frontend_set_ :samp:`{name}```, where ``:samp:`{name}```
+  have a field ``frontend_set_name``, where ``name``
   is the name of the field holding the value of this option (without the
   leading ``x_``).  This gives the front end a way to indicate that
   the value has been set explicitly and should not be changed by the

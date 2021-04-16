@@ -57,12 +57,12 @@ The syntax for defining a mode iterator is:
 
 .. code-block:: c++
 
-  (define_mode_iterator :samp:`{name}` [( :samp:`{mode1}` " :samp:`{cond1}` ") ... ( :samp:`{moden}` " :samp:`{condn}` ")])
+  (define_mode_iterator name [(mode1 "cond1") ... (moden "condn")])
 
 This allows subsequent .md file constructs to use the mode suffix
-``: :samp:`{name}```.  Every construct that does so will be expanded
-:samp:`{n}` times, once with every use of ``: :samp:`{name}``` replaced by
-``: :samp:`{mode1}```, once with every use replaced by ``: :samp:`{mode2}```,
+``:name``.  Every construct that does so will be expanded
+:samp:`{n}` times, once with every use of ``:name`` replaced by
+``:mode1``, once with every use replaced by ``:mode2``,
 and so on.  In the expansion for a particular :samp:`{modei}` , every
 C condition will also require that :samp:`{condi}` be true.
 
@@ -79,8 +79,8 @@ The ``:SI`` version will only apply if ``Pmode == SImode`` and
 the ``:DI`` version will only apply if ``Pmode == DImode``.
 
 As with other .md conditions, an empty string is treated
-as 'always true'.  ``( :samp:`{mode}` "")`` can also be abbreviated
-to ``:samp:`{mode}```.  For example:
+as 'always true'.  ``(mode "")`` can also be abbreviated
+to ``mode``.  For example:
 
 .. code-block:: c++
 
@@ -104,7 +104,7 @@ If an .md file construct uses mode iterators, each version of the
 construct will often need slightly different strings or modes.  For
 example:
 
-* When a ``define_expand`` defines several ``add :samp:`{m}` 3`` patterns
+* When a ``define_expand`` defines several ``addm3`` patterns
   (see :ref:`standard-names`), each expander will need to use the
   appropriate mode name for :samp:`{m}`.
 
@@ -122,14 +122,14 @@ upper case.  You can define other attributes using:
 
 .. code-block:: c++
 
-  (define_mode_attr :samp:`{name}` [( :samp:`{mode1}` " :samp:`{value1}` ") ... ( :samp:`{moden}` " :samp:`{valuen}` ")])
+  (define_mode_attr name [(mode1 "value1") ... (moden "valuen")])
 
 where :samp:`{name}` is the name of the attribute and :samp:`{valuei}`
 is the value associated with :samp:`{modei}`.
 
 When GCC replaces some :samp:`{:iterator}` with :samp:`{:mode}` , it will scan
 each string and mode in the pattern for sequences of the form
-``< :samp:`{iterator}` : :samp:`{attr}` >``, where :samp:`{attr}` is the name of a
+``<iterator:attr>``, where :samp:`{attr}` is the name of a
 mode attribute.  If the attribute is defined for :samp:`{mode}` , the whole
 ``<...>`` sequence will be replaced by the appropriate attribute
 value.
@@ -155,7 +155,7 @@ Here is an example of using an attribute for a mode:
   (define_insn ...
     (sign_extend:LONG (match_operand:<LONG:SHORT> ...)) ...)
 
-The ``:samp:`{iterator}` :`` prefix may be omitted, in which case the
+The ``iterator:`` prefix may be omitted, in which case the
 substitution will be attempted for every iterator expansion.
 
 .. _examples:
@@ -224,7 +224,7 @@ The construct:
 
 .. code-block:: c++
 
-  (define_code_iterator :samp:`{name}` [( :samp:`{code1}` " :samp:`{cond1}` ") ... ( :samp:`{coden}` " :samp:`{condn}` ")])
+  (define_code_iterator name [(code1 "cond1") ... (coden "condn")])
 
 defines a pseudo rtx code :samp:`{name}` that can be instantiated as
 :samp:`{codei}` if condition :samp:`{condi}` is true.  Each :samp:`{codei}`
@@ -242,7 +242,7 @@ Other attributes are defined using:
 
 .. code-block:: c++
 
-  (define_code_attr :samp:`{name}` [( :samp:`{code1}` " :samp:`{value1}` ") ... ( :samp:`{coden}` " :samp:`{valuen}` ")])
+  (define_code_attr name [(code1 "value1") ... (coden "valuen")])
 
 Instruction patterns can use code attributes as rtx codes, which can be
 useful if two sets of codes act in tandem.  For example, the following
@@ -331,7 +331,7 @@ The construct:
 
 .. code-block:: c++
 
-  (define_int_iterator :samp:`{name}` [( :samp:`{int1}` " :samp:`{cond1}` ") ... ( :samp:`{intn}` " :samp:`{condn}` ")])
+  (define_int_iterator name [(int1 "cond1") ... (intn "condn")])
 
 defines a pseudo integer constant :samp:`{name}` that can be instantiated as
 :samp:`{inti}` if condition :samp:`{condi}` is true.  Each :samp:`{int}` must have the
@@ -350,7 +350,7 @@ Attributes are defined using:
 
 .. code-block:: c++
 
-  (define_int_attr :samp:`{name}` [( :samp:`{int1}` " :samp:`{value1}` ") ... ( :samp:`{intn}` " :samp:`{valuen}` ")])
+  (define_int_attr name [(int1 "value1") ... (intn "valuen")])
 
 Here's an example of int iterators in action, taken from the ARM port:
 
@@ -429,10 +429,10 @@ Declarations of subst-attributes have the following syntax:
 
 .. code-block:: c++
 
-  (define_subst_attr " :samp:`{name}` "
-    " :samp:`{subst-name}` "
-    " :samp:`{no-subst-value}` "
-    " :samp:`{subst-applied-value}` ")
+  (define_subst_attr "name"
+    "subst-name"
+    "no-subst-value"
+    "subst-applied-value")
 
 :samp:`{name}` is a string with which the given subst-attribute could be
 referred to.
@@ -495,7 +495,7 @@ lead to a double or trailing underscore.
 
 :samp:`rtx maybe_gen_{name} ({i1}, {i2}, ..., {op0}, {op1}, ...)`
   Check for a valid instruction in the same way as
-  ``maybe_code_for_ :samp:`{name}```.  If the instruction exists,
+  ``maybe_code_for_name``.  If the instruction exists,
   generate an instance of it using the operand values given by :samp:`{op0}` ,
   :samp:`{op1}` , and so on, otherwise return null.
 

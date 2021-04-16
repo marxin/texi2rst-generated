@@ -36,7 +36,7 @@ of the form
 
 .. code-block:: c++
 
-  # :samp:`{linenum}` :samp:`{filename}` :samp:`{flags}`
+  # linenum filename flags
 
 These are called :dfn:`linemarkers`.  They are inserted as needed into
 the output (but never within a string or character constant).  They mean

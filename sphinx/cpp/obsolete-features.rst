@@ -32,7 +32,7 @@ An assertion looks like this:
 
 .. code-block:: c++
 
-  # :samp:`{predicate}` ( :samp:`{answer}` )
+  #predicate (answer)
 
 :samp:`{predicate}` must be a single identifier.  :samp:`{answer}` can be any
 sequence of tokens; all characters are significant except for leading
@@ -67,7 +67,7 @@ identifies assertions in conditionals.
 
 .. code-block:: c++
 
-  #assert :samp:`{predicate}` ( :samp:`{answer}` )
+  #assert predicate (answer)
 
 You may make several assertions with the same predicate and different
 answers.  Subsequent assertions do not override previous ones for the
@@ -86,7 +86,7 @@ leaving out the answer:
 
 .. code-block:: c++
 
-  #unassert :samp:`{predicate}`
+  #unassert predicate
 
 In either form, if no such assertion has been made, :samp:`#unassert` has
 no effect.

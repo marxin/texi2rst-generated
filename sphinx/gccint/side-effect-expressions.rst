@@ -47,8 +47,8 @@ the operands of these.
   If :samp:`{lval}` is ``(cc0)``, it has no machine mode, and :samp:`{x}` may
   be either a ``compare`` expression or a value that may have any mode.
   The latter case represents a 'test' instruction.  The expression
-  ``(set (cc0) (reg: :samp:`{m}`:samp:`{n}` ))`` is equivalent to
-  ``(set (cc0) (compare (reg: :samp:`{m}`:samp:`{n}` ) (const_int 0)))``.
+  ``(set (cc0) (reg:mn))`` is equivalent to
+  ``(set (cc0) (compare (reg:mn) (const_int 0)))``.
   Use the former expression to save space during the compilation.
 
   If :samp:`{lval}` is a ``parallel``, it is used to represent the case of
@@ -70,7 +70,7 @@ the operands of these.
   second or the third operand must be ``(pc)`` (for the case which
   does not jump) and the other of the two must be a ``label_ref``
   (for the case which does jump).  :samp:`{x}` may also be a ``mem`` or
-  ``(plus:SI (pc) :samp:`{y}` )``, where :samp:`{y}` may be a ``reg`` or a
+  ``(plus:SI (pc) y)``, where :samp:`{y}` may be a ``reg`` or a
   ``mem``; these unusual patterns are used to represent jumps through
   branch tables.
 

@@ -11,18 +11,18 @@ the ``offsetof`` macro.
 .. code-block:: c++
 
   primary:
-          "__builtin_offsetof" "(" ``typename`` "," offsetof_member_designator ")"
+          "__builtin_offsetof" "(" typename "," offsetof_member_designator ")"
 
   offsetof_member_designator:
-            ``identifier``
-          | offsetof_member_designator "." ``identifier``
-          | offsetof_member_designator "[" ``expr`` "]"
+            identifier
+          | offsetof_member_designator "." identifier
+          | offsetof_member_designator "[" expr "]"
 
 This extension is sufficient such that
 
 .. code-block:: c++
 
-  #define offsetof( :samp:`{type}` , :samp:`{member}` )  __builtin_offsetof ( :samp:`{type}` , :samp:`{member}` )
+  #define offsetof(type, member)  __builtin_offsetof (type, member)
 
 is a suitable definition of the ``offsetof`` macro.  In C++, :samp:`{type}`
 may be dependent.  In either case, :samp:`{member}` may consist of a single

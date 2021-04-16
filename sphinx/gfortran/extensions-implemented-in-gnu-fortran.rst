@@ -1120,10 +1120,10 @@ compatibility with DEC programs. The types implied by each are:
 
 .. code-block:: c++
 
-  ``B`` - ``INTEGER(kind=1)``
-  ``I`` - ``INTEGER(kind=2)``
-  ``J`` - ``INTEGER(kind=4)``
-  ``K`` - ``INTEGER(kind=8)``
+  B - INTEGER(kind=1)
+  I - INTEGER(kind=2)
+  J - INTEGER(kind=4)
+  K - INTEGER(kind=8)
 
 GNU Fortran supports these with the flag :option:`-fdec-intrinsic-ints`.
 Intrinsics for which prefixed versions are available and in what form are noted
@@ -1416,7 +1416,7 @@ compile flag :option:`-fdec` , for compatibility.
 
   .. code-block:: c++
 
-    ``OPEN(..., READONLY)``
+    OPEN(..., READONLY)
 
 .. envvar:: SHARE
 

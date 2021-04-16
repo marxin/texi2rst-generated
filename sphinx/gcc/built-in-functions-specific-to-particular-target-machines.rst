@@ -291,7 +291,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    __alignof__(*(char *) :samp:`{val}` ) >= alignval
+    __alignof__(*(char *)val) >= alignval
 
   because __alignof__ sees only the type of the dereference, whereas
   __builtin_arc_align uses alignment information from the pointer
@@ -312,7 +312,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    mov  :samp:`{dest}` , r :samp:`{regno}`
+    mov  dest, rregno
 
   where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -325,7 +325,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    mov  r :samp:`{regno}` , :samp:`{val}`
+    mov  rregno, val
 
 .. function:: int __builtin_arc_divaw(int a,int b)
 
@@ -334,7 +334,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    divaw  :samp:`{dest}` , :samp:`{a}` , :samp:`{b}`
+    divaw  dest, a, b
 
   where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -345,7 +345,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    flag  :samp:`{a}`
+    flag  a
 
 .. function:: unsigned int __builtin_arc_lr(unsigned intauxr)
 
@@ -354,7 +354,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    lr  :samp:`{dest}` , [ :samp:`{auxr}` ]
+    lr  dest, [auxr]
 
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -365,7 +365,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    mul64  :samp:`{a}` , :samp:`{b}`
+    mul64  a, b
 
 .. function:: void __builtin_arc_mulu64(unsigned inta,unsigned intb)
 
@@ -373,7 +373,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    mulu64  :samp:`{a}` , :samp:`{b}`
+    mulu64  a, b
 
 .. function:: void __builtin_arc_nop(void )
 
@@ -391,7 +391,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    norm  :samp:`{dest}` , :samp:`{src}`
+    norm  dest, src
 
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -404,7 +404,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    normw  :samp:`{dest}` , :samp:`{src}`
+    normw  dest, src
 
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -423,7 +423,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    sleep  :samp:`{a}`
+    sleep  a
 
 .. function:: void __builtin_arc_sr(unsigned intauxr,unsigned intval)
 
@@ -433,7 +433,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    sr  :samp:`{auxr}` , [ :samp:`{val}` ]
+    sr  auxr, [val]
 
 .. function:: int __builtin_arc_swap(int src)
 
@@ -441,7 +441,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    swap  :samp:`{dest}` , :samp:`{src}`
+    swap  dest, src
 
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
@@ -468,7 +468,7 @@ error may be generated.
 
   .. code-block:: c++
 
-    trap_s  :samp:`{c}`
+    trap_s  c
 
 .. function:: void __builtin_arc_unimp_s(void )
 
@@ -515,9 +515,9 @@ These types can be used to define 128-bit variables.  The built-in
 functions listed in the following section can be used on these
 variables to generate the vector operations.
 
-For all builtins, ``__builtin_arc_ :samp:`{someinsn}```, the header file
+For all builtins, ``__builtin_arc_someinsn``, the header file
 arc-simd.h also provides equivalent macros called
-``_ :samp:`{someinsn}``` that can be used for programming ease and
+``_someinsn`` that can be used for programming ease and
 improved readability.  The following macros for DMA control are also
 provided:
 
@@ -1047,7 +1047,7 @@ with GNU-C99:
   #include <stdfix.h>
 
   // Re-interpret the bit representation of unsigned 16-bit
-  // integer :samp:`{uval}` as Q-format 0.16 value.
+  // integer uval as Q-format 0.16 value.
   unsigned fract get_bits (uint_ur_t uval)
   {
       return urbits (uval);
@@ -1159,20 +1159,20 @@ Directly-Mapped Integer Functions
 
 The functions listed below map directly to FR-V I-type instructions.
 
-===========================  =======================================================  =================================================
-Function prototype           Example usage                                            Assembly output
-===========================  =======================================================  =================================================
-``sw1 __ADDSS (sw1, sw1)``   ``:samp:`{c}` = __ADDSS ( :samp:`{a}` , :samp:`{b}` )``  ``ADDSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw1 __SCAN (sw1, sw1)``    ``:samp:`{c}` = __SCAN ( :samp:`{a}` , :samp:`{b}` )``   ``SCAN :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw1 __SCUTSS (sw1)``       ``:samp:`{b}` = __SCUTSS ( :samp:`{a}` )``               ``SCUTSS :samp:`{a}` , :samp:`{b}```
-``sw1 __SLASS (sw1, sw1)``   ``:samp:`{c}` = __SLASS ( :samp:`{a}` , :samp:`{b}` )``  ``SLASS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __SMASS (sw1, sw1)``  ``__SMASS ( :samp:`{a}` , :samp:`{b}` )``                ``SMASS :samp:`{a}` , :samp:`{b}```
-``void __SMSSS (sw1, sw1)``  ``__SMSSS ( :samp:`{a}` , :samp:`{b}` )``                ``SMSSS :samp:`{a}` , :samp:`{b}```
-``void __SMU (sw1, sw1)``    ``__SMU ( :samp:`{a}` , :samp:`{b}` )``                  ``SMU :samp:`{a}` , :samp:`{b}```
-``sw2 __SMUL (sw1, sw1)``    ``:samp:`{c}` = __SMUL ( :samp:`{a}` , :samp:`{b}` )``   ``SMUL :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw1 __SUBSS (sw1, sw1)``   ``:samp:`{c}` = __SUBSS ( :samp:`{a}` , :samp:`{b}` )``  ``SUBSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __UMUL (uw1, uw1)``    ``:samp:`{c}` = __UMUL ( :samp:`{a}` , :samp:`{b}` )``   ``UMUL :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-===========================  =======================================================  =================================================
+===========================  ======================  ===============
+Function prototype           Example usage           Assembly output
+===========================  ======================  ===============
+``sw1 __ADDSS (sw1, sw1)``   ``c = __ADDSS (a, b)``  ``ADDSS a,b,c``
+``sw1 __SCAN (sw1, sw1)``    ``c = __SCAN (a, b)``   ``SCAN a,b,c``
+``sw1 __SCUTSS (sw1)``       ``b = __SCUTSS (a)``    ``SCUTSS a,b``
+``sw1 __SLASS (sw1, sw1)``   ``c = __SLASS (a, b)``  ``SLASS a,b,c``
+``void __SMASS (sw1, sw1)``  ``__SMASS (a, b)``      ``SMASS a,b``
+``void __SMSSS (sw1, sw1)``  ``__SMSSS (a, b)``      ``SMSSS a,b``
+``void __SMU (sw1, sw1)``    ``__SMU (a, b)``        ``SMU a,b``
+``sw2 __SMUL (sw1, sw1)``    ``c = __SMUL (a, b)``   ``SMUL a,b,c``
+``sw1 __SUBSS (sw1, sw1)``   ``c = __SUBSS (a, b)``  ``SUBSS a,b,c``
+``uw2 __UMUL (uw1, uw1)``    ``c = __UMUL (a, b)``   ``UMUL a,b,c``
+===========================  ======================  ===============
 .. _directly-mapped-media-functions:
 
 Directly-Mapped Media Functions
@@ -1180,98 +1180,98 @@ Directly-Mapped Media Functions
 
 The functions listed below map directly to FR-V M-type instructions.
 
-====================================  ===========================================================  =====================================================
-Function prototype                    Example usage                                                Assembly output
-====================================  ===========================================================  =====================================================
-``uw1 __MABSHS (sw1)``                ``:samp:`{b}` = __MABSHS ( :samp:`{a}` )``                   ``MABSHS :samp:`{a}` , :samp:`{b}```
-``void __MADDACCS (acc, acc)``        ``__MADDACCS ( :samp:`{b}` , :samp:`{a}` )``                 ``MADDACCS :samp:`{a}` , :samp:`{b}```
-``sw1 __MADDHSS (sw1, sw1)``          ``:samp:`{c}` = __MADDHSS ( :samp:`{a}` , :samp:`{b}` )``    ``MADDHSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MADDHUS (uw1, uw1)``          ``:samp:`{c}` = __MADDHUS ( :samp:`{a}` , :samp:`{b}` )``    ``MADDHUS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MAND (uw1, uw1)``             ``:samp:`{c}` = __MAND ( :samp:`{a}` , :samp:`{b}` )``       ``MAND :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MASACCS (acc, acc)``         ``__MASACCS ( :samp:`{b}` , :samp:`{a}` )``                  ``MASACCS :samp:`{a}` , :samp:`{b}```
-``uw1 __MAVEH (uw1, uw1)``            ``:samp:`{c}` = __MAVEH ( :samp:`{a}` , :samp:`{b}` )``      ``MAVEH :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __MBTOH (uw1)``                 ``:samp:`{b}` = __MBTOH ( :samp:`{a}` )``                    ``MBTOH :samp:`{a}` , :samp:`{b}```
-``void __MBTOHE (uw1 *, uw1)``        ``__MBTOHE (& :samp:`{b}` , :samp:`{a}` )``                  ``MBTOHE :samp:`{a}` , :samp:`{b}```
-``void __MCLRACC (acc)``              ``__MCLRACC ( :samp:`{a}` )``                                ``MCLRACC :samp:`{a}```
-``void __MCLRACCA (void)``            ``__MCLRACCA ()``                                            ``MCLRACCA``
-``uw1 __Mcop1 (uw1, uw1)``            ``:samp:`{c}` = __Mcop1 ( :samp:`{a}` , :samp:`{b}` )``      ``Mcop1 :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __Mcop2 (uw1, uw1)``            ``:samp:`{c}` = __Mcop2 ( :samp:`{a}` , :samp:`{b}` )``      ``Mcop2 :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MCPLHI (uw2, const)``         ``:samp:`{c}` = __MCPLHI ( :samp:`{a}` , :samp:`{b}` )``     ``MCPLHI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw1 __MCPLI (uw2, const)``          ``:samp:`{c}` = __MCPLI ( :samp:`{a}` , :samp:`{b}` )``      ``MCPLI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``void __MCPXIS (acc, sw1, sw1)``     ``__MCPXIS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MCPXIS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MCPXIU (acc, uw1, uw1)``     ``__MCPXIU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MCPXIU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MCPXRS (acc, sw1, sw1)``     ``__MCPXRS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MCPXRS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MCPXRU (acc, uw1, uw1)``     ``__MCPXRU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MCPXRU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MCUT (acc, uw1)``             ``:samp:`{c}` = __MCUT ( :samp:`{a}` , :samp:`{b}` )``       ``MCUT :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MCUTSS (acc, sw1)``           ``:samp:`{c}` = __MCUTSS ( :samp:`{a}` , :samp:`{b}` )``     ``MCUTSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MDADDACCS (acc, acc)``       ``__MDADDACCS ( :samp:`{b}` , :samp:`{a}` )``                ``MDADDACCS :samp:`{a}` , :samp:`{b}```
-``void __MDASACCS (acc, acc)``        ``__MDASACCS ( :samp:`{b}` , :samp:`{a}` )``                 ``MDASACCS :samp:`{a}` , :samp:`{b}```
-``uw2 __MDCUTSSI (acc, const)``       ``:samp:`{c}` = __MDCUTSSI ( :samp:`{a}` , :samp:`{b}` )``   ``MDCUTSSI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw2 __MDPACKH (uw2, uw2)``          ``:samp:`{c}` = __MDPACKH ( :samp:`{a}` , :samp:`{b}` )``    ``MDPACKH :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __MDROTLI (uw2, const)``        ``:samp:`{c}` = __MDROTLI ( :samp:`{a}` , :samp:`{b}` )``    ``MDROTLI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``void __MDSUBACCS (acc, acc)``       ``__MDSUBACCS ( :samp:`{b}` , :samp:`{a}` )``                ``MDSUBACCS :samp:`{a}` , :samp:`{b}```
-``void __MDUNPACKH (uw1 *, uw2)``     ``__MDUNPACKH (& :samp:`{b}` , :samp:`{a}` )``               ``MDUNPACKH :samp:`{a}` , :samp:`{b}```
-``uw2 __MEXPDHD (uw1, const)``        ``:samp:`{c}` = __MEXPDHD ( :samp:`{a}` , :samp:`{b}` )``    ``MEXPDHD :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw1 __MEXPDHW (uw1, const)``        ``:samp:`{c}` = __MEXPDHW ( :samp:`{a}` , :samp:`{b}` )``    ``MEXPDHW :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw1 __MHDSETH (uw1, const)``        ``:samp:`{c}` = __MHDSETH ( :samp:`{a}` , :samp:`{b}` )``    ``MHDSETH :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``sw1 __MHDSETS (const)``             ``:samp:`{b}` = __MHDSETS ( :samp:`{a}` )``                  ``MHDSETS # :samp:`{a}` , :samp:`{b}```
-``uw1 __MHSETHIH (uw1, const)``       ``:samp:`{b}` = __MHSETHIH ( :samp:`{b}` , :samp:`{a}` )``   ``MHSETHIH # :samp:`{a}` , :samp:`{b}```
-``sw1 __MHSETHIS (sw1, const)``       ``:samp:`{b}` = __MHSETHIS ( :samp:`{b}` , :samp:`{a}` )``   ``MHSETHIS # :samp:`{a}` , :samp:`{b}```
-``uw1 __MHSETLOH (uw1, const)``       ``:samp:`{b}` = __MHSETLOH ( :samp:`{b}` , :samp:`{a}` )``   ``MHSETLOH # :samp:`{a}` , :samp:`{b}```
-``sw1 __MHSETLOS (sw1, const)``       ``:samp:`{b}` = __MHSETLOS ( :samp:`{b}` , :samp:`{a}` )``   ``MHSETLOS # :samp:`{a}` , :samp:`{b}```
-``uw1 __MHTOB (uw2)``                 ``:samp:`{b}` = __MHTOB ( :samp:`{a}` )``                    ``MHTOB :samp:`{a}` , :samp:`{b}```
-``void __MMACHS (acc, sw1, sw1)``     ``__MMACHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMACHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMACHU (acc, uw1, uw1)``     ``__MMACHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMACHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMRDHS (acc, sw1, sw1)``     ``__MMRDHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMRDHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMRDHU (acc, uw1, uw1)``     ``__MMRDHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMRDHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMULHS (acc, sw1, sw1)``     ``__MMULHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMULHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMULHU (acc, uw1, uw1)``     ``__MMULHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``     ``MMULHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMULXHS (acc, sw1, sw1)``    ``__MMULXHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MMULXHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MMULXHU (acc, uw1, uw1)``    ``__MMULXHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MMULXHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MNOT (uw1)``                  ``:samp:`{b}` = __MNOT ( :samp:`{a}` )``                     ``MNOT :samp:`{a}` , :samp:`{b}```
-``uw1 __MOR (uw1, uw1)``              ``:samp:`{c}` = __MOR ( :samp:`{a}` , :samp:`{b}` )``        ``MOR :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MPACKH (uh, uh)``             ``:samp:`{c}` = __MPACKH ( :samp:`{a}` , :samp:`{b}` )``     ``MPACKH :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQADDHSS (sw2, sw2)``         ``:samp:`{c}` = __MQADDHSS ( :samp:`{a}` , :samp:`{b}` )``   ``MQADDHSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __MQADDHUS (uw2, uw2)``         ``:samp:`{c}` = __MQADDHUS ( :samp:`{a}` , :samp:`{b}` )``   ``MQADDHUS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQCPXIS (acc, sw2, sw2)``    ``__MQCPXIS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQCPXIS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQCPXIU (acc, uw2, uw2)``    ``__MQCPXIU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQCPXIU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQCPXRS (acc, sw2, sw2)``    ``__MQCPXRS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQCPXRS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQCPXRU (acc, uw2, uw2)``    ``__MQCPXRU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQCPXRU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQLCLRHS (sw2, sw2)``         ``:samp:`{c}` = __MQLCLRHS ( :samp:`{a}` , :samp:`{b}` )``   ``MQLCLRHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQLMTHS (sw2, sw2)``          ``:samp:`{c}` = __MQLMTHS ( :samp:`{a}` , :samp:`{b}` )``    ``MQLMTHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMACHS (acc, sw2, sw2)``    ``__MQMACHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQMACHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMACHU (acc, uw2, uw2)``    ``__MQMACHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQMACHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMACXHS (acc, sw2, sw2)``   ``__MQMACXHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``   ``MQMACXHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMULHS (acc, sw2, sw2)``    ``__MQMULHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQMULHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMULHU (acc, uw2, uw2)``    ``__MQMULHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``    ``MQMULHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMULXHS (acc, sw2, sw2)``   ``__MQMULXHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``   ``MQMULXHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQMULXHU (acc, uw2, uw2)``   ``__MQMULXHU ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``   ``MQMULXHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQSATHS (sw2, sw2)``          ``:samp:`{c}` = __MQSATHS ( :samp:`{a}` , :samp:`{b}` )``    ``MQSATHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __MQSLLHI (uw2, int)``          ``:samp:`{c}` = __MQSLLHI ( :samp:`{a}` , :samp:`{b}` )``    ``MQSLLHI :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQSRAHI (sw2, int)``          ``:samp:`{c}` = __MQSRAHI ( :samp:`{a}` , :samp:`{b}` )``    ``MQSRAHI :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``sw2 __MQSUBHSS (sw2, sw2)``         ``:samp:`{c}` = __MQSUBHSS ( :samp:`{a}` , :samp:`{b}` )``   ``MQSUBHSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw2 __MQSUBHUS (uw2, uw2)``         ``:samp:`{c}` = __MQSUBHUS ( :samp:`{a}` , :samp:`{b}` )``   ``MQSUBHUS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQXMACHS (acc, sw2, sw2)``   ``__MQXMACHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``   ``MQXMACHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MQXMACXHS (acc, sw2, sw2)``  ``__MQXMACXHS ( :samp:`{c}` , :samp:`{a}` , :samp:`{b}` )``  ``MQXMACXHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MRDACC (acc)``                ``:samp:`{b}` = __MRDACC ( :samp:`{a}` )``                   ``MRDACC :samp:`{a}` , :samp:`{b}```
-``uw1 __MRDACCG (acc)``               ``:samp:`{b}` = __MRDACCG ( :samp:`{a}` )``                  ``MRDACCG :samp:`{a}` , :samp:`{b}```
-``uw1 __MROTLI (uw1, const)``         ``:samp:`{c}` = __MROTLI ( :samp:`{a}` , :samp:`{b}` )``     ``MROTLI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw1 __MROTRI (uw1, const)``         ``:samp:`{c}` = __MROTRI ( :samp:`{a}` , :samp:`{b}` )``     ``MROTRI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``sw1 __MSATHS (sw1, sw1)``           ``:samp:`{c}` = __MSATHS ( :samp:`{a}` , :samp:`{b}` )``     ``MSATHS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MSATHU (uw1, uw1)``           ``:samp:`{c}` = __MSATHU ( :samp:`{a}` , :samp:`{b}` )``     ``MSATHU :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MSLLHI (uw1, const)``         ``:samp:`{c}` = __MSLLHI ( :samp:`{a}` , :samp:`{b}` )``     ``MSLLHI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``sw1 __MSRAHI (sw1, const)``         ``:samp:`{c}` = __MSRAHI ( :samp:`{a}` , :samp:`{b}` )``     ``MSRAHI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``uw1 __MSRLHI (uw1, const)``         ``:samp:`{c}` = __MSRLHI ( :samp:`{a}` , :samp:`{b}` )``     ``MSRLHI :samp:`{a}` ,# :samp:`{b}` , :samp:`{c}```
-``void __MSUBACCS (acc, acc)``        ``__MSUBACCS ( :samp:`{b}` , :samp:`{a}` )``                 ``MSUBACCS :samp:`{a}` , :samp:`{b}```
-``sw1 __MSUBHSS (sw1, sw1)``          ``:samp:`{c}` = __MSUBHSS ( :samp:`{a}` , :samp:`{b}` )``    ``MSUBHSS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``uw1 __MSUBHUS (uw1, uw1)``          ``:samp:`{c}` = __MSUBHUS ( :samp:`{a}` , :samp:`{b}` )``    ``MSUBHUS :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MTRAP (void)``               ``__MTRAP ()``                                               ``MTRAP``
-``uw2 __MUNPACKH (uw1)``              ``:samp:`{b}` = __MUNPACKH ( :samp:`{a}` )``                 ``MUNPACKH :samp:`{a}` , :samp:`{b}```
-``uw1 __MWCUT (uw2, uw1)``            ``:samp:`{c}` = __MWCUT ( :samp:`{a}` , :samp:`{b}` )``      ``MWCUT :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-``void __MWTACC (acc, uw1)``          ``__MWTACC ( :samp:`{b}` , :samp:`{a}` )``                   ``MWTACC :samp:`{a}` , :samp:`{b}```
-``void __MWTACCG (acc, uw1)``         ``__MWTACCG ( :samp:`{b}` , :samp:`{a}` )``                  ``MWTACCG :samp:`{a}` , :samp:`{b}```
-``uw1 __MXOR (uw1, uw1)``             ``:samp:`{c}` = __MXOR ( :samp:`{a}` , :samp:`{b}` )``       ``MXOR :samp:`{a}` , :samp:`{b}` , :samp:`{c}```
-====================================  ===========================================================  =====================================================
+====================================  =========================  ===================
+Function prototype                    Example usage              Assembly output
+====================================  =========================  ===================
+``uw1 __MABSHS (sw1)``                ``b = __MABSHS (a)``       ``MABSHS a,b``
+``void __MADDACCS (acc, acc)``        ``__MADDACCS (b, a)``      ``MADDACCS a,b``
+``sw1 __MADDHSS (sw1, sw1)``          ``c = __MADDHSS (a, b)``   ``MADDHSS a,b,c``
+``uw1 __MADDHUS (uw1, uw1)``          ``c = __MADDHUS (a, b)``   ``MADDHUS a,b,c``
+``uw1 __MAND (uw1, uw1)``             ``c = __MAND (a, b)``      ``MAND a,b,c``
+``void __MASACCS (acc, acc)``         ``__MASACCS (b, a)``       ``MASACCS a,b``
+``uw1 __MAVEH (uw1, uw1)``            ``c = __MAVEH (a, b)``     ``MAVEH a,b,c``
+``uw2 __MBTOH (uw1)``                 ``b = __MBTOH (a)``        ``MBTOH a,b``
+``void __MBTOHE (uw1 *, uw1)``        ``__MBTOHE (&b, a)``       ``MBTOHE a,b``
+``void __MCLRACC (acc)``              ``__MCLRACC (a)``          ``MCLRACC a``
+``void __MCLRACCA (void)``            ``__MCLRACCA ()``          ``MCLRACCA``
+``uw1 __Mcop1 (uw1, uw1)``            ``c = __Mcop1 (a, b)``     ``Mcop1 a,b,c``
+``uw1 __Mcop2 (uw1, uw1)``            ``c = __Mcop2 (a, b)``     ``Mcop2 a,b,c``
+``uw1 __MCPLHI (uw2, const)``         ``c = __MCPLHI (a, b)``    ``MCPLHI a,#b,c``
+``uw1 __MCPLI (uw2, const)``          ``c = __MCPLI (a, b)``     ``MCPLI a,#b,c``
+``void __MCPXIS (acc, sw1, sw1)``     ``__MCPXIS (c, a, b)``     ``MCPXIS a,b,c``
+``void __MCPXIU (acc, uw1, uw1)``     ``__MCPXIU (c, a, b)``     ``MCPXIU a,b,c``
+``void __MCPXRS (acc, sw1, sw1)``     ``__MCPXRS (c, a, b)``     ``MCPXRS a,b,c``
+``void __MCPXRU (acc, uw1, uw1)``     ``__MCPXRU (c, a, b)``     ``MCPXRU a,b,c``
+``uw1 __MCUT (acc, uw1)``             ``c = __MCUT (a, b)``      ``MCUT a,b,c``
+``uw1 __MCUTSS (acc, sw1)``           ``c = __MCUTSS (a, b)``    ``MCUTSS a,b,c``
+``void __MDADDACCS (acc, acc)``       ``__MDADDACCS (b, a)``     ``MDADDACCS a,b``
+``void __MDASACCS (acc, acc)``        ``__MDASACCS (b, a)``      ``MDASACCS a,b``
+``uw2 __MDCUTSSI (acc, const)``       ``c = __MDCUTSSI (a, b)``  ``MDCUTSSI a,#b,c``
+``uw2 __MDPACKH (uw2, uw2)``          ``c = __MDPACKH (a, b)``   ``MDPACKH a,b,c``
+``uw2 __MDROTLI (uw2, const)``        ``c = __MDROTLI (a, b)``   ``MDROTLI a,#b,c``
+``void __MDSUBACCS (acc, acc)``       ``__MDSUBACCS (b, a)``     ``MDSUBACCS a,b``
+``void __MDUNPACKH (uw1 *, uw2)``     ``__MDUNPACKH (&b, a)``    ``MDUNPACKH a,b``
+``uw2 __MEXPDHD (uw1, const)``        ``c = __MEXPDHD (a, b)``   ``MEXPDHD a,#b,c``
+``uw1 __MEXPDHW (uw1, const)``        ``c = __MEXPDHW (a, b)``   ``MEXPDHW a,#b,c``
+``uw1 __MHDSETH (uw1, const)``        ``c = __MHDSETH (a, b)``   ``MHDSETH a,#b,c``
+``sw1 __MHDSETS (const)``             ``b = __MHDSETS (a)``      ``MHDSETS #a,b``
+``uw1 __MHSETHIH (uw1, const)``       ``b = __MHSETHIH (b, a)``  ``MHSETHIH #a,b``
+``sw1 __MHSETHIS (sw1, const)``       ``b = __MHSETHIS (b, a)``  ``MHSETHIS #a,b``
+``uw1 __MHSETLOH (uw1, const)``       ``b = __MHSETLOH (b, a)``  ``MHSETLOH #a,b``
+``sw1 __MHSETLOS (sw1, const)``       ``b = __MHSETLOS (b, a)``  ``MHSETLOS #a,b``
+``uw1 __MHTOB (uw2)``                 ``b = __MHTOB (a)``        ``MHTOB a,b``
+``void __MMACHS (acc, sw1, sw1)``     ``__MMACHS (c, a, b)``     ``MMACHS a,b,c``
+``void __MMACHU (acc, uw1, uw1)``     ``__MMACHU (c, a, b)``     ``MMACHU a,b,c``
+``void __MMRDHS (acc, sw1, sw1)``     ``__MMRDHS (c, a, b)``     ``MMRDHS a,b,c``
+``void __MMRDHU (acc, uw1, uw1)``     ``__MMRDHU (c, a, b)``     ``MMRDHU a,b,c``
+``void __MMULHS (acc, sw1, sw1)``     ``__MMULHS (c, a, b)``     ``MMULHS a,b,c``
+``void __MMULHU (acc, uw1, uw1)``     ``__MMULHU (c, a, b)``     ``MMULHU a,b,c``
+``void __MMULXHS (acc, sw1, sw1)``    ``__MMULXHS (c, a, b)``    ``MMULXHS a,b,c``
+``void __MMULXHU (acc, uw1, uw1)``    ``__MMULXHU (c, a, b)``    ``MMULXHU a,b,c``
+``uw1 __MNOT (uw1)``                  ``b = __MNOT (a)``         ``MNOT a,b``
+``uw1 __MOR (uw1, uw1)``              ``c = __MOR (a, b)``       ``MOR a,b,c``
+``uw1 __MPACKH (uh, uh)``             ``c = __MPACKH (a, b)``    ``MPACKH a,b,c``
+``sw2 __MQADDHSS (sw2, sw2)``         ``c = __MQADDHSS (a, b)``  ``MQADDHSS a,b,c``
+``uw2 __MQADDHUS (uw2, uw2)``         ``c = __MQADDHUS (a, b)``  ``MQADDHUS a,b,c``
+``void __MQCPXIS (acc, sw2, sw2)``    ``__MQCPXIS (c, a, b)``    ``MQCPXIS a,b,c``
+``void __MQCPXIU (acc, uw2, uw2)``    ``__MQCPXIU (c, a, b)``    ``MQCPXIU a,b,c``
+``void __MQCPXRS (acc, sw2, sw2)``    ``__MQCPXRS (c, a, b)``    ``MQCPXRS a,b,c``
+``void __MQCPXRU (acc, uw2, uw2)``    ``__MQCPXRU (c, a, b)``    ``MQCPXRU a,b,c``
+``sw2 __MQLCLRHS (sw2, sw2)``         ``c = __MQLCLRHS (a, b)``  ``MQLCLRHS a,b,c``
+``sw2 __MQLMTHS (sw2, sw2)``          ``c = __MQLMTHS (a, b)``   ``MQLMTHS a,b,c``
+``void __MQMACHS (acc, sw2, sw2)``    ``__MQMACHS (c, a, b)``    ``MQMACHS a,b,c``
+``void __MQMACHU (acc, uw2, uw2)``    ``__MQMACHU (c, a, b)``    ``MQMACHU a,b,c``
+``void __MQMACXHS (acc, sw2, sw2)``   ``__MQMACXHS (c, a, b)``   ``MQMACXHS a,b,c``
+``void __MQMULHS (acc, sw2, sw2)``    ``__MQMULHS (c, a, b)``    ``MQMULHS a,b,c``
+``void __MQMULHU (acc, uw2, uw2)``    ``__MQMULHU (c, a, b)``    ``MQMULHU a,b,c``
+``void __MQMULXHS (acc, sw2, sw2)``   ``__MQMULXHS (c, a, b)``   ``MQMULXHS a,b,c``
+``void __MQMULXHU (acc, uw2, uw2)``   ``__MQMULXHU (c, a, b)``   ``MQMULXHU a,b,c``
+``sw2 __MQSATHS (sw2, sw2)``          ``c = __MQSATHS (a, b)``   ``MQSATHS a,b,c``
+``uw2 __MQSLLHI (uw2, int)``          ``c = __MQSLLHI (a, b)``   ``MQSLLHI a,b,c``
+``sw2 __MQSRAHI (sw2, int)``          ``c = __MQSRAHI (a, b)``   ``MQSRAHI a,b,c``
+``sw2 __MQSUBHSS (sw2, sw2)``         ``c = __MQSUBHSS (a, b)``  ``MQSUBHSS a,b,c``
+``uw2 __MQSUBHUS (uw2, uw2)``         ``c = __MQSUBHUS (a, b)``  ``MQSUBHUS a,b,c``
+``void __MQXMACHS (acc, sw2, sw2)``   ``__MQXMACHS (c, a, b)``   ``MQXMACHS a,b,c``
+``void __MQXMACXHS (acc, sw2, sw2)``  ``__MQXMACXHS (c, a, b)``  ``MQXMACXHS a,b,c``
+``uw1 __MRDACC (acc)``                ``b = __MRDACC (a)``       ``MRDACC a,b``
+``uw1 __MRDACCG (acc)``               ``b = __MRDACCG (a)``      ``MRDACCG a,b``
+``uw1 __MROTLI (uw1, const)``         ``c = __MROTLI (a, b)``    ``MROTLI a,#b,c``
+``uw1 __MROTRI (uw1, const)``         ``c = __MROTRI (a, b)``    ``MROTRI a,#b,c``
+``sw1 __MSATHS (sw1, sw1)``           ``c = __MSATHS (a, b)``    ``MSATHS a,b,c``
+``uw1 __MSATHU (uw1, uw1)``           ``c = __MSATHU (a, b)``    ``MSATHU a,b,c``
+``uw1 __MSLLHI (uw1, const)``         ``c = __MSLLHI (a, b)``    ``MSLLHI a,#b,c``
+``sw1 __MSRAHI (sw1, const)``         ``c = __MSRAHI (a, b)``    ``MSRAHI a,#b,c``
+``uw1 __MSRLHI (uw1, const)``         ``c = __MSRLHI (a, b)``    ``MSRLHI a,#b,c``
+``void __MSUBACCS (acc, acc)``        ``__MSUBACCS (b, a)``      ``MSUBACCS a,b``
+``sw1 __MSUBHSS (sw1, sw1)``          ``c = __MSUBHSS (a, b)``   ``MSUBHSS a,b,c``
+``uw1 __MSUBHUS (uw1, uw1)``          ``c = __MSUBHUS (a, b)``   ``MSUBHUS a,b,c``
+``void __MTRAP (void)``               ``__MTRAP ()``             ``MTRAP``
+``uw2 __MUNPACKH (uw1)``              ``b = __MUNPACKH (a)``     ``MUNPACKH a,b``
+``uw1 __MWCUT (uw2, uw1)``            ``c = __MWCUT (a, b)``     ``MWCUT a,b,c``
+``void __MWTACC (acc, uw1)``          ``__MWTACC (b, a)``        ``MWTACC a,b``
+``void __MWTACCG (acc, uw1)``         ``__MWTACCG (b, a)``       ``MWTACCG a,b``
+``uw1 __MXOR (uw1, uw1)``             ``c = __MXOR (a, b)``      ``MXOR a,b,c``
+====================================  =========================  ===================
 .. _raw-read-write-functions:
 
 Raw Read/Write Functions
@@ -1858,25 +1858,25 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``lt``, ``nge``, ``le`` or ``ngt``.
 
 :samp:`v2sf __builtin_mips_movt_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
-  Conditional move based on floating-point comparison (``c.:samp:`{cond}`.ps``,
+  Conditional move based on floating-point comparison (``c.cond.ps``,
   ``movt.ps``/``movf.ps``).
 
   The ``movt`` functions return the value :samp:`{x}` computed by:
 
   .. code-block:: c++
 
-    c.:samp:`{cond}`.ps :samp:`{cc}` , :samp:`{a}` , :samp:`{b}`
-    mov.ps :samp:`{x}` , :samp:`{c}`
-    movt.ps :samp:`{x}` , :samp:`{d}` , :samp:`{cc}`
+    c.cond.ps cc,a,b
+    mov.ps x,c
+    movt.ps x,d,cc
 
   The ``movf`` functions are similar but use ``movf.ps`` instead
   of ``movt.ps``.
 
 :samp:`int __builtin_mips_upper_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_c_{cond}_ps (v2sf {a}, v2sf {b})`
-  Comparison of two paired-single values (``c.:samp:`{cond}`.ps``,
+  Comparison of two paired-single values (``c.cond.ps``,
   ``bc1t``/``bc1f``).
 
-  These functions compare :samp:`{a}` and :samp:`{b}` using ``c.:samp:`{cond}`.ps``
+  These functions compare :samp:`{a}` and :samp:`{b}` using ``c.cond.ps``
   and return either the upper or lower half of the result.  For example:
 
   .. code-block:: c++
@@ -1919,18 +1919,18 @@ more details on what each instruction does.
   Convert paired word to paired single (``cvt.ps.pw``).
 
 ``float __builtin_mips_recip1_s (float)`` ``double __builtin_mips_recip1_d (double)`` ``v2sf __builtin_mips_recip1_ps (v2sf)``
-  Reduced-precision reciprocal (sequence step 1) (``recip1.:samp:`{fmt}```).
+  Reduced-precision reciprocal (sequence step 1) (``recip1.fmt``).
 
 ``float __builtin_mips_recip2_s (float, float)`` ``double __builtin_mips_recip2_d (double, double)`` ``v2sf __builtin_mips_recip2_ps (v2sf, v2sf)``
-  Reduced-precision reciprocal (sequence step 2) (``recip2.:samp:`{fmt}```).
+  Reduced-precision reciprocal (sequence step 2) (``recip2.fmt``).
 
 ``float __builtin_mips_rsqrt1_s (float)`` ``double __builtin_mips_rsqrt1_d (double)`` ``v2sf __builtin_mips_rsqrt1_ps (v2sf)``
   Reduced-precision reciprocal square root (sequence step 1)
-  (``rsqrt1.:samp:`{fmt}```).
+  (``rsqrt1.fmt``).
 
 ``float __builtin_mips_rsqrt2_s (float, float)`` ``double __builtin_mips_rsqrt2_d (double, double)`` ``v2sf __builtin_mips_rsqrt2_ps (v2sf, v2sf)``
   Reduced-precision reciprocal square root (sequence step 2)
-  (``rsqrt2.:samp:`{fmt}```).
+  (``rsqrt2.fmt``).
 
   The following multi-instruction functions are also available.
 In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
@@ -1939,11 +1939,11 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``ngl``, ``lt``, ``nge``, ``le`` or ``ngt``.
 
 :samp:`int __builtin_mips_cabs_{cond}_s (float {a}, float {b})` :samp:`int __builtin_mips_cabs_{cond}_d (double {a}, double {b})`
-  Absolute comparison of two scalar values (``cabs.:samp:`{cond}`.:samp:`{fmt}```,
+  Absolute comparison of two scalar values (``cabs.cond.fmt``,
   ``bc1t``/``bc1f``).
 
-  These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.:samp:`{cond}`.s``
-  or ``cabs.:samp:`{cond}`.d`` and return the result as a boolean value.
+  These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.cond.s``
+  or ``cabs.cond.d`` and return the result as a boolean value.
   For example:
 
   .. code-block:: c++
@@ -1955,10 +1955,10 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
       false ();
 
 :samp:`int __builtin_mips_upper_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
-  Absolute comparison of two paired-single values (``cabs.:samp:`{cond}`.ps``,
+  Absolute comparison of two paired-single values (``cabs.cond.ps``,
   ``bc1t``/``bc1f``).
 
-  These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.:samp:`{cond}`.ps``
+  These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.cond.ps``
   and return either the upper or lower half of the result.  For example:
 
   .. code-block:: c++
@@ -1975,27 +1975,27 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
       lower_halves_are_unequal ();
 
 :samp:`v2sf __builtin_mips_movt_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
-  Conditional move based on absolute comparison (``cabs.:samp:`{cond}`.ps``,
+  Conditional move based on absolute comparison (``cabs.cond.ps``,
   ``movt.ps``/``movf.ps``).
 
   The ``movt`` functions return the value :samp:`{x}` computed by:
 
   .. code-block:: c++
 
-    cabs.:samp:`{cond}`.ps :samp:`{cc}` , :samp:`{a}` , :samp:`{b}`
-    mov.ps :samp:`{x}` , :samp:`{c}`
-    movt.ps :samp:`{x}` , :samp:`{d}` , :samp:`{cc}`
+    cabs.cond.ps cc,a,b
+    mov.ps x,c
+    movt.ps x,d,cc
 
   The ``movf`` functions are similar but use ``movf.ps`` instead
   of ``movt.ps``.
 
 :samp:`int __builtin_mips_any_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_any_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
   Comparison of two paired-single values
-  (``c.:samp:`{cond}`.ps``/``cabs.:samp:`{cond}`.ps``,
+  (``c.cond.ps``/``cabs.cond.ps``,
   ``bc1any2t``/``bc1any2f``).
 
-  These functions compare :samp:`{a}` and :samp:`{b}` using ``c.:samp:`{cond}`.ps``
-  or ``cabs.:samp:`{cond}`.ps``.  The ``any`` forms return ``true`` if either
+  These functions compare :samp:`{a}` and :samp:`{b}` using ``c.cond.ps``
+  or ``cabs.cond.ps``.  The ``any`` forms return ``true`` if either
   result is ``true`` and the ``all`` forms return ``true`` if both results are ``true``.
   For example:
 
@@ -2014,10 +2014,10 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`int __builtin_mips_any_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_any_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
   Comparison of four paired-single values
-  (``c.:samp:`{cond}`.ps``/``cabs.:samp:`{cond}`.ps``,
+  (``c.cond.ps``/``cabs.cond.ps``,
   ``bc1any4t``/``bc1any4f``).
 
-  These functions use ``c.:samp:`{cond}`.ps`` or ``cabs.:samp:`{cond}`.ps``
+  These functions use ``c.cond.ps`` or ``cabs.cond.ps``
   to compare :samp:`{a}` with :samp:`{b}` and to compare :samp:`{c}` with :samp:`{d}`.
   The ``any`` forms return ``true`` if any of the four results are ``true``
   and the ``all`` forms return ``true`` if all four results are ``true``.
@@ -3338,11 +3338,11 @@ when hardware decimal floating point
   _Decimal128 __builtin_pack_dec128 (unsigned long long, unsigned long long);
   unsigned long long __builtin_unpack_dec128 (_Decimal128, int);
 
-  The ``__builtin_set_fpscr_drn`` builtin allows changing the three decimal
+  The __builtin_set_fpscr_drn builtin allows changing the three decimal
   floating point rounding mode bits.  The argument is a 3-bit value.  The
-  argument can either be a ``const int`` or the value can be stored in
+  argument can either be a const int or the value can be stored in
   a variable.
-  The builtin uses the ISA 3.0 instruction ``mffscdrn`` if available.
+  The builtin uses the ISA 3.0 instruction mffscdrn if available.
   Otherwise the builtin reads the FPSCR, masks the current decimal rounding
   mode bits out and OR's in the new value.
 
@@ -7950,7 +7950,7 @@ families of processors:
 
     int get_tcb_value (void)
     {
-      // Generate :samp:`mov.l @(8,gbr),r0` instruction
+      // Generate mov.l @(8,gbr),r0 instruction
       return ((my_tcb*)__builtin_thread_pointer ())->c;
     }
 
@@ -8234,7 +8234,7 @@ processor.  The intrinsics are of the form:
 
 .. code-block:: c++
 
-  unsigned long long __insn_ :samp:`{op}` (...)
+  unsigned long long __insn_op (...)
 
 Where :samp:`{op}` is the name of the instruction.  Refer to the ISA manual
 for the complete list of instructions.
@@ -8267,7 +8267,7 @@ processor.  The intrinsics are of the form:
 
 .. code-block:: c++
 
-  unsigned __insn_ :samp:`{op}` (...)
+  unsigned __insn_op (...)
 
 where :samp:`{op}` is the name of the instruction.  Refer to the ISA manual
 for the complete list of instructions.

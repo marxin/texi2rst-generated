@@ -1,14 +1,14 @@
 Converting ``poly_int``s
 ************************
 
-A ``poly_int< :samp:`{n}` , :samp:`{T}` >`` can be constructed from up to
+A ``poly_int<n, T>`` can be constructed from up to
 :samp:`{n}` individual :samp:`{T}` coefficients, with the remaining coefficients
 being implicitly zero.  In particular, this means that every
-``poly_int< :samp:`{n}` , :samp:`{T}` >`` can be constructed from a single
+``poly_int<n, T>`` can be constructed from a single
 scalar :samp:`{T}` , or something compatible with :samp:`{T}`.
 
-Also, a ``poly_int< :samp:`{n}` , :samp:`{T}` >`` can be constructed from
-a ``poly_int< :samp:`{n}` , :samp:`{U}` >`` if :samp:`{T}` can be constructed
+Also, a ``poly_int<n, T>`` can be constructed from
+a ``poly_int<n, U>`` if :samp:`{T}` can be constructed
 from :samp:`{U}`.
 
 The following functions provide other forms of conversion,

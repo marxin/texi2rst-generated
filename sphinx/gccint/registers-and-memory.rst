@@ -182,7 +182,7 @@ registers and to main memory.
 
     .. code-block:: c++
 
-      paradoxical_subreg_p ( :samp:`{m1}` , :samp:`{m2}` )
+      paradoxical_subreg_p (m1, m2)
 
     Paradoxical ``subreg``s can be used as both lvalues and rvalues.
     When used as an lvalue, the low-order bits of the source value
@@ -210,14 +210,14 @@ registers and to main memory.
 
     .. code-block:: c++
 
-      (set (subreg:SI (reg:HI :samp:`{x}` ) 0) :samp:`{y}` )
+      (set (subreg:SI (reg:HI x) 0) y)
 
     stores the lower 2 bytes of :samp:`{y}` in :samp:`{x}` and discards the upper
     2 bytes.  A subsequent:
 
     .. code-block:: c++
 
-      (set :samp:`{z}` (subreg:SI (reg:HI :samp:`{x}` ) 0))
+      (set z (subreg:SI (reg:HI x) 0))
 
     would set the lower two bytes of :samp:`{z}` to :samp:`{y}` and set the upper
     two bytes to an unknown value assuming ``SUBREG_PROMOTED_VAR_P`` is
@@ -235,7 +235,7 @@ registers and to main memory.
 
     .. code-block:: c++
 
-      REGMODE_NATURAL_SIZE ( :samp:`{m2}` )
+      REGMODE_NATURAL_SIZE (m2)
 
     bytes.  Usually the value is ``UNITS_PER_WORD``; that is,
     most targets usually treat each word of a register as being
@@ -291,13 +291,13 @@ registers and to main memory.
 
     .. code-block:: c++
 
-      (subreg:HI (reg:SI :samp:`{x}` ) 2)
+      (subreg:HI (reg:SI x) 2)
 
     on a ``BYTES_BIG_ENDIAN``, :samp:`UNITS_PER_WORD == 4` target is the same as
 
     .. code-block:: c++
 
-      (subreg:HI (reg:SI :samp:`{x}` ) 0)
+      (subreg:HI (reg:SI x) 0)
 
     on a little-endian, :samp:`UNITS_PER_WORD == 4` target.  Both
     ``subreg``s access the lower two bytes of register :samp:`{x}`.
@@ -367,7 +367,7 @@ registers and to main memory.
 
   .. code-block:: c++
 
-    TARGET_CAN_CHANGE_MODE_CLASS ( :samp:`{m2}` , :samp:`{m1}` , :samp:`{class}` )
+    TARGET_CAN_CHANGE_MODE_CLASS (m2, m1, class)
 
   must be false for every class :samp:`{class}` that includes :samp:`{reg}`.
 

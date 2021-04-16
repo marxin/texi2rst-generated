@@ -41,7 +41,7 @@ statement: ``walk_gimple_op``.
 
   .. code-block:: c++
 
-    walk_tree (&``OP``, ``CALLBACK_OP``, ``WI``, ``PSET``)
+    walk_tree (&OP, CALLBACK_OP, WI, PSET)
 
   If ``CALLBACK_OP`` returns non-``NULL`` for an operand, the remaining
   operands are not scanned.  The return value is that returned by

@@ -9,7 +9,7 @@ Directives used within DejaGnu tests
   Selecting targets to which a test applies. <selectors>
   Keywords describing target attributes. <effective-target-keywords>
   Features for ``dg-add-options`` <add-options>
-  Variants of ``dg-require- :samp:`{support}``` <require-support>
+  Variants of ``dg-require-support`` <require-support>
   Commands for use in ``dg-final`` <final-actions>
 
 .. _directives:
@@ -438,23 +438,23 @@ Data type sizes
   Target has ``wchar_t`` that is at least 4 bytes.
 
 :samp:`float{n}`
-  Target has the ``_Float :samp:`{n}``` type.
+  Target has the ``_Floatn`` type.
 
 :samp:`float{n}x`
-  Target has the ``_Float :samp:`{n}` x`` type.
+  Target has the ``_Floatnx`` type.
 
 :samp:`float{n}_runtime`
-  Target has the ``_Float :samp:`{n}``` type, including runtime support
+  Target has the ``_Floatn`` type, including runtime support
   for any options added with ``dg-add-options``.
 
 :samp:`float{n}x_runtime`
-  Target has the ``_Float :samp:`{n}` x`` type, including runtime support
+  Target has the ``_Floatnx`` type, including runtime support
   for any options added with ``dg-add-options``.
 
 ``floatn_nx_runtime``
   Target has runtime support for any options added with
-  ``dg-add-options`` for any ``_Float :samp:`{n}``` or
-  ``_Float :samp:`{n}` x`` type.
+  ``dg-add-options`` for any ``_Floatn`` or
+  ``_Floatnx`` type.
 
 ``inf``
   Target supports floating point infinite (``inf``) for type
@@ -1810,10 +1810,10 @@ are:
   locally when using pic/PIC passes in the testsuite.
 
 :samp:`float{n}`
-  Add the target-specific flags needed to use the ``_Float :samp:`{n}``` type.
+  Add the target-specific flags needed to use the ``_Floatn`` type.
 
 :samp:`float{n}x`
-  Add the target-specific flags needed to use the ``_Float :samp:`{n}` x`` type.
+  Add the target-specific flags needed to use the ``_Floatnx`` type.
 
 ``ieee``
   Add the target-specific flags needed to enable full IEEE
@@ -1838,8 +1838,8 @@ are:
 
   .. _require-support:
 
-Variants of ``dg-require- :samp:`{support}```
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Variants of ``dg-require-support``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A few of the ``dg-require`` directives take arguments.
 
@@ -1854,7 +1854,7 @@ A few of the ``dg-require`` directives take arguments.
 :samp:`dg-require-stack-check {check}`
   Skip the test if the target does not support the ``-fstack-check``
   option.  If :samp:`{check}` is ``""``, support for ``-fstack-check``
-  is checked, for ``-fstack-check=(" :samp:`{check}` ")`` otherwise.
+  is checked, for ``-fstack-check=("check")`` otherwise.
 
 :samp:`dg-require-stack-size {size}`
   Skip the test if the target does not support a stack size of :samp:`{size}`.
@@ -1862,7 +1862,7 @@ A few of the ``dg-require`` directives take arguments.
 :samp:`dg-require-visibility {vis}`
   Skip the test if the target does not support the ``visibility`` attribute.
   If :samp:`{vis}` is ``""``, support for ``visibility("hidden")`` is
-  checked, for ``visibility(" :samp:`{vis}` ")`` otherwise.
+  checked, for ``visibility("vis")`` otherwise.
 
   The original ``dg-require`` directives were defined before there
 was support for effective-target keywords.  The directives that do not
@@ -1993,7 +1993,7 @@ Scan the assembly output
 
   .. code-block:: c++
 
-    :samp:`{prefix}` :samp:`{fn}` :  [{ target/xfail :samp:`{selector}` }]
+    prefix fn:  [{ target/xfail selector }]
 
   Subsequent lines of the expected output also start with :samp:`{prefix}`.
   In both cases, whitespace after :samp:`{prefix}` is not significant.
@@ -2056,7 +2056,7 @@ Scan the assembly output
 
   .. code-block:: c++
 
-    :samp:`{prefix}` ...
+    prefix ...
 
   stands for zero or more unmatched lines; the whitespace after
   :samp:`{prefix}` is again not significant.

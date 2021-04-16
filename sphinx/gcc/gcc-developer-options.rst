@@ -861,8 +861,8 @@ The files are created in the directory of the output file.
 
   .. code-block:: c++
 
-    0.12 0.01 cc1 :samp:`{options}`
-    0.00 0.01 as :samp:`{options}`
+    0.12 0.01 cc1 options
+    0.00 0.01 as options
 
   The 'user time' and the 'system time' are moved before the program
   name, and the options passed to the program are displayed, so that one
@@ -1088,7 +1088,7 @@ The files are created in the directory of the output file.
 
   .. code-block:: bash
 
-    gcc -nostdlib :samp:`{files}`... `gcc -print-libgcc-file-name`
+    gcc -nostdlib files... `gcc -print-libgcc-file-name`
 
 .. option:: -print-search-dirs
 

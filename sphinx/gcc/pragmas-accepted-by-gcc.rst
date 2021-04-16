@@ -48,7 +48,7 @@ target function attributes.  They can be specified as below:
 
   #pragma GCC target("string")
 
-where ``:samp:`{string}``` can be any string accepted as an AArch64 target
+where ``string`` can be any string accepted as an AArch64 target
 attribute.  See :ref:`aarch64-function-attributes`, for more details
 on the permissible values of ``string``.
 
@@ -383,20 +383,20 @@ members of structures (other than zero-width bit-fields), unions, and
 classes subsequently defined. The :samp:`{n}` value below always is required
 to be a small power of two and specifies the new alignment in bytes.
 
-* ``#pragma pack( :samp:`{n}` )`` simply sets the new alignment.
+* ``#pragma pack(n)`` simply sets the new alignment.
 
 * ``#pragma pack()`` sets the alignment to the one that was in
   effect when compilation started (see also command-line option
   :option:`-fpack-struct[`:samp:`={n}` ] see :ref:`code-gen-options`).
 
-* ``#pragma pack(push[, :samp:`{n}` ])`` pushes the current alignment
+* ``#pragma pack(push[,n])`` pushes the current alignment
   setting on an internal stack and then optionally sets the new alignment.
 
 * ``#pragma pack(pop)`` restores the alignment setting to the one
   saved at the top of the internal stack (and removes that stack entry).
-  Note that ``#pragma pack([ :samp:`{n}` ])`` does not influence this internal
+  Note that ``#pragma pack([n])`` does not influence this internal
   stack; thus it is possible to have ``#pragma pack(push)`` followed by
-  multiple ``#pragma pack( :samp:`{n}` )`` instances and finalized by a single
+  multiple ``#pragma pack(n)`` instances and finalized by a single
   ``#pragma pack(pop)``.
 
 Some targets, e.g. x86 and PowerPC, support the ``#pragma ms_struct``

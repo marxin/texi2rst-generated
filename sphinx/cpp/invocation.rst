@@ -582,11 +582,11 @@ options may *not* be grouped: :option:`-dM` is very different from
   :option:`--sysroot` and :option:`-isysroot`.
 
   Directories specified with :option:`-iquote` apply only to the quote 
-  form of the directive, ``#include " :samp:`{file}` "``.
+  form of the directive, ``#include "file"``.
   Directories specified with :option:`-I` , :option:`-isystem` , 
   or :option:`-idirafter` apply to lookup for both the
-  ``#include " :samp:`{file}` "`` and
-  ``#include < :samp:`{file}` >`` directives.
+  ``#include "file"`` and
+  ``#include <file>`` directives.
 
   You can specify any number or combination of these options on the 
   command line to search for header files in several directories.  
@@ -642,14 +642,14 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   Any directories specified with :option:`-I`
   options before :option:`-I-` are searched only for headers requested with
-  ``#include " :samp:`{file}` "``; they are not searched for
-  ``#include < :samp:`{file}` >``.  If additional directories are
+  ``#include "file"``; they are not searched for
+  ``#include <file>``.  If additional directories are
   specified with :option:`-I` options after the :option:`-I-` , those
   directories are searched for all :samp:`#include` directives.
 
   In addition, :option:`-I-` inhibits the use of the directory of the current
   file directory as the first search directory for ``#include
-  " :samp:`{file}` "``.  There is no way to override this effect of :option:`-I-`.
+  "file"``.  There is no way to override this effect of :option:`-I-`.
   See :ref:`search-path`.
 
 .. option:: -iprefix prefix, -iprefix

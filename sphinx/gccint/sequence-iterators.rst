@@ -16,7 +16,7 @@ a typical use of gimple sequence iterators:
   for (gsi = gsi_start (seq); !gsi_end_p (gsi); gsi_next (&gsi))
     {
       gimple g = gsi_stmt (gsi);
-      /* Do something with gimple statement ``G``.  */
+      /* Do something with gimple statement G.  */
     }
 
 Backward iterations are possible:

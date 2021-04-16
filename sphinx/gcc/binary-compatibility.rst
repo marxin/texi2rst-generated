@@ -129,7 +129,7 @@ different C++ compiler needs to include
 
 .. code-block:: c++
 
-      -I :samp:`{gcc_install_directory}` /include/c++/3.3
+      -Igcc_install_directory/include/c++/3.3
 
 Similarly, compiling code with G++ that must use a C++ library other
 than the GNU C++ library requires specifying the location of the header

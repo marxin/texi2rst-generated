@@ -68,8 +68,8 @@ Expressions are classified by :dfn:`expression codes` (also called RTX
 codes).  The expression code is a name defined in rtl.def, which is
 also (in uppercase) a C enumeration constant.  The possible expression
 codes and their meanings are machine-independent.  The code of an RTX can
-be extracted with the macro ``GET_CODE ( :samp:`{x}` )`` and altered with
-``PUT_CODE ( :samp:`{x}` , :samp:`{newcode}` )``.
+be extracted with the macro ``GET_CODE (x)`` and altered with
+``PUT_CODE (x, newcode)``.
 
 The expression code determines how many operands the expression contains,
 and what kinds of objects they are.  In RTL, unlike Lisp, you cannot tell

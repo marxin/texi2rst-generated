@@ -364,7 +364,7 @@ Warning Options.
 .. option:: -fpch-preprocess
 
   This option allows use of a precompiled header (see :ref:`precompiled-headers`) together with :option:`-E`.  It inserts a special ``#pragma``,
-  ``#pragma GCC pch_preprocess " :samp:`{filename}` "`` in the output to mark
+  ``#pragma GCC pch_preprocess "filename"`` in the output to mark
   the place where the precompiled header was found, and its :samp:`{filename}`.
   When :option:`-fpreprocessed` is in use, GCC recognizes this ``#pragma``
   and loads the PCH.

@@ -374,7 +374,7 @@ Here is how to do this:
 
 .. code-block:: c++
 
-  ``(*targetm.asm_out.internal_label)`` ( :samp:`{file}` , "LC", :samp:`{labelno}` );
+  (*targetm.asm_out.internal_label) (file, "LC", labelno);
 
 When you output a pool entry specially, you should end with a
 ``goto`` to the label :samp:`{jumpto}`.  This will prevent the same pool
@@ -469,7 +469,7 @@ equal to any other, and because some object formats cannot even express
 the concept of a zero-sized common symbol, as that is how they represent
 an ordinary undefined external.
 
-Use the expression ``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to
+Use the expression ``assemble_name (stream, name)`` to
 output the name itself; before and after that, output the additional
 assembler syntax for defining the name, and a newline.
 
@@ -502,7 +502,7 @@ is the alignment specified as the number of bits.
 
 Try to use function ``asm_output_aligned_bss`` defined in file
 varasm.c when defining this macro.  If unable, use the expression
-``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to output the name itself;
+``assemble_name (stream, name)`` to output the name itself;
 before and after that, output the additional assembler syntax for defining
 the name, and a newline.
 
@@ -524,7 +524,7 @@ MacroASM_OUTPUT_LOCAL(:samp:`{stream}`,:samp:`{name}`,:samp:`{size}`,:samp:`{rou
 :samp:`{name}` whose size is :samp:`{size}` bytes.  The variable :samp:`{rounded}`
 is the size rounded up to whatever alignment the caller wants.
 
-Use the expression ``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to
+Use the expression ``assemble_name (stream, name)`` to
 output the name itself; before and after that, output the additional
 assembler syntax for defining the name, and a newline.
 
@@ -563,7 +563,7 @@ This is about outputting labels.
 
 MacroASM_OUTPUT_LABEL(:samp:`{stream}`,:samp:`{name}`)A C statement (sans semicolon) to output to the stdio stream
 :samp:`{stream}` the assembler definition of a label named :samp:`{name}`.
-Use the expression ``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to
+Use the expression ``assemble_name (stream, name)`` to
 output the name itself; before and after that, output the additional
 assembler syntax for defining the name, and a newline.  A default
 definition of this macro is provided which is correct for most systems.
@@ -573,7 +573,7 @@ definition of this macro is provided which is correct for most systems.
 MacroASM_OUTPUT_FUNCTION_LABEL(:samp:`{stream}`,:samp:`{name}`,:samp:`{decl}`)A C statement (sans semicolon) to output to the stdio stream
 :samp:`{stream}` the assembler definition of a label named :samp:`{name}` of
 a function.
-Use the expression ``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to
+Use the expression ``assemble_name (stream, name)`` to
 output the name itself; before and after that, output the additional
 assembler syntax for defining the name, and a newline.  A default
 definition of this macro is provided which is correct for most systems.
@@ -811,7 +811,7 @@ MacroASM_WEAKEN_LABEL(:samp:`{stream}`,:samp:`{name}`)A C statement (sans semico
 :samp:`{stream}` some commands that will make the label :samp:`{name}` weak;
 that is, available for reference from other files but only used if
 no other definition is available.  Use the expression
-``assemble_name ( :samp:`{stream}` , :samp:`{name}` )`` to output the name
+``assemble_name (stream, name)`` to output the name
 itself; before and after that, output the additional assembler syntax
 for making that name weak, and a newline.
 
@@ -1164,7 +1164,7 @@ program is linked by the :command:`gcc` driver like this:
 
 .. code-block:: c++
 
-  ld -o :samp:`{output_file}` crti.o crtbegin.o ... -lgcc crtend.o crtn.o
+  ld -o output_file crti.o crtbegin.o ... -lgcc crtend.o crtn.o
 
 The prologue of a function (``__init``) appears in the ``.init``
 section of crti.o; the epilogue appears in crtn.o.  Likewise
@@ -1583,7 +1583,7 @@ If this macro is defined, you may use constructs of the form
 
 .. code-block:: c++
 
-  :samp:`{option0|option1|option2...}`
+  {option0|option1|option2...}
 
 in the output templates of patterns (see :ref:`output-template`) or in the
 first argument of ``asm_fprintf``.  This construct outputs
@@ -1642,8 +1642,8 @@ way here.  For example,
 
 .. code-block:: c++
 
-  fprintf ( :samp:`{stream}` , "\t.word L%d-L%d\n",
-           :samp:`{value}` , :samp:`{rel}` )
+  fprintf (stream, "\t.word L%d-L%d\n",
+           value, rel)
 
 You must provide this macro on machines where the addresses in a
 dispatch table are relative to the table's own address.  If defined, GCC
@@ -1664,7 +1664,7 @@ For example,
 
 .. code-block:: c++
 
-  fprintf ( :samp:`{stream}` , "\t.word L%d\n", :samp:`{value}` )
+  fprintf (stream, "\t.word L%d\n", value)
 
 .. index:: ASM_OUTPUT_CASE_LABEL
 

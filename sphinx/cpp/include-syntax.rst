@@ -17,7 +17,7 @@ directive :samp:`#include`.  It has two variants:
   This variant is used for header files of your own program.  It
   searches for a file named :samp:`{file}` first in the directory containing
   the current file, then in the quote directories and then the same
-  directories used for ``< :samp:`{file}` >``.  You can prepend directories
+  directories used for ``<file>``.  You can prepend directories
   to the list of quote directories with the :option:`-iquote` option.
 
   The argument of :samp:`#include`, whether delimited with quote marks or

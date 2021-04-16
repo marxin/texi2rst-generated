@@ -31,7 +31,7 @@ tokens together.  See :ref:`concatenation`.  For example,
   #define foo() bar
   foo()baz
        → bar baz
-  *not*
+  not
        → barbaz
 
 The compiler does not re-tokenize the preprocessor's output.  Each

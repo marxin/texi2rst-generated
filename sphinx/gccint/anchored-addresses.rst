@@ -55,7 +55,7 @@ value is 0.
   Write the assembly code to define section anchor :samp:`{x}` , which is a
   ``SYMBOL_REF`` for which :samp:`SYMBOL_REF_ANCHOR_P ( :samp:`{x}` )` is true.
   The hook is called with the assembly output position set to the beginning
-  of ``SYMBOL_REF_BLOCK ( :samp:`{x}` )``.
+  of ``SYMBOL_REF_BLOCK (x)``.
 
   If ``ASM_OUTPUT_DEF`` is available, the hook's default definition uses
   it to define the symbol as :samp:`. + SYMBOL_REF_BLOCK_OFFSET ( :samp:`{x}` )`.

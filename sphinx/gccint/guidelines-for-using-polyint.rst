@@ -47,10 +47,10 @@ situations, a reasonable fallback is:
 
 .. code-block:: c++
 
-  if ( :samp:`{poly_value}`.is_constant (& :samp:`{const_value}` ))
+  if (poly_value.is_constant (&const_value))
     {
       ...
-      /* Operate on :samp:`{const_value}`.  */
+      /* Operate on const_value.  */
       ...
     }
   else

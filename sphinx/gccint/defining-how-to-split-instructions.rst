@@ -42,12 +42,12 @@ complex insn into several simpler insns.  It looks like this:
 .. code-block:: c++
 
   (define_split
-    [ :samp:`{insn-pattern}` ]
-    " :samp:`{condition}` "
-    [ :samp:`{new-insn-pattern-1}`
-     :samp:`{new-insn-pattern-2}`
+    [insn-pattern]
+    "condition"
+    [new-insn-pattern-1
+     new-insn-pattern-2
      ...]
-    " :samp:`{preparation-statements}` ")
+    "preparation-statements")
 
 :samp:`{insn-pattern}` is a pattern that needs to be split and
 :samp:`{condition}` is the final condition to be tested, as in a
@@ -216,15 +216,15 @@ this:
 .. code-block:: c++
 
   (define_insn_and_split
-    [ :samp:`{insn-pattern}` ]
-    " :samp:`{condition}` "
-    " :samp:`{output-template}` "
-    " :samp:`{split-condition}` "
-    [ :samp:`{new-insn-pattern-1}`
-     :samp:`{new-insn-pattern-2}`
+    [insn-pattern]
+    "condition"
+    "output-template"
+    "split-condition"
+    [new-insn-pattern-1
+     new-insn-pattern-2
      ...]
-    " :samp:`{preparation-statements}` "
-    [ :samp:`{insn-attributes}` ])
+    "preparation-statements"
+    [insn-attributes])
 
 :samp:`{insn-pattern}` , :samp:`{condition}` , :samp:`{output-template}` , and
 :samp:`{insn-attributes}` are used as in ``define_insn``.  The
@@ -278,12 +278,12 @@ The arguments are otherwise identical to ``define_insn_and_split``:
 .. code-block:: c++
 
   (define_insn_and_rewrite
-    [ :samp:`{insn-pattern}` ]
-    " :samp:`{condition}` "
-    " :samp:`{output-template}` "
-    " :samp:`{split-condition}` "
-    " :samp:`{preparation-statements}` "
-    [ :samp:`{insn-attributes}` ])
+    [insn-pattern]
+    "condition"
+    "output-template"
+    "split-condition"
+    "preparation-statements"
+    [insn-attributes])
 
 The ``match_dup``s and ``match_op_dup``s in the new
 instruction pattern use any new operand values that the

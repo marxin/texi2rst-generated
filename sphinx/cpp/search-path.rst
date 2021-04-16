@@ -4,14 +4,14 @@ Search Path
 ***********
 
 By default, the preprocessor looks for header files included by the quote
-form of the directive ``#include " :samp:`{file}` "`` first relative to
+form of the directive ``#include "file"`` first relative to
 the directory of the current file, and then in a preconfigured list 
 of standard system directories.  
 For example, if /usr/include/sys/stat.h contains
 ``#include "types.h"``, GCC looks for types.h first in
 /usr/include/sys, then in its usual search path.
 
-For the angle-bracket form ``#include < :samp:`{file}` >``, the
+For the angle-bracket form ``#include <file>``, the
 preprocessor's default behavior is to look only in the standard system
 directories.  The exact search directory list depends on the target
 system, how GCC is configured, and where it is installed.  You can

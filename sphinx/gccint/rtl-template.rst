@@ -78,7 +78,7 @@ substitution of the operands.
 
   .. code-block:: c++
 
-    (match_operand: :samp:`{m}` :samp:`{n}` "scratch_operand" :samp:`{constraint}` )
+    (match_operand:m n "scratch_operand" constraint)
 
   but, when generating RTL, it produces a (``scratch``: :samp:`{m}` )
   expression.
@@ -153,7 +153,7 @@ substitution of the operands.
       [(match_operand:SI 1 "general_operand" "g")
        (match_operand:SI 2 "general_operand" "g")])
 
-  Here the vector ``[ :samp:`{operands}`...]`` contains two patterns
+  Here the vector ``[operands...]`` contains two patterns
   because the expressions to be matched all contain two operands.
 
   When this pattern does match, the two operands of the commutative

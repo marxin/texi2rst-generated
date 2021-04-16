@@ -21,7 +21,7 @@ type to objects with a declared type as required for C++.
   an lvalue having a type that is not a character type, then the
   type of the lvalue becomes the effective type of the object for that
   access and for subsequent accesses that do not modify the stored value.
-  If a value is copied into an object using ``memcpy`` or ``memmove``,
+  If a value is copied into an object using memcpy or memmove,
   or is copied as an array of character type, then the effective type
   of the modified object for that access and for subsequent accesses that
   do not modify the value is undetermined.  For all other accesses to an

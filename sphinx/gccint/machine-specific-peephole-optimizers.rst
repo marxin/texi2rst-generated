@@ -44,12 +44,12 @@ A definition looks like this:
 .. code-block:: c++
 
   (define_peephole
-    [ :samp:`{insn-pattern-1}`
-     :samp:`{insn-pattern-2}`
+    [insn-pattern-1
+     insn-pattern-2
      ...]
-    " :samp:`{condition}` "
-    " :samp:`{template}` "
-    " :samp:`{optional-insn-attributes}` ")
+    "condition"
+    "template"
+    "optional-insn-attributes")
 
 The last string operand may be omitted if you are not using any
 machine-specific information in this machine description.  If present,
@@ -99,8 +99,8 @@ the operands.
 .. index:: prev_active_insn
 
 The way to refer to the operands in :samp:`{condition}` is to write
-``operands[ :samp:`{i}` ]`` for operand number :samp:`{i}` (as matched by
-``(match_operand :samp:`{i}` ...)``).  Use the variable ``insn``
+``operands[i]`` for operand number :samp:`{i}` (as matched by
+``(match_operand i ...)``).  Use the variable ``insn``
 to refer to the last of the insns being matched; use
 ``prev_active_insn`` to find the preceding insns.
 
@@ -108,11 +108,11 @@ to refer to the last of the insns being matched; use
 
 When optimizing computations with intermediate results, you can use
 :samp:`{condition}` to match only when the intermediate results are not used
-elsewhere.  Use the C expression ``dead_or_set_p ( :samp:`{insn}` ,
-:samp:`{op}` )``, where :samp:`{insn}` is the insn in which you expect the value
+elsewhere.  Use the C expression ``dead_or_set_p (insn,
+op)``, where :samp:`{insn}` is the insn in which you expect the value
 to be used for the last time (from the value of ``insn``, together
 with use of ``prev_nonnote_insn``), and :samp:`{op}` is the intermediate
-value (from ``operands[ :samp:`{i}` ]``).
+value (from ``operands[i]``).
 
 Applying the optimization means replacing the sequence of insns with one
 new insn.  The :samp:`{template}` controls ultimate output of assembler code
@@ -231,14 +231,14 @@ lifetimes must be.
 .. code-block:: c++
 
   (define_peephole2
-    [ :samp:`{insn-pattern-1}`
-     :samp:`{insn-pattern-2}`
+    [insn-pattern-1
+     insn-pattern-2
      ...]
-    " :samp:`{condition}` "
-    [ :samp:`{new-insn-pattern-1}`
-     :samp:`{new-insn-pattern-2}`
+    "condition"
+    [new-insn-pattern-1
+     new-insn-pattern-2
      ...]
-    " :samp:`{preparation-statements}` ")
+    "preparation-statements")
 
 The definition is almost identical to ``define_split``
 (see :ref:`insn-splitting`) except that the pattern to match is not a
