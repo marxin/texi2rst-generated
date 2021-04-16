@@ -237,14 +237,14 @@ The following attributes are supported on most targets.
 
   .. index:: common variable attribute
 
-.. index:: nocommon variable attribute
+  .. index:: nocommon variable attribute
 
-The ``common`` attribute requests GCC to place a variable in
-'common' storage.  The ``nocommon`` attribute requests the
-opposite-to allocate space for it directly.
+  The ``common`` attribute requests GCC to place a variable in
+  'common' storage.  The ``nocommon`` attribute requests the
+  opposite-to allocate space for it directly.
 
-These attributes override the default chosen by the
-:option:`-fno-common` and :option:`-fcommon` flags respectively.
+  These attributes override the default chosen by the
+  :option:`-fno-common` and :option:`-fcommon` flags respectively.
 
 ``copy`` :samp:`copy ({variable})`
 

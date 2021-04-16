@@ -1,4 +1,4 @@
-  .. _instrumentation-options:
+.. _instrumentation-options:
 
 Program Instrumentation Options
 *******************************
@@ -42,9 +42,9 @@ program analysis purposes.
   the source files you want data about, and you must also use it when
   linking.
 
-You can use the function attribute ``no_instrument_function`` to
-suppress profiling of individual functions when compiling with these options.
-See :ref:`common-function-attributes`.
+  You can use the function attribute ``no_instrument_function`` to
+  suppress profiling of individual functions when compiling with these options.
+  See :ref:`common-function-attributes`.
 
 .. option:: -fprofile-arcs
 
@@ -55,19 +55,19 @@ See :ref:`common-function-attributes`.
   destructors and C++ constructors (and destructors) of classes which are used
   as a type of a global variable.
 
-When the compiled
-program exits it saves this data to a file called
-:samp:`{auxname}`.gcda for each source file.  The data may be used for
-profile-directed optimizations ( :option:`-fbranch-probabilities` ), or for
-test coverage analysis ( :option:`-ftest-coverage` ).  Each object file's
-:samp:`{auxname}` is generated from the name of the output file, if
-explicitly specified and it is not the final executable, otherwise it is
-the basename of the source file.  In both cases any suffix is removed
-(e.g. foo.gcda for input file dir/foo.c, or
-dir/foo.gcda for output file specified as :option:`-o dir/foo.o` ).
-See :ref:`cross-profiling`.
+  When the compiled
+  program exits it saves this data to a file called
+  :samp:`{auxname}`.gcda for each source file.  The data may be used for
+  profile-directed optimizations ( :option:`-fbranch-probabilities` ), or for
+  test coverage analysis ( :option:`-ftest-coverage` ).  Each object file's
+  :samp:`{auxname}` is generated from the name of the output file, if
+  explicitly specified and it is not the final executable, otherwise it is
+  the basename of the source file.  In both cases any suffix is removed
+  (e.g. foo.gcda for input file dir/foo.c, or
+  dir/foo.gcda for output file specified as :option:`-o dir/foo.o` ).
+  See :ref:`cross-profiling`.
 
-.. index:: gcov
+  .. index:: gcov
 
 .. option:: --coverage, -coverage
 
@@ -76,42 +76,42 @@ See :ref:`cross-profiling`.
   :option:`-ftest-coverage` (when compiling) and :option:`-lgcov` (when
   linking).  See the documentation for those options for more details.
 
-** Compile the source files with :option:`-fprofile-arcs` plus optimization
-  and code generation options.  For test coverage analysis, use the
-  additional :option:`-ftest-coverage` option.  You do not need to profile
-  every source file in a program.
+  ** Compile the source files with :option:`-fprofile-arcs` plus optimization
+    and code generation options.  For test coverage analysis, use the
+    additional :option:`-ftest-coverage` option.  You do not need to profile
+    every source file in a program.
 
-* Compile the source files additionally with :option:`-fprofile-abs-path`
-  to create absolute path names in the .gcno files.  This allows
-  :command:`gcov` to find the correct sources in projects where compilations
-  occur with different working directories.
+  * Compile the source files additionally with :option:`-fprofile-abs-path`
+    to create absolute path names in the .gcno files.  This allows
+    :command:`gcov` to find the correct sources in projects where compilations
+    occur with different working directories.
 
-* Link your object files with :option:`-lgcov` or :option:`-fprofile-arcs`
-  (the latter implies the former).
+  * Link your object files with :option:`-lgcov` or :option:`-fprofile-arcs`
+    (the latter implies the former).
 
-* Run the program on a representative workload to generate the arc profile
-  information.  This may be repeated any number of times.  You can run
-  concurrent instances of your program, and provided that the file system
-  supports locking, the data files will be correctly updated.  Unless
-  a strict ISO C dialect option is in effect, ``fork`` calls are
-  detected and correctly handled without double counting.
+  * Run the program on a representative workload to generate the arc profile
+    information.  This may be repeated any number of times.  You can run
+    concurrent instances of your program, and provided that the file system
+    supports locking, the data files will be correctly updated.  Unless
+    a strict ISO C dialect option is in effect, ``fork`` calls are
+    detected and correctly handled without double counting.
 
-* For profile-directed optimizations, compile the source files again with
-  the same optimization and code generation options plus
-  :option:`-fbranch-probabilities` (see :ref:`Options that
-  Control Optimization <optimize-options>`).
+  * For profile-directed optimizations, compile the source files again with
+    the same optimization and code generation options plus
+    :option:`-fbranch-probabilities` (see :ref:`Options that
+    Control Optimization <optimize-options>`).
 
-* For test coverage analysis, use :command:`gcov` to produce human readable
-  information from the .gcno and .gcda files.  Refer to the
-  :command:`gcov` documentation for further information.
+  * For test coverage analysis, use :command:`gcov` to produce human readable
+    information from the .gcno and .gcda files.  Refer to the
+    :command:`gcov` documentation for further information.
 
-With :option:`-fprofile-arcs` , for each function of your program GCC
-creates a program flow graph, then finds a spanning tree for the graph.
-Only arcs that are not on the spanning tree have to be instrumented: the
-compiler adds code to count the number of times that these arcs are
-executed.  When an arc is the only exit or only entrance to a block, the
-instrumentation code can be added to the block; otherwise, a new basic
-block must be created to hold the instrumentation code.
+  With :option:`-fprofile-arcs` , for each function of your program GCC
+  creates a program flow graph, then finds a spanning tree for the graph.
+  Only arcs that are not on the spanning tree have to be instrumented: the
+  compiler adds code to count the number of times that these arcs are
+  executed.  When an arc is the only exit or only entrance to a block, the
+  instrumentation code can be added to the block; otherwise, a new basic
+  block must be created to hold the instrumentation code.
 
 .. option:: -ftest-coverage
 
@@ -144,15 +144,15 @@ block must be created to hold the instrumentation code.
   :samp:`{sourcename}`.gcda file and use it as the file name of a
   .gcda file.  See similar option :option:`-fprofile-note`.
 
-When an executable is run in a massive parallel environment, it is recommended
-to save profile to different folders.  That can be done with variables
-in :samp:`{path}` that are exported during run-time:
+  When an executable is run in a massive parallel environment, it is recommended
+  to save profile to different folders.  That can be done with variables
+  in :samp:`{path}` that are exported during run-time:
 
-``%p``
-  process ID.
+  ``%p``
+    process ID.
 
-``%q{VAR}``
-  value of environment variable :samp:`{VAR}`
+  ``%q{VAR}``
+    value of environment variable :samp:`{VAR}`
 
 .. option:: -fprofile-generate
 
@@ -161,15 +161,15 @@ in :samp:`{path}` that are exported during run-time:
   optimization.  You must use :option:`-fprofile-generate` both when
   compiling and when linking your program.
 
-The following options are enabled:
-:option:`-fprofile-arcs` , :option:`-fprofile-values` ,
-:option:`-finline-functions` , and :option:`-fipa-bit-cp`.
+  The following options are enabled:
+  :option:`-fprofile-arcs` , :option:`-fprofile-values` ,
+  :option:`-finline-functions` , and :option:`-fipa-bit-cp`.
 
-If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
-the profile feedback data files. See :option:`-fprofile-dir`.
+  If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
+  the profile feedback data files. See :option:`-fprofile-dir`.
 
-To optimize the program based on the collected profile information, use
-:option:`-fprofile-use`.  See :ref:`optimize-options`, for more information.
+  To optimize the program based on the collected profile information, use
+  :option:`-fprofile-use`.  See :ref:`optimize-options`, for more information.
 
 .. option:: -fprofile-info-section
 
@@ -188,14 +188,14 @@ To optimize the program based on the collected profile information, use
   in this linker set during program termination to a serial line for example.  A
   GNU linker script example which defines a linker output section follows:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    .gcov_info      :
-    {
-      PROVIDE (__gcov_info_start = .);
-      KEEP (*(.gcov_info))
-      PROVIDE (__gcov_info_end = .);
-    }
+      .gcov_info      :
+      {
+        PROVIDE (__gcov_info_start = .);
+        KEEP (*(.gcov_info))
+        PROVIDE (__gcov_info_end = .);
+      }
 
 .. option:: -fprofile-note=path
 
@@ -225,29 +225,29 @@ To optimize the program based on the collected profile information, use
   The first one is useful for single-threaded applications,
   while the second one prevents profile corruption by emitting thread-safe code.
 
-Warning: When an application does not properly join all threads
-(or creates an detached thread), a profile file can be still corrupted.
+  Warning: When an application does not properly join all threads
+  (or creates an detached thread), a profile file can be still corrupted.
 
-Using :samp:`prefer-atomic` would be transformed either to :samp:`atomic`,
-when supported by a target, or to :samp:`single` otherwise.  The GCC driver
-automatically selects :samp:`prefer-atomic` when :option:`-pthread`
-is present in the command line.
+  Using :samp:`prefer-atomic` would be transformed either to :samp:`atomic`,
+  when supported by a target, or to :samp:`single` otherwise.  The GCC driver
+  automatically selects :samp:`prefer-atomic` when :option:`-pthread`
+  is present in the command line.
 
 .. option:: -fprofile-filter-files=regex
 
   Instrument only functions from files whose name matches
   any of the regular expressions (separated by semi-colons).
 
-For example, :option:`-fprofile-filter-files=main\.c;module.*\.c` will instrument
-only main.c and all C files starting with 'module'.
+  For example, :option:`-fprofile-filter-files=main\.c;module.*\.c` will instrument
+  only main.c and all C files starting with 'module'.
 
 .. option:: -fprofile-exclude-files=regex
 
   Instrument only functions from files whose name does not match
   any of the regular expressions (separated by semi-colons).
 
-For example, :option:`-fprofile-exclude-files=/usr/.*` will prevent instrumentation
-of all files that are located in the /usr/ folder.
+  For example, :option:`-fprofile-exclude-files=/usr/.*` will prevent instrumentation
+  of all files that are located in the /usr/ folder.
 
 .. option:: -fprofile-reproducible=[multithreaded|parallel-runs|serial]
 
@@ -256,27 +256,27 @@ of all files that are located in the /usr/ folder.
   with same outcome which is useful, for example, for distribution
   packages.
 
-With :option:`-fprofile-reproducible=serial` the profile gathered by
-:option:`-fprofile-generate` is reproducible provided the trained program
-behaves the same at each invocation of the train run, it is not
-multi-threaded and profile data streaming is always done in the same
-order.  Note that profile streaming happens at the end of program run but
-also before ``fork`` function is invoked.
+  With :option:`-fprofile-reproducible=serial` the profile gathered by
+  :option:`-fprofile-generate` is reproducible provided the trained program
+  behaves the same at each invocation of the train run, it is not
+  multi-threaded and profile data streaming is always done in the same
+  order.  Note that profile streaming happens at the end of program run but
+  also before ``fork`` function is invoked.
 
-Note that it is quite common that execution counts of some part of
-programs depends, for example, on length of temporary file names or
-memory space randomization (that may affect hash-table collision rate).
-Such non-reproducible part of programs may be annotated by
-``no_instrument_function`` function attribute. :command:`gcov-dump` with
-:option:`-l` can be used to dump gathered data and verify that they are
-indeed reproducible.
+  Note that it is quite common that execution counts of some part of
+  programs depends, for example, on length of temporary file names or
+  memory space randomization (that may affect hash-table collision rate).
+  Such non-reproducible part of programs may be annotated by
+  ``no_instrument_function`` function attribute. :command:`gcov-dump` with
+  :option:`-l` can be used to dump gathered data and verify that they are
+  indeed reproducible.
 
-With :option:`-fprofile-reproducible=parallel-runs` collected profile
-stays reproducible regardless the order of streaming of the data into
-gcda files.  This setting makes it possible to run multiple instances of
-instrumented program in parallel (such as with ``make -j``). This
-reduces quality of gathered data, in particular of indirect call
-profiling.
+  With :option:`-fprofile-reproducible=parallel-runs` collected profile
+  stays reproducible regardless the order of streaming of the data into
+  gcda files.  This setting makes it possible to run multiple instances of
+  instrumented program in parallel (such as with ``make -j``). This
+  reduces quality of gathered data, in particular of indirect call
+  profiling.
 
 .. option:: -fsanitize=address
 
@@ -324,12 +324,12 @@ profiling.
   These differences are to avoid hwasan library initialization calls and to
   account for the stack pointer having a different value in its top byte.
 
-*Note:* This option has different defaults to the :option:`-fsanitize=hwaddress`.
-Instrumenting the stack and alloca calls are not on by default but are still
-possible by specifying the command-line options
-:option:`--param hwasan-instrument-stack=1` and
-:option:`--param hwasan-instrument-allocas=1` respectively. Using a random frame
-tag is not implemented for kernel instrumentation.
+  *Note:* This option has different defaults to the :option:`-fsanitize=hwaddress`.
+  Instrumenting the stack and alloca calls are not on by default but are still
+  possible by specifying the command-line options
+  :option:`--param hwasan-instrument-stack=1` and
+  :option:`--param hwasan-instrument-allocas=1` respectively. Using a random frame
+  tag is not implemented for kernel instrumentation.
 
 .. option:: -fsanitize=pointer-compare
 
@@ -365,9 +365,9 @@ tag is not implemented for kernel instrumentation.
   The option cannot be combined with :option:`-fsanitize=address` ,
   :option:`-fsanitize=leak`.
 
-Note that sanitized atomic builtins cannot throw exceptions when
-operating on invalid memory addresses with non-call exceptions
-( :option:`-fnon-call-exceptions` ).
+  Note that sanitized atomic builtins cannot throw exceptions when
+  operating on invalid memory addresses with non-call exceptions
+  ( :option:`-fnon-call-exceptions` ).
 
 .. option:: -fsanitize=leak
 
@@ -386,155 +386,155 @@ operating on invalid memory addresses with non-call exceptions
   Various computations are instrumented to detect undefined behavior
   at runtime.  Current suboptions are:
 
-.. option:: -fsanitize=shift
+  .. option:: -fsanitize=shift
 
-  This option enables checking that the result of a shift operation is
-  not undefined.  Note that what exactly is considered undefined differs
-  slightly between C and C++, as well as between ISO C90 and C99, etc.
-  This option has two suboptions, :option:`-fsanitize=shift-base` and
-  :option:`-fsanitize=shift-exponent`.
+    This option enables checking that the result of a shift operation is
+    not undefined.  Note that what exactly is considered undefined differs
+    slightly between C and C++, as well as between ISO C90 and C99, etc.
+    This option has two suboptions, :option:`-fsanitize=shift-base` and
+    :option:`-fsanitize=shift-exponent`.
 
-.. option:: -fsanitize=shift-exponent
+  .. option:: -fsanitize=shift-exponent
 
-  This option enables checking that the second argument of a shift operation
-  is not negative and is smaller than the precision of the promoted first
-  argument.
+    This option enables checking that the second argument of a shift operation
+    is not negative and is smaller than the precision of the promoted first
+    argument.
 
-.. option:: -fsanitize=shift-base
+  .. option:: -fsanitize=shift-base
 
-  If the second argument of a shift operation is within range, check that the
-  result of a shift operation is not undefined.  Note that what exactly is
-  considered undefined differs slightly between C and C++, as well as between
-  ISO C90 and C99, etc.
+    If the second argument of a shift operation is within range, check that the
+    result of a shift operation is not undefined.  Note that what exactly is
+    considered undefined differs slightly between C and C++, as well as between
+    ISO C90 and C99, etc.
 
-.. option:: -fsanitize=integer-divide-by-zero
+  .. option:: -fsanitize=integer-divide-by-zero
 
-  Detect integer division by zero as well as ``INT_MIN / -1`` division.
+    Detect integer division by zero as well as ``INT_MIN / -1`` division.
 
-.. option:: -fsanitize=unreachable
+  .. option:: -fsanitize=unreachable
 
-  With this option, the compiler turns the ``__builtin_unreachable``
-  call into a diagnostics message call instead.  When reaching the
-  ``__builtin_unreachable`` call, the behavior is undefined.
+    With this option, the compiler turns the ``__builtin_unreachable``
+    call into a diagnostics message call instead.  When reaching the
+    ``__builtin_unreachable`` call, the behavior is undefined.
 
-.. option:: -fsanitize=vla-bound
+  .. option:: -fsanitize=vla-bound
 
-  This option instructs the compiler to check that the size of a variable
-  length array is positive.
+    This option instructs the compiler to check that the size of a variable
+    length array is positive.
 
-.. option:: -fsanitize=null
+  .. option:: -fsanitize=null
 
-  This option enables pointer checking.  Particularly, the application
-  built with this option turned on will issue an error message when it
-  tries to dereference a NULL pointer, or if a reference (possibly an
-  rvalue reference) is bound to a NULL pointer, or if a method is invoked
-  on an object pointed by a NULL pointer.
+    This option enables pointer checking.  Particularly, the application
+    built with this option turned on will issue an error message when it
+    tries to dereference a NULL pointer, or if a reference (possibly an
+    rvalue reference) is bound to a NULL pointer, or if a method is invoked
+    on an object pointed by a NULL pointer.
 
-.. option:: -fsanitize=return
+  .. option:: -fsanitize=return
 
-  This option enables return statement checking.  Programs
-  built with this option turned on will issue an error message
-  when the end of a non-void function is reached without actually
-  returning a value.  This option works in C++ only.
+    This option enables return statement checking.  Programs
+    built with this option turned on will issue an error message
+    when the end of a non-void function is reached without actually
+    returning a value.  This option works in C++ only.
 
-.. option:: -fsanitize=signed-integer-overflow
+  .. option:: -fsanitize=signed-integer-overflow
 
-  This option enables signed integer overflow checking.  We check that
-  the result of ``+``, ``*``, and both unary and binary ``-``
-  does not overflow in the signed arithmetics.  Note, integer promotion
-  rules must be taken into account.  That is, the following is not an
-  overflow:
+    This option enables signed integer overflow checking.  We check that
+    the result of ``+``, ``*``, and both unary and binary ``-``
+    does not overflow in the signed arithmetics.  Note, integer promotion
+    rules must be taken into account.  That is, the following is not an
+    overflow:
 
-.. code-block:: c++
+    .. code-block:: c++
 
-  signed char a = SCHAR_MAX;
-  a++;
+      signed char a = SCHAR_MAX;
+      a++;
 
-.. option:: -fsanitize=bounds
+  .. option:: -fsanitize=bounds
 
-  This option enables instrumentation of array bounds.  Various out of bounds
-  accesses are detected.  Flexible array members, flexible array member-like
-  arrays, and initializers of variables with static storage are not instrumented.
+    This option enables instrumentation of array bounds.  Various out of bounds
+    accesses are detected.  Flexible array members, flexible array member-like
+    arrays, and initializers of variables with static storage are not instrumented.
 
-.. option:: -fsanitize=bounds-strict
+  .. option:: -fsanitize=bounds-strict
 
-  This option enables strict instrumentation of array bounds.  Most out of bounds
-  accesses are detected, including flexible array members and flexible array
-  member-like arrays.  Initializers of variables with static storage are not
-  instrumented.
+    This option enables strict instrumentation of array bounds.  Most out of bounds
+    accesses are detected, including flexible array members and flexible array
+    member-like arrays.  Initializers of variables with static storage are not
+    instrumented.
 
-.. option:: -fsanitize=alignment
+  .. option:: -fsanitize=alignment
 
-  This option enables checking of alignment of pointers when they are
-  dereferenced, or when a reference is bound to insufficiently aligned target,
-  or when a method or constructor is invoked on insufficiently aligned object.
+    This option enables checking of alignment of pointers when they are
+    dereferenced, or when a reference is bound to insufficiently aligned target,
+    or when a method or constructor is invoked on insufficiently aligned object.
 
-.. option:: -fsanitize=object-size
+  .. option:: -fsanitize=object-size
 
-  This option enables instrumentation of memory references using the
-  ``__builtin_object_size`` function.  Various out of bounds pointer
-  accesses are detected.
+    This option enables instrumentation of memory references using the
+    ``__builtin_object_size`` function.  Various out of bounds pointer
+    accesses are detected.
 
-.. option:: -fsanitize=float-divide-by-zero
+  .. option:: -fsanitize=float-divide-by-zero
 
-  Detect floating-point division by zero.  Unlike other similar options,
-  :option:`-fsanitize=float-divide-by-zero` is not enabled by
-  :option:`-fsanitize=undefined` , since floating-point division by zero can
-  be a legitimate way of obtaining infinities and NaNs.
+    Detect floating-point division by zero.  Unlike other similar options,
+    :option:`-fsanitize=float-divide-by-zero` is not enabled by
+    :option:`-fsanitize=undefined` , since floating-point division by zero can
+    be a legitimate way of obtaining infinities and NaNs.
 
-.. option:: -fsanitize=float-cast-overflow
+  .. option:: -fsanitize=float-cast-overflow
 
-  This option enables floating-point type to integer conversion checking.
-  We check that the result of the conversion does not overflow.
-  Unlike other similar options, :option:`-fsanitize=float-cast-overflow` is
-  not enabled by :option:`-fsanitize=undefined`.
-  This option does not work well with ``FE_INVALID`` exceptions enabled.
+    This option enables floating-point type to integer conversion checking.
+    We check that the result of the conversion does not overflow.
+    Unlike other similar options, :option:`-fsanitize=float-cast-overflow` is
+    not enabled by :option:`-fsanitize=undefined`.
+    This option does not work well with ``FE_INVALID`` exceptions enabled.
 
-.. option:: -fsanitize=nonnull-attribute
+  .. option:: -fsanitize=nonnull-attribute
 
-  This option enables instrumentation of calls, checking whether null values
-  are not passed to arguments marked as requiring a non-null value by the
-  ``nonnull`` function attribute.
+    This option enables instrumentation of calls, checking whether null values
+    are not passed to arguments marked as requiring a non-null value by the
+    ``nonnull`` function attribute.
 
-.. option:: -fsanitize=returns-nonnull-attribute
+  .. option:: -fsanitize=returns-nonnull-attribute
 
-  This option enables instrumentation of return statements in functions
-  marked with ``returns_nonnull`` function attribute, to detect returning
-  of null values from such functions.
+    This option enables instrumentation of return statements in functions
+    marked with ``returns_nonnull`` function attribute, to detect returning
+    of null values from such functions.
 
-.. option:: -fsanitize=bool
+  .. option:: -fsanitize=bool
 
-  This option enables instrumentation of loads from bool.  If a value other
-  than 0/1 is loaded, a run-time error is issued.
+    This option enables instrumentation of loads from bool.  If a value other
+    than 0/1 is loaded, a run-time error is issued.
 
-.. option:: -fsanitize=enum
+  .. option:: -fsanitize=enum
 
-  This option enables instrumentation of loads from an enum type.  If
-  a value outside the range of values for the enum type is loaded,
-  a run-time error is issued.
+    This option enables instrumentation of loads from an enum type.  If
+    a value outside the range of values for the enum type is loaded,
+    a run-time error is issued.
 
-.. option:: -fsanitize=vptr
+  .. option:: -fsanitize=vptr
 
-  This option enables instrumentation of C++ member function calls, member
-  accesses and some conversions between pointers to base and derived classes,
-  to verify the referenced object has the correct dynamic type.
+    This option enables instrumentation of C++ member function calls, member
+    accesses and some conversions between pointers to base and derived classes,
+    to verify the referenced object has the correct dynamic type.
 
-.. option:: -fsanitize=pointer-overflow
+  .. option:: -fsanitize=pointer-overflow
 
-  This option enables instrumentation of pointer arithmetics.  If the pointer
-  arithmetics overflows, a run-time error is issued.
+    This option enables instrumentation of pointer arithmetics.  If the pointer
+    arithmetics overflows, a run-time error is issued.
 
-.. option:: -fsanitize=builtin
+  .. option:: -fsanitize=builtin
 
-  This option enables instrumentation of arguments to selected builtin
-  functions.  If an invalid value is passed to such arguments, a run-time
-  error is issued.  E.g.passing 0 as the argument to ``__builtin_ctz``
-  or ``__builtin_clz`` invokes undefined behavior and is diagnosed
-  by this option.
+    This option enables instrumentation of arguments to selected builtin
+    functions.  If an invalid value is passed to such arguments, a run-time
+    error is issued.  E.g.passing 0 as the argument to ``__builtin_ctz``
+    or ``__builtin_clz`` invokes undefined behavior and is diagnosed
+    by this option.
 
-While :option:`-ftrapv` causes traps for signed overflows to be emitted,
-:option:`-fsanitize=undefined` gives a diagnostic message.
-This currently works only for the C family of languages.
+  While :option:`-ftrapv` causes traps for signed overflows to be emitted,
+  :option:`-fsanitize=undefined` gives a diagnostic message.
+  This currently works only for the C family of languages.
 
 .. option:: -fno-sanitize=all
 
@@ -566,30 +566,30 @@ This currently works only for the C family of languages.
   this behavior: only the first detected error is reported
   and program then exits with a non-zero exit code.
 
-Currently this feature only works for :option:`-fsanitize=undefined` (and its suboptions
-except for :option:`-fsanitize=unreachable` and :option:`-fsanitize=return` ),
-:option:`-fsanitize=float-cast-overflow` , :option:`-fsanitize=float-divide-by-zero` ,
-:option:`-fsanitize=bounds-strict` ,
-:option:`-fsanitize=kernel-address` and :option:`-fsanitize=address`.
-For these sanitizers error recovery is turned on by default,
-except :option:`-fsanitize=address` , for which this feature is experimental.
-:option:`-fsanitize-recover=all` and :option:`-fno-sanitize-recover=all` is also
-accepted, the former enables recovery for all sanitizers that support it,
-the latter disables recovery for all sanitizers that support it.
+  Currently this feature only works for :option:`-fsanitize=undefined` (and its suboptions
+  except for :option:`-fsanitize=unreachable` and :option:`-fsanitize=return` ),
+  :option:`-fsanitize=float-cast-overflow` , :option:`-fsanitize=float-divide-by-zero` ,
+  :option:`-fsanitize=bounds-strict` ,
+  :option:`-fsanitize=kernel-address` and :option:`-fsanitize=address`.
+  For these sanitizers error recovery is turned on by default,
+  except :option:`-fsanitize=address` , for which this feature is experimental.
+  :option:`-fsanitize-recover=all` and :option:`-fno-sanitize-recover=all` is also
+  accepted, the former enables recovery for all sanitizers that support it,
+  the latter disables recovery for all sanitizers that support it.
 
-Even if a recovery mode is turned on the compiler side, it needs to be also
-enabled on the runtime library side, otherwise the failures are still fatal.
-The runtime library defaults to ``halt_on_error=0`` for
-ThreadSanitizer and UndefinedBehaviorSanitizer, while default value for
-AddressSanitizer is ``halt_on_error=1``. This can be overridden through
-setting the ``halt_on_error`` flag in the corresponding environment variable.
+  Even if a recovery mode is turned on the compiler side, it needs to be also
+  enabled on the runtime library side, otherwise the failures are still fatal.
+  The runtime library defaults to ``halt_on_error=0`` for
+  ThreadSanitizer and UndefinedBehaviorSanitizer, while default value for
+  AddressSanitizer is ``halt_on_error=1``. This can be overridden through
+  setting the ``halt_on_error`` flag in the corresponding environment variable.
 
-Syntax without an explicit :samp:`{opts}` parameter is deprecated.  It is
-equivalent to specifying an :samp:`{opts}` list of:
+  Syntax without an explicit :samp:`{opts}` parameter is deprecated.  It is
+  equivalent to specifying an :samp:`{opts}` list of:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  undefined,float-cast-overflow,float-divide-by-zero,bounds-strict
+    undefined,float-cast-overflow,float-divide-by-zero,bounds-strict
 
 .. option:: -fsanitize-address-use-after-scope
 
@@ -633,30 +633,30 @@ equivalent to specifying an :samp:`{opts}` list of:
   threats as Return-oriented Programming (ROP), and similarly
   call/jmp-oriented programming (COP/JOP).
 
-The value ``branch`` tells the compiler to implement checking of
-validity of control-flow transfer at the point of indirect branch
-instructions, i.e. call/jmp instructions.  The value ``return``
-implements checking of validity at the point of returning from a
-function.  The value ``full`` is an alias for specifying both
-``branch`` and ``return``. The value ``none`` turns off
-instrumentation.
+  The value ``branch`` tells the compiler to implement checking of
+  validity of control-flow transfer at the point of indirect branch
+  instructions, i.e. call/jmp instructions.  The value ``return``
+  implements checking of validity at the point of returning from a
+  function.  The value ``full`` is an alias for specifying both
+  ``branch`` and ``return``. The value ``none`` turns off
+  instrumentation.
 
-The value ``check`` is used for the final link with link-time
-optimization (LTO).  An error is issued if LTO object files are
-compiled with different :option:`-fcf-protection` values.  The
-value ``check`` is ignored at the compile time.
+  The value ``check`` is used for the final link with link-time
+  optimization (LTO).  An error is issued if LTO object files are
+  compiled with different :option:`-fcf-protection` values.  The
+  value ``check`` is ignored at the compile time.
 
-The macro ``__CET__`` is defined when :option:`-fcf-protection` is
-used.  The first bit of ``__CET__`` is set to 1 for the value
-``branch`` and the second bit of ``__CET__`` is set to 1 for
-the ``return``.
+  The macro ``__CET__`` is defined when :option:`-fcf-protection` is
+  used.  The first bit of ``__CET__`` is set to 1 for the value
+  ``branch`` and the second bit of ``__CET__`` is set to 1 for
+  the ``return``.
 
-You can also use the ``nocf_check`` attribute to identify
-which functions and calls should be skipped from instrumentation
-(see :ref:`function-attributes`).
+  You can also use the ``nocf_check`` attribute to identify
+  which functions and calls should be skipped from instrumentation
+  (see :ref:`function-attributes`).
 
-Currently the x86 GNU/Linux target provides an implementation based
-on Intel Control-flow Enforcement Technology (CET).
+  Currently the x86 GNU/Linux target provides an implementation based
+  on Intel Control-flow Enforcement Technology (CET).
 
 .. option:: -fstack-protector
 
@@ -695,36 +695,36 @@ on Intel Control-flow Enforcement Technology (CET).
   a single-threaded environment since stack overflow is automatically
   detected on nearly all systems if there is only one stack.
 
-Note that this switch does not actually cause checking to be done; the
-operating system or the language runtime must do that.  The switch causes
-generation of code to ensure that they see the stack being extended.
+  Note that this switch does not actually cause checking to be done; the
+  operating system or the language runtime must do that.  The switch causes
+  generation of code to ensure that they see the stack being extended.
 
-You can additionally specify a string parameter: :samp:`no` means no
-checking, :samp:`generic` means force the use of old-style checking,
-:samp:`specific` means use the best checking method and is equivalent
-to bare :option:`-fstack-check`.
+  You can additionally specify a string parameter: :samp:`no` means no
+  checking, :samp:`generic` means force the use of old-style checking,
+  :samp:`specific` means use the best checking method and is equivalent
+  to bare :option:`-fstack-check`.
 
-Old-style checking is a generic mechanism that requires no specific
-target support in the compiler but comes with the following drawbacks:
+  Old-style checking is a generic mechanism that requires no specific
+  target support in the compiler but comes with the following drawbacks:
 
-* Modified allocation strategy for large objects: they are always
-  allocated dynamically if their size exceeds a fixed threshold.  Note this
-  may change the semantics of some code.
+  * Modified allocation strategy for large objects: they are always
+    allocated dynamically if their size exceeds a fixed threshold.  Note this
+    may change the semantics of some code.
 
-* Fixed limit on the size of the static frame of functions: when it is
-  topped by a particular function, stack checking is not reliable and
-  a warning is issued by the compiler.
+  * Fixed limit on the size of the static frame of functions: when it is
+    topped by a particular function, stack checking is not reliable and
+    a warning is issued by the compiler.
 
-* Inefficiency: because of both the modified allocation strategy and the
-  generic implementation, code performance is hampered.
+  * Inefficiency: because of both the modified allocation strategy and the
+    generic implementation, code performance is hampered.
 
-Note that old-style stack checking is also the fallback method for
-:samp:`specific` if no target support has been added in the compiler.
+  Note that old-style stack checking is also the fallback method for
+  :samp:`specific` if no target support has been added in the compiler.
 
-:samp:`-fstack-check=` is designed for Ada's needs to detect infinite recursion
-and stack overflows.  :samp:`specific` is an excellent choice when compiling
-Ada code.  It is not generally sufficient to protect against stack-clash
-attacks.  To protect against those you want :samp:`-fstack-clash-protection`.
+  :samp:`-fstack-check=` is designed for Ada's needs to detect infinite recursion
+  and stack overflows.  :samp:`specific` is an excellent choice when compiling
+  Ada code.  It is not generally sufficient to protect against stack-clash
+  attacks.  To protect against those you want :samp:`-fstack-clash-protection`.
 
 .. option:: -fstack-clash-protection
 
@@ -734,11 +734,11 @@ attacks.  To protect against those you want :samp:`-fstack-clash-protection`.
   allocations from jumping over any stack guard page provided by the
   operating system.
 
-Most targets do not fully support stack clash protection.  However, on
-those targets :option:`-fstack-clash-protection` will protect dynamic stack
-allocations.  :option:`-fstack-clash-protection` may also provide limited
-protection for static stack allocations if the target supports
-:option:`-fstack-check=specific`.
+  Most targets do not fully support stack clash protection.  However, on
+  those targets :option:`-fstack-clash-protection` will protect dynamic stack
+  allocations.  :option:`-fstack-clash-protection` may also provide limited
+  protection for static stack allocations if the target supports
+  :option:`-fstack-check=specific`.
 
 .. option:: -fstack-limit-register=reg
 
@@ -748,14 +748,14 @@ protection for static stack allocations if the target supports
   the signal is raised before the stack overruns the boundary, so
   it is possible to catch the signal without taking special precautions.
 
-For instance, if the stack starts at absolute address :samp:`0x80000000`
-and grows downwards, you can use the flags
-:option:`-fstack-limit-symbol=__stack_limit` and
-:option:`-Wl,--defsym,__stack_limit=0x7ffe0000` to enforce a stack limit
-of 128KB.  Note that this may only work with the GNU linker.
+  For instance, if the stack starts at absolute address :samp:`0x80000000`
+  and grows downwards, you can use the flags
+  :option:`-fstack-limit-symbol=__stack_limit` and
+  :option:`-Wl,--defsym,__stack_limit=0x7ffe0000` to enforce a stack limit
+  of 128KB.  Note that this may only work with the GNU linker.
 
-You can locally override stack limit checking by using the
-``no_stack_limit`` function attribute (see :ref:`function-attributes`).
+  You can locally override stack limit checking by using the
+  ``no_stack_limit`` function attribute (see :ref:`function-attributes`).
 
 .. option:: -fsplit-stack
 
@@ -767,14 +767,14 @@ You can locally override stack limit checking by using the
   is currently only implemented for the x86 targets running
   GNU/Linux.
 
-When code compiled with :option:`-fsplit-stack` calls code compiled
-without :option:`-fsplit-stack` , there may not be much stack space
-available for the latter code to run.  If compiling all code,
-including library code, with :option:`-fsplit-stack` is not an option,
-then the linker can fix up these calls so that the code compiled
-without :option:`-fsplit-stack` always has a large stack.  Support for
-this is implemented in the gold linker in GNU binutils release 2.21
-and later.
+  When code compiled with :option:`-fsplit-stack` calls code compiled
+  without :option:`-fsplit-stack` , there may not be much stack space
+  available for the latter code to run.  If compiling all code,
+  including library code, with :option:`-fsplit-stack` is not an option,
+  then the linker can fix up these calls so that the code compiled
+  without :option:`-fsplit-stack` always has a large stack.  Support for
+  this is implemented in the gold linker in GNU binutils release 2.21
+  and later.
 
 .. option:: -fvtable-verify=[std|preinit|none]
 
@@ -786,19 +786,19 @@ and later.
   pointer is detected at run time, an error is reported and execution of the
   program is immediately halted.
 
-This option causes run-time data structures to be built at program startup,
-which are used for verifying the vtable pointers.  
-The options :samp:`std` and :samp:`preinit`
-control the timing of when these data structures are built.  In both cases the
-data structures are built before execution reaches ``main``.  Using
-:option:`-fvtable-verify=std` causes the data structures to be built after
-shared libraries have been loaded and initialized.
-:option:`-fvtable-verify=preinit` causes them to be built before shared
-libraries have been loaded and initialized.
+  This option causes run-time data structures to be built at program startup,
+  which are used for verifying the vtable pointers.  
+  The options :samp:`std` and :samp:`preinit`
+  control the timing of when these data structures are built.  In both cases the
+  data structures are built before execution reaches ``main``.  Using
+  :option:`-fvtable-verify=std` causes the data structures to be built after
+  shared libraries have been loaded and initialized.
+  :option:`-fvtable-verify=preinit` causes them to be built before shared
+  libraries have been loaded and initialized.
 
-If this option appears multiple times in the command line with different
-values specified, :samp:`none` takes highest priority over both :samp:`std` and
-:samp:`preinit`; :samp:`preinit` takes priority over :samp:`std`.
+  If this option appears multiple times in the command line with different
+  values specified, :samp:`none` takes highest priority over both :samp:`std` and
+  :samp:`preinit`; :samp:`preinit` takes priority over :samp:`std`.
 
 .. option:: -fvtv-debug
 
@@ -811,8 +811,8 @@ values specified, :samp:`none` takes highest priority over both :samp:`std` and
   in the directory named by the environment variable :envvar:`VTV_LOGS_DIR` 
   if that is defined or the current working directory otherwise.
 
-Note:  This feature *appends* data to the log file. If you want a fresh log
-file, be sure to delete any existing one.
+  Note:  This feature *appends* data to the log file. If you want a fresh log
+  file, be sure to delete any existing one.
 
 .. option:: -fvtv-counts
 
@@ -829,8 +829,8 @@ file, be sure to delete any existing one.
   for each class, and writes this information to vtv_class_set_sizes.log
   in the same directory.
 
-Note:  This feature *appends* data to the log files.  To get fresh log
-files, be sure to delete any existing ones.
+  Note:  This feature *appends* data to the log files.  To get fresh log
+  files, be sure to delete any existing ones.
 
 .. option:: -finstrument-functions
 
@@ -842,34 +842,34 @@ files, be sure to delete any existing ones.
   function, so the call site information may not be available to the
   profiling functions otherwise.)
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void __cyg_profile_func_enter (void *this_fn,
-                                 void *call_site);
-  void __cyg_profile_func_exit  (void *this_fn,
-                                 void *call_site);
+    void __cyg_profile_func_enter (void *this_fn,
+                                   void *call_site);
+    void __cyg_profile_func_exit  (void *this_fn,
+                                   void *call_site);
 
-The first argument is the address of the start of the current function,
-which may be looked up exactly in the symbol table.
+  The first argument is the address of the start of the current function,
+  which may be looked up exactly in the symbol table.
 
-This instrumentation is also done for functions expanded inline in other
-functions.  The profiling calls indicate where, conceptually, the
-inline function is entered and exited.  This means that addressable
-versions of such functions must be available.  If all your uses of a
-function are expanded inline, this may mean an additional expansion of
-code size.  If you use ``extern inline`` in your C code, an
-addressable version of such functions must be provided.  (This is
-normally the case anyway, but if you get lucky and the optimizer always
-expands the functions inline, you might have gotten away without
-providing static copies.)
+  This instrumentation is also done for functions expanded inline in other
+  functions.  The profiling calls indicate where, conceptually, the
+  inline function is entered and exited.  This means that addressable
+  versions of such functions must be available.  If all your uses of a
+  function are expanded inline, this may mean an additional expansion of
+  code size.  If you use ``extern inline`` in your C code, an
+  addressable version of such functions must be provided.  (This is
+  normally the case anyway, but if you get lucky and the optimizer always
+  expands the functions inline, you might have gotten away without
+  providing static copies.)
 
-A function may be given the attribute ``no_instrument_function``, in
-which case this instrumentation is not done.  This can be used, for
-example, for the profiling functions listed above, high-priority
-interrupt routines, and any functions from which the profiling functions
-cannot safely be called (perhaps signal handlers, if the profiling
-routines generate output or allocate memory).
-See :ref:`common-function-attributes`.
+  A function may be given the attribute ``no_instrument_function``, in
+  which case this instrumentation is not done.  This can be used, for
+  example, for the profiling functions listed above, high-priority
+  interrupt routines, and any functions from which the profiling functions
+  cannot safely be called (perhaps signal handlers, if the profiling
+  routines generate output or allocate memory).
+  See :ref:`common-function-attributes`.
 
 .. option:: -finstrument-functions-exclude-file-list=file,file,...
 
@@ -880,16 +880,16 @@ See :ref:`common-function-attributes`.
   if the :samp:`{file}` parameter is a substring of the file name, it is
   considered to be a match.
 
-For example:
+  For example:
 
-:option:`-finstrument-functions-exclude-file-list=/bits/stl,include/sys`
-excludes any inline function defined in files whose pathnames
-contain /bits/stl or include/sys.
+  :option:`-finstrument-functions-exclude-file-list=/bits/stl,include/sys`
+  excludes any inline function defined in files whose pathnames
+  contain /bits/stl or include/sys.
 
-If, for some reason, you want to include letter :samp:`,` in one of
-:samp:`{sym}` , write :samp:`\,`. For example,
-:option:`-finstrument-functions-exclude-file-list='\,\,tmp'`
-(note the single quote surrounding the option).
+  If, for some reason, you want to include letter :samp:`,` in one of
+  :samp:`{sym}` , write :samp:`\,`. For example,
+  :option:`-finstrument-functions-exclude-file-list='\,\,tmp'`
+  (note the single quote surrounding the option).
 
 .. option:: -finstrument-functions-exclude-function-list=sym,sym,...
 
@@ -917,19 +917,19 @@ If, for some reason, you want to include letter :samp:`,` in one of
   is target-specific and may also depend on the architecture variant and/or
   other compilation options.
 
-For run-time identification, the starting addresses of these areas,
-which correspond to their respective function entries minus :samp:`{M}` ,
-are additionally collected in the ``__patchable_function_entries``
-section of the resulting binary.
+  For run-time identification, the starting addresses of these areas,
+  which correspond to their respective function entries minus :samp:`{M}` ,
+  are additionally collected in the ``__patchable_function_entries``
+  section of the resulting binary.
 
-Note that the value of ``__attribute__ ((patchable_function_entry
-(N,M)))`` takes precedence over command-line option
-:option:`-fpatchable-function-entry=N,M`.  This can be used to increase
-the area size or to remove it completely on a single function.
-If ``N=0``, no pad location is recorded.
+  Note that the value of ``__attribute__ ((patchable_function_entry
+  (N,M)))`` takes precedence over command-line option
+  :option:`-fpatchable-function-entry=N,M`.  This can be used to increase
+  the area size or to remove it completely on a single function.
+  If ``N=0``, no pad location is recorded.
 
-The NOP instructions are inserted at-and maybe before, depending on
-:samp:`{M}` -the function entry address, even before the prologue.
+  The NOP instructions are inserted at-and maybe before, depending on
+  :samp:`{M}` -the function entry address, even before the prologue.
 
-The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.
+  The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.
 

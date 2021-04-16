@@ -32,13 +32,13 @@ information useful for debugging do not run at all, so that
   (stabs, COFF, XCOFF, or DWARF).  GDB can work with this debugging
   information.
 
-On most systems that use stabs format, :option:`-g` enables use of extra
-debugging information that only GDB can use; this extra information
-makes debugging work better in GDB but probably makes other debuggers
-crash or
-refuse to read the program.  If you want to control for certain whether
-to generate the extra information, use :option:`-gstabs+` , :option:`-gstabs` ,
-:option:`-gxcoff+` , :option:`-gxcoff` , or :option:`-gvms` (see below).
+  On most systems that use stabs format, :option:`-g` enables use of extra
+  debugging information that only GDB can use; this extra information
+  makes debugging work better in GDB but probably makes other debuggers
+  crash or
+  refuse to read the program.  If you want to control for certain whether
+  to generate the extra information, use :option:`-gstabs+` , :option:`-gstabs` ,
+  :option:`-gxcoff+` , :option:`-gxcoff` , or :option:`-gvms` (see below).
 
 .. option:: -ggdb
 
@@ -55,17 +55,17 @@ to generate the extra information, use :option:`-gstabs+` , :option:`-gstabs` ,
   Darwin/Mac OS X, which default to version 2, and AIX, which defaults
   to version 4).
 
-Note that with DWARF Version 2, some ports require and always
-use some non-conflicting DWARF 3 extensions in the unwind tables.
+  Note that with DWARF Version 2, some ports require and always
+  use some non-conflicting DWARF 3 extensions in the unwind tables.
 
-Version 4 may require GDB 7.0 and :option:`-fvar-tracking-assignments`
-for maximum benefit. Version 5 requires GDB 8.0 or higher.
+  Version 4 may require GDB 7.0 and :option:`-fvar-tracking-assignments`
+  for maximum benefit. Version 5 requires GDB 8.0 or higher.
 
-GCC no longer supports DWARF Version 1, which is substantially
-different than Version 2 and later.  For historical reasons, some
-other DWARF-related options such as
-:option:`-fno-dwarf2-cfi-asm` ) retain a reference to DWARF Version 2
-in their names, but apply to all currently-supported versions of DWARF.
+  GCC no longer supports DWARF Version 1, which is substantially
+  different than Version 2 and later.  For historical reasons, some
+  other DWARF-related options such as
+  :option:`-fno-dwarf2-cfi-asm` ) retain a reference to DWARF Version 2
+  in their names, but apply to all currently-supported versions of DWARF.
 
 .. option:: -gstabs
 
@@ -163,9 +163,9 @@ in their names, but apply to all currently-supported versions of DWARF.
   position in code.  Better debugging information is then generated
   (if the debugging information format supports this information).
 
-It is enabled by default when compiling with optimization ( :option:`-Os` ,
-:option:`-O` , :option:`-O2` , ...), debugging information ( :option:`-g` ) and
-the debug info format supports it.
+  It is enabled by default when compiling with optimization ( :option:`-Os` ,
+  :option:`-O` , :option:`-O2` , ...), debugging information ( :option:`-g` ) and
+  the debug info format supports it.
 
 .. option:: -fvar-tracking-assignments, -fno-var-tracking-assignments
 
@@ -174,10 +174,10 @@ the debug info format supports it.
   way to the end, in an attempt to improve debug information while
   optimizing.  Use of :option:`-gdwarf-4` is recommended along with it.
 
-It can be enabled even if var-tracking is disabled, in which case
-annotations are created and maintained, but discarded at the end.
-By default, this flag is enabled together with :option:`-fvar-tracking` ,
-except when selective scheduling is enabled.
+  It can be enabled even if var-tracking is disabled, in which case
+  annotations are created and maintained, but discarded at the end.
+  By default, this flag is enabled together with :option:`-fvar-tracking` ,
+  except when selective scheduling is enabled.
 
 .. option:: -gsplit-dwarf
 
@@ -251,12 +251,12 @@ except when selective scheduling is enabled.
   It may then use them for the assembler to generate DWARF2+ line number
   tables.
 
-This is generally desirable, because assembler-generated line-number
-tables are a lot more compact than those the compiler can generate
-itself.
+  This is generally desirable, because assembler-generated line-number
+  tables are a lot more compact than those the compiler can generate
+  itself.
 
-This option will be enabled by default if, at GCC configure time, the
-assembler was found to support such directives.
+  This option will be enabled by default if, at GCC configure time, the
+  assembler was found to support such directives.
 
 .. option:: -gno-as-loc-support
 
@@ -268,8 +268,8 @@ assembler was found to support such directives.
   Inform the compiler that the assembler supports ``view`` assignment
   and reset assertion checking in ``.loc`` directives.
 
-This option will be enabled by default if, at GCC configure time, the
-assembler was found to support them.
+  This option will be enabled by default if, at GCC configure time, the
+  assembler was found to support them.
 
 ``-gno-as-locview-support``
   Force GCC to assign view numbers internally, if
@@ -303,22 +303,22 @@ assembler was found to support them.
   can be consumed by debug information consumers that are not aware of
   these augmentations, but they won't derive any benefit from them either.
 
-This is enabled by default when outputting DWARF 2 debug information at
-the normal level, as long as there is assembler support,
-:option:`-fvar-tracking-assignments` is enabled and
-:option:`-gstrict-dwarf` is not.  When assembler support is not
-available, this may still be enabled, but it will force GCC to output
-internal line number tables, and if
-:option:`-ginternal-reset-location-views` is not enabled, that will most
-certainly lead to silently mismatching location views.
+  This is enabled by default when outputting DWARF 2 debug information at
+  the normal level, as long as there is assembler support,
+  :option:`-fvar-tracking-assignments` is enabled and
+  :option:`-gstrict-dwarf` is not.  When assembler support is not
+  available, this may still be enabled, but it will force GCC to output
+  internal line number tables, and if
+  :option:`-ginternal-reset-location-views` is not enabled, that will most
+  certainly lead to silently mismatching location views.
 
-There is a proposed representation for view numbers that is not backward
-compatible with the location list format introduced in DWARF 5, that can
-be enabled with :option:`-gvariable-location-views=incompat5`.  This
-option may be removed in the future, is only provided as a reference
-implementation of the proposed representation.  Debug information
-consumers are not expected to support this extended format, and they
-would be rendered unable to decode location lists using it.
+  There is a proposed representation for view numbers that is not backward
+  compatible with the location list format introduced in DWARF 5, that can
+  be enabled with :option:`-gvariable-location-views=incompat5`.  This
+  option may be removed in the future, is only provided as a reference
+  implementation of the proposed representation.  Debug information
+  consumers are not expected to support this extended format, and they
+  would be rendered unable to decode location lists using it.
 
 .. option:: -ginternal-reset-location-views, -gno-internal-reset-location-views
 
@@ -358,12 +358,12 @@ would be rendered unable to decode location lists using it.
   only when the base name of the compilation source file
   matches the base name of file in which the struct is defined.
 
-This option substantially reduces the size of debugging information,
-but at significant potential loss in type information to the debugger.
-See :option:`-femit-struct-debug-reduced` for a less aggressive option.
-See :option:`-femit-struct-debug-detailed` for more detailed control.
+  This option substantially reduces the size of debugging information,
+  but at significant potential loss in type information to the debugger.
+  See :option:`-femit-struct-debug-reduced` for a less aggressive option.
+  See :option:`-femit-struct-debug-detailed` for more detailed control.
 
-This option works only with DWARF debug output.
+  This option works only with DWARF debug output.
 
 .. option:: -femit-struct-debug-reduced
 
@@ -372,12 +372,12 @@ This option works only with DWARF debug output.
   matches the base name of file in which the type is defined,
   unless the struct is a template or defined in a system header.
 
-This option significantly reduces the size of debugging information,
-with some potential loss in type information to the debugger.
-See :option:`-femit-struct-debug-baseonly` for a more aggressive option.
-See :option:`-femit-struct-debug-detailed` for more detailed control.
+  This option significantly reduces the size of debugging information,
+  with some potential loss in type information to the debugger.
+  See :option:`-femit-struct-debug-baseonly` for a more aggressive option.
+  See :option:`-femit-struct-debug-detailed` for more detailed control.
 
-This option works only with DWARF debug output.
+  This option works only with DWARF debug output.
 
 .. option:: -femit-struct-debug-detailed[=spec-list]
 
@@ -386,47 +386,47 @@ This option works only with DWARF debug output.
   The intent is to reduce duplicate struct debug information
   between different object files within the same program.
 
-This option is a detailed version of
-:option:`-femit-struct-debug-reduced` and :option:`-femit-struct-debug-baseonly` ,
-which serves for most needs.
+  This option is a detailed version of
+  :option:`-femit-struct-debug-reduced` and :option:`-femit-struct-debug-baseonly` ,
+  which serves for most needs.
 
-A specification has the syntax
+  A specification has the syntax
 
-[:samp:`dir:`|:samp:`ind:`][:samp:`ord:`|:samp:`gen:`](:samp:`any`|:samp:`sys`|:samp:`base`|:samp:`none`)
+  [:samp:`dir:`|:samp:`ind:`][:samp:`ord:`|:samp:`gen:`](:samp:`any`|:samp:`sys`|:samp:`base`|:samp:`none`)
 
-The optional first word limits the specification to
-structs that are used directly (:samp:`dir:`) or used indirectly (:samp:`ind:`).
-A struct type is used directly when it is the type of a variable, member.
-Indirect uses arise through pointers to structs.
-That is, when use of an incomplete struct is valid, the use is indirect.
-An example is
-:samp:`struct one direct; struct two * indirect;`.
+  The optional first word limits the specification to
+  structs that are used directly (:samp:`dir:`) or used indirectly (:samp:`ind:`).
+  A struct type is used directly when it is the type of a variable, member.
+  Indirect uses arise through pointers to structs.
+  That is, when use of an incomplete struct is valid, the use is indirect.
+  An example is
+  :samp:`struct one direct; struct two * indirect;`.
 
-The optional second word limits the specification to
-ordinary structs (:samp:`ord:`) or generic structs (:samp:`gen:`).
-Generic structs are a bit complicated to explain.
-For C++, these are non-explicit specializations of template classes,
-or non-template classes within the above.
-Other programming languages have generics,
-but :option:`-femit-struct-debug-detailed` does not yet implement them.
+  The optional second word limits the specification to
+  ordinary structs (:samp:`ord:`) or generic structs (:samp:`gen:`).
+  Generic structs are a bit complicated to explain.
+  For C++, these are non-explicit specializations of template classes,
+  or non-template classes within the above.
+  Other programming languages have generics,
+  but :option:`-femit-struct-debug-detailed` does not yet implement them.
 
-The third word specifies the source files for those
-structs for which the compiler should emit debug information.
-The values :samp:`none` and :samp:`any` have the normal meaning.
-The value :samp:`base` means that
-the base of name of the file in which the type declaration appears
-must match the base of the name of the main compilation file.
-In practice, this means that when compiling foo.c, debug information
-is generated for types declared in that file and foo.h,
-but not other header files.
-The value :samp:`sys` means those types satisfying :samp:`base`
-or declared in system or compiler headers.
+  The third word specifies the source files for those
+  structs for which the compiler should emit debug information.
+  The values :samp:`none` and :samp:`any` have the normal meaning.
+  The value :samp:`base` means that
+  the base of name of the file in which the type declaration appears
+  must match the base of the name of the main compilation file.
+  In practice, this means that when compiling foo.c, debug information
+  is generated for types declared in that file and foo.h,
+  but not other header files.
+  The value :samp:`sys` means those types satisfying :samp:`base`
+  or declared in system or compiler headers.
 
-You may need to experiment to determine the best settings for your application.
+  You may need to experiment to determine the best settings for your application.
 
-The default is :option:`-femit-struct-debug-detailed=all`.
+  The default is :option:`-femit-struct-debug-detailed=all`.
 
-This option works only with DWARF debug output.
+  This option works only with DWARF debug output.
 
 .. option:: -fno-dwarf2-cfi-asm, -fdwarf2-cfi-asm
 

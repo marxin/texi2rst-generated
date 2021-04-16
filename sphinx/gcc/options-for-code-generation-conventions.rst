@@ -33,67 +33,67 @@ it.
   local variables whose live range does not overlap with it. Legacy code extending
   local lifetime is likely to break with the stack reuse optimization.
 
-For example,
+  For example,
 
-.. code-block:: c++
+  .. code-block:: c++
 
-     int *p;
-     {
-       int local1;
-
-       p = &local1;
-       local1 = 10;
-       ....
-     }
-     {
-        int local2;
-        local2 = 20;
-        ...
-     }
-
-     if (*p == 10)  // out of scope use of local1
+       int *p;
        {
+         int local1;
 
+         p = &local1;
+         local1 = 10;
+         ....
+       }
+       {
+          int local2;
+          local2 = 20;
+          ...
        }
 
-Another example:
+       if (*p == 10)  // out of scope use of local1
+         {
 
-.. code-block:: c++
+         }
 
-     struct A
-     {
-         A(int k) : i(k), j(k) { }
-         int i;
-         int j;
-     };
+  Another example:
 
-     A *ap;
+  .. code-block:: c++
 
-     void foo(const A& ar)
-     {
-        ap = &ar;
-     }
+       struct A
+       {
+           A(int k) : i(k), j(k) { }
+           int i;
+           int j;
+       };
 
-     void bar()
-     {
-        foo(A(10)); // temp object's lifetime ends when foo returns
+       A *ap;
 
-        {
-          A a(20);
-          ....
-        }
-        ap->i+= 10;  // ap references out of scope temp whose space
-                     // is reused with a. What is the value of ap->i?
-     }
+       void foo(const A& ar)
+       {
+          ap = &ar;
+       }
 
-The lifetime of a compiler generated temporary is well defined by the C++
-standard. When a lifetime of a temporary ends, and if the temporary lives
-in memory, the optimizing compiler has the freedom to reuse its stack
-space with other temporaries or scoped local variables whose live range
-does not overlap with it. However some of the legacy code relies on
-the behavior of older compilers in which temporaries' stack space is
-not reused, the aggressive stack reuse can lead to runtime errors. This
-option is used to control the temporary stack reuse optimization.
+       void bar()
+       {
+          foo(A(10)); // temp object's lifetime ends when foo returns
+
+          {
+            A a(20);
+            ....
+          }
+          ap->i+= 10;  // ap references out of scope temp whose space
+                       // is reused with a. What is the value of ap->i?
+       }
+
+  The lifetime of a compiler generated temporary is well defined by the C++
+  standard. When a lifetime of a temporary ends, and if the temporary lives
+  in memory, the optimizing compiler has the freedom to reuse its stack
+  space with other temporaries or scoped local variables whose live range
+  does not overlap with it. However some of the legacy code relies on
+  the behavior of older compilers in which temporaries' stack space is
+  not reused, the aggressive stack reuse can lead to runtime errors. This
+  option is used to control the temporary stack reuse optimization.
 
 .. option:: -ftrapv
 
@@ -195,16 +195,16 @@ option is used to control the temporary stack reuse optimization.
   GCC-compiled files and files compiled with other compilers, particularly
   the Portable C Compiler (pcc).
 
-The precise convention for returning structures in memory depends
-on the target configuration macros.
+  The precise convention for returning structures in memory depends
+  on the target configuration macros.
 
-Short structures and unions are those whose size and alignment match
-that of some integer type.
+  Short structures and unions are those whose size and alignment match
+  that of some integer type.
 
-Warning: code compiled with the :option:`-fpcc-struct-return`
-switch is not binary compatible with code compiled with the
-:option:`-freg-struct-return` switch.
-Use it to conform to a non-default application binary interface.
+  Warning: code compiled with the :option:`-fpcc-struct-return`
+  switch is not binary compatible with code compiled with the
+  :option:`-freg-struct-return` switch.
+  Use it to conform to a non-default application binary interface.
 
 .. option:: -freg-struct-return
 
@@ -212,17 +212,17 @@ Use it to conform to a non-default application binary interface.
   This is more efficient for small structures than
   :option:`-fpcc-struct-return`.
 
-If you specify neither :option:`-fpcc-struct-return` nor
-:option:`-freg-struct-return` , GCC defaults to whichever convention is
-standard for the target.  If there is no standard convention, GCC
-defaults to :option:`-fpcc-struct-return` , except on targets where GCC is
-the principal compiler.  In those cases, we can choose the standard, and
-we chose the more efficient register return alternative.
+  If you specify neither :option:`-fpcc-struct-return` nor
+  :option:`-freg-struct-return` , GCC defaults to whichever convention is
+  standard for the target.  If there is no standard convention, GCC
+  defaults to :option:`-fpcc-struct-return` , except on targets where GCC is
+  the principal compiler.  In those cases, we can choose the standard, and
+  we chose the more efficient register return alternative.
 
-Warning: code compiled with the :option:`-freg-struct-return`
-switch is not binary compatible with code compiled with the
-:option:`-fpcc-struct-return` switch.
-Use it to conform to a non-default application binary interface.
+  Warning: code compiled with the :option:`-freg-struct-return`
+  switch is not binary compatible with code compiled with the
+  :option:`-fpcc-struct-return` switch.
+  Use it to conform to a non-default application binary interface.
 
 .. option:: -fshort-enums
 
@@ -230,9 +230,9 @@ Use it to conform to a non-default application binary interface.
   declared range of possible values.  Specifically, the ``enum`` type
   is equivalent to the smallest integer type that has enough room.
 
-Warning: the :option:`-fshort-enums` switch causes GCC to generate
-code that is not binary compatible with code generated without that switch.
-Use it to conform to a non-default application binary interface.
+  Warning: the :option:`-fshort-enums` switch causes GCC to generate
+  code that is not binary compatible with code generated without that switch.
+  Use it to conform to a non-default application binary interface.
 
 .. option:: -fshort-wchar
 
@@ -240,31 +240,31 @@ Use it to conform to a non-default application binary interface.
   unsigned int`` instead of the default for the target.  This option is
   useful for building programs to run under WINE.
 
-Warning: the :option:`-fshort-wchar` switch causes GCC to generate
-code that is not binary compatible with code generated without that switch.
-Use it to conform to a non-default application binary interface.
+  Warning: the :option:`-fshort-wchar` switch causes GCC to generate
+  code that is not binary compatible with code generated without that switch.
+  Use it to conform to a non-default application binary interface.
 
 .. option:: -fcommon, -fno-common
 
   .. index:: tentative definitions
 
-In C code, this option controls the placement of global variables
-defined without an initializer, known as :dfn:`tentative definitions`
-in the C standard.  Tentative definitions are distinct from declarations
-of a variable with the ``extern`` keyword, which do not allocate storage.
+  In C code, this option controls the placement of global variables
+  defined without an initializer, known as :dfn:`tentative definitions`
+  in the C standard.  Tentative definitions are distinct from declarations
+  of a variable with the ``extern`` keyword, which do not allocate storage.
 
-The default is :option:`-fno-common` , which specifies that the compiler places
-uninitialized global variables in the BSS section of the object file.
-This inhibits the merging of tentative definitions by the linker so you get a
-multiple-definition error if the same variable is accidentally defined in more
-than one compilation unit.
+  The default is :option:`-fno-common` , which specifies that the compiler places
+  uninitialized global variables in the BSS section of the object file.
+  This inhibits the merging of tentative definitions by the linker so you get a
+  multiple-definition error if the same variable is accidentally defined in more
+  than one compilation unit.
 
-The :option:`-fcommon` places uninitialized global variables in a common block.
-This allows the linker to resolve all tentative definitions of the same variable
-in different compilation units to the same object, or to a non-tentative
-definition.  This behavior is inconsistent with C++, and on many targets implies
-a speed and code size penalty on global variable references.  It is mainly
-useful to enable legacy code to link without errors.
+  The :option:`-fcommon` places uninitialized global variables in a common block.
+  This allows the linker to resolve all tentative definitions of the same variable
+  in different compilation units to the same object, or to a non-tentative
+  definition.  This behavior is inconsistent with C++, and on many targets implies
+  a speed and code size penalty on global variable references.  It is mainly
+  useful to enable legacy code to link without errors.
 
 .. option:: -fno-ident, -fident
 
@@ -285,85 +285,85 @@ useful to enable legacy code to link without errors.
   who actually need to read the generated assembly code (perhaps while
   debugging the compiler itself).
 
-:option:`-fno-verbose-asm` , the default, causes the
-extra information to be omitted and is useful when comparing two assembler
-files.
+  :option:`-fno-verbose-asm` , the default, causes the
+  extra information to be omitted and is useful when comparing two assembler
+  files.
 
-The added comments include:
+  The added comments include:
 
-* information on the compiler version and command-line options,
+  * information on the compiler version and command-line options,
 
-* the source code lines associated with the assembly instructions,
-  in the form FILENAME:LINENUMBER:CONTENT OF LINE,
+  * the source code lines associated with the assembly instructions,
+    in the form FILENAME:LINENUMBER:CONTENT OF LINE,
 
-* hints on which high-level expressions correspond to
-  the various assembly instruction operands.
+  * hints on which high-level expressions correspond to
+    the various assembly instruction operands.
 
-For example, given this C source file:
+  For example, given this C source file:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int test (int n)
-  {
-    int i;
-    int total = 0;
+    int test (int n)
+    {
+      int i;
+      int total = 0;
 
-    for (i = 0; i < n; i++)
-      total += i * i;
+      for (i = 0; i < n; i++)
+        total += i * i;
 
-    return total;
-  }
+      return total;
+    }
 
-compiling to (x86_64) assembly via :option:`-S` and emitting the result
-direct to stdout via :option:`-o` :option:`-`
+  compiling to (x86_64) assembly via :option:`-S` and emitting the result
+  direct to stdout via :option:`-o` :option:`-`
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -S test.c -fverbose-asm -Os -o -
+    gcc -S test.c -fverbose-asm -Os -o -
 
-gives output similar to this:
+  gives output similar to this:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  	.file	"test.c"
-  # GNU C11 (GCC) version 7.0.0 20160809 (experimental) (x86_64-pc-linux-gnu)
-    [...snip...]
-  # options passed:
-    [...snip...]
+    	.file	"test.c"
+    # GNU C11 (GCC) version 7.0.0 20160809 (experimental) (x86_64-pc-linux-gnu)
+      [...snip...]
+    # options passed:
+      [...snip...]
 
-  	.text
-  	.globl	test
-  	.type	test, @function
-  test:
-  .LFB0:
-  	.cfi_startproc
-  # test.c:4:   int total = 0;
-  	xorl	%eax, %eax	# <retval>
-  # test.c:6:   for (i = 0; i < n; i++)
-  	xorl	%edx, %edx	# i
-  .L2:
-  # test.c:6:   for (i = 0; i < n; i++)
-  	cmpl	%edi, %edx	# n, i
-  	jge	.L5	#,
-  # test.c:7:     total += i * i;
-  	movl	%edx, %ecx	# i, tmp92
-  	imull	%edx, %ecx	# i, tmp92
-  # test.c:6:   for (i = 0; i < n; i++)
-  	incl	%edx	# i
-  # test.c:7:     total += i * i;
-  	addl	%ecx, %eax	# tmp92, <retval>
-  	jmp	.L2	#
-  .L5:
-  # test.c:10: }
-  	ret
-  	.cfi_endproc
-  .LFE0:
-  	.size	test, .-test
-  	.ident	"GCC: (GNU) 7.0.0 20160809 (experimental)"
-  	.section	.note.GNU-stack,"",@progbits
+    	.text
+    	.globl	test
+    	.type	test, @function
+    test:
+    .LFB0:
+    	.cfi_startproc
+    # test.c:4:   int total = 0;
+    	xorl	%eax, %eax	# <retval>
+    # test.c:6:   for (i = 0; i < n; i++)
+    	xorl	%edx, %edx	# i
+    .L2:
+    # test.c:6:   for (i = 0; i < n; i++)
+    	cmpl	%edi, %edx	# n, i
+    	jge	.L5	#,
+    # test.c:7:     total += i * i;
+    	movl	%edx, %ecx	# i, tmp92
+    	imull	%edx, %ecx	# i, tmp92
+    # test.c:6:   for (i = 0; i < n; i++)
+    	incl	%edx	# i
+    # test.c:7:     total += i * i;
+    	addl	%ecx, %eax	# tmp92, <retval>
+    	jmp	.L2	#
+    .L5:
+    # test.c:10: }
+    	ret
+    	.cfi_endproc
+    .LFE0:
+    	.size	test, .-test
+    	.ident	"GCC: (GNU) 7.0.0 20160809 (experimental)"
+    	.section	.note.GNU-stack,"",@progbits
 
-The comments are intended for humans rather than machines and hence the
-precise format of the comments is subject to change.
+  The comments are intended for humans rather than machines and hence the
+  precise format of the comments is subject to change.
 
 .. option:: -frecord-gcc-switches
 
@@ -382,26 +382,26 @@ precise format of the comments is subject to change.
 
   .. index:: global offset table
 
-.. index:: PIC
+  .. index:: PIC
 
-Generate position-independent code (PIC) suitable for use in a shared
-library, if supported for the target machine.  Such code accesses all
-constant addresses through a global offset table (GOT).  The dynamic
-loader resolves the GOT entries when the program starts (the dynamic
-loader is not part of GCC; it is part of the operating system).  If
-the GOT size for the linked executable exceeds a machine-specific
-maximum size, you get an error message from the linker indicating that
-:option:`-fpic` does not work; in that case, recompile with :option:`-fPIC`
-instead.  (These maximums are 8k on the SPARC, 28k on AArch64 and 32k
-on the m68k and RS/6000.  The x86 has no such limit.)
+  Generate position-independent code (PIC) suitable for use in a shared
+  library, if supported for the target machine.  Such code accesses all
+  constant addresses through a global offset table (GOT).  The dynamic
+  loader resolves the GOT entries when the program starts (the dynamic
+  loader is not part of GCC; it is part of the operating system).  If
+  the GOT size for the linked executable exceeds a machine-specific
+  maximum size, you get an error message from the linker indicating that
+  :option:`-fpic` does not work; in that case, recompile with :option:`-fPIC`
+  instead.  (These maximums are 8k on the SPARC, 28k on AArch64 and 32k
+  on the m68k and RS/6000.  The x86 has no such limit.)
 
-Position-independent code requires special support, and therefore works
-only on certain machines.  For the x86, GCC supports PIC for System V
-but not for the Sun 386i.  Code generated for the IBM RS/6000 is always
-position-independent.
+  Position-independent code requires special support, and therefore works
+  only on certain machines.  For the x86, GCC supports PIC for System V
+  but not for the Sun 386i.  Code generated for the IBM RS/6000 is always
+  position-independent.
 
-When this flag is set, the macros ``__pic__`` and ``__PIC__``
-are defined to 1.
+  When this flag is set, the macros ``__pic__`` and ``__PIC__``
+  are defined to 1.
 
 .. option:: -fPIC
 
@@ -410,11 +410,11 @@ are defined to 1.
   global offset table.  This option makes a difference on AArch64, m68k,
   PowerPC and SPARC.
 
-Position-independent code requires special support, and therefore works
-only on certain machines.
+  Position-independent code requires special support, and therefore works
+  only on certain machines.
 
-When this flag is set, the macros ``__pic__`` and ``__PIC__``
-are defined to 2.
+  When this flag is set, the macros ``__pic__`` and ``__PIC__``
+  are defined to 2.
 
 .. option:: -fpie, -fPIE
 
@@ -423,9 +423,9 @@ are defined to 2.
   Usually these options are used to compile code that will be linked using
   the :option:`-pie` GCC option.
 
-:option:`-fpie` and :option:`-fPIE` both define the macros
-``__pie__`` and ``__PIE__``.  The macros have the value 1
-for :option:`-fpie` and 2 for :option:`-fPIE`.
+  :option:`-fpie` and :option:`-fPIE` both define the macros
+  ``__pie__`` and ``__PIE__``.  The macros have the value 1
+  for :option:`-fpie` and 2 for :option:`-fPIE`.
 
 .. option:: -fno-plt, -fplt
 
@@ -438,11 +438,11 @@ for :option:`-fpie` and 2 for :option:`-fPIE`.
   Lazy binding requires use of the PLT; 
   with :option:`-fno-plt` all external symbols are resolved at load time.
 
-Alternatively, the function attribute ``noplt`` can be used to avoid calls
-through the PLT for specific external functions.
+  Alternatively, the function attribute ``noplt`` can be used to avoid calls
+  through the PLT for specific external functions.
 
-In position-dependent code, a few targets also convert calls to
-functions that are marked to not use the PLT to use the GOT instead.
+  In position-dependent code, a few targets also convert calls to
+  functions that are marked to not use the PLT to use the GOT instead.
 
 .. option:: -fno-jump-tables, -fjump-tables
 
@@ -464,12 +464,12 @@ functions that are marked to not use the PLT to use the GOT instead.
   should never refer to it (except perhaps as a stack pointer, frame
   pointer or in some other fixed role).
 
-:samp:`{reg}` must be the name of a register.  The register names accepted
-are machine-specific and are defined in the ``REGISTER_NAMES``
-macro in the machine description macro file.
+  :samp:`{reg}` must be the name of a register.  The register names accepted
+  are machine-specific and are defined in the ``REGISTER_NAMES``
+  macro in the machine description macro file.
 
-This flag does not have a negative form, because it specifies a
-three-way choice.
+  This flag does not have a negative form, because it specifies a
+  three-way choice.
 
 .. option:: -fcall-used-reg, -fcall-used
 
@@ -478,12 +478,12 @@ three-way choice.
   variables that do not live across a call.  Functions compiled this way
   do not save and restore the register :samp:`{reg}`.
 
-It is an error to use this flag with the frame pointer or stack pointer.
-Use of this flag for other registers that have fixed pervasive roles in
-the machine's execution model produces disastrous results.
+  It is an error to use this flag with the frame pointer or stack pointer.
+  Use of this flag for other registers that have fixed pervasive roles in
+  the machine's execution model produces disastrous results.
 
-This flag does not have a negative form, because it specifies a
-three-way choice.
+  This flag does not have a negative form, because it specifies a
+  three-way choice.
 
 .. option:: -fcall-saved-reg, -fcall-saved
 
@@ -492,15 +492,15 @@ three-way choice.
   live across a call.  Functions compiled this way save and restore
   the register :samp:`{reg}` if they use it.
 
-It is an error to use this flag with the frame pointer or stack pointer.
-Use of this flag for other registers that have fixed pervasive roles in
-the machine's execution model produces disastrous results.
+  It is an error to use this flag with the frame pointer or stack pointer.
+  Use of this flag for other registers that have fixed pervasive roles in
+  the machine's execution model produces disastrous results.
 
-A different sort of disaster results from the use of this flag for
-a register in which function values may be returned.
+  A different sort of disaster results from the use of this flag for
+  a register in which function values may be returned.
 
-This flag does not have a negative form, because it specifies a
-three-way choice.
+  This flag does not have a negative form, because it specifies a
+  three-way choice.
 
 .. option:: -fpack-struct[=n]
 
@@ -510,10 +510,10 @@ three-way choice.
   alignment (that is, objects with default alignment requirements larger than
   this are output potentially unaligned at the next fitting location.
 
-Warning: the :option:`-fpack-struct` switch causes GCC to generate
-code that is not binary compatible with code generated without that switch.
-Additionally, it makes the code suboptimal.
-Use it to conform to a non-default application binary interface.
+  Warning: the :option:`-fpack-struct` switch causes GCC to generate
+  code that is not binary compatible with code generated without that switch.
+  Additionally, it makes the code suboptimal.
+  Use it to conform to a non-default application binary interface.
 
 .. option:: -fleading-underscore
 
@@ -521,10 +521,10 @@ Use it to conform to a non-default application binary interface.
   change the way C symbols are represented in the object file.  One use
   is to help link with legacy assembly code.
 
-Warning: the :option:`-fleading-underscore` switch causes GCC to
-generate code that is not binary compatible with code generated without that
-switch.  Use it to conform to a non-default application binary interface.
-Not all targets provide complete support for this switch.
+  Warning: the :option:`-fleading-underscore` switch causes GCC to
+  generate code that is not binary compatible with code generated without that
+  switch.  Use it to conform to a non-default application binary interface.
+  Not all targets provide complete support for this switch.
 
 .. option:: -ftls-model=model
 
@@ -535,8 +535,8 @@ Not all targets provide complete support for this switch.
   a more efficient model for symbols not visible outside of the translation
   unit, or if :option:`-fpic` is not given on the command line.
 
-The default without :option:`-fpic` is :samp:`initial-exec`; with
-:option:`-fpic` the default is :samp:`global-dynamic`.
+  The default without :option:`-fpic` is :samp:`initial-exec`; with
+  :option:`-fpic` the default is :samp:`global-dynamic`.
 
 .. option:: -ftrampolines
 
@@ -544,21 +544,21 @@ The default without :option:`-fpic` is :samp:`initial-exec`; with
   generate them instead of using descriptors.  Otherwise, for targets that
   do not need them, like for example HP-PA or IA-64, do nothing.
 
-A trampoline is a small piece of code that is created at run time on the
-stack when the address of a nested function is taken, and is used to call
-the nested function indirectly.  Therefore, it requires the stack to be
-made executable in order for the program to work properly.
+  A trampoline is a small piece of code that is created at run time on the
+  stack when the address of a nested function is taken, and is used to call
+  the nested function indirectly.  Therefore, it requires the stack to be
+  made executable in order for the program to work properly.
 
-:option:`-fno-trampolines` is enabled by default on a language by language
-basis to let the compiler avoid generating them, if it computes that this
-is safe, and replace them with descriptors.  Descriptors are made up of data
-only, but the generated code must be prepared to deal with them.  As of this
-writing, :option:`-fno-trampolines` is enabled by default only for Ada.
+  :option:`-fno-trampolines` is enabled by default on a language by language
+  basis to let the compiler avoid generating them, if it computes that this
+  is safe, and replace them with descriptors.  Descriptors are made up of data
+  only, but the generated code must be prepared to deal with them.  As of this
+  writing, :option:`-fno-trampolines` is enabled by default only for Ada.
 
-Moreover, code compiled with :option:`-ftrampolines` and code compiled with
-:option:`-fno-trampolines` are not binary compatible if nested functions are
-present.  This option must therefore be used on a program-wide basis and be
-manipulated with extreme care.
+  Moreover, code compiled with :option:`-ftrampolines` and code compiled with
+  :option:`-fno-trampolines` are not binary compatible if nested functions are
+  present.  This option must therefore be used on a program-wide basis and be
+  manipulated with extreme care.
 
 .. option:: -fvisibility=[default|internal|hidden|protected]
 
@@ -570,61 +570,61 @@ manipulated with extreme care.
   It is strongly recommended that you use this in any shared objects
   you distribute.
 
-Despite the nomenclature, :samp:`default` always means public; i.e.,
-available to be linked against from outside the shared object.
-:samp:`protected` and :samp:`internal` are pretty useless in real-world
-usage so the only other commonly used option is :samp:`hidden`.
-The default if :option:`-fvisibility` isn't specified is
-:samp:`default`, i.e., make every symbol public.
+  Despite the nomenclature, :samp:`default` always means public; i.e.,
+  available to be linked against from outside the shared object.
+  :samp:`protected` and :samp:`internal` are pretty useless in real-world
+  usage so the only other commonly used option is :samp:`hidden`.
+  The default if :option:`-fvisibility` isn't specified is
+  :samp:`default`, i.e., make every symbol public.
 
-A good explanation of the benefits offered by ensuring ELF
-symbols have the correct visibility is given by 'How To Write
-Shared Libraries' by Ulrich Drepper (which can be found at
-https://www.akkadia.org/drepper/)-however a superior
-solution made possible by this option to marking things hidden when
-the default is public is to make the default hidden and mark things
-public.  This is the norm with DLLs on Windows and with :option:`-fvisibility=hidden`
-and ``__attribute__ ((visibility("default")))`` instead of
-``__declspec(dllexport)`` you get almost identical semantics with
-identical syntax.  This is a great boon to those working with
-cross-platform projects.
+  A good explanation of the benefits offered by ensuring ELF
+  symbols have the correct visibility is given by 'How To Write
+  Shared Libraries' by Ulrich Drepper (which can be found at
+  https://www.akkadia.org/drepper/)-however a superior
+  solution made possible by this option to marking things hidden when
+  the default is public is to make the default hidden and mark things
+  public.  This is the norm with DLLs on Windows and with :option:`-fvisibility=hidden`
+  and ``__attribute__ ((visibility("default")))`` instead of
+  ``__declspec(dllexport)`` you get almost identical semantics with
+  identical syntax.  This is a great boon to those working with
+  cross-platform projects.
 
-For those adding visibility support to existing code, you may find
-``#pragma GCC visibility`` of use.  This works by you enclosing
-the declarations you wish to set visibility for with (for example)
-``#pragma GCC visibility push(hidden)`` and
-``#pragma GCC visibility pop``.
-Bear in mind that symbol visibility should be viewed as
-part of the API interface contract and thus all new code should
-always specify visibility when it is not the default; i.e., declarations
-only for use within the local DSO should always be marked explicitly
-as hidden as so to avoid PLT indirection overheads-making this
-abundantly clear also aids readability and self-documentation of the code.
-Note that due to ISO C++ specification requirements, ``operator new`` and
-``operator delete`` must always be of default visibility.
+  For those adding visibility support to existing code, you may find
+  ``#pragma GCC visibility`` of use.  This works by you enclosing
+  the declarations you wish to set visibility for with (for example)
+  ``#pragma GCC visibility push(hidden)`` and
+  ``#pragma GCC visibility pop``.
+  Bear in mind that symbol visibility should be viewed as
+  part of the API interface contract and thus all new code should
+  always specify visibility when it is not the default; i.e., declarations
+  only for use within the local DSO should always be marked explicitly
+  as hidden as so to avoid PLT indirection overheads-making this
+  abundantly clear also aids readability and self-documentation of the code.
+  Note that due to ISO C++ specification requirements, ``operator new`` and
+  ``operator delete`` must always be of default visibility.
 
-Be aware that headers from outside your project, in particular system
-headers and headers from any other library you use, may not be
-expecting to be compiled with visibility other than the default.  You
-may need to explicitly say ``#pragma GCC visibility push(default)``
-before including any such headers.
+  Be aware that headers from outside your project, in particular system
+  headers and headers from any other library you use, may not be
+  expecting to be compiled with visibility other than the default.  You
+  may need to explicitly say ``#pragma GCC visibility push(default)``
+  before including any such headers.
 
-``extern`` declarations are not affected by :option:`-fvisibility` , so
-a lot of code can be recompiled with :option:`-fvisibility=hidden` with
-no modifications.  However, this means that calls to ``extern``
-functions with no explicit visibility use the PLT, so it is more
-effective to use ``__attribute ((visibility))`` and/or
-``#pragma GCC visibility`` to tell the compiler which ``extern``
-declarations should be treated as hidden.
+  ``extern`` declarations are not affected by :option:`-fvisibility` , so
+  a lot of code can be recompiled with :option:`-fvisibility=hidden` with
+  no modifications.  However, this means that calls to ``extern``
+  functions with no explicit visibility use the PLT, so it is more
+  effective to use ``__attribute ((visibility))`` and/or
+  ``#pragma GCC visibility`` to tell the compiler which ``extern``
+  declarations should be treated as hidden.
 
-Note that :option:`-fvisibility` does affect C++ vague linkage
-entities. This means that, for instance, an exception class that is
-be thrown between DSOs must be explicitly marked with default
-visibility so that the :samp:`type_info` nodes are unified between
-the DSOs.
+  Note that :option:`-fvisibility` does affect C++ vague linkage
+  entities. This means that, for instance, an exception class that is
+  be thrown between DSOs must be explicitly marked with default
+  visibility so that the :samp:`type_info` nodes are unified between
+  the DSOs.
 
-An overview of these techniques, their benefits and how to use them
-is at http://gcc.gnu.org//wiki//Visibility.
+  An overview of these techniques, their benefits and how to use them
+  is at http://gcc.gnu.org//wiki//Visibility.
 
 .. option:: -fstrict-volatile-bitfields
 
@@ -638,24 +638,24 @@ is at http://gcc.gnu.org//wiki//Visibility.
   is 16 bits on these targets) to force GCC to use 16-bit accesses
   instead of, perhaps, a more efficient 32-bit access.
 
-If this option is disabled, the compiler uses the most efficient
-instruction.  In the previous example, that might be a 32-bit load
-instruction, even though that accesses bytes that do not contain
-any portion of the bit-field, or memory-mapped registers unrelated to
-the one being updated.
+  If this option is disabled, the compiler uses the most efficient
+  instruction.  In the previous example, that might be a 32-bit load
+  instruction, even though that accesses bytes that do not contain
+  any portion of the bit-field, or memory-mapped registers unrelated to
+  the one being updated.
 
-In some cases, such as when the ``packed`` attribute is applied to a 
-structure field, it may not be possible to access the field with a single
-read or write that is correctly aligned for the target machine.  In this
-case GCC falls back to generating multiple accesses rather than code that 
-will fault or truncate the result at run time.
+  In some cases, such as when the ``packed`` attribute is applied to a 
+  structure field, it may not be possible to access the field with a single
+  read or write that is correctly aligned for the target machine.  In this
+  case GCC falls back to generating multiple accesses rather than code that 
+  will fault or truncate the result at run time.
 
-Note:  Due to restrictions of the C/C++11 memory model, write accesses are
-not allowed to touch non bit-field members.  It is therefore recommended
-to define all bits of the field's type as bit-field members.
+  Note:  Due to restrictions of the C/C++11 memory model, write accesses are
+  not allowed to touch non bit-field members.  It is therefore recommended
+  to define all bits of the field's type as bit-field members.
 
-The default value of this option is determined by the application binary
-interface for the target processor.
+  The default value of this option is determined by the application binary
+  interface for the target processor.
 
 .. option:: -fsync-libcalls
 
@@ -663,7 +663,7 @@ interface for the target processor.
   family of functions may be used to implement the C++11 ``__atomic``
   family of functions.
 
-The default value of this option is enabled, thus the only useful form
-of the option is :option:`-fno-sync-libcalls`.  This option is used in
-the implementation of the libatomic runtime library.
+  The default value of this option is enabled, thus the only useful form
+  of the option is :option:`-fno-sync-libcalls`.  This option is used in
+  the implementation of the libatomic runtime library.
 

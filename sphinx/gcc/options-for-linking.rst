@@ -33,45 +33,45 @@ not doing a link step.
   non-LTO object file is desired, it may be useful to control the type
   manually.
 
-If :samp:`{type}` is :samp:`exec`, code generation produces a static
-binary. In this case :option:`-fpic` and :option:`-fpie` are both
-disabled.
+  If :samp:`{type}` is :samp:`exec`, code generation produces a static
+  binary. In this case :option:`-fpic` and :option:`-fpie` are both
+  disabled.
 
-If :samp:`{type}` is :samp:`dyn`, code generation produces a shared
-library.  In this case :option:`-fpic` or :option:`-fPIC` is preserved,
-but not enabled automatically.  This allows to build shared libraries
-without position-independent code on architectures where this is
-possible, i.e. on x86.
+  If :samp:`{type}` is :samp:`dyn`, code generation produces a shared
+  library.  In this case :option:`-fpic` or :option:`-fPIC` is preserved,
+  but not enabled automatically.  This allows to build shared libraries
+  without position-independent code on architectures where this is
+  possible, i.e. on x86.
 
-If :samp:`{type}` is :samp:`pie`, code generation produces an :option:`-fpie`
-executable. This results in similar optimizations as :samp:`exec`
-except that :option:`-fpie` is not disabled if specified at compilation
-time.
+  If :samp:`{type}` is :samp:`pie`, code generation produces an :option:`-fpie`
+  executable. This results in similar optimizations as :samp:`exec`
+  except that :option:`-fpie` is not disabled if specified at compilation
+  time.
 
-If :samp:`{type}` is :samp:`rel`, the compiler assumes that incremental linking is
-done.  The sections containing intermediate code for link-time optimization are
-merged, pre-optimized, and output to the resulting object file. In addition, if
-:option:`-ffat-lto-objects` is specified, binary code is produced for future
-non-LTO linking. The object file produced by incremental linking is smaller
-than a static library produced from the same object files.  At link time the
-result of incremental linking also loads faster than a static
-library assuming that the majority of objects in the library are used.
+  If :samp:`{type}` is :samp:`rel`, the compiler assumes that incremental linking is
+  done.  The sections containing intermediate code for link-time optimization are
+  merged, pre-optimized, and output to the resulting object file. In addition, if
+  :option:`-ffat-lto-objects` is specified, binary code is produced for future
+  non-LTO linking. The object file produced by incremental linking is smaller
+  than a static library produced from the same object files.  At link time the
+  result of incremental linking also loads faster than a static
+  library assuming that the majority of objects in the library are used.
 
-Finally :samp:`nolto-rel` configures the compiler for incremental linking where
-code generation is forced, a final binary is produced, and the intermediate
-code for later link-time optimization is stripped. When multiple object files
-are linked together the resulting code is better optimized than with
-link-time optimizations disabled (for example, cross-module inlining 
-happens), but most of benefits of whole program optimizations are lost. 
+  Finally :samp:`nolto-rel` configures the compiler for incremental linking where
+  code generation is forced, a final binary is produced, and the intermediate
+  code for later link-time optimization is stripped. When multiple object files
+  are linked together the resulting code is better optimized than with
+  link-time optimizations disabled (for example, cross-module inlining 
+  happens), but most of benefits of whole program optimizations are lost. 
 
-During the incremental link (by :option:`-r` ) the linker plugin defaults to
-rel. With current interfaces to GNU Binutils it is however not
-possible to incrementally link LTO objects and non-LTO objects into a single
-mixed object file.  If any of object files in incremental link cannot
-be used for link-time optimization, the linker plugin issues a warning and
-uses :samp:`nolto-rel`. To maintain whole program optimization, it is
-recommended to link such objects into static library instead. Alternatively it
-is possible to use H.J. Lu's binutils with support for mixed objects.
+  During the incremental link (by :option:`-r` ) the linker plugin defaults to
+  rel. With current interfaces to GNU Binutils it is however not
+  possible to incrementally link LTO objects and non-LTO objects into a single
+  mixed object file.  If any of object files in incremental link cannot
+  be used for link-time optimization, the linker plugin issues a warning and
+  uses :samp:`nolto-rel`. To maintain whole program optimization, it is
+  recommended to link such objects into static library instead. Alternatively it
+  is possible to use H.J. Lu's binutils with support for mixed objects.
 
 .. option:: -fuse-ld=bfd
 
@@ -85,7 +85,7 @@ is possible to use H.J. Lu's binutils with support for mixed objects.
 
   Use the LLVM :command:`lld` linker instead of the default linker.
 
-.. index:: Libraries
+  .. index:: Libraries
 
 .. option:: -llibrary, -l
 
@@ -93,26 +93,26 @@ is possible to use H.J. Lu's binutils with support for mixed objects.
   alternative with the library as a separate argument is only for
   POSIX compliance and is not recommended.)
 
-The :option:`-l` option is passed directly to the linker by GCC.  Refer
-to your linker documentation for exact details.  The general
-description below applies to the GNU linker.  
+  The :option:`-l` option is passed directly to the linker by GCC.  Refer
+  to your linker documentation for exact details.  The general
+  description below applies to the GNU linker.  
 
-The linker searches a standard list of directories for the library.
-The directories searched include several standard system directories
-plus any that you specify with :option:`-L`.
+  The linker searches a standard list of directories for the library.
+  The directories searched include several standard system directories
+  plus any that you specify with :option:`-L`.
 
-Static libraries are archives of object files, and have file names
-like lib :samp:`{library}`.a.  Some targets also support shared
-libraries, which typically have names like lib :samp:`{library}`.so.
-If both static and shared libraries are found, the linker gives
-preference to linking with the shared library unless the
-:option:`-static` option is used.
+  Static libraries are archives of object files, and have file names
+  like lib :samp:`{library}`.a.  Some targets also support shared
+  libraries, which typically have names like lib :samp:`{library}`.so.
+  If both static and shared libraries are found, the linker gives
+  preference to linking with the shared library unless the
+  :option:`-static` option is used.
 
-It makes a difference where in the command you write this option; the
-linker searches and processes libraries and object files in the order they
-are specified.  Thus, :samp:`foo.o -lz bar.o` searches library :samp:`z`
-after file foo.o but before bar.o.  If bar.o refers
-to functions in :samp:`z`, those functions may not be loaded.
+  It makes a difference where in the command you write this option; the
+  linker searches and processes libraries and object files in the order they
+  are specified.  Thus, :samp:`foo.o -lz bar.o` searches library :samp:`z`
+  after file foo.o but before bar.o.  If bar.o refers
+  to functions in :samp:`z`, those functions may not be loaded.
 
 .. option:: -lobjc
 
@@ -134,11 +134,11 @@ to functions in :samp:`z`, those functions may not be loaded.
   The standard startup files are used normally, unless :option:`-nostartfiles`
   is used.  
 
-The compiler may generate calls to ``memcmp``,
-``memset``, ``memcpy`` and ``memmove``.
-These entries are usually resolved by entries in
-libc.  These entry points should be supplied through some other
-mechanism when this option is specified.
+  The compiler may generate calls to ``memcmp``,
+  ``memset``, ``memcpy`` and ``memmove``.
+  These entries are usually resolved by entries in
+  libc.  These entry points should be supplied through some other
+  mechanism when this option is specified.
 
 .. option:: -nolibc
 
@@ -159,37 +159,37 @@ mechanism when this option is specified.
   the linker, and options specifying linkage of the system libraries, such as
   :option:`-static-libgcc` or :option:`-shared-libgcc` , are ignored.
 
-The compiler may generate calls to ``memcmp``, ``memset``,
-``memcpy`` and ``memmove``.
-These entries are usually resolved by entries in
-libc.  These entry points should be supplied through some other
-mechanism when this option is specified.
+  The compiler may generate calls to ``memcmp``, ``memset``,
+  ``memcpy`` and ``memmove``.
+  These entries are usually resolved by entries in
+  libc.  These entry points should be supplied through some other
+  mechanism when this option is specified.
 
-.. index:: -lgcc, use with -nostdlib
+  .. index:: -lgcc, use with -nostdlib
 
-.. index:: -nostdlib and unresolved references
+  .. index:: -nostdlib and unresolved references
 
-.. index:: unresolved references and -nostdlib
+  .. index:: unresolved references and -nostdlib
 
-.. index:: -lgcc, use with -nodefaultlibs
+  .. index:: -lgcc, use with -nodefaultlibs
 
-.. index:: -nodefaultlibs and unresolved references
+  .. index:: -nodefaultlibs and unresolved references
 
-.. index:: unresolved references and -nodefaultlibs
+  .. index:: unresolved references and -nodefaultlibs
 
-One of the standard libraries bypassed by :option:`-nostdlib` and
-:option:`-nodefaultlibs` is libgcc.a, a library of internal subroutines
-which GCC uses to overcome shortcomings of particular machines, or special
-needs for some languages.
-(See :ref:`Interfacing to GCC Output <interface>`,
-for more discussion of libgcc.a.)
-In most cases, you need libgcc.a even when you want to avoid
-other standard libraries.  In other words, when you specify :option:`-nostdlib`
-or :option:`-nodefaultlibs` you should usually specify :option:`-lgcc` as well.
-This ensures that you have no unresolved references to internal GCC
-library subroutines.
-(An example of such an internal subroutine is ``__main``, used to ensure C++
-constructors are called; see :ref:`collect2`.)
+  One of the standard libraries bypassed by :option:`-nostdlib` and
+  :option:`-nodefaultlibs` is libgcc.a, a library of internal subroutines
+  which GCC uses to overcome shortcomings of particular machines, or special
+  needs for some languages.
+  (See :ref:`Interfacing to GCC Output <interface>`,
+  for more discussion of libgcc.a.)
+  In most cases, you need libgcc.a even when you want to avoid
+  other standard libraries.  In other words, when you specify :option:`-nostdlib`
+  or :option:`-nodefaultlibs` you should usually specify :option:`-lgcc` as well.
+  This ensures that you have no unresolved references to internal GCC
+  library subroutines.
+  (An example of such an internal subroutine is ``__main``, used to ensure C++
+  constructors are called; see :ref:`collect2`.)
 
 .. option:: -e entry, -e, -entry
 
@@ -268,31 +268,31 @@ constructors are called; see :ref:`collect2`.)
   If no shared version of libgcc was built when the compiler was
   configured, these options have no effect.
 
-There are several situations in which an application should use the
-shared libgcc instead of the static version.  The most common
-of these is when the application wishes to throw and catch exceptions
-across different shared libraries.  In that case, each of the libraries
-as well as the application itself should use the shared libgcc.
+  There are several situations in which an application should use the
+  shared libgcc instead of the static version.  The most common
+  of these is when the application wishes to throw and catch exceptions
+  across different shared libraries.  In that case, each of the libraries
+  as well as the application itself should use the shared libgcc.
 
-Therefore, the G++ driver automatically adds :option:`-shared-libgcc`
-whenever you build a shared library or a main executable, because C++
-programs typically use exceptions, so this is the right thing to do.
+  Therefore, the G++ driver automatically adds :option:`-shared-libgcc`
+  whenever you build a shared library or a main executable, because C++
+  programs typically use exceptions, so this is the right thing to do.
 
-If, instead, you use the GCC driver to create shared libraries, you may
-find that they are not always linked with the shared libgcc.
-If GCC finds, at its configuration time, that you have a non-GNU linker
-or a GNU linker that does not support option :option:`--eh-frame-hdr` ,
-it links the shared version of libgcc into shared libraries
-by default.  Otherwise, it takes advantage of the linker and optimizes
-away the linking with the shared version of libgcc, linking with
-the static version of libgcc by default.  This allows exceptions to
-propagate through such shared libraries, without incurring relocation
-costs at library load time.
+  If, instead, you use the GCC driver to create shared libraries, you may
+  find that they are not always linked with the shared libgcc.
+  If GCC finds, at its configuration time, that you have a non-GNU linker
+  or a GNU linker that does not support option :option:`--eh-frame-hdr` ,
+  it links the shared version of libgcc into shared libraries
+  by default.  Otherwise, it takes advantage of the linker and optimizes
+  away the linking with the shared version of libgcc, linking with
+  the static version of libgcc by default.  This allows exceptions to
+  propagate through such shared libraries, without incurring relocation
+  costs at library load time.
 
-However, if a library or main executable is supposed to throw or catch
-exceptions, you must link it using the G++ driver, or using the option
-:option:`-shared-libgcc` , such that it is linked with the shared
-libgcc.
+  However, if a library or main executable is supposed to throw or catch
+  exceptions, you must link it using the G++ driver, or using the option
+  :option:`-shared-libgcc` , such that it is linked with the shared
+  libgcc.
 
 .. option:: -static-libasan
 
@@ -358,29 +358,29 @@ libgcc.
 
   .. index:: linker script
 
-Use :samp:`{script}` as the linker script.  This option is supported by most
-systems using the GNU linker.  On some targets, such as bare-board
-targets without an operating system, the :option:`-T` option may be required
-when linking to avoid references to undefined symbols.
+  Use :samp:`{script}` as the linker script.  This option is supported by most
+  systems using the GNU linker.  On some targets, such as bare-board
+  targets without an operating system, the :option:`-T` option may be required
+  when linking to avoid references to undefined symbols.
 
 .. option:: -Xlinker option, -Xlinker
 
   Pass :samp:`{option}` as an option to the linker.  You can use this to
   supply system-specific linker options that GCC does not recognize.
 
-If you want to pass an option that takes a separate argument, you must use
-:option:`-Xlinker` twice, once for the option and once for the argument.
-For example, to pass :option:`-assert definitions` , you must write
-:option:`-Xlinker -assert -Xlinker definitions`.  It does not work to write
-:option:`-Xlinker "-assert definitions"` , because this passes the entire
-string as a single argument, which is not what the linker expects.
+  If you want to pass an option that takes a separate argument, you must use
+  :option:`-Xlinker` twice, once for the option and once for the argument.
+  For example, to pass :option:`-assert definitions` , you must write
+  :option:`-Xlinker -assert -Xlinker definitions`.  It does not work to write
+  :option:`-Xlinker "-assert definitions"` , because this passes the entire
+  string as a single argument, which is not what the linker expects.
 
-When using the GNU linker, it is usually more convenient to pass
-arguments to linker options using the :samp:`{option}` = :samp:`{value}`
-syntax than as separate arguments.  For example, you can specify
-:option:`-Xlinker -Map=output.map` rather than
-:option:`-Xlinker -Map -Xlinker output.map`.  Other linkers may not support
-this syntax for command-line options.
+  When using the GNU linker, it is usually more convenient to pass
+  arguments to linker options using the :samp:`{option}` = :samp:`{value}`
+  syntax than as separate arguments.  For example, you can specify
+  :option:`-Xlinker -Map=output.map` rather than
+  :option:`-Xlinker -Map -Xlinker output.map`.  Other linkers may not support
+  this syntax for command-line options.
 
 .. option:: -Wl,option, -Wl
 

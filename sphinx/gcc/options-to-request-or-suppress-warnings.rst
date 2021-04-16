@@ -51,15 +51,15 @@ warnings but control the kinds of diagnostics produced by GCC.
   :option:`-Wswitch` warnings not be errors, even when :option:`-Werror`
   is in effect.
 
-The warning message for each controllable warning includes the
-option that controls the warning.  That option can then be used with
-:option:`-Werror` = and :option:`-Wno-error` = as described above.
-(Printing of the option in the warning message can be disabled using the
-:option:`-fno-diagnostics-show-option` flag.)
+  The warning message for each controllable warning includes the
+  option that controls the warning.  That option can then be used with
+  :option:`-Werror` = and :option:`-Wno-error` = as described above.
+  (Printing of the option in the warning message can be disabled using the
+  :option:`-fno-diagnostics-show-option` flag.)
 
-Note that specifying :option:`-Werror`:samp:`={foo}` automatically implies
-:option:`-W`:samp:`{foo}`.  However, :option:`-Wno-error`:samp:`={foo}` does not
-imply anything.
+  Note that specifying :option:`-Werror`:samp:`={foo}` automatically implies
+  :option:`-W`:samp:`{foo}`.  However, :option:`-Wno-error`:samp:`={foo}` does not
+  imply anything.
 
 .. option:: -Wfatal-errors, -Wno-fatal-errors
 
@@ -108,41 +108,41 @@ warn at all unless optimization is enabled.
   programs that do not follow ISO C and ISO C++.  For ISO C, follows the
   version of the ISO C standard specified by any :option:`-std` option used.
 
-Valid ISO C and ISO C++ programs should compile properly with or without
-this option (though a rare few require :option:`-ansi` or a
-:option:`-std` option specifying the required version of ISO C).  However,
-without this option, certain GNU extensions and traditional C and C++
-features are supported as well.  With this option, they are rejected.
+  Valid ISO C and ISO C++ programs should compile properly with or without
+  this option (though a rare few require :option:`-ansi` or a
+  :option:`-std` option specifying the required version of ISO C).  However,
+  without this option, certain GNU extensions and traditional C and C++
+  features are supported as well.  With this option, they are rejected.
 
-:option:`-Wpedantic` does not cause warning messages for use of the
-alternate keywords whose names begin and end with :samp:`__`.  This alternate
-format can also be used to disable warnings for non-ISO :samp:`__intN` types,
-i.e. :samp:`__intN__`.
-Pedantic warnings are also disabled in the expression that follows
-``__extension__``.  However, only system header files should use
-these escape routes; application programs should avoid them.
-See :ref:`alternate-keywords`.
+  :option:`-Wpedantic` does not cause warning messages for use of the
+  alternate keywords whose names begin and end with :samp:`__`.  This alternate
+  format can also be used to disable warnings for non-ISO :samp:`__intN` types,
+  i.e. :samp:`__intN__`.
+  Pedantic warnings are also disabled in the expression that follows
+  ``__extension__``.  However, only system header files should use
+  these escape routes; application programs should avoid them.
+  See :ref:`alternate-keywords`.
 
-Some users try to use :option:`-Wpedantic` to check programs for strict ISO
-C conformance.  They soon find that it does not do quite what they want:
-it finds some non-ISO practices, but not all-only those for which
-ISO C *requires* a diagnostic, and some others for which
-diagnostics have been added.
+  Some users try to use :option:`-Wpedantic` to check programs for strict ISO
+  C conformance.  They soon find that it does not do quite what they want:
+  it finds some non-ISO practices, but not all-only those for which
+  ISO C *requires* a diagnostic, and some others for which
+  diagnostics have been added.
 
-A feature to report any failure to conform to ISO C might be useful in
-some instances, but would require considerable additional work and would
-be quite different from :option:`-Wpedantic`.  We don't have plans to
-support such a feature in the near future.
+  A feature to report any failure to conform to ISO C might be useful in
+  some instances, but would require considerable additional work and would
+  be quite different from :option:`-Wpedantic`.  We don't have plans to
+  support such a feature in the near future.
 
-Where the standard specified with :option:`-std` represents a GNU
-extended dialect of C, such as :samp:`gnu90` or :samp:`gnu99`, there is a
-corresponding :dfn:`base standard`, the version of ISO C on which the GNU
-extended dialect is based.  Warnings from :option:`-Wpedantic` are given
-where they are required by the base standard.  (It does not make sense
-for such warnings to be given only for features not in the specified GNU
-C dialect, since by definition the GNU dialects of C include all
-features the compiler supports with the given option, and there would be
-nothing to warn about.)
+  Where the standard specified with :option:`-std` represents a GNU
+  extended dialect of C, such as :samp:`gnu90` or :samp:`gnu99`, there is a
+  corresponding :dfn:`base standard`, the version of ISO C on which the GNU
+  extended dialect is based.  Warnings from :option:`-Wpedantic` are given
+  where they are required by the base standard.  (It does not make sense
+  for such warnings to be given only for features not in the specified GNU
+  C dialect, since by definition the GNU dialects of C include all
+  features the compiler supports with the given option, and there would be
+  nothing to warn about.)
 
 .. option:: -pedantic-errors
 
@@ -161,73 +161,73 @@ nothing to warn about.)
   enables some language-specific warnings described in C++ Dialect
   Options and Objective-C and Objective-C++ Dialect Options.
 
-:option:`-Wall` turns on the following warning flags:
+  :option:`-Wall` turns on the following warning flags:
 
-:option:`-Waddress`   
-:option:`-Warray-bounds=1` (only with :option:`:option:`-O2`` )  
-:option:`-Warray-parameter=2` (C and Objective :option:`-C` only) 
-:option:`-Wbool-compare`  
-:option:`-Wbool-operation`  
-:option:`-Wc++11-compat`  :option:`-Wc++14-compat`  
-:option:`-Wcatch-value` (C++ and Objective :option:`-C++` only)  
-:option:`-Wchar-subscripts`  
-:option:`-Wcomment`  
-:option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
-:option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
-:option:`-Wformat`   
-:option:`-Wformat-overflow`  
-:option:`-Wformat-truncation`  
-:option:`-Wint-in-bool-context`  
-:option:`-Wimplicit` (C and Objective :option:`-C` only) 
-:option:`-Wimplicit-int` (C and Objective :option:`-C` only) 
-:option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) 
-:option:`-Winit-self` (only for C++) 
-:option:`-Wlogical-not-parentheses` 
-:option:`-Wmain` (only for C/ObjC and unless :option:`:option:`-ffreestanding`` )  
-:option:`-Wmaybe-uninitialized` 
-:option:`-Wmemset-elt-size` 
-:option:`-Wmemset-transposed-args` 
-:option:`-Wmisleading-indentation` (only for C/C++) 
-:option:`-Wmissing-attributes` 
-:option:`-Wmissing-braces` (only for C/ObjC) 
-:option:`-Wmultistatement-macros`  
-:option:`-Wnarrowing` (only for C++)  
-:option:`-Wnonnull`  
-:option:`-Wnonnull-compare`  
-:option:`-Wopenmp-simd` 
-:option:`-Wparentheses`  
-:option:`-Wpessimizing-move` (only for C++)  
-:option:`-Wpointer-sign`  
-:option:`-Wrange-loop-construct` (only for C++)  
-:option:`-Wreorder`   
-:option:`-Wrestrict`   
-:option:`-Wreturn-type`  
-:option:`-Wsequence-point`  
-:option:`-Wsign-compare` (only in C++)  
-:option:`-Wsizeof-array-div` 
-:option:`-Wsizeof-pointer-div` 
-:option:`-Wsizeof-pointer-memaccess` 
-:option:`-Wstrict-aliasing`  
-:option:`-Wstrict-overflow=1`  
-:option:`-Wswitch`  
-:option:`-Wtautological-compare`  
-:option:`-Wtrigraphs`  
-:option:`-Wuninitialized`  
-:option:`-Wunknown-pragmas`  
-:option:`-Wunused-function`  
-:option:`-Wunused-label`     
-:option:`-Wunused-value`     
-:option:`-Wunused-variable`  
-:option:`-Wvla-parameter` (C and Objective :option:`-C` only) 
-:option:`-Wvolatile-register-var`  
-:option:`-Wzero-length-bounds`
-Note that some warning flags are not implied by :option:`-Wall`.  Some of
-them warn about constructions that users generally do not consider
-questionable, but which occasionally you might wish to check for;
-others warn about constructions that are necessary or hard to avoid in
-some cases, and there is no simple way to modify the code to suppress
-the warning. Some of them are enabled by :option:`-Wextra` but many of
-them must be enabled individually.
+  :option:`-Waddress`   
+  :option:`-Warray-bounds=1` (only with :option:`:option:`-O2`` )  
+  :option:`-Warray-parameter=2` (C and Objective :option:`-C` only) 
+  :option:`-Wbool-compare`  
+  :option:`-Wbool-operation`  
+  :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  
+  :option:`-Wcatch-value` (C++ and Objective :option:`-C++` only)  
+  :option:`-Wchar-subscripts`  
+  :option:`-Wcomment`  
+  :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
+  :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
+  :option:`-Wformat`   
+  :option:`-Wformat-overflow`  
+  :option:`-Wformat-truncation`  
+  :option:`-Wint-in-bool-context`  
+  :option:`-Wimplicit` (C and Objective :option:`-C` only) 
+  :option:`-Wimplicit-int` (C and Objective :option:`-C` only) 
+  :option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) 
+  :option:`-Winit-self` (only for C++) 
+  :option:`-Wlogical-not-parentheses` 
+  :option:`-Wmain` (only for C/ObjC and unless :option:`:option:`-ffreestanding`` )  
+  :option:`-Wmaybe-uninitialized` 
+  :option:`-Wmemset-elt-size` 
+  :option:`-Wmemset-transposed-args` 
+  :option:`-Wmisleading-indentation` (only for C/C++) 
+  :option:`-Wmissing-attributes` 
+  :option:`-Wmissing-braces` (only for C/ObjC) 
+  :option:`-Wmultistatement-macros`  
+  :option:`-Wnarrowing` (only for C++)  
+  :option:`-Wnonnull`  
+  :option:`-Wnonnull-compare`  
+  :option:`-Wopenmp-simd` 
+  :option:`-Wparentheses`  
+  :option:`-Wpessimizing-move` (only for C++)  
+  :option:`-Wpointer-sign`  
+  :option:`-Wrange-loop-construct` (only for C++)  
+  :option:`-Wreorder`   
+  :option:`-Wrestrict`   
+  :option:`-Wreturn-type`  
+  :option:`-Wsequence-point`  
+  :option:`-Wsign-compare` (only in C++)  
+  :option:`-Wsizeof-array-div` 
+  :option:`-Wsizeof-pointer-div` 
+  :option:`-Wsizeof-pointer-memaccess` 
+  :option:`-Wstrict-aliasing`  
+  :option:`-Wstrict-overflow=1`  
+  :option:`-Wswitch`  
+  :option:`-Wtautological-compare`  
+  :option:`-Wtrigraphs`  
+  :option:`-Wuninitialized`  
+  :option:`-Wunknown-pragmas`  
+  :option:`-Wunused-function`  
+  :option:`-Wunused-label`     
+  :option:`-Wunused-value`     
+  :option:`-Wunused-variable`  
+  :option:`-Wvla-parameter` (C and Objective :option:`-C` only) 
+  :option:`-Wvolatile-register-var`  
+  :option:`-Wzero-length-bounds`
+  Note that some warning flags are not implied by :option:`-Wall`.  Some of
+  them warn about constructions that users generally do not consider
+  questionable, but which occasionally you might wish to check for;
+  others warn about constructions that are necessary or hard to avoid in
+  some cases, and there is no simple way to modify the code to suppress
+  the warning. Some of them are enabled by :option:`-Wextra` but many of
+  them must be enabled individually.
 
 .. option:: -Wextra, -W, -Wno-extra
 
@@ -235,43 +235,43 @@ them must be enabled individually.
   :option:`-Wall`. (This option used to be called :option:`-W`.  The older
   name is still supported, but the newer name is more descriptive.)
 
-:option:`-Wclobbered`  
-:option:`-Wcast-function-type`  
-:option:`-Wdeprecated-copy` (C++ only) 
-:option:`-Wempty-body`  
-:option:`-Wenum-conversion` (C only) 
-:option:`-Wignored-qualifiers` 
-:option:`-Wimplicit-fallthrough=3` 
-:option:`-Wmissing-field-initializers`  
-:option:`-Wmissing-parameter-type` (C only)  
-:option:`-Wold-style-declaration` (C only)  
-:option:`-Woverride-init`  
-:option:`-Wsign-compare` (C only) 
-:option:`-Wstring-compare` 
-:option:`-Wredundant-move` (only for C++)  
-:option:`-Wtype-limits`  
-:option:`-Wuninitialized`  
-:option:`-Wshift-negative-value` (in C++03 and in C99 and newer)  
-:option:`-Wunused-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` ) 
-:option:`-Wunused-but-set-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` )
-The option :option:`-Wextra` also prints warning messages for the
-following cases:
+  :option:`-Wclobbered`  
+  :option:`-Wcast-function-type`  
+  :option:`-Wdeprecated-copy` (C++ only) 
+  :option:`-Wempty-body`  
+  :option:`-Wenum-conversion` (C only) 
+  :option:`-Wignored-qualifiers` 
+  :option:`-Wimplicit-fallthrough=3` 
+  :option:`-Wmissing-field-initializers`  
+  :option:`-Wmissing-parameter-type` (C only)  
+  :option:`-Wold-style-declaration` (C only)  
+  :option:`-Woverride-init`  
+  :option:`-Wsign-compare` (C only) 
+  :option:`-Wstring-compare` 
+  :option:`-Wredundant-move` (only for C++)  
+  :option:`-Wtype-limits`  
+  :option:`-Wuninitialized`  
+  :option:`-Wshift-negative-value` (in C++03 and in C99 and newer)  
+  :option:`-Wunused-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` ) 
+  :option:`-Wunused-but-set-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` )
+  The option :option:`-Wextra` also prints warning messages for the
+  following cases:
 
-* A pointer is compared against integer zero with ``<``, ``<=``,
-  ``>``, or ``>=``.
+  * A pointer is compared against integer zero with ``<``, ``<=``,
+    ``>``, or ``>=``.
 
-* (C++ only) An enumerator and a non-enumerator both appear in a
-  conditional expression.
+  * (C++ only) An enumerator and a non-enumerator both appear in a
+    conditional expression.
 
-* (C++ only) Ambiguous virtual bases.
+  * (C++ only) Ambiguous virtual bases.
 
-* (C++ only) Subscripting an array that has been declared ``register``.
+  * (C++ only) Subscripting an array that has been declared ``register``.
 
-* (C++ only) Taking the address of a variable that has been declared
-  ``register``.
+  * (C++ only) Taking the address of a variable that has been declared
+    ``register``.
 
-* (C++ only) A base class is not initialized in the copy constructor
-  of a derived class.
+  * (C++ only) A base class is not initialized in the copy constructor
+    of a derived class.
 
 .. option:: -Wabi , -Wabi, -Wno-abi
 
@@ -279,115 +279,115 @@ following cases:
 
     C, Objective-C, C++ and Objective-C++ only
 
-Warn about code affected by ABI changes.  This includes code that may
-not be compatible with the vendor-neutral C++ ABI as well as the psABI
-for the particular target.
+  Warn about code affected by ABI changes.  This includes code that may
+  not be compatible with the vendor-neutral C++ ABI as well as the psABI
+  for the particular target.
 
-Since G++ now defaults to updating the ABI with each major release,
-normally :option:`-Wabi` warns only about C++ ABI compatibility
-problems if there is a check added later in a release series for an
-ABI issue discovered since the initial release.  :option:`-Wabi` warns
-about more things if an older ABI version is selected (with
-:option:`-fabi-version`:samp:`={n}` ).
+  Since G++ now defaults to updating the ABI with each major release,
+  normally :option:`-Wabi` warns only about C++ ABI compatibility
+  problems if there is a check added later in a release series for an
+  ABI issue discovered since the initial release.  :option:`-Wabi` warns
+  about more things if an older ABI version is selected (with
+  :option:`-fabi-version`:samp:`={n}` ).
 
-:option:`-Wabi` can also be used with an explicit version number to
-warn about C++ ABI compatibility with a particular :option:`-fabi-version`
-level, e.g. :option:`-Wabi=2` to warn about changes relative to
-:option:`-fabi-version=2`.
+  :option:`-Wabi` can also be used with an explicit version number to
+  warn about C++ ABI compatibility with a particular :option:`-fabi-version`
+  level, e.g. :option:`-Wabi=2` to warn about changes relative to
+  :option:`-fabi-version=2`.
 
-If an explicit version number is provided and
-:option:`-fabi-compat-version` is not specified, the version number
-from this option is used for compatibility aliases.  If no explicit
-version number is provided with this option, but
-:option:`-fabi-compat-version` is specified, that version number is
-used for C++ ABI warnings.
+  If an explicit version number is provided and
+  :option:`-fabi-compat-version` is not specified, the version number
+  from this option is used for compatibility aliases.  If no explicit
+  version number is provided with this option, but
+  :option:`-fabi-compat-version` is specified, that version number is
+  used for C++ ABI warnings.
 
-Although an effort has been made to warn about
-all such cases, there are probably some cases that are not warned about,
-even though G++ is generating incompatible code.  There may also be
-cases where warnings are emitted even though the code that is generated
-is compatible.
+  Although an effort has been made to warn about
+  all such cases, there are probably some cases that are not warned about,
+  even though G++ is generating incompatible code.  There may also be
+  cases where warnings are emitted even though the code that is generated
+  is compatible.
 
-You should rewrite your code to avoid these warnings if you are
-concerned about the fact that code generated by G++ may not be binary
-compatible with code generated by other compilers.
+  You should rewrite your code to avoid these warnings if you are
+  concerned about the fact that code generated by G++ may not be binary
+  compatible with code generated by other compilers.
 
-Known incompatibilities in :option:`-fabi-version=2` (which was the
-default from GCC 3.4 to 4.9) include:
+  Known incompatibilities in :option:`-fabi-version=2` (which was the
+  default from GCC 3.4 to 4.9) include:
 
-* A template with a non-type template parameter of reference type was
-  mangled incorrectly:
+  * A template with a non-type template parameter of reference type was
+    mangled incorrectly:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-    extern int N;
-    template <int &> struct S {};
-    void n (S<N>) {2}
+      extern int N;
+      template <int &> struct S {};
+      void n (S<N>) {2}
 
-  This was fixed in :option:`-fabi-version=3`.
+    This was fixed in :option:`-fabi-version=3`.
 
-* SIMD vector types declared using ``__attribute ((vector_size))`` were
-  mangled in a non-standard way that does not allow for overloading of
-  functions taking vectors of different sizes.
+  * SIMD vector types declared using ``__attribute ((vector_size))`` were
+    mangled in a non-standard way that does not allow for overloading of
+    functions taking vectors of different sizes.
 
-  The mangling was changed in :option:`-fabi-version=4`.
+    The mangling was changed in :option:`-fabi-version=4`.
 
-* ``__attribute ((const))`` and ``noreturn`` were mangled as type
-  qualifiers, and ``decltype`` of a plain declaration was folded away.
+  * ``__attribute ((const))`` and ``noreturn`` were mangled as type
+    qualifiers, and ``decltype`` of a plain declaration was folded away.
 
-  These mangling issues were fixed in :option:`-fabi-version=5`.
+    These mangling issues were fixed in :option:`-fabi-version=5`.
 
-* Scoped enumerators passed as arguments to a variadic function are
-  promoted like unscoped enumerators, causing ``va_arg`` to complain.
-  On most targets this does not actually affect the parameter passing
-  ABI, as there is no way to pass an argument smaller than ``int``.
+  * Scoped enumerators passed as arguments to a variadic function are
+    promoted like unscoped enumerators, causing ``va_arg`` to complain.
+    On most targets this does not actually affect the parameter passing
+    ABI, as there is no way to pass an argument smaller than ``int``.
 
-  Also, the ABI changed the mangling of template argument packs,
-  ``const_cast``, ``static_cast``, prefix increment/decrement, and
-  a class scope function used as a template argument.
+    Also, the ABI changed the mangling of template argument packs,
+    ``const_cast``, ``static_cast``, prefix increment/decrement, and
+    a class scope function used as a template argument.
 
-  These issues were corrected in :option:`-fabi-version=6`.
+    These issues were corrected in :option:`-fabi-version=6`.
 
-* Lambdas in default argument scope were mangled incorrectly, and the
-  ABI changed the mangling of ``nullptr_t``.
+  * Lambdas in default argument scope were mangled incorrectly, and the
+    ABI changed the mangling of ``nullptr_t``.
 
-  These issues were corrected in :option:`-fabi-version=7`.
+    These issues were corrected in :option:`-fabi-version=7`.
 
-* When mangling a function type with function-cv-qualifiers, the
-  un-qualified function type was incorrectly treated as a substitution
-  candidate.
+  * When mangling a function type with function-cv-qualifiers, the
+    un-qualified function type was incorrectly treated as a substitution
+    candidate.
 
-  This was fixed in :option:`-fabi-version=8` , the default for GCC 5.1.
+    This was fixed in :option:`-fabi-version=8` , the default for GCC 5.1.
 
-* ``decltype(nullptr)`` incorrectly had an alignment of 1, leading to
-  unaligned accesses.  Note that this did not affect the ABI of a
-  function with a ``nullptr_t`` parameter, as parameters have a
-  minimum alignment.
+  * ``decltype(nullptr)`` incorrectly had an alignment of 1, leading to
+    unaligned accesses.  Note that this did not affect the ABI of a
+    function with a ``nullptr_t`` parameter, as parameters have a
+    minimum alignment.
 
-  This was fixed in :option:`-fabi-version=9` , the default for GCC 5.2.
+    This was fixed in :option:`-fabi-version=9` , the default for GCC 5.2.
 
-* Target-specific attributes that affect the identity of a type, such as
-  ia32 calling conventions on a function type (stdcall, regparm, etc.),
-  did not affect the mangled name, leading to name collisions when
-  function pointers were used as template arguments.
+  * Target-specific attributes that affect the identity of a type, such as
+    ia32 calling conventions on a function type (stdcall, regparm, etc.),
+    did not affect the mangled name, leading to name collisions when
+    function pointers were used as template arguments.
 
-  This was fixed in :option:`-fabi-version=10` , the default for GCC 6.1.
+    This was fixed in :option:`-fabi-version=10` , the default for GCC 6.1.
 
-This option also enables warnings about psABI-related changes.
-The known psABI changes at this point include:
+  This option also enables warnings about psABI-related changes.
+  The known psABI changes at this point include:
 
-* For SysV/x86-64, unions with ``long double`` members are
-  passed in memory as specified in psABI.  Prior to GCC 4.4, this was not
-  the case.  For example:
+  * For SysV/x86-64, unions with ``long double`` members are
+    passed in memory as specified in psABI.  Prior to GCC 4.4, this was not
+    the case.  For example:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-    union U {
-      long double ld;
-      int i;
-    };
+      union U {
+        long double ld;
+        int i;
+      };
 
-  ``union U`` is now always passed in memory.
+    ``union U`` is now always passed in memory.
 
 .. option:: -Wchar-subscripts, -Wno-char-subscripts
 
@@ -426,26 +426,26 @@ The known psABI changes at this point include:
 
     C, C++, Objective-C and Objective-C++ only
 
-Give a warning when a value of type ``float`` is implicitly
-promoted to ``double``.  CPUs with a 32-bit 'single-precision'
-floating-point unit implement ``float`` in hardware, but emulate
-``double`` in software.  On such a machine, doing computations
-using ``double`` values is much more expensive because of the
-overhead required for software emulation.
+  Give a warning when a value of type ``float`` is implicitly
+  promoted to ``double``.  CPUs with a 32-bit 'single-precision'
+  floating-point unit implement ``float`` in hardware, but emulate
+  ``double`` in software.  On such a machine, doing computations
+  using ``double`` values is much more expensive because of the
+  overhead required for software emulation.
 
-It is easy to accidentally do computations with ``double`` because
-floating-point literals are implicitly of type ``double``.  For
-example, in:
+  It is easy to accidentally do computations with ``double`` because
+  floating-point literals are implicitly of type ``double``.  For
+  example, in:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  float area(float radius)
-  {
-     return 3.14159 * radius * radius;
-  }
+    float area(float radius)
+    {
+       return 3.14159 * radius * radius;
+    }
 
-the compiler performs the entire computation with ``double``
-because the floating-point literal is a ``double``.
+  the compiler performs the entire computation with ``double``
+  because the floating-point literal is a ``double``.
 
 .. option:: -Wduplicate-decl-specifier , -Wduplicate-decl-specifier, -Wno-duplicate-decl-specifier
 
@@ -453,9 +453,9 @@ because the floating-point literal is a ``double``.
 
     C and Objective-C only
 
-Warn if a declaration has duplicate ``const``, ``volatile``,
-``restrict`` or ``_Atomic`` specifier.  This warning is enabled by
-:option:`-Wall`.
+  Warn if a declaration has duplicate ``const``, ``volatile``,
+  ``restrict`` or ``_Atomic`` specifier.  This warning is enabled by
+  :option:`-Wall`.
 
 .. option:: -Wformat, -Wno-format, -ffreestanding, -fno-builtin, -Wformat=
 
@@ -471,32 +471,32 @@ Warn if a declaration has duplicate ``const``, ``volatile``,
   functions without the attribute specified are disabled by
   :option:`-ffreestanding` or :option:`-fno-builtin`.
 
-The formats are checked against the format features supported by GNU
-libc version 2.2.  These include all ISO C90 and C99 features, as well
-as features from the Single Unix Specification and some BSD and GNU
-extensions.  Other library implementations may not support all these
-features; GCC does not support warning about features that go beyond a
-particular library's limitations.  However, if :option:`-Wpedantic` is used
-with :option:`-Wformat` , warnings are given about format features not
-in the selected standard version (but not for ``strfmon`` formats,
-since those are not in any version of the C standard).  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+  The formats are checked against the format features supported by GNU
+  libc version 2.2.  These include all ISO C90 and C99 features, as well
+  as features from the Single Unix Specification and some BSD and GNU
+  extensions.  Other library implementations may not support all these
+  features; GCC does not support warning about features that go beyond a
+  particular library's limitations.  However, if :option:`-Wpedantic` is used
+  with :option:`-Wformat` , warnings are given about format features not
+  in the selected standard version (but not for ``strfmon`` formats,
+  since those are not in any version of the C standard).  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
-.. option:: -Wformat=1
+  .. option:: -Wformat=1
 
-  Option :option:`-Wformat` is equivalent to :option:`-Wformat=1` , and
-  :option:`-Wno-format` is equivalent to :option:`-Wformat=0`.  Since
-  :option:`-Wformat` also checks for null format arguments for several
-  functions, :option:`-Wformat` also implies :option:`-Wnonnull`.  Some
-  aspects of this level of format checking can be disabled by the
-  options: :option:`-Wno-format-contains-nul` ,
-  :option:`-Wno-format-extra-args` , and :option:`-Wno-format-zero-length`.
-  :option:`-Wformat` is enabled by :option:`-Wall`.
+    Option :option:`-Wformat` is equivalent to :option:`-Wformat=1` , and
+    :option:`-Wno-format` is equivalent to :option:`-Wformat=0`.  Since
+    :option:`-Wformat` also checks for null format arguments for several
+    functions, :option:`-Wformat` also implies :option:`-Wnonnull`.  Some
+    aspects of this level of format checking can be disabled by the
+    options: :option:`-Wno-format-contains-nul` ,
+    :option:`-Wno-format-extra-args` , and :option:`-Wno-format-zero-length`.
+    :option:`-Wformat` is enabled by :option:`-Wall`.
 
-.. option:: -Wformat=2
+  .. option:: -Wformat=2
 
-  Enable :option:`-Wformat` plus additional format checks.  Currently
-  equivalent to :option:`-Wformat -Wformat-nonliteral -Wformat-security
-  -Wformat-y2k`.
+    Enable :option:`-Wformat` plus additional format checks.  Currently
+    equivalent to :option:`-Wformat -Wformat-nonliteral -Wformat-security
+    -Wformat-y2k`.
 
 .. option:: -Wno-format-contains-nul, -Wformat-contains-nul
 
@@ -509,13 +509,13 @@ since those are not in any version of the C standard).  See :ref:`Options Contro
   ``printf`` or ``scanf`` format function.  The C standard specifies
   that such arguments are ignored.
 
-Where the unused arguments lie between used arguments that are
-specified with :samp:`$` operand number specifications, normally
-warnings are still given, since the implementation could not know what
-type to pass to ``va_arg`` to skip the unused arguments.  However,
-in the case of ``scanf`` formats, this option suppresses the
-warning if the unused arguments are all pointers, since the Single
-Unix Specification says that such unused arguments are allowed.
+  Where the unused arguments lie between used arguments that are
+  specified with :samp:`$` operand number specifications, normally
+  warnings are still given, since the implementation could not know what
+  type to pass to ``va_arg`` to skip the unused arguments.  However,
+  in the case of ``scanf`` formats, this option suppresses the
+  warning if the unused arguments are all pointers, since the Single
+  Unix Specification says that such unused arguments are allowed.
 
 .. option:: -Wformat-overflow, -Wno-format-overflow
 
@@ -527,68 +527,68 @@ Unix Specification says that such unused arguments are allowed.
   will in most cases improve the accuracy of the warning, it may also
   result in false positives.
 
-.. option:: -Wformat-overflow, -Wno-format-overflow
+  .. option:: -Wformat-overflow, -Wno-format-overflow
 
-  Level :samp:`{1}` of :option:`-Wformat-overflow` enabled by :option:`-Wformat`
-  employs a conservative approach that warns only about calls that most
-  likely overflow the buffer.  At this level, numeric arguments to format
-  directives with unknown values are assumed to have the value of one, and
-  strings of unknown length to be empty.  Numeric arguments that are known
-  to be bounded to a subrange of their type, or string arguments whose output
-  is bounded either by their directive's precision or by a finite set of
-  string literals, are assumed to take on the value within the range that
-  results in the most bytes on output.  For example, the call to ``sprintf``
-  below is diagnosed because even with both :samp:`{a}` and :samp:`{b}` equal to zero,
-  the terminating NUL character (``'\0'``) appended by the function
-  to the destination buffer will be written past its end.  Increasing
-  the size of the buffer by a single byte is sufficient to avoid the
-  warning, though it may not be sufficient to avoid the overflow.
+    Level :samp:`{1}` of :option:`-Wformat-overflow` enabled by :option:`-Wformat`
+    employs a conservative approach that warns only about calls that most
+    likely overflow the buffer.  At this level, numeric arguments to format
+    directives with unknown values are assumed to have the value of one, and
+    strings of unknown length to be empty.  Numeric arguments that are known
+    to be bounded to a subrange of their type, or string arguments whose output
+    is bounded either by their directive's precision or by a finite set of
+    string literals, are assumed to take on the value within the range that
+    results in the most bytes on output.  For example, the call to ``sprintf``
+    below is diagnosed because even with both :samp:`{a}` and :samp:`{b}` equal to zero,
+    the terminating NUL character (``'\0'``) appended by the function
+    to the destination buffer will be written past its end.  Increasing
+    the size of the buffer by a single byte is sufficient to avoid the
+    warning, though it may not be sufficient to avoid the overflow.
 
-.. code-block:: c++
+    .. code-block:: c++
 
-  void f (int a, int b)
-  {
-    char buf [13];
-    sprintf (buf, "a = %i, b = %i\n", a, b);
-  }
+      void f (int a, int b)
+      {
+        char buf [13];
+        sprintf (buf, "a = %i, b = %i\n", a, b);
+      }
 
-``-Wformat-overflow=2``
-  Level :samp:`{2}` warns also about calls that might overflow the destination
-  buffer given an argument of sufficient length or magnitude.  At level
-  :samp:`{2}` , unknown numeric arguments are assumed to have the minimum
-  representable value for signed types with a precision greater than 1, and
-  the maximum representable value otherwise.  Unknown string arguments whose
-  length cannot be assumed to be bounded either by the directive's precision,
-  or by a finite set of string literals they may evaluate to, or the character
-  array they may point to, are assumed to be 1 character long.
+  ``-Wformat-overflow=2``
+    Level :samp:`{2}` warns also about calls that might overflow the destination
+    buffer given an argument of sufficient length or magnitude.  At level
+    :samp:`{2}` , unknown numeric arguments are assumed to have the minimum
+    representable value for signed types with a precision greater than 1, and
+    the maximum representable value otherwise.  Unknown string arguments whose
+    length cannot be assumed to be bounded either by the directive's precision,
+    or by a finite set of string literals they may evaluate to, or the character
+    array they may point to, are assumed to be 1 character long.
 
-  At level :samp:`{2}` , the call in the example above is again diagnosed, but
-  this time because with :samp:`{a}` equal to a 32-bit ``INT_MIN`` the first
-  ``%i`` directive will write some of its digits beyond the end of
-  the destination buffer.  To make the call safe regardless of the values
-  of the two variables, the size of the destination buffer must be increased
-  to at least 34 bytes.  GCC includes the minimum size of the buffer in
-  an informational note following the warning.
+    At level :samp:`{2}` , the call in the example above is again diagnosed, but
+    this time because with :samp:`{a}` equal to a 32-bit ``INT_MIN`` the first
+    ``%i`` directive will write some of its digits beyond the end of
+    the destination buffer.  To make the call safe regardless of the values
+    of the two variables, the size of the destination buffer must be increased
+    to at least 34 bytes.  GCC includes the minimum size of the buffer in
+    an informational note following the warning.
 
-  An alternative to increasing the size of the destination buffer is to
-  constrain the range of formatted values.  The maximum length of string
-  arguments can be bounded by specifying the precision in the format
-  directive.  When numeric arguments of format directives can be assumed
-  to be bounded by less than the precision of their type, choosing
-  an appropriate length modifier to the format specifier will reduce
-  the required buffer size.  For example, if :samp:`{a}` and :samp:`{b}` in the
-  example above can be assumed to be within the precision of
-  the ``short int`` type then using either the ``%hi`` format
-  directive or casting the argument to ``short`` reduces the maximum
-  required size of the buffer to 24 bytes.
+    An alternative to increasing the size of the destination buffer is to
+    constrain the range of formatted values.  The maximum length of string
+    arguments can be bounded by specifying the precision in the format
+    directive.  When numeric arguments of format directives can be assumed
+    to be bounded by less than the precision of their type, choosing
+    an appropriate length modifier to the format specifier will reduce
+    the required buffer size.  For example, if :samp:`{a}` and :samp:`{b}` in the
+    example above can be assumed to be within the precision of
+    the ``short int`` type then using either the ``%hi`` format
+    directive or casting the argument to ``short`` reduces the maximum
+    required size of the buffer to 24 bytes.
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-    void f (int a, int b)
-    {
-      char buf [23];
-      sprintf (buf, "a = %hi, b = %i\n", a, (short)b);
-    }
+      void f (int a, int b)
+      {
+        char buf [23];
+        sprintf (buf, "a = %hi, b = %i\n", a, (short)b);
+      }
 
 .. option:: -Wno-format-zero-length, -Wformat-zero-length
 
@@ -629,17 +629,17 @@ Unix Specification says that such unused arguments are allowed.
   in false positives.  Except as noted otherwise, the option uses the same
   logic :option:`-Wformat-overflow`.
 
-.. option:: -Wformat-truncation, -Wno-format-truncation
+  .. option:: -Wformat-truncation, -Wno-format-truncation
 
-  Level :samp:`{1}` of :option:`-Wformat-truncation` enabled by :option:`-Wformat`
-  employs a conservative approach that warns only about calls to bounded
-  functions whose return value is unused and that will most likely result
-  in output truncation.
+    Level :samp:`{1}` of :option:`-Wformat-truncation` enabled by :option:`-Wformat`
+    employs a conservative approach that warns only about calls to bounded
+    functions whose return value is unused and that will most likely result
+    in output truncation.
 
-``-Wformat-truncation=2``
-  Level :samp:`{2}` warns also about calls to bounded functions whose return
-  value is used and that might result in truncation given an argument of
-  sufficient length or magnitude.
+  ``-Wformat-truncation=2``
+    Level :samp:`{2}` warns also about calls to bounded functions whose return
+    value is used and that might result in truncation given an argument of
+    sufficient length or magnitude.
 
 .. option:: -Wformat-y2k, -Wno-format-y2k
 
@@ -651,16 +651,16 @@ Unix Specification says that such unused arguments are allowed.
   Warn about passing a null pointer for arguments marked as
   requiring a non-null value by the ``nonnull`` function attribute.
 
-:option:`-Wnonnull` is included in :option:`-Wall` and :option:`-Wformat`.  It
-can be disabled with the :option:`-Wno-nonnull` option.
+  :option:`-Wnonnull` is included in :option:`-Wall` and :option:`-Wformat`.  It
+  can be disabled with the :option:`-Wno-nonnull` option.
 
 .. option:: -Wnonnull-compare, -Wno-nonnull-compare
 
   Warn when comparing an argument marked with the ``nonnull``
   function attribute against null inside the function.
 
-:option:`-Wnonnull-compare` is included in :option:`-Wall`.  It
-can be disabled with the :option:`-Wno-nonnull-compare` option.
+  :option:`-Wnonnull-compare` is included in :option:`-Wall`.  It
+  can be disabled with the :option:`-Wno-nonnull-compare` option.
 
 .. option:: -Wnull-dereference, -Wno-null-dereference
 
@@ -676,21 +676,21 @@ can be disabled with the :option:`-Wno-nonnull-compare` option.
 
     C, C++, Objective-C and Objective-C++ only
 
-Warn about uninitialized variables that are initialized with themselves.
-Note this option can only be used with the :option:`-Wuninitialized` option.
+  Warn about uninitialized variables that are initialized with themselves.
+  Note this option can only be used with the :option:`-Wuninitialized` option.
 
-For example, GCC warns about ``i`` being uninitialized in the
-following snippet only when :option:`-Winit-self` has been specified:
+  For example, GCC warns about ``i`` being uninitialized in the
+  following snippet only when :option:`-Winit-self` has been specified:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int f()
-  {
-    int i = i;
-    return i;
-  }
+    int f()
+    {
+      int i = i;
+      return i;
+    }
 
-This warning is enabled by :option:`-Wall` in C++.
+  This warning is enabled by :option:`-Wall` in C++.
 
 .. option:: -Wno-implicit-int , -Wimplicit-int, -Wno-implicit-int
 
@@ -698,9 +698,9 @@ This warning is enabled by :option:`-Wall` in C++.
 
     C and Objective-C only
 
-This option controls warnings when a declaration does not specify a type.
-This warning is enabled by default in C99 and later dialects of C,
-and also by :option:`-Wall`.
+  This option controls warnings when a declaration does not specify a type.
+  This warning is enabled by default in C99 and later dialects of C,
+  and also by :option:`-Wall`.
 
 .. option:: -Wno-implicit-function-declaration , -Wimplicit-function-declaration, -Wno-implicit-function-declaration
 
@@ -708,10 +708,10 @@ and also by :option:`-Wall`.
 
     C and Objective-C only
 
-This option controls warnings when a function is used before being declared.
-This warning is enabled by default in C99 and later dialects of C,
-and also by :option:`-Wall`.
-The warning is made into an error by :option:`-pedantic-errors`.
+  This option controls warnings when a function is used before being declared.
+  This warning is enabled by default in C99 and later dialects of C,
+  and also by :option:`-Wall`.
+  The warning is made into an error by :option:`-pedantic-errors`.
 
 .. option:: -Wimplicit , -Wimplicit, -Wno-implicit
 
@@ -719,8 +719,8 @@ The warning is made into an error by :option:`-pedantic-errors`.
 
     C and Objective-C only
 
-Same as :option:`-Wimplicit-int` and :option:`-Wimplicit-function-declaration`.
-This warning is enabled by :option:`-Wall`.
+  Same as :option:`-Wimplicit-int` and :option:`-Wimplicit-function-declaration`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wimplicit-fallthrough, -Wno-implicit-fallthrough
 
@@ -732,122 +732,122 @@ This warning is enabled by :option:`-Wall`.
 
   Warn when a switch case falls through.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  switch (cond)
-    {
-    case 1:
-      a = 1;
-      break;
-    case 2:
-      a = 2;
-    case 3:
-      a = 3;
-      break;
-    }
-
-This warning does not warn when the last statement of a case cannot
-fall through, e.g. when there is a return statement or a call to function
-declared with the noreturn attribute.  :option:`-Wimplicit-fallthrough` =
-also takes into account control flow statements, such as ifs, and only
-warns when appropriate.  E.g.
-
-.. code-block:: c++
-
-  switch (cond)
-    {
-    case 1:
-      if (i > 3) {
-        bar (5);
+    switch (cond)
+      {
+      case 1:
+        a = 1;
         break;
-      } else if (i < 1) {
+      case 2:
+        a = 2;
+      case 3:
+        a = 3;
+        break;
+      }
+
+  This warning does not warn when the last statement of a case cannot
+  fall through, e.g. when there is a return statement or a call to function
+  declared with the noreturn attribute.  :option:`-Wimplicit-fallthrough` =
+  also takes into account control flow statements, such as ifs, and only
+  warns when appropriate.  E.g.
+
+  .. code-block:: c++
+
+    switch (cond)
+      {
+      case 1:
+        if (i > 3) {
+          bar (5);
+          break;
+        } else if (i < 1) {
+          bar (0);
+        } else
+          return;
+      default:
+        ...
+      }
+
+  Since there are occasions where a switch case fall through is desirable,
+  GCC provides an attribute, ``__attribute__ ((fallthrough))``, that is
+  to be used along with a null statement to suppress this warning that
+  would normally occur:
+
+  .. code-block:: c++
+
+    switch (cond)
+      {
+      case 1:
         bar (0);
-      } else
-        return;
-    default:
-      ...
-    }
+        __attribute__ ((fallthrough));
+      default:
+        ...
+      }
 
-Since there are occasions where a switch case fall through is desirable,
-GCC provides an attribute, ``__attribute__ ((fallthrough))``, that is
-to be used along with a null statement to suppress this warning that
-would normally occur:
+  C++17 provides a standard way to suppress the :option:`-Wimplicit-fallthrough`
+  warning using ``[[fallthrough]];`` instead of the GNU attribute.  In C++11
+  or C++14 users can use ``[[gnu::fallthrough]];``, which is a GNU extension.
+  Instead of these attributes, it is also possible to add a fallthrough comment
+  to silence the warning.  The whole body of the C or C++ style comment should
+  match the given regular expressions listed below.  The option argument :samp:`{n}`
+  specifies what kind of comments are accepted:
 
-.. code-block:: c++
+  * :option:`-Wimplicit-fallthrough=0` disables the warning altogether.
 
-  switch (cond)
-    {
-    case 1:
-      bar (0);
-      __attribute__ ((fallthrough));
-    default:
-      ...
-    }
+  * :option:`-Wimplicit-fallthrough=1` matches ``.*`` regular
+    expression, any comment is used as fallthrough comment.
 
-C++17 provides a standard way to suppress the :option:`-Wimplicit-fallthrough`
-warning using ``[[fallthrough]];`` instead of the GNU attribute.  In C++11
-or C++14 users can use ``[[gnu::fallthrough]];``, which is a GNU extension.
-Instead of these attributes, it is also possible to add a fallthrough comment
-to silence the warning.  The whole body of the C or C++ style comment should
-match the given regular expressions listed below.  The option argument :samp:`{n}`
-specifies what kind of comments are accepted:
+  * :option:`-Wimplicit-fallthrough=2` case insensitively matches
+    ``.*falls?[ \t-]*thr(ough|u).*`` regular expression.
 
-* :option:`-Wimplicit-fallthrough=0` disables the warning altogether.
+  * :option:`-Wimplicit-fallthrough=3` case sensitively matches one of the
+    following regular expressions:
 
-* :option:`-Wimplicit-fallthrough=1` matches ``.*`` regular
-  expression, any comment is used as fallthrough comment.
+    * ``-fallthrough``
 
-* :option:`-Wimplicit-fallthrough=2` case insensitively matches
-  ``.*falls?[ \t-]*thr(ough|u).*`` regular expression.
+    * ``@fallthrough@``
 
-* :option:`-Wimplicit-fallthrough=3` case sensitively matches one of the
-  following regular expressions:
+    * ``lint -fallthrough[ \t]*``
 
-  * ``-fallthrough``
+    * ``[ \t.!]*(ELSE,? |INTENTIONAL(LY)? )?
+      FALL(S | |-)?THR(OUGH|U)[ \t.!]*(-[^\n\r]*)?``
 
-  * ``@fallthrough@``
+    * ``[ \t.!]*(Else,? |Intentional(ly)? )?
+      Fall((s | |-)[Tt]|t)hr(ough|u)[ \t.!]*(-[^\n\r]*)?``
 
-  * ``lint -fallthrough[ \t]*``
+    * ``[ \t.!]*([Ee]lse,? |[Ii]ntentional(ly)? )?
+      fall(s | |-)?thr(ough|u)[ \t.!]*(-[^\n\r]*)?``
 
-  * ``[ \t.!]*(ELSE,? |INTENTIONAL(LY)? )?
-    FALL(S | |-)?THR(OUGH|U)[ \t.!]*(-[^\n\r]*)?``
+  * :option:`-Wimplicit-fallthrough=4` case sensitively matches one of the
+    following regular expressions:
 
-  * ``[ \t.!]*(Else,? |Intentional(ly)? )?
-    Fall((s | |-)[Tt]|t)hr(ough|u)[ \t.!]*(-[^\n\r]*)?``
+    * ``-fallthrough``
 
-  * ``[ \t.!]*([Ee]lse,? |[Ii]ntentional(ly)? )?
-    fall(s | |-)?thr(ough|u)[ \t.!]*(-[^\n\r]*)?``
+    * ``@fallthrough@``
 
-* :option:`-Wimplicit-fallthrough=4` case sensitively matches one of the
-  following regular expressions:
+    * ``lint -fallthrough[ \t]*``
 
-  * ``-fallthrough``
+    * ``[ \t]*FALLTHR(OUGH|U)[ \t]*``
 
-  * ``@fallthrough@``
+  * :option:`-Wimplicit-fallthrough=5` doesn't recognize any comments as
+    fallthrough comments, only attributes disable the warning.
 
-  * ``lint -fallthrough[ \t]*``
+  The comment needs to be followed after optional whitespace and other comments
+  by ``case`` or ``default`` keywords or by a user label that precedes some
+  ``case`` or ``default`` label.
 
-  * ``[ \t]*FALLTHR(OUGH|U)[ \t]*``
+  .. code-block:: c++
 
-* :option:`-Wimplicit-fallthrough=5` doesn't recognize any comments as
-  fallthrough comments, only attributes disable the warning.
+    switch (cond)
+      {
+      case 1:
+        bar (0);
+        /* FALLTHRU */
+      default:
+        ...
+      }
 
-The comment needs to be followed after optional whitespace and other comments
-by ``case`` or ``default`` keywords or by a user label that precedes some
-``case`` or ``default`` label.
-
-.. code-block:: c++
-
-  switch (cond)
-    {
-    case 1:
-      bar (0);
-      /* FALLTHRU */
-    default:
-      ...
-    }
-
-The :option:`-Wimplicit-fallthrough=3` warning is enabled by :option:`-Wextra`.
+  The :option:`-Wimplicit-fallthrough=3` warning is enabled by :option:`-Wextra`.
 
 .. option:: -Wno-if-not-aligned , -Wif-not-aligned, -Wno-if-not-aligned
 
@@ -855,8 +855,8 @@ The :option:`-Wimplicit-fallthrough=3` warning is enabled by :option:`-Wextra`.
 
     C, C++, Objective-C and Objective-C++ only
 
-Control if warnings triggered by the ``warn_if_not_aligned`` attribute
-should be issued.  These warnings are enabled by default.
+  Control if warnings triggered by the ``warn_if_not_aligned`` attribute
+  should be issued.  These warnings are enabled by default.
 
 .. option:: -Wignored-qualifiers , -Wignored-qualifiers, -Wno-ignored-qualifiers
 
@@ -864,15 +864,15 @@ should be issued.  These warnings are enabled by default.
 
     C and C++ only
 
-Warn if the return type of a function has a type qualifier
-such as ``const``.  For ISO C such a type qualifier has no effect,
-since the value returned by a function is not an lvalue.
-For C++, the warning is only emitted for scalar types or ``void``.
-ISO C prohibits qualified ``void`` return types on function
-definitions, so such return types always receive a warning
-even without this option.
+  Warn if the return type of a function has a type qualifier
+  such as ``const``.  For ISO C such a type qualifier has no effect,
+  since the value returned by a function is not an lvalue.
+  For C++, the warning is only emitted for scalar types or ``void``.
+  ISO C prohibits qualified ``void`` return types on function
+  definitions, so such return types always receive a warning
+  even without this option.
 
-This warning is also enabled by :option:`-Wextra`.
+  This warning is also enabled by :option:`-Wextra`.
 
 .. option:: -Wno-ignored-attributes , -Wignored-attributes, -Wno-ignored-attributes
 
@@ -880,11 +880,11 @@ This warning is also enabled by :option:`-Wextra`.
 
     C and C++ only
 
-This option controls warnings when an attribute is ignored.
-This is different from the
-:option:`-Wattributes` option in that it warns whenever the compiler decides
-to drop an attribute, not that the attribute is either unknown, used in a
-wrong place, etc.  This warning is enabled by default.
+  This option controls warnings when an attribute is ignored.
+  This is different from the
+  :option:`-Wattributes` option in that it warns whenever the compiler decides
+  to drop an attribute, not that the attribute is either unknown, used in a
+  wrong place, etc.  This warning is enabled by default.
 
 .. option:: -Wmain, -Wno-main
 
@@ -900,41 +900,41 @@ wrong place, etc.  This warning is enabled by default.
 
     C and C++ only
 
-Warn when the indentation of the code does not reflect the block structure.
-Specifically, a warning is issued for ``if``, ``else``, ``while``, and
-``for`` clauses with a guarded statement that does not use braces,
-followed by an unguarded statement with the same indentation.
+  Warn when the indentation of the code does not reflect the block structure.
+  Specifically, a warning is issued for ``if``, ``else``, ``while``, and
+  ``for`` clauses with a guarded statement that does not use braces,
+  followed by an unguarded statement with the same indentation.
 
-In the following example, the call to 'bar' is misleadingly indented as
-if it were guarded by the 'if' conditional.
+  In the following example, the call to 'bar' is misleadingly indented as
+  if it were guarded by the 'if' conditional.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    if (some_condition ())
-      foo ();
-      bar ();  /* Gotcha: this is not guarded by the "if".  */
+      if (some_condition ())
+        foo ();
+        bar ();  /* Gotcha: this is not guarded by the "if".  */
 
-In the case of mixed tabs and spaces, the warning uses the
-:option:`-ftabstop` = option to determine if the statements line up
-(defaulting to 8).
+  In the case of mixed tabs and spaces, the warning uses the
+  :option:`-ftabstop` = option to determine if the statements line up
+  (defaulting to 8).
 
-The warning is not issued for code involving multiline preprocessor logic
-such as the following example.
+  The warning is not issued for code involving multiline preprocessor logic
+  such as the following example.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    if (flagA)
-      foo (0);
-  #if SOME_CONDITION_THAT_DOES_NOT_HOLD
-    if (flagB)
-  #endif
-      foo (1);
+      if (flagA)
+        foo (0);
+    #if SOME_CONDITION_THAT_DOES_NOT_HOLD
+      if (flagB)
+    #endif
+        foo (1);
 
-The warning is not issued after a ``#line`` directive, since this
-typically indicates autogenerated code, and no assumptions can be made
-about the layout of the file that the directive references.
+  The warning is not issued after a ``#line`` directive, since this
+  typically indicates autogenerated code, and no assumptions can be made
+  about the layout of the file that the directive references.
 
-This warning is enabled by :option:`-Wall` in C and C++.
+  This warning is enabled by :option:`-Wall` in C and C++.
 
 .. option:: -Wmissing-attributes, -Wno-missing-attributes
 
@@ -952,36 +952,36 @@ This warning is enabled by :option:`-Wall` in C and C++.
   ``nonnull``, ``noreturn``, ``nothrow``, ``pure``,
   ``returns_nonnull``, and ``returns_twice``.
 
-In C++, the warning is issued when an explicit specialization of a primary
-template declared with attribute ``alloc_align``, ``alloc_size``,
-``assume_aligned``, ``format``, ``format_arg``, ``malloc``,
-or ``nonnull`` is declared without it.  Attributes ``deprecated``,
-``error``, and ``warning`` suppress the warning.
-(see :ref:`function-attributes`).
+  In C++, the warning is issued when an explicit specialization of a primary
+  template declared with attribute ``alloc_align``, ``alloc_size``,
+  ``assume_aligned``, ``format``, ``format_arg``, ``malloc``,
+  or ``nonnull`` is declared without it.  Attributes ``deprecated``,
+  ``error``, and ``warning`` suppress the warning.
+  (see :ref:`function-attributes`).
 
-You can use the ``copy`` attribute to apply the same
-set of attributes to a declaration as that on another declaration without
-explicitly enumerating the attributes. This attribute can be applied
-to declarations of functions (see :ref:`common-function-attributes`),
-variables (see :ref:`common-variable-attributes`), or types
-(see :ref:`common-type-attributes`).
+  You can use the ``copy`` attribute to apply the same
+  set of attributes to a declaration as that on another declaration without
+  explicitly enumerating the attributes. This attribute can be applied
+  to declarations of functions (see :ref:`common-function-attributes`),
+  variables (see :ref:`common-variable-attributes`), or types
+  (see :ref:`common-type-attributes`).
 
-:option:`-Wmissing-attributes` is enabled by :option:`-Wall`.
+  :option:`-Wmissing-attributes` is enabled by :option:`-Wall`.
 
-For example, since the declaration of the primary function template
-below makes use of both attribute ``malloc`` and ``alloc_size``
-the declaration of the explicit specialization of the template is
-diagnosed because it is missing one of the attributes.
+  For example, since the declaration of the primary function template
+  below makes use of both attribute ``malloc`` and ``alloc_size``
+  the declaration of the explicit specialization of the template is
+  diagnosed because it is missing one of the attributes.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  template <class T>
-  T* __attribute__ ((malloc, alloc_size (1)))
-  allocate (size_t);
+    template <class T>
+    T* __attribute__ ((malloc, alloc_size (1)))
+    allocate (size_t);
 
-  template <>
-  void* __attribute__ ((malloc))   // missing alloc_size
-  allocate<void> (size_t);
+    template <>
+    void* __attribute__ ((malloc))   // missing alloc_size
+    allocate<void> (size_t);
 
 .. option:: -Wmissing-braces, -Wno-missing-braces
 
@@ -989,12 +989,12 @@ diagnosed because it is missing one of the attributes.
   the following example, the initializer for ``a`` is not fully
   bracketed, but that for ``b`` is fully bracketed.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int a[2][2] = { 0, 1, 2, 3 };
-  int b[2][2] = { { 0, 1 }, { 2, 3 } };
+    int a[2][2] = { 0, 1, 2, 3 };
+    int b[2][2] = { { 0, 1 }, { 2, 3 } };
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wmissing-include-dirs , -Wmissing-include-dirs, -Wno-missing-include-dirs
 
@@ -1002,7 +1002,7 @@ This warning is enabled by :option:`-Wall`.
 
     C, C++, Objective-C and Objective-C++ only
 
-Warn if a user-supplied include directory does not exist.
+  Warn if a user-supplied include directory does not exist.
 
 .. option:: -Wno-missing-profile, -Wmissing-profile
 
@@ -1035,25 +1035,25 @@ Warn if a user-supplied include directory does not exist.
   example ``mydealloc`` is the deallocator for pointers returned from
   ``myalloc``.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void mydealloc (void*);
+    void mydealloc (void*);
 
-  __attribute__ ((malloc (mydealloc, 1))) void*
-  myalloc (size_t);
+    __attribute__ ((malloc (mydealloc, 1))) void*
+    myalloc (size_t);
 
-  void f (void)
-  {
-    void *p = myalloc (32);
-    // ...use p...
-    free (p);   // warning: not a matching deallocator for myalloc
-    mydealloc (p);   // ok
-  }
+    void f (void)
+    {
+      void *p = myalloc (32);
+      // ...use p...
+      free (p);   // warning: not a matching deallocator for myalloc
+      mydealloc (p);   // ok
+    }
 
-In C++, the related option :option:`-Wmismatched-new-delete` diagnoses
-mismatches involving either ``operator new`` or ``operator delete``.
+  In C++, the related option :option:`-Wmismatched-new-delete` diagnoses
+  mismatches involving either ``operator new`` or ``operator delete``.
 
-Option :option:`-Wmismatched-dealloc` is enabled by default.
+  Option :option:`-Wmismatched-dealloc` is enabled by default.
 
 .. option:: -Wmultistatement-macros, -Wno-multistatement-macros
 
@@ -1062,24 +1062,24 @@ Option :option:`-Wmismatched-dealloc` is enabled by default.
   ``while``, in which only the first statement is actually guarded after
   the macro is expanded.
 
-For example:
+  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #define DOIT x++; y++
-  if (c)
-    DOIT;
+    #define DOIT x++; y++
+    if (c)
+      DOIT;
 
-will increment ``y`` unconditionally, not just when ``c`` holds.
-The can usually be fixed by wrapping the macro in a do-while loop:
+  will increment ``y`` unconditionally, not just when ``c`` holds.
+  The can usually be fixed by wrapping the macro in a do-while loop:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #define DOIT do { x++; y++; } while (0)
-  if (c)
-    DOIT;
+    #define DOIT do { x++; y++; } while (0)
+    if (c)
+      DOIT;
 
-This warning is enabled by :option:`-Wall` in C and C++.
+  This warning is enabled by :option:`-Wall` in C and C++.
 
 .. option:: -Wparentheses, -Wno-parentheses
 
@@ -1088,81 +1088,81 @@ This warning is enabled by :option:`-Wall` in C and C++.
   is expected, or when operators are nested whose precedence people
   often get confused about.
 
-Also warn if a comparison like ``x<=y<=z`` appears; this is
-equivalent to ``(x<=y ? 1 : 0) <= z``, which is a different
-interpretation from that of ordinary mathematical notation.
+  Also warn if a comparison like ``x<=y<=z`` appears; this is
+  equivalent to ``(x<=y ? 1 : 0) <= z``, which is a different
+  interpretation from that of ordinary mathematical notation.
 
-Also warn for dangerous uses of the GNU extension to
-``?:`` with omitted middle operand. When the condition
-in the ``?``: operator is a boolean expression, the omitted value is
-always 1.  Often programmers expect it to be a value computed
-inside the conditional expression instead.
+  Also warn for dangerous uses of the GNU extension to
+  ``?:`` with omitted middle operand. When the condition
+  in the ``?``: operator is a boolean expression, the omitted value is
+  always 1.  Often programmers expect it to be a value computed
+  inside the conditional expression instead.
 
-For C++ this also warns for some cases of unnecessary parentheses in
-declarations, which can indicate an attempt at a function call instead
-of a declaration:
+  For C++ this also warns for some cases of unnecessary parentheses in
+  declarations, which can indicate an attempt at a function call instead
+  of a declaration:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  {
-    // Declares a local variable called mymutex.
-    std::unique_lock<std::mutex> (mymutex);
-    // User meant std::unique_lock<std::mutex> lock (mymutex);
-  }
+    {
+      // Declares a local variable called mymutex.
+      std::unique_lock<std::mutex> (mymutex);
+      // User meant std::unique_lock<std::mutex> lock (mymutex);
+    }
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wsequence-point, -Wno-sequence-point
 
   Warn about code that may have undefined semantics because of violations
   of sequence point rules in the C and C++ standards.
 
-The C and C++ standards define the order in which expressions in a C/C++
-program are evaluated in terms of :dfn:`sequence points`, which represent
-a partial ordering between the execution of parts of the program: those
-executed before the sequence point, and those executed after it.  These
-occur after the evaluation of a full expression (one which is not part
-of a larger expression), after the evaluation of the first operand of a
-``&&``, ``||``, ``? :`` or ``,`` (comma) operator, before a
-function is called (but after the evaluation of its arguments and the
-expression denoting the called function), and in certain other places.
-Other than as expressed by the sequence point rules, the order of
-evaluation of subexpressions of an expression is not specified.  All
-these rules describe only a partial order rather than a total order,
-since, for example, if two functions are called within one expression
-with no sequence point between them, the order in which the functions
-are called is not specified.  However, the standards committee have
-ruled that function calls do not overlap.
+  The C and C++ standards define the order in which expressions in a C/C++
+  program are evaluated in terms of :dfn:`sequence points`, which represent
+  a partial ordering between the execution of parts of the program: those
+  executed before the sequence point, and those executed after it.  These
+  occur after the evaluation of a full expression (one which is not part
+  of a larger expression), after the evaluation of the first operand of a
+  ``&&``, ``||``, ``? :`` or ``,`` (comma) operator, before a
+  function is called (but after the evaluation of its arguments and the
+  expression denoting the called function), and in certain other places.
+  Other than as expressed by the sequence point rules, the order of
+  evaluation of subexpressions of an expression is not specified.  All
+  these rules describe only a partial order rather than a total order,
+  since, for example, if two functions are called within one expression
+  with no sequence point between them, the order in which the functions
+  are called is not specified.  However, the standards committee have
+  ruled that function calls do not overlap.
 
-It is not specified when between sequence points modifications to the
-values of objects take effect.  Programs whose behavior depends on this
-have undefined behavior; the C and C++ standards specify that 'Between
-the previous and next sequence point an object shall have its stored
-value modified at most once by the evaluation of an expression.
-Furthermore, the prior value shall be read only to determine the value
-to be stored.'.  If a program breaks these rules, the results on any
-particular implementation are entirely unpredictable.
+  It is not specified when between sequence points modifications to the
+  values of objects take effect.  Programs whose behavior depends on this
+  have undefined behavior; the C and C++ standards specify that 'Between
+  the previous and next sequence point an object shall have its stored
+  value modified at most once by the evaluation of an expression.
+  Furthermore, the prior value shall be read only to determine the value
+  to be stored.'.  If a program breaks these rules, the results on any
+  particular implementation are entirely unpredictable.
 
-Examples of code with undefined behavior are ``a = a++;``, ``a[n]
-= b[n++]`` and ``a[i++] = i;``.  Some more complicated cases are not
-diagnosed by this option, and it may give an occasional false positive
-result, but in general it has been found fairly effective at detecting
-this sort of problem in programs.
+  Examples of code with undefined behavior are ``a = a++;``, ``a[n]
+  = b[n++]`` and ``a[i++] = i;``.  Some more complicated cases are not
+  diagnosed by this option, and it may give an occasional false positive
+  result, but in general it has been found fairly effective at detecting
+  this sort of problem in programs.
 
-The C++17 standard will define the order of evaluation of operands in
-more cases: in particular it requires that the right-hand side of an
-assignment be evaluated before the left-hand side, so the above
-examples are no longer undefined.  But this option will still warn
-about them, to help people avoid writing code that is undefined in C
-and earlier revisions of C++.
+  The C++17 standard will define the order of evaluation of operands in
+  more cases: in particular it requires that the right-hand side of an
+  assignment be evaluated before the left-hand side, so the above
+  examples are no longer undefined.  But this option will still warn
+  about them, to help people avoid writing code that is undefined in C
+  and earlier revisions of C++.
 
-The standard is worded confusingly, therefore there is some debate
-over the precise meaning of the sequence point rules in subtle cases.
-Links to discussions of the problem, including proposed formal
-definitions, may be found on the GCC readings page, at
-http://gcc.gnu.org//readings.html.
+  The standard is worded confusingly, therefore there is some debate
+  over the precise meaning of the sequence point rules in subtle cases.
+  Links to discussions of the problem, including proposed formal
+  definitions, may be found on the GCC readings page, at
+  http://gcc.gnu.org//readings.html.
 
-This warning is enabled by :option:`-Wall` for C and C++.
+  This warning is enabled by :option:`-Wall` for C and C++.
 
 .. option:: -Wno-return-local-addr, -Wreturn-local-addr
 
@@ -1177,19 +1177,19 @@ This warning is enabled by :option:`-Wall` for C and C++.
   (falling off the end of the function body is considered returning
   without a value).
 
-For C only, warn about a ``return`` statement with an expression in a
-function whose return type is ``void``, unless the expression type is
-also ``void``.  As a GNU extension, the latter case is accepted
-without a warning unless :option:`-Wpedantic` is used.  Attempting
-to use the return value of a non-``void`` function other than ``main``
-that flows off the end by reaching the closing curly brace that terminates
-the function is undefined.
+  For C only, warn about a ``return`` statement with an expression in a
+  function whose return type is ``void``, unless the expression type is
+  also ``void``.  As a GNU extension, the latter case is accepted
+  without a warning unless :option:`-Wpedantic` is used.  Attempting
+  to use the return value of a non-``void`` function other than ``main``
+  that flows off the end by reaching the closing curly brace that terminates
+  the function is undefined.
 
-Unlike in C, in C++, flowing off the end of a non-``void`` function other
-than ``main`` results in undefined behavior even when the value of
-the function is not used.
+  Unlike in C, in C++, flowing off the end of a non-``void`` function other
+  than ``main`` results in undefined behavior even when the value of
+  the function is not used.
 
-This warning is enabled by default in C++ and by :option:`-Wall` otherwise.
+  This warning is enabled by default in C++ and by :option:`-Wall` otherwise.
 
 .. option:: -Wno-shift-count-negative, -Wshift-count-negative
 
@@ -1210,17 +1210,17 @@ This warning is enabled by default in C++ and by :option:`-Wall` otherwise.
 
   These options control warnings about left shift overflows.
 
-``-Wshift-overflow=1``
-  This is the warning level of :option:`-Wshift-overflow` and is enabled
-  by default in C99 and C++11 modes (and newer).  This warning level does
-  not warn about left-shifting 1 into the sign bit.  (However, in C, such
-  an overflow is still rejected in contexts where an integer constant expression
-  is required.)  No warning is emitted in C++20 mode (and newer), as signed left
-  shifts always wrap.
+  ``-Wshift-overflow=1``
+    This is the warning level of :option:`-Wshift-overflow` and is enabled
+    by default in C99 and C++11 modes (and newer).  This warning level does
+    not warn about left-shifting 1 into the sign bit.  (However, in C, such
+    an overflow is still rejected in contexts where an integer constant expression
+    is required.)  No warning is emitted in C++20 mode (and newer), as signed left
+    shifts always wrap.
 
-``-Wshift-overflow=2``
-  This warning level also warns about left-shifting 1 into the sign bit,
-  unless C++14 mode (or newer) is active.
+  ``-Wshift-overflow=2``
+    This warning level also warns about left-shifting 1 into the sign bit,
+    unless C++14 mode (or newer) is active.
 
 .. option:: -Wswitch, -Wno-switch
 
@@ -1254,14 +1254,14 @@ This warning is enabled by default in C++ and by :option:`-Wall` otherwise.
   It is possible to suppress this warning by casting the controlling
   expression to a type other than ``bool``.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  switch ((int) (a == 4))
-    {
-    ...
-    }
+    switch ((int) (a == 4))
+      {
+      ...
+      }
 
-This warning is enabled by default for C and C++ programs.
+  This warning is enabled by default for C and C++ programs.
 
 .. option:: -Wno-switch-outside-range, -Wswitch-outside-range
 
@@ -1276,31 +1276,31 @@ This warning is enabled by default for C and C++ programs.
   controlling expression and the first case label, which will never be
   executed.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  switch (cond)
-    {
-     i = 15;
-    ...
-     case 5:
-    ...
-    }
+    switch (cond)
+      {
+       i = 15;
+      ...
+       case 5:
+      ...
+      }
 
-:option:`-Wswitch-unreachable` does not warn if the statement between the
-controlling expression and the first case label is just a declaration:
+  :option:`-Wswitch-unreachable` does not warn if the statement between the
+  controlling expression and the first case label is just a declaration:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  switch (cond)
-    {
-     int i;
-    ...
-     case 5:
-     i = 5;
-    ...
-    }
+    switch (cond)
+      {
+       int i;
+      ...
+       case 5:
+       i = 5;
+      ...
+      }
 
-This warning is enabled by default for C and C++ programs.
+  This warning is enabled by default for C and C++ programs.
 
 .. option:: -Wsync-nand , -Wsync-nand, -Wno-sync-nand
 
@@ -1308,19 +1308,19 @@ This warning is enabled by default for C and C++ programs.
 
     C and C++ only
 
-Warn when ``__sync_fetch_and_nand`` and ``__sync_nand_and_fetch``
-built-in functions are used.  These functions changed semantics in GCC 4.4.
+  Warn when ``__sync_fetch_and_nand`` and ``__sync_nand_and_fetch``
+  built-in functions are used.  These functions changed semantics in GCC 4.4.
 
 .. option:: -Wunused-but-set-parameter, -Wno-unused-but-set-parameter
 
   Warn whenever a function parameter is assigned to, but otherwise unused
   (aside from its declaration).
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
-This warning is also enabled by :option:`-Wunused` together with
-:option:`-Wextra`.
+  This warning is also enabled by :option:`-Wunused` together with
+  :option:`-Wextra`.
 
 .. option:: -Wunused-but-set-variable, -Wno-unused-but-set-variable
 
@@ -1328,11 +1328,11 @@ This warning is also enabled by :option:`-Wunused` together with
   (aside from its declaration).
   This warning is enabled by :option:`-Wall`.
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
-This warning is also enabled by :option:`-Wunused` , which is enabled
-by :option:`-Wall`.
+  This warning is also enabled by :option:`-Wunused` , which is enabled
+  by :option:`-Wall`.
 
 .. option:: -Wunused-function, -Wno-unused-function
 
@@ -1345,8 +1345,8 @@ by :option:`-Wall`.
   Warn whenever a label is declared but not used.
   This warning is enabled by :option:`-Wall`.
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
 .. option:: -Wunused-local-typedefs , -Wunused-local-typedefs, -Wno-unused-local-typedefs
 
@@ -1354,15 +1354,15 @@ To suppress this warning use the ``unused`` attribute
 
     C, Objective-C, C++ and Objective-C++ only
 
-Warn when a typedef locally defined in a function is not used.
-This warning is enabled by :option:`-Wall`.
+  Warn when a typedef locally defined in a function is not used.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wunused-parameter, -Wno-unused-parameter
 
   Warn whenever a function parameter is unused aside from its declaration.
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-result, -Wunused-result
 
@@ -1376,8 +1376,8 @@ To suppress this warning use the ``unused`` attribute
   declaration. This option implies :option:`-Wunused-const-variable=1` for C,
   but not for C++. This warning is enabled by :option:`-Wall`.
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
 .. option:: -Wunused-const-variable, -Wno-unused-const-variable
 
@@ -1386,21 +1386,21 @@ To suppress this warning use the ``unused`` attribute
   for C, but not for C++. In C this declares variable storage, but in C++ this
   is not an error since const variables take the place of ``#define``s.
 
-To suppress this warning use the ``unused`` attribute
-(see :ref:`variable-attributes`).
+  To suppress this warning use the ``unused`` attribute
+  (see :ref:`variable-attributes`).
 
-``-Wunused-const-variable=1``
-  This is the warning level that is enabled by :option:`-Wunused-variable` for
-  C.  It warns only about unused static const variables defined in the main
-  compilation unit, but not about static const variables declared in any
-  header included.
+  ``-Wunused-const-variable=1``
+    This is the warning level that is enabled by :option:`-Wunused-variable` for
+    C.  It warns only about unused static const variables defined in the main
+    compilation unit, but not about static const variables declared in any
+    header included.
 
-``-Wunused-const-variable=2``
-  This warning level also warns for unused constant static variables in
-  headers (excluding system headers).  This is the warning level of
-  :option:`-Wunused-const-variable` and must be explicitly requested since
-  in C++ this isn't an error and in C it might be harder to clean up all
-  headers included.
+  ``-Wunused-const-variable=2``
+    This warning level also warns for unused constant static variables in
+    headers (excluding system headers).  This is the warning level of
+    :option:`-Wunused-const-variable` and must be explicitly requested since
+    in C++ this isn't an error and in C it might be harder to clean up all
+    headers included.
 
 .. option:: -Wunused-value, -Wno-unused-value
 
@@ -1411,15 +1411,15 @@ To suppress this warning use the ``unused`` attribute
   an expression such as ``x[i,j]`` causes a warning, while
   ``x[(void)i,j]`` does not.
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wunused, -Wno-unused
 
   All the above :option:`-Wunused` options combined.
 
-In order to get a warning about an unused function parameter, you must
-either specify :option:`-Wextra -Wunused` (note that :option:`-Wall` implies
-:option:`-Wunused` ), or separately specify :option:`-Wunused-parameter`.
+  In order to get a warning about an unused function parameter, you must
+  either specify :option:`-Wextra -Wunused` (note that :option:`-Wall` implies
+  :option:`-Wunused` ), or separately specify :option:`-Wunused-parameter`.
 
 .. option:: -Wuninitialized, -Wno-uninitialized
 
@@ -1428,26 +1428,26 @@ either specify :option:`-Wextra -Wunused` (note that :option:`-Wall` implies
   reference or non-static ``const`` member appears in a class without
   constructors.
 
-In addition, passing a pointer (or in C++, a reference) to an uninitialized
-object to a ``const``-qualified argument of a built-in function known to
-read the object is also diagnosed by this warning.
-( :option:`-Wmaybe-uninitialized` is issued for ordinary functions.)
+  In addition, passing a pointer (or in C++, a reference) to an uninitialized
+  object to a ``const``-qualified argument of a built-in function known to
+  read the object is also diagnosed by this warning.
+  ( :option:`-Wmaybe-uninitialized` is issued for ordinary functions.)
 
-If you want to warn about code that uses the uninitialized value of the
-variable in its own initializer, use the :option:`-Winit-self` option.
+  If you want to warn about code that uses the uninitialized value of the
+  variable in its own initializer, use the :option:`-Winit-self` option.
 
-These warnings occur for individual uninitialized elements of
-structure, union or array variables as well as for variables that are
-uninitialized as a whole.  They do not occur for variables or elements
-declared ``volatile``.  Because these warnings depend on
-optimization, the exact variables or elements for which there are
-warnings depend on the precise optimization options and version of GCC
-used.
+  These warnings occur for individual uninitialized elements of
+  structure, union or array variables as well as for variables that are
+  uninitialized as a whole.  They do not occur for variables or elements
+  declared ``volatile``.  Because these warnings depend on
+  optimization, the exact variables or elements for which there are
+  warnings depend on the precise optimization options and version of GCC
+  used.
 
-Note that there may be no warning about a variable that is used only
-to compute a value that itself is never used, because such
-computations may be deleted by data flow analysis before the warnings
-are printed.
+  Note that there may be no warning about a variable that is used only
+  to compute a value that itself is never used, because such
+  computations may be deleted by data flow analysis before the warnings
+  are printed.
 
 .. option:: -Wno-invalid-memory-model, -Winvalid-memory-model
 
@@ -1460,14 +1460,14 @@ are printed.
   defined for the relaxed, release, and sequentially consistent memory
   orders the following code is diagnosed:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void store (int *i)
-  {
-    __atomic_store_n (i, 0, memory_order_consume);
-  }
+    void store (int *i)
+    {
+      __atomic_store_n (i, 0, memory_order_consume);
+    }
 
-:option:`-Winvalid-memory-model` is enabled by default.
+  :option:`-Winvalid-memory-model` is enabled by default.
 
 .. option:: -Wmaybe-uninitialized, -Wno-maybe-uninitialized
 
@@ -1477,67 +1477,67 @@ are printed.
   the compiler emits a warning if it cannot prove the uninitialized paths
   are not executed at run time.
 
-In addition, passing a pointer (or in C++, a reference) to an uninitialized
-object to a ``const``-qualified function argument is also diagnosed by
-this warning.  ( :option:`-Wuninitialized` is issued for built-in functions
-known to read the object.)  Annotating the function with attribute
-``access (none)`` indicates that the argument isn't used to access
-the object and avoids the warning (see :ref:`common-function-attributes`).
+  In addition, passing a pointer (or in C++, a reference) to an uninitialized
+  object to a ``const``-qualified function argument is also diagnosed by
+  this warning.  ( :option:`-Wuninitialized` is issued for built-in functions
+  known to read the object.)  Annotating the function with attribute
+  ``access (none)`` indicates that the argument isn't used to access
+  the object and avoids the warning (see :ref:`common-function-attributes`).
 
-These warnings are only possible in optimizing compilation, because otherwise
-GCC does not keep track of the state of variables.
+  These warnings are only possible in optimizing compilation, because otherwise
+  GCC does not keep track of the state of variables.
 
-These warnings are made optional because GCC may not be able to determine when
-the code is correct in spite of appearing to have an error.  Here is one
-example of how this can happen:
+  These warnings are made optional because GCC may not be able to determine when
+  the code is correct in spite of appearing to have an error.  Here is one
+  example of how this can happen:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  {
-    int x;
-    switch (y)
-      {
-      case 1: x = 1;
-        break;
-      case 2: x = 4;
-        break;
-      case 3: x = 5;
-      }
-    foo (x);
-  }
+    {
+      int x;
+      switch (y)
+        {
+        case 1: x = 1;
+          break;
+        case 2: x = 4;
+          break;
+        case 3: x = 5;
+        }
+      foo (x);
+    }
 
-If the value of ``y`` is always 1, 2 or 3, then ``x`` is
-always initialized, but GCC doesn't know this. To suppress the
-warning, you need to provide a default case with assert(0) or
-similar code.
+  If the value of ``y`` is always 1, 2 or 3, then ``x`` is
+  always initialized, but GCC doesn't know this. To suppress the
+  warning, you need to provide a default case with assert(0) or
+  similar code.
 
-.. index:: longjmp warnings
+  .. index:: longjmp warnings
 
-This option also warns when a non-volatile automatic variable might be
-changed by a call to ``longjmp``.
-The compiler sees only the calls to ``setjmp``.  It cannot know
-where ``longjmp`` will be called; in fact, a signal handler could
-call it at any point in the code.  As a result, you may get a warning
-even when there is in fact no problem because ``longjmp`` cannot
-in fact be called at the place that would cause a problem.
+  This option also warns when a non-volatile automatic variable might be
+  changed by a call to ``longjmp``.
+  The compiler sees only the calls to ``setjmp``.  It cannot know
+  where ``longjmp`` will be called; in fact, a signal handler could
+  call it at any point in the code.  As a result, you may get a warning
+  even when there is in fact no problem because ``longjmp`` cannot
+  in fact be called at the place that would cause a problem.
 
-Some spurious warnings can be avoided if you declare all the functions
-you use that never return as ``noreturn``.  See :ref:`function-attributes`.
+  Some spurious warnings can be avoided if you declare all the functions
+  you use that never return as ``noreturn``.  See :ref:`function-attributes`.
 
-This warning is enabled by :option:`-Wall` or :option:`-Wextra`.
+  This warning is enabled by :option:`-Wall` or :option:`-Wextra`.
 
 .. option:: -Wunknown-pragmas, -Wno-unknown-pragmas
 
   .. index:: warning for unknown pragmas
 
-.. index:: unknown pragmas, warning
+  .. index:: unknown pragmas, warning
 
-.. index:: pragmas, warning of unknown
+  .. index:: pragmas, warning of unknown
 
-Warn when a ``#pragma`` directive is encountered that is not understood by 
-GCC.  If this command-line option is used, warnings are even issued
-for unknown pragmas in system header files.  This is not the case if
-the warnings are only enabled by the :option:`-Wall` command-line option.
+  Warn when a ``#pragma`` directive is encountered that is not understood by 
+  GCC.  If this command-line option is used, warnings are even issued
+  for unknown pragmas in system header files.  This is not the case if
+  the warnings are only enabled by the :option:`-Wall` command-line option.
 
 .. option:: -Wno-pragmas, -Wpragmas
 
@@ -1573,28 +1573,28 @@ the warnings are only enabled by the :option:`-Wall` command-line option.
   works.
   :option:`-Wstrict-aliasing` is equivalent to :option:`-Wstrict-aliasing=3`.
 
-Level 1: Most aggressive, quick, least accurate.
-Possibly useful when higher levels
-do not warn but :option:`-fstrict-aliasing` still breaks the code, as it has very few
-false negatives.  However, it has many false positives.
-Warns for all pointer conversions between possibly incompatible types,
-even if never dereferenced.  Runs in the front end only.
+  Level 1: Most aggressive, quick, least accurate.
+  Possibly useful when higher levels
+  do not warn but :option:`-fstrict-aliasing` still breaks the code, as it has very few
+  false negatives.  However, it has many false positives.
+  Warns for all pointer conversions between possibly incompatible types,
+  even if never dereferenced.  Runs in the front end only.
 
-Level 2: Aggressive, quick, not too precise.
-May still have many false positives (not as many as level 1 though),
-and few false negatives (but possibly more than level 1).
-Unlike level 1, it only warns when an address is taken.  Warns about
-incomplete types.  Runs in the front end only.
+  Level 2: Aggressive, quick, not too precise.
+  May still have many false positives (not as many as level 1 though),
+  and few false negatives (but possibly more than level 1).
+  Unlike level 1, it only warns when an address is taken.  Warns about
+  incomplete types.  Runs in the front end only.
 
-Level 3 (default for :option:`-Wstrict-aliasing` ):
-Should have very few false positives and few false
-negatives.  Slightly slower than levels 1 or 2 when optimization is enabled.
-Takes care of the common pun+dereference pattern in the front end:
-``*(int*)&some_float``.
-If optimization is enabled, it also runs in the back end, where it deals
-with multiple statement cases using flow-sensitive points-to information.
-Only warns when the converted pointer is dereferenced.
-Does not warn about incomplete types.
+  Level 3 (default for :option:`-Wstrict-aliasing` ):
+  Should have very few false positives and few false
+  negatives.  Slightly slower than levels 1 or 2 when optimization is enabled.
+  Takes care of the common pun+dereference pattern in the front end:
+  ``*(int*)&some_float``.
+  If optimization is enabled, it also runs in the back end, where it deals
+  with multiple statement cases using flow-sensitive points-to information.
+  Only warns when the converted pointer is dereferenced.
+  Does not warn about incomplete types.
 
 .. option:: -Wstrict-overflow, -Wno-strict-overflow
 
@@ -1605,46 +1605,46 @@ Does not warn about incomplete types.
   about cases where the compiler implements some optimization.  Thus
   this warning depends on the optimization level.
 
-An optimization that assumes that signed overflow does not occur is
-perfectly safe if the values of the variables involved are such that
-overflow never does, in fact, occur.  Therefore this warning can
-easily give a false positive: a warning about code that is not
-actually a problem.  To help focus on important issues, several
-warning levels are defined.  No warnings are issued for the use of
-undefined signed overflow when estimating how many iterations a loop
-requires, in particular when determining whether a loop will be
-executed at all.
+  An optimization that assumes that signed overflow does not occur is
+  perfectly safe if the values of the variables involved are such that
+  overflow never does, in fact, occur.  Therefore this warning can
+  easily give a false positive: a warning about code that is not
+  actually a problem.  To help focus on important issues, several
+  warning levels are defined.  No warnings are issued for the use of
+  undefined signed overflow when estimating how many iterations a loop
+  requires, in particular when determining whether a loop will be
+  executed at all.
 
-``-Wstrict-overflow=1``
-  Warn about cases that are both questionable and easy to avoid.  For
-  example the compiler simplifies
-  ``x + 1 > x`` to ``1``.  This level of
-  :option:`-Wstrict-overflow` is enabled by :option:`-Wall` ; higher levels
-  are not, and must be explicitly requested.
+  ``-Wstrict-overflow=1``
+    Warn about cases that are both questionable and easy to avoid.  For
+    example the compiler simplifies
+    ``x + 1 > x`` to ``1``.  This level of
+    :option:`-Wstrict-overflow` is enabled by :option:`-Wall` ; higher levels
+    are not, and must be explicitly requested.
 
-``-Wstrict-overflow=2``
-  Also warn about other cases where a comparison is simplified to a
-  constant.  For example: ``abs (x) >= 0``.  This can only be
-  simplified when signed integer overflow is undefined, because
-  ``abs (INT_MIN)`` overflows to ``INT_MIN``, which is less than
-  zero.  :option:`-Wstrict-overflow` (with no level) is the same as
-  :option:`-Wstrict-overflow=2`.
+  ``-Wstrict-overflow=2``
+    Also warn about other cases where a comparison is simplified to a
+    constant.  For example: ``abs (x) >= 0``.  This can only be
+    simplified when signed integer overflow is undefined, because
+    ``abs (INT_MIN)`` overflows to ``INT_MIN``, which is less than
+    zero.  :option:`-Wstrict-overflow` (with no level) is the same as
+    :option:`-Wstrict-overflow=2`.
 
-``-Wstrict-overflow=3``
-  Also warn about other cases where a comparison is simplified.  For
-  example: ``x + 1 > 1`` is simplified to ``x > 0``.
+  ``-Wstrict-overflow=3``
+    Also warn about other cases where a comparison is simplified.  For
+    example: ``x + 1 > 1`` is simplified to ``x > 0``.
 
-``-Wstrict-overflow=4``
-  Also warn about other simplifications not covered by the above cases.
-  For example: ``(x * 10) / 5`` is simplified to ``x * 2``.
+  ``-Wstrict-overflow=4``
+    Also warn about other simplifications not covered by the above cases.
+    For example: ``(x * 10) / 5`` is simplified to ``x * 2``.
 
-``-Wstrict-overflow=5``
-  Also warn about cases where the compiler reduces the magnitude of a
-  constant involved in a comparison.  For example: ``x + 2 > y`` is
-  simplified to ``x + 1 >= y``.  This is reported only at the
-  highest warning level because this simplification applies to many
-  comparisons, so this warning level gives a very large number of
-  false positives.
+  ``-Wstrict-overflow=5``
+    Also warn about cases where the compiler reduces the magnitude of a
+    constant involved in a comparison.  For example: ``x + 2 > y`` is
+    simplified to ``x + 1 >= y``.  This is reported only at the
+    highest warning level because this simplification applies to many
+    comparisons, so this warning level gives a very large number of
+    false positives.
 
 .. option:: -Wstring-compare, -Wno-string-compare
 
@@ -1656,18 +1656,18 @@ executed at all.
   the call to ``strcmp`` below is diagnosed because its result is
   necessarily non-zero irrespective of the contents of the array ``a``.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  extern char a[4];
-  void f (char *d)
-  {
-    strcpy (d, "string");
-    ...
-    if (0 == strcmp (a, d))   // cannot be true
-      puts ("a and d are the same");
-  }
+    extern char a[4];
+    void f (char *d)
+    {
+      strcpy (d, "string");
+      ...
+      if (0 == strcmp (a, d))   // cannot be true
+        puts ("a and d are the same");
+    }
 
-:option:`-Wstring-compare` is enabled by :option:`-Wextra`.
+  :option:`-Wstring-compare` is enabled by :option:`-Wextra`.
 
 ``-Wno-stringop-overflow``
 .. option:: -Wstringop-overflow, -Wno-stringop-overflow
@@ -1690,59 +1690,59 @@ executed at all.
   (the string ``"blue"`` including the terminating NUL) into the buffer
   of size 4.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  enum Color { blue, purple, yellow };
-  const char* f (enum Color clr)
-  {
-    static char buf [4];
-    const char *str;
-    switch (clr)
-      {
-        case blue: str = "blue"; break;
-        case purple: str = "purple"; break;
-        case yellow: str = "yellow"; break;
-      }
+    enum Color { blue, purple, yellow };
+    const char* f (enum Color clr)
+    {
+      static char buf [4];
+      const char *str;
+      switch (clr)
+        {
+          case blue: str = "blue"; break;
+          case purple: str = "purple"; break;
+          case yellow: str = "yellow"; break;
+        }
 
-    return strcpy (buf, str);   // warning here
-  }
+      return strcpy (buf, str);   // warning here
+    }
 
-Option :option:`-Wstringop-overflow=2` is enabled by default.
+  Option :option:`-Wstringop-overflow=2` is enabled by default.
 
-.. option:: -Wstringop-overflow, -Wno-stringop-overflow
+  .. option:: -Wstringop-overflow, -Wno-stringop-overflow
 
-  The :option:`-Wstringop-overflow=1` option uses type-zero Object Size Checking
-  to determine the sizes of destination objects.  At this setting the option
-  does not warn for writes past the end of subobjects of larger objects accessed
-  by pointers unless the size of the largest surrounding object is known.  When
-  the destination may be one of several objects it is assumed to be the largest
-  one of them.  On Linux systems, when optimization is enabled at this setting
-  the option warns for the same code as when the ``_FORTIFY_SOURCE`` macro
-  is defined to a non-zero value.
+    The :option:`-Wstringop-overflow=1` option uses type-zero Object Size Checking
+    to determine the sizes of destination objects.  At this setting the option
+    does not warn for writes past the end of subobjects of larger objects accessed
+    by pointers unless the size of the largest surrounding object is known.  When
+    the destination may be one of several objects it is assumed to be the largest
+    one of them.  On Linux systems, when optimization is enabled at this setting
+    the option warns for the same code as when the ``_FORTIFY_SOURCE`` macro
+    is defined to a non-zero value.
 
-``-Wstringop-overflow=2``
-  The :option:`-Wstringop-overflow=2` option uses type-one Object Size Checking
-  to determine the sizes of destination objects.  At this setting the option
-  warns about overflows when writing to members of the largest complete
-  objects whose exact size is known.  However, it does not warn for excessive
-  writes to the same members of unknown objects referenced by pointers since
-  they may point to arrays containing unknown numbers of elements.  This is
-  the default setting of the option.
+  ``-Wstringop-overflow=2``
+    The :option:`-Wstringop-overflow=2` option uses type-one Object Size Checking
+    to determine the sizes of destination objects.  At this setting the option
+    warns about overflows when writing to members of the largest complete
+    objects whose exact size is known.  However, it does not warn for excessive
+    writes to the same members of unknown objects referenced by pointers since
+    they may point to arrays containing unknown numbers of elements.  This is
+    the default setting of the option.
 
-``-Wstringop-overflow=3``
-  The :option:`-Wstringop-overflow=3` option uses type-two Object Size Checking
-  to determine the sizes of destination objects.  At this setting the option
-  warns about overflowing the smallest object or data member.  This is the
-  most restrictive setting of the option that may result in warnings for safe
-  code.
+  ``-Wstringop-overflow=3``
+    The :option:`-Wstringop-overflow=3` option uses type-two Object Size Checking
+    to determine the sizes of destination objects.  At this setting the option
+    warns about overflowing the smallest object or data member.  This is the
+    most restrictive setting of the option that may result in warnings for safe
+    code.
 
-``-Wstringop-overflow=4``
-  The :option:`-Wstringop-overflow=4` option uses type-three Object Size Checking
-  to determine the sizes of destination objects.  At this setting the option
-  warns about overflowing any data members, and when the destination is
-  one of several objects it uses the size of the largest of them to decide
-  whether to issue a warning.  Similarly to :option:`-Wstringop-overflow=3` this
-  setting of the option may result in warnings for benign code.
+  ``-Wstringop-overflow=4``
+    The :option:`-Wstringop-overflow=4` option uses type-three Object Size Checking
+    to determine the sizes of destination objects.  At this setting the option
+    warns about overflowing any data members, and when the destination is
+    one of several objects it uses the size of the largest of them to decide
+    whether to issue a warning.  Similarly to :option:`-Wstringop-overflow=3` this
+    setting of the option may result in warnings for benign code.
 
 .. option:: -Wno-stringop-overread, -Wstringop-overread
 
@@ -1750,7 +1750,7 @@ Option :option:`-Wstringop-overflow=2` is enabled by default.
   ``strcpy`` that are determined to read past the end of the source
   sequence.
 
-Option :option:`-Wstringop-overread` is enabled by default.
+  Option :option:`-Wstringop-overread` is enabled by default.
 
 .. option:: -Wno-stringop-truncation, -Wstringop-truncation
 
@@ -1759,99 +1759,99 @@ Option :option:`-Wstringop-overread` is enabled by default.
   ``strncpy``, and ``stpncpy`` that may either truncate the copied string
   or leave the destination unchanged.
 
-In the following example, the call to ``strncat`` specifies a bound that
-is less than the length of the source string.  As a result, the copy of
-the source will be truncated and so the call is diagnosed.  To avoid the
-warning use ``bufsize - strlen (buf) - 1)`` as the bound.
+  In the following example, the call to ``strncat`` specifies a bound that
+  is less than the length of the source string.  As a result, the copy of
+  the source will be truncated and so the call is diagnosed.  To avoid the
+  warning use ``bufsize - strlen (buf) - 1)`` as the bound.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void append (char *buf, size_t bufsize)
-  {
-    strncat (buf, ".txt", 3);
-  }
+    void append (char *buf, size_t bufsize)
+    {
+      strncat (buf, ".txt", 3);
+    }
 
-As another example, the following call to ``strncpy`` results in copying
-to ``d`` just the characters preceding the terminating NUL, without
-appending the NUL to the end.  Assuming the result of ``strncpy`` is
-necessarily a NUL-terminated string is a common mistake, and so the call
-is diagnosed.  To avoid the warning when the result is not expected to be
-NUL-terminated, call ``memcpy`` instead.
+  As another example, the following call to ``strncpy`` results in copying
+  to ``d`` just the characters preceding the terminating NUL, without
+  appending the NUL to the end.  Assuming the result of ``strncpy`` is
+  necessarily a NUL-terminated string is a common mistake, and so the call
+  is diagnosed.  To avoid the warning when the result is not expected to be
+  NUL-terminated, call ``memcpy`` instead.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void copy (char *d, const char *s)
-  {
-    strncpy (d, s, strlen (s));
-  }
+    void copy (char *d, const char *s)
+    {
+      strncpy (d, s, strlen (s));
+    }
 
-In the following example, the call to ``strncpy`` specifies the size
-of the destination buffer as the bound.  If the length of the source
-string is equal to or greater than this size the result of the copy will
-not be NUL-terminated.  Therefore, the call is also diagnosed.  To avoid
-the warning, specify ``sizeof buf - 1`` as the bound and set the last
-element of the buffer to ``NUL``.
+  In the following example, the call to ``strncpy`` specifies the size
+  of the destination buffer as the bound.  If the length of the source
+  string is equal to or greater than this size the result of the copy will
+  not be NUL-terminated.  Therefore, the call is also diagnosed.  To avoid
+  the warning, specify ``sizeof buf - 1`` as the bound and set the last
+  element of the buffer to ``NUL``.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void copy (const char *s)
-  {
-    char buf[80];
-    strncpy (buf, s, sizeof buf);
-    ...
-  }
+    void copy (const char *s)
+    {
+      char buf[80];
+      strncpy (buf, s, sizeof buf);
+      ...
+    }
 
-In situations where a character array is intended to store a sequence
-of bytes with no terminating ``NUL`` such an array may be annotated
-with attribute ``nonstring`` to avoid this warning.  Such arrays,
-however, are not suitable arguments to functions that expect
-``NUL``-terminated strings.  To help detect accidental misuses of
-such arrays GCC issues warnings unless it can prove that the use is
-safe.  See :ref:`common-variable-attributes`.
+  In situations where a character array is intended to store a sequence
+  of bytes with no terminating ``NUL`` such an array may be annotated
+  with attribute ``nonstring`` to avoid this warning.  Such arrays,
+  however, are not suitable arguments to functions that expect
+  ``NUL``-terminated strings.  To help detect accidental misuses of
+  such arrays GCC issues warnings unless it can prove that the use is
+  safe.  See :ref:`common-variable-attributes`.
 
 .. option:: -Wsuggest-attribute=[pure|const|noreturn|format|cold|malloc]
 
   Warn for cases where adding an attribute may be beneficial. The
   attributes currently supported are listed below.
 
-.. option:: -Wsuggest-attribute=pure
+  .. option:: -Wsuggest-attribute=pure
 
-  Warn about functions that might be candidates for attributes
-  ``pure``, ``const`` or ``noreturn`` or ``malloc``. The compiler
-  only warns for functions visible in other compilation units or (in the case of
-  ``pure`` and ``const``) if it cannot prove that the function returns
-  normally. A function returns normally if it doesn't contain an infinite loop or
-  return abnormally by throwing, calling ``abort`` or trapping.  This analysis
-  requires option :option:`-fipa-pure-const` , which is enabled by default at
-  :option:`-O` and higher.  Higher optimization levels improve the accuracy
-  of the analysis.
+    Warn about functions that might be candidates for attributes
+    ``pure``, ``const`` or ``noreturn`` or ``malloc``. The compiler
+    only warns for functions visible in other compilation units or (in the case of
+    ``pure`` and ``const``) if it cannot prove that the function returns
+    normally. A function returns normally if it doesn't contain an infinite loop or
+    return abnormally by throwing, calling ``abort`` or trapping.  This analysis
+    requires option :option:`-fipa-pure-const` , which is enabled by default at
+    :option:`-O` and higher.  Higher optimization levels improve the accuracy
+    of the analysis.
 
-.. option:: -Wsuggest-attribute=format
+  .. option:: -Wsuggest-attribute=format
 
-  Warn about function pointers that might be candidates for ``format``
-  attributes.  Note these are only possible candidates, not absolute ones.
-  GCC guesses that function pointers with ``format`` attributes that
-  are used in assignment, initialization, parameter passing or return
-  statements should have a corresponding ``format`` attribute in the
-  resulting type.  I.e. the left-hand side of the assignment or
-  initialization, the type of the parameter variable, or the return type
-  of the containing function respectively should also have a ``format``
-  attribute to avoid the warning.
+    Warn about function pointers that might be candidates for ``format``
+    attributes.  Note these are only possible candidates, not absolute ones.
+    GCC guesses that function pointers with ``format`` attributes that
+    are used in assignment, initialization, parameter passing or return
+    statements should have a corresponding ``format`` attribute in the
+    resulting type.  I.e. the left-hand side of the assignment or
+    initialization, the type of the parameter variable, or the return type
+    of the containing function respectively should also have a ``format``
+    attribute to avoid the warning.
 
-GCC also warns about function definitions that might be
-candidates for ``format`` attributes.  Again, these are only
-possible candidates.  GCC guesses that ``format`` attributes
-might be appropriate for any function that calls a function like
-``vprintf`` or ``vscanf``, but this might not always be the
-case, and some functions for which ``format`` attributes are
-appropriate may not be detected.
+    GCC also warns about function definitions that might be
+    candidates for ``format`` attributes.  Again, these are only
+    possible candidates.  GCC guesses that ``format`` attributes
+    might be appropriate for any function that calls a function like
+    ``vprintf`` or ``vscanf``, but this might not always be the
+    case, and some functions for which ``format`` attributes are
+    appropriate may not be detected.
 
-.. option:: -Wsuggest-attribute=cold
+  .. option:: -Wsuggest-attribute=cold
 
-  Warn about functions that might be candidates for ``cold`` attribute.  This
-  is based on static detection and generally only warns about functions which
-  always leads to a call to another ``cold`` function such as wrappers of
-  C++ ``throw`` or fatal error reporting functions leading to ``abort``.
+    Warn about functions that might be candidates for ``cold`` attribute.  This
+    is based on static detection and generally only warns about functions which
+    always leads to a call to another ``cold`` function such as wrappers of
+    C++ ``throw`` or fatal error reporting functions leading to ``abort``.
 
 .. option:: -Walloc-zero, -Wno-alloc-zero
 
@@ -1894,63 +1894,63 @@ appropriate may not be detected.
   types are considered unbounded even if they appear to be constrained to
   the expected range.
 
-For example, a bounded case of ``alloca`` could be:
+  For example, a bounded case of ``alloca`` could be:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void func (size_t n)
-  {
-    void *p;
-    if (n <= 1000)
-      p = alloca (n);
-    else
-      p = malloc (n);
-    f (p);
-  }
-
-In the above example, passing ``-Walloca-larger-than=1000`` would not
-issue a warning because the call to ``alloca`` is known to be at most
-1000 bytes.  However, if ``-Walloca-larger-than=500`` were passed,
-the compiler would emit a warning.
-
-Unbounded uses, on the other hand, are uses of ``alloca`` with no
-controlling predicate constraining its integer argument.  For example:
-
-.. code-block:: c++
-
-  void func ()
-  {
-    void *p = alloca (n);
-    f (p);
-  }
-
-If ``-Walloca-larger-than=500`` were passed, the above would trigger
-a warning, but this time because of the lack of bounds checking.
-
-Note, that even seemingly correct code involving signed integers could
-cause a warning:
-
-.. code-block:: c++
-
-  void func (signed int n)
-  {
-    if (n < 500)
-      {
+    void func (size_t n)
+    {
+      void *p;
+      if (n <= 1000)
         p = alloca (n);
-        f (p);
-      }
-  }
+      else
+        p = malloc (n);
+      f (p);
+    }
 
-In the above example, :samp:`{n}` could be negative, causing a larger than
-expected argument to be implicitly cast into the ``alloca`` call.
+  In the above example, passing ``-Walloca-larger-than=1000`` would not
+  issue a warning because the call to ``alloca`` is known to be at most
+  1000 bytes.  However, if ``-Walloca-larger-than=500`` were passed,
+  the compiler would emit a warning.
 
-This option also warns when ``alloca`` is used in a loop.
+  Unbounded uses, on the other hand, are uses of ``alloca`` with no
+  controlling predicate constraining its integer argument.  For example:
 
-:option:`-Walloca-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default
-but is usually only effective  when :option:`-ftree-vrp` is active (default
-for :option:`-O2` and above).
+  .. code-block:: c++
 
-See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
+    void func ()
+    {
+      void *p = alloca (n);
+      f (p);
+    }
+
+  If ``-Walloca-larger-than=500`` were passed, the above would trigger
+  a warning, but this time because of the lack of bounds checking.
+
+  Note, that even seemingly correct code involving signed integers could
+  cause a warning:
+
+  .. code-block:: c++
+
+    void func (signed int n)
+    {
+      if (n < 500)
+        {
+          p = alloca (n);
+          f (p);
+        }
+    }
+
+  In the above example, :samp:`{n}` could be negative, causing a larger than
+  expected argument to be implicitly cast into the ``alloca`` call.
+
+  This option also warns when ``alloca`` is used in a loop.
+
+  :option:`-Walloca-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default
+  but is usually only effective  when :option:`-ftree-vrp` is active (default
+  for :option:`-O2` and above).
+
+  See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
 
 .. option:: -Wno-alloca-larger-than
 
@@ -1964,13 +1964,13 @@ See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
   values.  This affects warnings from :option:`-Wconversion` ,
   :option:`-Wfloat-conversion` , and :option:`-Wsign-conversion`.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void f (char c, int i)
-  {
-    c = c + i; // warns with :option:`-Wconversion`
-    c = c + 1; // only warns with :option:`-Warith-conversion`
-  }
+    void f (char c, int i)
+    {
+      c = c + i; // warns with :option:`-Wconversion`
+      c = c + 1; // only warns with :option:`-Warith-conversion`
+    }
 
 .. option:: -Warray-bounds, -Wno-array-bounds
 
@@ -1978,15 +1978,15 @@ See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
   (default for :option:`-O2` and above). It warns about subscripts to arrays
   that are always out of bounds. This warning is enabled by :option:`-Wall`.
 
-``-Warray-bounds=1``
-  This is the warning level of :option:`-Warray-bounds` and is enabled
-  by :option:`-Wall` ; higher levels are not, and must be explicitly requested.
+  ``-Warray-bounds=1``
+    This is the warning level of :option:`-Warray-bounds` and is enabled
+    by :option:`-Wall` ; higher levels are not, and must be explicitly requested.
 
-``-Warray-bounds=2``
-  This warning level also warns about out of bounds access for
-  arrays at the end of a struct and for arrays accessed through
-  pointers. This warning level may give a larger number of
-  false positives and is deactivated by default.
+  ``-Warray-bounds=2``
+    This warning level also warns about out of bounds access for
+    arrays at the end of a struct and for arrays accessed through
+    pointers. This warning level may give a larger number of
+    false positives and is deactivated by default.
 
 .. option:: -Warray-parameter, -Wno-array-parameter
 
@@ -1995,45 +1995,45 @@ See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
   of out-of-bounds accesses to such parameters by warnings such as
   :option:`-Warray-bounds`.
 
-If the first function declaration uses the array form the bound specified
-in the array is assumed to be the minimum number of elements expected to
-be provided in calls to the function and the maximum number of elements
-accessed by it.  Failing to provide arguments of sufficient size or accessing
-more than the maximum number of elements may be diagnosed by warnings such
-as :option:`-Warray-bounds`.  At level 1 the warning diagnoses inconsistencies
-involving array parameters declared using the ``T[static N]`` form.
+  If the first function declaration uses the array form the bound specified
+  in the array is assumed to be the minimum number of elements expected to
+  be provided in calls to the function and the maximum number of elements
+  accessed by it.  Failing to provide arguments of sufficient size or accessing
+  more than the maximum number of elements may be diagnosed by warnings such
+  as :option:`-Warray-bounds`.  At level 1 the warning diagnoses inconsistencies
+  involving array parameters declared using the ``T[static N]`` form.
 
-For example, the warning triggers for the following redeclarations because
-the first one allows an array of any size to be passed to ``f`` while
-the second one with the keyword ``static`` specifies that the array
-argument must have at least four elements.
+  For example, the warning triggers for the following redeclarations because
+  the first one allows an array of any size to be passed to ``f`` while
+  the second one with the keyword ``static`` specifies that the array
+  argument must have at least four elements.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void f (int[static 4]);
-  void f (int[]);           // warning (inconsistent array form)
+    void f (int[static 4]);
+    void f (int[]);           // warning (inconsistent array form)
 
-  void g (void)
-  {
-    int *p = (int *)malloc (4);
-    f (p);                  // warning (array too small)
-    ...
-  }
+    void g (void)
+    {
+      int *p = (int *)malloc (4);
+      f (p);                  // warning (array too small)
+      ...
+    }
 
-At level 2 the warning also triggers for redeclarations involving any other
-inconsistency in array or pointer argument forms denoting array sizes.
-Pointers and arrays of unspecified bound are considered equivalent and do
-not trigger a warning.
+  At level 2 the warning also triggers for redeclarations involving any other
+  inconsistency in array or pointer argument forms denoting array sizes.
+  Pointers and arrays of unspecified bound are considered equivalent and do
+  not trigger a warning.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void g (int*);
-  void g (int[]);     // no warning
-  void g (int[8]);    // warning (inconsistent array bound)
+    void g (int*);
+    void g (int[]);     // no warning
+    void g (int[8]);    // warning (inconsistent array bound)
 
-:option:`-Warray-parameter=2` is included in :option:`-Wall`.  The
-:option:`-Wvla-parameter` option triggers warnings for similar inconsistencies
-involving Variable Length Array arguments.
+  :option:`-Warray-parameter=2` is included in :option:`-Wall`.  The
+  :option:`-Wvla-parameter` option triggers warnings for similar inconsistencies
+  involving Variable Length Array arguments.
 
 .. option:: -Wattribute-alias=n
 
@@ -2041,29 +2041,29 @@ involving Variable Length Array arguments.
   target is incompatible with the type of the alias.
   See :ref:`Declaring Attributes of Functions <function-attributes>`.
 
-``-Wattribute-alias=1``
-  The default warning level of the :option:`-Wattribute-alias` option diagnoses
-  incompatibilities between the type of the alias declaration and that of its
-  target.  Such incompatibilities are typically indicative of bugs.
+  ``-Wattribute-alias=1``
+    The default warning level of the :option:`-Wattribute-alias` option diagnoses
+    incompatibilities between the type of the alias declaration and that of its
+    target.  Such incompatibilities are typically indicative of bugs.
 
-``-Wattribute-alias=2``
-  At this level :option:`-Wattribute-alias` also diagnoses cases where
-  the attributes of the alias declaration are more restrictive than the
-  attributes applied to its target.  These mismatches can potentially
-  result in incorrect code generation.  In other cases they may be
-  benign and could be resolved simply by adding the missing attribute to
-  the target.  For comparison, see the :option:`-Wmissing-attributes`
-  option, which controls diagnostics when the alias declaration is less
-  restrictive than the target, rather than more restrictive.
+  ``-Wattribute-alias=2``
+    At this level :option:`-Wattribute-alias` also diagnoses cases where
+    the attributes of the alias declaration are more restrictive than the
+    attributes applied to its target.  These mismatches can potentially
+    result in incorrect code generation.  In other cases they may be
+    benign and could be resolved simply by adding the missing attribute to
+    the target.  For comparison, see the :option:`-Wmissing-attributes`
+    option, which controls diagnostics when the alias declaration is less
+    restrictive than the target, rather than more restrictive.
 
-  Attributes considered include ``alloc_align``, ``alloc_size``,
-  ``cold``, ``const``, ``hot``, ``leaf``, ``malloc``,
-  ``nonnull``, ``noreturn``, ``nothrow``, ``pure``,
-  ``returns_nonnull``, and ``returns_twice``.
+    Attributes considered include ``alloc_align``, ``alloc_size``,
+    ``cold``, ``const``, ``hot``, ``leaf``, ``malloc``,
+    ``nonnull``, ``noreturn``, ``nothrow``, ``pure``,
+    ``returns_nonnull``, and ``returns_twice``.
 
-  :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias=1`.
-This is the default.  You can disable these warnings with either
-:option:`-Wno-attribute-alias` or :option:`-Wattribute-alias=0`.
+    :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias=1`.
+  This is the default.  You can disable these warnings with either
+  :option:`-Wno-attribute-alias` or :option:`-Wattribute-alias=0`.
 
 .. option:: -Wbool-compare, -Wno-bool-compare
 
@@ -2071,13 +2071,13 @@ This is the default.  You can disable these warnings with either
   ``true``/``false``.  For instance, the following comparison is
   always false:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int n = 5;
-  ...
-  if ((n > 1) == 2) { ... }
+    int n = 5;
+    ...
+    if ((n > 1) == 2) { ... }
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wbool-operation, -Wno-bool-operation
 
@@ -2087,35 +2087,35 @@ This warning is enabled by :option:`-Wall`.
   which rarely makes sense.  (In C++, decrementing a boolean is always invalid.
   Incrementing a boolean is invalid in C++17, and deprecated otherwise.)
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wduplicated-branches, -Wno-duplicated-branches
 
   Warn when an if-else has identical branches.  This warning detects cases like
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  if (p != NULL)
-    return 0;
-  else
-    return 0;
+    if (p != NULL)
+      return 0;
+    else
+      return 0;
 
-It doesn't warn when both branches contain just a null statement.  This warning
-also warn for conditional operators:
+  It doesn't warn when both branches contain just a null statement.  This warning
+  also warn for conditional operators:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    int i = x ? *p : *p;
+      int i = x ? *p : *p;
 
 .. option:: -Wduplicated-cond, -Wno-duplicated-cond
 
   Warn about duplicated conditions in an if-else-if chain.  For instance,
   warn for the following code:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  if (p->q != NULL) { ... }
-  else if (p->q != NULL) { ... }
+    if (p->q != NULL) { ... }
+    else if (p->q != NULL) { ... }
 
 .. option:: -Wframe-address, -Wno-frame-address
 
@@ -2129,10 +2129,10 @@ also warn for conditional operators:
 
     C and Objective-C only
 
-Do not warn if type qualifiers on pointers are being discarded.
-Typically, the compiler warns if a ``const char *`` variable is
-passed to a function that takes a ``char *`` parameter.  This option
-can be used to suppress such a warning.
+  Do not warn if type qualifiers on pointers are being discarded.
+  Typically, the compiler warns if a ``const char *`` variable is
+  passed to a function that takes a ``char *`` parameter.  This option
+  can be used to suppress such a warning.
 
 .. option:: -Wno-discarded-array-qualifiers , -Wno-discarded-array-qualifiers, -Wdiscarded-array-qualifiers
 
@@ -2140,11 +2140,11 @@ can be used to suppress such a warning.
 
     C and Objective-C only
 
-Do not warn if type qualifiers on arrays which are pointer targets
-are being discarded.  Typically, the compiler warns if a
-``const int (*)[]`` variable is passed to a function that
-takes a ``int (*)[]`` parameter.  This option can be used to
-suppress such a warning.
+  Do not warn if type qualifiers on arrays which are pointer targets
+  are being discarded.  Typically, the compiler warns if a
+  ``const int (*)[]`` variable is passed to a function that
+  takes a ``int (*)[]`` parameter.  This option can be used to
+  suppress such a warning.
 
 .. option:: -Wno-incompatible-pointer-types , -Wno-incompatible-pointer-types, -Wincompatible-pointer-types
 
@@ -2152,10 +2152,10 @@ suppress such a warning.
 
     C and Objective-C only
 
-Do not warn when there is a conversion between pointers that have incompatible
-types.  This warning is for cases not covered by :option:`-Wno-pointer-sign` ,
-which warns for pointer argument passing or assignment with different
-signedness.
+  Do not warn when there is a conversion between pointers that have incompatible
+  types.  This warning is for cases not covered by :option:`-Wno-pointer-sign` ,
+  which warns for pointer argument passing or assignment with different
+  signedness.
 
 .. option:: -Wno-int-conversion , -Wno-int-conversion, -Wint-conversion
 
@@ -2163,10 +2163,10 @@ signedness.
 
     C and Objective-C only
 
-Do not warn about incompatible integer to pointer and pointer to integer
-conversions.  This warning is about implicit conversions; for explicit
-conversions the warnings :option:`-Wno-int-to-pointer-cast` and
-:option:`-Wno-pointer-to-int-cast` may be used.
+  Do not warn about incompatible integer to pointer and pointer to integer
+  conversions.  This warning is about implicit conversions; for explicit
+  conversions the warnings :option:`-Wno-int-to-pointer-cast` and
+  :option:`-Wno-pointer-to-int-cast` may be used.
 
 .. option:: -Wzero-length-bounds
 
@@ -2175,24 +2175,24 @@ conversions the warnings :option:`-Wno-int-to-pointer-cast` and
   arrays is discouraged because accesses to them are undefined.  See
   See :ref:`zero-length`.
 
-For example, the first two stores in function ``bad`` are diagnosed
-because the array elements overlap the subsequent members ``b`` and
-``c``.  The third store is diagnosed by :option:`-Warray-bounds`
-because it is beyond the bounds of the enclosing object.
+  For example, the first two stores in function ``bad`` are diagnosed
+  because the array elements overlap the subsequent members ``b`` and
+  ``c``.  The third store is diagnosed by :option:`-Warray-bounds`
+  because it is beyond the bounds of the enclosing object.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct X { int a[0]; int b, c; };
-  struct X x;
+    struct X { int a[0]; int b, c; };
+    struct X x;
 
-  void bad (void)
-  {
-    x.a[0] = 0;   // -Wzero-length-bounds
-    x.a[1] = 1;   // -Wzero-length-bounds
-    x.a[2] = 2;   // -Warray-bounds
-  }
+    void bad (void)
+    {
+      x.a[0] = 0;   // -Wzero-length-bounds
+      x.a[1] = 1;   // -Wzero-length-bounds
+      x.a[2] = 2;   // -Warray-bounds
+    }
 
-Option :option:`-Wzero-length-bounds` is enabled by :option:`-Warray-bounds`.
+  Option :option:`-Wzero-length-bounds` is enabled by :option:`-Warray-bounds`.
 
 .. option:: -Wno-div-by-zero, -Wdiv-by-zero
 
@@ -2204,38 +2204,38 @@ Option :option:`-Wzero-length-bounds` is enabled by :option:`-Warray-bounds`.
 
   .. index:: warnings from system headers
 
-.. index:: system headers, warnings from
+  .. index:: system headers, warnings from
 
-Print warning messages for constructs found in system header files.
-Warnings from system headers are normally suppressed, on the assumption
-that they usually do not indicate real problems and would only make the
-compiler output harder to read.  Using this command-line option tells
-GCC to emit warnings from system headers as if they occurred in user
-code.  However, note that using :option:`-Wall` in conjunction with this
-option does *not* warn about unknown pragmas in system
-headers-for that, :option:`-Wunknown-pragmas` must also be used.
+  Print warning messages for constructs found in system header files.
+  Warnings from system headers are normally suppressed, on the assumption
+  that they usually do not indicate real problems and would only make the
+  compiler output harder to read.  Using this command-line option tells
+  GCC to emit warnings from system headers as if they occurred in user
+  code.  However, note that using :option:`-Wall` in conjunction with this
+  option does *not* warn about unknown pragmas in system
+  headers-for that, :option:`-Wunknown-pragmas` must also be used.
 
 .. option:: -Wtautological-compare, -Wno-tautological-compare
 
   Warn if a self-comparison always evaluates to true or false.  This
   warning detects various mistakes such as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int i = 1;
-  ...
-  if (i > i) { ... }
+    int i = 1;
+    ...
+    if (i > i) { ... }
 
-This warning also warns about bitwise comparisons that always evaluate
-to true or false, for instance:
+  This warning also warns about bitwise comparisons that always evaluate
+  to true or false, for instance:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  if ((a & 16) == 10) { ... }
+    if ((a & 16) == 10) { ... }
 
-will always be false.
+  will always be false.
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wtrampolines, -Wno-trampolines
 
@@ -2251,16 +2251,16 @@ This warning is enabled by :option:`-Wall`.
 
   Warn if floating-point values are used in equality comparisons.
 
-The idea behind this is that sometimes it is convenient (for the
-programmer) to consider floating-point values as approximations to
-infinitely precise real numbers.  If you are doing this, then you need
-to compute (by analyzing the code, or in some other way) the maximum or
-likely maximum error that the computation introduces, and allow for it
-when performing comparisons (and when producing output, but that's a
-different problem).  In particular, instead of testing for equality, you
-should check to see whether the two values have ranges that overlap; and
-this is done with the relational operators, so equality comparisons are
-probably mistaken.
+  The idea behind this is that sometimes it is convenient (for the
+  programmer) to consider floating-point values as approximations to
+  infinitely precise real numbers.  If you are doing this, then you need
+  to compute (by analyzing the code, or in some other way) the maximum or
+  likely maximum error that the computation introduces, and allow for it
+  when performing comparisons (and when producing output, but that's a
+  different problem).  In particular, instead of testing for equality, you
+  should check to see whether the two values have ranges that overlap; and
+  this is done with the relational operators, so equality comparisons are
+  probably mistaken.
 
 .. option:: -Wtraditional , -Wtraditional, -Wno-traditional
 
@@ -2268,74 +2268,74 @@ probably mistaken.
 
     C and Objective-C only
 
-Warn about certain constructs that behave differently in traditional and
-ISO C.  Also warn about ISO C constructs that have no traditional C
-equivalent, and/or problematic constructs that should be avoided.
+  Warn about certain constructs that behave differently in traditional and
+  ISO C.  Also warn about ISO C constructs that have no traditional C
+  equivalent, and/or problematic constructs that should be avoided.
 
-* Macro parameters that appear within string literals in the macro body.
-  In traditional C macro replacement takes place within string literals,
-  but in ISO C it does not.
+  * Macro parameters that appear within string literals in the macro body.
+    In traditional C macro replacement takes place within string literals,
+    but in ISO C it does not.
 
-* In traditional C, some preprocessor directives did not exist.
-  Traditional preprocessors only considered a line to be a directive
-  if the :samp:`#` appeared in column 1 on the line.  Therefore
-  :option:`-Wtraditional` warns about directives that traditional C
-  understands but ignores because the :samp:`#` does not appear as the
-  first character on the line.  It also suggests you hide directives like
-  ``#pragma`` not understood by traditional C by indenting them.  Some
-  traditional implementations do not recognize ``#elif``, so this option
-  suggests avoiding it altogether.
+  * In traditional C, some preprocessor directives did not exist.
+    Traditional preprocessors only considered a line to be a directive
+    if the :samp:`#` appeared in column 1 on the line.  Therefore
+    :option:`-Wtraditional` warns about directives that traditional C
+    understands but ignores because the :samp:`#` does not appear as the
+    first character on the line.  It also suggests you hide directives like
+    ``#pragma`` not understood by traditional C by indenting them.  Some
+    traditional implementations do not recognize ``#elif``, so this option
+    suggests avoiding it altogether.
 
-* A function-like macro that appears without arguments.
+  * A function-like macro that appears without arguments.
 
-* The unary plus operator.
+  * The unary plus operator.
 
-* The :samp:`U` integer constant suffix, or the :samp:`F` or :samp:`L` floating-point
-  constant suffixes.  (Traditional C does support the :samp:`L` suffix on integer
-  constants.)  Note, these suffixes appear in macros defined in the system
-  headers of most modern systems, e.g. the :samp:`_MIN`/:samp:`_MAX` macros in ``<limits.h>``.
-  Use of these macros in user code might normally lead to spurious
-  warnings, however GCC's integrated preprocessor has enough context to
-  avoid warning in these cases.
+  * The :samp:`U` integer constant suffix, or the :samp:`F` or :samp:`L` floating-point
+    constant suffixes.  (Traditional C does support the :samp:`L` suffix on integer
+    constants.)  Note, these suffixes appear in macros defined in the system
+    headers of most modern systems, e.g. the :samp:`_MIN`/:samp:`_MAX` macros in ``<limits.h>``.
+    Use of these macros in user code might normally lead to spurious
+    warnings, however GCC's integrated preprocessor has enough context to
+    avoid warning in these cases.
 
-* A function declared external in one block and then used after the end of
-  the block.
+  * A function declared external in one block and then used after the end of
+    the block.
 
-* A ``switch`` statement has an operand of type ``long``.
+  * A ``switch`` statement has an operand of type ``long``.
 
-* A non-``static`` function declaration follows a ``static`` one.
-  This construct is not accepted by some traditional C compilers.
+  * A non-``static`` function declaration follows a ``static`` one.
+    This construct is not accepted by some traditional C compilers.
 
-* The ISO type of an integer constant has a different width or
-  signedness from its traditional type.  This warning is only issued if
-  the base of the constant is ten.  I.e. hexadecimal or octal values, which
-  typically represent bit patterns, are not warned about.
+  * The ISO type of an integer constant has a different width or
+    signedness from its traditional type.  This warning is only issued if
+    the base of the constant is ten.  I.e. hexadecimal or octal values, which
+    typically represent bit patterns, are not warned about.
 
-* Usage of ISO string concatenation is detected.
+  * Usage of ISO string concatenation is detected.
 
-* Initialization of automatic aggregates.
+  * Initialization of automatic aggregates.
 
-* Identifier conflicts with labels.  Traditional C lacks a separate
-  namespace for labels.
+  * Identifier conflicts with labels.  Traditional C lacks a separate
+    namespace for labels.
 
-* Initialization of unions.  If the initializer is zero, the warning is
-  omitted.  This is done under the assumption that the zero initializer in
-  user code appears conditioned on e.g. ``__STDC__`` to avoid missing
-  initializer warnings and relies on default initialization to zero in the
-  traditional C case.
+  * Initialization of unions.  If the initializer is zero, the warning is
+    omitted.  This is done under the assumption that the zero initializer in
+    user code appears conditioned on e.g. ``__STDC__`` to avoid missing
+    initializer warnings and relies on default initialization to zero in the
+    traditional C case.
 
-* Conversions by prototypes between fixed/floating-point values and vice
-  versa.  The absence of these prototypes when compiling with traditional
-  C causes serious problems.  This is a subset of the possible
-  conversion warnings; for the full set use :option:`-Wtraditional-conversion`.
+  * Conversions by prototypes between fixed/floating-point values and vice
+    versa.  The absence of these prototypes when compiling with traditional
+    C causes serious problems.  This is a subset of the possible
+    conversion warnings; for the full set use :option:`-Wtraditional-conversion`.
 
-* Use of ISO C style function definitions.  This warning intentionally is
-  *not* issued for prototype declarations or variadic functions
-  because these ISO C features appear in your code when using
-  libiberty's traditional C compatibility macros, ``PARAMS`` and
-  ``VPARAMS``.  This warning is also bypassed for nested functions
-  because that feature is already a GCC extension and thus not relevant to
-  traditional C compatibility.
+  * Use of ISO C style function definitions.  This warning intentionally is
+    *not* issued for prototype declarations or variadic functions
+    because these ISO C features appear in your code when using
+    libiberty's traditional C compatibility macros, ``PARAMS`` and
+    ``VPARAMS``.  This warning is also bypassed for nested functions
+    because that feature is already a GCC extension and thus not relevant to
+    traditional C compatibility.
 
 .. option:: -Wtraditional-conversion , -Wtraditional-conversion, -Wno-traditional-conversion
 
@@ -2343,11 +2343,11 @@ equivalent, and/or problematic constructs that should be avoided.
 
     C and Objective-C only
 
-Warn if a prototype causes a type conversion that is different from what
-would happen to the same argument in the absence of a prototype.  This
-includes conversions of fixed point to floating and vice versa, and
-conversions changing the width or signedness of a fixed-point argument
-except when the same as the default promotion.
+  Warn if a prototype causes a type conversion that is different from what
+  would happen to the same argument in the absence of a prototype.  This
+  includes conversions of fixed point to floating and vice versa, and
+  conversions changing the width or signedness of a fixed-point argument
+  except when the same as the default promotion.
 
 .. option:: -Wdeclaration-after-statement , -Wdeclaration-after-statement, -Wno-declaration-after-statement
 
@@ -2355,9 +2355,9 @@ except when the same as the default promotion.
 
     C and Objective-C only
 
-Warn when a declaration is found after a statement in a block.  This
-construct, known from C++, was introduced with ISO C99 and is by default
-allowed in GCC.  It is not supported by ISO C90.  See :ref:`mixed-labels-and-declarations`.
+  Warn when a declaration is found after a statement in a block.  This
+  construct, known from C++, was introduced with ISO C99 and is by default
+  allowed in GCC.  It is not supported by ISO C90.  See :ref:`mixed-labels-and-declarations`.
 
 .. option:: -Wshadow, -Wno-shadow
 
@@ -2378,8 +2378,8 @@ allowed in GCC.  It is not supported by ISO C90.  See :ref:`mixed-labels-and-dec
 
     Objective-C only
 
-Do not warn whenever a local variable shadows an instance variable in an
-Objective-C method.
+  Do not warn whenever a local variable shadows an instance variable in an
+  Objective-C method.
 
 .. option:: -Wshadow=global
 
@@ -2400,41 +2400,41 @@ Objective-C method.
   a local variable shadows another one of incompatible type, it is most
   likely intentional, not a bug or typo, as shown in the following example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  for (SomeIterator i = SomeObj.begin(); i != SomeObj.end(); ++i)
-  {
-    for (int i = 0; i < N; ++i)
+    for (SomeIterator i = SomeObj.begin(); i != SomeObj.end(); ++i)
     {
+      for (int i = 0; i < N; ++i)
+      {
+        ...
+      }
       ...
     }
-    ...
-  }
 
-Since the two variable ``i`` in the example above have incompatible types,
-enabling only :option:`-Wshadow=compatible-local` does not emit a warning.
-Because their types are incompatible, if a programmer accidentally uses one
-in place of the other, type checking is expected to catch that and emit an
-error or warning.  Use of this flag instead of :option:`-Wshadow=local` can
-possibly reduce the number of warnings triggered by intentional shadowing.
-Note that this also means that shadowing ``const char *i`` by
-``char *i`` does not emit a warning.
+  Since the two variable ``i`` in the example above have incompatible types,
+  enabling only :option:`-Wshadow=compatible-local` does not emit a warning.
+  Because their types are incompatible, if a programmer accidentally uses one
+  in place of the other, type checking is expected to catch that and emit an
+  error or warning.  Use of this flag instead of :option:`-Wshadow=local` can
+  possibly reduce the number of warnings triggered by intentional shadowing.
+  Note that this also means that shadowing ``const char *i`` by
+  ``char *i`` does not emit a warning.
 
-This warning is also enabled by :option:`-Wshadow=local`.
+  This warning is also enabled by :option:`-Wshadow=local`.
 
 .. option:: -Wlarger-than=byte-size
 
   .. index:: Wlarger-than-byte-size
 
-Warn whenever an object is defined whose size exceeds :samp:`{byte-size}`.
-:option:`-Wlarger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
-Warnings controlled by the option can be disabled either by specifying
-:samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by :option:`-Wno-larger-than`.
+  Warn whenever an object is defined whose size exceeds :samp:`{byte-size}`.
+  :option:`-Wlarger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
+  Warnings controlled by the option can be disabled either by specifying
+  :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by :option:`-Wno-larger-than`.
 
-Also warn for calls to bounded functions such as ``memchr`` or
-``strnlen`` that specify a bound greater than the largest possible
-object, which is :samp:`PTRDIFF_MAX` bytes by default.  These warnings
-can only be disabled by :option:`-Wno-larger-than`.
+  Also warn for calls to bounded functions such as ``memchr`` or
+  ``strnlen`` that specify a bound greater than the largest possible
+  object, which is :samp:`PTRDIFF_MAX` bytes by default.  These warnings
+  can only be disabled by :option:`-Wno-larger-than`.
 
 .. option:: -Wno-larger-than
 
@@ -2470,16 +2470,16 @@ can only be disabled by :option:`-Wno-larger-than`.
   not to the begginning of the object, the call to ``free`` below is
   diagnosed.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void f (char *p)
-  {
-    p = stpcpy (p, "abc");
-    // ...
-    free (p);   // warning
-  }
+    void f (char *p)
+    {
+      p = stpcpy (p, "abc");
+      // ...
+      free (p);   // warning
+    }
 
-:option:`-Wfree-nonheap-object` is enabled by default.
+  :option:`-Wfree-nonheap-object` is enabled by default.
 
 .. option:: -Wstack-usage=byte-size
 
@@ -2489,30 +2489,30 @@ can only be disabled by :option:`-Wno-larger-than`.
   constructs is included by the compiler when determining whether or not to
   issue a warning.
 
-The message is in keeping with the output of :option:`-fstack-usage`.
+  The message is in keeping with the output of :option:`-fstack-usage`.
 
-** If the stack usage is fully static but exceeds the specified amount, it's:
+  ** If the stack usage is fully static but exceeds the specified amount, it's:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-      warning: stack usage is 1120 bytes
+        warning: stack usage is 1120 bytes
 
-* If the stack usage is (partly) dynamic but bounded, it's:
+  * If the stack usage is (partly) dynamic but bounded, it's:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-      warning: stack usage might be 1648 bytes
+        warning: stack usage might be 1648 bytes
 
-* If the stack usage is (partly) dynamic and not bounded, it's:
+  * If the stack usage is (partly) dynamic and not bounded, it's:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-      warning: stack usage might be unbounded
+        warning: stack usage might be unbounded
 
-:option:`-Wstack-usage`:samp:`=PTRDIFF_MAX` is enabled by default.
-Warnings controlled by the option can be disabled either by specifying
-:samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by
-:option:`-Wno-stack-usage`.
+  :option:`-Wstack-usage`:samp:`=PTRDIFF_MAX` is enabled by default.
+  Warnings controlled by the option can be disabled either by specifying
+  :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by
+  :option:`-Wno-stack-usage`.
 
 .. option:: -Wno-stack-usage
 
@@ -2532,11 +2532,11 @@ Warnings controlled by the option can be disabled either by specifying
 
     MinGW targets only
 
-When used in combination with :option:`-Wformat`
-and :option:`-pedantic` without GNU extensions, this option
-disables the warnings about non-ISO ``printf`` / ``scanf`` format
-width specifiers ``I32``, ``I64``, and ``I`` used on Windows targets,
-which depend on the MS runtime.
+  When used in combination with :option:`-Wformat`
+  and :option:`-pedantic` without GNU extensions, this option
+  disables the warnings about non-ISO ``printf`` / ``scanf`` format
+  width specifiers ``I32``, ``I64``, and ``I`` used on Windows targets,
+  which depend on the MS runtime.
 
 .. option:: -Wpointer-arith, -Wno-pointer-arith
 
@@ -2552,24 +2552,24 @@ which depend on the MS runtime.
   This usually
   means that the pointer was meant to be dereferenced.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  const char *p = foo ();
-  if (p == '\0')
-    return 42;
+    const char *p = foo ();
+    if (p == '\0')
+      return 42;
 
-Note that the code above is invalid in C++11.
+  Note that the code above is invalid in C++11.
 
-This warning is enabled by default.
+  This warning is enabled by default.
 
 .. option:: -Wtsan, -Wno-tsan
 
   Warn about unsupported features in ThreadSanitizer.
 
-ThreadSanitizer does not support ``std::atomic_thread_fence`` and
-can report false positives.
+  ThreadSanitizer does not support ``std::atomic_thread_fence`` and
+  can report false positives.
 
-This warning is enabled by default.
+  This warning is enabled by default.
 
 .. option:: -Wtype-limits, -Wno-type-limits
 
@@ -2585,23 +2585,23 @@ This warning is enabled by default.
 
     C and Objective-C only
 
-Warn for calls to standard functions that compute the absolute value
-of an argument when a more appropriate standard function is available.
-For example, calling ``abs(3.14)`` triggers the warning because the
-appropriate function to call to compute the absolute value of a double
-argument is ``fabs``.  The option also triggers warnings when the
-argument in a call to such a function has an unsigned type.  This
-warning can be suppressed with an explicit type cast and it is also
-enabled by :option:`-Wextra`.
+  Warn for calls to standard functions that compute the absolute value
+  of an argument when a more appropriate standard function is available.
+  For example, calling ``abs(3.14)`` triggers the warning because the
+  appropriate function to call to compute the absolute value of a double
+  argument is ``fabs``.  The option also triggers warnings when the
+  argument in a call to such a function has an unsigned type.  This
+  warning can be suppressed with an explicit type cast and it is also
+  enabled by :option:`-Wextra`.
 
-.. Copyright (C) 1999-2021 Free Software Foundation, Inc.
-   This is part of the CPP and GCC manuals.
-   For copying conditions, see the file gcc.texi.
-   -
-   Options affecting preprocessor warnings
-   -
-   If this file is included with the flag ``cppmanual'' set, it is
-   formatted for inclusion in the CPP manual; otherwise the main GCC manual.
+  .. Copyright (C) 1999-2021 Free Software Foundation, Inc.
+     This is part of the CPP and GCC manuals.
+     For copying conditions, see the file gcc.texi.
+     -
+     Options affecting preprocessor warnings
+     -
+     If this file is included with the flag ``cppmanual'' set, it is
+     formatted for inclusion in the CPP manual; otherwise the main GCC manual.
 
 .. option:: -Wcomment, -Wcomments
 
@@ -2616,10 +2616,10 @@ enabled by :option:`-Wextra`.
   the program.  Trigraphs within comments are not warned about,
   except those that would form escaped newlines.
 
-This option is implied by :option:`-Wall`.  If :option:`-Wall` is not
-given, this option is still enabled unless trigraphs are enabled.  To
-get trigraph conversion without warnings, but get the other
-:option:`-Wall` warnings, use :samp:`-trigraphs -Wall -Wno-trigraphs`.
+  This option is implied by :option:`-Wall`.  If :option:`-Wall` is not
+  given, this option is still enabled unless trigraphs are enabled.  To
+  get trigraph conversion without warnings, but get the other
+  :option:`-Wall` warnings, use :samp:`-trigraphs -Wall -Wno-trigraphs`.
 
 .. option:: -Wundef, -Wno-undef
 
@@ -2640,35 +2640,35 @@ get trigraph conversion without warnings, but get the other
   The preprocessor also warns if the macro has not been used at the
   time it is redefined or undefined.
 
-Built-in macros, macros defined on the command line, and macros
-defined in include files are not warned about.
+  Built-in macros, macros defined on the command line, and macros
+  defined in include files are not warned about.
 
-*Note:* If a macro is actually used, but only used in skipped
-conditional blocks, then the preprocessor reports it as unused.  To avoid the
-warning in such a case, you might improve the scope of the macro's
-definition by, for example, moving it into the first skipped block.
-Alternatively, you could provide a dummy use with something like:
+  *Note:* If a macro is actually used, but only used in skipped
+  conditional blocks, then the preprocessor reports it as unused.  To avoid the
+  warning in such a case, you might improve the scope of the macro's
+  definition by, for example, moving it into the first skipped block.
+  Alternatively, you could provide a dummy use with something like:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #if defined the_macro_causing_the_warning
-  #endif
+    #if defined the_macro_causing_the_warning
+    #endif
 
 .. option:: -Wno-endif-labels, -Wendif-labels
 
   Do not warn whenever an ``#else`` or an ``#endif`` are followed by text.
   This sometimes happens in older programs with code of the form
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #if FOO
-  ...
-  #else FOO
-  ...
-  #endif FOO
+    #if FOO
+    ...
+    #else FOO
+    ...
+    #endif FOO
 
-The second and third ``FOO`` should be in comments.
-This warning is on by default.
+  The second and third ``FOO`` should be in comments.
+  This warning is on by default.
 
 .. option:: -Wbad-function-cast , -Wbad-function-cast, -Wno-bad-function-cast
 
@@ -2676,9 +2676,9 @@ This warning is on by default.
 
     C and Objective-C only
 
-Warn when a function call is cast to a non-matching type.
-For example, warn if a call to a function returning an integer type 
-is cast to a pointer type.
+  Warn when a function call is cast to a non-matching type.
+  For example, warn if a call to a function returning an integer type 
+  is cast to a pointer type.
 
 .. option:: -Wc90-c99-compat , -Wc90-c99-compat, -Wno-c90-c99-compat
 
@@ -2686,11 +2686,11 @@ is cast to a pointer type.
 
     C and Objective-C only
 
-Warn about features not present in ISO C90, but present in ISO C99.
-For instance, warn about use of variable length arrays, ``long long``
-type, ``bool`` type, compound literals, designated initializers, and so
-on.  This option is independent of the standards mode.  Warnings are disabled
-in the expression that follows ``__extension__``.
+  Warn about features not present in ISO C90, but present in ISO C99.
+  For instance, warn about use of variable length arrays, ``long long``
+  type, ``bool`` type, compound literals, designated initializers, and so
+  on.  This option is independent of the standards mode.  Warnings are disabled
+  in the expression that follows ``__extension__``.
 
 .. option:: -Wc99-c11-compat , -Wc99-c11-compat, -Wno-c99-c11-compat
 
@@ -2698,12 +2698,12 @@ in the expression that follows ``__extension__``.
 
     C and Objective-C only
 
-Warn about features not present in ISO C99, but present in ISO C11.
-For instance, warn about use of anonymous structures and unions,
-``_Atomic`` type qualifier, ``_Thread_local`` storage-class specifier,
-``_Alignas`` specifier, ``Alignof`` operator, ``_Generic`` keyword,
-and so on.  This option is independent of the standards mode.  Warnings are
-disabled in the expression that follows ``__extension__``.
+  Warn about features not present in ISO C99, but present in ISO C11.
+  For instance, warn about use of anonymous structures and unions,
+  ``_Atomic`` type qualifier, ``_Thread_local`` storage-class specifier,
+  ``_Alignas`` specifier, ``Alignof`` operator, ``_Generic`` keyword,
+  and so on.  This option is independent of the standards mode.  Warnings are
+  disabled in the expression that follows ``__extension__``.
 
 .. option:: -Wc11-c2x-compat , -Wc11-c2x-compat, -Wno-c11-c2x-compat
 
@@ -2711,12 +2711,12 @@ disabled in the expression that follows ``__extension__``.
 
     C and Objective-C only
 
-Warn about features not present in ISO C11, but present in ISO C2X.
-For instance, warn about omitting the string in ``_Static_assert``,
-use of :samp:`[[]]` syntax for attributes, use of decimal
-floating-point types, and so on.  This option is independent of the
-standards mode.  Warnings are disabled in the expression that follows
-``__extension__``.
+  Warn about features not present in ISO C11, but present in ISO C2X.
+  For instance, warn about omitting the string in ``_Static_assert``,
+  use of :samp:`[[]]` syntax for attributes, use of decimal
+  floating-point types, and so on.  This option is independent of the
+  standards mode.  Warnings are disabled in the expression that follows
+  ``__extension__``.
 
 .. option:: -Wc++-compat , -Wc++-compat, -Wno-c++-compat
 
@@ -2724,9 +2724,9 @@ standards mode.  Warnings are disabled in the expression that follows
 
     C and Objective-C only
 
-Warn about ISO C constructs that are outside of the common subset of
-ISO C and ISO C++, e.g. request for implicit conversion from
-``void *`` to a pointer to non-``void`` type.
+  Warn about ISO C constructs that are outside of the common subset of
+  ISO C and ISO C++, e.g. request for implicit conversion from
+  ``void *`` to a pointer to non-``void`` type.
 
 .. option:: -Wc++11-compat , -Wc++11-compat, -Wno-c++11-compat
 
@@ -2734,10 +2734,10 @@ ISO C and ISO C++, e.g. request for implicit conversion from
 
     C++ and Objective-C++ only
 
-Warn about C++ constructs whose meaning differs between ISO C++ 1998
-and ISO C++ 2011, e.g., identifiers in ISO C++ 1998 that are keywords
-in ISO C++ 2011.  This warning turns on :option:`-Wnarrowing` and is
-enabled by :option:`-Wall`.
+  Warn about C++ constructs whose meaning differs between ISO C++ 1998
+  and ISO C++ 2011, e.g., identifiers in ISO C++ 1998 that are keywords
+  in ISO C++ 2011.  This warning turns on :option:`-Wnarrowing` and is
+  enabled by :option:`-Wall`.
 
 .. option:: -Wc++14-compat , -Wc++14-compat, -Wno-c++14-compat
 
@@ -2745,8 +2745,8 @@ enabled by :option:`-Wall`.
 
     C++ and Objective-C++ only
 
-Warn about C++ constructs whose meaning differs between ISO C++ 2011
-and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
+  Warn about C++ constructs whose meaning differs between ISO C++ 2011
+  and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wc++17-compat , -Wc++17-compat, -Wno-c++17-compat
 
@@ -2754,8 +2754,8 @@ and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
 
     C++ and Objective-C++ only
 
-Warn about C++ constructs whose meaning differs between ISO C++ 2014
-and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
+  Warn about C++ constructs whose meaning differs between ISO C++ 2014
+  and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wc++20-compat , -Wc++20-compat, -Wno-c++20-compat
 
@@ -2763,8 +2763,8 @@ and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
 
     C++ and Objective-C++ only
 
-Warn about C++ constructs whose meaning differs between ISO C++ 2017
-and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
+  Warn about C++ constructs whose meaning differs between ISO C++ 2017
+  and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wcast-qual, -Wno-cast-qual
 
@@ -2772,18 +2772,18 @@ and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
   the target type.  For example, warn if a ``const char *`` is cast
   to an ordinary ``char *``.
 
-Also warn when making a cast that introduces a type qualifier in an
-unsafe way.  For example, casting ``char **`` to ``const char **``
-is unsafe, as in this example:
+  Also warn when making a cast that introduces a type qualifier in an
+  unsafe way.  For example, casting ``char **`` to ``const char **``
+  is unsafe, as in this example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    /* p is char ** value.  */
-    const char **q = (const char **) p;
-    /* Assignment of readonly string to const char * is OK.  */
-    *q = "string";
-    /* Now char** pointer points to read-only memory.  */
-    **p = 'b';
+      /* p is char ** value.  */
+      const char **q = (const char **) p;
+      /* Assignment of readonly string to const char * is OK.  */
+      *q = "string";
+      /* Now char** pointer points to read-only memory.  */
+      **p = 'b';
 
 .. option:: -Wcast-align, -Wno-cast-align
 
@@ -2823,9 +2823,9 @@ is unsafe, as in this example:
   just a nuisance. This is why we did not make :option:`-Wall` request
   these warnings.
 
-When compiling C++, warn about the deprecated conversion from string
-literals to ``char *``.  This warning is enabled by default for C++
-programs.
+  When compiling C++, warn about the deprecated conversion from string
+  literals to ``char *``.  This warning is enabled by default for C++
+  programs.
 
 .. option:: -Wclobbered, -Wno-clobbered
 
@@ -2844,15 +2844,15 @@ programs.
   conversions between signed and unsigned integers can be disabled by
   using :option:`-Wno-sign-conversion`.
 
-For C++, also warn for confusing overload resolution for user-defined
-conversions; and conversions that never use a type conversion
-operator: conversions to ``void``, the same type, a base class or a
-reference to them. Warnings about conversions between signed and
-unsigned integers are disabled by default in C++ unless
-:option:`-Wsign-conversion` is explicitly enabled.
+  For C++, also warn for confusing overload resolution for user-defined
+  conversions; and conversions that never use a type conversion
+  operator: conversions to ``void``, the same type, a base class or a
+  reference to them. Warnings about conversions between signed and
+  unsigned integers are disabled by default in C++ unless
+  :option:`-Wsign-conversion` is explicitly enabled.
 
-Warnings about conversion from arithmetic on a small type back to that
-type are only given with :option:`-Warith-conversion`.
+  Warnings about conversion from arithmetic on a small type back to that
+  type are only given with :option:`-Warith-conversion`.
 
 .. option:: -Wdangling-else, -Wno-dangling-else
 
@@ -2860,39 +2860,39 @@ type are only given with :option:`-Warith-conversion`.
   ``if`` statement an ``else`` branch belongs.  Here is an example of
   such a case:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  {
-    if (a)
-      if (b)
-        foo ();
-    else
-      bar ();
-  }
-
-In C/C++, every ``else`` branch belongs to the innermost possible
-``if`` statement, which in this example is ``if (b)``.  This is
-often not what the programmer expected, as illustrated in the above
-example by indentation the programmer chose.  When there is the
-potential for this confusion, GCC issues a warning when this flag
-is specified.  To eliminate the warning, add explicit braces around
-the innermost ``if`` statement so there is no way the ``else``
-can belong to the enclosing ``if``.  The resulting code
-looks like this:
-
-.. code-block:: c++
-
-  {
-    if (a)
-      {
+    {
+      if (a)
         if (b)
           foo ();
-        else
-          bar ();
-      }
-  }
+      else
+        bar ();
+    }
 
-This warning is enabled by :option:`-Wparentheses`.
+  In C/C++, every ``else`` branch belongs to the innermost possible
+  ``if`` statement, which in this example is ``if (b)``.  This is
+  often not what the programmer expected, as illustrated in the above
+  example by indentation the programmer chose.  When there is the
+  potential for this confusion, GCC issues a warning when this flag
+  is specified.  To eliminate the warning, add explicit braces around
+  the innermost ``if`` statement so there is no way the ``else``
+  can belong to the enclosing ``if``.  The resulting code
+  looks like this:
+
+  .. code-block:: c++
+
+    {
+      if (a)
+        {
+          if (b)
+            foo ();
+          else
+            bar ();
+        }
+    }
+
+  This warning is enabled by :option:`-Wparentheses`.
 
 .. option:: -Wdate-time, -Wno-date-time
 
@@ -2928,28 +2928,28 @@ This warning is enabled by :option:`-Wparentheses`.
 
     C, Objective-C only
 
-Warn if a ``goto`` statement or a ``switch`` statement jumps
-forward across the initialization of a variable, or jumps backward to a
-label after the variable has been initialized.  This only warns about
-variables that are initialized when they are declared.  This warning is
-only supported for C and Objective-C; in C++ this sort of branch is an
-error in any case.
+  Warn if a ``goto`` statement or a ``switch`` statement jumps
+  forward across the initialization of a variable, or jumps backward to a
+  label after the variable has been initialized.  This only warns about
+  variables that are initialized when they are declared.  This warning is
+  only supported for C and Objective-C; in C++ this sort of branch is an
+  error in any case.
 
-:option:`-Wjump-misses-init` is included in :option:`-Wc++-compat`.  It
-can be disabled with the :option:`-Wno-jump-misses-init` option.
+  :option:`-Wjump-misses-init` is included in :option:`-Wc++-compat`.  It
+  can be disabled with the :option:`-Wno-jump-misses-init` option.
 
 .. option:: -Wsign-compare, -Wno-sign-compare
 
   .. index:: warning for comparison of signed and unsigned values
 
-.. index:: comparison of signed and unsigned values, warning
+  .. index:: comparison of signed and unsigned values, warning
 
-.. index:: signed and unsigned values, comparison warning
+  .. index:: signed and unsigned values, comparison warning
 
-Warn when a comparison between signed and unsigned values could produce
-an incorrect result when the signed value is converted to unsigned.
-In C++, this warning is also enabled by :option:`-Wall`.  In C, it is
-also enabled by :option:`-Wextra`.
+  Warn when a comparison between signed and unsigned values could produce
+  an incorrect result when the signed value is converted to unsigned.
+  In C++, this warning is also enabled by :option:`-Wall`.  In C, it is
+  also enabled by :option:`-Wextra`.
 
 .. option:: -Wsign-conversion, -Wno-sign-conversion
 
@@ -2976,15 +2976,15 @@ also enabled by :option:`-Wextra`.
   In such a case, the computation will not yield the number of elements in the
   array, which is likely what the user intended.  This warning warns e.g. about
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int fn ()
-  {
-    int arr[10];
-    return sizeof (arr) / sizeof (short);
-  }
+    int fn ()
+    {
+      int arr[10];
+      return sizeof (arr) / sizeof (short);
+    }
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wsizeof-pointer-div, -Wno-sizeof-pointer-div
 
@@ -3007,17 +3007,17 @@ This warning is enabled by :option:`-Wall`.
   ``strncat`` specifies the size of the source string as the bound.  That
   is almost certainly a mistake and so the call is diagnosed.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void make_file (const char *name)
-  {
-    char path[PATH_MAX];
-    strncpy (path, name, sizeof path - 1);
-    strncat (path, ".text", sizeof ".text");
-    ...
-  }
+    void make_file (const char *name)
+    {
+      char path[PATH_MAX];
+      strncpy (path, name, sizeof path - 1);
+      strncat (path, ".text", sizeof ".text");
+      ...
+    }
 
-The :option:`-Wsizeof-pointer-memaccess` option is enabled by :option:`-Wall`.
+  The :option:`-Wsizeof-pointer-memaccess` option is enabled by :option:`-Wall`.
 
 .. option:: -Wno-sizeof-array-argument, -Wsizeof-array-argument
 
@@ -3072,10 +3072,10 @@ The :option:`-Wsizeof-pointer-memaccess` option is enabled by :option:`-Wall`.
   bit-wise operator is likely to be expected.  Also warns when
   the operands of a logical operator are the same:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  extern int a;
-  if (a < 0 && a < 0) { ... }
+    extern int a;
+    if (a < 0 && a < 0) { ... }
 
 .. option:: -Wlogical-not-parentheses, -Wno-logical-not-parentheses
 
@@ -3083,20 +3083,20 @@ The :option:`-Wsizeof-pointer-memaccess` option is enabled by :option:`-Wall`.
   This option does not warn if the right operand is considered to be a boolean
   expression.  Its purpose is to detect suspicious code like the following:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int a;
-  ...
-  if (!a > 1) { ... }
+    int a;
+    ...
+    if (!a > 1) { ... }
 
-It is possible to suppress the warning by wrapping the LHS into
-parentheses:
+  It is possible to suppress the warning by wrapping the LHS into
+  parentheses:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  if ((!a) > 1) { ... }
+    if ((!a) > 1) { ... }
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Waggregate-return, -Wno-aggregate-return
 
@@ -3127,18 +3127,18 @@ This warning is enabled by :option:`-Wall`.
   warning is enabled by default.  To avoid the warning include the appropriate
   header to bring the prototypes of built-in functions into scope.
 
-For example, the call to ``memset`` below is diagnosed by the warning
-because the function expects a value of type ``size_t`` as its argument
-but the type of ``32`` is ``int``.  With :option:`-Wextra` ,
-the declaration of the function is diagnosed as well.
+  For example, the call to ``memset`` below is diagnosed by the warning
+  because the function expects a value of type ``size_t`` as its argument
+  but the type of ``32`` is ``int``.  With :option:`-Wextra` ,
+  the declaration of the function is diagnosed as well.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  extern void* memset ();
-  void f (void *d)
-  {
-    memset (d, '\0', 32);
-  }
+    extern void* memset ();
+    void f (void *d)
+    {
+      memset (d, '\0', 32);
+    }
 
 .. option:: -Wno-builtin-macro-redefined, -Wbuiltin-macro-redefined
 
@@ -3152,10 +3152,10 @@ the declaration of the function is diagnosed as well.
 
     C and Objective-C only
 
-Warn if a function is declared or defined without specifying the
-argument types.  (An old-style function definition is permitted without
-a warning if preceded by a declaration that specifies the argument
-types.)
+  Warn if a function is declared or defined without specifying the
+  argument types.  (An old-style function definition is permitted without
+  a warning if preceded by a declaration that specifies the argument
+  types.)
 
 .. option:: -Wold-style-declaration , -Wold-style-declaration, -Wno-old-style-declaration
 
@@ -3163,10 +3163,10 @@ types.)
 
     C and Objective-C only
 
-Warn for obsolescent usages, according to the C Standard, in a
-declaration. For example, warn if storage-class specifiers like
-``static`` are not the first things in a declaration.  This warning
-is also enabled by :option:`-Wextra`.
+  Warn for obsolescent usages, according to the C Standard, in a
+  declaration. For example, warn if storage-class specifiers like
+  ``static`` are not the first things in a declaration.  This warning
+  is also enabled by :option:`-Wextra`.
 
 .. option:: -Wold-style-definition , -Wold-style-definition, -Wno-old-style-definition
 
@@ -3174,11 +3174,11 @@ is also enabled by :option:`-Wextra`.
 
     C and Objective-C only
 
-Warn if an old-style function definition is used.  A warning is given
-even if there is a previous prototype.  A definition using :samp:`()`
-is not considered an old-style definition in C2X mode, because it is
-equivalent to :samp:`(void)` in that case, but is considered an
-old-style definition for older standards.
+  Warn if an old-style function definition is used.  A warning is given
+  even if there is a previous prototype.  A definition using :samp:`()`
+  is not considered an old-style definition in C2X mode, because it is
+  equivalent to :samp:`(void)` in that case, but is considered an
+  old-style definition for older standards.
 
 .. option:: -Wmissing-parameter-type , -Wmissing-parameter-type, -Wno-missing-parameter-type
 
@@ -3186,14 +3186,14 @@ old-style definition for older standards.
 
     C and Objective-C only
 
-A function parameter is declared without a type specifier in K&R-style
-functions:
+  A function parameter is declared without a type specifier in K&R-style
+  functions:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void foo(bar) { }
+    void foo(bar) { }
 
-This warning is also enabled by :option:`-Wextra`.
+  This warning is also enabled by :option:`-Wextra`.
 
 .. option:: -Wmissing-prototypes , -Wmissing-prototypes, -Wno-missing-prototypes
 
@@ -3201,14 +3201,14 @@ This warning is also enabled by :option:`-Wextra`.
 
     C and Objective-C only
 
-Warn if a global function is defined without a previous prototype
-declaration.  This warning is issued even if the definition itself
-provides a prototype.  Use this option to detect global functions
-that do not have a matching prototype declaration in a header file.
-This option is not valid for C++ because all function declarations
-provide prototypes and a non-matching declaration declares an
-overload rather than conflict with an earlier declaration.
-Use :option:`-Wmissing-declarations` to detect missing declarations in C++.
+  Warn if a global function is defined without a previous prototype
+  declaration.  This warning is issued even if the definition itself
+  provides a prototype.  Use this option to detect global functions
+  that do not have a matching prototype declaration in a header file.
+  This option is not valid for C++ because all function declarations
+  provide prototypes and a non-matching declaration declares an
+  overload rather than conflict with an earlier declaration.
+  Use :option:`-Wmissing-declarations` to detect missing declarations in C++.
 
 .. option:: -Wmissing-declarations, -Wno-missing-declarations
 
@@ -3226,37 +3226,37 @@ Use :option:`-Wmissing-declarations` to detect missing declarations in C++.
   example, the following code causes such a warning, because
   ``x.h`` is implicitly zero:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct s { int f, g, h; };
-  struct s x = { 3, 4 };
+    struct s { int f, g, h; };
+    struct s x = { 3, 4 };
 
-This option does not warn about designated initializers, so the following
-modification does not trigger a warning:
+  This option does not warn about designated initializers, so the following
+  modification does not trigger a warning:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct s { int f, g, h; };
-  struct s x = { .f = 3, .g = 4 };
+    struct s { int f, g, h; };
+    struct s x = { .f = 3, .g = 4 };
 
-In C this option does not warn about the universal zero initializer
-:samp:`{ 0 }`:
+  In C this option does not warn about the universal zero initializer
+  :samp:`{ 0 }`:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct s { int f, g, h; };
-  struct s x = { 0 };
+    struct s { int f, g, h; };
+    struct s x = { 0 };
 
-Likewise, in C++ this option does not warn about the empty { }
-initializer, for example:
+  Likewise, in C++ this option does not warn about the empty { }
+  initializer, for example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct s { int f, g, h; };
-  s x = { };
+    struct s { int f, g, h; };
+    s x = { };
 
-This warning is included in :option:`-Wextra`.  To get other :option:`-Wextra`
-warnings without this one, use :option:`-Wextra -Wno-missing-field-initializers`.
+  This warning is included in :option:`-Wextra`.  To get other :option:`-Wextra`
+  warnings without this one, use :option:`-Wextra -Wno-missing-field-initializers`.
 
 .. option:: -Wno-multichar, -Wmultichar
 
@@ -3268,51 +3268,51 @@ warnings without this one, use :option:`-Wextra -Wno-missing-field-initializers`
 
   .. index:: NFC
 
-.. index:: NFKC
+  .. index:: NFKC
 
-.. index:: character set, input normalization
+  .. index:: character set, input normalization
 
-In ISO C and ISO C++, two identifiers are different if they are
-different sequences of characters.  However, sometimes when characters
-outside the basic ASCII character set are used, you can have two
-different character sequences that look the same.  To avoid confusion,
-the ISO 10646 standard sets out some :dfn:`normalization rules` which
-when applied ensure that two sequences that look the same are turned into
-the same sequence.  GCC can warn you if you are using identifiers that
-have not been normalized; this option controls that warning.
+  In ISO C and ISO C++, two identifiers are different if they are
+  different sequences of characters.  However, sometimes when characters
+  outside the basic ASCII character set are used, you can have two
+  different character sequences that look the same.  To avoid confusion,
+  the ISO 10646 standard sets out some :dfn:`normalization rules` which
+  when applied ensure that two sequences that look the same are turned into
+  the same sequence.  GCC can warn you if you are using identifiers that
+  have not been normalized; this option controls that warning.
 
-There are four levels of warning supported by GCC.  The default is
-:option:`-Wnormalized=nfc` , which warns about any identifier that is
-not in the ISO 10646 'C' normalized form, :dfn:`NFC`.  NFC is the
-recommended form for most uses.  It is equivalent to
-:option:`-Wnormalized`.
+  There are four levels of warning supported by GCC.  The default is
+  :option:`-Wnormalized=nfc` , which warns about any identifier that is
+  not in the ISO 10646 'C' normalized form, :dfn:`NFC`.  NFC is the
+  recommended form for most uses.  It is equivalent to
+  :option:`-Wnormalized`.
 
-Unfortunately, there are some characters allowed in identifiers by
-ISO C and ISO C++ that, when turned into NFC, are not allowed in 
-identifiers.  That is, there's no way to use these symbols in portable
-ISO C or C++ and have all your identifiers in NFC.
-:option:`-Wnormalized=id` suppresses the warning for these characters.
-It is hoped that future versions of the standards involved will correct
-this, which is why this option is not the default.
+  Unfortunately, there are some characters allowed in identifiers by
+  ISO C and ISO C++ that, when turned into NFC, are not allowed in 
+  identifiers.  That is, there's no way to use these symbols in portable
+  ISO C or C++ and have all your identifiers in NFC.
+  :option:`-Wnormalized=id` suppresses the warning for these characters.
+  It is hoped that future versions of the standards involved will correct
+  this, which is why this option is not the default.
 
-You can switch the warning off for all characters by writing
-:option:`-Wnormalized=none` or :option:`-Wno-normalized`.  You should
-only do this if you are using some other normalization scheme (like
-'D'), because otherwise you can easily create bugs that are
-literally impossible to see.
+  You can switch the warning off for all characters by writing
+  :option:`-Wnormalized=none` or :option:`-Wno-normalized`.  You should
+  only do this if you are using some other normalization scheme (like
+  'D'), because otherwise you can easily create bugs that are
+  literally impossible to see.
 
-Some characters in ISO 10646 have distinct meanings but look identical
-in some fonts or display methodologies, especially once formatting has
-been applied.  For instance ``\u207F``, 'SUPERSCRIPT LATIN SMALL
-LETTER N', displays just like a regular ``n`` that has been
-placed in a superscript.  ISO 10646 defines the :dfn:`NFKC`
-normalization scheme to convert all these into a standard form as
-well, and GCC warns if your code is not in NFKC if you use
-:option:`-Wnormalized=nfkc`.  This warning is comparable to warning
-about every identifier that contains the letter O because it might be
-confused with the digit 0, and so is not the default, but may be
-useful as a local coding convention if the programming environment 
-cannot be fixed to display these characters distinctly.
+  Some characters in ISO 10646 have distinct meanings but look identical
+  in some fonts or display methodologies, especially once formatting has
+  been applied.  For instance ``\u207F``, 'SUPERSCRIPT LATIN SMALL
+  LETTER N', displays just like a regular ``n`` that has been
+  placed in a superscript.  ISO 10646 defines the :dfn:`NFKC`
+  normalization scheme to convert all these into a standard form as
+  well, and GCC warns if your code is not in NFKC if you use
+  :option:`-Wnormalized=nfkc`.  This warning is comparable to warning
+  about every identifier that contains the letter O because it might be
+  confused with the digit 0, and so is not the default, but may be
+  useful as a local coding convention if the programming environment 
+  cannot be fixed to display these characters distinctly.
 
 .. option:: -Wno-attribute-warning, -Wattribute-warning
 
@@ -3353,13 +3353,13 @@ cannot be fixed to display these characters distinctly.
 
     C and Objective-C only
 
-Warn if an initialized field without side effects is overridden when
-using designated initializers (see :ref:`Designated
-Initializers <designated-inits>`).
+  Warn if an initialized field without side effects is overridden when
+  using designated initializers (see :ref:`Designated
+  Initializers <designated-inits>`).
 
-This warning is included in :option:`-Wextra`.  To get other
-:option:`-Wextra` warnings without this one, use :option:`-Wextra
--Wno-override-init`.
+  This warning is included in :option:`-Wextra`.  To get other
+  :option:`-Wextra` warnings without this one, use :option:`-Wextra
+  -Wno-override-init`.
 
 .. option:: -Wno-override-init-side-effects , -Woverride-init-side-effects, -Wno-override-init-side-effects
 
@@ -3367,9 +3367,9 @@ This warning is included in :option:`-Wextra`.  To get other
 
     C and Objective-C only
 
-Do not warn if an initialized field with side effects is overridden when
-using designated initializers (see :ref:`Designated
-Initializers <designated-inits>`).  This warning is enabled by default.
+  Do not warn if an initialized field with side effects is overridden when
+  using designated initializers (see :ref:`Designated
+  Initializers <designated-inits>`).  This warning is enabled by default.
 
 .. option:: -Wpacked, -Wno-packed
 
@@ -3380,16 +3380,16 @@ Initializers <designated-inits>`).  This warning is enabled by default.
   is misaligned even though ``struct bar`` does not itself
   have the packed attribute:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct foo {
-    int x;
-    char a, b, c, d;
-  } __attribute__((packed));
-  struct bar {
-    char z;
-    struct foo f;
-  };
+    struct foo {
+      int x;
+      char a, b, c, d;
+    } __attribute__((packed));
+    struct bar {
+      char z;
+      struct foo f;
+    };
 
 .. option:: -Wnopacked-bitfield-compat, -Wpacked-bitfield-compat, -Wno-packed-bitfield-compat
 
@@ -3400,16 +3400,16 @@ Initializers <designated-inits>`).  This warning is enabled by default.
   For example there is no longer a 4-bit padding between field ``a``
   and ``b`` in this structure:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct foo
-  {
-    char a:4;
-    char b:8;
-  } __attribute__ ((packed));
+    struct foo
+    {
+      char a:4;
+      char b:8;
+    } __attribute__ ((packed));
 
-This warning is enabled by default.  Use
-:option:`-Wno-packed-bitfield-compat` to disable this warning.
+  This warning is enabled by default.  Use
+  :option:`-Wno-packed-bitfield-compat` to disable this warning.
 
 .. option:: -Wpacked-not-aligned , -Wpacked-not-aligned, -Wno-packed-not-aligned
 
@@ -3417,19 +3417,19 @@ This warning is enabled by default.  Use
 
     C, C++, Objective-C and Objective-C++ only
 
-Warn if a structure field with explicitly specified alignment in a
-packed struct or union is misaligned.  For example, a warning will
-be issued on ``struct S``, like, ``warning: alignment 1 of
-'struct S' is less than 8``, in this code:
+  Warn if a structure field with explicitly specified alignment in a
+  packed struct or union is misaligned.  For example, a warning will
+  be issued on ``struct S``, like, ``warning: alignment 1 of
+  'struct S' is less than 8``, in this code:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct __attribute__ ((aligned (8))) S8 { char a[8]; };
-  struct __attribute__ ((packed)) S {
-    struct S8 s8;
-  };
+    struct __attribute__ ((aligned (8))) S8 { char a[8]; };
+    struct __attribute__ ((packed)) S {
+      struct S8 s8;
+    };
 
-This warning is enabled by :option:`-Wall`.
+  This warning is enabled by :option:`-Wall`.
 
 .. option:: -Wpadded, -Wno-padded
 
@@ -3453,18 +3453,18 @@ This warning is enabled by :option:`-Wall`.
   the call writes the terminating NUL into ``a[4]``, the copies overlap and
   the call is diagnosed.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void foo (void)
-  {
-    char a[] = "abcd1234";
-    strcpy (a, a + 4);
-    ...
-  }
+    void foo (void)
+    {
+      char a[] = "abcd1234";
+      strcpy (a, a + 4);
+      ...
+    }
 
-The :option:`-Wrestrict` option detects some instances of simple overlap
-even without optimization but works best at :option:`-O2` and above.  It
-is included in :option:`-Wall`.
+  The :option:`-Wrestrict` option detects some instances of simple overlap
+  even without optimization but works best at :option:`-O2` and above.  It
+  is included in :option:`-Wall`.
 
 .. option:: -Wnested-externs , -Wnested-externs, -Wno-nested-externs
 
@@ -3472,7 +3472,7 @@ is included in :option:`-Wall`.
 
     C and Objective-C only
 
-Warn if an ``extern`` declaration is encountered within a function.
+  Warn if an ``extern`` declaration is encountered within a function.
 
 .. option:: -Winline, -Wno-inline
 
@@ -3480,12 +3480,12 @@ Warn if an ``extern`` declaration is encountered within a function.
   Even with this option, the compiler does not warn about failures to
   inline functions declared in system headers.
 
-The compiler uses a variety of heuristics to determine whether or not
-to inline a function.  For example, the compiler takes into account
-the size of the function being inlined and the amount of inlining
-that has already been done in the current function.  Therefore,
-seemingly insignificant changes in the source program can cause the
-warnings produced by :option:`-Winline` to appear or disappear.
+  The compiler uses a variety of heuristics to determine whether or not
+  to inline a function.  For example, the compiler takes into account
+  the size of the function being inlined and the amount of inlining
+  that has already been done in the current function.  Therefore,
+  seemingly insignificant changes in the source program can cause the
+  warnings produced by :option:`-Winline` to appear or disappear.
 
 .. option:: -Wint-in-bool-context, -Wno-int-in-bool-context
 
@@ -3508,8 +3508,8 @@ warnings produced by :option:`-Winline` to appear or disappear.
 
     C and Objective-C only
 
-Suppress warnings from casts from a pointer to an integer type of a
-different size.
+  Suppress warnings from casts from a pointer to an integer type of a
+  different size.
 
 .. option:: -Winvalid-pch, -Wno-invalid-pch
 
@@ -3559,15 +3559,15 @@ different size.
   bytes.  This is similar to how :option:`-Walloca-larger-than`:samp:`={byte-size}`
   works, but with variable-length arrays.
 
-Note that GCC may optimize small variable-length arrays of a known
-value into plain arrays, so this warning may not get triggered for
-such arrays.
+  Note that GCC may optimize small variable-length arrays of a known
+  value into plain arrays, so this warning may not get triggered for
+  such arrays.
 
-:option:`-Wvla-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default but
-is typically only effective when :option:`-ftree-vrp` is active (default
-for :option:`-O2` and above).
+  :option:`-Wvla-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default but
+  is typically only effective when :option:`-ftree-vrp` is active (default
+  for :option:`-O2` and above).
 
-See also :option:`-Walloca-larger-than`:samp:`={byte-size}`.
+  See also :option:`-Walloca-larger-than`:samp:`={byte-size}`.
 
 .. option:: -Wno-vla-larger-than
 
@@ -3581,35 +3581,35 @@ See also :option:`-Walloca-larger-than`:samp:`={byte-size}`.
   of out-of-bounds accesses to such parameters by warnings such as
   :option:`-Warray-bounds`.
 
-If the first function declaration uses the VLA form the bound specified
-in the array is assumed to be the minimum number of elements expected to
-be provided in calls to the function and the maximum number of elements
-accessed by it.  Failing to provide arguments of sufficient size or
-accessing more than the maximum number of elements may be diagnosed.
+  If the first function declaration uses the VLA form the bound specified
+  in the array is assumed to be the minimum number of elements expected to
+  be provided in calls to the function and the maximum number of elements
+  accessed by it.  Failing to provide arguments of sufficient size or
+  accessing more than the maximum number of elements may be diagnosed.
 
-For example, the warning triggers for the following redeclarations because
-the first one allows an array of any size to be passed to ``f`` while
-the second one specifies that the array argument must have at least ``n``
-elements.  In addition, calling ``f`` with the assotiated VLA bound
-parameter in excess of the actual VLA bound triggers a warning as well.
+  For example, the warning triggers for the following redeclarations because
+  the first one allows an array of any size to be passed to ``f`` while
+  the second one specifies that the array argument must have at least ``n``
+  elements.  In addition, calling ``f`` with the assotiated VLA bound
+  parameter in excess of the actual VLA bound triggers a warning as well.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void f (int n, int[n]);
-  void f (int, int[]);     // warning: argument 2 previously declared as a VLA
+    void f (int n, int[n]);
+    void f (int, int[]);     // warning: argument 2 previously declared as a VLA
 
-  void g (int n)
-  {
-      if (n > 4)
-        return;
-      int a[n];
-      f (sizeof a, a);     // warning: access to a by f may be out of bounds
-    ...
-  }
+    void g (int n)
+    {
+        if (n > 4)
+          return;
+        int a[n];
+        f (sizeof a, a);     // warning: access to a by f may be out of bounds
+      ...
+    }
 
-:option:`-Wvla-parameter` is included in :option:`-Wall`.  The
-:option:`-Warray-parameter` option triggers warnings for similar problems
-involving ordinary array arguments.
+  :option:`-Wvla-parameter` is included in :option:`-Wall`.  The
+  :option:`-Warray-parameter` option triggers warnings for similar problems
+  involving ordinary array arguments.
 
 .. option:: -Wvolatile-register-var, -Wno-volatile-register-var
 
@@ -3633,10 +3633,10 @@ involving ordinary array arguments.
 
     C and Objective-C only
 
-Warn for pointer argument passing or assignment with different signedness.
-This option is only supported for C and Objective-C.  It is implied by
-:option:`-Wall` and by :option:`-Wpedantic` , which can be disabled with
-:option:`-Wno-pointer-sign`.
+  Warn for pointer argument passing or assignment with different signedness.
+  This option is only supported for C and Objective-C.  It is implied by
+  :option:`-Wall` and by :option:`-Wpedantic` , which can be disabled with
+  :option:`-Wno-pointer-sign`.
 
 .. option:: -Wstack-protector, -Wno-stack-protector
 
@@ -3651,13 +3651,13 @@ This option is only supported for C and Objective-C.  It is implied by
   standard's minimum limit, but very portable programs should avoid
   using longer strings.
 
-The limit applies *after* string constant concatenation, and does
-not count the trailing NUL.  In C90, the limit was 509 characters; in
-C99, it was raised to 4095.  C++98 does not specify a normative
-minimum maximum, so we do not diagnose overlength strings in C++.
+  The limit applies *after* string constant concatenation, and does
+  not count the trailing NUL.  In C90, the limit was 509 characters; in
+  C99, it was raised to 4095.  C++98 does not specify a normative
+  minimum maximum, so we do not diagnose overlength strings in C++.
 
-This option is implied by :option:`-Wpedantic` , and can be disabled with
-:option:`-Wno-overlength-strings`.
+  This option is implied by :option:`-Wpedantic` , and can be disabled with
+  :option:`-Wno-overlength-strings`.
 
 .. option:: -Wunsuffixed-float-constants , -Wunsuffixed-float-constants, -Wno-unsuffixed-float-constants
 
@@ -3665,11 +3665,11 @@ This option is implied by :option:`-Wpedantic` , and can be disabled with
 
     C and Objective-C only
 
-Issue a warning for any floating constant that does not have
-a suffix.  When used together with :option:`-Wsystem-headers` it
-warns about such constants in system header files.  This can be useful
-when preparing code to use with the ``FLOAT_CONST_DECIMAL64`` pragma
-from the decimal floating-point extension to C99.
+  Issue a warning for any floating constant that does not have
+  a suffix.  When used together with :option:`-Wsystem-headers` it
+  warns about such constants in system header files.  This can be useful
+  when preparing code to use with the ``FLOAT_CONST_DECIMAL64`` pragma
+  from the decimal floating-point extension to C99.
 
 .. option:: -Wno-lto-type-mismatch, -Wlto-type-mismatch
 
@@ -3683,7 +3683,7 @@ from the decimal floating-point extension to C99.
 
     C and Objective-C only
 
-Suppress warnings when a positional initializer is used to initialize
-a structure that has been marked with the ``designated_init``
-attribute.
+  Suppress warnings when a positional initializer is used to initialize
+  a structure that has been marked with the ``designated_init``
+  attribute.
 

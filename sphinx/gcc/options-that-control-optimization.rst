@@ -45,64 +45,64 @@ See :ref:`overall-options`, for examples.
   Optimize.  Optimizing compilation takes somewhat more time, and a lot
   more memory for a large function.
 
-With :option:`-O` , the compiler tries to reduce code size and execution
-time, without performing any optimizations that take a great deal of
-compilation time.
+  With :option:`-O` , the compiler tries to reduce code size and execution
+  time, without performing any optimizations that take a great deal of
+  compilation time.
 
-.. Note that in addition to the default_options_table list in opts.c,
-   several optimization flags default to true but control optimization
-   passes that are explicitly disabled at -O0.
+  .. Note that in addition to the default_options_table list in opts.c,
+     several optimization flags default to true but control optimization
+     passes that are explicitly disabled at -O0.
 
-:option:`-O` turns on the following optimization flags:
+  :option:`-O` turns on the following optimization flags:
 
-.. Please keep the following list alphabetized.
+  .. Please keep the following list alphabetized.
 
-:option:`-fauto-inc-dec` 
-:option:`-fbranch-count-reg` 
-:option:`-fcombine-stack-adjustments` 
-:option:`-fcompare-elim` 
-:option:`-fcprop-registers` 
-:option:`-fdce` 
-:option:`-fdefer-pop` 
-:option:`-fdelayed-branch` 
-:option:`-fdse` 
-:option:`-fforward-propagate` 
-:option:`-fguess-branch-probability` 
-:option:`-fif-conversion` 
-:option:`-fif-conversion2` 
-:option:`-finline-functions-called-once` 
-:option:`-fipa-modref` 
-:option:`-fipa-profile` 
-:option:`-fipa-pure-const` 
-:option:`-fipa-reference` 
-:option:`-fipa-reference-addressable` 
-:option:`-fmerge-constants` 
-:option:`-fmove-loop-invariants` 
-:option:`-fomit-frame-pointer` 
-:option:`-freorder-blocks` 
-:option:`-fshrink-wrap` 
-:option:`-fshrink-wrap-separate` 
-:option:`-fsplit-wide-types` 
-:option:`-fssa-backprop` 
-:option:`-fssa-phiopt` 
-:option:`-ftree-bit-ccp` 
-:option:`-ftree-ccp` 
-:option:`-ftree-ch` 
-:option:`-ftree-coalesce-vars` 
-:option:`-ftree-copy-prop` 
-:option:`-ftree-dce` 
-:option:`-ftree-dominator-opts` 
-:option:`-ftree-dse` 
-:option:`-ftree-forwprop` 
-:option:`-ftree-fre` 
-:option:`-ftree-phiprop` 
-:option:`-ftree-pta` 
-:option:`-ftree-scev-cprop` 
-:option:`-ftree-sink` 
-:option:`-ftree-slsr` 
-:option:`-ftree-sra` 
-:option:`-ftree-ter` 
-:option:`-funit-at-a-time`
+  :option:`-fauto-inc-dec` 
+  :option:`-fbranch-count-reg` 
+  :option:`-fcombine-stack-adjustments` 
+  :option:`-fcompare-elim` 
+  :option:`-fcprop-registers` 
+  :option:`-fdce` 
+  :option:`-fdefer-pop` 
+  :option:`-fdelayed-branch` 
+  :option:`-fdse` 
+  :option:`-fforward-propagate` 
+  :option:`-fguess-branch-probability` 
+  :option:`-fif-conversion` 
+  :option:`-fif-conversion2` 
+  :option:`-finline-functions-called-once` 
+  :option:`-fipa-modref` 
+  :option:`-fipa-profile` 
+  :option:`-fipa-pure-const` 
+  :option:`-fipa-reference` 
+  :option:`-fipa-reference-addressable` 
+  :option:`-fmerge-constants` 
+  :option:`-fmove-loop-invariants` 
+  :option:`-fomit-frame-pointer` 
+  :option:`-freorder-blocks` 
+  :option:`-fshrink-wrap` 
+  :option:`-fshrink-wrap-separate` 
+  :option:`-fsplit-wide-types` 
+  :option:`-fssa-backprop` 
+  :option:`-fssa-phiopt` 
+  :option:`-ftree-bit-ccp` 
+  :option:`-ftree-ccp` 
+  :option:`-ftree-ch` 
+  :option:`-ftree-coalesce-vars` 
+  :option:`-ftree-copy-prop` 
+  :option:`-ftree-dce` 
+  :option:`-ftree-dominator-opts` 
+  :option:`-ftree-dse` 
+  :option:`-ftree-forwprop` 
+  :option:`-ftree-fre` 
+  :option:`-ftree-phiprop` 
+  :option:`-ftree-pta` 
+  :option:`-ftree-scev-cprop` 
+  :option:`-ftree-sink` 
+  :option:`-ftree-slsr` 
+  :option:`-ftree-sra` 
+  :option:`-ftree-ter` 
+  :option:`-funit-at-a-time`
 
 .. option:: -O2
 
@@ -111,72 +111,72 @@ compilation time.
   As compared to :option:`-O` , this option increases both compilation time
   and the performance of the generated code.
 
-:option:`-O2` turns on all optimization flags specified by :option:`-O`.  It
-also turns on the following optimization flags:
+  :option:`-O2` turns on all optimization flags specified by :option:`-O`.  It
+  also turns on the following optimization flags:
 
-.. Please keep the following list alphabetized!
+  .. Please keep the following list alphabetized!
 
-:option:`-falign-functions`  :option:`-falign-jumps` 
-:option:`-falign-labels`  :option:`-falign-loops` 
-:option:`-fcaller-saves` 
-:option:`-fcode-hoisting` 
-:option:`-fcrossjumping` 
-:option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks` 
-:option:`-fdelete-null-pointer-checks` 
-:option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` 
-:option:`-fexpensive-optimizations` 
-:option:`-ffinite-loops` 
-:option:`-fgcse`  :option:`-fgcse-lm`  
-:option:`-fhoist-adjacent-loads` 
-:option:`-finline-functions` 
-:option:`-finline-small-functions` 
-:option:`-findirect-inlining` 
-:option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf` 
-:option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp` 
-:option:`-fisolate-erroneous-paths-dereference` 
-:option:`-flra-remat` 
-:option:`-foptimize-sibling-calls` 
-:option:`-foptimize-strlen` 
-:option:`-fpartial-inlining` 
-:option:`-fpeephole2` 
-:option:`-freorder-blocks-algorithm=stc` 
-:option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` 
-:option:`-frerun-cse-after-loop`  
-:option:`-fschedule-insns`  :option:`-fschedule-insns2` 
-:option:`-fsched-interblock`  :option:`-fsched-spec` 
-:option:`-fstore-merging` 
-:option:`-fstrict-aliasing` 
-:option:`-fthread-jumps` 
-:option:`-ftree-builtin-call-dce` 
-:option:`-ftree-pre` 
-:option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
-:option:`-ftree-vrp`
-Please note the warning under :option:`-fgcse` about
-invoking :option:`-O2` on programs that use computed gotos.
+  :option:`-falign-functions`  :option:`-falign-jumps` 
+  :option:`-falign-labels`  :option:`-falign-loops` 
+  :option:`-fcaller-saves` 
+  :option:`-fcode-hoisting` 
+  :option:`-fcrossjumping` 
+  :option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks` 
+  :option:`-fdelete-null-pointer-checks` 
+  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` 
+  :option:`-fexpensive-optimizations` 
+  :option:`-ffinite-loops` 
+  :option:`-fgcse`  :option:`-fgcse-lm`  
+  :option:`-fhoist-adjacent-loads` 
+  :option:`-finline-functions` 
+  :option:`-finline-small-functions` 
+  :option:`-findirect-inlining` 
+  :option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf` 
+  :option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp` 
+  :option:`-fisolate-erroneous-paths-dereference` 
+  :option:`-flra-remat` 
+  :option:`-foptimize-sibling-calls` 
+  :option:`-foptimize-strlen` 
+  :option:`-fpartial-inlining` 
+  :option:`-fpeephole2` 
+  :option:`-freorder-blocks-algorithm=stc` 
+  :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` 
+  :option:`-frerun-cse-after-loop`  
+  :option:`-fschedule-insns`  :option:`-fschedule-insns2` 
+  :option:`-fsched-interblock`  :option:`-fsched-spec` 
+  :option:`-fstore-merging` 
+  :option:`-fstrict-aliasing` 
+  :option:`-fthread-jumps` 
+  :option:`-ftree-builtin-call-dce` 
+  :option:`-ftree-pre` 
+  :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
+  :option:`-ftree-vrp`
+  Please note the warning under :option:`-fgcse` about
+  invoking :option:`-O2` on programs that use computed gotos.
 
 .. option:: -O3
 
   Optimize yet more.  :option:`-O3` turns on all optimizations specified
   by :option:`-O2` and also turns on the following optimization flags:
 
-.. Please keep the following list alphabetized!
+  .. Please keep the following list alphabetized!
 
-:option:`-fgcse-after-reload` 
-:option:`-fipa-cp-clone`
-:option:`-floop-interchange` 
-:option:`-floop-unroll-and-jam` 
-:option:`-fpeel-loops` 
-:option:`-fpredictive-commoning` 
-:option:`-fsplit-loops` 
-:option:`-fsplit-paths` 
-:option:`-ftree-loop-distribution` 
-:option:`-ftree-loop-vectorize` 
-:option:`-ftree-partial-pre` 
-:option:`-ftree-slp-vectorize` 
-:option:`-funswitch-loops` 
-:option:`-fvect-cost-model` 
-:option:`-fvect-cost-model=dynamic` 
-:option:`-fversion-loops-for-strides`
+  :option:`-fgcse-after-reload` 
+  :option:`-fipa-cp-clone`
+  :option:`-floop-interchange` 
+  :option:`-floop-unroll-and-jam` 
+  :option:`-fpeel-loops` 
+  :option:`-fpredictive-commoning` 
+  :option:`-fsplit-loops` 
+  :option:`-fsplit-paths` 
+  :option:`-ftree-loop-distribution` 
+  :option:`-ftree-loop-vectorize` 
+  :option:`-ftree-partial-pre` 
+  :option:`-ftree-slp-vectorize` 
+  :option:`-funswitch-loops` 
+  :option:`-fvect-cost-model` 
+  :option:`-fvect-cost-model=dynamic` 
+  :option:`-fversion-loops-for-strides`
 
 .. option:: -O0
 
@@ -188,12 +188,12 @@ invoking :option:`-O2` on programs that use computed gotos.
   Optimize for size.  :option:`-Os` enables all :option:`-O2` optimizations 
   except those that often increase code size:
 
-:option:`-falign-functions`  :option:`-falign-jumps` 
-:option:`-falign-labels`  :option:`-falign-loops` 
-:option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm=stc`
-It also enables :option:`-finline-functions` , causes the compiler to tune for
-code size rather than execution speed, and performs further optimizations
-designed to reduce code size.
+  :option:`-falign-functions`  :option:`-falign-jumps` 
+  :option:`-falign-labels`  :option:`-falign-loops` 
+  :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm=stc`
+  It also enables :option:`-finline-functions` , causes the compiler to tune for
+  code size rather than execution speed, and performs further optimizations
+  designed to reduce code size.
 
 .. option:: -Ofast
 
@@ -213,16 +213,17 @@ designed to reduce code size.
   for producing debuggable code because some compiler passes
   that collect debug information are disabled at :option:`-O0`.
 
-Like :option:`-O0` , :option:`-Og` completely disables a number of 
-optimization passes so that individual options controlling them have
-no effect.  Otherwise :option:`-Og` enables all :option:`-O1` 
-optimization flags except for those that may interfere with debugging:
+  Like :option:`-O0` , :option:`-Og` completely disables a number of 
+  optimization passes so that individual options controlling them have
+  no effect.  Otherwise :option:`-Og` enables all :option:`-O1` 
+  optimization flags except for those that may interfere with debugging:
 
-:option:`-fbranch-count-reg`  :option:`-fdelayed-branch` 
-:option:`-fdse`  :option:`-fif-conversion`  :option:`-fif-conversion2`  
-:option:`-finline-functions-called-once` 
-:option:`-fmove-loop-invariants`  :option:`-fssa-phiopt` 
-:option:`-ftree-bit-ccp`  :option:`-ftree-dse`  :option:`-ftree-pta`  :option:`-ftree-sra`
+  :option:`-fbranch-count-reg`  :option:`-fdelayed-branch` 
+  :option:`-fdse`  :option:`-fif-conversion`  :option:`-fif-conversion2`  
+  :option:`-finline-functions-called-once` 
+  :option:`-fmove-loop-invariants`  :option:`-fssa-phiopt` 
+  :option:`-ftree-bit-ccp`  :option:`-ftree-dse`  :option:`-ftree-pta`  :option:`-ftree-sra`
+
 If you use multiple :option:`-O` options, with or without level numbers,
 the last such option is the one that is effective.
 
@@ -253,8 +254,8 @@ optimizations to be performed is desired.
   is active, two passes are performed and the second is scheduled after
   loop unrolling.
 
-This option is enabled by default at optimization levels :option:`-O` ,
-:option:`-O2` , :option:`-O3` , :option:`-Os`.
+  This option is enabled by default at optimization levels :option:`-O` ,
+  :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -ffp-contract=style
 
@@ -266,7 +267,7 @@ This option is enabled by default at optimization levels :option:`-O` ,
   if allowed by the language standard.  This is currently not implemented
   and treated equal to :option:`-ffp-contract=off`.
 
-The default is :option:`-ffp-contract=fast`.
+  The default is :option:`-ffp-contract=fast`.
 
 .. option:: -fomit-frame-pointer
 
@@ -274,20 +275,20 @@ The default is :option:`-ffp-contract=fast`.
   instructions to save, set up and restore the frame pointer; on many targets
   it also makes an extra register available.
 
-On some targets this flag has no effect because the standard calling sequence
-always uses a frame pointer, so it cannot be omitted.
+  On some targets this flag has no effect because the standard calling sequence
+  always uses a frame pointer, so it cannot be omitted.
 
-Note that :option:`-fno-omit-frame-pointer` doesn't guarantee the frame pointer
-is used in all functions.  Several targets always omit the frame pointer in
-leaf functions.
+  Note that :option:`-fno-omit-frame-pointer` doesn't guarantee the frame pointer
+  is used in all functions.  Several targets always omit the frame pointer in
+  leaf functions.
 
-Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O` and higher.
 
 .. option:: -foptimize-sibling-calls
 
   Optimize sibling and tail recursive calls.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -foptimize-strlen
 
@@ -295,7 +296,7 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   ``strchr`` or ``strcpy``) and
   their ``_FORTIFY_SOURCE`` counterparts into faster alternatives.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -fno-inline, -finline
 
@@ -303,8 +304,8 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
   the ``always_inline`` attribute.  This is the default when not
   optimizing.
 
-Single functions can be exempted from inlining by marking them
-with the ``noinline`` attribute.
+  Single functions can be exempted from inlining by marking them
+  with the ``noinline`` attribute.
 
 .. option:: -finline-small-functions
 
@@ -314,7 +315,7 @@ with the ``noinline`` attribute.
   in this way.  This inlining applies to all functions, even those not declared
   inline.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -findirect-inlining
 
@@ -323,7 +324,7 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   when inlining itself is turned on by the :option:`-finline-functions`
   or :option:`-finline-small-functions` options.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -finline-functions
 
@@ -331,12 +332,12 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   The compiler heuristically decides which functions are worth integrating
   in this way.
 
-If all calls to a given function are integrated, and the function is
-declared ``static``, then the function is normally not output as
-assembler code in its own right.
+  If all calls to a given function are integrated, and the function is
+  declared ``static``, then the function is normally not output as
+  assembler code in its own right.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.  Also enabled
-by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.  Also enabled
+  by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -finline-functions-called-once
 
@@ -345,8 +346,8 @@ by :option:`-fprofile-use` and :option:`-fauto-profile`.
   function is integrated, then the function is not output as assembler code
   in its own right.
 
-Enabled at levels :option:`-O1` , :option:`-O2` , :option:`-O3` and :option:`-Os` ,
-but not :option:`-Og`.
+  Enabled at levels :option:`-O1` , :option:`-O2` , :option:`-O3` and :option:`-Os` ,
+  but not :option:`-Og`.
 
 .. option:: -fearly-inlining
 
@@ -356,7 +357,7 @@ but not :option:`-Og`.
   makes profiling significantly cheaper and usually inlining faster on programs
   having large chains of nested wrapper functions.
 
-Enabled by default.
+  Enabled by default.
 
 .. option:: -fipa-sra
 
@@ -364,7 +365,7 @@ Enabled by default.
   unused parameters and replacement of parameters passed by reference
   by parameters passed by value.
 
-Enabled at levels :option:`-O2` , :option:`-O3` and :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` and :option:`-Os`.
 
 .. option:: -finline-limit=n
 
@@ -372,27 +373,27 @@ Enabled at levels :option:`-O2` , :option:`-O3` and :option:`-Os`.
   allows coarse control of this limit.  :samp:`{n}` is the size of functions that
   can be inlined in number of pseudo instructions.
 
-Inlining is actually controlled by a number of parameters, which may be
-specified individually by using :option:`--param `:samp:`{name}` = :samp:`{value}`.
-The :option:`-finline-limit`:samp:`={n}` option sets some of these parameters
-as follows:
+  Inlining is actually controlled by a number of parameters, which may be
+  specified individually by using :option:`--param `:samp:`{name}` = :samp:`{value}`.
+  The :option:`-finline-limit`:samp:`={n}` option sets some of these parameters
+  as follows:
 
-``max-inline-insns-single``
-  is set to :samp:`{n}` /2.
+  ``max-inline-insns-single``
+    is set to :samp:`{n}` /2.
 
-``max-inline-insns-auto``
-  is set to :samp:`{n}` /2.
+  ``max-inline-insns-auto``
+    is set to :samp:`{n}` /2.
 
-  See below for a documentation of the individual
-parameters controlling inlining and for the defaults of these parameters.
+    See below for a documentation of the individual
+  parameters controlling inlining and for the defaults of these parameters.
 
-*Note:* there may be no value to :option:`-finline-limit` that results
-in default behavior.
+  *Note:* there may be no value to :option:`-finline-limit` that results
+  in default behavior.
 
-*Note:* pseudo instruction represents, in this particular context, an
-abstract measurement of function's size.  In no way does it represent a count
-of assembly instructions and as such its exact meaning might change from one
-release to an another.
+  *Note:* pseudo instruction represents, in this particular context, an
+  abstract measurement of function's size.  In no way does it represent a count
+  of assembly instructions and as such its exact meaning might change from one
+  release to an another.
 
 .. option:: -fno-keep-inline-dllexport, -fkeep-inline-dllexport
 
@@ -419,32 +420,32 @@ release to an another.
   Emit variables declared ``static const`` when optimization isn't turned
   on, even if the variables aren't referenced.
 
-GCC enables this option by default.  If you want to force the compiler to
-check if a variable is referenced, regardless of whether or not
-optimization is turned on, use the :option:`-fno-keep-static-consts` option.
+  GCC enables this option by default.  If you want to force the compiler to
+  check if a variable is referenced, regardless of whether or not
+  optimization is turned on, use the :option:`-fno-keep-static-consts` option.
 
 .. option:: -fmerge-constants
 
   Attempt to merge identical constants (string constants and floating-point
   constants) across compilation units.
 
-This option is the default for optimized compilation if the assembler and
-linker support it.  Use :option:`-fno-merge-constants` to inhibit this
-behavior.
+  This option is the default for optimized compilation if the assembler and
+  linker support it.  Use :option:`-fno-merge-constants` to inhibit this
+  behavior.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fmerge-all-constants
 
   Attempt to merge identical constants and identical variables.
 
-This option implies :option:`-fmerge-constants`.  In addition to
-:option:`-fmerge-constants` this considers e.g. even constant initialized
-arrays or initialized constant variables with integral or floating-point
-types.  Languages like C or C++ require each variable, including multiple
-instances of the same variable in recursive calls, to have distinct locations,
-so using this option results in non-conforming
-behavior.
+  This option implies :option:`-fmerge-constants`.  In addition to
+  :option:`-fmerge-constants` this considers e.g. even constant initialized
+  arrays or initialized constant variables with integral or floating-point
+  types.  Languages like C or C++ require each variable, including multiple
+  instances of the same variable in recursive calls, to have distinct locations,
+  so using this option results in non-conforming
+  behavior.
 
 .. option:: -fmodulo-sched
 
@@ -471,19 +472,19 @@ behavior.
   doesn't remove the decrement and branch instructions from the generated
   instruction stream introduced by other optimization passes.
 
-The default is :option:`-fbranch-count-reg` at :option:`-O1` and higher,
-except for :option:`-Og`.
+  The default is :option:`-fbranch-count-reg` at :option:`-O1` and higher,
+  except for :option:`-Og`.
 
 .. option:: -fno-function-cse, -ffunction-cse
 
   Do not put function addresses in registers; make each instruction that
   calls a constant function contain the function's address explicitly.
 
-This option results in less efficient code, but some strange hacks
-that alter the assembler output may be confused by the optimizations
-performed when this option is not used.
+  This option results in less efficient code, but some strange hacks
+  that alter the assembler output may be confused by the optimizations
+  performed when this option is not used.
 
-The default is :option:`-ffunction-cse`
+  The default is :option:`-ffunction-cse`
 
 .. option:: -fno-zero-initialized-in-bss, -fzero-initialized-in-bss
 
@@ -491,12 +492,12 @@ The default is :option:`-ffunction-cse`
   are initialized to zero into BSS.  This can save space in the resulting
   code.
 
-This option turns off this behavior because some programs explicitly
-rely on variables going to the data section-e.g., so that the
-resulting executable can find the beginning of that section and/or make
-assumptions based on that.
+  This option turns off this behavior because some programs explicitly
+  rely on variables going to the data section-e.g., so that the
+  resulting executable can find the beginning of that section and/or make
+  assumptions based on that.
 
-The default is :option:`-fzero-initialized-in-bss`.
+  The default is :option:`-fzero-initialized-in-bss`.
 
 .. option:: -fthread-jumps
 
@@ -506,7 +507,7 @@ The default is :option:`-fzero-initialized-in-bss`.
   second branch or a point immediately following it, depending on whether
   the condition is known to be true or false.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fsplit-wide-types
 
@@ -515,15 +516,15 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   independently.  This normally generates better code for those types,
   but may make debugging more difficult.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` ,
-:option:`-Os`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` ,
+  :option:`-Os`.
 
 .. option:: -fsplit-wide-types-early
 
   Fully split wide types early, instead of very late.
   This option has no effect unless :option:`-fsplit-wide-types` is turned on.
 
-This is the default on some targets.
+  This is the default on some targets.
 
 .. option:: -fcse-follow-jumps
 
@@ -533,7 +534,7 @@ This is the default on some targets.
   ``else`` clause, CSE follows the jump when the condition
   tested is false.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fcse-skip-blocks
 
@@ -543,26 +544,26 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   :option:`-fcse-skip-blocks` causes CSE to follow the jump around the
   body of the ``if``.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -frerun-cse-after-loop
 
   Re-run common subexpression elimination after loop optimizations are
   performed.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fgcse
 
   Perform a global common subexpression elimination pass.
   This pass also performs global constant and copy propagation.
 
-*Note:* When compiling a program using computed gotos, a GCC
-extension, you may get better run-time performance if you disable
-the global common subexpression elimination pass by adding
-:option:`-fno-gcse` to the command line.
+  *Note:* When compiling a program using computed gotos, a GCC
+  extension, you may get better run-time performance if you disable
+  the global common subexpression elimination pass by adding
+  :option:`-fno-gcse` to the command line.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fgcse-lm
 
@@ -571,7 +572,7 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   allows a loop containing a load/store sequence to be changed to a load outside
   the loop, and a copy/store within the loop.
 
-Enabled by default when :option:`-fgcse` is enabled.
+  Enabled by default when :option:`-fgcse` is enabled.
 
 .. option:: -fgcse-sm
 
@@ -581,7 +582,7 @@ Enabled by default when :option:`-fgcse` is enabled.
   loops containing a load/store sequence can be changed to a load before
   the loop and a store after the loop.
 
-Not enabled at any optimization level.
+  Not enabled at any optimization level.
 
 .. option:: -fgcse-las
 
@@ -589,7 +590,7 @@ Not enabled at any optimization level.
   elimination pass eliminates redundant loads that come after stores to the
   same memory location (both partial and full redundancies).
 
-Not enabled at any optimization level.
+  Not enabled at any optimization level.
 
 .. option:: -fgcse-after-reload
 
@@ -597,7 +598,7 @@ Not enabled at any optimization level.
   pass is performed after reload.  The purpose of this pass is to clean up
   redundant spilling.
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -faggressive-loop-optimizations
 
@@ -621,7 +622,7 @@ Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   This transformation unifies equivalent code and saves code size.  The
   resulting code may or may not perform better than without cross-jumping.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fauto-inc-dec
 
@@ -647,16 +648,16 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   some tricks doable by standard arithmetics.  The use of conditional execution
   on chips where it is available is controlled by :option:`-fif-conversion2`.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
-not with :option:`-Og`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
+  not with :option:`-Og`.
 
 .. option:: -fif-conversion2
 
   Use conditional execution (where available) to transform conditional jumps into
   branch-less equivalents.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
-not with :option:`-Og`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
+  not with :option:`-Og`.
 
 .. option:: -fdeclone-ctor-dtor
 
@@ -668,7 +669,7 @@ not with :option:`-Og`.
   base and complete variants are changed to be thunks that call a common
   implementation.
 
-Enabled by :option:`-Os`.
+  Enabled by :option:`-Os`.
 
 .. option:: -fdelete-null-pointer-checks
 
@@ -682,15 +683,15 @@ Enabled by :option:`-Os`.
   that if a pointer is checked after it has already been dereferenced,
   it cannot be null.
 
-Note however that in some environments this assumption is not true.
-Use :option:`-fno-delete-null-pointer-checks` to disable this optimization
-for programs that depend on that behavior.
+  Note however that in some environments this assumption is not true.
+  Use :option:`-fno-delete-null-pointer-checks` to disable this optimization
+  for programs that depend on that behavior.
 
-This option is enabled by default on most targets.  On Nios II ELF, it
-defaults to off.  On AVR, CR16, and MSP430, this option is completely disabled.
+  This option is enabled by default on most targets.  On Nios II ELF, it
+  defaults to off.  On AVR, CR16, and MSP430, this option is completely disabled.
 
-Passes that use the dataflow information
-are enabled independently at different optimization levels.
+  Passes that use the dataflow information
+  are enabled independently at different optimization levels.
 
 .. option:: -fdevirtualize
 
@@ -721,7 +722,7 @@ are enabled independently at different optimization levels.
 
   Perform a number of minor optimizations that are relatively expensive.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -free
 
@@ -729,8 +730,8 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   helpful for the x86-64 architecture, which implicitly zero-extends in 64-bit
   registers after writing to their lower 32-bit half.
 
-Enabled for Alpha, AArch64 and x86 at levels :option:`-O2` ,
-:option:`-O3` , :option:`-Os`.
+  Enabled for Alpha, AArch64 and x86 at levels :option:`-O2` ,
+  :option:`-O3` , :option:`-Os`.
 
 .. option:: -fno-lifetime-dse, -flifetime-dse
 
@@ -767,22 +768,22 @@ Enabled for Alpha, AArch64 and x86 at levels :option:`-O2` ,
   Use specified regions for the integrated register allocator.  The
   :samp:`{region}` argument should be one of the following:
 
-:samp:`all`
-  Use all loops as register allocation regions.
-  This can give the best results for machines with a small and/or
-  irregular register set.
+  :samp:`all`
+    Use all loops as register allocation regions.
+    This can give the best results for machines with a small and/or
+    irregular register set.
 
-:samp:`mixed`
-  Use all loops except for loops with small register pressure 
-  as the regions.  This value usually gives
-  the best results in most cases and for most architectures,
-  and is enabled by default when compiling with optimization for speed
-  ( :option:`-O` , :option:`-O2` , ...).
+  :samp:`mixed`
+    Use all loops except for loops with small register pressure 
+    as the regions.  This value usually gives
+    the best results in most cases and for most architectures,
+    and is enabled by default when compiling with optimization for speed
+    ( :option:`-O` , :option:`-O2` , ...).
 
-:samp:`one`
-  Use all functions as a single region.  
-  This typically results in the smallest code size, and is enabled by default for
-  :option:`-Os` or :option:`-O0`.
+  :samp:`one`
+    Use all functions as a single region.  
+    This typically results in the smallest code size, and is enabled by default for
+    :option:`-Os` or :option:`-O0`.
 
 .. option:: -fira-hoist-pressure
 
@@ -790,7 +791,7 @@ Enabled for Alpha, AArch64 and x86 at levels :option:`-O2` ,
   decisions to hoist expressions.  This option usually results in smaller
   code, but it can slow the compiler down.
 
-This option is enabled at level :option:`-Os` for all targets.
+  This option is enabled at level :option:`-Os` for all targets.
 
 .. option:: -fira-loop-pressure
 
@@ -799,7 +800,7 @@ This option is enabled at level :option:`-Os` for all targets.
   of faster and smaller code on machines with large register files (>= 32
   registers), but it can slow the compiler down.
 
-This option is enabled at level :option:`-O3` for some targets.
+  This option is enabled at level :option:`-O3` for some targets.
 
 .. option:: -fno-ira-share-save-slots, -fira-share-save-slots
 
@@ -820,7 +821,7 @@ This option is enabled at level :option:`-O3` for some targets.
   values of spilled pseudos, LRA tries to rematerialize (recalculate)
   values if it is profitable.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fdelayed-branch
 
@@ -828,8 +829,8 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   to exploit instruction slots available after delayed branch
   instructions.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` ,
-but not at :option:`-Og`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` ,
+  but not at :option:`-Og`.
 
 .. option:: -fschedule-insns
 
@@ -839,7 +840,7 @@ but not at :option:`-Og`.
   by allowing other instructions to be issued until the result of the load
   or floating-point instruction is required.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -fschedule-insns2
 
@@ -848,7 +849,7 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
   especially useful on machines with a relatively small number of
   registers and where memory load instructions take more than one cycle.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fno-sched-interblock, -fsched-interblock
 
@@ -913,8 +914,8 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   descriptions used by GCC model the CPU closely enough to avoid unreliable
   results from the algorithm.
 
-This only makes sense when scheduling after register allocation, i.e. with
-:option:`-fschedule-insns2` or at :option:`-O2` or higher.
+  This only makes sense when scheduling after register allocation, i.e. with
+  :option:`-fschedule-insns2` or at :option:`-O2` or higher.
 
 .. option:: -fsched-group-heuristic
 
@@ -1027,17 +1028,17 @@ This only makes sense when scheduling after register allocation, i.e. with
   registers around such calls.  Such allocation is done only when it
   seems to result in better code.
 
-This option is always enabled by default on certain machines, usually
-those which have no call-preserved registers to use instead.
+  This option is always enabled by default on certain machines, usually
+  those which have no call-preserved registers to use instead.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fcombine-stack-adjustments
 
   Tracks stack adjustments (pushes and pops) and stack memory references
   and then tries to find ways to combine them.
 
-Enabled by default at :option:`-O1` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-ra
 
@@ -1046,11 +1047,11 @@ Enabled by default at :option:`-O1` and higher.
   them around calls.  This is only possible if called functions are part of
   same compilation unit as current function and they are compiled before it.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os` , however the option
-is disabled if generated code will be instrumented for profiling
-( :option:`-p` , or :option:`-pg` ) or if callee's register usage cannot be known
-exactly (this happens on targets that do not expose prologues
-and epilogues in RTL).
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os` , however the option
+  is disabled if generated code will be instrumented for profiling
+  ( :option:`-p` , or :option:`-pg` ) or if callee's register usage cannot be known
+  exactly (this happens on targets that do not expose prologues
+  and epilogues in RTL).
 
 .. option:: -fconserve-stack
 
@@ -1198,66 +1199,66 @@ and epilogues in RTL).
   a function by equivalent one with a different name. The optimization works
   more effectively with link-time optimization enabled.
 
-Although the behavior is similar to the Gold Linker's ICF optimization, GCC ICF
-works on different levels and thus the optimizations are not same - there are
-equivalences that are found only by GCC and equivalences found only by Gold.
+  Although the behavior is similar to the Gold Linker's ICF optimization, GCC ICF
+  works on different levels and thus the optimizations are not same - there are
+  equivalences that are found only by GCC and equivalences found only by Gold.
 
-This flag is enabled by default at :option:`-O2` and :option:`-Os`.
+  This flag is enabled by default at :option:`-O2` and :option:`-Os`.
 
 .. option:: -flive-patching=level
 
   Control GCC's optimizations to produce output suitable for live-patching.
 
-If the compiler's optimization uses a function's body or information extracted
-from its body to optimize/change another function, the latter is called an
-impacted function of the former.  If a function is patched, its impacted
-functions should be patched too.
+  If the compiler's optimization uses a function's body or information extracted
+  from its body to optimize/change another function, the latter is called an
+  impacted function of the former.  If a function is patched, its impacted
+  functions should be patched too.
 
-The impacted functions are determined by the compiler's interprocedural
-optimizations.  For example, a caller is impacted when inlining a function
-into its caller,
-cloning a function and changing its caller to call this new clone,
-or extracting a function's pureness/constness information to optimize
-its direct or indirect callers, etc.
+  The impacted functions are determined by the compiler's interprocedural
+  optimizations.  For example, a caller is impacted when inlining a function
+  into its caller,
+  cloning a function and changing its caller to call this new clone,
+  or extracting a function's pureness/constness information to optimize
+  its direct or indirect callers, etc.
 
-Usually, the more IPA optimizations enabled, the larger the number of
-impacted functions for each function.  In order to control the number of
-impacted functions and more easily compute the list of impacted function,
-IPA optimizations can be partially enabled at two different levels.
+  Usually, the more IPA optimizations enabled, the larger the number of
+  impacted functions for each function.  In order to control the number of
+  impacted functions and more easily compute the list of impacted function,
+  IPA optimizations can be partially enabled at two different levels.
 
-The :samp:`{level}` argument should be one of the following:
+  The :samp:`{level}` argument should be one of the following:
 
-:samp:`inline-clone`
-  Only enable inlining and cloning optimizations, which includes inlining,
-  cloning, interprocedural scalar replacement of aggregates and partial inlining.
-  As a result, when patching a function, all its callers and its clones'
-  callers are impacted, therefore need to be patched as well.
+  :samp:`inline-clone`
+    Only enable inlining and cloning optimizations, which includes inlining,
+    cloning, interprocedural scalar replacement of aggregates and partial inlining.
+    As a result, when patching a function, all its callers and its clones'
+    callers are impacted, therefore need to be patched as well.
 
-  :option:`-flive-patching=inline-clone` disables the following optimization flags:
+    :option:`-flive-patching=inline-clone` disables the following optimization flags:
 
-  :option:`-fwhole-program`  :option:`-fipa-pta`  :option:`-fipa-reference`  :option:`-fipa-ra` 
-  :option:`-fipa-icf`  :option:`-fipa-icf-functions`  :option:`-fipa-icf-variables` 
-  :option:`-fipa-bit-cp`  :option:`-fipa-vrp`  :option:`-fipa-pure-const`  :option:`-fipa-reference-addressable` 
-  :option:`-fipa-stack-alignment` :option:`-fipa-modref`
+    :option:`-fwhole-program`  :option:`-fipa-pta`  :option:`-fipa-reference`  :option:`-fipa-ra` 
+    :option:`-fipa-icf`  :option:`-fipa-icf-functions`  :option:`-fipa-icf-variables` 
+    :option:`-fipa-bit-cp`  :option:`-fipa-vrp`  :option:`-fipa-pure-const`  :option:`-fipa-reference-addressable` 
+    :option:`-fipa-stack-alignment` :option:`-fipa-modref`
 
-:samp:`inline-only-static`
-  Only enable inlining of static functions.
-  As a result, when patching a static function, all its callers are impacted
-  and so need to be patched as well.
+  :samp:`inline-only-static`
+    Only enable inlining of static functions.
+    As a result, when patching a static function, all its callers are impacted
+    and so need to be patched as well.
 
-  In addition to all the flags that :option:`-flive-patching=inline-clone`
-  disables,
-  :option:`-flive-patching=inline-only-static` disables the following additional
-  optimization flags:
+    In addition to all the flags that :option:`-flive-patching=inline-clone`
+    disables,
+    :option:`-flive-patching=inline-only-static` disables the following additional
+    optimization flags:
 
-  :option:`-fipa-cp-clone`  :option:`-fipa-sra`  :option:`-fpartial-inlining`  :option:`-fipa-cp`
-  When :option:`-flive-patching` is specified without any value, the default value
-is :samp:`{inline-clone}`.
+    :option:`-fipa-cp-clone`  :option:`-fipa-sra`  :option:`-fpartial-inlining`  :option:`-fipa-cp`
+    When :option:`-flive-patching` is specified without any value, the default value
+  is :samp:`{inline-clone}`.
 
-This flag is disabled by default.
+  This flag is disabled by default.
 
-Note that :option:`-flive-patching` is not supported with link-time optimization
-( :option:`-flto` ).
+  Note that :option:`-flive-patching` is not supported with link-time optimization
+  ( :option:`-flto` ).
 
 .. option:: -fisolate-erroneous-paths-dereference
 
@@ -1340,8 +1341,8 @@ Note that :option:`-flive-patching` is not supported with link-time optimization
   indefinitely.  This allows the compiler to remove loops that otherwise have
   no side-effects, not considering eventual endless looping as such.
 
-This option is enabled by default at :option:`-O2` for C++ with -std=c++11
-or higher.
+  This option is enabled by default at :option:`-O2` for C++ with -std=c++11
+  or higher.
 
 .. option:: -ftree-dominator-opts
 
@@ -1424,26 +1425,26 @@ or higher.
   big loop bodies and allow further loop optimizations, like
   parallelization or vectorization, to take place.  For example, the loop
 
-.. code-block:: fortran
+  .. code-block:: fortran
 
-  DO I = 1, N
-    A(I) = B(I) + C
-    D(I) = E(I) * F
-  ENDDO
+    DO I = 1, N
+      A(I) = B(I) + C
+      D(I) = E(I) * F
+    ENDDO
 
-is transformed to
+  is transformed to
 
-.. code-block:: fortran
+  .. code-block:: fortran
 
-  DO I = 1, N
-     A(I) = B(I) + C
-  ENDDO
-  DO I = 1, N
-     D(I) = E(I) * F
-  ENDDO
+    DO I = 1, N
+       A(I) = B(I) + C
+    ENDDO
+    DO I = 1, N
+       D(I) = E(I) * F
+    ENDDO
 
-This flag is enabled by default at :option:`-O3`.
-It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  This flag is enabled by default at :option:`-O3`.
+  It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -ftree-loop-distribute-patterns
 
@@ -1451,30 +1452,30 @@ It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   calls to a library.  This flag is enabled by default at :option:`-O2` and
   higher, and by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
-This pass distributes the initialization loops and generates a call to
-memset zero.  For example, the loop
+  This pass distributes the initialization loops and generates a call to
+  memset zero.  For example, the loop
 
-.. code-block:: fortran
+  .. code-block:: fortran
 
-  DO I = 1, N
-    A(I) = 0
-    B(I) = A(I) + I
-  ENDDO
+    DO I = 1, N
+      A(I) = 0
+      B(I) = A(I) + I
+    ENDDO
 
-is transformed to
+  is transformed to
 
-.. code-block:: fortran
+  .. code-block:: fortran
 
-  DO I = 1, N
-     A(I) = 0
-  ENDDO
-  DO I = 1, N
-     B(I) = A(I) + I
-  ENDDO
+    DO I = 1, N
+       A(I) = 0
+    ENDDO
+    DO I = 1, N
+       B(I) = A(I) + I
+    ENDDO
 
-and the initialization loop is transformed into a call to memset zero.
-This flag is enabled by default at :option:`-O3`.
-It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  and the initialization loop is transformed into a call to memset zero.
+  This flag is enabled by default at :option:`-O3`.
+  It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -floop-interchange
 
@@ -1482,24 +1483,24 @@ It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   performance on loop nest and allow further loop optimizations, like
   vectorization, to take place.  For example, the loop
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  for (int i = 0; i < N; i++)
-    for (int j = 0; j < N; j++)
-      for (int k = 0; k < N; k++)
-        c[i][j] = c[i][j] + a[i][k]*b[k][j];
-
-is transformed to
-
-.. code-block:: c++
-
-  for (int i = 0; i < N; i++)
-    for (int k = 0; k < N; k++)
+    for (int i = 0; i < N; i++)
       for (int j = 0; j < N; j++)
-        c[i][j] = c[i][j] + a[i][k]*b[k][j];
+        for (int k = 0; k < N; k++)
+          c[i][j] = c[i][j] + a[i][k]*b[k][j];
 
-This flag is enabled by default at :option:`-O3`.
-It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  is transformed to
+
+  .. code-block:: c++
+
+    for (int i = 0; i < N; i++)
+      for (int k = 0; k < N; k++)
+        for (int j = 0; j < N; j++)
+          c[i][j] = c[i][j] + a[i][k]*b[k][j];
+
+  This flag is enabled by default at :option:`-O3`.
+  It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -floop-unroll-and-jam
 
@@ -1619,8 +1620,8 @@ It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   vectorization if the scalar iteration count is known to be a multiple
   of four.
 
-The default cost model depends on other optimization flags and is
-either :samp:`dynamic` or :samp:`cheap`.
+  The default cost model depends on other optimization flags and is
+  either :samp:`dynamic` or :samp:`cheap`.
 
 .. option:: -fsimd-cost-model=model
 
@@ -1652,20 +1653,20 @@ either :samp:`dynamic` or :samp:`cheap`.
   of the unrolled loop using the value in the first iteration.  This breaks
   long dependency chains, thus improving efficiency of the scheduling passes.
 
-A combination of :option:`-fweb` and CSE is often sufficient to obtain the
-same effect.  However, that is not reliable in cases where the loop body
-is more complicated than a single basic block.  It also does not work at all
-on some architectures due to restrictions in the CSE pass.
+  A combination of :option:`-fweb` and CSE is often sufficient to obtain the
+  same effect.  However, that is not reliable in cases where the loop body
+  is more complicated than a single basic block.  It also does not work at all
+  on some architectures due to restrictions in the CSE pass.
 
-This optimization is enabled by default.
+  This optimization is enabled by default.
 
 .. option:: -fvariable-expansion-in-unroller
 
   With this option, the compiler creates multiple copies of some
   local variables when unrolling a loop, which can result in superior code.
 
-This optimization is enabled by default for PowerPC targets, but disabled
-by default otherwise.
+  This optimization is enabled by default for PowerPC targets, but disabled
+  by default otherwise.
 
 .. option:: -fpartial-inlining
 
@@ -1673,7 +1674,7 @@ by default otherwise.
   when inlining itself is turned on by the :option:`-finline-functions`
   or :option:`-finline-small-functions` options.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fpredictive-commoning
 
@@ -1681,18 +1682,18 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   (especially memory loads and stores) performed in previous
   iterations of loops.
 
-This option is enabled at level :option:`-O3`.
-It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  This option is enabled at level :option:`-O3`.
+  It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -fprefetch-loop-arrays
 
   If supported by the target machine, generate instructions to prefetch
   memory to improve the performance of loops that access large arrays.
 
-This option may generate better or worse code; results are highly
-dependent on the structure of loops within the source code.
+  This option may generate better or worse code; results are highly
+  dependent on the structure of loops within the source code.
 
-Disabled at level :option:`-Os`.
+  Disabled at level :option:`-Os`.
 
 .. option:: -fno-printf-return-value, -fprintf-return-value
 
@@ -1708,16 +1709,16 @@ Disabled at level :option:`-Os`.
   can be optimized away when ``i`` is a 32-bit or smaller integer
   because the return value is guaranteed to be at most 8.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  char buf[9];
-  if (snprintf (buf, "%08x", i) >= sizeof buf)
-    ...
+    char buf[9];
+    if (snprintf (buf, "%08x", i) >= sizeof buf)
+      ...
 
-The :option:`-fprintf-return-value` option relies on other optimizations
-and yields best results with :option:`-O2` and above.  It works in tandem
-with the :option:`-Wformat-overflow` and :option:`-Wformat-truncation`
-options.  The :option:`-fprintf-return-value` option is enabled by default.
+  The :option:`-fprintf-return-value` option relies on other optimizations
+  and yields best results with :option:`-O2` and above.  It works in tandem
+  with the :option:`-Wformat-overflow` and :option:`-Wformat-truncation`
+  options.  The :option:`-fprintf-return-value` option is enabled by default.
 
 .. option:: -fno-peephole, -fpeephole, -fno-peephole2, -fpeephole2
 
@@ -1726,35 +1727,35 @@ options.  The :option:`-fprintf-return-value` option is enabled by default.
   are implemented in the compiler; some targets use one, some use the
   other, a few use both.
 
-:option:`-fpeephole` is enabled by default.
-:option:`-fpeephole2` enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  :option:`-fpeephole` is enabled by default.
+  :option:`-fpeephole2` enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fno-guess-branch-probability, -fguess-branch-probability
 
   Do not guess branch probabilities using heuristics.
 
-GCC uses heuristics to guess branch probabilities if they are
-not provided by profiling feedback ( :option:`-fprofile-arcs` ).  These
-heuristics are based on the control flow graph.  If some branch probabilities
-are specified by ``__builtin_expect``, then the heuristics are
-used to guess branch probabilities for the rest of the control flow graph,
-taking the ``__builtin_expect`` info into account.  The interactions
-between the heuristics and ``__builtin_expect`` can be complex, and in
-some cases, it may be useful to disable the heuristics so that the effects
-of ``__builtin_expect`` are easier to understand.
+  GCC uses heuristics to guess branch probabilities if they are
+  not provided by profiling feedback ( :option:`-fprofile-arcs` ).  These
+  heuristics are based on the control flow graph.  If some branch probabilities
+  are specified by ``__builtin_expect``, then the heuristics are
+  used to guess branch probabilities for the rest of the control flow graph,
+  taking the ``__builtin_expect`` info into account.  The interactions
+  between the heuristics and ``__builtin_expect`` can be complex, and in
+  some cases, it may be useful to disable the heuristics so that the effects
+  of ``__builtin_expect`` are easier to understand.
 
-It is also possible to specify expected probability of the expression
-with ``__builtin_expect_with_probability`` built-in function.
+  It is also possible to specify expected probability of the expression
+  with ``__builtin_expect_with_probability`` built-in function.
 
-The default is :option:`-fguess-branch-probability` at levels
-:option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  The default is :option:`-fguess-branch-probability` at levels
+  :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -freorder-blocks
 
   Reorder basic blocks in the compiled function in order to reduce number of
   taken branches and improve code locality.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -freorder-blocks-algorithm=algorithm
 
@@ -1765,8 +1766,8 @@ Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
   put all often executed code together, minimizing the number of branches
   executed by making extra copies of code.
 
-The default is :samp:`simple` at levels :option:`-O` , :option:`-Os` , and
-:samp:`stc` at levels :option:`-O2` , :option:`-O3`.
+  The default is :samp:`simple` at levels :option:`-O` , :option:`-Os` , and
+  :samp:`stc` at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -freorder-blocks-and-partition
 
@@ -1775,14 +1776,14 @@ The default is :samp:`simple` at levels :option:`-O` , :option:`-Os` , and
   into separate sections of the assembly and .o files, to improve
   paging and cache locality performance.
 
-This optimization is automatically turned off in the presence of
-exception handling or unwind tables (on targets using setjump/longjump or target specific scheme), for linkonce sections, for functions with a user-defined
-section attribute and on any architecture that does not support named
-sections.  When :option:`-fsplit-stack` is used this option is not
-enabled by default (to avoid linker errors), but may be enabled
-explicitly (if using a working linker).
+  This optimization is automatically turned off in the presence of
+  exception handling or unwind tables (on targets using setjump/longjump or target specific scheme), for linkonce sections, for functions with a user-defined
+  section attribute and on any architecture that does not support named
+  sections.  When :option:`-fsplit-stack` is used this option is not
+  enabled by default (to avoid linker errors), but may be enabled
+  explicitly (if using a working linker).
 
-Enabled for x86 at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled for x86 at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -freorder-functions
 
@@ -1793,11 +1794,11 @@ Enabled for x86 at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   the linker so object file format must support named sections and linker must
   place them in a reasonable way.
 
-This option isn't effective unless you either provide profile feedback
-(see :option:`-fprofile-arcs` for details) or manually annotate functions with 
-``hot`` or ``cold`` attributes (see :ref:`common-function-attributes`).
+  This option isn't effective unless you either provide profile feedback
+  (see :option:`-fprofile-arcs` for details) or manually annotate functions with 
+  ``hot`` or ``cold`` attributes (see :ref:`common-function-attributes`).
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fstrict-aliasing
 
@@ -1810,51 +1811,51 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   ``void*`` or a ``double``.  A character type may alias any other
   type.
 
-.. _type-punning:
-Pay special attention to code like this:
+  .. _type-punning:
+  Pay special attention to code like this:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  union a_union {
-    int i;
-    double d;
-  };
+    union a_union {
+      int i;
+      double d;
+    };
 
-  int f() {
-    union a_union t;
-    t.d = 3.0;
-    return t.i;
-  }
+    int f() {
+      union a_union t;
+      t.d = 3.0;
+      return t.i;
+    }
 
-The practice of reading from a different union member than the one most
-recently written to (called 'type-punning') is common.  Even with
-:option:`-fstrict-aliasing` , type-punning is allowed, provided the memory
-is accessed through the union type.  So, the code above works as
-expected.  See :ref:`structures-unions-enumerations-and-bit-fields-implementation`.  However, this code might not:
+  The practice of reading from a different union member than the one most
+  recently written to (called 'type-punning') is common.  Even with
+  :option:`-fstrict-aliasing` , type-punning is allowed, provided the memory
+  is accessed through the union type.  So, the code above works as
+  expected.  See :ref:`structures-unions-enumerations-and-bit-fields-implementation`.  However, this code might not:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int f() {
-    union a_union t;
-    int* ip;
-    t.d = 3.0;
-    ip = &t.i;
-    return *ip;
-  }
+    int f() {
+      union a_union t;
+      int* ip;
+      t.d = 3.0;
+      ip = &t.i;
+      return *ip;
+    }
 
-Similarly, access by taking the address, casting the resulting pointer
-and dereferencing the result has undefined behavior, even if the cast
-uses a union type, e.g.:
+  Similarly, access by taking the address, casting the resulting pointer
+  and dereferencing the result has undefined behavior, even if the cast
+  uses a union type, e.g.:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int f() {
-    double d = 3.0;
-    return ((union a_union *) &d)->i;
-  }
+    int f() {
+      double d = 3.0;
+      return ((union a_union *) &d)->i;
+    }
 
-The :option:`-fstrict-aliasing` option is enabled at levels
-:option:`-O2` , :option:`-O3` , :option:`-Os`.
+  The :option:`-fstrict-aliasing` option is enabled at levels
+  :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -falign-functions
 
@@ -1863,31 +1864,31 @@ The :option:`-fstrict-aliasing` option is enabled at levels
   least the first :samp:`{m}` bytes of the function can be fetched by the CPU
   without crossing an :samp:`{n}` -byte alignment boundary.
 
-If :samp:`{m}` is not specified, it defaults to :samp:`{n}`.
+  If :samp:`{m}` is not specified, it defaults to :samp:`{n}`.
 
-Examples: :option:`-falign-functions=32` aligns functions to the next
-32-byte boundary, :option:`-falign-functions=24` aligns to the next
-32-byte boundary only if this can be done by skipping 23 bytes or less,
-:option:`-falign-functions=32:7` aligns to the next
-32-byte boundary only if this can be done by skipping 6 bytes or less.
+  Examples: :option:`-falign-functions=32` aligns functions to the next
+  32-byte boundary, :option:`-falign-functions=24` aligns to the next
+  32-byte boundary only if this can be done by skipping 23 bytes or less,
+  :option:`-falign-functions=32:7` aligns to the next
+  32-byte boundary only if this can be done by skipping 6 bytes or less.
 
-The second pair of :samp:`{n2}` : :samp:`{m2}` values allows you to specify
-a secondary alignment: :option:`-falign-functions=64:7:32:3` aligns to
-the next 64-byte boundary if this can be done by skipping 6 bytes or less,
-otherwise aligns to the next 32-byte boundary if this can be done
-by skipping 2 bytes or less.
-If :samp:`{m2}` is not specified, it defaults to :samp:`{n2}`.
+  The second pair of :samp:`{n2}` : :samp:`{m2}` values allows you to specify
+  a secondary alignment: :option:`-falign-functions=64:7:32:3` aligns to
+  the next 64-byte boundary if this can be done by skipping 6 bytes or less,
+  otherwise aligns to the next 32-byte boundary if this can be done
+  by skipping 2 bytes or less.
+  If :samp:`{m2}` is not specified, it defaults to :samp:`{n2}`.
 
-Some assemblers only support this flag when :samp:`{n}` is a power of two;
-in that case, it is rounded up.
+  Some assemblers only support this flag when :samp:`{n}` is a power of two;
+  in that case, it is rounded up.
 
-:option:`-fno-align-functions` and :option:`-falign-functions=1` are
-equivalent and mean that functions are not aligned.
+  :option:`-fno-align-functions` and :option:`-falign-functions=1` are
+  equivalent and mean that functions are not aligned.
 
-If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
-The maximum allowed :samp:`{n}` option value is 65536.
+  If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
+  The maximum allowed :samp:`{n}` option value is 65536.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 ``-flimit-function-alignment``
   If this option is enabled, the compiler tries to avoid unnecessarily
@@ -1899,18 +1900,18 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
 
   Align all branch targets to a power-of-two boundary.
 
-Parameters of this option are analogous to the :option:`-falign-functions` option.
-:option:`-fno-align-labels` and :option:`-falign-labels=1` are
-equivalent and mean that labels are not aligned.
+  Parameters of this option are analogous to the :option:`-falign-functions` option.
+  :option:`-fno-align-labels` and :option:`-falign-labels=1` are
+  equivalent and mean that labels are not aligned.
 
-If :option:`-falign-loops` or :option:`-falign-jumps` are applicable and
-are greater than this value, then their values are used instead.
+  If :option:`-falign-loops` or :option:`-falign-jumps` are applicable and
+  are greater than this value, then their values are used instead.
 
-If :samp:`{n}` is not specified or is zero, use a machine-dependent default
-which is very likely to be :samp:`1`, meaning no alignment.
-The maximum allowed :samp:`{n}` option value is 65536.
+  If :samp:`{n}` is not specified or is zero, use a machine-dependent default
+  which is very likely to be :samp:`1`, meaning no alignment.
+  The maximum allowed :samp:`{n}` option value is 65536.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -falign-loops
 
@@ -1918,17 +1919,17 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
   many times, this makes up for any execution of the dummy padding
   instructions.
 
-If :option:`-falign-labels` is greater than this value, then its value
-is used instead.
+  If :option:`-falign-labels` is greater than this value, then its value
+  is used instead.
 
-Parameters of this option are analogous to the :option:`-falign-functions` option.
-:option:`-fno-align-loops` and :option:`-falign-loops=1` are
-equivalent and mean that loops are not aligned.
-The maximum allowed :samp:`{n}` option value is 65536.
+  Parameters of this option are analogous to the :option:`-falign-functions` option.
+  :option:`-fno-align-loops` and :option:`-falign-loops=1` are
+  equivalent and mean that loops are not aligned.
+  The maximum allowed :samp:`{n}` option value is 65536.
 
-If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
+  If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -falign-jumps
 
@@ -1936,17 +1937,17 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
   where the targets can only be reached by jumping.  In this case,
   no dummy operations need be executed.
 
-If :option:`-falign-labels` is greater than this value, then its value
-is used instead.
+  If :option:`-falign-labels` is greater than this value, then its value
+  is used instead.
 
-Parameters of this option are analogous to the :option:`-falign-functions` option.
-:option:`-fno-align-jumps` and :option:`-falign-jumps=1` are
-equivalent and mean that loops are not aligned.
+  Parameters of this option are analogous to the :option:`-falign-functions` option.
+  :option:`-fno-align-jumps` and :option:`-falign-jumps=1` are
+  equivalent and mean that loops are not aligned.
 
-If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
-The maximum allowed :samp:`{n}` option value is 65536.
+  If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
+  The maximum allowed :samp:`{n}` option value is 65536.
 
-Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2` , :option:`-O3`.
 
 .. option:: -fno-allocation-dce
 
@@ -1960,14 +1961,14 @@ Enabled at levels :option:`-O2` , :option:`-O3`.
   use this option if it is known that global data will not be accessed by
   multiple threads.
 
-Examples of optimizations enabled by :option:`-fallow-store-data-races` include
-hoisting or if-conversions that may cause a value that was already in memory
-to be re-written with that same value.  Such re-writing is safe in a single
-threaded context but may be unsafe in a multi-threaded context.  Note that on
-some processors, if-conversions may be required in order to enable
-vectorization.
+  Examples of optimizations enabled by :option:`-fallow-store-data-races` include
+  hoisting or if-conversions that may cause a value that was already in memory
+  to be re-written with that same value.  Such re-writing is safe in a single
+  threaded context but may be unsafe in a multi-threaded context.  Note that on
+  some processors, if-conversions may be required in order to enable
+  vectorization.
 
-Enabled at level :option:`-Ofast`.
+  Enabled at level :option:`-Ofast`.
 
 .. option:: -funit-at-a-time
 
@@ -1975,7 +1976,7 @@ Enabled at level :option:`-Ofast`.
   has no effect, while :option:`-fno-unit-at-a-time` implies
   :option:`-fno-toplevel-reorder` and :option:`-fno-section-anchors`.
 
-Enabled by default.
+  Enabled by default.
 
 .. option:: -fno-toplevel-reorder, -ftoplevel-reorder
 
@@ -1986,10 +1987,10 @@ Enabled by default.
   that relies on a particular ordering.  For new code, it is better to
   use attributes when possible.
 
-:option:`-ftoplevel-reorder` is the default at :option:`-O1` and higher, and
-also at :option:`-O0` if :option:`-fsection-anchors` is explicitly requested.
-Additionally :option:`-fno-toplevel-reorder` implies
-:option:`-fno-section-anchors`.
+  :option:`-ftoplevel-reorder` is the default at :option:`-O1` and higher, and
+  also at :option:`-O0` if :option:`-fsection-anchors` is explicitly requested.
+  Additionally :option:`-fno-toplevel-reorder` implies
+  :option:`-fno-section-anchors`.
 
 .. option:: -fweb
 
@@ -2000,7 +2001,7 @@ Additionally :option:`-fno-toplevel-reorder` implies
   however, make debugging impossible, since variables no longer stay in a
   'home register'.
 
-Enabled by default with :option:`-funroll-loops`.
+  Enabled by default with :option:`-funroll-loops`.
 
 .. option:: -fwhole-program
 
@@ -2009,9 +2010,9 @@ Enabled by default with :option:`-funroll-loops`.
   and those merged by attribute ``externally_visible`` become static functions
   and in effect are optimized more aggressively by interprocedural optimizers.
 
-This option should not be used in combination with :option:`-flto`.
-Instead relying on a linker plugin should provide safer and more precise
-information.
+  This option should not be used in combination with :option:`-flto`.
+  Instead relying on a linker plugin should provide safer and more precise
+  information.
 
 .. option:: -flto[=n]
 
@@ -2022,226 +2023,226 @@ information.
   bodies are read from these ELF sections and instantiated as if they
   had been part of the same translation unit.
 
-To use the link-time optimizer, :option:`-flto` and optimization
-options should be specified at compile time and during the final link.
-It is recommended that you compile all the files participating in the
-same link with the same options and also specify those options at
-link time.  
-For example:
+  To use the link-time optimizer, :option:`-flto` and optimization
+  options should be specified at compile time and during the final link.
+  It is recommended that you compile all the files participating in the
+  same link with the same options and also specify those options at
+  link time.  
+  For example:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c -O2 -flto foo.c
-  gcc -c -O2 -flto bar.c
-  gcc -o myprog -flto -O2 foo.o bar.o
+    gcc -c -O2 -flto foo.c
+    gcc -c -O2 -flto bar.c
+    gcc -o myprog -flto -O2 foo.o bar.o
 
-The first two invocations to GCC save a bytecode representation
-of GIMPLE into special ELF sections inside foo.o and
-bar.o.  The final invocation reads the GIMPLE bytecode from
-foo.o and bar.o, merges the two files into a single
-internal image, and compiles the result as usual.  Since both
-foo.o and bar.o are merged into a single image, this
-causes all the interprocedural analyses and optimizations in GCC to
-work across the two files as if they were a single one.  This means,
-for example, that the inliner is able to inline functions in
-bar.o into functions in foo.o and vice-versa.
+  The first two invocations to GCC save a bytecode representation
+  of GIMPLE into special ELF sections inside foo.o and
+  bar.o.  The final invocation reads the GIMPLE bytecode from
+  foo.o and bar.o, merges the two files into a single
+  internal image, and compiles the result as usual.  Since both
+  foo.o and bar.o are merged into a single image, this
+  causes all the interprocedural analyses and optimizations in GCC to
+  work across the two files as if they were a single one.  This means,
+  for example, that the inliner is able to inline functions in
+  bar.o into functions in foo.o and vice-versa.
 
-Another (simpler) way to enable link-time optimization is:
+  Another (simpler) way to enable link-time optimization is:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -o myprog -flto -O2 foo.c bar.c
+    gcc -o myprog -flto -O2 foo.c bar.c
 
-The above generates bytecode for foo.c and bar.c,
-merges them together into a single GIMPLE representation and optimizes
-them as usual to produce myprog.
+  The above generates bytecode for foo.c and bar.c,
+  merges them together into a single GIMPLE representation and optimizes
+  them as usual to produce myprog.
 
-The important thing to keep in mind is that to enable link-time
-optimizations you need to use the GCC driver to perform the link step.
-GCC automatically performs link-time optimization if any of the
-objects involved were compiled with the :option:`-flto` command-line option.  
-You can always override
-the automatic decision to do link-time optimization
-by passing :option:`-fno-lto` to the link command.
+  The important thing to keep in mind is that to enable link-time
+  optimizations you need to use the GCC driver to perform the link step.
+  GCC automatically performs link-time optimization if any of the
+  objects involved were compiled with the :option:`-flto` command-line option.  
+  You can always override
+  the automatic decision to do link-time optimization
+  by passing :option:`-fno-lto` to the link command.
 
-To make whole program optimization effective, it is necessary to make
-certain whole program assumptions.  The compiler needs to know
-what functions and variables can be accessed by libraries and runtime
-outside of the link-time optimized unit.  When supported by the linker,
-the linker plugin (see :option:`-fuse-linker-plugin` ) passes information
-to the compiler about used and externally visible symbols.  When
-the linker plugin is not available, :option:`-fwhole-program` should be
-used to allow the compiler to make these assumptions, which leads
-to more aggressive optimization decisions.
+  To make whole program optimization effective, it is necessary to make
+  certain whole program assumptions.  The compiler needs to know
+  what functions and variables can be accessed by libraries and runtime
+  outside of the link-time optimized unit.  When supported by the linker,
+  the linker plugin (see :option:`-fuse-linker-plugin` ) passes information
+  to the compiler about used and externally visible symbols.  When
+  the linker plugin is not available, :option:`-fwhole-program` should be
+  used to allow the compiler to make these assumptions, which leads
+  to more aggressive optimization decisions.
 
-When a file is compiled with :option:`-flto` without
-:option:`-fuse-linker-plugin` , the generated object file is larger than
-a regular object file because it contains GIMPLE bytecodes and the usual
-final code (see :option:`-ffat-lto-objects` ).  This means that
-object files with LTO information can be linked as normal object
-files; if :option:`-fno-lto` is passed to the linker, no
-interprocedural optimizations are applied.  Note that when
-:option:`-fno-fat-lto-objects` is enabled the compile stage is faster
-but you cannot perform a regular, non-LTO link on them.
+  When a file is compiled with :option:`-flto` without
+  :option:`-fuse-linker-plugin` , the generated object file is larger than
+  a regular object file because it contains GIMPLE bytecodes and the usual
+  final code (see :option:`-ffat-lto-objects` ).  This means that
+  object files with LTO information can be linked as normal object
+  files; if :option:`-fno-lto` is passed to the linker, no
+  interprocedural optimizations are applied.  Note that when
+  :option:`-fno-fat-lto-objects` is enabled the compile stage is faster
+  but you cannot perform a regular, non-LTO link on them.
 
-When producing the final binary, GCC only
-applies link-time optimizations to those files that contain bytecode.
-Therefore, you can mix and match object files and libraries with
-GIMPLE bytecodes and final object code.  GCC automatically selects
-which files to optimize in LTO mode and which files to link without
-further processing.
+  When producing the final binary, GCC only
+  applies link-time optimizations to those files that contain bytecode.
+  Therefore, you can mix and match object files and libraries with
+  GIMPLE bytecodes and final object code.  GCC automatically selects
+  which files to optimize in LTO mode and which files to link without
+  further processing.
 
-Generally, options specified at link time override those
-specified at compile time, although in some cases GCC attempts to infer
-link-time options from the settings used to compile the input files.
+  Generally, options specified at link time override those
+  specified at compile time, although in some cases GCC attempts to infer
+  link-time options from the settings used to compile the input files.
 
-If you do not specify an optimization level option :option:`-O` at
-link time, then GCC uses the highest optimization level 
-used when compiling the object files.  Note that it is generally 
-ineffective to specify an optimization level option only at link time and 
-not at compile time, for two reasons.  First, compiling without 
-optimization suppresses compiler passes that gather information 
-needed for effective optimization at link time.  Second, some early
-optimization passes can be performed only at compile time and 
-not at link time.
+  If you do not specify an optimization level option :option:`-O` at
+  link time, then GCC uses the highest optimization level 
+  used when compiling the object files.  Note that it is generally 
+  ineffective to specify an optimization level option only at link time and 
+  not at compile time, for two reasons.  First, compiling without 
+  optimization suppresses compiler passes that gather information 
+  needed for effective optimization at link time.  Second, some early
+  optimization passes can be performed only at compile time and 
+  not at link time.
 
-There are some code generation flags preserved by GCC when
-generating bytecodes, as they need to be used during the final link.
-Currently, the following options and their settings are taken from
-the first object file that explicitly specifies them: 
-:option:`-fcommon` , :option:`-fexceptions` , :option:`-fnon-call-exceptions` ,
-:option:`-fgnu-tm` and all the :option:`-m` target flags.
+  There are some code generation flags preserved by GCC when
+  generating bytecodes, as they need to be used during the final link.
+  Currently, the following options and their settings are taken from
+  the first object file that explicitly specifies them: 
+  :option:`-fcommon` , :option:`-fexceptions` , :option:`-fnon-call-exceptions` ,
+  :option:`-fgnu-tm` and all the :option:`-m` target flags.
 
-The following options :option:`-fPIC` , :option:`-fpic` , :option:`-fpie` and
-:option:`-fPIE` are combined based on the following scheme:
+  The following options :option:`-fPIC` , :option:`-fpic` , :option:`-fpie` and
+  :option:`-fPIE` are combined based on the following scheme:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  :option:`-fPIC` + :option:`-fpic` = :option:`-fpic`
-  :option:`-fPIC` + :option:`-fno-pic` = :option:`-fno-pic`
-  :option:`-fpic/-fPIC` + (no option) = (no option)
-  :option:`-fPIC` + :option:`-fPIE` = :option:`-fPIE`
-  :option:`-fpic` + :option:`-fPIE` = :option:`-fpie`
-  :option:`-fPIC/-fpic` + :option:`-fpie` = :option:`-fpie`
+    :option:`-fPIC` + :option:`-fpic` = :option:`-fpic`
+    :option:`-fPIC` + :option:`-fno-pic` = :option:`-fno-pic`
+    :option:`-fpic/-fPIC` + (no option) = (no option)
+    :option:`-fPIC` + :option:`-fPIE` = :option:`-fPIE`
+    :option:`-fpic` + :option:`-fPIE` = :option:`-fpie`
+    :option:`-fPIC/-fpic` + :option:`-fpie` = :option:`-fpie`
 
-Certain ABI-changing flags are required to match in all compilation units,
-and trying to override this at link time with a conflicting value
-is ignored.  This includes options such as :option:`-freg-struct-return`
-and :option:`-fpcc-struct-return`. 
+  Certain ABI-changing flags are required to match in all compilation units,
+  and trying to override this at link time with a conflicting value
+  is ignored.  This includes options such as :option:`-freg-struct-return`
+  and :option:`-fpcc-struct-return`. 
 
-Other options such as :option:`-ffp-contract` , :option:`-fno-strict-overflow` ,
-:option:`-fwrapv` , :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
-are passed through to the link stage and merged conservatively for
-conflicting translation units.  Specifically
-:option:`-fno-strict-overflow` , :option:`-fwrapv` and :option:`-fno-trapv` take
-precedence; and for example :option:`-ffp-contract=off` takes precedence
-over :option:`-ffp-contract=fast`.  You can override them at link time.
+  Other options such as :option:`-ffp-contract` , :option:`-fno-strict-overflow` ,
+  :option:`-fwrapv` , :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
+  are passed through to the link stage and merged conservatively for
+  conflicting translation units.  Specifically
+  :option:`-fno-strict-overflow` , :option:`-fwrapv` and :option:`-fno-trapv` take
+  precedence; and for example :option:`-ffp-contract=off` takes precedence
+  over :option:`-ffp-contract=fast`.  You can override them at link time.
 
-Diagnostic options such as :option:`-Wstringop-overflow` are passed
-through to the link stage and their setting matches that of the
-compile-step at function granularity.  Note that this matters only
-for diagnostics emitted during optimization.  Note that code
-transforms such as inlining can lead to warnings being enabled
-or disabled for regions if code not consistent with the setting
-at compile time.
+  Diagnostic options such as :option:`-Wstringop-overflow` are passed
+  through to the link stage and their setting matches that of the
+  compile-step at function granularity.  Note that this matters only
+  for diagnostics emitted during optimization.  Note that code
+  transforms such as inlining can lead to warnings being enabled
+  or disabled for regions if code not consistent with the setting
+  at compile time.
 
-When you need to pass options to the assembler via :option:`-Wa` or
-:option:`-Xassembler` make sure to either compile such translation
-units with :option:`-fno-lto` or consistently use the same assembler
-options on all translation units.  You can alternatively also
-specify assembler options at LTO link time.
+  When you need to pass options to the assembler via :option:`-Wa` or
+  :option:`-Xassembler` make sure to either compile such translation
+  units with :option:`-fno-lto` or consistently use the same assembler
+  options on all translation units.  You can alternatively also
+  specify assembler options at LTO link time.
 
-To enable debug info generation you need to supply :option:`-g` at
-compile time.  If any of the input files at link time were built
-with debug info generation enabled the link will enable debug info
-generation as well.  Any elaborate debug info settings
-like the dwarf level :option:`-gdwarf-5` need to be explicitly repeated
-at the linker command line and mixing different settings in different
-translation units is discouraged.
+  To enable debug info generation you need to supply :option:`-g` at
+  compile time.  If any of the input files at link time were built
+  with debug info generation enabled the link will enable debug info
+  generation as well.  Any elaborate debug info settings
+  like the dwarf level :option:`-gdwarf-5` need to be explicitly repeated
+  at the linker command line and mixing different settings in different
+  translation units is discouraged.
 
-If LTO encounters objects with C linkage declared with incompatible
-types in separate translation units to be linked together (undefined
-behavior according to ISO C99 6.2.7), a non-fatal diagnostic may be
-issued.  The behavior is still undefined at run time.  Similar
-diagnostics may be raised for other languages.
+  If LTO encounters objects with C linkage declared with incompatible
+  types in separate translation units to be linked together (undefined
+  behavior according to ISO C99 6.2.7), a non-fatal diagnostic may be
+  issued.  The behavior is still undefined at run time.  Similar
+  diagnostics may be raised for other languages.
 
-Another feature of LTO is that it is possible to apply interprocedural
-optimizations on files written in different languages:
+  Another feature of LTO is that it is possible to apply interprocedural
+  optimizations on files written in different languages:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c -flto foo.c
-  g++ -c -flto bar.cc
-  gfortran -c -flto baz.f90
-  g++ -o myprog -flto -O3 foo.o bar.o baz.o -lgfortran
+    gcc -c -flto foo.c
+    g++ -c -flto bar.cc
+    gfortran -c -flto baz.f90
+    g++ -o myprog -flto -O3 foo.o bar.o baz.o -lgfortran
 
-Notice that the final link is done with :command:`g++` to get the C++
-runtime libraries and :option:`-lgfortran` is added to get the Fortran
-runtime libraries.  In general, when mixing languages in LTO mode, you
-should use the same link command options as when mixing languages in a
-regular (non-LTO) compilation.
+  Notice that the final link is done with :command:`g++` to get the C++
+  runtime libraries and :option:`-lgfortran` is added to get the Fortran
+  runtime libraries.  In general, when mixing languages in LTO mode, you
+  should use the same link command options as when mixing languages in a
+  regular (non-LTO) compilation.
 
-If object files containing GIMPLE bytecode are stored in a library archive, say
-libfoo.a, it is possible to extract and use them in an LTO link if you
-are using a linker with plugin support.  To create static libraries suitable
-for LTO, use :command:`gcc-ar` and :command:`gcc-ranlib` instead of :command:`ar`
-and :command:`ranlib`; 
-to show the symbols of object files with GIMPLE bytecode, use
-:command:`gcc-nm`.  Those commands require that :command:`ar`, :command:`ranlib`
-and :command:`nm` have been compiled with plugin support.  At link time, use the
-flag :option:`-fuse-linker-plugin` to ensure that the library participates in
-the LTO optimization process:
+  If object files containing GIMPLE bytecode are stored in a library archive, say
+  libfoo.a, it is possible to extract and use them in an LTO link if you
+  are using a linker with plugin support.  To create static libraries suitable
+  for LTO, use :command:`gcc-ar` and :command:`gcc-ranlib` instead of :command:`ar`
+  and :command:`ranlib`; 
+  to show the symbols of object files with GIMPLE bytecode, use
+  :command:`gcc-nm`.  Those commands require that :command:`ar`, :command:`ranlib`
+  and :command:`nm` have been compiled with plugin support.  At link time, use the
+  flag :option:`-fuse-linker-plugin` to ensure that the library participates in
+  the LTO optimization process:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -o myprog -O2 -flto -fuse-linker-plugin a.o b.o -lfoo
+    gcc -o myprog -O2 -flto -fuse-linker-plugin a.o b.o -lfoo
 
-With the linker plugin enabled, the linker extracts the needed
-GIMPLE files from libfoo.a and passes them on to the running GCC
-to make them part of the aggregated GIMPLE image to be optimized.
+  With the linker plugin enabled, the linker extracts the needed
+  GIMPLE files from libfoo.a and passes them on to the running GCC
+  to make them part of the aggregated GIMPLE image to be optimized.
 
-If you are not using a linker with plugin support and/or do not
-enable the linker plugin, then the objects inside libfoo.a
-are extracted and linked as usual, but they do not participate
-in the LTO optimization process.  In order to make a static library suitable
-for both LTO optimization and usual linkage, compile its object files with
-:option:`-flto` :option:`-ffat-lto-objects`.
+  If you are not using a linker with plugin support and/or do not
+  enable the linker plugin, then the objects inside libfoo.a
+  are extracted and linked as usual, but they do not participate
+  in the LTO optimization process.  In order to make a static library suitable
+  for both LTO optimization and usual linkage, compile its object files with
+  :option:`-flto` :option:`-ffat-lto-objects`.
 
-Link-time optimizations do not require the presence of the whole program to
-operate.  If the program does not require any symbols to be exported, it is
-possible to combine :option:`-flto` and :option:`-fwhole-program` to allow
-the interprocedural optimizers to use more aggressive assumptions which may
-lead to improved optimization opportunities.
-Use of :option:`-fwhole-program` is not needed when linker plugin is
-active (see :option:`-fuse-linker-plugin` ).
+  Link-time optimizations do not require the presence of the whole program to
+  operate.  If the program does not require any symbols to be exported, it is
+  possible to combine :option:`-flto` and :option:`-fwhole-program` to allow
+  the interprocedural optimizers to use more aggressive assumptions which may
+  lead to improved optimization opportunities.
+  Use of :option:`-fwhole-program` is not needed when linker plugin is
+  active (see :option:`-fuse-linker-plugin` ).
 
-The current implementation of LTO makes no
-attempt to generate bytecode that is portable between different
-types of hosts.  The bytecode files are versioned and there is a
-strict version check, so bytecode files generated in one version of
-GCC do not work with an older or newer version of GCC.
+  The current implementation of LTO makes no
+  attempt to generate bytecode that is portable between different
+  types of hosts.  The bytecode files are versioned and there is a
+  strict version check, so bytecode files generated in one version of
+  GCC do not work with an older or newer version of GCC.
 
-Link-time optimization does not work well with generation of debugging
-information on systems other than those using a combination of ELF and
-DWARF.
+  Link-time optimization does not work well with generation of debugging
+  information on systems other than those using a combination of ELF and
+  DWARF.
 
-If you specify the optional :samp:`{n}` , the optimization and code
-generation done at link time is executed in parallel using :samp:`{n}`
-parallel jobs by utilizing an installed :command:`make` program.  The
-environment variable :envvar:`MAKE` may be used to override the program
-used.
+  If you specify the optional :samp:`{n}` , the optimization and code
+  generation done at link time is executed in parallel using :samp:`{n}`
+  parallel jobs by utilizing an installed :command:`make` program.  The
+  environment variable :envvar:`MAKE` may be used to override the program
+  used.
 
-You can also specify :option:`-flto=jobserver` to use GNU make's
-job server mode to determine the number of parallel jobs. This
-is useful when the Makefile calling GCC is already executing in parallel.
-You must prepend a :samp:`+` to the command recipe in the parent Makefile
-for this to work.  This option likely only works if :envvar:`MAKE` is
-GNU make.  Even without the option value, GCC tries to automatically
-detect a running GNU make's job server.
+  You can also specify :option:`-flto=jobserver` to use GNU make's
+  job server mode to determine the number of parallel jobs. This
+  is useful when the Makefile calling GCC is already executing in parallel.
+  You must prepend a :samp:`+` to the command recipe in the parent Makefile
+  for this to work.  This option likely only works if :envvar:`MAKE` is
+  GNU make.  Even without the option value, GCC tries to automatically
+  detect a running GNU make's job server.
 
-Use :option:`-flto=auto` to use GNU make's job server, if available,
-or otherwise fall back to autodetection of the number of CPU threads
-present in your system.
+  Use :option:`-flto=auto` to use GNU make's job server, if available,
+  or otherwise fall back to autodetection of the number of CPU threads
+  present in your system.
 
 .. option:: -flto-partition=alg
 
@@ -2275,18 +2276,18 @@ present in your system.
   option relies on plugin support in the linker, which is available in gold
   or in GNU ld 2.21 or newer.
 
-This option enables the extraction of object files with GIMPLE bytecode out
-of library archives. This improves the quality of optimization by exposing
-more code to the link-time optimizer.  This information specifies what
-symbols can be accessed externally (by non-LTO object or during dynamic
-linking).  Resulting code quality improvements on binaries (and shared
-libraries that use hidden visibility) are similar to :option:`-fwhole-program`.
-See :option:`-flto` for a description of the effect of this flag and how to
-use it.
+  This option enables the extraction of object files with GIMPLE bytecode out
+  of library archives. This improves the quality of optimization by exposing
+  more code to the link-time optimizer.  This information specifies what
+  symbols can be accessed externally (by non-LTO object or during dynamic
+  linking).  Resulting code quality improvements on binaries (and shared
+  libraries that use hidden visibility) are similar to :option:`-fwhole-program`.
+  See :option:`-flto` for a description of the effect of this flag and how to
+  use it.
 
-This option is enabled by default when LTO support in GCC is enabled
-and GCC was configured for use with
-a linker supporting plugins (GNU ld 2.21 or newer or gold).
+  This option is enabled by default when LTO support in GCC is enabled
+  and GCC was configured for use with
+  a linker supporting plugins (GNU ld 2.21 or newer or gold).
 
 .. option:: -ffat-lto-objects
 
@@ -2295,22 +2296,22 @@ a linker supporting plugins (GNU ld 2.21 or newer or gold).
   linking. This option is effective only when compiling with :option:`-flto`
   and is ignored at link time.
 
-:option:`-fno-fat-lto-objects` improves compilation time over plain LTO, but
-requires the complete toolchain to be aware of LTO. It requires a linker with
-linker plugin support for basic functionality.  Additionally,
-:command:`nm`, :command:`ar` and :command:`ranlib`
-need to support linker plugins to allow a full-featured build environment
-(capable of building static libraries etc).  GCC provides the :command:`gcc-ar`,
-:command:`gcc-nm`, :command:`gcc-ranlib` wrappers to pass the right options
-to these tools. With non fat LTO makefiles need to be modified to use them.
+  :option:`-fno-fat-lto-objects` improves compilation time over plain LTO, but
+  requires the complete toolchain to be aware of LTO. It requires a linker with
+  linker plugin support for basic functionality.  Additionally,
+  :command:`nm`, :command:`ar` and :command:`ranlib`
+  need to support linker plugins to allow a full-featured build environment
+  (capable of building static libraries etc).  GCC provides the :command:`gcc-ar`,
+  :command:`gcc-nm`, :command:`gcc-ranlib` wrappers to pass the right options
+  to these tools. With non fat LTO makefiles need to be modified to use them.
 
-Note that modern binutils provide plugin auto-load mechanism.
-Installing the linker plugin into $libdir/bfd-plugins has the same
-effect as usage of the command wrappers (:command:`gcc-ar`, :command:`gcc-nm` and
-:command:`gcc-ranlib`).
+  Note that modern binutils provide plugin auto-load mechanism.
+  Installing the linker plugin into $libdir/bfd-plugins has the same
+  effect as usage of the command wrappers (:command:`gcc-ar`, :command:`gcc-nm` and
+  :command:`gcc-ranlib`).
 
-The default is :option:`-fno-fat-lto-objects` on targets with linker plugin
-support.
+  The default is :option:`-fno-fat-lto-objects` on targets with linker plugin
+  support.
 
 .. option:: -fcompare-elim
 
@@ -2319,10 +2320,10 @@ support.
   comparison operation based on that arithmetic.  If possible, eliminate the
   explicit comparison operation.
 
-This pass only applies to certain targets that cannot explicitly represent
-the comparison operation before register allocation is complete.
+  This pass only applies to certain targets that cannot explicitly represent
+  the comparison operation before register allocation is complete.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fcprop-registers
 
@@ -2330,7 +2331,7 @@ Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
   perform a copy-propagation pass to try to reduce scheduling dependencies
   and occasionally eliminate the copy.
 
-Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -fprofile-correction
 
@@ -2339,7 +2340,7 @@ Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
   GCC uses heuristics to correct or smooth out such inconsistencies. By
   default, GCC emits an error message when an inconsistent profile is detected.
 
-This option is enabled by :option:`-fauto-profile`.
+  This option is enabled by :option:`-fauto-profile`.
 
 .. option:: -fprofile-partial-training
 
@@ -2360,25 +2361,25 @@ This option is enabled by :option:`-fauto-profile`.
   and the following optimizations, many of which
   are generally profitable only with profile feedback available:
 
-:option:`-fbranch-probabilities`  :option:`-fprofile-values` 
-:option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
-:option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
-:option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
-:option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
-:option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
-:option:`-fprofile-reorder-functions`
-Before you can use this option, you must first generate profiling information.
-See :ref:`instrumentation-options`, for information about the
-:option:`-fprofile-generate` option.
+  :option:`-fbranch-probabilities`  :option:`-fprofile-values` 
+  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
+  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
+  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
+  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
+  :option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fprofile-reorder-functions`
+  Before you can use this option, you must first generate profiling information.
+  See :ref:`instrumentation-options`, for information about the
+  :option:`-fprofile-generate` option.
 
-By default, GCC emits an error message if the feedback profiles do not
-match the source code.  This error can be turned into a warning by using
-:option:`-Wno-error=coverage-mismatch`.  Note this may result in poorly
-optimized code.  Additionally, by default, GCC also emits a warning message if
-the feedback profiles do not exist (see :option:`-Wmissing-profile` ).
+  By default, GCC emits an error message if the feedback profiles do not
+  match the source code.  This error can be turned into a warning by using
+  :option:`-Wno-error=coverage-mismatch`.  Note this may result in poorly
+  optimized code.  Additionally, by default, GCC also emits a warning message if
+  the feedback profiles do not exist (see :option:`-Wmissing-profile` ).
 
-If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
-the profile feedback data files. See :option:`-fprofile-dir`.
+  If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
+  the profile feedback data files. See :option:`-fprofile-dir`.
 
 .. option:: -fauto-profile
 
@@ -2386,38 +2387,38 @@ the profile feedback data files. See :option:`-fprofile-dir`.
   and the following optimizations,
   many of which are generally profitable only with profile feedback available:
 
-:option:`-fbranch-probabilities`  :option:`-fprofile-values` 
-:option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
-:option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
-:option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
-:option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
-:option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
-:option:`-fprofile-correction`
-:samp:`{path}` is the name of a file containing AutoFDO profile information.
-If omitted, it defaults to fbdata.afdo in the current directory.
+  :option:`-fbranch-probabilities`  :option:`-fprofile-values` 
+  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
+  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
+  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
+  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
+  :option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fprofile-correction`
+  :samp:`{path}` is the name of a file containing AutoFDO profile information.
+  If omitted, it defaults to fbdata.afdo in the current directory.
 
-Producing an AutoFDO profile data file requires running your program
-with the :command:`perf` utility on a supported GNU/Linux target system.
-For more information, see https://perf.wiki.kernel.org/.
+  Producing an AutoFDO profile data file requires running your program
+  with the :command:`perf` utility on a supported GNU/Linux target system.
+  For more information, see https://perf.wiki.kernel.org/.
 
-E.g.
+  E.g.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  perf record -e br_inst_retired:near_taken -b -o perf.data \
-      -- your_program
+    perf record -e br_inst_retired:near_taken -b -o perf.data \
+        -- your_program
 
-Then use the :command:`create_gcov` tool to convert the raw profile data
-to a format that can be used by GCC. You must also supply the 
-unstripped binary for your program to this tool.  
-See https://github.com/google/autofdo.
+  Then use the :command:`create_gcov` tool to convert the raw profile data
+  to a format that can be used by GCC. You must also supply the 
+  unstripped binary for your program to this tool.  
+  See https://github.com/google/autofdo.
 
-E.g.
+  E.g.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  create_gcov --binary=your_program.unstripped --profile=perf.data \
-      --gcov=profile.afdo
+    create_gcov --binary=your_program.unstripped --profile=perf.data \
+        --gcov=profile.afdo
 
 The following options control compiler behavior regarding floating-point 
 arithmetic.  These options trade off between speed and
@@ -2429,15 +2430,15 @@ correctness.  All must be specifically enabled.
   options that might change whether a floating-point value is taken from a
   register or memory.
 
-.. index:: floating-point precision
+  .. index:: floating-point precision
 
-This option prevents undesirable excess precision on machines such as
-the 68000 where the floating registers (of the 68881) keep more
-precision than a ``double`` is supposed to have.  Similarly for the
-x86 architecture.  For most programs, the excess precision does only
-good, but a few programs rely on the precise definition of IEEE floating
-point.  Use :option:`-ffloat-store` for such programs, after modifying
-them to store all pertinent intermediate computations into variables.
+  This option prevents undesirable excess precision on machines such as
+  the 68000 where the floating registers (of the 68881) keep more
+  precision than a ``double`` is supposed to have.  Similarly for the
+  x86 architecture.  For most programs, the excess precision does only
+  good, but a few programs rely on the precise definition of IEEE floating
+  point.  Use :option:`-ffloat-store` for such programs, after modifying
+  them to store all pertinent intermediate computations into variables.
 
 .. option:: -fexcess-precision=style
 
@@ -2457,11 +2458,11 @@ them to store all pertinent intermediate computations into variables.
   :option:`-ffast-math` enables :option:`-fexcess-precision=fast` by default
   regardless of whether a strict conformance option is used.
 
-:option:`-fexcess-precision=standard` is not implemented for languages
-other than C.  On the x86, it has no effect if :option:`-mfpmath=sse`
-or :option:`-mfpmath=sse+387` is specified; in the former case, IEEE
-semantics apply without excess precision, and in the latter, rounding
-is unpredictable.
+  :option:`-fexcess-precision=standard` is not implemented for languages
+  other than C.  On the x86, it has no effect if :option:`-mfpmath=sse`
+  or :option:`-mfpmath=sse+387` is specified; in the former case, IEEE
+  semantics apply without excess precision, and in the latter, rounding
+  is unpredictable.
 
 .. option:: -ffast-math
 
@@ -2470,13 +2471,13 @@ is unpredictable.
   :option:`-fno-signaling-nans` , :option:`-fcx-limited-range` and
   :option:`-fexcess-precision=fast`.
 
-This option causes the preprocessor macro ``__FAST_MATH__`` to be defined.
+  This option causes the preprocessor macro ``__FAST_MATH__`` to be defined.
 
-This option is not turned on by any :option:`-O` option besides
-:option:`-Ofast` since it can result in incorrect output for programs
-that depend on an exact implementation of IEEE or ISO rules/specifications
-for math functions. It may, however, yield faster code for programs
-that do not require the guarantees of these specifications.
+  This option is not turned on by any :option:`-O` option besides
+  :option:`-Ofast` since it can result in incorrect output for programs
+  that depend on an exact implementation of IEEE or ISO rules/specifications
+  for math functions. It may, however, yield faster code for programs
+  that do not require the guarantees of these specifications.
 
 .. option:: -fno-math-errno, -fmath-errno
 
@@ -2485,17 +2486,17 @@ that do not require the guarantees of these specifications.
   IEEE exceptions for math error handling may want to use this flag
   for speed while maintaining IEEE arithmetic compatibility.
 
-This option is not turned on by any :option:`-O` option since
-it can result in incorrect output for programs that depend on
-an exact implementation of IEEE or ISO rules/specifications for
-math functions. It may, however, yield faster code for programs
-that do not require the guarantees of these specifications.
+  This option is not turned on by any :option:`-O` option since
+  it can result in incorrect output for programs that depend on
+  an exact implementation of IEEE or ISO rules/specifications for
+  math functions. It may, however, yield faster code for programs
+  that do not require the guarantees of these specifications.
 
-The default is :option:`-fmath-errno`.
+  The default is :option:`-fmath-errno`.
 
-On Darwin systems, the math library never sets ``errno``.  There is
-therefore no reason for the compiler to consider the possibility that
-it might, and :option:`-fno-math-errno` is the default.
+  On Darwin systems, the math library never sets ``errno``.  There is
+  therefore no reason for the compiler to consider the possibility that
+  it might, and :option:`-fno-math-errno` is the default.
 
 .. option:: -funsafe-math-optimizations
 
@@ -2505,15 +2506,15 @@ it might, and :option:`-fno-math-errno` is the default.
   or startup files that change the default FPU control word or other
   similar optimizations.
 
-This option is not turned on by any :option:`-O` option since
-it can result in incorrect output for programs that depend on
-an exact implementation of IEEE or ISO rules/specifications for
-math functions. It may, however, yield faster code for programs
-that do not require the guarantees of these specifications.
-Enables :option:`-fno-signed-zeros` , :option:`-fno-trapping-math` ,
-:option:`-fassociative-math` and :option:`-freciprocal-math`.
+  This option is not turned on by any :option:`-O` option since
+  it can result in incorrect output for programs that depend on
+  an exact implementation of IEEE or ISO rules/specifications for
+  math functions. It may, however, yield faster code for programs
+  that do not require the guarantees of these specifications.
+  Enables :option:`-fno-signed-zeros` , :option:`-fno-trapping-math` ,
+  :option:`-fassociative-math` and :option:`-freciprocal-math`.
 
-The default is :option:`-fno-unsafe-math-optimizations`.
+  The default is :option:`-fno-unsafe-math-optimizations`.
 
 .. option:: -fassociative-math
 
@@ -2530,7 +2531,7 @@ The default is :option:`-fno-unsafe-math-optimizations`.
   is automatically enabled when both :option:`-fno-signed-zeros` and
   :option:`-fno-trapping-math` are in effect.
 
-The default is :option:`-fno-associative-math`.
+  The default is :option:`-fno-associative-math`.
 
 .. option:: -freciprocal-math
 
@@ -2540,20 +2541,20 @@ The default is :option:`-fno-associative-math`.
   is subject to common subexpression elimination.  Note that this loses
   precision and increases the number of flops operating on the value.
 
-The default is :option:`-fno-reciprocal-math`.
+  The default is :option:`-fno-reciprocal-math`.
 
 .. option:: -ffinite-math-only
 
   Allow optimizations for floating-point arithmetic that assume
   that arguments and results are not NaNs or +-Infs.
 
-This option is not turned on by any :option:`-O` option since
-it can result in incorrect output for programs that depend on
-an exact implementation of IEEE or ISO rules/specifications for
-math functions. It may, however, yield faster code for programs
-that do not require the guarantees of these specifications.
+  This option is not turned on by any :option:`-O` option since
+  it can result in incorrect output for programs that depend on
+  an exact implementation of IEEE or ISO rules/specifications for
+  math functions. It may, however, yield faster code for programs
+  that do not require the guarantees of these specifications.
 
-The default is :option:`-fno-finite-math-only`.
+  The default is :option:`-fno-finite-math-only`.
 
 .. option:: -fno-signed-zeros, -fsigned-zeros
 
@@ -2563,7 +2564,7 @@ The default is :option:`-fno-finite-math-only`.
   of expressions such as x+0.0 or 0.0*x (even with :option:`-ffinite-math-only` ).
   This option implies that the sign of a zero result isn't significant.
 
-The default is :option:`-fsigned-zeros`.
+  The default is :option:`-fsigned-zeros`.
 
 .. option:: -fno-trapping-math, -ftrapping-math
 
@@ -2573,12 +2574,12 @@ The default is :option:`-fsigned-zeros`.
   that :option:`-fno-signaling-nans` be in effect.  Setting this option may
   allow faster code if one relies on 'non-stop' IEEE arithmetic, for example.
 
-This option should never be turned on by any :option:`-O` option since
-it can result in incorrect output for programs that depend on
-an exact implementation of IEEE or ISO rules/specifications for
-math functions.
+  This option should never be turned on by any :option:`-O` option since
+  it can result in incorrect output for programs that depend on
+  an exact implementation of IEEE or ISO rules/specifications for
+  math functions.
 
-The default is :option:`-ftrapping-math`.
+  The default is :option:`-ftrapping-math`.
 
 .. option:: -frounding-math
 
@@ -2592,13 +2593,13 @@ The default is :option:`-ftrapping-math`.
   rounding mode) and arithmetic transformations that are unsafe in the
   presence of sign-dependent rounding modes.
 
-The default is :option:`-fno-rounding-math`.
+  The default is :option:`-fno-rounding-math`.
 
-This option is experimental and does not currently guarantee to
-disable all GCC optimizations that are affected by rounding mode.
-Future versions of GCC may provide finer control of this setting
-using C99's ``FENV_ACCESS`` pragma.  This command-line option
-will be used to specify the default state for ``FENV_ACCESS``.
+  This option is experimental and does not currently guarantee to
+  disable all GCC optimizations that are affected by rounding mode.
+  Future versions of GCC may provide finer control of this setting
+  using C99's ``FENV_ACCESS`` pragma.  This command-line option
+  will be used to specify the default state for ``FENV_ACCESS``.
 
 .. option:: -fsignaling-nans
 
@@ -2607,13 +2608,13 @@ will be used to specify the default state for ``FENV_ACCESS``.
   optimizations that may change the number of exceptions visible with
   signaling NaNs.  This option implies :option:`-ftrapping-math`.
 
-This option causes the preprocessor macro ``__SUPPORT_SNAN__`` to
-be defined.
+  This option causes the preprocessor macro ``__SUPPORT_SNAN__`` to
+  be defined.
 
-The default is :option:`-fno-signaling-nans`.
+  The default is :option:`-fno-signaling-nans`.
 
-This option is experimental and does not currently guarantee to
-disable all GCC optimizations that affect signaling NaN behavior.
+  This option is experimental and does not currently guarantee to
+  disable all GCC optimizations that affect signaling NaN behavior.
 
 .. option:: -fno-fp-int-builtin-inexact, -ffp-int-builtin-inexact
 
@@ -2625,13 +2626,13 @@ disable all GCC optimizations that affect signaling NaN behavior.
   TS 18661-1:2014, the C bindings to IEEE 754-2008, as integrated into
   ISO C2X, does not allow these functions to do so.
 
-The default is :option:`-ffp-int-builtin-inexact` , allowing the
-exception to be raised, unless C2X or a later C standard is selected.
-This option does nothing unless :option:`-ftrapping-math` is in effect.
+  The default is :option:`-ffp-int-builtin-inexact` , allowing the
+  exception to be raised, unless C2X or a later C standard is selected.
+  This option does nothing unless :option:`-ftrapping-math` is in effect.
 
-Even if :option:`-fno-fp-int-builtin-inexact` is used, if the functions
-generate a call to a library function then the 'inexact' exception
-may be raised if the library implementation does not follow TS 18661.
+  Even if :option:`-fno-fp-int-builtin-inexact` is used, if the functions
+  generate a call to a library function then the 'inexact' exception
+  may be raised if the library implementation does not follow TS 18661.
 
 .. option:: -fsingle-precision-constant
 
@@ -2647,9 +2648,9 @@ may be raised if the library implementation does not follow TS 18661.
   default is :option:`-fno-cx-limited-range` , but is enabled by
   :option:`-ffast-math`.
 
-This option controls the default setting of the ISO C99
-``CX_LIMITED_RANGE`` pragma.  Nevertheless, the option applies to
-all languages.
+  This option controls the default setting of the ISO C99
+  ``CX_LIMITED_RANGE`` pragma.  Nevertheless, the option applies to
+  all languages.
 
 .. option:: -fcx-fortran-rules
 
@@ -2658,7 +2659,7 @@ all languages.
   whether the result of a complex multiplication or division is ``NaN
   + I*NaN``, with an attempt to rescue the situation in that case.
 
-The default is :option:`-fno-cx-fortran-rules`.
+  The default is :option:`-fno-cx-fortran-rules`.
 
 The following options control optimizations that may improve
 performance, but are not enabled by any :option:`-O` options.  This
@@ -2677,25 +2678,25 @@ section includes experimental options that may produce broken code.
   structure of the generated code, so you must use the same source code
   and the same optimization options for both compilations.
 
-With :option:`-fbranch-probabilities` , GCC puts a
-:samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.
-These can be used to improve optimization.  Currently, they are only
-used in one place: in reorg.c, instead of guessing which path a
-branch is most likely to take, the :samp:`REG_BR_PROB` values are used to
-exactly determine which path is taken more often.
+  With :option:`-fbranch-probabilities` , GCC puts a
+  :samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.
+  These can be used to improve optimization.  Currently, they are only
+  used in one place: in reorg.c, instead of guessing which path a
+  branch is most likely to take, the :samp:`REG_BR_PROB` values are used to
+  exactly determine which path is taken more often.
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -fprofile-values
 
   If combined with :option:`-fprofile-arcs` , it adds code so that some
   data about values of expressions in the program is gathered.
 
-With :option:`-fbranch-probabilities` , it reads back the data gathered
-from profiling values of expressions for usage in optimizations.
+  With :option:`-fbranch-probabilities` , it reads back the data gathered
+  from profiling values of expressions for usage in optimizations.
 
-Enabled by :option:`-fprofile-generate` , :option:`-fprofile-use` , and
-:option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-generate` , :option:`-fprofile-use` , and
+  :option:`-fauto-profile`.
 
 .. option:: -fprofile-reorder-functions
 
@@ -2703,19 +2704,19 @@ Enabled by :option:`-fprofile-generate` , :option:`-fprofile-use` , and
   first time of execution of a function and orders these functions
   in ascending order.
 
-Enabled with :option:`-fprofile-use`.
+  Enabled with :option:`-fprofile-use`.
 
 .. option:: -fvpt
 
   If combined with :option:`-fprofile-arcs` , this option instructs the compiler
   to add code to gather information about values of expressions.
 
-With :option:`-fbranch-probabilities` , it reads back the data gathered
-and actually performs the optimizations based on them.
-Currently the optimizations include specialization of division operations
-using the knowledge about the value of the denominator.
+  With :option:`-fbranch-probabilities` , it reads back the data gathered
+  and actually performs the optimizations based on them.
+  Currently the optimizations include specialization of division operations
+  using the knowledge about the value of the denominator.
 
-Enabled with :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled with :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -frename-registers
 
@@ -2726,7 +2727,7 @@ Enabled with :option:`-fprofile-use` and :option:`-fauto-profile`.
   make debugging impossible, since variables no longer stay in
   a 'home register'.
 
-Enabled by default with :option:`-funroll-loops`.
+  Enabled by default with :option:`-funroll-loops`.
 
 .. option:: -fschedule-fusion
 
@@ -2734,7 +2735,7 @@ Enabled by default with :option:`-funroll-loops`.
   instructions of same type together because target machine can execute them
   more efficiently if they are adjacent to each other in the instruction flow.
 
-Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
 
 .. option:: -ftracer
 
@@ -2742,7 +2743,7 @@ Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
   simplifies the control flow of the function allowing other optimizations to do
   a better job.
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -funroll-loops
 
@@ -2753,7 +2754,7 @@ Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   a small constant number of iterations).  This option makes code larger, and may
   or may not make it run faster.
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -funroll-all-loops
 
@@ -2769,7 +2770,7 @@ Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   complete loop peeling (i.e. complete removal of loops with small constant
   number of iterations).
 
-Enabled by :option:`-O3` , :option:`-fprofile-use` , and :option:`-fauto-profile`.
+  Enabled by :option:`-O3` , :option:`-fprofile-use` , and :option:`-fauto-profile`.
 
 .. option:: -fmove-loop-invariants
 
@@ -2781,40 +2782,40 @@ Enabled by :option:`-O3` , :option:`-fprofile-use` , and :option:`-fauto-profile
   Split a loop into two if it contains a condition that's always true
   for one side of the iteration space and false for the other.
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -funswitch-loops
 
   Move branches with loop invariant conditions out of the loop, with duplicates
   of the loop on both branches (modified according to result of the condition).
 
-Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -fversion-loops-for-strides
 
   If a loop iterates over an array with a variable stride, create another
   version of the loop that assumes the stride is always one.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  for (int i = 0; i < n; ++i)
-    x[i * stride] = ...;
-
-becomes:
-
-.. code-block:: c++
-
-  if (stride == 1)
-    for (int i = 0; i < n; ++i)
-      x[i] = ...;
-  else
     for (int i = 0; i < n; ++i)
       x[i * stride] = ...;
 
-This is particularly useful for assumed-shape arrays in Fortran where
-(for example) it allows better vectorization assuming contiguous accesses.
-This flag is enabled by default at :option:`-O3`.
-It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  becomes:
+
+  .. code-block:: c++
+
+    if (stride == 1)
+      for (int i = 0; i < n; ++i)
+        x[i] = ...;
+    else
+      for (int i = 0; i < n; ++i)
+        x[i * stride] = ...;
+
+  This is particularly useful for assumed-shape arrays in Fortran where
+  (for example) it allows better vectorization assuming contiguous accesses.
+  This flag is enabled by default at :option:`-O3`.
+  It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -ffunction-sections, -fdata-sections
 
@@ -2823,26 +2824,26 @@ It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
   function or the name of the data item determines the section's name
   in the output file.
 
-Use these options on systems where the linker can perform optimizations to
-improve locality of reference in the instruction space.  Most systems using the
-ELF object format have linkers with such optimizations.  On AIX, the linker
-rearranges sections (CSECTs) based on the call graph.  The performance impact
-varies.
+  Use these options on systems where the linker can perform optimizations to
+  improve locality of reference in the instruction space.  Most systems using the
+  ELF object format have linkers with such optimizations.  On AIX, the linker
+  rearranges sections (CSECTs) based on the call graph.  The performance impact
+  varies.
 
-Together with a linker garbage collection (linker :option:`--gc-sections`
-option) these options may lead to smaller statically-linked executables (after
-stripping).
+  Together with a linker garbage collection (linker :option:`--gc-sections`
+  option) these options may lead to smaller statically-linked executables (after
+  stripping).
 
-On ELF/DWARF systems these options do not degenerate the quality of the debug
-information.  There could be issues with other object files/debug info formats.
+  On ELF/DWARF systems these options do not degenerate the quality of the debug
+  information.  There could be issues with other object files/debug info formats.
 
-Only use these options when there are significant benefits from doing so.  When
-you specify these options, the assembler and linker create larger object and
-executable files and are also slower.  These options affect code generation.
-They prevent optimizations by the compiler and assembler using relative
-locations inside a translation unit since the locations are unknown until
-link time.  An example of such an optimization is relaxing calls to short call
-instructions.
+  Only use these options when there are significant benefits from doing so.  When
+  you specify these options, the assembler and linker create larger object and
+  executable files and are also slower.  These options affect code generation.
+  They prevent optimizations by the compiler and assembler using relative
+  locations inside a translation unit since the locations are unknown until
+  link time.  An example of such an optimization is relaxing calls to short call
+  instructions.
 
 .. option:: -fstdarg-opt
 
@@ -2856,27 +2857,27 @@ instructions.
   can help to reduce the number of GOT entries and GOT accesses on some
   targets.
 
-For example, the implementation of the following function ``foo``:
+  For example, the implementation of the following function ``foo``:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  static int a, b, c;
-  int foo (void) { return a + b + c; }
+    static int a, b, c;
+    int foo (void) { return a + b + c; }
 
-usually calculates the addresses of all three variables, but if you
-compile it with :option:`-fsection-anchors` , it accesses the variables
-from a common anchor point instead.  The effect is similar to the
-following pseudocode (which isn't valid C):
+  usually calculates the addresses of all three variables, but if you
+  compile it with :option:`-fsection-anchors` , it accesses the variables
+  from a common anchor point instead.  The effect is similar to the
+  following pseudocode (which isn't valid C):
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  int foo (void)
-  {
-    register int *xr = &x;
-    return xr[&a - &x] + xr[&b - &x] + xr[&c - &x];
-  }
+    int foo (void)
+    {
+      register int *xr = &x;
+      return xr[&a - &x] + xr[&b - &x] + xr[&c - &x];
+    }
 
-Not all targets support this option.
+  Not all targets support this option.
 
 .. option:: -fzero-call-used-regs=choice
 
@@ -2884,12 +2885,12 @@ Not all targets support this option.
   security by either mitigating Return-Oriented Programming (ROP)
   attacks or preventing information leakage through registers.
 
-The possible values of :samp:`{choice}` are the same as for the
-``zero_call_used_regs`` attribute (see :ref:`function-attributes`).
-The default is :samp:`skip`.
+  The possible values of :samp:`{choice}` are the same as for the
+  ``zero_call_used_regs`` attribute (see :ref:`function-attributes`).
+  The default is :samp:`skip`.
 
-You can control this behavior for a specific function by using the function
-attribute ``zero_call_used_regs`` (see :ref:`function-attributes`).
+  You can control this behavior for a specific function by using the function
+  attribute ``zero_call_used_regs`` (see :ref:`function-attributes`).
 
 .. option:: --param name=value
 
@@ -2899,1658 +2900,1389 @@ attribute ``zero_call_used_regs`` (see :ref:`function-attributes`).
   control some of these constants on the command line using the
   :option:`--param` option.
 
-The names of specific parameters, and the meaning of the values, are
-tied to the internals of the compiler, and are subject to change
-without notice in future releases.
-
-In order to get minimal, maximal and default value of a parameter,
-one can use :option:`--help=param -Q` options.
-
-In each case, the :samp:`{value}` is an integer.  The following choices
-of :samp:`{name}` are recognized for all targets:
-
-.. option:: predictable-branch-outcome
-
-  When branch is predicted to be taken with probability lower than this threshold
-  (in percent), then it is considered well predictable.
-
-.. option:: max-rtl-if-conversion-insns
-
-  RTL if-conversion tries to remove conditional branches around a block and
-  replace them with conditionally executed instructions.  This parameter
-  gives the maximum number of instructions in a block which should be
-  considered for if-conversion.  The compiler will
-  also use other heuristics to decide whether if-conversion is likely to be
-  profitable.
-
-.. option:: max-rtl-if-conversion-predictable-cost
-
-  RTL if-conversion will try to remove conditional branches around a block
-  and replace them with conditionally executed instructions.  These parameters
-  give the maximum permissible cost for the sequence that would be generated
-  by if-conversion depending on whether the branch is statically determined
-  to be predictable or not.  The units for this parameter are the same as
-  those for the GCC internal seq_cost metric.  The compiler will try to
-  provide a reasonable default for this parameter using the BRANCH_COST
-  target macro.
-
-.. option:: max-crossjump-edges
-
-  The maximum number of incoming edges to consider for cross-jumping.
-  The algorithm used by :option:`-fcrossjumping` is O(N^2) in
-  the number of edges incoming to each block.  Increasing values mean
-  more aggressive optimization, making the compilation time increase with
-  probably small improvement in executable size.
-
-.. option:: min-crossjump-insns
-
-  The minimum number of instructions that must be matched at the end
-  of two blocks before cross-jumping is performed on them.  This
-  value is ignored in the case where all instructions in the block being
-  cross-jumped from are matched.
-
-.. option:: max-grow-copy-bb-insns
-
-  The maximum code size expansion factor when copying basic blocks
-  instead of jumping.  The expansion is relative to a jump instruction.
-
-.. option:: max-goto-duplication-insns
-
-  The maximum number of instructions to duplicate to a block that jumps
-  to a computed goto.  To avoid O(N^2) behavior in a number of
-  passes, GCC factors computed gotos early in the compilation process,
-  and unfactors them as late as possible.  Only computed jumps at the
-  end of a basic blocks with no more than max-goto-duplication-insns are
-  unfactored.
-
-.. option:: max-delay-slot-insn-search
-
-  The maximum number of instructions to consider when looking for an
-  instruction to fill a delay slot.  If more than this arbitrary number of
-  instructions are searched, the time savings from filling the delay slot
-  are minimal, so stop searching.  Increasing values mean more
-  aggressive optimization, making the compilation time increase with probably
-  small improvement in execution time.
-
-.. option:: max-delay-slot-live-search
-
-  When trying to fill delay slots, the maximum number of instructions to
-  consider when searching for a block with valid live register
-  information.  Increasing this arbitrarily chosen value means more
-  aggressive optimization, increasing the compilation time.  This parameter
-  should be removed when the delay slot code is rewritten to maintain the
-  control-flow graph.
-
-.. option:: max-gcse-memory
-
-  The approximate maximum amount of memory in ``kB`` that can be allocated in
-  order to perform the global common subexpression elimination
-  optimization.  If more memory than specified is required, the
-  optimization is not done.
-
-.. option:: max-gcse-insertion-ratio
-
-  If the ratio of expression insertions to deletions is larger than this value
-  for any expression, then RTL PRE inserts or removes the expression and thus
-  leaves partially redundant computations in the instruction stream.
-
-.. option:: max-pending-list-length
-
-  The maximum number of pending dependencies scheduling allows
-  before flushing the current state and starting over.  Large functions
-  with few branches or calls can create excessively large lists which
-  needlessly consume memory and resources.
-
-.. option:: max-modulo-backtrack-attempts
-
-  The maximum number of backtrack attempts the scheduler should make
-  when modulo scheduling a loop.  Larger values can exponentially increase
-  compilation time.
-
-.. option:: max-inline-insns-single
-
-  Several parameters control the tree inliner used in GCC.  This number sets the
-  maximum number of instructions (counted in GCC's internal representation) in a
-  single function that the tree inliner considers for inlining.  This only
-  affects functions declared inline and methods implemented in a class
-  declaration (C++).
-
-.. option:: max-inline-insns-auto
-
-  When you use :option:`-finline-functions` (included in :option:`-O3` ),
-  a lot of functions that would otherwise not be considered for inlining
-  by the compiler are investigated.  To those functions, a different
-  (more restrictive) limit compared to functions declared inline can
-  be applied ( :option:`--param max-inline-insns-auto` ).
-
-.. option:: max-inline-insns-small
-
-  This is bound applied to calls which are considered relevant with
-  :option:`-finline-small-functions`.
-
-.. option:: max-inline-insns-size
-
-  This is bound applied to calls which are optimized for size. Small growth
-  may be desirable to anticipate optimization oppurtunities exposed by inlining.
-
-.. option:: uninlined-function-insns
-
-  Number of instructions accounted by inliner for function overhead such as
-  function prologue and epilogue.
-
-.. option:: uninlined-function-time
-
-  Extra time accounted by inliner for function overhead such as time needed to
-  execute function prologue and epilogue
-
-.. option:: inline-heuristics-hint-percent
-
-  The scale (in percents) applied to inline-insns-single ,
-  inline-insns-single-O2 , inline-insns-auto
-  when inline heuristics hints that inlining is
-  very profitable (will enable later optimizations).
-
-.. option:: uninlined-thunk-insns
-
-.. option:: uninlined-thunk-time
-
-  Same as :option:`--param uninlined-function-insns` and
-  :option:`--param uninlined-function-time` but applied to function thunks
-
-.. option:: inline-min-speedup
-
-  When estimated performance improvement of caller + callee runtime exceeds this
-  threshold (in percent), the function can be inlined regardless of the limit on
-  :option:`--param max-inline-insns-single` and :option:`--param
-  max-inline-insns-auto`.
-
-.. option:: large-function-insns
-
-  The limit specifying really large functions.  For functions larger than this
-  limit after inlining, inlining is constrained by
-  :option:`--param large-function-growth`.  This parameter is useful primarily
-  to avoid extreme compilation time caused by non-linear algorithms used by the
-  back end.
-
-.. option:: large-function-growth
-
-  Specifies maximal growth of large function caused by inlining in percents.
-  For example, parameter value 100 limits large function growth to 2.0 times
-  the original size.
-
-.. option:: large-unit-insns
-
-  The limit specifying large translation unit.  Growth caused by inlining of
-  units larger than this limit is limited by :option:`--param inline-unit-growth`.
-  For small units this might be too tight.
-  For example, consider a unit consisting of function A
-  that is inline and B that just calls A three times.  If B is small relative to
-  A, the growth of unit is 300\% and yet such inlining is very sane.  For very
-  large units consisting of small inlineable functions, however, the overall unit
-  growth limit is needed to avoid exponential explosion of code size.  Thus for
-  smaller units, the size is increased to :option:`--param large-unit-insns`
-  before applying :option:`--param inline-unit-growth`.
-
-.. option:: lazy-modules
-
-  Maximum number of concurrently open C++ module files when lazy loading.
-
-.. option:: inline-unit-growth
-
-  Specifies maximal overall growth of the compilation unit caused by inlining.
-  For example, parameter value 20 limits unit growth to 1.2 times the original
-  size. Cold functions (either marked cold via an attribute or by profile
-  feedback) are not accounted into the unit size.
-
-.. option:: ipa-cp-unit-growth
-
-  Specifies maximal overall growth of the compilation unit caused by
-  interprocedural constant propagation.  For example, parameter value 10 limits
-  unit growth to 1.1 times the original size.
-
-.. option:: ipa-cp-large-unit-insns
-
-  The size of translation unit that IPA-CP pass considers large.
-
-.. option:: large-stack-frame
-
-  The limit specifying large stack frames.  While inlining the algorithm is trying
-  to not grow past this limit too much.
-
-.. option:: large-stack-frame-growth
-
-  Specifies maximal growth of large stack frames caused by inlining in percents.
-  For example, parameter value 1000 limits large stack frame growth to 11 times
-  the original size.
-
-.. option:: max-inline-insns-recursive
-
- ``max-inline-insns-recursive-auto``
-  Specifies the maximum number of instructions an out-of-line copy of a
-  self-recursive inline
-  function can grow into by performing recursive inlining.
-
-  :option:`--param max-inline-insns-recursive` applies to functions
-  declared inline.
-  For functions not declared inline, recursive inlining
-  happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
-  enabled; :option:`--param max-inline-insns-recursive-auto` applies instead.
-
-.. option:: max-inline-recursive-depth
-
- ``max-inline-recursive-depth-auto``
-  Specifies the maximum recursion depth used for recursive inlining.
-
-  :option:`--param max-inline-recursive-depth` applies to functions
-  declared inline.  For functions not declared inline, recursive inlining
-  happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
-  enabled; :option:`--param max-inline-recursive-depth-auto` applies instead.
-
-.. option:: min-inline-recursive-probability
-
-  Recursive inlining is profitable only for function having deep recursion
-  in average and can hurt for function having little recursion depth by
-  increasing the prologue size or complexity of function body to other
-  optimizers.
-
-  When profile feedback is available (see :option:`-fprofile-generate` ) the actual
-  recursion depth can be guessed from the probability that function recurses
-  via a given call expression.  This parameter limits inlining only to call
-  expressions whose probability exceeds the given threshold (in percents).
-
-.. option:: early-inlining-insns
-
-  Specify growth that the early inliner can make.  In effect it increases
-  the amount of inlining for code having a large abstraction penalty.
-
-.. option:: max-early-inliner-iterations
-
-  Limit of iterations of the early inliner.  This basically bounds
-  the number of nested indirect calls the early inliner can resolve.
-  Deeper chains are still handled by late inlining.
-
-.. option:: comdat-sharing-probability
-
-  Probability (in percent) that C++ inline function with comdat visibility
-  are shared across multiple compilation units.
-
-.. option:: modref-max-bases
-
-.. option:: modref-max-refs
-
-.. option:: modref-max-accesses
-
-  Specifies the maximal number of base pointers, references and accesses stored
-  for a single function by mod/ref analysis.
-
-.. option:: modref-max-tests
-
-  Specifies the maxmal number of tests alias oracle can perform to disambiguate
-  memory locations using the mod/ref information.  This parameter ought to be
-  bigger than :option:`--param modref-max-bases` and :option:`--param
-  modref-max-refs`.
-
-.. option:: modref-max-depth
-
-  Specifies the maximum depth of DFS walk used by modref escape analysis.
-  Setting to 0 disables the analysis completely.
-
-.. option:: modref-max-escape-points
-
-  Specifies the maximum number of escape points tracked by modref per SSA-name.
-
-.. option:: profile-func-internal-id
-
-  A parameter to control whether to use function internal id in profile
-  database lookup. If the value is 0, the compiler uses an id that
-  is based on function assembler name and filename, which makes old profile
-  data more tolerant to source changes such as function reordering etc.
-
-.. option:: min-vect-loop-bound
-
-  The minimum number of iterations under which loops are not vectorized
-  when :option:`-ftree-vectorize` is used.  The number of iterations after
-  vectorization needs to be greater than the value specified by this option
-  to allow vectorization.
-
-.. option:: gcse-cost-distance-ratio
-
-  Scaling factor in calculation of maximum distance an expression
-  can be moved by GCSE optimizations.  This is currently supported only in the
-  code hoisting pass.  The bigger the ratio, the more aggressive code hoisting
-  is with simple expressions, i.e., the expressions that have cost
-  less than gcse-unrestricted-cost.  Specifying 0 disables
-  hoisting of simple expressions.
-
-.. option:: gcse-unrestricted-cost
-
-  Cost, roughly measured as the cost of a single typical machine
-  instruction, at which GCSE optimizations do not constrain
-  the distance an expression can travel.  This is currently
-  supported only in the code hoisting pass.  The lesser the cost,
-  the more aggressive code hoisting is.  Specifying 0 
-  allows all expressions to travel unrestricted distances.
-
-.. option:: max-hoist-depth
-
-  The depth of search in the dominator tree for expressions to hoist.
-  This is used to avoid quadratic behavior in hoisting algorithm.
-  The value of 0 does not limit on the search, but may slow down compilation
-  of huge functions.
-
-.. option:: max-tail-merge-comparisons
-
-  The maximum amount of similar bbs to compare a bb with.  This is used to
-  avoid quadratic behavior in tree tail merging.
-
-.. option:: max-tail-merge-iterations
-
-  The maximum amount of iterations of the pass over the function.  This is used to
-  limit compilation time in tree tail merging.
-
-.. option:: store-merging-allow-unaligned
-
-  Allow the store merging pass to introduce unaligned stores if it is legal to
-  do so.
-
-.. option:: max-stores-to-merge
-
-  The maximum number of stores to attempt to merge into wider stores in the store
-  merging pass.
-
-.. option:: max-store-chains-to-track
-
-  The maximum number of store chains to track at the same time in the attempt
-  to merge them into wider stores in the store merging pass.
-
-.. option:: max-stores-to-track
-
-  The maximum number of stores to track at the same time in the attemt to
-  to merge them into wider stores in the store merging pass.
-
-.. option:: max-unrolled-insns
-
-  The maximum number of instructions that a loop may have to be unrolled.
-  If a loop is unrolled, this parameter also determines how many times
-  the loop code is unrolled.
-
-.. option:: max-average-unrolled-insns
-
-  The maximum number of instructions biased by probabilities of their execution
-  that a loop may have to be unrolled.  If a loop is unrolled,
-  this parameter also determines how many times the loop code is unrolled.
-
-.. option:: max-unroll-times
-
-  The maximum number of unrollings of a single loop.
-
-.. option:: max-peeled-insns
-
-  The maximum number of instructions that a loop may have to be peeled.
-  If a loop is peeled, this parameter also determines how many times
-  the loop code is peeled.
-
-.. option:: max-peel-times
-
-  The maximum number of peelings of a single loop.
-
-.. option:: max-peel-branches
-
-  The maximum number of branches on the hot path through the peeled sequence.
-
-.. option:: max-completely-peeled-insns
-
-  The maximum number of insns of a completely peeled loop.
-
-.. option:: max-completely-peel-times
-
-  The maximum number of iterations of a loop to be suitable for complete peeling.
-
-.. option:: max-completely-peel-loop-nest-depth
-
-  The maximum depth of a loop nest suitable for complete peeling.
-
-.. option:: max-unswitch-insns
-
-  The maximum number of insns of an unswitched loop.
-
-.. option:: max-unswitch-level
-
-  The maximum number of branches unswitched in a single loop.
-
-.. option:: lim-expensive
-
-  The minimum cost of an expensive expression in the loop invariant motion.
-
-.. option:: min-loop-cond-split-prob
-
-  When FDO profile information is available, min-loop-cond-split-prob
-  specifies minimum threshold for probability of semi-invariant condition
-  statement to trigger loop split.
-
-.. option:: iv-consider-all-candidates-bound
-
-  Bound on number of candidates for induction variables, below which
-  all candidates are considered for each use in induction variable
-  optimizations.  If there are more candidates than this,
-  only the most relevant ones are considered to avoid quadratic time complexity.
-
-.. option:: iv-max-considered-uses
-
-  The induction variable optimizations give up on loops that contain more
-  induction variable uses.
-
-.. option:: iv-always-prune-cand-set-bound
-
-  If the number of candidates in the set is smaller than this value,
-  always try to remove unnecessary ivs from the set
-  when adding a new one.
-
-.. option:: avg-loop-niter
-
-  Average number of iterations of a loop.
-
-.. option:: dse-max-object-size
-
-  Maximum size (in bytes) of objects tracked bytewise by dead store elimination.
-  Larger values may result in larger compilation times.
-
-.. option:: dse-max-alias-queries-per-store
-
-  Maximum number of queries into the alias oracle per store.
-  Larger values result in larger compilation times and may result in more
-  removed dead stores.
-
-.. option:: scev-max-expr-size
-
-  Bound on size of expressions used in the scalar evolutions analyzer.
-  Large expressions slow the analyzer.
-
-.. option:: scev-max-expr-complexity
-
-  Bound on the complexity of the expressions in the scalar evolutions analyzer.
-  Complex expressions slow the analyzer.
-
-.. option:: max-tree-if-conversion-phi-args
-
-  Maximum number of arguments in a PHI supported by TREE if conversion
-  unless the loop is marked with simd pragma.
-
-.. option:: vect-max-version-for-alignment-checks
-
-  The maximum number of run-time checks that can be performed when
-  doing loop versioning for alignment in the vectorizer.
-
-.. option:: vect-max-version-for-alias-checks
-
-  The maximum number of run-time checks that can be performed when
-  doing loop versioning for alias in the vectorizer.
-
-.. option:: vect-max-peeling-for-alignment
-
-  The maximum number of loop peels to enhance access alignment
-  for vectorizer. Value -1 means no limit.
-
-.. option:: max-iterations-to-track
-
-  The maximum number of iterations of a loop the brute-force algorithm
-  for analysis of the number of iterations of the loop tries to evaluate.
-
-.. option:: hot-bb-count-fraction
-
-  The denominator n of fraction 1/n of the maximal execution count of a
-  basic block in the entire program that a basic block needs to at least
-  have in order to be considered hot.  The default is 10000, which means
-  that a basic block is considered hot if its execution count is greater
-  than 1/10000 of the maximal execution count.  0 means that it is never
-  considered hot.  Used in non-LTO mode.
-
-.. option:: hot-bb-count-ws-permille
-
-  The number of most executed permilles, ranging from 0 to 1000, of the
-  profiled execution of the entire program to which the execution count
-  of a basic block must be part of in order to be considered hot.  The
-  default is 990, which means that a basic block is considered hot if
-  its execution count contributes to the upper 990 permilles, or 99.0%,
-  of the profiled execution of the entire program.  0 means that it is
-  never considered hot.  Used in LTO mode.
-
-.. option:: hot-bb-frequency-fraction
-
-  The denominator n of fraction 1/n of the execution frequency of the
-  entry block of a function that a basic block of this function needs
-  to at least have in order to be considered hot.  The default is 1000,
-  which means that a basic block is considered hot in a function if it
-  is executed more frequently than 1/1000 of the frequency of the entry
-  block of the function.  0 means that it is never considered hot.
-
-.. option:: unlikely-bb-count-fraction
-
-  The denominator n of fraction 1/n of the number of profiled runs of
-  the entire program below which the execution count of a basic block
-  must be in order for the basic block to be considered unlikely executed.
-  The default is 20, which means that a basic block is considered unlikely
-  executed if it is executed in fewer than 1/20, or 5%, of the runs of
-  the program.  0 means that it is always considered unlikely executed.
-
-.. option:: max-predicted-iterations
-
-  The maximum number of loop iterations we predict statically.  This is useful
-  in cases where a function contains a single loop with known bound and
-  another loop with unknown bound.
-  The known number of iterations is predicted correctly, while
-  the unknown number of iterations average to roughly 10.  This means that the
-  loop without bounds appears artificially cold relative to the other one.
-
-.. option:: builtin-expect-probability
-
-  Control the probability of the expression having the specified value. This
-  parameter takes a percentage (i.e. 0 ... 100) as input.
-
-.. option:: builtin-string-cmp-inline-length
-
-  The maximum length of a constant string for a builtin string cmp call 
-  eligible for inlining.
-
-.. option:: align-threshold
-
-  Select fraction of the maximal frequency of executions of a basic block in
-  a function to align the basic block.
-
-.. option:: align-loop-iterations
-
-  A loop expected to iterate at least the selected number of iterations is
-  aligned.
-
-.. option:: tracer-dynamic-coverage
-
- ``tracer-dynamic-coverage-feedback``
-  This value is used to limit superblock formation once the given percentage of
-  executed instructions is covered.  This limits unnecessary code size
-  expansion.
-
-  The tracer-dynamic-coverage-feedback parameter
-  is used only when profile
-  feedback is available.  The real profiles (as opposed to statically estimated
-  ones) are much less balanced allowing the threshold to be larger value.
-
-.. option:: tracer-max-code-growth
-
-  Stop tail duplication once code growth has reached given percentage.  This is
-  a rather artificial limit, as most of the duplicates are eliminated later in
-  cross jumping, so it may be set to much higher values than is the desired code
-  growth.
-
-.. option:: tracer-min-branch-ratio
-
-  Stop reverse growth when the reverse probability of best edge is less than this
-  threshold (in percent).
-
-.. option:: tracer-min-branch-probability
-
- ``tracer-min-branch-probability-feedback``
-  Stop forward growth if the best edge has probability lower than this
-  threshold.
-
-  Similarly to tracer-dynamic-coverage two parameters are
-  provided.  tracer-min-branch-probability-feedback is used for
-  compilation with profile feedback and tracer-min-branch-probability
-  compilation without.  The value for compilation with profile feedback
-  needs to be more conservative (higher) in order to make tracer
-  effective.
-
-.. option:: stack-clash-protection-guard-size
-
-  Specify the size of the operating system provided stack guard as
-  2 raised to :samp:`{num}` bytes.  Higher values may reduce the
-  number of explicit probes, but a value larger than the operating system
-  provided guard will leave code vulnerable to stack clash style attacks.
-
-.. option:: stack-clash-protection-probe-interval
-
-  Stack clash protection involves probing stack space as it is allocated.  This
-  param controls the maximum distance between probes into the stack as 2 raised
-  to :samp:`{num}` bytes.  Higher values may reduce the number of explicit probes, but a value
-  larger than the operating system provided guard will leave code vulnerable to
-  stack clash style attacks.
-
-.. option:: max-cse-path-length
-
-  The maximum number of basic blocks on path that CSE considers.
-
-.. option:: max-cse-insns
-
-  The maximum number of instructions CSE processes before flushing.
-
-.. option:: ggc-min-expand
-
-  GCC uses a garbage collector to manage its own memory allocation.  This
-  parameter specifies the minimum percentage by which the garbage
-  collector's heap should be allowed to expand between collections.
-  Tuning this may improve compilation speed; it has no effect on code
-  generation.
-
-  The default is 30% + 70% * (RAM/1GB) with an upper bound of 100% when
-  RAM >= 1GB.  If ``getrlimit`` is available, the notion of 'RAM' is
-  the smallest of actual RAM and ``RLIMIT_DATA`` or ``RLIMIT_AS``.  If
-  GCC is not able to calculate RAM on a particular platform, the lower
-  bound of 30% is used.  Setting this parameter and
-  ggc-min-heapsize to zero causes a full collection to occur at
-  every opportunity.  This is extremely slow, but can be useful for
-  debugging.
-
-.. option:: ggc-min-heapsize
-
-  Minimum size of the garbage collector's heap before it begins bothering
-  to collect garbage.  The first collection occurs after the heap expands
-  by ggc-min-expand % beyond ggc-min-heapsize.  Again,
-  tuning this may improve compilation speed, and has no effect on code
-  generation.
-
-  The default is the smaller of RAM/8, RLIMIT_RSS, or a limit that
-  tries to ensure that RLIMIT_DATA or RLIMIT_AS are not exceeded, but
-  with a lower bound of 4096 (four megabytes) and an upper bound of
-  131072 (128 megabytes).  If GCC is not able to calculate RAM on a
-  particular platform, the lower bound is used.  Setting this parameter
-  very large effectively disables garbage collection.  Setting this
-  parameter and ggc-min-expand to zero causes a full collection
-  to occur at every opportunity.
-
-.. option:: max-reload-search-insns
-
-  The maximum number of instruction reload should look backward for equivalent
-  register.  Increasing values mean more aggressive optimization, making the
-  compilation time increase with probably slightly better performance.
-
-.. option:: max-cselib-memory-locations
-
-  The maximum number of memory locations cselib should take into account.
-  Increasing values mean more aggressive optimization, making the compilation time
-  increase with probably slightly better performance.
-
-.. option:: max-sched-ready-insns
-
-  The maximum number of instructions ready to be issued the scheduler should
-  consider at any given time during the first scheduling pass.  Increasing
-  values mean more thorough searches, making the compilation time increase
-  with probably little benefit.
-
-.. option:: max-sched-region-blocks
-
-  The maximum number of blocks in a region to be considered for
-  interblock scheduling.
-
-.. option:: max-pipeline-region-blocks
-
-  The maximum number of blocks in a region to be considered for
-  pipelining in the selective scheduler.
-
-.. option:: max-sched-region-insns
-
-  The maximum number of insns in a region to be considered for
-  interblock scheduling.
-
-.. option:: max-pipeline-region-insns
-
-  The maximum number of insns in a region to be considered for
-  pipelining in the selective scheduler.
-
-.. option:: min-spec-prob
-
-  The minimum probability (in percents) of reaching a source block
-  for interblock speculative scheduling.
-
-.. option:: max-sched-extend-regions-iters
-
-  The maximum number of iterations through CFG to extend regions.
-  A value of 0 disables region extensions.
-
-.. option:: max-sched-insn-conflict-delay
-
-  The maximum conflict delay for an insn to be considered for speculative motion.
-
-.. option:: sched-spec-prob-cutoff
-
-  The minimal probability of speculation success (in percents), so that
-  speculative insns are scheduled.
-
-.. option:: sched-state-edge-prob-cutoff
-
-  The minimum probability an edge must have for the scheduler to save its
-  state across it.
-
-.. option:: sched-mem-true-dep-cost
-
-  Minimal distance (in CPU cycles) between store and load targeting same
-  memory locations.
-
-.. option:: selsched-max-lookahead
-
-  The maximum size of the lookahead window of selective scheduling.  It is a
-  depth of search for available instructions.
-
-.. option:: selsched-max-sched-times
-
-  The maximum number of times that an instruction is scheduled during
-  selective scheduling.  This is the limit on the number of iterations
-  through which the instruction may be pipelined.
-
-.. option:: selsched-insns-to-rename
-
-  The maximum number of best instructions in the ready list that are considered
-  for renaming in the selective scheduler.
-
-.. option:: sms-min-sc
-
-  The minimum value of stage count that swing modulo scheduler
-  generates.
-
-.. option:: max-last-value-rtl
-
-  The maximum size measured as number of RTLs that can be recorded in an expression
-  in combiner for a pseudo register as last known value of that register.
-
-.. option:: max-combine-insns
-
-  The maximum number of instructions the RTL combiner tries to combine.
-
-.. option:: integer-share-limit
-
-  Small integer constants can use a shared data structure, reducing the
-  compiler's memory usage and increasing its speed.  This sets the maximum
-  value of a shared integer constant.
-
-.. option:: ssp-buffer-size
-
-  The minimum size of buffers (i.e. arrays) that receive stack smashing
-  protection when :option:`-fstack-protection` is used.
-
-.. option:: min-size-for-stack-sharing
-
-  The minimum size of variables taking part in stack slot sharing when not
-  optimizing.
-
-.. option:: max-jump-thread-duplication-stmts
-
-  Maximum number of statements allowed in a block that needs to be
-  duplicated when threading jumps.
-
-.. option:: max-fields-for-field-sensitive
-
-  Maximum number of fields in a structure treated in
-  a field sensitive manner during pointer analysis.
-
-.. option:: prefetch-latency
-
-  Estimate on average number of instructions that are executed before
-  prefetch finishes.  The distance prefetched ahead is proportional
-  to this constant.  Increasing this number may also lead to less
-  streams being prefetched (see simultaneous-prefetches ).
-
-.. option:: simultaneous-prefetches
-
-  Maximum number of prefetches that can run at the same time.
-
-.. option:: l1-cache-line-size
-
-  The size of cache line in L1 data cache, in bytes.
-
-.. option:: l1-cache-size
-
-  The size of L1 data cache, in kilobytes.
-
-.. option:: l2-cache-size
-
-  The size of L2 data cache, in kilobytes.
-
-.. option:: prefetch-dynamic-strides
-
-  Whether the loop array prefetch pass should issue software prefetch hints
-  for strides that are non-constant.  In some cases this may be
-  beneficial, though the fact the stride is non-constant may make it
-  hard to predict when there is clear benefit to issuing these hints.
-
-  Set to 1 if the prefetch hints should be issued for non-constant
-  strides.  Set to 0 if prefetch hints should be issued only for strides that
-  are known to be constant and below prefetch-minimum-stride.
-
-.. option:: prefetch-minimum-stride
-
-  Minimum constant stride, in bytes, to start using prefetch hints for.  If
-  the stride is less than this threshold, prefetch hints will not be issued.
-
-  This setting is useful for processors that have hardware prefetchers, in
-  which case there may be conflicts between the hardware prefetchers and
-  the software prefetchers.  If the hardware prefetchers have a maximum
-  stride they can handle, it should be used here to improve the use of
-  software prefetchers.
-
-  A value of -1 means we don't have a threshold and therefore
-  prefetch hints can be issued for any constant stride.
-
-  This setting is only useful for strides that are known and constant.
-
-.. option:: loop-interchange-max-num-stmts
-
-  The maximum number of stmts in a loop to be interchanged.
-
-.. option:: loop-interchange-stride-ratio
-
-  The minimum ratio between stride of two loops for interchange to be profitable.
-
-.. option:: min-insn-to-prefetch-ratio
-
-  The minimum ratio between the number of instructions and the
-  number of prefetches to enable prefetching in a loop.
-
-.. option:: prefetch-min-insn-to-mem-ratio
-
-  The minimum ratio between the number of instructions and the
-  number of memory references to enable prefetching in a loop.
-
-.. option:: use-canonical-types
-
-  Whether the compiler should use the 'canonical' type system.
-  Should always be 1, which uses a more efficient internal
-  mechanism for comparing types in C++ and Objective-C++.  However, if
-  bugs in the canonical type system are causing compilation failures,
-  set this value to 0 to disable canonical types.
-
-.. option:: switch-conversion-max-branch-ratio
-
-  Switch initialization conversion refuses to create arrays that are
-  bigger than switch-conversion-max-branch-ratio times the number of
-  branches in the switch.
-
-.. option:: max-partial-antic-length
-
-  Maximum length of the partial antic set computed during the tree
-  partial redundancy elimination optimization ( :option:`-ftree-pre` ) when
-  optimizing at :option:`-O3` and above.  For some sorts of source code
-  the enhanced partial redundancy elimination optimization can run away,
-  consuming all of the memory available on the host machine.  This
-  parameter sets a limit on the length of the sets that are computed,
-  which prevents the runaway behavior.  Setting a value of 0 for
-  this parameter allows an unlimited set length.
-
-.. option:: rpo-vn-max-loop-depth
-
-  Maximum loop depth that is value-numbered optimistically.
-  When the limit hits the innermost
-  :samp:`{rpo-vn-max-loop-depth}` loops and the outermost loop in the
-  loop nest are value-numbered optimistically and the remaining ones not.
-
-.. option:: sccvn-max-alias-queries-per-access
-
-  Maximum number of alias-oracle queries we perform when looking for
-  redundancies for loads and stores.  If this limit is hit the search
-  is aborted and the load or store is not considered redundant.  The
-  number of queries is algorithmically limited to the number of
-  stores on all paths from the load to the function entry.
-
-.. option:: ira-max-loops-num
-
-  IRA uses regional register allocation by default.  If a function
-  contains more loops than the number given by this parameter, only at most
-  the given number of the most frequently-executed loops form regions
-  for regional register allocation.
-
-.. option:: ira-max-conflict-table-size
-
-  Although IRA uses a sophisticated algorithm to compress the conflict
-  table, the table can still require excessive amounts of memory for
-  huge functions.  If the conflict table for a function could be more
-  than the size in MB given by this parameter, the register allocator
-  instead uses a faster, simpler, and lower-quality
-  algorithm that does not require building a pseudo-register conflict table.
-
-.. option:: ira-loop-reserved-regs
-
-  IRA can be used to evaluate more accurate register pressure in loops
-  for decisions to move loop invariants (see :option:`-O3` ).  The number
-  of available registers reserved for some other purposes is given
-  by this parameter.  Default of the parameter
-  is the best found from numerous experiments.
-
-.. option:: lra-inheritance-ebb-probability-cutoff
-
-  LRA tries to reuse values reloaded in registers in subsequent insns.
-  This optimization is called inheritance.  EBB is used as a region to
-  do this optimization.  The parameter defines a minimal fall-through
-  edge probability in percentage used to add BB to inheritance EBB in
-  LRA.  The default value was chosen
-  from numerous runs of SPEC2000 on x86-64.
-
-.. option:: loop-invariant-max-bbs-in-loop
-
-  Loop invariant motion can be very expensive, both in compilation time and
-  in amount of needed compile-time memory, with very large loops.  Loops
-  with more basic blocks than this parameter won't have loop invariant
-  motion optimization performed on them.
-
-.. option:: loop-max-datarefs-for-datadeps
-
-  Building data dependencies is expensive for very large loops.  This
-  parameter limits the number of data references in loops that are
-  considered for data dependence analysis.  These large loops are no
-  handled by the optimizations using loop data dependencies.
-
-.. option:: max-vartrack-size
-
-  Sets a maximum number of hash table slots to use during variable
-  tracking dataflow analysis of any function.  If this limit is exceeded
-  with variable tracking at assignments enabled, analysis for that
-  function is retried without it, after removing all debug insns from
-  the function.  If the limit is exceeded even without debug insns, var
-  tracking analysis is completely disabled for the function.  Setting
-  the parameter to zero makes it unlimited.
-
-.. option:: max-vartrack-expr-depth
-
-  Sets a maximum number of recursion levels when attempting to map
-  variable names or debug temporaries to value expressions.  This trades
-  compilation time for more complete debug information.  If this is set too
-  low, value expressions that are available and could be represented in
-  debug information may end up not being used; setting this higher may
-  enable the compiler to find more complex debug expressions, but compile
-  time and memory use may grow.
-
-.. option:: max-debug-marker-count
-
-  Sets a threshold on the number of debug markers (e.g. begin stmt
-  markers) to avoid complexity explosion at inlining or expanding to RTL.
-  If a function has more such gimple stmts than the set limit, such stmts
-  will be dropped from the inlined copy of a function, and from its RTL
-  expansion.
-
-.. option:: min-nondebug-insn-uid
-
-  Use uids starting at this parameter for nondebug insns.  The range below
-  the parameter is reserved exclusively for debug insns created by
-  :option:`-fvar-tracking-assignments` , but debug insns may get
-  (non-overlapping) uids above it if the reserved range is exhausted.
-
-.. option:: ipa-sra-ptr-growth-factor
-
-  IPA-SRA replaces a pointer to an aggregate with one or more new
-  parameters only when their cumulative size is less or equal to
-  ipa-sra-ptr-growth-factor times the size of the original
-  pointer parameter.
-
-.. option:: ipa-sra-max-replacements
-
-  Maximum pieces of an aggregate that IPA-SRA tracks.  As a
-  consequence, it is also the maximum number of replacements of a formal
-  parameter.
-
-.. option:: sra-max-scalarization-size-Ospeed
-
- ``sra-max-scalarization-size-Osize``
-  The two Scalar Reduction of Aggregates passes (SRA and IPA-SRA) aim to
-  replace scalar parts of aggregates with uses of independent scalar
-  variables.  These parameters control the maximum size, in storage units,
-  of aggregate which is considered for replacement when compiling for
-  speed
-  ( sra-max-scalarization-size-Ospeed ) or size
-  ( sra-max-scalarization-size-Osize ) respectively.
-
-.. option:: sra-max-propagations
-
-  The maximum number of artificial accesses that Scalar Replacement of
-  Aggregates (SRA) will track, per one local variable, in order to
-  facilitate copy propagation.
-
-.. option:: tm-max-aggregate-size
-
-  When making copies of thread-local variables in a transaction, this
-  parameter specifies the size in bytes after which variables are
-  saved with the logging functions as opposed to save/restore code
-  sequence pairs.  This option only applies when using
-  :option:`-fgnu-tm`.
-
-.. option:: graphite-max-nb-scop-params
-
-  To avoid exponential effects in the Graphite loop transforms, the
-  number of parameters in a Static Control Part (SCoP) is bounded.
-  A value of zero can be used to lift
-  the bound.  A variable whose value is unknown at compilation time and
-  defined outside a SCoP is a parameter of the SCoP.
-
-.. option:: loop-block-tile-size
-
-  Loop blocking or strip mining transforms, enabled with
-  :option:`-floop-block` or :option:`-floop-strip-mine` , strip mine each
-  loop in the loop nest by a given number of iterations.  The strip
-  length can be changed using the loop-block-tile-size
-  parameter.
-
-.. option:: ipa-jump-function-lookups
-
-  Specifies number of statements visited during jump function offset discovery.
-
-.. option:: ipa-cp-value-list-size
-
-  IPA-CP attempts to track all possible values and types passed to a function's
-  parameter in order to propagate them and perform devirtualization.
-  ipa-cp-value-list-size is the maximum number of values and types it
-  stores per one formal parameter of a function.
-
-.. option:: ipa-cp-eval-threshold
-
-  IPA-CP calculates its own score of cloning profitability heuristics
-  and performs those cloning opportunities with scores that exceed
-  ipa-cp-eval-threshold.
-
-.. option:: ipa-cp-max-recursive-depth
-
-  Maximum depth of recursive cloning for self-recursive function.
-
-.. option:: ipa-cp-min-recursive-probability
-
-  Recursive cloning only when the probability of call being executed exceeds
-  the parameter.
-
-.. option:: ipa-cp-recursion-penalty
-
-  Percentage penalty the recursive functions will receive when they
-  are evaluated for cloning.
-
-.. option:: ipa-cp-single-call-penalty
-
-  Percentage penalty functions containing a single call to another
-  function will receive when they are evaluated for cloning.
-
-.. option:: ipa-max-agg-items
-
-  IPA-CP is also capable to propagate a number of scalar values passed
-  in an aggregate. ipa-max-agg-items controls the maximum
-  number of such values per one parameter.
-
-.. option:: ipa-cp-loop-hint-bonus
-
-  When IPA-CP determines that a cloning candidate would make the number
-  of iterations of a loop known, it adds a bonus of
-  ipa-cp-loop-hint-bonus to the profitability score of
-  the candidate.
-
-.. option:: ipa-max-loop-predicates
-
-  The maximum number of different predicates IPA will use to describe when
-  loops in a function have known properties.
-
-.. option:: ipa-max-aa-steps
-
-  During its analysis of function bodies, IPA-CP employs alias analysis
-  in order to track values pointed to by function parameters.  In order
-  not spend too much time analyzing huge functions, it gives up and
-  consider all memory clobbered after examining
-  ipa-max-aa-steps statements modifying memory.
-
-.. option:: ipa-max-switch-predicate-bounds
-
-  Maximal number of boundary endpoints of case ranges of switch statement.
-  For switch exceeding this limit, IPA-CP will not construct cloning cost
-  predicate, which is used to estimate cloning benefit, for default case
-  of the switch statement.
-
-.. option:: ipa-max-param-expr-ops
-
-  IPA-CP will analyze conditional statement that references some function
-  parameter to estimate benefit for cloning upon certain constant value.
-  But if number of operations in a parameter expression exceeds
-  ipa-max-param-expr-ops , the expression is treated as complicated
-  one, and is not handled by IPA analysis.
-
-.. option:: lto-partitions
-
-  Specify desired number of partitions produced during WHOPR compilation.
-  The number of partitions should exceed the number of CPUs used for compilation.
-
-.. option:: lto-min-partition
-
-  Size of minimal partition for WHOPR (in estimated instructions).
-  This prevents expenses of splitting very small programs into too many
-  partitions.
-
-.. option:: lto-max-partition
-
-  Size of max partition for WHOPR (in estimated instructions).
-  to provide an upper bound for individual size of partition.
-  Meant to be used only with balanced partitioning.
-
-.. option:: lto-max-streaming-parallelism
-
-  Maximal number of parallel processes used for LTO streaming.
-
-.. option:: cxx-max-namespaces-for-diagnostic-help
-
-  The maximum number of namespaces to consult for suggestions when C++
-  name lookup fails for an identifier.
-
-.. option:: sink-frequency-threshold
-
-  The maximum relative execution frequency (in percents) of the target block
-  relative to a statement's original block to allow statement sinking of a
-  statement.  Larger numbers result in more aggressive statement sinking.
-  A small positive adjustment is applied for
-  statements with memory operands as those are even more profitable so sink.
-
-.. option:: max-stores-to-sink
-
-  The maximum number of conditional store pairs that can be sunk.  Set to 0
-  if either vectorization ( :option:`-ftree-vectorize` ) or if-conversion
-  ( :option:`-ftree-loop-if-convert` ) is disabled.
-
-.. option:: case-values-threshold
-
-  The smallest number of different values for which it is best to use a
-  jump-table instead of a tree of conditional branches.  If the value is
-  0, use the default for the machine.
-
-.. option:: jump-table-max-growth-ratio-for-size
-
-  The maximum code size growth ratio when expanding
-  into a jump table (in percent).  The parameter is used when
-  optimizing for size.
-
-.. option:: jump-table-max-growth-ratio-for-speed
-
-  The maximum code size growth ratio when expanding
-  into a jump table (in percent).  The parameter is used when
-  optimizing for speed.
-
-.. option:: tree-reassoc-width
-
-  Set the maximum number of instructions executed in parallel in
-  reassociated tree. This parameter overrides target dependent
-  heuristics used by default if has non zero value.
-
-.. option:: sched-pressure-algorithm
-
-  Choose between the two available implementations of
-  :option:`-fsched-pressure`.  Algorithm 1 is the original implementation
-  and is the more likely to prevent instructions from being reordered.
-  Algorithm 2 was designed to be a compromise between the relatively
-  conservative approach taken by algorithm 1 and the rather aggressive
-  approach taken by the default scheduler.  It relies more heavily on
-  having a regular register file and accurate register pressure classes.
-  See haifa-sched.c in the GCC sources for more details.
-
-  The default choice depends on the target.
-
-.. option:: max-slsr-cand-scan
-
-  Set the maximum number of existing candidates that are considered when
-  seeking a basis for a new straight-line strength reduction candidate.
-
-.. option:: asan-globals
-
-  Enable buffer overflow detection for global objects.  This kind
-  of protection is enabled by default if you are using
-  :option:`-fsanitize=address` option.
-  To disable global objects protection use :option:`--param asan-globals=0`.
-
-.. option:: asan-stack
-
-  Enable buffer overflow detection for stack objects.  This kind of
-  protection is enabled by default when using :option:`-fsanitize=address`.
-  To disable stack protection use :option:`--param asan-stack=0` option.
-
-.. option:: asan-instrument-reads
-
-  Enable buffer overflow detection for memory reads.  This kind of
-  protection is enabled by default when using :option:`-fsanitize=address`.
-  To disable memory reads protection use
-  :option:`--param asan-instrument-reads=0`.
-
-.. option:: asan-instrument-writes
-
-  Enable buffer overflow detection for memory writes.  This kind of
-  protection is enabled by default when using :option:`-fsanitize=address`.
-  To disable memory writes protection use
-  :option:`--param asan-instrument-writes=0` option.
-
-.. option:: asan-memintrin
-
-  Enable detection for built-in functions.  This kind of protection
-  is enabled by default when using :option:`-fsanitize=address`.
-  To disable built-in functions protection use
-  :option:`--param asan-memintrin=0`.
-
-.. option:: asan-use-after-return
-
-  Enable detection of use-after-return.  This kind of protection
-  is enabled by default when using the :option:`-fsanitize=address` option.
-  To disable it use :option:`--param asan-use-after-return=0`.
-
-  Note: By default the check is disabled at run time.  To enable it,
-  add ``detect_stack_use_after_return=1`` to the environment variable
-  :envvar:`ASAN_OPTIONS`.
-
-.. option:: asan-instrumentation-with-call-threshold
-
-  If number of memory accesses in function being instrumented
-  is greater or equal to this number, use callbacks instead of inline checks.
-  E.g. to disable inline code use
-  :option:`--param asan-instrumentation-with-call-threshold=0`.
-
-.. option:: hwasan-instrument-stack
-
-  Enable hwasan instrumentation of statically sized stack-allocated variables.
-  This kind of instrumentation is enabled by default when using
-  :option:`-fsanitize=hwaddress` and disabled by default when using
-  :option:`-fsanitize=kernel-hwaddress`.
-  To disable stack instrumentation use
-  :option:`--param hwasan-instrument-stack=0` , and to enable it use
-  :option:`--param hwasan-instrument-stack=1`.
-
-.. option:: hwasan-random-frame-tag
-
-  When using stack instrumentation, decide tags for stack variables using a
-  deterministic sequence beginning at a random tag for each frame.  With this
-  parameter unset tags are chosen using the same sequence but beginning from 1.
-  This is enabled by default for :option:`-fsanitize=hwaddress` and unavailable
-  for :option:`-fsanitize=kernel-hwaddress`.
-  To disable it use :option:`--param hwasan-random-frame-tag=0`.
-
-.. option:: hwasan-instrument-allocas
-
-  Enable hwasan instrumentation of dynamically sized stack-allocated variables.
-  This kind of instrumentation is enabled by default when using
-  :option:`-fsanitize=hwaddress` and disabled by default when using
-  :option:`-fsanitize=kernel-hwaddress`.
-  To disable instrumentation of such variables use
-  :option:`--param hwasan-instrument-allocas=0` , and to enable it use
-  :option:`--param hwasan-instrument-allocas=1`.
-
-.. option:: hwasan-instrument-reads
-
-  Enable hwasan checks on memory reads.  Instrumentation of reads is enabled by
-  default for both :option:`-fsanitize=hwaddress` and
-  :option:`-fsanitize=kernel-hwaddress`.
-  To disable checking memory reads use
-  :option:`--param hwasan-instrument-reads=0`.
-
-.. option:: hwasan-instrument-writes
-
-  Enable hwasan checks on memory writes.  Instrumentation of writes is enabled by
-  default for both :option:`-fsanitize=hwaddress` and
-  :option:`-fsanitize=kernel-hwaddress`.
-  To disable checking memory writes use
-  :option:`--param hwasan-instrument-writes=0`.
-
-.. option:: hwasan-instrument-mem-intrinsics
-
-  Enable hwasan instrumentation of builtin functions.  Instrumentation of these
-  builtin functions is enabled by default for both :option:`-fsanitize=hwaddress`
-  and :option:`-fsanitize=kernel-hwaddress`.
-  To disable instrumentation of builtin functions use
-  :option:`--param hwasan-instrument-mem-intrinsics=0`.
-
-.. option:: use-after-scope-direct-emission-threshold
-
-  If the size of a local variable in bytes is smaller or equal to this
-  number, directly poison (or unpoison) shadow memory instead of using
-  run-time callbacks.
-
-.. option:: tsan-distinguish-volatile
-
-  Emit special instrumentation for accesses to volatiles.
-
-.. option:: tsan-instrument-func-entry-exit
-
-  Emit instrumentation calls to __tsan_func_entry() and __tsan_func_exit().
-
-.. option:: max-fsm-thread-path-insns
-
-  Maximum number of instructions to copy when duplicating blocks on a
-  finite state automaton jump thread path.
-
-.. option:: max-fsm-thread-length
-
-  Maximum number of basic blocks on a finite state automaton jump thread
-  path.
-
-.. option:: max-fsm-thread-paths
-
-  Maximum number of new jump thread paths to create for a finite state
-  automaton.
-
-.. option:: parloops-chunk-size
-
-  Chunk size of omp schedule for loops parallelized by parloops.
-
-.. option:: parloops-schedule
-
-  Schedule type of omp schedule for loops parallelized by parloops (static,
-  dynamic, guided, auto, runtime).
-
-.. option:: parloops-min-per-thread
-
-  The minimum number of iterations per thread of an innermost parallelized
-  loop for which the parallelized variant is preferred over the single threaded
-  one.  Note that for a parallelized loop nest the
-  minimum number of iterations of the outermost loop per thread is two.
-
-.. option:: max-ssa-name-query-depth
-
-  Maximum depth of recursion when querying properties of SSA names in things
-  like fold routines.  One level of recursion corresponds to following a
-  use-def chain.
-
-.. option:: max-speculative-devirt-maydefs
-
-  The maximum number of may-defs we analyze when looking for a must-def
-  specifying the dynamic type of an object that invokes a virtual call
-  we may be able to devirtualize speculatively.
-
-.. option:: max-vrp-switch-assertions
-
-  The maximum number of assertions to add along the default edge of a switch
-  statement during VRP.
-
-.. option:: evrp-mode
-
-  Specifies the mode Early VRP should operate in.
-
-.. option:: unroll-jam-min-percent
-
-  The minimum percentage of memory references that must be optimized
-  away for the unroll-and-jam transformation to be considered profitable.
-
-.. option:: unroll-jam-max-unroll
-
-  The maximum number of times the outer loop should be unrolled by
-  the unroll-and-jam transformation.
-
-.. option:: max-rtl-if-conversion-unpredictable-cost
-
-  Maximum permissible cost for the sequence that would be generated
-  by the RTL if-conversion pass for a branch that is considered unpredictable.
-
-.. option:: max-variable-expansions-in-unroller
-
-  If :option:`-fvariable-expansion-in-unroller` is used, the maximum number
-  of times that an individual variable will be expanded during loop unrolling.
-
-.. option:: tracer-min-branch-probability-feedback
-
-  Stop forward growth if the probability of best edge is less than
-  this threshold (in percent). Used when profile feedback is available.
-
-.. option:: partial-inlining-entry-probability
-
-  Maximum probability of the entry BB of split region
-  (in percent relative to entry BB of the function)
-  to make partial inlining happen.
-
-.. option:: max-tracked-strlens
-
-  Maximum number of strings for which strlen optimization pass will
-  track string lengths.
-
-.. option:: gcse-after-reload-partial-fraction
-
-  The threshold ratio for performing partial redundancy
-  elimination after reload.
-
-.. option:: gcse-after-reload-critical-fraction
-
-  The threshold ratio of critical edges execution count that
-  permit performing redundancy elimination after reload.
-
-.. option:: max-loop-header-insns
-
-  The maximum number of insns in loop header duplicated
-  by the copy loop headers pass.
-
-.. option:: vect-epilogues-nomask
-
-  Enable loop epilogue vectorization using smaller vector size.
-
-.. option:: vect-partial-vector-usage
-
-  Controls when the loop vectorizer considers using partial vector loads
-  and stores as an alternative to falling back to scalar code.  0 stops
-  the vectorizer from ever using partial vector loads and stores.  1 allows
-  partial vector loads and stores if vectorization removes the need for the
-  code to iterate.  2 allows partial vector loads and stores in all loops.
-  The parameter only has an effect on targets that support partial
-  vector loads and stores.
-
-.. option:: avoid-fma-max-bits
-
-  Maximum number of bits for which we avoid creating FMAs.
-
-.. option:: sms-loop-average-count-threshold
-
-  A threshold on the average loop count considered by the swing modulo scheduler.
-
-.. option:: sms-dfa-history
-
-  The number of cycles the swing modulo scheduler considers when checking
-  conflicts using DFA.
-
-.. option:: max-inline-insns-recursive-auto
-
-  The maximum number of instructions non-inline function
-  can grow to via recursive inlining.
-
-.. option:: graphite-allow-codegen-errors
-
-  Whether codegen errors should be ICEs when :option:`-fchecking`.
-
-.. option:: sms-max-ii-factor
-
-  A factor for tuning the upper bound that swing modulo scheduler
-  uses for scheduling a loop.
-
-.. option:: lra-max-considered-reload-pseudos
-
-  The max number of reload pseudos which are considered during
-  spilling a non-reload pseudo.
-
-.. option:: max-pow-sqrt-depth
-
-  Maximum depth of sqrt chains to use when synthesizing exponentiation
-  by a real constant.
-
-.. option:: max-dse-active-local-stores
-
-  Maximum number of active local stores in RTL dead store elimination.
-
-.. option:: asan-instrument-allocas
-
-  Enable asan allocas/VLAs protection.
-
-.. option:: max-iterations-computation-cost
-
-  Bound on the cost of an expression to compute the number of iterations.
-
-.. option:: max-isl-operations
-
-  Maximum number of isl operations, 0 means unlimited.
-
-.. option:: graphite-max-arrays-per-scop
-
-  Maximum number of arrays per scop.
-
-.. option:: max-vartrack-reverse-op-size
-
-  Max. size of loc list for which reverse ops should be added.
-
-.. option:: tracer-dynamic-coverage-feedback
-
-  The percentage of function, weighted by execution frequency,
-  that must be covered by trace formation.
-  Used when profile feedback is available.
-
-.. option:: max-inline-recursive-depth-auto
-
-  The maximum depth of recursive inlining for non-inline functions.
-
-.. option:: fsm-scale-path-stmts
-
-  Scale factor to apply to the number of statements in a threading path
-  when comparing to the number of (scaled) blocks.
-
-.. option:: fsm-maximum-phi-arguments
-
-  Maximum number of arguments a PHI may have before the FSM threader
-  will not try to thread through its block.
-
-.. option:: uninit-control-dep-attempts
-
-  Maximum number of nested calls to search for control dependencies
-  during uninitialized variable analysis.
-
-.. option:: sra-max-scalarization-size-Osize
-
-  Maximum size, in storage units, of an aggregate
-  which should be considered for scalarization when compiling for size.
-
-.. option:: fsm-scale-path-blocks
-
-  Scale factor to apply to the number of blocks in a threading path
-  when comparing to the number of (scaled) statements.
-
-.. option:: sched-autopref-queue-depth
-
-  Hardware autoprefetcher scheduler model control flag.
-  Number of lookahead cycles the model looks into; at '
-  ' only enable instruction sorting heuristic.
-
-.. option:: loop-versioning-max-inner-insns
-
-  The maximum number of instructions that an inner loop can have
-  before the loop versioning pass considers it too big to copy.
-
-.. option:: loop-versioning-max-outer-insns
-
-  The maximum number of instructions that an outer loop can have
-  before the loop versioning pass considers it too big to copy,
-  discounting any instructions in inner loops that directly benefit
-  from versioning.
-
-.. option:: ssa-name-def-chain-limit
-
-  The maximum number of SSA_NAME assignments to follow in determining
-  a property of a variable such as its value.  This limits the number
-  of iterations or recursive calls GCC performs when optimizing certain
-  statements or when determining their validity prior to issuing
-  diagnostics.
-
-.. option:: store-merging-max-size
-
-  Maximum size of a single store merging region in bytes.
-
-.. option:: hash-table-verification-limit
-
-  The number of elements for which hash table verification is done
-  for each searched element.
-
-.. option:: max-find-base-term-values
-
-  Maximum number of VALUEs handled during a single find_base_term call.
-
-.. option:: analyzer-max-enodes-per-program-point
-
-  The maximum number of exploded nodes per program point within
-  the analyzer, before terminating analysis of that point.
-
-.. option:: analyzer-max-constraints
-
-  The maximum number of constraints per state.
-
-.. option:: analyzer-min-snodes-for-call-summary
-
-  The minimum number of supernodes within a function for the
-  analyzer to consider summarizing its effects at call sites.
-
-.. option:: analyzer-max-enodes-for-full-dump
-
-  The maximum depth of exploded nodes that should appear in a dot dump
-  before switching to a less verbose format.
-
-.. option:: analyzer-max-recursion-depth
-
-  The maximum number of times a callsite can appear in a call stack
-  within the analyzer, before terminating analysis of a call that would
-  recurse deeper.
-
-.. option:: analyzer-max-svalue-depth
-
-  The maximum depth of a symbolic value, before approximating
-  the value as unknown.
-
-.. option:: analyzer-max-infeasible-edges
-
-  The maximum number of infeasible edges to reject before declaring
-  a diagnostic as infeasible.
-
-.. option:: gimple-fe-computed-hot-bb-threshold
-
-  The number of executions of a basic block which is considered hot.
-  The parameter is used only in GIMPLE FE.
-
-.. option:: analyzer-bb-explosion-factor
-
-  The maximum number of 'after supernode' exploded nodes within the analyzer
-  per supernode, before terminating analysis.
-
-  The following choices of :samp:`{name}` are available on AArch64 targets:
-
-.. option:: aarch64-sve-compare-costs
-
-  When vectorizing for SVE, consider using 'unpacked' vectors for
-  smaller elements and use the cost model to pick the cheapest approach.
-  Also use the cost model to choose between SVE and Advanced SIMD vectorization.
-
-  Using unpacked vectors includes storing smaller elements in larger
-  containers and accessing elements with extending loads and truncating
-  stores.
-
-.. option:: aarch64-float-recp-precision
-
-  The number of Newton iterations for calculating the reciprocal for float type.
-  The precision of division is proportional to this param when division
-  approximation is enabled.  The default value is 1.
-
-.. option:: aarch64-double-recp-precision
-
-  The number of Newton iterations for calculating the reciprocal for double type.
-  The precision of division is propotional to this param when division
-  approximation is enabled.  The default value is 2.
-
-.. option:: aarch64-autovec-preference
-
-  Force an ISA selection strategy for auto-vectorization.  Accepts values from
-  0 to 4, inclusive.
-
-  :samp:`0`
-    Use the default heuristics.
-
-  :samp:`1`
-    Use only Advanced SIMD for auto-vectorization.
-
-  :samp:`2`
-    Use only SVE for auto-vectorization.
-
-  :samp:`3`
-    Use both Advanced SIMD and SVE.  Prefer Advanced SIMD when the costs are
-    deemed equal.
-
-  :samp:`4`
-    Use both Advanced SIMD and SVE.  Prefer SVE when the costs are deemed equal.
-
-    The default value is 0.
-
-.. option:: aarch64-loop-vect-issue-rate-niters
-
-  The tuning for some AArch64 CPUs tries to take both latencies and issue
-  rates into account when deciding whether a loop should be vectorized
-  using SVE, vectorized using Advanced SIMD, or not vectorized at all.
-  If this parameter is set to :samp:`{n}` , GCC will not use this heuristic
-  for loops that are known to execute in fewer than :samp:`{n}` Advanced
-  SIMD iterations.
+  The names of specific parameters, and the meaning of the values, are
+  tied to the internals of the compiler, and are subject to change
+  without notice in future releases.
+
+  In order to get minimal, maximal and default value of a parameter,
+  one can use :option:`--help=param -Q` options.
+
+  In each case, the :samp:`{value}` is an integer.  The following choices
+  of :samp:`{name}` are recognized for all targets:
+
+  ``predictable-branch-outcome``
+    When branch is predicted to be taken with probability lower than this threshold
+    (in percent), then it is considered well predictable.
+
+  ``max-rtl-if-conversion-insns``
+    RTL if-conversion tries to remove conditional branches around a block and
+    replace them with conditionally executed instructions.  This parameter
+    gives the maximum number of instructions in a block which should be
+    considered for if-conversion.  The compiler will
+    also use other heuristics to decide whether if-conversion is likely to be
+    profitable.
+
+  ``max-rtl-if-conversion-predictable-cost``
+    RTL if-conversion will try to remove conditional branches around a block
+    and replace them with conditionally executed instructions.  These parameters
+    give the maximum permissible cost for the sequence that would be generated
+    by if-conversion depending on whether the branch is statically determined
+    to be predictable or not.  The units for this parameter are the same as
+    those for the GCC internal seq_cost metric.  The compiler will try to
+    provide a reasonable default for this parameter using the BRANCH_COST
+    target macro.
+
+  ``max-crossjump-edges``
+    The maximum number of incoming edges to consider for cross-jumping.
+    The algorithm used by :option:`-fcrossjumping` is O(N^2) in
+    the number of edges incoming to each block.  Increasing values mean
+    more aggressive optimization, making the compilation time increase with
+    probably small improvement in executable size.
+
+  ``min-crossjump-insns``
+    The minimum number of instructions that must be matched at the end
+    of two blocks before cross-jumping is performed on them.  This
+    value is ignored in the case where all instructions in the block being
+    cross-jumped from are matched.
+
+  ``max-grow-copy-bb-insns``
+    The maximum code size expansion factor when copying basic blocks
+    instead of jumping.  The expansion is relative to a jump instruction.
+
+  ``max-goto-duplication-insns``
+    The maximum number of instructions to duplicate to a block that jumps
+    to a computed goto.  To avoid O(N^2) behavior in a number of
+    passes, GCC factors computed gotos early in the compilation process,
+    and unfactors them as late as possible.  Only computed jumps at the
+    end of a basic blocks with no more than max-goto-duplication-insns are
+    unfactored.
+
+  ``max-delay-slot-insn-search``
+    The maximum number of instructions to consider when looking for an
+    instruction to fill a delay slot.  If more than this arbitrary number of
+    instructions are searched, the time savings from filling the delay slot
+    are minimal, so stop searching.  Increasing values mean more
+    aggressive optimization, making the compilation time increase with probably
+    small improvement in execution time.
+
+  ``max-delay-slot-live-search``
+    When trying to fill delay slots, the maximum number of instructions to
+    consider when searching for a block with valid live register
+    information.  Increasing this arbitrarily chosen value means more
+    aggressive optimization, increasing the compilation time.  This parameter
+    should be removed when the delay slot code is rewritten to maintain the
+    control-flow graph.
+
+  ``max-gcse-memory``
+    The approximate maximum amount of memory in ``kB`` that can be allocated in
+    order to perform the global common subexpression elimination
+    optimization.  If more memory than specified is required, the
+    optimization is not done.
+
+  ``max-gcse-insertion-ratio``
+    If the ratio of expression insertions to deletions is larger than this value
+    for any expression, then RTL PRE inserts or removes the expression and thus
+    leaves partially redundant computations in the instruction stream.
+
+  ``max-pending-list-length``
+    The maximum number of pending dependencies scheduling allows
+    before flushing the current state and starting over.  Large functions
+    with few branches or calls can create excessively large lists which
+    needlessly consume memory and resources.
+
+  ``max-modulo-backtrack-attempts``
+    The maximum number of backtrack attempts the scheduler should make
+    when modulo scheduling a loop.  Larger values can exponentially increase
+    compilation time.
+
+  ``max-inline-insns-single``
+    Several parameters control the tree inliner used in GCC.  This number sets the
+    maximum number of instructions (counted in GCC's internal representation) in a
+    single function that the tree inliner considers for inlining.  This only
+    affects functions declared inline and methods implemented in a class
+    declaration (C++).
+
+  ``max-inline-insns-auto``
+    When you use :option:`-finline-functions` (included in :option:`-O3` ),
+    a lot of functions that would otherwise not be considered for inlining
+    by the compiler are investigated.  To those functions, a different
+    (more restrictive) limit compared to functions declared inline can
+    be applied ( :option:`--param max-inline-insns-auto` ).
+
+  ``max-inline-insns-small``
+    This is bound applied to calls which are considered relevant with
+    :option:`-finline-small-functions`.
+
+  ``max-inline-insns-size``
+    This is bound applied to calls which are optimized for size. Small growth
+    may be desirable to anticipate optimization oppurtunities exposed by inlining.
+
+  ``uninlined-function-insns``
+    Number of instructions accounted by inliner for function overhead such as
+    function prologue and epilogue.
+
+  ``uninlined-function-time``
+    Extra time accounted by inliner for function overhead such as time needed to
+    execute function prologue and epilogue
+
+  ``inline-heuristics-hint-percent``
+    The scale (in percents) applied to inline-insns-single ,
+    inline-insns-single-O2 , inline-insns-auto
+    when inline heuristics hints that inlining is
+    very profitable (will enable later optimizations).
+
+    ``uninlined-thunk-insns``
+  ``uninlined-thunk-time``
+    Same as :option:`--param uninlined-function-insns` and
+    :option:`--param uninlined-function-time` but applied to function thunks
+
+  ``inline-min-speedup``
+    When estimated performance improvement of caller + callee runtime exceeds this
+    threshold (in percent), the function can be inlined regardless of the limit on
+    :option:`--param max-inline-insns-single` and :option:`--param
+    max-inline-insns-auto`.
+
+  ``large-function-insns``
+    The limit specifying really large functions.  For functions larger than this
+    limit after inlining, inlining is constrained by
+    :option:`--param large-function-growth`.  This parameter is useful primarily
+    to avoid extreme compilation time caused by non-linear algorithms used by the
+    back end.
+
+  ``large-function-growth``
+    Specifies maximal growth of large function caused by inlining in percents.
+    For example, parameter value 100 limits large function growth to 2.0 times
+    the original size.
+
+  ``large-unit-insns``
+    The limit specifying large translation unit.  Growth caused by inlining of
+    units larger than this limit is limited by :option:`--param inline-unit-growth`.
+    For small units this might be too tight.
+    For example, consider a unit consisting of function A
+    that is inline and B that just calls A three times.  If B is small relative to
+    A, the growth of unit is 300\% and yet such inlining is very sane.  For very
+    large units consisting of small inlineable functions, however, the overall unit
+    growth limit is needed to avoid exponential explosion of code size.  Thus for
+    smaller units, the size is increased to :option:`--param large-unit-insns`
+    before applying :option:`--param inline-unit-growth`.
+
+  ``lazy-modules``
+    Maximum number of concurrently open C++ module files when lazy loading.
+
+  ``inline-unit-growth``
+    Specifies maximal overall growth of the compilation unit caused by inlining.
+    For example, parameter value 20 limits unit growth to 1.2 times the original
+    size. Cold functions (either marked cold via an attribute or by profile
+    feedback) are not accounted into the unit size.
+
+  ``ipa-cp-unit-growth``
+    Specifies maximal overall growth of the compilation unit caused by
+    interprocedural constant propagation.  For example, parameter value 10 limits
+    unit growth to 1.1 times the original size.
+
+  ``ipa-cp-large-unit-insns``
+    The size of translation unit that IPA-CP pass considers large.
+
+  ``large-stack-frame``
+    The limit specifying large stack frames.  While inlining the algorithm is trying
+    to not grow past this limit too much.
+
+  ``large-stack-frame-growth``
+    Specifies maximal growth of large stack frames caused by inlining in percents.
+    For example, parameter value 1000 limits large stack frame growth to 11 times
+    the original size.
+
+  ``max-inline-insns-recursive`` ``max-inline-insns-recursive-auto``
+    Specifies the maximum number of instructions an out-of-line copy of a
+    self-recursive inline
+    function can grow into by performing recursive inlining.
+
+    :option:`--param max-inline-insns-recursive` applies to functions
+    declared inline.
+    For functions not declared inline, recursive inlining
+    happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
+    enabled; :option:`--param max-inline-insns-recursive-auto` applies instead.
+
+  ``max-inline-recursive-depth`` ``max-inline-recursive-depth-auto``
+    Specifies the maximum recursion depth used for recursive inlining.
+
+    :option:`--param max-inline-recursive-depth` applies to functions
+    declared inline.  For functions not declared inline, recursive inlining
+    happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
+    enabled; :option:`--param max-inline-recursive-depth-auto` applies instead.
+
+  ``min-inline-recursive-probability``
+    Recursive inlining is profitable only for function having deep recursion
+    in average and can hurt for function having little recursion depth by
+    increasing the prologue size or complexity of function body to other
+    optimizers.
+
+    When profile feedback is available (see :option:`-fprofile-generate` ) the actual
+    recursion depth can be guessed from the probability that function recurses
+    via a given call expression.  This parameter limits inlining only to call
+    expressions whose probability exceeds the given threshold (in percents).
+
+  ``early-inlining-insns``
+    Specify growth that the early inliner can make.  In effect it increases
+    the amount of inlining for code having a large abstraction penalty.
+
+  ``max-early-inliner-iterations``
+    Limit of iterations of the early inliner.  This basically bounds
+    the number of nested indirect calls the early inliner can resolve.
+    Deeper chains are still handled by late inlining.
+
+  ``comdat-sharing-probability``
+    Probability (in percent) that C++ inline function with comdat visibility
+    are shared across multiple compilation units.
+
+    ``modref-max-bases````modref-max-refs``
+  ``modref-max-accesses``
+    Specifies the maximal number of base pointers, references and accesses stored
+    for a single function by mod/ref analysis.
+
+  ``modref-max-tests``
+    Specifies the maxmal number of tests alias oracle can perform to disambiguate
+    memory locations using the mod/ref information.  This parameter ought to be
+    bigger than :option:`--param modref-max-bases` and :option:`--param
+    modref-max-refs`.
+
+  ``modref-max-depth``
+    Specifies the maximum depth of DFS walk used by modref escape analysis.
+    Setting to 0 disables the analysis completely.
+
+  ``modref-max-escape-points``
+    Specifies the maximum number of escape points tracked by modref per SSA-name.
+
+  ``profile-func-internal-id``
+    A parameter to control whether to use function internal id in profile
+    database lookup. If the value is 0, the compiler uses an id that
+    is based on function assembler name and filename, which makes old profile
+    data more tolerant to source changes such as function reordering etc.
+
+  ``min-vect-loop-bound``
+    The minimum number of iterations under which loops are not vectorized
+    when :option:`-ftree-vectorize` is used.  The number of iterations after
+    vectorization needs to be greater than the value specified by this option
+    to allow vectorization.
+
+  ``gcse-cost-distance-ratio``
+    Scaling factor in calculation of maximum distance an expression
+    can be moved by GCSE optimizations.  This is currently supported only in the
+    code hoisting pass.  The bigger the ratio, the more aggressive code hoisting
+    is with simple expressions, i.e., the expressions that have cost
+    less than gcse-unrestricted-cost.  Specifying 0 disables
+    hoisting of simple expressions.
+
+  ``gcse-unrestricted-cost``
+    Cost, roughly measured as the cost of a single typical machine
+    instruction, at which GCSE optimizations do not constrain
+    the distance an expression can travel.  This is currently
+    supported only in the code hoisting pass.  The lesser the cost,
+    the more aggressive code hoisting is.  Specifying 0 
+    allows all expressions to travel unrestricted distances.
+
+  ``max-hoist-depth``
+    The depth of search in the dominator tree for expressions to hoist.
+    This is used to avoid quadratic behavior in hoisting algorithm.
+    The value of 0 does not limit on the search, but may slow down compilation
+    of huge functions.
+
+  ``max-tail-merge-comparisons``
+    The maximum amount of similar bbs to compare a bb with.  This is used to
+    avoid quadratic behavior in tree tail merging.
+
+  ``max-tail-merge-iterations``
+    The maximum amount of iterations of the pass over the function.  This is used to
+    limit compilation time in tree tail merging.
+
+  ``store-merging-allow-unaligned``
+    Allow the store merging pass to introduce unaligned stores if it is legal to
+    do so.
+
+  ``max-stores-to-merge``
+    The maximum number of stores to attempt to merge into wider stores in the store
+    merging pass.
+
+  ``max-store-chains-to-track``
+    The maximum number of store chains to track at the same time in the attempt
+    to merge them into wider stores in the store merging pass.
+
+  ``max-stores-to-track``
+    The maximum number of stores to track at the same time in the attemt to
+    to merge them into wider stores in the store merging pass.
+
+  ``max-unrolled-insns``
+    The maximum number of instructions that a loop may have to be unrolled.
+    If a loop is unrolled, this parameter also determines how many times
+    the loop code is unrolled.
+
+  ``max-average-unrolled-insns``
+    The maximum number of instructions biased by probabilities of their execution
+    that a loop may have to be unrolled.  If a loop is unrolled,
+    this parameter also determines how many times the loop code is unrolled.
+
+  ``max-unroll-times``
+    The maximum number of unrollings of a single loop.
+
+  ``max-peeled-insns``
+    The maximum number of instructions that a loop may have to be peeled.
+    If a loop is peeled, this parameter also determines how many times
+    the loop code is peeled.
+
+  ``max-peel-times``
+    The maximum number of peelings of a single loop.
+
+  ``max-peel-branches``
+    The maximum number of branches on the hot path through the peeled sequence.
+
+  ``max-completely-peeled-insns``
+    The maximum number of insns of a completely peeled loop.
+
+  ``max-completely-peel-times``
+    The maximum number of iterations of a loop to be suitable for complete peeling.
+
+  ``max-completely-peel-loop-nest-depth``
+    The maximum depth of a loop nest suitable for complete peeling.
+
+  ``max-unswitch-insns``
+    The maximum number of insns of an unswitched loop.
+
+  ``max-unswitch-level``
+    The maximum number of branches unswitched in a single loop.
+
+  ``lim-expensive``
+    The minimum cost of an expensive expression in the loop invariant motion.
+
+  ``min-loop-cond-split-prob``
+    When FDO profile information is available, min-loop-cond-split-prob
+    specifies minimum threshold for probability of semi-invariant condition
+    statement to trigger loop split.
+
+  ``iv-consider-all-candidates-bound``
+    Bound on number of candidates for induction variables, below which
+    all candidates are considered for each use in induction variable
+    optimizations.  If there are more candidates than this,
+    only the most relevant ones are considered to avoid quadratic time complexity.
+
+  ``iv-max-considered-uses``
+    The induction variable optimizations give up on loops that contain more
+    induction variable uses.
+
+  ``iv-always-prune-cand-set-bound``
+    If the number of candidates in the set is smaller than this value,
+    always try to remove unnecessary ivs from the set
+    when adding a new one.
+
+  ``avg-loop-niter``
+    Average number of iterations of a loop.
+
+  ``dse-max-object-size``
+    Maximum size (in bytes) of objects tracked bytewise by dead store elimination.
+    Larger values may result in larger compilation times.
+
+  ``dse-max-alias-queries-per-store``
+    Maximum number of queries into the alias oracle per store.
+    Larger values result in larger compilation times and may result in more
+    removed dead stores.
+
+  ``scev-max-expr-size``
+    Bound on size of expressions used in the scalar evolutions analyzer.
+    Large expressions slow the analyzer.
+
+  ``scev-max-expr-complexity``
+    Bound on the complexity of the expressions in the scalar evolutions analyzer.
+    Complex expressions slow the analyzer.
+
+  ``max-tree-if-conversion-phi-args``
+    Maximum number of arguments in a PHI supported by TREE if conversion
+    unless the loop is marked with simd pragma.
+
+  ``vect-max-version-for-alignment-checks``
+    The maximum number of run-time checks that can be performed when
+    doing loop versioning for alignment in the vectorizer.
+
+  ``vect-max-version-for-alias-checks``
+    The maximum number of run-time checks that can be performed when
+    doing loop versioning for alias in the vectorizer.
+
+  ``vect-max-peeling-for-alignment``
+    The maximum number of loop peels to enhance access alignment
+    for vectorizer. Value -1 means no limit.
+
+  ``max-iterations-to-track``
+    The maximum number of iterations of a loop the brute-force algorithm
+    for analysis of the number of iterations of the loop tries to evaluate.
+
+  ``hot-bb-count-fraction``
+    The denominator n of fraction 1/n of the maximal execution count of a
+    basic block in the entire program that a basic block needs to at least
+    have in order to be considered hot.  The default is 10000, which means
+    that a basic block is considered hot if its execution count is greater
+    than 1/10000 of the maximal execution count.  0 means that it is never
+    considered hot.  Used in non-LTO mode.
+
+  ``hot-bb-count-ws-permille``
+    The number of most executed permilles, ranging from 0 to 1000, of the
+    profiled execution of the entire program to which the execution count
+    of a basic block must be part of in order to be considered hot.  The
+    default is 990, which means that a basic block is considered hot if
+    its execution count contributes to the upper 990 permilles, or 99.0%,
+    of the profiled execution of the entire program.  0 means that it is
+    never considered hot.  Used in LTO mode.
+
+  ``hot-bb-frequency-fraction``
+    The denominator n of fraction 1/n of the execution frequency of the
+    entry block of a function that a basic block of this function needs
+    to at least have in order to be considered hot.  The default is 1000,
+    which means that a basic block is considered hot in a function if it
+    is executed more frequently than 1/1000 of the frequency of the entry
+    block of the function.  0 means that it is never considered hot.
+
+  ``unlikely-bb-count-fraction``
+    The denominator n of fraction 1/n of the number of profiled runs of
+    the entire program below which the execution count of a basic block
+    must be in order for the basic block to be considered unlikely executed.
+    The default is 20, which means that a basic block is considered unlikely
+    executed if it is executed in fewer than 1/20, or 5%, of the runs of
+    the program.  0 means that it is always considered unlikely executed.
+
+  ``max-predicted-iterations``
+    The maximum number of loop iterations we predict statically.  This is useful
+    in cases where a function contains a single loop with known bound and
+    another loop with unknown bound.
+    The known number of iterations is predicted correctly, while
+    the unknown number of iterations average to roughly 10.  This means that the
+    loop without bounds appears artificially cold relative to the other one.
+
+  ``builtin-expect-probability``
+    Control the probability of the expression having the specified value. This
+    parameter takes a percentage (i.e. 0 ... 100) as input.
+
+  ``builtin-string-cmp-inline-length``
+    The maximum length of a constant string for a builtin string cmp call 
+    eligible for inlining.
+
+  ``align-threshold``
+    Select fraction of the maximal frequency of executions of a basic block in
+    a function to align the basic block.
+
+  ``align-loop-iterations``
+    A loop expected to iterate at least the selected number of iterations is
+    aligned.
+
+  ``tracer-dynamic-coverage`` ``tracer-dynamic-coverage-feedback``
+    This value is used to limit superblock formation once the given percentage of
+    executed instructions is covered.  This limits unnecessary code size
+    expansion.
+
+    The tracer-dynamic-coverage-feedback parameter
+    is used only when profile
+    feedback is available.  The real profiles (as opposed to statically estimated
+    ones) are much less balanced allowing the threshold to be larger value.
+
+  ``tracer-max-code-growth``
+    Stop tail duplication once code growth has reached given percentage.  This is
+    a rather artificial limit, as most of the duplicates are eliminated later in
+    cross jumping, so it may be set to much higher values than is the desired code
+    growth.
+
+  ``tracer-min-branch-ratio``
+    Stop reverse growth when the reverse probability of best edge is less than this
+    threshold (in percent).
+
+  ``tracer-min-branch-probability`` ``tracer-min-branch-probability-feedback``
+    Stop forward growth if the best edge has probability lower than this
+    threshold.
+
+    Similarly to tracer-dynamic-coverage two parameters are
+    provided.  tracer-min-branch-probability-feedback is used for
+    compilation with profile feedback and tracer-min-branch-probability
+    compilation without.  The value for compilation with profile feedback
+    needs to be more conservative (higher) in order to make tracer
+    effective.
+
+  ``stack-clash-protection-guard-size``
+    Specify the size of the operating system provided stack guard as
+    2 raised to :samp:`{num}` bytes.  Higher values may reduce the
+    number of explicit probes, but a value larger than the operating system
+    provided guard will leave code vulnerable to stack clash style attacks.
+
+  ``stack-clash-protection-probe-interval``
+    Stack clash protection involves probing stack space as it is allocated.  This
+    param controls the maximum distance between probes into the stack as 2 raised
+    to :samp:`{num}` bytes.  Higher values may reduce the number of explicit probes, but a value
+    larger than the operating system provided guard will leave code vulnerable to
+    stack clash style attacks.
+
+  ``max-cse-path-length``
+    The maximum number of basic blocks on path that CSE considers.
+
+  ``max-cse-insns``
+    The maximum number of instructions CSE processes before flushing.
+
+  ``ggc-min-expand``
+    GCC uses a garbage collector to manage its own memory allocation.  This
+    parameter specifies the minimum percentage by which the garbage
+    collector's heap should be allowed to expand between collections.
+    Tuning this may improve compilation speed; it has no effect on code
+    generation.
+
+    The default is 30% + 70% * (RAM/1GB) with an upper bound of 100% when
+    RAM >= 1GB.  If ``getrlimit`` is available, the notion of 'RAM' is
+    the smallest of actual RAM and ``RLIMIT_DATA`` or ``RLIMIT_AS``.  If
+    GCC is not able to calculate RAM on a particular platform, the lower
+    bound of 30% is used.  Setting this parameter and
+    ggc-min-heapsize to zero causes a full collection to occur at
+    every opportunity.  This is extremely slow, but can be useful for
+    debugging.
+
+  ``ggc-min-heapsize``
+    Minimum size of the garbage collector's heap before it begins bothering
+    to collect garbage.  The first collection occurs after the heap expands
+    by ggc-min-expand % beyond ggc-min-heapsize.  Again,
+    tuning this may improve compilation speed, and has no effect on code
+    generation.
+
+    The default is the smaller of RAM/8, RLIMIT_RSS, or a limit that
+    tries to ensure that RLIMIT_DATA or RLIMIT_AS are not exceeded, but
+    with a lower bound of 4096 (four megabytes) and an upper bound of
+    131072 (128 megabytes).  If GCC is not able to calculate RAM on a
+    particular platform, the lower bound is used.  Setting this parameter
+    very large effectively disables garbage collection.  Setting this
+    parameter and ggc-min-expand to zero causes a full collection
+    to occur at every opportunity.
+
+  ``max-reload-search-insns``
+    The maximum number of instruction reload should look backward for equivalent
+    register.  Increasing values mean more aggressive optimization, making the
+    compilation time increase with probably slightly better performance.
+
+  ``max-cselib-memory-locations``
+    The maximum number of memory locations cselib should take into account.
+    Increasing values mean more aggressive optimization, making the compilation time
+    increase with probably slightly better performance.
+
+  ``max-sched-ready-insns``
+    The maximum number of instructions ready to be issued the scheduler should
+    consider at any given time during the first scheduling pass.  Increasing
+    values mean more thorough searches, making the compilation time increase
+    with probably little benefit.
+
+  ``max-sched-region-blocks``
+    The maximum number of blocks in a region to be considered for
+    interblock scheduling.
+
+  ``max-pipeline-region-blocks``
+    The maximum number of blocks in a region to be considered for
+    pipelining in the selective scheduler.
+
+  ``max-sched-region-insns``
+    The maximum number of insns in a region to be considered for
+    interblock scheduling.
+
+  ``max-pipeline-region-insns``
+    The maximum number of insns in a region to be considered for
+    pipelining in the selective scheduler.
+
+  ``min-spec-prob``
+    The minimum probability (in percents) of reaching a source block
+    for interblock speculative scheduling.
+
+  ``max-sched-extend-regions-iters``
+    The maximum number of iterations through CFG to extend regions.
+    A value of 0 disables region extensions.
+
+  ``max-sched-insn-conflict-delay``
+    The maximum conflict delay for an insn to be considered for speculative motion.
+
+  ``sched-spec-prob-cutoff``
+    The minimal probability of speculation success (in percents), so that
+    speculative insns are scheduled.
+
+  ``sched-state-edge-prob-cutoff``
+    The minimum probability an edge must have for the scheduler to save its
+    state across it.
+
+  ``sched-mem-true-dep-cost``
+    Minimal distance (in CPU cycles) between store and load targeting same
+    memory locations.
+
+  ``selsched-max-lookahead``
+    The maximum size of the lookahead window of selective scheduling.  It is a
+    depth of search for available instructions.
+
+  ``selsched-max-sched-times``
+    The maximum number of times that an instruction is scheduled during
+    selective scheduling.  This is the limit on the number of iterations
+    through which the instruction may be pipelined.
+
+  ``selsched-insns-to-rename``
+    The maximum number of best instructions in the ready list that are considered
+    for renaming in the selective scheduler.
+
+  ``sms-min-sc``
+    The minimum value of stage count that swing modulo scheduler
+    generates.
+
+  ``max-last-value-rtl``
+    The maximum size measured as number of RTLs that can be recorded in an expression
+    in combiner for a pseudo register as last known value of that register.
+
+  ``max-combine-insns``
+    The maximum number of instructions the RTL combiner tries to combine.
+
+  ``integer-share-limit``
+    Small integer constants can use a shared data structure, reducing the
+    compiler's memory usage and increasing its speed.  This sets the maximum
+    value of a shared integer constant.
+
+  ``ssp-buffer-size``
+    The minimum size of buffers (i.e. arrays) that receive stack smashing
+    protection when :option:`-fstack-protection` is used.
+
+  ``min-size-for-stack-sharing``
+    The minimum size of variables taking part in stack slot sharing when not
+    optimizing.
+
+  ``max-jump-thread-duplication-stmts``
+    Maximum number of statements allowed in a block that needs to be
+    duplicated when threading jumps.
+
+  ``max-fields-for-field-sensitive``
+    Maximum number of fields in a structure treated in
+    a field sensitive manner during pointer analysis.
+
+  ``prefetch-latency``
+    Estimate on average number of instructions that are executed before
+    prefetch finishes.  The distance prefetched ahead is proportional
+    to this constant.  Increasing this number may also lead to less
+    streams being prefetched (see simultaneous-prefetches ).
+
+  ``simultaneous-prefetches``
+    Maximum number of prefetches that can run at the same time.
+
+  ``l1-cache-line-size``
+    The size of cache line in L1 data cache, in bytes.
+
+  ``l1-cache-size``
+    The size of L1 data cache, in kilobytes.
+
+  ``l2-cache-size``
+    The size of L2 data cache, in kilobytes.
+
+  ``prefetch-dynamic-strides``
+    Whether the loop array prefetch pass should issue software prefetch hints
+    for strides that are non-constant.  In some cases this may be
+    beneficial, though the fact the stride is non-constant may make it
+    hard to predict when there is clear benefit to issuing these hints.
+
+    Set to 1 if the prefetch hints should be issued for non-constant
+    strides.  Set to 0 if prefetch hints should be issued only for strides that
+    are known to be constant and below prefetch-minimum-stride.
+
+  ``prefetch-minimum-stride``
+    Minimum constant stride, in bytes, to start using prefetch hints for.  If
+    the stride is less than this threshold, prefetch hints will not be issued.
+
+    This setting is useful for processors that have hardware prefetchers, in
+    which case there may be conflicts between the hardware prefetchers and
+    the software prefetchers.  If the hardware prefetchers have a maximum
+    stride they can handle, it should be used here to improve the use of
+    software prefetchers.
+
+    A value of -1 means we don't have a threshold and therefore
+    prefetch hints can be issued for any constant stride.
+
+    This setting is only useful for strides that are known and constant.
+
+  ``loop-interchange-max-num-stmts``
+    The maximum number of stmts in a loop to be interchanged.
+
+  ``loop-interchange-stride-ratio``
+    The minimum ratio between stride of two loops for interchange to be profitable.
+
+  ``min-insn-to-prefetch-ratio``
+    The minimum ratio between the number of instructions and the
+    number of prefetches to enable prefetching in a loop.
+
+  ``prefetch-min-insn-to-mem-ratio``
+    The minimum ratio between the number of instructions and the
+    number of memory references to enable prefetching in a loop.
+
+  ``use-canonical-types``
+    Whether the compiler should use the 'canonical' type system.
+    Should always be 1, which uses a more efficient internal
+    mechanism for comparing types in C++ and Objective-C++.  However, if
+    bugs in the canonical type system are causing compilation failures,
+    set this value to 0 to disable canonical types.
+
+  ``switch-conversion-max-branch-ratio``
+    Switch initialization conversion refuses to create arrays that are
+    bigger than switch-conversion-max-branch-ratio times the number of
+    branches in the switch.
+
+  ``max-partial-antic-length``
+    Maximum length of the partial antic set computed during the tree
+    partial redundancy elimination optimization ( :option:`-ftree-pre` ) when
+    optimizing at :option:`-O3` and above.  For some sorts of source code
+    the enhanced partial redundancy elimination optimization can run away,
+    consuming all of the memory available on the host machine.  This
+    parameter sets a limit on the length of the sets that are computed,
+    which prevents the runaway behavior.  Setting a value of 0 for
+    this parameter allows an unlimited set length.
+
+  ``rpo-vn-max-loop-depth``
+    Maximum loop depth that is value-numbered optimistically.
+    When the limit hits the innermost
+    :samp:`{rpo-vn-max-loop-depth}` loops and the outermost loop in the
+    loop nest are value-numbered optimistically and the remaining ones not.
+
+  ``sccvn-max-alias-queries-per-access``
+    Maximum number of alias-oracle queries we perform when looking for
+    redundancies for loads and stores.  If this limit is hit the search
+    is aborted and the load or store is not considered redundant.  The
+    number of queries is algorithmically limited to the number of
+    stores on all paths from the load to the function entry.
+
+  ``ira-max-loops-num``
+    IRA uses regional register allocation by default.  If a function
+    contains more loops than the number given by this parameter, only at most
+    the given number of the most frequently-executed loops form regions
+    for regional register allocation.
+
+  ``ira-max-conflict-table-size``
+    Although IRA uses a sophisticated algorithm to compress the conflict
+    table, the table can still require excessive amounts of memory for
+    huge functions.  If the conflict table for a function could be more
+    than the size in MB given by this parameter, the register allocator
+    instead uses a faster, simpler, and lower-quality
+    algorithm that does not require building a pseudo-register conflict table.
+
+  ``ira-loop-reserved-regs``
+    IRA can be used to evaluate more accurate register pressure in loops
+    for decisions to move loop invariants (see :option:`-O3` ).  The number
+    of available registers reserved for some other purposes is given
+    by this parameter.  Default of the parameter
+    is the best found from numerous experiments.
+
+  ``lra-inheritance-ebb-probability-cutoff``
+    LRA tries to reuse values reloaded in registers in subsequent insns.
+    This optimization is called inheritance.  EBB is used as a region to
+    do this optimization.  The parameter defines a minimal fall-through
+    edge probability in percentage used to add BB to inheritance EBB in
+    LRA.  The default value was chosen
+    from numerous runs of SPEC2000 on x86-64.
+
+  ``loop-invariant-max-bbs-in-loop``
+    Loop invariant motion can be very expensive, both in compilation time and
+    in amount of needed compile-time memory, with very large loops.  Loops
+    with more basic blocks than this parameter won't have loop invariant
+    motion optimization performed on them.
+
+  ``loop-max-datarefs-for-datadeps``
+    Building data dependencies is expensive for very large loops.  This
+    parameter limits the number of data references in loops that are
+    considered for data dependence analysis.  These large loops are no
+    handled by the optimizations using loop data dependencies.
+
+  ``max-vartrack-size``
+    Sets a maximum number of hash table slots to use during variable
+    tracking dataflow analysis of any function.  If this limit is exceeded
+    with variable tracking at assignments enabled, analysis for that
+    function is retried without it, after removing all debug insns from
+    the function.  If the limit is exceeded even without debug insns, var
+    tracking analysis is completely disabled for the function.  Setting
+    the parameter to zero makes it unlimited.
+
+  ``max-vartrack-expr-depth``
+    Sets a maximum number of recursion levels when attempting to map
+    variable names or debug temporaries to value expressions.  This trades
+    compilation time for more complete debug information.  If this is set too
+    low, value expressions that are available and could be represented in
+    debug information may end up not being used; setting this higher may
+    enable the compiler to find more complex debug expressions, but compile
+    time and memory use may grow.
+
+  ``max-debug-marker-count``
+    Sets a threshold on the number of debug markers (e.g. begin stmt
+    markers) to avoid complexity explosion at inlining or expanding to RTL.
+    If a function has more such gimple stmts than the set limit, such stmts
+    will be dropped from the inlined copy of a function, and from its RTL
+    expansion.
+
+  ``min-nondebug-insn-uid``
+    Use uids starting at this parameter for nondebug insns.  The range below
+    the parameter is reserved exclusively for debug insns created by
+    :option:`-fvar-tracking-assignments` , but debug insns may get
+    (non-overlapping) uids above it if the reserved range is exhausted.
+
+  ``ipa-sra-ptr-growth-factor``
+    IPA-SRA replaces a pointer to an aggregate with one or more new
+    parameters only when their cumulative size is less or equal to
+    ipa-sra-ptr-growth-factor times the size of the original
+    pointer parameter.
+
+  ``ipa-sra-max-replacements``
+    Maximum pieces of an aggregate that IPA-SRA tracks.  As a
+    consequence, it is also the maximum number of replacements of a formal
+    parameter.
+
+  ``sra-max-scalarization-size-Ospeed`` ``sra-max-scalarization-size-Osize``
+    The two Scalar Reduction of Aggregates passes (SRA and IPA-SRA) aim to
+    replace scalar parts of aggregates with uses of independent scalar
+    variables.  These parameters control the maximum size, in storage units,
+    of aggregate which is considered for replacement when compiling for
+    speed
+    ( sra-max-scalarization-size-Ospeed ) or size
+    ( sra-max-scalarization-size-Osize ) respectively.
+
+  ``sra-max-propagations``
+    The maximum number of artificial accesses that Scalar Replacement of
+    Aggregates (SRA) will track, per one local variable, in order to
+    facilitate copy propagation.
+
+  ``tm-max-aggregate-size``
+    When making copies of thread-local variables in a transaction, this
+    parameter specifies the size in bytes after which variables are
+    saved with the logging functions as opposed to save/restore code
+    sequence pairs.  This option only applies when using
+    :option:`-fgnu-tm`.
+
+  ``graphite-max-nb-scop-params``
+    To avoid exponential effects in the Graphite loop transforms, the
+    number of parameters in a Static Control Part (SCoP) is bounded.
+    A value of zero can be used to lift
+    the bound.  A variable whose value is unknown at compilation time and
+    defined outside a SCoP is a parameter of the SCoP.
+
+  ``loop-block-tile-size``
+    Loop blocking or strip mining transforms, enabled with
+    :option:`-floop-block` or :option:`-floop-strip-mine` , strip mine each
+    loop in the loop nest by a given number of iterations.  The strip
+    length can be changed using the loop-block-tile-size
+    parameter.
+
+  ``ipa-jump-function-lookups``
+    Specifies number of statements visited during jump function offset discovery.
+
+  ``ipa-cp-value-list-size``
+    IPA-CP attempts to track all possible values and types passed to a function's
+    parameter in order to propagate them and perform devirtualization.
+    ipa-cp-value-list-size is the maximum number of values and types it
+    stores per one formal parameter of a function.
+
+  ``ipa-cp-eval-threshold``
+    IPA-CP calculates its own score of cloning profitability heuristics
+    and performs those cloning opportunities with scores that exceed
+    ipa-cp-eval-threshold.
+
+  ``ipa-cp-max-recursive-depth``
+    Maximum depth of recursive cloning for self-recursive function.
+
+  ``ipa-cp-min-recursive-probability``
+    Recursive cloning only when the probability of call being executed exceeds
+    the parameter.
+
+  ``ipa-cp-recursion-penalty``
+    Percentage penalty the recursive functions will receive when they
+    are evaluated for cloning.
+
+  ``ipa-cp-single-call-penalty``
+    Percentage penalty functions containing a single call to another
+    function will receive when they are evaluated for cloning.
+
+  ``ipa-max-agg-items``
+    IPA-CP is also capable to propagate a number of scalar values passed
+    in an aggregate. ipa-max-agg-items controls the maximum
+    number of such values per one parameter.
+
+  ``ipa-cp-loop-hint-bonus``
+    When IPA-CP determines that a cloning candidate would make the number
+    of iterations of a loop known, it adds a bonus of
+    ipa-cp-loop-hint-bonus to the profitability score of
+    the candidate.
+
+  ``ipa-max-loop-predicates``
+    The maximum number of different predicates IPA will use to describe when
+    loops in a function have known properties.
+
+  ``ipa-max-aa-steps``
+    During its analysis of function bodies, IPA-CP employs alias analysis
+    in order to track values pointed to by function parameters.  In order
+    not spend too much time analyzing huge functions, it gives up and
+    consider all memory clobbered after examining
+    ipa-max-aa-steps statements modifying memory.
+
+  ``ipa-max-switch-predicate-bounds``
+    Maximal number of boundary endpoints of case ranges of switch statement.
+    For switch exceeding this limit, IPA-CP will not construct cloning cost
+    predicate, which is used to estimate cloning benefit, for default case
+    of the switch statement.
+
+  ``ipa-max-param-expr-ops``
+    IPA-CP will analyze conditional statement that references some function
+    parameter to estimate benefit for cloning upon certain constant value.
+    But if number of operations in a parameter expression exceeds
+    ipa-max-param-expr-ops , the expression is treated as complicated
+    one, and is not handled by IPA analysis.
+
+  ``lto-partitions``
+    Specify desired number of partitions produced during WHOPR compilation.
+    The number of partitions should exceed the number of CPUs used for compilation.
+
+  ``lto-min-partition``
+    Size of minimal partition for WHOPR (in estimated instructions).
+    This prevents expenses of splitting very small programs into too many
+    partitions.
+
+  ``lto-max-partition``
+    Size of max partition for WHOPR (in estimated instructions).
+    to provide an upper bound for individual size of partition.
+    Meant to be used only with balanced partitioning.
+
+  ``lto-max-streaming-parallelism``
+    Maximal number of parallel processes used for LTO streaming.
+
+  ``cxx-max-namespaces-for-diagnostic-help``
+    The maximum number of namespaces to consult for suggestions when C++
+    name lookup fails for an identifier.
+
+  ``sink-frequency-threshold``
+    The maximum relative execution frequency (in percents) of the target block
+    relative to a statement's original block to allow statement sinking of a
+    statement.  Larger numbers result in more aggressive statement sinking.
+    A small positive adjustment is applied for
+    statements with memory operands as those are even more profitable so sink.
+
+  ``max-stores-to-sink``
+    The maximum number of conditional store pairs that can be sunk.  Set to 0
+    if either vectorization ( :option:`-ftree-vectorize` ) or if-conversion
+    ( :option:`-ftree-loop-if-convert` ) is disabled.
+
+  ``case-values-threshold``
+    The smallest number of different values for which it is best to use a
+    jump-table instead of a tree of conditional branches.  If the value is
+    0, use the default for the machine.
+
+  ``jump-table-max-growth-ratio-for-size``
+    The maximum code size growth ratio when expanding
+    into a jump table (in percent).  The parameter is used when
+    optimizing for size.
+
+  ``jump-table-max-growth-ratio-for-speed``
+    The maximum code size growth ratio when expanding
+    into a jump table (in percent).  The parameter is used when
+    optimizing for speed.
+
+  ``tree-reassoc-width``
+    Set the maximum number of instructions executed in parallel in
+    reassociated tree. This parameter overrides target dependent
+    heuristics used by default if has non zero value.
+
+  ``sched-pressure-algorithm``
+    Choose between the two available implementations of
+    :option:`-fsched-pressure`.  Algorithm 1 is the original implementation
+    and is the more likely to prevent instructions from being reordered.
+    Algorithm 2 was designed to be a compromise between the relatively
+    conservative approach taken by algorithm 1 and the rather aggressive
+    approach taken by the default scheduler.  It relies more heavily on
+    having a regular register file and accurate register pressure classes.
+    See haifa-sched.c in the GCC sources for more details.
+
+    The default choice depends on the target.
+
+  ``max-slsr-cand-scan``
+    Set the maximum number of existing candidates that are considered when
+    seeking a basis for a new straight-line strength reduction candidate.
+
+  ``asan-globals``
+    Enable buffer overflow detection for global objects.  This kind
+    of protection is enabled by default if you are using
+    :option:`-fsanitize=address` option.
+    To disable global objects protection use :option:`--param asan-globals=0`.
+
+  ``asan-stack``
+    Enable buffer overflow detection for stack objects.  This kind of
+    protection is enabled by default when using :option:`-fsanitize=address`.
+    To disable stack protection use :option:`--param asan-stack=0` option.
+
+  ``asan-instrument-reads``
+    Enable buffer overflow detection for memory reads.  This kind of
+    protection is enabled by default when using :option:`-fsanitize=address`.
+    To disable memory reads protection use
+    :option:`--param asan-instrument-reads=0`.
+
+  ``asan-instrument-writes``
+    Enable buffer overflow detection for memory writes.  This kind of
+    protection is enabled by default when using :option:`-fsanitize=address`.
+    To disable memory writes protection use
+    :option:`--param asan-instrument-writes=0` option.
+
+  ``asan-memintrin``
+    Enable detection for built-in functions.  This kind of protection
+    is enabled by default when using :option:`-fsanitize=address`.
+    To disable built-in functions protection use
+    :option:`--param asan-memintrin=0`.
+
+  ``asan-use-after-return``
+    Enable detection of use-after-return.  This kind of protection
+    is enabled by default when using the :option:`-fsanitize=address` option.
+    To disable it use :option:`--param asan-use-after-return=0`.
+
+    Note: By default the check is disabled at run time.  To enable it,
+    add ``detect_stack_use_after_return=1`` to the environment variable
+    :envvar:`ASAN_OPTIONS`.
+
+  ``asan-instrumentation-with-call-threshold``
+    If number of memory accesses in function being instrumented
+    is greater or equal to this number, use callbacks instead of inline checks.
+    E.g. to disable inline code use
+    :option:`--param asan-instrumentation-with-call-threshold=0`.
+
+  ``hwasan-instrument-stack``
+    Enable hwasan instrumentation of statically sized stack-allocated variables.
+    This kind of instrumentation is enabled by default when using
+    :option:`-fsanitize=hwaddress` and disabled by default when using
+    :option:`-fsanitize=kernel-hwaddress`.
+    To disable stack instrumentation use
+    :option:`--param hwasan-instrument-stack=0` , and to enable it use
+    :option:`--param hwasan-instrument-stack=1`.
+
+  ``hwasan-random-frame-tag``
+    When using stack instrumentation, decide tags for stack variables using a
+    deterministic sequence beginning at a random tag for each frame.  With this
+    parameter unset tags are chosen using the same sequence but beginning from 1.
+    This is enabled by default for :option:`-fsanitize=hwaddress` and unavailable
+    for :option:`-fsanitize=kernel-hwaddress`.
+    To disable it use :option:`--param hwasan-random-frame-tag=0`.
+
+  ``hwasan-instrument-allocas``
+    Enable hwasan instrumentation of dynamically sized stack-allocated variables.
+    This kind of instrumentation is enabled by default when using
+    :option:`-fsanitize=hwaddress` and disabled by default when using
+    :option:`-fsanitize=kernel-hwaddress`.
+    To disable instrumentation of such variables use
+    :option:`--param hwasan-instrument-allocas=0` , and to enable it use
+    :option:`--param hwasan-instrument-allocas=1`.
+
+  ``hwasan-instrument-reads``
+    Enable hwasan checks on memory reads.  Instrumentation of reads is enabled by
+    default for both :option:`-fsanitize=hwaddress` and
+    :option:`-fsanitize=kernel-hwaddress`.
+    To disable checking memory reads use
+    :option:`--param hwasan-instrument-reads=0`.
+
+  ``hwasan-instrument-writes``
+    Enable hwasan checks on memory writes.  Instrumentation of writes is enabled by
+    default for both :option:`-fsanitize=hwaddress` and
+    :option:`-fsanitize=kernel-hwaddress`.
+    To disable checking memory writes use
+    :option:`--param hwasan-instrument-writes=0`.
+
+  ``hwasan-instrument-mem-intrinsics``
+    Enable hwasan instrumentation of builtin functions.  Instrumentation of these
+    builtin functions is enabled by default for both :option:`-fsanitize=hwaddress`
+    and :option:`-fsanitize=kernel-hwaddress`.
+    To disable instrumentation of builtin functions use
+    :option:`--param hwasan-instrument-mem-intrinsics=0`.
+
+  ``use-after-scope-direct-emission-threshold``
+    If the size of a local variable in bytes is smaller or equal to this
+    number, directly poison (or unpoison) shadow memory instead of using
+    run-time callbacks.
+
+  ``tsan-distinguish-volatile``
+    Emit special instrumentation for accesses to volatiles.
+
+  ``tsan-instrument-func-entry-exit``
+    Emit instrumentation calls to __tsan_func_entry() and __tsan_func_exit().
+
+  ``max-fsm-thread-path-insns``
+    Maximum number of instructions to copy when duplicating blocks on a
+    finite state automaton jump thread path.
+
+  ``max-fsm-thread-length``
+    Maximum number of basic blocks on a finite state automaton jump thread
+    path.
+
+  ``max-fsm-thread-paths``
+    Maximum number of new jump thread paths to create for a finite state
+    automaton.
+
+  ``parloops-chunk-size``
+    Chunk size of omp schedule for loops parallelized by parloops.
+
+  ``parloops-schedule``
+    Schedule type of omp schedule for loops parallelized by parloops (static,
+    dynamic, guided, auto, runtime).
+
+  ``parloops-min-per-thread``
+    The minimum number of iterations per thread of an innermost parallelized
+    loop for which the parallelized variant is preferred over the single threaded
+    one.  Note that for a parallelized loop nest the
+    minimum number of iterations of the outermost loop per thread is two.
+
+  ``max-ssa-name-query-depth``
+    Maximum depth of recursion when querying properties of SSA names in things
+    like fold routines.  One level of recursion corresponds to following a
+    use-def chain.
+
+  ``max-speculative-devirt-maydefs``
+    The maximum number of may-defs we analyze when looking for a must-def
+    specifying the dynamic type of an object that invokes a virtual call
+    we may be able to devirtualize speculatively.
+
+  ``max-vrp-switch-assertions``
+    The maximum number of assertions to add along the default edge of a switch
+    statement during VRP.
+
+  ``evrp-mode``
+    Specifies the mode Early VRP should operate in.
+
+  ``unroll-jam-min-percent``
+    The minimum percentage of memory references that must be optimized
+    away for the unroll-and-jam transformation to be considered profitable.
+
+  ``unroll-jam-max-unroll``
+    The maximum number of times the outer loop should be unrolled by
+    the unroll-and-jam transformation.
+
+  ``max-rtl-if-conversion-unpredictable-cost``
+    Maximum permissible cost for the sequence that would be generated
+    by the RTL if-conversion pass for a branch that is considered unpredictable.
+
+  ``max-variable-expansions-in-unroller``
+    If :option:`-fvariable-expansion-in-unroller` is used, the maximum number
+    of times that an individual variable will be expanded during loop unrolling.
+
+  ``tracer-min-branch-probability-feedback``
+    Stop forward growth if the probability of best edge is less than
+    this threshold (in percent). Used when profile feedback is available.
+
+  ``partial-inlining-entry-probability``
+    Maximum probability of the entry BB of split region
+    (in percent relative to entry BB of the function)
+    to make partial inlining happen.
+
+  ``max-tracked-strlens``
+    Maximum number of strings for which strlen optimization pass will
+    track string lengths.
+
+  ``gcse-after-reload-partial-fraction``
+    The threshold ratio for performing partial redundancy
+    elimination after reload.
+
+  ``gcse-after-reload-critical-fraction``
+    The threshold ratio of critical edges execution count that
+    permit performing redundancy elimination after reload.
+
+  ``max-loop-header-insns``
+    The maximum number of insns in loop header duplicated
+    by the copy loop headers pass.
+
+  ``vect-epilogues-nomask``
+    Enable loop epilogue vectorization using smaller vector size.
+
+  ``vect-partial-vector-usage``
+    Controls when the loop vectorizer considers using partial vector loads
+    and stores as an alternative to falling back to scalar code.  0 stops
+    the vectorizer from ever using partial vector loads and stores.  1 allows
+    partial vector loads and stores if vectorization removes the need for the
+    code to iterate.  2 allows partial vector loads and stores in all loops.
+    The parameter only has an effect on targets that support partial
+    vector loads and stores.
+
+  ``avoid-fma-max-bits``
+    Maximum number of bits for which we avoid creating FMAs.
+
+  ``sms-loop-average-count-threshold``
+    A threshold on the average loop count considered by the swing modulo scheduler.
+
+  ``sms-dfa-history``
+    The number of cycles the swing modulo scheduler considers when checking
+    conflicts using DFA.
+
+  ``max-inline-insns-recursive-auto``
+    The maximum number of instructions non-inline function
+    can grow to via recursive inlining.
+
+  ``graphite-allow-codegen-errors``
+    Whether codegen errors should be ICEs when :option:`-fchecking`.
+
+  ``sms-max-ii-factor``
+    A factor for tuning the upper bound that swing modulo scheduler
+    uses for scheduling a loop.
+
+  ``lra-max-considered-reload-pseudos``
+    The max number of reload pseudos which are considered during
+    spilling a non-reload pseudo.
+
+  ``max-pow-sqrt-depth``
+    Maximum depth of sqrt chains to use when synthesizing exponentiation
+    by a real constant.
+
+  ``max-dse-active-local-stores``
+    Maximum number of active local stores in RTL dead store elimination.
+
+  ``asan-instrument-allocas``
+    Enable asan allocas/VLAs protection.
+
+  ``max-iterations-computation-cost``
+    Bound on the cost of an expression to compute the number of iterations.
+
+  ``max-isl-operations``
+    Maximum number of isl operations, 0 means unlimited.
+
+  ``graphite-max-arrays-per-scop``
+    Maximum number of arrays per scop.
+
+  ``max-vartrack-reverse-op-size``
+    Max. size of loc list for which reverse ops should be added.
+
+  ``tracer-dynamic-coverage-feedback``
+    The percentage of function, weighted by execution frequency,
+    that must be covered by trace formation.
+    Used when profile feedback is available.
+
+  ``max-inline-recursive-depth-auto``
+    The maximum depth of recursive inlining for non-inline functions.
+
+  ``fsm-scale-path-stmts``
+    Scale factor to apply to the number of statements in a threading path
+    when comparing to the number of (scaled) blocks.
+
+  ``fsm-maximum-phi-arguments``
+    Maximum number of arguments a PHI may have before the FSM threader
+    will not try to thread through its block.
+
+  ``uninit-control-dep-attempts``
+    Maximum number of nested calls to search for control dependencies
+    during uninitialized variable analysis.
+
+  ``sra-max-scalarization-size-Osize``
+    Maximum size, in storage units, of an aggregate
+    which should be considered for scalarization when compiling for size.
+
+  ``fsm-scale-path-blocks``
+    Scale factor to apply to the number of blocks in a threading path
+    when comparing to the number of (scaled) statements.
+
+  ``sched-autopref-queue-depth``
+    Hardware autoprefetcher scheduler model control flag.
+    Number of lookahead cycles the model looks into; at '
+    ' only enable instruction sorting heuristic.
+
+  ``loop-versioning-max-inner-insns``
+    The maximum number of instructions that an inner loop can have
+    before the loop versioning pass considers it too big to copy.
+
+  ``loop-versioning-max-outer-insns``
+    The maximum number of instructions that an outer loop can have
+    before the loop versioning pass considers it too big to copy,
+    discounting any instructions in inner loops that directly benefit
+    from versioning.
+
+  ``ssa-name-def-chain-limit``
+    The maximum number of SSA_NAME assignments to follow in determining
+    a property of a variable such as its value.  This limits the number
+    of iterations or recursive calls GCC performs when optimizing certain
+    statements or when determining their validity prior to issuing
+    diagnostics.
+
+  ``store-merging-max-size``
+    Maximum size of a single store merging region in bytes.
+
+  ``hash-table-verification-limit``
+    The number of elements for which hash table verification is done
+    for each searched element.
+
+  ``max-find-base-term-values``
+    Maximum number of VALUEs handled during a single find_base_term call.
+
+  ``analyzer-max-enodes-per-program-point``
+    The maximum number of exploded nodes per program point within
+    the analyzer, before terminating analysis of that point.
+
+  ``analyzer-max-constraints``
+    The maximum number of constraints per state.
+
+  ``analyzer-min-snodes-for-call-summary``
+    The minimum number of supernodes within a function for the
+    analyzer to consider summarizing its effects at call sites.
+
+  ``analyzer-max-enodes-for-full-dump``
+    The maximum depth of exploded nodes that should appear in a dot dump
+    before switching to a less verbose format.
+
+  ``analyzer-max-recursion-depth``
+    The maximum number of times a callsite can appear in a call stack
+    within the analyzer, before terminating analysis of a call that would
+    recurse deeper.
+
+  ``analyzer-max-svalue-depth``
+    The maximum depth of a symbolic value, before approximating
+    the value as unknown.
+
+  ``analyzer-max-infeasible-edges``
+    The maximum number of infeasible edges to reject before declaring
+    a diagnostic as infeasible.
+
+  ``gimple-fe-computed-hot-bb-threshold``
+    The number of executions of a basic block which is considered hot.
+    The parameter is used only in GIMPLE FE.
+
+  ``analyzer-bb-explosion-factor``
+    The maximum number of 'after supernode' exploded nodes within the analyzer
+    per supernode, before terminating analysis.
+
+    The following choices of :samp:`{name}` are available on AArch64 targets:
+
+  ``aarch64-sve-compare-costs``
+    When vectorizing for SVE, consider using 'unpacked' vectors for
+    smaller elements and use the cost model to pick the cheapest approach.
+    Also use the cost model to choose between SVE and Advanced SIMD vectorization.
+
+    Using unpacked vectors includes storing smaller elements in larger
+    containers and accessing elements with extending loads and truncating
+    stores.
+
+  ``aarch64-float-recp-precision``
+    The number of Newton iterations for calculating the reciprocal for float type.
+    The precision of division is proportional to this param when division
+    approximation is enabled.  The default value is 1.
+
+  ``aarch64-double-recp-precision``
+    The number of Newton iterations for calculating the reciprocal for double type.
+    The precision of division is propotional to this param when division
+    approximation is enabled.  The default value is 2.
+
+  ``aarch64-autovec-preference``
+    Force an ISA selection strategy for auto-vectorization.  Accepts values from
+    0 to 4, inclusive.
+
+    :samp:`0`
+      Use the default heuristics.
+
+    :samp:`1`
+      Use only Advanced SIMD for auto-vectorization.
+
+    :samp:`2`
+      Use only SVE for auto-vectorization.
+
+    :samp:`3`
+      Use both Advanced SIMD and SVE.  Prefer Advanced SIMD when the costs are
+      deemed equal.
+
+    :samp:`4`
+      Use both Advanced SIMD and SVE.  Prefer SVE when the costs are deemed equal.
+
+      The default value is 0.
+
+  ``aarch64-loop-vect-issue-rate-niters``
+    The tuning for some AArch64 CPUs tries to take both latencies and issue
+    rates into account when deciding whether a loop should be vectorized
+    using SVE, vectorized using Advanced SIMD, or not vectorized at all.
+    If this parameter is set to :samp:`{n}` , GCC will not use this heuristic
+    for loops that are known to execute in fewer than :samp:`{n}` Advanced
+    SIMD iterations.
 

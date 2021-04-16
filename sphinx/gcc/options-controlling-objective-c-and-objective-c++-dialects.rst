@@ -86,19 +86,19 @@ and Objective-C++ programs:
   special ``- (void) .cxx_destruct`` method which runs
   all such default destructors, in reverse order.
 
-The ``- (id) .cxx_construct`` and ``- (void) .cxx_destruct``
-methods thusly generated only operate on instance variables
-declared in the current Objective-C class, and not those inherited
-from superclasses.  It is the responsibility of the Objective-C
-runtime to invoke all such methods in an object's inheritance
-hierarchy.  The ``- (id) .cxx_construct`` methods are invoked
-by the runtime immediately after a new object instance is allocated;
-the ``- (void) .cxx_destruct`` methods are invoked immediately
-before the runtime deallocates an object instance.
+  The ``- (id) .cxx_construct`` and ``- (void) .cxx_destruct``
+  methods thusly generated only operate on instance variables
+  declared in the current Objective-C class, and not those inherited
+  from superclasses.  It is the responsibility of the Objective-C
+  runtime to invoke all such methods in an object's inheritance
+  hierarchy.  The ``- (id) .cxx_construct`` methods are invoked
+  by the runtime immediately after a new object instance is allocated;
+  the ``- (void) .cxx_destruct`` methods are invoked immediately
+  before the runtime deallocates an object instance.
 
-As of this writing, only the NeXT runtime on Mac OS X 10.4 and later has
-support for invoking the ``- (id) .cxx_construct`` and
-``- (void) .cxx_destruct`` methods.
+  As of this writing, only the NeXT runtime on Mac OS X 10.4 and later has
+  support for invoking the ``- (id) .cxx_construct`` and
+  ``- (void) .cxx_destruct`` methods.
 
 .. option:: -fobjc-direct-dispatch
 
@@ -192,8 +192,8 @@ support for invoking the ``- (id) .cxx_construct`` and
 
     Objective-C and Objective-C++ only
 
-Warn whenever an Objective-C assignment is being intercepted by the
-garbage collector.
+  Warn whenever an Objective-C assignment is being intercepted by the
+  garbage collector.
 
 .. option:: -Wno-property-assign-default , -Wproperty-assign-default, -Wno-property-assign-default
 
@@ -201,8 +201,8 @@ garbage collector.
 
     Objective-C and Objective-C++ only
 
-Do not warn if a property for an Objective-C object has no assign
-semantics specified.
+  Do not warn if a property for an Objective-C object has no assign
+  semantics specified.
 
 .. option:: -Wno-protocol , -Wno-protocol, -Wprotocol
 
@@ -210,13 +210,13 @@ semantics specified.
 
     Objective-C and Objective-C++ only
 
-If a class is declared to implement a protocol, a warning is issued for
-every method in the protocol that is not implemented by the class.  The
-default behavior is to issue a warning for every method not explicitly
-implemented in the class, even if a method implementation is inherited
-from the superclass.  If you use the :option:`-Wno-protocol` option, then
-methods inherited from the superclass are considered to be implemented,
-and no warning is issued for them.
+  If a class is declared to implement a protocol, a warning is issued for
+  every method in the protocol that is not implemented by the class.  The
+  default behavior is to issue a warning for every method not explicitly
+  implemented in the class, even if a method implementation is inherited
+  from the superclass.  If you use the :option:`-Wno-protocol` option, then
+  methods inherited from the superclass are considered to be implemented,
+  and no warning is issued for them.
 
 .. option:: -Wobjc-root-class , -Wobjc-root-class
 
@@ -224,10 +224,10 @@ and no warning is issued for them.
 
     Objective-C and Objective-C++ only
 
-Warn if a class interface lacks a superclass. Most classes will inherit
-from ``NSObject`` (or ``Object``) for example.  When declaring
-classes intended to be root classes, the warning can be suppressed by
-marking their interfaces with ``__attribute__((objc_root_class))``.
+  Warn if a class interface lacks a superclass. Most classes will inherit
+  from ``NSObject`` (or ``Object``) for example.  When declaring
+  classes intended to be root classes, the warning can be suppressed by
+  marking their interfaces with ``__attribute__((objc_root_class))``.
 
 .. option:: -Wselector , -Wselector, -Wno-selector
 
@@ -235,16 +235,16 @@ marking their interfaces with ``__attribute__((objc_root_class))``.
 
     Objective-C and Objective-C++ only
 
-Warn if multiple methods of different types for the same selector are
-found during compilation.  The check is performed on the list of methods
-in the final stage of compilation.  Additionally, a check is performed
-for each selector appearing in a ``@selector(...)``
-expression, and a corresponding method for that selector has been found
-during compilation.  Because these checks scan the method table only at
-the end of compilation, these warnings are not produced if the final
-stage of compilation is not reached, for example because an error is
-found during compilation, or because the :option:`-fsyntax-only` option is
-being used.
+  Warn if multiple methods of different types for the same selector are
+  found during compilation.  The check is performed on the list of methods
+  in the final stage of compilation.  Additionally, a check is performed
+  for each selector appearing in a ``@selector(...)``
+  expression, and a corresponding method for that selector has been found
+  during compilation.  Because these checks scan the method table only at
+  the end of compilation, these warnings are not produced if the final
+  stage of compilation is not reached, for example because an error is
+  found during compilation, or because the :option:`-fsyntax-only` option is
+  being used.
 
 .. option:: -Wstrict-selector-match , -Wstrict-selector-match, -Wno-strict-selector-match
 
@@ -252,12 +252,12 @@ being used.
 
     Objective-C and Objective-C++ only
 
-Warn if multiple methods with differing argument and/or return types are
-found for a given selector when attempting to send a message using this
-selector to a receiver of type ``id`` or ``Class``.  When this flag
-is off (which is the default behavior), the compiler omits such warnings
-if any differences found are confined to types that share the same size
-and alignment.
+  Warn if multiple methods with differing argument and/or return types are
+  found for a given selector when attempting to send a message using this
+  selector to a receiver of type ``id`` or ``Class``.  When this flag
+  is off (which is the default behavior), the compiler omits such warnings
+  if any differences found are confined to types that share the same size
+  and alignment.
 
 .. option:: -Wundeclared-selector , -Wundeclared-selector, -Wno-undeclared-selector
 
@@ -265,16 +265,16 @@ and alignment.
 
     Objective-C and Objective-C++ only
 
-Warn if a ``@selector(...)`` expression referring to an
-undeclared selector is found.  A selector is considered undeclared if no
-method with that name has been declared before the
-``@selector(...)`` expression, either explicitly in an
-``@interface`` or ``@protocol`` declaration, or implicitly in
-an ``@implementation`` section.  This option always performs its
-checks as soon as a ``@selector(...)`` expression is found,
-while :option:`-Wselector` only performs its checks in the final stage of
-compilation.  This also enforces the coding style convention
-that methods and selectors must be declared before being used.
+  Warn if a ``@selector(...)`` expression referring to an
+  undeclared selector is found.  A selector is considered undeclared if no
+  method with that name has been declared before the
+  ``@selector(...)`` expression, either explicitly in an
+  ``@interface`` or ``@protocol`` declaration, or implicitly in
+  an ``@implementation`` section.  This option always performs its
+  checks as soon as a ``@selector(...)`` expression is found,
+  while :option:`-Wselector` only performs its checks in the final stage of
+  compilation.  This also enforces the coding style convention
+  that methods and selectors must be declared before being used.
 
 .. option:: -print-objc-runtime-info
 

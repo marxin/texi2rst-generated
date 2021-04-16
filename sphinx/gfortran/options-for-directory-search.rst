@@ -24,55 +24,55 @@ Fortran source.
 
   .. index:: Idir
 
-.. index:: directory, search paths for inclusion
+  .. index:: directory, search paths for inclusion
 
-.. index:: inclusion, directory search paths for
+  .. index:: inclusion, directory search paths for
 
-.. index:: search paths, for included files
+  .. index:: search paths, for included files
 
-.. index:: paths, search
+  .. index:: paths, search
 
-.. index:: module search path
+  .. index:: module search path
 
-These affect interpretation of the ``INCLUDE`` directive
-(as well as of the ``#include`` directive of the :command:`cpp`
-preprocessor).
+  These affect interpretation of the ``INCLUDE`` directive
+  (as well as of the ``#include`` directive of the :command:`cpp`
+  preprocessor).
 
-Also note that the general behavior of :option:`-I` and
-``INCLUDE`` is pretty much the same as of :option:`-I` with
-``#include`` in the :command:`cpp` preprocessor, with regard to
-looking for header.gcc files and other such things.
+  Also note that the general behavior of :option:`-I` and
+  ``INCLUDE`` is pretty much the same as of :option:`-I` with
+  ``#include`` in the :command:`cpp` preprocessor, with regard to
+  looking for header.gcc files and other such things.
 
-This path is also used to search for .mod files when previously
-compiled modules are required by a ``USE`` statement.
+  This path is also used to search for .mod files when previously
+  compiled modules are required by a ``USE`` statement.
 
-See :ref:`Options for Directory Search <directory-options>`, for information on the
-:option:`-I` option.
+  See :ref:`Options for Directory Search <directory-options>`, for information on the
+  :option:`-I` option.
 
 .. option:: -Jdir
 
   .. index:: Jdir
 
-.. index:: Mdir
+  .. index:: Mdir
 
-.. index:: paths, search
+  .. index:: paths, search
 
-.. index:: module search path
+  .. index:: module search path
 
-This option specifies where to put .mod files for compiled modules.
-It is also added to the list of directories to searched by an ``USE``
-statement.
+  This option specifies where to put .mod files for compiled modules.
+  It is also added to the list of directories to searched by an ``USE``
+  statement.
 
-The default is the current directory.
+  The default is the current directory.
 
 .. option:: -fintrinsic-modules-path dir
 
   .. index:: fintrinsic-modules-pathdir
 
-.. index:: paths, search
+  .. index:: paths, search
 
-.. index:: module search path
+  .. index:: module search path
 
-This option specifies the location of pre-compiled intrinsic modules, if
-they are not in the default location expected by the compiler.
+  This option specifies the location of pre-compiled intrinsic modules, if
+  they are not in the default location expected by the compiler.
 

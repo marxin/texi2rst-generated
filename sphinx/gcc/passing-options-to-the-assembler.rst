@@ -18,6 +18,6 @@ You can pass options to the assembler.
   supply system-specific assembler options that GCC does not
   recognize.
 
-If you want to pass an option that takes an argument, you must use
-:option:`-Xassembler` twice, once for the option and once for the argument.
+  If you want to pass an option that takes an argument, you must use
+  :option:`-Xassembler` twice, once for the option and once for the argument.
 

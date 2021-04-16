@@ -24,10 +24,10 @@ honor these options.
   done; each error message appears on a single line.  This is the
   default for all front ends.
 
-Note - this option also affects the display of the :samp:`#error` and
-:samp:`#warning` pre-processor directives, and the :samp:`deprecated`
-function/type/variable attribute.  It does not however affect the
-:samp:`pragma GCC warning` and :samp:`pragma GCC error` pragmas.
+  Note - this option also affects the display of the :samp:`#error` and
+  :samp:`#warning` pre-processor directives, and the :samp:`deprecated`
+  function/type/variable attribute.  It does not however affect the
+  :samp:`pragma GCC warning` and :samp:`pragma GCC error` pragmas.
 
 ``-fdiagnostics-plain-output``
   This option requests that diagnostic output look as plain as possible, which
@@ -63,199 +63,199 @@ function/type/variable attribute.  It does not however affect the
 
   .. index:: highlight, color
 
-.. index:: GCC_COLORS environment variable
+  .. index:: GCC_COLORS environment variable
 
-Use color in diagnostics.  :samp:`{WHEN}` is :samp:`never`, :samp:`always`,
-or :samp:`auto`.  The default depends on how the compiler has been configured,
-it can be any of the above :samp:`{WHEN}` options or also :samp:`never`
-if :envvar:`GCC_COLORS` environment variable isn't present in the environment,
-and :samp:`auto` otherwise.
-:samp:`auto` makes GCC use color only when the standard error is a terminal,
-and when not executing in an emacs shell.
-The forms :option:`-fdiagnostics-color` and :option:`-fno-diagnostics-color` are
-aliases for :option:`-fdiagnostics-color=always` and
-:option:`-fdiagnostics-color=never` , respectively.
+  Use color in diagnostics.  :samp:`{WHEN}` is :samp:`never`, :samp:`always`,
+  or :samp:`auto`.  The default depends on how the compiler has been configured,
+  it can be any of the above :samp:`{WHEN}` options or also :samp:`never`
+  if :envvar:`GCC_COLORS` environment variable isn't present in the environment,
+  and :samp:`auto` otherwise.
+  :samp:`auto` makes GCC use color only when the standard error is a terminal,
+  and when not executing in an emacs shell.
+  The forms :option:`-fdiagnostics-color` and :option:`-fno-diagnostics-color` are
+  aliases for :option:`-fdiagnostics-color=always` and
+  :option:`-fdiagnostics-color=never` , respectively.
 
-The colors are defined by the environment variable :envvar:`GCC_COLORS`.
-Its value is a colon-separated list of capabilities and Select Graphic
-Rendition (SGR) substrings. SGR commands are interpreted by the
-terminal or terminal emulator.  (See the section in the documentation
-of your text terminal for permitted values and their meanings as
-character attributes.)  These substring values are integers in decimal
-representation and can be concatenated with semicolons.
-Common values to concatenate include
-:samp:`1` for bold,
-:samp:`4` for underline,
-:samp:`5` for blink,
-:samp:`7` for inverse,
-:samp:`39` for default foreground color,
-:samp:`30` to :samp:`37` for foreground colors,
-:samp:`90` to :samp:`97` for 16-color mode foreground colors,
-:samp:`38;5;0` to :samp:`38;5;255`
-for 88-color and 256-color modes foreground colors,
-:samp:`49` for default background color,
-:samp:`40` to :samp:`47` for background colors,
-:samp:`100` to :samp:`107` for 16-color mode background colors,
-and :samp:`48;5;0` to :samp:`48;5;255`
-for 88-color and 256-color modes background colors.
+  The colors are defined by the environment variable :envvar:`GCC_COLORS`.
+  Its value is a colon-separated list of capabilities and Select Graphic
+  Rendition (SGR) substrings. SGR commands are interpreted by the
+  terminal or terminal emulator.  (See the section in the documentation
+  of your text terminal for permitted values and their meanings as
+  character attributes.)  These substring values are integers in decimal
+  representation and can be concatenated with semicolons.
+  Common values to concatenate include
+  :samp:`1` for bold,
+  :samp:`4` for underline,
+  :samp:`5` for blink,
+  :samp:`7` for inverse,
+  :samp:`39` for default foreground color,
+  :samp:`30` to :samp:`37` for foreground colors,
+  :samp:`90` to :samp:`97` for 16-color mode foreground colors,
+  :samp:`38;5;0` to :samp:`38;5;255`
+  for 88-color and 256-color modes foreground colors,
+  :samp:`49` for default background color,
+  :samp:`40` to :samp:`47` for background colors,
+  :samp:`100` to :samp:`107` for 16-color mode background colors,
+  and :samp:`48;5;0` to :samp:`48;5;255`
+  for 88-color and 256-color modes background colors.
 
-The default :envvar:`GCC_COLORS` is
+  The default :envvar:`GCC_COLORS` is
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:\
-  quote=01:path=01;36:fixit-insert=32:fixit-delete=31:\
-  diff-filename=01:diff-hunk=32:diff-delete=31:diff-insert=32:\
-  type-diff=01;32
+    error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:\
+    quote=01:path=01;36:fixit-insert=32:fixit-delete=31:\
+    diff-filename=01:diff-hunk=32:diff-delete=31:diff-insert=32:\
+    type-diff=01;32
 
-where :samp:`01;31` is bold red, :samp:`01;35` is bold magenta,
-:samp:`01;36` is bold cyan, :samp:`32` is green, :samp:`34` is blue,
-:samp:`01` is bold, and :samp:`31` is red.
-Setting :envvar:`GCC_COLORS` to the empty string disables colors.
-Supported capabilities are as follows.
+  where :samp:`01;31` is bold red, :samp:`01;35` is bold magenta,
+  :samp:`01;36` is bold cyan, :samp:`32` is green, :samp:`34` is blue,
+  :samp:`01` is bold, and :samp:`31` is red.
+  Setting :envvar:`GCC_COLORS` to the empty string disables colors.
+  Supported capabilities are as follows.
 
-``error=``
+  ``error=``
 
-  .. index:: error GCC_COLORS capability
+    .. index:: error GCC_COLORS capability
 
-  SGR substring for error: markers.
+    SGR substring for error: markers.
 
-``warning=``
+  ``warning=``
 
-  .. index:: warning GCC_COLORS capability
+    .. index:: warning GCC_COLORS capability
 
-  SGR substring for warning: markers.
+    SGR substring for warning: markers.
 
-``note=``
+  ``note=``
 
-  .. index:: note GCC_COLORS capability
+    .. index:: note GCC_COLORS capability
 
-  SGR substring for note: markers.
+    SGR substring for note: markers.
 
-``path=``
+  ``path=``
 
-  .. index:: path GCC_COLORS capability
+    .. index:: path GCC_COLORS capability
 
-  SGR substring for colorizing paths of control-flow events as printed
-  via :option:`-fdiagnostics-path-format` =, such as the identifiers of
-  individual events and lines indicating interprocedural calls and returns.
+    SGR substring for colorizing paths of control-flow events as printed
+    via :option:`-fdiagnostics-path-format` =, such as the identifiers of
+    individual events and lines indicating interprocedural calls and returns.
 
-``range1=``
+  ``range1=``
 
-  .. index:: range1 GCC_COLORS capability
+    .. index:: range1 GCC_COLORS capability
 
-  SGR substring for first additional range.
+    SGR substring for first additional range.
 
-``range2=``
+  ``range2=``
 
-  .. index:: range2 GCC_COLORS capability
+    .. index:: range2 GCC_COLORS capability
 
-  SGR substring for second additional range.
+    SGR substring for second additional range.
 
-``locus=``
+  ``locus=``
 
-  .. index:: locus GCC_COLORS capability
+    .. index:: locus GCC_COLORS capability
 
-  SGR substring for location information, :samp:`file:line` or
-  :samp:`file:line:column` etc.
+    SGR substring for location information, :samp:`file:line` or
+    :samp:`file:line:column` etc.
 
-``quote=``
+  ``quote=``
 
-  .. index:: quote GCC_COLORS capability
+    .. index:: quote GCC_COLORS capability
 
-  SGR substring for information printed within quotes.
+    SGR substring for information printed within quotes.
 
-``fixit-insert=``
+  ``fixit-insert=``
 
-  .. index:: fixit-insert GCC_COLORS capability
+    .. index:: fixit-insert GCC_COLORS capability
 
-  SGR substring for fix-it hints suggesting text to
-  be inserted or replaced.
+    SGR substring for fix-it hints suggesting text to
+    be inserted or replaced.
 
-``fixit-delete=``
+  ``fixit-delete=``
 
-  .. index:: fixit-delete GCC_COLORS capability
+    .. index:: fixit-delete GCC_COLORS capability
 
-  SGR substring for fix-it hints suggesting text to
-  be deleted.
+    SGR substring for fix-it hints suggesting text to
+    be deleted.
 
-``diff-filename=``
+  ``diff-filename=``
 
-  .. index:: diff-filename GCC_COLORS capability
+    .. index:: diff-filename GCC_COLORS capability
 
-  SGR substring for filename headers within generated patches.
+    SGR substring for filename headers within generated patches.
 
-``diff-hunk=``
+  ``diff-hunk=``
 
-  .. index:: diff-hunk GCC_COLORS capability
+    .. index:: diff-hunk GCC_COLORS capability
 
-  SGR substring for the starts of hunks within generated patches.
+    SGR substring for the starts of hunks within generated patches.
 
-``diff-delete=``
+  ``diff-delete=``
 
-  .. index:: diff-delete GCC_COLORS capability
+    .. index:: diff-delete GCC_COLORS capability
 
-  SGR substring for deleted lines within generated patches.
+    SGR substring for deleted lines within generated patches.
 
-``diff-insert=``
+  ``diff-insert=``
 
-  .. index:: diff-insert GCC_COLORS capability
+    .. index:: diff-insert GCC_COLORS capability
 
-  SGR substring for inserted lines within generated patches.
+    SGR substring for inserted lines within generated patches.
 
-``type-diff=``
+  ``type-diff=``
 
-  .. index:: type-diff GCC_COLORS capability
+    .. index:: type-diff GCC_COLORS capability
 
-  SGR substring for highlighting mismatching types within template
-  arguments in the C++ frontend.
+    SGR substring for highlighting mismatching types within template
+    arguments in the C++ frontend.
 
 .. option:: -fdiagnostics-urls[=WHEN]
 
   .. index:: urls
 
-.. index:: GCC_URLS environment variable
+  .. index:: GCC_URLS environment variable
 
-.. index:: TERM_URLS environment variable
+  .. index:: TERM_URLS environment variable
 
-Use escape sequences to embed URLs in diagnostics.  For example, when
-:option:`-fdiagnostics-show-option` emits text showing the command-line
-option controlling a diagnostic, embed a URL for documentation of that
-option.
+  Use escape sequences to embed URLs in diagnostics.  For example, when
+  :option:`-fdiagnostics-show-option` emits text showing the command-line
+  option controlling a diagnostic, embed a URL for documentation of that
+  option.
 
-:samp:`{WHEN}` is :samp:`never`, :samp:`always`, or :samp:`auto`.
-:samp:`auto` makes GCC use URL escape sequences only when the standard error
-is a terminal, and when not executing in an emacs shell or any graphical
-terminal which is known to be incompatible with this feature, see below.
+  :samp:`{WHEN}` is :samp:`never`, :samp:`always`, or :samp:`auto`.
+  :samp:`auto` makes GCC use URL escape sequences only when the standard error
+  is a terminal, and when not executing in an emacs shell or any graphical
+  terminal which is known to be incompatible with this feature, see below.
 
-The default depends on how the compiler has been configured.
-It can be any of the above :samp:`{WHEN}` options.
+  The default depends on how the compiler has been configured.
+  It can be any of the above :samp:`{WHEN}` options.
 
-GCC can also be configured (via the
-:option:`--with-diagnostics-urls=auto-if-env` configure-time option)
-so that the default is affected by environment variables.
-Under such a configuration, GCC defaults to using :samp:`auto`
-if either :envvar:`GCC_URLS` or :envvar:`TERM_URLS` environment variables are
-present and non-empty in the environment of the compiler, or :samp:`never`
-if neither are.
+  GCC can also be configured (via the
+  :option:`--with-diagnostics-urls=auto-if-env` configure-time option)
+  so that the default is affected by environment variables.
+  Under such a configuration, GCC defaults to using :samp:`auto`
+  if either :envvar:`GCC_URLS` or :envvar:`TERM_URLS` environment variables are
+  present and non-empty in the environment of the compiler, or :samp:`never`
+  if neither are.
 
-However, even with :option:`-fdiagnostics-urls=always` the behavior is
-dependent on those environment variables:
-If :envvar:`GCC_URLS` is set to empty or :samp:`no`, do not embed URLs in
-diagnostics.  If set to :samp:`st`, URLs use ST escape sequences.
-If set to :samp:`bel`, the default, URLs use BEL escape sequences.
-Any other non-empty value enables the feature.
-If :envvar:`GCC_URLS` is not set, use :envvar:`TERM_URLS` as a fallback.
-Note: ST is an ANSI escape sequence, string terminator :samp:`ESC \`,
-BEL is an ASCII character, CTRL-G that usually sounds like a beep.
+  However, even with :option:`-fdiagnostics-urls=always` the behavior is
+  dependent on those environment variables:
+  If :envvar:`GCC_URLS` is set to empty or :samp:`no`, do not embed URLs in
+  diagnostics.  If set to :samp:`st`, URLs use ST escape sequences.
+  If set to :samp:`bel`, the default, URLs use BEL escape sequences.
+  Any other non-empty value enables the feature.
+  If :envvar:`GCC_URLS` is not set, use :envvar:`TERM_URLS` as a fallback.
+  Note: ST is an ANSI escape sequence, string terminator :samp:`ESC \`,
+  BEL is an ASCII character, CTRL-G that usually sounds like a beep.
 
-At this time GCC tries to detect also a few terminals that are known to
-not implement the URL feature, and have bugs or at least had bugs in
-some versions that are still in use, where the URL escapes are likely
-to misbehave, i.e. print garbage on the screen.
-That list is currently xfce4-terminal, certain known to be buggy
-gnome-terminal versions, the linux console, and mingw.
-This check can be skipped with the :option:`-fdiagnostics-urls=always`.
+  At this time GCC tries to detect also a few terminals that are known to
+  not implement the URL feature, and have bugs or at least had bugs in
+  some versions that are still in use, where the URL escapes are likely
+  to misbehave, i.e. print garbage on the screen.
+  That list is currently xfce4-terminal, certain known to be buggy
+  gnome-terminal versions, the linux console, and mingw.
+  This check can be skipped with the :option:`-fdiagnostics-urls=always`.
 
 .. option:: -fno-diagnostics-show-option, -fdiagnostics-show-option
 
@@ -279,15 +279,15 @@ This check can be skipped with the :option:`-fdiagnostics-urls=always`.
   diagnostics can label ranges of source code with pertinent information, such
   as the types of expressions:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-      printf ("foo %s bar", long_i + long_j);
-                   ~^       ~~~~~~~~~~~~~~~
-                    |              |
-                    char *         long int
+        printf ("foo %s bar", long_i + long_j);
+                     ~^       ~~~~~~~~~~~~~~~
+                      |              |
+                      char *         long int
 
-This option suppresses the printing of these labels (in the example above,
-the vertical bars and the 'char *' and 'long int' text).
+  This option suppresses the printing of these labels (in the example above,
+  the vertical bars and the 'char *' and 'long int' text).
 
 .. option:: -fno-diagnostics-show-cwe, -fdiagnostics-show-cwe
 
@@ -315,72 +315,72 @@ the vertical bars and the 'char *' and 'long int' text).
   by IDEs.  For each fix-it, a line will be printed after the relevant
   diagnostic, starting with the string 'fix-it:'.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  fix-it:"test.c":{45:3-45:21}:"gtk_widget_show_all"
+    fix-it:"test.c":{45:3-45:21}:"gtk_widget_show_all"
 
-The location is expressed as a half-open range, expressed as a count of
-bytes, starting at byte 1 for the initial column.  In the above example,
-bytes 3 through 20 of line 45 of 'test.c' are to be replaced with the
-given string:
+  The location is expressed as a half-open range, expressed as a count of
+  bytes, starting at byte 1 for the initial column.  In the above example,
+  bytes 3 through 20 of line 45 of 'test.c' are to be replaced with the
+  given string:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  00000000011111111112222222222
-  12345678901234567890123456789
-    gtk_widget_showall (dlg);
-    ^^^^^^^^^^^^^^^^^^
-    gtk_widget_show_all
+    00000000011111111112222222222
+    12345678901234567890123456789
+      gtk_widget_showall (dlg);
+      ^^^^^^^^^^^^^^^^^^
+      gtk_widget_show_all
 
-The filename and replacement string escape backslash as '\\", tab as '\t',
-newline as '\n', double quotes as '\"', non-printable characters as octal
-(e.g. vertical tab as '\013').
+  The filename and replacement string escape backslash as '\\", tab as '\t',
+  newline as '\n', double quotes as '\"', non-printable characters as octal
+  (e.g. vertical tab as '\013').
 
-An empty replacement string indicates that the given range is to be removed.
-An empty range (e.g. '45:3-45:3') indicates that the string is to
-be inserted at the given position.
+  An empty replacement string indicates that the given range is to be removed.
+  An empty range (e.g. '45:3-45:3') indicates that the string is to
+  be inserted at the given position.
 
 .. option:: -fdiagnostics-generate-patch
 
   Print fix-it hints to stderr in unified diff format, after any diagnostics
   are printed.  For example:
 
-:option:`---` test.c
-+++ test.c
-@ :option:`-42,5` +42,5 @
+  :option:`---` test.c
+  +++ test.c
+  @ :option:`-42,5` +42,5 @
 
- void show_cb(GtkDialog *dlg)
- {
--  gtk_widget_showall(dlg);
-+  gtk_widget_show_all(dlg);
- }
+   void show_cb(GtkDialog *dlg)
+   {
+  -  gtk_widget_showall(dlg);
+  +  gtk_widget_show_all(dlg);
+   }
 
-The diff may or may not be colorized, following the same rules
-as for diagnostics (see :option:`-fdiagnostics-color` ).
+  The diff may or may not be colorized, following the same rules
+  as for diagnostics (see :option:`-fdiagnostics-color` ).
 
 .. option:: -fdiagnostics-show-template-tree
 
   In the C++ frontend, when printing diagnostics showing mismatching
   template types, such as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    could not convert 'std::map<int, std::vector<double> >()'
-      from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
+      could not convert 'std::map<int, std::vector<double> >()'
+        from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
 
-the :option:`-fdiagnostics-show-template-tree` flag enables printing a
-tree-like structure showing the common and differing parts of the types,
-such as:
+  the :option:`-fdiagnostics-show-template-tree` flag enables printing a
+  tree-like structure showing the common and differing parts of the types,
+  such as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    map<
-      [...],
-      vector<
-        [double != float]>>
+      map<
+        [...],
+        vector<
+          [double != float]>>
 
-The parts that differ are highlighted with color ('double' and
-'float' in this case).
+  The parts that differ are highlighted with color ('double' and
+  'float' in this case).
 
 .. option:: -fno-elide-type, -felide-type
 
@@ -388,122 +388,122 @@ The parts that differ are highlighted with color ('double' and
   template types, common parts of the types are printed as '[...]' to
   simplify the error message.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    could not convert 'std::map<int, std::vector<double> >()'
-      from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
+      could not convert 'std::map<int, std::vector<double> >()'
+        from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
 
-Specifying the :option:`-fno-elide-type` flag suppresses that behavior.
-This flag also affects the output of the
-:option:`-fdiagnostics-show-template-tree` flag.
+  Specifying the :option:`-fno-elide-type` flag suppresses that behavior.
+  This flag also affects the output of the
+  :option:`-fdiagnostics-show-template-tree` flag.
 
 .. option:: -fdiagnostics-path-format=KIND
 
   Specify how to print paths of control-flow events for diagnostics that
   have such a path associated with them.
 
-:samp:`{KIND}` is :samp:`none`, :samp:`separate-events`, or :samp:`inline-events`,
-the default.
+  :samp:`{KIND}` is :samp:`none`, :samp:`separate-events`, or :samp:`inline-events`,
+  the default.
 
-:samp:`none` means to not print diagnostic paths.
+  :samp:`none` means to not print diagnostic paths.
 
-:samp:`separate-events` means to print a separate 'note' diagnostic for
-each event within the diagnostic.  For example:
+  :samp:`separate-events` means to print a separate 'note' diagnostic for
+  each event within the diagnostic.  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  test.c:29:5: error: passing NULL as argument 1 to 'PyList_Append' which requires a non-NULL parameter
-  test.c:25:10: note: (1) when 'PyList_New' fails, returning NULL
-  test.c:27:3: note: (2) when 'i < count'
-  test.c:29:5: note: (3) when calling 'PyList_Append', passing NULL from (1) as argument 1
+    test.c:29:5: error: passing NULL as argument 1 to 'PyList_Append' which requires a non-NULL parameter
+    test.c:25:10: note: (1) when 'PyList_New' fails, returning NULL
+    test.c:27:3: note: (2) when 'i < count'
+    test.c:29:5: note: (3) when calling 'PyList_Append', passing NULL from (1) as argument 1
 
-:samp:`inline-events` means to print the events 'inline' within the source
-code.  This view attempts to consolidate the events into runs of
-sufficiently-close events, printing them as labelled ranges within the source.
+  :samp:`inline-events` means to print the events 'inline' within the source
+  code.  This view attempts to consolidate the events into runs of
+  sufficiently-close events, printing them as labelled ranges within the source.
 
-For example, the same events as above might be printed as:
+  For example, the same events as above might be printed as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    'test': events 1-3
-      |
-      |   25 |   list = PyList_New(0);
-      |      |          ^~~~~~~~~~~~~
-      |      |          |
-      |      |          (1) when 'PyList_New' fails, returning NULL
-      |   26 |
-      |   27 |   for (i = 0; i < count; i++) {
-      |      |   ~~~
-      |      |   |
-      |      |   (2) when 'i < count'
-      |   28 |     item = PyLong_FromLong(random());
-      |   29 |     PyList_Append(list, item);
-      |      |     ~~~~~~~~~~~~~~~~~~~~~~~~~
-      |      |     |
-      |      |     (3) when calling 'PyList_Append', passing NULL from (1) as argument 1
-      |
+      'test': events 1-3
+        |
+        |   25 |   list = PyList_New(0);
+        |      |          ^~~~~~~~~~~~~
+        |      |          |
+        |      |          (1) when 'PyList_New' fails, returning NULL
+        |   26 |
+        |   27 |   for (i = 0; i < count; i++) {
+        |      |   ~~~
+        |      |   |
+        |      |   (2) when 'i < count'
+        |   28 |     item = PyLong_FromLong(random());
+        |   29 |     PyList_Append(list, item);
+        |      |     ~~~~~~~~~~~~~~~~~~~~~~~~~
+        |      |     |
+        |      |     (3) when calling 'PyList_Append', passing NULL from (1) as argument 1
+        |
 
-Interprocedural control flow is shown by grouping the events by stack frame,
-and using indentation to show how stack frames are nested, pushed, and popped.
+  Interprocedural control flow is shown by grouping the events by stack frame,
+  and using indentation to show how stack frames are nested, pushed, and popped.
 
-For example:
+  For example:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-    'test': events 1-2
-      |
-      |  133 | {
-      |      | ^
-      |      | |
-      |      | (1) entering 'test'
-      |  134 |   boxed_int *obj = make_boxed_int (i);
-      |      |                    ~~~~~~~~~~~~~~~~~~
-      |      |                    |
-      |      |                    (2) calling 'make_boxed_int'
-      |
-      +--> 'make_boxed_int': events 3-4
-             |
-             |  120 | {
-             |      | ^
-             |      | |
-             |      | (3) entering 'make_boxed_int'
-             |  121 |   boxed_int *result = (boxed_int *)wrapped_malloc (sizeof (boxed_int));
-             |      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-             |      |                                    |
-             |      |                                    (4) calling 'wrapped_malloc'
-             |
-             +--> 'wrapped_malloc': events 5-6
-                    |
-                    |    7 | {
-                    |      | ^
-                    |      | |
-                    |      | (5) entering 'wrapped_malloc'
-                    |    8 |   return malloc (size);
-                    |      |          ~~~~~~~~~~~~~
-                    |      |          |
-                    |      |          (6) calling 'malloc'
-                    |
-      <-------------+
-      |
-   'test': event 7
-      |
-      |  138 |   free_boxed_int (obj);
-      |      |   ^~~~~~~~~~~~~~~~~~~~
-      |      |   |
-      |      |   (7) calling 'free_boxed_int'
-      |
-  (etc)
+      'test': events 1-2
+        |
+        |  133 | {
+        |      | ^
+        |      | |
+        |      | (1) entering 'test'
+        |  134 |   boxed_int *obj = make_boxed_int (i);
+        |      |                    ~~~~~~~~~~~~~~~~~~
+        |      |                    |
+        |      |                    (2) calling 'make_boxed_int'
+        |
+        +--> 'make_boxed_int': events 3-4
+               |
+               |  120 | {
+               |      | ^
+               |      | |
+               |      | (3) entering 'make_boxed_int'
+               |  121 |   boxed_int *result = (boxed_int *)wrapped_malloc (sizeof (boxed_int));
+               |      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               |      |                                    |
+               |      |                                    (4) calling 'wrapped_malloc'
+               |
+               +--> 'wrapped_malloc': events 5-6
+                      |
+                      |    7 | {
+                      |      | ^
+                      |      | |
+                      |      | (5) entering 'wrapped_malloc'
+                      |    8 |   return malloc (size);
+                      |      |          ~~~~~~~~~~~~~
+                      |      |          |
+                      |      |          (6) calling 'malloc'
+                      |
+        <-------------+
+        |
+     'test': event 7
+        |
+        |  138 |   free_boxed_int (obj);
+        |      |   ^~~~~~~~~~~~~~~~~~~~
+        |      |   |
+        |      |   (7) calling 'free_boxed_int'
+        |
+    (etc)
 
 .. option:: -fdiagnostics-show-path-depths
 
   This option provides additional information when printing control-flow paths
   associated with a diagnostic.
 
-If this is option is provided then the stack depth will be printed for
-each run of events within :option:`-fdiagnostics-path-format=separate-events`.
+  If this is option is provided then the stack depth will be printed for
+  each run of events within :option:`-fdiagnostics-path-format=separate-events`.
 
-This is intended for use by GCC developers and plugin developers when
-debugging diagnostics that report interprocedural control flow.
+  This is intended for use by GCC developers and plugin developers when
+  debugging diagnostics that report interprocedural control flow.
 
 .. option:: -fno-show-column, -fshow-column
 
@@ -517,17 +517,17 @@ debugging diagnostics that report interprocedural control flow.
   (in the absence of :option:`-fno-show-column` ), as well as JSON format
   diagnostics if requested.
 
-The default :samp:`{UNIT}` , :samp:`display`, considers the number of display
-columns occupied by each character.  This may be larger than the number
-of bytes required to encode the character, in the case of tab
-characters, or it may be smaller, in the case of multibyte characters.
-For example, the character 'GREEK SMALL LETTER PI (U+03C0)' occupies one
-display column, and its UTF-8 encoding requires two bytes; the character
-'SLIGHTLY SMILING FACE (U+1F642)' occupies two display columns, and
-its UTF-8 encoding requires four bytes.
+  The default :samp:`{UNIT}` , :samp:`display`, considers the number of display
+  columns occupied by each character.  This may be larger than the number
+  of bytes required to encode the character, in the case of tab
+  characters, or it may be smaller, in the case of multibyte characters.
+  For example, the character 'GREEK SMALL LETTER PI (U+03C0)' occupies one
+  display column, and its UTF-8 encoding requires two bytes; the character
+  'SLIGHTLY SMILING FACE (U+1F642)' occupies two display columns, and
+  its UTF-8 encoding requires four bytes.
 
-Setting :samp:`{UNIT}` to :samp:`byte` changes the column number to the raw byte
-count in all cases, as was traditionally output by GCC prior to version 11.1.0.
+  Setting :samp:`{UNIT}` to :samp:`byte` changes the column number to the raw byte
+  count in all cases, as was traditionally output by GCC prior to version 11.1.0.
 
 .. option:: -fdiagnostics-column-origin=ORIGIN
 
@@ -542,253 +542,253 @@ count in all cases, as was traditionally output by GCC prior to version 11.1.0.
   :samp:`{FORMAT}` is :samp:`text` or :samp:`json`.
   The default is :samp:`text`.
 
-The :samp:`json` format consists of a top-level JSON array containing JSON
-objects representing the diagnostics.
+  The :samp:`json` format consists of a top-level JSON array containing JSON
+  objects representing the diagnostics.
 
-The JSON is emitted as one line, without formatting; the examples below
-have been formatted for clarity.
+  The JSON is emitted as one line, without formatting; the examples below
+  have been formatted for clarity.
 
-Diagnostics can have child diagnostics.  For example, this error and note:
+  Diagnostics can have child diagnostics.  For example, this error and note:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  misleading-indentation.c:15:3: warning: this 'if' clause does not
-    guard... [-Wmisleading-indentation]
-     15 |   if (flag)
-        |   ^~
-  misleading-indentation.c:17:5: note: ...this statement, but the latter
-    is misleadingly indented as if it were guarded by the 'if'
-     17 |     y = 2;
-        |     ^
+    misleading-indentation.c:15:3: warning: this 'if' clause does not
+      guard... [-Wmisleading-indentation]
+       15 |   if (flag)
+          |   ^~
+    misleading-indentation.c:17:5: note: ...this statement, but the latter
+      is misleadingly indented as if it were guarded by the 'if'
+       17 |     y = 2;
+          |     ^
 
-might be printed in JSON form (after formatting) like this:
+  might be printed in JSON form (after formatting) like this:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  [
-      {
-          "kind": "warning",
-          "locations": [
-              {
-                  "caret": {
-  		    "display-column": 3,
-  		    "byte-column": 3,
-                      "column": 3,
-                      "file": "misleading-indentation.c",
-                      "line": 15
-                  },
-                  "finish": {
-  		    "display-column": 4,
-  		    "byte-column": 4,
-                      "column": 4,
-                      "file": "misleading-indentation.c",
-                      "line": 15
-                  }
-              }
-          ],
-          "message": "this \u2018if\u2019 clause does not guard...",
-          "option": "-Wmisleading-indentation",
-          "option_url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation",
-          "children": [
-              {
-                  "kind": "note",
-                  "locations": [
-                      {
-                          "caret": {
-  			    "display-column": 5,
-  			    "byte-column": 5,
-                              "column": 5,
-                              "file": "misleading-indentation.c",
-                              "line": 17
-                          }
-                      }
-                  ],
-                  "message": "...this statement, but the latter is ..."
-              }
-          ]
-  	"column-origin": 1,
-      },
-      ...
-  ]
+    [
+        {
+            "kind": "warning",
+            "locations": [
+                {
+                    "caret": {
+    		    "display-column": 3,
+    		    "byte-column": 3,
+                        "column": 3,
+                        "file": "misleading-indentation.c",
+                        "line": 15
+                    },
+                    "finish": {
+    		    "display-column": 4,
+    		    "byte-column": 4,
+                        "column": 4,
+                        "file": "misleading-indentation.c",
+                        "line": 15
+                    }
+                }
+            ],
+            "message": "this \u2018if\u2019 clause does not guard...",
+            "option": "-Wmisleading-indentation",
+            "option_url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation",
+            "children": [
+                {
+                    "kind": "note",
+                    "locations": [
+                        {
+                            "caret": {
+    			    "display-column": 5,
+    			    "byte-column": 5,
+                                "column": 5,
+                                "file": "misleading-indentation.c",
+                                "line": 17
+                            }
+                        }
+                    ],
+                    "message": "...this statement, but the latter is ..."
+                }
+            ]
+    	"column-origin": 1,
+        },
+        ...
+    ]
 
-where the ``note`` is a child of the ``warning``.
+  where the ``note`` is a child of the ``warning``.
 
-A diagnostic has a ``kind``.  If this is ``warning``, then there is
-an ``option`` key describing the command-line option controlling the
-warning.
+  A diagnostic has a ``kind``.  If this is ``warning``, then there is
+  an ``option`` key describing the command-line option controlling the
+  warning.
 
-A diagnostic can contain zero or more locations.  Each location has an
-optional ``label`` string and up to three positions within it: a
-``caret`` position and optional ``start`` and ``finish`` positions.
-A position is described by a ``file`` name, a ``line`` number, and
-three numbers indicating a column position:
+  A diagnostic can contain zero or more locations.  Each location has an
+  optional ``label`` string and up to three positions within it: a
+  ``caret`` position and optional ``start`` and ``finish`` positions.
+  A position is described by a ``file`` name, a ``line`` number, and
+  three numbers indicating a column position:
 
-* ``display-column`` counts display columns, accounting for tabs and
-  multibyte characters.
+  * ``display-column`` counts display columns, accounting for tabs and
+    multibyte characters.
 
-* ``byte-column`` counts raw bytes.
+  * ``byte-column`` counts raw bytes.
 
-* ``column`` is equal to one of
-  the previous two, as dictated by the :option:`-fdiagnostics-column-unit`
-  option.
+  * ``column`` is equal to one of
+    the previous two, as dictated by the :option:`-fdiagnostics-column-unit`
+    option.
 
-All three columns are relative to the origin specified by
-:option:`-fdiagnostics-column-origin` , which is typically equal to 1 but may
-be set, for instance, to 0 for compatibility with other utilities that
-number columns from 0.  The column origin is recorded in the JSON output in
-the ``column-origin`` tag.  In the remaining examples below, the extra
-column number outputs have been omitted for brevity.
+  All three columns are relative to the origin specified by
+  :option:`-fdiagnostics-column-origin` , which is typically equal to 1 but may
+  be set, for instance, to 0 for compatibility with other utilities that
+  number columns from 0.  The column origin is recorded in the JSON output in
+  the ``column-origin`` tag.  In the remaining examples below, the extra
+  column number outputs have been omitted for brevity.
 
-For example, this error:
+  For example, this error:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  bad-binary-ops.c:64:23: error: invalid operands to binary + (have 'S' {aka
-     'struct s'} and 'T' {aka 'struct t'})
-     64 |   return callee_4a () + callee_4b ();
-        |          ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-        |          |              |
-        |          |              T {aka struct t}
-        |          S {aka struct s}
+    bad-binary-ops.c:64:23: error: invalid operands to binary + (have 'S' {aka
+       'struct s'} and 'T' {aka 'struct t'})
+       64 |   return callee_4a () + callee_4b ();
+          |          ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
+          |          |              |
+          |          |              T {aka struct t}
+          |          S {aka struct s}
 
-has three locations.  Its primary location is at the '+' token at column
-23.  It has two secondary locations, describing the left and right-hand sides
-of the expression, which have labels.  It might be printed in JSON form as:
+  has three locations.  Its primary location is at the '+' token at column
+  23.  It has two secondary locations, describing the left and right-hand sides
+  of the expression, which have labels.  It might be printed in JSON form as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-      {
-          "children": [],
-          "kind": "error",
-          "locations": [
-              {
-                  "caret": {
-                      "column": 23, "file": "bad-binary-ops.c", "line": 64
-                  }
-              },
-              {
-                  "caret": {
-                      "column": 10, "file": "bad-binary-ops.c", "line": 64
-                  },
-                  "finish": {
-                      "column": 21, "file": "bad-binary-ops.c", "line": 64
-                  },
-                  "label": "S {aka struct s}"
-              },
-              {
-                  "caret": {
-                      "column": 25, "file": "bad-binary-ops.c", "line": 64
-                  },
-                  "finish": {
-                      "column": 36, "file": "bad-binary-ops.c", "line": 64
-                  },
-                  "label": "T {aka struct t}"
-              }
-          ],
-          "message": "invalid operands to binary + ..."
-      }
+        {
+            "children": [],
+            "kind": "error",
+            "locations": [
+                {
+                    "caret": {
+                        "column": 23, "file": "bad-binary-ops.c", "line": 64
+                    }
+                },
+                {
+                    "caret": {
+                        "column": 10, "file": "bad-binary-ops.c", "line": 64
+                    },
+                    "finish": {
+                        "column": 21, "file": "bad-binary-ops.c", "line": 64
+                    },
+                    "label": "S {aka struct s}"
+                },
+                {
+                    "caret": {
+                        "column": 25, "file": "bad-binary-ops.c", "line": 64
+                    },
+                    "finish": {
+                        "column": 36, "file": "bad-binary-ops.c", "line": 64
+                    },
+                    "label": "T {aka struct t}"
+                }
+            ],
+            "message": "invalid operands to binary + ..."
+        }
 
-If a diagnostic contains fix-it hints, it has a ``fixits`` array,
-consisting of half-open intervals, similar to the output of
-:option:`-fdiagnostics-parseable-fixits`.  For example, this diagnostic
-with a replacement fix-it hint:
+  If a diagnostic contains fix-it hints, it has a ``fixits`` array,
+  consisting of half-open intervals, similar to the output of
+  :option:`-fdiagnostics-parseable-fixits`.  For example, this diagnostic
+  with a replacement fix-it hint:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  demo.c:8:15: error: 'struct s' has no member named 'colour'; did you
-    mean 'color'?
-      8 |   return ptr->colour;
-        |               ^~~~~~
-        |               color
+    demo.c:8:15: error: 'struct s' has no member named 'colour'; did you
+      mean 'color'?
+        8 |   return ptr->colour;
+          |               ^~~~~~
+          |               color
 
-might be printed in JSON form as:
+  might be printed in JSON form as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-      {
-          "children": [],
-          "fixits": [
-              {
-                  "next": {
-                      "column": 21,
-                      "file": "demo.c",
-                      "line": 8
-                  },
-                  "start": {
-                      "column": 15,
-                      "file": "demo.c",
-                      "line": 8
-                  },
-                  "string": "color"
-              }
-          ],
-          "kind": "error",
-          "locations": [
-              {
-                  "caret": {
-                      "column": 15,
-                      "file": "demo.c",
-                      "line": 8
-                  },
-                  "finish": {
-                      "column": 20,
-                      "file": "demo.c",
-                      "line": 8
-                  }
-              }
-          ],
-          "message": "\u2018struct s\u2019 has no member named ..."
-      }
+        {
+            "children": [],
+            "fixits": [
+                {
+                    "next": {
+                        "column": 21,
+                        "file": "demo.c",
+                        "line": 8
+                    },
+                    "start": {
+                        "column": 15,
+                        "file": "demo.c",
+                        "line": 8
+                    },
+                    "string": "color"
+                }
+            ],
+            "kind": "error",
+            "locations": [
+                {
+                    "caret": {
+                        "column": 15,
+                        "file": "demo.c",
+                        "line": 8
+                    },
+                    "finish": {
+                        "column": 20,
+                        "file": "demo.c",
+                        "line": 8
+                    }
+                }
+            ],
+            "message": "\u2018struct s\u2019 has no member named ..."
+        }
 
-where the fix-it hint suggests replacing the text from ``start`` up
-to but not including ``next`` with ``string``'s value.  Deletions
-are expressed via an empty value for ``string``, insertions by
-having ``start`` equal ``next``.
+  where the fix-it hint suggests replacing the text from ``start`` up
+  to but not including ``next`` with ``string``'s value.  Deletions
+  are expressed via an empty value for ``string``, insertions by
+  having ``start`` equal ``next``.
 
-If the diagnostic has a path of control-flow events associated with it,
-it has a ``path`` array of objects representing the events.  Each
-event object has a ``description`` string, a ``location`` object,
-along with a ``function`` string and a ``depth`` number for
-representing interprocedural paths.  The ``function`` represents the
-current function at that event, and the ``depth`` represents the
-stack depth relative to some baseline: the higher, the more frames are
-within the stack.
+  If the diagnostic has a path of control-flow events associated with it,
+  it has a ``path`` array of objects representing the events.  Each
+  event object has a ``description`` string, a ``location`` object,
+  along with a ``function`` string and a ``depth`` number for
+  representing interprocedural paths.  The ``function`` represents the
+  current function at that event, and the ``depth`` represents the
+  stack depth relative to some baseline: the higher, the more frames are
+  within the stack.
 
-For example, the intraprocedural example shown for
-:option:`-fdiagnostics-path-format` = might have this JSON for its path:
+  For example, the intraprocedural example shown for
+  :option:`-fdiagnostics-path-format` = might have this JSON for its path:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-      "path": [
-          {
-              "depth": 0,
-              "description": "when 'PyList_New' fails, returning NULL",
-              "function": "test",
-              "location": {
-                  "column": 10,
-                  "file": "test.c",
-                  "line": 25
-              }
-          },
-          {
-              "depth": 0,
-              "description": "when 'i < count'",
-              "function": "test",
-              "location": {
-                  "column": 3,
-                  "file": "test.c",
-                  "line": 27
-              }
-          },
-          {
-              "depth": 0,
-              "description": "when calling 'PyList_Append', passing NULL from (1) as argument 1",
-              "function": "test",
-              "location": {
-                  "column": 5,
-                  "file": "test.c",
-                  "line": 29
-              }
-          }
-      ]
+        "path": [
+            {
+                "depth": 0,
+                "description": "when 'PyList_New' fails, returning NULL",
+                "function": "test",
+                "location": {
+                    "column": 10,
+                    "file": "test.c",
+                    "line": 25
+                }
+            },
+            {
+                "depth": 0,
+                "description": "when 'i < count'",
+                "function": "test",
+                "location": {
+                    "column": 3,
+                    "file": "test.c",
+                    "line": 27
+                }
+            },
+            {
+                "depth": 0,
+                "description": "when calling 'PyList_Append', passing NULL from (1) as argument 1",
+                "function": "test",
+                "location": {
+                    "column": 5,
+                    "file": "test.c",
+                    "line": 29
+                }
+            }
+        ]
 

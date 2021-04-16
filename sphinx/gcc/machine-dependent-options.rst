@@ -109,9 +109,9 @@ These options are defined for AArch64 implementations:
   are 32 bits, and :samp:`lp64` for SysV-like data model where int is 32 bits,
   but long int and pointers are 64 bits.
 
-The default depends on the specific target configuration.  Note that
-the LP64 and ILP32 ABIs are not link-compatible; you must compile your
-entire program with the same ABI, and link with a compatible set of libraries.
+  The default depends on the specific target configuration.  Note that
+  the LP64 and ILP32 ABIs are not link-compatible; you must compile your
+  entire program with the same ABI, and link with a compatible set of libraries.
 
 .. option:: -mbig-endian
 
@@ -164,13 +164,13 @@ entire program with the same ABI, and link with a compatible set of libraries.
   locations are :samp:`global` for a global canary or :samp:`sysreg` for a
   canary in an appropriate system register.
 
-With the latter choice the options
-:option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-:option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-which system register to use as base register for reading the canary,
-and from what offset from that base register. There is no default
-register or offset as this is entirely for use within the Linux
-kernel.
+  With the latter choice the options
+  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  which system register to use as base register for reading the canary,
+  and from what offset from that base register. There is no default
+  register or offset as this is entirely for use within the Linux
+  kernel.
 
 .. option:: -mtls-dialect=desc
 
@@ -250,36 +250,36 @@ kernel.
   more feature modifiers.  This option has the form
   :option:`-march`:samp:`={arch}` {+[no ]:samp:`{feature}` }*.
 
-The table below summarizes the permissible values for :samp:`{arch}`
-and the features that they enable by default:
+  The table below summarizes the permissible values for :samp:`{arch}`
+  and the features that they enable by default:
 
-====================  ============  =====================================================================
-:samp:`{arch}` value  Architecture  Includes by default
-====================  ============  =====================================================================
-:samp:`armv8-a`       Armv8-A       :samp:`+fp`, :samp:`+simd`
-:samp:`armv8.1-a`     Armv8.1-A     :samp:`armv8-a`, :samp:`+crc`, :samp:`+lse`, :samp:`+rdma`
-:samp:`armv8.2-a`     Armv8.2-A     :samp:`armv8.1-a`
-:samp:`armv8.3-a`     Armv8.3-A     :samp:`armv8.2-a`, :samp:`+pauth`
-:samp:`armv8.4-a`     Armv8.4-A     :samp:`armv8.3-a`, :samp:`+flagm`, :samp:`+fp16fml`, :samp:`+dotprod`
-:samp:`armv8.5-a`     Armv8.5-A     :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
-:samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
-:samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
-====================  ============  =====================================================================
-The value :samp:`native` is available on native AArch64 GNU/Linux and
-causes the compiler to pick the architecture of the host system.  This
-option has no effect if the compiler is unable to recognize the
-architecture of the host system,
+  ====================  ============  =====================================================================
+  :samp:`{arch}` value  Architecture  Includes by default
+  ====================  ============  =====================================================================
+  :samp:`armv8-a`       Armv8-A       :samp:`+fp`, :samp:`+simd`
+  :samp:`armv8.1-a`     Armv8.1-A     :samp:`armv8-a`, :samp:`+crc`, :samp:`+lse`, :samp:`+rdma`
+  :samp:`armv8.2-a`     Armv8.2-A     :samp:`armv8.1-a`
+  :samp:`armv8.3-a`     Armv8.3-A     :samp:`armv8.2-a`, :samp:`+pauth`
+  :samp:`armv8.4-a`     Armv8.4-A     :samp:`armv8.3-a`, :samp:`+flagm`, :samp:`+fp16fml`, :samp:`+dotprod`
+  :samp:`armv8.5-a`     Armv8.5-A     :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
+  :samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
+  :samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
+  ====================  ============  =====================================================================
+  The value :samp:`native` is available on native AArch64 GNU/Linux and
+  causes the compiler to pick the architecture of the host system.  This
+  option has no effect if the compiler is unable to recognize the
+  architecture of the host system,
 
-The permissible values for :samp:`{feature}` are listed in the sub-section
-on aarch64-feature-modifiers:option:`-march` and :option:`-mcpu`
-Feature Modifiers.  Where conflicting feature modifiers are
-specified, the right-most feature is used.
+  The permissible values for :samp:`{feature}` are listed in the sub-section
+  on aarch64-feature-modifiers:option:`-march` and :option:`-mcpu`
+  Feature Modifiers.  Where conflicting feature modifiers are
+  specified, the right-most feature is used.
 
-GCC uses :samp:`{name}` to determine what kind of instructions it can emit
-when generating assembly code.  If :option:`-march` is specified
-without either of :option:`-mtune` or :option:`-mcpu` also being
-specified, the code is tuned to perform well across a range of target
-processors implementing the target architecture.
+  GCC uses :samp:`{name}` to determine what kind of instructions it can emit
+  when generating assembly code.  If :option:`-march` is specified
+  without either of :option:`-mtune` or :option:`-mcpu` also being
+  specified, the code is tuned to perform well across a range of target
+  processors implementing the target architecture.
 
 .. option:: -mtune=name
 
@@ -307,20 +307,20 @@ processors implementing the target architecture.
   :samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55`,
   :samp:`cortex-r82`, :samp:`cortex-x1`, :samp:`native`.
 
-The values :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
-:samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
-:samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55` specify that GCC
-should tune for a big.LITTLE system.
+  The values :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
+  :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
+  :samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55` specify that GCC
+  should tune for a big.LITTLE system.
 
-Additionally on native AArch64 GNU/Linux systems the value
-:samp:`native` tunes performance to the host system.  This option has no effect
-if the compiler is unable to recognize the processor of the host system.
+  Additionally on native AArch64 GNU/Linux systems the value
+  :samp:`native` tunes performance to the host system.  This option has no effect
+  if the compiler is unable to recognize the processor of the host system.
 
-Where none of :option:`-mtune` =, :option:`-mcpu` = or :option:`-march` =
-are specified, the code is tuned to perform well across a range
-of target processors.
+  Where none of :option:`-mtune` =, :option:`-mcpu` = or :option:`-march` =
+  are specified, the code is tuned to perform well across a range
+  of target processors.
 
-This option cannot be suffixed by feature modifiers.
+  This option cannot be suffixed by feature modifiers.
 
 .. option:: -mcpu=name
 
@@ -334,12 +334,12 @@ This option cannot be suffixed by feature modifiers.
   Feature Modifiers.  Where conflicting feature modifiers are
   specified, the right-most feature is used.
 
-GCC uses :samp:`{name}` to determine what kind of instructions it can emit when
-generating assembly code (as if by :option:`-march` ) and to determine
-the target processor for which to tune for performance (as if
-by :option:`-mtune` ).  Where this option is used in conjunction
-with :option:`-march` or :option:`-mtune` , those options take precedence
-over the appropriate part of this option.
+  GCC uses :samp:`{name}` to determine what kind of instructions it can emit when
+  generating assembly code (as if by :option:`-march` ) and to determine
+  the target processor for which to tune for performance (as if
+  by :option:`-mtune` ).  Where this option is used in conjunction
+  with :option:`-march` or :option:`-mtune` , those options take precedence
+  over the appropriate part of this option.
 
 .. option:: -moverride=string
 
@@ -348,7 +348,7 @@ over the appropriate part of this option.
   for :samp:`{string}` in this option are not guaranteed to be consistent
   across releases.
 
-This option is only intended to be useful when developing GCC.
+  This option is only intended to be useful when developing GCC.
 
 .. option:: -mverbose-cost-dump
 
@@ -391,30 +391,30 @@ This option is only intended to be useful when developing GCC.
   Enable compiler hardening against straight line speculation (SLS).
   :samp:`{opts}` is a comma-separated list of the following options:
 
-:samp:`retbr`:samp:`blr`In addition, :samp:`-mharden-sls=all` enables all SLS hardening while
-:samp:`-mharden-sls=none` disables all SLS hardening.
+  :samp:`retbr`:samp:`blr`In addition, :samp:`-mharden-sls=all` enables all SLS hardening while
+  :samp:`-mharden-sls=none` disables all SLS hardening.
 
 .. option:: -msve-vector-bits=bits
 
   Specify the number of bits in an SVE vector register.  This option only has
   an effect when SVE is enabled.
 
-GCC supports two forms of SVE code generation: 'vector-length
-agnostic' output that works with any size of vector register and
-'vector-length specific' output that allows GCC to make assumptions
-about the vector length when it is useful for optimization reasons.
-The possible values of :samp:`bits` are: :samp:`scalable`, :samp:`128`,
-:samp:`256`, :samp:`512`, :samp:`1024` and :samp:`2048`.
-Specifying :samp:`scalable` selects vector-length agnostic
-output.  At present :samp:`-msve-vector-bits=128` also generates vector-length
-agnostic output for big-endian targets.  All other values generate
-vector-length specific code.  The behavior of these values may change
-in future releases and no value except :samp:`scalable` should be
-relied on for producing code that is portable across different
-hardware SVE vector lengths.
+  GCC supports two forms of SVE code generation: 'vector-length
+  agnostic' output that works with any size of vector register and
+  'vector-length specific' output that allows GCC to make assumptions
+  about the vector length when it is useful for optimization reasons.
+  The possible values of :samp:`bits` are: :samp:`scalable`, :samp:`128`,
+  :samp:`256`, :samp:`512`, :samp:`1024` and :samp:`2048`.
+  Specifying :samp:`scalable` selects vector-length agnostic
+  output.  At present :samp:`-msve-vector-bits=128` also generates vector-length
+  agnostic output for big-endian targets.  All other values generate
+  vector-length specific code.  The behavior of these values may change
+  in future releases and no value except :samp:`scalable` should be
+  relied on for producing code that is portable across different
+  hardware SVE vector lengths.
 
-The default is :samp:`-msve-vector-bits=scalable`, which produces
-vector-length agnostic code.
+  The default is :samp:`-msve-vector-bits=scalable`, which produces
+  vector-length agnostic code.
 
 :option:`-march` and :option:`-mcpu` Feature Modifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -426,7 +426,7 @@ vector-length agnostic code.
 .. index:: -mcpu feature modifiers
 
 Feature modifiers used with :option:`-march` and :option:`-mcpu` can be any of
-the following and their inverses no:samp:`{feature}` :
+the following and their inverses no :samp:`{feature}` :
 
 :samp:`crc`
   Enable CRC extension.  This is on by default for
@@ -655,32 +655,32 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   predominantly need at function start can make your programs smaller and
   faster by avoiding unnecessary mode switches.
 
-:samp:`{mode}` can be set to one the following values:
+  :samp:`{mode}` can be set to one the following values:
 
-:samp:`caller`
-  Any mode at function entry is valid, and retained or restored when
-  the function returns, and when it calls other functions.
-  This mode is useful for compiling libraries or other compilation units
-  you might want to incorporate into different programs with different
-  prevailing FPU modes, and the convenience of being able to use a single
-  object file outweighs the size and speed overhead for any extra
-  mode switching that might be needed, compared with what would be needed
-  with a more specific choice of prevailing FPU mode.
+  :samp:`caller`
+    Any mode at function entry is valid, and retained or restored when
+    the function returns, and when it calls other functions.
+    This mode is useful for compiling libraries or other compilation units
+    you might want to incorporate into different programs with different
+    prevailing FPU modes, and the convenience of being able to use a single
+    object file outweighs the size and speed overhead for any extra
+    mode switching that might be needed, compared with what would be needed
+    with a more specific choice of prevailing FPU mode.
 
-:samp:`truncate`
-  This is the mode used for floating-point calculations with
-  truncating (i.e. round towards zero) rounding mode.  That includes
-  conversion from floating point to integer.
+  :samp:`truncate`
+    This is the mode used for floating-point calculations with
+    truncating (i.e. round towards zero) rounding mode.  That includes
+    conversion from floating point to integer.
 
-:samp:`round-nearest`
-  This is the mode used for floating-point calculations with
-  round-to-nearest-or-even rounding mode.
+  :samp:`round-nearest`
+    This is the mode used for floating-point calculations with
+    round-to-nearest-or-even rounding mode.
 
-:samp:`int`
-  This is the mode used to perform integer calculations in the FPU, e.g.
-  integer multiply, or integer multiply-and-accumulate.
+  :samp:`int`
+    This is the mode used to perform integer calculations in the FPU, e.g.
+    integer multiply, or integer multiply-and-accumulate.
 
-  The default is :option:`-mfp-mode=caller`
+    The default is :option:`-mfp-mode=caller`
 
 .. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify, -mpostmodify
 
@@ -731,16 +731,16 @@ These options are defined specifically for the AMD GCN port.
   Set architecture type or tuning for :samp:`{gpu}`. Supported values for :samp:`{gpu}`
   are
 
-.. index:: fiji
+  .. index:: fiji
 
-:samp:`fiji`
-  Compile for GCN3 Fiji devices (gfx803).
+  :samp:`fiji`
+    Compile for GCN3 Fiji devices (gfx803).
 
-:samp:`gfx900`
-  Compile for GCN5 Vega 10 devices (gfx900).
+  :samp:`gfx900`
+    Compile for GCN5 Vega 10 devices (gfx900).
 
-:samp:`gfx906`
-  Compile for GCN5 Vega 20 devices (gfx906).
+  :samp:`gfx906`
+    Compile for GCN5 Vega 20 devices (gfx906).
 
 .. option:: -mstack-size=bytes
 
@@ -779,86 +779,86 @@ is being compiled:
   available for backward compatibility and convenience.  Supported
   values for :samp:`{cpu}` are
 
-.. index:: mA6
+  .. index:: mA6
 
-.. index:: mARC600
+  .. index:: mARC600
 
-:samp:`arc600`
-  Compile for ARC600.  Aliases: :option:`-mA6` , :option:`-mARC600`.
+  :samp:`arc600`
+    Compile for ARC600.  Aliases: :option:`-mA6` , :option:`-mARC600`.
 
-.. option:: arc601, -mARC601
+  .. option:: arc601, -mARC601
 
-  Compile for ARC601.  Alias: :option:`-mARC601`.
+    Compile for ARC601.  Alias: :option:`-mARC601`.
 
-.. option:: arc700, -mA7, -mARC700
+  .. option:: arc700, -mA7, -mARC700
 
-  Compile for ARC700.  Aliases: :option:`-mA7` , :option:`-mARC700`.
-  This is the default when configured with :option:`--with-cpu=arc700`.
+    Compile for ARC700.  Aliases: :option:`-mA7` , :option:`-mARC700`.
+    This is the default when configured with :option:`--with-cpu=arc700`.
 
-:samp:`arcem`
-  Compile for ARC EM.
+  :samp:`arcem`
+    Compile for ARC EM.
 
-:samp:`archs`
-  Compile for ARC HS.
+  :samp:`archs`
+    Compile for ARC HS.
 
-:samp:`em`
-  Compile for ARC EM CPU with no hardware extensions.
+  :samp:`em`
+    Compile for ARC EM CPU with no hardware extensions.
 
-:samp:`em4`
-  Compile for ARC EM4 CPU.
+  :samp:`em4`
+    Compile for ARC EM4 CPU.
 
-:samp:`em4_dmips`
-  Compile for ARC EM4 DMIPS CPU.
+  :samp:`em4_dmips`
+    Compile for ARC EM4 DMIPS CPU.
 
-:samp:`em4_fpus`
-  Compile for ARC EM4 DMIPS CPU with the single-precision floating-point
-  extension.
+  :samp:`em4_fpus`
+    Compile for ARC EM4 DMIPS CPU with the single-precision floating-point
+    extension.
 
-:samp:`em4_fpuda`
-  Compile for ARC EM4 DMIPS CPU with single-precision floating-point and
-  double assist instructions.
+  :samp:`em4_fpuda`
+    Compile for ARC EM4 DMIPS CPU with single-precision floating-point and
+    double assist instructions.
 
-:samp:`hs`
-  Compile for ARC HS CPU with no hardware extensions except the atomic
-  instructions.
+  :samp:`hs`
+    Compile for ARC HS CPU with no hardware extensions except the atomic
+    instructions.
 
-:samp:`hs34`
-  Compile for ARC HS34 CPU.
+  :samp:`hs34`
+    Compile for ARC HS34 CPU.
 
-:samp:`hs38`
-  Compile for ARC HS38 CPU.
+  :samp:`hs38`
+    Compile for ARC HS38 CPU.
 
-:samp:`hs38_linux`
-  Compile for ARC HS38 CPU with all hardware extensions on.
+  :samp:`hs38_linux`
+    Compile for ARC HS38 CPU with all hardware extensions on.
 
-:samp:`arc600_norm`
-  Compile for ARC 600 CPU with ``norm`` instructions enabled.
+  :samp:`arc600_norm`
+    Compile for ARC 600 CPU with ``norm`` instructions enabled.
 
-:samp:`arc600_mul32x16`
-  Compile for ARC 600 CPU with ``norm`` and 32x16-bit multiply 
-  instructions enabled.
+  :samp:`arc600_mul32x16`
+    Compile for ARC 600 CPU with ``norm`` and 32x16-bit multiply 
+    instructions enabled.
 
-:samp:`arc600_mul64`
-  Compile for ARC 600 CPU with ``norm`` and ``mul64``-family 
-  instructions enabled.
+  :samp:`arc600_mul64`
+    Compile for ARC 600 CPU with ``norm`` and ``mul64``-family 
+    instructions enabled.
 
-:samp:`arc601_norm`
-  Compile for ARC 601 CPU with ``norm`` instructions enabled.
+  :samp:`arc601_norm`
+    Compile for ARC 601 CPU with ``norm`` instructions enabled.
 
-:samp:`arc601_mul32x16`
-  Compile for ARC 601 CPU with ``norm`` and 32x16-bit multiply
-  instructions enabled.
+  :samp:`arc601_mul32x16`
+    Compile for ARC 601 CPU with ``norm`` and 32x16-bit multiply
+    instructions enabled.
 
-:samp:`arc601_mul64`
-  Compile for ARC 601 CPU with ``norm`` and ``mul64``-family
-  instructions enabled.
+  :samp:`arc601_mul64`
+    Compile for ARC 601 CPU with ``norm`` and ``mul64``-family
+    instructions enabled.
 
-:samp:`nps400`
-  Compile for ARC 700 on NPS400 chip.
+  :samp:`nps400`
+    Compile for ARC 700 on NPS400 chip.
 
-:samp:`em_mini`
-  Compile for ARC EM minimalist configuration featuring reduced register
-  set.
+  :samp:`em_mini`
+    Compile for ARC EM minimalist configuration featuring reduced register
+    set.
 
 .. option:: -mdpfp, -mdpfp-compact
 
@@ -956,114 +956,114 @@ is being compiled:
   the option using either a string or numeric value for :samp:`{multo}`.  
   :samp:`wlh1` is the default value.  The recognized values are:
 
-:samp:`0` :samp:`none`
-  No multiplier available.
+  :samp:`0` :samp:`none`
+    No multiplier available.
 
-:samp:`1` :samp:`w`
-  16x16 multiplier, fully pipelined.
-  The following instructions are enabled: ``mpyw`` and ``mpyuw``.
+  :samp:`1` :samp:`w`
+    16x16 multiplier, fully pipelined.
+    The following instructions are enabled: ``mpyw`` and ``mpyuw``.
 
-:samp:`2` :samp:`wlh1`
-  32x32 multiplier, fully
-  pipelined (1 stage).  The following instructions are additionally
-  enabled: ``mpy``, ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
+  :samp:`2` :samp:`wlh1`
+    32x32 multiplier, fully
+    pipelined (1 stage).  The following instructions are additionally
+    enabled: ``mpy``, ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
 
-:samp:`3` :samp:`wlh2`
-  32x32 multiplier, fully pipelined
-  (2 stages).  The following instructions are additionally enabled: ``mpy``,
-  ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
+  :samp:`3` :samp:`wlh2`
+    32x32 multiplier, fully pipelined
+    (2 stages).  The following instructions are additionally enabled: ``mpy``,
+    ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
 
-:samp:`4` :samp:`wlh3`
-  Two 16x16 multipliers, blocking,
-  sequential.  The following instructions are additionally enabled: ``mpy``,
-  ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
+  :samp:`4` :samp:`wlh3`
+    Two 16x16 multipliers, blocking,
+    sequential.  The following instructions are additionally enabled: ``mpy``,
+    ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
 
-:samp:`5` :samp:`wlh4`
-  One 16x16 multiplier, blocking,
-  sequential.  The following instructions are additionally enabled: ``mpy``,
-  ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
+  :samp:`5` :samp:`wlh4`
+    One 16x16 multiplier, blocking,
+    sequential.  The following instructions are additionally enabled: ``mpy``,
+    ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
 
-:samp:`6` :samp:`wlh5`
-  One 32x4 multiplier, blocking,
-  sequential.  The following instructions are additionally enabled: ``mpy``,
-  ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
+  :samp:`6` :samp:`wlh5`
+    One 32x4 multiplier, blocking,
+    sequential.  The following instructions are additionally enabled: ``mpy``,
+    ``mpyu``, ``mpym``, ``mpymu``, and ``mpy_s``.
 
-:samp:`7` :samp:`plus_dmpy`
-  ARC HS SIMD support.
+  :samp:`7` :samp:`plus_dmpy`
+    ARC HS SIMD support.
 
-:samp:`8` :samp:`plus_macd`
-  ARC HS SIMD support.
+  :samp:`8` :samp:`plus_macd`
+    ARC HS SIMD support.
 
-:samp:`9` :samp:`plus_qmacw`
-  ARC HS SIMD support.
+  :samp:`9` :samp:`plus_qmacw`
+    ARC HS SIMD support.
 
-  This option is only available for ARCv2 cores.
+    This option is only available for ARCv2 cores.
 
 .. option:: -mfpu=fpu
 
   Enables support for specific floating-point hardware extensions for ARCv2
   cores.  Supported values for :samp:`{fpu}` are:
 
-:samp:`fpus`
-  Enables support for single-precision floating-point hardware
-  extensions.
+  :samp:`fpus`
+    Enables support for single-precision floating-point hardware
+    extensions.
 
-:samp:`fpud`
-  Enables support for double-precision floating-point hardware
-  extensions.  The single-precision floating-point extension is also
-  enabled.  Not available for ARC EM.
+  :samp:`fpud`
+    Enables support for double-precision floating-point hardware
+    extensions.  The single-precision floating-point extension is also
+    enabled.  Not available for ARC EM.
 
-:samp:`fpuda`
-  Enables support for double-precision floating-point hardware
-  extensions using double-precision assist instructions.  The single-precision
-  floating-point extension is also enabled.  This option is
-  only available for ARC EM.
+  :samp:`fpuda`
+    Enables support for double-precision floating-point hardware
+    extensions using double-precision assist instructions.  The single-precision
+    floating-point extension is also enabled.  This option is
+    only available for ARC EM.
 
-:samp:`fpuda_div`
-  Enables support for double-precision floating-point hardware
-  extensions using double-precision assist instructions.
-  The single-precision floating-point, square-root, and divide 
-  extensions are also enabled.  This option is
-  only available for ARC EM.
+  :samp:`fpuda_div`
+    Enables support for double-precision floating-point hardware
+    extensions using double-precision assist instructions.
+    The single-precision floating-point, square-root, and divide 
+    extensions are also enabled.  This option is
+    only available for ARC EM.
 
-:samp:`fpuda_fma`
-  Enables support for double-precision floating-point hardware
-  extensions using double-precision assist instructions.
-  The single-precision floating-point and fused multiply and add 
-  hardware extensions are also enabled.  This option is
-  only available for ARC EM.
+  :samp:`fpuda_fma`
+    Enables support for double-precision floating-point hardware
+    extensions using double-precision assist instructions.
+    The single-precision floating-point and fused multiply and add 
+    hardware extensions are also enabled.  This option is
+    only available for ARC EM.
 
-:samp:`fpuda_all`
-  Enables support for double-precision floating-point hardware
-  extensions using double-precision assist instructions.
-  All single-precision floating-point hardware extensions are also
-  enabled.  This option is only available for ARC EM.
+  :samp:`fpuda_all`
+    Enables support for double-precision floating-point hardware
+    extensions using double-precision assist instructions.
+    All single-precision floating-point hardware extensions are also
+    enabled.  This option is only available for ARC EM.
 
-:samp:`fpus_div`
-  Enables support for single-precision floating-point, square-root and divide 
-  hardware extensions.
+  :samp:`fpus_div`
+    Enables support for single-precision floating-point, square-root and divide 
+    hardware extensions.
 
-:samp:`fpud_div`
-  Enables support for double-precision floating-point, square-root and divide 
-  hardware extensions.  This option
-  includes option :samp:`fpus_div`. Not available for ARC EM.
+  :samp:`fpud_div`
+    Enables support for double-precision floating-point, square-root and divide 
+    hardware extensions.  This option
+    includes option :samp:`fpus_div`. Not available for ARC EM.
 
-:samp:`fpus_fma`
-  Enables support for single-precision floating-point and 
-  fused multiply and add hardware extensions.
+  :samp:`fpus_fma`
+    Enables support for single-precision floating-point and 
+    fused multiply and add hardware extensions.
 
-:samp:`fpud_fma`
-  Enables support for double-precision floating-point and 
-  fused multiply and add hardware extensions.  This option
-  includes option :samp:`fpus_fma`.  Not available for ARC EM.
+  :samp:`fpud_fma`
+    Enables support for double-precision floating-point and 
+    fused multiply and add hardware extensions.  This option
+    includes option :samp:`fpus_fma`.  Not available for ARC EM.
 
-:samp:`fpus_all`
-  Enables support for all single-precision floating-point hardware
-  extensions.
+  :samp:`fpus_all`
+    Enables support for all single-precision floating-point hardware
+    extensions.
 
-:samp:`fpud_all`
-  Enables support for all single- and double-precision floating-point
-  hardware extensions.  Not available for ARC EM.
+  :samp:`fpud_all`
+    Enables support for all single- and double-precision floating-point
+    hardware extensions.  Not available for ARC EM.
 
 .. option:: -mirq-ctrl-saved=register-range, blink, lp_count
 
@@ -1124,7 +1124,7 @@ define preprocessor macro symbols.
   extension.  Also sets the preprocessor symbol ``__Xdvbf``.  This
   option is deprecated.
 
-.. ARC700 4.10 extension instruction
+  .. ARC700 4.10 extension instruction
 
 .. option:: -mlock
 
@@ -1142,7 +1142,7 @@ define preprocessor macro symbols.
   Passed down to the assembler.  Also sets the preprocessor symbol
   ``__Xxmac_24``.  This option is deprecated.
 
-.. ARC700 4.10 extension instruction
+  .. ARC700 4.10 extension instruction
 
 .. option:: -mrtsc
 
@@ -1150,7 +1150,7 @@ define preprocessor macro symbols.
   extension instruction.  Also sets the preprocessor symbol
   ``__Xrtsc``.  This option is deprecated.
 
-.. ARC700 4.10 extension instruction
+  .. ARC700 4.10 extension instruction
 
 .. option:: -mswape
 
@@ -1278,17 +1278,17 @@ The following options fine tune code generation:
   Disable the ARCompact-specific pass to generate conditional 
   execution instructions.
 
-Due to delay slot scheduling and interactions between operand numbers,
-literal sizes, instruction lengths, and the support for conditional execution,
-the target-independent pass to generate conditional execution is often lacking,
-so the ARC port has kept a special pass around that tries to find more
-conditional execution generation opportunities after register allocation,
-branch shortening, and delay slot scheduling have been done.  This pass
-generally, but not always, improves performance and code size, at the cost of
-extra compilation time, which is why there is an option to switch it off.
-If you have a problem with call instructions exceeding their allowable
-offset range because they are conditionalized, you should consider using
-:option:`-mmedium-calls` instead.
+  Due to delay slot scheduling and interactions between operand numbers,
+  literal sizes, instruction lengths, and the support for conditional execution,
+  the target-independent pass to generate conditional execution is often lacking,
+  so the ARC port has kept a special pass around that tries to find more
+  conditional execution generation opportunities after register allocation,
+  branch shortening, and delay slot scheduling have been done.  This pass
+  generally, but not always, improves performance and code size, at the cost of
+  extra compilation time, which is why there is an option to switch it off.
+  If you have a problem with call instructions exceeding their allowable
+  offset range because they are conditionalized, you should consider using
+  :option:`-mmedium-calls` instead.
 
 .. option:: -mearly-cbranchsi
 
@@ -1367,45 +1367,45 @@ offset range because they are conditionalized, you should consider using
   Fine-tune size optimization with regards to instruction lengths and alignment.
   The recognized values for :samp:`{level}` are:
 
-:samp:`0`
-  No size optimization.  This level is deprecated and treated like :samp:`1`.
+  :samp:`0`
+    No size optimization.  This level is deprecated and treated like :samp:`1`.
 
-:samp:`1`
-  Short instructions are used opportunistically.
+  :samp:`1`
+    Short instructions are used opportunistically.
 
-:samp:`2`
-  In addition, alignment of loops and of code after barriers are dropped.
+  :samp:`2`
+    In addition, alignment of loops and of code after barriers are dropped.
 
-:samp:`3`
-  In addition, optional data alignment is dropped, and the option Os is enabled.
+  :samp:`3`
+    In addition, optional data alignment is dropped, and the option Os is enabled.
 
-  This defaults to :samp:`3` when :option:`-Os` is in effect.  Otherwise,
-the behavior when this is not set is equivalent to level :samp:`1`.
+    This defaults to :samp:`3` when :option:`-Os` is in effect.  Otherwise,
+  the behavior when this is not set is equivalent to level :samp:`1`.
 
 .. option:: -mtune=cpu
 
   Set instruction scheduling parameters for :samp:`{cpu}` , overriding any implied
   by :option:`-mcpu` =.
 
-Supported values for :samp:`{cpu}` are
+  Supported values for :samp:`{cpu}` are
 
-:samp:`ARC600`
-  Tune for ARC600 CPU.
+  :samp:`ARC600`
+    Tune for ARC600 CPU.
 
-:samp:`ARC601`
-  Tune for ARC601 CPU.
+  :samp:`ARC601`
+    Tune for ARC601 CPU.
 
-:samp:`ARC700`
-  Tune for ARC700 CPU with standard multiplier block.
+  :samp:`ARC700`
+    Tune for ARC700 CPU with standard multiplier block.
 
-:samp:`ARC700-xmac`
-  Tune for ARC700 CPU with XMAC block.
+  :samp:`ARC700-xmac`
+    Tune for ARC700 CPU with XMAC block.
 
-:samp:`ARC725D`
-  Tune for ARC725D CPU.
+  :samp:`ARC725D`
+    Tune for ARC725D CPU.
 
-:samp:`ARC750D`
-  Tune for ARC750D CPU.
+  :samp:`ARC750D`
+    Tune for ARC750D CPU.
 
 .. option:: -mmultcost=num
 
@@ -1517,22 +1517,22 @@ These :samp:`-m` options are defined for the ARM port:
 
   This is a synonym for :option:`-mapcs-frame` and is deprecated.
 
-@c not currently implemented
-@item -mapcs-stack-check
-@opindex mapcs-stack-check
-Generate code to check the amount of stack space available upon entry to
-every function (that actually uses some stack space).  If there is
-insufficient space available then either the function
-@code{__rt_stkovf_split_small} or @code{__rt_stkovf_split_big} is
-called, depending upon the amount of stack space required.  The runtime
-system is required to provide these functions.  The default is
-@option{-mno-apcs-stack-check}, since this produces smaller code.
+  @c not currently implemented
+  @item -mapcs-stack-check
+  @opindex mapcs-stack-check
+  Generate code to check the amount of stack space available upon entry to
+  every function (that actually uses some stack space).  If there is
+  insufficient space available then either the function
+  @code{__rt_stkovf_split_small} or @code{__rt_stkovf_split_big} is
+  called, depending upon the amount of stack space required.  The runtime
+  system is required to provide these functions.  The default is
+  @option{-mno-apcs-stack-check}, since this produces smaller code.
 
-@c not currently implemented
-@item -mapcs-reentrant
-@opindex mapcs-reentrant
-Generate reentrant, position-independent code.  The default is
-@option{-mno-apcs-reentrant}.
+  @c not currently implemented
+  @item -mapcs-reentrant
+  @opindex mapcs-reentrant
+  Generate reentrant, position-independent code.  The default is
+  @option{-mno-apcs-reentrant}.
 
 .. option:: -mthumb-interwork
 
@@ -1558,17 +1558,17 @@ Generate reentrant, position-independent code.  The default is
   Specifies which floating-point ABI to use.  Permissible values
   are: :samp:`soft`, :samp:`softfp` and :samp:`hard`.
 
-Specifying :samp:`soft` causes GCC to generate output containing
-library calls for floating-point operations.
-:samp:`softfp` allows the generation of code using hardware floating-point
-instructions, but still uses the soft-float calling conventions.
-:samp:`hard` allows generation of floating-point instructions
-and uses FPU-specific calling conventions.
+  Specifying :samp:`soft` causes GCC to generate output containing
+  library calls for floating-point operations.
+  :samp:`softfp` allows the generation of code using hardware floating-point
+  instructions, but still uses the soft-float calling conventions.
+  :samp:`hard` allows generation of floating-point instructions
+  and uses FPU-specific calling conventions.
 
-The default depends on the specific target configuration.  Note that
-the hard-float and soft-float ABIs are not link-compatible; you must
-compile your entire program with the same ABI, and link with a
-compatible set of libraries.
+  The default depends on the specific target configuration.  Note that
+  the hard-float and soft-float ABIs are not link-compatible; you must
+  compile your entire program with the same ABI, and link with a
+  compatible set of libraries.
 
 .. option:: -mgeneral-regs-only
 
@@ -1601,467 +1601,467 @@ compatible set of libraries.
   assembly code.  This option can be used in conjunction with or instead
   of the :option:`-mcpu` = option.
 
-Permissible names are:
-:samp:`armv4t`,
-:samp:`armv5t`, :samp:`armv5te`,
-:samp:`armv6`, :samp:`armv6j`, :samp:`armv6k`, :samp:`armv6kz`, :samp:`armv6t2`,
-:samp:`armv6z`, :samp:`armv6zk`,
-:samp:`armv7`, :samp:`armv7-a`, :samp:`armv7ve`, 
-:samp:`armv8-a`, :samp:`armv8.1-a`, :samp:`armv8.2-a`, :samp:`armv8.3-a`,
-:samp:`armv8.4-a`,
-:samp:`armv8.5-a`,
-:samp:`armv8.6-a`,
-:samp:`armv7-r`,
-:samp:`armv8-r`,
-:samp:`armv6-m`, :samp:`armv6s-m`,
-:samp:`armv7-m`, :samp:`armv7e-m`,
-:samp:`armv8-m.base`, :samp:`armv8-m.main`,
-:samp:`armv8.1-m.main`,
-:samp:`iwmmxt` and :samp:`iwmmxt2`.
-
-Additionally, the following architectures, which lack support for the
-Thumb execution state, are recognized but support is deprecated: :samp:`armv4`.
-
-Many of the architectures support extensions.  These can be added by
-appending :samp:`+ :samp:`{extension}`` to the architecture name.  Extension
-options are processed in order and capabilities accumulate.  An extension
-will also enable any necessary base extensions
-upon which it depends.  For example, the :samp:`+crypto` extension
-will always enable the :samp:`+simd` extension.  The exception to the
-additive construction is for extensions that are prefixed with
-:samp:`+no...`: these extensions disable the specified option and
-any other extensions that may depend on the presence of that
-extension.
-
-For example, :samp:`-march=armv7-a+simd+nofp+vfpv4` is equivalent to
-writing :samp:`-march=armv7-a+vfpv4` since the :samp:`+simd` option is
-entirely disabled by the :samp:`+nofp` option that follows it.
-
-Most extension names are generically named, but have an effect that is
-dependent upon the architecture to which it is applied.  For example,
-the :samp:`+simd` option can be applied to both :samp:`armv7-a` and
-:samp:`armv8-a` architectures, but will enable the original ARMv7-A
-Advanced SIMD (Neon) extensions for :samp:`armv7-a` and the ARMv8-A
-variant for :samp:`armv8-a`.
-
-The table below lists the supported extensions for each architecture.
-Architectures not mentioned do not support any extensions.
-
-:samp:`armv5te` :samp:`armv6` :samp:`armv6j` :samp:`armv6k` :samp:`armv6kz` :samp:`armv6t2` :samp:`armv6z` :samp:`armv6zk`
-
-  :samp:`+fp`
-    The VFPv2 floating-point instructions.  The extension :samp:`+vfpv2` can be
-    used as an alias for this extension.
-
-  :samp:`+nofp`
-    Disable the floating-point instructions.
-
-:samp:`armv7`
-  The common subset of the ARMv7-A, ARMv7-R and ARMv7-M architectures.
-
-  :samp:`+fp`
-    The VFPv3 floating-point instructions, with 16 double-precision
-    registers.  The extension :samp:`+vfpv3-d16` can be used as an alias
-    for this extension.  Note that floating-point is not supported by the
-    base ARMv7-M architecture, but is compatible with both the ARMv7-A and
-    ARMv7-R architectures.
-
-  :samp:`+nofp`
-    Disable the floating-point instructions.
-
-:samp:`armv7-a`
-
-  :samp:`+mp`
-    The multiprocessing extension.
-
-  :samp:`+sec`
-    The security extension.
-
-  :samp:`+fp`
-    The VFPv3 floating-point instructions, with 16 double-precision
-    registers.  The extension :samp:`+vfpv3-d16` can be used as an alias
-    for this extension.
-
-  :samp:`+simd`
-    The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions.
-    The extensions :samp:`+neon` and :samp:`+neon-vfpv3` can be used as aliases
-    for this extension.
-
-  :samp:`+vfpv3`
-    The VFPv3 floating-point instructions, with 32 double-precision
-    registers.
-
-  :samp:`+vfpv3-d16-fp16`
-    The VFPv3 floating-point instructions, with 16 double-precision
-    registers and the half-precision floating-point conversion operations.
-
-  :samp:`+vfpv3-fp16`
-    The VFPv3 floating-point instructions, with 32 double-precision
-    registers and the half-precision floating-point conversion operations.
-
-  :samp:`+vfpv4-d16`
-    The VFPv4 floating-point instructions, with 16 double-precision
-    registers.
+  Permissible names are:
+  :samp:`armv4t`,
+  :samp:`armv5t`, :samp:`armv5te`,
+  :samp:`armv6`, :samp:`armv6j`, :samp:`armv6k`, :samp:`armv6kz`, :samp:`armv6t2`,
+  :samp:`armv6z`, :samp:`armv6zk`,
+  :samp:`armv7`, :samp:`armv7-a`, :samp:`armv7ve`, 
+  :samp:`armv8-a`, :samp:`armv8.1-a`, :samp:`armv8.2-a`, :samp:`armv8.3-a`,
+  :samp:`armv8.4-a`,
+  :samp:`armv8.5-a`,
+  :samp:`armv8.6-a`,
+  :samp:`armv7-r`,
+  :samp:`armv8-r`,
+  :samp:`armv6-m`, :samp:`armv6s-m`,
+  :samp:`armv7-m`, :samp:`armv7e-m`,
+  :samp:`armv8-m.base`, :samp:`armv8-m.main`,
+  :samp:`armv8.1-m.main`,
+  :samp:`iwmmxt` and :samp:`iwmmxt2`.
+
+  Additionally, the following architectures, which lack support for the
+  Thumb execution state, are recognized but support is deprecated: :samp:`armv4`.
+
+  Many of the architectures support extensions.  These can be added by
+  appending :samp:`+ :samp:`{extension}`` to the architecture name.  Extension
+  options are processed in order and capabilities accumulate.  An extension
+  will also enable any necessary base extensions
+  upon which it depends.  For example, the :samp:`+crypto` extension
+  will always enable the :samp:`+simd` extension.  The exception to the
+  additive construction is for extensions that are prefixed with
+  :samp:`+no...`: these extensions disable the specified option and
+  any other extensions that may depend on the presence of that
+  extension.
+
+  For example, :samp:`-march=armv7-a+simd+nofp+vfpv4` is equivalent to
+  writing :samp:`-march=armv7-a+vfpv4` since the :samp:`+simd` option is
+  entirely disabled by the :samp:`+nofp` option that follows it.
+
+  Most extension names are generically named, but have an effect that is
+  dependent upon the architecture to which it is applied.  For example,
+  the :samp:`+simd` option can be applied to both :samp:`armv7-a` and
+  :samp:`armv8-a` architectures, but will enable the original ARMv7-A
+  Advanced SIMD (Neon) extensions for :samp:`armv7-a` and the ARMv8-A
+  variant for :samp:`armv8-a`.
+
+  The table below lists the supported extensions for each architecture.
+  Architectures not mentioned do not support any extensions.
+
+  :samp:`armv5te` :samp:`armv6` :samp:`armv6j` :samp:`armv6k` :samp:`armv6kz` :samp:`armv6t2` :samp:`armv6z` :samp:`armv6zk`
+
+    :samp:`+fp`
+      The VFPv2 floating-point instructions.  The extension :samp:`+vfpv2` can be
+      used as an alias for this extension.
+
+    :samp:`+nofp`
+      Disable the floating-point instructions.
+
+  :samp:`armv7`
+    The common subset of the ARMv7-A, ARMv7-R and ARMv7-M architectures.
+
+    :samp:`+fp`
+      The VFPv3 floating-point instructions, with 16 double-precision
+      registers.  The extension :samp:`+vfpv3-d16` can be used as an alias
+      for this extension.  Note that floating-point is not supported by the
+      base ARMv7-M architecture, but is compatible with both the ARMv7-A and
+      ARMv7-R architectures.
+
+    :samp:`+nofp`
+      Disable the floating-point instructions.
+
+  :samp:`armv7-a`
+
+    :samp:`+mp`
+      The multiprocessing extension.
+
+    :samp:`+sec`
+      The security extension.
+
+    :samp:`+fp`
+      The VFPv3 floating-point instructions, with 16 double-precision
+      registers.  The extension :samp:`+vfpv3-d16` can be used as an alias
+      for this extension.
+
+    :samp:`+simd`
+      The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions.
+      The extensions :samp:`+neon` and :samp:`+neon-vfpv3` can be used as aliases
+      for this extension.
+
+    :samp:`+vfpv3`
+      The VFPv3 floating-point instructions, with 32 double-precision
+      registers.
+
+    :samp:`+vfpv3-d16-fp16`
+      The VFPv3 floating-point instructions, with 16 double-precision
+      registers and the half-precision floating-point conversion operations.
+
+    :samp:`+vfpv3-fp16`
+      The VFPv3 floating-point instructions, with 32 double-precision
+      registers and the half-precision floating-point conversion operations.
+
+    :samp:`+vfpv4-d16`
+      The VFPv4 floating-point instructions, with 16 double-precision
+      registers.
 
-  :samp:`+vfpv4`
-    The VFPv4 floating-point instructions, with 32 double-precision
-    registers.
+    :samp:`+vfpv4`
+      The VFPv4 floating-point instructions, with 32 double-precision
+      registers.
 
-  :samp:`+neon-fp16`
-    The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions, with
-    the half-precision floating-point conversion operations.
+    :samp:`+neon-fp16`
+      The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions, with
+      the half-precision floating-point conversion operations.
 
-  :samp:`+neon-vfpv4`
-    The Advanced SIMD (Neon) v2 and the VFPv4 floating-point instructions.
+    :samp:`+neon-vfpv4`
+      The Advanced SIMD (Neon) v2 and the VFPv4 floating-point instructions.
 
-  :samp:`+nosimd`
-    Disable the Advanced SIMD instructions (does not disable floating point).
+    :samp:`+nosimd`
+      Disable the Advanced SIMD instructions (does not disable floating point).
 
-  :samp:`+nofp`
-    Disable the floating-point and Advanced SIMD instructions.
+    :samp:`+nofp`
+      Disable the floating-point and Advanced SIMD instructions.
 
-:samp:`armv7ve`
-  The extended version of the ARMv7-A architecture with support for
-  virtualization.
+  :samp:`armv7ve`
+    The extended version of the ARMv7-A architecture with support for
+    virtualization.
 
-  :samp:`+fp`
-    The VFPv4 floating-point instructions, with 16 double-precision registers.
-    The extension :samp:`+vfpv4-d16` can be used as an alias for this extension.
+    :samp:`+fp`
+      The VFPv4 floating-point instructions, with 16 double-precision registers.
+      The extension :samp:`+vfpv4-d16` can be used as an alias for this extension.
 
-  :samp:`+simd`
-    The Advanced SIMD (Neon) v2 and the VFPv4 floating-point instructions.  The
-    extension :samp:`+neon-vfpv4` can be used as an alias for this extension.
+    :samp:`+simd`
+      The Advanced SIMD (Neon) v2 and the VFPv4 floating-point instructions.  The
+      extension :samp:`+neon-vfpv4` can be used as an alias for this extension.
 
-  :samp:`+vfpv3-d16`
-    The VFPv3 floating-point instructions, with 16 double-precision
-    registers.
+    :samp:`+vfpv3-d16`
+      The VFPv3 floating-point instructions, with 16 double-precision
+      registers.
 
-  :samp:`+vfpv3`
-    The VFPv3 floating-point instructions, with 32 double-precision
-    registers.
+    :samp:`+vfpv3`
+      The VFPv3 floating-point instructions, with 32 double-precision
+      registers.
 
-  :samp:`+vfpv3-d16-fp16`
-    The VFPv3 floating-point instructions, with 16 double-precision
-    registers and the half-precision floating-point conversion operations.
+    :samp:`+vfpv3-d16-fp16`
+      The VFPv3 floating-point instructions, with 16 double-precision
+      registers and the half-precision floating-point conversion operations.
 
-  :samp:`+vfpv3-fp16`
-    The VFPv3 floating-point instructions, with 32 double-precision
-    registers and the half-precision floating-point conversion operations.
+    :samp:`+vfpv3-fp16`
+      The VFPv3 floating-point instructions, with 32 double-precision
+      registers and the half-precision floating-point conversion operations.
 
-  :samp:`+vfpv4-d16`
-    The VFPv4 floating-point instructions, with 16 double-precision
-    registers.
+    :samp:`+vfpv4-d16`
+      The VFPv4 floating-point instructions, with 16 double-precision
+      registers.
 
-  :samp:`+vfpv4`
-    The VFPv4 floating-point instructions, with 32 double-precision
-    registers.
+    :samp:`+vfpv4`
+      The VFPv4 floating-point instructions, with 32 double-precision
+      registers.
 
-  :samp:`+neon`
-    The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions.
-    The extension :samp:`+neon-vfpv3` can be used as an alias for this extension.
+    :samp:`+neon`
+      The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions.
+      The extension :samp:`+neon-vfpv3` can be used as an alias for this extension.
 
-  :samp:`+neon-fp16`
-    The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions, with
-    the half-precision floating-point conversion operations.
+    :samp:`+neon-fp16`
+      The Advanced SIMD (Neon) v1 and the VFPv3 floating-point instructions, with
+      the half-precision floating-point conversion operations.
 
-  :samp:`+nosimd`
-    Disable the Advanced SIMD instructions (does not disable floating point).
+    :samp:`+nosimd`
+      Disable the Advanced SIMD instructions (does not disable floating point).
 
-  :samp:`+nofp`
-    Disable the floating-point and Advanced SIMD instructions.
+    :samp:`+nofp`
+      Disable the floating-point and Advanced SIMD instructions.
 
-:samp:`armv8-a`
+  :samp:`armv8-a`
 
-  :samp:`+crc`
-    The Cyclic Redundancy Check (CRC) instructions.
+    :samp:`+crc`
+      The Cyclic Redundancy Check (CRC) instructions.
 
-  :samp:`+simd`
-    The ARMv8-A Advanced SIMD and floating-point instructions.
+    :samp:`+simd`
+      The ARMv8-A Advanced SIMD and floating-point instructions.
 
-  :samp:`+crypto`
-    The cryptographic instructions.
+    :samp:`+crypto`
+      The cryptographic instructions.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic instructions.
+    :samp:`+nocrypto`
+      Disable the cryptographic instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+sb`
-    Speculation Barrier Instruction.
+    :samp:`+sb`
+      Speculation Barrier Instruction.
 
-  :samp:`+predres`
-    Execution and Data Prediction Restriction Instructions.
+    :samp:`+predres`
+      Execution and Data Prediction Restriction Instructions.
 
-:samp:`armv8.1-a`
+  :samp:`armv8.1-a`
 
-  :samp:`+simd`
-    The ARMv8.1-A Advanced SIMD and floating-point instructions.
+    :samp:`+simd`
+      The ARMv8.1-A Advanced SIMD and floating-point instructions.
 
-  :samp:`+crypto`
-    The cryptographic instructions.  This also enables the Advanced SIMD and
-    floating-point instructions.
+    :samp:`+crypto`
+      The cryptographic instructions.  This also enables the Advanced SIMD and
+      floating-point instructions.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic instructions.
+    :samp:`+nocrypto`
+      Disable the cryptographic instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+sb`
-    Speculation Barrier Instruction.
+    :samp:`+sb`
+      Speculation Barrier Instruction.
 
-  :samp:`+predres`
-    Execution and Data Prediction Restriction Instructions.
+    :samp:`+predres`
+      Execution and Data Prediction Restriction Instructions.
 
-:samp:`armv8.2-a` :samp:`armv8.3-a`
+  :samp:`armv8.2-a` :samp:`armv8.3-a`
 
-  :samp:`+fp16`
-    The half-precision floating-point data processing instructions.
-    This also enables the Advanced SIMD and floating-point instructions.
+    :samp:`+fp16`
+      The half-precision floating-point data processing instructions.
+      This also enables the Advanced SIMD and floating-point instructions.
 
-  :samp:`+fp16fml`
-    The half-precision floating-point fmla extension.  This also enables
-    the half-precision floating-point extension and Advanced SIMD and
-    floating-point instructions.
+    :samp:`+fp16fml`
+      The half-precision floating-point fmla extension.  This also enables
+      the half-precision floating-point extension and Advanced SIMD and
+      floating-point instructions.
 
-  :samp:`+simd`
-    The ARMv8.1-A Advanced SIMD and floating-point instructions.
+    :samp:`+simd`
+      The ARMv8.1-A Advanced SIMD and floating-point instructions.
 
-  :samp:`+crypto`
-    The cryptographic instructions.  This also enables the Advanced SIMD and
-    floating-point instructions.
+    :samp:`+crypto`
+      The cryptographic instructions.  This also enables the Advanced SIMD and
+      floating-point instructions.
 
-  :samp:`+dotprod`
-    Enable the Dot Product extension.  This also enables Advanced SIMD instructions.
+    :samp:`+dotprod`
+      Enable the Dot Product extension.  This also enables Advanced SIMD instructions.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic extension.
+    :samp:`+nocrypto`
+      Disable the cryptographic extension.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+sb`
-    Speculation Barrier Instruction.
+    :samp:`+sb`
+      Speculation Barrier Instruction.
 
-  :samp:`+predres`
-    Execution and Data Prediction Restriction Instructions.
+    :samp:`+predres`
+      Execution and Data Prediction Restriction Instructions.
 
-  :samp:`+i8mm`
-    8-bit Integer Matrix Multiply instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+i8mm`
+      8-bit Integer Matrix Multiply instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-  :samp:`+bf16`
-    Brain half-precision floating-point instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+bf16`
+      Brain half-precision floating-point instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-:samp:`armv8.4-a`
+  :samp:`armv8.4-a`
 
-  :samp:`+fp16`
-    The half-precision floating-point data processing instructions.
-    This also enables the Advanced SIMD and floating-point instructions as well
-    as the Dot Product extension and the half-precision floating-point fmla
-    extension.
+    :samp:`+fp16`
+      The half-precision floating-point data processing instructions.
+      This also enables the Advanced SIMD and floating-point instructions as well
+      as the Dot Product extension and the half-precision floating-point fmla
+      extension.
 
-  :samp:`+simd`
-    The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
-    Dot Product extension.
+    :samp:`+simd`
+      The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
+      Dot Product extension.
 
-  :samp:`+crypto`
-    The cryptographic instructions.  This also enables the Advanced SIMD and
-    floating-point instructions as well as the Dot Product extension.
+    :samp:`+crypto`
+      The cryptographic instructions.  This also enables the Advanced SIMD and
+      floating-point instructions as well as the Dot Product extension.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic extension.
+    :samp:`+nocrypto`
+      Disable the cryptographic extension.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+sb`
-    Speculation Barrier Instruction.
+    :samp:`+sb`
+      Speculation Barrier Instruction.
 
-  :samp:`+predres`
-    Execution and Data Prediction Restriction Instructions.
+    :samp:`+predres`
+      Execution and Data Prediction Restriction Instructions.
 
-  :samp:`+i8mm`
-    8-bit Integer Matrix Multiply instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+i8mm`
+      8-bit Integer Matrix Multiply instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-  :samp:`+bf16`
-    Brain half-precision floating-point instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+bf16`
+      Brain half-precision floating-point instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-:samp:`armv8.5-a`
+  :samp:`armv8.5-a`
 
-  :samp:`+fp16`
-    The half-precision floating-point data processing instructions.
-    This also enables the Advanced SIMD and floating-point instructions as well
-    as the Dot Product extension and the half-precision floating-point fmla
-    extension.
+    :samp:`+fp16`
+      The half-precision floating-point data processing instructions.
+      This also enables the Advanced SIMD and floating-point instructions as well
+      as the Dot Product extension and the half-precision floating-point fmla
+      extension.
 
-  :samp:`+simd`
-    The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
-    Dot Product extension.
+    :samp:`+simd`
+      The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
+      Dot Product extension.
 
-  :samp:`+crypto`
-    The cryptographic instructions.  This also enables the Advanced SIMD and
-    floating-point instructions as well as the Dot Product extension.
+    :samp:`+crypto`
+      The cryptographic instructions.  This also enables the Advanced SIMD and
+      floating-point instructions as well as the Dot Product extension.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic extension.
+    :samp:`+nocrypto`
+      Disable the cryptographic extension.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+i8mm`
-    8-bit Integer Matrix Multiply instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+i8mm`
+      8-bit Integer Matrix Multiply instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-  :samp:`+bf16`
-    Brain half-precision floating-point instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+bf16`
+      Brain half-precision floating-point instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-:samp:`armv8.6-a`
+  :samp:`armv8.6-a`
 
-  :samp:`+fp16`
-    The half-precision floating-point data processing instructions.
-    This also enables the Advanced SIMD and floating-point instructions as well
-    as the Dot Product extension and the half-precision floating-point fmla
-    extension.
+    :samp:`+fp16`
+      The half-precision floating-point data processing instructions.
+      This also enables the Advanced SIMD and floating-point instructions as well
+      as the Dot Product extension and the half-precision floating-point fmla
+      extension.
 
-  :samp:`+simd`
-    The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
-    Dot Product extension.
+    :samp:`+simd`
+      The ARMv8.3-A Advanced SIMD and floating-point instructions as well as the
+      Dot Product extension.
 
-  :samp:`+crypto`
-    The cryptographic instructions.  This also enables the Advanced SIMD and
-    floating-point instructions as well as the Dot Product extension.
+    :samp:`+crypto`
+      The cryptographic instructions.  This also enables the Advanced SIMD and
+      floating-point instructions as well as the Dot Product extension.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic extension.
+    :samp:`+nocrypto`
+      Disable the cryptographic extension.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-  :samp:`+i8mm`
-    8-bit Integer Matrix Multiply instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+i8mm`
+      8-bit Integer Matrix Multiply instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-  :samp:`+bf16`
-    Brain half-precision floating-point instructions.
-    This also enables Advanced SIMD and floating-point instructions.
+    :samp:`+bf16`
+      Brain half-precision floating-point instructions.
+      This also enables Advanced SIMD and floating-point instructions.
 
-:samp:`armv7-r`
+  :samp:`armv7-r`
 
-  :samp:`+fp.sp`
-    The single-precision VFPv3 floating-point instructions.  The extension
-    :samp:`+vfpv3xd` can be used as an alias for this extension.
+    :samp:`+fp.sp`
+      The single-precision VFPv3 floating-point instructions.  The extension
+      :samp:`+vfpv3xd` can be used as an alias for this extension.
 
-  :samp:`+fp`
-    The VFPv3 floating-point instructions with 16 double-precision registers.
-    The extension +vfpv3-d16 can be used as an alias for this extension.
+    :samp:`+fp`
+      The VFPv3 floating-point instructions with 16 double-precision registers.
+      The extension +vfpv3-d16 can be used as an alias for this extension.
 
-  :samp:`+vfpv3xd-d16-fp16`
-    The single-precision VFPv3 floating-point instructions with 16 double-precision
-    registers and the half-precision floating-point conversion operations.
+    :samp:`+vfpv3xd-d16-fp16`
+      The single-precision VFPv3 floating-point instructions with 16 double-precision
+      registers and the half-precision floating-point conversion operations.
 
-  :samp:`+vfpv3-d16-fp16`
-    The VFPv3 floating-point instructions with 16 double-precision
-    registers and the half-precision floating-point conversion operations.
+    :samp:`+vfpv3-d16-fp16`
+      The VFPv3 floating-point instructions with 16 double-precision
+      registers and the half-precision floating-point conversion operations.
 
-  :samp:`+nofp`
-    Disable the floating-point extension.
+    :samp:`+nofp`
+      Disable the floating-point extension.
 
-  :samp:`+idiv`
-    The ARM-state integer division instructions.
+    :samp:`+idiv`
+      The ARM-state integer division instructions.
 
-  :samp:`+noidiv`
-    Disable the ARM-state integer division extension.
+    :samp:`+noidiv`
+      Disable the ARM-state integer division extension.
 
-:samp:`armv7e-m`
+  :samp:`armv7e-m`
 
-  :samp:`+fp`
-    The single-precision VFPv4 floating-point instructions.
+    :samp:`+fp`
+      The single-precision VFPv4 floating-point instructions.
 
-  :samp:`+fpv5`
-    The single-precision FPv5 floating-point instructions.
+    :samp:`+fpv5`
+      The single-precision FPv5 floating-point instructions.
 
-  :samp:`+fp.dp`
-    The single- and double-precision FPv5 floating-point instructions.
+    :samp:`+fp.dp`
+      The single- and double-precision FPv5 floating-point instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point extensions.
+    :samp:`+nofp`
+      Disable the floating-point extensions.
 
-:samp:`armv8.1-m.main`
+  :samp:`armv8.1-m.main`
 
-  :samp:`+dsp`
-    The DSP instructions.
+    :samp:`+dsp`
+      The DSP instructions.
 
-  :samp:`+mve`
-    The M-Profile Vector Extension (MVE) integer instructions.
+    :samp:`+mve`
+      The M-Profile Vector Extension (MVE) integer instructions.
 
-  :samp:`+mve.fp`
-    The M-Profile Vector Extension (MVE) integer and single precision
-    floating-point instructions.
+    :samp:`+mve.fp`
+      The M-Profile Vector Extension (MVE) integer and single precision
+      floating-point instructions.
 
-  :samp:`+fp`
-    The single-precision floating-point instructions.
+    :samp:`+fp`
+      The single-precision floating-point instructions.
 
-  :samp:`+fp.dp`
-    The single- and double-precision floating-point instructions.
+    :samp:`+fp.dp`
+      The single- and double-precision floating-point instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point extension.
+    :samp:`+nofp`
+      Disable the floating-point extension.
 
-  :samp:`+cdecp0, +cdecp1, ... , +cdecp7`
-    Enable the Custom Datapath Extension (CDE) on selected coprocessors according
-    to the numbers given in the options in the range 0 to 7.
+    :samp:`+cdecp0, +cdecp1, ... , +cdecp7`
+      Enable the Custom Datapath Extension (CDE) on selected coprocessors according
+      to the numbers given in the options in the range 0 to 7.
 
-:samp:`armv8-m.main`
+  :samp:`armv8-m.main`
 
-  :samp:`+dsp`
-    The DSP instructions.
+    :samp:`+dsp`
+      The DSP instructions.
 
-  :samp:`+nodsp`
-    Disable the DSP extension.
+    :samp:`+nodsp`
+      Disable the DSP extension.
 
-  :samp:`+fp`
-    The single-precision floating-point instructions.
+    :samp:`+fp`
+      The single-precision floating-point instructions.
 
-  :samp:`+fp.dp`
-    The single- and double-precision floating-point instructions.
+    :samp:`+fp.dp`
+      The single- and double-precision floating-point instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point extension.
+    :samp:`+nofp`
+      Disable the floating-point extension.
 
-  :samp:`+cdecp0, +cdecp1, ... , +cdecp7`
-    Enable the Custom Datapath Extension (CDE) on selected coprocessors according
-    to the numbers given in the options in the range 0 to 7.
+    :samp:`+cdecp0, +cdecp1, ... , +cdecp7`
+      Enable the Custom Datapath Extension (CDE) on selected coprocessors according
+      to the numbers given in the options in the range 0 to 7.
 
-:samp:`armv8-r`
+  :samp:`armv8-r`
 
-  :samp:`+crc`
-    The Cyclic Redundancy Check (CRC) instructions.
+    :samp:`+crc`
+      The Cyclic Redundancy Check (CRC) instructions.
 
-  :samp:`+fp.sp`
-    The single-precision FPv5 floating-point instructions.
+    :samp:`+fp.sp`
+      The single-precision FPv5 floating-point instructions.
 
-  :samp:`+simd`
-    The ARMv8-A Advanced SIMD and floating-point instructions.
+    :samp:`+simd`
+      The ARMv8-A Advanced SIMD and floating-point instructions.
 
-  :samp:`+crypto`
-    The cryptographic instructions.
+    :samp:`+crypto`
+      The cryptographic instructions.
 
-  :samp:`+nocrypto`
-    Disable the cryptographic instructions.
+    :samp:`+nocrypto`
+      Disable the cryptographic instructions.
 
-  :samp:`+nofp`
-    Disable the floating-point, Advanced SIMD and cryptographic instructions.
+    :samp:`+nofp`
+      Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-    :option:`-march=native` causes the compiler to auto-detect the architecture
-of the build computer.  At present, this feature is only supported on
-GNU/Linux, and not all architectures are recognized.  If the auto-detect
-is unsuccessful the option has no effect.
+      :option:`-march=native` causes the compiler to auto-detect the architecture
+  of the build computer.  At present, this feature is only supported on
+  GNU/Linux, and not all architectures are recognized.  If the auto-detect
+  is unsuccessful the option has no effect.
 
 .. option:: -mtune=name
 
@@ -2095,27 +2095,27 @@ is unsuccessful the option has no effect.
   :samp:`iwmmxt`, :samp:`iwmmxt2`, :samp:`ep9312`, :samp:`fa526`, :samp:`fa626`,
   :samp:`fa606te`, :samp:`fa626te`, :samp:`fmp626`, :samp:`fa726te`, :samp:`xgene1`.
 
-Additionally, this option can specify that GCC should tune the performance
-of the code for a big.LITTLE system.  Permissible names are:
-:samp:`cortex-a15.cortex-a7`, :samp:`cortex-a17.cortex-a7`,
-:samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
-:samp:`cortex-a72.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
-:samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55`.
+  Additionally, this option can specify that GCC should tune the performance
+  of the code for a big.LITTLE system.  Permissible names are:
+  :samp:`cortex-a15.cortex-a7`, :samp:`cortex-a17.cortex-a7`,
+  :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
+  :samp:`cortex-a72.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
+  :samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55`.
 
-:option:`-mtune=generic-`:samp:`{arch}` specifies that GCC should tune the
-performance for a blend of processors within architecture :samp:`{arch}`.
-The aim is to generate code that run well on the current most popular
-processors, balancing between optimizations that benefit some CPUs in the
-range, and avoiding performance pitfalls of other CPUs.  The effects of
-this option may change in future GCC versions as CPU models come and go.
+  :option:`-mtune=generic-`:samp:`{arch}` specifies that GCC should tune the
+  performance for a blend of processors within architecture :samp:`{arch}`.
+  The aim is to generate code that run well on the current most popular
+  processors, balancing between optimizations that benefit some CPUs in the
+  range, and avoiding performance pitfalls of other CPUs.  The effects of
+  this option may change in future GCC versions as CPU models come and go.
 
-:option:`-mtune` permits the same extension options as :option:`-mcpu` , but
-the extension options do not affect the tuning of the generated code.
+  :option:`-mtune` permits the same extension options as :option:`-mcpu` , but
+  the extension options do not affect the tuning of the generated code.
 
-:option:`-mtune=native` causes the compiler to auto-detect the CPU
-of the build computer.  At present, this feature is only supported on
-GNU/Linux, and not all architectures are recognized.  If the auto-detect is
-unsuccessful the option has no effect.
+  :option:`-mtune=native` causes the compiler to auto-detect the CPU
+  of the build computer.  At present, this feature is only supported on
+  GNU/Linux, and not all architectures are recognized.  If the auto-detect is
+  unsuccessful the option has no effect.
 
 .. option:: -mcpu=name[+extension...]
 
@@ -2126,80 +2126,80 @@ unsuccessful the option has no effect.
   is used in conjunction with :option:`-march` or :option:`-mtune` ,
   those options take precedence over the appropriate part of this option.
 
-Many of the supported CPUs implement optional architectural
-extensions.  Where this is so the architectural extensions are
-normally enabled by default.  If implementations that lack the
-extension exist, then the extension syntax can be used to disable
-those extensions that have been omitted.  For floating-point and
-Advanced SIMD (Neon) instructions, the settings of the options
-:option:`-mfloat-abi` and :option:`-mfpu` must also be considered:
-floating-point and Advanced SIMD instructions will only be used if
-:option:`-mfloat-abi` is not set to :samp:`soft`; and any setting of
-:option:`-mfpu` other than :samp:`auto` will override the available
-floating-point and SIMD extension instructions.
+  Many of the supported CPUs implement optional architectural
+  extensions.  Where this is so the architectural extensions are
+  normally enabled by default.  If implementations that lack the
+  extension exist, then the extension syntax can be used to disable
+  those extensions that have been omitted.  For floating-point and
+  Advanced SIMD (Neon) instructions, the settings of the options
+  :option:`-mfloat-abi` and :option:`-mfpu` must also be considered:
+  floating-point and Advanced SIMD instructions will only be used if
+  :option:`-mfloat-abi` is not set to :samp:`soft`; and any setting of
+  :option:`-mfpu` other than :samp:`auto` will override the available
+  floating-point and SIMD extension instructions.
 
-For example, :samp:`cortex-a9` can be found in three major
-configurations: integer only, with just a floating-point unit or with
-floating-point and Advanced SIMD.  The default is to enable all the
-instructions, but the extensions :samp:`+nosimd` and :samp:`+nofp` can
-be used to disable just the SIMD or both the SIMD and floating-point
-instructions respectively.
+  For example, :samp:`cortex-a9` can be found in three major
+  configurations: integer only, with just a floating-point unit or with
+  floating-point and Advanced SIMD.  The default is to enable all the
+  instructions, but the extensions :samp:`+nosimd` and :samp:`+nofp` can
+  be used to disable just the SIMD or both the SIMD and floating-point
+  instructions respectively.
 
-Permissible names for this option are the same as those for
-:option:`-mtune`.
+  Permissible names for this option are the same as those for
+  :option:`-mtune`.
 
-The following extension options are common to the listed CPUs:
+  The following extension options are common to the listed CPUs:
 
-:samp:`+nodsp`
-  Disable the DSP instructions on :samp:`cortex-m33`, :samp:`cortex-m35p`.
+  :samp:`+nodsp`
+    Disable the DSP instructions on :samp:`cortex-m33`, :samp:`cortex-m35p`.
 
-:samp:`+nofp`
-  Disables the floating-point instructions on :samp:`arm9e`,
-  :samp:`arm946e-s`, :samp:`arm966e-s`, :samp:`arm968e-s`, :samp:`arm10e`,
-  :samp:`arm1020e`, :samp:`arm1022e`, :samp:`arm926ej-s`,
-  :samp:`arm1026ej-s`, :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`,
-  :samp:`cortex-m4`, :samp:`cortex-m7`, :samp:`cortex-m33` and :samp:`cortex-m35p`.
-  Disables the floating-point and SIMD instructions on
-  :samp:`generic-armv7-a`, :samp:`cortex-a5`, :samp:`cortex-a7`,
-  :samp:`cortex-a8`, :samp:`cortex-a9`, :samp:`cortex-a12`,
-  :samp:`cortex-a15`, :samp:`cortex-a17`, :samp:`cortex-a15.cortex-a7`,
-  :samp:`cortex-a17.cortex-a7`, :samp:`cortex-a32`, :samp:`cortex-a35`,
-  :samp:`cortex-a53` and :samp:`cortex-a55`.
+  :samp:`+nofp`
+    Disables the floating-point instructions on :samp:`arm9e`,
+    :samp:`arm946e-s`, :samp:`arm966e-s`, :samp:`arm968e-s`, :samp:`arm10e`,
+    :samp:`arm1020e`, :samp:`arm1022e`, :samp:`arm926ej-s`,
+    :samp:`arm1026ej-s`, :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`,
+    :samp:`cortex-m4`, :samp:`cortex-m7`, :samp:`cortex-m33` and :samp:`cortex-m35p`.
+    Disables the floating-point and SIMD instructions on
+    :samp:`generic-armv7-a`, :samp:`cortex-a5`, :samp:`cortex-a7`,
+    :samp:`cortex-a8`, :samp:`cortex-a9`, :samp:`cortex-a12`,
+    :samp:`cortex-a15`, :samp:`cortex-a17`, :samp:`cortex-a15.cortex-a7`,
+    :samp:`cortex-a17.cortex-a7`, :samp:`cortex-a32`, :samp:`cortex-a35`,
+    :samp:`cortex-a53` and :samp:`cortex-a55`.
 
-:samp:`+nofp.dp`
-  Disables the double-precision component of the floating-point instructions
-  on :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52` and
-  :samp:`cortex-m7`.
+  :samp:`+nofp.dp`
+    Disables the double-precision component of the floating-point instructions
+    on :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52` and
+    :samp:`cortex-m7`.
 
-:samp:`+nosimd`
-  Disables the SIMD (but not floating-point) instructions on
-  :samp:`generic-armv7-a`, :samp:`cortex-a5`, :samp:`cortex-a7`
-  and :samp:`cortex-a9`.
+  :samp:`+nosimd`
+    Disables the SIMD (but not floating-point) instructions on
+    :samp:`generic-armv7-a`, :samp:`cortex-a5`, :samp:`cortex-a7`
+    and :samp:`cortex-a9`.
 
-:samp:`+crypto`
-  Enables the cryptographic instructions on :samp:`cortex-a32`,
-  :samp:`cortex-a35`, :samp:`cortex-a53`, :samp:`cortex-a55`, :samp:`cortex-a57`,
-  :samp:`cortex-a72`, :samp:`cortex-a73`, :samp:`cortex-a75`, :samp:`exynos-m1`,
-  :samp:`xgene1`, :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
-  :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53` and
-  :samp:`cortex-a75.cortex-a55`.
+  :samp:`+crypto`
+    Enables the cryptographic instructions on :samp:`cortex-a32`,
+    :samp:`cortex-a35`, :samp:`cortex-a53`, :samp:`cortex-a55`, :samp:`cortex-a57`,
+    :samp:`cortex-a72`, :samp:`cortex-a73`, :samp:`cortex-a75`, :samp:`exynos-m1`,
+    :samp:`xgene1`, :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
+    :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53` and
+    :samp:`cortex-a75.cortex-a55`.
 
-  Additionally the :samp:`generic-armv7-a` pseudo target defaults to
-VFPv3 with 16 double-precision registers.  It supports the following
-extension options: :samp:`mp`, :samp:`sec`, :samp:`vfpv3-d16`,
-:samp:`vfpv3`, :samp:`vfpv3-d16-fp16`, :samp:`vfpv3-fp16`,
-:samp:`vfpv4-d16`, :samp:`vfpv4`, :samp:`neon`, :samp:`neon-vfpv3`,
-:samp:`neon-fp16`, :samp:`neon-vfpv4`.  The meanings are the same as for
-the extensions to :option:`-march=armv7-a`.
+    Additionally the :samp:`generic-armv7-a` pseudo target defaults to
+  VFPv3 with 16 double-precision registers.  It supports the following
+  extension options: :samp:`mp`, :samp:`sec`, :samp:`vfpv3-d16`,
+  :samp:`vfpv3`, :samp:`vfpv3-d16-fp16`, :samp:`vfpv3-fp16`,
+  :samp:`vfpv4-d16`, :samp:`vfpv4`, :samp:`neon`, :samp:`neon-vfpv3`,
+  :samp:`neon-fp16`, :samp:`neon-vfpv4`.  The meanings are the same as for
+  the extensions to :option:`-march=armv7-a`.
 
-:option:`-mcpu=generic-`:samp:`{arch}` is also permissible, and is
-equivalent to :option:`-march`:samp:`={arch}` -mtune=generic- :samp:`{arch}`.
-See :option:`-mtune` for more information.
+  :option:`-mcpu=generic-`:samp:`{arch}` is also permissible, and is
+  equivalent to :option:`-march`:samp:`={arch}` -mtune=generic- :samp:`{arch}`.
+  See :option:`-mtune` for more information.
 
-:option:`-mcpu=native` causes the compiler to auto-detect the CPU
-of the build computer.  At present, this feature is only supported on
-GNU/Linux, and not all architectures are recognized.  If the auto-detect
-is unsuccessful the option has no effect.
+  :option:`-mcpu=native` causes the compiler to auto-detect the CPU
+  of the build computer.  At present, this feature is only supported on
+  GNU/Linux, and not all architectures are recognized.  If the auto-detect
+  is unsuccessful the option has no effect.
 
 .. option:: -mfpu=name
 
@@ -2214,19 +2214,19 @@ is unsuccessful the option has no effect.
   Note that :samp:`neon` is an alias for :samp:`neon-vfpv3` and :samp:`vfp`
   is an alias for :samp:`vfpv2`.
 
-The setting :samp:`auto` is the default and is special.  It causes the
-compiler to select the floating-point and Advanced SIMD instructions
-based on the settings of :option:`-mcpu` and :option:`-march`.
+  The setting :samp:`auto` is the default and is special.  It causes the
+  compiler to select the floating-point and Advanced SIMD instructions
+  based on the settings of :option:`-mcpu` and :option:`-march`.
 
-If the selected floating-point hardware includes the NEON extension
-(e.g. :option:`-mfpu=neon` ), note that floating-point
-operations are not generated by GCC's auto-vectorization pass unless
-:option:`-funsafe-math-optimizations` is also specified.  This is
-because NEON hardware does not fully implement the IEEE 754 standard for
-floating-point arithmetic (in particular denormal values are treated as
-zero), so the use of NEON instructions may lead to a loss of precision.
+  If the selected floating-point hardware includes the NEON extension
+  (e.g. :option:`-mfpu=neon` ), note that floating-point
+  operations are not generated by GCC's auto-vectorization pass unless
+  :option:`-funsafe-math-optimizations` is also specified.  This is
+  because NEON hardware does not fully implement the IEEE 754 standard for
+  floating-point arithmetic (in particular denormal values are treated as
+  zero), so the use of NEON instructions may lead to a loss of precision.
 
-You can also set the fpu name at function level by using the ``target("fpu=")`` function attributes (see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
+  You can also set the fpu name at function level by using the ``target("fpu=")`` function attributes (see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
 
 .. option:: -mfp16-format=name
 
@@ -2243,13 +2243,13 @@ You can also set the fpu name at function level by using the ``target("fpu=")`` 
   targeted toolchain the default value is 8.  A value of 64 is only allowed
   if the underlying ABI supports it.
 
-Specifying a larger number can produce faster, more efficient code, but
-can also increase the size of the program.  Different values are potentially
-incompatible.  Code compiled with one value cannot necessarily expect to
-work with code or libraries compiled with another value, if they exchange
-information using structures or unions.
+  Specifying a larger number can produce faster, more efficient code, but
+  can also increase the size of the program.  Different values are potentially
+  incompatible.  Code compiled with one value cannot necessarily expect to
+  work with code or libraries compiled with another value, if they exchange
+  information using structures or unions.
 
-This option is deprecated.
+  This option is deprecated.
 
 .. option:: -mabort-on-noreturn
 
@@ -2265,23 +2265,23 @@ This option is deprecated.
   lies outside of the 64-megabyte addressing range of the offset-based
   version of subroutine call instruction.
 
-Even if this switch is enabled, not all function calls are turned
-into long calls.  The heuristic is that static functions, functions
-that have the ``short_call`` attribute, functions that are inside
-the scope of a ``#pragma no_long_calls`` directive, and functions whose
-definitions have already been compiled within the current compilation
-unit are not turned into long calls.  The exceptions to this rule are
-that weak function definitions, functions with the ``long_call``
-attribute or the ``section`` attribute, and functions that are within
-the scope of a ``#pragma long_calls`` directive are always
-turned into long calls.
+  Even if this switch is enabled, not all function calls are turned
+  into long calls.  The heuristic is that static functions, functions
+  that have the ``short_call`` attribute, functions that are inside
+  the scope of a ``#pragma no_long_calls`` directive, and functions whose
+  definitions have already been compiled within the current compilation
+  unit are not turned into long calls.  The exceptions to this rule are
+  that weak function definitions, functions with the ``long_call``
+  attribute or the ``section`` attribute, and functions that are within
+  the scope of a ``#pragma long_calls`` directive are always
+  turned into long calls.
 
-This feature is not enabled by default.  Specifying
-:option:`-mno-long-calls` restores the default behavior, as does
-placing the function calls within the scope of a ``#pragma
-long_calls_off`` directive.  Note these switches have no effect on how
-the compiler generates code to handle function calls via function
-pointers.
+  This feature is not enabled by default.  Specifying
+  :option:`-mno-long-calls` restores the default behavior, as does
+  placing the function calls within the scope of a ``#pragma
+  long_calls_off`` directive.  Note these switches have no effect on how
+  the compiler generates code to handle function calls via function
+  pointers.
 
 .. option:: -msingle-pic-base
 
@@ -2312,23 +2312,23 @@ pointers.
   Write the name of each function into the text section, directly
   preceding the function prologue.  The generated code is similar to this:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-       t0
-           .ascii "arm_poke_function_name", 0
-           .align
-       t1
-           .word 0xff000000 + (t1 - t0)
-       arm_poke_function_name
-           mov     ip, sp
-           stmfd   sp!, {fp, ip, lr, pc}
-           sub     fp, ip, #4
+         t0
+             .ascii "arm_poke_function_name", 0
+             .align
+         t1
+             .word 0xff000000 + (t1 - t0)
+         arm_poke_function_name
+             mov     ip, sp
+             stmfd   sp!, {fp, ip, lr, pc}
+             sub     fp, ip, #4
 
-When performing a stack backtrace, code can inspect the value of
-``pc`` stored at ``fp + 0``.  If the trace function then looks at
-location ``pc - 12`` and the top 8 bits are set, then we know that
-there is a function name embedded immediately preceding this location
-and has length ``((pc[-3]) & 0xff000000)``.
+  When performing a stack backtrace, code can inspect the value of
+  ``pc`` stored at ``fp + 0``.  If the trace function then looks at
+  location ``pc - 12`` and the top 8 bits are set, then we know that
+  there is a function name embedded immediately preceding this location
+  and has length ``((pc[-3]) & 0xff000000)``.
 
 .. option:: -mthumb, -marm
 
@@ -2338,9 +2338,9 @@ and has length ``((pc[-3]) & 0xff000000)``.
   configuring GCC with the :option:`--with-mode`:samp:`={state}`
   configure option.
 
-You can also override the ARM and Thumb mode for each function
-by using the ``target("thumb")`` and ``target("arm")`` function attributes
-(see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
+  You can also override the ARM and Thumb mode for each function
+  by using the ``target("thumb")`` and ``target("arm")`` function attributes
+  (see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
 
 .. option:: -mflip-thumb , -mflip-thumb
 
@@ -2421,11 +2421,11 @@ by using the ``target("thumb")`` and ``target("arm")`` function attributes
   architectures.  If unaligned access is not enabled then words in packed
   data structures are accessed a byte at a time.
 
-The ARM attribute ``Tag_CPU_unaligned_access`` is set in the
-generated object file to either true or false, depending upon the
-setting of this option.  If unaligned access is enabled then the
-preprocessor symbol ``__ARM_FEATURE_UNALIGNED`` is also
-defined.
+  The ARM attribute ``Tag_CPU_unaligned_access`` is set in the
+  generated object file to either true or false, depending upon the
+  setting of this option.  If unaligned access is enabled then the
+  preprocessor symbol ``__ARM_FEATURE_UNALIGNED`` is also
+  defined.
 
 .. option:: -mneon-for-64bits
 
@@ -2486,13 +2486,13 @@ defined.
   generation features, and the user should explicitly provide the
   PIC/PIE-related options as needed.
 
-Note that static linking is not supported because it would still
-involve the dynamic linker when the program self-relocates.  If such
-behavior is acceptable, use -static and -Wl,-dynamic-linker options.
+  Note that static linking is not supported because it would still
+  involve the dynamic linker when the program self-relocates.  If such
+  behavior is acceptable, use -static and -Wl,-dynamic-linker options.
 
-The opposite :option:`-mno-fdpic` option is useful (and required) to
-build the Linux kernel using the same (``arm-*-uclinuxfdpiceabi``)
-toolchain as the one used to build the userland programs.
+  The opposite :option:`-mno-fdpic` option is useful (and required) to
+  build the Linux kernel using the same (``arm-*-uclinuxfdpiceabi``)
+  toolchain as the one used to build the userland programs.
 
 .. _avr-options:
 
@@ -2507,104 +2507,104 @@ These options are defined for AVR implementations:
 
   Specify Atmel AVR instruction set architectures (ISA) or MCU type.
 
-The default for this option is :samp:`avr2`.
+  The default for this option is :samp:`avr2`.
 
-GCC supports the following AVR devices and ISAs:
+  GCC supports the following AVR devices and ISAs:
 
-.. Copyright (C) 2012-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc/doc/include/fdl.texi.
-   This file is generated automatically using
-   gcc/config/avr/gen-avr-mmcu-texi.c from:
-    c	 gcc/config/avr/avr-arch.h
-    c	 gcc/config/avr/avr-devices.c
-    c	 gcc/config/avr/avr-mcus.def
-   Please do not edit manually.
+  .. Copyright (C) 2012-2021 Free Software Foundation, Inc.
+     This is part of the GCC manual.
+     For copying conditions, see the file gcc/doc/include/fdl.texi.
+     This file is generated automatically using
+     gcc/config/avr/gen-avr-mmcu-texi.c from:
+      c	 gcc/config/avr/avr-arch.h
+      c	 gcc/config/avr/avr-devices.c
+      c	 gcc/config/avr/avr-mcus.def
+     Please do not edit manually.
 
-``avr2``
-  'Classic' devices with up to 8 KiB of program memory.
+  ``avr2``
+    'Classic' devices with up to 8 KiB of program memory.
 
-  :samp:`{mcu}` = ``attiny22``, ``attiny26``, ``at90s2313``, ``at90s2323``, ``at90s2333``, ``at90s2343``, ``at90s4414``, ``at90s4433``, ``at90s4434``, ``at90c8534``, ``at90s8515``, ``at90s8535``.
+    :samp:`{mcu}` = ``attiny22``, ``attiny26``, ``at90s2313``, ``at90s2323``, ``at90s2333``, ``at90s2343``, ``at90s4414``, ``at90s4433``, ``at90s4434``, ``at90c8534``, ``at90s8515``, ``at90s8535``.
 
-``avr25``
-  'Classic' devices with up to 8 KiB of program memory and with the ``MOVW`` instruction.
+  ``avr25``
+    'Classic' devices with up to 8 KiB of program memory and with the ``MOVW`` instruction.
 
-  :samp:`{mcu}` = ``attiny13``, ``attiny13a``, ``attiny24``, ``attiny24a``, ``attiny25``, ``attiny261``, ``attiny261a``, ``attiny2313``, ``attiny2313a``, ``attiny43u``, ``attiny44``, ``attiny44a``, ``attiny45``, ``attiny48``, ``attiny441``, ``attiny461``, ``attiny461a``, ``attiny4313``, ``attiny84``, ``attiny84a``, ``attiny85``, ``attiny87``, ``attiny88``, ``attiny828``, ``attiny841``, ``attiny861``, ``attiny861a``, ``ata5272``, ``ata6616c``, ``at86rf401``.
+    :samp:`{mcu}` = ``attiny13``, ``attiny13a``, ``attiny24``, ``attiny24a``, ``attiny25``, ``attiny261``, ``attiny261a``, ``attiny2313``, ``attiny2313a``, ``attiny43u``, ``attiny44``, ``attiny44a``, ``attiny45``, ``attiny48``, ``attiny441``, ``attiny461``, ``attiny461a``, ``attiny4313``, ``attiny84``, ``attiny84a``, ``attiny85``, ``attiny87``, ``attiny88``, ``attiny828``, ``attiny841``, ``attiny861``, ``attiny861a``, ``ata5272``, ``ata6616c``, ``at86rf401``.
 
-``avr3``
-  'Classic' devices with 16 KiB up to 64 KiB of program memory.
+  ``avr3``
+    'Classic' devices with 16 KiB up to 64 KiB of program memory.
 
-  :samp:`{mcu}` = ``at76c711``, ``at43usb355``.
+    :samp:`{mcu}` = ``at76c711``, ``at43usb355``.
 
-``avr31``
-  'Classic' devices with 128 KiB of program memory.
+  ``avr31``
+    'Classic' devices with 128 KiB of program memory.
 
-  :samp:`{mcu}` = ``atmega103``, ``at43usb320``.
+    :samp:`{mcu}` = ``atmega103``, ``at43usb320``.
 
-``avr35``
-  'Classic' devices with 16 KiB up to 64 KiB of program memory and with the ``MOVW`` instruction.
+  ``avr35``
+    'Classic' devices with 16 KiB up to 64 KiB of program memory and with the ``MOVW`` instruction.
 
-  :samp:`{mcu}` = ``attiny167``, ``attiny1634``, ``atmega8u2``, ``atmega16u2``, ``atmega32u2``, ``ata5505``, ``ata6617c``, ``ata664251``, ``at90usb82``, ``at90usb162``.
+    :samp:`{mcu}` = ``attiny167``, ``attiny1634``, ``atmega8u2``, ``atmega16u2``, ``atmega32u2``, ``ata5505``, ``ata6617c``, ``ata664251``, ``at90usb82``, ``at90usb162``.
 
-``avr4``
-  'Enhanced' devices with up to 8 KiB of program memory.
+  ``avr4``
+    'Enhanced' devices with up to 8 KiB of program memory.
 
-  :samp:`{mcu}` = ``atmega48``, ``atmega48a``, ``atmega48p``, ``atmega48pa``, ``atmega48pb``, ``atmega8``, ``atmega8a``, ``atmega8hva``, ``atmega88``, ``atmega88a``, ``atmega88p``, ``atmega88pa``, ``atmega88pb``, ``atmega8515``, ``atmega8535``, ``ata6285``, ``ata6286``, ``ata6289``, ``ata6612c``, ``at90pwm1``, ``at90pwm2``, ``at90pwm2b``, ``at90pwm3``, ``at90pwm3b``, ``at90pwm81``.
+    :samp:`{mcu}` = ``atmega48``, ``atmega48a``, ``atmega48p``, ``atmega48pa``, ``atmega48pb``, ``atmega8``, ``atmega8a``, ``atmega8hva``, ``atmega88``, ``atmega88a``, ``atmega88p``, ``atmega88pa``, ``atmega88pb``, ``atmega8515``, ``atmega8535``, ``ata6285``, ``ata6286``, ``ata6289``, ``ata6612c``, ``at90pwm1``, ``at90pwm2``, ``at90pwm2b``, ``at90pwm3``, ``at90pwm3b``, ``at90pwm81``.
 
-``avr5``
-  'Enhanced' devices with 16 KiB up to 64 KiB of program memory.
+  ``avr5``
+    'Enhanced' devices with 16 KiB up to 64 KiB of program memory.
 
-  :samp:`{mcu}` = ``atmega16``, ``atmega16a``, ``atmega16hva``, ``atmega16hva2``, ``atmega16hvb``, ``atmega16hvbrevb``, ``atmega16m1``, ``atmega16u4``, ``atmega161``, ``atmega162``, ``atmega163``, ``atmega164a``, ``atmega164p``, ``atmega164pa``, ``atmega165``, ``atmega165a``, ``atmega165p``, ``atmega165pa``, ``atmega168``, ``atmega168a``, ``atmega168p``, ``atmega168pa``, ``atmega168pb``, ``atmega169``, ``atmega169a``, ``atmega169p``, ``atmega169pa``, ``atmega32``, ``atmega32a``, ``atmega32c1``, ``atmega32hvb``, ``atmega32hvbrevb``, ``atmega32m1``, ``atmega32u4``, ``atmega32u6``, ``atmega323``, ``atmega324a``, ``atmega324p``, ``atmega324pa``, ``atmega325``, ``atmega325a``, ``atmega325p``, ``atmega325pa``, ``atmega328``, ``atmega328p``, ``atmega328pb``, ``atmega329``, ``atmega329a``, ``atmega329p``, ``atmega329pa``, ``atmega3250``, ``atmega3250a``, ``atmega3250p``, ``atmega3250pa``, ``atmega3290``, ``atmega3290a``, ``atmega3290p``, ``atmega3290pa``, ``atmega406``, ``atmega64``, ``atmega64a``, ``atmega64c1``, ``atmega64hve``, ``atmega64hve2``, ``atmega64m1``, ``atmega64rfr2``, ``atmega640``, ``atmega644``, ``atmega644a``, ``atmega644p``, ``atmega644pa``, ``atmega644rfr2``, ``atmega645``, ``atmega645a``, ``atmega645p``, ``atmega649``, ``atmega649a``, ``atmega649p``, ``atmega6450``, ``atmega6450a``, ``atmega6450p``, ``atmega6490``, ``atmega6490a``, ``atmega6490p``, ``ata5795``, ``ata5790``, ``ata5790n``, ``ata5791``, ``ata6613c``, ``ata6614q``, ``ata5782``, ``ata5831``, ``ata8210``, ``ata8510``, ``ata5702m322``, ``at90pwm161``, ``at90pwm216``, ``at90pwm316``, ``at90can32``, ``at90can64``, ``at90scr100``, ``at90usb646``, ``at90usb647``, ``at94k``, ``m3000``.
+    :samp:`{mcu}` = ``atmega16``, ``atmega16a``, ``atmega16hva``, ``atmega16hva2``, ``atmega16hvb``, ``atmega16hvbrevb``, ``atmega16m1``, ``atmega16u4``, ``atmega161``, ``atmega162``, ``atmega163``, ``atmega164a``, ``atmega164p``, ``atmega164pa``, ``atmega165``, ``atmega165a``, ``atmega165p``, ``atmega165pa``, ``atmega168``, ``atmega168a``, ``atmega168p``, ``atmega168pa``, ``atmega168pb``, ``atmega169``, ``atmega169a``, ``atmega169p``, ``atmega169pa``, ``atmega32``, ``atmega32a``, ``atmega32c1``, ``atmega32hvb``, ``atmega32hvbrevb``, ``atmega32m1``, ``atmega32u4``, ``atmega32u6``, ``atmega323``, ``atmega324a``, ``atmega324p``, ``atmega324pa``, ``atmega325``, ``atmega325a``, ``atmega325p``, ``atmega325pa``, ``atmega328``, ``atmega328p``, ``atmega328pb``, ``atmega329``, ``atmega329a``, ``atmega329p``, ``atmega329pa``, ``atmega3250``, ``atmega3250a``, ``atmega3250p``, ``atmega3250pa``, ``atmega3290``, ``atmega3290a``, ``atmega3290p``, ``atmega3290pa``, ``atmega406``, ``atmega64``, ``atmega64a``, ``atmega64c1``, ``atmega64hve``, ``atmega64hve2``, ``atmega64m1``, ``atmega64rfr2``, ``atmega640``, ``atmega644``, ``atmega644a``, ``atmega644p``, ``atmega644pa``, ``atmega644rfr2``, ``atmega645``, ``atmega645a``, ``atmega645p``, ``atmega649``, ``atmega649a``, ``atmega649p``, ``atmega6450``, ``atmega6450a``, ``atmega6450p``, ``atmega6490``, ``atmega6490a``, ``atmega6490p``, ``ata5795``, ``ata5790``, ``ata5790n``, ``ata5791``, ``ata6613c``, ``ata6614q``, ``ata5782``, ``ata5831``, ``ata8210``, ``ata8510``, ``ata5702m322``, ``at90pwm161``, ``at90pwm216``, ``at90pwm316``, ``at90can32``, ``at90can64``, ``at90scr100``, ``at90usb646``, ``at90usb647``, ``at94k``, ``m3000``.
 
-``avr51``
-  'Enhanced' devices with 128 KiB of program memory.
+  ``avr51``
+    'Enhanced' devices with 128 KiB of program memory.
 
-  :samp:`{mcu}` = ``atmega128``, ``atmega128a``, ``atmega128rfa1``, ``atmega128rfr2``, ``atmega1280``, ``atmega1281``, ``atmega1284``, ``atmega1284p``, ``atmega1284rfr2``, ``at90can128``, ``at90usb1286``, ``at90usb1287``.
+    :samp:`{mcu}` = ``atmega128``, ``atmega128a``, ``atmega128rfa1``, ``atmega128rfr2``, ``atmega1280``, ``atmega1281``, ``atmega1284``, ``atmega1284p``, ``atmega1284rfr2``, ``at90can128``, ``at90usb1286``, ``at90usb1287``.
 
-``avr6``
-  'Enhanced' devices with 3-byte PC, i.e. with more than 128 KiB of program memory.
+  ``avr6``
+    'Enhanced' devices with 3-byte PC, i.e. with more than 128 KiB of program memory.
 
-  :samp:`{mcu}` = ``atmega256rfr2``, ``atmega2560``, ``atmega2561``, ``atmega2564rfr2``.
+    :samp:`{mcu}` = ``atmega256rfr2``, ``atmega2560``, ``atmega2561``, ``atmega2564rfr2``.
 
-``avrxmega2``
-  'XMEGA' devices with more than 8 KiB and up to 64 KiB of program memory.
+  ``avrxmega2``
+    'XMEGA' devices with more than 8 KiB and up to 64 KiB of program memory.
 
-  :samp:`{mcu}` = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``.
+    :samp:`{mcu}` = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``.
 
-``avrxmega3``
-  'XMEGA' devices with up to 64 KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
+  ``avrxmega3``
+    'XMEGA' devices with up to 64 KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
 
-  :samp:`{mcu}` = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``.
+    :samp:`{mcu}` = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``.
 
-``avrxmega4``
-  'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory.
+  ``avrxmega4``
+    'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory.
 
-  :samp:`{mcu}` = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``.
+    :samp:`{mcu}` = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``.
 
-``avrxmega5``
-  'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory and more than 64 KiB of RAM.
+  ``avrxmega5``
+    'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory and more than 64 KiB of RAM.
 
-  :samp:`{mcu}` = ``atxmega64a1``, ``atxmega64a1u``.
+    :samp:`{mcu}` = ``atxmega64a1``, ``atxmega64a1u``.
 
-``avrxmega6``
-  'XMEGA' devices with more than 128 KiB of program memory.
+  ``avrxmega6``
+    'XMEGA' devices with more than 128 KiB of program memory.
 
-  :samp:`{mcu}` = ``atxmega128a3``, ``atxmega128a3u``, ``atxmega128b1``, ``atxmega128b3``, ``atxmega128c3``, ``atxmega128d3``, ``atxmega128d4``, ``atxmega192a3``, ``atxmega192a3u``, ``atxmega192c3``, ``atxmega192d3``, ``atxmega256a3``, ``atxmega256a3b``, ``atxmega256a3bu``, ``atxmega256a3u``, ``atxmega256c3``, ``atxmega256d3``, ``atxmega384c3``, ``atxmega384d3``.
+    :samp:`{mcu}` = ``atxmega128a3``, ``atxmega128a3u``, ``atxmega128b1``, ``atxmega128b3``, ``atxmega128c3``, ``atxmega128d3``, ``atxmega128d4``, ``atxmega192a3``, ``atxmega192a3u``, ``atxmega192c3``, ``atxmega192d3``, ``atxmega256a3``, ``atxmega256a3b``, ``atxmega256a3bu``, ``atxmega256a3u``, ``atxmega256c3``, ``atxmega256d3``, ``atxmega384c3``, ``atxmega384d3``.
 
-``avrxmega7``
-  'XMEGA' devices with more than 128 KiB of program memory and more than 64 KiB of RAM.
+  ``avrxmega7``
+    'XMEGA' devices with more than 128 KiB of program memory and more than 64 KiB of RAM.
 
-  :samp:`{mcu}` = ``atxmega128a1``, ``atxmega128a1u``, ``atxmega128a4u``.
+    :samp:`{mcu}` = ``atxmega128a1``, ``atxmega128a1u``, ``atxmega128a4u``.
 
-``avrtiny``
-  'TINY' Tiny core devices with 512 B up to 4 KiB of program memory.
+  ``avrtiny``
+    'TINY' Tiny core devices with 512 B up to 4 KiB of program memory.
 
-  :samp:`{mcu}` = ``attiny4``, ``attiny5``, ``attiny9``, ``attiny10``, ``attiny20``, ``attiny40``.
+    :samp:`{mcu}` = ``attiny4``, ``attiny5``, ``attiny9``, ``attiny10``, ``attiny20``, ``attiny40``.
 
-``avr1``
-  This ISA is implemented by the minimal AVR core and supported for assembler only.
+  ``avr1``
+    This ISA is implemented by the minimal AVR core and supported for assembler only.
 
-  :samp:`{mcu}` = ``attiny11``, ``attiny12``, ``attiny15``, ``attiny28``, ``at90s1200``.
+    :samp:`{mcu}` = ``attiny11``, ``attiny12``, ``attiny15``, ``attiny28``, ``at90s1200``.
 
 .. option:: -mabsdata
 
@@ -2620,14 +2620,14 @@ GCC supports the following AVR devices and ISAs:
   prologue/epilogue.  Without this option, outgoing arguments are pushed
   before calling a function and popped afterwards.
 
-Popping the arguments after the function call can be expensive on
-AVR so that accumulating the stack space might lead to smaller
-executables because arguments need not be removed from the
-stack after such a function call.
+  Popping the arguments after the function call can be expensive on
+  AVR so that accumulating the stack space might lead to smaller
+  executables because arguments need not be removed from the
+  stack after such a function call.
 
-This option can lead to reduced code size for functions that perform
-several calls to functions that get their arguments on the stack like
-calls to printf-like functions.
+  This option can lead to reduced code size for functions that perform
+  several calls to functions that get their arguments on the stack like
+  calls to printf-like functions.
 
 .. option:: -mbranch-cost=cost
 
@@ -2691,13 +2691,13 @@ calls to printf-like functions.
   the assembler's command line and the :option:`--relax` option to the
   linker's command line.
 
-Jump relaxing is performed by the linker because jump offsets are not
-known before code is located. Therefore, the assembler code generated by the
-compiler is the same, but the instructions in the executable may
-differ from instructions in the assembler code.
+  Jump relaxing is performed by the linker because jump offsets are not
+  known before code is located. Therefore, the assembler code generated by the
+  compiler is the same, but the instructions in the executable may
+  differ from instructions in the assembler code.
 
-Relaxing must be turned on if linker stubs are needed, see the
-section on ``EIND`` and linker stubs below.
+  Relaxing must be turned on if linker stubs are needed, see the
+  section on ``EIND`` and linker stubs below.
 
 .. option:: -mrmw
 
@@ -2709,8 +2709,8 @@ section on ``EIND`` and linker stubs below.
   Assume that ``RJMP`` and ``RCALL`` can target the whole
   program memory.
 
-This option is used internally for multilib selection.  It is
-not an optimization option, and you don't need to set it by hand.
+  This option is used internally for multilib selection.  It is
+  not an optimization option, and you don't need to set it by hand.
 
 .. option:: -msp8
 
@@ -2718,14 +2718,14 @@ not an optimization option, and you don't need to set it by hand.
   i.e. assume the high byte of the stack pointer is zero.
   In general, you don't need to set this option by hand.
 
-This option is used internally by the compiler to select and
-build multilibs for architectures ``avr2`` and ``avr25``.
-These architectures mix devices with and without ``SPH``.
-For any setting other than :option:`-mmcu=avr2` or :option:`-mmcu=avr25`
-the compiler driver adds or removes this option from the compiler
-proper's command line, because the compiler then knows if the device
-or architecture has an 8-bit stack pointer and thus no ``SPH``
-register or not.
+  This option is used internally by the compiler to select and
+  build multilibs for architectures ``avr2`` and ``avr25``.
+  These architectures mix devices with and without ``SPH``.
+  For any setting other than :option:`-mmcu=avr2` or :option:`-mmcu=avr25`
+  the compiler driver adds or removes this option from the compiler
+  proper's command line, because the compiler then knows if the device
+  or architecture has an 8-bit stack pointer and thus no ``SPH``
+  register or not.
 
 .. option:: -mstrict-X
 
@@ -2733,18 +2733,18 @@ register or not.
   that ``X`` is only used in indirect, post-increment or
   pre-decrement addressing.
 
-Without this option, the ``X`` register may be used in the same way
-as ``Y`` or ``Z`` which then is emulated by additional
-instructions.  
-For example, loading a value with ``X+const`` addressing with a
-small non-negative ``const < 64`` to a register :samp:`{Rn}` is
-performed as
+  Without this option, the ``X`` register may be used in the same way
+  as ``Y`` or ``Z`` which then is emulated by additional
+  instructions.  
+  For example, loading a value with ``X+const`` addressing with a
+  small non-negative ``const < 64`` to a register :samp:`{Rn}` is
+  performed as
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  adiw r26, const   ; X += const
-  ld   :samp:`{Rn}` , X        ; :samp:`{Rn}` = *X
-  sbiw r26, const   ; X -= const
+    adiw r26, const   ; X += const
+    ld   :samp:`{Rn}` , X        ; :samp:`{Rn}` = *X
+    sbiw r26, const   ; X -= const
 
 .. option:: -mtiny-stack
 
@@ -2767,10 +2767,10 @@ performed as
   file by means of :option:`-specs`:samp:`={path-to-specs-file}`.  There is no
   more need for option :option:`-mmcu`:samp:`={mcu}`.
 
-This option can also serve as a replacement for the older way of
-specifying custom device-specs files that needed :option:`-B `:samp:`{some-path}` to point to a directory
-which contains a folder named ``device-specs`` which contains a specs file named
-``specs- :samp:`{mcu}```, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
+  This option can also serve as a replacement for the older way of
+  specifying custom device-specs files that needed :option:`-B `:samp:`{some-path}` to point to a directory
+  which contains a folder named ``device-specs`` which contains a specs file named
+  ``specs- :samp:`{mcu}```, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
 
 .. option:: -Waddr-space-convert, -Wno-addr-space-convert
 
@@ -3143,26 +3143,26 @@ Blackfin Options
   :samp:`bf542m`, :samp:`bf544m`, :samp:`bf547m`, :samp:`bf548m`, :samp:`bf549m`,
   :samp:`bf561`, :samp:`bf592`.
 
-The optional :samp:`{sirevision}` specifies the silicon revision of the target
-Blackfin processor.  Any workarounds available for the targeted silicon revision
-are enabled.  If :samp:`{sirevision}` is :samp:`none`, no workarounds are enabled.
-If :samp:`{sirevision}` is :samp:`any`, all workarounds for the targeted processor
-are enabled.  The ``__SILICON_REVISION__`` macro is defined to two
-hexadecimal digits representing the major and minor numbers in the silicon
-revision.  If :samp:`{sirevision}` is :samp:`none`, the ``__SILICON_REVISION__``
-is not defined.  If :samp:`{sirevision}` is :samp:`any`, the
-``__SILICON_REVISION__`` is defined to be ``0xffff``.
-If this optional :samp:`{sirevision}` is not used, GCC assumes the latest known
-silicon revision of the targeted Blackfin processor.
+  The optional :samp:`{sirevision}` specifies the silicon revision of the target
+  Blackfin processor.  Any workarounds available for the targeted silicon revision
+  are enabled.  If :samp:`{sirevision}` is :samp:`none`, no workarounds are enabled.
+  If :samp:`{sirevision}` is :samp:`any`, all workarounds for the targeted processor
+  are enabled.  The ``__SILICON_REVISION__`` macro is defined to two
+  hexadecimal digits representing the major and minor numbers in the silicon
+  revision.  If :samp:`{sirevision}` is :samp:`none`, the ``__SILICON_REVISION__``
+  is not defined.  If :samp:`{sirevision}` is :samp:`any`, the
+  ``__SILICON_REVISION__`` is defined to be ``0xffff``.
+  If this optional :samp:`{sirevision}` is not used, GCC assumes the latest known
+  silicon revision of the targeted Blackfin processor.
 
-GCC defines a preprocessor macro for the specified :samp:`{cpu}`.
-For the :samp:`bfin-elf` toolchain, this option causes the hardware BSP
-provided by libgloss to be linked in if :option:`-msim` is not given.
+  GCC defines a preprocessor macro for the specified :samp:`{cpu}`.
+  For the :samp:`bfin-elf` toolchain, this option causes the hardware BSP
+  provided by libgloss to be linked in if :option:`-msim` is not given.
 
-Without this option, :samp:`bf532` is used as the processor by default.
+  Without this option, :samp:`bf532` is used as the processor by default.
 
-Note that support for :samp:`bf561` is incomplete.  For :samp:`bf561`,
-only the preprocessor macro is defined.
+  Note that support for :samp:`bf561` is incomplete.  For :samp:`bf561`,
+  only the preprocessor macro is defined.
 
 .. option:: -msim
 
@@ -3264,10 +3264,10 @@ only the preprocessor macro is defined.
   lies outside of the 24-bit addressing range of the offset-based
   version of subroutine call instruction.
 
-This feature is not enabled by default.  Specifying
-:option:`-mno-long-calls` restores the default behavior.  Note these
-switches have no effect on how the compiler generates code to handle
-function calls via function pointers.
+  This feature is not enabled by default.  Specifying
+  :option:`-mno-long-calls` restores the default behavior.  Note these
+  switches have no effect on how the compiler generates code to handle
+  function calls via function pointers.
 
 .. option:: -mfast-fp
 
@@ -3287,14 +3287,14 @@ function calls via function pointers.
   multicore to be used, and defines the macro ``__BFIN_MULTICORE``. 
   It can only be used with :option:`-mcpu=bf561` [- :samp:`{sirevision}` ]. 
 
-This option can be used with :option:`-mcorea` or :option:`-mcoreb` , which
-selects the one-application-per-core programming model.  Without
-:option:`-mcorea` or :option:`-mcoreb` , the single-application/dual-core
-programming model is used. In this model, the main function of Core B
-should be named as ``coreb_main``.
+  This option can be used with :option:`-mcorea` or :option:`-mcoreb` , which
+  selects the one-application-per-core programming model.  Without
+  :option:`-mcorea` or :option:`-mcoreb` , the single-application/dual-core
+  programming model is used. In this model, the main function of Core B
+  should be named as ``coreb_main``.
 
-If this option is not used, the single-core application programming
-model is used.
+  If this option is not used, the single-core application programming
+  model is used.
 
 .. option:: -mcorea
 
@@ -3562,17 +3562,17 @@ GCC supports these options when compiling for C-SKY V2 processors.
   Specifies which floating-point ABI to use.  Permissible values
   are: :samp:`soft`, :samp:`softfp` and :samp:`hard`.
 
-Specifying :samp:`soft` causes GCC to generate output containing
-library calls for floating-point operations.
-:samp:`softfp` allows the generation of code using hardware floating-point
-instructions, but still uses the soft-float calling conventions.
-:samp:`hard` allows generation of floating-point instructions
-and uses FPU-specific calling conventions.
+  Specifying :samp:`soft` causes GCC to generate output containing
+  library calls for floating-point operations.
+  :samp:`softfp` allows the generation of code using hardware floating-point
+  instructions, but still uses the soft-float calling conventions.
+  :samp:`hard` allows generation of floating-point instructions
+  and uses FPU-specific calling conventions.
 
-The default depends on the specific target configuration.  Note that
-the hard-float and soft-float ABIs are not link-compatible; you must
-compile your entire program with the same ABI, and link with a
-compatible set of libraries.
+  The default depends on the specific target configuration.  Note that
+  the hard-float and soft-float ABIs are not link-compatible; you must
+  compile your entire program with the same ABI, and link with a
+  compatible set of libraries.
 
 .. option:: -mhard-float, -msoft-float
 
@@ -3609,9 +3609,9 @@ compatible set of libraries.
 
   Enable interrupt stack instructions; the default is off.
 
-The :option:`-mistack` option is required to handle the
-``interrupt`` and ``isr`` function attributes
-(see :ref:`c-sky-function-attributes`).
+  The :option:`-mistack` option is required to handle the
+  ``interrupt`` and ``isr`` function attributes
+  (see :ref:`c-sky-function-attributes`).
 
 .. option:: -mmp
 
@@ -3742,26 +3742,26 @@ restrictive subtype of any of its input files.
   interleaved with those specified by :option:`-I` options and are
   scanned in a left-to-right order.
 
-A framework directory is a directory with frameworks in it.  A
-framework is a directory with a Headers and/or
-PrivateHeaders directory contained directly in it that ends
-in .framework.  The name of a framework is the name of this
-directory excluding the .framework.  Headers associated with
-the framework are found in one of those two directories, with
-Headers being searched first.  A subframework is a framework
-directory that is in a framework's Frameworks directory.
-Includes of subframework headers can only appear in a header of a
-framework that contains the subframework, or in a sibling subframework
-header.  Two subframeworks are siblings if they occur in the same
-framework.  A subframework should not have the same name as a
-framework; a warning is issued if this is violated.  Currently a
-subframework cannot have subframeworks; in the future, the mechanism
-may be extended to support this.  The standard frameworks can be found
-in /System/Library/Frameworks and
-/Library/Frameworks.  An example include looks like
-``#include <Framework/header.h>``, where Framework denotes
-the name of the framework and header.h is found in the
-PrivateHeaders or Headers directory.
+  A framework directory is a directory with frameworks in it.  A
+  framework is a directory with a Headers and/or
+  PrivateHeaders directory contained directly in it that ends
+  in .framework.  The name of a framework is the name of this
+  directory excluding the .framework.  Headers associated with
+  the framework are found in one of those two directories, with
+  Headers being searched first.  A subframework is a framework
+  directory that is in a framework's Frameworks directory.
+  Includes of subframework headers can only appear in a header of a
+  framework that contains the subframework, or in a sibling subframework
+  header.  Two subframeworks are siblings if they occur in the same
+  framework.  A subframework should not have the same name as a
+  framework; a warning is issued if this is violated.  Currently a
+  subframework cannot have subframeworks; in the future, the mechanism
+  may be extended to support this.  The standard frameworks can be found
+  in /System/Library/Frameworks and
+  /Library/Frameworks.  An example include looks like
+  ``#include <Framework/header.h>``, where Framework denotes
+  the name of the framework and header.h is found in the
+  PrivateHeaders or Headers directory.
 
 .. option:: -iframeworkdir, -iframework
 
@@ -3808,11 +3808,11 @@ PrivateHeaders or Headers directory.
   Darwin/PowerPC and ``1`` when compiling for Darwin/x86, so this
   option has no effect on x86.
 
-Warning: The :option:`-mone-byte-bool` switch causes GCC
-to generate code that is not binary compatible with code generated
-without that switch.  Using this switch may require recompiling all
-other modules in a program, including system libraries.  Use this
-switch to conform to a non-default data model.
+  Warning: The :option:`-mone-byte-bool` switch causes GCC
+  to generate code that is not binary compatible with code generated
+  without that switch.  Using this switch may require recompiling all
+  other modules in a program, including system libraries.  Use this
+  switch to conform to a non-default data model.
 
 .. option:: -mfix-and-continue, -ffix-and-continue, -findirect-data
 
@@ -3880,8 +3880,8 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   operations, you must ensure that the library is built so as not to call
   them.
 
-Note that Alpha implementations without floating-point operations are
-required to have floating-point registers.
+  Note that Alpha implementations without floating-point operations are
+  required to have floating-point registers.
 
 .. option:: -mfp-reg, -mno-fp-regs
 
@@ -3894,8 +3894,8 @@ required to have floating-point registers.
   compiled with :option:`-mno-fp-regs` must also be compiled with that
   option.
 
-A typical use of this option is building a kernel that does not use,
-and hence need not save and restore, any floating-point registers.
+  A typical use of this option is building a kernel that does not use,
+  and hence need not save and restore, any floating-point registers.
 
 .. option:: -mieee
 
@@ -3928,21 +3928,21 @@ and hence need not save and restore, any floating-point registers.
   Other Alpha compilers call this option :option:`-fptm `:samp:`{trap-mode}`.
   The trap mode can be set to one of four values:
 
-:samp:`n`
-  This is the default (normal) setting.  The only traps that are enabled
-  are the ones that cannot be disabled in software (e.g., division by zero
-  trap).
+  :samp:`n`
+    This is the default (normal) setting.  The only traps that are enabled
+    are the ones that cannot be disabled in software (e.g., division by zero
+    trap).
 
-:samp:`u`
-  In addition to the traps enabled by :samp:`n`, underflow traps are enabled
-  as well.
+  :samp:`u`
+    In addition to the traps enabled by :samp:`n`, underflow traps are enabled
+    as well.
 
-:samp:`su`
-  Like :samp:`u`, but the instructions are marked to be safe for software
-  completion (see Alpha architecture manual for details).
+  :samp:`su`
+    Like :samp:`u`, but the instructions are marked to be safe for software
+    completion (see Alpha architecture manual for details).
 
-:samp:`sui`
-  Like :samp:`su`, but inexact traps are enabled as well.
+  :samp:`sui`
+    Like :samp:`su`, but inexact traps are enabled as well.
 
 .. option:: -mfp-rounding-mode=rounding-mode
 
@@ -3950,23 +3950,23 @@ and hence need not save and restore, any floating-point registers.
   :option:`-fprm `:samp:`{rounding-mode}`.  The :samp:`{rounding-mode}` can be one
   of:
 
-:samp:`n`
-  Normal IEEE rounding mode.  Floating-point numbers are rounded towards
-  the nearest machine number or towards the even machine number in case
-  of a tie.
+  :samp:`n`
+    Normal IEEE rounding mode.  Floating-point numbers are rounded towards
+    the nearest machine number or towards the even machine number in case
+    of a tie.
 
-:samp:`m`
-  Round towards minus infinity.
+  :samp:`m`
+    Round towards minus infinity.
 
-:samp:`c`
-  Chopped rounding mode.  Floating-point numbers are rounded towards zero.
+  :samp:`c`
+    Chopped rounding mode.  Floating-point numbers are rounded towards zero.
 
-:samp:`d`
-  Dynamic rounding mode.  A field in the floating-point control register
-  ( :samp:`{fpcr}` , see Alpha architecture reference manual) controls the
-  rounding mode in effect.  The C library initializes this register for
-  rounding towards plus infinity.  Thus, unless your program modifies the
-  :samp:`{fpcr}` , :samp:`d` corresponds to round towards plus infinity.
+  :samp:`d`
+    Dynamic rounding mode.  A field in the floating-point control register
+    ( :samp:`{fpcr}` , see Alpha architecture reference manual) controls the
+    rounding mode in effect.  The C library initializes this register for
+    rounding towards plus infinity.  Thus, unless your program modifies the
+    :samp:`{fpcr}` , :samp:`d` corresponds to round towards plus infinity.
 
 .. option:: -mtrap-precision=trap-precision
 
@@ -3978,20 +3978,20 @@ and hence need not save and restore, any floating-point registers.
   Depending on the requirements of an application, different levels of
   precisions can be selected:
 
-:samp:`p`
-  Program precision.  This option is the default and means a trap handler
-  can only identify which program caused a floating-point exception.
+  :samp:`p`
+    Program precision.  This option is the default and means a trap handler
+    can only identify which program caused a floating-point exception.
 
-:samp:`f`
-  Function precision.  The trap handler can determine the function that
-  caused a floating-point exception.
+  :samp:`f`
+    Function precision.  The trap handler can determine the function that
+    caused a floating-point exception.
 
-:samp:`i`
-  Instruction precision.  The trap handler can determine the exact
-  instruction that caused a floating-point exception.
+  :samp:`i`
+    Instruction precision.  The trap handler can determine the exact
+    instruction that caused a floating-point exception.
 
-  Other Alpha compilers provide the equivalent options called
-:option:`-scope_safe` and :option:`-resumption_safe`.
+    Other Alpha compilers provide the equivalent options called
+  :option:`-scope_safe` and :option:`-resumption_safe`.
 
 .. option:: -mieee-conformant
 
@@ -4008,12 +4008,12 @@ and hence need not save and restore, any floating-point registers.
   instructions.  If it cannot, it outputs the constant as a literal and
   generates code to load it from the data segment at run time.
 
-Use this option to require GCC to construct *all* integer constants
-using code, even if it takes more instructions (the maximum is six).
+  Use this option to require GCC to construct *all* integer constants
+  using code, even if it takes more instructions (the maximum is six).
 
-You typically use this option to build a shared library dynamic
-loader.  Itself a shared library, it must relocate itself in memory
-before it can find the variables and constants in its own data segment.
+  You typically use this option to build a shared library dynamic
+  loader.  Itself a shared library, it must relocate itself in memory
+  before it can find the variables and constants in its own data segment.
 
 .. option:: -mbwx, -mno-bwx, -mcix, -mno-cix, -mfix, -mno-fix, -mmax, -mno-max
 
@@ -4047,13 +4047,13 @@ before it can find the variables and constants in its own data segment.
   size of the small data area to 64KB, but allows the variables to be
   directly accessed via a single instruction.
 
-The default is :option:`-mlarge-data`.  With this option the data area
-is limited to just below 2GB.  Programs that require more than 2GB of
-data must use ``malloc`` or ``mmap`` to allocate the data in the
-heap instead of in the program's data segment.
+  The default is :option:`-mlarge-data`.  With this option the data area
+  is limited to just below 2GB.  Programs that require more than 2GB of
+  data must use ``malloc`` or ``mmap`` to allocate the data in the
+  heap instead of in the program's data segment.
 
-When generating code for shared libraries, :option:`-fpic` implies
-:option:`-msmall-data` and :option:`-fPIC` implies :option:`-mlarge-data`.
+  When generating code for shared libraries, :option:`-fpic` implies
+  :option:`-msmall-data` and :option:`-fPIC` implies :option:`-mlarge-data`.
 
 .. option:: -msmall-text, -mlarge-text
 
@@ -4064,7 +4064,7 @@ When generating code for shared libraries, :option:`-fpic` implies
   same ``$gp`` value, and thus reduce the number of instructions
   required for a function call from 4 to 1.
 
-The default is :option:`-mlarge-text`.
+  The default is :option:`-mlarge-text`.
 
 .. option:: -mcpu=cpu_type
 
@@ -4076,40 +4076,40 @@ The default is :option:`-mlarge-text`.
   you specify.  If you do not specify a processor type, GCC defaults
   to the processor on which the compiler was built.
 
-Supported values for :samp:`{cpu_type}` are
+  Supported values for :samp:`{cpu_type}` are
 
-:samp:`ev4` :samp:`ev45` :samp:`21064`
-  Schedules as an EV4 and has no instruction set extensions.
+  :samp:`ev4` :samp:`ev45` :samp:`21064`
+    Schedules as an EV4 and has no instruction set extensions.
 
-:samp:`ev5` :samp:`21164`
-  Schedules as an EV5 and has no instruction set extensions.
+  :samp:`ev5` :samp:`21164`
+    Schedules as an EV5 and has no instruction set extensions.
 
-:samp:`ev56` :samp:`21164a`
-  Schedules as an EV5 and supports the BWX extension.
+  :samp:`ev56` :samp:`21164a`
+    Schedules as an EV5 and supports the BWX extension.
 
-:samp:`pca56` :samp:`21164pc` :samp:`21164PC`
-  Schedules as an EV5 and supports the BWX and MAX extensions.
+  :samp:`pca56` :samp:`21164pc` :samp:`21164PC`
+    Schedules as an EV5 and supports the BWX and MAX extensions.
 
-:samp:`ev6` :samp:`21264`
-  Schedules as an EV6 and supports the BWX, FIX, and MAX extensions.
+  :samp:`ev6` :samp:`21264`
+    Schedules as an EV6 and supports the BWX, FIX, and MAX extensions.
 
-:samp:`ev67` :samp:`21264a`
-  Schedules as an EV6 and supports the BWX, CIX, FIX, and MAX extensions.
+  :samp:`ev67` :samp:`21264a`
+    Schedules as an EV6 and supports the BWX, CIX, FIX, and MAX extensions.
 
-  Native toolchains also support the value :samp:`native`,
-which selects the best architecture option for the host processor.
-:option:`-mcpu=native` has no effect if GCC does not recognize
-the processor.
+    Native toolchains also support the value :samp:`native`,
+  which selects the best architecture option for the host processor.
+  :option:`-mcpu=native` has no effect if GCC does not recognize
+  the processor.
 
 .. option:: -mtune=cpu_type
 
   Set only the instruction scheduling parameters for machine type
   :samp:`{cpu_type}`.  The instruction set is not changed.
 
-Native toolchains also support the value :samp:`native`,
-which selects the best architecture option for the host processor.
-:option:`-mtune=native` has no effect if GCC does not recognize
-the processor.
+  Native toolchains also support the value :samp:`native`,
+  which selects the best architecture option for the host processor.
+  :option:`-mtune=native` has no effect if GCC does not recognize
+  the processor.
 
 .. option:: -mmemory-latency=time
 
@@ -4118,18 +4118,18 @@ the processor.
   dependent on the memory access patterns used by the application
   and the size of the external cache on the machine.
 
-Valid options for :samp:`{time}` are
+  Valid options for :samp:`{time}` are
 
-:samp:`number`
-  A decimal number representing clock cycles.
+  :samp:`number`
+    A decimal number representing clock cycles.
 
-:samp:`L1` :samp:`L2` :samp:`L3` :samp:`main`
-  The compiler contains estimates of the number of clock cycles for
-  'typical' EV4 & EV5 hardware for the Level 1, 2 & 3 caches
-  (also called Dcache, Scache, and Bcache), as well as to main memory.
-  Note that L3 is only valid for EV5.
+  :samp:`L1` :samp:`L2` :samp:`L3` :samp:`main`
+    The compiler contains estimates of the number of clock cycles for
+    'typical' EV4 & EV5 hardware for the Level 1, 2 & 3 caches
+    (also called Dcache, Scache, and Bcache), as well as to main memory.
+    Note that L3 is only valid for EV5.
 
-  .. _ebpf-options:
+.. _ebpf-options:
 
 eBPF Options
 ^^^^^^^^^^^^
@@ -4392,86 +4392,86 @@ FRV Options
 
   Enable the use of conditional-move instructions (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-cond-move
 
   Disable the use of conditional-move instructions.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mscc
 
   Enable the use of conditional set instructions (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-scc
 
   Disable the use of conditional set instructions.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mcond-exec
 
   Enable the use of conditional execution (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-cond-exec
 
   Disable the use of conditional execution.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mvliw-branch
 
   Run a pass to pack branches into VLIW instructions (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-vliw-branch
 
   Do not run a pass to pack branches into VLIW instructions.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mmulti-cond-exec
 
   Enable optimization of ``&&`` and ``||`` in conditional execution
   (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-multi-cond-exec
 
   Disable optimization of ``&&`` and ``||`` in conditional execution.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mnested-cond-exec
 
   Enable nested conditional execution optimizations (default).
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -mno-nested-cond-exec
 
   Disable nested conditional execution optimizations.
 
-This switch is mainly for debugging the compiler and will likely be removed
-in a future version.
+  This switch is mainly for debugging the compiler and will likely be removed
+  in a future version.
 
 .. option:: -moptimize-membar
 
@@ -4526,11 +4526,11 @@ These :samp:`-m` options are defined for GNU/Linux targets:
   Compile code compatible with Android platform.  This is the default on
   :samp:`*-*-linux-*android*` targets.
 
-When compiling, this option enables :option:`-mbionic` , :option:`-fPIC` ,
-:option:`-fno-exceptions` and :option:`-fno-rtti` by default.  When linking,
-this option makes the GCC driver pass Android-specific options to the linker.
-Finally, this option causes the preprocessor macro ``__ANDROID__``
-to be defined.
+  When compiling, this option enables :option:`-mbionic` , :option:`-fPIC` ,
+  :option:`-fno-exceptions` and :option:`-fno-rtti` by default.  When linking,
+  this option makes the GCC driver pass Android-specific options to the linker.
+  Finally, this option causes the preprocessor macro ``__ANDROID__``
+  to be defined.
 
 .. option:: -tno-android-cc
 
@@ -4648,15 +4648,15 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   Generate code that assumes the target has no space registers.  This allows
   GCC to generate faster indirect calls and use unscaled index address modes.
 
-Such code is suitable for level 0 PA systems and kernels.
+  Such code is suitable for level 0 PA systems and kernels.
 
 .. option:: -mfast-indirect-calls
 
   Generate code that assumes calls never cross space boundaries.  This
   allows GCC to emit code that performs faster indirect calls.
 
-This option does not work in the presence of shared libraries or nested
-functions.
+  This option does not work in the presence of shared libraries or nested
+  functions.
 
 .. option:: -mfixed-range=register-range
 
@@ -4704,11 +4704,11 @@ functions.
   your own arrangements to provide suitable library functions for
   cross-compilation.
 
-:option:`-msoft-float` changes the calling convention in the output file;
-therefore, it is only useful if you compile *all* of a program with
-this option.  In particular, you need to compile libgcc.a, the
-library that comes with GCC, with :option:`-msoft-float` in order for
-this to work.
+  :option:`-msoft-float` changes the calling convention in the output file;
+  therefore, it is only useful if you compile *all* of a program with
+  this option.  In particular, you need to compile libgcc.a, the
+  library that comes with GCC, with :option:`-msoft-float` in order for
+  this to work.
 
 .. option:: -msio
 
@@ -4757,21 +4757,21 @@ this to work.
   PA 2.0 and PA 1.X architectures.  Sibcalls are always limited at
   240,000 bytes.
 
-Distances are measured from the beginning of functions when using the
-:option:`-ffunction-sections` option, or when using the :option:`-mgas`
-and :option:`-mno-portable-runtime` options together under HP-UX with
-the SOM linker.
+  Distances are measured from the beginning of functions when using the
+  :option:`-ffunction-sections` option, or when using the :option:`-mgas`
+  and :option:`-mno-portable-runtime` options together under HP-UX with
+  the SOM linker.
 
-It is normally not desirable to use this option as it degrades
-performance.  However, it may be useful in large applications,
-particularly when partial linking is used to build the application.
+  It is normally not desirable to use this option as it degrades
+  performance.  However, it may be useful in large applications,
+  particularly when partial linking is used to build the application.
 
-The types of long calls used depends on the capabilities of the
-assembler and linker, and the type of code being generated.  The
-impact on systems that support long absolute calls, and long pic
-symbol-difference or pc-relative calls should be relatively small.
-However, an indirect call is used on 32-bit ELF systems in pic code
-and it is quite long.
+  The types of long calls used depends on the capabilities of the
+  assembler and linker, and the type of code being generated.  The
+  impact on systems that support long absolute calls, and long pic
+  symbol-difference or pc-relative calls should be relatively small.
+  However, an indirect call is used on 32-bit ELF systems in pic code
+  and it is quite long.
 
 .. option:: -munix=unix-std
 
@@ -4783,21 +4783,21 @@ and it is quite long.
   :samp:`95` for HP-UX 10.10 though to 11.00, and :samp:`98` for HP-UX 11.11
   and later.
 
-:option:`-munix=93` provides the same predefines as GCC 3.3 and 3.4.
-:option:`-munix=95` provides additional predefines for ``XOPEN_UNIX``
-and ``_XOPEN_SOURCE_EXTENDED``, and the startfile unix95.o.
-:option:`-munix=98` provides additional predefines for ``_XOPEN_UNIX``,
-``_XOPEN_SOURCE_EXTENDED``, ``_INCLUDE__STDC_A1_SOURCE`` and
-``_INCLUDE_XOPEN_SOURCE_500``, and the startfile unix98.o.
+  :option:`-munix=93` provides the same predefines as GCC 3.3 and 3.4.
+  :option:`-munix=95` provides additional predefines for ``XOPEN_UNIX``
+  and ``_XOPEN_SOURCE_EXTENDED``, and the startfile unix95.o.
+  :option:`-munix=98` provides additional predefines for ``_XOPEN_UNIX``,
+  ``_XOPEN_SOURCE_EXTENDED``, ``_INCLUDE__STDC_A1_SOURCE`` and
+  ``_INCLUDE_XOPEN_SOURCE_500``, and the startfile unix98.o.
 
-It is *important* to note that this option changes the interfaces
-for various library routines.  It also affects the operational behavior
-of the C library.  Thus, *extreme* care is needed in using this
-option.
+  It is *important* to note that this option changes the interfaces
+  for various library routines.  It also affects the operational behavior
+  of the C library.  Thus, *extreme* care is needed in using this
+  option.
 
-Library code that is intended to operate with more than one UNIX
-standard must test, set and restore the variable ``__xpg4_extended_mask``
-as appropriate.  Most GNU software doesn't provide this capability.
+  Library code that is intended to operate with more than one UNIX
+  standard must test, set and restore the variable ``__xpg4_extended_mask``
+  as appropriate.  Most GNU software doesn't provide this capability.
 
 .. option:: -nolibdld
 
@@ -4811,12 +4811,12 @@ as appropriate.  Most GNU software doesn't provide this capability.
   when the :option:`-static` option is specified, special link options
   are needed to resolve this dependency.
 
-On HP-UX 10 and later, the GCC driver adds the necessary options to
-link with libdld.sl when the :option:`-static` option is specified.
-This causes the resulting binary to be dynamic.  On the 64-bit port,
-the linkers generate dynamic binaries by default in any case.  The
-:option:`-nolibdld` option can be used to prevent the GCC driver from
-adding these link options.
+  On HP-UX 10 and later, the GCC driver adds the necessary options to
+  link with libdld.sl when the :option:`-static` option is specified.
+  This causes the resulting binary to be dynamic.  On the 64-bit port,
+  the linkers generate dynamic binaries by default in any case.  The
+  :option:`-nolibdld` option can be used to prevent the GCC driver from
+  adding these link options.
 
 .. option:: -threads
 
@@ -5164,8 +5164,8 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
   are reachable with the ``bl`` instruction.
   This is the default.
 
-The addressability of a particular object can be set with the
-``model`` attribute.
+  The addressability of a particular object can be set with the
+  ``model`` attribute.
 
 .. option:: -mmodel=medium
 
@@ -5188,9 +5188,9 @@ The addressability of a particular object can be set with the
   ``section`` attribute has been specified).
   This is the default.
 
-The small data area consists of sections ``.sdata`` and ``.sbss``.
-Objects may be explicitly put in the small data area with the
-``section`` attribute using one of these sections.
+  The small data area consists of sections ``.sdata`` and ``.sbss``.
+  Objects may be explicitly put in the small data area with the
+  ``section`` attribute using one of these sections.
 
 .. option:: -msdata=sdata
 
@@ -5206,16 +5206,16 @@ Objects may be explicitly put in the small data area with the
 
   .. index:: smaller data references
 
-Put global and static objects less than or equal to :samp:`{num}` bytes
-into the small data or BSS sections instead of the normal data or BSS
-sections.  The default value of :samp:`{num}` is 8.
-The :option:`-msdata` option must be set to one of :samp:`sdata` or :samp:`use`
-for this option to have any effect.
+  Put global and static objects less than or equal to :samp:`{num}` bytes
+  into the small data or BSS sections instead of the normal data or BSS
+  sections.  The default value of :samp:`{num}` is 8.
+  The :option:`-msdata` option must be set to one of :samp:`sdata` or :samp:`use`
+  for this option to have any effect.
 
-All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
-Compiling with different values of :samp:`{num}` may or may not work; if it
-doesn't the linker gives an error message-incorrect code is not
-generated.
+  All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
+  Compiling with different values of :samp:`{num}` may or may not work; if it
+  doesn't the linker gives an error message-incorrect code is not
+  generated.
 
 .. option:: -mdebug
 
@@ -5234,22 +5234,22 @@ generated.
 
   .. index:: missue-rate=number
 
-Issue :samp:`{number}` instructions per cycle.  :samp:`{number}` can only be 1
-or 2.
+  Issue :samp:`{number}` instructions per cycle.  :samp:`{number}` can only be 1
+  or 2.
 
 .. option:: -mbranch-cost=number
 
   .. index:: mbranch-cost=number
 
-:samp:`{number}` can only be 1 or 2.  If it is 1 then branches are
-preferred over conditional code, if it is 2, then the opposite applies.
+  :samp:`{number}` can only be 1 or 2.  If it is 1 then branches are
+  preferred over conditional code, if it is 2, then the opposite applies.
 
 .. option:: -mflush-trap=number
 
   .. index:: mflush-trap=number
 
-Specifies the trap number to use to flush the cache.  The default is
-12.  Valid numbers are between 0 and 15 inclusive.
+  Specifies the trap number to use to flush the cache.  The default is
+  12.  Valid numbers are between 0 and 15 inclusive.
 
 .. option:: -mno-flush-trap
 
@@ -5259,9 +5259,9 @@ Specifies the trap number to use to flush the cache.  The default is
 
   .. index:: mflush-func=name
 
-Specifies the name of the operating system function to call to flush
-the cache.  The default is :samp:`_flush_cache`, but a function call
-is only used if a trap is not available.
+  Specifies the name of the operating system function to call to flush
+  the cache.  The default is :samp:`_flush_cache`, but a function call
+  is only used if a trap is not available.
 
 .. option:: -mno-flush-func
 
@@ -5289,13 +5289,13 @@ are given below.
   and the permissible values are: :samp:`isaa`, :samp:`isaaplus`,
   :samp:`isab` and :samp:`isac`.
 
-GCC defines a macro ``__mcf :samp:`{arch}` __`` whenever it is generating
-code for a ColdFire target.  The :samp:`{arch}` in this macro is one of the
-:option:`-march` arguments given above.
+  GCC defines a macro ``__mcf :samp:`{arch}` __`` whenever it is generating
+  code for a ColdFire target.  The :samp:`{arch}` in this macro is one of the
+  :option:`-march` arguments given above.
 
-When used together, :option:`-march` and :option:`-mtune` select code
-that runs on a family of similar processors but that is optimized
-for a particular microarchitecture.
+  When used together, :option:`-march` and :option:`-mtune` select code
+  that runs on a family of similar processors but that is optimized
+  for a particular microarchitecture.
 
 .. option:: -mcpu=cpu
 
@@ -5305,40 +5305,40 @@ for a particular microarchitecture.
   and :samp:`cpu32`.  The ColdFire :samp:`{cpu}` s are given by the table
   below, which also classifies the CPUs into families:
 
-=============  ========================================================================================================================================================================
-Family         :samp:`-mcpu` arguments
-=============  ========================================================================================================================================================================
-:samp:`51`     :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
-:samp:`5206`   :samp:`5202` :samp:`5204` :samp:`5206`
-:samp:`5206e`  :samp:`5206e`
-:samp:`5208`   :samp:`5207` :samp:`5208`
-:samp:`5211a`  :samp:`5210a` :samp:`5211a`
-:samp:`5213`   :samp:`5211` :samp:`5212` :samp:`5213`
-:samp:`5216`   :samp:`5214` :samp:`5216`
-:samp:`52235`  :samp:`52230` :samp:`52231` :samp:`52232` :samp:`52233` :samp:`52234` :samp:`52235`
-:samp:`5225`   :samp:`5224` :samp:`5225`
-:samp:`52259`  :samp:`52252` :samp:`52254` :samp:`52255` :samp:`52256` :samp:`52258` :samp:`52259`
-:samp:`5235`   :samp:`5232` :samp:`5233` :samp:`5234` :samp:`5235` :samp:`523x`
-:samp:`5249`   :samp:`5249`
-:samp:`5250`   :samp:`5250`
-:samp:`5271`   :samp:`5270` :samp:`5271`
-:samp:`5272`   :samp:`5272`
-:samp:`5275`   :samp:`5274` :samp:`5275`
-:samp:`5282`   :samp:`5280` :samp:`5281` :samp:`5282` :samp:`528x`
-:samp:`53017`  :samp:`53011` :samp:`53012` :samp:`53013` :samp:`53014` :samp:`53015` :samp:`53016` :samp:`53017`
-:samp:`5307`   :samp:`5307`
-:samp:`5329`   :samp:`5327` :samp:`5328` :samp:`5329` :samp:`532x`
-:samp:`5373`   :samp:`5372` :samp:`5373` :samp:`537x`
-:samp:`5407`   :samp:`5407`
-:samp:`5475`   :samp:`5470` :samp:`5471` :samp:`5472` :samp:`5473` :samp:`5474` :samp:`5475` :samp:`547x` :samp:`5480` :samp:`5481` :samp:`5482` :samp:`5483` :samp:`5484` :samp:`5485`
-=============  ========================================================================================================================================================================
-:option:`-mcpu`:samp:`={cpu}` overrides :option:`-march`:samp:`={arch}` if
-:samp:`{arch}` is compatible with :samp:`{cpu}`.  Other combinations of
-:option:`-mcpu` and :option:`-march` are rejected.
+  =============  ========================================================================================================================================================================
+  Family         :samp:`-mcpu` arguments
+  =============  ========================================================================================================================================================================
+  :samp:`51`     :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
+  :samp:`5206`   :samp:`5202` :samp:`5204` :samp:`5206`
+  :samp:`5206e`  :samp:`5206e`
+  :samp:`5208`   :samp:`5207` :samp:`5208`
+  :samp:`5211a`  :samp:`5210a` :samp:`5211a`
+  :samp:`5213`   :samp:`5211` :samp:`5212` :samp:`5213`
+  :samp:`5216`   :samp:`5214` :samp:`5216`
+  :samp:`52235`  :samp:`52230` :samp:`52231` :samp:`52232` :samp:`52233` :samp:`52234` :samp:`52235`
+  :samp:`5225`   :samp:`5224` :samp:`5225`
+  :samp:`52259`  :samp:`52252` :samp:`52254` :samp:`52255` :samp:`52256` :samp:`52258` :samp:`52259`
+  :samp:`5235`   :samp:`5232` :samp:`5233` :samp:`5234` :samp:`5235` :samp:`523x`
+  :samp:`5249`   :samp:`5249`
+  :samp:`5250`   :samp:`5250`
+  :samp:`5271`   :samp:`5270` :samp:`5271`
+  :samp:`5272`   :samp:`5272`
+  :samp:`5275`   :samp:`5274` :samp:`5275`
+  :samp:`5282`   :samp:`5280` :samp:`5281` :samp:`5282` :samp:`528x`
+  :samp:`53017`  :samp:`53011` :samp:`53012` :samp:`53013` :samp:`53014` :samp:`53015` :samp:`53016` :samp:`53017`
+  :samp:`5307`   :samp:`5307`
+  :samp:`5329`   :samp:`5327` :samp:`5328` :samp:`5329` :samp:`532x`
+  :samp:`5373`   :samp:`5372` :samp:`5373` :samp:`537x`
+  :samp:`5407`   :samp:`5407`
+  :samp:`5475`   :samp:`5470` :samp:`5471` :samp:`5472` :samp:`5473` :samp:`5474` :samp:`5475` :samp:`547x` :samp:`5480` :samp:`5481` :samp:`5482` :samp:`5483` :samp:`5484` :samp:`5485`
+  =============  ========================================================================================================================================================================
+  :option:`-mcpu`:samp:`={cpu}` overrides :option:`-march`:samp:`={arch}` if
+  :samp:`{arch}` is compatible with :samp:`{cpu}`.  Other combinations of
+  :option:`-mcpu` and :option:`-march` are rejected.
 
-GCC defines the macro ``__mcf_cpu_ :samp:`{cpu}``` when ColdFire target
-:samp:`{cpu}` is selected.  It also defines ``__mcf_family_ :samp:`{family}```,
-where the value of :samp:`{family}` is given by the table above.
+  GCC defines the macro ``__mcf_cpu_ :samp:`{cpu}``` when ColdFire target
+  :samp:`{cpu}` is selected.  It also defines ``__mcf_family_ :samp:`{family}```,
+  where the value of :samp:`{family}` is given by the table above.
 
 .. option:: -mtune=tune
 
@@ -5349,22 +5349,22 @@ where the value of :samp:`{family}` is given by the table above.
   and :samp:`cpu32`.  The ColdFire microarchitectures
   are: :samp:`cfv1`, :samp:`cfv2`, :samp:`cfv3`, :samp:`cfv4` and :samp:`cfv4e`.
 
-You can also use :option:`-mtune=68020-40` for code that needs
-to run relatively well on 68020, 68030 and 68040 targets.
-:option:`-mtune=68020-60` is similar but includes 68060 targets
-as well.  These two options select the same tuning decisions as
-:option:`-m68020-40` and :option:`-m68020-60` respectively.
+  You can also use :option:`-mtune=68020-40` for code that needs
+  to run relatively well on 68020, 68030 and 68040 targets.
+  :option:`-mtune=68020-60` is similar but includes 68060 targets
+  as well.  These two options select the same tuning decisions as
+  :option:`-m68020-40` and :option:`-m68020-60` respectively.
 
-GCC defines the macros ``__mc :samp:`{arch}``` and ``__mc :samp:`{arch}` __``
-when tuning for 680x0 architecture :samp:`{arch}`.  It also defines
-``mc :samp:`{arch}``` unless either :option:`-ansi` or a non-GNU :option:`-std`
-option is used.  If GCC is tuning for a range of architectures,
-as selected by :option:`-mtune=68020-40` or :option:`-mtune=68020-60` ,
-it defines the macros for every architecture in the range.
+  GCC defines the macros ``__mc :samp:`{arch}``` and ``__mc :samp:`{arch}` __``
+  when tuning for 680x0 architecture :samp:`{arch}`.  It also defines
+  ``mc :samp:`{arch}``` unless either :option:`-ansi` or a non-GNU :option:`-std`
+  option is used.  If GCC is tuning for a range of architectures,
+  as selected by :option:`-mtune=68020-40` or :option:`-mtune=68020-60` ,
+  it defines the macros for every architecture in the range.
 
-GCC also defines the macro ``__m :samp:`{uarch}` __`` when tuning for
-ColdFire microarchitecture :samp:`{uarch}` , where :samp:`{uarch}` is one
-of the arguments given above.
+  GCC also defines the macro ``__m :samp:`{uarch}` __`` when tuning for
+  ColdFire microarchitecture :samp:`{uarch}` , where :samp:`{uarch}` is one
+  of the arguments given above.
 
 .. option:: -m68000, -mc68000
 
@@ -5372,8 +5372,8 @@ of the arguments given above.
   when the compiler is configured for 68000-based systems.
   It is equivalent to :option:`-march=68000`.
 
-Use this option for microcontrollers with a 68000 or EC000 core,
-including the 68008, 68302, 68306, 68307, 68322, 68328 and 68356.
+  Use this option for microcontrollers with a 68000 or EC000 core,
+  including the 68008, 68302, 68306, 68307, 68322, 68328 and 68356.
 
 .. option:: -m68010
 
@@ -5399,9 +5399,9 @@ including the 68008, 68302, 68306, 68307, 68322, 68328 and 68356.
   configured for 68040-based systems.  It is equivalent to
   :option:`-march=68040`.
 
-This option inhibits the use of 68881/68882 instructions that have to be
-emulated by software on the 68040.  Use this option if your 68040 does not
-have code to emulate those instructions.
+  This option inhibits the use of 68881/68882 instructions that have to be
+  emulated by software on the 68040.  Use this option if your 68040 does not
+  have code to emulate those instructions.
 
 .. option:: -m68060
 
@@ -5409,9 +5409,9 @@ have code to emulate those instructions.
   configured for 68060-based systems.  It is equivalent to
   :option:`-march=68060`.
 
-This option inhibits the use of 68020 and 68881/68882 instructions that
-have to be emulated by software on the 68060.  Use this option if your 68060
-does not have code to emulate those instructions.
+  This option inhibits the use of 68020 and 68881/68882 instructions that
+  have to be emulated by software on the 68060.  Use this option if your 68060
+  does not have code to emulate those instructions.
 
 .. option:: -mcpu32
 
@@ -5419,9 +5419,9 @@ does not have code to emulate those instructions.
   when the compiler is configured for CPU32-based systems.
   It is equivalent to :option:`-march=cpu32`.
 
-Use this option for microcontrollers with a
-CPU32 or CPU32+ core, including the 68330, 68331, 68332, 68333, 68334,
-68336, 68340, 68341, 68349 and 68360.
+  Use this option for microcontrollers with a
+  CPU32 or CPU32+ core, including the 68330, 68331, 68332, 68333, 68334,
+  68336, 68340, 68341, 68349 and 68360.
 
 .. option:: -m5200
 
@@ -5430,8 +5430,8 @@ CPU32 or CPU32+ core, including the 68330, 68331, 68332, 68333, 68334,
   It is equivalent to :option:`-mcpu=5206` , and is now deprecated
   in favor of that option.
 
-Use this option for microcontroller with a 5200 core, including
-the MCF5202, MCF5203, MCF5204 and MCF5206.
+  Use this option for microcontroller with a 5200 core, including
+  the MCF5202, MCF5203, MCF5204 and MCF5206.
 
 .. option:: -m5206e
 
@@ -5468,7 +5468,7 @@ the MCF5202, MCF5203, MCF5204 and MCF5206.
   68020/68881 or a 68030 or a 68040.  The generated code does use the
   68881 instructions that are emulated on the 68040.
 
-The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-40`.
+  The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-40`.
 
 .. option:: -m68020-60
 
@@ -5477,7 +5477,7 @@ The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-40`.
   68020/68881 or a 68030 or a 68040.  The generated code does use the
   68881 instructions that are emulated on the 68060.
 
-The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-60`.
+  The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-60`.
 
 .. option:: -mhard-float, -m68881
 
@@ -5502,7 +5502,7 @@ The option is equivalent to :option:`-march=68020` :option:`-mtune=68020-60`.
   example, the default is 'off' for :option:`-mcpu=5206` and 'on' for
   :option:`-mcpu=5206e`.
 
-GCC defines the macro ``__mcfhwdiv__`` when this option is enabled.
+  GCC defines the macro ``__mcfhwdiv__`` when this option is enabled.
 
 .. option:: -mshort
 
@@ -5533,23 +5533,23 @@ GCC defines the macro ``__mcfhwdiv__`` when this option is enabled.
   saves one instruction in the caller since there is no need to pop
   the arguments there.
 
-This calling convention is incompatible with the one normally
-used on Unix, so you cannot use it if you need to call libraries
-compiled with the Unix compiler.
+  This calling convention is incompatible with the one normally
+  used on Unix, so you cannot use it if you need to call libraries
+  compiled with the Unix compiler.
 
-Also, you must provide function prototypes for all functions that
-take variable numbers of arguments (including ``printf``);
-otherwise incorrect code is generated for calls to those
-functions.
+  Also, you must provide function prototypes for all functions that
+  take variable numbers of arguments (including ``printf``);
+  otherwise incorrect code is generated for calls to those
+  functions.
 
-In addition, seriously incorrect code results if you call a
-function with too many arguments.  (Normally, extra arguments are
-harmlessly ignored.)
+  In addition, seriously incorrect code results if you call a
+  function with too many arguments.  (Normally, extra arguments are
+  harmlessly ignored.)
 
-The ``rtd`` instruction is supported by the 68010, 68020, 68030,
-68040, 68060 and CPU32 processors, but not by the 68000 or 5200.
+  The ``rtd`` instruction is supported by the 68010, 68020, 68030,
+  68040, 68060 and CPU32 processors, but not by the 68000 or 5200.
 
-The default is :option:`-mno-rtd`.
+  The default is :option:`-mno-rtd`.
 
 .. option:: -malign-int, -mno-align-int, -mpcrel
 
@@ -5559,15 +5559,15 @@ The default is :option:`-mno-rtd`.
   Aligning variables on 32-bit boundaries produces code that runs somewhat
   faster on processors with 32-bit busses at the expense of more memory.
 
-Warning: if you use the :option:`-malign-int` switch, GCC
-aligns structures containing the above types differently than
-most published application binary interface specifications for the m68k.
+  Warning: if you use the :option:`-malign-int` switch, GCC
+  aligns structures containing the above types differently than
+  most published application binary interface specifications for the m68k.
 
-Use the pc-relative addressing mode of the 68000 directly, instead of
-using a global offset table.  At present, this option implies :option:`-fpic` ,
-allowing at most a 16-bit offset for pc-relative addressing.  :option:`-fPIC` is
-not presently supported with :option:`-mpcrel` , though this could be supported for
-68020 and higher processors.
+  Use the pc-relative addressing mode of the 68000 directly, instead of
+  using a global offset table.  At present, this option implies :option:`-fpic` ,
+  allowing at most a 16-bit offset for pc-relative addressing.  :option:`-fPIC` is
+  not presently supported with :option:`-mpcrel` , though this could be supported for
+  68020 and higher processors.
 
 .. option:: -mno-strict-align, -mstrict-align
 
@@ -5606,29 +5606,29 @@ not presently supported with :option:`-mpcrel` , though this could be supported 
   larger and slower than code generated without this option.  On M680x0
   processors, this option is not needed; :option:`-fPIC` suffices.
 
-GCC normally uses a single instruction to load values from the GOT.
-While this is relatively efficient, it only works if the GOT
-is smaller than about 64k.  Anything larger causes the linker
-to report an error such as:
+  GCC normally uses a single instruction to load values from the GOT.
+  While this is relatively efficient, it only works if the GOT
+  is smaller than about 64k.  Anything larger causes the linker
+  to report an error such as:
 
-.. index:: relocation truncated to fit (ColdFire)
+  .. index:: relocation truncated to fit (ColdFire)
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  relocation truncated to fit: R_68K_GOT16O foobar
+    relocation truncated to fit: R_68K_GOT16O foobar
 
-If this happens, you should recompile your code with :option:`-mxgot`.
-It should then work with very large GOTs.  However, code generated with
-:option:`-mxgot` is less efficient, since it takes 4 instructions to fetch
-the value of a global symbol.
+  If this happens, you should recompile your code with :option:`-mxgot`.
+  It should then work with very large GOTs.  However, code generated with
+  :option:`-mxgot` is less efficient, since it takes 4 instructions to fetch
+  the value of a global symbol.
 
-Note that some linkers, including newer versions of the GNU linker,
-can create multiple GOTs and sort GOT entries.  If you have such a linker,
-you should only need to use :option:`-mxgot` when compiling a single
-object file that accesses more than 8192 GOT entries.  Very few do.
+  Note that some linkers, including newer versions of the GNU linker,
+  can create multiple GOTs and sort GOT entries.  If you have such a linker,
+  you should only need to use :option:`-mxgot` when compiling a single
+  object file that accesses more than 8192 GOT entries.  Very few do.
 
-These options have no effect unless GCC is generating
-position-independent code.
+  These options have no effect unless GCC is generating
+  position-independent code.
 
 .. option:: -mlong-jump-table-offsets
 
@@ -6029,37 +6029,37 @@ MIPS Options
   most compatible architecture for the selected ABI (that is,
   :samp:`mips1` for 32-bit ABIs and :samp:`mips3` for 64-bit ABIs).
 
-The native Linux/GNU toolchain also supports the value :samp:`native`,
-which selects the best architecture option for the host processor.
-:option:`-march=native` has no effect if GCC does not recognize
-the processor.
+  The native Linux/GNU toolchain also supports the value :samp:`native`,
+  which selects the best architecture option for the host processor.
+  :option:`-march=native` has no effect if GCC does not recognize
+  the processor.
 
-In processor names, a final :samp:`000` can be abbreviated as :samp:`k`
-(for example, :option:`-march=r2k` ).  Prefixes are optional, and
-:samp:`vr` may be written :samp:`r`.
+  In processor names, a final :samp:`000` can be abbreviated as :samp:`k`
+  (for example, :option:`-march=r2k` ).  Prefixes are optional, and
+  :samp:`vr` may be written :samp:`r`.
 
-Names of the form :samp:`:samp:`{n}` f2_1` refer to processors with
-FPUs clocked at half the rate of the core, names of the form
-:samp:`:samp:`{n}` f1_1` refer to processors with FPUs clocked at the same
-rate as the core, and names of the form :samp:`:samp:`{n}` f3_2` refer to
-processors with FPUs clocked a ratio of 3:2 with respect to the core.
-For compatibility reasons, :samp:`:samp:`{n}` f` is accepted as a synonym
-for :samp:`:samp:`{n}` f2_1` while :samp:`:samp:`{n}` x` and :samp:`:samp:`{b}` fx` are
-accepted as synonyms for :samp:`:samp:`{n}` f1_1`.
+  Names of the form :samp:`:samp:`{n}` f2_1` refer to processors with
+  FPUs clocked at half the rate of the core, names of the form
+  :samp:`:samp:`{n}` f1_1` refer to processors with FPUs clocked at the same
+  rate as the core, and names of the form :samp:`:samp:`{n}` f3_2` refer to
+  processors with FPUs clocked a ratio of 3:2 with respect to the core.
+  For compatibility reasons, :samp:`:samp:`{n}` f` is accepted as a synonym
+  for :samp:`:samp:`{n}` f2_1` while :samp:`:samp:`{n}` x` and :samp:`:samp:`{b}` fx` are
+  accepted as synonyms for :samp:`:samp:`{n}` f1_1`.
 
-GCC defines two macros based on the value of this option.  The first
-is ``_MIPS_ARCH``, which gives the name of target architecture, as
-a string.  The second has the form ``_MIPS_ARCH_ :samp:`{foo}```,
-where :samp:`{foo}` is the capitalized value of ``_MIPS_ARCH``.
-For example, :option:`-march=r2000` sets ``_MIPS_ARCH``
-to ``"r2000"`` and defines the macro ``_MIPS_ARCH_R2000``.
+  GCC defines two macros based on the value of this option.  The first
+  is ``_MIPS_ARCH``, which gives the name of target architecture, as
+  a string.  The second has the form ``_MIPS_ARCH_ :samp:`{foo}```,
+  where :samp:`{foo}` is the capitalized value of ``_MIPS_ARCH``.
+  For example, :option:`-march=r2000` sets ``_MIPS_ARCH``
+  to ``"r2000"`` and defines the macro ``_MIPS_ARCH_R2000``.
 
-Note that the ``_MIPS_ARCH`` macro uses the processor names given
-above.  In other words, it has the full prefix and does not
-abbreviate :samp:`000` as :samp:`k`.  In the case of :samp:`from-abi`,
-the macro names the resolved architecture (either ``"mips1"`` or
-``"mips3"``).  It names the default architecture when no
-:option:`-march` option is given.
+  Note that the ``_MIPS_ARCH`` macro uses the processor names given
+  above.  In other words, it has the full prefix and does not
+  abbreviate :samp:`000` as :samp:`k`.  In the case of :samp:`from-abi`,
+  the macro names the resolved architecture (either ``"mips1"`` or
+  ``"mips3"``).  It names the default architecture when no
+  :option:`-march` option is given.
 
 .. option:: -mtune=arch
 
@@ -6068,15 +6068,15 @@ the macro names the resolved architecture (either ``"mips1"`` or
   operations.  The list of :samp:`{arch}` values is the same as for
   :option:`-march`.
 
-When this option is not used, GCC optimizes for the processor
-specified by :option:`-march`.  By using :option:`-march` and
-:option:`-mtune` together, it is possible to generate code that
-runs on a family of processors, but optimize the code for one
-particular member of that family.
+  When this option is not used, GCC optimizes for the processor
+  specified by :option:`-march`.  By using :option:`-march` and
+  :option:`-mtune` together, it is possible to generate code that
+  runs on a family of processors, but optimize the code for one
+  particular member of that family.
 
-:option:`-mtune` defines the macros ``_MIPS_TUNE`` and
-``_MIPS_TUNE_ :samp:`{foo}```, which work in the same way as the
-:option:`-march` ones described above.
+  :option:`-mtune` defines the macros ``_MIPS_TUNE`` and
+  ``_MIPS_TUNE_ :samp:`{foo}```, which work in the same way as the
+  :option:`-march` ones described above.
 
 .. option:: -mips1
 
@@ -6135,9 +6135,9 @@ particular member of that family.
   Generate (do not generate) MIPS16 code.  If GCC is targeting a
   MIPS32 or MIPS64 architecture, it makes use of the MIPS16e ASE.
 
-MIPS16 code generation can also be controlled on a per-function basis
-by means of ``mips16`` and ``nomips16`` attributes.
-See :ref:`function-attributes`, for more information.
+  MIPS16 code generation can also be controlled on a per-function basis
+  by means of ``mips16`` and ``nomips16`` attributes.
+  See :ref:`function-attributes`, for more information.
 
 .. option:: -mflip-mips16
 
@@ -6150,10 +6150,10 @@ See :ref:`function-attributes`, for more information.
   Require (do not require) that code using the standard (uncompressed) MIPS ISA
   be link-compatible with MIPS16 and microMIPS code, and vice versa.
 
-For example, code using the standard ISA encoding cannot jump directly
-to MIPS16 or microMIPS code; it must either use a call or an indirect jump.
-:option:`-minterlink-compressed` therefore disables direct jumps unless GCC
-knows that the target of the jump is not compressed.
+  For example, code using the standard ISA encoding cannot jump directly
+  to MIPS16 or microMIPS code; it must either use a call or an indirect jump.
+  :option:`-minterlink-compressed` therefore disables direct jumps unless GCC
+  knows that the target of the jump is not compressed.
 
 .. option:: -minterlink-mips16, -mno-interlink-mips16
 
@@ -6165,38 +6165,38 @@ knows that the target of the jump is not compressed.
 
   Generate code for the given ABI.
 
-Note that the EABI has a 32-bit and a 64-bit variant.  GCC normally
-generates 64-bit code when you select a 64-bit architecture, but you
-can use :option:`-mgp32` to get 32-bit code instead.
+  Note that the EABI has a 32-bit and a 64-bit variant.  GCC normally
+  generates 64-bit code when you select a 64-bit architecture, but you
+  can use :option:`-mgp32` to get 32-bit code instead.
 
-For information about the O64 ABI, see
-http://gcc.gnu.org//projects//mipso64-abi.html.
+  For information about the O64 ABI, see
+  http://gcc.gnu.org//projects//mipso64-abi.html.
 
-GCC supports a variant of the o32 ABI in which floating-point registers
-are 64 rather than 32 bits wide.  You can select this combination with
-:option:`-mabi=32` :option:`-mfp64`.  This ABI relies on the ``mthc1``
-and ``mfhc1`` instructions and is therefore only supported for
-MIPS32R2, MIPS32R3 and MIPS32R5 processors.
+  GCC supports a variant of the o32 ABI in which floating-point registers
+  are 64 rather than 32 bits wide.  You can select this combination with
+  :option:`-mabi=32` :option:`-mfp64`.  This ABI relies on the ``mthc1``
+  and ``mfhc1`` instructions and is therefore only supported for
+  MIPS32R2, MIPS32R3 and MIPS32R5 processors.
 
-The register assignments for arguments and return values remain the
-same, but each scalar value is passed in a single 64-bit register
-rather than a pair of 32-bit registers.  For example, scalar
-floating-point values are returned in :samp:`$f0` only, not a
-:samp:`$f0`/:samp:`$f1` pair.  The set of call-saved registers also
-remains the same in that the even-numbered double-precision registers
-are saved.
+  The register assignments for arguments and return values remain the
+  same, but each scalar value is passed in a single 64-bit register
+  rather than a pair of 32-bit registers.  For example, scalar
+  floating-point values are returned in :samp:`$f0` only, not a
+  :samp:`$f0`/:samp:`$f1` pair.  The set of call-saved registers also
+  remains the same in that the even-numbered double-precision registers
+  are saved.
 
-Two additional variants of the o32 ABI are supported to enable
-a transition from 32-bit to 64-bit registers.  These are FPXX
-( :option:`-mfpxx` ) and FP64A ( :option:`-mfp64` :option:`-mno-odd-spreg` ).
-The FPXX extension mandates that all code must execute correctly
-when run using 32-bit or 64-bit registers.  The code can be interlinked
-with either FP32 or FP64, but not both.
-The FP64A extension is similar to the FP64 extension but forbids the
-use of odd-numbered single-precision registers.  This can be used
-in conjunction with the ``FRE`` mode of FPUs in MIPS32R5
-processors and allows both FP32 and FP64A code to interlink and
-run in the same process without changing FPU modes.
+  Two additional variants of the o32 ABI are supported to enable
+  a transition from 32-bit to 64-bit registers.  These are FPXX
+  ( :option:`-mfpxx` ) and FP64A ( :option:`-mfp64` :option:`-mno-odd-spreg` ).
+  The FPXX extension mandates that all code must execute correctly
+  when run using 32-bit or 64-bit registers.  The code can be interlinked
+  with either FP32 or FP64, but not both.
+  The FP64A extension is similar to the FP64 extension but forbids the
+  use of odd-numbered single-precision registers.  This can be used
+  in conjunction with the ``FRE`` mode of FPUs in MIPS32R5
+  processors and allows both FP32 and FP64A code to interlink and
+  run in the same process without changing FPU modes.
 
 .. option:: -mabicalls, -mno-abicalls
 
@@ -6231,37 +6231,37 @@ run in the same process without changing FPU modes.
   :option:`-mno-shared -mabicalls`.  For the n64 ABI, this option
   has no effect without :option:`-msym32`.
 
-You can make :option:`-mplt` the default by configuring
-GCC with :option:`--with-mips-plt`.  The default is
-:option:`-mno-plt` otherwise.
+  You can make :option:`-mplt` the default by configuring
+  GCC with :option:`--with-mips-plt`.  The default is
+  :option:`-mno-plt` otherwise.
 
 .. option:: -mxgot, -mno-xgot
 
   Lift (do not lift) the usual restrictions on the size of the global
   offset table.
 
-GCC normally uses a single instruction to load values from the GOT.
-While this is relatively efficient, it only works if the GOT
-is smaller than about 64k.  Anything larger causes the linker
-to report an error such as:
+  GCC normally uses a single instruction to load values from the GOT.
+  While this is relatively efficient, it only works if the GOT
+  is smaller than about 64k.  Anything larger causes the linker
+  to report an error such as:
 
-.. index:: relocation truncated to fit (MIPS)
+  .. index:: relocation truncated to fit (MIPS)
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  relocation truncated to fit: R_MIPS_GOT16 foobar
+    relocation truncated to fit: R_MIPS_GOT16 foobar
 
-If this happens, you should recompile your code with :option:`-mxgot`.
-This works with very large GOTs, although the code is also
-less efficient, since it takes three instructions to fetch the
-value of a global symbol.
+  If this happens, you should recompile your code with :option:`-mxgot`.
+  This works with very large GOTs, although the code is also
+  less efficient, since it takes three instructions to fetch the
+  value of a global symbol.
 
-Note that some linkers can create multiple GOTs.  If you have such a
-linker, you should only need to use :option:`-mxgot` when a single object
-file accesses more than 64k's worth of GOT entries.  Very few do.
+  Note that some linkers can create multiple GOTs.  If you have such a
+  linker, you should only need to use :option:`-mxgot` when a single object
+  file accesses more than 64k's worth of GOT entries.  Very few do.
 
-These options have no effect unless GCC is generating position
-independent code.
+  These options have no effect unless GCC is generating position
+  independent code.
 
 .. option:: -mgp32
 
@@ -6327,37 +6327,37 @@ independent code.
   IEEE 754 floating-point data with the ``abs.fmt`` and
   ``neg.fmt`` machine instructions.
 
-By default or when :option:`-mabs=legacy` is used the legacy
-treatment is selected.  In this case these instructions are considered
-arithmetic and avoided where correct operation is required and the
-input operand might be a NaN.  A longer sequence of instructions that
-manipulate the sign bit of floating-point datum manually is used
-instead unless the :option:`-ffinite-math-only` option has also been
-specified.
+  By default or when :option:`-mabs=legacy` is used the legacy
+  treatment is selected.  In this case these instructions are considered
+  arithmetic and avoided where correct operation is required and the
+  input operand might be a NaN.  A longer sequence of instructions that
+  manipulate the sign bit of floating-point datum manually is used
+  instead unless the :option:`-ffinite-math-only` option has also been
+  specified.
 
-The :option:`-mabs=2008` option selects the IEEE 754-2008 treatment.  In
-this case these instructions are considered non-arithmetic and therefore
-operating correctly in all cases, including in particular where the
-input operand is a NaN.  These instructions are therefore always used
-for the respective operations.
+  The :option:`-mabs=2008` option selects the IEEE 754-2008 treatment.  In
+  this case these instructions are considered non-arithmetic and therefore
+  operating correctly in all cases, including in particular where the
+  input operand is a NaN.  These instructions are therefore always used
+  for the respective operations.
 
 .. option:: -mnan=2008
 
   These options control the encoding of the special not-a-number (NaN)
   IEEE 754 floating-point data.
 
-The :option:`-mnan=legacy` option selects the legacy encoding.  In this
-case quiet NaNs (qNaNs) are denoted by the first bit of their trailing
-significand field being 0, whereas signaling NaNs (sNaNs) are denoted
-by the first bit of their trailing significand field being 1.
+  The :option:`-mnan=legacy` option selects the legacy encoding.  In this
+  case quiet NaNs (qNaNs) are denoted by the first bit of their trailing
+  significand field being 0, whereas signaling NaNs (sNaNs) are denoted
+  by the first bit of their trailing significand field being 1.
 
-The :option:`-mnan=2008` option selects the IEEE 754-2008 encoding.  In
-this case qNaNs are denoted by the first bit of their trailing
-significand field being 1, whereas sNaNs are denoted by the first bit of
-their trailing significand field being 0.
+  The :option:`-mnan=2008` option selects the IEEE 754-2008 encoding.  In
+  this case qNaNs are denoted by the first bit of their trailing
+  significand field being 1, whereas sNaNs are denoted by the first bit of
+  their trailing significand field being 0.
 
-The default is :option:`-mnan=legacy` unless GCC has been configured with
-:option:`--with-nan=2008`.
+  The default is :option:`-mnan=legacy` unless GCC has been configured with
+  :option:`--with-nan=2008`.
 
 .. option:: -mllsc, -mno-llsc
 
@@ -6366,12 +6366,12 @@ The default is :option:`-mnan=legacy` unless GCC has been configured with
   specified, GCC uses the instructions if the target architecture
   supports them.
 
-:option:`-mllsc` is useful if the runtime environment can emulate the
-instructions and :option:`-mno-llsc` can be useful when compiling for
-nonstandard ISAs.  You can make either option the default by
-configuring GCC with :option:`--with-llsc` and :option:`--without-llsc`
-respectively.  :option:`--with-llsc` is the default for some
-configurations; see the installation documentation for details.
+  :option:`-mllsc` is useful if the runtime environment can emulate the
+  instructions and :option:`-mno-llsc` can be useful when compiling for
+  nonstandard ISAs.  You can make either option the default by
+  configuring GCC with :option:`--with-llsc` and :option:`--without-llsc`
+  respectively.  :option:`--with-llsc` is the default for some
+  configurations; see the installation documentation for details.
 
 .. option:: -mdsp, -mno-dsp
 
@@ -6412,9 +6412,9 @@ configurations; see the installation documentation for details.
 
   Generate (do not generate) microMIPS code.
 
-MicroMIPS code generation can also be controlled on a per-function basis
-by means of ``micromips`` and ``nomicromips`` attributes.
-See :ref:`function-attributes`, for more information.
+  MicroMIPS code generation can also be controlled on a per-function basis
+  by means of ``micromips`` and ``nomicromips`` attributes.
+  See :ref:`function-attributes`, for more information.
 
 .. option:: -mmt, -mno-mt
 
@@ -6466,11 +6466,11 @@ See :ref:`function-attributes`, for more information.
 
   Force ``long``, ``int``, and pointer types to be 32 bits wide.
 
-The default size of ``int``s, ``long``s and pointers depends on
-the ABI.  All the supported ABIs use 32-bit ``int``s.  The n64 ABI
-uses 64-bit ``long``s, as does the 64-bit EABI; the others use
-32-bit ``long``s.  Pointers are the same size as ``long``s,
-or the same size as integer registers, whichever is smaller.
+  The default size of ``int``s, ``long``s and pointers depends on
+  the ABI.  All the supported ABIs use 32-bit ``int``s.  The n64 ABI
+  uses 64-bit ``long``s, as does the 64-bit EABI; the others use
+  32-bit ``long``s.  Pointers are the same size as ``long``s,
+  or the same size as integer registers, whichever is smaller.
 
 .. option:: -msym32, -mno-sym32
 
@@ -6485,7 +6485,7 @@ or the same size as integer registers, whichever is smaller.
   if that data is no bigger than :samp:`{num}` bytes.  GCC can then generate
   more efficient accesses to the data; see :option:`-mgpopt` for details.
 
-The default :option:`-G` option depends on the configuration.
+  The default :option:`-G` option depends on the configuration.
 
 .. option:: -mlocal-sdata, -mno-local-sdata
 
@@ -6493,11 +6493,11 @@ The default :option:`-G` option depends on the configuration.
   such as to static variables in C.  :option:`-mlocal-sdata` is the
   default for all configurations.
 
-If the linker complains that an application is using too much small data,
-you might want to try rebuilding the less performance-critical parts with
-:option:`-mno-local-sdata`.  You might also want to build large
-libraries with :option:`-mno-local-sdata` , so that the libraries leave
-more room for the main program.
+  If the linker complains that an application is using too much small data,
+  you might want to try rebuilding the less performance-critical parts with
+  :option:`-mno-local-sdata`.  You might also want to build large
+  libraries with :option:`-mno-local-sdata` , so that the libraries leave
+  more room for the main program.
 
 .. option:: -mextern-sdata, -mno-extern-sdata
 
@@ -6505,22 +6505,22 @@ more room for the main program.
   a small data section if the size of that data is within the :option:`-G` limit.
   :option:`-mextern-sdata` is the default for all configurations.
 
-If you compile a module :samp:`{Mod}` with :option:`-mextern-sdata` :option:`-G
-`:samp:`{num}` :option:`-mgpopt` , and :samp:`{Mod}` references a variable :samp:`{Var}`
-that is no bigger than :samp:`{num}` bytes, you must make sure that :samp:`{Var}`
-is placed in a small data section.  If :samp:`{Var}` is defined by another
-module, you must either compile that module with a high-enough
-:option:`-G` setting or attach a ``section`` attribute to :samp:`{Var}` 's
-definition.  If :samp:`{Var}` is common, you must link the application
-with a high-enough :option:`-G` setting.
+  If you compile a module :samp:`{Mod}` with :option:`-mextern-sdata` :option:`-G
+  `:samp:`{num}` :option:`-mgpopt` , and :samp:`{Mod}` references a variable :samp:`{Var}`
+  that is no bigger than :samp:`{num}` bytes, you must make sure that :samp:`{Var}`
+  is placed in a small data section.  If :samp:`{Var}` is defined by another
+  module, you must either compile that module with a high-enough
+  :option:`-G` setting or attach a ``section`` attribute to :samp:`{Var}` 's
+  definition.  If :samp:`{Var}` is common, you must link the application
+  with a high-enough :option:`-G` setting.
 
-The easiest way of satisfying these restrictions is to compile
-and link every module with the same :option:`-G` option.  However,
-you may wish to build a library that supports several different
-small data limits.  You can do this by compiling the library with
-the highest supported :option:`-G` setting and additionally using
-:option:`-mno-extern-sdata` to stop the library from making assumptions
-about externally-defined data.
+  The easiest way of satisfying these restrictions is to compile
+  and link every module with the same :option:`-G` option.  However,
+  you may wish to build a library that supports several different
+  small data limits.  You can do this by compiling the library with
+  the highest supported :option:`-G` setting and additionally using
+  :option:`-mno-extern-sdata` to stop the library from making assumptions
+  about externally-defined data.
 
 .. option:: -mgpopt, -mno-gpopt
 
@@ -6529,15 +6529,15 @@ about externally-defined data.
   :option:`-mextern-sdata`.  :option:`-mgpopt` is the default for all
   configurations.
 
-:option:`-mno-gpopt` is useful for cases where the ``$gp`` register
-might not hold the value of ``_gp``.  For example, if the code is
-part of a library that might be used in a boot monitor, programs that
-call boot monitor routines pass an unknown value in ``$gp``.
-(In such situations, the boot monitor itself is usually compiled
-with :option:`-G0`.)
+  :option:`-mno-gpopt` is useful for cases where the ``$gp`` register
+  might not hold the value of ``_gp``.  For example, if the code is
+  part of a library that might be used in a boot monitor, programs that
+  call boot monitor routines pass an unknown value in ``$gp``.
+  (In such situations, the boot monitor itself is usually compiled
+  with :option:`-G0`.)
 
-:option:`-mno-gpopt` implies :option:`-mno-local-sdata` and
-:option:`-mno-extern-sdata`.
+  :option:`-mno-gpopt` implies :option:`-mno-local-sdata` and
+  :option:`-mno-extern-sdata`.
 
 .. option:: -membedded-data, -mno-embedded-data
 
@@ -6556,23 +6556,23 @@ with :option:`-G0`.)
   Specify whether GCC may generate code that reads from executable sections.
   There are three possible settings:
 
-``-mcode-readable=yes``
-  Instructions may freely access executable sections.  This is the
-  default setting.
+  ``-mcode-readable=yes``
+    Instructions may freely access executable sections.  This is the
+    default setting.
 
-``-mcode-readable=pcrel``
-  MIPS16 PC-relative load instructions can access executable sections,
-  but other instructions must not do so.  This option is useful on 4KSc
-  and 4KSd processors when the code TLBs have the Read Inhibit bit set.
-  It is also useful on processors that can be configured to have a dual
-  instruction/data SRAM interface and that, like the M4K, automatically
-  redirect PC-relative loads to the instruction RAM.
+  ``-mcode-readable=pcrel``
+    MIPS16 PC-relative load instructions can access executable sections,
+    but other instructions must not do so.  This option is useful on 4KSc
+    and 4KSd processors when the code TLBs have the Read Inhibit bit set.
+    It is also useful on processors that can be configured to have a dual
+    instruction/data SRAM interface and that, like the M4K, automatically
+    redirect PC-relative loads to the instruction RAM.
 
-``-mcode-readable=no``
-  Instructions must not access executable sections.  This option can be
-  useful on targets that are configured to have a dual instruction/data
-  SRAM interface but that (unlike the M4K) do not automatically redirect
-  PC-relative loads to the instruction RAM.
+  ``-mcode-readable=no``
+    Instructions must not access executable sections.  This option can be
+    useful on targets that are configured to have a dual instruction/data
+    SRAM interface but that (unlike the M4K) do not automatically redirect
+    PC-relative loads to the instruction RAM.
 
 .. option:: -msplit-addresses, -mno-split-addresses
 
@@ -6586,14 +6586,14 @@ with :option:`-G0`.)
   addresses.  The alternative, selected by :option:`-mno-explicit-relocs` ,
   is to use assembler macros instead.
 
-:option:`-mexplicit-relocs` is the default if GCC was configured
-to use an assembler that supports relocation operators.
+  :option:`-mexplicit-relocs` is the default if GCC was configured
+  to use an assembler that supports relocation operators.
 
 .. option:: -mcheck-zero-division, -mno-check-zero-division
 
   Trap (do not trap) on integer division by zero.
 
-The default is :option:`-mcheck-zero-division`.
+  The default is :option:`-mcheck-zero-division`.
 
 .. option:: -mdivide-traps, -mdivide-breaks
 
@@ -6605,10 +6605,10 @@ The default is :option:`-mcheck-zero-division`.
   allow conditional traps on architectures that support them and
   :option:`-mdivide-breaks` to force the use of breaks.
 
-The default is usually :option:`-mdivide-traps` , but this can be
-overridden at configure time using :option:`--with-divide=breaks`.
-Divide-by-zero checks can be completely disabled using
-:option:`-mno-check-zero-division`.
+  The default is usually :option:`-mdivide-traps` , but this can be
+  overridden at configure time using :option:`--with-divide=breaks`.
+  Divide-by-zero checks can be completely disabled using
+  :option:`-mno-check-zero-division`.
 
 .. option:: -mload-store-pairs, -mno-load-store-pairs
 
@@ -6629,8 +6629,8 @@ Divide-by-zero checks can be completely disabled using
   functions using ``jal`` is more efficient but requires the caller
   and callee to be in the same 256 megabyte segment.
 
-This option has no effect on abicalls code.  The default is
-:option:`-mno-long-calls`.
+  This option has no effect on abicalls code.  The default is
+  :option:`-mno-long-calls`.
 
 .. option:: -mmad, -mno-mad
 
@@ -6650,12 +6650,12 @@ This option has no effect on abicalls code.  The default is
   instructions, when they are available.  The default is
   :option:`-mfused-madd`.
 
-On the R8000 CPU when multiply-accumulate instructions are used,
-the intermediate product is calculated to infinite precision
-and is not subject to the FCSR Flush to Zero bit.  This may be
-undesirable in some circumstances.  On other processors the result
-is numerically identical to the equivalent computation using
-separate multiply, add, subtract and negate instructions.
+  On the R8000 CPU when multiply-accumulate instructions are used,
+  the intermediate product is calculated to infinite precision
+  and is not subject to the FCSR Flush to Zero bit.  This may be
+  undesirable in some circumstances.  On other processors the result
+  is numerically identical to the equivalent computation using
+  separate multiply, add, subtract and negate instructions.
 
 .. option:: -nocpp
 
@@ -6671,33 +6671,33 @@ separate multiply, add, subtract and negate instructions.
 
   Work around certain R4000 CPU errata:
 
-* A double-word or a variable shift may give an incorrect result if executed
-  immediately after starting an integer division.
+  * A double-word or a variable shift may give an incorrect result if executed
+    immediately after starting an integer division.
 
-* A double-word or a variable shift may give an incorrect result if executed
-  while an integer multiplication is in progress.
+  * A double-word or a variable shift may give an incorrect result if executed
+    while an integer multiplication is in progress.
 
-* An integer division may give an incorrect result if started in a delay slot
-  of a taken branch or a jump.
+  * An integer division may give an incorrect result if started in a delay slot
+    of a taken branch or a jump.
 
 .. option:: -mfix-r4400, -mno-fix-r4400
 
   Work around certain R4400 CPU errata:
 
-* A double-word or a variable shift may give an incorrect result if executed
-  immediately after starting an integer division.
+  * A double-word or a variable shift may give an incorrect result if executed
+    immediately after starting an integer division.
 
 .. option:: -mfix-r10000, -mno-fix-r10000
 
   Work around certain R10000 errata:
 
-* ``ll``/``sc`` sequences may not behave atomically on revisions
-  prior to 3.0.  They may deadlock on revisions 2.6 and earlier.
+  * ``ll``/``sc`` sequences may not behave atomically on revisions
+    prior to 3.0.  They may deadlock on revisions 2.6 and earlier.
 
-This option can only be used if the target architecture supports
-branch-likely instructions.  :option:`-mfix-r10000` is the default when
-:option:`-march=r10000` is used; :option:`-mno-fix-r10000` is the default
-otherwise.
+  This option can only be used if the target architecture supports
+  branch-likely instructions.  :option:`-mfix-r10000` is the default when
+  :option:`-march=r10000` is used; :option:`-mno-fix-r10000` is the default
+  otherwise.
 
 .. option:: -mfix-r5900
 
@@ -6717,17 +6717,17 @@ otherwise.
 
   Work around certain VR4120 errata:
 
-* ``dmultu`` does not always produce the correct result.
+  * ``dmultu`` does not always produce the correct result.
 
-* ``div`` and ``ddiv`` do not always produce the correct result if one
-  of the operands is negative.
+  * ``div`` and ``ddiv`` do not always produce the correct result if one
+    of the operands is negative.
 
-The workarounds for the division errata rely on special functions in
-libgcc.a.  At present, these functions are only provided by
-the ``mips64vr*-elf`` configurations.
+  The workarounds for the division errata rely on special functions in
+  libgcc.a.  At present, these functions are only provided by
+  the ``mips64vr*-elf`` configurations.
 
-Other VR4120 errata require a NOP to be inserted between certain pairs of
-instructions.  These errata are handled by the assembler, not by GCC itself.
+  Other VR4120 errata require a NOP to be inserted between certain pairs of
+  instructions.  These errata are handled by the assembler, not by GCC itself.
 
 .. option:: -mfix-vr4130
 
@@ -6748,60 +6748,60 @@ instructions.  These errata are handled by the assembler, not by GCC itself.
   Specify whether GCC should insert cache barriers to avoid the
   side effects of speculation on R10K processors.
 
-In common with many processors, the R10K tries to predict the outcome
-of a conditional branch and speculatively executes instructions from
-the 'taken' branch.  It later aborts these instructions if the
-predicted outcome is wrong.  However, on the R10K, even aborted
-instructions can have side effects.
+  In common with many processors, the R10K tries to predict the outcome
+  of a conditional branch and speculatively executes instructions from
+  the 'taken' branch.  It later aborts these instructions if the
+  predicted outcome is wrong.  However, on the R10K, even aborted
+  instructions can have side effects.
 
-This problem only affects kernel stores and, depending on the system,
-kernel loads.  As an example, a speculatively-executed store may load
-the target memory into cache and mark the cache line as dirty, even if
-the store itself is later aborted.  If a DMA operation writes to the
-same area of memory before the 'dirty' line is flushed, the cached
-data overwrites the DMA-ed data.  See the R10K processor manual
-for a full description, including other potential problems.
+  This problem only affects kernel stores and, depending on the system,
+  kernel loads.  As an example, a speculatively-executed store may load
+  the target memory into cache and mark the cache line as dirty, even if
+  the store itself is later aborted.  If a DMA operation writes to the
+  same area of memory before the 'dirty' line is flushed, the cached
+  data overwrites the DMA-ed data.  See the R10K processor manual
+  for a full description, including other potential problems.
 
-One workaround is to insert cache barrier instructions before every memory
-access that might be speculatively executed and that might have side
-effects even if aborted.  :option:`-mr10k-cache-barrier`:samp:`={setting}`
-controls GCC's implementation of this workaround.  It assumes that
-aborted accesses to any byte in the following regions does not have
-side effects:
+  One workaround is to insert cache barrier instructions before every memory
+  access that might be speculatively executed and that might have side
+  effects even if aborted.  :option:`-mr10k-cache-barrier`:samp:`={setting}`
+  controls GCC's implementation of this workaround.  It assumes that
+  aborted accesses to any byte in the following regions does not have
+  side effects:
 
-* the memory occupied by the current function's stack frame;
+  * the memory occupied by the current function's stack frame;
 
-* the memory occupied by an incoming stack argument;
+  * the memory occupied by an incoming stack argument;
 
-* the memory occupied by an object with a link-time-constant address.
+  * the memory occupied by an object with a link-time-constant address.
 
-It is the kernel's responsibility to ensure that speculative
-accesses to these regions are indeed safe.
+  It is the kernel's responsibility to ensure that speculative
+  accesses to these regions are indeed safe.
 
-If the input program contains a function declaration such as:
+  If the input program contains a function declaration such as:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  void foo (void);
+    void foo (void);
 
-then the implementation of ``foo`` must allow ``j foo`` and
-``jal foo`` to be executed speculatively.  GCC honors this
-restriction for functions it compiles itself.  It expects non-GCC
-functions (such as hand-written assembly code) to do the same.
+  then the implementation of ``foo`` must allow ``j foo`` and
+  ``jal foo`` to be executed speculatively.  GCC honors this
+  restriction for functions it compiles itself.  It expects non-GCC
+  functions (such as hand-written assembly code) to do the same.
 
-The option has three forms:
+  The option has three forms:
 
-``-mr10k-cache-barrier=load-store``
-  Insert a cache barrier before a load or store that might be
-  speculatively executed and that might have side effects even
-  if aborted.
+  ``-mr10k-cache-barrier=load-store``
+    Insert a cache barrier before a load or store that might be
+    speculatively executed and that might have side effects even
+    if aborted.
 
-``-mr10k-cache-barrier=store``
-  Insert a cache barrier before a store that might be speculatively
-  executed and that might have side effects even if aborted.
+  ``-mr10k-cache-barrier=store``
+    Insert a cache barrier before a store that might be speculatively
+    executed and that might have side effects even if aborted.
 
-``-mr10k-cache-barrier=none``
-  Disable the insertion of cache barriers.  This is the default setting.
+  ``-mr10k-cache-barrier=none``
+    Disable the insertion of cache barriers.  This is the default setting.
 
 .. option:: -mflush-func=func
 
@@ -6835,20 +6835,20 @@ The option has three forms:
   These options control which form of branches will be generated.  The
   default is :option:`-mcompact-branches=optimal`.
 
-The :option:`-mcompact-branches=never` option ensures that compact branch
-instructions will never be generated.
+  The :option:`-mcompact-branches=never` option ensures that compact branch
+  instructions will never be generated.
 
-The :option:`-mcompact-branches=always` option ensures that a compact
-branch instruction will be generated if available.  If a compact branch
-instruction is not available, a delay slot form of the branch will be
-used instead.
+  The :option:`-mcompact-branches=always` option ensures that a compact
+  branch instruction will be generated if available.  If a compact branch
+  instruction is not available, a delay slot form of the branch will be
+  used instead.
 
-This option is supported from MIPS Release 6 onwards.
+  This option is supported from MIPS Release 6 onwards.
 
-The :option:`-mcompact-branches=optimal` option will cause a delay slot
-branch to be used if one is available in the current ISA and the delay
-slot is successfully filled.  If the delay slot is not filled, a compact
-branch will be chosen if one is available.
+  The :option:`-mcompact-branches=optimal` option will cause a delay slot
+  branch to be used if one is available in the current ISA and the delay
+  slot is successfully filled.  If the delay slot is not filled, a compact
+  branch will be chosen if one is available.
 
 .. option:: -mfp-exceptions
 
@@ -6857,9 +6857,9 @@ branch will be chosen if one is available.
   The default is that FP exceptions are
   enabled.
 
-For instance, on the SB-1, if FP exceptions are disabled, and we are emitting
-64-bit code, then we can use both FP pipes.  Otherwise, we can only use one
-FP pipe.
+  For instance, on the SB-1, if FP exceptions are disabled, and we are emitting
+  64-bit code, then we can use both FP pipes.  Otherwise, we can only use one
+  FP pipe.
 
 .. option:: -mvr4130-align
 
@@ -6868,9 +6868,9 @@ FP pipe.
   option is enabled, GCC aligns pairs of instructions that it
   thinks should execute in parallel.
 
-This option only has an effect when optimizing for the VR4130.
-It normally makes code faster, but at the expense of making it bigger.
-It is enabled by default at optimization level :option:`-O3`.
+  This option only has an effect when optimizing for the VR4130.
+  It normally makes code faster, but at the expense of making it bigger.
+  It is enabled by default at optimization level :option:`-O3`.
 
 .. option:: -msynci
 
@@ -6879,13 +6879,13 @@ It is enabled by default at optimization level :option:`-O3`.
   enabled) are generated when ``__builtin___clear_cache`` is
   compiled.
 
-This option defaults to :option:`-mno-synci` , but the default can be
-overridden by configuring GCC with :option:`--with-synci`.
+  This option defaults to :option:`-mno-synci` , but the default can be
+  overridden by configuring GCC with :option:`--with-synci`.
 
-When compiling code for single processor systems, it is generally safe
-to use ``synci``.  However, on many multi-core (SMP) systems, it
-does not invalidate the instruction caches on all cores and may lead
-to undefined behavior.
+  When compiling code for single processor systems, it is generally safe
+  to use ``synci``.  However, on many multi-core (SMP) systems, it
+  does not invalidate the instruction caches on all cores and may lead
+  to undefined behavior.
 
 .. option:: -mrelax-pic-calls
 
@@ -6894,11 +6894,11 @@ to undefined behavior.
   resolve the destination at link time and if the destination is within
   range for a direct call.
 
-:option:`-mrelax-pic-calls` is the default if GCC was configured to use
-an assembler and a linker that support the ``.reloc`` assembly
-directive and :option:`-mexplicit-relocs` is in effect.  With
-:option:`-mno-explicit-relocs` , this optimization can be performed by the
-assembler and the linker alone without help from the compiler.
+  :option:`-mrelax-pic-calls` is the default if GCC was configured to use
+  an assembler and a linker that support the ``.reloc`` assembly
+  directive and :option:`-mexplicit-relocs` is in effect.  With
+  :option:`-mno-explicit-relocs` , this optimization can be performed by the
+  assembler and the linker alone without help from the compiler.
 
 .. option:: -mmcount-ra-address, -mno-mcount-ra-address
 
@@ -6909,12 +6909,12 @@ assembler and the linker alone without help from the compiler.
   ``$12``.  ``_mcount`` can then modify the return address by
   doing both of the following:
 
-** Returning the new address in register ``$31``.
+  ** Returning the new address in register ``$31``.
 
-* Storing the new address in ``* :samp:`{ra-address}```,
-  if :samp:`{ra-address}` is nonnull.
+  * Storing the new address in ``* :samp:`{ra-address}```,
+    if :samp:`{ra-address}` is nonnull.
 
-The default is :option:`-mno-mcount-ra-address`.
+  The default is :option:`-mno-mcount-ra-address`.
 
 .. option:: -mframe-header-opt
 
@@ -6924,7 +6924,7 @@ The default is :option:`-mno-mcount-ra-address`.
   will suppress the allocation of the frame header if it can be determined that
   it is unused.
 
-This optimization is off by default at all optimization levels.
+  This optimization is off by default at all optimization levels.
 
 .. option:: -mlxc1-sxc1
 
@@ -7066,7 +7066,7 @@ These :option:`-m` options are defined for Matsushita MN10300 architectures:
   to shorten branches, calls and absolute memory addresses.  This option only
   has an effect when used on the command line for the final link step.
 
-This option makes symbolic debugging impossible.
+  This option makes symbolic debugging impossible.
 
 .. option:: -mliw
 
@@ -7140,48 +7140,48 @@ These options are defined for the MSP430:
   msp430.h header file to select an MCU-specific supplementary
   header file.
 
-The option also sets the ISA to use.  If the MCU name is one that is
-known to only support the 430 ISA then that is selected, otherwise the
-430X ISA is selected.  A generic MCU name of :samp:`msp430` can also be
-used to select the 430 ISA.  Similarly the generic :samp:`msp430x` MCU
-name selects the 430X ISA.
+  The option also sets the ISA to use.  If the MCU name is one that is
+  known to only support the 430 ISA then that is selected, otherwise the
+  430X ISA is selected.  A generic MCU name of :samp:`msp430` can also be
+  used to select the 430 ISA.  Similarly the generic :samp:`msp430x` MCU
+  name selects the 430X ISA.
 
-In addition an MCU-specific linker script is added to the linker
-command line.  The script's name is the name of the MCU with
-.ld appended.  Thus specifying :option:`-mmcu=xxx` on the :command:`gcc`
-command line defines the C preprocessor symbol ``__XXX__`` and
-cause the linker to search for a script called xxx.ld.
+  In addition an MCU-specific linker script is added to the linker
+  command line.  The script's name is the name of the MCU with
+  .ld appended.  Thus specifying :option:`-mmcu=xxx` on the :command:`gcc`
+  command line defines the C preprocessor symbol ``__XXX__`` and
+  cause the linker to search for a script called xxx.ld.
 
-The ISA and hardware multiply supported for the different MCUs is hard-coded
-into GCC.  However, an external :samp:`devices.csv` file can be used to
-extend device support beyond those that have been hard-coded.
+  The ISA and hardware multiply supported for the different MCUs is hard-coded
+  into GCC.  However, an external :samp:`devices.csv` file can be used to
+  extend device support beyond those that have been hard-coded.
 
-GCC searches for the :samp:`devices.csv` file using the following methods in the
-given precedence order, where the first method takes precendence over the
-second which takes precedence over the third.
+  GCC searches for the :samp:`devices.csv` file using the following methods in the
+  given precedence order, where the first method takes precendence over the
+  second which takes precedence over the third.
 
-:samp:`Include path specified with {-I} and {-L}`
-  :samp:`devices.csv` will be searched for in each of the directories specified by
-  include paths and linker library search paths.
+  :samp:`Include path specified with {-I} and {-L}`
+    :samp:`devices.csv` will be searched for in each of the directories specified by
+    include paths and linker library search paths.
 
-:samp:`Path specified by the environment variable {MSP430_GCC_INCLUDE_DIR}`
-  Define the value of the global environment variable
-  :samp:`MSP430_GCC_INCLUDE_DIR`
-  to the full path to the directory containing devices.csv, and GCC will search
-  this directory for devices.csv.  If devices.csv is found, this directory will
-  also be registered as an include path, and linker library path.  Header files
-  and linker scripts in this directory can therefore be used without manually
-  specifying ``-I`` and ``-L`` on the command line.
+  :samp:`Path specified by the environment variable {MSP430_GCC_INCLUDE_DIR}`
+    Define the value of the global environment variable
+    :samp:`MSP430_GCC_INCLUDE_DIR`
+    to the full path to the directory containing devices.csv, and GCC will search
+    this directory for devices.csv.  If devices.csv is found, this directory will
+    also be registered as an include path, and linker library path.  Header files
+    and linker scripts in this directory can therefore be used without manually
+    specifying ``-I`` and ``-L`` on the command line.
 
-:samp:`The {msp430-elf{,bare}/include/devices} directory`
-  Finally, GCC will examine :samp:`msp430-elf{,bare}/include/devices` from the
-  toolchain root directory.  This directory does not exist in a default
-  installation, but if the user has created it and copied :samp:`devices.csv`
-  there, then the MCU data will be read.  As above, this directory will
-  also be registered as an include path, and linker library path.
+  :samp:`The {msp430-elf{,bare}/include/devices} directory`
+    Finally, GCC will examine :samp:`msp430-elf{,bare}/include/devices` from the
+    toolchain root directory.  This directory does not exist in a default
+    installation, but if the user has created it and copied :samp:`devices.csv`
+    there, then the MCU data will be read.  As above, this directory will
+    also be registered as an include path, and linker library path.
 
-  If none of the above search methods find :samp:`devices.csv`, then the
-hard-coded MCU data is used.
+    If none of the above search methods find :samp:`devices.csv`, then the
+  hard-coded MCU data is used.
 
 .. option:: -mwarn-mcu, -mno-warn-mcu
 
@@ -7229,14 +7229,14 @@ hard-coded MCU data is used.
   the MCU name is not recognized then no hardware multiply support is
   assumed.  ``auto`` is the default setting.
 
-Hardware multiplies are normally performed by calling a library
-routine.  This saves space in the generated code.  When compiling at
-:option:`-O3` or higher however the hardware multiplier is invoked
-inline.  This makes for bigger, but faster code.
+  Hardware multiplies are normally performed by calling a library
+  routine.  This saves space in the generated code.  When compiling at
+  :option:`-O3` or higher however the hardware multiplier is invoked
+  inline.  This makes for bigger, but faster code.
 
-The hardware multiply routines disable interrupts whilst running and
-restore the previous interrupt state when they finish.  This makes
-them safe to use inside interrupt handlers as well as in normal code.
+  The hardware multiply routines disable interrupts whilst running and
+  restore the previous interrupt state when they finish.  This makes
+  them safe to use inside interrupt handlers as well as in normal code.
 
 .. option:: -minrt
 
@@ -7251,12 +7251,12 @@ them safe to use inside interrupt handlers as well as in normal code.
   The :samp:`tiny` implementations of these functions are not reentrant, so
   must be used with caution in multi-threaded applications.
 
-Support for streams has been removed and the string to be printed will
-always be sent to stdout via the ``write`` syscall.  The string is not
-buffered before it is sent to write.
+  Support for streams has been removed and the string to be printed will
+  always be sent to stdout via the ``write`` syscall.  The string is not
+  buffered before it is sent to write.
 
-This option requires Newlib Nano IO, so GCC must be configured with
-:samp:`--enable-newlib-nano-formatted-io`.
+  This option requires Newlib Nano IO, so GCC must be configured with
+  :samp:`--enable-newlib-nano-formatted-io`.
 
 .. option:: -mmax-inline-shift=
 
@@ -7265,11 +7265,11 @@ This option requires Newlib Nano IO, so GCC must be configured with
   perform a shift operation by a constant amount.  When this value needs to be
   exceeded, an mspabi helper function is used instead.  The default value is 4.
 
-This only affects cases where a shift by multiple positions cannot be
-completed with a single instruction (e.g. all shifts >1 on the 430 ISA).
+  This only affects cases where a shift by multiple positions cannot be
+  completed with a single instruction (e.g. all shifts >1 on the 430 ISA).
 
-Shifts of a 32-bit value are at least twice as costly, so the value passed for
-this option is divided by 2 and the resulting value used instead.
+  Shifts of a 32-bit value are at least twice as costly, so the value passed for
+  this option is divided by 2 and the resulting value used instead.
 
 .. option:: -mcode-region=
 
@@ -7387,17 +7387,17 @@ These options are defined for NDS32 implementations:
 
   Set the code model to one of
 
-small
-  All the data and read-only data segments must be within 512KB addressing space.
-  The text segment must be within 16MB addressing space.
+  small
+    All the data and read-only data segments must be within 512KB addressing space.
+    The text segment must be within 16MB addressing space.
 
-medium
-  The data segment must be within 512KB while the read-only data segment can be
-  within 4GB addressing space.  The text segment should be still within 16MB
-  addressing space.
+  medium
+    The data segment must be within 512KB while the read-only data segment can be
+    within 4GB addressing space.  The text segment should be still within 16MB
+    addressing space.
 
-large
-  All the text and data segments can be within 4GB addressing space.
+  large
+    All the text and data segments can be within 4GB addressing space.
 
 .. option:: -mctor-dtor
 
@@ -7422,58 +7422,58 @@ These are the options defined for the Altera Nios II processor.
 
   .. index:: smaller data references
 
-Put global and static objects less than or equal to :samp:`{num}` bytes
-into the small data or BSS sections instead of the normal data or BSS
-sections.  The default value of :samp:`{num}` is 8.
+  Put global and static objects less than or equal to :samp:`{num}` bytes
+  into the small data or BSS sections instead of the normal data or BSS
+  sections.  The default value of :samp:`{num}` is 8.
 
 .. option:: -mgpopt=option
 
   Generate (do not generate) GP-relative accesses.  The following 
   :samp:`{option}` names are recognized:
 
-:samp:`none`
-  Do not generate GP-relative accesses.
+  :samp:`none`
+    Do not generate GP-relative accesses.
 
-:samp:`local`
-  Generate GP-relative accesses for small data objects that are not 
-  external, weak, or uninitialized common symbols.  
-  Also use GP-relative addressing for objects that
-  have been explicitly placed in a small data section via a ``section``
-  attribute.
+  :samp:`local`
+    Generate GP-relative accesses for small data objects that are not 
+    external, weak, or uninitialized common symbols.  
+    Also use GP-relative addressing for objects that
+    have been explicitly placed in a small data section via a ``section``
+    attribute.
 
-:samp:`global`
-  As for :samp:`local`, but also generate GP-relative accesses for
-  small data objects that are external, weak, or common.  If you use this option,
-  you must ensure that all parts of your program (including libraries) are
-  compiled with the same :option:`-G` setting.
+  :samp:`global`
+    As for :samp:`local`, but also generate GP-relative accesses for
+    small data objects that are external, weak, or common.  If you use this option,
+    you must ensure that all parts of your program (including libraries) are
+    compiled with the same :option:`-G` setting.
 
-:samp:`data`
-  Generate GP-relative accesses for all data objects in the program.  If you
-  use this option, the entire data and BSS segments
-  of your program must fit in 64K of memory and you must use an appropriate
-  linker script to allocate them within the addressable range of the
-  global pointer.
+  :samp:`data`
+    Generate GP-relative accesses for all data objects in the program.  If you
+    use this option, the entire data and BSS segments
+    of your program must fit in 64K of memory and you must use an appropriate
+    linker script to allocate them within the addressable range of the
+    global pointer.
 
-:samp:`all`
-  Generate GP-relative addresses for function pointers as well as data
-  pointers.  If you use this option, the entire text, data, and BSS segments
-  of your program must fit in 64K of memory and you must use an appropriate
-  linker script to allocate them within the addressable range of the
-  global pointer.
+  :samp:`all`
+    Generate GP-relative addresses for function pointers as well as data
+    pointers.  If you use this option, the entire text, data, and BSS segments
+    of your program must fit in 64K of memory and you must use an appropriate
+    linker script to allocate them within the addressable range of the
+    global pointer.
 
-  :option:`-mgpopt` is equivalent to :option:`-mgpopt=local` , and
-:option:`-mno-gpopt` is equivalent to :option:`-mgpopt=none`.
+    :option:`-mgpopt` is equivalent to :option:`-mgpopt=local` , and
+  :option:`-mno-gpopt` is equivalent to :option:`-mgpopt=none`.
 
-The default is :option:`-mgpopt` except when :option:`-fpic` or
-:option:`-fPIC` is specified to generate position-independent code.
-Note that the Nios II ABI does not permit GP-relative accesses from
-shared libraries.
+  The default is :option:`-mgpopt` except when :option:`-fpic` or
+  :option:`-fPIC` is specified to generate position-independent code.
+  Note that the Nios II ABI does not permit GP-relative accesses from
+  shared libraries.
 
-You may need to specify :option:`-mno-gpopt` explicitly when building
-programs that include large amounts of small data, including large
-GOT data sections.  In this case, the 16-bit offset for GP-relative
-addressing may not be large enough to allow access to the entire 
-small data section.
+  You may need to specify :option:`-mno-gpopt` explicitly when building
+  programs that include large amounts of small data, including large
+  GOT data sections.  In this case, the 16-bit offset for GP-relative
+  addressing may not be large enough to allow access to the entire 
+  small data section.
 
 .. option:: -mgprel-sec=regexp
 
@@ -7483,9 +7483,9 @@ small data section.
   (see :ref:`common-variable-attributes`) and a custom linker script.  
   The :samp:`{regexp}` is a POSIX Extended Regular Expression.
 
-This option does not affect the behavior of the :option:`-G` option, and 
-the specified sections are in addition to the standard ``.sdata``
-and ``.sbss`` small-data sections that are recognized by :option:`-mgpopt`.
+  This option does not affect the behavior of the :option:`-G` option, and 
+  the specified sections are in addition to the standard ``.sdata``
+  and ``.sbss`` small-data sections that are recognized by :option:`-mgpopt`.
 
 .. option:: -mr0rel-sec=regexp
 
@@ -7496,10 +7496,10 @@ and ``.sbss`` small-data sections that are recognized by :option:`-mgpopt`.
   (see :ref:`common-variable-attributes`) and a custom linker script.  
   The :samp:`{regexp}` is a POSIX Extended Regular Expression.
 
-In contrast to the use of GP-relative addressing for small data, 
-zero-based addressing is never generated by default and there are no 
-conventional section names used in standard linker scripts for sections
-in the low or high areas of memory.
+  In contrast to the use of GP-relative addressing for small data, 
+  zero-based addressing is never generated by default and there are no 
+  conventional section names used in standard linker scripts for sections
+  in the low or high areas of memory.
 
 .. option:: -mel, -meb
 
@@ -7512,8 +7512,8 @@ in the low or high areas of memory.
   name to determine what kind of instructions it can emit when generating
   assembly code.  Permissible names are: :samp:`r1`, :samp:`r2`.
 
-The preprocessor macro ``__nios2_arch__`` is available to programs,
-with value 1 or 2, indicating the targeted ISA level.
+  The preprocessor macro ``__nios2_arch__`` is available to programs,
+  with value 1 or 2, indicating the targeted ISA level.
 
 .. option:: -mbypass-cache, -mno-bypass-cache
 
@@ -7547,123 +7547,123 @@ with value 1 or 2, indicating the targeted ISA level.
 
   .. index:: mcustom-insn
 
-.. index:: mno-custom-insn
+  .. index:: mno-custom-insn
 
-Each :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` option enables use of a
-custom instruction with encoding :samp:`{N}` when generating code that uses 
-:samp:`{insn}`.  For example, :option:`-mcustom-fadds=253` generates custom
-instruction 253 for single-precision floating-point add operations instead
-of the default behavior of using a library call.
+  Each :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` option enables use of a
+  custom instruction with encoding :samp:`{N}` when generating code that uses 
+  :samp:`{insn}`.  For example, :option:`-mcustom-fadds=253` generates custom
+  instruction 253 for single-precision floating-point add operations instead
+  of the default behavior of using a library call.
 
-The following values of :samp:`{insn}` are supported.  Except as otherwise
-noted, floating-point operations are expected to be implemented with
-normal IEEE 754 semantics and correspond directly to the C operators or the
-equivalent GCC built-in functions (see :ref:`other-builtins`).
+  The following values of :samp:`{insn}` are supported.  Except as otherwise
+  noted, floating-point operations are expected to be implemented with
+  normal IEEE 754 semantics and correspond directly to the C operators or the
+  equivalent GCC built-in functions (see :ref:`other-builtins`).
 
-Single-precision floating point:
+  Single-precision floating point:
 
-:samp:`{fadds}, {fsubs}, {fdivs}, {fmuls}`
-  Binary arithmetic operations.
+  :samp:`{fadds}, {fsubs}, {fdivs}, {fmuls}`
+    Binary arithmetic operations.
 
-fnegs
-  Unary negation.
+  fnegs
+    Unary negation.
 
-fabss
-  Unary absolute value.
+  fabss
+    Unary absolute value.
 
-:samp:`{fcmpeqs}, {fcmpges}, {fcmpgts}, {fcmples}, {fcmplts}, {fcmpnes}`
-  Comparison operations.
+  :samp:`{fcmpeqs}, {fcmpges}, {fcmpgts}, {fcmples}, {fcmplts}, {fcmpnes}`
+    Comparison operations.
 
-:samp:`{fmins}, {fmaxs}`
-  Floating-point minimum and maximum.  These instructions are only
-  generated if :option:`-ffinite-math-only` is specified.
+  :samp:`{fmins}, {fmaxs}`
+    Floating-point minimum and maximum.  These instructions are only
+    generated if :option:`-ffinite-math-only` is specified.
 
-fsqrts
-  Unary square root operation.
+  fsqrts
+    Unary square root operation.
 
-:samp:`{fcoss}, {fsins}, {ftans}, {fatans}, {fexps}, {flogs}`
-  Floating-point trigonometric and exponential functions.  These instructions
-  are only generated if :option:`-funsafe-math-optimizations` is also specified.
+  :samp:`{fcoss}, {fsins}, {ftans}, {fatans}, {fexps}, {flogs}`
+    Floating-point trigonometric and exponential functions.  These instructions
+    are only generated if :option:`-funsafe-math-optimizations` is also specified.
 
-  Double-precision floating point:
+    Double-precision floating point:
 
-:samp:`{faddd}, {fsubd}, {fdivd}, {fmuld}`
-  Binary arithmetic operations.
+  :samp:`{faddd}, {fsubd}, {fdivd}, {fmuld}`
+    Binary arithmetic operations.
 
-fnegd
-  Unary negation.
+  fnegd
+    Unary negation.
 
-fabsd
-  Unary absolute value.
+  fabsd
+    Unary absolute value.
 
-:samp:`{fcmpeqd}, {fcmpged}, {fcmpgtd}, {fcmpled}, {fcmpltd}, {fcmpned}`
-  Comparison operations.
+  :samp:`{fcmpeqd}, {fcmpged}, {fcmpgtd}, {fcmpled}, {fcmpltd}, {fcmpned}`
+    Comparison operations.
 
-:samp:`{fmind}, {fmaxd}`
-  Double-precision minimum and maximum.  These instructions are only
-  generated if :option:`-ffinite-math-only` is specified.
+  :samp:`{fmind}, {fmaxd}`
+    Double-precision minimum and maximum.  These instructions are only
+    generated if :option:`-ffinite-math-only` is specified.
 
-fsqrtd
-  Unary square root operation.
+  fsqrtd
+    Unary square root operation.
 
-:samp:`{fcosd}, {fsind}, {ftand}, {fatand}, {fexpd}, {flogd}`
-  Double-precision trigonometric and exponential functions.  These instructions
-  are only generated if :option:`-funsafe-math-optimizations` is also specified.
+  :samp:`{fcosd}, {fsind}, {ftand}, {fatand}, {fexpd}, {flogd}`
+    Double-precision trigonometric and exponential functions.  These instructions
+    are only generated if :option:`-funsafe-math-optimizations` is also specified.
 
-  Conversions:
+    Conversions:
 
-fextsd
-  Conversion from single precision to double precision.
+  fextsd
+    Conversion from single precision to double precision.
 
-ftruncds
-  Conversion from double precision to single precision.
+  ftruncds
+    Conversion from double precision to single precision.
 
-:samp:`{fixsi}, {fixsu}, {fixdi}, {fixdu}`
-  Conversion from floating point to signed or unsigned integer types, with
-  truncation towards zero.
+  :samp:`{fixsi}, {fixsu}, {fixdi}, {fixdu}`
+    Conversion from floating point to signed or unsigned integer types, with
+    truncation towards zero.
 
-round
-  Conversion from single-precision floating point to signed integer,
-  rounding to the nearest integer and ties away from zero.
-  This corresponds to the ``__builtin_lroundf`` function when
-  :option:`-fno-math-errno` is used.
+  round
+    Conversion from single-precision floating point to signed integer,
+    rounding to the nearest integer and ties away from zero.
+    This corresponds to the ``__builtin_lroundf`` function when
+    :option:`-fno-math-errno` is used.
 
-:samp:`{floatis}, {floatus}, {floatid}, {floatud}`
-  Conversion from signed or unsigned integer types to floating-point types.
+  :samp:`{floatis}, {floatus}, {floatid}, {floatud}`
+    Conversion from signed or unsigned integer types to floating-point types.
 
-  In addition, all of the following transfer instructions for internal
-registers X and Y must be provided to use any of the double-precision
-floating-point instructions.  Custom instructions taking two
-double-precision source operands expect the first operand in the
-64-bit register X.  The other operand (or only operand of a unary
-operation) is given to the custom arithmetic instruction with the
-least significant half in source register :samp:`{src1}` and the most
-significant half in :samp:`{src2}`.  A custom instruction that returns a
-double-precision result returns the most significant 32 bits in the
-destination register and the other half in 32-bit register Y.  
-GCC automatically generates the necessary code sequences to write
-register X and/or read register Y when double-precision floating-point
-instructions are used.
+    In addition, all of the following transfer instructions for internal
+  registers X and Y must be provided to use any of the double-precision
+  floating-point instructions.  Custom instructions taking two
+  double-precision source operands expect the first operand in the
+  64-bit register X.  The other operand (or only operand of a unary
+  operation) is given to the custom arithmetic instruction with the
+  least significant half in source register :samp:`{src1}` and the most
+  significant half in :samp:`{src2}`.  A custom instruction that returns a
+  double-precision result returns the most significant 32 bits in the
+  destination register and the other half in 32-bit register Y.  
+  GCC automatically generates the necessary code sequences to write
+  register X and/or read register Y when double-precision floating-point
+  instructions are used.
 
-fwrx
-  Write :samp:`{src1}` into the least significant half of X and :samp:`{src2}` into
-  the most significant half of X.
+  fwrx
+    Write :samp:`{src1}` into the least significant half of X and :samp:`{src2}` into
+    the most significant half of X.
 
-fwry
-  Write :samp:`{src1}` into Y.
+  fwry
+    Write :samp:`{src1}` into Y.
 
-:samp:`{frdxhi}, {frdxlo}`
-  Read the most or least (respectively) significant half of X and store it in
-  :samp:`{dest}`.
+  :samp:`{frdxhi}, {frdxlo}`
+    Read the most or least (respectively) significant half of X and store it in
+    :samp:`{dest}`.
 
-frdy
-  Read the value of Y and store it into :samp:`{dest}`.
+  frdy
+    Read the value of Y and store it into :samp:`{dest}`.
 
-  Note that you can gain more local control over generation of Nios II custom
-instructions by using the ``target("custom- :samp:`{insn}` = :samp:`{N}` ")``
-and ``target("no-custom- :samp:`{insn}` ")`` function attributes
-(see :ref:`function-attributes`)
-or pragmas (see :ref:`function-specific-option-pragmas`).
+    Note that you can gain more local control over generation of Nios II custom
+  instructions by using the ``target("custom- :samp:`{insn}` = :samp:`{N}` ")``
+  and ``target("no-custom- :samp:`{insn}` ")`` function attributes
+  (see :ref:`function-attributes`)
+  or pragmas (see :ref:`function-specific-option-pragmas`).
 
 .. option:: -mcustom-fpu-cfg=name
 
@@ -7671,70 +7671,70 @@ or pragmas (see :ref:`function-specific-option-pragmas`).
   (see :option:`-mcustom-`:samp:`{insn}` above).  
   Currently, the following sets are defined:
 
-:option:`-mcustom-fpu-cfg=60-1` is equivalent to:
+  :option:`-mcustom-fpu-cfg=60-1` is equivalent to:
 
-:option:`-mcustom-fmuls=252` 
-:option:`-mcustom-fadds=253` 
-:option:`-mcustom-fsubs=254` 
-:option:`-fsingle-precision-constant`
-:option:`-mcustom-fpu-cfg=60-2` is equivalent to:
+  :option:`-mcustom-fmuls=252` 
+  :option:`-mcustom-fadds=253` 
+  :option:`-mcustom-fsubs=254` 
+  :option:`-fsingle-precision-constant`
+  :option:`-mcustom-fpu-cfg=60-2` is equivalent to:
 
-:option:`-mcustom-fmuls=252` 
-:option:`-mcustom-fadds=253` 
-:option:`-mcustom-fsubs=254` 
-:option:`-mcustom-fdivs=255` 
-:option:`-fsingle-precision-constant`
-:option:`-mcustom-fpu-cfg=72-3` is equivalent to:
+  :option:`-mcustom-fmuls=252` 
+  :option:`-mcustom-fadds=253` 
+  :option:`-mcustom-fsubs=254` 
+  :option:`-mcustom-fdivs=255` 
+  :option:`-fsingle-precision-constant`
+  :option:`-mcustom-fpu-cfg=72-3` is equivalent to:
 
-:option:`-mcustom-floatus=243` 
-:option:`-mcustom-fixsi=244` 
-:option:`-mcustom-floatis=245` 
-:option:`-mcustom-fcmpgts=246` 
-:option:`-mcustom-fcmples=249` 
-:option:`-mcustom-fcmpeqs=250` 
-:option:`-mcustom-fcmpnes=251` 
-:option:`-mcustom-fmuls=252` 
-:option:`-mcustom-fadds=253` 
-:option:`-mcustom-fsubs=254` 
-:option:`-mcustom-fdivs=255` 
-:option:`-fsingle-precision-constant`
-:option:`-mcustom-fpu-cfg=fph2` is equivalent to:
+  :option:`-mcustom-floatus=243` 
+  :option:`-mcustom-fixsi=244` 
+  :option:`-mcustom-floatis=245` 
+  :option:`-mcustom-fcmpgts=246` 
+  :option:`-mcustom-fcmples=249` 
+  :option:`-mcustom-fcmpeqs=250` 
+  :option:`-mcustom-fcmpnes=251` 
+  :option:`-mcustom-fmuls=252` 
+  :option:`-mcustom-fadds=253` 
+  :option:`-mcustom-fsubs=254` 
+  :option:`-mcustom-fdivs=255` 
+  :option:`-fsingle-precision-constant`
+  :option:`-mcustom-fpu-cfg=fph2` is equivalent to:
 
-:option:`-mcustom-fabss=224` 
-:option:`-mcustom-fnegs=225` 
-:option:`-mcustom-fcmpnes=226` 
-:option:`-mcustom-fcmpeqs=227` 
-:option:`-mcustom-fcmpges=228` 
-:option:`-mcustom-fcmpgts=229` 
-:option:`-mcustom-fcmples=230` 
-:option:`-mcustom-fcmplts=231` 
-:option:`-mcustom-fmaxs=232` 
-:option:`-mcustom-fmins=233` 
-:option:`-mcustom-round=248` 
-:option:`-mcustom-fixsi=249` 
-:option:`-mcustom-floatis=250` 
-:option:`-mcustom-fsqrts=251` 
-:option:`-mcustom-fmuls=252` 
-:option:`-mcustom-fadds=253` 
-:option:`-mcustom-fsubs=254` 
-:option:`-mcustom-fdivs=255` 
-Custom instruction assignments given by individual
-:option:`-mcustom-`:samp:`{insn}` = options override those given by
-:option:`-mcustom-fpu-cfg` =, regardless of the
-order of the options on the command line.
+  :option:`-mcustom-fabss=224` 
+  :option:`-mcustom-fnegs=225` 
+  :option:`-mcustom-fcmpnes=226` 
+  :option:`-mcustom-fcmpeqs=227` 
+  :option:`-mcustom-fcmpges=228` 
+  :option:`-mcustom-fcmpgts=229` 
+  :option:`-mcustom-fcmples=230` 
+  :option:`-mcustom-fcmplts=231` 
+  :option:`-mcustom-fmaxs=232` 
+  :option:`-mcustom-fmins=233` 
+  :option:`-mcustom-round=248` 
+  :option:`-mcustom-fixsi=249` 
+  :option:`-mcustom-floatis=250` 
+  :option:`-mcustom-fsqrts=251` 
+  :option:`-mcustom-fmuls=252` 
+  :option:`-mcustom-fadds=253` 
+  :option:`-mcustom-fsubs=254` 
+  :option:`-mcustom-fdivs=255` 
+  Custom instruction assignments given by individual
+  :option:`-mcustom-`:samp:`{insn}` = options override those given by
+  :option:`-mcustom-fpu-cfg` =, regardless of the
+  order of the options on the command line.
 
-Note that you can gain more local control over selection of a FPU
-configuration by using the ``target("custom-fpu-cfg= :samp:`{name}` ")``
-function attribute (see :ref:`function-attributes`)
-or pragma (see :ref:`function-specific-option-pragmas`).
+  Note that you can gain more local control over selection of a FPU
+  configuration by using the ``target("custom-fpu-cfg= :samp:`{name}` ")``
+  function attribute (see :ref:`function-attributes`)
+  or pragma (see :ref:`function-specific-option-pragmas`).
 
-The name :samp:`{fph2}` is an abbreviation for *Nios II Floating Point
-Hardware 2 Component*.  Please note that the custom instructions enabled by
-:option:`-mcustom-fmins=233` and :option:`-mcustom-fmaxs=234` are only generated
-if :option:`-ffinite-math-only` is specified.  The custom instruction enabled by
-:option:`-mcustom-round=248` is only generated if :option:`-fno-math-errno` is
-specified.  In contrast to the other configurations,
-:option:`-fsingle-precision-constant` is not set.
+  The name :samp:`{fph2}` is an abbreviation for *Nios II Floating Point
+  Hardware 2 Component*.  Please note that the custom instructions enabled by
+  :option:`-mcustom-fmins=233` and :option:`-mcustom-fmaxs=234` are only generated
+  if :option:`-ffinite-math-only` is specified.  The custom instruction enabled by
+  :option:`-mcustom-round=248` is only generated if :option:`-fno-math-errno` is
+  specified.  In contrast to the other configurations,
+  :option:`-fsingle-precision-constant` is not set.
 
 These additional :samp:`-m` options are available for the Altera Nios II
 ELF (bare-metal) target:
@@ -7988,18 +7988,18 @@ These :samp:`-m` options are defined for picoChip implementations:
   parameters for array element type :samp:`{ae_type}`.  Supported values
   for :samp:`{ae_type}` are :samp:`ANY`, :samp:`MUL`, and :samp:`MAC`.
 
-:option:`-mae=ANY` selects a completely generic AE type.  Code
-generated with this option runs on any of the other AE types.  The
-code is not as efficient as it would be if compiled for a specific
-AE type, and some types of operation (e.g., multiplication) do not
-work properly on all types of AE.
+  :option:`-mae=ANY` selects a completely generic AE type.  Code
+  generated with this option runs on any of the other AE types.  The
+  code is not as efficient as it would be if compiled for a specific
+  AE type, and some types of operation (e.g., multiplication) do not
+  work properly on all types of AE.
 
-:option:`-mae=MUL` selects a MUL AE type.  This is the most useful AE type
-for compiled code, and is the default.
+  :option:`-mae=MUL` selects a MUL AE type.  This is the most useful AE type
+  for compiled code, and is the default.
 
-:option:`-mae=MAC` selects a DSP-style MAC AE.  Code compiled with this
-option may suffer from poor performance of byte (char) manipulation,
-since the DSP AE does not provide hardware support for byte load/stores.
+  :option:`-mae=MAC` selects a DSP-style MAC AE.  Code compiled with this
+  option may suffer from poor performance of byte (char) manipulation,
+  since the DSP AE does not provide hardware support for byte load/stores.
 
 ``-msymbol-as-address``
   Enable the compiler to directly use a symbol name as an address in a
@@ -8066,25 +8066,25 @@ These command-line options are defined for PRU target:
   unmodified TI ABI while :option:`-mabi=gnu` selects a GNU variant that copes
   more naturally with certain GCC assumptions.  These are the differences:
 
-:samp:`Function Pointer Size`
-  TI ABI specifies that function (code) pointers are 16-bit, whereas GNU
-  supports only 32-bit data and code pointers.
+  :samp:`Function Pointer Size`
+    TI ABI specifies that function (code) pointers are 16-bit, whereas GNU
+    supports only 32-bit data and code pointers.
 
-:samp:`Optional Return Value Pointer`
-  Function return values larger than 64 bits are passed by using a hidden
-  pointer as the first argument of the function.  TI ABI, though, mandates that
-  the pointer can be NULL in case the caller is not using the returned value.
-  GNU always passes and expects a valid return value pointer.
+  :samp:`Optional Return Value Pointer`
+    Function return values larger than 64 bits are passed by using a hidden
+    pointer as the first argument of the function.  TI ABI, though, mandates that
+    the pointer can be NULL in case the caller is not using the returned value.
+    GNU always passes and expects a valid return value pointer.
 
-  The current :option:`-mabi=ti` implementation simply raises a compile error
-when any of the above code constructs is detected.  As a consequence
-the standard C library cannot be built and it is omitted when linking with
-:option:`-mabi=ti`.
+    The current :option:`-mabi=ti` implementation simply raises a compile error
+  when any of the above code constructs is detected.  As a consequence
+  the standard C library cannot be built and it is omitted when linking with
+  :option:`-mabi=ti`.
 
-Relaxation is a GNU feature and for safety reasons is disabled when using
-:option:`-mabi=ti`.  The TI toolchain does not emit relocations for QBBx
-instructions, so the GNU linker cannot adjust them when shortening adjacent
-LDI32 pseudo instructions.
+  Relaxation is a GNU feature and for safety reasons is disabled when using
+  :option:`-mabi=ti`.  The TI toolchain does not emit relocations for QBBx
+  instructions, so the GNU linker cannot adjust them when shortening adjacent
+  LDI32 pseudo instructions.
 
 .. _risc-v-options:
 
@@ -8117,15 +8117,15 @@ These command-line options are defined for RISC-V targets:
   :samp:`-march=rv64ifd -mabi=lp64`, in which no floating-point arguments will be
   passed in registers.
 
-The default for this argument is system dependent, users who want a specific
-calling convention should specify one explicitly.  The valid calling
-conventions are: :samp:`ilp32`, :samp:`ilp32f`, :samp:`ilp32d`, :samp:`lp64`,
-:samp:`lp64f`, and :samp:`lp64d`.  Some calling conventions are impossible to
-implement on some ISAs: for example, :samp:`-march=rv32if -mabi=ilp32d` is
-invalid because the ABI requires 64-bit values be passed in F registers, but F
-registers are only 32 bits wide.  There is also the :samp:`ilp32e` ABI that can
-only be used with the :samp:`rv32e` architecture.  This ABI is not well
-specified at present, and is subject to change.
+  The default for this argument is system dependent, users who want a specific
+  calling convention should specify one explicitly.  The valid calling
+  conventions are: :samp:`ilp32`, :samp:`ilp32f`, :samp:`ilp32d`, :samp:`lp64`,
+  :samp:`lp64f`, and :samp:`lp64d`.  Some calling conventions are impossible to
+  implement on some ISAs: for example, :samp:`-march=rv32if -mabi=ilp32d` is
+  invalid because the ABI requires 64-bit values be passed in F registers, but F
+  registers are only 32 bits wide.  There is also the :samp:`ilp32e` ABI that can
+  only be used with the :samp:`rv32e` architecture.  This ABI is not well
+  specified at present, and is subject to change.
 
 .. option:: -mfdiv
 
@@ -8145,11 +8145,11 @@ specified at present, and is subject to change.
   lower-case.  Examples include :samp:`rv64i`, :samp:`rv32g`, :samp:`rv32e`, and
   :samp:`rv32imaf`.
 
-When :option:`-march` = is not specified, use the setting from :option:`-mcpu`.
+  When :option:`-march` = is not specified, use the setting from :option:`-mcpu`.
 
-If both :option:`-march` and :option:`-mcpu` = are not specified, the default for
-this argument is system dependent, users who want a specific architecture
-extensions should specify one explicitly.
+  If both :option:`-march` and :option:`-mcpu` = are not specified, the default for
+  this argument is system dependent, users who want a specific architecture
+  extensions should specify one explicitly.
 
 .. option:: -mcpu=processor-string
 
@@ -8167,13 +8167,13 @@ extensions should specify one explicitly.
   :samp:`sifive-3-series`, :samp:`sifive-5-series`, :samp:`sifive-7-series`,
   :samp:`size`, and all valid options for :option:`-mcpu` =.
 
-When :option:`-mtune` = is not specified, use the setting from :option:`-mcpu` ,
-the default is :samp:`rocket` if both are not specified.
+  When :option:`-mtune` = is not specified, use the setting from :option:`-mcpu` ,
+  the default is :samp:`rocket` if both are not specified.
 
-The :samp:`size` choice is not intended for use by end-users.  This is used
-when :option:`-Os` is specified.  It overrides the instruction cost info
-provided by :option:`-mtune` =, but does not override the pipeline info.  This
-helps reduce code size while still giving good performance.
+  The :samp:`size` choice is not intended for use by end-users.  This is used
+  when :option:`-Os` is specified.  It overrides the instruction cost info
+  provided by :option:`-mtune` =, but does not override the pipeline info.  This
+  helps reduce code size while still giving good performance.
 
 .. option:: -mpreferred-stack-boundary=num
 
@@ -8181,9 +8181,9 @@ helps reduce code size while still giving good performance.
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128-bits).
 
-Warning: If you use this switch, then you must build all modules with
-the same value, including any libraries.  This includes the system libraries
-and startup modules.
+  Warning: If you use this switch, then you must build all modules with
+  the same value, including any libraries.  This includes the system libraries
+  and startup modules.
 
 .. option:: -msmall-data-limit=n
 
@@ -8261,13 +8261,13 @@ and startup modules.
   locations are :samp:`global` for a global canary or :samp:`tls` for per-thread
   canary in the TLS block.
 
-With the latter choice the options
-:option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-:option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-which register to use as base register for reading the canary,
-and from what offset from that base register. There is no default
-register or offset as this is entirely for use within the Linux
-kernel.
+  With the latter choice the options
+  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  which register to use as base register for reading the canary,
+  and from what offset from that base register. There is no default
+  register or offset as this is entirely for use within the Linux
+  kernel.
 
 .. _rl78-options:
 
@@ -8292,9 +8292,9 @@ RL78 Options
   (S3 core) parts.  The value ``rl78`` is an alias for ``g14`` and
   the value ``mg10`` is an alias for ``none``.
 
-In addition a C preprocessor macro is defined, based upon the setting
-of this option.  Possible values are: ``__RL78_MUL_NONE__``,
-``__RL78_MUL_G13__`` or ``__RL78_MUL_G14__``.
+  In addition a C preprocessor macro is defined, based upon the setting
+  of this option.  Possible values are: ``__RL78_MUL_NONE__``,
+  ``__RL78_MUL_G13__`` or ``__RL78_MUL_G14__``.
 
 .. option:: -mcpu=g10
 
@@ -8304,25 +8304,25 @@ of this option.  Possible values are: ``__RL78_MUL_NONE__``,
   for these operations.  The G10 or S1 core does not have register
   banks, so it uses a different calling convention.
 
-If this option is set it also selects the type of hardware multiply
-support to use, unless this is overridden by an explicit
-:option:`-mmul=none` option on the command line.  Thus specifying
-:option:`-mcpu=g13` enables the use of the G13 hardware multiply
-peripheral and specifying :option:`-mcpu=g10` disables the use of
-hardware multiplications altogether.
+  If this option is set it also selects the type of hardware multiply
+  support to use, unless this is overridden by an explicit
+  :option:`-mmul=none` option on the command line.  Thus specifying
+  :option:`-mcpu=g13` enables the use of the G13 hardware multiply
+  peripheral and specifying :option:`-mcpu=g10` disables the use of
+  hardware multiplications altogether.
 
-Note, although the RL78/G14 core is the default target, specifying
-:option:`-mcpu=g14` or :option:`-mcpu=rl78` on the command line does
-change the behavior of the toolchain since it also enables G14
-hardware multiply support.  If these options are not specified on the
-command line then software multiplication routines will be used even
-though the code targets the RL78 core.  This is for backwards
-compatibility with older toolchains which did not have hardware
-multiply and divide support.
+  Note, although the RL78/G14 core is the default target, specifying
+  :option:`-mcpu=g14` or :option:`-mcpu=rl78` on the command line does
+  change the behavior of the toolchain since it also enables G14
+  hardware multiply support.  If these options are not specified on the
+  command line then software multiplication routines will be used even
+  though the code targets the RL78 core.  This is for backwards
+  compatibility with older toolchains which did not have hardware
+  multiply and divide support.
 
-In addition a C preprocessor macro is defined, based upon the setting
-of this option.  Possible values are: ``__RL78_G10__``,
-``__RL78_G13__`` or ``__RL78_G14__``.
+  In addition a C preprocessor macro is defined, based upon the setting
+  of this option.  Possible values are: ``__RL78_G10__``,
+  ``__RL78_G13__`` or ``__RL78_G14__``.
 
 .. option:: -mg10, -mg13, -mg14, -mrl78
 
@@ -8374,37 +8374,37 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   options.  We recommend you use the :option:`-mcpu`:samp:`={cpu_type}` option
   rather than the options listed above.
 
-Specifying :option:`-mpowerpc-gpopt` allows
-GCC to use the optional PowerPC architecture instructions in the
-General Purpose group, including floating-point square root.  Specifying
-:option:`-mpowerpc-gfxopt` allows GCC to
-use the optional PowerPC architecture instructions in the Graphics
-group, including floating-point select.
+  Specifying :option:`-mpowerpc-gpopt` allows
+  GCC to use the optional PowerPC architecture instructions in the
+  General Purpose group, including floating-point square root.  Specifying
+  :option:`-mpowerpc-gfxopt` allows GCC to
+  use the optional PowerPC architecture instructions in the Graphics
+  group, including floating-point select.
 
-The :option:`-mmfcrf` option allows GCC to generate the move from
-condition register field instruction implemented on the POWER4
-processor and other processors that support the PowerPC V2.01
-architecture.
-The :option:`-mpopcntb` option allows GCC to generate the popcount and
-double-precision FP reciprocal estimate instruction implemented on the
-POWER5 processor and other processors that support the PowerPC V2.02
-architecture.
-The :option:`-mpopcntd` option allows GCC to generate the popcount
-instruction implemented on the POWER7 processor and other processors
-that support the PowerPC V2.06 architecture.
-The :option:`-mfprnd` option allows GCC to generate the FP round to
-integer instructions implemented on the POWER5+ processor and other
-processors that support the PowerPC V2.03 architecture.
-The :option:`-mcmpb` option allows GCC to generate the compare bytes
-instruction implemented on the POWER6 processor and other processors
-that support the PowerPC V2.05 architecture.
-The :option:`-mhard-dfp` option allows GCC to generate the decimal
-floating-point instructions implemented on some POWER processors.
+  The :option:`-mmfcrf` option allows GCC to generate the move from
+  condition register field instruction implemented on the POWER4
+  processor and other processors that support the PowerPC V2.01
+  architecture.
+  The :option:`-mpopcntb` option allows GCC to generate the popcount and
+  double-precision FP reciprocal estimate instruction implemented on the
+  POWER5 processor and other processors that support the PowerPC V2.02
+  architecture.
+  The :option:`-mpopcntd` option allows GCC to generate the popcount
+  instruction implemented on the POWER7 processor and other processors
+  that support the PowerPC V2.06 architecture.
+  The :option:`-mfprnd` option allows GCC to generate the FP round to
+  integer instructions implemented on the POWER5+ processor and other
+  processors that support the PowerPC V2.03 architecture.
+  The :option:`-mcmpb` option allows GCC to generate the compare bytes
+  instruction implemented on the POWER6 processor and other processors
+  that support the PowerPC V2.05 architecture.
+  The :option:`-mhard-dfp` option allows GCC to generate the decimal
+  floating-point instructions implemented on some POWER processors.
 
-The :option:`-mpowerpc64` option allows GCC to generate the additional
-64-bit instructions that are found in the full PowerPC64 architecture
-and to treat GPRs as 64-bit, doubleword quantities.  GCC defaults to
-:option:`-mno-powerpc64`.
+  The :option:`-mpowerpc64` option allows GCC to generate the additional
+  64-bit instructions that are found in the full PowerPC64 architecture
+  and to treat GPRs as 64-bit, doubleword quantities.  GCC defaults to
+  :option:`-mno-powerpc64`.
 
 .. option:: -mcpu=cpu_type
 
@@ -8423,44 +8423,44 @@ and to treat GPRs as 64-bit, doubleword quantities.  GCC defaults to
   :samp:`power9`, :samp:`future`, :samp:`powerpc`, :samp:`powerpc64`,
   :samp:`powerpc64le`, :samp:`rs64`, and :samp:`native`.
 
-:option:`-mcpu=powerpc` , :option:`-mcpu=powerpc64` , and
-:option:`-mcpu=powerpc64le` specify pure 32-bit PowerPC (either
-endian), 64-bit big endian PowerPC and 64-bit little endian PowerPC
-architecture machine types, with an appropriate, generic processor
-model assumed for scheduling purposes.
+  :option:`-mcpu=powerpc` , :option:`-mcpu=powerpc64` , and
+  :option:`-mcpu=powerpc64le` specify pure 32-bit PowerPC (either
+  endian), 64-bit big endian PowerPC and 64-bit little endian PowerPC
+  architecture machine types, with an appropriate, generic processor
+  model assumed for scheduling purposes.
 
-Specifying :samp:`native` as cpu type detects and selects the
-architecture option that corresponds to the host processor of the
-system performing the compilation.
-:option:`-mcpu=native` has no effect if GCC does not recognize the
-processor.
+  Specifying :samp:`native` as cpu type detects and selects the
+  architecture option that corresponds to the host processor of the
+  system performing the compilation.
+  :option:`-mcpu=native` has no effect if GCC does not recognize the
+  processor.
 
-The other options specify a specific processor.  Code generated under
-those options runs best on that processor, and may not run at all on
-others.
+  The other options specify a specific processor.  Code generated under
+  those options runs best on that processor, and may not run at all on
+  others.
 
-The :option:`-mcpu` options automatically enable or disable the
-following options:
+  The :option:`-mcpu` options automatically enable or disable the
+  following options:
 
-:option:`-maltivec`  :option:`-mfprnd`  :option:`-mhard-float`  :option:`-mmfcrf`  :option:`-mmultiple` 
-:option:`-mpopcntb`  :option:`-mpopcntd`  :option:`-mpowerpc64` 
-:option:`-mpowerpc-gpopt`  :option:`-mpowerpc-gfxopt` 
-:option:`-mmulhw`  :option:`-mdlmzb`  :option:`-mmfpgpr`  :option:`-mvsx` 
-:option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` 
-:option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` 
-:option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma`
-The particular options set for any particular CPU varies between
-compiler versions, depending on what setting seems to produce optimal
-code for that CPU; it doesn't necessarily reflect the actual hardware's
-capabilities.  If you wish to set an individual option to a particular
-value, you may specify it after the :option:`-mcpu` option, like
-:option:`-mcpu=970 -mno-altivec`.
+  :option:`-maltivec`  :option:`-mfprnd`  :option:`-mhard-float`  :option:`-mmfcrf`  :option:`-mmultiple` 
+  :option:`-mpopcntb`  :option:`-mpopcntd`  :option:`-mpowerpc64` 
+  :option:`-mpowerpc-gpopt`  :option:`-mpowerpc-gfxopt` 
+  :option:`-mmulhw`  :option:`-mdlmzb`  :option:`-mmfpgpr`  :option:`-mvsx` 
+  :option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` 
+  :option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` 
+  :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma`
+  The particular options set for any particular CPU varies between
+  compiler versions, depending on what setting seems to produce optimal
+  code for that CPU; it doesn't necessarily reflect the actual hardware's
+  capabilities.  If you wish to set an individual option to a particular
+  value, you may specify it after the :option:`-mcpu` option, like
+  :option:`-mcpu=970 -mno-altivec`.
 
-On AIX, the :option:`-maltivec` and :option:`-mpowerpc64` options are
-not enabled or disabled by the :option:`-mcpu` option at present because
-AIX does not have full support for these options.  You may still
-enable or disable them individually if you're sure it'll work in your
-environment.
+  On AIX, the :option:`-maltivec` and :option:`-mpowerpc64` options are
+  not enabled or disabled by the :option:`-mcpu` option at present because
+  AIX does not have full support for these options.  You may still
+  enable or disable them individually if you're sure it'll work in your
+  environment.
 
 .. option:: -mtune=cpu_type
 
@@ -8497,13 +8497,13 @@ environment.
   :option:`-mabi=altivec` to adjust the current ABI with AltiVec ABI
   enhancements.
 
-When :option:`-maltivec` is used, the element order for AltiVec intrinsics
-such as ``vec_splat``, ``vec_extract``, and ``vec_insert`` 
-match array element order corresponding to the endianness of the
-target.  That is, element zero identifies the leftmost element in a
-vector register when targeting a big-endian platform, and identifies
-the rightmost element in a vector register when targeting a
-little-endian platform.
+  When :option:`-maltivec` is used, the element order for AltiVec intrinsics
+  such as ``vec_splat``, ``vec_extract``, and ``vec_insert`` 
+  match array element order corresponding to the endianness of the
+  target.  That is, element zero identifies the leftmost element in a
+  vector register when targeting a big-endian platform, and identifies
+  the rightmost element in a vector register when targeting a
+  little-endian platform.
 
 .. option:: -mvrsave, -mno-vrsave
 
@@ -8578,30 +8578,30 @@ little-endian platform.
   and use either software emulation for IEEE 128-bit floating point or
   hardware instructions.
 
-The VSX instruction set ( :option:`-mvsx` , :option:`-mcpu=power7` ,
-:option:`-mcpu=power8` ), or :option:`-mcpu=power9` must be enabled to
-use the IEEE 128-bit floating point support.  The IEEE 128-bit
-floating point support only works on PowerPC Linux systems.
+  The VSX instruction set ( :option:`-mvsx` , :option:`-mcpu=power7` ,
+  :option:`-mcpu=power8` ), or :option:`-mcpu=power9` must be enabled to
+  use the IEEE 128-bit floating point support.  The IEEE 128-bit
+  floating point support only works on PowerPC Linux systems.
 
-The default for :option:`-mfloat128` is enabled on PowerPC Linux
-systems using the VSX instruction set, and disabled on other systems.
+  The default for :option:`-mfloat128` is enabled on PowerPC Linux
+  systems using the VSX instruction set, and disabled on other systems.
 
-If you use the ISA 3.0 instruction set ( :option:`-mpower9-vector` or
-:option:`-mcpu=power9` ) on a 64-bit system, the IEEE 128-bit floating
-point support will also enable the generation of ISA 3.0 IEEE 128-bit
-floating point instructions.  Otherwise, if you do not specify to
-generate ISA 3.0 instructions or you are targeting a 32-bit big endian
-system, IEEE 128-bit floating point will be done with software
-emulation.
+  If you use the ISA 3.0 instruction set ( :option:`-mpower9-vector` or
+  :option:`-mcpu=power9` ) on a 64-bit system, the IEEE 128-bit floating
+  point support will also enable the generation of ISA 3.0 IEEE 128-bit
+  floating point instructions.  Otherwise, if you do not specify to
+  generate ISA 3.0 instructions or you are targeting a 32-bit big endian
+  system, IEEE 128-bit floating point will be done with software
+  emulation.
 
 .. option:: -mfloat128-hardware, -mno-float128-hardware
 
   Enable/disable using ISA 3.0 hardware instructions to support the
   :samp:`{__float128}` data type.
 
-The default for :option:`-mfloat128-hardware` is enabled on PowerPC
-Linux systems using the ISA 3.0 instruction set, and disabled on other
-systems.
+  The default for :option:`-mfloat128-hardware` is enabled on PowerPC
+  Linux systems using the ISA 3.0 instruction set, and disabled on other
+  systems.
 
 .. option:: -m32, -m64
 
@@ -8621,22 +8621,22 @@ systems.
   also places floating-point constants in the TOC.  However, only
   16,384 entries are available in the TOC.
 
-If you receive a linker error message that saying you have overflowed
-the available TOC space, you can reduce the amount of TOC space used
-with the :option:`-mno-fp-in-toc` and :option:`-mno-sum-in-toc` options.
-:option:`-mno-fp-in-toc` prevents GCC from putting floating-point
-constants in the TOC and :option:`-mno-sum-in-toc` forces GCC to
-generate code to calculate the sum of an address and a constant at
-run time instead of putting that sum into the TOC.  You may specify one
-or both of these options.  Each causes GCC to produce very slightly
-slower and larger code at the expense of conserving TOC space.
+  If you receive a linker error message that saying you have overflowed
+  the available TOC space, you can reduce the amount of TOC space used
+  with the :option:`-mno-fp-in-toc` and :option:`-mno-sum-in-toc` options.
+  :option:`-mno-fp-in-toc` prevents GCC from putting floating-point
+  constants in the TOC and :option:`-mno-sum-in-toc` forces GCC to
+  generate code to calculate the sum of an address and a constant at
+  run time instead of putting that sum into the TOC.  You may specify one
+  or both of these options.  Each causes GCC to produce very slightly
+  slower and larger code at the expense of conserving TOC space.
 
-If you still run out of space in the TOC even when you specify both of
-these options, specify :option:`-mminimal-toc` instead.  This option causes
-GCC to make only one TOC entry for every file.  When you specify this
-option, GCC produces code that is slower and larger but which
-uses extremely little TOC space.  You may wish to use this option
-only on files that contain less frequently-executed code.
+  If you still run out of space in the TOC even when you specify both of
+  these options, specify :option:`-mminimal-toc` instead.  This option causes
+  GCC to make only one TOC entry for every file.  When you specify this
+  option, GCC produces code that is slower and larger but which
+  uses extremely little TOC space.  You may wish to use this option
+  only on files that contain less frequently-executed code.
 
 .. option:: -maix64, -maix32
 
@@ -8656,15 +8656,15 @@ only on files that contain less frequently-executed code.
   values and converting to double.  Use XL symbol names for long double
   support routines.
 
-The AIX calling convention was extended but not initially documented to
-handle an obscure K&R C case of calling a function that takes the
-address of its arguments with fewer arguments than declared.  IBM XL
-compilers access floating-point arguments that do not fit in the
-RSA from the stack when a subroutine is compiled without
-optimization.  Because always storing floating-point arguments on the
-stack is inefficient and rarely needed, this option is not enabled by
-default and only is necessary when calling subroutines compiled by IBM
-XL compilers without optimization.
+  The AIX calling convention was extended but not initially documented to
+  handle an obscure K&R C case of calling a function that takes the
+  address of its arguments with fewer arguments than declared.  IBM XL
+  compilers access floating-point arguments that do not fit in the
+  RSA from the stack when a subroutine is compiled without
+  optimization.  Because always storing floating-point arguments on the
+  stack is inefficient and rarely needed, this option is not enabled by
+  default and only is necessary when calling subroutines compiled by IBM
+  XL compilers without optimization.
 
 .. option:: -mpe
 
@@ -8685,8 +8685,8 @@ XL compilers without optimization.
   The option :option:`-malign-power` instructs GCC to follow the ABI-specified
   alignment rules.  GCC defaults to the standard alignment defined in the ABI.
 
-On 64-bit Darwin, natural alignment is the default, and :option:`-malign-power`
-is not supported.
+  On 64-bit Darwin, natural alignment is the default, and :option:`-malign-power`
+  is not supported.
 
 .. option:: -msoft-float, -mhard-float
 
@@ -8750,11 +8750,11 @@ is not supported.
   and unions that contain bit-fields to be aligned to the base type of the
   bit-field.
 
-For example, by default a structure containing nothing but 8
-``unsigned`` bit-fields of length 1 is aligned to a 4-byte
-boundary and has a size of 4 bytes.  By using :option:`-mno-bit-align` ,
-the structure is aligned to a 1-byte boundary and is 1 byte in
-size.
+  For example, by default a structure containing nothing but 8
+  ``unsigned`` bit-fields of length 1 is aligned to a 4-byte
+  boundary and has a size of 4 bytes.  By using :option:`-mno-bit-align` ,
+  the structure is aligned to a 1-byte boundary and is 1 byte in
+  size.
 
 .. option:: -mno-strict-align, -mstrict-align
 
@@ -8828,21 +8828,21 @@ size.
   by the target during instruction scheduling.  The argument
   :samp:`{dependence_type}` takes one of the following values:
 
-no
-  No dependence is costly.
+  no
+    No dependence is costly.
 
-all
-  All dependences are costly.
+  all
+    All dependences are costly.
 
-true_store_to_load
-  A true dependence from store to load is costly.
+  true_store_to_load
+    A true dependence from store to load is costly.
 
-store_to_load
-  Any dependence from store to load is costly.
+  store_to_load
+    Any dependence from store to load is costly.
 
-number
-  Any dependence for which the latency is greater than or equal to 
-  :samp:`{number}` is costly.
+  number
+    Any dependence for which the latency is greater than or equal to 
+    :samp:`{number}` is costly.
 
 .. option:: -minsert-sched-nops=scheme
 
@@ -8850,21 +8850,21 @@ number
   the second scheduling pass.  The argument :samp:`{scheme}` takes one of the
   following values:
 
-no
-  Don't insert NOPs.
+  no
+    Don't insert NOPs.
 
-pad
-  Pad with NOPs any dispatch group that has vacant issue slots,
-  according to the scheduler's grouping.
+  pad
+    Pad with NOPs any dispatch group that has vacant issue slots,
+    according to the scheduler's grouping.
 
-regroup_exact
-  Insert NOPs to force costly dependent insns into
-  separate groups.  Insert exactly as many NOPs as needed to force an insn
-  to a new group, according to the estimated processor grouping.
+  regroup_exact
+    Insert NOPs to force costly dependent insns into
+    separate groups.  Insert exactly as many NOPs as needed to force an insn
+    to a new group, according to the estimated processor grouping.
 
-number
-  Insert NOPs to force costly dependent insns into
-  separate groups.  Insert :samp:`{number}` NOPs to force an insn to a new group.
+  number
+    Insert NOPs to force costly dependent insns into
+    separate groups.  Insert :samp:`{number}` NOPs to force an insn to a new group.
 
 .. option:: -mcall-sysv
 
@@ -9107,13 +9107,13 @@ number
 
   .. index:: smaller data references (PowerPC)
 
-.. index:: .sdata/.sdata2 references (PowerPC)
+  .. index:: .sdata/.sdata2 references (PowerPC)
 
-On embedded PowerPC systems, put global and static items less than or
-equal to :samp:`{num}` bytes into the small data or BSS sections instead of
-the normal data or BSS section.  By default, :samp:`{num}` is 8.  The
-:option:`-G `:samp:`{num}` switch is also passed to the linker.
-All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
+  On embedded PowerPC systems, put global and static items less than or
+  equal to :samp:`{num}` bytes into the small data or BSS sections instead of
+  the normal data or BSS section.  By default, :samp:`{num}` is 8.  The
+  :option:`-G `:samp:`{num}` switch is also passed to the linker.
+  All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
 
 .. option:: -mregnames, -mno-regnames
 
@@ -9130,33 +9130,33 @@ All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
   the ``shortcall`` function attribute, or by ``#pragma
   longcall(0)``.
 
-Some linkers are capable of detecting out-of-range calls and generating
-glue code on the fly.  On these systems, long calls are unnecessary and
-generate slower code.  As of this writing, the AIX linker can do this,
-as can the GNU linker for PowerPC/64.  It is planned to add this feature
-to the GNU linker for 32-bit PowerPC systems as well.
+  Some linkers are capable of detecting out-of-range calls and generating
+  glue code on the fly.  On these systems, long calls are unnecessary and
+  generate slower code.  As of this writing, the AIX linker can do this,
+  as can the GNU linker for PowerPC/64.  It is planned to add this feature
+  to the GNU linker for 32-bit PowerPC systems as well.
 
-On PowerPC64 ELFv2 and 32-bit PowerPC systems with newer GNU linkers,
-GCC can generate long calls using an inline PLT call sequence (see
-:option:`-mpltseq` ).  PowerPC with :option:`-mbss-plt` and PowerPC64
-ELFv1 (big-endian) do not support inline PLT calls.
+  On PowerPC64 ELFv2 and 32-bit PowerPC systems with newer GNU linkers,
+  GCC can generate long calls using an inline PLT call sequence (see
+  :option:`-mpltseq` ).  PowerPC with :option:`-mbss-plt` and PowerPC64
+  ELFv1 (big-endian) do not support inline PLT calls.
 
-On Darwin/PPC systems, ``#pragma longcall`` generates ``jbsr
-callee, L42``, plus a :dfn:`branch island` (glue code).  The two target
-addresses represent the callee and the branch island.  The
-Darwin/PPC linker prefers the first address and generates a ``bl
-callee`` if the PPC ``bl`` instruction reaches the callee directly;
-otherwise, the linker generates ``bl L42`` to call the branch
-island.  The branch island is appended to the body of the
-calling function; it computes the full 32-bit address of the callee
-and jumps to it.
+  On Darwin/PPC systems, ``#pragma longcall`` generates ``jbsr
+  callee, L42``, plus a :dfn:`branch island` (glue code).  The two target
+  addresses represent the callee and the branch island.  The
+  Darwin/PPC linker prefers the first address and generates a ``bl
+  callee`` if the PPC ``bl`` instruction reaches the callee directly;
+  otherwise, the linker generates ``bl L42`` to call the branch
+  island.  The branch island is appended to the body of the
+  calling function; it computes the full 32-bit address of the callee
+  and jumps to it.
 
-On Mach-O (Darwin) systems, this option directs the compiler emit to
-the glue for every direct call, and the Darwin linker decides whether
-to use or discard it.
+  On Mach-O (Darwin) systems, this option directs the compiler emit to
+  the glue for every direct call, and the Darwin linker decides whether
+  to use or discard it.
 
-In the future, GCC may ignore all longcall specifications
-when the linker is known to generate glue.
+  In the future, GCC may ignore all longcall specifications
+  when the linker is known to generate glue.
 
 .. option:: -mpltseq, -mno-pltseq
 
@@ -9199,39 +9199,39 @@ when the linker is known to generate glue.
   may be used.  :samp:`{opt}` is a comma-separated list of options, which may
   be preceded by a ``!`` to invert the option:
 
-:samp:`all`
-  Enable all estimate instructions.
+  :samp:`all`
+    Enable all estimate instructions.
 
-:samp:`default`
-  Enable the default instructions, equivalent to :option:`-mrecip`.
+  :samp:`default`
+    Enable the default instructions, equivalent to :option:`-mrecip`.
 
-:samp:`none`
-  Disable all estimate instructions, equivalent to :option:`-mno-recip`.
+  :samp:`none`
+    Disable all estimate instructions, equivalent to :option:`-mno-recip`.
 
-:samp:`div`
-  Enable the reciprocal approximation instructions for both 
-  single and double precision.
+  :samp:`div`
+    Enable the reciprocal approximation instructions for both 
+    single and double precision.
 
-:samp:`divf`
-  Enable the single-precision reciprocal approximation instructions.
+  :samp:`divf`
+    Enable the single-precision reciprocal approximation instructions.
 
-:samp:`divd`
-  Enable the double-precision reciprocal approximation instructions.
+  :samp:`divd`
+    Enable the double-precision reciprocal approximation instructions.
 
-:samp:`rsqrt`
-  Enable the reciprocal square root approximation instructions for both
-  single and double precision.
+  :samp:`rsqrt`
+    Enable the reciprocal square root approximation instructions for both
+    single and double precision.
 
-:samp:`rsqrtf`
-  Enable the single-precision reciprocal square root approximation instructions.
+  :samp:`rsqrtf`
+    Enable the single-precision reciprocal square root approximation instructions.
 
-:samp:`rsqrtd`
-  Enable the double-precision reciprocal square root approximation instructions.
+  :samp:`rsqrtd`
+    Enable the double-precision reciprocal square root approximation instructions.
 
-  So, for example, :option:`-mrecip=all,!rsqrtd` enables
-all of the reciprocal estimate instructions, except for the
-``FRSQRTE``, ``XSRSQRTEDP``, and ``XVRSQRTEDP`` instructions
-which handle the double-precision reciprocal square root calculations.
+    So, for example, :option:`-mrecip=all,!rsqrtd` enables
+  all of the reciprocal estimate instructions, except for the
+  ``FRSQRTE``, ``XSRSQRTEDP``, and ``XVRSQRTEDP`` instructions
+  which handle the double-precision reciprocal square root calculations.
 
 .. option:: -mrecip-precision
 
@@ -9301,14 +9301,14 @@ which handle the double-precision reciprocal square root calculations.
   maximum alignment of 64 bits, for compatibility with older versions
   of GCC.
 
-Older versions of GCC (prior to 4.9.0) incorrectly did not align a
-structure parameter on a 128-bit boundary when that structure contained
-a member requiring 128-bit alignment.  This is corrected in more
-recent versions of GCC.  This option may be used to generate code
-that is compatible with functions compiled with older versions of
-GCC.
+  Older versions of GCC (prior to 4.9.0) incorrectly did not align a
+  structure parameter on a 128-bit boundary when that structure contained
+  a member requiring 128-bit alignment.  This is corrected in more
+  recent versions of GCC.  This option may be used to generate code
+  that is compatible with functions compiled with older versions of
+  GCC.
 
-The :option:`-mno-compat-align-parm` option is the default.
+  The :option:`-mno-compat-align-parm` option is the default.
 
 .. option:: -mstack-protector-guard=guard
 
@@ -9316,13 +9316,13 @@ The :option:`-mno-compat-align-parm` option is the default.
   locations are :samp:`global` for global canary or :samp:`tls` for per-thread
   canary in the TLS block (the default with GNU libc version 2.4 or later).
 
-With the latter choice the options
-:option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-:option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-which register to use as base register for reading the canary, and from what
-offset from that base register. The default for those is as specified in the
-relevant ABI.  :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` overrides
-the offset with a symbol reference to a canary in the TLS block.
+  With the latter choice the options
+  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  which register to use as base register for reading the canary, and from what
+  offset from that base register. The default for those is as specified in the
+  relevant ABI.  :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` overrides
+  the offset with a symbol reference to a canary in the TLS block.
 
 .. option:: -mpcrel, -mno-pcrel
 
@@ -9369,13 +9369,13 @@ These command-line options are defined for RX targets:
   floating-point hardware.  The default is enabled for the RX600
   series and disabled for the RX200 series.
 
-Floating-point instructions are only generated for 32-bit floating-point 
-values, however, so the FPU hardware is not used for doubles if the
-:option:`-m64bit-doubles` option is used.
+  Floating-point instructions are only generated for 32-bit floating-point 
+  values, however, so the FPU hardware is not used for doubles if the
+  :option:`-m64bit-doubles` option is used.
 
-*Note* If the :option:`-fpu` option is enabled then
-:option:`-funsafe-math-optimizations` is also enabled automatically.
-This is because the RX FPU instructions are themselves unsafe.
+  *Note* If the :option:`-fpu` option is enabled then
+  :option:`-funsafe-math-optimizations` is also enabled automatically.
+  This is because the RX FPU instructions are themselves unsafe.
 
 .. option:: -mcpu=name
 
@@ -9383,12 +9383,12 @@ This is because the RX FPU instructions are themselves unsafe.
   supported, the generic :samp:`RX600` and :samp:`RX200` series hardware and
   the specific :samp:`RX610` CPU.  The default is :samp:`RX600`.
 
-The only difference between :samp:`RX600` and :samp:`RX610` is that the
-:samp:`RX610` does not support the ``MVTIPL`` instruction.
+  The only difference between :samp:`RX600` and :samp:`RX610` is that the
+  :samp:`RX610` does not support the ``MVTIPL`` instruction.
 
-The :samp:`RX200` series does not have a hardware floating-point unit
-and so :option:`-nofpu` is enabled by default when this type is
-selected.
+  The :samp:`RX200` series does not have a hardware floating-point unit
+  and so :option:`-nofpu` is enabled by default when this type is
+  selected.
 
 .. option:: -mbig-endian-data, -mlittle-endian-data
 
@@ -9408,17 +9408,17 @@ selected.
   could result in slower and/or larger code if variables are pushed onto
   the stack instead of being held in this register.
 
-Note, common variables (variables that have not been initialized) and
-constants are not placed into the small data area as they are assigned
-to other sections in the output executable.
+  Note, common variables (variables that have not been initialized) and
+  constants are not placed into the small data area as they are assigned
+  to other sections in the output executable.
 
-The default value is zero, which disables this feature.  Note, this
-feature is not enabled by default with higher optimization levels
-( :option:`-O2` etc) because of the potentially detrimental effects of
-reserving a register.  It is up to the programmer to experiment and
-discover whether this feature is of benefit to their program.  See the
-description of the :option:`-mpid` option for a description of how the
-actual register to hold the small data area pointer is chosen.
+  The default value is zero, which disables this feature.  Note, this
+  feature is not enabled by default with higher optimization levels
+  ( :option:`-O2` etc) because of the potentially detrimental effects of
+  reserving a register.  It is up to the programmer to experiment and
+  discover whether this feature is of benefit to their program.  See the
+  description of the :option:`-mpid` option for a description of how the
+  actual register to hold the small data area pointer is chosen.
 
 .. option:: -msim, -mno-sim
 
@@ -9441,8 +9441,8 @@ actual register to hold the small data area pointer is chosen.
   that are used in instructions.  Constants that are too big are instead
   placed into a constant pool and referenced via register indirection.
 
-The value :samp:`{N}` can be between 0 and 4.  A value of 0 (the default)
-or 4 means that constants of any size are allowed.
+  The value :samp:`{N}` can be between 0 and 4.  A value of 0 (the default)
+  or 4 means that constants of any size are allowed.
 
 .. option:: -mrelax
 
@@ -9478,22 +9478,22 @@ or 4 means that constants of any size are allowed.
   memory constraints.  Data that can be modified is not affected by this
   option.
 
-Note, using this feature reserves a register, usually ``r13``, for
-the constant data base address.  This can result in slower and/or
-larger code, especially in complicated functions.
+  Note, using this feature reserves a register, usually ``r13``, for
+  the constant data base address.  This can result in slower and/or
+  larger code, especially in complicated functions.
 
-The actual register chosen to hold the constant data base address
-depends upon whether the :option:`-msmall-data-limit` and/or the
-:option:`-mint-register` command-line options are enabled.  Starting
-with register ``r13`` and proceeding downwards, registers are
-allocated first to satisfy the requirements of :option:`-mint-register` ,
-then :option:`-mpid` and finally :option:`-msmall-data-limit`.  Thus it
-is possible for the small data area register to be ``r8`` if both
-:option:`-mint-register=4` and :option:`-mpid` are specified on the
-command line.
+  The actual register chosen to hold the constant data base address
+  depends upon whether the :option:`-msmall-data-limit` and/or the
+  :option:`-mint-register` command-line options are enabled.  Starting
+  with register ``r13`` and proceeding downwards, registers are
+  allocated first to satisfy the requirements of :option:`-mint-register` ,
+  then :option:`-mpid` and finally :option:`-msmall-data-limit`.  Thus it
+  is possible for the small data area register to be ``r8`` if both
+  :option:`-mint-register=4` and :option:`-mpid` are specified on the
+  command line.
 
-By default this feature is not enabled.  The default can be restored
-via the :option:`-mno-pid` command-line option.
+  By default this feature is not enabled.  The default can be restored
+  via the :option:`-mno-pid` command-line option.
 
 .. option:: -mno-warn-multiple-fast-interrupts, -mwarn-multiple-fast-interrupts
 
@@ -9511,16 +9511,16 @@ via the :option:`-mno-pid` command-line option.
   an I/O register.  (See section 12.2.7 of the RX62N Group User's Manual
   for more information).
 
-The default is to allow these instructions, but it is not possible for
-GCC to reliably detect all circumstances where a string instruction
-might be used to access an I/O register, so their use cannot be
-disabled automatically.  Instead it is reliant upon the programmer to
-use the :option:`-mno-allow-string-insns` option if their program
-accesses I/O space.
+  The default is to allow these instructions, but it is not possible for
+  GCC to reliably detect all circumstances where a string instruction
+  might be used to access an I/O register, so their use cannot be
+  disabled automatically.  Instead it is reliant upon the programmer to
+  use the :option:`-mno-allow-string-insns` option if their program
+  accesses I/O space.
 
-When the instructions are enabled GCC defines the C preprocessor
-symbol ``__RX_ALLOW_STRING_INSNS__``, otherwise it defines the
-symbol ``__RX_DISALLOW_STRING_INSNS__``.
+  When the instructions are enabled GCC defines the C preprocessor
+  symbol ``__RX_ALLOW_STRING_INSNS__``, otherwise it defines the
+  symbol ``__RX_DISALLOW_STRING_INSNS__``.
 
 .. option:: -mjsr, -mno-jsr
 
@@ -9582,14 +9582,14 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   the backchain is placed into the topmost word of the 96/160 byte register
   save area.
 
-In general, code compiled with :option:`-mbackchain` is call-compatible with
-code compiled with :option:`-mno-backchain` ; however, use of the backchain
-for debugging purposes usually requires that the whole binary is built with
-:option:`-mbackchain`.  Note that the combination of :option:`-mbackchain` ,
-:option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
-to build a linux kernel use :option:`-msoft-float`.
+  In general, code compiled with :option:`-mbackchain` is call-compatible with
+  code compiled with :option:`-mno-backchain` ; however, use of the backchain
+  for debugging purposes usually requires that the whole binary is built with
+  :option:`-mbackchain`.  Note that the combination of :option:`-mbackchain` ,
+  :option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
+  to build a linux kernel use :option:`-msoft-float`.
 
-The default is to not maintain the backchain.
+  The default is to not maintain the backchain.
 
 .. option:: -mpacked-stack, -mno-packed-stack
 
@@ -9603,17 +9603,17 @@ The default is to not maintain the backchain.
   the save area is always used to store the backchain, and the return address
   register is always saved two words below the backchain.
 
-As long as the stack frame backchain is not used, code generated with
-:option:`-mpacked-stack` is call-compatible with code generated with
-:option:`-mno-packed-stack`.  Note that some non-FSF releases of GCC 2.95 for
-S/390 or zSeries generated code that uses the stack frame backchain at run
-time, not just for debugging purposes.  Such code is not call-compatible
-with code compiled with :option:`-mpacked-stack`.  Also, note that the
-combination of :option:`-mbackchain` ,
-:option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
-to build a linux kernel use :option:`-msoft-float`.
+  As long as the stack frame backchain is not used, code generated with
+  :option:`-mpacked-stack` is call-compatible with code generated with
+  :option:`-mno-packed-stack`.  Note that some non-FSF releases of GCC 2.95 for
+  S/390 or zSeries generated code that uses the stack frame backchain at run
+  time, not just for debugging purposes.  Such code is not call-compatible
+  with code compiled with :option:`-mpacked-stack`.  Also, note that the
+  combination of :option:`-mbackchain` ,
+  :option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
+  to build a linux kernel use :option:`-msoft-float`.
 
-The default is to not use the packed stack layout.
+  The default is to not use the packed stack layout.
 
 .. option:: -msmall-exec, -mno-small-exec
 
@@ -9698,12 +9698,12 @@ The default is to not use the packed stack layout.
   :samp:`z196`/:samp:`arch9`, :samp:`zEC12`, :samp:`z13`/:samp:`arch11`,
   :samp:`z14`/:samp:`arch12`, :samp:`z15`/:samp:`arch13`, and :samp:`native`.
 
-The default is :option:`-march=z900`.
+  The default is :option:`-march=z900`.
 
-Specifying :samp:`native` as cpu type can be used to select the best
-architecture option for the host processor.
-:option:`-march=native` has no effect if GCC does not recognize the
-processor.
+  Specifying :samp:`native` as cpu type can be used to select the best
+  architecture option for the host processor.
+  :option:`-march=native` has no effect if GCC does not recognize the
+  processor.
 
 .. option:: -mtune=cpu-type
 
@@ -9771,10 +9771,10 @@ processor.
   largest NOP like instructions the architecture allows (maximum
   1000000).
 
-If both arguments are zero, hotpatching is disabled.
+  If both arguments are zero, hotpatching is disabled.
 
-This option can be overridden for individual functions with the
-``hotpatch`` attribute.
+  This option can be overridden for individual functions with the
+  ``hotpatch`` attribute.
 
 .. _score-options:
 
@@ -10059,61 +10059,61 @@ These :samp:`-m` options are defined for the SH implementations:
 
   .. index:: matomic-model=model
 
-Sets the model of atomic operations and additional parameters as a comma
-separated list.  For details on the atomic built-in functions see
-__atomic Builtins.  The following models and parameters are supported:
+  Sets the model of atomic operations and additional parameters as a comma
+  separated list.  For details on the atomic built-in functions see
+  __atomic Builtins.  The following models and parameters are supported:
 
-:samp:`none`
-  Disable compiler generated atomic sequences and emit library calls for atomic
-  operations.  This is the default if the target is not ``sh*-*-linux*``.
+  :samp:`none`
+    Disable compiler generated atomic sequences and emit library calls for atomic
+    operations.  This is the default if the target is not ``sh*-*-linux*``.
 
-:samp:`soft-gusa`
-  Generate GNU/Linux compatible gUSA software atomic sequences for the atomic
-  built-in functions.  The generated atomic sequences require additional support
-  from the interrupt/exception handling code of the system and are only suitable
-  for SH3* and SH4* single-core systems.  This option is enabled by default when
-  the target is ``sh*-*-linux*`` and SH3* or SH4*.  When the target is SH4A,
-  this option also partially utilizes the hardware atomic instructions
-  ``movli.l`` and ``movco.l`` to create more efficient code, unless
-  :samp:`strict` is specified.  
+  :samp:`soft-gusa`
+    Generate GNU/Linux compatible gUSA software atomic sequences for the atomic
+    built-in functions.  The generated atomic sequences require additional support
+    from the interrupt/exception handling code of the system and are only suitable
+    for SH3* and SH4* single-core systems.  This option is enabled by default when
+    the target is ``sh*-*-linux*`` and SH3* or SH4*.  When the target is SH4A,
+    this option also partially utilizes the hardware atomic instructions
+    ``movli.l`` and ``movco.l`` to create more efficient code, unless
+    :samp:`strict` is specified.  
 
-:samp:`soft-tcb`
-  Generate software atomic sequences that use a variable in the thread control
-  block.  This is a variation of the gUSA sequences which can also be used on
-  SH1* and SH2* targets.  The generated atomic sequences require additional
-  support from the interrupt/exception handling code of the system and are only
-  suitable for single-core systems.  When using this model, the :samp:`gbr-offset=`
-  parameter has to be specified as well.
+  :samp:`soft-tcb`
+    Generate software atomic sequences that use a variable in the thread control
+    block.  This is a variation of the gUSA sequences which can also be used on
+    SH1* and SH2* targets.  The generated atomic sequences require additional
+    support from the interrupt/exception handling code of the system and are only
+    suitable for single-core systems.  When using this model, the :samp:`gbr-offset=`
+    parameter has to be specified as well.
 
-:samp:`soft-imask`
-  Generate software atomic sequences that temporarily disable interrupts by
-  setting ``SR.IMASK = 1111``.  This model works only when the program runs
-  in privileged mode and is only suitable for single-core systems.  Additional
-  support from the interrupt/exception handling code of the system is not
-  required.  This model is enabled by default when the target is
-  ``sh*-*-linux*`` and SH1* or SH2*.
+  :samp:`soft-imask`
+    Generate software atomic sequences that temporarily disable interrupts by
+    setting ``SR.IMASK = 1111``.  This model works only when the program runs
+    in privileged mode and is only suitable for single-core systems.  Additional
+    support from the interrupt/exception handling code of the system is not
+    required.  This model is enabled by default when the target is
+    ``sh*-*-linux*`` and SH1* or SH2*.
 
-:samp:`hard-llcs`
-  Generate hardware atomic sequences using the ``movli.l`` and ``movco.l``
-  instructions only.  This is only available on SH4A and is suitable for
-  multi-core systems.  Since the hardware instructions support only 32 bit atomic
-  variables access to 8 or 16 bit variables is emulated with 32 bit accesses.
-  Code compiled with this option is also compatible with other software
-  atomic model interrupt/exception handling systems if executed on an SH4A
-  system.  Additional support from the interrupt/exception handling code of the
-  system is not required for this model.
+  :samp:`hard-llcs`
+    Generate hardware atomic sequences using the ``movli.l`` and ``movco.l``
+    instructions only.  This is only available on SH4A and is suitable for
+    multi-core systems.  Since the hardware instructions support only 32 bit atomic
+    variables access to 8 or 16 bit variables is emulated with 32 bit accesses.
+    Code compiled with this option is also compatible with other software
+    atomic model interrupt/exception handling systems if executed on an SH4A
+    system.  Additional support from the interrupt/exception handling code of the
+    system is not required for this model.
 
-:samp:`gbr-offset=`
-  This parameter specifies the offset in bytes of the variable in the thread
-  control block structure that should be used by the generated atomic sequences
-  when the :samp:`soft-tcb` model has been selected.  For other models this
-  parameter is ignored.  The specified value must be an integer multiple of four
-  and in the range 0-1020.
+  :samp:`gbr-offset=`
+    This parameter specifies the offset in bytes of the variable in the thread
+    control block structure that should be used by the generated atomic sequences
+    when the :samp:`soft-tcb` model has been selected.  For other models this
+    parameter is ignored.  The specified value must be an integer multiple of four
+    and in the range 0-1020.
 
-:samp:`strict`
-  This parameter prevents mixed usage of multiple atomic models, even if they
-  are compatible, and makes the compiler generate atomic sequences of the
-  specified model only.
+  :samp:`strict`
+    This parameter prevents mixed usage of multiple atomic models, even if they
+    are compatible, and makes the compiler generate atomic sequences of the
+    specified model only.
 
 .. option:: -mtas
 
@@ -10141,38 +10141,38 @@ __atomic Builtins.  The following models and parameters are supported:
 
   .. index:: multcost=number
 
-Set the cost to assume for a multiply insn.
+  Set the cost to assume for a multiply insn.
 
 .. option:: -mdiv=strategy
 
   .. index:: mdiv=strategy
 
-Set the division strategy to be used for integer division operations.
-:samp:`{strategy}` can be one of: 
+  Set the division strategy to be used for integer division operations.
+  :samp:`{strategy}` can be one of: 
 
-:samp:`call-div1`
-  Calls a library function that uses the single-step division instruction
-  ``div1`` to perform the operation.  Division by zero calculates an
-  unspecified result and does not trap.  This is the default except for SH4,
-  SH2A and SHcompact.
+  :samp:`call-div1`
+    Calls a library function that uses the single-step division instruction
+    ``div1`` to perform the operation.  Division by zero calculates an
+    unspecified result and does not trap.  This is the default except for SH4,
+    SH2A and SHcompact.
 
-:samp:`call-fp`
-  Calls a library function that performs the operation in double precision
-  floating point.  Division by zero causes a floating-point exception.  This is
-  the default for SHcompact with FPU.  Specifying this for targets that do not
-  have a double precision FPU defaults to ``call-div1``.
+  :samp:`call-fp`
+    Calls a library function that performs the operation in double precision
+    floating point.  Division by zero causes a floating-point exception.  This is
+    the default for SHcompact with FPU.  Specifying this for targets that do not
+    have a double precision FPU defaults to ``call-div1``.
 
-:samp:`call-table`
-  Calls a library function that uses a lookup table for small divisors and
-  the ``div1`` instruction with case distinction for larger divisors.  Division
-  by zero calculates an unspecified result and does not trap.  This is the default
-  for SH4.  Specifying this for targets that do not have dynamic shift
-  instructions defaults to ``call-div1``.
+  :samp:`call-table`
+    Calls a library function that uses a lookup table for small divisors and
+    the ``div1`` instruction with case distinction for larger divisors.  Division
+    by zero calculates an unspecified result and does not trap.  This is the default
+    for SH4.  Specifying this for targets that do not have dynamic shift
+    instructions defaults to ``call-div1``.
 
-  When a division strategy has not been specified the default strategy is
-selected based on the current target.  For SH2A the default strategy is to
-use the ``divs`` and ``divu`` instructions instead of library function
-calls.
+    When a division strategy has not been specified the default strategy is
+  selected based on the current target.  For SH2A the default strategy is to
+  use the ``divs`` and ``divu`` instructions instead of library function
+  calls.
 
 .. option:: -maccumulate-outgoing-args
 
@@ -10184,11 +10184,11 @@ calls.
 
   .. index:: mdivsi3_libfunc=name
 
-Set the name of the library function used for 32-bit signed division to
-:samp:`{name}`.
-This only affects the name used in the :samp:`call` division strategies, and
-the compiler still expects the same sets of input/output/clobbered registers as
-if this option were not present.
+  Set the name of the library function used for 32-bit signed division to
+  :samp:`{name}`.
+  This only affects the name used in the :samp:`call` division strategies, and
+  the compiler still expects the same sets of input/output/clobbered registers as
+  if this option were not present.
 
 .. option:: -mfixed-range=register-range
 
@@ -10202,10 +10202,10 @@ if this option were not present.
 
   .. index:: mbranch-cost=num
 
-Assume :samp:`{num}` to be the cost for a branch instruction.  Higher numbers
-make the compiler try to generate more branch-free code if possible.  
-If not specified the value is selected depending on the processor type that
-is being compiled for.
+  Assume :samp:`{num}` to be the cost for a branch instruction.  Higher numbers
+  make the compiler try to generate more branch-free code if possible.  
+  If not specified the value is selected depending on the processor type that
+  is being compiled for.
 
 .. option:: -mzdcbranch, -mno-zdcbranch
 
@@ -10281,12 +10281,12 @@ These :samp:`-m` options are supported on Solaris 2:
   shared object.  Using this option, you can link position-dependent
   code into a shared object.
 
-:option:`-mimpure-text` suppresses the 'relocations remain against
-allocatable but non-writable sections' linker error message.
-However, the necessary relocations trigger copy-on-write, and the
-shared object is not actually shared across processes.  Instead of
-using :option:`-mimpure-text` , you should compile all source code with
-:option:`-fpic` or :option:`-fPIC`.
+  :option:`-mimpure-text` suppresses the 'relocations remain against
+  allocatable but non-writable sections' linker error message.
+  However, the necessary relocations trigger copy-on-write, and the
+  shared object is not actually shared across processes.  Instead of
+  using :option:`-mimpure-text` , you should compile all source code with
+  :option:`-fpic` or :option:`-fPIC`.
 
 These switches are supported in addition to the above on Solaris 2:
 
@@ -10310,9 +10310,9 @@ These :samp:`-m` options are supported on the SPARC:
   global register 1, each global register 2 through 4 is then treated as an
   allocable register that is clobbered by function calls.  This is the default.
 
-To be fully SVR4 ABI-compliant at the cost of some performance loss,
-specify :option:`-mno-app-regs`.  You should compile libraries and system
-software with this option.
+  To be fully SVR4 ABI-compliant at the cost of some performance loss,
+  specify :option:`-mno-app-regs`.  You should compile libraries and system
+  software with this option.
 
 .. option:: -mflat, -mno-flat
 
@@ -10322,8 +10322,8 @@ software with this option.
   registers (0-5) are still treated as 'call-saved' registers and are
   saved on the stack as needed.
 
-With :option:`-mno-flat` (the default), the compiler generates save/restore
-instructions (except for leaf functions).  This is the normal operating mode.
+  With :option:`-mno-flat` (the default), the compiler generates save/restore
+  instructions (except for leaf functions).  This is the normal operating mode.
 
 .. option:: -mfpu, -mhard-float
 
@@ -10340,11 +10340,11 @@ instructions (except for leaf functions).  This is the normal operating mode.
   cross-compilation.  The embedded targets :samp:`sparc-*-aout` and
   :samp:`sparclite-*-*` do provide software floating-point support.
 
-:option:`-msoft-float` changes the calling convention in the output file;
-therefore, it is only useful if you compile *all* of a program with
-this option.  In particular, you need to compile libgcc.a, the
-library that comes with GCC, with :option:`-msoft-float` in order for
-this to work.
+  :option:`-msoft-float` changes the calling convention in the output file;
+  therefore, it is only useful if you compile *all* of a program with
+  this option.  In particular, you need to compile libgcc.a, the
+  library that comes with GCC, with :option:`-msoft-float` in order for
+  this to work.
 
 .. option:: -mhard-quad-float
 
@@ -10357,23 +10357,23 @@ this to work.
   floating-point instructions.  The functions called are those specified
   in the SPARC ABI.  This is the default.
 
-As of this writing, there are no SPARC implementations that have hardware
-support for the quad-word floating-point instructions.  They all invoke
-a trap handler for one of these instructions, and then the trap handler
-emulates the effect of the instruction.  Because of the trap handler overhead,
-this is much slower than calling the ABI library routines.  Thus the
-:option:`-msoft-quad-float` option is the default.
+  As of this writing, there are no SPARC implementations that have hardware
+  support for the quad-word floating-point instructions.  They all invoke
+  a trap handler for one of these instructions, and then the trap handler
+  emulates the effect of the instruction.  Because of the trap handler overhead,
+  this is much slower than calling the ABI library routines.  Thus the
+  :option:`-msoft-quad-float` option is the default.
 
 .. option:: -mno-unaligned-doubles, -munaligned-doubles
 
   Assume that doubles have 8-byte alignment.  This is the default.
 
-With :option:`-munaligned-doubles` , GCC assumes that doubles have 8-byte
-alignment only if they are contained in another type, or if they have an
-absolute address.  Otherwise, it assumes they have 4-byte alignment.
-Specifying this option avoids some rare compatibility problems with code
-generated by other compilers.  It is not the default because it results
-in a performance loss, especially for floating-point code.
+  With :option:`-munaligned-doubles` , GCC assumes that doubles have 8-byte
+  alignment only if they are contained in another type, or if they have an
+  absolute address.  Otherwise, it assumes they have 4-byte alignment.
+  Specifying this option avoids some rare compatibility problems with code
+  generated by other compilers.  It is not the default because it results
+  in a performance loss, especially for floating-point code.
 
 .. option:: -muser-mode, -mno-user-mode
 
@@ -10398,8 +10398,8 @@ in a performance loss, especially for floating-point code.
   in functions returning structures or unions to detect size mismatches
   between the two sides of function calls, as per the 32-bit ABI.
 
-The default is :option:`-mno-std-struct-return`.  This option has no effect
-in 64-bit mode.
+  The default is :option:`-mno-std-struct-return`.  This option has no effect
+  in 64-bit mode.
 
 .. option:: -mlra, -mno-lra
 
@@ -10416,77 +10416,77 @@ in 64-bit mode.
   :samp:`ultrasparc`, :samp:`ultrasparc3`, :samp:`niagara`, :samp:`niagara2`,
   :samp:`niagara3`, :samp:`niagara4`, :samp:`niagara7` and :samp:`m8`.
 
-Native Solaris and GNU/Linux toolchains also support the value :samp:`native`,
-which selects the best architecture option for the host processor.
-:option:`-mcpu=native` has no effect if GCC does not recognize
-the processor.
+  Native Solaris and GNU/Linux toolchains also support the value :samp:`native`,
+  which selects the best architecture option for the host processor.
+  :option:`-mcpu=native` has no effect if GCC does not recognize
+  the processor.
 
-Default instruction scheduling parameters are used for values that select
-an architecture and not an implementation.  These are :samp:`v7`, :samp:`v8`,
-:samp:`sparclite`, :samp:`sparclet`, :samp:`v9`.
+  Default instruction scheduling parameters are used for values that select
+  an architecture and not an implementation.  These are :samp:`v7`, :samp:`v8`,
+  :samp:`sparclite`, :samp:`sparclet`, :samp:`v9`.
 
-Here is a list of each supported architecture and their supported
-implementations.
+  Here is a list of each supported architecture and their supported
+  implementations.
 
-v7
-  cypress, leon3v7
+  v7
+    cypress, leon3v7
 
-v8
-  supersparc, hypersparc, leon, leon3
+  v8
+    supersparc, hypersparc, leon, leon3
 
-sparclite
-  f930, f934, sparclite86x
+  sparclite
+    f930, f934, sparclite86x
 
-sparclet
-  tsc701
+  sparclet
+    tsc701
 
-v9
-  ultrasparc, ultrasparc3, niagara, niagara2, niagara3, niagara4,
-  niagara7, m8
+  v9
+    ultrasparc, ultrasparc3, niagara, niagara2, niagara3, niagara4,
+    niagara7, m8
 
-  By default (unless configured otherwise), GCC generates code for the V7
-variant of the SPARC architecture.  With :option:`-mcpu=cypress` , the compiler
-additionally optimizes it for the Cypress CY7C602 chip, as used in the
-SPARCStation/SPARCServer 3xx series.  This is also appropriate for the older
-SPARCStation 1, 2, IPX etc.
+    By default (unless configured otherwise), GCC generates code for the V7
+  variant of the SPARC architecture.  With :option:`-mcpu=cypress` , the compiler
+  additionally optimizes it for the Cypress CY7C602 chip, as used in the
+  SPARCStation/SPARCServer 3xx series.  This is also appropriate for the older
+  SPARCStation 1, 2, IPX etc.
 
-With :option:`-mcpu=v8` , GCC generates code for the V8 variant of the SPARC
-architecture.  The only difference from V7 code is that the compiler emits
-the integer multiply and integer divide instructions which exist in SPARC-V8
-but not in SPARC-V7.  With :option:`-mcpu=supersparc` , the compiler additionally
-optimizes it for the SuperSPARC chip, as used in the SPARCStation 10, 1000 and
-2000 series.
+  With :option:`-mcpu=v8` , GCC generates code for the V8 variant of the SPARC
+  architecture.  The only difference from V7 code is that the compiler emits
+  the integer multiply and integer divide instructions which exist in SPARC-V8
+  but not in SPARC-V7.  With :option:`-mcpu=supersparc` , the compiler additionally
+  optimizes it for the SuperSPARC chip, as used in the SPARCStation 10, 1000 and
+  2000 series.
 
-With :option:`-mcpu=sparclite` , GCC generates code for the SPARClite variant of
-the SPARC architecture.  This adds the integer multiply, integer divide step
-and scan (``ffs``) instructions which exist in SPARClite but not in SPARC-V7.
-With :option:`-mcpu=f930` , the compiler additionally optimizes it for the
-Fujitsu MB86930 chip, which is the original SPARClite, with no FPU.  With
-:option:`-mcpu=f934` , the compiler additionally optimizes it for the Fujitsu
-MB86934 chip, which is the more recent SPARClite with FPU.
+  With :option:`-mcpu=sparclite` , GCC generates code for the SPARClite variant of
+  the SPARC architecture.  This adds the integer multiply, integer divide step
+  and scan (``ffs``) instructions which exist in SPARClite but not in SPARC-V7.
+  With :option:`-mcpu=f930` , the compiler additionally optimizes it for the
+  Fujitsu MB86930 chip, which is the original SPARClite, with no FPU.  With
+  :option:`-mcpu=f934` , the compiler additionally optimizes it for the Fujitsu
+  MB86934 chip, which is the more recent SPARClite with FPU.
 
-With :option:`-mcpu=sparclet` , GCC generates code for the SPARClet variant of
-the SPARC architecture.  This adds the integer multiply, multiply/accumulate,
-integer divide step and scan (``ffs``) instructions which exist in SPARClet
-but not in SPARC-V7.  With :option:`-mcpu=tsc701` , the compiler additionally
-optimizes it for the TEMIC SPARClet chip.
+  With :option:`-mcpu=sparclet` , GCC generates code for the SPARClet variant of
+  the SPARC architecture.  This adds the integer multiply, multiply/accumulate,
+  integer divide step and scan (``ffs``) instructions which exist in SPARClet
+  but not in SPARC-V7.  With :option:`-mcpu=tsc701` , the compiler additionally
+  optimizes it for the TEMIC SPARClet chip.
 
-With :option:`-mcpu=v9` , GCC generates code for the V9 variant of the SPARC
-architecture.  This adds 64-bit integer and floating-point move instructions,
-3 additional floating-point condition code registers and conditional move
-instructions.  With :option:`-mcpu=ultrasparc` , the compiler additionally
-optimizes it for the Sun UltraSPARC I/II/IIi chips.  With
-:option:`-mcpu=ultrasparc3` , the compiler additionally optimizes it for the
-Sun UltraSPARC III/III+/IIIi/IIIi+/IV/IV+ chips.  With
-:option:`-mcpu=niagara` , the compiler additionally optimizes it for
-Sun UltraSPARC T1 chips.  With :option:`-mcpu=niagara2` , the compiler
-additionally optimizes it for Sun UltraSPARC T2 chips. With
-:option:`-mcpu=niagara3` , the compiler additionally optimizes it for Sun
-UltraSPARC T3 chips.  With :option:`-mcpu=niagara4` , the compiler
-additionally optimizes it for Sun UltraSPARC T4 chips.  With
-:option:`-mcpu=niagara7` , the compiler additionally optimizes it for
-Oracle SPARC M7 chips.  With :option:`-mcpu=m8` , the compiler
-additionally optimizes it for Oracle M8 chips.
+  With :option:`-mcpu=v9` , GCC generates code for the V9 variant of the SPARC
+  architecture.  This adds 64-bit integer and floating-point move instructions,
+  3 additional floating-point condition code registers and conditional move
+  instructions.  With :option:`-mcpu=ultrasparc` , the compiler additionally
+  optimizes it for the Sun UltraSPARC I/II/IIi chips.  With
+  :option:`-mcpu=ultrasparc3` , the compiler additionally optimizes it for the
+  Sun UltraSPARC III/III+/IIIi/IIIi+/IV/IV+ chips.  With
+  :option:`-mcpu=niagara` , the compiler additionally optimizes it for
+  Sun UltraSPARC T1 chips.  With :option:`-mcpu=niagara2` , the compiler
+  additionally optimizes it for Sun UltraSPARC T2 chips. With
+  :option:`-mcpu=niagara3` , the compiler additionally optimizes it for Sun
+  UltraSPARC T3 chips.  With :option:`-mcpu=niagara4` , the compiler
+  additionally optimizes it for Sun UltraSPARC T4 chips.  With
+  :option:`-mcpu=niagara7` , the compiler additionally optimizes it for
+  Oracle SPARC M7 chips.  With :option:`-mcpu=m8` , the compiler
+  additionally optimizes it for Oracle M8 chips.
 
 .. option:: -mtune=cpu_type
 
@@ -10494,15 +10494,15 @@ additionally optimizes it for Oracle M8 chips.
   :samp:`{cpu_type}` , but do not set the instruction set or register set that the
   option :option:`-mcpu`:samp:`={cpu_type}` does.
 
-The same values for :option:`-mcpu`:samp:`={cpu_type}` can be used for
-:option:`-mtune`:samp:`={cpu_type}` , but the only useful values are those
-that select a particular CPU implementation.  Those are
-:samp:`cypress`, :samp:`supersparc`, :samp:`hypersparc`, :samp:`leon`,
-:samp:`leon3`, :samp:`leon3v7`, :samp:`f930`, :samp:`f934`,
-:samp:`sparclite86x`, :samp:`tsc701`, :samp:`ultrasparc`,
-:samp:`ultrasparc3`, :samp:`niagara`, :samp:`niagara2`, :samp:`niagara3`,
-:samp:`niagara4`, :samp:`niagara7` and :samp:`m8`.  With native Solaris
-and GNU/Linux toolchains, :samp:`native` can also be used.
+  The same values for :option:`-mcpu`:samp:`={cpu_type}` can be used for
+  :option:`-mtune`:samp:`={cpu_type}` , but the only useful values are those
+  that select a particular CPU implementation.  Those are
+  :samp:`cypress`, :samp:`supersparc`, :samp:`hypersparc`, :samp:`leon`,
+  :samp:`leon3`, :samp:`leon3v7`, :samp:`f930`, :samp:`f934`,
+  :samp:`sparclite86x`, :samp:`tsc701`, :samp:`ultrasparc`,
+  :samp:`ultrasparc3`, :samp:`niagara`, :samp:`niagara2`, :samp:`niagara3`,
+  :samp:`niagara4`, :samp:`niagara7` and :samp:`m8`.  With native Solaris
+  and GNU/Linux toolchains, :samp:`native` can also be used.
 
 .. option:: -mv8plus, -mno-v8plus
 
@@ -10619,51 +10619,51 @@ on SPARC-V9 processors in 64-bit environments:
 
   Set the code model to one of
 
-:samp:`medlow`
-  The Medium/Low code model: 64-bit addresses, programs
-  must be linked in the low 32 bits of memory.  Programs can be statically
-  or dynamically linked.
+  :samp:`medlow`
+    The Medium/Low code model: 64-bit addresses, programs
+    must be linked in the low 32 bits of memory.  Programs can be statically
+    or dynamically linked.
 
-:samp:`medmid`
-  The Medium/Middle code model: 64-bit addresses, programs
-  must be linked in the low 44 bits of memory, the text and data segments must
-  be less than 2GB in size and the data segment must be located within 2GB of
-  the text segment.
+  :samp:`medmid`
+    The Medium/Middle code model: 64-bit addresses, programs
+    must be linked in the low 44 bits of memory, the text and data segments must
+    be less than 2GB in size and the data segment must be located within 2GB of
+    the text segment.
 
-:samp:`medany`
-  The Medium/Anywhere code model: 64-bit addresses, programs
-  may be linked anywhere in memory, the text and data segments must be less
-  than 2GB in size and the data segment must be located within 2GB of the
-  text segment.
+  :samp:`medany`
+    The Medium/Anywhere code model: 64-bit addresses, programs
+    may be linked anywhere in memory, the text and data segments must be less
+    than 2GB in size and the data segment must be located within 2GB of the
+    text segment.
 
-:samp:`embmedany`
-  The Medium/Anywhere code model for embedded systems:
-  64-bit addresses, the text and data segments must be less than 2GB in
-  size, both starting anywhere in memory (determined at link time).  The
-  global register %g4 points to the base of the data segment.  Programs
-  are statically linked and PIC is not supported.
+  :samp:`embmedany`
+    The Medium/Anywhere code model for embedded systems:
+    64-bit addresses, the text and data segments must be less than 2GB in
+    size, both starting anywhere in memory (determined at link time).  The
+    global register %g4 points to the base of the data segment.  Programs
+    are statically linked and PIC is not supported.
 
 .. option:: -mmemory-model=mem-model
 
   Set the memory model in force on the processor to one of
 
-:samp:`default`
-  The default memory model for the processor and operating system.
+  :samp:`default`
+    The default memory model for the processor and operating system.
 
-:samp:`rmo`
-  Relaxed Memory Order
+  :samp:`rmo`
+    Relaxed Memory Order
 
-:samp:`pso`
-  Partial Store Order
+  :samp:`pso`
+    Partial Store Order
 
-:samp:`tso`
-  Total Store Order
+  :samp:`tso`
+    Total Store Order
 
-:samp:`sc`
-  Sequential Consistency
+  :samp:`sc`
+    Sequential Consistency
 
-  These memory models are formally defined in Appendix D of the SPARC-V9
-architecture manual, as set in the processor's ``PSTATE.MM`` field.
+    These memory models are formally defined in Appendix D of the SPARC-V9
+  architecture manual, as set in the processor's ``PSTATE.MM`` field.
 
 .. option:: -mstack-bias, -mno-stack-bias
 
@@ -10856,13 +10856,13 @@ These :samp:`-m` options are defined for V850 implementations:
   Specify that the target processor is the V850E.  The preprocessor
   constant ``__v850e__`` is defined if this option is used.
 
-If neither :option:`-mv850` nor :option:`-mv850e` nor :option:`-mv850e1`
-nor :option:`-mv850e2` nor :option:`-mv850e2v3` nor :option:`-mv850e3v5`
-are defined then a default target processor is chosen and the
-relevant :samp:`__v850*__` preprocessor constant is defined.
+  If neither :option:`-mv850` nor :option:`-mv850e` nor :option:`-mv850e1`
+  nor :option:`-mv850e2` nor :option:`-mv850e2v3` nor :option:`-mv850e3v5`
+  are defined then a default target processor is chosen and the
+  relevant :samp:`__v850*__` preprocessor constant is defined.
 
-The preprocessor constants ``__v850`` and ``__v851__`` are always
-defined, regardless of which processor variant is the target.
+  The preprocessor constants ``__v850`` and ``__v851__`` are always
+  defined, regardless of which processor variant is the target.
 
 .. option:: -mdisable-callt, -mno-disable-callt
 
@@ -10870,10 +10870,10 @@ defined, regardless of which processor variant is the target.
   v850e, v850e1, v850e2, v850e2v3 and v850e3v5 flavors of the v850
   architecture.
 
-This option is enabled by default when the RH850 ABI is
-in use (see :option:`-mrh850-abi` ), and disabled by default when the
-GCC ABI is in use.  If ``CALLT`` instructions are being generated
-then the C preprocessor symbol ``__V850_CALLT__`` is defined.
+  This option is enabled by default when the RH850 ABI is
+  in use (see :option:`-mrh850-abi` ), and disabled by default when the
+  GCC ABI is in use.  If ``CALLT`` instructions are being generated
+  then the C preprocessor symbol ``__V850_CALLT__`` is defined.
 
 .. option:: -mrelax, -mno-relax
 
@@ -10904,43 +10904,43 @@ then the C preprocessor symbol ``__V850_CALLT__`` is defined.
   Enables support for the RH850 version of the V850 ABI.  This is the
   default.  With this version of the ABI the following rules apply:
 
-** Integer sized structures and unions are returned via a memory pointer
-  rather than a register.
+  ** Integer sized structures and unions are returned via a memory pointer
+    rather than a register.
 
-* Large structures and unions (more than 8 bytes in size) are passed by
-  value.
+  * Large structures and unions (more than 8 bytes in size) are passed by
+    value.
 
-* Functions are aligned to 16-bit boundaries.
+  * Functions are aligned to 16-bit boundaries.
 
-* The :option:`-m8byte-align` command-line option is supported.
+  * The :option:`-m8byte-align` command-line option is supported.
 
-* The :option:`-mdisable-callt` command-line option is enabled by
-  default.  The :option:`-mno-disable-callt` command-line option is not
-  supported.
+  * The :option:`-mdisable-callt` command-line option is enabled by
+    default.  The :option:`-mno-disable-callt` command-line option is not
+    supported.
 
-When this version of the ABI is enabled the C preprocessor symbol
-``__V850_RH850_ABI__`` is defined.
+  When this version of the ABI is enabled the C preprocessor symbol
+  ``__V850_RH850_ABI__`` is defined.
 
 .. option:: -mgcc-abi
 
   Enables support for the old GCC version of the V850 ABI.  With this
   version of the ABI the following rules apply:
 
-** Integer sized structures and unions are returned in register ``r10``.
+  ** Integer sized structures and unions are returned in register ``r10``.
 
-* Large structures and unions (more than 8 bytes in size) are passed by
-  reference.
+  * Large structures and unions (more than 8 bytes in size) are passed by
+    reference.
 
-* Functions are aligned to 32-bit boundaries, unless optimizing for
-  size.
+  * Functions are aligned to 32-bit boundaries, unless optimizing for
+    size.
 
-* The :option:`-m8byte-align` command-line option is not supported.
+  * The :option:`-m8byte-align` command-line option is not supported.
 
-* The :option:`-mdisable-callt` command-line option is supported but not
-  enabled by default.
+  * The :option:`-mdisable-callt` command-line option is supported but not
+    enabled by default.
 
-When this version of the ABI is enabled the C preprocessor symbol
-``__V850_GCC_ABI__`` is defined.
+  When this version of the ABI is enabled the C preprocessor symbol
+  ``__V850_GCC_ABI__`` is defined.
 
 .. option:: -m8byte-align, -mno-8byte-align
 
@@ -11018,11 +11018,11 @@ Visium Options
 
   Generate code containing library calls for floating-point.
 
-:option:`-msoft-float` changes the calling convention in the output file;
-therefore, it is only useful if you compile *all* of a program with
-this option.  In particular, you need to compile libgcc.a, the
-library that comes with GCC, with :option:`-msoft-float` in order for
-this to work.
+  :option:`-msoft-float` changes the calling convention in the output file;
+  therefore, it is only useful if you compile *all* of a program with
+  this option.  In particular, you need to compile libgcc.a, the
+  library that comes with GCC, with :option:`-msoft-float` in order for
+  this to work.
 
 .. option:: -mcpu=cpu_type
 
@@ -11030,14 +11030,14 @@ this to work.
   for machine type :samp:`{cpu_type}`.  Supported values for :samp:`{cpu_type}` are
   :samp:`mcm`, :samp:`gr5` and :samp:`gr6`.
 
-:samp:`mcm` is a synonym of :samp:`gr5` present for backward compatibility.
+  :samp:`mcm` is a synonym of :samp:`gr5` present for backward compatibility.
 
-By default (unless configured otherwise), GCC generates code for the GR5
-variant of the Visium architecture.
+  By default (unless configured otherwise), GCC generates code for the GR5
+  variant of the Visium architecture.
 
-With :option:`-mcpu=gr6` , GCC generates code for the GR6 variant of the Visium
-architecture.  The only difference from GR5 code is that the compiler will
-generate block move instructions.
+  With :option:`-mcpu=gr6` , GCC generates code for the GR6 variant of the Visium
+  architecture.  The only difference from GR5 code is that the compiler will
+  generate block move instructions.
 
 .. option:: -mtune=cpu_type
 
@@ -11072,8 +11072,8 @@ These :samp:`-m` options are defined for the VMS implementations:
 
   .. index:: mdebug-main=prefix
 
-Flag the first routine whose name starts with :samp:`{prefix}` as the main
-routine for the debugger.
+  Flag the first routine whose name starts with :samp:`{prefix}` as the main
+  routine for the debugger.
 
 .. option:: -mmalloc64
 
@@ -11083,10 +11083,10 @@ routine for the debugger.
 
   .. index:: mpointer-size=size
 
-Set the default size of pointers. Possible options for :samp:`{size}` are
-:samp:`32` or :samp:`short` for 32 bit pointers, :samp:`64` or :samp:`long`
-for 64 bit pointers, and :samp:`no` for supporting only 32 bit pointers.
-The later option disables ``pragma pointer_size``.
+  Set the default size of pointers. Possible options for :samp:`{size}` are
+  :samp:`32` or :samp:`short` for 32 bit pointers, :samp:`64` or :samp:`long`
+  for 64 bit pointers, and :samp:`no` for supporting only 32 bit pointers.
+  The later option disables ``pragma pointer_size``.
 
 .. _vxworks-options:
 
@@ -11145,383 +11145,383 @@ These :samp:`-m` options are defined for the x86 family of computers.
   indicated.  Specifying :option:`-march`:samp:`={cpu-type}` implies 
   :option:`-mtune`:samp:`={cpu-type}` , except where noted otherwise.
 
-The choices for :samp:`{cpu-type}` are:
-
-:samp:`native`
-  This selects the CPU to generate code for at compilation time by determining
-  the processor type of the compiling machine.  Using :option:`-march=native`
-  enables all instruction subsets supported by the local machine (hence
-  the result might not run on different machines).  Using :option:`-mtune=native`
-  produces code optimized for the local machine under the constraints
-  of the selected instruction set.  
-
-:samp:`x86-64`
-  A generic CPU with 64-bit extensions.
-
-:samp:`x86-64-v2` :samp:`x86-64-v3` :samp:`x86-64-v4`
-  These choices for :samp:`{cpu-type}` select the corresponding
-  micro-architecture level from the x86-64 psABI.  On ABIs other than
-  the x86-64 psABI they select the same CPU features as the x86-64 psABI
-  documents for the particular micro-architecture level.
-
-  Since these :samp:`{cpu-type}` values do not have a corresponding
-  :option:`-mtune` setting, using :option:`-march` with these values enables
-  generic tuning.  Specific tuning can be enabled using the
-  :option:`-mtune`:samp:`={other-cpu-type}` option with an appropriate
-  :samp:`{other-cpu-type}` value.
-
-:samp:`i386`
-  Original Intel i386 CPU.
-
-:samp:`i486`
-  Intel i486 CPU.  (No scheduling is implemented for this chip.)
-
-:samp:`i586` :samp:`pentium`
-  Intel Pentium CPU with no MMX support.
-
-:samp:`lakemont`
-  Intel Lakemont MCU, based on Intel Pentium CPU.
-
-:samp:`pentium-mmx`
-  Intel Pentium MMX CPU, based on Pentium core with MMX instruction set support.
-
-:samp:`pentiumpro`
-  Intel Pentium Pro CPU.
-
-:samp:`i686`
-  When used with :option:`-march` , the Pentium Pro
-  instruction set is used, so the code runs on all i686 family chips.
-  When used with :option:`-mtune` , it has the same meaning as :samp:`generic`.
-
-:samp:`pentium2`
-  Intel Pentium II CPU, based on Pentium Pro core with MMX instruction set
-  support.
-
-:samp:`pentium3` :samp:`pentium3m`
-  Intel Pentium III CPU, based on Pentium Pro core with MMX and SSE instruction
-  set support.
-
-:samp:`pentium-m`
-  Intel Pentium M; low-power version of Intel Pentium III CPU
-  with MMX, SSE and SSE2 instruction set support.  Used by Centrino notebooks.
-
-:samp:`pentium4` :samp:`pentium4m`
-  Intel Pentium 4 CPU with MMX, SSE and SSE2 instruction set support.
-
-:samp:`prescott`
-  Improved version of Intel Pentium 4 CPU with MMX, SSE, SSE2 and SSE3 instruction
-  set support.
-
-:samp:`nocona`
-  Improved version of Intel Pentium 4 CPU with 64-bit extensions, MMX, SSE,
-  SSE2 and SSE3 instruction set support.
-
-:samp:`core2`
-  Intel Core 2 CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3 and SSSE3
-  instruction set support.
-
-:samp:`nehalem`
-  Intel Nehalem CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2 and POPCNT instruction set support.
-
-:samp:`westmere`
-  Intel Westmere CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AES and PCLMUL instruction set support.
-
-:samp:`sandybridge`
-  Intel Sandy Bridge CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AVX, AES and PCLMUL instruction set support.
-
-:samp:`ivybridge`
-  Intel Ivy Bridge CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AVX, AES, PCLMUL, FSGSBASE, RDRND and F16C
-  instruction set support.
-
-:samp:`haswell`
-  Intel Haswell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
-  BMI, BMI2 and F16C instruction set support.
-
-:samp:`broadwell`
-  Intel Broadwell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI, BMI2,
-  F16C, RDSEED ADCX and PREFETCHW instruction set support.
-
-:samp:`skylake`
-  Intel Skylake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
-  BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC and XSAVES
-  instruction set support.
-
-:samp:`bonnell`
-  Intel Bonnell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3 and SSSE3
-  instruction set support.
-
-:samp:`silvermont`
-  Intel Silvermont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL and RDRND instruction set support.
-
-:samp:`goldmont`
-  Intel Goldmont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
-  XSAVEOPT and FSGSBASE instruction set support.
-
-:samp:`goldmont-plus`
-  Intel Goldmont Plus CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
-  SSSE3, SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC,
-  XSAVES, XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX and UMIP instruction set support.
-
-:samp:`tremont`
-  Intel Tremont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
-  XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX, UMIP, GFNI-SSE, CLWB, MOVDIRI,
-  MOVDIR64B, CLDEMOTE and WAITPKG instruction set support.
-
-:samp:`knl`
-  Intel Knight's Landing CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
-  SSSE3, SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
-  BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, PREFETCHWT1, AVX512F, AVX512PF,
-  AVX512ER and AVX512CD instruction set support.
-
-:samp:`knm`
-  Intel Knights Mill CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
-  SSSE3, SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
-  BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, PREFETCHWT1, AVX512F, AVX512PF,
-  AVX512ER, AVX512CD, AVX5124VNNIW, AVX5124FMAPS and AVX512VPOPCNTDQ instruction
-  set support.
-
-:samp:`skylake-avx512`
-  Intel Skylake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
-  SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
-  BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F,
-  CLWB, AVX512VL, AVX512BW, AVX512DQ and AVX512CD instruction set support.
-
-:samp:`cannonlake`
-  Intel Cannonlake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
-  SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
-  RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
-  XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
-  AVX512IFMA, SHA and UMIP instruction set support.
-
-:samp:`icelake-client`
-  Intel Icelake Client CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
-  SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
-  RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
-  XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
-  AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
-  AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES instruction set support.
-
-:samp:`icelake-server`
-  Intel Icelake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
-  SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
-  RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
-  XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
-  AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
-  AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES, PCONFIG and WBNOINVD instruction
-  set support.
-
-:samp:`cascadelake`
-  Intel Cascadelake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
-  BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F, CLWB,
-  AVX512VL, AVX512BW, AVX512DQ, AVX512CD and AVX512VNNI instruction set support.
-
-:samp:`cooperlake`
-  Intel cooperlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
-  BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F, CLWB,
-  AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VNNI and AVX512BF16 instruction
-  set support.
-
-:samp:`tigerlake`
-  Intel Tigerlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
-  BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F,
-  AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI, AVX512IFMA, SHA, CLWB, UMIP,
-  RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ, AVX512BITALG, AVX512VNNI, VPCLMULQDQ,
-  VAES, PCONFIG, WBNOINVD, MOVDIRI, MOVDIR64B, AVX512VP2INTERSECT and KEYLOCKER
-  instruction set support.
-
-:samp:`sapphirerapids`
-  Intel sapphirerapids CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
-  SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND,
-  FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES,
-  AVX512F, CLWB, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VNNI, AVX512BF16,
-  MOVDIRI, MOVDIR64B, AVX512VP2INTERSECT, ENQCMD, CLDEMOTE, PTWRITE, WAITPKG,
-  SERIALIZE, TSXLDTRK, UINTR, AMX-BF16, AMX-TILE, AMX-INT8 and AVX-VNNI
-  instruction set support.
-
-:samp:`alderlake`
-  Intel Alderlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
-  SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
-  XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX, UMIP, GFNI-SSE, CLWB, MOVDIRI,
-  MOVDIR64B, CLDEMOTE, WAITPKG, ADCX, AVX, AVX2, BMI, BMI2, F16C, FMA, LZCNT,
-  PCONFIG, PKU, VAES, VPCLMULQDQ, SERIALIZE, HRESET, KL, WIDEKL and AVX-VNNI
-  instruction set support.
-
-:samp:`rocketlake`
-  Intel Rocketlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
-  SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
-  RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
-  XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
-  AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
-  AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES instruction set support.
-
-:samp:`k6`
-  AMD K6 CPU with MMX instruction set support.
-
-:samp:`k6-2` :samp:`k6-3`
-  Improved versions of AMD K6 CPU with MMX and 3DNow! instruction set support.
-
-:samp:`athlon` :samp:`athlon-tbird`
-  AMD Athlon CPU with MMX, 3dNOW!, enhanced 3DNow! and SSE prefetch instructions
-  support.
-
-:samp:`athlon-4` :samp:`athlon-xp` :samp:`athlon-mp`
-  Improved AMD Athlon CPU with MMX, 3DNow!, enhanced 3DNow! and full SSE
-  instruction set support.
-
-:samp:`k8` :samp:`opteron` :samp:`athlon64` :samp:`athlon-fx`
-  Processors based on the AMD K8 core with x86-64 instruction set support,
-  including the AMD Opteron, Athlon 64, and Athlon 64 FX processors.
-  (This supersets MMX, SSE, SSE2, 3DNow!, enhanced 3DNow! and 64-bit
-  instruction set extensions.)
-
-:samp:`k8-sse3` :samp:`opteron-sse3` :samp:`athlon64-sse3`
-  Improved versions of AMD K8 cores with SSE3 instruction set support.
-
-:samp:`amdfam10` :samp:`barcelona`
-  CPUs based on AMD Family 10h cores with x86-64 instruction set support.  (This
-  supersets MMX, SSE, SSE2, SSE3, SSE4A, 3DNow!, enhanced 3DNow!, ABM and 64-bit
-  instruction set extensions.)
-
-:samp:`bdver1`
-  CPUs based on AMD Family 15h cores with x86-64 instruction set support.  (This
-  supersets FMA4, AVX, XOP, LWP, AES, PCLMUL, CX16, MMX, SSE, SSE2, SSE3, SSE4A,
-  SSSE3, SSE4.1, SSE4.2, ABM and 64-bit instruction set extensions.)
-
-:samp:`bdver2`
-  AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
-  supersets BMI, TBM, F16C, FMA, FMA4, AVX, XOP, LWP, AES, PCLMUL, CX16, MMX,
-  SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1, SSE4.2, ABM and 64-bit instruction set 
-  extensions.)
-
-:samp:`bdver3`
-  AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
-  supersets BMI, TBM, F16C, FMA, FMA4, FSGSBASE, AVX, XOP, LWP, AES, 
-  PCLMUL, CX16, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1, SSE4.2, ABM and
-  64-bit instruction set extensions.)
-
-:samp:`bdver4`
-  AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
-  supersets BMI, BMI2, TBM, F16C, FMA, FMA4, FSGSBASE, AVX, AVX2, XOP, LWP, 
-  AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1,
-  SSE4.2, ABM and 64-bit instruction set extensions.)
-
-:samp:`znver1`
-  AMD Family 17h core based CPUs with x86-64 instruction set support.  (This
-  supersets BMI, BMI2, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED, MWAITX,
-  SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3,
-  SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, and 64-bit
-  instruction set extensions.)
-
-:samp:`znver2`
-  AMD Family 17h core based CPUs with x86-64 instruction set support. (This
-  supersets BMI, BMI2, CLWB, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED,
-  MWAITX, SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A,
-  SSSE3, SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, RDPID,
-  WBNOINVD, and 64-bit instruction set extensions.)
-
-:samp:`znver3`
-  AMD Family 19h core based CPUs with x86-64 instruction set support. (This
-  supersets BMI, BMI2, CLWB, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED,
-  MWAITX, SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A,
-  SSSE3, SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, RDPID,
-  WBNOINVD, PKU, VPCLMULQDQ, VAES, and 64-bit instruction set extensions.)
-
-:samp:`btver1`
-  CPUs based on AMD Family 14h cores with x86-64 instruction set support.  (This
-  supersets MMX, SSE, SSE2, SSE3, SSSE3, SSE4A, CX16, ABM and 64-bit
-  instruction set extensions.)
-
-:samp:`btver2`
-  CPUs based on AMD Family 16h cores with x86-64 instruction set support. This
-  includes MOVBE, F16C, BMI, AVX, PCLMUL, AES, SSE4.2, SSE4.1, CX16, ABM,
-  SSE4A, SSSE3, SSE3, SSE2, SSE, MMX and 64-bit instruction set extensions.
-
-:samp:`winchip-c6`
-  IDT WinChip C6 CPU, dealt in same way as i486 with additional MMX instruction
-  set support.
-
-:samp:`winchip2`
-  IDT WinChip 2 CPU, dealt in same way as i486 with additional MMX and 3DNow!
-  instruction set support.
-
-:samp:`c3`
-  VIA C3 CPU with MMX and 3DNow! instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`c3-2`
-  VIA C3-2 (Nehemiah/C5XL) CPU with MMX and SSE instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`c7`
-  VIA C7 (Esther) CPU with MMX, SSE, SSE2 and SSE3 instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`samuel-2`
-  VIA Eden Samuel 2 CPU with MMX and 3DNow! instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nehemiah`
-  VIA Eden Nehemiah CPU with MMX and SSE instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`esther`
-  VIA Eden Esther CPU with MMX, SSE, SSE2 and SSE3 instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`eden-x2`
-  VIA Eden X2 CPU with x86-64, MMX, SSE, SSE2 and SSE3 instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`eden-x4`
-  VIA Eden X4 CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
-  AVX and AVX2 instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano`
-  Generic VIA Nano CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano-1000`
-  VIA Nano 1xxx CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano-2000`
-  VIA Nano 2xxx CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano-3000`
-  VIA Nano 3xxx CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano-x2`
-  VIA Nano Dual Core CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`nano-x4`
-  VIA Nano Quad Core CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
-  instruction set support.
-  (No scheduling is implemented for this chip.)
-
-:samp:`geode`
-  AMD Geode embedded processor with MMX and 3DNow! instruction set support.
+  The choices for :samp:`{cpu-type}` are:
+
+  :samp:`native`
+    This selects the CPU to generate code for at compilation time by determining
+    the processor type of the compiling machine.  Using :option:`-march=native`
+    enables all instruction subsets supported by the local machine (hence
+    the result might not run on different machines).  Using :option:`-mtune=native`
+    produces code optimized for the local machine under the constraints
+    of the selected instruction set.  
+
+  :samp:`x86-64`
+    A generic CPU with 64-bit extensions.
+
+  :samp:`x86-64-v2` :samp:`x86-64-v3` :samp:`x86-64-v4`
+    These choices for :samp:`{cpu-type}` select the corresponding
+    micro-architecture level from the x86-64 psABI.  On ABIs other than
+    the x86-64 psABI they select the same CPU features as the x86-64 psABI
+    documents for the particular micro-architecture level.
+
+    Since these :samp:`{cpu-type}` values do not have a corresponding
+    :option:`-mtune` setting, using :option:`-march` with these values enables
+    generic tuning.  Specific tuning can be enabled using the
+    :option:`-mtune`:samp:`={other-cpu-type}` option with an appropriate
+    :samp:`{other-cpu-type}` value.
+
+  :samp:`i386`
+    Original Intel i386 CPU.
+
+  :samp:`i486`
+    Intel i486 CPU.  (No scheduling is implemented for this chip.)
+
+  :samp:`i586` :samp:`pentium`
+    Intel Pentium CPU with no MMX support.
+
+  :samp:`lakemont`
+    Intel Lakemont MCU, based on Intel Pentium CPU.
+
+  :samp:`pentium-mmx`
+    Intel Pentium MMX CPU, based on Pentium core with MMX instruction set support.
+
+  :samp:`pentiumpro`
+    Intel Pentium Pro CPU.
+
+  :samp:`i686`
+    When used with :option:`-march` , the Pentium Pro
+    instruction set is used, so the code runs on all i686 family chips.
+    When used with :option:`-mtune` , it has the same meaning as :samp:`generic`.
+
+  :samp:`pentium2`
+    Intel Pentium II CPU, based on Pentium Pro core with MMX instruction set
+    support.
+
+  :samp:`pentium3` :samp:`pentium3m`
+    Intel Pentium III CPU, based on Pentium Pro core with MMX and SSE instruction
+    set support.
+
+  :samp:`pentium-m`
+    Intel Pentium M; low-power version of Intel Pentium III CPU
+    with MMX, SSE and SSE2 instruction set support.  Used by Centrino notebooks.
+
+  :samp:`pentium4` :samp:`pentium4m`
+    Intel Pentium 4 CPU with MMX, SSE and SSE2 instruction set support.
+
+  :samp:`prescott`
+    Improved version of Intel Pentium 4 CPU with MMX, SSE, SSE2 and SSE3 instruction
+    set support.
+
+  :samp:`nocona`
+    Improved version of Intel Pentium 4 CPU with 64-bit extensions, MMX, SSE,
+    SSE2 and SSE3 instruction set support.
+
+  :samp:`core2`
+    Intel Core 2 CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3 and SSSE3
+    instruction set support.
+
+  :samp:`nehalem`
+    Intel Nehalem CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2 and POPCNT instruction set support.
+
+  :samp:`westmere`
+    Intel Westmere CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AES and PCLMUL instruction set support.
+
+  :samp:`sandybridge`
+    Intel Sandy Bridge CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AVX, AES and PCLMUL instruction set support.
+
+  :samp:`ivybridge`
+    Intel Ivy Bridge CPU with 64-bit extensions, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AVX, AES, PCLMUL, FSGSBASE, RDRND and F16C
+    instruction set support.
+
+  :samp:`haswell`
+    Intel Haswell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
+    BMI, BMI2 and F16C instruction set support.
+
+  :samp:`broadwell`
+    Intel Broadwell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI, BMI2,
+    F16C, RDSEED ADCX and PREFETCHW instruction set support.
+
+  :samp:`skylake`
+    Intel Skylake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
+    BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC and XSAVES
+    instruction set support.
+
+  :samp:`bonnell`
+    Intel Bonnell CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3 and SSSE3
+    instruction set support.
+
+  :samp:`silvermont`
+    Intel Silvermont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL and RDRND instruction set support.
+
+  :samp:`goldmont`
+    Intel Goldmont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
+    XSAVEOPT and FSGSBASE instruction set support.
+
+  :samp:`goldmont-plus`
+    Intel Goldmont Plus CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
+    SSSE3, SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC,
+    XSAVES, XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX and UMIP instruction set support.
+
+  :samp:`tremont`
+    Intel Tremont CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
+    XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX, UMIP, GFNI-SSE, CLWB, MOVDIRI,
+    MOVDIR64B, CLDEMOTE and WAITPKG instruction set support.
+
+  :samp:`knl`
+    Intel Knight's Landing CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
+    SSSE3, SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
+    BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, PREFETCHWT1, AVX512F, AVX512PF,
+    AVX512ER and AVX512CD instruction set support.
+
+  :samp:`knm`
+    Intel Knights Mill CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
+    SSSE3, SSE4.1, SSE4.2, POPCNT, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
+    BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, PREFETCHWT1, AVX512F, AVX512PF,
+    AVX512ER, AVX512CD, AVX5124VNNIW, AVX5124FMAPS and AVX512VPOPCNTDQ instruction
+    set support.
+
+  :samp:`skylake-avx512`
+    Intel Skylake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
+    SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA,
+    BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F,
+    CLWB, AVX512VL, AVX512BW, AVX512DQ and AVX512CD instruction set support.
+
+  :samp:`cannonlake`
+    Intel Cannonlake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
+    SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
+    RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
+    XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
+    AVX512IFMA, SHA and UMIP instruction set support.
+
+  :samp:`icelake-client`
+    Intel Icelake Client CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
+    SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
+    RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
+    XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
+    AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
+    AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES instruction set support.
+
+  :samp:`icelake-server`
+    Intel Icelake Server CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
+    SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
+    RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
+    XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
+    AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
+    AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES, PCONFIG and WBNOINVD instruction
+    set support.
+
+  :samp:`cascadelake`
+    Intel Cascadelake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
+    BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F, CLWB,
+    AVX512VL, AVX512BW, AVX512DQ, AVX512CD and AVX512VNNI instruction set support.
+
+  :samp:`cooperlake`
+    Intel cooperlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
+    BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F, CLWB,
+    AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VNNI and AVX512BF16 instruction
+    set support.
+
+  :samp:`tigerlake`
+    Intel Tigerlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND, FMA, BMI,
+    BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES, AVX512F,
+    AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI, AVX512IFMA, SHA, CLWB, UMIP,
+    RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ, AVX512BITALG, AVX512VNNI, VPCLMULQDQ,
+    VAES, PCONFIG, WBNOINVD, MOVDIRI, MOVDIR64B, AVX512VP2INTERSECT and KEYLOCKER
+    instruction set support.
+
+  :samp:`sapphirerapids`
+    Intel sapphirerapids CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
+    SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE, RDRND,
+    FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC, XSAVES,
+    AVX512F, CLWB, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VNNI, AVX512BF16,
+    MOVDIRI, MOVDIR64B, AVX512VP2INTERSECT, ENQCMD, CLDEMOTE, PTWRITE, WAITPKG,
+    SERIALIZE, TSXLDTRK, UINTR, AMX-BF16, AMX-TILE, AMX-INT8 and AVX-VNNI
+    instruction set support.
+
+  :samp:`alderlake`
+    Intel Alderlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
+    SSE4.1, SSE4.2, POPCNT, AES, PREFETCHW, PCLMUL, RDRND, XSAVE, XSAVEC, XSAVES,
+    XSAVEOPT, FSGSBASE, PTWRITE, RDPID, SGX, UMIP, GFNI-SSE, CLWB, MOVDIRI,
+    MOVDIR64B, CLDEMOTE, WAITPKG, ADCX, AVX, AVX2, BMI, BMI2, F16C, FMA, LZCNT,
+    PCONFIG, PKU, VAES, VPCLMULQDQ, SERIALIZE, HRESET, KL, WIDEKL and AVX-VNNI
+    instruction set support.
+
+  :samp:`rocketlake`
+    Intel Rocketlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2,
+    SSE3, SSSE3, SSE4.1, SSE4.2, POPCNT, PKU, AVX, AVX2, AES, PCLMUL, FSGSBASE,
+    RDRND, FMA, BMI, BMI2, F16C, RDSEED, ADCX, PREFETCHW, CLFLUSHOPT, XSAVEC,
+    XSAVES, AVX512F, AVX512VL, AVX512BW, AVX512DQ, AVX512CD, AVX512VBMI,
+    AVX512IFMA, SHA, CLWB, UMIP, RDPID, GFNI, AVX512VBMI2, AVX512VPOPCNTDQ,
+    AVX512BITALG, AVX512VNNI, VPCLMULQDQ, VAES instruction set support.
+
+  :samp:`k6`
+    AMD K6 CPU with MMX instruction set support.
+
+  :samp:`k6-2` :samp:`k6-3`
+    Improved versions of AMD K6 CPU with MMX and 3DNow! instruction set support.
+
+  :samp:`athlon` :samp:`athlon-tbird`
+    AMD Athlon CPU with MMX, 3dNOW!, enhanced 3DNow! and SSE prefetch instructions
+    support.
+
+  :samp:`athlon-4` :samp:`athlon-xp` :samp:`athlon-mp`
+    Improved AMD Athlon CPU with MMX, 3DNow!, enhanced 3DNow! and full SSE
+    instruction set support.
+
+  :samp:`k8` :samp:`opteron` :samp:`athlon64` :samp:`athlon-fx`
+    Processors based on the AMD K8 core with x86-64 instruction set support,
+    including the AMD Opteron, Athlon 64, and Athlon 64 FX processors.
+    (This supersets MMX, SSE, SSE2, 3DNow!, enhanced 3DNow! and 64-bit
+    instruction set extensions.)
+
+  :samp:`k8-sse3` :samp:`opteron-sse3` :samp:`athlon64-sse3`
+    Improved versions of AMD K8 cores with SSE3 instruction set support.
+
+  :samp:`amdfam10` :samp:`barcelona`
+    CPUs based on AMD Family 10h cores with x86-64 instruction set support.  (This
+    supersets MMX, SSE, SSE2, SSE3, SSE4A, 3DNow!, enhanced 3DNow!, ABM and 64-bit
+    instruction set extensions.)
+
+  :samp:`bdver1`
+    CPUs based on AMD Family 15h cores with x86-64 instruction set support.  (This
+    supersets FMA4, AVX, XOP, LWP, AES, PCLMUL, CX16, MMX, SSE, SSE2, SSE3, SSE4A,
+    SSSE3, SSE4.1, SSE4.2, ABM and 64-bit instruction set extensions.)
+
+  :samp:`bdver2`
+    AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
+    supersets BMI, TBM, F16C, FMA, FMA4, AVX, XOP, LWP, AES, PCLMUL, CX16, MMX,
+    SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1, SSE4.2, ABM and 64-bit instruction set 
+    extensions.)
+
+  :samp:`bdver3`
+    AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
+    supersets BMI, TBM, F16C, FMA, FMA4, FSGSBASE, AVX, XOP, LWP, AES, 
+    PCLMUL, CX16, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1, SSE4.2, ABM and
+    64-bit instruction set extensions.)
+
+  :samp:`bdver4`
+    AMD Family 15h core based CPUs with x86-64 instruction set support.  (This
+    supersets BMI, BMI2, TBM, F16C, FMA, FMA4, FSGSBASE, AVX, AVX2, XOP, LWP, 
+    AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3, SSE4.1,
+    SSE4.2, ABM and 64-bit instruction set extensions.)
+
+  :samp:`znver1`
+    AMD Family 17h core based CPUs with x86-64 instruction set support.  (This
+    supersets BMI, BMI2, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED, MWAITX,
+    SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A, SSSE3,
+    SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, and 64-bit
+    instruction set extensions.)
+
+  :samp:`znver2`
+    AMD Family 17h core based CPUs with x86-64 instruction set support. (This
+    supersets BMI, BMI2, CLWB, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED,
+    MWAITX, SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A,
+    SSSE3, SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, RDPID,
+    WBNOINVD, and 64-bit instruction set extensions.)
+
+  :samp:`znver3`
+    AMD Family 19h core based CPUs with x86-64 instruction set support. (This
+    supersets BMI, BMI2, CLWB, F16C, FMA, FSGSBASE, AVX, AVX2, ADCX, RDSEED,
+    MWAITX, SHA, CLZERO, AES, PCLMUL, CX16, MOVBE, MMX, SSE, SSE2, SSE3, SSE4A,
+    SSSE3, SSE4.1, SSE4.2, ABM, XSAVEC, XSAVES, CLFLUSHOPT, POPCNT, RDPID,
+    WBNOINVD, PKU, VPCLMULQDQ, VAES, and 64-bit instruction set extensions.)
+
+  :samp:`btver1`
+    CPUs based on AMD Family 14h cores with x86-64 instruction set support.  (This
+    supersets MMX, SSE, SSE2, SSE3, SSSE3, SSE4A, CX16, ABM and 64-bit
+    instruction set extensions.)
+
+  :samp:`btver2`
+    CPUs based on AMD Family 16h cores with x86-64 instruction set support. This
+    includes MOVBE, F16C, BMI, AVX, PCLMUL, AES, SSE4.2, SSE4.1, CX16, ABM,
+    SSE4A, SSSE3, SSE3, SSE2, SSE, MMX and 64-bit instruction set extensions.
+
+  :samp:`winchip-c6`
+    IDT WinChip C6 CPU, dealt in same way as i486 with additional MMX instruction
+    set support.
+
+  :samp:`winchip2`
+    IDT WinChip 2 CPU, dealt in same way as i486 with additional MMX and 3DNow!
+    instruction set support.
+
+  :samp:`c3`
+    VIA C3 CPU with MMX and 3DNow! instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`c3-2`
+    VIA C3-2 (Nehemiah/C5XL) CPU with MMX and SSE instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`c7`
+    VIA C7 (Esther) CPU with MMX, SSE, SSE2 and SSE3 instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`samuel-2`
+    VIA Eden Samuel 2 CPU with MMX and 3DNow! instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nehemiah`
+    VIA Eden Nehemiah CPU with MMX and SSE instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`esther`
+    VIA Eden Esther CPU with MMX, SSE, SSE2 and SSE3 instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`eden-x2`
+    VIA Eden X2 CPU with x86-64, MMX, SSE, SSE2 and SSE3 instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`eden-x4`
+    VIA Eden X4 CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX and AVX2 instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano`
+    Generic VIA Nano CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano-1000`
+    VIA Nano 1xxx CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano-2000`
+    VIA Nano 2xxx CPU with x86-64, MMX, SSE, SSE2, SSE3 and SSSE3
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano-3000`
+    VIA Nano 3xxx CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano-x2`
+    VIA Nano Dual Core CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`nano-x4`
+    VIA Nano Quad Core CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
+    instruction set support.
+    (No scheduling is implemented for this chip.)
+
+  :samp:`geode`
+    AMD Geode embedded processor with MMX and 3DNow! instruction set support.
 
 .. option:: -mtune=cpu-type
 
@@ -11535,47 +11535,47 @@ The choices for :samp:`{cpu-type}` are:
   then :option:`-mtune=pentium4` generates code that is tuned for Pentium 4
   but still runs on i686 machines.
 
-The choices for :samp:`{cpu-type}` are the same as for :option:`-march`.
-In addition, :option:`-mtune` supports 2 extra choices for :samp:`{cpu-type}` :
+  The choices for :samp:`{cpu-type}` are the same as for :option:`-march`.
+  In addition, :option:`-mtune` supports 2 extra choices for :samp:`{cpu-type}` :
 
-:samp:`generic`
-  Produce code optimized for the most common IA32//AMD64//EM64T processors.
-  If you know the CPU on which your code will run, then you should use
-  the corresponding :option:`-mtune` or :option:`-march` option instead of
-  :option:`-mtune=generic`.  But, if you do not know exactly what CPU users
-  of your application will have, then you should use this option.
+  :samp:`generic`
+    Produce code optimized for the most common IA32//AMD64//EM64T processors.
+    If you know the CPU on which your code will run, then you should use
+    the corresponding :option:`-mtune` or :option:`-march` option instead of
+    :option:`-mtune=generic`.  But, if you do not know exactly what CPU users
+    of your application will have, then you should use this option.
 
-  As new processors are deployed in the marketplace, the behavior of this
-  option will change.  Therefore, if you upgrade to a newer version of
-  GCC, code generation controlled by this option will change to reflect
-  the processors
-  that are most common at the time that version of GCC is released.
+    As new processors are deployed in the marketplace, the behavior of this
+    option will change.  Therefore, if you upgrade to a newer version of
+    GCC, code generation controlled by this option will change to reflect
+    the processors
+    that are most common at the time that version of GCC is released.
 
-  There is no :option:`-march=generic` option because :option:`-march`
-  indicates the instruction set the compiler can use, and there is no
-  generic instruction set applicable to all processors.  In contrast,
-  :option:`-mtune` indicates the processor (or, in this case, collection of
-  processors) for which the code is optimized.
+    There is no :option:`-march=generic` option because :option:`-march`
+    indicates the instruction set the compiler can use, and there is no
+    generic instruction set applicable to all processors.  In contrast,
+    :option:`-mtune` indicates the processor (or, in this case, collection of
+    processors) for which the code is optimized.
 
-:samp:`intel`
-  Produce code optimized for the most current Intel processors, which are
-  Haswell and Silvermont for this version of GCC.  If you know the CPU
-  on which your code will run, then you should use the corresponding
-  :option:`-mtune` or :option:`-march` option instead of :option:`-mtune=intel`.
-  But, if you want your application performs better on both Haswell and
-  Silvermont, then you should use this option.
+  :samp:`intel`
+    Produce code optimized for the most current Intel processors, which are
+    Haswell and Silvermont for this version of GCC.  If you know the CPU
+    on which your code will run, then you should use the corresponding
+    :option:`-mtune` or :option:`-march` option instead of :option:`-mtune=intel`.
+    But, if you want your application performs better on both Haswell and
+    Silvermont, then you should use this option.
 
-  As new Intel processors are deployed in the marketplace, the behavior of
-  this option will change.  Therefore, if you upgrade to a newer version of
-  GCC, code generation controlled by this option will change to reflect
-  the most current Intel processors at the time that version of GCC is
-  released.
+    As new Intel processors are deployed in the marketplace, the behavior of
+    this option will change.  Therefore, if you upgrade to a newer version of
+    GCC, code generation controlled by this option will change to reflect
+    the most current Intel processors at the time that version of GCC is
+    released.
 
-  There is no :option:`-march=intel` option because :option:`-march` indicates
-  the instruction set the compiler can use, and there is no common
-  instruction set applicable to all processors.  In contrast,
-  :option:`-mtune` indicates the processor (or, in this case, collection of
-  processors) for which the code is optimized.
+    There is no :option:`-march=intel` option because :option:`-march` indicates
+    the instruction set the compiler can use, and there is no common
+    instruction set applicable to all processors.  In contrast,
+    :option:`-mtune` indicates the processor (or, in this case, collection of
+    processors) for which the code is optimized.
 
 .. option:: -mcpu=cpu-type
 
@@ -11586,53 +11586,53 @@ In addition, :option:`-mtune` supports 2 extra choices for :samp:`{cpu-type}` :
   Generate floating-point arithmetic for selected unit :samp:`{unit}`.  The choices
   for :samp:`{unit}` are:
 
-:samp:`387`
-  Use the standard 387 floating-point coprocessor present on the majority of chips and
-  emulated otherwise.  Code compiled with this option runs almost everywhere.
-  The temporary results are computed in 80-bit precision instead of the precision
-  specified by the type, resulting in slightly different results compared to most
-  of other chips.  See :option:`-ffloat-store` for more detailed description.
+  :samp:`387`
+    Use the standard 387 floating-point coprocessor present on the majority of chips and
+    emulated otherwise.  Code compiled with this option runs almost everywhere.
+    The temporary results are computed in 80-bit precision instead of the precision
+    specified by the type, resulting in slightly different results compared to most
+    of other chips.  See :option:`-ffloat-store` for more detailed description.
 
-  This is the default choice for non-Darwin x86-32 targets.
+    This is the default choice for non-Darwin x86-32 targets.
 
-:samp:`sse`
-  Use scalar floating-point instructions present in the SSE instruction set.
-  This instruction set is supported by Pentium III and newer chips,
-  and in the AMD line
-  by Athlon-4, Athlon XP and Athlon MP chips.  The earlier version of the SSE
-  instruction set supports only single-precision arithmetic, thus the double and
-  extended-precision arithmetic are still done using 387.  A later version, present
-  only in Pentium 4 and AMD x86-64 chips, supports double-precision
-  arithmetic too.
+  :samp:`sse`
+    Use scalar floating-point instructions present in the SSE instruction set.
+    This instruction set is supported by Pentium III and newer chips,
+    and in the AMD line
+    by Athlon-4, Athlon XP and Athlon MP chips.  The earlier version of the SSE
+    instruction set supports only single-precision arithmetic, thus the double and
+    extended-precision arithmetic are still done using 387.  A later version, present
+    only in Pentium 4 and AMD x86-64 chips, supports double-precision
+    arithmetic too.
 
-  For the x86-32 compiler, you must use :option:`-march`:samp:`={cpu-type}` , :option:`-msse`
-  or :option:`-msse2` switches to enable SSE extensions and make this option
-  effective.  For the x86-64 compiler, these extensions are enabled by default.
+    For the x86-32 compiler, you must use :option:`-march`:samp:`={cpu-type}` , :option:`-msse`
+    or :option:`-msse2` switches to enable SSE extensions and make this option
+    effective.  For the x86-64 compiler, these extensions are enabled by default.
 
-  The resulting code should be considerably faster in the majority of cases and avoid
-  the numerical instability problems of 387 code, but may break some existing
-  code that expects temporaries to be 80 bits.
+    The resulting code should be considerably faster in the majority of cases and avoid
+    the numerical instability problems of 387 code, but may break some existing
+    code that expects temporaries to be 80 bits.
 
-  This is the default choice for the x86-64 compiler, Darwin x86-32 targets,
-  and the default choice for x86-32 targets with the SSE2 instruction set
-  when :option:`-ffast-math` is enabled.
+    This is the default choice for the x86-64 compiler, Darwin x86-32 targets,
+    and the default choice for x86-32 targets with the SSE2 instruction set
+    when :option:`-ffast-math` is enabled.
 
-:samp:`sse,387` :samp:`sse+387` :samp:`both`
-  Attempt to utilize both instruction sets at once.  This effectively doubles the
-  amount of available registers, and on chips with separate execution units for
-  387 and SSE the execution resources too.  Use this option with care, as it is
-  still experimental, because the GCC register allocator does not model separate
-  functional units well, resulting in unstable performance.
+  :samp:`sse,387` :samp:`sse+387` :samp:`both`
+    Attempt to utilize both instruction sets at once.  This effectively doubles the
+    amount of available registers, and on chips with separate execution units for
+    387 and SSE the execution resources too.  Use this option with care, as it is
+    still experimental, because the GCC register allocator does not model separate
+    functional units well, resulting in unstable performance.
 
 .. option:: -masm=dialect
 
   .. index:: masm=dialect
 
-Output assembly instructions using selected :samp:`{dialect}`.  Also affects
-which dialect is used for basic ``asm`` (see :ref:`basic-asm`) and
-extended ``asm`` (see :ref:`extended-asm`). Supported choices (in dialect
-order) are :samp:`att` or :samp:`intel`. The default is :samp:`att`. Darwin does
-not support :samp:`intel`.
+  Output assembly instructions using selected :samp:`{dialect}`.  Also affects
+  which dialect is used for basic ``asm`` (see :ref:`basic-asm`) and
+  extended ``asm`` (see :ref:`extended-asm`). Supported choices (in dialect
+  order) are :samp:`att` or :samp:`intel`. The default is :samp:`att`. Darwin does
+  not support :samp:`intel`.
 
 .. option:: -mieee-fp, -mno-ieee-fp
 
@@ -11648,27 +11648,27 @@ not support :samp:`intel`.
 
   Generate output containing library calls for floating point.
 
-Warning: the requisite libraries are not part of GCC.
-Normally the facilities of the machine's usual C compiler are used, but
-this cannot be done directly in cross-compilation.  You must make your
-own arrangements to provide suitable library functions for
-cross-compilation.
+  Warning: the requisite libraries are not part of GCC.
+  Normally the facilities of the machine's usual C compiler are used, but
+  this cannot be done directly in cross-compilation.  You must make your
+  own arrangements to provide suitable library functions for
+  cross-compilation.
 
-On machines where a function returns floating-point results in the 80387
-register stack, some floating-point opcodes may be emitted even if
-:option:`-msoft-float` is used.
+  On machines where a function returns floating-point results in the 80387
+  register stack, some floating-point opcodes may be emitted even if
+  :option:`-msoft-float` is used.
 
 .. option:: -mno-fp-ret-in-387, -mfp-ret-in-387
 
   Do not use the FPU registers for return values of functions.
 
-The usual calling convention has functions return values of types
-``float`` and ``double`` in an FPU register, even if there
-is no FPU.  The idea is that the operating system should emulate
-an FPU.
+  The usual calling convention has functions return values of types
+  ``float`` and ``double`` in an FPU register, even if there
+  is no FPU.  The idea is that the operating system should emulate
+  an FPU.
 
-The option :option:`-mno-fp-ret-in-387` causes such values to be returned
-in ordinary CPU registers instead.
+  The option :option:`-mno-fp-ret-in-387` causes such values to be returned
+  in ordinary CPU registers instead.
 
 .. option:: -mno-fancy-math-387, -mfancy-math-387
 
@@ -11689,13 +11689,13 @@ in ordinary CPU registers instead.
   produces code that runs somewhat faster on a Pentium at the
   expense of more memory.
 
-On x86-64, :option:`-malign-double` is enabled by default.
+  On x86-64, :option:`-malign-double` is enabled by default.
 
-Warning: if you use the :option:`-malign-double` switch,
-structures containing the above types are aligned differently than
-the published application binary interface specifications for the x86-32
-and are not binary compatible with structures in code compiled
-without that switch.
+  Warning: if you use the :option:`-malign-double` switch,
+  structures containing the above types are aligned differently than
+  the published application binary interface specifications for the x86-32
+  and are not binary compatible with structures in code compiled
+  without that switch.
 
 .. option:: -m96bit-long-double, -m128bit-long-double
 
@@ -11703,25 +11703,25 @@ without that switch.
   application binary interface specifies the size to be 96 bits,
   so :option:`-m96bit-long-double` is the default in 32-bit mode.
 
-Modern architectures (Pentium and newer) prefer ``long double``
-to be aligned to an 8- or 16-byte boundary.  In arrays or structures
-conforming to the ABI, this is not possible.  So specifying
-:option:`-m128bit-long-double` aligns ``long double``
-to a 16-byte boundary by padding the ``long double`` with an additional
-32-bit zero.
+  Modern architectures (Pentium and newer) prefer ``long double``
+  to be aligned to an 8- or 16-byte boundary.  In arrays or structures
+  conforming to the ABI, this is not possible.  So specifying
+  :option:`-m128bit-long-double` aligns ``long double``
+  to a 16-byte boundary by padding the ``long double`` with an additional
+  32-bit zero.
 
-In the x86-64 compiler, :option:`-m128bit-long-double` is the default choice as
-its ABI specifies that ``long double`` is aligned on 16-byte boundary.
+  In the x86-64 compiler, :option:`-m128bit-long-double` is the default choice as
+  its ABI specifies that ``long double`` is aligned on 16-byte boundary.
 
-Notice that neither of these options enable any extra precision over the x87
-standard of 80 bits for a ``long double``.
+  Notice that neither of these options enable any extra precision over the x87
+  standard of 80 bits for a ``long double``.
 
-Warning: if you override the default value for your target ABI, this
-changes the size of 
-structures and arrays containing ``long double`` variables,
-as well as modifying the function calling convention for functions taking
-``long double``.  Hence they are not binary-compatible
-with code compiled without that switch.
+  Warning: if you override the default value for your target ABI, this
+  changes the size of 
+  structures and arrays containing ``long double`` variables,
+  as well as modifying the function calling convention for functions taking
+  ``long double``.  Hence they are not binary-compatible
+  with code compiled without that switch.
 
 .. option:: -mlong-double-64, -mlong-double-80, -mlong-double-128
 
@@ -11731,12 +11731,12 @@ with code compiled without that switch.
   of 128 bits makes the ``long double`` type equivalent to the
   ``__float128`` type. This is the default for 64-bit Bionic C library.
 
-Warning: if you override the default value for your target ABI, this
-changes the size of
-structures and arrays containing ``long double`` variables,
-as well as modifying the function calling convention for functions taking
-``long double``.  Hence they are not binary-compatible
-with code compiled without that switch.
+  Warning: if you override the default value for your target ABI, this
+  changes the size of
+  structures and arrays containing ``long double`` variables,
+  as well as modifying the function calling convention for functions taking
+  ``long double``.  Hence they are not binary-compatible
+  with code compiled without that switch.
 
 .. option:: -malign-data=type
 
@@ -11760,23 +11760,23 @@ with code compiled without that switch.
   instruction in the caller since there is no need to pop the arguments
   there.
 
-You can specify that an individual function is called with this calling
-sequence with the function attribute ``stdcall``.  You can also
-override the :option:`-mrtd` option by using the function attribute
-``cdecl``.  See :ref:`function-attributes`.
+  You can specify that an individual function is called with this calling
+  sequence with the function attribute ``stdcall``.  You can also
+  override the :option:`-mrtd` option by using the function attribute
+  ``cdecl``.  See :ref:`function-attributes`.
 
-Warning: this calling convention is incompatible with the one
-normally used on Unix, so you cannot use it if you need to call
-libraries compiled with the Unix compiler.
+  Warning: this calling convention is incompatible with the one
+  normally used on Unix, so you cannot use it if you need to call
+  libraries compiled with the Unix compiler.
 
-Also, you must provide function prototypes for all functions that
-take variable numbers of arguments (including ``printf``);
-otherwise incorrect code is generated for calls to those
-functions.
+  Also, you must provide function prototypes for all functions that
+  take variable numbers of arguments (including ``printf``);
+  otherwise incorrect code is generated for calls to those
+  functions.
 
-In addition, seriously incorrect code results if you call a
-function with too many arguments.  (Normally, extra arguments are
-harmlessly ignored.)
+  In addition, seriously incorrect code results if you call a
+  function with too many arguments.  (Normally, extra arguments are
+  harmlessly ignored.)
 
 .. option:: -mregparm=num
 
@@ -11786,10 +11786,10 @@ harmlessly ignored.)
   function by using the function attribute ``regparm``.
   See :ref:`function-attributes`.
 
-Warning: if you use this switch, and
-:samp:`{num}` is nonzero, then you must build all modules with the same
-value, including any libraries.  This includes the system libraries and
-startup modules.
+  Warning: if you use this switch, and
+  :samp:`{num}` is nonzero, then you must build all modules with the same
+  value, including any libraries.  This includes the system libraries and
+  startup modules.
 
 .. option:: -msseregparm
 
@@ -11798,9 +11798,9 @@ startup modules.
   function by using the function attribute ``sseregparm``.
   See :ref:`function-attributes`.
 
-Warning: if you use this switch then you must build all
-modules with the same value, including any libraries.  This includes
-the system libraries and startup modules.
+  Warning: if you use this switch then you must build all
+  modules with the same value, including any libraries.  This includes
+  the system libraries and startup modules.
 
 .. option:: -mvect8-ret-in-mem
 
@@ -11822,12 +11822,12 @@ the system libraries and startup modules.
   precisions are not available to the programmer without setting the FPU
   control word explicitly.
 
-Setting the rounding of floating-point operations to less than the default
-80 bits can speed some programs by 2% or more.  Note that some mathematical
-libraries assume that extended-precision (80-bit) floating-point operations
-are enabled by default; routines in such libraries could suffer significant
-loss of accuracy, typically through so-called 'catastrophic cancellation',
-when this option is used to set the precision to less than extended precision.
+  Setting the rounding of floating-point operations to less than the default
+  80 bits can speed some programs by 2% or more.  Note that some mathematical
+  libraries assume that extended-precision (80-bit) floating-point operations
+  are enabled by default; routines in such libraries could suffer significant
+  loss of accuracy, typically through so-called 'catastrophic cancellation',
+  when this option is used to set the precision to less than extended precision.
 
 .. option:: -mstackrealign
 
@@ -11844,20 +11844,20 @@ when this option is used to set the precision to less than extended precision.
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128 bits).
 
-Warning: When generating code for the x86-64 architecture with
-SSE extensions disabled, :option:`-mpreferred-stack-boundary=3` can be
-used to keep the stack boundary aligned to 8 byte boundary.  Since
-x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
-intended to be used in controlled environment where stack space is
-important limitation.  This option leads to wrong code when functions
-compiled with 16 byte stack alignment (such as functions from a standard
-library) are called with misaligned stack.  In this case, SSE
-instructions may lead to misaligned memory access traps.  In addition,
-variable arguments are handled incorrectly for 16 byte aligned
-objects (including x87 long double and __int128), leading to wrong
-results.  You must build all modules with
-:option:`-mpreferred-stack-boundary=3` , including any libraries.  This
-includes the system libraries and startup modules.
+  Warning: When generating code for the x86-64 architecture with
+  SSE extensions disabled, :option:`-mpreferred-stack-boundary=3` can be
+  used to keep the stack boundary aligned to 8 byte boundary.  Since
+  x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
+  intended to be used in controlled environment where stack space is
+  important limitation.  This option leads to wrong code when functions
+  compiled with 16 byte stack alignment (such as functions from a standard
+  library) are called with misaligned stack.  In this case, SSE
+  instructions may lead to misaligned memory access traps.  In addition,
+  variable arguments are handled incorrectly for 16 byte aligned
+  objects (including x87 long double and __int128), leading to wrong
+  results.  You must build all modules with
+  :option:`-mpreferred-stack-boundary=3` , including any libraries.  This
+  includes the system libraries and startup modules.
 
 .. option:: -mincoming-stack-boundary=num
 
@@ -11865,24 +11865,24 @@ includes the system libraries and startup modules.
   boundary.  If :option:`-mincoming-stack-boundary` is not specified,
   the one specified by :option:`-mpreferred-stack-boundary` is used.
 
-On Pentium and Pentium Pro, ``double`` and ``long double`` values
-should be aligned to an 8-byte boundary (see :option:`-malign-double` ) or
-suffer significant run time performance penalties.  On Pentium III, the
-Streaming SIMD Extension (SSE) data type ``__m128`` may not work
-properly if it is not 16-byte aligned.
+  On Pentium and Pentium Pro, ``double`` and ``long double`` values
+  should be aligned to an 8-byte boundary (see :option:`-malign-double` ) or
+  suffer significant run time performance penalties.  On Pentium III, the
+  Streaming SIMD Extension (SSE) data type ``__m128`` may not work
+  properly if it is not 16-byte aligned.
 
-To ensure proper alignment of this values on the stack, the stack boundary
-must be as aligned as that required by any value stored on the stack.
-Further, every function must be generated such that it keeps the stack
-aligned.  Thus calling a function compiled with a higher preferred
-stack boundary from a function compiled with a lower preferred stack
-boundary most likely misaligns the stack.  It is recommended that
-libraries that use callbacks always use the default setting.
+  To ensure proper alignment of this values on the stack, the stack boundary
+  must be as aligned as that required by any value stored on the stack.
+  Further, every function must be generated such that it keeps the stack
+  aligned.  Thus calling a function compiled with a higher preferred
+  stack boundary from a function compiled with a lower preferred stack
+  boundary most likely misaligns the stack.  It is recommended that
+  libraries that use callbacks always use the default setting.
 
-This extra alignment does consume extra stack space, and generally
-increases code size.  Code that is sensitive to stack space usage, such
-as embedded systems and operating system kernels, may want to reduce the
-preferred alignment to :option:`-mpreferred-stack-boundary=2`.
+  This extra alignment does consume extra stack space, and generally
+  increases code size.  Code that is sensitive to stack space usage, such
+  as embedded systems and operating system kernels, may want to reduce the
+  preferred alignment to :option:`-mpreferred-stack-boundary=2`.
 
 .. option:: -mmmx, -mwidekl
 
@@ -11899,23 +11899,23 @@ preferred alignment to :option:`-mpreferred-stack-boundary=2`.
   extended instruction sets. Each has a corresponding :option:`-mno-` option to
   disable use of these instructions.
 
-These extensions are also available as built-in functions: see
-x86 Built-in Functions, for details of the functions enabled and
-disabled by these switches.
+  These extensions are also available as built-in functions: see
+  x86 Built-in Functions, for details of the functions enabled and
+  disabled by these switches.
 
-To generate SSE/SSE2 instructions automatically from floating-point
-code (as opposed to 387 instructions), see :option:`-mfpmath=sse`.
+  To generate SSE/SSE2 instructions automatically from floating-point
+  code (as opposed to 387 instructions), see :option:`-mfpmath=sse`.
 
-GCC depresses SSEx instructions when :option:`-mavx` is used. Instead, it
-generates new AVX instructions or AVX equivalence for all SSEx instructions
-when needed.
+  GCC depresses SSEx instructions when :option:`-mavx` is used. Instead, it
+  generates new AVX instructions or AVX equivalence for all SSEx instructions
+  when needed.
 
-These options enable GCC to use these extended instructions in
-generated code, even without :option:`-mfpmath=sse`.  Applications that
-perform run-time CPU detection must compile separate files for each
-supported architecture, using the appropriate flags.  In particular,
-the file containing the CPU detection code should be compiled without
-these options.
+  These options enable GCC to use these extended instructions in
+  generated code, even without :option:`-mfpmath=sse`.  Applications that
+  perform run-time CPU detection must compile separate files for each
+  supported architecture, using the appropriate flags.  In particular,
+  the file containing the CPU detection code should be compiled without
+  these options.
 
 .. option:: -mdump-tune-features
 
@@ -11927,13 +11927,13 @@ these options.
 
   .. index:: mtune-ctrl=feature-list
 
-This option is used to do fine grain control of x86 code generation features.
-:samp:`{feature-list}` is a comma separated list of :samp:`{feature}` names. See also
-:option:`-mdump-tune-features`. When specified, the :samp:`{feature}` is turned
-on if it is not preceded with :samp:`^`, otherwise, it is turned off. 
-:option:`-mtune-ctrl`:samp:`={feature-list}` is intended to be used by GCC
-developers. Using it may lead to code paths not covered by testing and can
-potentially result in compiler ICEs or runtime errors.
+  This option is used to do fine grain control of x86 code generation features.
+  :samp:`{feature-list}` is a comma separated list of :samp:`{feature}` names. See also
+  :option:`-mdump-tune-features`. When specified, the :samp:`{feature}` is turned
+  on if it is not preceded with :samp:`^`, otherwise, it is turned off. 
+  :option:`-mtune-ctrl`:samp:`={feature-list}` is intended to be used by GCC
+  developers. Using it may lead to code paths not covered by testing and can
+  potentially result in compiler ICEs or runtime errors.
 
 .. option:: -mno-default
 
@@ -11971,17 +11971,17 @@ potentially result in compiler ICEs or runtime errors.
   This option instructs GCC to use :samp:`{opt}` -bit vector width in instructions
   instead of default on the selected platform.
 
-:samp:`none`
-  No extra limitations applied to GCC other than defined by the selected platform.
+  :samp:`none`
+    No extra limitations applied to GCC other than defined by the selected platform.
 
-:samp:`128`
-  Prefer 128-bit vector width for instructions.
+  :samp:`128`
+    Prefer 128-bit vector width for instructions.
 
-:samp:`256`
-  Prefer 256-bit vector width for instructions.
+  :samp:`256`
+    Prefer 256-bit vector width for instructions.
 
-:samp:`512`
-  Prefer 512-bit vector width for instructions.
+  :samp:`512`
+    Prefer 512-bit vector width for instructions.
 
 .. option:: -mcx16
 
@@ -12034,14 +12034,14 @@ potentially result in compiler ICEs or runtime errors.
   of the non-reciprocal instruction, the precision of the sequence can be
   decreased by up to 2 ulp (i.e. the inverse of 1.0 equals 0.99999994).
 
-Note that GCC implements ``1.0f/sqrtf( :samp:`{x}` )`` in terms of ``RSQRTSS``
-(or ``RSQRTPS``) already with :option:`-ffast-math` (or the above option
-combination), and doesn't need :option:`-mrecip`.
+  Note that GCC implements ``1.0f/sqrtf( :samp:`{x}` )`` in terms of ``RSQRTSS``
+  (or ``RSQRTPS``) already with :option:`-ffast-math` (or the above option
+  combination), and doesn't need :option:`-mrecip`.
 
-Also note that GCC emits the above sequence with additional Newton-Raphson step
-for vectorized single-float division and vectorized ``sqrtf( :samp:`{x}` )``
-already with :option:`-ffast-math` (or the above option combination), and
-doesn't need :option:`-mrecip`.
+  Also note that GCC emits the above sequence with additional Newton-Raphson step
+  for vectorized single-float division and vectorized ``sqrtf( :samp:`{x}` )``
+  already with :option:`-ffast-math` (or the above option combination), and
+  doesn't need :option:`-mrecip`.
 
 .. option:: -mrecip=opt
 
@@ -12049,29 +12049,29 @@ doesn't need :option:`-mrecip`.
   may be used.  :samp:`{opt}` is a comma-separated list of options, which may
   be preceded by a :samp:`!` to invert the option:
 
-:samp:`all`
-  Enable all estimate instructions.
+  :samp:`all`
+    Enable all estimate instructions.
 
-:samp:`default`
-  Enable the default instructions, equivalent to :option:`-mrecip`.
+  :samp:`default`
+    Enable the default instructions, equivalent to :option:`-mrecip`.
 
-:samp:`none`
-  Disable all estimate instructions, equivalent to :option:`-mno-recip`.
+  :samp:`none`
+    Disable all estimate instructions, equivalent to :option:`-mno-recip`.
 
-:samp:`div`
-  Enable the approximation for scalar division.
+  :samp:`div`
+    Enable the approximation for scalar division.
 
-:samp:`vec-div`
-  Enable the approximation for vectorized division.
+  :samp:`vec-div`
+    Enable the approximation for vectorized division.
 
-:samp:`sqrt`
-  Enable the approximation for scalar square root.
+  :samp:`sqrt`
+    Enable the approximation for scalar square root.
 
-:samp:`vec-sqrt`
-  Enable the approximation for vectorized square root.
+  :samp:`vec-sqrt`
+    Enable the approximation for vectorized square root.
 
-  So, for example, :option:`-mrecip=all,!sqrt` enables
-all of the reciprocal approximations, except for square root.
+    So, for example, :option:`-mrecip=all,!sqrt` enables
+  all of the reciprocal approximations, except for square root.
 
 .. option:: -mveclibabi=type
 
@@ -12083,22 +12083,22 @@ all of the reciprocal approximations, except for square root.
   :option:`-funsafe-math-optimizations` have to be enabled, and an SVML or ACML 
   ABI-compatible library must be specified at link time.
 
-GCC currently emits calls to ``vmldExp2``,
-``vmldLn2``, ``vmldLog102``, ``vmldPow2``,
-``vmldTanh2``, ``vmldTan2``, ``vmldAtan2``, ``vmldAtanh2``,
-``vmldCbrt2``, ``vmldSinh2``, ``vmldSin2``, ``vmldAsinh2``,
-``vmldAsin2``, ``vmldCosh2``, ``vmldCos2``, ``vmldAcosh2``,
-``vmldAcos2``, ``vmlsExp4``, ``vmlsLn4``,
-``vmlsLog104``, ``vmlsPow4``, ``vmlsTanh4``, ``vmlsTan4``,
-``vmlsAtan4``, ``vmlsAtanh4``, ``vmlsCbrt4``, ``vmlsSinh4``,
-``vmlsSin4``, ``vmlsAsinh4``, ``vmlsAsin4``, ``vmlsCosh4``,
-``vmlsCos4``, ``vmlsAcosh4`` and ``vmlsAcos4`` for corresponding
-function type when :option:`-mveclibabi=svml` is used, and ``__vrd2_sin``,
-``__vrd2_cos``, ``__vrd2_exp``, ``__vrd2_log``, ``__vrd2_log2``,
-``__vrd2_log10``, ``__vrs4_sinf``, ``__vrs4_cosf``,
-``__vrs4_expf``, ``__vrs4_logf``, ``__vrs4_log2f``,
-``__vrs4_log10f`` and ``__vrs4_powf`` for the corresponding function type
-when :option:`-mveclibabi=acml` is used.  
+  GCC currently emits calls to ``vmldExp2``,
+  ``vmldLn2``, ``vmldLog102``, ``vmldPow2``,
+  ``vmldTanh2``, ``vmldTan2``, ``vmldAtan2``, ``vmldAtanh2``,
+  ``vmldCbrt2``, ``vmldSinh2``, ``vmldSin2``, ``vmldAsinh2``,
+  ``vmldAsin2``, ``vmldCosh2``, ``vmldCos2``, ``vmldAcosh2``,
+  ``vmldAcos2``, ``vmlsExp4``, ``vmlsLn4``,
+  ``vmlsLog104``, ``vmlsPow4``, ``vmlsTanh4``, ``vmlsTan4``,
+  ``vmlsAtan4``, ``vmlsAtanh4``, ``vmlsCbrt4``, ``vmlsSinh4``,
+  ``vmlsSin4``, ``vmlsAsinh4``, ``vmlsAsin4``, ``vmlsCosh4``,
+  ``vmlsCos4``, ``vmlsAcosh4`` and ``vmlsAcos4`` for corresponding
+  function type when :option:`-mveclibabi=svml` is used, and ``__vrd2_sin``,
+  ``__vrd2_cos``, ``__vrd2_exp``, ``__vrd2_log``, ``__vrd2_log2``,
+  ``__vrd2_log10``, ``__vrs4_sinf``, ``__vrs4_cosf``,
+  ``__vrs4_expf``, ``__vrs4_logf``, ``__vrs4_log2f``,
+  ``__vrs4_log10f`` and ``__vrs4_powf`` for the corresponding function type
+  when :option:`-mveclibabi=acml` is used.  
 
 .. option:: -mabi=name
 
@@ -12168,122 +12168,122 @@ when :option:`-mveclibabi=acml` is used.
   Enable/disable bit-field layout compatible with the native Microsoft
   Windows compiler.
 
-If ``packed`` is used on a structure, or if bit-fields are used,
-it may be that the Microsoft ABI lays out the structure differently
-than the way GCC normally does.  Particularly when moving packed
-data between functions compiled with GCC and the native Microsoft compiler
-(either via function call or as data in a file), it may be necessary to access
-either format.
+  If ``packed`` is used on a structure, or if bit-fields are used,
+  it may be that the Microsoft ABI lays out the structure differently
+  than the way GCC normally does.  Particularly when moving packed
+  data between functions compiled with GCC and the native Microsoft compiler
+  (either via function call or as data in a file), it may be necessary to access
+  either format.
 
-This option is enabled by default for Microsoft Windows
-targets.  This behavior can also be controlled locally by use of variable
-or type attributes.  For more information, see x86 Variable Attributes
-and x86 Type Attributes.
+  This option is enabled by default for Microsoft Windows
+  targets.  This behavior can also be controlled locally by use of variable
+  or type attributes.  For more information, see x86 Variable Attributes
+  and x86 Type Attributes.
 
-The Microsoft structure layout algorithm is fairly simple with the exception
-of the bit-field packing.  
-The padding and alignment of members of structures and whether a bit-field 
-can straddle a storage-unit boundary are determine by these rules:
+  The Microsoft structure layout algorithm is fairly simple with the exception
+  of the bit-field packing.  
+  The padding and alignment of members of structures and whether a bit-field 
+  can straddle a storage-unit boundary are determine by these rules:
 
-* Structure members are stored sequentially in the order in which they are
-  declared: the first member has the lowest memory address and the last member
-  the highest.
+  * Structure members are stored sequentially in the order in which they are
+    declared: the first member has the lowest memory address and the last member
+    the highest.
 
-* Every data object has an alignment requirement.  The alignment requirement
-  for all data except structures, unions, and arrays is either the size of the
-  object or the current packing size (specified with either the
-  ``aligned`` attribute or the ``pack`` pragma),
-  whichever is less.  For structures, unions, and arrays,
-  the alignment requirement is the largest alignment requirement of its members.
-  Every object is allocated an offset so that:
+  * Every data object has an alignment requirement.  The alignment requirement
+    for all data except structures, unions, and arrays is either the size of the
+    object or the current packing size (specified with either the
+    ``aligned`` attribute or the ``pack`` pragma),
+    whichever is less.  For structures, unions, and arrays,
+    the alignment requirement is the largest alignment requirement of its members.
+    Every object is allocated an offset so that:
 
-  .. code-block:: c++
+    .. code-block:: c++
 
-    offset % alignment_requirement == 0
+      offset % alignment_requirement == 0
 
-* Adjacent bit-fields are packed into the same 1-, 2-, or 4-byte allocation
-  unit if the integral types are the same size and if the next bit-field fits
-  into the current allocation unit without crossing the boundary imposed by the
-  common alignment requirements of the bit-fields.
+  * Adjacent bit-fields are packed into the same 1-, 2-, or 4-byte allocation
+    unit if the integral types are the same size and if the next bit-field fits
+    into the current allocation unit without crossing the boundary imposed by the
+    common alignment requirements of the bit-fields.
 
-MSVC interprets zero-length bit-fields in the following ways:
+  MSVC interprets zero-length bit-fields in the following ways:
 
-* If a zero-length bit-field is inserted between two bit-fields that
-  are normally coalesced, the bit-fields are not coalesced.
+  * If a zero-length bit-field is inserted between two bit-fields that
+    are normally coalesced, the bit-fields are not coalesced.
 
-  For example:
-
-  .. code-block:: c++
-
-    struct
-     {
-       unsigned long bf_1 : 12;
-       unsigned long : 0;
-       unsigned long bf_2 : 12;
-     } t1;
-
-  The size of ``t1`` is 8 bytes with the zero-length bit-field.  If the
-  zero-length bit-field were removed, ``t1``'s size would be 4 bytes.
-
-* If a zero-length bit-field is inserted after a bit-field, ``foo``, and the
-  alignment of the zero-length bit-field is greater than the member that follows it,
-  ``bar``, ``bar`` is aligned as the type of the zero-length bit-field.
-
-  For example:
-
-  .. code-block:: c++
-
-    struct
-     {
-       char foo : 4;
-       short : 0;
-       char bar;
-     } t2;
-
-    struct
-     {
-       char foo : 4;
-       short : 0;
-       double bar;
-     } t3;
-
-  For ``t2``, ``bar`` is placed at offset 2, rather than offset 1.
-  Accordingly, the size of ``t2`` is 4.  For ``t3``, the zero-length
-  bit-field does not affect the alignment of ``bar`` or, as a result, the size
-  of the structure.
-
-  Taking this into account, it is important to note the following:
-
-  * If a zero-length bit-field follows a normal bit-field, the type of the
-    zero-length bit-field may affect the alignment of the structure as whole. For
-    example, ``t2`` has a size of 4 bytes, since the zero-length bit-field follows a
-    normal bit-field, and is of type short.
-
-  * Even if a zero-length bit-field is not followed by a normal bit-field, it may
-    still affect the alignment of the structure:
+    For example:
 
     .. code-block:: c++
 
       struct
        {
-         char foo : 6;
+         unsigned long bf_1 : 12;
+         unsigned long : 0;
+         unsigned long bf_2 : 12;
+       } t1;
+
+    The size of ``t1`` is 8 bytes with the zero-length bit-field.  If the
+    zero-length bit-field were removed, ``t1``'s size would be 4 bytes.
+
+  * If a zero-length bit-field is inserted after a bit-field, ``foo``, and the
+    alignment of the zero-length bit-field is greater than the member that follows it,
+    ``bar``, ``bar`` is aligned as the type of the zero-length bit-field.
+
+    For example:
+
+    .. code-block:: c++
+
+      struct
+       {
+         char foo : 4;
+         short : 0;
+         char bar;
+       } t2;
+
+      struct
+       {
+         char foo : 4;
+         short : 0;
+         double bar;
+       } t3;
+
+    For ``t2``, ``bar`` is placed at offset 2, rather than offset 1.
+    Accordingly, the size of ``t2`` is 4.  For ``t3``, the zero-length
+    bit-field does not affect the alignment of ``bar`` or, as a result, the size
+    of the structure.
+
+    Taking this into account, it is important to note the following:
+
+    * If a zero-length bit-field follows a normal bit-field, the type of the
+      zero-length bit-field may affect the alignment of the structure as whole. For
+      example, ``t2`` has a size of 4 bytes, since the zero-length bit-field follows a
+      normal bit-field, and is of type short.
+
+    * Even if a zero-length bit-field is not followed by a normal bit-field, it may
+      still affect the alignment of the structure:
+
+      .. code-block:: c++
+
+        struct
+         {
+           char foo : 6;
+           long : 0;
+         } t4;
+
+      Here, ``t4`` takes up 4 bytes.
+
+  * Zero-length bit-fields following non-bit-field members are ignored:
+
+    .. code-block:: c++
+
+      struct
+       {
+         char foo;
          long : 0;
-       } t4;
+         char bar;
+       } t5;
 
-    Here, ``t4`` takes up 4 bytes.
-
-* Zero-length bit-fields following non-bit-field members are ignored:
-
-  .. code-block:: c++
-
-    struct
-     {
-       char foo;
-       long : 0;
-       char bar;
-     } t5;
-
-  Here, ``t5`` takes up 2 bytes.
+    Here, ``t5`` takes up 2 bytes.
 
 .. option:: -mno-align-stringops, -malign-stringops
 
@@ -12310,39 +12310,39 @@ MSVC interprets zero-length bit-fields in the following ways:
 
   .. index:: mstringop-strategy=alg
 
-Override the internal decision heuristic for the particular algorithm to use
-for inlining string operations.  The allowed values for :samp:`{alg}` are:
+  Override the internal decision heuristic for the particular algorithm to use
+  for inlining string operations.  The allowed values for :samp:`{alg}` are:
 
-:samp:`rep_byte` :samp:`rep_4byte` :samp:`rep_8byte`
-  Expand using i386 ``rep`` prefix of the specified size.
+  :samp:`rep_byte` :samp:`rep_4byte` :samp:`rep_8byte`
+    Expand using i386 ``rep`` prefix of the specified size.
 
-:samp:`byte_loop` :samp:`loop` :samp:`unrolled_loop`
-  Expand into an inline loop.
+  :samp:`byte_loop` :samp:`loop` :samp:`unrolled_loop`
+    Expand into an inline loop.
 
-:samp:`libcall`
-  Always use a library call.
+  :samp:`libcall`
+    Always use a library call.
 
 .. option:: -mmemcpy-strategy=strategy
 
   .. index:: mmemcpy-strategy=strategy
 
-Override the internal decision heuristic to decide if ``__builtin_memcpy``
-should be inlined and what inline algorithm to use when the expected size
-of the copy operation is known. :samp:`{strategy}` 
-is a comma-separated list of :samp:`{alg}` : :samp:`{max_size}` : :samp:`{dest_align}` triplets. 
-:samp:`{alg}` is specified in :option:`-mstringop-strategy` , :samp:`{max_size}` specifies
-the max byte size with which inline algorithm :samp:`{alg}` is allowed.  For the last
-triplet, the :samp:`{max_size}` must be ``-1``. The :samp:`{max_size}` of the triplets
-in the list must be specified in increasing order.  The minimal byte size for 
-:samp:`{alg}` is ``0`` for the first triplet and ``:samp:`{max_size}` + 1`` of the 
-preceding range.
+  Override the internal decision heuristic to decide if ``__builtin_memcpy``
+  should be inlined and what inline algorithm to use when the expected size
+  of the copy operation is known. :samp:`{strategy}` 
+  is a comma-separated list of :samp:`{alg}` : :samp:`{max_size}` : :samp:`{dest_align}` triplets. 
+  :samp:`{alg}` is specified in :option:`-mstringop-strategy` , :samp:`{max_size}` specifies
+  the max byte size with which inline algorithm :samp:`{alg}` is allowed.  For the last
+  triplet, the :samp:`{max_size}` must be ``-1``. The :samp:`{max_size}` of the triplets
+  in the list must be specified in increasing order.  The minimal byte size for 
+  :samp:`{alg}` is ``0`` for the first triplet and ``:samp:`{max_size}` + 1`` of the 
+  preceding range.
 
 .. option:: -mmemset-strategy=strategy
 
   .. index:: mmemset-strategy=strategy
 
-The option is similar to :option:`-mmemcpy-strategy` = except that it is to control
-``__builtin_memset`` expansion.
+  The option is similar to :option:`-mmemcpy-strategy` = except that it is to control
+  ``__builtin_memset`` expansion.
 
 .. option:: -momit-leaf-frame-pointer
 
@@ -12360,7 +12360,7 @@ The option is similar to :option:`-mmemcpy-strategy` = except that it is to cont
   is valid depends on the operating system, and whether it maps the
   segment to cover the entire TLS area.
 
-For systems that use the GNU C Library, the default is on.
+  For systems that use the GNU C Library, the default is on.
 
 .. option:: -msse2avx
 
@@ -12413,11 +12413,11 @@ For systems that use the GNU C Library, the default is on.
   disabled, :option:`-mskip-rax-setup` can be used to skip setting up RAX
   register when there are no variable arguments passed in vector registers.
 
-Warning: Since RAX register is used to avoid unnecessarily
-saving vector registers on stack when passing variable arguments, the
-impacts of this option are callees may waste some stack space,
-misbehave or jump to a random location.  GCC 4.4 or newer don't have
-those issues, regardless the RAX register value.
+  Warning: Since RAX register is used to avoid unnecessarily
+  saving vector registers on stack when passing variable arguments, the
+  impacts of this option are callees may waste some stack space,
+  misbehave or jump to a random location.  GCC 4.4 or newer don't have
+  those issues, regardless the RAX register value.
 
 .. option:: -m8bit-idiv
 
@@ -12438,12 +12438,12 @@ those issues, regardless the RAX register value.
   canary in the TLS block (the default).  This option has effect only when
   :option:`-fstack-protector` or :option:`-fstack-protector-all` is specified.
 
-With the latter choice the options
-:option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-:option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-which segment register (``%fs`` or ``%gs``) to use as base register
-for reading the canary, and from what offset from that base register.
-The default for those is as specified in the relevant ABI.
+  With the latter choice the options
+  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  which segment register (``%fs`` or ``%gs``) to use as base register
+  for reading the canary, and from what offset from that base register.
+  The default for those is as specified in the relevant ABI.
 
 .. option:: -mgeneral-regs-only
 
@@ -12462,14 +12462,14 @@ The default for those is as specified in the relevant ABI.
   You can control this behavior for a specific function by using the
   function attribute ``indirect_branch``.  See :ref:`function-attributes`.
 
-Note that :option:`-mcmodel=large` is incompatible with
-:option:`-mindirect-branch=thunk` and
-:option:`-mindirect-branch=thunk-extern` since the thunk function may
-not be reachable in the large code model.
+  Note that :option:`-mcmodel=large` is incompatible with
+  :option:`-mindirect-branch=thunk` and
+  :option:`-mindirect-branch=thunk-extern` since the thunk function may
+  not be reachable in the large code model.
 
-Note that :option:`-mindirect-branch=thunk-extern` is compatible with
-:option:`-fcf-protection=branch` since the external thunk can be made
-to enable control-flow check.
+  Note that :option:`-mindirect-branch=thunk-extern` is compatible with
+  :option:`-fcf-protection=branch` since the external thunk can be made
+  to enable control-flow check.
 
 .. option:: -mfunction-return=choice
 
@@ -12482,14 +12482,14 @@ to enable control-flow check.
   using the function attribute ``function_return``.
   See :ref:`function-attributes`.
 
-Note that :option:`-mindirect-return=thunk-extern` is compatible with
-:option:`-fcf-protection=branch` since the external thunk can be made
-to enable control-flow check.
+  Note that :option:`-mindirect-return=thunk-extern` is compatible with
+  :option:`-fcf-protection=branch` since the external thunk can be made
+  to enable control-flow check.
 
-Note that :option:`-mcmodel=large` is incompatible with
-:option:`-mfunction-return=thunk` and
-:option:`-mfunction-return=thunk-extern` since the thunk function may
-not be reachable in the large code model.
+  Note that :option:`-mcmodel=large` is incompatible with
+  :option:`-mfunction-return=thunk` and
+  :option:`-mfunction-return=thunk-extern` since the thunk function may
+  not be reachable in the large code model.
 
 .. option:: -mindirect-branch-register
 
@@ -12505,21 +12505,21 @@ on x86-64 processors in 64-bit environments.
   to 32 bits, and
   generates code that runs on any i386 system.
 
-The :option:`-m64` option sets ``int`` to 32 bits and ``long`` and pointer
-types to 64 bits, and generates code for the x86-64 architecture.
-For Darwin only the :option:`-m64` option also turns off the :option:`-fno-pic`
-and :option:`-mdynamic-no-pic` options.
+  The :option:`-m64` option sets ``int`` to 32 bits and ``long`` and pointer
+  types to 64 bits, and generates code for the x86-64 architecture.
+  For Darwin only the :option:`-m64` option also turns off the :option:`-fno-pic`
+  and :option:`-mdynamic-no-pic` options.
 
-The :option:`-mx32` option sets ``int``, ``long``, and pointer types
-to 32 bits, and
-generates code for the x86-64 architecture.
+  The :option:`-mx32` option sets ``int``, ``long``, and pointer types
+  to 32 bits, and
+  generates code for the x86-64 architecture.
 
-The :option:`-m16` option is the same as :option:`-m32` , except for that
-it outputs the ``.code16gcc`` assembly directive at the beginning of
-the assembly output so that the binary can run in 16-bit mode.
+  The :option:`-m16` option is the same as :option:`-m32` , except for that
+  it outputs the ``.code16gcc`` assembly directive at the beginning of
+  the assembly output so that the binary can run in 16-bit mode.
 
-The :option:`-miamcu` option generates code which conforms to Intel MCU
-psABI.  It requires the :option:`-m32` option to be turned on.
+  The :option:`-miamcu` option generates code which conforms to Intel MCU
+  psABI.  It requires the :option:`-m32` option to be turned on.
 
 .. option:: -mno-red-zone, -mred-zone
 

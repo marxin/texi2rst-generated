@@ -558,138 +558,138 @@ The following attributes are supported on most targets.
 
   .. index:: format function attribute
 
-.. index:: functions with printf, scanf, strftime or strfmon style arguments
+  .. index:: functions with printf, scanf, strftime or strfmon style arguments
 
-The ``format`` attribute specifies that a function takes ``printf``,
-``scanf``, ``strftime`` or ``strfmon`` style arguments that
-should be type-checked against a format string.  For example, the
-declaration:
+  The ``format`` attribute specifies that a function takes ``printf``,
+  ``scanf``, ``strftime`` or ``strfmon`` style arguments that
+  should be type-checked against a format string.  For example, the
+  declaration:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  extern int
-  my_printf (void *my_object, const char *my_format, ...)
-        __attribute__ ((format (printf, 2, 3)));
+    extern int
+    my_printf (void *my_object, const char *my_format, ...)
+          __attribute__ ((format (printf, 2, 3)));
 
-causes the compiler to check the arguments in calls to ``my_printf``
-for consistency with the ``printf`` style format string argument
-``my_format``.
+  causes the compiler to check the arguments in calls to ``my_printf``
+  for consistency with the ``printf`` style format string argument
+  ``my_format``.
 
-The parameter :samp:`{archetype}` determines how the format string is
-interpreted, and should be ``printf``, ``scanf``, ``strftime``,
-``gnu_printf``, ``gnu_scanf``, ``gnu_strftime`` or
-``strfmon``.  (You can also use ``__printf__``,
-``__scanf__``, ``__strftime__`` or ``__strfmon__``.)  On
-MinGW targets, ``ms_printf``, ``ms_scanf``, and
-``ms_strftime`` are also present.
-:samp:`{archetype}` values such as ``printf`` refer to the formats accepted
-by the system's C runtime library,
-while values prefixed with :samp:`gnu_` always refer
-to the formats accepted by the GNU C Library.  On Microsoft Windows
-targets, values prefixed with :samp:`ms_` refer to the formats accepted by the
-msvcrt.dll library.
-The parameter :samp:`{string-index}`
-specifies which argument is the format string argument (starting
-from 1), while :samp:`{first-to-check}` is the number of the first
-argument to check against the format string.  For functions
-where the arguments are not available to be checked (such as
-``vprintf``), specify the third parameter as zero.  In this case the
-compiler only checks the format string for consistency.  For
-``strftime`` formats, the third parameter is required to be zero.
-Since non-static C++ methods have an implicit ``this`` argument, the
-arguments of such methods should be counted from two, not one, when
-giving values for :samp:`{string-index}` and :samp:`{first-to-check}`.
+  The parameter :samp:`{archetype}` determines how the format string is
+  interpreted, and should be ``printf``, ``scanf``, ``strftime``,
+  ``gnu_printf``, ``gnu_scanf``, ``gnu_strftime`` or
+  ``strfmon``.  (You can also use ``__printf__``,
+  ``__scanf__``, ``__strftime__`` or ``__strfmon__``.)  On
+  MinGW targets, ``ms_printf``, ``ms_scanf``, and
+  ``ms_strftime`` are also present.
+  :samp:`{archetype}` values such as ``printf`` refer to the formats accepted
+  by the system's C runtime library,
+  while values prefixed with :samp:`gnu_` always refer
+  to the formats accepted by the GNU C Library.  On Microsoft Windows
+  targets, values prefixed with :samp:`ms_` refer to the formats accepted by the
+  msvcrt.dll library.
+  The parameter :samp:`{string-index}`
+  specifies which argument is the format string argument (starting
+  from 1), while :samp:`{first-to-check}` is the number of the first
+  argument to check against the format string.  For functions
+  where the arguments are not available to be checked (such as
+  ``vprintf``), specify the third parameter as zero.  In this case the
+  compiler only checks the format string for consistency.  For
+  ``strftime`` formats, the third parameter is required to be zero.
+  Since non-static C++ methods have an implicit ``this`` argument, the
+  arguments of such methods should be counted from two, not one, when
+  giving values for :samp:`{string-index}` and :samp:`{first-to-check}`.
 
-In the example above, the format string (``my_format``) is the second
-argument of the function ``my_print``, and the arguments to check
-start with the third argument, so the correct parameters for the format
-attribute are 2 and 3.
+  In the example above, the format string (``my_format``) is the second
+  argument of the function ``my_print``, and the arguments to check
+  start with the third argument, so the correct parameters for the format
+  attribute are 2 and 3.
 
-The ``format`` attribute allows you to identify your own functions
-that take format strings as arguments, so that GCC can check the
-calls to these functions for errors.  The compiler always (unless
-:option:`-ffreestanding` or :option:`-fno-builtin` is used) checks formats
-for the standard library functions ``printf``, ``fprintf``,
-``sprintf``, ``scanf``, ``fscanf``, ``sscanf``, ``strftime``,
-``vprintf``, ``vfprintf`` and ``vsprintf`` whenever such
-warnings are requested (using :option:`-Wformat` ), so there is no need to
-modify the header file stdio.h.  In C99 mode, the functions
-``snprintf``, ``vsnprintf``, ``vscanf``, ``vfscanf`` and
-``vsscanf`` are also checked.  Except in strictly conforming C
-standard modes, the X/Open function ``strfmon`` is also checked as
-are ``printf_unlocked`` and ``fprintf_unlocked``.
-See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+  The ``format`` attribute allows you to identify your own functions
+  that take format strings as arguments, so that GCC can check the
+  calls to these functions for errors.  The compiler always (unless
+  :option:`-ffreestanding` or :option:`-fno-builtin` is used) checks formats
+  for the standard library functions ``printf``, ``fprintf``,
+  ``sprintf``, ``scanf``, ``fscanf``, ``sscanf``, ``strftime``,
+  ``vprintf``, ``vfprintf`` and ``vsprintf`` whenever such
+  warnings are requested (using :option:`-Wformat` ), so there is no need to
+  modify the header file stdio.h.  In C99 mode, the functions
+  ``snprintf``, ``vsnprintf``, ``vscanf``, ``vfscanf`` and
+  ``vsscanf`` are also checked.  Except in strictly conforming C
+  standard modes, the X/Open function ``strfmon`` is also checked as
+  are ``printf_unlocked`` and ``fprintf_unlocked``.
+  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
-For Objective-C dialects, ``NSString`` (or ``__NSString__``) is
-recognized in the same context.  Declarations including these format attributes
-are parsed for correct syntax, however the result of checking of such format
-strings is not yet defined, and is not carried out by this version of the
-compiler.
+  For Objective-C dialects, ``NSString`` (or ``__NSString__``) is
+  recognized in the same context.  Declarations including these format attributes
+  are parsed for correct syntax, however the result of checking of such format
+  strings is not yet defined, and is not carried out by this version of the
+  compiler.
 
-The target may also provide additional types of format checks.
-See :ref:`Format Checks Specific to Particular
-Target Machines <target-format-checks>`.
+  The target may also provide additional types of format checks.
+  See :ref:`Format Checks Specific to Particular
+  Target Machines <target-format-checks>`.
 
 .. option:: format_arg (string-index), -Wformat-nonliteral
 
   .. index:: format_arg function attribute
 
-The ``format_arg`` attribute specifies that a function takes one or
-more format strings for a ``printf``, ``scanf``, ``strftime`` or
-``strfmon`` style function and modifies it (for example, to translate
-it into another language), so the result can be passed to a
-``printf``, ``scanf``, ``strftime`` or ``strfmon`` style
-function (with the remaining arguments to the format function the same
-as they would have been for the unmodified string).  Multiple
-``format_arg`` attributes may be applied to the same function, each
-designating a distinct parameter as a format string.  For example, the
-declaration:
+  The ``format_arg`` attribute specifies that a function takes one or
+  more format strings for a ``printf``, ``scanf``, ``strftime`` or
+  ``strfmon`` style function and modifies it (for example, to translate
+  it into another language), so the result can be passed to a
+  ``printf``, ``scanf``, ``strftime`` or ``strfmon`` style
+  function (with the remaining arguments to the format function the same
+  as they would have been for the unmodified string).  Multiple
+  ``format_arg`` attributes may be applied to the same function, each
+  designating a distinct parameter as a format string.  For example, the
+  declaration:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  extern char *
-  my_dgettext (char *my_domain, const char *my_format)
-        __attribute__ ((format_arg (2)));
+    extern char *
+    my_dgettext (char *my_domain, const char *my_format)
+          __attribute__ ((format_arg (2)));
 
-causes the compiler to check the arguments in calls to a ``printf``,
-``scanf``, ``strftime`` or ``strfmon`` type function, whose
-format string argument is a call to the ``my_dgettext`` function, for
-consistency with the format string argument ``my_format``.  If the
-``format_arg`` attribute had not been specified, all the compiler
-could tell in such calls to format functions would be that the format
-string argument is not constant; this would generate a warning when
-:option:`-Wformat-nonliteral` is used, but the calls could not be checked
-without the attribute.
+  causes the compiler to check the arguments in calls to a ``printf``,
+  ``scanf``, ``strftime`` or ``strfmon`` type function, whose
+  format string argument is a call to the ``my_dgettext`` function, for
+  consistency with the format string argument ``my_format``.  If the
+  ``format_arg`` attribute had not been specified, all the compiler
+  could tell in such calls to format functions would be that the format
+  string argument is not constant; this would generate a warning when
+  :option:`-Wformat-nonliteral` is used, but the calls could not be checked
+  without the attribute.
 
-In calls to a function declared with more than one ``format_arg``
-attribute, each with a distinct argument value, the corresponding
-actual function arguments are checked against all format strings
-designated by the attributes.  This capability is designed to support
-the GNU ``ngettext`` family of functions.
+  In calls to a function declared with more than one ``format_arg``
+  attribute, each with a distinct argument value, the corresponding
+  actual function arguments are checked against all format strings
+  designated by the attributes.  This capability is designed to support
+  the GNU ``ngettext`` family of functions.
 
-The parameter :samp:`{string-index}` specifies which argument is the format
-string argument (starting from one).  Since non-static C++ methods have
-an implicit ``this`` argument, the arguments of such methods should
-be counted from two.
+  The parameter :samp:`{string-index}` specifies which argument is the format
+  string argument (starting from one).  Since non-static C++ methods have
+  an implicit ``this`` argument, the arguments of such methods should
+  be counted from two.
 
-The ``format_arg`` attribute allows you to identify your own
-functions that modify format strings, so that GCC can check the
-calls to ``printf``, ``scanf``, ``strftime`` or ``strfmon``
-type function whose operands are a call to one of your own function.
-The compiler always treats ``gettext``, ``dgettext``, and
-``dcgettext`` in this manner except when strict ISO C support is
-requested by :option:`-ansi` or an appropriate :option:`-std` option, or
-:option:`-ffreestanding` or :option:`-fno-builtin`
-is used.  See :ref:`Options
-Controlling C Dialect <c-dialect-options>`.
+  The ``format_arg`` attribute allows you to identify your own
+  functions that modify format strings, so that GCC can check the
+  calls to ``printf``, ``scanf``, ``strftime`` or ``strfmon``
+  type function whose operands are a call to one of your own function.
+  The compiler always treats ``gettext``, ``dgettext``, and
+  ``dcgettext`` in this manner except when strict ISO C support is
+  requested by :option:`-ansi` or an appropriate :option:`-std` option, or
+  :option:`-ffreestanding` or :option:`-fno-builtin`
+  is used.  See :ref:`Options
+  Controlling C Dialect <c-dialect-options>`.
 
-For Objective-C dialects, the ``format-arg`` attribute may refer to an
-``NSString`` reference for compatibility with the ``format`` attribute
-above.
+  For Objective-C dialects, the ``format-arg`` attribute may refer to an
+  ``NSString`` reference for compatibility with the ``format`` attribute
+  above.
 
-The target may also allow additional types in ``format-arg`` attributes.
-See :ref:`Format Checks Specific to Particular
-Target Machines <target-format-checks>`.
+  The target may also allow additional types in ``format-arg`` attributes.
+  See :ref:`Format Checks Specific to Particular
+  Target Machines <target-format-checks>`.
 
 ``gnu_inline``
 
@@ -1004,10 +1004,10 @@ Target Machines <target-format-checks>`.
 
   .. index:: no_instrument_function function attribute
 
-If any of :option:`-finstrument-functions` , :option:`-p` , or :option:`-pg` are 
-given, profiling function calls are
-generated at entry and exit of most user-compiled functions.
-Functions with this attribute are not so instrumented.
+  If any of :option:`-finstrument-functions` , :option:`-p` , or :option:`-pg` are 
+  given, profiling function calls are
+  generated at entry and exit of most user-compiled functions.
+  Functions with this attribute are not so instrumented.
 
 ``no_profile_instrument_function``
 
@@ -1076,10 +1076,10 @@ Functions with this attribute are not so instrumented.
 
   .. index:: no_split_stack function attribute
 
-If :option:`-fsplit-stack` is given, functions have a small
-prologue which decides whether to split the stack.  Functions with the
-``no_split_stack`` attribute do not have that prologue, and thus
-may run with only a small amount of stack space available.
+  If :option:`-fsplit-stack` is given, functions have a small
+  prologue which decides whether to split the stack.  Functions with the
+  ``no_split_stack`` attribute do not have that prologue, and thus
+  may run with only a small amount of stack space available.
 
 ``no_stack_limit``
 
@@ -4201,12 +4201,12 @@ These function attributes are supported by the x86 back end:
 
   .. index:: cdecl function attribute, x86-32
 
-.. index:: functions that pop the argument stack on x86-32
+  .. index:: functions that pop the argument stack on x86-32
 
-On the x86-32 targets, the ``cdecl`` attribute causes the compiler to
-assume that the calling function pops off the stack space used to
-pass arguments.  This is
-useful to override the effects of the :option:`-mrtd` switch.
+  On the x86-32 targets, the ``cdecl`` attribute causes the compiler to
+  assume that the calling function pops off the stack space used to
+  pass arguments.  This is
+  useful to override the effects of the :option:`-mrtd` switch.
 
 ``fastcall``
 

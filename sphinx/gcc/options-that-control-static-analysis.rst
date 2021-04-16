@@ -9,33 +9,33 @@ Options That Control Static Analysis
   for 'interesting' interprocedural paths through the
   code, and issues warnings for problems found on them.
 
-This analysis is much more expensive than other GCC warnings.
+  This analysis is much more expensive than other GCC warnings.
 
-Enabling this option effectively enables the following warnings:
+  Enabling this option effectively enables the following warnings:
 
-:option:`-Wanalyzer-double-fclose` 
-:option:`-Wanalyzer-double-free` 
-:option:`-Wanalyzer-exposure-through-output-file` 
-:option:`-Wanalyzer-file-leak` 
-:option:`-Wanalyzer-free-of-non-heap` 
-:option:`-Wanalyzer-malloc-leak` 
-:option:`-Wanalyzer-mismatching-deallocation` 
-:option:`-Wanalyzer-possible-null-argument` 
-:option:`-Wanalyzer-possible-null-dereference` 
-:option:`-Wanalyzer-null-argument` 
-:option:`-Wanalyzer-null-dereference` 
-:option:`-Wanalyzer-shift-count-negative` 
-:option:`-Wanalyzer-shift-count-overflow` 
-:option:`-Wanalyzer-stale-setjmp-buffer` 
-:option:`-Wanalyzer-tainted-array-index` 
-:option:`-Wanalyzer-unsafe-call-within-signal-handler` 
-:option:`-Wanalyzer-use-after-free` 
-:option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
-:option:`-Wanalyzer-write-to-const` 
-:option:`-Wanalyzer-write-to-string-literal` 
+  :option:`-Wanalyzer-double-fclose` 
+  :option:`-Wanalyzer-double-free` 
+  :option:`-Wanalyzer-exposure-through-output-file` 
+  :option:`-Wanalyzer-file-leak` 
+  :option:`-Wanalyzer-free-of-non-heap` 
+  :option:`-Wanalyzer-malloc-leak` 
+  :option:`-Wanalyzer-mismatching-deallocation` 
+  :option:`-Wanalyzer-possible-null-argument` 
+  :option:`-Wanalyzer-possible-null-dereference` 
+  :option:`-Wanalyzer-null-argument` 
+  :option:`-Wanalyzer-null-dereference` 
+  :option:`-Wanalyzer-shift-count-negative` 
+  :option:`-Wanalyzer-shift-count-overflow` 
+  :option:`-Wanalyzer-stale-setjmp-buffer` 
+  :option:`-Wanalyzer-tainted-array-index` 
+  :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
+  :option:`-Wanalyzer-use-after-free` 
+  :option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
+  :option:`-Wanalyzer-write-to-const` 
+  :option:`-Wanalyzer-write-to-string-literal` 
 
-This option is only available if GCC was configured with analyzer
-support enabled.
+  This option is only available if GCC was configured with analyzer
+  support enabled.
 
 .. option:: -Wanalyzer-too-complex, -Wno-analyzer-too-complex
 
@@ -43,26 +43,26 @@ support enabled.
   to attempt to explore the control flow and data flow in the program,
   but these can be defeated by sufficiently complicated code.
 
-By default, the analysis silently stops if the code is too
-complicated for the analyzer to fully explore and it reaches an internal
-limit.  The :option:`-Wanalyzer-too-complex` option warns if this occurs.
+  By default, the analysis silently stops if the code is too
+  complicated for the analyzer to fully explore and it reaches an internal
+  limit.  The :option:`-Wanalyzer-too-complex` option warns if this occurs.
 
 .. option:: -Wno-analyzer-double-fclose, -Wanalyzer-double-fclose
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-double-fclose` to disable it.
 
-This diagnostic warns for paths through the code in which a ``FILE *``
-can have ``fclose`` called on it more than once.
+  This diagnostic warns for paths through the code in which a ``FILE *``
+  can have ``fclose`` called on it more than once.
 
 .. option:: -Wno-analyzer-double-free, -Wanalyzer-double-free
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-double-free` to disable it.
 
-This diagnostic warns for paths through the code in which a pointer
-can have a deallocator called on it more than once, either ``free``,
-or a deallocator referenced by attribute ``malloc``.
+  This diagnostic warns for paths through the code in which a pointer
+  can have a deallocator called on it more than once, either ``free``,
+  or a deallocator referenced by attribute ``malloc``.
 
 .. option:: -Wno-analyzer-exposure-through-output-file, -Wanalyzer-exposure-through-output-file
 
@@ -70,9 +70,9 @@ or a deallocator referenced by attribute ``malloc``.
   :option:`-Wno-analyzer-exposure-through-output-file`
   to disable it.
 
-This diagnostic warns for paths through the code in which a
-security-sensitive value is written to an output file
-(such as writing a password to a log file).
+  This diagnostic warns for paths through the code in which a
+  security-sensitive value is written to an output file
+  (such as writing a password to a log file).
 
 .. option:: -Wno-analyzer-file-leak, -Wanalyzer-file-leak
 
@@ -80,8 +80,8 @@ security-sensitive value is written to an output file
   :option:`-Wno-analyzer-file-leak`
   to disable it.
 
-This diagnostic warns for paths through the code in which a
-``<stdio.h>`` ``FILE *`` stream object is leaked.
+  This diagnostic warns for paths through the code in which a
+  ``<stdio.h>`` ``FILE *`` stream object is leaked.
 
 .. option:: -Wno-analyzer-free-of-non-heap, -Wanalyzer-free-of-non-heap
 
@@ -89,8 +89,8 @@ This diagnostic warns for paths through the code in which a
   :option:`-Wno-analyzer-free-of-non-heap`
   to disable it.
 
-This diagnostic warns for paths through the code in which ``free``
-is called on a non-heap pointer (e.g. an on-stack buffer, or a global).
+  This diagnostic warns for paths through the code in which ``free``
+  is called on a non-heap pointer (e.g. an on-stack buffer, or a global).
 
 .. option:: -Wno-analyzer-malloc-leak, -Wanalyzer-malloc-leak
 
@@ -98,9 +98,9 @@ is called on a non-heap pointer (e.g. an on-stack buffer, or a global).
   :option:`-Wno-analyzer-malloc-leak`
   to disable it.
 
-This diagnostic warns for paths through the code in which a
-pointer allocated via an allocator is leaked: either ``malloc``,
-or a function marked with attribute ``malloc``.
+  This diagnostic warns for paths through the code in which a
+  pointer allocated via an allocator is leaked: either ``malloc``,
+  or a function marked with attribute ``malloc``.
 
 .. option:: -Wno-analyzer-mismatching-deallocation, -Wanalyzer-mismatching-deallocation
 
@@ -108,90 +108,90 @@ or a function marked with attribute ``malloc``.
   :option:`-Wno-analyzer-mismatching-deallocation`
   to disable it.
 
-This diagnostic warns for paths through the code in which the
-wrong deallocation function is called on a pointer value, based on
-which function was used to allocate the pointer value.  The diagnostic
-will warn about mismatches between ``free``, scalar ``delete``
-and vector ``delete[]``, and those marked as allocator/deallocator
-pairs using attribute ``malloc``.
+  This diagnostic warns for paths through the code in which the
+  wrong deallocation function is called on a pointer value, based on
+  which function was used to allocate the pointer value.  The diagnostic
+  will warn about mismatches between ``free``, scalar ``delete``
+  and vector ``delete[]``, and those marked as allocator/deallocator
+  pairs using attribute ``malloc``.
 
 .. option:: -Wno-analyzer-possible-null-argument, -Wanalyzer-possible-null-argument
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-possible-null-argument` to disable it.
 
-This diagnostic warns for paths through the code in which a
-possibly-NULL value is passed to a function argument marked
-with ``__attribute__((nonnull))`` as requiring a non-NULL
-value.
+  This diagnostic warns for paths through the code in which a
+  possibly-NULL value is passed to a function argument marked
+  with ``__attribute__((nonnull))`` as requiring a non-NULL
+  value.
 
 .. option:: -Wno-analyzer-possible-null-dereference, -Wanalyzer-possible-null-dereference
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-possible-null-dereference` to disable it.
 
-This diagnostic warns for paths through the code in which a
-possibly-NULL value is dereferenced.
+  This diagnostic warns for paths through the code in which a
+  possibly-NULL value is dereferenced.
 
 .. option:: -Wno-analyzer-null-argument, -Wanalyzer-null-argument
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-null-argument` to disable it.
 
-This diagnostic warns for paths through the code in which a
-value known to be NULL is passed to a function argument marked
-with ``__attribute__((nonnull))`` as requiring a non-NULL
-value.
+  This diagnostic warns for paths through the code in which a
+  value known to be NULL is passed to a function argument marked
+  with ``__attribute__((nonnull))`` as requiring a non-NULL
+  value.
 
 .. option:: -Wno-analyzer-null-dereference, -Wanalyzer-null-dereference
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-null-dereference` to disable it.
 
-This diagnostic warns for paths through the code in which a
-value known to be NULL is dereferenced.
+  This diagnostic warns for paths through the code in which a
+  value known to be NULL is dereferenced.
 
 .. option:: -Wno-analyzer-shift-count-negative, -Wanalyzer-shift-count-negative
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-shift-count-negative` to disable it.
 
-This diagnostic warns for paths through the code in which a
-shift is attempted with a negative count.  It is analogous to
-the :option:`-Wshift-count-negative` diagnostic implemented in
-the C/C++ front ends, but is implemented based on analyzing
-interprocedural paths, rather than merely parsing the syntax tree.
-However, the analyzer does not prioritize detection of such paths, so
-false negatives are more likely relative to other warnings.
+  This diagnostic warns for paths through the code in which a
+  shift is attempted with a negative count.  It is analogous to
+  the :option:`-Wshift-count-negative` diagnostic implemented in
+  the C/C++ front ends, but is implemented based on analyzing
+  interprocedural paths, rather than merely parsing the syntax tree.
+  However, the analyzer does not prioritize detection of such paths, so
+  false negatives are more likely relative to other warnings.
 
 .. option:: -Wno-analyzer-shift-count-overflow, -Wanalyzer-shift-count-overflow
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-shift-count-overflow` to disable it.
 
-This diagnostic warns for paths through the code in which a
-shift is attempted with a count greater than or equal to the
-precision of the operand's type.  It is analogous to
-the :option:`-Wshift-count-overflow` diagnostic implemented in
-the C/C++ front ends, but is implemented based on analyzing
-interprocedural paths, rather than merely parsing the syntax tree.
-However, the analyzer does not prioritize detection of such paths, so
-false negatives are more likely relative to other warnings.
+  This diagnostic warns for paths through the code in which a
+  shift is attempted with a count greater than or equal to the
+  precision of the operand's type.  It is analogous to
+  the :option:`-Wshift-count-overflow` diagnostic implemented in
+  the C/C++ front ends, but is implemented based on analyzing
+  interprocedural paths, rather than merely parsing the syntax tree.
+  However, the analyzer does not prioritize detection of such paths, so
+  false negatives are more likely relative to other warnings.
 
 .. option:: -Wno-analyzer-stale-setjmp-buffer, -Wanalyzer-stale-setjmp-buffer
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-stale-setjmp-buffer` to disable it.
 
-This diagnostic warns for paths through the code in which
-``longjmp`` is called to rewind to a ``jmp_buf`` relating
-to a ``setjmp`` call in a function that has returned.
+  This diagnostic warns for paths through the code in which
+  ``longjmp`` is called to rewind to a ``jmp_buf`` relating
+  to a ``setjmp`` call in a function that has returned.
 
-When ``setjmp`` is called on a ``jmp_buf`` to record a rewind
-location, it records the stack frame.  The stack frame becomes invalid
-when the function containing the ``setjmp`` call returns.  Attempting
-to rewind to it via ``longjmp`` would reference a stack frame that
-no longer exists, and likely lead to a crash (or worse).
+  When ``setjmp`` is called on a ``jmp_buf`` to record a rewind
+  location, it records the stack frame.  The stack frame becomes invalid
+  when the function containing the ``setjmp`` call returns.  Attempting
+  to rewind to it via ``longjmp`` would reference a stack frame that
+  no longer exists, and likely lead to a crash (or worse).
 
 .. option:: -Wno-analyzer-tainted-array-index, -Wanalyzer-tainted-array-index
 
@@ -199,27 +199,27 @@ no longer exists, and likely lead to a crash (or worse).
   :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-array-index` to disable it.
 
-This diagnostic warns for paths through the code in which a value
-that could be under an attacker's control is used as the index
-of an array access without being sanitized.
+  This diagnostic warns for paths through the code in which a value
+  that could be under an attacker's control is used as the index
+  of an array access without being sanitized.
 
 .. option:: -Wno-analyzer-unsafe-call-within-signal-handler, -Wanalyzer-unsafe-call-within-signal-handler
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` to disable it.
 
-This diagnostic warns for paths through the code in which a
-function known to be async-signal-unsafe (such as ``fprintf``) is
-called from a signal handler.
+  This diagnostic warns for paths through the code in which a
+  function known to be async-signal-unsafe (such as ``fprintf``) is
+  called from a signal handler.
 
 .. option:: -Wno-analyzer-use-after-free, -Wanalyzer-use-after-free
 
   This warning requires :option:`-fanalyzer` , which enables it; use
   :option:`-Wno-analyzer-use-after-free` to disable it.
 
-This diagnostic warns for paths through the code in which a
-pointer is used after a deallocator is called on it: either ``free``,
-or a deallocator referenced by attribute ``malloc``.
+  This diagnostic warns for paths through the code in which a
+  pointer is used after a deallocator is called on it: either ``free``,
+  or a deallocator referenced by attribute ``malloc``.
 
 .. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame, -Wanalyzer-use-of-pointer-in-stale-stack-frame
 
@@ -227,8 +227,8 @@ or a deallocator referenced by attribute ``malloc``.
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`
   to disable it.
 
-This diagnostic warns for paths through the code in which a pointer
-is dereferenced that points to a variable in a stale stack frame.
+  This diagnostic warns for paths through the code in which a pointer
+  is dereferenced that points to a variable in a stale stack frame.
 
 .. option:: -Wno-analyzer-write-to-const, -Wanalyzer-write-to-const
 
@@ -236,10 +236,10 @@ is dereferenced that points to a variable in a stale stack frame.
   :option:`-Wno-analyzer-write-to-const`
   to disable it.
 
-This diagnostic warns for paths through the code in which the analyzer
-detects an attempt to write through a pointer to a ``const`` object.
-However, the analyzer does not prioritize detection of such paths, so
-false negatives are more likely relative to other warnings.
+  This diagnostic warns for paths through the code in which the analyzer
+  detects an attempt to write through a pointer to a ``const`` object.
+  However, the analyzer does not prioritize detection of such paths, so
+  false negatives are more likely relative to other warnings.
 
 .. option:: -Wno-analyzer-write-to-string-literal, -Wanalyzer-write-to-string-literal
 
@@ -247,10 +247,10 @@ false negatives are more likely relative to other warnings.
   :option:`-Wno-analyzer-write-to-string-literal`
   to disable it.
 
-This diagnostic warns for paths through the code in which the analyzer
-detects an attempt to write through a pointer to a string literal.
-However, the analyzer does not prioritize detection of such paths, so
-false negatives are more likely relative to other warnings.
+  This diagnostic warns for paths through the code in which the analyzer
+  detects an attempt to write through a pointer to a string literal.
+  However, the analyzer does not prioritize detection of such paths, so
+  false negatives are more likely relative to other warnings.
 
 Pertinent parameters for controlling the exploration are:
 :option:`--param analyzer-bb-explosion-factor`:samp:`={value}` ,
@@ -266,39 +266,39 @@ The following options control the analyzer.
   rather than exploring all paths through the function from callsite to each
   possible return.
 
-If enabled, call summaries are only used for functions with more than one
-call site, and that are sufficiently complicated (as per
-:option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}` ).
+  If enabled, call summaries are only used for functions with more than one
+  call site, and that are sufficiently complicated (as per
+  :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}` ).
 
 .. option:: -fanalyzer-checker=name
 
   Restrict the analyzer to run just the named checker, and enable it.
 
-Some checkers are disabled by default (even with :option:`-fanalyzer` ),
-such as the ``taint`` checker that implements
-:option:`-Wanalyzer-tainted-array-index` , and this option is required
-to enable them.
+  Some checkers are disabled by default (even with :option:`-fanalyzer` ),
+  such as the ``taint`` checker that implements
+  :option:`-Wanalyzer-tainted-array-index` , and this option is required
+  to enable them.
 
 .. option:: -fno-analyzer-feasibility, -fanalyzer-feasibility
 
   This option is intended for analyzer developers.
 
-By default the analyzer verifies that there is a feasible control flow path
-for each diagnostic it emits: that the conditions that hold are not mutually
-exclusive.  Diagnostics for which no feasible path can be found are rejected.
-This filtering can be suppressed with :option:`-fno-analyzer-feasibility` , for
-debugging issues in this code.
+  By default the analyzer verifies that there is a feasible control flow path
+  for each diagnostic it emits: that the conditions that hold are not mutually
+  exclusive.  Diagnostics for which no feasible path can be found are rejected.
+  This filtering can be suppressed with :option:`-fno-analyzer-feasibility` , for
+  debugging issues in this code.
 
 .. option:: -fanalyzer-fine-grained, -fno-analyzer-fine-grained
 
   This option is intended for analyzer developers.
 
-Internally the analyzer builds an 'exploded graph' that combines
-control flow graphs with data flow information.
+  Internally the analyzer builds an 'exploded graph' that combines
+  control flow graphs with data flow information.
 
-By default, an edge in this graph can contain the effects of a run
-of multiple statements within a basic block.  With
-:option:`-fanalyzer-fine-grained` , each statement gets its own edge.
+  By default, an edge in this graph can contain the effects of a run
+  of multiple statements within a basic block.  With
+  :option:`-fanalyzer-fine-grained` , each statement gets its own edge.
 
 .. option:: -fanalyzer-show-duplicate-count, -fno-analyzer-show-duplicate-count
 
@@ -311,22 +311,22 @@ of multiple statements within a basic block.  With
 
   This option is intended for analyzer developers.
 
-By default the analyzer attempts to simplify analysis by merging
-sufficiently similar states at each program point as it builds its
-'exploded graph'.  With :option:`-fno-analyzer-state-merge` this
-merging can be suppressed, for debugging state-handling issues.
+  By default the analyzer attempts to simplify analysis by merging
+  sufficiently similar states at each program point as it builds its
+  'exploded graph'.  With :option:`-fno-analyzer-state-merge` this
+  merging can be suppressed, for debugging state-handling issues.
 
 .. option:: -fno-analyzer-state-purge, -fanalyzer-state-purge
 
   This option is intended for analyzer developers.
 
-By default the analyzer attempts to simplify analysis by purging
-aspects of state at a program point that appear to no longer be relevant
-e.g. the values of locals that aren't accessed later in the function
-and which aren't relevant to leak analysis.
+  By default the analyzer attempts to simplify analysis by purging
+  aspects of state at a program point that appear to no longer be relevant
+  e.g. the values of locals that aren't accessed later in the function
+  and which aren't relevant to leak analysis.
 
-With :option:`-fno-analyzer-state-purge` this purging of state can
-be suppressed, for debugging state-handling issues.
+  With :option:`-fno-analyzer-state-purge` this purging of state can
+  be suppressed, for debugging state-handling issues.
 
 .. option:: -fanalyzer-transitivity, -fno-analyzer-transitivity
 

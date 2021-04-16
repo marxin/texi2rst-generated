@@ -153,11 +153,11 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   stage simply is not done.  The ultimate output is in the form of an
   object file for each source file.
 
-By default, the object file name for a source file is made by replacing
-the suffix :samp:`.c`, :samp:`.i`, :samp:`.s`, etc., with :samp:`.o`.
+  By default, the object file name for a source file is made by replacing
+  the suffix :samp:`.c`, :samp:`.i`, :samp:`.s`, etc., with :samp:`.o`.
 
-Unrecognized input files, not requiring compilation or assembly, are
-ignored.
+  Unrecognized input files, not requiring compilation or assembly, are
+  ignored.
 
 .. option:: -S
 
@@ -165,10 +165,10 @@ ignored.
   is in the form of an assembler code file for each non-assembler input
   file specified.
 
-By default, the assembler file name for a source file is made by
-replacing the suffix :samp:`.c`, :samp:`.i`, etc., with :samp:`.s`.
+  By default, the assembler file name for a source file is made by
+  replacing the suffix :samp:`.c`, :samp:`.i`, etc., with :samp:`.s`.
 
-Input files that don't require compilation are ignored.
+  Input files that don't require compilation are ignored.
 
 .. option:: -E
 
@@ -176,9 +176,9 @@ Input files that don't require compilation are ignored.
   output is in the form of preprocessed source code, which is sent to the
   standard output.
 
-Input files that don't require preprocessing are ignored.
+  Input files that don't require preprocessing are ignored.
 
-.. index:: output file option
+  .. index:: output file option
 
 .. option:: -o file, -o
 
@@ -186,69 +186,69 @@ Input files that don't require preprocessing are ignored.
   sort of output is being produced, whether it be an executable file, an
   object file, an assembler file or preprocessed C code.
 
-If :option:`-o` is not specified, the default is to put an executable
-file in a.out, the object file for
-:samp:`{source}`.:samp:`{suffix}` in :samp:`{source}`.o, its
-assembler file in :samp:`{source}`.s, a precompiled header file in
-:samp:`{source}`.:samp:`{suffix}`.gch, and all preprocessed C source on
-standard output.
+  If :option:`-o` is not specified, the default is to put an executable
+  file in a.out, the object file for
+  :samp:`{source}`.:samp:`{suffix}` in :samp:`{source}`.o, its
+  assembler file in :samp:`{source}`.s, a precompiled header file in
+  :samp:`{source}`.:samp:`{suffix}`.gch, and all preprocessed C source on
+  standard output.
 
-Though :option:`-o` names only the primary output, it also affects the
-naming of auxiliary and dump outputs.  See the examples below.  Unless
-overridden, both auxiliary outputs and dump outputs are placed in the
-same directory as the primary output.  In auxiliary outputs, the suffix
-of the input file is replaced with that of the auxiliary output file
-type; in dump outputs, the suffix of the dump file is appended to the
-input file suffix.  In compilation commands, the base name of both
-auxiliary and dump outputs is that of the primary output; in compile and
-link commands, the primary output name, minus the executable suffix, is
-combined with the input file name.  If both share the same base name,
-disregarding the suffix, the result of the combination is that base
-name, otherwise, they are concatenated, separated by a dash.
+  Though :option:`-o` names only the primary output, it also affects the
+  naming of auxiliary and dump outputs.  See the examples below.  Unless
+  overridden, both auxiliary outputs and dump outputs are placed in the
+  same directory as the primary output.  In auxiliary outputs, the suffix
+  of the input file is replaced with that of the auxiliary output file
+  type; in dump outputs, the suffix of the dump file is appended to the
+  input file suffix.  In compilation commands, the base name of both
+  auxiliary and dump outputs is that of the primary output; in compile and
+  link commands, the primary output name, minus the executable suffix, is
+  combined with the input file name.  If both share the same base name,
+  disregarding the suffix, the result of the combination is that base
+  name, otherwise, they are concatenated, separated by a dash.
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c foo.c ...
+    gcc -c foo.c ...
 
-will use foo.o as the primary output, and place aux outputs and
-dumps next to it, e.g., aux file foo.dwo for
-:option:`-gsplit-dwarf` , and dump file foo.c.???r.final for
-:option:`-fdump-rtl-final`.
+  will use foo.o as the primary output, and place aux outputs and
+  dumps next to it, e.g., aux file foo.dwo for
+  :option:`-gsplit-dwarf` , and dump file foo.c.???r.final for
+  :option:`-fdump-rtl-final`.
 
-If a non-linker output file is explicitly specified, aux and dump files
-by default take the same base name:
+  If a non-linker output file is explicitly specified, aux and dump files
+  by default take the same base name:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c foo.c -o dir/foobar.o ...
+    gcc -c foo.c -o dir/foobar.o ...
 
-will name aux outputs dir/foobar.* and dump outputs
-dir/foobar.c.*.
+  will name aux outputs dir/foobar.* and dump outputs
+  dir/foobar.c.*.
 
-A linker output will instead prefix aux and dump outputs:
+  A linker output will instead prefix aux and dump outputs:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -o dir/foobar ...
+    gcc foo.c bar.c -o dir/foobar ...
 
-will generally name aux outputs dir/foobar-foo.* and
-dir/foobar-bar.*, and dump outputs dir/foobar-foo.c.* and
-dir/foobar-bar.c.*.
+  will generally name aux outputs dir/foobar-foo.* and
+  dir/foobar-bar.*, and dump outputs dir/foobar-foo.c.* and
+  dir/foobar-bar.c.*.
 
-The one exception to the above is when the executable shares the base
-name with the single input:
+  The one exception to the above is when the executable shares the base
+  name with the single input:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c -o dir/foo ...
+    gcc foo.c -o dir/foo ...
 
-in which case aux outputs are named dir/foo.* and dump outputs
-named dir/foo.c.*.
+  in which case aux outputs are named dir/foo.* and dump outputs
+  named dir/foo.c.*.
 
-The location and the names of auxiliary and dump outputs can be adjusted
-by the options :option:`-dumpbase` , :option:`-dumpbase-ext` ,
-:option:`-dumpdir` , :option:`-save-temps=cwd` , and
-:option:`-save-temps=obj`.
+  The location and the names of auxiliary and dump outputs can be adjusted
+  by the options :option:`-dumpbase` , :option:`-dumpbase-ext` ,
+  :option:`-dumpdir` , :option:`-save-temps=cwd` , and
+  :option:`-save-temps=obj`.
 
 .. option:: -dumpbase dumpbase, -dumpbase
 
@@ -257,86 +257,86 @@ by the options :option:`-dumpbase` , :option:`-dumpbase-ext` ,
   outputs, when preserved, are not regarded as primary outputs, but as
   auxiliary outputs:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -save-temps -S foo.c
+    gcc -save-temps -S foo.c
 
-saves the (no longer) temporary preprocessed file in foo.i, and
-then compiles to the (implied) output file foo.s, whereas:
+  saves the (no longer) temporary preprocessed file in foo.i, and
+  then compiles to the (implied) output file foo.s, whereas:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -save-temps -dumpbase save-foo -c foo.c
+    gcc -save-temps -dumpbase save-foo -c foo.c
 
-preprocesses to in save-foo.i, compiles to save-foo.s (now
-an intermediate, thus auxiliary output), and then assembles to the
-(implied) output file foo.o.
+  preprocesses to in save-foo.i, compiles to save-foo.s (now
+  an intermediate, thus auxiliary output), and then assembles to the
+  (implied) output file foo.o.
 
-Absent this option, dump and aux files take their names from the input
-file, or from the (non-linker) output file, if one is explicitly
-specified: dump output files (e.g. those requested by :option:`-fdump-*`
-options) with the input name suffix, and aux output files (those
-requested by other non-dump options, e.g. ``-save-temps``,
-``-gsplit-dwarf``, ``-fcallgraph-info``) without it.
+  Absent this option, dump and aux files take their names from the input
+  file, or from the (non-linker) output file, if one is explicitly
+  specified: dump output files (e.g. those requested by :option:`-fdump-*`
+  options) with the input name suffix, and aux output files (those
+  requested by other non-dump options, e.g. ``-save-temps``,
+  ``-gsplit-dwarf``, ``-fcallgraph-info``) without it.
 
-Similar suffix differentiation of dump and aux outputs can be attained
-for explicitly-given :option:`-dumpbase basename.suf` by also specifying
-:option:`-dumpbase-ext .suf`.
+  Similar suffix differentiation of dump and aux outputs can be attained
+  for explicitly-given :option:`-dumpbase basename.suf` by also specifying
+  :option:`-dumpbase-ext .suf`.
 
-If :samp:`{dumpbase}` is explicitly specified with any directory component,
-any :samp:`{dumppfx}` specification (e.g. :option:`-dumpdir` or
-:option:`-save-temps=*` ) is ignored, and instead of appending to it,
-:samp:`{dumpbase}` fully overrides it:
+  If :samp:`{dumpbase}` is explicitly specified with any directory component,
+  any :samp:`{dumppfx}` specification (e.g. :option:`-dumpdir` or
+  :option:`-save-temps=*` ) is ignored, and instead of appending to it,
+  :samp:`{dumpbase}` fully overrides it:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c -c -o dir/foo.o -dumpbase alt/foo \
-    -dumpdir pfx- -save-temps=cwd ...
+    gcc foo.c -c -o dir/foo.o -dumpbase alt/foo \
+      -dumpdir pfx- -save-temps=cwd ...
 
-creates auxiliary and dump outputs named alt/foo.*, disregarding
-dir/ in :option:`-o` , the ./ prefix implied by
-:option:`-save-temps=cwd` , and pfx- in :option:`-dumpdir`.
+  creates auxiliary and dump outputs named alt/foo.*, disregarding
+  dir/ in :option:`-o` , the ./ prefix implied by
+  :option:`-save-temps=cwd` , and pfx- in :option:`-dumpdir`.
 
-When :option:`-dumpbase` is specified in a command that compiles multiple
-inputs, or that compiles and then links, it may be combined with
-:samp:`{dumppfx}` , as specified under :option:`-dumpdir`.  Then, each input
-file is compiled using the combined :samp:`{dumppfx}` , and default values
-for :samp:`{dumpbase}` and :samp:`{auxdropsuf}` are computed for each input
-file:
+  When :option:`-dumpbase` is specified in a command that compiles multiple
+  inputs, or that compiles and then links, it may be combined with
+  :samp:`{dumppfx}` , as specified under :option:`-dumpdir`.  Then, each input
+  file is compiled using the combined :samp:`{dumppfx}` , and default values
+  for :samp:`{dumpbase}` and :samp:`{auxdropsuf}` are computed for each input
+  file:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -c -dumpbase main ...
+    gcc foo.c bar.c -c -dumpbase main ...
 
-creates foo.o and bar.o as primary outputs, and avoids
-overwriting the auxiliary and dump outputs by using the :samp:`{dumpbase}`
-as a prefix, creating auxiliary and dump outputs named main-foo.*
-and main-bar.*.
+  creates foo.o and bar.o as primary outputs, and avoids
+  overwriting the auxiliary and dump outputs by using the :samp:`{dumpbase}`
+  as a prefix, creating auxiliary and dump outputs named main-foo.*
+  and main-bar.*.
 
-An empty string specified as :samp:`{dumpbase}` avoids the influence of the
-output basename in the naming of auxiliary and dump outputs during
-compilation, computing default values :
+  An empty string specified as :samp:`{dumpbase}` avoids the influence of the
+  output basename in the naming of auxiliary and dump outputs during
+  compilation, computing default values :
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c foo.c -o dir/foobar.o -dumpbase '' ...
+    gcc -c foo.c -o dir/foobar.o -dumpbase '' ...
 
-will name aux outputs dir/foo.* and dump outputs
-dir/foo.c.*.  Note how their basenames are taken from the input
-name, but the directory still defaults to that of the output.
+  will name aux outputs dir/foo.* and dump outputs
+  dir/foo.c.*.  Note how their basenames are taken from the input
+  name, but the directory still defaults to that of the output.
 
-The empty-string dumpbase does not prevent the use of the output
-basename for outputs during linking:
+  The empty-string dumpbase does not prevent the use of the output
+  basename for outputs during linking:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -o dir/foobar -dumpbase '' -flto ...
+    gcc foo.c bar.c -o dir/foobar -dumpbase '' -flto ...
 
-The compilation of the source files will name auxiliary outputs
-dir/foo.* and dir/bar.*, and dump outputs
-dir/foo.c.* and dir/bar.c.*.  LTO recompilation during
-linking will use dir/foobar. as the prefix for dumps and
-auxiliary files.
+  The compilation of the source files will name auxiliary outputs
+  dir/foo.* and dir/bar.*, and dump outputs
+  dir/foo.c.* and dir/bar.c.*.  LTO recompilation during
+  linking will use dir/foobar. as the prefix for dumps and
+  auxiliary files.
 
 .. option:: -dumpbase-ext auxdropsuf, -dumpbase-ext
 
@@ -347,156 +347,156 @@ auxiliary files.
   :option:`-dumpbase` is not present in the command line, or :samp:`{dumpbase}`
   is combined with :samp:`{dumppfx}`.
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c -c -o dir/foo.o -dumpbase x-foo.c -dumpbase-ext .c ...
+    gcc foo.c -c -o dir/foo.o -dumpbase x-foo.c -dumpbase-ext .c ...
 
-creates dir/foo.o as the main output, and generates auxiliary
-outputs in dir/x-foo.*, taking the location of the primary
-output, and dropping the .c suffix from the :samp:`{dumpbase}`.  Dump
-outputs retain the suffix: dir/x-foo.c.*.
+  creates dir/foo.o as the main output, and generates auxiliary
+  outputs in dir/x-foo.*, taking the location of the primary
+  output, and dropping the .c suffix from the :samp:`{dumpbase}`.  Dump
+  outputs retain the suffix: dir/x-foo.c.*.
 
-This option is disregarded if it does not match the suffix of a
-specified :samp:`{dumpbase}` , except as an alternative to the executable
-suffix when appending the linker output base name to :samp:`{dumppfx}` , as
-specified below:
+  This option is disregarded if it does not match the suffix of a
+  specified :samp:`{dumpbase}` , except as an alternative to the executable
+  suffix when appending the linker output base name to :samp:`{dumppfx}` , as
+  specified below:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -o main.out -dumpbase-ext .out ...
+    gcc foo.c bar.c -o main.out -dumpbase-ext .out ...
 
-creates main.out as the primary output, and avoids overwriting
-the auxiliary and dump outputs by using the executable name minus
-:samp:`{auxdropsuf}` as a prefix, creating auxiliary outputs named
-main-foo.* and main-bar.* and dump outputs named
-main-foo.c.* and main-bar.c.*.
+  creates main.out as the primary output, and avoids overwriting
+  the auxiliary and dump outputs by using the executable name minus
+  :samp:`{auxdropsuf}` as a prefix, creating auxiliary outputs named
+  main-foo.* and main-bar.* and dump outputs named
+  main-foo.c.* and main-bar.c.*.
 
 .. option:: -dumpdir dumppfx, -dumpdir
 
   When forming the name of an auxiliary or dump output file, use
   :samp:`{dumppfx}` as a prefix:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -dumpdir pfx- -c foo.c ...
+    gcc -dumpdir pfx- -c foo.c ...
 
-creates foo.o as the primary output, and auxiliary outputs named
-pfx-foo.*, combining the given :samp:`{dumppfx}` with the default
-:samp:`{dumpbase}` derived from the default primary output, derived in turn
-from the input name.  Dump outputs also take the input name suffix:
-pfx-foo.c.*.
+  creates foo.o as the primary output, and auxiliary outputs named
+  pfx-foo.*, combining the given :samp:`{dumppfx}` with the default
+  :samp:`{dumpbase}` derived from the default primary output, derived in turn
+  from the input name.  Dump outputs also take the input name suffix:
+  pfx-foo.c.*.
 
-If :samp:`{dumppfx}` is to be used as a directory name, it must end with a
-directory separator:
+  If :samp:`{dumppfx}` is to be used as a directory name, it must end with a
+  directory separator:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -dumpdir dir/ -c foo.c -o obj/bar.o ...
+    gcc -dumpdir dir/ -c foo.c -o obj/bar.o ...
 
-creates obj/bar.o as the primary output, and auxiliary outputs
-named dir/bar.*, combining the given :samp:`{dumppfx}` with the
-default :samp:`{dumpbase}` derived from the primary output name.  Dump
-outputs also take the input name suffix: dir/bar.c.*.
+  creates obj/bar.o as the primary output, and auxiliary outputs
+  named dir/bar.*, combining the given :samp:`{dumppfx}` with the
+  default :samp:`{dumpbase}` derived from the primary output name.  Dump
+  outputs also take the input name suffix: dir/bar.c.*.
 
-It defaults to the location of the output file; options
-:option:`-save-temps=cwd` and :option:`-save-temps=obj` override this
-default, just like an explicit :option:`-dumpdir` option.  In case
-multiple such options are given, the last one prevails:
+  It defaults to the location of the output file; options
+  :option:`-save-temps=cwd` and :option:`-save-temps=obj` override this
+  default, just like an explicit :option:`-dumpdir` option.  In case
+  multiple such options are given, the last one prevails:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
+    gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
 
-outputs foo.o, with auxiliary outputs named foo.* because
-:option:`-save-temps=*` overrides the :samp:`{dumppfx}` given by the earlier
-:option:`-dumpdir` option.  It does not matter that =obj is the
-default for :option:`-save-temps` , nor that the output directory is
-implicitly the current directory.  Dump outputs are named
-foo.c.*.
+  outputs foo.o, with auxiliary outputs named foo.* because
+  :option:`-save-temps=*` overrides the :samp:`{dumppfx}` given by the earlier
+  :option:`-dumpdir` option.  It does not matter that =obj is the
+  default for :option:`-save-temps` , nor that the output directory is
+  implicitly the current directory.  Dump outputs are named
+  foo.c.*.
 
-When compiling from multiple input files, if :option:`-dumpbase` is
-specified, :samp:`{dumpbase}` , minus a :samp:`{auxdropsuf}` suffix, and a dash
-are appended to (or override, if containing any directory components) an
-explicit or defaulted :samp:`{dumppfx}` , so that each of the multiple
-compilations gets differently-named aux and dump outputs.
+  When compiling from multiple input files, if :option:`-dumpbase` is
+  specified, :samp:`{dumpbase}` , minus a :samp:`{auxdropsuf}` suffix, and a dash
+  are appended to (or override, if containing any directory components) an
+  explicit or defaulted :samp:`{dumppfx}` , so that each of the multiple
+  compilations gets differently-named aux and dump outputs.
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -c -dumpdir dir/pfx- -dumpbase main ...
+    gcc foo.c bar.c -c -dumpdir dir/pfx- -dumpbase main ...
 
-outputs auxiliary dumps to dir/pfx-main-foo.* and
-dir/pfx-main-bar.*, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
-Dump outputs retain the input file suffix: dir/pfx-main-foo.c.*
-and dir/pfx-main-bar.c.*, respectively.  Contrast with the
-single-input compilation:
+  outputs auxiliary dumps to dir/pfx-main-foo.* and
+  dir/pfx-main-bar.*, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
+  Dump outputs retain the input file suffix: dir/pfx-main-foo.c.*
+  and dir/pfx-main-bar.c.*, respectively.  Contrast with the
+  single-input compilation:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c -c -dumpdir dir/pfx- -dumpbase main ...
+    gcc foo.c -c -dumpdir dir/pfx- -dumpbase main ...
 
-that, applying :option:`-dumpbase` to a single source, does not compute
-and append a separate :samp:`{dumpbase}` per input file.  Its auxiliary and
-dump outputs go in dir/pfx-main.*.
+  that, applying :option:`-dumpbase` to a single source, does not compute
+  and append a separate :samp:`{dumpbase}` per input file.  Its auxiliary and
+  dump outputs go in dir/pfx-main.*.
 
-When compiling and then linking from multiple input files, a defaulted
-or explicitly specified :samp:`{dumppfx}` also undergoes the :samp:`{dumpbase}` -
-transformation above (e.g. the compilation of foo.c and
-bar.c above, but without :option:`-c` ).  If neither
-:option:`-dumpdir` nor :option:`-dumpbase` are given, the linker output
-base name, minus :samp:`{auxdropsuf}` , if specified, or the executable
-suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`
-instead.  Note, however, that unlike earlier cases of linking:
+  When compiling and then linking from multiple input files, a defaulted
+  or explicitly specified :samp:`{dumppfx}` also undergoes the :samp:`{dumpbase}` -
+  transformation above (e.g. the compilation of foo.c and
+  bar.c above, but without :option:`-c` ).  If neither
+  :option:`-dumpdir` nor :option:`-dumpbase` are given, the linker output
+  base name, minus :samp:`{auxdropsuf}` , if specified, or the executable
+  suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`
+  instead.  Note, however, that unlike earlier cases of linking:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c bar.c -dumpdir dir/pfx- -o main ...
+    gcc foo.c bar.c -dumpdir dir/pfx- -o main ...
 
-does not append the output name main to :samp:`{dumppfx}` , because
-:option:`-dumpdir` is explicitly specified.  The goal is that the
-explicitly-specified :samp:`{dumppfx}` may contain the specified output name
-as part of the prefix, if desired; only an explicitly-specified
-:option:`-dumpbase` would be combined with it, in order to avoid simply
-discarding a meaningful option.
+  does not append the output name main to :samp:`{dumppfx}` , because
+  :option:`-dumpdir` is explicitly specified.  The goal is that the
+  explicitly-specified :samp:`{dumppfx}` may contain the specified output name
+  as part of the prefix, if desired; only an explicitly-specified
+  :option:`-dumpbase` would be combined with it, in order to avoid simply
+  discarding a meaningful option.
 
-When compiling and then linking from a single input file, the linker
-output base name will only be appended to the default :samp:`{dumppfx}` as
-above if it does not share the base name with the single input file
-name.  This has been covered in single-input linking cases above, but
-not with an explicit :option:`-dumpdir` that inhibits the combination,
-even if overridden by :option:`-save-temps=*` :
+  When compiling and then linking from a single input file, the linker
+  output base name will only be appended to the default :samp:`{dumppfx}` as
+  above if it does not share the base name with the single input file
+  name.  This has been covered in single-input linking cases above, but
+  not with an explicit :option:`-dumpdir` that inhibits the combination,
+  even if overridden by :option:`-save-temps=*` :
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc foo.c -dumpdir alt/pfx- -o dir/main.exe -save-temps=cwd ...
+    gcc foo.c -dumpdir alt/pfx- -o dir/main.exe -save-temps=cwd ...
 
-Auxiliary outputs are named foo.*, and dump outputs
-foo.c.*, in the current working directory as ultimately requested
-by :option:`-save-temps=cwd`.
+  Auxiliary outputs are named foo.*, and dump outputs
+  foo.c.*, in the current working directory as ultimately requested
+  by :option:`-save-temps=cwd`.
 
-Summing it all up for an intuitive though slightly imprecise data flow:
-the primary output name is broken into a directory part and a basename
-part; :samp:`{dumppfx}` is set to the former, unless overridden by
-:option:`-dumpdir` or :option:`-save-temps=*` , and :samp:`{dumpbase}` is set
-to the latter, unless overriden by :option:`-dumpbase`.  If there are
-multiple inputs or linking, this :samp:`{dumpbase}` may be combined with
-:samp:`{dumppfx}` and taken from each input file.  Auxiliary output names
-for each input are formed by combining :samp:`{dumppfx}` , :samp:`{dumpbase}`
-minus suffix, and the auxiliary output suffix; dump output names are
-only different in that the suffix from :samp:`{dumpbase}` is retained.
+  Summing it all up for an intuitive though slightly imprecise data flow:
+  the primary output name is broken into a directory part and a basename
+  part; :samp:`{dumppfx}` is set to the former, unless overridden by
+  :option:`-dumpdir` or :option:`-save-temps=*` , and :samp:`{dumpbase}` is set
+  to the latter, unless overriden by :option:`-dumpbase`.  If there are
+  multiple inputs or linking, this :samp:`{dumpbase}` may be combined with
+  :samp:`{dumppfx}` and taken from each input file.  Auxiliary output names
+  for each input are formed by combining :samp:`{dumppfx}` , :samp:`{dumpbase}`
+  minus suffix, and the auxiliary output suffix; dump output names are
+  only different in that the suffix from :samp:`{dumpbase}` is retained.
 
-When it comes to auxiliary and dump outputs created during LTO
-recompilation, a combination of :samp:`{dumppfx}` and :samp:`{dumpbase}` , as
-given or as derived from the linker output name but not from inputs,
-even in cases in which this combination would not otherwise be used as
-such, is passed down with a trailing period replacing the compiler-added
-dash, if any, as a :option:`-dumpdir` option to :command:`lto-wrapper`;
-being involved in linking, this program does not normally get any
-:option:`-dumpbase` and :option:`-dumpbase-ext` , and it ignores them.
+  When it comes to auxiliary and dump outputs created during LTO
+  recompilation, a combination of :samp:`{dumppfx}` and :samp:`{dumpbase}` , as
+  given or as derived from the linker output name but not from inputs,
+  even in cases in which this combination would not otherwise be used as
+  such, is passed down with a trailing period replacing the compiler-added
+  dash, if any, as a :option:`-dumpdir` option to :command:`lto-wrapper`;
+  being involved in linking, this program does not normally get any
+  :option:`-dumpbase` and :option:`-dumpbase-ext` , and it ignores them.
 
-When running sub-compilers, :command:`lto-wrapper` appends LTO stage
-names to the received :samp:`{dumppfx}` , ensures it contains a directory
-component so that it overrides any :option:`-dumpdir` , and passes that as
-:option:`-dumpbase` to sub-compilers.
+  When running sub-compilers, :command:`lto-wrapper` appends LTO stage
+  names to the received :samp:`{dumppfx}` , ensures it contains a directory
+  component so that it overrides any :option:`-dumpdir` , and passes that as
+  :option:`-dumpbase` to sub-compilers.
 
 .. option:: -v
 
@@ -665,13 +665,13 @@ component so that it overrides any :option:`-dumpdir` , and passes that as
   wrapper program and its parameters are passed as a comma separated
   list.
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  gcc -c t.c -wrapper gdb,--args
+    gcc -c t.c -wrapper gdb,--args
 
-This invokes all subprograms of :command:`gcc` under
-:samp:`gdb --args`, thus the invocation of :command:`cc1` is
-:samp:`gdb --args cc1 ...`.
+  This invokes all subprograms of :command:`gcc` under
+  :samp:`gdb --args`, thus the invocation of :command:`cc1` is
+  :samp:`gdb --args cc1 ...`.
 
 .. option:: -ffile-prefix-map=old=new
 
@@ -716,8 +716,8 @@ This invokes all subprograms of :command:`gcc` under
   useful way to start writing a Go interface to code written in some
   other language.
 
-.. This file is designed to be included in manuals that use
-   expandargv.
+  .. This file is designed to be included in manuals that use
+     expandargv.
 
 :samp:`@{file}`
   Read command-line options from :samp:`{file}`.  The options read are

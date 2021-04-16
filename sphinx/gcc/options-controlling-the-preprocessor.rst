@@ -69,8 +69,8 @@ Warning Options.
   is searched for in the remainder of the ``#include "..."`` search
   chain as normal.
 
-If multiple :option:`-include` options are given, the files are included
-in the order they appear on the command line.
+  If multiple :option:`-include` options are given, the files are included
+  in the order they appear on the command line.
 
 .. option:: -imacros file, -imacros
 
@@ -79,8 +79,8 @@ in the order they appear on the command line.
   This allows you to acquire all the macros from a header without also
   processing its declarations.
 
-All files specified by :option:`-imacros` are processed before all files
-specified by :option:`-include`.
+  All files specified by :option:`-imacros` are processed before all files
+  specified by :option:`-include`.
 
 .. option:: -undef
 
@@ -98,31 +98,31 @@ specified by :option:`-include`.
 
   .. index:: make
 
-.. index:: dependencies, make
+  .. index:: dependencies, make
 
-Instead of outputting the result of preprocessing, output a rule
-suitable for :command:`make` describing the dependencies of the main
-source file.  The preprocessor outputs one :command:`make` rule containing
-the object file name for that source file, a colon, and the names of all
-the included files, including those coming from :option:`-include` or
-:option:`-imacros` command-line options.
+  Instead of outputting the result of preprocessing, output a rule
+  suitable for :command:`make` describing the dependencies of the main
+  source file.  The preprocessor outputs one :command:`make` rule containing
+  the object file name for that source file, a colon, and the names of all
+  the included files, including those coming from :option:`-include` or
+  :option:`-imacros` command-line options.
 
-Unless specified explicitly (with :option:`-MT` or :option:`-MQ` ), the
-object file name consists of the name of the source file with any
-suffix replaced with object file suffix and with any leading directory
-parts removed.  If there are many included files then the rule is
-split into several lines using :samp:`\`-newline.  The rule has no
-commands.
+  Unless specified explicitly (with :option:`-MT` or :option:`-MQ` ), the
+  object file name consists of the name of the source file with any
+  suffix replaced with object file suffix and with any leading directory
+  parts removed.  If there are many included files then the rule is
+  split into several lines using :samp:`\`-newline.  The rule has no
+  commands.
 
-This option does not suppress the preprocessor's debug output, such as
-:option:`-dM`.  To avoid mixing such debug output with the dependency
-rules you should explicitly specify the dependency output file with
-:option:`-MF` , or use an environment variable like
-:envvar:`DEPENDENCIES_OUTPUT` (see :ref:`environment-variables`).  Debug output
-is still sent to the regular output stream as normal.
+  This option does not suppress the preprocessor's debug output, such as
+  :option:`-dM`.  To avoid mixing such debug output with the dependency
+  rules you should explicitly specify the dependency output file with
+  :option:`-MF` , or use an environment variable like
+  :envvar:`DEPENDENCIES_OUTPUT` (see :ref:`environment-variables`).  Debug output
+  is still sent to the regular output stream as normal.
 
-Passing :option:`-M` to the driver implies :option:`-E` , and suppresses
-warnings with an implicit :option:`-w`.
+  Passing :option:`-M` to the driver implies :option:`-E` , and suppresses
+  warnings with an implicit :option:`-w`.
 
 .. option:: -MM
 
@@ -130,9 +130,9 @@ warnings with an implicit :option:`-w`.
   system header directories, nor header files that are included,
   directly or indirectly, from such a header.
 
-This implies that the choice of angle brackets or double quotes in an
-:samp:`#include` directive does not in itself determine whether that
-header appears in :option:`-MM` dependency output.
+  This implies that the choice of angle brackets or double quotes in an
+  :samp:`#include` directive does not in itself determine whether that
+  header appears in :option:`-MM` dependency output.
 
 .. option:: -MF file, -MF
 
@@ -141,10 +141,10 @@ header appears in :option:`-MM` dependency output.
   the preprocessor sends the rules to the same place it would send
   preprocessed output.
 
-When used with the driver options :option:`-MD` or :option:`-MMD` ,
-:option:`-MF` overrides the default dependency output file.
+  When used with the driver options :option:`-MD` or :option:`-MMD` ,
+  :option:`-MF` overrides the default dependency output file.
 
-If :samp:`{file}` is -, then the dependencies are written to stdout.
+  If :samp:`{file}` is -, then the dependencies are written to stdout.
 
 .. option:: -MG
 
@@ -156,7 +156,7 @@ If :samp:`{file}` is -, then the dependencies are written to stdout.
   also suppresses preprocessed output, as a missing header file renders
   this useless.
 
-This feature is used in automatic updating of makefiles.
+  This feature is used in automatic updating of makefiles.
 
 .. option:: -Mno-modules
 
@@ -169,13 +169,13 @@ This feature is used in automatic updating of makefiles.
   dummy rules work around errors :command:`make` gives if you remove header
   files without updating the Makefile to match.
 
-This is typical output:
+  This is typical output:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  test.o: test.c test.h
+    test.o: test.c test.h
 
-  test.h:
+    test.h:
 
 .. option:: -MT target, -MT
 
@@ -184,27 +184,27 @@ This is typical output:
   directory components and any file suffix such as :samp:`.c`, and
   appends the platform's usual object suffix.  The result is the target.
 
-An :option:`-MT` option sets the target to be exactly the string you
-specify.  If you want multiple targets, you can specify them as a single
-argument to :option:`-MT` , or use multiple :option:`-MT` options.
+  An :option:`-MT` option sets the target to be exactly the string you
+  specify.  If you want multiple targets, you can specify them as a single
+  argument to :option:`-MT` , or use multiple :option:`-MT` options.
 
-For example, -MT '$(objpfx)foo.o' might give
+  For example, -MT '$(objpfx)foo.o' might give
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  $(objpfx)foo.o: foo.c
+    $(objpfx)foo.o: foo.c
 
 .. option:: -MQ target, -MQ
 
   Same as :option:`-MT` , but it quotes any characters which are special to
   Make.  -MQ '$(objpfx)foo.o' gives
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  $$(objpfx)foo.o: foo.c
+    $$(objpfx)foo.o: foo.c
 
-The default target is automatically quoted, as if it were given with
-:option:`-MQ`.
+  The default target is automatically quoted, as if it were given with
+  :option:`-MQ`.
 
 .. option:: -MD
 
@@ -215,13 +215,13 @@ The default target is automatically quoted, as if it were given with
   of the input file, removes any directory components and suffix, and
   applies a .d suffix.
 
-If :option:`-MD` is used in conjunction with :option:`-E` , any
-:option:`-o` switch is understood to specify the dependency output file
-(see :ref:`-MF <dashmf>`), but if used without :option:`-E` , each :option:`-o`
-is understood to specify a target object file.
+  If :option:`-MD` is used in conjunction with :option:`-E` , any
+  :option:`-o` switch is understood to specify the dependency output file
+  (see :ref:`-MF <dashmf>`), but if used without :option:`-E` , each :option:`-o`
+  is understood to specify a target object file.
 
-Since :option:`-E` is not implied, :option:`-MD` can be used to generate
-a dependency output file as a side effect of the compilation process.
+  Since :option:`-E` is not implied, :option:`-MD` can be used to generate
+  a dependency output file as a side effect of the compilation process.
 
 .. option:: -MMD
 
@@ -238,32 +238,32 @@ a dependency output file as a side effect of the compilation process.
   problems.  In this mode the integrated preprocessor is little more than
   a tokenizer for the front ends.
 
-:option:`-fpreprocessed` is implicit if the input file has one of the
-extensions :samp:`.i`, :samp:`.ii` or :samp:`.mi`.  These are the
-extensions that GCC uses for preprocessed files created by
-:option:`-save-temps`.
+  :option:`-fpreprocessed` is implicit if the input file has one of the
+  extensions :samp:`.i`, :samp:`.ii` or :samp:`.mi`.  These are the
+  extensions that GCC uses for preprocessed files created by
+  :option:`-save-temps`.
 
 .. option:: -fdirectives-only
 
   When preprocessing, handle directives, but do not expand macros.
 
-The option's behavior depends on the :option:`-E` and :option:`-fpreprocessed`
-options.
+  The option's behavior depends on the :option:`-E` and :option:`-fpreprocessed`
+  options.
 
-With :option:`-E` , preprocessing is limited to the handling of directives
-such as ``#define``, ``#ifdef``, and ``#error``.  Other
-preprocessor operations, such as macro expansion and trigraph
-conversion are not performed.  In addition, the :option:`-dD` option is
-implicitly enabled.
+  With :option:`-E` , preprocessing is limited to the handling of directives
+  such as ``#define``, ``#ifdef``, and ``#error``.  Other
+  preprocessor operations, such as macro expansion and trigraph
+  conversion are not performed.  In addition, the :option:`-dD` option is
+  implicitly enabled.
 
-With :option:`-fpreprocessed` , predefinition of command line and most
-builtin macros is disabled.  Macros such as ``__LINE__``, which are
-contextually dependent, are handled normally.  This enables compilation of
-files previously preprocessed with ``-E -fdirectives-only``.
+  With :option:`-fpreprocessed` , predefinition of command line and most
+  builtin macros is disabled.  Macros such as ``__LINE__``, which are
+  contextually dependent, are handled normally.  This enables compilation of
+  files previously preprocessed with ``-E -fdirectives-only``.
 
-With both :option:`-E` and :option:`-fpreprocessed` , the rules for
-:option:`-fpreprocessed` take precedence.  This enables full preprocessing of
-files previously preprocessed with ``-E -fdirectives-only``.
+  With both :option:`-E` and :option:`-fpreprocessed` , the rules for
+  :option:`-fpreprocessed` take precedence.  This enables full preprocessing of
+  files previously preprocessed with ``-E -fdirectives-only``.
 
 .. option:: -fdollars-in-identifiers
 
@@ -308,7 +308,7 @@ files previously preprocessed with ``-E -fdirectives-only``.
   When this option is given no argument, the default parameter value is
   :samp:`2`.
 
-Note that ``-ftrack-macro-expansion=2`` is activated by default.
+  Note that ``-ftrack-macro-expansion=2`` is activated by default.
 
 .. option:: -fmacro-prefix-map=old=new
 
@@ -325,32 +325,32 @@ Note that ``-ftrack-macro-expansion=2`` is activated by default.
 
   .. index:: character set, execution
 
-Set the execution character set, used for string and character
-constants.  The default is UTF-8.  :samp:`{charset}` can be any encoding
-supported by the system's ``iconv`` library routine.
+  Set the execution character set, used for string and character
+  constants.  The default is UTF-8.  :samp:`{charset}` can be any encoding
+  supported by the system's ``iconv`` library routine.
 
 .. option:: -fwide-exec-charset=charset
 
   .. index:: character set, wide execution
 
-Set the wide execution character set, used for wide string and
-character constants.  The default is UTF-32 or UTF-16, whichever
-corresponds to the width of ``wchar_t``.  As with
-:option:`-fexec-charset` , :samp:`{charset}` can be any encoding supported
-by the system's ``iconv`` library routine; however, you will have
-problems with encodings that do not fit exactly in ``wchar_t``.
+  Set the wide execution character set, used for wide string and
+  character constants.  The default is UTF-32 or UTF-16, whichever
+  corresponds to the width of ``wchar_t``.  As with
+  :option:`-fexec-charset` , :samp:`{charset}` can be any encoding supported
+  by the system's ``iconv`` library routine; however, you will have
+  problems with encodings that do not fit exactly in ``wchar_t``.
 
 .. option:: -finput-charset=charset
 
   .. index:: character set, input
 
-Set the input character set, used for translation from the character
-set of the input file to the source character set used by GCC.  If the
-locale does not specify, or GCC cannot get this information from the
-locale, the default is UTF-8.  This can be overridden by either the locale
-or this command-line option.  Currently the command-line option takes
-precedence if there's a conflict.  :samp:`{charset}` can be any encoding
-supported by the system's ``iconv`` library routine.
+  Set the input character set, used for translation from the character
+  set of the input file to the source character set used by GCC.  If the
+  locale does not specify, or GCC cannot get this information from the
+  locale, the default is UTF-8.  This can be overridden by either the locale
+  or this command-line option.  Currently the command-line option takes
+  precedence if there's a conflict.  :samp:`{charset}` can be any encoding
+  supported by the system's ``iconv`` library routine.
 
 .. option:: -fpch-deps
 
@@ -369,14 +369,14 @@ supported by the system's ``iconv`` library routine.
   When :option:`-fpreprocessed` is in use, GCC recognizes this ``#pragma``
   and loads the PCH.
 
-This option is off by default, because the resulting preprocessed output
-is only really suitable as input to GCC.  It is switched on by
-:option:`-save-temps`.
+  This option is off by default, because the resulting preprocessed output
+  is only really suitable as input to GCC.  It is switched on by
+  :option:`-save-temps`.
 
-You should not write this ``#pragma`` in your own code, but it is
-safe to edit the filename if the PCH file is available in a different
-location.  The filename may be absolute or it may be relative to GCC's
-current directory.
+  You should not write this ``#pragma`` in your own code, but it is
+  safe to edit the filename if the PCH file is available in a different
+  location.  The filename may be absolute or it may be relative to GCC's
+  current directory.
 
 .. option:: -fworking-directory, -fno-working-directory
 
@@ -410,11 +410,11 @@ current directory.
   file, except for comments in processed directives, which are deleted
   along with the directive.
 
-You should be prepared for side effects when using :option:`-C` ; it
-causes the preprocessor to treat comments as tokens in their own right.
-For example, comments appearing at the start of what would be a
-directive line have the effect of turning that line into an ordinary
-source line, since the first token on the line is no longer a :samp:`#`.
+  You should be prepared for side effects when using :option:`-C` ; it
+  causes the preprocessor to treat comments as tokens in their own right.
+  For example, comments appearing at the start of what would be a
+  directive line have the effect of turning that line into an ordinary
+  source line, since the first token on the line is no longer a :samp:`#`.
 
 .. option:: -CC
 
@@ -422,13 +422,13 @@ source line, since the first token on the line is no longer a :samp:`#`.
   like :option:`-C` , except that comments contained within macros are
   also passed through to the output file where the macro is expanded.
 
-In addition to the side effects of the :option:`-C` option, the
-:option:`-CC` option causes all C++-style comments inside a macro
-to be converted to C-style comments.  This is to prevent later use
-of that macro from inadvertently commenting out the remainder of
-the source line.
+  In addition to the side effects of the :option:`-C` option, the
+  :option:`-CC` option causes all C++-style comments inside a macro
+  to be converted to C-style comments.  This is to prevent later use
+  of that macro from inadvertently commenting out the remainder of
+  the source line.
 
-The :option:`-CC` option is generally used to support lint comments.
+  The :option:`-CC` option is generally used to support lint comments.
 
 .. option:: -P
 
@@ -437,9 +437,9 @@ The :option:`-CC` option is generally used to support lint comments.
   not C code, and will be sent to a program which might be confused by the
   linemarkers.
 
-.. index:: traditional C language
+  .. index:: traditional C language
 
-.. index:: C language, traditional
+  .. index:: C language, traditional
 
 .. option:: -traditional, -traditional-cpp
 
@@ -447,9 +447,9 @@ The :option:`-CC` option is generally used to support lint comments.
   opposed to ISO C preprocessors.
   See the GNU CPP manual for details.
 
-Note that GCC does not otherwise attempt to emulate a pre-standard 
-C compiler, and these options are only supported with the :option:`-E` 
-switch, or when invoking CPP explicitly.
+  Note that GCC does not otherwise attempt to emulate a pre-standard 
+  C compiler, and these options are only supported with the :option:`-E` 
+  switch, or when invoking CPP explicitly.
 
 .. option:: -trigraphs
 
@@ -459,16 +459,16 @@ switch, or when invoking CPP explicitly.
   :samp:`??/` stands for :samp:`\`, so :samp:`'??/n'` is a character
   constant for a newline.
 
-The nine trigraphs and their replacements are
+  The nine trigraphs and their replacements are
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
-  Replacement:      [    ]    {    }    #    \    ^    |    ~
+    Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
+    Replacement:      [    ]    {    }    #    \    ^    |    ~
 
-By default, GCC ignores trigraphs, but in
-standard-conforming modes it converts them.  See the :option:`-std` and
-:option:`-ansi` options.
+  By default, GCC ignores trigraphs, but in
+  standard-conforming modes it converts them.  See the :option:`-std` and
+  :option:`-ansi` options.
 
 .. option:: -remap
 
@@ -493,47 +493,47 @@ standard-conforming modes it converts them.  See the :option:`-std` and
   conflicts, the result is undefined.
   See :ref:`developer-options`, for more information.
 
-.. option:: -dM
+  .. option:: -dM
 
-  Instead of the normal output, generate a list of :samp:`#define`
-  directives for all the macros defined during the execution of the
-  preprocessor, including predefined macros.  This gives you a way of
-  finding out what is predefined in your version of the preprocessor.
-  Assuming you have no file foo.h, the command
+    Instead of the normal output, generate a list of :samp:`#define`
+    directives for all the macros defined during the execution of the
+    preprocessor, including predefined macros.  This gives you a way of
+    finding out what is predefined in your version of the preprocessor.
+    Assuming you have no file foo.h, the command
 
-.. code-block:: c++
+    .. code-block:: c++
 
-  touch foo.h; cpp -dM foo.h
+      touch foo.h; cpp -dM foo.h
 
-shows all the predefined macros.
+    shows all the predefined macros.
 
-If you use :option:`-dM` without the :option:`-E` option, :option:`-dM` is
-interpreted as a synonym for :option:`-fdump-rtl-mach`.
-See :ref:`developer-options`.
+    If you use :option:`-dM` without the :option:`-E` option, :option:`-dM` is
+    interpreted as a synonym for :option:`-fdump-rtl-mach`.
+    See :ref:`developer-options`.
 
-.. option:: -dD
+  .. option:: -dD
 
-  Like :option:`-dM` except in two respects: it does *not* include the
-  predefined macros, and it outputs *both* the :samp:`#define`
-  directives and the result of preprocessing.  Both kinds of output go to
-  the standard output file.
+    Like :option:`-dM` except in two respects: it does *not* include the
+    predefined macros, and it outputs *both* the :samp:`#define`
+    directives and the result of preprocessing.  Both kinds of output go to
+    the standard output file.
 
-.. option:: -dN
+  .. option:: -dN
 
-  Like :option:`-dD` , but emit only the macro names, not their expansions.
+    Like :option:`-dD` , but emit only the macro names, not their expansions.
 
-.. option:: -dI
+  .. option:: -dI
 
-  Output :samp:`#include` directives in addition to the result of
-  preprocessing.
+    Output :samp:`#include` directives in addition to the result of
+    preprocessing.
 
-.. option:: -dU
+  .. option:: -dU
 
-  Like :option:`-dD` except that only macros that are expanded, or whose
-  definedness is tested in preprocessor directives, are output; the
-  output is delayed until the use or test of the macro; and
-  :samp:`#undef` directives are also output for macros tested but
-  undefined at the time.
+    Like :option:`-dD` except that only macros that are expanded, or whose
+    definedness is tested in preprocessor directives, are output; the
+    output is delayed until the use or test of the macro; and
+    :samp:`#undef` directives are also output for macros tested but
+    undefined at the time.
 
 .. option:: -fdebug-cpp
 
@@ -542,7 +542,7 @@ See :ref:`developer-options`.
   token in the output is preceded by the dump of the map its location
   belongs to.
 
-When used from GCC without :option:`-E` , this option has no effect.
+  When used from GCC without :option:`-E` , this option has no effect.
 
 .. option:: -Wp,option, -Wp
 
@@ -562,8 +562,8 @@ When used from GCC without :option:`-E` , this option has no effect.
   supply system-specific preprocessor options that GCC does not 
   recognize.
 
-If you want to pass an option that takes an argument, you must use
-:option:`-Xpreprocessor` twice, once for the option and once for the argument.
+  If you want to pass an option that takes an argument, you must use
+  :option:`-Xpreprocessor` twice, once for the option and once for the argument.
 
 .. option:: -no-integrated-cpp
 
@@ -585,13 +585,13 @@ If you want to pass an option that takes an argument, you must use
   Adjust GCC to expect large source files, at the expense of slower
   compilation and higher memory usage.
 
-Specifically, GCC normally tracks both column numbers and line numbers
-within source files and it normally prints both of these numbers in
-diagnostics.  However, once it has processed a certain number of source
-lines, it stops tracking column numbers and only tracks line numbers.
-This means that diagnostics for later lines do not include column numbers.
-It also means that options like :option:`-Wmisleading-indentation` cease to work
-at that point, although the compiler prints a note if this happens.
-Passing :option:`-flarge-source-files` significantly increases the number
-of source lines that GCC can process before it stops tracking columns.
+  Specifically, GCC normally tracks both column numbers and line numbers
+  within source files and it normally prints both of these numbers in
+  diagnostics.  However, once it has processed a certain number of source
+  lines, it stops tracking column numbers and only tracks line numbers.
+  This means that diagnostics for later lines do not include column numbers.
+  It also means that options like :option:`-Wmisleading-indentation` cease to work
+  at that point, although the compiler prints a note if this happens.
+  Passing :option:`-flarge-source-files` significantly increases the number
+  of source lines that GCC can process before it stops tracking columns.
 

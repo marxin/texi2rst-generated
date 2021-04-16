@@ -359,41 +359,41 @@ The following type attributes are supported on most targets.
 
   .. index:: packed type attribute
 
-This attribute, attached to a ``struct``, ``union``, or C++ ``class``
-type definition, specifies that each of its members (other than zero-width
-bit-fields) is placed to minimize the memory required.  This is equivalent
-to specifying the ``packed`` attribute on each of the members.
+  This attribute, attached to a ``struct``, ``union``, or C++ ``class``
+  type definition, specifies that each of its members (other than zero-width
+  bit-fields) is placed to minimize the memory required.  This is equivalent
+  to specifying the ``packed`` attribute on each of the members.
 
-When attached to an ``enum`` definition, the ``packed`` attribute
-indicates that the smallest integral type should be used.
-Specifying the :option:`-fshort-enums` flag on the command line
-is equivalent to specifying the ``packed``
-attribute on all ``enum`` definitions.
+  When attached to an ``enum`` definition, the ``packed`` attribute
+  indicates that the smallest integral type should be used.
+  Specifying the :option:`-fshort-enums` flag on the command line
+  is equivalent to specifying the ``packed``
+  attribute on all ``enum`` definitions.
 
-In the following example ``struct my_packed_struct``'s members are
-packed closely together, but the internal layout of its ``s`` member
-is not packed-to do that, ``struct my_unpacked_struct`` needs to
-be packed too.
+  In the following example ``struct my_packed_struct``'s members are
+  packed closely together, but the internal layout of its ``s`` member
+  is not packed-to do that, ``struct my_unpacked_struct`` needs to
+  be packed too.
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  struct my_unpacked_struct
-   {
-      char c;
-      int i;
-   };
+    struct my_unpacked_struct
+     {
+        char c;
+        int i;
+     };
 
-  struct __attribute__ ((__packed__)) my_packed_struct
-    {
-       char c;
-       int  i;
-       struct my_unpacked_struct s;
-    };
+    struct __attribute__ ((__packed__)) my_packed_struct
+      {
+         char c;
+         int  i;
+         struct my_unpacked_struct s;
+      };
 
-You may only specify the ``packed`` attribute on the definition
-of an ``enum``, ``struct``, ``union``, or ``class``, 
-not on a ``typedef`` that does not also define the enumerated type,
-structure, union, or class.
+  You may only specify the ``packed`` attribute on the definition
+  of an ``enum``, ``struct``, ``union``, or ``class``, 
+  not on a ``typedef`` that does not also define the enumerated type,
+  structure, union, or class.
 
 :samp:`scalar_storage_order ("{endianness}")`
 
