@@ -568,7 +568,7 @@ violation of the ODR to define types with the same name differently.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Accept imaginary, fixed-point, or machine-defined
 literal number suffixes as GNU extensions.
@@ -619,7 +619,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a type with an ABI tag is used in a context that does not
 have that ABI tag.  See C++ Attributes for more information
@@ -629,7 +629,7 @@ about ABI tags.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about uses of a comma expression within a subscripting expression.
 This usage was deprecated in C++20.  However, a comma expression wrapped
@@ -648,7 +648,7 @@ Enabled by default with :option:`-std=c++20`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when performing class template argument deduction (CTAD) on a type with
 no explicitly written deduction guides.  This warning will point out cases
@@ -670,7 +670,7 @@ the following pattern:
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a class seems unusable because all the constructors or
 destructors in that class are private, and it has neither friends nor
@@ -682,7 +682,7 @@ a constructor or destructor.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when ``delete`` is used to destroy an instance of a class that
 has virtual functions and non-virtual destructor. It is unsafe to delete
@@ -694,7 +694,7 @@ by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn that the implicit declaration of a copy constructor or copy
 assignment operator is deprecated if the class has a user-provided
@@ -707,7 +707,7 @@ user-provided destructor.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable the warning about the case when the usual arithmetic conversions
 are applied on operands where one is of enumeration type and the other is
@@ -728,7 +728,7 @@ by :option:`-Wenum-conversion`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable the warning about the case when the usual arithmetic conversions
 are applied on operands where one is of enumeration type and the other is
@@ -749,7 +749,7 @@ by :option:`-Wenum-conversion`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn about uses of ``std::initializer_list`` that are likely
 to result in dangling pointers.  Since the underlying array for an
@@ -797,7 +797,7 @@ of the array's lifetime.  For example:
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn when a string or character literal is followed by a
 ud-suffix which does not begin with an underscore.  As a conforming
@@ -829,7 +829,7 @@ These warnings are enabled by default.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 For C++11 and later standards, narrowing conversions are diagnosed by default,
 as required by the standard.  A narrowing conversion from a constant produces
@@ -852,7 +852,7 @@ This flag is included in :option:`-Wall` and :option:`-Wc++11-compat`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a noexcept-expression evaluates to false because of a call
 to a function that does not have a non-throwing exception
@@ -863,7 +863,7 @@ the compiler to never throw an exception.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn if the C++17 feature making ``noexcept`` part of a function
 type changes the mangled name of a symbol relative to C++14.  Enabled
@@ -884,7 +884,7 @@ C++17 it calls ``f<void(*)()noexcept>``.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when the destination of a call to a raw memory function such as
 ``memset`` or ``memcpy`` is an object of class type, and when writing
@@ -911,7 +911,7 @@ the warning.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a class has virtual functions and an accessible non-virtual
 destructor itself or in an accessible polymorphic base class, in which
@@ -923,7 +923,7 @@ warning is automatically enabled if :option:`-Weffc++` is specified.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn on uses of the ``register`` storage class specifier, except
 when it is part of the GNU Explicit Register Variables extension.
@@ -935,7 +935,7 @@ Enabled by default with :option:`-std=c++17`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 .. index:: reordering, warning
 
@@ -960,7 +960,7 @@ a warning to that effect.  This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 This warning warns when a call to ``std::move`` prevents copy
 elision.  A typical scenario when copy elision can occur is when returning in
@@ -988,7 +988,7 @@ This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 This warning warns about redundant calls to ``std::move``; that is, when
 a move operation would have been performed even without the ``std::move``
@@ -1035,7 +1035,7 @@ This warning is enabled by :option:`-Wextra`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 This warning warns when a C++ range-based for-loop is creating an unnecessary
 copy.  This can happen when the range declaration is not a reference, but
@@ -1072,7 +1072,7 @@ This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about redundant class-key and enum-key in references to class types
 and enumerated types in contexts where the key can be eliminated without
@@ -1095,7 +1095,7 @@ On the other hand, in this example there is no warning:
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn
 if a class type has a base or a field whose type uses the anonymous
@@ -1113,7 +1113,7 @@ file, as those are unlikely to have multiple definitions.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about violations of the following style guidelines from Scott Meyers'
 Effective C++ series of books:
@@ -1145,7 +1145,7 @@ to filter out those warnings.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable the warning about the case when an exception handler is shadowed by
 another handler, which can point out a wrong ordering of exception handlers.
@@ -1154,7 +1154,7 @@ another handler, which can point out a wrong ordering of exception handlers.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about the use of an uncasted ``NULL`` as sentinel.  When
 compiling only with GCC this is a valid sentinel, as ``NULL`` is defined
@@ -1166,7 +1166,7 @@ But this use is not portable across different compilers.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable warnings when non-template friend functions are declared
 within a template.  In very old versions of GCC that predate implementation
@@ -1180,7 +1180,7 @@ and is enabled by default.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn if an old-style (C-style) cast to a non-void type is used within
 a C++ program.  The new-style casts (``dynamic_cast``,
@@ -1191,7 +1191,7 @@ less vulnerable to unintended effects and much easier to search for.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 .. index:: overloaded virtual function, warning
 
@@ -1224,7 +1224,7 @@ fails to compile.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable the diagnostic for converting a bound pointer to member function
 to a plain pointer.
@@ -1233,7 +1233,7 @@ to a plain pointer.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when overload resolution chooses a promotion from unsigned or
 enumerated type to a signed type, over a conversion to an unsigned type of
@@ -1244,7 +1244,7 @@ unsignedness, but the standard mandates the current behavior.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a primary template declaration is encountered.  Some coding
 rules disallow templates, and this may be used to enforce that rule.
@@ -1256,7 +1256,7 @@ templates.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn for mismatches between calls to ``operator new`` or ``operator
 delete`` and the corresponding call to the allocation or deallocation function.
@@ -1293,7 +1293,7 @@ new`` and ``operator delete``.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn for declarations of structs, classes, and class templates and their
 specializations with a class-key that does not match either the definition
@@ -1323,7 +1323,7 @@ own or in conjunction with :option:`-Wredundant-tags`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a class is defined with multiple direct base classes.  Some
 coding rules disallow multiple inheritance, and this may be used to
@@ -1359,7 +1359,7 @@ classes that indirectly use multiple inheritance.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Disable the warning about a throw-expression that will immediately
 result in a call to ``terminate``.
@@ -1368,7 +1368,7 @@ result in a call to ``terminate``.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about the most vexing parse syntactic ambiguity.  This warns about
 the cases when a declaration looks like a variable definition, but the
@@ -1402,7 +1402,7 @@ This warning is enabled by default.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn when a conversion function converts an
 object to the same type, to a base class of that type, or to void; such
@@ -1412,7 +1412,7 @@ a conversion function will never be called.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about deprecated uses of the ``volatile`` qualifier.  This includes
 postfix and prefix ``++`` and ``--`` expressions of
@@ -1429,7 +1429,7 @@ Enabled by default with :option:`-std=c++20`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when a literal :samp:`0` is used as null pointer constant.  This can
 be useful to facilitate the conversion to ``nullptr`` in C++11.
@@ -1501,7 +1501,7 @@ This warning is enabled by default.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn for conditionally-supported (C++11 [intro.defs]) constructs.
 
@@ -1509,7 +1509,7 @@ Warn for conditionally-supported (C++11 [intro.defs]) constructs.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn when deleting a pointer to incomplete type, which may cause
 undefined behavior at runtime.  This warning is enabled by default.
@@ -1518,7 +1518,7 @@ undefined behavior at runtime.  This warning is enabled by default.
 
   .. note::
 
-    (C++, Objective-C++ only)
+    C++, Objective-C++ only
 
 Warn about redundant semicolons after in-class function definitions.
 
@@ -1526,7 +1526,7 @@ Warn about redundant semicolons after in-class function definitions.
 
   .. note::
 
-    (C++, Objective-C++ only)
+    C++, Objective-C++ only
 
 This option controls warnings
 when a base class is inaccessible in a class derived from it due to
@@ -1552,7 +1552,7 @@ bases is enabled by the :option:`-Wextra` option.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Suppress warnings from applying the ``offsetof`` macro to a non-POD
 type.  According to the 2014 ISO C++ standard, applying ``offsetof``
@@ -1569,7 +1569,7 @@ of the C++ standard.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about a definition of an unsized deallocation function
 
@@ -1620,7 +1620,7 @@ or vice versa.  Enabled by :option:`-Wextra` along with
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn when an expression is casted to its own type.
 
@@ -1628,7 +1628,7 @@ Warn when an expression is casted to its own type.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Do not warn for conversions between ``NULL`` and non-pointer
 types. :option:`-Wconversion-null` is enabled by default.

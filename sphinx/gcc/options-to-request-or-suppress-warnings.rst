@@ -277,7 +277,7 @@ following cases:
 
   .. note::
 
-    (C, Objective-C, C++ and Objective-C++ only)
+    C, Objective-C, C++ and Objective-C++ only
 
 Warn about code affected by ABI changes.  This includes code that may
 not be compatible with the vendor-neutral C++ ABI as well as the psABI
@@ -424,7 +424,7 @@ The known psABI changes at this point include:
 
   .. note::
 
-    (C, C++, Objective-C and Objective-C++ only)
+    C, C++, Objective-C and Objective-C++ only
 
 Give a warning when a value of type ``float`` is implicitly
 promoted to ``double``.  CPUs with a 32-bit 'single-precision'
@@ -451,7 +451,7 @@ because the floating-point literal is a ``double``.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if a declaration has duplicate ``const``, ``volatile``,
 ``restrict`` or ``_Atomic`` specifier.  This warning is enabled by
@@ -674,7 +674,7 @@ can be disabled with the :option:`-Wno-nonnull-compare` option.
 
   .. note::
 
-    (C, C++, Objective-C and Objective-C++ only)
+    C, C++, Objective-C and Objective-C++ only
 
 Warn about uninitialized variables that are initialized with themselves.
 Note this option can only be used with the :option:`-Wuninitialized` option.
@@ -696,7 +696,7 @@ This warning is enabled by :option:`-Wall` in C++.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 This option controls warnings when a declaration does not specify a type.
 This warning is enabled by default in C99 and later dialects of C,
@@ -706,7 +706,7 @@ and also by :option:`-Wall`.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 This option controls warnings when a function is used before being declared.
 This warning is enabled by default in C99 and later dialects of C,
@@ -717,7 +717,7 @@ The warning is made into an error by :option:`-pedantic-errors`.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Same as :option:`-Wimplicit-int` and :option:`-Wimplicit-function-declaration`.
 This warning is enabled by :option:`-Wall`.
@@ -853,7 +853,7 @@ The :option:`-Wimplicit-fallthrough=3` warning is enabled by :option:`-Wextra`.
 
   .. note::
 
-    (C, C++, Objective-C and Objective-C++ only)
+    C, C++, Objective-C and Objective-C++ only
 
 Control if warnings triggered by the ``warn_if_not_aligned`` attribute
 should be issued.  These warnings are enabled by default.
@@ -862,7 +862,7 @@ should be issued.  These warnings are enabled by default.
 
   .. note::
 
-    (C and C++ only)
+    C and C++ only
 
 Warn if the return type of a function has a type qualifier
 such as ``const``.  For ISO C such a type qualifier has no effect,
@@ -878,7 +878,7 @@ This warning is also enabled by :option:`-Wextra`.
 
   .. note::
 
-    (C and C++ only)
+    C and C++ only
 
 This option controls warnings when an attribute is ignored.
 This is different from the
@@ -898,7 +898,7 @@ wrong place, etc.  This warning is enabled by default.
 
   .. note::
 
-    (C and C++ only)
+    C and C++ only
 
 Warn when the indentation of the code does not reflect the block structure.
 Specifically, a warning is issued for ``if``, ``else``, ``while``, and
@@ -1000,7 +1000,7 @@ This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C, C++, Objective-C and Objective-C++ only)
+    C, C++, Objective-C and Objective-C++ only
 
 Warn if a user-supplied include directory does not exist.
 
@@ -1306,7 +1306,7 @@ This warning is enabled by default for C and C++ programs.
 
   .. note::
 
-    (C and C++ only)
+    C and C++ only
 
 Warn when ``__sync_fetch_and_nand`` and ``__sync_nand_and_fetch``
 built-in functions are used.  These functions changed semantics in GCC 4.4.
@@ -1352,7 +1352,7 @@ To suppress this warning use the ``unused`` attribute
 
   .. note::
 
-    (C, Objective-C, C++ and Objective-C++ only)
+    C, Objective-C, C++ and Objective-C++ only
 
 Warn when a typedef locally defined in a function is not used.
 This warning is enabled by :option:`-Wall`.
@@ -2127,7 +2127,7 @@ also warn for conditional operators:
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Do not warn if type qualifiers on pointers are being discarded.
 Typically, the compiler warns if a ``const char *`` variable is
@@ -2138,7 +2138,7 @@ can be used to suppress such a warning.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Do not warn if type qualifiers on arrays which are pointer targets
 are being discarded.  Typically, the compiler warns if a
@@ -2150,7 +2150,7 @@ suppress such a warning.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Do not warn when there is a conversion between pointers that have incompatible
 types.  This warning is for cases not covered by :option:`-Wno-pointer-sign` ,
@@ -2161,7 +2161,7 @@ signedness.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Do not warn about incompatible integer to pointer and pointer to integer
 conversions.  This warning is about implicit conversions; for explicit
@@ -2266,7 +2266,7 @@ probably mistaken.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn about certain constructs that behave differently in traditional and
 ISO C.  Also warn about ISO C constructs that have no traditional C
@@ -2341,7 +2341,7 @@ equivalent, and/or problematic constructs that should be avoided.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if a prototype causes a type conversion that is different from what
 would happen to the same argument in the absence of a prototype.  This
@@ -2353,7 +2353,7 @@ except when the same as the default promotion.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn when a declaration is found after a statement in a block.  This
 construct, known from C++, was introduced with ISO C99 and is by default
@@ -2376,7 +2376,7 @@ allowed in GCC.  It is not supported by ISO C90.  See :ref:`mixed-labels-and-dec
 
   .. note::
 
-    (Objective-C only)
+    Objective-C only
 
 Do not warn whenever a local variable shadows an instance variable in an
 Objective-C method.
@@ -2530,7 +2530,7 @@ Warnings controlled by the option can be disabled either by specifying
 
   .. note::
 
-    (MinGW targets only)
+    MinGW targets only
 
 When used in combination with :option:`-Wformat`
 and :option:`-pedantic` without GNU extensions, this option
@@ -2583,7 +2583,7 @@ This warning is enabled by default.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn for calls to standard functions that compute the absolute value
 of an argument when a more appropriate standard function is available.
@@ -2674,7 +2674,7 @@ This warning is on by default.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn when a function call is cast to a non-matching type.
 For example, warn if a call to a function returning an integer type 
@@ -2684,7 +2684,7 @@ is cast to a pointer type.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn about features not present in ISO C90, but present in ISO C99.
 For instance, warn about use of variable length arrays, ``long long``
@@ -2696,7 +2696,7 @@ in the expression that follows ``__extension__``.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn about features not present in ISO C99, but present in ISO C11.
 For instance, warn about use of anonymous structures and unions,
@@ -2709,7 +2709,7 @@ disabled in the expression that follows ``__extension__``.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn about features not present in ISO C11, but present in ISO C2X.
 For instance, warn about omitting the string in ``_Static_assert``,
@@ -2722,7 +2722,7 @@ standards mode.  Warnings are disabled in the expression that follows
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn about ISO C constructs that are outside of the common subset of
 ISO C and ISO C++, e.g. request for implicit conversion from
@@ -2732,7 +2732,7 @@ ISO C and ISO C++, e.g. request for implicit conversion from
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about C++ constructs whose meaning differs between ISO C++ 1998
 and ISO C++ 2011, e.g., identifiers in ISO C++ 1998 that are keywords
@@ -2743,7 +2743,7 @@ enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about C++ constructs whose meaning differs between ISO C++ 2011
 and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
@@ -2752,7 +2752,7 @@ and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about C++ constructs whose meaning differs between ISO C++ 2014
 and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
@@ -2761,7 +2761,7 @@ and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
 
   .. note::
 
-    (C++ and Objective-C++ only)
+    C++ and Objective-C++ only
 
 Warn about C++ constructs whose meaning differs between ISO C++ 2017
 and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
@@ -2926,7 +2926,7 @@ This warning is enabled by :option:`-Wparentheses`.
 
   .. note::
 
-    (C, Objective-C only)
+    C, Objective-C only
 
 Warn if a ``goto`` statement or a ``switch`` statement jumps
 forward across the initialization of a variable, or jumps backward to a
@@ -3150,7 +3150,7 @@ the declaration of the function is diagnosed as well.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if a function is declared or defined without specifying the
 argument types.  (An old-style function definition is permitted without
@@ -3161,7 +3161,7 @@ types.)
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn for obsolescent usages, according to the C Standard, in a
 declaration. For example, warn if storage-class specifiers like
@@ -3172,7 +3172,7 @@ is also enabled by :option:`-Wextra`.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if an old-style function definition is used.  A warning is given
 even if there is a previous prototype.  A definition using :samp:`()`
@@ -3184,7 +3184,7 @@ old-style definition for older standards.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 A function parameter is declared without a type specifier in K&R-style
 functions:
@@ -3199,7 +3199,7 @@ This warning is also enabled by :option:`-Wextra`.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if a global function is defined without a previous prototype
 declaration.  This warning is issued even if the definition itself
@@ -3351,7 +3351,7 @@ cannot be fixed to display these characters distinctly.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if an initialized field without side effects is overridden when
 using designated initializers (see :ref:`Designated
@@ -3365,7 +3365,7 @@ This warning is included in :option:`-Wextra`.  To get other
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Do not warn if an initialized field with side effects is overridden when
 using designated initializers (see :ref:`Designated
@@ -3415,7 +3415,7 @@ This warning is enabled by default.  Use
 
   .. note::
 
-    (C, C++, Objective-C and Objective-C++ only)
+    C, C++, Objective-C and Objective-C++ only
 
 Warn if a structure field with explicitly specified alignment in a
 packed struct or union is misaligned.  For example, a warning will
@@ -3470,7 +3470,7 @@ is included in :option:`-Wall`.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn if an ``extern`` declaration is encountered within a function.
 
@@ -3506,7 +3506,7 @@ warnings produced by :option:`-Winline` to appear or disappear.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Suppress warnings from casts from a pointer to an integer type of a
 different size.
@@ -3631,7 +3631,7 @@ involving ordinary array arguments.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Warn for pointer argument passing or assignment with different signedness.
 This option is only supported for C and Objective-C.  It is implied by
@@ -3663,7 +3663,7 @@ This option is implied by :option:`-Wpedantic` , and can be disabled with
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Issue a warning for any floating constant that does not have
 a suffix.  When used together with :option:`-Wsystem-headers` it
@@ -3681,7 +3681,7 @@ from the decimal floating-point extension to C99.
 
   .. note::
 
-    (C and Objective-C only)
+    C and Objective-C only
 
 Suppress warnings when a positional initializer is used to initialize
 a structure that has been marked with the ``designated_init``

@@ -566,7 +566,7 @@ structure, union, or class.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
   .. index:: objc_root_class type attribute
 

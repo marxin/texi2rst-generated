@@ -190,7 +190,7 @@ support for invoking the ``- (id) .cxx_construct`` and
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Warn whenever an Objective-C assignment is being intercepted by the
 garbage collector.
@@ -199,7 +199,7 @@ garbage collector.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Do not warn if a property for an Objective-C object has no assign
 semantics specified.
@@ -208,7 +208,7 @@ semantics specified.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 If a class is declared to implement a protocol, a warning is issued for
 every method in the protocol that is not implemented by the class.  The
@@ -222,7 +222,7 @@ and no warning is issued for them.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Warn if a class interface lacks a superclass. Most classes will inherit
 from ``NSObject`` (or ``Object``) for example.  When declaring
@@ -233,7 +233,7 @@ marking their interfaces with ``__attribute__((objc_root_class))``.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Warn if multiple methods of different types for the same selector are
 found during compilation.  The check is performed on the list of methods
@@ -250,7 +250,7 @@ being used.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Warn if multiple methods with differing argument and/or return types are
 found for a given selector when attempting to send a message using this
@@ -263,7 +263,7 @@ and alignment.
 
   .. note::
 
-    (Objective-C and Objective-C++ only)
+    Objective-C and Objective-C++ only
 
 Warn if a ``@selector(...)`` expression referring to an
 undeclared selector is found.  A selector is considered undeclared if no
