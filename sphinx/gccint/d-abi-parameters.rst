@@ -59,3 +59,9 @@ section
   and :samp:`{link_windows}` to ``1`` to apply ``stdcall`` to functions with
   ``extern(Windows)`` linkage.
 
+.. index:: TARGET_D_TEMPLATES_ALWAYS_COMDAT
+
+D Target HookboolTARGET_D_TEMPLATES_ALWAYS_COMDATThis flag is true if instantiated functions and variables are always COMDAT
+if they have external linkage.  If this flag is false, then instantiated
+decls will be emitted as weak symbols.  The default is ``false``.
+
