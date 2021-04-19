@@ -24,7 +24,7 @@ MicroBlaze Options
 .. option:: -mcpu=cpu-type
 
   Use features of, and schedule code for, the given CPU.
-  Supported values are in the format :samp:`v :samp:`{X}`.:samp:`{YY}`.:samp:`{Z}``,
+  Supported values are in the format :samp:`v{X}.{YY}.{Z}`,
   where :samp:`{X}` is a major version, :samp:`{YY}` is the minor version, and
   :samp:`{Z}` is compatibility code.  Example values are :samp:`v3.00.a`,
   :samp:`v4.00.b`, :samp:`v5.00.a`, :samp:`v5.00.b`, :samp:`v6.00.a`.

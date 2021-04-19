@@ -46,7 +46,7 @@ triggered with :dfn:`preprocessing directives`.  Preprocessing directives
 are lines in your program that start with :samp:`#`.  Whitespace is
 allowed before and after the :samp:`#`.  The :samp:`#` is followed by an
 identifier, the :dfn:`directive name`.  It specifies the operation to
-perform.  Directives are commonly referred to as :samp:`# :samp:`{name}``
+perform.  Directives are commonly referred to as :samp:`#{name}`
 where :samp:`{name}` is the directive name.  For example, :samp:`#define` is
 the directive that defines a macro.
 

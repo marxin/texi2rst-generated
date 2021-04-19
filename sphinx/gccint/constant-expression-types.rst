@@ -167,7 +167,7 @@ The simplest RTL expressions are those that represent constant values.
 
   Each vector constant :samp:`{v}` is treated as a specific instance of an
   arbitrary-length sequence that itself contains
-  :samp:`CONST_VECTOR_NPATTERNS ( :samp:`{v}` )` interleaved patterns.  Each
+  :samp:`CONST_VECTOR_NPATTERNS ({v})` interleaved patterns.  Each
   pattern has the form:
 
   .. code-block:: c++
@@ -179,7 +179,7 @@ The simplest RTL expressions are those that represent constant values.
   only the first two elements are needed.  If in addition each :samp:`{base1}`
   is equal to the corresponding :samp:`{base0}` , only the first element in
   each pattern is needed.  The number of determining elements per pattern
-  is given by :samp:`CONST_VECTOR_NELTS_PER_PATTERN ( :samp:`{v}` )`.
+  is given by :samp:`CONST_VECTOR_NELTS_PER_PATTERN ({v})`.
 
   For example, the constant:
 
@@ -226,22 +226,22 @@ The simplest RTL expressions are those that represent constant values.
   fewest patterns or (if both encodings have the same number of
   petterns) the one with the fewest encoded elements.
 
-  :samp:`const_vector_encoding_nelts ( :samp:`{v}` )` gives the total number of
+  :samp:`const_vector_encoding_nelts ({v})` gives the total number of
   encoded elements in :samp:`{v}` , which is 6 in the example above.
   ``CONST_VECTOR_ENCODED_ELT (v, i)`` accesses the value
   of encoded element :samp:`{i}`.
 
-  :samp:`CONST_VECTOR_DUPLICATE_P ( :samp:`{v}` )` is true if :samp:`{v}` simply contains
-  repeated instances of :samp:`CONST_VECTOR_NPATTERNS ( :samp:`{v}` )` values.  This is
-  a shorthand for testing :samp:`CONST_VECTOR_NELTS_PER_PATTERN ( :samp:`{v}` ) == 1`.
+  :samp:`CONST_VECTOR_DUPLICATE_P ({v})` is true if :samp:`{v}` simply contains
+  repeated instances of :samp:`CONST_VECTOR_NPATTERNS ({v})` values.  This is
+  a shorthand for testing :samp:`CONST_VECTOR_NELTS_PER_PATTERN ({v}) == 1`.
 
-  :samp:`CONST_VECTOR_STEPPED_P ( :samp:`{v}` )` is true if at least one
+  :samp:`CONST_VECTOR_STEPPED_P ({v})` is true if at least one
   pattern in :samp:`{v}` has a nonzero step.  This is a shorthand for
-  testing :samp:`CONST_VECTOR_NELTS_PER_PATTERN ( :samp:`{v}` ) == 3`.
+  testing :samp:`CONST_VECTOR_NELTS_PER_PATTERN ({v}) == 3`.
 
   ``CONST_VECTOR_NUNITS (v)`` gives the total number of elements
   in :samp:`{v}` ; it is a shorthand for getting the number of units in
-  :samp:`GET_MODE ( :samp:`{v}` )`.
+  :samp:`GET_MODE ({v})`.
 
   The utility function ``const_vector_elt`` gives the value of an
   arbitrary element as an ``rtx``.  ``const_vector_int_elt`` gives

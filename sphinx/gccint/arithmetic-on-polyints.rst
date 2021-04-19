@@ -120,11 +120,11 @@ return the results by pointer.  The routines are:
   compile-time constant.
 
 :samp:`can_div_trunc_p ({a}, {b}, &{quotient})` :samp:`can_div_trunc_p ({a}, {b}, &{quotient}, &{remainder})`
-  Return true if we can calculate :samp:`trunc ( :samp:`{a}` / :samp:`{b}` )` at compile
+  Return true if we can calculate :samp:`trunc ({a} / {b})` at compile
   time, storing the result in :samp:`{quotient}` and :samp:`{remainder}` if so.
 
 :samp:`can_div_away_from_zero_p ({a}, {b}, &{quotient})`
-  Return true if we can calculate :samp:`:samp:`{a}` / :samp:`{b}`` at compile time,
+  Return true if we can calculate :samp:`{a} / {b}` at compile time,
   rounding away from zero.  Store the result in :samp:`{quotient}` if so.
 
   Note that this is true if and only if ``can_div_trunc_p`` is true.
@@ -134,7 +134,7 @@ return the results by pointer.  The routines are:
 
 :samp:`exact_div ({a}, {b})`
   Assert that :samp:`{a}` is a multiple of :samp:`{b}` and return
-  :samp:`:samp:`{a}` / :samp:`{b}``.  The result is a ``poly_int`` if :samp:`{a}`
+  :samp:`{a} / {b}`.  The result is a ``poly_int`` if :samp:`{a}`
   is a ``poly_int``.
 
 Other ``poly_int`` arithmetic
@@ -143,10 +143,10 @@ Other ``poly_int`` arithmetic
 There are tentative routines for other operations besides division:
 
 :samp:`can_ior_p ({a}, {b}, &{result})`
-  Return true if we can calculate :samp:`:samp:`{a}` | :samp:`{b}`` at compile time,
+  Return true if we can calculate :samp:`{a} | {b}` at compile time,
   storing the result in :samp:`{result}` if so.
 
-  Also, ANDs with a value :samp:`(1 << :samp:`{y}` ) - 1` or its inverse can be
+  Also, ANDs with a value :samp:`(1 << {y}) - 1` or its inverse can be
 treated as alignment operations.  See :ref:`alignment-of-poly_ints`.
 
 In addition, the following miscellaneous routines are available:

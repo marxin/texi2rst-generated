@@ -237,7 +237,7 @@ terminate the stack backtrace.  New ports should avoid this.
 
   Express the value of ``poly_int`` indeterminate :samp:`{i}` as a DWARF
   expression, with :samp:`{i}` counting from 1.  Return the number of a DWARF
-  register :samp:`{R}` and set :samp:`* :samp:`{factor}`` and :samp:`* :samp:`{offset}`` such
+  register :samp:`{R}` and set :samp:`*{factor}` and :samp:`*{offset}` such
   that the value of the indeterminate is:
 
   .. code-block:: c++
@@ -741,7 +741,7 @@ defined and 0 otherwise.
 MacroDWARF_LAZY_REGISTER_VALUE(:samp:`{regno}`,:samp:`{value}`)Define this macro if the target has pseudo DWARF registers whose
 values need to be computed lazily on demand by the unwinder (such as when
 referenced in a CFA expression).  The macro returns true if :samp:`{regno}`
-is such a register and stores its value in :samp:`* :samp:`{value}`` if so.
+is such a register and stores its value in :samp:`*{value}` if so.
 
 .. _elimination:
 

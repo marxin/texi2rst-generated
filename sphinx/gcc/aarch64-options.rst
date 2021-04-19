@@ -283,7 +283,7 @@ These options are defined for AArch64 implementations:
   :samp:`standard` turns on all types of branch protection features.  If a feature
   has additional tuning options, then :samp:`standard` sets it to its standard
   level.
-  :samp:`pac-ret[+ :samp:`{leaf}` ]` turns on return address signing to its standard
+  :samp:`pac-ret[+{leaf}]` turns on return address signing to its standard
   level: signing functions that save the return address to memory (non-leaf
   functions will practically always do this) using the a-key.  The optional
   argument :samp:`leaf` can be used to extend the signing to include leaf

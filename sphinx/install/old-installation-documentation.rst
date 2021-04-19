@@ -52,7 +52,7 @@ Here is the procedure for installing GCC on a GNU or Unix system.
   abbreviated.
 
   A canonical configuration name has three parts, separated by dashes.
-  It looks like this: :samp:`:samp:`{cpu}` - :samp:`{company}` - :samp:`{system}``.
+  It looks like this: :samp:`{cpu}-{company}-{system}`.
   (The three parts may themselves contain dashes; configure
   can figure out which dashes serve which purpose.)  For example,
   :samp:`m68k-sun-sunos4.1` specifies a Sun 3.

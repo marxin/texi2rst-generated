@@ -83,7 +83,7 @@ libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run to launch them
 on the GPU.
 
 .. _arc-x-elf32:
-arc-*-elf32Use :samp:`configure --target=arc-elf32 --with-cpu= :samp:`{cpu}` --enable-languages="c,c++"`
+arc-*-elf32Use :samp:`configure --target=arc-elf32 --with-cpu={cpu} --enable-languages="c,c++"`
 to configure GCC, with :samp:`{cpu}` being one of :samp:`arc600`, :samp:`arc601`,
 or :samp:`arc700`.
 

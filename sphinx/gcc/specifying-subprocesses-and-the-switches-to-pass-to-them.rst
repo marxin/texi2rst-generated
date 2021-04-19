@@ -57,7 +57,7 @@ character on the line, which can be one of the following:
   character, in which case the text is appended to the spec.
 
 :samp:`[{suffix}]:`
-  Creates a new :samp:`[ :samp:`{suffix}` ] spec` pair.  All lines after this directive
+  Creates a new :samp:`[{suffix}] spec` pair.  All lines after this directive
   and up to the next directive or blank line are considered to make up the
   spec string for the indicated suffix.  When the compiler encounters an
   input file with the named suffix, it processes the spec string in
@@ -192,9 +192,9 @@ together or combine them with constant text in a single argument.
   each time it appears instead of once per compilation.
 
 :samp:`%U{suffix}`
-  Substitutes the last file name generated with :samp:`%u :samp:`{suffix}``, generating a
+  Substitutes the last file name generated with :samp:`%u{suffix}`, generating a
   new one if there is no such last file name.  In the absence of any
-  :samp:`%u :samp:`{suffix}``, this is just like :samp:`%g :samp:`{suffix}``, except they don't share
+  :samp:`%u{suffix}`, this is just like :samp:`%g{suffix}`, except they don't share
   the same suffix *space*, so :samp:`%g.s ... %U.s ... %g.s ... %U.s`
   involves the generation of two distinct file names, one
   for each :samp:`%g.s` and another for each :samp:`%U.s`.  Previously, :samp:`%U` was

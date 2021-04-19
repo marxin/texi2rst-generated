@@ -53,20 +53,20 @@ value is 0.
 .. function:: void TARGET_ASM_OUTPUT_ANCHOR(rtx x)
 
   Write the assembly code to define section anchor :samp:`{x}` , which is a
-  ``SYMBOL_REF`` for which :samp:`SYMBOL_REF_ANCHOR_P ( :samp:`{x}` )` is true.
+  ``SYMBOL_REF`` for which :samp:`SYMBOL_REF_ANCHOR_P ({x})` is true.
   The hook is called with the assembly output position set to the beginning
   of ``SYMBOL_REF_BLOCK (x)``.
 
   If ``ASM_OUTPUT_DEF`` is available, the hook's default definition uses
-  it to define the symbol as :samp:`. + SYMBOL_REF_BLOCK_OFFSET ( :samp:`{x}` )`.
+  it to define the symbol as :samp:`. + SYMBOL_REF_BLOCK_OFFSET ({x})`.
   If ``ASM_OUTPUT_DEF`` is not available, the hook's default definition
   is ``NULL``, which disables the use of section anchors altogether.
 
 .. function:: bool TARGET_USE_ANCHORS_FOR_SYMBOL_P(const_rtx x)
 
   Return true if GCC should attempt to use anchors to access ``SYMBOL_REF``
-  :samp:`{x}`.  You can assume :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ( :samp:`{x}` )` and
-  :samp:`!SYMBOL_REF_ANCHOR_P ( :samp:`{x}` )`.
+  :samp:`{x}`.  You can assume :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ({x})` and
+  :samp:`!SYMBOL_REF_ANCHOR_P ({x})`.
 
   The default version is correct for most targets, but you might need to
   intercept this hook to handle things like target-specific attributes

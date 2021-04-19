@@ -29,7 +29,7 @@ hard registers, and if ``REGISTER_MOVE_COST`` applied to their
 classes returns a value of 2, reload does not check to ensure that the
 constraints of the insn are met.  Setting a cost of other than 2 will
 allow reload to verify that the constraints are met.  You should do this
-if the :samp:`mov :samp:`{m}`` pattern's constraints do not allow such copying.
+if the :samp:`mov{m}` pattern's constraints do not allow such copying.
 
 These macros are obsolete, new ports should use the target hook
 ``TARGET_REGISTER_MOVE_COST`` instead.
@@ -51,7 +51,7 @@ These macros are obsolete, new ports should use the target hook
   classes returns a value of 2, reload does not check to ensure that the
   constraints of the insn are met.  Setting a cost of other than 2 will
   allow reload to verify that the constraints are met.  You should do this
-  if the :samp:`mov :samp:`{m}`` pattern's constraints do not allow such copying.
+  if the :samp:`mov{m}` pattern's constraints do not allow such copying.
 
   The default version of this function returns 2.
 
@@ -336,9 +336,9 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   available for examination in :samp:`{x}` , and the fact that :samp:`{x}` appears
   as operand :samp:`{opno}` of an expression with rtx code :samp:`{outer_code}`.
   That is, the hook can assume that there is some rtx :samp:`{y}` such
-  that :samp:`GET_CODE ( :samp:`{y}` ) == :samp:`{outer_code}`` and such that
-  either (a) :samp:`XEXP ( :samp:`{y}` , :samp:`{opno}` ) == :samp:`{x}`` or
-  (b) :samp:`XVEC ( :samp:`{y}` , :samp:`{opno}` )` contains :samp:`{x}`.
+  that :samp:`GET_CODE ({y}) == {outer_code}` and such that
+  either (a) :samp:`XEXP ({y}, {opno}) == {x}` or
+  (b) :samp:`XVEC ({y}, {opno})` contains :samp:`{x}`.
 
   :samp:`{mode}` is :samp:`{x}` 's machine mode, or for cases like ``const_int`` that
   do not have a mode, the mode in which :samp:`{x}` is used.

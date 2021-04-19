@@ -28,7 +28,7 @@ sequent, sgi, sony, sun, tti, unicom, wrs.
 
 The company name is meaningful only to disambiguate when the rest of
 the information supplied is insufficient.  You can omit it, writing
-just :samp:`:samp:`{cpu}` - :samp:`{system}``, if it is not needed.  For example,
+just :samp:`{cpu}-{system}`, if it is not needed.  For example,
 :samp:`vax-ultrix4.2` is equivalent to :samp:`vax-dec-ultrix4.2`.
 
 Here is a list of system types:

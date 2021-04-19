@@ -137,7 +137,7 @@ must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
   ``CALL_REALLY_USED_REGISTERS``.  However, some ABIs specify that calls
   must preserve certain bits of a particular register but can alter others.
   This hook should return true if this applies to at least one of the
-  registers in :samp:`(reg: :samp:`{mode}`:samp:`{regno}` )`, and if as a result the
+  registers in :samp:`(reg:{mode}{regno})`, and if as a result the
   call would alter part of the :samp:`{mode}` value.  For example, if a call
   preserves the low 32 bits of a 64-bit hard register :samp:`{regno}` but can
   clobber the upper 32 bits, this hook should return true for a 64-bit mode
@@ -363,7 +363,7 @@ floating-point registers is still 32-bit.
   odd register numbers for such modes.
 
   The minimum requirement for a mode to be OK in a register is that the
-  :samp:`mov :samp:`{mode}`` instruction pattern support moves between the
+  :samp:`mov{mode}` instruction pattern support moves between the
   register and other hard register in the same class and that moving a
   value into the register and back out not alter it.
 

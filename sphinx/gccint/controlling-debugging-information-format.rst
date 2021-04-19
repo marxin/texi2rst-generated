@@ -135,7 +135,7 @@ macro applies only to DBX debugging information format.
 .. index:: DBX_NO_XREFS
 
 MacroDBX_NO_XREFSDefine this macro if DBX on your system does not support the construct
-:samp:`xs :samp:`{tagname}``.  On some systems, this construct is used to
+:samp:`xs{tagname}`.  On some systems, this construct is used to
 describe a forward reference to a structure named :samp:`{tagname}`.
 On other systems, this construct is not supported at all.
 

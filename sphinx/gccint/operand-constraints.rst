@@ -3377,18 +3377,18 @@ following variables:
   The machine mode of :samp:`{op}`.
 
 :samp:`{ival}`
-  :samp:`INTVAL ( :samp:`{op}` )`, if :samp:`{op}` is a ``const_int``.
+  :samp:`INTVAL ({op})`, if :samp:`{op}` is a ``const_int``.
 
 :samp:`{hval}`
-  :samp:`CONST_DOUBLE_HIGH ( :samp:`{op}` )`, if :samp:`{op}` is an integer
+  :samp:`CONST_DOUBLE_HIGH ({op})`, if :samp:`{op}` is an integer
   ``const_double``.
 
 :samp:`{lval}`
-  :samp:`CONST_DOUBLE_LOW ( :samp:`{op}` )`, if :samp:`{op}` is an integer
+  :samp:`CONST_DOUBLE_LOW ({op})`, if :samp:`{op}` is an integer
   ``const_double``.
 
 :samp:`{rval}`
-  :samp:`CONST_DOUBLE_REAL_VALUE ( :samp:`{op}` )`, if :samp:`{op}` is a floating-point
+  :samp:`CONST_DOUBLE_REAL_VALUE ({op})`, if :samp:`{op}` is a floating-point
   ``const_double``.
 
   The :samp:`{*val}` variables should only be used once another piece of the

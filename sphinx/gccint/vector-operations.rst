@@ -52,5 +52,5 @@ operations.
 
 :samp:`(vec_series:{m}{base}{step})`
   This operation creates a vector in which element :samp:`{i}` is equal to
-  :samp:`:samp:`{base}` + :samp:`{i}` * :samp:`{step}``.  :samp:`{m}` must be a vector integer mode.
+  :samp:`{base} + {i}*{step}`.  :samp:`{m}` must be a vector integer mode.
 

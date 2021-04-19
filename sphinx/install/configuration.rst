@@ -373,13 +373,13 @@ corresponding :option:`--without` option.
   whether you use the GNU assembler.  On any other system,
   :option:`--with-gnu-as` has no effect.
 
-  * :samp:`hppa1.0- :samp:`{any}` - :samp:`{any}``
+  * :samp:`hppa1.0-{any}-{any}`
 
-  * :samp:`hppa1.1- :samp:`{any}` - :samp:`{any}``
+  * :samp:`hppa1.1-{any}-{any}`
 
-  * :samp:`sparc-sun-solaris2.:samp:`{any}``
+  * :samp:`sparc-sun-solaris2.{any}`
 
-  * :samp:`sparc64- :samp:`{any}` -solaris2.:samp:`{any}``
+  * :samp:`sparc64-{any}-solaris2.{any}`
 
 --with-as= :samp:`{.. _with-as:
 pathname}`
@@ -1234,7 +1234,7 @@ aix`, :samp:`svr4` or :samp:`both`
 
 ``--nfp``
   Specify that the machine does not have a floating point unit.  This
-  option only applies to :samp:`m68k-sun-sunos :samp:`{n}``.  On any other
+  option only applies to :samp:`m68k-sun-sunos{n}`.  On any other
   system, :option:`--nfp` has no effect.
 
 ``--enable-werror`` ``--disable-werror`` ``--enable-werror=yes`` ``--enable-werror=no``
@@ -1403,9 +1403,9 @@ aix`, :samp:`svr4` or :samp:`both`
   library and/or the MPC library installed in a standard location and
   do not have their sources present in the GCC source tree then you
   can explicitly specify the directory where they are installed
-  (:samp:`--with-gmp= :samp:`{gmpinstalldir}``,
-  :samp:`--with-mpfr=/ :samp:`{mpfrinstalldir}``,
-  :samp:`--with-mpc=/ :samp:`{mpcinstalldir}``).  The
+  (:samp:`--with-gmp={gmpinstalldir}`,
+  :samp:`--with-mpfr=/{mpfrinstalldir}`,
+  :samp:`--with-mpc=/{mpcinstalldir}`).  The
   :option:`--with-gmp=/`:samp:`{gmpinstalldir}` option is shorthand for
   :option:`--with-gmp-lib=/`:samp:`{gmpinstalldir}` /lib and
   :option:`--with-gmp-include=/`:samp:`{gmpinstalldir}` /include.  Likewise the
@@ -1427,7 +1427,7 @@ aix`, :samp:`svr4` or :samp:`both`
 :samp:`--with-isl={pathname}` :samp:`--with-isl-include={pathname}` :samp:`--with-isl-lib={pathname}`
   If you do not have the isl library installed in a standard location and you
   want to build GCC, you can explicitly specify the directory where it is
-  installed (:samp:`--with-isl=/ :samp:`{islinstalldir}``). The
+  installed (:samp:`--with-isl=/{islinstalldir}`). The
   :option:`--with-isl=/`:samp:`{islinstalldir}` option is shorthand for
   :option:`--with-isl-lib=/`:samp:`{islinstalldir}` /lib and
   :option:`--with-isl-include=/`:samp:`{islinstalldir}` /include. If this
@@ -1461,8 +1461,8 @@ aix`, :samp:`svr4` or :samp:`both`
 
 :samp:`--with-debug-prefix-map={map}`
   Convert source directory names using :option:`-fdebug-prefix-map` when
-  building runtime libraries.  :samp:`:samp:`{map}`` is a space-separated
-  list of maps of the form :samp:`:samp:`{old}` = :samp:`{new}``.
+  building runtime libraries.  :samp:`{map}` is a space-separated
+  list of maps of the form :samp:`{old}={new}`.
 
 ``--enable-linker-build-id``
   Tells GCC to pass :option:`--build-id` option to the linker for all final
@@ -1806,7 +1806,7 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
 :samp:`--with-target-bdw-gc={list}` :samp:`--with-target-bdw-gc-include={list}` :samp:`--with-target-bdw-gc-lib={list}`
   Specify search directories for the garbage collector header files and
   libraries. :samp:`{list}` is a comma separated list of key value pairs of the
-  form :samp:`:samp:`{multilibdir}` = :samp:`{path}``, where the default multilib key
+  form :samp:`{multilibdir}={path}`, where the default multilib key
   is named as :samp:`.` (dot), or is omitted (e.g.
   :samp:`--with-target-bdw-gc=/opt/bdw-gc,32=/opt-bdw-gc32`).
 

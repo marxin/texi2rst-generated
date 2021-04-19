@@ -93,8 +93,8 @@ Nodes and edges in the exploded graph are called 'exploded nodes' and
 from the ``snodes`` and ``sedges`` in the supergraph).
 
 Each graph numbers its nodes, giving unique identifiers - supernodes
-are referred to throughout dumps in the form :samp:`SN': :samp:`{index}`` and
-exploded nodes in the form :samp:`EN: :samp:`{index}`` (e.g. :samp:`SN: 2` and
+are referred to throughout dumps in the form :samp:`SN': {index}` and
+exploded nodes in the form :samp:`EN: {index}` (e.g. :samp:`SN: 2` and
 :samp:`EN:29`).
 
 The supergraph can be seen using :option:`-fdump-analyzer-supergraph-graph`.

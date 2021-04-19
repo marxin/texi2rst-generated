@@ -174,7 +174,7 @@ second operand.
 
 :samp:`(fma:{m}{x}{y}{z})`
   Represents the ``fma``, ``fmaf``, and ``fmal`` builtin
-  functions, which compute :samp:`:samp:`{x}` * :samp:`{y}` + :samp:`{z}``
+  functions, which compute :samp:`{x} * {y} + {z}`
   without doing an intermediate rounding step.
 
   .. index:: div

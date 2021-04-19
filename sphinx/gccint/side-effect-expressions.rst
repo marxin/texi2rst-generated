@@ -220,7 +220,7 @@ the operands of these.
   instead.  The ``use`` RTX is most commonly useful to describe that
   a fixed register is implicitly used in an insn.  It is also safe to use
   in patterns where the compiler knows for other reasons that the result
-  of the whole pattern is variable, such as :samp:`cpymem :samp:`{m}`` or
+  of the whole pattern is variable, such as :samp:`cpymem{m}` or
   :samp:`call` patterns.
 
   During the reload phase, an insn that has a ``use`` as pattern

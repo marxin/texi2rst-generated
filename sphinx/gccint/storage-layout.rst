@@ -253,14 +253,14 @@ On 32-bit ELF the largest supported section alignment in bits is
 .. function:: void TARGET_LOWER_LOCAL_DECL_ALIGNMENT(tree decl)
 
   Define this hook to lower alignment of local, parm or result
-  decl :samp:`( :samp:`{decl}` )`.
+  decl :samp:`({decl})`.
 
 .. function:: HOST_WIDE_INT TARGET_STATIC_RTX_ALIGNMENT(machine_mode mode)
 
   This hook returns the preferred alignment in bits for a
   statically-allocated rtx, such as a constant pool entry.  :samp:`{mode}`
   is the mode of the rtx.  The default implementation returns
-  :samp:`GET_MODE_ALIGNMENT ( :samp:`{mode}` )`.
+  :samp:`GET_MODE_ALIGNMENT ({mode})`.
 
 .. index:: DATA_ALIGNMENT
 

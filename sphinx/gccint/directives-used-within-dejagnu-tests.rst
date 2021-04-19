@@ -56,12 +56,12 @@ Specify how to build the test
   tests by redefining ``dg-do-what-default`` within the ``.exp``
   file for those tests.
 
-  If the directive includes the optional :samp:`{ target :samp:`{selector}` }`
+  If the directive includes the optional :samp:`{ target {selector} }`
   then the test is skipped unless the target system matches the
   :samp:`{selector}`.
 
   If :samp:`{do-what-keyword}` is ``run`` and the directive includes
-  the optional :samp:`{ xfail :samp:`{selector}` }` and the selector is met
+  the optional :samp:`{ xfail {selector} }` and the selector is met
   then the test is expected to fail.  The ``xfail`` clause is ignored
   for other values of :samp:`{do-what-keyword}` ; those tests can use
   directive ``dg-xfail-if``.
@@ -164,7 +164,7 @@ Skip a test for some targets
 :samp:`{ dg-require-effective-target {keyword} [{ target {selector} }] }`
   Skip the test if the test target, including current multilib flags,
   is not covered by the effective-target keyword.
-  If the directive includes the optional :samp:`{ :samp:`{selector}` }`
+  If the directive includes the optional :samp:`{ {selector} }`
   then the effective-target test is only performed if the target system
   matches the :samp:`{selector}`.
   This directive must appear after any ``dg-do`` directive in the test
@@ -322,7 +322,7 @@ A selector is:
 Depending on the context, the selector specifies whether a test is
 skipped and reported as unsupported or is expected to fail.  A context
 that allows either :samp:`target` or :samp:`xfail` also allows
-:samp:`{ target :samp:`{selector1}` xfail :samp:`{selector2}` }`
+:samp:`{ target {selector1} xfail {selector2} }`
 to skip the test for targets that don't match :samp:`{selector1}` and the
 test to fail for targets that match :samp:`{selector2}`.
 
@@ -2030,7 +2030,7 @@ Scan the assembly output
   runs when :samp:`-DCHECK_ASM` is passed on the command line.
 
   It is possible to create non-capturing multi-line regular expression
-  groups of the form :samp:`( :samp:`{a}` | :samp:`{b}` |...)` by putting the
+  groups of the form :samp:`({a}|{b}|...)` by putting the
   :samp:`(`, :samp:`|` and :samp:`)` on separate lines (each still using
   :samp:`{prefix}` ).  For example:
 

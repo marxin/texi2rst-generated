@@ -160,7 +160,7 @@ Every insn has one of the following expression codes:
   number`, a number that identifies this label uniquely among all the
   labels in the compilation (not just in the current function).
   Ultimately, the label is represented in the assembler output as an
-  assembler label, usually of the form :samp:`L :samp:`{n}`` where :samp:`{n}` is
+  assembler label, usually of the form :samp:`L{n}` where :samp:`{n}` is
   the label number.
 
   When a ``code_label`` appears in an RTL expression, it normally

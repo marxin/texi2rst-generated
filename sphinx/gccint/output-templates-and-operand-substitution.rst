@@ -26,20 +26,20 @@ alternate fashion.  Four letters have standard, built-in meanings described
 below.  The machine description macro ``PRINT_OPERAND`` can define
 additional letters with nonstandard meanings.
 
-:samp:`%c :samp:`{digit}`` can be used to substitute an operand that is a
+:samp:`%c{digit}` can be used to substitute an operand that is a
 constant value without the syntax that normally indicates an immediate
 operand.
 
-:samp:`%n :samp:`{digit}`` is like :samp:`%c :samp:`{digit}`` except that the value of
+:samp:`%n{digit}` is like :samp:`%c{digit}` except that the value of
 the constant is negated before printing.
 
-:samp:`%a :samp:`{digit}`` can be used to substitute an operand as if it were a
+:samp:`%a{digit}` can be used to substitute an operand as if it were a
 memory reference, with the actual operand treated as the address.  This may
 be useful when outputting a 'load address' instruction, because often the
 assembler syntax for such an instruction requires you to write the operand
 as if it were a memory reference.
 
-:samp:`%l :samp:`{digit}`` is used to substitute a ``label_ref`` into a jump
+:samp:`%l{digit}` is used to substitute a ``label_ref`` into a jump
 instruction.
 
 :samp:`%=` outputs a number which is unique to each instruction in the

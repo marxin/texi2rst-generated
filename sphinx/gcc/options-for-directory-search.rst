@@ -156,7 +156,7 @@ libraries and for parts of the compiler:
   The compiler driver program runs one or more of the subprograms
   :command:`cpp`, :command:`cc1`, :command:`as` and :command:`ld`.  It tries
   :samp:`{prefix}` as a prefix for each program it tries to run, both with and
-  without :samp:`:samp:`{machine}` / :samp:`{version}` /` for the corresponding target
+  without :samp:`{machine}/{version}/` for the corresponding target
   machine and compiler version.
 
   For each subprogram to be run, the compiler driver first tries the

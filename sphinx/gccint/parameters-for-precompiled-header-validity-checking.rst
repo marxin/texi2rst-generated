@@ -9,14 +9,14 @@ Parameters for Precompiled Header Validity Checking
 
   This hook returns a pointer to the data needed by
   ``TARGET_PCH_VALID_P`` and sets
-  :samp:`* :samp:`{sz}`` to the size of the data in bytes.
+  :samp:`*{sz}` to the size of the data in bytes.
 
 .. function:: const char * TARGET_PCH_VALID_P(const void* data,size_t sz)
 
   This hook checks whether the options used to create a PCH file are
   compatible with the current settings.  It returns ``NULL``
   if so and a suitable error message if not.  Error messages will
-  be presented to the user and must be localized using :samp:`_( :samp:`{msg}` )`.
+  be presented to the user and must be localized using :samp:`_({msg})`.
 
   :samp:`{data}` is the data that was returned by ``TARGET_GET_PCH_VALIDITY``
   when the PCH file was created and :samp:`{sz}` is the size of that data in bytes.

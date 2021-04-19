@@ -82,7 +82,7 @@ Currently, rtl.def defines these classes:
 .. envvar:: RTX_AUTOINC
 
   An RTX code for an auto-increment addressing mode, such as
-  ``POST_INC``.  :samp:`XEXP ( :samp:`{x}` , 0)` gives the auto-modified
+  ``POST_INC``.  :samp:`XEXP ({x}, 0)` gives the auto-modified
   register.
 
 .. envvar:: RTX_EXTRA

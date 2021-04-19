@@ -32,7 +32,7 @@ movm
   of these names up to and including full word size *must* be defined,
   because there is no other way to copy a datum from one place to another.
   If there are patterns accepting operands in larger modes,
-  :samp:`mov :samp:`{m}`` must be defined for integer modes of those sizes.
+  :samp:`mov{m}` must be defined for integer modes of those sizes.
 
   Second, these patterns are not used solely in the RTL generation pass.
   Even the reload pass can generate move insns to copy values from stack
@@ -87,24 +87,24 @@ movm
   is unsafe to create new pseudo registers.  If this variable is nonzero, then
   it is unsafe to call ``gen_reg_rtx`` to allocate a new pseudo.
 
-  The constraints on a :samp:`mov :samp:`{m}`` must permit moving any hard
+  The constraints on a :samp:`mov{m}` must permit moving any hard
   register to any other hard register provided that
   ``TARGET_HARD_REGNO_MODE_OK`` permits mode :samp:`{m}` in both registers and
   ``TARGET_REGISTER_MOVE_COST`` applied to their classes returns a value
   of 2.
 
-  It is obligatory to support floating point :samp:`mov :samp:`{m}``
+  It is obligatory to support floating point :samp:`mov{m}`
   instructions into and out of any registers that can hold fixed point
   values, because unions and structures (which have modes ``SImode`` or
   ``DImode``) can be in those registers and they may have floating
   point members.
 
-  There may also be a need to support fixed point :samp:`mov :samp:`{m}``
+  There may also be a need to support fixed point :samp:`mov{m}`
   instructions in and out of floating point registers.  Unfortunately, I
   have forgotten why this was so, and I don't know whether it is still
   true.  If ``TARGET_HARD_REGNO_MODE_OK`` rejects fixed point values in
   floating point registers, then the constraints of the fixed point
-  :samp:`mov :samp:`{m}`` instructions must be designed to avoid ever trying to
+  :samp:`mov{m}` instructions must be designed to avoid ever trying to
   reload into a floating point register.
 
   .. index:: reload_in instruction pattern
@@ -115,7 +115,7 @@ reload_inm reload_outm
   These named patterns have been obsoleted by the target hook
   ``secondary_reload``.
 
-  Like :samp:`mov :samp:`{m}``, but used when a scratch register is required to
+  Like :samp:`mov{m}`, but used when a scratch register is required to
   move between operand 0 and operand 1.  Operand 2 describes the scratch
   register.  See the discussion of the ``SECONDARY_RELOAD_CLASS``
   macro in see :ref:`register-classes`.
@@ -134,9 +134,9 @@ reload_inm reload_outm
   .. index:: movstrictm instruction pattern
 
 movstrictm
-  Like :samp:`mov :samp:`{m}`` except that if operand 0 is a ``subreg``
+  Like :samp:`mov{m}` except that if operand 0 is a ``subreg``
   with mode :samp:`{m}` of a register whose natural mode is wider,
-  the :samp:`movstrict :samp:`{m}`` instruction is guaranteed not to alter
+  the :samp:`movstrict{m}` instruction is guaranteed not to alter
   any of the register except the part which belongs to mode :samp:`{m}`.
 
   .. index:: movmisalignm instruction pattern
@@ -218,7 +218,7 @@ vec_load_lanesmn
   .. index:: vec_mask_load_lanesmn instruction pattern
 
 vec_mask_load_lanesmn
-  Like :samp:`vec_load_lanes :samp:`{m}`:samp:`{n}``, but takes an additional
+  Like :samp:`vec_load_lanes{m}{n}`, but takes an additional
   mask operand (operand 2) that specifies which elements of the destination
   vectors should be loaded.  Other elements of the destination
   vectors are set to zero.  The operation is equivalent to:
@@ -239,7 +239,7 @@ vec_mask_load_lanesmn
   .. index:: vec_store_lanesmn instruction pattern
 
 vec_store_lanesmn
-  Equivalent to :samp:`vec_load_lanes :samp:`{m}`:samp:`{n}``, with the memory
+  Equivalent to :samp:`vec_load_lanes{m}{n}`, with the memory
   and register operands reversed.  That is, the instruction is
   equivalent to:
 
@@ -257,7 +257,7 @@ vec_store_lanesmn
   .. index:: vec_mask_store_lanesmn instruction pattern
 
 vec_mask_store_lanesmn
-  Like :samp:`vec_store_lanes :samp:`{m}`:samp:`{n}``, but takes an additional
+  Like :samp:`vec_store_lanes{m}{n}`, but takes an additional
   mask operand (operand 2) that specifies which elements of the source
   vectors should be stored.  The operation is equivalent to:
 
@@ -294,7 +294,7 @@ gather_loadmn
   .. index:: mask_gather_loadmn instruction pattern
 
 mask_gather_loadmn
-  Like :samp:`gather_load :samp:`{m}`:samp:`{n}``, but takes an extra mask operand as
+  Like :samp:`gather_load{m}{n}`, but takes an extra mask operand as
   operand 5.  Bit :samp:`{i}` of the mask is set if element :samp:`{i}`
   of the result should be loaded from memory and clear if element :samp:`{i}`
   of the result should be set to zero.
@@ -323,7 +323,7 @@ scatter_storemn
   .. index:: mask_scatter_storemn instruction pattern
 
 mask_scatter_storemn
-  Like :samp:`scatter_store :samp:`{m}`:samp:`{n}``, but takes an extra mask operand as
+  Like :samp:`scatter_store{m}{n}`, but takes an extra mask operand as
   operand 5.  Bit :samp:`{i}` of the mask is set if element :samp:`{i}`
   of the result should be stored to memory.
 
@@ -398,7 +398,7 @@ check_raw_ptrsm
   Check whether, given two pointers :samp:`{a}` and :samp:`{b}` and a length :samp:`{len}` ,
   a write of :samp:`{len}` bytes at :samp:`{a}` followed by a read of :samp:`{len}` bytes
   at :samp:`{b}` can be split into interleaved byte accesses
-  :samp:`:samp:`{a}` [0], :samp:`{b}` [0], :samp:`{a}` [1], :samp:`{b}` [1], ...`
+  :samp:`{a}[0], {b}[0], {a}[1], {b}[1], ...`
   without affecting the dependencies between the bytes.  Set operand 0
   to true if the split is possible and false otherwise.
 
@@ -418,7 +418,7 @@ check_raw_ptrsm
   .. index:: check_war_ptrsm instruction pattern
 
 check_war_ptrsm
-  Like :samp:`check_raw_ptrs :samp:`{m}``, but with the read and write swapped round.
+  Like :samp:`check_raw_ptrs{m}`, but with the read and write swapped round.
   The split is possible in this case if:
 
   .. code-block:: c++
@@ -604,7 +604,7 @@ addm3
 
   .. index:: xorm3 instruction pattern
 
-:samp:`ssadd :samp:`{m}` 3`, :samp:`usadd :samp:`{m}` 3` :samp:`sub :samp:`{m}` 3`, :samp:`sssub :samp:`{m}` 3`, :samp:`ussub :samp:`{m}` 3` :samp:`mul :samp:`{m}` 3`, :samp:`ssmul :samp:`{m}` 3`, :samp:`usmul :samp:`{m}` 3` :samp:`div :samp:`{m}` 3`, :samp:`ssdiv :samp:`{m}` 3` :samp:`udiv :samp:`{m}` 3`, :samp:`usdiv :samp:`{m}` 3` :samp:`mod :samp:`{m}` 3`, :samp:`umod :samp:`{m}` 3` :samp:`umin :samp:`{m}` 3`, :samp:`umax :samp:`{m}` 3` :samp:`and :samp:`{m}` 3`, :samp:`ior :samp:`{m}` 3`, :samp:`xor :samp:`{m}` 3`
+:samp:`ssadd{m}3`, :samp:`usadd{m}3` :samp:`sub{m}3`, :samp:`sssub{m}3`, :samp:`ussub{m}3` :samp:`mul{m}3`, :samp:`ssmul{m}3`, :samp:`usmul{m}3` :samp:`div{m}3`, :samp:`ssdiv{m}3` :samp:`udiv{m}3`, :samp:`usdiv{m}3` :samp:`mod{m}3`, :samp:`umod{m}3` :samp:`umin{m}3`, :samp:`umax{m}3` :samp:`and{m}3`, :samp:`ior{m}3`, :samp:`xor{m}3`
   Similar, for other arithmetic operations.
 
   .. index:: addvm4 instruction pattern
@@ -619,7 +619,7 @@ addvm4
 
   .. index:: mulvm4 instruction pattern
 
-:samp:`subv :samp:`{m}` 4`, :samp:`mulv :samp:`{m}` 4`
+:samp:`subv{m}4`, :samp:`mulv{m}4`
   Similar, for other signed arithmetic operations.
 
   .. index:: uaddvm4 instruction pattern
@@ -633,7 +633,7 @@ uaddvm4
 
   .. index:: umulvm4 instruction pattern
 
-:samp:`usubv :samp:`{m}` 4`, :samp:`umulv :samp:`{m}` 4`
+:samp:`usubv{m}4`, :samp:`umulv{m}4`
   Similar, for other unsigned arithmetic operations.
 
   .. index:: addptrm3 instruction pattern
@@ -694,7 +694,7 @@ fnmsm4
 
   .. index:: maxm3 instruction pattern
 
-:samp:`smin :samp:`{m}` 3`, :samp:`smax :samp:`{m}` 3`
+:samp:`smin{m}3`, :samp:`smax{m}3`
   Signed minimum and maximum operations.  When used with floating point,
   if both operands are zeros, or if either operand is ``NaN``, then
   it is unspecified which of the two operands is returned as the result.
@@ -703,7 +703,7 @@ fnmsm4
 
   .. index:: fmaxm3 instruction pattern
 
-:samp:`fmin :samp:`{m}` 3`, :samp:`fmax :samp:`{m}` 3`
+:samp:`fmin{m}3`, :samp:`fmax{m}3`
   IEEE-conformant minimum and maximum operations.  If one operand is a quiet
   ``NaN``, then the other operand is returned.  If both operands are quiet
   ``NaN``, then a quiet ``NaN`` is returned.  In the case when gcc supports
@@ -717,7 +717,7 @@ fnmsm4
 
   .. index:: reduc_smax_scal_m instruction pattern
 
-:samp:`reduc_smin_scal_ :samp:`{m}``, :samp:`reduc_smax_scal_ :samp:`{m}``
+:samp:`reduc_smin_scal_{m}`, :samp:`reduc_smax_scal_{m}`
   Find the signed minimum/maximum of the elements of a vector. The vector is
   operand 1, and operand 0 is the scalar result, with mode equal to the mode of
   the elements of the input vector.
@@ -726,7 +726,7 @@ fnmsm4
 
   .. index:: reduc_umax_scal_m instruction pattern
 
-:samp:`reduc_umin_scal_ :samp:`{m}``, :samp:`reduc_umax_scal_ :samp:`{m}``
+:samp:`reduc_umin_scal_{m}`, :samp:`reduc_umax_scal_{m}`
   Find the unsigned minimum/maximum of the elements of a vector. The vector is
   operand 1, and operand 0 is the scalar result, with mode equal to the mode of
   the elements of the input vector.
@@ -783,7 +783,7 @@ fold_left_plus_m
   .. index:: mask_fold_left_plus_m instruction pattern
 
 mask_fold_left_plus_m
-  Like :samp:`fold_left_plus_ :samp:`{m}``, but takes an additional mask operand
+  Like :samp:`fold_left_plus_{m}`, but takes an additional mask operand
   (operand 3) that specifies which elements of the source vector should be added.
 
   .. index:: sdot_prodm instruction pattern
@@ -921,7 +921,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_pack_usat_m instruction pattern
 
-:samp:`vec_pack_ssat_ :samp:`{m}``, :samp:`vec_pack_usat_ :samp:`{m}``
+:samp:`vec_pack_ssat_{m}`, :samp:`vec_pack_usat_{m}`
   Narrow (demote) and merge the elements of two vectors.  Operands 1 and 2
   are vectors of the same mode having N integral elements of size S.
   Operand 0 is the resulting vector in which the elements of the two input
@@ -932,7 +932,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_pack_ufix_trunc_m instruction pattern
 
-:samp:`vec_pack_sfix_trunc_ :samp:`{m}``, :samp:`vec_pack_ufix_trunc_ :samp:`{m}``
+:samp:`vec_pack_sfix_trunc_{m}`, :samp:`vec_pack_ufix_trunc_{m}`
   Narrow, convert to signed/unsigned integral type and merge the elements
   of two vectors.  Operands 1 and 2 are vectors of the same mode having N
   floating point elements of size S.  Operand 0 is the resulting vector
@@ -942,7 +942,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_packu_float_m instruction pattern
 
-:samp:`vec_packs_float_ :samp:`{m}``, :samp:`vec_packu_float_ :samp:`{m}``
+:samp:`vec_packs_float_{m}`, :samp:`vec_packu_float_{m}`
   Narrow, convert to floating point type and merge the elements
   of two vectors.  Operands 1 and 2 are vectors of the same mode having N
   signed/unsigned integral elements of size S.  Operand 0 is the resulting vector
@@ -952,7 +952,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_unpacks_lo_m instruction pattern
 
-:samp:`vec_unpacks_hi_ :samp:`{m}``, :samp:`vec_unpacks_lo_ :samp:`{m}``
+:samp:`vec_unpacks_hi_{m}`, :samp:`vec_unpacks_lo_{m}`
   Extract and widen (promote) the high/low part of a vector of signed
   integral or floating point elements.  The input vector (operand 1) has N
   elements of size S.  Widen (promote) the high/low elements of the vector
@@ -963,7 +963,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_unpacku_lo_m instruction pattern
 
-:samp:`vec_unpacku_hi_ :samp:`{m}``, :samp:`vec_unpacku_lo_ :samp:`{m}``
+:samp:`vec_unpacku_hi_{m}`, :samp:`vec_unpacku_lo_{m}`
   Extract and widen (promote) the high/low part of a vector of unsigned
   integral elements.  The input vector (operand 1) has N elements of size S.
   Widen (promote) the high/low elements of the vector using zero extension and
@@ -973,7 +973,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_unpacks_sbool_lo_m instruction pattern
 
-:samp:`vec_unpacks_sbool_hi_ :samp:`{m}``, :samp:`vec_unpacks_sbool_lo_ :samp:`{m}``
+:samp:`vec_unpacks_sbool_hi_{m}`, :samp:`vec_unpacks_sbool_lo_{m}`
   Extract the high/low part of a vector of boolean elements that have scalar
   mode :samp:`{m}`.  The input vector (operand 1) has N elements, the output
   vector (operand 0) has N/2 elements.  The last operand (operand 2) is the
@@ -990,7 +990,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_unpacku_float_lo_m instruction pattern
 
-:samp:`vec_unpacks_float_hi_ :samp:`{m}``, :samp:`vec_unpacks_float_lo_ :samp:`{m}`` :samp:`vec_unpacku_float_hi_ :samp:`{m}``, :samp:`vec_unpacku_float_lo_ :samp:`{m}``
+:samp:`vec_unpacks_float_hi_{m}`, :samp:`vec_unpacks_float_lo_{m}` :samp:`vec_unpacku_float_hi_{m}`, :samp:`vec_unpacku_float_lo_{m}`
   Extract, convert to floating point type and widen the high/low part of a
   vector of signed/unsigned integral elements.  The input vector (operand 1)
   has N elements of size S.  Convert the high/low elements of the vector using
@@ -1005,7 +1005,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_unpack_ufix_trunc_lo_m instruction pattern
 
-:samp:`vec_unpack_sfix_trunc_hi_ :samp:`{m}``, vec_unpack_sfix_trunc_lo_m vec_unpack_ufix_trunc_hi_m vec_unpack_ufix_trunc_lo_m
+:samp:`vec_unpack_sfix_trunc_hi_{m}`, vec_unpack_sfix_trunc_lo_m vec_unpack_ufix_trunc_hi_m vec_unpack_ufix_trunc_lo_m
   Extract, convert to signed/unsigned integer type and widen the high/low part of a
   vector of floating point elements.  The input vector (operand 1)
   has N elements of size S.  Convert the high/low elements of the vector
@@ -1028,7 +1028,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_widen_smult_odd_m instruction pattern
 
-:samp:`vec_widen_umult_hi_ :samp:`{m}``, :samp:`vec_widen_umult_lo_ :samp:`{m}`` :samp:`vec_widen_smult_hi_ :samp:`{m}``, :samp:`vec_widen_smult_lo_ :samp:`{m}`` :samp:`vec_widen_umult_even_ :samp:`{m}``, :samp:`vec_widen_umult_odd_ :samp:`{m}`` :samp:`vec_widen_smult_even_ :samp:`{m}``, :samp:`vec_widen_smult_odd_ :samp:`{m}``
+:samp:`vec_widen_umult_hi_{m}`, :samp:`vec_widen_umult_lo_{m}` :samp:`vec_widen_smult_hi_{m}`, :samp:`vec_widen_smult_lo_{m}` :samp:`vec_widen_umult_even_{m}`, :samp:`vec_widen_umult_odd_{m}` :samp:`vec_widen_smult_even_{m}`, :samp:`vec_widen_smult_odd_{m}`
   Signed/Unsigned widening multiplication.  The two inputs (operands 1 and 2)
   are vectors with N signed/unsigned elements of size S.  Multiply the high/low
   or even/odd elements of the two vectors, and put the N/2 products of size 2*S
@@ -1043,7 +1043,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_widen_sshiftl_lo_m instruction pattern
 
-:samp:`vec_widen_ushiftl_hi_ :samp:`{m}``, :samp:`vec_widen_ushiftl_lo_ :samp:`{m}`` :samp:`vec_widen_sshiftl_hi_ :samp:`{m}``, :samp:`vec_widen_sshiftl_lo_ :samp:`{m}``
+:samp:`vec_widen_ushiftl_hi_{m}`, :samp:`vec_widen_ushiftl_lo_{m}` :samp:`vec_widen_sshiftl_hi_{m}`, :samp:`vec_widen_sshiftl_lo_{m}`
   Signed/Unsigned widening shift left.  The first input (operand 1) is a vector
   with N signed/unsigned elements of size S.  Operand 2 is a constant.  Shift
   the high/low elements of operand 1, and put the N/2 results of size 2*S in the
@@ -1057,7 +1057,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_widen_uaddl_lo_m instruction pattern
 
-:samp:`vec_widen_uaddl_hi_ :samp:`{m}``, :samp:`vec_widen_uaddl_lo_ :samp:`{m}`` :samp:`vec_widen_saddl_hi_ :samp:`{m}``, :samp:`vec_widen_saddl_lo_ :samp:`{m}``
+:samp:`vec_widen_uaddl_hi_{m}`, :samp:`vec_widen_uaddl_lo_{m}` :samp:`vec_widen_saddl_hi_{m}`, :samp:`vec_widen_saddl_lo_{m}`
   Signed/Unsigned widening add long.  Operands 1 and 2 are vectors with N
   signed/unsigned elements of size S.  Add the high/low elements of 1 and 2
   together, widen the resulting elements and put the N/2 results of size 2*S in
@@ -1071,7 +1071,7 @@ vec_pack_sbool_trunc_m
 
   .. index:: vec_widen_usubl_lo_m instruction pattern
 
-:samp:`vec_widen_usubl_hi_ :samp:`{m}``, :samp:`vec_widen_usubl_lo_ :samp:`{m}`` :samp:`vec_widen_ssubl_hi_ :samp:`{m}``, :samp:`vec_widen_ssubl_lo_ :samp:`{m}``
+:samp:`vec_widen_usubl_hi_{m}`, :samp:`vec_widen_usubl_lo_{m}` :samp:`vec_widen_ssubl_hi_{m}`, :samp:`vec_widen_ssubl_lo_{m}`
   Signed/Unsigned widening subtract long.  Operands 1 and 2 are vectors with N
   signed/unsigned elements of size S.  Subtract the high/low elements of 2 from
   1 and widen the resulting elements. Put the N/2 results of size 2*S in the
@@ -1196,14 +1196,14 @@ divmodm4
   in operand 0 and a remainder stored in operand 3.
 
   For machines with an instruction that produces both a quotient and a
-  remainder, provide a pattern for :samp:`divmod :samp:`{m}` 4` but do not
-  provide patterns for :samp:`div :samp:`{m}` 3` and :samp:`mod :samp:`{m}` 3`.  This
+  remainder, provide a pattern for :samp:`divmod{m}4` but do not
+  provide patterns for :samp:`div{m}3` and :samp:`mod{m}3`.  This
   allows optimization in the relatively common case when both the quotient
   and remainder are computed.
 
   If an instruction that just produces a quotient or just a remainder
   exists and is more efficient than the instruction that produces both,
-  write the output routine of :samp:`divmod :samp:`{m}` 4` to call
+  write the output routine of :samp:`divmod{m}4` to call
   ``find_reg_note`` and look for a ``REG_UNUSED`` note on the
   quotient or remainder and generate the appropriate instruction.
 
@@ -1220,7 +1220,7 @@ udivmodm4
 
   .. index:: usashlm3 instruction pattern
 
-:samp:`ashl :samp:`{m}` 3`, :samp:`ssashl :samp:`{m}` 3`, :samp:`usashl :samp:`{m}` 3`
+:samp:`ashl{m}3`, :samp:`ssashl{m}3`, :samp:`usashl{m}3`
   Arithmetic-shift operand 1 left by a number of bits specified by operand
   2, and store the result in operand 0.  Here :samp:`{m}` is the mode of
   operand 0 and operand 1; operand 2's mode is specified by the
@@ -1239,7 +1239,7 @@ udivmodm4
 
   .. index:: rotrm3 instruction pattern
 
-:samp:`ashr :samp:`{m}` 3`, :samp:`lshr :samp:`{m}` 3`, :samp:`rotl :samp:`{m}` 3`, :samp:`rotr :samp:`{m}` 3`
+:samp:`ashr{m}3`, :samp:`lshr{m}3`, :samp:`rotl{m}3`, :samp:`rotr{m}3`
   Other shift and rotate instructions, analogous to the
   ``ashlm3`` instructions.  Operand 2 is always a scalar type.
 
@@ -1253,7 +1253,7 @@ udivmodm4
 
   .. index:: vrotrm3 instruction pattern
 
-:samp:`vashl :samp:`{m}` 3`, :samp:`vashr :samp:`{m}` 3`, :samp:`vlshr :samp:`{m}` 3`, :samp:`vrotl :samp:`{m}` 3`, :samp:`vrotr :samp:`{m}` 3`
+:samp:`vashl{m}3`, :samp:`vashr{m}3`, :samp:`vlshr{m}3`, :samp:`vrotl{m}3`, :samp:`vrotr{m}3`
   Vector shift and rotate instructions that take vectors as operand 2
   instead of a scalar type.
 
@@ -1281,7 +1281,7 @@ avgm3_floor uavgm3_floor
   .. index:: uavgm3_ceil instruction pattern
 
 avgm3_ceil uavgm3_ceil
-  Like :samp:`avg :samp:`{m}` 3_floor` and :samp:`uavg :samp:`{m}` 3_floor`, but round
+  Like :samp:`avg{m}3_floor` and :samp:`uavg{m}3_floor`, but round
   towards +Inf.  This is equivalent to the C code:
 
   .. code-block:: c++
@@ -1301,7 +1301,7 @@ bswapm2
 
   .. index:: usnegm2 instruction pattern
 
-:samp:`neg :samp:`{m}` 2`, :samp:`ssneg :samp:`{m}` 2`, :samp:`usneg :samp:`{m}` 2`
+:samp:`neg{m}2`, :samp:`ssneg{m}2`, :samp:`usneg{m}2`
   Negate operand 1 and store the result in operand 0.
 
   .. index:: negvm3 instruction pattern
@@ -1334,7 +1334,7 @@ rsqrtm2
   its C condition or the ``TARGET_OPTAB_SUPPORTED_P`` hook should
   check for the appropriate math flags.  (Using the C condition is
   more direct, but using ``TARGET_OPTAB_SUPPORTED_P`` can be useful
-  if a target-specific built-in also uses the :samp:`rsqrt :samp:`{m}` 2`
+  if a target-specific built-in also uses the :samp:`rsqrt{m}2`
   pattern.)
 
   This pattern is not allowed to ``FAIL``.
@@ -2052,7 +2052,7 @@ setmemm
   number of bytes to set is the second operand, in mode :samp:`{m}`.  The value to
   initialize the memory with is the third operand. Targets that only support the
   clearing of memory should reject any value that is not the constant 0.  See
-  :samp:`cpymem :samp:`{m}`` for a discussion of the choice of mode.
+  :samp:`cpymem{m}` for a discussion of the choice of mode.
 
   The fourth operand is the known alignment of the destination, in the form
   of a ``const_int`` rtx.  Thus, if the compiler knows that the
@@ -2077,7 +2077,7 @@ setmemm
 cmpstrnm
   String compare instruction, with five operands.  Operand 0 is the output;
   it has mode :samp:`{m}`.  The remaining four operands are like the operands
-  of :samp:`cpymem :samp:`{m}``.  The two memory blocks specified are compared
+  of :samp:`cpymem{m}`.  The two memory blocks specified are compared
   byte by byte in lexicographic order starting at the beginning of each
   string.  The instruction is not allowed to prefetch more than one byte
   at a time since either string may end in the first byte and reading past
@@ -2112,10 +2112,10 @@ cmpstrm
 
 cmpmemm
   Block compare instruction, with five operands like the operands
-  of :samp:`cmpstr :samp:`{m}``.  The two memory blocks specified are compared
+  of :samp:`cmpstr{m}`.  The two memory blocks specified are compared
   byte by byte in lexicographic order starting at the beginning of each
-  block.  Unlike :samp:`cmpstr :samp:`{m}`` the instruction can prefetch
-  any bytes in the two memory blocks.  Also unlike :samp:`cmpstr :samp:`{m}``
+  block.  Unlike :samp:`cmpstr{m}` the instruction can prefetch
+  any bytes in the two memory blocks.  Also unlike :samp:`cmpstr{m}`
   the comparison will not stop if both bytes are zero.  The effect of
   the instruction is to store a value in operand 0 whose sign indicates
   the result of the comparison.
@@ -2173,13 +2173,13 @@ ftruncm2
   .. index:: fix_truncmn2 instruction pattern
 
 fix_truncmn2
-  Like :samp:`fix :samp:`{m}`:samp:`{n}` 2` but works for any floating point value
+  Like :samp:`fix{m}{n}2` but works for any floating point value
   of mode :samp:`{m}` by converting the value to an integer.
 
   .. index:: fixuns_truncmn2 instruction pattern
 
 fixuns_truncmn2
-  Like :samp:`fixuns :samp:`{m}`:samp:`{n}` 2` but works for any floating point
+  Like :samp:`fixuns{m}{n}2` but works for any floating point
   value of mode :samp:`{m}` by converting the value to an integer.
 
   .. index:: truncmn2 instruction pattern
@@ -2269,12 +2269,12 @@ extvmisalignm
   .. index:: extzvm instruction pattern
 
 extzvm
-  Like :samp:`extv :samp:`{m}`` except that the bit-field value is zero-extended.
+  Like :samp:`extv{m}` except that the bit-field value is zero-extended.
 
   .. index:: extzvmisalignm instruction pattern
 
 extzvmisalignm
-  Like :samp:`extvmisalign :samp:`{m}`` except that the bit-field value is
+  Like :samp:`extvmisalign{m}` except that the bit-field value is
   zero-extended.
 
   .. index:: insvm instruction pattern
@@ -2318,7 +2318,7 @@ extv
   The bit-field value is sign-extended to a full word integer
   before it is stored in operand 0.
 
-  This pattern is deprecated; please use :samp:`extv :samp:`{m}`` and
+  This pattern is deprecated; please use :samp:`extv{m}` and
   ``extvmisalignm`` instead.
 
   .. index:: extzv instruction pattern
@@ -2326,7 +2326,7 @@ extv
 extzv
   Like :samp:`extv` except that the bit-field value is zero-extended.
 
-  This pattern is deprecated; please use :samp:`extzv :samp:`{m}`` and
+  This pattern is deprecated; please use :samp:`extzv{m}` and
   ``extzvmisalignm`` instead.
 
   .. index:: insv instruction pattern
@@ -2341,7 +2341,7 @@ insv
   The RTL generation pass generates this instruction only with constants
   for operands 1 and 2 and the constant is never zero for operand 1.
 
-  This pattern is deprecated; please use :samp:`insv :samp:`{m}`` and
+  This pattern is deprecated; please use :samp:`insv{m}` and
   ``insvmisalignm`` instead.
 
   .. index:: movmodecc instruction pattern
@@ -2362,7 +2362,7 @@ movmodecc
   .. index:: addmodecc instruction pattern
 
 addmodecc
-  Similar to :samp:`mov :samp:`{mode}` cc` but for conditional addition.  Conditionally
+  Similar to :samp:`mov{mode}cc` but for conditional addition.  Conditionally
   move operand 2 or (operands 2 + operand 3) into operand 0 according to the
   comparison in operand 1.  If the comparison is false, operand 2 is moved into
   operand 0, otherwise (operand 2 + operand 3) is moved.
@@ -2413,7 +2413,7 @@ cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode c
     for (i = 0; i < GET_MODE_NUNITS (m); i++)
       op0[i] = op1[i] ? op2[i] op op3[i] : op4[i];
 
-  where, for example, :samp:`{op}` is ``+`` for :samp:`cond_add :samp:`{mode}``.
+  where, for example, :samp:`{op}` is ``+`` for :samp:`cond_add{mode}`.
 
   When defined for floating-point modes, the contents of :samp:`op3[i]`
   are not interpreted if :samp:`op1[i]` is false, just like they would not
@@ -2432,9 +2432,9 @@ cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode c
   .. index:: cond_fnmsmode instruction pattern
 
 cond_fmamode cond_fmsmode cond_fnmamode cond_fnmsmode
-  Like :samp:`cond_add :samp:`{m}``, except that the conditional operation
+  Like :samp:`cond_add{m}`, except that the conditional operation
   takes 3 operands rather than two.  For example, the vector form of
-  :samp:`cond_fma :samp:`{mode}`` is equivalent to:
+  :samp:`cond_fma{mode}` is equivalent to:
 
   .. code-block:: c++
 
@@ -2444,7 +2444,7 @@ cond_fmamode cond_fmsmode cond_fnmamode cond_fnmsmode
   .. index:: negmodecc instruction pattern
 
 negmodecc
-  Similar to :samp:`mov :samp:`{mode}` cc` but for conditional negation.  Conditionally
+  Similar to :samp:`mov{mode}cc` but for conditional negation.  Conditionally
   move the negation of operand 2 or the unchanged operand 3 into operand 0
   according to the comparison in operand 1.  If the comparison is true, the negation
   of operand 2 is moved into operand 0, otherwise operand 3 is moved.
@@ -2452,7 +2452,7 @@ negmodecc
   .. index:: notmodecc instruction pattern
 
 notmodecc
-  Similar to :samp:`neg :samp:`{mode}` cc` but for conditional complement.
+  Similar to :samp:`neg{mode}cc` but for conditional complement.
   Conditionally move the bitwise complement of operand 2 or the unchanged
   operand 3 into operand 0 according to the comparison in operand 1.
   If the comparison is true, the complement of operand 2 is moved into
@@ -2490,10 +2490,10 @@ cstoremode4
   for operand 1 only rejects some operators, it will also try reordering the
   operands and/or inverting the result value (e.g. by an exclusive OR).
   These possibilities could be cheaper or equivalent to the instructions
-  used for the :samp:`cstore :samp:`{mode}` 4` pattern followed by those required
+  used for the :samp:`cstore{mode}4` pattern followed by those required
   to convert a positive result from ``STORE_FLAG_VALUE`` to 1; in this
   case, you can and should make operand 1's predicate reject some operators
-  in the :samp:`cstore :samp:`{mode}` 4` pattern, or remove the pattern altogether
+  in the :samp:`cstore{mode}4` pattern, or remove the pattern altogether
   from the machine description.
 
   .. index:: cbranchmode4 instruction pattern
@@ -2580,7 +2580,7 @@ return
   defined only if a single instruction can do all the work of returning
   from a function.
 
-  Like the :samp:`mov :samp:`{m}`` patterns, this pattern is also used after the
+  Like the :samp:`mov{m}` patterns, this pattern is also used after the
   RTL generation phase.  In this case it is to support machines where
   multiple instructions are usually needed to return from a function, but
   some class of functions only requires one instruction to implement a
@@ -3121,7 +3121,7 @@ sync_compare_and_swapmode
 
   .. index:: sync_nandmode instruction pattern
 
-:samp:`sync_add :samp:`{mode}``, :samp:`sync_sub :samp:`{mode}`` :samp:`sync_ior :samp:`{mode}``, :samp:`sync_and :samp:`{mode}`` :samp:`sync_xor :samp:`{mode}``, :samp:`sync_nand :samp:`{mode}``
+:samp:`sync_add{mode}`, :samp:`sync_sub{mode}` :samp:`sync_ior{mode}`, :samp:`sync_and{mode}` :samp:`sync_xor{mode}`, :samp:`sync_nand{mode}`
   These patterns emit code for an atomic operation on memory.
   Operand 0 is the memory on which the atomic operation is performed.
   Operand 1 is the second operand to the binary operator.
@@ -3146,7 +3146,7 @@ sync_compare_and_swapmode
 
   .. index:: sync_old_nandmode instruction pattern
 
-:samp:`sync_old_add :samp:`{mode}``, :samp:`sync_old_sub :samp:`{mode}`` :samp:`sync_old_ior :samp:`{mode}``, :samp:`sync_old_and :samp:`{mode}`` :samp:`sync_old_xor :samp:`{mode}``, :samp:`sync_old_nand :samp:`{mode}``
+:samp:`sync_old_add{mode}`, :samp:`sync_old_sub{mode}` :samp:`sync_old_ior{mode}`, :samp:`sync_old_and{mode}` :samp:`sync_old_xor{mode}`, :samp:`sync_old_nand{mode}`
   These patterns emit code for an atomic operation on memory,
   and return the value that the memory contained before the operation.
   Operand 0 is the result value, operand 1 is the memory on which the
@@ -3173,7 +3173,7 @@ sync_compare_and_swapmode
 
   .. index:: sync_new_nandmode instruction pattern
 
-:samp:`sync_new_add :samp:`{mode}``, :samp:`sync_new_sub :samp:`{mode}`` :samp:`sync_new_ior :samp:`{mode}``, :samp:`sync_new_and :samp:`{mode}`` :samp:`sync_new_xor :samp:`{mode}``, :samp:`sync_new_nand :samp:`{mode}``
+:samp:`sync_new_add{mode}`, :samp:`sync_new_sub{mode}` :samp:`sync_new_ior{mode}`, :samp:`sync_new_and{mode}` :samp:`sync_new_xor{mode}`, :samp:`sync_new_nand{mode}`
   These patterns are like their ``sync_old_op`` counterparts,
   except that they return the value that exists in the memory location
   after the operation, rather than before the operation.
@@ -3302,7 +3302,7 @@ atomic_exchangemode
 
   .. index:: atomic_nandmode instruction pattern
 
-:samp:`atomic_add :samp:`{mode}``, :samp:`atomic_sub :samp:`{mode}`` :samp:`atomic_or :samp:`{mode}``, :samp:`atomic_and :samp:`{mode}`` :samp:`atomic_xor :samp:`{mode}``, :samp:`atomic_nand :samp:`{mode}``
+:samp:`atomic_add{mode}`, :samp:`atomic_sub{mode}` :samp:`atomic_or{mode}`, :samp:`atomic_and{mode}` :samp:`atomic_xor{mode}`, :samp:`atomic_nand{mode}`
   These patterns emit code for an atomic operation on memory with memory
   model semantics. Operand 0 is the memory on which the atomic operation is
   performed.  Operand 1 is the second operand to the binary operator.
@@ -3324,7 +3324,7 @@ atomic_exchangemode
 
   .. index:: atomic_fetch_nandmode instruction pattern
 
-:samp:`atomic_fetch_add :samp:`{mode}``, :samp:`atomic_fetch_sub :samp:`{mode}`` :samp:`atomic_fetch_or :samp:`{mode}``, :samp:`atomic_fetch_and :samp:`{mode}`` :samp:`atomic_fetch_xor :samp:`{mode}``, :samp:`atomic_fetch_nand :samp:`{mode}``
+:samp:`atomic_fetch_add{mode}`, :samp:`atomic_fetch_sub{mode}` :samp:`atomic_fetch_or{mode}`, :samp:`atomic_fetch_and{mode}` :samp:`atomic_fetch_xor{mode}`, :samp:`atomic_fetch_nand{mode}`
   These patterns emit code for an atomic operation on memory with memory
   model semantics, and return the original value. Operand 0 is an output 
   operand which contains the value of the memory location before the 
@@ -3348,7 +3348,7 @@ atomic_exchangemode
 
   .. index:: atomic_nand_fetchmode instruction pattern
 
-:samp:`atomic_add_fetch :samp:`{mode}``, :samp:`atomic_sub_fetch :samp:`{mode}`` :samp:`atomic_or_fetch :samp:`{mode}``, :samp:`atomic_and_fetch :samp:`{mode}`` :samp:`atomic_xor_fetch :samp:`{mode}``, :samp:`atomic_nand_fetch :samp:`{mode}``
+:samp:`atomic_add_fetch{mode}`, :samp:`atomic_sub_fetch{mode}` :samp:`atomic_or_fetch{mode}`, :samp:`atomic_and_fetch{mode}` :samp:`atomic_xor_fetch{mode}`, :samp:`atomic_nand_fetch{mode}`
   These patterns emit code for an atomic operation on memory with memory
   model semantics and return the result after the operation is performed.
   Operand 0 is an output operand which contains the value after the

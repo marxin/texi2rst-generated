@@ -238,7 +238,7 @@ it is unlikely to be called.
 .. function:: void TARGET_ASM_UNIQUE_SECTION(tree decl,int reloc)
 
   Build up a unique section name, expressed as a ``STRING_CST`` node,
-  and assign it to :samp:`DECL_SECTION_NAME ( :samp:`{decl}` )`.
+  and assign it to :samp:`DECL_SECTION_NAME ({decl})`.
   As with ``TARGET_ASM_SELECT_SECTION``, :samp:`{reloc}` indicates whether
   the initial value of :samp:`{exp}` requires link-time relocations.
 
@@ -250,7 +250,7 @@ it is unlikely to be called.
 .. function:: section * TARGET_ASM_FUNCTION_RODATA_SECTION(tree decl,bool relocatable)
 
   Return the readonly data or reloc readonly data section associated with
-  :samp:`DECL_SECTION_NAME ( :samp:`{decl}` )`. :samp:`{relocatable}` selects the latter
+  :samp:`DECL_SECTION_NAME ({decl})`. :samp:`{relocatable}` selects the latter
   over the former.
   The default version of this function selects ``.gnu.linkonce.r.name`` if
   the function's section is ``.gnu.linkonce.t.name``, ``.rodata.name``

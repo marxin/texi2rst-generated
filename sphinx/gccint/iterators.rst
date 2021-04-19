@@ -551,9 +551,9 @@ numbers of operands from each other.  For example, patterns with
 a binary rtl code might take three operands (one output and two inputs)
 while patterns with a ternary rtl code might take four operands (one
 output and three inputs).  This combination would produce separate
-:samp:`maybe_gen_ :samp:`{name}`` and :samp:`gen_ :samp:`{name}`` functions for
+:samp:`maybe_gen_{name}` and :samp:`gen_{name}` functions for
 each operand count, but it would still produce a single
-:samp:`maybe_code_for_ :samp:`{name}`` and a single :samp:`code_for_ :samp:`{name}``.
+:samp:`maybe_code_for_{name}` and a single :samp:`code_for_{name}`.
 
 .. Copyright (C) 1988-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.

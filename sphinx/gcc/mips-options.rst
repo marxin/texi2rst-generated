@@ -66,14 +66,14 @@ MIPS Options
   (for example, :option:`-march=r2k` ).  Prefixes are optional, and
   :samp:`vr` may be written :samp:`r`.
 
-  Names of the form :samp:`:samp:`{n}` f2_1` refer to processors with
+  Names of the form :samp:`{n}f2_1` refer to processors with
   FPUs clocked at half the rate of the core, names of the form
-  :samp:`:samp:`{n}` f1_1` refer to processors with FPUs clocked at the same
-  rate as the core, and names of the form :samp:`:samp:`{n}` f3_2` refer to
+  :samp:`{n}f1_1` refer to processors with FPUs clocked at the same
+  rate as the core, and names of the form :samp:`{n}f3_2` refer to
   processors with FPUs clocked a ratio of 3:2 with respect to the core.
-  For compatibility reasons, :samp:`:samp:`{n}` f` is accepted as a synonym
-  for :samp:`:samp:`{n}` f2_1` while :samp:`:samp:`{n}` x` and :samp:`:samp:`{b}` fx` are
-  accepted as synonyms for :samp:`:samp:`{n}` f1_1`.
+  For compatibility reasons, :samp:`{n}f` is accepted as a synonym
+  for :samp:`{n}f2_1` while :samp:`{n}x` and :samp:`{b}fx` are
+  accepted as synonyms for :samp:`{n}f1_1`.
 
   GCC defines two macros based on the value of this option.  The first
   is ``_MIPS_ARCH``, which gives the name of target architecture, as

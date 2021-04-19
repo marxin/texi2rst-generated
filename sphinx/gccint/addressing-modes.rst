@@ -595,8 +595,8 @@ address;  but often a machine-dependent strategy can generate better code.
   of which there are :samp:`{nops}`.
 
   For example, if :samp:`{ifn}` is ``IFN_COND_ADD``, the hook returns
-  a value of type :samp:`{type}` that should be used when :samp:`:samp:`{ops}` [0]`
-  and :samp:`:samp:`{ops}` [1]` are conditionally added together.
+  a value of type :samp:`{type}` that should be used when :samp:`{ops}[0]`
+  and :samp:`{ops}[1]` are conditionally added together.
 
   This hook is only relevant if the target supports conditional patterns
   like ``cond_addm``.  The default implementation returns a zero

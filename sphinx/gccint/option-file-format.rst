@@ -131,7 +131,7 @@ The files can contain the following types of record:
   of argument the option takes.
 
 * A target mask record.  These records have one field of the form
-  :samp:`Mask( :samp:`{x}` )`.  The options-processing script will automatically
+  :samp:`Mask({x})`.  The options-processing script will automatically
   allocate a bit in ``target_flags`` (see :ref:`run-time-target`) for
   each mask name :samp:`{x}` and set the macro ``MASK_x`` to the
   appropriate bitmask.  It will also declare a ``TARGET_x``

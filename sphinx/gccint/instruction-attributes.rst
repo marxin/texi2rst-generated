@@ -71,13 +71,13 @@ For each defined attribute, a number of definitions are written to the
 insn-attr.h file.  For cases where an explicit set of values is
 specified for an attribute, the following are defined:
 
-* A :samp:`#define` is written for the symbol :samp:`HAVE_ATTR_ :samp:`{name}``.
+* A :samp:`#define` is written for the symbol :samp:`HAVE_ATTR_{name}`.
 
-* An enumerated class is defined for :samp:`attr_ :samp:`{name}`` with
-  elements of the form :samp:`:samp:`{upper-name}` _ :samp:`{upper-value}`` where
+* An enumerated class is defined for :samp:`attr_{name}` with
+  elements of the form :samp:`{upper-name}_{upper-value}` where
   the attribute name and value are first converted to uppercase.
 
-* A function :samp:`get_attr_ :samp:`{name}`` is defined that is passed an insn and
+* A function :samp:`get_attr_{name}` is defined that is passed an insn and
   returns the attribute value for that insn.
 
 For example, if the following is present in the md file:
@@ -118,7 +118,7 @@ attributes are not free to use for other purposes:
   See :ref:`mnemonic-attribute`.
 
   For each of these special attributes, the corresponding
-:samp:`HAVE_ATTR_ :samp:`{name}`` :samp:`#define` is also written when the
+:samp:`HAVE_ATTR_{name}` :samp:`#define` is also written when the
 attribute is not defined; in that case, it is defined as :samp:`0`.
 
 .. index:: define_enum_attr

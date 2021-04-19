@@ -34,19 +34,19 @@ Some RTL nodes have special annotations associated with them.
 
   :samp:`MEM_OFFSET_KNOWN_P ({x})`
     True if the offset of the memory reference from ``MEM_EXPR`` is known.
-    :samp:`MEM_OFFSET ( :samp:`{x}` )` provides the offset if so.
+    :samp:`MEM_OFFSET ({x})` provides the offset if so.
 
     .. index:: MEM_OFFSET
 
   :samp:`MEM_OFFSET ({x})`
     The offset from the start of ``MEM_EXPR``.  The value is only valid if
-    :samp:`MEM_OFFSET_KNOWN_P ( :samp:`{x}` )` is true.
+    :samp:`MEM_OFFSET_KNOWN_P ({x})` is true.
 
     .. index:: MEM_SIZE_KNOWN_P
 
   :samp:`MEM_SIZE_KNOWN_P ({x})`
     True if the size of the memory reference is known.
-    :samp:`MEM_SIZE ( :samp:`{x}` )` provides its size if so.
+    :samp:`MEM_SIZE ({x})` provides its size if so.
 
     .. index:: MEM_SIZE
 
@@ -54,7 +54,7 @@ Some RTL nodes have special annotations associated with them.
     The size in bytes of the memory reference.
     This is mostly relevant for ``BLKmode`` references as otherwise
     the size is implied by the mode.  The value is only valid if
-    :samp:`MEM_SIZE_KNOWN_P ( :samp:`{x}` )` is true.
+    :samp:`MEM_SIZE_KNOWN_P ({x})` is true.
 
     .. index:: MEM_ALIGN
 
@@ -106,7 +106,7 @@ Some RTL nodes have special annotations associated with them.
     .. index:: SYMBOL_REF_CONSTANT
 
   :samp:`SYMBOL_REF_CONSTANT ({x})`
-    If :samp:`CONSTANT_POOL_ADDRESS_P ( :samp:`{x}` )` is true, this is the constant
+    If :samp:`CONSTANT_POOL_ADDRESS_P ({x})` is true, this is the constant
     pool entry for :samp:`{x}`.  It is null otherwise.
 
     .. index:: SYMBOL_REF_DATA
@@ -174,15 +174,15 @@ Some RTL nodes have special annotations associated with them.
     the target's use.
 
 :samp:`SYMBOL_REF_BLOCK ({x})`
-  If :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ( :samp:`{x}` )`, this is the
+  If :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ({x})`, this is the
   :samp:`object_block` structure to which the symbol belongs,
   or ``NULL`` if it has not been assigned a block.
 
   .. index:: SYMBOL_REF_BLOCK_OFFSET
 
 :samp:`SYMBOL_REF_BLOCK_OFFSET ({x})`
-  If :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ( :samp:`{x}` )`, this is the offset of :samp:`{x}`
-  from the first object in :samp:`SYMBOL_REF_BLOCK ( :samp:`{x}` )`.  The value is
+  If :samp:`SYMBOL_REF_HAS_BLOCK_INFO_P ({x})`, this is the offset of :samp:`{x}`
+  from the first object in :samp:`SYMBOL_REF_BLOCK ({x})`.  The value is
   negative if :samp:`{x}` has not yet been assigned to a block, or it has not
   been given an offset within that block.
 

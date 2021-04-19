@@ -3603,9 +3603,9 @@ These function attributes are supported by the Nios II back end:
 
     .. index:: target("no-custom-insn") function attribute, Nios II
 
-    Each :samp:`custom- :samp:`{insn}` = :samp:`{N}`` attribute locally enables use of a
+    Each :samp:`custom-{insn}={N}` attribute locally enables use of a
     custom instruction with encoding :samp:`{N}` when generating code that uses 
-    :samp:`{insn}`.  Similarly, :samp:`no-custom- :samp:`{insn}`` locally inhibits use of
+    :samp:`{insn}`.  Similarly, :samp:`no-custom-{insn}` locally inhibits use of
     the custom instruction :samp:`{insn}`.
     These target attributes correspond to the
     :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` and :option:`-mno-custom-`:samp:`{insn}`

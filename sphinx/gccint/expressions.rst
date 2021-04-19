@@ -140,7 +140,7 @@ kinds of expressions:
 
   These nodes are used to represent vector constants.  Each vector
   constant :samp:`{v}` is treated as a specific instance of an arbitrary-length
-  sequence that itself contains :samp:`VECTOR_CST_NPATTERNS ( :samp:`{v}` )`
+  sequence that itself contains :samp:`VECTOR_CST_NPATTERNS ({v})`
   interleaved patterns.  Each pattern has the form:
 
   .. code-block:: c++
@@ -152,7 +152,7 @@ kinds of expressions:
   only the first two elements are needed.  If in addition each :samp:`{base1}`
   is equal to the corresponding :samp:`{base0}` , only the first element in
   each pattern is needed.  The number of encoded elements per pattern
-  is given by :samp:`VECTOR_CST_NELTS_PER_PATTERN ( :samp:`{v}` )`.
+  is given by :samp:`VECTOR_CST_NELTS_PER_PATTERN ({v})`.
 
   For example, the constant:
 
@@ -192,19 +192,19 @@ kinds of expressions:
   fewest patterns or (if both encodings have the same number of
   petterns) the one with the fewest encoded elements.
 
-  :samp:`vector_cst_encoding_nelts ( :samp:`{v}` )` gives the total number of
+  :samp:`vector_cst_encoding_nelts ({v})` gives the total number of
   encoded elements in :samp:`{v}` , which is 6 in the example above.
   ``VECTOR_CST_ENCODED_ELTS (v)`` gives a pointer to the elements
   encoded in :samp:`{v}` and ``VECTOR_CST_ENCODED_ELT (v, i)``
   accesses the value of encoded element :samp:`{i}`.
 
-  :samp:`VECTOR_CST_DUPLICATE_P ( :samp:`{v}` )` is true if :samp:`{v}` simply contains
-  repeated instances of :samp:`VECTOR_CST_NPATTERNS ( :samp:`{v}` )` values.  This is
-  a shorthand for testing :samp:`VECTOR_CST_NELTS_PER_PATTERN ( :samp:`{v}` ) == 1`.
+  :samp:`VECTOR_CST_DUPLICATE_P ({v})` is true if :samp:`{v}` simply contains
+  repeated instances of :samp:`VECTOR_CST_NPATTERNS ({v})` values.  This is
+  a shorthand for testing :samp:`VECTOR_CST_NELTS_PER_PATTERN ({v}) == 1`.
 
-  :samp:`VECTOR_CST_STEPPED_P ( :samp:`{v}` )` is true if at least one
+  :samp:`VECTOR_CST_STEPPED_P ({v})` is true if at least one
   pattern in :samp:`{v}` has a nonzero step.  This is a shorthand for
-  testing :samp:`VECTOR_CST_NELTS_PER_PATTERN ( :samp:`{v}` ) == 3`.
+  testing :samp:`VECTOR_CST_NELTS_PER_PATTERN ({v}) == 3`.
 
   The utility function ``vector_cst_elt`` gives the value of an
   arbitrary index as a ``tree``.  ``vector_cst_int_elt`` gives
@@ -990,7 +990,7 @@ Vectors
 
   This node represents a vector formed from a scalar base and step,
   given as the first and second operands respectively.  Element :samp:`{i}`
-  of the result is equal to :samp:`:samp:`{base}` + :samp:`{i}` * :samp:`{step}``.
+  of the result is equal to :samp:`{base} + {i}*{step}`.
 
   This node is restricted to integral types, in order to avoid
   specifying the rounding behavior for floating-point types.

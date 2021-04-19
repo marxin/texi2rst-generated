@@ -49,7 +49,7 @@ need not exist yet; it will be created if necessary.
 
 There is a subtle point with tooldirs and ``DESTDIR``:
 If you relocate a cross-compiler installation with
-e.g. :samp:`DESTDIR= :samp:`{rootdir}``, then the directory
+e.g. :samp:`DESTDIR={rootdir}`, then the directory
 :samp:`{rootdir}` / :samp:`{exec-prefix}` / :samp:`{target-alias}` /bin will
 be filled with duplicated GCC executables only if it already exists,
 it will not be created otherwise.  This is regarded as a feature,
@@ -112,7 +112,7 @@ gcc@gcc.gnu.org detailing how the information should be changed.
 If you find a bug, please report it following the
 ../bugs/bug reporting guidelines.
 
-If you want to print the GCC manuals, do :samp:`cd :samp:`{objdir}` ; make
+If you want to print the GCC manuals, do :samp:`cd {objdir}; make
 dvi`.  You will need to have :command:`texi2dvi` (version at least 4.7)
 and Tex installed.  This creates a number of .dvi files in
 subdirectories of :samp:`{objdir}`; these may be converted for
@@ -125,7 +125,7 @@ Free Software Foundation, though such manuals may not be for the most
 recent version of GCC.
 
 If you would like to generate online HTML documentation, do :samp:`cd
-:samp:`{objdir}` ; make html` and HTML will be generated for the gcc manuals in
+{objdir}; make html` and HTML will be generated for the gcc manuals in
 :samp:`{objdir}` /gcc/HTML.
 
 .. ***Binaries****************************************************************

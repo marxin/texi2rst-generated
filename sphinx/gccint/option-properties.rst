@@ -54,8 +54,8 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   options, their ``Negative`` properties should form a circular chain.
   For example, if options :option:`-`:samp:`{a}` , :option:`-`:samp:`{b}` and
   :option:`-`:samp:`{c}` are mutually exclusive, their respective ``Negative``
-  properties should be :samp:`Negative( :samp:`{b}` )`, :samp:`Negative( :samp:`{c}` )`
-  and :samp:`Negative( :samp:`{a}` )`.
+  properties should be :samp:`Negative({b})`, :samp:`Negative({c})`
+  and :samp:`Negative({a})`.
 
 ``Joined`` ``Separate``
   The option takes a mandatory argument.  ``Joined`` indicates

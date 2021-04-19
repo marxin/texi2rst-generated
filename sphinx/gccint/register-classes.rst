@@ -446,10 +446,10 @@ macro if it would always return ``NO_REGS``.
 
 If a scratch register is required (either with or without an
 intermediate register), you were supposed to define patterns for
-:samp:`reload_in :samp:`{m}`` or :samp:`reload_out :samp:`{m}``, as required
+:samp:`reload_in{m}` or :samp:`reload_out{m}`, as required
 (see :ref:`standard-names`.  These patterns, which were normally
 implemented with a ``define_expand``, should be similar to the
-:samp:`mov :samp:`{m}`` patterns, except that operand 2 is the scratch
+:samp:`mov{m}` patterns, except that operand 2 is the scratch
 register.
 
 These patterns need constraints for the reload register and scratch

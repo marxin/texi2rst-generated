@@ -592,8 +592,8 @@ Push/Pop Macro Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^
 
 For compatibility with Microsoft Windows compilers, GCC supports
-:samp:`#pragma push_macro( :samp:`{"macro_name"}` )`
-and :samp:`#pragma pop_macro( :samp:`{"macro_name"}` )`.
+:samp:`#pragma push_macro({"macro_name"})`
+and :samp:`#pragma pop_macro({"macro_name"})`.
 
 :samp:`#pragma push_macro({"macro_name"})`
 

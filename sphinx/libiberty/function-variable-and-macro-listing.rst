@@ -1438,7 +1438,7 @@ sets of characters:
 
   If the supplied error number is within the valid range of indices for
   symbolic names, but no name is available for the particular error
-  number, then returns the string :samp:`Error :samp:`{num}``, where :samp:`{num}`
+  number, then returns the string :samp:`Error {num}`, where :samp:`{num}`
   is the error number.
 
   If the supplied error number is not within the range of valid
@@ -1458,7 +1458,7 @@ sets of characters:
 
   If the supplied error number is within the valid range of indices for
   the ``sys_errlist``, but no message is available for the particular
-  error number, then returns the string :samp:`Error :samp:`{num}``, where
+  error number, then returns the string :samp:`Error {num}`, where
   :samp:`{num}` is the error number.
 
   If the supplied error number is not a valid index into
@@ -1516,7 +1516,7 @@ sets of characters:
 
   If the supplied signal number is within the valid range of indices for
   the ``sys_siglist``, but no message is available for the particular
-  signal number, then returns the string :samp:`Signal :samp:`{num}``, where
+  signal number, then returns the string :samp:`Signal {num}`, where
   :samp:`{num}` is the signal number.
 
   If the supplied signal number is not a valid index into
@@ -1534,7 +1534,7 @@ sets of characters:
 
   If the supplied signal number is within the valid range of indices for
   symbolic names, but no name is available for the particular signal
-  number, then returns the string :samp:`Signal :samp:`{num}``, where
+  number, then returns the string :samp:`Signal {num}`, where
   :samp:`{num}` is the signal number.
 
   If the supplied signal number is not within the range of valid

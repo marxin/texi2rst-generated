@@ -1366,7 +1366,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   ``CMPLXL``.  :samp:`{real}` and :samp:`{imag}` must have the same type, a
   real binary floating-point type, and the result has the corresponding
   complex type with real and imaginary parts :samp:`{real}` and :samp:`{imag}`.
-  Unlike :samp:`:samp:`{real}` + I * :samp:`{imag}``, this works even when
+  Unlike :samp:`{real} + I * {imag}`, this works even when
   infinities, NaNs and negative zeros are involved.
 
 .. function:: int __builtin_constant_p(exp)

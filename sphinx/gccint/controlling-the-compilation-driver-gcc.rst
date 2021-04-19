@@ -21,7 +21,7 @@ default specs files (but not command-line specified ones) and
 choosing the multilib directory or running any subcommands.  It
 applies them in the order given, so each spec can depend on the
 options added by earlier ones.  It is also possible to remove options
-using :samp:`%< :samp:`{option}`` in the usual way.
+using :samp:`%<{option}` in the usual way.
 
 This macro can be useful when a port has several interdependent target
 options.  It provides a way of standardizing the command line so

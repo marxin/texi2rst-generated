@@ -29,27 +29,27 @@ or test whether such a conversion would succeed.
   of analysis rejected non-constants).
 
 :samp:`{value}.to_shwi (&{p2})`
-  Return true if :samp:`poly_int< :samp:`{N}` , :samp:`{T}` >` :samp:`{value}` can be
+  Return true if :samp:`poly_int<{N}, {T}>` :samp:`{value}` can be
   represented without loss of precision as a
-  :samp:`poly_int< :samp:`{N}` , ``HOST_WIDE_INT``>`, storing it in that
+  :samp:`poly_int<{N}, ``HOST_WIDE_INT``>`, storing it in that
   form in :samp:`{p2}` if so.
 
 :samp:`{value}.to_uhwi (&{p2})`
-  Return true if :samp:`poly_int< :samp:`{N}` , :samp:`{T}` >` :samp:`{value}` can be
+  Return true if :samp:`poly_int<{N}, {T}>` :samp:`{value}` can be
   represented without loss of precision as a
-  :samp:`poly_int< :samp:`{N}` , ``unsigned HOST_WIDE_INT``>`, storing it in that
+  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT``>`, storing it in that
   form in :samp:`{p2}` if so.
 
 :samp:`{value}.force_shwi ()`
-  Forcibly convert each coefficient of :samp:`poly_int< :samp:`{N}` , :samp:`{T}` >`
+  Forcibly convert each coefficient of :samp:`poly_int<{N}, {T}>`
   :samp:`{value}` to ``HOST_WIDE_INT``, truncating any that are out of range.
-  Return the result as a :samp:`poly_int< :samp:`{N}` , ``HOST_WIDE_INT``>`.
+  Return the result as a :samp:`poly_int<{N}, ``HOST_WIDE_INT``>`.
 
 :samp:`{value}.force_uhwi ()`
-  Forcibly convert each coefficient of :samp:`poly_int< :samp:`{N}` , :samp:`{T}` >`
+  Forcibly convert each coefficient of :samp:`poly_int<{N}, {T}>`
   :samp:`{value}` to ``unsigned HOST_WIDE_INT``, truncating any that are
   out of range.  Return the result as a
-  :samp:`poly_int< :samp:`{N}` , ``unsigned HOST_WIDE_INT``>`.
+  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT``>`.
 
 :samp:`wi::shwi ({value}, {precision})`
   Return a ``poly_int`` with the same value as :samp:`{value}` , but with

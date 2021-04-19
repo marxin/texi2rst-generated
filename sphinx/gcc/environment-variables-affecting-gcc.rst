@@ -211,7 +211,7 @@ preprocessor.
   The value of :envvar:`DEPENDENCIES_OUTPUT` can be just a file name, in
   which case the Make rules are written to that file, guessing the target
   name from the source file name.  Or the value can have the form
-  :samp:`:samp:`{file}`:samp:`{target}``, in which case the rules are written to
+  :samp:`{file}{target}`, in which case the rules are written to
   file :samp:`{file}` using :samp:`{target}` as the target name.
 
   In other words, this environment variable is equivalent to combining

@@ -1481,8 +1481,8 @@ RTL expression.
 of printing the operand.  It is used when identical operands must be
 printed differently depending on the context.  :samp:`{code}` comes from
 the :samp:`%` specification that was used to request printing of the
-operand.  If the specification was just :samp:`% :samp:`{digit}`` then
-:samp:`{code}` is 0; if the specification was :samp:`% :samp:`{ltr}`:samp:`{digit}`` then :samp:`{code}` is the ASCII code for :samp:`{ltr}`.
+operand.  If the specification was just :samp:`%{digit}` then
+:samp:`{code}` is 0; if the specification was :samp:`%{ltr}{digit}` then :samp:`{code}` is the ASCII code for :samp:`{ltr}`.
 
 .. index:: reg_names
 
@@ -1491,7 +1491,7 @@ The names can be found in an array ``reg_names`` whose type is
 ``char *[]``.  ``reg_names`` is initialized from
 ``REGISTER_NAMES``.
 
-When the machine description has a specification :samp:`% :samp:`{punct}``
+When the machine description has a specification :samp:`%{punct}`
 (a :samp:`%` followed by a punctuation character), this macro is called
 with a null pointer for :samp:`{x}` and the punctuation character for
 :samp:`{code}`.

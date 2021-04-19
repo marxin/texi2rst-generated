@@ -246,8 +246,8 @@ You need not define this macro if it would always have the value of zero.
 
 MacroSTORE_FLAG_VALUEA C expression describing the value returned by a comparison operator
 with an integral mode and stored by a store-flag instruction
-(:samp:`cstore :samp:`{mode}` 4`) when the condition is true.  This description must
-apply to *all* the :samp:`cstore :samp:`{mode}` 4` patterns and all the
+(:samp:`cstore{mode}4`) when the condition is true.  This description must
+apply to *all* the :samp:`cstore{mode}4` patterns and all the
 comparison operators whose results have a ``MODE_INT`` mode.
 
 A value of 1 or -1 means that the instruction implementing the
@@ -256,7 +256,7 @@ and 0 when the comparison is false.  Otherwise, the value indicates
 which bits of the result are guaranteed to be 1 when the comparison is
 true.  This value is interpreted in the mode of the comparison
 operation, which is given by the mode of the first operand in the
-:samp:`cstore :samp:`{mode}` 4` pattern.  Either the low bit or the sign bit of
+:samp:`cstore{mode}4` pattern.  Either the low bit or the sign bit of
 ``STORE_FLAG_VALUE`` be on.  Presently, only those bits are used by
 the compiler.
 
@@ -321,7 +321,7 @@ those cases, e.g., one matching
 
 Some machines can also perform ``and`` or ``plus`` operations on
 condition code values with less instructions than the corresponding
-:samp:`cstore :samp:`{mode}` 4` insn followed by ``and`` or ``plus``.  On those
+:samp:`cstore{mode}4` insn followed by ``and`` or ``plus``.  On those
 machines, define the appropriate patterns.  Use the names ``incscc``
 and ``decscc``, respectively, for the patterns which perform
 ``plus`` or ``minus`` operations on condition code values.  See

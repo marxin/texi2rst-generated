@@ -734,7 +734,7 @@ no corresponding text in the assembly language.
 
 ARM AArch64
   The flag output constraints for the ARM family are of the form
-  :samp:`=@cc :samp:`{cond}`` where :samp:`{cond}` is one of the standard
+  :samp:`=@cc{cond}` where :samp:`{cond}` is one of the standard
   conditions defined in the ARM ARM for ``ConditionHolds``.
 
   ``eq``
@@ -783,7 +783,7 @@ ARM AArch64
 
 x86 family
   The flag output constraints for the x86 family are of the form
-  :samp:`=@cc :samp:`{cond}`` where :samp:`{cond}` is one of the standard
+  :samp:`=@cc{cond}` where :samp:`{cond}` is one of the standard
   conditions defined in the ISA manual for ``jcc`` or
   ``setcc``.
 

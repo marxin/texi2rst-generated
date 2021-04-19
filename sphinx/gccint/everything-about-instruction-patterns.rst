@@ -18,10 +18,10 @@ template or C code to generate the assembler output.
 A ``define_insn`` is an RTL expression containing four or five operands:
 
 * An optional name :samp:`{n}`.  When a name is present, the compiler
-  automically generates a C++ function :samp:`gen_ :samp:`{n}`` that takes
+  automically generates a C++ function :samp:`gen_{n}` that takes
   the operands of the instruction as arguments and returns the instruction's
   rtx pattern.  The compiler also assigns the instruction a unique code
-  :samp:`CODE_FOR_ :samp:`{n}``, with all such codes belonging to an enum
+  :samp:`CODE_FOR_{n}`, with all such codes belonging to an enum
   called ``insn_code``.
 
   These names serve one of two purposes.  The first is to indicate that the
@@ -44,8 +44,8 @@ A ``define_insn`` is an RTL expression containing four or five operands:
   a nameless pattern for all other purposes.  Names beginning with the
   :samp:`*` character are not required to be unique.
 
-  The name may also have the form :samp:`@ :samp:`{n}``.  This has the same
-  effect as a name :samp:`:samp:`{n}``, but in addition tells the compiler to
+  The name may also have the form :samp:`@{n}`.  This has the same
+  effect as a name :samp:`{n}`, but in addition tells the compiler to
   generate further helper functions; see Parameterized Names for details.
 
 * The :dfn:`RTL template`: This is a vector of incomplete RTL expressions

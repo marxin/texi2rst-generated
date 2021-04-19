@@ -131,7 +131,7 @@ These :samp:`-m` options are defined for the ARM port:
   Thumb execution state, are recognized but support is deprecated: :samp:`armv4`.
 
   Many of the architectures support extensions.  These can be added by
-  appending :samp:`+ :samp:`{extension}`` to the architecture name.  Extension
+  appending :samp:`+{extension}` to the architecture name.  Extension
   options are processed in order and capabilities accumulate.  An extension
   will also enable any necessary base extensions
   upon which it depends.  For example, the :samp:`+crypto` extension

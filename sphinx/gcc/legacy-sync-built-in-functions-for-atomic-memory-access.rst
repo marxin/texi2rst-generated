@@ -27,7 +27,7 @@ operation cannot be implemented on the target processor, a warning is
 generated and a call to an external function is generated.  The external
 function carries the same name as the built-in version,
 with an additional suffix
-:samp:`_ :samp:`{n}`` where :samp:`{n}` is the size of the data type.
+:samp:`_{n}` where :samp:`{n}` is the size of the data type.
 
 .. ??? Should we have a mechanism to suppress this warning?  This is almost
    useful for implementing the operation under the control of an external

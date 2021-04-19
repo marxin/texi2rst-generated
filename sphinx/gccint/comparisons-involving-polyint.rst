@@ -13,10 +13,10 @@ the latter is alias analysis: we might want to check whether two
 arbitrary memory references overlap.
 
 Referring back to the examples in the previous section, it makes sense
-to ask whether a memory reference of size :samp:`3 + 4 :samp:`{x}`` overlaps
-one of size :samp:`1 + 5 :samp:`{x}``, but it does not make sense to have a
-subreg in which the outer mode has :samp:`3 + 4 :samp:`{x}`` bytes and the
-inner mode has :samp:`1 + 5 :samp:`{x}`` bytes (or vice versa).  Such subregs
+to ask whether a memory reference of size :samp:`3 + 4{x}` overlaps
+one of size :samp:`1 + 5{x}`, but it does not make sense to have a
+subreg in which the outer mode has :samp:`3 + 4{x}` bytes and the
+inner mode has :samp:`1 + 5{x}` bytes (or vice versa).  Such subregs
 are always invalid and should trigger an internal compiler error
 if formed.
 
@@ -122,9 +122,9 @@ However:
   maybe_le (a, b) && maybe_le (b, a) does not imply !maybe_ne (a, b) [== known_eq (a, b)]
   maybe_ge (a, b) && maybe_ge (b, a) does not imply !maybe_ne (a, b) [== known_eq (a, b)]
 
-One example is again :samp:`:samp:`{a}` == 3 + 4 :samp:`{x}``
-and :samp:`:samp:`{b}` == 1 + 5 :samp:`{x}``, where :samp:`maybe_le ( :samp:`{a}` , :samp:`{b}` )`,
-:samp:`maybe_ge ( :samp:`{a}` , :samp:`{b}` )` and :samp:`maybe_ne ( :samp:`{a}` , :samp:`{b}` )`
+One example is again :samp:`{a} == 3 + 4{x}`
+and :samp:`{b} == 1 + 5{x}`, where :samp:`maybe_le ({a}, {b})`,
+:samp:`maybe_ge ({a}, {b})` and :samp:`maybe_ne ({a}, {b})`
 all hold.  ``maybe_le`` and ``maybe_ge`` are therefore not antisymetric
 and do not form a partial order.
 
@@ -155,7 +155,7 @@ partial orders.  However:
   known_le (a, b) does not imply known_lt (a, b) || known_eq (a, b)
   known_ge (a, b) does not imply known_gt (a, b) || known_eq (a, b)
 
-For example, :samp:`known_le (4, 4 + 4 :samp:`{x}` )` holds because the runtime
+For example, :samp:`known_le (4, 4 + 4{x})` holds because the runtime
 indeterminate :samp:`{x}` is a nonnegative integer, but neither
 ``known_lt (4, 4 + 4x)`` nor ``known_eq (4, 4 + 4x)`` hold.
 
@@ -217,7 +217,7 @@ inner mode of size :samp:`{inner}` :
 * otherwise, the subreg is ill-formed
 
 Thus the subreg is only valid if
-:samp:`ordered_p ( :samp:`{outer}` , :samp:`{inner}` )` is true.  If this condition
+:samp:`ordered_p ({outer}, {inner})` is true.  If this condition
 is already known to be true then:
 
 * the subreg is complete if known_eq ( :samp:`{inner}` , :samp:`{outer}` )
@@ -319,6 +319,6 @@ Sorting ``poly_int``s
   values come first.
 
   Note that the values do not necessarily end up in numerical order.
-  For example, :samp:`1 + 1 :samp:`{x}`` would come after :samp:`100` in the sort order,
+  For example, :samp:`1 + 1{x}` would come after :samp:`100` in the sort order,
   but may well be less than :samp:`100` at run time.
 
