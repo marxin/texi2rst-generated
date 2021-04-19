@@ -475,7 +475,8 @@ accepts:
   the negative form of :option:`-funsigned-char`.  Likewise, the option
   :option:`-fno-signed-char` is equivalent to :option:`-funsigned-char`.
 
-.. option:: -fsigned-bitfields, -funsigned-bitfields, -fno-signed-bitfields, -fno-unsigned-bitfields
+.. option:: -fsigned-bitfields, -funsigned-bitfields, -fno-signed-bitfields
+.. option:: -fno-unsigned-bitfields
 
   These options control whether a bit-field is signed or unsigned, when the
   declaration does not use either ``signed`` or ``unsigned``.  By

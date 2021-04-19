@@ -554,7 +554,8 @@ The following attributes are supported on most targets.
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
-.. option:: format (archetype, string-index, first-to-check), -Wformat, -ffreestanding, -fno-builtin
+.. option:: format (archetype, string-index, first-to-check), -Wformat
+.. option:: -ffreestanding, -fno-builtin
 
   .. index:: format function attribute
 

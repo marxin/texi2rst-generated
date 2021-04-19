@@ -290,7 +290,8 @@ information useful for debugging do not run at all, so that
   compiling with optimization ( :option:`-Os` , :option:`-O` , :option:`-O2` ,
   ...), and outputting DWARF 2 debug information at the normal level.
 
-.. option:: -gvariable-location-views, -gvariable-location-views=incompat5, -gno-variable-location-views
+.. option:: -gvariable-location-views, -gvariable-location-views=incompat5
+.. option:: -gno-variable-location-views
 
   Augment variable location lists with progressive view numbers implied
   from the line number table.  This enables debug information consumers to

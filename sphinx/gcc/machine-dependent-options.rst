@@ -682,7 +682,8 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
     The default is :option:`-mfp-mode=caller`
 
-.. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify, -mpostmodify
+.. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify
+.. option:: -mpostmodify
 
   Code generation tweaks that disable, respectively, splitting of 32-bit
   loads, generation of post-increment addresses, and generation of
@@ -3430,7 +3431,8 @@ These options are defined specifically for the CRIS ports.
   Do not emit instructions with side effects in addressing modes other than
   post-increment.
 
-.. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align, -mconst-align, -mno-const-align
+.. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align
+.. option:: -mconst-align, -mno-const-align
 
   These options (:samp:`no-` options) arrange (eliminate arrangements) for the
   stack frame, individual data and constants to be aligned for the maximum
@@ -3856,7 +3858,22 @@ restrictive subtype of any of its input files.
   This causes GCC's output file to have the :samp:`ALL` subtype, instead of
   one controlled by the :option:`-mcpu` or :option:`-march` option.
 
-.. option:: -allowable_client  client_name, -allowable_client, -client_name, -compatibility_version, -current_version, -dead_strip, -dependency-file, -dylib_file, -dylinker_install_name, -dynamic, -exported_symbols_list, -filelist, -flat_namespace, -force_flat_namespace, -headerpad_max_install_names, -image_base, -init, -install_name, -keep_private_externs, -multi_module, -multiply_defined, -multiply_defined_unused, -noall_load, -no_dead_strip_inits_and_terms, -nofixprebinding, -nomultidefs, -noprebind, -noseglinkedit, -pagezero_size, -prebind, -prebind_all_twolevel_modules, -private_bundle, -read_only_relocs, -sectalign, -sectobjectsymbols, -whyload, -seg1addr, -sectcreate, -sectorder, -segaddr, -segs_read_only_addr, -segs_read_write_addr, -seg_addr_table, -seg_addr_table_filename, -seglinkedit, -segprot, -single_module, -static, -sub_library, -sub_umbrella, -twolevel_namespace, -umbrella, -undefined, -unexported_symbols_list, -weak_reference_mismatches, -whatsloaded
+.. option:: -allowable_client  client_name, -allowable_client, -client_name
+.. option:: -compatibility_version, -current_version, -dead_strip, -dependency-file
+.. option:: -dylib_file, -dylinker_install_name, -dynamic, -exported_symbols_list
+.. option:: -filelist, -flat_namespace, -force_flat_namespace
+.. option:: -headerpad_max_install_names, -image_base, -init, -install_name
+.. option:: -keep_private_externs, -multi_module, -multiply_defined
+.. option:: -multiply_defined_unused, -noall_load, -no_dead_strip_inits_and_terms
+.. option:: -nofixprebinding, -nomultidefs, -noprebind, -noseglinkedit
+.. option:: -pagezero_size, -prebind, -prebind_all_twolevel_modules
+.. option:: -private_bundle, -read_only_relocs, -sectalign, -sectobjectsymbols
+.. option:: -whyload, -seg1addr, -sectcreate, -sectorder, -segaddr
+.. option:: -segs_read_only_addr, -segs_read_write_addr, -seg_addr_table
+.. option:: -seg_addr_table_filename, -seglinkedit, -segprot, -single_module
+.. option:: -static, -sub_library, -sub_umbrella, -twolevel_namespace, -umbrella
+.. option:: -undefined, -unexported_symbols_list, -weak_reference_mismatches
+.. option:: -whatsloaded
 
   These options are passed to the Darwin linker.  The Darwin linker man page
   describes them in detail.
@@ -5015,21 +5032,24 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   This is effective only with :option:`-msched-control-spec` enabled.
   The default setting is enabled.
 
-.. option:: -mno-sched-prefer-non-data-spec-insns, -msched-prefer-non-data-spec-insns
+.. option:: -mno-sched-prefer-non-data-spec-insns
+.. option:: -msched-prefer-non-data-spec-insns
 
   If enabled, data-speculative instructions are chosen for schedule
   only if there are no other choices at the moment.  This makes
   the use of the data speculation much more conservative.
   The default setting is disabled.
 
-.. option:: -mno-sched-prefer-non-control-spec-insns, -msched-prefer-non-control-spec-insns
+.. option:: -mno-sched-prefer-non-control-spec-insns
+.. option:: -msched-prefer-non-control-spec-insns
 
   If enabled, control-speculative instructions are chosen for schedule
   only if there are no other choices at the moment.  This makes
   the use of the control speculation much more conservative.
   The default setting is disabled.
 
-.. option:: -mno-sched-count-spec-in-critical-path, -msched-count-spec-in-critical-path
+.. option:: -mno-sched-count-spec-in-critical-path
+.. option:: -msched-count-spec-in-critical-path
 
   If enabled, speculative dependencies are considered during
   computation of the instructions priorities.  This makes the use of the
@@ -8365,7 +8385,10 @@ IBM RS/6000 and PowerPC Options
 
 These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
-.. option:: -mpowerpc-gpopt, -mno-powerpc-gpopt, -mpowerpc-gfxopt, -mno-powerpc-gfxopt, -mpowerpc64, -mno-powerpc64, -mmfcrf, -mno-mfcrf, -mpopcntb, -mno-popcntb, -mpopcntd, -mno-popcntd, -mfprnd, -mno-fprnd, -mcmpb, -mno-cmpb, -mhard-dfp, -mno-hard-dfp
+.. option:: -mpowerpc-gpopt, -mno-powerpc-gpopt, -mpowerpc-gfxopt
+.. option:: -mno-powerpc-gfxopt, -mpowerpc64, -mno-powerpc64, -mmfcrf, -mno-mfcrf
+.. option:: -mpopcntb, -mno-popcntb, -mpopcntd, -mno-popcntd, -mfprnd, -mno-fprnd
+.. option:: -mcmpb, -mno-cmpb, -mhard-dfp, -mno-hard-dfp
 
   You use these options to specify which instructions are available on the
   processor you are using.  The default value of these options is
@@ -9341,7 +9364,8 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   Generate (do not generate) the MMA instructions when the option
   :option:`-mcpu=future` is used.
 
-.. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx, -no-block-ops-unaligned-vsx
+.. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx
+.. option:: -no-block-ops-unaligned-vsx
 
   Generate (do not generate) unaligned vsx loads and stores for
   inline expansion of ``memcpy`` and ``memmove``.
