@@ -72,7 +72,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 
   Structure of the JSON is following:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     {
       "current_working_directory": current_working_directory,
@@ -95,7 +95,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 
   Each :samp:`{file}` has the following form:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     {
       "file": file_name,
@@ -109,7 +109,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 
   Each :samp:`{function}` has the following form:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     {
       "blocks": blocks,
@@ -150,7 +150,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 
   Each :samp:`{line}` has the following form:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     {
       "branches": [branch],
@@ -175,7 +175,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 
   Each :samp:`{branch}` has the following form:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     {
       "count": count,

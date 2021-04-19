@@ -563,7 +563,7 @@ honor these options.
 
   might be printed in JSON form (after formatting) like this:
 
-  .. code-block:: c++
+  .. code-block:: json
 
     [
         {
@@ -655,7 +655,7 @@ honor these options.
   23.  It has two secondary locations, describing the left and right-hand sides
   of the expression, which have labels.  It might be printed in JSON form as:
 
-  .. code-block:: c++
+  .. code-block:: json
 
         {
             "children": [],
@@ -703,7 +703,7 @@ honor these options.
 
   might be printed in JSON form as:
 
-  .. code-block:: c++
+  .. code-block:: json
 
         {
             "children": [],
