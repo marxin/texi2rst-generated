@@ -4235,6 +4235,16 @@ section includes experimental options that may produce broken code.
     The maximum number of 'after supernode' exploded nodes within the analyzer
     per supernode, before terminating analysis.
 
+  ``openacc-kernels``
+    Specify mode of OpenACC 'kernels' constructs handling.
+    With :option:`--param=openacc-kernels=decompose` , OpenACC 'kernels'
+    constructs are decomposed into parts, a sequence of compute
+    constructs, each then handled individually.
+    This is work in progress.
+    With :option:`--param=openacc-kernels=parloops` , OpenACC 'kernels'
+    constructs are handled by the :samp:`parloops` pass, en bloc.
+    This is the current default.
+
     The following choices of :samp:`{name}` are available on AArch64 targets:
 
   ``aarch64-sve-compare-costs``

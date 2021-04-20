@@ -354,19 +354,6 @@ accepts:
   ':'-separated sizes, in order 'gang', 'worker' and, 'vector'.  A size
   can be omitted, to use a target-specific default value.
 
-.. option:: -fopenacc-kernels=mode
-
-  .. index:: OpenACC accelerator programming
-
-  Specify mode of OpenACC 'kernels' constructs handling.
-  With :option:`-fopenacc-kernels=decompose` , OpenACC 'kernels'
-  constructs are decomposed into parts, a sequence of compute
-  constructs, each then handled individually.
-  This is work in progress.
-  With :option:`-fopenacc-kernels=parloops` , OpenACC 'kernels' constructs
-  are handled by the :samp:`parloops` pass, en bloc.
-  This is the current default.
-
 .. option:: -fopenmp
 
   .. index:: OpenMP parallel

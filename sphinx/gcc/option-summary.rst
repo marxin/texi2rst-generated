@@ -26,7 +26,7 @@ in the following sections.
   :option:`-aux-info` :samp:`{filename}`  :option:`-fallow-parameterless-variadic-functions` 
   :option:`-fno-asm`  :option:`-fno-builtin`  :option:`-fno-builtin-`:samp:`{function}`  :option:`-fgimple`
   :option:`-fhosted`  :option:`-ffreestanding` 
-  :option:`-fopenacc`  :option:`-fopenacc-dim`:samp:`={geom}`  :option:`-fopenacc-kernels`:samp:`={mode}` 
+  :option:`-fopenacc`  :option:`-fopenacc-dim`:samp:`={geom}` 
   :option:`-fopenmp`  :option:`-fopenmp-simd` 
   :option:`-fms-extensions`  :option:`-fplan9-extensions`  :option:`-fsso-struct`:samp:`={endianness}` 
   :option:`-fallow-single-precision`  :option:`-fcond-mismatch`  :option:`-flax-vector-conversions` 
