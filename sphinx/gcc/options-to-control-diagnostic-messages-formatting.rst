@@ -345,15 +345,17 @@ honor these options.
   Print fix-it hints to stderr in unified diff format, after any diagnostics
   are printed.  For example:
 
-  :option:`---` test.c
-  +++ test.c
-  @ :option:`-42,5` +42,5 @
+  .. code-block:: bash
 
-   void show_cb(GtkDialog *dlg)
-   {
-  -  gtk_widget_showall(dlg);
-  +  gtk_widget_show_all(dlg);
-   }
+    --- test.c
+    +++ test.c
+    @ -42,5 +42,5 @
+
+     void show_cb(GtkDialog *dlg)
+     {
+    -  gtk_widget_showall(dlg);
+    +  gtk_widget_show_all(dlg);
+     }
 
   The diff may or may not be colorized, following the same rules
   as for diagnostics (see :option:`-fdiagnostics-color` ).
