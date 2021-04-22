@@ -1268,7 +1268,7 @@ in the following sections.
   :option:`-mno-wide-multiply`  :option:`-mrtd`  :option:`-malign-double` 
   :option:`-mpreferred-stack-boundary`:samp:`={num}` 
   :option:`-mincoming-stack-boundary`:samp:`={num}` 
-  :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` 
+  :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` :option:`-mmwait` 
   :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}` 
   :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width`:samp:`={opt}` 
   :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` 

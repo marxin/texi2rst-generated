@@ -4235,6 +4235,10 @@ section includes experimental options that may produce broken code.
     The maximum number of 'after supernode' exploded nodes within the analyzer
     per supernode, before terminating analysis.
 
+  ``ranger-logical-depth``
+    Maximum depth of logical expression evaluation ranger will look through
+    when evaluating outgoing edge ranges.
+
   ``openacc-kernels``
     Specify mode of OpenACC 'kernels' constructs handling.
     With :option:`--param=openacc-kernels=decompose` , OpenACC 'kernels'

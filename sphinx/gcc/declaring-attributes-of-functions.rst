@@ -4695,6 +4695,12 @@ These function attributes are supported by the x86 back end:
 
     Enable/disable the generation of the MOVDIRI instructions.
 
+  :samp:`mwait` :samp:`no-mwait`
+
+    .. index:: target("mwait") function attribute, x86
+
+    Enable/disable the generation of the MWAIT and MONITOR instructions.
+
   :samp:`mwaitx` :samp:`no-mwaitx`
 
     .. index:: target("mwaitx") function attribute, x86

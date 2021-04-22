@@ -891,6 +891,12 @@ These :samp:`-m` options are defined for the x86 family of computers.
   ``__builtin_ia32_crc32hi``, ``__builtin_ia32_crc32si`` and
   ``__builtin_ia32_crc32di`` to generate the ``crc32`` machine instruction.
 
+.. option:: -mmwait
+
+  This option enables built-in functions ``__builtin_ia32_monitor``,
+  and ``__builtin_ia32_mwait`` to generate the ``monitor`` and
+  ``mwait`` machine instructions.
+
 .. option:: -mrecip
 
   This option enables use of ``RCPSS`` and ``RSQRTSS`` instructions
