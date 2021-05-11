@@ -27,10 +27,8 @@ separately.
 
 Second, you must have the testing tools installed.  This includes
 http://www.gnu.org/software/dejagnu/DejaGnu, Tcl, and Expect;
-the DejaGnu site has links to these. For running the BRIG frontend
-tests, a tool to assemble the binary BRIGs from HSAIL text,
-https://github.com/HSAFoundation/HSAIL-Tools/HSAILasm must
-be installed.  Some optional tests also require Python3 and pytest module.
+the DejaGnu site has links to these.
+Some optional tests also require Python3 and pytest module.
 
 If the directories where :command:`runtest` and :command:`expect` were
 installed are not in the :envvar:`PATH`, you may need to set the following

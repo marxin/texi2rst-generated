@@ -47,8 +47,8 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   turned off.  The driver will prune options, removing those that are
   turned off by some later option.  This pruning is not done for options
   with ``Joined`` or ``JoinedOrMissing`` properties, unless the
-  options have either ``RejectNegative`` property or the ``Negative``
-  property mentions an option other than itself.
+  options have both the ``RejectNegative`` property and the ``Negative``
+  property mentions itself.
 
   As a consequence, if you have a group of mutually-exclusive
   options, their ``Negative`` properties should form a circular chain.

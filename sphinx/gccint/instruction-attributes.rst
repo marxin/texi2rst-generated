@@ -11,8 +11,7 @@ In addition to describing the instruction supported by the target machine,
 the md file also defines a group of :dfn:`attributes` and a set of
 values for each.  Every generated insn is assigned a value for each attribute.
 One possible attribute would be the effect that the insn has on the machine's
-condition code.  This attribute can then be used by ``NOTICE_UPDATE_CC``
-to track the condition codes.
+condition code.
 
 .. toctree::
 

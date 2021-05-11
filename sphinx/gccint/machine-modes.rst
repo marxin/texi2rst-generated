@@ -259,8 +259,7 @@ object of ``BITS_PER_UNIT`` bits (see :ref:`storage-layout`).
   'Condition Code' mode represents the value of a condition code, which
   is a machine-specific set of bits used to represent the result of a
   comparison operation.  Other machine-specific modes may also be used for
-  the condition code.  These modes are not used on machines that use
-  ``cc0`` (see :ref:`condition-code`).
+  the condition code.  (see :ref:`condition-code`).
 
   .. index:: BLKmode
 

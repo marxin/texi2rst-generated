@@ -43,10 +43,6 @@ no RTL objects are common to two functions.
 
 * There is only one ``pc`` expression.
 
-  .. index:: cc0, RTL sharing
-
-* There is only one ``cc0`` expression.
-
   .. index:: const_double, RTL sharing
 
 * There is only one ``const_double`` expression with value 0 for

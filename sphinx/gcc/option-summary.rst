@@ -192,7 +192,9 @@ in the following sections.
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` 
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` 
   :option:`-Wnormalized` =[none|id|nfc|nfkc] 
-  :option:`-Wnull-dereference`  :option:`-Wno-odr`  :option:`-Wopenmp-simd`  
+  :option:`-Wnull-dereference`  :option:`-Wno-odr`  
+  :option:`-Wopenacc-parallelism`  
+  :option:`-Wopenmp-simd`  
   :option:`-Wno-overflow`  :option:`-Woverlength-strings`  :option:`-Wno-override-init-side-effects` 
   :option:`-Wpacked`  :option:`-Wno-packed-bitfield-compat`  :option:`-Wpacked-not-aligned`  :option:`-Wpadded` 
   :option:`-Wparentheses`  :option:`-Wno-pedantic-ms-format` 

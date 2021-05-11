@@ -589,8 +589,7 @@ for cross-profiling.
 
 MacroMAX_CONDITIONAL_EXECUTEA C expression for the maximum number of instructions to execute via
 conditional execution instructions instead of a branch.  A value of
-``BRANCH_COST``+1 is the default if the machine does not use cc0, and
-1 if it does use cc0.
+``BRANCH_COST``+1 is the default.
 
 .. index:: IFCVT_MODIFY_TESTS
 

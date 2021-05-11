@@ -408,6 +408,9 @@ The following type attributes are supported on most targets.
   possible for these fields to have a different scalar storage order than the
   enclosing type.
 
+  Note that neither pointer nor vector fields are considered scalar fields in
+  this context, so the attribute has no effects on these fields.
+
   This attribute is supported only for targets that use a uniform default
   scalar storage order (fortunately, most of them), i.e. targets that store
   the scalars either all in big-endian or all in little-endian.

@@ -87,14 +87,13 @@ second operand.
   However, they can pretend to do so when only the sign of the result will
   be used, which is the case when the result is stored in the condition
   code.  And that is the *only* way this kind of expression may
-  validly be used: as a value to be stored in the condition codes, either
-  ``(cc0)`` or a register.  See :ref:`comparisons`.
+  validly be used: as a value to be stored in the condition codes, in a
+  register.  See :ref:`comparisons`.
 
   The mode :samp:`{m}` is not related to the modes of :samp:`{x}` and :samp:`{y}` , but
-  instead is the mode of the condition code value.  If ``(cc0)`` is
-  used, it is ``VOIDmode``.  Otherwise it is some mode in class
+  instead is the mode of the condition code value.  It is some mode in class
   ``MODE_CC``, often ``CCmode``.  See :ref:`condition-code`.  If :samp:`{m}`
-  is ``VOIDmode`` or ``CCmode``, the operation returns sufficient
+  is ``CCmode``, the operation returns sufficient
   information (in an unspecified format) so that any comparison operator
   can be applied to the result of the ``COMPARE`` operation.  For other
   modes in class ``MODE_CC``, the operation only returns a subset of

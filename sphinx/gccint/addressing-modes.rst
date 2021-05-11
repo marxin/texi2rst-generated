@@ -254,6 +254,15 @@ address;  but often a machine-dependent strategy can generate better code.
 
   The default definition returns true.
 
+.. function:: bool TARGET_PRECOMPUTE_TLS_P(machine_mode mode,rtx x)
+
+  This hook returns true if :samp:`{x}` is a TLS operand on the target
+  machine that should be pre-computed when used as the argument in a call.
+  You can assume that :samp:`{x}` satisfies ``CONSTANT_P``, so you need not 
+  check this.
+
+  The default definition returns false.
+
 .. function:: rtx TARGET_DELEGITIMIZE_ADDRESS(rtx x)
 
   This hook is used to undo the possibly obfuscating effects of the
@@ -486,9 +495,9 @@ address;  but often a machine-dependent strategy can generate better code.
   type ``internal_fn``) should be considered expensive when the mask is
   all zeros.  GCC can then try to branch around the instruction instead.
 
-.. function:: void * TARGET_VECTORIZE_INIT_COST(class loop* loop_info)
+.. function:: void * TARGET_VECTORIZE_INIT_COST(class loop* loop_info,bool costing_for_scalar)
 
-  This hook should initialize target-specific data structures in preparation for modeling the costs of vectorizing a loop or basic block.  The default allocates three unsigned integers for accumulating costs for the prologue, body, and epilogue of the loop or basic block.  If :samp:`{loop_info}` is non-NULL, it identifies the loop being vectorized; otherwise a single block is being vectorized.
+  This hook should initialize target-specific data structures in preparation for modeling the costs of vectorizing a loop or basic block.  The default allocates three unsigned integers for accumulating costs for the prologue, body, and epilogue of the loop or basic block.  If :samp:`{loop_info}` is non-NULL, it identifies the loop being vectorized; otherwise a single block is being vectorized.  If :samp:`{costing_for_scalar}` is true, it indicates the current cost model is for the scalar version of a loop or block; otherwise it is for the vector version.
 
 .. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST(class vec_info* ,void *data,int count,enum vect_cost_for_stmtkind,class _stmt_vec_info* stmt_info,tree vectype,int misalign,enum vect_cost_model_locationwhere)
 

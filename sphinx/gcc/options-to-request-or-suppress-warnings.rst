@@ -3355,6 +3355,12 @@ warn at all unless optimization is enabled.
   Warn about One Definition Rule violations during link-time optimization.
   Enabled by default.
 
+.. option:: -Wopenacc-parallelism, -Wno-openacc-parallelism
+
+  .. index:: OpenACC accelerator programming
+
+  Warn about potentially suboptimal choices related to OpenACC parallelism.
+
 .. option:: -Wopenmp-simd, -Wno-openmp-simd
 
   Warn if the vectorizer cost model overrides the OpenMP

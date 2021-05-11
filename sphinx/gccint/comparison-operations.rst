@@ -22,26 +22,17 @@ of the data being compared.  If the comparison operation is being tested
 
 .. index:: condition codes
 
-There are two ways that comparison operations may be used.  The
-comparison operators may be used to compare the condition codes
-``(cc0)`` against zero, as in ``(eq (cc0) (const_int 0))``.  Such
-a construct actually refers to the result of the preceding instruction
-in which the condition codes were set.  The instruction setting the
-condition code must be adjacent to the instruction using the condition
-code; only ``note`` insns may separate them.
-
-Alternatively, a comparison operation may directly compare two data
+A comparison operation compares two data
 objects.  The mode of the comparison is determined by the operands; they
 must both be valid for a common machine mode.  A comparison with both
 operands constant would be invalid as the machine mode could not be
 deduced from it, but such a comparison should never exist in RTL due to
 constant folding.
 
-In the example above, if ``(cc0)`` were last set to
-``(compare xy)``, the comparison operation is
-identical to ``(eq xy)``.  Usually only one style
+Usually only one style
 of comparisons is supported on a particular machine, but the combine
-pass will try to merge the operations to produce the ``eq`` shown
+pass will try to merge operations to produce code like
+``(eq xy)``,
 in case it exists in the context of the particular insn involved.
 
 Inequality comparisons come in two flavors, signed and unsigned.  Thus,

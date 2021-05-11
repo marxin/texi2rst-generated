@@ -1563,6 +1563,13 @@ aix`, :samp:`svr4` or :samp:`both`
     % srcdir/configure \
         --enable-offload-targets=x86_64-intelmicemul-linux-gnu=/path/to/x86_64/compiler,nvptx-none
 
+``--enable-offload-defaulted``
+  Tell GCC that configured but not installed offload compilers and libgomp
+  plugins are silently ignored.  Useful for distribution compilers where
+  those are in separate optional packages and where the presence or absence
+  of those optional packages should determine the actual supported offloading
+  target set rather than the GCC configure-time selection.
+
 :samp:`--with-hsa-runtime={pathname}` :samp:`--with-hsa-runtime-include={pathname}` :samp:`--with-hsa-runtime-lib={pathname}`
   If you configure GCC with offloading which uses an HSA run-time such as
   AMDGCN but do not have the HSA run-time library installed in a standard

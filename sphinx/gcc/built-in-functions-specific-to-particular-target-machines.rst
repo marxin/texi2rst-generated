@@ -425,15 +425,15 @@ error may be generated.
 
     sleep  a
 
-.. function:: void __builtin_arc_sr(unsigned intauxr,unsigned intval)
+.. function:: void __builtin_arc_sr(unsigned intval,unsigned intauxr)
 
-  The first argument, :samp:`{auxv}` , is the address of an auxiliary
-  register, the second argument, :samp:`{val}` , is a compile time constant
-  to be written to the register.  Generates:
+  The first argument, :samp:`{val}` , is a compile time constant to be
+  written to the register, the second argument, :samp:`{auxr}` , is the
+  address of an auxiliary register.  Generates:
 
   .. code-block:: c++
 
-    sr  auxr, [val]
+    sr  val, [auxr]
 
 .. function:: int __builtin_arc_swap(int src)
 

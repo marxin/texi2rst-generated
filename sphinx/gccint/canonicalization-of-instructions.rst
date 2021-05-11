@@ -54,7 +54,7 @@ are performed:
   .. index:: compare, canonicalization of
 
 * For the ``compare`` operator, a constant is always the second operand
-  if the first argument is a condition code register or ``(cc0)``.
+  if the first argument is a condition code register.
 
 * For instructions that inherently set a condition code register, the
   ``compare`` operator is always written as the first RTL expression of

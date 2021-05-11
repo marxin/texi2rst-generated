@@ -21,7 +21,7 @@ the operands of these.
   represented by :samp:`{lval}`.  :samp:`{lval}` must be an expression
   representing a place that can be stored in: ``reg`` (or ``subreg``,
   ``strict_low_part`` or ``zero_extract``), ``mem``, ``pc``,
-  ``parallel``, or ``cc0``.
+  or ``parallel``.
 
   If :samp:`{lval}` is a ``reg``, ``subreg`` or ``mem``, it has a
   machine mode; then :samp:`{x}` must be valid for that mode.
@@ -43,13 +43,6 @@ the operands of these.
   ``zero_extract`` is given the value :samp:`{x}` and the rest of the
   bit-field is not changed.  Note that ``sign_extract`` cannot
   appear in :samp:`{lval}`.
-
-  If :samp:`{lval}` is ``(cc0)``, it has no machine mode, and :samp:`{x}` may
-  be either a ``compare`` expression or a value that may have any mode.
-  The latter case represents a 'test' instruction.  The expression
-  ``(set (cc0) (reg:mn))`` is equivalent to
-  ``(set (cc0) (compare (reg:mn) (const_int 0)))``.
-  Use the former expression to save space during the compilation.
 
   If :samp:`{lval}` is a ``parallel``, it is used to represent the case of
   a function returning a structure in multiple registers.  Each element
@@ -74,7 +67,7 @@ the operands of these.
   ``mem``; these unusual patterns are used to represent jumps through
   branch tables.
 
-  If :samp:`{lval}` is neither ``(cc0)`` nor ``(pc)``, the mode of
+  If :samp:`{lval}` is not ``(pc)``, the mode of
   :samp:`{lval}` must not be ``VOIDmode`` and the mode of :samp:`{x}` must be
   valid for the mode of :samp:`{lval}`.
 
@@ -263,9 +256,9 @@ the operands of these.
 
   .. code-block:: c++
 
-    (parallel [(set (cc0) (reg:SI 34))
+    (parallel [(set (reg:CC CC_REG) (reg:SI 34))
                (set (pc) (if_then_else
-                            (eq (cc0) (const_int 0))
+                            (eq (reg:CC CC_REG) (const_int 0))
                             (label_ref ...)
                             (pc)))])
 
@@ -281,8 +274,6 @@ the operands of these.
   assembler code-often ``reg``, ``mem`` or constant expressions.
   This would not be well-formed RTL at any other stage in compilation,
   but it is OK then because no further optimization remains to be done.
-  However, the definition of the macro ``NOTICE_UPDATE_CC``, if
-  any, must deal with such insns if you define any peephole optimizations.
 
   .. index:: cond_exec
 

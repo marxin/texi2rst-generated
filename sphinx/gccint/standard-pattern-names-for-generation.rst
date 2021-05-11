@@ -2621,7 +2621,7 @@ simple_return
       [(set (pc)
             (if_then_else (match_operator
                              0 "comparison_operator"
-                             [(cc0) (const_int 0)])
+                             [(reg:CC CC_REG) (const_int 0)])
                           (return)
                           (pc)))]
       "condition"

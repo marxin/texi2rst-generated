@@ -408,15 +408,6 @@ and ``call_insn`` insns:
   a symbolic representation that locates the pattern in the md
   file as some small positive or negative offset from a named pattern.
 
-  .. index:: LOG_LINKS
-
-:samp:`LOG_LINKS ({i})`
-  A list (chain of ``insn_list`` expressions) giving information about
-  dependencies between instructions within a basic block.  Neither a jump
-  nor a label may come between the related insns.  These are only used by
-  the schedulers and by combine.  This is a deprecated data structure.
-  Def-use and use-def chains are now preferred.
-
   .. index:: REG_NOTES
 
 :samp:`REG_NOTES ({i})`
@@ -424,23 +415,9 @@ and ``call_insn`` insns:
   expressions) giving miscellaneous information about the insn.  It is often
   information pertaining to the registers used in this insn.
 
-  The ``LOG_LINKS`` field of an insn is a chain of ``insn_list``
-expressions.  Each of these has two operands: the first is an insn,
-and the second is another ``insn_list`` expression (the next one in
-the chain).  The last ``insn_list`` in the chain has a null pointer
-as second operand.  The significant thing about the chain is which
-insns appear in it (as first operands of ``insn_list``
-expressions).  Their order is not significant.
-
-This list is originally set up by the flow analysis pass; it is a null
-pointer until then.  Flow only adds links for those data dependencies
-which can be used for instruction combination.  For each insn, the flow
-analysis pass adds a link to insns which store into registers values
-that are used for the first time in this insn.
-
-The ``REG_NOTES`` field of an insn is a chain similar to the
-``LOG_LINKS`` field but it includes ``expr_list`` and ``int_list``
-expressions in addition to ``insn_list`` expressions.  There are several
+  The ``REG_NOTES`` field of an insn is a chain that includes
+``expr_list`` and ``int_list`` expressions as well as ``insn_list``
+expressions.  There are several
 kinds of register notes, which are distinguished by the machine mode, which
 in a register note is really understood as being an ``enum reg_note``.
 The first operand :samp:`{op}` of the note is data whose meaning depends on
@@ -457,8 +434,7 @@ register note.  Its counterpart, the macro ``PUT_REG_NOTE_KIND
 
 Register notes are of three classes: They may say something about an
 input to an insn, they may say something about an output of an insn, or
-they may create a linkage between two insns.  There are also a set
-of values that are only used in ``LOG_LINKS``.
+they may create a linkage between two insns.
 
 These register notes annotate inputs to an insn:
 
@@ -598,26 +574,6 @@ The following notes describe attributes of outputs of an insn:
 These notes describe linkages between insns.  They occur in pairs: one
 insn has one of a pair of notes that points to a second insn, which has
 the inverse note pointing back to the first insn.
-
-.. index:: REG_CC_SETTER
-
-.. index:: REG_CC_USER
-
-.. envvar:: REG_CC_SETTER
-
-  On machines that use ``cc0``, the insns which set and use ``cc0``
-  set and use ``cc0`` are adjacent.  However, when branch delay slot
-  filling is done, this may no longer be true.  In this case a
-  ``REG_CC_USER`` note will be placed on the insn setting ``cc0`` to
-  point to the insn using ``cc0`` and a ``REG_CC_SETTER`` note will
-  be placed on the insn using ``cc0`` to point to the insn setting
-  ``cc0``.
-
-These values are only used in the ``LOG_LINKS`` field, and indicate
-the type of dependency that each link represents.  Links which indicate
-a data dependence (a read after write dependence) do not use any code,
-they simply have mode ``VOIDmode``, and are printed without any
-descriptive text.
 
 .. index:: REG_DEP_TRUE
 

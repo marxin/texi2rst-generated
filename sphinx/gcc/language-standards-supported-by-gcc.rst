@@ -13,7 +13,6 @@ with some exceptions, and possibly with some extensions.
   c++-language
   objective-c-and-objective-c++-languages
   go-language
-  hsa-intermediate-language-hsail
   d-language
   references-for-other-languages
 

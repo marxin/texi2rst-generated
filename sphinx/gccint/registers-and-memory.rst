@@ -406,59 +406,17 @@ registers and to main memory.
   ``scratch`` is usually present inside a ``clobber`` operation
   (see :ref:`side-effects`).
 
-  .. index:: cc0
-
-  .. index:: condition code register
-
-``(cc0)``
-  This refers to the machine's condition code register.  It has no
-  operands and may not have a machine mode.  There are two ways to use it:
-
-  * To stand for a complete set of condition code flags.  This is best on
-    most machines, where each comparison sets the entire series of flags.
-
-    With this technique, ``(cc0)`` may be validly used in only two
-    contexts: as the destination of an assignment (in test and compare
-    instructions) and in comparison operators comparing against zero
-    (``const_int`` with value zero; that is to say, ``const0_rtx``).
-
-  * To stand for a single flag that is the result of a single condition.
-    This is useful on machines that have only a single flag bit, and in
-    which comparison instructions must specify the condition to test.
-
-    With this technique, ``(cc0)`` may be validly used in only two
-    contexts: as the destination of an assignment (in test and compare
-    instructions) where the source is a comparison operator, and as the
-    first operand of ``if_then_else`` (in a conditional branch).
-
-  .. index:: cc0_rtx
-
-  There is only one expression object of code ``cc0``; it is the
-  value of the variable ``cc0_rtx``.  Any attempt to create an
-  expression of code ``cc0`` will return ``cc0_rtx``.
-
-  Instructions can set the condition code implicitly.  On many machines,
-  nearly all instructions set the condition code based on the value that
-  they compute or store.  It is not necessary to record these actions
-  explicitly in the RTL because the machine description includes a
-  prescription for recognizing the instructions that do so (by means of
-  the macro ``NOTICE_UPDATE_CC``).  See :ref:`condition-code`.  Only
-  instructions whose sole purpose is to set the condition code, and
-  instructions that use the condition code, need mention ``(cc0)``.
-
   On some machines, the condition code register is given a register number
-  and a ``reg`` is used instead of ``(cc0)``.  This is usually the
-  preferable approach if only a small subset of instructions modify the
-  condition code.  Other machines store condition codes in general
+  and a ``reg`` is used.
+  Other machines store condition codes in general
   registers; in such cases a pseudo register should be used.
 
   Some machines, such as the SPARC and RS/6000, have two sets of
   arithmetic instructions, one that sets and one that does not set the
   condition code.  This is best handled by normally generating the
   instruction that does not set the condition code, and making a pattern
-  that both performs the arithmetic and sets the condition code register
-  (which would not be ``(cc0)`` in this case).  For examples, search
-  for :samp:`addcc` and :samp:`andcc` in sparc.md.
+  that both performs the arithmetic and sets the condition code register.
+  For examples, search for :samp:`addcc` and :samp:`andcc` in sparc.md.
 
   .. index:: pc
 

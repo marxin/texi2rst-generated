@@ -203,6 +203,13 @@ If you don't define this, a reasonable default is used.
   in code size, for example where the number of insns emitted to perform a
   move would be greater than that of a library call.
 
+.. function:: bool TARGET_OVERLAP_OP_BY_PIECES_P(void )
+
+  This target hook should return true if when the ``by_pieces``
+  infrastructure is used, an offset adjusted unaligned memory operation
+  in the smallest integer mode for the last piece operation of a memory
+  region can be generated to avoid doing more than one smaller operations.
+
 .. function:: int TARGET_COMPARE_BY_PIECES_BRANCH_RATIO(machine_mode mode)
 
   When expanding a block comparison in MODE, gcc can try to reduce the

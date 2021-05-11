@@ -76,9 +76,6 @@ compilation is done:
 :samp:`{file}.go`
   Go source code.
 
-:samp:`{file}.brig`
-  BRIG files (binary representation of HSAIL).
-
 :samp:`{file}.d`
   D source code.
 
@@ -134,7 +131,6 @@ You can specify the input language explicitly with the :option:`-x` option:
     d
     f77  f77-cpp-input f95  f95-cpp-input
     go
-    brig
 
 ``-x none``
   Turn off any specification of a language, so that subsequent files are
