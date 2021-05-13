@@ -4,7 +4,7 @@ Reporting Bugs
 --------------
 
 Bugs in the GCC Quad-Precision Math Library implementation should be
-reported via |bugurl|.
+reported via $$BUGURL$$.
 
 .. -
    Index
