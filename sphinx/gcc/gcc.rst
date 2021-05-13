@@ -89,17 +89,17 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
 
   You can compile C or C++ programs. <g++-and-gcc>
   Language standards supported by GCC. <standards>
-  Command options supported by :samp:`gcc`. <invoking-gcc>
+  Command options supported by gcc. <invoking-gcc>
   How GCC implements the ISO C specification. <c-implementation>
   How GCC implements the ISO C++ specification. <c++-implementation>
   GNU extensions to the C language family. <c-extensions>
   GNU extensions to the C++ language. <c++-extensions>
   GNU Objective-C runtime features. <objective-c>
   Binary Compatibility <compatibility>
-  :command:`gcov`-a test coverage program. <gcov>
-  :command:`gcov-tool`-an offline gcda profile processing program. <gcov-tool>
-  :command:`gcov-dump`-an offline gcda and gcno profile dump tool. <gcov-dump>
-  :command:`lto-dump`-Tool for dumping LTO
+  gcov-a test coverage program. <gcov>
+  gcov-tool-an offline gcda profile processing program. <gcov-tool>
+  gcov-dump-an offline gcda and gcno profile dump tool. <gcov-dump>
+  lto-dump-Tool for dumping LTO
   object files. <lto-dump>
   If you have trouble using GCC. <trouble>
   How, why and where to report bugs. <bugs>

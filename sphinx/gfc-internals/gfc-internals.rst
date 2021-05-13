@@ -87,14 +87,11 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
 
   About this manual. <introduction>
   Code that Interacts with the User. <user-interface>
-
-                             Data structures used by the frontend <frontend-data-structures>
+  Data structures used by the frontend <frontend-data-structures>
   Internals of Fortran 2003 OOP features. <object-orientation>
-
-                             Generating the intermediate language for later stages. <translating-to-generic>
+  Generating the intermediate language for later stages. <translating-to-generic>
   The LibGFortran Runtime Library. <libgfortran>
-
-                             How you can copy and share this manual. <gnu-free-documentation-license>
+  How you can copy and share this manual. <gnu-free-documentation-license>
 
 .. -
    Introduction

@@ -27,11 +27,11 @@ for a C symbol, or to place a C variable in a specific register.
 
   Inline assembler without operands. <basic-asm>
   Inline assembler with operands. <extended-asm>
-  Constraints for ``asm`` operands <constraints>
+  Constraints for asm operands <constraints>
   Specifying the assembler name to use for a C symbol. <asm-labels>
   Defining variables residing in specified 
                          registers. <explicit-register-variables>
-  How GCC calculates the size of an ``asm`` block. <size-of-an-asm>
+  How GCC calculates the size of an asm block. <size-of-an-asm>
 
 .. _basic-asm:
 

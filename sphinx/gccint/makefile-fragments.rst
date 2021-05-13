@@ -27,8 +27,8 @@ fragments, but needing x- :samp:`{host}` fragments is rare.
 
 .. toctree::
 
-  Writing t- :samp:`{target}` files. <target-fragment>
-  Writing x- :samp:`{host}` files. <host-fragment>
+  Writing t-target files. <target-fragment>
+  Writing x-host files. <host-fragment>
 
 .. toctree::
 

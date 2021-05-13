@@ -100,7 +100,7 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
    <introduction>
 
   Part I: Invoking GNU Fortran
-  Command options supported by :command:`gfortran`. <invoking-gnu-fortran>
+  Command options supported by gfortran. <invoking-gnu-fortran>
   Influencing runtime behavior with environment variables. <runtime>
 
   Part II: Language Reference
@@ -115,8 +115,7 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
   How you can help. <contributing>
   GNU General Public License says
                            how you can copy and share GNU Fortran. <copying>
-
-                           How you can copy and share this manual. <gnu-free-documentation-license>
+  How you can copy and share this manual. <gnu-free-documentation-license>
   How to help assure continued work for free software. <funding>
   Index of command line options <option-index>
   Index of concepts <keyword-index>

@@ -38,7 +38,7 @@ one is not the default.
 
 .. toctree::
 
-  Brief list of all :command:`gfortran` options,
+  Brief list of all gfortran options,
                           without explanations. <option-summary>
   Controlling the variant of Fortran language
                                compiled. <fortran-dialect-options>
@@ -52,7 +52,7 @@ one is not the default.
                           and register usage. <code-gen-options>
   Options for interoperability with other
                                 languages. <interoperability-options>
-  Environment variables that affect :command:`gfortran`. <environment-variables>
+  Environment variables that affect gfortran. <environment-variables>
 
 .. toctree::
 

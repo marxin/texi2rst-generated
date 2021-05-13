@@ -8,9 +8,9 @@ Directives used within DejaGnu tests
   Syntax and descriptions of test directives. <directives>
   Selecting targets to which a test applies. <selectors>
   Keywords describing target attributes. <effective-target-keywords>
-  Features for ``dg-add-options`` <add-options>
-  Variants of ``dg-require-support`` <require-support>
-  Commands for use in ``dg-final`` <final-actions>
+  Features for dg-add-options <add-options>
+  Variants of dg-require-support <require-support>
+  Commands for use in dg-final <final-actions>
 
 .. _directives:
 

@@ -26,7 +26,7 @@ that is visible at link time).
   Using summary information in IPA passes. <ipa>
   Whole program assumptions,
                               linker plugin and symbol visibilities. <whopr>
-  Internal flags controlling ``lto1``. <internal-flags>
+  Internal flags controlling lto1. <internal-flags>
 
 .. toctree::
 

@@ -22,13 +22,6 @@ code that uses them running with the GNU Fortran compiler.
 .. toctree::
 
    <encode-and-decode-statements>
-
-  .. * TYPE and ACCEPT I/O Statements::
-
-  .. * DEFAULTFILE, DISPOSE and RECORDTYPE I/O specifiers::
-
-  .. * Omitted arguments in procedure call::
-
    <variable-format-expressions>
    <alternate-complex-function-syntax>
    <volatile-common-blocks>

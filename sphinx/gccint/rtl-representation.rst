@@ -37,7 +37,7 @@ form uses nested parentheses to indicate the pointers in the internal form.
   Declaring volatility, constancy, etc. <rtl-declarations>
   Expressions for storing in registers, etc. <side-effects>
   Embedded side-effects for autoincrement addressing. <incdec>
-  Representing ``asm`` with operands. <assembler>
+  Representing asm with operands. <assembler>
   Expressions representing debugging information. <debug-information>
   Expression types for entire insns. <insns>
   RTL representation of function call insns. <calls>

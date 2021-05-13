@@ -20,7 +20,7 @@ See the next chapter for information on the C header file.
 
   How the machine description is used. <overview>
   How to write instruction patterns. <patterns>
-  An explained example of a ``define_insn`` pattern. <example>
+  An explained example of a define_insn pattern. <example>
   The RTL template defines what insns match a pattern. <rtl-template>
   The output template says how to make assembler code
                           from such an insn. <output-template>
@@ -41,9 +41,9 @@ See the next chapter for information on the C header file.
   Including Patterns in Machine Descriptions. <including-patterns>
   Defining machine-specific peephole optimizations. <peephole-definitions>
   Specifying the value of attributes for generated insns. <insn-attributes>
-  Generating ``define_insn`` patterns for
+  Generating define_insn patterns for
                            predication. <conditional-execution>
-  Generating ``define_insn`` and ``define_expand``
+  Generating define_insn and define_expand
   			patterns from other patterns. <define-subst>
   Defining symbolic constants that can be used in the
                           md file. <constant-definitions>

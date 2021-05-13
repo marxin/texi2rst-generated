@@ -52,11 +52,9 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 .. toctree::
 
   How to enable OpenMP for your applications. <enabling-openmp>
-
-                                 The OpenMP runtime application programming
+  The OpenMP runtime application programming
                                  interface. <runtime-library-routines>
-
-                                 Influencing OpenMP runtime behavior with
+  Influencing OpenMP runtime behavior with
                                  environment variables. <environment-variables>
   How to enable OpenACC for your
                                  applications. <enabling-openacc>
@@ -74,8 +72,7 @@ changed to GNU Offloading and Multi Processing Runtime Library.
                                  Multi Processing Runtime Library. <reporting-bugs>
   GNU general public license says
                                  how you can copy and share libgomp. <copying>
-
-                                 How you can copy and share this manual. <gnu-free-documentation-license>
+  How you can copy and share this manual. <gnu-free-documentation-license>
   How to help assure continued work for free 
                                  software. <funding>
   Index of this documentation. <library-index>

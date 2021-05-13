@@ -15,8 +15,7 @@ instructions do.
   Output and generation of labels. <label-output>
   General principles of initialization
                            and termination routines. <initialization>
-
-                           Specific macros that control the handling of
+  Specific macros that control the handling of
                            initialization and termination routines. <macros-for-initialization>
   Output of actual instructions. <instruction-output>
   Output of jump tables. <dispatch-tables>

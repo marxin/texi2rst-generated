@@ -82,7 +82,7 @@ data members.
 
 .. toctree::
 
-  What goes inside a ``GTY(())``. <gty-options>
+  What goes inside a GTY(()). <gty-options>
   Adding GTY to a class hierarchy. <inheritance-and-gty>
   Adding user-provided GC marking routines. <user-gc>
   Making global variables GGC roots. <ggc-roots>

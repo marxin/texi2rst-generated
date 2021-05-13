@@ -32,13 +32,11 @@ several threads.
 .. toctree::
 
   How to enable libitm for your applications. <enabling-libitm>
-
-                                 Notes on the language-level interface supported
+  Notes on the language-level interface supported
                                  by gcc. <c-c++-language-constructs-for-tm>
   Notes on the external ABI provided by libitm. <the-libitm-abi>
   Notes on libitm's internal synchronization. <internals>
-
-                                 How you can copy and share this manual. <gnu-free-documentation-license>
+  How you can copy and share this manual. <gnu-free-documentation-license>
   Index of this documentation. <library-index>
 
 .. -

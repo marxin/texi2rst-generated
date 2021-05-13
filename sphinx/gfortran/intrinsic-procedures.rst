@@ -8,8 +8,8 @@ Intrinsic Procedures
 .. toctree::
 
    <introduction-to-intrinsics->
-  Abort the program      <abort>
-  Absolute value      <abs>
+  Abort the program <abort>
+  Absolute value <abs>
   Checks file access modes <access>
   Character in ASCII collating sequence <achar>
   Arccosine function <acos>
@@ -184,7 +184,7 @@ Intrinsic Procedures
   Index of the last non-blank character in a string <lnblnk>
   Returns the address of a variable <loc>
   Logarithm function <log>
-  Base 10 logarithm function  <log10>
+  Base 10 logarithm function <log10>
   Logarithm of the Gamma function <log_gamma>
   Convert to logical type <logical>
   Convert to integer type <long>
@@ -235,7 +235,7 @@ Intrinsic Procedures
   Initialize a pseudo-random number sequence <random_seed>
   Decimal exponent range <range>
   Rank of a data object <rank>
-  Convert to real type  <real>
+  Convert to real type <real>
   Rename a file <rename>
   Repeated string concatenation <repeat>
   Function to reshape an array <reshape>
@@ -263,7 +263,7 @@ Intrinsic Procedures
   Determine the size in bytes of an expression <sizeof>
   Sleep for the specified number of seconds <sleep>
   Smallest distance between two numbers of a given type <spacing>
-  Add a dimension to an array  <spread>
+  Add a dimension to an array <spread>
   Square-root function <sqrt>
   Reinitialize the random number generator <srand>
   Get file status <stat>

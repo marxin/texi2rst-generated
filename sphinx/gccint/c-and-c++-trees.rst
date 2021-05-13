@@ -51,7 +51,7 @@ should submit your patches for inclusion in GCC.
   Classes. <classes>
   Overloading and accessors for C++. <functions-for-c++>
   Statements specific to C and C++. <statements-for-c-and-c++>
-  From ``typeid`` to ``throw``. <c++-expressions>
+  From typeid to throw. <c++-expressions>
 
 .. _types-for-c++:
 

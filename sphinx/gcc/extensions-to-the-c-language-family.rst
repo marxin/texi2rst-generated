@@ -30,10 +30,10 @@ extensions, accepted by GCC in C90 mode and in C++.
   Nested function in GNU C. <nested-functions>
   Nonlocal gotos. <nonlocal-gotos>
   Dispatching a call to another function. <constructing-calls>
-  ``typeof``: referring to the type of an expression. <typeof>
-  Omitting the middle operand of a :samp:`?:` expression. <conditionals>
-  128-bit integers-``__int128``. <__int128>
-  Double-word integers-``long long int``. <long-long>
+  typeof: referring to the type of an expression. <typeof>
+  Omitting the middle operand of a ?: expression. <conditionals>
+  128-bit integers-__int128. <__int128>
+  Double-word integers-long long int. <long-long>
   Data types for complex numbers. <complex>
   Additional Floating Types. <floating-types>
   Half-Precision Floating Point. <half-precision>
@@ -47,7 +47,7 @@ extensions, accepted by GCC in C90 mode and in C++.
   Macros with a variable number of arguments. <variadic-macros>
   Slightly looser rules for escaped newlines. <escaped-newlines>
   Any array can be subscripted, even if not an lvalue. <subscripting>
-  Arithmetic on ``void``-pointers and function pointers. <pointer-arith>
+  Arithmetic on void-pointers and function pointers. <pointer-arith>
   Pointer arguments to variadic functions. <variadic-pointer-args>
   Pointers to arrays with qualifiers work as expected. <pointers-to-arrays>
   Non-constant initializers. <initializers>
@@ -68,18 +68,18 @@ extensions, accepted by GCC in C90 mode and in C++.
   Prototype declarations and old-style definitions. <function-prototypes>
   C++ comments are recognized. <c++-comments>
   Dollar sign is allowed in identifiers. <dollar-signs>
-  :samp:`\e` stands for the character ESC. <character-escapes>
+  \e stands for the character ESC. <character-escapes>
   Determining the alignment of a function, type or variable. <alignment>
   Defining inline functions (as fast as macros). <inline>
   What constitutes an access to a volatile object. <volatiles>
   Instructions and extensions for interfacing C with assembler. <using-assembly-language-with-c>
-  ``__const__``, ``__asm__``, etc., for header files. <alternate-keywords>
-  ``enum foo;``, with details to follow. <incomplete-enums>
+  __const__, __asm__, etc., for header files. <alternate-keywords>
+  enum foo;, with details to follow. <incomplete-enums>
   Printable strings which are the name of the current
                           function. <function-names>
   Getting the return or frame address of a function. <return-address>
   Using vector instructions through built-in functions. <vector-extensions>
-  Special syntax for implementing ``offsetof``. <offsetof>
+  Special syntax for implementing offsetof. <offsetof>
   Legacy built-in functions for atomic memory access. <__sync-builtins>
   Atomic built-in functions with memory model. <__atomic-builtins>
   Built-in functions to perform arithmetics and
@@ -93,7 +93,7 @@ extensions, accepted by GCC in C90 mode and in C++.
   Pragmas accepted by GCC. <pragmas>
   Unnamed struct/union fields within structs/unions. <unnamed-fields>
   Per-thread variables. <thread-local>
-  Binary constants using the :samp:`0b` prefix. <binary-constants>
+  Binary constants using the 0b prefix. <binary-constants>
 
 .. toctree::
 

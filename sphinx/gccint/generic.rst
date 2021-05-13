@@ -30,7 +30,7 @@ seems inelegant.
 .. toctree::
 
   Topics net yet covered in this document. <deficiencies>
-  All about ``tree``s. <tree-overview>
+  All about trees. <tree-overview>
   Fundamental and aggregate types. <types>
   Type declarations and variables. <declarations>
   Declaration and type attributes. <attributes>

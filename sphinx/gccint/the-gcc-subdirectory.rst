@@ -715,7 +715,7 @@ following are also necessary:
 
 .. toctree::
 
-  The front end :samp:`{language}` directory. <front-end-directory>
+  The front end language directory. <front-end-directory>
   The front end config-lang.in file. <front-end-config>
   The front end Make-lang.in file. <front-end-makefile>
 

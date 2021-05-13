@@ -103,9 +103,9 @@ http://gcc.gnu.org/readings.html.
   Analysis and representation of loops <loop-analysis-and-representation>
   How to write machine description instruction patterns. <machine-desc>
   How to write the machine description C macros and functions. <target-macros>
-  Writing the xm- :samp:`{machine}`.h file. <host-config>
-  Writing the t- :samp:`{target}` and x- :samp:`{host}` files. <fragments>
-  How ``collect2`` works; how it finds ``ld``. <collect2>
+  Writing the xm-machine.h file. <host-config>
+  Writing the t-target and x-host files. <fragments>
+  How collect2 works; how it finds ld. <collect2>
   Understanding the standard header file directories. <header-dirs>
   GCC's memory management; generating type information. <type-information>
   Extending the compiler with plugins. <plugins>

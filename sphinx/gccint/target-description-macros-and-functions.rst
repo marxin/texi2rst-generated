@@ -27,9 +27,9 @@ through the macros defined in the .h file.
 
 .. toctree::
 
-  The ``targetm`` variable. <target-structure>
+  The targetm variable. <target-structure>
   Controlling how the driver runs the compilation passes. <driver>
-  Defining :samp:`-m` options like :option:`-m68000` and :option:`-m68020`. <run-time-target>
+  Defining -m options like -m68000 and -m68020. <run-time-target>
   Defining data structures for per-function information. <per-function-data>
   Defining sizes and alignments of data. <storage-layout>
   Defining sizes and properties of basic user data types. <type-layout>
@@ -40,7 +40,7 @@ through the macros defined in the .h file.
   Code set up at run time to enter a nested function. <trampolines>
   Controlling how library routines are implicitly called. <library-calls>
   Defining addressing modes valid for memory operands. <addressing-modes>
-  Defining how :option:`-fsection-anchors` should work. <anchored-addresses>
+  Defining how -fsection-anchors should work. <anchored-addresses>
   Defining how insns update the condition code. <condition-code>
   Defining relative costs of different operations. <costs>
   Adjusting the behavior of the instruction scheduler. <scheduling>
@@ -50,7 +50,7 @@ through the macros defined in the .h file.
   Defining the format of debugging output. <debugging-info>
   Handling floating point for cross-compilers. <floating-point>
   Insertion of mode-switching instructions. <mode-switching>
-  Defining target-specific uses of ``__attribute__``. <target-attributes>
+  Defining target-specific uses of __attribute__. <target-attributes>
   Emulated TLS support. <emulated-tls>
   MIPS coprocessor support and how to customize it. <mips-coprocessors>
   Validity checking for precompiled headers. <pch-target>

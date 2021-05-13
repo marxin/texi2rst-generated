@@ -38,12 +38,8 @@ Math Library Application Programming Interface (API).
                                  programming interface. <math-library-routines>
   The Libquadmath I/O runtime application
                                  programming interface. <i-o-library-routines>
-
-                                 How you can copy and share this manual. <gnu-free-documentation-license>
-  How to report bugs in GCC Libquadmath.
-  .. * Index::                      Index of this documentation.
-
-   <reporting-bugs>
+  How you can copy and share this manual. <gnu-free-documentation-license>
+  How to report bugs in GCC Libquadmath. <reporting-bugs>
 
 .. -
    Defined macros
