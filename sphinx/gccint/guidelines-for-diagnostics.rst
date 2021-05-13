@@ -152,7 +152,7 @@ user's source code.  Examples include:
 In each case, the diagnostic should indicate both pertinent
 locations (so that the user can easily see the problem and how to fix it).
 
-The standard way to do this is with a note (via ``inform``).  For
+The standard way to do this is with a note (via ``inform`` ).  For
 example:
 
 .. code-block:: c++
@@ -180,7 +180,7 @@ is suppressed.
 
 For cases involving punctuation where the locations might be near
 each other, they can be conditionally consolidated via
-``gcc_rich_location::add_location_if_nearby``:
+``gcc_rich_location::add_location_if_nearby`` :
 
 .. code-block:: c++
 
@@ -279,7 +279,7 @@ possible to supply secondary ``location_t`` values via
 ``rich_location``.
 
 For example, in the example of imprecise wording above, generating the
-diagnostic using ``warning``:
+diagnostic using ``warning`` :
 
 .. code-block:: c++
 
@@ -503,7 +503,7 @@ being 'corrected' to:
   typenameT::type x;
 
 In this case, the correct thing to do is to add a trailing space after
-``typename``:
+``typename`` :
 
 .. code-block:: c++
 

@@ -40,7 +40,7 @@ registration. Use the ``c_register_pragma``,
 ``c_register_pragma_with_expansion``,
 ``c_register_pragma_with_expansion_and_data`` functions to register
 custom pragmas and their handlers (which often want to call
-``pragma_lex``) from c-family/c-pragma.h.
+``pragma_lex`` ) from c-family/c-pragma.h.
 
 .. code-block:: c++
 

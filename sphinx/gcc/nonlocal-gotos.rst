@@ -44,10 +44,10 @@ built-in functions as:
 
 .. function:: void __builtin_longjmp(intptr_t *buf,int val)
 
-  This function restores the stack context in :samp:`{buf}` , 
+  This function restores the stack context in :samp:`{buf}`, 
   saved by a previous call to ``__builtin_setjmp``.  After
   ``__builtin_longjmp`` is finished, the program resumes execution as
-  if the matching ``__builtin_setjmp`` returns the value :samp:`{val}` ,
+  if the matching ``__builtin_setjmp`` returns the value :samp:`{val}`,
   which must be 1.
 
   Because ``__builtin_longjmp`` depends on the function return

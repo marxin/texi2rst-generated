@@ -10,7 +10,7 @@
 :samp:`{Description}:`
   Prints (on the C ``stderr`` stream) a newline-terminated error
   message corresponding to the last system error. This is prefixed by
-  :samp:`{STRING}` , a colon and a space. See ``perror(3)``.
+  :samp:`{STRING}`, a colon and a space. See ``perror(3)``.
 
 :samp:`{Standard}:`
   GNU extension

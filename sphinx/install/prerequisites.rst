@@ -24,7 +24,7 @@ ISO C++11 compiler
   frontends other than C might use GCC extensions.
 
   Note that to bootstrap GCC with versions of GCC earlier than 4.8, you
-  may need to use :option:`--disable-stage1-checking` , though
+  may need to use :option:`--disable-stage1-checking`, though
   bootstrapping the compiler with such earlier compilers is strongly
   discouraged.
 

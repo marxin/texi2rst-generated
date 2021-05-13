@@ -17,7 +17,7 @@ notion of the current file name and line number by hand.  Parts of the
 output from :command:`bison` are generated from scratch, other parts come
 from a standard parser file.  The rest are copied verbatim from
 :command:`bison`'s input.  You would like compiler error messages and
-symbolic debuggers to be able to refer to ``bison``'s input file.
+symbolic debuggers to be able to refer to ``bison`` 's input file.
 
 .. index:: #line
 

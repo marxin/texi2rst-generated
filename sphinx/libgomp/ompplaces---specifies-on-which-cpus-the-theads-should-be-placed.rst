@@ -26,8 +26,8 @@
   the hardware thread number or the place.  Optionally, the length can be
   followed by a colon and the stride number - otherwise a unit stride is
   assumed.  For instance, the following specifies the same places list:
-  ``"{0,1,2}, {3,4,6}, {7,8,9}, {10,11,12}"``;
-  ``"{0:3}, {3:3}, {7:3}, {10:3}"``; and ``"{0:2}:4:3"``.
+  ``"{0,1,2}, {3,4,6}, {7,8,9}, {10,11,12}"`` ;
+  ``"{0:3}, {3:3}, {7:3}, {10:3}"`` ; and ``"{0:2}:4:3"``.
 
   If :envvar:`OMP_PLACES` and :envvar:`GOMP_CPU_AFFINITY` are unset and
   :envvar:`OMP_PROC_BIND` is either unset or ``false``, threads may be moved

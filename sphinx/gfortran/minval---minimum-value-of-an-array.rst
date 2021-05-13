@@ -33,21 +33,21 @@
   ========================================
 
 :samp:`{Arguments}:`
-  ===============  =======================================================================
+  ===============  ======================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER`` or
                    ``REAL``.
-  ===============  =======================================================================
+  ===============  ======================================================================
   :samp:`{DIM}`    (Optional) Shall be a scalar of type
-                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}` ,
+                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
                    inclusive.  It may not be an optional dummy argument.
   :samp:`{MASK}`   Shall be of type ``LOGICAL``,
                    and conformable with :samp:`{ARRAY}`.
-  ===============  =======================================================================
+  ===============  ======================================================================
 
 :samp:`{Return value}:`
   If :samp:`{DIM}` is absent, or if :samp:`{ARRAY}` has a rank of one, the result
   is a scalar.  If :samp:`{DIM}` is present, the result is an array with a
-  rank one less than the rank of :samp:`{ARRAY}` , and a size corresponding to
+  rank one less than the rank of :samp:`{ARRAY}`, and a size corresponding to
   the size of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.  In all
   cases, the result is of the same type and kind as :samp:`{ARRAY}`.
 

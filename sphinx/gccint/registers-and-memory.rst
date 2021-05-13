@@ -18,9 +18,9 @@ registers and to main memory.
 
 :samp:`(reg:{m}{n})`
   For small values of the integer :samp:`{n}` (those that are less than
-  ``FIRST_PSEUDO_REGISTER``), this stands for a reference to machine
+  ``FIRST_PSEUDO_REGISTER`` ), this stands for a reference to machine
   register number :samp:`{n}` : a :dfn:`hard register`.  For larger values of
-  :samp:`{n}` , it stands for a temporary value or :dfn:`pseudo register`.
+  :samp:`{n}`, it stands for a temporary value or :dfn:`pseudo register`.
   The compiler's strategy is to generate code assuming an unlimited
   number of such pseudo registers, and later convert them into hard
   registers or into memory references.
@@ -119,7 +119,7 @@ registers and to main memory.
 
     This points to the location in the stack at which outgoing arguments
     should be written when the stack is pre-pushed (arguments pushed using
-    push insns should always use ``STACK_POINTER_REGNUM``).
+    push insns should always use ``STACK_POINTER_REGNUM`` ).
 
     .. index:: STACK_POINTER_OFFSET and virtual registers
 
@@ -138,45 +138,45 @@ registers and to main memory.
   enclosed in a ``subreg``.
 
   There are currently three supported types for the first operand of a
-  ``subreg``:
+  ``subreg`` :
 
   ** pseudo registers
-    This is the most common case.  Most ``subreg``s have pseudo
-    ``reg``s as their first operand.
+    This is the most common case.  Most ``subreg`` s have pseudo
+    ``reg`` s as their first operand.
 
   * mem
-    ``subreg``s of ``mem`` were common in earlier versions of GCC and
+    ``subreg`` s of ``mem`` were common in earlier versions of GCC and
     are still supported.  During the reload pass these are replaced by plain
-    ``mem``s.  On machines that do not do instruction scheduling, use of
-    ``subreg``s of ``mem`` are still used, but this is no longer
-    recommended.  Such ``subreg``s are considered to be
-    ``register_operand``s rather than ``memory_operand``s before and
+    ``mem`` s.  On machines that do not do instruction scheduling, use of
+    ``subreg`` s of ``mem`` are still used, but this is no longer
+    recommended.  Such ``subreg`` s are considered to be
+    ``register_operand`` s rather than ``memory_operand`` s before and
     during reload.  Because of this, the scheduling passes cannot properly
-    schedule instructions with ``subreg``s of ``mem``, so for machines
-    that do scheduling, ``subreg``s of ``mem`` should never be used.
+    schedule instructions with ``subreg`` s of ``mem``, so for machines
+    that do scheduling, ``subreg`` s of ``mem`` should never be used.
     To support this, the combine and recog passes have explicit code to
-    inhibit the creation of ``subreg``s of ``mem`` when
+    inhibit the creation of ``subreg`` s of ``mem`` when
     ``INSN_SCHEDULING`` is defined.
 
-    The use of ``subreg``s of ``mem`` after the reload pass is an area
+    The use of ``subreg`` s of ``mem`` after the reload pass is an area
     that is not well understood and should be avoided.  There is still some
     code in the compiler to support this, but this code has possibly rotted.
-    This use of ``subreg``s is discouraged and will most likely not be
+    This use of ``subreg`` s is discouraged and will most likely not be
     supported in the future.
 
   * hard registers
-    It is seldom necessary to wrap hard registers in ``subreg``s; such
+    It is seldom necessary to wrap hard registers in ``subreg`` s; such
     registers would normally reduce to a single ``reg`` rtx.  This use of
-    ``subreg``s is discouraged and may not be supported in the future.
+    ``subreg`` s is discouraged and may not be supported in the future.
 
-  ``subreg``s of ``subreg``s are not supported.  Using
+  ``subreg`` s of ``subreg`` s are not supported.  Using
   ``simplify_gen_subreg`` is the recommended way to avoid this problem.
 
-  ``subreg``s come in two distinct flavors, each having its own
+  ``subreg`` s come in two distinct flavors, each having its own
   usage and rules:
 
   Paradoxical subregs
-    When :samp:`{m1}` is strictly wider than :samp:`{m2}` , the ``subreg``
+    When :samp:`{m1}` is strictly wider than :samp:`{m2}`, the ``subreg``
     expression is called :dfn:`paradoxical`.  The canonical test for this
     class of ``subreg`` is:
 
@@ -184,7 +184,7 @@ registers and to main memory.
 
       paradoxical_subreg_p (m1, m2)
 
-    Paradoxical ``subreg``s can be used as both lvalues and rvalues.
+    Paradoxical ``subreg`` s can be used as both lvalues and rvalues.
     When used as an lvalue, the low-order bits of the source value
     are stored in :samp:`{reg}` and the high-order bits are discarded.
     When used as an rvalue, the low-order bits of the ``subreg`` are
@@ -193,11 +193,11 @@ registers and to main memory.
 
     The high-order bits of rvalues are defined in the following circumstances:
 
-    ** ``subreg``s of ``mem``
+    ** ``subreg`` s of ``mem``
       When :samp:`{m2}` is smaller than a word, the macro ``LOAD_EXTEND_OP``,
       can control how the high-order bits are defined.
 
-    * ``subreg`` of ``reg``s
+    * ``subreg`` of ``reg`` s
       The upper bits are defined when ``SUBREG_PROMOTED_VAR_P`` is true.
       ``SUBREG_PROMOTED_UNSIGNED_P`` describes what the upper bits hold.
       Such subregs usually represent local variables, register variables
@@ -206,7 +206,7 @@ registers and to main memory.
     :samp:`{bytenum}` is always zero for a paradoxical ``subreg``, even on
     big-endian targets.
 
-    For example, the paradoxical ``subreg``:
+    For example, the paradoxical ``subreg`` :
 
     .. code-block:: c++
 
@@ -229,7 +229,7 @@ registers and to main memory.
 
     .. index:: REGMODE_NATURAL_SIZE
 
-    Normal ``subreg``s restrict consideration to certain bits of
+    Normal ``subreg`` s restrict consideration to certain bits of
     :samp:`{reg}`.  For this purpose, :samp:`{reg}` is divided into
     individually-addressable blocks in which each block has:
 
@@ -237,7 +237,7 @@ registers and to main memory.
 
       REGMODE_NATURAL_SIZE (m2)
 
-    bytes.  Usually the value is ``UNITS_PER_WORD``; that is,
+    bytes.  Usually the value is ``UNITS_PER_WORD`` ; that is,
     most targets usually treat each word of a register as being
     independently addressable.
 
@@ -260,9 +260,9 @@ registers and to main memory.
     or ``zero_extract`` around the ``subreg``.
 
     :samp:`{bytenum}` must identify the offset of the first byte of the
-    ``subreg`` from the start of :samp:`{reg}` , assuming that :samp:`{reg}` is
+    ``subreg`` from the start of :samp:`{reg}`, assuming that :samp:`{reg}` is
     laid out in memory order.  The memory order of bytes is defined by
-    two target macros, ``WORDS_BIG_ENDIAN`` and ``BYTES_BIG_ENDIAN``:
+    two target macros, ``WORDS_BIG_ENDIAN`` and ``BYTES_BIG_ENDIAN`` :
 
     ** 
       .. index:: WORDS_BIG_ENDIAN, effect on subreg
@@ -300,7 +300,7 @@ registers and to main memory.
       (subreg:HI (reg:SI x) 0)
 
     on a little-endian, :samp:`UNITS_PER_WORD == 4` target.  Both
-    ``subreg``s access the lower two bytes of register :samp:`{x}`.
+    ``subreg`` s access the lower two bytes of register :samp:`{x}`.
 
     Note that the byte offset is a polynomial integer; it may not be a
     compile-time constant on targets with variable-sized modes.  However,
@@ -327,7 +327,7 @@ registers and to main memory.
 
   Continuing with a ``PSImode`` precision of 20 bits, if we assume
   :samp:`REGMODE_NATURAL_SIZE (DImode) <= 4`,
-  then the following two ``subreg``s:
+  then the following two ``subreg`` s:
 
   .. code-block:: c++
 
@@ -337,7 +337,7 @@ registers and to main memory.
   represent accesses to the low 20 bits of the two halves of
   :samp:`(reg:DI 0)`.
 
-  If :samp:`REGMODE_NATURAL_SIZE (PSImode) <= 2` then these two ``subreg``s:
+  If :samp:`REGMODE_NATURAL_SIZE (PSImode) <= 2` then these two ``subreg`` s:
 
   .. code-block:: c++
 
@@ -355,14 +355,14 @@ registers and to main memory.
   sets the low 16 bits of :samp:`(reg:PSI 0)` to :samp:`(reg:HI 4)`, and
   the high 4 defined bits of :samp:`(reg:PSI 0)` retain their
   original value.  The behavior here is the same as for
-  normal ``subreg``s, when there are no
+  normal ``subreg`` s, when there are no
   ``MODE_PARTIAL_INT`` modes involved.
 
   .. index:: TARGET_CAN_CHANGE_MODE_CLASS and subreg semantics
 
   The rules above apply to both pseudo :samp:`{reg}` s and hard :samp:`{reg}` s.
   If the semantics are not correct for particular combinations of
-  :samp:`{m1}` , :samp:`{m2}` and hard :samp:`{reg}` , the target-specific code
+  :samp:`{m1}`, :samp:`{m2}` and hard :samp:`{reg}`, the target-specific code
   must ensure that those combinations are never used.  For example:
 
   .. code-block:: c++
@@ -430,7 +430,7 @@ registers and to main memory.
 
   .. index:: pc_rtx
 
-  There is only one expression object of code ``pc``; it is the value
+  There is only one expression object of code ``pc`` ; it is the value
   of the variable ``pc_rtx``.  Any attempt to create an expression of
   code ``pc`` will return ``pc_rtx``.
 

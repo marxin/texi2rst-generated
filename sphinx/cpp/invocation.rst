@@ -48,7 +48,7 @@ The :command:`cpp` command expects two file names as arguments, :samp:`{infile}`
 other files it specifies with :samp:`#include`.  All the output generated
 by the combined input files is written in :samp:`{outfile}`.
 
-Either :samp:`{infile}` or :samp:`{outfile}` may be :option:`-` , which as
+Either :samp:`{infile}` or :samp:`{outfile}` may be :option:`-`, which as
 :samp:`{infile}` means to read from standard input and as :samp:`{outfile}`
 means to write to standard output.  If either file is omitted, it
 means the same as if :option:`-` had been specified for that file.
@@ -106,7 +106,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. option:: -U name, -U
 
-  Cancel any previous definition of :samp:`{name}` , either built in or
+  Cancel any previous definition of :samp:`{name}`, either built in or
   provided with a :option:`-D` option.
 
 .. option:: -include file, -include
@@ -123,7 +123,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. option:: -imacros file, -imacros
 
-  Exactly like :option:`-include` , except that any output produced by
+  Exactly like :option:`-include`, except that any output produced by
   scanning :samp:`{file}` is thrown away.  Macros it defines remain defined.
   This allows you to acquire all the macros from a header without also
   processing its declarations.
@@ -167,11 +167,11 @@ options may *not* be grouped: :option:`-dM` is very different from
   This option does not suppress the preprocessor's debug output, such as
   :option:`-dM`.  To avoid mixing such debug output with the dependency
   rules you should explicitly specify the dependency output file with
-  :option:`-MF` , or use an environment variable like
+  :option:`-MF`, or use an environment variable like
   :envvar:`DEPENDENCIES_OUTPUT` (see :ref:`environment-variables`).  Debug output
   is still sent to the regular output stream as normal.
 
-  Passing :option:`-M` to the driver implies :option:`-E` , and suppresses
+  Passing :option:`-M` to the driver implies :option:`-E`, and suppresses
   warnings with an implicit :option:`-w`.
 
 .. option:: -MM
@@ -186,12 +186,12 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. option:: -MF file, -MF
 
-  When used with :option:`-M` or :option:`-MM` , specifies a
+  When used with :option:`-M` or :option:`-MM`, specifies a
   file to write the dependencies to.  If no :option:`-MF` switch is given
   the preprocessor sends the rules to the same place it would send
   preprocessed output.
 
-  When used with the driver options :option:`-MD` or :option:`-MMD` ,
+  When used with the driver options :option:`-MD` or :option:`-MMD`,
   :option:`-MF` overrides the default dependency output file.
 
   If :samp:`{file}` is -, then the dependencies are written to stdout.
@@ -236,7 +236,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   An :option:`-MT` option sets the target to be exactly the string you
   specify.  If you want multiple targets, you can specify them as a single
-  argument to :option:`-MT` , or use multiple :option:`-MT` options.
+  argument to :option:`-MT`, or use multiple :option:`-MT` options.
 
   For example, -MT '$(objpfx)foo.o' might give
 
@@ -246,7 +246,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. option:: -MQ target, -MQ
 
-  Same as :option:`-MT` , but it quotes any characters which are special to
+  Same as :option:`-MT`, but it quotes any characters which are special to
   Make.  -MQ '$(objpfx)foo.o' gives
 
   .. code-block:: c++
@@ -258,16 +258,16 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. option:: -MD
 
-  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}` , except that
+  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}`, except that
   :option:`-E` is not implied.  The driver determines :samp:`{file}` based on
   whether an :option:`-o` option is given.  If it is, the driver uses its
   argument but with a suffix of .d, otherwise it takes the name
   of the input file, removes any directory components and suffix, and
   applies a .d suffix.
 
-  If :option:`-MD` is used in conjunction with :option:`-E` , any
+  If :option:`-MD` is used in conjunction with :option:`-E`, any
   :option:`-o` switch is understood to specify the dependency output file
-  (see :ref:`-MF <dashmf>`), but if used without :option:`-E` , each :option:`-o`
+  (see :ref:`-MF <dashmf>`), but if used without :option:`-E`, each :option:`-o`
   is understood to specify a target object file.
 
   Since :option:`-E` is not implied, :option:`-MD` can be used to generate
@@ -300,18 +300,18 @@ options may *not* be grouped: :option:`-dM` is very different from
   The option's behavior depends on the :option:`-E` and :option:`-fpreprocessed`
   options.
 
-  With :option:`-E` , preprocessing is limited to the handling of directives
+  With :option:`-E`, preprocessing is limited to the handling of directives
   such as ``#define``, ``#ifdef``, and ``#error``.  Other
   preprocessor operations, such as macro expansion and trigraph
   conversion are not performed.  In addition, the :option:`-dD` option is
   implicitly enabled.
 
-  With :option:`-fpreprocessed` , predefinition of command line and most
+  With :option:`-fpreprocessed`, predefinition of command line and most
   builtin macros is disabled.  Macros such as ``__LINE__``, which are
   contextually dependent, are handled normally.  This enables compilation of
   files previously preprocessed with ``-E -fdirectives-only``.
 
-  With both :option:`-E` and :option:`-fpreprocessed` , the rules for
+  With both :option:`-E` and :option:`-fpreprocessed`, the rules for
   :option:`-fpreprocessed` take precedence.  This enables full preprocessing of
   files previously preprocessed with ``-E -fdirectives-only``.
 
@@ -387,7 +387,7 @@ options may *not* be grouped: :option:`-dM` is very different from
   Set the wide execution character set, used for wide string and
   character constants.  The default is UTF-32 or UTF-16, whichever
   corresponds to the width of ``wchar_t``.  As with
-  :option:`-fexec-charset` , :samp:`{charset}` can be any encoding supported
+  :option:`-fexec-charset`, :samp:`{charset}` can be any encoding supported
   by the system's ``iconv`` library routine; however, you will have
   problems with encodings that do not fit exactly in ``wchar_t``.
 
@@ -445,7 +445,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 .. option:: -CC
 
   Do not discard comments, including during macro expansion.  This is
-  like :option:`-C` , except that comments contained within macros are
+  like :option:`-C`, except that comments contained within macros are
   also passed through to the output file where the macro is expanded.
 
   In addition to the side effects of the :option:`-C` option, the
@@ -536,7 +536,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   .. option:: -dN
 
-    Like :option:`-dD` , but emit only the macro names, not their expansions.
+    Like :option:`-dD`, but emit only the macro names, not their expansions.
 
   .. option:: -dI
 
@@ -554,11 +554,11 @@ options may *not* be grouped: :option:`-dM` is very different from
 .. option:: -fdebug-cpp
 
   This option is only useful for debugging GCC.  When used from CPP or with
-  :option:`-E` , it dumps debugging information about location maps.  Every
+  :option:`-E`, it dumps debugging information about location maps.  Every
   token in the output is preceded by the dump of the map its location
   belongs to.
 
-  When used from GCC without :option:`-E` , this option has no effect.
+  When used from GCC without :option:`-E`, this option has no effect.
 
   .. Copyright (C) 1999-2021 Free Software Foundation, Inc.
 
@@ -583,7 +583,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   Directories specified with :option:`-iquote` apply only to the quote 
   form of the directive, ``#include "file"``.
-  Directories specified with :option:`-I` , :option:`-isystem` , 
+  Directories specified with :option:`-I`, :option:`-isystem`, 
   or :option:`-idirafter` apply to lookup for both the
   ``#include "file"`` and
   ``#include <file>`` directives.
@@ -623,7 +623,7 @@ options may *not* be grouped: :option:`-dM` is very different from
   See :ref:`system-headers`.
 
   If a standard system include directory, or a directory specified with
-  :option:`-isystem` , is also specified with :option:`-I` , the :option:`-I`
+  :option:`-isystem`, is also specified with :option:`-I`, the :option:`-I`
   option is ignored.  The directory is still searched but as a
   system directory at its normal position in the system include chain.
   This is to ensure that GCC's procedure to fix buggy system headers and
@@ -642,9 +642,9 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   Any directories specified with :option:`-I`
   options before :option:`-I-` are searched only for headers requested with
-  ``#include "file"``; they are not searched for
+  ``#include "file"`` ; they are not searched for
   ``#include <file>``.  If additional directories are
-  specified with :option:`-I` options after the :option:`-I-` , those
+  specified with :option:`-I` options after the :option:`-I-`, those
   directories are searched for all :samp:`#include` directives.
 
   In addition, :option:`-I-` inhibits the use of the directory of the current
@@ -661,7 +661,7 @@ options may *not* be grouped: :option:`-dM` is very different from
 .. option:: -iwithprefix dir, -iwithprefix, -iwithprefixbefore
 
   Append :samp:`{dir}` to the prefix specified previously with
-  :option:`-iprefix` , and add the resulting directory to the include search
+  :option:`-iprefix`, and add the resulting directory to the include search
   path.  :option:`-iwithprefixbefore` puts it in the same place :option:`-I`
   would; :option:`-iwithprefix` puts it where :option:`-idirafter` would.
 
@@ -680,8 +680,8 @@ options may *not* be grouped: :option:`-dM` is very different from
 .. option:: -nostdinc
 
   Do not search the standard system directories for header files.
-  Only the directories explicitly specified with :option:`-I` ,
-  :option:`-iquote` , :option:`-isystem` , and/or :option:`-idirafter`
+  Only the directories explicitly specified with :option:`-I`,
+  :option:`-iquote`, :option:`-isystem`, and/or :option:`-idirafter`
   options (and the directory of the current file, if appropriate) 
   are searched.
 

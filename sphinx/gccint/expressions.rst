@@ -99,7 +99,7 @@ kinds of expressions:
 .. envvar:: INTEGER_CST
 
   These nodes represent integer constants.  Note that the type of these
-  constants is obtained with ``TREE_TYPE``; they are not always of type
+  constants is obtained with ``TREE_TYPE`` ; they are not always of type
   ``int``.  In particular, ``char`` constants are represented with
   ``INTEGER_CST`` nodes.  The value of the integer constant ``e`` is
   represented in an array of HOST_WIDE_INT.   There are enough elements
@@ -124,7 +124,7 @@ kinds of expressions:
 
   These nodes represent fixed-point constants.  The type of these constants
   is obtained with ``TREE_TYPE``.  ``TREE_FIXED_CST_PTR`` points to
-  a ``struct fixed_value``;  ``TREE_FIXED_CST`` returns the structure
+  a ``struct fixed_value`` ;  ``TREE_FIXED_CST`` returns the structure
   itself.  ``struct fixed_value`` contains ``data`` with the size of two
   ``HOST_BITS_PER_WIDE_INT`` and ``mode`` as the associated fixed-point
   machine mode for ``data``.
@@ -150,7 +150,7 @@ kinds of expressions:
   The first three elements in each pattern are enough to determine the
   values of the other elements.  However, if all :samp:`{step}` s are zero,
   only the first two elements are needed.  If in addition each :samp:`{base1}`
-  is equal to the corresponding :samp:`{base0}` , only the first element in
+  is equal to the corresponding :samp:`{base0}`, only the first element in
   each pattern is needed.  The number of encoded elements per pattern
   is given by :samp:`VECTOR_CST_NELTS_PER_PATTERN ({v})`.
 
@@ -193,7 +193,7 @@ kinds of expressions:
   petterns) the one with the fewest encoded elements.
 
   :samp:`vector_cst_encoding_nelts ({v})` gives the total number of
-  encoded elements in :samp:`{v}` , which is 6 in the example above.
+  encoded elements in :samp:`{v}`, which is 6 in the example above.
   ``VECTOR_CST_ENCODED_ELTS (v)`` gives a pointer to the elements
   encoded in :samp:`{v}` and ``VECTOR_CST_ENCODED_ELT (v, i)``
   accesses the value of encoded element :samp:`{i}`.
@@ -215,7 +215,7 @@ kinds of expressions:
   These nodes represent string-constants.  The ``TREE_STRING_LENGTH``
   returns the length of the string, as an ``int``.  The
   ``TREE_STRING_POINTER`` is a ``char*`` containing the string
-  itself.  The string may not be ``NUL``-terminated, and it may contain
+  itself.  The string may not be ``NUL`` -terminated, and it may contain
   embedded ``NUL`` characters.  Therefore, the
   ``TREE_STRING_LENGTH`` includes the trailing ``NUL`` if it is
   present.
@@ -592,14 +592,14 @@ Unary and Binary Expressions
 
 .. envvar:: CONVERT_EXPR
 
-  These nodes are similar to ``NOP_EXPR``s, but are used in those
+  These nodes are similar to ``NOP_EXPR`` s, but are used in those
   situations where code may need to be generated.  For example, if an
   ``int*`` is converted to an ``int`` code may need to be generated
   on some platforms.  These nodes are never used for C++-specific
   conversions, like conversions between pointers to different classes in
   an inheritance hierarchy.  Any adjustments that need to be made in such
   cases are always indicated explicitly.  Similarly, a user-defined
-  conversion is never represented by a ``CONVERT_EXPR``; instead, the
+  conversion is never represented by a ``CONVERT_EXPR`` ; instead, the
   function calls are made explicit.
 
 .. envvar:: FIXED_CONVERT_EXPR
@@ -804,7 +804,7 @@ Unary and Binary Expressions
 .. envvar:: CALL_EXPR
 
   These nodes are used to represent calls to functions, including
-  non-static member functions.  ``CALL_EXPR``s are implemented as
+  non-static member functions.  ``CALL_EXPR`` s are implemented as
   expression nodes with a variable number of operands.  Rather than using
   ``TREE_OPERAND`` to extract them, it is preferable to use the
   specialized accessor macros and functions that operate specifically on
@@ -834,7 +834,7 @@ Unary and Binary Expressions
   arguments and some arguments are not explicitly provided at the call
   sites.
 
-  ``CALL_EXPR``s also have a ``CALL_EXPR_STATIC_CHAIN`` operand that
+  ``CALL_EXPR`` s also have a ``CALL_EXPR_STATIC_CHAIN`` operand that
   is used to implement nested functions.  This operand is otherwise null.
 
 .. envvar:: CLEANUP_POINT_EXPR
@@ -848,7 +848,7 @@ Unary and Binary Expressions
 
   These nodes represent the brace-enclosed initializers for a structure or an
   array.  They contain a sequence of component values made out of a vector of
-  constructor_elt, which is a (``INDEX``, ``VALUE``) pair.
+  constructor_elt, which is a ( ``INDEX``, ``VALUE`` ) pair.
 
   If the ``TREE_TYPE`` of the ``CONSTRUCTOR`` is a ``RECORD_TYPE``,
   ``UNION_TYPE`` or ``QUAL_UNION_TYPE`` then the ``INDEX`` of each
@@ -857,7 +857,7 @@ Unary and Binary Expressions
 
   If the ``TREE_TYPE`` of the ``CONSTRUCTOR`` is an ``ARRAY_TYPE``,
   then the ``INDEX`` of each node in the sequence will be an
-  ``INTEGER_CST`` or a ``RANGE_EXPR`` of two ``INTEGER_CST``s.
+  ``INTEGER_CST`` or a ``RANGE_EXPR`` of two ``INTEGER_CST`` s.
   A single ``INTEGER_CST`` indicates which element of the array is being
   assigned to.  A ``RANGE_EXPR`` indicates an inclusive range of elements
   to initialize.  In both cases the ``VALUE`` is the corresponding
@@ -916,7 +916,7 @@ Unary and Binary Expressions
   always be executed in the order opposite to that in which they were
   encountered.  Note that if a temporary is created on one branch of a
   conditional operator (i.e., in the second or third operand to a
-  ``COND_EXPR``), the cleanup must be run only if that branch is
+  ``COND_EXPR`` ), the cleanup must be run only if that branch is
   actually executed.
 
 .. envvar:: VA_ARG_EXPR
@@ -1007,7 +1007,7 @@ Vectors
 
   These nodes represent widening vector multiplication of the high and low
   parts of the two input vectors, respectively.  Their operands are vectors
-  that contain the same number of elements (``N``) of the same integral type.
+  that contain the same number of elements ( ``N`` ) of the same integral type.
   The result is a vector that contains half as many elements, of an integral type
   whose size is twice as wide.  In the case of ``VEC_WIDEN_MULT_HI_EXPR`` the
   high ``N/2`` elements of the two vector are multiplied to produce the
@@ -1019,7 +1019,7 @@ Vectors
 
   These nodes represent widening vector addition of the high and low parts of
   the two input vectors, respectively.  Their operands are vectors that contain
-  the same number of elements (``N``) of the same integral type. The result
+  the same number of elements ( ``N`` ) of the same integral type. The result
   is a vector that contains half as many elements, of an integral type whose size
   is twice as wide.  In the case of ``VEC_WIDEN_PLUS_HI_EXPR`` the high
   ``N/2`` elements of the two vectors are added to produce the vector of
@@ -1031,7 +1031,7 @@ Vectors
 
   These nodes represent widening vector subtraction of the high and low parts of
   the two input vectors, respectively.  Their operands are vectors that contain
-  the same number of elements (``N``) of the same integral type. The high/low
+  the same number of elements ( ``N`` ) of the same integral type. The high/low
   elements of the second vector are subtracted from the high/low elements of the
   first. The result is a vector that contains half as many elements, of an
   integral type whose size is twice as wide.  In the case of

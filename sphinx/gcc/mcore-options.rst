@@ -23,7 +23,7 @@ processors.
 
 .. option:: -mwide-bitfields, -mno-wide-bitfields
 
-  Always treat bit-fields as ``int``-sized.
+  Always treat bit-fields as ``int`` -sized.
 
 .. option:: -m4byte-functions, -mno-4byte-functions
 

@@ -71,7 +71,7 @@ Specify additional compiler options
 
 :samp:`{ dg-options {options} [{ target {selector} }] }`
   This DejaGnu directive provides a list of compiler options, to be used
-  if the target system matches :samp:`{selector}` , that replace the default
+  if the target system matches :samp:`{selector}`, that replace the default
   options used for this set of tests.
 
 :samp:`{ dg-add-options {feature} ... }`
@@ -83,7 +83,7 @@ Specify additional compiler options
 
 :samp:`{ dg-additional-options {options} [{ target {selector} }] }`
   This directive provides a list of compiler options, to be used
-  if the target system matches :samp:`{selector}` , that are added to the default
+  if the target system matches :samp:`{selector}`, that are added to the default
   options used for this set of tests.
 
 Modify the test timeout value
@@ -97,7 +97,7 @@ following in order:
 
 * variable :samp:`{tool_timeout}` defined by the set of tests
 
-* :samp:`{gcc}` , :samp:`{timeout}` set in the target board
+* :samp:`{gcc}`,:samp:`{timeout}` set in the target board
 
 * 300
 
@@ -119,13 +119,13 @@ Skip a test for some targets
 
   * the test system is included in :samp:`{selector}`
 
-  * for at least one of the option strings in :samp:`{include-opts}` ,
+  * for at least one of the option strings in :samp:`{include-opts}`,
     every option from that string is in the set of options with which
     the test would be compiled; use :samp:`"*"` for an :samp:`{include-opts}` list
     that matches any options; that is the default if :samp:`{include-opts}` is
     not specified
 
-  * for each of the option strings in :samp:`{exclude-opts}` , at least one
+  * for each of the option strings in :samp:`{exclude-opts}`, at least one
     option from that string is not in the set of options with which the test
     would be compiled; use :samp:`""` for an empty :samp:`{exclude-opts}` list;
     that is the default if :samp:`{exclude-opts}` is not specified
@@ -184,11 +184,11 @@ Expect a test to fail for some targets
 
 :samp:`{ dg-xfail-if {comment} { {selector} } [{ {include-opts} } [{ {exclude-opts} }]] }`
   Expect the test to fail if the conditions (which are the same as for
-  ``dg-skip-if``) are met.  This does not affect the execute step.
+  ``dg-skip-if`` ) are met.  This does not affect the execute step.
 
 :samp:`{ dg-xfail-run-if {comment} { {selector} } [{ {include-opts} } [{ {exclude-opts} }]] }`
   Expect the execute step of a test to fail if the conditions (which are
-  the same as for ``dg-skip-if``) are met.
+  the same as for ``dg-skip-if`` ) are met.
 
 Expect the compiler to crash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,7 +196,7 @@ Expect the compiler to crash
 :samp:`{ dg-ice {comment} [{ {selector} } [{ {include-opts} } [{ {exclude-opts} }]]] }`
   Expect the compiler to crash with an internal compiler error and return
   a nonzero exit status if the conditions (which are the same as for
-  ``dg-skip-if``) are met.  Used for tests that test bugs that have not been
+  ``dg-skip-if`` ) are met.  Used for tests that test bugs that have not been
   fixed yet.
 
 Expect the test executable to fail
@@ -204,7 +204,7 @@ Expect the test executable to fail
 
 :samp:`{ dg-shouldfail {comment} [{ {selector} } [{ {include-opts} } [{ {exclude-opts} }]]] }`
   Expect the test executable to return a nonzero exit status if the
-  conditions (which are the same as for ``dg-skip-if``) are met.
+  conditions (which are the same as for ``dg-skip-if`` ) are met.
 
 Verify compiler messages
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -236,7 +236,7 @@ can be used if there is no line associated with the message.
 
 :samp:`{ dg-bogus {regexp} [{comment} [{ target/xfail {selector} } [{line}] ]] }`
   This DejaGnu directive appears on a source line that should not get a
-  message matching :samp:`{regexp}` , or else specifies the source line
+  message matching :samp:`{regexp}`, or else specifies the source line
   associated with the bogus message.  It is usually used with :samp:`xfail`
   to indicate that the message is a known problem for a particular set of
   targets.
@@ -470,13 +470,13 @@ Data type sizes
   Target has ``short`` and ``int`` with the same size.
 
 ``ptr_eq_short``
-  Target has pointers (``void *``) and ``short`` with the same size.
+  Target has pointers ( ``void *`` ) and ``short`` with the same size.
 
 ``int_eq_float``
   Target has ``int`` and ``float`` with the same size.
 
 ``ptr_eq_long``
-  Target has pointers (``void *``) and ``long`` with the same size.
+  Target has pointers ( ``void *`` ) and ``long`` with the same size.
 
 ``large_double``
   Target supports ``double`` that is longer than ``float``.
@@ -522,11 +522,11 @@ Data type sizes
   ``_Floatnx`` type.
 
 ``inf``
-  Target supports floating point infinite (``inf``) for type
+  Target supports floating point infinite ( ``inf`` ) for type
   ``double``.
 
 ``inff``
-  Target supports floating point infinite (``inf``) for type
+  Target supports floating point infinite ( ``inf`` ) for type
   ``float``.
 
 Fortran-specific attributes
@@ -877,7 +877,7 @@ ARM-specific attributes
 ``arm_hf_eabi``
   ARM target adheres to the VFP and Advanced SIMD Register Arguments
   variant of the ABI for the ARM Architecture (as selected with
-  ``-mfloat-abi=hard``).
+  ``-mfloat-abi=hard`` ).
 
 ``arm_softfloat``
   ARM target uses emulated floating point operations.
@@ -1225,10 +1225,10 @@ MSP430-specific attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``msp430_small``
-  MSP430 target has the small memory model enabled (``-msmall``).
+  MSP430 target has the small memory model enabled ( ``-msmall`` ).
 
 ``msp430_large``
-  MSP430 target has the large memory model enabled (``-mlarge``).
+  MSP430 target has the large memory model enabled ( ``-mlarge`` ).
 
 PowerPC-specific attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1666,7 +1666,7 @@ Other attributes
   Target supports :option:`-mpe-aligned-commons`.
 
 ``pie``
-  Target supports :option:`-pie` , :option:`-fpie` and :option:`-fPIE`.
+  Target supports :option:`-pie`, :option:`-fpie` and :option:`-fPIE`.
 
 ``rdynamic``
   Target supports :option:`-rdynamic`.
@@ -1968,7 +1968,7 @@ take arguments could be replaced with effective-target keywords.
   Skip the test if the host is remote, rather than the same as the build
   system.  Some tests are incompatible with DejaGnu's handling of remote
   hosts, which involves copying the source file to the host and compiling
-  it with a relative path and "``-o a.out``".
+  it with a relative path and " ``-o a.out`` ".
 
 ``dg-require-mkfifo ""``
   Skip the test if the target does not support ``mkfifo``.
@@ -2050,7 +2050,7 @@ Scan the assembly output
   is followed by a line that starts with the string :samp:`{terminator}`.
   Specifying an empty terminator is equivalent to specifying :samp:`"*/"`.
 
-  :samp:`{options}` , if specified, is a list of regular expressions, each of
+  :samp:`{options}`, if specified, is a list of regular expressions, each of
   which matches a full command-line option.  A non-empty list prevents
   the test from running unless all of the given options are present on the
   command line.  This can help if a source file is compiled both with

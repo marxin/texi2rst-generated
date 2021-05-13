@@ -36,7 +36,7 @@ are still necessary, though: ``GTY(())``.  Markers can appear:
 * In a structure definition, before the open brace;
 
 * In a global variable declaration, after the keyword ``static`` or
-  ``extern``; and
+  ``extern`` ; and
 
 * In a structure field definition, before the name of the field.
 
@@ -62,7 +62,7 @@ The parser understands simple typedefs such as
 ``typedef int name;``.
 These don't need to be marked.
 
-Since ``gengtype``'s understanding of C++ is limited, there are
+Since ``gengtype`` 's understanding of C++ is limited, there are
 several constructs and declarations that are not supported inside
 classes/structures marked for automatic GC code generation.  The
 following C++ constructs produce a ``gengtype`` error on

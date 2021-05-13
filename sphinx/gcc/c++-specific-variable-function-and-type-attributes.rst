@@ -60,7 +60,7 @@ Some attributes only make sense for C++ programs.
   *in a given translation unit*.  No guarantee is made for initializations
   across translation units.  However, GNU C++ allows users to control the
   order of initialization of objects defined at namespace scope with the
-  ``init_priority`` attribute by specifying a relative :samp:`{priority}` ,
+  ``init_priority`` attribute by specifying a relative :samp:`{priority}`,
   a constant integral expression currently bounded between 101 and 65535
   inclusive.  Lower numbers indicate a higher priority.
 
@@ -87,7 +87,7 @@ Some attributes only make sense for C++ programs.
   types.
 
   This attribute is appropriate for types which just represent a value,
-  such as ``std::string``; it is not appropriate for types which
+  such as ``std::string`` ; it is not appropriate for types which
   control a resource, such as ``std::lock_guard``.
 
   This attribute is also accepted in C, but it is unnecessary because C

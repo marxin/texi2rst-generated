@@ -847,7 +847,7 @@ a particular case, a call to the library function is emitted.
 
 .. index:: std
 
-Outside strict ISO C mode ( :option:`-ansi` , :option:`-std=c90` ,
+Outside strict ISO C mode ( :option:`-ansi`, :option:`-std=c90`,
 :option:`-std=c99` or :option:`-std=c11` ), the functions
 ``_exit``, ``alloca``, ``bcmp``, ``bzero``,
 ``dcgettext``, ``dgettext``, ``dremf``, ``dreml``,
@@ -976,7 +976,7 @@ GCC provides built-in versions of the ISO C99 floating-point comparison
 macros that avoid raising exceptions for unordered operands.  They have
 the same names as the standard macros ( ``isgreater``,
 ``isgreaterequal``, ``isless``, ``islessequal``,
-``islessgreater``, and ``isunordered``) , with ``__builtin_``
+``islessgreater``, and ``isunordered`` ) , with ``__builtin_``
 prefixed.  We intend for a library implementor to be able to simply
 ``#define`` each standard macro to its built-in equivalent.
 In the same fashion, GCC provides ``fpclassify``, ``isfinite``,
@@ -1073,7 +1073,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   Similar to ``__builtin_alloca_with_align`` but takes an extra argument
   specifying an upper bound for :samp:`{size}` in case its value cannot be computed
-  at compile time, for use by :option:`-fstack-usage` , :option:`-Wstack-usage`
+  at compile time, for use by :option:`-fstack-usage`, :option:`-Wstack-usage`
   and :option:`-Walloca-larger-than`.  :samp:`{max_size}` must be a constant integer
   expression, it has no effect on code generation and no attempt is made to
   check its compatibility with :samp:`{size}`.
@@ -1139,7 +1139,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
       :samp:`{failval}` to be returned when it is known that speculative
       execution has incorrectly predicted a conditional branch operation.
 
-  The second argument, :samp:`{failval}` , is optional and defaults to zero
+  The second argument, :samp:`{failval}`, is optional and defaults to zero
   if omitted.
 
   GCC defines the preprocessor macro
@@ -1214,7 +1214,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   used in integer constant expressions.
 
   This built-in function ignores top level qualifiers (e.g., ``const``,
-  ``volatile``).  For example, ``int`` is equivalent to ``const
+  ``volatile`` ).  For example, ``int`` is equivalent to ``const
   int``.
 
   The type ``int[]`` and ``int[5]`` are compatible.  On the other
@@ -1266,7 +1266,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   You can use the built-in function ``__builtin_choose_expr`` to
   evaluate code depending on the value of a constant expression.  This
-  built-in function returns :samp:`{exp1}` if :samp:`{const_exp}` , which is an
+  built-in function returns :samp:`{exp1}` if :samp:`{const_exp}`, which is an
   integer constant expression, is nonzero.  Otherwise it returns :samp:`{exp2}`.
 
   This built-in function is analogous to the :samp:`? :` operator in C,
@@ -1333,7 +1333,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   The types of the specified functions must all be different, but
   related to each other in the same way as a set of functions that may
   be selected between by a macro in ``<tgmath.h>``.  This means that
-  the functions are parameterized by a floating-point type :samp:`{t}` ,
+  the functions are parameterized by a floating-point type :samp:`{t}`,
   different for each such function.  The function return types may all
   be the same type, or they may be :samp:`{t}` for each function, or they
   may be the real type corresponding to :samp:`{t}` for each function (if
@@ -1350,11 +1350,11 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   (or ``_Complex _Float64`` if all the function return types are the
   same ``_Floatn`` or ``_Floatnx`` type).
   If the function return types vary, or are all the same integer type,
-  the function called is the one for which :samp:`{t}` is :samp:`{u}` , and it is
+  the function called is the one for which :samp:`{t}` is :samp:`{u}`, and it is
   an error if there is no such function.  If the function return types
   are all the same floating-point type, the type-generic macro is taken
   to be one of those from TS 18661 that rounds the result to a narrower
-  type; if there is a function for which :samp:`{t}` is :samp:`{u}` , it is
+  type; if there is a function for which :samp:`{t}` is :samp:`{u}`, it is
   called, and otherwise the first function, if any, for which :samp:`{t}`
   has at least the range and precision of :samp:`{u}` is called, and it is
   an error if there is no such function.
@@ -1415,7 +1415,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   ``__builtin_constant_p`` returns 1 because :samp:`{EXPRESSION}` can be
   folded to a constant but :samp:`{EXPRESSION}` contains operands that are
   not otherwise permitted in a static initializer (for example,
-  ``0 && foo ()``).  GCC must be more conservative about evaluating the
+  ``0 && foo ()`` ).  GCC must be more conservative about evaluating the
   built-in in this case, because it has no opportunity to perform
   optimization.
 
@@ -1440,7 +1440,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   The built-in function ``__builtin_clear_padding`` function clears
   padding bits inside of the object representation of object pointed by
-  :samp:`{ptr}` , which has to be a pointer.  The value representation of the
+  :samp:`{ptr}`, which has to be a pointer.  The value representation of the
   object is not affected.  The type of the object is assumed to be the type
   the pointer points to.  Inside of a union, the only cleared bits are
   bits that are padding bits for all the union members.
@@ -1475,7 +1475,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   actually perform.  However, there are applications in which this
   data is hard to collect.
 
-  The return value is the value of :samp:`{exp}` , which should be an integral
+  The return value is the value of :samp:`{exp}`, which should be an integral
   expression.  The semantics of the built-in are that it is expected that
   :samp:`{exp}` == :samp:`{c}`.  For example:
 
@@ -1486,7 +1486,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   indicates that we do not expect to call ``foo``, since
   we expect ``x`` to be zero.  Since you are limited to integral
-  expressions for :samp:`{exp}` , you should use constructions such as
+  expressions for :samp:`{exp}`, you should use constructions such as
 
   .. code-block:: c++
 
@@ -1506,11 +1506,11 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
 .. function:: long __builtin_expect_with_probability
 
-  (long :samp:`{exp}` , long :samp:`{c}` , double :samp:`{probability}` )
+  (long :samp:`{exp}`, long :samp:`{c}`, double :samp:`{probability}` )
 
   This function has the same semantics as ``__builtin_expect``,
   but the caller provides the expected probability that :samp:`{exp}` == :samp:`{c}`.
-  The last argument, :samp:`{probability}` , is a floating-point value in the
+  The last argument, :samp:`{probability}`, is a floating-point value in the
   range 0.0 to 1.0, inclusive.  The :samp:`{probability}` argument must be
   constant floating-point expression.
 
@@ -1603,7 +1603,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   This function is the equivalent of the preprocessor ``__LINE__``
   macro and returns a constant integer expression that evaluates to
   the line number of the invocation of the built-in.  When used as a C++
-  default argument for a function :samp:`{F}` , it returns the line number
+  default argument for a function :samp:`{F}`, it returns the line number
   of the call to :samp:`{F}`.
 
 .. function:: const char * __builtin_FUNCTION()
@@ -1612,7 +1612,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   and returns an address constant pointing to the name of the function
   from which the built-in was invoked, or the empty string if
   the invocation is not at function scope.  When used as a C++ default
-  argument for a function :samp:`{F}` , it returns the name of :samp:`{F}` 's
+  argument for a function :samp:`{F}`, it returns the name of :samp:`{F}` 's
   caller or the empty string if the call was not made at function
   scope.
 
@@ -1622,7 +1622,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   macro and returns an address constant pointing to the file name
   containing the invocation of the built-in, or the empty string if
   the invocation is not at function scope.  When used as a C++ default
-  argument for a function :samp:`{F}` , it returns the file name of the call
+  argument for a function :samp:`{F}`, it returns the file name of the call
   to :samp:`{F}` or the empty string if the call was not made at function
   scope.
 
@@ -1791,7 +1791,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   Since ISO C99 defines this function in terms of ``strtod``, which we
   do not implement, a description of the parsing is in order.  The string
-  is parsed as by ``strtol``; that is, the base is recognized by
+  is parsed as by ``strtol`` ; that is, the base is recognized by
   leading :samp:`0` or :samp:`0x` prefixes.  The number parsed is placed
   in the significand such that the least significant bit of the number
   is at the least significant bit of the significand.  The number is
@@ -1870,22 +1870,22 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
 .. function:: int __builtin_ffs(int x)
 
-  Returns one plus the index of the least significant 1-bit of :samp:`{x}` , or
+  Returns one plus the index of the least significant 1-bit of :samp:`{x}`, or
   if :samp:`{x}` is zero, returns zero.
 
 .. function:: int __builtin_clz(unsigned intx )
 
-  Returns the number of leading 0-bits in :samp:`{x}` , starting at the most
+  Returns the number of leading 0-bits in :samp:`{x}`, starting at the most
   significant bit position.  If :samp:`{x}` is 0, the result is undefined.
 
 .. function:: int __builtin_ctz(unsigned intx )
 
-  Returns the number of trailing 0-bits in :samp:`{x}` , starting at the least
+  Returns the number of trailing 0-bits in :samp:`{x}`, starting at the least
   significant bit position.  If :samp:`{x}` is 0, the result is undefined.
 
 .. function:: int __builtin_clrsb(int x)
 
-  Returns the number of leading redundant sign bits in :samp:`{x}` , i.e. the
+  Returns the number of leading redundant sign bits in :samp:`{x}`, i.e. the
   number of bits following the most significant bit that are identical
   to it.  There are no special cases for 0 or other values. 
 
@@ -1895,7 +1895,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
 .. function:: int __builtin_parity(unsigned intx )
 
-  Returns the parity of :samp:`{x}` , i.e. the number of 1-bits in :samp:`{x}`
+  Returns the parity of :samp:`{x}`, i.e. the number of 1-bits in :samp:`{x}`
   modulo 2.
 
 .. function:: int __builtin_ffsl(long )

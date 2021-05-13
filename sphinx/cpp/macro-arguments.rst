@@ -49,7 +49,7 @@ prevent a comma from separating arguments.  Thus,
 
   macro (array[x = y, x + 1])
 
-passes two arguments to ``macro``: ``array[x = y`` and ``x +
+passes two arguments to ``macro`` : ``array[x = y`` and ``x +
 1]``.  If you want to supply ``array[x = y, x + 1]`` as an argument,
 you can write it as ``array[(x = y, x + 1)]``, which is equivalent C
 code.
@@ -83,7 +83,7 @@ You can leave macro arguments empty; this is not an error to the
 preprocessor (but many macros will then expand to invalid code).
 You cannot leave out arguments entirely; if a macro takes two arguments,
 there must be exactly one comma at the top level of its argument list.
-Here are some silly examples using ``min``:
+Here are some silly examples using ``min`` :
 
 .. code-block:: c++
 

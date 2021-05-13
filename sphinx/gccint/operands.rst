@@ -7,7 +7,7 @@ Operands
 
 In general, expressions in GIMPLE consist of an operation and the
 appropriate number of simple operands; these operands must either be a
-GIMPLE rvalue (``is_gimple_val``), i.e. a constant or a register
+GIMPLE rvalue ( ``is_gimple_val`` ), i.e. a constant or a register
 variable.  More complex operands are factored out into temporaries, so
 that
 
@@ -64,7 +64,7 @@ to
 
 alias analysis would not remember that the reference to ``T1[2]`` came
 by way of ``a.b``, so it would think that the assignment could alias
-another member of ``a``; this broke ``struct-alias-1.c``.  Future
+another member of ``a`` ; this broke ``struct-alias-1.c``.  Future
 optimizer improvements may make this limitation unnecessary.
 
 .. _conditional-expressions:
@@ -201,18 +201,18 @@ tuple operands use the following accessors
 .. function:: tree * gimple_ops(gimple g)
 
   Returns a pointer into the operand vector for statement ``G``.  This
-  is computed using an internal table called ``gimple_ops_offset_``[].
+  is computed using an internal table called ``gimple_ops_offset_`` [].
   This table is indexed by the gimple code of ``G``.
 
   When the compiler is built, this table is filled-in using the
   sizes of the structures used by each statement code defined in
   gimple.def.  Since the operand vector is at the bottom of the
   structure, for a gimple code ``C`` the offset is computed as sizeof
-  (struct-of ``C``) - sizeof (tree).
+  (struct-of ``C`` ) - sizeof (tree).
 
   This mechanism adds one memory indirection to every access when
-  using ``gimple_op``(), if this becomes a bottleneck, a pass can
-  choose to memoize the result from ``gimple_ops``() and use that to
+  using ``gimple_op`` (), if this becomes a bottleneck, a pass can
+  choose to memoize the result from ``gimple_ops`` () and use that to
   access the operands.
 
 Operand validation

@@ -44,11 +44,11 @@ loops immediately contained inside loop L are the children of L in the
 tree.  This tree is represented by the ``struct loops`` structure.
 The root of this tree is a fake loop that contains all blocks in the
 function.  Each of the loops is represented in a ``struct loop``
-structure.  Each loop is assigned an index (``num`` field of the
+structure.  Each loop is assigned an index ( ``num`` field of the
 ``struct loop`` structure), and the pointer to the loop is stored in
 the corresponding field of the ``larray`` vector in the loops
 structure.  The indices do not have to be continuous, there may be
-empty (``NULL``) entries in the ``larray`` created by deleting
+empty ( ``NULL`` ) entries in the ``larray`` created by deleting
 loops.  Also, there is no guarantee on the relative order of a loop
 and its subloops in the numbering.  The index of a loop never changes.
 
@@ -64,7 +64,7 @@ created loops are never traversed, if they need to be visited, this
 must be done separately after their creation.
 
 Each basic block contains the reference to the innermost loop it belongs
-to (``loop_father``).  For this reason, it is only possible to have
+to ( ``loop_father`` ).  For this reason, it is only possible to have
 one ``struct loops`` structure initialized at the same time for each
 CFG.  The global variable ``current_loops`` contains the
 ``struct loops`` structure.  Many of the loop manipulation functions
@@ -75,7 +75,7 @@ argument of this function is a set of flags represented in an integer
 bitmask.  These flags specify what other properties of the loop
 structures should be calculated/enforced and preserved later:
 
-** ``LOOPS_MAY_HAVE_MULTIPLE_LATCHES``: If this flag is set, no
+** ``LOOPS_MAY_HAVE_MULTIPLE_LATCHES`` : If this flag is set, no
   changes to CFG will be performed in the loop analysis, in particular,
   loops with multiple latch edges will not be disambiguated.  If a loop
   has multiple latches, its latch block is set to NULL.  Most of
@@ -83,13 +83,13 @@ structures should be calculated/enforced and preserved later:
   No other flags that require CFG changes can be passed to
   loop_optimizer_init.
 
-* ``LOOPS_HAVE_PREHEADERS``: Forwarder blocks are created in such
+* ``LOOPS_HAVE_PREHEADERS`` : Forwarder blocks are created in such
   a way that each loop has only one entry edge, and additionally, the
   source block of this entry edge has only one successor.  This creates a
   natural place where the code can be moved out of the loop, and ensures
   that the entry edge of the loop leads from its immediate super-loop.
 
-* ``LOOPS_HAVE_SIMPLE_LATCHES``: Forwarder blocks are created to
+* ``LOOPS_HAVE_SIMPLE_LATCHES`` : Forwarder blocks are created to
   force the latch block of each loop to have only one successor.  This
   ensures that the latch of the loop does not belong to any of its
   sub-loops, and makes manipulation with the loops significantly easier.
@@ -97,7 +97,7 @@ structures should be calculated/enforced and preserved later:
   this shape.  Note that with this flag, the 'normal' loop without any
   control flow inside and with one exit consists of two basic blocks.
 
-* ``LOOPS_HAVE_MARKED_IRREDUCIBLE_REGIONS``: Basic blocks and
+* ``LOOPS_HAVE_MARKED_IRREDUCIBLE_REGIONS`` : Basic blocks and
   edges in the strongly connected components that are not natural loops
   (have more than one entry block) are marked with
   ``BB_IRREDUCIBLE_LOOP`` and ``EDGE_IRREDUCIBLE_LOOP`` flags.  The
@@ -105,10 +105,10 @@ structures should be calculated/enforced and preserved later:
   are in such an irreducible region (but it is set for the entry and exit
   edges of such a loop, if they lead to/from this region).
 
-* ``LOOPS_HAVE_RECORDED_EXITS``: The lists of exits are recorded
+* ``LOOPS_HAVE_RECORDED_EXITS`` : The lists of exits are recorded
   and updated for each loop.  This makes some functions (e.g.,
-  ``get_loop_exit_edges``) more efficient.  Some functions (e.g.,
-  ``single_exit``) can be used only if the lists of exits are
+  ``get_loop_exit_edges`` ) more efficient.  Some functions (e.g.,
+  ``single_exit`` ) can be used only if the lists of exits are
   recorded.
 
 These properties may also be computed/enforced later, using functions

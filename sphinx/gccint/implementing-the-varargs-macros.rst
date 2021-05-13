@@ -62,7 +62,7 @@ has to embody these conventions.  The easiest way to categorize the
 specified data type is to use ``__builtin_classify_type`` together
 with ``sizeof`` and ``__alignof__``.
 
-``__builtin_classify_type`` ignores the value of :samp:`{object}` ,
+``__builtin_classify_type`` ignores the value of :samp:`{object}`,
 considering only its data type.  It returns an integer describing what
 kind of type that is-integer, floating, pointer, structure, and so on.
 
@@ -96,7 +96,7 @@ These machine description macros help implement varargs:
 
   The target hook should do two things: first, push onto the stack all the
   argument registers *not* used for the named arguments, and second,
-  store the size of the data thus pushed into the ``int``-valued
+  store the size of the data thus pushed into the ``int`` -valued
   variable pointed to by :samp:`{pretend_args_size}`.  The value that you
   store here will serve as additional offset for setting up the stack
   frame.

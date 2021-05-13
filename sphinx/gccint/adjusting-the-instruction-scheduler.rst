@@ -195,8 +195,8 @@ them: try the first ones in this list first.
   This code also could be used for superscalar RISC
   processors.  Let us consider a superscalar RISC processor
   with 3 pipelines.  Some insns can be executed in pipelines :samp:`{A}` or
-  :samp:`{B}` , some insns can be executed only in pipelines :samp:`{B}` or
-  :samp:`{C}` , and one insn can be executed in pipeline :samp:`{B}`.  The
+  :samp:`{B}`, some insns can be executed only in pipelines :samp:`{B}` or
+  :samp:`{C}`, and one insn can be executed in pipeline :samp:`{B}`.  The
   processor may issue the 1st insn into :samp:`{A}` and the 2nd one into
   :samp:`{B}`.  In this case, the 3rd insn will wait for freeing :samp:`{B}`
   until the next cycle.  If the scheduler issues the 3rd insn the first,
@@ -212,7 +212,7 @@ them: try the first ones in this list first.
 
   This hook controls what insns from the ready insn queue will be
   considered for the multipass insn scheduling.  If the hook returns
-  zero for :samp:`{insn}` , the insn will be considered in multipass scheduling.
+  zero for :samp:`{insn}`, the insn will be considered in multipass scheduling.
   Positive return values will remove :samp:`{insn}` from consideration on
   the current round of multipass scheduling.
   Negative return values will remove :samp:`{insn}` from consideration for given

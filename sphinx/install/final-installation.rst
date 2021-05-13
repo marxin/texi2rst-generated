@@ -18,9 +18,9 @@ instance).
 That step completes the installation of GCC; user level binaries can
 be found in :samp:`{prefix}` /bin where :samp:`{prefix}` is the value
 you specified with the :option:`--prefix` to configure (or
-/usr/local by default).  (If you specified :option:`--bindir` ,
+/usr/local by default).  (If you specified :option:`--bindir`,
 that directory will be used instead; otherwise, if you specified
-:option:`--exec-prefix` , :samp:`{exec-prefix}` /bin will be used.)
+:option:`--exec-prefix`, :samp:`{exec-prefix}` /bin will be used.)
 Headers for the C++ library are installed in
 :samp:`{prefix}` /include; libraries in :samp:`{libdir}`
 (normally :samp:`{prefix}` /lib); internal parts of the compiler in
@@ -47,7 +47,7 @@ a directory relative to which all installation paths will be
 interpreted.  Note that the directory specified by ``DESTDIR``
 need not exist yet; it will be created if necessary.
 
-There is a subtle point with tooldirs and ``DESTDIR``:
+There is a subtle point with tooldirs and ``DESTDIR`` :
 If you relocate a cross-compiler installation with
 e.g. :samp:`DESTDIR={rootdir}`, then the directory
 :samp:`{rootdir}` / :samp:`{exec-prefix}` / :samp:`{target-alias}` /bin will

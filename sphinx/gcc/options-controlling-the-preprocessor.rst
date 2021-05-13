@@ -57,7 +57,7 @@ Warning Options.
 
 .. option:: -U name, -U
 
-  Cancel any previous definition of :samp:`{name}` , either built in or
+  Cancel any previous definition of :samp:`{name}`, either built in or
   provided with a :option:`-D` option.
 
 .. option:: -include file, -include
@@ -74,7 +74,7 @@ Warning Options.
 
 .. option:: -imacros file, -imacros
 
-  Exactly like :option:`-include` , except that any output produced by
+  Exactly like :option:`-include`, except that any output produced by
   scanning :samp:`{file}` is thrown away.  Macros it defines remain defined.
   This allows you to acquire all the macros from a header without also
   processing its declarations.
@@ -117,11 +117,11 @@ Warning Options.
   This option does not suppress the preprocessor's debug output, such as
   :option:`-dM`.  To avoid mixing such debug output with the dependency
   rules you should explicitly specify the dependency output file with
-  :option:`-MF` , or use an environment variable like
+  :option:`-MF`, or use an environment variable like
   :envvar:`DEPENDENCIES_OUTPUT` (see :ref:`environment-variables`).  Debug output
   is still sent to the regular output stream as normal.
 
-  Passing :option:`-M` to the driver implies :option:`-E` , and suppresses
+  Passing :option:`-M` to the driver implies :option:`-E`, and suppresses
   warnings with an implicit :option:`-w`.
 
 .. option:: -MM
@@ -136,12 +136,12 @@ Warning Options.
 
 .. option:: -MF file, -MF
 
-  When used with :option:`-M` or :option:`-MM` , specifies a
+  When used with :option:`-M` or :option:`-MM`, specifies a
   file to write the dependencies to.  If no :option:`-MF` switch is given
   the preprocessor sends the rules to the same place it would send
   preprocessed output.
 
-  When used with the driver options :option:`-MD` or :option:`-MMD` ,
+  When used with the driver options :option:`-MD` or :option:`-MMD`,
   :option:`-MF` overrides the default dependency output file.
 
   If :samp:`{file}` is -, then the dependencies are written to stdout.
@@ -186,7 +186,7 @@ Warning Options.
 
   An :option:`-MT` option sets the target to be exactly the string you
   specify.  If you want multiple targets, you can specify them as a single
-  argument to :option:`-MT` , or use multiple :option:`-MT` options.
+  argument to :option:`-MT`, or use multiple :option:`-MT` options.
 
   For example, -MT '$(objpfx)foo.o' might give
 
@@ -196,7 +196,7 @@ Warning Options.
 
 .. option:: -MQ target, -MQ
 
-  Same as :option:`-MT` , but it quotes any characters which are special to
+  Same as :option:`-MT`, but it quotes any characters which are special to
   Make.  -MQ '$(objpfx)foo.o' gives
 
   .. code-block:: c++
@@ -208,16 +208,16 @@ Warning Options.
 
 .. option:: -MD
 
-  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}` , except that
+  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}`, except that
   :option:`-E` is not implied.  The driver determines :samp:`{file}` based on
   whether an :option:`-o` option is given.  If it is, the driver uses its
   argument but with a suffix of .d, otherwise it takes the name
   of the input file, removes any directory components and suffix, and
   applies a .d suffix.
 
-  If :option:`-MD` is used in conjunction with :option:`-E` , any
+  If :option:`-MD` is used in conjunction with :option:`-E`, any
   :option:`-o` switch is understood to specify the dependency output file
-  (see :ref:`-MF <dashmf>`), but if used without :option:`-E` , each :option:`-o`
+  (see :ref:`-MF <dashmf>`), but if used without :option:`-E`, each :option:`-o`
   is understood to specify a target object file.
 
   Since :option:`-E` is not implied, :option:`-MD` can be used to generate
@@ -250,18 +250,18 @@ Warning Options.
   The option's behavior depends on the :option:`-E` and :option:`-fpreprocessed`
   options.
 
-  With :option:`-E` , preprocessing is limited to the handling of directives
+  With :option:`-E`, preprocessing is limited to the handling of directives
   such as ``#define``, ``#ifdef``, and ``#error``.  Other
   preprocessor operations, such as macro expansion and trigraph
   conversion are not performed.  In addition, the :option:`-dD` option is
   implicitly enabled.
 
-  With :option:`-fpreprocessed` , predefinition of command line and most
+  With :option:`-fpreprocessed`, predefinition of command line and most
   builtin macros is disabled.  Macros such as ``__LINE__``, which are
   contextually dependent, are handled normally.  This enables compilation of
   files previously preprocessed with ``-E -fdirectives-only``.
 
-  With both :option:`-E` and :option:`-fpreprocessed` , the rules for
+  With both :option:`-E` and :option:`-fpreprocessed`, the rules for
   :option:`-fpreprocessed` take precedence.  This enables full preprocessing of
   files previously preprocessed with ``-E -fdirectives-only``.
 
@@ -336,7 +336,7 @@ Warning Options.
   Set the wide execution character set, used for wide string and
   character constants.  The default is UTF-32 or UTF-16, whichever
   corresponds to the width of ``wchar_t``.  As with
-  :option:`-fexec-charset` , :samp:`{charset}` can be any encoding supported
+  :option:`-fexec-charset`, :samp:`{charset}` can be any encoding supported
   by the system's ``iconv`` library routine; however, you will have
   problems with encodings that do not fit exactly in ``wchar_t``.
 
@@ -419,7 +419,7 @@ Warning Options.
 .. option:: -CC
 
   Do not discard comments, including during macro expansion.  This is
-  like :option:`-C` , except that comments contained within macros are
+  like :option:`-C`, except that comments contained within macros are
   also passed through to the output file where the macro is expanded.
 
   In addition to the side effects of the :option:`-C` option, the
@@ -520,7 +520,7 @@ Warning Options.
 
   .. option:: -dN
 
-    Like :option:`-dD` , but emit only the macro names, not their expansions.
+    Like :option:`-dD`, but emit only the macro names, not their expansions.
 
   .. option:: -dI
 
@@ -538,11 +538,11 @@ Warning Options.
 .. option:: -fdebug-cpp
 
   This option is only useful for debugging GCC.  When used from CPP or with
-  :option:`-E` , it dumps debugging information about location maps.  Every
+  :option:`-E`, it dumps debugging information about location maps.  Every
   token in the output is preceded by the dump of the map its location
   belongs to.
 
-  When used from GCC without :option:`-E` , this option has no effect.
+  When used from GCC without :option:`-E`, this option has no effect.
 
 .. option:: -Wp,option, -Wp
 

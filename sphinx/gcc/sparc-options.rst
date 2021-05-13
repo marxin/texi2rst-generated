@@ -20,7 +20,7 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mflat, -mno-flat
 
-  With :option:`-mflat` , the compiler does not generate save/restore instructions
+  With :option:`-mflat`, the compiler does not generate save/restore instructions
   and uses a 'flat' or single register window model.  This model is compatible
   with the regular register window model.  The local registers and the input
   registers (0-5) are still treated as 'call-saved' registers and are
@@ -72,7 +72,7 @@ These :samp:`-m` options are supported on the SPARC:
 
   Assume that doubles have 8-byte alignment.  This is the default.
 
-  With :option:`-munaligned-doubles` , GCC assumes that doubles have 8-byte
+  With :option:`-munaligned-doubles`, GCC assumes that doubles have 8-byte
   alignment only if they are contained in another type, or if they have an
   absolute address.  Otherwise, it assumes they have 4-byte alignment.
   Specifying this option avoids some rare compatibility problems with code
@@ -87,7 +87,7 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mfaster-structs, -mno-faster-structs
 
-  With :option:`-mfaster-structs` , the compiler assumes that structures
+  With :option:`-mfaster-structs`, the compiler assumes that structures
   should have 8-byte alignment.  This enables the use of pairs of
   ``ldd`` and ``std`` instructions for copies in structure
   assignment, in place of twice as many ``ld`` and ``st`` pairs.
@@ -98,7 +98,7 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mstd-struct-return, -mno-std-struct-return
 
-  With :option:`-mstd-struct-return` , the compiler generates checking code
+  With :option:`-mstd-struct-return`, the compiler generates checking code
   in functions returning structures or unions to detect size mismatches
   between the two sides of function calls, as per the 32-bit ABI.
 
@@ -149,57 +149,57 @@ These :samp:`-m` options are supported on the SPARC:
     niagara7, m8
 
     By default (unless configured otherwise), GCC generates code for the V7
-  variant of the SPARC architecture.  With :option:`-mcpu=cypress` , the compiler
+  variant of the SPARC architecture.  With :option:`-mcpu=cypress`, the compiler
   additionally optimizes it for the Cypress CY7C602 chip, as used in the
   SPARCStation/SPARCServer 3xx series.  This is also appropriate for the older
   SPARCStation 1, 2, IPX etc.
 
-  With :option:`-mcpu=v8` , GCC generates code for the V8 variant of the SPARC
+  With :option:`-mcpu=v8`, GCC generates code for the V8 variant of the SPARC
   architecture.  The only difference from V7 code is that the compiler emits
   the integer multiply and integer divide instructions which exist in SPARC-V8
-  but not in SPARC-V7.  With :option:`-mcpu=supersparc` , the compiler additionally
+  but not in SPARC-V7.  With :option:`-mcpu=supersparc`, the compiler additionally
   optimizes it for the SuperSPARC chip, as used in the SPARCStation 10, 1000 and
   2000 series.
 
-  With :option:`-mcpu=sparclite` , GCC generates code for the SPARClite variant of
+  With :option:`-mcpu=sparclite`, GCC generates code for the SPARClite variant of
   the SPARC architecture.  This adds the integer multiply, integer divide step
-  and scan (``ffs``) instructions which exist in SPARClite but not in SPARC-V7.
-  With :option:`-mcpu=f930` , the compiler additionally optimizes it for the
+  and scan ( ``ffs`` ) instructions which exist in SPARClite but not in SPARC-V7.
+  With :option:`-mcpu=f930`, the compiler additionally optimizes it for the
   Fujitsu MB86930 chip, which is the original SPARClite, with no FPU.  With
-  :option:`-mcpu=f934` , the compiler additionally optimizes it for the Fujitsu
+  :option:`-mcpu=f934`, the compiler additionally optimizes it for the Fujitsu
   MB86934 chip, which is the more recent SPARClite with FPU.
 
-  With :option:`-mcpu=sparclet` , GCC generates code for the SPARClet variant of
+  With :option:`-mcpu=sparclet`, GCC generates code for the SPARClet variant of
   the SPARC architecture.  This adds the integer multiply, multiply/accumulate,
-  integer divide step and scan (``ffs``) instructions which exist in SPARClet
-  but not in SPARC-V7.  With :option:`-mcpu=tsc701` , the compiler additionally
+  integer divide step and scan ( ``ffs`` ) instructions which exist in SPARClet
+  but not in SPARC-V7.  With :option:`-mcpu=tsc701`, the compiler additionally
   optimizes it for the TEMIC SPARClet chip.
 
-  With :option:`-mcpu=v9` , GCC generates code for the V9 variant of the SPARC
+  With :option:`-mcpu=v9`, GCC generates code for the V9 variant of the SPARC
   architecture.  This adds 64-bit integer and floating-point move instructions,
   3 additional floating-point condition code registers and conditional move
-  instructions.  With :option:`-mcpu=ultrasparc` , the compiler additionally
+  instructions.  With :option:`-mcpu=ultrasparc`, the compiler additionally
   optimizes it for the Sun UltraSPARC I/II/IIi chips.  With
-  :option:`-mcpu=ultrasparc3` , the compiler additionally optimizes it for the
+  :option:`-mcpu=ultrasparc3`, the compiler additionally optimizes it for the
   Sun UltraSPARC III/III+/IIIi/IIIi+/IV/IV+ chips.  With
-  :option:`-mcpu=niagara` , the compiler additionally optimizes it for
-  Sun UltraSPARC T1 chips.  With :option:`-mcpu=niagara2` , the compiler
+  :option:`-mcpu=niagara`, the compiler additionally optimizes it for
+  Sun UltraSPARC T1 chips.  With :option:`-mcpu=niagara2`, the compiler
   additionally optimizes it for Sun UltraSPARC T2 chips. With
-  :option:`-mcpu=niagara3` , the compiler additionally optimizes it for Sun
-  UltraSPARC T3 chips.  With :option:`-mcpu=niagara4` , the compiler
+  :option:`-mcpu=niagara3`, the compiler additionally optimizes it for Sun
+  UltraSPARC T3 chips.  With :option:`-mcpu=niagara4`, the compiler
   additionally optimizes it for Sun UltraSPARC T4 chips.  With
-  :option:`-mcpu=niagara7` , the compiler additionally optimizes it for
-  Oracle SPARC M7 chips.  With :option:`-mcpu=m8` , the compiler
+  :option:`-mcpu=niagara7`, the compiler additionally optimizes it for
+  Oracle SPARC M7 chips.  With :option:`-mcpu=m8`, the compiler
   additionally optimizes it for Oracle M8 chips.
 
 .. option:: -mtune=cpu_type
 
   Set the instruction scheduling parameters for machine type
-  :samp:`{cpu_type}` , but do not set the instruction set or register set that the
+  :samp:`{cpu_type}`, but do not set the instruction set or register set that the
   option :option:`-mcpu`:samp:`={cpu_type}` does.
 
   The same values for :option:`-mcpu`:samp:`={cpu_type}` can be used for
-  :option:`-mtune`:samp:`={cpu_type}` , but the only useful values are those
+  :option:`-mtune`:samp:`={cpu_type}`, but the only useful values are those
   that select a particular CPU implementation.  Those are
   :samp:`cypress`, :samp:`supersparc`, :samp:`hypersparc`, :samp:`leon`,
   :samp:`leon3`, :samp:`leon3v7`, :samp:`f930`, :samp:`f934`,
@@ -210,19 +210,19 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mv8plus, -mno-v8plus
 
-  With :option:`-mv8plus` , GCC generates code for the SPARC-V8+ ABI.  The
+  With :option:`-mv8plus`, GCC generates code for the SPARC-V8+ ABI.  The
   difference from the V8 ABI is that the global and out registers are
   considered 64 bits wide.  This is enabled by default on Solaris in 32-bit
   mode for all SPARC-V9 processors.
 
 .. option:: -mvis, -mno-vis
 
-  With :option:`-mvis` , GCC generates code that takes advantage of the UltraSPARC
+  With :option:`-mvis`, GCC generates code that takes advantage of the UltraSPARC
   Visual Instruction Set extensions.  The default is :option:`-mno-vis`.
 
 .. option:: -mvis2, -mno-vis2
 
-  With :option:`-mvis2` , GCC generates code that takes advantage of
+  With :option:`-mvis2`, GCC generates code that takes advantage of
   version 2.0 of the UltraSPARC Visual Instruction Set extensions.  The
   default is :option:`-mvis2` when targeting a cpu that supports such
   instructions, such as UltraSPARC-III and later.  Setting :option:`-mvis2`
@@ -230,7 +230,7 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mvis3, -mno-vis3
 
-  With :option:`-mvis3` , GCC generates code that takes advantage of
+  With :option:`-mvis3`, GCC generates code that takes advantage of
   version 3.0 of the UltraSPARC Visual Instruction Set extensions.  The
   default is :option:`-mvis3` when targeting a cpu that supports such
   instructions, such as niagara-3 and later.  Setting :option:`-mvis3`
@@ -238,53 +238,53 @@ These :samp:`-m` options are supported on the SPARC:
 
 .. option:: -mvis4, -mno-vis4
 
-  With :option:`-mvis4` , GCC generates code that takes advantage of
+  With :option:`-mvis4`, GCC generates code that takes advantage of
   version 4.0 of the UltraSPARC Visual Instruction Set extensions.  The
   default is :option:`-mvis4` when targeting a cpu that supports such
   instructions, such as niagara-7 and later.  Setting :option:`-mvis4`
-  also sets :option:`-mvis3` , :option:`-mvis2` and :option:`-mvis`.
+  also sets :option:`-mvis3`, :option:`-mvis2` and :option:`-mvis`.
 
 .. option:: -mvis4b, -mno-vis4b
 
-  With :option:`-mvis4b` , GCC generates code that takes advantage of
+  With :option:`-mvis4b`, GCC generates code that takes advantage of
   version 4.0 of the UltraSPARC Visual Instruction Set extensions, plus
   the additional VIS instructions introduced in the Oracle SPARC
   Architecture 2017.  The default is :option:`-mvis4b` when targeting a
   cpu that supports such instructions, such as m8 and later.  Setting
-  :option:`-mvis4b` also sets :option:`-mvis4` , :option:`-mvis3` ,
+  :option:`-mvis4b` also sets :option:`-mvis4`, :option:`-mvis3`,
   :option:`-mvis2` and :option:`-mvis`.
 
 .. option:: -mcbcond, -mno-cbcond
 
-  With :option:`-mcbcond` , GCC generates code that takes advantage of the UltraSPARC
+  With :option:`-mcbcond`, GCC generates code that takes advantage of the UltraSPARC
   Compare-and-Branch-on-Condition instructions.  The default is :option:`-mcbcond`
   when targeting a CPU that supports such instructions, such as Niagara-4 and
   later.
 
 .. option:: -mfmaf, -mno-fmaf
 
-  With :option:`-mfmaf` , GCC generates code that takes advantage of the UltraSPARC
+  With :option:`-mfmaf`, GCC generates code that takes advantage of the UltraSPARC
   Fused Multiply-Add Floating-point instructions.  The default is :option:`-mfmaf`
   when targeting a CPU that supports such instructions, such as Niagara-3 and
   later.
 
 .. option:: -mfsmuld, -mno-fsmuld
 
-  With :option:`-mfsmuld` , GCC generates code that takes advantage of the
+  With :option:`-mfsmuld`, GCC generates code that takes advantage of the
   Floating-point Multiply Single to Double (FsMULd) instruction.  The default is
   :option:`-mfsmuld` when targeting a CPU supporting the architecture versions V8
   or V9 with FPU except :option:`-mcpu=leon`.
 
 .. option:: -mpopc, -mno-popc
 
-  With :option:`-mpopc` , GCC generates code that takes advantage of the UltraSPARC
+  With :option:`-mpopc`, GCC generates code that takes advantage of the UltraSPARC
   Population Count instruction.  The default is :option:`-mpopc`
   when targeting a CPU that supports such an instruction, such as Niagara-2 and
   later.
 
 .. option:: -msubxc, -mno-subxc
 
-  With :option:`-msubxc` , GCC generates code that takes advantage of the UltraSPARC
+  With :option:`-msubxc`, GCC generates code that takes advantage of the UltraSPARC
   Subtract-Extended-with-Carry instruction.  The default is :option:`-msubxc`
   when targeting a CPU that supports such an instruction, such as Niagara-7 and
   later.
@@ -371,7 +371,7 @@ on SPARC-V9 processors in 64-bit environments:
 
 .. option:: -mstack-bias, -mno-stack-bias
 
-  With :option:`-mstack-bias` , GCC assumes that the stack pointer, and
+  With :option:`-mstack-bias`, GCC assumes that the stack pointer, and
   frame pointer if present, are offset by -2047 which must be added back
   when making stack frame references.  This is the default in 64-bit mode.
   Otherwise, assume no such offset is present.

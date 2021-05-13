@@ -68,15 +68,15 @@ debugging output.  Currently, the allowable values are ``DBX_DEBUG``,
 ``DWARF2_DEBUG``, ``XCOFF_DEBUG``, ``VMS_DEBUG``,
 and ``VMS_AND_DWARF2_DEBUG``.
 
-When the user specifies :option:`-ggdb` , GCC normally also uses the
+When the user specifies :option:`-ggdb`, GCC normally also uses the
 value of this macro to select the debugging output format, but with two
 exceptions.  If ``DWARF2_DEBUGGING_INFO`` is defined, GCC uses the
 value ``DWARF2_DEBUG``.  Otherwise, if ``DBX_DEBUGGING_INFO`` is
 defined, GCC uses ``DBX_DEBUG``.
 
 The value of this macro only affects the default debugging output; the
-user can always get a specific type of output by using :option:`-gstabs` ,
-:option:`-gdwarf-2` , :option:`-gxcoff` , or :option:`-gvms`.
+user can always get a specific type of output by using :option:`-gstabs`,
+:option:`-gdwarf-2`, :option:`-gxcoff`, or :option:`-gvms`.
 
 .. _dbx-options:
 
@@ -196,14 +196,14 @@ code.
 .. index:: DBX_BLOCKS_FUNCTION_RELATIVE
 
 MacroDBX_BLOCKS_FUNCTION_RELATIVEDefine this macro, with value 1, if the value of a symbol describing
-the scope of a block (``N_LBRAC`` or ``N_RBRAC``) should be
+the scope of a block ( ``N_LBRAC`` or ``N_RBRAC`` ) should be
 relative to the start of the enclosing function.  Normally, GCC uses
 an absolute address.
 
 .. index:: DBX_LINES_FUNCTION_RELATIVE
 
 MacroDBX_LINES_FUNCTION_RELATIVEDefine this macro, with value 1, if the value of a symbol indicating
-the current line number (``N_SLINE``) should be relative to the
+the current line number ( ``N_SLINE`` ) should be relative to the
 start of the enclosing function.  Normally, GCC uses an absolute address.
 
 .. index:: DBX_USE_BINCL
@@ -260,7 +260,7 @@ This describes file names in DBX format.
 .. index:: DBX_OUTPUT_MAIN_SOURCE_FILENAME
 
 MacroDBX_OUTPUT_MAIN_SOURCE_FILENAME(:samp:`{stream}`,:samp:`{name}`)A C statement to output DBX debugging information to the stdio stream
-:samp:`{stream}` , which indicates that file :samp:`{name}` is the main source
+:samp:`{stream}`, which indicates that file :samp:`{name}` is the main source
 file-the file specified as the input file for compilation.
 This macro is called only once, at the beginning of compilation.
 
@@ -400,7 +400,7 @@ targets.
 .. index:: ASM_OUTPUT_DWARF_DELTA
 
 MacroASM_OUTPUT_DWARF_DELTA(:samp:`{stream}`,:samp:`{size}`,:samp:`{label1}`,:samp:`{label2}`)A C statement to issue assembly directives that create a difference
-:samp:`{lab1}` minus :samp:`{lab2}` , using an integer of the given :samp:`{size}`.
+:samp:`{lab1}` minus :samp:`{lab2}`, using an integer of the given :samp:`{size}`.
 
 .. index:: ASM_OUTPUT_DWARF_VMS_DELTA
 
@@ -411,14 +411,14 @@ slots on IA64 VMS, using an integer of the given size.
 .. index:: ASM_OUTPUT_DWARF_OFFSET
 
 MacroASM_OUTPUT_DWARF_OFFSET(:samp:`{stream}`,:samp:`{size}`,:samp:`{label}`,:samp:`{offset}`,:samp:`{section}`)A C statement to issue assembly directives that create a
-section-relative reference to the given :samp:`{label}` plus :samp:`{offset}` , using
+section-relative reference to the given :samp:`{label}` plus :samp:`{offset}`, using
 an integer of the given :samp:`{size}`.  The label is known to be defined in the
 given :samp:`{section}`.
 
 .. index:: ASM_OUTPUT_DWARF_PCREL
 
 MacroASM_OUTPUT_DWARF_PCREL(:samp:`{stream}`,:samp:`{size}`,:samp:`{label}`)A C statement to issue assembly directives that create a self-relative
-reference to the given :samp:`{label}` , using an integer of the given :samp:`{size}`.
+reference to the given :samp:`{label}`, using an integer of the given :samp:`{size}`.
 
 .. index:: ASM_OUTPUT_DWARF_DATAREL
 

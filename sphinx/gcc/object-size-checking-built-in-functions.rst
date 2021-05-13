@@ -156,7 +156,7 @@ the checking function is called with :samp:`{os}` argument set to
 In addition to this, there are checking built-in functions
 ``__builtin___printf_chk``, ``__builtin___vprintf_chk``,
 ``__builtin___fprintf_chk`` and ``__builtin___vfprintf_chk``.
-These have just one additional argument, :samp:`{flag}` , right before
+These have just one additional argument, :samp:`{flag}`, right before
 format string :samp:`{fmt}`.  If the compiler is able to optimize them to
 ``fputc`` etc. functions, it does, otherwise the checking function
 is called and the :samp:`{flag}` argument passed to it.

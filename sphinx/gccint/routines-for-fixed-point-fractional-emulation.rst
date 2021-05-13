@@ -17,22 +17,22 @@ For ease of comprehension ``fract`` is an alias for the
 ``sat`` an alias for ``_Sat``.
 
 For illustrative purposes, in this section the fixed-point fractional type
-``short fract`` is assumed to correspond to machine mode ``QQmode``;
-``unsigned short fract`` to ``UQQmode``;
-``fract`` to ``HQmode``;
-``unsigned fract`` to ``UHQmode``;
-``long fract`` to ``SQmode``;
-``unsigned long fract`` to ``USQmode``;
-``long long fract`` to ``DQmode``;
+``short fract`` is assumed to correspond to machine mode ``QQmode`` ;
+``unsigned short fract`` to ``UQQmode`` ;
+``fract`` to ``HQmode`` ;
+``unsigned fract`` to ``UHQmode`` ;
+``long fract`` to ``SQmode`` ;
+``unsigned long fract`` to ``USQmode`` ;
+``long long fract`` to ``DQmode`` ;
 and ``unsigned long long fract`` to ``UDQmode``.
 Similarly the fixed-point accumulator type
-``short accum`` corresponds to ``HAmode``;
-``unsigned short accum`` to ``UHAmode``;
-``accum`` to ``SAmode``;
-``unsigned accum`` to ``USAmode``;
-``long accum`` to ``DAmode``;
-``unsigned long accum`` to ``UDAmode``;
-``long long accum`` to ``TAmode``;
+``short accum`` corresponds to ``HAmode`` ;
+``unsigned short accum`` to ``UHAmode`` ;
+``accum`` to ``SAmode`` ;
+``unsigned accum`` to ``USAmode`` ;
+``long accum`` to ``DAmode`` ;
+``unsigned long accum`` to ``UDAmode`` ;
+``long long accum`` to ``TAmode`` ;
 and ``unsigned long long accum`` to ``UTAmode``.
 
 Arithmetic functions
@@ -149,7 +149,7 @@ result using either signed or unsigned comparison.
 
   These functions perform a signed or unsigned comparison of :samp:`{a}` and
   :samp:`{b}` (depending on the selected machine mode).  If :samp:`{a}` is less
-  than :samp:`{b}` , they return 0; if :samp:`{a}` is greater than :samp:`{b}` , they
+  than :samp:`{b}`, they return 0; if :samp:`{a}` is greater than :samp:`{b}`, they
   return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
 
 Conversion functions

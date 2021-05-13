@@ -53,8 +53,8 @@ complex insn into several simpler insns.  It looks like this:
 :samp:`{condition}` is the final condition to be tested, as in a
 ``define_insn``.  When an insn matching :samp:`{insn-pattern}` and
 satisfying :samp:`{condition}` is found, it is replaced in the insn list
-with the insns given by :samp:`{new-insn-pattern-1}` ,
-:samp:`{new-insn-pattern-2}` , etc.
+with the insns given by :samp:`{new-insn-pattern-1}`,
+:samp:`{new-insn-pattern-2}`, etc.
 
 The :samp:`{preparation-statements}` are similar to those statements that
 are specified for ``define_expand`` (see :ref:`expander-definitions`)
@@ -84,7 +84,7 @@ as a statement.
   it was given, and the input insn will not be split.
 
 If the preparation falls through (invokes neither ``DONE`` nor
-``FAIL``), then the ``define_split`` uses the replacement
+``FAIL`` ), then the ``define_split`` uses the replacement
 template.
 
 Patterns are matched against :samp:`{insn-pattern}` in two different
@@ -226,7 +226,7 @@ this:
     "preparation-statements"
     [insn-attributes])
 
-:samp:`{insn-pattern}` , :samp:`{condition}` , :samp:`{output-template}` , and
+:samp:`{insn-pattern}`, :samp:`{condition}`, :samp:`{output-template}`, and
 :samp:`{insn-attributes}` are used as in ``define_insn``.  The
 :samp:`{new-insn-pattern}` vector and the :samp:`{preparation-statements}` are used as
 in a ``define_split``.  The :samp:`{split-condition}` is also used as in
@@ -267,13 +267,13 @@ with a ``define_insn_and_split``, but it requires a
 :samp:`{new-insn-pattern-1}` that repeats most of the original :samp:`{insn-pattern}`.
 There is also the complication that an implicit ``parallel`` in
 :samp:`{insn-pattern}` must become an explicit ``parallel`` in
-:samp:`{new-insn-pattern-1}` , which is easy to overlook.
+:samp:`{new-insn-pattern-1}`, which is easy to overlook.
 A simpler alternative is to use ``define_insn_and_rewrite``, which
 is a form of ``define_insn_and_split`` that automatically generates
 :samp:`{new-insn-pattern-1}` by replacing each ``match_operand``
 in :samp:`{insn-pattern}` with a corresponding ``match_dup``, and each
 ``match_operator`` in the pattern with a corresponding ``match_op_dup``.
-The arguments are otherwise identical to ``define_insn_and_split``:
+The arguments are otherwise identical to ``define_insn_and_split`` :
 
 .. code-block:: c++
 
@@ -285,7 +285,7 @@ The arguments are otherwise identical to ``define_insn_and_split``:
     "preparation-statements"
     [insn-attributes])
 
-The ``match_dup``s and ``match_op_dup``s in the new
+The ``match_dup`` s and ``match_op_dup`` s in the new
 instruction pattern use any new operand values that the
 :samp:`{preparation-statements}` store in the ``operands`` array,
 as for a normal ``define_insn_and_split``.  :samp:`{preparation-statements}`

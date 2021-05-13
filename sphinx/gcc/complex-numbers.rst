@@ -18,7 +18,7 @@ keyword ``__complex__`` is also supported.
 For example, :samp:`_Complex double x;` declares ``x`` as a
 variable whose real part and imaginary part are both of type
 ``double``.  :samp:`_Complex short int y;` declares ``y`` to
-have real and imaginary parts of type ``short int``; this is not
+have real and imaginary parts of type ``short int`` ; this is not
 likely to be useful, but it shows that the set of complex types is
 complete.
 
@@ -40,7 +40,7 @@ GNU extension.  The :samp:`j` suffix still has the GNU meaning.
 
 .. index:: __imag__ keyword
 
-To extract the real part of a complex-valued expression :samp:`{exp}` , write
+To extract the real part of a complex-valued expression :samp:`{exp}`, write
 ``__real__ exp``.  Likewise, use ``__imag__`` to
 extract the imaginary part.  This is a GNU extension; for values of
 floating type, you should use the ISO C99 functions ``crealf``,

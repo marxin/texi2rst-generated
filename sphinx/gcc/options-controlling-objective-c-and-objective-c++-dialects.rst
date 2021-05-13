@@ -58,8 +58,8 @@ and Objective-C++ programs:
 
 .. option:: -fno-nil-receivers, -fnil-receivers
 
-  Assume that all Objective-C message dispatches (``[receiver
-  message:arg]``) in this translation unit ensure that the receiver is
+  Assume that all Objective-C message dispatches ( ``[receiver
+  message:arg]`` ) in this translation unit ensure that the receiver is
   not ``nil``.  This allows for more efficient entry points in the
   runtime to be used.  This option is only available in conjunction with
   the NeXT runtime and ABI version 0 or 1.
@@ -226,7 +226,7 @@ and Objective-C++ programs:
     Objective-C and Objective-C++ only
 
   Warn if a class interface lacks a superclass. Most classes will inherit
-  from ``NSObject`` (or ``Object``) for example.  When declaring
+  from ``NSObject`` (or ``Object`` ) for example.  When declaring
   classes intended to be root classes, the warning can be suppressed by
   marking their interfaces with ``__attribute__((objc_root_class))``.
 

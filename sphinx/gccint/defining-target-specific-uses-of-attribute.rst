@@ -186,7 +186,7 @@ on this implementation detail.
 .. function:: bool TARGET_CAN_INLINE_P(tree caller,tree callee)
 
   This target hook returns ``false`` if the :samp:`{caller}` function
-  cannot inline :samp:`{callee}` , based on target specific information.  By
+  cannot inline :samp:`{callee}`, based on target specific information.  By
   default, inlining is not allowed if the callee function has function
   specific target options and the caller does not use the same options.
 

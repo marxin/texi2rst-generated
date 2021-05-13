@@ -87,7 +87,7 @@ to 1.  Most RISC machines have this property and most CISC machines do not.
 .. index:: LOAD_EXTEND_OP
 
 MacroLOAD_EXTEND_OP(:samp:`{mem_mode}`)Define this macro to be a C expression indicating when insns that read
-memory in :samp:`{mem_mode}` , an integral mode narrower than a word, set the
+memory in :samp:`{mem_mode}`, an integral mode narrower than a word, set the
 bits outside of :samp:`{mem_mode}` to be either the sign-extension or the
 zero-extension of the data read.  Return ``SIGN_EXTEND`` for values
 of :samp:`{mem_mode}` for which the
@@ -100,7 +100,7 @@ value in this case.  Do not define this macro if it would always return
 ``UNKNOWN``.  On machines where this macro is defined, you will normally
 define it as the constant ``SIGN_EXTEND`` or ``ZERO_EXTEND``.
 
-You may return a non-``UNKNOWN`` value even if for some hard registers
+You may return a non- ``UNKNOWN`` value even if for some hard registers
 the sign extension is not performed, if for the ``REGNO_REG_CLASS``
 of these hard registers ``TARGET_CAN_CHANGE_MODE_CLASS`` returns false
 when the :samp:`{from}` mode is :samp:`{mem_mode}` and the :samp:`{to}` mode is any
@@ -172,7 +172,7 @@ You need not define this macro if it would always have the value of zero.
   On many machines, the shift patterns will apply a mask :samp:`{m}` to the
   shift count, meaning that a fixed-width shift of :samp:`{x}` by :samp:`{y}` is
   equivalent to an arbitrary-width shift of :samp:`{x}` by :samp:`{y & m}`.  If
-  this is true for mode :samp:`{mode}` , the function should return :samp:`{m}` ,
+  this is true for mode :samp:`{mode}`, the function should return :samp:`{m}`,
   otherwise it should return 0.  A return value of 0 indicates that no
   particular behavior is guaranteed.
 
@@ -214,7 +214,7 @@ You need not define this macro if it would always have the value of zero.
   :samp:`{mode}` to :samp:`{rep_mode}` so that :samp:`{rep_mode}` is not the next
   widest integral mode and currently we take advantage of this fact.)
 
-  Similarly to ``LOAD_EXTEND_OP`` you may return a non-``UNKNOWN``
+  Similarly to ``LOAD_EXTEND_OP`` you may return a non- ``UNKNOWN``
   value even if the extension is not performed on certain hard registers
   as long as for the ``REGNO_REG_CLASS`` of these hard registers
   ``TARGET_CAN_CHANGE_MODE_CLASS`` returns false.
@@ -361,7 +361,7 @@ MacroCTZ_DEFINED_VALUE_AT_ZERO(:samp:`{mode}`,:samp:`{value}`)A C expression tha
 for ``clz`` or ``ctz`` with a zero operand.
 A result of ``0`` indicates the value is undefined.
 If the value is defined for only the RTL expression, the macro should
-evaluate to ``1``; if the value applies also to the corresponding optab
+evaluate to ``1`` ; if the value applies also to the corresponding optab
 entry (which is normally the case if it expands directly into
 the corresponding RTL), then the macro should evaluate to ``2``.
 In the cases where the value is defined, :samp:`{value}` should be set to
@@ -417,7 +417,7 @@ files ``__STDC__`` will always expand to 1.
 
 .. function:: const char * TARGET_C_PREINCLUDE(void )
 
-  Define this hook to return the name of a header file to be included at the start of all compilations, as if it had been included with ``#include <file>``.  If this hook returns ``NULL``, or is not defined, or the header is not found, or if the user specifies :option:`-ffreestanding` or :option:`-nostdinc` , no header is included.
+  Define this hook to return the name of a header file to be included at the start of all compilations, as if it had been included with ``#include <file>``.  If this hook returns ``NULL``, or is not defined, or the header is not found, or if the user specifies :option:`-ffreestanding` or :option:`-nostdinc`, no header is included.
 
   This hook can be used together with a header provided by the system C library to implement ISO C requirements for certain macros to be predefined that describe properties of the whole implementation rather than just the compiler.
 
@@ -513,9 +513,9 @@ there is no need to define this macro in that case.
 .. index:: INSN_SETS_ARE_DELAYED
 
 MacroINSN_SETS_ARE_DELAYED(:samp:`{insn}`)Define this macro as a C expression that is nonzero if it is safe for the
-delay slot scheduler to place instructions in the delay slot of :samp:`{insn}` ,
+delay slot scheduler to place instructions in the delay slot of :samp:`{insn}`,
 even if they appear to use a resource set or clobbered in :samp:`{insn}`.
-:samp:`{insn}` is always a ``jump_insn`` or an ``insn``; GCC knows that
+:samp:`{insn}` is always a ``jump_insn`` or an ``insn`` ; GCC knows that
 every ``call_insn`` has this behavior.  On machines where some ``insn``
 or ``jump_insn`` is really a function call and hence has this behavior,
 you should define this macro.
@@ -525,7 +525,7 @@ You need not define this macro if it would always return zero.
 .. index:: INSN_REFERENCES_ARE_DELAYED
 
 MacroINSN_REFERENCES_ARE_DELAYED(:samp:`{insn}`)Define this macro as a C expression that is nonzero if it is safe for the
-delay slot scheduler to place instructions in the delay slot of :samp:`{insn}` ,
+delay slot scheduler to place instructions in the delay slot of :samp:`{insn}`,
 even if they appear to set or clobber a resource referenced in :samp:`{insn}`.
 :samp:`{insn}` is always a ``jump_insn`` or an ``insn``.  On machines where
 some ``insn`` or ``jump_insn`` is really a function call and its operands
@@ -553,7 +553,7 @@ You need not define this macro if it would always evaluate to zero.
   clobber for an asm.  The :samp:`{outputs}` and :samp:`{inputs}` may be inspected
   to avoid clobbering a register that is already used by the asm.
 
-  It may modify the :samp:`{outputs}` , :samp:`{inputs}` , :samp:`{input_modes}` , and
+  It may modify the :samp:`{outputs}`, :samp:`{inputs}`, :samp:`{input_modes}`, and
   :samp:`{constraints}` as necessary for other pre-processing.  In this case the
   return value is a sequence of insns to emit after the asm.  Note that
   changes to :samp:`{inputs}` must be accompanied by the corresponding changes
@@ -589,7 +589,7 @@ for cross-profiling.
 
 MacroMAX_CONDITIONAL_EXECUTEA C expression for the maximum number of instructions to execute via
 conditional execution instructions instead of a branch.  A value of
-``BRANCH_COST``+1 is the default.
+``BRANCH_COST`` +1 is the default.
 
 .. index:: IFCVT_MODIFY_TESTS
 
@@ -663,7 +663,7 @@ to by :samp:`{ce_info}`.
   To create a built-in function, call the function
   ``lang_hooks.builtin_function``
   which is defined by the language front end.  You can use any type nodes set
-  up by ``build_common_tree_nodes``;
+  up by ``build_common_tree_nodes`` ;
   only language front ends that use those two functions will call
   :samp:`TARGET_INIT_BUILTINS`.
 
@@ -708,7 +708,7 @@ to by :samp:`{ce_info}`.
   and return false.
 
   This hook is called after ``TARGET_RESOLVE_OVERLOADED_BUILTIN``.
-  The call was originally to built-in function :samp:`{orig_fndecl}` ,
+  The call was originally to built-in function :samp:`{orig_fndecl}`,
   but after the optional ``TARGET_RESOLVE_OVERLOADED_BUILTIN``
   step is now to built-in function :samp:`{fndecl}`.  :samp:`{loc}` is the
   location of the call and :samp:`{args}` is an array of function arguments,
@@ -795,8 +795,8 @@ The default value is zero.
 
 .. function:: bool TARGET_CAN_USE_DOLOOP_P(const widest_int&iterations,const widest_int&iterations_max,unsigned intloop_depth,bool entered_at_top)
 
-  Return true if it is possible to use low-overhead loops (``doloop_end``
-  and ``doloop_begin``) for a particular loop.  :samp:`{iterations}` gives the
+  Return true if it is possible to use low-overhead loops ( ``doloop_end``
+  and ``doloop_begin`` ) for a particular loop.  :samp:`{iterations}` gives the
   exact number of iterations, or 0 if not known.  :samp:`{iterations_max}` gives
   the maximum number of iterations, or 0 if not known.  :samp:`{loop_depth}` is
   the nesting depth of the loop, with 1 for innermost loops, 2 for loops that
@@ -857,7 +857,7 @@ The default value is zero.
 
 .. function:: int TARGET_UNSPEC_MAY_TRAP_P(const_rtx x,unsigned flags)
 
-  This target hook returns nonzero if :samp:`{x}` , an ``unspec`` or
+  This target hook returns nonzero if :samp:`{x}`, an ``unspec`` or
   ``unspec_volatile`` operation, might cause a trap.  Targets can use
   this hook to enhance precision of analysis for ``unspec`` and
   ``unspec_volatile`` operations.  You may call ``may_trap_p_1``
@@ -867,7 +867,7 @@ The default value is zero.
 .. function:: void TARGET_SET_CURRENT_FUNCTION(tree decl)
 
   The compiler invokes this hook whenever it changes its current function
-  context (``cfun``).  You can define this function if
+  context ( ``cfun`` ).  You can define this function if
   the back end needs to perform any initialization or reset actions on a
   per-function basis.  For example, it may be used to implement function
   attributes that affect register usage or code generation patterns.
@@ -997,7 +997,7 @@ MacroboolTARGET_USE_LOCAL_THUNK_ALIAS_P(tree:samp:`{fndecl}`)This target macro r
 for a virtual function :samp:`{fndecl}` when constructing thunks,
 ``false`` otherwise.  By default, the macro returns ``true`` for all
 functions, if a target supports aliases (i.e. defines
-``ASM_OUTPUT_DEF``), ``false`` otherwise,
+``ASM_OUTPUT_DEF`` ), ``false`` otherwise,
 
 .. index:: TARGET_FORMAT_TYPES
 
@@ -1037,21 +1037,21 @@ and scanf formatter settings.
 .. function:: const char * TARGET_INVALID_CONVERSION(const_tree fromtype,const_tree totype)
 
   If defined, this macro returns the diagnostic message when it is
-  invalid to convert from :samp:`{fromtype}` to :samp:`{totype}` , or ``NULL``
+  invalid to convert from :samp:`{fromtype}` to :samp:`{totype}`, or ``NULL``
   if validity should be determined by the front end.
 
 .. function:: const char * TARGET_INVALID_UNARY_OP(int op,const_tree type)
 
   If defined, this macro returns the diagnostic message when it is
   invalid to apply operation :samp:`{op}` (where unary plus is denoted by
-  ``CONVERT_EXPR``) to an operand of type :samp:`{type}` , or ``NULL``
+  ``CONVERT_EXPR`` ) to an operand of type :samp:`{type}`, or ``NULL``
   if validity should be determined by the front end.
 
 .. function:: const char * TARGET_INVALID_BINARY_OP(int op,const_tree type1,const_tree type2)
 
   If defined, this macro returns the diagnostic message when it is
   invalid to apply operation :samp:`{op}` to operands of types :samp:`{type1}`
-  and :samp:`{type2}` , or ``NULL`` if validity should be determined by
+  and :samp:`{type2}`, or ``NULL`` if validity should be determined by
   the front end.
 
 .. function:: tree TARGET_PROMOTED_TYPE(const_tree type)
@@ -1205,13 +1205,13 @@ is limited to twice the size of the host's ``HOST_WIDE_INT``
 representation.
 
 Converting a port mostly requires looking for the places where
-``CONST_DOUBLE``s are used with ``VOIDmode`` and replacing that
-code with code that accesses ``CONST_WIDE_INT``s.  :samp:`"grep -i
+``CONST_DOUBLE`` s are used with ``VOIDmode`` and replacing that
+code with code that accesses ``CONST_WIDE_INT`` s.  :samp:`"grep -i
 const_double"` at the port level gets you to 95% of the changes that
 need to be made.  There are a few places that require a deeper look.
 
 * There is no equivalent to ``hval`` and ``lval`` for
-  ``CONST_WIDE_INT``s.  This would be difficult to express in the md
+  ``CONST_WIDE_INT`` s.  This would be difficult to express in the md
   language since there are a variable number of elements.
 
   Most ports only check that ``hval`` is either 0 or -1 to see if the

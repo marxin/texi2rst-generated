@@ -27,12 +27,12 @@ These options are defined specifically for the CR16 ports.
 
 .. option:: -mbit-ops
 
-  Generates ``sbit``/``cbit`` instructions for bit manipulations.
+  Generates ``sbit`` / ``cbit`` instructions for bit manipulations.
 
 .. option:: -mdata-model=model
 
   Choose a data model. The choices for :samp:`{model}` are :samp:`near`,
   :samp:`far` or :samp:`medium`. :samp:`medium` is default.
-  However, :samp:`far` is not valid with :option:`-mcr16c` , as the
+  However, :samp:`far` is not valid with :option:`-mcr16c`, as the
   CR16C architecture does not support the far data model.
 

@@ -187,7 +187,7 @@ double underscores.
   preprocessor: C, C++, Objective-C and Fortran.  Their values are the major
   version, minor version, and patch level of the compiler, as integer
   constants.  For example, GCC version :samp:`{x}`.:samp:`{y}`.:samp:`{z}`
-  defines ``__GNUC__`` to :samp:`{x}` , ``__GNUC_MINOR__`` to :samp:`{y}` ,
+  defines ``__GNUC__`` to :samp:`{x}`, ``__GNUC_MINOR__`` to :samp:`{y}`,
   and ``__GNUC_PATCHLEVEL__`` to :samp:`{z}`.  These
   macros are also defined if you invoke the preprocessor directly.
 
@@ -540,7 +540,7 @@ double underscores.
   standard pragmas, where those standards do not require a particular
   default state.  It does not indicate whether optimizations respect
   signaling NaN semantics (the macro for that is
-  ``__SUPPORT_SNAN__``).  It does not indicate support for decimal
+  ``__SUPPORT_SNAN__`` ).  It does not indicate support for decimal
   floating point or the IEEE 754 binary16 and binary128 types.
 
 ``__GCC_IEC_559_COMPLEX``
@@ -562,9 +562,9 @@ double underscores.
   These macros are defined to expand to a narrow string literal of
   the name of the narrow and wide compile-time execution character
   set used.  It directly reflects the name passed to the options
-  :option:`-fexec-charset` and :option:`-fwide-exec-charset` , or the defaults
+  :option:`-fexec-charset` and :option:`-fwide-exec-charset`, or the defaults
   documented for those options (that is, it can expand to something like
-  ``"UTF-8"``).  See :ref:`invocation`.
+  ``"UTF-8"`` ).  See :ref:`invocation`.
 
   .. _system-specific-predefined-macros:
 

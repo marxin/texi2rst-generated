@@ -45,7 +45,7 @@ See :ref:`overall-options`, for examples.
   Optimize.  Optimizing compilation takes somewhat more time, and a lot
   more memory for a large function.
 
-  With :option:`-O` , the compiler tries to reduce code size and execution
+  With :option:`-O`, the compiler tries to reduce code size and execution
   time, without performing any optimizations that take a great deal of
   compilation time.
 
@@ -108,7 +108,7 @@ See :ref:`overall-options`, for examples.
 
   Optimize even more.  GCC performs nearly all supported optimizations
   that do not involve a space-speed tradeoff.
-  As compared to :option:`-O` , this option increases both compilation time
+  As compared to :option:`-O`, this option increases both compilation time
   and the performance of the generated code.
 
   :option:`-O2` turns on all optimization flags specified by :option:`-O`.  It
@@ -191,7 +191,7 @@ See :ref:`overall-options`, for examples.
   :option:`-falign-functions`  :option:`-falign-jumps` 
   :option:`-falign-labels`  :option:`-falign-loops` 
   :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm=stc`
-  It also enables :option:`-finline-functions` , causes the compiler to tune for
+  It also enables :option:`-finline-functions`, causes the compiler to tune for
   code size rather than execution speed, and performs further optimizations
   designed to reduce code size.
 
@@ -200,8 +200,8 @@ See :ref:`overall-options`, for examples.
   Disregard strict standards compliance.  :option:`-Ofast` enables all
   :option:`-O3` optimizations.  It also enables optimizations that are not
   valid for all standard-compliant programs.
-  It turns on :option:`-ffast-math` , :option:`-fallow-store-data-races`
-  and the Fortran-specific :option:`-fstack-arrays` , unless
+  It turns on :option:`-ffast-math`, :option:`-fallow-store-data-races`
+  and the Fortran-specific :option:`-fstack-arrays`, unless
   :option:`-fmax-stack-var-size` is specified, and :option:`-fno-protect-parens`.
 
 .. option:: -Og
@@ -213,7 +213,7 @@ See :ref:`overall-options`, for examples.
   for producing debuggable code because some compiler passes
   that collect debug information are disabled at :option:`-O0`.
 
-  Like :option:`-O0` , :option:`-Og` completely disables a number of 
+  Like :option:`-O0`, :option:`-Og` completely disables a number of 
   optimization passes so that individual options controlling them have
   no effect.  Otherwise :option:`-Og` enables all :option:`-O1` 
   optimization flags except for those that may interfere with debugging:
@@ -254,8 +254,8 @@ optimizations to be performed is desired.
   is active, two passes are performed and the second is scheduled after
   loop unrolling.
 
-  This option is enabled by default at optimization levels :option:`-O` ,
-  :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  This option is enabled by default at optimization levels :option:`-O`,
+  :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -ffp-contract=style
 
@@ -288,15 +288,15 @@ optimizations to be performed is desired.
 
   Optimize sibling and tail recursive calls.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -foptimize-strlen
 
   Optimize various standard C string functions (e.g. ``strlen``,
-  ``strchr`` or ``strcpy``) and
+  ``strchr`` or ``strcpy`` ) and
   their ``_FORTIFY_SOURCE`` counterparts into faster alternatives.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -fno-inline, -finline
 
@@ -315,7 +315,7 @@ optimizations to be performed is desired.
   in this way.  This inlining applies to all functions, even those not declared
   inline.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -findirect-inlining
 
@@ -324,7 +324,7 @@ optimizations to be performed is desired.
   when inlining itself is turned on by the :option:`-finline-functions`
   or :option:`-finline-small-functions` options.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -finline-functions
 
@@ -336,7 +336,7 @@ optimizations to be performed is desired.
   declared ``static``, then the function is normally not output as
   assembler code in its own right.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.  Also enabled
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.  Also enabled
   by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -finline-functions-called-once
@@ -346,7 +346,7 @@ optimizations to be performed is desired.
   function is integrated, then the function is not output as assembler code
   in its own right.
 
-  Enabled at levels :option:`-O1` , :option:`-O2` , :option:`-O3` and :option:`-Os` ,
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3` and :option:`-Os`,
   but not :option:`-Og`.
 
 .. option:: -fearly-inlining
@@ -365,7 +365,7 @@ optimizations to be performed is desired.
   unused parameters and replacement of parameters passed by reference
   by parameters passed by value.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` and :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3` and :option:`-Os`.
 
 .. option:: -finline-limit=n
 
@@ -397,7 +397,7 @@ optimizations to be performed is desired.
 
 .. option:: -fno-keep-inline-dllexport, -fkeep-inline-dllexport
 
-  This is a more fine-grained version of :option:`-fkeep-inline-functions` ,
+  This is a more fine-grained version of :option:`-fkeep-inline-functions`,
   which applies only to functions that are declared using the ``dllexport``
   attribute or declspec.  See :ref:`Declaring Attributes of
   Functions <function-attributes>`.
@@ -433,7 +433,7 @@ optimizations to be performed is desired.
   linker support it.  Use :option:`-fno-merge-constants` to inhibit this
   behavior.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fmerge-all-constants
 
@@ -507,7 +507,7 @@ optimizations to be performed is desired.
   second branch or a point immediately following it, depending on whether
   the condition is known to be true or false.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fsplit-wide-types
 
@@ -516,7 +516,7 @@ optimizations to be performed is desired.
   independently.  This normally generates better code for those types,
   but may make debugging more difficult.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` ,
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`,
   :option:`-Os`.
 
 .. option:: -fsplit-wide-types-early
@@ -534,24 +534,24 @@ optimizations to be performed is desired.
   ``else`` clause, CSE follows the jump when the condition
   tested is false.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fcse-skip-blocks
 
-  This is similar to :option:`-fcse-follow-jumps` , but causes CSE to
+  This is similar to :option:`-fcse-follow-jumps`, but causes CSE to
   follow jumps that conditionally skip over blocks.  When CSE
   encounters a simple ``if`` statement with no else clause,
   :option:`-fcse-skip-blocks` causes CSE to follow the jump around the
   body of the ``if``.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -frerun-cse-after-loop
 
   Re-run common subexpression elimination after loop optimizations are
   performed.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fgcse
 
@@ -563,7 +563,7 @@ optimizations to be performed is desired.
   the global common subexpression elimination pass by adding
   :option:`-fno-gcse` to the command line.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fgcse-lm
 
@@ -578,7 +578,7 @@ optimizations to be performed is desired.
 
   When :option:`-fgcse-sm` is enabled, a store motion pass is run after
   global common subexpression elimination.  This pass attempts to move
-  stores out of loops.  When used in conjunction with :option:`-fgcse-lm` ,
+  stores out of loops.  When used in conjunction with :option:`-fgcse-lm`,
   loops containing a load/store sequence can be changed to a load before
   the loop and a store after the loop.
 
@@ -622,7 +622,7 @@ optimizations to be performed is desired.
   This transformation unifies equivalent code and saves code size.  The
   resulting code may or may not perform better than without cross-jumping.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fauto-inc-dec
 
@@ -648,7 +648,7 @@ optimizations to be performed is desired.
   some tricks doable by standard arithmetics.  The use of conditional execution
   on chips where it is available is controlled by :option:`-fif-conversion2`.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
   not with :option:`-Og`.
 
 .. option:: -fif-conversion2
@@ -656,7 +656,7 @@ optimizations to be performed is desired.
   Use conditional execution (where available) to transform conditional jumps into
   branch-less equivalents.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` , but
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
   not with :option:`-Og`.
 
 .. option:: -fdeclone-ctor-dtor
@@ -699,7 +699,7 @@ optimizations to be performed is desired.
   is done both within a procedure and interprocedurally as part of
   indirect inlining ( :option:`-findirect-inlining` ) and interprocedural constant
   propagation ( :option:`-fipa-cp` ).
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fdevirtualize-speculatively
 
@@ -722,7 +722,7 @@ optimizations to be performed is desired.
 
   Perform a number of minor optimizations that are relatively expensive.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -free
 
@@ -730,8 +730,8 @@ optimizations to be performed is desired.
   helpful for the x86-64 architecture, which implicitly zero-extends in 64-bit
   registers after writing to their lower 32-bit half.
 
-  Enabled for Alpha, AArch64 and x86 at levels :option:`-O2` ,
-  :option:`-O3` , :option:`-Os`.
+  Enabled for Alpha, AArch64 and x86 at levels :option:`-O2`,
+  :option:`-O3`, :option:`-Os`.
 
 .. option:: -fno-lifetime-dse, -flifetime-dse
 
@@ -778,7 +778,7 @@ optimizations to be performed is desired.
     as the regions.  This value usually gives
     the best results in most cases and for most architectures,
     and is enabled by default when compiling with optimization for speed
-    ( :option:`-O` , :option:`-O2` , ...).
+    ( :option:`-O`, :option:`-O2`, ...).
 
   :samp:`one`
     Use all functions as a single region.  
@@ -821,7 +821,7 @@ optimizations to be performed is desired.
   values of spilled pseudos, LRA tries to rematerialize (recalculate)
   values if it is profitable.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fdelayed-branch
 
@@ -829,7 +829,7 @@ optimizations to be performed is desired.
   to exploit instruction slots available after delayed branch
   instructions.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os` ,
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`,
   but not at :option:`-Og`.
 
 .. option:: -fschedule-insns
@@ -840,16 +840,16 @@ optimizations to be performed is desired.
   by allowing other instructions to be issued until the result of the load
   or floating-point instruction is required.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -fschedule-insns2
 
-  Similar to :option:`-fschedule-insns` , but requests an additional pass of
+  Similar to :option:`-fschedule-insns`, but requests an additional pass of
   instruction scheduling after register allocation has been done.  This is
   especially useful on machines with a relatively small number of
   registers and where memory load instructions take more than one cycle.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fno-sched-interblock, -fsched-interblock
 
@@ -1031,7 +1031,7 @@ optimizations to be performed is desired.
   This option is always enabled by default on certain machines, usually
   those which have no call-preserved registers to use instead.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fcombine-stack-adjustments
 
@@ -1047,9 +1047,9 @@ optimizations to be performed is desired.
   them around calls.  This is only possible if called functions are part of
   same compilation unit as current function and they are compiled before it.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os` , however the option
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`, however the option
   is disabled if generated code will be instrumented for profiling
-  ( :option:`-p` , or :option:`-pg` ) or if callee's register usage cannot be known
+  ( :option:`-p`, or :option:`-pg` ) or if callee's register usage cannot be known
   exactly (this happens on targets that do not expose prologues
   and epilogues in RTL).
 
@@ -1165,7 +1165,7 @@ optimizations to be performed is desired.
   to functions are constants and then optimizes accordingly.
   This optimization can substantially increase performance
   if the application has constants passed to functions.
-  This flag is enabled by default at :option:`-O2` , :option:`-Os` and :option:`-O3`.
+  This flag is enabled by default at :option:`-O2`, :option:`-Os` and :option:`-O3`.
   It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -fipa-cp-clone
@@ -1364,7 +1364,7 @@ optimizations to be performed is desired.
   Perform loop header copying on trees.  This is beneficial since it increases
   effectiveness of code motion optimizations.  It also saves one jump.  This flag
   is enabled by default at :option:`-O` and higher.  It is not enabled
-  for :option:`-Os` , since it usually increases code size.
+  for :option:`-Os`, since it usually increases code size.
 
 .. option:: -ftree-loop-optimize
 
@@ -1546,7 +1546,7 @@ optimizations to be performed is desired.
   and can be arbitrarily reordered.  The optimization is only
   profitable on multiprocessor machines, for loops that are CPU-intensive,
   rather than constrained e.g. by memory bandwidth.  This option
-  implies :option:`-pthread` , and thus is only supported on targets
+  implies :option:`-pthread`, and thus is only supported on targets
   that have support for :option:`-pthread`.
 
 .. option:: -ftree-pta
@@ -1591,13 +1591,13 @@ optimizations to be performed is desired.
 .. option:: -ftree-loop-vectorize
 
   Perform loop vectorization on trees. This flag is enabled by default at
-  :option:`-O3` and by :option:`-ftree-vectorize` , :option:`-fprofile-use` ,
+  :option:`-O3` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
 
 .. option:: -ftree-slp-vectorize
 
   Perform basic block vectorization on trees. This flag is enabled by default at
-  :option:`-O3` and by :option:`-ftree-vectorize` , :option:`-fprofile-use` ,
+  :option:`-O3` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
 
 .. option:: -fvect-cost-model=model
@@ -1674,7 +1674,7 @@ optimizations to be performed is desired.
   when inlining itself is turned on by the :option:`-finline-functions`
   or :option:`-finline-small-functions` options.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fpredictive-commoning
 
@@ -1699,13 +1699,13 @@ optimizations to be performed is desired.
 
   Do not substitute constants for known return value of formatted output
   functions such as ``sprintf``, ``snprintf``, ``vsprintf``, and
-  ``vsnprintf`` (but not ``printf`` of ``fprintf``).  This
+  ``vsnprintf`` (but not ``printf`` of ``fprintf`` ).  This
   transformation allows GCC to optimize or even eliminate branches based
   on the known return value of these functions called with arguments that
   are either constant, or whose values are known to be in a range that
   makes determining the exact return value possible.  For example, when
   :option:`-fprintf-return-value` is in effect, both the branch and the
-  body of the ``if`` statement (but not the call to ``snprint``)
+  body of the ``if`` statement (but not the call to ``snprint`` )
   can be optimized away when ``i`` is a 32-bit or smaller integer
   because the return value is guaranteed to be at most 8.
 
@@ -1728,7 +1728,7 @@ optimizations to be performed is desired.
   other, a few use both.
 
   :option:`-fpeephole` is enabled by default.
-  :option:`-fpeephole2` enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  :option:`-fpeephole2` enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fno-guess-branch-probability, -fguess-branch-probability
 
@@ -1748,14 +1748,14 @@ optimizations to be performed is desired.
   with ``__builtin_expect_with_probability`` built-in function.
 
   The default is :option:`-fguess-branch-probability` at levels
-  :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -freorder-blocks
 
   Reorder basic blocks in the compiled function in order to reduce number of
   taken branches and improve code locality.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -freorder-blocks-algorithm=algorithm
 
@@ -1766,8 +1766,8 @@ optimizations to be performed is desired.
   put all often executed code together, minimizing the number of branches
   executed by making extra copies of code.
 
-  The default is :samp:`simple` at levels :option:`-O` , :option:`-Os` , and
-  :samp:`stc` at levels :option:`-O2` , :option:`-O3`.
+  The default is :samp:`simple` at levels :option:`-O`, :option:`-Os`, and
+  :samp:`stc` at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -freorder-blocks-and-partition
 
@@ -1783,7 +1783,7 @@ optimizations to be performed is desired.
   enabled by default (to avoid linker errors), but may be enabled
   explicitly (if using a working linker).
 
-  Enabled for x86 at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled for x86 at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -freorder-functions
 
@@ -1798,7 +1798,7 @@ optimizations to be performed is desired.
   (see :option:`-fprofile-arcs` for details) or manually annotate functions with 
   ``hot`` or ``cold`` attributes (see :ref:`common-function-attributes`).
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fstrict-aliasing
 
@@ -1829,7 +1829,7 @@ optimizations to be performed is desired.
 
   The practice of reading from a different union member than the one most
   recently written to (called 'type-punning') is common.  Even with
-  :option:`-fstrict-aliasing` , type-punning is allowed, provided the memory
+  :option:`-fstrict-aliasing`, type-punning is allowed, provided the memory
   is accessed through the union type.  So, the code above works as
   expected.  See :ref:`structures-unions-enumerations-and-bit-fields-implementation`.  However, this code might not:
 
@@ -1855,12 +1855,12 @@ optimizations to be performed is desired.
     }
 
   The :option:`-fstrict-aliasing` option is enabled at levels
-  :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -falign-functions
 
   Align the start of functions to the next power-of-two greater than or
-  equal to :samp:`{n}` , skipping up to :samp:`{m}` -1 bytes.  This ensures that at
+  equal to :samp:`{n}`, skipping up to :samp:`{m}` -1 bytes.  This ensures that at
   least the first :samp:`{m}` bytes of the function can be fetched by the CPU
   without crossing an :samp:`{n}` -byte alignment boundary.
 
@@ -1888,12 +1888,12 @@ optimizations to be performed is desired.
   If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
   The maximum allowed :samp:`{n}` option value is 65536.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 ``-flimit-function-alignment``
   If this option is enabled, the compiler tries to avoid unnecessarily
   overaligning functions. It attempts to instruct the assembler to align
-  by the amount specified by :option:`-falign-functions` , but not to
+  by the amount specified by :option:`-falign-functions`, but not to
   skip more bytes than the size of the function.
 
 .. option:: -falign-labels
@@ -1911,7 +1911,7 @@ optimizations to be performed is desired.
   which is very likely to be :samp:`1`, meaning no alignment.
   The maximum allowed :samp:`{n}` option value is 65536.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -falign-loops
 
@@ -1929,7 +1929,7 @@ optimizations to be performed is desired.
 
   If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -falign-jumps
 
@@ -1947,7 +1947,7 @@ optimizations to be performed is desired.
   If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
   The maximum allowed :samp:`{n}` option value is 65536.
 
-  Enabled at levels :option:`-O2` , :option:`-O3`.
+  Enabled at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -fno-allocation-dce
 
@@ -2076,7 +2076,7 @@ optimizations to be performed is desired.
   to more aggressive optimization decisions.
 
   When a file is compiled with :option:`-flto` without
-  :option:`-fuse-linker-plugin` , the generated object file is larger than
+  :option:`-fuse-linker-plugin`, the generated object file is larger than
   a regular object file because it contains GIMPLE bytecodes and the usual
   final code (see :option:`-ffat-lto-objects` ).  This means that
   object files with LTO information can be linked as normal object
@@ -2110,10 +2110,10 @@ optimizations to be performed is desired.
   generating bytecodes, as they need to be used during the final link.
   Currently, the following options and their settings are taken from
   the first object file that explicitly specifies them: 
-  :option:`-fcommon` , :option:`-fexceptions` , :option:`-fnon-call-exceptions` ,
+  :option:`-fcommon`, :option:`-fexceptions`, :option:`-fnon-call-exceptions`,
   :option:`-fgnu-tm` and all the :option:`-m` target flags.
 
-  The following options :option:`-fPIC` , :option:`-fpic` , :option:`-fpie` and
+  The following options :option:`-fPIC`, :option:`-fpic`, :option:`-fpie` and
   :option:`-fPIE` are combined based on the following scheme:
 
   .. code-block:: c++
@@ -2130,11 +2130,11 @@ optimizations to be performed is desired.
   is ignored.  This includes options such as :option:`-freg-struct-return`
   and :option:`-fpcc-struct-return`. 
 
-  Other options such as :option:`-ffp-contract` , :option:`-fno-strict-overflow` ,
-  :option:`-fwrapv` , :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
+  Other options such as :option:`-ffp-contract`, :option:`-fno-strict-overflow`,
+  :option:`-fwrapv`, :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
   are passed through to the link stage and merged conservatively for
   conflicting translation units.  Specifically
-  :option:`-fno-strict-overflow` , :option:`-fwrapv` and :option:`-fno-trapv` take
+  :option:`-fno-strict-overflow`, :option:`-fwrapv` and :option:`-fno-trapv` take
   precedence; and for example :option:`-ffp-contract=off` takes precedence
   over :option:`-ffp-contract=fast`.  You can override them at link time.
 
@@ -2226,7 +2226,7 @@ optimizations to be performed is desired.
   information on systems other than those using a combination of ELF and
   DWARF.
 
-  If you specify the optional :samp:`{n}` , the optimization and code
+  If you specify the optional :samp:`{n}`, the optimization and code
   generation done at link time is executed in parallel using :samp:`{n}`
   parallel jobs by utilizing an installed :command:`make` program.  The
   environment variable :envvar:`MAKE` may be used to override the program
@@ -2323,7 +2323,7 @@ optimizations to be performed is desired.
   This pass only applies to certain targets that cannot explicitly represent
   the comparison operation before register allocation is complete.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fcprop-registers
 
@@ -2331,7 +2331,7 @@ optimizations to be performed is desired.
   perform a copy-propagation pass to try to reduce scheduling dependencies
   and occasionally eliminate the copy.
 
-  Enabled at levels :option:`-O` , :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fprofile-correction
 
@@ -2466,9 +2466,9 @@ correctness.  All must be specifically enabled.
 
 .. option:: -ffast-math
 
-  Sets the options :option:`-fno-math-errno` , :option:`-funsafe-math-optimizations` ,
-  :option:`-ffinite-math-only` , :option:`-fno-rounding-math` ,
-  :option:`-fno-signaling-nans` , :option:`-fcx-limited-range` and
+  Sets the options :option:`-fno-math-errno`, :option:`-funsafe-math-optimizations`,
+  :option:`-ffinite-math-only`, :option:`-fno-rounding-math`,
+  :option:`-fno-signaling-nans`, :option:`-fcx-limited-range` and
   :option:`-fexcess-precision=fast`.
 
   This option causes the preprocessor macro ``__FAST_MATH__`` to be defined.
@@ -2511,7 +2511,7 @@ correctness.  All must be specifically enabled.
   an exact implementation of IEEE or ISO rules/specifications for
   math functions. It may, however, yield faster code for programs
   that do not require the guarantees of these specifications.
-  Enables :option:`-fno-signed-zeros` , :option:`-fno-trapping-math` ,
+  Enables :option:`-fno-signed-zeros`, :option:`-fno-trapping-math`,
   :option:`-fassociative-math` and :option:`-freciprocal-math`.
 
   The default is :option:`-fno-unsafe-math-optimizations`.
@@ -2626,7 +2626,7 @@ correctness.  All must be specifically enabled.
   TS 18661-1:2014, the C bindings to IEEE 754-2008, as integrated into
   ISO C2X, does not allow these functions to do so.
 
-  The default is :option:`-ffp-int-builtin-inexact` , allowing the
+  The default is :option:`-ffp-int-builtin-inexact`, allowing the
   exception to be raised, unless C2X or a later C standard is selected.
   This option does nothing unless :option:`-ftrapping-math` is in effect.
 
@@ -2645,7 +2645,7 @@ correctness.  All must be specifically enabled.
   needed when performing complex division.  Also, there is no checking
   whether the result of a complex multiplication or division is ``NaN
   + I*NaN``, with an attempt to rescue the situation in that case.  The
-  default is :option:`-fno-cx-limited-range` , but is enabled by
+  default is :option:`-fno-cx-limited-range`, but is enabled by
   :option:`-ffast-math`.
 
   This option controls the default setting of the ISO C99
@@ -2670,7 +2670,7 @@ section includes experimental options that may produce broken code.
   After running a program compiled with :option:`-fprofile-arcs`
   (see :ref:`instrumentation-options`),
   you can compile it a second time using
-  :option:`-fbranch-probabilities` , to improve optimizations based on
+  :option:`-fbranch-probabilities`, to improve optimizations based on
   the number of times each branch was taken.  When a program
   compiled with :option:`-fprofile-arcs` exits, it saves arc execution
   counts to a file called :samp:`{sourcename}`.gcda for each source
@@ -2678,7 +2678,7 @@ section includes experimental options that may produce broken code.
   structure of the generated code, so you must use the same source code
   and the same optimization options for both compilations.
 
-  With :option:`-fbranch-probabilities` , GCC puts a
+  With :option:`-fbranch-probabilities`, GCC puts a
   :samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.
   These can be used to improve optimization.  Currently, they are only
   used in one place: in reorg.c, instead of guessing which path a
@@ -2689,13 +2689,13 @@ section includes experimental options that may produce broken code.
 
 .. option:: -fprofile-values
 
-  If combined with :option:`-fprofile-arcs` , it adds code so that some
+  If combined with :option:`-fprofile-arcs`, it adds code so that some
   data about values of expressions in the program is gathered.
 
-  With :option:`-fbranch-probabilities` , it reads back the data gathered
+  With :option:`-fbranch-probabilities`, it reads back the data gathered
   from profiling values of expressions for usage in optimizations.
 
-  Enabled by :option:`-fprofile-generate` , :option:`-fprofile-use` , and
+  Enabled by :option:`-fprofile-generate`, :option:`-fprofile-use`, and
   :option:`-fauto-profile`.
 
 .. option:: -fprofile-reorder-functions
@@ -2708,10 +2708,10 @@ section includes experimental options that may produce broken code.
 
 .. option:: -fvpt
 
-  If combined with :option:`-fprofile-arcs` , this option instructs the compiler
+  If combined with :option:`-fprofile-arcs`, this option instructs the compiler
   to add code to gather information about values of expressions.
 
-  With :option:`-fbranch-probabilities` , it reads back the data gathered
+  With :option:`-fbranch-probabilities`, it reads back the data gathered
   and actually performs the optimizations based on them.
   Currently the optimizations include specialization of division operations
   using the knowledge about the value of the denominator.
@@ -2735,7 +2735,7 @@ section includes experimental options that may produce broken code.
   instructions of same type together because target machine can execute them
   more efficiently if they are adjacent to each other in the instruction flow.
 
-  Enabled at levels :option:`-O2` , :option:`-O3` , :option:`-Os`.
+  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -ftracer
 
@@ -2749,7 +2749,7 @@ section includes experimental options that may produce broken code.
 
   Unroll loops whose number of iterations can be determined at compile time or
   upon entry to the loop.  :option:`-funroll-loops` implies
-  :option:`-frerun-cse-after-loop` , :option:`-fweb` and :option:`-frename-registers`.
+  :option:`-frerun-cse-after-loop`, :option:`-fweb` and :option:`-frename-registers`.
   It also turns on complete loop peeling (i.e. complete removal of loops with
   a small constant number of iterations).  This option makes code larger, and may
   or may not make it run faster.
@@ -2770,7 +2770,7 @@ section includes experimental options that may produce broken code.
   complete loop peeling (i.e. complete removal of loops with small constant
   number of iterations).
 
-  Enabled by :option:`-O3` , :option:`-fprofile-use` , and :option:`-fauto-profile`.
+  Enabled by :option:`-O3`, :option:`-fprofile-use`, and :option:`-fauto-profile`.
 
 .. option:: -fmove-loop-invariants
 
@@ -2857,7 +2857,7 @@ section includes experimental options that may produce broken code.
   can help to reduce the number of GOT entries and GOT accesses on some
   targets.
 
-  For example, the implementation of the following function ``foo``:
+  For example, the implementation of the following function ``foo`` :
 
   .. code-block:: c++
 
@@ -2865,7 +2865,7 @@ section includes experimental options that may produce broken code.
     int foo (void) { return a + b + c; }
 
   usually calculates the addresses of all three variables, but if you
-  compile it with :option:`-fsection-anchors` , it accesses the variables
+  compile it with :option:`-fsection-anchors`, it accesses the variables
   from a common anchor point instead.  The effect is similar to the
   following pseudocode (which isn't valid C):
 
@@ -3046,8 +3046,8 @@ section includes experimental options that may produce broken code.
 
   .. option:: inline-heuristics-hint-percent
 
-    The scale (in percents) applied to inline-insns-single ,
-    inline-insns-single-O2 , inline-insns-auto
+    The scale (in percents) applied to inline-insns-single,
+    inline-insns-single-O2, inline-insns-auto
     when inline heuristics hints that inlining is
     very profitable (will enable later optimizations).
 
@@ -3868,7 +3868,7 @@ section includes experimental options that may produce broken code.
 
     Use uids starting at this parameter for nondebug insns.  The range below
     the parameter is reserved exclusively for debug insns created by
-    :option:`-fvar-tracking-assignments` , but debug insns may get
+    :option:`-fvar-tracking-assignments`, but debug insns may get
     (non-overlapping) uids above it if the reserved range is exhausted.
 
   .. option:: ipa-sra-ptr-growth-factor
@@ -3920,7 +3920,7 @@ section includes experimental options that may produce broken code.
   .. option:: loop-block-tile-size
 
     Loop blocking or strip mining transforms, enabled with
-    :option:`-floop-block` or :option:`-floop-strip-mine` , strip mine each
+    :option:`-floop-block` or :option:`-floop-strip-mine`, strip mine each
     loop in the loop nest by a given number of iterations.  The strip
     length can be changed using the loop-block-tile-size
     parameter.
@@ -3999,7 +3999,7 @@ section includes experimental options that may produce broken code.
     IPA-CP will analyze conditional statement that references some function
     parameter to estimate benefit for cloning upon certain constant value.
     But if number of operations in a parameter expression exceeds
-    ipa-max-param-expr-ops , the expression is treated as complicated
+    ipa-max-param-expr-ops, the expression is treated as complicated
     one, and is not handled by IPA analysis.
 
   .. option:: lto-partitions
@@ -4142,7 +4142,7 @@ section includes experimental options that may produce broken code.
     :option:`-fsanitize=hwaddress` and disabled by default when using
     :option:`-fsanitize=kernel-hwaddress`.
     To disable stack instrumentation use
-    :option:`--param hwasan-instrument-stack=0` , and to enable it use
+    :option:`--param hwasan-instrument-stack=0`, and to enable it use
     :option:`--param hwasan-instrument-stack=1`.
 
   .. option:: hwasan-random-frame-tag
@@ -4161,7 +4161,7 @@ section includes experimental options that may produce broken code.
     :option:`-fsanitize=hwaddress` and disabled by default when using
     :option:`-fsanitize=kernel-hwaddress`.
     To disable instrumentation of such variables use
-    :option:`--param hwasan-instrument-allocas=0` , and to enable it use
+    :option:`--param hwasan-instrument-allocas=0`, and to enable it use
     :option:`--param hwasan-instrument-allocas=1`.
 
   .. option:: hwasan-instrument-reads
@@ -4507,11 +4507,11 @@ section includes experimental options that may produce broken code.
   .. option:: openacc-kernels
 
     Specify mode of OpenACC 'kernels' constructs handling.
-    With :option:`--param=openacc-kernels=decompose` , OpenACC 'kernels'
+    With :option:`--param=openacc-kernels=decompose`, OpenACC 'kernels'
     constructs are decomposed into parts, a sequence of compute
     constructs, each then handled individually.
     This is work in progress.
-    With :option:`--param=openacc-kernels=parloops` , OpenACC 'kernels'
+    With :option:`--param=openacc-kernels=parloops`, OpenACC 'kernels'
     constructs are handled by the :samp:`parloops` pass, en bloc.
     This is the current default.
 
@@ -4567,7 +4567,7 @@ section includes experimental options that may produce broken code.
     The tuning for some AArch64 CPUs tries to take both latencies and issue
     rates into account when deciding whether a loop should be vectorized
     using SVE, vectorized using Advanced SIMD, or not vectorized at all.
-    If this parameter is set to :samp:`{n}` , GCC will not use this heuristic
+    If this parameter is set to :samp:`{n}`, GCC will not use this heuristic
     for loops that are known to execute in fewer than :samp:`{n}` Advanced
     SIMD iterations.
 

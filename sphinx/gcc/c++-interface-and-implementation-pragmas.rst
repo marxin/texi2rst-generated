@@ -14,7 +14,7 @@ user with a way of explicitly directing the compiler to emit entities
 with vague linkage (and debugging information) in a particular
 translation unit.
 
-*Note:* These ``#pragma``s have been superceded as of GCC 2.7.2
+*Note:* These ``#pragma`` s have been superceded as of GCC 2.7.2
 by COMDAT support and the 'key method' heuristic
 mentioned in Vague Linkage.  Using them can actually cause your
 program to grow due to unnecessary out-of-line copies of inline

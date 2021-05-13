@@ -12,7 +12,7 @@
 .. index:: sine, inverse
 
 :samp:`{Description}:`
-  ``ASIN(X)`` computes the arcsine of its :samp:`{X}` (inverse of ``SIN(X)``).
+  ``ASIN(X)`` computes the arcsine of its :samp:`{X}` (inverse of ``SIN(X)`` ).
 
 :samp:`{Standard}:`
   Fortran 77 and later, for a complex argument Fortran 2008 or later

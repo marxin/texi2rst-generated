@@ -23,7 +23,7 @@ patterns are
 Constant integers do not specify a machine mode, so an instruction to
 extend a constant value could match either pattern.  The pattern it
 actually will match is the one that appears first in the file.  For correct
-results, this must be the one for the widest possible mode (``HImode``,
+results, this must be the one for the widest possible mode ( ``HImode``,
 here).  If the pattern matches the ``QImode`` instruction, the results
 will be incorrect if the constant value does not actually fit that mode.
 

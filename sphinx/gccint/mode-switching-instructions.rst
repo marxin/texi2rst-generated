@@ -64,5 +64,5 @@ switch is needed / supplied.
 
 .. function:: int TARGET_MODE_PRIORITY(int entity,int n)
 
-  This macro specifies the order in which modes for :samp:`{entity}` are processed. 0 is the highest priority, ``NUM_MODES_FOR_MODE_SWITCHING[entity] - 1`` the lowest.  The value of the macro should be an integer designating a mode for :samp:`{entity}`.  For any fixed :samp:`{entity}` , ``mode_priority`` ( :samp:`{entity}` , :samp:`{n}` ) shall be a bijection in 0 ... ``num_modes_for_mode_switching[entity] - 1``.
+  This macro specifies the order in which modes for :samp:`{entity}` are processed. 0 is the highest priority, ``NUM_MODES_FOR_MODE_SWITCHING[entity] - 1`` the lowest.  The value of the macro should be an integer designating a mode for :samp:`{entity}`.  For any fixed :samp:`{entity}`, ``mode_priority`` ( :samp:`{entity}`, :samp:`{n}` ) shall be a bijection in 0 ... ``num_modes_for_mode_switching[entity] - 1``.
 

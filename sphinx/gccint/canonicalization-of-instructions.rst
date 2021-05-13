@@ -85,7 +85,7 @@ are performed:
 * ``(minus x (const_int n))`` is converted to
   ``(plus x (const_int -n))``.
 
-* Within address computations (i.e., inside ``mem``), a left shift is
+* Within address computations (i.e., inside ``mem`` ), a left shift is
   converted into the appropriate multiplication by a power of two.
 
   .. index:: ior, canonicalization of

@@ -47,8 +47,8 @@ acc_prof_info.event_type
   It's not clear if for *nested* event callbacks (for example,
   ``acc_ev_enqueue_launch_start`` as part of a parent compute
   construct), this should be set for the nested event
-  (``acc_ev_enqueue_launch_start``), or if the value of the parent
-  construct should remain (``acc_ev_compute_construct_start``).  In
+  ( ``acc_ev_enqueue_launch_start`` ), or if the value of the parent
+  construct should remain ( ``acc_ev_compute_construct_start`` ).  In
   this implementation, the value will generally correspond to the
   innermost nested event type.
 
@@ -65,14 +65,14 @@ acc_prof_info.device_type
     It's not clear if that's the expected behavior.
 
 acc_prof_info.thread_id
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 acc_prof_info.async
   ** Not yet implemented correctly for
     ``acc_ev_compute_construct_start``.
 
   * In a compute construct, for host-fallback
-    execution/``acc_device_host`` it will always be
+    execution/ ``acc_device_host`` it will always be
     ``acc_async_sync``.
     It's not clear if that's the expected behavior.
 
@@ -85,22 +85,22 @@ acc_prof_info.async_queue
   This will always have the same value as ``acc_prof_info.async``.
 
 acc_prof_info.src_file
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
 acc_prof_info.func_name
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
 acc_prof_info.line_no
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 acc_prof_info.end_line_no
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 acc_prof_info.func_line_no
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 acc_prof_info.func_end_line_no
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 :samp:`{acc_event_info.event_type}, {acc_event_info.*.event_type}`
   Relating to ``acc_prof_info.event_type`` discussed above, in this
@@ -124,7 +124,7 @@ acc_event_info.*.parent_construct
     ``acc_ev_enqueue_upload_start``, ``acc_ev_enqueue_upload_end``,
     ``acc_ev_enqueue_download_start``, and
     ``acc_ev_enqueue_download_end``, will be
-    ``acc_construct_parallel``; should reflect the real parent
+    ``acc_construct_parallel`` ; should reflect the real parent
     construct.
 
 acc_event_info.*.implicit
@@ -135,7 +135,7 @@ acc_event_info.*.implicit
   also for explicit usage.
 
 acc_event_info.data_event.var_name
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
 acc_event_info.data_event.host_ptr
   For ``acc_ev_alloc``, and ``acc_ev_free``, this is always
@@ -149,7 +149,7 @@ typedef union acc_api_info
 acc_api_info.device_api
   Possibly not yet implemented correctly for
   ``acc_ev_compute_construct_start``,
-  ``acc_ev_device_init_start``, ``acc_ev_device_init_end``:
+  ``acc_ev_device_init_start``, ``acc_ev_device_init_end`` :
   will always be ``acc_device_api_none`` for these event types.
   For ``acc_ev_enter_data_start``, it will be
   ``acc_device_api_none`` in some cases.
@@ -158,16 +158,16 @@ acc_api_info.device_type
   Always the same as ``acc_prof_info.device_type``.
 
 acc_api_info.vendor
-  Always ``-1``; not yet implemented.
+  Always ``-1`` ; not yet implemented.
 
 acc_api_info.device_handle
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
 acc_api_info.context_handle
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
 acc_api_info.async_handle
-  Always ``NULL``; not yet implemented.
+  Always ``NULL`` ; not yet implemented.
 
   Remarks about certain event types:
 

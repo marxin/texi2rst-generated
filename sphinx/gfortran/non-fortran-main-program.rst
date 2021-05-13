@@ -56,7 +56,7 @@ bindings they are also accessible from Fortran.
   ``_gfortran_set_args`` saves the command-line arguments; this
   initialization is required if any of the command-line intrinsics
   is called.  Additionally, it shall be called if backtracing is
-  enabled (see ``_gfortran_set_options``).
+  enabled (see ``_gfortran_set_options`` ).
 
 :samp:`{Syntax}:`
   ``void _gfortran_set_args (int argc, char *argv[])``

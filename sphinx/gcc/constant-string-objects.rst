@@ -20,7 +20,7 @@ User defined libraries may want to implement their own constant string
 class.  To be able to support them, the GNU Objective-C compiler provides
 a new command line options :option:`-fconstant-string-class`:samp:`={class-name}`.
 The provided class should adhere to a strict structure, the same
-as ``NXConstantString``'s structure:
+as ``NXConstantString`` 's structure:
 
 .. code-block:: objective-c
 
@@ -32,7 +32,7 @@ as ``NXConstantString``'s structure:
   }
   @end
 
-``NXConstantString`` inherits from ``Object``; user class
+``NXConstantString`` inherits from ``Object`` ; user class
 libraries may choose to inherit the customized constant string class
 from a different class than ``Object``.  There is no requirement in
 the methods the constant string class has to implement, but the final

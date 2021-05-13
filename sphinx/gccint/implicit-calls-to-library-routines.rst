@@ -55,7 +55,7 @@ don't need to define this macro.
 .. index:: TARGET_LIB_INT_CMP_BIASED
 
 MacroTARGET_LIB_INT_CMP_BIASEDThis macro should evaluate to ``true`` if the integer comparison
-functions (like ``__cmpdi2``) return 0 to indicate that the first
+functions (like ``__cmpdi2`` ) return 0 to indicate that the first
 operand is smaller than the second, 1 to indicate that they are equal,
 and 2 to indicate that the first operand is greater than the second.
 If this macro evaluates to ``false`` the comparison functions return
@@ -108,7 +108,7 @@ macro, a reasonable default is used.
 .. function:: bool TARGET_LIBC_HAS_FAST_FUNCTION(int fcode)
 
   This hook determines whether a function from a class of functions
-  ``(enum function_class)``:samp:`{fcode}` has a fast implementation.
+   ``(enum function_class)``:samp:`{fcode}` has a fast implementation.
 
 .. index:: NEXT_OBJC_RUNTIME
 

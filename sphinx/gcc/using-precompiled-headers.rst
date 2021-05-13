@@ -100,8 +100,8 @@ A precompiled header file can be used only when these conditions apply:
 
   :option:`-fexceptions`
 
-* Some other command-line options starting with :option:`-f` ,
-  :option:`-p` , or :option:`-O` must be defined in the same way as when
+* Some other command-line options starting with :option:`-f`,
+  :option:`-p`, or :option:`-O` must be defined in the same way as when
   the precompiled header was generated.  At present, it's not clear
   which options are safe to change and which are not; the safest choice
   is to use exactly the same options when generating and using the

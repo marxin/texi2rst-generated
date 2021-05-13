@@ -135,7 +135,7 @@ options.  See :ref:`misc`.
 .. index:: scratch_operand
 
 Functionscratch_operandThis predicate allows hard registers and ``SCRATCH`` expressions,
-but not pseudo-registers.  It is used internally by ``match_scratch``;
+but not pseudo-registers.  It is used internally by ``match_scratch`` ;
 it should not be used directly.
 
 The third category of predicates allow only some kind of memory reference.
@@ -150,7 +150,7 @@ Functionmemory_operandThis predicate allows any valid reference to a quantity of
 
 Functionaddress_operandThis predicate is a little unusual; it allows any operand that is a
 valid expression for the *address* of a quantity of mode
-:samp:`{mode}` , again determined by the weak form of
+:samp:`{mode}`, again determined by the weak form of
 ``GO_IF_LEGITIMATE_ADDRESS``.  To first order, if
 :samp:`(mem: :samp:`{mode}` ( :samp:`{exp}` ))` is acceptable to
 ``memory_operand``, then :samp:`{exp}` is acceptable to
@@ -236,7 +236,7 @@ three operands:
   ``match_operand`` or ``match_operator`` expressions.
 
 * An RTL expression which evaluates to true if the predicate allows the
-  operand :samp:`{op}` , false if it does not.  This expression can only use
+  operand :samp:`{op}`, false if it does not.  This expression can only use
   the following RTL codes:
 
   .. envvar:: MATCH_OPERAND
@@ -261,10 +261,10 @@ three operands:
     string, :samp:`{op}` itself is examined.  Otherwise, the string constant
     must be a sequence of digits and/or lowercase letters.  Each character
     indicates a subexpression to extract from the current expression; for
-    the first character this is :samp:`{op}` , for the second and subsequent
+    the first character this is :samp:`{op}`, for the second and subsequent
     characters it is the result of the previous character.  A digit
-    :samp:`{n}` extracts :samp:`XEXP ( :samp:`{e}` , :samp:`{n}` )`; a letter :samp:`{l}`
-    extracts :samp:`XVECEXP ( :samp:`{e}` , 0, :samp:`{n}` )` where :samp:`{n}` is the
+    :samp:`{n}` extracts :samp:`XEXP ( :samp:`{e}`, :samp:`{n}` )`; a letter :samp:`{l}`
+    extracts :samp:`XVECEXP ( :samp:`{e}`, 0, :samp:`{n}` )` where :samp:`{n}` is the
     alphabetic ordinal of :samp:`{l}` (0 for 'a', 1 for 'b', and so on).  The
     ``MATCH_CODE`` then examines the RTX code of the subexpression
     extracted by the complete string.  It is not possible to extract
@@ -274,7 +274,7 @@ three operands:
   .. envvar:: MATCH_TEST
 
     This expression has one operand, a string constant containing a C
-    expression.  The predicate's arguments, :samp:`{op}` and :samp:`{mode}` , are
+    expression.  The predicate's arguments, :samp:`{op}` and :samp:`{mode}`, are
     available with those names in the C expression.  The ``MATCH_TEST``
     evaluates to true if the C expression evaluates to a nonzero value.
     ``MATCH_TEST`` expressions must not have side effects.
@@ -290,7 +290,7 @@ three operands:
 * An optional block of C code, which should execute
   :samp:`return true` if the predicate is found to match and
   :samp:`return false` if it does not.  It must not have any side
-  effects.  The predicate arguments, :samp:`{op}` and :samp:`{mode}` , are
+  effects.  The predicate arguments, :samp:`{op}` and :samp:`{mode}`, are
   available with those names.
 
   If a code block is present in a predicate definition, then the RTL
@@ -333,7 +333,7 @@ And here is another, showing the use of the C block.
 
 Predicates written with ``define_predicate`` automatically include
 a test that :samp:`{mode}` is ``VOIDmode``, or :samp:`{op}` has the same
-mode as :samp:`{mode}` , or :samp:`{op}` is a ``CONST_INT`` or
+mode as :samp:`{mode}`, or :samp:`{op}` is a ``CONST_INT`` or
 ``CONST_DOUBLE``.  They do *not* check specifically for
 integer ``CONST_DOUBLE``, nor do they test that the value of either
 kind of constant fits in the requested mode.  This is because

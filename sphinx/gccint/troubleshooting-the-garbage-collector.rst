@@ -9,7 +9,7 @@ With the current garbage collector implementation, most issues should
 show up as GCC compilation errors.  Some of the most commonly
 encountered issues are described below.
 
-* Gengtype does not produce allocators for a ``GTY``-marked type.
+* Gengtype does not produce allocators for a ``GTY`` -marked type.
   Gengtype checks if there is at least one possible path from GC roots to
   at least one instance of each type before outputting allocators.  If
   there is no such path, the ``GTY`` markers will be ignored and no

@@ -233,6 +233,6 @@ we do not make because we think GCC is better without them.
   programs, but a warning is defined by GCC to count as a diagnostic.  If
   GCC produces a warning but not an error, that is correct ISO C support.
   If testsuites call this 'failure', they should be run with the GCC
-  option :option:`-pedantic-errors` , which will turn these warnings into
+  option :option:`-pedantic-errors`, which will turn these warnings into
   errors.
 

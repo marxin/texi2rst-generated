@@ -11,7 +11,7 @@ RTL Expressions for Arithmetic
 
 Unless otherwise specified, all the operands of arithmetic expressions
 must be valid for mode :samp:`{m}`.  An operand is valid for mode :samp:`{m}`
-if it has mode :samp:`{m}` , or if it is a ``const_int`` or
+if it has mode :samp:`{m}`, or if it is a ``const_int`` or
 ``const_double`` and :samp:`{m}` is a mode of class ``MODE_INT``.
 
 For commutative binary operations, constants should be placed in the
@@ -71,7 +71,7 @@ second operand.
 
 :samp:`(minus:{m}{x}{y})` :samp:`(ss_minus:{m}{x}{y})` :samp:`(us_minus:{m}{x}{y})`
   These three expressions represent the result of subtracting :samp:`{y}`
-  from :samp:`{x}` , carried out in mode :samp:`{M}`.  Behavior on overflow is
+  from :samp:`{x}`, carried out in mode :samp:`{M}`.  Behavior on overflow is
   the same as for the three variants of ``plus`` (see above).
 
   .. index:: compare
@@ -90,7 +90,7 @@ second operand.
   validly be used: as a value to be stored in the condition codes, in a
   register.  See :ref:`comparisons`.
 
-  The mode :samp:`{m}` is not related to the modes of :samp:`{x}` and :samp:`{y}` , but
+  The mode :samp:`{m}` is not related to the modes of :samp:`{x}` and :samp:`{y}`, but
   instead is the mode of the condition code value.  It is some mode in class
   ``MODE_CC``, often ``CCmode``.  See :ref:`condition-code`.  If :samp:`{m}`
   is ``CCmode``, the operation returns sufficient
@@ -129,10 +129,10 @@ second operand.
 
 :samp:`(neg:{m}{x})` :samp:`(ss_neg:{m}{x})` :samp:`(us_neg:{m}{x})`
   These two expressions represent the negation (subtraction from zero) of
-  the value represented by :samp:`{x}` , carried out in mode :samp:`{m}`.  They
+  the value represented by :samp:`{x}`, carried out in mode :samp:`{m}`.  They
   differ in the behavior on overflow of integer modes.  In the case of
   ``neg``, the negation of the operand may be a number not representable
-  in mode :samp:`{m}` , in which case it is truncated to :samp:`{m}`.  ``ss_neg``
+  in mode :samp:`{m}`, in which case it is truncated to :samp:`{m}`.  ``ss_neg``
   and ``us_neg`` ensure that an out-of-bounds result saturates to the
   maximum or minimum signed or unsigned value.
 
@@ -163,7 +163,7 @@ second operand.
 
     (mult:m (sign_extend:m x) (sign_extend:m y))
 
-  where :samp:`{m}` is wider than the modes of :samp:`{x}` and :samp:`{y}` , which need
+  where :samp:`{m}` is wider than the modes of :samp:`{x}` and :samp:`{y}`, which need
   not be the same.
 
   For unsigned widening multiplication, use the same idiom, but with
@@ -189,7 +189,7 @@ second operand.
   .. index:: quotient
 
 :samp:`(div:{m}{x}{y})` :samp:`(ss_div:{m}{x}{y})`
-  Represents the quotient in signed division of :samp:`{x}` by :samp:`{y}` ,
+  Represents the quotient in signed division of :samp:`{x}` by :samp:`{y}`,
   carried out in machine mode :samp:`{m}`.  If :samp:`{m}` is a floating point
   mode, it represents the exact quotient; otherwise, the integerized
   quotient.
@@ -238,8 +238,8 @@ second operand.
   .. index:: signed maximum
 
 :samp:`(smin:{m}{x}{y})` :samp:`(smax:{m}{x}{y})`
-  Represents the smaller (for ``smin``) or larger (for ``smax``) of
-  :samp:`{x}` and :samp:`{y}` , interpreted as signed values in mode :samp:`{m}`.
+  Represents the smaller (for ``smin`` ) or larger (for ``smax`` ) of
+  :samp:`{x}` and :samp:`{y}`, interpreted as signed values in mode :samp:`{m}`.
   When used with floating point, if both operands are zeros, or if either
   operand is ``NaN``, then it is unspecified which of the two operands
   is returned as the result.
@@ -261,8 +261,8 @@ second operand.
   .. index:: bitwise complement
 
 :samp:`(not:{m}{x})`
-  Represents the bitwise complement of the value represented by :samp:`{x}` ,
-  carried out in mode :samp:`{m}` , which must be a fixed-point machine mode.
+  Represents the bitwise complement of the value represented by :samp:`{x}`,
+  carried out in mode :samp:`{m}`, which must be a fixed-point machine mode.
 
   .. index:: and
 
@@ -272,7 +272,7 @@ second operand.
 
 :samp:`(and:{m}{x}{y})`
   Represents the bitwise logical-and of the values represented by
-  :samp:`{x}` and :samp:`{y}` , carried out in machine mode :samp:`{m}` , which must be
+  :samp:`{x}` and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be
   a fixed-point machine mode.
 
   .. index:: ior
@@ -283,7 +283,7 @@ second operand.
 
 :samp:`(ior:{m}{x}{y})`
   Represents the bitwise inclusive-or of the values represented by :samp:`{x}`
-  and :samp:`{y}` , carried out in machine mode :samp:`{m}` , which must be a
+  and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
 
   .. index:: xor
@@ -294,7 +294,7 @@ second operand.
 
 :samp:`(xor:{m}{x}{y})`
   Represents the bitwise exclusive-or of the values represented by :samp:`{x}`
-  and :samp:`{y}` , carried out in machine mode :samp:`{m}` , which must be a
+  and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
 
   .. index:: ashift
@@ -321,8 +321,8 @@ second operand.
   saturates to the minimum or maximum representable value if any of the bits
   shifted out differs from the final sign bit.
 
-  :samp:`{x}` have mode :samp:`{m}` , a fixed-point machine mode.  :samp:`{c}`
-  be a fixed-point mode or be a constant with mode ``VOIDmode``; which
+  :samp:`{x}` have mode :samp:`{m}`, a fixed-point machine mode.  :samp:`{c}`
+  be a fixed-point mode or be a constant with mode ``VOIDmode`` ; which
   mode is determined by the mode called for in the machine description
   entry for the left-shift instruction.  For example, on the VAX, the mode
   of :samp:`{c}` is ``QImode`` regardless of :samp:`{m}`.
@@ -359,7 +359,7 @@ second operand.
 
   :samp:`(abs:{m}{x})`
 :samp:`(ss_abs:{m}{x})`
-  Represents the absolute value of :samp:`{x}` , computed in mode :samp:`{m}`.
+  Represents the absolute value of :samp:`{x}`, computed in mode :samp:`{m}`.
   ``ss_abs`` ensures that an out-of-bounds result saturates to the
   maximum signed value.
 
@@ -368,22 +368,22 @@ second operand.
   .. index:: square root
 
 :samp:`(sqrt:{m}{x})`
-  Represents the square root of :samp:`{x}` , computed in mode :samp:`{m}`.
+  Represents the square root of :samp:`{x}`, computed in mode :samp:`{m}`.
   Most often :samp:`{m}` will be a floating point mode.
 
   .. index:: ffs
 
 :samp:`(ffs:{m}{x})`
   Represents one plus the index of the least significant 1-bit in
-  :samp:`{x}` , represented as an integer of mode :samp:`{m}`.  (The value is
+  :samp:`{x}`, represented as an integer of mode :samp:`{m}`.  (The value is
   zero if :samp:`{x}` is zero.)  The mode of :samp:`{x}` must be :samp:`{m}`
   or ``VOIDmode``.
 
   .. index:: clrsb
 
 :samp:`(clrsb:{m}{x})`
-  Represents the number of redundant leading sign bits in :samp:`{x}` ,
-  represented as an integer of mode :samp:`{m}` , starting at the most
+  Represents the number of redundant leading sign bits in :samp:`{x}`,
+  represented as an integer of mode :samp:`{m}`, starting at the most
   significant bit position.  This is one less than the number of leading
   sign bits (either 0 or 1), with no special cases.  The mode of :samp:`{x}`
   must be :samp:`{m}` or ``VOIDmode``.
@@ -391,8 +391,8 @@ second operand.
   .. index:: clz
 
 :samp:`(clz:{m}{x})`
-  Represents the number of leading 0-bits in :samp:`{x}` , represented as an
-  integer of mode :samp:`{m}` , starting at the most significant bit position.
+  Represents the number of leading 0-bits in :samp:`{x}`, represented as an
+  integer of mode :samp:`{m}`, starting at the most significant bit position.
   If :samp:`{x}` is zero, the value is determined by
   ``CLZ_DEFINED_VALUE_AT_ZERO`` (see :ref:`misc`).  Note that this is one of
   the few expressions that is not invariant under widening.  The mode of
@@ -401,8 +401,8 @@ second operand.
   .. index:: ctz
 
 :samp:`(ctz:{m}{x})`
-  Represents the number of trailing 0-bits in :samp:`{x}` , represented as an
-  integer of mode :samp:`{m}` , starting at the least significant bit position.
+  Represents the number of trailing 0-bits in :samp:`{x}`, represented as an
+  integer of mode :samp:`{m}`, starting at the least significant bit position.
   If :samp:`{x}` is zero, the value is determined by
   ``CTZ_DEFINED_VALUE_AT_ZERO`` (see :ref:`misc`).  Except for this case,
   ``ctz(x)`` is equivalent to ``ffs(x) - 1``.  The mode of
@@ -411,13 +411,13 @@ second operand.
   .. index:: popcount
 
 :samp:`(popcount:{m}{x})`
-  Represents the number of 1-bits in :samp:`{x}` , represented as an integer of
+  Represents the number of 1-bits in :samp:`{x}`, represented as an integer of
   mode :samp:`{m}`.  The mode of :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.
 
   .. index:: parity
 
 :samp:`(parity:{m}{x})`
-  Represents the number of 1-bits modulo 2 in :samp:`{x}` , represented as an
+  Represents the number of 1-bits modulo 2 in :samp:`{x}`, represented as an
   integer of mode :samp:`{m}`.  The mode of :samp:`{x}` must be :samp:`{m}` or
   ``VOIDmode``.
 
@@ -425,6 +425,6 @@ second operand.
 
 :samp:`(bswap:{m}{x})`
   Represents the value :samp:`{x}` with the order of bytes reversed, carried out
-  in mode :samp:`{m}` , which must be a fixed-point machine mode.
+  in mode :samp:`{m}`, which must be a fixed-point machine mode.
   The mode of :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.
 

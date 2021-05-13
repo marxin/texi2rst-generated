@@ -12,8 +12,8 @@ provide functionality beyond that provided by any standard, and those
 that are supported by GNU Fortran purely for backward compatibility
 with legacy compilers.  By default, :option:`-std=gnu` allows the
 compiler to accept both types of extensions, but to warn about the use
-of the latter.  Specifying either :option:`-std=f95` ,
-:option:`-std=f2003` , :option:`-std=f2008` , or :option:`-std=f2018`
+of the latter.  Specifying either :option:`-std=f95`,
+:option:`-std=f2003`, :option:`-std=f2008`, or :option:`-std=f2018`
 disables both types of extensions, and :option:`-std=legacy` allows
 both without warning.  The special compile flag :option:`-fdec` enables
 additional compatibility extensions along with those enabled by
@@ -70,7 +70,7 @@ look like:
 
         TYPESPEC*size x,y,z
 
-where ``TYPESPEC`` is a basic type (``INTEGER``, ``REAL``,
+where ``TYPESPEC`` is a basic type ( ``INTEGER``, ``REAL``,
 etc.), and where ``size`` is a byte count corresponding to the
 storage size of a valid kind for that type.  (For ``COMPLEX``
 variables, ``size`` is the total size of the real and imaginary
@@ -110,7 +110,7 @@ unlike in a ``DATA`` statement, an initializer only applies to the
 variable immediately preceding the initialization.  In other words,
 something like ``INTEGER I,J/2,3/`` is not valid.  This style of
 initialization is only allowed in declarations without double colons
-(``::``); the double colons were introduced in Fortran 90, which also
+( ``::`` ); the double colons were introduced in Fortran 90, which also
 introduced a standard syntax for initializing variables in type
 declarations.
 
@@ -311,8 +311,8 @@ BOZ literal constants
 
 .. index:: BOZ literal constants
 
-Besides decimal constants, Fortran also supports binary (``b``),
-octal (``o``) and hexadecimal (``z``) integer constants.  The
+Besides decimal constants, Fortran also supports binary ( ``b`` ),
+octal ( ``o`` ) and hexadecimal ( ``z`` ) integer constants.  The
 syntax is: :samp:`prefix quote digits quote`, were the prefix is
 either ``b``, ``o`` or ``z``, quote is either ``'`` or
 ``"`` and the digits are ``0`` or ``1`` for binary,
@@ -389,7 +389,7 @@ zero, and ``.TRUE.`` is interpreted as one.  When converting from
           i = .TRUE.
 
 However, there is no implicit conversion of ``INTEGER`` values in
-``if``-statements, nor of ``LOGICAL`` or ``INTEGER`` values
+``if`` -statements, nor of ``LOGICAL`` or ``INTEGER`` values
 in I/O operations.
 
 .. _hollerith-constants-support:
@@ -403,8 +403,8 @@ GNU Fortran supports Hollerith constants in assignments, ``DATA``
 statements, function and subroutine arguments. A Hollerith constant is
 written as a string of characters preceded by an integer constant 
 indicating the character count, and the letter ``H`` or
-``h``, and stored in bytewise fashion in a numeric (``INTEGER``,
-``REAL``, or ``COMPLEX``), ``LOGICAL`` or ``CHARACTER`` variable.
+``h``, and stored in bytewise fashion in a numeric ( ``INTEGER``,
+``REAL``, or ``COMPLEX`` ), ``LOGICAL`` or ``CHARACTER`` variable.
 The constant will be padded with spaces or truncated to fit the size of
 the variable in which it is stored.
 
@@ -452,7 +452,7 @@ to comparisons:
           write(*,*) "no match"
         end if
 
-Supported types are numeric (``INTEGER``, ``REAL``, or ``COMPLEX``),
+Supported types are numeric ( ``INTEGER``, ``REAL``, or ``COMPLEX`` ),
 and ``CHARACTER``.
 
 .. _character-conversion:
@@ -467,7 +467,7 @@ is a non-standard extension.  This feature is enabled using
 -fdec-char-conversions and only applies to character literals of ``kind=1``.
 
 Character literals can be used in ``DATA`` statements and assignments with
-numeric (``INTEGER``, ``REAL``, or ``COMPLEX``) or ``LOGICAL``
+numeric ( ``INTEGER``, ``REAL``, or ``COMPLEX`` ) or ``LOGICAL``
 variables. Like Hollerith constants they are copied byte-wise fashion. The
 constant will be padded with spaces or truncated to fit the size of the
 variable in which it is stored.
@@ -731,7 +731,7 @@ the OpenMP Application Program Interface v2.5:
 
 Please note:
 
-** :option:`-fopenmp` implies :option:`-frecursive` , i.e., all local arrays
+** :option:`-fopenmp` implies :option:`-frecursive`, i.e., all local arrays
   will be allocated on the stack.  When porting existing code to OpenMP,
   this may lead to surprising results, especially to segmentation faults
   if the stacksize is limited.
@@ -855,11 +855,11 @@ If you have a choice, you should instead use Fortran 90's 'derived types',
 which have a different syntax.
 
 In many cases, record structures can easily be converted to derived types.
-To convert, replace ``STRUCTURE /``:samp:`{structure-name}```/``
+To convert, replace  ``STRUCTURE /``:samp:`{structure-name}` ``/``
 by ``TYPE`` :samp:`{type-name}`.  Additionally, replace
-``RECORD /``:samp:`{structure-name}```/`` by
-``TYPE(``:samp:`{type-name}```)``. Finally, in the component access,
-replace the period (``.``) by the percent sign (``%``).
+ ``RECORD /``:samp:`{structure-name}` ``/`` by
+ ``TYPE(``:samp:`{type-name}` ``)``. Finally, in the component access,
+replace the period ( ``.`` ) by the percent sign ( ``%`` ).
 
 Here is an example of code using the non portable record structure syntax:
 
@@ -1168,8 +1168,8 @@ local variables will retain their values across multiple calls to a function.
 
 Entities marked ``AUTOMATIC`` will be stack automatic whenever possible.
 ``AUTOMATIC`` is the default for local variables smaller than
-:option:`-fmax-stack-var-size` , unless :option:`-fno-automatic` is given.  This
-attribute overrides :option:`-fno-automatic` , :option:`-fmax-stack-var-size` , and
+:option:`-fmax-stack-var-size`, unless :option:`-fno-automatic` is given.  This
+attribute overrides :option:`-fno-automatic`, :option:`-fmax-stack-var-size`, and
 blanket ``SAVE`` statements.
 
 Examples:
@@ -1221,18 +1221,18 @@ Specifically, :option:`-fdec-math` enables the COTAN intrinsic, and
 trigonometric intrinsics which accept or produce values in degrees instead of
 radians.  Here is a summary of the new intrinsics:
 
-==========  ===========
-Radians     Degrees
-==========  ===========
-``ACOS``    ``ACOSD``*
-``ASIN``    ``ASIND``*
-``ATAN``    ``ATAND``*
-``ATAN2``   ``ATAN2D``*
-``COS``     ``COSD``*
-``COTAN``*  ``COTAND``*
-``SIN``     ``SIND``*
-``TAN``     ``TAND``*
-==========  ===========
+===========  ============
+Radians      Degrees
+===========  ============
+``ACOS``     ``ACOSD`` *
+``ASIN``     ``ASIND`` *
+``ATAN``     ``ATAND`` *
+``ATAN2``    ``ATAN2D`` *
+``COS``      ``COSD`` *
+``COTAN`` *  ``COTAND`` *
+``SIN``      ``SIND`` *
+``TAN``      ``TAND`` *
+===========  ============
 * Enabled with :option:`-fdec-math`.
 
 For advanced users, it may be important to know the implementation of these
@@ -1317,7 +1317,7 @@ Bitwise logical operators
 
 .. index:: logical, bitwise
 
-With :option:`-fdec` , GNU Fortran relaxes the type constraints on
+With :option:`-fdec`, GNU Fortran relaxes the type constraints on
 logical operators to allow integer operands, and performs the corresponding
 bitwise operation instead.  This flag is for compatibility only, and should be
 avoided in new code.  Consider:
@@ -1329,7 +1329,7 @@ avoided in new code.  Consider:
     j = z'cc'
     print *, i .AND. j
 
-In this example, compiled with :option:`-fdec` , GNU Fortran will
+In this example, compiled with :option:`-fdec`, GNU Fortran will
 replace the ``.AND.`` operation with a call to the intrinsic
 ``IAND`` function, yielding the bitwise-and of ``i`` and ``j``.
 
@@ -1369,7 +1369,7 @@ Extended I/O specifiers
 
 GNU Fortran supports the additional legacy I/O specifiers
 ``CARRIAGECONTROL``, ``READONLY``, and ``SHARE`` with the
-compile flag :option:`-fdec` , for compatibility.
+compile flag :option:`-fdec`, for compatibility.
 
 .. envvar:: CARRIAGECONTROL
 
@@ -1411,7 +1411,7 @@ compile flag :option:`-fdec` , for compatibility.
 
   The ``READONLY`` specifier may be given upon opening a unit, and is
   equivalent to specifying ``ACTION='READ'``, except that the file may not be
-  deleted on close (i.e. ``CLOSE`` with ``STATUS="DELETE"``). The syntax
+  deleted on close (i.e. ``CLOSE`` with ``STATUS="DELETE"`` ). The syntax
   is:
 
   .. code-block:: c++
@@ -1458,8 +1458,8 @@ Legacy PARAMETER statements
 
 For compatibility, GNU Fortran supports legacy PARAMETER statements without
 parentheses with :option:`-std=legacy`.  A warning is emitted if used with
-:option:`-std=gnu` , and an error is acknowledged with a real Fortran standard
-flag ( :option:`-std=f95` , etc...).  These statements take the following form:
+:option:`-std=gnu`, and an error is acknowledged with a real Fortran standard
+flag ( :option:`-std=f95`, etc...).  These statements take the following form:
 
 .. code-block:: c++
 

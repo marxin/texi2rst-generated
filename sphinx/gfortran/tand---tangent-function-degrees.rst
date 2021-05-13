@@ -33,7 +33,7 @@
   ===========  ==========================================
 
 :samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}` , and its value is in degrees.
+  The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
 :samp:`{Example}:`
 

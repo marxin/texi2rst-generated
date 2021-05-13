@@ -94,7 +94,7 @@ arc-linux-uclibcUse :samp:`configure --target=arc-linux-uclibc --with-cpu=arc700
 arm-*-eabiARM-family processors.
 
 Building the Ada frontend commonly fails (an infinite loop executing
-``xsinfo``) if the host compiler is GNAT 4.8.  Host compilers built from the
+``xsinfo`` ) if the host compiler is GNAT 4.8.  Host compilers built from the
 GNAT 4.6, 4.9 or 5 release branches are known to succeed.
 
 .. _avr:
@@ -188,7 +188,7 @@ by GCC 4.5 and above.
 
 We support FreeBSD using the ELF file format with DWARF 2 debugging
 for all CPU architectures.  You may use :option:`-gstabs` instead of
-:option:`-g` , if you really want the old debugging format.  There are
+:option:`-g`, if you really want the old debugging format.  There are
 no known issues with mixing object files and libraries with different
 debugging formats.  Otherwise, this release of GCC should now match
 more of the configuration used in the stock FreeBSD configuration of
@@ -370,7 +370,7 @@ At this time, the GNU linker does not support the creation of long
 branch stubs.  As a result, it cannot successfully link binaries
 containing branch offsets larger than 8 megabytes.  In addition,
 there are problems linking shared libraries, linking executables
-with :option:`-static` , and with dwarf2 unwind and exception support.
+with :option:`-static`, and with dwarf2 unwind and exception support.
 It also doesn't provide stubs for internal calls to global functions
 in shared libraries, so these calls cannot be overloaded.
 
@@ -424,7 +424,7 @@ ia64-*-linuxIA-64 processor (also known as IPF, or Itanium Processor Family)
 running GNU/Linux.
 
 If you are using the installed system libunwind library with
-:option:`--with-system-libunwind` , then you must use libunwind 0.98 or
+:option:`--with-system-libunwind`, then you must use libunwind 0.98 or
 later.
 
 None of the following versions of GCC has an ABI that is compatible
@@ -705,7 +705,7 @@ MIPS systems check for division by zero (unless
 generating either a conditional trap or a break instruction.  Using
 trap results in smaller code, but is only supported on MIPS II and
 later.  Also, some versions of the Linux kernel have a bug that
-prevents trap from generating the proper signal (``SIGFPE``).  To enable
+prevents trap from generating the proper signal ( ``SIGFPE`` ).  To enable
 the use of break, use the :option:`--with-divide=breaks`
 :command:`configure` option when configuring GCC.  The default is to
 use traps on systems that support them.

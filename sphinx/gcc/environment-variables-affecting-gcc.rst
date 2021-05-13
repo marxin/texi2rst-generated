@@ -13,7 +13,7 @@ when searching for various kinds of files.  Some are used to specify other
 aspects of the compilation environment.
 
 Note that you can also specify places to search using options such as
-:option:`-B` , :option:`-I` and :option:`-L` (see :ref:`directory-options`).  These
+:option:`-B`, :option:`-I` and :option:`-L` (see :ref:`directory-options`).  These
 take precedence over places specified using environment variables, which
 in turn take precedence over those specified by the configuration of GCC.
 See :ref:`driver`.
@@ -93,7 +93,7 @@ See :ref:`driver`.
   directories whose name normally begins with :samp:`/usr/local/lib/gcc`
   (more precisely, with the value of :envvar:`GCC_INCLUDE_DIR`), GCC tries
   replacing that beginning with the specified prefix to produce an
-  alternate directory name.  Thus, with :option:`-Bfoo/` , GCC searches
+  alternate directory name.  Thus, with :option:`-Bfoo/`, GCC searches
   foo/bar just before it searches the standard directory 
   /usr/local/lib/bar.
   If a standard directory begins with the configured
@@ -181,13 +181,13 @@ preprocessor.
   semicolon, and for almost all other targets it is a colon.
 
   :envvar:`CPATH` specifies a list of directories to be searched as if
-  specified with :option:`-I` , but after any paths given with :option:`-I`
+  specified with :option:`-I`, but after any paths given with :option:`-I`
   options on the command line.  This environment variable is used
   regardless of which language is being preprocessed.
 
   The remaining environment variables apply only when preprocessing the
   particular language indicated.  Each specifies a list of directories
-  to be searched as if specified with :option:`-isystem` , but after any
+  to be searched as if specified with :option:`-isystem`, but after any
   paths given with :option:`-isystem` options on the command line.
 
   In all these variables, an empty element instructs the compiler to

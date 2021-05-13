@@ -5,7 +5,7 @@ GIMPLE sequences
 
 .. index:: GIMPLE sequences
 
-GIMPLE sequences are the tuple equivalent of ``STATEMENT_LIST``'s
+GIMPLE sequences are the tuple equivalent of ``STATEMENT_LIST`` 's
 used in ``GENERIC``.  They are used to chain statements together, and
 when used in conjunction with sequence iterators, provide a
 framework for iterating through statements.
@@ -25,13 +25,13 @@ Below is a list of functions to manipulate and query sequences.
 
 .. function:: void gimple_seq_add_stmt(gimple_seq *seq,gimple g)
 
-  Link a gimple statement to the end of the sequence *``SEQ`` if ``G`` is
-  not ``NULL``.  If *``SEQ`` is ``NULL``, allocate a sequence before linking.
+  Link a gimple statement to the end of the sequence * ``SEQ`` if ``G`` is
+  not ``NULL``.  If * ``SEQ`` is ``NULL``, allocate a sequence before linking.
 
 .. function:: void gimple_seq_add_seq(gimple_seq *dest,gimple_seq src)
 
-  Append sequence ``SRC`` to the end of sequence *``DEST`` if ``SRC`` is not
-  ``NULL``.  If *``DEST`` is ``NULL``, allocate a new sequence before
+  Append sequence ``SRC`` to the end of sequence * ``DEST`` if ``SRC`` is not
+  ``NULL``.  If * ``DEST`` is ``NULL``, allocate a new sequence before
   appending.
 
 .. function:: gimple_seq gimple_seq_deep_copy(gimple_seq src)

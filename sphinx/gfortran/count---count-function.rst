@@ -12,7 +12,7 @@
 .. index:: array, number of elements
 
 :samp:`{Description}:`
-  Counts the number of ``.TRUE.`` elements in a logical :samp:`{MASK}` ,
+  Counts the number of ``.TRUE.`` elements in a logical :samp:`{MASK}`,
   or, if the :samp:`{DIM}` argument is supplied, counts the number of
   elements along each row of the array in the :samp:`{DIM}` direction.
   If the array has zero size, or all of the elements of :samp:`{MASK}` are
@@ -40,7 +40,7 @@
   The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
   :samp:`{KIND}` is absent, the return value is of default integer kind.
   If :samp:`{DIM}` is present, the result is an array with a rank one less
-  than the rank of :samp:`{ARRAY}` , and a size corresponding to the shape
+  than the rank of :samp:`{ARRAY}`, and a size corresponding to the shape
   of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.
 
 :samp:`{Example}:`

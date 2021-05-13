@@ -52,7 +52,7 @@ These are the options defined for the Altera Nios II processor.
     linker script to allocate them within the addressable range of the
     global pointer.
 
-    :option:`-mgpopt` is equivalent to :option:`-mgpopt=local` , and
+    :option:`-mgpopt` is equivalent to :option:`-mgpopt=local`, and
   :option:`-mno-gpopt` is equivalent to :option:`-mgpopt=none`.
 
   The default is :option:`-mgpopt` except when :option:`-fpic` or
@@ -81,7 +81,7 @@ These are the options defined for the Altera Nios II processor.
 .. option:: -mr0rel-sec=regexp
 
   This option specifies names of sections that can be accessed via a 
-  16-bit offset from ``r0``; that is, in the low 32K or high 32K 
+  16-bit offset from ``r0`` ; that is, in the low 32K or high 32K 
   of the 32-bit address space.  It is most useful in conjunction with 
   ``section`` attributes on variable declarations 
   (see :ref:`common-variable-attributes`) and a custom linker script.  
@@ -339,7 +339,7 @@ ELF (bare-metal) target:
 
 .. option:: -msmallc
 
-  Link with a limited version of the C library, :option:`-lsmallc` , rather than
+  Link with a limited version of the C library, :option:`-lsmallc`, rather than
   Newlib.
 
 .. option:: -msys-crt0=startfile

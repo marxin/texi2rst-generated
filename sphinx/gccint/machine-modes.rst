@@ -416,7 +416,7 @@ mode classes are:
 
   This is a mode class for modes that don't want to provide operations
   other than register moves, memory moves, loads, stores, and
-  ``unspec``s. They have a size and precision and that's all.
+  ``unspec`` s. They have a size and precision and that's all.
 
 .. envvar:: MODE_RANDOM
 
@@ -472,7 +472,7 @@ The wrapper classes implicitly convert to ``machine_mode`` and to any
 wrapper class that represents a more general condition; for example
 ``scalar_int_mode`` and ``scalar_float_mode`` both convert
 to ``scalar_mode`` and all three convert to ``fixed_size_mode``.
-The classes act like ``machine_mode``s that accept only certain
+The classes act like ``machine_mode`` s that accept only certain
 named modes.
 
 .. index:: opt_mode
@@ -493,7 +493,7 @@ operations on an ``opt_mode<T>`` :samp:`{x}` are as follows:
   Assert that :samp:`{x}` holds a mode rather than nothing and return that mode.
 
 :samp:`{x} = {y}`
-  Set :samp:`{x}` to :samp:`{y}` , where :samp:`{y}` is a :samp:`{T}` or implicitly converts
+  Set :samp:`{x}` to :samp:`{y}`, where :samp:`{y}` is a :samp:`{T}` or implicitly converts
   to a :samp:`{T}`.
 
   The default constructor sets an ``opt_mode<T>`` to nothing.
@@ -508,7 +508,7 @@ or machine mode wrapper :samp:`{x}` :
   Return true if :samp:`{x}` meets the conditions for wrapper class :samp:`{T}`.
 
 :samp:`is_a <{T}> ({x}, &{y})`
-  Return true if :samp:`{x}` meets the conditions for wrapper class :samp:`{T}` ,
+  Return true if :samp:`{x}` meets the conditions for wrapper class :samp:`{T}`,
   storing it in :samp:`{y}` if so.  :samp:`{y}` must be assignment-compatible with
   :samp:`{T}`.
 

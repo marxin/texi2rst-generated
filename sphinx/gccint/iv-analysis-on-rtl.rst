@@ -14,15 +14,15 @@ several loops) is finished, ``iv_analysis_done`` should be called.
 The following functions can be used to access the results of the
 analysis:
 
-** ``iv_analyze``: Analyzes a single register used in the given
+** ``iv_analyze`` : Analyzes a single register used in the given
   insn.  If no use of the register in this insn is found, the following
   insns are scanned, so that this function can be called on the insn
   returned by get_condition.
 
-* ``iv_analyze_result``: Analyzes result of the assignment in the
+* ``iv_analyze_result`` : Analyzes result of the assignment in the
   given insn.
 
-* ``iv_analyze_expr``: Analyzes a more complicated expression.
+* ``iv_analyze_expr`` : Analyzes a more complicated expression.
   All its operands are analyzed by ``iv_analyze``, and hence they must
   be used in the specified insn or one of the following insns.
 

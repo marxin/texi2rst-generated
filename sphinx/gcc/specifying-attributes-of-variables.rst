@@ -196,7 +196,7 @@ The following attributes are supported on most targets.
   The ``alloc_size`` variable attribute may be applied to the declaration
   of a pointer to a function that returns a pointer and takes at least one
   argument of an integer type.  It indicates that the returned pointer points
-  to an object whose size is given by the function argument at :samp:`{position-1}` ,
+  to an object whose size is given by the function argument at :samp:`{position-1}`,
   or by the product of the arguments at :samp:`{position-1}` and :samp:`{position-2}`.
   Meaningful sizes are positive values less than ``PTRDIFF_MAX``.  Other
   sizes are disagnosed when detected.  GCC uses this information to improve
@@ -319,14 +319,14 @@ The following attributes are supported on most targets.
   ``unsigned char``, or pointer to such a type is intended to store
   character arrays that do not necessarily contain a terminating ``NUL``.
   This is useful in detecting uses of such arrays or pointers with functions
-  that expect ``NUL``-terminated strings, and to avoid warnings when such
+  that expect ``NUL`` -terminated strings, and to avoid warnings when such
   an array or pointer is used as an argument to a bounded string manipulation
   function such as ``strncpy``.  For example, without the attribute, GCC
   will issue a warning for the ``strncpy`` call below because it may
   truncate the copy without appending the terminating ``NUL`` character.
   Using the attribute makes it possible to suppress the warning.  However,
   when the array is declared with the attribute the call to ``strlen`` is
-  diagnosed because when the array doesn't contain a ``NUL``-terminated
+  diagnosed because when the array doesn't contain a ``NUL`` -terminated
   string the call is undefined.  To copy, compare, of search non-string
   character arrays use the ``memcpy``, ``memcmp``, ``memchr``,
   and other functions that operate on arrays of bytes.  In addition,
@@ -411,7 +411,7 @@ The following attributes are supported on most targets.
   You may use the ``section`` attribute with initialized or
   uninitialized global variables but the linker requires
   each object be defined once, with the exception that uninitialized
-  variables tentatively go in the ``common`` (or ``bss``) section
+  variables tentatively go in the ``common`` (or ``bss`` ) section
   and can be multiply 'defined'.  Using the ``section`` attribute
   changes what section the variable goes into and may cause the
   linker to issue an error if an uninitialized variable has multiple
@@ -483,7 +483,7 @@ The following attributes are supported on most targets.
 
   causes the compiler to set the mode for ``foo``, to be 16 bytes,
   divided into ``int`` sized units.  Assuming a 32-bit ``int``,
-  ``foo``'s type is a vector of four units of four bytes each, and
+  ``foo`` 's type is a vector of four units of four bytes each, and
   the corresponding mode of ``foo`` is ``V4SI``.
   See :ref:`vector-extensions`, for details of manipulating vector variables.
 
@@ -874,7 +874,7 @@ control bus which is specified with ``cb`` attributes.
 
   Variables with the ``near`` attribute are assumed to have addresses
   that fit in a 24-bit addressing mode.  This is the default for large
-  variables (``-mtiny=4`` is the default) but this attribute can
+  variables ( ``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
 .. option:: far
@@ -1000,7 +1000,7 @@ MSP430 Variable Attributes
   same name (see :ref:`msp430-function-attributes`), but it has some additional
   functionality.
 
-  If :option:`-mdata-region` ={``upper,either,none``} has been passed, or
+  If :option:`-mdata-region` ={ ``upper,either,none`` } has been passed, or
   the ``section`` attribute is applied to a variable, the compiler will
   generate 430X instructions to handle it.  This is because the compiler has
   to assume that the variable could get placed in the upper memory region
@@ -1126,7 +1126,7 @@ One attribute is currently defined for xstormy16 configurations:
 
   .. index:: below100 variable attribute, Xstormy16
 
-  If a variable has the ``below100`` attribute (``BELOW100`` is
+  If a variable has the ``below100`` attribute ( ``BELOW100`` is
   allowed also), GCC places the variable in the first 0x100 bytes of
   memory and use special opcodes to access it.  Such variables are
   placed in either the ``.bss_below100`` section or the

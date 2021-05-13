@@ -66,8 +66,8 @@ Introduction
 This manual documents the internals of the GNU compilers, including
 how to port them to new targets and some information about how to
 write front ends for new languages.  It corresponds to the compilers
-$$VERSION_PACKAGE$$
-version $$version-GCC$$.  The use of the GNU compilers is documented in a
+|package_version|
+version |gcc_version|.  The use of the GNU compilers is documented in a
 separate manual.  See :ref:`Introduction <top>`.
 
 This manual is mainly a reference manual rather than a tutorial.  It
@@ -1585,7 +1585,7 @@ alphabetical order.
   for all of their merged runtime code.
 
 * Nick Clifton for arm, mcore, fr30, v850, m32r, msp430 rx work,
-  :option:`--help` , and other random hacking.
+  :option:`--help`, and other random hacking.
 
 * Michael Cook for libstdc++ cleanup patches to reduce warnings.
 

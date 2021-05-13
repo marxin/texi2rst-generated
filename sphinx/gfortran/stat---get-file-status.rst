@@ -12,7 +12,7 @@
   the file itself, but execute (search) permission is required on all of the 
   directories in path that lead to the file.
 
-  The elements that are obtained and stored in the array ``VALUES``:
+  The elements that are obtained and stored in the array ``VALUES`` :
 
   ==============  =====================================================================
   ``VALUES(1)``   Device ID

@@ -28,8 +28,8 @@
   ==============  =======================================================
 
 :samp:`{Return value}:`
-  The return value is a ``LOGICAL`` value equal to :samp:`{L}` , with a
-  kind corresponding to :samp:`{KIND}` , or of the default logical kind if
+  The return value is a ``LOGICAL`` value equal to :samp:`{L}`, with a
+  kind corresponding to :samp:`{KIND}`, or of the default logical kind if
   :samp:`{KIND}` is not given.
 
 :samp:`{See also}:`

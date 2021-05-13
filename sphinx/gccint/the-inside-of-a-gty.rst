@@ -73,7 +73,7 @@ The available options are:
     };
 
   In this case, the ``length`` option is used to override the specified
-  array length (which should usually be ``1``).  The parameter of the
+  array length (which should usually be ``1`` ).  The parameter of the
   option is a fragment of C code that calculates the length.
 
   The second case is when a structure or a global variable contains a
@@ -207,7 +207,7 @@ The available options are:
   less stack space by iterating along the list instead of recursing down
   it.  ``chain_next`` is an expression for the next item in the list,
   ``chain_prev`` is an expression for the previous item.  For singly
-  linked lists, use only ``chain_next``; for doubly linked lists, use
+  linked lists, use only ``chain_next`` ; for doubly linked lists, use
   both.  The machinery requires that taking the next item of the
   previous item gives the original item.  ``chain_circular`` is similar
   to ``chain_next``, but can be used for circular single linked lists.
@@ -275,7 +275,7 @@ The available options are:
   ``atomic`` option.
 
   Note that, currently, global variables cannot be marked with
-  ``atomic``; only fields of a struct can.  This is a known
+  ``atomic`` ; only fields of a struct can.  This is a known
   limitation.  It would be useful to be able to mark global pointers
   with ``atomic`` to make the PCH machinery aware of them so that
   they are saved and restored correctly to PCH files.

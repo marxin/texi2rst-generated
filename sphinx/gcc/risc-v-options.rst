@@ -79,7 +79,7 @@ These command-line options are defined for RISC-V targets:
   :samp:`sifive-3-series`, :samp:`sifive-5-series`, :samp:`sifive-7-series`,
   :samp:`size`, and all valid options for :option:`-mcpu` =.
 
-  When :option:`-mtune` = is not specified, use the setting from :option:`-mcpu` ,
+  When :option:`-mtune` = is not specified, use the setting from :option:`-mcpu`,
   the default is :samp:`rocket` if both are not specified.
 
   The :samp:`size` choice is not intended for use by end-users.  This is used

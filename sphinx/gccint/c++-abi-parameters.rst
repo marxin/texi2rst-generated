@@ -83,7 +83,7 @@ C++ ABI parameters
 
   This hook returns true if the target ``atexit`` function can be used
   in the same manner as ``__cxa_atexit`` to register C++ static
-  destructors. This requires that ``atexit``-registered functions in
+  destructors. This requires that ``atexit`` -registered functions in
   shared libraries are run in the correct order when the libraries are
   unloaded. The default is to return false.
 

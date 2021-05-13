@@ -82,13 +82,13 @@ to repeat that multiple times:
       (minus (minus @0 @1) @0)
       (negate @1)))
 
-Note that ``if``s in outer position do not have the optional
+Note that ``if`` s in outer position do not have the optional
 else clause but instead have multiple then clauses.
 
 Ifs can be nested.
 
 There exists a ``switch`` expression which can be used to
-chain conditions avoiding nesting ``if``s too much:
+chain conditions avoiding nesting ``if`` s too much:
 
 .. code-block:: c++
 
@@ -220,8 +220,8 @@ nested and a ``for`` can have multiple operators to iterate.
       (simplify...
 
 In this example the pattern will be repeated four times with
-``opa, opb, opc`` being ``plus, minus, plus``;
-``plus, minus, minus``; ``minus, plus, plus``;
+``opa, opb, opc`` being ``plus, minus, plus`` ;
+``plus, minus, minus`` ; ``minus, plus, plus`` ;
 ``minus, plus, minus``.
 
 To avoid repeating operator lists in ``for`` you can name
@@ -264,7 +264,7 @@ is the same as
     (SQRT (POW @0 @1))
     (POW (abs @0) (mult @1 { built_real (TREE_TYPE (@1), dconsthalf); }))))
 
-``for``s and operator lists can include the special identifier
+``for`` s and operator lists can include the special identifier
 ``null`` that matches nothing and can never be generated.  This can
 be used to pad an operator list so that it has a standard form,
 even if there isn't a suitable operator for every form.
@@ -307,7 +307,7 @@ for code generation targeting ``GIMPLE``.
 As intermediate conversions are often optional there is a way to
 avoid the need to repeat patterns both with and without such
 conversions.  Namely you can mark a conversion as being optional
-with a ``?``:
+with a ``?`` :
 
 .. code-block:: c++
 
@@ -327,7 +327,7 @@ The support for ``?`` marking extends to all unary operations
 including predicates you declare yourself with ``match``.
 
 Predicates available from the GCC middle-end need to be made
-available explicitely via ``define_predicates``:
+available explicitely via ``define_predicates`` :
 
 .. code-block:: c++
 

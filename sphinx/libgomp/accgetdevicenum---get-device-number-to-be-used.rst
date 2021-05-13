@@ -5,7 +5,7 @@
 
 Description
   This function returns which device number associated with the specified device
-  type :samp:`{devicetype}` , will be used when executing a parallel or kernels
+  type :samp:`{devicetype}`, will be used when executing a parallel or kernels
   region.
 
 :samp:`{C/C++}:`

@@ -50,7 +50,7 @@ These options are defined for AArch64 implementations:
 
   Generate code for the large code model.  This makes no assumptions about
   addresses and sizes of sections.  Programs can be statically linked only.  The
-  :option:`-mcmodel=large` option is incompatible with :option:`-mabi=ilp32` ,
+  :option:`-mcmodel=large` option is incompatible with :option:`-mabi=ilp32`,
   :option:`-fpic` and :option:`-fPIC`.
 
 .. option:: -mstrict-align, -mno-strict-align
@@ -144,7 +144,7 @@ These options are defined for AArch64 implementations:
 
   This option is only applicable when compiling for the base ARMv8.0
   instruction set.  If using a later revision, e.g. :option:`-march=armv8.1-a`
-  or :option:`-march=armv8-a+lse` , the ARMv8.1-Atomics instructions will be
+  or :option:`-march=armv8-a+lse`, the ARMv8.1-Atomics instructions will be
   used directly.  The same applies when using :option:`-mcpu` = when the
   selected cpu supports the :samp:`lse` feature.
   This option is on by default.
@@ -243,7 +243,7 @@ These options are defined for AArch64 implementations:
   generating assembly code (as if by :option:`-march` ) and to determine
   the target processor for which to tune for performance (as if
   by :option:`-mtune` ).  Where this option is used in conjunction
-  with :option:`-march` or :option:`-mtune` , those options take precedence
+  with :option:`-march` or :option:`-mtune`, those options take precedence
   over the appropriate part of this option.
 
 .. option:: -moverride=string
@@ -468,8 +468,8 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`pauth`
   Enable the Pointer Authentication Extension.
 
-  Feature crypto implies aes , sha2 , and simd ,
+  Feature crypto implies aes, sha2, and simd,
 which implies fp.
-Conversely, nofp implies nosimd , which implies
-nocrypto , noaes and nosha2.
+Conversely, nofp implies nosimd, which implies
+nocrypto, noaes and nosha2.
 

@@ -73,7 +73,7 @@ either your program or the GNU Fortran compiler.
   being aborted, producing a core file useful for debugging.  :samp:`{list}`
   is a (possibly empty) comma-separated list of the following
   exceptions: :samp:`invalid` (invalid floating point operation, such as
-  ``SQRT(-1.0)``), :samp:`zero` (division by zero), :samp:`overflow`
+  ``SQRT(-1.0)`` ), :samp:`zero` (division by zero), :samp:`overflow`
   (overflow in a floating point operation), :samp:`underflow` (underflow
   in a floating point operation), :samp:`inexact` (loss of precision
   during operation), and :samp:`denormal` (operation performed on a
@@ -88,8 +88,8 @@ either your program or the GNU Fortran compiler.
   these three exceptions is probably a good idea.
 
   If the option is used more than once in the command line, the lists will
-  be joined: '``ffpe-trap=``:samp:`{list1}` ``ffpe-trap=``:samp:`{list2}` '
-  is equivalent to ``ffpe-trap=``:samp:`{list1}` , :samp:`{list2}`.
+  be joined: '  ``ffpe-trap=``:samp:`{list1}`  ``ffpe-trap=``:samp:`{list2}` '
+  is equivalent to  ``ffpe-trap=``:samp:`{list1}`,:samp:`{list2}`.
 
   Note that once enabled an exception cannot be disabled (no negative form).
 

@@ -45,7 +45,7 @@ These command-line options are defined for RX targets:
 .. option:: -mbig-endian-data, -mlittle-endian-data
 
   Store data (but not code) in the big-endian format.  The default is
-  :option:`-mlittle-endian-data` , i.e. to store data in the little-endian
+  :option:`-mlittle-endian-data`, i.e. to store data in the little-endian
   format.
 
 .. option:: -msmall-data-limit=N
@@ -55,7 +55,7 @@ These command-line options are defined for RX targets:
   area can lead to smaller and faster code, but the size of area is
   limited and it is up to the programmer to ensure that the area does
   not overflow.  Also when the small data area is used one of the RX's
-  registers (usually ``r13``) is reserved for use pointing to this
+  registers (usually ``r13`` ) is reserved for use pointing to this
   area, so it is no longer available for use by the compiler.  This
   could result in slower and/or larger code if variables are pushed onto
   the stack instead of being held in this register.
@@ -138,7 +138,7 @@ These command-line options are defined for RX targets:
   depends upon whether the :option:`-msmall-data-limit` and/or the
   :option:`-mint-register` command-line options are enabled.  Starting
   with register ``r13`` and proceeding downwards, registers are
-  allocated first to satisfy the requirements of :option:`-mint-register` ,
+  allocated first to satisfy the requirements of :option:`-mint-register`,
   then :option:`-mpid` and finally :option:`-msmall-data-limit`.  Thus it
   is possible for the small data area register to be ``r8`` if both
   :option:`-mint-register=4` and :option:`-mpid` are specified on the

@@ -111,7 +111,7 @@ qualification of the underlying element type when applied to an array
 type.  (If the element type is itself an array, then the recursion
 continues until a non-array type is found, and the qualification of this
 type is examined.)  So, for example, ``CP_TYPE_CONST_P`` will hold of
-the type ``const int ()[7]``, denoting an array of seven ``int``s.
+the type ``const int ()[7]``, denoting an array of seven ``int`` s.
 
 The following functions and macros deal with cv-qualification of types:
 
@@ -119,27 +119,27 @@ The following functions and macros deal with cv-qualification of types:
   This function returns the set of type qualifiers applied to this type.
   This value is ``TYPE_UNQUALIFIED`` if no qualifiers have been
   applied.  The ``TYPE_QUAL_CONST`` bit is set if the type is
-  ``const``-qualified.  The ``TYPE_QUAL_VOLATILE`` bit is set if the
-  type is ``volatile``-qualified.  The ``TYPE_QUAL_RESTRICT`` bit is
-  set if the type is ``restrict``-qualified.
+  ``const`` -qualified.  The ``TYPE_QUAL_VOLATILE`` bit is set if the
+  type is ``volatile`` -qualified.  The ``TYPE_QUAL_RESTRICT`` bit is
+  set if the type is ``restrict`` -qualified.
 
 .. envvar:: CP_TYPE_CONST_PCP_TYPE_CONST_P
 
-  This macro holds if the type is ``const``-qualified.
+  This macro holds if the type is ``const`` -qualified.
 
 .. envvar:: CP_TYPE_VOLATILE_PCP_TYPE_VOLATILE_P
 
-  This macro holds if the type is ``volatile``-qualified.
+  This macro holds if the type is ``volatile`` -qualified.
 
 .. envvar:: CP_TYPE_RESTRICT_PCP_TYPE_RESTRICT_P
 
-  This macro holds if the type is ``restrict``-qualified.
+  This macro holds if the type is ``restrict`` -qualified.
 
 .. envvar:: CP_TYPE_CONST_NON_VOLATILE_PCP_TYPE_CONST_NON_VOLATILE_P
 
-  This predicate holds for a type that is ``const``-qualified, but
-  *not* ``volatile``-qualified; other cv-qualifiers are ignored as
-  well: only the ``const``-ness is tested.
+  This predicate holds for a type that is ``const`` -qualified, but
+  *not* ``volatile`` -qualified; other cv-qualifiers are ignored as
+  well: only the ``const`` -ness is tested.
 
 A few other macros and functions are usable with all types:
 
@@ -155,7 +155,7 @@ A few other macros and functions are usable with all types:
 
 .. envvar:: TYPE_NAMETYPE_NAME
 
-  This macro returns a declaration (in the form of a ``TYPE_DECL``) for
+  This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
   the type.  (Note this macro does *not* return an
   ``IDENTIFIER_NODE``, as you might expect, given its name!)  You can
   look at the ``DECL_NAME`` of the ``TYPE_DECL`` to obtain the
@@ -231,10 +231,10 @@ language-dependent info about GENERIC types.
 .. envvar:: TYPENAME_TYPE
 
   Used to represent a construct of the form ``typename T::A``.  The
-  ``TYPE_CONTEXT`` is ``T``; the ``TYPE_NAME`` is an
+  ``TYPE_CONTEXT`` is ``T`` ; the ``TYPE_NAME`` is an
   ``IDENTIFIER_NODE`` for ``A``.  If the type is specified via a
   template-id, then ``TYPENAME_TYPE_FULLNAME`` yields a
-  ``TEMPLATE_ID_EXPR``.  The ``TREE_TYPE`` is non-``NULL`` if the
+  ``TEMPLATE_ID_EXPR``.  The ``TREE_TYPE`` is non- ``NULL`` if the
   node is implicitly generated in support for the implicit typename
   extension; in which case the ``TREE_TYPE`` is a type node for the
   base-class.
@@ -270,7 +270,7 @@ rather than the global namespace in particular.
 
 A namespace is represented by a ``NAMESPACE_DECL`` node.
 
-The following macros and functions can be used on a ``NAMESPACE_DECL``:
+The following macros and functions can be used on a ``NAMESPACE_DECL`` :
 
 .. envvar:: DECL_NAMEDECL_NAME
 
@@ -363,7 +363,7 @@ A class type is represented by either a ``RECORD_TYPE`` or a
 ``UNION_TYPE``.  A class declared with the ``union`` tag is
 represented by a ``UNION_TYPE``, while classes declared with either
 the ``struct`` or the ``class`` tag are represented by
-``RECORD_TYPE``s.  You can use the ``CLASSTYPE_DECLARED_CLASS``
+``RECORD_TYPE`` s.  You can use the ``CLASSTYPE_DECLARED_CLASS``
 macro to discern whether or not a particular type is a ``class`` as
 opposed to a ``struct``.  This macro will be true only for classes
 declared with the ``class`` tag.
@@ -501,8 +501,8 @@ be ``NULL_TREE``.
 
 To determine the scope of a function, you can use the
 ``DECL_CONTEXT`` macro.  This macro will return the class
-(either a ``RECORD_TYPE`` or a ``UNION_TYPE``) or namespace (a
-``NAMESPACE_DECL``) of which the function is a member.  For a virtual
+(either a ``RECORD_TYPE`` or a ``UNION_TYPE`` ) or namespace (a
+``NAMESPACE_DECL`` ) of which the function is a member.  For a virtual
 function, this macro returns the class in which the function was
 actually defined, not the base class in which the virtual declaration
 occurred.
@@ -519,7 +519,7 @@ the ``DECL_CONTEXT`` for ``f`` will be the
 ``global_namespace``, but the ``DECL_FRIEND_CONTEXT`` will be the
 ``RECORD_TYPE`` for ``C``.
 
-The following macros and functions can be used on a ``FUNCTION_DECL``:
+The following macros and functions can be used on a ``FUNCTION_DECL`` :
 
 .. envvar:: DECL_MAIN_PDECL_MAIN_P
 
@@ -539,7 +539,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL``:
 .. envvar:: DECL_EXTERN_C_FUNCTION_PDECL_EXTERN_C_FUNCTION_P
 
   This predicate holds if the function is declared as an
-  '``extern "C"``' function.
+  ' ``extern "C"`` ' function.
 
 .. envvar:: DECL_LINKONCE_PDECL_LINKONCE_P
 
@@ -567,11 +567,11 @@ The following macros and functions can be used on a ``FUNCTION_DECL``:
 
 .. envvar:: DECL_CONST_MEMFUNC_PDECL_CONST_MEMFUNC_P
 
-  This predicate holds for a ``const``-member function.
+  This predicate holds for a ``const`` -member function.
 
 .. envvar:: DECL_VOLATILE_MEMFUNC_PDECL_VOLATILE_MEMFUNC_P
 
-  This predicate holds for a ``volatile``-member function.
+  This predicate holds for a ``volatile`` -member function.
 
 .. envvar:: DECL_CONSTRUCTOR_PDECL_CONSTRUCTOR_P
 
@@ -634,7 +634,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL``:
   value.  (The ``THUNK_DELTA`` is an ``int``, not an
   ``INTEGER_CST``.)
 
-  Then, if ``THUNK_VCALL_OFFSET`` (an ``INTEGER_CST``) is nonzero
+  Then, if ``THUNK_VCALL_OFFSET`` (an ``INTEGER_CST`` ) is nonzero
   the adjusted ``this`` pointer must be adjusted again.  The complete
   calculation is given by the following pseudo-code:
 
@@ -645,7 +645,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL``:
       this += (*((ptrdiff_t **) this))[THUNK_VCALL_OFFSET]
 
   Finally, the thunk should jump to the location given
-  by ``DECL_INITIAL``; this will always be an expression for the
+  by ``DECL_INITIAL`` ; this will always be an expression for the
   address of a function.
 
 .. envvar:: DECL_NON_THUNK_FUNCTION_PDECL_NON_THUNK_FUNCTION_P
@@ -670,7 +670,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL``:
 .. envvar:: TYPE_NOTHROW_PTYPE_NOTHROW_P
 
   This predicate holds when the exception-specification of its arguments
-  is of the form '``()``'.
+  is of the form ' ``()`` '.
 
 .. envvar:: DECL_ARRAY_DELETE_OPERATOR_PDECL_ARRAY_DELETE_OPERATOR_P
 
@@ -767,7 +767,7 @@ Statements for C and C++
 .. index:: WHILE_COND
 
 A function that has a definition in the current translation unit has
-a non-``NULL`` ``DECL_INITIAL``.  However, back ends should not make
+a non- ``NULL`` ``DECL_INITIAL``.  However, back ends should not make
 use of the particular value given by ``DECL_INITIAL``.
 
 The ``DECL_SAVED_TREE`` gives the complete body of the
@@ -799,7 +799,7 @@ loop has a body, which is itself a statement.  If the substatement
 is ``NULL_TREE``, it is considered equivalent to a statement
 consisting of a single ``;``, i.e., an expression statement in which
 the expression has been omitted.  A substatement may in fact be a list
-of statements, connected via their ``TREE_CHAIN``s.  So, you should
+of statements, connected via their ``TREE_CHAIN`` s.  So, you should
 always process the statement tree by looping over substatements, like
 this:
 
@@ -844,7 +844,7 @@ several statements chained together.
   ``NULL_TREE``.  In any case, the ``CLEANUP_EXPR`` is the
   expression to execute.  The cleanups executed on exit from a scope
   should be run in the reverse order of the order in which the associated
-  ``CLEANUP_STMT``s were encountered.
+  ``CLEANUP_STMT`` s were encountered.
 
 .. envvar:: CONTINUE_STMT
 
@@ -861,7 +861,7 @@ several statements chained together.
 
   Used to represent a ``do`` loop.  The body of the loop is given by
   ``DO_BODY`` while the termination condition for the loop is given by
-  ``DO_COND``.  The condition for a ``do``-statement is always an
+  ``DO_COND``.  The condition for a ``do`` -statement is always an
   expression.
 
 .. envvar:: EMPTY_CLASS_EXPR
@@ -901,7 +901,7 @@ several statements chained together.
   expression.
 
   If the condition is a ``TREE_LIST``, then the ``TREE_PURPOSE`` is
-  a statement (usually a ``DECL_STMT``).  Each time the condition is
+  a statement (usually a ``DECL_STMT`` ).  Each time the condition is
   evaluated, the statement should be executed.  Then, the
   ``TREE_VALUE`` should be used as the conditional expression itself.
   This representation is used to handle C++ code like this:
@@ -1010,8 +1010,8 @@ ends.
   An ``AGGR_INIT_EXPR`` represents the initialization as the return
   value of a function call, or as the result of a constructor.  An
   ``AGGR_INIT_EXPR`` will only appear as a full-expression, or as the
-  second operand of a ``TARGET_EXPR``.  ``AGGR_INIT_EXPR``s have
-  a representation similar to that of ``CALL_EXPR``s.  You can use
+  second operand of a ``TARGET_EXPR``.  ``AGGR_INIT_EXPR`` s have
+  a representation similar to that of ``CALL_EXPR`` s.  You can use
   the ``AGGR_INIT_EXPR_FN`` and ``AGGR_INIT_EXPR_ARG`` macros to access
   the function to call and the arguments to pass.
 

@@ -13,7 +13,7 @@
 
 :samp:`{Description}:`
   ``ACOSD(X)`` computes the arccosine of :samp:`{X}` in degrees (inverse of
-  ``COSD(X)``).
+  ``COSD(X)`` ).
 
   This function is for compatibility only and should be avoided in favor of
   standard constructs wherever possible.

@@ -11,7 +11,7 @@
 
 :samp:`{Description}:`
   Determines the :samp:`{COUNT}` of a processor clock since an unspecified
-  time in the past modulo :samp:`{COUNT_MAX}` , :samp:`{COUNT_RATE}` determines
+  time in the past modulo :samp:`{COUNT_MAX}`, :samp:`{COUNT_RATE}` determines
   the number of clock ticks per second.  If the platform supports a
   monotonic clock, that clock is used and can, depending on the platform
   clock implementation, provide up to nanosecond resolution.  If a

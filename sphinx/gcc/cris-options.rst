@@ -70,7 +70,7 @@ These options are defined specifically for the CRIS ports.
 
 .. option:: -mno-prologue-epilogue, -mprologue-epilogue
 
-  With :option:`-mno-prologue-epilogue` , the normal function prologue and
+  With :option:`-mno-prologue-epilogue`, the normal function prologue and
   epilogue which set up the stack frame are omitted and no return
   instructions or return sequences are generated in the code.  Use this
   option only together with visual inspection of the compiled code: no
@@ -79,7 +79,7 @@ These options are defined specifically for the CRIS ports.
 
 .. option:: -mno-gotplt, -mgotplt
 
-  With :option:`-fpic` and :option:`-fPIC` , don't generate (do generate)
+  With :option:`-fpic` and :option:`-fPIC`, don't generate (do generate)
   instruction sequences that load addresses for functions from the PLT part
   of the GOT rather than (traditional on other architectures) calls to the
   PLT.  The default is :option:`-mgotplt`.
@@ -101,6 +101,6 @@ These options are defined specifically for the CRIS ports.
 
 .. option:: -sim2
 
-  Like :option:`-sim` , but pass linker options to locate initialized data at
+  Like :option:`-sim`, but pass linker options to locate initialized data at
   0x40000000 and zero-initialized data at 0x80000000.
 

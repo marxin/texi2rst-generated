@@ -36,7 +36,7 @@ The following sections describe how we deal with these restrictions.
 
 As described earlier, a ``poly_int<1, T>`` has no indeterminates
 and so degenerates to a compile-time constant of type :samp:`{T}`.  It would
-be possible in that case to do all normal arithmetic on the :samp:`{T}` ,
+be possible in that case to do all normal arithmetic on the :samp:`{T}`,
 and to compare the :samp:`{T}` using the normal C++ operators.  We deliberately
 prevent target-independent code from doing this, since the compiler needs
 to support other ``poly_int<n, T>`` as well, regardless of

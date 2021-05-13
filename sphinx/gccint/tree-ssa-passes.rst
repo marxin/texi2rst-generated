@@ -39,8 +39,8 @@ run after gimplification and what source files they are located in.
 
 * Lower control flow
 
-  This pass flattens ``if`` statements (``COND_EXPR``)
-  and moves lexical bindings (``BIND_EXPR``) out of line.  After
+  This pass flattens ``if`` statements ( ``COND_EXPR`` )
+  and moves lexical bindings ( ``BIND_EXPR`` ) out of line.  After
   this pass, all ``if`` statements will have exactly two ``goto``
   statements in its ``then`` and ``else`` arms.  Lexical binding
   information for each statement will be found in ``TREE_BLOCK`` rather
@@ -51,7 +51,7 @@ run after gimplification and what source files they are located in.
 * Lower exception handling control flow
 
   This pass decomposes high-level exception handling constructs
-  (``TRY_FINALLY_EXPR`` and ``TRY_CATCH_EXPR``) into a form
+  ( ``TRY_FINALLY_EXPR`` and ``TRY_CATCH_EXPR`` ) into a form
   that explicitly represents the control flow involved.  After this
   pass, ``lookup_stmt_eh_region`` will return a non-negative
   number for any statement that may have EH control flow semantics;
@@ -81,13 +81,13 @@ run after gimplification and what source files they are located in.
   This pass rewrites the function such that it is in SSA form.  After
   this pass, all ``is_gimple_reg`` variables will be referenced by
   ``SSA_NAME``, and all occurrences of other variables will be
-  annotated with ``VDEFS`` and ``VUSES``; PHI nodes will have
+  annotated with ``VDEFS`` and ``VUSES`` ; PHI nodes will have
   been inserted as necessary for each basic block.  This pass is
   located in tree-ssa.c and is described by ``pass_build_ssa``.
 
 * Warn for uninitialized variables
 
-  This pass scans the function for uses of ``SSA_NAME``s that
+  This pass scans the function for uses of ``SSA_NAME`` s that
   are fed by default definition.  For non-parameter variables, such
   uses are uninitialized.  The pass is run twice, before and after
   optimization (if turned on).  In the first pass we only warn for uses that are
@@ -140,7 +140,7 @@ run after gimplification and what source files they are located in.
   The resulting may-alias, must-alias, and escape analysis information
   is used to promote variables from in-memory addressable objects to
   non-aliased variables that can be renamed into SSA form.  We also
-  update the ``VDEF``/``VUSE`` memory tags for non-renameable
+  update the ``VDEF`` / ``VUSE`` memory tags for non-renameable
   aggregates so that we get fewer false kills.  The pass is located
   in tree-ssa-alias.c and is described by ``pass_may_alias``.
 

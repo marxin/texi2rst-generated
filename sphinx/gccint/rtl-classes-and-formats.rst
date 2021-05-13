@@ -19,8 +19,8 @@ Currently, rtl.def defines these classes:
 .. envvar:: RTX_OBJ
 
   An RTX code that represents an actual object, such as a register
-  (``REG``) or a memory location (``MEM``, ``SYMBOL_REF``).
-  ``LO_SUM``) is also included; instead, ``SUBREG`` and
+  ( ``REG`` ) or a memory location ( ``MEM``, ``SYMBOL_REF`` ).
+  ``LO_SUM`` ) is also included; instead, ``SUBREG`` and
   ``STRICT_LOW_PART`` are not in this class, but in class
   ``RTX_EXTRA``.
 
@@ -88,8 +88,8 @@ Currently, rtl.def defines these classes:
 .. envvar:: RTX_EXTRA
 
   All other RTX codes.  This category includes the remaining codes used
-  only in machine descriptions (``DEFINE_*``, etc.).  It also includes
-  all the codes describing side effects (``SET``, ``USE``,
+  only in machine descriptions ( ``DEFINE_*``, etc.).  It also includes
+  all the codes describing side effects ( ``SET``, ``USE``,
   ``CLOBBER``, etc.) and the non-insns that may appear on an insn
   chain, such as ``NOTE``, ``BARRIER``, and ``CODE_LABEL``.
   ``SUBREG`` is also part of this class.
@@ -165,7 +165,7 @@ of an expression code:
   .. index:: GET_RTX_FORMAT
 
 :samp:`GET_RTX_FORMAT ({code})`
-  The format of an RTX of code :samp:`{code}` , as a C string.
+  The format of an RTX of code :samp:`{code}`, as a C string.
 
   Some classes of RTX codes always have the same format.  For example, it
 is safe to assume that all comparison operations have format ``ee``.

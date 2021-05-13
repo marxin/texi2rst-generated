@@ -91,27 +91,27 @@ Conversion functions
 
 .. function:: float __floatsisf(int i)
 
-  These functions convert :samp:`{i}` , a signed integer, to floating point.
+  These functions convert :samp:`{i}`, a signed integer, to floating point.
 
 .. function:: float __floatdisf(long i)
 
-  These functions convert :samp:`{i}` , a signed long, to floating point.
+  These functions convert :samp:`{i}`, a signed long, to floating point.
 
 .. function:: float __floattisf(long longi)
 
-  These functions convert :samp:`{i}` , a signed long long, to floating point.
+  These functions convert :samp:`{i}`, a signed long long, to floating point.
 
 .. function:: float __floatunsisf(unsigned inti)
 
-  These functions convert :samp:`{i}` , an unsigned integer, to floating point.
+  These functions convert :samp:`{i}`, an unsigned integer, to floating point.
 
 .. function:: float __floatundisf(unsigned longi)
 
-  These functions convert :samp:`{i}` , an unsigned long, to floating point.
+  These functions convert :samp:`{i}`, an unsigned long, to floating point.
 
 .. function:: float __floatuntisf(unsigned longlong i)
 
-  These functions convert :samp:`{i}` , an unsigned long long, to floating point.
+  These functions convert :samp:`{i}`, an unsigned long long, to floating point.
 
 Comparison functions
 ^^^^^^^^^^^^^^^^^^^^
@@ -121,7 +121,7 @@ There are two sets of basic comparison functions.
 .. function:: int __cmpsf2(float a,float b)
 
   These functions calculate a <=> b.  That is, if :samp:`{a}` is less
-  than :samp:`{b}` , they return -1; if :samp:`{a}` is greater than :samp:`{b}` , they
+  than :samp:`{b}`, they return -1; if :samp:`{a}` is greater than :samp:`{b}`, they
   return 1; and if :samp:`{a}` and :samp:`{b}` are equal they return 0.  If
   either argument is NaN they return 1, but you should not rely on this;
   if NaN is a possibility, use one of the higher-level comparison

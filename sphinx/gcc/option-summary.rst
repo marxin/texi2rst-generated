@@ -417,7 +417,7 @@ in the following sections.
   :option:`-fprofile-exclude-files`:samp:`={regex}` 
   :option:`-fprofile-reproducible` =[multithreaded|parallel :option:`-runs` |serial] 
   :option:`-fsanitize`:samp:`={style}`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover`:samp:`={style}` 
-  :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}` , :samp:`{s2}` ,... 
+  :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}`,:samp:`{s2}`,... 
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` 
   :option:`-fcf-protection` =[full|branch|return|none|check] 
   :option:`-fstack-protector`  :option:`-fstack-protector-all`  :option:`-fstack-protector-strong` 
@@ -427,8 +427,8 @@ in the following sections.
   :option:`-fvtable-verify` =[std|preinit|none] 
   :option:`-fvtv-counts`  :option:`-fvtv-debug` 
   :option:`-finstrument-functions` 
-  :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}` , :samp:`{sym}` ,... 
-  :option:`-finstrument-functions-exclude-file-list`:samp:`={file}` , :samp:`{file}` ,...
+  :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}`,:samp:`{sym}`,... 
+  :option:`-finstrument-functions-exclude-file-list`:samp:`={file}`,:samp:`{file}`,...
 
 *Preprocessor Options*
   See :ref:`Options Controlling the Preprocessor <preprocessor-options>`.
@@ -1154,7 +1154,7 @@ in the following sections.
   :option:`-mtpf-trace`  :option:`-mno-tpf-trace`  :option:`-mtpf-trace-skip`  :option:`-mno-tpf-trace-skip` 
   :option:`-mfused-madd`  :option:`-mno-fused-madd` 
   :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` 
-  :option:`-mhotpatch`:samp:`={halfwords}` , :samp:`{halfwords}`
+  :option:`-mhotpatch`:samp:`={halfwords}`,:samp:`{halfwords}`
 
   *Score Options*
 

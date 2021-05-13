@@ -11,7 +11,7 @@
 
 :samp:`{Description}:`
   ``SELECTED_CHAR_KIND(NAME)`` returns the kind value for the character
-  set named :samp:`{NAME}` , if a character set with such a name is supported,
+  set named :samp:`{NAME}`, if a character set with such a name is supported,
   or -1 otherwise. Currently, supported character sets include
   'ASCII' and 'DEFAULT', which are equivalent, and 'ISO_10646'
   (Universal Character Set, UCS-4) which is commonly known as Unicode.

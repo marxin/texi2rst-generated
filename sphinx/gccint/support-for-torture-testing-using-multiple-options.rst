@@ -25,8 +25,8 @@ include calls to these three procedures if:
 
 * It calls ``gcc-dg-runtest`` and overrides :samp:`{DG_TORTURE_OPTIONS}`.
 
-* It calls :samp:`{${tool}}```-torture`` or
-  :samp:`{${tool}}```-torture-execute``, where :samp:`{tool}` is ``c``,
+* It calls :samp:`{${tool}}` ``-torture`` or
+  :samp:`{${tool}}` ``-torture-execute``, where :samp:`{tool}` is ``c``,
   ``fortran``, or ``objc``.
 
 * It calls ``dg-pch``.

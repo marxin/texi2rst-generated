@@ -30,7 +30,7 @@
   =================  ========================================================
 
 :samp:`{Return value}:`
-  The return value is of type ``LOGICAL``; it is ``.false.`` if either
+  The return value is of type ``LOGICAL`` ; it is ``.false.`` if either
   :samp:`{c_ptr_1}` is a C NULL pointer or if :samp:`{c_ptr1}` and :samp:`{c_ptr_2}`
   point to different addresses.
 

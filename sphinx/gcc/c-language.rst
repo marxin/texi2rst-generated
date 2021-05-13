@@ -106,7 +106,7 @@ document.
 This standard, in both its forms, is commonly known as :dfn:`C89`, or
 occasionally as :dfn:`C90`, from the dates of ratification.
 To select this standard in GCC, use one of the options
-:option:`-ansi` , :option:`-std=c90` or :option:`-std=iso9899:1990` ; to obtain
+:option:`-ansi`, :option:`-std=c90` or :option:`-std=iso9899:1990` ; to obtain
 all the diagnostics required by the standard, you should also specify
 :option:`-pedantic` (or :option:`-pedantic-errors` if you want them to be
 errors rather than warnings).  See :ref:`Options
@@ -145,7 +145,7 @@ for this standard, enabled with :option:`-std=c11` or
 prepared in 2017 and published in 2018 as ISO/IEC 9899:2018; it is
 known as :dfn:`C17` and is supported with :option:`-std=c17` or
 :option:`-std=iso9899:2017` ; the corrections are also applied with
-:option:`-std=c11` , and the only difference between the options is the
+:option:`-std=c11`, and the only difference between the options is the
 value of ``__STDC_VERSION__``.
 
 A further version of the C standard, known as :dfn:`C2X`, is under
@@ -173,9 +173,9 @@ implementation.  A :dfn:`conforming hosted implementation` supports the
 whole standard including all the library facilities; a :dfn:`conforming
 freestanding implementation` is only required to provide certain
 library facilities: those in ``<float.h>``, ``<limits.h>``,
-``<stdarg.h>``, and ``<stddef.h>``; since AMD1, also those in
-``<iso646.h>``; since C99, also those in ``<stdbool.h>`` and
-``<stdint.h>``; and since C11, also those in ``<stdalign.h>``
+``<stdarg.h>``, and ``<stddef.h>`` ; since AMD1, also those in
+``<iso646.h>`` ; since C99, also those in ``<stdbool.h>`` and
+``<stdint.h>`` ; and since C11, also those in ``<stdalign.h>``
 and ``<stdnoreturn.h>``.  In addition, complex types, added in C99, are not
 required for freestanding implementations.  
 

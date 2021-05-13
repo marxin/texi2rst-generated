@@ -9,7 +9,7 @@ various characteristics of a type (or of a
 pair of types).
 
 ``__has_nothrow_assign (type)``
-  If ``type`` is ``const``-qualified or is a reference type then
+  If ``type`` is ``const`` -qualified or is a reference type then
   the trait is ``false``.  Otherwise if ``__has_trivial_assign (type)``
   is ``true`` then the trait is ``true``, else if ``type`` is
   a cv-qualified class or union type with copy assignment operators that are
@@ -35,7 +35,7 @@ pair of types).
   ``void``, or an array of unknown bound.
 
 ``__has_trivial_assign (type)``
-  If ``type`` is ``const``- qualified or is a reference type then
+  If ``type`` is ``const`` - qualified or is a reference type then
   the trait is ``false``.  Otherwise if ``__is_pod (type)`` is
   ``true`` then the trait is ``true``, else if ``type`` is
   a cv-qualified class or union type with a trivial copy assignment

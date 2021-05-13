@@ -22,14 +22,14 @@ Naming conventions
 
 According the Fortran standard, valid Fortran names consist of a letter
 between ``A`` to ``Z``, ``a`` to ``z``, digits ``0``,
-``1`` to ``9`` and underscores (``_``) with the restriction
+``1`` to ``9`` and underscores ( ``_`` ) with the restriction
 that names may only start with a letter.  As vendor extension, the
-dollar sign (``$``) is additionally permitted with the option
-:option:`-fdollar-ok` , but not as first character and only if the
+dollar sign ( ``$`` ) is additionally permitted with the option
+:option:`-fdollar-ok`, but not as first character and only if the
 target system supports it.
 
 By default, the procedure name is the lower-cased Fortran name with an
-appended underscore (``_``); using :option:`-fno-underscoring` no
+appended underscore ( ``_`` ); using :option:`-fno-underscoring` no
 underscore is appended while ``-fsecond-underscore`` appends two
 underscores.  Depending on the target system and the calling convention,
 the procedure might be additionally dressed; for instance, on 32bit
@@ -51,7 +51,7 @@ no underscore is appended.
 Argument passing conventions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Subroutines do not return a value (matching C99's ``void``) while
+Subroutines do not return a value (matching C99's ``void`` ) while
 functions either return a value as specified in the platform ABI or
 the result variable is passed as hidden argument to the function and
 no result is returned.  A hidden result variable is used when the
@@ -92,7 +92,7 @@ modified without affecting the caller.
 
 .. or in the callee.
 
-For Boolean (``LOGICAL``) arguments, please note that GCC expects
+For Boolean ( ``LOGICAL`` ) arguments, please note that GCC expects
 only the integer value 0 and 1.  If a GNU Fortran ``LOGICAL``
 variable contains another integer value, the result is undefined.
 As some other Fortran compilers use -1 for ``.TRUE.``,
@@ -143,13 +143,13 @@ For ``OPTIONAL`` dummy arguments, an absent argument is denoted
 by a NULL pointer, except for scalar dummy arguments of type
 ``INTEGER``, ``LOGICAL``, ``REAL`` and ``COMPLEX``
 which have the ``VALUE`` attribute.  For those, a hidden Boolean
-argument (``logical(kind=C_bool),value``) is used to indicate
+argument ( ``logical(kind=C_bool),value`` ) is used to indicate
 whether the argument is present.
 
 Arguments which are assumed-shape, assumed-rank or deferred-rank
-arrays or, with :option:`-fcoarray=lib` , allocatable scalar coarrays use
+arrays or, with :option:`-fcoarray=lib`, allocatable scalar coarrays use
 an array descriptor.  All other arrays pass the address of the
-first element of the array.  With :option:`-fcoarray=lib` , the token
+first element of the array.  With :option:`-fcoarray=lib`, the token
 and the offset belonging to nonallocatable coarrays dummy arguments
 are passed as hidden argument along the character length hidden
 arguments.  The token is an opaque pointer identifying the coarray

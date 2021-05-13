@@ -27,7 +27,7 @@ GCC implements three different semantics of declaring a function
 inline.  One is available with :option:`-std=gnu89` or
 :option:`-fgnu89-inline` or when ``gnu_inline`` attribute is present
 on all inline declarations, another when
-:option:`-std=c99` ,
+:option:`-std=c99`,
 :option:`-std=gnu99` or an option for a later C version is used
 (without :option:`-fgnu89-inline` ), and the third
 is used when compiling C++.
@@ -119,7 +119,7 @@ When an inline function is not ``static``, then the compiler must assume
 that there may be calls from other source files; since a global symbol can
 be defined only once in any program, the function must not be defined in
 the other source files, so the calls therein cannot be integrated.
-Therefore, a non-``static`` inline function is always compiled on its
+Therefore, a non- ``static`` inline function is always compiled on its
 own in the usual fashion.
 
 If you specify both ``inline`` and ``extern`` in the function
@@ -131,7 +131,7 @@ if you had only declared the function, and had not defined it.
 This combination of ``inline`` and ``extern`` has almost the
 effect of a macro.  The way to use it is to put a function definition in
 a header file with these keywords, and put another copy of the
-definition (lacking ``inline`` and ``extern``) in a library file.
+definition (lacking ``inline`` and ``extern`` ) in a library file.
 The definition in the header file causes most calls to the function
 to be inlined.  If any uses of the function remain, they refer to
 the single copy in the library.

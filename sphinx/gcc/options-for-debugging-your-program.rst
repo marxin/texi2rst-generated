@@ -37,8 +37,8 @@ information useful for debugging do not run at all, so that
   makes debugging work better in GDB but probably makes other debuggers
   crash or
   refuse to read the program.  If you want to control for certain whether
-  to generate the extra information, use :option:`-gstabs+` , :option:`-gstabs` ,
-  :option:`-gxcoff+` , :option:`-gxcoff` , or :option:`-gvms` (see below).
+  to generate the extra information, use :option:`-gstabs+`, :option:`-gstabs`,
+  :option:`-gxcoff+`, :option:`-gxcoff`, or :option:`-gvms` (see below).
 
 .. option:: -ggdb
 
@@ -163,8 +163,8 @@ information useful for debugging do not run at all, so that
   position in code.  Better debugging information is then generated
   (if the debugging information format supports this information).
 
-  It is enabled by default when compiling with optimization ( :option:`-Os` ,
-  :option:`-O` , :option:`-O2` , ...), debugging information ( :option:`-g` ) and
+  It is enabled by default when compiling with optimization ( :option:`-Os`,
+  :option:`-O`, :option:`-O2`, ...), debugging information ( :option:`-g` ) and
   the debug info format supports it.
 
 .. option:: -fvar-tracking-assignments, -fno-var-tracking-assignments
@@ -176,7 +176,7 @@ information useful for debugging do not run at all, so that
 
   It can be enabled even if var-tracking is disabled, in which case
   annotations are created and maintained, but discarded at the end.
-  By default, this flag is enabled together with :option:`-fvar-tracking` ,
+  By default, this flag is enabled together with :option:`-fvar-tracking`,
   except when selective scheduling is enabled.
 
 .. option:: -gsplit-dwarf
@@ -287,7 +287,7 @@ information useful for debugging do not run at all, so that
   at the beginning of statements, and to keep them roughly in place
   throughout compilation, using them to guide the output of ``is_stmt``
   markers in the line number table.  This is enabled by default when
-  compiling with optimization ( :option:`-Os` , :option:`-O` , :option:`-O2` ,
+  compiling with optimization ( :option:`-Os`, :option:`-O`, :option:`-O2`,
   ...), and outputting DWARF 2 debug information at the normal level.
 
 .. option:: -gvariable-location-views, -gvariable-location-views=incompat5
@@ -388,7 +388,7 @@ information useful for debugging do not run at all, so that
   between different object files within the same program.
 
   This option is a detailed version of
-  :option:`-femit-struct-debug-reduced` and :option:`-femit-struct-debug-baseonly` ,
+  :option:`-femit-struct-debug-reduced` and :option:`-femit-struct-debug-baseonly`,
   which serves for most needs.
 
   A specification has the syntax

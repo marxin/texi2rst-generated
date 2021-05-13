@@ -18,6 +18,6 @@ index of the parameter it represents in the parameter list, which
 allows rapid replacement of parameters with their arguments during
 expansion.  Despite this optimization it is still necessary to store
 the original parameters to the macro, both for dumping with e.g.,
-:option:`-dD` , and to warn about non-trivial macro redefinitions when
+:option:`-dD`, and to warn about non-trivial macro redefinitions when
 the parameter names have changed.
 

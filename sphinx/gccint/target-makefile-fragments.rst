@@ -52,8 +52,8 @@ Target makefile fragments can set these Makefile variables.
 
   For example, if you set ``MULTILIB_OPTIONS`` to :samp:`m68000/m68020
   msoft-float`, Makefile will build special versions of
-  libgcc.a using the following sets of options:  :option:`-m68000` ,
-  :option:`-m68020` , :option:`-msoft-float` , :samp:`-m68000 -msoft-float`, and
+  libgcc.a using the following sets of options:  :option:`-m68000`,
+  :option:`-m68020`, :option:`-msoft-float`, :samp:`-m68000 -msoft-float`, and
   :samp:`-m68020 -msoft-float`.
 
 .. envvar:: MULTILIB_DIRNAMES
@@ -177,7 +177,7 @@ Target makefile fragments can set these Makefile variables.
   ``MULTILIB_DIRNAMES``, or a set of mappings.  When it is the same
   as ``MULTILIB_DIRNAMES``, it describes the multilib directories
   using operating system conventions, rather than GCC conventions.  When it is a set
-  of mappings of the form :samp:`{gccdir}` = :samp:`{osdir}` , the left side gives
+  of mappings of the form :samp:`{gccdir}` = :samp:`{osdir}`, the left side gives
   the GCC convention and the right gives the equivalent OS defined
   location.  If the :samp:`{osdir}` part begins with a :samp:`!`,
   GCC will not search in the non-multilib directory and use
@@ -207,8 +207,8 @@ Target makefile fragments can set these Makefile variables.
   will add a multiarch subdirectory of the form
   :samp:`{prefix}` / :samp:`{multiarch}` before each directory in the library and
   crt search path.  It will also add two directories
-  ``LOCAL_INCLUDE_DIR``/ :samp:`{multiarch}` and
-  ``NATIVE_SYSTEM_HEADER_DIR``/ :samp:`{multiarch}` ) to the system header
+  ``LOCAL_INCLUDE_DIR`` / :samp:`{multiarch}` and
+  ``NATIVE_SYSTEM_HEADER_DIR`` / :samp:`{multiarch}` ) to the system header
   search path, respectively before ``LOCAL_INCLUDE_DIR`` and
   ``NATIVE_SYSTEM_HEADER_DIR``.
 

@@ -23,17 +23,17 @@
 
   :samp:`{VALUES}` is ``INTENT(OUT)`` and provides the following:
 
-  =============  ===================================
-  ``VALUE(1)``:  The year
-  =============  ===================================
-  ``VALUE(2)``:  The month
-  ``VALUE(3)``:  The day of the month
-  ``VALUE(4)``:  Time difference with UTC in minutes
-  ``VALUE(5)``:  The hour of the day
-  ``VALUE(6)``:  The minutes of the hour
-  ``VALUE(7)``:  The seconds of the minute
-  ``VALUE(8)``:  The milliseconds of the second
-  =============  ===================================
+  ==============  ===================================
+  ``VALUE(1)`` :  The year
+  ==============  ===================================
+  ``VALUE(2)`` :  The month
+  ``VALUE(3)`` :  The day of the month
+  ``VALUE(4)`` :  Time difference with UTC in minutes
+  ``VALUE(5)`` :  The hour of the day
+  ``VALUE(6)`` :  The minutes of the hour
+  ``VALUE(7)`` :  The seconds of the minute
+  ``VALUE(8)`` :  The milliseconds of the second
+  ==============  ===================================
 
 :samp:`{Standard}:`
   Fortran 90 and later

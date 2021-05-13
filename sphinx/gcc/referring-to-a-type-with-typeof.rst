@@ -13,7 +13,7 @@ Another way to refer to the type of an expression is with ``typeof``.
 The syntax of using of this keyword looks like ``sizeof``, but the
 construct acts semantically like a type name defined with ``typedef``.
 
-There are two ways of writing the argument to ``typeof``: with an
+There are two ways of writing the argument to ``typeof`` : with an
 expression or with a type.  Here is an example with an expression:
 
 .. code-block:: c++
@@ -73,7 +73,7 @@ hope to design a new form of declaration syntax that allows you to declare
 variables whose scopes start only after their initializers; this will be a
 more reliable way to prevent such conflicts.
 
-Some more examples of the use of ``typeof``:
+Some more examples of the use of ``typeof`` :
 
 * This declares ``y`` with the type of what ``x`` points to.
 

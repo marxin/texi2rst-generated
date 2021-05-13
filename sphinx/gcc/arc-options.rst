@@ -32,7 +32,7 @@ is being compiled:
   .. index:: mARC600
 
   :samp:`arc600`
-    Compile for ARC600.  Aliases: :option:`-mA6` , :option:`-mARC600`.
+    Compile for ARC600.  Aliases: :option:`-mA6`, :option:`-mARC600`.
 
   .. option:: arc601, -mARC601
 
@@ -40,7 +40,7 @@ is being compiled:
 
   .. option:: arc700, -mA7, -mARC700
 
-    Compile for ARC700.  Aliases: :option:`-mA7` , :option:`-mARC700`.
+    Compile for ARC700.  Aliases: :option:`-mA7`, :option:`-mARC700`.
     This is the default when configured with :option:`--with-cpu=arc700`.
 
   :samp:`arcem`
@@ -87,7 +87,7 @@ is being compiled:
     instructions enabled.
 
   :samp:`arc600_mul64`
-    Compile for ARC 600 CPU with ``norm`` and ``mul64``-family 
+    Compile for ARC 600 CPU with ``norm`` and ``mul64`` -family 
     instructions enabled.
 
   :samp:`arc601_norm`
@@ -98,7 +98,7 @@ is being compiled:
     instructions enabled.
 
   :samp:`arc601_mul64`
-    Compile for ARC 601 CPU with ``norm`` and ``mul64``-family
+    Compile for ARC 601 CPU with ``norm`` and ``mul64`` -family
     instructions enabled.
 
   :samp:`nps400`
@@ -131,7 +131,7 @@ is being compiled:
 
 .. option:: -mno-mpy, -mmpy
 
-  Do not generate ``mpy``-family instructions for ARC700.  This option is
+  Do not generate ``mpy`` -family instructions for ARC700.  This option is
   deprecated.
 
 .. option:: -mmul32x16
@@ -167,9 +167,9 @@ is being compiled:
 
   This option ignored; it is provided for compatibility purposes only.
   Software floating-point code is emitted by default, and this default
-  can overridden by FPX options; :option:`-mspfp` , :option:`-mspfp-compact` , or
-  :option:`-mspfp-fast` for single precision, and :option:`-mdpfp` ,
-  :option:`-mdpfp-compact` , or :option:`-mdpfp-fast` for double precision.
+  can overridden by FPX options; :option:`-mspfp`, :option:`-mspfp-compact`, or
+  :option:`-mspfp-fast` for single precision, and :option:`-mdpfp`,
+  :option:`-mdpfp-compact`, or :option:`-mdpfp-fast` for double precision.
 
 .. option:: -mswap
 
@@ -507,7 +507,7 @@ The following options fine tune code generation:
 .. option:: -mno-brcc
 
   This option disables a target-specific pass in arc_reorg to
-  generate compare-and-branch (``brcc``) instructions.  
+  generate compare-and-branch ( ``brcc`` ) instructions.  
   It has no effect on
   generation of these instructions driven by the combiner pass.
 
@@ -518,7 +518,7 @@ The following options fine tune code generation:
 
 .. option:: -mcompact-casesi
 
-  Enable compact ``casesi`` pattern.  This is the default for :option:`-Os` ,
+  Enable compact ``casesi`` pattern.  This is the default for :option:`-Os`,
   and only available for ARCv1 cores.  This option is deprecated.
 
 .. option:: -mno-cond-exec
@@ -632,7 +632,7 @@ The following options fine tune code generation:
 
 .. option:: -mtune=cpu
 
-  Set instruction scheduling parameters for :samp:`{cpu}` , overriding any implied
+  Set instruction scheduling parameters for :samp:`{cpu}`, overriding any implied
   by :option:`-mcpu` =.
 
   Supported values for :samp:`{cpu}` are

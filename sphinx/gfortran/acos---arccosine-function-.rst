@@ -12,7 +12,7 @@
 .. index:: cosine, inverse
 
 :samp:`{Description}:`
-  ``ACOS(X)`` computes the arccosine of :samp:`{X}` (inverse of ``COS(X)``).
+  ``ACOS(X)`` computes the arccosine of :samp:`{X}` (inverse of ``COS(X)`` ).
 
 :samp:`{Standard}:`
   Fortran 77 and later, for a complex argument Fortran 2008 or later

@@ -16,7 +16,7 @@ MIPS Options
 
 .. option:: -march=arch
 
-  Generate code that runs on :samp:`{arch}` , which can be the name of a
+  Generate code that runs on :samp:`{arch}`, which can be the name of a
   generic MIPS ISA, or the name of a particular processor.
   The ISA names are:
   :samp:`mips1`, :samp:`mips2`, :samp:`mips3`, :samp:`mips4`,
@@ -86,7 +86,7 @@ MIPS Options
   above.  In other words, it has the full prefix and does not
   abbreviate :samp:`000` as :samp:`k`.  In the case of :samp:`from-abi`,
   the macro names the resolved architecture (either ``"mips1"`` or
-  ``"mips3"``).  It names the default architecture when no
+  ``"mips3"`` ).  It names the default architecture when no
   :option:`-march` option is given.
 
 .. option:: -mtune=arch
@@ -322,7 +322,7 @@ MIPS Options
 
 .. option:: -mno-float
 
-  Equivalent to :option:`-msoft-float` , but additionally asserts that the
+  Equivalent to :option:`-msoft-float`, but additionally asserts that the
   program being compiled does not perform any floating-point operations.
   This option is presently supported only by some bare-metal MIPS
   configurations, where it may select a special set of libraries
@@ -494,10 +494,10 @@ MIPS Options
 
   Force ``long``, ``int``, and pointer types to be 32 bits wide.
 
-  The default size of ``int``s, ``long``s and pointers depends on
-  the ABI.  All the supported ABIs use 32-bit ``int``s.  The n64 ABI
-  uses 64-bit ``long``s, as does the 64-bit EABI; the others use
-  32-bit ``long``s.  Pointers are the same size as ``long``s,
+  The default size of ``int`` s, ``long`` s and pointers depends on
+  the ABI.  All the supported ABIs use 32-bit ``int`` s.  The n64 ABI
+  uses 64-bit ``long`` s, as does the 64-bit EABI; the others use
+  32-bit ``long`` s.  Pointers are the same size as ``long`` s,
   or the same size as integer registers, whichever is smaller.
 
 .. option:: -msym32, -mno-sym32
@@ -524,7 +524,7 @@ MIPS Options
   If the linker complains that an application is using too much small data,
   you might want to try rebuilding the less performance-critical parts with
   :option:`-mno-local-sdata`.  You might also want to build large
-  libraries with :option:`-mno-local-sdata` , so that the libraries leave
+  libraries with :option:`-mno-local-sdata`, so that the libraries leave
   more room for the main program.
 
 .. option:: -mextern-sdata, -mno-extern-sdata
@@ -534,7 +534,7 @@ MIPS Options
   :option:`-mextern-sdata` is the default for all configurations.
 
   If you compile a module :samp:`{Mod}` with :option:`-mextern-sdata` :option:`-G
-  `:samp:`{num}` :option:`-mgpopt` , and :samp:`{Mod}` references a variable :samp:`{Var}`
+  `:samp:`{num}` :option:`-mgpopt`, and :samp:`{Mod}` references a variable :samp:`{Var}`
   that is no bigger than :samp:`{num}` bytes, you must make sure that :samp:`{Var}`
   is placed in a small data section.  If :samp:`{Var}` is defined by another
   module, you must either compile that module with a high-enough
@@ -553,7 +553,7 @@ MIPS Options
 .. option:: -mgpopt, -mno-gpopt
 
   Use (do not use) GP-relative accesses for symbols that are known to be
-  in a small data section; see :option:`-G` , :option:`-mlocal-sdata` and
+  in a small data section; see :option:`-G`, :option:`-mlocal-sdata` and
   :option:`-mextern-sdata`.  :option:`-mgpopt` is the default for all
   configurations.
 
@@ -611,7 +611,7 @@ MIPS Options
 .. option:: -mexplicit-relocs, -mno-explicit-relocs
 
   Use (do not use) assembler relocation operators when dealing with symbolic
-  addresses.  The alternative, selected by :option:`-mno-explicit-relocs` ,
+  addresses.  The alternative, selected by :option:`-mno-explicit-relocs`,
   is to use assembler macros instead.
 
   :option:`-mexplicit-relocs` is the default if GCC was configured
@@ -629,11 +629,11 @@ MIPS Options
   conditional trap or a break instruction.  Using traps results in
   smaller code, but is only supported on MIPS II and later.  Also, some
   versions of the Linux kernel have a bug that prevents trap from
-  generating the proper signal (``SIGFPE``).  Use :option:`-mdivide-traps` to
+  generating the proper signal ( ``SIGFPE`` ).  Use :option:`-mdivide-traps` to
   allow conditional traps on architectures that support them and
   :option:`-mdivide-breaks` to force the use of breaks.
 
-  The default is usually :option:`-mdivide-traps` , but this can be
+  The default is usually :option:`-mdivide-traps`, but this can be
   overridden at configure time using :option:`--with-divide=breaks`.
   Divide-by-zero checks can be completely disabled using
   :option:`-mno-check-zero-division`.
@@ -648,7 +648,7 @@ MIPS Options
 .. option:: -mmemcpy, -mno-memcpy
 
   Force (do not force) the use of ``memcpy`` for non-trivial block
-  moves.  The default is :option:`-mno-memcpy` , which allows GCC to inline
+  moves.  The default is :option:`-mno-memcpy`, which allows GCC to inline
   most constant-sized copies.
 
 .. option:: -mlong-calls, -mno-long-calls
@@ -719,7 +719,7 @@ MIPS Options
 
   Work around certain R10000 errata:
 
-  * ``ll``/``sc`` sequences may not behave atomically on revisions
+  * ``ll`` / ``sc`` sequences may not behave atomically on revisions
     prior to 3.0.  They may deadlock on revisions 2.6 and earlier.
 
   This option can only be used if the target architecture supports
@@ -738,7 +738,7 @@ MIPS Options
 
 .. option:: -mfix-rm7000
 
-  Work around the RM7000 ``dmult``/``dmultu`` errata.  The
+  Work around the RM7000 ``dmult`` / ``dmultu`` errata.  The
   workarounds are implemented by the assembler rather than by GCC.
 
 .. option:: -mfix-vr4120
@@ -759,7 +759,7 @@ MIPS Options
 
 .. option:: -mfix-vr4130
 
-  Work around the VR4130 ``mflo``/``mfhi`` errata.  The
+  Work around the VR4130 ``mflo`` / ``mfhi`` errata.  The
   workarounds are implemented by the assembler rather than by GCC,
   although GCC avoids using ``mflo`` and ``mfhi`` if the
   VR4130 ``macc``, ``macchi``, ``dmacc`` and ``dmacchi``
@@ -907,7 +907,7 @@ MIPS Options
   enabled) are generated when ``__builtin___clear_cache`` is
   compiled.
 
-  This option defaults to :option:`-mno-synci` , but the default can be
+  This option defaults to :option:`-mno-synci`, but the default can be
   overridden by configuring GCC with :option:`--with-synci`.
 
   When compiling code for single processor systems, it is generally safe
@@ -925,7 +925,7 @@ MIPS Options
   :option:`-mrelax-pic-calls` is the default if GCC was configured to use
   an assembler and a linker that support the ``.reloc`` assembly
   directive and :option:`-mexplicit-relocs` is in effect.  With
-  :option:`-mno-explicit-relocs` , this optimization can be performed by the
+  :option:`-mno-explicit-relocs`, this optimization can be performed by the
   assembler and the linker alone without help from the compiler.
 
 .. option:: -mmcount-ra-address, -mno-mcount-ra-address

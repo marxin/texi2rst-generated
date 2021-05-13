@@ -12,7 +12,7 @@
 .. index:: array, count elements
 
 :samp:`{Description}:`
-  Determine the extent of :samp:`{ARRAY}` along a specified dimension :samp:`{DIM}` ,
+  Determine the extent of :samp:`{ARRAY}` along a specified dimension :samp:`{DIM}`,
   or the total number of elements in :samp:`{ARRAY}` if :samp:`{DIM}` is absent.
 
 :samp:`{Standard}:`

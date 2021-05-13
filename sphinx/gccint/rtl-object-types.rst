@@ -21,9 +21,9 @@ expression ('RTX', for short) is a C structure, but it is usually
 referred to with a pointer; a type that is given the typedef name
 ``rtx``.
 
-An integer is simply an ``int``; their written form uses decimal
+An integer is simply an ``int`` ; their written form uses decimal
 digits.  A wide integer is an integral object whose type is
-``HOST_WIDE_INT``; their written form uses decimal digits.
+``HOST_WIDE_INT`` ; their written form uses decimal digits.
 
 A string is a sequence of characters.  In core it is represented as a
 ``char *`` in usual C fashion, and it is written in C syntax as well.

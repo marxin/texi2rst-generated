@@ -18,7 +18,7 @@ The simplest RTL expressions are those that represent constant values.
 
   Constants generated for modes with fewer bits than in
   ``HOST_WIDE_INT`` must be sign extended to full width (e.g., with
-  ``gen_int_mode``).  For constants for modes with more bits than in
+  ``gen_int_mode`` ).  For constants for modes with more bits than in
   ``HOST_WIDE_INT`` the implied high order bits of that constant are
   copies of the top bit.  Note however that values are neither
   inherently signed nor inherently unsigned; where necessary, signedness
@@ -56,7 +56,7 @@ The simplest RTL expressions are those that represent constant values.
 :samp:`(const_double:{m}{i0}{i1} ...)`
   This represents either a floating-point constant of mode :samp:`{m}` or
   (on older ports that do not define
-  ``TARGET_SUPPORTS_WIDE_INT``) an integer constant too large to fit
+  ``TARGET_SUPPORTS_WIDE_INT`` ) an integer constant too large to fit
   into ``HOST_BITS_PER_WIDE_INT`` bits but small enough to fit within
   twice that number of bits.  In the latter case, :samp:`{m}` will be
   ``VOIDmode``.  For integral values constants for modes with more
@@ -106,13 +106,13 @@ The simplest RTL expressions are those that represent constant values.
   .. index:: CONST_WIDE_INT
 
 :samp:`(const_wide_int:{m}{nunits}{elt0} ...)`
-  This contains an array of ``HOST_WIDE_INT``s that is large enough
+  This contains an array of ``HOST_WIDE_INT`` s that is large enough
   to hold any constant that can be represented on the target.  This form
   of rtl is only used on targets that define
   ``TARGET_SUPPORTS_WIDE_INT`` to be nonzero and then
-  ``CONST_DOUBLE``s are only used to hold floating-point values.  If
+  ``CONST_DOUBLE`` s are only used to hold floating-point values.  If
   the target leaves ``TARGET_SUPPORTS_WIDE_INT`` defined as 0,
-  ``CONST_WIDE_INT``s are not used and ``CONST_DOUBLE``s are as
+  ``CONST_WIDE_INT`` s are not used and ``CONST_DOUBLE`` s are as
   they were before.
 
   The values are stored in a compressed format.  The higher-order
@@ -122,20 +122,20 @@ The simplest RTL expressions are those that represent constant values.
   .. index:: CONST_WIDE_INT_VEC
 
 :samp:`CONST_WIDE_INT_VEC ({code})`
-  Returns the entire array of ``HOST_WIDE_INT``s that are used to
+  Returns the entire array of ``HOST_WIDE_INT`` s that are used to
   store the value.  This macro should be rarely used.
 
   .. index:: CONST_WIDE_INT_NUNITS
 
 :samp:`CONST_WIDE_INT_NUNITS ({code})`
-  The number of ``HOST_WIDE_INT``s used to represent the number.
+  The number of ``HOST_WIDE_INT`` s used to represent the number.
   Note that this generally is smaller than the number of
-  ``HOST_WIDE_INT``s implied by the mode size.
+  ``HOST_WIDE_INT`` s implied by the mode size.
 
   .. index:: CONST_WIDE_INT_ELT
 
 :samp:`CONST_WIDE_INT_ELT ({code},{i})`
-  Returns the ``i``th element of the array.   Element 0 is contains
+  Returns the ``i`` th element of the array.   Element 0 is contains
   the low order bits of the constant.
 
   .. index:: const_fixed
@@ -144,14 +144,14 @@ The simplest RTL expressions are those that represent constant values.
   Represents a fixed-point constant of mode :samp:`{m}`.
   The operand is a data structure of type ``struct fixed_value`` and
   is accessed with the macro ``CONST_FIXED_VALUE``.  The high part of
-  data is accessed with ``CONST_FIXED_VALUE_HIGH``; the low part is
+  data is accessed with ``CONST_FIXED_VALUE_HIGH`` ; the low part is
   accessed with ``CONST_FIXED_VALUE_LOW``.
 
   .. index:: const_poly_int
 
 :samp:`(const_poly_int:{m} [{c0}{c1} ...])`
-  Represents a ``poly_int``-style polynomial integer with coefficients
-  :samp:`{c0}` , :samp:`{c1}` , ....  The coefficients are ``wide_int``-based
+  Represents a ``poly_int`` -style polynomial integer with coefficients
+  :samp:`{c0}`, :samp:`{c1}`, ....  The coefficients are ``wide_int`` -based
   integers rather than rtxes.  ``CONST_POLY_INT_COEFFS`` gives the
   values of individual coefficients (which is mostly only useful in
   low-level routines) and ``const_poly_int_value`` gives the full
@@ -177,7 +177,7 @@ The simplest RTL expressions are those that represent constant values.
   The first three elements in each pattern are enough to determine the
   values of the other elements.  However, if all :samp:`{step}` s are zero,
   only the first two elements are needed.  If in addition each :samp:`{base1}`
-  is equal to the corresponding :samp:`{base0}` , only the first element in
+  is equal to the corresponding :samp:`{base0}`, only the first element in
   each pattern is needed.  The number of determining elements per pattern
   is given by :samp:`CONST_VECTOR_NELTS_PER_PATTERN ({v})`.
 
@@ -211,11 +211,11 @@ The simplest RTL expressions are those that represent constant values.
   Thus the first 6 elements (:samp:`{ 0, 1, 2, 6, 3, 8 }`) are enough
   to determine the whole sequence; we refer to them as the 'encoded'
   elements.  They are the only elements present in the square brackets
-  for variable-length ``const_vector``s (i.e. for
-  ``const_vector``s whose mode :samp:`{m}` has a variable number of
+  for variable-length ``const_vector`` s (i.e. for
+  ``const_vector`` s whose mode :samp:`{m}` has a variable number of
   elements).  However, as a convenience to code that needs to handle
-  both ``const_vector``s and ``parallel``s, all elements are
-  present in the square brackets for fixed-length ``const_vector``s;
+  both ``const_vector`` s and ``parallel`` s, all elements are
+  present in the square brackets for fixed-length ``const_vector`` s;
   the encoding scheme simply reduces the amount of work involved in
   processing constants that follow a regular pattern.
 
@@ -227,7 +227,7 @@ The simplest RTL expressions are those that represent constant values.
   petterns) the one with the fewest encoded elements.
 
   :samp:`const_vector_encoding_nelts ({v})` gives the total number of
-  encoded elements in :samp:`{v}` , which is 6 in the example above.
+  encoded elements in :samp:`{v}`, which is 6 in the example above.
   ``CONST_VECTOR_ENCODED_ELT (v, i)`` accesses the value
   of encoded element :samp:`{i}`.
 
@@ -260,7 +260,7 @@ The simplest RTL expressions are those that represent constant values.
   Represents the value of an assembler label for data.  :samp:`{symbol}` is
   a string that describes the name of the assembler label.  If it starts
   with a :samp:`*`, the label is the rest of :samp:`{symbol}` not including
-  the :samp:`*`.  Otherwise, the label is :samp:`{symbol}` , usually prefixed
+  the :samp:`*`.  Otherwise, the label is :samp:`{symbol}`, usually prefixed
   with :samp:`_`.
 
   The ``symbol_ref`` contains a mode, which is usually ``Pmode``.
@@ -284,10 +284,10 @@ The simplest RTL expressions are those that represent constant values.
 
 :samp:`(const:{m}{exp})`
   Represents a constant that is the result of an assembly-time
-  arithmetic computation.  The operand, :samp:`{exp}` , contains only
+  arithmetic computation.  The operand, :samp:`{exp}`, contains only
   ``const_int``, ``symbol_ref``, ``label_ref`` or ``unspec``
   expressions, combined with ``plus`` and ``minus``.  Any such
-  ``unspec``s are target-specific and typically represent some form
+  ``unspec`` s are target-specific and typically represent some form
   of relocation operator.  :samp:`{m}` should be a valid address mode.
 
   .. index:: high

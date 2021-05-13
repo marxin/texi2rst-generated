@@ -63,7 +63,7 @@ This allows subsequent .md file constructs to use the mode suffix
 ``:name``.  Every construct that does so will be expanded
 :samp:`{n}` times, once with every use of ``:name`` replaced by
 ``:mode1``, once with every use replaced by ``:mode2``,
-and so on.  In the expansion for a particular :samp:`{modei}` , every
+and so on.  In the expansion for a particular :samp:`{modei}`, every
 C condition will also require that :samp:`{condi}` be true.
 
 For example:
@@ -127,10 +127,10 @@ upper case.  You can define other attributes using:
 where :samp:`{name}` is the name of the attribute and :samp:`{valuei}`
 is the value associated with :samp:`{modei}`.
 
-When GCC replaces some :samp:`{:iterator}` with :samp:`{:mode}` , it will scan
+When GCC replaces some :samp:`{:iterator}` with :samp:`{:mode}`, it will scan
 each string and mode in the pattern for sequences of the form
 ``<iterator:attr>``, where :samp:`{attr}` is the name of a
-mode attribute.  If the attribute is defined for :samp:`{mode}` , the whole
+mode attribute.  If the attribute is defined for :samp:`{mode}`, the whole
 ``<...>`` sequence will be replaced by the appropriate attribute
 value.
 
@@ -172,7 +172,7 @@ modes and attributes (among others):
   (define_mode_attr d [(SI "") (DI "d")])
 
 and uses the following template to define both ``subsi3``
-and ``subdi3``:
+and ``subdi3`` :
 
 .. code-block:: c++
 
@@ -232,7 +232,7 @@ must have the same rtx format.  See :ref:`rtl-classes`.
 
 As with mode iterators, each pattern that uses :samp:`{name}` will be
 expanded :samp:`{n}` times, once with all uses of :samp:`{name}` replaced by
-:samp:`{code1}` , once with all uses replaced by :samp:`{code2}` , and so on.
+:samp:`{code1}`, once with all uses replaced by :samp:`{code2}`, and so on.
 See :ref:`defining-mode-iterators`.
 
 It is possible to define attributes for codes as well as for modes.
@@ -342,7 +342,7 @@ or define_c_enum.
 
 As with mode and code iterators, each pattern that uses :samp:`{name}` will be
 expanded :samp:`{n}` times, once with all uses of :samp:`{name}` replaced by
-:samp:`{int1}` , once with all uses replaced by :samp:`{int2}` , and so on.
+:samp:`{int1}`, once with all uses replaced by :samp:`{int2}`, and so on.
 See :ref:`defining-mode-iterators`.
 
 It is possible to define attributes for ints as well as for codes and modes.
@@ -414,7 +414,7 @@ used in RTL-pattern.
 Subst iterators transform templates in the following way: the templates
 are duplicated, the subst-attributes in these templates are replaced
 with the corresponding values, and a new attribute is implicitly added
-to the given ``define_insn``/``define_expand``.  The name of the
+to the given ``define_insn`` / ``define_expand``.  The name of the
 added attribute matches the name of ``define_subst``.  Such
 attributes are declared implicitly, and it is not allowed to have a
 ``define_attr`` named as a ``define_subst``.
@@ -486,7 +486,7 @@ lead to a double or trailing underscore.
 
 :samp:`insn_code maybe_code_for_{name} ({i1}, {i2}, ...)`
   See whether replacing the first :samp:`<...>` placeholder with
-  iterator value :samp:`{i1}` , the second with iterator value :samp:`{i2}` , and
+  iterator value :samp:`{i1}`, the second with iterator value :samp:`{i2}`, and
   so on, gives a valid instruction.  Return its code if so, otherwise
   return ``CODE_FOR_nothing``.
 
@@ -496,8 +496,8 @@ lead to a double or trailing underscore.
 :samp:`rtx maybe_gen_{name} ({i1}, {i2}, ..., {op0}, {op1}, ...)`
   Check for a valid instruction in the same way as
   ``maybe_code_for_name``.  If the instruction exists,
-  generate an instance of it using the operand values given by :samp:`{op0}` ,
-  :samp:`{op1}` , and so on, otherwise return null.
+  generate an instance of it using the operand values given by :samp:`{op0}`,
+  :samp:`{op1}`, and so on, otherwise return null.
 
 :samp:`rtx gen_{name} ({i1}, {i2}, ..., {op0}, {op1}, ...)`
   Same, but abort the compiler if the requested instruction does not exist,

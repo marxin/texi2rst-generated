@@ -55,7 +55,7 @@ MicroBlaze Options
 
 .. option:: -mxl-gp-opt
 
-  Use GP-relative ``.sdata``/``.sbss`` sections.
+  Use GP-relative ``.sdata`` / ``.sbss`` sections.
 
 .. option:: -mxl-multiply-high
 

@@ -153,7 +153,7 @@ The dump verbosity has the following options
 
 :samp:`all`
   Print detailed optimization information. This includes
-  :samp:`{optimized}` , :samp:`{missed}` , and :samp:`{note}`.
+  :samp:`{optimized}`, :samp:`{missed}`, and :samp:`{note}`.
 
   .. _dump-types:
 
@@ -240,7 +240,7 @@ inline.txt.
 If the :samp:`{filename}` is provided, then the dumps from all the
 applicable optimizations are concatenated into the filename.
 Otherwise the dump is output onto stderr. If :samp:`{options}` is
-omitted, it defaults to optimized-optall , which means dump
+omitted, it defaults to optimized-optall, which means dump
 all information about successful optimizations from all the passes.
 In the following example, the optimization information is output on
 to stderr.

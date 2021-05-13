@@ -50,7 +50,7 @@ G++ implements the same behavior as GCC does when assigning to a
 volatile object-there is no reread of the assigned-to object, the
 assigned rvalue is reused.  Note that in C++ assignment expressions
 are lvalues, and if used as an lvalue, the volatile object is
-referred to.  For instance, :samp:`{vref}` refers to :samp:`{vobj}` , as
+referred to.  For instance, :samp:`{vref}` refers to :samp:`{vobj}`, as
 expected, in the following example:
 
 .. code-block:: c++

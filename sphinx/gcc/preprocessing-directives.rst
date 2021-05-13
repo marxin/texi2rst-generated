@@ -39,7 +39,7 @@ implementation-defined behavior.
   the :samp:`\` character that begins a universal character name in a
   character constant or string literal (C99 and C11 6.10.3.2).
 
-* The behavior on each recognized non-``STDC #pragma``
+* The behavior on each recognized non- ``STDC #pragma``
   directive (C90 6.8.6, C99 and C11 6.10.6).
 
   See :ref:`Pragmas <pragmas>`, for details of

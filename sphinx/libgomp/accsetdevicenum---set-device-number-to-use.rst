@@ -5,7 +5,7 @@
 
 Description
   This function will indicate to the runtime which device number,
-  specified by :samp:`{devicenum}` , associated with the specified device
+  specified by :samp:`{devicenum}`, associated with the specified device
   type :samp:`{devicetype}`.
 
 :samp:`{C/C++}:`

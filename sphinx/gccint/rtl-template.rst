@@ -80,7 +80,7 @@ substitution of the operands.
 
     (match_operand:m n "scratch_operand" constraint)
 
-  but, when generating RTL, it produces a (``scratch``: :samp:`{m}` )
+  but, when generating RTL, it produces a ( ``scratch`` : :samp:`{m}` )
   expression.
 
   If the last few expressions in a ``parallel`` are ``clobber``
@@ -95,7 +95,7 @@ substitution of the operands.
   It is used when the operand needs to appear more than once in the
   insn.
 
-  In construction, ``match_dup`` acts just like ``match_operand``:
+  In construction, ``match_dup`` acts just like ``match_operand`` :
   the operand is substituted into the insn being constructed.  But in
   matching, ``match_dup`` behaves differently.  It assumes that operand
   number :samp:`{n}` has already been determined by a ``match_operand``
@@ -119,7 +119,7 @@ substitution of the operands.
   code.
 
   When constructing an insn, it stands for an RTL expression whose
-  expression code is taken from that of operand :samp:`{n}` , and whose
+  expression code is taken from that of operand :samp:`{n}`, and whose
   operands are constructed from the patterns :samp:`{operands}`.
 
   When matching an expression, it matches an expression if the function
@@ -163,7 +163,7 @@ substitution of the operands.
   (operands[3])`` to see which commutative operator was used.
 
   The machine mode :samp:`{m}` of ``match_operator`` works like that of
-  ``match_operand``: it is passed as the second argument to the
+  ``match_operand`` : it is passed as the second argument to the
   predicate function, and that function is solely responsible for
   deciding whether the expression to be matched 'has' that mode.
 

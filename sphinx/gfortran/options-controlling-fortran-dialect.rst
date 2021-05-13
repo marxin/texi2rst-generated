@@ -185,8 +185,8 @@ accepted by the compiler:
   ``\r``, ``\t``, ``\v``, ``\\``, and ``\0`` to the ASCII
   characters alert, backspace, form feed, newline, carriage return,
   horizontal tab, vertical tab, backslash, and NUL, respectively.
-  Additionally, ``\x``:samp:`{nn}` , ``\u``:samp:`{nnnn}` and
-  ``\U``:samp:`{nnnnnnnn}` (where each :samp:`{n}` is a hexadecimal digit) are
+  Additionally,  ``\x``:samp:`{nn}`,  ``\u``:samp:`{nnnn}` and
+   ``\U``:samp:`{nnnnnnnn}` (where each :samp:`{n}` is a hexadecimal digit) are
   translated into the Unicode characters corresponding to the specified code
   points. All other combinations of a character preceded by \ are
   unexpanded.
@@ -229,7 +229,7 @@ accepted by the compiler:
 
   By default fixed-form lines have spaces assumed (as if padded to that length)
   after the ends of short fixed-form lines.  This is not done either if
-  :option:`-ffixed-line-length-0` , :option:`-ffixed-line-length-none` or
+  :option:`-ffixed-line-length-0`, :option:`-ffixed-line-length-none` or
   if :option:`-fno-pad-source` option is used.  With any of those options
   continued character constants never have implicit spaces appended
   to them to fill out the line.
@@ -304,7 +304,7 @@ accepted by the compiler:
   an error at compile time when simplifying ``a = 1. / 0``.
   With this option, no error will be given and ``a`` will be assigned
   the value ``+Infinity``.  If an expression evaluates to a value
-  outside of the relevant range of [``-HUGE()``:``HUGE()``],
+  outside of the relevant range of [ ``-HUGE()`` : ``HUGE()`` ],
   then the expression will be replaced by ``-Inf`` or ``+Inf``
   as appropriate.
   Similarly, ``DATA i/Z'FFFFFFFF'/`` will result in an integer overflow
@@ -317,7 +317,7 @@ accepted by the compiler:
 
   Set the default integer and logical types to an 8 byte wide type.  This option
   also affects the kind of integer constants like ``42``. Unlike
-  :option:`-finteger-4-integer-8` , it does not promote variables with explicit
+  :option:`-finteger-4-integer-8`, it does not promote variables with explicit
   kind declaration.
 
 .. option:: -fdefault-real-8
@@ -329,7 +329,7 @@ accepted by the compiler:
   the default width of ``DOUBLE PRECISION`` and double real constants
   like ``1.d0`` to 16 bytes if possible.  If ``-fdefault-double-8``
   is given along with ``fdefault-real-8``, ``DOUBLE PRECISION``
-  and double real constants are not promoted.  Unlike :option:`-freal-4-real-8` ,
+  and double real constants are not promoted.  Unlike :option:`-freal-4-real-8`,
   ``fdefault-real-8`` does not promote variables with explicit kind
   declarations.
 
@@ -342,7 +342,7 @@ accepted by the compiler:
   the default width of ``DOUBLE PRECISION`` and double real constants
   like ``1.d0`` to 16 bytes if possible.  If ``-fdefault-double-8``
   is given along with ``fdefault-real-10``, ``DOUBLE PRECISION``
-  and double real constants are not promoted.  Unlike :option:`-freal-4-real-10` ,
+  and double real constants are not promoted.  Unlike :option:`-freal-4-real-10`,
   ``fdefault-real-10`` does not promote variables with explicit kind
   declarations.
 
@@ -355,7 +355,7 @@ accepted by the compiler:
   the default width of ``DOUBLE PRECISION`` and double real constants
   like ``1.d0`` to 16 bytes if possible.  If ``-fdefault-double-8``
   is given along with ``fdefault-real-16``, ``DOUBLE PRECISION``
-  and double real constants are not promoted.  Unlike :option:`-freal-4-real-16` ,
+  and double real constants are not promoted.  Unlike :option:`-freal-4-real-16`,
   ``fdefault-real-16`` does not promote variables with explicit kind
   declarations.
 
@@ -365,8 +365,8 @@ accepted by the compiler:
 
   Set the ``DOUBLE PRECISION`` type and double real constants
   like ``1.d0`` to an 8 byte wide type.  Do nothing if this
-  is already the default.  This option prevents :option:`-fdefault-real-8` ,
-  :option:`-fdefault-real-10` , and :option:`-fdefault-real-16` ,
+  is already the default.  This option prevents :option:`-fdefault-real-8`,
+  :option:`-fdefault-real-10`, and :option:`-fdefault-real-16`,
   from promoting ``DOUBLE PRECISION`` and double real constants like
   ``1.d0`` to 16 bytes.
 
@@ -381,7 +381,7 @@ accepted by the compiler:
   alignment in ``EQUIVALENCE`` and/or ``COMMON``, generic interfaces,
   BOZ literal constant conversion, and I/O.  Inspection of the intermediate
   representation of the translated Fortran code, produced by
-  :option:`-fdump-tree-original` , is suggested.
+  :option:`-fdump-tree-original`, is suggested.
 
 .. option:: -freal-4-real-8
 
@@ -418,7 +418,7 @@ accepted by the compiler:
   BOZ literal constant conversion, and I/O and calls to intrinsic procedures
   when passing a value to the ``kind=`` dummy argument.  Inspection of the
   intermediate representation of the translated Fortran code, produced by
-  :option:`-fdump-fortran-original` or :option:`-fdump-tree-original` , is suggested.
+  :option:`-fdump-fortran-original` or :option:`-fdump-tree-original`, is suggested.
 
 .. option:: -std=std
 

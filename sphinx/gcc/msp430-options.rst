@@ -85,11 +85,11 @@ These options are defined for the MSP430:
 
 .. option:: -mlarge
 
-  Use large-model addressing (20-bit pointers, 20-bit ``size_t``).
+  Use large-model addressing (20-bit pointers, 20-bit ``size_t`` ).
 
 .. option:: -msmall
 
-  Use small-model addressing (16-bit pointers, 16-bit ``size_t``).
+  Use small-model addressing (16-bit pointers, 16-bit ``size_t`` ).
 
 .. option:: -mrelax
 
@@ -161,7 +161,7 @@ These options are defined for the MSP430:
   like the corresponding attribute.  The fourth possible value -
   ``any`` - is the default.  It leaves placement entirely up to the
   linker script and how it assigns the standard sections
-  (``.text``, ``.data``, etc) to the memory regions.
+  ( ``.text``, ``.data``, etc) to the memory regions.
 
 .. option:: -msilicon-errata=
 

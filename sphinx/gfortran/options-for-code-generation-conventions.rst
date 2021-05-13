@@ -30,7 +30,7 @@ it.
   ``SAVE`` statement were specified for every local variable and array
   referenced in it. Does not affect common blocks. (Some Fortran compilers
   provide this option under the name :option:`-static` or :option:`-save`.)
-  The default, which is :option:`-fautomatic` , uses the stack for local
+  The default, which is :option:`-fautomatic`, uses the stack for local
   variables smaller than the value given by :option:`-fmax-stack-var-size`.
   Use the option :option:`-frecursive` to use no static memory. 
 
@@ -105,7 +105,7 @@ it.
   existing system environments (vis-ā-vis existing libraries, tools,
   and so on).
 
-  For example, with :option:`-funderscoring` , and assuming that ``j()`` and
+  For example, with :option:`-funderscoring`, and assuming that ``j()`` and
   ``max_count()`` are external functions while ``my_var`` and
   ``lvar`` are local variables, a statement like
 
@@ -119,7 +119,7 @@ it.
 
     i = j_() + max_count__(&my_var__, &lvar);
 
-  With :option:`-fno-underscoring` , the same statement is implemented as:
+  With :option:`-fno-underscoring`, the same statement is implemented as:
 
   .. code-block:: c++
 
@@ -139,7 +139,7 @@ it.
   significant effort, and, unlike naming disagreements, linkers normally
   cannot detect disagreements in these other areas.
 
-  Also, note that with :option:`-fno-underscoring` , the lack of appended
+  Also, note that with :option:`-fno-underscoring`, the lack of appended
   underscores introduces the very real possibility that a user-defined
   external name will conflict with a name in a system library, which
   could make finding unresolved-reference bugs quite difficult in some
@@ -323,9 +323,9 @@ it.
   of gfortran.
 
   The negative form, :option:`-fno-tail-call-workaround` or equivalent
-  :option:`-ftail-call-workaround=0` , can be used to disable this option.
+  :option:`-ftail-call-workaround=0`, can be used to disable this option.
 
-  Default is currently :option:`-ftail-call-workaround` , this will change
+  Default is currently :option:`-ftail-call-workaround`, this will change
   in future releases.
 
 .. option:: -fcheck-array-temporaries
@@ -517,14 +517,14 @@ it.
   variables to zero, ``LOGICAL`` variables to false, and
   ``CHARACTER`` variables to a string of null bytes.  Finer-grained
   initialization options are provided by the
-  :option:`-finit-integer`:samp:`={n}` ,
+  :option:`-finit-integer`:samp:`={n}`,
   :option:`-finit-real`:samp:`={<zero|inf|-inf|nan|snan>}` (which also initializes
   the real and imaginary parts of local ``COMPLEX`` variables),
-  :option:`-finit-logical`:samp:`={<true|false>}` , and
+  :option:`-finit-logical`:samp:`={<true|false>}`, and
   :option:`-finit-character`:samp:`={n}` (where :samp:`{n}` is an ASCII character
   value) options.
 
-  With :option:`-finit-derived` , components of derived type variables will be
+  With :option:`-finit-derived`, components of derived type variables will be
   initialized according to these flags.  Components whose type is not covered by
   an explicit :option:`-finit-*` flag will be treated as described above with
   :option:`-finit-local-zero`.
@@ -630,7 +630,7 @@ it.
 
   * replacing ``TRIM(a)`` with ``a(1:LEN_TRIM(a))`` and
 
-  * short-circuiting of logical operators (``.AND.`` and ``.OR.``).
+  * short-circuiting of logical operators ( ``.AND.`` and ``.OR.`` ).
 
   It can be deselected by specifying :option:`-fno-frontend-optimize`.
 

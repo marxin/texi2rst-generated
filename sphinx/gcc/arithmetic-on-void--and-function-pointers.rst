@@ -1,7 +1,7 @@
 .. _pointer-arith:
 
-Arithmetic on ``void``- and Function-Pointers
-*********************************************
+Arithmetic on ``void`` - and Function-Pointers
+**********************************************
 
 .. index:: void pointers, arithmetic
 

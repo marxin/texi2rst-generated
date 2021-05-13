@@ -1,7 +1,7 @@
 .. _executing-code-before-main:
 
-``+load``: Executing Code before ``main``
-*****************************************
+``+load`` : Executing Code before ``main``
+******************************************
 
 This section is specific for the GNU Objective-C runtime.  If you are
 using a different runtime, you can skip it.
@@ -50,7 +50,7 @@ object.  The solution would require these variables to be initialized
 just before entering ``main``.
 
 The correct solution of the above problem is to use the ``+load``
-method instead of ``+initialize``:
+method instead of ``+initialize`` :
 
 .. code-block:: objective-c
 
@@ -112,8 +112,8 @@ particular case, are not guaranteed:
 * allocation of or sending messages to objects whose classes have a
   category implemented in the same file;
 
-* sending messages to Objective-C constant strings (``@"this is a
-  constant string"``);
+* sending messages to Objective-C constant strings ( ``@"this is a
+  constant string"`` );
 
 You should make no assumptions about receiving ``+load`` in sibling
 classes when you write ``+load`` of a class.  The order in which

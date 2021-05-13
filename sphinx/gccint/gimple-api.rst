@@ -21,7 +21,7 @@ a valueization hook:
 
 .. function:: fold_stmt (gimple_stmt_iterator* ,tree (* )(tree )); 
 
-Ontop of these a ``fold_buildN``-like API for GIMPLE is introduced:
+Ontop of these a ``fold_buildN`` -like API for GIMPLE is introduced:
 
 .. function:: tree gimple_build(gimple_seq *,location_t ,enum tree_code,tree ,tree ,tree (*valueize )(tree )= NULL); 
 

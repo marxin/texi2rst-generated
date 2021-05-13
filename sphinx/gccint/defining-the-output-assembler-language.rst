@@ -139,7 +139,7 @@ for the file format in use is appropriate.
 
 .. function:: void TARGET_ASM_OUTPUT_IDENT(const char* name)
 
-  Output a string based on :samp:`{name}` , suitable for the :samp:`#ident`  directive, or the equivalent directive or pragma in non-C-family languages.  If this hook is not defined, nothing is output for the :samp:`#ident`  directive.
+  Output a string based on :samp:`{name}`, suitable for the :samp:`#ident`  directive, or the equivalent directive or pragma in non-C-family languages.  If this hook is not defined, nothing is output for the :samp:`#ident`  directive.
 
 .. index:: OUTPUT_QUOTED_STRING
 
@@ -152,7 +152,7 @@ of the filename using this macro.
 .. function:: void TARGET_ASM_NAMED_SECTION(const char* name,unsigned intflags,tree decl)
 
   Output assembly directives to switch to section :samp:`{name}`.  The section
-  should have attributes as specified by :samp:`{flags}` , which is a bit mask
+  should have attributes as specified by :samp:`{flags}`, which is a bit mask
   of the ``SECTION_*`` flags defined in output.h.  If :samp:`{decl}`
   is non-NULL, it is the ``VAR_DECL`` or ``FUNCTION_DECL`` with which
   this section is associated.
@@ -174,7 +174,7 @@ of the filename using this macro.
   Return preferred text (sub)section for function :samp:`{decl}`.
   Main purpose of this function is to separate cold, normal and hot
   functions. :samp:`{startup}` is true when function is known to be used only
-  at startup (from static constructors or it is ``main()``).
+  at startup (from static constructors or it is ``main()`` ).
   :samp:`{exit}` is true when function is known to be used only at exit
   (from static destructors).
   Return NULL if function should go to default text section.
@@ -214,7 +214,7 @@ This is true on most ELF targets.
   switches provided as argument.
 
   By default this hook is set to NULL, but an example implementation is
-  provided for ELF based targets.  Called :samp:`{elf_record_gcc_switches}` ,
+  provided for ELF based targets.  Called :samp:`{elf_record_gcc_switches}`,
   it records the switches as ASCII text inside a new, string mergeable
   section in the assembler output file.  The name of the new section is
   provided by the ``TARGET_ASM_RECORD_GCC_SWITCHES_SECTION`` target
@@ -308,7 +308,7 @@ the string should contain a tab, a pseudo-op, and then another tab.
   A target hook to recognize :samp:`{rtx}` patterns that ``output_addr_const``
   can't deal with, and output assembly code to :samp:`{file}` corresponding to
   the pattern :samp:`{x}`.  This may be used to allow machine-dependent
-  ``UNSPEC``s to appear within constants.
+  ``UNSPEC`` s to appear within constants.
 
   If target hook fails to recognize a pattern, it must return ``false``,
   so that a standard error message is printed.  If it prints an error message
@@ -431,7 +431,7 @@ MacroREAL_VALUE_TO_TARGET_DECIMAL32(:samp:`{x}`,:samp:`{l}`)
 MacroREAL_VALUE_TO_TARGET_DECIMAL64(:samp:`{x}`,:samp:`{l}`)
 .. index:: REAL_VALUE_TO_TARGET_DECIMAL128
 
-MacroREAL_VALUE_TO_TARGET_DECIMAL128(:samp:`{x}`,:samp:`{l}`)These translate :samp:`{x}` , of type ``REAL_VALUE_TYPE``, to the
+MacroREAL_VALUE_TO_TARGET_DECIMAL128(:samp:`{x}`,:samp:`{l}`)These translate :samp:`{x}`, of type ``REAL_VALUE_TYPE``, to the
 target's floating point representation, and store its bit pattern in
 the variable :samp:`{l}`.  For ``REAL_VALUE_TO_TARGET_SINGLE`` and
 ``REAL_VALUE_TO_TARGET_DECIMAL32``, this variable should be a
@@ -578,7 +578,7 @@ assembler syntax for defining the name, and a newline.  A default
 definition of this macro is provided which is correct for most systems.
 
 If this macro is not defined, then the function name is defined in the
-usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
+usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
 
 .. index:: assemble_name_raw
 
@@ -679,11 +679,11 @@ MacroASM_DECLARE_FUNCTION_NAME(:samp:`{stream}`,:samp:`{name}`,:samp:`{decl}`)A 
 :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
 function which is being defined.  This macro is responsible for
 outputting the label definition (perhaps using
-``ASM_OUTPUT_FUNCTION_LABEL``).  The argument :samp:`{decl}` is the
+``ASM_OUTPUT_FUNCTION_LABEL`` ).  The argument :samp:`{decl}` is the
 ``FUNCTION_DECL`` tree node representing the function.
 
 If this macro is not defined, then the function name is defined in the
-usual manner as a label (by means of ``ASM_OUTPUT_FUNCTION_LABEL``).
+usual manner as a label (by means of ``ASM_OUTPUT_FUNCTION_LABEL`` ).
 
 You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
 of this macro.
@@ -707,11 +707,11 @@ MacroASM_DECLARE_COLD_FUNCTION_NAME(:samp:`{stream}`,:samp:`{name}`,:samp:`{decl
 :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
 cold function partition which is being defined.  This macro is responsible
 for outputting the label definition (perhaps using
-``ASM_OUTPUT_FUNCTION_LABEL``).  The argument :samp:`{decl}` is the
+``ASM_OUTPUT_FUNCTION_LABEL`` ).  The argument :samp:`{decl}` is the
 ``FUNCTION_DECL`` tree node representing the function.
 
 If this macro is not defined, then the cold partition name is defined in the
-usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
+usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
 
 You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
 of this macro.
@@ -734,11 +734,11 @@ of this macro.
 MacroASM_DECLARE_OBJECT_NAME(:samp:`{stream}`,:samp:`{name}`,:samp:`{decl}`)A C statement (sans semicolon) to output to the stdio stream
 :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of an
 initialized variable which is being defined.  This macro must output the
-label definition (perhaps using ``ASM_OUTPUT_LABEL``).  The argument
+label definition (perhaps using ``ASM_OUTPUT_LABEL`` ).  The argument
 :samp:`{decl}` is the ``VAR_DECL`` tree node representing the variable.
 
 If this macro is not defined, then the variable name is defined in the
-usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
+usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
 
 You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` and/or
 ``ASM_OUTPUT_SIZE_DIRECTIVE`` in the definition of this macro.
@@ -748,12 +748,12 @@ You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` and/or
   A target hook to output to the stdio stream :samp:`{file}` any text necessary
   for declaring the name :samp:`{name}` of a constant which is being defined.  This
   target hook is responsible for outputting the label definition (perhaps using
-  ``assemble_label``).  The argument :samp:`{exp}` is the value of the constant,
+  ``assemble_label`` ).  The argument :samp:`{exp}` is the value of the constant,
   and :samp:`{size}` is the size of the constant in bytes.  The :samp:`{name}`
   will be an internal label.
 
   The default version of this target hook, define the :samp:`{name}` in the
-  usual manner as a label (by means of ``assemble_label``).
+  usual manner as a label (by means of ``assemble_label`` ).
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in this target hook.
 
@@ -859,7 +859,7 @@ public symbol such that extra copies in multiple translation units will
 be discarded by the linker.  Define this macro if your object file
 format provides support for this concept, such as the :samp:`COMDAT`
 section flags in the Microsoft Windows PE/COFF format, and this support
-requires changes to :samp:`{decl}` , such as putting it in a separate section.
+requires changes to :samp:`{decl}`, such as putting it in a separate section.
 
 .. index:: SUPPORTS_ONE_ONLY
 
@@ -913,7 +913,7 @@ The GNU assembler and most Unix assemblers don't require anything.
 
   This target hook is a function to output to :samp:`{asm_out_file}` an assembler
   pseudo-op to declare a library function name external.  The name of the
-  library function is given by :samp:`{symref}` , which is a ``symbol_ref``.
+  library function is given by :samp:`{symref}`, which is a ``symbol_ref``.
 
 .. function:: void TARGET_ASM_MARK_DECL_PRESERVED(const char* symbol)
 
@@ -931,7 +931,7 @@ systems.  This macro is used in ``assemble_name``.
 
 .. function:: tree TARGET_MANGLE_ASSEMBLER_NAME(const char* name)
 
-  Given a symbol :samp:`{name}` , perform same mangling as ``varasm.c``'s ``assemble_name``, but in memory rather than to a file stream, returning result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and then prepends the ``USER_LABEL_PREFIX``, if any.
+  Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's ``assemble_name``, but in memory rather than to a file stream, returning result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and then prepends the ``USER_LABEL_PREFIX``, if any.
 
 .. index:: ASM_OUTPUT_SYMBOL_REF
 
@@ -943,7 +943,7 @@ encoded by ``TARGET_ENCODE_SECTION_INFO``.
 
 .. index:: ASM_OUTPUT_LABEL_REF
 
-MacroASM_OUTPUT_LABEL_REF(:samp:`{stream}`,:samp:`{buf}`)A C statement (sans semicolon) to output a reference to :samp:`{buf}` , the
+MacroASM_OUTPUT_LABEL_REF(:samp:`{stream}`,:samp:`{buf}`)A C statement (sans semicolon) to output a reference to :samp:`{buf}`, the
 result of ``ASM_GENERATE_INTERNAL_LABEL``.  If not defined,
 ``assemble_name`` will be used to output the name of the symbol.
 This macro is not used by ``output_asm_label``, or the ``%l``
@@ -1001,8 +1001,8 @@ you should know what it does on your machine.)
 .. index:: ASM_FORMAT_PRIVATE_NAME
 
 MacroASM_FORMAT_PRIVATE_NAME(:samp:`{outvar}`,:samp:`{name}`,:samp:`{number}`)A C expression to assign to :samp:`{outvar}` (which is a variable of type
-``char *``) a newly allocated string made from the string
-:samp:`{name}` and the number :samp:`{number}` , with some suitable punctuation
+``char *`` ) a newly allocated string made from the string
+:samp:`{name}` and the number :samp:`{number}`, with some suitable punctuation
 added.  Use ``alloca`` to get space for the string.
 
 The string will be used as an argument to ``ASM_OUTPUT_LABELREF`` to
@@ -1078,7 +1078,7 @@ systems define other ways of computing names.
 
 :samp:`{buf}` is an expression of type ``char *`` which gives you a
 buffer in which to store the name; its length is as long as
-:samp:`{class_name}` , :samp:`{cat_name}` and :samp:`{sel_name}` put together, plus
+:samp:`{class_name}`, :samp:`{cat_name}` and :samp:`{sel_name}` put together, plus
 50 characters extra.
 
 The argument :samp:`{is_inst}` specifies whether the method is an instance
@@ -1165,7 +1165,7 @@ program is linked by the :command:`gcc` driver like this:
 
   ld -o output_file crti.o crtbegin.o ... -lgcc crtend.o crtn.o
 
-The prologue of a function (``__init``) appears in the ``.init``
+The prologue of a function ( ``__init`` ) appears in the ``.init``
 section of crti.o; the epilogue appears in crtn.o.  Likewise
 for the function ``__fini`` in the :dfn:`.fini` section.  Normally these
 files are provided by the operating system or by the GNU C library, but
@@ -1183,13 +1183,13 @@ macro properly.
 
 If no init section is available, when GCC compiles any function called
 ``main`` (or more accurately, any function designated as a program
-entry point by the language front end calling ``expand_main_function``),
+entry point by the language front end calling ``expand_main_function`` ),
 it inserts a procedure call to ``__main`` as the first executable code
 after the function prologue.  The ``__main`` function is defined
 in libgcc2.c and runs the global constructors.
 
 In file formats that don't support arbitrary sections, there are again
-two variants.  In the simplest variant, the GNU linker (GNU ``ld``)
+two variants.  In the simplest variant, the GNU linker (GNU ``ld`` )
 and an 'a.out' format must be used.  In this case,
 ``TARGET_ASM_CONSTRUCTOR`` is defined to produce a ``.stabs``
 entry of type :samp:`N_SETT`, referencing the name ``__CTOR_LIST__``,
@@ -1253,7 +1253,7 @@ the following symbol is a finalization routine.
 
 MacroCOLLECT_SHARED_INIT_FUNC(:samp:`{stream}`,:samp:`{func}`)If defined, a C statement that will write a function that can be
 automatically called when a shared library is loaded.  The function
-should call :samp:`{func}` , which takes no arguments.  If not defined, and
+should call :samp:`{func}`, which takes no arguments.  If not defined, and
 the object format requires an explicit initialization function, then a
 function called ``_GLOBAL__DI`` will be generated.
 
@@ -1265,7 +1265,7 @@ exception tables embedded in the code.
 
 MacroCOLLECT_SHARED_FINI_FUNC(:samp:`{stream}`,:samp:`{func}`)If defined, a C statement that will write a function that can be
 automatically called when a shared library is unloaded.  The function
-should call :samp:`{func}` , which takes no arguments.  If not defined, and
+should call :samp:`{func}`, which takes no arguments.  If not defined, and
 the object format requires an explicit finalization function, then a
 function called ``_GLOBAL__DD`` will be generated.
 
@@ -1296,7 +1296,7 @@ It is false if we must use :command:`collect2`.
 
   Assume that :samp:`{symbol}` is a ``SYMBOL_REF`` for a function taking
   no arguments and with no return value.  If the target supports initialization
-  priorities, :samp:`{priority}` is a value between 0 and ``MAX_INIT_PRIORITY``;
+  priorities, :samp:`{priority}` is a value between 0 and ``MAX_INIT_PRIORITY`` ;
   otherwise it must be ``DEFAULT_INIT_PRIORITY``.
 
   If this macro is not defined by the target, a suitable default will
@@ -1417,7 +1417,7 @@ assembler instruction opcode to the stdio stream :samp:`{stream}`.  The
 macro-operand :samp:`{ptr}` is a variable of type ``char *`` which
 points to the opcode name in its 'internal' form-the form that is
 written in the machine description.  The definition should output the
-opcode name to :samp:`{stream}` , performing any translation you desire, and
+opcode name to :samp:`{stream}`, performing any translation you desire, and
 increment the variable :samp:`{ptr}` to point at the end of the opcode
 so that it will not be output twice.
 
@@ -1438,11 +1438,11 @@ in the usual way.
 .. index:: FINAL_PRESCAN_INSN
 
 MacroFINAL_PRESCAN_INSN(:samp:`{insn}`,:samp:`{opvec}`,:samp:`{noperands}`)If defined, a C statement to be executed just prior to the output of
-assembler code for :samp:`{insn}` , to modify the extracted operands so
+assembler code for :samp:`{insn}`, to modify the extracted operands so
 they will be output differently.
 
 Here the argument :samp:`{opvec}` is the vector containing the operands
-extracted from :samp:`{insn}` , and :samp:`{noperands}` is the number of
+extracted from :samp:`{insn}`, and :samp:`{noperands}` is the number of
 elements of the vector which contain meaningful data for this insn.
 The contents of this vector are what will be used to convert the insn
 template into assembler code, so you can change the assembler output
@@ -1460,11 +1460,11 @@ If this macro is not defined, it is equivalent to a null statement.
 .. function:: void TARGET_ASM_FINAL_POSTSCAN_INSN(FILE *file,rtx_insn *insn,rtx *opvec,int noperands)
 
   If defined, this target hook is a function which is executed just after the
-  output of assembler code for :samp:`{insn}` , to change the mode of the assembler
+  output of assembler code for :samp:`{insn}`, to change the mode of the assembler
   if necessary.
 
   Here the argument :samp:`{opvec}` is the vector containing the operands
-  extracted from :samp:`{insn}` , and :samp:`{noperands}` is the number of
+  extracted from :samp:`{insn}`, and :samp:`{noperands}` is the number of
   elements of the vector which contain meaningful data for this insn.
   The contents of this vector are what was used to convert the insn
   template into assembler code, so you can change the assembler mode
@@ -1647,7 +1647,7 @@ way here.  For example,
 You must provide this macro on machines where the addresses in a
 dispatch table are relative to the table's own address.  If defined, GCC
 will also use this macro on all machines when producing PIC.
-:samp:`{body}` is the body of the ``ADDR_DIFF_VEC``; it is provided so that the
+:samp:`{body}` is the body of the ``ADDR_DIFF_VEC`` ; it is provided so that the
 mode and flags can be read.
 
 .. index:: ASM_OUTPUT_ADDR_VEC_ELT
@@ -1669,9 +1669,9 @@ For example,
 
 MacroASM_OUTPUT_CASE_LABEL(:samp:`{stream}`,:samp:`{prefix}`,:samp:`{num}`,:samp:`{table}`)Define this if the label before a jump-table needs to be output
 specially.  The first three arguments are the same as for
-``(*targetm.asm_out.internal_label)``; the fourth argument is the
+``(*targetm.asm_out.internal_label)`` ; the fourth argument is the
 jump-table which follows (a ``jump_table_data`` containing an
-``addr_vec`` or ``addr_diff_vec``).
+``addr_vec`` or ``addr_diff_vec`` ).
 
 This feature is used on system V to output a ``swbeg`` statement
 for the table.
@@ -1705,9 +1705,9 @@ the jump-table.
   This target hook emits a label at the beginning of each FDE.  It
   should be defined on targets where FDEs need special labels, and it
   should write the appropriate label, for the FDE associated with the
-  function declaration :samp:`{decl}` , to the stdio stream :samp:`{stream}`.
-  The third argument, :samp:`{for_eh}` , is a boolean: true if this is for an
-  exception table.  The fourth argument, :samp:`{empty}` , is a boolean:
+  function declaration :samp:`{decl}`, to the stdio stream :samp:`{stream}`.
+  The third argument, :samp:`{for_eh}`, is a boolean: true if this is for an
+  exception table.  The fourth argument, :samp:`{empty}`, is a boolean:
   true if this is a placeholder label for an omitted FDE.
 
   The default is that FDEs are not given nonlocal labels.
@@ -1790,7 +1790,7 @@ that it does not contain any extraneous set bits in it.
 MacroDWARF2_UNWIND_INFODefine this macro to 0 if your target supports DWARF 2 frame unwind
 information, but it does not yet work with exception handling.
 Otherwise, if your target supports this information (if it defines
-``INCOMING_RETURN_ADDR_RTX`` and ``OBJECT_FORMAT_ELF``),
+``INCOMING_RETURN_ADDR_RTX`` and ``OBJECT_FORMAT_ELF`` ),
 GCC will provide a default definition of 1.
 
 .. function:: enum unwind_info_type TARGET_EXCEPT_UNWIND_INFO(struct gcc_options* opts)
@@ -1798,7 +1798,7 @@ GCC will provide a default definition of 1.
   This hook defines the mechanism that will be used for exception handling
   by the target.  If the target has ABI specified unwind tables, the hook
   should return ``UI_TARGET``.  If the target is to use the
-  ``setjmp``/``longjmp``-based exception handling scheme, the hook
+  ``setjmp`` / ``longjmp`` -based exception handling scheme, the hook
   should return ``UI_SJLJ``.  If the target supports DWARF 2 frame unwind
   information, the hook should return ``UI_DWARF2``.
 
@@ -1827,15 +1827,15 @@ command-line option processing.
 
 .. index:: DONT_USE_BUILTIN_SETJMP
 
-MacroDONT_USE_BUILTIN_SETJMPDefine this macro to 1 if the ``setjmp``/``longjmp``-based scheme
-should use the ``setjmp``/``longjmp`` functions from the C library
-instead of the ``__builtin_setjmp``/``__builtin_longjmp`` machinery.
+MacroDONT_USE_BUILTIN_SETJMPDefine this macro to 1 if the ``setjmp`` / ``longjmp`` -based scheme
+should use the ``setjmp`` / ``longjmp`` functions from the C library
+instead of the ``__builtin_setjmp`` / ``__builtin_longjmp`` machinery.
 
 .. index:: JMP_BUF_SIZE
 
 MacroJMP_BUF_SIZEThis macro has no effect unless ``DONT_USE_BUILTIN_SETJMP`` is also
 defined.  Define this macro if the default size of ``jmp_buf`` buffer
-for the ``setjmp``/``longjmp``-based exception handling mechanism
+for the ``setjmp`` / ``longjmp`` -based exception handling mechanism
 is not large enough, or if it is much too large.
 The default size is ``FIRST_PSEUDO_REGISTER * sizeof(void *)``.
 
@@ -1905,7 +1905,7 @@ This describes commands for alignment.
 
 .. index:: JUMP_ALIGN
 
-MacroJUMP_ALIGN(:samp:`{label}`)The alignment (log base 2) to put in front of :samp:`{label}` , which is
+MacroJUMP_ALIGN(:samp:`{label}`)The alignment (log base 2) to put in front of :samp:`{label}`, which is
 a common destination of jumps and has no fallthru incoming edge.
 
 This macro need not be defined if you don't want any special alignment
@@ -1919,7 +1919,7 @@ selection in :samp:`{align_jumps}` in a ``JUMP_ALIGN`` implementation.
 
 .. index:: LABEL_ALIGN_AFTER_BARRIER
 
-MacroLABEL_ALIGN_AFTER_BARRIER(:samp:`{label}`)The alignment (log base 2) to put in front of :samp:`{label}` , which follows
+MacroLABEL_ALIGN_AFTER_BARRIER(:samp:`{label}`)The alignment (log base 2) to put in front of :samp:`{label}`, which follows
 a ``BARRIER``.
 
 This macro need not be defined if you don't want any special alignment

@@ -142,7 +142,7 @@ libraries and debuggers on certain systems.
 * 
   .. index:: fdollars-in-identifiers
 
-  Even if you specify :option:`-fdollars-in-identifiers` ,
+  Even if you specify :option:`-fdollars-in-identifiers`,
   you cannot successfully use :samp:`$` in identifiers on the RS/6000 due
   to a restriction in the IBM assembler.  GAS supports these
   identifiers.

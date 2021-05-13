@@ -337,11 +337,11 @@ This is something of a brute-force approach, but the trimmed graph
 hopefully keeps the complexity manageable.
 
 This algorithm can be disabled (for debugging purposes) via
-:option:`-fno-analyzer-feasibility` , which simply uses the shortest path,
+:option:`-fno-analyzer-feasibility`, which simply uses the shortest path,
 and notes if it is infeasible.
 
 The above gives us a shortest feasible ``exploded_path`` through the
-``exploded_graph`` (a list of ``exploded_edge *``).  We use this
+``exploded_graph`` (a list of ``exploded_edge *`` ).  We use this
 ``exploded_path`` to build a ``diagnostic_path`` (a list of
 events for the diagnostic subsystem) - specifically a
 ``checker_path``.

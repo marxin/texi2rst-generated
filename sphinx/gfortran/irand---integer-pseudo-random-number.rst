@@ -12,7 +12,7 @@
   distribution between 0 and a system-dependent limit (which is in most
   cases 2147483647). If :samp:`{FLAG}` is 0, the next number
   in the current sequence is returned; if :samp:`{FLAG}` is 1, the generator
-  is restarted by ``CALL SRAND(0)``; if :samp:`{FLAG}` has any other value,
+  is restarted by ``CALL SRAND(0)`` ; if :samp:`{FLAG}` has any other value,
   it is used as a new seed with ``SRAND``.
 
   This intrinsic routine is provided for backwards compatibility with

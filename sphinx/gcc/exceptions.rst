@@ -61,7 +61,7 @@ There are several caveats to using the new exception mechanism:
   :option:`-shared-libgcc` options are used when linking.
 
 * With the NeXT runtime, although currently designed to be binary
-  compatible with ``NS_HANDLER``-style idioms provided by the
+  compatible with ``NS_HANDLER`` -style idioms provided by the
   ``NSException`` class, the new exceptions can only be used on Mac
   OS X 10.3 (Panther) and later systems, due to additional functionality
   needed in the NeXT Objective-C runtime.
@@ -71,7 +71,7 @@ There are several caveats to using the new exception mechanism:
   Objective-C++, the Objective-C exception model does not interoperate with C++
   exceptions at this time.  This means you cannot ``@throw`` an exception
   from Objective-C and ``catch`` it in C++, or vice versa
-  (i.e., ``throw ... @catch``).
+  (i.e., ``throw ... @catch`` ).
 
 .. =========================================================================
 

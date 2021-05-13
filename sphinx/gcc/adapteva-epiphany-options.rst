@@ -36,7 +36,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   and test the flags.  This is faster than a software comparison, but can
   get incorrect results in the presence of NaNs, or when two different small
   numbers are compared such that their difference is calculated as zero.
-  The default is :option:`-msoft-cmpsf` , which uses slower, but IEEE-compliant,
+  The default is :option:`-msoft-cmpsf`, which uses slower, but IEEE-compliant,
   software comparisons.
 
 .. option:: -mstack-offset=num
@@ -117,13 +117,13 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
   Code generation tweaks that disable, respectively, splitting of 32-bit
   loads, generation of post-increment addresses, and generation of
-  post-modify addresses.  The defaults are msplit-lohi ,
-  :option:`-mpost-inc` , and :option:`-mpost-modify`.
+  post-modify addresses.  The defaults are msplit-lohi,
+  :option:`-mpost-inc`, and :option:`-mpost-modify`.
 
 .. option:: -mnovect-double, -mno-vect-double, -mvect-double
 
   Change the preferred SIMD mode to SImode.  The default is
-  :option:`-mvect-double` , which uses DImode as preferred SIMD mode.
+  :option:`-mvect-double`, which uses DImode as preferred SIMD mode.
 
 .. option:: -max-vect-align=num
 

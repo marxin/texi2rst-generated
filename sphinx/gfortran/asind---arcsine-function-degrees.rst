@@ -13,7 +13,7 @@
 
 :samp:`{Description}:`
   ``ASIND(X)`` computes the arcsine of its :samp:`{X}` in degrees (inverse of
-  ``SIND(X)``).
+  ``SIND(X)`` ).
 
   This function is for compatibility only and should be avoided in favor of
   standard constructs wherever possible.

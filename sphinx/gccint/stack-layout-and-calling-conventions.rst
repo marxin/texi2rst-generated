@@ -198,7 +198,7 @@ If this RTL is a ``REG``, you should also define
 MacroDWARF_ALT_FRAME_RETURN_COLUMNA C expression whose value is an integer giving a DWARF 2 column
 number that may be used as an alternative return column.  The column
 must not correspond to any gcc hard register (that is, it must not
-be in the range of ``DWARF_FRAME_REGNUM``).
+be in the range of ``DWARF_FRAME_REGNUM`` ).
 
 This macro can be useful if ``DWARF_FRAME_RETURN_COLUMN`` is set to a
 general register, but an alternative column needs to be used for signal
@@ -411,7 +411,7 @@ through signal frames.
 
 This macro is called from ``uw_frame_state_for`` in
 unwind-dw2.c, unwind-dw2-xtensa.c and
-unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context``;
+unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context`` ;
 :samp:`{fs}` is an ``_Unwind_FrameState``.  Examine ``context->ra``
 for the address of the code being executed and ``context->cfa`` for
 the stack pointer value.  If the frame can be decoded, the register
@@ -429,7 +429,7 @@ call-frame unwinder to handle the IA-64 ``.unwabi`` unwinding directive,
 usually used for signal or interrupt frames.
 
 This macro is called from ``uw_update_context`` in libgcc's
-unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context``;
+unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context`` ;
 :samp:`{fs}` is an ``_Unwind_FrameState``.  Examine ``fs->unwabi``
 for the abi and context in the ``.unwabi`` directive.  If the
 ``.unwabi`` directive can be handled, the register save addresses should
@@ -507,7 +507,7 @@ default value of this macro is zero.
 
 MacroSTACK_CHECK_PROTECTThe number of bytes of stack needed to recover from a stack overflow, for
 languages where such a recovery is supported.  The default value of 4KB/8KB
-with the ``setjmp``/``longjmp``-based exception handling mechanism and
+with the ``setjmp`` / ``longjmp`` -based exception handling mechanism and
 8KB/12KB with other exception handling mechanisms should be adequate for most
 architectures and operating systems.
 
@@ -718,8 +718,8 @@ should return the .eh_frame register number.  The default is
 
 MacroDWARF2_FRAME_REG_OUT(:samp:`{regno}`,:samp:`{for_eh}`)Define this macro to map register numbers held in the call frame info
 that GCC has collected using ``DWARF_FRAME_REGNUM`` to those that
-should be output in .debug_frame (``for_eh`` is zero) and
-.eh_frame (``for_eh`` is nonzero).  The default is to
+should be output in .debug_frame ( ``for_eh`` is zero) and
+.eh_frame ( ``for_eh`` is nonzero).  The default is to
 return ``regno``.
 
 .. index:: REG_VALUE_IN_UNWIND_CONTEXT
@@ -909,7 +909,7 @@ allocated for arguments even when their values are passed in
 registers.
 
 The value of this macro is the size, in bytes, of the area reserved for
-arguments passed in registers for the function represented by :samp:`{fndecl}` ,
+arguments passed in registers for the function represented by :samp:`{fndecl}`,
 which can be zero if GCC is calling a library function.
 The argument :samp:`{fndecl}` can be the FUNCTION_DECL, or the type itself
 of the function.
@@ -986,7 +986,7 @@ stack in its natural location.
   calling convention, no functions pop their arguments, so the value of
   the macro is always 0 in this case.  But an alternative calling
   convention is available in which functions that take a fixed number of
-  arguments pop them but other functions (such as ``printf``) pop
+  arguments pop them but other functions (such as ``printf`` ) pop
   nothing (the caller pops all).  When this convention is in use,
   :samp:`{funtype}` is examined to determine whether a function takes a fixed
   number of arguments.
@@ -1165,7 +1165,7 @@ There is no need to record in ``CUMULATIVE_ARGS`` anything about the
 arguments that have been passed on the stack.  The compiler has other
 variables to keep track of that.  For target machines on which all
 arguments are passed on the stack, there is no need to store anything in
-``CUMULATIVE_ARGS``; however, the data structure must exist and
+``CUMULATIVE_ARGS`` ; however, the data structure must exist and
 should not be empty, so use ``int``.
 
 .. index:: OVERRIDE_ABI_FORMAT
@@ -1202,7 +1202,7 @@ never both of them at once.
 .. index:: INIT_CUMULATIVE_LIBCALL_ARGS
 
 MacroINIT_CUMULATIVE_LIBCALL_ARGS(:samp:`{cum}`,:samp:`{mode}`,:samp:`{libname}`)Like ``INIT_CUMULATIVE_ARGS`` but only used for outgoing libcalls,
-it gets a ``MODE`` argument instead of :samp:`{fntype}` , that would be
+it gets a ``MODE`` argument instead of :samp:`{fntype}`, that would be
 ``NULL``.  :samp:`{indirect}` would always be zero, too.  If this macro
 is not defined, ``INIT_CUMULATIVE_ARGS (cum, NULL_RTX, libname,
 0)`` is used instead.
@@ -1346,7 +1346,7 @@ stack.
 
   This hook performs target-specific gimplification of
   ``VA_ARG_EXPR``.  The first two parameters correspond to the
-  arguments to ``va_arg``; the latter two are as in
+  arguments to ``va_arg`` ; the latter two are as in
   ``gimplify.c:gimplify_expr``.
 
 .. function:: bool TARGET_VALID_POINTER_MODE(scalar_int_mode mode)
@@ -1399,9 +1399,9 @@ stack.
   to a target, the target may want to handle normal :samp:`{N}` -bit
   ``VECTOR_TYPE`` arguments and return values in the same way as
   before, to maintain backwards compatibility.  However, it may also
-  provide new, architecture-specific ``VECTOR_TYPE``s that are passed
+  provide new, architecture-specific ``VECTOR_TYPE`` s that are passed
   and returned in a more efficient way.  It is then important to maintain
-  a distinction between the 'normal' ``VECTOR_TYPE``s and the new
+  a distinction between the 'normal' ``VECTOR_TYPE`` s and the new
   architecture-specific ones.
 
   The default implementation returns true, which is correct for most targets.
@@ -1446,12 +1446,12 @@ stack.
 
   If this hook allows ``val`` to have a scalar mode, then
   ``int8x8x3_t`` can have the same mode.  GCC can then store
-  ``int8x8x3_t``s in registers rather than forcing them onto the stack.
+  ``int8x8x3_t`` s in registers rather than forcing them onto the stack.
 
 .. function:: bool TARGET_LIBGCC_FLOATING_MODE_SUPPORTED_P(scalar_float_mode mode)
 
   Define this to return nonzero if libgcc provides support for the 
-  floating-point mode :samp:`{mode}` , which is known to pass 
+  floating-point mode :samp:`{mode}`, which is known to pass 
   ``TARGET_SCALAR_MODE_SUPPORTED_P``.  The default version of this 
   hook returns true for all of ``SFmode``, ``DFmode``, 
   ``XFmode`` and ``TFmode``, if such modes exist.
@@ -1466,7 +1466,7 @@ stack.
   ``_Float64`` and ``_Float32x`` and ``TFmode`` for 
   ``_Float128``, if those modes exist and satisfy the requirements for 
   those types and pass ``TARGET_SCALAR_MODE_SUPPORTED_P`` and 
-  ``TARGET_LIBGCC_FLOATING_MODE_SUPPORTED_P``; for ``_Float64x``, it 
+  ``TARGET_LIBGCC_FLOATING_MODE_SUPPORTED_P`` ; for ``_Float64x``, it 
   returns the first of ``XFmode`` and ``TFmode`` that exists and 
   satisfies the same requirements; for other types, it returns 
   ``opt_scalar_float_mode ()``.  The hook is only called for values
@@ -1489,7 +1489,7 @@ stack.
 
   Define this to return nonzero for machine modes for which the port has
   small register classes.  If this target hook returns nonzero for a given
-  :samp:`{mode}` , the compiler will try to minimize the lifetime of registers
+  :samp:`{mode}`, the compiler will try to minimize the lifetime of registers
   in :samp:`{mode}`.  The hook may be called with ``VOIDmode`` as argument.
   In this case, the hook is expected to return nonzero if it returns nonzero
   for any mode.
@@ -1534,7 +1534,7 @@ values-values that can fit in registers.
 .. function:: rtx TARGET_FUNCTION_VALUE(const_tree ret_type,const_tree fn_decl_or_type,bool outgoing)
 
   Define this to return an RTX representing the place where a function
-  returns or receives a value of data type :samp:`{ret_type}` , a tree node
+  returns or receives a value of data type :samp:`{ret_type}`, a tree node
   representing a data type.  :samp:`{fn_decl_or_type}` is a tree node
   representing ``FUNCTION_DECL`` or ``FUNCTION_TYPE`` of a
   function being called.  If :samp:`{outgoing}` is false, the hook should
@@ -1560,7 +1560,7 @@ values-values that can fit in registers.
   :samp:`{valtype}` is a scalar type.
 
   If the precise function being called is known, :samp:`{func}` is a tree
-  node (``FUNCTION_DECL``) for it; otherwise, :samp:`{func}` is a null
+  node ( ``FUNCTION_DECL`` ) for it; otherwise, :samp:`{func}` is a null
   pointer.  This makes it possible to use a different value-returning
   convention for specific functions when all their calls are
   known.
@@ -1719,7 +1719,7 @@ If not defined, this defaults to the value 1.
 .. function:: rtx TARGET_STRUCT_VALUE_RTX(tree fndecl,int incoming)
 
   This target hook should return the location of the structure value
-  address (normally a ``mem`` or ``reg``), or 0 if the address is
+  address (normally a ``mem`` or ``reg`` ), or 0 if the address is
   passed as an 'invisible' first argument.  Note that :samp:`{fndecl}` may
   be ``NULL``, for libcalls.  You do not need to define this target
   hook if the address is always passed as an 'invisible' first
@@ -1824,10 +1824,10 @@ This section describes the macros that output function entry
   .. index:: regs_ever_live
 
   To determine which registers to save, the macro can refer to the array
-  ``regs_ever_live``: element :samp:`{r}` is nonzero if hard register
+  ``regs_ever_live`` : element :samp:`{r}` is nonzero if hard register
   :samp:`{r}` is used anywhere within the function.  This implies the function
-  prologue should save register :samp:`{r}` , provided it is not one of the
-  call-used registers.  (``TARGET_ASM_FUNCTION_EPILOGUE`` must likewise use
+  prologue should save register :samp:`{r}`, provided it is not one of the
+  call-used registers.  ( ``TARGET_ASM_FUNCTION_EPILOGUE`` must likewise use
   ``regs_ever_live``.)
 
   On machines that have 'register windows', the function entry code does
@@ -2001,7 +2001,7 @@ on entry to an exception edge.
 
     p += (*((ptrdiff_t **)p))[vcall_offset/sizeof(ptrdiff_t)]
 
-  After the additions, emit code to jump to :samp:`{function}` , which is a
+  After the additions, emit code to jump to :samp:`{function}`, which is a
   ``FUNCTION_DECL``.  This is a direct pure jump, not a call, and does
   not touch the return address.  Hence returning from :samp:`{FUNCTION}` will
   return to whoever called the current :samp:`thunk`.
@@ -2051,7 +2051,7 @@ compiler and look at the assembler code that results.
 
 Older implementations of ``mcount`` expect the address of a counter
 variable to be loaded into some register.  The name of this variable is
-:samp:`LP` followed by the number :samp:`{labelno}` , so you would generate
+:samp:`LP` followed by the number :samp:`{labelno}`, so you would generate
 the name using :samp:`LP%d` in a ``fprintf``.
 
 .. index:: PROFILE_HOOK
@@ -2138,7 +2138,7 @@ paths where this would unnecessary.
 
 What exactly those components are is up to the target code; the generic
 code treats them abstractly, as a bit in an ``sbitmap``.  These
-``sbitmap``s are allocated by the ``shrink_wrap.get_separate_components``
+``sbitmap`` s are allocated by the ``shrink_wrap.get_separate_components``
 and ``shrink_wrap.components_for_bb`` hooks, and deallocated by the
 generic code.
 
@@ -2161,7 +2161,7 @@ generic code.
 
   This hook should clear the bits in the :samp:`{components}` bitmap for those
   components in :samp:`{edge_components}` that the target cannot handle on edge
-  :samp:`{e}` , where :samp:`{is_prologue}` says if this is for a prologue or an
+  :samp:`{e}`, where :samp:`{is_prologue}` says if this is for a prologue or an
   epilogue instead.
 
 .. function:: void TARGET_SHRINK_WRAP_EMIT_PROLOGUE_COMPONENTS(sbitmap )

@@ -123,7 +123,7 @@ ordinarily expect.
 .. index:: SLOW_BYTE_ACCESS
 
 MacroSLOW_BYTE_ACCESSDefine this macro as a C expression which is nonzero if accessing less
-than a word of memory (i.e. a ``char`` or a ``short``) is no
+than a word of memory (i.e. a ``char`` or a ``short`` ) is no
 faster than accessing a word of memory, i.e., if such access
 require more than one instruction or if there is no difference in cost
 between byte and (aligned) word loads.
@@ -179,7 +179,7 @@ If you don't define this, a reasonable default is used.
   unit-by-unit, loop-based operations.
 
   This target hook should return true if, for a memory operation with a
-  given :samp:`{size}` and :samp:`{alignment}` , using the ``by_pieces``
+  given :samp:`{size}` and :samp:`{alignment}`, using the ``by_pieces``
   infrastructure is expected to result in better code generation.
   Both :samp:`{size}` and :samp:`{alignment}` are measured in terms of storage
   units.
@@ -340,7 +340,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   This target hook describes the relative costs of RTL expressions.
 
   The cost may depend on the precise form of the expression, which is
-  available for examination in :samp:`{x}` , and the fact that :samp:`{x}` appears
+  available for examination in :samp:`{x}`, and the fact that :samp:`{x}` appears
   as operand :samp:`{opno}` of an expression with rtx code :samp:`{outer_code}`.
   That is, the hook can assume that there is some rtx :samp:`{y}` such
   that :samp:`GET_CODE ({y}) == {outer_code}` and such that
@@ -459,7 +459,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
 
 .. function:: HOST_WIDE_INT TARGET_ESTIMATED_POLY_VALUE(poly_int64 val,poly_value_estimate_kind kind)
 
-  Return an estimate of the runtime value of :samp:`{val}` , for use in
+  Return an estimate of the runtime value of :samp:`{val}`, for use in
   things like cost calculations or profiling frequencies.  :samp:`{kind}` is used
   to ask for the minimum, maximum, and likely estimates of the value through
   the ``POLY_VALUE_MIN``, ``POLY_VALUE_MAX`` and

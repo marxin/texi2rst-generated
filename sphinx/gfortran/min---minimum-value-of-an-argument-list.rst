@@ -30,14 +30,14 @@
   ``RESULT = MIN(A1, A2 [, A3, ...])``
 
 :samp:`{Arguments}:`
-  =================================  =======================================================================
-  :samp:`{A1}`                       The type shall be ``INTEGER`` or
-                                     ``REAL``.
-  =================================  =======================================================================
-  :samp:`{A2}` , :samp:`{A3}` , ...  An expression of the same type and kind
-                                     as :samp:`{A1}`.  (As a GNU extension, arguments of different kinds are
-                                     permitted.)
-  =================================  =======================================================================
+  ===============================  =======================================================================
+  :samp:`{A1}`                     The type shall be ``INTEGER`` or
+                                   ``REAL``.
+  ===============================  =======================================================================
+  :samp:`{A2}`, :samp:`{A3}`, ...  An expression of the same type and kind
+                                   as :samp:`{A1}`.  (As a GNU extension, arguments of different kinds are
+                                   permitted.)
+  ===============================  =======================================================================
 
 :samp:`{Return value}:`
   The return value corresponds to the minimum value among the arguments,

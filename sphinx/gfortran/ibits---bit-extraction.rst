@@ -18,7 +18,7 @@
 .. index:: bits, extract
 
 :samp:`{Description}:`
-  ``IBITS`` extracts a field of length :samp:`{LEN}` from :samp:`{I}` ,
+  ``IBITS`` extracts a field of length :samp:`{LEN}` from :samp:`{I}`,
   starting from bit position :samp:`{POS}` and extending left for :samp:`{LEN}`
   bits.  The result is right-justified and the remaining bits are
   zeroed.  The value of ``POS+LEN`` must be less than or equal to the

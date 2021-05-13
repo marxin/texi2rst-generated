@@ -316,7 +316,7 @@ If the value of this macro has a type, it should be an unsigned type.
 .. function:: HOST_WIDE_INT TARGET_VECTOR_ALIGNMENT(const_tree type)
 
   This hook can be used to define the alignment for a vector of type
-  :samp:`{type}` , in order to comply with a platform ABI.  The default is to
+  :samp:`{type}`, in order to comply with a platform ABI.  The default is to
   require natural alignment for vector types.  The alignment returned by
   this hook must be a power-of-two multiple of the default alignment of
   the vector element type.
@@ -356,7 +356,7 @@ If the value of this macro has a type, it should be an unsigned type.
 
 MacroMINIMUM_ALIGNMENT(:samp:`{exp}`,:samp:`{mode}`,:samp:`{align}`)If defined, a C expression to compute the minimum required alignment
 for dynamic stack realignment purposes for :samp:`{exp}` (a type or decl),
-:samp:`{mode}` , assuming normal alignment :samp:`{align}`.
+:samp:`{mode}`, assuming normal alignment :samp:`{align}`.
 
 If this macro is not defined, then :samp:`{align}` will be used.
 
@@ -386,7 +386,7 @@ go slower in that case, define this macro as 0.
 MacroPCC_BITFIELD_TYPE_MATTERSDefine this if you wish to imitate the way many other C compilers handle
 alignment of bit-fields and the structures that contain them.
 
-The behavior is that the type written for a named bit-field (``int``,
+The behavior is that the type written for a named bit-field ( ``int``,
 ``short``, or other integer type) imposes an alignment for the entire
 structure, as if the structure really did contain an ordinary field of
 that type.  In addition, the bit-field is placed within the structure so

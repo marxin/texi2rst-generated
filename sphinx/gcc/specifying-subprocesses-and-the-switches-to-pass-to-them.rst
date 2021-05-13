@@ -214,7 +214,7 @@ together or combine them with constant text in a single argument.
   :samp:`%|` substitutes a single dash and :samp:`%m` substitutes nothing at
   all.  These are the two most common ways to instruct a program that it
   should read from standard input or write to standard output.  If you
-  need something more elaborate you can use an :samp:`%{pipe:``X``}`
+  need something more elaborate you can use an :samp:`%{pipe: ``X`` }`
   construct: see for example gcc/fortran/lang-specs.h.
 
 :samp:`%.{SUFFIX}`
@@ -363,7 +363,7 @@ together or combine them with constant text in a single argument.
   Similar to :samp:`%<S`, but keep ``-S`` in the GCC command line.
 
 :samp:`%:{function}({args})`
-  Call the named function :samp:`{function}` , passing it :samp:`{args}`.
+  Call the named function :samp:`{function}`, passing it :samp:`{args}`.
   :samp:`{args}` is first processed as a nested spec string, then split
   into an argument vector in the usual fashion.  The function returns
   a string which is processed as if it had appeared literally as part
@@ -547,23 +547,23 @@ together or combine them with constant text in a single argument.
   and outputs the command-line option :option:`-foo`.
 
 ``%W{S}``
-  Like %{``S``} but mark last argument supplied within as a file to be
+  Like %{ ``S`` } but mark last argument supplied within as a file to be
   deleted on failure.
 
 ``%@{S}``
-  Like %{``S``} but puts the result into a ``FILE`` and substitutes
+  Like %{ ``S`` } but puts the result into a ``FILE`` and substitutes
   ``@FILE`` if an ``@file`` argument has been supplied.
 
 ``%{S*}``
   Substitutes all the switches specified to GCC whose names start
   with ``-S``, but which also take an argument.  This is used for
-  switches like :option:`-o` , :option:`-D` , :option:`-I` , etc.
+  switches like :option:`-o`, :option:`-D`, :option:`-I`, etc.
   GCC considers :option:`-o foo` as being
   one switch whose name starts with :samp:`o`.  %{o*} substitutes this
   text, including the space.  Thus two arguments are generated.
 
 ``%{S*&T*}``
-  Like %{``S``*}, but preserve order of ``S`` and ``T`` options
+  Like %{ ``S`` *}, but preserve order of ``S`` and ``T`` options
   (the order of ``S`` and ``T`` in the spec is not significant).
   There can be any number of ampersand-separated variables; for each the
   wild card is optional.  Useful for CPP as :samp:`%{D*&U*&A*}`.
@@ -638,8 +638,8 @@ together or combine them with constant text in a single argument.
   NULL, it isn't substituted.
 
 ``%{S:X; T:Y; :D}``
-  If ``S`` is given to GCC, substitutes ``X``; else if ``T`` is
-  given to GCC, substitutes ``Y``; else substitutes ``D``.  There can
+  If ``S`` is given to GCC, substitutes ``X`` ; else if ``T`` is
+  given to GCC, substitutes ``Y`` ; else substitutes ``D``.  There can
   be as many clauses as you need.  This may be combined with ``.``,
   ``,``, ``!``, ``|``, and ``*`` as needed.
 
@@ -657,11 +657,11 @@ Trailing white space in ``X`` is ignored.  White space may also
 appear anywhere on the left side of the colon in these constructs,
 except between ``.`` or ``*`` and the corresponding word.
 
-The :option:`-O` , :option:`-f` , :option:`-m` , and :option:`-W` switches are
+The :option:`-O`, :option:`-f`, :option:`-m`, and :option:`-W` switches are
 handled specifically in these constructs.  If another value of
-:option:`-O` or the negated form of a :option:`-f` , :option:`-m` , or
+:option:`-O` or the negated form of a :option:`-f`, :option:`-m`, or
 :option:`-W` switch is found later in the command line, the earlier
-switch value is ignored, except with {``S``*} where ``S`` is
+switch value is ignored, except with { ``S`` *} where ``S`` is
 just one letter, which passes all matching options.
 
 The character :samp:`|` at the beginning of the predicate text is used to

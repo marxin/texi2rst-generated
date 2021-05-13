@@ -31,6 +31,6 @@
   ================  =====================================================
 
 :samp:`{Return value}:`
-  The result has the same type as :samp:`{MATRIX}` , and has shape 
+  The result has the same type as :samp:`{MATRIX}`, and has shape 
   ``(/ m, n /)`` if :samp:`{MATRIX}` has shape ``(/ n, m /)``.
 

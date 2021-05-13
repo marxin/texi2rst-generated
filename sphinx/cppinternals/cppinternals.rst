@@ -91,7 +91,7 @@ Hash Nodes
 
 When cpplib encounters an 'identifier', it generates a hash code for
 it and stores it in the hash table.  By 'identifier' we mean tokens
-with type ``CPP_NAME``; this includes identifiers in the usual C
+with type ``CPP_NAME`` ; this includes identifiers in the usual C
 sense, as well as keywords, directive names, macro names and so on.  For
 example, all of ``pragma``, ``int``, ``foo`` and
 ``__GNUC__`` are identifiers and hashed when lexed.
@@ -355,7 +355,7 @@ inclusion would result in no tokens to return, and no relevant
 directives to process.  Therefore the current implementation imposes
 requirements and makes some allowances as follows:
 
-* There must be no tokens outside the controlling ``#if``-``#endif``
+* There must be no tokens outside the controlling ``#if`` - ``#endif``
   pair, but whitespace and comments are permitted.
 
 * There must be no directives outside the controlling directive pair, but
@@ -460,7 +460,7 @@ headers it recursively includes.
 
 The basic strategy is to minimize the number of system calls.  On many
 systems, the basic ``open ()`` and ``fstat ()`` system calls can
-be quite expensive.  For every ``#include``-d file, we need to try
+be quite expensive.  For every ``#include`` -d file, we need to try
 all the directories in the search path until we find a match.  Some
 projects, such as glibc, pass twenty or thirty include paths on the
 command line, so this can rapidly become time consuming.

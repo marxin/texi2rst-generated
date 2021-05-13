@@ -151,7 +151,7 @@ n
   .. index:: E in constraint
 
 E
-  An immediate floating operand (expression code ``const_double``) is
+  An immediate floating operand (expression code ``const_double`` ) is
   allowed, but only if the target floating point format is the same as
   that of the host machine (on which the compiler is running).
 
@@ -159,7 +159,7 @@ E
 
 F
   An immediate floating operand (expression code ``const_double`` or
-  ``const_vector``) is allowed.
+  ``const_vector`` ) is allowed.
 
   .. index:: G in constraint
 
@@ -596,7 +596,7 @@ Here are constraint modifier characters.
   time in the reload pass.
   The modifier is not operational after
   register allocation, so the result of ``define_peephole2``
-  and ``define_split``s performed after reload cannot rely on
+  and ``define_split`` s performed after reload cannot rely on
   :samp:`%` to make the intended insn match.
 
   .. index:: # in constraint
@@ -665,7 +665,7 @@ the meanings of that architecture's constraints.
 :samp:`AArch64 family-{config/aarch64/constraints.md}`
 
   ``k``
-    The stack pointer register (``SP``)
+    The stack pointer register ( ``SP`` )
 
   ``w``
     Floating point register, Advanced SIMD vector register or SVE vector register
@@ -677,10 +677,10 @@ the meanings of that architecture's constraints.
     Like ``w``, but restricted to registers 0 to 7 inclusive.
 
   ``Upl``
-    One of the low eight SVE predicate registers (``P0`` to ``P7``)
+    One of the low eight SVE predicate registers ( ``P0`` to ``P7`` )
 
   ``Upa``
-    Any of the SVE predicate registers (``P0`` to ``P15``)
+    Any of the SVE predicate registers ( ``P0`` to ``P15`` )
 
   ``I``
     Integer constant that is valid as an immediate operand in an ``ADD``
@@ -819,13 +819,13 @@ the meanings of that architecture's constraints.
 :samp:`ARC -{config/arc/constraints.md}`
 
   ``q``
-    Registers usable in ARCompact 16-bit instructions: ``r0``-``r3``,
-    ``r12``-``r15``.  This constraint can only match when the :option:`-mq`
+    Registers usable in ARCompact 16-bit instructions: ``r0`` - ``r3``,
+    ``r12`` - ``r15``.  This constraint can only match when the :option:`-mq`
     option is in effect.
 
   ``e``
     Registers usable as base-regs of memory addresses in ARCompact 16-bit memory
-    instructions: ``r0``-``r3``, ``r12``-``r15``, ``sp``.
+    instructions: ``r0`` - ``r3``, ``r12`` - ``r15``, ``sp``.
     This constraint can only match when the :option:`-mq`
     option is in effect.
 
@@ -867,21 +867,21 @@ the meanings of that architecture's constraints.
 :samp:`ARM family-{config/arm/constraints.md}`
 
   ``h``
-    In Thumb state, the core registers ``r8``-``r15``.
+    In Thumb state, the core registers ``r8`` - ``r15``.
 
   ``k``
     The stack pointer register.
 
   ``l``
-    In Thumb State the core registers ``r0``-``r7``.  In ARM state this
+    In Thumb State the core registers ``r0`` - ``r7``.  In ARM state this
     is an alias for the ``r`` constraint.
 
   ``t``
-    VFP floating-point registers ``s0``-``s31``.  Used for 32 bit values.
+    VFP floating-point registers ``s0`` - ``s31``.  Used for 32 bit values.
 
   ``w``
-    VFP floating-point registers ``d0``-``d31`` and the appropriate
-    subset ``d0``-``d15`` based on command line options.
+    VFP floating-point registers ``d0`` - ``d31`` and the appropriate
+    subset ``d0`` - ``d15`` based on command line options.
     Used for 64 bit values only.  Not valid for Thumb1.
 
   ``y``
@@ -1083,7 +1083,7 @@ the meanings of that architecture's constraints.
     Unsigned 3 bit integer (in the range 0 to 7)
 
   :samp:`P{n}`
-    Constant :samp:`{n}` , where :samp:`{n}` is a single-digit constant in the range 0 to 4.
+    Constant :samp:`{n}`, where :samp:`{n}` is a single-digit constant in the range 0 to 4.
 
   ``PA``
     An integer equal to one of the MACFLAG_XXX constants that is suitable for
@@ -1245,28 +1245,28 @@ the meanings of that architecture's constraints.
 :samp:`FRV-{config/frv/frv.h}`
 
   ``a``
-    Register in the class ``ACC_REGS`` (``acc0`` to ``acc7``).
+    Register in the class ``ACC_REGS`` ( ``acc0`` to ``acc7`` ).
 
   ``b``
-    Register in the class ``EVEN_ACC_REGS`` (``acc0`` to ``acc7``).
+    Register in the class ``EVEN_ACC_REGS`` ( ``acc0`` to ``acc7`` ).
 
   ``c``
-    Register in the class ``CC_REGS`` (``fcc0`` to ``fcc3`` and
-    ``icc0`` to ``icc3``).
+    Register in the class ``CC_REGS`` ( ``fcc0`` to ``fcc3`` and
+    ``icc0`` to ``icc3`` ).
 
   ``d``
-    Register in the class ``GPR_REGS`` (``gr0`` to ``gr63``).
+    Register in the class ``GPR_REGS`` ( ``gr0`` to ``gr63`` ).
 
   ``e``
-    Register in the class ``EVEN_REGS`` (``gr0`` to ``gr63``).
+    Register in the class ``EVEN_REGS`` ( ``gr0`` to ``gr63`` ).
     Odd registers are excluded not in the class but through the use of a machine
     mode larger than 4 bytes.
 
   ``f``
-    Register in the class ``FPR_REGS`` (``fr0`` to ``fr63``).
+    Register in the class ``FPR_REGS`` ( ``fr0`` to ``fr63`` ).
 
   ``h``
-    Register in the class ``FEVEN_REGS`` (``fr0`` to ``fr63``).
+    Register in the class ``FEVEN_REGS`` ( ``fr0`` to ``fr63`` ).
     Odd registers are excluded not in the class but through the use of a machine
     mode larger than 4 bytes.
 
@@ -1274,38 +1274,38 @@ the meanings of that architecture's constraints.
     Register in the class ``LR_REG`` (the ``lr`` register).
 
   ``q``
-    Register in the class ``QUAD_REGS`` (``gr2`` to ``gr63``).
+    Register in the class ``QUAD_REGS`` ( ``gr2`` to ``gr63`` ).
     Register numbers not divisible by 4 are excluded not in the class but through
     the use of a machine mode larger than 8 bytes.
 
   ``t``
-    Register in the class ``ICC_REGS`` (``icc0`` to ``icc3``).
+    Register in the class ``ICC_REGS`` ( ``icc0`` to ``icc3`` ).
 
   ``u``
-    Register in the class ``FCC_REGS`` (``fcc0`` to ``fcc3``).
+    Register in the class ``FCC_REGS`` ( ``fcc0`` to ``fcc3`` ).
 
   ``v``
-    Register in the class ``ICR_REGS`` (``cc4`` to ``cc7``).
+    Register in the class ``ICR_REGS`` ( ``cc4`` to ``cc7`` ).
 
   ``w``
-    Register in the class ``FCR_REGS`` (``cc0`` to ``cc3``).
+    Register in the class ``FCR_REGS`` ( ``cc0`` to ``cc3`` ).
 
   ``x``
-    Register in the class ``QUAD_FPR_REGS`` (``fr0`` to ``fr63``).
+    Register in the class ``QUAD_FPR_REGS`` ( ``fr0`` to ``fr63`` ).
     Register numbers not divisible by 4 are excluded not in the class but through
     the use of a machine mode larger than 8 bytes.
 
   ``z``
-    Register in the class ``SPR_REGS`` (``lcr`` and ``lr``).
+    Register in the class ``SPR_REGS`` ( ``lcr`` and ``lr`` ).
 
   ``A``
-    Register in the class ``QUAD_ACC_REGS`` (``acc0`` to ``acc7``).
+    Register in the class ``QUAD_ACC_REGS`` ( ``acc0`` to ``acc7`` ).
 
   ``B``
-    Register in the class ``ACCG_REGS`` (``accg0`` to ``accg7``).
+    Register in the class ``ACCG_REGS`` ( ``accg0`` to ``accg7`` ).
 
   ``C``
-    Register in the class ``CR_REGS`` (``cc0`` to ``cc7``).
+    Register in the class ``CR_REGS`` ( ``cc0`` to ``cc7`` ).
 
   ``G``
     Floating point constant zero
@@ -1633,10 +1633,10 @@ the meanings of that architecture's constraints.
 :samp:`MicroBlaze-{config/microblaze/constraints.md}`
 
   ``d``
-    A general register (``r0`` to ``r31``).
+    A general register ( ``r0`` to ``r31`` ).
 
   ``z``
-    A status register (``rmsr``, ``$fcc1`` to ``$fcc7``).
+    A status register ( ``rmsr``, ``$fcc1`` to ``$fcc7`` ).
 
 :samp:`MIPS-{config/mips/constraints.md}`
 
@@ -1667,7 +1667,7 @@ the meanings of that architecture's constraints.
     it is retained only for compatibility with glibc.
 
   ``y``
-    Equivalent to ``r``; retained for backwards compatibility.
+    Equivalent to ``r`` ; retained for backwards compatibility.
 
   ``z``
     A floating-point condition code register.
@@ -2028,7 +2028,7 @@ the meanings of that architecture's constraints.
     0 to 65535.
 
   ``M``
-    Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi``)
+    Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi`` )
 
   ``O``
     Zero
@@ -2113,8 +2113,8 @@ the meanings of that architecture's constraints.
 
   ``wa``
     A VSX register (VSR), ``vs0``...``vs63``.  This is either an
-    FPR (``vs0``...``vs31`` are ``f0``...``f31``) or a VR
-    (``vs32``...``vs63`` are ``v0``...``v31``).
+    FPR ( ``vs0``...``vs31`` are ``f0``...``f31`` ) or a VR
+    ( ``vs32``...``vs63`` are ``v0``...``v31`` ).
 
     When using ``wa``, you should use the ``%x`` output modifier, so that
     the correct register number is printed.  For example:
@@ -2134,7 +2134,7 @@ the meanings of that architecture's constraints.
            : "v" (v2), "v" (v3));
 
   ``h``
-    A special register (``vrsave``, ``ctr``, or ``lr``).
+    A special register ( ``vrsave``, ``ctr``, or ``lr`` ).
 
   ``c``
     The count register, ``ctr``.
@@ -2156,7 +2156,7 @@ the meanings of that architecture's constraints.
     otherwise, ``NO_REGS``.
 
   ``wn``
-    No register (``NO_REGS``).
+    No register ( ``NO_REGS`` ).
 
   ``wr``
     Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
@@ -2402,7 +2402,7 @@ the meanings of that architecture's constraints.
     The 16-bit ``R10`` register.
 
   ``Zint``
-    The registers reserved for interrupts (``R24`` to ``R31``).
+    The registers reserved for interrupts ( ``R24`` to ``R31`` ).
 
   ``a``
     The ``A`` register.
@@ -2902,15 +2902,15 @@ the meanings of that architecture's constraints.
 
   ``R``
     Legacy register-the eight integer registers available on all
-    i386 processors (``a``, ``b``, ``c``, ``d``,
-    ``si``, ``di``, ``bp``, ``sp``).
+    i386 processors ( ``a``, ``b``, ``c``, ``d``,
+    ``si``, ``di``, ``bp``, ``sp`` ).
 
   ``q``
     Any register accessible as ``rl``.  In 32-bit mode, ``a``,
-    ``b``, ``c``, and ``d``; in 64-bit mode, any integer register.
+    ``b``, ``c``, and ``d`` ; in 64-bit mode, any integer register.
 
   ``Q``
-    Any register accessible as ``rh``: ``a``, ``b``,
+    Any register accessible as ``rh`` : ``a``, ``b``,
     ``c``, and ``d``.
 
   ``l``
@@ -2939,7 +2939,7 @@ the meanings of that architecture's constraints.
     The ``a`` and ``d`` registers.  This class is used for instructions
     that return double word results in the ``ax:dx`` register pair.  Single
     word values will be allocated either in ``ax`` or ``dx``.
-    For example on i386 the following implements ``rdtsc``:
+    For example on i386 the following implements ``rdtsc`` :
 
     .. code-block:: c++
 
@@ -2969,10 +2969,10 @@ the meanings of that architecture's constraints.
     Any 80387 floating-point (stack) register.
 
   ``t``
-    Top of 80387 floating-point stack (``%st(0)``).
+    Top of 80387 floating-point stack ( ``%st(0)`` ).
 
   ``u``
-    Second from top of 80387 floating-point stack (``%st(1)``).
+    Second from top of 80387 floating-point stack ( ``%st(1)`` ).
 
   ``Yk``
     Any mask register that can be used as a predicate, i.e. ``k1-k7``.
@@ -2987,13 +2987,13 @@ the meanings of that architecture's constraints.
     Any SSE register.
 
   ``v``
-    Any EVEX encodable SSE register (``%xmm0-%xmm31``).
+    Any EVEX encodable SSE register ( ``%xmm0-%xmm31`` ).
 
   ``w``
     Any bound register.
 
   ``Yz``
-    First SSE register (``%xmm0``).
+    First SSE register ( ``%xmm0`` ).
 
   ``Yi``
     Any SSE register, when SSE2 and inter-unit moves are enabled.
@@ -3016,7 +3016,7 @@ the meanings of that architecture's constraints.
   ``Yb``
     Any register that can be used as the GOT base when calling
 
-    ``___tls_get_addr``: that is, any general register except ``a``
+    ``___tls_get_addr`` : that is, any general register except ``a``
     and ``sp`` registers, for :option:`-fno-plt` if linker supports it.
     Otherwise, ``b`` register.
 
@@ -3027,7 +3027,7 @@ the meanings of that architecture's constraints.
     Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
 
   ``Yv``
-    For AVX512VL, any EVEX-encodable SSE register (``%xmm0-%xmm31``),
+    For AVX512VL, any EVEX-encodable SSE register ( ``%xmm0-%xmm31`` ),
     otherwise any SSE register.
 
   ``Yh``
@@ -3096,12 +3096,12 @@ the meanings of that architecture's constraints.
   ``We``
     32-bit signed integer constant, or a symbolic reference known
     to fit that range (for sign-extending conversion operations that
-    require non-``VOIDmode`` immediate operands).
+    require non- ``VOIDmode`` immediate operands).
 
   ``Wz``
     32-bit unsigned integer constant, or a symbolic reference known
     to fit that range (for zero-extending conversion operations that
-    require non-``VOIDmode`` immediate operands).
+    require non- ``VOIDmode`` immediate operands).
 
   ``Wd``
     128-bit integer constant where both the high and low 64-bit word
@@ -3252,9 +3252,9 @@ adding or modifying an instruction that GCC wants to optimize for size.
 like code motion can lead to cases where code optimized for size uses
 alternatives that are not preferred for size, and similarly for speed.
 
-Although ``define_insn``s can in principle specify the ``enabled``
+Although ``define_insn`` s can in principle specify the ``enabled``
 attribute directly, it is often clearer to have subsiduary attributes
-for each architectural feature of interest.  The ``define_insn``s
+for each architectural feature of interest.  The ``define_insn`` s
 can then use these subsiduary attributes to say which alternatives
 require which features.  The example below does this for ``cpu_facility``.
 
@@ -3476,9 +3476,9 @@ The syntax and semantics are otherwise identical to
 ``define_constraint``.
 
 For historical reasons, names beginning with the letters :samp:`G H`
-are reserved for constraints that match only ``const_double``s, and
+are reserved for constraints that match only ``const_double`` s, and
 names beginning with the letters :samp:`I J K L M N O P` are reserved
-for constraints that match only ``const_int``s.  This may change in
+for constraints that match only ``const_int`` s.  This may change in
 the future.  For the time being, constraints with these names must be
 written in a stylized form, so that ``genpreds`` can tell you did
 it correctly:
@@ -3493,7 +3493,7 @@ it correctly:
 .. the semicolons line up in the formatted manual
 
 It is fine to use names beginning with other letters for constraints
-that match ``const_double``s or ``const_int``s.
+that match ``const_double`` s or ``const_int`` s.
 
 Each docstring in a constraint definition should be one or more complete
 sentences, marked up in Texinfo format.  *They are currently unused.*
@@ -3521,7 +3521,7 @@ It is occasionally useful to test a constraint from C code rather than
 implicitly via the constraint string in a ``match_operand``.  The
 generated file tm_p.h declares a few interfaces for working
 with constraints.  At present these are defined for all constraints
-except ``g`` (which is equivalent to ``general_operand``).
+except ``g`` (which is equivalent to ``general_operand`` ).
 
 Some valid constraint names are not valid C identifiers, so there is a
 mangling scheme for referring to them from C.  Constraint names that
@@ -3549,7 +3549,7 @@ Original   Mangled
            ..  c
 =========  ============
 Throughout this section, the variable :samp:`{c}` is either a constraint
-in the abstract sense, or a constant from ``enum constraint_num``;
+in the abstract sense, or a constant from ``enum constraint_num`` ;
 the variable :samp:`{m}` is a mangled constraint name (usually as part of
 a larger identifier).
 

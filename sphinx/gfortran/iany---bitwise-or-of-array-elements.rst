@@ -42,7 +42,7 @@
 
   If :samp:`{DIM}` is absent, a scalar with the bitwise OR of all elements in
   :samp:`{ARRAY}` is returned. Otherwise, an array of rank n-1, where n equals
-  the rank of :samp:`{ARRAY}` , and a shape similar to that of :samp:`{ARRAY}` with
+  the rank of :samp:`{ARRAY}`, and a shape similar to that of :samp:`{ARRAY}` with
   dimension :samp:`{DIM}` dropped is returned.
 
 :samp:`{Example}:`

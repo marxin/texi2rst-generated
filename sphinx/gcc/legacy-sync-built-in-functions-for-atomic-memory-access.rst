@@ -119,7 +119,7 @@ accessible variables should be protected.
 
   These built-in functions perform an atomic compare and swap.
   That is, if the current
-  value of ``*ptr`` is :samp:`{oldval}` , then write :samp:`{newval}` into
+  value of ``*ptr`` is :samp:`{oldval}`, then write :samp:`{newval}` into
   ``*ptr``.
 
   The 'bool' version returns ``true`` if the comparison is successful and

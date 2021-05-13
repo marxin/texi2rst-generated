@@ -120,20 +120,20 @@ The format of fixed-point data varies and depends on the target machine.
 
 Support for fixed-point types includes:
 
-* prefix and postfix increment and decrement operators (``++``, ``--``)
+* prefix and postfix increment and decrement operators ( ``++``, ``--`` )
 
-* unary arithmetic operators (``+``, ``-``, ``!``)
+* unary arithmetic operators ( ``+``, ``-``, ``!`` )
 
-* binary arithmetic operators (``+``, ``-``, ``*``, ``/``)
+* binary arithmetic operators ( ``+``, ``-``, ``*``, ``/`` )
 
-* binary shift operators (``<<``, ``>>``)
+* binary shift operators ( ``<<``, ``>>`` )
 
-* relational operators (``<``, ``<=``, ``>=``, ``>``)
+* relational operators ( ``<``, ``<=``, ``>=``, ``>`` )
 
-* equality operators (``==``, ``!=``)
+* equality operators ( ``==``, ``!=`` )
 
-* assignment operators (``+=``, ``-=``, ``*=``, ``/=``,
-  ``<<=``, ``>>=``)
+* assignment operators ( ``+=``, ``-=``, ``*=``, ``/=``,
+  ``<<=``, ``>>=`` )
 
 * conversions to and from integer, floating-point, or fixed-point types
 

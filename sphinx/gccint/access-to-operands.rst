@@ -26,7 +26,7 @@ two arguments: an expression-pointer (RTX) and an operand number
 
   XEXP (x, 2)
 
-accesses operand 2 of expression :samp:`{x}` , as an expression.
+accesses operand 2 of expression :samp:`{x}`, as an expression.
 
 .. code-block:: c++
 

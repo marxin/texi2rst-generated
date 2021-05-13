@@ -125,7 +125,7 @@ A few other macros and functions are usable with all types:
 
 .. envvar:: TYPE_NAMETYPE_NAME
 
-  This macro returns a declaration (in the form of a ``TYPE_DECL``) for
+  This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
   the type.  (Note this macro does *not* return an
   ``IDENTIFIER_NODE``, as you might expect, given its name!)  You can
   look at the ``DECL_NAME`` of the ``TYPE_DECL`` to obtain the
@@ -138,7 +138,7 @@ A few other macros and functions are usable with all types:
   This macro returns the 'canonical' type for the given type
   node. Canonical types are used to improve performance in the C++ and
   Objective-C++ front ends by allowing efficient comparison between two
-  type nodes in ``same_type_p``: if the ``TYPE_CANONICAL`` values
+  type nodes in ``same_type_p`` : if the ``TYPE_CANONICAL`` values
   of the types are equal, the types are equivalent; otherwise, the types
   are not equivalent. The notion of equivalence for canonical types is
   the same as the notion of type equivalence in the language itself. For
@@ -153,7 +153,7 @@ A few other macros and functions are usable with all types:
   The canonical type for a node is always the most fundamental type in
   the equivalence class of types. For instance, ``int`` is its own
   canonical type. A typedef ``I`` of ``int`` will have ``int``
-  as its canonical type. Similarly, ``I*``and a typedef ``IP``(defined to ``I*``) will has ``int*`` as their canonical
+  as its canonical type. Similarly, ``I*``and a typedef ``IP``(defined to ``I*`` ) will has ``int*`` as their canonical
   type. When building a new type node, be sure to set
   ``TYPE_CANONICAL`` to the appropriate canonical type. If the new
   type is a compound type (built from other types), and any of those
@@ -184,7 +184,7 @@ A few other macros and functions are usable with all types:
 :samp:`{same_type_p}same_type_p`
   This predicate takes two types as input, and holds if they are the same
   type.  For example, if one type is a ``typedef`` for the other, or
-  both are ``typedef``s for the same type.  This predicate also holds if
+  both are ``typedef`` s for the same type.  This predicate also holds if
   the two trees given as input are simply copies of one another; i.e.,
   there is no difference between them at the source level, but, for
   whatever reason, a duplicate has been made in the representation.  You
@@ -207,7 +207,7 @@ will encounter while examining the intermediate representation.
   is not used for enumeration types, nor for the ``bool`` type.
   The ``TYPE_PRECISION`` is the number of bits used in
   the representation, represented as an ``unsigned int``.  (Note that
-  in the general case this is not the same value as ``TYPE_SIZE``;
+  in the general case this is not the same value as ``TYPE_SIZE`` ;
   suppose that there were a 24-bit integer type, but that alignment
   requirements for the ABI required 32-bit alignment.  Then,
   ``TYPE_SIZE`` would be an ``INTEGER_CST`` for 32, while
@@ -247,7 +247,7 @@ will encounter while examining the intermediate representation.
 .. envvar:: ENUMERAL_TYPE
 
   Used to represent an enumeration type.  The ``TYPE_PRECISION`` gives
-  (as an ``int``), the number of bits used to represent the type.  If
+  (as an ``int`` ), the number of bits used to represent the type.  If
   there are no negative enumeration constants, ``TYPE_UNSIGNED`` will
   hold.  The minimum and maximum enumeration constants may be obtained
   with ``TYPE_MIN_VALUE`` and ``TYPE_MAX_VALUE``, respectively; each
@@ -293,7 +293,7 @@ will encounter while examining the intermediate representation.
   corresponding argument; the ``TREE_PURPOSE`` is an expression for the
   default argument value, if any.  If the last node in the list is
   ``void_list_node`` (a ``TREE_LIST`` node whose ``TREE_VALUE``
-  is the ``void_type_node``), then functions of this type do not take
+  is the ``void_type_node`` ), then functions of this type do not take
   variable arguments.  Otherwise, they do take a variable number of
   arguments.
 

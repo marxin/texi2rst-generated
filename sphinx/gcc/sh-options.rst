@@ -149,7 +149,7 @@ These :samp:`-m` options are defined for the SH implementations:
 
 .. option:: -m4al
 
-  Same as :option:`-m4a-nofpu` , except that it implicitly passes
+  Same as :option:`-m4a-nofpu`, except that it implicitly passes
   :option:`-dsp` to the assembler.  GCC doesn't generate any DSP
   instructions at the moment.
 

@@ -31,7 +31,7 @@ libraries and for parts of the compiler:
 
   Directories specified with :option:`-iquote` apply only to the quote 
   form of the directive, ``#include "file"``.
-  Directories specified with :option:`-I` , :option:`-isystem` , 
+  Directories specified with :option:`-I`, :option:`-isystem`, 
   or :option:`-idirafter` apply to lookup for both the
   ``#include "file"`` and
   ``#include <file>`` directives.
@@ -70,7 +70,7 @@ libraries and for parts of the compiler:
   is applied to the standard system directories.
 
   If a standard system include directory, or a directory specified with
-  :option:`-isystem` , is also specified with :option:`-I` , the :option:`-I`
+  :option:`-isystem`, is also specified with :option:`-I`, the :option:`-I`
   option is ignored.  The directory is still searched but as a
   system directory at its normal position in the system include chain.
   This is to ensure that GCC's procedure to fix buggy system headers and
@@ -88,9 +88,9 @@ libraries and for parts of the compiler:
 
   Any directories specified with :option:`-I`
   options before :option:`-I-` are searched only for headers requested with
-  ``#include "file"``; they are not searched for
+  ``#include "file"`` ; they are not searched for
   ``#include <file>``.  If additional directories are
-  specified with :option:`-I` options after the :option:`-I-` , those
+  specified with :option:`-I` options after the :option:`-I-`, those
   directories are searched for all :samp:`#include` directives.
 
   In addition, :option:`-I-` inhibits the use of the directory of the current
@@ -106,7 +106,7 @@ libraries and for parts of the compiler:
 .. option:: -iwithprefix dir, -iwithprefix, -iwithprefixbefore
 
   Append :samp:`{dir}` to the prefix specified previously with
-  :option:`-iprefix` , and add the resulting directory to the include search
+  :option:`-iprefix`, and add the resulting directory to the include search
   path.  :option:`-iwithprefixbefore` puts it in the same place :option:`-I`
   would; :option:`-iwithprefix` puts it where :option:`-idirafter` would.
 
@@ -125,8 +125,8 @@ libraries and for parts of the compiler:
 .. option:: -nostdinc
 
   Do not search the standard system directories for header files.
-  Only the directories explicitly specified with :option:`-I` ,
-  :option:`-iquote` , :option:`-isystem` , and/or :option:`-idirafter`
+  Only the directories explicitly specified with :option:`-I`,
+  :option:`-iquote`, :option:`-isystem`, and/or :option:`-idirafter`
   options (and the directory of the current file, if appropriate) 
   are searched.
 
@@ -216,7 +216,7 @@ libraries and for parts of the compiler:
 .. option:: --no-sysroot-suffix, -no-sysroot-suffix
 
   For some targets, a suffix is added to the root directory specified
-  with :option:`--sysroot` , depending on the other options used, so that
+  with :option:`--sysroot`, depending on the other options used, so that
   headers may for example be found in
   :samp:`{dir}` / :samp:`{suffix}` /usr/include instead of
   :samp:`{dir}` /usr/include.  This option disables the addition of

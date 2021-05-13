@@ -62,7 +62,7 @@ that all comments and string literals inside a failing conditional group
 must still be properly ended.
 
 The comment following the :samp:`#endif` is not required, but it is a
-good practice if there is a lot of :samp:`{controlled text}` , because it
+good practice if there is a lot of :samp:`{controlled text}`, because it
 helps people match the :samp:`#endif` to the corresponding :samp:`#ifdef`.
 Older programs sometimes put :samp:`{MACRO}` directly after the
 :samp:`#endif` without enclosing it in a comment.  This is invalid code
@@ -127,7 +127,7 @@ restrictions.  It may contain
 
 * Arithmetic operators for addition, subtraction, multiplication,
   division, bitwise operations, shifts, comparisons, and logical
-  operations (``&&`` and ``||``).  The latter two obey the usual
+  operations ( ``&&`` and ``||`` ).  The latter two obey the usual
   short-circuiting rules of standard C.
 
 * Macros.  All macros in the expression are expanded before actual
@@ -198,8 +198,8 @@ If the ``defined`` operator appears as a result of a macro expansion,
 the C standard says the behavior is undefined.  GNU cpp treats it as a
 genuine ``defined`` operator and evaluates it normally.  It will warn
 wherever your code uses this feature if you use the command-line option
-:option:`-Wpedantic` , since other compilers may handle it differently.  The
-warning is also enabled by :option:`-Wextra` , and can also be enabled
+:option:`-Wpedantic`, since other compilers may handle it differently.  The
+warning is also enabled by :option:`-Wextra`, and can also be enabled
 individually with :option:`-Wexpansion-to-defined`.
 
 .. _else:

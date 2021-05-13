@@ -24,7 +24,7 @@ finished command line option processing your code can use those
 results freely.
 
 ``builtin_assert`` takes a string in the form you pass to the
-command-line option :option:`-A` , such as ``cpu=mips``, and creates
+command-line option :option:`-A`, such as ``cpu=mips``, and creates
 the assertion.  ``builtin_define`` takes a string in the form
 accepted by option :option:`-D` and unconditionally defines the macro.
 
@@ -35,7 +35,7 @@ defines a version with two leading underscores, and another version
 with two leading and trailing underscores, and defines the original
 only if an ISO standard was not requested on the command line.  For
 example, passing ``unix`` defines ``__unix``, ``__unix__``
-and possibly ``unix``; passing ``_mips`` defines ``__mips``,
+and possibly ``unix`` ; passing ``_mips`` defines ``__mips``,
 ``__mips__`` and possibly ``_mips``, and passing ``_ABI64``
 defines only ``_ABI64``.
 
@@ -86,7 +86,7 @@ Its default setting is 0.
   :samp:`{decoded}` specifies the option and its arguments.  :samp:`{opts}` and
   :samp:`{opts_set}` are the ``gcc_options`` structures to be used for
   storing option state, and :samp:`{loc}` is the location at which the
-  option was passed (``UNKNOWN_LOCATION`` except for options passed
+  option was passed ( ``UNKNOWN_LOCATION`` except for options passed
   via attributes).
 
 .. function:: bool TARGET_HANDLE_C_OPTION(size_t code,const char* arg,int value)
@@ -105,7 +105,7 @@ Its default setting is 0.
 
 .. function:: tree TARGET_OBJC_CONSTRUCT_STRING_OBJECT(tree string)
 
-  Targets may provide a string object type that can be used within and between C, C++ and their respective Objective-C dialects. A string object might, for example, embed encoding and length information. These objects are considered opaque to the compiler and handled as references. An ideal implementation makes the composition of the string object match that of the Objective-C ``NSString`` (``NXString`` for GNUStep), allowing efficient interworking between C-only and Objective-C code. If a target implements string objects then this hook should return a reference to such an object constructed from the normal 'C' string representation provided in :samp:`{string}`. At present, the hook is used by Objective-C only, to obtain a common-format string object when the target provides one.
+  Targets may provide a string object type that can be used within and between C, C++ and their respective Objective-C dialects. A string object might, for example, embed encoding and length information. These objects are considered opaque to the compiler and handled as references. An ideal implementation makes the composition of the string object match that of the Objective-C ``NSString`` ( ``NXString`` for GNUStep), allowing efficient interworking between C-only and Objective-C code. If a target implements string objects then this hook should return a reference to such an object constructed from the normal 'C' string representation provided in :samp:`{string}`. At present, the hook is used by Objective-C only, to obtain a common-format string object when the target provides one.
 
 .. function:: void TARGET_OBJC_DECLARE_UNRESOLVED_CLASS_REFERENCE(const char* classname)
 

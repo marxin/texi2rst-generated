@@ -119,7 +119,7 @@ precedence rules have put the division outside the ``sizeof`` when it
 was intended to be inside.
 
 Parentheses around the entire macro definition prevent such problems.
-Here, then, is the recommended way to define ``ceil_div``:
+Here, then, is the recommended way to define ``ceil_div`` :
 
 .. code-block:: c++
 
@@ -250,7 +250,7 @@ to avoid this entirely).  Now each argument is evaluated exactly once.
 If you do not wish to use GNU C extensions, the only solution is to be
 careful when *using* the macro ``min``.  For example, you can
 calculate the value of ``foo (z)``, save it in a variable, and use
-that variable in ``min``:
+that variable in ``min`` :
 
 .. code-block:: c++
 
@@ -261,7 +261,7 @@ that variable in ``min``:
     next = min (x + y, tem);
   }
 
-(where we assume that ``foo`` returns type ``int``).
+(where we assume that ``foo`` returns type ``int`` ).
 
 .. _self-referential-macros:
 
@@ -284,8 +284,8 @@ the preprocessor output unchanged.  Consider an example:
 where ``foo`` is also a variable in your program.
 
 Following the ordinary rules, each reference to ``foo`` will expand
-into ``(4 + foo)``; then this will be rescanned and will expand into
-``(4 + (4 + foo))``; and so on until the computer runs out of memory.
+into ``(4 + foo)`` ; then this will be rescanned and will expand into
+``(4 + (4 + foo))`` ; and so on until the computer runs out of memory.
 
 The self-reference rule cuts this process short after one step, at
 ``(4 + foo)``.  Therefore, this macro definition has the possibly
@@ -425,7 +425,7 @@ that the prescan does make a difference in three special cases:
     #define foo (a,b)
     or#define bar(x) lose((x))
 
-  The extra pair of parentheses prevents the comma in ``foo``'s
+  The extra pair of parentheses prevents the comma in ``foo`` 's
   definition from being interpreted as an argument separator.
 
 .. _newlines-in-arguments:

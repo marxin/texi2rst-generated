@@ -83,19 +83,19 @@ Conversion functions
 
 .. function:: _Decimal32 __dpd_floatsisd(int i)
 
-  These functions convert :samp:`{i}` , a signed integer, to decimal floating point.
+  These functions convert :samp:`{i}`, a signed integer, to decimal floating point.
 
 .. function:: _Decimal32 __dpd_floatdisd(long i)
 
-  These functions convert :samp:`{i}` , a signed long, to decimal floating point.
+  These functions convert :samp:`{i}`, a signed long, to decimal floating point.
 
 .. function:: _Decimal32 __dpd_floatunssisd(unsigned inti)
 
-  These functions convert :samp:`{i}` , an unsigned integer, to decimal floating point.
+  These functions convert :samp:`{i}`, an unsigned integer, to decimal floating point.
 
 .. function:: _Decimal32 __dpd_floatunsdisd(unsigned longi)
 
-  These functions convert :samp:`{i}` , an unsigned long, to decimal floating point.
+  These functions convert :samp:`{i}`, an unsigned long, to decimal floating point.
 
 Comparison functions
 ^^^^^^^^^^^^^^^^^^^^

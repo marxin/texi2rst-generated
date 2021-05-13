@@ -34,7 +34,7 @@ These :samp:`-m` options are defined for the ARM port:
   @code{__rt_stkovf_split_small} or @code{__rt_stkovf_split_big} is
   called, depending upon the amount of stack space required.  The runtime
   system is required to provide these functions.  The default is
-  :option:`-mno-apcs-stack-check` , since this produces smaller code.
+  :option:`-mno-apcs-stack-check`, since this produces smaller code.
 
   @c not currently implemented
   @item -mapcs-reentrant
@@ -47,7 +47,7 @@ These :samp:`-m` options are defined for the ARM port:
   Generate code that supports calling between the ARM and Thumb
   instruction sets.  Without this option, on pre-v5 architectures, the
   two instruction sets cannot be reliably used inside one program.  The
-  default is :option:`-mno-thumb-interwork` , since slightly larger code
+  default is :option:`-mno-thumb-interwork`, since slightly larger code
   is generated when :option:`-mthumb-interwork` is specified.  In AAPCS
   configurations this option is meaningless.
 
@@ -617,7 +617,7 @@ These :samp:`-m` options are defined for the ARM port:
   range, and avoiding performance pitfalls of other CPUs.  The effects of
   this option may change in future GCC versions as CPU models come and go.
 
-  :option:`-mtune` permits the same extension options as :option:`-mcpu` , but
+  :option:`-mtune` permits the same extension options as :option:`-mcpu`, but
   the extension options do not affect the tuning of the generated code.
 
   :option:`-mtune=native` causes the compiler to auto-detect the CPU
@@ -631,7 +631,7 @@ These :samp:`-m` options are defined for the ARM port:
   to derive the name of the target ARM architecture (as if specified
   by :option:`-march` ) and the ARM processor type for which to tune for
   performance (as if specified by :option:`-mtune` ).  Where this option
-  is used in conjunction with :option:`-march` or :option:`-mtune` ,
+  is used in conjunction with :option:`-march` or :option:`-mtune`,
   those options take precedence over the appropriate part of this option.
 
   Many of the supported CPUs implement optional architectural
@@ -999,6 +999,6 @@ These :samp:`-m` options are defined for the ARM port:
   behavior is acceptable, use -static and -Wl,-dynamic-linker options.
 
   The opposite :option:`-mno-fdpic` option is useful (and required) to
-  build the Linux kernel using the same (``arm-*-uclinuxfdpiceabi``)
+  build the Linux kernel using the same ( ``arm-*-uclinuxfdpiceabi`` )
   toolchain as the one used to build the userland programs.
 

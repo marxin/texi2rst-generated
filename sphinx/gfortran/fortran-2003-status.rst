@@ -17,8 +17,8 @@ https://gcc.gnu.org/wiki/Fortran2003wiki page about Fortran 2003.
 * Abstract interfaces and type extension with the possibility to
   override type-bound procedures or to have deferred binding.
 
-* Polymorphic entities ('``CLASS``') for derived types and unlimited
-  polymorphism ('``CLASS(*)``') - including ``SAME_TYPE_AS``,
+* Polymorphic entities (' ``CLASS`` ') for derived types and unlimited
+  polymorphism (' ``CLASS(*)`` ') - including ``SAME_TYPE_AS``,
   ``EXTENDS_TYPE_OF`` and ``SELECT TYPE`` for scalars and arrays and
   finalization.
 

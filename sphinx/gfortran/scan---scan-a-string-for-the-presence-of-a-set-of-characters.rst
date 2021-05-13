@@ -14,7 +14,7 @@
   If :samp:`{BACK}` is either absent or equals ``FALSE``, this function
   returns the position of the leftmost character of :samp:`{STRING}` that is
   in :samp:`{SET}`. If :samp:`{BACK}` equals ``TRUE``, the rightmost position
-  is returned. If no character of :samp:`{SET}` is found in :samp:`{STRING}` , the 
+  is returned. If no character of :samp:`{SET}` is found in :samp:`{STRING}`, the 
   result is zero.
 
 :samp:`{Standard}:`

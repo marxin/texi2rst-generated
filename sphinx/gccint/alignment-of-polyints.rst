@@ -1,5 +1,5 @@
-Alignment of ``poly_int``s
-**************************
+Alignment of ``poly_int`` s
+***************************
 
 ``poly_int`` provides various routines for aligning values and for querying
 misalignments.  In each case the alignment must be a power of 2.
@@ -9,11 +9,11 @@ misalignments.  In each case the alignment must be a power of 2.
   of :samp:`{align}` at compile time.  The answer is the same for both directions.
 
 :samp:`can_align_down ({value}, {align}, &{aligned})`
-  Return true if ``can_align_p``; if so, set :samp:`{aligned}` to the greatest
+  Return true if ``can_align_p`` ; if so, set :samp:`{aligned}` to the greatest
   aligned value that is less than or equal to :samp:`{value}`.
 
 :samp:`can_align_up ({value}, {align}, &{aligned})`
-  Return true if ``can_align_p``; if so, set :samp:`{aligned}` to the lowest
+  Return true if ``can_align_p`` ; if so, set :samp:`{aligned}` to the lowest
   aligned value that is greater than or equal to :samp:`{value}`.
 
 :samp:`known_equal_after_align_down ({a}, {b}, {align})`

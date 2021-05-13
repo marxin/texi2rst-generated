@@ -74,9 +74,9 @@ FRV Options
 
   Select the FDPIC ABI, which uses function descriptors to represent
   pointers to functions.  Without any PIC/PIE-related options, it
-  implies :option:`-fPIE`.  With :option:`-fpic` or :option:`-fpie` , it
+  implies :option:`-fPIE`.  With :option:`-fpic` or :option:`-fpie`, it
   assumes GOT entries and small data are within a 12-bit range from the
-  GOT base address; with :option:`-fPIC` or :option:`-fPIE` , GOT offsets
+  GOT base address; with :option:`-fPIC` or :option:`-fPIE`, GOT offsets
   are computed with 32 bits.
   With a :samp:`bfin-elf` target, this option implies :option:`-msim`.
 
@@ -103,7 +103,7 @@ FRV Options
   that is known to be in read-only sections.  It's enabled by default,
   except for :option:`-fpic` or :option:`-fpie` : even though it may help
   make the global offset table smaller, it trades 1 instruction for 4.
-  With :option:`-fPIC` or :option:`-fPIE` , it trades 3 instructions for 4,
+  With :option:`-fPIC` or :option:`-fPIE`, it trades 3 instructions for 4,
   one of which may be shared by multiple symbols, and it avoids the need
   for a GOT entry for the referenced symbol, so it's more likely to be a
   win.  If it is not, :option:`-mno-gprel-ro` can be used to disable it.
@@ -111,7 +111,7 @@ FRV Options
 .. option:: -multilib-library-pic
 
   Link with the (library, not FD) pic libraries.  It's implied by
-  :option:`-mlibrary-pic` , as well as by :option:`-fPIC` and
+  :option:`-mlibrary-pic`, as well as by :option:`-fPIC` and
   :option:`-fpic` without :option:`-mfdpic`.  You should never have to use
   it explicitly.
 

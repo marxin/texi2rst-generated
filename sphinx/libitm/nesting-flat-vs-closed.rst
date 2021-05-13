@@ -13,7 +13,7 @@ enclosing transactions) are not supported.
 
 Flat nesting is the default nesting mode, but closed nesting is supported and
 used when transactions contain user-controlled aborts
-(``__transaction_cancel`` statements). We assume that user-controlled
+( ``__transaction_cancel`` statements). We assume that user-controlled
 aborts are rare in typical code and used mostly in exceptional situations.
 Thus, it makes more sense to use flat nesting by default to avoid the
 performance overhead of the additional checkpoints required for closed

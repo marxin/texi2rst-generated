@@ -122,15 +122,15 @@ not doing a link step.
 .. option:: -nostartfiles
 
   Do not use the standard system startup files when linking.
-  The standard system libraries are used normally, unless :option:`-nostdlib` ,
-  :option:`-nolibc` , or :option:`-nodefaultlibs` is used.
+  The standard system libraries are used normally, unless :option:`-nostdlib`,
+  :option:`-nolibc`, or :option:`-nodefaultlibs` is used.
 
 .. option:: -nodefaultlibs
 
   Do not use the standard system libraries when linking.
   Only the libraries you specify are passed to the linker, and options
   specifying linkage of the system libraries, such as :option:`-static-libgcc`
-  or :option:`-shared-libgcc` , are ignored.  
+  or :option:`-shared-libgcc`, are ignored.  
   The standard startup files are used normally, unless :option:`-nostartfiles`
   is used.  
 
@@ -157,7 +157,7 @@ not doing a link step.
   Do not use the standard system startup files or libraries when linking.
   No startup files and only the libraries you specify are passed to
   the linker, and options specifying linkage of the system libraries, such as
-  :option:`-static-libgcc` or :option:`-shared-libgcc` , are ignored.
+  :option:`-static-libgcc` or :option:`-shared-libgcc`, are ignored.
 
   The compiler may generate calls to ``memcmp``, ``memset``,
   ``memcpy`` and ``memmove``.
@@ -201,7 +201,7 @@ not doing a link step.
 
   Produce a dynamically linked position independent executable on targets
   that support it.  For predictable results, you must also specify the same
-  set of options used for compilation ( :option:`-fpie` , :option:`-fPIE` ,
+  set of options used for compilation ( :option:`-fpie`, :option:`-fPIE`,
   or model suboptions) when you specify this linker option.
 
 .. option:: -no-pie
@@ -214,7 +214,7 @@ not doing a link step.
   it.  A static position independent executable is similar to a static
   executable, but can be loaded at any address without a dynamic linker.
   For predictable results, you must also specify the same set of options
-  used for compilation ( :option:`-fpie` , :option:`-fPIE` , or model
+  used for compilation ( :option:`-fpie`, :option:`-fPIE`, or model
   suboptions) when you specify this linker option.
 
 .. option:: -pthread
@@ -253,7 +253,7 @@ not doing a link step.
   Produce a shared object which can then be linked with other objects to
   form an executable.  Not all systems support this option.  For predictable
   results, you must also specify the same set of options used for compilation
-  ( :option:`-fpic` , :option:`-fPIC` , or model suboptions) when
+  ( :option:`-fpic`, :option:`-fPIC`, or model suboptions) when
   you specify this linker option.On some systems, :samp:`gcc -shared`
   needs to build supplementary stub code for constructors to work.  On
   multi-libbed systems, :samp:`gcc -shared` must select the correct support
@@ -281,7 +281,7 @@ not doing a link step.
   If, instead, you use the GCC driver to create shared libraries, you may
   find that they are not always linked with the shared libgcc.
   If GCC finds, at its configuration time, that you have a non-GNU linker
-  or a GNU linker that does not support option :option:`--eh-frame-hdr` ,
+  or a GNU linker that does not support option :option:`--eh-frame-hdr`,
   it links the shared version of libgcc into shared libraries
   by default.  Otherwise, it takes advantage of the linker and optimizes
   away the linking with the shared version of libgcc, linking with
@@ -291,7 +291,7 @@ not doing a link step.
 
   However, if a library or main executable is supposed to throw or catch
   exceptions, you must link it using the G++ driver, or using the option
-  :option:`-shared-libgcc` , such that it is linked with the shared
+  :option:`-shared-libgcc`, such that it is linked with the shared
   libgcc.
 
 .. option:: -static-libasan
@@ -370,9 +370,9 @@ not doing a link step.
 
   If you want to pass an option that takes a separate argument, you must use
   :option:`-Xlinker` twice, once for the option and once for the argument.
-  For example, to pass :option:`-assert definitions` , you must write
+  For example, to pass :option:`-assert definitions`, you must write
   :option:`-Xlinker -assert -Xlinker definitions`.  It does not work to write
-  :option:`-Xlinker "-assert definitions"` , because this passes the entire
+  :option:`-Xlinker "-assert definitions"`, because this passes the entire
   string as a single argument, which is not what the linker expects.
 
   When using the GNU linker, it is usually more convenient to pass

@@ -90,11 +90,11 @@ are given below.
   when tuning for 680x0 architecture :samp:`{arch}`.  It also defines
   ``mcarch`` unless either :option:`-ansi` or a non-GNU :option:`-std`
   option is used.  If GCC is tuning for a range of architectures,
-  as selected by :option:`-mtune=68020-40` or :option:`-mtune=68020-60` ,
+  as selected by :option:`-mtune=68020-40` or :option:`-mtune=68020-60`,
   it defines the macros for every architecture in the range.
 
   GCC also defines the macro ``__muarch__`` when tuning for
-  ColdFire microarchitecture :samp:`{uarch}` , where :samp:`{uarch}` is one
+  ColdFire microarchitecture :samp:`{uarch}`, where :samp:`{uarch}` is one
   of the arguments given above.
 
 .. option:: -m68000, -mc68000
@@ -158,7 +158,7 @@ are given below.
 
   Generate output for a 520X ColdFire CPU.  This is the default
   when the compiler is configured for 520X-based systems.
-  It is equivalent to :option:`-mcpu=5206` , and is now deprecated
+  It is equivalent to :option:`-mcpu=5206`, and is now deprecated
   in favor of that option.
 
   Use this option for microcontroller with a 5200 core, including
@@ -189,7 +189,7 @@ are given below.
 
   Generate output for a ColdFire V4e family CPU (e.g. 547x/548x).
   This includes use of hardware floating-point instructions.
-  The option is equivalent to :option:`-mcpu=547x` , and is now
+  The option is equivalent to :option:`-mcpu=547x`, and is now
   deprecated in favor of that option.
 
 .. option:: -m68020-40
@@ -226,7 +226,7 @@ are given below.
 .. option:: -mdiv, -mno-div
 
   Generate (do not generate) ColdFire hardware divide and remainder
-  instructions.  If :option:`-march` is used without :option:`-mcpu` ,
+  instructions.  If :option:`-march` is used without :option:`-mcpu`,
   the default is 'on' for ColdFire architectures and 'off' for M680x0
   architectures.  Otherwise, the default is taken from the target CPU
   (either the default CPU, or the one specified by :option:`-mcpu` ).  For
@@ -247,7 +247,7 @@ are given below.
 
 .. option:: -mnobitfield, -mno-bitfield
 
-  Do not use the bit-field instructions.  The :option:`-m68000` , :option:`-mcpu32`
+  Do not use the bit-field instructions.  The :option:`-m68000`, :option:`-mcpu32`
   and :option:`-m5200` options imply :option:`-mnobitfield`.
 
 .. option:: -mbitfield
@@ -269,7 +269,7 @@ are given below.
   compiled with the Unix compiler.
 
   Also, you must provide function prototypes for all functions that
-  take variable numbers of arguments (including ``printf``);
+  take variable numbers of arguments (including ``printf`` );
   otherwise incorrect code is generated for calls to those
   functions.
 
@@ -295,9 +295,9 @@ are given below.
   most published application binary interface specifications for the m68k.
 
   Use the pc-relative addressing mode of the 68000 directly, instead of
-  using a global offset table.  At present, this option implies :option:`-fpic` ,
+  using a global offset table.  At present, this option implies :option:`-fpic`,
   allowing at most a 16-bit offset for pc-relative addressing.  :option:`-fPIC` is
-  not presently supported with :option:`-mpcrel` , though this could be supported for
+  not presently supported with :option:`-mpcrel`, though this could be supported for
   68020 and higher processors.
 
 .. option:: -mno-strict-align, -mstrict-align

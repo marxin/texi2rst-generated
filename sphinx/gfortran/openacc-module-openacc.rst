@@ -19,7 +19,7 @@ http://www.openacc.org/OpenACC Application Programming Interface v2.6.
 
 ``OPENACC`` provides the scalar default-integer
 named constant ``openacc_version`` with a value of the form
-:samp:`{yyyymm}` , where ``yyyy`` is the year and :samp:`{mm}` the month
+:samp:`{yyyymm}`, where ``yyyy`` is the year and :samp:`{mm}` the month
 of the OpenACC version; for OpenACC v2.6 the value is ``201711``.
 
 .. -

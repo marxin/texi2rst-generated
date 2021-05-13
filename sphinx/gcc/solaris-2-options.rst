@@ -16,7 +16,7 @@ These :samp:`-m` options are supported on Solaris 2:
 
 .. option:: -mimpure-text
 
-  :option:`-mimpure-text` , used in addition to :option:`-shared` , tells
+  :option:`-mimpure-text`, used in addition to :option:`-shared`, tells
   the compiler to not pass :option:`-z text` to the linker when linking a
   shared object.  Using this option, you can link position-dependent
   code into a shared object.
@@ -25,7 +25,7 @@ These :samp:`-m` options are supported on Solaris 2:
   allocatable but non-writable sections' linker error message.
   However, the necessary relocations trigger copy-on-write, and the
   shared object is not actually shared across processes.  Instead of
-  using :option:`-mimpure-text` , you should compile all source code with
+  using :option:`-mimpure-text`, you should compile all source code with
   :option:`-fpic` or :option:`-fPIC`.
 
 These switches are supported in addition to the above on Solaris 2:

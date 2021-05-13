@@ -17,10 +17,10 @@ location may vary, it relies on the following types of notes.
 .. index:: var_location
 
 :samp:`(var_location:{mode}{var}{exp}{stat})`
-  Binds variable ``var``, a tree, to value :samp:`{exp}` , an RTL
+  Binds variable ``var``, a tree, to value :samp:`{exp}`, an RTL
   expression.  It appears only in ``NOTE_INSN_VAR_LOCATION`` and
-  ``DEBUG_INSN``s, with slightly different meanings.  :samp:`{mode}` , if
-  present, represents the mode of :samp:`{exp}` , which is useful if it is a
+  ``DEBUG_INSN`` s, with slightly different meanings.  :samp:`{mode}`, if
+  present, represents the mode of :samp:`{exp}`, which is useful if it is a
   modeless expression.  :samp:`{stat}` is only meaningful in notes,
   indicating whether the variable is known to be initialized or
   uninitialized.
@@ -28,7 +28,7 @@ location may vary, it relies on the following types of notes.
   .. index:: debug_expr
 
 :samp:`(debug_expr:{mode}{decl})`
-  Stands for the value bound to the ``DEBUG_EXPR_DECL`` :samp:`{decl}` ,
+  Stands for the value bound to the ``DEBUG_EXPR_DECL`` :samp:`{decl}`,
   that points back to it, within value expressions in
   ``VAR_LOCATION`` nodes.
 

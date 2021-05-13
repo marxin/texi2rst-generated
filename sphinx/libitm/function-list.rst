@@ -21,7 +21,7 @@ State manipulation functions
 There is no ``getTransaction`` function. Transaction identifiers for
 nested transactions will be ordered but not necessarily sequential (i.e., for
 a nested transaction's identifier :samp:`{IN}` and its enclosing transaction's
-identifier :samp:`{IE}` , it is guaranteed that IN >= IE).
+identifier :samp:`{IE}`, it is guaranteed that IN >= IE).
 
 [No changes] Source locations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,7 +37,7 @@ The bit ``hasNoXMMUpdate`` is instead called ``hasNoVectorUpdate``.
 Iff it is set, vector register save/restore is not necessary for any target
 machine.
 
-The ``hasNoFloatUpdate`` bit (``0x0010``) is new. Iff it is set, floating
+The ``hasNoFloatUpdate`` bit ( ``0x0010`` ) is new. Iff it is set, floating
 point register save/restore is not necessary for any target machine.
 
 ``undoLogCode`` is not supported and a fatal runtime error will be raised
@@ -48,7 +48,7 @@ the compiler because it thinks that some kind of global synchronization
 (e.g., serial mode) might perform better? The specification suggests that the
 latter might be the case, but the former seems to be more useful.
 
-The ``readOnly`` bit (``0x4000``) is new. TODO Lexical or dynamic
+The ``readOnly`` bit ( ``0x4000`` ) is new. TODO Lexical or dynamic
 scope?
 
 ``hasNoRetry`` is not supported. If this bit is not set, but
@@ -57,7 +57,7 @@ rollback will not be requested.
 
 It would be useful if the absence of externally-triggered rollbacks would be
 reported for the dynamic scope as well, not just for the lexical scope
-(``hasNoAbort``). Without this, a library cannot exploit this together
+( ``hasNoAbort`` ). Without this, a library cannot exploit this together
 with flat nesting.
 
 ``exceptionBlock`` is not supported because exception blocks are not used.
@@ -79,7 +79,7 @@ is supported but the abort reasons ``exceptionBlockAbort``,
 ``TMConflict``, and ``userRetry`` are not supported. There are no
 exception blocks in general, so the related cases also do not have to be
 considered. To encode ``__transaction_cancel [[outer]]``, compilers must
-set the new ``outerAbort`` bit (``0x10``) additionally to the
+set the new ``outerAbort`` bit ( ``0x10`` ) additionally to the
 ``userAbort`` bit in the abort reason.
 
 Committing a transaction
@@ -123,7 +123,7 @@ The ``_ITM_cxa...`` functions are transactional wrappers for the respective
 code.  ``_ITM_cxa_free_exception`` is new in GCC 6.
 
 To support this EH scheme, libstdc++ needs to provide one additional function
-(``_cxa_tm_cleanup``), which is used by the TM to clean up the exception
+( ``_cxa_tm_cleanup`` ), which is used by the TM to clean up the exception
 handling state while rolling back a transaction:
 
 .. code-block:: c++
@@ -138,7 +138,7 @@ prior to that, ``unthrown_obj`` is non-null if the program called
 currently processing a cleanup along an exception path but has not caught this
 exception yet. ``caught_count`` is the nesting depth of
 ``__cxa_begin_catch`` within the transaction (which can be counted by the TM
-using ``_ITM_cxa_begin_catch`` and ``_ITM_cxa_end_catch``);
+using ``_ITM_cxa_begin_catch`` and ``_ITM_cxa_end_catch`` );
 ``__cxa_tm_cleanup`` then performs rollback by essentially performing
 ``__cxa_end_catch`` that many times.
 

@@ -61,7 +61,7 @@ must be placed into a register.
 
 :samp:`(ss_truncate:{m}{x})`
   Represents the result of truncating the value :samp:`{x}`
-  to machine mode :samp:`{m}` , using signed saturation in the case of
+  to machine mode :samp:`{m}`, using signed saturation in the case of
   overflow.  Both :samp:`{m}` and the mode of :samp:`{x}` must be fixed-point
   modes.
 
@@ -69,7 +69,7 @@ must be placed into a register.
 
 :samp:`(us_truncate:{m}{x})`
   Represents the result of truncating the value :samp:`{x}`
-  to machine mode :samp:`{m}` , using unsigned saturation in the case of
+  to machine mode :samp:`{m}`, using unsigned saturation in the case of
   overflow.  Both :samp:`{m}` and the mode of :samp:`{x}` must be fixed-point
   modes.
 
@@ -83,13 +83,13 @@ must be placed into a register.
   .. index:: float
 
 :samp:`(float:{m}{x})`
-  Represents the result of converting fixed point value :samp:`{x}` ,
+  Represents the result of converting fixed point value :samp:`{x}`,
   regarded as signed, to floating point mode :samp:`{m}`.
 
   .. index:: unsigned_float
 
 :samp:`(unsigned_float:{m}{x})`
-  Represents the result of converting fixed point value :samp:`{x}` ,
+  Represents the result of converting fixed point value :samp:`{x}`,
   regarded as unsigned, to floating point mode :samp:`{m}`.
 
   .. index:: fix
@@ -97,11 +97,11 @@ must be placed into a register.
 :samp:`(fix:{m}{x})`
   When :samp:`{m}` is a floating-point mode, represents the result of
   converting floating point value :samp:`{x}` (valid for mode :samp:`{m}` ) to an
-  integer, still represented in floating point mode :samp:`{m}` , by rounding
+  integer, still represented in floating point mode :samp:`{m}`, by rounding
   towards zero.
 
   When :samp:`{m}` is a fixed-point mode, represents the result of
-  converting floating point value :samp:`{x}` to mode :samp:`{m}` , regarded as
+  converting floating point value :samp:`{x}` to mode :samp:`{m}`, regarded as
   signed.  How rounding is done is not specified, so this operation may
   be used validly in compiling C code only for integer-valued operands.
 
@@ -109,16 +109,16 @@ must be placed into a register.
 
 :samp:`(unsigned_fix:{m}{x})`
   Represents the result of converting floating point value :samp:`{x}` to
-  fixed point mode :samp:`{m}` , regarded as unsigned.  How rounding is done
+  fixed point mode :samp:`{m}`, regarded as unsigned.  How rounding is done
   is not specified.
 
   .. index:: fract_convert
 
 :samp:`(fract_convert:{m}{x})`
   Represents the result of converting fixed-point value :samp:`{x}` to
-  fixed-point mode :samp:`{m}` , signed integer value :samp:`{x}` to
-  fixed-point mode :samp:`{m}` , floating-point value :samp:`{x}` to
-  fixed-point mode :samp:`{m}` , fixed-point value :samp:`{x}` to integer mode :samp:`{m}`
+  fixed-point mode :samp:`{m}`, signed integer value :samp:`{x}` to
+  fixed-point mode :samp:`{m}`, floating-point value :samp:`{x}` to
+  fixed-point mode :samp:`{m}`, fixed-point value :samp:`{x}` to integer mode :samp:`{m}`
   regarded as signed, or fixed-point value :samp:`{x}` to floating-point mode :samp:`{m}`.
   When overflows or underflows happen, the results are undefined.
 
@@ -126,8 +126,8 @@ must be placed into a register.
 
 :samp:`(sat_fract:{m}{x})`
   Represents the result of converting fixed-point value :samp:`{x}` to
-  fixed-point mode :samp:`{m}` , signed integer value :samp:`{x}` to
-  fixed-point mode :samp:`{m}` , or floating-point value :samp:`{x}` to
+  fixed-point mode :samp:`{m}`, signed integer value :samp:`{x}` to
+  fixed-point mode :samp:`{m}`, or floating-point value :samp:`{x}` to
   fixed-point mode :samp:`{m}`.
   When overflows or underflows happen, the results are saturated to the
   maximum or the minimum.

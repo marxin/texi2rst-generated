@@ -33,7 +33,7 @@
 :samp:`{Return value}:`
   The return value is of type ``INTEGER(K)``, with :samp:`{K}` such that
   variables of type ``INTEGER(K)`` have the same size as
-  C pointers (``sizeof(void *)``).
+  C pointers ( ``sizeof(void *)`` ).
 
 :samp:`{Example}:`
   The following example demonstrates the use of ``MALLOC`` and

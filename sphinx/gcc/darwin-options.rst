@@ -90,11 +90,11 @@ restrictive subtype of any of its input files.
 .. option:: -mkernel
 
   Enable kernel development mode.  The :option:`-mkernel` option sets
-  :option:`-static` , :option:`-fno-common` , :option:`-fno-use-cxa-atexit` ,
-  :option:`-fno-exceptions` , :option:`-fno-non-call-exceptions` ,
-  :option:`-fapple-kext` , :option:`-fno-weak` and :option:`-fno-rtti` where
-  applicable.  This mode also sets :option:`-mno-altivec` ,
-  :option:`-msoft-float` , :option:`-fno-builtin` and
+  :option:`-static`, :option:`-fno-common`, :option:`-fno-use-cxa-atexit`,
+  :option:`-fno-exceptions`, :option:`-fno-non-call-exceptions`,
+  :option:`-fapple-kext`, :option:`-fno-weak` and :option:`-fno-rtti` where
+  applicable.  This mode also sets :option:`-mno-altivec`,
+  :option:`-msoft-float`, :option:`-fno-builtin` and
   :option:`-mlong-branch` for PowerPC targets.
 
 .. option:: -mone-byte-bool

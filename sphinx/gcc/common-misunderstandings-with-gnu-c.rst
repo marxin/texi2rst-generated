@@ -148,7 +148,7 @@ class is known.  For this, you need to access ``i`` in a dependent
 context, by either using ``this->i`` (remember that ``this`` is of
 type ``Derived<T>*``, so is obviously dependent), or using
 ``Base<T>::i``.  Alternatively, ``Base<T>::i`` might be brought
-into scope by a ``using``-declaration.
+into scope by a ``using`` -declaration.
 
 Another, similar example involves calling member functions of a base
 class:
@@ -206,14 +206,14 @@ temporary object.  The compiler may very well delete the object before
 you expect it to, leaving a pointer to garbage.  The most common place
 where this problem crops up is in classes like string classes,
 especially ones that define a conversion function to type ``char *``
-or ``const char *``-which is one reason why the standard
+or ``const char *`` -which is one reason why the standard
 ``string`` class requires you to call the ``c_str`` member
 function.  However, any class that returns a pointer to some internal
 structure is potentially subject to this problem.
 
 For example, a program may use a function ``strfunc`` that returns
 ``string`` objects, and another function ``charfunc`` that
-operates on pointers to ``char``:
+operates on pointers to ``char`` :
 
 .. code-block:: c++
 
@@ -301,7 +301,7 @@ G++ implements the 'intuitive' algorithm for copy-assignment: assign all
 direct bases, then assign all members.  In that algorithm, the virtual
 base subobject can be encountered more than once.  In the example, copying
 proceeds in the following order: :samp:`val`, :samp:`name` (via
-``strdup``), :samp:`bval`, and :samp:`name` again.
+``strdup`` ), :samp:`bval`, and :samp:`name` again.
 
 If application code relies on copy-assignment, a user-defined
 copy-assignment operator removes any uncertainties.  With such an

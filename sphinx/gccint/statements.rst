@@ -55,8 +55,8 @@ Basic Statements
   this statement has no clobbers.  As this example indicates, 'plain'
   assembly statements are merely a special case of extended assembly
   statements; they have no cv-qualifiers, outputs, inputs, or clobbers.
-  All of the strings will be ``NUL``-terminated, and will contain no
-  embedded ``NUL``-characters.
+  All of the strings will be ``NUL`` -terminated, and will contain no
+  embedded ``NUL`` -characters.
 
   If the assembly statement is declared ``volatile``, or if the
   statement was not an extended assembly statement, and is therefore
@@ -182,7 +182,7 @@ exited, the exception to this being when there is an explicit call to
 ``alloca`` in the source code, in which case the stack is left
 depressed on exit of the ``BIND_EXPR``.
 
-A C++ program will usually contain more ``BIND_EXPR``s than
+A C++ program will usually contain more ``BIND_EXPR`` s than
 there are syntactic blocks in the source code, since several C++
 constructs have implicit scopes associated with them.  On the
 other hand, although the C++ front end uses pseudo-scopes to
@@ -256,10 +256,10 @@ The first sequence may complete in the following ways:
 * Execute the last statement in the sequence and fall off the
   end.
 
-* Execute a goto statement (``GOTO_EXPR``) to an ordinary
+* Execute a goto statement ( ``GOTO_EXPR`` ) to an ordinary
   label outside the sequence.
 
-* Execute a return statement (``RETURN_EXPR``).
+* Execute a return statement ( ``RETURN_EXPR`` ).
 
 * Throw an exception.  This is currently not explicitly represented in
   GIMPLE.
@@ -431,8 +431,8 @@ clauses used by the OpenMP API https://www.openmp.org.
 
   This does not represent any OpenMP directive, it is an artificial
   marker to indicate the end of the body of an OpenMP. It is used
-  by the flow graph (``tree-cfg.c``) and OpenMP region
-  building code (``omp-low.c``).
+  by the flow graph ( ``tree-cfg.c`` ) and OpenMP region
+  building code ( ``omp-low.c`` ).
 
 .. envvar:: OMP_CONTINUE
 

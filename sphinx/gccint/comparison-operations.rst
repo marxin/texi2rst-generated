@@ -17,7 +17,7 @@ if the relation holds, or of zeros if it does not, for comparison operators
 that return vector results.
 The mode of the comparison operation is independent of the mode
 of the data being compared.  If the comparison operation is being tested
-(e.g., the first operand of an ``if_then_else``), the mode must be
+(e.g., the first operand of an ``if_then_else`` ), the mode must be
 ``VOIDmode``.
 
 .. index:: condition codes
@@ -117,7 +117,7 @@ point comparisons are distinguished by the machine modes of the operands.
   This is not a comparison operation but is listed here because it is
   always used in conjunction with a comparison operation.  To be
   precise, :samp:`{cond}` is a comparison expression.  This expression
-  represents a choice, according to :samp:`{cond}` , between the value
+  represents a choice, according to :samp:`{cond}`, between the value
   represented by :samp:`{then}` and the one represented by :samp:`{else}`.
 
   On most machines, ``if_then_else`` expressions are valid only
@@ -126,8 +126,8 @@ point comparisons are distinguished by the machine modes of the operands.
   .. index:: cond
 
 :samp:`(cond [{test1}{value1}{test2}{value2} ...] {default})`
-  Similar to ``if_then_else``, but more general.  Each of :samp:`{test1}` ,
-  :samp:`{test2}` , ... is performed in turn.  The result of this expression is
+  Similar to ``if_then_else``, but more general.  Each of :samp:`{test1}`,
+  :samp:`{test2}`, ... is performed in turn.  The result of this expression is
   the :samp:`{value}` corresponding to the first nonzero test, or :samp:`{default}` if
   none of the tests are nonzero expressions.
 

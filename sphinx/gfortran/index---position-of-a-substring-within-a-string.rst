@@ -11,8 +11,8 @@
 
 :samp:`{Description}:`
   Returns the position of the start of the first occurrence of string
-  :samp:`{SUBSTRING}` as a substring in :samp:`{STRING}` , counting from one.  If
-  :samp:`{SUBSTRING}` is not present in :samp:`{STRING}` , zero is returned.  If 
+  :samp:`{SUBSTRING}` as a substring in :samp:`{STRING}`, counting from one.  If
+  :samp:`{SUBSTRING}` is not present in :samp:`{STRING}`, zero is returned.  If 
   the :samp:`{BACK}` argument is present and true, the return value is the
   start of the last occurrence rather than the first.
 

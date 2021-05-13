@@ -159,10 +159,10 @@ structures and the underlying CFG ``basic_block`` structures
 .. index:: 'real' instructions, RTL SSA
 
 .. _real-rtl-ssa-insns:
-If a CFG basic block :samp:`{bb}` contains an RTL instruction :samp:`{insn}` ,
+If a CFG basic block :samp:`{bb}` contains an RTL instruction :samp:`{insn}`,
 the RTL SSA represenation of :samp:`{bb}` also contains an RTL SSA representation
 of :samp:`{insn}`Note that this excludes non-instruction things like
-``note``s and ``barrier``s that also appear in the chain of RTL
+``note`` s and ``barrier`` s that also appear in the chain of RTL
 instructions.
 
 .  Within RTL SSA, these instructions are referred to as
@@ -200,13 +200,13 @@ need phi nodes because their live values can only come from one source.)
 The contents of a function are therefore represented using a
 four-level hierarchy:
 
-* functions (``rtl_ssa::function_info``), which contain ...
+* functions ( ``rtl_ssa::function_info`` ), which contain ...
 
-* extended basic blocks (``rtl_ssa::ebb_info``), which contain ...
+* extended basic blocks ( ``rtl_ssa::ebb_info`` ), which contain ...
 
-* basic blocks (``rtl_ssa::bb_info``), which contain ...
+* basic blocks ( ``rtl_ssa::bb_info`` ), which contain ...
 
-* instructions (``rtl_ssa::insn_info``)
+* instructions ( ``rtl_ssa::insn_info`` )
 
 In dumps, a basic block is identified as ``bbn``, where :samp:`{n}`
 is the index of the associated CFG ``basic_block`` structure.
@@ -247,7 +247,7 @@ are call clobbers, which are generally represented separately.
 See the comment above ``rtl_ssa::insn_info`` for details.
 
 .
-These ``rtl_ssa::access_info``s are organized into the following
+These ``rtl_ssa::access_info`` s are organized into the following
 class hierarchy:
 
 .. index:: rtl_ssa::access_info
@@ -289,7 +289,7 @@ a ``rtl_ssa::set_info`` represent a set.
 Each ``rtl_ssa::use_info`` records which single ``rtl_ssa::set_info``
 provides the value of the resource; this is null if the resource is
 completely undefined at the point of use.  Each ``rtl_ssa::set_info``
-in turn records all the ``rtl_ssa::use_info``s that use its value.
+in turn records all the ``rtl_ssa::use_info`` s that use its value.
 
 If a value of a resource can come from multiple sources,
 a ``rtl_ssa::phi_info`` brings those multiple sources together
@@ -359,12 +359,12 @@ RTL SSA Access Lists
 
 All the definitions of a resource are chained together in reverse postorder.
 In general, this list can contain an arbitrary mix of both sets
-(``rtl_ssa::set_info``) and clobbers (``rtl_ssa::clobber_info``).
+( ``rtl_ssa::set_info`` ) and clobbers ( ``rtl_ssa::clobber_info`` ).
 However, it is often useful to skip over all intervening clobbers
 of a resource in order to find the next set.  The list is constructed
 in such a way that this can be done in amortized constant time.
 
-All uses (``rtl_ssa::use_info``) of a given set are also chained
+All uses ( ``rtl_ssa::use_info`` ) of a given set are also chained
 together into a list.  This list of uses is divided into three parts:
 
 * uses by 'real' nondebug instructions (see :ref:`real-rtl-ssa-insns`)
@@ -470,10 +470,10 @@ Note that the input to a degenerate phi is never itself provided
 by a degenerate phi.
 
 At present, the SSA form takes this principle one step further
-and guarantees that, for any given resource :samp:`{res}` , one of the
+and guarantees that, for any given resource :samp:`{res}`, one of the
 following is true:
 
-** The resource has a single definition :samp:`{def}` , which is not a phi node.
+** The resource has a single definition :samp:`{def}`, which is not a phi node.
   Excluding uses of undefined registers, all uses of :samp:`{res}` by real
   nondebug instructions use the value provided by :samp:`{def}`.
 
@@ -519,14 +519,14 @@ Next, the pass should create an ``rtl_ssa::insn_change`` object
 for the instruction that it wants to change.  This object specifies
 several things:
 
-* what the instruction's new list of uses should be (``new_uses``).
+* what the instruction's new list of uses should be ( ``new_uses`` ).
   By default this is the same as the instruction's current list of uses.
 
-* what the instruction's new list of definitions should be (``new_defs``).
+* what the instruction's new list of definitions should be ( ``new_defs`` ).
   By default this is the same as the instruction's current list of
   definitions.
 
-* where the instruction should be located (``move_range``).
+* where the instruction should be located ( ``move_range`` ).
   This is a range of instructions after which the instruction could
   be placed, represented as an ``rtl_ssa::insn_range``.
   By default the instruction must remain at its current position.
@@ -576,7 +576,7 @@ the facilities provided by recog.c.  For example:
   insn_change_watermark watermark;
   validate_change (rtl, &PATTERN (rtl), new_pat, 1);
 
-will tentatively replace ``insn``'s pattern with ``new_pat``.
+will tentatively replace ``insn`` 's pattern with ``new_pat``.
 
 These changes and the construction of the ``rtl_ssa::insn_change``
 can happen in either order or be interleaved.
@@ -675,7 +675,7 @@ it might do:
 
   rtl_ssa::insn_change *changes[] = { &change1, change2 };
 
-where ``change1``'s instruction must come before ``change2``'s.
+where ``change1`` 's instruction must come before ``change2`` 's.
 Alternatively, if the pass is changing a variable number of
 instructions, it might build up the sequence in a
 ``vec<rtl_ssa::insn_change *>``.
@@ -719,7 +719,7 @@ The process for changing single instructions makes sure that one
 ``rtl_ssa::insn_change`` in isolation is valid.  But when changing
 multiple instructions, it is also necessary to test whether the
 sequence as a whole is valid.  For example, it might be impossible
-to satisfy all of the ``move_range``s at once.
+to satisfy all of the ``move_range`` s at once.
 
 Therefore, once the pass has a sequence of changes that are
 individually correct, it should use:

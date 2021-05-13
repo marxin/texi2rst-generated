@@ -13,7 +13,7 @@ Some RTL nodes have special annotations associated with them.
 
   :samp:`MEM_ALIAS_SET ({x})`
     If 0, :samp:`{x}` is not in any alias set, and may alias anything.  Otherwise,
-    :samp:`{x}` can only alias ``MEM``s in a conflicting alias set.  This value
+    :samp:`{x}` can only alias ``MEM`` s in a conflicting alias set.  This value
     is set in a language-dependent manner in the front-end, and should not be
     altered in the back-end.  In some front-ends, these numbers may correspond
     in some way to types, or other language-level entities, but they need not,

@@ -9,7 +9,7 @@ For example, on the x86 the MMX, 3DNow! and SSE extensions can be used
 this way.
 
 The first step in using these extensions is to provide the necessary data
-types.  This should be done using an appropriate ``typedef``:
+types.  This should be done using an appropriate ``typedef`` :
 
 .. code-block:: c++
 

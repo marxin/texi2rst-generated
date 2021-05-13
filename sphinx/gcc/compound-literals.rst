@@ -100,7 +100,7 @@ because the lifetime of the array ends after the declaration of ``foo``.
 
 As an optimization, G++ sometimes gives array compound literals longer
 lifetimes: when the array either appears outside a function or has
-a ``const``-qualified type.  If ``foo`` and its initializer had
+a ``const`` -qualified type.  If ``foo`` and its initializer had
 elements of type ``char *const`` rather than ``char *``, or if
 ``foo`` were a global variable, the array would have static storage
 duration.  But it is probably safest just to avoid the use of array

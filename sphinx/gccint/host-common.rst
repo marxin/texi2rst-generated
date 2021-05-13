@@ -37,7 +37,7 @@ variable in config.gcc.
   if the hook has performed everything.
 
   If the implementation uses reserved address space, free any reserved
-  space beyond :samp:`{size}` , regardless of the return value.  If no PCH will
+  space beyond :samp:`{size}`, regardless of the return value.  If no PCH will
   be loaded, this hook may be called with :samp:`{size}` zero, in which case
   all reserved address space should be freed.
 

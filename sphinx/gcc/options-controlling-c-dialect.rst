@@ -50,7 +50,7 @@ accepts:
   programs that might use these names for other things.
 
   Functions that are normally built in but do not have semantics
-  defined by ISO C (such as ``alloca`` and ``ffs``) are not built-in
+  defined by ISO C (such as ``alloca`` and ``ffs`` ) are not built-in
   functions when :option:`-ansi` is used.  See :ref:`Other
   built-in functions provided by GCC <other-builtins>`, for details of the functions
   affected.
@@ -298,7 +298,7 @@ accepts:
   option is ignored.  There is no corresponding
   :option:`-fbuiltin-`:samp:`{function}` option; if you wish to enable
   built-in functions selectively when using :option:`-fno-builtin` or
-  :option:`-ffreestanding` , you may define macros such as:
+  :option:`-ffreestanding`, you may define macros such as:
 
   .. code-block:: c++
 
@@ -342,7 +342,7 @@ accepts:
   ``!$acc`` in Fortran.  When :option:`-fopenacc` is specified, the
   compiler generates accelerated code according to the OpenACC Application
   Programming Interface v2.6 https://www.openacc.org.  This option
-  implies :option:`-pthread` , and thus is only supported on targets that
+  implies :option:`-pthread`, and thus is only supported on targets that
   have support for :option:`-pthread`.
 
 .. option:: -fopenacc-dim=geom
@@ -362,7 +362,7 @@ accepts:
   ``!$omp`` in Fortran.  When :option:`-fopenmp` is specified, the
   compiler generates parallel code according to the OpenMP Application
   Program Interface v4.5 https://www.openmp.org.  This option
-  implies :option:`-pthread` , and thus is only supported on targets that
+  implies :option:`-pthread`, and thus is only supported on targets that
   have support for :option:`-pthread`. :option:`-fopenmp` implies
   :option:`-fopenmp-simd`.
 
@@ -416,7 +416,7 @@ accepts:
 
   Accept some non-standard constructs used in Plan 9 code.
 
-  This enables :option:`-fms-extensions` , permits passing pointers to
+  This enables :option:`-fms-extensions`, permits passing pointers to
   structures with anonymous fields to functions that expect pointers to
   elements of the type of the field, and permits referring to anonymous
   fields declared using a typedef.  See :ref:`Unnamed
@@ -458,7 +458,7 @@ accepts:
 
   Let the type ``char`` be signed, like ``signed char``.
 
-  Note that this is equivalent to :option:`-fno-unsigned-char` , which is
+  Note that this is equivalent to :option:`-fno-unsigned-char`, which is
   the negative form of :option:`-funsigned-char`.  Likewise, the option
   :option:`-fno-signed-char` is equivalent to :option:`-funsigned-char`.
 

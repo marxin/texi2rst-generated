@@ -44,9 +44,9 @@ and do any other required initialization.
 This function is called from ``compile_file`` right before invoking
 the parser.  The arguments to ``plugin_init`` are:
 
-* ``plugin_info``: Plugin invocation information.
+* ``plugin_info`` : Plugin invocation information.
 
-* ``version``: GCC version.
+* ``version`` : GCC version.
 
 The ``plugin_info`` struct is defined as follows:
 
@@ -180,13 +180,13 @@ and / or generate new events dynamically, by calling the function
 To register a callback, the plugin calls ``register_callback`` with
 the arguments:
 
-** ``char *name``: Plugin name.
+** ``char *name`` : Plugin name.
 
-* ``int event``: The event code.
+* ``int event`` : The event code.
 
-* ``plugin_callback_func callback``: The function that handles ``event``.
+* ``plugin_callback_func callback`` : The function that handles ``event``.
 
-* ``void *user_data``: Pointer to plugin-specific data.
+* ``void *user_data`` : Pointer to plugin-specific data.
 
 For the PLUGIN_PASS_MANAGER_SETUP, PLUGIN_INFO, and
 PLUGIN_REGISTER_GGC_ROOTS pseudo-events the ``callback`` should be null,

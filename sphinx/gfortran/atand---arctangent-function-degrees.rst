@@ -33,7 +33,7 @@
 
 :samp:`{Arguments}:`
   ===========  ==================================================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``;
+  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX`` ;
                if :samp:`{Y}` is present, :samp:`{X}` shall be REAL.
   ===========  ==================================================================
   :samp:`{Y}`  The type and kind type parameter shall be the same as :samp:`{X}`.
@@ -42,7 +42,7 @@
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`.
   If :samp:`{Y}` is present, the result is identical to ``ATAND2(Y,X)``.
-  Otherwise, it is the arcus tangent of :samp:`{X}` , where the real part of
+  Otherwise, it is the arcus tangent of :samp:`{X}`, where the real part of
   the result is in degrees and lies in the range
   -90 \leq \Re \atand(x) \leq 90.
 

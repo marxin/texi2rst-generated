@@ -46,7 +46,7 @@ statement iterators.
 
 .. function:: gimple_stmt_iterator gsi_start(gimple_seq seq)
 
-  Return a new iterator pointing to the sequence ``SEQ``'s first
+  Return a new iterator pointing to the sequence ``SEQ`` 's first
   statement.  If ``SEQ`` is empty, the iterator's basic block is ``NULL``.
   Use ``gsi_start_bb`` instead when the iterator needs to always have
   the correct basic block set.
@@ -154,9 +154,9 @@ statement iterators.
 .. function:: void gsi_insert_before(gimple_stmt_iterator *i,gimple stmt,enum gsi_iterator_updatemode )
 
   Insert statement ``STMT`` before the statement pointed-to by iterator
-  ``I``, update ``STMT``'s basic block and scan it for new operands.  ``MODE``
+  ``I``, update ``STMT`` 's basic block and scan it for new operands.  ``MODE``
   specifies how to update iterator ``I`` after insertion (see enum
-  ``gsi_iterator_update``).
+  ``gsi_iterator_update`` ).
 
 .. function:: void gsi_insert_seq_before(gimple_stmt_iterator *i,gimple_seq seq,enum gsi_iterator_updatemode )
 
@@ -165,9 +165,9 @@ statement iterators.
 .. function:: void gsi_insert_after(gimple_stmt_iterator *i,gimple stmt,enum gsi_iterator_updatemode )
 
   Insert statement ``STMT`` after the statement pointed-to by iterator
-  ``I``, update ``STMT``'s basic block and scan it for new operands.  ``MODE``
+  ``I``, update ``STMT`` 's basic block and scan it for new operands.  ``MODE``
   specifies how to update iterator ``I`` after insertion (see enum
-  ``gsi_iterator_update``).
+  ``gsi_iterator_update`` ).
 
 .. function:: void gsi_insert_seq_after(gimple_stmt_iterator *i,gimple_seq seq,enum gsi_iterator_updatemode )
 
@@ -194,17 +194,17 @@ statement iterators.
 .. function:: void gsi_insert_on_edge(edge e,gimple stmt)
 
   Add ``STMT`` to the pending list of edge ``E``.  No actual insertion is
-  made until a call to ``gsi_commit_edge_inserts``() is made.
+  made until a call to ``gsi_commit_edge_inserts`` () is made.
 
 .. function:: void gsi_insert_seq_on_edge(edge e,gimple_seq seq)
 
   Add the sequence of statements in ``SEQ`` to the pending list of edge
   ``E``.  No actual insertion is made until a call to
-  ``gsi_commit_edge_inserts``() is made.
+  ``gsi_commit_edge_inserts`` () is made.
 
 .. function:: basic_block gsi_insert_on_edge_immediate(edge e,gimple stmt)
 
-  Similar to ``gsi_insert_on_edge``+``gsi_commit_edge_inserts``.  If a new
+  Similar to ``gsi_insert_on_edge`` + ``gsi_commit_edge_inserts``.  If a new
   block has to be created, it is returned.
 
 .. function:: void gsi_commit_one_edge_insert(edge e,basic_block *new_bb)

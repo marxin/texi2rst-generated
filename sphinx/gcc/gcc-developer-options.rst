@@ -55,7 +55,7 @@ The files are created in the directory of the output file.
   callgraph is decorated with information about dynamically allocated
   objects.
 
-  When compiling with :option:`-flto` , no callgraph information is output
+  When compiling with :option:`-flto`, no callgraph information is output
   along with the object file.  At LTO link time, :option:`-fcallgraph-info`
   may generate multiple callgraph information files next to intermediate
   LTO output files.
@@ -74,7 +74,7 @@ The files are created in the directory of the output file.
 
   Debug dumps can be enabled with a :option:`-fdump-rtl` switch or some
   :option:`-d` option :samp:`{letters}`.  Here are the possible
-  letters for use in :samp:`{pass}` and :samp:`{letters}` , and their meanings:
+  letters for use in :samp:`{pass}` and :samp:`{letters}`, and their meanings:
 
   .. option:: -fdump-rtl-alignments
 
@@ -121,7 +121,7 @@ The files are created in the directory of the output file.
 
   .. option:: -fdump-rtl-ce1, -fdump-rtl-ce2, -fdump-rtl-ce3
 
-    :option:`-fdump-rtl-ce1` , :option:`-fdump-rtl-ce2` , and
+    :option:`-fdump-rtl-ce1`, :option:`-fdump-rtl-ce2`, and
     :option:`-fdump-rtl-ce3` enable dumping after the three
     if conversion passes.
 
@@ -377,9 +377,9 @@ The files are created in the directory of the output file.
   :samp:`inline`
     Dump after function inlining.
 
-    Additionally, the options :option:`-optimized` , :option:`-missed` ,
-  :option:`-note` , and :option:`-all` can be provided, with the same meaning
-  as for :option:`-fopt-info` , defaulting to :option:`-optimized`.
+    Additionally, the options :option:`-optimized`, :option:`-missed`,
+  :option:`-note`, and :option:`-all` can be provided, with the same meaning
+  as for :option:`-fopt-info`, defaulting to :option:`-optimized`.
 
   For example, :option:`-fdump-ipa-inline-optimized-missed` will emit
   information on callsites that were inlined, along with callsites
@@ -498,7 +498,7 @@ The files are created in the directory of the output file.
     Enable showing line numbers for statements.
 
   :samp:`uid`
-    Enable showing the unique ID (``DECL_UID``) for each variable.
+    Enable showing the unique ID ( ``DECL_UID`` ) for each variable.
 
   :samp:`verbose`
     Enable showing the tree dump for each statement.
@@ -522,12 +522,12 @@ The files are created in the directory of the output file.
     certain passes).
 
   :samp:`all`
-    Turn on all options, except raw , slim , verbose
+    Turn on all options, except raw, slim, verbose
     and lineno.
 
   :samp:`optall`
-    Turn on all optimization options, i.e., optimized ,
-    missed , and note.
+    Turn on all optimization options, i.e., optimized,
+    missed, and note.
 
     To determine what tree dumps are available or find the dump for a pass
   of interest follow the steps below.
@@ -697,7 +697,7 @@ The files are created in the directory of the output file.
   compressed JSON file is subject to change.
 
   It is roughly equivalent to a machine-readable version of
-  :option:`-fopt-info-all` , as a collection of messages with source file,
+  :option:`-fopt-info-all`, as a collection of messages with source file,
   line number and column number, with the following additional data for
   each message:
 
@@ -874,7 +874,7 @@ The files are created in the directory of the output file.
 .. option:: -fdump-final-insns[=file]
 
   Dump the final internal representation (RTL) to :samp:`{file}`.  If the
-  optional argument is omitted (or if :samp:`{file}` is ``.``), the name
+  optional argument is omitted (or if :samp:`{file}` is ``.`` ), the name
   of the dump file is determined by appending ``.gkd`` to the
   dump base name, see :option:`-dumpbase`.
 
@@ -890,16 +890,16 @@ The files are created in the directory of the output file.
   The environment variable :envvar:`GCC_COMPARE_DEBUG`, if defined, non-empty
   and nonzero, implicitly enables :option:`-fcompare-debug`.  If
   :envvar:`GCC_COMPARE_DEBUG` is defined to a string starting with a dash,
-  then it is used for :samp:`{opts}` , otherwise the default :option:`-gtoggle`
+  then it is used for :samp:`{opts}`, otherwise the default :option:`-gtoggle`
   is used.
 
-  :option:`-fcompare-debug` =, with the equal sign but without :samp:`{opts}` ,
-  is equivalent to :option:`-fno-compare-debug` , which disables the dumping
+  :option:`-fcompare-debug` =, with the equal sign but without :samp:`{opts}`,
+  is equivalent to :option:`-fno-compare-debug`, which disables the dumping
   of the final representation and the second compilation, preventing even
   :envvar:`GCC_COMPARE_DEBUG` from taking effect.
 
   To verify full coverage during :option:`-fcompare-debug` testing, set
-  :envvar:`GCC_COMPARE_DEBUG` to say :option:`-fcompare-debug-not-overridden` ,
+  :envvar:`GCC_COMPARE_DEBUG` to say :option:`-fcompare-debug-not-overridden`,
   which GCC rejects as an invalid option in any actual compilation
   (rather than preprocessing, assembly or linking).  To get just a
   warning, setting :envvar:`GCC_COMPARE_DEBUG` to :samp:`-w%n-fcompare-debug
@@ -908,7 +908,7 @@ The files are created in the directory of the output file.
 .. option:: -fcompare-debug-second
 
   This option is implicitly passed to the compiler for the second
-  compilation requested by :option:`-fcompare-debug` , along with options to
+  compilation requested by :option:`-fcompare-debug`, along with options to
   silence warnings, and omitting other options that would cause the compiler
   to produce output to files or to standard output as a side effect.  Dump
   files and preserved temporary files are renamed so as to contain the
@@ -930,7 +930,7 @@ The files are created in the directory of the output file.
 
 .. option:: -fvar-tracking-assignments-toggle, -fno-var-tracking-assignments-toggle
 
-  Toggle :option:`-fvar-tracking-assignments` , in the same way that
+  Toggle :option:`-fvar-tracking-assignments`, in the same way that
   :option:`-gtoggle` toggles :option:`-g`.
 
 .. option:: -Q
@@ -964,7 +964,7 @@ The files are created in the directory of the output file.
 
 .. option:: -flto-report-wpa
 
-  Like :option:`-flto-report` , but only print for the WPA phase of link-time
+  Like :option:`-flto-report`, but only print for the WPA phase of link-time
   optimization.
 
 .. option:: -fmem-report
@@ -1037,7 +1037,7 @@ The files are created in the directory of the output file.
   the name of the counter and list of closed intervals.
   The :samp:`{lower_bound}` is optional and is zero
   initialized if not set.
-  For example, with :option:`-fdbg-cnt=dce:2-4:10-11,tail_call:10` ,
+  For example, with :option:`-fdbg-cnt=dce:2-4:10-11,tail_call:10`,
   ``dbg_cnt(dce)`` returns true only for second, third, fourth, tenth and
   eleventh invocation.
   For ``dbg_cnt(tail_call)`` true is returned for first 10 invocations.
@@ -1080,7 +1080,7 @@ The files are created in the directory of the output file.
 
 .. option:: -print-prog-name=program
 
-  Like :option:`-print-file-name` , but searches for a program such as :command:`cpp`.
+  Like :option:`-print-file-name`, but searches for a program such as :command:`cpp`.
 
 .. option:: -print-libgcc-file-name
 
@@ -1127,7 +1127,7 @@ The files are created in the directory of the output file.
 
 .. option:: -dumpversion
 
-  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7``)-and don't do
+  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7`` )-and don't do
   anything else.  This is the compiler version used in filesystem paths and
   specs. Depending on how the compiler has been configured it can be just
   a single number (major version), two numbers separated by a dot (major and

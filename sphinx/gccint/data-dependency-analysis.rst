@@ -38,7 +38,7 @@ is ``data_reference``, where ``data_reference_p`` is a name of a
 pointer to the data reference structure. The structure contains the
 following elements:
 
-** ``base_object_info``: Provides information about the base object
+** ``base_object_info`` : Provides information about the base object
   of the data reference and its access functions. These access functions
   represent the evolution of the data reference in the loop relative to
   its base, in keeping with the classical meaning of the data reference
@@ -47,7 +47,7 @@ following elements:
   one for each array subscript, are:
   ``{i_init, + i_step}_1, {j_init, +, j_step}_2``.
 
-* ``first_location_in_loop``: Provides information about the first
+* ``first_location_in_loop`` : Provides information about the first
   location accessed by the data reference in the loop and about the access
   function used to represent evolution relative to this location. This data
   is used to support pointers, and is not used for arrays (for which we
@@ -74,11 +74,11 @@ following elements:
 
   The current strategy for data dependence tests is as follows:
   If both ``a`` and ``b`` are represented as arrays, compare
-  ``a.base_object`` and ``b.base_object``;
+  ``a.base_object`` and ``b.base_object`` ;
   if they are equal, apply dependence tests (use access functions based on
   base_objects).
   Else if both ``a`` and ``b`` are represented as pointers, compare
-  ``a.first_location`` and ``b.first_location``;
+  ``a.first_location`` and ``b.first_location`` ;
   if they are equal, apply dependence tests (use access functions based on
   first location).
   However, if ``a`` and ``b`` are represented differently, only try

@@ -32,7 +32,7 @@ These options are defined for the MMIX:
 .. option:: -mknuthdiv, -mno-knuthdiv
 
   Make the result of a division yielding a remainder have the same sign as
-  the divisor.  With the default, :option:`-mno-knuthdiv` , the sign of the
+  the divisor.  With the default, :option:`-mno-knuthdiv`, the sign of the
   remainder follows the sign of the dividend.  Both methods are
   arithmetically valid, the latter being almost exclusively used.
 

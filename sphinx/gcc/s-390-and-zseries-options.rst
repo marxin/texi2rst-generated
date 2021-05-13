@@ -44,7 +44,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   In general, code compiled with :option:`-mbackchain` is call-compatible with
   code compiled with :option:`-mno-backchain` ; however, use of the backchain
   for debugging purposes usually requires that the whole binary is built with
-  :option:`-mbackchain`.  Note that the combination of :option:`-mbackchain` ,
+  :option:`-mbackchain`.  Note that the combination of :option:`-mbackchain`,
   :option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
   to build a linux kernel use :option:`-msoft-float`.
 
@@ -68,7 +68,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   S/390 or zSeries generated code that uses the stack frame backchain at run
   time, not just for debugging purposes.  Such code is not call-compatible
   with code compiled with :option:`-mpacked-stack`.  Also, note that the
-  combination of :option:`-mbackchain` ,
+  combination of :option:`-mbackchain`,
   :option:`-mpacked-stack` and :option:`-mhard-float` is not supported.  In order
   to build a linux kernel use :option:`-msoft-float`.
 
@@ -88,7 +88,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   GNU/Linux for S/390 ABI.  When :option:`-m64` is specified, generate
   code compliant to the GNU/Linux for zSeries ABI.  This allows GCC in
   particular to generate 64-bit instructions.  For the :samp:`s390`
-  targets, the default is :option:`-m31` , while the :samp:`s390x`
+  targets, the default is :option:`-m31`, while the :samp:`s390x`
   targets default to :option:`-m64`.
 
 .. option:: -mzarch, -mesa
@@ -150,7 +150,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
 
 .. option:: -march=cpu-type
 
-  Generate code that runs on :samp:`{cpu-type}` , which is the name of a
+  Generate code that runs on :samp:`{cpu-type}`, which is the name of a
   system representing a certain processor type.  Possible values for
   :samp:`{cpu-type}` are :samp:`z900`/:samp:`arch5`, :samp:`z990`/:samp:`arch6`,
   :samp:`z9-109`, :samp:`z9-ec`/:samp:`arch7`, :samp:`z10`/:samp:`arch8`,
@@ -225,7 +225,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   If the hotpatch option is enabled, a 'hot-patching' function
   prologue is generated for all functions in the compilation unit.
   The funtion label is prepended with the given number of two-byte
-  NOP instructions ( :samp:`{pre-halfwords}` , maximum 1000000).  After
+  NOP instructions ( :samp:`{pre-halfwords}`, maximum 1000000).  After
   the label, 2 * :samp:`{post-halfwords}` bytes are appended, using the
   largest NOP like instructions the architecture allows (maximum
   1000000).

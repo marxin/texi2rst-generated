@@ -19,7 +19,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
 .. option:: -mpa-risc-1-0, -mpa-risc-1-1, -mpa-risc-2-0
 
-  Synonyms for :option:`-march=1.0` , :option:`-march=1.1` , and :option:`-march=2.0` respectively.
+  Synonyms for :option:`-march=1.0`, :option:`-march=1.1`, and :option:`-march=2.0` respectively.
 
 .. option:: -mcaller-copies
 

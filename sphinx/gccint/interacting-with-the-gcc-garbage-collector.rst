@@ -6,11 +6,11 @@ Interacting with the GCC Garbage Collector
 Some plugins may want to be informed when GGC (the GCC Garbage
 Collector) is running. They can register callbacks for the
 ``PLUGIN_GGC_START`` and ``PLUGIN_GGC_END`` events (for which
-the callback is called with a null ``gcc_data``) to be notified of
+the callback is called with a null ``gcc_data`` ) to be notified of
 the start or end of the GCC garbage collection.
 
 Some plugins may need to have GGC mark additional data. This can be
-done by registering a callback (called with a null ``gcc_data``)
+done by registering a callback (called with a null ``gcc_data`` )
 for the ``PLUGIN_GGC_MARKING`` event. Such callbacks can call the
 ``ggc_set_mark`` routine, preferably through the ``ggc_mark`` macro
 (and conversely, these routines should usually not be used in plugins
@@ -22,9 +22,9 @@ used to tell if an object is marked, or is about to  be collected.  The
 managing weak references.
 
 Some plugins may need to add extra GGC root tables, e.g. to handle their own
-``GTY``-ed data. This can be done with the ``PLUGIN_REGISTER_GGC_ROOTS``
+``GTY`` -ed data. This can be done with the ``PLUGIN_REGISTER_GGC_ROOTS``
 pseudo-event with a null callback and the extra root table (of type ``struct
-ggc_root_tab*``) as ``user_data``.  Running the
+ggc_root_tab*`` ) as ``user_data``.  Running the
  ``gengtype -p source-dirfile-listplugin*.c ...``
 utility generates these extra root tables.
 

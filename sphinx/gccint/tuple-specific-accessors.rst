@@ -146,7 +146,7 @@ Tuple specific accessors
   Build a new ``GIMPLE_ASSIGN`` tuple and append it to the end of
   ``*SEQ_P``.
 
-``DST``/``SRC`` are the destination and source respectively.  You can
+``DST`` / ``SRC`` are the destination and source respectively.  You can
 pass ungimplified trees in ``DST`` or ``SRC``, in which
 case they will be converted to a gimple operand if necessary.
 
@@ -256,11 +256,11 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
 .. function:: void gimple_bind_add_stmt(gbind *gs,gimple stmt)
 
-  Append a statement to the end of a ``GIMPLE_BIND``'s body.
+  Append a statement to the end of a ``GIMPLE_BIND`` 's body.
 
 .. function:: void gimple_bind_add_seq(gbind *gs,gimple_seq seq)
 
-  Append a sequence of statements to the end of a ``GIMPLE_BIND``'s
+  Append a sequence of statements to the end of a ``GIMPLE_BIND`` 's
   body.
 
 .. function:: tree gimple_bind_block(const gbind*g )
@@ -285,7 +285,7 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   determined by ``is_gimple_call_addr``.  ``NARGS`` are the number of
   arguments.  The rest of the arguments follow the argument ``NARGS``,
   and must be trees that are valid as rvalues in gimple (i.e., each
-  operand is validated with ``is_gimple_operand``).
+  operand is validated with ``is_gimple_operand`` ).
 
 .. function:: gcall *gimple_build_call_from_tree(tree call_expr,tree fnptrtype)
 
@@ -327,7 +327,7 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
 .. function:: tree gimple_call_fndecl(gimple g)
 
-  If a given ``GIMPLE_CALL``'s callee is a ``FUNCTION_DECL``, return it.
+  If a given ``GIMPLE_CALL`` 's callee is a ``FUNCTION_DECL``, return it.
   Otherwise return ``NULL``.  This function is analogous to
   ``get_callee_fndecl`` in ``GENERIC``.
 
@@ -519,16 +519,16 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   the same location.
 
   It is expected that ``var`` be most often a tree for automatic user
-  variables (``VAR_DECL`` or ``PARM_DECL``) that satisfy the
+  variables ( ``VAR_DECL`` or ``PARM_DECL`` ) that satisfy the
   requirements for gimple registers, but it may also be a tree for a
-  scalarized component of a user variable (``ARRAY_REF``,
-  ``COMPONENT_REF``), or a debug temporary (``DEBUG_EXPR_DECL``).
+  scalarized component of a user variable ( ``ARRAY_REF``,
+  ``COMPONENT_REF`` ), or a debug temporary ( ``DEBUG_EXPR_DECL`` ).
 
   As for ``value``, it can be an arbitrary tree expression, but it is
   recommended that it be in a suitable form for a gimple assignment
   ``RHS``.  It is not expected that user variables that could appear
   as ``var`` ever appear in ``value``, because in the latter we'd
-  have their ``SSA_NAME``s instead, but even if they were not in SSA
+  have their ``SSA_NAME`` s instead, but even if they were not in SSA
   form, user variables appearing in ``value`` are to be regarded as
   part of the executable code space, whereas those in ``var`` are to
   be regarded as part of the source code space.  There is no way to

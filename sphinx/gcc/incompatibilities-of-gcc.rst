@@ -38,7 +38,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   into the string constant.  Likewise ``fscanf`` and ``scanf``.
 
   The solution to these problems is to change the program to use
-  ``char``-array variables with initialization strings for these
+  ``char`` -array variables with initialization strings for these
   purposes instead of string constants.
 
 * ``-2147483648`` is positive.
@@ -183,7 +183,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   :samp:`long time ();` is erroneous.
 
   The solution is to change your program to use appropriate system headers
-  (``<time.h>`` on systems with ISO C headers) and not to declare
+  ( ``<time.h>`` on systems with ISO C headers) and not to declare
   ``time`` if the system header files declare it, or failing that to
   use ``time_t`` as the return type of ``time``.
 
@@ -192,7 +192,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
 * When compiling functions that return ``float``, PCC converts it to
   a double.  GCC actually returns a ``float``.  If you are concerned
   with PCC compatibility, you should declare your functions to return
-  ``double``; you might as well say what you mean.
+  ``double`` ; you might as well say what you mean.
 
   .. index:: structures
 

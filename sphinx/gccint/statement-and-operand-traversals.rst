@@ -23,7 +23,7 @@ statement: ``walk_gimple_op``.
 
   If ``CALLBACK_STMT`` is ``NULL`` or it returns false, ``CALLBACK_OP`` is
   called on each operand of the statement via ``walk_gimple_op``.  If
-  ``walk_gimple_op`` returns non-``NULL`` for any operand, the remaining
+  ``walk_gimple_op`` returns non- ``NULL`` for any operand, the remaining
   operands are not scanned.
 
   The return value is that returned by the last call to
@@ -43,7 +43,7 @@ statement: ``walk_gimple_op``.
 
     walk_tree (&OP, CALLBACK_OP, WI, PSET)
 
-  If ``CALLBACK_OP`` returns non-``NULL`` for an operand, the remaining
+  If ``CALLBACK_OP`` returns non- ``NULL`` for an operand, the remaining
   operands are not scanned.  The return value is that returned by
   the last call to ``walk_tree``, or ``NULL_TREE`` if no ``CALLBACK_OP`` is
   specified.
@@ -52,7 +52,7 @@ statement: ``walk_gimple_op``.
 
   This function walks all the statements in the sequence ``SEQ``
   calling ``walk_gimple_stmt`` on each one.  ``WI`` is as in
-  ``walk_gimple_stmt``.  If ``walk_gimple_stmt`` returns non-``NULL``, the walk
+  ``walk_gimple_stmt``.  If ``walk_gimple_stmt`` returns non- ``NULL``, the walk
   is stopped and the value returned.  Otherwise, all the statements
   are walked and ``NULL_TREE`` returned.
 

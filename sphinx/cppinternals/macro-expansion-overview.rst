@@ -39,7 +39,7 @@ one token.
 
 The final thing that ``enter_macro_context`` does before returning
 is to mark the macro disabled for expansion (except for special macros
-like ``__TIME__``).  The macro is re-enabled when its context is
+like ``__TIME__`` ).  The macro is re-enabled when its context is
 later popped from the context stack, as described above.  This strict
 ordering ensures that a macro is disabled whilst its expansion is
 being scanned, but that it is *not* disabled whilst any arguments

@@ -41,7 +41,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   property is used.
 
 :samp:`Negative({othername})`
-  The option will turn off another option :samp:`{othername}` , which is
+  The option will turn off another option :samp:`{othername}`, which is
   the option name with the leading '-' removed.  This chain action will
   propagate through the ``Negative`` property of the option to be
   turned off.  The driver will prune options, removing those that are
@@ -52,7 +52,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
   As a consequence, if you have a group of mutually-exclusive
   options, their ``Negative`` properties should form a circular chain.
-  For example, if options :option:`-`:samp:`{a}` , :option:`-`:samp:`{b}` and
+  For example, if options :option:`-`:samp:`{a}`, :option:`-`:samp:`{b}` and
   :option:`-`:samp:`{c}` are mutually exclusive, their respective ``Negative``
   properties should be :samp:`Negative({b})`, :samp:`Negative({c})`
   and :samp:`Negative({a})`.
@@ -62,7 +62,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   that the option and argument can be included in the same ``argv``
   entry (as with ``-mflush-func=name``, for example).
   ``Separate`` indicates that the option and argument can be
-  separate ``argv`` entries (as with ``-o``).  An option is
+  separate ``argv`` entries (as with ``-o`` ).  An option is
   allowed to have both of these properties.
 
 ``JoinedOrMissing``
@@ -90,7 +90,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   The option parser validates and converts the argument before passing
   it to the relevant option handler.  ``UInteger`` should also be used
   with options like ``-falign-loops`` where both ``-falign-loops``
-  and ``-falign-loops``= :samp:`{n}` are supported to make sure the saved
+  and ``-falign-loops`` = :samp:`{n}` are supported to make sure the saved
   options are given a full integer.  Positive values of the argument in
   excess of ``INT_MAX`` wrap around zero.
 
@@ -108,7 +108,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 :samp:`IntegerRange({n}, {m})`
   The options's arguments are integers of type ``int``.  The option's
   parser validates that the value of an option integer argument is within
-  the closed range [ :samp:`{n}` , :samp:`{m}` ].
+  the closed range [ :samp:`{n}`, :samp:`{m}` ].
 
 ``ByteSize``
   A property applicable only to ``UInteger`` or ``Host_Wide_Int``
@@ -134,7 +134,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`Var({var})`
   The state of this option should be stored in variable :samp:`{var}`
-  (actually a macro for ``global_options.x_var``).
+  (actually a macro for ``global_options.x_var`` ).
   The way that the state is stored depends on the type of option:
 
 ``WarnRemoved``
@@ -216,15 +216,15 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`Alias({opt})` :samp:`Alias({opt}, {arg})` :samp:`Alias({opt}, {posarg}, {negarg})`
   The option is an alias for :option:`-`:samp:`{opt}` (or the negative form
-  of that option, depending on ``NegativeAlias``).  In the first form,
+  of that option, depending on ``NegativeAlias`` ).  In the first form,
   any argument passed to the alias is considered to be passed to
-  :option:`-`:samp:`{opt}` , and :option:`-`:samp:`{opt}` is considered to be
+  :option:`-`:samp:`{opt}`, and :option:`-`:samp:`{opt}` is considered to be
   negated if the alias is used in negated form.  In the second form, the
   alias may not be negated or have an argument, and :samp:`{posarg}` is
   considered to be passed as an argument to :option:`-`:samp:`{opt}`.  In the
   third form, the alias may not have an argument, if the alias is used
   in the positive form then :samp:`{posarg}` is considered to be passed to
-  :option:`-`:samp:`{opt}` , and if the alias is used in the negative form
+  :option:`-`:samp:`{opt}`, and if the alias is used in the negative form
   then :samp:`{negarg}` is considered to be passed to :option:`-`:samp:`{opt}`.
 
   Aliases should not specify ``Var`` or ``Mask`` or
@@ -308,7 +308,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   :option:`-ffast-math`.  This causes the ``gcc_options`` struct to
   have a field ``frontend_set_name``, where ``name``
   is the name of the field holding the value of this option (without the
-  leading ``x_``).  This gives the front end a way to indicate that
+  leading ``x_`` ).  This gives the front end a way to indicate that
   the value has been set explicitly and should not be changed by the
   combined option.  For example, some front ends use this to prevent
   :option:`-ffast-math` and :option:`-fno-fast-math` from changing the
@@ -325,7 +325,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`LangEnabledBy({language}, {opt})` :samp:`LangEnabledBy({language}, {opt}, {posarg}, {negarg})`
   When compiling for the given language, the option is set to the value
-  of :option:`-`:samp:`{opt}` , if not explicitly set. :samp:`{opt}` can be also a list
+  of :option:`-`:samp:`{opt}`, if not explicitly set. :samp:`{opt}` can be also a list
   of ``||`` separated options. In the second form, if
   :samp:`{opt}` is used in the positive form then :samp:`{posarg}` is considered
   to be passed to the option, and if :samp:`{opt}` is used in the negative

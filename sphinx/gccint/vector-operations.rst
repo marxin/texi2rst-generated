@@ -15,8 +15,8 @@ operations.
 :samp:`(vec_merge:{m}{vec1}{vec2}{items})`
   This describes a merge operation between two vectors.  The result is a vector
   of mode :samp:`{m}` ; its elements are selected from either :samp:`{vec1}` or
-  :samp:`{vec2}`.  Which elements are selected is described by :samp:`{items}` , which
-  is a bit mask represented by a ``const_int``; a zero bit indicates the
+  :samp:`{vec2}`.  Which elements are selected is described by :samp:`{items}`, which
+  is a bit mask represented by a ``const_int`` ; a zero bit indicates the
   corresponding element in the result vector is taken from :samp:`{vec2}` while
   a set bit indicates it is taken from :samp:`{vec1}`.
 

@@ -15,7 +15,7 @@
   returns the position of the leftmost character of :samp:`{STRING}` that is
   not in :samp:`{SET}`. If :samp:`{BACK}` equals ``TRUE``, the rightmost
   position is returned. If all characters of :samp:`{STRING}` are found in
-  :samp:`{SET}` , the result is zero.
+  :samp:`{SET}`, the result is zero.
 
 :samp:`{Standard}:`
   Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later

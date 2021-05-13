@@ -9,7 +9,7 @@ Here are the possible CPU types:
 
 .. gmicro, fx80, spur and tahoe omitted since they don't work.
 
-1750a, a29k, alpha, arm, avr, c :samp:`{n}` , clipper, dsp16xx, elxsi, fr30, h8300,
+1750a, a29k, alpha, arm, avr, c :samp:`{n}`, clipper, dsp16xx, elxsi, fr30, h8300,
 hppa1.0, hppa1.1, i370, i386, i486, i586, i686, i786, i860, i960, ip2k, m32r,
 m68000, m68k, m88k, mcore, mips, mipsel, mips64, mips64el,
 mn10200, mn10300, ns32k, pdp11, powerpc, powerpcle, romp, rs6000, sh, sparc,
@@ -68,13 +68,13 @@ Sometimes we accept a company name as a machine name, when the name is
 popularly used for a particular machine.  Here is a table of the known
 machine names:
 
-3300, 3b1, 3b :samp:`{n}` , 7300, altos3068, altos,
+3300, 3b1, 3b :samp:`{n}`, 7300, altos3068, altos,
 apollo68, att-7300, balance,
-convex-c :samp:`{n}` , crds, decstation-3100,
+convex-c :samp:`{n}`, crds, decstation-3100,
 decstation, delta, encore,
-fx2800, gmicro, hp7 :samp:`{nn}` , hp8 :samp:`{nn}` ,
-hp9k2 :samp:`{nn}` , hp9k3 :samp:`{nn}` , hp9k7 :samp:`{nn}` ,
-hp9k8 :samp:`{nn}` , iris4d, iris, isi68,
+fx2800, gmicro, hp7 :samp:`{nn}`, hp8 :samp:`{nn}`,
+hp9k2 :samp:`{nn}`, hp9k3 :samp:`{nn}`, hp9k7 :samp:`{nn}`,
+hp9k8 :samp:`{nn}`, iris4d, iris, isi68,
 m3230, magnum, merlin, miniframe,
 mmax, news-3600, news800, news, next,
 pbd, pc532, pmax, powerpc, powerpcle, ps2, risc-news,

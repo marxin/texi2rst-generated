@@ -24,14 +24,14 @@
   ``CALL EVENT_QUERY (EVENT, COUNT [, STAT])``
 
 :samp:`{Arguments}:`
-  ===============  =======================================================
+  ===============  ========================================================
   :samp:`{EVENT}`  (intent(IN)) Scalar of type ``EVENT_TYPE``,
-                   defined in ``ISO_FORTRAN_ENV``; shall not be coindexed.
-  ===============  =======================================================
+                   defined in ``ISO_FORTRAN_ENV`` ; shall not be coindexed.
+  ===============  ========================================================
   :samp:`{COUNT}`  (intent(out))Scalar integer with at least the
                    precision of default integer.
   :samp:`{STAT}`   (optional) Scalar default-kind integer variable.
-  ===============  =======================================================
+  ===============  ========================================================
 
 :samp:`{Example}:`
 

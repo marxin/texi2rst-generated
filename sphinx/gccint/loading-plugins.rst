@@ -20,8 +20,8 @@ plugins as key-value pairs. Multiple plugins can be invoked by
 specifying multiple :option:`-fplugin` arguments.
 
 A plugin can be simply given by its short name (no dots or
-slashes). When simply passing :option:`-fplugin`:samp:`={name}` , the plugin is
+slashes). When simply passing :option:`-fplugin`:samp:`={name}`, the plugin is
 loaded from the plugin directory, so :option:`-fplugin`:samp:`={name}` is
-the same as :option:`-fplugin=`gcc -print-file-name=plugin`/`:samp:`{name}`.:samp:`{ext}` ,
+the same as :option:`-fplugin=`gcc -print-file-name=plugin`/`:samp:`{name}`.:samp:`{ext}`,
 using backquote shell syntax to query the plugin directory.
 

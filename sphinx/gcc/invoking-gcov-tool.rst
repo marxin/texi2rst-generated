@@ -58,7 +58,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1), gcov(1) and the Info entry for
     Set the verbose mode.
 
   :samp:`-w {w1},{w2}` :samp:`--weight {w1},{w2}`
-    Set the merge weights of the :samp:`{directory1}` and :samp:`{directory2}` ,
+    Set the merge weights of the :samp:`{directory1}` and :samp:`{directory2}`,
     respectively. The default weights are 1 for both.
 
 ``rewrite``

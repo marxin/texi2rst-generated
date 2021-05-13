@@ -22,9 +22,9 @@ movm
   1 to operand 0.  For example, :samp:`movsi` moves full-word data.
 
   If operand 0 is a ``subreg`` with mode :samp:`{m}` of a register whose
-  own mode is wider than :samp:`{m}` , the effect of this instruction is
+  own mode is wider than :samp:`{m}`, the effect of this instruction is
   to store the specified value in the part of the register that corresponds
-  to mode :samp:`{m}`.  Bits outside of :samp:`{m}` , but which are within the
+  to mode :samp:`{m}`.  Bits outside of :samp:`{m}`, but which are within the
   same target word as the ``subreg`` are undefined.  Bits which are
   outside the target word are left unchanged.
 
@@ -61,7 +61,7 @@ movm
   address except to use it as it stands.  If it is copied, it will not be
   replaced with a valid address.  No attempt should be made to make such
   an address into a valid address and no routine (such as
-  ``change_address``) that will do so may be called.  Note that
+  ``change_address`` ) that will do so may be called.  Note that
   ``general_operand`` will fail when applied to such an address.
 
   .. index:: reload_in_progress
@@ -96,7 +96,7 @@ movm
   It is obligatory to support floating point :samp:`mov{m}`
   instructions into and out of any registers that can hold fixed point
   values, because unions and structures (which have modes ``SImode`` or
-  ``DImode``) can be in those registers and they may have floating
+  ``DImode`` ) can be in those registers and they may have floating
   point members.
 
   There may also be a need to support fixed point :samp:`mov{m}`
@@ -120,7 +120,7 @@ reload_inm reload_outm
   register.  See the discussion of the ``SECONDARY_RELOAD_CLASS``
   macro in see :ref:`register-classes`.
 
-  There are special restrictions on the form of the ``match_operand``s
+  There are special restrictions on the form of the ``match_operand`` s
   used in these patterns.  First, only the predicate for the reload
   operand is examined, i.e., ``reload_in`` examines operand 1, but not
   the predicates for operand 0 or 2.  Second, there may be only one
@@ -188,7 +188,7 @@ store_multiple
 vec_load_lanesmn
   Perform an interleaved load of several vectors from memory operand 1
   into register operand 0.  Both operands have mode :samp:`{m}`.  The register
-  operand is viewed as holding consecutive vectors of mode :samp:`{n}` ,
+  operand is viewed as holding consecutive vectors of mode :samp:`{n}`,
   while the memory operand is a flat array that contains the same number
   of elements.  The operation is equivalent to:
 
@@ -210,7 +210,7 @@ vec_load_lanesmn
     TARGET_ARRAY_MODE_SUPPORTED_P (n, c)
 
   is true.  GCC assumes that, if a target supports this kind of
-  instruction for some mode :samp:`{n}` , it also supports unaligned
+  instruction for some mode :samp:`{n}`, it also supports unaligned
   loads for vectors of mode :samp:`{n}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -339,7 +339,7 @@ vec_extractmn
   Extract given field from the vector value.  Operand 1 is the vector, operand 2
   specify field index and operand 0 place to store value into.  The
   :samp:`{n}` mode is the mode of the field or vector of fields that should be
-  extracted, should be either element mode of the vector mode :samp:`{m}` , or
+  extracted, should be either element mode of the vector mode :samp:`{m}`, or
   a vector mode with the same element mode and smaller number of elements.
   If :samp:`{n}` is a vector mode, the index is counted in units of that mode.
 
@@ -349,7 +349,7 @@ vec_initmn
   Initialize the vector to given values.  Operand 0 is the vector to initialize
   and operand 1 is parallel containing values for individual fields.  The
   :samp:`{n}` mode is the mode of the elements, should be either element mode of
-  the vector mode :samp:`{m}` , or a vector mode with the same element mode and
+  the vector mode :samp:`{m}`, or a vector mode with the same element mode and
   smaller number of elements.
 
   .. index:: vec_duplicatem instruction pattern
@@ -395,14 +395,14 @@ while_ultmn
   .. index:: check_raw_ptrsm instruction pattern
 
 check_raw_ptrsm
-  Check whether, given two pointers :samp:`{a}` and :samp:`{b}` and a length :samp:`{len}` ,
+  Check whether, given two pointers :samp:`{a}` and :samp:`{b}` and a length :samp:`{len}`,
   a write of :samp:`{len}` bytes at :samp:`{a}` followed by a read of :samp:`{len}` bytes
   at :samp:`{b}` can be split into interleaved byte accesses
   :samp:`{a}[0], {b}[0], {a}[1], {b}[1], ...`
   without affecting the dependencies between the bytes.  Set operand 0
   to true if the split is possible and false otherwise.
 
-  Operands 1, 2 and 3 provide the values of :samp:`{a}` , :samp:`{b}` and :samp:`{len}`
+  Operands 1, 2 and 3 provide the values of :samp:`{a}`, :samp:`{b}` and :samp:`{len}`
   respectively.  Operand 4 is a constant integer that provides the known
   common alignment of :samp:`{a}` and :samp:`{b}`.  All inputs have mode :samp:`{m}`.
 
@@ -452,7 +452,7 @@ vec_cmpeqmn
 
 vcondmn
   Output a conditional vector move.  Operand 0 is the destination to
-  receive a combination of operand 1 and operand 2, which are of mode :samp:`{m}` ,
+  receive a combination of operand 1 and operand 2, which are of mode :samp:`{m}`,
   dependent on the outcome of the predicate in operand 3 which is a signed
   vector comparison with operands of mode :samp:`{n}` in operands 4 and 5.  The
   modes :samp:`{m}` and :samp:`{n}` should have the same size.  Operand 0
@@ -504,10 +504,10 @@ maskstoremn
 len_load_m
   Load the number of vector elements specified by operand 2 from memory
   operand 1 into vector register operand 0, setting the other elements of
-  operand 0 to undefined values.  Operands 0 and 1 have mode :samp:`{m}` ,
+  operand 0 to undefined values.  Operands 0 and 1 have mode :samp:`{m}`,
   which must be a vector mode.  Operand 2 has whichever integer mode the
   target prefers.  If operand 2 exceeds the number of elements in mode
-  :samp:`{m}` , the behavior is undefined.  If the target prefers the length
+  :samp:`{m}`, the behavior is undefined.  If the target prefers the length
   to be measured in bytes rather than elements, it should only implement
   this pattern for vectors of ``QI`` elements.
 
@@ -518,9 +518,9 @@ len_load_m
 len_store_m
   Store the number of vector elements specified by operand 2 from vector
   register operand 1 into memory operand 0, leaving the other elements of
-  operand 0 unchanged.  Operands 0 and 1 have mode :samp:`{m}` , which must be
+  operand 0 unchanged.  Operands 0 and 1 have mode :samp:`{m}`, which must be
   a vector mode.  Operand 2 has whichever integer mode the target prefers.
-  If operand 2 exceeds the number of elements in mode :samp:`{m}` , the behavior
+  If operand 2 exceeds the number of elements in mode :samp:`{m}`, the behavior
   is undefined.  If the target prefers the length to be measured in bytes
   rather than elements, it should only implement this pattern for vectors
   of ``QI`` elements.
@@ -542,8 +542,8 @@ vec_permm
   with just operand 1 and selector elements modulo :samp:`{N}`.
 
   In order to make things easy for a number of targets, if there is no
-  :samp:`vec_perm` pattern for mode :samp:`{m}` , but there is for mode :samp:`{q}`
-  where :samp:`{q}` is a vector of ``QImode`` of the same width as :samp:`{m}` ,
+  :samp:`vec_perm` pattern for mode :samp:`{m}`, but there is for mode :samp:`{q}`
+  where :samp:`{q}` is a vector of ``QImode`` of the same width as :samp:`{m}`,
   the middle-end will lower the mode :samp:`{m}` ``VEC_PERM_EXPR`` to
   mode :samp:`{q}`.
 
@@ -710,7 +710,7 @@ fnmsm4
   signaling ``NaN`` (-fsignaling-nans) an invalid floating point exception is
   raised and a quiet ``NaN`` is returned.
 
-  All operands have mode :samp:`{m}` , which is a scalar or vector
+  All operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.  These patterns are not allowed to ``FAIL``.
 
   .. index:: reduc_smin_scal_m instruction pattern
@@ -747,7 +747,7 @@ reduc_and_scal_m
 .. index:: reduc_xor_scal_m instruction pattern
 
  reduc_xor_scal_m
-  Compute the bitwise ``AND``/``IOR``/``XOR`` reduction of the elements
+  Compute the bitwise ``AND`` / ``IOR`` / ``XOR`` reduction of the elements
   of a vector of mode :samp:`{m}`.  Operand 1 is the vector input and operand 0
   is the scalar result.  The mode of the scalar result is the same as one
   element of :samp:`{m}`.
@@ -1115,7 +1115,7 @@ mulhisi3
 
 smulm3_highpart
   Perform a signed multiplication of operands 1 and 2, which have mode
-  :samp:`{m}` , and store the most significant half of the product in operand 0.
+  :samp:`{m}`, and store the most significant half of the product in operand 0.
   The least significant half of the product is discarded.
 
   .. index:: umulm3_highpart instruction pattern
@@ -1126,7 +1126,7 @@ umulm3_highpart
   .. index:: maddmn4 instruction pattern
 
 maddmn4
-  Multiply operands 1 and 2, sign-extend them to mode :samp:`{n}` , add
+  Multiply operands 1 and 2, sign-extend them to mode :samp:`{n}`, add
   operand 3, and store the result in operand 0.  Operands 1 and 2
   have mode :samp:`{m}` and operands 0 and 3 have mode :samp:`{n}`.
   Both modes must be integer or fixed-point modes and :samp:`{n}` must be twice
@@ -1158,7 +1158,7 @@ usmaddmn4
   .. index:: msubmn4 instruction pattern
 
 msubmn4
-  Multiply operands 1 and 2, sign-extend them to mode :samp:`{n}` , subtract the
+  Multiply operands 1 and 2, sign-extend them to mode :samp:`{n}`, subtract the
   result from operand 3, and store the result in operand 0.  Operands 1 and 2
   have mode :samp:`{m}` and operands 0 and 3 have mode :samp:`{n}`.
   Both modes must be integer or fixed-point modes and :samp:`{n}` must be twice
@@ -1319,7 +1319,7 @@ absm2
 
 sqrtm2
   Store the square root of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1327,7 +1327,7 @@ sqrtm2
 
 rsqrtm2
   Store the reciprocal of the square root of operand 1 into operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   On most architectures this pattern is only approximate, so either
@@ -1344,7 +1344,7 @@ rsqrtm2
 fmodm3
   Store the remainder of dividing operand 1 by operand 2 into
   operand 0, rounded towards zero to an integer.  All operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1353,7 +1353,7 @@ fmodm3
 remainderm3
   Store the remainder of dividing operand 1 by operand 2 into
   operand 0, rounded to the nearest integer.  All operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1362,7 +1362,7 @@ remainderm3
 scalbm3
   Raise ``FLT_RADIX`` to the power of operand 2, multiply it by
   operand 1, and store the result in operand 0.  All operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1370,7 +1370,7 @@ scalbm3
 
 ldexpm3
   Raise 2 to the power of operand 2, multiply it by operand 1, and store
-  the result in operand 0.  Operands 0 and 1 have mode :samp:`{m}` , which is
+  the result in operand 0.  Operands 0 and 1 have mode :samp:`{m}`, which is
   a scalar or vector floating-point mode.  Operand 2's mode has
   the same number of elements as :samp:`{m}` and each element is wide
   enough to store an ``int``.  The integers are signed.
@@ -1381,7 +1381,7 @@ ldexpm3
 
 cosm2
   Store the cosine of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1389,7 +1389,7 @@ cosm2
 
 sinm2
   Store the sine of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1397,7 +1397,7 @@ sinm2
 
 sincosm3
   Store the cosine of operand 2 into operand 0 and the sine of
-  operand 2 into operand 1.  All operands have mode :samp:`{m}` ,
+  operand 2 into operand 1.  All operands have mode :samp:`{m}`,
   which is a scalar or vector floating-point mode.
 
   Targets that can calculate the sine and cosine simultaneously can
@@ -1411,7 +1411,7 @@ sincosm3
 
 tanm2
   Store the tangent of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1419,7 +1419,7 @@ tanm2
 
 asinm2
   Store the arc sine of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1427,7 +1427,7 @@ asinm2
 
 acosm2
   Store the arc cosine of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1435,7 +1435,7 @@ acosm2
 
 atanm2
   Store the arc tangent of operand 1 into operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1443,7 +1443,7 @@ atanm2
 
 expm2
   Raise e (the base of natural logarithms) to the power of operand 1
-  and store the result in operand 0.  Both operands have mode :samp:`{m}` ,
+  and store the result in operand 0.  Both operands have mode :samp:`{m}`,
   which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1453,7 +1453,7 @@ expm2
 expm1m2
   Raise e (the base of natural logarithms) to the power of operand 1,
   subtract 1, and store the result in operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   For inputs close to zero, the pattern is expected to be more
   accurate than a separate ``expm2`` and ``subm3``
@@ -1465,7 +1465,7 @@ expm1m2
 
 exp10m2
   Raise 10 to the power of operand 1 and store the result in operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1474,7 +1474,7 @@ exp10m2
 
 exp2m2
   Raise 2 to the power of operand 1 and store the result in operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1483,7 +1483,7 @@ exp2m2
 
 logm2
   Store the natural logarithm of operand 1 into operand 0.  Both operands
-  have mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  have mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1491,7 +1491,7 @@ logm2
 
 log1pm2
   Add 1 to operand 1, compute the natural logarithm, and store
-  the result in operand 0.  Both operands have mode :samp:`{m}` , which is
+  the result in operand 0.  Both operands have mode :samp:`{m}`, which is
   a scalar or vector floating-point mode.
 
   For inputs close to zero, the pattern is expected to be more
@@ -1504,7 +1504,7 @@ log1pm2
 
 log10m2
   Store the base-10 logarithm of operand 1 into operand 0.  Both operands
-  have mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  have mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1512,15 +1512,15 @@ log10m2
 
 log2m2
   Store the base-2 logarithm of operand 1 into operand 0.  Both operands
-  have mode :samp:`{m}` , which is a scalar or vector floating-point mode.
+  have mode :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
   .. index:: logbm2 instruction pattern
 
 logbm2
-  Store the base-``FLT_RADIX`` logarithm of operand 1 into operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Store the base- ``FLT_RADIX`` logarithm of operand 1 into operand 0.
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1529,7 +1529,7 @@ logbm2
 
 significandm2
   Store the significand of floating-point operand 1 in operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1538,7 +1538,7 @@ significandm2
 
 powm3
   Store the value of operand 1 raised to the exponent operand 2
-  into operand 0.  All operands have mode :samp:`{m}` , which is a scalar
+  into operand 0.  All operands have mode :samp:`{m}`, which is a scalar
   or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1549,7 +1549,7 @@ atan2m3
   Store the arc tangent (inverse tangent) of operand 1 divided by
   operand 2 into operand 0, using the signs of both arguments to
   determine the quadrant of the result.  All operands have mode
-  :samp:`{m}` , which is a scalar or vector floating-point mode.
+  :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1557,7 +1557,7 @@ atan2m3
 
 floorm2
   Store the largest integral value not greater than operand 1 in operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.  If :option:`-ffp-int-builtin-inexact` is in
   effect, the 'inexact' exception may be raised for noninteger
   operands; otherwise, it may not.
@@ -1568,7 +1568,7 @@ floorm2
 
 btruncm2
   Round operand 1 to an integer, towards zero, and store the result in
-  operand 0.  Both operands have mode :samp:`{m}` , which is a scalar or
+  operand 0.  Both operands have mode :samp:`{m}`, which is a scalar or
   vector floating-point mode.  If :option:`-ffp-int-builtin-inexact` is
   in effect, the 'inexact' exception may be raised for noninteger
   operands; otherwise, it may not.
@@ -1580,7 +1580,7 @@ btruncm2
 roundm2
   Round operand 1 to the nearest integer, rounding away from zero in the
   event of a tie, and store the result in operand 0.  Both operands have
-  mode :samp:`{m}` , which is a scalar or vector floating-point mode.  If
+  mode :samp:`{m}`, which is a scalar or vector floating-point mode.  If
   :option:`-ffp-int-builtin-inexact` is in effect, the 'inexact'
   exception may be raised for noninteger operands; otherwise, it may
   not.
@@ -1591,7 +1591,7 @@ roundm2
 
 ceilm2
   Store the smallest integral value not less than operand 1 in operand 0.
-  Both operands have mode :samp:`{m}` , which is a scalar or vector
+  Both operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.  If :option:`-ffp-int-builtin-inexact` is in
   effect, the 'inexact' exception may be raised for noninteger
   operands; otherwise, it may not.
@@ -1604,7 +1604,7 @@ nearbyintm2
   Round operand 1 to an integer, using the current rounding mode, and
   store the result in operand 0.  Do not raise an inexact condition when
   the result is different from the argument.  Both operands have mode
-  :samp:`{m}` , which is a scalar or vector floating-point mode.
+  :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1614,7 +1614,7 @@ rintm2
   Round operand 1 to an integer, using the current rounding mode, and
   store the result in operand 0.  Raise an inexact condition when
   the result is different from the argument.  Both operands have mode
-  :samp:`{m}` , which is a scalar or vector floating-point mode.
+  :samp:`{m}`, which is a scalar or vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
 
@@ -1650,7 +1650,7 @@ lceilmn2
 
 copysignm3
   Store a value with the magnitude of operand 1 and the sign of operand
-  2 into operand 0.  All operands have mode :samp:`{m}` , which is a scalar or
+  2 into operand 0.  All operands have mode :samp:`{m}`, which is a scalar or
   vector floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1660,7 +1660,7 @@ copysignm3
 xorsignm3
   Equivalent to :samp:`op0 = op1 * copysign (1.0, op2)`: store a value with
   the magnitude of operand 1 and the sign of operand 2 into operand 0.
-  All operands have mode :samp:`{m}` , which is a scalar or vector
+  All operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.
 
   This pattern is not allowed to ``FAIL``.
@@ -1865,7 +1865,7 @@ ffsm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1883,7 +1883,7 @@ clrsbm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1900,7 +1900,7 @@ clzm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1917,7 +1917,7 @@ ctzm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1931,7 +1931,7 @@ popcountm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1946,7 +1946,7 @@ paritym2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int``).  When :samp:`{m}` is a vector, both
+  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1960,7 +1960,7 @@ one_cmplm2
 
 cpymemm
   Block copy instruction.  The destination and source blocks of memory
-  are the first two operands, and both are ``mem:BLK``s with an
+  are the first two operands, and both are ``mem:BLK`` s with an
   address in mode ``Pmode``.
 
   The number of bytes to copy is the third operand, in mode :samp:`{m}`.
@@ -1998,7 +1998,7 @@ cpymemm
 
 movmemm
   Block move instruction.  The destination and source blocks of memory
-  are the first two operands, and both are ``mem:BLK``s with an
+  are the first two operands, and both are ``mem:BLK`` s with an
   address in mode ``Pmode``.
 
   The number of bytes to copy is the third operand, in mode :samp:`{m}`.
@@ -2037,7 +2037,7 @@ movstr
   String copy instruction, with ``stpcpy`` semantics.  Operand 0 is
   an output operand in mode ``Pmode``.  The addresses of the
   destination and source strings are operands 1 and 2, and both are
-  ``mem:BLK``s with addresses in mode ``Pmode``.  The execution of
+  ``mem:BLK`` s with addresses in mode ``Pmode``.  The execution of
   the expansion of this pattern should store in operand 0 the address in
   which the ``NUL`` terminator was stored in the destination string.
 
@@ -2167,7 +2167,7 @@ fixunsmn2
 
 ftruncm2
   Convert operand 1 (valid for floating point mode :samp:`{m}` ) to an
-  integer value, still represented in floating point mode :samp:`{m}` , and
+  integer value, still represented in floating point mode :samp:`{m}`, and
   store it in operand 0 (valid for floating point mode :samp:`{m}` ).
 
   .. index:: fix_truncmn2 instruction pattern
@@ -2308,7 +2308,7 @@ extv
   Extract a bit-field from operand 1 (a register or memory operand), where
   operand 2 specifies the width in bits and operand 3 the starting bit,
   and store it in operand 0.  Operand 0 must have mode ``word_mode``.
-  Operand 1 may have mode ``byte_mode`` or ``word_mode``; often
+  Operand 1 may have mode ``byte_mode`` or ``word_mode`` ; often
   ``word_mode`` is allowed only for registers.  Operands 2 and 3 must
   be valid for ``word_mode``.
 
@@ -2332,10 +2332,10 @@ extzv
   .. index:: insv instruction pattern
 
 insv
-  Store operand 3 (which must be valid for ``word_mode``) into a
+  Store operand 3 (which must be valid for ``word_mode`` ) into a
   bit-field in operand 0, where operand 1 specifies the width in bits and
   operand 2 the starting bit.  Operand 0 may have mode ``byte_mode`` or
-  ``word_mode``; often ``word_mode`` is allowed only for registers.
+  ``word_mode`` ; often ``word_mode`` is allowed only for registers.
   Operands 1 and 2 must be valid for ``word_mode``.
 
   The RTL generation pass generates this instruction only with constants
@@ -2516,7 +2516,7 @@ jump
 call
   Subroutine call instruction returning no value.  Operand 0 is the
   function to call; operand 1 is the number of bytes of arguments pushed
-  as a ``const_int``; operand 2 is the number of registers used as
+  as a ``const_int`` ; operand 2 is the number of registers used as
   operands.
 
   On most machines, operand 2 is not actually stored into the RTL
@@ -2727,7 +2727,7 @@ canonicalize_funcptr_for_compare
   Canonicalize the function pointer in operand 1 and store the result
   into operand 0.
 
-  Operand 0 is always a ``reg`` and has mode ``Pmode``; operand 1
+  Operand 0 is always a ``reg`` and has mode ``Pmode`` ; operand 1
   may be a ``reg``, ``mem``, ``symbol_ref``, ``const_int``, etc
   and also has mode ``Pmode``.
 
@@ -3091,12 +3091,12 @@ sync_compare_and_swapmode
   avoid a separate compare operation and issue the subsequent
   branch or store-flag operation immediately after the compare-and-swap.
   To this end, GCC will look for a ``MODE_CC`` set in the
-  output of ``sync_compare_and_swapmode``; if the machine
+  output of ``sync_compare_and_swapmode`` ; if the machine
   description includes such a set, the target should also define special
   ``cbranchcc4`` and/or ``cstorecc4`` instructions.  GCC will then
   be able to take the destination of the ``MODE_CC`` set and pass it
   to the ``cbranchcc4`` or ``cstorecc4`` pattern as the first
-  operand of the comparison (the second will be ``(const_int 0)``).
+  operand of the comparison (the second will be ``(const_int 0)`` ).
 
   For targets where the operating system may provide support for this
   operation via library calls, the ``sync_compare_and_swap_optab``

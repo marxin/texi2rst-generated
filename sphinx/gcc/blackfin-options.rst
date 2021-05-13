@@ -43,7 +43,7 @@ Blackfin Options
   the simulator BSP provided by libgloss to be linked in.  This option
   has effect only for :samp:`bfin-elf` toolchain.
   Certain other options, such as :option:`-mid-shared-library` and
-  :option:`-mfdpic` , imply :option:`-msim`.
+  :option:`-mfdpic`, imply :option:`-msim`.
 
 .. option:: -momit-leaf-frame-pointer
 
@@ -160,9 +160,9 @@ Blackfin Options
   multicore to be used, and defines the macro ``__BFIN_MULTICORE``. 
   It can only be used with :option:`-mcpu=bf561` [- :samp:`{sirevision}` ]. 
 
-  This option can be used with :option:`-mcorea` or :option:`-mcoreb` , which
+  This option can be used with :option:`-mcorea` or :option:`-mcoreb`, which
   selects the one-application-per-core programming model.  Without
-  :option:`-mcorea` or :option:`-mcoreb` , the single-application/dual-core
+  :option:`-mcorea` or :option:`-mcoreb`, the single-application/dual-core
   programming model is used. In this model, the main function of Core B
   should be named as ``coreb_main``.
 

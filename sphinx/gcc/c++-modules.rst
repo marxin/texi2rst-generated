@@ -40,8 +40,8 @@ known missing pieces are:
   template definition may reference).  These are not fully implemented.
 
 *Language-linkage module attachment*
-  Declarations with explicit language linkage (``extern "C"`` or
-  ``extern "C++"``) are attached to the global module, even when in
+  Declarations with explicit language linkage ( ``extern "C"`` or
+  ``extern "C++"`` ) are attached to the global module, even when in
   the purview of a named module.  This is not implemented.  Such
   declarations will be attached to the module, if any, in which they are
   declared.
@@ -83,9 +83,9 @@ pathname, the CMI location is still relative to a CMI root directory.
 
 As header files often have no suffix, you commonly have to specify a
 :option:`-x` option to tell the compiler the source is a header file.
-You may use :option:`-x c++-header` , :option:`-x c++-user-header` or
+You may use :option:`-x c++-header`, :option:`-x c++-user-header` or
 :option:`-x c++-system-header`.  When used in conjunction with
-:option:`-fmodules-ts` , these all imply an appropriate
+:option:`-fmodules-ts`, these all imply an appropriate
 :option:`-fmodule-header` option.  The latter two variants use the
 user or system include path to search for the file specified.  This
 allows you to, for instance, compile standard library header files as
@@ -173,7 +173,7 @@ have one of the following forms:
   :samp:`<>{[}?{ident}{]}`:samp:`<>{inout}{[}?{ident}{]}`
 :samp:`<{in}>{out}{[}?{ident}{]}`
   Named pipes or file descriptors to communicate over.  The first form,
-  <> , communicates over stdin and stdout.  The other forms
+  <>, communicates over stdin and stdout.  The other forms
   allow you to specify a file descriptor or name a pipe.  A numeric value
   is interpreted as a file descriptor, otherwise named pipe is opened.
   The second form specifies a bidirectional pipe and the last form
@@ -264,7 +264,7 @@ functionality of :option:`-MD` and :option:`-MMD` options.  Detection of
 import declarations also requires phase 4 preprocessing, and thus
 requires full preprocessing (or compilation).
 
-The :option:`-M` , :option:`-MM` and :option:`-E -fdirectives-only` options halt
+The :option:`-M`, :option:`-MM` and :option:`-E -fdirectives-only` options halt
 preprocessing before phase 4.
 
 The :option:`-save-temps` option uses :option:`-fdirectives-only` for

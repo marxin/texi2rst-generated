@@ -41,7 +41,7 @@ as an extension to VFP and NEON (Advanced SIMD), and from ARMv8-A provides
 hardware support for conversions between ``__fp16`` and ``double``
 values.  GCC generates code using these hardware instructions if you
 compile with options to select an FPU that provides them;
-for example, :option:`-mfpu=neon-fp16 -mfloat-abi=softfp` ,
+for example, :option:`-mfpu=neon-fp16 -mfloat-abi=softfp`,
 in addition to the :option:`-mfp16-format` option to select
 a half-precision format.
 

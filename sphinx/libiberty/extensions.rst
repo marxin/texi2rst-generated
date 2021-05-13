@@ -243,7 +243,7 @@ it needs to allocate a new chunk of memory; it calls
 ``obstack_chunk_alloc`` failed.
 
 For example, here is a function that allocates a copy of a string :samp:`{str}`
-in a specific obstack, which is in the variable ``string_obstack``:
+in a specific obstack, which is in the variable ``string_obstack`` :
 
 .. code-block:: c++
 
@@ -421,7 +421,7 @@ bytes of data to the growing object, copying the contents from
 .. index:: obstack_grow0
 
 Functionvoidobstack_grow0(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{data}`,size_t:samp:`{size}`)This is the growing-object analogue of ``obstack_copy0``.  It adds
-:samp:`{size}` bytes copied from :samp:`{data}` , followed by an additional null
+:samp:`{size}` bytes copied from :samp:`{data}`, followed by an additional null
 character.
 
 ..  comment obstack.h
@@ -762,7 +762,7 @@ Summary of Obstack Macros
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here is a summary of all the macros associated with obstacks.  Each
-takes the address of an obstack (``struct obstack *``) as its first
+takes the address of an obstack ( ``struct obstack *`` ) as its first
 argument.
 
 :samp:`int obstack_init (struct obstack *{obstack-ptr})`
@@ -790,7 +790,7 @@ argument.
 
 :samp:`void *obstack_copy0 (struct obstack *{obstack-ptr}, void *{address}, size_t {size})`
   Allocate an object of :samp:`{size}` +1 bytes, with :samp:`{size}` of them copied
-  from :samp:`{address}` , followed by a null character at the end.
+  from :samp:`{address}`, followed by a null character at the end.
   See :ref:`allocation-in-an-obstack`.
 
 :samp:`void obstack_free (struct obstack *{obstack-ptr}, void *{object})`
@@ -802,11 +802,11 @@ argument.
   See :ref:`growing-objects`.
 
 :samp:`void obstack_grow (struct obstack *{obstack-ptr}, void *{address}, size_t {size})`
-  Add :samp:`{size}` bytes, copied from :samp:`{address}` , to a growing object.
+  Add :samp:`{size}` bytes, copied from :samp:`{address}`, to a growing object.
   See :ref:`growing-objects`.
 
 :samp:`void obstack_grow0 (struct obstack *{obstack-ptr}, void *{address}, size_t {size})`
-  Add :samp:`{size}` bytes, copied from :samp:`{address}` , to a growing object,
+  Add :samp:`{size}` bytes, copied from :samp:`{address}`, to a growing object,
   and then add another byte containing a null character.  See :ref:`growing-objects`.
 
 :samp:`void obstack_1grow (struct obstack *{obstack-ptr}, char {data-char})`

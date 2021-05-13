@@ -12,7 +12,7 @@
 :samp:`{Description}:`
   ``DSHIFTL(I, J, SHIFT)`` combines bits of :samp:`{I}` and :samp:`{J}`. The
   rightmost :samp:`{SHIFT}` bits of the result are the leftmost :samp:`{SHIFT}`
-  bits of :samp:`{J}` , and the remaining bits are the rightmost bits of
+  bits of :samp:`{J}`, and the remaining bits are the rightmost bits of
   :samp:`{I}`.
 
 :samp:`{Standard}:`
@@ -34,7 +34,7 @@
                    BOZ constants.
   :samp:`{SHIFT}`  Shall be of type ``INTEGER``. It shall
                    be nonnegative.  If :samp:`{I}` is not a BOZ constant, then :samp:`{SHIFT}`
-                   shall be less than or equal to ``BIT_SIZE(I)``; otherwise,
+                   shall be less than or equal to ``BIT_SIZE(I)`` ; otherwise,
                    :samp:`{SHIFT}` shall be less than or equal to ``BIT_SIZE(J)``.
   ===============  ===========================================================================
 

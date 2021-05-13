@@ -10,11 +10,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -march=cpu-type
 
   Generate instructions for the machine type :samp:`{cpu-type}`.  In contrast to
-  :option:`-mtune`:samp:`={cpu-type}` , which merely tunes the generated code 
-  for the specified :samp:`{cpu-type}` , :option:`-march`:samp:`={cpu-type}` allows GCC
+  :option:`-mtune`:samp:`={cpu-type}`, which merely tunes the generated code 
+  for the specified :samp:`{cpu-type}`, :option:`-march`:samp:`={cpu-type}` allows GCC
   to generate code that may not run at all on processors other than the one
   indicated.  Specifying :option:`-march`:samp:`={cpu-type}` implies 
-  :option:`-mtune`:samp:`={cpu-type}` , except where noted otherwise.
+  :option:`-mtune`:samp:`={cpu-type}`, except where noted otherwise.
 
   The choices for :samp:`{cpu-type}` are:
 
@@ -60,9 +60,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
     Intel Pentium Pro CPU.
 
   :samp:`i686`
-    When used with :option:`-march` , the Pentium Pro
+    When used with :option:`-march`, the Pentium Pro
     instruction set is used, so the code runs on all i686 family chips.
-    When used with :option:`-mtune` , it has the same meaning as :samp:`generic`.
+    When used with :option:`-mtune`, it has the same meaning as :samp:`generic`.
 
   :samp:`pentium2`
     Intel Pentium II CPU, based on Pentium Pro core with MMX instruction set
@@ -476,7 +476,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     only in Pentium 4 and AMD x86-64 chips, supports double-precision
     arithmetic too.
 
-    For the x86-32 compiler, you must use :option:`-march`:samp:`={cpu-type}` , :option:`-msse`
+    For the x86-32 compiler, you must use :option:`-march`:samp:`={cpu-type}`, :option:`-msse`
     or :option:`-msse2` switches to enable SSE extensions and make this option
     effective.  For the x86-64 compiler, these extensions are enabled by default.
 
@@ -641,7 +641,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   libraries compiled with the Unix compiler.
 
   Also, you must provide function prototypes for all functions that
-  take variable numbers of arguments (including ``printf``);
+  take variable numbers of arguments (including ``printf`` );
   otherwise incorrect code is generated for calls to those
   functions.
 
@@ -727,7 +727,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   variable arguments are handled incorrectly for 16 byte aligned
   objects (including x87 long double and __int128), leading to wrong
   results.  You must build all modules with
-  :option:`-mpreferred-stack-boundary=3` , including any libraries.  This
+  :option:`-mpreferred-stack-boundary=3`, including any libraries.  This
   includes the system libraries and startup modules.
 
 .. option:: -mincoming-stack-boundary=num
@@ -900,7 +900,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -mrecip
 
   This option enables use of ``RCPSS`` and ``RSQRTSS`` instructions
-  (and their vectorized variants ``RCPPS`` and ``RSQRTPS``)
+  (and their vectorized variants ``RCPPS`` and ``RSQRTPS`` )
   with an additional Newton-Raphson step
   to increase precision instead of ``DIVSS`` and ``SQRTSS``
   (and their vectorized
@@ -912,7 +912,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   decreased by up to 2 ulp (i.e. the inverse of 1.0 equals 0.99999994).
 
   Note that GCC implements ``1.0f/sqrtf(x)`` in terms of ``RSQRTSS``
-  (or ``RSQRTPS``) already with :option:`-ffast-math` (or the above option
+  (or ``RSQRTPS`` ) already with :option:`-ffast-math` (or the above option
   combination), and doesn't need :option:`-mrecip`.
 
   Also note that GCC emits the above sequence with additional Newton-Raphson step
@@ -1100,7 +1100,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
        } t1;
 
     The size of ``t1`` is 8 bytes with the zero-length bit-field.  If the
-    zero-length bit-field were removed, ``t1``'s size would be 4 bytes.
+    zero-length bit-field were removed, ``t1`` 's size would be 4 bytes.
 
   * If a zero-length bit-field is inserted after a bit-field, ``foo``, and the
     alignment of the zero-length bit-field is greater than the member that follows it,
@@ -1207,7 +1207,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   should be inlined and what inline algorithm to use when the expected size
   of the copy operation is known. :samp:`{strategy}` 
   is a comma-separated list of :samp:`{alg}` : :samp:`{max_size}` : :samp:`{dest_align}` triplets. 
-  :samp:`{alg}` is specified in :option:`-mstringop-strategy` , :samp:`{max_size}` specifies
+  :samp:`{alg}` is specified in :option:`-mstringop-strategy`, :samp:`{max_size}` specifies
   the max byte size with which inline algorithm :samp:`{alg}` is allowed.  For the last
   triplet, the :samp:`{max_size}` must be ``-1``. The :samp:`{max_size}` of the triplets
   in the list must be specified in increasing order.  The minimal byte size for 
@@ -1232,7 +1232,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -mtls-direct-seg-refs
 
   Controls whether TLS variables may be accessed with offsets from the
-  TLS segment register (``%gs`` for 32-bit, ``%fs`` for 64-bit),
+  TLS segment register ( ``%gs`` for 32-bit, ``%fs`` for 64-bit),
   or whether the thread base pointer must be added.  Whether or not this
   is valid depends on the operating system, and whether it maps the
   segment to cover the entire TLS area.
@@ -1318,7 +1318,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   With the latter choice the options
   :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-  which segment register (``%fs`` or ``%gs``) to use as base register
+  which segment register ( ``%fs`` or ``%gs`` ) to use as base register
   for reading the canary, and from what offset from that base register.
   The default for those is as specified in the relevant ABI.
 
@@ -1391,7 +1391,7 @@ on x86-64 processors in 64-bit environments.
   to 32 bits, and
   generates code for the x86-64 architecture.
 
-  The :option:`-m16` option is the same as :option:`-m32` , except for that
+  The :option:`-m16` option is the same as :option:`-m32`, except for that
   it outputs the ``.code16gcc`` assembly directive at the beginning of
   the assembly output so that the binary can run in 16-bit mode.
 

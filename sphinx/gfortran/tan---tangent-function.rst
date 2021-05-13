@@ -30,7 +30,7 @@
   ===========  ==========================================
 
 :samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}` , and its value is in radians.
+  The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
 :samp:`{Example}:`
 

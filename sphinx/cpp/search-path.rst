@@ -24,7 +24,7 @@ invoking it with the :option:`-v` option.  For example,
 
 There are a number of command-line options you can use to add
 additional directories to the search path.  
-The most commonly-used option is :option:`-I`:samp:`{dir}` , which causes 
+The most commonly-used option is :option:`-I`:samp:`{dir}`, which causes 
 :samp:`{dir}` to be searched after the current directory (for the quote 
 form of the directive) and ahead of the standard system directories.
 You can specify multiple :option:`-I` options on the command line, 
@@ -36,7 +36,7 @@ angle-bracket forms of the :samp:`#include` directive, you can use the
 See :ref:`invocation`, for a detailed description of these options, as 
 well as others that are less generally useful.
 
-If you specify other options on the command line, such as :option:`-I` ,
+If you specify other options on the command line, such as :option:`-I`,
 that affect where the preprocessor searches for header files, the
 directory list printed by the :option:`-v` option reflects the actual
 search path used by the preprocessor.

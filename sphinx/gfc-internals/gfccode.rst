@@ -29,7 +29,7 @@ represent this, the ``block`` member is set to point to a
 statements inside the block; this structure's ``op`` member should be set to
 the same value as the parent structure's ``op`` member.  The ``SELECT``
 and ``IF`` statements may contain various blocks (the chain of ``ELSE IF``
-and ``ELSE`` blocks or the various ``CASE``s, respectively).  These chains
+and ``ELSE`` blocks or the various ``CASE`` s, respectively).  These chains
 are linked-lists formed by the ``block`` members.
 
 Consider the following example code:
@@ -87,7 +87,7 @@ Loops
 
 ``DO`` loops are stored in the tree as ``gfc_code`` nodes with their
 ``op`` set to ``EXEC_DO`` for a ``DO`` loop with iterator variable and
-to ``EXEC_DO_WHILE`` for infinite ``DO``s and ``DO WHILE`` blocks.
+to ``EXEC_DO_WHILE`` for infinite ``DO`` s and ``DO WHILE`` blocks.
 Their ``block`` member should point to a ``gfc_code`` structure heading
 the code-chain of the loop body; its ``op`` member should be set to
 ``EXEC_DO`` or ``EXEC_DO_WHILE``, too, respectively.
@@ -126,12 +126,12 @@ with ``c.op`` set to ``EXEC_BLOCK``.  The
 construct is in ``c.code``.
 
 ``ASSOCIATE`` constructs are based on ``BLOCK`` and thus also have
-the internal storage structure described above (including ``EXEC_BLOCK``).
+the internal storage structure described above (including ``EXEC_BLOCK`` ).
 However, for them ``c.ext.block.assoc`` is set additionally and points
 to a linked list of ``gfc_association_list`` structures.  Those
 structures basically store a link of associate-names to target expressions.
-The associate-names themselves are still also added to the ``BLOCK``'s
-namespace as ordinary symbols, but they have their ``gfc_symbol``'s
+The associate-names themselves are still also added to the ``BLOCK`` 's
+namespace as ordinary symbols, but they have their ``gfc_symbol`` 's
 member ``assoc`` set also pointing to the association-list structure.
 This way associate-names can be distinguished from ordinary variables
 and their target expressions identified.

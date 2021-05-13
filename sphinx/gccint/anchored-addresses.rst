@@ -52,7 +52,7 @@ value is 0.
 
 .. function:: void TARGET_ASM_OUTPUT_ANCHOR(rtx x)
 
-  Write the assembly code to define section anchor :samp:`{x}` , which is a
+  Write the assembly code to define section anchor :samp:`{x}`, which is a
   ``SYMBOL_REF`` for which :samp:`SYMBOL_REF_ANCHOR_P ({x})` is true.
   The hook is called with the assembly output position set to the beginning
   of ``SYMBOL_REF_BLOCK (x)``.

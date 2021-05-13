@@ -22,7 +22,7 @@ In this example, only :option:`-fstrict-enums` is an option meant
 only for C++ programs; you can use the other options with any
 language supported by GCC.
 
-Some options for compiling C programs, such as :option:`-std` , are also
+Some options for compiling C programs, such as :option:`-std`, are also
 relevant for C++ programs.
 See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
@@ -192,7 +192,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fconcepts, -fconcepts-ts
 
-  Below :option:`-std=c++20` , :option:`-fconcepts` enables support for the
+  Below :option:`-std=c++20`, :option:`-fconcepts` enables support for the
   C++ Extensions for Concepts Technical Specification, ISO 19217 (2015).
 
   With :option:`-std=c++20` and above, Concepts are part of the language
@@ -285,8 +285,8 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Do not recognize ``typeof`` as a keyword, so that code can use this
   word as an identifier.  You can use the keyword ``__typeof__`` instead.
-  This option is implied by the strict ISO C++ dialects: :option:`-ansi` ,
-  :option:`-std=c++98` , :option:`-std=c++11` , etc.
+  This option is implied by the strict ISO C++ dialects: :option:`-ansi`,
+  :option:`-std=c++98`, :option:`-std=c++11`, etc.
 
 .. option:: -fno-implicit-templates, -fimplicit-templates
 
@@ -408,7 +408,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   template, the compiler normally prints the signature of the
   template followed by the template arguments and any typedefs or
   typenames in the signature (e.g. ``void f(T) [with T = int]``
-  rather than ``void f(int)``) so that it's clear which template is
+  rather than ``void f(int)`` ) so that it's clear which template is
   involved.  When an error message refers to a specialization of a class
   template, the compiler omits any template arguments that match
   the default template arguments for that template.  If either of these
@@ -419,7 +419,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Disable generation of information about every class with virtual
   functions for use by the C++ run-time type identification features
-  (``dynamic_cast`` and ``typeid``).  If you don't use those parts
+  ( ``dynamic_cast`` and ``typeid`` ).  If you don't use those parts
   of the language, you can save some space by using this flag.  Note that
   exception handling uses the same information, but G++ generates it as
   needed. The ``dynamic_cast`` operator can still be used for casts that
@@ -576,10 +576,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   When this option is turned off these suffixes are treated
   as C++11 user-defined literal numeric suffixes.
   This is on by default for all pre-C++11 dialects and all GNU dialects:
-  :option:`-std=c++98` , :option:`-std=gnu++98` , :option:`-std=gnu++11` ,
+  :option:`-std=c++98`, :option:`-std=gnu++98`, :option:`-std=gnu++11`,
   :option:`-std=gnu++14`.
   This option is off by default
-  for ISO C++11 onwards ( :option:`-std=c++11` , ...).
+  for ISO C++11 onwards ( :option:`-std=c++11`, ...).
 
 .. option:: -nostdinc++
 
@@ -602,7 +602,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   all read CMI pathnames.  The :samp:`{module}` form will not reading a
   specific module's CMI.  :samp:`{module}` may be a named module or a
   header-unit (the latter indicated by either being a pathname containing
-  directory separators or enclosed in ``<>`` or ``""``).
+  directory separators or enclosed in ``<>`` or ``""`` ).
 
 .. option:: -stdlib=libstdc++,libc++
 
@@ -703,7 +703,7 @@ In addition, these warning options have meanings only for C++ programs:
   assignment operator is deprecated if the class has a user-provided
   copy constructor or copy assignment operator, in C++11 and up.  This
   warning is enabled by :option:`-Wextra`.  With
-  :option:`-Wdeprecated-copy-dtor` , also deprecate if the class has a
+  :option:`-Wdeprecated-copy-dtor`, also deprecate if the class has a
   user-provided destructor.
 
 .. option:: -Wno-deprecated-enum-enum-conversion 
@@ -862,7 +862,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn when a noexcept-expression evaluates to false because of a call
   to a function that does not have a non-throwing exception
-  specification (i.e. ``throw()`` or ``noexcept``) but is known by
+  specification (i.e. ``throw()`` or ``noexcept`` ) but is known by
   the compiler to never throw an exception.
 
 .. option:: -Wnoexcept-type , -Wnoexcept-type, -Wno-noexcept-type
@@ -996,7 +996,7 @@ In addition, these warning options have meanings only for C++ programs:
 
     C++ and Objective-C++ only
 
-  This warning warns about redundant calls to ``std::move``; that is, when
+  This warning warns about redundant calls to ``std::move`` ; that is, when
   a move operation would have been performed even without the ``std::move``
   call.  This happens because the compiler is forced to treat the object as if
   it were an rvalue in certain situations such as returning a local variable,
@@ -1139,7 +1139,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   * Never overload ``&&``, ``||``, or ``,``.
 
-  This option also enables :option:`-Wnon-virtual-dtor` , which is also
+  This option also enables :option:`-Wnon-virtual-dtor`, which is also
   one of the effective C++ recommendations.  However, the check is
   extended to warn about the lack of virtual destructor in accessible
   non-polymorphic bases classes too.
@@ -1192,8 +1192,8 @@ In addition, these warning options have meanings only for C++ programs:
     C++ and Objective-C++ only
 
   Warn if an old-style (C-style) cast to a non-void type is used within
-  a C++ program.  The new-style casts (``dynamic_cast``,
-  ``static_cast``, ``reinterpret_cast``, and ``const_cast``) are
+  a C++ program.  The new-style casts ( ``dynamic_cast``,
+  ``static_cast``, ``reinterpret_cast``, and ``const_cast`` ) are
   less vulnerable to unintended effects and much easier to search for.
 
 .. option:: -Woverloaded-virtual , -Woverloaded-virtual, -Wno-overloaded-virtual
@@ -1427,12 +1427,12 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn about deprecated uses of the ``volatile`` qualifier.  This includes
   postfix and prefix ``++`` and ``--`` expressions of
-  ``volatile``-qualified types, using simple assignments where the left
-  operand is a ``volatile``-qualified non-class type for their value,
-  compound assignments where the left operand is a ``volatile``-qualified
-  non-class type, ``volatile``-qualified function return type,
-  ``volatile``-qualified parameter type, and structured bindings of a
-  ``volatile``-qualified type.  This usage was deprecated in C++20.
+  ``volatile`` -qualified types, using simple assignments where the left
+  operand is a ``volatile`` -qualified non-class type for their value,
+  compound assignments where the left operand is a ``volatile`` -qualified
+  non-class type, ``volatile`` -qualified function return type,
+  ``volatile`` -qualified parameter type, and structured bindings of a
+  ``volatile`` -qualified type.  This usage was deprecated in C++20.
 
   Enabled by default with :option:`-std=c++20`.
 

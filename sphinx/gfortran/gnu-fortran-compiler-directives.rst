@@ -55,7 +55,7 @@ are in a shared library.  The following attributes are available:
 For dummy arguments, the ``NO_ARG_CHECK`` attribute can be used; in
 other compilers, it is also known as ``IGNORE_TKR``.  For dummy arguments
 with this attribute actual arguments of any type and kind (similar to
-``TYPE(*)``), scalars and arrays of any rank (no equivalent
+``TYPE(*)`` ), scalars and arrays of any rank (no equivalent
 in Fortran standard) are accepted.  As with ``TYPE(*)``, the argument
 is unlimited polymorphic and no type information is available.
 Additionally, the argument may only be passed to dummy arguments
@@ -64,11 +64,11 @@ with the ``NO_ARG_CHECK`` attribute and as argument to the
 ``ISO_C_BINDING`` module.
 
 Variables with ``NO_ARG_CHECK`` attribute shall be of assumed-type
-(``TYPE(*)``; recommended) or of type ``INTEGER``, ``LOGICAL``,
+( ``TYPE(*)`` ; recommended) or of type ``INTEGER``, ``LOGICAL``,
 ``REAL`` or ``COMPLEX``. They shall not have the ``ALLOCATE``,
 ``CODIMENSION``, ``INTENT(OUT)``, ``POINTER`` or ``VALUE``
 attribute; furthermore, they shall be either scalar or of assumed-size
-(``dimension(*)``). As ``TYPE(*)``, the ``NO_ARG_CHECK`` attribute
+( ``dimension(*)`` ). As ``TYPE(*)``, the ``NO_ARG_CHECK`` attribute
 requires an explicit interface.
 
 ** ``NO_ARG_CHECK`` - disable the type, kind and rank checking

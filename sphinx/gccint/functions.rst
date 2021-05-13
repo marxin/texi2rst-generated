@@ -93,7 +93,7 @@ of a ``FUNCTION_DECL`` as well as other basic features:
 .. envvar:: DECL_INITIALDECL_INITIAL
 
   A function that has a definition in the current translation unit will
-  have a non-``NULL`` ``DECL_INITIAL``.  However, back ends should not make
+  have a non- ``NULL`` ``DECL_INITIAL``.  However, back ends should not make
   use of the particular value given by ``DECL_INITIAL``.
 
   It should contain a tree of ``BLOCK`` nodes that mirrors the scopes
@@ -150,8 +150,8 @@ Function Properties
 
 To determine the scope of a function, you can use the
 ``DECL_CONTEXT`` macro.  This macro will return the class
-(either a ``RECORD_TYPE`` or a ``UNION_TYPE``) or namespace (a
-``NAMESPACE_DECL``) of which the function is a member.  For a virtual
+(either a ``RECORD_TYPE`` or a ``UNION_TYPE`` ) or namespace (a
+``NAMESPACE_DECL`` ) of which the function is a member.  For a virtual
 function, this macro returns the class in which the function was
 actually defined, not the base class in which the virtual declaration
 occurred.

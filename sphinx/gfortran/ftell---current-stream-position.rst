@@ -35,7 +35,7 @@
 
 :samp:`{Return value}:`
   In either syntax, :samp:`{OFFSET}` is set to the current offset of unit
-  number :samp:`{UNIT}` , or to -1 if the unit is not currently open.
+  number :samp:`{UNIT}`, or to -1 if the unit is not currently open.
 
 :samp:`{Example}:`
 

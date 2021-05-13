@@ -146,8 +146,8 @@ to do the final link using a C++ driver that uses that library by default,
 it is necessary to tell :command:`g++` the location and name of that
 library.  It might also be necessary to specify different startup files
 and other runtime support libraries, and to suppress the use of GCC's
-support libraries with one or more of the options :option:`-nostdlib` ,
-:option:`-nostartfiles` , and :option:`-nodefaultlibs`.
+support libraries with one or more of the options :option:`-nostdlib`,
+:option:`-nostartfiles`, and :option:`-nodefaultlibs`.
 
 .. Copyright (C) 1996-2021 Free Software Foundation, Inc.
 

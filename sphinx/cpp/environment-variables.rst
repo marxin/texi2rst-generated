@@ -12,7 +12,7 @@ operates.  You can use them to specify directories or prefixes to use
 when searching for include files, or to control dependency output.
 
 Note that you can also specify places to search using options such as
-:option:`-I` , and control dependency output with options like
+:option:`-I`, and control dependency output with options like
 :option:`-M` (see :ref:`invocation`).  These take precedence over
 environment variables, which in turn take precedence over the
 configuration of GCC.
@@ -38,13 +38,13 @@ configuration of GCC.
   semicolon, and for almost all other targets it is a colon.
 
   :envvar:`CPATH` specifies a list of directories to be searched as if
-  specified with :option:`-I` , but after any paths given with :option:`-I`
+  specified with :option:`-I`, but after any paths given with :option:`-I`
   options on the command line.  This environment variable is used
   regardless of which language is being preprocessed.
 
   The remaining environment variables apply only when preprocessing the
   particular language indicated.  Each specifies a list of directories
-  to be searched as if specified with :option:`-isystem` , but after any
+  to be searched as if specified with :option:`-isystem`, but after any
   paths given with :option:`-isystem` options on the command line.
 
   In all these variables, an empty element instructs the compiler to

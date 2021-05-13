@@ -33,8 +33,8 @@ that is expected to get the specified count and has the form
 ``count(cnt)``.  A test should only check line counts for
 lines that will get the same count for any architecture.
 
-Commands to check branch percentages (``branch``) and call
-return percentages (``returns``) are very similar to each other.
+Commands to check branch percentages ( ``branch`` ) and call
+return percentages ( ``returns`` ) are very similar to each other.
 A beginning command appears on or before the first of a range of
 lines that will report the percentage, and the ending command
 follows that range of lines.  The beginning command can include a

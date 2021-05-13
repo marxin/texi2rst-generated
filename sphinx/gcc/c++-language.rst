@@ -7,10 +7,10 @@ and the 2011, 2014, 2017 and mostly 2020 revisions.
 The original ISO C++ standard was published as the ISO standard (ISO/IEC
 14882:1998) and amended by a Technical Corrigenda published in 2003
 (ISO/IEC 14882:2003). These standards are referred to as C++98 and
-C++03, respectively. GCC implements the majority of C++98 (``export``
+C++03, respectively. GCC implements the majority of C++98 ( ``export``
 is a notable exception) and most of the changes in C++03.  To select
-this standard in GCC, use one of the options :option:`-ansi` ,
-:option:`-std=c++98` , or :option:`-std=c++03` ; to obtain all the diagnostics
+this standard in GCC, use one of the options :option:`-ansi`,
+:option:`-std=c++98`, or :option:`-std=c++03` ; to obtain all the diagnostics
 required by the standard, you should also specify :option:`-pedantic` (or
 :option:`-pedantic-errors` if you want them to be errors rather than
 warnings).
@@ -48,7 +48,7 @@ committee's web site at http://www.open-std.org//jtc1//sc22//wg21/.
 
 To obtain all the diagnostics required by any of the standard versions
 described above you should specify :option:`-pedantic`
-or :option:`-pedantic-errors` , otherwise GCC will allow some non-ISO C++
+or :option:`-pedantic-errors`, otherwise GCC will allow some non-ISO C++
 features as extensions. See :ref:`warning-options`.
 
 By default, GCC also provides some additional extensions to the C++ language

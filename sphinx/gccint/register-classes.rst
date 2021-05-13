@@ -70,7 +70,7 @@ Register classes used for input-operands of bitwise-and or shift
 instructions have a special requirement: each such class must have, for
 each fixed-point machine mode, a subclass whose registers can transfer that
 mode to or from memory.  For example, on some machines, the operations for
-single-byte values (``QImode``) are limited to certain registers.  When
+single-byte values ( ``QImode`` ) are limited to certain registers.  When
 this is so, each register class that is used in a bitwise-and or shift
 instruction must have a subclass consisting of registers from which
 single-byte values can be loaded or stored.  This is so that
@@ -149,10 +149,10 @@ MacroMODE_CODE_BASE_REG_CLASS(:samp:`{mode}`,:samp:`{address_space}`,:samp:`{out
 base register for a memory reference in mode :samp:`{mode}` to address
 space :samp:`{address_space}` must belong.  :samp:`{outer_code}` and :samp:`{index_code}`
 define the context in which the base register occurs.  :samp:`{outer_code}` is
-the code of the immediately enclosing expression (``MEM`` for the top level
+the code of the immediately enclosing expression ( ``MEM`` for the top level
 of an address, ``ADDRESS`` for something that occurs in an
-``address_operand``).  :samp:`{index_code}` is the code of the corresponding
-index expression if :samp:`{outer_code}` is ``PLUS``; ``SCRATCH`` otherwise.
+``address_operand`` ).  :samp:`{index_code}` is the code of the corresponding
+index expression if :samp:`{outer_code}` is ``PLUS`` ; ``SCRATCH`` otherwise.
 
 .. index:: INDEX_REG_CLASS
 
@@ -197,10 +197,10 @@ memory in mode :samp:`{mode}` in address space :samp:`{address_space}`.
 This is similar to ``REGNO_MODE_OK_FOR_BASE_P``, except
 that that expression may examine the context in which the register
 appears in the memory reference.  :samp:`{outer_code}` is the code of the
-immediately enclosing expression (``MEM`` if at the top level of the
+immediately enclosing expression ( ``MEM`` if at the top level of the
 address, ``ADDRESS`` for something that occurs in an
-``address_operand``).  :samp:`{index_code}` is the code of the
-corresponding index expression if :samp:`{outer_code}` is ``PLUS``;
+``address_operand`` ).  :samp:`{index_code}` is the code of the
+corresponding index expression if :samp:`{outer_code}` is ``PLUS`` ;
 ``SCRATCH`` otherwise.  The mode may be ``VOIDmode`` for addresses
 that appear outside a ``MEM``, i.e., as an ``address_operand``.
 
@@ -222,13 +222,13 @@ only if neither labeling works.
 
 .. function:: reg_class_t TARGET_PREFERRED_RENAME_CLASS(reg_class_t rclass)
 
-  A target hook that places additional preference on the register class to use when it is necessary to rename a register in class :samp:`{rclass}` to another class, or perhaps :samp:`{NO_REGS}` , if no preferred register class is found or hook ``preferred_rename_class`` is not implemented. Sometimes returning a more restrictive class makes better code.  For example, on ARM, thumb-2 instructions using ``LO_REGS`` may be smaller than instructions using ``GENERIC_REGS``.  By returning ``LO_REGS`` from ``preferred_rename_class``, code size can be reduced.
+  A target hook that places additional preference on the register class to use when it is necessary to rename a register in class :samp:`{rclass}` to another class, or perhaps :samp:`{NO_REGS}`, if no preferred register class is found or hook ``preferred_rename_class`` is not implemented. Sometimes returning a more restrictive class makes better code.  For example, on ARM, thumb-2 instructions using ``LO_REGS`` may be smaller than instructions using ``GENERIC_REGS``.  By returning ``LO_REGS`` from ``preferred_rename_class``, code size can be reduced.
 
 .. function:: reg_class_t TARGET_PREFERRED_RELOAD_CLASS(rtx x,reg_class_t rclass)
 
   A target hook that places additional restrictions on the register class
   to use when it is necessary to copy value :samp:`{x}` into a register in class
-  :samp:`{rclass}`.  The value is a register class; perhaps :samp:`{rclass}` , or perhaps
+  :samp:`{rclass}`.  The value is a register class; perhaps :samp:`{rclass}`, or perhaps
   another, smaller class.
 
   The default version of this hook always returns value of ``rclass`` argument.
@@ -262,7 +262,7 @@ only if neither labeling works.
 
 MacroPREFERRED_RELOAD_CLASS(:samp:`{x}`,:samp:`{class}`)A C expression that places additional restrictions on the register class
 to use when it is necessary to copy value :samp:`{x}` into a register in class
-:samp:`{class}`.  The value is a register class; perhaps :samp:`{class}` , or perhaps
+:samp:`{class}`.  The value is a register class; perhaps :samp:`{class}`, or perhaps
 another, smaller class.  On many machines, the following definition is
 safe:
 
@@ -316,7 +316,7 @@ ordinarily be used.
 Unlike ``PREFERRED_RELOAD_CLASS``, this macro should be used when
 there are certain modes that simply cannot go in certain reload classes.
 
-The value is a register class; perhaps :samp:`{class}` , or perhaps another,
+The value is a register class; perhaps :samp:`{class}`, or perhaps another,
 smaller class.
 
 Don't define this macro unless the target machine has limitations which
@@ -350,10 +350,10 @@ require the macro to do something nontrivial.
 
   In some cases, both an intermediate and a scratch register are required.
 
-  For input reloads, this target hook is called with nonzero :samp:`{in_p}` ,
+  For input reloads, this target hook is called with nonzero :samp:`{in_p}`,
   and :samp:`{x}` is an rtx that needs to be copied to a register of class
   :samp:`{reload_class}` in :samp:`{reload_mode}`.  For output reloads, this target
-  hook is called with zero :samp:`{in_p}` , and a register of class :samp:`{reload_class}`
+  hook is called with zero :samp:`{in_p}`, and a register of class :samp:`{reload_class}`
   needs to be copied to rtx :samp:`{x}` in :samp:`{reload_mode}`.
 
   If copying a register of :samp:`{reload_class}` from/to :samp:`{x}` requires
@@ -381,7 +381,7 @@ require the macro to do something nontrivial.
 
   When an intermediate register is used, the ``secondary_reload``
   hook will be called again to determine how to copy the intermediate
-  register to/from the reload operand :samp:`{x}` , so your hook must also
+  register to/from the reload operand :samp:`{x}`, so your hook must also
   have code to handle the register class of the intermediate operand.
 
   .. [For later: maybe we'll allow multi-alternative reload patterns -
@@ -398,7 +398,7 @@ require the macro to do something nontrivial.
   Use ``true_regnum`` to find out; it will return -1 if the pseudo is
   in memory and the hard register number if it is in a register.
 
-  Scratch operands in memory (constraint ``"=m"`` / ``"=&m"``) are
+  Scratch operands in memory (constraint ``"=m"`` / ``"=&m"`` ) are
   currently not supported.  For the time being, you will have to continue
   to use ``TARGET_SECONDARY_MEMORY_NEEDED`` for that purpose.
 
@@ -496,7 +496,7 @@ Do not define this macro if you do not define
 .. function:: machine_mode TARGET_SECONDARY_MEMORY_NEEDED_MODE(machine_mode mode)
 
   If ``TARGET_SECONDARY_MEMORY_NEEDED`` tells the compiler to use memory
-  when moving between two particular registers of mode :samp:`{mode}` ,
+  when moving between two particular registers of mode :samp:`{mode}`,
   this hook specifies the mode that the memory should have.
 
   The default depends on ``TARGET_LRA_P``.  Without LRA, the default

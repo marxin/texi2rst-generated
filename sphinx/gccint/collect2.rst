@@ -21,7 +21,7 @@ called ``__main``, which is called (automatically) at the beginning
 of the body of ``main`` (provided ``main`` was compiled with GNU
 CC).  Calling ``__main`` is necessary, even when compiling C code, to
 allow linking C and C++ object code together.  (If you use
-:option:`-nostdlib` , you get an unresolved reference to ``__main``,
+:option:`-nostdlib`, you get an unresolved reference to ``__main``,
 since it's defined in the standard GCC library.  Include :option:`-lgcc` at
 the end of your compiler command line to resolve this reference.)
 

@@ -13,8 +13,8 @@
   :samp:`{ATOM}` and :samp:`{VALUE}`. When :samp:`{STAT}` is present and the invocation was
   successful, it is assigned the value 0. If it is present and the invocation has
   failed, it is assigned a positive value; in particular, for a coindexed
-  :samp:`{ATOM}` , if the remote image has stopped, it is assigned the value of
-  ``ISO_FORTRAN_ENV``'s ``STAT_STOPPED_IMAGE`` and if the remote image has
+  :samp:`{ATOM}`, if the remote image has stopped, it is assigned the value of
+  ``ISO_FORTRAN_ENV`` 's ``STAT_STOPPED_IMAGE`` and if the remote image has
   failed, the value ``STAT_FAILED_IMAGE``.
 
 :samp:`{Standard}:`

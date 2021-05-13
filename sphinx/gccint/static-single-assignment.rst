@@ -125,7 +125,7 @@ For instance, given the following code:
        11 endif
 
 Suppose that we insert new names ``x_10`` and ``x_11`` (lines
-``4`` and ``8``).
+``4`` and ``8`` ).
 
 .. code-block:: c++
 
@@ -171,7 +171,7 @@ marked for renaming, a call to ``update_ssa`` makes the registered
 changes.  This can be done with an explicit call or by creating
 ``TODO`` flags in the ``tree_opt_pass`` structure for your pass.
 There are several ``TODO`` flags that control the behavior of
-``update_ssa``:
+``update_ssa`` :
 
 * ``TODO_update_ssa``.  Update the SSA form inserting PHI nodes
   for newly exposed symbols and virtual names marked for updating.
@@ -181,7 +181,7 @@ There are several ``TODO`` flags that control the behavior of
   is not pruned, we may end up inserting PHI nodes in blocks that
   have one or more edges with no incoming definition for
   ``O_j``.  This would lead to uninitialized warnings for
-  ``O_j``'s symbol.
+  ``O_j`` 's symbol.
 
 * ``TODO_update_ssa_no_phi``.  Update the SSA form without
   inserting any new PHI nodes at all.  This is used by passes that
@@ -193,7 +193,7 @@ There are several ``TODO`` flags that control the behavior of
   they are needed.  No pruning of the IDF is done.  This is used
   by passes that need the PHI nodes for ``O_j`` even if it
   means that some arguments will come from the default definition
-  of ``O_j``'s symbol (e.g., ``pass_linear_transform``).
+  of ``O_j`` 's symbol (e.g., ``pass_linear_transform`` ).
 
   WARNING: If you need to use this flag, chances are that your
   pass may be doing something wrong.  Inserting PHI nodes for an
@@ -219,7 +219,7 @@ The following macros can be used to examine ``SSA_NAME`` nodes
 
 MacroSSA_NAME_DEF_STMT(:samp:`{var}`)Returns the statement :samp:`{s}` that creates the ``SSA_NAME``
 :samp:`{var}`.  If :samp:`{s}` is an empty statement (i.e., ``IS_EMPTY_STMT
-(s)`` returns ``true``), it means that the first reference to
+(s)`` returns ``true`` ), it means that the first reference to
 this variable is a USE or a VUSE.
 
 .. index:: SSA_NAME_VERSION

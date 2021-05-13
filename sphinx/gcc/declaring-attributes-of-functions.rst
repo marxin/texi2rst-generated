@@ -15,9 +15,9 @@ In GNU C and C++, you can use function attributes to specify certain
 function properties that may help the compiler optimize calls or
 check code more carefully for correctness.  For example, you
 can use attributes to specify that a function never returns
-(``noreturn``), returns a value depending only on the values of
-its arguments (``const``), or has ``printf``-style arguments
-(``format``).
+( ``noreturn`` ), returns a value depending only on the values of
+its arguments ( ``const`` ), or has ``printf`` -style arguments
+( ``format`` ).
 
 You can also use attributes to control memory placement, code
 generation options or call/return conventions within the function
@@ -122,8 +122,8 @@ The following attributes are supported on most targets.
   The ``access`` attribute enables the detection of invalid or unsafe
   accesses by functions to which they apply or their callers, as well as
   write-only accesses to objects that are never read from.  Such accesses
-  may be diagnosed by warnings such as :option:`-Wstringop-overflow` ,
-  :option:`-Wuninitialized` , :option:`-Wunused` , and others.
+  may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
+  :option:`-Wuninitialized`, :option:`-Wunused`, and others.
 
   The ``access`` attribute specifies that a function to whose by-reference
   arguments the attribute applies accesses the referenced object according to
@@ -138,7 +138,7 @@ The following attributes are supported on most targets.
 
   The optional :samp:`{size-index}` positional argument denotes a function
   argument of integer type that specifies the maximum size of the access.
-  The size is the number of elements of the type referenced by :samp:`{ref-index}` ,
+  The size is the number of elements of the type referenced by :samp:`{ref-index}`,
   or the number of bytes when the pointer type is ``void*``.  When no
   :samp:`{size-index}` argument is specified, the pointer argument must be either
   null or point to a space that is suitably aligned and large for at least one
@@ -280,7 +280,7 @@ The following attributes are supported on most targets.
   returns a pointer and takes at least one argument of an integer or
   enumerated type.
   It indicates that the returned pointer points to memory whose size is
-  given by the function argument at :samp:`{position-1}` , or by the product
+  given by the function argument at :samp:`{position-1}`, or by the product
   of the arguments at :samp:`{position-1}` and :samp:`{position-2}`.  Meaningful
   sizes are positive values less than ``PTRDIFF_MAX``.  GCC uses this
   information to improve the results of ``__builtin_object_size``.
@@ -360,7 +360,7 @@ The following attributes are supported on most targets.
   unlikely conditions, such as ``perror``, as cold to improve optimization
   of hot functions that do call marked functions in rare occasions.
 
-  When profile feedback is available, via :option:`-fprofile-use` , cold functions
+  When profile feedback is available, via :option:`-fprofile-use`, cold functions
   are automatically detected and this attribute is ignored.
 
 .. option:: const
@@ -463,7 +463,7 @@ The following attributes are supported on most targets.
 
   For example, the :samp:`{StrongAlias}` macro below makes use of the ``alias``
   and ``copy`` attributes to define an alias named :samp:`{alloc}` for function
-  :samp:`{allocate}` declared with attributes :samp:`{alloc_size}` , :samp:`{malloc}` , and
+  :samp:`{allocate}` declared with attributes :samp:`{alloc_size}`, :samp:`{malloc}`, and
   :samp:`{nothrow}`.  Thanks to the ``__typeof__`` operator the alias has
   the same type as the target function.  As a result of the ``copy``
   attribute the alias also shares the same attributes as the target.
@@ -595,14 +595,14 @@ The following attributes are supported on most targets.
   from 1), while :samp:`{first-to-check}` is the number of the first
   argument to check against the format string.  For functions
   where the arguments are not available to be checked (such as
-  ``vprintf``), specify the third parameter as zero.  In this case the
+  ``vprintf`` ), specify the third parameter as zero.  In this case the
   compiler only checks the format string for consistency.  For
   ``strftime`` formats, the third parameter is required to be zero.
   Since non-static C++ methods have an implicit ``this`` argument, the
   arguments of such methods should be counted from two, not one, when
   giving values for :samp:`{string-index}` and :samp:`{first-to-check}`.
 
-  In the example above, the format string (``my_format``) is the second
+  In the example above, the format string ( ``my_format`` ) is the second
   argument of the function ``my_print``, and the arguments to check
   start with the third argument, so the correct parameters for the format
   attribute are 2 and 3.
@@ -622,7 +622,7 @@ The following attributes are supported on most targets.
   are ``printf_unlocked`` and ``fprintf_unlocked``.
   See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
-  For Objective-C dialects, ``NSString`` (or ``__NSString__``) is
+  For Objective-C dialects, ``NSString`` (or ``__NSString__`` ) is
   recognized in the same context.  Declarations including these format attributes
   are parsed for correct syntax, however the result of checking of such format
   strings is not yet defined, and is not carried out by this version of the
@@ -743,7 +743,7 @@ The following attributes are supported on most targets.
   subsection of the text section so all hot functions appear close together,
   improving locality.
 
-  When profile feedback is available, via :option:`-fprofile-use` , hot functions
+  When profile feedback is available, via :option:`-fprofile-use`, hot functions
   are automatically detected and this attribute is ignored.
 
 .. option:: ifunc ("resolver")
@@ -894,7 +894,7 @@ The following attributes are supported on most targets.
 
   .. index:: functions that behave like malloc
 
-  Attribute ``malloc`` indicates that a function is ``malloc``-like,
+  Attribute ``malloc`` indicates that a function is ``malloc`` -like,
   i.e., that the pointer :samp:`{P}` returned by the function cannot alias any
   other pointer valid when the function returns, and moreover no
   pointers to valid objects occur in any storage addressed by :samp:`{P}`. In
@@ -903,7 +903,7 @@ The following attributes are supported on most targets.
 
   Independently, the form of the attribute with one or two arguments
   associates ``deallocator`` as a suitable deallocation function for
-  pointers returned from the ``malloc``-like function.  :samp:`{ptr-index}`
+  pointers returned from the ``malloc`` -like function.  :samp:`{ptr-index}`
   denotes the positional argument to which when the pointer is passed in
   calls to ``deallocator`` has the effect of deallocating it.
 
@@ -1007,7 +1007,7 @@ The following attributes are supported on most targets.
 
   .. index:: no_instrument_function function attribute
 
-  If any of :option:`-finstrument-functions` , :option:`-p` , or :option:`-pg` are 
+  If any of :option:`-finstrument-functions`, :option:`-p`, or :option:`-pg` are 
   given, profiling function calls are
   generated at entry and exit of most user-compiled functions.
   Functions with this attribute are not so instrumented.
@@ -1236,7 +1236,7 @@ The following attributes are supported on most targets.
   uninitialized variables.
 
   The ``noreturn`` keyword does not affect the exceptional path when that
-  applies: a ``noreturn``-marked function may still return to the caller
+  applies: a ``noreturn`` -marked function may still return to the caller
   by throwing an exception or calling ``longjmp``.
 
   In order to preserve backtraces, GCC will never turn calls to
@@ -1300,13 +1300,13 @@ The following attributes are supported on most targets.
   The ``patchable_function_entry`` function attribute can be used to
   change the number of NOPs to any desired value.  The two-value syntax
   is the same as for the command-line switch
-  :option:`-fpatchable-function-entry=N,M` , generating :samp:`{N}` NOPs, with
+  :option:`-fpatchable-function-entry=N,M`, generating :samp:`{N}` NOPs, with
   the function entry point before the :samp:`{M}` th NOP instruction.
   :samp:`{M}` defaults to 0 if omitted e.g. function entry point is before
   the first NOP.
 
   If patchable function entries are enabled globally using the command-line
-  option :option:`-fpatchable-function-entry=N,M` , then you must disable
+  option :option:`-fpatchable-function-entry=N,M`, then you must disable
   instrumentation on all functions that are part of the instrumentation
   framework with the attribute ``patchable_function_entry (0)``
   to prevent recursion.
@@ -1388,7 +1388,7 @@ The following attributes are supported on most targets.
   are dead before calling such a function and emits a warning about
   the variables that may be clobbered after the second return from the
   function.  Examples of such functions are ``setjmp`` and ``vfork``.
-  The ``longjmp``-like counterpart of such function, if any, might need
+  The ``longjmp`` -like counterpart of such function, if any, might need
   to be marked with the ``noreturn`` attribute.
 
 .. option:: section ("section-name")
@@ -1471,7 +1471,7 @@ The following attributes are supported on most targets.
   .. index:: stack_protect function attribute
 
   This attribute adds stack protection code to the function if 
-  flags :option:`-fstack-protector` , :option:`-fstack-protector-strong`
+  flags :option:`-fstack-protector`, :option:`-fstack-protector-strong`
   or :option:`-fstack-protector-explicit` are set.
 
 .. option:: no_stack_protector
@@ -1795,7 +1795,7 @@ The following attributes are supported on most targets.
   ``weakref`` implicitly marks the declared symbol as ``weak``.  Without
   a :samp:`{target}` given as an argument to ``weakref`` or to ``alias``,
   ``weakref`` is equivalent to ``weak`` (in that case the declaration
-  may be ``extern``).
+  may be ``extern`` ).
 
   .. code-block:: c++
 
@@ -1822,7 +1822,7 @@ The following attributes are supported on most targets.
   The effect is equivalent to moving all references to the alias to a
   separate translation unit, renaming the alias to the aliased symbol,
   declaring it as weak, compiling the two separate translation units and
-  performing a link with relocatable output (i.e. ``ld -r``) on them.
+  performing a link with relocatable output (i.e. ``ld -r`` ) on them.
 
   A declaration to which ``weakref`` is attached and that is associated
   with a named ``target`` must be ``static``.
@@ -2079,7 +2079,7 @@ can affect function inlining rules:
 In particular, a caller function can inline a callee function only if the
 architectural features available to the callee are a subset of the features
 available to the caller.
-For example: A function ``foo`` compiled with :option:`-march=armv8-a+crc` ,
+For example: A function ``foo`` compiled with :option:`-march=armv8-a+crc`,
 or tagged with the equivalent ``arch=armv8-a+crc`` attribute,
 can inline a function ``bar`` compiled with :option:`-march=armv8-a+nocrc`
 because the all the architectural features that function ``bar`` requires
@@ -2364,7 +2364,7 @@ These function attributes are supported for ARM targets:
   values for the argument are ``"aapcs"`` and ``"aapcs-vfp"``.  In
   order to use a variant other than ``"aapcs"`` then the compiler must
   be permitted to use the appropriate co-processor registers (i.e., the
-  VFP registers must be available in order to use ``"aapcs-vfp"``).
+  VFP registers must be available in order to use ``"aapcs-vfp"`` ).
   For example,
 
   .. code-block:: c++
@@ -2502,13 +2502,13 @@ These function attributes are supported by the AVR back end:
   Situations where you might want to use this attribute include:
 
   * Code that (effectively) clobbers bits of ``SREG`` other than the
-    ``I``-flag by writing to the memory location of ``SREG``.
+    ``I`` -flag by writing to the memory location of ``SREG``.
 
   * Code that uses inline assembler to jump to a different function which
     expects (parts of) the prologue code as outlined above to be present.
 
   To disable ``__gcc_isr`` generation for the whole compilation unit,
-  there is option :option:`-mno-gas-isr-prologues` , see :ref:`avr-options`.
+  there is option :option:`-mno-gas-isr-prologues`, see :ref:`avr-options`.
 
 .. option:: OS_main
 
@@ -2604,7 +2604,7 @@ These function attributes are supported by the Blackfin back end:
 
   This attribute specifies a function to be placed into L1 Instruction
   SRAM. The function is put into a specific section named ``.l1.text``.
-  With :option:`-mfdpic` , function calls with a such function as the callee
+  With :option:`-mfdpic`, function calls with a such function as the callee
   or caller uses inlined PLT.
 
 .. option:: l2
@@ -2613,7 +2613,7 @@ These function attributes are supported by the Blackfin back end:
 
   This attribute specifies a function to be placed into L2
   SRAM. The function is put into a specific section named
-  ``.l2.text``. With :option:`-mfdpic` , callers of such functions use
+  ``.l2.text``. With :option:`-mfdpic`, callers of such functions use
   an inlined PLT.
 
 .. option:: longcall
@@ -3169,7 +3169,7 @@ targets.
 
   GCC's default behavior is to emit all inline functions with the
   ``dllexport`` attribute.  Since this can cause object file-size bloat,
-  you can use :option:`-fno-keep-inline-dllexport` , which tells GCC to
+  you can use :option:`-fno-keep-inline-dllexport`, which tells GCC to
   ignore the attribute for inlined functions unless the 
   :option:`-fkeep-inline-functions` flag is used instead.
 
@@ -3925,7 +3925,7 @@ These function attributes are supported by the RL78 back end:
 
   Use ``brk_interrupt`` instead of ``interrupt`` for
   handlers intended to be used with the ``BRK`` opcode (i.e. those
-  that must end with ``RETB`` instead of ``RETI``).
+  that must end with ``RETB`` instead of ``RETI`` ).
 
 .. option:: naked
 

@@ -78,7 +78,7 @@ information on preprocessing in :command:`gfortran`.
 
   .. index:: debugging, preprocessor
 
-  Like :option:`-dD` , but emit only the macro names, not their expansions.
+  Like :option:`-dD`, but emit only the macro names, not their expansions.
 
 .. option:: -dU
 
@@ -169,7 +169,7 @@ information on preprocessing in :command:`gfortran`.
 
   .. index:: preprocessing, include path
 
-  Search :samp:`{dir}` only for header files requested with ``#include "file"``;
+  Search :samp:`{dir}` only for header files requested with ``#include "file"`` ;
   they are not searched for ``#include <file>``, before all directories
   specified by :option:`-I` and before the standard system directories. If
   :samp:`{dir}` begins with ``=``, then the ``=`` will be replaced by the
@@ -247,7 +247,7 @@ information on preprocessing in :command:`gfortran`.
   .. index:: preprocessing, keep comments
 
   Do not discard comments, including during macro expansion. This is like
-  :option:`-C` , except that comments contained within macros are also passed
+  :option:`-C`, except that comments contained within macros are also passed
   through to the output file where the macro is expanded.
 
   In addition to the side-effects of the :option:`-C` option, the :option:`-CC`
@@ -317,6 +317,6 @@ information on preprocessing in :command:`gfortran`.
 
   .. index:: preprocessing, undefine macros
 
-  Cancel any previous definition of :samp:`{name}` , either built in or provided
+  Cancel any previous definition of :samp:`{name}`, either built in or provided
   with a :option:`-D` option.
 

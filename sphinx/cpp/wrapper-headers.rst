@@ -37,7 +37,7 @@ use the GNU extension :samp:`#include_next`.  It means, 'Include the
 searching the list of header file directories *after* the directory
 in which the current file was found.
 
-Suppose you specify :option:`-I /usr/local/include` , and the list of
+Suppose you specify :option:`-I /usr/local/include`, and the list of
 directories to search also includes /usr/include; and suppose
 both directories contain signal.h.  Ordinary ``#include
 <signal.h>`` finds the file under /usr/local/include.  If that

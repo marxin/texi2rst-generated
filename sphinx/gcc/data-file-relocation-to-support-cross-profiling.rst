@@ -4,7 +4,7 @@ Data File Relocation to Support Cross-Profiling
 ***********************************************
 
 Running the program will cause profile output to be generated.  For each
-source file compiled with :option:`-fprofile-arcs` , an accompanying .gcda
+source file compiled with :option:`-fprofile-arcs`, an accompanying .gcda
 file will be placed in the object file directory. That implicitly requires
 running the program on the same system as it was built or having the same
 absolute directory structure on the target system. The program will try
@@ -24,7 +24,7 @@ can relocate the data files based on two environment variables:
    then a relative path is made out of the hardwired absolute paths.
 
 For example, if the object file /user/build/foo.o was built with
-:option:`-fprofile-arcs` , the final executable will try to create the data file
+:option:`-fprofile-arcs`, the final executable will try to create the data file
 /user/build/foo.gcda when running on the target system.  This will
 fail if the corresponding directory does not exist and it is unable to create
 it.  This can be overcome by, for example, setting the environment as

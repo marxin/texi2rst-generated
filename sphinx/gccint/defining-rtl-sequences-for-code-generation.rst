@@ -17,7 +17,7 @@ represent them.  For these target machines, you can write a
 .. index:: define_expand
 
 A ``define_expand`` is an RTL expression that looks almost like a
-``define_insn``; but, unlike the latter, a ``define_expand`` is used
+``define_insn`` ; but, unlike the latter, a ``define_expand`` is used
 only for RTL generation and it can produce more than one RTL insn.
 
 A ``define_expand`` RTX has four operands:
@@ -97,11 +97,11 @@ as a statement.
   compiler will try other strategies for code generation using other patterns.
 
   Failure is currently supported only for binary (addition, multiplication,
-  shifting, etc.) and bit-field (``extv``, ``extzv``, and ``insv``)
+  shifting, etc.) and bit-field ( ``extv``, ``extzv``, and ``insv`` )
   operations.
 
 If the preparation falls through (invokes neither ``DONE`` nor
-``FAIL``), then the ``define_expand`` acts like a
+``FAIL`` ), then the ``define_expand`` acts like a
 ``define_insn`` in that the RTL template is used to generate the
 insn.
 
@@ -152,7 +152,7 @@ library call).
 If the compiler were able to handle nontrivial condition-strings in
 patterns with names, then it would be possible to use a
 ``define_insn`` in that case.  Here is another case (zero-extension
-on the 68000) which makes more use of the power of ``define_expand``:
+on the 68000) which makes more use of the power of ``define_expand`` :
 
 .. code-block:: c++
 
@@ -178,7 +178,7 @@ temporary register if it refers to ``operands[0]``.  It does this
 by emitting another RTL insn.
 
 Finally, a third example shows the use of an internal operand.
-Zero-extension on the SPUR chip is done by ``and``-ing the result
+Zero-extension on the SPUR chip is done by ``and`` -ing the result
 against a halfword mask.  But this mask cannot be represented by a
 ``const_int`` because the constant value is too large to be legitimate
 on this machine.  So it must be copied into a register with

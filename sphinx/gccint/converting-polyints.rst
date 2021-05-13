@@ -1,11 +1,11 @@
-Converting ``poly_int``s
-************************
+Converting ``poly_int`` s
+*************************
 
 A ``poly_int<n, T>`` can be constructed from up to
 :samp:`{n}` individual :samp:`{T}` coefficients, with the remaining coefficients
 being implicitly zero.  In particular, this means that every
 ``poly_int<n, T>`` can be constructed from a single
-scalar :samp:`{T}` , or something compatible with :samp:`{T}`.
+scalar :samp:`{T}`, or something compatible with :samp:`{T}`.
 
 Also, a ``poly_int<n, T>`` can be constructed from
 a ``poly_int<n, U>`` if :samp:`{T}` can be constructed
@@ -31,28 +31,28 @@ or test whether such a conversion would succeed.
 :samp:`{value}.to_shwi (&{p2})`
   Return true if :samp:`poly_int<{N}, {T}>` :samp:`{value}` can be
   represented without loss of precision as a
-  :samp:`poly_int<{N}, ``HOST_WIDE_INT``>`, storing it in that
+  :samp:`poly_int<{N}, ``HOST_WIDE_INT`` >`, storing it in that
   form in :samp:`{p2}` if so.
 
 :samp:`{value}.to_uhwi (&{p2})`
   Return true if :samp:`poly_int<{N}, {T}>` :samp:`{value}` can be
   represented without loss of precision as a
-  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT``>`, storing it in that
+  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT`` >`, storing it in that
   form in :samp:`{p2}` if so.
 
 :samp:`{value}.force_shwi ()`
   Forcibly convert each coefficient of :samp:`poly_int<{N}, {T}>`
   :samp:`{value}` to ``HOST_WIDE_INT``, truncating any that are out of range.
-  Return the result as a :samp:`poly_int<{N}, ``HOST_WIDE_INT``>`.
+  Return the result as a :samp:`poly_int<{N}, ``HOST_WIDE_INT`` >`.
 
 :samp:`{value}.force_uhwi ()`
   Forcibly convert each coefficient of :samp:`poly_int<{N}, {T}>`
   :samp:`{value}` to ``unsigned HOST_WIDE_INT``, truncating any that are
   out of range.  Return the result as a
-  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT``>`.
+  :samp:`poly_int<{N}, ``unsigned HOST_WIDE_INT`` >`.
 
 :samp:`wi::shwi ({value}, {precision})`
-  Return a ``poly_int`` with the same value as :samp:`{value}` , but with
+  Return a ``poly_int`` with the same value as :samp:`{value}`, but with
   the coefficients converted from ``HOST_WIDE_INT`` to ``wide_int``.
   :samp:`{precision}` specifies the precision of the ``wide_int`` cofficients;
   if this is wider than a ``HOST_WIDE_INT``, the coefficients of
@@ -65,7 +65,7 @@ or test whether such a conversion would succeed.
   zero-extended to fit.
 
 :samp:`wi::sext ({value}, {precision})`
-  Return a ``poly_int`` of the same type as :samp:`{value}` , sign-extending
+  Return a ``poly_int`` of the same type as :samp:`{value}`, sign-extending
   every coefficient from the low :samp:`{precision}` bits.  This in effect
   applies ``wi::sext`` to each coefficient individually.
 

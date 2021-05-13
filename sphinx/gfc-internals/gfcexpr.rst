@@ -91,13 +91,13 @@ of the ``NULL`` expression is known, it is stored in ``ts`` (that's for
 instance the case for default-initializers of ``ALLOCATABLE`` components),
 but this member can also be set to ``BT_UNKNOWN`` if the information is not
 available (for instance, when the expression is a pointer-initializer
-``NULL()``).
+``NULL()`` ).
 
 Variables and Reference Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Variable references are ``gfc_expr`` structures with their ``expr_type``
-set to ``EXPR_VARIABLE``; their ``symtree`` should point to the variable
+set to ``EXPR_VARIABLE`` ; their ``symtree`` should point to the variable
 that is referenced.
 
 For this type of expression, it's also possible to chain array-, component-

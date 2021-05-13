@@ -31,15 +31,15 @@
   ===========================================
 
 :samp:`{Arguments}:`
-  =================  ===================================================
+  =================  ====================================================
   :samp:`{NUMBER}`   Shall be a scalar integer, with ``INTENT(IN)``
-  =================  ===================================================
-  :samp:`{HANDLER}`  Signal handler (``INTEGER FUNCTION`` or
-                     ``SUBROUTINE``) or dummy/global ``INTEGER`` scalar.
+  =================  ====================================================
+  :samp:`{HANDLER}`  Signal handler ( ``INTEGER FUNCTION`` or
+                     ``SUBROUTINE`` ) or dummy/global ``INTEGER`` scalar.
                      ``INTEGER``. It is ``INTENT(IN)``.
   :samp:`{STATUS}`   (Optional) :samp:`{STATUS}` shall be a scalar
                      integer. It has ``INTENT(OUT)``.
-  =================  ===================================================
+  =================  ====================================================
 
   .. TODO: What should the interface of the handler be?  Does it take arguments?
 

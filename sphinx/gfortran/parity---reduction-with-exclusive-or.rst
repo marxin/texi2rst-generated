@@ -42,7 +42,7 @@
   If :samp:`{DIM}` is absent, a scalar with the parity of all elements in
   :samp:`{MASK}` is returned, i.e. true if an odd number of elements is
   ``.true.`` and false otherwise.  If :samp:`{DIM}` is present, an array
-  of rank n-1, where n equals the rank of :samp:`{ARRAY}` ,
+  of rank n-1, where n equals the rank of :samp:`{ARRAY}`,
   and a shape similar to that of :samp:`{MASK}` with dimension :samp:`{DIM}`
   dropped is returned.
 

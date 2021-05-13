@@ -44,7 +44,7 @@
 
 :samp:`{Return value}:`
   The result is an array of rank one and the same type as that of :samp:`{ARRAY}`.
-  If :samp:`{VECTOR}` is present, the result size is that of :samp:`{VECTOR}` , the
+  If :samp:`{VECTOR}` is present, the result size is that of :samp:`{VECTOR}`, the
   number of ``TRUE`` values in :samp:`{MASK}` otherwise.
 
 :samp:`{Example}:`

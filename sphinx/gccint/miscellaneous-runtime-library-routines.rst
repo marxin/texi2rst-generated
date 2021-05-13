@@ -15,7 +15,7 @@ Split stack functions and variables
 
 .. function:: void * __splitstack_find(void *segment_arg,void *sp,size_t len,void **next_segment,void **next_sp,void **initial_sp)
 
-  When using :option:`-fsplit-stack` , this call may be used to iterate
+  When using :option:`-fsplit-stack`, this call may be used to iterate
   over the stack segments.  It may be called like this:
 
   .. code-block:: c++
@@ -37,7 +37,7 @@ Split stack functions and variables
   There is no way to iterate over the stack segments of a different
   thread.  However, what is permitted is for one thread to call this
   with the :samp:`{segment_arg}` and :samp:`{sp}` arguments NULL, to pass
-  :samp:`{next_segment}` , :samp:`{next_sp}` , and :samp:`{initial_sp}` to a different
+  :samp:`{next_segment}`, :samp:`{next_sp}`, and :samp:`{initial_sp}` to a different
   thread, and then to suspend one way or another.  A different thread
   may run the subsequent ``__splitstack_find`` iterations.  Of
   course, this will only work if the first thread is suspended while the

@@ -5,7 +5,7 @@
 
 Description
   This function indicates to the runtime library which device type, specified
-  in :samp:`{devicetype}` , to use when executing a parallel or kernels region. 
+  in :samp:`{devicetype}`, to use when executing a parallel or kernels region. 
 
 :samp:`{C/C++}:`
   ============  =================================================

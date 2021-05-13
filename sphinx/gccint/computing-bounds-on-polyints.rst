@@ -1,5 +1,5 @@
-Computing bounds on ``poly_int``s
-*********************************
+Computing bounds on ``poly_int`` s
+**********************************
 
 ``poly_int`` also provides routines for calculating lower and upper bounds:
 

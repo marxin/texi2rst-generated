@@ -29,7 +29,7 @@ call it twice:
 The nested function can access all the variables of the containing
 function that are visible at the point of its definition.  This is
 called :dfn:`lexical scoping`.  For example, here we show a nested
-function which uses an inherited variable named ``offset``:
+function which uses an inherited variable named ``offset`` :
 
 .. code-block:: c++
 
@@ -64,7 +64,7 @@ Here, the function ``intermediate`` receives the address of
 ``store`` as an argument.  If ``intermediate`` calls ``store``,
 the arguments given to ``store`` are used to store into ``array``.
 But this technique works only so long as the containing function
-(``hack``, in this example) does not exit.
+( ``hack``, in this example) does not exit.
 
 If you try to call the nested function through its address after the
 containing function exits, all hell breaks loose.  If you try

@@ -17,7 +17,7 @@ id-number that distinguishes it from all other insns in the current
 function (after delayed branch scheduling, copies of an insn with the
 same id-number may be present in multiple places in a function, but
 these copies will always be identical and will only appear inside a
-``sequence``), and chain pointers to the preceding and following
+``sequence`` ), and chain pointers to the preceding and following
 insns.  These three fields occupy the same position in every insn,
 independent of the expression code of the insn.  They could be accessed
 with ``XEXP`` and ``XINT``, but instead three special macros are
@@ -44,7 +44,7 @@ always used:
 
 .. index:: get_last_insn
 
-The first insn in the chain is obtained by calling ``get_insns``; the
+The first insn in the chain is obtained by calling ``get_insns`` ; the
 last insn is the result of calling ``get_last_insn``.  Within the
 chain delimited by these insns, the ``NEXT_INSN`` and
 ``PREV_INSN`` pointers must always correspond: if :samp:`{insn}` is not
@@ -132,7 +132,7 @@ Every insn has one of the following expression codes:
   ``CALL_INSN_FUNCTION_USAGE``, which contains a list (chain of
   ``expr_list`` expressions) containing ``use``, ``clobber`` and
   sometimes ``set`` expressions that denote hard registers and
-  ``mem``s used or clobbered by the called function.
+  ``mem`` s used or clobbered by the called function.
 
   A ``mem`` generally points to a stack slot in which arguments passed
   to the libcall by reference (see :ref:`register-arguments`) are stored.  If the argument is
@@ -223,7 +223,7 @@ Every insn has one of the following expression codes:
   Barriers are placed in the instruction stream when control cannot flow
   past them.  They are placed after unconditional jump instructions to
   indicate that the jumps are unconditional and after calls to
-  ``volatile`` functions, which do not return (e.g., ``exit``).
+  ``volatile`` functions, which do not return (e.g., ``exit`` ).
   They contain no information beyond the three standard fields.
 
   .. index:: note
@@ -318,16 +318,16 @@ Every insn has one of the following expression codes:
 
   ``GIMPLE_DEBUG_BEGIN_STMT`` and ``GIMPLE_DEBUG_INLINE_ENTRY`` are
   expanded to RTL as a ``DEBUG_INSN`` with a ``DEBUG_MARKER``
-  ``PATTERN``; the difference is the RTL mode: the former's
+  ``PATTERN`` ; the difference is the RTL mode: the former's
   ``DEBUG_MARKER`` is ``VOIDmode``, whereas the latter is
-  ``BLKmode``; information about the inlined function can be taken from
+  ``BLKmode`` ; information about the inlined function can be taken from
   the lexical block encoded in the ``INSN_LOCATION``.  These
-  ``DEBUG_INSN``s, that do not carry ``VAR_LOCATION`` information,
-  just ``DEBUG_MARKER``s, can be detected by testing
+  ``DEBUG_INSN`` s, that do not carry ``VAR_LOCATION`` information,
+  just ``DEBUG_MARKER`` s, can be detected by testing
   ``DEBUG_MARKER_INSN_P``, whereas those that do can be recognized as
   ``DEBUG_BIND_INSN_P``.
 
-  Throughout optimization passes, ``DEBUG_INSN``s are not reordered
+  Throughout optimization passes, ``DEBUG_INSN`` s are not reordered
   with respect to each other, particularly during scheduling.  Binding
   information is kept in pseudo-instruction form, so that, unlike notes,
   it gets the same treatment and adjustments that regular instructions
@@ -476,7 +476,7 @@ These register notes annotate inputs to an insn:
 
 .. envvar:: REG_LABEL_OPERAND
 
-  This insn uses :samp:`{op}` , a ``code_label`` or a ``note`` of type
+  This insn uses :samp:`{op}`, a ``code_label`` or a ``note`` of type
   ``NOTE_INSN_DELETED_LABEL``, but is not a ``jump_insn``, or it
   is a ``jump_insn`` that refers to the operand as an ordinary
   operand.  The label may still eventually be a jump target, but if so
@@ -487,7 +487,7 @@ These register notes annotate inputs to an insn:
 .. envvar:: REG_LABEL_TARGET
 
   This insn is a ``jump_insn`` but not an ``addr_vec`` or
-  ``addr_diff_vec``.  It uses :samp:`{op}` , a ``code_label`` as a
+  ``addr_diff_vec``.  It uses :samp:`{op}`, a ``code_label`` as a
   direct or indirect jump target.  Its purpose is similar to that of
   ``REG_LABEL_OPERAND``.  This note is only present if the insn has
   multiple targets; the last label in the insn (in the highest numbered
@@ -511,7 +511,7 @@ The following notes describe attributes of outputs of an insn:
   indicates that that register will be equal to :samp:`{op}` at run time; the
   scope of this equivalence differs between the two types of notes.  The
   value which the insn explicitly copies into the register may look
-  different from :samp:`{op}` , but they will be equal at run time.  If the
+  different from :samp:`{op}`, but they will be equal at run time.  If the
   output of the single ``set`` is a ``strict_low_part`` or
   ``zero_extract`` expression, the note refers to the register that
   is contained in its first operand.

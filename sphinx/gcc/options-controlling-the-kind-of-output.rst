@@ -139,7 +139,7 @@ You can specify the input language explicitly with the :option:`-x` option:
 
   If you only want some of the stages of compilation, you can use
 :option:`-x` (or filename suffixes) to tell :command:`gcc` where to start, and
-one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
+one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 :command:`gcc` is to stop.  Note that some combinations (for example,
 :samp:`-x cpp-output -E`) instruct :command:`gcc` to do nothing at all.
 
@@ -208,7 +208,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
 
   will use foo.o as the primary output, and place aux outputs and
   dumps next to it, e.g., aux file foo.dwo for
-  :option:`-gsplit-dwarf` , and dump file foo.c.???r.final for
+  :option:`-gsplit-dwarf`, and dump file foo.c.???r.final for
   :option:`-fdump-rtl-final`.
 
   If a non-linker output file is explicitly specified, aux and dump files
@@ -242,8 +242,8 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   named dir/foo.c.*.
 
   The location and the names of auxiliary and dump outputs can be adjusted
-  by the options :option:`-dumpbase` , :option:`-dumpbase-ext` ,
-  :option:`-dumpdir` , :option:`-save-temps=cwd` , and
+  by the options :option:`-dumpbase`, :option:`-dumpbase-ext`,
+  :option:`-dumpdir`, :option:`-save-temps=cwd`, and
   :option:`-save-temps=obj`.
 
 .. option:: -dumpbase dumpbase, -dumpbase
@@ -273,7 +273,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   specified: dump output files (e.g. those requested by :option:`-fdump-*`
   options) with the input name suffix, and aux output files (those
   requested by other non-dump options, e.g. ``-save-temps``,
-  ``-gsplit-dwarf``, ``-fcallgraph-info``) without it.
+  ``-gsplit-dwarf``, ``-fcallgraph-info`` ) without it.
 
   Similar suffix differentiation of dump and aux outputs can be attained
   for explicitly-given :option:`-dumpbase basename.suf` by also specifying
@@ -290,13 +290,13 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
       -dumpdir pfx- -save-temps=cwd ...
 
   creates auxiliary and dump outputs named alt/foo.*, disregarding
-  dir/ in :option:`-o` , the ./ prefix implied by
-  :option:`-save-temps=cwd` , and pfx- in :option:`-dumpdir`.
+  dir/ in :option:`-o`, the ./ prefix implied by
+  :option:`-save-temps=cwd`, and pfx- in :option:`-dumpdir`.
 
   When :option:`-dumpbase` is specified in a command that compiles multiple
   inputs, or that compiles and then links, it may be combined with
-  :samp:`{dumppfx}` , as specified under :option:`-dumpdir`.  Then, each input
-  file is compiled using the combined :samp:`{dumppfx}` , and default values
+  :samp:`{dumppfx}`, as specified under :option:`-dumpdir`.  Then, each input
+  file is compiled using the combined :samp:`{dumppfx}`, and default values
   for :samp:`{dumpbase}` and :samp:`{auxdropsuf}` are computed for each input
   file:
 
@@ -339,7 +339,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   When forming the name of an auxiliary (but not a dump) output file, drop
   trailing :samp:`{auxdropsuf}` from :samp:`{dumpbase}` before appending any
   suffixes.  If not specified, this option defaults to the suffix of a
-  default :samp:`{dumpbase}` , i.e., the suffix of the input file when
+  default :samp:`{dumpbase}`, i.e., the suffix of the input file when
   :option:`-dumpbase` is not present in the command line, or :samp:`{dumpbase}`
   is combined with :samp:`{dumppfx}`.
 
@@ -353,8 +353,8 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   outputs retain the suffix: dir/x-foo.c.*.
 
   This option is disregarded if it does not match the suffix of a
-  specified :samp:`{dumpbase}` , except as an alternative to the executable
-  suffix when appending the linker output base name to :samp:`{dumppfx}` , as
+  specified :samp:`{dumpbase}`, except as an alternative to the executable
+  suffix when appending the linker output base name to :samp:`{dumppfx}`, as
   specified below:
 
   .. code-block:: bash
@@ -406,14 +406,14 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   outputs foo.o, with auxiliary outputs named foo.* because
   :option:`-save-temps=*` overrides the :samp:`{dumppfx}` given by the earlier
   :option:`-dumpdir` option.  It does not matter that =obj is the
-  default for :option:`-save-temps` , nor that the output directory is
+  default for :option:`-save-temps`, nor that the output directory is
   implicitly the current directory.  Dump outputs are named
   foo.c.*.
 
   When compiling from multiple input files, if :option:`-dumpbase` is
-  specified, :samp:`{dumpbase}` , minus a :samp:`{auxdropsuf}` suffix, and a dash
+  specified, :samp:`{dumpbase}`, minus a :samp:`{auxdropsuf}` suffix, and a dash
   are appended to (or override, if containing any directory components) an
-  explicit or defaulted :samp:`{dumppfx}` , so that each of the multiple
+  explicit or defaulted :samp:`{dumppfx}`, so that each of the multiple
   compilations gets differently-named aux and dump outputs.
 
   .. code-block:: bash
@@ -439,7 +439,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   transformation above (e.g. the compilation of foo.c and
   bar.c above, but without :option:`-c` ).  If neither
   :option:`-dumpdir` nor :option:`-dumpbase` are given, the linker output
-  base name, minus :samp:`{auxdropsuf}` , if specified, or the executable
+  base name, minus :samp:`{auxdropsuf}`, if specified, or the executable
   suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`
   instead.  Note, however, that unlike earlier cases of linking:
 
@@ -447,7 +447,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
 
     gcc foo.c bar.c -dumpdir dir/pfx- -o main ...
 
-  does not append the output name main to :samp:`{dumppfx}` , because
+  does not append the output name main to :samp:`{dumppfx}`, because
   :option:`-dumpdir` is explicitly specified.  The goal is that the
   explicitly-specified :samp:`{dumppfx}` may contain the specified output name
   as part of the prefix, if desired; only an explicitly-specified
@@ -472,26 +472,26 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
   Summing it all up for an intuitive though slightly imprecise data flow:
   the primary output name is broken into a directory part and a basename
   part; :samp:`{dumppfx}` is set to the former, unless overridden by
-  :option:`-dumpdir` or :option:`-save-temps=*` , and :samp:`{dumpbase}` is set
+  :option:`-dumpdir` or :option:`-save-temps=*`, and :samp:`{dumpbase}` is set
   to the latter, unless overriden by :option:`-dumpbase`.  If there are
   multiple inputs or linking, this :samp:`{dumpbase}` may be combined with
   :samp:`{dumppfx}` and taken from each input file.  Auxiliary output names
-  for each input are formed by combining :samp:`{dumppfx}` , :samp:`{dumpbase}`
+  for each input are formed by combining :samp:`{dumppfx}`, :samp:`{dumpbase}`
   minus suffix, and the auxiliary output suffix; dump output names are
   only different in that the suffix from :samp:`{dumpbase}` is retained.
 
   When it comes to auxiliary and dump outputs created during LTO
-  recompilation, a combination of :samp:`{dumppfx}` and :samp:`{dumpbase}` , as
+  recompilation, a combination of :samp:`{dumppfx}` and :samp:`{dumpbase}`, as
   given or as derived from the linker output name but not from inputs,
   even in cases in which this combination would not otherwise be used as
   such, is passed down with a trailing period replacing the compiler-added
   dash, if any, as a :option:`-dumpdir` option to :command:`lto-wrapper`;
   being involved in linking, this program does not normally get any
-  :option:`-dumpbase` and :option:`-dumpbase-ext` , and it ignores them.
+  :option:`-dumpbase` and :option:`-dumpbase-ext`, and it ignores them.
 
   When running sub-compilers, :command:`lto-wrapper` appends LTO stage
-  names to the received :samp:`{dumppfx}` , ensures it contains a directory
-  component so that it overrides any :option:`-dumpdir` , and passes that as
+  names to the received :samp:`{dumppfx}`, ensures it contains a directory
+  component so that it overrides any :option:`-dumpdir`, and passes that as
   :option:`-dumpbase` to sub-compilers.
 
 .. option:: -v
@@ -546,7 +546,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
     option.
 
   language
-    Display the options supported for :samp:`{language}` , where
+    Display the options supported for :samp:`{language}`, where
     :samp:`{language}` is the name of one of the languages supported in this
     version of GCC.  If an option is supported by all languages, one needs
     to select :samp:`common` class.
@@ -633,7 +633,7 @@ one of the options :option:`-c` , :option:`-S` , or :option:`-E` to say where
 
   Normally the :command:`gcc` program exits with the code of 1 if any
   phase of the compiler returns a non-success return code.  If you specify
-  :option:`-pass-exit-codes` , the :command:`gcc` program instead returns with
+  :option:`-pass-exit-codes`, the :command:`gcc` program instead returns with
   the numerically highest error produced by any phase returning an error
   indication.  The C, C++, and Fortran front ends return 4 if an internal
   compiler error is encountered.

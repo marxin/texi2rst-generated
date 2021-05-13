@@ -20,7 +20,7 @@ the operands of these.
   Represents the action of storing the value of :samp:`{x}` into the place
   represented by :samp:`{lval}`.  :samp:`{lval}` must be an expression
   representing a place that can be stored in: ``reg`` (or ``subreg``,
-  ``strict_low_part`` or ``zero_extract``), ``mem``, ``pc``,
+  ``strict_low_part`` or ``zero_extract`` ), ``mem``, ``pc``,
   or ``parallel``.
 
   If :samp:`{lval}` is a ``reg``, ``subreg`` or ``mem``, it has a
@@ -64,7 +64,7 @@ the operands of these.
   does not jump) and the other of the two must be a ``label_ref``
   (for the case which does jump).  :samp:`{x}` may also be a ``mem`` or
   ``(plus:SI (pc) y)``, where :samp:`{y}` may be a ``reg`` or a
-  ``mem``; these unusual patterns are used to represent jumps through
+  ``mem`` ; these unusual patterns are used to represent jumps through
   branch tables.
 
   If :samp:`{lval}` is not ``(pc)``, the mode of
@@ -122,7 +122,7 @@ the operands of these.
 
 :samp:`(clobber {x})`
   Represents the storing or possible storing of an unpredictable,
-  undescribed value into :samp:`{x}` , which must be a ``reg``,
+  undescribed value into :samp:`{x}`, which must be a ``reg``,
   ``scratch``, ``parallel`` or ``mem`` expression.
 
   One place this is used is in string instructions that store standard
@@ -171,12 +171,12 @@ the operands of these.
   For instructions that require a temporary register, you should use
   ``scratch`` instead of a pseudo-register because this will allow the
   combiner phase to add the ``clobber`` when required.  You do this by
-  coding (``clobber`` (``match_scratch`` ...)).  If you do
+  coding ( ``clobber`` ( ``match_scratch`` ...)).  If you do
   clobber a pseudo register, use one which appears nowhere else-generate
   a new one each time.  Otherwise, you may confuse CSE.
 
   There is one other known use for clobbering a pseudo register in a
-  ``parallel``: when one of the input operands of the insn is also
+  ``parallel`` : when one of the input operands of the insn is also
   clobbered by the insn.  In this case, using the same pseudo register in
   the clobber and elsewhere in the insn produces the expected results.
 
@@ -231,7 +231,7 @@ the operands of these.
 :samp:`(parallel [{x0}{x1} ...])`
   Represents several side effects performed in parallel.  The square
   brackets stand for a vector; the operand of ``parallel`` is a
-  vector of expressions.  :samp:`{x0}` , :samp:`{x1}` and so on are individual
+  vector of expressions.  :samp:`{x0}`, :samp:`{x1}` and so on are individual
   side effect expressions-expressions of code ``set``, ``call``,
   ``return``, ``simple_return``, ``clobber`` or ``use``.
 
@@ -342,7 +342,7 @@ effects as such:
   .. index:: addr_vec
 
 :samp:`(addr_vec:{m} [{lr0}{lr1} ...])`
-  Represents a table of jump addresses.  The vector elements :samp:`{lr0}` ,
+  Represents a table of jump addresses.  The vector elements :samp:`{lr0}`,
   etc., are ``label_ref`` expressions.  The mode :samp:`{m}` specifies
   how much space is given to each address; normally :samp:`{m}` would be
   ``Pmode``.
@@ -351,12 +351,12 @@ effects as such:
 
 :samp:`(addr_diff_vec:{m}{base} [{lr0}{lr1} ...] {min}{max}{flags})`
   Represents a table of jump addresses expressed as offsets from
-  :samp:`{base}`.  The vector elements :samp:`{lr0}` , etc., are ``label_ref``
+  :samp:`{base}`.  The vector elements :samp:`{lr0}`, etc., are ``label_ref``
   expressions and so is :samp:`{base}`.  The mode :samp:`{m}` specifies how much
   space is given to each address-difference.  :samp:`{min}` and :samp:`{max}`
   are set up by branch shortening and hold a label with a minimum and a
   maximum address, respectively.  :samp:`{flags}` indicates the relative
-  position of :samp:`{base}` , :samp:`{min}` and :samp:`{max}` to the containing insn
+  position of :samp:`{base}`, :samp:`{min}` and :samp:`{max}` to the containing insn
   and of :samp:`{min}` and :samp:`{max}` to :samp:`{base}`.  See rtl.def for details.
 
   .. index:: prefetch

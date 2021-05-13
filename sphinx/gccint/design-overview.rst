@@ -52,11 +52,11 @@ Currently, this phase is composed of two IPA passes:
 
 The second half of LTO support is the 'reader'.  This is implemented
 as the GCC front end lto1 in lto/lto.c.  When
-collect2 detects a link set of ``.o``/``.a`` files with
+collect2 detects a link set of ``.o`` / ``.a`` files with
 LTO information and the :option:`-flto` is enabled, it invokes
 lto1 which reads the set of files and aggregates them into a
 single translation unit for optimization.  The main entry point for
-the reader is lto/lto.c:``lto_main``.
+the reader is lto/lto.c: ``lto_main``.
 
 LTO modes of operation
 ^^^^^^^^^^^^^^^^^^^^^^

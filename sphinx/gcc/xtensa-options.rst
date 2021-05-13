@@ -47,11 +47,11 @@ These options are supported for Xtensa targets:
 .. option:: -mtext-section-literals, -mno-text-section-literals
 
   These options control the treatment of literal pools.  The default is
-  :option:`-mno-text-section-literals` , which places literals in a separate
+  :option:`-mno-text-section-literals`, which places literals in a separate
   section in the output file.  This allows the literal pool to be placed
   in a data RAM/ROM, and it also allows the linker to combine literal
   pools from separate object files to remove redundant literals and
-  improve code size.  With :option:`-mtext-section-literals` , the literals
+  improve code size.  With :option:`-mtext-section-literals`, the literals
   are interspersed in the text section in order to keep them as close as
   possible to their references.  This may be necessary for large assembly
   files.  Literals for each function are placed right before that function.
@@ -59,7 +59,7 @@ These options are supported for Xtensa targets:
 .. option:: -mauto-litpools, -mno-auto-litpools
 
   These options control the treatment of literal pools.  The default is
-  :option:`-mno-auto-litpools` , which places literals in a separate
+  :option:`-mno-auto-litpools`, which places literals in a separate
   section in the output file unless :option:`-mtext-section-literals` is
   used.  With :option:`-mauto-litpools` the literals are interspersed in
   the text section by the assembler.  Compiler does not produce explicit

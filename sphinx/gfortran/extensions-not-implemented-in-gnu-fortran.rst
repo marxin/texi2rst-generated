@@ -39,7 +39,7 @@ code that uses them running with the GNU Fortran compiler.
 
 GNU Fortran does not support the ``ENCODE`` and ``DECODE``
 statements.  These statements are best replaced by ``READ`` and
-``WRITE`` statements involving internal files (``CHARACTER``
+``WRITE`` statements involving internal files ( ``CHARACTER``
 variables and arrays), which have been part of the Fortran standard since
 Fortran 77.  For example, replace a code fragment like
 

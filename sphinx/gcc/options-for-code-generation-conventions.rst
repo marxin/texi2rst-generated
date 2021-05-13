@@ -162,7 +162,7 @@ it.
 
 .. option:: -funwind-tables
 
-  Similar to :option:`-fexceptions` , except that it just generates any needed
+  Similar to :option:`-fexceptions`, except that it just generates any needed
   static data, but does not affect the generated code in any other way.
   You normally do not need to enable this option; instead, a language processor
   that needs this handling enables it on your behalf.
@@ -178,7 +178,7 @@ it.
   On systems with recent GNU assembler and C library, the C++ compiler
   uses the ``STB_GNU_UNIQUE`` binding to make sure that definitions
   of template static data members and static local variables in inline
-  functions are unique even in the presence of ``RTLD_LOCAL``; this
+  functions are unique even in the presence of ``RTLD_LOCAL`` ; this
   is necessary to avoid problems with a library used by two different
   ``RTLD_LOCAL`` plugins depending on a definition in one of them and
   therefore disagreeing with the other one about the binding of the
@@ -213,9 +213,9 @@ it.
   :option:`-fpcc-struct-return`.
 
   If you specify neither :option:`-fpcc-struct-return` nor
-  :option:`-freg-struct-return` , GCC defaults to whichever convention is
+  :option:`-freg-struct-return`, GCC defaults to whichever convention is
   standard for the target.  If there is no standard convention, GCC
-  defaults to :option:`-fpcc-struct-return` , except on targets where GCC is
+  defaults to :option:`-fpcc-struct-return`, except on targets where GCC is
   the principal compiler.  In those cases, we can choose the standard, and
   we chose the more efficient register return alternative.
 
@@ -253,7 +253,7 @@ it.
   in the C standard.  Tentative definitions are distinct from declarations
   of a variable with the ``extern`` keyword, which do not allocate storage.
 
-  The default is :option:`-fno-common` , which specifies that the compiler places
+  The default is :option:`-fno-common`, which specifies that the compiler places
   uninitialized global variables in the BSS section of the object file.
   This inhibits the merging of tentative definitions by the linker so you get a
   multiple-definition error if the same variable is accidentally defined in more
@@ -285,7 +285,7 @@ it.
   who actually need to read the generated assembly code (perhaps while
   debugging the compiler itself).
 
-  :option:`-fno-verbose-asm` , the default, causes the
+  :option:`-fno-verbose-asm`, the default, causes the
   extra information to be omitted and is useful when comparing two assembler
   files.
 
@@ -418,7 +418,7 @@ it.
 
 .. option:: -fpie, -fPIE
 
-  These options are similar to :option:`-fpic` and :option:`-fPIC` , but the
+  These options are similar to :option:`-fpic` and :option:`-fPIC`, but the
   generated position-independent code can be only linked into executables.
   Usually these options are used to compile code that will be linked using
   the :option:`-pie` GCC option.
@@ -517,7 +517,7 @@ it.
 
 .. option:: -fleading-underscore
 
-  This option and its counterpart, :option:`-fno-leading-underscore` , forcibly
+  This option and its counterpart, :option:`-fno-leading-underscore`, forcibly
   change the way C symbols are represented in the object file.  One use
   is to help link with legacy assembly code.
 
@@ -609,7 +609,7 @@ it.
   may need to explicitly say ``#pragma GCC visibility push(default)``
   before including any such headers.
 
-  ``extern`` declarations are not affected by :option:`-fvisibility` , so
+  ``extern`` declarations are not affected by :option:`-fvisibility`, so
   a lot of code can be recompiled with :option:`-fvisibility=hidden` with
   no modifications.  However, this means that calls to ``extern``
   functions with no explicit visibility use the PLT, so it is more

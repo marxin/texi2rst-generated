@@ -40,7 +40,7 @@
   ============  ====================================================
   :samp:`{N1}`  Shall be a non-negative scalar of type  ``INTEGER``.
   :samp:`{N2}`  Shall be a non-negative scalar of type  ``INTEGER``.
-  :samp:`{X}`   Shall be a scalar or an array of type  ``REAL``;
+  :samp:`{X}`   Shall be a scalar or an array of type  ``REAL`` ;
                 for ``BESSEL_JN(N1, N2, X)`` it shall be scalar.
   ============  ====================================================
 
@@ -50,7 +50,7 @@
 
 :samp:`{Note}:`
   The transformational function uses a recurrence algorithm which might,
-  for some values of :samp:`{X}` , lead to different results than calls to
+  for some values of :samp:`{X}`, lead to different results than calls to
   the elemental function.
 
 :samp:`{Example}:`

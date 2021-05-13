@@ -24,12 +24,12 @@
 
   :samp:`{VALUES}` and :samp:`{TIME}` are ``INTENT(OUT)`` and provide the following:
 
-  ==============  ================================
-  ``VALUES(1)``:  User time in seconds.
-  ==============  ================================
-  ``VALUES(2)``:  System time in seconds.
-  ``TIME``:       Run time since start in seconds.
-  ==============  ================================
+  ===============  ================================
+  ``VALUES(1)`` :  User time in seconds.
+  ===============  ================================
+  ``VALUES(2)`` :  System time in seconds.
+  ``TIME`` :       Run time since start in seconds.
+  ===============  ================================
 
 :samp:`{Standard}:`
   GNU extension

@@ -101,7 +101,7 @@ M32C Pragmas
 
   .. index:: pragma, address
 
-  For any declared symbols matching :samp:`{name}` , this does three things
+  For any declared symbols matching :samp:`{name}`, this does three things
   to that symbol: it forces the symbol to be located at the given
   address (a number), it forces the symbol to be volatile, and it
   changes the symbol's scope to be static.  This pragma exists for
@@ -331,7 +331,7 @@ The Solaris target supports ``#pragma redefine_extname``
   .. index:: pragma, init
 
   This pragma causes each listed :samp:`{function}` to be called during
-  initialization (before ``main``) or during shared module loading, by
+  initialization (before ``main`` ) or during shared module loading, by
   adding a call to the ``.init`` section.
 
   .. _symbol-renaming-pragmas:
@@ -636,7 +636,7 @@ Function Specific Option Pragmas
   This pragma allows you to set target-specific options for functions
   defined later in the source file.  One or more strings can be
   specified.  Each function that is defined after this point is treated
-  as if it had been declared with one ``target(``:samp:`{string}```)``
+  as if it had been declared with one  ``target(``:samp:`{string}` ``)``
   attribute for each :samp:`{string}` argument.  The parentheses around
   the strings in the pragma are optional.  See :ref:`function-attributes`,
   for more information about the ``target`` attribute and the attribute
@@ -652,7 +652,7 @@ Function Specific Option Pragmas
   This pragma allows you to set global optimization options for functions
   defined later in the source file.  One or more strings can be
   specified.  Each function that is defined after this point is treated
-  as if it had been declared with one ``optimize(``:samp:`{string}```)``
+  as if it had been declared with one  ``optimize(``:samp:`{string}` ``)``
   attribute for each :samp:`{string}` argument.  The parentheses around
   the strings in the pragma are optional.  See :ref:`function-attributes`,
   for more information about the ``optimize`` attribute and the attribute

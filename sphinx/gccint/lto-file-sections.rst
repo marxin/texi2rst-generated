@@ -8,11 +8,11 @@ Data structures and enum codes for sections are defined in
 lto-streamer.h.
 
 These sections are emitted from lto-streamer-out.c and mapped
-in all at once from lto/lto.c:``lto_file_read``.  The
+in all at once from lto/lto.c: ``lto_file_read``.  The
 individual functions dealing with the reading/writing of each section
 are described below.
 
-* Command line options (``.gnu.lto_.opts``)
+* Command line options ( ``.gnu.lto_.opts`` )
 
   This section contains the command line options used to generate the
   object files.  This is used at link time to determine the optimization
@@ -25,9 +25,9 @@ are described below.
   saved on all the files in a link-time set are applied globally.  No
   attempt is made at validating the combination of flags (other than the
   usual validation done by option processing).  This is implemented in
-  lto/lto.c:``lto_read_all_file_options``.
+  lto/lto.c: ``lto_read_all_file_options``.
 
-* Symbol table (``.gnu.lto_.symtab``)
+* Symbol table ( ``.gnu.lto_.symtab`` )
 
   This table replaces the ELF symbol table for functions and variables
   represented in the LTO IL.  Symbols used and exported by the optimized
@@ -44,21 +44,21 @@ are described below.
   symbol table was used.
 
   The symbol table is emitted in
-  lto-streamer-out.c:``produce_symtab``.
+  lto-streamer-out.c: ``produce_symtab``.
 
-* Global declarations and types (``.gnu.lto_.decls``)
+* Global declarations and types ( ``.gnu.lto_.decls`` )
 
   This section contains an intermediate language dump of all
   declarations and types required to represent the callgraph, static
   variables and top-level debug info.
 
   The contents of this section are emitted in
-  lto-streamer-out.c:``produce_asm_for_decls``.  Types and
+  lto-streamer-out.c: ``produce_asm_for_decls``.  Types and
   symbols are emitted in a topological order that preserves the sharing
   of pointers when the file is read back in
-  (lto.c:``read_cgraph_and_symbols``).
+  (lto.c: ``read_cgraph_and_symbols`` ).
 
-* The callgraph (``.gnu.lto_.cgraph``)
+* The callgraph ( ``.gnu.lto_.cgraph`` )
 
   This section contains the basic data structure used by the GCC
   inter-procedural optimization infrastructure.  This section stores an
@@ -66,16 +66,16 @@ are described below.
   well as the variables, aliases and top-level ``asm`` statements.
 
   This section is emitted in
-  lto-streamer-out.c:``output_cgraph`` and read in
-  lto-cgraph.c:``input_cgraph``.
+  lto-streamer-out.c: ``output_cgraph`` and read in
+  lto-cgraph.c: ``input_cgraph``.
 
-* IPA references (``.gnu.lto_.refs``)
+* IPA references ( ``.gnu.lto_.refs`` )
 
   This section contains references between function and static
-  variables.  It is emitted by lto-cgraph.c:``output_refs``
-  and read by lto-cgraph.c:``input_refs``.
+  variables.  It is emitted by lto-cgraph.c: ``output_refs``
+  and read by lto-cgraph.c: ``input_refs``.
 
-* Function bodies (``.gnu.lto_.function_body.<name>``)
+* Function bodies ( ``.gnu.lto_.function_body.<name>`` )
 
   This section contains function bodies in the intermediate language
   representation.  Every function body is in a separate section to allow
@@ -83,18 +83,18 @@ are described below.
   reading the function on demand.
 
   Functions are emitted in
-  lto-streamer-out.c:``output_function`` and read in
-  lto-streamer-in.c:``input_function``.
+  lto-streamer-out.c: ``output_function`` and read in
+  lto-streamer-in.c: ``input_function``.
 
-* Static variable initializers (``.gnu.lto_.vars``)
+* Static variable initializers ( ``.gnu.lto_.vars`` )
 
   This section contains all the symbols in the global variable pool.  It
-  is emitted by lto-cgraph.c:``output_varpool`` and read in
-  lto-cgraph.c:``input_cgraph``.
+  is emitted by lto-cgraph.c: ``output_varpool`` and read in
+  lto-cgraph.c: ``input_cgraph``.
 
 * Summaries and optimization summaries used by IPA passes
-  (``.gnu.lto_.<xxx>``, where ``<xxx>`` is one of ``jmpfuncs``,
-  ``pureconst`` or ``reference``)
+  ( ``.gnu.lto_.<xxx>``, where ``<xxx>`` is one of ``jmpfuncs``,
+  ``pureconst`` or ``reference`` )
 
   These sections are used by IPA passes that need to emit summary
   information during LTO generation to be read and aggregated at

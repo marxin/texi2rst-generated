@@ -160,7 +160,7 @@ These options are defined for AVR implementations:
   If this option is on, the feature can still be disabled for individual
   ISRs by means of the AVR Function Attributes``no_gccisr``
   function attribute.  This feature is activated per default
-  if optimization is on (but not with :option:`-Og` , see :ref:`optimize-options`),
+  if optimization is on (but not with :option:`-Og`, see :ref:`optimize-options`),
   and if GNU Binutils support https://sourceware.org/PR21683PR21683.
 
 .. option:: -mint8
@@ -306,7 +306,7 @@ the compiler and are subject to some limitations:
 
 * The compiler never sets ``EIND``.
 
-* The compiler uses ``EIND`` implicitly in ``EICALL``/``EIJMP``
+* The compiler uses ``EIND`` implicitly in ``EICALL`` / ``EIJMP``
   instructions or might read ``EIND`` directly in order to emulate an
   indirect call/jump by means of a ``RET`` instruction.
 
@@ -400,7 +400,7 @@ the compiler and are subject to some limitations:
     }
 
   Instead, a stub has to be set up, i.e. the function has to be called
-  through a symbol (``func_4`` in the example):
+  through a symbol ( ``func_4`` in the example):
 
   .. code-block:: c++
 
@@ -474,7 +474,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
   ``2``, ``25``, ``3``, ``31``, ``35``,
   ``4``, ``5``, ``51``, ``6``
 
-  for :samp:`{mcu}` =``avr2``, ``avr25``, ``avr3``, ``avr31``,
+  for :samp:`{mcu}` = ``avr2``, ``avr25``, ``avr3``, ``avr31``,
   ``avr35``, ``avr4``, ``avr5``, ``avr51``, ``avr6``,
 
   respectively and
@@ -483,7 +483,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
   ``102``, ``103``, ``104``,
   ``105``, ``106``, ``107``
 
-  for :samp:`{mcu}` =``avrtiny``,
+  for :samp:`{mcu}` = ``avrtiny``,
   ``avrxmega2``, ``avrxmega3``, ``avrxmega4``,
   ``avrxmega5``, ``avrxmega6``, ``avrxmega7``, respectively.
   If :samp:`{mcu}` specifies a device, this built-in macro is set

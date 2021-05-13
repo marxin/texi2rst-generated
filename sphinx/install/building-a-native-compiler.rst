@@ -42,7 +42,7 @@ debugging information.)
 
   make BOOT_CFLAGS='-O' bootstrap
 
-You can place non-default optimization flags into ``BOOT_CFLAGS``; they
+You can place non-default optimization flags into ``BOOT_CFLAGS`` ; they
 are less well tested here than the default of :samp:`-g -O2`, but should
 still work.  In a few cases, you may find that you need to specify special
 flags such as :option:`-msoft-float` here to complete the bootstrap; or,
@@ -83,10 +83,10 @@ the one you are building on: for example, you could build a
 
 ``BUILD_CONFIG`` can be used to bring in additional customization
 to the build.  It can be set to a whitespace-separated list of names.
-For each such ``NAME``, top-level config/``NAME``.mk will
+For each such ``NAME``, top-level config/ ``NAME``.mk will
 be included by the top-level Makefile, bringing in any settings
 it contains.  The default ``BUILD_CONFIG`` can be set using the
-configure option :option:`--with-build-config```=NAME``....  Some
+configure option :option:`--with-build-config` ``=NAME``....  Some
 examples of supported build configurations are:
 
 bootstrap-O1
@@ -148,7 +148,7 @@ bootstrap-debug-lib
   This option tests executable code invariance over debug information
   generation on target libraries, just like ``bootstrap-debug-lean``
   tests it on host programs.  It builds stage3 libraries with
-  :option:`-fcompare-debug` , and it can be used along with any of the
+  :option:`-fcompare-debug`, and it can be used along with any of the
   ``bootstrap-debug`` options above.
 
   There aren't ``-lean`` or ``-big`` counterparts to this option

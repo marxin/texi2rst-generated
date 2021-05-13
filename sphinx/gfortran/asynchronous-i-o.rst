@@ -14,7 +14,7 @@ variables, such as AIX, I/O is also performed as synchronous.
 
 On some systems, such as Darwin or Solaris, the POSIX thread library
 is always linked in, so asynchronous I/O is always performed. On other
-sytems, such as Linux, it is necessary to specify :option:`-pthread` ,
+sytems, such as Linux, it is necessary to specify :option:`-pthread`,
 :option:`-lpthread` or :option:`-fopenmp` during the linking step.
 
 .. -

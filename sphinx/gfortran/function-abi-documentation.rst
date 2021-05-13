@@ -53,7 +53,7 @@ Function ABI Documentation
   This function is called at startup of the program before the Fortran main
   program, if the latter has been compiled with :option:`-fcoarray=lib`.
   It takes as arguments the command-line arguments of the program.  It is
-  permitted to pass two ``NULL`` pointers as argument; if non-``NULL``,
+  permitted to pass two ``NULL`` pointers as argument; if non- ``NULL``,
   the library is permitted to modify the arguments.
 
 :samp:`{Syntax}:`
@@ -260,11 +260,11 @@ Function ABI Documentation
   ``NULL`` pointer, the function shall abort with printing an error message
   and starting the error termination.  If no error occurs and :samp:`{STAT}` is
   present, it shall be set to zero.  Otherwise, it shall be set to a positive
-  value and, if not-``NULL``, :samp:`{ERRMSG}` shall be set to a string describing
+  value and, if not- ``NULL``, :samp:`{ERRMSG}` shall be set to a string describing
   the failure.  The routine shall register the memory provided in the
-  ``DATA``-component of the array descriptor :samp:`{DESC}` , when that component
-  is non-``NULL``, else it shall allocate sufficient memory and provide a
-  pointer to it in the ``DATA``-component of :samp:`{DESC}`.  The array descriptor
+  ``DATA`` -component of the array descriptor :samp:`{DESC}`, when that component
+  is non- ``NULL``, else it shall allocate sufficient memory and provide a
+  pointer to it in the ``DATA`` -component of :samp:`{DESC}`.  The array descriptor
   has rank zero, when a scalar object is to be registered and the array
   descriptor may be invalid after the call to ``_gfortran_caf_register``.
   When an array is to be allocated the descriptor persists.
@@ -318,7 +318,7 @@ Function ABI Documentation
   status. Note that for critical blocks, the locking is only required on one
   image; in the locking statement, the processor shall always pass an
   image index of one for critical-block lock variables
-  (``CAF_REGTYPE_CRITICAL``). For lock types and critical-block variables,
+  ( ``CAF_REGTYPE_CRITICAL`` ). For lock types and critical-block variables,
   the initial value shall be unlocked (or, respectively, not in critical
   section) such as the value false; for event types, the initial state should
   be no event, e.g. zero.
@@ -610,7 +610,7 @@ Function ABI Documentation
   :samp:`{dst_reallocatable}`  intent(in)  Set when the destination is of
                                allocatable or pointer type and the refs will allow reallocation, i.e., the ref
                                is a full array or component ref.
-  :samp:`{stat}`               intent(out) When non-``NULL`` give the result of the
+  :samp:`{stat}`               intent(out) When non- ``NULL`` give the result of the
                                operation, i.e., zero on success and non-zero on error.  When ``NULL`` and
                                an error occurs, then an error message is printed and the program is terminated.
   :samp:`{dst_type}`           intent(in)  Give the type of the destination.  When
@@ -674,7 +674,7 @@ Function ABI Documentation
   :samp:`{dst_reallocatable}`  intent(in)  Set when :samp:`{DST}` is of
                                allocatable or pointer type and its refs allow reallocation, i.e., the full
                                array or a component is referenced.
-  :samp:`{stat}`               intent(out) When non-``NULL`` give the result of the
+  :samp:`{stat}`               intent(out) When non- ``NULL`` give the result of the
                                operation, i.e., zero on success and non-zero on error.  When ``NULL`` and an
                                error occurs, then an error message is printed and the program is terminated.
   :samp:`{src_type}`           intent(in)  Give the type of the source.  When the
@@ -741,11 +741,11 @@ Function ABI Documentation
                              overlap or overlap (fully or partially) such that walking :samp:`{src}` and
                              :samp:`{dest}` in element wise element order (honoring the stride value) will not
                              lead to wrong results.  Otherwise, the value is ``true``.
-  :samp:`{dst_stat}`         intent(out) when non-``NULL`` give the result of
+  :samp:`{dst_stat}`         intent(out) when non- ``NULL`` give the result of
                              the send-operation, i.e., zero on success and non-zero on error.  When
                              ``NULL`` and an error occurs, then an error message is printed and the
                              program is terminated.
-  :samp:`{src_stat}`         intent(out) When non-``NULL`` give the result of
+  :samp:`{src_stat}`         intent(out) When non- ``NULL`` give the result of
                              the get-operation, i.e., zero on success and non-zero on error.  When
                              ``NULL`` and an error occurs, then an error message is printed and the
                              program is terminated.
@@ -787,7 +787,7 @@ Function ABI Documentation
   Acquire a lock on the given image on a scalar locking variable or for the
   given array element for an array-valued variable.  If the :samp:`{acquired_lock}`
   is ``NULL``, the function returns after having obtained the lock.  If it is
-  non-``NULL``, then :samp:`{acquired_lock}` is assigned the value true (one) when
+  non- ``NULL``, then :samp:`{acquired_lock}` is assigned the value true (one) when
   the lock could be obtained and false (zero) otherwise.  Locking a lock variable
   which has already been locked by the same image is an error.
 
@@ -1005,7 +1005,7 @@ Function ABI Documentation
   Synchronization between the specified images; the program only continues on a
   given image after this function has been called on all images specified for
   that image. Note that one image can wait for all other images in the current
-  team (e.g. via ``sync images(*)``) while those only wait for that specific
+  team (e.g. via ``sync images(*)`` ) while those only wait for that specific
   image.  Additionally, ``sync images`` ensures that all pending data
   transfers of previous segments have completed.
 
@@ -1135,7 +1135,7 @@ Function ABI Documentation
   :samp:`{stat}`         intent(out)  Stores the status STAT= and may be NULL.
   :samp:`{type}`         intent(in)  The data type, i.e. ``BT_INTEGER`` (1) or
                          ``BT_LOGICAL`` (2).
-  :samp:`{kind}`         intent(in)  The kind value (only 4; always ``int``)
+  :samp:`{kind}`         intent(in)  The kind value (only 4; always ``int`` )
   =====================  =========================================================================
   .. __gfortran_caf_atomic_ref:
 
@@ -1164,7 +1164,7 @@ Function ABI Documentation
   :samp:`{stat}`         intent(out) Stores the status STAT= and may be NULL.
   :samp:`{type}`         the data type, i.e. ``BT_INTEGER`` (1) or
                          ``BT_LOGICAL`` (2).
-  :samp:`{kind}`         The kind value (only 4; always ``int``)
+  :samp:`{kind}`         The kind value (only 4; always ``int`` )
   =====================  =========================================================================
   .. __gfortran_caf_atomic_cas:
 
@@ -1200,7 +1200,7 @@ Function ABI Documentation
   :samp:`{stat}`         intent(out)  Stores the status STAT= and may be NULL.
   :samp:`{type}`         intent(in)  the data type, i.e. ``BT_INTEGER`` (1) or
                          ``BT_LOGICAL`` (2).
-  :samp:`{kind}`         intent(in)  The kind value (only 4; always ``int``)
+  :samp:`{kind}`         intent(in)  The kind value (only 4; always ``int`` )
   =====================  =========================================================================
   .. __gfortran_caf_atomic_op:
 
@@ -1240,7 +1240,7 @@ Function ABI Documentation
   :samp:`{stat}`         intent(out)  Stores the status STAT= and may be NULL.
   :samp:`{type}`         intent(in)  the data type, i.e. ``BT_INTEGER`` (1) or
                          ``BT_LOGICAL`` (2)
-  :samp:`{kind}`         intent(in)  the kind value (only 4; always ``int``)
+  :samp:`{kind}`         intent(in)  the kind value (only 4; always ``int`` )
   =====================  =========================================================================
   .. __gfortran_caf_co_broadcast:
 

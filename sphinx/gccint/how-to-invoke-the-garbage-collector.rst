@@ -15,7 +15,7 @@ function explicitly.  This call is an expensive operation, as it may
 have to scan the entire heap.  Beware that local variables (on the GCC
 call stack) are not followed by such an invocation (as many other
 garbage collectors do): you should reference all your data from static
-or external ``GTY``-ed variables, and it is advised to call
+or external ``GTY`` -ed variables, and it is advised to call
 ``ggc_collect`` with a shallow call stack.  The GGC is an exact mark
 and sweep garbage collector (so it does not scan the call stack for
 pointers).  In practice GCC passes don't often call ``ggc_collect``

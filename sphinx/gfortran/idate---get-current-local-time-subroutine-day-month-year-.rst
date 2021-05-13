@@ -12,7 +12,7 @@
 :samp:`{Description}:`
   ``IDATE(VALUES)`` Fills :samp:`{VALUES}` with the numerical values at the  
   current local time. The day (in the range 1-31), month (in the range 1-12), 
-  and year appear in elements 1, 2, and 3 of :samp:`{VALUES}` , respectively. 
+  and year appear in elements 1, 2, and 3 of :samp:`{VALUES}`, respectively. 
   The year has four significant digits.
 
   This intrinsic routine is provided for backwards compatibility with 

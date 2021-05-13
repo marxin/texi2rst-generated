@@ -45,7 +45,7 @@ in that thread become invalid.
 No static initialization may refer to the address of a thread-local variable.
 
 In C++, if an initializer is present for a thread-local variable, it must
-be a :samp:`{constant-expression}` , as defined in 5.19.2 of the ANSI/ISO C++
+be a :samp:`{constant-expression}`, as defined in 5.19.2 of the ANSI/ISO C++
 standard.
 
 See https://www.akkadia.org/drepper/tls.pdfELF Handling For Thread-Local Storage for a detailed explanation of
@@ -216,5 +216,5 @@ that document the exact semantics of the language extension.
 
   Add after paragraph 6
 
-  Non-``static`` members shall not be ``__thread``.
+  Non- ``static`` members shall not be ``__thread``.
 

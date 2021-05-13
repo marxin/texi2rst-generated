@@ -17,7 +17,7 @@ a single output operand, like this:
   asm ("foo %1,%2,%0" : "=a" (outputvar) : "g" (x + y), "di" (*z));
 
 is represented using a single ``asm_operands`` RTX which represents
-the value that is stored in ``outputvar``:
+the value that is stored in ``outputvar`` :
 
 .. code-block:: c++
 
@@ -31,12 +31,12 @@ Here the operands of the ``asm_operands`` RTX are the assembler
 template string, the output-operand's constraint, the index-number of the
 output operand among the output operands specified, a vector of input
 operand RTX's, and a vector of input-operand modes and constraints.  The
-mode :samp:`{m1}` is the mode of the sum ``x+y``; :samp:`{m2}` is that of
+mode :samp:`{m1}` is the mode of the sum ``x+y`` ; :samp:`{m2}` is that of
 ``*z``.
 
 When an ``asm`` statement has multiple output values, its insn has
 several such ``set`` RTX's inside of a ``parallel``.  Each ``set``
-contains an ``asm_operands``; all of these share the same assembler
+contains an ``asm_operands`` ; all of these share the same assembler
 template and vectors, but each contains the constraint for the respective
 output operand.  They are also distinguished by the output-operand index
 number, which is 0, 1, ... for successive output operands.

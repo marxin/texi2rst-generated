@@ -150,9 +150,9 @@ than the standard C or C++ concept of identifier.  In particular, an
 ``IDENTIFIER_NODE`` may contain a :samp:`$`, or other extraordinary
 characters.
 
-There are never two distinct ``IDENTIFIER_NODE``s representing the
+There are never two distinct ``IDENTIFIER_NODE`` s representing the
 same identifier.  Therefore, you may use pointer equality to compare
-``IDENTIFIER_NODE``s, rather than using a routine like
+``IDENTIFIER_NODE`` s, rather than using a routine like
 ``strcmp``.  Use ``get_identifier`` to obtain the unique
 ``IDENTIFIER_NODE`` for a supplied string.
 
@@ -161,7 +161,7 @@ You can use the following macros to access identifiers:
 .. envvar:: IDENTIFIER_POINTERIDENTIFIER_POINTER
 
   The string represented by the identifier, represented as a
-  ``char*``.  This string is always ``NUL``-terminated, and contains
+  ``char*``.  This string is always ``NUL`` -terminated, and contains
   no embedded ``NUL`` characters.
 
 .. envvar:: IDENTIFIER_LENGTHIDENTIFIER_LENGTH

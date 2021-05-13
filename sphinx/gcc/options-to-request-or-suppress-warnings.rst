@@ -26,7 +26,7 @@ warnings but control the kinds of diagnostics produced by GCC.
 
 .. option:: -fmax-errors=n
 
-  Limits the maximum number of error messages to :samp:`{n}` , at which point
+  Limits the maximum number of error messages to :samp:`{n}`, at which point
   GCC bails out rather than attempting to continue processing the source
   code.  If :samp:`{n}` is 0 (the default), there is no limit on the number
   of error messages produced.  If :option:`-Wfatal-errors` is also
@@ -78,8 +78,8 @@ Objective-C and Objective-C++ Dialect Options.
 Additional warnings can be produced by enabling the static analyzer;
 See :ref:`static-analyzer-options`.
 
-Some options, such as :option:`-Wall` and :option:`-Wextra` , turn on other
-options, such as :option:`-Wunused` , which may turn on further options,
+Some options, such as :option:`-Wall` and :option:`-Wextra`, turn on other
+options, such as :option:`-Wunused`, which may turn on further options,
 such as :option:`-Wunused-value`. The combined effect of positive and
 negative forms is that more specific options have priority over less
 specific ones, independently of their position in the command-line. For
@@ -150,7 +150,7 @@ warn at all unless optimization is enabled.
   requires a diagnostic, in some cases where there is undefined behavior
   at compile-time and in some other cases that do not prevent compilation
   of programs that are valid according to the standard. This is not
-  equivalent to :option:`-Werror=pedantic` , since there are errors enabled
+  equivalent to :option:`-Werror=pedantic`, since there are errors enabled
   by this option and not enabled by the latter and vice versa.
 
 .. option:: -Wall, -Wno-all
@@ -357,21 +357,21 @@ warn at all unless optimization is enabled.
     un-qualified function type was incorrectly treated as a substitution
     candidate.
 
-    This was fixed in :option:`-fabi-version=8` , the default for GCC 5.1.
+    This was fixed in :option:`-fabi-version=8`, the default for GCC 5.1.
 
   * ``decltype(nullptr)`` incorrectly had an alignment of 1, leading to
     unaligned accesses.  Note that this did not affect the ABI of a
     function with a ``nullptr_t`` parameter, as parameters have a
     minimum alignment.
 
-    This was fixed in :option:`-fabi-version=9` , the default for GCC 5.2.
+    This was fixed in :option:`-fabi-version=9`, the default for GCC 5.2.
 
   * Target-specific attributes that affect the identity of a type, such as
     ia32 calling conventions on a function type (stdcall, regparm, etc.),
     did not affect the mangled name, leading to name collisions when
     function pointers were used as template arguments.
 
-    This was fixed in :option:`-fabi-version=10` , the default for GCC 6.1.
+    This was fixed in :option:`-fabi-version=10`, the default for GCC 6.1.
 
   This option also enables warnings about psABI-related changes.
   The known psABI changes at this point include:
@@ -401,7 +401,7 @@ warn at all unless optimization is enabled.
   Warn if feedback profiles do not match when using the
   :option:`-fprofile-use` option.
   If a source file is changed between compiling with :option:`-fprofile-generate`
-  and with :option:`-fprofile-use` , the files with the profile feedback can fail
+  and with :option:`-fprofile-use`, the files with the profile feedback can fail
   to match the source file and GCC cannot use the profile feedback
   information.  By default, this warning is enabled and is treated as an
   error.  :option:`-Wno-coverage-mismatch` can be used to disable the
@@ -478,19 +478,19 @@ warn at all unless optimization is enabled.
   extensions.  Other library implementations may not support all these
   features; GCC does not support warning about features that go beyond a
   particular library's limitations.  However, if :option:`-Wpedantic` is used
-  with :option:`-Wformat` , warnings are given about format features not
+  with :option:`-Wformat`, warnings are given about format features not
   in the selected standard version (but not for ``strfmon`` formats,
   since those are not in any version of the C standard).  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
   .. option:: -Wformat=1
 
-    Option :option:`-Wformat` is equivalent to :option:`-Wformat=1` , and
+    Option :option:`-Wformat` is equivalent to :option:`-Wformat=1`, and
     :option:`-Wno-format` is equivalent to :option:`-Wformat=0`.  Since
     :option:`-Wformat` also checks for null format arguments for several
     functions, :option:`-Wformat` also implies :option:`-Wnonnull`.  Some
     aspects of this level of format checking can be disabled by the
-    options: :option:`-Wno-format-contains-nul` ,
-    :option:`-Wno-format-extra-args` , and :option:`-Wno-format-zero-length`.
+    options: :option:`-Wno-format-contains-nul`,
+    :option:`-Wno-format-extra-args`, and :option:`-Wno-format-zero-length`.
     :option:`-Wformat` is enabled by :option:`-Wall`.
 
   .. option:: -Wformat=2
@@ -540,7 +540,7 @@ warn at all unless optimization is enabled.
     string literals, are assumed to take on the value within the range that
     results in the most bytes on output.  For example, the call to ``sprintf``
     below is diagnosed because even with both :samp:`{a}` and :samp:`{b}` equal to zero,
-    the terminating NUL character (``'\0'``) appended by the function
+    the terminating NUL character ( ``'\0'`` ) appended by the function
     to the destination buffer will be written past its end.  Increasing
     the size of the buffer by a single byte is sufficient to avoid the
     warning, though it may not be sufficient to avoid the overflow.
@@ -556,14 +556,14 @@ warn at all unless optimization is enabled.
   ``-Wformat-overflow=2``
     Level :samp:`{2}` warns also about calls that might overflow the destination
     buffer given an argument of sufficient length or magnitude.  At level
-    :samp:`{2}` , unknown numeric arguments are assumed to have the minimum
+    :samp:`{2}`, unknown numeric arguments are assumed to have the minimum
     representable value for signed types with a precision greater than 1, and
     the maximum representable value otherwise.  Unknown string arguments whose
     length cannot be assumed to be bounded either by the directive's precision,
     or by a finite set of string literals they may evaluate to, or the character
     array they may point to, are assumed to be 1 character long.
 
-    At level :samp:`{2}` , the call in the example above is again diagnosed, but
+    At level :samp:`{2}`, the call in the example above is again diagnosed, but
     this time because with :samp:`{a}` equal to a 32-bit ``INT_MIN`` the first
     ``%i`` directive will write some of its digits beyond the end of
     the destination buffer.  To make the call safe regardless of the values
@@ -1014,7 +1014,7 @@ warn at all unless optimization is enabled.
   :option:`-fprofile-use` option.
   This option diagnoses those cases where a new function or a new file is added
   between compiling with :option:`-fprofile-generate` and with
-  :option:`-fprofile-use` , without regenerating the profiles.
+  :option:`-fprofile-use`, without regenerating the profiles.
   In these cases, the profile feedback data files do not contain any
   profile feedback information for
   the newly added function or file respectively.  Also, in the case when profile
@@ -1098,7 +1098,7 @@ warn at all unless optimization is enabled.
 
   Also warn for dangerous uses of the GNU extension to
   ``?:`` with omitted middle operand. When the condition
-  in the ``?``: operator is a boolean expression, the omitted value is
+  in the ``?`` : operator is a boolean expression, the omitted value is
   always 1.  Often programmers expect it to be a value computed
   inside the conditional expression instead.
 
@@ -1185,11 +1185,11 @@ warn at all unless optimization is enabled.
   function whose return type is ``void``, unless the expression type is
   also ``void``.  As a GNU extension, the latter case is accepted
   without a warning unless :option:`-Wpedantic` is used.  Attempting
-  to use the return value of a non-``void`` function other than ``main``
+  to use the return value of a non- ``void`` function other than ``main``
   that flows off the end by reaching the closing curly brace that terminates
   the function is undefined.
 
-  Unlike in C, in C++, flowing off the end of a non-``void`` function other
+  Unlike in C, in C++, flowing off the end of a non- ``void`` function other
   than ``main`` results in undefined behavior even when the value of
   the function is not used.
 
@@ -1335,7 +1335,7 @@ warn at all unless optimization is enabled.
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
 
-  This warning is also enabled by :option:`-Wunused` , which is enabled
+  This warning is also enabled by :option:`-Wunused`, which is enabled
   by :option:`-Wall`.
 
 .. option:: -Wunused-function, -Wno-unused-function
@@ -1389,7 +1389,7 @@ warn at all unless optimization is enabled.
   Warn whenever a constant static variable is unused aside from its declaration.
   :option:`-Wunused-const-variable=1` is enabled by :option:`-Wunused-variable`
   for C, but not for C++. In C this declares variable storage, but in C++ this
-  is not an error since const variables take the place of ``#define``s.
+  is not an error since const variables take the place of ``#define`` s.
 
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
@@ -1434,7 +1434,7 @@ warn at all unless optimization is enabled.
   constructors.
 
   In addition, passing a pointer (or in C++, a reference) to an uninitialized
-  object to a ``const``-qualified argument of a built-in function known to
+  object to a ``const`` -qualified argument of a built-in function known to
   read the object is also diagnosed by this warning.
   ( :option:`-Wmaybe-uninitialized` is issued for ordinary functions.)
 
@@ -1483,7 +1483,7 @@ warn at all unless optimization is enabled.
   are not executed at run time.
 
   In addition, passing a pointer (or in C++, a reference) to an uninitialized
-  object to a ``const``-qualified function argument is also diagnosed by
+  object to a ``const`` -qualified function argument is also diagnosed by
   this warning.  ( :option:`-Wuninitialized` is issued for built-in functions
   known to read the object.)  Annotating the function with attribute
   ``access (none)`` indicates that the argument isn't used to access
@@ -1657,7 +1657,7 @@ warn at all unless optimization is enabled.
   determined to be either zero or non-zero in tests for such equality
   owing to the length of one argument being greater than the size of
   the array the other argument is stored in (or the bound in the case
-  of ``strncmp``).  Such calls could be mistakes.  For example,
+  of ``strncmp`` ).  Such calls could be mistakes.  For example,
   the call to ``strcmp`` below is diagnosed because its result is
   necessarily non-zero irrespective of the contents of the array ``a``.
 
@@ -1810,7 +1810,7 @@ warn at all unless optimization is enabled.
   of bytes with no terminating ``NUL`` such an array may be annotated
   with attribute ``nonstring`` to avoid this warning.  Such arrays,
   however, are not suitable arguments to functions that expect
-  ``NUL``-terminated strings.  To help detect accidental misuses of
+  ``NUL`` -terminated strings.  To help detect accidental misuses of
   such arrays GCC issues warnings unless it can prove that the use is
   safe.  See :ref:`common-variable-attributes`.
 
@@ -1824,10 +1824,10 @@ warn at all unless optimization is enabled.
     Warn about functions that might be candidates for attributes
     ``pure``, ``const`` or ``noreturn`` or ``malloc``. The compiler
     only warns for functions visible in other compilation units or (in the case of
-    ``pure`` and ``const``) if it cannot prove that the function returns
+    ``pure`` and ``const`` ) if it cannot prove that the function returns
     normally. A function returns normally if it doesn't contain an infinite loop or
     return abnormally by throwing, calling ``abort`` or trapping.  This analysis
-    requires option :option:`-fipa-pure-const` , which is enabled by default at
+    requires option :option:`-fipa-pure-const`, which is enabled by default at
     :option:`-O` and higher.  Higher optimization levels improve the accuracy
     of the analysis.
 
@@ -1966,8 +1966,8 @@ warn at all unless optimization is enabled.
 
   Do warn about implicit conversions from arithmetic operations even
   when conversion of the operands to the same type cannot change their
-  values.  This affects warnings from :option:`-Wconversion` ,
-  :option:`-Wfloat-conversion` , and :option:`-Wsign-conversion`.
+  values.  This affects warnings from :option:`-Wconversion`,
+  :option:`-Wfloat-conversion`, and :option:`-Wsign-conversion`.
 
   .. code-block:: c++
 
@@ -2073,7 +2073,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wbool-compare, -Wno-bool-compare
 
   Warn about boolean expression compared with an integer value different from
-  ``true``/``false``.  For instance, the following comparison is
+  ``true`` / ``false``.  For instance, the following comparison is
   always false:
 
   .. code-block:: c++
@@ -2161,7 +2161,7 @@ warn at all unless optimization is enabled.
     C and Objective-C only
 
   Do not warn when there is a conversion between pointers that have incompatible
-  types.  This warning is for cases not covered by :option:`-Wno-pointer-sign` ,
+  types.  This warning is for cases not covered by :option:`-Wno-pointer-sign`,
   which warns for pointer argument passing or assignment with different
   signedness.
 
@@ -2311,7 +2311,7 @@ warn at all unless optimization is enabled.
 
   * A ``switch`` statement has an operand of type ``long``.
 
-  * A non-``static`` function declaration follows a ``static`` one.
+  * A non- ``static`` function declaration follows a ``static`` one.
     This construct is not accepted by some traditional C compilers.
 
   * The ISO type of an integer constant has a different width or
@@ -2736,7 +2736,7 @@ warn at all unless optimization is enabled.
 
   Warn about ISO C constructs that are outside of the common subset of
   ISO C and ISO C++, e.g. request for implicit conversion from
-  ``void *`` to a pointer to non-``void`` type.
+  ``void *`` to a pointer to non- ``void`` type.
 
 .. option:: -Wc++11-compat , -Wc++11-compat, -Wno-c++11-compat
 
@@ -2826,7 +2826,7 @@ warn at all unless optimization is enabled.
 
   When compiling C, give string constants the type ``const
   char[length]`` so that copying the address of one into a
-  non-``const`` ``char *`` pointer produces a warning.  These
+  non- ``const`` ``char *`` pointer produces a warning.  These
   warnings help you find at compile time code that can try to write
   into a string constant, but only if you have been very careful about
   using ``const`` in declarations and prototypes.  Otherwise, it is
@@ -2846,8 +2846,8 @@ warn at all unless optimization is enabled.
 
   Warn for implicit conversions that may alter a value. This includes
   conversions between real and integer, like ``abs (x)`` when
-  ``x`` is ``double``; conversions between signed and unsigned,
-  like ``unsigned ui = -1``; and conversions to smaller types, like
+  ``x`` is ``double`` ; conversions between signed and unsigned,
+  like ``unsigned ui = -1`` ; and conversions to smaller types, like
   ``sqrtf (M_PI)``. Do not warn for explicit casts like ``abs
   ((int) x)`` and ``ui = (unsigned) -1``, or if the value is not
   changed by the conversion like in ``abs (2.0)``.  Warnings about
@@ -3139,7 +3139,7 @@ warn at all unless optimization is enabled.
 
   For example, the call to ``memset`` below is diagnosed by the warning
   because the function expects a value of type ``size_t`` as its argument
-  but the type of ``32`` is ``int``.  With :option:`-Wextra` ,
+  but the type of ``32`` is ``int``.  With :option:`-Wextra`,
   the declaration of the function is diagnosed as well.
 
   .. code-block:: c++
@@ -3296,7 +3296,7 @@ warn at all unless optimization is enabled.
   have not been normalized; this option controls that warning.
 
   There are four levels of warning supported by GCC.  The default is
-  :option:`-Wnormalized=nfc` , which warns about any identifier that is
+  :option:`-Wnormalized=nfc`, which warns about any identifier that is
   not in the ISO 10646 'C' normalized form, :dfn:`NFC`.  NFC is the
   recommended form for most uses.  It is equivalent to
   :option:`-Wnormalized`.
@@ -3468,8 +3468,8 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wrestrict, -Wno-restrict
 
-  Warn when an object referenced by a ``restrict``-qualified parameter
-  (or, in C++, a ``__restrict``-qualified parameter) is aliased by another
+  Warn when an object referenced by a ``restrict`` -qualified parameter
+  (or, in C++, a ``__restrict`` -qualified parameter) is aliased by another
   argument, or when copies between such objects overlap.  For example,
   the call to the ``strcpy`` function below attempts to truncate the string
   by replacing its initial characters with the last four.  However, because
@@ -3659,7 +3659,7 @@ warn at all unless optimization is enabled.
 
   Warn for pointer argument passing or assignment with different signedness.
   This option is only supported for C and Objective-C.  It is implied by
-  :option:`-Wall` and by :option:`-Wpedantic` , which can be disabled with
+  :option:`-Wall` and by :option:`-Wpedantic`, which can be disabled with
   :option:`-Wno-pointer-sign`.
 
 .. option:: -Wstack-protector, -Wno-stack-protector
@@ -3680,7 +3680,7 @@ warn at all unless optimization is enabled.
   C99, it was raised to 4095.  C++98 does not specify a normative
   minimum maximum, so we do not diagnose overlength strings in C++.
 
-  This option is implied by :option:`-Wpedantic` , and can be disabled with
+  This option is implied by :option:`-Wpedantic`, and can be disabled with
   :option:`-Wno-overlength-strings`.
 
 .. option:: -Wunsuffixed-float-constants , -Wunsuffixed-float-constants

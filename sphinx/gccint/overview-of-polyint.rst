@@ -3,7 +3,7 @@ Overview of ``poly_int``
 
 .. index:: poly_int, runtime value
 
-We define indeterminates :samp:`{x1}` , ..., :samp:`{xn}` whose values are
+We define indeterminates :samp:`{x1}`, ..., :samp:`{xn}` whose values are
 only known at runtime and use polynomials of the form:
 
 .. code-block:: c++
@@ -11,7 +11,7 @@ only known at runtime and use polynomials of the form:
   c0 + c1 * x1 + ... + cn * xn
 
 to represent a size or offset whose value might depend on some
-of these indeterminates.  The coefficients :samp:`{c0}` , ..., :samp:`{cn}`
+of these indeterminates.  The coefficients :samp:`{c0}`, ..., :samp:`{cn}`
 are always known at compile time, with the :samp:`{c0}` term being the
 'constant' part that does not depend on any runtime value.
 

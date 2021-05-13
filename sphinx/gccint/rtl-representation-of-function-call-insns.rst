@@ -35,7 +35,7 @@ also contain ``use`` or ``clobber`` expressions.
 
 For a subroutine that returns a value whose mode is not ``BLKmode``,
 the value is returned in a hard register.  If this register's number is
-:samp:`{r}` , then the body of the call insn looks like this:
+:samp:`{r}`, then the body of the call insn looks like this:
 
 .. code-block:: c++
 

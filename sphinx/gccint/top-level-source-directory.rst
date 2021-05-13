@@ -47,7 +47,7 @@ libada
 
 libatomic
   The runtime support library for atomic operations (e.g. for ``__sync``
-  and ``__atomic``).
+  and ``__atomic`` ).
 
 libcpp
   The C preprocessor library.

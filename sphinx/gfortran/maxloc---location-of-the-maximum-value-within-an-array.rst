@@ -38,28 +38,28 @@
   ========================================================
 
 :samp:`{Arguments}:`
-  ===============  =======================================================================
+  ===============  ======================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER`` or
                    ``REAL``.
-  ===============  =======================================================================
+  ===============  ======================================================================
   :samp:`{DIM}`    (Optional) Shall be a scalar of type
-                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}` ,
+                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
                    inclusive.  It may not be an optional dummy argument.
   :samp:`{MASK}`   Shall be of type ``LOGICAL``,
                    and conformable with :samp:`{ARRAY}`.
   :samp:`{KIND}`   (Optional) An ``INTEGER`` initialization
                    expression indicating the kind parameter of the result.
   :samp:`{BACK}`   (Optional) A scalar of type ``LOGICAL``.
-  ===============  =======================================================================
+  ===============  ======================================================================
 
 :samp:`{Return value}:`
   If :samp:`{DIM}` is absent, the result is a rank-one array with a length
   equal to the rank of :samp:`{ARRAY}`.  If :samp:`{DIM}` is present, the result
-  is an array with a rank one less than the rank of :samp:`{ARRAY}` , and a
+  is an array with a rank one less than the rank of :samp:`{ARRAY}`, and a
   size corresponding to the size of :samp:`{ARRAY}` with the :samp:`{DIM}`
   dimension removed.  If :samp:`{DIM}` is present and :samp:`{ARRAY}` has a rank
   of one, the result is a scalar.   If the optional argument :samp:`{KIND}`
-  is present, the result is an integer of kind :samp:`{KIND}` , otherwise it
+  is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
   is of default kind.
 
 :samp:`{See also}:`

@@ -9,7 +9,7 @@
 
 :samp:`{Description}:`
   ``ALLOCATED(ARRAY)`` and ``ALLOCATED(SCALAR)`` check the allocation
-  status of :samp:`{ARRAY}` and :samp:`{SCALAR}` , respectively.
+  status of :samp:`{ARRAY}` and :samp:`{SCALAR}`, respectively.
 
 :samp:`{Standard}:`
   Fortran 90 and later.  Note, the ``SCALAR=`` keyword and allocatable
@@ -35,7 +35,7 @@
 :samp:`{Return value}:`
   The return value is a scalar ``LOGICAL`` with the default logical
   kind type parameter.  If the argument is allocated, then the result is
-  ``.TRUE.``; otherwise, it returns ``.FALSE.`` 
+  ``.TRUE.`` ; otherwise, it returns ``.FALSE.`` 
 
 :samp:`{Example}:`
 

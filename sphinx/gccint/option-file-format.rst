@@ -92,7 +92,7 @@ The files can contain the following types of record:
 
   :samp:`Value({value})`
     This property is required; it says what value (representable as
-    ``int``) should be used for the given string.
+    ``int`` ) should be used for the given string.
 
   ``Canonical``
     This property is optional.  If present, it says the present string is

@@ -74,7 +74,7 @@ honor these options.
   and when not executing in an emacs shell.
   The forms :option:`-fdiagnostics-color` and :option:`-fno-diagnostics-color` are
   aliases for :option:`-fdiagnostics-color=always` and
-  :option:`-fdiagnostics-color=never` , respectively.
+  :option:`-fdiagnostics-color=never`, respectively.
 
   The colors are defined by the environment variable :envvar:`GCC_COLORS`.
   Its value is a colon-separated list of capabilities and Select Graphic
@@ -519,7 +519,7 @@ honor these options.
   (in the absence of :option:`-fno-show-column` ), as well as JSON format
   diagnostics if requested.
 
-  The default :samp:`{UNIT}` , :samp:`display`, considers the number of display
+  The default :samp:`{UNIT}`, :samp:`display`, considers the number of display
   columns occupied by each character.  This may be larger than the number
   of bytes required to encode the character, in the case of tab
   characters, or it may be smaller, in the case of multibyte characters.
@@ -635,7 +635,7 @@ honor these options.
     option.
 
   All three columns are relative to the origin specified by
-  :option:`-fdiagnostics-column-origin` , which is typically equal to 1 but may
+  :option:`-fdiagnostics-column-origin`, which is typically equal to 1 but may
   be set, for instance, to 0 for compatibility with other utilities that
   number columns from 0.  The column origin is recorded in the JSON output in
   the ``column-origin`` tag.  In the remaining examples below, the extra
@@ -743,7 +743,7 @@ honor these options.
         }
 
   where the fix-it hint suggests replacing the text from ``start`` up
-  to but not including ``next`` with ``string``'s value.  Deletions
+  to but not including ``next`` with ``string`` 's value.  Deletions
   are expressed via an empty value for ``string``, insertions by
   having ``start`` equal ``next``.
 

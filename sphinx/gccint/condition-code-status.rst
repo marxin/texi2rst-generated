@@ -82,7 +82,7 @@ the case of the add on the SPARC discussed above, we have the pattern
     "...")
 
 together with a ``SELECT_CC_MODE`` that returns ``CCNZmode``
-for comparisons whose argument is a ``plus``:
+for comparisons whose argument is a ``plus`` :
 
 .. code-block:: c++
 
@@ -133,7 +133,7 @@ then ``REVERSIBLE_CC_MODE (mode)`` must be zero.
 You need not define this macro if it would always returns zero or if the
 floating-point format is anything other than ``IEEE_FLOAT_FORMAT``.
 For example, here is the definition used on the SPARC, where floating-point
-inequality comparisons are given either ``CCFPEmode`` or ``CCFPmode``:
+inequality comparisons are given either ``CCFPEmode`` or ``CCFPmode`` :
 
 .. code-block:: c++
 

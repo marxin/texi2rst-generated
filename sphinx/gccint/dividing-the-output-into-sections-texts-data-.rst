@@ -144,7 +144,7 @@ corresponds to the ``SECTION_MACH_DEP`` section flag.
 .. index:: CRT_CALL_STATIC_FUNCTION
 
 MacroCRT_CALL_STATIC_FUNCTION(:samp:`{section_op}`,:samp:`{function}`)If defined, an ASM statement that switches to a different section
-via :samp:`{section_op}` , calls :samp:`{function}` , and switches back to
+via :samp:`{section_op}`, calls :samp:`{function}`, and switches back to
 the text section.  This is used in crtstuff.c if
 ``INIT_SECTION_ASM_OP`` or ``FINI_SECTION_ASM_OP`` to calls
 to initialization and finalization functions from the init and fini
@@ -229,7 +229,7 @@ This macro is irrelevant if there is no separate readonly data section.
 .. index:: USE_SELECT_SECTION_FOR_FUNCTIONS
 
 MacroUSE_SELECT_SECTION_FOR_FUNCTIONSDefine this macro if you wish TARGET_ASM_SELECT_SECTION to be called
-for ``FUNCTION_DECL``s as well as for variables and constants.
+for ``FUNCTION_DECL`` s as well as for variables and constants.
 
 In the case of a ``FUNCTION_DECL``, :samp:`{reloc}` will be zero if the
 function has been determined to be likely to be called, and nonzero if
@@ -269,7 +269,7 @@ the string if a different section name should be used.
 
 .. function:: section * TARGET_ASM_SELECT_RTX_SECTION(machine_mode mode,rtx x,unsigned HOST_WIDE_INTalign)
 
-  Return the section into which a constant :samp:`{x}` , of mode :samp:`{mode}` ,
+  Return the section into which a constant :samp:`{x}`, of mode :samp:`{mode}`,
   should be placed.  You can assume that :samp:`{x}` is some kind of
   constant in RTL.  The argument :samp:`{mode}` is redundant except in the
   case of a ``const_int`` rtx.  :samp:`{align}` is the constant alignment
@@ -296,7 +296,7 @@ the string if a different section name should be used.
   function named by the symbol (such as what section it is in).
 
   The hook is executed immediately after rtl has been created for
-  :samp:`{decl}` , which may be a variable or function declaration or
+  :samp:`{decl}`, which may be a variable or function declaration or
   an entry in the constant pool.  In either case, :samp:`{rtl}` is the
   rtl in question.  Do *not* use ``DECL_RTL (decl)``
   in this hook; that field may not have been initialized yet.

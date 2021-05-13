@@ -26,11 +26,11 @@ BuiltinsgccUsing the GNU Compiler Collection (GCC).
 These routines take arguments and return values of a specific machine
 mode, not a specific C type.  See :ref:`machine-modes`, for an explanation
 of this concept.  For illustrative purposes, in this chapter the
-floating point type ``float`` is assumed to correspond to ``SFmode``;
-``double`` to ``DFmode``; and ``long double`` to both
+floating point type ``float`` is assumed to correspond to ``SFmode`` ;
+``double`` to ``DFmode`` ; and ``long double`` to both
 ``TFmode`` and ``XFmode``.  Similarly, the integer types ``int``
-and ``unsigned int`` correspond to ``SImode``; ``long`` and
-``unsigned long`` to ``DImode``; and ``long long`` and
+and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
+``unsigned long`` to ``DImode`` ; and ``long long`` and
 ``unsigned long long`` to ``TImode``.
 
 .. toctree::

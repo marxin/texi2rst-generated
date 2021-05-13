@@ -70,14 +70,14 @@ result using either signed or unsigned comparison.
 .. function:: int __cmpdi2(long a,long b)
 
   These functions perform a signed comparison of :samp:`{a}` and :samp:`{b}`.  If
-  :samp:`{a}` is less than :samp:`{b}` , they return 0; if :samp:`{a}` is greater than
-  :samp:`{b}` , they return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
+  :samp:`{a}` is less than :samp:`{b}`, they return 0; if :samp:`{a}` is greater than
+  :samp:`{b}`, they return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
 
 .. function:: int __ucmpdi2(unsigned longa,unsigned longb)
 
   These functions perform an unsigned comparison of :samp:`{a}` and :samp:`{b}`.
-  If :samp:`{a}` is less than :samp:`{b}` , they return 0; if :samp:`{a}` is greater than
-  :samp:`{b}` , they return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
+  If :samp:`{a}` is less than :samp:`{b}`, they return 0; if :samp:`{a}` is greater than
+  :samp:`{b}`, they return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
 
 Trapping arithmetic functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -113,19 +113,19 @@ Bit operations
 
 .. function:: int __clzsi2(unsigned inta)
 
-  These functions return the number of leading 0-bits in :samp:`{a}` , starting
+  These functions return the number of leading 0-bits in :samp:`{a}`, starting
   at the most significant bit position.  If :samp:`{a}` is zero, the result is
   undefined.
 
 .. function:: int __ctzsi2(unsigned inta)
 
-  These functions return the number of trailing 0-bits in :samp:`{a}` , starting
+  These functions return the number of trailing 0-bits in :samp:`{a}`, starting
   at the least significant bit position.  If :samp:`{a}` is zero, the result is
   undefined.
 
 .. function:: int __ffsdi2(unsigned longa)
 
-  These functions return the index of the least significant 1-bit in :samp:`{a}` ,
+  These functions return the index of the least significant 1-bit in :samp:`{a}`,
   or the value zero if :samp:`{a}` is zero.  The least significant bit is index
   one.
 

@@ -104,7 +104,7 @@ Do not define this macro if it does not need to do anything.
 .. index:: AS_NEEDS_DASH_FOR_PIPED_INPUT
 
 MacroAS_NEEDS_DASH_FOR_PIPED_INPUTDefine this macro, with no value, if the driver should give the assembler
-an argument consisting of a single dash, :option:`-` , to instruct it to
+an argument consisting of a single dash, :option:`-`, to instruct it to
 read from its standard input (which will be a pipe connected to the
 output of the compiler proper).  This argument is given after any
 :option:`-o` option specifying the name of the output file.
@@ -146,8 +146,8 @@ passes the string :option:`-lgcc` to the linker.
 MacroREAL_LIBGCC_SPECBy default, if ``ENABLE_SHARED_LIBGCC`` is defined, the
 ``LIBGCC_SPEC`` is not directly used by the driver program but is
 instead modified to refer to different versions of libgcc.a
-depending on the values of the command line flags :option:`-static` ,
-:option:`-shared` , :option:`-static-libgcc` , and :option:`-shared-libgcc`.  On
+depending on the values of the command line flags :option:`-static`,
+:option:`-shared`, :option:`-static-libgcc`, and :option:`-shared-libgcc`.  On
 targets where these modifications are inappropriate, define
 ``REAL_LIBGCC_SPEC`` instead.  ``REAL_LIBGCC_SPEC`` tells the
 driver how to place a reference to libgcc on the link command
@@ -421,7 +421,7 @@ Here is the order of prefixes tried for exec files:
 
 * The environment variable ``GCC_EXEC_PREFIX`` or, if ``GCC_EXEC_PREFIX``
   is not set and the compiler has not been installed in the configure-time
-  :samp:`{prefix}` , the location in which the compiler has actually been installed.
+  :samp:`{prefix}`, the location in which the compiler has actually been installed.
 
 * The directories specified by the environment variable ``COMPILER_PATH``.
 

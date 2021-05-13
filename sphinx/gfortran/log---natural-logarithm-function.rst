@@ -22,7 +22,7 @@
 .. index:: natural logarithm function
 
 :samp:`{Description}:`
-  ``LOG(X)`` computes the natural logarithm of :samp:`{X}` , i.e. the
+  ``LOG(X)`` computes the natural logarithm of :samp:`{X}`, i.e. the
   logarithm to the base e.
 
 :samp:`{Standard}:`

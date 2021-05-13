@@ -55,7 +55,7 @@ functions acting as mere forwarders for their arguments.
 .. function:: void __builtin_return(void *result)
 
   This built-in function returns the value described by :samp:`{result}` from
-  the containing function.  You should specify, for :samp:`{result}` , a value
+  the containing function.  You should specify, for :samp:`{result}`, a value
   returned by ``__builtin_apply``.
 
 .. function::  __builtin_va_arg_pack()

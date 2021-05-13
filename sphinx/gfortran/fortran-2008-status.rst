@@ -34,7 +34,7 @@ following is implemented.
 
 * Using complex arguments with ``TAN``, ``SINH``, ``COSH``,
   ``TANH``, ``ASIN``, ``ACOS``, and ``ATAN`` is now possible;
-  ``ATAN``( :samp:`{Y}` , :samp:`{X}` ) is now an alias for ``ATAN2``( :samp:`{Y}` , :samp:`{X}` ).
+  ``ATAN`` ( :samp:`{Y}`,:samp:`{X}` ) is now an alias for ``ATAN2`` ( :samp:`{Y}`,:samp:`{X}` ).
 
 * Support of the ``PARITY`` intrinsic functions.
 
@@ -89,7 +89,7 @@ following is implemented.
   allows for ``ELEMENTAL`` procedures without the restrictions of
   ``PURE``.
 
-* Null pointers (including ``NULL()``) and not-allocated variables
+* Null pointers (including ``NULL()`` ) and not-allocated variables
   can be used as actual argument to optional non-pointer, non-allocatable
   dummy arguments, denoting an absent argument.
 
@@ -110,9 +110,9 @@ following is implemented.
 * Minor features: obsolesce diagnostics for ``ENTRY`` with
   :option:`-std=f2008` ; a line may start with a semicolon; for internal
   and module procedures ``END`` can be used instead of
-  ``END SUBROUTINE`` and ``END FUNCTION``; ``SELECTED_REAL_KIND``
+  ``END SUBROUTINE`` and ``END FUNCTION`` ; ``SELECTED_REAL_KIND``
   now also takes a ``RADIX`` argument; intrinsic types are supported
-  for ``TYPE``( :samp:`{intrinsic-type-spec}` ); multiple type-bound procedures
+  for ``TYPE`` ( :samp:`{intrinsic-type-spec}` ); multiple type-bound procedures
   can be declared in a single ``PROCEDURE`` statement; implied-shape
-  arrays are supported for named constants (``PARAMETER``).
+  arrays are supported for named constants ( ``PARAMETER`` ).
 

@@ -40,7 +40,7 @@ that might be invalid.  One of the files this deletes is Makefile;
 if :samp:`make distclean` complains that Makefile does not exist
 or issues a message like 'don't know how to make distclean' it probably
 means that the directory is already suitably clean.  However, with the
-recommended method of building in a separate :samp:`{objdir}` , you should
+recommended method of building in a separate :samp:`{objdir}`, you should
 simply use a different :samp:`{objdir}` for each target.
 
 Second, when configuring a native system, either :command:`cc` or
@@ -236,7 +236,7 @@ corresponding :option:`--without` option.
   with the target alias in front of their name, as in
   :samp:`i686-pc-linux-gnu-gcc`.  All of the above transformations happen
   before the target alias is prepended to the name-so, specifying
-  :option:`--program-prefix=foo-` and program-suffix=-3.1 , the
+  :option:`--program-prefix=foo-` and program-suffix=-3.1, the
   resulting binary would be installed as
   /usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1.
 
@@ -291,7 +291,7 @@ corresponding :option:`--without` option.
 
   Sites that need to install multiple versions of GCC may not want to
   use the above simple configuration.  It is possible to use the
-  :option:`--program-prefix` , :option:`--program-suffix` and
+  :option:`--program-prefix`, :option:`--program-suffix` and
   :option:`--program-transform-name` options to install multiple versions
   into a single directory, but it may be simpler to use different prefixes
   and the :option:`--with-local-prefix` option to specify the location of the
@@ -344,7 +344,7 @@ corresponding :option:`--without` option.
   :option:`--disable-shared` does not accept a list of package names as
   argument, only :option:`--enable-shared` does.
 
-  Contrast with :option:`--enable-host-shared` , which affects *host*
+  Contrast with :option:`--enable-host-shared`, which affects *host*
   code.
 
 ``--enable-host-shared``
@@ -354,7 +354,7 @@ corresponding :option:`--without` option.
 
   This option is required when building the libgccjit.so library.
 
-  Contrast with :option:`--enable-shared` , which affects *target*
+  Contrast with :option:`--enable-shared`, which affects *target*
   libraries.
 
 ``--with-gnu-as``
@@ -384,13 +384,13 @@ corresponding :option:`--without` option.
 --with-as= :samp:`{.. _with-as:
 pathname}`
   Specify that the compiler should use the assembler pointed to by
-  :samp:`{pathname}` , rather than the one found by the standard rules to find
+  :samp:`{pathname}`, rather than the one found by the standard rules to find
   an assembler, which are:
 
   * Unless GCC is being built with a cross compiler, check the
     :samp:`{libexec}` /gcc/ :samp:`{target}` / :samp:`{version}` directory.
     :samp:`{libexec}` defaults to :samp:`{exec-prefix}` /libexec;
-    :samp:`{exec-prefix}` defaults to :samp:`{prefix}` , which
+    :samp:`{exec-prefix}` defaults to :samp:`{prefix}`, which
     defaults to /usr/local unless overridden by the
     :option:`--prefix`:samp:`={pathname}` switch described above.  :samp:`{target}`
     is the target system triple, such as :samp:`sparc-sun-solaris2.7`, and
@@ -437,13 +437,13 @@ pathname}`
   Specify whether to enable or disable multiarch support.  The default is
   to check for glibc start files in a multiarch location, and enable it
   if the files are found.  The auto detection is enabled for native builds,
-  and for cross builds configured with :option:`--with-sysroot` , and without
+  and for cross builds configured with :option:`--with-sysroot`, and without
   :option:`--with-native-system-header-dir`.
   More documentation about multiarch can be found at
   https://wiki.debian.org/Multiarch.
 
 ``--enable-sjlj-exceptions``
-  Force use of the ``setjmp``/``longjmp``-based scheme for exceptions.
+  Force use of the ``setjmp`` / ``longjmp`` -based scheme for exceptions.
   :samp:`configure` ordinarily picks the correct value based on the platform.
   Only use this option if you are sure you need a different setting.
 
@@ -525,7 +525,7 @@ pathname}`
     gcc/config/arm/t-*profile files for an example of what such
     Makefile fragments might look like for this version of GCC.  The macros
     expected to be defined in these fragments are not stable across GCC
-    releases, so make sure they define the ``MULTILIB``-related macros
+    releases, so make sure they define the ``MULTILIB`` -related macros
     expected by the version of GCC you are building.
     See :ref:`Target Makefile Fragments <target-fragment>`.
 
@@ -751,7 +751,7 @@ pathname}`
   These configure options provide default values for the :option:`-mschedule` =,
   :option:`-march` =, :option:`-mtune` =, :option:`-mabi` =, and :option:`-mfpu` =
   options and for :option:`-mhard-float` or :option:`-msoft-float`.  As with
-  :option:`--with-cpu` , which switches will be accepted and acceptable values
+  :option:`--with-cpu`, which switches will be accepted and acceptable values
   of the arguments depend on the target.
 
 :samp:`--with-mode={mode}`
@@ -920,7 +920,7 @@ pathname}`
 
 ``--enable-initfini-array``
   Force the use of sections ``.init_array`` and ``.fini_array``
-  (instead of ``.init`` and ``.fini``) for constructors and
+  (instead of ``.init`` and ``.fini`` ) for constructors and
   destructors.  Option :option:`--disable-initfini-array` has the
   opposite effect.  If neither option is specified, the configure script
   will try to guess whether the ``.init_array`` and
@@ -1126,7 +1126,7 @@ aix`, :samp:`svr4` or :samp:`both`
   libraries should be built with the system C compiler during stage 1 of
   the bootstrap process, rather than only in later stages with the
   bootstrapped C compiler.  The list of valid values is the same as for
-  :option:`--enable-languages` , and the option ``all`` will select all
+  :option:`--enable-languages`, and the option ``all`` will select all
   of the languages enabled by :option:`--enable-languages`.  This option is
   primarily useful for GCC development; for instance, when a development
   version of the compiler cannot bootstrap due to compiler bugs, or when
@@ -1256,7 +1256,7 @@ aix`, :samp:`svr4` or :samp:`both`
   from release branches or release archives default to
   :samp:`--enable-checking=release`, and otherwise
   :samp:`--enable-checking=yes,extra` is used.  When the option is
-  specified without a :samp:`{list}` , the result is the same as
+  specified without a :samp:`{list}`, the result is the same as
   :samp:`--enable-checking=yes`.  Likewise, :samp:`--disable-checking` is
   equivalent to :samp:`--enable-checking=no`.
 
@@ -1372,8 +1372,8 @@ aix`, :samp:`svr4` or :samp:`both`
   or the IEEE 128-bit floating point format on PowerPC Linux systems.
   This configuration switch will only work on little endian PowerPC
   Linux systems and on big endian 64-bit systems where the default cpu
-  is at least power7 (i.e. :option:`--with-cpu=power7` ,
-  :option:`--with-cpu=power8` , or :option:`--with-cpu=power9` is used).
+  is at least power7 (i.e. :option:`--with-cpu=power7`,
+  :option:`--with-cpu=power8`, or :option:`--with-cpu=power9` is used).
 
   If you use the :option:`--with-long-double-64` configuration option,
   the :option:`--with-long-double-format=ibm` and
@@ -1468,7 +1468,7 @@ aix`, :samp:`svr4` or :samp:`both`
   Tells GCC to pass :option:`--build-id` option to the linker for all final
   links (links performed without the :option:`-r` or :option:`--relocatable`
   option), if the linker supports it.  If you specify
-  :option:`--enable-linker-build-id` , but your linker does not
+  :option:`--enable-linker-build-id`, but your linker does not
   support :option:`--build-id` option, a warning is issued and the
   :option:`--enable-linker-build-id` option is ignored.  The default is off.
 
@@ -1553,10 +1553,10 @@ aix`, :samp:`svr4` or :samp:`both`
   Build as offload target compiler. Specify offload host triple by :samp:`{target}`.
 
 :samp:`--enable-offload-targets={target1}[={path1}],...,{targetN}[={pathN}]`
-  Enable offloading to targets :samp:`{target1}` , ..., :samp:`{targetN}`.
+  Enable offloading to targets :samp:`{target1}`, ..., :samp:`{targetN}`.
   Offload compilers are expected to be already installed.  Default search
   path for them is :samp:`{exec-prefix}`, but it can be changed by
-  specifying paths :samp:`{path1}` , ..., :samp:`{pathN}`.
+  specifying paths :samp:`{path1}`, ..., :samp:`{pathN}`.
 
   .. code-block:: c++
 
@@ -1625,12 +1625,12 @@ aix`, :samp:`svr4` or :samp:`both`
   :option:`--with-libs` that this option obsoletes.  The default value,
   in case :option:`--with-sysroot` is not given an argument, is
   ${gcc_tooldir}/sys-root.  If the specified directory is a
-  subdirectory of ${exec_prefix} , then it will be found relative to
+  subdirectory of ${exec_prefix}, then it will be found relative to
   the GCC binaries if the installation tree is moved.
 
   This option affects the system root for the compiler used to build
   target libraries (which runs on the build system) and the compiler newly
-  installed with ``make install``; it does not affect the compiler which is
+  installed with ``make install`` ; it does not affect the compiler which is
   used to build GCC itself.
 
   If you specify the :option:`--with-native-system-header-dir`:samp:`={dirname}`
@@ -1725,7 +1725,7 @@ aix`, :samp:`svr4` or :samp:`both`
 ``--with-double-comparison={tristate|bool|libf7}``
   Only supported for the AVR target since version 10.
   Specify what result format is returned by library functions that
-  compare 64-bit floating point values (``DFmode``).
+  compare 64-bit floating point values ( ``DFmode`` ).
   The GCC default is :samp:`tristate`.  If the floating point
   implementation returns a boolean instead, set it to :samp:`bool`.
 
@@ -1833,7 +1833,7 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   This option controls whether run-time checks and contracts are compiled into
   the D runtime library.  When the option is not specified, the library is built
   with :samp:`release` checking.  When the option is specified without a
-  :samp:`{list}` , the result is the same as :samp:`--enable-libphobos-checking=yes`.
+  :samp:`{list}`, the result is the same as :samp:`--enable-libphobos-checking=yes`.
   Likewise, :samp:`--disable-libphobos-checking` is equivalent to
   :samp:`--enable-libphobos-checking=no`.
 
@@ -1854,7 +1854,7 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
 
   When the option is not specified, the default choice :samp:`auto` means that it
   is inferred whether the target has support for the phobos standard library.
-  When the option is specified without a :samp:`{choice}` ,  the result is the same as
+  When the option is specified without a :samp:`{choice}`,  the result is the same as
   :samp:`--with-libphobos-druntime-only=yes`.
 
 ``--with-target-system-zlib``

@@ -25,7 +25,7 @@ are not inherently erroneous but which are risky or suggest there is
 likely to be a bug in the program.  Unless :option:`-Werror` is specified,
 they do not prevent compilation of the program.
 
-You can request many specific warnings with options beginning :option:`-W` ,
+You can request many specific warnings with options beginning :option:`-W`,
 for example :option:`-Wimplicit` to request warnings on implicit
 declarations.  Each of these specific warning options also has a
 negative form beginning :option:`-Wno-` to turn off warnings;
@@ -41,7 +41,7 @@ by GNU Fortran:
 
   .. index:: errors, limiting
 
-  Limits the maximum number of error messages to :samp:`{n}` , at which point
+  Limits the maximum number of error messages to :samp:`{n}`, at which point
   GNU Fortran bails out rather than attempting to continue processing the
   source code.  If :samp:`{n}` is 0, there is no limit on the number of error
   messages produced.
@@ -78,14 +78,14 @@ by GNU Fortran:
   nonstandard practices, but not all.
   However, improvements to GNU Fortran in this area are welcome.
 
-  This should be used in conjunction with :option:`-std=f95` ,
-  :option:`-std=f2003` , :option:`-std=f2008` or :option:`-std=f2018`.
+  This should be used in conjunction with :option:`-std=f95`,
+  :option:`-std=f2003`, :option:`-std=f2008` or :option:`-std=f2018`.
 
 .. option:: -pedantic-errors
 
   .. index:: pedantic-errors
 
-  Like :option:`-pedantic` , except that errors are produced rather than
+  Like :option:`-pedantic`, except that errors are produced rather than
   warnings.
 
 .. option:: -Wall
@@ -98,11 +98,11 @@ by GNU Fortran:
 
   Enables commonly used warning options pertaining to usage that
   we recommend avoiding and that we believe are easy to avoid.
-  This currently includes :option:`-Waliasing` , :option:`-Wampersand` ,
-  :option:`-Wconversion` , :option:`-Wsurprising` , :option:`-Wc-binding-type` ,
-  :option:`-Wintrinsics-std` , :option:`-Wtabs` , :option:`-Wintrinsic-shadow` ,
-  :option:`-Wline-truncation` , :option:`-Wtarget-lifetime` ,
-  :option:`-Winteger-division` , :option:`-Wreal-q-constant` , :option:`-Wunused`
+  This currently includes :option:`-Waliasing`, :option:`-Wampersand`,
+  :option:`-Wconversion`, :option:`-Wsurprising`, :option:`-Wc-binding-type`,
+  :option:`-Wintrinsics-std`, :option:`-Wtabs`, :option:`-Wintrinsic-shadow`,
+  :option:`-Wline-truncation`, :option:`-Wtarget-lifetime`,
+  :option:`-Winteger-division`, :option:`-Wreal-q-constant`, :option:`-Wunused`
   and :option:`-Wundefined-do-loop`.
 
 .. option:: -Waliasing
@@ -141,8 +141,8 @@ by GNU Fortran:
   .. index:: &
 
   Warn about missing ampersand in continued character constants. The
-  warning is given with :option:`-Wampersand` , :option:`-pedantic` ,
-  :option:`-std=f95` , :option:`-std=f2003` , :option:`-std=f2008` and
+  warning is given with :option:`-Wampersand`, :option:`-pedantic`,
+  :option:`-std=f95`, :option:`-std=f2003`, :option:`-std=f2008` and
   :option:`-std=f2018`. Note: With no ampersand given in a continued
   character constant, GNU Fortran assumes continuation at the first
   non-comment, non-whitespace character after the ampersand that
@@ -220,7 +220,7 @@ by GNU Fortran:
   .. index:: warnings, extra
 
   Enables some warning options for usages of language features which
-  may be problematic. This currently includes :option:`-Wcompare-reals` ,
+  may be problematic. This currently includes :option:`-Wcompare-reals`,
   :option:`-Wunused-parameter` and :option:`-Wdo-subscript`.
 
 .. option:: -Wfrontend-loop-interchange
@@ -334,8 +334,8 @@ by GNU Fortran:
   of the Fortran Character Set.  For continuation lines, a tab followed
   by a digit between 1 and 9 is supported.  :option:`-Wtabs` will cause a
   warning to be issued if a tab is encountered. Note, :option:`-Wtabs` is
-  active for :option:`-pedantic` , :option:`-std=f95` , :option:`-std=f2003` ,
-  :option:`-std=f2008` , :option:`-std=f2018` and
+  active for :option:`-pedantic`, :option:`-std=f95`, :option:`-std=f2003`,
+  :option:`-std=f2008`, :option:`-std=f2018` and
   :option:`-Wall`.
 
 .. option:: -Wundefined-do-loop
@@ -403,7 +403,7 @@ by GNU Fortran:
 
   .. index:: unused parameter
 
-  Contrary to :command:`gcc`'s meaning of :option:`-Wunused-parameter` ,
+  Contrary to :command:`gcc`'s meaning of :option:`-Wunused-parameter`,
   :command:`gfortran`'s implementation of this option does not warn
   about unused dummy arguments (see :option:`-Wunused-dummy-argument` ),
   but about unused ``PARAMETER`` values. :option:`-Wunused-parameter`
@@ -444,7 +444,7 @@ by GNU Fortran:
   an allocatable array variable of intrinsic type in intrinsic assignments.  In
   hot loops, the Fortran 2003 reallocation feature may reduce the performance.
   If the array is already allocated with the correct shape, consider using a
-  whole-array array-spec (e.g. ``(:,:,:)``) for the variable on the left-hand
+  whole-array array-spec (e.g. ``(:,:,:)`` ) for the variable on the left-hand
   side to prevent the reallocation check. Note that in some cases the warning
   is shown, even if the compiler will optimize reallocation checks away.  For
   instance, when the right-hand side contains the same variable multiplied by

@@ -41,7 +41,7 @@
 
   If :samp:`{DIM}` is absent, a scalar with the square root of the sum of all
   elements in :samp:`{ARRAY}` squared  is returned. Otherwise, an array of
-  rank n-1, where n equals the rank of :samp:`{ARRAY}` , and a
+  rank n-1, where n equals the rank of :samp:`{ARRAY}`, and a
   shape similar to that of :samp:`{ARRAY}` with dimension :samp:`{DIM}` dropped
   is returned.
 

@@ -195,7 +195,7 @@ The following type attributes are supported on most targets.
   of a type of a function that returns a pointer and takes at least one
   argument of an integer type.  It indicates that the returned pointer
   points to an object whose size is given by the function argument at
-  :samp:`{position-1}` , or by the product of the arguments at :samp:`{position-1}`
+  :samp:`{position-1}`, or by the product of the arguments at :samp:`{position-1}`
   and :samp:`{position-2}`.  Meaningful sizes are positive values less than
   ``PTRDIFF_MAX``.  Other sizes are disagnosed when detected.  GCC uses
   this information to improve the results of ``__builtin_object_size``.
@@ -339,7 +339,7 @@ The following type attributes are supported on most targets.
 
   If you replaced ``short_a`` with ``short`` in the variable
   declaration, the above program would abort when compiled with
-  :option:`-fstrict-aliasing` , which is on by default at :option:`-O2` or
+  :option:`-fstrict-aliasing`, which is on by default at :option:`-O2` or
   above.
 
 .. option:: mode (mode)
@@ -372,7 +372,7 @@ The following type attributes are supported on most targets.
   is equivalent to specifying the ``packed``
   attribute on all ``enum`` definitions.
 
-  In the following example ``struct my_packed_struct``'s members are
+  In the following example ``struct my_packed_struct`` 's members are
   packed closely together, but the internal layout of its ``s`` member
   is not packed-to do that, ``struct my_unpacked_struct`` needs to
   be packed too.
@@ -469,7 +469,7 @@ The following type attributes are supported on most targets.
   interfaces for compatibility reasons.  For example, suppose the
   ``wait`` function must accept either a value of type ``int *`` to
   comply with POSIX, or a value of type ``union wait *`` to comply with
-  the 4.1BSD interface.  If ``wait``'s parameter were ``void *``,
+  the 4.1BSD interface.  If ``wait`` 's parameter were ``void *``,
   ``wait`` would accept both kinds of arguments, but it would also
   accept any other pointer type and this would make argument type checking
   less useful.  Instead, ``<sys/wait.h>`` might define the interface
@@ -494,7 +494,7 @@ The following type attributes are supported on most targets.
     int w1 () { int w; return wait (&w); }
     int w2 () { union wait w; return wait (&w); }
 
-  With this interface, ``wait``'s implementation might look like this:
+  With this interface, ``wait`` 's implementation might look like this:
 
   .. code-block:: c++
 
@@ -507,7 +507,7 @@ The following type attributes are supported on most targets.
 
   .. index:: unused type attribute
 
-  When attached to a type (including a ``union`` or a ``struct``),
+  When attached to a type (including a ``union`` or a ``struct`` ),
   this attribute means that variables of that type are meant to appear
   possibly unused.  GCC does not produce a warning for any variables of
   that type, even if the variable appears to do nothing.  This is often

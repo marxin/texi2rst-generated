@@ -49,7 +49,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-double-fclose, -Wanalyzer-double-fclose
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-double-fclose` to disable it.
 
   This diagnostic warns for paths through the code in which a ``FILE *``
@@ -57,7 +57,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-double-free, -Wanalyzer-double-free
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-double-free` to disable it.
 
   This diagnostic warns for paths through the code in which a pointer
@@ -67,7 +67,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-exposure-through-output-file
 .. option:: -Wanalyzer-exposure-through-output-file
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-exposure-through-output-file`
   to disable it.
 
@@ -77,7 +77,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-file-leak, -Wanalyzer-file-leak
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-file-leak`
   to disable it.
 
@@ -86,7 +86,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-free-of-non-heap, -Wanalyzer-free-of-non-heap
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-free-of-non-heap`
   to disable it.
 
@@ -95,7 +95,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-malloc-leak, -Wanalyzer-malloc-leak
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-malloc-leak`
   to disable it.
 
@@ -106,7 +106,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-mismatching-deallocation
 .. option:: -Wanalyzer-mismatching-deallocation
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-mismatching-deallocation`
   to disable it.
 
@@ -119,7 +119,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-possible-null-argument, -Wanalyzer-possible-null-argument
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-possible-null-argument` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -130,7 +130,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-possible-null-dereference
 .. option:: -Wanalyzer-possible-null-dereference
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-possible-null-dereference` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -138,7 +138,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-null-argument, -Wanalyzer-null-argument
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-null-argument` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -148,7 +148,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-null-dereference, -Wanalyzer-null-dereference
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-null-dereference` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -156,7 +156,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-shift-count-negative, -Wanalyzer-shift-count-negative
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-shift-count-negative` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -169,7 +169,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-shift-count-overflow, -Wanalyzer-shift-count-overflow
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-shift-count-overflow` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -183,7 +183,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-stale-setjmp-buffer, -Wanalyzer-stale-setjmp-buffer
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-stale-setjmp-buffer` to disable it.
 
   This diagnostic warns for paths through the code in which
@@ -209,16 +209,16 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-unsafe-call-within-signal-handler
 .. option:: -Wanalyzer-unsafe-call-within-signal-handler
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` to disable it.
 
   This diagnostic warns for paths through the code in which a
-  function known to be async-signal-unsafe (such as ``fprintf``) is
+  function known to be async-signal-unsafe (such as ``fprintf`` ) is
   called from a signal handler.
 
 .. option:: -Wno-analyzer-use-after-free, -Wanalyzer-use-after-free
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-use-after-free` to disable it.
 
   This diagnostic warns for paths through the code in which a
@@ -228,7 +228,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame
 .. option:: -Wanalyzer-use-of-pointer-in-stale-stack-frame
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`
   to disable it.
 
@@ -237,7 +237,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-write-to-const, -Wanalyzer-write-to-const
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-write-to-const`
   to disable it.
 
@@ -249,7 +249,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-write-to-string-literal
 .. option:: -Wanalyzer-write-to-string-literal
 
-  This warning requires :option:`-fanalyzer` , which enables it; use
+  This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-write-to-string-literal`
   to disable it.
 
@@ -259,9 +259,9 @@ Options That Control Static Analysis
   false negatives are more likely relative to other warnings.
 
 Pertinent parameters for controlling the exploration are:
-:option:`--param analyzer-bb-explosion-factor`:samp:`={value}` ,
-:option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}` ,
-:option:`--param analyzer-max-recursion-depth`:samp:`={value}` , and
+:option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
+:option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
+:option:`--param analyzer-max-recursion-depth`:samp:`={value}`, and
 :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`.
 
 The following options control the analyzer.
@@ -282,7 +282,7 @@ The following options control the analyzer.
 
   Some checkers are disabled by default (even with :option:`-fanalyzer` ),
   such as the ``taint`` checker that implements
-  :option:`-Wanalyzer-tainted-array-index` , and this option is required
+  :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.
 
 .. option:: -fno-analyzer-feasibility, -fanalyzer-feasibility
@@ -292,7 +292,7 @@ The following options control the analyzer.
   By default the analyzer verifies that there is a feasible control flow path
   for each diagnostic it emits: that the conditions that hold are not mutually
   exclusive.  Diagnostics for which no feasible path can be found are rejected.
-  This filtering can be suppressed with :option:`-fno-analyzer-feasibility` , for
+  This filtering can be suppressed with :option:`-fno-analyzer-feasibility`, for
   debugging issues in this code.
 
 .. option:: -fanalyzer-fine-grained, -fno-analyzer-fine-grained
@@ -304,7 +304,7 @@ The following options control the analyzer.
 
   By default, an edge in this graph can contain the effects of a run
   of multiple statements within a basic block.  With
-  :option:`-fanalyzer-fine-grained` , each statement gets its own edge.
+  :option:`-fanalyzer-fine-grained`, each statement gets its own edge.
 
 .. option:: -fanalyzer-show-duplicate-count, -fno-analyzer-show-duplicate-count
 
@@ -357,7 +357,7 @@ The following options control the analyzer.
   :samp:`0`
     At this level, interprocedural call and return events are displayed,
     along with the most pertinent state-change events relating to
-    a diagnostic.  For example, for a double-``free`` diagnostic,
+    a diagnostic.  For example, for a double- ``free`` diagnostic,
     both calls to ``free`` will be shown.
 
   :samp:`1`
@@ -433,7 +433,7 @@ The following options control the analyzer.
 
 .. option:: -fdump-analyzer-state-purge
 
-  As per :option:`-fdump-analyzer-supergraph` , dump a representation of the
+  As per :option:`-fdump-analyzer-supergraph`, dump a representation of the
   'supergraph' suitable for viewing with GraphViz, but annotate the
   graph with information on what state will be purged at each node.
   The graph is written to :samp:`{file}`.state-purge.dot.

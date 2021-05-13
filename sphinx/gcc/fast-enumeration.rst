@@ -42,7 +42,7 @@ each of them, it assigns it to ``object``, then executes the
 
 Here is a fully worked-out example using a Foundation library (which
 provides the implementation of ``NSArray``, ``NSString`` and
-``NSLog``):
+``NSLog`` ):
 
 .. code-block:: objective-c
 
@@ -136,7 +136,7 @@ here is what happens when you run it:
   command was used (in which case ``object expression`` will remain
   set to the last object that was iterated over) or because it iterated
   over all the objects (in which case ``object expression`` will be
-  set to ``nil``).
+  set to ``nil`` ).
 
 * ``statements`` must not make any changes to the collection
   object; if they do, it is a hard error and the fast enumeration

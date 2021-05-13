@@ -34,7 +34,7 @@ Registers have various characteristics.
 .. index:: FIRST_PSEUDO_REGISTER
 
 MacroFIRST_PSEUDO_REGISTERNumber of hardware registers known to the compiler.  They receive
-numbers 0 through ``FIRST_PSEUDO_REGISTER-1``; thus, the first
+numbers 0 through ``FIRST_PSEUDO_REGISTER-1`` ; thus, the first
 pseudo register's number really is assigned the number
 ``FIRST_PSEUDO_REGISTER``.
 
@@ -58,7 +58,7 @@ register :samp:`{n}` is fixed, 0 otherwise.
 The table initialized from this macro, and the table initialized by
 the following one, may be overridden at run time either automatically,
 by the actions of the macro ``CONDITIONAL_REGISTER_USAGE``, or by
-the user with the command options :option:`-ffixed-`:samp:`{reg}` ,
+the user with the command options :option:`-ffixed-`:samp:`{reg}`,
 :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`.
 
 .. index:: CALL_USED_REGISTERS
@@ -94,7 +94,7 @@ MacroCALL_REALLY_USED_REGISTERS
 
 Like ``CALL_USED_REGISTERS`` except this macro doesn't require
 that the entire set of ``FIXED_REGISTERS`` be included.
-(``CALL_USED_REGISTERS`` must be a superset of ``FIXED_REGISTERS``).
+( ``CALL_USED_REGISTERS`` must be a superset of ``FIXED_REGISTERS`` ).
 
 Exactly one of ``CALL_USED_REGISTERS`` and ``CALL_REALLY_USED_REGISTERS``
 must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
@@ -178,7 +178,7 @@ must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
   ``reg_class_contents``, and ``reg_names`` have been initialized
   from ``FIXED_REGISTERS``, ``CALL_USED_REGISTERS``,
   ``REG_CLASS_CONTENTS``, and ``REGISTER_NAMES``, respectively.
-  ``global_regs`` has been cleared, and any :option:`-ffixed-`:samp:`{reg}` ,
+  ``global_regs`` has been cleared, and any :option:`-ffixed-`:samp:`{reg}`,
   :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`
   command options have been applied.
 
@@ -190,7 +190,7 @@ must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
   flags, you may indicate this to GCC by using this macro to modify
   ``fixed_regs`` and ``call_used_regs`` to 1 for each of the
   registers in the classes which should not be used by GCC.  Also make
-  ``define_register_constraint``s return ``NO_REGS`` for constraints
+  ``define_register_constraint`` s return ``NO_REGS`` for constraints
   that shouldn't be used.
 
   (However, if this class is not included in ``GENERAL_REGS`` and all
@@ -302,7 +302,7 @@ consecutive registers are needed for a given mode.
 .. function:: unsigned int TARGET_HARD_REGNO_NREGS(unsigned intregno,machine_mode mode)
 
   This hook returns the number of consecutive hard registers, starting
-  at register number :samp:`{regno}` , required to hold a value of mode
+  at register number :samp:`{regno}`, required to hold a value of mode
   :samp:`{mode}`.  This hook must never return zero, even if a register
   cannot hold the requested mode - indicate that with
   ``TARGET_HARD_REGNO_MODE_OK`` and/or
@@ -312,12 +312,12 @@ consecutive registers are needed for a given mode.
 
 .. index:: HARD_REGNO_NREGS_HAS_PADDING
 
-MacroHARD_REGNO_NREGS_HAS_PADDING(:samp:`{regno}`,:samp:`{mode}`)A C expression that is nonzero if a value of mode :samp:`{mode}` , stored
+MacroHARD_REGNO_NREGS_HAS_PADDING(:samp:`{regno}`,:samp:`{mode}`)A C expression that is nonzero if a value of mode :samp:`{mode}`, stored
 in memory, ends with padding that causes it to take up more space than
 in registers starting at register number :samp:`{regno}` (as determined by
 multiplying GCC's notion of the size of the register when containing
 this mode by the number of registers returned by
-``TARGET_HARD_REGNO_NREGS``).  By default this is zero.
+``TARGET_HARD_REGNO_NREGS`` ).  By default this is zero.
 
 For example, if a floating-point value is stored in three 32-bit
 registers but takes up 128 bits in memory, then this would be
@@ -372,7 +372,7 @@ floating-point registers is still 32-bit.
   this hook to distinguish between these modes, provided you define
   patterns :samp:`movhi`, etc., to take advantage of this.  This is
   useful because of the interaction between ``TARGET_HARD_REGNO_MODE_OK``
-  and ``TARGET_MODES_TIEABLE_P``; it is very desirable for all integer
+  and ``TARGET_MODES_TIEABLE_P`` ; it is very desirable for all integer
   modes to be tieable.
 
   Many machines have special registers for floating point arithmetic.
@@ -422,9 +422,9 @@ The default is always nonzero.
 
   If ``TARGET_HARD_REGNO_MODE_OK (r, mode1)`` and
   ``TARGET_HARD_REGNO_MODE_OK (r, mode2)`` are always
-  the same for any :samp:`{r}` , then
+  the same for any :samp:`{r}`, then
   ``TARGET_MODES_TIEABLE_P (mode1, mode2)``
-  should be true.  If they differ for any :samp:`{r}` , you should define
+  should be true.  If they differ for any :samp:`{r}`, you should define
   this hook to return false unless some other mechanism ensures the
   accessibility of the value in a narrower mode.
 

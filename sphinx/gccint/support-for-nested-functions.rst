@@ -89,7 +89,7 @@ separately.
 .. function:: void TARGET_ASM_TRAMPOLINE_TEMPLATE(FILE *f)
 
   This hook is called by ``assemble_trampoline_template`` to output,
-  on the stream :samp:`{f}` , assembler code for a block of data that contains
+  on the stream :samp:`{f}`, assembler code for a block of data that contains
   the constant parts of a trampoline.  This code should not include a
   label-the label is taken care of automatically.
 

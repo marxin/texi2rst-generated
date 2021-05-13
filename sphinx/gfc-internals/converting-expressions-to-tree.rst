@@ -9,7 +9,7 @@ Converting expressions to ``tree`` is done by functions called
 The central data structure for a GENERIC expression is the
 ``gfc_se`` structure.  Its ``expr`` member is a ``tree`` that
 holds the value of the expression.  A ``gfc_se`` structure is
-initialized using ``gfc_init_se``; it needs to be embedded in an
+initialized using ``gfc_init_se`` ; it needs to be embedded in an
 outer ``gfc_se``.
 
 Evaluating Fortran expressions often require things to be done before

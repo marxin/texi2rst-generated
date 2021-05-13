@@ -9,7 +9,7 @@ These :samp:`-m` options are defined for the VAX:
 
 .. option:: -munix
 
-  Do not output certain jump instructions (``aobleq`` and so on)
+  Do not output certain jump instructions ( ``aobleq`` and so on)
   that the Unix assembler for the VAX cannot handle across long
   ranges.
 

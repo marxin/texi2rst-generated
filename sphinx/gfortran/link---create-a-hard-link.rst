@@ -11,7 +11,7 @@
 
 :samp:`{Description}:`
   Makes a (hard) link from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
-  character (``CHAR(0)``) can be used to mark the end of the names in
+  character ( ``CHAR(0)`` ) can be used to mark the end of the names in
   :samp:`{PATH1}` and :samp:`{PATH2}` ; otherwise, trailing blanks in the file
   names are ignored.  If the :samp:`{STATUS}` argument is supplied, it
   contains 0 on success or a nonzero error code upon return; see

@@ -20,7 +20,7 @@ this function match the Standard, but that would be wrong, since the
 function will still return ``char *``.
 
 If you need a Standard compliant library, then you need to find one, as
-GCC does not provide one.  The GNU C library (called ``glibc``)
+GCC does not provide one.  The GNU C library (called ``glibc`` )
 provides ISO C, POSIX, BSD, SystemV and X/Open compatibility for
 GNU/Linux and HURD-based GNU systems; no recent version of it supports
 other systems, though some very old versions did.  Version 2.2 of the

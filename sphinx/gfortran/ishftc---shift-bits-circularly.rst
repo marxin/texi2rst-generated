@@ -39,7 +39,7 @@
   :samp:`{I}`      The type shall be ``INTEGER``.
   ===============  =============================================================
   :samp:`{SHIFT}`  The type shall be ``INTEGER``.
-  :samp:`{SIZE}`   (Optional) The type shall be ``INTEGER``;
+  :samp:`{SIZE}`   (Optional) The type shall be ``INTEGER`` ;
                    the value must be greater than zero and less than or equal to
                    ``BIT_SIZE(I)``.
   ===============  =============================================================

@@ -53,7 +53,7 @@
     As in case(B), the result is false, if :samp:`{POINTER}` is disassociated.
 
   :samp:`(D) If {TARGET} is present and an scalar pointer, the result is true`
-    if :samp:`{TARGET}` is associated with :samp:`{POINTER}` , the target associated with
+    if :samp:`{TARGET}` is associated with :samp:`{POINTER}`, the target associated with
     :samp:`{TARGET}` are not zero-sized storage sequences and occupy the same storage
     units.
     The result is false, if either :samp:`{TARGET}` or :samp:`{POINTER}` is disassociated.

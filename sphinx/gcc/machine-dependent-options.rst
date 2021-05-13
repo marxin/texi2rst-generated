@@ -183,7 +183,7 @@ compatibility with other compilers on those systems:
 
 .. option:: -YP,dirs, -YP
 
-  Search the directories :samp:`{dirs}` , and no others, for libraries
+  Search the directories :samp:`{dirs}`, and no others, for libraries
   specified with :option:`-l`.
 
 .. option:: -Ym,dir, -Ym

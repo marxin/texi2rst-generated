@@ -10,7 +10,7 @@ templates for the instructions can be derived from the other RTL
 templates using simple transformations.  E.g., i386.md contains
 an RTL template for the ordinary ``sub`` instruction-
 ``*subsi_1``, and for the ``sub`` instruction with subsequent
-zero-extension-``*subsi_1_zext``.  Such cases can be easily
+zero-extension- ``*subsi_1_zext``.  Such cases can be easily
 implemented by a single meta-template capable of generating a modified
 case based on the initial one:
 
@@ -46,7 +46,7 @@ deleted.
 
 ``define_subst`` can be used only in ``define_insn`` and
 ``define_expand``, it cannot be used in other expressions (e.g. in
-``define_insn_and_split``).
+``define_insn_and_split`` ).
 
 .. toctree::
 
@@ -66,7 +66,7 @@ template transformation.
 
 Suppose there are two kinds of instructions: one that touches flags and
 the other that does not.  The instructions of the second type could be
-generated with the following ``define_subst``:
+generated with the following ``define_subst`` :
 
 .. code-block:: c++
 
@@ -170,8 +170,8 @@ predicates are compared.  That can be used for more accurate filtering
 of accepted RTL-templates.
 
 ``match_operator`` matches common operators (like ``plus``,
-``minus``), ``unspec``, ``unspec_volatile`` operators and
-``match_operator``s from the original pattern if the modes match and
+``minus`` ), ``unspec``, ``unspec_volatile`` operators and
+``match_operator`` s from the original pattern if the modes match and
 ``match_operator`` from the input pattern has the same number of
 operands as the operator from the original pattern.
 
@@ -193,7 +193,7 @@ the input pattern.
 ``match_dup N`` is used in the output template to be replaced with
 the expression from the original pattern, which matched
 ``match_operand N`` from the input pattern.  As a consequence,
-``match_dup`` cannot be used to point to ``match_operand``s from
+``match_dup`` cannot be used to point to ``match_operand`` s from
 the output pattern, it should always refer to a ``match_operand``
 from the input pattern.  If a ``match_dup N`` occurs more than once
 in the output template, its first occurrence is replaced with the
@@ -206,15 +206,15 @@ original pattern and create new ones.  For instance, some operands could
 be added by means of standard ``match_operand``.
 
 After replacing ``match_dup`` with some RTL-subtree from the original
-pattern, it could happen that several ``match_operand``s in the
+pattern, it could happen that several ``match_operand`` s in the
 output pattern have the same indexes.  It is unknown, how many and what
 indexes would be used in the expression which would replace
 ``match_dup``, so such conflicts in indexes are inevitable.  To
 overcome this issue, ``match_operands`` and ``match_operators``,
 which were introduced into the output pattern, are renumerated when all
-``match_dup``s are replaced.
+``match_dup`` s are replaced.
 
-Number of alternatives in ``match_operand``s introduced into the
+Number of alternatives in ``match_operand`` s introduced into the
 output template ``M`` could differ from the number of alternatives in
 the original pattern ``N``, so in the resultant pattern there would
 be ``N*M`` alternatives.  Thus, constraints from the original pattern

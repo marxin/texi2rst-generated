@@ -7,7 +7,7 @@
   Obtain the runtime scheduling method.  The :samp:`{kind}` argument will be
   set to the value ``omp_sched_static``, ``omp_sched_dynamic``,
   ``omp_sched_guided`` or ``omp_sched_auto``.  The second argument,
-  :samp:`{chunk_size}` , is set to the chunk size.
+  :samp:`{chunk_size}`, is set to the chunk size.
 
 C/C++
   ============  ==============================================================

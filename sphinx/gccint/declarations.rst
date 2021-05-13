@@ -20,8 +20,8 @@ but rather state assertions about their operands.
   must be a non-paradoxical ``subreg`` expression.
 
   The presence of ``strict_low_part`` says that the part of the
-  register which is meaningful in mode :samp:`{n}` , but is not part of
-  mode :samp:`{m}` , is not to be altered.  Normally, an assignment to such
+  register which is meaningful in mode :samp:`{n}`, but is not part of
+  mode :samp:`{m}`, is not to be altered.  Normally, an assignment to such
   a subreg is allowed to have undefined effects on the rest of the
   register when :samp:`{m}` is smaller than :samp:`REGMODE_NATURAL_SIZE ({n})`.
 

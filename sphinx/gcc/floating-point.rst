@@ -42,7 +42,7 @@ Floating Point
 * Whether and how floating expressions are contracted when not
   disallowed by the ``FP_CONTRACT`` pragma (C99 and C11 6.5).
 
-  Expressions are currently only contracted if :option:`-ffp-contract=fast` ,
+  Expressions are currently only contracted if :option:`-ffp-contract=fast`,
   :option:`-funsafe-math-optimizations` or :option:`-ffast-math` are used.
   This is subject to change.
 
@@ -63,7 +63,7 @@ Floating Point
   7.12.2).
 
   This pragma is not implemented.  Expressions are currently only
-  contracted if :option:`-ffp-contract=fast` ,
+  contracted if :option:`-ffp-contract=fast`,
   :option:`-funsafe-math-optimizations` or :option:`-ffast-math` are used.
   This is subject to change.
 

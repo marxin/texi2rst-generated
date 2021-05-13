@@ -142,7 +142,7 @@ operand iterators or an access routine.
 
 The following access routines are available for examining operands:
 
-* ``SINGLE_SSA_{USE,DEF,TREE}_OPERAND``: These accessors will return
+* ``SINGLE_SSA_{USE,DEF,TREE}_OPERAND`` : These accessors will return
   NULL unless there is exactly one operand matching the specified flags.  If
   there is exactly one operand, the operand is returned as either a ``tree``,
   ``def_operand_p``, or ``use_operand_p``.
@@ -153,7 +153,7 @@ The following access routines are available for examining operands:
     use_operand_p u = SINGLE_SSA_USE_OPERAND (stmt, SSA_ALL_VIRTUAL_USES);
     def_operand_p d = SINGLE_SSA_DEF_OPERAND (stmt, SSA_OP_ALL_DEFS);
 
-* ``ZERO_SSA_OPERANDS``: This macro returns true if there are no
+* ``ZERO_SSA_OPERANDS`` : This macro returns true if there are no
   operands matching the specified flags.
 
   .. code-block:: c++
@@ -161,7 +161,7 @@ The following access routines are available for examining operands:
     if (ZERO_SSA_OPERANDS (stmt, SSA_OP_ALL_VIRTUALS))
       return;
 
-* ``NUM_SSA_OPERANDS``: This macro Returns the number of operands
+* ``NUM_SSA_OPERANDS`` : This macro Returns the number of operands
   matching 'flags'.  This actually executes a loop to perform the count, so
   only use this if it is really needed.
 
@@ -249,9 +249,9 @@ aren't using operand pointers, use and defs flags can be mixed.
          print_generic_expr (stderr, var, TDF_SLIM);
       }
 
-``VDEF``s are broken into two flags, one for the
-``DEF`` portion (``SSA_OP_VDEF``) and one for the USE portion
-(``SSA_OP_VUSE``).
+``VDEF`` s are broken into two flags, one for the
+``DEF`` portion ( ``SSA_OP_VDEF`` ) and one for the USE portion
+( ``SSA_OP_VUSE`` ).
 
 There are many examples in the code, in addition to the documentation
 in tree-ssa-operands.h and ssa-iterators.h.

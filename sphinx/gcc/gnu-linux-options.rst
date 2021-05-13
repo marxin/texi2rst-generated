@@ -31,7 +31,7 @@ These :samp:`-m` options are defined for GNU/Linux targets:
   Compile code compatible with Android platform.  This is the default on
   :samp:`*-*-linux-*android*` targets.
 
-  When compiling, this option enables :option:`-mbionic` , :option:`-fPIC` ,
+  When compiling, this option enables :option:`-mbionic`, :option:`-fPIC`,
   :option:`-fno-exceptions` and :option:`-fno-rtti` by default.  When linking,
   this option makes the GCC driver pass Android-specific options to the linker.
   Finally, this option causes the preprocessor macro ``__ANDROID__``
@@ -39,12 +39,12 @@ These :samp:`-m` options are defined for GNU/Linux targets:
 
 .. option:: -tno-android-cc
 
-  Disable compilation effects of :option:`-mandroid` , i.e., do not enable
-  :option:`-mbionic` , :option:`-fPIC` , :option:`-fno-exceptions` and
+  Disable compilation effects of :option:`-mandroid`, i.e., do not enable
+  :option:`-mbionic`, :option:`-fPIC`, :option:`-fno-exceptions` and
   :option:`-fno-rtti` by default.
 
 .. option:: -tno-android-ld
 
-  Disable linking effects of :option:`-mandroid` , i.e., pass standard Linux
+  Disable linking effects of :option:`-mandroid`, i.e., pass standard Linux
   linking options to the linker.
 

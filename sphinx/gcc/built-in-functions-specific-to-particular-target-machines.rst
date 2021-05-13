@@ -144,7 +144,7 @@ of the name.
 
 The following built-in functions are available on systems that use the OSF/1
 PALcode.  Normally they invoke the ``rduniq`` and ``wruniq``
-PAL calls, but when invoked with :option:`-mtls-kernel` , they invoke
+PAL calls, but when invoked with :option:`-mtls-kernel`, they invoke
 ``rdval`` and ``wrval``.
 
 .. code-block:: c++
@@ -286,7 +286,7 @@ error may be generated.
 .. function:: int __builtin_arc_aligned(void *val,int alignval)
 
   Return 1 if :samp:`{val}` is known to have the byte alignment given
-  by :samp:`{alignval}` , otherwise return 0.
+  by :samp:`{alignval}`, otherwise return 0.
   Note that this is different from
 
   .. code-block:: c++
@@ -349,7 +349,7 @@ error may be generated.
 
 .. function:: unsigned int __builtin_arc_lr(unsigned intauxr)
 
-  The operand, :samp:`{auxv}` , is the address of an auxiliary register and
+  The operand, :samp:`{auxv}`, is the address of an auxiliary register and
   must be a compile time constant.  Generates:
 
   .. code-block:: c++
@@ -427,8 +427,8 @@ error may be generated.
 
 .. function:: void __builtin_arc_sr(unsigned intval,unsigned intauxr)
 
-  The first argument, :samp:`{val}` , is a compile time constant to be
-  written to the register, the second argument, :samp:`{auxr}` , is the
+  The first argument, :samp:`{val}`, is a compile time constant to be
+  written to the register, the second argument, :samp:`{auxr}`, is the
   address of an auxiliary register.  Generates:
 
   .. code-block:: c++
@@ -1420,8 +1420,8 @@ the following types:
 use ``q31`` to indicate a Q31 fractional value and ``i32`` to
 indicate a 32-bit integer value.  Similarly, ``a64`` is the same as
 ``long long``, but we use ``a64`` to indicate values that are
-placed in one of the four DSP accumulators (``$ac0``,
-``$ac1``, ``$ac2`` or ``$ac3``).
+placed in one of the four DSP accumulators ( ``$ac0``,
+``$ac1``, ``$ac2`` or ``$ac3`` ).
 
 Also, some built-in functions prefer or require immediate numbers as
 parameters, because the corresponding DSP instructions accept both immediate
@@ -1795,9 +1795,9 @@ The table below lists the ``v2sf`` operations for which hardware
 support exists.  ``a``, ``b`` and ``c`` are ``v2sf``
 values and ``x`` is an integral value.
 
-================  =======================
+================  =========================
 C code            MIPS instruction
-================  =======================
+================  =========================
 ``a + b``         ``add.ps``
 ``a - b``         ``sub.ps``
 ``-a``            ``neg.ps``
@@ -1806,8 +1806,8 @@ C code            MIPS instruction
 ``a * b - c``     ``msub.ps``
 ``-(a * b + c)``  ``nmadd.ps``
 ``-(a * b - c)``  ``nmsub.ps``
-``x ? a : b``     ``movn.ps``/``movz.ps``
-================  =======================
+``x ? a : b``     ``movn.ps`` / ``movz.ps``
+================  =========================
 Note that the multiply-accumulate instructions can be disabled
 using the command-line option ``-mno-fused-madd``.
 
@@ -1821,31 +1821,31 @@ MIPS instruction.  Please refer to the architecture specification
 for details on what each instruction does.
 
 ``v2sf __builtin_mips_pll_ps (v2sf, v2sf)``
-  Pair lower lower (``pll.ps``).
+  Pair lower lower ( ``pll.ps`` ).
 
 ``v2sf __builtin_mips_pul_ps (v2sf, v2sf)``
-  Pair upper lower (``pul.ps``).
+  Pair upper lower ( ``pul.ps`` ).
 
 ``v2sf __builtin_mips_plu_ps (v2sf, v2sf)``
-  Pair lower upper (``plu.ps``).
+  Pair lower upper ( ``plu.ps`` ).
 
 ``v2sf __builtin_mips_puu_ps (v2sf, v2sf)``
-  Pair upper upper (``puu.ps``).
+  Pair upper upper ( ``puu.ps`` ).
 
 ``v2sf __builtin_mips_cvt_ps_s (float, float)``
-  Convert pair to paired single (``cvt.ps.s``).
+  Convert pair to paired single ( ``cvt.ps.s`` ).
 
 ``float __builtin_mips_cvt_s_pl (v2sf)``
-  Convert pair lower to single (``cvt.s.pl``).
+  Convert pair lower to single ( ``cvt.s.pl`` ).
 
 ``float __builtin_mips_cvt_s_pu (v2sf)``
-  Convert pair upper to single (``cvt.s.pu``).
+  Convert pair upper to single ( ``cvt.s.pu`` ).
 
 ``v2sf __builtin_mips_abs_ps (v2sf)``
-  Absolute value (``abs.ps``).
+  Absolute value ( ``abs.ps`` ).
 
 ``v2sf __builtin_mips_alnv_ps (v2sf, v2sf, int)``
-  Align variable (``alnv.ps``).
+  Align variable ( ``alnv.ps`` ).
 
   *Note:* The value of the third parameter must be 0 or 4
   modulo 8, otherwise the result is unpredictable.  Please read the
@@ -1858,8 +1858,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``lt``, ``nge``, ``le`` or ``ngt``.
 
 :samp:`v2sf __builtin_mips_movt_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
-  Conditional move based on floating-point comparison (``c.cond.ps``,
-  ``movt.ps``/``movf.ps``).
+  Conditional move based on floating-point comparison ( ``c.cond.ps``,
+  ``movt.ps`` / ``movf.ps`` ).
 
   The ``movt`` functions return the value :samp:`{x}` computed by:
 
@@ -1873,8 +1873,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
   of ``movt.ps``.
 
 :samp:`int __builtin_mips_upper_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_c_{cond}_ps (v2sf {a}, v2sf {b})`
-  Comparison of two paired-single values (``c.cond.ps``,
-  ``bc1t``/``bc1f``).
+  Comparison of two paired-single values ( ``c.cond.ps``,
+  ``bc1t`` / ``bc1f`` ).
 
   These functions compare :samp:`{a}` and :samp:`{b}` using ``c.cond.ps``
   and return either the upper or lower half of the result.  For example:
@@ -1907,30 +1907,30 @@ instruction.  Please refer to the architecture specification for
 more details on what each instruction does.
 
 ``v2sf __builtin_mips_addr_ps (v2sf, v2sf)``
-  Reduction add (``addr.ps``).
+  Reduction add ( ``addr.ps`` ).
 
 ``v2sf __builtin_mips_mulr_ps (v2sf, v2sf)``
-  Reduction multiply (``mulr.ps``).
+  Reduction multiply ( ``mulr.ps`` ).
 
 ``v2sf __builtin_mips_cvt_pw_ps (v2sf)``
-  Convert paired single to paired word (``cvt.pw.ps``).
+  Convert paired single to paired word ( ``cvt.pw.ps`` ).
 
 ``v2sf __builtin_mips_cvt_ps_pw (v2sf)``
-  Convert paired word to paired single (``cvt.ps.pw``).
+  Convert paired word to paired single ( ``cvt.ps.pw`` ).
 
 ``float __builtin_mips_recip1_s (float)`` ``double __builtin_mips_recip1_d (double)`` ``v2sf __builtin_mips_recip1_ps (v2sf)``
-  Reduced-precision reciprocal (sequence step 1) (``recip1.fmt``).
+  Reduced-precision reciprocal (sequence step 1) ( ``recip1.fmt`` ).
 
 ``float __builtin_mips_recip2_s (float, float)`` ``double __builtin_mips_recip2_d (double, double)`` ``v2sf __builtin_mips_recip2_ps (v2sf, v2sf)``
-  Reduced-precision reciprocal (sequence step 2) (``recip2.fmt``).
+  Reduced-precision reciprocal (sequence step 2) ( ``recip2.fmt`` ).
 
 ``float __builtin_mips_rsqrt1_s (float)`` ``double __builtin_mips_rsqrt1_d (double)`` ``v2sf __builtin_mips_rsqrt1_ps (v2sf)``
   Reduced-precision reciprocal square root (sequence step 1)
-  (``rsqrt1.fmt``).
+  ( ``rsqrt1.fmt`` ).
 
 ``float __builtin_mips_rsqrt2_s (float, float)`` ``double __builtin_mips_rsqrt2_d (double, double)`` ``v2sf __builtin_mips_rsqrt2_ps (v2sf, v2sf)``
   Reduced-precision reciprocal square root (sequence step 2)
-  (``rsqrt2.fmt``).
+  ( ``rsqrt2.fmt`` ).
 
   The following multi-instruction functions are also available.
 In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
@@ -1939,8 +1939,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``ngl``, ``lt``, ``nge``, ``le`` or ``ngt``.
 
 :samp:`int __builtin_mips_cabs_{cond}_s (float {a}, float {b})` :samp:`int __builtin_mips_cabs_{cond}_d (double {a}, double {b})`
-  Absolute comparison of two scalar values (``cabs.cond.fmt``,
-  ``bc1t``/``bc1f``).
+  Absolute comparison of two scalar values ( ``cabs.cond.fmt``,
+  ``bc1t`` / ``bc1f`` ).
 
   These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.cond.s``
   or ``cabs.cond.d`` and return the result as a boolean value.
@@ -1955,8 +1955,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
       false ();
 
 :samp:`int __builtin_mips_upper_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
-  Absolute comparison of two paired-single values (``cabs.cond.ps``,
-  ``bc1t``/``bc1f``).
+  Absolute comparison of two paired-single values ( ``cabs.cond.ps``,
+  ``bc1t`` / ``bc1f`` ).
 
   These functions compare :samp:`{a}` and :samp:`{b}` using ``cabs.cond.ps``
   and return either the upper or lower half of the result.  For example:
@@ -1975,8 +1975,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
       lower_halves_are_unequal ();
 
 :samp:`v2sf __builtin_mips_movt_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
-  Conditional move based on absolute comparison (``cabs.cond.ps``,
-  ``movt.ps``/``movf.ps``).
+  Conditional move based on absolute comparison ( ``cabs.cond.ps``,
+  ``movt.ps`` / ``movf.ps`` ).
 
   The ``movt`` functions return the value :samp:`{x}` computed by:
 
@@ -1991,8 +1991,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`int __builtin_mips_any_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_any_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
   Comparison of two paired-single values
-  (``c.cond.ps``/``cabs.cond.ps``,
-  ``bc1any2t``/``bc1any2f``).
+  ( ``c.cond.ps`` / ``cabs.cond.ps``,
+  ``bc1any2t`` / ``bc1any2f`` ).
 
   These functions compare :samp:`{a}` and :samp:`{b}` using ``c.cond.ps``
   or ``cabs.cond.ps``.  The ``any`` forms return ``true`` if either
@@ -2014,8 +2014,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`int __builtin_mips_any_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_any_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
   Comparison of four paired-single values
-  (``c.cond.ps``/``cabs.cond.ps``,
-  ``bc1any4t``/``bc1any4f``).
+  ( ``c.cond.ps`` / ``cabs.cond.ps``,
+  ``bc1any4t`` / ``bc1any4f`` ).
 
   These functions use ``c.cond.ps`` or ``cabs.cond.ps``
   to compare :samp:`{a}` with :samp:`{b}` and to compare :samp:`{c}` with :samp:`{d}`.
@@ -2053,7 +2053,7 @@ For each ``__builtin_msa_*``, there is a shortened name of the intrinsic,
 
 MSA implements 128-bit wide vector registers, operating on 8-, 16-, 32- and
 64-bit integer, 16- and 32-bit fixed-point, or 32- and 64-bit floating point
-data elements.  The following vectors typedefs are included in ``msa.h``:
+data elements.  The following vectors typedefs are included in ``msa.h`` :
 
 ** ``v16i8``, a vector of sixteen signed 8-bit integers;
 
@@ -2961,12 +2961,12 @@ picoChip instruction set.
   and so on.
 
 :samp:`int __builtin_adds (int {x}, int {y})`
-  Saturating addition.  Return the result of adding :samp:`{x}` and :samp:`{y}` ,
+  Saturating addition.  Return the result of adding :samp:`{x}` and :samp:`{y}`,
   storing the value 32767 if the result overflows.
 
 :samp:`int __builtin_subs (int {x}, int {y})`
   Saturating subtraction.  Return the result of subtracting :samp:`{y}` from
-  :samp:`{x}` , storing the value -32768 if the result overflows.
+  :samp:`{x}`, storing the value -32768 if the result overflows.
 
 ``void __builtin_halt (void)``
   Halt.  The processor stops execution.  This built-in is useful for
@@ -3292,9 +3292,9 @@ The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
 command line, specifying option :option:`-mcpu=power6` has the effect of
-enabling the :option:`-mpowerpc64` , :option:`-mpowerpc-gpopt` ,
-:option:`-mpowerpc-gfxopt` , :option:`-mmfcrf` , :option:`-mpopcntb` ,
-:option:`-mfprnd` , :option:`-mcmpb` , :option:`-mhard-dfp` , and
+enabling the :option:`-mpowerpc64`, :option:`-mpowerpc-gpopt`,
+:option:`-mpowerpc-gfxopt`, :option:`-mmfcrf`, :option:`-mpopcntb`,
+:option:`-mfprnd`, :option:`-mcmpb`, :option:`-mhard-dfp`, and
 :option:`-mrecip-precision` options.  Specify the
 :option:`-maltivec` option explicitly in
 combination with the above options if desired.
@@ -3346,8 +3346,8 @@ when hardware decimal floating point
   Otherwise the builtin reads the FPSCR, masks the current decimal rounding
   mode bits out and OR's in the new value.
 
-The following functions require :option:`-mhard-float` ,
-:option:`-mpowerpc-gfxopt` , and :option:`-mpopcntb` options.
+The following functions require :option:`-mhard-float`,
+:option:`-mpowerpc-gfxopt`, and :option:`-mpopcntb` options.
 
 .. code-block:: c++
 
@@ -3393,7 +3393,7 @@ arguments.
 
 Additional built-in functions are available for the 64-bit PowerPC
 family of processors, for efficient use of 128-bit floating point
-(``__float128``) values.
+( ``__float128`` ) values.
 
 .. _basic-powerpc-built-in-functions-available-on-isa-2.06:
 
@@ -3405,7 +3405,7 @@ available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
 command line, specifying option :option:`-mcpu=power7` has the effect of
 enabling all the same options as for :option:`-mcpu=power6` in
-addition to the :option:`-maltivec` , :option:`-mpopcntd` , and
+addition to the :option:`-maltivec`, :option:`-mpopcntd`, and
 :option:`-mvsx` options.
 
 The following basic built-in functions require :option:`-mpopcntd` :
@@ -3452,8 +3452,8 @@ available on the PowerPC family of processors starting with ISA 2.07
 or later.  Unless specific options are explicitly disabled on the
 command line, specifying option :option:`-mcpu=power8` has the effect of
 enabling all the same options as for :option:`-mcpu=power7` in
-addition to the :option:`-mpower8-fusion` , :option:`-mpower8-vector` ,
-:option:`-mcrypto` , :option:`-mhtm` , :option:`-mquad-memory` , and
+addition to the :option:`-mpower8-fusion`, :option:`-mpower8-vector`,
+:option:`-mcrypto`, :option:`-mhtm`, :option:`-mquad-memory`, and
 :option:`-mquad-memory-atomic` options.
 
 This section intentionally empty.
@@ -3719,7 +3719,7 @@ C and C++ code differs from Motorola's documentation in several ways.
 * GCC allows using a ``typedef`` name as the type specifier for a
   vector type, but only under the following circumstances:
 
-  * When using ``__vector`` instead of ``vector``; for example,
+  * When using ``__vector`` instead of ``vector`` ; for example,
 
     .. code-block:: c++
 
@@ -3734,7 +3734,7 @@ C and C++ code differs from Motorola's documentation in several ways.
       vector int16 data;
 
     Note that keyword-and-predefine mode is enabled by disabling GNU
-    extensions (e.g., by using ``-std=c11``) and including
+    extensions (e.g., by using ``-std=c11`` ) and including
     ``<altivec.h>``.
 
 * For C, overloaded functions are implemented with macros so the following
@@ -4467,8 +4467,8 @@ PowerPC AltiVec Built-in Functions Available on ISA 2.07
 If the ISA 2.07 additions to the vector/scalar (power8-vector)
 instruction set are available, the following additional functions are
 available for both 32-bit and 64-bit targets.  For 64-bit targets, you
-can use :samp:`{vector long}` instead of :samp:`{vector long long}` ,
-:samp:`{vector bool long}` instead of :samp:`{vector bool long long}` , and
+can use :samp:`{vector long}` instead of :samp:`{vector long long}`,
+:samp:`{vector bool long}` instead of :samp:`{vector bool long long}`, and
 :samp:`{vector unsigned long}` instead of :samp:`{vector unsigned long long}`.
 
 Only functions excluded from the PVIPR are listed here.
@@ -5406,7 +5406,7 @@ The following low level built-in functions are available with
 :option:`-mhtm` or :option:`-mcpu=CPU` where CPU is 'power8' or later.
 They all generate the machine instruction that is part of the name.
 
-The HTM builtins (with the exception of ``__builtin_tbegin``) return
+The HTM builtins (with the exception of ``__builtin_tbegin`` ) return
 the full 4-bit condition register value set by their associated hardware
 instruction.  The header file ``htmintrin.h`` defines some macros that can
 be used to decipher the return value.  The ``__builtin_tbegin`` builtin
@@ -6087,7 +6087,7 @@ families of processors:
 
 .. function:: void __builtin_sh_set_fpscr(unsigned intval)
 
-  Sets the :samp:`FPSCR` register to the specified value :samp:`{val}` , while
+  Sets the :samp:`FPSCR` register to the specified value :samp:`{val}`, while
   preserving the current values of the FR, SZ and PR bits.
 
 .. _sparc-vis-built-in-functions:
@@ -6427,7 +6427,7 @@ x86 Built-in Functions
 These built-in functions are available for the x86-32 and x86-64 family
 of computers, depending on the command-line switches used.
 
-If you specify command-line switches such as :option:`-msse` ,
+If you specify command-line switches such as :option:`-msse`,
 the compiler could use the extended instruction sets even if the built-ins
 are not used explicitly in the program.  For this reason, applications
 that perform run-time CPU detection must compile separate files for each
@@ -6451,7 +6451,7 @@ entire vector register, interpreting it as a 128-bit integer, these use mode
 ``TI``.
 
 The x86-32 and x86-64 family of processors use additional built-in
-functions for efficient use of ``TF`` (``__float128``) 128-bit
+functions for efficient use of ``TF`` ( ``__float128`` ) 128-bit
 floating point and ``TC`` 128-bit complex floating-point values.
 
 The following floating-point built-in functions are always available.  All
@@ -6866,7 +6866,7 @@ All of them generate the machine instruction that is part of the name.
   v2si __builtin_ia32_psradi (v2si, int)
 
 The following built-in functions are made available either with
-:option:`-msse` , or with :option:`-m3dnowa`.  All of them generate
+:option:`-msse`, or with :option:`-m3dnowa`.  All of them generate
 the machine instruction that is part of the name.
 
 .. code-block:: c++

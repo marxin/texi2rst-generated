@@ -40,7 +40,7 @@ each attribute is one of the following:
 
 * An attribute name
   (which may be an identifier such as ``unused``, or a reserved
-  word such as ``const``).
+  word such as ``const`` ).
 
 * An attribute name followed by a parenthesized list of
   parameters for the attribute.
@@ -199,21 +199,21 @@ declarators in the ISO C standard.
 
 Consider (as in C99 subclause 6.7.5 paragraph 4) a declaration ``T
 D1``, where ``T`` contains declaration specifiers that specify a type
-:samp:`{Type}` (such as ``int``) and ``D1`` is a declarator that
+:samp:`{Type}` (such as ``int`` ) and ``D1`` is a declarator that
 contains an identifier :samp:`{ident}`.  The type specified for :samp:`{ident}`
 for derived declarators whose type does not include an attribute
 specifier is as in the ISO C standard.
 
 If ``D1`` has the form ``( attribute-specifier-list D )``,
 and the declaration ``T D`` specifies the type
-' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}` , then
+' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}`, then
 ``T D1`` specifies the type ' :samp:`{derived-declarator-type-list}`
 :samp:`{attribute-specifier-list}` :samp:`{Type}` ' for :samp:`{ident}`.
 
 If ``D1`` has the form ``*
 type-qualifier-and-attribute-specifier-list D``, and the
 declaration ``T D`` specifies the type
-' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}` , then
+' :samp:`{derived-declarator-type-list}` :samp:`{Type}` ' for :samp:`{ident}`, then
 ``T D1`` specifies the type ' :samp:`{derived-declarator-type-list}`
 :samp:`{type-qualifier-and-attribute-specifier-list}` pointer to :samp:`{Type}` ' for
 :samp:`{ident}`.
@@ -225,13 +225,13 @@ For example,
   void (__attribute__((noreturn)) ****f) (void);
 
 specifies the type 'pointer to pointer to pointer to pointer to
-non-returning function returning ``void``'.  As another example,
+non-returning function returning ``void`` '.  As another example,
 
 .. code-block:: c++
 
   char *__attribute__((aligned(8))) *f;
 
-specifies the type 'pointer to 8-byte-aligned pointer to ``char``'.
+specifies the type 'pointer to 8-byte-aligned pointer to ``char`` '.
 Note again that this does not work with most attributes; for example,
 the usage of :samp:`aligned` and :samp:`noreturn` attributes given above
 is not yet supported.
