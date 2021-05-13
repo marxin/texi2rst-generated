@@ -24,12 +24,12 @@ Only options specific to preprocessing behavior are documented here.
 Refer to the GCC manual for full documentation of other driver options.
 
 @c man begin SYNOPSIS
-cpp [@option{-D}@var{macro}[=@var{defn}]@dots{}] [@option{-U}@var{macro}]
-    [@option{-I}@var{dir}@dots{}] [@option{-iquote}@var{dir}@dots{}]
-    [@option{-M}|@option{-MM}] [@option{-MG}] [@option{-MF} @var{filename}]
-    [@option{-MP}] [@option{-MQ} @var{target}@dots{}]
-    [@option{-MT} @var{target}@dots{}]
-    @var{infile} [[@option{-o}] @var{outfile}]
+cpp [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
+    [ :option:`-I`:samp:`{dir}`...] [ :option:`-iquote`:samp:`{dir}`...]
+    [ :option:`-M` | :option:`-MM` ] [ :option:`-MG` ] [ :option:`-MF` :samp:`{filename}` ]
+    [ :option:`-MP` ] [ :option:`-MQ` :samp:`{target}`...]
+    [ :option:`-MT` :samp:`{target}`...]
+    :samp:`{infile}` [[ :option:`-o` ] :samp:`{outfile}` ]
 
 Only the most useful options are given above; see below for a more
 complete list of preprocessor-specific options.  

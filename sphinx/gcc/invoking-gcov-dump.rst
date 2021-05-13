@@ -10,12 +10,12 @@ Invoking :command:`gcov-dump`
 :command:`gcov-dump` accepts the following options:
 
 @c man begin SYNOPSIS
-gcov-dump [@option{-v}|@option{--version}]
-     [@option{-h}|@option{--help}]
-     [@option{-l}|@option{--long}]
-     [@option{-p}|@option{--positions}]
-     [@option{-r}|@option{--raw}]
-     @var{gcovfiles}
+gcov-dump [ :option:`-v` | :option:`--version` ]
+     [ :option:`-h` | :option:`--help` ]
+     [ :option:`-l` | :option:`--long` ]
+     [ :option:`-p` | :option:`--positions` ]
+     [ :option:`-r` | :option:`--raw` ]
+     :samp:`{gcovfiles}`
 @c man end
 
 .. man begin OPTIONS

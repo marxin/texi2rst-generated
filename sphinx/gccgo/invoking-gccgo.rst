@@ -6,10 +6,10 @@ Invoking gccgo
 .. man title gccgo A GCC-based compiler for the Go language
 
 @c man begin SYNOPSIS gccgo
-gccgo [@option{-c}|@option{-S}]
-      [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
-      [@option{-I}@var{dir}@dots{}] [@option{-L}@var{dir}@dots{}]
-      [@option{-o} @var{outfile}] @var{infile}@dots{}
+gccgo [ :option:`-c` | :option:`-S` ]
+      [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
+      [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+      [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
 
 Only the most useful options are listed here; see below for the
 remainder.

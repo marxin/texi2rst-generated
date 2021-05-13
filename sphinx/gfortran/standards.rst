@@ -87,14 +87,14 @@ Texts being (a) (see below), and with the Back-Cover Texts being (b)
 @setfilename gfortran
 @settitle GNU Fortran compiler.
 @c man begin SYNOPSIS
-gfortran [@option{-c}|@option{-S}|@option{-E}]
-         [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
-         [@option{-W}@var{warn}@dots{}] [@option{-pedantic}]
-         [@option{-I}@var{dir}@dots{}] [@option{-L}@var{dir}@dots{}]
-         [@option{-D}@var{macro}[=@var{defn}]@dots{}] [@option{-U}@var{macro}]
-         [@option{-f}@var{option}@dots{}]
-         [@option{-m}@var{machine-option}@dots{}]
-         [@option{-o} @var{outfile}] @var{infile}@dots{}
+gfortran [ :option:`-c` | :option:`-S` | :option:`-E` ]
+         [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
+         [ :option:`-W`:samp:`{warn}`...] [ :option:`-pedantic` ]
+         [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+         [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
+         [ :option:`-f`:samp:`{option}`...]
+         [ :option:`-m`:samp:`{machine-option}`...]
+         [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
 
 Only the most useful options are listed here; see below for the
 remainder.

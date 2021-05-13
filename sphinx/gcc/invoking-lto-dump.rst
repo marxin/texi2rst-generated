@@ -10,22 +10,22 @@ Invoking :command:`lto-dump`
 :command:`lto-dump` accepts the following options:
 
 @c man begin SYNOPSIS
-lto-dump [@option{-list}]
-     [@option{-demangle}]
-     [@option{-defined-only}]
-     [@option{-print-value}]
-     [@option{-name-sort}]
-     [@option{-size-sort}]
-     [@option{-reverse-sort}]
-     [@option{-no-sort}]
-     [@option{-symbol=}]
-     [@option{-objects}]
-     [@option{-type-stats}]
-     [@option{-tree-stats}]
-     [@option{-gimple-stats}]
-     [@option{-dump-level=}]
-     [@option{-dump-body=}]
-     [@option{-help}] @var{lto-dump}
+lto-dump [ :option:`-list` ]
+     [ :option:`-demangle` ]
+     [ :option:`-defined-only` ]
+     [ :option:`-print-value` ]
+     [ :option:`-name-sort` ]
+     [ :option:`-size-sort` ]
+     [ :option:`-reverse-sort` ]
+     [ :option:`-no-sort` ]
+     [ :option:`-symbol` =]
+     [ :option:`-objects` ]
+     [ :option:`-type-stats` ]
+     [ :option:`-tree-stats` ]
+     [ :option:`-gimple-stats` ]
+     [ :option:`-dump-level` =]
+     [ :option:`-dump-body` =]
+     [ :option:`-help` ] :samp:`{lto-dump}`
 @c man end
 
 .. man begin OPTIONS
