@@ -2910,11 +2910,13 @@ section includes experimental options that may produce broken code.
   In each case, the :samp:`{value}` is an integer.  The following choices
   of :samp:`{name}` are recognized for all targets:
 
-  ``predictable-branch-outcome``
+  .. option:: predictable-branch-outcome
+
     When branch is predicted to be taken with probability lower than this threshold
     (in percent), then it is considered well predictable.
 
-  ``max-rtl-if-conversion-insns``
+  .. option:: max-rtl-if-conversion-insns
+
     RTL if-conversion tries to remove conditional branches around a block and
     replace them with conditionally executed instructions.  This parameter
     gives the maximum number of instructions in a block which should be
@@ -2922,7 +2924,8 @@ section includes experimental options that may produce broken code.
     also use other heuristics to decide whether if-conversion is likely to be
     profitable.
 
-  ``max-rtl-if-conversion-predictable-cost``
+  .. option:: max-rtl-if-conversion-predictable-cost
+
     RTL if-conversion will try to remove conditional branches around a block
     and replace them with conditionally executed instructions.  These parameters
     give the maximum permissible cost for the sequence that would be generated
@@ -2932,24 +2935,28 @@ section includes experimental options that may produce broken code.
     provide a reasonable default for this parameter using the BRANCH_COST
     target macro.
 
-  ``max-crossjump-edges``
+  .. option:: max-crossjump-edges
+
     The maximum number of incoming edges to consider for cross-jumping.
     The algorithm used by :option:`-fcrossjumping` is O(N^2) in
     the number of edges incoming to each block.  Increasing values mean
     more aggressive optimization, making the compilation time increase with
     probably small improvement in executable size.
 
-  ``min-crossjump-insns``
+  .. option:: min-crossjump-insns
+
     The minimum number of instructions that must be matched at the end
     of two blocks before cross-jumping is performed on them.  This
     value is ignored in the case where all instructions in the block being
     cross-jumped from are matched.
 
-  ``max-grow-copy-bb-insns``
+  .. option:: max-grow-copy-bb-insns
+
     The maximum code size expansion factor when copying basic blocks
     instead of jumping.  The expansion is relative to a jump instruction.
 
-  ``max-goto-duplication-insns``
+  .. option:: max-goto-duplication-insns
+
     The maximum number of instructions to duplicate to a block that jumps
     to a computed goto.  To avoid O(N^2) behavior in a number of
     passes, GCC factors computed gotos early in the compilation process,
@@ -2957,7 +2964,8 @@ section includes experimental options that may produce broken code.
     end of a basic blocks with no more than max-goto-duplication-insns are
     unfactored.
 
-  ``max-delay-slot-insn-search``
+  .. option:: max-delay-slot-insn-search
+
     The maximum number of instructions to consider when looking for an
     instruction to fill a delay slot.  If more than this arbitrary number of
     instructions are searched, the time savings from filling the delay slot
@@ -2965,7 +2973,8 @@ section includes experimental options that may produce broken code.
     aggressive optimization, making the compilation time increase with probably
     small improvement in execution time.
 
-  ``max-delay-slot-live-search``
+  .. option:: max-delay-slot-live-search
+
     When trying to fill delay slots, the maximum number of instructions to
     consider when searching for a block with valid live register
     information.  Increasing this arbitrarily chosen value means more
@@ -2973,88 +2982,105 @@ section includes experimental options that may produce broken code.
     should be removed when the delay slot code is rewritten to maintain the
     control-flow graph.
 
-  ``max-gcse-memory``
+  .. option:: max-gcse-memory
+
     The approximate maximum amount of memory in ``kB`` that can be allocated in
     order to perform the global common subexpression elimination
     optimization.  If more memory than specified is required, the
     optimization is not done.
 
-  ``max-gcse-insertion-ratio``
+  .. option:: max-gcse-insertion-ratio
+
     If the ratio of expression insertions to deletions is larger than this value
     for any expression, then RTL PRE inserts or removes the expression and thus
     leaves partially redundant computations in the instruction stream.
 
-  ``max-pending-list-length``
+  .. option:: max-pending-list-length
+
     The maximum number of pending dependencies scheduling allows
     before flushing the current state and starting over.  Large functions
     with few branches or calls can create excessively large lists which
     needlessly consume memory and resources.
 
-  ``max-modulo-backtrack-attempts``
+  .. option:: max-modulo-backtrack-attempts
+
     The maximum number of backtrack attempts the scheduler should make
     when modulo scheduling a loop.  Larger values can exponentially increase
     compilation time.
 
-  ``max-inline-insns-single``
+  .. option:: max-inline-insns-single
+
     Several parameters control the tree inliner used in GCC.  This number sets the
     maximum number of instructions (counted in GCC's internal representation) in a
     single function that the tree inliner considers for inlining.  This only
     affects functions declared inline and methods implemented in a class
     declaration (C++).
 
-  ``max-inline-insns-auto``
+  .. option:: max-inline-insns-auto
+
     When you use :option:`-finline-functions` (included in :option:`-O3` ),
     a lot of functions that would otherwise not be considered for inlining
     by the compiler are investigated.  To those functions, a different
     (more restrictive) limit compared to functions declared inline can
     be applied ( :option:`--param max-inline-insns-auto` ).
 
-  ``max-inline-insns-small``
+  .. option:: max-inline-insns-small
+
     This is bound applied to calls which are considered relevant with
     :option:`-finline-small-functions`.
 
-  ``max-inline-insns-size``
+  .. option:: max-inline-insns-size
+
     This is bound applied to calls which are optimized for size. Small growth
     may be desirable to anticipate optimization oppurtunities exposed by inlining.
 
-  ``uninlined-function-insns``
+  .. option:: uninlined-function-insns
+
     Number of instructions accounted by inliner for function overhead such as
     function prologue and epilogue.
 
-  ``uninlined-function-time``
+  .. option:: uninlined-function-time
+
     Extra time accounted by inliner for function overhead such as time needed to
     execute function prologue and epilogue
 
-  ``inline-heuristics-hint-percent``
+  .. option:: inline-heuristics-hint-percent
+
     The scale (in percents) applied to inline-insns-single ,
     inline-insns-single-O2 , inline-insns-auto
     when inline heuristics hints that inlining is
     very profitable (will enable later optimizations).
 
-    ``uninlined-thunk-insns``
-  ``uninlined-thunk-time``
+  .. option:: uninlined-thunk-insns
+
+  .. option:: uninlined-thunk-time
+
     Same as :option:`--param uninlined-function-insns` and
     :option:`--param uninlined-function-time` but applied to function thunks
 
-  ``inline-min-speedup``
+  .. option:: inline-min-speedup
+
     When estimated performance improvement of caller + callee runtime exceeds this
     threshold (in percent), the function can be inlined regardless of the limit on
     :option:`--param max-inline-insns-single` and :option:`--param
     max-inline-insns-auto`.
 
-  ``large-function-insns``
+  .. option:: large-function-insns
+
     The limit specifying really large functions.  For functions larger than this
     limit after inlining, inlining is constrained by
     :option:`--param large-function-growth`.  This parameter is useful primarily
     to avoid extreme compilation time caused by non-linear algorithms used by the
     back end.
 
-  ``large-function-growth``
+  .. option:: large-function-growth
+
     Specifies maximal growth of large function caused by inlining in percents.
     For example, parameter value 100 limits large function growth to 2.0 times
     the original size.
 
-  ``large-unit-insns``
+  .. option:: large-unit-insns
+
     The limit specifying large translation unit.  Growth caused by inlining of
     units larger than this limit is limited by :option:`--param inline-unit-growth`.
     For small units this might be too tight.
@@ -3066,33 +3092,41 @@ section includes experimental options that may produce broken code.
     smaller units, the size is increased to :option:`--param large-unit-insns`
     before applying :option:`--param inline-unit-growth`.
 
-  ``lazy-modules``
+  .. option:: lazy-modules
+
     Maximum number of concurrently open C++ module files when lazy loading.
 
-  ``inline-unit-growth``
+  .. option:: inline-unit-growth
+
     Specifies maximal overall growth of the compilation unit caused by inlining.
     For example, parameter value 20 limits unit growth to 1.2 times the original
     size. Cold functions (either marked cold via an attribute or by profile
     feedback) are not accounted into the unit size.
 
-  ``ipa-cp-unit-growth``
+  .. option:: ipa-cp-unit-growth
+
     Specifies maximal overall growth of the compilation unit caused by
     interprocedural constant propagation.  For example, parameter value 10 limits
     unit growth to 1.1 times the original size.
 
-  ``ipa-cp-large-unit-insns``
+  .. option:: ipa-cp-large-unit-insns
+
     The size of translation unit that IPA-CP pass considers large.
 
-  ``large-stack-frame``
+  .. option:: large-stack-frame
+
     The limit specifying large stack frames.  While inlining the algorithm is trying
     to not grow past this limit too much.
 
-  ``large-stack-frame-growth``
+  .. option:: large-stack-frame-growth
+
     Specifies maximal growth of large stack frames caused by inlining in percents.
     For example, parameter value 1000 limits large stack frame growth to 11 times
     the original size.
 
-  ``max-inline-insns-recursive`` ``max-inline-insns-recursive-auto``
+  .. option:: max-inline-insns-recursive
+
+   ``max-inline-insns-recursive-auto``
     Specifies the maximum number of instructions an out-of-line copy of a
     self-recursive inline
     function can grow into by performing recursive inlining.
@@ -3103,7 +3137,9 @@ section includes experimental options that may produce broken code.
     happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
     enabled; :option:`--param max-inline-insns-recursive-auto` applies instead.
 
-  ``max-inline-recursive-depth`` ``max-inline-recursive-depth-auto``
+  .. option:: max-inline-recursive-depth
+
+   ``max-inline-recursive-depth-auto``
     Specifies the maximum recursion depth used for recursive inlining.
 
     :option:`--param max-inline-recursive-depth` applies to functions
@@ -3111,7 +3147,8 @@ section includes experimental options that may produce broken code.
     happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
     enabled; :option:`--param max-inline-recursive-depth-auto` applies instead.
 
-  ``min-inline-recursive-probability``
+  .. option:: min-inline-recursive-probability
+
     Recursive inlining is profitable only for function having deep recursion
     in average and can hurt for function having little recursion depth by
     increasing the prologue size or complexity of function body to other
@@ -3122,50 +3159,63 @@ section includes experimental options that may produce broken code.
     via a given call expression.  This parameter limits inlining only to call
     expressions whose probability exceeds the given threshold (in percents).
 
-  ``early-inlining-insns``
+  .. option:: early-inlining-insns
+
     Specify growth that the early inliner can make.  In effect it increases
     the amount of inlining for code having a large abstraction penalty.
 
-  ``max-early-inliner-iterations``
+  .. option:: max-early-inliner-iterations
+
     Limit of iterations of the early inliner.  This basically bounds
     the number of nested indirect calls the early inliner can resolve.
     Deeper chains are still handled by late inlining.
 
-  ``comdat-sharing-probability``
+  .. option:: comdat-sharing-probability
+
     Probability (in percent) that C++ inline function with comdat visibility
     are shared across multiple compilation units.
 
-    ``modref-max-bases````modref-max-refs``
-  ``modref-max-accesses``
+  .. option:: modref-max-bases
+
+  .. option:: modref-max-refs
+
+  .. option:: modref-max-accesses
+
     Specifies the maximal number of base pointers, references and accesses stored
     for a single function by mod/ref analysis.
 
-  ``modref-max-tests``
+  .. option:: modref-max-tests
+
     Specifies the maxmal number of tests alias oracle can perform to disambiguate
     memory locations using the mod/ref information.  This parameter ought to be
     bigger than :option:`--param modref-max-bases` and :option:`--param
     modref-max-refs`.
 
-  ``modref-max-depth``
+  .. option:: modref-max-depth
+
     Specifies the maximum depth of DFS walk used by modref escape analysis.
     Setting to 0 disables the analysis completely.
 
-  ``modref-max-escape-points``
+  .. option:: modref-max-escape-points
+
     Specifies the maximum number of escape points tracked by modref per SSA-name.
 
-  ``profile-func-internal-id``
+  .. option:: profile-func-internal-id
+
     A parameter to control whether to use function internal id in profile
     database lookup. If the value is 0, the compiler uses an id that
     is based on function assembler name and filename, which makes old profile
     data more tolerant to source changes such as function reordering etc.
 
-  ``min-vect-loop-bound``
+  .. option:: min-vect-loop-bound
+
     The minimum number of iterations under which loops are not vectorized
     when :option:`-ftree-vectorize` is used.  The number of iterations after
     vectorization needs to be greater than the value specified by this option
     to allow vectorization.
 
-  ``gcse-cost-distance-ratio``
+  .. option:: gcse-cost-distance-ratio
+
     Scaling factor in calculation of maximum distance an expression
     can be moved by GCSE optimizations.  This is currently supported only in the
     code hoisting pass.  The bigger the ratio, the more aggressive code hoisting
@@ -3173,7 +3223,8 @@ section includes experimental options that may produce broken code.
     less than gcse-unrestricted-cost.  Specifying 0 disables
     hoisting of simple expressions.
 
-  ``gcse-unrestricted-cost``
+  .. option:: gcse-unrestricted-cost
+
     Cost, roughly measured as the cost of a single typical machine
     instruction, at which GCSE optimizations do not constrain
     the distance an expression can travel.  This is currently
@@ -3181,139 +3232,173 @@ section includes experimental options that may produce broken code.
     the more aggressive code hoisting is.  Specifying 0 
     allows all expressions to travel unrestricted distances.
 
-  ``max-hoist-depth``
+  .. option:: max-hoist-depth
+
     The depth of search in the dominator tree for expressions to hoist.
     This is used to avoid quadratic behavior in hoisting algorithm.
     The value of 0 does not limit on the search, but may slow down compilation
     of huge functions.
 
-  ``max-tail-merge-comparisons``
+  .. option:: max-tail-merge-comparisons
+
     The maximum amount of similar bbs to compare a bb with.  This is used to
     avoid quadratic behavior in tree tail merging.
 
-  ``max-tail-merge-iterations``
+  .. option:: max-tail-merge-iterations
+
     The maximum amount of iterations of the pass over the function.  This is used to
     limit compilation time in tree tail merging.
 
-  ``store-merging-allow-unaligned``
+  .. option:: store-merging-allow-unaligned
+
     Allow the store merging pass to introduce unaligned stores if it is legal to
     do so.
 
-  ``max-stores-to-merge``
+  .. option:: max-stores-to-merge
+
     The maximum number of stores to attempt to merge into wider stores in the store
     merging pass.
 
-  ``max-store-chains-to-track``
+  .. option:: max-store-chains-to-track
+
     The maximum number of store chains to track at the same time in the attempt
     to merge them into wider stores in the store merging pass.
 
-  ``max-stores-to-track``
+  .. option:: max-stores-to-track
+
     The maximum number of stores to track at the same time in the attemt to
     to merge them into wider stores in the store merging pass.
 
-  ``max-unrolled-insns``
+  .. option:: max-unrolled-insns
+
     The maximum number of instructions that a loop may have to be unrolled.
     If a loop is unrolled, this parameter also determines how many times
     the loop code is unrolled.
 
-  ``max-average-unrolled-insns``
+  .. option:: max-average-unrolled-insns
+
     The maximum number of instructions biased by probabilities of their execution
     that a loop may have to be unrolled.  If a loop is unrolled,
     this parameter also determines how many times the loop code is unrolled.
 
-  ``max-unroll-times``
+  .. option:: max-unroll-times
+
     The maximum number of unrollings of a single loop.
 
-  ``max-peeled-insns``
+  .. option:: max-peeled-insns
+
     The maximum number of instructions that a loop may have to be peeled.
     If a loop is peeled, this parameter also determines how many times
     the loop code is peeled.
 
-  ``max-peel-times``
+  .. option:: max-peel-times
+
     The maximum number of peelings of a single loop.
 
-  ``max-peel-branches``
+  .. option:: max-peel-branches
+
     The maximum number of branches on the hot path through the peeled sequence.
 
-  ``max-completely-peeled-insns``
+  .. option:: max-completely-peeled-insns
+
     The maximum number of insns of a completely peeled loop.
 
-  ``max-completely-peel-times``
+  .. option:: max-completely-peel-times
+
     The maximum number of iterations of a loop to be suitable for complete peeling.
 
-  ``max-completely-peel-loop-nest-depth``
+  .. option:: max-completely-peel-loop-nest-depth
+
     The maximum depth of a loop nest suitable for complete peeling.
 
-  ``max-unswitch-insns``
+  .. option:: max-unswitch-insns
+
     The maximum number of insns of an unswitched loop.
 
-  ``max-unswitch-level``
+  .. option:: max-unswitch-level
+
     The maximum number of branches unswitched in a single loop.
 
-  ``lim-expensive``
+  .. option:: lim-expensive
+
     The minimum cost of an expensive expression in the loop invariant motion.
 
-  ``min-loop-cond-split-prob``
+  .. option:: min-loop-cond-split-prob
+
     When FDO profile information is available, min-loop-cond-split-prob
     specifies minimum threshold for probability of semi-invariant condition
     statement to trigger loop split.
 
-  ``iv-consider-all-candidates-bound``
+  .. option:: iv-consider-all-candidates-bound
+
     Bound on number of candidates for induction variables, below which
     all candidates are considered for each use in induction variable
     optimizations.  If there are more candidates than this,
     only the most relevant ones are considered to avoid quadratic time complexity.
 
-  ``iv-max-considered-uses``
+  .. option:: iv-max-considered-uses
+
     The induction variable optimizations give up on loops that contain more
     induction variable uses.
 
-  ``iv-always-prune-cand-set-bound``
+  .. option:: iv-always-prune-cand-set-bound
+
     If the number of candidates in the set is smaller than this value,
     always try to remove unnecessary ivs from the set
     when adding a new one.
 
-  ``avg-loop-niter``
+  .. option:: avg-loop-niter
+
     Average number of iterations of a loop.
 
-  ``dse-max-object-size``
+  .. option:: dse-max-object-size
+
     Maximum size (in bytes) of objects tracked bytewise by dead store elimination.
     Larger values may result in larger compilation times.
 
-  ``dse-max-alias-queries-per-store``
+  .. option:: dse-max-alias-queries-per-store
+
     Maximum number of queries into the alias oracle per store.
     Larger values result in larger compilation times and may result in more
     removed dead stores.
 
-  ``scev-max-expr-size``
+  .. option:: scev-max-expr-size
+
     Bound on size of expressions used in the scalar evolutions analyzer.
     Large expressions slow the analyzer.
 
-  ``scev-max-expr-complexity``
+  .. option:: scev-max-expr-complexity
+
     Bound on the complexity of the expressions in the scalar evolutions analyzer.
     Complex expressions slow the analyzer.
 
-  ``max-tree-if-conversion-phi-args``
+  .. option:: max-tree-if-conversion-phi-args
+
     Maximum number of arguments in a PHI supported by TREE if conversion
     unless the loop is marked with simd pragma.
 
-  ``vect-max-version-for-alignment-checks``
+  .. option:: vect-max-version-for-alignment-checks
+
     The maximum number of run-time checks that can be performed when
     doing loop versioning for alignment in the vectorizer.
 
-  ``vect-max-version-for-alias-checks``
+  .. option:: vect-max-version-for-alias-checks
+
     The maximum number of run-time checks that can be performed when
     doing loop versioning for alias in the vectorizer.
 
-  ``vect-max-peeling-for-alignment``
+  .. option:: vect-max-peeling-for-alignment
+
     The maximum number of loop peels to enhance access alignment
     for vectorizer. Value -1 means no limit.
 
-  ``max-iterations-to-track``
+  .. option:: max-iterations-to-track
+
     The maximum number of iterations of a loop the brute-force algorithm
     for analysis of the number of iterations of the loop tries to evaluate.
 
-  ``hot-bb-count-fraction``
+  .. option:: hot-bb-count-fraction
+
     The denominator n of fraction 1/n of the maximal execution count of a
     basic block in the entire program that a basic block needs to at least
     have in order to be considered hot.  The default is 10000, which means
@@ -3321,7 +3406,8 @@ section includes experimental options that may produce broken code.
     than 1/10000 of the maximal execution count.  0 means that it is never
     considered hot.  Used in non-LTO mode.
 
-  ``hot-bb-count-ws-permille``
+  .. option:: hot-bb-count-ws-permille
+
     The number of most executed permilles, ranging from 0 to 1000, of the
     profiled execution of the entire program to which the execution count
     of a basic block must be part of in order to be considered hot.  The
@@ -3330,7 +3416,8 @@ section includes experimental options that may produce broken code.
     of the profiled execution of the entire program.  0 means that it is
     never considered hot.  Used in LTO mode.
 
-  ``hot-bb-frequency-fraction``
+  .. option:: hot-bb-frequency-fraction
+
     The denominator n of fraction 1/n of the execution frequency of the
     entry block of a function that a basic block of this function needs
     to at least have in order to be considered hot.  The default is 1000,
@@ -3338,7 +3425,8 @@ section includes experimental options that may produce broken code.
     is executed more frequently than 1/1000 of the frequency of the entry
     block of the function.  0 means that it is never considered hot.
 
-  ``unlikely-bb-count-fraction``
+  .. option:: unlikely-bb-count-fraction
+
     The denominator n of fraction 1/n of the number of profiled runs of
     the entire program below which the execution count of a basic block
     must be in order for the basic block to be considered unlikely executed.
@@ -3346,7 +3434,8 @@ section includes experimental options that may produce broken code.
     executed if it is executed in fewer than 1/20, or 5%, of the runs of
     the program.  0 means that it is always considered unlikely executed.
 
-  ``max-predicted-iterations``
+  .. option:: max-predicted-iterations
+
     The maximum number of loop iterations we predict statically.  This is useful
     in cases where a function contains a single loop with known bound and
     another loop with unknown bound.
@@ -3354,23 +3443,29 @@ section includes experimental options that may produce broken code.
     the unknown number of iterations average to roughly 10.  This means that the
     loop without bounds appears artificially cold relative to the other one.
 
-  ``builtin-expect-probability``
+  .. option:: builtin-expect-probability
+
     Control the probability of the expression having the specified value. This
     parameter takes a percentage (i.e. 0 ... 100) as input.
 
-  ``builtin-string-cmp-inline-length``
+  .. option:: builtin-string-cmp-inline-length
+
     The maximum length of a constant string for a builtin string cmp call 
     eligible for inlining.
 
-  ``align-threshold``
+  .. option:: align-threshold
+
     Select fraction of the maximal frequency of executions of a basic block in
     a function to align the basic block.
 
-  ``align-loop-iterations``
+  .. option:: align-loop-iterations
+
     A loop expected to iterate at least the selected number of iterations is
     aligned.
 
-  ``tracer-dynamic-coverage`` ``tracer-dynamic-coverage-feedback``
+  .. option:: tracer-dynamic-coverage
+
+   ``tracer-dynamic-coverage-feedback``
     This value is used to limit superblock formation once the given percentage of
     executed instructions is covered.  This limits unnecessary code size
     expansion.
@@ -3380,17 +3475,21 @@ section includes experimental options that may produce broken code.
     feedback is available.  The real profiles (as opposed to statically estimated
     ones) are much less balanced allowing the threshold to be larger value.
 
-  ``tracer-max-code-growth``
+  .. option:: tracer-max-code-growth
+
     Stop tail duplication once code growth has reached given percentage.  This is
     a rather artificial limit, as most of the duplicates are eliminated later in
     cross jumping, so it may be set to much higher values than is the desired code
     growth.
 
-  ``tracer-min-branch-ratio``
+  .. option:: tracer-min-branch-ratio
+
     Stop reverse growth when the reverse probability of best edge is less than this
     threshold (in percent).
 
-  ``tracer-min-branch-probability`` ``tracer-min-branch-probability-feedback``
+  .. option:: tracer-min-branch-probability
+
+   ``tracer-min-branch-probability-feedback``
     Stop forward growth if the best edge has probability lower than this
     threshold.
 
@@ -3401,26 +3500,31 @@ section includes experimental options that may produce broken code.
     needs to be more conservative (higher) in order to make tracer
     effective.
 
-  ``stack-clash-protection-guard-size``
+  .. option:: stack-clash-protection-guard-size
+
     Specify the size of the operating system provided stack guard as
     2 raised to :samp:`{num}` bytes.  Higher values may reduce the
     number of explicit probes, but a value larger than the operating system
     provided guard will leave code vulnerable to stack clash style attacks.
 
-  ``stack-clash-protection-probe-interval``
+  .. option:: stack-clash-protection-probe-interval
+
     Stack clash protection involves probing stack space as it is allocated.  This
     param controls the maximum distance between probes into the stack as 2 raised
     to :samp:`{num}` bytes.  Higher values may reduce the number of explicit probes, but a value
     larger than the operating system provided guard will leave code vulnerable to
     stack clash style attacks.
 
-  ``max-cse-path-length``
+  .. option:: max-cse-path-length
+
     The maximum number of basic blocks on path that CSE considers.
 
-  ``max-cse-insns``
+  .. option:: max-cse-insns
+
     The maximum number of instructions CSE processes before flushing.
 
-  ``ggc-min-expand``
+  .. option:: ggc-min-expand
+
     GCC uses a garbage collector to manage its own memory allocation.  This
     parameter specifies the minimum percentage by which the garbage
     collector's heap should be allowed to expand between collections.
@@ -3436,7 +3540,8 @@ section includes experimental options that may produce broken code.
     every opportunity.  This is extremely slow, but can be useful for
     debugging.
 
-  ``ggc-min-heapsize``
+  .. option:: ggc-min-heapsize
+
     Minimum size of the garbage collector's heap before it begins bothering
     to collect garbage.  The first collection occurs after the heap expands
     by ggc-min-expand % beyond ggc-min-heapsize.  Again,
@@ -3452,125 +3557,155 @@ section includes experimental options that may produce broken code.
     parameter and ggc-min-expand to zero causes a full collection
     to occur at every opportunity.
 
-  ``max-reload-search-insns``
+  .. option:: max-reload-search-insns
+
     The maximum number of instruction reload should look backward for equivalent
     register.  Increasing values mean more aggressive optimization, making the
     compilation time increase with probably slightly better performance.
 
-  ``max-cselib-memory-locations``
+  .. option:: max-cselib-memory-locations
+
     The maximum number of memory locations cselib should take into account.
     Increasing values mean more aggressive optimization, making the compilation time
     increase with probably slightly better performance.
 
-  ``max-sched-ready-insns``
+  .. option:: max-sched-ready-insns
+
     The maximum number of instructions ready to be issued the scheduler should
     consider at any given time during the first scheduling pass.  Increasing
     values mean more thorough searches, making the compilation time increase
     with probably little benefit.
 
-  ``max-sched-region-blocks``
+  .. option:: max-sched-region-blocks
+
     The maximum number of blocks in a region to be considered for
     interblock scheduling.
 
-  ``max-pipeline-region-blocks``
+  .. option:: max-pipeline-region-blocks
+
     The maximum number of blocks in a region to be considered for
     pipelining in the selective scheduler.
 
-  ``max-sched-region-insns``
+  .. option:: max-sched-region-insns
+
     The maximum number of insns in a region to be considered for
     interblock scheduling.
 
-  ``max-pipeline-region-insns``
+  .. option:: max-pipeline-region-insns
+
     The maximum number of insns in a region to be considered for
     pipelining in the selective scheduler.
 
-  ``min-spec-prob``
+  .. option:: min-spec-prob
+
     The minimum probability (in percents) of reaching a source block
     for interblock speculative scheduling.
 
-  ``max-sched-extend-regions-iters``
+  .. option:: max-sched-extend-regions-iters
+
     The maximum number of iterations through CFG to extend regions.
     A value of 0 disables region extensions.
 
-  ``max-sched-insn-conflict-delay``
+  .. option:: max-sched-insn-conflict-delay
+
     The maximum conflict delay for an insn to be considered for speculative motion.
 
-  ``sched-spec-prob-cutoff``
+  .. option:: sched-spec-prob-cutoff
+
     The minimal probability of speculation success (in percents), so that
     speculative insns are scheduled.
 
-  ``sched-state-edge-prob-cutoff``
+  .. option:: sched-state-edge-prob-cutoff
+
     The minimum probability an edge must have for the scheduler to save its
     state across it.
 
-  ``sched-mem-true-dep-cost``
+  .. option:: sched-mem-true-dep-cost
+
     Minimal distance (in CPU cycles) between store and load targeting same
     memory locations.
 
-  ``selsched-max-lookahead``
+  .. option:: selsched-max-lookahead
+
     The maximum size of the lookahead window of selective scheduling.  It is a
     depth of search for available instructions.
 
-  ``selsched-max-sched-times``
+  .. option:: selsched-max-sched-times
+
     The maximum number of times that an instruction is scheduled during
     selective scheduling.  This is the limit on the number of iterations
     through which the instruction may be pipelined.
 
-  ``selsched-insns-to-rename``
+  .. option:: selsched-insns-to-rename
+
     The maximum number of best instructions in the ready list that are considered
     for renaming in the selective scheduler.
 
-  ``sms-min-sc``
+  .. option:: sms-min-sc
+
     The minimum value of stage count that swing modulo scheduler
     generates.
 
-  ``max-last-value-rtl``
+  .. option:: max-last-value-rtl
+
     The maximum size measured as number of RTLs that can be recorded in an expression
     in combiner for a pseudo register as last known value of that register.
 
-  ``max-combine-insns``
+  .. option:: max-combine-insns
+
     The maximum number of instructions the RTL combiner tries to combine.
 
-  ``integer-share-limit``
+  .. option:: integer-share-limit
+
     Small integer constants can use a shared data structure, reducing the
     compiler's memory usage and increasing its speed.  This sets the maximum
     value of a shared integer constant.
 
-  ``ssp-buffer-size``
+  .. option:: ssp-buffer-size
+
     The minimum size of buffers (i.e. arrays) that receive stack smashing
     protection when :option:`-fstack-protection` is used.
 
-  ``min-size-for-stack-sharing``
+  .. option:: min-size-for-stack-sharing
+
     The minimum size of variables taking part in stack slot sharing when not
     optimizing.
 
-  ``max-jump-thread-duplication-stmts``
+  .. option:: max-jump-thread-duplication-stmts
+
     Maximum number of statements allowed in a block that needs to be
     duplicated when threading jumps.
 
-  ``max-fields-for-field-sensitive``
+  .. option:: max-fields-for-field-sensitive
+
     Maximum number of fields in a structure treated in
     a field sensitive manner during pointer analysis.
 
-  ``prefetch-latency``
+  .. option:: prefetch-latency
+
     Estimate on average number of instructions that are executed before
     prefetch finishes.  The distance prefetched ahead is proportional
     to this constant.  Increasing this number may also lead to less
     streams being prefetched (see simultaneous-prefetches ).
 
-  ``simultaneous-prefetches``
+  .. option:: simultaneous-prefetches
+
     Maximum number of prefetches that can run at the same time.
 
-  ``l1-cache-line-size``
+  .. option:: l1-cache-line-size
+
     The size of cache line in L1 data cache, in bytes.
 
-  ``l1-cache-size``
+  .. option:: l1-cache-size
+
     The size of L1 data cache, in kilobytes.
 
-  ``l2-cache-size``
+  .. option:: l2-cache-size
+
     The size of L2 data cache, in kilobytes.
 
-  ``prefetch-dynamic-strides``
+  .. option:: prefetch-dynamic-strides
+
     Whether the loop array prefetch pass should issue software prefetch hints
     for strides that are non-constant.  In some cases this may be
     beneficial, though the fact the stride is non-constant may make it
@@ -3580,7 +3715,8 @@ section includes experimental options that may produce broken code.
     strides.  Set to 0 if prefetch hints should be issued only for strides that
     are known to be constant and below prefetch-minimum-stride.
 
-  ``prefetch-minimum-stride``
+  .. option:: prefetch-minimum-stride
+
     Minimum constant stride, in bytes, to start using prefetch hints for.  If
     the stride is less than this threshold, prefetch hints will not be issued.
 
@@ -3595,33 +3731,40 @@ section includes experimental options that may produce broken code.
 
     This setting is only useful for strides that are known and constant.
 
-  ``loop-interchange-max-num-stmts``
+  .. option:: loop-interchange-max-num-stmts
+
     The maximum number of stmts in a loop to be interchanged.
 
-  ``loop-interchange-stride-ratio``
+  .. option:: loop-interchange-stride-ratio
+
     The minimum ratio between stride of two loops for interchange to be profitable.
 
-  ``min-insn-to-prefetch-ratio``
+  .. option:: min-insn-to-prefetch-ratio
+
     The minimum ratio between the number of instructions and the
     number of prefetches to enable prefetching in a loop.
 
-  ``prefetch-min-insn-to-mem-ratio``
+  .. option:: prefetch-min-insn-to-mem-ratio
+
     The minimum ratio between the number of instructions and the
     number of memory references to enable prefetching in a loop.
 
-  ``use-canonical-types``
+  .. option:: use-canonical-types
+
     Whether the compiler should use the 'canonical' type system.
     Should always be 1, which uses a more efficient internal
     mechanism for comparing types in C++ and Objective-C++.  However, if
     bugs in the canonical type system are causing compilation failures,
     set this value to 0 to disable canonical types.
 
-  ``switch-conversion-max-branch-ratio``
+  .. option:: switch-conversion-max-branch-ratio
+
     Switch initialization conversion refuses to create arrays that are
     bigger than switch-conversion-max-branch-ratio times the number of
     branches in the switch.
 
-  ``max-partial-antic-length``
+  .. option:: max-partial-antic-length
+
     Maximum length of the partial antic set computed during the tree
     partial redundancy elimination optimization ( :option:`-ftree-pre` ) when
     optimizing at :option:`-O3` and above.  For some sorts of source code
@@ -3631,26 +3774,30 @@ section includes experimental options that may produce broken code.
     which prevents the runaway behavior.  Setting a value of 0 for
     this parameter allows an unlimited set length.
 
-  ``rpo-vn-max-loop-depth``
+  .. option:: rpo-vn-max-loop-depth
+
     Maximum loop depth that is value-numbered optimistically.
     When the limit hits the innermost
     :samp:`{rpo-vn-max-loop-depth}` loops and the outermost loop in the
     loop nest are value-numbered optimistically and the remaining ones not.
 
-  ``sccvn-max-alias-queries-per-access``
+  .. option:: sccvn-max-alias-queries-per-access
+
     Maximum number of alias-oracle queries we perform when looking for
     redundancies for loads and stores.  If this limit is hit the search
     is aborted and the load or store is not considered redundant.  The
     number of queries is algorithmically limited to the number of
     stores on all paths from the load to the function entry.
 
-  ``ira-max-loops-num``
+  .. option:: ira-max-loops-num
+
     IRA uses regional register allocation by default.  If a function
     contains more loops than the number given by this parameter, only at most
     the given number of the most frequently-executed loops form regions
     for regional register allocation.
 
-  ``ira-max-conflict-table-size``
+  .. option:: ira-max-conflict-table-size
+
     Although IRA uses a sophisticated algorithm to compress the conflict
     table, the table can still require excessive amounts of memory for
     huge functions.  If the conflict table for a function could be more
@@ -3658,14 +3805,16 @@ section includes experimental options that may produce broken code.
     instead uses a faster, simpler, and lower-quality
     algorithm that does not require building a pseudo-register conflict table.
 
-  ``ira-loop-reserved-regs``
+  .. option:: ira-loop-reserved-regs
+
     IRA can be used to evaluate more accurate register pressure in loops
     for decisions to move loop invariants (see :option:`-O3` ).  The number
     of available registers reserved for some other purposes is given
     by this parameter.  Default of the parameter
     is the best found from numerous experiments.
 
-  ``lra-inheritance-ebb-probability-cutoff``
+  .. option:: lra-inheritance-ebb-probability-cutoff
+
     LRA tries to reuse values reloaded in registers in subsequent insns.
     This optimization is called inheritance.  EBB is used as a region to
     do this optimization.  The parameter defines a minimal fall-through
@@ -3673,19 +3822,22 @@ section includes experimental options that may produce broken code.
     LRA.  The default value was chosen
     from numerous runs of SPEC2000 on x86-64.
 
-  ``loop-invariant-max-bbs-in-loop``
+  .. option:: loop-invariant-max-bbs-in-loop
+
     Loop invariant motion can be very expensive, both in compilation time and
     in amount of needed compile-time memory, with very large loops.  Loops
     with more basic blocks than this parameter won't have loop invariant
     motion optimization performed on them.
 
-  ``loop-max-datarefs-for-datadeps``
+  .. option:: loop-max-datarefs-for-datadeps
+
     Building data dependencies is expensive for very large loops.  This
     parameter limits the number of data references in loops that are
     considered for data dependence analysis.  These large loops are no
     handled by the optimizations using loop data dependencies.
 
-  ``max-vartrack-size``
+  .. option:: max-vartrack-size
+
     Sets a maximum number of hash table slots to use during variable
     tracking dataflow analysis of any function.  If this limit is exceeded
     with variable tracking at assignments enabled, analysis for that
@@ -3694,7 +3846,8 @@ section includes experimental options that may produce broken code.
     tracking analysis is completely disabled for the function.  Setting
     the parameter to zero makes it unlimited.
 
-  ``max-vartrack-expr-depth``
+  .. option:: max-vartrack-expr-depth
+
     Sets a maximum number of recursion levels when attempting to map
     variable names or debug temporaries to value expressions.  This trades
     compilation time for more complete debug information.  If this is set too
@@ -3703,31 +3856,37 @@ section includes experimental options that may produce broken code.
     enable the compiler to find more complex debug expressions, but compile
     time and memory use may grow.
 
-  ``max-debug-marker-count``
+  .. option:: max-debug-marker-count
+
     Sets a threshold on the number of debug markers (e.g. begin stmt
     markers) to avoid complexity explosion at inlining or expanding to RTL.
     If a function has more such gimple stmts than the set limit, such stmts
     will be dropped from the inlined copy of a function, and from its RTL
     expansion.
 
-  ``min-nondebug-insn-uid``
+  .. option:: min-nondebug-insn-uid
+
     Use uids starting at this parameter for nondebug insns.  The range below
     the parameter is reserved exclusively for debug insns created by
     :option:`-fvar-tracking-assignments` , but debug insns may get
     (non-overlapping) uids above it if the reserved range is exhausted.
 
-  ``ipa-sra-ptr-growth-factor``
+  .. option:: ipa-sra-ptr-growth-factor
+
     IPA-SRA replaces a pointer to an aggregate with one or more new
     parameters only when their cumulative size is less or equal to
     ipa-sra-ptr-growth-factor times the size of the original
     pointer parameter.
 
-  ``ipa-sra-max-replacements``
+  .. option:: ipa-sra-max-replacements
+
     Maximum pieces of an aggregate that IPA-SRA tracks.  As a
     consequence, it is also the maximum number of replacements of a formal
     parameter.
 
-  ``sra-max-scalarization-size-Ospeed`` ``sra-max-scalarization-size-Osize``
+  .. option:: sra-max-scalarization-size-Ospeed
+
+   ``sra-max-scalarization-size-Osize``
     The two Scalar Reduction of Aggregates passes (SRA and IPA-SRA) aim to
     replace scalar parts of aggregates with uses of independent scalar
     variables.  These parameters control the maximum size, in storage units,
@@ -3736,150 +3895,179 @@ section includes experimental options that may produce broken code.
     ( sra-max-scalarization-size-Ospeed ) or size
     ( sra-max-scalarization-size-Osize ) respectively.
 
-  ``sra-max-propagations``
+  .. option:: sra-max-propagations
+
     The maximum number of artificial accesses that Scalar Replacement of
     Aggregates (SRA) will track, per one local variable, in order to
     facilitate copy propagation.
 
-  ``tm-max-aggregate-size``
+  .. option:: tm-max-aggregate-size
+
     When making copies of thread-local variables in a transaction, this
     parameter specifies the size in bytes after which variables are
     saved with the logging functions as opposed to save/restore code
     sequence pairs.  This option only applies when using
     :option:`-fgnu-tm`.
 
-  ``graphite-max-nb-scop-params``
+  .. option:: graphite-max-nb-scop-params
+
     To avoid exponential effects in the Graphite loop transforms, the
     number of parameters in a Static Control Part (SCoP) is bounded.
     A value of zero can be used to lift
     the bound.  A variable whose value is unknown at compilation time and
     defined outside a SCoP is a parameter of the SCoP.
 
-  ``loop-block-tile-size``
+  .. option:: loop-block-tile-size
+
     Loop blocking or strip mining transforms, enabled with
     :option:`-floop-block` or :option:`-floop-strip-mine` , strip mine each
     loop in the loop nest by a given number of iterations.  The strip
     length can be changed using the loop-block-tile-size
     parameter.
 
-  ``ipa-jump-function-lookups``
+  .. option:: ipa-jump-function-lookups
+
     Specifies number of statements visited during jump function offset discovery.
 
-  ``ipa-cp-value-list-size``
+  .. option:: ipa-cp-value-list-size
+
     IPA-CP attempts to track all possible values and types passed to a function's
     parameter in order to propagate them and perform devirtualization.
     ipa-cp-value-list-size is the maximum number of values and types it
     stores per one formal parameter of a function.
 
-  ``ipa-cp-eval-threshold``
+  .. option:: ipa-cp-eval-threshold
+
     IPA-CP calculates its own score of cloning profitability heuristics
     and performs those cloning opportunities with scores that exceed
     ipa-cp-eval-threshold.
 
-  ``ipa-cp-max-recursive-depth``
+  .. option:: ipa-cp-max-recursive-depth
+
     Maximum depth of recursive cloning for self-recursive function.
 
-  ``ipa-cp-min-recursive-probability``
+  .. option:: ipa-cp-min-recursive-probability
+
     Recursive cloning only when the probability of call being executed exceeds
     the parameter.
 
-  ``ipa-cp-recursion-penalty``
+  .. option:: ipa-cp-recursion-penalty
+
     Percentage penalty the recursive functions will receive when they
     are evaluated for cloning.
 
-  ``ipa-cp-single-call-penalty``
+  .. option:: ipa-cp-single-call-penalty
+
     Percentage penalty functions containing a single call to another
     function will receive when they are evaluated for cloning.
 
-  ``ipa-max-agg-items``
+  .. option:: ipa-max-agg-items
+
     IPA-CP is also capable to propagate a number of scalar values passed
     in an aggregate. ipa-max-agg-items controls the maximum
     number of such values per one parameter.
 
-  ``ipa-cp-loop-hint-bonus``
+  .. option:: ipa-cp-loop-hint-bonus
+
     When IPA-CP determines that a cloning candidate would make the number
     of iterations of a loop known, it adds a bonus of
     ipa-cp-loop-hint-bonus to the profitability score of
     the candidate.
 
-  ``ipa-max-loop-predicates``
+  .. option:: ipa-max-loop-predicates
+
     The maximum number of different predicates IPA will use to describe when
     loops in a function have known properties.
 
-  ``ipa-max-aa-steps``
+  .. option:: ipa-max-aa-steps
+
     During its analysis of function bodies, IPA-CP employs alias analysis
     in order to track values pointed to by function parameters.  In order
     not spend too much time analyzing huge functions, it gives up and
     consider all memory clobbered after examining
     ipa-max-aa-steps statements modifying memory.
 
-  ``ipa-max-switch-predicate-bounds``
+  .. option:: ipa-max-switch-predicate-bounds
+
     Maximal number of boundary endpoints of case ranges of switch statement.
     For switch exceeding this limit, IPA-CP will not construct cloning cost
     predicate, which is used to estimate cloning benefit, for default case
     of the switch statement.
 
-  ``ipa-max-param-expr-ops``
+  .. option:: ipa-max-param-expr-ops
+
     IPA-CP will analyze conditional statement that references some function
     parameter to estimate benefit for cloning upon certain constant value.
     But if number of operations in a parameter expression exceeds
     ipa-max-param-expr-ops , the expression is treated as complicated
     one, and is not handled by IPA analysis.
 
-  ``lto-partitions``
+  .. option:: lto-partitions
+
     Specify desired number of partitions produced during WHOPR compilation.
     The number of partitions should exceed the number of CPUs used for compilation.
 
-  ``lto-min-partition``
+  .. option:: lto-min-partition
+
     Size of minimal partition for WHOPR (in estimated instructions).
     This prevents expenses of splitting very small programs into too many
     partitions.
 
-  ``lto-max-partition``
+  .. option:: lto-max-partition
+
     Size of max partition for WHOPR (in estimated instructions).
     to provide an upper bound for individual size of partition.
     Meant to be used only with balanced partitioning.
 
-  ``lto-max-streaming-parallelism``
+  .. option:: lto-max-streaming-parallelism
+
     Maximal number of parallel processes used for LTO streaming.
 
-  ``cxx-max-namespaces-for-diagnostic-help``
+  .. option:: cxx-max-namespaces-for-diagnostic-help
+
     The maximum number of namespaces to consult for suggestions when C++
     name lookup fails for an identifier.
 
-  ``sink-frequency-threshold``
+  .. option:: sink-frequency-threshold
+
     The maximum relative execution frequency (in percents) of the target block
     relative to a statement's original block to allow statement sinking of a
     statement.  Larger numbers result in more aggressive statement sinking.
     A small positive adjustment is applied for
     statements with memory operands as those are even more profitable so sink.
 
-  ``max-stores-to-sink``
+  .. option:: max-stores-to-sink
+
     The maximum number of conditional store pairs that can be sunk.  Set to 0
     if either vectorization ( :option:`-ftree-vectorize` ) or if-conversion
     ( :option:`-ftree-loop-if-convert` ) is disabled.
 
-  ``case-values-threshold``
+  .. option:: case-values-threshold
+
     The smallest number of different values for which it is best to use a
     jump-table instead of a tree of conditional branches.  If the value is
     0, use the default for the machine.
 
-  ``jump-table-max-growth-ratio-for-size``
+  .. option:: jump-table-max-growth-ratio-for-size
+
     The maximum code size growth ratio when expanding
     into a jump table (in percent).  The parameter is used when
     optimizing for size.
 
-  ``jump-table-max-growth-ratio-for-speed``
+  .. option:: jump-table-max-growth-ratio-for-speed
+
     The maximum code size growth ratio when expanding
     into a jump table (in percent).  The parameter is used when
     optimizing for speed.
 
-  ``tree-reassoc-width``
+  .. option:: tree-reassoc-width
+
     Set the maximum number of instructions executed in parallel in
     reassociated tree. This parameter overrides target dependent
     heuristics used by default if has non zero value.
 
-  ``sched-pressure-algorithm``
+  .. option:: sched-pressure-algorithm
+
     Choose between the two available implementations of
     :option:`-fsched-pressure`.  Algorithm 1 is the original implementation
     and is the more likely to prevent instructions from being reordered.
@@ -3891,40 +4079,47 @@ section includes experimental options that may produce broken code.
 
     The default choice depends on the target.
 
-  ``max-slsr-cand-scan``
+  .. option:: max-slsr-cand-scan
+
     Set the maximum number of existing candidates that are considered when
     seeking a basis for a new straight-line strength reduction candidate.
 
-  ``asan-globals``
+  .. option:: asan-globals
+
     Enable buffer overflow detection for global objects.  This kind
     of protection is enabled by default if you are using
     :option:`-fsanitize=address` option.
     To disable global objects protection use :option:`--param asan-globals=0`.
 
-  ``asan-stack``
+  .. option:: asan-stack
+
     Enable buffer overflow detection for stack objects.  This kind of
     protection is enabled by default when using :option:`-fsanitize=address`.
     To disable stack protection use :option:`--param asan-stack=0` option.
 
-  ``asan-instrument-reads``
+  .. option:: asan-instrument-reads
+
     Enable buffer overflow detection for memory reads.  This kind of
     protection is enabled by default when using :option:`-fsanitize=address`.
     To disable memory reads protection use
     :option:`--param asan-instrument-reads=0`.
 
-  ``asan-instrument-writes``
+  .. option:: asan-instrument-writes
+
     Enable buffer overflow detection for memory writes.  This kind of
     protection is enabled by default when using :option:`-fsanitize=address`.
     To disable memory writes protection use
     :option:`--param asan-instrument-writes=0` option.
 
-  ``asan-memintrin``
+  .. option:: asan-memintrin
+
     Enable detection for built-in functions.  This kind of protection
     is enabled by default when using :option:`-fsanitize=address`.
     To disable built-in functions protection use
     :option:`--param asan-memintrin=0`.
 
-  ``asan-use-after-return``
+  .. option:: asan-use-after-return
+
     Enable detection of use-after-return.  This kind of protection
     is enabled by default when using the :option:`-fsanitize=address` option.
     To disable it use :option:`--param asan-use-after-return=0`.
@@ -3933,13 +4128,15 @@ section includes experimental options that may produce broken code.
     add ``detect_stack_use_after_return=1`` to the environment variable
     :envvar:`ASAN_OPTIONS`.
 
-  ``asan-instrumentation-with-call-threshold``
+  .. option:: asan-instrumentation-with-call-threshold
+
     If number of memory accesses in function being instrumented
     is greater or equal to this number, use callbacks instead of inline checks.
     E.g. to disable inline code use
     :option:`--param asan-instrumentation-with-call-threshold=0`.
 
-  ``hwasan-instrument-stack``
+  .. option:: hwasan-instrument-stack
+
     Enable hwasan instrumentation of statically sized stack-allocated variables.
     This kind of instrumentation is enabled by default when using
     :option:`-fsanitize=hwaddress` and disabled by default when using
@@ -3948,7 +4145,8 @@ section includes experimental options that may produce broken code.
     :option:`--param hwasan-instrument-stack=0` , and to enable it use
     :option:`--param hwasan-instrument-stack=1`.
 
-  ``hwasan-random-frame-tag``
+  .. option:: hwasan-random-frame-tag
+
     When using stack instrumentation, decide tags for stack variables using a
     deterministic sequence beginning at a random tag for each frame.  With this
     parameter unset tags are chosen using the same sequence but beginning from 1.
@@ -3956,7 +4154,8 @@ section includes experimental options that may produce broken code.
     for :option:`-fsanitize=kernel-hwaddress`.
     To disable it use :option:`--param hwasan-random-frame-tag=0`.
 
-  ``hwasan-instrument-allocas``
+  .. option:: hwasan-instrument-allocas
+
     Enable hwasan instrumentation of dynamically sized stack-allocated variables.
     This kind of instrumentation is enabled by default when using
     :option:`-fsanitize=hwaddress` and disabled by default when using
@@ -3965,125 +4164,153 @@ section includes experimental options that may produce broken code.
     :option:`--param hwasan-instrument-allocas=0` , and to enable it use
     :option:`--param hwasan-instrument-allocas=1`.
 
-  ``hwasan-instrument-reads``
+  .. option:: hwasan-instrument-reads
+
     Enable hwasan checks on memory reads.  Instrumentation of reads is enabled by
     default for both :option:`-fsanitize=hwaddress` and
     :option:`-fsanitize=kernel-hwaddress`.
     To disable checking memory reads use
     :option:`--param hwasan-instrument-reads=0`.
 
-  ``hwasan-instrument-writes``
+  .. option:: hwasan-instrument-writes
+
     Enable hwasan checks on memory writes.  Instrumentation of writes is enabled by
     default for both :option:`-fsanitize=hwaddress` and
     :option:`-fsanitize=kernel-hwaddress`.
     To disable checking memory writes use
     :option:`--param hwasan-instrument-writes=0`.
 
-  ``hwasan-instrument-mem-intrinsics``
+  .. option:: hwasan-instrument-mem-intrinsics
+
     Enable hwasan instrumentation of builtin functions.  Instrumentation of these
     builtin functions is enabled by default for both :option:`-fsanitize=hwaddress`
     and :option:`-fsanitize=kernel-hwaddress`.
     To disable instrumentation of builtin functions use
     :option:`--param hwasan-instrument-mem-intrinsics=0`.
 
-  ``use-after-scope-direct-emission-threshold``
+  .. option:: use-after-scope-direct-emission-threshold
+
     If the size of a local variable in bytes is smaller or equal to this
     number, directly poison (or unpoison) shadow memory instead of using
     run-time callbacks.
 
-  ``tsan-distinguish-volatile``
+  .. option:: tsan-distinguish-volatile
+
     Emit special instrumentation for accesses to volatiles.
 
-  ``tsan-instrument-func-entry-exit``
+  .. option:: tsan-instrument-func-entry-exit
+
     Emit instrumentation calls to __tsan_func_entry() and __tsan_func_exit().
 
-  ``max-fsm-thread-path-insns``
+  .. option:: max-fsm-thread-path-insns
+
     Maximum number of instructions to copy when duplicating blocks on a
     finite state automaton jump thread path.
 
-  ``max-fsm-thread-length``
+  .. option:: max-fsm-thread-length
+
     Maximum number of basic blocks on a finite state automaton jump thread
     path.
 
-  ``max-fsm-thread-paths``
+  .. option:: max-fsm-thread-paths
+
     Maximum number of new jump thread paths to create for a finite state
     automaton.
 
-  ``parloops-chunk-size``
+  .. option:: parloops-chunk-size
+
     Chunk size of omp schedule for loops parallelized by parloops.
 
-  ``parloops-schedule``
+  .. option:: parloops-schedule
+
     Schedule type of omp schedule for loops parallelized by parloops (static,
     dynamic, guided, auto, runtime).
 
-  ``parloops-min-per-thread``
+  .. option:: parloops-min-per-thread
+
     The minimum number of iterations per thread of an innermost parallelized
     loop for which the parallelized variant is preferred over the single threaded
     one.  Note that for a parallelized loop nest the
     minimum number of iterations of the outermost loop per thread is two.
 
-  ``max-ssa-name-query-depth``
+  .. option:: max-ssa-name-query-depth
+
     Maximum depth of recursion when querying properties of SSA names in things
     like fold routines.  One level of recursion corresponds to following a
     use-def chain.
 
-  ``max-speculative-devirt-maydefs``
+  .. option:: max-speculative-devirt-maydefs
+
     The maximum number of may-defs we analyze when looking for a must-def
     specifying the dynamic type of an object that invokes a virtual call
     we may be able to devirtualize speculatively.
 
-  ``max-vrp-switch-assertions``
+  .. option:: max-vrp-switch-assertions
+
     The maximum number of assertions to add along the default edge of a switch
     statement during VRP.
 
-  ``evrp-mode``
+  .. option:: evrp-mode
+
     Specifies the mode Early VRP should operate in.
 
-  ``unroll-jam-min-percent``
+  .. option:: unroll-jam-min-percent
+
     The minimum percentage of memory references that must be optimized
     away for the unroll-and-jam transformation to be considered profitable.
 
-  ``unroll-jam-max-unroll``
+  .. option:: unroll-jam-max-unroll
+
     The maximum number of times the outer loop should be unrolled by
     the unroll-and-jam transformation.
 
-  ``max-rtl-if-conversion-unpredictable-cost``
+  .. option:: max-rtl-if-conversion-unpredictable-cost
+
     Maximum permissible cost for the sequence that would be generated
     by the RTL if-conversion pass for a branch that is considered unpredictable.
 
-  ``max-variable-expansions-in-unroller``
+  .. option:: max-variable-expansions-in-unroller
+
     If :option:`-fvariable-expansion-in-unroller` is used, the maximum number
     of times that an individual variable will be expanded during loop unrolling.
 
-  ``tracer-min-branch-probability-feedback``
+  .. option:: tracer-min-branch-probability-feedback
+
     Stop forward growth if the probability of best edge is less than
     this threshold (in percent). Used when profile feedback is available.
 
-  ``partial-inlining-entry-probability``
+  .. option:: partial-inlining-entry-probability
+
     Maximum probability of the entry BB of split region
     (in percent relative to entry BB of the function)
     to make partial inlining happen.
 
-  ``max-tracked-strlens``
+  .. option:: max-tracked-strlens
+
     Maximum number of strings for which strlen optimization pass will
     track string lengths.
 
-  ``gcse-after-reload-partial-fraction``
+  .. option:: gcse-after-reload-partial-fraction
+
     The threshold ratio for performing partial redundancy
     elimination after reload.
 
-  ``gcse-after-reload-critical-fraction``
+  .. option:: gcse-after-reload-critical-fraction
+
     The threshold ratio of critical edges execution count that
     permit performing redundancy elimination after reload.
 
-  ``max-loop-header-insns``
+  .. option:: max-loop-header-insns
+
     The maximum number of insns in loop header duplicated
     by the copy loop headers pass.
 
-  ``vect-epilogues-nomask``
+  .. option:: vect-epilogues-nomask
+
     Enable loop epilogue vectorization using smaller vector size.
 
-  ``vect-partial-vector-usage``
+  .. option:: vect-partial-vector-usage
+
     Controls when the loop vectorizer considers using partial vector loads
     and stores as an alternative to falling back to scalar code.  0 stops
     the vectorizer from ever using partial vector loads and stores.  1 allows
@@ -4092,154 +4319,193 @@ section includes experimental options that may produce broken code.
     The parameter only has an effect on targets that support partial
     vector loads and stores.
 
-  ``avoid-fma-max-bits``
+  .. option:: avoid-fma-max-bits
+
     Maximum number of bits for which we avoid creating FMAs.
 
-  ``sms-loop-average-count-threshold``
+  .. option:: sms-loop-average-count-threshold
+
     A threshold on the average loop count considered by the swing modulo scheduler.
 
-  ``sms-dfa-history``
+  .. option:: sms-dfa-history
+
     The number of cycles the swing modulo scheduler considers when checking
     conflicts using DFA.
 
-  ``max-inline-insns-recursive-auto``
+  .. option:: max-inline-insns-recursive-auto
+
     The maximum number of instructions non-inline function
     can grow to via recursive inlining.
 
-  ``graphite-allow-codegen-errors``
+  .. option:: graphite-allow-codegen-errors
+
     Whether codegen errors should be ICEs when :option:`-fchecking`.
 
-  ``sms-max-ii-factor``
+  .. option:: sms-max-ii-factor
+
     A factor for tuning the upper bound that swing modulo scheduler
     uses for scheduling a loop.
 
-  ``lra-max-considered-reload-pseudos``
+  .. option:: lra-max-considered-reload-pseudos
+
     The max number of reload pseudos which are considered during
     spilling a non-reload pseudo.
 
-  ``max-pow-sqrt-depth``
+  .. option:: max-pow-sqrt-depth
+
     Maximum depth of sqrt chains to use when synthesizing exponentiation
     by a real constant.
 
-  ``max-dse-active-local-stores``
+  .. option:: max-dse-active-local-stores
+
     Maximum number of active local stores in RTL dead store elimination.
 
-  ``asan-instrument-allocas``
+  .. option:: asan-instrument-allocas
+
     Enable asan allocas/VLAs protection.
 
-  ``max-iterations-computation-cost``
+  .. option:: max-iterations-computation-cost
+
     Bound on the cost of an expression to compute the number of iterations.
 
-  ``max-isl-operations``
+  .. option:: max-isl-operations
+
     Maximum number of isl operations, 0 means unlimited.
 
-  ``graphite-max-arrays-per-scop``
+  .. option:: graphite-max-arrays-per-scop
+
     Maximum number of arrays per scop.
 
-  ``max-vartrack-reverse-op-size``
+  .. option:: max-vartrack-reverse-op-size
+
     Max. size of loc list for which reverse ops should be added.
 
-  ``tracer-dynamic-coverage-feedback``
+  .. option:: tracer-dynamic-coverage-feedback
+
     The percentage of function, weighted by execution frequency,
     that must be covered by trace formation.
     Used when profile feedback is available.
 
-  ``max-inline-recursive-depth-auto``
+  .. option:: max-inline-recursive-depth-auto
+
     The maximum depth of recursive inlining for non-inline functions.
 
-  ``fsm-scale-path-stmts``
+  .. option:: fsm-scale-path-stmts
+
     Scale factor to apply to the number of statements in a threading path
     when comparing to the number of (scaled) blocks.
 
-  ``fsm-maximum-phi-arguments``
+  .. option:: fsm-maximum-phi-arguments
+
     Maximum number of arguments a PHI may have before the FSM threader
     will not try to thread through its block.
 
-  ``uninit-control-dep-attempts``
+  .. option:: uninit-control-dep-attempts
+
     Maximum number of nested calls to search for control dependencies
     during uninitialized variable analysis.
 
-  ``sra-max-scalarization-size-Osize``
+  .. option:: sra-max-scalarization-size-Osize
+
     Maximum size, in storage units, of an aggregate
     which should be considered for scalarization when compiling for size.
 
-  ``fsm-scale-path-blocks``
+  .. option:: fsm-scale-path-blocks
+
     Scale factor to apply to the number of blocks in a threading path
     when comparing to the number of (scaled) statements.
 
-  ``sched-autopref-queue-depth``
+  .. option:: sched-autopref-queue-depth
+
     Hardware autoprefetcher scheduler model control flag.
     Number of lookahead cycles the model looks into; at '
     ' only enable instruction sorting heuristic.
 
-  ``loop-versioning-max-inner-insns``
+  .. option:: loop-versioning-max-inner-insns
+
     The maximum number of instructions that an inner loop can have
     before the loop versioning pass considers it too big to copy.
 
-  ``loop-versioning-max-outer-insns``
+  .. option:: loop-versioning-max-outer-insns
+
     The maximum number of instructions that an outer loop can have
     before the loop versioning pass considers it too big to copy,
     discounting any instructions in inner loops that directly benefit
     from versioning.
 
-  ``ssa-name-def-chain-limit``
+  .. option:: ssa-name-def-chain-limit
+
     The maximum number of SSA_NAME assignments to follow in determining
     a property of a variable such as its value.  This limits the number
     of iterations or recursive calls GCC performs when optimizing certain
     statements or when determining their validity prior to issuing
     diagnostics.
 
-  ``store-merging-max-size``
+  .. option:: store-merging-max-size
+
     Maximum size of a single store merging region in bytes.
 
-  ``hash-table-verification-limit``
+  .. option:: hash-table-verification-limit
+
     The number of elements for which hash table verification is done
     for each searched element.
 
-  ``max-find-base-term-values``
+  .. option:: max-find-base-term-values
+
     Maximum number of VALUEs handled during a single find_base_term call.
 
-  ``analyzer-max-enodes-per-program-point``
+  .. option:: analyzer-max-enodes-per-program-point
+
     The maximum number of exploded nodes per program point within
     the analyzer, before terminating analysis of that point.
 
-  ``analyzer-max-constraints``
+  .. option:: analyzer-max-constraints
+
     The maximum number of constraints per state.
 
-  ``analyzer-min-snodes-for-call-summary``
+  .. option:: analyzer-min-snodes-for-call-summary
+
     The minimum number of supernodes within a function for the
     analyzer to consider summarizing its effects at call sites.
 
-  ``analyzer-max-enodes-for-full-dump``
+  .. option:: analyzer-max-enodes-for-full-dump
+
     The maximum depth of exploded nodes that should appear in a dot dump
     before switching to a less verbose format.
 
-  ``analyzer-max-recursion-depth``
+  .. option:: analyzer-max-recursion-depth
+
     The maximum number of times a callsite can appear in a call stack
     within the analyzer, before terminating analysis of a call that would
     recurse deeper.
 
-  ``analyzer-max-svalue-depth``
+  .. option:: analyzer-max-svalue-depth
+
     The maximum depth of a symbolic value, before approximating
     the value as unknown.
 
-  ``analyzer-max-infeasible-edges``
+  .. option:: analyzer-max-infeasible-edges
+
     The maximum number of infeasible edges to reject before declaring
     a diagnostic as infeasible.
 
-  ``gimple-fe-computed-hot-bb-threshold``
+  .. option:: gimple-fe-computed-hot-bb-threshold
+
     The number of executions of a basic block which is considered hot.
     The parameter is used only in GIMPLE FE.
 
-  ``analyzer-bb-explosion-factor``
+  .. option:: analyzer-bb-explosion-factor
+
     The maximum number of 'after supernode' exploded nodes within the analyzer
     per supernode, before terminating analysis.
 
-  ``ranger-logical-depth``
+  .. option:: ranger-logical-depth
+
     Maximum depth of logical expression evaluation ranger will look through
     when evaluating outgoing edge ranges.
 
-  ``openacc-kernels``
+  .. option:: openacc-kernels
+
     Specify mode of OpenACC 'kernels' constructs handling.
     With :option:`--param=openacc-kernels=decompose` , OpenACC 'kernels'
     constructs are decomposed into parts, a sequence of compute
@@ -4251,7 +4517,8 @@ section includes experimental options that may produce broken code.
 
     The following choices of :samp:`{name}` are available on AArch64 targets:
 
-  ``aarch64-sve-compare-costs``
+  .. option:: aarch64-sve-compare-costs
+
     When vectorizing for SVE, consider using 'unpacked' vectors for
     smaller elements and use the cost model to pick the cheapest approach.
     Also use the cost model to choose between SVE and Advanced SIMD vectorization.
@@ -4260,17 +4527,20 @@ section includes experimental options that may produce broken code.
     containers and accessing elements with extending loads and truncating
     stores.
 
-  ``aarch64-float-recp-precision``
+  .. option:: aarch64-float-recp-precision
+
     The number of Newton iterations for calculating the reciprocal for float type.
     The precision of division is proportional to this param when division
     approximation is enabled.  The default value is 1.
 
-  ``aarch64-double-recp-precision``
+  .. option:: aarch64-double-recp-precision
+
     The number of Newton iterations for calculating the reciprocal for double type.
     The precision of division is propotional to this param when division
     approximation is enabled.  The default value is 2.
 
-  ``aarch64-autovec-preference``
+  .. option:: aarch64-autovec-preference
+
     Force an ISA selection strategy for auto-vectorization.  Accepts values from
     0 to 4, inclusive.
 
@@ -4292,7 +4562,8 @@ section includes experimental options that may produce broken code.
 
       The default value is 0.
 
-  ``aarch64-loop-vect-issue-rate-niters``
+  .. option:: aarch64-loop-vect-issue-rate-niters
+
     The tuning for some AArch64 CPUs tries to take both latencies and issue
     rates into account when deciding whether a loop should be vectorized
     using SVE, vectorized using Advanced SIMD, or not vectorized at all.
