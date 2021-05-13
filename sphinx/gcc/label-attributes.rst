@@ -1,4 +1,4 @@
-  .. _label-attributes:
+.. _label-attributes:
 
 Label Attributes
 ****************

@@ -1,4 +1,4 @@
-  .. _type-attributes:
+.. _type-attributes:
 
 Specifying Attributes of Types
 ******************************
@@ -51,7 +51,8 @@ The following type attributes are supported on most targets.
 
 .. index:: aligned type attribute
 
-``aligned`` :samp:`aligned ({alignment})`
+.. option:: aligned
+
   The ``aligned`` attribute specifies a minimum alignment (in bytes) for
   variables of the specified type.  When specified, :samp:`{alignment}` must be
   a power of 2.  Specifying no :samp:`{alignment}` argument implies the maximum
@@ -136,7 +137,8 @@ The following type attributes are supported on most targets.
 
   .. index:: warn_if_not_aligned type attribute
 
-:samp:`warn_if_not_aligned ({alignment})`
+.. option:: warn_if_not_aligned (alignment)
+
   This attribute specifies a threshold for the structure field, measured
   in bytes.  If the structure field is aligned below the threshold, a
   warning will be issued.  For example, the declaration:
@@ -185,7 +187,7 @@ The following type attributes are supported on most targets.
 
   This warning can be disabled by :option:`-Wno-if-not-aligned`.
 
-:samp:`alloc_size ({position})` :samp:`alloc_size ({position-1}, {position-2})`
+.. option:: alloc_size (position)
 
   .. index:: alloc_size type attribute
 
@@ -213,7 +215,7 @@ The following type attributes are supported on most targets.
   ``malloc_type``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-``copy`` :samp:`copy ({expression})`
+.. option:: copy
 
   .. index:: copy type attribute
 
@@ -246,7 +248,7 @@ The following type attributes are supported on most targets.
     A { /* ... */ };
     struct __attribute__ ((copy ( (struct A *)0)) B { /* ... */ };
 
-``deprecated`` :samp:`deprecated ({msg})`
+.. option:: deprecated
 
   .. index:: deprecated type attribute
 
@@ -284,7 +286,7 @@ The following type attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-``designated_init``
+.. option:: designated_init
 
   .. index:: designated_init type attribute
 
@@ -298,7 +300,7 @@ The following type attributes are supported on most targets.
   GCC emits warnings based on this attribute by default; use
   :option:`-Wno-designated-init` to suppress them.
 
-``may_alias``
+.. option:: may_alias
 
   .. index:: may_alias type attribute
 
@@ -340,7 +342,7 @@ The following type attributes are supported on most targets.
   :option:`-fstrict-aliasing` , which is on by default at :option:`-O2` or
   above.
 
-:samp:`mode ({mode})`
+.. option:: mode (mode)
 
   .. index:: mode type attribute
 
@@ -395,7 +397,7 @@ The following type attributes are supported on most targets.
   not on a ``typedef`` that does not also define the enumerated type,
   structure, union, or class.
 
-:samp:`scalar_storage_order ("{endianness}")`
+.. option:: scalar_storage_order ("endianness")
 
   .. index:: scalar_storage_order type attribute
 
@@ -440,7 +442,7 @@ The following type attributes are supported on most targets.
   is not supported; that is to say, a given scalar object cannot be accessed
   through distinct types that assign a different storage order to it.
 
-``transparent_union``
+.. option:: transparent_union
 
   .. index:: transparent_union type attribute
 
@@ -501,7 +503,7 @@ The following type attributes are supported on most targets.
       return waitpid (-1, p.__ip, 0);
     }
 
-``unused``
+.. option:: unused
 
   .. index:: unused type attribute
 
@@ -513,7 +515,7 @@ The following type attributes are supported on most targets.
   not referenced, but contain constructors and destructors that have
   nontrivial bookkeeping functions.
 
-:samp:`vector_size ({bytes})`
+.. option:: vector_size (bytes)
 
   .. index:: vector_size type attribute
 
@@ -549,7 +551,7 @@ The following type attributes are supported on most targets.
   declares ``get_flt_vec16`` to be a function returning a 16-byte vector
   with the base type ``float``.
 
-``visibility``
+.. option:: visibility
 
   .. index:: visibility type attribute
 
@@ -565,7 +567,7 @@ The following type attributes are supported on most targets.
   Otherwise the two shared objects are unable to use the same
   typeinfo node and exception handling will break.
 
-``objc_root_class``
+.. option:: objc_root_class 
 
   .. note::
 
@@ -577,7 +579,7 @@ The following type attributes are supported on most targets.
   the compiler to elide any warnings about a missing superclass and to
   make additional checks for mandatory methods as needed.
 
-  To specify multiple attributes, separate them by commas within the
+To specify multiple attributes, separate them by commas within the
 double parentheses: for example, :samp:`__attribute__ ((aligned (16),
 packed))`.
 
@@ -680,7 +682,7 @@ x86 Type Attributes
 Two attributes are currently defined for x86 configurations:
 ``ms_struct`` and ``gcc_struct``.
 
-``ms_struct`` ``gcc_struct``
+.. option:: ms_struct
 
   .. index:: ms_struct type attribute, x86
 

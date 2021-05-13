@@ -1,4 +1,4 @@
-  .. _variable-attributes:
+.. _variable-attributes:
 
 Specifying Attributes of Variables
 **********************************
@@ -48,7 +48,7 @@ Common Variable Attributes
 
 The following attributes are supported on most targets.
 
-:samp:`alias ("{target}")`
+.. option:: alias ("target")
 
   .. index:: alias variable attribute
 
@@ -77,7 +77,8 @@ The following attributes are supported on most targets.
 
   .. index:: aligned variable attribute
 
-``aligned`` :samp:`aligned ({alignment})`
+.. option:: aligned
+
   The ``aligned`` attribute specifies a minimum alignment for the variable
   or structure field, measured in bytes.  When specified, :samp:`{alignment}` must
   be an integer constant power of 2.  Specifying no :samp:`{alignment}` argument
@@ -154,7 +155,8 @@ The following attributes are supported on most targets.
 
   .. index:: warn_if_not_aligned variable attribute
 
-:samp:`warn_if_not_aligned ({alignment})`
+.. option:: warn_if_not_aligned (alignment)
+
   This attribute specifies a threshold for the structure field, measured
   in bytes.  If the structure field is aligned below the threshold, a
   warning will be issued.  For example, the declaration:
@@ -187,7 +189,7 @@ The following attributes are supported on most targets.
   The ``warn_if_not_aligned`` attribute can also be used for types
   (see :ref:`common-type-attributes`.)
 
-:samp:`alloc_size ({position})` :samp:`alloc_size ({position-1}, {position-2})`
+.. option:: alloc_size (position)
 
   .. index:: alloc_size variable attribute
 
@@ -215,7 +217,7 @@ The following attributes are supported on most targets.
   ``malloc_ptr``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-:samp:`cleanup ({cleanup_function})`
+.. option:: cleanup (cleanup_function)
 
   .. index:: cleanup variable attribute
 
@@ -246,7 +248,7 @@ The following attributes are supported on most targets.
   These attributes override the default chosen by the
   :option:`-fno-common` and :option:`-fcommon` flags respectively.
 
-``copy`` :samp:`copy ({variable})`
+.. option:: copy
 
   .. index:: copy variable attribute
 
@@ -264,7 +266,7 @@ The following attributes are supported on most targets.
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-type-attributes`.
 
-``deprecated`` :samp:`deprecated ({msg})`
+.. option:: deprecated
 
   .. index:: deprecated variable attribute
 
@@ -293,7 +295,7 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-:samp:`mode ({mode})`
+.. option:: mode (mode)
 
   .. index:: mode variable attribute
 
@@ -308,7 +310,7 @@ The following attributes are supported on most targets.
   ``__word__`` for the mode of a one-word integer, and ``pointer``
   or ``__pointer__`` for the mode used to represent pointers.
 
-``nonstring``
+.. option:: nonstring
 
   .. index:: nonstring variable attribute
 
@@ -345,7 +347,7 @@ The following attributes are supported on most targets.
       return strlen (pd->name);   // unsafe, gets a warning
     }
 
-``packed``
+.. option:: packed
 
   .. index:: packed variable attribute
 
@@ -371,7 +373,7 @@ The following attributes are supported on most targets.
   structure layout.  See the documentation of
   :option:`-Wpacked-bitfield-compat` for more information.
 
-:samp:`section ("{section-name}")`
+.. option:: section ("section-name")
 
   .. index:: section variable attribute
 
@@ -421,7 +423,7 @@ The following attributes are supported on most targets.
   If you need to map the entire contents of a module to a particular
   section, consider using the facilities of the linker instead.
 
-:samp:`tls_model ("{tls_model}")`
+.. option:: tls_model ("tls_model")
 
   .. index:: tls_model variable attribute
 
@@ -434,7 +436,7 @@ The following attributes are supported on most targets.
 
   Not all targets support this attribute.
 
-``unused``
+.. option:: unused
 
   .. index:: unused variable attribute
 
@@ -442,7 +444,7 @@ The following attributes are supported on most targets.
   to be possibly unused.  GCC does not produce a warning for this
   variable.
 
-``used``
+.. option:: used
 
   .. index:: used variable attribute
 
@@ -454,7 +456,7 @@ The following attributes are supported on most targets.
   attribute also means that the member is instantiated if the
   class itself is instantiated.
 
-``retain``
+.. option:: retain
 
   .. index:: retain variable attribute
 
@@ -466,7 +468,7 @@ The following attributes are supported on most targets.
 
   This additional functionality requires Binutils version 2.36 or later.
 
-:samp:`vector_size ({bytes})`
+.. option:: vector_size (bytes)
 
   .. index:: vector_size variable attribute
 
@@ -500,7 +502,7 @@ The following attributes are supported on most targets.
   is invalid even if the size of the structure is the same as the size of
   the ``int``.
 
-:samp:`visibility ("{visibility_type}")`
+.. option:: visibility ("visibility_type")
 
   .. index:: visibility variable attribute
 
@@ -508,14 +510,14 @@ The following attributes are supported on most targets.
   The ``visibility`` attribute is described in
   Common Function Attributes.
 
-``weak``
+.. option:: weak
 
   .. index:: weak variable attribute
 
   The ``weak`` attribute is described in
   Common Function Attributes.
 
-``noinit``
+.. option:: noinit
 
   .. index:: noinit variable attribute
 
@@ -527,7 +529,7 @@ The following attributes are supported on most targets.
   script to place sections with the ``.noinit`` prefix in the right
   location.
 
-``persistent``
+.. option:: persistent
 
   .. index:: persistent variable attribute
 
@@ -541,7 +543,7 @@ The following attributes are supported on most targets.
   right location.  Specifically, some type of non-volatile, writeable
   memory is required.
 
-:samp:`objc_nullability ({nullability kind}) {(Objective-C and Objective-C++ only)}`
+.. option:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
 
   .. index:: objc_nullability variable attribute
 
@@ -569,12 +571,12 @@ The following attributes are supported on most targets.
   property to be reset in some manner to a default) but for which the property
   getter will never validly return ``nil``.
 
-  .. _arc-variable-attributes:
+.. _arc-variable-attributes:
 
 ARC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-``aux``
+.. option:: aux
 
   .. index:: aux variable attribute, ARC
 
@@ -582,12 +584,12 @@ ARC Variable Attributes
   auxiliary register space from C.  The auxilirary register number is
   given via attribute argument.
 
-  .. _avr-variable-attributes:
+.. _avr-variable-attributes:
 
 AVR Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-``progmem``
+.. option:: progmem
 
   .. index:: progmem variable attribute, AVR
 
@@ -661,7 +663,7 @@ AVR Variable Attributes
     Please notice that on these devices, there is no need for ``progmem``
     at all.
 
-``io`` :samp:`io ({addr})`
+.. option:: io
 
   .. index:: io variable attribute, AVR
 
@@ -687,7 +689,7 @@ AVR Variable Attributes
 
     extern volatile int porta __attribute__((io));
 
-``io_low`` :samp:`io_low ({addr})`
+.. option:: io_low
 
   .. index:: io_low variable attribute, AVR
 
@@ -696,7 +698,7 @@ AVR Variable Attributes
   allowing the use of ``cbi``, ``sbi``, ``sbic`` and ``sbis``
   instructions.
 
-``address`` :samp:`address ({addr})`
+.. option:: address
 
   .. index:: address variable attribute, AVR
 
@@ -707,7 +709,7 @@ AVR Variable Attributes
 
     volatile int porta __attribute__((address (0x600)));
 
-``absdata``
+.. option:: absdata
 
   .. index:: absdata variable attribute, AVR
 
@@ -731,14 +733,14 @@ AVR Variable Attributes
 
   See also the :option:`-mabsdata` AVR Optionscommand-line option.
 
-  .. _blackfin-variable-attributes:
+.. _blackfin-variable-attributes:
 
 Blackfin Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three attributes are currently defined for the Blackfin.
 
-``l1_data`` ``l1_data_A`` ``l1_data_B``
+.. option:: l1_data
 
   .. index:: l1_data variable attribute, Blackfin
 
@@ -752,7 +754,7 @@ Three attributes are currently defined for the Blackfin.
   the specific section named ``.l1.data.A``. Those with ``l1_data_B``
   attribute are put into the specific section named ``.l1.data.B``.
 
-``l2``
+.. option:: l2
 
   .. index:: l2 variable attribute, Blackfin
 
@@ -760,14 +762,14 @@ Three attributes are currently defined for the Blackfin.
   Variables with ``l2`` attribute are put into the specific section
   named ``.l2.data``.
 
-  .. _h8-300-variable-attributes:
+.. _h8-300-variable-attributes:
 
 H8/300 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These variable attributes are available for H8/300 targets:
 
-``eightbit_data``
+.. option:: eightbit_data
 
   .. index:: eightbit_data variable attribute, H8/300
 
@@ -782,7 +784,7 @@ These variable attributes are available for H8/300 targets:
   You must use GAS and GLD from GNU binutils version 2.7 or later for
   this attribute to work correctly.
 
-``tiny_data``
+.. option:: tiny_data
 
   .. index:: tiny_data variable attribute, H8/300
 
@@ -794,14 +796,14 @@ These variable attributes are available for H8/300 targets:
   on data in the tiny data section.  Note the tiny data area is limited to
   slightly under 32KB of data.
 
-  .. _ia-64-variable-attributes:
+.. _ia-64-variable-attributes:
 
 IA-64 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The IA-64 back end supports the following variable attribute:
 
-:samp:`model ({model-name})`
+.. option:: model (model-name)
 
   .. index:: model variable attribute, IA-64
 
@@ -813,14 +815,14 @@ The IA-64 back end supports the following variable attribute:
   independent and hence this attribute must not be used for objects
   defined by shared libraries.
 
-  .. _m32r-d-variable-attributes:
+.. _m32r-d-variable-attributes:
 
 M32R/D Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One attribute is currently defined for the M32R/D.
 
-:samp:`model ({model-name})`
+.. option:: model (model-name)
 
   .. index:: model-name variable attribute, M32R/D
 
@@ -837,7 +839,7 @@ One attribute is currently defined for the M32R/D.
   (the compiler generates ``seth/add3`` instructions to load their
   addresses).
 
-  .. _mep-variable-attributes:
+.. _mep-variable-attributes:
 
 MeP Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -851,7 +853,7 @@ space is a 65536-byte region relative to the ``$gp`` register.  In
 addition to these memory regions, the MeP target has a separate 16-bit
 control bus which is specified with ``cb`` attributes.
 
-``based``
+.. option:: based
 
   .. index:: based variable attribute, MeP
 
@@ -859,14 +861,14 @@ control bus which is specified with ``cb`` attributes.
   ``.based`` section, and is accessed with relative to the
   ``$tp`` register.
 
-``tiny``
+.. option:: tiny
 
   .. index:: tiny variable attribute, MeP
 
   Likewise, the ``tiny`` attribute assigned variables to the
   ``.tiny`` section, relative to the ``$gp`` register.
 
-``near``
+.. option:: near
 
   .. index:: near variable attribute, MeP
 
@@ -875,7 +877,7 @@ control bus which is specified with ``cb`` attributes.
   variables (``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
-``far``
+.. option:: far
 
   .. index:: far variable attribute, MeP
 
@@ -884,10 +886,8 @@ control bus which is specified with ``cb`` attributes.
   allows modules to make no assumptions about where variables might be
   stored.
 
-``io``
-.. index:: io variable attribute, MeP
+.. option:: io
 
- :samp:`io ({addr})`
   Variables with the ``io`` attribute are used to address
   memory-mapped peripherals.  If an address is specified, the variable
   is assigned that address, else it is not assigned an address (it is
@@ -897,7 +897,7 @@ control bus which is specified with ``cb`` attributes.
 
     int timer_count __attribute__((io(0x123)));
 
-``cb`` :samp:`cb ({addr})`
+.. option:: cb
 
   .. index:: cb variable attribute, MeP
 
@@ -909,7 +909,7 @@ control bus which is specified with ``cb`` attributes.
 
     int cpu_clock __attribute__((cb(0x123)));
 
-  .. _microsoft-windows-variable-attributes:
+.. _microsoft-windows-variable-attributes:
 
 Microsoft Windows Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -918,7 +918,7 @@ You can use these attributes on Microsoft Windows targets.
 x86 Variable Attributes for additional Windows compatibility
 attributes available on all x86 targets.
 
-``dllimport`` ``dllexport``
+.. option:: dllimport
 
   .. index:: dllimport variable attribute
 
@@ -927,7 +927,7 @@ attributes available on all x86 targets.
   The ``dllimport`` and ``dllexport`` attributes are described in
   Microsoft Windows Function Attributes.
 
-``selectany``
+.. option:: selectany
 
   .. index:: selectany variable attribute
 
@@ -950,7 +950,7 @@ attributes available on all x86 targets.
   ``__attribute__ ((selectany))`` for compatibility with other
   compilers.
 
-``shared``
+.. option:: shared
 
   .. index:: shared variable attribute
 
@@ -978,12 +978,12 @@ attributes available on all x86 targets.
 
   The ``shared`` attribute is only available on Microsoft Windows.
 
-  .. _msp430-variable-attributes:
+.. _msp430-variable-attributes:
 
 MSP430 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``upper`` ``either``
+.. option:: upper
 
   .. index:: upper variable attribute, MSP430
 
@@ -992,7 +992,7 @@ MSP430 Variable Attributes
   These attributes are the same as the MSP430 function attributes of the
   same name (see :ref:`msp430-function-attributes`).  
 
-``lower``
+.. option:: lower
 
   .. index:: lower variable attribute, MSP430
 
@@ -1011,14 +1011,14 @@ MSP430 Variable Attributes
   In the case of the ``section`` attribute, the section name given
   will be used, and the ``.lower`` prefix will not be added.
 
-  .. _nvidia-ptx-variable-attributes:
+.. _nvidia-ptx-variable-attributes:
 
 Nvidia PTX Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These variable attributes are supported by the Nvidia PTX back end:
 
-``shared``
+.. option:: shared
 
   .. index:: shared attribute, Nvidia PTX
 
@@ -1027,7 +1027,7 @@ These variable attributes are supported by the Nvidia PTX back end:
   within one thread block refer to the same instance of the variable.
   The runtime does not initialize variables in this memory space.
 
-  .. _powerpc-variable-attributes:
+.. _powerpc-variable-attributes:
 
 PowerPC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1065,28 +1065,28 @@ V850 Variable Attributes
 
 These variable attributes are supported by the V850 back end:
 
-``sda``
+.. option:: sda
 
   .. index:: sda variable attribute, V850
 
   Use this attribute to explicitly place a variable in the small data area,
   which can hold up to 64 kilobytes.
 
-``tda``
+.. option:: tda
 
   .. index:: tda variable attribute, V850
 
   Use this attribute to explicitly place a variable in the tiny data area,
   which can hold up to 256 bytes in total.
 
-``zda``
+.. option:: zda
 
   .. index:: zda variable attribute, V850
 
   Use this attribute to explicitly place a variable in the first 32 kilobytes
   of memory.
 
-  .. _x86-variable-attributes:
+.. _x86-variable-attributes:
 
 x86 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -1094,7 +1094,7 @@ x86 Variable Attributes
 Two attributes are currently defined for x86 configurations:
 ``ms_struct`` and ``gcc_struct``.
 
-``ms_struct`` ``gcc_struct``
+.. option:: ms_struct
 
   .. index:: ms_struct variable attribute, x86
 
@@ -1114,7 +1114,7 @@ Two attributes are currently defined for x86 configurations:
   See :ref:`x86-type-attributes`, for information about the corresponding
   attributes on types.
 
-  .. _xstormy16-variable-attributes:
+.. _xstormy16-variable-attributes:
 
 Xstormy16 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1122,7 +1122,7 @@ Xstormy16 Variable Attributes
 One attribute is currently defined for xstormy16 configurations:
 ``below100``.
 
-``below100``
+.. option:: below100
 
   .. index:: below100 variable attribute, Xstormy16
 
