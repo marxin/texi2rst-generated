@@ -588,7 +588,7 @@ honor these options.
                     }
                 }
             ],
-            "message": "this \u2018if\u2019 clause does not guard...",
+            "message": "this ‘if’ clause does not guard...",
             "option": "-Wmisleading-indentation",
             "option_url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation",
             "children": [
@@ -739,7 +739,7 @@ honor these options.
                     }
                 }
             ],
-            "message": "\u2018struct s\u2019 has no member named ..."
+            "message": "‘struct s’ has no member named ..."
         }
 
   where the fix-it hint suggests replacing the text from ``start`` up
