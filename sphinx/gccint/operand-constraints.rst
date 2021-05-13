@@ -3337,7 +3337,7 @@ definitions.
 
 .. index:: define_register_constraint
 
-MD Expressiondefine_register_constraintnameregclassdocstringAll three arguments are string constants.
+MD Expression define_register_constraint name regclass docstringAll three arguments are string constants.
 :samp:`{name}` is the name of the constraint, as it will appear in
 ``match_operand`` expressions.  If :samp:`{name}` is a multi-letter
 constraint its length shall be the same for all constraints starting
@@ -3358,7 +3358,7 @@ constraint matches.
 
 .. index:: define_constraint
 
-MD Expressiondefine_constraintnamedocstringexpThe :samp:`{name}` and :samp:`{docstring}` arguments are the same as for
+MD Expression define_constraint name docstring expThe :samp:`{name}` and :samp:`{docstring}` arguments are the same as for
 ``define_register_constraint``, but note that the docstring comes
 immediately after the name for these expressions.  :samp:`{exp}` is an RTL
 expression, obeying the same rules as the RTL expressions in predicate
@@ -3402,7 +3402,7 @@ by ``reload`` if they fail to match.
 
 .. index:: define_memory_constraint
 
-MD Expressiondefine_memory_constraintnamedocstringexpUse this expression for constraints that match a subset of all memory
+MD Expression define_memory_constraint name docstring expUse this expression for constraints that match a subset of all memory
 operands: that is, ``reload`` can make them match by converting the
 operand to the form :samp:`(mem (reg :samp:`{X}` ))`, where :samp:`{X}` is a
 base register (from the register class specified by
@@ -3422,7 +3422,7 @@ The syntax and semantics are otherwise identical to
 
 .. index:: define_special_memory_constraint
 
-MD Expressiondefine_special_memory_constraintnamedocstringexpUse this expression for constraints that match a subset of all memory
+MD Expression define_special_memory_constraint name docstring expUse this expression for constraints that match a subset of all memory
 operands: that is, ``reload`` cannot make them match by reloading
 the address as it is described for ``define_memory_constraint`` or
 such address reload is undesirable with the performance point of view.
@@ -3436,7 +3436,7 @@ The syntax and semantics are otherwise identical to
 
 .. index:: define_relaxed_memory_constraint
 
-MD Expressiondefine_relaxed_memory_constraintnamedocstringexpThe test expression in a ``define_memory_constraint`` can assume
+MD Expression define_relaxed_memory_constraint name docstring expThe test expression in a ``define_memory_constraint`` can assume
 that ``TARGET_LEGITIMATE_ADDRESS_P`` holds for the address inside
 a ``mem`` rtx and so it does not need to test this condition itself.
 In other words, a ``define_memory_constraint`` test of the form:
@@ -3462,7 +3462,7 @@ The syntax and semantics are otherwise identical to
 
 .. index:: define_address_constraint
 
-MD Expressiondefine_address_constraintnamedocstringexpUse this expression for constraints that match a subset of all address
+MD Expression define_address_constraint name docstring expUse this expression for constraints that match a subset of all address
 operands: that is, ``reload`` can make the constraint match by
 converting the operand to the form :samp:`(reg :samp:`{X}` )`, again
 with :samp:`{X}` a base register.
@@ -3555,30 +3555,30 @@ a larger identifier).
 
 .. index:: constraint_num
 
-Enumconstraint_numFor each constraint except ``g``, there is a corresponding
+Enum constraint_numFor each constraint except ``g``, there is a corresponding
 enumeration constant: :samp:`CONSTRAINT_` plus the mangled name of the
 constraint.  Functions that take an ``enum constraint_num`` as an
 argument expect one of these constants.
 
-.. index:: satisfies_constraint_m
+.. function:: inline bool satisfies_constraint_m (rtx exp)
 
-Functioninline boolsatisfies_constraint_ :samp:`{m}`(rtx:samp:`{exp}`)For each non-register constraint :samp:`{m}` except ``g``, there is
-one of these functions; it returns ``true`` if :samp:`{exp}` satisfies the
-constraint.  These functions are only visible if rtl.h was included
-before tm_p.h.
+  For each non-register constraint :samp:`{m}` except ``g``, there is
+  one of these functions; it returns ``true`` if :samp:`{exp}` satisfies the
+  constraint.  These functions are only visible if rtl.h was included
+  before tm_p.h.
 
-.. index:: constraint_satisfied_p
+.. function:: bool constraint_satisfied_p (rtx exp, enum constraint_num c)
 
-Functionboolconstraint_satisfied_p(rtx:samp:`{exp}`,enumconstraint_num:samp:`{c}`)Like the ``satisfies_constraint_m`` functions, but the
-constraint to test is given as an argument, :samp:`{c}`.  If :samp:`{c}`
-specifies a register constraint, this function will always return
-``false``.
+  Like the ``satisfies_constraint_m`` functions, but the
+  constraint to test is given as an argument, :samp:`{c}`.  If :samp:`{c}`
+  specifies a register constraint, this function will always return
+  ``false``.
 
-.. index:: reg_class_for_constraint
+.. function:: enum reg_class reg_class_for_constraint (enum constraint_num c)
 
-Functionenum reg_classreg_class_for_constraint(enumconstraint_num:samp:`{c}`)Returns the register class associated with :samp:`{c}`.  If :samp:`{c}` is not
-a register constraint, or those registers are not available for the
-currently selected subtarget, returns ``NO_REGS``.
+  Returns the register class associated with :samp:`{c}`.  If :samp:`{c}` is not
+  a register constraint, or those registers are not available for the
+  currently selected subtarget, returns ``NO_REGS``.
 
 Here is an example use of ``satisfies_constraint_m``.  In
 peephole optimizations (see :ref:`peephole-definitions`), operand

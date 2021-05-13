@@ -21,31 +21,31 @@ relative addresses.
 
 .. them to the next line, to eliminate an overfull hbox. -mew 10feb93
 
-.. index:: PIC_OFFSET_TABLE_REGNUM
+.. macro:: PIC_OFFSET_TABLE_REGNUM
 
-MacroPIC_OFFSET_TABLE_REGNUMThe register number of the register used to address a table of static
-data addresses in memory.  In some cases this register is defined by a
-processor's 'application binary interface' (ABI).  When this macro
-is defined, RTL is generated for this register once, as with the stack
-pointer and frame pointer registers.  If this macro is not defined, it
-is up to the machine-dependent files to allocate such a register (if
-necessary).  Note that this register must be fixed when in use (e.g.
-when ``flag_pic`` is true).
+  The register number of the register used to address a table of static
+  data addresses in memory.  In some cases this register is defined by a
+  processor's 'application binary interface' (ABI).  When this macro
+  is defined, RTL is generated for this register once, as with the stack
+  pointer and frame pointer registers.  If this macro is not defined, it
+  is up to the machine-dependent files to allocate such a register (if
+  necessary).  Note that this register must be fixed when in use (e.g.
+  when ``flag_pic`` is true).
 
-.. index:: PIC_OFFSET_TABLE_REG_CALL_CLOBBERED
+.. macro:: PIC_OFFSET_TABLE_REG_CALL_CLOBBERED
 
-MacroPIC_OFFSET_TABLE_REG_CALL_CLOBBEREDA C expression that is nonzero if the register defined by
-``PIC_OFFSET_TABLE_REGNUM`` is clobbered by calls.  If not defined,
-the default is zero.  Do not define
-this macro if ``PIC_OFFSET_TABLE_REGNUM`` is not defined.
+  A C expression that is nonzero if the register defined by
+  ``PIC_OFFSET_TABLE_REGNUM`` is clobbered by calls.  If not defined,
+  the default is zero.  Do not define
+  this macro if ``PIC_OFFSET_TABLE_REGNUM`` is not defined.
 
-.. index:: LEGITIMATE_PIC_OPERAND_P
+.. macro:: LEGITIMATE_PIC_OPERAND_P (x)
 
-MacroLEGITIMATE_PIC_OPERAND_P(:samp:`{x}`)A C expression that is nonzero if :samp:`{x}` is a legitimate immediate
-operand on the target machine when generating position independent code.
-You can assume that :samp:`{x}` satisfies ``CONSTANT_P``, so you need not
-check this.  You can also assume :samp:`{flag_pic}` is true, so you need not
-check it either.  You need not define this macro if all constants
-(including ``SYMBOL_REF`` ) can be immediate operands when generating
-position independent code.
+  A C expression that is nonzero if :samp:`{x}` is a legitimate immediate
+  operand on the target machine when generating position independent code.
+  You can assume that :samp:`{x}` satisfies ``CONSTANT_P``, so you need not
+  check this.  You can also assume :samp:`{flag_pic}` is true, so you need not
+  check it either.  You need not define this macro if all constants
+  (including ``SYMBOL_REF`` ) can be immediate operands when generating
+  position independent code.
 

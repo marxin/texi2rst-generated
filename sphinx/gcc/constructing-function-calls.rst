@@ -22,7 +22,7 @@ sophisticated features or other extensions of the language.  It
 is, therefore, not recommended to use them outside very simple
 functions acting as mere forwarders for their arguments.
 
-.. function:: void * __builtin_apply_args()
+.. function:: void * __builtin_apply_args ()
 
   This built-in function returns a pointer to data
   describing how to perform a call with the same arguments as are passed
@@ -33,7 +33,7 @@ functions acting as mere forwarders for their arguments.
   into a block of memory allocated on the stack.  Then it returns the
   address of that block.
 
-.. function:: void * __builtin_apply(void (* function)(),void *arguments,size_t size)
+.. function:: void * __builtin_apply (void (*function)(), void *arguments, size_t size)
 
   This built-in function invokes :samp:`{function}`
   with a copy of the parameters described by :samp:`{arguments}`
@@ -52,13 +52,13 @@ functions acting as mere forwarders for their arguments.
   that should be pushed on the stack and copied from the incoming argument
   area.
 
-.. function:: void __builtin_return(void *result)
+.. function:: void __builtin_return (void *result)
 
   This built-in function returns the value described by :samp:`{result}` from
   the containing function.  You should specify, for :samp:`{result}`, a value
   returned by ``__builtin_apply``.
 
-.. function::  __builtin_va_arg_pack()
+.. function:: __builtin_va_arg_pack ()
 
   This built-in function represents all anonymous arguments of an inline
   function.  It can be used only in inline functions that are always
@@ -85,7 +85,7 @@ functions acting as mere forwarders for their arguments.
       return r + s;
     }
 
-.. function:: size_t __builtin_va_arg_pack_len()
+.. function:: size_t __builtin_va_arg_pack_len ()
 
   This built-in function returns the number of anonymous arguments of
   an inline function.  It can be used only in inline functions that

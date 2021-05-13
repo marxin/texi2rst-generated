@@ -10,7 +10,7 @@ sequences: ``walk_gimple_stmt`` and ``walk_gimple_seq``,
 accordingly, and a third function for walking the operands in a
 statement: ``walk_gimple_op``.
 
-.. function:: tree walk_gimple_stmt(gimple_stmt_iterator *gsi,walk_stmt_fn callback_stmt,walk_tree_fn callback_op,struct walk_stmt_info*wi )
+.. function:: tree walk_gimple_stmt (gimple_stmt_iterator *gsi,   walk_stmt_fn callback_stmt, walk_tree_fn callback_op, struct walk_stmt_info *wi)
 
   This function is used to walk the current statement in ``GSI``,
   optionally using traversal state stored in ``WI``.  If ``WI`` is ``NULL``, no
@@ -29,7 +29,7 @@ statement: ``walk_gimple_op``.
   The return value is that returned by the last call to
   ``walk_gimple_op``, or ``NULL_TREE`` if no ``CALLBACK_OP`` is specified.
 
-.. function:: tree walk_gimple_op(gimple stmt,walk_tree_fn callback_op,struct walk_stmt_info*wi )
+.. function:: tree walk_gimple_op (gimple stmt,   walk_tree_fn callback_op, struct walk_stmt_info *wi)
 
   Use this function to walk the operands of statement ``STMT``.  Every
   operand is walked via ``walk_tree`` with optional state information
@@ -48,7 +48,7 @@ statement: ``walk_gimple_op``.
   the last call to ``walk_tree``, or ``NULL_TREE`` if no ``CALLBACK_OP`` is
   specified.
 
-.. function:: tree walk_gimple_seq(gimple_seq seq,walk_stmt_fn callback_stmt,walk_tree_fn callback_op,struct walk_stmt_info*wi )
+.. function:: tree walk_gimple_seq (gimple_seq seq,   walk_stmt_fn callback_stmt, walk_tree_fn callback_op, struct walk_stmt_info *wi)
 
   This function walks all the statements in the sequence ``SEQ``
   calling ``walk_gimple_stmt`` on each one.  ``WI`` is as in

@@ -66,25 +66,25 @@ The following functions can be used to examine PHI nodes
 
 .. index:: gimple_phi_result
 
-Functiongimple_phi_result(:samp:`{phi}`)Returns the ``SSA_NAME`` created by PHI node :samp:`{phi}` (i.e.,
+Function gimple_phi_result (:samp:`{phi}`)Returns the ``SSA_NAME`` created by PHI node :samp:`{phi}` (i.e.,
 :samp:`{phi}` 's LHS).
 
 .. index:: gimple_phi_num_args
 
-Functiongimple_phi_num_args(:samp:`{phi}`)Returns the number of arguments in :samp:`{phi}`.  This number is exactly
+Function gimple_phi_num_args (:samp:`{phi}`)Returns the number of arguments in :samp:`{phi}`.  This number is exactly
 the number of incoming edges to the basic block holding :samp:`{phi}`.
 
 .. index:: gimple_phi_arg
 
-Functiongimple_phi_arg(:samp:`{phi}`,:samp:`{i}`)Returns :samp:`{i}` th argument of :samp:`{phi}`.
+Function gimple_phi_arg (:samp:`{phi}`, :samp:`{i}`)Returns :samp:`{i}` th argument of :samp:`{phi}`.
 
 .. index:: gimple_phi_arg_edge
 
-Functiongimple_phi_arg_edge(:samp:`{phi}`,:samp:`{i}`)Returns the incoming edge for the :samp:`{i}` th argument of :samp:`{phi}`.
+Function gimple_phi_arg_edge (:samp:`{phi}`, :samp:`{i}`)Returns the incoming edge for the :samp:`{i}` th argument of :samp:`{phi}`.
 
 .. index:: gimple_phi_arg_def
 
-Functiongimple_phi_arg_def(:samp:`{phi}`,:samp:`{i}`)Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
+Function gimple_phi_arg_def (:samp:`{phi}`, :samp:`{i}`)Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
 
 Preserving the SSA form
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -215,21 +215,21 @@ Examining ``SSA_NAME`` nodes
 
 The following macros can be used to examine ``SSA_NAME`` nodes
 
-.. index:: SSA_NAME_DEF_STMT
+.. macro:: SSA_NAME_DEF_STMT (var)
 
-MacroSSA_NAME_DEF_STMT(:samp:`{var}`)Returns the statement :samp:`{s}` that creates the ``SSA_NAME``
-:samp:`{var}`.  If :samp:`{s}` is an empty statement (i.e., ``IS_EMPTY_STMT
-(s)`` returns ``true`` ), it means that the first reference to
-this variable is a USE or a VUSE.
+  Returns the statement :samp:`{s}` that creates the ``SSA_NAME``
+  :samp:`{var}`.  If :samp:`{s}` is an empty statement (i.e., ``IS_EMPTY_STMT
+  (s)`` returns ``true`` ), it means that the first reference to
+  this variable is a USE or a VUSE.
 
-.. index:: SSA_NAME_VERSION
+.. macro:: SSA_NAME_VERSION (var)
 
-MacroSSA_NAME_VERSION(:samp:`{var}`)Returns the version number of the ``SSA_NAME`` object :samp:`{var}`.
+  Returns the version number of the ``SSA_NAME`` object :samp:`{var}`.
 
 Walking the dominator tree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. function:: void walk_dominator_tree(walk_data,bb)
+.. function:: void walk_dominator_tree (walk_data, bb)
 
   This function walks the dominator tree for the current CFG calling a
   set of callback functions defined in :samp:`{struct dom_walk_data}` in

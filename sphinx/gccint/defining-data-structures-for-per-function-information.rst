@@ -39,16 +39,16 @@ the saving and restoring of the target specific information.  Since the
 single data area approach is no longer used, these pointers are no
 longer supported.
 
-.. index:: INIT_EXPANDERS
+.. macro:: INIT_EXPANDERS
 
-MacroINIT_EXPANDERSMacro called to initialize any target specific information.  This macro
-is called once per function, before generation of any RTL has begun.
-The intention of this macro is to allow the initialization of the
-function pointer ``init_machine_status``.
+  Macro called to initialize any target specific information.  This macro
+  is called once per function, before generation of any RTL has begun.
+  The intention of this macro is to allow the initialization of the
+  function pointer ``init_machine_status``.
 
 .. index:: init_machine_status
 
-Variablevoid (*)(struct function *)init_machine_statusIf this function pointer is non- ``NULL`` it will be called once per
+Variable void (*)(struct function *) init_machine_statusIf this function pointer is non- ``NULL`` it will be called once per
 function, before function compilation starts, in order to allow the
 target to perform any target specific initialization of the
 ``struct function`` structure.  It is intended that this would be

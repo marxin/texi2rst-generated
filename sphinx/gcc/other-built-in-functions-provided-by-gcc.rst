@@ -984,7 +984,7 @@ In the same fashion, GCC provides ``fpclassify``, ``isfinite``,
 ``__builtin_`` prefixed.  The ``isinf`` and ``isnan``
 built-in functions appear both with and without the ``__builtin_`` prefix.
 
-.. function:: void *__builtin_alloca(size_t size)
+.. function:: void *__builtin_alloca (size_t size)
 
   The ``__builtin_alloca`` function must be called at block scope.
   The function allocates an object :samp:`{size}` bytes large on the stack
@@ -1023,7 +1023,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   where GCC provides them as an extension.
   See :ref:`variable-length`, for details.
 
-.. function:: void *__builtin_alloca_with_align(size_t size,size_t alignment)
+.. function:: void *__builtin_alloca_with_align (size_t size, size_t alignment)
 
   The ``__builtin_alloca_with_align`` function must be called at block
   scope.  The function allocates an object :samp:`{size}` bytes large on
@@ -1069,7 +1069,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   instead, in both C99 and C++ programs where GCC provides them as
   an extension.  See :ref:`variable-length`, for details.
 
-.. function:: void *__builtin_alloca_with_align_and_max(size_t size,size_t alignment,size_t max_size)
+.. function:: void *__builtin_alloca_with_align_and_max (size_t size, size_t alignment, size_t max_size)
 
   Similar to ``__builtin_alloca_with_align`` but takes an extra argument
   specifying an upper bound for :samp:`{size}` in case its value cannot be computed
@@ -1078,7 +1078,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   expression, it has no effect on code generation and no attempt is made to
   check its compatibility with :samp:`{size}`.
 
-.. function:: bool __builtin_has_attribute(type-or-expression,attribute)
+.. function:: bool __builtin_has_attribute (type-or-expression, attribute)
 
   The ``__builtin_has_attribute`` function evaluates to an integer constant
   expression equal to ``true`` if the symbol or type referenced by
@@ -1120,7 +1120,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   ``__builtin_has_attribute`` is an intrinsic function that is not
   recognized in such contexts.
 
-.. function:: type __builtin_speculation_safe_value(typeval ,typefailval )
+.. function:: type __builtin_speculation_safe_value (type val, type failval)
 
   This built-in function can be used to help mitigate against unsafe
   speculative execution.  :samp:`{type}` may be any integral type or any
@@ -1203,7 +1203,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   which will cause a ``NULL`` pointer to be used for the unsafe case.
 
-.. function:: int __builtin_types_compatible_p(type1,type2)
+.. function:: int __builtin_types_compatible_p (type1, type2)
 
   You can use the built-in function ``__builtin_types_compatible_p`` to
   determine whether two types are the same.
@@ -1252,7 +1252,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   *Note:* This construct is only available for C.
 
-.. function:: type __builtin_call_with_static_chain(call_exp,pointer_exp)
+.. function:: type __builtin_call_with_static_chain (call_exp, pointer_exp)
 
   The :samp:`{call_exp}` expression must be a function call, and the
   :samp:`{pointer_exp}` expression must be a pointer.  The :samp:`{pointer_exp}`
@@ -1262,7 +1262,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   *Note:* This builtin is only available for C.
   This builtin can be used to call Go closures from C.
 
-.. function:: type __builtin_choose_expr(const_exp,exp1,exp2)
+.. function:: type __builtin_choose_expr (const_exp, exp1, exp2)
 
   You can use the built-in function ``__builtin_choose_expr`` to
   evaluate code depending on the value of a constant expression.  This
@@ -1302,7 +1302,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   :samp:`{const_exp}` ) may still generate syntax errors.  This may change in
   future revisions.
 
-.. function:: type __builtin_tgmath(functions,arguments)
+.. function:: type __builtin_tgmath (functions, arguments)
 
   The built-in function ``__builtin_tgmath``, available only for C
   and Objective-C, calls a function determined according to the rules of
@@ -1359,7 +1359,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   has at least the range and precision of :samp:`{u}` is called, and it is
   an error if there is no such function.
 
-.. function:: type __builtin_complex(real,imag)
+.. function:: type __builtin_complex (real, imag)
 
   The built-in function ``__builtin_complex`` is provided for use in
   implementing the ISO C11 macros ``CMPLXF``, ``CMPLX`` and
@@ -1369,7 +1369,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   Unlike :samp:`{real} + I * {imag}`, this works even when
   infinities, NaNs and negative zeros are involved.
 
-.. function:: int __builtin_constant_p(exp)
+.. function:: int __builtin_constant_p (exp)
 
   You can use the built-in function ``__builtin_constant_p`` to
   determine if a value is known to be constant at compile time and hence
@@ -1419,7 +1419,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   built-in in this case, because it has no opportunity to perform
   optimization.
 
-.. function:: bool __builtin_is_constant_evaluated(void )
+.. function:: bool __builtin_is_constant_evaluated (void)
 
   The ``__builtin_is_constant_evaluated`` function is available only
   in C++.  The built-in is intended to be used by implementations of
@@ -1436,7 +1436,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   initializers of variables usable in constant expressions.   For more details
   refer to the latest revision of the C++ standard.
 
-.. function:: void __builtin_clear_padding(ptr)
+.. function:: void __builtin_clear_padding (ptr)
 
   The built-in function ``__builtin_clear_padding`` function clears
   padding bits inside of the object representation of object pointed by
@@ -1449,7 +1449,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   have intederminate values and the object representation needs to be
   bitwise compared to some other object, for example for atomic operations.
 
-.. function:: type __builtin_bit_cast(type,arg)
+.. function:: type __builtin_bit_cast (type, arg)
 
   The ``__builtin_bit_cast`` function is available only
   in C++.  The built-in is intended to be used by implementations of
@@ -1464,7 +1464,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   is a constant expression.  For more details
   refer to the latest revision of the C++ standard.
 
-.. function:: long __builtin_expect(long exp,long c)
+.. function:: long __builtin_expect (long exp, long c)
 
   .. index:: fprofile-arcs
 
@@ -1514,7 +1514,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   range 0.0 to 1.0, inclusive.  The :samp:`{probability}` argument must be
   constant floating-point expression.
 
-.. function:: void __builtin_trap(void )
+.. function:: void __builtin_trap (void)
 
   This function causes the program to exit abnormally.  GCC implements
   this function by using a target-dependent mechanism (such as
@@ -1522,7 +1522,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   ``abort``.  The mechanism used may vary from release to release so
   you should not rely on any particular implementation.
 
-.. function:: void __builtin_unreachable(void )
+.. function:: void __builtin_unreachable (void)
 
   If control flow reaches the point of the ``__builtin_unreachable``,
   the program is undefined.  It is useful in situations where the
@@ -1576,7 +1576,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
         }
     }
 
-.. function:: void * __builtin_assume_aligned(const void* exp,size_t align,... )
+.. function:: void * __builtin_assume_aligned (const void *exp, size_t align, ...)
 
   This function returns its first argument, and allows the compiler
   to assume that the returned pointer is at least :samp:`{align}` bytes
@@ -1598,7 +1598,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   means that the compiler can assume for ``x``, set to ``arg``, that
   ``(char *) x - 8`` is 32-byte aligned.
 
-.. function:: int __builtin_LINE()
+.. function:: int __builtin_LINE ()
 
   This function is the equivalent of the preprocessor ``__LINE__``
   macro and returns a constant integer expression that evaluates to
@@ -1606,7 +1606,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   default argument for a function :samp:`{F}`, it returns the line number
   of the call to :samp:`{F}`.
 
-.. function:: const char * __builtin_FUNCTION()
+.. function:: const char * __builtin_FUNCTION ()
 
   This function is the equivalent of the ``__FUNCTION__`` symbol
   and returns an address constant pointing to the name of the function
@@ -1616,7 +1616,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   caller or the empty string if the call was not made at function
   scope.
 
-.. function:: const char * __builtin_FILE()
+.. function:: const char * __builtin_FILE ()
 
   This function is the equivalent of the preprocessor ``__FILE__``
   macro and returns an address constant pointing to the file name
@@ -1644,7 +1644,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
       printf ("%s:%i: %s: message\n", file (), line (), function ());
     }
 
-.. function:: void __builtin___clear_cache(void *begin,void *end)
+.. function:: void __builtin___clear_cache (void *begin, void *end)
 
   This function is used to flush the processor's instruction cache for
   the region of memory between :samp:`{begin}` inclusive and :samp:`{end}`
@@ -1657,7 +1657,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   instructions are emitted in-line to clear the instruction cache or a
   call to the ``__clear_cache`` function in libgcc is made.
 
-.. function:: void __builtin_prefetch(const void* addr,... )
+.. function:: void __builtin_prefetch (const void *addr, ...)
 
   This function is used to minimize cache-miss latency by moving data into
   a cache before it is accessed.
@@ -1699,36 +1699,36 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   is evaluated if it includes side effects but no other code is generated
   and GCC does not issue a warning.
 
-.. function:: size_t __builtin_object_size(const void* ptr,int type)
+.. function:: size_t __builtin_object_size (const void * ptr, int type)
 
   Returns the size of an object pointed to by :samp:`{ptr}`.  See :ref:`object-size-checking`, for a detailed description of the function.
 
-.. function:: double __builtin_huge_val(void )
+.. function:: double __builtin_huge_val (void)
 
   Returns a positive infinity, if supported by the floating-point format,
   else ``DBL_MAX``.  This function is suitable for implementing the
   ISO C macro ``HUGE_VAL``.
 
-.. function:: float __builtin_huge_valf(void )
+.. function:: float __builtin_huge_valf (void)
 
   Similar to ``__builtin_huge_val``, except the return type is ``float``.
 
-.. function:: long double __builtin_huge_vall(void )
+.. function:: long double __builtin_huge_vall (void)
 
   Similar to ``__builtin_huge_val``, except the return
   type is ``long double``.
 
-.. function:: _Floatn __builtin_huge_valfn(void )
+.. function:: _Floatn __builtin_huge_valfn (void)
 
   Similar to ``__builtin_huge_val``, except the return type is
   ``_Floatn``.
 
-.. function:: _Floatnx __builtin_huge_valfnx(void )
+.. function:: _Floatnx __builtin_huge_valfnx (void)
 
   Similar to ``__builtin_huge_val``, except the return type is
   ``_Floatnx``.
 
-.. function:: int __builtin_fpclassify(int ,int ,int ,int ,int ,... )
+.. function:: int __builtin_fpclassify (int, int, int, int, int, ...)
 
   This built-in implements the C99 fpclassify functionality.  The first
   five int arguments should be the target library's notion of the
@@ -1739,44 +1739,44 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   to classify.  GCC treats the last argument as type-generic, which
   means it does not do default promotion from float to double.
 
-.. function:: double __builtin_inf(void )
+.. function:: double __builtin_inf (void)
 
   Similar to ``__builtin_huge_val``, except a warning is generated
   if the target floating-point format does not support infinities.
 
-.. function:: _Decimal32 __builtin_infd32(void )
+.. function:: _Decimal32 __builtin_infd32 (void)
 
   Similar to ``__builtin_inf``, except the return type is ``_Decimal32``.
 
-.. function:: _Decimal64 __builtin_infd64(void )
+.. function:: _Decimal64 __builtin_infd64 (void)
 
   Similar to ``__builtin_inf``, except the return type is ``_Decimal64``.
 
-.. function:: _Decimal128 __builtin_infd128(void )
+.. function:: _Decimal128 __builtin_infd128 (void)
 
   Similar to ``__builtin_inf``, except the return type is ``_Decimal128``.
 
-.. function:: float __builtin_inff(void )
+.. function:: float __builtin_inff (void)
 
   Similar to ``__builtin_inf``, except the return type is ``float``.
   This function is suitable for implementing the ISO C99 macro ``INFINITY``.
 
-.. function:: long double __builtin_infl(void )
+.. function:: long double __builtin_infl (void)
 
   Similar to ``__builtin_inf``, except the return
   type is ``long double``.
 
-.. function:: _Floatn __builtin_inffn(void )
+.. function:: _Floatn __builtin_inffn (void)
 
   Similar to ``__builtin_inf``, except the return
   type is ``_Floatn``.
 
-.. function:: _Floatn __builtin_inffnx(void )
+.. function:: _Floatn __builtin_inffnx (void)
 
   Similar to ``__builtin_inf``, except the return
   type is ``_Floatnx``.
 
-.. function:: int __builtin_isinf_sign(... )
+.. function:: int __builtin_isinf_sign (...)
 
   Similar to ``isinf``, except the return value is -1 for
   an argument of ``-Inf`` and 1 for an argument of ``+Inf``.
@@ -1785,7 +1785,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   argument.  GCC treats this parameter as type-generic, which means it
   does not do default promotion from float to double.
 
-.. function:: double __builtin_nan(const char*str )
+.. function:: double __builtin_nan (const char *str)
 
   This is an implementation of the ISO C99 function ``nan``.
 
@@ -1802,199 +1802,199 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   consumed by ``strtol``, is evaluated early enough that it is considered a
   compile-time constant.
 
-.. function:: _Decimal32 __builtin_nand32(const char*str )
+.. function:: _Decimal32 __builtin_nand32 (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is ``_Decimal32``.
 
-.. function:: _Decimal64 __builtin_nand64(const char*str )
+.. function:: _Decimal64 __builtin_nand64 (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is ``_Decimal64``.
 
-.. function:: _Decimal128 __builtin_nand128(const char*str )
+.. function:: _Decimal128 __builtin_nand128 (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is ``_Decimal128``.
 
-.. function:: float __builtin_nanf(const char*str )
+.. function:: float __builtin_nanf (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is ``float``.
 
-.. function:: long double __builtin_nanl(const char*str )
+.. function:: long double __builtin_nanl (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is ``long double``.
 
-.. function:: _Floatn __builtin_nanfn(const char*str )
+.. function:: _Floatn __builtin_nanfn (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is
   ``_Floatn``.
 
-.. function:: _Floatnx __builtin_nanfnx(const char*str )
+.. function:: _Floatnx __builtin_nanfnx (const char *str)
 
   Similar to ``__builtin_nan``, except the return type is
   ``_Floatnx``.
 
-.. function:: double __builtin_nans(const char*str )
+.. function:: double __builtin_nans (const char *str)
 
   Similar to ``__builtin_nan``, except the significand is forced
   to be a signaling NaN.  The ``nans`` function is proposed by
   http://www.open-std.org/jtc1/sc22/wg14/www/docs/n965.htmWG14 N965.
 
-.. function:: _Decimal32 __builtin_nansd32(const char*str )
+.. function:: _Decimal32 __builtin_nansd32 (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is ``_Decimal32``.
 
-.. function:: _Decimal64 __builtin_nansd64(const char*str )
+.. function:: _Decimal64 __builtin_nansd64 (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is ``_Decimal64``.
 
-.. function:: _Decimal128 __builtin_nansd128(const char*str )
+.. function:: _Decimal128 __builtin_nansd128 (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is ``_Decimal128``.
 
-.. function:: float __builtin_nansf(const char*str )
+.. function:: float __builtin_nansf (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is ``float``.
 
-.. function:: long double __builtin_nansl(const char*str )
+.. function:: long double __builtin_nansl (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is ``long double``.
 
-.. function:: _Floatn __builtin_nansfn(const char*str )
+.. function:: _Floatn __builtin_nansfn (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is
   ``_Floatn``.
 
-.. function:: _Floatnx __builtin_nansfnx(const char*str )
+.. function:: _Floatnx __builtin_nansfnx (const char *str)
 
   Similar to ``__builtin_nans``, except the return type is
   ``_Floatnx``.
 
-.. function:: int __builtin_ffs(int x)
+.. function:: int __builtin_ffs (int x)
 
   Returns one plus the index of the least significant 1-bit of :samp:`{x}`, or
   if :samp:`{x}` is zero, returns zero.
 
-.. function:: int __builtin_clz(unsigned intx )
+.. function:: int __builtin_clz (unsigned int x)
 
   Returns the number of leading 0-bits in :samp:`{x}`, starting at the most
   significant bit position.  If :samp:`{x}` is 0, the result is undefined.
 
-.. function:: int __builtin_ctz(unsigned intx )
+.. function:: int __builtin_ctz (unsigned int x)
 
   Returns the number of trailing 0-bits in :samp:`{x}`, starting at the least
   significant bit position.  If :samp:`{x}` is 0, the result is undefined.
 
-.. function:: int __builtin_clrsb(int x)
+.. function:: int __builtin_clrsb (int x)
 
   Returns the number of leading redundant sign bits in :samp:`{x}`, i.e. the
   number of bits following the most significant bit that are identical
   to it.  There are no special cases for 0 or other values. 
 
-.. function:: int __builtin_popcount(unsigned intx )
+.. function:: int __builtin_popcount (unsigned int x)
 
   Returns the number of 1-bits in :samp:`{x}`.
 
-.. function:: int __builtin_parity(unsigned intx )
+.. function:: int __builtin_parity (unsigned int x)
 
   Returns the parity of :samp:`{x}`, i.e. the number of 1-bits in :samp:`{x}`
   modulo 2.
 
-.. function:: int __builtin_ffsl(long )
+.. function:: int __builtin_ffsl (long)
 
   Similar to ``__builtin_ffs``, except the argument type is
   ``long``.
 
-.. function:: int __builtin_clzl(unsigned long)
+.. function:: int __builtin_clzl (unsigned long)
 
   Similar to ``__builtin_clz``, except the argument type is
   ``unsigned long``.
 
-.. function:: int __builtin_ctzl(unsigned long)
+.. function:: int __builtin_ctzl (unsigned long)
 
   Similar to ``__builtin_ctz``, except the argument type is
   ``unsigned long``.
 
-.. function:: int __builtin_clrsbl(long )
+.. function:: int __builtin_clrsbl (long)
 
   Similar to ``__builtin_clrsb``, except the argument type is
   ``long``.
 
-.. function:: int __builtin_popcountl(unsigned long)
+.. function:: int __builtin_popcountl (unsigned long)
 
   Similar to ``__builtin_popcount``, except the argument type is
   ``unsigned long``.
 
-.. function:: int __builtin_parityl(unsigned long)
+.. function:: int __builtin_parityl (unsigned long)
 
   Similar to ``__builtin_parity``, except the argument type is
   ``unsigned long``.
 
-.. function:: int __builtin_ffsll(long long)
+.. function:: int __builtin_ffsll (long long)
 
   Similar to ``__builtin_ffs``, except the argument type is
   ``long long``.
 
-.. function:: int __builtin_clzll(unsigned longlong )
+.. function:: int __builtin_clzll (unsigned long long)
 
   Similar to ``__builtin_clz``, except the argument type is
   ``unsigned long long``.
 
-.. function:: int __builtin_ctzll(unsigned longlong )
+.. function:: int __builtin_ctzll (unsigned long long)
 
   Similar to ``__builtin_ctz``, except the argument type is
   ``unsigned long long``.
 
-.. function:: int __builtin_clrsbll(long long)
+.. function:: int __builtin_clrsbll (long long)
 
   Similar to ``__builtin_clrsb``, except the argument type is
   ``long long``.
 
-.. function:: int __builtin_popcountll(unsigned longlong )
+.. function:: int __builtin_popcountll (unsigned long long)
 
   Similar to ``__builtin_popcount``, except the argument type is
   ``unsigned long long``.
 
-.. function:: int __builtin_parityll(unsigned longlong )
+.. function:: int __builtin_parityll (unsigned long long)
 
   Similar to ``__builtin_parity``, except the argument type is
   ``unsigned long long``.
 
-.. function:: double __builtin_powi(double ,int )
+.. function:: double __builtin_powi (double, int)
 
   Returns the first argument raised to the power of the second.  Unlike the
   ``pow`` function no guarantees about precision and rounding are made.
 
-.. function:: float __builtin_powif(float ,int )
+.. function:: float __builtin_powif (float, int)
 
   Similar to ``__builtin_powi``, except the argument and return types
   are ``float``.
 
-.. function:: long double __builtin_powil(long double,int )
+.. function:: long double __builtin_powil (long double, int)
 
   Similar to ``__builtin_powi``, except the argument and return types
   are ``long double``.
 
-.. function:: uint16_t __builtin_bswap16(uint16_t x)
+.. function:: uint16_t __builtin_bswap16 (uint16_t x)
 
   Returns :samp:`{x}` with the order of the bytes reversed; for example,
   ``0xaabb`` becomes ``0xbbaa``.  Byte here always means
   exactly 8 bits.
 
-.. function:: uint32_t __builtin_bswap32(uint32_t x)
+.. function:: uint32_t __builtin_bswap32 (uint32_t x)
 
   Similar to ``__builtin_bswap16``, except the argument and return types
   are 32-bit.
 
-.. function:: uint64_t __builtin_bswap64(uint64_t x)
+.. function:: uint64_t __builtin_bswap64 (uint64_t x)
 
   Similar to ``__builtin_bswap32``, except the argument and return types
   are 64-bit.
 
-.. function:: uint128_t __builtin_bswap128(uint128_t x)
+.. function:: uint128_t __builtin_bswap128 (uint128_t x)
 
   Similar to ``__builtin_bswap64``, except the argument and return types
   are 128-bit.  Only supported on targets when 128-bit types are supported.
 
-.. function:: Pmode __builtin_extend_pointer(void *x )
+.. function:: Pmode __builtin_extend_pointer (void * x)
 
   On targets where the user visible pointer size is smaller than the size
   of an actual hardware address this function returns the extended user
@@ -2002,12 +2002,12 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   Aarch64.  This function is mainly useful when writing inline assembly
   code.
 
-.. function:: int __builtin_goacc_parlevel_id(int x)
+.. function:: int __builtin_goacc_parlevel_id (int x)
 
   Returns the openacc gang, worker or vector id depending on whether :samp:`{x}` is
   0, 1 or 2.
 
-.. function:: int __builtin_goacc_parlevel_size(int x)
+.. function:: int __builtin_goacc_parlevel_size (int x)
 
   Returns the openacc gang, worker or vector size depending on whether :samp:`{x}` is
   0, 1 or 2.

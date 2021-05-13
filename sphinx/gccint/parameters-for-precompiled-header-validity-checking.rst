@@ -5,13 +5,13 @@ Parameters for Precompiled Header Validity Checking
 
 .. index:: parameters, precompiled headers
 
-.. function:: void * TARGET_GET_PCH_VALIDITY(size_t *sz)
+.. function:: void * TARGET_GET_PCH_VALIDITY (size_t *sz)
 
   This hook returns a pointer to the data needed by
   ``TARGET_PCH_VALID_P`` and sets
   :samp:`*{sz}` to the size of the data in bytes.
 
-.. function:: const char * TARGET_PCH_VALID_P(const void* data,size_t sz)
+.. function:: const char * TARGET_PCH_VALID_P (const void *data, size_t sz)
 
   This hook checks whether the options used to create a PCH file are
   compatible with the current settings.  It returns ``NULL``
@@ -26,7 +26,7 @@ Parameters for Precompiled Header Validity Checking
   The default definition of ``default_pch_valid_p`` should be
   suitable for most targets.
 
-.. function:: const char * TARGET_CHECK_PCH_TARGET_FLAGS(int pch_flags)
+.. function:: const char * TARGET_CHECK_PCH_TARGET_FLAGS (int pch_flags)
 
   If this hook is nonnull, the default implementation of
   ``TARGET_PCH_VALID_P`` will use it to check for compatible values
@@ -34,7 +34,7 @@ Parameters for Precompiled Header Validity Checking
   ``target_flags`` had when the PCH file was created.  The return
   value is the same as for ``TARGET_PCH_VALID_P``.
 
-.. function:: void TARGET_PREPARE_PCH_SAVE(void )
+.. function:: void TARGET_PREPARE_PCH_SAVE (void)
 
   Called before writing out a PCH file.  If the target has some
   garbage-collected data that needs to be in a particular state on PCH loads,

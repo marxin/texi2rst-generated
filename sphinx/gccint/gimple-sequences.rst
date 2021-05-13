@@ -23,68 +23,68 @@ in the section entitled Sequence Iterators.
 
 Below is a list of functions to manipulate and query sequences.
 
-.. function:: void gimple_seq_add_stmt(gimple_seq *seq,gimple g)
+.. function:: void gimple_seq_add_stmt (gimple_seq *seq, gimple g)
 
   Link a gimple statement to the end of the sequence * ``SEQ`` if ``G`` is
   not ``NULL``.  If * ``SEQ`` is ``NULL``, allocate a sequence before linking.
 
-.. function:: void gimple_seq_add_seq(gimple_seq *dest,gimple_seq src)
+.. function:: void gimple_seq_add_seq (gimple_seq *dest, gimple_seq src)
 
   Append sequence ``SRC`` to the end of sequence * ``DEST`` if ``SRC`` is not
   ``NULL``.  If * ``DEST`` is ``NULL``, allocate a new sequence before
   appending.
 
-.. function:: gimple_seq gimple_seq_deep_copy(gimple_seq src)
+.. function:: gimple_seq gimple_seq_deep_copy (gimple_seq src)
 
   Perform a deep copy of sequence ``SRC`` and return the result.
 
-.. function:: gimple_seq gimple_seq_reverse(gimple_seq seq)
+.. function:: gimple_seq gimple_seq_reverse (gimple_seq seq)
 
   Reverse the order of the statements in the sequence ``SEQ``.  Return
   ``SEQ``.
 
-.. function:: gimple gimple_seq_first(gimple_seq s)
+.. function:: gimple gimple_seq_first (gimple_seq s)
 
   Return the first statement in sequence ``S``.
 
-.. function:: gimple gimple_seq_last(gimple_seq s)
+.. function:: gimple gimple_seq_last (gimple_seq s)
 
   Return the last statement in sequence ``S``.
 
-.. function:: void gimple_seq_set_last(gimple_seq s,gimple last)
+.. function:: void gimple_seq_set_last (gimple_seq s, gimple last)
 
   Set the last statement in sequence ``S`` to the statement in ``LAST``.
 
-.. function:: void gimple_seq_set_first(gimple_seq s,gimple first)
+.. function:: void gimple_seq_set_first (gimple_seq s, gimple first)
 
   Set the first statement in sequence ``S`` to the statement in ``FIRST``.
 
-.. function:: void gimple_seq_init(gimple_seq s)
+.. function:: void gimple_seq_init (gimple_seq s)
 
   Initialize sequence ``S`` to an empty sequence.
 
-.. function:: gimple_seq gimple_seq_alloc(void )
+.. function:: gimple_seq gimple_seq_alloc (void)
 
   Allocate a new sequence in the garbage collected store and return
   it.
 
-.. function:: void gimple_seq_copy(gimple_seq dest,gimple_seq src)
+.. function:: void gimple_seq_copy (gimple_seq dest, gimple_seq src)
 
   Copy the sequence ``SRC`` into the sequence ``DEST``.
 
-.. function:: bool gimple_seq_empty_p(gimple_seq s)
+.. function:: bool gimple_seq_empty_p (gimple_seq s)
 
   Return true if the sequence ``S`` is empty.
 
-.. function:: gimple_seq bb_seq(basic_block bb)
+.. function:: gimple_seq bb_seq (basic_block bb)
 
   Returns the sequence of statements in ``BB``.
 
-.. function:: void set_bb_seq(basic_block bb,gimple_seq seq)
+.. function:: void set_bb_seq (basic_block bb, gimple_seq seq)
 
   Sets the sequence of statements in ``BB`` to ``SEQ``.
 
-.. function:: bool gimple_seq_singleton_p(gimple_seq seq)
+.. function:: bool gimple_seq_singleton_p (gimple_seq seq)
 
   Determine whether ``SEQ`` contains exactly one statement.
 

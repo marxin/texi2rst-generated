@@ -70,7 +70,7 @@ file obstack.h.
 
 .. index:: struct obstack
 
-Data Typestruct obstackAn obstack is represented by a data structure of type ``struct
+Data Type struct obstackAn obstack is represented by a data structure of type ``struct
 obstack``.  This structure has a small fixed size; it records the status
 of the obstack and how to find the space in which objects are allocated.
 It does not contain any of the objects themselves.  You should not try
@@ -146,14 +146,14 @@ as an obstack, it must initialize the obstack by calling
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_init
+.. function:: int obstack_init (struct obstack *obstack-ptr)
 
-Functionintobstack_init(structobstack*:samp:`{obstack-ptr}`)Initialize obstack :samp:`{obstack-ptr}` for allocation of objects.  This
-macro calls the obstack's ``obstack_chunk_alloc`` function.  If
-allocation of memory fails, the function pointed to by
-``obstack_alloc_failed_handler`` is called.  The ``obstack_init``
-macro always returns 1 (Compatibility notice: Former versions of
-obstack returned 0 if allocation failed).
+  Initialize obstack :samp:`{obstack-ptr}` for allocation of objects.  This
+  macro calls the obstack's ``obstack_chunk_alloc`` function.  If
+  allocation of memory fails, the function pointed to by
+  ``obstack_alloc_failed_handler`` is called.  The ``obstack_init``
+  macro always returns 1 (Compatibility notice: Former versions of
+  obstack returned 0 if allocation failed).
 
 Here are two examples of how to allocate the space for an obstack and
 initialize it.  First, an obstack that is a static variable:
@@ -176,35 +176,35 @@ Second, an obstack that is itself dynamically allocated:
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_begin
+.. function:: int obstack_begin (struct obstack *obstack-ptr, size_t chunk_size)
 
-Functionintobstack_begin(structobstack*:samp:`{obstack-ptr}`,size_tchunk_size)Like ``obstack_init``, but specify chunks to be at least
-:samp:`{chunk_size}` bytes in size.
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_specify_allocation
-
-Functionintobstack_specify_allocation(structobstack*:samp:`{obstack-ptr}`,size_tchunk_size,size_talignment,void*(*chunkfun)(size_t),void(*freefun)(void*))Like ``obstack_init``, specifying chunk size, chunk
-alignment, and memory allocation functions.  A :samp:`{chunk_size}` or
-:samp:`{alignment}` of zero results in the default size or alignment
-respectively being used.
+  Like ``obstack_init``, but specify chunks to be at least
+  :samp:`{chunk_size}` bytes in size.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_specify_allocation_with_arg
+.. function:: int obstack_specify_allocation (struct obstack *obstack-ptr, size_t chunk_size, size_t alignment, void *(*chunkfun) (size_t), void (*freefun) (void *))
 
-Functionintobstack_specify_allocation_with_arg(structobstack*:samp:`{obstack-ptr}`,size_tchunk_size,size_talignment,void*(*chunkfun)(void*,size_t),void(*freefun)(void*,void*),void*arg)Like ``obstack_specify_allocation``, but specifying memory
-allocation functions that take an extra first argument, :samp:`{arg}`.
+  Like ``obstack_init``, specifying chunk size, chunk
+  alignment, and memory allocation functions.  A :samp:`{chunk_size}` or
+  :samp:`{alignment}` of zero results in the default size or alignment
+  respectively being used.
+
+..  comment obstack.h
+    comment GNU
+
+.. function:: int obstack_specify_allocation_with_arg (struct obstack *obstack-ptr, size_t chunk_size, size_t alignment, void *(*chunkfun) (void *, size_t), void (*freefun) (void *, void *), void *arg)
+
+  Like ``obstack_specify_allocation``, but specifying memory
+  allocation functions that take an extra first argument, :samp:`{arg}`.
 
 ..  comment obstack.h
     comment GNU
 
 .. index:: obstack_alloc_failed_handler
 
-Variableobstack_alloc_failed_handlerThe value of this variable is a pointer to a function that
+Variable obstack_alloc_failed_handlerThe value of this variable is a pointer to a function that
 ``obstack`` uses when ``obstack_chunk_alloc`` fails to allocate
 memory.  The default action is to print a message and abort.
 You should supply a function that either calls ``exit``
@@ -229,18 +229,18 @@ The most direct way to allocate an object in an obstack is with
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_alloc
+.. function:: void * obstack_alloc (struct obstack *obstack-ptr, size_t size)
 
-Functionvoid *obstack_alloc(structobstack*:samp:`{obstack-ptr}`,size_t:samp:`{size}`)This allocates an uninitialized block of :samp:`{size}` bytes in an obstack
-and returns its address.  Here :samp:`{obstack-ptr}` specifies which obstack
-to allocate the block in; it is the address of the ``struct obstack``
-object which represents the obstack.  Each obstack macro
-requires you to specify an :samp:`{obstack-ptr}` as the first argument.
+  This allocates an uninitialized block of :samp:`{size}` bytes in an obstack
+  and returns its address.  Here :samp:`{obstack-ptr}` specifies which obstack
+  to allocate the block in; it is the address of the ``struct obstack``
+  object which represents the obstack.  Each obstack macro
+  requires you to specify an :samp:`{obstack-ptr}` as the first argument.
 
-This macro calls the obstack's ``obstack_chunk_alloc`` function if
-it needs to allocate a new chunk of memory; it calls
-``obstack_alloc_failed_handler`` if allocation of memory by
-``obstack_chunk_alloc`` failed.
+  This macro calls the obstack's ``obstack_chunk_alloc`` function if
+  it needs to allocate a new chunk of memory; it calls
+  ``obstack_alloc_failed_handler`` if allocation of memory by
+  ``obstack_chunk_alloc`` failed.
 
 For example, here is a function that allocates a copy of a string :samp:`{str}`
 in a specific obstack, which is in the variable ``string_obstack`` :
@@ -263,20 +263,20 @@ To allocate a block with specified contents, use the macro ``obstack_copy``.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_copy
+.. function:: void * obstack_copy (struct obstack *obstack-ptr, void *address, size_t size)
 
-Functionvoid *obstack_copy(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{address}`,size_t:samp:`{size}`)This allocates a block and initializes it by copying :samp:`{size}`
-bytes of data starting at :samp:`{address}`.  It calls
-``obstack_alloc_failed_handler`` if allocation of memory by
-``obstack_chunk_alloc`` failed.
+  This allocates a block and initializes it by copying :samp:`{size}`
+  bytes of data starting at :samp:`{address}`.  It calls
+  ``obstack_alloc_failed_handler`` if allocation of memory by
+  ``obstack_chunk_alloc`` failed.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_copy0
+.. function:: void * obstack_copy0 (struct obstack *obstack-ptr, void *address, size_t size)
 
-Functionvoid *obstack_copy0(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{address}`,size_t:samp:`{size}`)Like ``obstack_copy``, but appends an extra byte containing a null
-character.  This extra byte is not counted in the argument :samp:`{size}`.
+  Like ``obstack_copy``, but appends an extra byte containing a null
+  character.  This extra byte is not counted in the argument :samp:`{size}`.
 
 The ``obstack_copy0`` macro is convenient for copying a sequence
 of characters into an obstack as a null-terminated string.  Here is an
@@ -308,12 +308,12 @@ in the same obstack.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_free
+.. function:: void obstack_free (struct obstack *obstack-ptr, void *object)
 
-Functionvoidobstack_free(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{object}`)If :samp:`{object}` is a null pointer, everything allocated in the obstack
-is freed.  Otherwise, :samp:`{object}` must be the address of an object
-allocated in the obstack.  Then :samp:`{object}` is freed, along with
-everything allocated in :samp:`{obstack}` since :samp:`{object}`.
+  If :samp:`{object}` is a null pointer, everything allocated in the obstack
+  is freed.  Otherwise, :samp:`{object}` must be the address of an object
+  allocated in the obstack.  Then :samp:`{object}` is freed, along with
+  everything allocated in :samp:`{obstack}` since :samp:`{object}`.
 
 Note that if :samp:`{object}` is a null pointer, the result is an
 uninitialized obstack.  To free all memory in an obstack but leave it
@@ -400,66 +400,66 @@ already added to the growing object will become part of the other object.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_blank
+.. function:: void obstack_blank (struct obstack *obstack-ptr, size_t size)
 
-Functionvoidobstack_blank(structobstack*:samp:`{obstack-ptr}`,size_t:samp:`{size}`)The most basic macro for adding to a growing object is
-``obstack_blank``, which adds space without initializing it.
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_grow
-
-Functionvoidobstack_grow(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{data}`,size_t:samp:`{size}`)To add a block of initialized space, use ``obstack_grow``, which is
-the growing-object analogue of ``obstack_copy``.  It adds :samp:`{size}`
-bytes of data to the growing object, copying the contents from
-:samp:`{data}`.
+  The most basic macro for adding to a growing object is
+  ``obstack_blank``, which adds space without initializing it.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_grow0
+.. function:: void obstack_grow (struct obstack *obstack-ptr, void *data, size_t size)
 
-Functionvoidobstack_grow0(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{data}`,size_t:samp:`{size}`)This is the growing-object analogue of ``obstack_copy0``.  It adds
-:samp:`{size}` bytes copied from :samp:`{data}`, followed by an additional null
-character.
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_1grow
-
-Functionvoidobstack_1grow(structobstack*:samp:`{obstack-ptr}`,char:samp:`{c}`)To add one character at a time, use ``obstack_1grow``.
-It adds a single byte containing :samp:`{c}` to the growing object.
+  To add a block of initialized space, use ``obstack_grow``, which is
+  the growing-object analogue of ``obstack_copy``.  It adds :samp:`{size}`
+  bytes of data to the growing object, copying the contents from
+  :samp:`{data}`.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_ptr_grow
+.. function:: void obstack_grow0 (struct obstack *obstack-ptr, void *data, size_t size)
 
-Functionvoidobstack_ptr_grow(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{data}`)Adding the value of a pointer one can use
-``obstack_ptr_grow``.  It adds ``sizeof (void *)`` bytes
-containing the value of :samp:`{data}`.
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_int_grow
-
-Functionvoidobstack_int_grow(structobstack*:samp:`{obstack-ptr}`,int:samp:`{data}`)A single value of type ``int`` can be added by using
-``obstack_int_grow``.  It adds ``sizeof (int)`` bytes to
-the growing object and initializes them with the value of :samp:`{data}`.
+  This is the growing-object analogue of ``obstack_copy0``.  It adds
+  :samp:`{size}` bytes copied from :samp:`{data}`, followed by an additional null
+  character.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_finish
+.. function:: void obstack_1grow (struct obstack *obstack-ptr, char c)
 
-Functionvoid *obstack_finish(structobstack*:samp:`{obstack-ptr}`)When you are finished growing the object, use
-``obstack_finish`` to close it off and return its final address.
+  To add one character at a time, use ``obstack_1grow``.
+  It adds a single byte containing :samp:`{c}` to the growing object.
 
-Once you have finished the object, the obstack is available for ordinary
-allocation or for growing another object.
+..  comment obstack.h
+    comment GNU
+
+.. function:: void obstack_ptr_grow (struct obstack *obstack-ptr, void *data)
+
+  Adding the value of a pointer one can use
+  ``obstack_ptr_grow``.  It adds ``sizeof (void *)`` bytes
+  containing the value of :samp:`{data}`.
+
+..  comment obstack.h
+    comment GNU
+
+.. function:: void obstack_int_grow (struct obstack *obstack-ptr, int data)
+
+  A single value of type ``int`` can be added by using
+  ``obstack_int_grow``.  It adds ``sizeof (int)`` bytes to
+  the growing object and initializes them with the value of :samp:`{data}`.
+
+..  comment obstack.h
+    comment GNU
+
+.. function:: void * obstack_finish (struct obstack *obstack-ptr)
+
+  When you are finished growing the object, use
+  ``obstack_finish`` to close it off and return its final address.
+
+  Once you have finished the object, the obstack is available for ordinary
+  allocation or for growing another object.
 
 When you build an object by growing it, you will probably need to know
 afterward how long it became.  You need not keep track of this as you grow
@@ -469,11 +469,11 @@ with ``obstack_object_size``, before finishing the object.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_object_size
+.. function:: size_t obstack_object_size (struct obstack *obstack-ptr)
 
-Functionsize_tobstack_object_size(structobstack*:samp:`{obstack-ptr}`)This macro returns the current size of the growing object, in bytes.
-Remember to call ``obstack_object_size`` *before* finishing the object.
-After it is finished, ``obstack_object_size`` will return zero.
+  This macro returns the current size of the growing object, in bytes.
+  Remember to call ``obstack_object_size`` *before* finishing the object.
+  After it is finished, ``obstack_object_size`` will return zero.
 
 If you have started growing an object and wish to cancel it, you should
 finish it and then free it, like this:
@@ -510,11 +510,11 @@ in the current chunk.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_room
+.. function:: size_t obstack_room (struct obstack *obstack-ptr)
 
-Functionsize_tobstack_room(structobstack*:samp:`{obstack-ptr}`)This returns the number of bytes that can be added safely to the current
-growing object (or to an object about to be started) in obstack
-:samp:`{obstack}` using the fast growth macros.
+  This returns the number of bytes that can be added safely to the current
+  growing object (or to an object about to be started) in obstack
+  :samp:`{obstack}` using the fast growth macros.
 
 While you know there is room, you can use these fast growth macros
 for adding data to a growing object:
@@ -522,36 +522,36 @@ for adding data to a growing object:
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_1grow_fast
+.. function:: void obstack_1grow_fast (struct obstack *obstack-ptr, char c)
 
-Functionvoidobstack_1grow_fast(structobstack*:samp:`{obstack-ptr}`,char:samp:`{c}`)``obstack_1grow_fast`` adds one byte containing the
-character :samp:`{c}` to the growing object in obstack :samp:`{obstack-ptr}`.
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_ptr_grow_fast
-
-Functionvoidobstack_ptr_grow_fast(structobstack*:samp:`{obstack-ptr}`,void*:samp:`{data}`)``obstack_ptr_grow_fast`` adds ``sizeof (void *)``
-bytes containing the value of :samp:`{data}` to the growing object in
-obstack :samp:`{obstack-ptr}`.
+  ``obstack_1grow_fast`` adds one byte containing the
+  character :samp:`{c}` to the growing object in obstack :samp:`{obstack-ptr}`.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_int_grow_fast
+.. function:: void obstack_ptr_grow_fast (struct obstack *obstack-ptr, void *data)
 
-Functionvoidobstack_int_grow_fast(structobstack*:samp:`{obstack-ptr}`,int:samp:`{data}`)``obstack_int_grow_fast`` adds ``sizeof (int)`` bytes
-containing the value of :samp:`{data}` to the growing object in obstack
-:samp:`{obstack-ptr}`.
+  ``obstack_ptr_grow_fast`` adds ``sizeof (void *)``
+  bytes containing the value of :samp:`{data}` to the growing object in
+  obstack :samp:`{obstack-ptr}`.
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_blank_fast
+.. function:: void obstack_int_grow_fast (struct obstack *obstack-ptr, int data)
 
-Functionvoidobstack_blank_fast(structobstack*:samp:`{obstack-ptr}`,size_t:samp:`{size}`)``obstack_blank_fast`` adds :samp:`{size}` bytes to the
-growing object in obstack :samp:`{obstack-ptr}` without initializing them.
+  ``obstack_int_grow_fast`` adds ``sizeof (int)`` bytes
+  containing the value of :samp:`{data}` to the growing object in obstack
+  :samp:`{obstack-ptr}`.
+
+..  comment obstack.h
+    comment GNU
+
+.. function:: void obstack_blank_fast (struct obstack *obstack-ptr, size_t size)
+
+  ``obstack_blank_fast`` adds :samp:`{size}` bytes to the
+  growing object in obstack :samp:`{obstack-ptr}` without initializing them.
 
 When you check for space using ``obstack_room`` and there is not
 enough room for what you want to add, the fast growth macros
@@ -617,38 +617,38 @@ still growing it.
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_base
+.. function:: void * obstack_base (struct obstack *obstack-ptr)
 
-Functionvoid *obstack_base(structobstack*:samp:`{obstack-ptr}`)This macro returns the tentative address of the beginning of the
-currently growing object in :samp:`{obstack-ptr}`.  If you finish the object
-immediately, it will have that address.  If you make it larger first, it
-may outgrow the current chunk-then its address will change!
+  This macro returns the tentative address of the beginning of the
+  currently growing object in :samp:`{obstack-ptr}`.  If you finish the object
+  immediately, it will have that address.  If you make it larger first, it
+  may outgrow the current chunk-then its address will change!
 
-If no object is growing, this value says where the next object you
-allocate will start (once again assuming it fits in the current
-chunk).
-
-..  comment obstack.h
-    comment GNU
-
-.. index:: obstack_next_free
-
-Functionvoid *obstack_next_free(structobstack*:samp:`{obstack-ptr}`)This macro returns the address of the first free byte in the current
-chunk of obstack :samp:`{obstack-ptr}`.  This is the end of the currently
-growing object.  If no object is growing, ``obstack_next_free``
-returns the same value as ``obstack_base``.
+  If no object is growing, this value says where the next object you
+  allocate will start (once again assuming it fits in the current
+  chunk).
 
 ..  comment obstack.h
     comment GNU
 
-.. index:: obstack_object_size
+.. function:: void * obstack_next_free (struct obstack *obstack-ptr)
 
-Functionsize_tobstack_object_size(structobstack*:samp:`{obstack-ptr}`)This macro returns the size in bytes of the currently growing object.
-This is equivalent to
+  This macro returns the address of the first free byte in the current
+  chunk of obstack :samp:`{obstack-ptr}`.  This is the end of the currently
+  growing object.  If no object is growing, ``obstack_next_free``
+  returns the same value as ``obstack_base``.
 
-.. code-block:: c++
+..  comment obstack.h
+    comment GNU
 
-  ((size_t) (obstack_next_free (obstack-ptr) - obstack_base (obstack-ptr)))
+.. function:: size_t obstack_object_size (struct obstack *obstack-ptr)
+
+  This macro returns the size in bytes of the currently growing object.
+  This is equivalent to
+
+  .. code-block:: c++
+
+    ((size_t) (obstack_next_free (obstack-ptr) - obstack_base (obstack-ptr)))
 
 .. _obstacks-data-alignment:
 
@@ -668,7 +668,7 @@ To access an obstack's alignment boundary, use the macro
 ..  comment obstack.h
     comment GNU
 
-.. function:: size_t obstack_alignment_mask(struct obstack* obstack-ptr)
+.. function:: size_t obstack_alignment_mask (struct obstack *obstack-ptr)
 
   The value is a bit mask; a bit that is 1 indicates that the corresponding
   bit in the address of an object should be 0.  The mask value should be one
@@ -739,7 +739,7 @@ not to waste too much memory in the portion of the last chunk not yet used.
 ..  comment obstack.h
     comment GNU
 
-.. function:: size_t obstack_chunk_size(struct obstack* obstack-ptr)
+.. function:: size_t obstack_chunk_size (struct obstack *obstack-ptr)
 
   This returns the chunk size of the given obstack.
 

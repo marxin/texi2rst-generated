@@ -49,59 +49,59 @@ Representation of condition codes using registers
 
 .. index:: MODE_CC
 
-.. index:: SELECT_CC_MODE
+.. macro:: SELECT_CC_MODE (op, x, y)
 
-MacroSELECT_CC_MODE(:samp:`{op}`,:samp:`{x}`,:samp:`{y}`)On many machines, the condition code may be produced by other instructions
-than compares, for example the branch can use directly the condition
-code set by a subtract instruction.  However, on some machines
-when the condition code is set this way some bits (such as the overflow
-bit) are not set in the same way as a test instruction, so that a different
-branch instruction must be used for some conditional branches.  When
-this happens, use the machine mode of the condition code register to
-record different formats of the condition code register.  Modes can
-also be used to record which compare instruction (e.g. a signed or an
-unsigned comparison) produced the condition codes.
+  On many machines, the condition code may be produced by other instructions
+  than compares, for example the branch can use directly the condition
+  code set by a subtract instruction.  However, on some machines
+  when the condition code is set this way some bits (such as the overflow
+  bit) are not set in the same way as a test instruction, so that a different
+  branch instruction must be used for some conditional branches.  When
+  this happens, use the machine mode of the condition code register to
+  record different formats of the condition code register.  Modes can
+  also be used to record which compare instruction (e.g. a signed or an
+  unsigned comparison) produced the condition codes.
 
-If other modes than ``CCmode`` are required, add them to
-:samp:`{machine}` -modes.def and define ``SELECT_CC_MODE`` to choose
-a mode given an operand of a compare.  This is needed because the modes
-have to be chosen not only during RTL generation but also, for example,
-by instruction combination.  The result of ``SELECT_CC_MODE`` should
-be consistent with the mode used in the patterns; for example to support
-the case of the add on the SPARC discussed above, we have the pattern
+  If other modes than ``CCmode`` are required, add them to
+  :samp:`{machine}` -modes.def and define ``SELECT_CC_MODE`` to choose
+  a mode given an operand of a compare.  This is needed because the modes
+  have to be chosen not only during RTL generation but also, for example,
+  by instruction combination.  The result of ``SELECT_CC_MODE`` should
+  be consistent with the mode used in the patterns; for example to support
+  the case of the add on the SPARC discussed above, we have the pattern
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  (define_insn ""
-    [(set (reg:CCNZ 0)
-          (compare:CCNZ
-            (plus:SI (match_operand:SI 0 "register_operand" "%r")
-                     (match_operand:SI 1 "arith_operand" "rI"))
-            (const_int 0)))]
-    ""
-    "...")
+    (define_insn ""
+      [(set (reg:CCNZ 0)
+            (compare:CCNZ
+              (plus:SI (match_operand:SI 0 "register_operand" "%r")
+                       (match_operand:SI 1 "arith_operand" "rI"))
+              (const_int 0)))]
+      ""
+      "...")
 
-together with a ``SELECT_CC_MODE`` that returns ``CCNZmode``
-for comparisons whose argument is a ``plus`` :
+  together with a ``SELECT_CC_MODE`` that returns ``CCNZmode``
+  for comparisons whose argument is a ``plus`` :
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #define SELECT_CC_MODE(OP,X,Y) \
-    (GET_MODE_CLASS (GET_MODE (X)) == MODE_FLOAT           \
-     ? ((OP == LT || OP == LE || OP == GT || OP == GE)     \
-        ? CCFPEmode : CCFPmode)                            \
-     : ((GET_CODE (X) == PLUS || GET_CODE (X) == MINUS     \
-         || GET_CODE (X) == NEG || GET_CODE (x) == ASHIFT) \
-        ? CCNZmode : CCmode))
+    #define SELECT_CC_MODE(OP,X,Y) \
+      (GET_MODE_CLASS (GET_MODE (X)) == MODE_FLOAT           \
+       ? ((OP == LT || OP == LE || OP == GT || OP == GE)     \
+          ? CCFPEmode : CCFPmode)                            \
+       : ((GET_CODE (X) == PLUS || GET_CODE (X) == MINUS     \
+           || GET_CODE (X) == NEG || GET_CODE (x) == ASHIFT) \
+          ? CCNZmode : CCmode))
 
-Another reason to use modes is to retain information on which operands
-were used by the comparison; see ``REVERSIBLE_CC_MODE`` later in
-this section.
+  Another reason to use modes is to retain information on which operands
+  were used by the comparison; see ``REVERSIBLE_CC_MODE`` later in
+  this section.
 
-You should define this macro if and only if you define extra CC modes
-in :samp:`{machine}` -modes.def.
+  You should define this macro if and only if you define extra CC modes
+  in :samp:`{machine}` -modes.def.
 
-.. function:: void TARGET_CANONICALIZE_COMPARISON(int *code,rtx *op0,rtx *op1,bool op0_preserve_value)
+.. function:: void TARGET_CANONICALIZE_COMPARISON (int *code, rtx *op0, rtx *op1, bool op0_preserve_value)
 
   On some machines not all possible comparisons are defined, but you can
   convert an invalid comparison into a valid one.  For example, the Alpha
@@ -123,40 +123,40 @@ in :samp:`{machine}` -modes.def.
   You need not to implement this hook if it would never change the
   comparison code or operands.
 
-.. index:: REVERSIBLE_CC_MODE
+.. macro:: REVERSIBLE_CC_MODE (mode)
 
-MacroREVERSIBLE_CC_MODE(:samp:`{mode}`)A C expression whose value is one if it is always safe to reverse a
-comparison whose mode is :samp:`{mode}`.  If ``SELECT_CC_MODE``
-can ever return :samp:`{mode}` for a floating-point inequality comparison,
-then ``REVERSIBLE_CC_MODE (mode)`` must be zero.
+  A C expression whose value is one if it is always safe to reverse a
+  comparison whose mode is :samp:`{mode}`.  If ``SELECT_CC_MODE``
+  can ever return :samp:`{mode}` for a floating-point inequality comparison,
+  then ``REVERSIBLE_CC_MODE (mode)`` must be zero.
 
-You need not define this macro if it would always returns zero or if the
-floating-point format is anything other than ``IEEE_FLOAT_FORMAT``.
-For example, here is the definition used on the SPARC, where floating-point
-inequality comparisons are given either ``CCFPEmode`` or ``CCFPmode`` :
+  You need not define this macro if it would always returns zero or if the
+  floating-point format is anything other than ``IEEE_FLOAT_FORMAT``.
+  For example, here is the definition used on the SPARC, where floating-point
+  inequality comparisons are given either ``CCFPEmode`` or ``CCFPmode`` :
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #define REVERSIBLE_CC_MODE(MODE) \
-     ((MODE) != CCFPEmode && (MODE) != CCFPmode)
+    #define REVERSIBLE_CC_MODE(MODE) \
+       ((MODE) != CCFPEmode && (MODE) != CCFPmode)
 
-.. index:: REVERSE_CONDITION
+.. macro:: REVERSE_CONDITION (code, mode)
 
-MacroREVERSE_CONDITION(:samp:`{code}`,:samp:`{mode}`)A C expression whose value is reversed condition code of the :samp:`{code}` for
-comparison done in CC_MODE :samp:`{mode}`.  The macro is used only in case
-``REVERSIBLE_CC_MODE (mode)`` is nonzero.  Define this macro in case
-machine has some non-standard way how to reverse certain conditionals.  For
-instance in case all floating point conditions are non-trapping, compiler may
-freely convert unordered compares to ordered ones.  Then definition may look
-like:
+  A C expression whose value is reversed condition code of the :samp:`{code}` for
+  comparison done in CC_MODE :samp:`{mode}`.  The macro is used only in case
+  ``REVERSIBLE_CC_MODE (mode)`` is nonzero.  Define this macro in case
+  machine has some non-standard way how to reverse certain conditionals.  For
+  instance in case all floating point conditions are non-trapping, compiler may
+  freely convert unordered compares to ordered ones.  Then definition may look
+  like:
 
-.. code-block:: c++
+  .. code-block:: c++
 
-  #define REVERSE_CONDITION(CODE, MODE) \
-     ((MODE) != CCFPmode ? reverse_condition (CODE) \
-      : reverse_condition_maybe_unordered (CODE))
+    #define REVERSE_CONDITION(CODE, MODE) \
+       ((MODE) != CCFPmode ? reverse_condition (CODE) \
+        : reverse_condition_maybe_unordered (CODE))
 
-.. function:: bool TARGET_FIXED_CONDITION_CODE_REGS(unsigned int* p1,unsigned int* p2)
+.. function:: bool TARGET_FIXED_CONDITION_CODE_REGS (unsigned int *p1, unsigned int *p2)
 
   On targets which use a hard
   register rather than a pseudo-register to hold condition codes, the
@@ -171,7 +171,7 @@ like:
 
   The default version of this hook returns false.
 
-.. function:: machine_mode TARGET_CC_MODES_COMPATIBLE(machine_mode m1,machine_mode m2)
+.. function:: machine_mode TARGET_CC_MODES_COMPATIBLE (machine_mode m1, machine_mode m2)
 
   On targets which use multiple condition code modes in class
   ``MODE_CC``, it is sometimes the case that a comparison can be
@@ -184,9 +184,9 @@ like:
   same.  If they are, it returns that mode.  If they are different, it
   returns ``VOIDmode``.
 
-.. index:: TARGET_FLAGS_REGNUM
+.. c:var:: unsigned int TARGET_FLAGS_REGNUM
 
-Target Hookunsigned intTARGET_FLAGS_REGNUMIf the target has a dedicated flags register, and it needs to use the
-post-reload comparison elimination pass, or the delay slot filler pass,
-then this value should be set appropriately.
+  If the target has a dedicated flags register, and it needs to use the
+  post-reload comparison elimination pass, or the delay slot filler pass,
+  then this value should be set appropriately.
 

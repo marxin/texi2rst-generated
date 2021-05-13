@@ -35,14 +35,14 @@ built-in functions as:
   #include <stdint.h>
   intptr_t buf[5];
 
-.. function:: int __builtin_setjmp(intptr_t *buf)
+.. function:: int __builtin_setjmp (intptr_t *buf)
 
   This function saves the current stack context in :samp:`{buf}`.  
   ``__builtin_setjmp`` returns 0 when returning directly,
   and 1 when returning from ``__builtin_longjmp`` using the same
   :samp:`{buf}`.
 
-.. function:: void __builtin_longjmp(intptr_t *buf,int val)
+.. function:: void __builtin_longjmp (intptr_t *buf, int val)
 
   This function restores the stack context in :samp:`{buf}`, 
   saved by a previous call to ``__builtin_setjmp``.  After

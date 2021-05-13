@@ -21,11 +21,11 @@ attributes may be accessed with the following macros.  All attributes
 are stored in this way, and many also cause other changes to the
 declaration or type or to other internal compiler data structures.
 
-.. function:: tree DECL_ATTRIBUTES(tree decl)
+.. function:: tree DECL_ATTRIBUTES (tree decl)
 
   This macro returns the attributes on the declaration :samp:`{decl}`.
 
-.. function:: tree TYPE_ATTRIBUTES(tree type)
+.. function:: tree TYPE_ATTRIBUTES (tree type)
 
   This macro returns the attributes on the type :samp:`{type}`.
 

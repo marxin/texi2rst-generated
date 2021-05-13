@@ -79,8 +79,8 @@ Introduction
 This manual documents how to use the GNU compilers,
 as well as their features and incompatibilities, and how to report
 bugs.  It corresponds to the compilers
-$$VERSION_PACKAGE$$
-version $$version-GCC$$.
+|package_version|
+version |gcc_version|.
 The internals of the GNU compilers, including how to port them to new
 targets and some information about how to write front ends for new
 languages, are documented in a separate manual.  See :ref:`Introduction <top>`.

@@ -6,7 +6,7 @@ Getting the Return or Frame Address of a Function
 These functions may be used to get information about the callers of a
 function.
 
-.. function:: void * __builtin_return_address(unsigned intlevel)
+.. function:: void * __builtin_return_address (unsigned int level)
 
   This function returns the return address of the current function, or of
   one of its callers.  The :samp:`{level}` argument is number of frames to
@@ -49,7 +49,7 @@ function.
   such an address may be used with ``dladdr`` or other interfaces that work
   with code addresses.
 
-.. function:: void * __builtin_extract_return_addr(void *addr)
+.. function:: void * __builtin_extract_return_addr (void *addr)
 
   The address as returned by ``__builtin_return_address`` may have to be fed
   through this function to get the actual encoded address.  For example, on the
@@ -59,11 +59,11 @@ function.
 
   If no fixup is needed, this function simply passes through :samp:`{addr}`.
 
-.. function:: void * __builtin_frob_return_addr(void *addr)
+.. function:: void * __builtin_frob_return_addr (void *addr)
 
   This function does the reverse of ``__builtin_extract_return_addr``.
 
-.. function:: void * __builtin_frame_address(unsigned intlevel)
+.. function:: void * __builtin_frame_address (unsigned int level)
 
   This function is similar to ``__builtin_return_address``, but it
   returns the address of the function frame rather than the return address

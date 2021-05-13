@@ -6,14 +6,14 @@ Miscellaneous runtime library routines
 Cache control functions
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. function:: void __clear_cache(char *beg,char *end)
+.. function:: void __clear_cache (char *beg, char *end)
 
   This function clears the instruction cache between :samp:`{beg}` and :samp:`{end}`.
 
 Split stack functions and variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. function:: void * __splitstack_find(void *segment_arg,void *sp,size_t len,void **next_segment,void **next_sp,void **initial_sp)
+.. function:: void * __splitstack_find (void *segment_arg, void *sp, size_t len, void **next_segment, void **next_sp, void **initial_sp)
 
   When using :option:`-fsplit-stack`, this call may be used to iterate
   over the stack segments.  It may be called like this:
@@ -47,13 +47,13 @@ Split stack functions and variables
 
 .. index:: __morestack_segments
 
-Variable__morestack_segments
+Variable __morestack_segments
 .. index:: __morestack_current_segment
 
-Variable__morestack_current_segment
+Variable __morestack_current_segment
 .. index:: __morestack_initial_sp
 
-Variable__morestack_initial_spInternal variables used by the :option:`-fsplit-stack` implementation.
+Variable __morestack_initial_spInternal variables used by the :option:`-fsplit-stack` implementation.
 
 .. Copyright (C) 2002-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.

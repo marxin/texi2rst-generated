@@ -22,56 +22,56 @@ However, ``va_start`` should not use this argument.  The way to find
 the end of the named arguments is with the built-in functions described
 below.
 
-.. index:: __builtin_saveregs
+.. macro:: __builtin_saveregs ()
 
-Macro__builtin_saveregs()Use this built-in function to save the argument registers in memory so
-that the varargs mechanism can access them.  Both ISO and traditional
-versions of ``va_start`` must use ``__builtin_saveregs``, unless
-you use ``TARGET_SETUP_INCOMING_VARARGS`` (see below) instead.
+  Use this built-in function to save the argument registers in memory so
+  that the varargs mechanism can access them.  Both ISO and traditional
+  versions of ``va_start`` must use ``__builtin_saveregs``, unless
+  you use ``TARGET_SETUP_INCOMING_VARARGS`` (see below) instead.
 
-On some machines, ``__builtin_saveregs`` is open-coded under the
-control of the target hook ``TARGET_EXPAND_BUILTIN_SAVEREGS``.  On
-other machines, it calls a routine written in assembler language,
-found in libgcc2.c.
+  On some machines, ``__builtin_saveregs`` is open-coded under the
+  control of the target hook ``TARGET_EXPAND_BUILTIN_SAVEREGS``.  On
+  other machines, it calls a routine written in assembler language,
+  found in libgcc2.c.
 
-Code generated for the call to ``__builtin_saveregs`` appears at the
-beginning of the function, as opposed to where the call to
-``__builtin_saveregs`` is written, regardless of what the code is.
-This is because the registers must be saved before the function starts
-to use them for its own purposes.
+  Code generated for the call to ``__builtin_saveregs`` appears at the
+  beginning of the function, as opposed to where the call to
+  ``__builtin_saveregs`` is written, regardless of what the code is.
+  This is because the registers must be saved before the function starts
+  to use them for its own purposes.
 
-.. i rewrote the first sentence above to fix an overfull hbox. -mew
+  .. i rewrote the first sentence above to fix an overfull hbox. -mew
 
-.. 10feb93
+  .. 10feb93
 
-.. index:: __builtin_next_arg
+.. macro:: __builtin_next_arg (lastarg)
 
-Macro__builtin_next_arg(:samp:`{lastarg}`)This builtin returns the address of the first anonymous stack
-argument, as type ``void *``.  If ``ARGS_GROW_DOWNWARD``, it
-returns the address of the location above the first anonymous stack
-argument.  Use it in ``va_start`` to initialize the pointer for
-fetching arguments from the stack.  Also use it in ``va_start`` to
-verify that the second parameter :samp:`{lastarg}` is the last named argument
-of the current function.
+  This builtin returns the address of the first anonymous stack
+  argument, as type ``void *``.  If ``ARGS_GROW_DOWNWARD``, it
+  returns the address of the location above the first anonymous stack
+  argument.  Use it in ``va_start`` to initialize the pointer for
+  fetching arguments from the stack.  Also use it in ``va_start`` to
+  verify that the second parameter :samp:`{lastarg}` is the last named argument
+  of the current function.
 
-.. index:: __builtin_classify_type
+.. macro:: __builtin_classify_type (object)
 
-Macro__builtin_classify_type(:samp:`{object}`)Since each machine has its own conventions for which data types are
-passed in which kind of register, your implementation of ``va_arg``
-has to embody these conventions.  The easiest way to categorize the
-specified data type is to use ``__builtin_classify_type`` together
-with ``sizeof`` and ``__alignof__``.
+  Since each machine has its own conventions for which data types are
+  passed in which kind of register, your implementation of ``va_arg``
+  has to embody these conventions.  The easiest way to categorize the
+  specified data type is to use ``__builtin_classify_type`` together
+  with ``sizeof`` and ``__alignof__``.
 
-``__builtin_classify_type`` ignores the value of :samp:`{object}`,
-considering only its data type.  It returns an integer describing what
-kind of type that is-integer, floating, pointer, structure, and so on.
+  ``__builtin_classify_type`` ignores the value of :samp:`{object}`,
+  considering only its data type.  It returns an integer describing what
+  kind of type that is-integer, floating, pointer, structure, and so on.
 
-The file typeclass.h defines an enumeration that you can use to
-interpret the values of ``__builtin_classify_type``.
+  The file typeclass.h defines an enumeration that you can use to
+  interpret the values of ``__builtin_classify_type``.
 
 These machine description macros help implement varargs:
 
-.. function:: rtx TARGET_EXPAND_BUILTIN_SAVEREGS(void )
+.. function:: rtx TARGET_EXPAND_BUILTIN_SAVEREGS (void)
 
   If defined, this hook produces the machine-specific code for a call to
   ``__builtin_saveregs``.  This code will be moved to the very
@@ -79,7 +79,7 @@ These machine description macros help implement varargs:
   return value of this function should be an RTX that contains the value
   to use as the return of ``__builtin_saveregs``.
 
-.. function:: void TARGET_SETUP_INCOMING_VARARGS(cumulative_args_t args_so_far,const function_arg_info&arg,int *pretend_args_size,int second_time)
+.. function:: void TARGET_SETUP_INCOMING_VARARGS (cumulative_args_t args_so_far, const function_arg_info &arg, int *pretend_args_size, int second_time)
 
   This target hook offers an alternative to using
   ``__builtin_saveregs`` and defining the hook
@@ -113,7 +113,7 @@ These machine description macros help implement varargs:
   end of the source file.  The hook ``TARGET_SETUP_INCOMING_VARARGS`` should
   not generate any instructions in this case.
 
-.. function:: bool TARGET_STRICT_ARGUMENT_NAMING(cumulative_args_t ca)
+.. function:: bool TARGET_STRICT_ARGUMENT_NAMING (cumulative_args_t ca)
 
   Define this hook to return ``true`` if the location where a function
   argument is passed depends on whether or not it is a named argument.
@@ -128,7 +128,7 @@ These machine description macros help implement varargs:
 
   You need not define this hook if it always returns ``false``.
 
-.. function:: void TARGET_CALL_ARGS(rtx ,tree)
+.. function:: void TARGET_CALL_ARGS (rtx, tree)
 
   While generating RTL for a function call, this target hook is invoked once
   for each argument passed to the function, either a register returned by
@@ -143,7 +143,7 @@ These machine description macros help implement varargs:
   passed instead of an argument register.
   Most ports do not need to implement anything for this hook.
 
-.. function:: void TARGET_END_CALL_ARGS(void )
+.. function:: void TARGET_END_CALL_ARGS (void)
 
   This target hook is invoked while generating RTL for a function call,
   just after the point where the return reg is copied into a pseudo.  It
@@ -151,7 +151,7 @@ These machine description macros help implement varargs:
   emitted call are now no longer in use.
   Most ports do not need to implement anything for this hook.
 
-.. function:: bool TARGET_PRETEND_OUTGOING_VARARGS_NAMED(cumulative_args_t ca)
+.. function:: bool TARGET_PRETEND_OUTGOING_VARARGS_NAMED (cumulative_args_t ca)
 
   If you need to conditionally change ABIs so that one works with
   ``TARGET_SETUP_INCOMING_VARARGS``, but the other works like neither
@@ -160,7 +160,7 @@ These machine description macros help implement varargs:
   ``TARGET_SETUP_INCOMING_VARARGS`` is used, ``false`` otherwise.
   Otherwise, you should not define this hook.
 
-.. function:: rtx TARGET_LOAD_BOUNDS_FOR_ARG(rtx slot,rtx arg,rtx slot_no)
+.. function:: rtx TARGET_LOAD_BOUNDS_FOR_ARG (rtx slot, rtx arg, rtx slot_no)
 
   This hook is used by expand pass to emit insn to load bounds of
   :samp:`{arg}` passed in :samp:`{slot}`.  Expand pass uses this hook in case
@@ -170,7 +170,7 @@ These machine description macros help implement varargs:
   constant holding number of the target dependent special slot which
   should be used to obtain bounds.  Hook returns RTX holding loaded bounds.
 
-.. function:: void TARGET_STORE_BOUNDS_FOR_ARG(rtx arg,rtx slot,rtx bounds,rtx slot_no)
+.. function:: void TARGET_STORE_BOUNDS_FOR_ARG (rtx arg, rtx slot, rtx bounds, rtx slot_no)
 
   This hook is used by expand pass to emit insns to store :samp:`{bounds}` of
   :samp:`{arg}` passed in :samp:`{slot}`.  Expand pass uses this hook in case
@@ -180,13 +180,13 @@ These machine description macros help implement varargs:
   constant holding number of the target dependent special slot which
   should be used to store :samp:`{bounds}`.
 
-.. function:: rtx TARGET_LOAD_RETURNED_BOUNDS(rtx slot)
+.. function:: rtx TARGET_LOAD_RETURNED_BOUNDS (rtx slot)
 
   This hook is used by expand pass to emit insn to load bounds
   returned by function call in :samp:`{slot}`.  Hook returns RTX holding
   loaded bounds.
 
-.. function:: void TARGET_STORE_RETURNED_BOUNDS(rtx slot,rtx bounds)
+.. function:: void TARGET_STORE_RETURNED_BOUNDS (rtx slot, rtx bounds)
 
   This hook is used by expand pass to emit insn to store :samp:`{bounds}`
   returned by function call into :samp:`{slot}`.

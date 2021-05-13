@@ -45,24 +45,24 @@ Define the following hook if your backend either implements ABI-specified
 descriptor support, or can use GCC's generic descriptor implementation
 for nested functions.
 
-.. index:: TARGET_CUSTOM_FUNCTION_DESCRIPTORS
+.. c:var:: int TARGET_CUSTOM_FUNCTION_DESCRIPTORS
 
-Target HookintTARGET_CUSTOM_FUNCTION_DESCRIPTORSIf the target can use GCC's generic descriptor mechanism for nested
-functions, define this hook to a power of 2 representing an unused bit
-in function pointers which can be used to differentiate descriptors at
-run time.  This value gives the number of bytes by which descriptor
-pointers are misaligned compared to function pointers.  For example, on
-targets that require functions to be aligned to a 4-byte boundary, a
-value of either 1 or 2 is appropriate unless the architecture already
-reserves the bit for another purpose, such as on ARM.
+  If the target can use GCC's generic descriptor mechanism for nested
+  functions, define this hook to a power of 2 representing an unused bit
+  in function pointers which can be used to differentiate descriptors at
+  run time.  This value gives the number of bytes by which descriptor
+  pointers are misaligned compared to function pointers.  For example, on
+  targets that require functions to be aligned to a 4-byte boundary, a
+  value of either 1 or 2 is appropriate unless the architecture already
+  reserves the bit for another purpose, such as on ARM.
 
-Define this hook to 0 if the target implements ABI support for
-function descriptors in its standard calling sequence, like for example
-HPPA or IA-64.
+  Define this hook to 0 if the target implements ABI support for
+  function descriptors in its standard calling sequence, like for example
+  HPPA or IA-64.
 
-Using descriptors for nested functions
-eliminates the need for trampolines that reside on the stack and require
-it to be made executable.
+  Using descriptors for nested functions
+  eliminates the need for trampolines that reside on the stack and require
+  it to be made executable.
 
 The following macros tell GCC how to generate code to allocate and
 initialize an executable trampoline.  You can also use this interface
@@ -86,7 +86,7 @@ proper offset from the start of the trampoline.  On a RISC machine, it
 may be necessary to take out pieces of the address and store them
 separately.
 
-.. function:: void TARGET_ASM_TRAMPOLINE_TEMPLATE(FILE *f)
+.. function:: void TARGET_ASM_TRAMPOLINE_TEMPLATE (FILE *f)
 
   This hook is called by ``assemble_trampoline_template`` to output,
   on the stream :samp:`{f}`, assembler code for a block of data that contains
@@ -98,23 +98,23 @@ separately.
   code to copy the trampoline into place would be larger than the code
   to generate it on the spot.
 
-.. index:: TRAMPOLINE_SECTION
+.. macro:: TRAMPOLINE_SECTION
 
-MacroTRAMPOLINE_SECTIONReturn the section into which the trampoline template is to be placed
-(see :ref:`sections`).  The default value is ``readonly_data_section``.
+  Return the section into which the trampoline template is to be placed
+  (see :ref:`sections`).  The default value is ``readonly_data_section``.
 
-.. index:: TRAMPOLINE_SIZE
+.. macro:: TRAMPOLINE_SIZE
 
-MacroTRAMPOLINE_SIZEA C expression for the size in bytes of the trampoline, as an integer.
+  A C expression for the size in bytes of the trampoline, as an integer.
 
-.. index:: TRAMPOLINE_ALIGNMENT
+.. macro:: TRAMPOLINE_ALIGNMENT
 
-MacroTRAMPOLINE_ALIGNMENTAlignment required for trampolines, in bits.
+  Alignment required for trampolines, in bits.
 
-If you don't define this macro, the value of ``FUNCTION_ALIGNMENT``
-is used for aligning trampolines.
+  If you don't define this macro, the value of ``FUNCTION_ALIGNMENT``
+  is used for aligning trampolines.
 
-.. function:: void TARGET_TRAMPOLINE_INIT(rtx m_tramp,tree fndecl,rtx static_chain)
+.. function:: void TARGET_TRAMPOLINE_INIT (rtx m_tramp, tree fndecl, rtx static_chain)
 
   This hook is called to initialize a trampoline.
   :samp:`{m_tramp}` is an RTX for the memory block for the trampoline; :samp:`{fndecl}`
@@ -134,7 +134,7 @@ is used for aligning trampolines.
   enabling stack execution, these actions should be performed after
   initializing the trampoline proper.
 
-.. function:: void TARGET_EMIT_CALL_BUILTIN___CLEAR_CACHE(rtx begin,rtx end)
+.. function:: void TARGET_EMIT_CALL_BUILTIN___CLEAR_CACHE (rtx begin, rtx end)
 
   On targets that do not define a ``clear_cache`` insn expander,
   but that define the ``CLEAR_CACHE_INSN`` macro,
@@ -146,7 +146,7 @@ is used for aligning trampolines.
   definitions may call alternate functions, with alternate calling
   conventions, or emit alternate RTX to perform the job.
 
-.. function:: rtx TARGET_TRAMPOLINE_ADJUST_ADDRESS(rtx addr)
+.. function:: rtx TARGET_TRAMPOLINE_ADJUST_ADDRESS (rtx addr)
 
   This hook should perform any machine-specific adjustment in
   the address of the trampoline.  Its argument contains the address of the
@@ -170,12 +170,12 @@ latter makes initialization faster.
 To clear the instruction cache when a trampoline is initialized, define
 the following macro.
 
-.. index:: CLEAR_INSN_CACHE
+.. macro:: CLEAR_INSN_CACHE (beg, end)
 
-MacroCLEAR_INSN_CACHE(:samp:`{beg}`,:samp:`{end}`)If defined, expands to a C expression clearing the *instruction
-cache* in the specified interval.  The definition of this macro would
-typically be a series of ``asm`` statements.  Both :samp:`{beg}` and
-:samp:`{end}` are pointer expressions.
+  If defined, expands to a C expression clearing the *instruction
+  cache* in the specified interval.  The definition of this macro would
+  typically be a series of ``asm`` statements.  Both :samp:`{beg}` and
+  :samp:`{end}` are pointer expressions.
 
 To use a standard subroutine, define the following macro.  In addition,
 you must make sure that the instructions in a trampoline fill an entire
@@ -183,17 +183,17 @@ cache line with identical instructions, or else ensure that the
 beginning of the trampoline code is always aligned at the same point in
 its cache line.  Look in m68k.h as a guide.
 
-.. index:: TRANSFER_FROM_TRAMPOLINE
+.. macro:: TRANSFER_FROM_TRAMPOLINE
 
-MacroTRANSFER_FROM_TRAMPOLINEDefine this macro if trampolines need a special subroutine to do their
-work.  The macro should expand to a series of ``asm`` statements
-which will be compiled with GCC.  They go in a library function named
-``__transfer_from_trampoline``.
+  Define this macro if trampolines need a special subroutine to do their
+  work.  The macro should expand to a series of ``asm`` statements
+  which will be compiled with GCC.  They go in a library function named
+  ``__transfer_from_trampoline``.
 
-If you need to avoid executing the ordinary prologue code of a compiled
-C function when you jump to the subroutine, you can do so by placing a
-special label of your own in the assembler code.  Use one ``asm``
-statement to generate an assembler label, and another to make the label
-global.  Then trampolines can use that label to jump directly to your
-special assembler code.
+  If you need to avoid executing the ordinary prologue code of a compiled
+  C function when you jump to the subroutine, you can do so by placing a
+  special label of your own in the assembler code.  Use one ``asm``
+  statement to generate an assembler label, and another to make the label
+  global.  Then trampolines can use that label to jump directly to your
+  special assembler code.
 

@@ -66,8 +66,8 @@ Introduction
 This manual documents the internals of the GNU compilers, including
 how to port them to new targets and some information about how to
 write front ends for new languages.  It corresponds to the compilers
-$$VERSION_PACKAGE$$
-version $$version-GCC$$.  The use of the GNU compilers is documented in a
+|package_version|
+version |gcc_version|.  The use of the GNU compilers is documented in a
 separate manual.  See :ref:`Introduction <top>`.
 
 This manual is mainly a reference manual rather than a tutorial.  It

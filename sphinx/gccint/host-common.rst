@@ -12,12 +12,12 @@ and are too difficult for autoconf to detect.  They get implemented using
 hook functions in the file specified by the :samp:`{host_hook_obj}`
 variable in config.gcc.
 
-.. function:: void HOST_HOOKS_EXTRA_SIGNALS(void )
+.. function:: void HOST_HOOKS_EXTRA_SIGNALS (void)
 
   This host hook is used to set up handling for extra signals.  The most
   common thing to do in this hook is to detect stack overflow.
 
-.. function:: void * HOST_HOOKS_GT_PCH_GET_ADDRESS(size_t size,int fd)
+.. function:: void * HOST_HOOKS_GT_PCH_GET_ADDRESS (size_t   size, int fd)
 
   This host hook returns the address of some space that is likely to be
   free in some subsequent invocation of the compiler.  We intend to load
@@ -26,7 +26,7 @@ variable in config.gcc.
   ``mmap``, :samp:`{fd}` is an open file descriptor that can be used for
   probing.
 
-.. function:: int HOST_HOOKS_GT_PCH_USE_ADDRESS(void *address,size_t size,int fd,size_t offset)
+.. function:: int HOST_HOOKS_GT_PCH_USE_ADDRESS (void * address,   size_t size, int fd, size_t offset)
 
   This host hook is called when a PCH file is about to be loaded.
   We want to load :samp:`{size}` bytes from :samp:`{fd}` at :samp:`{offset}`
@@ -46,7 +46,7 @@ variable in config.gcc.
   indicate an out-of-date PCH file (built by some other GCC executable),
   and such a PCH file won't work.
 
-.. function:: size_t HOST_HOOKS_GT_PCH_ALLOC_GRANULARITY(void ); 
+.. function:: size_t HOST_HOOKS_GT_PCH_ALLOC_GRANULARITY (void);
 
   This host hook returns the alignment required for allocating virtual
   memory.  Usually this is the same as getpagesize, but on some hosts the

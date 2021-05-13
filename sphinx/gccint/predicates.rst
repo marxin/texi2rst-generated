@@ -86,19 +86,19 @@ only constant, or :dfn:`immediate`, operands.
 
 .. index:: immediate_operand
 
-Functionimmediate_operandThis predicate allows any sort of constant that fits in :samp:`{mode}`.
+Function immediate_operandThis predicate allows any sort of constant that fits in :samp:`{mode}`.
 It is an appropriate choice for instructions that take operands that
 must be constant.
 
 .. index:: const_int_operand
 
-Functionconst_int_operandThis predicate allows any ``CONST_INT`` expression that fits in
+Function const_int_operandThis predicate allows any ``CONST_INT`` expression that fits in
 :samp:`{mode}`.  It is an appropriate choice for an immediate operand that
 does not allow a symbol or label.
 
 .. index:: const_double_operand
 
-Functionconst_double_operandThis predicate accepts any ``CONST_DOUBLE`` expression that has
+Function const_double_operandThis predicate accepts any ``CONST_DOUBLE`` expression that has
 exactly :samp:`{mode}`.  If :samp:`{mode}` is ``VOIDmode``, it will also
 accept ``CONST_INT``.  It is intended for immediate floating point
 constants.
@@ -108,13 +108,13 @@ register.
 
 .. index:: register_operand
 
-Functionregister_operandThis predicate allows any ``REG`` or ``SUBREG`` expression that
+Function register_operandThis predicate allows any ``REG`` or ``SUBREG`` expression that
 is valid for :samp:`{mode}`.  It is often suitable for arithmetic
 instruction operands on a RISC machine.
 
 .. index:: pmode_register_operand
 
-Functionpmode_register_operandThis is a slight variant on ``register_operand`` which works around
+Function pmode_register_operandThis is a slight variant on ``register_operand`` which works around
 a limitation in the machine-description reader.
 
 .. code-block:: c++
@@ -134,7 +134,7 @@ options.  See :ref:`misc`.
 
 .. index:: scratch_operand
 
-Functionscratch_operandThis predicate allows hard registers and ``SCRATCH`` expressions,
+Function scratch_operandThis predicate allows hard registers and ``SCRATCH`` expressions,
 but not pseudo-registers.  It is used internally by ``match_scratch`` ;
 it should not be used directly.
 
@@ -142,13 +142,13 @@ The third category of predicates allow only some kind of memory reference.
 
 .. index:: memory_operand
 
-Functionmemory_operandThis predicate allows any valid reference to a quantity of mode
+Function memory_operandThis predicate allows any valid reference to a quantity of mode
 :samp:`{mode}` in memory, as determined by the weak form of
 ``GO_IF_LEGITIMATE_ADDRESS`` (see :ref:`addressing-modes`).
 
 .. index:: address_operand
 
-Functionaddress_operandThis predicate is a little unusual; it allows any operand that is a
+Function address_operandThis predicate is a little unusual; it allows any operand that is a
 valid expression for the *address* of a quantity of mode
 :samp:`{mode}`, again determined by the weak form of
 ``GO_IF_LEGITIMATE_ADDRESS``.  To first order, if
@@ -159,7 +159,7 @@ the mode :samp:`{mode}`.
 
 .. index:: indirect_operand
 
-Functionindirect_operandThis is a stricter form of ``memory_operand`` which allows only
+Function indirect_operandThis is a stricter form of ``memory_operand`` which allows only
 memory references with a ``general_operand`` as the address
 expression.  New uses of this predicate are discouraged, because
 ``general_operand`` is very permissive, so it's hard to tell what
@@ -170,7 +170,7 @@ hardware's requirements explicitly.
 
 .. index:: push_operand
 
-Functionpush_operandThis predicate allows a memory reference suitable for pushing a value
+Function push_operandThis predicate allows a memory reference suitable for pushing a value
 onto the stack.  This will be a ``MEM`` which refers to
 ``stack_pointer_rtx``, with a side effect in its address expression
 (see :ref:`incdec`); which one is determined by the
@@ -178,7 +178,7 @@ onto the stack.  This will be a ``MEM`` which refers to
 
 .. index:: pop_operand
 
-Functionpop_operandThis predicate allows a memory reference suitable for popping a value
+Function pop_operandThis predicate allows a memory reference suitable for popping a value
 off the stack.  Again, this will be a ``MEM`` referring to
 ``stack_pointer_rtx``, with a side effect in its address
 expression.  However, this time ``STACK_POP_CODE`` is expected.
@@ -188,28 +188,28 @@ operands.
 
 .. index:: nonmemory_operand
 
-Functionnonmemory_operandThis predicate allows any immediate or register operand valid for :samp:`{mode}`.
+Function nonmemory_operandThis predicate allows any immediate or register operand valid for :samp:`{mode}`.
 
 .. index:: nonimmediate_operand
 
-Functionnonimmediate_operandThis predicate allows any register or memory operand valid for :samp:`{mode}`.
+Function nonimmediate_operandThis predicate allows any register or memory operand valid for :samp:`{mode}`.
 
 .. index:: general_operand
 
-Functiongeneral_operandThis predicate allows any immediate, register, or memory operand
+Function general_operandThis predicate allows any immediate, register, or memory operand
 valid for :samp:`{mode}`.
 
 Finally, there are two generic operator predicates.
 
 .. index:: comparison_operator
 
-Functioncomparison_operatorThis predicate matches any expression which performs an arithmetic
+Function comparison_operatorThis predicate matches any expression which performs an arithmetic
 comparison in :samp:`{mode}` ; that is, ``COMPARISON_P`` is true for the
 expression code.
 
 .. index:: ordered_comparison_operator
 
-Functionordered_comparison_operatorThis predicate matches any expression which performs an arithmetic
+Function ordered_comparison_operatorThis predicate matches any expression which performs an arithmetic
 comparison in :samp:`{mode}` and whose expression code is valid for integer
 modes; that is, the expression code will be one of ``eq``, ``ne``,
 ``lt``, ``ltu``, ``le``, ``leu``, ``gt``, ``gtu``,

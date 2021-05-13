@@ -12,29 +12,29 @@ Describing Relative Costs of Operations
 These macros let you describe the relative speed of various operations
 on the target machine.
 
-.. index:: REGISTER_MOVE_COST
+.. macro:: REGISTER_MOVE_COST (mode, from, to)
 
-MacroREGISTER_MOVE_COST(:samp:`{mode}`,:samp:`{from}`,:samp:`{to}`)A C expression for the cost of moving data of mode :samp:`{mode}` from a
-register in class :samp:`{from}` to one in class :samp:`{to}`.  The classes are
-expressed using the enumeration values such as ``GENERAL_REGS``.  A
-value of 2 is the default; other values are interpreted relative to
-that.
+  A C expression for the cost of moving data of mode :samp:`{mode}` from a
+  register in class :samp:`{from}` to one in class :samp:`{to}`.  The classes are
+  expressed using the enumeration values such as ``GENERAL_REGS``.  A
+  value of 2 is the default; other values are interpreted relative to
+  that.
 
-It is not required that the cost always equal 2 when :samp:`{from}` is the
-same as :samp:`{to}` ; on some machines it is expensive to move between
-registers if they are not general registers.
+  It is not required that the cost always equal 2 when :samp:`{from}` is the
+  same as :samp:`{to}` ; on some machines it is expensive to move between
+  registers if they are not general registers.
 
-If reload sees an insn consisting of a single ``set`` between two
-hard registers, and if ``REGISTER_MOVE_COST`` applied to their
-classes returns a value of 2, reload does not check to ensure that the
-constraints of the insn are met.  Setting a cost of other than 2 will
-allow reload to verify that the constraints are met.  You should do this
-if the :samp:`mov{m}` pattern's constraints do not allow such copying.
+  If reload sees an insn consisting of a single ``set`` between two
+  hard registers, and if ``REGISTER_MOVE_COST`` applied to their
+  classes returns a value of 2, reload does not check to ensure that the
+  constraints of the insn are met.  Setting a cost of other than 2 will
+  allow reload to verify that the constraints are met.  You should do this
+  if the :samp:`mov{m}` pattern's constraints do not allow such copying.
 
-These macros are obsolete, new ports should use the target hook
-``TARGET_REGISTER_MOVE_COST`` instead.
+  These macros are obsolete, new ports should use the target hook
+  ``TARGET_REGISTER_MOVE_COST`` instead.
 
-.. function:: int TARGET_REGISTER_MOVE_COST(machine_mode mode,reg_class_t from,reg_class_t to)
+.. function:: int TARGET_REGISTER_MOVE_COST (machine_mode mode, reg_class_t from, reg_class_t to)
 
   This target hook should return the cost of moving data of mode :samp:`{mode}`
   from a register in class :samp:`{from}` to one in class :samp:`{to}`.  The classes
@@ -55,34 +55,34 @@ These macros are obsolete, new ports should use the target hook
 
   The default version of this function returns 2.
 
-.. index:: MEMORY_MOVE_COST
+.. macro:: MEMORY_MOVE_COST (mode, class, in)
 
-MacroMEMORY_MOVE_COST(:samp:`{mode}`,:samp:`{class}`,:samp:`{in}`)A C expression for the cost of moving data of mode :samp:`{mode}` between a
-register of class :samp:`{class}` and memory; :samp:`{in}` is zero if the value
-is to be written to memory, nonzero if it is to be read in.  This cost
-is relative to those in ``REGISTER_MOVE_COST``.  If moving between
-registers and memory is more expensive than between two registers, you
-should define this macro to express the relative cost.
+  A C expression for the cost of moving data of mode :samp:`{mode}` between a
+  register of class :samp:`{class}` and memory; :samp:`{in}` is zero if the value
+  is to be written to memory, nonzero if it is to be read in.  This cost
+  is relative to those in ``REGISTER_MOVE_COST``.  If moving between
+  registers and memory is more expensive than between two registers, you
+  should define this macro to express the relative cost.
 
-If you do not define this macro, GCC uses a default cost of 4 plus
-the cost of copying via a secondary reload register, if one is
-needed.  If your machine requires a secondary reload register to copy
-between memory and a register of :samp:`{class}` but the reload mechanism is
-more complex than copying via an intermediate, define this macro to
-reflect the actual cost of the move.
+  If you do not define this macro, GCC uses a default cost of 4 plus
+  the cost of copying via a secondary reload register, if one is
+  needed.  If your machine requires a secondary reload register to copy
+  between memory and a register of :samp:`{class}` but the reload mechanism is
+  more complex than copying via an intermediate, define this macro to
+  reflect the actual cost of the move.
 
-GCC defines the function ``memory_move_secondary_cost`` if
-secondary reloads are needed.  It computes the costs due to copying via
-a secondary register.  If your machine copies from memory using a
-secondary register in the conventional way but the default base value of
-4 is not correct for your machine, define this macro to add some other
-value to the result of that function.  The arguments to that function
-are the same as to this macro.
+  GCC defines the function ``memory_move_secondary_cost`` if
+  secondary reloads are needed.  It computes the costs due to copying via
+  a secondary register.  If your machine copies from memory using a
+  secondary register in the conventional way but the default base value of
+  4 is not correct for your machine, define this macro to add some other
+  value to the result of that function.  The arguments to that function
+  are the same as to this macro.
 
-These macros are obsolete, new ports should use the target hook
-``TARGET_MEMORY_MOVE_COST`` instead.
+  These macros are obsolete, new ports should use the target hook
+  ``TARGET_MEMORY_MOVE_COST`` instead.
 
-.. function:: int TARGET_MEMORY_MOVE_COST(machine_mode mode,reg_class_t rclass,bool in)
+.. function:: int TARGET_MEMORY_MOVE_COST (machine_mode mode, reg_class_t rclass, bool in)
 
   This target hook should return the cost of moving data of mode :samp:`{mode}`
   between a register of class :samp:`{rclass}` and memory; :samp:`{in}` is ``false``
@@ -106,36 +106,36 @@ These macros are obsolete, new ports should use the target hook
   value to the result of that function.  The arguments to that function
   are the same as to this target hook.
 
-.. index:: BRANCH_COST
+.. macro:: BRANCH_COST (speed_p, predictable_p)
 
-MacroBRANCH_COST(:samp:`{speed_p}`,:samp:`{predictable_p}`)A C expression for the cost of a branch instruction.  A value of 1 is
-the default; other values are interpreted relative to that. Parameter
-:samp:`{speed_p}` is true when the branch in question should be optimized
-for speed.  When it is false, ``BRANCH_COST`` should return a value
-optimal for code size rather than performance.  :samp:`{predictable_p}` is
-true for well-predicted branches. On many architectures the
-``BRANCH_COST`` can be reduced then.
+  A C expression for the cost of a branch instruction.  A value of 1 is
+  the default; other values are interpreted relative to that. Parameter
+  :samp:`{speed_p}` is true when the branch in question should be optimized
+  for speed.  When it is false, ``BRANCH_COST`` should return a value
+  optimal for code size rather than performance.  :samp:`{predictable_p}` is
+  true for well-predicted branches. On many architectures the
+  ``BRANCH_COST`` can be reduced then.
 
 Here are additional macros which do not specify precise relative costs,
 but only that certain actions are more expensive than GCC would
 ordinarily expect.
 
-.. index:: SLOW_BYTE_ACCESS
+.. macro:: SLOW_BYTE_ACCESS
 
-MacroSLOW_BYTE_ACCESSDefine this macro as a C expression which is nonzero if accessing less
-than a word of memory (i.e. a ``char`` or a ``short`` ) is no
-faster than accessing a word of memory, i.e., if such access
-require more than one instruction or if there is no difference in cost
-between byte and (aligned) word loads.
+  Define this macro as a C expression which is nonzero if accessing less
+  than a word of memory (i.e. a ``char`` or a ``short`` ) is no
+  faster than accessing a word of memory, i.e., if such access
+  require more than one instruction or if there is no difference in cost
+  between byte and (aligned) word loads.
 
-When this macro is not defined, the compiler will access a field by
-finding the smallest containing object; when it is defined, a fullword
-load will be used if alignment permits.  Unless bytes accesses are
-faster than word accesses, using word accesses is preferable since it
-may eliminate subsequent memory access if subsequent accesses occur to
-other fields in the same word of the structure, but to different bytes.
+  When this macro is not defined, the compiler will access a field by
+  finding the smallest containing object; when it is defined, a fullword
+  load will be used if alignment permits.  Unless bytes accesses are
+  faster than word accesses, using word accesses is preferable since it
+  may eliminate subsequent memory access if subsequent accesses occur to
+  other fields in the same word of the structure, but to different bytes.
 
-.. function:: bool TARGET_SLOW_UNALIGNED_ACCESS(machine_mode mode,unsigned intalign)
+.. function:: bool TARGET_SLOW_UNALIGNED_ACCESS (machine_mode mode, unsigned int align)
 
   This hook returns true if memory accesses described by the
   :samp:`{mode}` and :samp:`{alignment}` parameters have a cost many times greater
@@ -152,23 +152,23 @@ other fields in the same word of the structure, but to different bytes.
   The hook must return true whenever ``STRICT_ALIGNMENT`` is true.
   The default implementation returns ``STRICT_ALIGNMENT``.
 
-.. index:: MOVE_RATIO
+.. macro:: MOVE_RATIO (speed)
 
-MacroMOVE_RATIO(:samp:`{speed}`)The threshold of number of scalar memory-to-memory move insns, *below*
-which a sequence of insns should be generated instead of a
-string move insn or a library call.  Increasing the value will always
-make code faster, but eventually incurs high cost in increased code size.
+  The threshold of number of scalar memory-to-memory move insns, *below*
+  which a sequence of insns should be generated instead of a
+  string move insn or a library call.  Increasing the value will always
+  make code faster, but eventually incurs high cost in increased code size.
 
-Note that on machines where the corresponding move insn is a
-``define_expand`` that emits a sequence of insns, this macro counts
-the number of such sequences.
+  Note that on machines where the corresponding move insn is a
+  ``define_expand`` that emits a sequence of insns, this macro counts
+  the number of such sequences.
 
-The parameter :samp:`{speed}` is true if the code is currently being
-optimized for speed rather than size.
+  The parameter :samp:`{speed}` is true if the code is currently being
+  optimized for speed rather than size.
 
-If you don't define this, a reasonable default is used.
+  If you don't define this, a reasonable default is used.
 
-.. function:: bool TARGET_USE_BY_PIECES_INFRASTRUCTURE_P(unsigned HOST_WIDE_INTsize,unsigned intalignment,enum by_pieces_operationop,bool speed_p)
+.. function:: bool TARGET_USE_BY_PIECES_INFRASTRUCTURE_P (unsigned HOST_WIDE_INT size, unsigned int alignment, enum by_pieces_operation op, bool speed_p)
 
   GCC will attempt several strategies when asked to copy between
   two areas of memory, or to set, clear or store to memory, for example
@@ -203,14 +203,14 @@ If you don't define this, a reasonable default is used.
   in code size, for example where the number of insns emitted to perform a
   move would be greater than that of a library call.
 
-.. function:: bool TARGET_OVERLAP_OP_BY_PIECES_P(void )
+.. function:: bool TARGET_OVERLAP_OP_BY_PIECES_P (void)
 
   This target hook should return true if when the ``by_pieces``
   infrastructure is used, an offset adjusted unaligned memory operation
   in the smallest integer mode for the last piece operation of a memory
   region can be generated to avoid doing more than one smaller operations.
 
-.. function:: int TARGET_COMPARE_BY_PIECES_BRANCH_RATIO(machine_mode mode)
+.. function:: int TARGET_COMPARE_BY_PIECES_BRANCH_RATIO (machine_mode mode)
 
   When expanding a block comparison in MODE, gcc can try to reduce the
   number of branches at the expense of more memory operations.  This hook
@@ -220,108 +220,108 @@ If you don't define this, a reasonable default is used.
   particular mode from being used for block comparisons by returning a
   negative number from this hook.
 
-.. index:: MOVE_MAX_PIECES
+.. macro:: MOVE_MAX_PIECES
 
-MacroMOVE_MAX_PIECESA C expression used by ``move_by_pieces`` to determine the largest unit
-a load or store used to copy memory is.  Defaults to ``MOVE_MAX``.
+  A C expression used by ``move_by_pieces`` to determine the largest unit
+  a load or store used to copy memory is.  Defaults to ``MOVE_MAX``.
 
-.. index:: STORE_MAX_PIECES
+.. macro:: STORE_MAX_PIECES
 
-MacroSTORE_MAX_PIECESA C expression used by ``store_by_pieces`` to determine the largest unit
-a store used to memory is.  Defaults to ``MOVE_MAX_PIECES``, or two times
-the size of ``HOST_WIDE_INT``, whichever is smaller.
+  A C expression used by ``store_by_pieces`` to determine the largest unit
+  a store used to memory is.  Defaults to ``MOVE_MAX_PIECES``, or two times
+  the size of ``HOST_WIDE_INT``, whichever is smaller.
 
-.. index:: COMPARE_MAX_PIECES
+.. macro:: COMPARE_MAX_PIECES
 
-MacroCOMPARE_MAX_PIECESA C expression used by ``compare_by_pieces`` to determine the largest unit
-a load or store used to compare memory is.  Defaults to
-``MOVE_MAX_PIECES``.
+  A C expression used by ``compare_by_pieces`` to determine the largest unit
+  a load or store used to compare memory is.  Defaults to
+  ``MOVE_MAX_PIECES``.
 
-.. index:: CLEAR_RATIO
+.. macro:: CLEAR_RATIO (speed)
 
-MacroCLEAR_RATIO(:samp:`{speed}`)The threshold of number of scalar move insns, *below* which a sequence
-of insns should be generated to clear memory instead of a string clear insn
-or a library call.  Increasing the value will always make code faster, but
-eventually incurs high cost in increased code size.
+  The threshold of number of scalar move insns, *below* which a sequence
+  of insns should be generated to clear memory instead of a string clear insn
+  or a library call.  Increasing the value will always make code faster, but
+  eventually incurs high cost in increased code size.
 
-The parameter :samp:`{speed}` is true if the code is currently being
-optimized for speed rather than size.
+  The parameter :samp:`{speed}` is true if the code is currently being
+  optimized for speed rather than size.
 
-If you don't define this, a reasonable default is used.
+  If you don't define this, a reasonable default is used.
 
-.. index:: SET_RATIO
+.. macro:: SET_RATIO (speed)
 
-MacroSET_RATIO(:samp:`{speed}`)The threshold of number of scalar move insns, *below* which a sequence
-of insns should be generated to set memory to a constant value, instead of
-a block set insn or a library call.
-Increasing the value will always make code faster, but
-eventually incurs high cost in increased code size.
+  The threshold of number of scalar move insns, *below* which a sequence
+  of insns should be generated to set memory to a constant value, instead of
+  a block set insn or a library call.
+  Increasing the value will always make code faster, but
+  eventually incurs high cost in increased code size.
 
-The parameter :samp:`{speed}` is true if the code is currently being
-optimized for speed rather than size.
+  The parameter :samp:`{speed}` is true if the code is currently being
+  optimized for speed rather than size.
 
-If you don't define this, it defaults to the value of ``MOVE_RATIO``.
+  If you don't define this, it defaults to the value of ``MOVE_RATIO``.
 
-.. index:: USE_LOAD_POST_INCREMENT
+.. macro:: USE_LOAD_POST_INCREMENT (mode)
 
-MacroUSE_LOAD_POST_INCREMENT(:samp:`{mode}`)A C expression used to determine whether a load postincrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_POST_INCREMENT``.
+  A C expression used to determine whether a load postincrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_POST_INCREMENT``.
 
-.. index:: USE_LOAD_POST_DECREMENT
+.. macro:: USE_LOAD_POST_DECREMENT (mode)
 
-MacroUSE_LOAD_POST_DECREMENT(:samp:`{mode}`)A C expression used to determine whether a load postdecrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_POST_DECREMENT``.
+  A C expression used to determine whether a load postdecrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_POST_DECREMENT``.
 
-.. index:: USE_LOAD_PRE_INCREMENT
+.. macro:: USE_LOAD_PRE_INCREMENT (mode)
 
-MacroUSE_LOAD_PRE_INCREMENT(:samp:`{mode}`)A C expression used to determine whether a load preincrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_PRE_INCREMENT``.
+  A C expression used to determine whether a load preincrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_PRE_INCREMENT``.
 
-.. index:: USE_LOAD_PRE_DECREMENT
+.. macro:: USE_LOAD_PRE_DECREMENT (mode)
 
-MacroUSE_LOAD_PRE_DECREMENT(:samp:`{mode}`)A C expression used to determine whether a load predecrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_PRE_DECREMENT``.
+  A C expression used to determine whether a load predecrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_PRE_DECREMENT``.
 
-.. index:: USE_STORE_POST_INCREMENT
+.. macro:: USE_STORE_POST_INCREMENT (mode)
 
-MacroUSE_STORE_POST_INCREMENT(:samp:`{mode}`)A C expression used to determine whether a store postincrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_POST_INCREMENT``.
+  A C expression used to determine whether a store postincrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_POST_INCREMENT``.
 
-.. index:: USE_STORE_POST_DECREMENT
+.. macro:: USE_STORE_POST_DECREMENT (mode)
 
-MacroUSE_STORE_POST_DECREMENT(:samp:`{mode}`)A C expression used to determine whether a store postdecrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_POST_DECREMENT``.
+  A C expression used to determine whether a store postdecrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_POST_DECREMENT``.
 
-.. index:: USE_STORE_PRE_INCREMENT
+.. macro:: USE_STORE_PRE_INCREMENT (mode)
 
-MacroUSE_STORE_PRE_INCREMENT(:samp:`{mode}`)This macro is used to determine whether a store preincrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_PRE_INCREMENT``.
+  This macro is used to determine whether a store preincrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_PRE_INCREMENT``.
 
-.. index:: USE_STORE_PRE_DECREMENT
+.. macro:: USE_STORE_PRE_DECREMENT (mode)
 
-MacroUSE_STORE_PRE_DECREMENT(:samp:`{mode}`)This macro is used to determine whether a store predecrement is a good
-thing to use for a given mode.  Defaults to the value of
-``HAVE_PRE_DECREMENT``.
+  This macro is used to determine whether a store predecrement is a good
+  thing to use for a given mode.  Defaults to the value of
+  ``HAVE_PRE_DECREMENT``.
 
-.. index:: NO_FUNCTION_CSE
+.. macro:: NO_FUNCTION_CSE
 
-MacroNO_FUNCTION_CSEDefine this macro to be true if it is as good or better to call a constant
-function address than to call an address kept in a register.
+  Define this macro to be true if it is as good or better to call a constant
+  function address than to call an address kept in a register.
 
-.. index:: LOGICAL_OP_NON_SHORT_CIRCUIT
+.. macro:: LOGICAL_OP_NON_SHORT_CIRCUIT
 
-MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operation produced by
-:samp:`fold_range_test ()` is optimal.  This macro defaults to true if
-``BRANCH_COST`` is greater than or equal to the value 2.
+  Define this macro if a non-short-circuit operation produced by
+  :samp:`fold_range_test ()` is optimal.  This macro defaults to true if
+  ``BRANCH_COST`` is greater than or equal to the value 2.
 
-.. function:: bool TARGET_OPTAB_SUPPORTED_P(int op,machine_mode mode1,machine_mode mode2,optimization_type opt_type)
+.. function:: bool TARGET_OPTAB_SUPPORTED_P (int op, machine_mode mode1, machine_mode mode2, optimization_type opt_type)
 
   Return true if the optimizers should use optab :samp:`{op}` with
   modes :samp:`{mode1}` and :samp:`{mode2}` for optimization type :samp:`{opt_type}`.
@@ -335,7 +335,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
 
   The default hook returns true for all inputs.
 
-.. function:: bool TARGET_RTX_COSTS(rtx x,machine_mode mode,int outer_code,int opno,int *total,bool speed)
+.. function:: bool TARGET_RTX_COSTS (rtx x, machine_mode mode, int outer_code, int opno, int *total, bool speed)
 
   This target hook describes the relative costs of RTL expressions.
 
@@ -367,7 +367,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   The hook returns true when all subexpressions of :samp:`{x}` have been
   processed, and false when ``rtx_cost`` should recurse.
 
-.. function:: int TARGET_ADDRESS_COST(rtx address,machine_mode mode,addr_space_t as,bool speed)
+.. function:: int TARGET_ADDRESS_COST (rtx address, machine_mode mode, addr_space_t as, bool speed)
 
   This hook computes the cost of an addressing mode that contains
   :samp:`{address}`.  If not defined, the cost is computed from
@@ -402,7 +402,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   should probably only be given to addresses with different numbers of
   registers on machines with lots of registers.
 
-.. function:: int TARGET_INSN_COST(rtx_insn *insn,bool speed)
+.. function:: int TARGET_INSN_COST (rtx_insn *insn, bool speed)
 
   This target hook describes the relative costs of RTL instructions.
 
@@ -414,7 +414,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   false, this target hook should be used to estimate the relative
   size cost of an expression, again relative to ``COSTS_N_INSNS``.
 
-.. function:: unsigned int TARGET_MAX_NOCE_IFCVT_SEQ_COST(edge e)
+.. function:: unsigned int TARGET_MAX_NOCE_IFCVT_SEQ_COST (edge e)
 
   This hook returns a value in the same units as ``TARGET_RTX_COSTS``,
   giving the maximum acceptable cost for a sequence generated by the RTL
@@ -434,20 +434,20 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   ``max-rtl-if-conversion-[un]predictable`` parameters if they are set,
   and uses a multiple of ``BRANCH_COST`` otherwise.
 
-.. function:: bool TARGET_NOCE_CONVERSION_PROFITABLE_P(rtx_insn *seq,struct noce_if_info* if_info)
+.. function:: bool TARGET_NOCE_CONVERSION_PROFITABLE_P (rtx_insn *seq, struct noce_if_info *if_info)
 
   This hook returns true if the instruction sequence ``seq`` is a good
   candidate as a replacement for the if-convertible sequence described in
   ``if_info``.
 
-.. function:: bool TARGET_NEW_ADDRESS_PROFITABLE_P(rtx memref,rtx_insn *insn,rtx new_addr)
+.. function:: bool TARGET_NEW_ADDRESS_PROFITABLE_P (rtx memref, rtx_insn * insn, rtx new_addr)
 
   Return ``true`` if it is profitable to replace the address in
   :samp:`{memref}` with :samp:`{new_addr}`.  This allows targets to prevent the
   scheduler from undoing address optimizations.  The instruction containing the
   memref is :samp:`{insn}`.  The default implementation returns ``true``.
 
-.. function:: bool TARGET_NO_SPECULATION_IN_DELAY_SLOTS_P(void )
+.. function:: bool TARGET_NO_SPECULATION_IN_DELAY_SLOTS_P (void)
 
   This predicate controls the use of the eager delay slot filler to disallow
   speculatively executed instructions being placed in delay slots.  Targets
@@ -457,7 +457,7 @@ MacroLOGICAL_OP_NON_SHORT_CIRCUITDefine this macro if a non-short-circuit operat
   delay slot branches filled using the basic filler is often still desirable
   as the delay slot can hide a pipeline bubble.
 
-.. function:: HOST_WIDE_INT TARGET_ESTIMATED_POLY_VALUE(poly_int64 val,poly_value_estimate_kind kind)
+.. function:: HOST_WIDE_INT TARGET_ESTIMATED_POLY_VALUE (poly_int64 val, poly_value_estimate_kind kind)
 
   Return an estimate of the runtime value of :samp:`{val}`, for use in
   things like cost calculations or profiling frequencies.  :samp:`{kind}` is used

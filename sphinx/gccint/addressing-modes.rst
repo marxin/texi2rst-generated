@@ -9,61 +9,46 @@ Addressing Modes
 
 This is about addressing modes.
 
-.. index:: HAVE_PRE_INCREMENT
+.. macro:: HAVE_PRE_INCREMENT
 
-MacroHAVE_PRE_INCREMENT
-.. index:: HAVE_PRE_DECREMENT
+  A C expression that is nonzero if the machine supports pre-increment,
+  pre-decrement, post-increment, or post-decrement addressing respectively.
 
-MacroHAVE_PRE_DECREMENT
-.. index:: HAVE_POST_INCREMENT
+.. macro:: HAVE_PRE_MODIFY_DISP
 
-MacroHAVE_POST_INCREMENT
-.. index:: HAVE_POST_DECREMENT
+  A C expression that is nonzero if the machine supports pre- or
+  post-address side-effect generation involving constants other than
+  the size of the memory operand.
 
-MacroHAVE_POST_DECREMENTA C expression that is nonzero if the machine supports pre-increment,
-pre-decrement, post-increment, or post-decrement addressing respectively.
+.. macro:: HAVE_PRE_MODIFY_REG
 
-.. index:: HAVE_PRE_MODIFY_DISP
+  A C expression that is nonzero if the machine supports pre- or
+  post-address side-effect generation involving a register displacement.
 
-MacroHAVE_PRE_MODIFY_DISP
-.. index:: HAVE_POST_MODIFY_DISP
+.. macro:: CONSTANT_ADDRESS_P (x)
 
-MacroHAVE_POST_MODIFY_DISPA C expression that is nonzero if the machine supports pre- or
-post-address side-effect generation involving constants other than
-the size of the memory operand.
+  A C expression that is 1 if the RTX :samp:`{x}` is a constant which
+  is a valid address.  On most machines the default definition of
+  ``(CONSTANT_P (x) && GET_CODE (x) != CONST_DOUBLE)``
+  is acceptable, but a few machines are more restrictive as to which
+  constant addresses are supported.
 
-.. index:: HAVE_PRE_MODIFY_REG
+.. macro:: CONSTANT_P (x)
 
-MacroHAVE_PRE_MODIFY_REG
-.. index:: HAVE_POST_MODIFY_REG
+  ``CONSTANT_P``, which is defined by target-independent code,
+  accepts integer-values expressions whose values are not explicitly
+  known, such as ``symbol_ref``, ``label_ref``, and ``high``
+  expressions and ``const`` arithmetic expressions, in addition to
+  ``const_int`` and ``const_double`` expressions.
 
-MacroHAVE_POST_MODIFY_REGA C expression that is nonzero if the machine supports pre- or
-post-address side-effect generation involving a register displacement.
+.. macro:: MAX_REGS_PER_ADDRESS
 
-.. index:: CONSTANT_ADDRESS_P
+  A number, the maximum number of registers that can appear in a valid
+  memory address.  Note that it is up to you to specify a value equal to
+  the maximum number that ``TARGET_LEGITIMATE_ADDRESS_P`` would ever
+  accept.
 
-MacroCONSTANT_ADDRESS_P(:samp:`{x}`)A C expression that is 1 if the RTX :samp:`{x}` is a constant which
-is a valid address.  On most machines the default definition of
-``(CONSTANT_P (x) && GET_CODE (x) != CONST_DOUBLE)``
-is acceptable, but a few machines are more restrictive as to which
-constant addresses are supported.
-
-.. index:: CONSTANT_P
-
-MacroCONSTANT_P(:samp:`{x}`)``CONSTANT_P``, which is defined by target-independent code,
-accepts integer-values expressions whose values are not explicitly
-known, such as ``symbol_ref``, ``label_ref``, and ``high``
-expressions and ``const`` arithmetic expressions, in addition to
-``const_int`` and ``const_double`` expressions.
-
-.. index:: MAX_REGS_PER_ADDRESS
-
-MacroMAX_REGS_PER_ADDRESSA number, the maximum number of registers that can appear in a valid
-memory address.  Note that it is up to you to specify a value equal to
-the maximum number that ``TARGET_LEGITIMATE_ADDRESS_P`` would ever
-accept.
-
-.. function:: bool TARGET_LEGITIMATE_ADDRESS_P(machine_mode mode,rtx x,bool strict)
+.. function:: bool TARGET_LEGITIMATE_ADDRESS_P (machine_mode mode, rtx x, bool strict)
 
   A function that returns whether :samp:`{x}` (an RTX) is a legitimate memory
   address on the target machine for a memory operand of mode :samp:`{mode}`.
@@ -129,31 +114,31 @@ accept.
   Using the hook is usually simpler because it limits the number of
   files that are recompiled when changes are made.
 
-.. index:: TARGET_MEM_CONSTRAINT
+.. macro:: TARGET_MEM_CONSTRAINT
 
-MacroTARGET_MEM_CONSTRAINTA single character to be used instead of the default ``'m'``
-character for general memory addresses.  This defines the constraint
-letter which matches the memory addresses accepted by
-``TARGET_LEGITIMATE_ADDRESS_P``.  Define this macro if you want to
-support new address formats in your back end without changing the
-semantics of the ``'m'`` constraint.  This is necessary in order to
-preserve functionality of inline assembly constructs using the
-``'m'`` constraint.
+  A single character to be used instead of the default ``'m'``
+  character for general memory addresses.  This defines the constraint
+  letter which matches the memory addresses accepted by
+  ``TARGET_LEGITIMATE_ADDRESS_P``.  Define this macro if you want to
+  support new address formats in your back end without changing the
+  semantics of the ``'m'`` constraint.  This is necessary in order to
+  preserve functionality of inline assembly constructs using the
+  ``'m'`` constraint.
 
-.. index:: FIND_BASE_TERM
+.. macro:: FIND_BASE_TERM (x)
 
-MacroFIND_BASE_TERM(:samp:`{x}`)A C expression to determine the base term of address :samp:`{x}`,
-or to provide a simplified version of :samp:`{x}` from which alias.c
-can easily find the base term.  This macro is used in only two places:
-``find_base_value`` and ``find_base_term`` in alias.c.
+  A C expression to determine the base term of address :samp:`{x}`,
+  or to provide a simplified version of :samp:`{x}` from which alias.c
+  can easily find the base term.  This macro is used in only two places:
+  ``find_base_value`` and ``find_base_term`` in alias.c.
 
-It is always safe for this macro to not be defined.  It exists so
-that alias analysis can understand machine-dependent addresses.
+  It is always safe for this macro to not be defined.  It exists so
+  that alias analysis can understand machine-dependent addresses.
 
-The typical use of this macro is to handle addresses containing
-a label_ref or symbol_ref within an UNSPEC.
+  The typical use of this macro is to handle addresses containing
+  a label_ref or symbol_ref within an UNSPEC.
 
-.. function:: rtx TARGET_LEGITIMIZE_ADDRESS(rtx x,rtx oldx,machine_mode mode)
+.. function:: rtx TARGET_LEGITIMIZE_ADDRESS (rtx x, rtx oldx, machine_mode mode)
 
   This hook is given an invalid memory address :samp:`{x}` for an
   operand of mode :samp:`{mode}` and should try to return a valid memory
@@ -177,59 +162,59 @@ a label_ref or symbol_ref within an UNSPEC.
   a valid way to legitimize the address.  But often a machine-dependent
   strategy can generate better code.
 
-.. index:: LEGITIMIZE_RELOAD_ADDRESS
+.. macro:: LEGITIMIZE_RELOAD_ADDRESS (x, mode, opnum, type, ind_levels, win)
 
-MacroLEGITIMIZE_RELOAD_ADDRESS(:samp:`{x}`,:samp:`{mode}`,:samp:`{opnum}`,:samp:`{type}`,:samp:`{ind_levels}`,:samp:`{win}`)A C compound statement that attempts to replace :samp:`{x}`, which is an address
-that needs reloading, with a valid memory address for an operand of mode
-:samp:`{mode}`.  :samp:`{win}` will be a C statement label elsewhere in the code.
-It is not necessary to define this macro, but it might be useful for
-performance reasons.
+  A C compound statement that attempts to replace :samp:`{x}`, which is an address
+  that needs reloading, with a valid memory address for an operand of mode
+  :samp:`{mode}`.  :samp:`{win}` will be a C statement label elsewhere in the code.
+  It is not necessary to define this macro, but it might be useful for
+  performance reasons.
 
-For example, on the i386, it is sometimes possible to use a single
-reload register instead of two by reloading a sum of two pseudo
-registers into a register.  On the other hand, for number of RISC
-processors offsets are limited so that often an intermediate address
-needs to be generated in order to address a stack slot.  By defining
-``LEGITIMIZE_RELOAD_ADDRESS`` appropriately, the intermediate addresses
-generated for adjacent some stack slots can be made identical, and thus
-be shared.
+  For example, on the i386, it is sometimes possible to use a single
+  reload register instead of two by reloading a sum of two pseudo
+  registers into a register.  On the other hand, for number of RISC
+  processors offsets are limited so that often an intermediate address
+  needs to be generated in order to address a stack slot.  By defining
+  ``LEGITIMIZE_RELOAD_ADDRESS`` appropriately, the intermediate addresses
+  generated for adjacent some stack slots can be made identical, and thus
+  be shared.
 
-*Note*: This macro should be used with caution.  It is necessary
-to know something of how reload works in order to effectively use this,
-and it is quite easy to produce macros that build in too much knowledge
-of reload internals.
+  *Note*: This macro should be used with caution.  It is necessary
+  to know something of how reload works in order to effectively use this,
+  and it is quite easy to produce macros that build in too much knowledge
+  of reload internals.
 
-*Note*: This macro must be able to reload an address created by a
-previous invocation of this macro.  If it fails to handle such addresses
-then the compiler may generate incorrect code or abort.
+  *Note*: This macro must be able to reload an address created by a
+  previous invocation of this macro.  If it fails to handle such addresses
+  then the compiler may generate incorrect code or abort.
 
-.. index:: push_reload
+  .. index:: push_reload
 
-The macro definition should use ``push_reload`` to indicate parts that
-need reloading; :samp:`{opnum}`, :samp:`{type}` and :samp:`{ind_levels}` are usually
-suitable to be passed unaltered to ``push_reload``.
+  The macro definition should use ``push_reload`` to indicate parts that
+  need reloading; :samp:`{opnum}`, :samp:`{type}` and :samp:`{ind_levels}` are usually
+  suitable to be passed unaltered to ``push_reload``.
 
-The code generated by this macro must not alter the substructure of
-:samp:`{x}`.  If it transforms :samp:`{x}` into a more legitimate form, it
-should assign :samp:`{x}` (which will always be a C variable) a new value.
-This also applies to parts that you change indirectly by calling
-``push_reload``.
+  The code generated by this macro must not alter the substructure of
+  :samp:`{x}`.  If it transforms :samp:`{x}` into a more legitimate form, it
+  should assign :samp:`{x}` (which will always be a C variable) a new value.
+  This also applies to parts that you change indirectly by calling
+  ``push_reload``.
 
-.. index:: strict_memory_address_p
+  .. index:: strict_memory_address_p
 
-The macro definition may use ``strict_memory_address_p`` to test if
-the address has become legitimate.
+  The macro definition may use ``strict_memory_address_p`` to test if
+  the address has become legitimate.
 
-.. index:: copy_rtx
+  .. index:: copy_rtx
 
-If you want to change only a part of :samp:`{x}`, one standard way of doing
-this is to use ``copy_rtx``.  Note, however, that it unshares only a
-single level of rtl.  Thus, if the part to be changed is not at the
-top level, you'll need to replace first the top level.
-It is not necessary for this macro to come up with a legitimate
-address;  but often a machine-dependent strategy can generate better code.
+  If you want to change only a part of :samp:`{x}`, one standard way of doing
+  this is to use ``copy_rtx``.  Note, however, that it unshares only a
+  single level of rtl.  Thus, if the part to be changed is not at the
+  top level, you'll need to replace first the top level.
+  It is not necessary for this macro to come up with a legitimate
+  address;  but often a machine-dependent strategy can generate better code.
 
-.. function:: bool TARGET_MODE_DEPENDENT_ADDRESS_P(const_rtx addr,addr_space_t addrspace)
+.. function:: bool TARGET_MODE_DEPENDENT_ADDRESS_P (const_rtx addr, addr_space_t addrspace)
 
   This hook returns ``true`` if memory address :samp:`{addr}` in address
   space :samp:`{addrspace}` can have
@@ -246,7 +231,7 @@ address;  but often a machine-dependent strategy can generate better code.
 
   The default version of this hook returns ``false``.
 
-.. function:: bool TARGET_LEGITIMATE_CONSTANT_P(machine_mode mode,rtx x)
+.. function:: bool TARGET_LEGITIMATE_CONSTANT_P (machine_mode mode, rtx x)
 
   This hook returns true if :samp:`{x}` is a legitimate constant for a
   :samp:`{mode}` -mode immediate operand on the target machine.  You can assume that
@@ -254,7 +239,7 @@ address;  but often a machine-dependent strategy can generate better code.
 
   The default definition returns true.
 
-.. function:: bool TARGET_PRECOMPUTE_TLS_P(machine_mode mode,rtx x)
+.. function:: bool TARGET_PRECOMPUTE_TLS_P (machine_mode mode, rtx x)
 
   This hook returns true if :samp:`{x}` is a TLS operand on the target
   machine that should be pre-computed when used as the argument in a call.
@@ -263,7 +248,7 @@ address;  but often a machine-dependent strategy can generate better code.
 
   The default definition returns false.
 
-.. function:: rtx TARGET_DELEGITIMIZE_ADDRESS(rtx x)
+.. function:: rtx TARGET_DELEGITIMIZE_ADDRESS (rtx x)
 
   This hook is used to undo the possibly obfuscating effects of the
   ``LEGITIMIZE_ADDRESS`` and ``LEGITIMIZE_RELOAD_ADDRESS`` target
@@ -273,12 +258,12 @@ address;  but often a machine-dependent strategy can generate better code.
   the semantics of these opaque ``UNSPEC`` s by converting them back
   into their original form.
 
-.. function:: bool TARGET_CONST_NOT_OK_FOR_DEBUG_P(rtx x)
+.. function:: bool TARGET_CONST_NOT_OK_FOR_DEBUG_P (rtx x)
 
   This hook should return true if :samp:`{x}` should not be emitted into
   debug sections.
 
-.. function:: bool TARGET_CANNOT_FORCE_CONST_MEM(machine_mode mode,rtx x)
+.. function:: bool TARGET_CANNOT_FORCE_CONST_MEM (machine_mode mode, rtx x)
 
   This hook should return true if :samp:`{x}` is of a form that cannot (or
   should not) be spilled to the constant pool.  :samp:`{mode}` is the mode
@@ -292,7 +277,7 @@ address;  but often a machine-dependent strategy can generate better code.
   holding the constant.  This restriction is often true of addresses
   of TLS symbols for various targets.
 
-.. function:: bool TARGET_USE_BLOCKS_FOR_CONSTANT_P(machine_mode mode,const_rtx x)
+.. function:: bool TARGET_USE_BLOCKS_FOR_CONSTANT_P (machine_mode mode, const_rtx x)
 
   This hook should return true if pool entries for constant :samp:`{x}` can
   be placed in an ``object_block`` structure.  :samp:`{mode}` is the mode
@@ -300,20 +285,20 @@ address;  but often a machine-dependent strategy can generate better code.
 
   The default version returns false for all constants.
 
-.. function:: bool TARGET_USE_BLOCKS_FOR_DECL_P(const_tree decl)
+.. function:: bool TARGET_USE_BLOCKS_FOR_DECL_P (const_tree decl)
 
   This hook should return true if pool entries for :samp:`{decl}` should
   be placed in an ``object_block`` structure.
 
   The default version returns true for all decls.
 
-.. function:: tree TARGET_BUILTIN_RECIPROCAL(tree fndecl)
+.. function:: tree TARGET_BUILTIN_RECIPROCAL (tree fndecl)
 
   This hook should return the DECL of a function that implements the
   reciprocal of the machine-specific builtin function :samp:`{fndecl}`, or
   ``NULL_TREE`` if such a function is not available.
 
-.. function:: tree TARGET_VECTORIZE_BUILTIN_MASK_FOR_LOAD(void )
+.. function:: tree TARGET_VECTORIZE_BUILTIN_MASK_FOR_LOAD (void)
 
   This hook should return the DECL of a function :samp:`{f}` that given an
   address :samp:`{addr}` as an argument returns a mask :samp:`{m}` that can be
@@ -342,13 +327,13 @@ address;  but often a machine-dependent strategy can generate better code.
   the argument :samp:`{OFF}` to ``REALIGN_LOAD``, in which case the low
   log2( :samp:`{VS}` ) - 1 bits of :samp:`{addr}` will be considered.
 
-.. function:: int TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST(enum vect_cost_for_stmttype_of_cost,tree vectype,int misalign)
+.. function:: int TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST (enum vect_cost_for_stmt type_of_cost, tree vectype, int misalign)
 
   Returns cost of different scalar or vector statements for vectorization cost model.
   For vector memory operations the cost may depend on type ( :samp:`{vectype}` ) and
   misalignment value ( :samp:`{misalign}` ).
 
-.. function:: poly_uint64 TARGET_VECTORIZE_PREFERRED_VECTOR_ALIGNMENT(const_tree type)
+.. function:: poly_uint64 TARGET_VECTORIZE_PREFERRED_VECTOR_ALIGNMENT (const_tree type)
 
   This hook returns the preferred alignment in bits for accesses to
   vectors of type :samp:`{type}` in vectorized code.  This might be less than
@@ -360,11 +345,11 @@ address;  but often a machine-dependent strategy can generate better code.
   The default hook returns ``TYPE_ALIGN (type)``, which is
   correct for most targets.
 
-.. function:: bool TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE(const_tree type,bool is_packed)
+.. function:: bool TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE (const_tree type, bool is_packed)
 
   Return true if vector alignment is reachable (by peeling N iterations) for the given scalar type :samp:`{type}`.  :samp:`{is_packed}` is false if the scalar access using :samp:`{type}` is known to be naturally aligned.
 
-.. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST(machine_mode mode,rtx output,rtx in0,rtx in1,const vec_perm_indices&sel)
+.. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST (machine_mode mode, rtx output, rtx in0, rtx in1, const vec_perm_indices &sel)
 
   This hook is used to test whether the target can permute up to two
   vectors of mode :samp:`{mode}` using the permutation vector ``sel``, and
@@ -385,7 +370,7 @@ address;  but often a machine-dependent strategy can generate better code.
   instruction pattern.  There is no need for the hook to handle these two
   implementation approaches itself.
 
-.. function:: tree TARGET_VECTORIZE_BUILTIN_VECTORIZED_FUNCTION(unsigned code,tree vec_type_out,tree vec_type_in)
+.. function:: tree TARGET_VECTORIZE_BUILTIN_VECTORIZED_FUNCTION (unsigned code, tree vec_type_out, tree vec_type_in)
 
   This hook should return the decl of a function that implements the
   vectorized variant of the function with the ``combined_fn`` code
@@ -393,14 +378,14 @@ address;  but often a machine-dependent strategy can generate better code.
   The return type of the vectorized function shall be of vector type
   :samp:`{vec_type_out}` and the argument types should be :samp:`{vec_type_in}`.
 
-.. function:: tree TARGET_VECTORIZE_BUILTIN_MD_VECTORIZED_FUNCTION(tree fndecl,tree vec_type_out,tree vec_type_in)
+.. function:: tree TARGET_VECTORIZE_BUILTIN_MD_VECTORIZED_FUNCTION (tree fndecl, tree vec_type_out, tree vec_type_in)
 
   This hook should return the decl of a function that implements the
   vectorized variant of target built-in function ``fndecl``.  The
   return type of the vectorized function shall be of vector type
   :samp:`{vec_type_out}` and the argument types should be :samp:`{vec_type_in}`.
 
-.. function:: bool TARGET_VECTORIZE_SUPPORT_VECTOR_MISALIGNMENT(machine_mode mode,const_tree type,int misalignment,bool is_packed)
+.. function:: bool TARGET_VECTORIZE_SUPPORT_VECTOR_MISALIGNMENT (machine_mode mode, const_tree type, int misalignment, bool is_packed)
 
   This hook should return true if the target supports misaligned vector
   store/load of a specific factor denoted in the :samp:`{misalignment}`
@@ -408,21 +393,21 @@ address;  but often a machine-dependent strategy can generate better code.
   the elements in the vectors should be of type :samp:`{type}`.  :samp:`{is_packed}`
   parameter is true if the memory access is defined in a packed struct.
 
-.. function:: machine_mode TARGET_VECTORIZE_PREFERRED_SIMD_MODE(scalar_mode mode)
+.. function:: machine_mode TARGET_VECTORIZE_PREFERRED_SIMD_MODE (scalar_mode mode)
 
   This hook should return the preferred mode for vectorizing scalar
   mode :samp:`{mode}`.  The default is
   equal to ``word_mode``, because the vectorizer can do some
   transformations even in absence of specialized SIMD hardware.
 
-.. function:: machine_mode TARGET_VECTORIZE_SPLIT_REDUCTION(machine_mode )
+.. function:: machine_mode TARGET_VECTORIZE_SPLIT_REDUCTION (machine_mode)
 
   This hook should return the preferred mode to split the final reduction
   step on :samp:`{mode}` to.  The reduction is then carried out reducing upper
   against lower halves of vectors recursively until the specified mode is
   reached.  The default is :samp:`{mode}` which means no splitting.
 
-.. function:: unsigned int TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_MODES(vector_modes *modes,bool all)
+.. function:: unsigned int TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_MODES (vector_modes *modes, bool all)
 
   If using the mode returned by ``TARGET_VECTORIZE_PREFERRED_SIMD_MODE``
   is not the only approach worth considering, this hook should add one mode to
@@ -453,7 +438,7 @@ address;  but often a machine-dependent strategy can generate better code.
   for autovectorization.  The default implementation adds no modes and
   returns 0.
 
-.. function:: opt_machine_mode TARGET_VECTORIZE_RELATED_MODE(machine_mode vector_mode,scalar_mode element_mode,poly_uint64 nunits)
+.. function:: opt_machine_mode TARGET_VECTORIZE_RELATED_MODE (machine_mode vector_mode, scalar_mode element_mode, poly_uint64 nunits)
 
   If a piece of code is using vector mode :samp:`{vector_mode}` and also wants
   to operate on elements of mode :samp:`{element_mode}`, return the vector mode
@@ -477,7 +462,7 @@ address;  but often a machine-dependent strategy can generate better code.
   requested mode, returning a mode with the same size as :samp:`{vector_mode}`
   when :samp:`{nunits}` is zero.  This is the correct behavior for most targets.
 
-.. function:: opt_machine_mode TARGET_VECTORIZE_GET_MASK_MODE(machine_mode mode)
+.. function:: opt_machine_mode TARGET_VECTORIZE_GET_MASK_MODE (machine_mode mode)
 
   Return the mode to use for a vector mask that holds one boolean
   result for each element of vector mode :samp:`{mode}`.  The returned mask mode
@@ -489,29 +474,29 @@ address;  but often a machine-dependent strategy can generate better code.
   The default implementation returns a ``MODE_VECTOR_INT`` with the
   same size and number of elements as :samp:`{mode}`, if such a mode exists.
 
-.. function:: bool TARGET_VECTORIZE_EMPTY_MASK_IS_EXPENSIVE(unsigned ifn)
+.. function:: bool TARGET_VECTORIZE_EMPTY_MASK_IS_EXPENSIVE (unsigned ifn)
 
   This hook returns true if masked internal function :samp:`{ifn}` (really of
   type ``internal_fn`` ) should be considered expensive when the mask is
   all zeros.  GCC can then try to branch around the instruction instead.
 
-.. function:: void * TARGET_VECTORIZE_INIT_COST(class loop* loop_info,bool costing_for_scalar)
+.. function:: void * TARGET_VECTORIZE_INIT_COST (class loop *loop_info, bool costing_for_scalar)
 
   This hook should initialize target-specific data structures in preparation for modeling the costs of vectorizing a loop or basic block.  The default allocates three unsigned integers for accumulating costs for the prologue, body, and epilogue of the loop or basic block.  If :samp:`{loop_info}` is non-NULL, it identifies the loop being vectorized; otherwise a single block is being vectorized.  If :samp:`{costing_for_scalar}` is true, it indicates the current cost model is for the scalar version of a loop or block; otherwise it is for the vector version.
 
-.. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST(class vec_info* ,void *data,int count,enum vect_cost_for_stmtkind,class _stmt_vec_info* stmt_info,tree vectype,int misalign,enum vect_cost_model_locationwhere)
+.. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST (class vec_info *, void *data, int count, enum vect_cost_for_stmt kind, class _stmt_vec_info *stmt_info, tree vectype, int misalign, enum vect_cost_model_location where)
 
   This hook should update the target-specific :samp:`{data}` in response to adding :samp:`{count}` copies of the given :samp:`{kind}` of statement to a loop or basic block.  The default adds the builtin vectorizer cost for the copies of the statement to the accumulator specified by :samp:`{where}`, (the prologue, body, or epilogue) and returns the amount added.  The return value should be viewed as a tentative cost that may later be revised.
 
-.. function:: void TARGET_VECTORIZE_FINISH_COST(void *data,unsigned *prologue_cost,unsigned *body_cost,unsigned *epilogue_cost)
+.. function:: void TARGET_VECTORIZE_FINISH_COST (void *data, unsigned *prologue_cost, unsigned *body_cost, unsigned *epilogue_cost)
 
   This hook should complete calculations of the cost of vectorizing a loop or basic block based on :samp:`{data}`, and return the prologue, body, and epilogue costs as unsigned integers.  The default returns the value of the three accumulators.
 
-.. function:: void TARGET_VECTORIZE_DESTROY_COST_DATA(void *data)
+.. function:: void TARGET_VECTORIZE_DESTROY_COST_DATA (void *data)
 
   This hook should release :samp:`{data}` and any related data structures allocated by TARGET_VECTORIZE_INIT_COST.  The default releases the accumulator.
 
-.. function:: tree TARGET_VECTORIZE_BUILTIN_GATHER(const_tree mem_vectype,const_tree index_type,int scale)
+.. function:: tree TARGET_VECTORIZE_BUILTIN_GATHER (const_tree mem_vectype, const_tree index_type, int scale)
 
   Target builtin that implements vector gather operation.  :samp:`{mem_vectype}`
   is the vector type of the load and :samp:`{index_type}` is scalar type of
@@ -519,7 +504,7 @@ address;  but often a machine-dependent strategy can generate better code.
   The default is ``NULL_TREE`` which means to not vectorize gather
   loads.
 
-.. function:: tree TARGET_VECTORIZE_BUILTIN_SCATTER(const_tree vectype,const_tree index_type,int scale)
+.. function:: tree TARGET_VECTORIZE_BUILTIN_SCATTER (const_tree vectype, const_tree index_type, int scale)
 
   Target builtin that implements vector scatter operation.  :samp:`{vectype}`
   is the vector type of the store and :samp:`{index_type}` is scalar type of
@@ -527,7 +512,7 @@ address;  but often a machine-dependent strategy can generate better code.
   The default is ``NULL_TREE`` which means to not vectorize scatter
   stores.
 
-.. function:: int TARGET_SIMD_CLONE_COMPUTE_VECSIZE_AND_SIMDLEN(struct cgraph_node* ,struct cgraph_simd_clone* ,tree,int)
+.. function:: int TARGET_SIMD_CLONE_COMPUTE_VECSIZE_AND_SIMDLEN (struct cgraph_node *, struct cgraph_simd_clone *, tree, int)
 
   This hook should set :samp:`{vecsize_mangle}`, :samp:`{vecsize_int}`, :samp:`{vecsize_float}`
   fields in :samp:`{simd_clone}` structure pointed by :samp:`{clone_info}` argument and also
@@ -535,30 +520,30 @@ address;  but often a machine-dependent strategy can generate better code.
   The hook should return 0 if SIMD clones shouldn't be emitted,
   or number of :samp:`{vecsize_mangle}` variants that should be emitted.
 
-.. function:: void TARGET_SIMD_CLONE_ADJUST(struct cgraph_node* )
+.. function:: void TARGET_SIMD_CLONE_ADJUST (struct cgraph_node *)
 
   This hook should add implicit ``attribute(target("..."))`` attribute
   to SIMD clone :samp:`{node}` if needed.
 
-.. function:: int TARGET_SIMD_CLONE_USABLE(struct cgraph_node* )
+.. function:: int TARGET_SIMD_CLONE_USABLE (struct cgraph_node *)
 
   This hook should return -1 if SIMD clone :samp:`{node}` shouldn't be used
   in vectorized loops in current function, or non-negative number if it is
   usable.  In that case, the smaller the number is, the more desirable it is
   to use it.
 
-.. function:: int TARGET_SIMT_VF(void )
+.. function:: int TARGET_SIMT_VF (void)
 
   Return number of threads in SIMT thread group on the target.
 
-.. function:: int TARGET_OMP_DEVICE_KIND_ARCH_ISA(enum omp_device_kind_arch_isatrait,const char* name)
+.. function:: int TARGET_OMP_DEVICE_KIND_ARCH_ISA (enum omp_device_kind_arch_isa trait, const char *name)
 
   Return 1 if :samp:`{trait}` :samp:`{name}` is present in the OpenMP context's
   device trait set, return 0 if not present in any OpenMP context in the
   whole translation unit, or -1 if not present in the current OpenMP context
   but might be present in another OpenMP context in the same TU.
 
-.. function:: bool TARGET_GOACC_VALIDATE_DIMS(tree decl,int *dims,int fn_level,unsigned used)
+.. function:: bool TARGET_GOACC_VALIDATE_DIMS (tree decl, int *dims, int fn_level, unsigned used)
 
   This hook should check the launch dimensions provided for an OpenACC
   compute region, or routine.  Defaulted values are represented as -1
@@ -571,12 +556,12 @@ address;  but often a machine-dependent strategy can generate better code.
   true, if changes have been made.  You must override this hook to
   provide dimensions larger than 1.
 
-.. function:: int TARGET_GOACC_DIM_LIMIT(int axis)
+.. function:: int TARGET_GOACC_DIM_LIMIT (int axis)
 
   This hook should return the maximum size of a particular dimension,
   or zero if unbounded.
 
-.. function:: bool TARGET_GOACC_FORK_JOIN(gcall *call,const int* dims,bool is_fork)
+.. function:: bool TARGET_GOACC_FORK_JOIN (gcall *call, const int *dims, bool is_fork)
 
   This hook can be used to convert IFN_GOACC_FORK and IFN_GOACC_JOIN
   function calls to target-specific gimple, or indicate whether they
@@ -586,7 +571,7 @@ address;  but often a machine-dependent strategy can generate better code.
   gimple has been inserted before it, or there is no need for it).
   The default hook returns false, if there are no RTL expanders for them.
 
-.. function:: void TARGET_GOACC_REDUCTION(gcall *call)
+.. function:: void TARGET_GOACC_REDUCTION (gcall *call)
 
   This hook is used by the oacc_transform pass to expand calls to the
   :samp:`{GOACC_REDUCTION}` internal function, into a sequence of gimple
@@ -595,7 +580,7 @@ address;  but often a machine-dependent strategy can generate better code.
   expanded sequence has been inserted.  This hook is also responsible
   for allocating any storage for reductions when necessary.
 
-.. function:: tree TARGET_PREFERRED_ELSE_VALUE(unsigned ifn,tree type,unsigned nops,tree *ops)
+.. function:: tree TARGET_PREFERRED_ELSE_VALUE (unsigned ifn, tree type, unsigned nops, tree *ops)
 
   This hook returns the target's preferred final argument for a call
   to conditional internal function :samp:`{ifn}` (really of type

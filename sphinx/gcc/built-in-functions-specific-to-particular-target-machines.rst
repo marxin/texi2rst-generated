@@ -283,7 +283,7 @@ by a target may cause problems. At present the compiler is not
 guaranteed to detect such misuse, and as a result an internal compiler
 error may be generated.
 
-.. function:: int __builtin_arc_aligned(void *val,int alignval)
+.. function:: int __builtin_arc_aligned (void *val, int alignval)
 
   Return 1 if :samp:`{val}` is known to have the byte alignment given
   by :samp:`{alignval}`, otherwise return 0.
@@ -298,7 +298,7 @@ error may be generated.
   as well as from the pointed-to type.
   The information available will depend on optimization level.
 
-.. function:: void __builtin_arc_brk(void )
+.. function:: void __builtin_arc_brk (void)
 
   Generates
 
@@ -306,7 +306,7 @@ error may be generated.
 
     brk
 
-.. function:: unsigned int __builtin_arc_core_read(unsigned intregno)
+.. function:: unsigned int __builtin_arc_core_read (unsigned int regno)
 
   The operand is the number of a register to be read.  Generates:
 
@@ -317,7 +317,7 @@ error may be generated.
   where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: void __builtin_arc_core_write(unsigned intregno,unsigned intval)
+.. function:: void __builtin_arc_core_write (unsigned int regno, unsigned int val)
 
   The first operand is the number of a register to be written, the
   second operand is a compile time constant to write into that
@@ -327,7 +327,7 @@ error may be generated.
 
     mov  rregno, val
 
-.. function:: int __builtin_arc_divaw(int a,int b)
+.. function:: int __builtin_arc_divaw (int a, int b)
 
   Only available if either :option:`-mcpu=ARC700` or :option:`-meA` is set.
   Generates:
@@ -339,7 +339,7 @@ error may be generated.
   where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: void __builtin_arc_flag(unsigned inta)
+.. function:: void __builtin_arc_flag (unsigned int a)
 
   Generates
 
@@ -347,7 +347,7 @@ error may be generated.
 
     flag  a
 
-.. function:: unsigned int __builtin_arc_lr(unsigned intauxr)
+.. function:: unsigned int __builtin_arc_lr (unsigned int auxr)
 
   The operand, :samp:`{auxv}`, is the address of an auxiliary register and
   must be a compile time constant.  Generates:
@@ -359,7 +359,7 @@ error may be generated.
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: void __builtin_arc_mul64(int a,int b)
+.. function:: void __builtin_arc_mul64 (int a, int b)
 
   Only available with :option:`-mmul64`.  Generates:
 
@@ -367,7 +367,7 @@ error may be generated.
 
     mul64  a, b
 
-.. function:: void __builtin_arc_mulu64(unsigned inta,unsigned intb)
+.. function:: void __builtin_arc_mulu64 (unsigned int a, unsigned int b)
 
   Only available with :option:`-mmul64`.  Generates:
 
@@ -375,7 +375,7 @@ error may be generated.
 
     mulu64  a, b
 
-.. function:: void __builtin_arc_nop(void )
+.. function:: void __builtin_arc_nop (void)
 
   Generates:
 
@@ -383,7 +383,7 @@ error may be generated.
 
     nop
 
-.. function:: int __builtin_arc_norm(int src)
+.. function:: int __builtin_arc_norm (int src)
 
   Only valid if the :samp:`norm` instruction is available through the
   :option:`-mnorm` option or by default with :option:`-mcpu=ARC700`.
@@ -396,7 +396,7 @@ error may be generated.
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: short int __builtin_arc_normw(short intsrc)
+.. function:: short int __builtin_arc_normw (short int src)
 
   Only valid if the :samp:`normw` instruction is available through the
   :option:`-mnorm` option or by default with :option:`-mcpu=ARC700`.
@@ -409,7 +409,7 @@ error may be generated.
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: void __builtin_arc_rtie(void )
+.. function:: void __builtin_arc_rtie (void)
 
   Generates:
 
@@ -417,7 +417,7 @@ error may be generated.
 
     rtie
 
-.. function:: void __builtin_arc_sleep(int a
+.. function:: void __builtin_arc_sleep (int a
 
   Generates:
 
@@ -425,7 +425,7 @@ error may be generated.
 
     sleep  a
 
-.. function:: void __builtin_arc_sr(unsigned intval,unsigned intauxr)
+.. function:: void __builtin_arc_sr (unsigned int val, unsigned int auxr)
 
   The first argument, :samp:`{val}`, is a compile time constant to be
   written to the register, the second argument, :samp:`{auxr}`, is the
@@ -435,7 +435,7 @@ error may be generated.
 
     sr  val, [auxr]
 
-.. function:: int __builtin_arc_swap(int src)
+.. function:: int __builtin_arc_swap (int src)
 
   Only valid with :option:`-mswap`.  Generates:
 
@@ -446,7 +446,7 @@ error may be generated.
   Where the value in :samp:`{dest}` will be the result returned from the
   built-in.
 
-.. function:: void __builtin_arc_swi(void )
+.. function:: void __builtin_arc_swi (void)
 
   Generates:
 
@@ -454,7 +454,7 @@ error may be generated.
 
     swi
 
-.. function:: void __builtin_arc_sync(void )
+.. function:: void __builtin_arc_sync (void)
 
   Only available with :option:`-mcpu=ARC700`.  Generates:
 
@@ -462,7 +462,7 @@ error may be generated.
 
     sync
 
-.. function:: void __builtin_arc_trap_s(unsigned intc)
+.. function:: void __builtin_arc_trap_s (unsigned int c)
 
   Only available with :option:`-mcpu=ARC700`.  Generates:
 
@@ -470,7 +470,7 @@ error may be generated.
 
     trap_s  c
 
-.. function:: void __builtin_arc_unimp_s(void )
+.. function:: void __builtin_arc_unimp_s (void)
 
   Only available with :option:`-mcpu=ARC700`.  Generates:
 
@@ -1076,15 +1076,15 @@ BPF Built-in Functions
 
 The following built-in functions are available for eBPF targets.
 
-.. function:: unsigned longlong __builtin_bpf_load_byte(unsigned longlong offset)
+.. function:: unsigned long long __builtin_bpf_load_byte (unsigned long long offset)
 
   Load a byte from the ``struct sk_buff`` packet data pointed by the register ``%r6`` and return it.
 
-.. function:: unsigned longlong __builtin_bpf_load_half(unsigned longlong offset)
+.. function:: unsigned long long __builtin_bpf_load_half (unsigned long long offset)
 
   Load 16-bits from the ``struct sk_buff`` packet data pointed by the register ``%r6`` and return it.
 
-.. function:: unsigned longlong __builtin_bpf_load_word(unsigned longlong offset)
+.. function:: unsigned long long __builtin_bpf_load_word (unsigned long long offset)
 
   Load 32-bits from the ``struct sk_buff`` packet data pointed by the register ``%r6`` and return it.
 
@@ -2904,36 +2904,36 @@ NDS32 Built-in Functions
 
 These built-in functions are available for the NDS32 target:
 
-.. function:: void __builtin_nds32_isync(int *addr)
+.. function:: void __builtin_nds32_isync (int *addr)
 
   Insert an ISYNC instruction into the instruction stream where
   :samp:`{addr}` is an instruction address for serialization.
 
-.. function:: void __builtin_nds32_isb(void )
+.. function:: void __builtin_nds32_isb (void)
 
   Insert an ISB instruction into the instruction stream.
 
-.. function:: int __builtin_nds32_mfsr(int sr)
+.. function:: int __builtin_nds32_mfsr (int sr)
 
   Return the content of a system register which is mapped by :samp:`{sr}`.
 
-.. function:: int __builtin_nds32_mfusr(int usr)
+.. function:: int __builtin_nds32_mfusr (int usr)
 
   Return the content of a user space register which is mapped by :samp:`{usr}`.
 
-.. function:: void __builtin_nds32_mtsr(int value,int sr)
+.. function:: void __builtin_nds32_mtsr (int value, int sr)
 
   Move the :samp:`{value}` to a system register which is mapped by :samp:`{sr}`.
 
-.. function:: void __builtin_nds32_mtusr(int value,int usr)
+.. function:: void __builtin_nds32_mtusr (int value, int usr)
 
   Move the :samp:`{value}` to a user space register which is mapped by :samp:`{usr}`.
 
-.. function:: void __builtin_nds32_setgie_en(void )
+.. function:: void __builtin_nds32_setgie_en (void)
 
   Enable global interrupt.
 
-.. function:: void __builtin_nds32_setgie_dis(void )
+.. function:: void __builtin_nds32_setgie_dis (void)
 
   Disable global interrupt.
 
@@ -2996,12 +2996,12 @@ additional PowerPC built-in functions.
 Basic PowerPC Built-in Functions Available on all Configurations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. function:: void __builtin_cpu_init(void )
+.. function:: void __builtin_cpu_init (void)
 
   This function is a ``nop`` on the PowerPC platform and is included solely
   to maintain API compatibility with the x86 builtins.
 
-.. function:: int __builtin_cpu_is(const char* cpuname)
+.. function:: int __builtin_cpu_is (const char *cpuname)
 
   This function returns a value of ``1`` if the run-time CPU is of type
   :samp:`{cpuname}` and returns ``0`` otherwise
@@ -3080,7 +3080,7 @@ Basic PowerPC Built-in Functions Available on all Configurations
            do_generic (); // Generic implementation.
         }
 
-.. function:: int __builtin_cpu_supports(const char* feature)
+.. function:: int __builtin_cpu_supports (const char *feature)
 
   This function returns a value of ``1`` if the run-time CPU supports the HWCAP
   feature :samp:`{feature}` and returns ``0`` otherwise.
@@ -5805,7 +5805,7 @@ RISC-V Built-in Functions
 These built-in functions are available for the RISC-V family of
 processors.
 
-.. function:: void * __builtin_thread_pointer(void )
+.. function:: void * __builtin_thread_pointer (void)
 
   Returns the value that is currently set in the :samp:`tp` register.
 
@@ -5818,112 +5818,112 @@ GCC supports some of the RX instructions which cannot be expressed in
 the C programming language via the use of built-in functions.  The
 following functions are supported:
 
-.. function:: void __builtin_rx_brk(void )
+.. function:: void __builtin_rx_brk (void)
 
   Generates the ``brk`` machine instruction.
 
-.. function:: void __builtin_rx_clrpsw(int )
+.. function:: void __builtin_rx_clrpsw (int)
 
   Generates the ``clrpsw`` machine instruction to clear the specified
   bit in the processor status word.
 
-.. function:: void __builtin_rx_int(int )
+.. function:: void __builtin_rx_int (int)
 
   Generates the ``int`` machine instruction to generate an interrupt
   with the specified value.
 
-.. function:: void __builtin_rx_machi(int ,int )
+.. function:: void __builtin_rx_machi (int, int)
 
   Generates the ``machi`` machine instruction to add the result of
   multiplying the top 16 bits of the two arguments into the
   accumulator.
 
-.. function:: void __builtin_rx_maclo(int ,int )
+.. function:: void __builtin_rx_maclo (int, int)
 
   Generates the ``maclo`` machine instruction to add the result of
   multiplying the bottom 16 bits of the two arguments into the
   accumulator.
 
-.. function:: void __builtin_rx_mulhi(int ,int )
+.. function:: void __builtin_rx_mulhi (int, int)
 
   Generates the ``mulhi`` machine instruction to place the result of
   multiplying the top 16 bits of the two arguments into the
   accumulator.
 
-.. function:: void __builtin_rx_mullo(int ,int )
+.. function:: void __builtin_rx_mullo (int, int)
 
   Generates the ``mullo`` machine instruction to place the result of
   multiplying the bottom 16 bits of the two arguments into the
   accumulator.
 
-.. function:: int __builtin_rx_mvfachi(void )
+.. function:: int  __builtin_rx_mvfachi (void)
 
   Generates the ``mvfachi`` machine instruction to read the top
   32 bits of the accumulator.
 
-.. function:: int __builtin_rx_mvfacmi(void )
+.. function:: int  __builtin_rx_mvfacmi (void)
 
   Generates the ``mvfacmi`` machine instruction to read the middle
   32 bits of the accumulator.
 
-.. function:: int __builtin_rx_mvfc(int )
+.. function:: int __builtin_rx_mvfc (int)
 
   Generates the ``mvfc`` machine instruction which reads the control
   register specified in its argument and returns its value.
 
-.. function:: void __builtin_rx_mvtachi(int )
+.. function:: void __builtin_rx_mvtachi (int)
 
   Generates the ``mvtachi`` machine instruction to set the top
   32 bits of the accumulator.
 
-.. function:: void __builtin_rx_mvtaclo(int )
+.. function:: void __builtin_rx_mvtaclo (int)
 
   Generates the ``mvtaclo`` machine instruction to set the bottom
   32 bits of the accumulator.
 
-.. function:: void __builtin_rx_mvtc(int reg,int val)
+.. function:: void __builtin_rx_mvtc (int reg, int val)
 
   Generates the ``mvtc`` machine instruction which sets control
   register number ``reg`` to ``val``.
 
-.. function:: void __builtin_rx_mvtipl(int )
+.. function:: void __builtin_rx_mvtipl (int)
 
   Generates the ``mvtipl`` machine instruction set the interrupt
   priority level.
 
-.. function:: void __builtin_rx_racw(int )
+.. function:: void __builtin_rx_racw (int)
 
   Generates the ``racw`` machine instruction to round the accumulator
   according to the specified mode.
 
-.. function:: int __builtin_rx_revw(int )
+.. function:: int __builtin_rx_revw (int)
 
   Generates the ``revw`` machine instruction which swaps the bytes in
   the argument so that bits 0-7 now occupy bits 8-15 and vice versa,
   and also bits 16-23 occupy bits 24-31 and vice versa.
 
-.. function:: void __builtin_rx_rmpa(void )
+.. function:: void __builtin_rx_rmpa (void)
 
   Generates the ``rmpa`` machine instruction which initiates a
   repeated multiply and accumulate sequence.
 
-.. function:: void __builtin_rx_round(float )
+.. function:: void __builtin_rx_round (float)
 
   Generates the ``round`` machine instruction which returns the
   floating-point argument rounded according to the current rounding mode
   set in the floating-point status word register.
 
-.. function:: int __builtin_rx_sat(int )
+.. function:: int __builtin_rx_sat (int)
 
   Generates the ``sat`` machine instruction which returns the
   saturated value of the argument.
 
-.. function:: void __builtin_rx_setpsw(int )
+.. function:: void __builtin_rx_setpsw (int)
 
   Generates the ``setpsw`` machine instruction to set the specified
   bit in the processor status word.
 
-.. function:: void __builtin_rx_wait(void )
+.. function:: void __builtin_rx_wait (void)
 
   Generates the ``wait`` machine instruction.
 
@@ -5932,7 +5932,7 @@ following functions are supported:
 S/390 System z Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. function:: int __builtin_tbegin(void* )
+.. function:: int __builtin_tbegin (void*)
 
   Generates the ``tbegin`` machine instruction starting a
   non-constrained hardware transaction.  If the parameter is non-NULL the
@@ -5974,26 +5974,26 @@ Macros for the possible return codes of tbegin are defined in the
   The transaction aborted due to a persistent failure.  Re-execution
   under same circumstances will not be productive.
 
-.. index:: _HTM_FIRST_USER_ABORT_CODE
+.. macro:: _HTM_FIRST_USER_ABORT_CODE
 
-Macro_HTM_FIRST_USER_ABORT_CODEThe ``_HTM_FIRST_USER_ABORT_CODE`` defined in ``htmintrin.h``
-specifies the first abort code which can be used for
-``__builtin_tabort``.  Values below this threshold are reserved for
-machine use.
+  The ``_HTM_FIRST_USER_ABORT_CODE`` defined in ``htmintrin.h``
+  specifies the first abort code which can be used for
+  ``__builtin_tabort``.  Values below this threshold are reserved for
+  machine use.
 
 .. index:: struct __htm_tdb
 
-Data typestruct __htm_tdbThe ``struct __htm_tdb`` defined in ``htmintrin.h`` describes
+Data type struct __htm_tdbThe ``struct __htm_tdb`` defined in ``htmintrin.h`` describes
 the structure of the transaction diagnostic block as specified in the
 Principles of Operation manual chapter 5-91.
 
-.. function:: int __builtin_tbegin_nofloat(void* )
+.. function:: int __builtin_tbegin_nofloat (void*)
 
   Same as ``__builtin_tbegin`` but without FPR saves and restores.
   Using this variant in code making use of FPRs will leave the FPRs in
   undefined state when entering the transaction abort handler code.
 
-.. function:: int __builtin_tbegin_retry(void* ,int )
+.. function:: int __builtin_tbegin_retry (void*, int)
 
   In addition to ``__builtin_tbegin`` a loop for transient failures
   is generated.  If tbegin returns a condition code of 2 the transaction
@@ -6001,44 +6001,44 @@ Principles of Operation manual chapter 5-91.
   perform processor assist instruction is used to tell the CPU about the
   number of fails so far.
 
-.. function:: int __builtin_tbegin_retry_nofloat(void* ,int )
+.. function:: int __builtin_tbegin_retry_nofloat (void*, int)
 
   Same as ``__builtin_tbegin_retry`` but without FPR saves and
   restores.  Using this variant in code making use of FPRs will leave
   the FPRs in undefined state when entering the transaction abort
   handler code.
 
-.. function:: void __builtin_tbeginc(void )
+.. function:: void __builtin_tbeginc (void)
 
   Generates the ``tbeginc`` machine instruction starting a constrained
   hardware transaction.  The second operand is set to ``0xff08``.
 
-.. function:: int __builtin_tend(void )
+.. function:: int __builtin_tend (void)
 
   Generates the ``tend`` machine instruction finishing a transaction
   and making the changes visible to other threads.  The condition code
   generated by tend is returned as integer value.
 
-.. function:: void __builtin_tabort(int )
+.. function:: void __builtin_tabort (int)
 
   Generates the ``tabort`` machine instruction with the specified
   abort code.  Abort codes from 0 through 255 are reserved and will
   result in an error message.
 
-.. function:: void __builtin_tx_assist(int )
+.. function:: void __builtin_tx_assist (int)
 
   Generates the ``ppa rX,rY,1`` machine instruction.  Where the
   integer parameter is loaded into rX and a value of zero is loaded into
   rY.  The integer parameter specifies the number of times the
   transaction repeatedly aborted.
 
-.. function:: int __builtin_tx_nesting_depth(void )
+.. function:: int __builtin_tx_nesting_depth (void)
 
   Generates the ``etnd`` machine instruction.  The current nesting
   depth is returned as integer value.  For a nesting depth of 0 the code
   is not executed as part of an transaction.
 
-.. function:: void __builtin_non_tx_store(uint64_t *,uint64_t )
+.. function:: void __builtin_non_tx_store (uint64_t *, uint64_t)
 
   Generates the ``ntstg`` machine instruction.  The second argument
   is written to the first arguments location.  The store operation will
@@ -6052,7 +6052,7 @@ SH Built-in Functions
 The following built-in functions are supported on the SH1, SH2, SH3 and SH4
 families of processors:
 
-.. function:: void __builtin_set_thread_pointer(void *ptr)
+.. function:: void __builtin_set_thread_pointer (void *ptr)
 
   Sets the :samp:`GBR` register to the specified value :samp:`{ptr}`.  This is usually
   used by system code that manages threads and execution contexts.  The compiler
@@ -6061,7 +6061,7 @@ families of processors:
   value in user code must be done with caution, since the compiler might use
   :samp:`GBR` in order to access thread local variables.
 
-.. function:: void * __builtin_thread_pointer(void )
+.. function:: void * __builtin_thread_pointer (void)
 
   Returns the value that is currently set in the :samp:`GBR` register.
   Memory loads and stores that use the thread pointer as a base address are
@@ -6081,11 +6081,11 @@ families of processors:
       return ((my_tcb*)__builtin_thread_pointer ())->c;
     }
 
-.. function:: unsigned int __builtin_sh_get_fpscr(void )
+.. function:: unsigned int __builtin_sh_get_fpscr (void)
 
   Returns the value that is currently set in the :samp:`FPSCR` register.
 
-.. function:: void __builtin_sh_set_fpscr(unsigned intval)
+.. function:: void __builtin_sh_set_fpscr (unsigned int val)
 
   Sets the :samp:`FPSCR` register to the specified value :samp:`{val}`, while
   preserving the current values of the FR, SZ and PR bits.
@@ -6493,7 +6493,7 @@ The following built-in functions are always available.
   The following built-in functions are always available and can be used to
 check the target platform type.
 
-.. function:: void __builtin_cpu_init(void )
+.. function:: void __builtin_cpu_init (void)
 
   This function runs the CPU detection code to check the type of CPU and the
   features supported.  This built-in function needs to be invoked along with the built-in functions
@@ -6523,7 +6523,7 @@ check the target platform type.
     void *memcpy (void *, const void *, size_t)
          __attribute__ ((ifunc ("resolve_memcpy")));
 
-.. function:: int __builtin_cpu_is(const char* cpuname)
+.. function:: int __builtin_cpu_is (const char *cpuname)
 
   This function returns a positive integer if the run-time CPU
   is of type :samp:`{cpuname}`
@@ -6680,7 +6680,7 @@ check the target platform type.
          do_generic (); // Generic implementation.
       }
 
-.. function:: int __builtin_cpu_supports(const char* feature)
+.. function:: int __builtin_cpu_supports (const char *feature)
 
   This function returns a positive integer if the run-time CPU
   supports :samp:`{feature}`
@@ -8075,7 +8075,7 @@ and all side effects discarded.
 Generally there is no guarantee that a memory transaction ever succeeds
 and suitable fallback code always needs to be supplied.
 
-.. function:: unsigned _xbegin()
+.. function:: unsigned _xbegin ()
 
   Start a RTM (Restricted Transactional Memory) transaction. 
   Returns ``_XBEGIN_STARTED`` when the transaction
@@ -8109,17 +8109,17 @@ and suitable fallback code always needs to be supplied.
   any transaction ever succeeds, so there always needs to be a valid
   fallback path.
 
-.. function:: void _xend()
+.. function:: void _xend ()
 
   Commit the current transaction. When no transaction is active this faults.
   All memory side effects of the transaction become visible
   to other threads in an atomic manner.
 
-.. function:: int _xtest()
+.. function:: int _xtest ()
 
   Return a nonzero value if a transaction is currently active, otherwise 0.
 
-.. function:: void _xabort(status )
+.. function:: void _xabort (status)
 
   Abort the current transaction. When no transaction is active this is a no-op.
   The :samp:`{status}` is an 8-bit constant; its value is encoded in the return 
@@ -8160,14 +8160,14 @@ must synchronize together to ensure consistency.
 x86 Control-Flow Protection Intrinsics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. function:: ret_type _get_ssp(void )
+.. function:: ret_type _get_ssp (void)
 
   Get the current value of shadow stack pointer if shadow stack support
   from Intel CET is enabled in the hardware or ``0`` otherwise.
   The ``ret_type`` is ``unsigned long long`` for 64-bit targets 
   and ``unsigned int`` for 32-bit targets.
 
-.. function:: void _inc_ssp(unsigned int)
+.. function:: void _inc_ssp (unsigned int)
 
   Increment the current shadow stack pointer by the size specified by the
   function argument.  The argument is masked to a byte value for security

@@ -9,50 +9,50 @@ hardware support for arithmetic operations on some modes.
 Arithmetic functions
 ^^^^^^^^^^^^^^^^^^^^
 
-.. function:: int __ashlsi3(int a,int b)
+.. function:: int __ashlsi3 (int a, int b)
 
   These functions return the result of shifting :samp:`{a}` left by :samp:`{b}` bits.
 
-.. function:: int __ashrsi3(int a,int b)
+.. function:: int __ashrsi3 (int a, int b)
 
   These functions return the result of arithmetically shifting :samp:`{a}` right
   by :samp:`{b}` bits.
 
-.. function:: int __divsi3(int a,int b)
+.. function:: int __divsi3 (int a, int b)
 
   These functions return the quotient of the signed division of :samp:`{a}` and
   :samp:`{b}`.
 
-.. function:: int __lshrsi3(int a,int b)
+.. function:: int __lshrsi3 (int a, int b)
 
   These functions return the result of logically shifting :samp:`{a}` right by
   :samp:`{b}` bits.
 
-.. function:: int __modsi3(int a,int b)
+.. function:: int __modsi3 (int a, int b)
 
   These functions return the remainder of the signed division of :samp:`{a}`
   and :samp:`{b}`.
 
-.. function:: int __mulsi3(int a,int b)
+.. function:: int __mulsi3 (int a, int b)
 
   These functions return the product of :samp:`{a}` and :samp:`{b}`.
 
-.. function:: long __negdi2(long a)
+.. function:: long __negdi2 (long a)
 
   These functions return the negation of :samp:`{a}`.
 
-.. function:: unsigned int __udivsi3(unsigned inta,unsigned intb)
+.. function:: unsigned int __udivsi3 (unsigned int a, unsigned int b)
 
   These functions return the quotient of the unsigned division of :samp:`{a}`
   and :samp:`{b}`.
 
-.. function:: unsigned long __udivmoddi4(unsigned longa,unsigned longb,unsigned long* c)
+.. function:: unsigned long __udivmoddi4 (unsigned long a, unsigned long b, unsigned long *c)
 
   These functions calculate both the quotient and remainder of the unsigned
   division of :samp:`{a}` and :samp:`{b}`.  The return value is the quotient, and
   the remainder is placed in variable pointed to by :samp:`{c}`.
 
-.. function:: unsigned int __umodsi3(unsigned inta,unsigned intb)
+.. function:: unsigned int __umodsi3 (unsigned int a, unsigned int b)
 
   These functions return the remainder of the unsigned division of :samp:`{a}`
   and :samp:`{b}`.
@@ -67,13 +67,13 @@ constructed.  The returned values lie in the range zero to two, to allow
 the high-level operators to be implemented by testing the returned
 result using either signed or unsigned comparison.
 
-.. function:: int __cmpdi2(long a,long b)
+.. function:: int __cmpdi2 (long a, long b)
 
   These functions perform a signed comparison of :samp:`{a}` and :samp:`{b}`.  If
   :samp:`{a}` is less than :samp:`{b}`, they return 0; if :samp:`{a}` is greater than
   :samp:`{b}`, they return 2; and if :samp:`{a}` and :samp:`{b}` are equal they return 1.
 
-.. function:: int __ucmpdi2(unsigned longa,unsigned longb)
+.. function:: int __ucmpdi2 (unsigned long a, unsigned long b)
 
   These functions perform an unsigned comparison of :samp:`{a}` and :samp:`{b}`.
   If :samp:`{a}` is less than :samp:`{b}`, they return 0; if :samp:`{a}` is greater than
@@ -85,25 +85,25 @@ Trapping arithmetic functions
 The following functions implement trapping arithmetic.  These functions
 call the libc function ``abort`` upon signed arithmetic overflow.
 
-.. function:: int __absvsi2(int a)
+.. function:: int __absvsi2 (int a)
 
   These functions return the absolute value of :samp:`{a}`.
 
-.. function:: int __addvsi3(int a,int b)
+.. function:: int __addvsi3 (int a, int b)
 
   These functions return the sum of :samp:`{a}` and :samp:`{b}` ; that is
   ``a + b``.
 
-.. function:: int __mulvsi3(int a,int b)
+.. function:: int __mulvsi3 (int a, int b)
 
   The functions return the product of :samp:`{a}` and :samp:`{b}` ; that is
   ``a * b``.
 
-.. function:: int __negvsi2(int a)
+.. function:: int __negvsi2 (int a)
 
   These functions return the negation of :samp:`{a}` ; that is ``-a``.
 
-.. function:: int __subvsi3(int a,int b)
+.. function:: int __subvsi3 (int a, int b)
 
   These functions return the difference between :samp:`{b}` and :samp:`{a}` ;
   that is ``a - b``.
@@ -111,34 +111,34 @@ call the libc function ``abort`` upon signed arithmetic overflow.
 Bit operations
 ^^^^^^^^^^^^^^
 
-.. function:: int __clzsi2(unsigned inta)
+.. function:: int __clzsi2 (unsigned int a)
 
   These functions return the number of leading 0-bits in :samp:`{a}`, starting
   at the most significant bit position.  If :samp:`{a}` is zero, the result is
   undefined.
 
-.. function:: int __ctzsi2(unsigned inta)
+.. function:: int __ctzsi2 (unsigned int a)
 
   These functions return the number of trailing 0-bits in :samp:`{a}`, starting
   at the least significant bit position.  If :samp:`{a}` is zero, the result is
   undefined.
 
-.. function:: int __ffsdi2(unsigned longa)
+.. function:: int __ffsdi2 (unsigned long a)
 
   These functions return the index of the least significant 1-bit in :samp:`{a}`,
   or the value zero if :samp:`{a}` is zero.  The least significant bit is index
   one.
 
-.. function:: int __paritysi2(unsigned inta)
+.. function:: int __paritysi2 (unsigned int a)
 
   These functions return the value zero if the number of bits set in
   :samp:`{a}` is even, and the value one otherwise.
 
-.. function:: int __popcountsi2(unsigned inta)
+.. function:: int __popcountsi2 (unsigned int a)
 
   These functions return the number of bits set in :samp:`{a}`.
 
-.. function:: int32_t __bswapsi2(int32_t a)
+.. function:: int32_t __bswapsi2 (int32_t a)
 
   These functions return the :samp:`{a}` byteswapped.
 

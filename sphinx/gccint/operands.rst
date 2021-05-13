@@ -190,15 +190,15 @@ the code of a given statement, its operand vector will be at
 different offsets from the base of the structure.  To access
 tuple operands use the following accessors
 
-.. function:: unsigned gimple_num_ops(gimple g)
+.. function:: unsigned gimple_num_ops (gimple g)
 
   Returns the number of operands in statement G.
 
-.. function:: tree gimple_op(gimple g,unsigned i)
+.. function:: tree gimple_op (gimple g, unsigned i)
 
   Returns operand ``I`` from statement ``G``.
 
-.. function:: tree * gimple_ops(gimple g)
+.. function:: tree * gimple_ops (gimple g)
 
   Returns a pointer into the operand vector for statement ``G``.  This
   is computed using an internal table called ``gimple_ops_offset_`` [].
@@ -224,50 +224,50 @@ vector.  These predicates are called by the
 ``gimple_name_set_...()``.  Each tuple will use one of the
 following predicates (Note, this list is not exhaustive):
 
-.. function:: bool is_gimple_val(tree t)
+.. function:: bool is_gimple_val (tree t)
 
   Returns true if t is a "GIMPLE value", which are all the
   non-addressable stack variables (variables for which
   ``is_gimple_reg`` returns true) and constants (expressions for which
   ``is_gimple_min_invariant`` returns true).
 
-.. function:: bool is_gimple_addressable(tree t)
+.. function:: bool is_gimple_addressable (tree t)
 
   Returns true if t is a symbol or memory reference whose address
   can be taken.
 
-.. function:: bool is_gimple_asm_val(tree t)
+.. function:: bool is_gimple_asm_val (tree t)
 
   Similar to ``is_gimple_val`` but it also accepts hard registers.
 
-.. function:: bool is_gimple_call_addr(tree t)
+.. function:: bool is_gimple_call_addr (tree t)
 
   Return true if t is a valid expression to use as the function
   called by a ``GIMPLE_CALL``.
 
-.. function:: bool is_gimple_mem_ref_addr(tree t)
+.. function:: bool is_gimple_mem_ref_addr (tree t)
 
   Return true if t is a valid expression to use as first operand
   of a ``MEM_REF`` expression.
 
-.. function:: bool is_gimple_constant(tree t)
+.. function:: bool is_gimple_constant (tree t)
 
   Return true if t is a valid gimple constant.
 
-.. function:: bool is_gimple_min_invariant(tree t)
+.. function:: bool is_gimple_min_invariant (tree t)
 
   Return true if t is a valid minimal invariant.  This is different
   from constants, in that the specific value of t may not be known
   at compile time, but it is known that it doesn't change (e.g.,
   the address of a function local variable).
 
-.. function:: bool is_gimple_ip_invariant(tree t)
+.. function:: bool is_gimple_ip_invariant (tree t)
 
   Return true if t is an interprocedural invariant.  This means that t
   is a valid invariant in all functions (e.g. it can be an address of a
   global variable but not of a local one).
 
-.. function:: bool is_gimple_ip_invariant_address(tree t)
+.. function:: bool is_gimple_ip_invariant_address (tree t)
 
   Return true if t is an ``ADDR_EXPR`` that does not change once the
   program is running (and which is valid in all functions).
@@ -275,43 +275,43 @@ following predicates (Note, this list is not exhaustive):
 Statement validation
 ^^^^^^^^^^^^^^^^^^^^
 
-.. function:: bool is_gimple_assign(gimple g)
+.. function:: bool is_gimple_assign (gimple g)
 
   Return true if the code of g is ``GIMPLE_ASSIGN``.
 
-.. function:: bool is_gimple_call(gimple g)
+.. function:: bool is_gimple_call (gimple g)
 
   Return true if the code of g is ``GIMPLE_CALL``.
 
-.. function:: bool is_gimple_debug(gimple g)
+.. function:: bool is_gimple_debug (gimple g)
 
   Return true if the code of g is ``GIMPLE_DEBUG``.
 
-.. function:: bool gimple_assign_cast_p(const_gimple g)
+.. function:: bool gimple_assign_cast_p (const_gimple g)
 
   Return true if g is a ``GIMPLE_ASSIGN`` that performs a type cast
   operation.
 
-.. function:: bool gimple_debug_bind_p(gimple g)
+.. function:: bool gimple_debug_bind_p (gimple g)
 
   Return true if g is a ``GIMPLE_DEBUG`` that binds the value of an
   expression to a variable.
 
-.. function:: bool is_gimple_omp(gimple g)
+.. function:: bool is_gimple_omp (gimple g)
 
   Return true if g is any of the OpenMP codes.
 
-.. function:: bool gimple_debug_begin_stmt_p(gimple g)
+.. function:: bool gimple_debug_begin_stmt_p (gimple g)
 
   Return true if g is a ``GIMPLE_DEBUG`` that marks the beginning of
   a source statement.
 
-.. function:: bool gimple_debug_inline_entry_p(gimple g)
+.. function:: bool gimple_debug_inline_entry_p (gimple g)
 
   Return true if g is a ``GIMPLE_DEBUG`` that marks the entry
   point of an inlined function.
 
-.. function:: bool gimple_debug_nonbind_marker_p(gimple g)
+.. function:: bool gimple_debug_nonbind_marker_p (gimple g)
 
   Return true if g is a ``GIMPLE_DEBUG`` that marks a program location,
   without any variable binding.

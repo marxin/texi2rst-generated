@@ -108,7 +108,7 @@ reserved for the memory order.  The remainder of the signed int is reserved
 for target use and should be 0.  Use of the predefined atomic values
 ensures proper usage.
 
-.. function:: type __atomic_load_n(type*ptr ,int memorder)
+.. function:: type __atomic_load_n (type *ptr, int memorder)
 
   This built-in function implements an atomic load operation.  It returns the
   contents of ``*ptr``.
@@ -117,12 +117,12 @@ ensures proper usage.
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, ``__ATOMIC_ACQUIRE``,
   and ``__ATOMIC_CONSUME``.
 
-.. function:: void __atomic_load(type*ptr ,type*ret ,int memorder)
+.. function:: void __atomic_load (type *ptr, type *ret, int memorder)
 
   This is the generic version of an atomic load.  It returns the
   contents of ``*ptr`` in ``*ret``.
 
-.. function:: void __atomic_store_n(type*ptr ,typeval ,int memorder)
+.. function:: void __atomic_store_n (type *ptr, type val, int memorder)
 
   This built-in function implements an atomic store operation.  It writes 
   ``val`` into ``*ptr``.  
@@ -130,12 +130,12 @@ ensures proper usage.
   The valid memory order variants are
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, and ``__ATOMIC_RELEASE``.
 
-.. function:: void __atomic_store(type*ptr ,type*val ,int memorder)
+.. function:: void __atomic_store (type *ptr, type *val, int memorder)
 
   This is the generic version of an atomic store.  It stores the value
   of ``*val`` into ``*ptr``.
 
-.. function:: type __atomic_exchange_n(type*ptr ,typeval ,int memorder)
+.. function:: type __atomic_exchange_n (type *ptr, type val, int memorder)
 
   This built-in function implements an atomic exchange operation.  It writes
   :samp:`{val}` into ``*ptr``, and returns the previous contents of
@@ -145,13 +145,13 @@ ensures proper usage.
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, ``__ATOMIC_ACQUIRE``,
   ``__ATOMIC_RELEASE``, and ``__ATOMIC_ACQ_REL``.
 
-.. function:: void __atomic_exchange(type*ptr ,type*val ,type*ret ,int memorder)
+.. function:: void __atomic_exchange (type *ptr, type *val, type *ret, int memorder)
 
   This is the generic version of an atomic exchange.  It stores the
   contents of ``*val`` into ``*ptr``. The original value
   of ``*ptr`` is copied into ``*ret``.
 
-.. function:: bool __atomic_compare_exchange_n(type*ptr ,type*expected ,typedesired ,bool weak,int success_memorder,int failure_memorder)
+.. function:: bool __atomic_compare_exchange_n (type *ptr, type *expected, type desired, bool weak, int success_memorder, int failure_memorder)
 
   This built-in function implements an atomic compare and exchange operation.
   This compares the contents of ``*ptr`` with the contents of
@@ -174,14 +174,14 @@ ensures proper usage.
   ``__ATOMIC_RELEASE`` nor ``__ATOMIC_ACQ_REL``.  It also cannot be a
   stronger order than that specified by :samp:`{success_memorder}`.
 
-.. function:: bool __atomic_compare_exchange(type*ptr ,type*expected ,type*desired ,bool weak,int success_memorder,int failure_memorder)
+.. function:: bool __atomic_compare_exchange (type *ptr, type *expected, type *desired, bool weak, int success_memorder, int failure_memorder)
 
   This built-in function implements the generic version of
   ``__atomic_compare_exchange``.  The function is virtually identical to
   ``__atomic_compare_exchange_n``, except the desired value is also a
   pointer.
 
-.. function:: type __atomic_add_fetch(type*ptr ,typeval ,int memorder)
+.. function:: type __atomic_add_fetch (type *ptr, type val, int memorder)
 
   These built-in functions perform the operation suggested by the name, and
   return the result of the operation.  Operations on pointer arguments are
@@ -196,7 +196,7 @@ ensures proper usage.
   The object pointed to by the first argument must be of integer or pointer
   type.  It must not be a boolean type.  All memory orders are valid.
 
-.. function:: type __atomic_fetch_add(type*ptr ,typeval ,int memorder)
+.. function:: type __atomic_fetch_add (type *ptr, type val, int memorder)
 
   These built-in functions perform the operation suggested by the name, and
   return the value that had previously been in ``*ptr``.  Operations
@@ -212,7 +212,7 @@ ensures proper usage.
   The same constraints on arguments apply as for the corresponding
   ``__atomic_op_fetch`` built-in functions.  All memory orders are valid.
 
-.. function:: bool __atomic_test_and_set(void *ptr,int memorder)
+.. function:: bool __atomic_test_and_set (void *ptr, int memorder)
 
   This built-in function performs an atomic test-and-set operation on
   the byte at ``*ptr``.  The byte is set to some implementation
@@ -223,7 +223,7 @@ ensures proper usage.
 
   All memory orders are valid.
 
-.. function:: void __atomic_clear(bool *ptr,int memorder)
+.. function:: void __atomic_clear (bool *ptr, int memorder)
 
   This built-in function performs an atomic clear operation on
   ``*ptr``.  After the operation, ``*ptr`` contains 0.
@@ -236,21 +236,21 @@ ensures proper usage.
   ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, and
   ``__ATOMIC_RELEASE``.
 
-.. function:: void __atomic_thread_fence(int memorder)
+.. function:: void __atomic_thread_fence (int memorder)
 
   This built-in function acts as a synchronization fence between threads
   based on the specified memory order.
 
   All memory orders are valid.
 
-.. function:: void __atomic_signal_fence(int memorder)
+.. function:: void __atomic_signal_fence (int memorder)
 
   This built-in function acts as a synchronization fence between a thread
   and signal handlers based in the same thread.
 
   All memory orders are valid.
 
-.. function:: bool __atomic_always_lock_free(size_t size,void *ptr)
+.. function:: bool __atomic_always_lock_free (size_t size,  void *ptr)
 
   This built-in function returns ``true`` if objects of :samp:`{size}` bytes always
   generate lock-free atomic instructions for the target architecture.
@@ -265,7 +265,7 @@ ensures proper usage.
 
     if (__atomic_always_lock_free (sizeof (long long), 0))
 
-.. function:: bool __atomic_is_lock_free(size_t size,void *ptr)
+.. function:: bool __atomic_is_lock_free (size_t size, void *ptr)
 
   This built-in function returns ``true`` if objects of :samp:`{size}` bytes always
   generate lock-free atomic instructions for the target architecture.  If

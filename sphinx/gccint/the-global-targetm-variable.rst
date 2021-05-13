@@ -9,7 +9,7 @@ The Global ``targetm`` Variable
 
 .. index:: targetm
 
-Variablestruct gcc_targettargetmThe target .c file must define the global ``targetm`` variable
+Variable struct gcc_target targetmThe target .c file must define the global ``targetm`` variable
 which contains pointers to functions and data relating to the target
 machine.  The variable is declared in target.h;
 target-def.h defines the macro ``TARGET_INITIALIZER`` which is

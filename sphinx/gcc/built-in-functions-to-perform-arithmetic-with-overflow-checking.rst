@@ -6,7 +6,7 @@ Built-in Functions to Perform Arithmetic with Overflow Checking
 The following built-in functions allow performing simple arithmetic operations
 together with checking whether the operations overflowed.
 
-.. function:: bool __builtin_add_overflow(type1a ,type2b ,type3*res )
+.. function:: bool __builtin_add_overflow (type1 a, type2 b, type3 *res)
 
   These built-in functions promote the first two operands into infinite precision signed
   type and perform addition on those promoted operands.  The result is then
@@ -24,13 +24,13 @@ together with checking whether the operations overflowed.
   these built-in functions where possible, like conditional jump on overflow
   after addition, conditional jump on carry etc.
 
-.. function:: bool __builtin_sub_overflow(type1a ,type2b ,type3*res )
+.. function:: bool __builtin_sub_overflow (type1 a, type2 b, type3 *res)
 
   These built-in functions are similar to the add overflow checking built-in
   functions above, except they perform subtraction, subtract the second argument
   from the first one, instead of addition.
 
-.. function:: bool __builtin_mul_overflow(type1a ,type2b ,type3*res )
+.. function:: bool __builtin_mul_overflow (type1 a, type2 b, type3 *res)
 
   These built-in functions are similar to the add overflow checking built-in
   functions above, except they perform multiplication, instead of addition.
@@ -38,7 +38,7 @@ together with checking whether the operations overflowed.
 The following built-in functions allow checking if simple arithmetic operation
 would overflow.
 
-.. function:: bool __builtin_add_overflow_p(type1a ,type2b ,type3c )
+.. function:: bool __builtin_add_overflow_p (type1 a, type2 b, type3 c)
 
   These built-in functions are similar to ``__builtin_add_overflow``,
   ``__builtin_sub_overflow``, or ``__builtin_mul_overflow``, except that

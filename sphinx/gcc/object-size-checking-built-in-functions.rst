@@ -49,7 +49,7 @@ follow pointer assignments through non-trivial control flow they rely
 on various optimization passes enabled with :option:`-O2`.  However, to
 a limited extent, they can be used without optimization as well.
 
-.. function:: size_t __builtin_object_size(const void* ptr,int type)
+.. function:: size_t __builtin_object_size (const void * ptr, int type)
 
   is a built-in construct that returns a constant number of bytes from
   :samp:`{ptr}` to the end of the object :samp:`{ptr}` pointer points to
