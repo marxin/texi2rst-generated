@@ -26,5 +26,5 @@ omp_set_nest_lock - Wait for and set nested lock
   omp_init_nest_lock, omp_unset_nest_lock
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.3.4.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.
 

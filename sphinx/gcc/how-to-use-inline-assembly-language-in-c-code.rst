@@ -135,8 +135,8 @@ occur.  This assumption may change in a future release.
 To avoid complications from future changes to the semantics and the
 compatibility issues between compilers, consider replacing basic ``asm``
 with extended ``asm``.  See
-https://gcc.gnu.org/wiki/ConvertBasicAsmToExtendedHow to convert
-from basic asm to extended asm for information about how to perform this
+`How to convert
+from basic asm to extended asm <https://gcc.gnu.org/wiki/ConvertBasicAsmToExtended>`_ for information about how to perform this
 conversion.
 
 The compiler copies the assembler instructions in a basic ``asm`` 

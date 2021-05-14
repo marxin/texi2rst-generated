@@ -11,10 +11,10 @@ http://www.nag.co.uk//sc22wg5//links.html.  Fortran is developed by the
 Working Group 5 of Sub-Committee 22 of the Joint Technical Committee 1 of the
 International Organization for Standardization and the International
 Electrotechnical Commission (IEC).  This group is known as
-http://www.nag.co.uk/sc22wg5/WG5.
+`WG5 <http://www.nag.co.uk/sc22wg5/>`_.
 
 The GNU Fortran compiler supports several of the new features of Fortran 2008;
-the https://gcc.gnu.org/wiki/Fortran2008Statuswiki has some information
+the `wiki <https://gcc.gnu.org/wiki/Fortran2008Status>`_ has some information
 about the current Fortran 2008 implementation status.  In particular, the
 following is implemented.
 

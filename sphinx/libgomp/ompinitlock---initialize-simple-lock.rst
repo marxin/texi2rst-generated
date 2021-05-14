@@ -24,5 +24,5 @@ omp_init_lock - Initialize simple lock
   omp_destroy_lock
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.3.1.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.1.
 

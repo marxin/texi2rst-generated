@@ -31,10 +31,10 @@ Introduction
 
 This manual documents the usage of libgomp, the GNU Offloading and
 Multi Processing Runtime Library.  This includes the GNU
-implementation of the https://www.openmp.orgOpenMP Application
+implementation of the `OpenMP <https://www.openmp.org>`_ Application
 Programming Interface (API) for multi-platform shared-memory parallel
 programming in C/C++ and Fortran, and the GNU implementation of the
-https://www.openacc.orgOpenACC Application Programming
+`OpenACC <https://www.openacc.org>`_ Application Programming
 Interface (API) for offloading of code to accelerator devices in C/C++
 and Fortran.
 

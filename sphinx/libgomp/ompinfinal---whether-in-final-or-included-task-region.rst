@@ -21,5 +21,5 @@ omp_in_final - Whether in final or included task region
   ============  ===================================
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.21.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.21.
 

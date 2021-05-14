@@ -48,7 +48,7 @@ In C++, if an initializer is present for a thread-local variable, it must
 be a :samp:`{constant-expression}`, as defined in 5.19.2 of the ANSI/ISO C++
 standard.
 
-See https://www.akkadia.org/drepper/tls.pdfELF Handling For Thread-Local Storage for a detailed explanation of
+See `ELF Handling For Thread-Local Storage <https://www.akkadia.org/drepper/tls.pdf>`_ for a detailed explanation of
 the four thread-local storage addressing models, and how the runtime
 is expected to function.
 

@@ -13,7 +13,7 @@ arranges for automatic linking of the OpenMP runtime library
 (Runtime Library Routines).
 
 A complete description of all OpenMP directives accepted may be found in 
-the https://www.openmp.orgOpenMP Application Program Interface manual,
+the `OpenMP Application Program Interface <https://www.openmp.org>`_ manual,
 version 4.5.
 
 .. -

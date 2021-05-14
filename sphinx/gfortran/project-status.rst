@@ -27,15 +27,15 @@ still under development and has a few remaining rough edges.
 There also is initial support for OpenACC.
 
 At present, the GNU Fortran compiler passes the
-http://www.fortran-2000.com/ArnaudRecipes/fcvs21_f95.htmlNIST Fortran 77 Test Suite, and produces acceptable results on the
-http://www.netlib.org/lapack/faq.html#1.21LAPACK Test Suite.
+`NIST Fortran 77 Test Suite <http://www.fortran-2000.com/ArnaudRecipes/fcvs21_f95.html>`_, and produces acceptable results on the
+`LAPACK Test Suite <http://www.netlib.org/lapack/faq.html#1.21>`_.
 It also provides respectable performance on
-the http://www.polyhedron.com/fortran-compiler-comparisons/polyhedron-benchmark-suitePolyhedron Fortran
-compiler benchmarks and the
-http://www.netlib.org/benchmark/livermoreLivermore Fortran Kernels test.  It has been used to compile a number of
+the `Polyhedron Fortran
+compiler benchmarks <http://www.polyhedron.com/fortran-compiler-comparisons/polyhedron-benchmark-suite>`_ and the
+`Livermore Fortran Kernels test <http://www.netlib.org/benchmark/livermore>`_.  It has been used to compile a number of
 large real-world programs, including
-http://hirlam.org/the HARMONIE and HIRLAM weather forecasting code and
-http://physical-chemistry.scb.uwa.edu.au/tonto/wiki/index.php/Main_Pagethe Tonto quantum chemistry package; see
+`the HARMONIE and HIRLAM weather forecasting code <http://hirlam.org/>`_ and
+`the Tonto quantum chemistry package <http://physical-chemistry.scb.uwa.edu.au/tonto/wiki/index.php/Main_Page>`_; see
 https://gcc.gnu.org//wiki//GfortranApps for an extended list.
 
 Among other things, the GNU Fortran compiler is intended as a replacement

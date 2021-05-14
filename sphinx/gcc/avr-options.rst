@@ -150,7 +150,7 @@ These options are defined for AVR implementations:
   respectively.  Possible values for :samp:`{bits}` are 32 and 64.
   Whether or not a specific value for :samp:`{bits}` is allowed depends on
   the ``--with-double=`` and ``--with-long-double=``
-  https://gcc.gnu.org/install/configure.html#avrconfigure options,
+  `configure options <https://gcc.gnu.org/install/configure.html#avr>`_,
   and the same applies for the default values of the options.
 
 .. option:: -mgas-isr-prologues
@@ -161,7 +161,7 @@ These options are defined for AVR implementations:
   ISRs by means of the AVR Function Attributes``no_gccisr``
   function attribute.  This feature is activated per default
   if optimization is on (but not with :option:`-Og`, see :ref:`optimize-options`),
-  and if GNU Binutils support https://sourceware.org/PR21683PR21683.
+  and if GNU Binutils support `PR21683 <https://sourceware.org/PR21683>`_.
 
 .. option:: -mint8
 
@@ -335,7 +335,7 @@ the compiler and are subject to some limitations:
 * The startup code from libgcc never sets ``EIND``.
   Notice that startup code is a blend of code from libgcc and AVR-LibC.
   For the impact of AVR-LibC on ``EIND``, see the
-  http://nongnu.org/avr-libc/user-manual/AVR-LibC user manual.
+  `AVR-LibC user manual <http://nongnu.org/avr-libc/user-manual/>`_.
 
 * It is legitimate for user-specific startup code to set up ``EIND``
   early, for example by means of initialization code located in
@@ -622,10 +622,10 @@ AVR Named Address Spaces and AVR Built-in Functions.
 
 ``__WITH_DOUBLE_COMPARISON__``
   Reflects the ``--with-double-comparison={tristate|bool|libf7}``
-  https://gcc.gnu.org/install/configure.html#avrconfigure option
+  `configure option <https://gcc.gnu.org/install/configure.html#avr>`_
   and is defined to ``2`` or ``3``.
 
 ``__WITH_LIBF7_LIBGCC__`` ``__WITH_LIBF7_MATH__`` ``__WITH_LIBF7_MATH_SYMBOLS__``
   Reflects the ``--with-libf7={libgcc|math|math-symbols}``
-  https://gcc.gnu.org/install/configure.html#avrconfigure option.
+  `configure option <https://gcc.gnu.org/install/configure.html#avr>`_.
 

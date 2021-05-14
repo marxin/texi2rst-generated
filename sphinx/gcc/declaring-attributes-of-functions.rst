@@ -1455,7 +1455,7 @@ The following attributes are supported on most targets.
   in the same or another translation unit).  Generated versions are
   target-dependent and described in the corresponding Vector ABI document.  For
   x86_64 target this document can be found
-  https://sourceware.org/glibc/wiki/libmvec?action=AttachFile&do=view&target=VectorABI.txthere.
+  `here <https://sourceware.org/glibc/wiki/libmvec?action=AttachFile&do=view&target=VectorABI.txt>`_.
 
   The optional argument :samp:`{mask}` may have the value
   ``notinbranch`` or ``inbranch``,

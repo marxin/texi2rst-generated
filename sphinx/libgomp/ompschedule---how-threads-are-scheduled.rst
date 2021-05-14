@@ -18,5 +18,5 @@ OMP_SCHEDULE - How threads are scheduled
   omp_set_schedule
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Sections 2.7.1.1 and 4.1
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Sections 2.7.1.1 and 4.1
 

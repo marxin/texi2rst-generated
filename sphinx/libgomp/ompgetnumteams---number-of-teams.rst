@@ -19,5 +19,5 @@ omp_get_num_teams - Number of teams
   ============  ========================================
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.32.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.32.
 

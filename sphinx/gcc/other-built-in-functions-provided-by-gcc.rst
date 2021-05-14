@@ -1836,7 +1836,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   Similar to ``__builtin_nan``, except the significand is forced
   to be a signaling NaN.  The ``nans`` function is proposed by
-  http://www.open-std.org/jtc1/sc22/wg14/www/docs/n965.htmWG14 N965.
+  `WG14 N965 <http://www.open-std.org/jtc1/sc22/wg14/www/docs/n965.htm>`_.
 
 .. function:: _Decimal32 __builtin_nansd32 (const char *str)
 

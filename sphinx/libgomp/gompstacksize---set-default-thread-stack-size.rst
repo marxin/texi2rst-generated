@@ -18,6 +18,6 @@ GOMP_STACKSIZE - Set default thread stack size
   OMP_STACKSIZE
 
 :samp:`{Reference}: `
-  https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00493.htmlGCC Patches Mailinglist, 
-  https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00496.htmlGCC Patches Mailinglist
+  `GCC Patches Mailinglist <https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00493.html>`_, 
+  `GCC Patches Mailinglist <https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00496.html>`_
 

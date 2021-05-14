@@ -4,7 +4,7 @@ Installing GCC
 --------------
 
 The latest version of this document is always available at
-http://gcc.gnu.org/install/http://gcc.gnu.org/install/.
+`http://gcc.gnu.org/install/ <http://gcc.gnu.org/install/>`_.
 It refers to the current development sources, instructions for
 specific released versions are included with the sources.
 

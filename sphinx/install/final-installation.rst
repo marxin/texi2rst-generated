@@ -120,8 +120,8 @@ printing with programs such as :command:`dvips`.  Alternately, by using
 :samp:`make pdf` in place of :samp:`make dvi`, you can create documentation
 in the form of .pdf files; this requires :command:`texi2pdf`, which
 is included with Texinfo version 4.8 and later.  You can also
-https://shop.fsf.org/buy printed manuals from the
-Free Software Foundation, though such manuals may not be for the most
+`buy printed manuals from the
+Free Software Foundation <https://shop.fsf.org/>`_, though such manuals may not be for the most
 recent version of GCC.
 
 If you would like to generate online HTML documentation, do :samp:`cd

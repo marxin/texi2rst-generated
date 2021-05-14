@@ -17,8 +17,8 @@ the named constants defined in the modules are listed
 below.
 
 For details refer to the actual
-http://www.openmp.org/wp-content/uploads/openmp-4.5.pdfOpenMP Application Program Interface v4.5 and
-https://www.openmp.org/wp-content/uploads/OpenMP-API-Specification-5.0.pdfOpenMP Application Program Interface v5.0.
+`OpenMP Application Program Interface v4.5 <http://www.openmp.org/wp-content/uploads/openmp-4.5.pdf>`_ and
+`OpenMP Application Program Interface v5.0 <https://www.openmp.org/wp-content/uploads/OpenMP-API-Specification-5.0.pdf>`_.
 
 ``OMP_LIB_KINDS`` provides the following scalar default-integer
 named constants:

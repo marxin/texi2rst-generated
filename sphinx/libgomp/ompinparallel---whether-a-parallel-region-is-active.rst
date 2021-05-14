@@ -21,5 +21,5 @@ omp_in_parallel - Whether a parallel region is active
   ============  ======================================
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.6.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.6.
 

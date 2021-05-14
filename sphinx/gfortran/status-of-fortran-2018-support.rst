@@ -21,7 +21,7 @@ TS 29113 Status (Further Interoperability with C)
 
 GNU Fortran supports some of the new features of the Technical
 Specification (TS) 29113 on Further Interoperability of Fortran with C.
-The https://gcc.gnu.org/wiki/TS29113Statuswiki has some information
+The `wiki <https://gcc.gnu.org/wiki/TS29113Status>`_ has some information
 about the current TS 29113 implementation status.  In particular, the
 following is implemented.
 

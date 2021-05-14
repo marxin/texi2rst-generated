@@ -16,5 +16,5 @@ OMP_STACKSIZE - Set default thread stack size
   dependent.
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Section 4.7
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.7
 

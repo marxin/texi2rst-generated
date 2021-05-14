@@ -92,7 +92,7 @@ section to make clear that your version contains modifications.
   Specify the URL root that contains GCC option documentation.  The :samp:`{url}`
   should end with a ``/`` character.
 
-  The default value is https://gcc.gnu.org/onlinedocs/https://gcc.gnu.org/onlinedocs/.
+  The default value is `https://gcc.gnu.org/onlinedocs/ <https://gcc.gnu.org/onlinedocs/>`_.
 
 .. option:: --with-changes-root-url=url
 
@@ -100,7 +100,7 @@ section to make clear that your version contains modifications.
   releases like ``gcc-version/changes.html``.
   The :samp:`{url}` should end with a ``/`` character.
 
-  The default value is https://gcc.gnu.org/https://gcc.gnu.org/.
+  The default value is `https://gcc.gnu.org/ <https://gcc.gnu.org/>`_.
 
 Target specification* GCC has code to correctly determine the correct value for :samp:`{target}`
   for nearly all native systems.  Therefore, we highly recommend you do
@@ -1066,8 +1066,8 @@ corresponding :option:`--without` option.
 
   .. _aixldcommand:
   For detailed information please refer to the AIX
-  https://www.ibm.com/support/knowledgecenter/search/%22the%20ld%20command%2C%20also%20called%20the%20linkage%20editor%20or%20binder%22ld
-  Command reference.
+  `ld
+  Command <https://www.ibm.com/support/knowledgecenter/search/%22the%20ld%20command%2C%20also%20called%20the%20linkage%20editor%20or%20binder%22>`_ reference.
 
   As long as shared library creation is enabled, upon:
 
@@ -1820,7 +1820,7 @@ Cross-Compiler-Specific OptionsThe following options only apply to building cros
   being used as the target C  library.  This causes float support
   functions like ``__addsf3`` to be omitted from libgcc.a on
   the assumption that it will be provided by libm.a.  For more
-  technical details, cf. http://gcc.gnu.org/PR54461PR54461.
+  technical details, cf. `PR54461 <http://gcc.gnu.org/PR54461>`_.
   It is not supported for
   RTEMS configurations, which currently use newlib.  The option is
   supported since version 4.7.2 and is the default in 4.8.0 and newer.

@@ -27,5 +27,5 @@ omp_test_lock - Test and set simple lock if available
   omp_init_lock, omp_set_lock, omp_set_lock
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.3.6.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.6.
 

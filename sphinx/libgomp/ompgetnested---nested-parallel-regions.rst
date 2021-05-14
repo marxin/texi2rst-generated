@@ -40,5 +40,5 @@ omp_get_nested - Nested parallel regions
   OMP_MAX_ACTIVE_LEVELS, OMP_NESTED
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.11.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.11.
 

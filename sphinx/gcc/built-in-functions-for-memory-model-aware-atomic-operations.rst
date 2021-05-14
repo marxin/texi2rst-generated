@@ -34,8 +34,8 @@ All objects must be the same size.
 
 There are 6 different memory orders that can be specified.  These map
 to the C++11 memory orders with the same names, see the C++11 standard
-or the http://gcc.gnu.org/wiki/Atomic/GCCMM/AtomicSyncGCC wiki
-on atomic synchronization for detailed definitions.  Individual
+or the `GCC wiki
+on atomic synchronization <http://gcc.gnu.org/wiki/Atomic/GCCMM/AtomicSync>`_ for detailed definitions.  Individual
 targets may also support additional memory orders for use on specific
 architectures.  Refer to the target documentation for details of
 these.

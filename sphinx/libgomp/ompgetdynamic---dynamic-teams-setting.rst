@@ -29,5 +29,5 @@ omp_get_dynamic - Dynamic teams setting
   omp_set_dynamic, OMP_DYNAMIC
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.8.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.8.
 

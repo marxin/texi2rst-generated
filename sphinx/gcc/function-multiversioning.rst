@@ -56,6 +56,6 @@ of foo is created by using the same function signature but with a
 different target string.  Function foo is called or a pointer to it is
 taken just like a regular function.  GCC takes care of doing the
 dispatching to call the right version at runtime.  Refer to the
-http://gcc.gnu.org/wiki/FunctionMultiVersioningGCC wiki on
-Function Multiversioning for more details.
+`GCC wiki on
+Function Multiversioning <http://gcc.gnu.org/wiki/FunctionMultiVersioning>`_ for more details.
 

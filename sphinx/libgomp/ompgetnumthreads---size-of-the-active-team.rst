@@ -30,5 +30,5 @@ omp_get_num_threads - Size of the active team
   omp_get_max_threads, omp_set_num_threads, OMP_NUM_THREADS
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.2.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.2.
 

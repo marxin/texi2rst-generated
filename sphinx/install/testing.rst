@@ -12,7 +12,7 @@ Testing
 Before you install GCC, we encourage you to run the testsuites and to
 compare your results with results from a similar configuration that have
 been submitted to the
-http://gcc.gnu.org/ml/gcc-testresults/gcc-testresults mailing list.
+`gcc-testresults mailing list <http://gcc.gnu.org/ml/gcc-testresults/>`_.
 Some of these archived results are linked from the build status lists
 at http://gcc.gnu.org/buildstat.html, although not everyone who
 reports a successful build runs the testsuites and submits the results.
@@ -26,7 +26,7 @@ These are part of the full distribution, but if you downloaded the
 separately.
 
 Second, you must have the testing tools installed.  This includes
-http://www.gnu.org/software/dejagnu/DejaGnu, Tcl, and Expect;
+`DejaGnu <http://www.gnu.org/software/dejagnu/>`_, Tcl, and Expect;
 the DejaGnu site has links to these.
 Some optional tests also require Python3 and pytest module.
 

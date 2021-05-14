@@ -4,7 +4,7 @@ Reporting Bugs
 --------------
 
 Bugs in the GNU Offloading and Multi Processing Runtime Library should
-be reported via https://gcc.gnu.org/bugzilla/Bugzilla.  Please add
+be reported via `Bugzilla <https://gcc.gnu.org/bugzilla/>`_.  Please add
 "openacc", or "openmp", or both to the keywords field in the bug
 report, as appropriate.
 

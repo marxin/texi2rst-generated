@@ -21,8 +21,8 @@ atomics):
 
   __transaction_atomic { if (a > b) b++; }
 
-GCC follows the https://sites.google.com/site/tmforcplusplus/Draft
-Specification of Transactional Language Constructs for C++ (v1.1) in its
+GCC follows the `Draft
+Specification of Transactional Language Constructs for C++ (v1.1) <https://sites.google.com/site/tmforcplusplus/>`_ in its
 implementation of transactions.
 
 The precise semantics of transactions are defined in terms of the C++11/C11

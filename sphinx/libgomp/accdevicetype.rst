@@ -4,6 +4,6 @@ ACC_DEVICE_TYPE
 ***************
 
 :samp:`{Reference}:`
-  https://www.openacc.orgOpenACC specification v2.6, section
+  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   4.1.
 

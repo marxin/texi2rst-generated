@@ -19,5 +19,5 @@ omp_get_num_procs - Number of processors online
   ============  ========================================
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.5.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.5.
 

@@ -1580,7 +1580,7 @@ alphabetical order.
 
 * Branko Cibej for more warning contributions.
 
-* The http://www.gnu.org/software/classpath/GNU Classpath project
+* The `GNU Classpath project <http://www.gnu.org/software/classpath/>`_
   for all of their merged runtime code.
 
 * Nick Clifton for arm, mcore, fr30, v850, m32r, msp430 rx work,

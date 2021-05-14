@@ -16,7 +16,7 @@ is called prior to a call to ``cudaCreate()``. If ``cudaCreate()``
 is called prior to a call to an OpenACC function, then you must call
 ``acc_set_device_num()``More complete information
 about :envvar:`ACC_DEVICE_TYPE` and :envvar:`ACC_DEVICE_NUM` can be found in
-sections 4.1 and 4.2 of the https://www.openacc.orgOpenACC
+sections 4.1 and 4.2 of the `OpenACC <https://www.openacc.org>`_
 Application Programming Interface”, Version 2.6.
 
 .. -

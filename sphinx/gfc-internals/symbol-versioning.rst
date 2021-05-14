@@ -16,13 +16,13 @@ Also, the map file is used to hide local symbols.
 
 Some relevant references:
 
-* https://sourceware.org/binutils/docs/ld/VERSION.htmlGNU :command:`ld` manual
+* `GNU ld manual <https://sourceware.org/binutils/docs/ld/VERSION.html>`_
 
-* https://www.akkadia.org/drepper/symbol-versioningELF Symbol
-  Versioning - Ulrich Depper
+* `ELF Symbol
+  Versioning - Ulrich Depper <https://www.akkadia.org/drepper/symbol-versioning>`_
 
-* https://www.akkadia.org/drepper/dsohowto.pdfHow to Write Shared
-  Libraries - Ulrich Drepper (see Chapter 3)
+* `How to Write Shared
+  Libraries - Ulrich Drepper (see Chapter 3) <https://www.akkadia.org/drepper/dsohowto.pdf>`_
 
 If one adds a new symbol to a library that should be exported, the new
 symbol should be mentioned in the map file and a new version node

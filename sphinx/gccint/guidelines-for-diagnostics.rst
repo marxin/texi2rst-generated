@@ -325,7 +325,7 @@ would lead to:
 Coding Conventions
 ^^^^^^^^^^^^^^^^^^
 
-See the https://gcc.gnu.org/codingconventions.html#Diagnosticsdiagnostics section of the GCC coding conventions.
+See the `diagnostics section <https://gcc.gnu.org/codingconventions.html#Diagnostics>`_ of the GCC coding conventions.
 
 In the C++ front end, when comparing two types in a message, use :samp:`%H`
 and :samp:`%I` rather than :samp:`%T`, as this allows the diagnostics
@@ -408,8 +408,8 @@ source code it should not be quoted.
 Spelling and Terminology
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-See the https://gcc.gnu.org/codingconventions.html#Spelling
-Spellingterminology and markup section of the GCC coding conventions.
+See the `terminology and markup <https://gcc.gnu.org/codingconventions.html#Spelling
+Spelling>`_ section of the GCC coding conventions.
 
 Fix-it hints
 ^^^^^^^^^^^^

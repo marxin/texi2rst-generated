@@ -78,7 +78,7 @@ bin/amdgcn-amdhsa-ranlib.
 Use Newlib (2019-01-16, or newer).
 
 To run the binaries, install the HSA Runtime from the
-https://rocm.github.ioROCm Platform, and use
+`ROCm Platform <https://rocm.github.io>`_, and use
 libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run to launch them
 on the GPU.
 
@@ -108,9 +108,9 @@ Use :samp:`configure --target=avr --enable-languages="c"` to configure GCC.
 Further installation notes and other useful information about AVR tools
 can also be obtained from:
 
-* http://www.nongnu.org/avr/http://www.nongnu.org/avr/
+* `http://www.nongnu.org/avr/ <http://www.nongnu.org/avr/>`_
 
-* http://www.amelek.gda.pl/avr/http://www.amelek.gda.pl/avr/
+* `http://www.amelek.gda.pl/avr/ <http://www.amelek.gda.pl/avr/>`_
 
 The following error:
 
@@ -388,11 +388,11 @@ libstdc++-v3 documentation.
 
 .. _ix86-x-linux:
 i?86-*-linux*As of GCC 3.3, binutils 2.13.1 or later is required for this platform.
-See http://gcc.gnu.org/PR10877bug 10877 for more information.
+See `bug 10877 <http://gcc.gnu.org/PR10877>`_ for more information.
 
 If you receive Signal 11 errors when building on GNU/Linux, then it is
 possible you have a hardware problem.  Further information on this can be
-found on http://www.bitwizard.nl/sig11/www.bitwizard.nl.
+found on `www.bitwizard.nl <http://www.bitwizard.nl/sig11/>`_.
 
 .. _ix86-x-solaris2:
 i?86-*-solaris2*Use this for Solaris 11.3 or later on x86 and x86-64 systems.  Starting
@@ -588,19 +588,19 @@ overflow severe error when the :option:`-bbigtoc` option is used to link
 GCC-produced object files into an executable that overflows the TOC.  A fix
 for APAR IX75823 (OVERFLOW DURING LINK WHEN USING GCC AND -BBIGTOC) is
 available from IBM Customer Support and from its
-http://techsupport.services.ibm.com/techsupport.services.ibm.com
+`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
 website as PTF U455193.
 
 The AIX 4.3.2.1 linker (bos.rte.bind_cmds Level 4.3.2.1) will dump core
 with a segmentation fault when invoked by any version of GCC.  A fix for
 APAR IX87327 is available from IBM Customer Support and from its
-http://techsupport.services.ibm.com/techsupport.services.ibm.com
+`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
 website as PTF U461879.  This fix is incorporated in AIX 4.3.3 and above.
 
 The initial assembler shipped with AIX 4.3.0 generates incorrect object
 files.  A fix for APAR IX74254 (64BIT DISASSEMBLED OUTPUT FROM COMPILER FAILS
 TO ASSEMBLE/BIND) is available from IBM Customer Support and from its
-http://techsupport.services.ibm.com/techsupport.services.ibm.com
+`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
 website as PTF U453956.  This fix is incorporated in AIX 4.3.1 and above.
 
 AIX provides National Language Support (NLS).  Compilers and assemblers
@@ -741,7 +741,7 @@ nds32be-*-elfAndes NDS32 target in big endian mode.
 nvptx-*-noneNvidia PTX target.
 
 Instead of GNU binutils, you will need to install
-https://github.com/MentorEmbedded/nvptx-tools/nvptx-tools.
+`nvptx-tools <https://github.com/MentorEmbedded/nvptx-tools/>`_.
 Tell GCC where to find it:
 :option:`--with-build-time-tools=[install-nvptx-tools]/nvptx-none/bin`.
 
@@ -1110,7 +1110,7 @@ UWIN support has been removed due to a lack of maintenance.
 
 .. _x-x-cygwin:
 *-*-cygwinPorts of GCC are included with the
-http://www.cygwin.com/Cygwin environment.
+`Cygwin environment <http://www.cygwin.com/>`_.
 
 GCC will build under Cygwin without modification; it does not build
 with Microsoft's C++ compiler and there are no plans to make it do so.
@@ -1161,7 +1161,7 @@ modern targets.
 
 For some systems, old versions of GNU binutils may also be useful,
 and are available from pub/binutils/old-releases on
-https://sourceware.org/mirrors.htmlsourceware.org mirror sites.
+`sourceware.org mirror sites <https://sourceware.org/mirrors.html>`_.
 
 Some of the information on specific systems above relates to
 such older systems, but much of the information

@@ -23,5 +23,5 @@ omp_get_max_threads - Maximum number of threads of parallel region
   omp_set_num_threads, omp_set_dynamic, omp_get_thread_limit
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.3.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.3.
 

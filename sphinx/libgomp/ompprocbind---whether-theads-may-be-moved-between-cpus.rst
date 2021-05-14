@@ -25,5 +25,5 @@ OMP_PROC_BIND - Whether theads may be moved between CPUs
   OMP_NESTED, OMP_PLACES
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 4.4
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.4
 

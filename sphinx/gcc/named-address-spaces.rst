@@ -139,7 +139,7 @@ locates data in flash but
 accesses to these data read from generic address space, i.e.
 from RAM,
 so that you need special accessors like ``pgm_read_byte``
-from http://nongnu.org/avr-libc/user-manual/AVR-LibC
+from `AVR-LibC <http://nongnu.org/avr-libc/user-manual/>`_
 together with attribute ``progmem``.
 
 Limitations and caveats

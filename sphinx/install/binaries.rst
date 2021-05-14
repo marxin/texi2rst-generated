@@ -18,39 +18,39 @@ contact their makers.
 
 ** AIX:
 
-  ** http://www.bullfreeware.comBull's Open Source Software Archive for
-    for AIX 6 and AIX 7;
+  ** `Bull's Open Source Software Archive for
+    for AIX 6 and AIX 7 <http://www.bullfreeware.com>`_;
 
-  * http://www.perzl.org/aix/AIX Open Source Packages (AIX5L AIX 6.1
-    AIX 7.1).
+  * `AIX Open Source Packages (AIX5L AIX 6.1
+    AIX 7.1) <http://www.perzl.org/aix/>`_.
 
-* DOS-http://www.delorie.com/djgpp/DJGPP.
+* DOS-`DJGPP <http://www.delorie.com/djgpp/>`_.
 
 * HP-UX:
 
-  ** http://hpux.connect.org.uk/HP-UX Porting Center;
+  ** `HP-UX Porting Center <http://hpux.connect.org.uk/>`_;
 
 * Solaris 2 (SPARC, Intel):
 
-  ** https://www.opencsw.org/OpenCSW
+  ** `OpenCSW <https://www.opencsw.org/>`_
 
 * macOS:
 
-  ** The https://brew.shHomebrew package manager;
+  ** The `Homebrew <https://brew.sh>`_ package manager;
 
-  * https://www.macports.orgMacPorts.
+  * `MacPorts <https://www.macports.org>`_.
 
 * Microsoft Windows:
 
-  ** The https://sourceware.org/cygwin/Cygwin project;
+  ** The `Cygwin <https://sourceware.org/cygwin/>`_ project;
 
-  * The http://www.mingw.org/MinGW and
-    http://mingw-w64.org/doku.phpmingw-w64 projects.
+  * The `MinGW <http://www.mingw.org/>`_ and
+    `mingw-w64 <http://mingw-w64.org/doku.php>`_ projects.
 
-* http://www.openpkg.org/OpenPKG offers binaries for quite a
+* `OpenPKG <http://www.openpkg.org/>`_ offers binaries for quite a
   number of platforms.
 
-* The http://gcc.gnu.org/wiki/GFortranBinariesGFortran Wiki has
+* The `GFortran Wiki <http://gcc.gnu.org/wiki/GFortranBinaries>`_ has
   links to GNU Fortran binaries for several platforms.
 
 .. ***Specific****************************************************************

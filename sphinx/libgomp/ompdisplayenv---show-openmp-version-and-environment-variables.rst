@@ -13,5 +13,5 @@ OMP_DISPLAY_ENV - Show OpenMP version and environment variables
   this information will not be shown.
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 4.12
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.12
 

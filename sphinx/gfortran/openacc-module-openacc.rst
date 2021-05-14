@@ -15,7 +15,7 @@ Runtime Library manual, the named constants defined in the modules
 are listed below.
 
 For details refer to the actual
-http://www.openacc.org/OpenACC Application Programming Interface v2.6.
+`OpenACC Application Programming Interface v2.6 <http://www.openacc.org/>`_.
 
 ``OPENACC`` provides the scalar default-integer
 named constant ``openacc_version`` with a value of the form

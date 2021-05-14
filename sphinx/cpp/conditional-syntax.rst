@@ -331,7 +331,7 @@ designates a supported standard attribute it evaluates to an integer
 constant of the form ``YYYYMM`` indicating the year and month when
 the attribute was first introduced into the C++ standard.  For additional
 information including the dates of the introduction of current standard
-attributes, see https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations/SD-6: SG10 Feature Test Recommendations.
+attributes, see `SD-6: SG10 Feature Test Recommendations <https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations/>`_.
 
 __has_c_attribute
 ^^^^^^^^^^^^^^^^^

@@ -15,7 +15,7 @@ arranges for automatic linking of the OpenACC runtime library
 See https://gcc.gnu.org/wiki/OpenACC for more information.
 
 A complete description of all OpenACC directives accepted may be found in 
-the https://www.openacc.orgOpenACC Application Programming
+the `OpenACC <https://www.openacc.org>`_ Application Programming
 Interface manual, version 2.6.
 
 .. -

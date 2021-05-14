@@ -21,5 +21,5 @@ OMP_TARGET_OFFLOAD - Controls offloading behaviour
   If undefined, then the program will behave as if ``DEFAULT`` was set.
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v5.0, Section 6.17
+  `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 6.17
 

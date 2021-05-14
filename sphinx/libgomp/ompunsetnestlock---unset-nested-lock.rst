@@ -27,5 +27,5 @@ omp_unset_nest_lock - Unset nested lock
   omp_set_nest_lock
 
 :samp:`{Reference}: `
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.3.5.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.
 

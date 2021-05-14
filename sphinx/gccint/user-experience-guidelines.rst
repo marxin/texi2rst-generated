@@ -8,7 +8,7 @@ User Experience Guidelines
 .. index:: guidelines, user experience
 
 To borrow a slogan from
-https://elm-lang.org/news/compilers-as-assistantsElm,
+`Elm <https://elm-lang.org/news/compilers-as-assistants>`_,
 
 Compilers should be assistants, not adversaries.  A compiler should
 not just detect bugs, it should then help you understand why there is a bug.

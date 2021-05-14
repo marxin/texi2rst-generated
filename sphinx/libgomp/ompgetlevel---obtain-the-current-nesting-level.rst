@@ -23,5 +23,5 @@ C/C++
   omp_get_active_level
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.17.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.17.
 

@@ -5,7 +5,7 @@ Fortran 2003 status
 
 GNU Fortran supports several Fortran 2003 features; an incomplete
 list can be found below.  See also the
-https://gcc.gnu.org/wiki/Fortran2003wiki page about Fortran 2003.
+`wiki page <https://gcc.gnu.org/wiki/Fortran2003>`_ about Fortran 2003.
 
 ** Procedure pointers including procedure-pointer components with
   ``PASS`` attribute.

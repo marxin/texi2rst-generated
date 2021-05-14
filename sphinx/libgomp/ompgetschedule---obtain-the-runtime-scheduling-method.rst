@@ -27,5 +27,5 @@ C/C++
   omp_set_schedule, OMP_SCHEDULE
 
 :samp:`{Reference}:`
-  https://www.openmp.orgOpenMP specification v4.5, Section 3.2.13.
+  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.13.
 
