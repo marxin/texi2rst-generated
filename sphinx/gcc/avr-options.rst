@@ -286,8 +286,8 @@ These options are defined for AVR implementations:
   Warn if the ISR is misspelled, i.e. without __vector prefix.
   Enabled by default.
 
-``EIND`` and Devices with More Than 128 Ki Bytes of Flash
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EIND and Devices with More Than 128 Ki Bytes of Flash
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. index:: EIND
 
@@ -415,8 +415,8 @@ the compiler and are subject to some limitations:
   and the application be linked with :option:`-Wl,--defsym,func_4=0x4`.
   Alternatively, ``func_4`` can be defined in the linker script.
 
-Handling of the ``RAMPD``, ``RAMPX``, ``RAMPY`` and ``RAMPZ`` Special Function Registers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. index:: RAMPD
 

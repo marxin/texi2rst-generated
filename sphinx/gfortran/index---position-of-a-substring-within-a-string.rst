@@ -1,7 +1,7 @@
   .. _index-intrinsic:
 
-``INDEX`` - Position of a substring within a string
-***************************************************
+INDEX - Position of a substring within a string
+***********************************************
 
 .. index:: INDEX
 

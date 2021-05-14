@@ -1,7 +1,7 @@
   .. _selected_real_kind:
 
-``SELECTED_REAL_KIND`` - Choose real kind
-*****************************************
+SELECTED_REAL_KIND - Choose real kind
+*************************************
 
 .. index:: SELECTED_REAL_KIND
 

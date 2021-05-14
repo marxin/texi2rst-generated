@@ -1,7 +1,7 @@
 .. _gfortran_unbuffered_all:
 
-:envvar:`GFORTRAN_UNBUFFERED_ALL`-Do not buffer I/O on all units
-****************************************************************
+GFORTRAN_UNBUFFERED_ALL-Do not buffer I/O on all units
+******************************************************
 
 This environment variable controls whether all I/O is unbuffered.  If
 the first letter is :samp:`y`, :samp:`Y` or :samp:`1`, all I/O is

@@ -1,7 +1,7 @@
   .. _trim:
 
-``TRIM`` - Remove trailing blank characters of a string
-*******************************************************
+TRIM - Remove trailing blank characters of a string
+***************************************************
 
 .. index:: TRIM
 

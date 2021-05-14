@@ -1,7 +1,7 @@
   .. _kind:
 
-``KIND`` - Kind of an entity
-****************************
+KIND - Kind of an entity
+************************
 
 .. index:: KIND
 

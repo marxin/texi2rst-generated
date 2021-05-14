@@ -1,7 +1,7 @@
   .. _acc_is_present:
 
-``acc_is_present`` - Indicate whether host variable / array is present on device.
-*********************************************************************************
+acc_is_present - Indicate whether host variable / array is present on device.
+*****************************************************************************
 
 Description
   This function indicates whether the specified host address in :samp:`{a}` and a

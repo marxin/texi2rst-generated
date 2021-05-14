@@ -1,7 +1,7 @@
   .. _event_query:
 
-``EVENT_QUERY`` - Query whether a coarray event has occurred
-************************************************************
+EVENT_QUERY - Query whether a coarray event has occurred
+********************************************************
 
 .. index:: EVENT_QUERY
 

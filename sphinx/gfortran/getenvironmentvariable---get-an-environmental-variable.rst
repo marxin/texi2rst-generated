@@ -1,7 +1,7 @@
   .. _get_environment_variable:
 
-``GET_ENVIRONMENT_VARIABLE`` - Get an environmental variable
-************************************************************
+GET_ENVIRONMENT_VARIABLE - Get an environmental variable
+********************************************************
 
 .. index:: GET_ENVIRONMENT_VARIABLE
 

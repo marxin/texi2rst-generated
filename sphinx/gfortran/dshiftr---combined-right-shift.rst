@@ -1,7 +1,7 @@
   .. _dshiftr:
 
-``DSHIFTR`` - Combined right shift
-**********************************
+DSHIFTR - Combined right shift
+******************************
 
 .. index:: DSHIFTR
 

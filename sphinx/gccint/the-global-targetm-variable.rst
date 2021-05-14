@@ -1,7 +1,7 @@
 .. _target-structure:
 
-The Global ``targetm`` Variable
-*******************************
+The Global targetm Variable
+***************************
 
 .. index:: target hooks
 

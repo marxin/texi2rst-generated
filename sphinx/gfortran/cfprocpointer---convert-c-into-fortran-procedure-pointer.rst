@@ -1,7 +1,7 @@
   .. _c_f_procpointer:
 
-``C_F_PROCPOINTER`` - Convert C into Fortran procedure pointer
-**************************************************************
+C_F_PROCPOINTER - Convert C into Fortran procedure pointer
+**********************************************************
 
 .. index:: C_F_PROCPOINTER
 

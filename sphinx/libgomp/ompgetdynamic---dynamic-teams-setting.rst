@@ -1,7 +1,7 @@
   .. _omp_get_dynamic:
 
-``omp_get_dynamic`` - Dynamic teams setting
-*******************************************
+omp_get_dynamic - Dynamic teams setting
+***************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if enabled, ``false`` otherwise. 

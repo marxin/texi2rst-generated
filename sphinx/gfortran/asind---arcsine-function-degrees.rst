@@ -1,7 +1,7 @@
   .. _asind:
 
-``ASIND`` - Arcsine function, degrees
-*************************************
+ASIND - Arcsine function, degrees
+*********************************
 
 .. index:: ASIND
 

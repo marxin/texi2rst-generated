@@ -1,7 +1,7 @@
   .. _ibset:
 
-``IBSET`` - Set bit
-*******************
+IBSET - Set bit
+***************
 
 .. index:: IBSET
 

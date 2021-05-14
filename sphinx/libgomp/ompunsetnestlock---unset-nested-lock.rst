@@ -1,7 +1,7 @@
   .. _omp_unset_nest_lock:
 
-``omp_unset_nest_lock`` - Unset nested lock
-*******************************************
+omp_unset_nest_lock - Unset nested lock
+***************************************
 
 :samp:`{Description}:`
   A nested lock about to be unset must have been locked by ``omp_set_nested_lock``

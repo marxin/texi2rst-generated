@@ -1,7 +1,7 @@
   .. _omp_set_max_active_levels:
 
-``omp_set_max_active_levels`` - Limits the number of active parallel regions
-****************************************************************************
+omp_set_max_active_levels - Limits the number of active parallel regions
+************************************************************************
 
 :samp:`{Description}:`
   This function limits the maximum allowed number of nested, active

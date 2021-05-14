@@ -1,7 +1,7 @@
 .. _target-attributes:
 
-Defining target-specific uses of ``__attribute__``
-**************************************************
+Defining target-specific uses of __attribute__
+**********************************************
 
 .. index:: target attributes
 

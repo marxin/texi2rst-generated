@@ -1,7 +1,7 @@
   .. _omp_max_task_priority:
 
-:envvar:`OMP_MAX_TASK_PRIORITY` - Set the maximum priority
-**********************************************************
+OMP_MAX_TASK_PRIORITY - Set the maximum priority
+************************************************
 
 number that can be set for a task.
 

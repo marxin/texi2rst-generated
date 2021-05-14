@@ -1,7 +1,7 @@
   .. _acc_get_device_type:
 
-``acc_get_device_type`` - Get type of device accelerator to be used.
-********************************************************************
+acc_get_device_type - Get type of device accelerator to be used.
+****************************************************************
 
 Description
   This function returns what device type will be used when executing a

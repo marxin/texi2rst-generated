@@ -1,7 +1,7 @@
   .. _omp_get_wtick:
 
-``omp_get_wtick`` - Get timer precision
-***************************************
+omp_get_wtick - Get timer precision
+***********************************
 
 :samp:`{Description}:`
   Gets the timer precision, i.e., the number of seconds between two 

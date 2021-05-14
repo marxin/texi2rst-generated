@@ -1,7 +1,7 @@
   .. _gomp_debug:
 
-:envvar:`GOMP_DEBUG` - Enable debugging output
-**********************************************
+GOMP_DEBUG - Enable debugging output
+************************************
 
 .. index:: Environment Variable
 

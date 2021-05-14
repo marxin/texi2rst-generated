@@ -1,7 +1,7 @@
   .. _acosh:
 
-``ACOSH`` - Inverse hyperbolic cosine function
-**********************************************
+ACOSH - Inverse hyperbolic cosine function
+******************************************
 
 .. index:: ACOSH
 

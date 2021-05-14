@@ -1,7 +1,7 @@
 .. _collect2:
 
-``collect2``
-------------
+collect2
+--------
 
 GCC uses a utility called ``collect2`` on nearly all systems to arrange
 to call various initialization functions at start time.

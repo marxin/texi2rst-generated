@@ -1,7 +1,7 @@
   .. _maskl:
 
-``MASKL`` - Left justified mask
-*******************************
+MASKL - Left justified mask
+***************************
 
 .. index:: MASKL
 

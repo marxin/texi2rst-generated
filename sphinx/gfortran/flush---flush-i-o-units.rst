@@ -1,7 +1,7 @@
   .. _flush:
 
-``FLUSH`` - Flush I/O unit(s)
-*****************************
+FLUSH - Flush I/O unit(s)
+*************************
 
 .. index:: FLUSH
 

@@ -1,7 +1,7 @@
   .. _atomic_add:
 
-``ATOMIC_ADD`` - Atomic ADD operation
-*************************************
+ATOMIC_ADD - Atomic ADD operation
+*********************************
 
 .. index:: ATOMIC_ADD
 

@@ -1,7 +1,7 @@
   .. _command_argument_count:
 
-``COMMAND_ARGUMENT_COUNT`` - Get number of command line arguments
-*****************************************************************
+COMMAND_ARGUMENT_COUNT - Get number of command line arguments
+*************************************************************
 
 .. index:: COMMAND_ARGUMENT_COUNT
 

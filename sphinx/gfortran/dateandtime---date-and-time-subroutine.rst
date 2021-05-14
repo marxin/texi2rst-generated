@@ -1,7 +1,7 @@
   .. _date_and_time:
 
-``DATE_AND_TIME`` - Date and time subroutine
-********************************************
+DATE_AND_TIME - Date and time subroutine
+****************************************
 
 .. index:: DATE_AND_TIME
 

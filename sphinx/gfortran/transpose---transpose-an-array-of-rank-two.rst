@@ -1,7 +1,7 @@
   .. _transpose:
 
-``TRANSPOSE`` - Transpose an array of rank two
-**********************************************
+TRANSPOSE - Transpose an array of rank two
+******************************************
 
 .. index:: TRANSPOSE
 

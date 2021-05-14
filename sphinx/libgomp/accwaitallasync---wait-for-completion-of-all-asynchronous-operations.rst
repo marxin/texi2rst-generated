@@ -1,7 +1,7 @@
   .. _acc_wait_all_async:
 
-``acc_wait_all_async`` - Wait for completion of all asynchronous operations.
-****************************************************************************
+acc_wait_all_async - Wait for completion of all asynchronous operations.
+************************************************************************
 
 Description
   This function enqueues a wait operation on the queue :samp:`{async}` for any

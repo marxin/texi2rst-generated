@@ -1,7 +1,7 @@
 .. _gcov-dump-intro:
 
-Introduction to :command:`gcov-dump`
-************************************
+Introduction to gcov-dump
+*************************
 
 .. man begin DESCRIPTION
 

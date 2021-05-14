@@ -1,7 +1,7 @@
 .. _binary-constants:
 
-Binary Constants using the :samp:`0b` Prefix
-********************************************
+Binary Constants using the 0b Prefix
+************************************
 
 .. index:: Binary constants using the 0b prefix
 

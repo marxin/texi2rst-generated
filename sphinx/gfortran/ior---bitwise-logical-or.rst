@@ -1,7 +1,7 @@
   .. _ior:
 
-``IOR`` - Bitwise logical or
-****************************
+IOR - Bitwise logical or
+************************
 
 .. index:: IOR
 

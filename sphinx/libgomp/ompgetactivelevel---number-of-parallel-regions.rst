@@ -1,7 +1,7 @@
 .. _omp_get_active_level:
 
-``omp_get_active_level`` - Number of parallel regions
-*****************************************************
+omp_get_active_level - Number of parallel regions
+*************************************************
 
 :samp:`{Description}:`
   This function returns the nesting level for the active parallel blocks,

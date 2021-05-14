@@ -1,7 +1,7 @@
   .. _omp_set_nested:
 
-``omp_set_nested`` - Enable/disable nested parallel regions
-***********************************************************
+omp_set_nested - Enable/disable nested parallel regions
+*******************************************************
 
 :samp:`{Description}:`
   Enable or disable nested parallel regions, i.e., whether team members

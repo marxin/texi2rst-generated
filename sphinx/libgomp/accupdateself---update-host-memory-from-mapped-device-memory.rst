@@ -1,7 +1,7 @@
   .. _acc_update_self:
 
-``acc_update_self`` - Update host memory from mapped device memory.
-*******************************************************************
+acc_update_self - Update host memory from mapped device memory.
+***************************************************************
 
 Description
   This function updates the host copy from the previously mapped device memory.

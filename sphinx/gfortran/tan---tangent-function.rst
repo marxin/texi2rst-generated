@@ -1,7 +1,7 @@
   .. _tan:
 
-``TAN`` - Tangent function
-**************************
+TAN - Tangent function
+**********************
 
 .. index:: TAN
 

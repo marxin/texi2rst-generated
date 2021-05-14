@@ -1,7 +1,7 @@
   .. _new_line:
 
-``NEW_LINE`` - New line character
-*********************************
+NEW_LINE - New line character
+*****************************
 
 .. index:: NEW_LINE
 

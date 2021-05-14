@@ -1,7 +1,7 @@
   .. _int:
 
-``INT`` - Convert to integer type
-*********************************
+INT - Convert to integer type
+*****************************
 
 .. index:: INT
 

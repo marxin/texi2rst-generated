@@ -1,7 +1,7 @@
   .. _lshift:
 
-``LSHIFT`` - Left shift bits
-****************************
+LSHIFT - Left shift bits
+************************
 
 .. index:: LSHIFT
 

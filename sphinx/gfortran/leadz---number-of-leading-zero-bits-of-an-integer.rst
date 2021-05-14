@@ -1,7 +1,7 @@
   .. _leadz:
 
-``LEADZ`` - Number of leading zero bits of an integer
-*****************************************************
+LEADZ - Number of leading zero bits of an integer
+*************************************************
 
 .. index:: LEADZ
 

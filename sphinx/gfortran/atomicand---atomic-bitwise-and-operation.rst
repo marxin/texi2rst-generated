@@ -1,7 +1,7 @@
   .. _atomic_and:
 
-``ATOMIC_AND`` - Atomic bitwise AND operation
-*********************************************
+ATOMIC_AND - Atomic bitwise AND operation
+*****************************************
 
 .. index:: ATOMIC_AND
 

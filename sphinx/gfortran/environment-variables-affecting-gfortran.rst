@@ -1,7 +1,7 @@
 .. _environment-variables:
 
-Environment variables affecting :command:`gfortran`
-***************************************************
+Environment variables affecting gfortran
+****************************************
 
 .. index:: environment variable
 

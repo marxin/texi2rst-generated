@@ -1,7 +1,7 @@
 .. _gfortran_unbuffered_preconnected:
 
-:envvar:`GFORTRAN_UNBUFFERED_PRECONNECTED`-Do not buffer I/O on preconnected units
-**********************************************************************************
+GFORTRAN_UNBUFFERED_PRECONNECTED-Do not buffer I/O on preconnected units
+************************************************************************
 
 The environment variable named :envvar:`GFORTRAN_UNBUFFERED_PRECONNECTED` controls
 whether I/O on a preconnected unit (i.e. STDOUT or STDERR) is unbuffered.  If

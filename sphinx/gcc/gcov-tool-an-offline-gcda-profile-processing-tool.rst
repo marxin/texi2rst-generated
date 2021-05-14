@@ -1,7 +1,7 @@
 .. _gcov-tool:
 
-:command:`gcov-tool`-an Offline Gcda Profile Processing Tool
-------------------------------------------------------------
+gcov-tool-an Offline Gcda Profile Processing Tool
+-------------------------------------------------
 
 :command:`gcov-tool` is a tool you can use in conjunction with GCC to
 manipulate or process gcda profile files offline.

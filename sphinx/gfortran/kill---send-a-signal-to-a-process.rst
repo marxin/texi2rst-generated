@@ -1,7 +1,7 @@
   .. _kill:
 
-``KILL`` - Send a signal to a process
-*************************************
+KILL - Send a signal to a process
+*********************************
 
 .. index:: KILL
 

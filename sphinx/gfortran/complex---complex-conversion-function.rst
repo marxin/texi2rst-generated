@@ -1,7 +1,7 @@
   .. _complex:
 
-``COMPLEX`` - Complex conversion function
-*****************************************
+COMPLEX - Complex conversion function
+*************************************
 
 .. index:: COMPLEX
 

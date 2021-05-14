@@ -1,7 +1,7 @@
   .. _cosh:
 
-``COSH`` - Hyperbolic cosine function
-*************************************
+COSH - Hyperbolic cosine function
+*********************************
 
 .. index:: COSH
 

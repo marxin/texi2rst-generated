@@ -1,7 +1,7 @@
   .. _acc_memcpy_to_device:
 
-``acc_memcpy_to_device`` - Copy host memory to device memory.
-*************************************************************
+acc_memcpy_to_device - Copy host memory to device memory.
+*********************************************************
 
 Description
   This function copies host memory specified by host address of :samp:`{src}` to

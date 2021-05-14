@@ -1,7 +1,7 @@
   .. _radix:
 
-``RADIX`` - Base of a model number
-**********************************
+RADIX - Base of a model number
+******************************
 
 .. index:: RADIX
 

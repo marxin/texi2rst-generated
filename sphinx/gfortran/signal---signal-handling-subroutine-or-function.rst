@@ -1,7 +1,7 @@
   .. _signal:
 
-``SIGNAL`` - Signal handling subroutine (or function)
-*****************************************************
+SIGNAL - Signal handling subroutine (or function)
+*************************************************
 
 .. index:: SIGNAL
 

@@ -1,7 +1,7 @@
   .. _secnds:
 
-``SECNDS`` - Time function
-**************************
+SECNDS - Time function
+**********************
 
 .. index:: SECNDS
 

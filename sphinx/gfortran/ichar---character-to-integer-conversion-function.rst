@@ -1,7 +1,7 @@
   .. _ichar:
 
-``ICHAR`` - Character-to-integer conversion function
-****************************************************
+ICHAR - Character-to-integer conversion function
+************************************************
 
 .. index:: ICHAR
 

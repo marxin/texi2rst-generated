@@ -1,7 +1,7 @@
 .. _invoking-gcov-dump:
 
-Invoking :command:`gcov-dump`
-*****************************
+Invoking gcov-dump
+******************
 
 .. code-block:: c++
 

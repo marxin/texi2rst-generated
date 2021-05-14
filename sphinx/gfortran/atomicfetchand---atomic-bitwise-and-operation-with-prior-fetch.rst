@@ -1,7 +1,7 @@
   .. _atomic_fetch_and:
 
-``ATOMIC_FETCH_AND`` - Atomic bitwise AND operation with prior fetch
-********************************************************************
+ATOMIC_FETCH_AND - Atomic bitwise AND operation with prior fetch
+****************************************************************
 
 .. index:: ATOMIC_FETCH_AND
 

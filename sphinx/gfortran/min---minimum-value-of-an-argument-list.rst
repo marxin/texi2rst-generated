@@ -1,7 +1,7 @@
   .. _min:
 
-``MIN`` - Minimum value of an argument list
-*******************************************
+MIN - Minimum value of an argument list
+***************************************
 
 .. index:: MIN
 

@@ -1,7 +1,7 @@
   .. _omp_destroy_nest_lock:
 
-``omp_destroy_nest_lock`` - Destroy nested lock
-***********************************************
+omp_destroy_nest_lock - Destroy nested lock
+*******************************************
 
 :samp:`{Description}:`
   Destroy a nested lock.  In order to be destroyed, a nested lock must be

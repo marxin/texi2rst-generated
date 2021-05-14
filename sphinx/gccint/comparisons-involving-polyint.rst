@@ -1,5 +1,5 @@
-Comparisons involving ``poly_int``
-**********************************
+Comparisons involving poly_int
+******************************
 
 In general we need to compare sizes and offsets in two situations:
 those in which the values need to be ordered, and those in which
@@ -33,8 +33,8 @@ affects how they are used.
   range-checks-on-poly_ints
   sorting-poly_ints
 
-Comparison functions for ``poly_int``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Comparison functions for poly_int
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``poly_int`` provides the following routines for checking whether
 a particular condition 'may be' (might be) true:
@@ -76,8 +76,8 @@ functions:
   known_gt (a, b) == !maybe_le (a, b)
   known_ne (a, b) == !maybe_eq (a, b)
 
-Properties of the ``poly_int`` comparisons
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Properties of the poly_int comparisons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All 'maybe' relations except ``maybe_ne`` are transitive, so for example:
 
@@ -159,8 +159,8 @@ For example, :samp:`known_le (4, 4 + 4{x})` holds because the runtime
 indeterminate :samp:`{x}` is a nonnegative integer, but neither
 ``known_lt (4, 4 + 4x)`` nor ``known_eq (4, 4 + 4x)`` hold.
 
-Comparing potentially-unordered ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Comparing potentially-unordered poly_ints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In cases where there is no definite link between two ``poly_int`` s,
 we can usually make a conservatively-correct assumption.  For example,
@@ -183,8 +183,8 @@ and another (equivalent) way is:
 However, in this particular example, it is better to use the range helper
 functions instead.  See :ref:`range-checks-on-poly_ints`.
 
-Comparing ordered ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Comparing ordered poly_ints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In cases where there is a definite link between two ``poly_int`` s,
 such as the outer and inner sizes of subregs, we usually require the sizes
@@ -234,8 +234,8 @@ checks are required for subreg validity).  Code that is dealing
 with existing subregs can assert that ``ordered_p`` holds
 and use either of the classifications above.
 
-Checking for a ``poly_int`` marker value
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Checking for a poly_int marker value
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is sometimes useful to have a special 'marker value' that is not
 meant to be taken literally.  For example, some code uses a size
@@ -250,8 +250,8 @@ Thus in the size example just mentioned, :samp:`known_eq (size, -1)` would
 check for an unknown size and :samp:`maybe_ne (size, -1)` would check for a
 known size.
 
-Range checks on ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Range checks on poly_ints
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As well as the core comparisons
 (see :ref:`comparison-functions-for-poly_int`), ``poly_int`` provides
@@ -306,8 +306,8 @@ A range of size 0 does not contain anything or overlap anything.
   Note that the function does not indicate whether :samp:`{x}` itself is in the
   given range.  :samp:`{x}` can be either a constant or a ``poly_int``.
 
-Sorting ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^
+Sorting poly_ints
+^^^^^^^^^^^^^^^^^
 
 ``poly_int`` provides the following routine for sorting:
 

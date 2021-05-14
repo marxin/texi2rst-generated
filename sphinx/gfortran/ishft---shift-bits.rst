@@ -1,7 +1,7 @@
   .. _ishft:
 
-``ISHFT`` - Shift bits
-**********************
+ISHFT - Shift bits
+******************
 
 .. index:: ISHFT
 

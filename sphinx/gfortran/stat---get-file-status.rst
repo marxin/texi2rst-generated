@@ -1,7 +1,7 @@
   .. _stat:
 
-``STAT`` - Get file status
-**************************
+STAT - Get file status
+**********************
 
 .. index:: STAT
 

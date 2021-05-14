@@ -1,7 +1,7 @@
   .. _int2:
 
-``INT2`` - Convert to 16-bit integer type
-*****************************************
+INT2 - Convert to 16-bit integer type
+*************************************
 
 .. index:: INT2
 

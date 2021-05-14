@@ -1,7 +1,7 @@
   .. _link:
 
-``LINK`` - Create a hard link
-*****************************
+LINK - Create a hard link
+*************************
 
 .. index:: LINK
 

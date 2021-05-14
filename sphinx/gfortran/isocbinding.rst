@@ -1,7 +1,7 @@
 .. _iso_c_binding:
 
-``ISO_C_BINDING``
-*****************
+ISO_C_BINDING
+*************
 
 :samp:`{Standard}:`
   Fortran 2003 and later, GNU extensions

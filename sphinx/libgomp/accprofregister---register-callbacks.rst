@@ -1,7 +1,7 @@
   .. _acc_prof_register:
 
-``acc_prof_register`` - Register callbacks.
-*******************************************
+acc_prof_register - Register callbacks.
+***************************************
 
 :samp:`{Description}:`
   This function registers callbacks.

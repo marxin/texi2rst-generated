@@ -1,7 +1,7 @@
   .. _set_exponent:
 
-``SET_EXPONENT`` - Set the exponent of the model
-************************************************
+SET_EXPONENT - Set the exponent of the model
+********************************************
 
 .. index:: SET_EXPONENT
 

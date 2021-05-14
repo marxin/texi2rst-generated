@@ -1,7 +1,7 @@
   .. _omp_in_parallel:
 
-``omp_in_parallel`` - Whether a parallel region is active
-*********************************************************
+omp_in_parallel - Whether a parallel region is active
+*****************************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if currently running in parallel,

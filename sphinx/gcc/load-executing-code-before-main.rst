@@ -1,7 +1,7 @@
 .. _executing-code-before-main:
 
-``+load`` : Executing Code before ``main``
-******************************************
++load: Executing Code before main
+*********************************
 
 This section is specific for the GNU Objective-C runtime.  If you are
 using a different runtime, you can skip it.
@@ -81,8 +81,8 @@ instead of ``+initialize``.
 
 .. _what-you-can-and-what-you-cannot-do-in-+load:
 
-What You Can and Cannot Do in ``+load``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What You Can and Cannot Do in +load
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``+load`` is to be used only as a last resort.  Because it is
 executed very early, most of the Objective-C runtime machinery will

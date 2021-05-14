@@ -1,7 +1,7 @@
 .. _openmp-modules-omp_lib-and-omp_lib_kinds:
 
-OpenMP Modules ``OMP_LIB`` and ``OMP_LIB_KINDS``
-************************************************
+OpenMP Modules OMP_LIB and OMP_LIB_KINDS
+****************************************
 
 :samp:`{Standard}:`
   OpenMP Application Program Interface v4.5 and

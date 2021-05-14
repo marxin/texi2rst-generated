@@ -1,7 +1,7 @@
   .. _rank:
 
-``RANK`` - Rank of a data object
-********************************
+RANK - Rank of a data object
+****************************
 
 .. index:: RANK
 

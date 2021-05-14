@@ -208,8 +208,8 @@ There are several ``TODO`` flags that control the behavior of
   are explicitly destroyed and only the symbols marked for
   renaming are processed.
 
-Examining ``SSA_NAME`` nodes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Examining SSA_NAME nodes
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: examining SSA_NAMEs
 

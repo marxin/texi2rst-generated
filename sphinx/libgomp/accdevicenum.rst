@@ -1,7 +1,7 @@
   .. _acc_device_num:
 
-``ACC_DEVICE_NUM``
-******************
+ACC_DEVICE_NUM
+**************
 
 :samp:`{Reference}:`
   https://www.openacc.orgOpenACC specification v2.6, section

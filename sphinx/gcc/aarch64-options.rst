@@ -321,8 +321,8 @@ These options are defined for AArch64 implementations:
   The default is :samp:`-msve-vector-bits=scalable`, which produces
   vector-length agnostic code.
 
-:option:`-march` and :option:`-mcpu` Feature Modifiers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-march and -mcpu Feature Modifiers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _aarch64-feature-modifiers:
 

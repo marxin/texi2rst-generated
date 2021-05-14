@@ -1,7 +1,7 @@
   .. _fraction:
 
-``FRACTION`` - Fractional part of the model representation
-**********************************************************
+FRACTION - Fractional part of the model representation
+******************************************************
 
 .. index:: FRACTION
 

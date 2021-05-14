@@ -1,7 +1,7 @@
   .. _acc_hostptr:
 
-``acc_hostptr`` - Get host pointer associated with specific device address.
-***************************************************************************
+acc_hostptr - Get host pointer associated with specific device address.
+***********************************************************************
 
 Description
   This function returns the host address that has been mapped to the

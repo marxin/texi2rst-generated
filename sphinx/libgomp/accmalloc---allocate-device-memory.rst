@@ -1,7 +1,7 @@
   .. _acc_malloc:
 
-``acc_malloc`` - Allocate device memory.
-****************************************
+acc_malloc - Allocate device memory.
+************************************
 
 Description
   This function allocates :samp:`{len}` bytes of device memory. It returns

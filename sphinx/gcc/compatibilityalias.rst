@@ -1,7 +1,7 @@
 .. _compatibility_alias:
 
-``compatibility_alias``
-***********************
+compatibility_alias
+*******************
 
 The keyword ``@compatibility_alias`` allows you to define a class name
 as equivalent to another class name.  For example:

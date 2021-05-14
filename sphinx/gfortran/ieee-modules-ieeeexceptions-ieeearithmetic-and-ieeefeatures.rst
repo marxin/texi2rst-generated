@@ -1,7 +1,7 @@
 .. _ieee-modules:
 
-IEEE modules: ``IEEE_EXCEPTIONS``, ``IEEE_ARITHMETIC``, and ``IEEE_FEATURES``
-*****************************************************************************
+IEEE modules: IEEE_EXCEPTIONS, IEEE_ARITHMETIC, and IEEE_FEATURES
+*****************************************************************
 
 :samp:`{Standard}:`
   Fortran 2003 and later

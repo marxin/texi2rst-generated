@@ -1,7 +1,7 @@
   .. _null:
 
-``NULL`` - Function that returns an disassociated pointer
-*********************************************************
+NULL - Function that returns an disassociated pointer
+*****************************************************
 
 .. index:: NULL
 

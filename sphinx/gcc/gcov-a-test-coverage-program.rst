@@ -1,7 +1,7 @@
 .. _gcov:
 
-:command:`gcov`-a Test Coverage Program
----------------------------------------
+gcov-a Test Coverage Program
+----------------------------
 
 :command:`gcov` is a tool you can use in conjunction with GCC to
 test code coverage in your programs.

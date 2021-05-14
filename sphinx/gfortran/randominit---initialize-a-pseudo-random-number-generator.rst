@@ -1,7 +1,7 @@
   .. _random_init:
 
-``RANDOM_INIT`` - Initialize a pseudo-random number generator
-*************************************************************
+RANDOM_INIT - Initialize a pseudo-random number generator
+*********************************************************
 
 .. index:: RANDOM_INIT
 

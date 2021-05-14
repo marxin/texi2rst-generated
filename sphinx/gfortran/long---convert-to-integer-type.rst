@@ -1,7 +1,7 @@
   .. _long:
 
-``LONG`` - Convert to integer type
-**********************************
+LONG - Convert to integer type
+******************************
 
 .. index:: LONG
 

@@ -1,7 +1,7 @@
   .. _sinh:
 
-``SINH`` - Hyperbolic sine function 
-************************************
+SINH - Hyperbolic sine function 
+********************************
 
 .. index:: SINH
 

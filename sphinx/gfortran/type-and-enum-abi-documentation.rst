@@ -13,16 +13,16 @@ Type and enum ABI Documentation
 
 .. _caf_token_t:
 
-``caf_token_t``
-^^^^^^^^^^^^^^^
+caf_token_t
+^^^^^^^^^^^
 
 Typedef of type ``void *`` on the compiler side. Can be any data
 type on the library side.
 
 .. _caf_register_t:
 
-``caf_register_t``
-^^^^^^^^^^^^^^^^^^
+caf_register_t
+^^^^^^^^^^^^^^
 
 Indicates which kind of coarray variable should be registered.
 
@@ -51,8 +51,8 @@ intrinsic.
 
 .. _caf_deregister_t:
 
-``caf_deregister_t``
-^^^^^^^^^^^^^^^^^^^^
+caf_deregister_t
+^^^^^^^^^^^^^^^^
 
 typedef enum caf_deregister_t {
   CAF_DEREGTYPE_COARRAY_DEREGISTER,
@@ -65,8 +65,8 @@ allocatable components in derived type coarrays.
 
 .. _caf_reference_t:
 
-``caf_reference_t``
-^^^^^^^^^^^^^^^^^^^
+caf_reference_t
+^^^^^^^^^^^^^^^
 
 The structure used for implementing arbitrary reference chains.
 A ``CAF_REFERENCE_T`` allows to specify a component reference or any kind
@@ -168,8 +168,8 @@ descriptor-less arrays.  The library caf_single has untested support for it.
 
 .. _caf_team_t:
 
-``caf_team_t``
-^^^^^^^^^^^^^^
+caf_team_t
+^^^^^^^^^^
 
 Opaque pointer to represent a team-handle.  This type is a stand-in for the
 future implementation of teams.  It is about to change without further notice.

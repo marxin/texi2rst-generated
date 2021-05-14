@@ -1,7 +1,7 @@
   .. _acc_map_data:
 
-``acc_map_data`` - Map previously allocated device memory to host memory.
-*************************************************************************
+acc_map_data - Map previously allocated device memory to host memory.
+*********************************************************************
 
 Description
   This function maps previously allocated device and host memory. The device

@@ -1,5 +1,5 @@
-Guidelines for using ``poly_int``
-*********************************
+Guidelines for using poly_int
+*****************************
 
 One of the main design goals of ``poly_int`` was to make it easy
 to write target-independent code that handles variable-sized registers

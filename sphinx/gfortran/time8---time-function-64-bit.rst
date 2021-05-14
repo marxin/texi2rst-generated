@@ -1,7 +1,7 @@
   .. _time8:
 
-``TIME8`` - Time function (64-bit)
-**********************************
+TIME8 - Time function (64-bit)
+******************************
 
 .. index:: TIME8
 

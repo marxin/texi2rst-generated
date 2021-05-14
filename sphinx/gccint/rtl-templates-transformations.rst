@@ -56,8 +56,8 @@ deleted.
 
 .. _define-subst-example:
 
-``define_subst`` Example
-^^^^^^^^^^^^^^^^^^^^^^^^
+define_subst Example
+^^^^^^^^^^^^^^^^^^^^
 
 .. index:: define_subst
 
@@ -150,8 +150,8 @@ The result of the ``define_subst`` usage would look like the following:
 
 .. _define-subst-pattern-matching:
 
-Pattern Matching in ``define_subst``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pattern Matching in define_subst
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: define_subst
 
@@ -177,8 +177,8 @@ operands as the operator from the original pattern.
 
 .. _define-subst-output-template:
 
-Generation of output template in ``define_subst``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Generation of output template in define_subst
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: define_subst
 

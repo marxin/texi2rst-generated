@@ -1,7 +1,7 @@
   .. _shiftr:
 
-``SHIFTR`` - Right shift
-************************
+SHIFTR - Right shift
+********************
 
 .. index:: SHIFTR
 

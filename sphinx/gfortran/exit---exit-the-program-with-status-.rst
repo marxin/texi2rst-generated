@@ -1,7 +1,7 @@
   .. _exit:
 
-``EXIT`` - Exit the program with status. 
-*****************************************
+EXIT - Exit the program with status. 
+*************************************
 
 .. index:: EXIT
 

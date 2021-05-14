@@ -1,7 +1,7 @@
   .. _ble:
 
-``BLE`` - Bitwise less than or equal to
-***************************************
+BLE - Bitwise less than or equal to
+***********************************
 
 .. index:: BLE
 

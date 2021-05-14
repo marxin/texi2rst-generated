@@ -1,7 +1,7 @@
   .. _second:
 
-``SECOND`` - CPU time function
-******************************
+SECOND - CPU time function
+**************************
 
 .. index:: SECOND
 

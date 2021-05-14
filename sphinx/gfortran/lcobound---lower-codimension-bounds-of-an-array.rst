@@ -1,7 +1,7 @@
   .. _lcobound:
 
-``LCOBOUND`` - Lower codimension bounds of an array
-***************************************************
+LCOBOUND - Lower codimension bounds of an array
+***********************************************
 
 .. index:: LCOBOUND
 

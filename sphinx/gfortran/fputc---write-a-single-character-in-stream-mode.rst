@@ -1,7 +1,7 @@
   .. _fputc:
 
-``FPUTC`` - Write a single character in stream mode
-***************************************************
+FPUTC - Write a single character in stream mode
+***********************************************
 
 .. index:: FPUTC
 

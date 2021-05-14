@@ -1,7 +1,7 @@
 .. _invoking-lto-dump:
 
-Invoking :command:`lto-dump`
-****************************
+Invoking lto-dump
+*****************
 
 .. code-block:: c++
 

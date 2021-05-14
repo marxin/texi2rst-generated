@@ -1,7 +1,7 @@
 .. _incomplete-enums:
 
-Incomplete ``enum`` Types
-*************************
+Incomplete enum Types
+*********************
 
 You can define an ``enum`` tag without specifying its possible values.
 This results in an incomplete type, much like what you get if you write

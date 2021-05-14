@@ -1,7 +1,7 @@
   .. _gmtime:
 
-``GMTIME`` - Convert time to GMT info
-*************************************
+GMTIME - Convert time to GMT info
+*********************************
 
 .. index:: GMTIME
 

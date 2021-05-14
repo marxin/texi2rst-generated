@@ -1,7 +1,7 @@
   .. _omp_set_default_device:
 
-``omp_set_default_device`` - Set the default device for target regions
-**********************************************************************
+omp_set_default_device - Set the default device for target regions
+******************************************************************
 
 :samp:`{Description}:`
   Set the default device for target regions without device clause.  The argument

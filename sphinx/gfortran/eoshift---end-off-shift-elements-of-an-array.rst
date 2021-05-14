@@ -1,7 +1,7 @@
   .. _eoshift:
 
-``EOSHIFT`` - End-off shift elements of an array
-************************************************
+EOSHIFT - End-off shift elements of an array
+********************************************
 
 .. index:: EOSHIFT
 

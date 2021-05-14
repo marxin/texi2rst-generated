@@ -1,5 +1,5 @@
-Arithmetic on ``poly_int`` s
-****************************
+Arithmetic on poly_ints
+***********************
 
 Addition, subtraction, negation and bit inversion all work normally for
 ``poly_int`` s.  Multiplication by a constant multiplier and left
@@ -19,8 +19,8 @@ This section describes both types of operation.
   division-of-poly_ints
   other-poly_int-arithmetic
 
-Using ``poly_int`` with C++ arithmetic operators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using poly_int with C++ arithmetic operators
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following C++ expressions are supported, where :samp:`{p1}` and :samp:`{p2}`
 are ``poly_int`` s and where :samp:`{c1}` and :samp:`{c2}` are scalars:
@@ -73,8 +73,8 @@ with the highest rank 'wins'.
 If one of the operands is ``wide_int`` or ``poly_wide_int``,
 the rules are the same as for ``wide_int`` arithmetic.
 
-``wi`` arithmetic on ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wi arithmetic on poly_ints
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As well as the C++ operators, ``poly_int`` supports the following
 ``wi`` routines:
@@ -103,8 +103,8 @@ These routines just check whether overflow occurs on any individual
 coefficient; it is not possible to know at compile time whether the
 final runtime value would overflow.
 
-Division of ``poly_int`` s
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Division of poly_ints
+^^^^^^^^^^^^^^^^^^^^^
 
 Division of ``poly_int`` s is possible for certain inputs.  The functions
 for division return true if the operation is possible and in most cases
@@ -137,8 +137,8 @@ return the results by pointer.  The routines are:
   :samp:`{a} / {b}`.  The result is a ``poly_int`` if :samp:`{a}`
   is a ``poly_int``.
 
-Other ``poly_int`` arithmetic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Other poly_int arithmetic
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are tentative routines for other operations besides division:
 

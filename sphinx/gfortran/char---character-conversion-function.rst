@@ -1,7 +1,7 @@
   .. _char:
 
-``CHAR`` - Character conversion function
-****************************************
+CHAR - Character conversion function
+************************************
 
 .. index:: CHAR
 

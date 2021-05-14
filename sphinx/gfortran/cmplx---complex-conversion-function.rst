@@ -1,7 +1,7 @@
   .. _cmplx:
 
-``CMPLX`` - Complex conversion function
-***************************************
+CMPLX - Complex conversion function
+***********************************
 
 .. index:: CMPLX
 

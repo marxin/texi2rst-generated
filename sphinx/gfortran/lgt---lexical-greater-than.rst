@@ -1,7 +1,7 @@
   .. _lgt:
 
-``LGT`` - Lexical greater than
-******************************
+LGT - Lexical greater than
+**************************
 
 .. index:: LGT
 

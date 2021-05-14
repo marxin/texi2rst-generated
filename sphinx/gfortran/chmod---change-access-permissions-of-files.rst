@@ -1,7 +1,7 @@
   .. _chmod:
 
-``CHMOD`` - Change access permissions of files
-**********************************************
+CHMOD - Change access permissions of files
+******************************************
 
 .. index:: CHMOD
 

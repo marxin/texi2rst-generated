@@ -1,7 +1,7 @@
   .. _co_sum:
 
-``CO_SUM`` - Sum of values on the current set of images
-*******************************************************
+CO_SUM - Sum of values on the current set of images
+***************************************************
 
 .. index:: CO_SUM
 

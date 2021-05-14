@@ -1,7 +1,7 @@
   .. _size:
 
-``SIZE`` - Determine the size of an array
-*****************************************
+SIZE - Determine the size of an array
+*************************************
 
 .. index:: SIZE
 

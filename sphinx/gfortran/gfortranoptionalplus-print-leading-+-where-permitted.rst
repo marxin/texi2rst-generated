@@ -1,7 +1,7 @@
 .. _gfortran_optional_plus:
 
-:envvar:`GFORTRAN_OPTIONAL_PLUS`-Print leading + where permitted
-****************************************************************
+GFORTRAN_OPTIONAL_PLUS-Print leading + where permitted
+******************************************************
 
 If the first letter is :samp:`y`, :samp:`Y` or :samp:`1`,
 a plus sign is printed

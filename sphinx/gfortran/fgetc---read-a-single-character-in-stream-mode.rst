@@ -1,7 +1,7 @@
   .. _fgetc:
 
-``FGETC`` - Read a single character in stream mode
-**************************************************
+FGETC - Read a single character in stream mode
+**********************************************
 
 .. index:: FGETC
 

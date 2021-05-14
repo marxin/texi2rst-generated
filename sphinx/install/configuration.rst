@@ -1766,8 +1766,8 @@ aix`, :samp:`svr4` or :samp:`both`
   :command:`objdump`.  Otherwise, GCC may use an inconsistent set of
   tools.
 
-Overriding :command:`configure` test results
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Overriding configure test results
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes, it might be necessary to override the result of some
 :command:`configure` test, for example in order to ease porting to a new

@@ -1,7 +1,7 @@
   .. _acc_free:
 
-``acc_free`` - Free device memory.
-**********************************
+acc_free - Free device memory.
+******************************
 
 Description
   Free previously allocated device memory at the device address ``a``.

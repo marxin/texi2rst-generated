@@ -1,7 +1,7 @@
   .. _getenv:
 
-``GETENV`` - Get an environmental variable
-******************************************
+GETENV - Get an environmental variable
+**************************************
 
 .. index:: GETENV
 

@@ -1,7 +1,7 @@
   .. _getgid:
 
-``GETGID`` - Group ID function
-******************************
+GETGID - Group ID function
+**************************
 
 .. index:: GETGID
 

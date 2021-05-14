@@ -471,8 +471,8 @@ these tokens have special meanings in the assembler template:
   into the assembler code.  When unescaped, these characters have special
   meaning to indicate multiple assembler dialects, as described below.
 
-Multiple assembler dialects in ``asm`` templates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Multiple assembler dialects in asm templates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 On targets such as x86, GCC supports multiple assembler dialects.
 The :option:`-masm` option controls which dialect GCC uses as its 
@@ -1360,8 +1360,8 @@ Modifier  Description                                                           
 ========  ============================================================================================================  =======  ================  ==============
 .. _x86floatingpointasmoperands:
 
-x86 Floating-Point ``asm`` Operands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+x86 Floating-Point asm Operands
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On x86 targets, there are several rules on the usage of stack-like registers
 in the operands of an ``asm``.  These rules apply only to the operands
@@ -1492,8 +1492,8 @@ Modifier  Description
 
 .. _constraints:
 
-Constraints for ``asm`` Operands
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Constraints for asm Operands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: operand constraints, asm
 
@@ -4540,8 +4540,8 @@ with slightly different characteristics (see :ref:`Defining coprocessor specific
 
 .. _size-of-an-asm:
 
-Size of an ``asm``
-^^^^^^^^^^^^^^^^^^
+Size of an asm
+^^^^^^^^^^^^^^
 
 Some targets require that GCC track the size of each instruction used
 in order to generate correct code.  Because the final length of the

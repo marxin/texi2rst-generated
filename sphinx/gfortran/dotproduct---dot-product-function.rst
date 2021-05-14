@@ -1,7 +1,7 @@
   .. _dot_product:
 
-``DOT_PRODUCT`` - Dot product function
-**************************************
+DOT_PRODUCT - Dot product function
+**********************************
 
 .. index:: DOT_PRODUCT
 

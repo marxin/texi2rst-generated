@@ -1,5 +1,5 @@
-Miscellaneous ``poly_int`` routines
-***********************************
+Miscellaneous poly_int routines
+*******************************
 
 :samp:`print_dec ({value}, {file}, {sign})` :samp:`print_dec ({value}, {file})`
   Print :samp:`{value}` to :samp:`{file}` as a decimal value, interpreting

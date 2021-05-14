@@ -1,7 +1,7 @@
   .. _omp_set_nest_lock:
 
-``omp_set_nest_lock`` - Wait for and set nested lock
-****************************************************
+omp_set_nest_lock - Wait for and set nested lock
+************************************************
 
 :samp:`{Description}:`
   Before setting a nested lock, the lock variable must be initialized by 

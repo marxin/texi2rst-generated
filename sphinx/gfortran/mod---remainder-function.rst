@@ -1,7 +1,7 @@
   .. _mod:
 
-``MOD`` - Remainder function
-****************************
+MOD - Remainder function
+************************
 
 .. index:: MOD
 

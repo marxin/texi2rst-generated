@@ -1,7 +1,7 @@
   .. _omp_get_initial_device:
 
-``omp_get_initial_device`` - Return device number of initial device
-*******************************************************************
+omp_get_initial_device - Return device number of initial device
+***************************************************************
 
 :samp:`{Description}:`
   This function returns a device number that represents the host device.

@@ -1,7 +1,7 @@
   .. _iall:
 
-``IALL`` - Bitwise AND of array elements
-****************************************
+IALL - Bitwise AND of array elements
+************************************
 
 .. index:: IALL
 

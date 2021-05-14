@@ -1,7 +1,7 @@
   .. _erfc_scaled:
 
-``ERFC_SCALED`` - Error function 
-*********************************
+ERFC_SCALED - Error function 
+*****************************
 
 .. index:: ERFC_SCALED
 

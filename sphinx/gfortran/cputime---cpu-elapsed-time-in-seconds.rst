@@ -1,7 +1,7 @@
   .. _cpu_time:
 
-``CPU_TIME`` - CPU elapsed time in seconds
-******************************************
+CPU_TIME - CPU elapsed time in seconds
+**************************************
 
 .. index:: CPU_TIME
 

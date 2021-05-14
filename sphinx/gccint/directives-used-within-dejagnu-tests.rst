@@ -1730,8 +1730,8 @@ Other attributes
 ``lgccjit``
   Target supports -lgccjit, i.e. libgccjit.so can be linked into jit tests.
 
-Local to tests in ``gcc.target/i386``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Local to tests in gcc.target/i386
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``3dnow``
   Target supports compiling ``3dnow`` instructions.
@@ -1773,8 +1773,8 @@ Local to tests in ``gcc.target/i386``
 ``xop``
   Target supports compiling ``xop`` instructions.
 
-Local to tests in ``gcc.test-framework``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Local to tests in gcc.test-framework
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``no``
   Always returns 0.
@@ -1784,8 +1784,8 @@ Local to tests in ``gcc.test-framework``
 
   .. _add-options:
 
-Features for ``dg-add-options``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Features for dg-add-options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The supported values of :samp:`{feature}` for directive ``dg-add-options``
 are:
@@ -1906,8 +1906,8 @@ are:
 
   .. _require-support:
 
-Variants of ``dg-require-support``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Variants of dg-require-support
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A few of the ``dg-require`` directives take arguments.
 
@@ -1985,8 +1985,8 @@ take arguments could be replaced with effective-target keywords.
 
   .. _final-actions:
 
-Commands for use in ``dg-final``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Commands for use in dg-final
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The GCC testsuite defines the following directives to be used within
 ``dg-final``.
@@ -2183,8 +2183,8 @@ Check for output files
 :samp:`scan-symbol-not {regexp} [{ target/xfail {selector} }]`
   Passes if the pattern is absent from the final executable.
 
-Checks for :command:`gcov` tests
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Checks for gcov tests
+~~~~~~~~~~~~~~~~~~~~~
 
 :samp:`run-gcov {sourcefile}`
   Check line counts in :command:`gcov` tests.

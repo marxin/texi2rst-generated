@@ -1,7 +1,7 @@
   .. _omp_target_offload:
 
-:envvar:`OMP_TARGET_OFFLOAD` - Controls offloading behaviour
-************************************************************
+OMP_TARGET_OFFLOAD - Controls offloading behaviour
+**************************************************
 
 .. index:: Environment Variable
 

@@ -1,7 +1,7 @@
 .. _gcov-intro:
 
-Introduction to :command:`gcov`
-*******************************
+Introduction to gcov
+********************
 
 .. man begin DESCRIPTION
 

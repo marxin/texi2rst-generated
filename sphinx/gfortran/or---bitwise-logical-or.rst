@@ -1,7 +1,7 @@
   .. _or:
 
-``OR`` - Bitwise logical OR
-***************************
+OR - Bitwise logical OR
+***********************
 
 .. index:: OR
 

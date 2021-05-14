@@ -1,7 +1,7 @@
   .. _rshift:
 
-``RSHIFT`` - Right shift bits
-*****************************
+RSHIFT - Right shift bits
+*************************
 
 .. index:: RSHIFT
 

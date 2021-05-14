@@ -1,7 +1,7 @@
   .. _gcov-testing:
 
-Support for testing :command:`gcov`
-***********************************
+Support for testing gcov
+************************
 
 Language-independent support for testing :command:`gcov`, and for checking
 that branch profiling produces expected values, is provided by the

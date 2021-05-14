@@ -1,7 +1,7 @@
   .. _bge:
 
-``BGE`` - Bitwise greater than or equal to
-******************************************
+BGE - Bitwise greater than or equal to
+**************************************
 
 .. index:: BGE
 

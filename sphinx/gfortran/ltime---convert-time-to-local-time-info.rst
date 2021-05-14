@@ -1,7 +1,7 @@
   .. _ltime:
 
-``LTIME`` - Convert time to local time info
-*******************************************
+LTIME - Convert time to local time info
+***************************************
 
 .. index:: LTIME
 

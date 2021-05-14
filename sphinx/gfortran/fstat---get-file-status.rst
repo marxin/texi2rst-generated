@@ -1,7 +1,7 @@
   .. _fstat:
 
-``FSTAT`` - Get file status
-***************************
+FSTAT - Get file status
+***********************
 
 .. index:: FSTAT
 

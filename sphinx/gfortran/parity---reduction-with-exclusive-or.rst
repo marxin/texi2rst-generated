@@ -1,7 +1,7 @@
   .. _parity:
 
-``PARITY`` - Reduction with exclusive OR
-****************************************
+PARITY - Reduction with exclusive OR
+************************************
 
 .. index:: PARITY
 

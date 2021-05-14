@@ -1,7 +1,7 @@
   .. _trailz:
 
-``TRAILZ`` - Number of trailing zero bits of an integer
-*******************************************************
+TRAILZ - Number of trailing zero bits of an integer
+***************************************************
 
 .. index:: TRAILZ
 

@@ -1,7 +1,7 @@
   .. _selected_char_kind:
 
-``SELECTED_CHAR_KIND`` - Choose character kind
-**********************************************
+SELECTED_CHAR_KIND - Choose character kind
+******************************************
 
 .. index:: SELECTED_CHAR_KIND
 

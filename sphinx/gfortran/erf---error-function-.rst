@@ -1,7 +1,7 @@
   .. _erf:
 
-``ERF`` - Error function 
-*************************
+ERF - Error function 
+*********************
 
 .. index:: ERF
 

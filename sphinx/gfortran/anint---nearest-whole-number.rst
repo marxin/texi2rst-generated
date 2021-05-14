@@ -1,7 +1,7 @@
   .. _anint:
 
-``ANINT`` - Nearest whole number
-********************************
+ANINT - Nearest whole number
+****************************
 
 .. index:: ANINT
 

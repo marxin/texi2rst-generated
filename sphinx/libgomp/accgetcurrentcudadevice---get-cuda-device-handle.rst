@@ -1,7 +1,7 @@
   .. _acc_get_current_cuda_device:
 
-``acc_get_current_cuda_device`` - Get CUDA device handle.
-*********************************************************
+acc_get_current_cuda_device - Get CUDA device handle.
+*****************************************************
 
 Description
   This function returns the CUDA device handle. This handle is the same

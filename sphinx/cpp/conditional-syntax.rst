@@ -277,8 +277,8 @@ condition succeeds after the original :samp:`#if` and all previous
 :samp:`#else` is allowed after any number of :samp:`#elif` directives, but
 :samp:`#elif` may not follow :samp:`#else`.
 
-``__has_attribute``
-^^^^^^^^^^^^^^^^^^^
+__has_attribute
+^^^^^^^^^^^^^^^
 
 .. index:: __has_attribute
 
@@ -317,8 +317,8 @@ but not with others that don't.
   ...
   #endif
 
-``__has_cpp_attribute``
-^^^^^^^^^^^^^^^^^^^^^^^
+__has_cpp_attribute
+^^^^^^^^^^^^^^^^^^^
 
 .. index:: __has_cpp_attribute
 
@@ -333,8 +333,8 @@ the attribute was first introduced into the C++ standard.  For additional
 information including the dates of the introduction of current standard
 attributes, see https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations/SD-6: SG10 Feature Test Recommendations.
 
-``__has_c_attribute``
-^^^^^^^^^^^^^^^^^^^^^
+__has_c_attribute
+^^^^^^^^^^^^^^^^^
 
 .. index:: __has_c_attribute
 
@@ -349,8 +349,8 @@ standard attribute it evaluates to an integer constant of the form
 first introduced into the C standard, or when the syntax of operands
 to the attribute was extended in the C standard.
 
-``__has_builtin``
-^^^^^^^^^^^^^^^^^
+__has_builtin
+^^^^^^^^^^^^^
 
 .. index:: __has_builtin
 
@@ -377,8 +377,8 @@ the operator is as follows:
   #  define builtin_object_size(ptr)   ((size_t)-1)
   #endif
 
-``__has_include``
-^^^^^^^^^^^^^^^^^
+__has_include
+^^^^^^^^^^^^^
 
 .. index:: __has_include
 

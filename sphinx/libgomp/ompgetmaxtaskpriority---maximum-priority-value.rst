@@ -1,7 +1,7 @@
   .. _omp_get_max_task_priority:
 
-``omp_get_max_task_priority`` - Maximum priority value
-******************************************************
+omp_get_max_task_priority - Maximum priority value
+**************************************************
 
 that can be set for tasks.
 

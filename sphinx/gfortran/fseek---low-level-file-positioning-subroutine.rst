@@ -1,7 +1,7 @@
   .. _fseek:
 
-``FSEEK`` - Low level file positioning subroutine
-*************************************************
+FSEEK - Low level file positioning subroutine
+*********************************************
 
 .. index:: FSEEK
 

@@ -30,8 +30,8 @@ code that uses them running with the GNU Fortran compiler.
 
 .. _encode-and-decode-statements:
 
-``ENCODE`` and ``DECODE`` statements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ENCODE and DECODE statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: ENCODE
 
@@ -83,8 +83,8 @@ with the following:
 
 .. _variable-format-expressions:
 
-Variable ``FORMAT`` expressions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Variable FORMAT expressions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: FORMAT
 
@@ -139,8 +139,8 @@ common, but not the former.
 
 .. _volatile-common-blocks:
 
-Volatile ``COMMON`` blocks
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Volatile COMMON blocks
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: VOLATILE
 
@@ -154,8 +154,8 @@ invalid standard Fortran syntax and is not supported by
 
 .. _open(-...-name=):
 
-``OPEN( ... NAME=)``
-^^^^^^^^^^^^^^^^^^^^
+OPEN( ... NAME=)
+^^^^^^^^^^^^^^^^
 
 .. index:: NAME
 
@@ -167,8 +167,8 @@ with ``OPEN( ... FILE=)``.
 
 .. _q-edit-descriptor:
 
-``Q`` edit descriptor
-^^^^^^^^^^^^^^^^^^^^^
+Q edit descriptor
+^^^^^^^^^^^^^^^^^
 
 .. index:: Q edit descriptor
 

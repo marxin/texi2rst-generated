@@ -1,7 +1,7 @@
 .. _acc_get_num_devices:
 
-``acc_get_num_devices`` - Get number of devices for given device type
-*********************************************************************
+acc_get_num_devices - Get number of devices for given device type
+*****************************************************************
 
 Description
   This function returns a value indicating the number of devices available

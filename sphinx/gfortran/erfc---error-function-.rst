@@ -1,7 +1,7 @@
   .. _erfc:
 
-``ERFC`` - Error function 
-**************************
+ERFC - Error function 
+**********************
 
 .. index:: ERFC
 

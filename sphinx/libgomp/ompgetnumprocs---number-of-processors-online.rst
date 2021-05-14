@@ -1,7 +1,7 @@
   .. _omp_get_num_procs:
 
-``omp_get_num_procs`` - Number of processors online
-***************************************************
+omp_get_num_procs - Number of processors online
+***********************************************
 
 :samp:`{Description}:`
   Returns the number of processors online on that device.

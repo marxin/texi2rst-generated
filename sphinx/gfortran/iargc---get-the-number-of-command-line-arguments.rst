@@ -1,7 +1,7 @@
   .. _iargc:
 
-``IARGC`` - Get the number of command line arguments
-****************************************************
+IARGC - Get the number of command line arguments
+************************************************
 
 .. index:: IARGC
 

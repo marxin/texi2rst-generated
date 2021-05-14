@@ -1,7 +1,7 @@
   .. _omp_get_num_teams:
 
-``omp_get_num_teams`` - Number of teams
-***************************************
+omp_get_num_teams - Number of teams
+***********************************
 
 :samp:`{Description}:`
   Returns the number of teams in the current team region.

@@ -1,5 +1,5 @@
-Alignment of ``poly_int`` s
-***************************
+Alignment of poly_ints
+**********************
 
 ``poly_int`` provides various routines for aligning values and for querying
 misalignments.  In each case the alignment must be a power of 2.

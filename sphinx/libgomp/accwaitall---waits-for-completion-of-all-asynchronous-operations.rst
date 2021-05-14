@@ -1,7 +1,7 @@
   .. _acc_wait_all:
 
-``acc_wait_all`` - Waits for completion of all asynchronous operations.
-***********************************************************************
+acc_wait_all - Waits for completion of all asynchronous operations.
+*******************************************************************
 
 Description
   This function waits for the completion of all asynchronous operations.

@@ -1,7 +1,7 @@
   .. _poppar:
 
-``POPPAR`` - Parity of the number of bits set
-*********************************************
+POPPAR - Parity of the number of bits set
+*****************************************
 
 .. index:: POPPAR
 

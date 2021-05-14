@@ -1,7 +1,7 @@
   .. _acc_async_test_all:
 
-``acc_async_test_all`` - Tests for completion of all asynchronous operations.
-*****************************************************************************
+acc_async_test_all - Tests for completion of all asynchronous operations.
+*************************************************************************
 
 Description
   This function tests for completion of all asynchronous operations.

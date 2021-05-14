@@ -1,7 +1,7 @@
 .. _offsetof:
 
-Support for ``offsetof``
-************************
+Support for offsetof
+********************
 
 .. index:: __builtin_offsetof
 

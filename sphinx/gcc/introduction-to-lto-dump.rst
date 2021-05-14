@@ -1,7 +1,7 @@
 .. _lto-dump-intro:
 
-Introduction to :command:`lto-dump`
-***********************************
+Introduction to lto-dump
+************************
 
 .. man begin DESCRIPTION
 

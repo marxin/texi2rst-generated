@@ -1,7 +1,7 @@
   .. _spread:
 
-``SPREAD`` - Add a dimension to an array
-****************************************
+SPREAD - Add a dimension to an array
+************************************
 
 .. index:: SPREAD
 

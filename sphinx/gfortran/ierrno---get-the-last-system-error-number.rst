@@ -1,7 +1,7 @@
   .. _ierrno:
 
-``IERRNO`` - Get the last system error number
-*********************************************
+IERRNO - Get the last system error number
+*****************************************
 
 .. index:: IERRNO
 

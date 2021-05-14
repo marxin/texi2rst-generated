@@ -1,7 +1,7 @@
   .. _system_clock:
 
-``SYSTEM_CLOCK`` - Time function
-********************************
+SYSTEM_CLOCK - Time function
+****************************
 
 .. index:: SYSTEM_CLOCK
 

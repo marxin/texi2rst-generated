@@ -1,7 +1,7 @@
 .. _gfc_expr:
 
-``gfc_expr``
-************
+gfc_expr
+********
 
 .. index:: gfc_expr
 

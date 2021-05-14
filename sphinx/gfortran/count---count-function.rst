@@ -1,7 +1,7 @@
   .. _count:
 
-``COUNT`` - Count function
-**************************
+COUNT - Count function
+**********************
 
 .. index:: COUNT
 

@@ -1,7 +1,7 @@
   .. _asin:
 
-``ASIN`` - Arcsine function 
-****************************
+ASIN - Arcsine function 
+************************
 
 .. index:: ASIN
 

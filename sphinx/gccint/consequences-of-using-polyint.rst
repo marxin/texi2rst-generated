@@ -1,5 +1,5 @@
-Consequences of using ``poly_int``
-**********************************
+Consequences of using poly_int
+******************************
 
 The two main consequences of using polynomial sizes and offsets are that:
 

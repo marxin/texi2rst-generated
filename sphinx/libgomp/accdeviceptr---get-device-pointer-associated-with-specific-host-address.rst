@@ -1,7 +1,7 @@
   .. _acc_deviceptr:
 
-``acc_deviceptr`` - Get device pointer associated with specific host address.
-*****************************************************************************
+acc_deviceptr - Get device pointer associated with specific host address.
+*************************************************************************
 
 Description
   This function returns the device address that has been mapped to the

@@ -1,7 +1,7 @@
   .. _pack:
 
-``PACK`` - Pack an array into an array of rank one
-**************************************************
+PACK - Pack an array into an array of rank one
+**********************************************
 
 .. index:: PACK
 

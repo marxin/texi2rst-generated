@@ -1,7 +1,7 @@
   .. _omp_get_supported_active_levels:
 
-``omp_get_supported_active_levels`` - Maximum number of active regions supported
-********************************************************************************
+omp_get_supported_active_levels - Maximum number of active regions supported
+****************************************************************************
 
 :samp:`{Description}:`
   This function returns the maximum number of nested, active parallel regions

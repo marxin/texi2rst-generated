@@ -3211,8 +3211,8 @@ the meanings of that architecture's constraints.
 
     .. _disable-insn-alternatives:
 
-Disable insn alternatives using the ``enabled`` attribute
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Disable insn alternatives using the enabled attribute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: enabled
 

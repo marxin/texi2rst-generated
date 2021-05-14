@@ -1,7 +1,7 @@
   .. _execute_command_line:
 
-``EXECUTE_COMMAND_LINE`` - Execute a shell command
-**************************************************
+EXECUTE_COMMAND_LINE - Execute a shell command
+**********************************************
 
 .. index:: EXECUTE_COMMAND_LINE
 

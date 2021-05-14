@@ -1,7 +1,7 @@
   .. _ftell:
 
-``FTELL`` - Current stream position
-***********************************
+FTELL - Current stream position
+*******************************
 
 .. index:: FTELL
 

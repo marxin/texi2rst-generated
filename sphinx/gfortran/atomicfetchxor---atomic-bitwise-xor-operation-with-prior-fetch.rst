@@ -1,7 +1,7 @@
   .. _atomic_fetch_xor:
 
-``ATOMIC_FETCH_XOR`` - Atomic bitwise XOR operation with prior fetch
-********************************************************************
+ATOMIC_FETCH_XOR - Atomic bitwise XOR operation with prior fetch
+****************************************************************
 
 .. index:: ATOMIC_FETCH_XOR
 

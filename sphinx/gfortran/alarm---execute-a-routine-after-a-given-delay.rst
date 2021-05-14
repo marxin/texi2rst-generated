@@ -1,7 +1,7 @@
   .. _alarm:
 
-``ALARM`` - Execute a routine after a given delay
-*************************************************
+ALARM - Execute a routine after a given delay
+*********************************************
 
 .. index:: ALARM
 

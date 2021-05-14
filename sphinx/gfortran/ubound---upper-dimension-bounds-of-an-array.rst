@@ -1,7 +1,7 @@
   .. _ubound:
 
-``UBOUND`` - Upper dimension bounds of an array
-***********************************************
+UBOUND - Upper dimension bounds of an array
+*******************************************
 
 .. index:: UBOUND
 

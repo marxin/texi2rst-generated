@@ -1,7 +1,7 @@
   .. _perror:
 
-``PERROR`` - Print system error message
-***************************************
+PERROR - Print system error message
+***********************************
 
 .. index:: PERROR
 

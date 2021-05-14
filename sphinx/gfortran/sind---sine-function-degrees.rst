@@ -1,7 +1,7 @@
   .. _sind:
 
-``SIND`` - Sine function, degrees
-*********************************
+SIND - Sine function, degrees
+*****************************
 
 .. index:: SIND
 

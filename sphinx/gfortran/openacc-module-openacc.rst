@@ -1,7 +1,7 @@
 omp_default_mem_spaceomp_large_cap_mem_spaceomp_const_mem_spaceomp_high_bw_mem_spaceomp_low_lat_mem_space.. _openacc-module-openacc:
 
-OpenACC Module ``OPENACC``
-**************************
+OpenACC Module OPENACC
+**********************
 
 :samp:`{Standard}:`
   OpenACC Application Programming Interface v2.6

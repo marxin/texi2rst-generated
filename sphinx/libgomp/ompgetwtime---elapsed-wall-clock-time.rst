@@ -1,7 +1,7 @@
   .. _omp_get_wtime:
 
-``omp_get_wtime`` - Elapsed wall clock time
-*******************************************
+omp_get_wtime - Elapsed wall clock time
+***************************************
 
 :samp:`{Description}:`
   Elapsed wall clock time in seconds.  The time is measured per thread, no

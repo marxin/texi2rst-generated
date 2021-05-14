@@ -179,8 +179,8 @@ a bit offset or the underlying field type.
 
 .. _@encode:
 
-``@encode``
-^^^^^^^^^^^
+@encode
+^^^^^^^
 
 GNU Objective-C supports the ``@encode`` syntax that allows you to
 create a type encoding from a C/Objective-C type.  For example,

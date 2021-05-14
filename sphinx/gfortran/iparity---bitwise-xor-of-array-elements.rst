@@ -1,7 +1,7 @@
   .. _iparity:
 
-``IPARITY`` - Bitwise XOR of array elements
-*******************************************
+IPARITY - Bitwise XOR of array elements
+***************************************
 
 .. index:: IPARITY
 

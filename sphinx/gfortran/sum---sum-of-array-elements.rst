@@ -1,7 +1,7 @@
   .. _sum:
 
-``SUM`` - Sum of array elements
-*******************************
+SUM - Sum of array elements
+***************************
 
 .. index:: SUM
 

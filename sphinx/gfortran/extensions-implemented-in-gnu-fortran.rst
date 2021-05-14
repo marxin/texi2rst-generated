@@ -216,8 +216,8 @@ read back in accurately.
 
 .. _x-format-descriptor-without-count-field:
 
-``X`` format descriptor without count field
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+X format descriptor without count field
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To support legacy codes, GNU Fortran permits the count field of the
 ``X`` edit descriptor in ``FORMAT`` statements to be omitted.
@@ -230,8 +230,8 @@ When omitted, the count is implicitly assumed to be one.
 
 .. _commas-in-format-specifications:
 
-Commas in ``FORMAT`` specifications
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Commas in FORMAT specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To support legacy codes, GNU Fortran allows the comma separator
 to be omitted immediately before and after character string edit
@@ -249,8 +249,8 @@ discouraged.
 
 .. _missing-period-in-format-specifications:
 
-Missing period in ``FORMAT`` specifications
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Missing period in FORMAT specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To support legacy codes, GNU Fortran allows missing periods in format
 specifications if and only if :option:`-std=legacy` is given on the
@@ -265,8 +265,8 @@ discouraged.
 
 .. _default-widths-for-f,-g-and-i-format-descriptors:
 
-Default widths for ``F``, ``G`` and ``I`` format descriptors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Default widths for F, G and I format descriptors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To support legacy codes, GNU Fortran allows width to be omitted from format
 specifications if and only if :option:`-fdec-format-defaults` is given on the
@@ -291,8 +291,8 @@ To support legacy codes, GNU Fortran allows the input item list
 of the ``READ`` statement, and the output item lists of the
 ``WRITE`` and ``PRINT`` statements, to start with a comma.
 
-``Q`` exponent-letter
-^^^^^^^^^^^^^^^^^^^^^
+Q exponent-letter
+^^^^^^^^^^^^^^^^^
 
 .. index:: Q exponent-letter
 
@@ -363,8 +363,8 @@ the need for parenthesis.
 
 .. _implicitly-convert-logical-and-integer-values:
 
-Implicitly convert ``LOGICAL`` and ``INTEGER`` values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Implicitly convert LOGICAL and INTEGER values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: conversion, to integer
 
@@ -630,8 +630,8 @@ will not change the base address of the array that was passed.
 
 .. _convert-specifier:
 
-``CONVERT`` specifier
-^^^^^^^^^^^^^^^^^^^^^
+CONVERT specifier
+^^^^^^^^^^^^^^^^^
 
 .. index:: CONVERT specifier
 
@@ -775,8 +775,8 @@ Fortran ``include`` file named openacc_lib.h.
 
 .. _argument-list-functions:
 
-Argument list functions ``%VAL``, ``%REF`` and ``%LOC``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Argument list functions %VAL, %REF and %LOC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: argument list functions
 
@@ -841,8 +841,8 @@ be disabled using -std=legacy.
 
 .. _structure-and-record:
 
-``STRUCTURE`` and ``RECORD``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+STRUCTURE and RECORD
+^^^^^^^^^^^^^^^^^^^^
 
 .. index:: STRUCTURE
 
@@ -997,8 +997,8 @@ rules and exceptions:
 
 .. _union-and-map:
 
-``UNION`` and ``MAP``
-^^^^^^^^^^^^^^^^^^^^^
+UNION and MAP
+^^^^^^^^^^^^^
 
 .. index:: UNION
 
@@ -1149,8 +1149,8 @@ Intrinsic   B           I            J            K
 ==========  ==========  ===========  ===========  ===========
 .. _automatic-and-static-attributes:
 
-``AUTOMATIC`` and ``STATIC`` attributes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AUTOMATIC and STATIC attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: variable attributes
 

@@ -1,7 +1,7 @@
   .. _allocated:
 
-``ALLOCATED`` - Status of an allocatable entity
-***********************************************
+ALLOCATED - Status of an allocatable entity
+*******************************************
 
 .. index:: ALLOCATED
 

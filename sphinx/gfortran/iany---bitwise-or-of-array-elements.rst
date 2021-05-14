@@ -1,7 +1,7 @@
   .. _iany:
 
-``IANY`` - Bitwise OR of array elements
-***************************************
+IANY - Bitwise OR of array elements
+***********************************
 
 .. index:: IANY
 

@@ -1,7 +1,7 @@
   .. _log_gamma:
 
-``LOG_GAMMA`` - Logarithm of the Gamma function
-***********************************************
+LOG_GAMMA - Logarithm of the Gamma function
+*******************************************
 
 .. index:: LOG_GAMMA
 

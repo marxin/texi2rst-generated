@@ -1,7 +1,7 @@
   .. _selected_int_kind:
 
-``SELECTED_INT_KIND`` - Choose integer kind
-*******************************************
+SELECTED_INT_KIND - Choose integer kind
+***************************************
 
 .. index:: SELECTED_INT_KIND
 

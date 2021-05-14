@@ -1,7 +1,7 @@
   .. _sign:
 
-``SIGN`` - Sign copying function
-********************************
+SIGN - Sign copying function
+****************************
 
 .. index:: SIGN
 

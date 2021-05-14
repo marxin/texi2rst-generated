@@ -1,7 +1,7 @@
   .. _compiler_options:
 
-``COMPILER_OPTIONS`` - Options passed to the compiler
-*****************************************************
+COMPILER_OPTIONS - Options passed to the compiler
+*************************************************
 
 .. index:: COMPILER_OPTIONS
 

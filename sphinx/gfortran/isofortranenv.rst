@@ -1,7 +1,7 @@
 .. _iso_fortran_env:
 
-``ISO_FORTRAN_ENV``
-*******************
+ISO_FORTRAN_ENV
+***************
 
 :samp:`{Standard}:`
   Fortran 2003 and later, except when otherwise noted

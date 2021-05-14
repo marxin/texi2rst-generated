@@ -1,7 +1,7 @@
 .. _gty-options:
 
-The Inside of a ``GTY(())``
-***************************
+The Inside of a GTY(())
+***********************
 
 Sometimes the C code is not enough to fully describe the type
 structure.  Extra information can be provided with ``GTY`` options

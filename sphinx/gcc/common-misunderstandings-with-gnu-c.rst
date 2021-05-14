@@ -24,8 +24,8 @@ give rise to questions of this sort.
 
 .. _static-definitions:
 
-Declare *and* Define Static Members
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Declare and Define Static Members
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: C++ static data, declaring and defining
 

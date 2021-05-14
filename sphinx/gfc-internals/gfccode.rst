@@ -1,7 +1,7 @@
 .. _gfc_code:
 
-``gfc_code``
-************
+gfc_code
+********
 
 .. index:: statement chaining
 
@@ -101,8 +101,8 @@ Similarly, ``DO`` loops with an iterator have instead of the condition their
 ``ext.iterator`` member set to the correct values for the loop iterator
 variable and its range.
 
-``SELECT`` Statements
-^^^^^^^^^^^^^^^^^^^^^
+SELECT Statements
+^^^^^^^^^^^^^^^^^
 
 A ``SELECT`` block is introduced by a ``gfc_code`` structure with an
 ``op`` member of ``EXEC_SELECT`` and ``expr`` containing the expression
@@ -115,8 +115,8 @@ its ``next`` member points to the code-chain to be executed in the current
 case-block, and ``extx.case_list`` contains the case-values this block
 corresponds to.  The ``block`` member links to the next case in the list.
 
-``BLOCK`` and ``ASSOCIATE``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BLOCK and ASSOCIATE
+^^^^^^^^^^^^^^^^^^^
 
 The code related to a ``BLOCK`` statement is stored inside an
 ``gfc_code`` structure (say :samp:`{c}` )

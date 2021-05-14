@@ -1,7 +1,7 @@
   .. _omp_get_thread_num:
 
-``omp_get_thread_num`` - Current thread ID
-******************************************
+omp_get_thread_num - Current thread ID
+**************************************
 
 :samp:`{Description}:`
   Returns a unique thread identification number within the current team.

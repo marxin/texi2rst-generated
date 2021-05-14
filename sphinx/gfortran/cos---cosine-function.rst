@@ -1,7 +1,7 @@
   .. _cos:
 
-``COS`` - Cosine function
-*************************
+COS - Cosine function
+*********************
 
 .. index:: COS
 

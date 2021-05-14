@@ -1,7 +1,7 @@
   .. _omp_set_dynamic:
 
-``omp_set_dynamic`` - Enable/disable dynamic teams
-**************************************************
+omp_set_dynamic - Enable/disable dynamic teams
+**********************************************
 
 :samp:`{Description}:`
   Enable or disable the dynamic adjustment of the number of threads 

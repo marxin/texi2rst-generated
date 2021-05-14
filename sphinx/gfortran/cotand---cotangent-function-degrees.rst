@@ -1,7 +1,7 @@
   .. _cotand:
 
-``COTAND`` - Cotangent function, degrees
-****************************************
+COTAND - Cotangent function, degrees
+************************************
 
 .. index:: COTAND
 

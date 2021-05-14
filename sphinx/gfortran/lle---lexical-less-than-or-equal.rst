@@ -1,7 +1,7 @@
   .. _lle:
 
-``LLE`` - Lexical less than or equal
-************************************
+LLE - Lexical less than or equal
+********************************
 
 .. index:: LLE
 

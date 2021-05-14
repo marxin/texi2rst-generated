@@ -1,7 +1,7 @@
   .. _dprod:
 
-``DPROD`` - Double product function
-***********************************
+DPROD - Double product function
+*******************************
 
 .. index:: DPROD
 

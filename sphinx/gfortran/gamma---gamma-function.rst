@@ -1,7 +1,7 @@
   .. _gamma:
 
-``GAMMA`` - Gamma function
-**************************
+GAMMA - Gamma function
+**********************
 
 .. index:: GAMMA
 

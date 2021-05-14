@@ -1,7 +1,7 @@
   .. _tanh:
 
-``TANH`` - Hyperbolic tangent function 
-***************************************
+TANH - Hyperbolic tangent function 
+***********************************
 
 .. index:: TANH
 

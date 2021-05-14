@@ -1,7 +1,7 @@
   .. _storage_size:
 
-``STORAGE_SIZE`` - Storage size in bits
-***************************************
+STORAGE_SIZE - Storage size in bits
+***********************************
 
 .. index:: STORAGE_SIZE
 

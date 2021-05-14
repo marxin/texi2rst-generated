@@ -1,7 +1,7 @@
   .. _atomic_define:
 
-``ATOMIC_DEFINE`` - Setting a variable atomically
-*************************************************
+ATOMIC_DEFINE - Setting a variable atomically
+*********************************************
 
 .. index:: ATOMIC_DEFINE
 

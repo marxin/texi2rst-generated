@@ -1,7 +1,7 @@
 .. _internal-flags:
 
-Internal flags controlling ``lto1``
-***********************************
+Internal flags controlling lto1
+*******************************
 
 The following flags are passed into :command:`lto1` and are not
 meant to be used directly from the command line.

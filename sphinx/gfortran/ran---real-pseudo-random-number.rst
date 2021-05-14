@@ -1,7 +1,7 @@
   .. _ran:
 
-``RAN`` - Real pseudo-random number
-***********************************
+RAN - Real pseudo-random number
+*******************************
 
 .. index:: RAN
 

@@ -1,7 +1,7 @@
   .. _etime:
 
-``ETIME`` - Execution time subroutine (or function)
-***************************************************
+ETIME - Execution time subroutine (or function)
+***********************************************
 
 .. index:: ETIME
 

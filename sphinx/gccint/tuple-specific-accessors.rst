@@ -37,8 +37,8 @@ Tuple specific accessors
   gimple_try
   gimple_with_cleanup_expr
 
-``GIMPLE_ASM``
-^^^^^^^^^^^^^^
+GIMPLE_ASM
+^^^^^^^^^^
 
 .. index:: GIMPLE_ASM
 
@@ -99,8 +99,8 @@ Tuple specific accessors
   Mark asm statement ``G`` as volatile or non-volatile based on
   ``VOLATILE_P``.
 
-``GIMPLE_ASSIGN``
-^^^^^^^^^^^^^^^^^
+GIMPLE_ASSIGN
+^^^^^^^^^^^^^
 
 .. index:: GIMPLE_ASSIGN
 
@@ -221,8 +221,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Return true if ``S`` is a type-cast assignment.
 
-``GIMPLE_BIND``
-^^^^^^^^^^^^^^^
+GIMPLE_BIND
+^^^^^^^^^^^
 
 .. index:: GIMPLE_BIND
 
@@ -273,8 +273,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   Set ``BLOCK`` to be the ``TREE_BLOCK`` node associated with ``GIMPLE_BIND``
   statement ``G``.
 
-``GIMPLE_CALL``
-^^^^^^^^^^^^^^^
+GIMPLE_CALL
+^^^^^^^^^^^
 
 .. index:: GIMPLE_CALL
 
@@ -385,8 +385,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   Build a ``GIMPLE_CALL`` identical to ``STMT`` but skipping the arguments
   in the positions marked by the set ``ARGS_TO_SKIP``.
 
-``GIMPLE_CATCH``
-^^^^^^^^^^^^^^^^
+GIMPLE_CATCH
+^^^^^^^^^^^^
 
 .. index:: GIMPLE_CATCH
 
@@ -418,8 +418,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Set ``HANDLER`` to be the body of ``GIMPLE_CATCH`` ``G``.
 
-``GIMPLE_COND``
-^^^^^^^^^^^^^^^
+GIMPLE_COND
+^^^^^^^^^^^
 
 .. index:: GIMPLE_COND
 
@@ -494,8 +494,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Set the conditional ``COND_STMT`` to be of the form 'if (1 == 1)'.
 
-``GIMPLE_DEBUG``
-^^^^^^^^^^^^^^^^
+GIMPLE_DEBUG
+^^^^^^^^^^^^
 
 .. index:: GIMPLE_DEBUG
 
@@ -600,8 +600,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   respective arguments, and none of the side effects of its stmts are
   observable.
 
-``GIMPLE_EH_FILTER``
-^^^^^^^^^^^^^^^^^^^^
+GIMPLE_EH_FILTER
+^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_EH_FILTER
 
@@ -641,8 +641,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Set the function decl to be called by GS to DECL.
 
-``GIMPLE_LABEL``
-^^^^^^^^^^^^^^^^
+GIMPLE_LABEL
+^^^^^^^^^^^^
 
 .. index:: GIMPLE_LABEL
 
@@ -660,8 +660,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   Set ``LABEL`` to be the ``LABEL_DECL`` node used by ``GIMPLE_LABEL``
   statement ``G``.
 
-``GIMPLE_GOTO``
-^^^^^^^^^^^^^^^
+GIMPLE_GOTO
+^^^^^^^^^^^
 
 .. index:: GIMPLE_GOTO
 
@@ -677,8 +677,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Set ``DEST`` to be the destination of the unconditional jump ``G``.
 
-``GIMPLE_NOP``
-^^^^^^^^^^^^^^
+GIMPLE_NOP
+^^^^^^^^^^
 
 .. index:: GIMPLE_NOP
 
@@ -690,8 +690,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Returns ``TRUE`` if statement ``G`` is a ``GIMPLE_NOP``.
 
-``GIMPLE_OMP_ATOMIC_LOAD``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_ATOMIC_LOAD
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_ATOMIC_LOAD
 
@@ -717,8 +717,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Get the ``RHS`` of an atomic set.
 
-``GIMPLE_OMP_ATOMIC_STORE``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_ATOMIC_STORE
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_ATOMIC_STORE
 
@@ -735,8 +735,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Return the value being stored in an atomic store.
 
-``GIMPLE_OMP_CONTINUE``
-^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_CONTINUE
+^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_CONTINUE
 
@@ -774,8 +774,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   Set the control variable use for a ``GIMPLE_OMP_CONTINUE`` statement
   in ``S``.
 
-``GIMPLE_OMP_CRITICAL``
-^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_CRITICAL
+^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_CRITICAL
 
@@ -798,8 +798,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Set ``NAME`` to be the name associated with ``OMP`` critical statement ``G``.
 
-``GIMPLE_OMP_FOR``
-^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_FOR
+^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_FOR
 
@@ -891,8 +891,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 
   Return the condition code associated with ``OMP_FOR`` ``G``.
 
-``GIMPLE_OMP_MASTER``
-^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_MASTER
+^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_MASTER
 
@@ -901,8 +901,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
   Build a ``GIMPLE_OMP_MASTER`` statement. ``BODY`` is the sequence of
   statements to be executed by just the master.
 
-``GIMPLE_OMP_ORDERED``
-^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_ORDERED
+^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_ORDERED
 
@@ -913,8 +913,8 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 ``BODY`` is the sequence of statements inside a loop that will
 executed in sequence.
 
-``GIMPLE_OMP_PARALLEL``
-^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_PARALLEL
+^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_PARALLEL
 
@@ -985,8 +985,8 @@ the function created for the parallel threads to execute.
 
   Set ``DATA_ARG`` to be the data argument for ``OMP_PARALLEL`` ``G``.
 
-``GIMPLE_OMP_RETURN``
-^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_RETURN
+^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_RETURN
 
@@ -1004,8 +1004,8 @@ the function created for the parallel threads to execute.
   Return true if ``OMP`` return statement ``G`` has the
   ``GF_OMP_RETURN_NOWAIT`` flag set.
 
-``GIMPLE_OMP_SECTION``
-^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_SECTION
+^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_SECTION
 
@@ -1024,8 +1024,8 @@ the function created for the parallel threads to execute.
 
   Set the ``GF_OMP_SECTION_LAST`` flag on ``G``.
 
-``GIMPLE_OMP_SECTIONS``
-^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_SECTIONS
+^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_SECTIONS
 
@@ -1068,8 +1068,8 @@ the function created for the parallel threads to execute.
   Set ``CLAUSES`` to be the set of clauses associated with ``OMP_SECTIONS``
   ``G``.
 
-``GIMPLE_OMP_SINGLE``
-^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_OMP_SINGLE
+^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_OMP_SINGLE
 
@@ -1092,8 +1092,8 @@ the function created for the parallel threads to execute.
 
   Set ``CLAUSES`` to be the clauses associated with ``OMP_SINGLE`` ``G``.
 
-``GIMPLE_PHI``
-^^^^^^^^^^^^^^
+GIMPLE_PHI
+^^^^^^^^^^
 
 .. index:: GIMPLE_PHI
 
@@ -1129,8 +1129,8 @@ the function created for the parallel threads to execute.
   Set ``PHIARG`` to be the argument corresponding to incoming edge
   ``INDEX`` for ``GIMPLE_PHI`` ``G``.
 
-``GIMPLE_RESX``
-^^^^^^^^^^^^^^^
+GIMPLE_RESX
+^^^^^^^^^^^
 
 .. index:: GIMPLE_RESX
 
@@ -1149,8 +1149,8 @@ the function created for the parallel threads to execute.
 
   Set ``REGION`` to be the region number for ``GIMPLE_RESX`` ``G``.
 
-``GIMPLE_RETURN``
-^^^^^^^^^^^^^^^^^
+GIMPLE_RETURN
+^^^^^^^^^^^^^
 
 .. index:: GIMPLE_RETURN
 
@@ -1166,8 +1166,8 @@ the function created for the parallel threads to execute.
 
   Set ``RETVAL`` to be the return value for ``GIMPLE_RETURN`` ``G``.
 
-``GIMPLE_SWITCH``
-^^^^^^^^^^^^^^^^^
+GIMPLE_SWITCH
+^^^^^^^^^^^^^
 
 .. index:: GIMPLE_SWITCH
 
@@ -1214,8 +1214,8 @@ the function created for the parallel threads to execute.
 
   Set the default label for a switch statement.
 
-``GIMPLE_TRY``
-^^^^^^^^^^^^^^
+GIMPLE_TRY
+^^^^^^^^^^
 
 .. index:: GIMPLE_TRY
 
@@ -1261,8 +1261,8 @@ the function created for the parallel threads to execute.
   Set ``CLEANUP`` to be the sequence of statements to use as the
   cleanup body for ``GIMPLE_TRY`` ``G``.
 
-``GIMPLE_WITH_CLEANUP_EXPR``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GIMPLE_WITH_CLEANUP_EXPR
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: GIMPLE_WITH_CLEANUP_EXPR
 

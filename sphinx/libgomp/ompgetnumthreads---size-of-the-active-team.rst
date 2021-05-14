@@ -1,7 +1,7 @@
   .. _omp_get_num_threads:
 
-``omp_get_num_threads`` - Size of the active team
-*************************************************
+omp_get_num_threads - Size of the active team
+*********************************************
 
 :samp:`{Description}:`
   Returns the number of threads in the current team.  In a sequential section of

@@ -1,7 +1,7 @@
   .. _itime:
 
-``ITIME`` - Get current local time subroutine (hour/minutes/seconds) 
-*********************************************************************
+ITIME - Get current local time subroutine (hour/minutes/seconds) 
+*****************************************************************
 
 .. index:: ITIME
 

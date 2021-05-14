@@ -1,7 +1,7 @@
   .. _c_f_pointer:
 
-``C_F_POINTER`` - Convert C into Fortran pointer
-************************************************
+C_F_POINTER - Convert C into Fortran pointer
+********************************************
 
 .. index:: C_F_POINTER
 

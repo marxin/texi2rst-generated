@@ -1,7 +1,7 @@
 .. _example:
 
-Example of ``define_insn``
-**************************
+Example of define_insn
+**********************
 
 .. index:: define_insn example
 

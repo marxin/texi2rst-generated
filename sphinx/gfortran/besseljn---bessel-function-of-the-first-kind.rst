@@ -1,7 +1,7 @@
   .. _bessel_jn:
 
-``BESSEL_JN`` - Bessel function of the first kind
-*************************************************
+BESSEL_JN - Bessel function of the first kind
+*********************************************
 
 .. index:: BESSEL_JN
 

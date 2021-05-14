@@ -1,7 +1,7 @@
   .. _acc_proflib:
 
-``ACC_PROFLIB``
-***************
+ACC_PROFLIB
+***********
 
 :samp:`{See also}:`
   acc_register_library, OpenACC Profiling Interface

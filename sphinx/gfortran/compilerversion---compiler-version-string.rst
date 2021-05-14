@@ -1,7 +1,7 @@
   .. _compiler_version:
 
-``COMPILER_VERSION`` - Compiler version string
-**********************************************
+COMPILER_VERSION - Compiler version string
+******************************************
 
 .. index:: COMPILER_VERSION
 

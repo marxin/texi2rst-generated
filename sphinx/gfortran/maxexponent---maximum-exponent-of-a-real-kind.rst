@@ -1,7 +1,7 @@
   .. _maxexponent:
 
-``MAXEXPONENT`` - Maximum exponent of a real kind
-*************************************************
+MAXEXPONENT - Maximum exponent of a real kind
+*********************************************
 
 .. index:: MAXEXPONENT
 

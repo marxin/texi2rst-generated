@@ -1,7 +1,7 @@
   .. _acc_get_current_cuda_context:
 
-``acc_get_current_cuda_context`` - Get CUDA context handle.
-***********************************************************
+acc_get_current_cuda_context - Get CUDA context handle.
+*******************************************************
 
 Description
   This function returns the CUDA context handle. This handle is the same

@@ -1,7 +1,7 @@
   .. _tiny:
 
-``TINY`` - Smallest positive number of a real kind
-**************************************************
+TINY - Smallest positive number of a real kind
+**********************************************
 
 .. index:: TINY
 

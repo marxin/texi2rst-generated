@@ -1,5 +1,5 @@
-Converting ``poly_int`` s
-*************************
+Converting poly_ints
+********************
 
 A ``poly_int<n, T>`` can be constructed from up to
 :samp:`{n}` individual :samp:`{T}` coefficients, with the remaining coefficients

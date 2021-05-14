@@ -1,7 +1,7 @@
   .. _omp_places:
 
-:envvar:`OMP_PLACES` - Specifies on which CPUs the theads should be placed
-**************************************************************************
+OMP_PLACES - Specifies on which CPUs the theads should be placed
+****************************************************************
 
 .. index:: Environment Variable
 

@@ -1,7 +1,7 @@
   .. _omp_destroy_lock:
 
-``omp_destroy_lock`` - Destroy simple lock
-******************************************
+omp_destroy_lock - Destroy simple lock
+**************************************
 
 :samp:`{Description}:`
   Destroy a simple lock.  In order to be destroyed, a simple lock must be

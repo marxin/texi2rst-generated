@@ -1,7 +1,7 @@
   .. _getpid:
 
-``GETPID`` - Process ID function
-********************************
+GETPID - Process ID function
+****************************
 
 .. index:: GETPID
 

@@ -1,7 +1,7 @@
   .. _acc_get_cuda_stream:
 
-``acc_get_cuda_stream`` - Get CUDA stream handle.
-*************************************************
+acc_get_cuda_stream - Get CUDA stream handle.
+*********************************************
 
 Description
   This function returns the CUDA stream handle for the queue :samp:`{async}`.

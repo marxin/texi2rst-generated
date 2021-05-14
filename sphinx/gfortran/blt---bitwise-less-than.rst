@@ -1,7 +1,7 @@
   .. _blt:
 
-``BLT`` - Bitwise less than
-***************************
+BLT - Bitwise less than
+***********************
 
 .. index:: BLT
 

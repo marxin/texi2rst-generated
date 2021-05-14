@@ -144,8 +144,8 @@ be set to control build, host and target configuration.
 
 .. _configuration-files:
 
-Files Created by ``configure``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Files Created by configure
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here we spell out what files will be set up by configure in the
 gcc directory.  Some other files are created as temporary files
@@ -720,8 +720,8 @@ following are also necessary:
 
 .. _front-end-directory:
 
-The Front End :samp:`{language}` Directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Front End language Directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A front end :samp:`{language}` directory contains the source files
 of that front end (but not of any runtime libraries, which should be

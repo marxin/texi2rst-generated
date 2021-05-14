@@ -1,7 +1,7 @@
   .. _omp_fulfill_event:
 
-``omp_fulfill_event`` - Fulfill and destroy an OpenMP event
-***********************************************************
+omp_fulfill_event - Fulfill and destroy an OpenMP event
+*******************************************************
 
 :samp:`{Description}:`
   Fulfill the event associated with the event handle argument.  Currently, it

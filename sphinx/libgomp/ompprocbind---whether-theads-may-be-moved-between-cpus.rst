@@ -1,7 +1,7 @@
   .. _omp_proc_bind:
 
-:envvar:`OMP_PROC_BIND` - Whether theads may be moved between CPUs
-******************************************************************
+OMP_PROC_BIND - Whether theads may be moved between CPUs
+********************************************************
 
 .. index:: Environment Variable
 

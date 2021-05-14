@@ -1,7 +1,7 @@
   .. _dreal:
 
-``DREAL`` - Double real part function
-*************************************
+DREAL - Double real part function
+*********************************
 
 .. index:: DREAL
 

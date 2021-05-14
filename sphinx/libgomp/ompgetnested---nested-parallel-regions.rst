@@ -1,7 +1,7 @@
   .. _omp_get_nested:
 
-``omp_get_nested`` - Nested parallel regions
-********************************************
+omp_get_nested - Nested parallel regions
+****************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if nested parallel regions are

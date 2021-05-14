@@ -1,7 +1,7 @@
   .. _minexponent:
 
-``MINEXPONENT`` - Minimum exponent of a real kind
-*************************************************
+MINEXPONENT - Minimum exponent of a real kind
+*********************************************
 
 .. index:: MINEXPONENT
 

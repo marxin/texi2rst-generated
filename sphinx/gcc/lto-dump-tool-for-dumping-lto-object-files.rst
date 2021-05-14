@@ -1,7 +1,7 @@
 .. _lto-dump:
 
-:command:`lto-dump`-Tool for dumping LTO object files.
-------------------------------------------------------
+lto-dump-Tool for dumping LTO object files.
+-------------------------------------------
 
 .. toctree::
 

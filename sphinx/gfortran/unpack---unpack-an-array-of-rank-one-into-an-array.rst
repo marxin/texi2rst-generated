@@ -1,7 +1,7 @@
   .. _unpack:
 
-``UNPACK`` - Unpack an array of rank one into an array
-******************************************************
+UNPACK - Unpack an array of rank one into an array
+**************************************************
 
 .. index:: UNPACK
 

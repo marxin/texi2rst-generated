@@ -1,7 +1,7 @@
   .. _ishftc:
 
-``ISHFTC`` - Shift bits circularly
-**********************************
+ISHFTC - Shift bits circularly
+******************************
 
 .. index:: ISHFTC
 

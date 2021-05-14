@@ -1,7 +1,7 @@
   .. _log10:
 
-``LOG10`` - Base 10 logarithm function
-**************************************
+LOG10 - Base 10 logarithm function
+**********************************
 
 .. index:: LOG10
 

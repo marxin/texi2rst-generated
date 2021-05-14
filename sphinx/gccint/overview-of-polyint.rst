@@ -1,5 +1,5 @@
-Overview of ``poly_int``
-************************
+Overview of poly_int
+********************
 
 .. index:: poly_int, runtime value
 

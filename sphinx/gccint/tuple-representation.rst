@@ -10,8 +10,8 @@ groups: a header describing the instruction and its locations,
 and a variable length body with all the operands. Tuples are
 organized into a hierarchy with 3 main classes of tuples.
 
-``gimple`` (gsbase)
-^^^^^^^^^^^^^^^^^^^
+gimple (gsbase)
+^^^^^^^^^^^^^^^
 
 .. index:: gimple
 
@@ -110,8 +110,8 @@ Total size               32 bytes
   Lexical block holding this statement.  Also used for debug
   information generation.
 
-``gimple_statement_with_ops``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+gimple_statement_with_ops
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: gimple_statement_with_ops
 
@@ -156,8 +156,8 @@ Total size   48 + 8 * ``num_ops`` bytes
 * ``op``
   Array of trees with ``num_ops`` slots.
 
-``gimple_statement_with_memory_ops``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+gimple_statement_with_memory_ops
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This tuple is essentially identical to ``gimple_statement_with_ops``,
 except that it contains 4 additional fields to hold vectors

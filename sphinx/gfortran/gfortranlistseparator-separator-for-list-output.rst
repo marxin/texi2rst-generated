@@ -1,7 +1,7 @@
 .. _gfortran_list_separator:
 
-:envvar:`GFORTRAN_LIST_SEPARATOR`-Separator for list output
-***********************************************************
+GFORTRAN_LIST_SEPARATOR-Separator for list output
+*************************************************
 
 This environment variable specifies the separator when writing
 list-directed output.  It may contain any number of spaces and

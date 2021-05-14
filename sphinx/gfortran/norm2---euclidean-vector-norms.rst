@@ -1,7 +1,7 @@
   .. _norm2:
 
-``NORM2`` - Euclidean vector norms
-**********************************
+NORM2 - Euclidean vector norms
+******************************
 
 .. index:: NORM2
 

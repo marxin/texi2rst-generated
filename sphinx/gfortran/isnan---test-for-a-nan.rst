@@ -1,7 +1,7 @@
   .. _isnan:
 
-``ISNAN`` - Test for a NaN
-**************************
+ISNAN - Test for a NaN
+**********************
 
 .. index:: ISNAN
 

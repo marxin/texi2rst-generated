@@ -1,7 +1,7 @@
   .. _precision:
 
-``PRECISION`` - Decimal precision of a real kind
-************************************************
+PRECISION - Decimal precision of a real kind
+********************************************
 
 .. index:: PRECISION
 

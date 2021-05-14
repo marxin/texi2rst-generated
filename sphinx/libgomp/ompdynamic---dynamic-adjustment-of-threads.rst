@@ -1,7 +1,7 @@
   .. _omp_dynamic:
 
-:envvar:`OMP_DYNAMIC` - Dynamic adjustment of threads
-*****************************************************
+OMP_DYNAMIC - Dynamic adjustment of threads
+*******************************************
 
 .. index:: Environment Variable
 
