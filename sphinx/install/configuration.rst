@@ -70,7 +70,8 @@ Distributor optionsIf you will be distributing binary versions of GCC, with modi
 to the source code, you should use the options described in this
 section to make clear that your version contains modifications.
 
-:samp:`--with-pkgversion={version}`
+.. option:: --with-pkgversion=version
+
   Specify a string that identifies your package.  You may wish
   to include a build number or build date.  This version string will be
   included in the output of :command:`gcc --version`.  This suffix does
@@ -78,27 +79,30 @@ section to make clear that your version contains modifications.
 
   The default value is :samp:`GCC`.
 
-:samp:`--with-bugurl={url}`
+.. option:: --with-bugurl=url
+
   Specify the URL that users should visit if they wish to report a bug.
   You are of course welcome to forward bugs reported to you to the FSF,
   if you determine that they are not bugs in your modifications.
 
   The default value refers to the FSF's GCC bug tracker.
 
-:samp:`--with-documentation-root-url={url}`
+.. option:: --with-documentation-root-url=url
+
   Specify the URL root that contains GCC option documentation.  The :samp:`{url}`
   should end with a ``/`` character.
 
   The default value is https://gcc.gnu.org/onlinedocs/https://gcc.gnu.org/onlinedocs/.
 
-:samp:`--with-changes-root-url={url}`
+.. option:: --with-changes-root-url=url
+
   Specify the URL root that contains information about changes in GCC
   releases like ``gcc-version/changes.html``.
   The :samp:`{url}` should end with a ``/`` character.
 
   The default value is https://gcc.gnu.org/https://gcc.gnu.org/.
 
-  Target specification* GCC has code to correctly determine the correct value for :samp:`{target}`
+Target specification* GCC has code to correctly determine the correct value for :samp:`{target}`
   for nearly all native systems.  Therefore, we highly recommend you do
   not provide a configure target when configuring a native compiler.
 
@@ -118,7 +122,8 @@ Note that each :option:`--enable` option has a corresponding
 :option:`--disable` option and that each :option:`--with` option has a
 corresponding :option:`--without` option.
 
-:samp:`--prefix={dirname}`
+.. option:: --prefix=dirname
+
   Specify the toplevel installation
   directory.  This is the recommended way to install the tools into a directory
   other than the default.  The toplevel installation directory defaults to
@@ -198,20 +203,23 @@ corresponding :option:`--without` option.
     :option:`--with-specs=%{!fcommon:%{!fno-common:-fno-common}}`.
     See :ref:`Specifying subprocesses and the switches to pass to them <spec-files>`,
 
-:samp:`--program-prefix={prefix}`
+.. option:: --program-prefix=prefix
+
   GCC supports some transformations of the names of its programs when
   installing them.  This option prepends :samp:`{prefix}` to the names of
   programs to install in :samp:`{bindir}` (see above).  For example, specifying
   :option:`--program-prefix=foo-` would result in :samp:`gcc`
   being installed as /usr/local/bin/foo-gcc.
 
-:samp:`--program-suffix={suffix}`
+.. option:: --program-suffix=suffix
+
   Appends :samp:`{suffix}` to the names of programs to install in :samp:`{bindir}`
   (see above).  For example, specifying :option:`--program-suffix=-3.1`
   would result in :samp:`gcc` being installed as
   /usr/local/bin/gcc-3.1.
 
-:samp:`--program-transform-name={pattern}`
+.. option:: --program-transform-name=pattern
+
   Applies the :samp:`sed` script :samp:`{pattern}` to be applied to the names
   of programs to install in :samp:`{bindir}` (see above).  :samp:`{pattern}` has to
   consist of one or more basic :samp:`sed` editing commands, separated by
@@ -243,7 +251,8 @@ corresponding :option:`--without` option.
   As a last shortcoming, none of the installed Ada programs are
   transformed yet, which will be fixed in some time.
 
-:samp:`--with-local-prefix={dirname}`
+.. option:: --with-local-prefix=dirname
+
   Specify the
   installation directory for local include files.  The default is
   /usr/local.  Specify this option if you want the compiler to
@@ -315,11 +324,13 @@ corresponding :option:`--without` option.
   install part of GCC.  Perhaps they make this assumption because
   installing GCC creates the directory.
 
-``--with-gcc-major-version-only``
+.. option:: --with-gcc-major-version-only
+
   Specifies that GCC should use only the major number rather than
   :samp:`{major}`.:samp:`{minor}`.:samp:`{patchlevel}` in filesystem paths.
 
-:samp:`--with-native-system-header-dir={dirname}`
+.. option:: --with-native-system-header-dir=dirname
+
   Specifies that :samp:`{dirname}` is the directory that contains native system
   header files, rather than /usr/include.  This option is most useful
   if you are creating a compiler that should be isolated from the system
@@ -327,7 +338,8 @@ corresponding :option:`--without` option.
   :option:`--with-sysroot` option and will cause GCC to search
   :samp:`{dirname}` inside the system root specified by that option.
 
-:samp:`--enable-shared[={package}[,...]]`
+.. option:: --enable-shared[=package[,...]]
+
   Build shared versions of libraries, if shared libraries are supported on
   the target platform.  Unlike GCC 2.95.x and earlier, shared libraries
   are enabled by default on all platforms that support shared libraries.
@@ -347,7 +359,8 @@ corresponding :option:`--without` option.
   Contrast with :option:`--enable-host-shared`, which affects *host*
   code.
 
-``--enable-host-shared``
+.. option:: --enable-host-shared
+
   Specify that the *host* code should be built into position-independent
   machine code (with -fPIC), allowing it to be used within shared libraries,
   but yielding a slightly slower compiler.
@@ -357,7 +370,8 @@ corresponding :option:`--without` option.
   Contrast with :option:`--enable-shared`, which affects *target*
   libraries.
 
-``--with-gnu-as``
+.. option:: --with-gnu-as
+
   .. _with-gnu-as:
   Specify that the compiler should assume that the
   assembler it finds is the GNU assembler.  However, this does not modify
@@ -381,8 +395,8 @@ corresponding :option:`--without` option.
 
   * :samp:`sparc64-{any}-solaris2.{any}`
 
---with-as= :samp:`{.. _with-as:
-pathname}`
+.. option:: --with-as=pathname
+
   Specify that the compiler should use the assembler pointed to by
   :samp:`{pathname}`, rather than the one found by the standard rules to find
   an assembler, which are:
@@ -413,27 +427,32 @@ pathname}`
   assemblers installed and want to choose one that is not found by the
   above rules.
 
-``--with-gnu-ld``
+.. option:: --with-gnu-ld
+
   .. _with-gnu-ld:
   Same as #with-gnu-as:option:`--with-gnu-as`
   but for the linker.
 
-:samp:`--with-ld={pathname}`
+.. option:: --with-ld=pathname
+
   Same as #with-as:option:`--with-as`
   but for the linker.
 
-``--with-stabs``
+.. option:: --with-stabs
+
   Specify that stabs debugging
   information should be used instead of whatever format the host normally
   uses.  Normally GCC uses the same debug format as the host system.
 
-:samp:`--with-tls={dialect}`
+.. option:: --with-tls=dialect
+
   Specify the default TLS dialect, for systems were there is a choice.
   For ARM targets, possible values for :samp:`{dialect}` are ``gnu`` or
   ``gnu2``, which select between the original GNU dialect and the GNU TLS
   descriptor-based dialect.
 
-``--enable-multiarch``
+.. option:: --enable-multiarch
+
   Specify whether to enable or disable multiarch support.  The default is
   to check for glibc start files in a multiarch location, and enable it
   if the files are found.  The auto detection is enabled for native builds,
@@ -442,12 +461,14 @@ pathname}`
   More documentation about multiarch can be found at
   https://wiki.debian.org/Multiarch.
 
-``--enable-sjlj-exceptions``
+.. option:: --enable-sjlj-exceptions
+
   Force use of the ``setjmp`` / ``longjmp`` -based scheme for exceptions.
   :samp:`configure` ordinarily picks the correct value based on the platform.
   Only use this option if you are sure you need a different setting.
 
-``--enable-vtable-verify``
+.. option:: --enable-vtable-verify
+
   Specify whether to enable or disable the vtable verification feature.
   Enabling this feature causes libstdc++ to be built with its virtual calls
   in verifiable mode.  This means that, when linked with libvtv, every
@@ -459,11 +480,13 @@ pathname}`
   still be built (see :option:`--disable-libvtv` to turn off building libvtv).
   :option:`--disable-vtable-verify` is the default.
 
-``--disable-gcov``
+.. option:: --disable-gcov
+
   Specify that the run-time library used for coverage analysis
   and associated host tools should not be built.
 
-``--disable-multilib``
+.. option:: --disable-multilib
+
   Specify that multiple target
   libraries to support different target variants, calling
   conventions, etc. should not be built.  The default is to build a
@@ -488,7 +511,8 @@ pathname}`
     aix64, pthread, softfloat, powercpu, powerpccpu, powerpcos, biendian,
     sysv, aix.
 
-:samp:`--with-multilib-list={list}` ``--without-multilib-list``
+.. option:: --with-multilib-list=list
+
   Specify what multilibs to build.  :samp:`{list}` is a comma separated list of
   values, possibly consisting of a single value.  Currently only implemented
   for aarch64*-*-*, arm*-*-*, riscv*-*-*, sh*-*-* and x86-64-*-linux*.  The
@@ -614,7 +638,8 @@ pathname}`
     If :option:`--with-multilib-list` is not given, then only 32-bit and
     64-bit run-time libraries will be enabled.
 
-:samp:`--with-multilib-generator={config}`
+.. option:: --with-multilib-generator=config
+
   Specify what multilibs to build.  :samp:`{config}` is a semicolon separated list of
   values, possibly consisting of a single value.  Currently only implemented
   for riscv*-*-elf*.  The accepted values and meanings are given below.
@@ -648,7 +673,8 @@ pathname}`
 
     rv64ima-lp64--f,c,fc
 
-:samp:`--with-endian={endians}`
+.. option:: --with-endian=endians
+
   Specify what endians to use.
   Currently only implemented for sh*-*-*.
 
@@ -666,7 +692,8 @@ pathname}`
   ``little,big``
     Use little endian by default.  Provide a multilib for big endian.
 
-``--enable-threads``
+.. option:: --enable-threads
+
   Specify that the target
   supports threads.  This affects the Objective-C compiler and runtime
   library, and exception handling for other languages like C++.
@@ -678,11 +705,13 @@ pathname}`
   available for the system.  In this case, :option:`--enable-threads` is an
   alias for :option:`--enable-threads=single`.
 
-``--disable-threads``
+.. option:: --disable-threads
+
   Specify that threading support should be disabled for the system.
   This is an alias for :option:`--enable-threads=single`.
 
-:samp:`--enable-threads={lib}`
+.. option:: --enable-threads=lib
+
   Specify that
   :samp:`{lib}` is the thread support library.  This affects the Objective-C
   compiler and runtime library, and exception handling for other languages
@@ -721,7 +750,8 @@ pathname}`
   ``win32``
     Microsoft Win32 API thread support.
 
-``--enable-tls``
+.. option:: --enable-tls
+
   Specify that the target supports TLS (Thread Local Storage).  Usually
   configure can correctly determine if TLS is supported.  In cases where
   it guesses incorrectly, TLS can be explicitly enabled or disabled with
@@ -729,16 +759,19 @@ pathname}`
   the assembler supports TLS but the C library does not, or if the
   assumptions made by the configure test are incorrect.
 
-``--disable-tls``
+.. option:: --disable-tls
+
   Specify that the target does not support TLS.
   This is an alias for :option:`--enable-tls=no`.
 
-``--disable-tm-clone-registry``
+.. option:: --disable-tm-clone-registry
+
   Disable TM clone registry in libgcc. It is enabled in libgcc by default.
   This option helps to reduce code size for embedded targets which do
   not use transactional memory.
 
-:samp:`--with-cpu={cpu}` :samp:`--with-cpu-32={cpu}` :samp:`--with-cpu-64={cpu}`
+.. option:: --with-cpu=cpu
+
   Specify which cpu variant the compiler should generate code for by default.
   :samp:`{cpu}` will be used as the default value of the :option:`-mcpu` = switch.
   This option is only supported on some targets, including ARC, ARM, i386, M68k,
@@ -747,29 +780,34 @@ pathname}`
   32-bit and 64-bit modes; these options are only supported for aarch64, i386,
   x86-64, PowerPC, and SPARC.
 
-:samp:`--with-schedule={cpu}` :samp:`--with-arch={cpu}` :samp:`--with-arch-32={cpu}` :samp:`--with-arch-64={cpu}` :samp:`--with-tune={cpu}` :samp:`--with-tune-32={cpu}` :samp:`--with-tune-64={cpu}` :samp:`--with-abi={abi}` :samp:`--with-fpu={type}` :samp:`--with-float={type}`
+.. option:: --with-schedule=cpu
+
   These configure options provide default values for the :option:`-mschedule` =,
   :option:`-march` =, :option:`-mtune` =, :option:`-mabi` =, and :option:`-mfpu` =
   options and for :option:`-mhard-float` or :option:`-msoft-float`.  As with
   :option:`--with-cpu`, which switches will be accepted and acceptable values
   of the arguments depend on the target.
 
-:samp:`--with-mode={mode}`
+.. option:: --with-mode=mode
+
   Specify if the compiler should default to :option:`-marm` or :option:`-mthumb`.
   This option is only supported on ARM targets.
 
-:samp:`--with-stack-offset={num}`
+.. option:: --with-stack-offset=num
+
   This option sets the default for the -mstack-offset= :samp:`{num}` option,
   and will thus generally also control the setting of this option for
   libraries.  This option is only supported on Epiphany targets.
 
-:samp:`--with-fpmath={isa}`
+.. option:: --with-fpmath=isa
+
   This options sets :option:`-mfpmath=sse` by default and specifies the default
   ISA for floating-point arithmetics.  You can select either :samp:`sse` which
   enables :option:`-msse2` or :samp:`avx` which enables :option:`-mavx` by default.
   This option is only supported on i386 and x86-64 targets.
 
-:samp:`--with-fp-32={mode}`
+.. option:: --with-fp-32=mode
+
   On MIPS targets, set the default value for the :option:`-mfp` option when using
   the o32 ABI.  The possibilities for :samp:`{mode}` are:
 
@@ -788,16 +826,19 @@ pathname}`
     In the absence of this configuration option the default is to use the o32
   FP32 ABI extension.
 
-``--with-odd-spreg-32``
+.. option:: --with-odd-spreg-32
+
   On MIPS targets, set the :option:`-modd-spreg` option by default when using
   the o32 ABI.
 
-``--without-odd-spreg-32``
+.. option:: --without-odd-spreg-32
+
   On MIPS targets, set the :option:`-mno-odd-spreg` option by default when using
   the o32 ABI.  This is normally used in conjunction with
   :option:`--with-fp-32=64` in order to target the o32 FP64A ABI extension.
 
-:samp:`--with-nan={encoding}`
+.. option:: --with-nan=encoding
+
   On MIPS targets, set the default encoding convention to use for the
   special not-a-number (NaN) IEEE 754 floating-point data.  The
   possibilities for :samp:`{encoding}` are:
@@ -816,7 +857,8 @@ pathname}`
   the legacy encoding, as when neither of the :option:`-mnan=2008` and
   :option:`-mnan=legacy` command-line options has been used.
 
-:samp:`--with-divide={type}`
+.. option:: --with-divide=type
+
   Specify how the compiler should generate code for checking for
   division by zero.  This option is only supported on the MIPS target.
   The possibilities for :samp:`{type}` are:
@@ -831,29 +873,35 @@ pathname}`
   .. If you make -with-llsc the default for additional targets,
      update the -with-llsc description in the MIPS section below.
 
-``--with-llsc``
+.. option:: --with-llsc
+
   On MIPS targets, make :option:`-mllsc` the default when no
   :option:`-mno-llsc` option is passed.  This is the default for
   Linux-based targets, as the kernel will emulate them if the ISA does
   not provide them.
 
-``--without-llsc``
+.. option:: --without-llsc
+
   On MIPS targets, make :option:`-mno-llsc` the default when no
   :option:`-mllsc` option is passed.
 
-``--with-synci``
+.. option:: --with-synci
+
   On MIPS targets, make :option:`-msynci` the default when no
   :option:`-mno-synci` option is passed.
 
-``--without-synci``
+.. option:: --without-synci
+
   On MIPS targets, make :option:`-mno-synci` the default when no
   :option:`-msynci` option is passed.  This is the default.
 
-``--with-lxc1-sxc1``
+.. option:: --with-lxc1-sxc1
+
   On MIPS targets, make :option:`-mlxc1-sxc1` the default when no
   :option:`-mno-lxc1-sxc1` option is passed.  This is the default.
 
-``--without-lxc1-sxc1``
+.. option:: --without-lxc1-sxc1
+
   On MIPS targets, make :option:`-mno-lxc1-sxc1` the default when no
   :option:`-mlxc1-sxc1` option is passed.  The indexed load/store
   instructions are not directly a problem but can lead to unexpected
@@ -868,11 +916,13 @@ pathname}`
   pure 32-bit environment and can hold true in a 64-bit environment if
   the address space is accurately set to be 32-bit for o32 and n32.
 
-``--with-madd4``
+.. option:: --with-madd4
+
   On MIPS targets, make :option:`-mmadd4` the default when no
   :option:`-mno-madd4` option is passed.  This is the default.
 
-``--without-madd4``
+.. option:: --without-madd4
+
   On MIPS targets, make :option:`-mno-madd4` the default when no
   :option:`-mmadd4` option is passed.  The ``madd4`` instruction
   family can be problematic when targeting a combination of cores that
@@ -882,18 +932,21 @@ pathname}`
   only way to ensure compatible code is generated; this will incur
   a performance penalty.
 
-``--with-mips-plt``
+.. option:: --with-mips-plt
+
   On MIPS targets, make use of copy relocations and PLTs.
   These features are extensions to the traditional
   SVR4-based MIPS ABIs and require support from GNU binutils
   and the runtime C library.
 
-:samp:`--with-stack-clash-protection-guard-size={size}`
+.. option:: --with-stack-clash-protection-guard-size=size
+
   On certain targets this option sets the default stack clash protection guard
   size as a power of two in bytes.  On AArch64 :samp:`{size}` is required to be either
   12 (4KB) or 16 (64KB).
 
-``--enable-__cxa_atexit``
+.. option:: --enable-__cxa_atexit
+
   Define if you want to use __cxa_atexit, rather than atexit, to
   register C++ destructors for local statics and global objects.
   This is essential for fully standards-compliant handling of
@@ -901,24 +954,29 @@ pathname}`
   only available on systems with GNU libc.  When enabled, this will cause
   :option:`-fuse-cxa-atexit` to be passed by default.
 
-``--enable-gnu-indirect-function``
+.. option:: --enable-gnu-indirect-function
+
   Define if you want to enable the ``ifunc`` attribute.  This option is
   currently only available on systems with GNU libc on certain targets.
 
-``--enable-target-optspace``
+.. option:: --enable-target-optspace
+
   Specify that target
   libraries should be optimized for code space instead of code speed.
   This is the default for the m32r platform.
 
-:samp:`--with-cpp-install-dir={dirname}`
+.. option:: --with-cpp-install-dir=dirname
+
   Specify that the user visible :command:`cpp` program should be installed
   in :samp:`{prefix}` / :samp:`{dirname}` /cpp, in addition to :samp:`{bindir}`.
 
-``--enable-comdat``
+.. option:: --enable-comdat
+
   Enable COMDAT group support.  This is primarily used to override the
   automatically detected value.
 
-``--enable-initfini-array``
+.. option:: --enable-initfini-array
+
   Force the use of sections ``.init_array`` and ``.fini_array``
   (instead of ``.init`` and ``.fini`` ) for constructors and
   destructors.  Option :option:`--disable-initfini-array` has the
@@ -926,12 +984,14 @@ pathname}`
   will try to guess whether the ``.init_array`` and
   ``.fini_array`` sections are supported and, if they are, use them.
 
-``--enable-link-mutex``
+.. option:: --enable-link-mutex
+
   When building GCC, use a mutex to avoid linking the compilers for
   multiple languages at the same time, to avoid thrashing on build
   systems with limited free memory.  The default is not to use such a mutex.
 
-``--enable-link-serialization``
+.. option:: --enable-link-serialization
+
   When building GCC, use make dependencies to serialize linking the compilers for
   multiple languages, to avoid thrashing on build
   systems with limited free memory.  The default is not to add such
@@ -939,7 +999,8 @@ pathname}`
   compilers concurrently.  If the argument is a positive integer, allow
   that number of concurrent link processes for the large binaries.
 
-``--enable-maintainer-mode``
+.. option:: --enable-maintainer-mode
+
   The build rules that regenerate the Autoconf and Automake output files as
   well as the GCC master message catalog gcc.pot are normally
   disabled.  This is because it can only be rebuilt if the complete source
@@ -948,13 +1009,15 @@ pathname}`
   this.  Note that you need a recent version of the ``gettext`` tools
   to do so.
 
-``--disable-bootstrap``
+.. option:: --disable-bootstrap
+
   For a native build, the default configuration is to perform
   a 3-stage bootstrap of the compiler when :samp:`make` is invoked,
   testing that GCC can compile itself correctly.  If you want to disable
   this process, you can configure with :option:`--disable-bootstrap`.
 
-``--enable-bootstrap``
+.. option:: --enable-bootstrap
+
   In special cases, you may want to perform a 3-stage build
   even if the target and host triplets are different.
   This is possible when the host can run code compiled for
@@ -962,7 +1025,8 @@ pathname}`
   Starting from GCC 4.2, to do this you have to configure explicitly
   with :option:`--enable-bootstrap`.
 
-``--enable-generated-files-in-srcdir``
+.. option:: --enable-generated-files-in-srcdir
+
   Neither the .c and .h files that are generated from Bison and flex nor the
   info manuals and man pages that are built from the .texi files are present
   in the repository development tree.  When building GCC from that development tree,
@@ -976,7 +1040,8 @@ pathname}`
   is not a requirement that the users of source releases to have flex, Bison,
   or makeinfo.
 
-``--enable-version-specific-runtime-libs``
+.. option:: --enable-version-specific-runtime-libs
+
   Specify
   that runtime libraries should be installed in the compiler specific
   subdirectory (:samp:`{libdir}` /gcc) rather than the usual places.  In
@@ -987,8 +1052,8 @@ pathname}`
   parallel.  The default is :samp:`yes` for :samp:`libada`, and :samp:`no` for
   the remaining libraries.
 
---with-aix-soname=:samp:`.. _withaixsoname:
-aix`, :samp:`svr4` or :samp:`both`
+.. option:: --with-aix-soname=aix, svr4 or both
+
   Traditional AIX shared library versioning (versioned ``Shared Object``
   files as members of unversioned ``Archive Library`` files named
   :samp:`lib.a`) causes numerous headaches for package managers. However,
@@ -1098,7 +1163,8 @@ aix`, :samp:`svr4` or :samp:`both`
 
   Default is the traditional behavior :option:`--with-aix-soname`:samp:`=aix`.
 
-:samp:`--enable-languages={lang1},{lang2},...`
+.. option:: --enable-languages=lang1,lang2,...
+
   Specify that only a particular subset of compilers and
   their runtime libraries should be built.  For a list of valid values for
   :samp:`{langN}` you can issue the following command in the
@@ -1121,7 +1187,8 @@ aix`, :samp:`svr4` or :samp:`both`
   exception is ``jit`` language, which requires
   :option:`--enable-host-shared` to be included with ``all``.
 
-:samp:`--enable-stage1-languages={lang1},{lang2},...`
+.. option:: --enable-stage1-languages=lang1,lang2,...
+
   Specify that a particular subset of compilers and their runtime
   libraries should be built with the system C compiler during stage 1 of
   the bootstrap process, rather than only in later stages with the
@@ -1136,44 +1203,53 @@ aix`, :samp:`svr4` or :samp:`both`
   stage1-bubble all-target`, or run the testsuite on the stage-1 compiler
   for the specified languages using :command:`make stage1-start check-gcc`.
 
-``--disable-libada``
+.. option:: --disable-libada
+
   Specify that the run-time libraries and tools used by GNAT should not
   be built.  This can be useful for debugging, or for compatibility with
   previous Ada build procedures, when it was required to explicitly
   do a :samp:`make -C gcc gnatlib_and_tools`.
 
-``--disable-libsanitizer``
+.. option:: --disable-libsanitizer
+
   Specify that the run-time libraries for the various sanitizers should
   not be built.
 
-``--disable-libssp``
+.. option:: --disable-libssp
+
   Specify that the run-time libraries for stack smashing protection
   should not be built or linked against.  On many targets library support
   is provided by the C library instead.
 
-``--disable-libquadmath``
+.. option:: --disable-libquadmath
+
   Specify that the GCC quad-precision math library should not be built.
   On some systems, the library is required to be linkable when building
   the Fortran front end, unless :option:`--disable-libquadmath-support`
   is used.
 
-``--disable-libquadmath-support``
+.. option:: --disable-libquadmath-support
+
   Specify that the Fortran front end and ``libgfortran`` do not add
   support for ``libquadmath`` on systems supporting it.
 
-``--disable-libgomp``
+.. option:: --disable-libgomp
+
   Specify that the GNU Offloading and Multi Processing Runtime Library
   should not be built.
 
-``--disable-libvtv``
+.. option:: --disable-libvtv
+
   Specify that the run-time libraries used by vtable verification
   should not be built.
 
-``--with-dwarf2``
+.. option:: --with-dwarf2
+
   Specify that the compiler should
   use DWARF 2 debugging information as the default.
 
-:samp:`--with-advance-toolchain={at}`
+.. option:: --with-advance-toolchain=at
+
   On 64-bit PowerPC Linux systems, configure the compiler to use the
   header files, library files, and the dynamic linker from the Advance
   Toolchain release :samp:`{at}` instead of the default versions that are
@@ -1181,7 +1257,8 @@ aix`, :samp:`svr4` or :samp:`both`
   intended for the developers of GCC, and it is not intended for general
   use.
 
-``--enable-targets=all`` :samp:`--enable-targets={target_list}`
+.. option:: --enable-targets=all
+
   Some GCC targets, e.g. powerpc64-linux, build bi-arch compilers.
   These are compilers that are able to generate either 64-bit or 32-bit
   code.  Typically, the corresponding 32-bit target, e.g.
@@ -1194,21 +1271,26 @@ aix`, :samp:`svr4` or :samp:`both`
   Currently, this option only affects sparc-linux, powerpc-linux, x86-linux,
   mips-linux and s390-linux.
 
-``--enable-default-pie``
+.. option:: --enable-default-pie
+
   Turn on :option:`-fPIE` and :option:`-pie` by default.
 
-``--enable-secureplt``
+.. option:: --enable-secureplt
+
   This option enables :option:`-msecure-plt` by default for powerpc-linux.
   See :ref:`RS/6000 and PowerPC Options <rs-6000-and-powerpc-options>`,
 
-``--enable-default-ssp``
+.. option:: --enable-default-ssp
+
   Turn on :option:`-fstack-protector-strong` by default.
 
-``--enable-cld``
+.. option:: --enable-cld
+
   This option enables :option:`-mcld` by default for 32-bit x86 targets.
   See :ref:`i386 and x86-64 Options <i386-and-x86-64-options>`,
 
-``--enable-large-address-aware``
+.. option:: --enable-large-address-aware
+
   The :option:`--enable-large-address-aware` option arranges for MinGW
   executables to be linked using the :option:`--large-address-aware`
   option, that enables the use of more than 2GB of memory.  If GCC is
@@ -1216,7 +1298,8 @@ aix`, :samp:`svr4` or :samp:`both`
   :option:`-Wl,--disable-large-address-aware` option to the so-configured
   compiler driver.
 
-``--enable-win32-registry`` :samp:`--enable-win32-registry={key}` ``--disable-win32-registry``
+.. option:: --enable-win32-registry
+
   The :option:`--enable-win32-registry` option enables Microsoft Windows-hosted GCC
   to look up installations paths in the registry using the following key:
 
@@ -1232,12 +1315,14 @@ aix`, :samp:`svr4` or :samp:`both`
   by default, and can be disabled by :option:`--disable-win32-registry`
   option.  This option has no effect on the other hosts.
 
-``--nfp``
+.. option:: --nfp
+
   Specify that the machine does not have a floating point unit.  This
   option only applies to :samp:`m68k-sun-sunos{n}`.  On any other
   system, :option:`--nfp` has no effect.
 
-``--enable-werror`` ``--disable-werror`` ``--enable-werror=yes`` ``--enable-werror=no``
+.. option:: --enable-werror
+
   When you specify this option, it controls whether certain files in the
   compiler are built with :option:`-Werror` in bootstrap stage2 and later.
   If you don't specify it, :option:`-Werror` is turned on for the main
@@ -1245,7 +1330,8 @@ aix`, :samp:`svr4` or :samp:`both`
   final releases.  The specific files which get :option:`-Werror` are
   controlled by the Makefiles.
 
-``--enable-checking`` ``--disable-checking`` :samp:`--enable-checking={list}`
+.. option:: --enable-checking
+
   This option controls performing internal consistency checks in the compiler.
   It does not change the generated code, but adds error checking of the
   requested complexity.  This slows down the compiler and may only work
@@ -1282,7 +1368,8 @@ aix`, :samp:`svr4` or :samp:`both`
   expensive and the :samp:`df`, :samp:`gcac` and :samp:`valgrind` checks are very
   expensive.
 
-``--disable-stage1-checking`` ``--enable-stage1-checking`` :samp:`--enable-stage1-checking={list}`
+.. option:: --disable-stage1-checking
+
   This option affects only bootstrap build.  If no :option:`--enable-checking`
   option is specified the stage1 compiler is built with :samp:`yes` checking
   enabled, otherwise the stage1 checking flags are the same as specified by
@@ -1293,7 +1380,8 @@ aix`, :samp:`svr4` or :samp:`both`
   with checking for stage1 enabled, you can use :samp:`--disable-stage1-checking`
   to disable checking for the stage1 compiler.
 
-``--enable-coverage`` :samp:`--enable-coverage={level}`
+.. option:: --enable-coverage
+
   With this option, the compiler is built to collect self coverage
   information, every time it is run.  This is for internal development
   purposes, and only works when the compiler is being built with gcc.  The
@@ -1303,37 +1391,44 @@ aix`, :samp:`svr4` or :samp:`both`
   enable optimization.  When coverage is enabled, the default level is
   without optimization.
 
-``--enable-gather-detailed-mem-stats``
+.. option:: --enable-gather-detailed-mem-stats
+
   When this option is specified more detailed information on memory
   allocation is gathered.  This information is printed when using
   :option:`-fmem-report`.
 
-``--enable-valgrind-annotations``
+.. option:: --enable-valgrind-annotations
+
   Mark selected memory related operations in the compiler when run under
   valgrind to suppress false positives.
 
-``--enable-nls`` ``--disable-nls``
+.. option:: --enable-nls
+
   The :option:`--enable-nls` option enables Native Language Support (NLS),
   which lets GCC output diagnostics in languages other than American
   English.  Native Language Support is enabled by default if not doing a
   canadian cross build.  The :option:`--disable-nls` option disables NLS.
 
-``--with-included-gettext``
+.. option:: --with-included-gettext
+
   If NLS is enabled, the :option:`--with-included-gettext` option causes the build
   procedure to prefer its copy of GNU :command:`gettext`.
 
-``--with-catgets``
+.. option:: --with-catgets
+
   If NLS is enabled, and if the host lacks ``gettext`` but has the
   inferior ``catgets`` interface, the GCC build procedure normally
   ignores ``catgets`` and instead uses GCC's copy of the GNU
   ``gettext`` library.  The :option:`--with-catgets` option causes the
   build procedure to use the host's ``catgets`` in this situation.
 
-:samp:`--with-libiconv-prefix={dir}`
+.. option:: --with-libiconv-prefix=dir
+
   Search for libiconv header files in :samp:`{dir}` /include and
   libiconv library files in :samp:`{dir}` /lib.
 
-``--enable-obsolete``
+.. option:: --enable-obsolete
+
   Enable configuration for an obsoleted system.  If you attempt to
   configure GCC for a system (build, host, or target) which has been
   obsoleted, and you do not specify this flag, configure will halt with an
@@ -1343,7 +1438,8 @@ aix`, :samp:`svr4` or :samp:`both`
   is removed entirely in the next major release, unless someone steps
   forward to maintain the port.
 
-``--enable-decimal-float`` ``--enable-decimal-float=yes`` ``--enable-decimal-float=no`` ``--enable-decimal-float=bid`` ``--enable-decimal-float=dpd`` ``--disable-decimal-float``
+.. option:: --enable-decimal-float
+
   Enable (or disable) support for the C decimal floating point extension
   that is in the IEEE 754-2008 standard.  This is enabled by default only
   on PowerPC, i386, and x86_64 GNU/Linux systems.  Other systems may also
@@ -1353,13 +1449,15 @@ aix`, :samp:`svr4` or :samp:`both`
   format is default on i386 and x86_64 systems, and the :samp:`dpd`
   (densely packed decimal) format is default on PowerPC systems.
 
-``--enable-fixed-point`` ``--disable-fixed-point``
+.. option:: --enable-fixed-point
+
   Enable (or disable) support for C fixed-point arithmetic.
   This option is enabled by default for some targets (such as MIPS) which
   have hardware-support for fixed-point operations.  On other targets, you
   may enable this option manually.
 
-``--with-long-double-128``
+.. option:: --with-long-double-128
+
   Specify if ``long double`` type should be 128-bit by default on selected
   GNU/Linux architectures.  If using ``--without-long-double-128``,
   ``long double`` will be by default 64-bit, the same as ``double`` type.
@@ -1367,7 +1465,8 @@ aix`, :samp:`svr4` or :samp:`both`
   128-bit ``long double`` when built against GNU C Library 2.4 and later,
   64-bit ``long double`` otherwise.
 
-``--with-long-double-format=ibm`` ``--with-long-double-format=ieee``
+.. option:: --with-long-double-format=ibm
+
   Specify whether ``long double`` uses the IBM extended double format
   or the IEEE 128-bit floating point format on PowerPC Linux systems.
   This configuration switch will only work on little endian PowerPC
@@ -1395,10 +1494,12 @@ aix`, :samp:`svr4` or :samp:`both`
   If you do not set the ``long double`` type explicitly, no multilibs
   will be generated.
 
-``--enable-fdpic``
+.. option:: --enable-fdpic
+
   On SH Linux systems, generate ELF FDPIC code.
 
-:samp:`--with-gmp={pathname}` :samp:`--with-gmp-include={pathname}` :samp:`--with-gmp-lib={pathname}` :samp:`--with-mpfr={pathname}` :samp:`--with-mpfr-include={pathname}` :samp:`--with-mpfr-lib={pathname}` :samp:`--with-mpc={pathname}` :samp:`--with-mpc-include={pathname}` :samp:`--with-mpc-lib={pathname}`
+.. option:: --with-gmp=pathname
+
   If you want to build GCC but do not have the GMP library, the MPFR
   library and/or the MPC library installed in a standard location and
   do not have their sources present in the GCC source tree then you
@@ -1424,7 +1525,8 @@ aix`, :samp:`svr4` or :samp:`both`
   These flags are applicable to the host platform only.  When building
   a cross compiler, they will not be used to configure target libraries.
 
-:samp:`--with-isl={pathname}` :samp:`--with-isl-include={pathname}` :samp:`--with-isl-lib={pathname}`
+.. option:: --with-isl=pathname
+
   If you do not have the isl library installed in a standard location and you
   want to build GCC, you can explicitly specify the directory where it is
   installed (:samp:`--with-isl=/{islinstalldir}`). The
@@ -1437,34 +1539,40 @@ aix`, :samp:`svr4` or :samp:`both`
   These flags are applicable to the host platform only.  When building
   a cross compiler, they will not be used to configure target libraries.
 
-:samp:`--with-stage1-ldflags={flags}`
+.. option:: --with-stage1-ldflags=flags
+
   This option may be used to set linker flags to be used when linking
   stage 1 of GCC.  These are also used when linking GCC if configured with
   :option:`--disable-bootstrap`.  If :option:`--with-stage1-libs` is not set to a
   value, then the default is :samp:`-static-libstdc++ -static-libgcc`, if
   supported.
 
-:samp:`--with-stage1-libs={libs}`
+.. option:: --with-stage1-libs=libs
+
   This option may be used to set libraries to be used when linking stage 1
   of GCC.  These are also used when linking GCC if configured with
   :option:`--disable-bootstrap`.
 
-:samp:`--with-boot-ldflags={flags}`
+.. option:: --with-boot-ldflags=flags
+
   This option may be used to set linker flags to be used when linking
   stage 2 and later when bootstrapping GCC.  If -with-boot-libs
   is not is set to a value, then the default is
   :samp:`-static-libstdc++ -static-libgcc`.
 
-:samp:`--with-boot-libs={libs}`
+.. option:: --with-boot-libs=libs
+
   This option may be used to set libraries to be used when linking stage 2
   and later when bootstrapping GCC.
 
-:samp:`--with-debug-prefix-map={map}`
+.. option:: --with-debug-prefix-map=map
+
   Convert source directory names using :option:`-fdebug-prefix-map` when
   building runtime libraries.  :samp:`{map}` is a space-separated
   list of maps of the form :samp:`{old}={new}`.
 
-``--enable-linker-build-id``
+.. option:: --enable-linker-build-id
+
   Tells GCC to pass :option:`--build-id` option to the linker for all final
   links (links performed without the :option:`-r` or :option:`--relocatable`
   option), if the linker supports it.  If you specify
@@ -1472,18 +1580,21 @@ aix`, :samp:`svr4` or :samp:`both`
   support :option:`--build-id` option, a warning is issued and the
   :option:`--enable-linker-build-id` option is ignored.  The default is off.
 
-:samp:`--with-linker-hash-style={choice}`
+.. option:: --with-linker-hash-style=choice
+
   Tells GCC to pass :option:`--hash-style`:samp:`={choice}` option to the
   linker for all final links. :samp:`{choice}` can be one of
   :samp:`sysv`, :samp:`gnu`, and :samp:`both` where :samp:`sysv` is the default.
 
-``--enable-gnu-unique-object`` ``--disable-gnu-unique-object``
+.. option:: --enable-gnu-unique-object
+
   Tells GCC to use the gnu_unique_object relocation for C++ template
   static data members and inline function local statics.  Enabled by
   default for a toolchain with an assembler that accepts it and
   GLIBC 2.11 or above, otherwise disabled.
 
-:samp:`--with-diagnostics-color={choice}`
+.. option:: --with-diagnostics-color=choice
+
   Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-color` =
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
@@ -1492,7 +1603,8 @@ aix`, :samp:`svr4` or :samp:`both`
   is present and non-empty in the environment of the compiler, and
   :option:`-fdiagnostics-color=never` otherwise.
 
-:samp:`--with-diagnostics-urls={choice}`
+.. option:: --with-diagnostics-urls=choice
+
   Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-urls` =
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
@@ -1501,11 +1613,13 @@ aix`, :samp:`svr4` or :samp:`both`
   or :envvar:`TERM_URLS` is present and non-empty in the environment of the
   compiler, and :option:`-fdiagnostics-urls=never` otherwise.
 
-``--enable-lto`` ``--disable-lto``
+.. option:: --enable-lto
+
   Enable support for link-time optimization (LTO).  This is enabled by
   default, and may be disabled using :option:`--disable-lto`.
 
-``--enable-linker-plugin-configure-flags=FLAGS`` ``--enable-linker-plugin-flags=FLAGS``
+.. option:: --enable-linker-plugin-configure-flags=FLAGS
+
   By default, linker plugins (such as the LTO plugin) are built for the
   host system architecture.  For the case that the linker has a
   different (but run-time compatible) architecture, these flags can be
@@ -1523,21 +1637,24 @@ aix`, :samp:`svr4` or :samp:`both`
         --enable-linker-plugin-configure-flags=--host=i686-pc-linux-gnu \
         --enable-linker-plugin-flags='CC=gcc\ -m32\ -Wl,-rpath,[...]/i686-pc-linux-gnu/lib'
 
-:samp:`--with-plugin-ld={pathname}`
+.. option:: --with-plugin-ld=pathname
+
   Enable an alternate linker to be used at link-time optimization (LTO)
   link time when :option:`-fuse-linker-plugin` is enabled.
   This linker should have plugin support such as gold starting with
   version 2.20 or GNU ld starting with version 2.21.
   See :option:`-fuse-linker-plugin` for details.
 
-``--enable-canonical-system-headers`` ``--disable-canonical-system-headers``
+.. option:: --enable-canonical-system-headers
+
   Enable system header path canonicalization for libcpp.  This can
   produce shorter header file paths in diagnostics and dependency output
   files, but these changed header paths may conflict with some compilation
   environments.  Enabled by default, and may be disabled using
   :option:`--disable-canonical-system-headers`.
 
-:samp:`--with-glibc-version={major}.{minor}`
+.. option:: --with-glibc-version=major.minor
+
   Tell GCC that when the GNU C Library (glibc) is used on the target it
   will be version :samp:`{major}`.:samp:`{minor}` or later.  Normally this can
   be detected from the C library's header files, but this option may be
@@ -1549,10 +1666,12 @@ aix`, :samp:`svr4` or :samp:`both`
   However, such configurations may not work well as not all the relevant
   configuration in GCC is on a per-multilib basis.
 
-:samp:`--enable-as-accelerator-for={target}`
+.. option:: --enable-as-accelerator-for=target
+
   Build as offload target compiler. Specify offload host triple by :samp:`{target}`.
 
-:samp:`--enable-offload-targets={target1}[={path1}],...,{targetN}[={pathN}]`
+.. option:: --enable-offload-targets=target1[=path1],...,targetN[=pathN]
+
   Enable offloading to targets :samp:`{target1}`, ..., :samp:`{targetN}`.
   Offload compilers are expected to be already installed.  Default search
   path for them is :samp:`{exec-prefix}`, but it can be changed by
@@ -1563,14 +1682,16 @@ aix`, :samp:`svr4` or :samp:`both`
     % srcdir/configure \
         --enable-offload-targets=x86_64-intelmicemul-linux-gnu=/path/to/x86_64/compiler,nvptx-none
 
-``--enable-offload-defaulted``
+.. option:: --enable-offload-defaulted
+
   Tell GCC that configured but not installed offload compilers and libgomp
   plugins are silently ignored.  Useful for distribution compilers where
   those are in separate optional packages and where the presence or absence
   of those optional packages should determine the actual supported offloading
   target set rather than the GCC configure-time selection.
 
-:samp:`--with-hsa-runtime={pathname}` :samp:`--with-hsa-runtime-include={pathname}` :samp:`--with-hsa-runtime-lib={pathname}`
+.. option:: --with-hsa-runtime=pathname
+
   If you configure GCC with offloading which uses an HSA run-time such as
   AMDGCN but do not have the HSA run-time library installed in a standard
   location then you can explicitly specify the directory where they are
@@ -1579,7 +1700,8 @@ aix`, :samp:`svr4` or :samp:`both`
   :option:`--with-hsa-runtime-lib=/`:samp:`{hsainstalldir}` /lib and
   :option:`--with-hsa-runtime-include=/`:samp:`{hsainstalldir}` /include.
 
-``--enable-cet`` ``--disable-cet``
+.. option:: --enable-cet
+
   Enable building target run-time libraries with control-flow
   instrumentation, see :option:`-fcf-protection` option.  When
   ``--enable-cet`` is specified target libraries are configured
@@ -1591,14 +1713,16 @@ aix`, :samp:`svr4` or :samp:`both`
   otherwise.  In this case, the target libraries are configured to get
   additional :option:`-fcf-protection` option.
 
-:samp:`--with-riscv-attribute={yes}, {no} or {default}`
+.. option:: --with-riscv-attribute=yes, no or default
+
   Generate RISC-V attribute by default, in order to record extra build
   information in object.
 
   The option is disabled by default. It is enabled on RISC-V/ELF (bare-metal)
   target if target binutils supported.
 
-``--enable-s390-excess-float-precision`` ``--disable-s390-excess-float-precision``
+.. option:: --enable-s390-excess-float-precision
+
   On s390(x) targets, enable treatment of float expressions with double precision
   when in standards-compliant mode (e.g., when ``--std=c99`` or
   ``-fexcess-precision=standard`` are given).
@@ -1608,13 +1732,15 @@ aix`, :samp:`svr4` or :samp:`both`
   GCC follows and enables the option. For other cross compiles, the default is
   disabled.
 
-  Cross-Compiler-Specific OptionsThe following options only apply to building cross compilers.
+Cross-Compiler-Specific OptionsThe following options only apply to building cross compilers.
 
-:samp:`--with-toolexeclibdir={dir}`
+.. option:: --with-toolexeclibdir=dir
+
   Specify the installation directory for libraries built with a cross compiler.
   The default is ${gcc_tooldir}/lib.
 
-``--with-sysroot`` :samp:`--with-sysroot={dir}`
+.. option:: --with-sysroot
+
   Tells GCC to consider :samp:`{dir}` as the root of a tree that contains
   (a subset of) the root filesystem of the target operating system.
   Target system headers, libraries and run-time object files will be
@@ -1637,7 +1763,8 @@ aix`, :samp:`svr4` or :samp:`both`
   option then the compiler will search that directory within :samp:`{dirname}` for
   native system headers rather than the default /usr/include.
 
-``--with-build-sysroot`` :samp:`--with-build-sysroot={dir}`
+.. option:: --with-build-sysroot
+
   Tells GCC to consider :samp:`{dir}` as the system root (see
   :option:`--with-sysroot` ) while building target libraries, instead of
   the directory specified with :option:`--with-sysroot`.  This option is
@@ -1654,7 +1781,8 @@ aix`, :samp:`svr4` or :samp:`both`
   option then the compiler will search that directory within :samp:`{dirname}` for
   native system headers rather than the default /usr/include.
 
-``--with-headers`` :samp:`--with-headers={dir}`
+.. option:: --with-headers
+
   Deprecated in favor of :option:`--with-sysroot`.
   Specifies that target headers are available when building a cross compiler.
   The :samp:`{dir}` argument specifies a directory which has the target include
@@ -1665,25 +1793,29 @@ aix`, :samp:`svr4` or :samp:`both`
   pre-exist, the :samp:`{dir}` argument may be omitted.  :command:`fixincludes`
   will be run on these files to make them compatible with GCC.
 
-``--without-headers``
+.. option:: --without-headers
+
   Tells GCC not use any target headers from a libc when building a cross
   compiler.  When crossing to GNU/Linux, you need the headers so GCC
   can build the exception handling for libgcc.
 
-``--with-libs`` :samp:`--with-libs="{dir1}{dir2} ... {dirN}"`
+.. option:: --with-libs
+
   Deprecated in favor of :option:`--with-sysroot`.
   Specifies a list of directories which contain the target runtime
   libraries.  These libraries will be copied into the gcc install
   directory.  If the directory list is omitted, this option has no
   effect.
 
-``--with-newlib``
+.. option:: --with-newlib
+
   Specifies that :samp:`newlib` is
   being used as the target C library.  This causes ``__eprintf`` to be
   omitted from libgcc.a on the assumption that it will be provided by
   :samp:`newlib`.
 
-``--with-avrlibc``
+.. option:: --with-avrlibc
+
   Only supported for the AVR target. Specifies that :samp:`AVR-Libc` is
   being used as the target C  library.  This causes float support
   functions like ``__addsf3`` to be omitted from libgcc.a on
@@ -1693,7 +1825,8 @@ aix`, :samp:`svr4` or :samp:`both`
   RTEMS configurations, which currently use newlib.  The option is
   supported since version 4.7.2 and is the default in 4.8.0 and newer.
 
-``--with-double={32|64|32,64|64,32}`` ``--with-long-double={32|64|32,64|64,32|double}``
+.. option:: --with-double={32|64|32,64|64,32}
+
   Only supported for the AVR target since version 10.
   Specify the default layout available for the C/C++ :samp:`double`
   and :samp:`long double` type, respectively. The following rules apply:
@@ -1722,14 +1855,16 @@ aix`, :samp:`svr4` or :samp:`both`
   that :samp:`long double` - and hence also :samp:`double` - is always
   32 bits wide.
 
-``--with-double-comparison={tristate|bool|libf7}``
+.. option:: --with-double-comparison={tristate|bool|libf7}
+
   Only supported for the AVR target since version 10.
   Specify what result format is returned by library functions that
   compare 64-bit floating point values ( ``DFmode`` ).
   The GCC default is :samp:`tristate`.  If the floating point
   implementation returns a boolean instead, set it to :samp:`bool`.
 
-``--with-libf7={libgcc|math|math-symbols|no}``
+.. option:: --with-libf7={libgcc|math|math-symbols|no}
+
   Only supported for the AVR target since version 10.
   Specify to which degree code from LibF7 is included in libgcc.
   LibF7 is an ad-hoc, AVR-specific, 64-bit floating point emulation
@@ -1744,12 +1879,14 @@ aix`, :samp:`svr4` or :samp:`both`
   from elsewhere.  This option sets :option:`--with-double-comparison`
   to :samp:`bool`.
 
-:samp:`--with-nds32-lib={library}`
+.. option:: --with-nds32-lib=library
+
   Specifies that :samp:`{library}` setting is used for building libgcc.a.
   Currently, the valid :samp:`{library}` is :samp:`newlib` or :samp:`mculib`.
   This option is only supported for the NDS32 target.
 
-:samp:`--with-build-time-tools={dir}`
+.. option:: --with-build-time-tools=dir
+
   Specifies where to find the set of target tools (assembler, linker, etc.)
   that will be used while building GCC itself.  This option can be useful
   if the directory layouts are different between the system you are building
@@ -1801,7 +1938,8 @@ variables in the site file.
 
 Objective-C-Specific OptionsThe following options apply to the build of the Objective-C runtime library.
 
-``--enable-objc-gc``
+.. option:: --enable-objc-gc
+
   Specify that an additional variant of the GNU Objective-C runtime library
   is built, using an external build of the Boehm-Demers-Weiser garbage
   collector (https://www.hboehm.info/gc/).  This library needs to be
@@ -1810,7 +1948,8 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   additional runtime library is skipped when not available and the build
   continues.
 
-:samp:`--with-target-bdw-gc={list}` :samp:`--with-target-bdw-gc-include={list}` :samp:`--with-target-bdw-gc-lib={list}`
+.. option:: --with-target-bdw-gc=list
+
   Specify search directories for the garbage collector header files and
   libraries. :samp:`{list}` is a comma separated list of key value pairs of the
   form :samp:`{multilibdir}={path}`, where the default multilib key
@@ -1827,9 +1966,10 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   If none of these options are specified, the library is assumed in
   default locations.
 
-  D-Specific OptionsThe following options apply to the build of the D runtime library.
+D-Specific OptionsThe following options apply to the build of the D runtime library.
 
-``--enable-libphobos-checking`` ``--disable-libphobos-checking`` :samp:`--enable-libphobos-checking={list}`
+.. option:: --enable-libphobos-checking
+
   This option controls whether run-time checks and contracts are compiled into
   the D runtime library.  When the option is not specified, the library is built
   with :samp:`release` checking.  When the option is specified without a
@@ -1845,7 +1985,8 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   Individual checks available in :samp:`{list}` are :samp:`assert` (compiles libphobos
   with an extra option :option:`-fassert` ).
 
-``--with-libphobos-druntime-only`` :samp:`--with-libphobos-druntime-only={choice}`
+.. option:: --with-libphobos-druntime-only
+
   Specify whether to build only the core D runtime library (druntime), or both
   the core and standard library (phobos) into libphobos.  This is useful for
   targets that have full support in druntime, but no or incomplete support
@@ -1857,7 +1998,8 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   When the option is specified without a :samp:`{choice}`,  the result is the same as
   :samp:`--with-libphobos-druntime-only=yes`.
 
-``--with-target-system-zlib``
+.. option:: --with-target-system-zlib
+
   Use installed :samp:`zlib` rather than that included with GCC.  This needs
   to be available for each multilib variant, unless configured with
   :option:`--with-target-system-zlib`:samp:`=auto` in which case the GCCincluded
