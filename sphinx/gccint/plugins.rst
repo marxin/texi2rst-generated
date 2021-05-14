@@ -17,21 +17,17 @@ can be quite useful.
 
 .. toctree::
 
-  How can we load plugins. <plugins-loading>
-  The APIs for plugins. <plugin-api>
-  How a plugin interact with the pass manager. <plugins-pass>
-  How a plugin Interact with GCC Garbage Collector. <plugins-gc>
-  Giving information about a plugin itself. <plugins-description>
-  Registering custom attributes or pragmas. <plugins-attr>
-  Recording information about pass execution. <plugins-recording>
-  Controlling which passes are being run. <plugins-gate>
-  Keeping track of available passes. <plugins-tracking>
-  How can we build a plugin. <plugins-building>
-
-.. toctree::
-
-  loading-plugins
+  plugins-loading
   plugin-api
+  plugins-pass
+  plugins-gc
+  plugins-description
+  plugins-attr
+  plugins-recording
+  plugins-gate
+  plugins-tracking
+  plugins-building
+  loading-plugins
   interacting-with-the-pass-manager
   interacting-with-the-gcc-garbage-collector
   giving-information-about-a-plugin

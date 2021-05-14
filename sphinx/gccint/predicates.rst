@@ -67,9 +67,8 @@ diagnosis when special predicates are used.
 
 .. toctree::
 
-  Predicates available to all back ends. <machine-independent-predicates>
-  How to write machine-specific predicate
-                                      functions. <defining-predicates>
+  machine-independent-predicates
+  defining-predicates
 
 .. _machine-independent-predicates:
 

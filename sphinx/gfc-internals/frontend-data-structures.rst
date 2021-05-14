@@ -13,14 +13,11 @@ structures.
 
 .. toctree::
 
-  Representation of Executable Statements. <gfc_code>
-  Representation of Values and Expressions. <gfc_expr>
+  gfc_code
+  gfc_expr
+  gfccode
+  gfcexpr
 
 .. gfc_code
    -
-
-.. toctree::
-
-  gfccode
-  gfcexpr
 

@@ -29,10 +29,10 @@ The target of an assignment is usually a variable, but can also be a
 
 .. toctree::
 
-   <compound-expressions>
-   <compound-lvalues>
-   <conditional-expressions>
-   <logical-operators>
+  compound-expressions
+  compound-lvalues
+  conditional-expressions
+  logical-operators
 
 .. _compound-expressions:
 

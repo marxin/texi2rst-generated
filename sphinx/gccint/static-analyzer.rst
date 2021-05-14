@@ -11,11 +11,6 @@ Static Analyzer
 
 .. toctree::
 
-  Analyzer Internals <analyzer-internals>
-  Useful debugging tips <debugging-the-analyzer>
-
-.. toctree::
-
   analyzer-internals
   debugging-the-analyzer
 

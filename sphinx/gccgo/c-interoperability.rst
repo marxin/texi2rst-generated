@@ -13,11 +13,6 @@ http://golang.org/cmd/cgo.
 
 .. toctree::
 
-  How C and Go types match up. <c-type-interoperability>
-  How Go functions are named. <function-names>
-
-.. toctree::
-
   c-type-interoperability
   function-names
 

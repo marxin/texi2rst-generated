@@ -12,8 +12,8 @@ C binding for interoperability.  See see :ref:`interoperability-with-c`.
 
 .. toctree::
 
-   <naming-conventions>
-   <argument-passing-conventions>
+  naming-conventions
+  argument-passing-conventions
 
 .. _naming-conventions:
 

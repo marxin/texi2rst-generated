@@ -33,13 +33,11 @@ Math Library Application Programming Interface (API).
 
 .. toctree::
 
-  Defined data types and constants <typedef-and-constants>
-  The Libquadmath math runtime application
-                                 programming interface. <math-library-routines>
-  The Libquadmath I/O runtime application
-                                 programming interface. <i-o-library-routines>
-  How you can copy and share this manual. <gnu-free-documentation-license>
-  How to report bugs in GCC Libquadmath. <reporting-bugs>
+  typedef-and-constants
+  math-library-routines
+  i-o-library-routines
+  gnu-free-documentation-license
+  reporting-bugs
 
 .. -
    Defined macros

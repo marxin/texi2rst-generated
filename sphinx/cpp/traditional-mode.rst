@@ -23,13 +23,6 @@ that actually matter.
 
 .. toctree::
 
-   <traditional-lexical-analysis>
-   <traditional-macros>
-   <traditional-miscellany>
-   <traditional-warnings>
-
-.. toctree::
-
   traditional-lexical-analysis
   traditional-macros
   traditional-miscellany

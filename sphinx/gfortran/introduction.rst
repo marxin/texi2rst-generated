@@ -12,23 +12,14 @@ or alternative to, the Unix :command:`f95` command;
 
 .. toctree::
 
-  What you should know about the GNU Fortran compiler. <about-gnu-fortran>
-  You can compile Fortran, C, or other programs. <gnu-fortran-and-gcc>
-  The Fortran preprocessor <preprocessing-and-conditional-compilation>
-  Why we chose to start from scratch. <gnu-fortran-and-g77>
-  Status of GNU Fortran, roadmap, proposed extensions. <project-status>
-  Standards supported by GNU Fortran. <standards>
-
-.. -
-   About GNU Fortran
-   -
-
-.. toctree::
-
   about-gnu-fortran
   gnu-fortran-and-gcc
   preprocessing-and-conditional-compilation
   gnu-fortran-and-g77
   project-status
   standards
+
+.. -
+   About GNU Fortran
+   -
 

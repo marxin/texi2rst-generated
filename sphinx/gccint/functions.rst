@@ -14,8 +14,8 @@ and linkage.
 
 .. toctree::
 
-  Function names, body, and parameters. <function-basics>
-  Context, linkage, etc. <function-properties>
+  function-basics
+  function-properties
 
 .. -
    Function Basics

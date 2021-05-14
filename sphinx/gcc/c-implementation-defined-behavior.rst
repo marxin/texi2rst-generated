@@ -24,25 +24,22 @@ a freestanding environment); refer to their documentation for details.
 
 .. toctree::
 
-   <translation-implementation>
-   <environment-implementation>
-   <identifiers-implementation>
-   <characters-implementation>
-   <integers-implementation>
-   <floating-point-implementation>
-   <arrays-and-pointers-implementation>
-   <hints-implementation>
-   <structures-unions-enumerations-and-bit-fields-implementation>
-   <qualifiers-implementation>
-   <declarators-implementation>
-   <statements-implementation>
-   <preprocessing-directives-implementation>
-   <library-functions-implementation>
-   <architecture-implementation>
-   <locale-specific-behavior-implementation>
-
-.. toctree::
-
+  translation-implementation
+  environment-implementation
+  identifiers-implementation
+  characters-implementation
+  integers-implementation
+  floating-point-implementation
+  arrays-and-pointers-implementation
+  hints-implementation
+  structures-unions-enumerations-and-bit-fields-implementation
+  qualifiers-implementation
+  declarators-implementation
+  statements-implementation
+  preprocessing-directives-implementation
+  library-functions-implementation
+  architecture-implementation
+  locale-specific-behavior-implementation
   translation
   environment
   identifiers

@@ -97,28 +97,27 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
 
-   <introduction>
+  introduction
 
   Part I: Invoking GNU Fortran
-  Command options supported by gfortran. <invoking-gnu-fortran>
-  Influencing runtime behavior with environment variables. <runtime>
+  invoking-gnu-fortran
+  runtime
 
   Part II: Language Reference
-  Fortran 2003, 2008 and 2018 features supported by GNU Fortran. <fortran-standards-status>
-  User-visible implementation details. <compiler-characteristics>
-  Language extensions implemented by GNU Fortran. <extensions>
-  Interoperability with C <mixed-language-programming>
-   <coarray-programming>
-  Intrinsic procedures supported by GNU Fortran. <intrinsic-procedures>
-  Intrinsic modules supported by GNU Fortran. <intrinsic-modules>
+  fortran-standards-status
+  compiler-characteristics
+  extensions
+  mixed-language-programming
+  coarray-programming
+  intrinsic-procedures
+  intrinsic-modules
 
-  How you can help. <contributing>
-  GNU General Public License says
-                           how you can copy and share GNU Fortran. <copying>
-  How you can copy and share this manual. <gnu-free-documentation-license>
-  How to help assure continued work for free software. <funding>
-  Index of command line options <option-index>
-  Index of concepts <keyword-index>
+  contributing
+  copying
+  gnu-free-documentation-license
+  funding
+  option-index
+  keyword-index
 
 .. -
    Introduction
@@ -162,15 +161,10 @@ but they are also things doable by someone who is willing and able.
 
 .. toctree::
 
-   <contributors>
-   <projects>
-   <proposed-extensions>
-
-.. toctree::
-
-  contributors-to-gnu-fortran
+  contributors
   projects
   proposed-extensions
+  contributors-to-gnu-fortran
 
 
 .. man begin DESCRIPTION

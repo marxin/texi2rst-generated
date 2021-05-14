@@ -35,12 +35,12 @@ attributes.
 
 .. toctree::
 
-   <common-type-attributes>
-   <arc-type-attributes>
-   <arm-type-attributes>
-   <mep-type-attributes>
-   <powerpc-type-attributes>
-   <x86-type-attributes>
+  common-type-attributes
+  arc-type-attributes
+  arm-type-attributes
+  mep-type-attributes
+  powerpc-type-attributes
+  x86-type-attributes
 
 .. _common-type-attributes:
 

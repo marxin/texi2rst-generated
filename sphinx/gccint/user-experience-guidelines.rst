@@ -22,11 +22,6 @@ command-line options in ways that we hope achieve the above ideal.
 
 .. toctree::
 
-  How to implement diagnostics. <guidelines-for-diagnostics>
-  Guidelines for command-line options. <guidelines-for-options>
-
-.. toctree::
-
   guidelines-for-diagnostics
   guidelines-for-options
 

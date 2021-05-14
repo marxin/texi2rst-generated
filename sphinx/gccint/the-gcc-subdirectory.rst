@@ -11,15 +11,15 @@ separate chapter.  See :ref:`Passes and Files of the Compiler <passes>`.
 
 .. toctree::
 
-  Subdirectories of gcc. <subdirectories>
-  The configuration process, and the files it uses. <configuration>
-  The build system in the gcc directory. <build>
-  Targets in gcc/Makefile. <makefile>
-  Library source files and headers under gcc/. <library-files>
-  Headers installed by GCC. <headers>
-  Building documentation in GCC. <documentation>
-  Anatomy of a language front end. <front-end>
-  Anatomy of a target back end. <back-end>
+  subdirectories
+  configuration
+  build
+  makefile
+  library-files
+  headers
+  documentation
+  front-end
+  back-end
 
 .. _subdirectories:
 
@@ -87,10 +87,9 @@ timestamp.
 
 .. toctree::
 
-  Scripts used by configure. <config-fragments>
-  The config.build, config.host, and
-                           config.gcc files. <system-config>
-  Files created by running configure. <configuration-files>
+  config-fragments
+  system-config
+  configuration-files
 
 .. _config-fragments:
 
@@ -478,9 +477,9 @@ documentation for runtime libraries somewhere.
 
 .. toctree::
 
-  GCC manuals in Texinfo format. <texinfo-manuals>
-  Generating man pages from Texinfo manuals. <man-page-generation>
-  Miscellaneous text files with documentation. <miscellaneous-docs>
+  texinfo-manuals
+  man-page-generation
+  miscellaneous-docs
 
 .. _texinfo-manuals:
 
@@ -715,9 +714,9 @@ following are also necessary:
 
 .. toctree::
 
-  The front end language directory. <front-end-directory>
-  The front end config-lang.in file. <front-end-config>
-  The front end Make-lang.in file. <front-end-makefile>
+  front-end-directory
+  front-end-config
+  front-end-makefile
 
 .. _front-end-directory:
 

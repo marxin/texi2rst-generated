@@ -21,15 +21,11 @@ that is visible at link time).
 
 .. toctree::
 
-  Overview of LTO. <lto-overview>
-  LTO file sections in ELF. <lto-object-file-layout>
-  Using summary information in IPA passes. <ipa>
-  Whole program assumptions,
-                              linker plugin and symbol visibilities. <whopr>
-  Internal flags controlling lto1. <internal-flags>
-
-.. toctree::
-
+  lto-overview
+  lto-object-file-layout
+  ipa
+  whopr
+  internal-flags
   design-overview
   lto-file-sections
   using-summary-information-in-ipa-passes

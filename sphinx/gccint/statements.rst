@@ -14,14 +14,14 @@ There are also several varieties of complex statements.
 
 .. toctree::
 
-   <basic-statements>
-   <blocks>
-   <statement-sequences>
-   <empty-statements>
-   <jumps>
-   <cleanups>
-   <openmp>
-   <openacc>
+  basic-statements
+  blocks
+  statement-sequences
+  empty-statements
+  jumps
+  cleanups
+  openmp
+  openacc
 
 .. _basic-statements:
 

@@ -14,10 +14,10 @@ This section describes both types of operation.
 
 .. toctree::
 
-   <using-poly_int-with-c++-arithmetic-operators>
-   <wi-arithmetic-on-poly_ints>
-   <division-of-poly_ints>
-   <other-poly_int-arithmetic>
+  using-poly_int-with-c++-arithmetic-operators
+  wi-arithmetic-on-poly_ints
+  division-of-poly_ints
+  other-poly_int-arithmetic
 
 Using ``poly_int`` with C++ arithmetic operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

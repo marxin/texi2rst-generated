@@ -82,16 +82,13 @@ data members.
 
 .. toctree::
 
-  What goes inside a GTY(()). <gty-options>
-  Adding GTY to a class hierarchy. <inheritance-and-gty>
-  Adding user-provided GC marking routines. <user-gc>
-  Making global variables GGC roots. <ggc-roots>
-  How the generated files work. <files>
-  How to invoke the garbage collector. <invoking-the-garbage-collector>
-  When something does not work as expected. <troubleshooting>
-
-.. toctree::
-
+  gty-options
+  inheritance-and-gty
+  user-gc
+  ggc-roots
+  files
+  invoking-the-garbage-collector
+  troubleshooting
   the-inside-of-a-gty
   support-for-inheritance
   support-for-user-provided-gc-marking-routines

@@ -50,9 +50,9 @@ deleted.
 
 .. toctree::
 
-  Example of define_subst work. <define-subst-example>
-  Process of template comparison. <define-subst-pattern-matching>
-  Generation of output template. <define-subst-output-template>
+  define-subst-example
+  define-subst-pattern-matching
+  define-subst-output-template
 
 .. _define-subst-example:
 

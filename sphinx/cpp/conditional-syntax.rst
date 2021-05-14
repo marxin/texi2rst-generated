@@ -10,16 +10,16 @@ directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
 
 .. toctree::
 
-   <ifdef>
-   <if>
-   <defined>
-   <else>
-   <elif>
-   <__has_attribute>
-   <__has_cpp_attribute>
-   <__has_c_attribute>
-   <__has_builtin>
-   <__has_include>
+  ifdef
+  if
+  defined
+  else
+  elif
+  __has_attribute
+  __has_cpp_attribute
+  __has_c_attribute
+  __has_builtin
+  __has_include
 
 .. _ifdef:
 

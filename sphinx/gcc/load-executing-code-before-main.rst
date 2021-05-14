@@ -77,7 +77,7 @@ instead of ``+initialize``.
 
 .. toctree::
 
-   <what-you-can-and-what-you-cannot-do-in-+load>
+  what-you-can-and-what-you-cannot-do-in-+load
 
 .. _what-you-can-and-what-you-cannot-do-in-+load:
 

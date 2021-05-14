@@ -15,7 +15,7 @@ central location from which to use, maintain, and distribute them.
 
 .. toctree::
 
-  Stacks of arbitrary objects. <obstacks>
+  obstacks
 
 .. This is generated from the glibc manual using contrib/make-obstacks-texi.pl
 
@@ -40,20 +40,17 @@ the padding needed to start each object on a suitable boundary.
 
 .. toctree::
 
-  How to declare an obstack in your program. <creating-obstacks>
-  Preparations needed before you can
-  				 use obstacks. <preparing-for-obstacks>
-  Allocating objects in an obstack. <allocation-in-an-obstack>
-  Freeing objects in an obstack. <freeing-obstack-objects>
-  The obstack functions are really macros. <obstack-functions>
-  Making an object bigger by stages. <growing-objects>
-  Extra-high-efficiency (though more
-  				 complicated) growing objects. <extra-fast-growing>
-  Inquiries about the status of an obstack. <status-of-an-obstack>
-  Controlling alignment of objects in obstacks. <obstacks-data-alignment>
-  How obstacks obtain and release chunks;
-  				 efficiency considerations. <obstack-chunks>
-   <summary-of-obstacks>
+  creating-obstacks
+  preparing-for-obstacks
+  allocation-in-an-obstack
+  freeing-obstack-objects
+  obstack-functions
+  growing-objects
+  extra-fast-growing
+  status-of-an-obstack
+  obstacks-data-alignment
+  obstack-chunks
+  summary-of-obstacks
 
 .. _creating-obstacks:
 

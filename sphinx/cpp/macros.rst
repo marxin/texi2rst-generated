@@ -19,19 +19,6 @@ macros when you are compiling C++.
 
 .. toctree::
 
-   <object-like-macros>
-   <function-like-macros>
-   <macro-arguments>
-   <stringizing>
-   <concatenation>
-   <variadic-macros>
-   <predefined-macros>
-   <undefining-and-redefining-macros>
-   <directives-within-macro-arguments>
-   <macro-pitfalls>
-
-.. toctree::
-
   object-like-macros
   function-like-macros
   macro-arguments

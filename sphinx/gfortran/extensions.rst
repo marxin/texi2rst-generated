@@ -14,11 +14,6 @@ extensions.
 
 .. toctree::
 
-   <extensions-implemented-in-gnu-fortran>
-   <extensions-not-implemented-in-gnu-fortran>
-
-.. toctree::
-
   extensions-implemented-in-gnu-fortran
   extensions-not-implemented-in-gnu-fortran
 

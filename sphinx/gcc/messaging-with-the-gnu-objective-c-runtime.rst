@@ -27,8 +27,8 @@ then it calls it.
 
 .. toctree::
 
-   <dynamically-registering-methods>
-   <forwarding-hook>
+  dynamically-registering-methods
+  forwarding-hook
 
 .. =========================================================================
 

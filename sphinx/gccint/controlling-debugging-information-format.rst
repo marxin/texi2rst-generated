@@ -9,12 +9,12 @@ This describes how to specify debugging information.
 
 .. toctree::
 
-  Macros that affect all debugging formats uniformly. <all-debuggers>
-  Macros enabling specific options in DBX format. <dbx-options>
-  Hook macros for varying DBX format. <dbx-hooks>
-  Macros controlling output of file names in DBX format. <file-names-and-dbx>
-  Macros for DWARF format. <dwarf>
-  Macros for VMS debug format. <vms-debug>
+  all-debuggers
+  dbx-options
+  dbx-hooks
+  file-names-and-dbx
+  dwarf
+  vms-debug
 
 .. _all-debuggers:
 

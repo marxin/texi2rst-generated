@@ -5,10 +5,10 @@ Fast Enumeration
 
 .. toctree::
 
-   <using-fast-enumeration>
-   <c99-like-fast-enumeration-syntax>
-   <fast-enumeration-details>
-   <fast-enumeration-protocol>
+  using-fast-enumeration
+  c99-like-fast-enumeration-syntax
+  fast-enumeration-details
+  fast-enumeration-protocol
 
 .. ================================
 

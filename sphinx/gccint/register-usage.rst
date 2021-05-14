@@ -16,11 +16,11 @@ For returning values in registers, see Scalar Return.
 
 .. toctree::
 
-  Number and kinds of registers. <register-basics>
-  Order in which registers are allocated. <allocation-order>
-  What kinds of values each reg can hold. <values-in-registers>
-  Renumbering registers for leaf functions. <leaf-functions>
-  Handling a register stack such as 80387. <stack-registers>
+  register-basics
+  allocation-order
+  values-in-registers
+  leaf-functions
+  stack-registers
 
 .. _register-basics:
 

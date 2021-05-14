@@ -58,13 +58,6 @@ manual refer to GNU CPP.
 
 .. toctree::
 
-   <character-sets>
-   <initial-processing>
-   <tokenization>
-   <the-preprocessing-language>
-
-.. toctree::
-
   character-sets
   initial-processing
   tokenization

@@ -5,11 +5,7 @@
 
 .. toctree::
 
-  Introduction to lto-dump. <lto-dump-intro>
-  How to use lto-dump. <invoking-lto-dump>
-
-.. toctree::
-
-  introduction-to-lto-dump
+  lto-dump-intro
   invoking-lto-dump
+  introduction-to-lto-dump
 

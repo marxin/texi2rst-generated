@@ -21,9 +21,9 @@ and late IPA passes, according to the LTO/WHOPR processing model.
 
 .. toctree::
 
-   <small-ipa-passes>
-   <regular-ipa-passes>
-   <late-ipa-passes>
+  small-ipa-passes
+  regular-ipa-passes
+  late-ipa-passes
 
 .. _small-ipa-passes:
 

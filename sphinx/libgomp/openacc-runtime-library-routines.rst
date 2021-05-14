@@ -12,74 +12,54 @@ acceleration device.
 
 .. toctree::
 
-  Get number of devices for the given device
-                                  type. <acc_get_num_devices>
-  Set type of device accelerator to use. <acc_set_device_type>
-  Get type of device accelerator to be used. <acc_get_device_type>
-  Set device number to use. <acc_set_device_num>
-  Get device number to be used. <acc_get_device_num>
-  Get device property. <acc_get_property>
-  Tests for completion of a specific asynchronous
-                                  operation. <acc_async_test>
-  Tests for completion of all asynchronous
-                                  operations. <acc_async_test_all>
-  Wait for completion of a specific asynchronous
-                                  operation. <acc_wait>
-  Waits for completion of all asynchronous
-                                  operations. <acc_wait_all>
-  Wait for completion of all asynchronous
-                                  operations. <acc_wait_all_async>
-  Wait for completion of asynchronous operations. <acc_wait_async>
-  Initialize runtime for a specific device type. <acc_init>
-  Shuts down the runtime for a specific device
-                                  type. <acc_shutdown>
-  Whether executing on a particular device <acc_on_device>
-  Allocate device memory. <acc_malloc>
-  Free device memory. <acc_free>
-  Allocate device memory and copy host memory to
-                                  it. <acc_copyin>
-  If the data is not present on the device,
-                                  allocate device memory and copy from host
-                                  memory. <acc_present_or_copyin>
-  Allocate device memory and map it to host
-                                  memory. <acc_create>
-  If the data is not present on the device,
-                                  allocate device memory and map it to host
-                                  memory. <acc_present_or_create>
-  Copy device memory to host memory. <acc_copyout>
-  Free device memory. <acc_delete>
-  Update device memory from mapped host memory. <acc_update_device>
-  Update host memory from mapped device memory. <acc_update_self>
-  Map previously allocated device memory to host
-                                  memory. <acc_map_data>
-  Unmap device memory from host memory. <acc_unmap_data>
-  Get device pointer associated with specific
-                                  host address. <acc_deviceptr>
-  Get host pointer associated with specific
-                                  device address. <acc_hostptr>
-  Indicate whether host variable / array is
-                                  present on device. <acc_is_present>
-  Copy host memory to device memory. <acc_memcpy_to_device>
-  Copy device memory to host memory. <acc_memcpy_from_device>
-  Let device pointer point to device-pointer target. <acc_attach>
-  Let device pointer point to host-pointer target. <acc_detach>
+  acc_get_num_devices
+  acc_set_device_type
+  acc_get_device_type
+  acc_set_device_num
+  acc_get_device_num
+  acc_get_property
+  acc_async_test
+  acc_async_test_all
+  acc_wait
+  acc_wait_all
+  acc_wait_all_async
+  acc_wait_async
+  acc_init
+  acc_shutdown
+  acc_on_device
+  acc_malloc
+  acc_free
+  acc_copyin
+  acc_present_or_copyin
+  acc_create
+  acc_present_or_create
+  acc_copyout
+  acc_delete
+  acc_update_device
+  acc_update_self
+  acc_map_data
+  acc_unmap_data
+  acc_deviceptr
+  acc_hostptr
+  acc_is_present
+  acc_memcpy_to_device
+  acc_memcpy_from_device
+  acc_attach
+  acc_detach
 
   API routines for target platforms.
 
-  Get CUDA device handle. <acc_get_current_cuda_device>
-  Get CUDA context handle. <acc_get_current_cuda_context>
-  Get CUDA stream handle. <acc_get_cuda_stream>
-  Set CUDA stream handle. <acc_set_cuda_stream>
+  acc_get_current_cuda_device
+  acc_get_current_cuda_context
+  acc_get_cuda_stream
+  acc_set_cuda_stream
 
   API routines for the OpenACC Profiling Interface.
 
-  Register callbacks. <acc_prof_register>
-  Unregister callbacks. <acc_prof_unregister>
-  Obtain inquiry functions. <acc_prof_lookup>
-  Library registration. <acc_register_library>
-
-.. toctree::
-
+  acc_prof_register
+  acc_prof_unregister
+  acc_prof_lookup
+  acc_register_library
   accgetnumdevices---get-number-of-devices-for-given-device-type
   accsetdevicetype---set-type-of-device-accelerator-to-use
   accgetdevicetype---get-type-of-device-accelerator-to-be-used

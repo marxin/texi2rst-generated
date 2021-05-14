@@ -24,84 +24,73 @@ extensions, accepted by GCC in C90 mode and in C++.
 
 .. toctree::
 
-  Putting statements and declarations inside expressions. <statement-exprs>
-  Labels local to a block. <local-labels>
-  Getting pointers to labels, and computed gotos. <labels-as-values>
-  Nested function in GNU C. <nested-functions>
-  Nonlocal gotos. <nonlocal-gotos>
-  Dispatching a call to another function. <constructing-calls>
-  typeof: referring to the type of an expression. <typeof>
-  Omitting the middle operand of a ?: expression. <conditionals>
-  128-bit integers-__int128. <__int128>
-  Double-word integers-long long int. <long-long>
-  Data types for complex numbers. <complex>
-  Additional Floating Types. <floating-types>
-  Half-Precision Floating Point. <half-precision>
-  Decimal Floating Types. <decimal-float>
-  Hexadecimal floating-point constants. <hex-floats>
-  Fixed-Point Types. <fixed-point>
-  Named address spaces. <named-address-spaces>
-  Zero-length arrays. <zero-length>
-  Structures with no members. <empty-structures>
-  Arrays whose length is computed at run time. <variable-length>
-  Macros with a variable number of arguments. <variadic-macros>
-  Slightly looser rules for escaped newlines. <escaped-newlines>
-  Any array can be subscripted, even if not an lvalue. <subscripting>
-  Arithmetic on void-pointers and function pointers. <pointer-arith>
-  Pointer arguments to variadic functions. <variadic-pointer-args>
-  Pointers to arrays with qualifiers work as expected. <pointers-to-arrays>
-  Non-constant initializers. <initializers>
-  Compound literals give structures, unions
-                          or arrays as values. <compound-literals>
-  Labeling elements of initializers. <designated-inits>
-  'case 1 ... 9' and such. <case-ranges>
-  Casting to union type from any member of the union. <cast-to-union>
-  Mixing declarations, labels and code. <mixed-labels-and-declarations>
-  Declaring that functions have no side effects,
-                          or that they can never return. <function-attributes>
-  Specifying attributes of variables. <variable-attributes>
-  Specifying attributes of types. <type-attributes>
-  Specifying attributes on labels. <label-attributes>
-  Specifying attributes on enumerators. <enumerator-attributes>
-  Specifying attributes on statements. <statement-attributes>
-  Formal syntax for attributes. <attribute-syntax>
-  Prototype declarations and old-style definitions. <function-prototypes>
-  C++ comments are recognized. <c++-comments>
-  Dollar sign is allowed in identifiers. <dollar-signs>
-  \e stands for the character ESC. <character-escapes>
-  Determining the alignment of a function, type or variable. <alignment>
-  Defining inline functions (as fast as macros). <inline>
-  What constitutes an access to a volatile object. <volatiles>
-  Instructions and extensions for interfacing C with assembler. <using-assembly-language-with-c>
-  __const__, __asm__, etc., for header files. <alternate-keywords>
-  enum foo;, with details to follow. <incomplete-enums>
-  Printable strings which are the name of the current
-                          function. <function-names>
-  Getting the return or frame address of a function. <return-address>
-  Using vector instructions through built-in functions. <vector-extensions>
-  Special syntax for implementing offsetof. <offsetof>
-  Legacy built-in functions for atomic memory access. <__sync-builtins>
-  Atomic built-in functions with memory model. <__atomic-builtins>
-  Built-in functions to perform arithmetics and
-                          arithmetic overflow checking. <integer-overflow-builtins>
-  x86 memory models. <x86-specific-memory-model-extensions-for-transactional-memory>
-  Built-in functions for limited buffer overflow
-                          checking. <object-size-checking>
-  Other built-in functions. <other-builtins>
-  Built-in functions specific to particular targets. <target-builtins>
-  Format checks specific to particular targets. <target-format-checks>
-  Pragmas accepted by GCC. <pragmas>
-  Unnamed struct/union fields within structs/unions. <unnamed-fields>
-  Per-thread variables. <thread-local>
-  Binary constants using the 0b prefix. <binary-constants>
-
-.. toctree::
-
-  statements-and-declarations-in-expressions
-  locally-declared-labels
+  statement-exprs
+  local-labels
   labels-as-values
   nested-functions
   nonlocal-gotos
+  constructing-calls
+  typeof
+  conditionals
+  __int128
+  long-long
+  complex
+  floating-types
+  half-precision
+  decimal-float
+  hex-floats
+  fixed-point
+  named-address-spaces
+  zero-length
+  empty-structures
+  variable-length
+  variadic-macros
+  escaped-newlines
+  subscripting
+  pointer-arith
+  variadic-pointer-args
+  pointers-to-arrays
+  initializers
+  compound-literals
+  designated-inits
+  case-ranges
+  cast-to-union
+  mixed-labels-and-declarations
+  function-attributes
+  variable-attributes
+  type-attributes
+  label-attributes
+  enumerator-attributes
+  statement-attributes
+  attribute-syntax
+  function-prototypes
+  c++-comments
+  dollar-signs
+  character-escapes
+  alignment
+  inline
+  volatiles
+  using-assembly-language-with-c
+  alternate-keywords
+  incomplete-enums
+  function-names
+  return-address
+  vector-extensions
+  offsetof
+  __sync-builtins
+  __atomic-builtins
+  integer-overflow-builtins
+  x86-specific-memory-model-extensions-for-transactional-memory
+  object-size-checking
+  other-builtins
+  target-builtins
+  target-format-checks
+  pragmas
+  unnamed-fields
+  thread-local
+  binary-constants
+  statements-and-declarations-in-expressions
+  locally-declared-labels
   constructing-function-calls
   referring-to-a-type-with-typeof
   conditionals-with-omitted-operands
@@ -111,9 +100,7 @@ extensions, accepted by GCC in C90 mode and in C++.
   additional-floating-types
   half-precision-floating-point
   decimal-floating-types
-  hex-floats
   fixed-point-types
-  named-address-spaces
   arrays-of-length-zero
   structures-with-no-members
   arrays-of-variable-length
@@ -124,18 +111,12 @@ extensions, accepted by GCC in C90 mode and in C++.
   pointer-arguments-in-variadic-functions
   pointers-to-arrays-with-qualifiers-work-as-expected
   non-constant-initializers
-  compound-literals
   designated-initializers
-  case-ranges
   cast-to-a-union-type
   mixed-declarations-labels-and-code
   declaring-attributes-of-functions
   specifying-attributes-of-variables
   specifying-attributes-of-types
-  label-attributes
-  enumerator-attributes
-  statement-attributes
-  attribute-syntax
   prototypes-and-old-style-function-definitions
   c++-style-comments
   dollar-signs-in-identifier-names
@@ -144,7 +125,6 @@ extensions, accepted by GCC in C90 mode and in C++.
   an-inline-function-is-as-fast-as-a-macro
   when-is-a-volatile-object-accessed
   how-to-use-inline-assembly-language-in-c-code
-  alternate-keywords
   incomplete-enum-types
   function-names-as-strings
   getting-the-return-or-frame-address-of-a-function
@@ -153,7 +133,6 @@ extensions, accepted by GCC in C90 mode and in C++.
   legacy-sync-built-in-functions-for-atomic-memory-access
   built-in-functions-for-memory-model-aware-atomic-operations
   built-in-functions-to-perform-arithmetic-with-overflow-checking
-  x86-specific-memory-model-extensions-for-transactional-memory
   object-size-checking-built-in-functions
   other-built-in-functions-provided-by-gcc
   built-in-functions-specific-to-particular-target-machines

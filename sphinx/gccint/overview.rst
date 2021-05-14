@@ -94,9 +94,9 @@ bug.
 
 .. toctree::
 
-  Macros and functions that can be used with all trees. <macros-and-functions>
-  The names of things. <identifiers>
-  Lists and vectors. <containers>
+  macros-and-functions
+  identifiers
+  containers
 
 .. -
    Trees

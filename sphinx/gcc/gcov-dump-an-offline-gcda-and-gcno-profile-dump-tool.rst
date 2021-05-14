@@ -5,11 +5,7 @@
 
 .. toctree::
 
-  Introduction to gcov-dump. <gcov-dump-intro>
-  How to use gcov-dump. <invoking-gcov-dump>
-
-.. toctree::
-
-  introduction-to-gcov-dump
+  gcov-dump-intro
   invoking-gcov-dump
+  introduction-to-gcov-dump
 

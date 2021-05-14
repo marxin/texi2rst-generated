@@ -25,13 +25,13 @@ affects how they are used.
 
 .. toctree::
 
-   <comparison-functions-for-poly_int>
-   <properties-of-the-poly_int-comparisons>
-   <comparing-potentially-unordered-poly_ints>
-   <comparing-ordered-poly_ints>
-   <checking-for-a-poly_int-marker-value>
-   <range-checks-on-poly_ints>
-   <sorting-poly_ints>
+  comparison-functions-for-poly_int
+  properties-of-the-poly_int-comparisons
+  comparing-potentially-unordered-poly_ints
+  comparing-ordered-poly_ints
+  checking-for-a-poly_int-marker-value
+  range-checks-on-poly_ints
+  sorting-poly_ints
 
 Comparison functions for ``poly_int``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

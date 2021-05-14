@@ -5,12 +5,12 @@ Directives used within DejaGnu tests
 
 .. toctree::
 
-  Syntax and descriptions of test directives. <directives>
-  Selecting targets to which a test applies. <selectors>
-  Keywords describing target attributes. <effective-target-keywords>
-  Features for dg-add-options <add-options>
-  Variants of dg-require-support <require-support>
-  Commands for use in dg-final <final-actions>
+  directives
+  selectors
+  effective-target-keywords
+  add-options
+  require-support
+  final-actions
 
 .. _directives:
 

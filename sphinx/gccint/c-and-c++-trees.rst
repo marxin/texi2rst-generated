@@ -46,12 +46,12 @@ should submit your patches for inclusion in GCC.
 
 .. toctree::
 
-  Fundamental and aggregate types. <types-for-c++>
-  Namespaces. <namespaces>
-  Classes. <classes>
-  Overloading and accessors for C++. <functions-for-c++>
-  Statements specific to C and C++. <statements-for-c-and-c++>
-  From typeid to throw. <c++-expressions>
+  types-for-c++
+  namespaces
+  classes
+  functions-for-c++
+  statements-for-c-and-c++
+  c++-expressions
 
 .. _types-for-c++:
 

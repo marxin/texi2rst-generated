@@ -5,11 +5,11 @@ Type and enum ABI Documentation
 
 .. toctree::
 
-   <caf_token_t>
-   <caf_register_t>
-   <caf_deregister_t>
-   <caf_reference_t>
-   <caf_team_t>
+  caf_token_t
+  caf_register_t
+  caf_deregister_t
+  caf_reference_t
+  caf_team_t
 
 .. _caf_token_t:
 

@@ -9,18 +9,16 @@ instructions do.
 
 .. toctree::
 
-  Structural information for the assembler file. <file-framework>
-  Output of constants (numbers, strings, addresses). <data-output>
-  Output of uninitialized variables. <uninitialized-data>
-  Output and generation of labels. <label-output>
-  General principles of initialization
-                           and termination routines. <initialization>
-  Specific macros that control the handling of
-                           initialization and termination routines. <macros-for-initialization>
-  Output of actual instructions. <instruction-output>
-  Output of jump tables. <dispatch-tables>
-  Output of exception region code. <exception-region-output>
-  Pseudo ops for alignment and skipping data. <alignment-output>
+  file-framework
+  data-output
+  uninitialized-data
+  label-output
+  initialization
+  macros-for-initialization
+  instruction-output
+  dispatch-tables
+  exception-region-output
+  alignment-output
 
 .. _file-framework:
 

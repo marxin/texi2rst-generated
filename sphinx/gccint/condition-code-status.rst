@@ -38,7 +38,7 @@ interested in most macros in this section.
 
 .. toctree::
 
-  Modern representation of condition codes. <mode_cc-condition-codes>
+  mode_cc-condition-codes
 
 .. _mode_cc-condition-codes:
 

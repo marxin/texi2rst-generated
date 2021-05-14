@@ -12,62 +12,59 @@ three parts:
   Control threads, processors and the parallel environment.  They have C
   linkage, and do not throw exceptions.
 
-  Number of active parallel regions <omp_get_active_level>
-  Ancestor thread ID <omp_get_ancestor_thread_num>
-  Whether cancellation support is enabled <omp_get_cancellation>
-  Get the default device for target regions <omp_get_default_device>
-  Dynamic teams setting <omp_get_dynamic>
-  Device number of host device <omp_get_initial_device>
-  Number of parallel regions <omp_get_level>
-  Current maximum number of active regions <omp_get_max_active_levels>
-  Maximum task priority value that can be set <omp_get_max_task_priority>
-  Maximum number of threads of parallel region <omp_get_max_threads>
-  Nested parallel regions <omp_get_nested>
-  Number of target devices <omp_get_num_devices>
-  Number of processors online <omp_get_num_procs>
-  Number of teams <omp_get_num_teams>
-  Size of the active team <omp_get_num_threads>
-  Whether theads may be moved between CPUs <omp_get_proc_bind>
-  Obtain the runtime scheduling method <omp_get_schedule>
-  Maximum number of active regions supported <omp_get_supported_active_levels>
-  Get team number <omp_get_team_num>
-  Number of threads in a team <omp_get_team_size>
-  Maximum number of threads <omp_get_thread_limit>
-  Current thread ID <omp_get_thread_num>
-  Whether a parallel region is active <omp_in_parallel>
-  Whether in final or included task region <omp_in_final>
-  Whether executing on the host device <omp_is_initial_device>
-  Set the default device for target regions <omp_set_default_device>
-  Enable/disable dynamic teams <omp_set_dynamic>
-  Limits the number of active parallel regions <omp_set_max_active_levels>
-  Enable/disable nested parallel regions <omp_set_nested>
-  Set upper team size limit <omp_set_num_threads>
-  Set the runtime scheduling method <omp_set_schedule>
+  omp_get_active_level
+  omp_get_ancestor_thread_num
+  omp_get_cancellation
+  omp_get_default_device
+  omp_get_dynamic
+  omp_get_initial_device
+  omp_get_level
+  omp_get_max_active_levels
+  omp_get_max_task_priority
+  omp_get_max_threads
+  omp_get_nested
+  omp_get_num_devices
+  omp_get_num_procs
+  omp_get_num_teams
+  omp_get_num_threads
+  omp_get_proc_bind
+  omp_get_schedule
+  omp_get_supported_active_levels
+  omp_get_team_num
+  omp_get_team_size
+  omp_get_thread_limit
+  omp_get_thread_num
+  omp_in_parallel
+  omp_in_final
+  omp_is_initial_device
+  omp_set_default_device
+  omp_set_dynamic
+  omp_set_max_active_levels
+  omp_set_nested
+  omp_set_num_threads
+  omp_set_schedule
 
   Initialize, set, test, unset and destroy simple and nested locks.
 
-  Initialize simple lock <omp_init_lock>
-  Wait for and set simple lock <omp_set_lock>
-  Test and set simple lock if available <omp_test_lock>
-  Unset simple lock <omp_unset_lock>
-  Destroy simple lock <omp_destroy_lock>
-  Initialize nested lock <omp_init_nest_lock>
-  Wait for and set simple lock <omp_set_nest_lock>
-  Test and set nested lock if available <omp_test_nest_lock>
-  Unset nested lock <omp_unset_nest_lock>
-  Destroy nested lock <omp_destroy_nest_lock>
+  omp_init_lock
+  omp_set_lock
+  omp_test_lock
+  omp_unset_lock
+  omp_destroy_lock
+  omp_init_nest_lock
+  omp_set_nest_lock
+  omp_test_nest_lock
+  omp_unset_nest_lock
+  omp_destroy_nest_lock
 
   Portable, thread-based, wall clock timer.
 
-  Get timer precision. <omp_get_wtick>
-  Elapsed wall clock time. <omp_get_wtime>
+  omp_get_wtick
+  omp_get_wtime
 
   Support for event objects.
 
-  Fulfill and destroy an OpenMP event. <omp_fulfill_event>
-
-.. toctree::
-
+  omp_fulfill_event
   ompgetactivelevel---number-of-parallel-regions
   ompgetancestorthreadnum---ancestor-thread-id
   ompgetcancellation---whether-cancellation-support-is-enabled

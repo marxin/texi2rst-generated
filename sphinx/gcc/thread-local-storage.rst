@@ -54,8 +54,8 @@ is expected to function.
 
 .. toctree::
 
-   <c99-thread-local-edits>
-   <c++98-thread-local-edits>
+  c99-thread-local-edits
+  c++98-thread-local-edits
 
 .. _c99-thread-local-edits:
 

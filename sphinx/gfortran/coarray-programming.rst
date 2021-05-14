@@ -7,11 +7,6 @@ Coarray Programming
 
 .. toctree::
 
-   <type-and-enum-abi-documentation>
-   <function-abi-documentation>
-
-.. toctree::
-
   type-and-enum-abi-documentation
   function-abi-documentation
 

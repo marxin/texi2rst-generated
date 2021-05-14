@@ -7,35 +7,35 @@ Tuple specific accessors
 
 .. toctree::
 
-   <gimple_asm>
-   <gimple_assign>
-   <gimple_bind>
-   <gimple_call>
-   <gimple_catch>
-   <gimple_cond>
-   <gimple_debug>
-   <gimple_eh_filter>
-   <gimple_label>
-   <gimple_goto>
-   <gimple_nop>
-   <gimple_omp_atomic_load>
-   <gimple_omp_atomic_store>
-   <gimple_omp_continue>
-   <gimple_omp_critical>
-   <gimple_omp_for>
-   <gimple_omp_master>
-   <gimple_omp_ordered>
-   <gimple_omp_parallel>
-   <gimple_omp_return>
-   <gimple_omp_section>
-   <gimple_omp_sections>
-   <gimple_omp_single>
-   <gimple_phi>
-   <gimple_resx>
-   <gimple_return>
-   <gimple_switch>
-   <gimple_try>
-   <gimple_with_cleanup_expr>
+  gimple_asm
+  gimple_assign
+  gimple_bind
+  gimple_call
+  gimple_catch
+  gimple_cond
+  gimple_debug
+  gimple_eh_filter
+  gimple_label
+  gimple_goto
+  gimple_nop
+  gimple_omp_atomic_load
+  gimple_omp_atomic_store
+  gimple_omp_continue
+  gimple_omp_critical
+  gimple_omp_for
+  gimple_omp_master
+  gimple_omp_ordered
+  gimple_omp_parallel
+  gimple_omp_return
+  gimple_omp_section
+  gimple_omp_sections
+  gimple_omp_single
+  gimple_phi
+  gimple_resx
+  gimple_return
+  gimple_switch
+  gimple_try
+  gimple_with_cleanup_expr
 
 ``GIMPLE_ASM``
 ^^^^^^^^^^^^^^

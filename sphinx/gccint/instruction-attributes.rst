@@ -15,15 +15,15 @@ condition code.
 
 .. toctree::
 
-  Specifying attributes and their values. <defining-attributes>
-  Valid expressions for attribute values. <expressions>
-  Assigning attribute values to insns. <tagging-insns>
-  An example of assigning attributes. <attr-example>
-  Computing the length of insns. <insn-lengths>
-  Defining attributes that are constant. <constant-attributes>
-  Obtain the instruction mnemonic as attribute value. <mnemonic-attribute>
-  Defining delay slots required for a machine. <delay-slots>
-  Specifying information for insn scheduling. <processor-pipeline-description>
+  defining-attributes
+  expressions
+  tagging-insns
+  attr-example
+  insn-lengths
+  constant-attributes
+  mnemonic-attribute
+  delay-slots
+  processor-pipeline-description
 
 .. _defining-attributes:
 

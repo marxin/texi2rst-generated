@@ -33,17 +33,10 @@ passes for GIMPLE.
 
 .. toctree::
 
-  Attributes for variables. <annotations>
-  SSA names referenced by GIMPLE statements. <ssa-operands>
-  Static Single Assignment representation. <ssa>
-  Representing aliased loads and stores. <alias-analysis>
-  Memory model used by the middle-end. <memory-model>
-
-.. toctree::
-
   annotations
   ssa-operands
-  static-single-assignment
+  ssa
   alias-analysis
   memory-model
+  static-single-assignment
 

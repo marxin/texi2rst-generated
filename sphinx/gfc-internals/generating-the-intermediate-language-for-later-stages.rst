@@ -12,15 +12,9 @@ trans*.h and trans-*.c.
 
 .. toctree::
 
-  Basic data structures. <basic-data-structures>
-  Converting expressions to tree. <converting-expressions>
-  Translating statements. <translating-statements>
-  Accessing declarations. <accessing-declarations>
-
-.. toctree::
-
   basic-data-structures
-  converting-expressions-to-tree
+  converting-expressions
   translating-statements
   accessing-declarations
+  converting-expressions-to-tree
 

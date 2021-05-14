@@ -33,12 +33,6 @@ remains syntactically valid when it is not to be used.
 
 .. toctree::
 
-   <conditional-uses>
-   <conditional-syntax>
-   <deleted-code>
-
-.. toctree::
-
   conditional-uses
   conditional-syntax
   deleted-code

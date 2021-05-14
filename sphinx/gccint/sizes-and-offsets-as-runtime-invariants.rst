@@ -36,18 +36,15 @@ usage guidelines.
 
 .. toctree::
 
-   <overview-of-poly_int>
-   <consequences-of-using-poly_int>
-   <comparisons-involving-poly_int>
-   <arithmetic-on-poly_ints>
-   <alignment-of-poly_ints>
-   <computing-bounds-on-poly_ints>
-   <converting-poly_ints>
-   <miscellaneous-poly_int-routines>
-   <guidelines-for-using-poly_int>
-
-.. toctree::
-
+  overview-of-poly_int
+  consequences-of-using-poly_int
+  comparisons-involving-poly_int
+  arithmetic-on-poly_ints
+  alignment-of-poly_ints
+  computing-bounds-on-poly_ints
+  converting-poly_ints
+  miscellaneous-poly_int-routines
+  guidelines-for-using-poly_int
   overview-of-polyint
   consequences-of-using-polyint
   comparisons-involving-polyint

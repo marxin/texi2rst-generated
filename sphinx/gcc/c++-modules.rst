@@ -127,9 +127,9 @@ family of options.
 
 .. toctree::
 
-  Module Mapper <c++-module-mapper>
-  Module Preprocessing <c++-module-preprocessing>
-  Compiled Module Interface <c++-compiled-module-interface>
+  c++-module-mapper
+  c++-module-preprocessing
+  c++-compiled-module-interface
 
 .. _c++-module-mapper:
 

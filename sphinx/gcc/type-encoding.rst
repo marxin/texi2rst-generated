@@ -147,9 +147,9 @@ as ``*``, and the ``const`` is lost.
 
 .. toctree::
 
-   <legacy-type-encoding>
-   <@encode>
-   <method-signatures>
+  legacy-type-encoding
+  @encode
+  method-signatures
 
 .. _legacy-type-encoding:
 

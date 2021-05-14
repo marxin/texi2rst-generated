@@ -25,13 +25,12 @@ for a C symbol, or to place a C variable in a specific register.
 
 .. toctree::
 
-  Inline assembler without operands. <basic-asm>
-  Inline assembler with operands. <extended-asm>
-  Constraints for asm operands <constraints>
-  Specifying the assembler name to use for a C symbol. <asm-labels>
-  Defining variables residing in specified 
-                         registers. <explicit-register-variables>
-  How GCC calculates the size of an asm block. <size-of-an-asm>
+  basic-asm
+  extended-asm
+  constraints
+  asm-labels
+  explicit-register-variables
+  size-of-an-asm
 
 .. _basic-asm:
 
@@ -1516,10 +1515,10 @@ the addressing register.
 
 .. toctree::
 
-  Basic use of constraints. <simple-constraints>
-  When an insn has two alternative constraint-patterns. <multi-alternative>
-  More precise control over effects of constraints. <modifiers>
-  Special constraints for some particular machines. <machine-constraints>
+  simple-constraints
+  multi-alternative
+  modifiers
+  machine-constraints
 
 .. _simple-constraints:
 
@@ -4316,8 +4315,8 @@ the two, as explained in the sections below.
 
 .. toctree::
 
-  Variables declared at global scope. <global-register-variables>
-  Variables declared within a function. <local-register-variables>
+  global-register-variables
+  local-register-variables
 
 .. _global-register-variables:
 

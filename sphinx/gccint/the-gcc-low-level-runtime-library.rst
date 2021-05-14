@@ -35,15 +35,12 @@ and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
 
 .. toctree::
 
-   <integer-library-routines>
-   <soft-float-library-routines>
-   <decimal-float-library-routines>
-   <fixed-point-fractional-library-routines>
-   <exception-handling-routines>
-   <miscellaneous-routines>
-
-.. toctree::
-
+  integer-library-routines
+  soft-float-library-routines
+  decimal-float-library-routines
+  fixed-point-fractional-library-routines
+  exception-handling-routines
+  miscellaneous-routines
   routines-for-integer-arithmetic
   routines-for-floating-point-emulation
   routines-for-decimal-floating-point-emulation

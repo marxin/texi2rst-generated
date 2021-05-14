@@ -22,13 +22,13 @@ the way they have.
 
 .. toctree::
 
-  Conventions used in the code. <conventions>
-  The combined C, C++ and Objective-C Lexer. <lexer>
-  All identifiers are entered into a hash table. <hash-nodes>
-  Macro expansion algorithm. <macro-expansion>
-  Spacing and paste avoidance issues. <token-spacing>
-  Tracking location within files. <line-numbering>
-  Optimizing header files with guard macros. <guard-macros>
-  File handling. <files>
-  Index. <concept-index>
+  conventions
+  lexer
+  hash-nodes
+  macro-expansion
+  token-spacing
+  line-numbering
+  guard-macros
+  files
+  concept-index
 

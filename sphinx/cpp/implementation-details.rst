@@ -12,12 +12,6 @@ Also documented here are obsolete features still supported by CPP.
 
 .. toctree::
 
-   <implementation-defined-behavior>
-   <implementation-limits>
-   <obsolete-features>
-
-.. toctree::
-
   implementation-defined-behavior
   implementation-limits
   obsolete-features

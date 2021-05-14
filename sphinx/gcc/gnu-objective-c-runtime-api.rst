@@ -20,8 +20,8 @@ to the GNU Objective-C runtime API to define new classes or methods.
 
 .. toctree::
 
-   <modern-gnu-objective-c-runtime-api>
-   <traditional-gnu-objective-c-runtime-api>
+  modern-gnu-objective-c-runtime-api
+  traditional-gnu-objective-c-runtime-api
 
 .. =========================================================================
 

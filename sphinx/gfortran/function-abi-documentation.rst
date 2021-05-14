@@ -5,42 +5,42 @@ Function ABI Documentation
 
 .. toctree::
 
-  Initialiation function <_gfortran_caf_init>
-  Finalization function <_gfortran_caf_finish>
-  Querying the image number <_gfortran_caf_this_image>
-  Querying the maximal number of images <_gfortran_caf_num_images>
-  Query the status of an image <_gfortran_caf_image_status->
-  Get an array of the indexes of the failed images <_gfortran_caf_failed_images->
-  Get an array of the indexes of the stopped images <_gfortran_caf_stopped_images->
-  Registering coarrays <_gfortran_caf_register>
-  Deregistering coarrays <_gfortran_caf_deregister>
-  Query whether an allocatable or pointer component in a derived type coarray is allocated <_gfortran_caf_is_present>
-  Sending data from a local image to a remote image <_gfortran_caf_send>
-  Getting data from a remote image <_gfortran_caf_get>
-  Sending data between remote images <_gfortran_caf_sendget>
-  Sending data from a local image to a remote image using enhanced references <_gfortran_caf_send_by_ref>
-  Getting data from a remote image using enhanced references <_gfortran_caf_get_by_ref>
-  Sending data between remote images using enhanced references <_gfortran_caf_sendget_by_ref>
-  Locking a lock variable <_gfortran_caf_lock>
-  Unlocking a lock variable <_gfortran_caf_unlock>
-  Post an event <_gfortran_caf_event_post>
-  Wait that an event occurred <_gfortran_caf_event_wait>
-  Query event count <_gfortran_caf_event_query>
-  All-image barrier <_gfortran_caf_sync_all>
-  Barrier for selected images <_gfortran_caf_sync_images>
-  Wait for completion of segment-memory operations <_gfortran_caf_sync_memory>
-  Error termination with exit code <_gfortran_caf_error_stop>
-  Error termination with string <_gfortran_caf_error_stop_str>
-  Mark the image failed and end its execution <_gfortran_caf_fail_image->
-  Atomic variable assignment <_gfortran_caf_atomic_define>
-  Atomic variable reference <_gfortran_caf_atomic_ref>
-  Atomic compare and swap <_gfortran_caf_atomic_cas>
-  Atomic operation <_gfortran_caf_atomic_op>
-  Sending data to all images <_gfortran_caf_co_broadcast>
-  Collective maximum reduction <_gfortran_caf_co_max>
-  Collective minimum reduction <_gfortran_caf_co_min>
-  Collective summing reduction <_gfortran_caf_co_sum>
-  Generic collective reduction <_gfortran_caf_co_reduce>
+  _gfortran_caf_init
+  _gfortran_caf_finish
+  _gfortran_caf_this_image
+  _gfortran_caf_num_images
+  _gfortran_caf_image_status-
+  _gfortran_caf_failed_images-
+  _gfortran_caf_stopped_images-
+  _gfortran_caf_register
+  _gfortran_caf_deregister
+  _gfortran_caf_is_present
+  _gfortran_caf_send
+  _gfortran_caf_get
+  _gfortran_caf_sendget
+  _gfortran_caf_send_by_ref
+  _gfortran_caf_get_by_ref
+  _gfortran_caf_sendget_by_ref
+  _gfortran_caf_lock
+  _gfortran_caf_unlock
+  _gfortran_caf_event_post
+  _gfortran_caf_event_wait
+  _gfortran_caf_event_query
+  _gfortran_caf_sync_all
+  _gfortran_caf_sync_images
+  _gfortran_caf_sync_memory
+  _gfortran_caf_error_stop
+  _gfortran_caf_error_stop_str
+  _gfortran_caf_fail_image-
+  _gfortran_caf_atomic_define
+  _gfortran_caf_atomic_ref
+  _gfortran_caf_atomic_cas
+  _gfortran_caf_atomic_op
+  _gfortran_caf_co_broadcast
+  _gfortran_caf_co_max
+  _gfortran_caf_co_min
+  _gfortran_caf_co_sum
+  _gfortran_caf_co_reduce
 
 .. __gfortran_caf_init:
 

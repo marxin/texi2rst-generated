@@ -11,11 +11,11 @@ facilities to make this process easier.
 
 .. toctree::
 
-  Generating variations of patterns for different modes. <mode-iterators>
-  Doing the same for codes. <code-iterators>
-  Doing the same for integers. <int-iterators>
-  Generating variations of patterns for define_subst. <subst-iterators>
-  Specifying iterator values in C++ code. <parameterized-names>
+  mode-iterators
+  code-iterators
+  int-iterators
+  subst-iterators
+  parameterized-names
 
 .. _mode-iterators:
 
@@ -42,9 +42,9 @@ rtx-based construct, such as a ``define_insn``,
 
 .. toctree::
 
-  Defining a new mode iterator. <defining-mode-iterators>
-  Combining mode iterators with substitutions <substitutions>
-  Examples <examples>
+  defining-mode-iterators
+  substitutions
+  examples
 
 .. _defining-mode-iterators:
 

@@ -24,14 +24,14 @@ the addressing register.
 
 .. toctree::
 
-  Basic use of constraints. <simple-constraints>
-  When an insn has two alternative constraint-patterns. <multi-alternative>
-  Constraints guide which hard register to put things in. <class-preferences>
-  More precise control over effects of constraints. <modifiers>
-  Existing constraints for some particular machines. <machine-constraints>
-  Disable insn alternatives using attributes. <disable-insn-alternatives>
-  How to define machine-specific constraints. <define-constraints>
-  How to test constraints from C code. <c-constraint-interface>
+  simple-constraints
+  multi-alternative
+  class-preferences
+  modifiers
+  machine-constraints
+  disable-insn-alternatives
+  define-constraints
+  c-constraint-interface
 
 .. _simple-constraints:
 

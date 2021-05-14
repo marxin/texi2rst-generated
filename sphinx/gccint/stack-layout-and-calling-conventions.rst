@@ -11,22 +11,22 @@ This describes the stack layout and calling conventions.
 
 .. toctree::
 
-   <frame-layout>
-   <exception-handling>
-   <stack-checking>
-   <frame-registers>
-   <elimination>
-   <stack-arguments>
-   <register-arguments>
-   <scalar-return>
-   <aggregate-return>
-   <caller-saves>
-   <function-entry>
-   <profiling>
-   <tail-calls>
-   <shrink-wrapping-separate-components>
-   <stack-smashing-protection>
-   <miscellaneous-register-hooks>
+  frame-layout
+  exception-handling
+  stack-checking
+  frame-registers
+  elimination
+  stack-arguments
+  register-arguments
+  scalar-return
+  aggregate-return
+  caller-saves
+  function-entry
+  profiling
+  tail-calls
+  shrink-wrapping-separate-components
+  stack-smashing-protection
+  miscellaneous-register-hooks
 
 .. _frame-layout:
 

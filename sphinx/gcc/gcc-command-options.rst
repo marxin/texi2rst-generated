@@ -96,44 +96,29 @@ See :ref:`option-index`, for an index to GCC's options.
 
 .. toctree::
 
-  Brief list of all options, without explanations. <option-summary>
-  Controlling the kind of output:
-                          an executable, object files, assembler files,
-                          or preprocessed source. <overall-options>
-  Compiling C++ programs. <invoking-g++>
-  Controlling the variant of C language compiled. <c-dialect-options>
-  Variations on C++. <c++-dialect-options>
-  Variations on Objective-C
-                          and Objective-C++. <objective-c-and-objective-c++-dialect-options>
-  Controlling how diagnostics should
-                          be formatted. <diagnostic-message-formatting-options>
-  How picky should the compiler be? <warning-options>
-  More expensive warnings. <static-analyzer-options>
-  Producing debuggable code. <debugging-options>
-  How much optimization? <optimize-options>
-  Enabling profiling and extra run-time error checking. <instrumentation-options>
-  Controlling header files and macro definitions.
-                           Also, getting dependency information for Make. <preprocessor-options>
-  Passing options to the assembler. <assembler-options>
-  Specifying libraries and so on. <link-options>
-  Where to find header files and libraries.
-                          Where to find the compiler executable files. <directory-options>
-  Specifying conventions for function calls, data layout
-                          and register usage. <code-gen-options>
-  Printing GCC configuration info, statistics, and
-                          debugging dumps. <developer-options>
-  Target-specific options, such as compiling for a
-                          specific processor variant. <submodel-options>
-  How to pass switches to sub-processes. <spec-files>
-  Env vars that affect GCC. <environment-variables>
-  Compiling a header once, and using it many times. <precompiled-headers>
-  Experimental C++20 module system. <c++-modules>
-
-.. man begin OPTIONS
-
-.. toctree::
-
   option-summary
+  overall-options
+  invoking-g++
+  c-dialect-options
+  c++-dialect-options
+  objective-c-and-objective-c++-dialect-options
+  diagnostic-message-formatting-options
+  warning-options
+  static-analyzer-options
+  debugging-options
+  optimize-options
+  instrumentation-options
+  preprocessor-options
+  assembler-options
+  link-options
+  directory-options
+  code-gen-options
+  developer-options
+  submodel-options
+  spec-files
+  environment-variables
+  precompiled-headers
+  c++-modules
   options-controlling-the-kind-of-output
   compiling-c++-programs
   options-controlling-c-dialect
@@ -155,5 +140,6 @@ See :ref:`option-index`, for an index to GCC's options.
   specifying-subprocesses-and-the-switches-to-pass-to-them
   environment-variables-affecting-gcc
   using-precompiled-headers
-  c++-modules
+
+.. man begin OPTIONS
 

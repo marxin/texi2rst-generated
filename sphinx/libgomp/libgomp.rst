@@ -51,31 +51,21 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 
 .. toctree::
 
-  How to enable OpenMP for your applications. <enabling-openmp>
-  The OpenMP runtime application programming
-                                 interface. <runtime-library-routines>
-  Influencing OpenMP runtime behavior with
-                                 environment variables. <environment-variables>
-  How to enable OpenACC for your
-                                 applications. <enabling-openacc>
-  The OpenACC runtime application
-                                 programming interface. <openacc-runtime-library-routines>
-  Influencing OpenACC runtime behavior with
-                                 environment variables. <openacc-environment-variables>
-  Notes on the implementation of
-                                 asynchronous operations. <cuda-streams-usage>
-  OpenACC library interoperability with the
-                                 NVIDIA CUBLAS library. <openacc-library-interoperability>
-   <openacc-profiling-interface>
-  Notes on the external ABI presented by libgomp. <the-libgomp-abi>
-  How to report bugs in the GNU Offloading and
-                                 Multi Processing Runtime Library. <reporting-bugs>
-  GNU general public license says
-                                 how you can copy and share libgomp. <copying>
-  How you can copy and share this manual. <gnu-free-documentation-license>
-  How to help assure continued work for free 
-                                 software. <funding>
-  Index of this documentation. <library-index>
+  enabling-openmp
+  runtime-library-routines
+  environment-variables
+  enabling-openacc
+  openacc-runtime-library-routines
+  openacc-environment-variables
+  cuda-streams-usage
+  openacc-library-interoperability
+  openacc-profiling-interface
+  the-libgomp-abi
+  reporting-bugs
+  copying
+  gnu-free-documentation-license
+  funding
+  library-index
 
 .. -
    Enabling OpenMP

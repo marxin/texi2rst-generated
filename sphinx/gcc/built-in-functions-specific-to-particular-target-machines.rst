@@ -9,44 +9,44 @@ instructions, but allow the compiler to schedule those calls.
 
 .. toctree::
 
-   <aarch64-built-in-functions>
-   <alpha-built-in-functions>
-   <altera-nios-ii-built-in-functions>
-   <arc-built-in-functions>
-   <arc-simd-built-in-functions>
-   <arm-iwmmxt-built-in-functions>
-   <arm-c-language-extensions-(acle)>
-   <arm-floating-point-status-and-control-intrinsics>
-   <arm-armv8-m-security-extensions>
-   <avr-built-in-functions>
-   <blackfin-built-in-functions>
-   <bpf-built-in-functions>
-   <fr-v-built-in-functions>
-   <mips-dsp-built-in-functions>
-   <mips-paired-single-support>
-   <mips-loongson-built-in-functions>
-   <mips-simd-architecture-(msa)-support>
-   <other-mips-built-in-functions>
-   <msp430-built-in-functions>
-   <nds32-built-in-functions>
-   <picochip-built-in-functions>
-   <basic-powerpc-built-in-functions>
-   <powerpc-altivec-vsx-built-in-functions>
-   <powerpc-hardware-transactional-memory-built-in-functions>
-   <powerpc-atomic-memory-operation-functions>
-   <powerpc-matrix-multiply-assist-built-in-functions>
-   <pru-built-in-functions>
-   <risc-v-built-in-functions>
-   <rx-built-in-functions>
-   <s-390-system-z-built-in-functions>
-   <sh-built-in-functions>
-   <sparc-vis-built-in-functions>
-   <ti-c6x-built-in-functions>
-   <tile-gx-built-in-functions>
-   <tilepro-built-in-functions>
-   <x86-built-in-functions>
-   <x86-transactional-memory-intrinsics>
-   <x86-control-flow-protection-intrinsics>
+  aarch64-built-in-functions
+  alpha-built-in-functions
+  altera-nios-ii-built-in-functions
+  arc-built-in-functions
+  arc-simd-built-in-functions
+  arm-iwmmxt-built-in-functions
+  arm-c-language-extensions-(acle)
+  arm-floating-point-status-and-control-intrinsics
+  arm-armv8-m-security-extensions
+  avr-built-in-functions
+  blackfin-built-in-functions
+  bpf-built-in-functions
+  fr-v-built-in-functions
+  mips-dsp-built-in-functions
+  mips-paired-single-support
+  mips-loongson-built-in-functions
+  mips-simd-architecture-(msa)-support
+  other-mips-built-in-functions
+  msp430-built-in-functions
+  nds32-built-in-functions
+  picochip-built-in-functions
+  basic-powerpc-built-in-functions
+  powerpc-altivec-vsx-built-in-functions
+  powerpc-hardware-transactional-memory-built-in-functions
+  powerpc-atomic-memory-operation-functions
+  powerpc-matrix-multiply-assist-built-in-functions
+  pru-built-in-functions
+  risc-v-built-in-functions
+  rx-built-in-functions
+  s-390-system-z-built-in-functions
+  sh-built-in-functions
+  sparc-vis-built-in-functions
+  ti-c6x-built-in-functions
+  tile-gx-built-in-functions
+  tilepro-built-in-functions
+  x86-built-in-functions
+  x86-transactional-memory-intrinsics
+  x86-control-flow-protection-intrinsics
 
 .. _aarch64-built-in-functions:
 
@@ -1106,11 +1106,11 @@ here in tabular form.
 
 .. toctree::
 
-   <argument-types>
-   <directly-mapped-integer-functions>
-   <directly-mapped-media-functions>
-   <raw-read-write-functions>
-   <other-built-in-functions>
+  argument-types
+  directly-mapped-integer-functions
+  directly-mapped-media-functions
+  raw-read-write-functions
+  other-built-in-functions
 
 .. _argument-types:
 
@@ -1782,9 +1782,9 @@ instruction.
 
 .. toctree::
 
-   <paired-single-arithmetic>
-   <paired-single-built-in-functions>
-   <mips-3d-built-in-functions>
+  paired-single-arithmetic
+  paired-single-built-in-functions
+  mips-3d-built-in-functions
 
 .. _paired-single-arithmetic:
 
@@ -2043,7 +2043,7 @@ MIPS SIMD Architecture (MSA) Support
 
 .. toctree::
 
-   <mips-simd-architecture-built-in-functions>
+  mips-simd-architecture-built-in-functions
 
 GCC provides intrinsics to access the SIMD instructions provided by the
 MSA MIPS SIMD Architecture.  The interface is made available by including
@@ -2979,12 +2979,12 @@ Basic PowerPC Built-in Functions
 
 .. toctree::
 
-   <basic-powerpc-built-in-functions-available-on-all-configurations>
-   <basic-powerpc-built-in-functions-available-on-isa-2.05>
-   <basic-powerpc-built-in-functions-available-on-isa-2.06>
-   <basic-powerpc-built-in-functions-available-on-isa-2.07>
-   <basic-powerpc-built-in-functions-available-on-isa-3.0>
-   <basic-powerpc-built-in-functions-available-on-isa-3.1>
+  basic-powerpc-built-in-functions-available-on-all-configurations
+  basic-powerpc-built-in-functions-available-on-isa-2.05
+  basic-powerpc-built-in-functions-available-on-isa-2.06
+  basic-powerpc-built-in-functions-available-on-isa-2.07
+  basic-powerpc-built-in-functions-available-on-isa-3.0
+  basic-powerpc-built-in-functions-available-on-isa-3.1
 
 This section describes PowerPC built-in functions that do not require
 the inclusion of any special header files to declare prototypes or
@@ -3837,11 +3837,11 @@ The PVIPR documents the following overloaded functions:
 
 .. toctree::
 
-   <powerpc-altivec-built-in-functions-on-isa-2.05>
-   <powerpc-altivec-built-in-functions-available-on-isa-2.06>
-   <powerpc-altivec-built-in-functions-available-on-isa-2.07>
-   <powerpc-altivec-built-in-functions-available-on-isa-3.0>
-   <powerpc-altivec-built-in-functions-available-on-isa-3.1>
+  powerpc-altivec-built-in-functions-on-isa-2.05
+  powerpc-altivec-built-in-functions-available-on-isa-2.06
+  powerpc-altivec-built-in-functions-available-on-isa-2.07
+  powerpc-altivec-built-in-functions-available-on-isa-3.0
+  powerpc-altivec-built-in-functions-available-on-isa-3.1
 
 .. _powerpc-altivec-built-in-functions-on-isa-2.05:
 

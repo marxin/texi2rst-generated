@@ -71,12 +71,12 @@ package documentation, see http://golang.org/.
 
 .. toctree::
 
-  The GNU General Public License. <copying>
-  How you can share and copy this manual. <gnu-free-documentation-license>
-  How to run gccgo. <invoking-gccgo>
-  Importing and exporting package data. <import-and-export>
-  Comments to control compilation. <compiler-directives>
-  Calling C from Go and vice-versa. <c-interoperability>
+  copying
+  gnu-free-documentation-license
+  invoking-gccgo
+  import-and-export
+  compiler-directives
+  c-interoperability
 
 @c Set file name and title for man page.
 @setfilename gpl

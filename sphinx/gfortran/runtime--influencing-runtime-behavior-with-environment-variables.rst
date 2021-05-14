@@ -12,22 +12,19 @@ Malformed environment variables are silently ignored.
 
 .. toctree::
 
-  Directory for scratch files <tmpdir>
-  Unit number for standard input <gfortran_stdin_unit>
-  Unit number for standard output <gfortran_stdout_unit>
-  Unit number for standard error <gfortran_stderr_unit>
-  Do not buffer I/O for all units <gfortran_unbuffered_all>
-  Do not buffer I/O for preconnected units. <gfortran_unbuffered_preconnected>
-  Show location for runtime errors <gfortran_show_locus>
-  Print leading + where permitted <gfortran_optional_plus>
-  Separator for list output <gfortran_list_separator>
-  Set endianness for unformatted I/O <gfortran_convert_unit>
-  Show backtrace on run-time errors <gfortran_error_backtrace>
-  Buffer size for formatted files <gfortran_formatted_buffer_size>
-  Buffer size for unformatted files <gfortran_unformatted_buffer_size>
-
-.. toctree::
-
+  tmpdir
+  gfortran_stdin_unit
+  gfortran_stdout_unit
+  gfortran_stderr_unit
+  gfortran_unbuffered_all
+  gfortran_unbuffered_preconnected
+  gfortran_show_locus
+  gfortran_optional_plus
+  gfortran_list_separator
+  gfortran_convert_unit
+  gfortran_error_backtrace
+  gfortran_formatted_buffer_size
+  gfortran_unformatted_buffer_size
   tmpdir-directory-for-scratch-files
   gfortranstdinunit-unit-number-for-standard-input
   gfortranstdoutunit-unit-number-for-standard-output

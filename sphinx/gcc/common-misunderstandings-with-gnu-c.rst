@@ -17,10 +17,10 @@ give rise to questions of this sort.
 
 .. toctree::
 
-  Static member declarations are not definitions <static-definitions>
-  Name lookup, templates, and accessing members of base classes <name-lookup>
-  Temporaries may vanish before you expect <temporaries>
-  Copy Assignment operators copy virtual bases twice <copy-assignment>
+  static-definitions
+  name-lookup
+  temporaries
+  copy-assignment
 
 .. _static-definitions:
 

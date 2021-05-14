@@ -21,13 +21,8 @@ header.  See :ref:`system-config`.
 
 .. toctree::
 
-  Things every host probably needs implemented. <host-common>
-  Your host cannot have the letter 'a' in filenames? <filesystem>
-  Rare configuration options for hosts. <host-misc>
-
-.. toctree::
-
   host-common
-  host-filesystem
+  filesystem
   host-misc
+  host-filesystem
 

@@ -38,25 +38,17 @@ one is not the default.
 
 .. toctree::
 
-  Brief list of all gfortran options,
-                          without explanations. <option-summary>
-  Controlling the variant of Fortran language
-                               compiled. <fortran-dialect-options>
-  Enable and customize preprocessing. <preprocessing-options>
-  How picky should the compiler be? <error-and-warning-options>
-  Symbol tables, measurements, and debugging dumps. <debugging-options>
-  Where to find module files <directory-options>
-  Influencing the linking step <link-options->
-  Influencing runtime behavior <runtime-options>
-  Specifying conventions for function calls, data layout
-                          and register usage. <code-gen-options>
-  Options for interoperability with other
-                                languages. <interoperability-options>
-  Environment variables that affect gfortran. <environment-variables>
-
-.. toctree::
-
   option-summary
+  fortran-dialect-options
+  preprocessing-options
+  error-and-warning-options
+  debugging-options
+  directory-options
+  link-options-
+  runtime-options
+  code-gen-options
+  interoperability-options
+  environment-variables
   options-controlling-fortran-dialect
   enable-and-customize-preprocessing
   options-to-request-or-suppress-errors-and-warnings

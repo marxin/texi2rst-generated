@@ -8,11 +8,7 @@ manipulate or process gcda profile files offline.
 
 .. toctree::
 
-  Introduction to gcov-tool. <gcov-tool-intro>
-  How to use gcov-tool. <invoking-gcov-tool>
-
-.. toctree::
-
-  introduction-to-gcov-tool
+  gcov-tool-intro
   invoking-gcov-tool
+  introduction-to-gcov-tool
 

@@ -9,8 +9,8 @@ format attribute
 
 .. toctree::
 
-   <solaris-format-checks>
-   <darwin-format-checks>
+  solaris-format-checks
+  darwin-format-checks
 
 .. _solaris-format-checks:
 

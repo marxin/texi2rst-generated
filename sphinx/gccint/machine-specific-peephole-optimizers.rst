@@ -29,8 +29,8 @@ targets that do scheduling.
 
 .. toctree::
 
-  RTL to Text Peephole Optimizers <define_peephole>
-  RTL to RTL Peephole Optimizers <define_peephole2>
+  define_peephole
+  define_peephole2
 
 .. _define_peephole:
 

@@ -24,11 +24,6 @@ APIs are introduced.
 
 .. toctree::
 
-   <gimple-api>
-   <the-language>
-
-.. toctree::
-
   gimple-api
   the-language
 

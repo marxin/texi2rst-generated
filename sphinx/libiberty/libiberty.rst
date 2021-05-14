@@ -15,14 +15,13 @@ License; for more information, see Library Copying.
 
 .. toctree::
 
-  How to use libiberty in your code. <using>
+  using
 
-  Overview of available function groups. <overview>
+  overview
 
-  Available functions, macros, and global variables. <functions>
+  functions
 
-  The various licenses under which libiberty sources are
-                         distributed. <licenses>
+  licenses
 
 .. toctree::
 
@@ -37,8 +36,8 @@ Licenses
 
 .. toctree::
 
-  The GNU Library General Public License <library-copying>
-  Regents of the University of California <bsd>
+  library-copying
+  bsd
 
 .. This takes care of Library Copying.  It is the copying-lib.texi from the
    GNU web site, with its @node line altered to make makeinfo shut up.

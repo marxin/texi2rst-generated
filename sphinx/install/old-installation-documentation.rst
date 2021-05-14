@@ -9,7 +9,8 @@ main manual.
 
 .. toctree::
 
-  Configurations Supported by GCC. <configurations>
+  configurations
+  configurations-supported-by-gcc
 
 Here is the procedure for installing GCC on a GNU or Unix system.
 
@@ -68,8 +69,4 @@ Here is the procedure for installing GCC on a GNU or Unix system.
   See Configurations, for a list of supported configuration names and
   notes on many of the configurations.  You should check the notes in that
   section before proceeding any further with the installation of GCC.
-
-.. toctree::
-
-  configurations-supported-by-gcc
 

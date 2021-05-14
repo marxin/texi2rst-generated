@@ -8,16 +8,12 @@ test code coverage in your programs.
 
 .. toctree::
 
-  Introduction to gcov. <gcov-intro>
-  How to use gcov. <invoking-gcov>
-  Using gcov with GCC optimization. <gcov-and-optimization>
-  The files used by gcov. <gcov-data-files>
-  Data file relocation. <cross-profiling>
-
-.. toctree::
-
-  introduction-to-gcov
+  gcov-intro
   invoking-gcov
+  gcov-and-optimization
+  gcov-data-files
+  cross-profiling
+  introduction-to-gcov
   using-gcov-with-gcc-optimization
   brief-description-of-gcov-data-files
   data-file-relocation-to-support-cross-profiling

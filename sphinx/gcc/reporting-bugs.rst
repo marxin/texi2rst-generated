@@ -15,11 +15,8 @@ report the problem.
 
 .. toctree::
 
-  Have you really found a bug? <bug-criteria>
-  How to report a bug effectively. <bug-reporting>
-
-.. toctree::
-
+  bug-criteria
+  bug-reporting
   have-you-found-a-bug
   how-and-where-to-report-bugs
 

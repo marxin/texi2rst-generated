@@ -10,17 +10,14 @@ which it is presumed that you are familiar.
 
 .. toctree::
 
-  Configuration terminology and history. <configure-terms>
-  The top level source directory. <top-level>
-  The gcc subdirectory. <gcc-directory>
+  configure-terms
+  top-level
+  gcc-directory
+  configure-terms-and-history
+  top-level-source-directory
+  the-gcc-subdirectory
 
 .. Copyright (C) 2001-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.
    For copying conditions, see the file gcc.texi.
-
-.. toctree::
-
-  configure-terms-and-history
-  top-level-source-directory
-  the-gcc-subdirectory
 

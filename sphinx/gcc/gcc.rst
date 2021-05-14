@@ -87,35 +87,33 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
 
 .. toctree::
 
-  You can compile C or C++ programs. <g++-and-gcc>
-  Language standards supported by GCC. <standards>
-  Command options supported by gcc. <invoking-gcc>
-  How GCC implements the ISO C specification. <c-implementation>
-  How GCC implements the ISO C++ specification. <c++-implementation>
-  GNU extensions to the C language family. <c-extensions>
-  GNU extensions to the C++ language. <c++-extensions>
-  GNU Objective-C runtime features. <objective-c>
-  Binary Compatibility <compatibility>
-  gcov-a test coverage program. <gcov>
-  gcov-tool-an offline gcda profile processing program. <gcov-tool>
-  gcov-dump-an offline gcda and gcno profile dump tool. <gcov-dump>
-  lto-dump-Tool for dumping LTO
-  object files. <lto-dump>
-  If you have trouble using GCC. <trouble>
-  How, why and where to report bugs. <bugs>
-  How To Get Help with GCC <service>
-  How to contribute to testing and developing GCC. <contributing>
+  g++-and-gcc
+  standards
+  invoking-gcc
+  c-implementation
+  c++-implementation
+  c-extensions
+  c++-extensions
+  objective-c
+  compatibility
+  gcov
+  gcov-tool
+  gcov-dump
+  lto-dump
+  trouble
+  bugs
+  service
+  contributing
 
-  How to help assure funding for free software. <funding>
-  The GNU Project and GNU/Linux. <gnu-project>
+  funding
+  gnu-project
 
-  GNU General Public License says
-                      how you can copy and share GCC. <copying>
-  How you can copy and share this manual. <gnu-free-documentation-license>
-  People who have contributed to GCC. <contributors>
+  copying
+  gnu-free-documentation-license
+  contributors
 
-  Index to command line options. <option-index>
-  Index of concepts and symbol names. <keyword-index>
+  option-index
+  keyword-index
 
 .. Copyright (C) 1988-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.

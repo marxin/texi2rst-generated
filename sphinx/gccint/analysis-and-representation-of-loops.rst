@@ -11,22 +11,15 @@ variable analysis and number of iterations analysis).
 
 .. toctree::
 
-  Representation and analysis of loops. <loop-representation>
-  Getting information about loops. <loop-querying>
-  Loop manipulation functions. <loop-manipulation>
-  Loop-closed SSA form. <lcssa>
-  Induction variables on GIMPLE. <scalar-evolutions>
-  Induction variables on RTL. <loop-iv>
-  Number of iterations analysis. <number-of-iterations>
-  Data dependency analysis. <dependency-analysis>
-
-.. toctree::
-
   loop-representation
   loop-querying
   loop-manipulation
-  loop-closed-ssa-form
+  lcssa
   scalar-evolutions
+  loop-iv
+  number-of-iterations
+  dependency-analysis
+  loop-closed-ssa-form
   iv-analysis-on-rtl
   number-of-iterations-analysis
   data-dependency-analysis

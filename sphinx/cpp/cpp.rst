@@ -70,23 +70,23 @@ useful on its own.
 
 .. toctree::
 
-   <overview>
-   <header-files>
-   <macros>
-   <conditionals>
-   <diagnostics>
-   <line-control>
-   <pragmas>
-   <other-directives>
-   <preprocessor-output>
-   <traditional-mode>
-   <implementation-details>
-   <invocation>
-   <environment-variables>
-   <gnu-free-documentation-license>
-   <index-of-directives>
-   <option-index>
-   <concept-index>
+  overview
+  header-files
+  macros
+  conditionals
+  diagnostics
+  line-control
+  pragmas
+  other-directives
+  preprocessor-output
+  traditional-mode
+  implementation-details
+  invocation
+  environment-variables
+  gnu-free-documentation-license
+  index-of-directives
+  option-index
+  concept-index
 
 .. toctree::
 

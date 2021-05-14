@@ -9,29 +9,18 @@ several resources on the Internet that present the language.
 
 .. toctree::
 
-   <gnu-objective-c-runtime-api>
-   <executing-code-before-main>
-   <type-encoding>
-   <garbage-collection>
-   <constant-string-objects>
-   <compatibility_alias>
-   <exceptions>
-   <synchronization>
-   <fast-enumeration>
-   <messaging-with-the-gnu-objective-c-runtime>
-
-.. =========================================================================
-
-.. toctree::
-
   gnu-objective-c-runtime-api
-  load-executing-code-before-main
+  executing-code-before-main
   type-encoding
   garbage-collection
   constant-string-objects
-  compatibilityalias
+  compatibility_alias
   exceptions
   synchronization
   fast-enumeration
   messaging-with-the-gnu-objective-c-runtime
+  load-executing-code-before-main
+  compatibilityalias
+
+.. =========================================================================
 

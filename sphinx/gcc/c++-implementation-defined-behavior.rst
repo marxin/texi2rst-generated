@@ -25,11 +25,6 @@ environment); refer to their documentation for details.
 
 .. toctree::
 
-   <conditionally-supported-behavior>
-   <exception-handling>
-
-.. toctree::
-
   conditionally-supported-behavior
   exception-handling
 

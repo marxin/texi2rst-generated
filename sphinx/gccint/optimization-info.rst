@@ -16,12 +16,12 @@ information about various compiler transformations and optimizations.
 
 .. toctree::
 
-  Setup of optimization dumps. <dump-setup>
-  Groups made up of optimization passes. <optimization-groups>
-  Dump output file names and streams. <dump-files-and-streams>
-  How much information to dump. <dump-output-verbosity>
-  Various types of dump functions. <dump-types>
-  Sample usage. <dump-examples>
+  dump-setup
+  optimization-groups
+  dump-files-and-streams
+  dump-output-verbosity
+  dump-types
+  dump-examples
 
 .. _dump-setup:
 

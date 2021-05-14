@@ -21,14 +21,14 @@ see the comments in the source code for more details.
 
 .. toctree::
 
-  What a pass needs to do to use the RTL SSA form <using-rtl-ssa>
-  How instructions are represented and organized <rtl-ssa-instructions>
-  How instructions are grouped into blocks <rtl-ssa-basic-blocks>
-  How registers and memory are represented <rtl-ssa-resources>
-  How register and memory accesses are represented <rtl-ssa-accesses>
-  How multiple sources are combined into one <rtl-ssa-phi-nodes>
-  How accesses are chained together <rtl-ssa-access-lists>
-  How to use the RTL SSA framework to change insns <changing-rtl-instructions>
+  using-rtl-ssa
+  rtl-ssa-instructions
+  rtl-ssa-basic-blocks
+  rtl-ssa-resources
+  rtl-ssa-accesses
+  rtl-ssa-phi-nodes
+  rtl-ssa-access-lists
+  changing-rtl-instructions
 
 .. _using-rtl-ssa:
 
@@ -496,8 +496,8 @@ then goes on to describe the differences when changing multiple instructions.
 
 .. toctree::
 
-   <changing-one-rtl-ssa-instruction>
-   <changing-multiple-rtl-ssa-instructions>
+  changing-one-rtl-ssa-instruction
+  changing-multiple-rtl-ssa-instructions
 
 .. _changing-one-rtl-ssa-instruction:
 

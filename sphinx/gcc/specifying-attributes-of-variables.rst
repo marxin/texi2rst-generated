@@ -24,22 +24,22 @@ attributes.
 
 .. toctree::
 
-   <common-variable-attributes>
-   <arc-variable-attributes>
-   <avr-variable-attributes>
-   <blackfin-variable-attributes>
-   <h8-300-variable-attributes>
-   <ia-64-variable-attributes>
-   <m32r-d-variable-attributes>
-   <mep-variable-attributes>
-   <microsoft-windows-variable-attributes>
-   <msp430-variable-attributes>
-   <nvidia-ptx-variable-attributes>
-   <powerpc-variable-attributes>
-   <rl78-variable-attributes>
-   <v850-variable-attributes>
-   <x86-variable-attributes>
-   <xstormy16-variable-attributes>
+  common-variable-attributes
+  arc-variable-attributes
+  avr-variable-attributes
+  blackfin-variable-attributes
+  h8-300-variable-attributes
+  ia-64-variable-attributes
+  m32r-d-variable-attributes
+  mep-variable-attributes
+  microsoft-windows-variable-attributes
+  msp430-variable-attributes
+  nvidia-ptx-variable-attributes
+  powerpc-variable-attributes
+  rl78-variable-attributes
+  v850-variable-attributes
+  x86-variable-attributes
+  xstormy16-variable-attributes
 
 .. _common-variable-attributes:
 

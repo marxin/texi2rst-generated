@@ -16,34 +16,22 @@ test specifically for GNU C++ (see :ref:`Predefined Macros <common-predefined-ma
 
 .. toctree::
 
-  What constitutes an access to a volatile object. <c++-volatiles>
-  C99 restricted pointers and references. <restricted-pointers>
-  Where G++ puts inlines, vtables and such. <vague-linkage>
-  You can use a single C++ header file for both
-                          declarations and definitions. <c++-interface>
-  Methods for ensuring that exactly one copy of
-                          each needed template instantiation is emitted. <template-instantiation>
-  You can extract a function pointer to the
-                          method denoted by a ->* or .* expression. <bound-member-functions>
-  Variable, function, and type attributes for C++ only. <c++-attributes>
-  Declaring multiple function versions. <function-multiversioning>
-  Compiler support for type traits. <type-traits>
-  Improved support for generic programming. <c++-concepts>
-  Things will disappear from G++. <deprecated-features>
-  Compatibilities with earlier definitions of C++. <backwards-compatibility>
-
-.. toctree::
-
-  when-is-a-volatile-c++-object-accessed
-  restricting-pointer-aliasing
+  c++-volatiles
+  restricted-pointers
   vague-linkage
-  c++-interface-and-implementation-pragmas
-  wheres-the-template
-  extracting-the-function-pointer-from-a-bound-pointer-to-member-function
-  c++-specific-variable-function-and-type-attributes
+  c++-interface
+  template-instantiation
+  bound-member-functions
+  c++-attributes
   function-multiversioning
   type-traits
   c++-concepts
   deprecated-features
   backwards-compatibility
+  when-is-a-volatile-c++-object-accessed
+  restricting-pointer-aliasing
+  c++-interface-and-implementation-pragmas
+  wheres-the-template
+  extracting-the-function-pointer-from-a-bound-pointer-to-member-function
+  c++-specific-variable-function-and-type-attributes
 

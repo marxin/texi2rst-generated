@@ -18,23 +18,23 @@ information.
 
 .. toctree::
 
-   <aarch64-pragmas>
-   <arm-pragmas>
-   <m32c-pragmas>
-   <mep-pragmas>
-   <pru-pragmas>
-   <rs-6000-and-powerpc-pragmas>
-   <s-390-pragmas>
-   <darwin-pragmas>
-   <solaris-pragmas>
-   <symbol-renaming-pragmas>
-   <structure-layout-pragmas>
-   <weak-pragmas>
-   <diagnostic-pragmas>
-   <visibility-pragmas>
-   <push-pop-macro-pragmas>
-   <function-specific-option-pragmas>
-   <loop-specific-pragmas>
+  aarch64-pragmas
+  arm-pragmas
+  m32c-pragmas
+  mep-pragmas
+  pru-pragmas
+  rs-6000-and-powerpc-pragmas
+  s-390-pragmas
+  darwin-pragmas
+  solaris-pragmas
+  symbol-renaming-pragmas
+  structure-layout-pragmas
+  weak-pragmas
+  diagnostic-pragmas
+  visibility-pragmas
+  push-pop-macro-pragmas
+  function-specific-option-pragmas
+  loop-specific-pragmas
 
 .. _aarch64-pragmas:
 

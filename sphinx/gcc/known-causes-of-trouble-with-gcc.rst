@@ -19,27 +19,18 @@ where people's opinions differ as to what is best.
 
 .. toctree::
 
-  Bugs we will fix later. <actual-bugs>
-  Problems using GCC with other compilers,
-                          and with certain linkers, assemblers and debuggers. <interoperation>
-  GCC is incompatible with traditional C. <incompatibilities>
-  GCC uses corrected versions of system header files.
-                          This is necessary, but doesn't always work smoothly. <fixed-headers>
-  GCC uses the system C library, which might not be
-                          compliant with the ISO C standard. <standard-libraries>
-  Regrettable things we cannot change, but not quite bugs. <disappointments>
-  Common misunderstandings with GNU C++. <c++-misunderstandings>
-  Things we think are right, but some others disagree. <non-bugs>
-  Which problems in your code get warnings,
-                          and which get errors. <warnings-and-errors>
-
-.. toctree::
-
-  actual-bugs-we-havent-fixed-yet
+  actual-bugs
   interoperation
+  incompatibilities
+  fixed-headers
+  standard-libraries
+  disappointments
+  c++-misunderstandings
+  non-bugs
+  warnings-and-errors
+  actual-bugs-we-havent-fixed-yet
   incompatibilities-of-gcc
   fixed-header-files
-  standard-libraries
   disappointments-and-misunderstandings
   common-misunderstandings-with-gnu-c
   certain-changes-we-dont-want-to-make

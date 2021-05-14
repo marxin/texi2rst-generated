@@ -46,10 +46,10 @@ As this example indicates, the operands are zero-indexed.
 
 .. toctree::
 
-   <constant-expressions>
-   <storage-references>
-   <unary-and-binary-expressions>
-   <vectors>
+  constant-expressions
+  storage-references
+  unary-and-binary-expressions
+  vectors
 
 .. _constant-expressions:
 

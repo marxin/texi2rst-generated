@@ -41,17 +41,6 @@ underscores in header file names, and at most one dot.
 
 .. toctree::
 
-   <include-syntax>
-   <include-operation>
-   <search-path>
-   <once-only-headers>
-   <alternatives-to-wrapper-#ifndef>
-   <computed-includes>
-   <wrapper-headers>
-   <system-headers>
-
-.. toctree::
-
   include-syntax
   include-operation
   search-path

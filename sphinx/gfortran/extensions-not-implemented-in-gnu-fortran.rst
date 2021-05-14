@@ -21,12 +21,12 @@ code that uses them running with the GNU Fortran compiler.
 
 .. toctree::
 
-   <encode-and-decode-statements>
-   <variable-format-expressions>
-   <alternate-complex-function-syntax>
-   <volatile-common-blocks>
-   <open(-...-name=)>
-   <q-edit-descriptor>
+  encode-and-decode-statements
+  variable-format-expressions
+  alternate-complex-function-syntax
+  volatile-common-blocks
+  open(-...-name=)
+  q-edit-descriptor
 
 .. _encode-and-decode-statements:
 

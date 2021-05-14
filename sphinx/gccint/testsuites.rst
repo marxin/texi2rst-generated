@@ -10,20 +10,17 @@ here; FIXME: document the others.
 
 .. toctree::
 
-  Idioms used in testsuite code. <test-idioms>
-  Directives used within DejaGnu tests. <test-directives>
-  The Ada language testsuites. <ada-tests>
-  The C language testsuites. <c-tests>
-  Support for testing link-time optimizations. <lto-testing>
-  Support for testing gcov. <gcov-testing>
-  Support for testing profile-directed optimizations. <profopt-testing>
-  Support for testing binary compatibility. <compat-testing>
-  Support for torture testing using multiple options. <torture-tests>
-  Support for testing GIMPLE passes. <gimple-tests>
-  Support for testing RTL passes. <rtl-tests>
-
-.. toctree::
-
+  test-idioms
+  test-directives
+  ada-tests
+  c-tests
+  lto-testing
+  gcov-testing
+  profopt-testing
+  compat-testing
+  torture-tests
+  gimple-tests
+  rtl-tests
   idioms-used-in-testsuite-code
   directives-used-within-dejagnu-tests
   ada-language-testsuites

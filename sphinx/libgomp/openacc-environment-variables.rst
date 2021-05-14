@@ -11,13 +11,10 @@ The variable :envvar:`GCC_ACC_NOTIFY` is used for diagnostic purposes.
 
 .. toctree::
 
-   <acc_device_type>
-   <acc_device_num>
-   <acc_proflib>
-   <gcc_acc_notify>
-
-.. toctree::
-
+  acc_device_type
+  acc_device_num
+  acc_proflib
+  gcc_acc_notify
   accdevicetype
   accdevicenum
   accproflib

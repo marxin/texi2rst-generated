@@ -13,13 +13,13 @@ counter-intuitive consequences that you must watch out for.
 
 .. toctree::
 
-   <misnesting>
-   <operator-precedence-problems>
-   <swallowing-the-semicolon>
-   <duplication-of-side-effects>
-   <self-referential-macros>
-   <argument-prescan>
-   <newlines-in-arguments>
+  misnesting
+  operator-precedence-problems
+  swallowing-the-semicolon
+  duplication-of-side-effects
+  self-referential-macros
+  argument-prescan
+  newlines-in-arguments
 
 .. _misnesting:
 

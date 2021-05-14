@@ -18,21 +18,12 @@ where near complete.
 
 .. toctree::
 
-  The language front end turns text into bits. <parsing-pass>
-  The bits are turned into something we can optimize. <gimplification-pass>
-  Sequencing the optimization passes. <pass-manager>
-  Inter-procedural optimizations. <ipa-passes>
-  Optimizations on a high-level representation. <tree-ssa-passes>
-  Optimizations on a low-level representation. <rtl-passes>
-  Dumping optimization information from passes. <optimization-info>
-
-.. toctree::
-
   parsing-pass
   gimplification-pass
   pass-manager
-  inter-procedural-optimization-passes
+  ipa-passes
   tree-ssa-passes
   rtl-passes
   optimization-info
+  inter-procedural-optimization-passes
 

@@ -5,12 +5,12 @@ GNU Fortran Compiler Directives
 
 .. toctree::
 
-   <attributes-directive>
-   <unroll-directive>
-   <builtin-directive>
-   <ivdep-directive>
-   <vector-directive>
-   <novector-directive>
+  attributes-directive
+  unroll-directive
+  builtin-directive
+  ivdep-directive
+  vector-directive
+  novector-directive
 
 .. _attributes-directive:
 

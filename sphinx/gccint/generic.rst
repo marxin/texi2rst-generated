@@ -29,31 +29,21 @@ seems inelegant.
 
 .. toctree::
 
-  Topics net yet covered in this document. <deficiencies>
-  All about trees. <tree-overview>
-  Fundamental and aggregate types. <types>
-  Type declarations and variables. <declarations>
-  Declaration and type attributes. <attributes>
-  Operating on data. <expression-trees>
-  Control flow and related trees. <statements>
-  Function bodies, linkage, and other aspects. <functions>
-  Topics and trees specific to language front ends. <language-dependent-trees>
-  Trees specific to C and C++. <c-and-c++-trees>
-
-.. -
-   Deficiencies
-   -
-
-.. toctree::
-
   deficiencies
-  overview
+  tree-overview
   types
   declarations
-  attributes-in-trees
-  expressions
+  attributes
+  expression-trees
   statements
   functions
   language-dependent-trees
   c-and-c++-trees
+  overview
+  attributes-in-trees
+  expressions
+
+.. -
+   Deficiencies
+   -
 

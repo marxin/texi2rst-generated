@@ -32,14 +32,6 @@ without proper maintenance of the CFG simultaneously.
 
 .. toctree::
 
-  The definition and representation of basic blocks. <basic-blocks>
-  Types of edges and their representation. <edges>
-  Representation of frequencies and probabilities. <profile-information>
-  Keeping the control flow graph and up to date. <maintaining-the-cfg>
-  Using and maintaining liveness information. <liveness-information>
-
-.. toctree::
-
   basic-blocks
   edges
   profile-information

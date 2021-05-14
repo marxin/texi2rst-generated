@@ -21,11 +21,9 @@ functions may call one another.
 
 .. toctree::
 
-  Testing and handling failed memory
-                                     requests automatically. <memory-allocation>
-  Calling routines on program exit. <exit-handlers>
-  Mapping errno and signal numbers to
-                                     more useful string formats. <error-reporting>
+  memory-allocation
+  exit-handlers
+  error-reporting
 
 .. _memory-allocation:
 
