@@ -4,7 +4,7 @@ Submitting test results
 If you want to report the results to the GCC project, use the
 contrib/test_summary shell script.  Start it in the :samp:`{objdir}` with
 
-.. code-block:: c++
+.. code-block:: bash
 
   srcdir/contrib/test_summary -p your_commentary.txt \
       -m gcc-testresults@gcc.gnu.org |sh

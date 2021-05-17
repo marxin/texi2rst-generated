@@ -45,7 +45,7 @@ Here is the procedure for installing GCC on a GNU or Unix system.
 
   Here is an example:
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     ./configure --host=sparc-sun-sunos4.1
 

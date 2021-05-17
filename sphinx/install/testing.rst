@@ -35,7 +35,7 @@ installed are not in the :envvar:`PATH`, you may need to set the following
 environment variables appropriately, as in the following example (which
 assumes that DejaGnu has been installed under /usr/local):
 
-.. code-block:: c++
+.. code-block:: bash
 
   TCL_LIBRARY = /usr/local/share/tcl8.0
   DEJAGNULIBS = /usr/local/share/dejagnu
@@ -46,7 +46,7 @@ portability in the DejaGnu code.)
 
 Finally, you can run the testsuite (which may take a long time):
 
-.. code-block:: c++
+.. code-block:: bash
 
   cd objdir; make -k check
 

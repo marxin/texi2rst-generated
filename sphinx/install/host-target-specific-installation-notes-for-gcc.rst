@@ -114,7 +114,7 @@ can also be obtained from:
 
 The following error:
 
-.. code-block:: c++
+.. code-block:: bash
 
   Error: register required
 
@@ -464,7 +464,7 @@ with an earlier release of GCC is recommended.  Bootstrapping with XLC
 requires a larger data segment, which can be enabled through the
 :samp:`{LDR_CNTRL}` environment variable, e.g.,
 
-.. code-block:: c++
+.. code-block:: bash
 
   % LDR_CNTRL=MAXDATA=0x50000000
   % export LDR_CNTRL
@@ -476,7 +476,7 @@ with a version of GCC built for an earlier release of AIX.
 To speed up the configuration phases of bootstrapping and installing GCC,
 one may use GNU Bash instead of AIX :command:`/bin/sh`, e.g.,
 
-.. code-block:: c++
+.. code-block:: bash
 
   % CONFIG_SHELL=/opt/freeware/bin/bash
   % export CONFIG_SHELL
@@ -543,21 +543,21 @@ multilib libstdc++.a installed:
 Extract the shared objects from the currently installed
 libstdc++.a archive:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % ar -x libstdc++.a libstdc++.so.4 libstdc++.so.5
 
 Enable the :samp:`F_LOADONLY` flag so that the shared object will be
 available for runtime dynamic loading, but not linking:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % strip -e libstdc++.so.4 libstdc++.so.5
 
 Archive the runtime-only shared object in the GCC 3.4
 libstdc++.a archive:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % ar -q libstdc++.a libstdc++.so.4 libstdc++.so.5
 
@@ -861,7 +861,7 @@ The Solaris 2 :command:`/bin/sh` will often fail to configure
 :samp:`libstdc++-v3`.  We therefore recommend using the
 following initial sequence of commands
 
-.. code-block:: c++
+.. code-block:: bash
 
   % CONFIG_SHELL=/bin/ksh
   % export CONFIG_SHELL
@@ -950,7 +950,7 @@ target triplet must be specified as the :command:`build` parameter on the
 configure line.  This target triplet can be obtained by invoking :command:`./config.guess` in the toplevel source directory of GCC (and
 not that of GMP or MPFR or MPC).  For example on a Solaris 11 system:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % ./configure --build=sparc-sun-solaris2.11 --prefix=xxx
 
@@ -968,7 +968,7 @@ library or the MPC library, the canonical target triplet must be specified
 as the :command:`build` parameter on the configure line.  For example
 on a Solaris 11 system:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % ./configure --build=sparc64-sun-solaris2.11 --prefix=xxx
 

@@ -6,7 +6,7 @@ You can pass multiple options to the testsuite using the
 :samp:`RUNTESTFLAGS`, or directly to :command:`runtest` if you prefer to
 work outside the makefiles.  For example,
 
-.. code-block:: c++
+.. code-block:: bash
 
   make check-g++ RUNTESTFLAGS="--target_board=unix/-O3/-fmerge-constants"
 
@@ -18,7 +18,7 @@ slashes separate options.
 You can run the testsuites multiple times using combinations of options
 with a syntax similar to the brace expansion of popular shells:
 
-.. code-block:: c++
+.. code-block:: bash
 
   ..."--target_board=arm-sim\{-mhard-float,-msoft-float\}\{-O1,-O2,-O3,\}"
 
@@ -37,7 +37,7 @@ target, as if you had specified all possible combinations yourself:
 They can be combined as many times as you wish, in arbitrary ways.  This
 list:
 
-.. code-block:: c++
+.. code-block:: bash
 
   ..."--target_board=unix/-Wextra\{-O3,-fno-strength\}\{-fomit-frame,\}"
 
@@ -50,13 +50,13 @@ parallel by having the shell perform the combinations and :command:`make`
 do the parallel runs.  Instead of using :samp:`--target_board`, use a
 special makefile target:
 
-.. code-block:: c++
+.. code-block:: bash
 
   make -jN check-testsuite//test-target/option1/option2/...
 
 For example,
 
-.. code-block:: c++
+.. code-block:: bash
 
   make -j3 check-gcc//sh-hms-sim/{-m1,-m2,-m3,-m3e,-m4}/{,-nofpu}
 

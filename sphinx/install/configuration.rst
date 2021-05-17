@@ -60,7 +60,7 @@ affected by this requirement, see
 @end ifhtml
 To configure GCC:
 
-.. code-block:: c++
+.. code-block:: bash
 
   % mkdir objdir
   % cd objdir
@@ -663,27 +663,27 @@ corresponding :option:`--without` option.
 
   Example 1: Add multi-lib suppport for rv32i with ilp32.
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     rv32i-ilp32--
 
   Example 2: Add multi-lib suppport for rv32i with ilp32 and rv32imafd with ilp32.
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     rv32i-ilp32--;rv32imafd-ilp32--
 
   Example 3: Add multi-lib suppport for rv32i with ilp32; rv32im with ilp32 and
   rv32ic with ilp32 will reuse this multi-lib set.
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     rv32i-ilp32-rv32im-c
 
   Example 4: Add multi-lib suppport for rv64ima with lp64; rv64imaf with lp64,
   rv64imac with lp64 and rv64imafc with lp64 will reuse this multi-lib set.
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     rv64ima-lp64--f,c,fc
 
@@ -1187,7 +1187,7 @@ corresponding :option:`--without` option.
   :samp:`{langN}` you can issue the following command in the
   gcc directory of your GCC source tree:
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     grep ^language= */config-lang.in
 
@@ -1320,7 +1320,7 @@ corresponding :option:`--without` option.
   The :option:`--enable-win32-registry` option enables Microsoft Windows-hosted GCC
   to look up installations paths in the registry using the following key:
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     HKEY_LOCAL_MACHINE\SOFTWARE\Free Software Foundation\key
 
@@ -1647,7 +1647,7 @@ corresponding :option:`--without` option.
   executable on the former system), you can configure GCC as follows for
   getting compatible linker plugins:
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     % srcdir/configure \
         --host=x86_64-pc-linux-gnu \
@@ -1694,7 +1694,7 @@ corresponding :option:`--without` option.
   path for them is :samp:`{exec-prefix}`, but it can be changed by
   specifying paths :samp:`{path1}`, ..., :samp:`{pathN}`.
 
-  .. code-block:: c++
+  .. code-block:: bash
 
     % srcdir/configure \
         --enable-offload-targets=x86_64-intelmicemul-linux-gnu=/path/to/x86_64/compiler,nvptx-none

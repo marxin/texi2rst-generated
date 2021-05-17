@@ -516,7 +516,7 @@ To use this License in a document you have written, include a copy of
 the License in the document and put the following copyright and
 license notices just after the title page:
 
-.. code-block:: c++
+.. code-block:: bash
 
     Copyright (C)  year  your name.
     Permission is granted to copy, distribute and/or modify this document
@@ -529,7 +529,7 @@ license notices just after the title page:
 If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
 replace the 'with...Texts.' line with this:
 
-.. code-block:: c++
+.. code-block:: bash
 
       with the Invariant Sections being list their titles, with
       the Front-Cover Texts being list, and with the Back-Cover Texts

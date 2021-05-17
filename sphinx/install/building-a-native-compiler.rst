@@ -38,7 +38,7 @@ following example.  This will save roughly 40% of disk space both for
 the bootstrap and the final installation.  (Libraries will still contain
 debugging information.)
 
-.. code-block:: c++
+.. code-block:: bash
 
   make BOOT_CFLAGS='-O' bootstrap
 

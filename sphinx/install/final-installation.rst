@@ -5,7 +5,7 @@ Final installation
 
 Now that GCC has been built (and optionally tested), you can install it with
 
-.. code-block:: c++
+.. code-block:: bash
 
   cd objdir && make install
 
@@ -38,7 +38,7 @@ binutils, including assembler and linker.
 Installation into a temporary staging area or into a :command:`chroot`
 jail can be achieved with the command
 
-.. code-block:: c++
+.. code-block:: bash
 
   make DESTDIR=path-to-rootdir install
 
@@ -58,7 +58,7 @@ using the ``DESTDIR`` feature.
 
 You can install stripped programs and libraries with
 
-.. code-block:: c++
+.. code-block:: bash
 
   make install-strip
 
