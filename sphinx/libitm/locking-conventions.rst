@@ -258,22 +258,6 @@ priority inheritance until the TM has priority-aware contention management.
    GNU Free Documentation License
    -
 
-@c Set file name and title for man page.
-@setfilename gfdl
-@settitle GNU Free Documentation License
-@c man begin SEEALSO
-gpl(7), fsf-funding(7).
-@c man end
-@c man begin COPYRIGHT
-Copyright @copyright{} 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
-@uref{http://fsf.org/}
-
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-@c This file is intended to be included within another document,
-@c hence no sectioning command or @node.
-@c man end
-
 .. Special handling for inclusion in the install manual.
    man begin DESCRIPTION
     comment For some cases, this default @node/@unnumbered is not applicable and
