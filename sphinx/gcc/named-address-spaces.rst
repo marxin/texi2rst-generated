@@ -144,7 +144,7 @@ together with attribute ``progmem``.
 
 Limitations and caveats
 
-** Reading across the 64 KiB section boundary of
+* Reading across the 64 KiB section boundary of
   the ``__flash`` or ``__flashN`` address spaces
   shows undefined behavior. The only address space that
   supports reading across the 64 KiB flash segment boundaries is

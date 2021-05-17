@@ -180,7 +180,7 @@ and / or generate new events dynamically, by calling the function
 To register a callback, the plugin calls ``register_callback`` with
 the arguments:
 
-** ``char *name`` : Plugin name.
+* ``char *name`` : Plugin name.
 
 * ``int event`` : The event code.
 

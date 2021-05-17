@@ -937,7 +937,7 @@ MIPS Options
   ``$12``.  ``_mcount`` can then modify the return address by
   doing both of the following:
 
-  ** Returning the new address in register ``$31``.
+  * Returning the new address in register ``$31``.
 
   * Storing the new address in ``*ra-address``,
     if :samp:`{ra-address}` is nonnull.

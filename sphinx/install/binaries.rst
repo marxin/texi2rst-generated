@@ -16,9 +16,9 @@ Please note that we did not create these binaries, nor do we
 support them.  If you have any problems installing them, please
 contact their makers.
 
-** AIX:
+* AIX:
 
-  ** `Bull's Open Source Software Archive for
+  * `Bull's Open Source Software Archive for
     for AIX 6 and AIX 7 <http://www.bullfreeware.com>`_;
 
   * `AIX Open Source Packages (AIX5L AIX 6.1
@@ -28,21 +28,21 @@ contact their makers.
 
 * HP-UX:
 
-  ** `HP-UX Porting Center <http://hpux.connect.org.uk/>`_;
+  * `HP-UX Porting Center <http://hpux.connect.org.uk/>`_;
 
 * Solaris 2 (SPARC, Intel):
 
-  ** `OpenCSW <https://www.opencsw.org/>`_
+  * `OpenCSW <https://www.opencsw.org/>`_
 
 * macOS:
 
-  ** The `Homebrew <https://brew.sh>`_ package manager;
+  * The `Homebrew <https://brew.sh>`_ package manager;
 
   * `MacPorts <https://www.macports.org>`_.
 
 * Microsoft Windows:
 
-  ** The `Cygwin <https://sourceware.org/cygwin/>`_ project;
+  * The `Cygwin <https://sourceware.org/cygwin/>`_ project;
 
   * The `MinGW <http://www.mingw.org/>`_ and
     `mingw-w64 <http://mingw-w64.org/doku.php>`_ projects.

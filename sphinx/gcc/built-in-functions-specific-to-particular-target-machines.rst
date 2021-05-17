@@ -1659,7 +1659,7 @@ ST Microelectronics Loongson-2E and -2F processors.  These intrinsics,
 available after inclusion of the ``loongson.h`` header file,
 operate on the following 64-bit vector types:
 
-** ``uint8x8_t``, a vector of eight unsigned 8-bit integers;
+* ``uint8x8_t``, a vector of eight unsigned 8-bit integers;
 
 * ``uint16x4_t``, a vector of four unsigned 16-bit integers;
 
@@ -2055,7 +2055,7 @@ MSA implements 128-bit wide vector registers, operating on 8-, 16-, 32- and
 64-bit integer, 16- and 32-bit fixed-point, or 32- and 64-bit floating point
 data elements.  The following vectors typedefs are included in ``msa.h`` :
 
-** ``v16i8``, a vector of sixteen signed 8-bit integers;
+* ``v16i8``, a vector of sixteen signed 8-bit integers;
 
 * ``v16u8``, a vector of sixteen unsigned 8-bit integers;
 
@@ -2078,7 +2078,7 @@ data elements.  The following vectors typedefs are included in ``msa.h`` :
 Instructions and corresponding built-ins may have additional restrictions and/or
 input/output values manipulated:
 
-** ``imm0_1``, an integer literal in range 0 to 1;
+* ``imm0_1``, an integer literal in range 0 to 1;
 
 * ``imm0_3``, an integer literal in range 0 to 3;
 

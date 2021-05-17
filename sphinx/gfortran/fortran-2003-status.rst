@@ -7,7 +7,7 @@ GNU Fortran supports several Fortran 2003 features; an incomplete
 list can be found below.  See also the
 `wiki page <https://gcc.gnu.org/wiki/Fortran2003>`_ about Fortran 2003.
 
-** Procedure pointers including procedure-pointer components with
+* Procedure pointers including procedure-pointer components with
   ``PASS`` attribute.
 
 * Procedures which are bound to a derived type (type-bound procedures)
@@ -120,7 +120,7 @@ list can be found below.  See also the
 
   TR 15581:
 
-  ** 
+  * 
     .. index:: ALLOCATABLE dummy arguments
 
     ``ALLOCATABLE`` dummy arguments.

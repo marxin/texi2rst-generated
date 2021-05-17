@@ -435,7 +435,7 @@ with the ``RAMPX``, ``RAMPY``, ``RAMPZ`` special function
 register, respectively, to get a wide address. Similarly,
 ``RAMPD`` is used together with direct addressing.
 
-** The startup code initializes the ``RAMP`` special function
+* The startup code initializes the ``RAMP`` special function
   registers with zero.
 
 * If a AVR Named Address Spacesnamed address space other than

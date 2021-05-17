@@ -18,7 +18,7 @@ the `wiki <https://gcc.gnu.org/wiki/Fortran2008Status>`_ has some information
 about the current Fortran 2008 implementation status.  In particular, the
 following is implemented.
 
-** The :option:`-std=f2008` option and support for the file extensions
+* The :option:`-std=f2008` option and support for the file extensions
   .f08 and .F08.
 
 * The ``OPEN`` statement now supports the ``NEWUNIT=`` option,

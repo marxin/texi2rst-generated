@@ -727,7 +727,7 @@ in a minimal run-time environment by default.
 
 Features disabled by default include:
 
-** transactional memory
+* transactional memory
 
 * __cxa_atexit
 
@@ -1078,7 +1078,7 @@ XP, and Windows Vista, are supported by several different target
 platforms.  These targets differ in which Windows subsystem they target
 and which C libraries are used.
 
-** Cygwin #x-x-cygwin*-*-cygwin: Cygwin provides a user-space
+* Cygwin #x-x-cygwin*-*-cygwin: Cygwin provides a user-space
   Linux API emulation layer in the Win32 subsystem.
 
 * MinGW #x-x-mingw32*-*-mingw32: MinGW is a native GCC port for

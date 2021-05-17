@@ -6,7 +6,7 @@ to write target-independent code that handles variable-sized registers
 even when the current target has fixed-sized registers.  There are two
 aspects to this:
 
-** The set of ``poly_int`` operations should be complete enough that
+* The set of ``poly_int`` operations should be complete enough that
   the question in most cases becomes 'Can we do this operation on these
   particular ``poly_int`` values?  If not, bail out' rather than
   'Are these ``poly_int`` values constant?  If so, do the operation,
@@ -94,7 +94,7 @@ than one.  For other targets, ``poly_int`` degenerates to a compile-time
 constant and is often interchangable with a normal scalar integer.
 There are two main exceptions:
 
-** Sometimes an explicit cast to an integer type might be needed, such as to
+* Sometimes an explicit cast to an integer type might be needed, such as to
   resolve ambiguities in a ``?:`` expression, or when passing values
   through ``...`` to things like print functions.
 
@@ -103,7 +103,7 @@ There are two main exceptions:
   If this becomes a problem for a particular target macro, the
   possible solutions, in order of preference, are:
 
-  ** Convert the target macro to a target hook (for all targets).
+  * Convert the target macro to a target hook (for all targets).
 
   * Put the target's implementation of the target macro in its
     :samp:`{cpu}`.c file and call it from the target macro in the

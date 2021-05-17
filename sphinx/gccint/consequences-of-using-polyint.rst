@@ -3,7 +3,7 @@ Consequences of using poly_int
 
 The two main consequences of using polynomial sizes and offsets are that:
 
-** there is no total ordering between the values at compile time, and
+* there is no total ordering between the values at compile time, and
 
 * some operations might yield results that cannot be expressed as a
   ``poly_int``.

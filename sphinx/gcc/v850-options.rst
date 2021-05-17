@@ -138,7 +138,7 @@ These :samp:`-m` options are defined for V850 implementations:
   Enables support for the RH850 version of the V850 ABI.  This is the
   default.  With this version of the ABI the following rules apply:
 
-  ** Integer sized structures and unions are returned via a memory pointer
+  * Integer sized structures and unions are returned via a memory pointer
     rather than a register.
 
   * Large structures and unions (more than 8 bytes in size) are passed by
@@ -160,7 +160,7 @@ These :samp:`-m` options are defined for V850 implementations:
   Enables support for the old GCC version of the V850 ABI.  With this
   version of the ABI the following rules apply:
 
-  ** Integer sized structures and unions are returned in register ``r10``.
+  * Integer sized structures and unions are returned in register ``r10``.
 
   * Large structures and unions (more than 8 bytes in size) are passed by
     reference.

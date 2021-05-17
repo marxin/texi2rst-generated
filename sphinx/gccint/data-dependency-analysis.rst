@@ -38,7 +38,7 @@ is ``data_reference``, where ``data_reference_p`` is a name of a
 pointer to the data reference structure. The structure contains the
 following elements:
 
-** ``base_object_info`` : Provides information about the base object
+* ``base_object_info`` : Provides information about the base object
   of the data reference and its access functions. These access functions
   represent the evolution of the data reference in the loop relative to
   its base, in keeping with the classical meaning of the data reference
@@ -92,7 +92,7 @@ The structure describing the relation between two data references is
 ``data_dependence_relation`` and the shorter name for a pointer to
 such a structure is ``ddr_p``.  This structure contains:
 
-** a pointer to each data reference,
+* a pointer to each data reference,
 
 * a tree node ``are_dependent`` that is set to ``chrec_known``
   if the analysis has proved that there is no dependence between these two

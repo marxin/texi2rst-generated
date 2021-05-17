@@ -7,7 +7,7 @@ Loop manipulation
 
 The loops tree can be manipulated using the following functions:
 
-** ``flow_loop_tree_node_add`` : Adds a node to the tree.
+* ``flow_loop_tree_node_add`` : Adds a node to the tree.
 
 * ``flow_loop_tree_node_remove`` : Removes a node from the tree.
 
@@ -18,7 +18,7 @@ The loops tree can be manipulated using the following functions:
 Most low-level CFG functions update loops automatically.  The following
 functions handle some more complicated cases of CFG manipulations:
 
-** ``remove_path`` : Removes an edge and all blocks it dominates.
+* ``remove_path`` : Removes an edge and all blocks it dominates.
 
 * ``split_loop_exit_edge`` : Splits exit edge of the loop,
   ensuring that PHI node arguments remain in the loop (this ensures that
@@ -29,7 +29,7 @@ While some of them are written so that they should work on non-innermost
 loops, they are mostly untested in that case, and at the moment, they
 are only reliable for the innermost loops:
 
-** ``create_iv`` : Creates a new induction variable.  Only works on
+* ``create_iv`` : Creates a new induction variable.  Only works on
   GIMPLE.  ``standard_iv_increment_position`` can be used to find a
   suitable place for the iv increment.
 

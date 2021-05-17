@@ -1131,7 +1131,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   * If the CPU is executing speculatively then either:
 
-    ** The function may cause execution to pause until it is known that the
+    * The function may cause execution to pause until it is known that the
       code is no-longer being executed speculatively (in which case
       :samp:`{val}` can be returned, as above); or
 

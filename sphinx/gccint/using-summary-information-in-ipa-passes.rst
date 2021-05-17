@@ -67,7 +67,7 @@ that are executed at different times during WHOPR compilation:
 The implementation of the inter-procedural passes are shared
 between LTO, WHOPR and classic non-LTO compilation.
 
-** During the traditional file-by-file mode every pass executes its
+* During the traditional file-by-file mode every pass executes its
   own *Generate summary*, *Execute*, and *Transform*
   stages within the single execution context of the compiler.
 

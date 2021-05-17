@@ -76,7 +76,7 @@ program analysis purposes.
   :option:`-ftest-coverage` (when compiling) and :option:`-lgcov` (when
   linking).  See the documentation for those options for more details.
 
-  ** Compile the source files with :option:`-fprofile-arcs` plus optimization
+  * Compile the source files with :option:`-fprofile-arcs` plus optimization
     and code generation options.  For test coverage analysis, use the
     additional :option:`-ftest-coverage` option.  You do not need to profile
     every source file in a program.

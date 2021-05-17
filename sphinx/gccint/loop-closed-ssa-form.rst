@@ -17,7 +17,7 @@ held in LCSSA, in order to save memory.
 
 There are various benefits of LCSSA:
 
-** Many optimizations (value range analysis, final value
+* Many optimizations (value range analysis, final value
   replacement) are interested in the values that are defined in the loop
   and used outside of it, i.e., exactly those for that we create new PHI
   nodes.

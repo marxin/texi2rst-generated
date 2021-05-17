@@ -53,7 +53,7 @@ acc_prof_info.event_type
   innermost nested event type.
 
 acc_prof_info.device_type
-  ** For ``acc_ev_compute_construct_start``, and in presence of an
+  * For ``acc_ev_compute_construct_start``, and in presence of an
     ``if`` clause with *false* argument, this will still refer to
     the offloading device type.
     It's not clear if that's the expected behavior.
@@ -68,7 +68,7 @@ acc_prof_info.thread_id
   Always ``-1`` ; not yet implemented.
 
 acc_prof_info.async
-  ** Not yet implemented correctly for
+  * Not yet implemented correctly for
     ``acc_ev_compute_construct_start``.
 
   * In a compute construct, for host-fallback
@@ -108,7 +108,7 @@ acc_prof_info.func_end_line_no
   ``acc_prof_info.event_type``.
 
 acc_event_info.*.parent_construct
-  ** Will be ``acc_construct_parallel`` for all OpenACC compute
+  * Will be ``acc_construct_parallel`` for all OpenACC compute
     constructs as well as many OpenACC Runtime API calls; should be the
     one matching the actual construct, or
     ``acc_construct_runtime_api``, respectively.
@@ -172,7 +172,7 @@ acc_api_info.async_handle
   Remarks about certain event types:
 
 :samp:`{acc_ev_device_init_start}, {acc_ev_device_init_end}`
-  ** 
+  * 
     .. See 'DEVICE_INIT_INSIDE_COMPUTE_CONSTRUCT' in
        'libgomp.oacc-c-c++-common/acc_prof-kernels-1.c',
        'libgomp.oacc-c-c++-common/acc_prof-parallel-1.c'.
@@ -192,7 +192,7 @@ acc_api_info.async_handle
     It's not clear if they should be.
 
 :samp:`{acc_ev_enter_data_start}, {acc_ev_enter_data_end}, {acc_ev_exit_data_start}, {acc_ev_exit_data_end}`
-  ** Callbacks for these event types will also be invoked for OpenACC
+  * Callbacks for these event types will also be invoked for OpenACC
     *host_data* constructs.
     It's not clear if they should be.
 
@@ -203,7 +203,7 @@ acc_api_info.async_handle
   Callbacks for the following event types will be invoked, but dispatch
 and information provided therein has not yet been thoroughly reviewed:
 
-** ``acc_ev_alloc``
+* ``acc_ev_alloc``
 
 * ``acc_ev_free``
 
@@ -216,14 +216,14 @@ and information provided therein has not yet been thoroughly reviewed:
 During device initialization, and finalization, respectively,
 callbacks for the following event types will not yet be invoked:
 
-** ``acc_ev_alloc``
+* ``acc_ev_alloc``
 
 * ``acc_ev_free``
 
 Callbacks for the following event types have not yet been implemented,
 so currently won't be invoked:
 
-** ``acc_ev_device_shutdown_start``, ``acc_ev_device_shutdown_end``
+* ``acc_ev_device_shutdown_start``, ``acc_ev_device_shutdown_end``
 
 * ``acc_ev_runtime_shutdown``
 
@@ -235,7 +235,7 @@ For the following runtime library functions, not all expected
 callbacks will be invoked (mostly concerning implicit device
 initialization):
 
-** ``acc_get_num_devices``
+* ``acc_get_num_devices``
 
 * ``acc_set_device_type``
 
@@ -253,7 +253,7 @@ Aside from implicit device initialization, for the following runtime
 library functions, no callbacks will be invoked for shared-memory
 offloading devices (it's not clear if they should be):
 
-** ``acc_malloc``
+* ``acc_malloc``
 
 * ``acc_free``
 

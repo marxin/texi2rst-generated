@@ -11,7 +11,7 @@ the structures.  ``loop_father`` field of each basic block contains
 the innermost loop to that the block belongs.  The most useful fields of
 loop structure (that are kept up-to-date at all times) are:
 
-** ``header``, ``latch`` : Header and latch basic blocks of the
+* ``header``, ``latch`` : Header and latch basic blocks of the
   loop.
 
 * ``num_nodes`` : Number of basic blocks in the loop (including
@@ -26,7 +26,7 @@ should not be accessed directly.
 
 The most important functions to query loop structures are:
 
-** ``loop_depth`` : The depth of the loop in the loops tree, i.e., the
+* ``loop_depth`` : The depth of the loop in the loops tree, i.e., the
   number of super-loops of the loop.
 
 * ``flow_loops_dump`` : Dumps the information about loops to a

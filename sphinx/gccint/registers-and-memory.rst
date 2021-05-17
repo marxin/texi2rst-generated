@@ -140,7 +140,7 @@ registers and to main memory.
   There are currently three supported types for the first operand of a
   ``subreg`` :
 
-  ** pseudo registers
+  * pseudo registers
     This is the most common case.  Most ``subreg`` s have pseudo
     ``reg`` s as their first operand.
 
@@ -193,7 +193,7 @@ registers and to main memory.
 
     The high-order bits of rvalues are defined in the following circumstances:
 
-    ** ``subreg`` s of ``mem``
+    * ``subreg`` s of ``mem``
       When :samp:`{m2}` is smaller than a word, the macro ``LOAD_EXTEND_OP``,
       can control how the high-order bits are defined.
 
@@ -264,7 +264,7 @@ registers and to main memory.
     laid out in memory order.  The memory order of bytes is defined by
     two target macros, ``WORDS_BIG_ENDIAN`` and ``BYTES_BIG_ENDIAN`` :
 
-    ** 
+    * 
       .. index:: WORDS_BIG_ENDIAN, effect on subreg
 
       ``WORDS_BIG_ENDIAN``, if set to 1, says that byte number zero is

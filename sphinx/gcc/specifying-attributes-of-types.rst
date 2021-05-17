@@ -420,7 +420,7 @@ The following type attributes are supported on most targets.
   Additional restrictions are enforced for types with the reverse scalar
   storage order with regard to the scalar storage order of the target:
 
-  ** Taking the address of a scalar field of a ``union`` or a
+  * Taking the address of a scalar field of a ``union`` or a
     ``struct`` with reverse scalar storage order is not permitted and yields
     an error.
 

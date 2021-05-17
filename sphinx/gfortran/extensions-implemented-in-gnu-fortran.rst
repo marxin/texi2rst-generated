@@ -731,7 +731,7 @@ the OpenMP Application Program Interface v2.5:
 
 Please note:
 
-** :option:`-fopenmp` implies :option:`-frecursive`, i.e., all local arrays
+* :option:`-fopenmp` implies :option:`-frecursive`, i.e., all local arrays
   will be allocated on the stack.  When porting existing code to OpenMP,
   this may lead to surprising results, especially to segmentation faults
   if the stacksize is limited.

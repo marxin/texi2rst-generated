@@ -1848,7 +1848,7 @@ Cross-Compiler-Specific OptionsThe following options only apply to building cros
   Specify the default layout available for the C/C++ :samp:`double`
   and :samp:`long double` type, respectively. The following rules apply:
 
-  ** The first value after the :samp:`=` specifies the default layout (in bits)
+  * The first value after the :samp:`=` specifies the default layout (in bits)
     of the type and also the default for the :option:`-mdouble` = resp.
     :option:`-mlong-double` = compiler option.
 

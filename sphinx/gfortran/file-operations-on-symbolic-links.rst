@@ -8,7 +8,7 @@ File operations on symbolic links
 This section documents the behavior of GNU Fortran for file operations on
 symbolic links, on systems that support them.
 
-** Results of INQUIRE statements of the 'inquire by file' form will
+* Results of INQUIRE statements of the 'inquire by file' form will
   relate to the target of the symbolic link. For example,
   ``INQUIRE(FILE="foo",EXIST=ex)`` will set :samp:`{ex}` to :samp:`{.true.}` if
   :samp:`{foo}` is a symbolic link pointing to an existing file, and :samp:`{.false.}`

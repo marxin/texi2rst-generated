@@ -61,7 +61,7 @@ good sense, and the constraints of your build system.
 
 A precompiled header file can be used only when these conditions apply:
 
-** Only one precompiled header can be used in a particular compilation.
+* Only one precompiled header can be used in a particular compilation.
 
 * A precompiled header cannot be used once the first C token is seen.  You
   can have preprocessor directives before a precompiled header; you cannot

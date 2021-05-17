@@ -3,7 +3,7 @@
 Status of Fortran 2018 support
 ******************************
 
-** ERROR STOP in a PURE procedure
+* ERROR STOP in a PURE procedure
   An ``ERROR STOP`` statement is permitted in a ``PURE``
   procedure.
 
@@ -27,7 +27,7 @@ following is implemented.
 
 See also Further Interoperability of Fortran with C.
 
-** The ``OPTIONAL`` attribute is allowed for dummy arguments
+* The ``OPTIONAL`` attribute is allowed for dummy arguments
   of ``BIND(C) procedures.``
 
 * The ``RANK`` intrinsic is supported.
@@ -50,7 +50,7 @@ TS 18508 Status (Additional Parallel Features)
 GNU Fortran supports the following new features of the Technical
 Specification 18508 on Additional Parallel Features in Fortran:
 
-** The new atomic ADD, CAS, FETCH and ADD/OR/XOR, OR and XOR intrinsics.
+* The new atomic ADD, CAS, FETCH and ADD/OR/XOR, OR and XOR intrinsics.
 
 * The ``CO_MIN`` and ``CO_MAX`` and ``SUM`` reduction intrinsics.
   And the ``CO_BROADCAST`` and ``CO_REDUCE`` intrinsic, except that those

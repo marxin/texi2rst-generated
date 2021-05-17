@@ -16,7 +16,7 @@ program; if it fails, the conditions are returned together with the
 result.  The following information and conditions are provided by the
 analysis:
 
-** ``assumptions`` : If this condition is false, the rest of
+* ``assumptions`` : If this condition is false, the rest of
   the information is invalid.
 
 * ``noloop_assumptions`` on RTL, ``may_be_zero`` on GIMPLE: If
@@ -57,7 +57,7 @@ loop (i.e., the ``number_of_latch_executions`` increased by one).
 On GIMPLE, below constraint flags affect semantics of some APIs of number
 of iterations analyzer:
 
-** ``LOOP_C_INFINITE`` : If this constraint flag is set, the loop
+* ``LOOP_C_INFINITE`` : If this constraint flag is set, the loop
   is known to be infinite.  APIs like ``number_of_iterations_exit`` can
   return false directly without doing any analysis.
 

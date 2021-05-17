@@ -473,7 +473,7 @@ At present, the SSA form takes this principle one step further
 and guarantees that, for any given resource :samp:`{res}`, one of the
 following is true:
 
-** The resource has a single definition :samp:`{def}`, which is not a phi node.
+* The resource has a single definition :samp:`{def}`, which is not a phi node.
   Excluding uses of undefined registers, all uses of :samp:`{res}` by real
   nondebug instructions use the value provided by :samp:`{def}`.
 

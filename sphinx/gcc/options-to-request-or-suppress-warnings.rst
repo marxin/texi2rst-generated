@@ -2501,7 +2501,7 @@ warn at all unless optimization is enabled.
 
   The message is in keeping with the output of :option:`-fstack-usage`.
 
-  ** If the stack usage is fully static but exceeds the specified amount, it's:
+  * If the stack usage is fully static but exceeds the specified amount, it's:
 
     .. code-block:: c++
 

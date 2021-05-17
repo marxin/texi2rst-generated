@@ -75,7 +75,7 @@ argument of this function is a set of flags represented in an integer
 bitmask.  These flags specify what other properties of the loop
 structures should be calculated/enforced and preserved later:
 
-** ``LOOPS_MAY_HAVE_MULTIPLE_LATCHES`` : If this flag is set, no
+* ``LOOPS_MAY_HAVE_MULTIPLE_LATCHES`` : If this flag is set, no
   changes to CFG will be performed in the loop analysis, in particular,
   loops with multiple latch edges will not be disambiguated.  If a loop
   has multiple latches, its latch block is set to NULL.  Most of

@@ -139,7 +139,7 @@ Support for fixed-point types includes:
 
 Use a suffix in a fixed-point literal constant:
 
-** :samp:`hr` or :samp:`HR` for ``short _Fract`` and
+* :samp:`hr` or :samp:`HR` for ``short _Fract`` and
   ``_Sat short _Fract``
 
 * :samp:`r` or :samp:`R` for ``_Fract`` and ``_Sat _Fract``

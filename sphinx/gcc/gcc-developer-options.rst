@@ -998,7 +998,7 @@ The files are created in the directory of the output file.
   otherwise it is the basename of the source file.  An entry is made up
   of three fields:
 
-  ** The name of the function.
+  * The name of the function.
 
   * A number of bytes.
 
