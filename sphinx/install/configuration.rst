@@ -138,65 +138,79 @@ corresponding :option:`--without` option.
   The following standard :command:`autoconf` options are supported.  Normally you
   should not need to use these options.
 
-  :samp:`--exec-prefix={dirname}`
+  .. option:: --exec-prefix=dirname
+
     Specify the toplevel installation directory for architecture-dependent
     files.  The default is :samp:`{prefix}`.
 
-  :samp:`--bindir={dirname}`
+  .. option:: --bindir=dirname
+
     Specify the installation directory for the executables called by users
     (such as :command:`gcc` and :command:`g++`).  The default is
     :samp:`{exec-prefix}` /bin.
 
-  :samp:`--libdir={dirname}`
+  .. option:: --libdir=dirname
+
     Specify the installation directory for object code libraries and
     internal data files of GCC.  The default is :samp:`{exec-prefix}` /lib.
 
-  :samp:`--libexecdir={dirname}`
+  .. option:: --libexecdir=dirname
+
     Specify the installation directory for internal executables of GCC.
     The default is :samp:`{exec-prefix}` /libexec.
 
-  :samp:`--with-slibdir={dirname}`
+  .. option:: --with-slibdir=dirname
+
     Specify the installation directory for the shared libgcc library.  The
     default is :samp:`{libdir}`.
 
-  :samp:`--datarootdir={dirname}`
+  .. option:: --datarootdir=dirname
+
     Specify the root of the directory tree for read-only architecture-independent
     data files referenced by GCC.  The default is :samp:`{prefix}` /share.
 
-  :samp:`--infodir={dirname}`
+  .. option:: --infodir=dirname
+
     Specify the installation directory for documentation in info format.
     The default is :samp:`{datarootdir}` /info.
 
-  :samp:`--datadir={dirname}`
+  .. option:: --datadir=dirname
+
     Specify the installation directory for some architecture-independent
     data files referenced by GCC.  The default is :samp:`{datarootdir}`.
 
-  :samp:`--docdir={dirname}`
+  .. option:: --docdir=dirname
+
     Specify the installation directory for documentation files (other
     than Info) for GCC.  The default is :samp:`{datarootdir}` /doc.
 
-  :samp:`--htmldir={dirname}`
+  .. option:: --htmldir=dirname
+
     Specify the installation directory for HTML documentation files.
     The default is :samp:`{docdir}`.
 
-  :samp:`--pdfdir={dirname}`
+  .. option:: --pdfdir=dirname
+
     Specify the installation directory for PDF documentation files.
     The default is :samp:`{docdir}`.
 
-  :samp:`--mandir={dirname}`
+  .. option:: --mandir=dirname
+
     Specify the installation directory for manual pages.  The default is
     :samp:`{datarootdir}` /man.  (Note that the manual pages are only extracts
     from the full GCC manuals, which are provided in Texinfo format.  The manpages
     are derived by an automatic conversion process from parts of the full
     manual.)
 
-  :samp:`--with-gxx-include-dir={dirname}`
+  .. option:: --with-gxx-include-dir=dirname
+
     Specify
     the installation directory for G++ header files.  The default depends
     on other configuration options, and differs between cross and native
     configurations.
 
-  :samp:`--with-specs={specs}`
+  .. option:: --with-specs=specs
+
     Specify additional command line driver SPECS.
     This can be useful if you need to turn on a non-standard feature by
     default without modifying the compiler's source code, for instance
@@ -1072,7 +1086,8 @@ corresponding :option:`--without` option.
   As long as shared library creation is enabled, upon:
 
   ``--with-aix-soname=aix``
-  ``--with-aix-soname=both``
+  .. option:: --with-aix-soname=both
+
     A (traditional AIX) ``Shared Archive Library`` file is created:
 
     * using the :samp:`libNAME.a` filename scheme
@@ -1091,8 +1106,9 @@ corresponding :option:`--without` option.
       * is used for static linking, so no separate ``Static Archive
            Library`` file is needed
 
-    ``--with-aix-soname=both``
-  ``--with-aix-soname=svr4``
+  ``--with-aix-soname=both``
+  .. option:: --with-aix-soname=svr4
+
     A (second) ``Shared Archive Library`` file is created:
 
     * using the :samp:`libNAME.so.V` filename scheme
@@ -1133,9 +1149,10 @@ corresponding :option:`--without` option.
         to specify the version number via ``dlopen("libNAME.so(shr.o)",
         RTLD_MEMBER)``
 
-    As long as static library creation is enabled, upon:
+  As long as static library creation is enabled, upon:
 
-  ``--with-aix-soname=svr4``
+  .. option:: --with-aix-soname=svr4
+
     A ``Static Archive Library`` is created:
 
     * using the :samp:`libNAME.a` filename scheme
@@ -1144,7 +1161,7 @@ corresponding :option:`--without` option.
 
       * are used for static linking
 
-    While the aix-soname=:samp:`svr4` option does not create ``Shared Object``
+  While the aix-soname=:samp:`svr4` option does not create ``Shared Object``
   files as members of unversioned ``Archive Library`` files any more, package
   managers still are responsible to
   ./specific.html#TransferAixShobjtransfer ``Shared Object`` files
