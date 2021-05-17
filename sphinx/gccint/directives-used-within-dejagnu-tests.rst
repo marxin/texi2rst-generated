@@ -1122,9 +1122,9 @@ ARM-specific attributes
   ``arm_acle.h``.
   Some multilibs may be incompatible with these options.
 
-``arm_qbit_ok``
-  .. _arm_qbit_ok:
-  ARM Target supports options suitable for accessing the Q-bit manipulation
+``arm_sat_ok``
+  .. _arm_sat_ok:
+  ARM Target supports options suitable for accessing the saturation
   intrinsics from ``arm_acle.h``.
   Some multilibs may be incompatible with these options.
 

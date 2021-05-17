@@ -95,7 +95,8 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   :option:`-mmulhw`  :option:`-mdlmzb`  :option:`-mmfpgpr`  :option:`-mvsx` 
   :option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` 
   :option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` 
-  :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma`
+  :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma` 
+  :option:`-mrop-protect`
   The particular options set for any particular CPU varies between
   compiler versions, depending on what setting seems to produce optimal
   code for that CPU; it doesn't necessarily reflect the actual hardware's
@@ -987,6 +988,16 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) the MMA instructions when the option
   :option:`-mcpu=future` is used.
+
+.. option:: -mrop-protect, -mno-rop-protect
+
+  Generate (do not generate) ROP protection instructions when the target
+  processor supports them.  Currently this option disables the shrink-wrap
+  optimization ( :option:`-fshrink-wrap` ).
+
+.. option:: -mprivileged, -mno-privileged
+
+  Generate (do not generate) code that will run in privileged state.
 
 .. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx
 .. option:: -no-block-ops-unaligned-vsx

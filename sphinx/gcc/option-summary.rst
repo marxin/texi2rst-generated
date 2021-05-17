@@ -1123,7 +1123,8 @@ in the following sections.
   :option:`-mgnu-attribute`  :option:`-mno-gnu-attribute` 
   :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mprefixed` :option:`-mno-prefixed` 
-  :option:`-mpcrel` :option:`-mno-pcrel` :option:`-mmma` :option:`-mno-mmma`
+  :option:`-mpcrel` :option:`-mno-pcrel` :option:`-mmma` :option:`-mno-mmma` :option:`-mrop-protect` :option:`-mno-rop-protect` 
+  :option:`-mprivileged` :option:`-mno-privileged`
 
   *RX Options*
 

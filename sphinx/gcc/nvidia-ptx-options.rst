@@ -20,6 +20,12 @@ These options are defined for Nvidia PTX:
   strings must be lower-case.  Valid ISA strings include :samp:`sm_30` and
   :samp:`sm_35`.  The default ISA is sm_35.
 
+.. option:: -mptx=version-string
+
+  Generate code for given the specified PTX version (e.g. :samp:`6.3`).
+  Valid version strings include :samp:`3.1` and :samp:`6.3`.  The default PTX
+  version is 3.1.
+
 .. option:: -mmainkernel
 
   Link in code for a __main kernel.  This is for stand-alone instead of
