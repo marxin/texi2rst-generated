@@ -80,10 +80,3 @@ package documentation, see http://golang.org/.
 
 .. man begin DESCRIPTION
 
-.. toctree::
-
-  invoking-gccgo
-  import-and-export
-  compiler-directives
-  c-interoperability
-

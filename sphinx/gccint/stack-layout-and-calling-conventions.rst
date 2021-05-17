@@ -12,7 +12,6 @@ This describes the stack layout and calling conventions.
 .. toctree::
 
   frame-layout
-  exception-handling
   stack-checking
   frame-registers
   elimination

@@ -16,7 +16,6 @@ condition code.
 .. toctree::
 
   defining-attributes
-  expressions
   tagging-insns
   attr-example
   insn-lengths

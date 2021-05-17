@@ -136,12 +136,9 @@ http://gcc.gnu.org/readings.html.
   the-gcc-low-level-runtime-library
   language-front-ends-in-gcc
   source-tree-structure-and-build-system
-  testsuites
   option-specification-files
   passes-and-files-of-the-compiler
   sizes-and-offsets-as-runtime-invariants
-  generic
-  gimple
   analysis-and-optimization-of-gimple-tuples
   rtl-representation
   control-flow-graph
@@ -150,14 +147,9 @@ http://gcc.gnu.org/readings.html.
   target-description-macros-and-functions
   host-configuration
   makefile-fragments
-  collect2
   standard-header-file-directories
   memory-management-and-type-information
-  plugins
   link-time-optimization
-  match-and-simplify
-  static-analyzer
-  user-experience-guidelines
   contributors-to-gcc
 
 

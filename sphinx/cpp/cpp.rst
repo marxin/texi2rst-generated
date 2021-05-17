@@ -88,22 +88,6 @@ useful on its own.
   option-index
   concept-index
 
-.. toctree::
-
-  overview
-  header-files
-  macros
-  conditionals
-  diagnostics
-  line-control
-  pragmas
-  other-directives
-  preprocessor-output
-  traditional-mode
-  implementation-details
-  invocation
-  environment-variables
-
 .. _index-of-directives:
 
 Index of Directives

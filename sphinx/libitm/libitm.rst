@@ -42,13 +42,6 @@ several threads.
    Enabling libitm
    -
 
-.. toctree::
-
-  enabling-libitm
-  c-c++-language-constructs-for-tm
-  the-libitm-abi
-  internals
-
 .. _library-index:
 
 Library Index

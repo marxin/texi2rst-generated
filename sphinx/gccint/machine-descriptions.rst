@@ -18,7 +18,6 @@ See the next chapter for information on the C header file.
 
 .. toctree::
 
-  overview
   patterns
   example
   rtl-template

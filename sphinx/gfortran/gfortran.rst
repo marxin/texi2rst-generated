@@ -125,16 +125,8 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
 
-  introduction
   gnu-fortran-command-options
   runtime--influencing-runtime-behavior-with-environment-variables
-  fortran-standards-status
-  compiler-characteristics
-  extensions
-  mixed-language-programming
-  coarray-programming
-  intrinsic-procedures
-  intrinsic-modules
 
 .. _contributing:
 

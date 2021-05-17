@@ -53,7 +53,6 @@ form uses nested parentheses to indicate the pointers in the internal form.
   registers-and-memory
   rtl-expressions-for-arithmetic
   comparison-operations
-  declarations
   side-effect-expressions
   embedded-side-effects-on-addresses
   assembler-instructions-as-expressions

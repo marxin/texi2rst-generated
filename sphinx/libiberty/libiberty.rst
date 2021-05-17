@@ -25,8 +25,6 @@ License; for more information, see Library Copying.
 
 .. toctree::
 
-  using
-  overview
   function-variable-and-macro-listing
 
 .. _licenses:

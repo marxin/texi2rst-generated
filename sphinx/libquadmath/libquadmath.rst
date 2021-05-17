@@ -43,10 +43,3 @@ Math Library Application Programming Interface (API).
    Defined macros
    -
 
-.. toctree::
-
-  typedef-and-constants
-  math-library-routines
-  i-o-library-routines
-  reporting-bugs
-

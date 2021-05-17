@@ -73,17 +73,8 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 
 .. toctree::
 
-  enabling-openmp
   openmp-runtime-library-routines
   openmp-environment-variables
-  enabling-openacc
-  openacc-runtime-library-routines
-  openacc-environment-variables
-  cuda-streams-usage
-  openacc-library-interoperability
-  openacc-profiling-interface
-  the-libgomp-abi
-  reporting-bugs
 
 .. man begin DESCRIPTION
 
