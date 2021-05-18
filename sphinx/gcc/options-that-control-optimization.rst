@@ -3042,7 +3042,7 @@ section includes experimental options that may produce broken code.
   .. option:: uninlined-function-time
 
     Extra time accounted by inliner for function overhead such as time needed to
-    execute function prologue and epilogue
+    execute function prologue and epilogue.
 
   .. option:: inline-heuristics-hint-percent
 
@@ -3056,7 +3056,7 @@ section includes experimental options that may produce broken code.
   .. option:: uninlined-thunk-time
 
     Same as :option:`--param uninlined-function-insns` and
-    :option:`--param uninlined-function-time` but applied to function thunks
+    :option:`--param uninlined-function-time` but applied to function thunks.
 
   .. option:: inline-min-speedup
 
