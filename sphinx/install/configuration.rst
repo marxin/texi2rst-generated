@@ -66,7 +66,10 @@ To configure GCC:
   % cd objdir
   % srcdir/configure [options] [target]
 
-Distributor optionsIf you will be distributing binary versions of GCC, with modifications
+Distributor options
+===================
+
+If you will be distributing binary versions of GCC, with modifications
 to the source code, you should use the options described in this
 section to make clear that your version contains modifications.
 
@@ -102,7 +105,10 @@ section to make clear that your version contains modifications.
 
   The default value is `https://gcc.gnu.org/ <https://gcc.gnu.org/>`_.
 
-Target specification* GCC has code to correctly determine the correct value for :samp:`{target}`
+Target specification
+====================
+
+* GCC has code to correctly determine the correct value for :samp:`{target}`
   for nearly all native systems.  Therefore, we highly recommend you do
   not provide a configure target when configuring a native compiler.
 
@@ -113,7 +119,10 @@ Target specification* GCC has code to correctly determine the correct value for 
 * Specifying just :samp:`{target}` instead of :option:`--target`:samp:`={target}`
   implies that the host defaults to :samp:`{target}`.
 
-Options specificationUse :samp:`{options}` to override several configure time options for
+Options specification
+=====================
+
+Use :samp:`{options}` to override several configure time options for
 GCC.  A list of supported :samp:`{options}` follows; :samp:`configure
 --help` may list other options, but those not listed below may not
 work and should not normally be used.

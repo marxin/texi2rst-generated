@@ -10,6 +10,8 @@ build procedure.  Modifying GCC sources requires additional tools
 described below.
 
 Tools/packages necessary for building GCC
+=========================================
+
 ISO C++11 compiler
   Necessary to bootstrap GCC.
 
@@ -182,7 +184,9 @@ zstd Library.
   The library is searched in your default library patch search.
   Alternatively, the :option:`--with-zstd` configure option should be used.
 
-  Tools/packages necessary for modifying GCC
+Tools/packages necessary for modifying GCC
+==========================================
+
 autoconf version 2.69 GNU m4 version 1.4.6 (or later)
   Necessary when modifying configure.ac, aclocal.m4, etc.
   to regenerate configure and config.in files.
