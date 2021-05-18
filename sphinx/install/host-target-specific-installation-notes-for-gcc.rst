@@ -21,8 +21,8 @@ hosts or targets.  Not all supported hosts and targets are listed
 here, only the ones that require host-specific or target-specific
 information have to. 
 
-aarch64*-*-*
-============
+aarch64\*-\*-\*
+===============
 
 Binutils pre 2.24 does not have support for selecting :option:`-mabi` and
 does not support ILP32.  If it is used to build GCC 4.9 or later, GCC will
@@ -59,20 +59,20 @@ types of branch protections.  Conversely,
 protections by default.  This mechanism is turned off by default if neither
 of the options are given at configure time.
 
-alpha*-*-*
-==========
+alpha\*-\*-\*
+=============
 
 This section contains general configuration information for all
 Alpha-based platforms using ELF.  In addition to reading this
 section, please read all other sections that match your target.
 
-amd64-*-solaris2*
-=================
+amd64-\*-solaris2\*
+===================
 
 This is a synonym for :samp:`x86_64-*-solaris2*`.
 
-amdgcn-*-amdhsa
-===============
+amdgcn-\*-amdhsa
+================
 
 AMD GCN GPU target.
 
@@ -90,8 +90,8 @@ To run the binaries, install the HSA Runtime from the
 libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run to launch them
 on the GPU.
 
-arc-*-elf32
-===========
+arc-\*-elf32
+============
 
 Use :samp:`configure --target=arc-elf32 --with-cpu={cpu} --enable-languages="c,c++"`
 to configure GCC, with :samp:`{cpu}` being one of :samp:`arc600`, :samp:`arc601`,
@@ -102,8 +102,8 @@ arc-linux-uclibc
 
 Use :samp:`configure --target=arc-linux-uclibc --with-cpu=arc700 --enable-languages="c,c++"` to configure GCC.
 
-arm-*-eabi
-==========
+arm-\*-eabi
+===========
 
 ARM-family processors.
 
@@ -193,14 +193,14 @@ any MSDOS compiler except itself.  You need to get the complete
 compilation package DJGPP, which includes binaries as well as sources,
 and includes all the necessary compilation tools and libraries.
 
-epiphany-*-elf
-==============
+epiphany-\*-elf
+===============
 
 Adapteva Epiphany.
 This configuration is intended for embedded systems.
 
-*-*-freebsd*
-============
+\*-\*-freebsd\*
+===============
 
 Support for FreeBSD 1 was discontinued in GCC 3.2.  Support for
 FreeBSD 2 (and any mutant a.out variants of FreeBSD 3) was
@@ -235,8 +235,8 @@ results.  However, it is currently known that boehm-gc may not configure
 properly on FreeBSD prior to the FreeBSD 7.0 release with GNU binutils
 after 2.16.1.
 
-ft32-*-elf
-==========
+ft32-\*-elf
+===========
 
 The FT32 processor.
 This configuration is intended for embedded systems.
@@ -253,8 +253,8 @@ All code must be recompiled.  The calling convention now passes the
 first three arguments in function calls in registers.  Structures are no
 longer a multiple of 2 bytes.
 
-hppa*-hp-hpux*
-==============
+hppa\*-hp-hpux\*
+================
 
 Support for HP-UX version 9 and older was discontinued in GCC 3.4.
 
@@ -304,8 +304,8 @@ a list of the predefines used with each standard.
 
 More specific information to :samp:`hppa*-hp-hpux*` targets follows.
 
-hppa*-hp-hpux10
-===============
+hppa\*-hp-hpux10
+================
 
 For hpux10.20, we *highly* recommend you pick up the latest sed patch
 ``PHCO_19798`` from HP.
@@ -315,8 +315,8 @@ used for one-only code and data.  This resolves many of the previous
 problems in using C++ on this target.  However, the ABI is not compatible
 with the one implemented under HP-UX 11 using secondary definitions.
 
-hppa*-hp-hpux11
-===============
+hppa\*-hp-hpux11
+================
 
 GCC 3.0 and up support HP-UX 11.  GCC 2.95.x is not supported and cannot
 be used to compile GCC 3.0 and up.
@@ -419,15 +419,15 @@ versioning with :option:`--disable-symvers` when using GNU ld.
 POSIX threads are the default.  The optional DCE thread library is not
 supported, so :option:`--enable-threads=dce` does not work.
 
-*-*-linux-gnu
-=============
+\*-\*-linux-gnu
+===============
 
 Versions of libstdc++-v3 starting with 3.2.1 require bug fixes present
 in glibc 2.2.5 and later.  More information is available in the
 libstdc++-v3 documentation.
 
-i?86-*-linux*
-=============
+i?86-\*-linux\*
+===============
 
 As of GCC 3.3, binutils 2.13.1 or later is required for this platform.
 See `bug 10877 <http://gcc.gnu.org/PR10877>`_ for more information.
@@ -436,8 +436,8 @@ If you receive Signal 11 errors when building on GNU/Linux, then it is
 possible you have a hardware problem.  Further information on this can be
 found on `www.bitwizard.nl <http://www.bitwizard.nl/sig11/>`_.
 
-i?86-*-solaris2*
-================
+i?86-\*-solaris2\*
+==================
 
 Use this for Solaris 11.3 or later on x86 and x86-64 systems.  Starting
 with GCC 4.7, there is also a 64-bit :samp:`amd64-*-solaris2*` or
@@ -463,8 +463,8 @@ guarantee use of Solaris :command:`ld`.
 
 .. FIXME: why -without-gnu-ld -with-ld?
 
-ia64-*-linux
-============
+ia64-\*-linux
+=============
 
 IA-64 processor (also known as IPF, or Itanium Processor Family)
 running GNU/Linux.
@@ -482,8 +482,8 @@ GCC 3.1 or later is recommended for compiling linux, the kernel.
 As of version 3.1 GCC is believed to be fully ABI compliant, and hence no
 more major ABI changes are expected.
 
-ia64-*-hpux*
-============
+ia64-\*-hpux\*
+==============
 
 Building GCC on this target requires the GNU Assembler.  The bundled HP
 assembler will not work.  To prevent GCC from using the wrong assembler,
@@ -495,8 +495,8 @@ is required to build GCC.  For GCC 3.3 and later, this is the default.
 For gcc 3.4.3 and later, :option:`--enable-libunwind-exceptions` is
 removed and the system libunwind library will always be used.
 
-*-ibm-aix*
-==========
+\*-ibm-aix\*
+============
 
 Support for AIX version 3 and older was discontinued in GCC 3.4.
 Support for AIX version 4.2 and older was discontinued in GCC 4.5.
@@ -664,38 +664,38 @@ environment variable to :samp:`C` or :samp:`En_US`.
 A default can be specified with the :option:`-mcpu`:samp:`={cpu_type}`
 switch and using the configure option :option:`--with-cpu-`:samp:`{cpu_type}`.
 
-iq2000-*-elf
-============
+iq2000-\*-elf
+=============
 
 Vitesse IQ2000 processors.  These are used in embedded
 applications.  There are no standard Unix configurations.
 
-lm32-*-elf
-==========
+lm32-\*-elf
+===========
 
 Lattice Mico32 processor.
 This configuration is intended for embedded systems.
 
-lm32-*-uclinux
-==============
+lm32-\*-uclinux
+===============
 
 Lattice Mico32 processor.
 This configuration is intended for embedded systems running uClinux.
 
-m32c-*-elf
-==========
+m32c-\*-elf
+===========
 
 Renesas M32C processor.
 This configuration is intended for embedded systems.
 
-m32r-*-elf
-==========
+m32r-\*-elf
+===========
 
 Renesas M32R processor.
 This configuration is intended for embedded systems.
 
-m68k-*-*
-========
+m68k-\*-\*
+==========
 
 By default,
 :samp:`m68k-*-elf*`, :samp:`m68k-*-rtems`,  :samp:`m68k-*-uclinux` and
@@ -721,22 +721,22 @@ be a :option:`-mcpu` argument or one of the following values:
 
 GCC requires at least binutils version 2.17 on these targets.
 
-m68k-*-uclinux
-==============
+m68k-\*-uclinux
+===============
 
 GCC 4.3 changed the uClinux configuration so that it uses the
 :samp:`m68k-linux-gnu` ABI rather than the :samp:`m68k-elf` ABI.
 It also added improved support for C++ and flat shared libraries,
 both of which were ABI changes.
 
-microblaze-*-elf
-================
+microblaze-\*-elf
+=================
 
 Xilinx MicroBlaze processor.
 This configuration is intended for embedded systems.
 
-mips-*-*
-========
+mips-\*-\*
+==========
 
 If on a MIPS system you get an error message saying 'does not have gp
 sections for all it's [sic] sectons [sic]', don't worry about it.  This
@@ -778,13 +778,13 @@ the use of break, use the :option:`--with-divide=breaks`
 :command:`configure` option when configuring GCC.  The default is to
 use traps on systems that support them.
 
-moxie-*-elf
-===========
+moxie-\*-elf
+============
 
 The moxie processor.
 
-msp430-*-elf*
-=============
+msp430-\*-elf\*
+===============
 
 TI MSP430 processor.
 This configuration is intended for embedded systems.
@@ -803,18 +803,18 @@ Features disabled by default include:
 
 * __cxa_atexit
 
-nds32le-*-elf
-=============
+nds32le-\*-elf
+==============
 
 Andes NDS32 target in little endian mode.
 
-nds32be-*-elf
-=============
+nds32be-\*-elf
+==============
 
 Andes NDS32 target in big endian mode.
 
-nvptx-*-none
-============
+nvptx-\*-none
+=============
 
 Nvidia PTX target.
 
@@ -832,27 +832,27 @@ the GCC sources.
 Use the :option:`--disable-sjlj-exceptions` and
 :option:`--enable-newlib-io-long-long` options when configuring.
 
-or1k-*-elf
-==========
+or1k-\*-elf
+===========
 
 The OpenRISC 1000 32-bit processor with delay slots.
 This configuration is intended for embedded systems.
 
-or1k-*-linux
-============
+or1k-\*-linux
+=============
 
 The OpenRISC 1000 32-bit processor with delay slots.
 
-powerpc-*-*
-===========
+powerpc-\*-\*
+=============
 
 You can specify a default version for the :option:`-mcpu`:samp:`={cpu_type}`
 switch by using the configure option :option:`--with-cpu-`:samp:`{cpu_type}`.
 
 You will need GNU binutils 2.20 or newer.
 
-powerpc-*-darwin*
-=================
+powerpc-\*-darwin\*
+===================
 
 PowerPC running Darwin (Mac OS X kernel).
 
@@ -866,97 +866,97 @@ cctools-590.36 package referenced from
 http://gcc.gnu.org/ml/gcc/2006-03/msg00507.html will not work
 on systems older than 10.3.9 (aka darwin7.9.0).
 
-powerpc-*-elf
-=============
+powerpc-\*-elf
+==============
 
 PowerPC system in big endian mode, running System V.4.
 
-powerpc*-*-linux-gnu*
-=====================
+powerpc\*-\*-linux-gnu\*
+========================
 
 PowerPC system in big endian mode running Linux.
 
-powerpc-*-netbsd*
-=================
+powerpc-\*-netbsd\*
+===================
 
 PowerPC system in big endian mode running NetBSD.
 
-powerpc-*-eabisim
-=================
+powerpc-\*-eabisim
+==================
 
 Embedded PowerPC system in big endian mode for use in running under the
 PSIM simulator.
 
-powerpc-*-eabi
-==============
+powerpc-\*-eabi
+===============
 
 Embedded PowerPC system in big endian mode.
 
-powerpcle-*-elf
-===============
+powerpcle-\*-elf
+================
 
 PowerPC system in little endian mode, running System V.4.
 
-powerpcle-*-eabisim
-===================
+powerpcle-\*-eabisim
+====================
 
 Embedded PowerPC system in little endian mode for use in running under
 the PSIM simulator.
 
-powerpcle-*-eabi
-================
+powerpcle-\*-eabi
+=================
 
 Embedded PowerPC system in little endian mode.
 
-rl78-*-elf
-==========
+rl78-\*-elf
+===========
 
 The Renesas RL78 processor.
 This configuration is intended for embedded systems.
 
-riscv32-*-elf
-=============
+riscv32-\*-elf
+==============
 
 The RISC-V RV32 instruction set.
 This configuration is intended for embedded systems.
 This (and all other RISC-V) targets require the binutils 2.30 release.
 
-riscv32-*-linux
-===============
+riscv32-\*-linux
+================
 
 The RISC-V RV32 instruction set running GNU/Linux.
 This (and all other RISC-V) targets require the binutils 2.30 release.
 
-riscv64-*-elf
-=============
+riscv64-\*-elf
+==============
 
 The RISC-V RV64 instruction set.
 This configuration is intended for embedded systems.
 This (and all other RISC-V) targets require the binutils 2.30 release.
 
-riscv64-*-linux
-===============
+riscv64-\*-linux
+================
 
 The RISC-V RV64 instruction set running GNU/Linux.
 This (and all other RISC-V) targets require the binutils 2.30 release.
 
-rx-*-elf
-========
+rx-\*-elf
+=========
 
 The Renesas RX processor.
 
-s390-*-linux*
-=============
+s390-\*-linux\*
+===============
 
 S/390 system running GNU/Linux for S/390.
 
-s390x-*-linux*
-==============
+s390x-\*-linux\*
+================
 
 zSeries system (64-bit) running GNU/Linux for zSeries.
 
-s390x-ibm-tpf*
-==============
+s390x-ibm-tpf\*
+===============
 
 zSeries system (64-bit) running TPF.  This platform is
 supported as cross-compilation target only.
@@ -966,8 +966,8 @@ supported as cross-compilation target only.
    SunOS 4 releases which we don't use to avoid confusion.  Solaris
    alone is too unspecific and must be avoided.
 
-*-*-solaris2*
-=============
+\*-\*-solaris2\*
+================
 
 Support for Solaris 10 has been removed in GCC 10.  Support for Solaris
 9 has been removed in GCC 5.  Support for Solaris 8 has been removed in
@@ -1041,8 +1041,8 @@ caveats:
 * The version of the MPFR libary included in Solaris 11.3 is too old; you
   need to provide a more recent one.
 
-sparc*-*-*
-==========
+sparc\*-\*-\*
+=============
 
 This section contains general configuration information for all
 SPARC-based platforms.  In addition to reading this section, please
@@ -1054,8 +1054,8 @@ versions of GCC on these platforms.  We therefore recommend the use
 of the exact versions of these libraries listed as minimal versions
 in prerequisites.htmlthe prerequisites.
 
-sparc-sun-solaris2*
-===================
+sparc-sun-solaris2\*
+====================
 
 When GCC is configured to use GNU binutils 2.14 or later, the binaries
 produced are smaller than the ones produced using Solaris native tools;
@@ -1080,11 +1080,11 @@ not that of GMP or MPFR or MPC).  For example on a Solaris 11 system:
 
   % ./configure --build=sparc-sun-solaris2.11 --prefix=xxx
 
-sparc-*-linux*
-==============
+sparc-\*-linux\*
+================
 
-sparc64-*-solaris2*
-===================
+sparc64-\*-solaris2\*
+=====================
 
 When configuring a 64-bit-default GCC on Solaris/SPARC, you must use a
 build compiler that generates 64-bit code, either by default or by
@@ -1102,42 +1102,42 @@ on a Solaris 11 system:
 
   % ./configure --build=sparc64-sun-solaris2.11 --prefix=xxx
 
-sparcv9-*-solaris2*
-===================
+sparcv9-\*-solaris2\*
+=====================
 
 This is a synonym for :samp:`sparc64-*-solaris2*`.
 
-c6x-*-*
-=======
+c6x-\*-\*
+=========
 
 The C6X family of processors. This port requires binutils-2.22 or newer.
 
-tilegx-*-linux*
-===============
+tilegx-\*-linux\*
+=================
 
 The TILE-Gx processor in little endian mode, running GNU/Linux.  This
 port requires binutils-2.22 or newer.
 
-tilegxbe-*-linux*
-=================
+tilegxbe-\*-linux\*
+===================
 
 The TILE-Gx processor in big endian mode, running GNU/Linux.  This
 port requires binutils-2.23 or newer.
 
-tilepro-*-linux*
-================
+tilepro-\*-linux\*
+==================
 
 The TILEPro processor running GNU/Linux.  This port requires
 binutils-2.22 or newer.
 
-visium-*-elf
-============
+visium-\*-elf
+=============
 
 CDS VISIUMcore processor.
 This configuration is intended for embedded systems.
 
-*-*-vxworks*
-============
+\*-\*-vxworks\*
+===============
 
 Support for VxWorks is in flux.  At present GCC supports *only* the
 very recent VxWorks 5.5 (aka Tornado 2.2) release, and only on PowerPC.
@@ -1170,16 +1170,16 @@ module, contrib/gthr_supp_vxw_5x.c.  Follow the instructions in
 that file to add the module to your kernel build.  (Future versions of
 VxWorks will incorporate this module.)
 
-x86_64-*-*, amd64-*-*
-=====================
+x86_64-\*-\*, amd64-\*-\*
+=========================
 
 GCC supports the x86-64 architecture implemented by the AMD64 processor
 (amd64-*-* is an alias for x86_64-*-*) on GNU/Linux, FreeBSD and NetBSD.
 On GNU/Linux the default is a bi-arch compiler which is able to generate
 both 64-bit x86-64 and 32-bit x86 code (via the :option:`-m32` switch).
 
-x86_64-*-solaris2*
-==================
+x86_64-\*-solaris2\*
+====================
 
 GCC also supports the x86-64 architecture implemented by the AMD64
 processor (:samp:`amd64-*-*` is an alias for :samp:`x86_64-*-*`) on
@@ -1192,8 +1192,8 @@ this way, you have to provide all support libraries like libgmp
 as 64-bit code, configure with :option:`--target=x86_64-pc-solaris2.11`
 and :samp:`CC=gcc -m64`.
 
-xtensa*-*-elf
-=============
+xtensa\*-\*-elf
+===============
 
 This target is intended for embedded Xtensa systems using the
 :samp:`newlib` C library.  It uses ELF but does not support shared
@@ -1208,8 +1208,8 @@ own Xtensa configuration with the Xtensa Processor Generator, the
 downloaded files include a customized copy of this header file,
 which you can use to replace the default header file.
 
-xtensa*-*-linux*
-================
+xtensa\*-\*-linux\*
+===================
 
 This target is for Xtensa systems running GNU/Linux.  It supports ELF
 shared objects and the GNU C library (glibc).  It also generates
@@ -1262,8 +1262,8 @@ be inactive.  See http://pw32.sourceforge.net/ for more information.
 
 UWIN support has been removed due to a lack of maintenance.
 
-*-*-cygwin
-==========
+\*-\*-cygwin
+============
 
 Ports of GCC are included with the
 `Cygwin environment <http://www.cygwin.com/>`_.
@@ -1277,8 +1277,8 @@ used with as up-to-date a version of binutils as possible; use either
 the latest official GNU binutils release in the Cygwin distribution,
 or version 2.20 or above if building your own.
 
-*-*-mingw32
-===========
+\*-\*-mingw32
+=============
 
 GCC will build with and support only MinGW runtime 3.12 and later.
 Earlier versions of headers are incompatible with the new default semantics
