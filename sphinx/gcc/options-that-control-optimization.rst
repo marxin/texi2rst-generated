@@ -2116,15 +2116,12 @@ optimizations to be performed is desired.
   The following options :option:`-fPIC`, :option:`-fpic`, :option:`-fpie` and
   :option:`-fPIE` are combined based on the following scheme:
 
-  .. code-block:: c++
-
-    -fPIC + -fpic = -fpic
-    -fPIC + -fno-pic = -fno-pic
-    -fpic/-fPIC + (no option) = (no option)
-    -fPIC + -fPIE = -fPIE
-    -fpic + -fPIE = -fpie
-    -fPIC/-fpic + -fpie = -fpie
-
+  :option:`:option:`-fPIC`` + :option:`:option:`-fpic`` = :option:`:option:`-fpic``
+  :option:`:option:`-fPIC`` + :option:`:option:`-fno-pic`` = :option:`:option:`-fno-pic``
+  :option:`:option:`-fpic/-fPIC`` + (no option) = (no option)
+  :option:`:option:`-fPIC`` + :option:`:option:`-fPIE`` = :option:`:option:`-fPIE``
+  :option:`:option:`-fpic`` + :option:`:option:`-fPIE`` = :option:`:option:`-fpie``
+  :option:`:option:`-fPIC/-fpic`` + :option:`:option:`-fpie`` = :option:`:option:`-fpie``
   Certain ABI-changing flags are required to match in all compilation units,
   and trying to override this at link time with a conflicting value
   is ignored.  This includes options such as :option:`-freg-struct-return`

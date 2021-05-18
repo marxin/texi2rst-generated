@@ -128,7 +128,10 @@ to use the C++ comparison operators, such as:
 
 Another way is to use the ``compare_with`` function:
 
-:samp:`{insn1}`:option:`->compare_with` ( :samp:`{insn2}` )
+.. code-block:: c++
+
+  insn1->compare_with (insn2)
+
 This expression is greater than zero if :samp:`{insn1}` comes after :samp:`{insn2}`
 in the RPO, less than zero if :samp:`{insn1}` comes before :samp:`{insn2}` in the
 RPO, or zero if :samp:`{insn1}` and :samp:`{insn2}` are the same.  This order is
