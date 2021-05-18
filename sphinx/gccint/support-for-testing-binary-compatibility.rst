@@ -15,15 +15,15 @@ with each other to split up the functionality being tested.
 
 :samp:`{testname}_main.{suffix}`
   Contains the main program, which calls a function in file
-  :samp:`{testname}` _x.:samp:`{suffix}`.
+  :samp:`{testname}` _x. :samp:`{suffix}`.
 
 :samp:`{testname}_x.{suffix}`
   Contains at least one call to a function in
-  :samp:`{testname}` _y.:samp:`{suffix}`.
+  :samp:`{testname}` _y. :samp:`{suffix}`.
 
 :samp:`{testname}_y.{suffix}`
   Shares data with, or gets arguments from,
-  :samp:`{testname}` _x.:samp:`{suffix}`.
+  :samp:`{testname}` _x. :samp:`{suffix}`.
 
   Within each test, the main program and one functional piece are
 compiled by the GCC under test.  The other piece can be compiled by
@@ -89,13 +89,13 @@ The binary compatibility tests support a small number of test framework
 commands that appear within comments in a test file.
 
 ``dg-require-*``
-  These commands can be used in :samp:`{testname}` _main.:samp:`{suffix}`
+  These commands can be used in :samp:`{testname}` _main. :samp:`{suffix}`
   to skip the test if specific support is not available on the target.
 
 ``dg-options``
   The specified options are used for compiling this particular source
   file, appended to the options from :envvar:`COMPAT_OPTIONS`.  When this
-  command appears in :samp:`{testname}` _main.:samp:`{suffix}` the options
+  command appears in :samp:`{testname}` _main. :samp:`{suffix}` the options
   are also used to link the test program.
 
 ``dg-xfail-if``

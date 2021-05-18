@@ -7,7 +7,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
 .. option:: -mhalf-reg-file
 
-  Don't allocate any register in the range ``r32``...``r63``.
+  Don't allocate any register in the range ``r32``... ``r63``.
   That allows code to run on hardware variants that lack these registers.
 
 .. option:: -mprefer-short-insn-regs

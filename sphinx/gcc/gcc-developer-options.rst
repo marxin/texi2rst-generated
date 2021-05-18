@@ -484,7 +484,7 @@ The files are created in the directory of the output file.
   :samp:`graph`
     For each of the other indicated dump files ( :option:`-fdump-rtl-`:samp:`{pass}` ),
     dump a representation of the control flow graph suitable for viewing with
-    GraphViz to :samp:`{file}`.:samp:`{passid}`.:samp:`{pass}`.dot.  Each function in
+    GraphViz to :samp:`{file}`. :samp:`{passid}`. :samp:`{pass}`.dot.  Each function in
     the file is pretty-printed as a subgraph, so that GraphViz can render them
     all in a single plot.
 

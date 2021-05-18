@@ -186,7 +186,7 @@ double underscores.
   These macros are defined by all GNU compilers that use the C
   preprocessor: C, C++, Objective-C and Fortran.  Their values are the major
   version, minor version, and patch level of the compiler, as integer
-  constants.  For example, GCC version :samp:`{x}`.:samp:`{y}`.:samp:`{z}`
+  constants.  For example, GCC version :samp:`{x}`. :samp:`{y}`. :samp:`{z}`
   defines ``__GNUC__`` to :samp:`{x}`, ``__GNUC_MINOR__`` to :samp:`{y}`,
   and ``__GNUC_PATCHLEVEL__`` to :samp:`{z}`.  These
   macros are also defined if you invoke the preprocessor directly.

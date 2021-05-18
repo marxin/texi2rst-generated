@@ -350,7 +350,7 @@ corresponding :option:`--without` option.
 .. option:: --with-gcc-major-version-only
 
   Specifies that GCC should use only the major number rather than
-  :samp:`{major}`.:samp:`{minor}`.:samp:`{patchlevel}` in filesystem paths.
+  :samp:`{major}`. :samp:`{minor}`. :samp:`{patchlevel}` in filesystem paths.
 
 .. option:: --with-native-system-header-dir=dirname
 
@@ -1682,7 +1682,7 @@ corresponding :option:`--without` option.
 .. option:: --with-glibc-version=major.minor
 
   Tell GCC that when the GNU C Library (glibc) is used on the target it
-  will be version :samp:`{major}`.:samp:`{minor}` or later.  Normally this can
+  will be version :samp:`{major}`. :samp:`{minor}` or later.  Normally this can
   be detected from the C library's header files, but this option may be
   needed when bootstrapping a cross toolchain without the header files
   available for building the initial bootstrap compiler.

@@ -89,7 +89,7 @@ either your program or the GNU Fortran compiler.
 
   If the option is used more than once in the command line, the lists will
   be joined: '  ``ffpe-trap=``:samp:`{list1}`  ``ffpe-trap=``:samp:`{list2}` '
-  is equivalent to  ``ffpe-trap=``:samp:`{list1}`,:samp:`{list2}`.
+  is equivalent to  ``ffpe-trap=``:samp:`{list1}`, :samp:`{list2}`.
 
   Note that once enabled an exception cannot be disabled (no negative form).
 

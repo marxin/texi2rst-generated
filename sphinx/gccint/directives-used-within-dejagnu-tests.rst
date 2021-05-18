@@ -97,7 +97,7 @@ following in order:
 
 * variable :samp:`{tool_timeout}` defined by the set of tests
 
-* :samp:`{gcc}`,:samp:`{timeout}` set in the target board
+* :samp:`{gcc}`, :samp:`{timeout}` set in the target board
 
 * 300
 

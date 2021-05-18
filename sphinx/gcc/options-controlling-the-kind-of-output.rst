@@ -184,9 +184,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   If :option:`-o` is not specified, the default is to put an executable
   file in a.out, the object file for
-  :samp:`{source}`.:samp:`{suffix}` in :samp:`{source}`.o, its
+  :samp:`{source}`. :samp:`{suffix}` in :samp:`{source}`.o, its
   assembler file in :samp:`{source}`.s, a precompiled header file in
-  :samp:`{source}`.:samp:`{suffix}`.gch, and all preprocessed C source on
+  :samp:`{source}`. :samp:`{suffix}`.gch, and all preprocessed C source on
   standard output.
 
   Though :option:`-o` names only the primary output, it also affects the

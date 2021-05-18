@@ -1000,7 +1000,7 @@ or if not a specific built-in is implemented or not. For example, if
   * If X is in the range 0...7,
     then the :samp:`{n}` -th result bit is set to the :samp:`{X}` -th bit of :samp:`{bits}`
 
-  * If X is in the range 8...``0xe``,
+  * If X is in the range 8... ``0xe``,
     then the :samp:`{n}` -th result bit is undefined.
 
   One typical use case for this built-in is adjusting input and

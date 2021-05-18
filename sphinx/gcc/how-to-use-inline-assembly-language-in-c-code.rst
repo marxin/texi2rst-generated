@@ -3310,14 +3310,14 @@ the meanings of that architecture's constraints.
 :samp:`PowerPC and IBM RS6000-{config/rs6000/constraints.md}`
 
   ``r``
-    A general purpose register (GPR), ``r0``...``r31``.
+    A general purpose register (GPR), ``r0``... ``r31``.
 
   ``b``
     A base register.  Like ``r``, but ``r0`` is not allowed, so
-    ``r1``...``r31``.
+    ``r1``... ``r31``.
 
   ``f``
-    A floating point register (FPR), ``f0``...``f31``.
+    A floating point register (FPR), ``f0``... ``f31``.
 
   ``d``
     A floating point register.  This is the same as ``f`` nowadays;
@@ -3325,12 +3325,12 @@ the meanings of that architecture's constraints.
     double-precision floating point.
 
   ``v``
-    An Altivec vector register (VR), ``v0``...``v31``.
+    An Altivec vector register (VR), ``v0``... ``v31``.
 
   ``wa``
-    A VSX register (VSR), ``vs0``...``vs63``.  This is either an
-    FPR ( ``vs0``...``vs31`` are ``f0``...``f31`` ) or a VR
-    ( ``vs32``...``vs63`` are ``v0``...``v31`` ).
+    A VSX register (VSR), ``vs0``... ``vs63``.  This is either an
+    FPR ( ``vs0``... ``vs31`` are ``f0``... ``f31`` ) or a VR
+    ( ``vs32``... ``vs63`` are ``v0``... ``v31`` ).
 
     When using ``wa``, you should use the ``%x`` output modifier, so that
     the correct register number is printed.  For example:
@@ -3359,7 +3359,7 @@ the meanings of that architecture's constraints.
     Condition register field 0, ``cr0``.
 
   ``y``
-    Any condition register field, ``cr0``...``cr7``.
+    Any condition register field, ``cr0``... ``cr7``.
 
   ``I``
     A signed 16-bit constant.

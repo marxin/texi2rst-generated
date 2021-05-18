@@ -721,7 +721,7 @@ AVR Variable Attributes
     like ATtiny40.
 
   * You must make sure that respective data is located in the
-    address range ``0x40``...``0xbf`` accessible by
+    address range ``0x40``... ``0xbf`` accessible by
     ``LDS`` and ``STS``.  One way to achieve this as an
     appropriate linker description file.
 

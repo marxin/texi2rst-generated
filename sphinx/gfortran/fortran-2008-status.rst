@@ -34,7 +34,7 @@ following is implemented.
 
 * Using complex arguments with ``TAN``, ``SINH``, ``COSH``,
   ``TANH``, ``ASIN``, ``ACOS``, and ``ATAN`` is now possible;
-  ``ATAN`` ( :samp:`{Y}`,:samp:`{X}` ) is now an alias for ``ATAN2`` ( :samp:`{Y}`,:samp:`{X}` ).
+  ``ATAN`` ( :samp:`{Y}`, :samp:`{X}` ) is now an alias for ``ATAN2`` ( :samp:`{Y}`, :samp:`{X}` ).
 
 * Support of the ``PARITY`` intrinsic functions.
 
