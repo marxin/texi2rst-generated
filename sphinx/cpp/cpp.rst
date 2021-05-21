@@ -26,37 +26,7 @@
 
 .. man begin COPYRIGHT
 
-Copyright (C) 1987-2021 Free Software Foundation, Inc.
-
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3 or
-any later version published by the Free Software Foundation.  A copy of
-the license is included in the
-
-.. man end
-
-section entitled 'GNU Free Documentation License'.
-
-@c man begin COPYRIGHT
-man page gfdl(7).
-@c man end
-
 .. man begin COPYRIGHT
-
-This manual contains no Invariant Sections.  The Front-Cover Texts are
-(a) (see below), and the Back-Cover Texts are (b) (see below).
-
-(a) The FSF's Front-Cover Text is:
-
-A GNU Manual
-
-(b) The FSF's Back-Cover Text is:
-
-You have freedom to copy and modify this GNU Manual, like GNU
-     software.  Copies published by the Free Software Foundation raise
-     funds for GNU development.
-
-.. man end
 
 .. Create a separate index for command line options.
 
