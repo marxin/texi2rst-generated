@@ -106,7 +106,7 @@ document.
 This standard, in both its forms, is commonly known as :dfn:`C89`, or
 occasionally as :dfn:`C90`, from the dates of ratification.
 To select this standard in GCC, use one of the options
-:option:`-ansi`, :option:`-std=c90` or :option:`-std=iso9899:1990` ; to obtain
+:option:`-ansi`, :option:`-std`:samp:`={c90}` or :option:`-std`:samp:`={iso9899:1990}`; to obtain
 all the diagnostics required by the standard, you should also specify
 :option:`-pedantic` (or :option:`-pedantic-errors` if you want them to be
 errors rather than warnings).  See :ref:`Options
@@ -121,7 +121,7 @@ amendment added digraphs and ``__STDC_VERSION__`` to the language,
 but otherwise concerned the library.  This amendment is commonly known
 as :dfn:`AMD1`; the amended standard is sometimes known as :dfn:`C94` or
 :dfn:`C95`.  To select this standard in GCC, use the option
-:option:`-std=iso9899:199409` (with, as for other standard versions,
+:option:`-std`:samp:`={iso9899:199409}` (with, as for other standard versions,
 :option:`-pedantic` to receive all required diagnostics).
 
 A new edition of the ISO C standard was published in 1999 as ISO/IEC
@@ -130,7 +130,7 @@ development, drafts of this standard version were referred to as
 :dfn:`C9X`.)  GCC has substantially
 complete support for this standard version; see
 http://gcc.gnu.org/c99status.html for details.  To select this
-standard, use :option:`-std=c99` or :option:`-std=iso9899:1999`.  
+standard, use :option:`-std`:samp:`={c99}` or :option:`-std`:samp:`={iso9899:1999}`.  
 
 Errors in the 1999 ISO C standard were corrected in three Technical
 Corrigenda published in 2001, 2004 and 2007.  GCC does not support the
@@ -140,17 +140,17 @@ A fourth version of the C standard, known as :dfn:`C11`, was published
 in 2011 as ISO/IEC 9899:2011.  (While in development, drafts of this
 standard version were referred to as :dfn:`C1X`.)
 GCC has substantially complete support
-for this standard, enabled with :option:`-std=c11` or
-:option:`-std=iso9899:2011`.  A version with corrections integrated was
+for this standard, enabled with :option:`-std`:samp:`={c11}` or
+:option:`-std`:samp:`={iso9899:2011}`.  A version with corrections integrated was
 prepared in 2017 and published in 2018 as ISO/IEC 9899:2018; it is
-known as :dfn:`C17` and is supported with :option:`-std=c17` or
-:option:`-std=iso9899:2017` ; the corrections are also applied with
-:option:`-std=c11`, and the only difference between the options is the
+known as :dfn:`C17` and is supported with :option:`-std`:samp:`={c17}` or
+:option:`-std`:samp:`={iso9899:2017}`; the corrections are also applied with
+:option:`-std`:samp:`={c11}`, and the only difference between the options is the
 value of ``__STDC_VERSION__``.
 
 A further version of the C standard, known as :dfn:`C2X`, is under
 development; experimental and incomplete support for this is enabled
-with :option:`-std=c2x`.
+with :option:`-std`:samp:`={c2x}`.
 
 By default, GCC provides some extensions to the C language that, on
 rare occasions conflict with the C standard.  See :ref:`Extensions to the C Language Family <c-extensions>`.  
@@ -161,12 +161,12 @@ Use of the
 :option:`-std` options listed above disables these extensions where
 they conflict with the C standard version selected.  You may also
 select an extended version of the C language explicitly with
-:option:`-std=gnu90` (for C90 with GNU extensions), :option:`-std=gnu99`
-(for C99 with GNU extensions) or :option:`-std=gnu11` (for C11 with GNU
+:option:`-std`:samp:`={gnu90}` (for C90 with GNU extensions), :option:`-std`:samp:`={gnu99}`
+(for C99 with GNU extensions) or :option:`-std`:samp:`={gnu11}` (for C11 with GNU
 extensions).  
 
 The default, if no C language dialect options are given,
-is :option:`-std=gnu17`.
+is :option:`-std`:samp:`={gnu17}`.
 
 The ISO C standard defines (in clause 4) two classes of conforming
 implementation.  A :dfn:`conforming hosted implementation` supports the

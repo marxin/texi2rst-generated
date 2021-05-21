@@ -26,7 +26,7 @@ aarch64\*-\*-\*
 
 Binutils pre 2.24 does not have support for selecting :option:`-mabi` and
 does not support ILP32.  If it is used to build GCC 4.9 or later, GCC will
-not support option :option:`-mabi=ilp32`.
+not support option :option:`-mabi`:samp:`={ilp32}`.
 
 To enable a workaround for the Cortex-A53 erratum number 835769 by default
 (for all CPUs regardless of -mcpu option given) at configure time use the
@@ -51,9 +51,9 @@ The workaround is disabled by default if neither of
 
 To enable Branch Target Identification Mechanism and Return Address Signing by
 default at configure time use the :option:`--enable-standard-branch-protection`
-option.  This is equivalent to having :option:`-mbranch-protection=standard`
+option.  This is equivalent to having :option:`-mbranch-protection`:samp:`={standard}`
 during compilation.  This can be explicitly disabled during compilation by
-passing the :option:`-mbranch-protection=none` option which turns off all
+passing the :option:`-mbranch-protection`:samp:`={none}` option which turns off all
 types of branch protections.  Conversely,
 :option:`--disable-standard-branch-protection` will disable both the
 protections by default.  This mechanism is turned off by default if neither
@@ -263,7 +263,7 @@ later is recommended.
 
 It may be helpful to configure GCC with the
 ./configure.html#with-gnu-as:option:`--with-gnu-as` and
-:option:`--with-as=...` options to ensure that GCC can find GAS.
+:option:`--with-as`:samp:`={...}` options to ensure that GCC can find GAS.
 
 The HP assembler should not be used with GCC.  It is rarely tested and may
 not work.  It shouldn't be used with any languages other than C due to its
@@ -369,7 +369,7 @@ be defined when building with the bundled compiler, or when using the
 :option:`-Ac` option.  These defines aren't necessary with :option:`-Ae`.
 
 It is best to explicitly configure the :samp:`hppa64-hp-hpux11*` target
-with the :option:`--with-ld=...` option.  This overrides the standard
+with the :option:`--with-ld`:samp:`={...}` option.  This overrides the standard
 search for ld.  The two linkers supported on this target require different
 commands.  The default linker is determined during configuration.  As a
 result, it's not possible to switch linkers in the middle of a GCC build.
@@ -417,7 +417,7 @@ versioning is not supported.  It may be necessary to disable symbol
 versioning with :option:`--disable-symvers` when using GNU ld.
 
 POSIX threads are the default.  The optional DCE thread library is not
-supported, so :option:`--enable-threads=dce` does not work.
+supported, so :option:`--enable-threads`:samp:`={dce}` does not work.
 
 \*-\*-linux-gnu
 ===============
@@ -457,8 +457,8 @@ newer (in /usr/gnu/bin/ld and /usr/bin/gld), works,
 as does the latest version, from GNU binutils 2.34.
 
 To use GNU :command:`as`, configure with the options
-:option:`--with-gnu-as --with-as=//usr//gnu//bin//as`.  It may be necessary
-to configure with :option:`--without-gnu-ld --with-ld=//usr//ccs//bin//ld` to
+:option:`--with-gnu-as --with-as`:samp:`={//usr//gnu//bin//as}`.  It may be necessary
+to configure with :option:`--without-gnu-ld --with-ld`:samp:`={//usr//ccs//bin//ld}` to
 guarantee use of Solaris :command:`ld`.
 
 .. FIXME: why -without-gnu-ld -with-ld?
@@ -702,16 +702,16 @@ By default,
 :samp:`m68k-*-linux`
 build libraries for both M680x0 and ColdFire processors.  If you only
 need the M680x0 libraries, you can omit the ColdFire ones by passing
-:option:`--with-arch=m68k` to :command:`configure`.  Alternatively, you
-can omit the M680x0 libraries by passing :option:`--with-arch=cf` to
+:option:`--with-arch`:samp:`={m68k}` to :command:`configure`.  Alternatively, you
+can omit the M680x0 libraries by passing :option:`--with-arch`:samp:`={cf}` to
 :command:`configure`.  These targets default to 5206 or 5475 code as
 appropriate for the target system when
-configured with :option:`--with-arch=cf` and 68020 code otherwise.
+configured with :option:`--with-arch`:samp:`={cf}` and 68020 code otherwise.
 
 The :samp:`m68k-*-netbsd` and
 :samp:`m68k-*-openbsd` targets also support the :option:`--with-arch`
 option.  They will generate ColdFire CFV4e code when configured with
-:option:`--with-arch=cf` and 68020 code otherwise.
+:option:`--with-arch`:samp:`={cf}` and 68020 code otherwise.
 
 You can override the default processors listed above by configuring
 with :option:`--with-cpu`:samp:`={target}`.  This :samp:`{target}` can either
@@ -774,7 +774,7 @@ generating either a conditional trap or a break instruction.  Using
 trap results in smaller code, but is only supported on MIPS II and
 later.  Also, some versions of the Linux kernel have a bug that
 prevents trap from generating the proper signal ( ``SIGFPE`` ).  To enable
-the use of break, use the :option:`--with-divide=breaks`
+the use of break, use the :option:`--with-divide`:samp:`={breaks}`
 :command:`configure` option when configuring GCC.  The default is to
 use traps on systems that support them.
 
@@ -821,7 +821,7 @@ Nvidia PTX target.
 Instead of GNU binutils, you will need to install
 `nvptx-tools <https://github.com/MentorEmbedded/nvptx-tools/>`_.
 Tell GCC where to find it:
-:option:`--with-build-time-tools=[install-nvptx-tools]/nvptx-none/bin`.
+:option:`--with-build-time-tools`:samp:`={[install-nvptx-tools]/nvptx-none/bin}`.
 
 You will need newlib 3.0 git revision
 cd31fbb2aea25f94d7ecedc9db16dfc87ab0c316 or later.  It can be
@@ -1036,7 +1036,7 @@ usually recent enough to match GCC's requirements.  There are two
 caveats:
 
 * While the version of the GMP library in Solaris 11.3 works with GCC, you
-  need to configure with :option:`--with-gmp-include=/usr/include/gmp`.
+  need to configure with :option:`--with-gmp-include`:samp:`={/usr/include/gmp}`.
 
 * The version of the MPFR libary included in Solaris 11.3 is too old; you
   need to provide a more recent one.
@@ -1066,7 +1066,7 @@ Starting with Solaris 7, the operating system is capable of executing
 64-bit SPARC V9 binaries.  GCC 3.1 and later properly supports
 this; the :option:`-m64` option enables 64-bit code generation.
 However, if all you want is code tuned for the UltraSPARC CPU, you
-should try the :option:`-mtune=ultrasparc` option instead, which produces
+should try the :option:`-mtune`:samp:`={ultrasparc}` option instead, which produces
 code that, unlike full 64-bit code, can still run on non-UltraSPARC
 machines.
 
@@ -1089,8 +1089,8 @@ sparc64-\*-solaris2\*
 When configuring a 64-bit-default GCC on Solaris/SPARC, you must use a
 build compiler that generates 64-bit code, either by default or by
 specifying :samp:`CC='gcc -m64' CXX='gcc-m64'` to :command:`configure`.
-Additionally, you *must* pass :option:`--build=sparc64-sun-solaris2.11`
-or :option:`--build=sparcv9-sun-solaris2.11` because config.guess
+Additionally, you *must* pass :option:`--build`:samp:`={sparc64-sun-solaris2.11}`
+or :option:`--build`:samp:`={sparcv9-sun-solaris2.11}` because config.guess
 misdetects this situation, which can cause build failures.
 
 When configuring the GNU Multiple Precision Library (GMP), the MPFR
@@ -1189,7 +1189,7 @@ can generate 64-bit x86-64 code with the :option:`-m64` switch.  Since
 GCC 4.7, there is also a configuration that defaults to 64-bit code, but
 can generate 32-bit code with :option:`-m32`.  To configure and build
 this way, you have to provide all support libraries like libgmp
-as 64-bit code, configure with :option:`--target=x86_64-pc-solaris2.11`
+as 64-bit code, configure with :option:`--target`:samp:`={x86_64-pc-solaris2.11}`
 and :samp:`CC=gcc -m64`.
 
 xtensa\*-\*-elf

@@ -59,11 +59,11 @@ MIPS Options
 
   The native Linux/GNU toolchain also supports the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-march=native` has no effect if GCC does not recognize
+  :option:`-march`:samp:`={native}` has no effect if GCC does not recognize
   the processor.
 
   In processor names, a final :samp:`000` can be abbreviated as :samp:`k`
-  (for example, :option:`-march=r2k` ).  Prefixes are optional, and
+  (for example, :option:`-march`:samp:`={r2k}`).  Prefixes are optional, and
   :samp:`vr` may be written :samp:`r`.
 
   Names of the form :samp:`{n}f2_1` refer to processors with
@@ -79,7 +79,7 @@ MIPS Options
   is ``_MIPS_ARCH``, which gives the name of target architecture, as
   a string.  The second has the form ``_MIPS_ARCH_foo``,
   where :samp:`{foo}` is the capitalized value of ``_MIPS_ARCH``.
-  For example, :option:`-march=r2000` sets ``_MIPS_ARCH``
+  For example, :option:`-march`:samp:`={r2000}` sets ``_MIPS_ARCH``
   to ``"r2000"`` and defines the macro ``_MIPS_ARCH_R2000``.
 
   Note that the ``_MIPS_ARCH`` macro uses the processor names given
@@ -108,55 +108,55 @@ MIPS Options
 
 .. option:: -mips1
 
-  Equivalent to :option:`-march=mips1`.
+  Equivalent to :option:`-march`:samp:`={mips1}`.
 
 .. option:: -mips2
 
-  Equivalent to :option:`-march=mips2`.
+  Equivalent to :option:`-march`:samp:`={mips2}`.
 
 .. option:: -mips3
 
-  Equivalent to :option:`-march=mips3`.
+  Equivalent to :option:`-march`:samp:`={mips3}`.
 
 .. option:: -mips4
 
-  Equivalent to :option:`-march=mips4`.
+  Equivalent to :option:`-march`:samp:`={mips4}`.
 
 .. option:: -mips32
 
-  Equivalent to :option:`-march=mips32`.
+  Equivalent to :option:`-march`:samp:`={mips32}`.
 
 .. option:: -mips32r3
 
-  Equivalent to :option:`-march=mips32r3`.
+  Equivalent to :option:`-march`:samp:`={mips32r3}`.
 
 .. option:: -mips32r5
 
-  Equivalent to :option:`-march=mips32r5`.
+  Equivalent to :option:`-march`:samp:`={mips32r5}`.
 
 .. option:: -mips32r6
 
-  Equivalent to :option:`-march=mips32r6`.
+  Equivalent to :option:`-march`:samp:`={mips32r6}`.
 
 .. option:: -mips64
 
-  Equivalent to :option:`-march=mips64`.
+  Equivalent to :option:`-march`:samp:`={mips64}`.
 
 .. option:: -mips64r2
 
-  Equivalent to :option:`-march=mips64r2`.
+  Equivalent to :option:`-march`:samp:`={mips64r2}`.
 
 .. option:: -mips64r3
 
-  Equivalent to :option:`-march=mips64r3`.
+  Equivalent to :option:`-march`:samp:`={mips64r3}`.
 
 .. option:: -mips64r5
 
-  Equivalent to :option:`-march=mips64r5`.
+  Equivalent to :option:`-march`:samp:`={mips64r5}`.
 
 .. option:: -mips64r6
 
-  Equivalent to :option:`-march=mips64r6`.
+  Equivalent to :option:`-march`:samp:`={mips64r6}`.
 
 .. option:: -mips16, -mno-mips16
 
@@ -202,7 +202,7 @@ MIPS Options
 
   GCC supports a variant of the o32 ABI in which floating-point registers
   are 64 rather than 32 bits wide.  You can select this combination with
-  :option:`-mabi=32` :option:`-mfp64`.  This ABI relies on the ``mthc1``
+  :option:`-mabi`:samp:`={32}` :option:`-mfp64`.  This ABI relies on the ``mthc1``
   and ``mfhc1`` instructions and is therefore only supported for
   MIPS32R2, MIPS32R3 and MIPS32R5 processors.
 
@@ -355,7 +355,7 @@ MIPS Options
   IEEE 754 floating-point data with the ``abs.fmt`` and
   ``neg.fmt`` machine instructions.
 
-  By default or when :option:`-mabs=legacy` is used the legacy
+  By default or when :option:`-mabs`:samp:`={legacy}` is used the legacy
   treatment is selected.  In this case these instructions are considered
   arithmetic and avoided where correct operation is required and the
   input operand might be a NaN.  A longer sequence of instructions that
@@ -363,7 +363,7 @@ MIPS Options
   instead unless the :option:`-ffinite-math-only` option has also been
   specified.
 
-  The :option:`-mabs=2008` option selects the IEEE 754-2008 treatment.  In
+  The :option:`-mabs`:samp:`={2008}` option selects the IEEE 754-2008 treatment.  In
   this case these instructions are considered non-arithmetic and therefore
   operating correctly in all cases, including in particular where the
   input operand is a NaN.  These instructions are therefore always used
@@ -374,18 +374,18 @@ MIPS Options
   These options control the encoding of the special not-a-number (NaN)
   IEEE 754 floating-point data.
 
-  The :option:`-mnan=legacy` option selects the legacy encoding.  In this
+  The :option:`-mnan`:samp:`={legacy}` option selects the legacy encoding.  In this
   case quiet NaNs (qNaNs) are denoted by the first bit of their trailing
   significand field being 0, whereas signaling NaNs (sNaNs) are denoted
   by the first bit of their trailing significand field being 1.
 
-  The :option:`-mnan=2008` option selects the IEEE 754-2008 encoding.  In
+  The :option:`-mnan`:samp:`={2008}` option selects the IEEE 754-2008 encoding.  In
   this case qNaNs are denoted by the first bit of their trailing
   significand field being 1, whereas sNaNs are denoted by the first bit of
   their trailing significand field being 0.
 
-  The default is :option:`-mnan=legacy` unless GCC has been configured with
-  :option:`--with-nan=2008`.
+  The default is :option:`-mnan`:samp:`={legacy}` unless GCC has been configured with
+  :option:`--with-nan`:samp:`={2008}`.
 
 .. option:: -mllsc, -mno-llsc
 
@@ -504,7 +504,7 @@ MIPS Options
 
   Assume (do not assume) that all symbols have 32-bit values, regardless
   of the selected ABI.  This option is useful in combination with
-  :option:`-mabi=64` and :option:`-mno-abicalls` because it allows GCC
+  :option:`-mabi`:samp:`={64}` and :option:`-mno-abicalls` because it allows GCC
   to generate shorter and faster references to symbolic addresses.
 
 .. option:: -G num, -G
@@ -634,7 +634,7 @@ MIPS Options
   :option:`-mdivide-breaks` to force the use of breaks.
 
   The default is usually :option:`-mdivide-traps`, but this can be
-  overridden at configure time using :option:`--with-divide=breaks`.
+  overridden at configure time using :option:`--with-divide`:samp:`={breaks}`.
   Divide-by-zero checks can be completely disabled using
   :option:`-mno-check-zero-division`.
 
@@ -724,7 +724,7 @@ MIPS Options
 
   This option can only be used if the target architecture supports
   branch-likely instructions.  :option:`-mfix-r10000` is the default when
-  :option:`-march=r10000` is used; :option:`-mno-fix-r10000` is the default
+  :option:`-march`:samp:`={r10000}` is used; :option:`-mno-fix-r10000` is the default
   otherwise.
 
 .. option:: -mfix-r5900
@@ -861,19 +861,19 @@ MIPS Options
 .. option:: -mcompact-branches=never
 
   These options control which form of branches will be generated.  The
-  default is :option:`-mcompact-branches=optimal`.
+  default is :option:`-mcompact-branches`:samp:`={optimal}`.
 
-  The :option:`-mcompact-branches=never` option ensures that compact branch
+  The :option:`-mcompact-branches`:samp:`={never}` option ensures that compact branch
   instructions will never be generated.
 
-  The :option:`-mcompact-branches=always` option ensures that a compact
+  The :option:`-mcompact-branches`:samp:`={always}` option ensures that a compact
   branch instruction will be generated if available.  If a compact branch
   instruction is not available, a delay slot form of the branch will be
   used instead.
 
   This option is supported from MIPS Release 6 onwards.
 
-  The :option:`-mcompact-branches=optimal` option will cause a delay slot
+  The :option:`-mcompact-branches`:samp:`={optimal}` option will cause a delay slot
   branch to be used if one is available in the current ISA and the delay
   slot is successfully filled.  If the delay slot is not filled, a compact
   branch will be chosen if one is available.

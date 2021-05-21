@@ -1565,7 +1565,7 @@ Other attributes
   Target supports automatic stack alignment.
 
 ``branch_cost``
-  Target supports :option:`-branch-cost=N`.
+  Target supports :option:`-branch-cost`:samp:`={N}`.
 
 ``cxa_atexit``
   Target uses ``__cxa_atexit``.

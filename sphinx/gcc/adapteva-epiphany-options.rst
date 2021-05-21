@@ -110,7 +110,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
     This is the mode used to perform integer calculations in the FPU, e.g.
     integer multiply, or integer multiply-and-accumulate.
 
-    The default is :option:`-mfp-mode=caller`
+    The default is :option:`-mfp-mode`:samp:`={caller}`
 
 .. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify
 .. option:: -mpostmodify

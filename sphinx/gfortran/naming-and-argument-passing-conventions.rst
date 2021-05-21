@@ -147,9 +147,9 @@ argument ( ``logical(kind=C_bool),value`` ) is used to indicate
 whether the argument is present.
 
 Arguments which are assumed-shape, assumed-rank or deferred-rank
-arrays or, with :option:`-fcoarray=lib`, allocatable scalar coarrays use
+arrays or, with :option:`-fcoarray`:samp:`={lib}`, allocatable scalar coarrays use
 an array descriptor.  All other arrays pass the address of the
-first element of the array.  With :option:`-fcoarray=lib`, the token
+first element of the array.  With :option:`-fcoarray`:samp:`={lib}`, the token
 and the offset belonging to nonallocatable coarrays dummy arguments
 are passed as hidden argument along the character length hidden
 arguments.  The token is an opaque pointer identifying the coarray

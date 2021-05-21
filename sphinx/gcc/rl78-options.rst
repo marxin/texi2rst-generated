@@ -35,13 +35,13 @@ RL78 Options
 
   If this option is set it also selects the type of hardware multiply
   support to use, unless this is overridden by an explicit
-  :option:`-mmul=none` option on the command line.  Thus specifying
-  :option:`-mcpu=g13` enables the use of the G13 hardware multiply
-  peripheral and specifying :option:`-mcpu=g10` disables the use of
+  :option:`-mmul`:samp:`={none}` option on the command line.  Thus specifying
+  :option:`-mcpu`:samp:`={g13}` enables the use of the G13 hardware multiply
+  peripheral and specifying :option:`-mcpu`:samp:`={g10}` disables the use of
   hardware multiplications altogether.
 
   Note, although the RL78/G14 core is the default target, specifying
-  :option:`-mcpu=g14` or :option:`-mcpu=rl78` on the command line does
+  :option:`-mcpu`:samp:`={g14}` or :option:`-mcpu`:samp:`={rl78}` on the command line does
   change the behavior of the toolchain since it also enables G14
   hardware multiply support.  If these options are not specified on the
   command line then software multiplication routines will be used even

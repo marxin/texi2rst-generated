@@ -315,7 +315,7 @@ information useful for debugging do not run at all, so that
 
   There is a proposed representation for view numbers that is not backward
   compatible with the location list format introduced in DWARF 5, that can
-  be enabled with :option:`-gvariable-location-views=incompat5`.  This
+  be enabled with :option:`-gvariable-location-views`:samp:`={incompat5}`.  This
   option may be removed in the future, is only provided as a reference
   implementation of the proposed representation.  Debug information
   consumers are not expected to support this extended format, and they
@@ -425,7 +425,7 @@ information useful for debugging do not run at all, so that
 
   You may need to experiment to determine the best settings for your application.
 
-  The default is :option:`-femit-struct-debug-detailed=all`.
+  The default is :option:`-femit-struct-debug-detailed`:samp:`={all}`.
 
   This option works only with DWARF debug output.
 

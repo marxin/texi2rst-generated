@@ -799,7 +799,7 @@ The files are created in the directory of the output file.
 .. option:: -fchecking, -fno-checking
 
   Enable internal consistency checking.  The default depends on
-  the compiler configuration.  :option:`-fchecking=2` enables further
+  the compiler configuration.  :option:`-fchecking`:samp:`={2}` enables further
   internal consistency checking that might affect code generation.
 
 .. option:: -frandom-seed=string
@@ -838,8 +838,8 @@ The files are created in the directory of the output file.
   Equivalent to :option:`-save-temps -dumpdir `outdir/, where
   outdir/ is the directory of the output file specified after the
   :option:`-o` option, including any directory separators.  If the
-  :option:`-o` option is not used, the :option:`-save-temps=obj` switch
-  behaves like :option:`-save-temps=cwd`.
+  :option:`-o` option is not used, the :option:`-save-temps`:samp:`={obj}` switch
+  behaves like :option:`-save-temps`:samp:`={cwd}`.
 
 .. option:: -time[=file]
 
@@ -1037,7 +1037,7 @@ The files are created in the directory of the output file.
   the name of the counter and list of closed intervals.
   The :samp:`{lower_bound}` is optional and is zero
   initialized if not set.
-  For example, with :option:`-fdbg-cnt=dce:2-4:10-11,tail_call:10`,
+  For example, with :option:`-fdbg-cnt`:samp:`={dce:2-4:10-11,tail_call:10}`,
   ``dbg_cnt(dce)`` returns true only for second, third, fourth, tenth and
   eleventh invocation.
   For ``dbg_cnt(tail_call)`` true is returned for first 10 invocations.
@@ -1084,7 +1084,7 @@ The files are created in the directory of the output file.
 
 .. option:: -print-libgcc-file-name
 
-  Same as :option:`-print-file-name=libgcc.a`.
+  Same as :option:`-print-file-name`:samp:`={libgcc.a}`.
 
   This is useful when you use :option:`-nostdlib` or :option:`-nodefaultlibs`
   but you do want to link with libgcc.a.  You can do:

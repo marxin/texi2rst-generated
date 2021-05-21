@@ -13,11 +13,11 @@ a general-purpose header file that should be usable by all programs,
 including ISO C programs.  The keywords ``asm``, ``typeof`` and
 ``inline`` are not available in programs compiled with
 :option:`-ansi` or :option:`-std` (although ``inline`` can be used in a
-program compiled with :option:`-std=c99` or a later standard).  The
+program compiled with :option:`-std`:samp:`={c99}` or a later standard).  The
 ISO C99 keyword
-``restrict`` is only available when :option:`-std=gnu99` (which will
-eventually be the default) or :option:`-std=c99` (or the equivalent
-:option:`-std=iso9899:1999` ), or an option for a later standard
+``restrict`` is only available when :option:`-std`:samp:`={gnu99}` (which will
+eventually be the default) or :option:`-std`:samp:`={c99}` (or the equivalent
+:option:`-std`:samp:`={iso9899:1999}`), or an option for a later standard
 version, is used.
 
 The way to solve these problems is to put :samp:`__` at the beginning and

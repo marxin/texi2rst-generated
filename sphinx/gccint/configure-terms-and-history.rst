@@ -41,7 +41,7 @@ If build and host are the same, the GCC you are building will also be
 used to build the target libraries (like ``libstdc++`` ).  If build and host
 are different, you must have already built and installed a cross
 compiler that will be used to build the target libraries (if you
-configured with :option:`--target=foo-bar`, this compiler will be called
+configured with :option:`--target`:samp:`={foo-bar}`, this compiler will be called
 :command:`foo-bar-gcc`).
 
 In the case of target libraries, the machine you're building for is the

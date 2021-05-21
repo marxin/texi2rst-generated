@@ -29,7 +29,7 @@ These options are defined specifically for the CRIS ports.
 .. option:: -metrax4, -metrax100
 
   The options :option:`-metrax4` and :option:`-metrax100` are synonyms for
-  :option:`-march=v3` and :option:`-march=v8` respectively.
+  :option:`-march`:samp:`={v3}` and :option:`-march`:samp:`={v8}` respectively.
 
 .. option:: -mmul-bug-workaround, -mno-mul-bug-workaround
 

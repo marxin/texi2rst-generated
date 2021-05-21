@@ -223,7 +223,7 @@ corresponding :option:`--without` option.
     Specify additional command line driver SPECS.
     This can be useful if you need to turn on a non-standard feature by
     default without modifying the compiler's source code, for instance
-    :option:`--with-specs=%{!fcommon:%{!fno-common:-fno-common}}`.
+    :option:`--with-specs`:samp:`={%{!fcommon:%{!fno-common:-fno-common}}}`.
     See :ref:`Specifying subprocesses and the switches to pass to them <spec-files>`,
 
 .. option:: --program-prefix=prefix
@@ -231,13 +231,13 @@ corresponding :option:`--without` option.
   GCC supports some transformations of the names of its programs when
   installing them.  This option prepends :samp:`{prefix}` to the names of
   programs to install in :samp:`{bindir}` (see above).  For example, specifying
-  :option:`--program-prefix=foo-` would result in :samp:`gcc`
+  :option:`--program-prefix`:samp:`={foo-}` would result in :samp:`gcc`
   being installed as /usr/local/bin/foo-gcc.
 
 .. option:: --program-suffix=suffix
 
   Appends :samp:`{suffix}` to the names of programs to install in :samp:`{bindir}`
-  (see above).  For example, specifying :option:`--program-suffix=-3.1`
+  (see above).  For example, specifying :option:`--program-suffix`:samp:`={-3.1}`
   would result in :samp:`gcc` being installed as
   /usr/local/bin/gcc-3.1.
 
@@ -251,7 +251,7 @@ corresponding :option:`--without` option.
   the :samp:`g++` program name to be transformed to
   /usr/local/bin/gspecial++ without changing other program names,
   you could use the pattern
-  :option:`--program-transform-name='s/^gcc$/myowngcc/; s/^g++$/gspecial++/'`
+  :option:`--program-transform-name`:samp:`={'s/^gcc$/myowngcc/; s/^g++$/gspecial++/'}`
   to achieve this effect.
 
   All three options can be combined and used together, resulting in more
@@ -267,7 +267,7 @@ corresponding :option:`--without` option.
   with the target alias in front of their name, as in
   :samp:`i686-pc-linux-gnu-gcc`.  All of the above transformations happen
   before the target alias is prepended to the name-so, specifying
-  :option:`--program-prefix=foo-` and program-suffix=-3.1, the
+  :option:`--program-prefix`:samp:`={foo-}` and program-suffix:samp:`={-3.1}`, the
   resulting binary would be installed as
   /usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1.
 
@@ -645,12 +645,12 @@ corresponding :option:`--without` option.
     Example 1: to configure a compiler for SH4A only, but supporting both
     endians, with little endian being the default:
 
-    :option:`--with-cpu=sh4a` :option:`--with-endian=little,big` :option:`--with-multilib-list` =
+    :option:`--with-cpu`:samp:`={sh4a}` :option:`--with-endian`:samp:`={little,big}` :option:`--with-multilib-list` =
     Example 2: to configure a compiler for both SH4A and SH4AL-DSP, but with
     only little endian SH4AL:
 
-    :option:`--with-cpu=sh4a` :option:`--with-endian=little,big` \
-    :option:`--with-multilib-list=sh4al,!mb/m4al`
+    :option:`--with-cpu`:samp:`={sh4a}` :option:`--with-endian`:samp:`={little,big}` \
+    :option:`--with-multilib-list`:samp:`={sh4al,!mb/m4al}`
 
   ``x86-64-*-linux*``
     :samp:`{list}` is a comma separated list of ``m32``, ``m64`` and
@@ -726,12 +726,12 @@ corresponding :option:`--without` option.
   model available will be configured for use.  Beware that on some
   systems, GCC has not been taught what threading models are generally
   available for the system.  In this case, :option:`--enable-threads` is an
-  alias for :option:`--enable-threads=single`.
+  alias for :option:`--enable-threads`:samp:`={single}`.
 
 .. option:: --disable-threads
 
   Specify that threading support should be disabled for the system.
-  This is an alias for :option:`--enable-threads=single`.
+  This is an alias for :option:`--enable-threads`:samp:`={single}`.
 
 .. option:: --enable-threads=lib
 
@@ -785,7 +785,7 @@ corresponding :option:`--without` option.
 .. option:: --disable-tls
 
   Specify that the target does not support TLS.
-  This is an alias for :option:`--enable-tls=no`.
+  This is an alias for :option:`--enable-tls`:samp:`={no}`.
 
 .. option:: --disable-tm-clone-registry
 
@@ -824,7 +824,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-fpmath=isa
 
-  This options sets :option:`-mfpmath=sse` by default and specifies the default
+  This options sets :option:`-mfpmath`:samp:`={sse}` by default and specifies the default
   ISA for floating-point arithmetics.  You can select either :samp:`sse` which
   enables :option:`-msse2` or :samp:`avx` which enables :option:`-mavx` by default.
   This option is only supported on i386 and x86-64 targets.
@@ -858,7 +858,7 @@ corresponding :option:`--without` option.
 
   On MIPS targets, set the :option:`-mno-odd-spreg` option by default when using
   the o32 ABI.  This is normally used in conjunction with
-  :option:`--with-fp-32=64` in order to target the o32 FP64A ABI extension.
+  :option:`--with-fp-32`:samp:`={64}` in order to target the o32 FP64A ABI extension.
 
 .. option:: --with-nan=encoding
 
@@ -867,18 +867,18 @@ corresponding :option:`--without` option.
   possibilities for :samp:`{encoding}` are:
 
   ``legacy``
-    Use the legacy encoding, as with the :option:`-mnan=legacy` command-line
+    Use the legacy encoding, as with the :option:`-mnan`:samp:`={legacy}` command-line
     option.
 
   ``2008``
-    Use the 754-2008 encoding, as with the :option:`-mnan=2008` command-line
+    Use the 754-2008 encoding, as with the :option:`-mnan`:samp:`={2008}` command-line
     option.
 
     To use this configuration option you must have an assembler version
   installed that supports the :option:`-mnan` = command-line option too.
   In the absence of this configuration option the default convention is
-  the legacy encoding, as when neither of the :option:`-mnan=2008` and
-  :option:`-mnan=legacy` command-line options has been used.
+  the legacy encoding, as when neither of the :option:`-mnan`:samp:`={2008}` and
+  :option:`-mnan`:samp:`={legacy}` command-line options has been used.
 
 .. option:: --with-divide=type
 
@@ -1497,17 +1497,17 @@ corresponding :option:`--without` option.
   or the IEEE 128-bit floating point format on PowerPC Linux systems.
   This configuration switch will only work on little endian PowerPC
   Linux systems and on big endian 64-bit systems where the default cpu
-  is at least power7 (i.e. :option:`--with-cpu=power7`,
-  :option:`--with-cpu=power8`, or :option:`--with-cpu=power9` is used).
+  is at least power7 (i.e. :option:`--with-cpu`:samp:`={power7}`,
+  :option:`--with-cpu`:samp:`={power8}`, or :option:`--with-cpu`:samp:`={power9}` is used).
 
   If you use the :option:`--with-long-double-64` configuration option,
-  the :option:`--with-long-double-format=ibm` and
-  :option:`--with-long-double-format=ieee` options are ignored.
+  the :option:`--with-long-double-format`:samp:`={ibm}` and
+  :option:`--with-long-double-format`:samp:`={ieee}` options are ignored.
 
   The default ``long double`` format is to use IBM extended double.
   Until all of the libraries are converted to use IEEE 128-bit floating
   point, it is not recommended to use
-  :option:`--with-long-double-format=ieee`.
+  :option:`--with-long-double-format`:samp:`={ieee}`.
 
   On little endian PowerPC Linux systems, if you explicitly set the
   ``long double`` type, it will build multilibs to allow you to
@@ -1533,15 +1533,15 @@ corresponding :option:`--without` option.
   (:samp:`--with-gmp={gmpinstalldir}`,
   :samp:`--with-mpfr=/{mpfrinstalldir}`,
   :samp:`--with-mpc=/{mpcinstalldir}`).  The
-  :option:`--with-gmp=/`:samp:`{gmpinstalldir}` option is shorthand for
-  :option:`--with-gmp-lib=/`:samp:`{gmpinstalldir}` /lib and
-  :option:`--with-gmp-include=/`:samp:`{gmpinstalldir}` /include.  Likewise the
-  :option:`--with-mpfr=/`:samp:`{mpfrinstalldir}` option is shorthand for
-  :option:`--with-mpfr-lib=/`:samp:`{mpfrinstalldir}` /lib and
-  :option:`--with-mpfr-include=/`:samp:`{mpfrinstalldir}` /include, also the
-  :option:`--with-mpc=/`:samp:`{mpcinstalldir}` option is shorthand for
-  :option:`--with-mpc-lib=/`:samp:`{mpcinstalldir}` /lib and
-  :option:`--with-mpc-include=/`:samp:`{mpcinstalldir}` /include.  If these
+  :option:`--with-gmp`:samp:`=/{gmpinstalldir}` option is shorthand for
+  :option:`--with-gmp-lib`:samp:`=/{gmpinstalldir}` /lib and
+  :option:`--with-gmp-include`:samp:`=/{gmpinstalldir}` /include.  Likewise the
+  :option:`--with-mpfr`:samp:`=/{mpfrinstalldir}` option is shorthand for
+  :option:`--with-mpfr-lib`:samp:`=/{mpfrinstalldir}` /lib and
+  :option:`--with-mpfr-include`:samp:`=/{mpfrinstalldir}` /include, also the
+  :option:`--with-mpc`:samp:`=/{mpcinstalldir}` option is shorthand for
+  :option:`--with-mpc-lib`:samp:`=/{mpcinstalldir}` /lib and
+  :option:`--with-mpc-include`:samp:`=/{mpcinstalldir}` /include.  If these
   shorthand assumptions are not correct, you can use the explicit
   include and lib options directly.  You might also need to ensure the
   shared libraries can be found by the dynamic linker when building and
@@ -1556,9 +1556,9 @@ corresponding :option:`--without` option.
   If you do not have the isl library installed in a standard location and you
   want to build GCC, you can explicitly specify the directory where it is
   installed (:samp:`--with-isl=/{islinstalldir}`). The
-  :option:`--with-isl=/`:samp:`{islinstalldir}` option is shorthand for
-  :option:`--with-isl-lib=/`:samp:`{islinstalldir}` /lib and
-  :option:`--with-isl-include=/`:samp:`{islinstalldir}` /include. If this
+  :option:`--with-isl`:samp:`=/{islinstalldir}` option is shorthand for
+  :option:`--with-isl-lib`:samp:`=/{islinstalldir}` /lib and
+  :option:`--with-isl-include`:samp:`=/{islinstalldir}` /include. If this
   shorthand assumption is not correct, you can use the explicit
   include and lib options directly.
 
@@ -1625,9 +1625,9 @@ corresponding :option:`--without` option.
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
   where :samp:`auto` is the default.  :samp:`auto-if-env` makes
-  :option:`-fdiagnostics-color=auto` the default if :envvar:`GCC_COLORS`
+  :option:`-fdiagnostics-color`:samp:`={auto}` the default if :envvar:`GCC_COLORS`
   is present and non-empty in the environment of the compiler, and
-  :option:`-fdiagnostics-color=never` otherwise.
+  :option:`-fdiagnostics-color`:samp:`={never}` otherwise.
 
 .. option:: --with-diagnostics-urls=choice
 
@@ -1635,9 +1635,9 @@ corresponding :option:`--without` option.
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
   where :samp:`auto` is the default.  :samp:`auto-if-env` makes
-  :option:`-fdiagnostics-urls=auto` the default if :envvar:`GCC_URLS`
+  :option:`-fdiagnostics-urls`:samp:`={auto}` the default if :envvar:`GCC_URLS`
   or :envvar:`TERM_URLS` is present and non-empty in the environment of the
-  compiler, and :option:`-fdiagnostics-urls=never` otherwise.
+  compiler, and :option:`-fdiagnostics-urls`:samp:`={never}` otherwise.
 
 .. option:: --enable-lto
 
@@ -1721,10 +1721,10 @@ corresponding :option:`--without` option.
   If you configure GCC with offloading which uses an HSA run-time such as
   AMDGCN but do not have the HSA run-time library installed in a standard
   location then you can explicitly specify the directory where they are
-  installed.  The :option:`--with-hsa-runtime=/`:samp:`{hsainstalldir}` option
+  installed.  The :option:`--with-hsa-runtime`:samp:`=/{hsainstalldir}` option
   is a shorthand for
-  :option:`--with-hsa-runtime-lib=/`:samp:`{hsainstalldir}` /lib and
-  :option:`--with-hsa-runtime-include=/`:samp:`{hsainstalldir}` /include.
+  :option:`--with-hsa-runtime-lib`:samp:`=/{hsainstalldir}` /lib and
+  :option:`--with-hsa-runtime-include`:samp:`=/{hsainstalldir}` /include.
 
 .. option:: --enable-cet
 
@@ -1865,17 +1865,17 @@ Cross-Compiler-Specific OptionsThe following options only apply to building cros
     available, and  :option:`-mdouble` = resp. :option:`-mlong-double` = acts
     as a multilib option.
 
-  * If :option:`--with-long-double=double` is specified, :samp:`double` and
+  * If :option:`--with-long-double`:samp:`={double}` is specified, :samp:`double` and
     :samp:`long double` will have the same layout.
 
-  * The defaults are :option:`--with-long-double=64,32` and
-    :option:`--with-double=32,64`.  The default :samp:`double` layout imposed by
+  * The defaults are :option:`--with-long-double`:samp:`={64,32}` and
+    :option:`--with-double`:samp:`={32,64}`.  The default :samp:`double` layout imposed by
     the latter is compatible with older versions of the compiler that implement
     :samp:`double` as a 32-bit type, which does not comply to the language standard.
 
   Not all combinations of :option:`--with-double` = and
   :option:`--with-long-double` = are valid.  For example, the combination
-  :option:`--with-double=32,64` :option:`--with-long-double=32` will be
+  :option:`--with-double`:samp:`={32,64}` :option:`--with-long-double`:samp:`={32}` will be
   rejected because the first option specifies the availability of
   multilibs for :samp:`double`, whereas the second option implies
   that :samp:`long double` - and hence also :samp:`double` - is always

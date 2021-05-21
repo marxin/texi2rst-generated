@@ -225,7 +225,7 @@ These options are defined for AVR implementations:
   This option is used internally by the compiler to select and
   build multilibs for architectures ``avr2`` and ``avr25``.
   These architectures mix devices with and without ``SPH``.
-  For any setting other than :option:`-mmcu=avr2` or :option:`-mmcu=avr25`
+  For any setting other than :option:`-mmcu`:samp:`={avr2}` or :option:`-mmcu`:samp:`={avr25}`
   the compiler driver adds or removes this option from the compiler
   proper's command line, because the compiler then knows if the device
   or architecture has an 8-bit stack pointer and thus no ``SPH``
@@ -264,7 +264,7 @@ These options are defined for AVR implementations:
 
 .. option:: -nodevicespecs
 
-  Don't add :option:`-specs=device-specs/specs-`:samp:`{mcu}` to the compiler driver's
+  Don't add :option:`-specs`:samp:`=device-specs/specs-{mcu}` to the compiler driver's
   command line.  The user takes responsibility for supplying the sub-processes
   like compiler proper, assembler and linker with appropriate command line
   options.  This means that the user has to supply her private device specs
@@ -412,7 +412,7 @@ the compiler and are subject to some limitations:
         return func_4();
     }
 
-  and the application be linked with :option:`-Wl,--defsym,func_4=0x4`.
+  and the application be linked with :option:`-Wl,--defsym,func_4`:samp:`={0x4}`.
   Alternatively, ``func_4`` can be defined in the linker script.
 
 Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
@@ -487,13 +487,13 @@ AVR Named Address Spaces and AVR Built-in Functions.
   ``avrxmega2``, ``avrxmega3``, ``avrxmega4``,
   ``avrxmega5``, ``avrxmega6``, ``avrxmega7``, respectively.
   If :samp:`{mcu}` specifies a device, this built-in macro is set
-  accordingly. For example, with :option:`-mmcu=atmega8` the macro is
+  accordingly. For example, with :option:`-mmcu`:samp:`={atmega8}` the macro is
   defined to ``4``.
 
 :samp:`__AVR_{Device}__`
   Setting :option:`-mmcu`:samp:`={device}` defines this built-in macro which reflects
-  the device's name. For example, :option:`-mmcu=atmega8` defines the
-  built-in macro ``__AVR_ATmega8__``, :option:`-mmcu=attiny261a` defines
+  the device's name. For example, :option:`-mmcu`:samp:`={atmega8}` defines the
+  built-in macro ``__AVR_ATmega8__``, :option:`-mmcu`:samp:`={attiny261a}` defines
   ``__AVR_ATtiny261A__``, etc.
 
   The built-in macros' names follow
@@ -507,7 +507,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
 
 ``__AVR_DEVICE_NAME__``
   Setting :option:`-mmcu`:samp:`={device}` defines this built-in macro to
-  the device's name. For example, with :option:`-mmcu=atmega8` the macro
+  the device's name. For example, with :option:`-mmcu`:samp:`={atmega8}` the macro
   is defined to ``atmega8``.
 
   If :samp:`{device}` is not a device but only a core architecture like
@@ -558,7 +558,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
   The device has the SPH (high part of stack pointer) special function
   register or has an 8-bit stack pointer, respectively.
   The definition of these macros is affected by :option:`-mmcu` = and
-  in the cases of :option:`-mmcu=avr2` and :option:`-mmcu=avr25` also
+  in the cases of :option:`-mmcu`:samp:`={avr2}` and :option:`-mmcu`:samp:`={avr25}` also
   by :option:`-msp8`.
 
 ``__AVR_HAVE_RAMPD__`` ``__AVR_HAVE_RAMPX__`` ``__AVR_HAVE_RAMPY__`` ``__AVR_HAVE_RAMPZ__``

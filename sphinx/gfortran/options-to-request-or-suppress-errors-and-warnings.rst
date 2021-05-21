@@ -78,8 +78,8 @@ by GNU Fortran:
   nonstandard practices, but not all.
   However, improvements to GNU Fortran in this area are welcome.
 
-  This should be used in conjunction with :option:`-std=f95`,
-  :option:`-std=f2003`, :option:`-std=f2008` or :option:`-std=f2018`.
+  This should be used in conjunction with :option:`-std`:samp:`={f95}`,
+  :option:`-std`:samp:`={f2003}`, :option:`-std`:samp:`={f2008}` or :option:`-std`:samp:`={f2018}`.
 
 .. option:: -pedantic-errors
 
@@ -142,8 +142,8 @@ by GNU Fortran:
 
   Warn about missing ampersand in continued character constants. The
   warning is given with :option:`-Wampersand`, :option:`-pedantic`,
-  :option:`-std=f95`, :option:`-std=f2003`, :option:`-std=f2008` and
-  :option:`-std=f2018`. Note: With no ampersand given in a continued
+  :option:`-std`:samp:`={f95}`, :option:`-std`:samp:`={f2003}`, :option:`-std`:samp:`={f2008}` and
+  :option:`-std`:samp:`={f2018}`. Note: With no ampersand given in a continued
   character constant, GNU Fortran assumes continuation at the first
   non-comment, non-whitespace character after the ampersand that
   initiated the continuation.
@@ -186,7 +186,7 @@ by GNU Fortran:
 
   Warn when a source code line will be truncated.  This option is
   implied by :option:`-Wall`.  For free-form source code, the default is
-  :option:`-Werror=line-truncation` such that truncations are reported as
+  :option:`-Werror`:samp:`={line-truncation}` such that truncations are reported as
   error.
 
 .. option:: -Wconversion
@@ -334,8 +334,8 @@ by GNU Fortran:
   of the Fortran Character Set.  For continuation lines, a tab followed
   by a digit between 1 and 9 is supported.  :option:`-Wtabs` will cause a
   warning to be issued if a tab is encountered. Note, :option:`-Wtabs` is
-  active for :option:`-pedantic`, :option:`-std=f95`, :option:`-std=f2003`,
-  :option:`-std=f2008`, :option:`-std=f2018` and
+  active for :option:`-pedantic`, :option:`-std`:samp:`={f95}`, :option:`-std`:samp:`={f2003}`,
+  :option:`-std`:samp:`={f2008}`, :option:`-std`:samp:`={f2018}` and
   :option:`-Wall`.
 
 .. option:: -Wundefined-do-loop

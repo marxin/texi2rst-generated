@@ -31,8 +31,8 @@ These command-line options are defined for PRU target:
 
 .. option:: -mabi=variant
 
-  Specify the ABI variant to output code for.  :option:`-mabi=ti` selects the
-  unmodified TI ABI while :option:`-mabi=gnu` selects a GNU variant that copes
+  Specify the ABI variant to output code for.  :option:`-mabi`:samp:`={ti}` selects the
+  unmodified TI ABI while :option:`-mabi`:samp:`={gnu}` selects a GNU variant that copes
   more naturally with certain GCC assumptions.  These are the differences:
 
   :samp:`Function Pointer Size`
@@ -45,13 +45,13 @@ These command-line options are defined for PRU target:
     the pointer can be NULL in case the caller is not using the returned value.
     GNU always passes and expects a valid return value pointer.
 
-    The current :option:`-mabi=ti` implementation simply raises a compile error
+    The current :option:`-mabi`:samp:`={ti}` implementation simply raises a compile error
   when any of the above code constructs is detected.  As a consequence
   the standard C library cannot be built and it is omitted when linking with
-  :option:`-mabi=ti`.
+  :option:`-mabi`:samp:`={ti}`.
 
   Relaxation is a GNU feature and for safety reasons is disabled when using
-  :option:`-mabi=ti`.  The TI toolchain does not emit relocations for QBBx
+  :option:`-mabi`:samp:`={ti}`.  The TI toolchain does not emit relocations for QBBx
   instructions, so the GNU linker cannot adjust them when shortening adjacent
   LDI32 pseudo instructions.
 

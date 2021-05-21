@@ -29,7 +29,7 @@ These options are defined for the MSP430:
 
   In addition an MCU-specific linker script is added to the linker
   command line.  The script's name is the name of the MCU with
-  .ld appended.  Thus specifying :option:`-mmcu=xxx` on the :command:`gcc`
+  .ld appended.  Thus specifying :option:`-mmcu`:samp:`={xxx}` on the :command:`gcc`
   command line defines the C preprocessor symbol ``__XXX__`` and
   cause the linker to search for a script called xxx.ld.
 

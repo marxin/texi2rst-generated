@@ -18,7 +18,7 @@ the `wiki <https://gcc.gnu.org/wiki/Fortran2008Status>`_ has some information
 about the current Fortran 2008 implementation status.  In particular, the
 following is implemented.
 
-* The :option:`-std=f2008` option and support for the file extensions
+* The :option:`-std`:samp:`={f2008}` option and support for the file extensions
   .f08 and .F08.
 
 * The ``OPEN`` statement now supports the ``NEWUNIT=`` option,
@@ -61,8 +61,8 @@ following is implemented.
   ``ISO_C_BINDINGS`` and ``COMPILER_VERSION`` and ``COMPILER_OPTIONS``
   of ``ISO_FORTRAN_ENV``.
 
-* Coarray support for serial programs with :option:`-fcoarray=single` flag
-  and experimental support for multiple images with the :option:`-fcoarray=lib`
+* Coarray support for serial programs with :option:`-fcoarray`:samp:`={single}` flag
+  and experimental support for multiple images with the :option:`-fcoarray`:samp:`={lib}`
   flag.
 
 * Submodules are supported. It should noted that ``MODULEs`` do not
@@ -108,7 +108,7 @@ following is implemented.
 * Internal procedures can now be used as actual argument.
 
 * Minor features: obsolesce diagnostics for ``ENTRY`` with
-  :option:`-std=f2008` ; a line may start with a semicolon; for internal
+  :option:`-std`:samp:`={f2008}`; a line may start with a semicolon; for internal
   and module procedures ``END`` can be used instead of
   ``END SUBROUTINE`` and ``END FUNCTION`` ; ``SELECTED_REAL_KIND``
   now also takes a ``RADIX`` argument; intrinsic types are supported

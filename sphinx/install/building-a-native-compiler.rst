@@ -59,7 +59,7 @@ Again, if the native compiler miscompiles the stage1 compiler, you may
 need to work around this by avoiding non-working parts of the stage1
 compiler.  Use ``STAGE1_TFLAGS`` to this end.
 
-If you used the flag :option:`--enable-languages=...` to restrict
+If you used the flag :option:`--enable-languages`:samp:`={...}` to restrict
 the compilers to be built, only those you've actually enabled will be
 built.  This will of course only build those runtime libraries, for
 which the particular compiler has been built.  Please note,

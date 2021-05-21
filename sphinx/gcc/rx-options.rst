@@ -141,7 +141,7 @@ These command-line options are defined for RX targets:
   allocated first to satisfy the requirements of :option:`-mint-register`,
   then :option:`-mpid` and finally :option:`-msmall-data-limit`.  Thus it
   is possible for the small data area register to be ``r8`` if both
-  :option:`-mint-register=4` and :option:`-mpid` are specified on the
+  :option:`-mint-register`:samp:`={4}` and :option:`-mpid` are specified on the
   command line.
 
   By default this feature is not enabled.  The default can be restored

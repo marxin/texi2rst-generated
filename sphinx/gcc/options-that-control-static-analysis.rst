@@ -199,7 +199,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-array-index, -Wanalyzer-tainted-array-index
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker=taint` to enable it;
+  :option:`-fanalyzer-checker`:samp:`={taint}` to enable it;
   use :option:`-Wno-analyzer-tainted-array-index` to disable it.
 
   This diagnostic warns for paths through the code in which a value

@@ -52,8 +52,8 @@ These are the options defined for the Altera Nios II processor.
     linker script to allocate them within the addressable range of the
     global pointer.
 
-    :option:`-mgpopt` is equivalent to :option:`-mgpopt=local`, and
-  :option:`-mno-gpopt` is equivalent to :option:`-mgpopt=none`.
+    :option:`-mgpopt` is equivalent to :option:`-mgpopt`:samp:`={local}`, and
+  :option:`-mno-gpopt` is equivalent to :option:`-mgpopt`:samp:`={none}`.
 
   The default is :option:`-mgpopt` except when :option:`-fpic` or
   :option:`-fPIC` is specified to generate position-independent code.
@@ -131,7 +131,7 @@ These are the options defined for the Altera Nios II processor.
 ``-mbmx`` ``-mno-bmx`` ``-mcdx`` ``-mno-cdx``
   Enable or disable generation of Nios II R2 BMX (bit manipulation) and
   CDX (code density) instructions.  Enabling these instructions also
-  requires :option:`-march=r2`.  Since these instructions are optional
+  requires :option:`-march`:samp:`={r2}`.  Since these instructions are optional
   extensions to the R2 architecture, the default is not to emit them.
 
 .. option:: -mcustom-insn=N
@@ -142,7 +142,7 @@ These are the options defined for the Altera Nios II processor.
 
   Each :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` option enables use of a
   custom instruction with encoding :samp:`{N}` when generating code that uses 
-  :samp:`{insn}`.  For example, :option:`-mcustom-fadds=253` generates custom
+  :samp:`{insn}`.  For example, :option:`-mcustom-fadds`:samp:`={253}` generates custom
   instruction 253 for single-precision floating-point add operations instead
   of the default behavior of using a library call.
 
@@ -262,53 +262,53 @@ These are the options defined for the Altera Nios II processor.
   (see :option:`-mcustom-`:samp:`{insn}` above).  
   Currently, the following sets are defined:
 
-  :option:`-mcustom-fpu-cfg=60-1` is equivalent to:
+  :option:`-mcustom-fpu-cfg`:samp:`={60-1}` is equivalent to:
 
-  :option:`-mcustom-fmuls=252` 
-  :option:`-mcustom-fadds=253` 
-  :option:`-mcustom-fsubs=254` 
+  :option:`-mcustom-fmuls`:samp:`={252}` 
+  :option:`-mcustom-fadds`:samp:`={253}` 
+  :option:`-mcustom-fsubs`:samp:`={254}` 
   :option:`-fsingle-precision-constant`
-  :option:`-mcustom-fpu-cfg=60-2` is equivalent to:
+  :option:`-mcustom-fpu-cfg`:samp:`={60-2}` is equivalent to:
 
-  :option:`-mcustom-fmuls=252` 
-  :option:`-mcustom-fadds=253` 
-  :option:`-mcustom-fsubs=254` 
-  :option:`-mcustom-fdivs=255` 
+  :option:`-mcustom-fmuls`:samp:`={252}` 
+  :option:`-mcustom-fadds`:samp:`={253}` 
+  :option:`-mcustom-fsubs`:samp:`={254}` 
+  :option:`-mcustom-fdivs`:samp:`={255}` 
   :option:`-fsingle-precision-constant`
-  :option:`-mcustom-fpu-cfg=72-3` is equivalent to:
+  :option:`-mcustom-fpu-cfg`:samp:`={72-3}` is equivalent to:
 
-  :option:`-mcustom-floatus=243` 
-  :option:`-mcustom-fixsi=244` 
-  :option:`-mcustom-floatis=245` 
-  :option:`-mcustom-fcmpgts=246` 
-  :option:`-mcustom-fcmples=249` 
-  :option:`-mcustom-fcmpeqs=250` 
-  :option:`-mcustom-fcmpnes=251` 
-  :option:`-mcustom-fmuls=252` 
-  :option:`-mcustom-fadds=253` 
-  :option:`-mcustom-fsubs=254` 
-  :option:`-mcustom-fdivs=255` 
+  :option:`-mcustom-floatus`:samp:`={243}` 
+  :option:`-mcustom-fixsi`:samp:`={244}` 
+  :option:`-mcustom-floatis`:samp:`={245}` 
+  :option:`-mcustom-fcmpgts`:samp:`={246}` 
+  :option:`-mcustom-fcmples`:samp:`={249}` 
+  :option:`-mcustom-fcmpeqs`:samp:`={250}` 
+  :option:`-mcustom-fcmpnes`:samp:`={251}` 
+  :option:`-mcustom-fmuls`:samp:`={252}` 
+  :option:`-mcustom-fadds`:samp:`={253}` 
+  :option:`-mcustom-fsubs`:samp:`={254}` 
+  :option:`-mcustom-fdivs`:samp:`={255}` 
   :option:`-fsingle-precision-constant`
-  :option:`-mcustom-fpu-cfg=fph2` is equivalent to:
+  :option:`-mcustom-fpu-cfg`:samp:`={fph2}` is equivalent to:
 
-  :option:`-mcustom-fabss=224` 
-  :option:`-mcustom-fnegs=225` 
-  :option:`-mcustom-fcmpnes=226` 
-  :option:`-mcustom-fcmpeqs=227` 
-  :option:`-mcustom-fcmpges=228` 
-  :option:`-mcustom-fcmpgts=229` 
-  :option:`-mcustom-fcmples=230` 
-  :option:`-mcustom-fcmplts=231` 
-  :option:`-mcustom-fmaxs=232` 
-  :option:`-mcustom-fmins=233` 
-  :option:`-mcustom-round=248` 
-  :option:`-mcustom-fixsi=249` 
-  :option:`-mcustom-floatis=250` 
-  :option:`-mcustom-fsqrts=251` 
-  :option:`-mcustom-fmuls=252` 
-  :option:`-mcustom-fadds=253` 
-  :option:`-mcustom-fsubs=254` 
-  :option:`-mcustom-fdivs=255` 
+  :option:`-mcustom-fabss`:samp:`={224}` 
+  :option:`-mcustom-fnegs`:samp:`={225}` 
+  :option:`-mcustom-fcmpnes`:samp:`={226}` 
+  :option:`-mcustom-fcmpeqs`:samp:`={227}` 
+  :option:`-mcustom-fcmpges`:samp:`={228}` 
+  :option:`-mcustom-fcmpgts`:samp:`={229}` 
+  :option:`-mcustom-fcmples`:samp:`={230}` 
+  :option:`-mcustom-fcmplts`:samp:`={231}` 
+  :option:`-mcustom-fmaxs`:samp:`={232}` 
+  :option:`-mcustom-fmins`:samp:`={233}` 
+  :option:`-mcustom-round`:samp:`={248}` 
+  :option:`-mcustom-fixsi`:samp:`={249}` 
+  :option:`-mcustom-floatis`:samp:`={250}` 
+  :option:`-mcustom-fsqrts`:samp:`={251}` 
+  :option:`-mcustom-fmuls`:samp:`={252}` 
+  :option:`-mcustom-fadds`:samp:`={253}` 
+  :option:`-mcustom-fsubs`:samp:`={254}` 
+  :option:`-mcustom-fdivs`:samp:`={255}` 
   Custom instruction assignments given by individual
   :option:`-mcustom-`:samp:`{insn}` = options override those given by
   :option:`-mcustom-fpu-cfg` =, regardless of the
@@ -321,9 +321,9 @@ These are the options defined for the Altera Nios II processor.
 
   The name :samp:`{fph2}` is an abbreviation for *Nios II Floating Point
   Hardware 2 Component*.  Please note that the custom instructions enabled by
-  :option:`-mcustom-fmins=233` and :option:`-mcustom-fmaxs=234` are only generated
+  :option:`-mcustom-fmins`:samp:`={233}` and :option:`-mcustom-fmaxs`:samp:`={234}` are only generated
   if :option:`-ffinite-math-only` is specified.  The custom instruction enabled by
-  :option:`-mcustom-round=248` is only generated if :option:`-fno-math-errno` is
+  :option:`-mcustom-round`:samp:`={248}` is only generated if :option:`-fno-math-errno` is
   specified.  In contrast to the other configurations,
   :option:`-fsingle-precision-constant` is not set.
 

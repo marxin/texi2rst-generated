@@ -133,8 +133,8 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mieee-conformant
 
   This option marks the generated code as IEEE conformant.  You must not
-  use this option unless you also specify :option:`-mtrap-precision=i` and either
-  :option:`-mfp-trap-mode=su` or :option:`-mfp-trap-mode=sui`.  Its only effect
+  use this option unless you also specify :option:`-mtrap-precision`:samp:`={i}` and either
+  :option:`-mfp-trap-mode`:samp:`={su}` or :option:`-mfp-trap-mode`:samp:`={sui}`.  Its only effect
   is to emit the line :samp:`.eflag 48` in the function prologue of the
   generated assembly file.
 
@@ -235,7 +235,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
     Native toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-mcpu=native` has no effect if GCC does not recognize
+  :option:`-mcpu`:samp:`={native}` has no effect if GCC does not recognize
   the processor.
 
 .. option:: -mtune=cpu_type
@@ -245,7 +245,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   Native toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-mtune=native` has no effect if GCC does not recognize
+  :option:`-mtune`:samp:`={native}` has no effect if GCC does not recognize
   the processor.
 
 .. option:: -mmemory-latency=time

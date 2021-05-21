@@ -103,7 +103,7 @@ The files can contain the following types of record:
   ``DriverOnly``
     This property is optional.  If present, the present string will only
     be accepted by the driver.  This is used for cases such as
-    :option:`-march=native` that are processed by the driver so that
+    :option:`-march`:samp:`={native}` that are processed by the driver so that
     :samp:`gcc -v` shows how the options chosen depended on the system on
     which the compiler was run.
 

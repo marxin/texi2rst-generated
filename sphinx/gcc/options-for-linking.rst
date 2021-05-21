@@ -296,7 +296,7 @@ not doing a link step.
 
 .. option:: -static-libasan
 
-  When the :option:`-fsanitize=address` option is used to link a program,
+  When the :option:`-fsanitize`:samp:`={address}` option is used to link a program,
   the GCC driver automatically links against libasan.  If
   libasan is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
@@ -306,7 +306,7 @@ not doing a link step.
 
 .. option:: -static-libtsan
 
-  When the :option:`-fsanitize=thread` option is used to link a program,
+  When the :option:`-fsanitize`:samp:`={thread}` option is used to link a program,
   the GCC driver automatically links against libtsan.  If
   libtsan is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
@@ -316,7 +316,7 @@ not doing a link step.
 
 .. option:: -static-liblsan
 
-  When the :option:`-fsanitize=leak` option is used to link a program,
+  When the :option:`-fsanitize`:samp:`={leak}` option is used to link a program,
   the GCC driver automatically links against liblsan.  If
   liblsan is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
@@ -326,7 +326,7 @@ not doing a link step.
 
 .. option:: -static-libubsan
 
-  When the :option:`-fsanitize=undefined` option is used to link a program,
+  When the :option:`-fsanitize`:samp:`={undefined}` option is used to link a program,
   the GCC driver automatically links against libubsan.  If
   libubsan is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
@@ -378,7 +378,7 @@ not doing a link step.
   When using the GNU linker, it is usually more convenient to pass
   arguments to linker options using the :samp:`{option}` = :samp:`{value}`
   syntax than as separate arguments.  For example, you can specify
-  :option:`-Xlinker -Map=output.map` rather than
+  :option:`-Xlinker -Map`:samp:`={output.map}` rather than
   :option:`-Xlinker -Map -Xlinker output.map`.  Other linkers may not support
   this syntax for command-line options.
 
@@ -389,7 +389,7 @@ not doing a link step.
   syntax to pass an argument to the option.
   For example, :option:`-Wl,-Map,output.map` passes :option:`-Map output.map` to the
   linker.  When using the GNU linker, you can also get the same effect with
-  :option:`-Wl,-Map=output.map`.
+  :option:`-Wl,-Map`:samp:`={output.map}`.
 
 .. option:: -u symbol, -u
 
