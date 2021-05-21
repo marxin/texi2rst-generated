@@ -34,7 +34,3 @@ several threads.
    -
 
 .. _library-index:
-
-Library Index
-=============
-

@@ -61,7 +61,3 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 .. man begin DESCRIPTION
 
 .. _library-index:
-
-Library Index
-=============
-

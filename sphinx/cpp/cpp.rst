@@ -59,10 +59,6 @@ useful on its own.
   concept-index
 
 .. _index-of-directives:
-
-Index of Directives
-===================
-
 .. _option-index:
 
 Option Index
