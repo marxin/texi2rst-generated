@@ -174,7 +174,3 @@ the manual are indexed under the most appropriate form; it may sometimes
 be useful to look up both forms.
 
 .. _keyword-index:
-
-Keyword Index
-=============
-

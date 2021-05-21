@@ -518,7 +518,3 @@ applies.  This may be higher up the directory tree than the full path to
 the file minus the base name.
 
 .. _concept-index:
-
-Concept Index
-=============
-

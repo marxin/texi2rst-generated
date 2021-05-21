@@ -180,9 +180,6 @@ form; it may sometimes be useful to look up both forms.
 
 .. _keyword-index:
 
-Keyword Index
-=============
-
 .. -
    Epilogue
    -

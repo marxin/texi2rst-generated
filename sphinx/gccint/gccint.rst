@@ -190,9 +190,6 @@ form; it may sometimes be useful to look up both forms.
 
 .. _concept-index:
 
-Concept Index
-=============
-
 .. -
    Epilogue
    -
