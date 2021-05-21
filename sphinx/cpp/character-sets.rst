@@ -45,6 +45,6 @@ characters.
 In identifiers, characters outside the ASCII range can be specified
 with the :samp:`\u` and :samp:`\U` escapes or used directly in the input
 encoding.  If strict ISO C90 conformance is specified with an option
-such as :option:`-std`:samp:`={c90}`, or :option:`-fno-extended-identifiers` is
+such as :option:`-std`:samp:`=c90`, or :option:`-fno-extended-identifiers` is
 used, then those constructs are not permitted in identifiers.
 

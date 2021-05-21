@@ -44,7 +44,7 @@ Visium Options
   By default (unless configured otherwise), GCC generates code for the GR5
   variant of the Visium architecture.
 
-  With :option:`-mcpu`:samp:`={gr6}`, GCC generates code for the GR6 variant of the Visium
+  With :option:`-mcpu`:samp:`=gr6`, GCC generates code for the GR6 variant of the Visium
   architecture.  The only difference from GR5 code is that the compiler will
   generate block move instructions.
 

@@ -102,10 +102,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   mangled name when defining a symbol with an incorrect mangled name.
   This switch specifies which ABI version to use for the alias.
 
-  With :option:`-fabi-version`:samp:`={0}` (the default), this defaults to 11 (GCC 7
+  With :option:`-fabi-version`:samp:`=0` (the default), this defaults to 11 (GCC 7
   compatibility).  If another ABI version is explicitly selected, this
   defaults to 0.  For compatibility with GCC versions 3.2 through 4.9,
-  use :option:`-fabi-compat-version`:samp:`={2}`.
+  use :option:`-fabi-compat-version`:samp:`=2`.
 
   If this option is not provided but :option:`-Wabi`:samp:`={n}` is, that
   version is used for compatibility aliases.  If this option is provided
@@ -126,7 +126,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   but few users will need to override the default of
   ``alignof(std::max_align_t)``.
 
-  This flag is enabled by default for :option:`-std`:samp:`={c++17}`.
+  This flag is enabled by default for :option:`-std`:samp:`=c++17`.
 
 .. option:: -fchar8_t, -fno-char8_t
 
@@ -192,10 +192,10 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fconcepts, -fconcepts-ts
 
-  Below :option:`-std`:samp:`={c++20}`, :option:`-fconcepts` enables support for the
+  Below :option:`-std`:samp:`=c++20`, :option:`-fconcepts` enables support for the
   C++ Extensions for Concepts Technical Specification, ISO 19217 (2015).
 
-  With :option:`-std`:samp:`={c++20}` and above, Concepts are part of the language
+  With :option:`-std`:samp:`=c++20` and above, Concepts are part of the language
   standard, so :option:`-fconcepts` defaults to on.  But the standard
   specification of Concepts differs significantly from the TS, so some
   constructs that were allowed in the TS but didn't make it into the
@@ -286,7 +286,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   Do not recognize ``typeof`` as a keyword, so that code can use this
   word as an identifier.  You can use the keyword ``__typeof__`` instead.
   This option is implied by the strict ISO C++ dialects: :option:`-ansi`,
-  :option:`-std`:samp:`={c++98}`, :option:`-std`:samp:`={c++11}`, etc.
+  :option:`-std`:samp:`=c++98`, :option:`-std`:samp:`=c++11`, etc.
 
 .. option:: -fno-implicit-templates, -fimplicit-templates
 
@@ -356,7 +356,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   Enable the P0136 adjustment to the semantics of C++11 constructor
   inheritance.  This is part of C++17 but also considered to be a Defect
   Report against C++11 and C++14.  This flag is enabled by default
-  unless :option:`-fabi-version`:samp:`={10}` or lower is specified.
+  unless :option:`-fabi-version`:samp:`=10` or lower is specified.
 
 .. option:: -fnew-ttp-matching
 
@@ -364,7 +364,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   parameters and default arguments: this allows a template with default
   template arguments as an argument for a template template parameter
   with fewer template parameters.  This flag is enabled by default for
-  :option:`-std`:samp:`={c++17}`.
+  :option:`-std`:samp:`=c++17`.
 
 .. option:: -fno-nonansi-builtins, -fnonansi-builtins
 
@@ -443,7 +443,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   as introduced in C++14.  This is useful for user-defined replacement
   deallocation functions that, for example, use the size of the object
   to make deallocation faster.  Enabled by default under
-  :option:`-std`:samp:`={c++14}` and above.  The flag :option:`-Wsized-deallocation`
+  :option:`-std`:samp:`=c++14` and above.  The flag :option:`-Wsized-deallocation`
   warns about places that might want to add a definition.
 
 .. option:: -fstrict-enums
@@ -459,10 +459,10 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Evaluate member access, array subscripting, and shift expressions in
   left-to-right order, and evaluate assignment in right-to-left order,
-  as adopted for C++17.  Enabled by default with :option:`-std`:samp:`={c++17}`.
-  :option:`-fstrong-eval-order`:samp:`={some}` enables just the ordering of member
+  as adopted for C++17.  Enabled by default with :option:`-std`:samp:`=c++17`.
+  :option:`-fstrong-eval-order`:samp:`=some` enables just the ordering of member
   access and shift expressions, and is the default without
-  :option:`-std`:samp:`={c++17}`.
+  :option:`-std`:samp:`=c++17`.
 
 .. option:: -ftemplate-backtrace-limit=n
 
@@ -535,7 +535,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   The flag makes these changes to GCC's linkage model:
 
   * It sets the default visibility to ``hidden``, like
-    :option:`-fvisibility`:samp:`={hidden}`.
+    :option:`-fvisibility`:samp:`=hidden`.
 
   * Types, but not their members, are not hidden by default.
 
@@ -544,7 +544,7 @@ Here is a list of options that are *only* for compiling C++ programs:
     shared object: those declarations are permitted if they are
     permitted when this option is not used.
 
-  In new code it is better to use :option:`-fvisibility`:samp:`={hidden}` and
+  In new code it is better to use :option:`-fvisibility`:samp:`=hidden` and
   export those classes that are intended to be externally visible.
   Unfortunately it is possible for code to rely, perhaps accidentally,
   on the Visual Studio behavior.
@@ -576,10 +576,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   When this option is turned off these suffixes are treated
   as C++11 user-defined literal numeric suffixes.
   This is on by default for all pre-C++11 dialects and all GNU dialects:
-  :option:`-std`:samp:`={c++98}`, :option:`-std`:samp:`={gnu++98}`, :option:`-std`:samp:`={gnu++11}`,
-  :option:`-std`:samp:`={gnu++14}`.
+  :option:`-std`:samp:`=c++98`, :option:`-std`:samp:`=gnu++98`, :option:`-std`:samp:`=gnu++11`,
+  :option:`-std`:samp:`=gnu++14`.
   This option is off by default
-  for ISO C++11 onwards ( :option:`-std`:samp:`={c++11}`, ...).
+  for ISO C++11 onwards ( :option:`-std`:samp:`=c++11`, ...).
 
 .. option:: -nostdinc++
 
@@ -643,7 +643,7 @@ In addition, these warning options have meanings only for C++ programs:
         a[(b,c)];   // OK
     }
 
-  Enabled by default with :option:`-std`:samp:`={c++20}`.
+  Enabled by default with :option:`-std`:samp:`=c++20`.
 
 .. option:: -Wctad-maybe-unsupported , -Wctad-maybe-unsupported
 .. option:: -Wno-ctad-maybe-unsupported
@@ -725,7 +725,7 @@ In addition, these warning options have meanings only for C++ programs:
     int k = f - e;
 
   :option:`-Wdeprecated-enum-enum-conversion` is enabled by default with
-  :option:`-std`:samp:`={c++20}`.  In pre-C++20 dialects, this warning can be enabled
+  :option:`-std`:samp:`=c++20`.  In pre-C++20 dialects, this warning can be enabled
   by :option:`-Wenum-conversion`.
 
 .. option:: -Wno-deprecated-enum-float-conversion 
@@ -748,7 +748,7 @@ In addition, these warning options have meanings only for C++ programs:
     bool b = e <= 3.7;
 
   :option:`-Wdeprecated-enum-float-conversion` is enabled by default with
-  :option:`-std`:samp:`={c++20}`.  In pre-C++20 dialects, this warning can be enabled
+  :option:`-std`:samp:`=c++20`.  In pre-C++20 dialects, this warning can be enabled
   by :option:`-Wenum-conversion`.
 
 .. option:: -Wno-init-list-lifetime , -Winit-list-lifetime, -Wno-init-list-lifetime
@@ -935,7 +935,7 @@ In addition, these warning options have meanings only for C++ programs:
   when it is part of the GNU Explicit Register Variables extension.
   The use of the ``register`` keyword as storage class specifier has
   been deprecated in C++11 and removed in C++17.
-  Enabled by default with :option:`-std`:samp:`={c++17}`.
+  Enabled by default with :option:`-std`:samp:`=c++17`.
 
 .. option:: -Wreorder , -Wreorder, -Wno-reorder
 
@@ -1434,7 +1434,7 @@ In addition, these warning options have meanings only for C++ programs:
   ``volatile`` -qualified parameter type, and structured bindings of a
   ``volatile`` -qualified type.  This usage was deprecated in C++20.
 
-  Enabled by default with :option:`-std`:samp:`={c++20}`.
+  Enabled by default with :option:`-std`:samp:`=c++20`.
 
 .. option:: -Wzero-as-null-pointer-constant , -Wzero-as-null-pointer-constant
 .. option:: -Wno-zero-as-null-pointer-constant
@@ -1454,7 +1454,7 @@ In addition, these warning options have meanings only for C++ programs:
   enabled by :option:`-Wall`.
 
   Normally this only warns about global allocation functions, but
-  :option:`-Waligned-new`:samp:`={all}` also warns about class member allocation
+  :option:`-Waligned-new`:samp:`=all` also warns about class member allocation
   functions.
 
 .. option:: -Wno-placement-new, -Wplacement-new
@@ -1503,10 +1503,10 @@ In addition, these warning options have meanings only for C++ programs:
 .. option:: -Wcatch-value, -Wno-catch-value
 
   Warn about catch handlers that do not catch via reference.
-  With :option:`-Wcatch-value`:samp:`={1}` (or :option:`-Wcatch-value` for short)
+  With :option:`-Wcatch-value`:samp:`=1` (or :option:`-Wcatch-value` for short)
   warn about polymorphic class types that are caught by value.
-  With :option:`-Wcatch-value`:samp:`={2}` warn about all class types that are caught
-  by value. With :option:`-Wcatch-value`:samp:`={3}` warn about all types that are
+  With :option:`-Wcatch-value`:samp:`=2` warn about all class types that are caught
+  by value. With :option:`-Wcatch-value`:samp:`=3` warn about all types that are
   not caught by reference. :option:`-Wcatch-value` is enabled by :option:`-Wall`.
 
 .. option:: -Wconditionally-supported , -Wconditionally-supported

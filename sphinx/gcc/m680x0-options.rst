@@ -80,9 +80,9 @@ are given below.
   and :samp:`cpu32`.  The ColdFire microarchitectures
   are: :samp:`cfv1`, :samp:`cfv2`, :samp:`cfv3`, :samp:`cfv4` and :samp:`cfv4e`.
 
-  You can also use :option:`-mtune`:samp:`={68020-40}` for code that needs
+  You can also use :option:`-mtune`:samp:`=68020-40` for code that needs
   to run relatively well on 68020, 68030 and 68040 targets.
-  :option:`-mtune`:samp:`={68020-60}` is similar but includes 68060 targets
+  :option:`-mtune`:samp:`=68020-60` is similar but includes 68060 targets
   as well.  These two options select the same tuning decisions as
   :option:`-m68020-40` and :option:`-m68020-60` respectively.
 
@@ -90,7 +90,7 @@ are given below.
   when tuning for 680x0 architecture :samp:`{arch}`.  It also defines
   ``mcarch`` unless either :option:`-ansi` or a non-GNU :option:`-std`
   option is used.  If GCC is tuning for a range of architectures,
-  as selected by :option:`-mtune`:samp:`={68020-40}` or :option:`-mtune`:samp:`={68020-60}`,
+  as selected by :option:`-mtune`:samp:`=68020-40` or :option:`-mtune`:samp:`=68020-60`,
   it defines the macros for every architecture in the range.
 
   GCC also defines the macro ``__muarch__`` when tuning for
@@ -101,7 +101,7 @@ are given below.
 
   Generate output for a 68000.  This is the default
   when the compiler is configured for 68000-based systems.
-  It is equivalent to :option:`-march`:samp:`={68000}`.
+  It is equivalent to :option:`-march`:samp:`=68000`.
 
   Use this option for microcontrollers with a 68000 or EC000 core,
   including the 68008, 68302, 68306, 68307, 68322, 68328 and 68356.
@@ -110,25 +110,25 @@ are given below.
 
   Generate output for a 68010.  This is the default
   when the compiler is configured for 68010-based systems.
-  It is equivalent to :option:`-march`:samp:`={68010}`.
+  It is equivalent to :option:`-march`:samp:`=68010`.
 
 .. option:: -m68020, -mc68020
 
   Generate output for a 68020.  This is the default
   when the compiler is configured for 68020-based systems.
-  It is equivalent to :option:`-march`:samp:`={68020}`.
+  It is equivalent to :option:`-march`:samp:`=68020`.
 
 .. option:: -m68030
 
   Generate output for a 68030.  This is the default when the compiler is
   configured for 68030-based systems.  It is equivalent to
-  :option:`-march`:samp:`={68030}`.
+  :option:`-march`:samp:`=68030`.
 
 .. option:: -m68040
 
   Generate output for a 68040.  This is the default when the compiler is
   configured for 68040-based systems.  It is equivalent to
-  :option:`-march`:samp:`={68040}`.
+  :option:`-march`:samp:`=68040`.
 
   This option inhibits the use of 68881/68882 instructions that have to be
   emulated by software on the 68040.  Use this option if your 68040 does not
@@ -138,7 +138,7 @@ are given below.
 
   Generate output for a 68060.  This is the default when the compiler is
   configured for 68060-based systems.  It is equivalent to
-  :option:`-march`:samp:`={68060}`.
+  :option:`-march`:samp:`=68060`.
 
   This option inhibits the use of 68020 and 68881/68882 instructions that
   have to be emulated by software on the 68060.  Use this option if your 68060
@@ -148,7 +148,7 @@ are given below.
 
   Generate output for a CPU32.  This is the default
   when the compiler is configured for CPU32-based systems.
-  It is equivalent to :option:`-march`:samp:`={cpu32}`.
+  It is equivalent to :option:`-march`:samp:`=cpu32`.
 
   Use this option for microcontrollers with a
   CPU32 or CPU32+ core, including the 68330, 68331, 68332, 68333, 68334,
@@ -158,7 +158,7 @@ are given below.
 
   Generate output for a 520X ColdFire CPU.  This is the default
   when the compiler is configured for 520X-based systems.
-  It is equivalent to :option:`-mcpu`:samp:`={5206}`, and is now deprecated
+  It is equivalent to :option:`-mcpu`:samp:`=5206`, and is now deprecated
   in favor of that option.
 
   Use this option for microcontroller with a 5200 core, including
@@ -167,29 +167,29 @@ are given below.
 .. option:: -m5206e
 
   Generate output for a 5206e ColdFire CPU.  The option is now
-  deprecated in favor of the equivalent :option:`-mcpu`:samp:`={5206e}`.
+  deprecated in favor of the equivalent :option:`-mcpu`:samp:`=5206e`.
 
 .. option:: -m528x
 
   Generate output for a member of the ColdFire 528X family.
   The option is now deprecated in favor of the equivalent
-  :option:`-mcpu`:samp:`={528x}`.
+  :option:`-mcpu`:samp:`=528x`.
 
 .. option:: -m5307
 
   Generate output for a ColdFire 5307 CPU.  The option is now deprecated
-  in favor of the equivalent :option:`-mcpu`:samp:`={5307}`.
+  in favor of the equivalent :option:`-mcpu`:samp:`=5307`.
 
 .. option:: -m5407
 
   Generate output for a ColdFire 5407 CPU.  The option is now deprecated
-  in favor of the equivalent :option:`-mcpu`:samp:`={5407}`.
+  in favor of the equivalent :option:`-mcpu`:samp:`=5407`.
 
 .. option:: -mcfv4e
 
   Generate output for a ColdFire V4e family CPU (e.g. 547x/548x).
   This includes use of hardware floating-point instructions.
-  The option is equivalent to :option:`-mcpu`:samp:`={547x}`, and is now
+  The option is equivalent to :option:`-mcpu`:samp:`=547x`, and is now
   deprecated in favor of that option.
 
 .. option:: -m68020-40
@@ -199,7 +199,7 @@ are given below.
   68020/68881 or a 68030 or a 68040.  The generated code does use the
   68881 instructions that are emulated on the 68040.
 
-  The option is equivalent to :option:`-march`:samp:`={68020}` :option:`-mtune`:samp:`={68020-40}`.
+  The option is equivalent to :option:`-march`:samp:`=68020` :option:`-mtune`:samp:`=68020-40`.
 
 .. option:: -m68020-60
 
@@ -208,7 +208,7 @@ are given below.
   68020/68881 or a 68030 or a 68040.  The generated code does use the
   68881 instructions that are emulated on the 68060.
 
-  The option is equivalent to :option:`-march`:samp:`={68020}` :option:`-mtune`:samp:`={68020-60}`.
+  The option is equivalent to :option:`-march`:samp:`=68020` :option:`-mtune`:samp:`=68020-60`.
 
 .. option:: -mhard-float, -m68881
 
@@ -230,8 +230,8 @@ are given below.
   the default is 'on' for ColdFire architectures and 'off' for M680x0
   architectures.  Otherwise, the default is taken from the target CPU
   (either the default CPU, or the one specified by :option:`-mcpu` ).  For
-  example, the default is 'off' for :option:`-mcpu`:samp:`={5206}` and 'on' for
-  :option:`-mcpu`:samp:`={5206e}`.
+  example, the default is 'off' for :option:`-mcpu`:samp:`=5206` and 'on' for
+  :option:`-mcpu`:samp:`=5206e`.
 
   GCC defines the macro ``__mcfhwdiv__`` when this option is enabled.
 

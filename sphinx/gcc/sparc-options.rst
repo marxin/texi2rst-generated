@@ -122,7 +122,7 @@ These :samp:`-m` options are supported on the SPARC:
 
   Native Solaris and GNU/Linux toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-mcpu`:samp:`={native}` has no effect if GCC does not recognize
+  :option:`-mcpu`:samp:`=native` has no effect if GCC does not recognize
   the processor.
 
   Default instruction scheduling parameters are used for values that select
@@ -149,47 +149,47 @@ These :samp:`-m` options are supported on the SPARC:
     niagara7, m8
 
     By default (unless configured otherwise), GCC generates code for the V7
-  variant of the SPARC architecture.  With :option:`-mcpu`:samp:`={cypress}`, the compiler
+  variant of the SPARC architecture.  With :option:`-mcpu`:samp:`=cypress`, the compiler
   additionally optimizes it for the Cypress CY7C602 chip, as used in the
   SPARCStation/SPARCServer 3xx series.  This is also appropriate for the older
   SPARCStation 1, 2, IPX etc.
 
-  With :option:`-mcpu`:samp:`={v8}`, GCC generates code for the V8 variant of the SPARC
+  With :option:`-mcpu`:samp:`=v8`, GCC generates code for the V8 variant of the SPARC
   architecture.  The only difference from V7 code is that the compiler emits
   the integer multiply and integer divide instructions which exist in SPARC-V8
-  but not in SPARC-V7.  With :option:`-mcpu`:samp:`={supersparc}`, the compiler additionally
+  but not in SPARC-V7.  With :option:`-mcpu`:samp:`=supersparc`, the compiler additionally
   optimizes it for the SuperSPARC chip, as used in the SPARCStation 10, 1000 and
   2000 series.
 
-  With :option:`-mcpu`:samp:`={sparclite}`, GCC generates code for the SPARClite variant of
+  With :option:`-mcpu`:samp:`=sparclite`, GCC generates code for the SPARClite variant of
   the SPARC architecture.  This adds the integer multiply, integer divide step
   and scan ( ``ffs`` ) instructions which exist in SPARClite but not in SPARC-V7.
-  With :option:`-mcpu`:samp:`={f930}`, the compiler additionally optimizes it for the
+  With :option:`-mcpu`:samp:`=f930`, the compiler additionally optimizes it for the
   Fujitsu MB86930 chip, which is the original SPARClite, with no FPU.  With
-  :option:`-mcpu`:samp:`={f934}`, the compiler additionally optimizes it for the Fujitsu
+  :option:`-mcpu`:samp:`=f934`, the compiler additionally optimizes it for the Fujitsu
   MB86934 chip, which is the more recent SPARClite with FPU.
 
-  With :option:`-mcpu`:samp:`={sparclet}`, GCC generates code for the SPARClet variant of
+  With :option:`-mcpu`:samp:`=sparclet`, GCC generates code for the SPARClet variant of
   the SPARC architecture.  This adds the integer multiply, multiply/accumulate,
   integer divide step and scan ( ``ffs`` ) instructions which exist in SPARClet
-  but not in SPARC-V7.  With :option:`-mcpu`:samp:`={tsc701}`, the compiler additionally
+  but not in SPARC-V7.  With :option:`-mcpu`:samp:`=tsc701`, the compiler additionally
   optimizes it for the TEMIC SPARClet chip.
 
-  With :option:`-mcpu`:samp:`={v9}`, GCC generates code for the V9 variant of the SPARC
+  With :option:`-mcpu`:samp:`=v9`, GCC generates code for the V9 variant of the SPARC
   architecture.  This adds 64-bit integer and floating-point move instructions,
   3 additional floating-point condition code registers and conditional move
-  instructions.  With :option:`-mcpu`:samp:`={ultrasparc}`, the compiler additionally
+  instructions.  With :option:`-mcpu`:samp:`=ultrasparc`, the compiler additionally
   optimizes it for the Sun UltraSPARC I/II/IIi chips.  With
-  :option:`-mcpu`:samp:`={ultrasparc3}`, the compiler additionally optimizes it for the
+  :option:`-mcpu`:samp:`=ultrasparc3`, the compiler additionally optimizes it for the
   Sun UltraSPARC III/III+/IIIi/IIIi+/IV/IV+ chips.  With
-  :option:`-mcpu`:samp:`={niagara}`, the compiler additionally optimizes it for
-  Sun UltraSPARC T1 chips.  With :option:`-mcpu`:samp:`={niagara2}`, the compiler
+  :option:`-mcpu`:samp:`=niagara`, the compiler additionally optimizes it for
+  Sun UltraSPARC T1 chips.  With :option:`-mcpu`:samp:`=niagara2`, the compiler
   additionally optimizes it for Sun UltraSPARC T2 chips. With
-  :option:`-mcpu`:samp:`={niagara3}`, the compiler additionally optimizes it for Sun
-  UltraSPARC T3 chips.  With :option:`-mcpu`:samp:`={niagara4}`, the compiler
+  :option:`-mcpu`:samp:`=niagara3`, the compiler additionally optimizes it for Sun
+  UltraSPARC T3 chips.  With :option:`-mcpu`:samp:`=niagara4`, the compiler
   additionally optimizes it for Sun UltraSPARC T4 chips.  With
-  :option:`-mcpu`:samp:`={niagara7}`, the compiler additionally optimizes it for
-  Oracle SPARC M7 chips.  With :option:`-mcpu`:samp:`={m8}`, the compiler
+  :option:`-mcpu`:samp:`=niagara7`, the compiler additionally optimizes it for
+  Oracle SPARC M7 chips.  With :option:`-mcpu`:samp:`=m8`, the compiler
   additionally optimizes it for Oracle M8 chips.
 
 .. option:: -mtune=cpu_type
@@ -273,7 +273,7 @@ These :samp:`-m` options are supported on the SPARC:
   With :option:`-mfsmuld`, GCC generates code that takes advantage of the
   Floating-point Multiply Single to Double (FsMULd) instruction.  The default is
   :option:`-mfsmuld` when targeting a CPU supporting the architecture versions V8
-  or V9 with FPU except :option:`-mcpu`:samp:`={leon}`.
+  or V9 with FPU except :option:`-mcpu`:samp:`=leon`.
 
 .. option:: -mpopc, -mno-popc
 

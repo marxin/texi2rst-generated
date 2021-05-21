@@ -67,7 +67,7 @@ C standard library and headers
 
   Note that :command:`configure` does not test whether the GNAT installation works
   and has a sufficiently recent version; if too old a GNAT version is
-  installed and :option:`--enable-languages`:samp:`={ada}` is used, the build will fail.
+  installed and :option:`--enable-languages`:samp:`=ada` is used, the build will fail.
 
   :envvar:`ADA_INCLUDE_PATH` and :envvar:`ADA_OBJECT_PATH` environment variables
   must not be set when building the Ada compiler, the Ada tools, or the

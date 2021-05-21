@@ -51,7 +51,7 @@ Integers
 
   As an extension to the C language, GCC does not use the latitude given in
   C99 and C11 only to treat certain aspects of signed :samp:`<<` as undefined.
-  However, :option:`-fsanitize`:samp:`={shift}` (and :option:`-fsanitize`:samp:`={undefined}`) will
+  However, :option:`-fsanitize`:samp:`=shift` (and :option:`-fsanitize`:samp:`=undefined`) will
   diagnose such cases.  They are also diagnosed where constant
   expressions are required.
 

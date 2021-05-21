@@ -329,7 +329,7 @@ error may be generated.
 
 .. function:: int __builtin_arc_divaw (int a, int b)
 
-  Only available if either :option:`-mcpu`:samp:`={ARC700}` or :option:`-meA` is set.
+  Only available if either :option:`-mcpu`:samp:`=ARC700` or :option:`-meA` is set.
   Generates:
 
   .. code-block:: c++
@@ -386,7 +386,7 @@ error may be generated.
 .. function:: int __builtin_arc_norm (int src)
 
   Only valid if the :samp:`norm` instruction is available through the
-  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`={ARC700}`.
+  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`=ARC700`.
   Generates:
 
   .. code-block:: c++
@@ -399,7 +399,7 @@ error may be generated.
 .. function:: short int __builtin_arc_normw (short int src)
 
   Only valid if the :samp:`normw` instruction is available through the
-  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`={ARC700}`.
+  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`=ARC700`.
   Generates:
 
   .. code-block:: c++
@@ -456,7 +456,7 @@ error may be generated.
 
 .. function:: void __builtin_arc_sync (void)
 
-  Only available with :option:`-mcpu`:samp:`={ARC700}`.  Generates:
+  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
 
   .. code-block:: c++
 
@@ -464,7 +464,7 @@ error may be generated.
 
 .. function:: void __builtin_arc_trap_s (unsigned int c)
 
-  Only available with :option:`-mcpu`:samp:`={ARC700}`.  Generates:
+  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
 
   .. code-block:: c++
 
@@ -472,7 +472,7 @@ error may be generated.
 
 .. function:: void __builtin_arc_unimp_s (void)
 
-  Only available with :option:`-mcpu`:samp:`={ARC700}`.  Generates:
+  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
 
   .. code-block:: c++
 
@@ -739,7 +739,7 @@ ARM iWMMXt Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These built-in functions are available for the ARM family of
-processors when the :option:`-mcpu`:samp:`={iwmmxt}` switch is used:
+processors when the :option:`-mcpu`:samp:`=iwmmxt` switch is used:
 
 .. code-block:: c++
 
@@ -2047,7 +2047,7 @@ MIPS SIMD Architecture (MSA) Support
 
 GCC provides intrinsics to access the SIMD instructions provided by the
 MSA MIPS SIMD Architecture.  The interface is made available by including
-``<msa.h>`` and using :option:`-mmsa -mhard-float -mfp64 -mnan`:samp:`={2008}`.
+``<msa.h>`` and using :option:`-mmsa -mhard-float -mfp64 -mnan`:samp:`=2008`.
 For each ``__builtin_msa_*``, there is a shortened name of the intrinsic,
 ``__msa_*``.
 
@@ -3291,7 +3291,7 @@ Basic PowerPC Built-in Functions Available on ISA 2.05
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`={power6}` has the effect of
+command line, specifying option :option:`-mcpu`:samp:`=power6` has the effect of
 enabling the :option:`-mpowerpc64`, :option:`-mpowerpc-gpopt`,
 :option:`-mpowerpc-gfxopt`, :option:`-mmfcrf`, :option:`-mpopcntb`,
 :option:`-mfprnd`, :option:`-mcmpb`, :option:`-mhard-dfp`, and
@@ -3403,8 +3403,8 @@ Basic PowerPC Built-in Functions Available on ISA 2.06
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`={power7}` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`={power6}` in
+command line, specifying option :option:`-mcpu`:samp:`=power7` has the effect of
+enabling all the same options as for :option:`-mcpu`:samp:`=power6` in
 addition to the :option:`-maltivec`, :option:`-mpopcntd`, and
 :option:`-mvsx` options.
 
@@ -3450,8 +3450,8 @@ Basic PowerPC Built-in Functions Available on ISA 2.07
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.07
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`={power8}` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`={power7}` in
+command line, specifying option :option:`-mcpu`:samp:`=power8` has the effect of
+enabling all the same options as for :option:`-mcpu`:samp:`=power7` in
 addition to the :option:`-mpower8-fusion`, :option:`-mpower8-vector`,
 :option:`-mcrypto`, :option:`-mhtm`, :option:`-mquad-memory`, and
 :option:`-mquad-memory-atomic` options.
@@ -3466,12 +3466,12 @@ Basic PowerPC Built-in Functions Available on ISA 3.0
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 3.0
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`={power9}` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`={power8}` in
+command line, specifying option :option:`-mcpu`:samp:`=power9` has the effect of
+enabling all the same options as for :option:`-mcpu`:samp:`=power8` in
 addition to the :option:`-misel` option.
 
 The following built-in functions are available on Linux 64-bit systems
-that use the ISA 3.0 instruction set ( :option:`-mcpu`:samp:`={power9}`):
+that use the ISA 3.0 instruction set ( :option:`-mcpu`:samp:`=power9`):
 
 ``__float128 __builtin_addf128_round_to_odd (__float128, __float128)``
   Perform a 128-bit IEEE floating point add using round to odd as the
@@ -3626,11 +3626,11 @@ Basic PowerPC Built-in Functions Available on ISA 3.1
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 3.1.
 Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`={power10}` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`={power9}`.
+command line, specifying option :option:`-mcpu`:samp:`=power10` has the effect of
+enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
 
 The following built-in functions are available on Linux 64-bit systems
-that use a future architecture instruction set ( :option:`-mcpu`:samp:`={power10}`):
+that use a future architecture instruction set ( :option:`-mcpu`:samp:`=power10`):
 
 unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)Perform a 64-bit centrifuge operation, as if implemented by the
 ``cfuged`` instruction.
@@ -3678,7 +3678,7 @@ GCC provides an interface for the PowerPC family of processors to access
 the AltiVec operations described in Motorola's AltiVec Programming
 Interface Manual.  The interface is made available by including
 ``<altivec.h>`` and using :option:`-maltivec` and
-:option:`-mabi`:samp:`={altivec}`.  The interface supports the following vector
+:option:`-mabi`:samp:`=altivec`.  The interface supports the following vector
 types.
 
 .. code-block:: c++
@@ -4660,7 +4660,7 @@ PowerPC AltiVec Built-in Functions Available on ISA 3.0
 
 The following additional built-in functions are also available for the
 PowerPC family of processors, starting with ISA 3.0
-( :option:`-mcpu`:samp:`={power9}`) or later.
+( :option:`-mcpu`:samp:`=power9`) or later.
 
 Only instructions excluded from the PVIPR are listed here.
 
@@ -4762,7 +4762,7 @@ The ``scalar_test_neg`` built-in function returns 1 if its
 
 The following built-in functions are also available for the PowerPC family
 of processors, starting with ISA 3.0 or later
-( :option:`-mcpu`:samp:`={power9}`).  These string functions are described
+( :option:`-mcpu`:samp:`=power9`).  These string functions are described
 separately in order to group the descriptions closer to the function
 prototypes.
 
@@ -4830,7 +4830,7 @@ element size.  However, if the size of the vector element added to
 undefined.
 
 The following functions are also available if the ISA 3.0 instruction
-set additions ( :option:`-mcpu`:samp:`={power9}`) are available.
+set additions ( :option:`-mcpu`:samp:`=power9`) are available.
 
 Only functions excluded from the PVIPR are listed here.
 
@@ -4868,7 +4868,7 @@ Only functions excluded from the PVIPR are listed here.
   vector long long vec_vprtybd (vector long long);
   vector unsigned long long vec_vprtybd (vector unsigned long long);
 
-On 64-bit targets, if the ISA 3.0 additions ( :option:`-mcpu`:samp:`={power9}`)
+On 64-bit targets, if the ISA 3.0 additions ( :option:`-mcpu`:samp:`=power9`)
 are available:
 
 .. code-block:: c++
@@ -4885,7 +4885,7 @@ are available:
   vector __uint128 vec_vprtybd (vector __uint128);
 
 The following built-in functions are available for the PowerPC family
-of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`={power9}`).
+of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`=power9`).
 
 Only functions excluded from the PVIPR are listed here.
 
@@ -4905,7 +4905,7 @@ arguments, placing the absolute differences into the corresponding
 elements of the vector result.
 
 The following built-in functions are available for the PowerPC family
-of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`={power9}`):
+of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`=power9`):
 
 .. code-block:: c++
 
@@ -4920,7 +4920,7 @@ the mask end in bits 19:23, and the shift count in bits 27:31,
 of each element.
 
 If the cryptographic instructions are enabled ( :option:`-mcrypto` or
-:option:`-mcpu`:samp:`={power8}`), the following builtins are enabled.
+:option:`-mcpu`:samp:`=power8`), the following builtins are enabled.
 
 Only functions excluded from the PVIPR are listed here.
 
@@ -4985,7 +4985,7 @@ PowerPC AltiVec Built-in Functions Available on ISA 3.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following additional built-in functions are also available for the
-PowerPC family of processors, starting with ISA 3.1 ( :option:`-mcpu`:samp:`={power10}`):
+PowerPC family of processors, starting with ISA 3.1 ( :option:`-mcpu`:samp:`=power10`):
 
 vector unsigned long long intvec_cfuge (vector unsigned long long int, vector unsigned long long int)Perform a vector centrifuge operation, as if implemented by the
 ``vcfuged`` instruction.
@@ -5403,7 +5403,7 @@ PowerPC HTM Low Level Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following low level built-in functions are available with
-:option:`-mhtm` or :option:`-mcpu`:samp:`={CPU}` where CPU is 'power8' or later.
+:option:`-mhtm` or :option:`-mcpu`:samp:`=CPU` where CPU is 'power8' or later.
 They all generate the machine instruction that is part of the name.
 
 The HTM builtins (with the exception of ``__builtin_tbegin`` ) return
@@ -5546,7 +5546,7 @@ PowerPC HTM High Level Inline Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following high level HTM interface is made available by including
-``<htmxlintrin.h>`` and using :option:`-mhtm` or :option:`-mcpu`:samp:`={CPU}`
+``<htmxlintrin.h>`` and using :option:`-mhtm` or :option:`-mcpu`:samp:`=CPU`
 where CPU is 'power8' or later.  This interface is common between PowerPC
 and S/390, allowing users to write one HTM source implementation that
 can be compiled and executed on either system.

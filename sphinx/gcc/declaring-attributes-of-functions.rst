@@ -1054,7 +1054,7 @@ The following attributes are supported on most targets.
 
   The ``no_sanitize_address`` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
-  in the function when compiling with the :option:`-fsanitize`:samp:`={address}` option.
+  in the function when compiling with the :option:`-fsanitize`:samp:`=address` option.
   The ``no_address_safety_analysis`` is a deprecated alias of the
   ``no_sanitize_address`` attribute, new code should use
   ``no_sanitize_address``.
@@ -1065,7 +1065,7 @@ The following attributes are supported on most targets.
 
   The ``no_sanitize_thread`` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
-  in the function when compiling with the :option:`-fsanitize`:samp:`={thread}` option.
+  in the function when compiling with the :option:`-fsanitize`:samp:`=thread` option.
 
 .. option:: no_sanitize_undefined
 
@@ -1073,7 +1073,7 @@ The following attributes are supported on most targets.
 
   The ``no_sanitize_undefined`` attribute on functions is used
   to inform the compiler that it should not check for undefined behavior
-  in the function when compiling with the :option:`-fsanitize`:samp:`={undefined}` option.
+  in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
 
 .. option:: no_split_stack, -fsplit-stack
 
@@ -1300,13 +1300,13 @@ The following attributes are supported on most targets.
   The ``patchable_function_entry`` function attribute can be used to
   change the number of NOPs to any desired value.  The two-value syntax
   is the same as for the command-line switch
-  :option:`-fpatchable-function-entry`:samp:`={N,M}`, generating :samp:`{N}` NOPs, with
+  :option:`-fpatchable-function-entry`:samp:`=N,M`, generating :samp:`{N}` NOPs, with
   the function entry point before the :samp:`{M}` th NOP instruction.
   :samp:`{M}` defaults to 0 if omitted e.g. function entry point is before
   the first NOP.
 
   If patchable function entries are enabled globally using the command-line
-  option :option:`-fpatchable-function-entry`:samp:`={N,M}`, then you must disable
+  option :option:`-fpatchable-function-entry`:samp:`=N,M`, then you must disable
   instrumentation on all functions that are part of the instrumentation
   framework with the attribute ``patchable_function_entry (0)``
   to prevent recursion.
@@ -1502,8 +1502,8 @@ The following attributes are supported on most targets.
   ``target("sse4.1,arch=core2")`` attribute and another with
   ``target("sse4a,arch=amdfam10")``.  This is equivalent to
   compiling the first function with :option:`-msse4.1` and
-  :option:`-march`:samp:`={core2}` options, and the second function with
-  :option:`-msse4a` and :option:`-march`:samp:`={amdfam10}` options.  It is up to you
+  :option:`-march`:samp:`=core2` options, and the second function with
+  :option:`-msse4a` and :option:`-march`:samp:`=amdfam10` options.  It is up to you
   to make sure that a function is only invoked on a machine that
   supports the particular ISA it is compiled for (for example by using
   ``cpuid`` on x86 to determine what feature bits and architecture
@@ -1594,7 +1594,7 @@ The following attributes are supported on most targets.
 
   On a PowerPC, you can compile a function with
   ``target_clones("cpu=power9,default")``.  GCC will create two
-  function clones, one compiled with :option:`-mcpu`:samp:`={power9}` and another
+  function clones, one compiled with :option:`-mcpu`:samp:`=power9` and another
   with the default options.  GCC must be configured to use GLIBC 2.23 or
   newer in order to use the ``target_clones`` attribute.
 
@@ -2079,9 +2079,9 @@ can affect function inlining rules:
 In particular, a caller function can inline a callee function only if the
 architectural features available to the callee are a subset of the features
 available to the caller.
-For example: A function ``foo`` compiled with :option:`-march`:samp:`={armv8-a+crc}`,
+For example: A function ``foo`` compiled with :option:`-march`:samp:`=armv8-a+crc`,
 or tagged with the equivalent ``arch=armv8-a+crc`` attribute,
-can inline a function ``bar`` compiled with :option:`-march`:samp:`={armv8-a+nocrc}`
+can inline a function ``bar`` compiled with :option:`-march`:samp:`=armv8-a+nocrc`
 because the all the architectural features that function ``bar`` requires
 are available to function ``foo``.  Conversely, function ``bar`` cannot
 inline function ``foo``.
@@ -3682,7 +3682,7 @@ These function attributes are supported by the PowerPC back end:
 
     Generate code that uses (does not use) AltiVec instructions.  In
     32-bit code, you cannot enable AltiVec instructions unless
-    :option:`-mabi`:samp:`={altivec}` is used on the command line.
+    :option:`-mabi`:samp:`=altivec` is used on the command line.
 
   :samp:`cmpb` :samp:`no-cmpb`
 
@@ -3810,7 +3810,7 @@ These function attributes are supported by the PowerPC back end:
     instructions, and also enable the use of built-in functions that allow
     more direct access to the VSX instruction set.  In 32-bit code, you
     cannot enable VSX or AltiVec instructions unless
-    :option:`-mabi`:samp:`={altivec}` is used on the command line.
+    :option:`-mabi`:samp:`=altivec` is used on the command line.
 
   :samp:`friz` :samp:`no-friz`
 
@@ -3850,7 +3850,7 @@ These function attributes are supported by the PowerPC back end:
     Specify the architecture to generate code for when compiling the
     function.  If you select the ``target("cpu=power7")`` attribute when
     generating 32-bit code, VSX and AltiVec instructions are not generated
-    unless you use the :option:`-mabi`:samp:`={altivec}` option on the command line.
+    unless you use the :option:`-mabi`:samp:`=altivec` option on the command line.
 
   :samp:`tune={TUNE}`
 
@@ -5086,14 +5086,14 @@ These function attributes are supported by the x86 back end:
 
   The ``nocf_check`` attribute on a function is used to inform the
   compiler that the function's prologue should not be instrumented when
-  compiled with the :option:`-fcf-protection`:samp:`={branch}` option.  The
+  compiled with the :option:`-fcf-protection`:samp:`=branch` option.  The
   compiler assumes that the function's address is a valid target for a
   control-flow transfer.
 
   The ``nocf_check`` attribute on a type of pointer to function is
   used to inform the compiler that a call through the pointer should
   not be instrumented when compiled with the
-  :option:`-fcf-protection`:samp:`={branch}` option.  The compiler assumes
+  :option:`-fcf-protection`:samp:`=branch` option.  The compiler assumes
   that the function's address from the pointer is a valid target for
   a control-flow transfer.  A direct function call through a function
   name is assumed to be a safe call thus direct calls are not
@@ -5145,7 +5145,7 @@ These function attributes are supported by the x86 back end:
 
   The ``cf_check`` attribute on a function is used to inform the
   compiler that ENDBR instruction should be placed at the function
-  entry when :option:`-fcf-protection`:samp:`={branch}` is enabled.
+  entry when :option:`-fcf-protection`:samp:`=branch` is enabled.
 
 .. option:: indirect_return
 

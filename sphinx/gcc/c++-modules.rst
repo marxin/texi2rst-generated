@@ -54,7 +54,7 @@ known missing pieces are:
   affected by how you partition header files into header units.
 
   Modular compilation is *not* enabled with just the
-:option:`-std`:samp:`={c++20}` option.  You must explicitly enable it with the
+:option:`-std`:samp:`=c++20` option.  You must explicitly enable it with the
 :option:`-fmodules-ts` option.  It is independent of the language
 version selected, although in pre-C++20 versions, it is of course an
 extension.

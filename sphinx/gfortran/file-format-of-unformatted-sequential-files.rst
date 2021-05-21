@@ -20,7 +20,7 @@ subrecords.
 Each subrecord consists of a leading record marker, the data written
 by the user program, and a trailing record marker.  The record markers
 are four-byte integers by default, and eight-byte integers if the
-:option:`-fmax-subrecord-length`:samp:`={8}` option (which exists for backwards
+:option:`-fmax-subrecord-length`:samp:`=8` option (which exists for backwards
 compability only) is in effect.
 
 The representation of the record markers is that of unformatted files

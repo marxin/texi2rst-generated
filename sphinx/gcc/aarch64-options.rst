@@ -50,7 +50,7 @@ These options are defined for AArch64 implementations:
 
   Generate code for the large code model.  This makes no assumptions about
   addresses and sizes of sections.  Programs can be statically linked only.  The
-  :option:`-mcmodel`:samp:`={large}` option is incompatible with :option:`-mabi`:samp:`={ilp32}`,
+  :option:`-mcmodel`:samp:`=large` option is incompatible with :option:`-mabi`:samp:`=ilp32`,
   :option:`-fpic` and :option:`-fPIC`.
 
 .. option:: -mstrict-align, -mno-strict-align
@@ -143,8 +143,8 @@ These options are defined for AArch64 implementations:
   instructions that are present in the base ARMv8.0 ISA.
 
   This option is only applicable when compiling for the base ARMv8.0
-  instruction set.  If using a later revision, e.g. :option:`-march`:samp:`={armv8.1-a}`
-  or :option:`-march`:samp:`={armv8-a+lse}`, the ARMv8.1-Atomics instructions will be
+  instruction set.  If using a later revision, e.g. :option:`-march`:samp:`=armv8.1-a`
+  or :option:`-march`:samp:`=armv8-a+lse`, the ARMv8.1-Atomics instructions will be
   used directly.  The same applies when using :option:`-mcpu` = when the
   selected cpu supports the :samp:`lse` feature.
   This option is on by default.
@@ -265,7 +265,7 @@ These options are defined for AArch64 implementations:
   Enable or disable PC-relative literal loads.  With this option literal pools are
   accessed using a single instruction and emitted after each function.  This
   limits the maximum size of functions to 1MB.  This is enabled by default for
-  :option:`-mcmodel`:samp:`={tiny}`.
+  :option:`-mcmodel`:samp:`=tiny`.
 
 .. option:: -msign-return-address=scope
 
@@ -335,7 +335,7 @@ the following and their inverses no :samp:`{feature}` :
 
 :samp:`crc`
   Enable CRC extension.  This is on by default for
-  :option:`-march`:samp:`={armv8.1-a}`.
+  :option:`-march`:samp:`=armv8.1-a`.
 
 :samp:`crypto`
   Enable Crypto extension.  This also enables Advanced SIMD and floating-point
@@ -356,18 +356,18 @@ the following and their inverses no :samp:`{feature}` :
 
 :samp:`lse`
   Enable Large System Extension instructions.  This is on by default for
-  :option:`-march`:samp:`={armv8.1-a}`.
+  :option:`-march`:samp:`=armv8.1-a`.
 
 :samp:`rdma`
   Enable Round Double Multiply Accumulate instructions.  This is on by default
-  for :option:`-march`:samp:`={armv8.1-a}`.
+  for :option:`-march`:samp:`=armv8.1-a`.
 
 :samp:`fp16`
   Enable FP16 extension.  This also enables floating-point instructions.
 
 :samp:`fp16fml`
   Enable FP16 fmla extension.  This also enables FP16 extensions and
-  floating-point instructions. This option is enabled by default for :option:`-march`:samp:`={armv8.4-a}`. Use of this option with architectures prior to Armv8.2-A is not supported.
+  floating-point instructions. This option is enabled by default for :option:`-march`:samp:`=armv8.4-a`. Use of this option with architectures prior to Armv8.2-A is not supported.
 
 :samp:`rcpc`
   Enable the RcPc extension.  This does not change code generation from GCC,
@@ -408,18 +408,18 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`sb`
   Enable the Armv8-a Speculation Barrier instruction.  This option is only to
   enable the extension at the assembler level and does not affect code
-  generation.  This option is enabled by default for :option:`-march`:samp:`={armv8.5-a}`.
+  generation.  This option is enabled by default for :option:`-march`:samp:`=armv8.5-a`.
 
 :samp:`ssbs`
   Enable the Armv8-a Speculative Store Bypass Safe instruction.  This option
   is only to enable the extension at the assembler level and does not affect code
-  generation.  This option is enabled by default for :option:`-march`:samp:`={armv8.5-a}`.
+  generation.  This option is enabled by default for :option:`-march`:samp:`=armv8.5-a`.
 
 :samp:`predres`
   Enable the Armv8-a Execution and Data Prediction Restriction instructions.
   This option is only to enable the extension at the assembler level and does
   not affect code generation.  This option is enabled by default for
-  :option:`-march`:samp:`={armv8.5-a}`.
+  :option:`-march`:samp:`=armv8.5-a`.
 
 :samp:`sve2`
   Enable the Armv8-a Scalable Vector Extension 2.  This also enables SVE
@@ -443,7 +443,7 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`i8mm`
   Enable 8-bit Integer Matrix Multiply instructions.  This also enables
   Advanced SIMD and floating-point instructions.  This option is enabled by
-  default for :option:`-march`:samp:`={armv8.6-a}`.  Use of this option with architectures
+  default for :option:`-march`:samp:`=armv8.6-a`.  Use of this option with architectures
   prior to Armv8.2-A is not supported.
 
 :samp:`f32mm`
@@ -459,7 +459,7 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`bf16`
   Enable brain half-precision floating-point instructions.  This also enables
   Advanced SIMD and floating-point instructions.  This option is enabled by
-  default for :option:`-march`:samp:`={armv8.6-a}`.  Use of this option with architectures
+  default for :option:`-march`:samp:`=armv8.6-a`.  Use of this option with architectures
   prior to Armv8.2-A is not supported.
 
 :samp:`flagm`

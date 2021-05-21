@@ -30,7 +30,7 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   *This is different from previous versions of :command:`gfortran`*,
   which specified a default record marker length of 8 on most
   systems.  If you want to read or write files compatible
-  with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`={8}`.
+  with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`=8`.
 
 .. option:: -fmax-subrecord-length=length
 

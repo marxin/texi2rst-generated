@@ -1270,7 +1270,7 @@ Here are several miscellaneous parameters.
 .. function:: bool TARGET_MEMTAG_CAN_TAG_ADDRESSES ()
 
   True if the backend architecture naturally supports ignoring some region
-  of pointers.  This feature means that :option:`-fsanitize`:samp:`={hwaddress}` can
+  of pointers.  This feature means that :option:`-fsanitize`:samp:`=hwaddress` can
   work.
 
   At preset, this feature does not support address spaces.  It also requires

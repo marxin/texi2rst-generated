@@ -13,16 +13,16 @@ These :samp:`-m` options are defined for picoChip implementations:
   parameters for array element type :samp:`{ae_type}`.  Supported values
   for :samp:`{ae_type}` are :samp:`ANY`, :samp:`MUL`, and :samp:`MAC`.
 
-  :option:`-mae`:samp:`={ANY}` selects a completely generic AE type.  Code
+  :option:`-mae`:samp:`=ANY` selects a completely generic AE type.  Code
   generated with this option runs on any of the other AE types.  The
   code is not as efficient as it would be if compiled for a specific
   AE type, and some types of operation (e.g., multiplication) do not
   work properly on all types of AE.
 
-  :option:`-mae`:samp:`={MUL}` selects a MUL AE type.  This is the most useful AE type
+  :option:`-mae`:samp:`=MUL` selects a MUL AE type.  This is the most useful AE type
   for compiled code, and is the default.
 
-  :option:`-mae`:samp:`={MAC}` selects a DSP-style MAC AE.  Code compiled with this
+  :option:`-mae`:samp:`=MAC` selects a DSP-style MAC AE.  Code compiled with this
   option may suffer from poor performance of byte (char) manipulation,
   since the DSP AE does not provide hardware support for byte load/stores.
 

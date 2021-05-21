@@ -616,7 +616,7 @@ are stored in the ``REG_NOTES`` field of an insn.
   the pattern is either complex or misleading.
 
 The note ``REG_CALL_NOCF_CHECK`` is used in conjunction with the
-:option:`-fcf-protection`:samp:`={branch}` option.  The note is set if a
+:option:`-fcf-protection`:samp:`=branch` option.  The note is set if a
 ``nocf_check`` attribute is specified for a function type or a
 pointer to function type.  The note is stored in the ``REG_NOTES``
 field of an insn.
@@ -627,7 +627,7 @@ field of an insn.
 
   Users have control through the ``nocf_check`` attribute to identify
   which calls to a function should be skipped from control-flow instrumentation
-  when the option :option:`-fcf-protection`:samp:`={branch}` is specified.  The compiler
+  when the option :option:`-fcf-protection`:samp:`=branch` is specified.  The compiler
   puts a ``REG_CALL_NOCF_CHECK`` note on each ``CALL_INSN`` instruction
   that has a function type marked with a ``nocf_check`` attribute.
 
