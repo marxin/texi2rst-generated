@@ -189,24 +189,21 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   This is effective only with :option:`-msched-control-spec` enabled.
   The default setting is enabled.
 
-.. option:: -mno-sched-prefer-non-data-spec-insns
-.. option:: -msched-prefer-non-data-spec-insns
+.. option:: -mno-sched-prefer-non-data-spec-insns, -msched-prefer-non-data-spec-insns
 
   If enabled, data-speculative instructions are chosen for schedule
   only if there are no other choices at the moment.  This makes
   the use of the data speculation much more conservative.
   The default setting is disabled.
 
-.. option:: -mno-sched-prefer-non-control-spec-insns
-.. option:: -msched-prefer-non-control-spec-insns
+.. option:: -mno-sched-prefer-non-control-spec-insns, -msched-prefer-non-control-spec-insns
 
   If enabled, control-speculative instructions are chosen for schedule
   only if there are no other choices at the moment.  This makes
   the use of the control speculation much more conservative.
   The default setting is disabled.
 
-.. option:: -mno-sched-count-spec-in-critical-path
-.. option:: -msched-count-spec-in-critical-path
+.. option:: -mno-sched-count-spec-in-critical-path, -msched-count-spec-in-critical-path
 
   If enabled, speculative dependencies are considered during
   computation of the instructions priorities.  This makes the use of the

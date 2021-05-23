@@ -447,8 +447,7 @@ warn at all unless optimization is enabled.
   the compiler performs the entire computation with ``double``
   because the floating-point literal is a ``double``.
 
-.. option:: -Wduplicate-decl-specifier , -Wduplicate-decl-specifier
-.. option:: -Wno-duplicate-decl-specifier
+.. option:: -Wduplicate-decl-specifier , -Wduplicate-decl-specifier, -Wno-duplicate-decl-specifier
 
   .. note::
 
@@ -703,8 +702,7 @@ warn at all unless optimization is enabled.
   This warning is enabled by default in C99 and later dialects of C,
   and also by :option:`-Wall`.
 
-.. option:: -Wno-implicit-function-declaration , -Wimplicit-function-declaration
-.. option:: -Wno-implicit-function-declaration
+.. option:: -Wno-implicit-function-declaration , -Wimplicit-function-declaration, -Wno-implicit-function-declaration
 
   .. note::
 
@@ -896,8 +894,7 @@ warn at all unless optimization is enabled.
   is enabled by default in C++ and is enabled by either :option:`-Wall`
   or :option:`-Wpedantic`.
 
-.. option:: -Wmisleading-indentation , -Wmisleading-indentation
-.. option:: -Wno-misleading-indentation
+.. option:: -Wmisleading-indentation , -Wmisleading-indentation, -Wno-misleading-indentation
 
   .. note::
 
@@ -999,8 +996,7 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wmissing-include-dirs , -Wmissing-include-dirs
-.. option:: -Wno-missing-include-dirs
+.. option:: -Wmissing-include-dirs , -Wmissing-include-dirs, -Wno-missing-include-dirs
 
   .. note::
 
@@ -1352,8 +1348,7 @@ warn at all unless optimization is enabled.
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
 
-.. option:: -Wunused-local-typedefs , -Wunused-local-typedefs
-.. option:: -Wno-unused-local-typedefs
+.. option:: -Wunused-local-typedefs , -Wunused-local-typedefs, -Wno-unused-local-typedefs
 
   .. note::
 
@@ -2128,8 +2123,7 @@ warn at all unless optimization is enabled.
   is called with an argument greater than 0.  Such calls may return indeterminate
   values or crash the program.  The warning is included in :option:`-Wall`.
 
-.. option:: -Wno-discarded-qualifiers , -Wno-discarded-qualifiers
-.. option:: -Wdiscarded-qualifiers
+.. option:: -Wno-discarded-qualifiers , -Wno-discarded-qualifiers, -Wdiscarded-qualifiers
 
   .. note::
 
@@ -2140,8 +2134,7 @@ warn at all unless optimization is enabled.
   passed to a function that takes a ``char *`` parameter.  This option
   can be used to suppress such a warning.
 
-.. option:: -Wno-discarded-array-qualifiers , -Wno-discarded-array-qualifiers
-.. option:: -Wdiscarded-array-qualifiers
+.. option:: -Wno-discarded-array-qualifiers , -Wno-discarded-array-qualifiers, -Wdiscarded-array-qualifiers
 
   .. note::
 
@@ -2153,8 +2146,7 @@ warn at all unless optimization is enabled.
   takes a ``int (*)[]`` parameter.  This option can be used to
   suppress such a warning.
 
-.. option:: -Wno-incompatible-pointer-types , -Wno-incompatible-pointer-types
-.. option:: -Wincompatible-pointer-types
+.. option:: -Wno-incompatible-pointer-types , -Wno-incompatible-pointer-types, -Wincompatible-pointer-types
 
   .. note::
 
@@ -2345,8 +2337,7 @@ warn at all unless optimization is enabled.
     because that feature is already a GCC extension and thus not relevant to
     traditional C compatibility.
 
-.. option:: -Wtraditional-conversion , -Wtraditional-conversion
-.. option:: -Wno-traditional-conversion
+.. option:: -Wtraditional-conversion , -Wtraditional-conversion, -Wno-traditional-conversion
 
   .. note::
 
@@ -2358,8 +2349,7 @@ warn at all unless optimization is enabled.
   conversions changing the width or signedness of a fixed-point argument
   except when the same as the default promotion.
 
-.. option:: -Wdeclaration-after-statement , -Wdeclaration-after-statement
-.. option:: -Wno-declaration-after-statement
+.. option:: -Wdeclaration-after-statement , -Wdeclaration-after-statement, -Wno-declaration-after-statement
 
   .. note::
 
@@ -3167,8 +3157,7 @@ warn at all unless optimization is enabled.
   a warning if preceded by a declaration that specifies the argument
   types.)
 
-.. option:: -Wold-style-declaration , -Wold-style-declaration
-.. option:: -Wno-old-style-declaration
+.. option:: -Wold-style-declaration , -Wold-style-declaration, -Wno-old-style-declaration
 
   .. note::
 
@@ -3179,8 +3168,7 @@ warn at all unless optimization is enabled.
   ``static`` are not the first things in a declaration.  This warning
   is also enabled by :option:`-Wextra`.
 
-.. option:: -Wold-style-definition , -Wold-style-definition
-.. option:: -Wno-old-style-definition
+.. option:: -Wold-style-definition , -Wold-style-definition, -Wno-old-style-definition
 
   .. note::
 
@@ -3192,8 +3180,7 @@ warn at all unless optimization is enabled.
   equivalent to :samp:`(void)` in that case, but is considered an
   old-style definition for older standards.
 
-.. option:: -Wmissing-parameter-type , -Wmissing-parameter-type
-.. option:: -Wno-missing-parameter-type
+.. option:: -Wmissing-parameter-type , -Wmissing-parameter-type, -Wno-missing-parameter-type
 
   .. note::
 
@@ -3233,8 +3220,7 @@ warn at all unless optimization is enabled.
   missing prototypes.  In C++, no warnings are issued for function templates,
   or for inline functions, or for functions in anonymous namespaces.
 
-.. option:: -Wmissing-field-initializers, -Wno-missing-field-initializers, -W
-.. option:: -Wextra, -Wno-extra
+.. option:: -Wmissing-field-initializers, -Wno-missing-field-initializers, -W, -Wextra, -Wno-extra
 
   Warn if a structure's initializer has some fields missing.  For
   example, the following code causes such a warning, because
@@ -3367,8 +3353,7 @@ warn at all unless optimization is enabled.
   simd directive set by user.  The :option:`-fsimd-cost-model`:samp:`=unlimited`
   option can be used to relax the cost model.
 
-.. option:: -Woverride-init , -Woverride-init, -Wno-override-init, -W, -Wextra
-.. option:: -Wno-extra
+.. option:: -Woverride-init , -Woverride-init, -Wno-override-init, -W, -Wextra, -Wno-extra
 
   .. note::
 
@@ -3382,8 +3367,7 @@ warn at all unless optimization is enabled.
   :option:`-Wextra` warnings without this one, use :option:`-Wextra
   -Wno-override-init`.
 
-.. option:: -Wno-override-init-side-effects , -Woverride-init-side-effects
-.. option:: -Wno-override-init-side-effects
+.. option:: -Wno-override-init-side-effects , -Woverride-init-side-effects, -Wno-override-init-side-effects
 
   .. note::
 
@@ -3413,8 +3397,7 @@ warn at all unless optimization is enabled.
       struct foo f;
     };
 
-.. option:: -Wnopacked-bitfield-compat, -Wpacked-bitfield-compat
-.. option:: -Wno-packed-bitfield-compat
+.. option:: -Wnopacked-bitfield-compat, -Wpacked-bitfield-compat, -Wno-packed-bitfield-compat
 
   The 4.1, 4.2 and 4.3 series of GCC ignore the ``packed`` attribute
   on bit-fields of type ``char``.  This was fixed in GCC 4.4 but
@@ -3525,8 +3508,7 @@ warn at all unless optimization is enabled.
   different size. In C++, casting to a pointer type of smaller size is
   an error. Wint-to-pointer-cast is enabled by default.
 
-.. option:: -Wno-pointer-to-int-cast , -Wno-pointer-to-int-cast
-.. option:: -Wpointer-to-int-cast
+.. option:: -Wno-pointer-to-int-cast , -Wno-pointer-to-int-cast, -Wpointer-to-int-cast
 
   .. note::
 
@@ -3683,8 +3665,7 @@ warn at all unless optimization is enabled.
   This option is implied by :option:`-Wpedantic`, and can be disabled with
   :option:`-Wno-overlength-strings`.
 
-.. option:: -Wunsuffixed-float-constants , -Wunsuffixed-float-constants
-.. option:: -Wno-unsuffixed-float-constants
+.. option:: -Wunsuffixed-float-constants , -Wunsuffixed-float-constants, -Wno-unsuffixed-float-constants
 
   .. note::
 

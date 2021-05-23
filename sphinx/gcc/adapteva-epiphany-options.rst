@@ -112,8 +112,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
     The default is :option:`-mfp-mode`:samp:`=caller`
 
-.. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify
-.. option:: -mpostmodify
+.. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify, -mpostmodify
 
   Code generation tweaks that disable, respectively, splitting of 32-bit
   loads, generation of post-increment addresses, and generation of

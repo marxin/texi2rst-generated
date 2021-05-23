@@ -564,8 +564,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   it results in inferior code and has no benefits.  This option may
   be removed in a future release of G++.
 
-.. option:: -fext-numeric-literals , -fext-numeric-literals
-.. option:: -fno-ext-numeric-literals
+.. option:: -fext-numeric-literals , -fext-numeric-literals, -fno-ext-numeric-literals
 
   .. note::
 
@@ -645,8 +644,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Enabled by default with :option:`-std`:samp:`=c++20`.
 
-.. option:: -Wctad-maybe-unsupported , -Wctad-maybe-unsupported
-.. option:: -Wno-ctad-maybe-unsupported
+.. option:: -Wctad-maybe-unsupported , -Wctad-maybe-unsupported, -Wno-ctad-maybe-unsupported
 
   .. note::
 
@@ -680,8 +678,7 @@ In addition, these warning options have meanings only for C++ programs:
   methods, and there's at least one private member function that isn't
   a constructor or destructor.
 
-.. option:: -Wdelete-non-virtual-dtor , -Wdelete-non-virtual-dtor
-.. option:: -Wno-delete-non-virtual-dtor
+.. option:: -Wdelete-non-virtual-dtor , -Wdelete-non-virtual-dtor, -Wno-delete-non-virtual-dtor
 
   .. note::
 
@@ -706,8 +703,7 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-Wdeprecated-copy-dtor`, also deprecate if the class has a
   user-provided destructor.
 
-.. option:: -Wno-deprecated-enum-enum-conversion 
-.. option:: -Wdeprecated-enum-enum-conversion, -Wno-deprecated-enum-enum-conversion
+.. option:: -Wno-deprecated-enum-enum-conversion , -Wdeprecated-enum-enum-conversion, -Wno-deprecated-enum-enum-conversion
 
   .. note::
 
@@ -728,9 +724,7 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-std`:samp:`=c++20`.  In pre-C++20 dialects, this warning can be enabled
   by :option:`-Wenum-conversion`.
 
-.. option:: -Wno-deprecated-enum-float-conversion 
-.. option:: -Wdeprecated-enum-float-conversion
-.. option:: -Wno-deprecated-enum-float-conversion
+.. option:: -Wno-deprecated-enum-float-conversion , -Wdeprecated-enum-float-conversion, -Wno-deprecated-enum-float-conversion
 
   .. note::
 
@@ -1037,8 +1031,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   This warning is enabled by :option:`-Wextra`.
 
-.. option:: -Wrange-loop-construct , -Wrange-loop-construct
-.. option:: -Wno-range-loop-construct
+.. option:: -Wrange-loop-construct , -Wrange-loop-construct, -Wno-range-loop-construct
 
   .. note::
 
@@ -1157,8 +1150,7 @@ In addition, these warning options have meanings only for C++ programs:
   Disable the warning about the case when an exception handler is shadowed by
   another handler, which can point out a wrong ordering of exception handlers.
 
-.. option:: -Wstrict-null-sentinel , -Wstrict-null-sentinel
-.. option:: -Wno-strict-null-sentinel
+.. option:: -Wstrict-null-sentinel , -Wstrict-null-sentinel, -Wno-strict-null-sentinel
 
   .. note::
 
@@ -1170,8 +1162,7 @@ In addition, these warning options have meanings only for C++ programs:
   null pointer, it is guaranteed to be of the same size as a pointer.
   But this use is not portable across different compilers.
 
-.. option:: -Wno-non-template-friend , -Wno-non-template-friend
-.. option:: -Wnon-template-friend
+.. option:: -Wno-non-template-friend , -Wno-non-template-friend, -Wnon-template-friend
 
   .. note::
 
@@ -1261,8 +1252,7 @@ In addition, these warning options have meanings only for C++ programs:
   one can still use the STL.  One may also instantiate or specialize
   templates.
 
-.. option:: -Wno-mismatched-new-delete , -Wmismatched-new-delete
-.. option:: -Wno-mismatched-new-delete
+.. option:: -Wno-mismatched-new-delete , -Wmismatched-new-delete, -Wno-mismatched-new-delete
 
   .. note::
 
@@ -1329,8 +1319,7 @@ In addition, these warning options have meanings only for C++ programs:
   declared with different class-keys.  The option can be used either on its
   own or in conjunction with :option:`-Wredundant-tags`.
 
-.. option:: -Wmultiple-inheritance , -Wmultiple-inheritance
-.. option:: -Wno-multiple-inheritance
+.. option:: -Wmultiple-inheritance , -Wmultiple-inheritance, -Wno-multiple-inheritance
 
   .. note::
 
@@ -1436,8 +1425,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Enabled by default with :option:`-std`:samp:`=c++20`.
 
-.. option:: -Wzero-as-null-pointer-constant , -Wzero-as-null-pointer-constant
-.. option:: -Wno-zero-as-null-pointer-constant
+.. option:: -Wzero-as-null-pointer-constant , -Wzero-as-null-pointer-constant, -Wno-zero-as-null-pointer-constant
 
   .. note::
 
@@ -1509,8 +1497,7 @@ In addition, these warning options have meanings only for C++ programs:
   by value. With :option:`-Wcatch-value`:samp:`=3` warn about all types that are
   not caught by reference. :option:`-Wcatch-value` is enabled by :option:`-Wall`.
 
-.. option:: -Wconditionally-supported , -Wconditionally-supported
-.. option:: -Wno-conditionally-supported
+.. option:: -Wconditionally-supported , -Wconditionally-supported, -Wno-conditionally-supported
 
   .. note::
 

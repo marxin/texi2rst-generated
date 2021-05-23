@@ -248,8 +248,7 @@ The files are created in the directory of the output file.
 
     Dump after sibling call optimizations.
 
-  .. option:: -fdump-rtl-split1, -fdump-rtl-split2, -fdump-rtl-split3
-  .. option:: -fdump-rtl-split4, -fdump-rtl-split5
+  .. option:: -fdump-rtl-split1, -fdump-rtl-split2, -fdump-rtl-split3, -fdump-rtl-split4, -fdump-rtl-split5
 
     These options enable dumping after five rounds of
     instruction splitting.
@@ -285,9 +284,7 @@ The files are created in the directory of the output file.
 
     Dump after live range splitting.
 
-  .. option:: -fdump-rtl-regclass, -fdump-rtl-subregs_of_mode_init
-  .. option:: -fdump-rtl-subregs_of_mode_finish, -fdump-rtl-dfinit
-  .. option:: -fdump-rtl-dfinish
+  .. option:: -fdump-rtl-regclass, -fdump-rtl-subregs_of_mode_init, -fdump-rtl-subregs_of_mode_finish, -fdump-rtl-dfinit, -fdump-rtl-dfinish
 
     These dumps are defined but always produce empty files.
 

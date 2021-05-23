@@ -53,8 +53,7 @@ These options are defined specifically for the CRIS ports.
   Do not emit instructions with side effects in addressing modes other than
   post-increment.
 
-.. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align
-.. option:: -mconst-align, -mno-const-align
+.. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align, -mconst-align, -mno-const-align
 
   These options (:samp:`no-` options) arrange (eliminate arrangements) for the
   stack frame, individual data and constants to be aligned for the maximum

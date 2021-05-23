@@ -64,8 +64,7 @@ Options That Control Static Analysis
   can have a deallocator called on it more than once, either ``free``,
   or a deallocator referenced by attribute ``malloc``.
 
-.. option:: -Wno-analyzer-exposure-through-output-file
-.. option:: -Wanalyzer-exposure-through-output-file
+.. option:: -Wno-analyzer-exposure-through-output-file, -Wanalyzer-exposure-through-output-file
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-exposure-through-output-file`
@@ -103,8 +102,7 @@ Options That Control Static Analysis
   pointer allocated via an allocator is leaked: either ``malloc``,
   or a function marked with attribute ``malloc``.
 
-.. option:: -Wno-analyzer-mismatching-deallocation
-.. option:: -Wanalyzer-mismatching-deallocation
+.. option:: -Wno-analyzer-mismatching-deallocation, -Wanalyzer-mismatching-deallocation
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-mismatching-deallocation`
@@ -127,8 +125,7 @@ Options That Control Static Analysis
   with ``__attribute__((nonnull))`` as requiring a non-NULL
   value.
 
-.. option:: -Wno-analyzer-possible-null-dereference
-.. option:: -Wanalyzer-possible-null-dereference
+.. option:: -Wno-analyzer-possible-null-dereference, -Wanalyzer-possible-null-dereference
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-possible-null-dereference` to disable it.
@@ -206,8 +203,7 @@ Options That Control Static Analysis
   that could be under an attacker's control is used as the index
   of an array access without being sanitized.
 
-.. option:: -Wno-analyzer-unsafe-call-within-signal-handler
-.. option:: -Wanalyzer-unsafe-call-within-signal-handler
+.. option:: -Wno-analyzer-unsafe-call-within-signal-handler, -Wanalyzer-unsafe-call-within-signal-handler
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` to disable it.
@@ -225,8 +221,7 @@ Options That Control Static Analysis
   pointer is used after a deallocator is called on it: either ``free``,
   or a deallocator referenced by attribute ``malloc``.
 
-.. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame
-.. option:: -Wanalyzer-use-of-pointer-in-stale-stack-frame
+.. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame, -Wanalyzer-use-of-pointer-in-stale-stack-frame
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`
@@ -246,8 +241,7 @@ Options That Control Static Analysis
   However, the analyzer does not prioritize detection of such paths, so
   false negatives are more likely relative to other warnings.
 
-.. option:: -Wno-analyzer-write-to-string-literal
-.. option:: -Wanalyzer-write-to-string-literal
+.. option:: -Wno-analyzer-write-to-string-literal, -Wanalyzer-write-to-string-literal
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-write-to-string-literal`

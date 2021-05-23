@@ -9,10 +9,7 @@ IBM RS/6000 and PowerPC Options
 
 These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
-.. option:: -mpowerpc-gpopt, -mno-powerpc-gpopt, -mpowerpc-gfxopt
-.. option:: -mno-powerpc-gfxopt, -mpowerpc64, -mno-powerpc64, -mmfcrf, -mno-mfcrf
-.. option:: -mpopcntb, -mno-popcntb, -mpopcntd, -mno-popcntd, -mfprnd, -mno-fprnd
-.. option:: -mcmpb, -mno-cmpb, -mhard-dfp, -mno-hard-dfp
+.. option:: -mpowerpc-gpopt, -mno-powerpc-gpopt, -mpowerpc-gfxopt, -mno-powerpc-gfxopt, -mpowerpc64, -mno-powerpc64, -mmfcrf, -mno-mfcrf, -mpopcntb, -mno-popcntb, -mpopcntd, -mno-popcntd, -mfprnd, -mno-fprnd, -mcmpb, -mno-cmpb, -mhard-dfp, -mno-hard-dfp
 
   You use these options to specify which instructions are available on the
   processor you are using.  The default value of these options is
@@ -999,8 +996,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) code that will run in privileged state.
 
-.. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx
-.. option:: -no-block-ops-unaligned-vsx
+.. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx, -no-block-ops-unaligned-vsx
 
   Generate (do not generate) unaligned vsx loads and stores for
   inline expansion of ``memcpy`` and ``memmove``.

@@ -195,8 +195,7 @@ and Objective-C++ programs:
   Warn whenever an Objective-C assignment is being intercepted by the
   garbage collector.
 
-.. option:: -Wno-property-assign-default , -Wproperty-assign-default
-.. option:: -Wno-property-assign-default
+.. option:: -Wno-property-assign-default , -Wproperty-assign-default, -Wno-property-assign-default
 
   .. note::
 
@@ -247,8 +246,7 @@ and Objective-C++ programs:
   found during compilation, or because the :option:`-fsyntax-only` option is
   being used.
 
-.. option:: -Wstrict-selector-match , -Wstrict-selector-match
-.. option:: -Wno-strict-selector-match
+.. option:: -Wstrict-selector-match , -Wstrict-selector-match, -Wno-strict-selector-match
 
   .. note::
 
