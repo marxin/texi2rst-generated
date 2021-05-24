@@ -42,13 +42,13 @@ included in the gfdl(7) man page.
 @setfilename gcc
 @settitle GNU project C and C++ compiler
 @c man begin SYNOPSIS
-gcc [ :option:`-c` | :option:`-S` | :option:`-E` ] [ :option:`-std`:samp:`={standard}` ]
-    [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
-    [ :option:`-W`:samp:`{warn}`...] [ :option:`-Wpedantic` ]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-    [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
-    [ :option:`-f`:samp:`{option}`...] [ :option:`-m`:samp:`{machine-option}`...]
-    [ :option:`-o` :samp:`{outfile}` ] [@@ :samp:`{file}` ] :samp:`{infile}`...
+gcc [@option{-c}|@option{-S}|@option{-E}] [@option{-std=}@var{standard}]
+    [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
+    [@option{-W}@var{warn}...] [@option{-Wpedantic}]
+    [@option{-I}@var{dir}...] [@option{-L}@var{dir}...]
+    [@option{-D}@var{macro}[=@var{defn}]...] [@option{-U}@var{macro}]
+    [@option{-f}@var{option}...] [@option{-m}@var{machine-option}...]
+    [@option{-o} @var{outfile}] [@@@var{file}] @var{infile}...
 
 Only the most useful options are listed here; see below for the
 remainder.  @command{g++} accepts mostly the same options as @command{gcc}.

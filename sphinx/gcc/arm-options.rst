@@ -34,13 +34,13 @@ These :samp:`-m` options are defined for the ARM port:
   @code{__rt_stkovf_split_small} or @code{__rt_stkovf_split_big} is
   called, depending upon the amount of stack space required.  The runtime
   system is required to provide these functions.  The default is
-  :option:`-mno-apcs-stack-check`, since this produces smaller code.
+  @option{-mno-apcs-stack-check}, since this produces smaller code.
 
   @c not currently implemented
   @item -mapcs-reentrant
   @opindex mapcs-reentrant
   Generate reentrant, position-independent code.  The default is
-  :option:`-mno-apcs-reentrant`.
+  @option{-mno-apcs-reentrant}.
 
 .. option:: -mthumb-interwork
 

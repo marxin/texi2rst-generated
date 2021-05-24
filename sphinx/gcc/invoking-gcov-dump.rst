@@ -9,16 +9,18 @@ Invoking gcov-dump
 
 :command:`gcov-dump` accepts the following options:
 
-@c man begin SYNOPSIS
-gcov-dump [ :option:`-v` | :option:`--version` ]
-     [ :option:`-h` | :option:`--help` ]
-     [ :option:`-l` | :option:`--long` ]
-     [ :option:`-p` | :option:`--positions` ]
-     [ :option:`-r` | :option:`--raw` ]
-     :samp:`{gcovfiles}`
-@c man end
+Synopsis
+^^^^^^^^
 
-.. man begin OPTIONS
+gcov-dump [*-v*|*-version*]
+     [*-h*|*-help*]
+     [*-l*|*-long*]
+     [*-p*|*-positions*]
+     [*-r*|*-raw*]
+     [*gcovfiles*]
+
+Options
+^^^^^^^
 
 ``-h`` ``--help``
   Display help about using :command:`gcov-dump` (on the standard output), and
@@ -37,8 +39,7 @@ gcov-dump [ :option:`-v` | :option:`--version` ]
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
 
-.. man end
-   Copyright (C) 2018-2021 Free Software Foundation, Inc.
+.. Copyright (C) 2018-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.
    For copying conditions, see the file gcc.texi.
 
