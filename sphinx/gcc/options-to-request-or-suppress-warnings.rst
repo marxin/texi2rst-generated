@@ -2766,6 +2766,56 @@ warn at all unless optimization is enabled.
   Warn about C++ constructs whose meaning differs between ISO C++ 2017
   and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
 
+.. option:: -Wno-c++11-extensions , -Wc++11-extensions, -Wno-c++11-extensions
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Do not warn about C++11 constructs in code being compiled using
+  an older C++ standard.  Even without this option, some C++11 constructs
+  will only be diagnosed if :option:`-Wpedantic` is used.
+
+.. option:: -Wno-c++14-extensions , -Wc++14-extensions, -Wno-c++14-extensions
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Do not warn about C++14 constructs in code being compiled using
+  an older C++ standard.  Even without this option, some C++14 constructs
+  will only be diagnosed if :option:`-Wpedantic` is used.
+
+.. option:: -Wno-c++17-extensions , -Wc++17-extensions, -Wno-c++17-extensions
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Do not warn about C++17 constructs in code being compiled using
+  an older C++ standard.  Even without this option, some C++17 constructs
+  will only be diagnosed if :option:`-Wpedantic` is used.
+
+.. option:: -Wno-c++20-extensions , -Wc++20-extensions, -Wno-c++20-extensions
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Do not warn about C++20 constructs in code being compiled using
+  an older C++ standard.  Even without this option, some C++20 constructs
+  will only be diagnosed if :option:`-Wpedantic` is used.
+
+.. option:: -Wno-c++23-extensions , -Wc++23-extensions, -Wno-c++23-extensions
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Do not warn about C++23 constructs in code being compiled using
+  an older C++ standard.  Even without this option, some C++23 constructs
+  will only be diagnosed if :option:`-Wpedantic` is used.
+
 .. option:: -Wcast-qual, -Wno-cast-qual
 
   Warn whenever a pointer is cast so as to remove a type qualifier from

@@ -239,6 +239,13 @@ double underscores.
   of a C string constant.  This is the source file that was specified
   on the command line of the preprocessor or C compiler.
 
+``__FILE_NAME__``
+  This macro expands to the basename of the current input file, in the
+  form of a C string constant.  This is the last path component by which
+  the preprocessor opened the file.  For example, processing
+  ``"/usr/local/include/myheader.h"`` would set this
+  macro to ``"myheader.h"``.
+
 ``__INCLUDE_LEVEL__``
   This macro expands to a decimal integer constant that represents the
   depth of nesting in include files.  The value of this macro is
@@ -430,11 +437,13 @@ double underscores.
   handling.
 
 ``__GXX_EXPERIMENTAL_CXX0X__``
-  This macro is defined when compiling a C++ source file with the option
-  :option:`-std`:samp:`=c++0x` or :option:`-std`:samp:`=gnu++0x`. It indicates that some
-  features likely to be included in C++0x are available. Note that these
-  features are experimental, and may change or be removed in future
-  versions of GCC.
+  This macro is defined when compiling a C++ source file with C++11 features
+  enabled, i.e., for all C++ language dialects except :option:`-std`:samp:`=c++98`
+  and :option:`-std`:samp:`=gnu++98`. This macro is obsolete, but can be used to
+  detect experimental C++0x features in very old versions of GCC. Since
+  GCC 4.7.0 the ``__cplusplus`` macro is defined correctly, so most
+  code should test ``__cplusplus >= 201103L`` instead of using this
+  macro.
 
 ``__GXX_WEAK__``
   This macro is defined when compiling a C++ source file.  It has the

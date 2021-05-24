@@ -8,7 +8,7 @@ ATOMIC_ADD - Atomic ADD operation
 .. index:: Atomic subroutine, add
 
 :samp:`{Description}:`
-  ``ATOMIC_ADD(ATOM, VALUE)`` atomically adds the value of :samp:`{VAR}` to the
+  ``ATOMIC_ADD(ATOM, VALUE)`` atomically adds the value of :samp:`{VALUE}` to the
   variable :samp:`{ATOM}`. When :samp:`{STAT}` is present and the invocation was
   successful, it is assigned the value 0. If it is present and the invocation
   has failed, it is assigned a positive value; in particular, for a coindexed

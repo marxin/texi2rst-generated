@@ -158,7 +158,9 @@ in the following sections.
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` 
   :option:`-Wc11-c2x-compat` 
   :option:`-Wc++-compat`  :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  :option:`-Wc++17-compat`  
-  :option:`-Wc++20-compat`  
+  :option:`-Wc++20-compat`   
+  :option:`-Wno-c++11-extensions`  :option:`-Wno-c++14-extensions` :option:`-Wno-c++17-extensions`  
+  :option:`-Wno-c++20-extensions`  :option:`-Wno-c++23-extensions`  
   :option:`-Wcast-align`  :option:`-Wcast-align`:samp:`=strict`  :option:`-Wcast-function-type`  :option:`-Wcast-qual`  
   :option:`-Wchar-subscripts` 
   :option:`-Wclobbered`  :option:`-Wcomment` 

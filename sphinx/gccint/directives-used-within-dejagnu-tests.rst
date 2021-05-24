@@ -234,6 +234,21 @@ can be used if there is no line associated with the message.
   not matched by :samp:`{regexp}` then the check fails and :samp:`{comment}` is
   included in the ``FAIL`` message.
 
+:samp:`{ dg-note {regexp} [{comment} [{ target/xfail {selector} } [{line}] ]] }`
+  The line is expected to get a :samp:`note` message.
+  If there is no message for that line or if the text of that message is
+  not matched by :samp:`{regexp}` then the check fails and :samp:`{comment}` is
+  included in the ``FAIL`` message.
+
+  By default, any *excess* :samp:`note` messages are pruned, meaning
+  their appearance doesn't trigger *excess errors*.
+  However, if :samp:`dg-note` is used at least once in a testcase,
+  they're not pruned and instead must *all* be handled explicitly.
+  Thus, if looking for just single instances of messages with
+  :samp:`note: ` prefixes without caring for all of them, use
+  :samp:`dg-message "note: [...]"` instead of :samp:`dg-note`, or use
+  :samp:`dg-note` together with :samp:`dg-prune-output "note: "`.
+
 :samp:`{ dg-bogus {regexp} [{comment} [{ target/xfail {selector} } [{line}] ]] }`
   This DejaGnu directive appears on a source line that should not get a
   message matching :samp:`{regexp}`, or else specifies the source line
@@ -244,7 +259,8 @@ can be used if there is no line associated with the message.
 :samp:`{ dg-line {linenumvar} }`
   This DejaGnu directive sets the variable :samp:`{linenumvar}` to the line number of
   the source line.  The variable :samp:`{linenumvar}` can then be used in subsequent
-  ``dg-error``, ``dg-warning``, ``dg-message`` and ``dg-bogus``
+  ``dg-error``, ``dg-warning``, ``dg-message``, ``dg-note``
+  and ``dg-bogus``
   directives.  For example:
 
   .. code-block:: c++
@@ -256,7 +272,9 @@ can be used if there is no line associated with the message.
 :samp:`{ dg-excess-errors {comment} [{ target/xfail {selector} }] }`
   This DejaGnu directive indicates that the test is expected to fail due
   to compiler messages that are not handled by :samp:`dg-error`,
-  :samp:`dg-warning` or :samp:`dg-bogus`.  For this directive :samp:`xfail`
+  :samp:`dg-warning`, ``dg-message``, :samp:`dg-note` or
+  :samp:`dg-bogus`.
+  For this directive :samp:`xfail`
   has the same effect as :samp:`target`.
 
 :samp:`{ dg-prune-output {regexp} }`
@@ -1729,6 +1747,10 @@ Other attributes
 
 ``lgccjit``
   Target supports -lgccjit, i.e. libgccjit.so can be linked into jit tests.
+
+``__OPTIMIZE__``
+  Optimizations are enabled ( ``__OPTIMIZE__`` ) per the current
+  compiler flags.
 
 Local to tests in gcc.target/i386
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

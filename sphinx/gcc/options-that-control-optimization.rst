@@ -4316,6 +4316,12 @@ section includes experimental options that may produce broken code.
     The parameter only has an effect on targets that support partial
     vector loads and stores.
 
+  .. option:: vect-inner-loop-cost-factor
+
+    The factor which the loop vectorizer applies to the cost of statements
+    in an inner loop relative to the loop being vectorized.  The default
+    value is 50.
+
   .. option:: avoid-fma-max-bits
 
     Maximum number of bits for which we avoid creating FMAs.
@@ -4511,6 +4517,15 @@ section includes experimental options that may produce broken code.
     With :option:`--param`:samp:`=openacc-kernels=parloops`, OpenACC 'kernels'
     constructs are handled by the :samp:`parloops` pass, en bloc.
     This is the current default.
+
+  .. option:: openacc-privatization
+
+    Specify mode of OpenACC privatization diagnostics for
+    :option:`-fopt-info-omp-note` and applicable
+    :option:`-fdump-tree-*-details`.
+    With :option:`--param`:samp:`=openacc-privatization=quiet`, don't diagnose.
+    This is the current default.
+    With :option:`--param`:samp:`=openacc-privatization=noisy`, do diagnose.
 
     The following choices of :samp:`{name}` are available on AArch64 targets:
 

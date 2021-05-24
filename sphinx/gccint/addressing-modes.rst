@@ -596,3 +596,29 @@ This is about addressing modes.
   like ``cond_addm``.  The default implementation returns a zero
   constant of type :samp:`{type}`.
 
+.. function:: tree TARGET_GOACC_ADJUST_PRIVATE_DECL (location_t loc, tree var, int level)
+
+  This hook, if defined, is used by accelerator target back-ends to adjust
+  OpenACC variable declarations that should be made private to the given
+  parallelism level (i.e. ``GOMP_DIM_GANG``, ``GOMP_DIM_WORKER`` or
+  ``GOMP_DIM_VECTOR`` ).  A typical use for this hook is to force variable
+  declarations at the ``gang`` level to reside in GPU shared memory.
+  :samp:`{loc}` may be used for diagnostic purposes.
+
+  You may also use the ``TARGET_GOACC_EXPAND_VAR_DECL`` hook if the
+  adjusted variable declaration needs to be expanded to RTL in a non-standard
+  way.
+
+.. function:: rtx TARGET_GOACC_EXPAND_VAR_DECL (tree var)
+
+  This hook, if defined, is used by accelerator target back-ends to expand
+  specially handled kinds of ``VAR_DECL`` expressions.  A particular use is
+  to place variables with specific attributes inside special accelarator
+  memories.  A return value of ``NULL`` indicates that the target does not
+  handle this ``VAR_DECL``, and normal RTL expanding is resumed.
+
+  Only define this hook if your accelerator target needs to expand certain
+  ``VAR_DECL`` nodes in a way that differs from the default.  You can also adjust
+  private variables at OpenACC device-lowering time using the
+  ``TARGET_GOACC_ADJUST_PRIVATE_DECL`` target hook.
+

@@ -9,7 +9,7 @@ ATOMIC_FETCH_ADD - Atomic ADD operation with prior fetch
 
 :samp:`{Description}:`
   ``ATOMIC_FETCH_ADD(ATOM, VALUE, OLD)`` atomically stores the value of
-  :samp:`{ATOM}` in :samp:`{OLD}` and adds the value of :samp:`{VAR}` to the
+  :samp:`{ATOM}` in :samp:`{OLD}` and adds the value of :samp:`{VALUE}` to the
   variable :samp:`{ATOM}`. When :samp:`{STAT}` is present and the invocation was
   successful, it is assigned the value 0. If it is present and the invocation
   has failed, it is assigned a positive value; in particular, for a coindexed
