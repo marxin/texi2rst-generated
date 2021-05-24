@@ -9,16 +9,11 @@ Description
 :command:`lto-dump` is a tool you can use in conjunction with GCC to
 dump link time optimization object files.
 
-.. code-block:: c++
-
-  Usage: lto-dump [OPTION] ... objfiles
-
-:command:`lto-dump` accepts the following options:
-
 Synopsis
 ^^^^^^^^
 
-lto-dump [ :option:`-list` ]
+lto-dump
+     [ :option:`-list` ]
      [ :option:`-demangle` ]
      [ :option:`-defined-only` ]
      [ :option:`-print-value` ]

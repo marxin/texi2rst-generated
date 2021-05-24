@@ -12,7 +12,8 @@ dump content of gcda and gcno profile files offline.
 Synopsis
 ^^^^^^^^
 
-gcov-dump [ :option:`-v` | :option:`--version` ]
+gcov-dump
+     [ :option:`-v` | :option:`--version` ]
      [ :option:`-h` | :option:`--help` ]
      [ :option:`-l` | :option:`--long` ]
      [ :option:`-p` | :option:`--positions` ]
