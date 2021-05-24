@@ -3,10 +3,9 @@
 Introduction to lto-dump
 ************************
 
-.. man begin DESCRIPTION
+Description
+^^^^^^^^^^^
 
 :command:`lto-dump` is a tool you can use in conjunction with GCC to
 dump link time optimization object files.
-
-.. man end
 

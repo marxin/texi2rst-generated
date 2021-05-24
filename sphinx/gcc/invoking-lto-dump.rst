@@ -9,26 +9,28 @@ Invoking lto-dump
 
 :command:`lto-dump` accepts the following options:
 
-@c man begin SYNOPSIS
-lto-dump [@option{-list}]
-     [@option{-demangle}]
-     [@option{-defined-only}]
-     [@option{-print-value}]
-     [@option{-name-sort}]
-     [@option{-size-sort}]
-     [@option{-reverse-sort}]
-     [@option{-no-sort}]
-     [@option{-symbol=}]
-     [@option{-objects}]
-     [@option{-type-stats}]
-     [@option{-tree-stats}]
-     [@option{-gimple-stats}]
-     [@option{-dump-level=}]
-     [@option{-dump-body=}]
-     [@option{-help}] @var{lto-dump}
-@c man end
+Synopsis
+^^^^^^^^
 
-.. man begin OPTIONS
+lto-dump [ :option:`-list` ]
+     [ :option:`-demangle` ]
+     [ :option:`-defined-only` ]
+     [ :option:`-print-value` ]
+     [ :option:`-name-sort` ]
+     [ :option:`-size-sort` ]
+     [ :option:`-reverse-sort` ]
+     [ :option:`-no-sort` ]
+     [ :option:`-symbol` =]
+     [ :option:`-objects` ]
+     [ :option:`-type-stats` ]
+     [ :option:`-tree-stats` ]
+     [ :option:`-gimple-stats` ]
+     [ :option:`-dump-level` =]
+     [ :option:`-dump-body` =]
+     [ :option:`-help` ] :samp:`{lto-dump}`
+
+Options
+^^^^^^^
 
 ``-list``
   Dumps list of details of functions and variables.
@@ -78,8 +80,7 @@ lto-dump [@option{-list}]
 ``-help``
   Display the dump tool help.
 
-.. man end
-   Copyright (C) 1988-2021 Free Software Foundation, Inc.
+.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.
    For copying conditions, see the file gcc.texi.
 
