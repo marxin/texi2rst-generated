@@ -3,8 +3,6 @@
 Introduction to gcov
 ********************
 
-.. man begin DESCRIPTION
-
 :command:`gcov` is a test coverage program.  Use it in concert with GCC
 to analyze your programs to help create more efficient, faster running
 code and to discover untested parts of your program.  You can use
@@ -57,6 +55,4 @@ timing information you can use along with the information you get from
 
 :command:`gcov` works only on code compiled with GCC.  It is not
 compatible with any other profiling or test coverage mechanism.
-
-.. man end
 

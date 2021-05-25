@@ -271,5 +271,4 @@ patch version 2.5.4 (or later)
   own sources.
 
 .. ***Downloading the source**************************************************
-    comment node-name,     next,          previous, up
 

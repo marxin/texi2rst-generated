@@ -118,11 +118,6 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
   contributing-to-gcc-development
   contributors-to-gcc
 
-..  comment  node-name,  next,  previous,  up
-
-
-.. man begin DESCRIPTION
-
 .. _gnu-project:
 
 The GNU Project and GNU/Linux
@@ -142,8 +137,6 @@ For more information, see:
 
   http://www.gnu.org/
   http://www.gnu.org/gnu/linux-and-gnu.html
-
-.. man begin DESCRIPTION
 
 .. _option-index:
 

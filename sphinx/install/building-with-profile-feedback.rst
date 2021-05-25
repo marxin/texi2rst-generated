@@ -29,5 +29,4 @@ occurs it is recommended to clean before restarting. Otherwise
 the code quality may be much worse.
 
 .. ***Testing*****************************************************************
-    comment node-name,     next,          previous, up
 

@@ -3,9 +3,6 @@
 Symbol Versioning
 *****************
 
-..  comment Based on https://gcc.gnu.org/wiki/SymbolVersioning,
-    comment as of 2006-11-05, written by Janne Blomqvist.
-
 In general, this capability exists only on a few platforms, thus there
 is a need for configure magic so that it is used only on those targets
 where it is supported.
@@ -65,10 +62,4 @@ and ``VERS_1.2`` as well as in ``VERS_2.0``.
    -
 
 .. Special handling for inclusion in the install manual.
-   man begin DESCRIPTION
-    comment For some cases, this default @node/@unnumbered is not applicable and
-    comment causes warnings.  In those cases, the including file can set
-    comment nodefaultgnufreedocumentationlicensenode and provide it's own version.
-    comment F.i., when this file is included in an @raisesections context, the
-    comment including file can use an @unnumberedsec.
 

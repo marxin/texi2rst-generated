@@ -129,5 +129,4 @@ If you would like to generate online HTML documentation, do :samp:`cd
 :samp:`{objdir}` /gcc/HTML.
 
 .. ***Binaries****************************************************************
-    comment node-name,     next,          previous, up
 

@@ -72,10 +72,4 @@ Example
    -
 
 .. Special handling for inclusion in the install manual.
-   man begin DESCRIPTION
-    comment For some cases, this default @node/@unnumbered is not applicable and
-    comment causes warnings.  In those cases, the including file can set
-    comment nodefaultgnufreedocumentationlicensenode and provide it's own version.
-    comment F.i., when this file is included in an @raisesections context, the
-    comment including file can use an @unnumberedsec.
 

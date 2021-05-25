@@ -34,5 +34,4 @@ any longer, and, if shared libraries are installed there as well, no
 more binaries exist that use them.
 
 .. ***Prerequisites**************************************************
-    comment node-name,     next,          previous, up
 

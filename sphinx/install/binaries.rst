@@ -54,5 +54,4 @@ contact their makers.
   links to GNU Fortran binaries for several platforms.
 
 .. ***Specific****************************************************************
-    comment node-name,     next,          previous, up
 

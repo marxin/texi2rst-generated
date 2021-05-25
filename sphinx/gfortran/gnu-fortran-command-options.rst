@@ -9,8 +9,6 @@ GNU Fortran Command Options
 
 .. index:: options, gfortran command
 
-.. man begin DESCRIPTION
-
 The :command:`gfortran` command supports all the options supported by the
 :command:`gcc` command.  Only options specific to GNU Fortran are documented
 here.
@@ -33,8 +31,6 @@ In some cases, options have positive and negative forms;
 the negative form of :samp:`-ffoo` would be :samp:`-fno-foo`.
 This manual documents only one of these two forms, whichever
 one is not the default.
-
-.. man end
 
 .. toctree::
 

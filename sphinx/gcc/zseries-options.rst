@@ -7,5 +7,3 @@ zSeries Options
 
 These are listed under See :ref:`s-390-and-zseries-options`.
 
-.. man end
-

@@ -87,5 +87,4 @@ name.
 .. ***GFDL********************************************************************
 
 .. Special handling for inclusion in the install manual.
-    comment node-name,     next,          previous, up
 

@@ -3,8 +3,6 @@
 Option summary
 **************
 
-.. man begin OPTIONS
-
 Here is a summary of all the options specific to GNU Fortran, grouped
 by type.  Explanations are in the following sections.
 

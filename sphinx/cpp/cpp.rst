@@ -24,10 +24,6 @@
    titlepage environment after the title and any other subtitles have
    been placed, and before any authors are placed.
 
-.. man begin COPYRIGHT
-
-.. man begin COPYRIGHT
-
 .. Create a separate index for command line options.
 
 .. Used in cppopts.texi and cppenv.texi.

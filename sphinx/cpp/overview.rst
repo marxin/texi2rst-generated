@@ -3,8 +3,6 @@
 Overview
 --------
 
-.. man begin DESCRIPTION
-
 The C preprocessor, often known as :dfn:`cpp`, is a :dfn:`macro processor`
 that is used automatically by the C compiler to transform your program
 before compilation.  It is called a macro processor because it allows
@@ -53,8 +51,6 @@ Mode.
 
 For clarity, unless noted otherwise, references to :samp:`CPP` in this
 manual refer to GNU CPP.
-
-.. man end
 
 .. toctree::
 

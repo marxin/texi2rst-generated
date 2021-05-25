@@ -37,8 +37,6 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1), gcov(1) and the Info entry for
 @file{gcc}.
 @c man end
 
-.. man begin OPTIONS
-
 ``-h`` ``--help``
   Display help about using :command:`gcov-tool` (on the standard output), and
   exit without doing any further processing.
@@ -104,8 +102,7 @@ gpl(7), gfdl(7), fsf-funding(7), gcc(1), gcov(1) and the Info entry for
   ``-v`` ``--verbose``
     Set the verbose mode.
 
-.. man end
-   Copyright (C) 2017-2021 Free Software Foundation, Inc.
+.. Copyright (C) 2017-2021 Free Software Foundation, Inc.
    This is part of the GCC manual.
    For copying conditions, see the file gcc.texi.
 

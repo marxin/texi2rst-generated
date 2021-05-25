@@ -25,10 +25,6 @@
 
 .. Copyright years for this manual.
 
-.. man begin COPYRIGHT
-
-.. man begin COPYRIGHT
-
 .. _top:
 
 Introduction
@@ -48,6 +44,4 @@ package documentation, see http://golang.org/.
   import-and-export
   compiler-directives
   c-interoperability
-
-.. man begin DESCRIPTION
 

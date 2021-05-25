@@ -39,5 +39,4 @@ their directories to gmp, mpfr and mpc,
 respectively (or use symbolic links with the same name).
 
 .. ***Configuration***********************************************************
-    comment node-name,     next,          previous, up
 

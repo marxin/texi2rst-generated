@@ -45,7 +45,6 @@ Introduction
 .. Part 4 Top node, Master Menu, and/or Table of Contents
    Part 5 The Body of the Document
    ***Installing GCC**********************************************************
-    comment node-name,     next,          previous, up
 
 .. toctree::
 

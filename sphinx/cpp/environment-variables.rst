@@ -5,8 +5,6 @@ Environment Variables
 
 .. index:: environment variables
 
-.. man begin ENVIRONMENT
-
 This section describes the environment variables that affect how CPP
 operates.  You can use them to specify directories or prefixes to use
 when searching for include files, or to control dependency output.
@@ -53,11 +51,7 @@ configuration of GCC.
   :envvar:`CPATH` is ``:/special/include``, that has the same
   effect as :samp:`-I. -I/special/include`.
 
-  .. man end
-
   See also Search Path.
-
-  .. man begin ENVIRONMENT
 
 .. envvar:: DEPENDENCIES_OUTPUTDEPENDENCIES_OUTPUT
 
@@ -106,13 +100,5 @@ configuration of GCC.
   time of the source or package and it should be set by the build
   process.
 
-.. man end
-
 .. Special handling for inclusion in the install manual.
-   man begin DESCRIPTION
-    comment For some cases, this default @node/@unnumbered is not applicable and
-    comment causes warnings.  In those cases, the including file can set
-    comment nodefaultgnufreedocumentationlicensenode and provide it's own version.
-    comment F.i., when this file is included in an @raisesections context, the
-    comment including file can use an @unnumberedsec.
 

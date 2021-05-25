@@ -23,12 +23,6 @@ on this, support for OpenACC and offloading (both OpenACC and OpenMP
 4's target construct) has been added later on, and the library's name
 changed to GNU Offloading and Multi Processing Runtime Library.
 
-..  comment
-    comment  When you add a new menu item, please keep the right hand
-    comment  aligned to the same column.  Do not use tabs.  This provides
-    comment  better formatting.
-    comment
-
 .. toctree::
 
   enabling-openmp
@@ -55,9 +49,5 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 
   openmp-runtime-library-routines
   openmp-environment-variables
-
-.. man begin DESCRIPTION
-
-.. man begin DESCRIPTION
 
 .. _library-index:

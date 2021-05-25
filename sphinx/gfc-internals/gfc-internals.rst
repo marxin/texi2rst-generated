@@ -57,12 +57,6 @@ the GNU Fortran compiler.
 under development.  While efforts are made to keep it up-to-date, it might
 not accurately reflect the status of the most recent GNU Fortran compiler.
 
-..  comment
-    comment  When you add a new menu item, please keep the right hand
-    comment  aligned to the same column.  Do not use tabs.  This provides
-    comment  better formatting.
-    comment
-
 .. toctree::
 
   introduction

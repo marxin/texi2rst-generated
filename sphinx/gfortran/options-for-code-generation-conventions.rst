@@ -649,5 +649,3 @@ See :ref:`Options for Code Generation Conventions <code-gen-options>`, for infor
 offered by the GBE
 shared by :command:`gfortran`, :command:`gcc`, and other GNU compilers.
 
-.. man end
-

@@ -36,8 +36,6 @@ gcov [@option{-v}|@option{--version}] [@option{-h}|@option{--help}]
 gpl(7), gfdl(7), fsf-funding(7), gcc(1) and the Info entry for @file{gcc}.
 @c man end
 
-.. man begin OPTIONS
-
 ``-a`` ``--all-blocks``
   Write individual execution counts for every basic block.  Normally gcov
   outputs execution counts only for the main blocks of a line.  With this

@@ -9,8 +9,6 @@ GCC Command Options
 
 .. index:: options, GCC command
 
-.. man begin DESCRIPTION
-
 When you invoke GCC, it normally does preprocessing, compilation,
 assembly and linking.  The 'overall options' allow you to stop this
 process at an intermediate stage.  For example, the :option:`-c` option
@@ -90,8 +88,6 @@ designated by :samp:`{byte-size}` in the following text.  Refer to the NIST,
 IEC, and other relevant national and international standards for the full
 listing and explanation of the binary and decimal byte size prefixes.
 
-.. man end
-
 See :ref:`option-index`, for an index to GCC's options.
 
 .. toctree::
@@ -140,6 +136,4 @@ See :ref:`option-index`, for an index to GCC's options.
   specifying-subprocesses-and-the-switches-to-pass-to-them
   environment-variables-affecting-gcc
   using-precompiled-headers
-
-.. man begin OPTIONS
 

@@ -130,9 +130,6 @@ http://gcc.gnu.org/readings.html.
   link-time-optimization
   contributors-to-gcc
 
-
-.. man begin DESCRIPTION
-
 .. _gnu-project:
 
 The GNU Project and GNU/Linux
@@ -152,8 +149,6 @@ For more information, see:
 
   http://www.gnu.org/
   http://www.gnu.org/gnu/linux-and-gnu.html
-
-.. man begin DESCRIPTION
 
 .. _option-index:
 

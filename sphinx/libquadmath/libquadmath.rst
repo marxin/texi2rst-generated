@@ -12,12 +12,6 @@ Introduction
 This manual documents the usage of libquadmath, the GCC Quad-Precision
 Math Library Application Programming Interface (API).
 
-..  comment
-    comment  When you add a new menu item, please keep the right hand
-    comment  aligned to the same column.  Do not use tabs.  This provides
-    comment  better formatting.
-    comment
-
 .. toctree::
 
   typedef-and-constants

@@ -5,8 +5,6 @@ Environment Variables Affecting GCC
 
 .. index:: environment variables
 
-.. man begin ENVIRONMENT
-
 This section describes several environment variables that affect how GCC
 operates.  Some of them work by specifying directories or prefixes to use
 when searching for various kinds of files.  Some are used to specify other
@@ -196,9 +194,6 @@ preprocessor.
   :envvar:`CPATH` is ``:/special/include``, that has the same
   effect as :samp:`-I. -I/special/include`.
 
-  .. man end
-     man begin ENVIRONMENT
-
 .. envvar:: DEPENDENCIES_OUTPUTDEPENDENCIES_OUTPUT
 
   .. index:: dependencies for make as output
@@ -245,6 +240,4 @@ preprocessor.
   The value should be a known timestamp such as the last modification
   time of the source or package and it should be set by the build
   process.
-
-.. man end
 

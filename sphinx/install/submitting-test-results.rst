@@ -17,5 +17,4 @@ do not edit the testsuite result block or the subject line, as these
 messages may be automatically processed.
 
 .. ***Final install***********************************************************
-    comment node-name,     next,          previous, up
 

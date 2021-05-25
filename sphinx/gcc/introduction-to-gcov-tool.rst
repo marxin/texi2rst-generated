@@ -3,8 +3,6 @@
 Introduction to gcov-tool
 *************************
 
-.. man begin DESCRIPTION
-
 :command:`gcov-tool` is an offline tool to process gcc's gcda profile files.
 
 Current gcov-tool supports the following functionalities:
@@ -44,6 +42,4 @@ a list of typical differences:
 * value profile counter values difference: Some counter values for value profile
   are runtime dependent, like heap addresses. It's normal to see some difference
   in these kind of counters.
-
-.. man end
 

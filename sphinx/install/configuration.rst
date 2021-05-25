@@ -2032,5 +2032,4 @@ D-Specific OptionsThe following options apply to the build of the D runtime libr
   :samp:`zlib` is only used when the system installed library is not available.
 
 .. ***Building****************************************************************
-    comment node-name,     next,          previous, up
 

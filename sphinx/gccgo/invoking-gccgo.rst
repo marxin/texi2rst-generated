@@ -3,8 +3,6 @@
 Invoking gccgo
 --------------
 
-.. man title gccgo A GCC-based compiler for the Go language
-
 @c man begin SYNOPSIS gccgo
 gccgo [@option{-c}|@option{-S}]
       [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
@@ -18,9 +16,6 @@ remainder.
 gpl(7), gfdl(7), fsf-funding(7), gcc(1)
 and the Info entries for @file{gccgo} and @file{gcc}.
 @c man end
-
-.. man begin DESCRIPTION gccgo
-
 The :command:`gccgo` command is a frontend to :command:`gcc` and
 supports many of the same options.  See :ref:`Option
 Summary <option-summary>`.  This manual
@@ -45,9 +40,6 @@ the link command.
 Go programs must generally be compiled with debugging information, and
 :option:`-g1` is the default as described below.  Stripping a Go
 program will generally cause it to misbehave or fail.
-
-.. man end
-   man begin OPTIONS gccgo
 
 :samp:`-I{dir}`
 
@@ -213,6 +205,4 @@ program will generally cause it to misbehave or fail.
   explicit :option:`-g0` may be used to disable the generation of
   debugging information, in which case certain standard library
   functions, such as ``runtime.Callers``, will not operate correctly.
-
-.. man end
 

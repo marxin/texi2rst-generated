@@ -40,9 +40,6 @@ are not listed here.  Refer to the GCC documentation for details.
 gpl(7), gfdl(7), fsf-funding(7),
 gcc(1), and the Info entries for @file{cpp} and @file{gcc}.
 @c man end
-
-.. man begin OPTIONS
-
 The :command:`cpp` command expects two file names as arguments, :samp:`{infile}` and
 :samp:`{outfile}`.  The preprocessor reads :samp:`{infile}` together with any
 other files it specifies with :samp:`#include`.  All the output generated
@@ -766,6 +763,4 @@ options may *not* be grouped: :option:`-dM` is very different from
 
   The second and third ``FOO`` should be in comments.
   This warning is on by default.
-
-.. man end
 
