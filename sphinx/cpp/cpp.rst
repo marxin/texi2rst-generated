@@ -49,7 +49,7 @@ useful on its own.
   implementation-details
   invocation
   environment-variables
-  gnu_free_documentation_license
+  gnu-free-documentation-license
   index-of-directives
   option-index
   concept-index

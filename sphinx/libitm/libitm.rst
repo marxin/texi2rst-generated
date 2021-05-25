@@ -20,7 +20,7 @@ several threads.
   c-c++-language-constructs-for-tm
   the-libitm-abi
   internals
-  gnu_free_documentation_license
+  gnu-free-documentation-license
   library-index
 
 .. -

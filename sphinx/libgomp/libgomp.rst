@@ -36,8 +36,8 @@ changed to GNU Offloading and Multi Processing Runtime Library.
   openacc-profiling-interface
   the-libgomp-abi
   reporting-bugs
-  gpl-3.0
-  gnu_free_documentation_license
+  general-public-license-3
+  gnu-free-documentation-license
   funding
   library-index
 

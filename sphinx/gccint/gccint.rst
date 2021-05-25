@@ -95,8 +95,8 @@ http://gcc.gnu.org/readings.html.
   funding
   gnu-project
 
-  gpl-3.0
-  gnu_free_documentation_license
+  general-public-license-3
+  gnu-free-documentation-license
   contributors
 
   option-index

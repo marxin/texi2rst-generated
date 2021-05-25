@@ -38,8 +38,8 @@ package documentation, see http://golang.org/.
 
 .. toctree::
 
-  gpl-3.0
-  gnu_free_documentation_license
+  general-public-license-3
+  gnu-free-documentation-license
   invoking-gccgo
   import-and-export
   compiler-directives

@@ -65,7 +65,7 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
   object-orientation
   translating-to-generic
   libgfortran
-  gnu_free_documentation_license
+  gnu-free-documentation-license
 
 .. -
    Introduction

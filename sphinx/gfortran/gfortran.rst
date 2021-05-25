@@ -87,8 +87,8 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
   intrinsic-modules
 
   contributing
-  gpl-3.0
-  gnu_free_documentation_license
+  general-public-license-3
+  gnu-free-documentation-license
   funding
   option-index
   keyword-index

@@ -17,7 +17,7 @@ Math Library Application Programming Interface (API).
   typedef-and-constants
   math-library-routines
   i-o-library-routines
-  gnu_free_documentation_license
+  gnu-free-documentation-license
   reporting-bugs
 
 .. -

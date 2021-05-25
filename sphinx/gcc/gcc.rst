@@ -86,8 +86,8 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
   funding
   gnu-project
 
-  gpl-3.0
-  gnu_free_documentation_license
+  general-public-license-3
+  gnu-free-documentation-license
   contributors
 
   option-index
