@@ -34,7 +34,6 @@ GETARG - Get command line arguments
   ===============  ===============================================
   :samp:`{VALUE}`  Shall be of type ``CHARACTER`` and of default
                    kind.
-  :samp:`{VALUE}`  Shall be of type ``CHARACTER``.
   ===============  ===============================================
 
 :samp:`{Return value}:`

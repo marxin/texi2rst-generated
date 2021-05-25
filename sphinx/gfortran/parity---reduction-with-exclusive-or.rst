@@ -28,13 +28,13 @@ PARITY - Reduction with exclusive OR
   ================================
 
 :samp:`{Arguments}:`
-  =================  ===========================================================
-  :samp:`{LOGICAL}`  Shall be an array of type ``LOGICAL``
-  =================  ===========================================================
-  :samp:`{DIM}`      (Optional) shall be a scalar of type 
-                     ``INTEGER`` with a value in the range from 1 to n, where n 
-                     equals the rank of :samp:`{MASK}`.
-  =================  ===========================================================
+  ==============  ===========================================================
+  :samp:`{MASK}`  Shall be an array of type ``LOGICAL``
+  ==============  ===========================================================
+  :samp:`{DIM}`   (Optional) shall be a scalar of type 
+                  ``INTEGER`` with a value in the range from 1 to n, where n 
+                  equals the rank of :samp:`{MASK}`.
+  ==============  ===========================================================
 
 :samp:`{Return value}:`
   The result is of the same type as :samp:`{MASK}`.

@@ -28,7 +28,7 @@ RANDOM_NUMBER - Pseudo-random number
   Subroutine
 
 :samp:`{Syntax}:`
-  ``RANDOM_NUMBER(HARVEST)``
+  ``CALL RANDOM_NUMBER(HARVEST)``
 
 :samp:`{Arguments}:`
   =================  ===============================================

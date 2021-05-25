@@ -2401,6 +2401,14 @@ the meanings of that architecture's constraints.
   ``z``
     Stack pointer register (SP).
 
+  ``Q``
+    A memory address which uses a base register with a short offset
+    or with a index register with its scale.
+
+  ``W``
+    A memory address which uses a base register with a index register
+    with its scale.
+
 :samp:`Epiphany-{config/epiphany/constraints.md}`
 
   ``U16``

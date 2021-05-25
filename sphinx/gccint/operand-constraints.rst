@@ -1168,6 +1168,14 @@ the meanings of that architecture's constraints.
   ``z``
     Stack pointer register (SP).
 
+  ``Q``
+    A memory address which uses a base register with a short offset
+    or with a index register with its scale.
+
+  ``W``
+    A memory address which uses a base register with a index register
+    with its scale.
+
     The C-SKY back end supports a large set of additional constraints
   that are only useful for instruction selection or splitting rather
   than inline asm, such as constraints representing constant integer

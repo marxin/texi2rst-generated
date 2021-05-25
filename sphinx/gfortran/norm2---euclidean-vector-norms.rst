@@ -12,7 +12,7 @@ NORM2 - Euclidean vector norms
 .. index:: norm, Euclidean
 
 :samp:`{Description}:`
-  Calculates the Euclidean vector norm (L_2 norm) of
+  Calculates the Euclidean vector norm (L_2 norm)
   of :samp:`{ARRAY}` along dimension :samp:`{DIM}`.
 
 :samp:`{Standard}:`

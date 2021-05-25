@@ -28,7 +28,7 @@ GETLOG - Get login name
   ===========  ===================================================
 
 :samp:`{Return value}:`
-  Stores the current user name in :samp:`{LOGIN}`.  (On systems where POSIX
+  Stores the current user name in :samp:`{C}`.  (On systems where POSIX
   functions ``geteuid`` and ``getpwuid`` are not available, and 
   the ``getlogin`` function is not implemented either, this will
   return a blank string.)

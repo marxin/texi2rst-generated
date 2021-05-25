@@ -1074,6 +1074,14 @@ The following attributes are supported on most targets.
   to inform the compiler that it should not check for undefined behavior
   in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
 
+.. option:: no_sanitize_coverage
+
+  .. index:: no_sanitize_coverage function attribute
+
+  The ``no_sanitize_coverage`` attribute on functions is used
+  to inform the compiler that it should not do coverage-guided
+  fuzzing code instrumentation ( :option:`-fsanitize-coverage` ).
+
 .. option:: no_split_stack, -fsplit-stack
 
   .. index:: no_split_stack function attribute

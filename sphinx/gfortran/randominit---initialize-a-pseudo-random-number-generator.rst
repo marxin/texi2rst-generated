@@ -34,7 +34,7 @@ RANDOM_INIT - Initialize a pseudo-random number generator
                             ``LOGICAL`` type, and it is ``INTENT(IN)``.  If it is ``.true.``,
                             the seed is set to a processor-dependent value that is distinct from th
                             seed set by a call to ``RANDOM_INIT`` in another image.  If it is
-                            ``.false.``, the seed is set value that does depend which image called
+                            ``.false.``, the seed is set to a value that does depend which image called
                             ``RANDOM_INIT``.
   ========================  ===========================================================================
 
