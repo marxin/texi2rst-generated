@@ -42,10 +42,7 @@ representing that the value of a given register is no longer needed, or
 instruction is never used.  The second is useful for instructions
 computing multiple values at once.
 
-.. Copyright (C) 2006-2021 Free Software Foundation, Inc.
-   Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
+.. Free Software Foundation, Inc.
    -
    Loop Representation
    -

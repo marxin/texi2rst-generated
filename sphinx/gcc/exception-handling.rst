@@ -11,6 +11,3 @@ Exception Handling
 
 c Copyright (C) 1988-2021 Free Software Foundation, Inc.
 
-.. This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-

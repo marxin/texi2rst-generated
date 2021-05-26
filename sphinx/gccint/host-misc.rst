@@ -65,9 +65,3 @@ any of the macros in auto-host.h, you can override that
 definition in a host configuration header.  If you need to do this,
 first see if it is possible to fix :command:`configure`.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

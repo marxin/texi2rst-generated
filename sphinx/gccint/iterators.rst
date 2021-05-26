@@ -555,7 +555,3 @@ output and three inputs).  This combination would produce separate
 each operand count, but it would still produce a single
 :samp:`maybe_code_for_{name}` and a single :samp:`code_for_{name}`.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-

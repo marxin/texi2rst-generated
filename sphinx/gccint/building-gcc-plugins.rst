@@ -91,12 +91,6 @@ When a plugin needs to use :command:`gengtype`, be sure that both
 gengtype and gtype.state have the same version as the
 GCC for which the plugin is built.
 
-.. Copyright (C) 2010-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 .. Contributed by Jan Hubicka <jh@suse.cz> and
 
 .. Diego Novillo <dnovillo@google.com>

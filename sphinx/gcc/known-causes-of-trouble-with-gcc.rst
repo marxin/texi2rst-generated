@@ -1,4 +1,4 @@
-.. _trouble:
+  .. _trouble:
 
 Known Causes of Trouble with GCC
 --------------------------------

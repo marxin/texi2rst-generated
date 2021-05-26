@@ -55,7 +55,3 @@ Variable __morestack_current_segment
 
 Variable __morestack_initial_spInternal variables used by the :option:`-fsplit-stack` implementation.
 
-.. Copyright (C) 2002-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-

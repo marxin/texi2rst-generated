@@ -1,4 +1,4 @@
-.. _gcov-dump:
+    .. _gcov-dump:
 
 gcov-dump-an Offline Gcda and Gcno Profile Dump Tool
 ----------------------------------------------------
@@ -39,8 +39,4 @@ Options
 ``-v`` ``--version``
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
-
-.. Copyright (C) 2018-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
 

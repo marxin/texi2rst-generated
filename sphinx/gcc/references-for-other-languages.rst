@@ -7,12 +7,6 @@ conformance and compatibility of the Ada compiler.
 See :ref:`Standards <standards>`, for details
 of standards supported by GNU Fortran.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 @c man begin INCLUDE
 @include gcc-vers.texi
 @c man end

@@ -33,9 +33,3 @@ logic/functional language Mercury.  For these reasons, it may also be
 useful to implement compilers created for specialized purposes (for
 example, as part of a research project) as GCC front ends.
 
-.. Copyright (C) 2002-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

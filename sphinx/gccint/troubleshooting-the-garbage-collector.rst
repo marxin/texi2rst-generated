@@ -21,8 +21,5 @@ encountered issues are described below.
   similarly-named symbols.  Check if your foo_bar source file has
   ``#include "gt-foo_bar.h"`` as its very last line.
 
-.. Copyright (C) 2009-2021 Free Software Foundation, Inc.
-   Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
+.. Free Software Foundation, Inc.
 

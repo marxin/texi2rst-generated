@@ -129,9 +129,3 @@ direction vectors for a data dependence relations array, and
 ``dump_data_references`` prints the details of the data references
 contained in a data reference array.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

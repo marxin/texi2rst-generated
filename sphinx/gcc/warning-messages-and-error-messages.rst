@@ -46,9 +46,3 @@ or errors.
 See :ref:`Options to Request or Suppress Warnings <warning-options>`, for
 more detail on these and related command-line options.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

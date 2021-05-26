@@ -1483,10 +1483,7 @@ Modifier  Description
 ``x``     Equivialent to ``X``, but only for pointers.
 ========  ===========================================================
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-   Most of this node appears by itself (in a different place) even
+.. Most of this node appears by itself (in a different place) even
    when the INTERNALS flag is clear.  Passages that require the internals
    manual's context are conditionalized to appear only in the internals manual.
 

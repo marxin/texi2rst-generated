@@ -59,9 +59,6 @@ replacement. (Namely, allocatable or pointers of the type
 .. -
    Compiler Options
    -
-   Copyright (C) 2004-2021 Free Software Foundation, Inc.
-   This is part of the GNU Fortran manual.
-   For copying conditions, see the file gfortran.texi.
 
 @c man begin COPYRIGHT
 Copyright @copyright{} 2004-2021 Free Software Foundation, Inc.

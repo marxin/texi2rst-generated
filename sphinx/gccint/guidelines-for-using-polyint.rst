@@ -113,10 +113,7 @@ There are two main exceptions:
     is preferable because it will help with any future conversion of the
     macro to a hook.
 
-.. Copyright (C) 2004-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-   -
+.. -
    GENERIC
    -
 

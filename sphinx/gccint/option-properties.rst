@@ -353,7 +353,4 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   C-family front-ends.
 
 .. markers: BUG TODO
-   Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
 

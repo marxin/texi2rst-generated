@@ -35,12 +35,6 @@ You must move the data files to the expected directory tree in order to
 use them for profile directed optimizations ( :option:`-fprofile-use` ), or to
 use the :command:`gcov` tool.
 
-.. Copyright (C) 2014-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 @c man begin COPYRIGHT
 Copyright @copyright{} 2014-2021 Free Software Foundation, Inc.
 

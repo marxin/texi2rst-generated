@@ -3,10 +3,6 @@
 Optimization info
 *****************
 
-.. Copyright (C) 2013-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-
 .. index:: optimization dumps
 
 This section is describes dump infrastructure which is common to both

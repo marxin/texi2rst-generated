@@ -140,9 +140,3 @@ runtime currently attempts forwarding using an older, deprecated API,
 and if that fails, it aborts the program.  In future versions of the
 GNU Objective-C runtime, the runtime will immediately abort.
 
-.. Copyright (C) 2002-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

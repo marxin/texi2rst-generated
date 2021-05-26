@@ -149,12 +149,6 @@ and other runtime support libraries, and to suppress the use of GCC's
 support libraries with one or more of the options :option:`-nostdlib`,
 :option:`-nostartfiles`, and :option:`-nodefaultlibs`.
 
-.. Copyright (C) 1996-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 @c man begin COPYRIGHT
 Copyright @copyright{} 1996-2021 Free Software Foundation, Inc.
 

@@ -95,11 +95,5 @@ One approach when tracking down where a particular bogus state is
 introduced into the ``exploded_graph`` is to add custom code to
 ``program_state::validate``.
 
-.. Copyright (C) 2018-2021 Free Software Foundation, Inc.
-
 .. Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
 

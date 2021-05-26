@@ -28,7 +28,3 @@ type to objects with a declared type as required for C++.
   object, the effective type of the object is simply the type of the
   lvalue used for the access.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-

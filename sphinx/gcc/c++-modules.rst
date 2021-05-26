@@ -357,9 +357,3 @@ it may be removed or altered.  The section numbering of the sections
 whose names do not begin with ``.gnu.c++.``, or are not the string
 section is significant and must not be altered.
 
-.. Copyright (C) 2001-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

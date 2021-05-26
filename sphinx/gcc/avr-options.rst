@@ -15,10 +15,7 @@ These options are defined for AVR implementations:
 
   GCC supports the following AVR devices and ISAs:
 
-  .. Copyright (C) 2012-2021 Free Software Foundation, Inc.
-     This is part of the GCC manual.
-     For copying conditions, see the file gcc/doc/include/fdl.texi.
-     This file is generated automatically using
+  .. This file is generated automatically using
      gcc/config/avr/gen-avr-mmcu-texi.c from:
       c	 gcc/config/avr/avr-arch.h
       c	 gcc/config/avr/avr-devices.c

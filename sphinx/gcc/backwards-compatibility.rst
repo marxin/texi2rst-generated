@@ -25,7 +25,4 @@ deprecated.   See :ref:`deprecated-features`.
 
 ..  LocalWords:  emph deftypefn builtin ARCv2EM SIMD builtins msimd
     LocalWords:  typedef v4si v8hi DMA dma vdiwr vdowr
-   Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
 

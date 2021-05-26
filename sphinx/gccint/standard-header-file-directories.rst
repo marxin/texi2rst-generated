@@ -29,9 +29,3 @@ use.  For a cross-compiler, this is the equivalent of
 /usr/include.  When you build a cross-compiler,
 ``fixincludes`` processes any header files in this directory.
 
-.. Copyright (C) 2002-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

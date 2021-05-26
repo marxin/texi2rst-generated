@@ -24,12 +24,6 @@ is incomplete.
 
 .. -*-texinfo-*-
 
-.. Copyright (C) 2001-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 .. -
    Control Flow Graph
    -

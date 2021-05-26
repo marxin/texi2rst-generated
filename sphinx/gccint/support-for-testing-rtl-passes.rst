@@ -42,9 +42,3 @@ preprocessor, and works simply by reading the relevant lines within
 the braces.  In particular, the RTL body must be on separate lines from
 the enclosing braces, and the preprocessor is not usable within it.
 
-.. Copyright (C) 2003-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

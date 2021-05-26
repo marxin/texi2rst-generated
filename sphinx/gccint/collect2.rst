@@ -73,9 +73,3 @@ second place in the search path.
 ``collect2`` searches for the utilities ``nm`` and ``strip``
 using the same algorithm as above for ``ld``.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-

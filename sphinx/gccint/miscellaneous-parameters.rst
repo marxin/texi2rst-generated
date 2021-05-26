@@ -1333,7 +1333,3 @@ Here are several miscellaneous parameters.
   Store the result in :samp:`{target}` if convenient.
   The default clears the top byte of the original pointer.
 
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gccint.texi.
-

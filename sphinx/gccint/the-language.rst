@@ -376,8 +376,5 @@ You can use the above predicate like
 Which will match a bitwise and of an operand with its logical
 inverted value.
 
-.. Copyright (C) 2019-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-   Contributed by David Malcolm <dmalcolm@redhat.com>.
+.. Contributed by David Malcolm <dmalcolm@redhat.com>.
 

@@ -77,11 +77,5 @@ because it is very difficult to restore register variables correctly, and
 one of GCC's features is that it can put variables in registers without
 your asking it to.
 
-.. Copyright (C) 2003-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gcc.texi.
-
 .. Contributed by Aldy Hernandez <aldy@quesejoda.com>
 

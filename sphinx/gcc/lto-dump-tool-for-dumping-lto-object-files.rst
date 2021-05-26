@@ -1,4 +1,4 @@
-.. _lto-dump:
+  .. _lto-dump:
 
 lto-dump-Tool for dumping LTO object files.
 -------------------------------------------
@@ -80,8 +80,4 @@ Options
 
 ``-help``
   Display the dump tool help.
-
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
 

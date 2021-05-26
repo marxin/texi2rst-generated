@@ -56,10 +56,7 @@ statement: ``walk_gimple_op``.
   is stopped and the value returned.  Otherwise, all the statements
   are walked and ``NULL_TREE`` returned.
 
-.. Copyright (C) 2004-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file gcc.texi.
-   -
+.. -
    Tree SSA
    -
 
