@@ -12,15 +12,6 @@ Options for Directory Search
 These options specify directories to search for header files, for
 libraries and for parts of the compiler:
 
-.. Copyright (C) 1999-2021 Free Software Foundation, Inc.
-   This is part of the CPP and GCC manuals.
-   For copying conditions, see the file gcc.texi.
-   -
-   Options affecting include directory search in the preprocessor
-   -
-   If this file is included with the flag ``cppmanual'' set, it is
-   formatted for inclusion in the CPP manual; otherwise the main GCC manual.
-
 .. include:: ../share/cppdiropts.rst
 
 .. option:: -iplugindir=dir

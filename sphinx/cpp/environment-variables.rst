@@ -15,15 +15,6 @@ Note that you can also specify places to search using options such as
 environment variables, which in turn take precedence over the
 configuration of GCC.
 
-.. Copyright (C) 1999-2021 Free Software Foundation, Inc.
-   This is part of the CPP and GCC manuals.
-   For copying conditions, see the file gcc.texi.
-   -
-   Environment variables affecting the preprocessor
-   -
-   If this file is included with the flag ``cppmanual'' set, it is
-   formatted for inclusion in the CPP manual; otherwise the main GCC manual.
-
 .. include:: ../share/cppenv.rst
 
 
