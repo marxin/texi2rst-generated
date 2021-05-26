@@ -25,7 +25,9 @@
   :envvar:`CPATH` is ``:/special/include``, that has the same
   effect as :samp:`-I. -I/special/include`.
 
-  See also Search Path.
+  .. only:: cpp
+
+    See also Search Path.
 
 .. envvar:: DEPENDENCIES_OUTPUTDEPENDENCIES_OUTPUT
 
@@ -44,7 +46,15 @@
 
   In other words, this environment variable is equivalent to combining
   the options :option:`-MM` and :option:`-MF`
-  (see :ref:`invocation`),
+
+  .. only:: cpp
+
+    (see :ref:`invocation`),
+
+  .. only:: not cpp
+
+    (see :ref:`preprocessor-options`),
+
   with an optional :option:`-MT` switch too.
 
 .. envvar:: SUNPRO_DEPENDENCIESSUNPRO_DEPENDENCIES
@@ -55,7 +65,14 @@
   except that system header files are not ignored, so it implies
   :option:`-M` rather than :option:`-MM`.  However, the dependence on the
   main input file is omitted.
-  See :ref:`invocation`.
+
+  .. only:: cpp
+
+    See :ref:`invocation`.
+
+  .. only:: not cpp
+
+    See :ref:`preprocessor-options`.
 
 .. envvar:: SOURCE_DATE_EPOCHSOURCE_DATE_EPOCH
 
