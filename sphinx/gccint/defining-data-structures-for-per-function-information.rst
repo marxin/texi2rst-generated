@@ -39,7 +39,7 @@ the saving and restoring of the target specific information.  Since the
 single data area approach is no longer used, these pointers are no
 longer supported.
 
-.. macro:: INIT_EXPANDERS
+.. c:macro:: INIT_EXPANDERS
 
   Macro called to initialize any target specific information.  This macro
   is called once per function, before generation of any RTL has begun.

@@ -9,23 +9,23 @@ Addressing Modes
 
 This is about addressing modes.
 
-.. macro:: HAVE_PRE_INCREMENT
+.. c:macro:: HAVE_PRE_INCREMENT
 
   A C expression that is nonzero if the machine supports pre-increment,
   pre-decrement, post-increment, or post-decrement addressing respectively.
 
-.. macro:: HAVE_PRE_MODIFY_DISP
+.. c:macro:: HAVE_PRE_MODIFY_DISP
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving constants other than
   the size of the memory operand.
 
-.. macro:: HAVE_PRE_MODIFY_REG
+.. c:macro:: HAVE_PRE_MODIFY_REG
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving a register displacement.
 
-.. macro:: CONSTANT_ADDRESS_P (x)
+.. c:macro:: CONSTANT_ADDRESS_P (x)
 
   A C expression that is 1 if the RTX :samp:`{x}` is a constant which
   is a valid address.  On most machines the default definition of
@@ -33,7 +33,7 @@ This is about addressing modes.
   is acceptable, but a few machines are more restrictive as to which
   constant addresses are supported.
 
-.. macro:: CONSTANT_P (x)
+.. c:macro:: CONSTANT_P (x)
 
   ``CONSTANT_P``, which is defined by target-independent code,
   accepts integer-values expressions whose values are not explicitly
@@ -41,7 +41,7 @@ This is about addressing modes.
   expressions and ``const`` arithmetic expressions, in addition to
   ``const_int`` and ``const_double`` expressions.
 
-.. macro:: MAX_REGS_PER_ADDRESS
+.. c:macro:: MAX_REGS_PER_ADDRESS
 
   A number, the maximum number of registers that can appear in a valid
   memory address.  Note that it is up to you to specify a value equal to
@@ -114,7 +114,7 @@ This is about addressing modes.
   Using the hook is usually simpler because it limits the number of
   files that are recompiled when changes are made.
 
-.. macro:: TARGET_MEM_CONSTRAINT
+.. c:macro:: TARGET_MEM_CONSTRAINT
 
   A single character to be used instead of the default ``'m'``
   character for general memory addresses.  This defines the constraint
@@ -125,7 +125,7 @@ This is about addressing modes.
   preserve functionality of inline assembly constructs using the
   ``'m'`` constraint.
 
-.. macro:: FIND_BASE_TERM (x)
+.. c:macro:: FIND_BASE_TERM (x)
 
   A C expression to determine the base term of address :samp:`{x}`,
   or to provide a simplified version of :samp:`{x}` from which alias.c
@@ -162,7 +162,7 @@ This is about addressing modes.
   a valid way to legitimize the address.  But often a machine-dependent
   strategy can generate better code.
 
-.. macro:: LEGITIMIZE_RELOAD_ADDRESS (x, mode, opnum, type, ind_levels, win)
+.. c:macro:: LEGITIMIZE_RELOAD_ADDRESS (x, mode, opnum, type, ind_levels, win)
 
   A C compound statement that attempts to replace :samp:`{x}`, which is an address
   that needs reloading, with a valid memory address for an operand of mode

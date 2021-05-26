@@ -40,42 +40,42 @@ reuse ``text_section``.
 All the other varasm.c sections are optional, and are null
 if the target does not provide them.
 
-.. macro:: TEXT_SECTION_ASM_OP
+.. c:macro:: TEXT_SECTION_ASM_OP
 
   A C expression whose value is a string, including spacing, containing the
   assembler operation that should precede instructions and read-only data.
   Normally ``"\t.text"`` is right.
 
-.. macro:: HOT_TEXT_SECTION_NAME
+.. c:macro:: HOT_TEXT_SECTION_NAME
 
   If defined, a C string constant for the name of the section containing most
   frequently executed functions of the program.  If not defined, GCC will provide
   a default definition if the target supports named sections.
 
-.. macro:: UNLIKELY_EXECUTED_TEXT_SECTION_NAME
+.. c:macro:: UNLIKELY_EXECUTED_TEXT_SECTION_NAME
 
   If defined, a C string constant for the name of the section containing unlikely
   executed functions in the program.
 
-.. macro:: DATA_SECTION_ASM_OP
+.. c:macro:: DATA_SECTION_ASM_OP
 
   A C expression whose value is a string, including spacing, containing the
   assembler operation to identify the following data as writable initialized
   data.  Normally ``"\t.data"`` is right.
 
-.. macro:: SDATA_SECTION_ASM_OP
+.. c:macro:: SDATA_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
   initialized, writable small data.
 
-.. macro:: READONLY_DATA_SECTION_ASM_OP
+.. c:macro:: READONLY_DATA_SECTION_ASM_OP
 
   A C expression whose value is a string, including spacing, containing the
   assembler operation to identify the following data as read-only initialized
   data.
 
-.. macro:: BSS_SECTION_ASM_OP
+.. c:macro:: BSS_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
@@ -85,25 +85,25 @@ if the target does not provide them.
   :option:`-fno-common` is passed, otherwise ``ASM_OUTPUT_COMMON`` will be
   used.
 
-.. macro:: SBSS_SECTION_ASM_OP
+.. c:macro:: SBSS_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
   uninitialized, writable small data.
 
-.. macro:: TLS_COMMON_ASM_OP
+.. c:macro:: TLS_COMMON_ASM_OP
 
   If defined, a C expression whose value is a string containing the
   assembler operation to identify the following data as thread-local
   common data.  The default is ``".tls_common"``.
 
-.. macro:: TLS_SECTION_ASM_FLAG
+.. c:macro:: TLS_SECTION_ASM_FLAG
 
   If defined, a C expression whose value is a character constant
   containing the flag used to mark a section as a TLS section.  The
   default is ``'T'``.
 
-.. macro:: INIT_SECTION_ASM_OP
+.. c:macro:: INIT_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
@@ -111,7 +111,7 @@ if the target does not provide them.
   not exist.  This section has no corresponding ``init_section``
   variable; it is used entirely in runtime code.
 
-.. macro:: FINI_SECTION_ASM_OP
+.. c:macro:: FINI_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
@@ -119,7 +119,7 @@ if the target does not provide them.
   not exist.  This section has no corresponding ``fini_section``
   variable; it is used entirely in runtime code.
 
-.. macro:: INIT_ARRAY_SECTION_ASM_OP
+.. c:macro:: INIT_ARRAY_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
@@ -127,7 +127,7 @@ if the target does not provide them.
   defined, GCC will assume such a section does not exist.  Do not define
   both this macro and ``INIT_SECTION_ASM_OP``.
 
-.. macro:: FINI_ARRAY_SECTION_ASM_OP
+.. c:macro:: FINI_ARRAY_SECTION_ASM_OP
 
   If defined, a C expression whose value is a string, including spacing,
   containing the assembler operation to identify the following data as
@@ -135,13 +135,13 @@ if the target does not provide them.
   defined, GCC will assume such a section does not exist.  Do not define
   both this macro and ``FINI_SECTION_ASM_OP``.
 
-.. macro:: MACH_DEP_SECTION_ASM_FLAG
+.. c:macro:: MACH_DEP_SECTION_ASM_FLAG
 
   If defined, a C expression whose value is a character constant
   containing the flag used to mark a machine-dependent section.  This
   corresponds to the ``SECTION_MACH_DEP`` section flag.
 
-.. macro:: CRT_CALL_STATIC_FUNCTION (section_op, function)
+.. c:macro:: CRT_CALL_STATIC_FUNCTION (section_op, function)
 
   If defined, an ASM statement that switches to a different section
   via :samp:`{section_op}`, calls :samp:`{function}`, and switches back to
@@ -153,7 +153,7 @@ if the target does not provide them.
   registers initialized in the function prologue or to ensure that
   constant pools don't end up too far way in the text section.
 
-.. macro:: TARGET_LIBGCC_SDATA_SECTION
+.. c:macro:: TARGET_LIBGCC_SDATA_SECTION
 
   If defined, a string which names the section into which small
   variables defined in crtstuff and libgcc should go.  This is useful
@@ -166,14 +166,14 @@ if the target does not provide them.
   to put small data into ``.sdata`` so that your application can
   access these variables whether it uses small data or not.
 
-.. macro:: FORCE_CODE_SECTION_ALIGN
+.. c:macro:: FORCE_CODE_SECTION_ALIGN
 
   If defined, an ASM statement that aligns a code section to some
   arbitrary boundary.  This is used to force all fragments of the
   ``.init`` and ``.fini`` sections to have to same alignment
   and thus prevent the linker from having to add any padding.
 
-.. macro:: JUMP_TABLES_IN_TEXT_SECTION
+.. c:macro:: JUMP_TABLES_IN_TEXT_SECTION
 
   Define this macro to be an expression with a nonzero value if jump
   tables (for ``tablejump`` insns) should be output in the text
@@ -226,7 +226,7 @@ if the target does not provide them.
 
   See also :samp:`{USE_SELECT_SECTION_FOR_FUNCTIONS}`.
 
-.. macro:: USE_SELECT_SECTION_FOR_FUNCTIONS
+.. c:macro:: USE_SELECT_SECTION_FOR_FUNCTIONS
 
   Define this macro if you wish TARGET_ASM_SELECT_SECTION to be called
   for ``FUNCTION_DECL`` s as well as for variables and constants.

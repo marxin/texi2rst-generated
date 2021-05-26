@@ -25,7 +25,7 @@ Macros Affecting All Debugging Formats
 
 These macros affect all debugging formats.
 
-.. macro:: DBX_REGISTER_NUMBER (regno)
+.. c:macro:: DBX_REGISTER_NUMBER (regno)
 
   A C expression that returns the DBX register number for the compiler
   register number :samp:`{regno}`.  In the default macro provided, the value
@@ -44,7 +44,7 @@ These macros affect all debugging formats.
   does not preserve register pairs, then what you must do instead is
   redefine the actual register numbering scheme.
 
-.. macro:: DEBUGGER_AUTO_OFFSET (x)
+.. c:macro:: DEBUGGER_AUTO_OFFSET (x)
 
   A C expression that returns the integer offset value for an automatic
   variable having address :samp:`{x}` (an RTL expression).  The default
@@ -53,13 +53,13 @@ These macros affect all debugging formats.
   that produce debugging output for DBX and allow the frame-pointer to be
   eliminated when the :option:`-g` option is used.
 
-.. macro:: DEBUGGER_ARG_OFFSET (offset, x)
+.. c:macro:: DEBUGGER_ARG_OFFSET (offset, x)
 
   A C expression that returns the integer offset value for an argument
   having address :samp:`{x}` (an RTL expression).  The nominal offset is
   :samp:`{offset}`.
 
-.. macro:: PREFERRED_DEBUGGING_TYPE
+.. c:macro:: PREFERRED_DEBUGGING_TYPE
 
   A C expression that returns the type of debugging output GCC should
   produce when the user specifies just :option:`-g`.  Define
@@ -87,17 +87,17 @@ Specific Options for DBX Output
 
 These are specific options for DBX output.
 
-.. macro:: DBX_DEBUGGING_INFO
+.. c:macro:: DBX_DEBUGGING_INFO
 
   Define this macro if GCC should produce debugging output for DBX
   in response to the :option:`-g` option.
 
-.. macro:: XCOFF_DEBUGGING_INFO
+.. c:macro:: XCOFF_DEBUGGING_INFO
 
   Define this macro if GCC should produce XCOFF format debugging output
   in response to the :option:`-g` option.  This is a variant of DBX format.
 
-.. macro:: DEFAULT_GDB_EXTENSIONS
+.. c:macro:: DEFAULT_GDB_EXTENSIONS
 
   Define this macro to control whether GCC should by default generate
   GDB's extended version of DBX debugging information (assuming DBX-format
@@ -105,19 +105,19 @@ These are specific options for DBX output.
   macro, the default is 1: always generate the extended information
   if there is any occasion to.
 
-.. macro:: DEBUG_SYMS_TEXT
+.. c:macro:: DEBUG_SYMS_TEXT
 
   Define this macro if all ``.stabs`` commands should be output while
   in the text section.
 
-.. macro:: ASM_STABS_OP
+.. c:macro:: ASM_STABS_OP
 
   A C string constant, including spacing, naming the assembler pseudo op to
   use instead of ``"\t.stabs\t"`` to define an ordinary debugging symbol.
   If you don't define this macro, ``"\t.stabs\t"`` is used.  This macro
   applies only to DBX debugging information format.
 
-.. macro:: ASM_STABD_OP
+.. c:macro:: ASM_STABD_OP
 
   A C string constant, including spacing, naming the assembler pseudo op to
   use instead of ``"\t.stabd\t"`` to define a debugging symbol whose
@@ -125,21 +125,21 @@ These are specific options for DBX output.
   ``"\t.stabd\t"`` is used.  This macro applies only to DBX debugging
   information format.
 
-.. macro:: ASM_STABN_OP
+.. c:macro:: ASM_STABN_OP
 
   A C string constant, including spacing, naming the assembler pseudo op to
   use instead of ``"\t.stabn\t"`` to define a debugging symbol with no
   name.  If you don't define this macro, ``"\t.stabn\t"`` is used.  This
   macro applies only to DBX debugging information format.
 
-.. macro:: DBX_NO_XREFS
+.. c:macro:: DBX_NO_XREFS
 
   Define this macro if DBX on your system does not support the construct
   :samp:`xs{tagname}`.  On some systems, this construct is used to
   describe a forward reference to a structure named :samp:`{tagname}`.
   On other systems, this construct is not supported at all.
 
-.. macro:: DBX_CONTIN_LENGTH
+.. c:macro:: DBX_CONTIN_LENGTH
 
   A symbol name in DBX-format debugging information is normally
   continued (split into two separate ``.stabs`` directives) when it
@@ -149,7 +149,7 @@ These are specific options for DBX output.
   with the value zero.  You can override the default splitting-length by
   defining this macro as an expression for the length you desire.
 
-.. macro:: DBX_CONTIN_CHAR
+.. c:macro:: DBX_CONTIN_CHAR
 
   Normally continuation is indicated by adding a :samp:`\` character to
   the end of a ``.stabs`` string when a continuation follows.  To use
@@ -157,56 +157,56 @@ These are specific options for DBX output.
   constant for the character you want to use.  Do not define this macro
   if backslash is correct for your system.
 
-.. macro:: DBX_STATIC_STAB_DATA_SECTION
+.. c:macro:: DBX_STATIC_STAB_DATA_SECTION
 
   Define this macro if it is necessary to go to the data section before
   outputting the :samp:`.stabs` pseudo-op for a non-global static
   variable.
 
-.. macro:: DBX_TYPE_DECL_STABS_CODE
+.. c:macro:: DBX_TYPE_DECL_STABS_CODE
 
   The value to use in the 'code' field of the ``.stabs`` directive
   for a typedef.  The default is ``N_LSYM``.
 
-.. macro:: DBX_STATIC_CONST_VAR_CODE
+.. c:macro:: DBX_STATIC_CONST_VAR_CODE
 
   The value to use in the 'code' field of the ``.stabs`` directive
   for a static variable located in the text section.  DBX format does not
   provide any 'right' way to do this.  The default is ``N_FUN``.
 
-.. macro:: DBX_REGPARM_STABS_CODE
+.. c:macro:: DBX_REGPARM_STABS_CODE
 
   The value to use in the 'code' field of the ``.stabs`` directive
   for a parameter passed in registers.  DBX format does not provide any
   'right' way to do this.  The default is ``N_RSYM``.
 
-.. macro:: DBX_REGPARM_STABS_LETTER
+.. c:macro:: DBX_REGPARM_STABS_LETTER
 
   The letter to use in DBX symbol data to identify a symbol as a parameter
   passed in registers.  DBX format does not customarily provide any way to
   do this.  The default is ``'P'``.
 
-.. macro:: DBX_FUNCTION_FIRST
+.. c:macro:: DBX_FUNCTION_FIRST
 
   Define this macro if the DBX information for a function and its
   arguments should precede the assembler code for the function.  Normally,
   in DBX format, the debugging information entirely follows the assembler
   code.
 
-.. macro:: DBX_BLOCKS_FUNCTION_RELATIVE
+.. c:macro:: DBX_BLOCKS_FUNCTION_RELATIVE
 
   Define this macro, with value 1, if the value of a symbol describing
   the scope of a block ( ``N_LBRAC`` or ``N_RBRAC`` ) should be
   relative to the start of the enclosing function.  Normally, GCC uses
   an absolute address.
 
-.. macro:: DBX_LINES_FUNCTION_RELATIVE
+.. c:macro:: DBX_LINES_FUNCTION_RELATIVE
 
   Define this macro, with value 1, if the value of a symbol indicating
   the current line number ( ``N_SLINE`` ) should be relative to the
   start of the enclosing function.  Normally, GCC uses an absolute address.
 
-.. macro:: DBX_USE_BINCL
+.. c:macro:: DBX_USE_BINCL
 
   Define this macro if GCC should generate ``N_BINCL`` and
   ``N_EINCL`` stabs for included header files, as on Sun systems.  This
@@ -224,7 +224,7 @@ Open-Ended Hooks for DBX Format
 
 These are hooks for DBX format.
 
-.. macro:: DBX_OUTPUT_SOURCE_LINE (stream, line, counter)
+.. c:macro:: DBX_OUTPUT_SOURCE_LINE (stream, line, counter)
 
   A C statement to output DBX debugging information before code for line
   number :samp:`{line}` of the current source file to the stdio stream
@@ -235,14 +235,14 @@ These are hooks for DBX format.
   This macro should not be defined if the default output is correct, or
   if it can be made correct by defining ``DBX_LINES_FUNCTION_RELATIVE``.
 
-.. macro:: NO_DBX_FUNCTION_END
+.. c:macro:: NO_DBX_FUNCTION_END
 
   Some stabs encapsulation formats (in particular ECOFF), cannot handle the
   ``.stabs "",N_FUN,,0,0,Lscope-function-1`` gdb dbx extension construct.
   On those machines, define this macro to turn this feature off without
   disturbing the rest of the gdb extensions.
 
-.. macro:: NO_DBX_BNSYM_ENSYM
+.. c:macro:: NO_DBX_BNSYM_ENSYM
 
   Some assemblers cannot handle the ``.stabd BNSYM/ENSYM,0,0`` gdb dbx
   extension construct.  On those machines, define this macro to turn this
@@ -257,7 +257,7 @@ File Names in DBX Format
 
 This describes file names in DBX format.
 
-.. macro:: DBX_OUTPUT_MAIN_SOURCE_FILENAME (stream, name)
+.. c:macro:: DBX_OUTPUT_MAIN_SOURCE_FILENAME (stream, name)
 
   A C statement to output DBX debugging information to the stdio stream
   :samp:`{stream}`, which indicates that file :samp:`{name}` is the main source
@@ -272,20 +272,20 @@ This describes file names in DBX format.
   to do so.  If you do this, you must also set the variable
   :samp:`{used_ltext_label_name}` to ``true``.
 
-.. macro:: NO_DBX_MAIN_SOURCE_DIRECTORY
+.. c:macro:: NO_DBX_MAIN_SOURCE_DIRECTORY
 
   Define this macro, with value 1, if GCC should not emit an indication
   of the current directory for compilation and current source language at
   the beginning of the file.
 
-.. macro:: NO_DBX_GCC_MARKER
+.. c:macro:: NO_DBX_GCC_MARKER
 
   Define this macro, with value 1, if GCC should not emit an indication
   that this object file was compiled by GCC.  The default is to emit
   an ``N_OPT`` stab at the beginning of every source file, with
   :samp:`gcc2_compiled.` for the string and value 0.
 
-.. macro:: DBX_OUTPUT_MAIN_SOURCE_FILE_END (stream, name)
+.. c:macro:: DBX_OUTPUT_MAIN_SOURCE_FILE_END (stream, name)
 
   A C statement to output DBX debugging information at the end of
   compilation of the main source file :samp:`{name}`.  Output should be
@@ -294,7 +294,7 @@ This describes file names in DBX format.
   If you don't define this macro, nothing special is output at the end
   of compilation, which is correct for most machines.
 
-.. macro:: DBX_OUTPUT_NULL_N_SO_AT_MAIN_SOURCE_FILE_END
+.. c:macro:: DBX_OUTPUT_NULL_N_SO_AT_MAIN_SOURCE_FILE_END
 
   Define this macro *instead of* defining
   ``DBX_OUTPUT_MAIN_SOURCE_FILE_END``, if what needs to be output at
@@ -310,7 +310,7 @@ Macros for DWARF Output
 
 Here are macros for DWARF output.
 
-.. macro:: DWARF2_DEBUGGING_INFO
+.. c:macro:: DWARF2_DEBUGGING_INFO
 
   Define this macro if GCC should produce dwarf version 2 format
   debugging output in response to the :option:`-g` option.
@@ -327,7 +327,7 @@ Here are macros for DWARF output.
   prologue, or call ``dwarf2out_def_cfa`` and ``dwarf2out_reg_save``
   as appropriate from ``TARGET_ASM_FUNCTION_PROLOGUE`` if you don't.
 
-.. macro:: DWARF2_FRAME_INFO
+.. c:macro:: DWARF2_FRAME_INFO
 
   Define this macro to a nonzero value if GCC should always output
   Dwarf 2 frame information.  If ``TARGET_EXCEPT_UNWIND_INFO``
@@ -348,13 +348,13 @@ Here are macros for DWARF output.
   A target may return ``UI_TARGET`` if it has ABI specified unwind tables.
   This will suppress generation of the normal debug frame unwind information.
 
-.. macro:: DWARF2_ASM_LINE_DEBUG_INFO
+.. c:macro:: DWARF2_ASM_LINE_DEBUG_INFO
 
   Define this macro to be a nonzero value if the assembler can generate Dwarf 2
   line debug info sections.  This will result in much more compact line number
   tables, and hence is desirable if it works.
 
-.. macro:: DWARF2_ASM_VIEW_DEBUG_INFO
+.. c:macro:: DWARF2_ASM_VIEW_DEBUG_INFO
 
   Define this macro to be a nonzero value if the assembler supports view
   assignment and verification in ``.loc``.  If it does not, but the
@@ -397,35 +397,35 @@ Here are macros for DWARF output.
   following it should not be run.  Usually true only for virtual assembler
   targets.
 
-.. macro:: ASM_OUTPUT_DWARF_DELTA (stream, size, label1, label2)
+.. c:macro:: ASM_OUTPUT_DWARF_DELTA (stream, size, label1, label2)
 
   A C statement to issue assembly directives that create a difference
   :samp:`{lab1}` minus :samp:`{lab2}`, using an integer of the given :samp:`{size}`.
 
-.. macro:: ASM_OUTPUT_DWARF_VMS_DELTA (stream, size, label1, label2)
+.. c:macro:: ASM_OUTPUT_DWARF_VMS_DELTA (stream, size, label1, label2)
 
   A C statement to issue assembly directives that create a difference
   between the two given labels in system defined units, e.g. instruction
   slots on IA64 VMS, using an integer of the given size.
 
-.. macro:: ASM_OUTPUT_DWARF_OFFSET (stream, size, label, offset, section)
+.. c:macro:: ASM_OUTPUT_DWARF_OFFSET (stream, size, label, offset, section)
 
   A C statement to issue assembly directives that create a
   section-relative reference to the given :samp:`{label}` plus :samp:`{offset}`, using
   an integer of the given :samp:`{size}`.  The label is known to be defined in the
   given :samp:`{section}`.
 
-.. macro:: ASM_OUTPUT_DWARF_PCREL (stream, size, label)
+.. c:macro:: ASM_OUTPUT_DWARF_PCREL (stream, size, label)
 
   A C statement to issue assembly directives that create a self-relative
   reference to the given :samp:`{label}`, using an integer of the given :samp:`{size}`.
 
-.. macro:: ASM_OUTPUT_DWARF_DATAREL (stream, size, label)
+.. c:macro:: ASM_OUTPUT_DWARF_DATAREL (stream, size, label)
 
   A C statement to issue assembly directives that create a reference to the
   given :samp:`{label}` relative to the dbase, using an integer of the given :samp:`{size}`.
 
-.. macro:: ASM_OUTPUT_DWARF_TABLE_REF (label)
+.. c:macro:: ASM_OUTPUT_DWARF_TABLE_REF (label)
 
   A C statement to issue assembly directives that create a reference to
   the DWARF table identifier :samp:`{label}` from the current section.  This
@@ -446,7 +446,7 @@ Macros for VMS Debug Format
 
 Here are macros for VMS debug format.
 
-.. macro:: VMS_DEBUGGING_INFO
+.. c:macro:: VMS_DEBUGGING_INFO
 
   Define this macro if GCC should produce debugging output for VMS
   in response to the :option:`-g` option.  The default behavior for VMS

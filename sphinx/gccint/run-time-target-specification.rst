@@ -13,7 +13,7 @@ Run-time Target Specification
 
 Here are run-time target specifications.
 
-.. macro:: TARGET_CPU_CPP_BUILTINS ()
+.. c:macro:: TARGET_CPU_CPP_BUILTINS ()
 
   This function-like macro expands to a block of code that defines
   built-in preprocessor macros and assertions for the target CPU, using
@@ -49,12 +49,12 @@ Here are run-time target specifications.
   ``preprocessing_trad_p()`` can be used to check for traditional
   preprocessing.
 
-.. macro:: TARGET_OS_CPP_BUILTINS ()
+.. c:macro:: TARGET_OS_CPP_BUILTINS ()
 
   Similarly to ``TARGET_CPU_CPP_BUILTINS`` but this macro is optional
   and is used for the target operating system instead.
 
-.. macro:: TARGET_OBJFMT_CPP_BUILTINS ()
+.. c:macro:: TARGET_OBJFMT_CPP_BUILTINS ()
 
   Similarly to ``TARGET_CPU_CPP_BUILTINS`` but this macro is optional
   and is used for the target object format.  elfos.h uses this
@@ -133,7 +133,7 @@ any target-specific headers.
   actions then, you should have ``TARGET_OPTION_OVERRIDE`` call
   ``TARGET_OVERRIDE_OPTIONS_AFTER_CHANGE``.
 
-.. macro:: C_COMMON_OVERRIDE_OPTIONS
+.. c:macro:: C_COMMON_OVERRIDE_OPTIONS
 
   This is similar to the ``TARGET_OPTION_OVERRIDE`` hook
   but is only used in the C
@@ -159,7 +159,7 @@ any target-specific headers.
 
   Set target-dependent initial values of fields in :samp:`{opts}`.
 
-.. macro:: SWITCHABLE_TARGET
+.. c:macro:: SWITCHABLE_TARGET
 
   Some targets need to switch between substantially different subtargets
   during compilation.  For example, the MIPS target has one subtarget for

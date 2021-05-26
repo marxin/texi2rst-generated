@@ -40,12 +40,12 @@ Basic Stack Layout
 
 Here is the basic stack layout.
 
-.. macro:: STACK_GROWS_DOWNWARD
+.. c:macro:: STACK_GROWS_DOWNWARD
 
   Define this macro to be true if pushing a word onto the stack moves the stack
   pointer to a smaller address, and false otherwise.
 
-.. macro:: STACK_PUSH_CODE
+.. c:macro:: STACK_PUSH_CODE
 
   This macro defines the operation used when something is pushed
   on the stack.  In RTL, a push operation will be
@@ -61,12 +61,12 @@ Here is the basic stack layout.
   true, which is almost always right, and ``PRE_INC`` otherwise,
   which is often wrong.
 
-.. macro:: FRAME_GROWS_DOWNWARD
+.. c:macro:: FRAME_GROWS_DOWNWARD
 
   Define this macro to nonzero value if the addresses of local variable slots
   are at negative offsets from the frame pointer.
 
-.. macro:: ARGS_GROW_DOWNWARD
+.. c:macro:: ARGS_GROW_DOWNWARD
 
   Define this macro if successive arguments to a function occupy decreasing
   addresses on the stack.
@@ -79,7 +79,7 @@ Here is the basic stack layout.
   offset to *beginning* of the first slot allocated.  The default
   implementation returns 0.
 
-.. macro:: STACK_ALIGNMENT_NEEDED
+.. c:macro:: STACK_ALIGNMENT_NEEDED
 
   Define to zero to disable final alignment of the stack during reload.
   The nonzero default for this macro is suitable for most ports.
@@ -89,7 +89,7 @@ Here is the basic stack layout.
   alignment to ``STACK_BOUNDARY``, it may be beneficial to disable
   stack alignment and do it in the backend.
 
-.. macro:: STACK_POINTER_OFFSET
+.. c:macro:: STACK_POINTER_OFFSET
 
   Offset from the stack pointer register to the first location at which
   outgoing arguments are placed.  If not specified, the default value of
@@ -98,7 +98,7 @@ Here is the basic stack layout.
   If ``ARGS_GROW_DOWNWARD``, this is the offset to the location above
   the first location at which outgoing arguments are placed.
 
-.. macro:: FIRST_PARM_OFFSET (fundecl)
+.. c:macro:: FIRST_PARM_OFFSET (fundecl)
 
   Offset from the argument pointer register to the first argument's
   address.  On some machines it may depend on the data type of the
@@ -107,7 +107,7 @@ Here is the basic stack layout.
   If ``ARGS_GROW_DOWNWARD``, this is the offset to the location above
   the first argument's address.
 
-.. macro:: STACK_DYNAMIC_OFFSET (fundecl)
+.. c:macro:: STACK_DYNAMIC_OFFSET (fundecl)
 
   Offset from the stack pointer register to an item dynamically allocated
   on the stack, e.g., by ``alloca``.
@@ -116,7 +116,7 @@ Here is the basic stack layout.
   length of the outgoing arguments.  The default is correct for most
   machines.  See function.c for details.
 
-.. macro:: INITIAL_FRAME_ADDRESS_RTX
+.. c:macro:: INITIAL_FRAME_ADDRESS_RTX
 
   A C expression whose value is RTL representing the address of the initial
   stack frame. This address is passed to ``RETURN_ADDR_RTX`` and
@@ -125,7 +125,7 @@ Here is the basic stack layout.
   elimination work in the presence of ``__builtin_frame_address (count)`` and
   ``__builtin_return_address (count)`` for ``count`` not equal to zero.
 
-.. macro:: DYNAMIC_CHAIN_ADDRESS (frameaddr)
+.. c:macro:: DYNAMIC_CHAIN_ADDRESS (frameaddr)
 
   A C expression whose value is RTL representing the address in a stack
   frame where the pointer to the caller's frame is stored.  Assume that
@@ -136,7 +136,7 @@ Here is the basic stack layout.
   of :samp:`{frameaddr}` -that is, the stack frame address is also the
   address of the stack word that points to the previous frame.
 
-.. macro:: SETUP_FRAME_ADDRESSES
+.. c:macro:: SETUP_FRAME_ADDRESSES
 
   A C expression that produces the machine-specific code to
   setup the stack so that arbitrary frames can be accessed.  For example,
@@ -152,7 +152,7 @@ Here is the basic stack layout.
   machines.  One reason you may need to define this target hook is if
   ``hard_frame_pointer_rtx`` is the appropriate value on your machine.
 
-.. macro:: FRAME_ADDR_RTX (frameaddr)
+.. c:macro:: FRAME_ADDR_RTX (frameaddr)
 
   A C expression whose value is RTL representing the value of the frame
   address for the current frame.  :samp:`{frameaddr}` is the frame pointer
@@ -160,7 +160,7 @@ Here is the basic stack layout.
   You need only define this macro if the frame address is not the same
   as the frame pointer.  Most machines do not need to define it.
 
-.. macro:: RETURN_ADDR_RTX (count, frameaddr)
+.. c:macro:: RETURN_ADDR_RTX (count, frameaddr)
 
   A C expression whose value is RTL representing the value of the return
   address for the frame :samp:`{count}` steps up from the current frame, after
@@ -172,13 +172,13 @@ Here is the basic stack layout.
   :samp:`{count}` is zero, but may be ``NULL_RTX`` if there is no way to
   determine the return address of other frames.
 
-.. macro:: RETURN_ADDR_IN_PREVIOUS_FRAME
+.. c:macro:: RETURN_ADDR_IN_PREVIOUS_FRAME
 
   Define this macro to nonzero value if the return address of a particular
   stack frame is accessed from the frame pointer of the previous stack
   frame.  The zero default for this macro is suitable for most ports.
 
-.. macro:: INCOMING_RETURN_ADDR_RTX
+.. c:macro:: INCOMING_RETURN_ADDR_RTX
 
   A C expression whose value is RTL representing the location of the
   incoming return address at the beginning of any function, before the
@@ -192,7 +192,7 @@ Here is the basic stack layout.
   If this RTL is a ``REG``, you should also define
   ``DWARF_FRAME_RETURN_COLUMN`` to ``DWARF_FRAME_REGNUM (REGNO)``.
 
-.. macro:: DWARF_ALT_FRAME_RETURN_COLUMN
+.. c:macro:: DWARF_ALT_FRAME_RETURN_COLUMN
 
   A C expression whose value is an integer giving a DWARF 2 column
   number that may be used as an alternative return column.  The column
@@ -204,7 +204,7 @@ Here is the basic stack layout.
   frames.  Some targets have also used different frame return columns
   over time.
 
-.. macro:: DWARF_ZERO_REG
+.. c:macro:: DWARF_ZERO_REG
 
   A C expression whose value is an integer giving a DWARF 2 register
   number that is considered to always have the value zero.  This should
@@ -246,7 +246,7 @@ Here is the basic stack layout.
   A target only needs to define this hook if it sets
   :samp:`NUM_POLY_INT_COEFFS` to a value greater than 1.
 
-.. macro:: INCOMING_FRAME_SP_OFFSET
+.. c:macro:: INCOMING_FRAME_SP_OFFSET
 
   A C expression whose value is an integer giving the offset, in bytes,
   from the value of the stack pointer register to the top of the stack
@@ -257,7 +257,7 @@ Here is the basic stack layout.
   You only need to define this macro if you want to support call frame
   debugging information like that provided by DWARF 2.
 
-.. macro:: DEFAULT_INCOMING_FRAME_SP_OFFSET
+.. c:macro:: DEFAULT_INCOMING_FRAME_SP_OFFSET
 
   Like ``INCOMING_FRAME_SP_OFFSET``, but must be the same for all
   functions of the same ABI, and when using GAS ``.cfi_*`` directives
@@ -266,7 +266,7 @@ Here is the basic stack layout.
   between different functions of the same ABI or when
   ``INCOMING_FRAME_SP_OFFSET`` does not agree with GAS default CFI.
 
-.. macro:: ARG_POINTER_CFA_OFFSET (fundecl)
+.. c:macro:: ARG_POINTER_CFA_OFFSET (fundecl)
 
   A C expression whose value is an integer giving the offset, in bytes,
   from the argument pointer to the canonical frame address (cfa).  The
@@ -285,7 +285,7 @@ Here is the basic stack layout.
   want to support call frame debugging information like that provided by
   DWARF 2.
 
-.. macro:: FRAME_POINTER_CFA_OFFSET (fundecl)
+.. c:macro:: FRAME_POINTER_CFA_OFFSET (fundecl)
 
   If defined, a C expression whose value is an integer giving the offset
   in bytes from the frame pointer to the canonical frame address (cfa).
@@ -300,7 +300,7 @@ Here is the basic stack layout.
   of ``FRAME_POINTER_CFA_OFFSET`` and ``ARG_POINTER_CFA_OFFSET``
   should be defined.
 
-.. macro:: CFA_FRAME_BASE_OFFSET (fundecl)
+.. c:macro:: CFA_FRAME_BASE_OFFSET (fundecl)
 
   If defined, a C expression whose value is an integer giving the offset
   in bytes from the canonical frame address (cfa) to the frame base used
@@ -314,7 +314,7 @@ Exception Handling Support
 
 .. index:: exception handling
 
-.. macro:: EH_RETURN_DATA_REGNO (N)
+.. c:macro:: EH_RETURN_DATA_REGNO (N)
 
   A C expression whose value is the :samp:`{N}` th register number used for
   data by exception handlers, or ``INVALID_REGNUM`` if fewer than
@@ -329,7 +329,7 @@ Exception Handling Support
   You must define this macro if you want to support call frame exception
   handling like that provided by DWARF 2.
 
-.. macro:: EH_RETURN_STACKADJ_RTX
+.. c:macro:: EH_RETURN_STACKADJ_RTX
 
   A C expression whose value is RTL representing a location in which
   to store a stack adjustment to be applied before function return.
@@ -346,7 +346,7 @@ Exception Handling Support
   this macro if you want to support call frame exception handling like
   that provided by DWARF 2.
 
-.. macro:: EH_RETURN_HANDLER_RTX
+.. c:macro:: EH_RETURN_HANDLER_RTX
 
   A C expression whose value is RTL representing a location in which
   to store the address of an exception handler to which we should
@@ -367,14 +367,14 @@ Exception Handling Support
   If you want to support call frame exception handling, you must
   define either this macro or the ``eh_return`` instruction pattern.
 
-.. macro:: RETURN_ADDR_OFFSET
+.. c:macro:: RETURN_ADDR_OFFSET
 
   If defined, an integer-valued C expression for which rtl will be generated
   to add it to the exception handler address before it is searched in the
   exception handling tables, and to subtract it again from the address before
   using it to return to the exception handler.
 
-.. macro:: ASM_PREFERRED_EH_DATA_FORMAT (code, global)
+.. c:macro:: ASM_PREFERRED_EH_DATA_FORMAT (code, global)
 
   This macro chooses the encoding of pointers embedded in the exception
   handling sections.  If at all possible, this should be defined such
@@ -389,7 +389,7 @@ Exception Handling Support
   If this macro is not defined, pointers will not be encoded but
   represented directly.
 
-.. macro:: ASM_MAYBE_OUTPUT_ENCODED_ADDR_RTX (file, encoding, size, addr, done)
+.. c:macro:: ASM_MAYBE_OUTPUT_ENCODED_ADDR_RTX (file, encoding, size, addr, done)
 
   This macro allows the target to emit whatever special magic is required
   to represent the encoding chosen by ``ASM_PREFERRED_EH_DATA_FORMAT``.
@@ -401,7 +401,7 @@ Exception Handling Support
   of bytes that the format occupies, :samp:`{addr}` is the ``SYMBOL_REF``
   to be emitted.
 
-.. macro:: MD_FALLBACK_FRAME_STATE_FOR (context, fs)
+.. c:macro:: MD_FALLBACK_FRAME_STATE_FOR (context, fs)
 
   This macro allows the target to add CPU and operating system specific
   code to the call-frame unwinder for use when there is no unwind data
@@ -421,7 +421,7 @@ Exception Handling Support
   For proper signal handling in Java this macro is accompanied by
   ``MAKE_THROW_FRAME``, defined in libjava/include/*-signal.h headers.
 
-.. macro:: MD_HANDLE_UNWABI (context, fs)
+.. c:macro:: MD_HANDLE_UNWABI (context, fs)
 
   This macro allows the target to add operating system specific code to the
   call-frame unwinder to handle the IA-64 ``.unwabi`` unwinding directive,
@@ -434,7 +434,7 @@ Exception Handling Support
   ``.unwabi`` directive can be handled, the register save addresses should
   be updated in :samp:`{fs}`.
 
-.. macro:: TARGET_USES_WEAK_UNWIND_INFO
+.. c:macro:: TARGET_USES_WEAK_UNWIND_INFO
 
   A C expression that evaluates to true if the target requires unwind
   info to be given comdat linkage.  Define it to be ``1`` if comdat
@@ -470,7 +470,7 @@ GCC will change its allocation strategy for large objects if the option
 :option:`-fstack-check` is specified: they will always be allocated
 dynamically if their size exceeds ``STACK_CHECK_MAX_VAR_SIZE`` bytes.
 
-.. macro:: STACK_CHECK_BUILTIN
+.. c:macro:: STACK_CHECK_BUILTIN
 
   A nonzero value if stack checking is done by the configuration files in a
   machine-dependent manner.  You should define this macro if stack checking
@@ -478,14 +478,14 @@ dynamically if their size exceeds ``STACK_CHECK_MAX_VAR_SIZE`` bytes.
   checking in some more efficient way than the generic approach.  The default
   value of this macro is zero.
 
-.. macro:: STACK_CHECK_STATIC_BUILTIN
+.. c:macro:: STACK_CHECK_STATIC_BUILTIN
 
   A nonzero value if static stack checking is done by the configuration files
   in a machine-dependent manner.  You should define this macro if you would
   like to do static stack checking in some more efficient way than the generic
   approach.  The default value of this macro is zero.
 
-.. macro:: STACK_CHECK_PROBE_INTERVAL_EXP
+.. c:macro:: STACK_CHECK_PROBE_INTERVAL_EXP
 
   An integer specifying the interval at which GCC must generate stack probe
   instructions, defined as 2 raised to this integer.  You will normally
@@ -493,7 +493,7 @@ dynamically if their size exceeds ``STACK_CHECK_MAX_VAR_SIZE`` bytes.
   the 'guard pages' at the end of a stack area.  The default value
   of 12 (4096-byte interval) is suitable for most systems.
 
-.. macro:: STACK_CHECK_MOVING_SP
+.. c:macro:: STACK_CHECK_MOVING_SP
 
   An integer which is nonzero if GCC should move the stack pointer page by page
   when doing probes.  This can be necessary on systems where the stack pointer
@@ -502,7 +502,7 @@ dynamically if their size exceeds ``STACK_CHECK_MAX_VAR_SIZE`` bytes.
   is required in order to be able to recover from a stack overflow.  The
   default value of this macro is zero.
 
-.. macro:: STACK_CHECK_PROTECT
+.. c:macro:: STACK_CHECK_PROTECT
 
   The number of bytes of stack needed to recover from a stack overflow, for
   languages where such a recovery is supported.  The default value of 4KB/8KB
@@ -514,7 +514,7 @@ The following macros are relevant only if neither STACK_CHECK_BUILTIN
 nor STACK_CHECK_STATIC_BUILTIN is defined; you can omit them altogether
 in the opposite case.
 
-.. macro:: STACK_CHECK_MAX_FRAME_SIZE
+.. c:macro:: STACK_CHECK_MAX_FRAME_SIZE
 
   The maximum size of a stack frame, in bytes.  GCC will generate probe
   instructions in non-leaf functions to ensure at least this many bytes of
@@ -523,7 +523,7 @@ in the opposite case.
   default is chosen so that GCC only generates one instruction on most
   systems.  You should normally not change the default value of this macro.
 
-.. macro:: STACK_CHECK_FIXED_FRAME_SIZE
+.. c:macro:: STACK_CHECK_FIXED_FRAME_SIZE
 
   GCC uses this value to generate the above warning message.  It
   represents the amount of fixed frame used by a function, not including
@@ -531,7 +531,7 @@ in the opposite case.
   You need only specify an upper bound for this amount and will normally
   use the default of four words.
 
-.. macro:: STACK_CHECK_MAX_VAR_SIZE
+.. c:macro:: STACK_CHECK_MAX_VAR_SIZE
 
   The maximum size, in bytes, of an object that GCC will place in the
   fixed area of the stack frame when the user specifies
@@ -556,20 +556,20 @@ Registers That Address the Stack Frame
 
 This discusses registers that address the stack frame.
 
-.. macro:: STACK_POINTER_REGNUM
+.. c:macro:: STACK_POINTER_REGNUM
 
   The register number of the stack pointer register, which must also be a
   fixed register according to ``FIXED_REGISTERS``.  On most machines,
   the hardware determines which register this is.
 
-.. macro:: FRAME_POINTER_REGNUM
+.. c:macro:: FRAME_POINTER_REGNUM
 
   The register number of the frame pointer register, which is used to
   access automatic variables in the stack frame.  On some machines, the
   hardware determines which register this is.  On other machines, you can
   choose any register you wish for this purpose.
 
-.. macro:: HARD_FRAME_POINTER_REGNUM
+.. c:macro:: HARD_FRAME_POINTER_REGNUM
 
   On some machines the offset between the frame pointer and starting
   offset of the automatic variables is not known until after register
@@ -591,7 +591,7 @@ This discusses registers that address the stack frame.
   Do not define this macro if it would be the same as
   ``FRAME_POINTER_REGNUM``.
 
-.. macro:: ARG_POINTER_REGNUM
+.. c:macro:: ARG_POINTER_REGNUM
 
   The register number of the arg pointer register, which is used to access
   the function's argument list.  On some machines, this is the same as the
@@ -602,7 +602,7 @@ This discusses registers that address the stack frame.
   ``FIXED_REGISTERS``, or arrange to be able to eliminate it
   (see :ref:`elimination`).
 
-.. macro:: HARD_FRAME_POINTER_IS_FRAME_POINTER
+.. c:macro:: HARD_FRAME_POINTER_IS_FRAME_POINTER
 
   Define this to a preprocessor constant that is nonzero if
   ``hard_frame_pointer_rtx`` and ``frame_pointer_rtx`` should be
@@ -610,7 +610,7 @@ This discusses registers that address the stack frame.
   == FRAME_POINTER_REGNUM)`; you only need to define this macro if that
   definition is not suitable for use in preprocessor conditionals.
 
-.. macro:: HARD_FRAME_POINTER_IS_ARG_POINTER
+.. c:macro:: HARD_FRAME_POINTER_IS_ARG_POINTER
 
   Define this to a preprocessor constant that is nonzero if
   ``hard_frame_pointer_rtx`` and ``arg_pointer_rtx`` should be the
@@ -618,7 +618,7 @@ This discusses registers that address the stack frame.
   ARG_POINTER_REGNUM)`; you only need to define this macro if that
   definition is not suitable for use in preprocessor conditionals.
 
-.. macro:: RETURN_ADDRESS_POINTER_REGNUM
+.. c:macro:: RETURN_ADDRESS_POINTER_REGNUM
 
   The register number of the return address pointer register, which is used to
   access the current function's return address from the stack.  On some
@@ -630,7 +630,7 @@ This discusses registers that address the stack frame.
   Do not define this macro unless there is no other way to get the return
   address from the stack.
 
-.. macro:: STATIC_CHAIN_REGNUM
+.. c:macro:: STATIC_CHAIN_REGNUM
 
   Register numbers used for passing a function's static chain pointer.  If
   register windows are used, the register number as seen by the called
@@ -670,7 +670,7 @@ This discusses registers that address the stack frame.
   ``arg_pointer_rtx`` will have been initialized and should be used
   to refer to those items.
 
-.. macro:: DWARF_FRAME_REGISTERS
+.. c:macro:: DWARF_FRAME_REGISTERS
 
   This macro specifies the maximum number of hard registers that can be
   saved in a call frame.  This is used to size data structures used in
@@ -687,7 +687,7 @@ This discusses registers that address the stack frame.
   If this macro is not defined, it defaults to
   ``FIRST_PSEUDO_REGISTER``.
 
-.. macro:: PRE_GCC3_DWARF_FRAME_REGISTERS
+.. c:macro:: PRE_GCC3_DWARF_FRAME_REGISTERS
 
   This macro is similar to ``DWARF_FRAME_REGISTERS``, but is provided
   for backward compatibility in pre GCC 3.0 compiled code.
@@ -695,14 +695,14 @@ This discusses registers that address the stack frame.
   If this macro is not defined, it defaults to
   ``DWARF_FRAME_REGISTERS``.
 
-.. macro:: DWARF_REG_TO_UNWIND_COLUMN (regno)
+.. c:macro:: DWARF_REG_TO_UNWIND_COLUMN (regno)
 
   Define this macro if the target's representation for dwarf registers
   is different than the internal representation for unwind column.
   Given a dwarf register, this macro should return the internal unwind
   column number to use instead.
 
-.. macro:: DWARF_FRAME_REGNUM (regno)
+.. c:macro:: DWARF_FRAME_REGNUM (regno)
 
   Define this macro if the target's representation for dwarf registers
   used in .eh_frame or .debug_frame is different from that used in other
@@ -710,7 +710,7 @@ This discusses registers that address the stack frame.
   should return the .eh_frame register number.  The default is
   ``DBX_REGISTER_NUMBER (regno)``.
 
-.. macro:: DWARF2_FRAME_REG_OUT (regno, for_eh)
+.. c:macro:: DWARF2_FRAME_REG_OUT (regno, for_eh)
 
   Define this macro to map register numbers held in the call frame info
   that GCC has collected using ``DWARF_FRAME_REGNUM`` to those that
@@ -718,21 +718,21 @@ This discusses registers that address the stack frame.
   .eh_frame ( ``for_eh`` is nonzero).  The default is to
   return ``regno``.
 
-.. macro:: REG_VALUE_IN_UNWIND_CONTEXT
+.. c:macro:: REG_VALUE_IN_UNWIND_CONTEXT
 
   Define this macro if the target stores register values as
   ``_Unwind_Word`` type in unwind context.  It should be defined if
   target register size is larger than the size of ``void *``.  The
   default is to store register values as ``void *`` type.
 
-.. macro:: ASSUME_EXTENDED_UNWIND_CONTEXT
+.. c:macro:: ASSUME_EXTENDED_UNWIND_CONTEXT
 
   Define this macro to be 1 if the target always uses extended unwind
   context with version, args_size and by_value fields.  If it is undefined,
   it will be defined to 1 when ``REG_VALUE_IN_UNWIND_CONTEXT`` is
   defined and 0 otherwise.
 
-.. macro:: DWARF_LAZY_REGISTER_VALUE (regno, value)
+.. c:macro:: DWARF_LAZY_REGISTER_VALUE (regno, value)
 
   Define this macro if the target has pseudo DWARF registers whose
   values need to be computed lazily on demand by the unwinder (such as when
@@ -773,7 +773,7 @@ This is about eliminating the frame pointer and arg pointer.
 
   Default return value is ``false``.
 
-.. macro:: ELIMINABLE_REGS
+.. c:macro:: ELIMINABLE_REGS
 
   This macro specifies a table of register pairs used to eliminate
   unneeded registers that point into the stack frame.
@@ -809,7 +809,7 @@ This is about eliminating the frame pointer and arg pointer.
 
   Default return value is ``true``.
 
-.. macro:: INITIAL_ELIMINATION_OFFSET (from-reg, to-reg, offset-var)
+.. c:macro:: INITIAL_ELIMINATION_OFFSET (from-reg, to-reg, offset-var)
 
   This macro returns the initial difference between the specified pair
   of registers.  The value would be computed from information
@@ -846,7 +846,7 @@ control passing certain arguments in registers.
   cases of mismatch, it also makes for better code on certain machines.
   The default is to not promote prototypes.
 
-.. macro:: PUSH_ARGS
+.. c:macro:: PUSH_ARGS
 
   A C expression.  If nonzero, push insns will be used to pass
   outgoing arguments.
@@ -855,14 +855,14 @@ control passing certain arguments in registers.
   allocate the entire argument block and then store the arguments into
   it.  When ``PUSH_ARGS`` is nonzero, ``PUSH_ROUNDING`` must be defined too.
 
-.. macro:: PUSH_ARGS_REVERSED
+.. c:macro:: PUSH_ARGS_REVERSED
 
   A C expression.  If nonzero, function arguments will be evaluated from
   last to first, rather than from first to last.  If this macro is not
   defined, it defaults to ``PUSH_ARGS`` on targets where the stack
   and args grow in opposite directions, and 0 otherwise.
 
-.. macro:: PUSH_ROUNDING (npushed)
+.. c:macro:: PUSH_ROUNDING (npushed)
 
   A C expression that is the number of bytes actually pushed onto the
   stack when an instruction attempts to push :samp:`{npushed}` bytes.
@@ -887,7 +887,7 @@ control passing certain arguments in registers.
 
 .. index:: crtl->outgoing_args_size
 
-.. macro:: ACCUMULATE_OUTGOING_ARGS
+.. c:macro:: ACCUMULATE_OUTGOING_ARGS
 
   A C expression.  If nonzero, the maximum amount of space required for outgoing arguments
   will be computed and placed into
@@ -898,7 +898,7 @@ control passing certain arguments in registers.
   Setting both ``PUSH_ARGS`` and ``ACCUMULATE_OUTGOING_ARGS``
   is not proper.
 
-.. macro:: REG_PARM_STACK_SPACE (fndecl)
+.. c:macro:: REG_PARM_STACK_SPACE (fndecl)
 
   Define this macro if functions should assume that stack space has been
   allocated for arguments even when their values are passed in
@@ -917,14 +917,14 @@ control passing certain arguments in registers.
 .. above is overfull.  not sure what to do.  -mew 5feb93  did
    something, not sure if it looks good.  -mew 10feb93
 
-.. macro:: INCOMING_REG_PARM_STACK_SPACE (fndecl)
+.. c:macro:: INCOMING_REG_PARM_STACK_SPACE (fndecl)
 
   Like ``REG_PARM_STACK_SPACE``, but for incoming register arguments.
   Define this macro if space guaranteed when compiling a function body
   is different to space required when making a call, a situation that
   can arise with K&R style function definitions.
 
-.. macro:: OUTGOING_REG_PARM_STACK_SPACE (fntype)
+.. c:macro:: OUTGOING_REG_PARM_STACK_SPACE (fntype)
 
   Define this to a nonzero value if it is the responsibility of the
   caller to allocate the area reserved for arguments passed in registers
@@ -935,7 +935,7 @@ control passing certain arguments in registers.
   whether the space for these arguments counts in the value of
   ``crtl->outgoing_args_size``.
 
-.. macro:: STACK_PARMS_IN_REG_PARM_AREA
+.. c:macro:: STACK_PARMS_IN_REG_PARM_AREA
 
   Define this macro if ``REG_PARM_STACK_SPACE`` is defined, but the
   stack parameters don't skip the area specified by it.
@@ -987,7 +987,7 @@ control passing certain arguments in registers.
   :samp:`{funtype}` is examined to determine whether a function takes a fixed
   number of arguments.
 
-.. macro:: CALL_POPS_ARGS (cum)
+.. c:macro:: CALL_POPS_ARGS (cum)
 
   A C expression that should indicate the number of bytes a call sequence
   pops off the stack.  It is added to the value of ``RETURN_POPS_ARGS``
@@ -1150,7 +1150,7 @@ the stack.
 
   The default version of this hook always returns false.
 
-.. macro:: CUMULATIVE_ARGS
+.. c:macro:: CUMULATIVE_ARGS
 
   A C type for declaring a variable that is used as the first argument
   of ``TARGET_FUNCTION_ARG`` and other related values.  For some
@@ -1164,7 +1164,7 @@ the stack.
   ``CUMULATIVE_ARGS`` ; however, the data structure must exist and
   should not be empty, so use ``int``.
 
-.. macro:: OVERRIDE_ABI_FORMAT (fndecl)
+.. c:macro:: OVERRIDE_ABI_FORMAT (fndecl)
 
   If defined, this macro is called before generating any code for a
   function, but after the :samp:`{cfun}` descriptor for the function has been
@@ -1173,7 +1173,7 @@ the stack.
   If the compiler is generating code for a compiler-generated function,
   :samp:`{fndecl}` may be ``NULL``.
 
-.. macro:: INIT_CUMULATIVE_ARGS (cum, fntype, libname, fndecl, n_named_args)
+.. c:macro:: INIT_CUMULATIVE_ARGS (cum, fntype, libname, fndecl, n_named_args)
 
   A C statement (sans semicolon) for initializing the variable
   :samp:`{cum}` for the state at the beginning of the argument list.  The
@@ -1195,7 +1195,7 @@ the stack.
   macro is called, either :samp:`{libname}` or :samp:`{fntype}` is nonzero, but
   never both of them at once.
 
-.. macro:: INIT_CUMULATIVE_LIBCALL_ARGS (cum, mode, libname)
+.. c:macro:: INIT_CUMULATIVE_LIBCALL_ARGS (cum, mode, libname)
 
   Like ``INIT_CUMULATIVE_ARGS`` but only used for outgoing libcalls,
   it gets a ``MODE`` argument instead of :samp:`{fntype}`, that would be
@@ -1203,7 +1203,7 @@ the stack.
   is not defined, ``INIT_CUMULATIVE_ARGS (cum, NULL_RTX, libname,
   0)`` is used instead.
 
-.. macro:: INIT_CUMULATIVE_INCOMING_ARGS (cum, fntype, libname)
+.. c:macro:: INIT_CUMULATIVE_INCOMING_ARGS (cum, fntype, libname)
 
   Like ``INIT_CUMULATIVE_ARGS`` but overrides it for the purposes of
   finding the arguments for the function being compiled.  If this macro is
@@ -1253,7 +1253,7 @@ the stack.
   big-endian machines, the default is to pad downward for an argument of
   constant size shorter than an ``int``, and upward otherwise.
 
-.. macro:: PAD_VARARGS_DOWN
+.. c:macro:: PAD_VARARGS_DOWN
 
   If defined, a C expression which determines whether the default
   implementation of va_arg will attempt to pad down before reading the
@@ -1261,7 +1261,7 @@ the stack.
   controlled by ``PARM_BOUNDARY``.  If this macro is not defined, all such
   arguments are padded down if ``BYTES_BIG_ENDIAN`` is true.
 
-.. macro:: BLOCK_REG_PADDING (mode, type, first)
+.. c:macro:: BLOCK_REG_PADDING (mode, type, first)
 
   Specify padding for the last element of a block move between registers and
   memory.  :samp:`{first}` is nonzero if this is the only element.  Defining this
@@ -1285,7 +1285,7 @@ the stack.
   return a different value if an argument size must be rounded to a larger
   value.
 
-.. macro:: FUNCTION_ARG_REGNO_P (regno)
+.. c:macro:: FUNCTION_ARG_REGNO_P (regno)
 
   A C expression that is nonzero if :samp:`{regno}` is the number of a hard
   register in which function arguments are sometimes passed.  This does
@@ -1570,12 +1570,12 @@ values-values that can fit in registers.
   aggregate data types, because these are returned in another way.  See
   ``TARGET_STRUCT_VALUE_RTX`` and related macros, below.
 
-.. macro:: FUNCTION_VALUE (valtype, func)
+.. c:macro:: FUNCTION_VALUE (valtype, func)
 
   This macro has been deprecated.  Use ``TARGET_FUNCTION_VALUE`` for
   a new target instead.
 
-.. macro:: LIBCALL_VALUE (mode)
+.. c:macro:: LIBCALL_VALUE (mode)
 
   A C expression to create an RTX representing the place where a library
   function returns a value of mode :samp:`{mode}`.
@@ -1596,7 +1596,7 @@ values-values that can fit in registers.
 
   If this hook is not defined, then LIBCALL_VALUE will be used.
 
-.. macro:: FUNCTION_VALUE_REGNO_P (regno)
+.. c:macro:: FUNCTION_VALUE_REGNO_P (regno)
 
   A C expression that is nonzero if :samp:`{regno}` is the number of a hard
   register in which the values of called function may come back.
@@ -1632,7 +1632,7 @@ values-values that can fit in registers.
 
   If this hook is not defined, then FUNCTION_VALUE_REGNO_P will be used.
 
-.. macro:: APPLY_RESULT_SIZE
+.. c:macro:: APPLY_RESULT_SIZE
 
   Define this macro if :samp:`untyped_call` and :samp:`untyped_return`
   need more space than is implied by ``FUNCTION_VALUE_REGNO_P`` for
@@ -1701,7 +1701,7 @@ memory.
   be returned in memory.  You should instead use ``DEFAULT_PCC_STRUCT_RETURN``
   to indicate this.
 
-.. macro:: DEFAULT_PCC_STRUCT_RETURN
+.. c:macro:: DEFAULT_PCC_STRUCT_RETURN
 
   Define this macro to be 1 if all structure and union return values must be
   in memory.  Since this results in slower code, this should be defined
@@ -1735,7 +1735,7 @@ memory.
   structure value address at the beginning of a function.  If you need
   to emit adjusting code, you should do it at this point.
 
-.. macro:: PCC_STATIC_STRUCT_RETURN
+.. c:macro:: PCC_STATIC_STRUCT_RETURN
 
   Define this macro if the usual system convention on the target machine
   for returning structures and unions is for the called function to return
@@ -1774,7 +1774,7 @@ If you enable it, GCC can save registers around function calls.  This
 makes it possible to use call-clobbered registers to hold variables that
 must live across calls.
 
-.. macro:: HARD_REGNO_CALLER_SAVE_MODE (regno, nregs)
+.. c:macro:: HARD_REGNO_CALLER_SAVE_MODE (regno, nregs)
 
   A C expression specifying which mode is required for saving :samp:`{nregs}`
   of a pseudo-register in call-clobbered hard register :samp:`{regno}`.  If
@@ -1949,7 +1949,7 @@ This section describes the macros that output function entry
   ``crtl->outgoing_args_size`` bytes to be used for outgoing
   argument lists of the function.  See :ref:`stack-arguments`.
 
-.. macro:: EXIT_IGNORE_STACK
+.. c:macro:: EXIT_IGNORE_STACK
 
   Define this macro as a C expression that is nonzero if the return
   instruction or the function epilogue ignores the value of the stack
@@ -1962,13 +1962,13 @@ This section describes the macros that output function entry
   stack adjustment in a function that has no frame pointer, and the
   compiler knows this regardless of ``EXIT_IGNORE_STACK``.
 
-.. macro:: EPILOGUE_USES (regno)
+.. c:macro:: EPILOGUE_USES (regno)
 
   Define this macro as a C expression that is nonzero for registers that are
   used by the epilogue or the :samp:`return` pattern.  The stack and frame
   pointer registers are already assumed to be used as needed.
 
-.. macro:: EH_USES (regno)
+.. c:macro:: EH_USES (regno)
 
   Define this macro as a C expression that is nonzero for registers that are
   used by the exception handling mechanism, and so should be considered live
@@ -2033,7 +2033,7 @@ Generating Code for Profiling
 
 These macros will help you generate code for profiling.
 
-.. macro:: FUNCTION_PROFILER (file, labelno)
+.. c:macro:: FUNCTION_PROFILER (file, labelno)
 
   A C statement or compound statement to output to :samp:`{file}` some
   assembler code to call the profiling subroutine ``mcount``.
@@ -2050,13 +2050,13 @@ These macros will help you generate code for profiling.
   :samp:`LP` followed by the number :samp:`{labelno}`, so you would generate
   the name using :samp:`LP%d` in a ``fprintf``.
 
-.. macro:: PROFILE_HOOK
+.. c:macro:: PROFILE_HOOK
 
   A C statement or compound statement to output to :samp:`{file}` some assembly
   code to call the profiling subroutine ``mcount`` even the target does
   not support profiling.
 
-.. macro:: NO_PROFILE_COUNTERS
+.. c:macro:: NO_PROFILE_COUNTERS
 
   Define this macro to be an expression with a nonzero value if the
   ``mcount`` subroutine on your system does not need a counter variable
@@ -2064,7 +2064,7 @@ These macros will help you generate code for profiling.
   implementations.  If you define this macro, you must not use the
   :samp:`{labelno}` argument to ``FUNCTION_PROFILER``.
 
-.. macro:: PROFILE_BEFORE_PROLOGUE
+.. c:macro:: PROFILE_BEFORE_PROLOGUE
 
   Define this macro if the code for function profiling should come before
   the function prologue.  Normally, the profiling code comes after.

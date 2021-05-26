@@ -22,7 +22,7 @@ However, ``va_start`` should not use this argument.  The way to find
 the end of the named arguments is with the built-in functions described
 below.
 
-.. macro:: __builtin_saveregs ()
+.. c:macro:: __builtin_saveregs ()
 
   Use this built-in function to save the argument registers in memory so
   that the varargs mechanism can access them.  Both ISO and traditional
@@ -44,7 +44,7 @@ below.
 
   .. 10feb93
 
-.. macro:: __builtin_next_arg (lastarg)
+.. c:macro:: __builtin_next_arg (lastarg)
 
   This builtin returns the address of the first anonymous stack
   argument, as type ``void *``.  If ``ARGS_GROW_DOWNWARD``, it
@@ -54,7 +54,7 @@ below.
   verify that the second parameter :samp:`{lastarg}` is the last named argument
   of the current function.
 
-.. macro:: __builtin_classify_type (object)
+.. c:macro:: __builtin_classify_type (object)
 
   Since each machine has its own conventions for which data types are
   passed in which kind of register, your implementation of ``va_arg``

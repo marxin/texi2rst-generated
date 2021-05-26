@@ -49,7 +49,7 @@ Representation of condition codes using registers
 
 .. index:: MODE_CC
 
-.. macro:: SELECT_CC_MODE (op, x, y)
+.. c:macro:: SELECT_CC_MODE (op, x, y)
 
   On many machines, the condition code may be produced by other instructions
   than compares, for example the branch can use directly the condition
@@ -123,7 +123,7 @@ Representation of condition codes using registers
   You need not to implement this hook if it would never change the
   comparison code or operands.
 
-.. macro:: REVERSIBLE_CC_MODE (mode)
+.. c:macro:: REVERSIBLE_CC_MODE (mode)
 
   A C expression whose value is one if it is always safe to reverse a
   comparison whose mode is :samp:`{mode}`.  If ``SELECT_CC_MODE``
@@ -140,7 +140,7 @@ Representation of condition codes using registers
     #define REVERSIBLE_CC_MODE(MODE) \
        ((MODE) != CCFPEmode && (MODE) != CCFPmode)
 
-.. macro:: REVERSE_CONDITION (code, mode)
+.. c:macro:: REVERSE_CONDITION (code, mode)
 
   A C expression whose value is reversed condition code of the :samp:`{code}` for
   comparison done in CC_MODE :samp:`{mode}`.  The macro is used only in case

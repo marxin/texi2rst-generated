@@ -21,7 +21,7 @@ relative addresses.
 
 .. them to the next line, to eliminate an overfull hbox. -mew 10feb93
 
-.. macro:: PIC_OFFSET_TABLE_REGNUM
+.. c:macro:: PIC_OFFSET_TABLE_REGNUM
 
   The register number of the register used to address a table of static
   data addresses in memory.  In some cases this register is defined by a
@@ -32,14 +32,14 @@ relative addresses.
   necessary).  Note that this register must be fixed when in use (e.g.
   when ``flag_pic`` is true).
 
-.. macro:: PIC_OFFSET_TABLE_REG_CALL_CLOBBERED
+.. c:macro:: PIC_OFFSET_TABLE_REG_CALL_CLOBBERED
 
   A C expression that is nonzero if the register defined by
   ``PIC_OFFSET_TABLE_REGNUM`` is clobbered by calls.  If not defined,
   the default is zero.  Do not define
   this macro if ``PIC_OFFSET_TABLE_REGNUM`` is not defined.
 
-.. macro:: LEGITIMATE_PIC_OPERAND_P (x)
+.. c:macro:: LEGITIMATE_PIC_OPERAND_P (x)
 
   A C expression that is nonzero if :samp:`{x}` is a legitimate immediate
   operand on the target machine when generating position independent code.

@@ -7,7 +7,7 @@ Mode Switching Instructions
 
 The following macros control mode switching optimizations:
 
-.. macro:: OPTIMIZE_MODE_SWITCHING (entity)
+.. c:macro:: OPTIMIZE_MODE_SWITCHING (entity)
 
   Define this macro if the port needs extra instructions inserted for mode
   switching in an optimizing compilation.
@@ -29,7 +29,7 @@ The following macros control mode switching optimizations:
   ``TARGET_MODE_AFTER``, ``TARGET_MODE_ENTRY``, and ``TARGET_MODE_EXIT``
   are optional.
 
-.. macro:: NUM_MODES_FOR_MODE_SWITCHING
+.. c:macro:: NUM_MODES_FOR_MODE_SWITCHING
 
   If you define ``OPTIMIZE_MODE_SWITCHING``, you have to define this as
   initializer for an array of integers.  Each initializer element

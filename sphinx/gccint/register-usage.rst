@@ -31,14 +31,14 @@ Basic Characteristics of Registers
 
 Registers have various characteristics.
 
-.. macro:: FIRST_PSEUDO_REGISTER
+.. c:macro:: FIRST_PSEUDO_REGISTER
 
   Number of hardware registers known to the compiler.  They receive
   numbers 0 through ``FIRST_PSEUDO_REGISTER-1`` ; thus, the first
   pseudo register's number really is assigned the number
   ``FIRST_PSEUDO_REGISTER``.
 
-.. macro:: FIXED_REGISTERS
+.. c:macro:: FIXED_REGISTERS
 
   .. index:: fixed register
 
@@ -60,7 +60,7 @@ Registers have various characteristics.
   the user with the command options :option:`-ffixed-`:samp:`{reg}`,
   :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`.
 
-.. macro:: CALL_USED_REGISTERS
+.. c:macro:: CALL_USED_REGISTERS
 
   .. index:: call-used register
 
@@ -81,7 +81,7 @@ Registers have various characteristics.
   Exactly one of ``CALL_USED_REGISTERS`` and ``CALL_REALLY_USED_REGISTERS``
   must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
 
-.. macro:: CALL_REALLY_USED_REGISTERS
+.. c:macro:: CALL_REALLY_USED_REGISTERS
 
   .. index:: call-used register
 
@@ -195,7 +195,7 @@ Registers have various characteristics.
   controlled by target switches, then GCC will automatically avoid using
   these registers when the target switches are opposed to them.)
 
-.. macro:: INCOMING_REGNO (out)
+.. c:macro:: INCOMING_REGNO (out)
 
   Define this macro if the target machine has register windows.  This C
   expression returns the register number as seen by the called function
@@ -203,7 +203,7 @@ Registers have various characteristics.
   function.  Return :samp:`{out}` if register number :samp:`{out}` is not an
   outbound register.
 
-.. macro:: OUTGOING_REGNO (in)
+.. c:macro:: OUTGOING_REGNO (in)
 
   Define this macro if the target machine has register windows.  This C
   expression returns the register number as seen by the calling function
@@ -211,7 +211,7 @@ Registers have various characteristics.
   function.  Return :samp:`{in}` if register number :samp:`{in}` is not an inbound
   register.
 
-.. macro:: LOCAL_REGNO (regno)
+.. c:macro:: LOCAL_REGNO (regno)
 
   Define this macro if the target machine has register windows.  This C
   expression returns true if the register is call-saved but is in the
@@ -219,7 +219,7 @@ Registers have various characteristics.
   need not be explicitly restored on function exit or during non-local
   gotos.
 
-.. macro:: PC_REGNUM
+.. c:macro:: PC_REGNUM
 
   If the program counter has a register number, define this as that
   register number.  Otherwise, do not define it.
@@ -237,7 +237,7 @@ Order of Allocation of Registers
 
 Registers are allocated in order.
 
-.. macro:: REG_ALLOC_ORDER
+.. c:macro:: REG_ALLOC_ORDER
 
   If defined, an initializer for a vector of integers, containing the
   numbers of hard registers in the order in which GCC should prefer
@@ -252,7 +252,7 @@ Registers are allocated in order.
   machines, define ``REG_ALLOC_ORDER`` to be an initializer that lists
   the highest numbered allocable register first.
 
-.. macro:: ADJUST_REG_ALLOC_ORDER
+.. c:macro:: ADJUST_REG_ALLOC_ORDER
 
   A C statement (sans semicolon) to choose the order in which to allocate
   hard registers for pseudo-registers local to a basic block.
@@ -266,7 +266,7 @@ Registers are allocated in order.
 
   On most machines, it is not necessary to define this macro.
 
-.. macro:: HONOR_REG_ALLOC_ORDER
+.. c:macro:: HONOR_REG_ALLOC_ORDER
 
   Normally, IRA tries to estimate the costs for saving a register in the
   prologue and restoring it in the epilogue.  This discourages it from
@@ -275,7 +275,7 @@ Registers are allocated in order.
   call-saved registers appear earlier than call-used ones, then define this
   macro as a C expression to nonzero. Default is 0.
 
-.. macro:: IRA_HARD_REGNO_ADD_COST_MULTIPLIER (regno)
+.. c:macro:: IRA_HARD_REGNO_ADD_COST_MULTIPLIER (regno)
 
   In some case register allocation order is not enough for the
   Integrated Register Allocator (IRA) to generate a good code.
@@ -307,7 +307,7 @@ consecutive registers are needed for a given mode.
 
   The default definition returns the number of words in :samp:`{mode}`.
 
-.. macro:: HARD_REGNO_NREGS_HAS_PADDING (regno, mode)
+.. c:macro:: HARD_REGNO_NREGS_HAS_PADDING (regno, mode)
 
   A C expression that is nonzero if a value of mode :samp:`{mode}`, stored
   in memory, ends with padding that causes it to take up more space than
@@ -327,14 +327,14 @@ consecutive registers are needed for a given mode.
   ``subreg`` would contain some of the padding not stored in
   registers and so not be representable.
 
-.. macro:: HARD_REGNO_NREGS_WITH_PADDING (regno, mode)
+.. c:macro:: HARD_REGNO_NREGS_WITH_PADDING (regno, mode)
 
   For values of :samp:`{regno}` and :samp:`{mode}` for which
   ``HARD_REGNO_NREGS_HAS_PADDING`` returns nonzero, a C expression
   returning the greater number of registers required to hold the value
   including any padding.  In the example above, the value would be four.
 
-.. macro:: REGMODE_NATURAL_SIZE (mode)
+.. c:macro:: REGMODE_NATURAL_SIZE (mode)
 
   Define this macro if the natural size of registers that hold values
   of mode :samp:`{mode}` is not the word size.  It is a C expression that
@@ -401,7 +401,7 @@ consecutive registers are needed for a given mode.
   floating registers are not in class ``GENERAL_REGS``, they will not
   be used unless some pattern's constraint asks for one.
 
-.. macro:: HARD_REGNO_RENAME_OK (from, to)
+.. c:macro:: HARD_REGNO_RENAME_OK (from, to)
 
   A C expression that is nonzero if it is OK to rename a hard register
   :samp:`{from}` to another hard register :samp:`{to}`.
@@ -439,7 +439,7 @@ consecutive registers are needed for a given mode.
 
   The default version of this hook always returns ``true``.
 
-.. macro:: AVOID_CCMODE_COPIES
+.. c:macro:: AVOID_CCMODE_COPIES
 
   Define this macro if the compiler should avoid copies to/from ``CCmode``
   registers.  You should only define this macro if support for copying to/from
@@ -472,7 +472,7 @@ suitable for leaf function treatment.  So it needs to renumber the
 registers in order to output a leaf function.  The following macros
 accomplish this.
 
-.. macro:: LEAF_REGISTERS
+.. c:macro:: LEAF_REGISTERS
 
   Name of a char vector, indexed by hard register number, which
   contains 1 for a register that is allowable in a candidate for leaf
@@ -487,7 +487,7 @@ accomplish this.
   Define this macro only if the target machine offers a way to optimize
   the treatment of leaf functions.
 
-.. macro:: LEAF_REG_REMAP (regno)
+.. c:macro:: LEAF_REG_REMAP (regno)
 
   A C expression whose value is the register number to which :samp:`{regno}`
   should be renumbered, when a function is treated as a leaf function.
@@ -538,21 +538,21 @@ stack-like registers, you will need to do substantial work on
 reg-stack.c and write your machine description to cooperate
 with it, as well as defining these macros.
 
-.. macro:: STACK_REGS
+.. c:macro:: STACK_REGS
 
   Define this if the machine has any stack-like registers.
 
-.. macro:: STACK_REG_COVER_CLASS
+.. c:macro:: STACK_REG_COVER_CLASS
 
   This is a cover class containing the stack registers.  Define this if
   the machine has any stack-like registers.
 
-.. macro:: FIRST_STACK_REG
+.. c:macro:: FIRST_STACK_REG
 
   The number of the first stack-like register.  This one is the top
   of the stack.
 
-.. macro:: LAST_STACK_REG
+.. c:macro:: LAST_STACK_REG
 
   The number of the last stack-like register.  This one is the bottom of
   the stack.

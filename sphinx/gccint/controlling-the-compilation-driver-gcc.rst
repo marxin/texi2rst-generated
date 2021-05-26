@@ -11,7 +11,7 @@ Controlling the Compilation Driver, gcc
 
 You can control the compilation driver.
 
-.. macro:: DRIVER_SELF_SPECS
+.. c:macro:: DRIVER_SELF_SPECS
 
   A list of specs for the driver itself.  It should be a suitable
   initializer for an array of strings, with no surrounding braces.
@@ -29,7 +29,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: OPTION_DEFAULT_SPECS
+.. c:macro:: OPTION_DEFAULT_SPECS
 
   A list of specs used to support configure-time default options (i.e.
   :option:`--with` options) in the driver.  It should be a suitable initializer
@@ -48,7 +48,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: CPP_SPEC
+.. c:macro:: CPP_SPEC
 
   A C string constant that tells the GCC driver program options to
   pass to CPP.  It can also specify how to translate options you
@@ -56,13 +56,13 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: CPLUSPLUS_CPP_SPEC
+.. c:macro:: CPLUSPLUS_CPP_SPEC
 
   This macro is just like ``CPP_SPEC``, but is used for C++, rather
   than C.  If you do not define this macro, then the value of
   ``CPP_SPEC`` (if any) will be used instead.
 
-.. macro:: CC1_SPEC
+.. c:macro:: CC1_SPEC
 
   A C string constant that tells the GCC driver program options to
   pass to ``cc1``, ``cc1plus``, ``f771``, and the other language
@@ -72,7 +72,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: CC1PLUS_SPEC
+.. c:macro:: CC1PLUS_SPEC
 
   A C string constant that tells the GCC driver program options to
   pass to ``cc1plus``.  It can also specify how to translate options you
@@ -83,7 +83,7 @@ You can control the compilation driver.
   ``cc1plus`` so there is no need to duplicate the contents of
   CC1_SPEC in CC1PLUS_SPEC.
 
-.. macro:: ASM_SPEC
+.. c:macro:: ASM_SPEC
 
   A C string constant that tells the GCC driver program options to
   pass to the assembler.  It can also specify how to translate options
@@ -92,7 +92,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: ASM_FINAL_SPEC
+.. c:macro:: ASM_FINAL_SPEC
 
   A C string constant that tells the GCC driver program how to
   run any programs which cleanup after the normal assembler.
@@ -101,7 +101,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: AS_NEEDS_DASH_FOR_PIPED_INPUT
+.. c:macro:: AS_NEEDS_DASH_FOR_PIPED_INPUT
 
   Define this macro, with no value, if the driver should give the assembler
   an argument consisting of a single dash, :option:`-`, to instruct it to
@@ -114,7 +114,7 @@ You can control the compilation driver.
   cannot read standard input at all, use a :samp:`%{pipe:%e}` construct;
   see mips.h for instance.
 
-.. macro:: LINK_SPEC
+.. c:macro:: LINK_SPEC
 
   A C string constant that tells the GCC driver program options to
   pass to the linker.  It can also specify how to translate options you
@@ -122,7 +122,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: LIB_SPEC
+.. c:macro:: LIB_SPEC
 
   Another C string constant used much like ``LINK_SPEC``.  The difference
   between the two is that ``LIB_SPEC`` is used at the end of the
@@ -131,7 +131,7 @@ You can control the compilation driver.
   If this macro is not defined, a default is provided that
   loads the standard C library from the usual place.  See gcc.c.
 
-.. macro:: LIBGCC_SPEC
+.. c:macro:: LIBGCC_SPEC
 
   Another C string constant that tells the GCC driver program
   how and when to place a reference to libgcc.a into the
@@ -141,7 +141,7 @@ You can control the compilation driver.
   If this macro is not defined, the GCC driver provides a default that
   passes the string :option:`-lgcc` to the linker.
 
-.. macro:: REAL_LIBGCC_SPEC
+.. c:macro:: REAL_LIBGCC_SPEC
 
   By default, if ``ENABLE_SHARED_LIBGCC`` is defined, the
   ``LIBGCC_SPEC`` is not directly used by the driver program but is
@@ -153,7 +153,7 @@ You can control the compilation driver.
   driver how to place a reference to libgcc on the link command
   line, but, unlike ``LIBGCC_SPEC``, it is used unmodified.
 
-.. macro:: USE_LD_AS_NEEDED
+.. c:macro:: USE_LD_AS_NEEDED
 
   A macro that controls the modifications to ``LIBGCC_SPEC``
   mentioned in ``REAL_LIBGCC_SPEC``.  If nonzero, a spec will be
@@ -162,14 +162,14 @@ You can control the compilation driver.
   static exception handler library, when linking without any of
   ``-static``, ``-static-libgcc``, or ``-shared-libgcc``.
 
-.. macro:: LINK_EH_SPEC
+.. c:macro:: LINK_EH_SPEC
 
   If defined, this C string constant is added to ``LINK_SPEC``.
   When ``USE_LD_AS_NEEDED`` is zero or undefined, it also affects
   the modifications to ``LIBGCC_SPEC`` mentioned in
   ``REAL_LIBGCC_SPEC``.
 
-.. macro:: STARTFILE_SPEC
+.. c:macro:: STARTFILE_SPEC
 
   Another C string constant used much like ``LINK_SPEC``.  The
   difference between the two is that ``STARTFILE_SPEC`` is used at
@@ -178,7 +178,7 @@ You can control the compilation driver.
   If this macro is not defined, a default is provided that loads the
   standard C startup file from the usual place.  See gcc.c.
 
-.. macro:: ENDFILE_SPEC
+.. c:macro:: ENDFILE_SPEC
 
   Another C string constant used much like ``LINK_SPEC``.  The
   difference between the two is that ``ENDFILE_SPEC`` is used at
@@ -186,7 +186,7 @@ You can control the compilation driver.
 
   Do not define this macro if it does not need to do anything.
 
-.. macro:: THREAD_MODEL_SPEC
+.. c:macro:: THREAD_MODEL_SPEC
 
   GCC ``-v`` will print the thread model GCC was configured to use.
   However, this doesn't work on platforms that are multilibbed on thread
@@ -196,20 +196,20 @@ You can control the compilation driver.
   default value of this macro, will expand to the value of
   ``thread_file`` set in config.gcc.
 
-.. macro:: SYSROOT_SUFFIX_SPEC
+.. c:macro:: SYSROOT_SUFFIX_SPEC
 
   Define this macro to add a suffix to the target sysroot when GCC is
   configured with a sysroot.  This will cause GCC to search for usr/lib,
   et al, within sysroot+suffix.
 
-.. macro:: SYSROOT_HEADERS_SUFFIX_SPEC
+.. c:macro:: SYSROOT_HEADERS_SUFFIX_SPEC
 
   Define this macro to add a headers_suffix to the target sysroot when
   GCC is configured with a sysroot.  This will cause GCC to pass the
   updated sysroot+headers_suffix to CPP, causing it to search for
   usr/include, et al, within sysroot+headers_suffix.
 
-.. macro:: EXTRA_SPECS
+.. c:macro:: EXTRA_SPECS
 
   Define this macro to provide additional specifications to put in the
   specs file that can be used in various specifications like
@@ -262,23 +262,23 @@ You can control the compilation driver.
     #undef CPP_SYSV_DEFAULT
     #define CPP_SYSV_DEFAULT "-D_CALL_AIX"
 
-.. macro:: LINK_LIBGCC_SPECIAL_1
+.. c:macro:: LINK_LIBGCC_SPECIAL_1
 
   Define this macro if the driver program should find the library
   libgcc.a.  If you do not define this macro, the driver program will pass
   the argument :option:`-lgcc` to tell the linker to do the search.
 
-.. macro:: LINK_GCC_C_SEQUENCE_SPEC
+.. c:macro:: LINK_GCC_C_SEQUENCE_SPEC
 
   The sequence in which libgcc and libc are specified to the linker.
   By default this is ``%G %L %G``.
 
-.. macro:: POST_LINK_SPEC
+.. c:macro:: POST_LINK_SPEC
 
   Define this macro to add additional steps to be executed after linker.
   The default value of this macro is empty string.
 
-.. macro:: LINK_COMMAND_SPEC
+.. c:macro:: LINK_COMMAND_SPEC
 
   A C string constant giving the complete command line need to execute the
   linker.  When you do this, you will need to update your port each time a
@@ -292,7 +292,7 @@ You can control the compilation driver.
 
   True if .. components should always be removed from directory names computed relative to GCC's internal directories, false (default) if such components should be preserved and directory names containing them passed to other tools such as the linker.
 
-.. macro:: MULTILIB_DEFAULTS
+.. c:macro:: MULTILIB_DEFAULTS
 
   Define this macro as a C expression for the initializer of an array of
   string to tell the driver program which options are defaults for this
@@ -304,13 +304,13 @@ You can control the compilation driver.
   ``MULTILIB_OPTIONS`` are set by default.
   See :ref:`target-fragment`.
 
-.. macro:: RELATIVE_PREFIX_NOT_LINKDIR
+.. c:macro:: RELATIVE_PREFIX_NOT_LINKDIR
 
   Define this macro to tell :command:`gcc` that it should only translate
   a :option:`-B` prefix into a :option:`-L` linker option if the prefix
   indicates an absolute file name.
 
-.. macro:: MD_EXEC_PREFIX
+.. c:macro:: MD_EXEC_PREFIX
 
   If defined, this macro is an additional prefix to try after
   ``STANDARD_EXEC_PREFIX``.  ``MD_EXEC_PREFIX`` is not searched
@@ -318,7 +318,7 @@ You can control the compilation driver.
   compiler.  If you define ``MD_EXEC_PREFIX``, then be sure to add it
   to the list of directories used to find the assembler in configure.ac.
 
-.. macro:: STANDARD_STARTFILE_PREFIX
+.. c:macro:: STANDARD_STARTFILE_PREFIX
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``libdir`` as the default prefix to
@@ -326,7 +326,7 @@ You can control the compilation driver.
   ``STANDARD_STARTFILE_PREFIX`` is not searched when the compiler
   is built as a cross compiler.
 
-.. macro:: STANDARD_STARTFILE_PREFIX_1
+.. c:macro:: STANDARD_STARTFILE_PREFIX_1
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``/lib`` as a prefix to try after the default prefix
@@ -334,7 +334,7 @@ You can control the compilation driver.
   ``STANDARD_STARTFILE_PREFIX_1`` is not searched when the compiler
   is built as a cross compiler.
 
-.. macro:: STANDARD_STARTFILE_PREFIX_2
+.. c:macro:: STANDARD_STARTFILE_PREFIX_2
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``/lib`` as yet another prefix to try after the
@@ -342,26 +342,26 @@ You can control the compilation driver.
   ``STANDARD_STARTFILE_PREFIX_2`` is not searched when the compiler
   is built as a cross compiler.
 
-.. macro:: MD_STARTFILE_PREFIX
+.. c:macro:: MD_STARTFILE_PREFIX
 
   If defined, this macro supplies an additional prefix to try after the
   standard prefixes.  ``MD_EXEC_PREFIX`` is not searched when the
   compiler is built as a cross compiler.
 
-.. macro:: MD_STARTFILE_PREFIX_1
+.. c:macro:: MD_STARTFILE_PREFIX_1
 
   If defined, this macro supplies yet another prefix to try after the
   standard prefixes.  It is not searched when the compiler is built as a
   cross compiler.
 
-.. macro:: INIT_ENVIRONMENT
+.. c:macro:: INIT_ENVIRONMENT
 
   Define this macro as a C string constant if you wish to set environment
   variables for programs called by the driver, such as the assembler and
   loader.  The driver passes the value of this macro to ``putenv`` to
   initialize the necessary environment variables.
 
-.. macro:: LOCAL_INCLUDE_DIR
+.. c:macro:: LOCAL_INCLUDE_DIR
 
   Define this macro as a C string constant if you wish to override the
   standard choice of /usr/local/include as the default prefix to
@@ -372,13 +372,13 @@ You can control the compilation driver.
   Cross compilers do not search either /usr/local/include or its
   replacement.
 
-.. macro:: NATIVE_SYSTEM_HEADER_COMPONENT
+.. c:macro:: NATIVE_SYSTEM_HEADER_COMPONENT
 
   The 'component' corresponding to ``NATIVE_SYSTEM_HEADER_DIR``.
   See ``INCLUDE_DEFAULTS``, below, for the description of components.
   If you do not define this macro, no component is used.
 
-.. macro:: INCLUDE_DEFAULTS
+.. c:macro:: INCLUDE_DEFAULTS
 
   Define this macro if you wish to override the entire default search path
   for include files.  For a native compiler, the default search path

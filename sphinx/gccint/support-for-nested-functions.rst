@@ -98,16 +98,16 @@ separately.
   code to copy the trampoline into place would be larger than the code
   to generate it on the spot.
 
-.. macro:: TRAMPOLINE_SECTION
+.. c:macro:: TRAMPOLINE_SECTION
 
   Return the section into which the trampoline template is to be placed
   (see :ref:`sections`).  The default value is ``readonly_data_section``.
 
-.. macro:: TRAMPOLINE_SIZE
+.. c:macro:: TRAMPOLINE_SIZE
 
   A C expression for the size in bytes of the trampoline, as an integer.
 
-.. macro:: TRAMPOLINE_ALIGNMENT
+.. c:macro:: TRAMPOLINE_ALIGNMENT
 
   Alignment required for trampolines, in bits.
 
@@ -170,7 +170,7 @@ latter makes initialization faster.
 To clear the instruction cache when a trampoline is initialized, define
 the following macro.
 
-.. macro:: CLEAR_INSN_CACHE (beg, end)
+.. c:macro:: CLEAR_INSN_CACHE (beg, end)
 
   If defined, expands to a C expression clearing the *instruction
   cache* in the specified interval.  The definition of this macro would
@@ -183,7 +183,7 @@ cache line with identical instructions, or else ensure that the
 beginning of the trampoline code is always aligned at the same point in
 its cache line.  Look in m68k.h as a guide.
 
-.. macro:: TRANSFER_FROM_TRAMPOLINE
+.. c:macro:: TRANSFER_FROM_TRAMPOLINE
 
   Define this macro if trampolines need a special subroutine to do their
   work.  The macro should expand to a series of ``asm`` statements

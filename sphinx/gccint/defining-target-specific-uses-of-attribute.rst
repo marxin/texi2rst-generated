@@ -78,7 +78,7 @@ be documented in extend.texi.
 
   :samp:`{decl}` is a variable or function with ``__attribute__((dllimport))`` specified.  Use this hook if the target needs to add extra validation checks to ``handle_dll_attribute``.
 
-.. macro:: TARGET_DECLSPEC
+.. c:macro:: TARGET_DECLSPEC
 
   Define this macro to a nonzero value if you want to treat
   ``__declspec(X)`` as equivalent to ``__attribute((X))``.  By

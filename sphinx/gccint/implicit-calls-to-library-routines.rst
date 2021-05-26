@@ -11,7 +11,7 @@ Implicit Calls to Library Routines
 
 Here is an explanation of implicit calls to library routines.
 
-.. macro:: DECLARE_LIBRARY_RENAMES
+.. c:macro:: DECLARE_LIBRARY_RENAMES
 
   This macro, if defined, should expand to a piece of C code that will get
   expanded when compiling functions for libgcc.a.  It can be used to
@@ -41,7 +41,7 @@ Here is an explanation of implicit calls to library routines.
   is set to true, the tm.h file must also
   ``#define LIBGCC2_GNU_PREFIX``.
 
-.. macro:: FLOAT_LIB_COMPARE_RETURNS_BOOL (mode, comparison)
+.. c:macro:: FLOAT_LIB_COMPARE_RETURNS_BOOL (mode, comparison)
 
   This macro should return ``true`` if the library routine that
   implements the floating point comparison operator :samp:`{comparison}` in
@@ -52,7 +52,7 @@ Here is an explanation of implicit calls to library routines.
   comparison operators, so the default returns false always.  Most ports
   don't need to define this macro.
 
-.. macro:: TARGET_LIB_INT_CMP_BIASED
+.. c:macro:: TARGET_LIB_INT_CMP_BIASED
 
   This macro should evaluate to ``true`` if the integer comparison
   functions (like ``__cmpdi2`` ) return 0 to indicate that the first
@@ -62,7 +62,7 @@ Here is an explanation of implicit calls to library routines.
   -1, 0, and 1 instead of 0, 1, and 2.  If the target uses the routines
   in libgcc.a, you do not need to define this macro.
 
-.. macro:: TARGET_HAS_NO_HW_DIVIDE
+.. c:macro:: TARGET_HAS_NO_HW_DIVIDE
 
   This macro should be defined if the target has no hardware divide
   instructions.  If this macro is defined, GCC will use an algorithm which
@@ -74,7 +74,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. index:: matherr
 
-.. macro:: TARGET_EDOM
+.. c:macro:: TARGET_EDOM
 
   The value of ``EDOM`` on the target machine, as a C integer constant
   expression.  If you don't define this macro, GCC does not attempt to
@@ -90,7 +90,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. index:: errno, implicit usage
 
-.. macro:: GEN_ERRNO_RTX
+.. c:macro:: GEN_ERRNO_RTX
 
   Define this macro as a C expression to create an rtl expression that
   refers to the global 'variable' ``errno``.  (On certain systems,
@@ -110,7 +110,7 @@ Here is an explanation of implicit calls to library routines.
   This hook determines whether a function from a class of functions
    ``(enum function_class)``:samp:`{fcode}` has a fast implementation.
 
-.. macro:: NEXT_OBJC_RUNTIME
+.. c:macro:: NEXT_OBJC_RUNTIME
 
   Set this macro to 1 to use the "NeXT" Objective-C message sending conventions
   by default.  This calling convention involves passing the object, the selector

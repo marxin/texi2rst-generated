@@ -26,7 +26,7 @@ use.  All parts of the compiler which generate or optimize
 floating-point calculations must use these macros.  They may evaluate
 their operands more than once, so operands must not have side effects.
 
-.. macro:: REAL_VALUE_TYPE
+.. c:macro:: REAL_VALUE_TYPE
 
   The C data type to be used to hold a floating point value in the target
   machine's format.  Typically this is a ``struct`` containing an

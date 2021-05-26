@@ -88,7 +88,7 @@ Each register class has a number, which is the value of casting
 the class name to type ``int``.  The number serves as an index
 in many of the tables described below.
 
-.. macro:: N_REG_CLASSES
+.. c:macro:: N_REG_CLASSES
 
   The number of distinct register classes, defined as follows:
 
@@ -96,12 +96,12 @@ in many of the tables described below.
 
     #define N_REG_CLASSES (int) LIM_REG_CLASSES
 
-.. macro:: REG_CLASS_NAMES
+.. c:macro:: REG_CLASS_NAMES
 
   An initializer containing the names of the register classes as C string
   constants.  These names are used in writing some of the debugging dumps.
 
-.. macro:: REG_CLASS_CONTENTS
+.. c:macro:: REG_CLASS_CONTENTS
 
   An initializer containing the contents of the register classes, as integers
   which are bit masks.  The :samp:`{n}` th integer specifies the contents of class
@@ -116,34 +116,34 @@ in many of the tables described below.
   registers 0 through 31, the second integer to registers 32 through 63, and
   so on.
 
-.. macro:: REGNO_REG_CLASS (regno)
+.. c:macro:: REGNO_REG_CLASS (regno)
 
   A C expression whose value is a register class containing hard register
   :samp:`{regno}`.  In general there is more than one such class; choose a class
   which is :dfn:`minimal`, meaning that no smaller class also contains the
   register.
 
-.. macro:: BASE_REG_CLASS
+.. c:macro:: BASE_REG_CLASS
 
   A macro whose definition is the name of the class to which a valid
   base register must belong.  A base register is one used in an address
   which is the register value plus a displacement.
 
-.. macro:: MODE_BASE_REG_CLASS (mode)
+.. c:macro:: MODE_BASE_REG_CLASS (mode)
 
   This is a variation of the ``BASE_REG_CLASS`` macro which allows
   the selection of a base register in a mode dependent manner.  If
   :samp:`{mode}` is VOIDmode then it should return the same value as
   ``BASE_REG_CLASS``.
 
-.. macro:: MODE_BASE_REG_REG_CLASS (mode)
+.. c:macro:: MODE_BASE_REG_REG_CLASS (mode)
 
   A C expression whose value is the register class to which a valid
   base register must belong in order to be used in a base plus index
   register address.  You should define this macro if base plus index
   addresses have different requirements than other base register uses.
 
-.. macro:: MODE_CODE_BASE_REG_CLASS (mode, address_space, outer_code, index_code)
+.. c:macro:: MODE_CODE_BASE_REG_CLASS (mode, address_space, outer_code, index_code)
 
   A C expression whose value is the register class to which a valid
   base register for a memory reference in mode :samp:`{mode}` to address
@@ -154,19 +154,19 @@ in many of the tables described below.
   ``address_operand`` ).  :samp:`{index_code}` is the code of the corresponding
   index expression if :samp:`{outer_code}` is ``PLUS`` ; ``SCRATCH`` otherwise.
 
-.. macro:: INDEX_REG_CLASS
+.. c:macro:: INDEX_REG_CLASS
 
   A macro whose definition is the name of the class to which a valid
   index register must belong.  An index register is one used in an
   address where its value is either multiplied by a scale factor or
   added to another register (as well as added to a displacement).
 
-.. macro:: REGNO_OK_FOR_BASE_P (num)
+.. c:macro:: REGNO_OK_FOR_BASE_P (num)
 
   A C expression which is nonzero if register number :samp:`{num}` is
   suitable for use as a base register in operand addresses.
 
-.. macro:: REGNO_MODE_OK_FOR_BASE_P (num, mode)
+.. c:macro:: REGNO_MODE_OK_FOR_BASE_P (num, mode)
 
   A C expression that is just like ``REGNO_OK_FOR_BASE_P``, except that
   that expression may examine the mode of the memory reference in
@@ -177,7 +177,7 @@ in many of the tables described below.
   addresses that appear outside a ``MEM``, i.e., as an
   ``address_operand``.
 
-.. macro:: REGNO_MODE_OK_FOR_REG_BASE_P (num, mode)
+.. c:macro:: REGNO_MODE_OK_FOR_REG_BASE_P (num, mode)
 
   A C expression which is nonzero if register number :samp:`{num}` is suitable for
   use as a base register in base plus index operand addresses, accessing
@@ -189,7 +189,7 @@ in many of the tables described below.
   Use of this macro is deprecated; please use the more general
   ``REGNO_MODE_CODE_OK_FOR_BASE_P``.
 
-.. macro:: REGNO_MODE_CODE_OK_FOR_BASE_P (num, mode, address_space, outer_code, index_code)
+.. c:macro:: REGNO_MODE_CODE_OK_FOR_BASE_P (num, mode, address_space, outer_code, index_code)
 
   A C expression which is nonzero if register number :samp:`{num}` is
   suitable for use as a base register in operand addresses, accessing
@@ -204,7 +204,7 @@ in many of the tables described below.
   ``SCRATCH`` otherwise.  The mode may be ``VOIDmode`` for addresses
   that appear outside a ``MEM``, i.e., as an ``address_operand``.
 
-.. macro:: REGNO_OK_FOR_INDEX_P (num)
+.. c:macro:: REGNO_OK_FOR_INDEX_P (num)
 
   A C expression which is nonzero if register number :samp:`{num}` is
   suitable for use as an index register in operand addresses.  It may be
@@ -258,7 +258,7 @@ in many of the tables described below.
   this feature to discourage usage of 387 registers when math is done in
   the SSE registers (and vice versa).
 
-.. macro:: PREFERRED_RELOAD_CLASS (x, class)
+.. c:macro:: PREFERRED_RELOAD_CLASS (x, class)
 
   A C expression that places additional restrictions on the register class
   to use when it is necessary to copy value :samp:`{x}` into a register in class
@@ -306,7 +306,7 @@ in many of the tables described below.
   You can also use ``TARGET_PREFERRED_OUTPUT_RELOAD_CLASS`` to discourage
   reload from using some alternatives, like ``TARGET_PREFERRED_RELOAD_CLASS``.
 
-.. macro:: LIMIT_RELOAD_CLASS (mode, class)
+.. c:macro:: LIMIT_RELOAD_CLASS (mode, class)
 
   A C expression that places additional restrictions on the register class
   to use when it is necessary to be able to hold a value of mode
@@ -409,7 +409,7 @@ in many of the tables described below.
   of the individual moves due to expected fortuitous scheduling and/or special
   forwarding logic, you can set ``sri->extra_cost`` to a negative amount.
 
-.. macro:: SECONDARY_RELOAD_CLASS (class, mode, x)
+.. c:macro:: SECONDARY_RELOAD_CLASS (class, mode, x)
 
   These macros are obsolete, new ports should use the target hook
   ``TARGET_SECONDARY_RELOAD`` instead.
@@ -477,7 +477,7 @@ in many of the tables described below.
   location into a register of :samp:`{class2}`.  The default definition returns
   false for all inputs.
 
-.. macro:: SECONDARY_MEMORY_NEEDED_RTX (mode)
+.. c:macro:: SECONDARY_MEMORY_NEEDED_RTX (mode)
 
   Normally when ``TARGET_SECONDARY_MEMORY_NEEDED`` is defined, the compiler
   allocates a stack slot for a memory location needed for register copies.
@@ -553,7 +553,7 @@ in many of the tables described below.
   The default version of this target hook returns the size of :samp:`{mode}`
   in words.
 
-.. macro:: CLASS_MAX_NREGS (class, mode)
+.. c:macro:: CLASS_MAX_NREGS (class, mode)
 
   A C expression for the maximum number of consecutive registers
   of class :samp:`{class}` needed to hold a value of mode :samp:`{mode}`.

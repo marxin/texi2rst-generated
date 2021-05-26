@@ -8,24 +8,24 @@ basic data types used in programs being compiled.  Unlike the macros in
 the previous section, these apply to specific features of C and related
 languages, rather than to fundamental aspects of storage layout.
 
-.. macro:: INT_TYPE_SIZE
+.. c:macro:: INT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``int`` on the
   target machine.  If you don't define this, the default is one word.
 
-.. macro:: SHORT_TYPE_SIZE
+.. c:macro:: SHORT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``short`` on the
   target machine.  If you don't define this, the default is half a word.
   (If this would be less than one storage unit, it is rounded up to one
   unit.)
 
-.. macro:: LONG_TYPE_SIZE
+.. c:macro:: LONG_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long`` on the
   target machine.  If you don't define this, the default is one word.
 
-.. macro:: ADA_LONG_TYPE_SIZE
+.. c:macro:: ADA_LONG_TYPE_SIZE
 
   On some machines, the size used for the Ada equivalent of the type
   ``long`` by a native Ada compiler differs from that used by C.  In
@@ -33,91 +33,91 @@ languages, rather than to fundamental aspects of storage layout.
   the size of that type.  If you don't define this, the default is the
   value of ``LONG_TYPE_SIZE``.
 
-.. macro:: LONG_LONG_TYPE_SIZE
+.. c:macro:: LONG_LONG_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long long`` on the
   target machine.  If you don't define this, the default is two
   words.  If you want to support GNU Ada on your machine, the value of this
   macro must be at least 64.
 
-.. macro:: CHAR_TYPE_SIZE
+.. c:macro:: CHAR_TYPE_SIZE
 
   A C expression for the size in bits of the type ``char`` on the
   target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT``.
 
-.. macro:: BOOL_TYPE_SIZE
+.. c:macro:: BOOL_TYPE_SIZE
 
   A C expression for the size in bits of the C++ type ``bool`` and
   C99 type ``_Bool`` on the target machine.  If you don't define
   this, and you probably shouldn't, the default is ``CHAR_TYPE_SIZE``.
 
-.. macro:: FLOAT_TYPE_SIZE
+.. c:macro:: FLOAT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``float`` on the
   target machine.  If you don't define this, the default is one word.
 
-.. macro:: DOUBLE_TYPE_SIZE
+.. c:macro:: DOUBLE_TYPE_SIZE
 
   A C expression for the size in bits of the type ``double`` on the
   target machine.  If you don't define this, the default is two
   words.
 
-.. macro:: LONG_DOUBLE_TYPE_SIZE
+.. c:macro:: LONG_DOUBLE_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long double`` on
   the target machine.  If you don't define this, the default is two
   words.
 
-.. macro:: SHORT_FRACT_TYPE_SIZE
+.. c:macro:: SHORT_FRACT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``short _Fract`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT``.
 
-.. macro:: FRACT_TYPE_SIZE
+.. c:macro:: FRACT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``_Fract`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 2``.
 
-.. macro:: LONG_FRACT_TYPE_SIZE
+.. c:macro:: LONG_FRACT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long _Fract`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 4``.
 
-.. macro:: LONG_LONG_FRACT_TYPE_SIZE
+.. c:macro:: LONG_LONG_FRACT_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long long _Fract`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 8``.
 
-.. macro:: SHORT_ACCUM_TYPE_SIZE
+.. c:macro:: SHORT_ACCUM_TYPE_SIZE
 
   A C expression for the size in bits of the type ``short _Accum`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 2``.
 
-.. macro:: ACCUM_TYPE_SIZE
+.. c:macro:: ACCUM_TYPE_SIZE
 
   A C expression for the size in bits of the type ``_Accum`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 4``.
 
-.. macro:: LONG_ACCUM_TYPE_SIZE
+.. c:macro:: LONG_ACCUM_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long _Accum`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 8``.
 
-.. macro:: LONG_LONG_ACCUM_TYPE_SIZE
+.. c:macro:: LONG_LONG_ACCUM_TYPE_SIZE
 
   A C expression for the size in bits of the type ``long long _Accum`` on
   the target machine.  If you don't define this, the default is
   ``BITS_PER_UNIT * 16``.
 
-.. macro:: LIBGCC2_GNU_PREFIX
+.. c:macro:: LIBGCC2_GNU_PREFIX
 
   This macro corresponds to the ``TARGET_LIBFUNC_GNU_PREFIX`` target
   hook and should be defined if that hook is overriden to be true.  It
@@ -126,7 +126,7 @@ languages, rather than to fundamental aspects of storage layout.
   uses this macro should also arrange to use t-gnu-prefix in
   the libgcc config.host.
 
-.. macro:: WIDEST_HARDWARE_FP_SIZE
+.. c:macro:: WIDEST_HARDWARE_FP_SIZE
 
   A C expression for the size in bits of the widest floating-point format
   supported by the hardware.  If you define this macro, you must specify a
@@ -134,7 +134,7 @@ languages, rather than to fundamental aspects of storage layout.
   If you do not define this macro, the value of ``LONG_DOUBLE_TYPE_SIZE``
   is the default.
 
-.. macro:: DEFAULT_SIGNED_CHAR
+.. c:macro:: DEFAULT_SIGNED_CHAR
 
   An expression whose value is 1 or 0, according to whether the type
   ``char`` should be signed or unsigned by default.  The user can
@@ -150,7 +150,7 @@ languages, rather than to fundamental aspects of storage layout.
 
   The default is to return false.
 
-.. macro:: SIZE_TYPE
+.. c:macro:: SIZE_TYPE
 
   A C expression for a string describing the name of the data type to use
   for size values.  The typedef name ``size_t`` is defined using the
@@ -167,7 +167,7 @@ languages, rather than to fundamental aspects of storage layout.
   If you don't define this macro, the default is ``"long unsigned
   int"``.
 
-.. macro:: SIZETYPE
+.. c:macro:: SIZETYPE
 
   GCC defines internal types ( ``sizetype``, ``ssizetype``,
   ``bitsizetype`` and ``sbitsizetype`` ) for expressions
@@ -179,7 +179,7 @@ languages, rather than to fundamental aspects of storage layout.
 
   If you don't define this macro, the default is ``SIZE_TYPE``.
 
-.. macro:: PTRDIFF_TYPE
+.. c:macro:: PTRDIFF_TYPE
 
   A C expression for a string describing the name of the data type to use
   for the result of subtracting two pointers.  The typedef name
@@ -188,7 +188,7 @@ languages, rather than to fundamental aspects of storage layout.
 
   If you don't define this macro, the default is ``"long int"``.
 
-.. macro:: WCHAR_TYPE
+.. c:macro:: WCHAR_TYPE
 
   A C expression for a string describing the name of the data type to use
   for wide characters.  The typedef name ``wchar_t`` is defined using
@@ -197,13 +197,13 @@ languages, rather than to fundamental aspects of storage layout.
 
   If you don't define this macro, the default is ``"int"``.
 
-.. macro:: WCHAR_TYPE_SIZE
+.. c:macro:: WCHAR_TYPE_SIZE
 
   A C expression for the size in bits of the data type for wide
   characters.  This is used in ``cpp``, which cannot make use of
   ``WCHAR_TYPE``.
 
-.. macro:: WINT_TYPE
+.. c:macro:: WINT_TYPE
 
   A C expression for a string describing the name of the data type to
   use for wide characters passed to ``printf`` and returned from
@@ -213,7 +213,7 @@ languages, rather than to fundamental aspects of storage layout.
 
   If you don't define this macro, the default is ``"unsigned int"``.
 
-.. macro:: INTMAX_TYPE
+.. c:macro:: INTMAX_TYPE
 
   A C expression for a string describing the name of the data type that
   can represent any value of any standard or extended signed integer type.
@@ -224,7 +224,7 @@ languages, rather than to fundamental aspects of storage layout.
   ``"int"``, ``"long int"``, or ``"long long int"`` that has as
   much precision as ``long long int``.
 
-.. macro:: UINTMAX_TYPE
+.. c:macro:: UINTMAX_TYPE
 
   A C expression for a string describing the name of the data type that
   can represent any value of any standard or extended unsigned integer
@@ -236,7 +236,7 @@ languages, rather than to fundamental aspects of storage layout.
   unsigned int"`` that has as much precision as ``long long unsigned
   int``.
 
-.. macro:: SIG_ATOMIC_TYPE
+.. c:macro:: SIG_ATOMIC_TYPE
 
   C expressions for the standard types ``sig_atomic_t``,
   ``int8_t``, ``int16_t``, ``int32_t``, ``int64_t``,
@@ -255,7 +255,7 @@ languages, rather than to fundamental aspects of storage layout.
   to C99, depending on the type in question.  The defaults for all of
   these macros are null pointers.
 
-.. macro:: TARGET_PTRMEMFUNC_VBIT_LOCATION
+.. c:macro:: TARGET_PTRMEMFUNC_VBIT_LOCATION
 
   The C++ compiler represents a pointer-to-member-function with a struct
   that looks like:
@@ -293,7 +293,7 @@ languages, rather than to fundamental aspects of storage layout.
   ``FUNCTION_BOUNDARY``, GCC will automatically define this macro to
   ``ptrmemfunc_vbit_in_pfn``.
 
-.. macro:: TARGET_VTABLE_USES_DESCRIPTORS
+.. c:macro:: TARGET_VTABLE_USES_DESCRIPTORS
 
   Normally, the C++ compiler uses function pointers in vtables.  This
   macro allows the target to change to use 'function descriptors'
@@ -305,14 +305,14 @@ languages, rather than to fundamental aspects of storage layout.
   If vtables are used, the value of this macro should be the number
   of words that the function descriptor occupies.
 
-.. macro:: TARGET_VTABLE_ENTRY_ALIGN
+.. c:macro:: TARGET_VTABLE_ENTRY_ALIGN
 
   By default, the vtable entries are void pointers, the so the alignment
   is the same as pointer alignment.  The value of this macro specifies
   the alignment of the vtable entry in bits.  It should be defined only
   when special alignment is necessary. */
 
-.. macro:: TARGET_VTABLE_DATA_ENTRY_DISTANCE
+.. c:macro:: TARGET_VTABLE_DATA_ENTRY_DISTANCE
 
   There are a few non-descriptor entries in the vtable at offsets below
   zero.  If these entries must be padded (say, to preserve the alignment

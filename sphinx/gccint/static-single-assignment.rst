@@ -215,14 +215,14 @@ Examining SSA_NAME nodes
 
 The following macros can be used to examine ``SSA_NAME`` nodes
 
-.. macro:: SSA_NAME_DEF_STMT (var)
+.. c:macro:: SSA_NAME_DEF_STMT (var)
 
   Returns the statement :samp:`{s}` that creates the ``SSA_NAME``
   :samp:`{var}`.  If :samp:`{s}` is an empty statement (i.e., ``IS_EMPTY_STMT
   (s)`` returns ``true`` ), it means that the first reference to
   this variable is a USE or a VUSE.
 
-.. macro:: SSA_NAME_VERSION (var)
+.. c:macro:: SSA_NAME_VERSION (var)
 
   Returns the version number of the ``SSA_NAME`` object :samp:`{var}`.
 

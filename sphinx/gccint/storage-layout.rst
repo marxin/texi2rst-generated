@@ -10,7 +10,7 @@ alignments measured in bits do not need to be constant.  They can be C
 expressions that refer to static variables, such as the ``target_flags``.
 See :ref:`run-time-target`.
 
-.. macro:: BITS_BIG_ENDIAN
+.. c:macro:: BITS_BIG_ENDIAN
 
   Define this macro to have the value 1 if the most significant bit in a
   byte has the lowest number; otherwise define it to have the value zero.
@@ -22,12 +22,12 @@ See :ref:`run-time-target`.
   This macro does not affect the way structure fields are packed into
   bytes or words; that is controlled by ``BYTES_BIG_ENDIAN``.
 
-.. macro:: BYTES_BIG_ENDIAN
+.. c:macro:: BYTES_BIG_ENDIAN
 
   Define this macro to have the value 1 if the most significant byte in a
   word has the lowest number.  This macro need not be a constant.
 
-.. macro:: WORDS_BIG_ENDIAN
+.. c:macro:: WORDS_BIG_ENDIAN
 
   Define this macro to have the value 1 if, in a multiword object, the
   most significant word has the lowest number.  This applies to both
@@ -35,14 +35,14 @@ See :ref:`run-time-target`.
   order of words in memory is not the same as the order in registers.  This
   macro need not be a constant.
 
-.. macro:: REG_WORDS_BIG_ENDIAN
+.. c:macro:: REG_WORDS_BIG_ENDIAN
 
   On some machines, the order of words in a multiword object differs between
   registers in memory.  In such a situation, define this macro to describe
   the order of words in a register.  The macro ``WORDS_BIG_ENDIAN`` controls
   the order of words in memory.
 
-.. macro:: FLOAT_WORDS_BIG_ENDIAN
+.. c:macro:: FLOAT_WORDS_BIG_ENDIAN
 
   Define this macro to have the value 1 if ``DFmode``, ``XFmode`` or
   ``TFmode`` floating point numbers are stored in memory with the word
@@ -52,36 +52,36 @@ See :ref:`run-time-target`.
   You need not define this macro if the ordering is the same as for
   multi-word integers.
 
-.. macro:: BITS_PER_WORD
+.. c:macro:: BITS_PER_WORD
 
   Number of bits in a word.  If you do not define this macro, the default
   is ``BITS_PER_UNIT * UNITS_PER_WORD``.
 
-.. macro:: MAX_BITS_PER_WORD
+.. c:macro:: MAX_BITS_PER_WORD
 
   Maximum number of bits in a word.  If this is undefined, the default is
   ``BITS_PER_WORD``.  Otherwise, it is the constant value that is the
   largest value that ``BITS_PER_WORD`` can have at run-time.
 
-.. macro:: UNITS_PER_WORD
+.. c:macro:: UNITS_PER_WORD
 
   Number of storage units in a word; normally the size of a general-purpose
   register, a power of two from 1 or 8.
 
-.. macro:: MIN_UNITS_PER_WORD
+.. c:macro:: MIN_UNITS_PER_WORD
 
   Minimum number of units in a word.  If this is undefined, the default is
   ``UNITS_PER_WORD``.  Otherwise, it is the constant value that is the
   smallest value that ``UNITS_PER_WORD`` can have at run-time.
 
-.. macro:: POINTER_SIZE
+.. c:macro:: POINTER_SIZE
 
   Width of a pointer, in bits.  You must specify a value no wider than the
   width of ``Pmode``.  If it is not equal to the width of ``Pmode``,
   you must define ``POINTERS_EXTEND_UNSIGNED``.  If you do not specify
   a value the default is ``BITS_PER_WORD``.
 
-.. macro:: POINTERS_EXTEND_UNSIGNED
+.. c:macro:: POINTERS_EXTEND_UNSIGNED
 
   A C expression that determines how pointers should be extended from
   ``ptr_mode`` to either ``Pmode`` or ``word_mode``.  It is
@@ -93,7 +93,7 @@ See :ref:`run-time-target`.
   You need not define this macro if the ``ptr_mode``, ``Pmode``
   and ``word_mode`` are all the same width.
 
-.. macro:: PROMOTE_MODE (m, unsignedp, type)
+.. c:macro:: PROMOTE_MODE (m, unsignedp, type)
 
   A macro to update :samp:`{m}` and :samp:`{unsignedp}` when an object whose type
   is :samp:`{type}` and which has the specified mode and signedness is to be
@@ -142,14 +142,14 @@ See :ref:`run-time-target`.
   also define the hook to ``default_promote_function_mode_always_promote``
   if you would like to apply the same rules given by ``PROMOTE_MODE``.
 
-.. macro:: PARM_BOUNDARY
+.. c:macro:: PARM_BOUNDARY
 
   Normal alignment required for function parameters on the stack, in
   bits.  All stack parameters receive at least this much alignment
   regardless of data type.  On most machines, this is the same as the
   size of an integer.
 
-.. macro:: STACK_BOUNDARY
+.. c:macro:: STACK_BOUNDARY
 
   Define this macro to the minimum alignment enforced by hardware for the
   stack pointer on this machine.  The definition is a C expression for the
@@ -157,7 +157,7 @@ See :ref:`run-time-target`.
   if ``PREFERRED_STACK_BOUNDARY`` is not defined.  On most machines,
   this should be the same as ``PARM_BOUNDARY``.
 
-.. macro:: PREFERRED_STACK_BOUNDARY
+.. c:macro:: PREFERRED_STACK_BOUNDARY
 
   Define this macro if you wish to preserve a certain alignment for the
   stack pointer, greater than what the hardware enforces.  The definition
@@ -165,17 +165,17 @@ See :ref:`run-time-target`.
   macro must evaluate to a value equal to or larger than
   ``STACK_BOUNDARY``.
 
-.. macro:: INCOMING_STACK_BOUNDARY
+.. c:macro:: INCOMING_STACK_BOUNDARY
 
   Define this macro if the incoming stack boundary may be different
   from ``PREFERRED_STACK_BOUNDARY``.  This macro must evaluate
   to a value equal to or larger than ``STACK_BOUNDARY``.
 
-.. macro:: FUNCTION_BOUNDARY
+.. c:macro:: FUNCTION_BOUNDARY
 
   Alignment required for a function entry point, in bits.
 
-.. macro:: BIGGEST_ALIGNMENT
+.. c:macro:: BIGGEST_ALIGNMENT
 
   Biggest alignment that any data type can require on this machine, in
   bits.  Note that this is not the biggest alignment that is supported,
@@ -187,31 +187,31 @@ See :ref:`run-time-target`.
   that a type or variable can have on this machine, otherwise,
   ``BIGGEST_ALIGNMENT`` is used.
 
-.. macro:: MALLOC_ABI_ALIGNMENT
+.. c:macro:: MALLOC_ABI_ALIGNMENT
 
   Alignment, in bits, a C conformant malloc implementation has to
   provide.  If not defined, the default value is ``BITS_PER_WORD``.
 
-.. macro:: ATTRIBUTE_ALIGNED_VALUE
+.. c:macro:: ATTRIBUTE_ALIGNED_VALUE
 
   Alignment used by the ``__attribute__ ((aligned))`` construct.  If
   not defined, the default value is ``BIGGEST_ALIGNMENT``.
 
-.. macro:: MINIMUM_ATOMIC_ALIGNMENT
+.. c:macro:: MINIMUM_ATOMIC_ALIGNMENT
 
   If defined, the smallest alignment, in bits, that can be given to an
   object that can be referenced in one operation, without disturbing any
   nearby object.  Normally, this is ``BITS_PER_UNIT``, but may be larger
   on machines that don't have byte or half-word store operations.
 
-.. macro:: BIGGEST_FIELD_ALIGNMENT
+.. c:macro:: BIGGEST_FIELD_ALIGNMENT
 
   Biggest alignment that any structure or union field can require on this
   machine, in bits.  If defined, this overrides ``BIGGEST_ALIGNMENT`` for
   structure and union fields only, unless the field alignment has been set
   by the ``__attribute__ ((aligned (n)))`` construct.
 
-.. macro:: ADJUST_FIELD_ALIGN (field, type, computed)
+.. c:macro:: ADJUST_FIELD_ALIGN (field, type, computed)
 
   An expression for the alignment of a structure field :samp:`{field}` of
   type :samp:`{type}` if the alignment computed in the usual way (including
@@ -222,7 +222,7 @@ See :ref:`run-time-target`.
   may be ``NULL_TREE`` in case we just query for the minimum alignment
   of a field of type :samp:`{type}` in structure context.
 
-.. macro:: MAX_STACK_ALIGNMENT
+.. c:macro:: MAX_STACK_ALIGNMENT
 
   Biggest stack alignment guaranteed by the backend.  Use this macro
   to specify the maximum alignment of a variable on stack.
@@ -234,7 +234,7 @@ See :ref:`run-time-target`.
      maximum stack alignment on stack up to @code{STACK_BOUNDARY}, not
      @code{PREFERRED_STACK_BOUNDARY}, if stack alignment isn't supported.
 
-.. macro:: MAX_OFILE_ALIGNMENT
+.. c:macro:: MAX_OFILE_ALIGNMENT
 
   Biggest alignment supported by the object file format of this machine.
   Use this macro to limit the alignment which can be specified using the
@@ -262,7 +262,7 @@ See :ref:`run-time-target`.
   is the mode of the rtx.  The default implementation returns
   :samp:`GET_MODE_ALIGNMENT ({mode})`.
 
-.. macro:: DATA_ALIGNMENT (type, basic-align)
+.. c:macro:: DATA_ALIGNMENT (type, basic-align)
 
   If defined, a C expression to compute the alignment for a variable in
   the static store.  :samp:`{type}` is the data type, and :samp:`{basic-align}` is
@@ -278,7 +278,7 @@ See :ref:`run-time-target`.
   arrays to be word-aligned so that ``strcpy`` calls that copy
   constants to character arrays can be done inline.
 
-.. macro:: DATA_ABI_ALIGNMENT (type, basic-align)
+.. c:macro:: DATA_ABI_ALIGNMENT (type, basic-align)
 
   Similar to ``DATA_ALIGNMENT``, but for the cases where the ABI mandates
   some alignment increase, instead of optimization only purposes.  E.g.AMD x86-64 psABI says that variables with array type larger than 15 bytes
@@ -299,7 +299,7 @@ See :ref:`run-time-target`.
   constants can be done inline.  The function
   ``constant_alignment_word_strings`` provides such a definition.
 
-.. macro:: LOCAL_ALIGNMENT (type, basic-align)
+.. c:macro:: LOCAL_ALIGNMENT (type, basic-align)
 
   If defined, a C expression to compute the alignment for a variable in
   the local store.  :samp:`{type}` is the data type, and :samp:`{basic-align}` is
@@ -321,7 +321,7 @@ See :ref:`run-time-target`.
   this hook must be a power-of-two multiple of the default alignment of
   the vector element type.
 
-.. macro:: STACK_SLOT_ALIGNMENT (type, mode, basic-align)
+.. c:macro:: STACK_SLOT_ALIGNMENT (type, mode, basic-align)
 
   If defined, a C expression to compute the alignment for stack slot.
   :samp:`{type}` is the data type, :samp:`{mode}` is the widest mode available,
@@ -338,7 +338,7 @@ See :ref:`run-time-target`.
 
   If the value of this macro has a type, it should be an unsigned type.
 
-.. macro:: LOCAL_DECL_ALIGNMENT (decl)
+.. c:macro:: LOCAL_DECL_ALIGNMENT (decl)
 
   If defined, a C expression to compute the alignment for a local
   variable :samp:`{decl}`.
@@ -352,7 +352,7 @@ See :ref:`run-time-target`.
 
   If the value of this macro has a type, it should be an unsigned type.
 
-.. macro:: MINIMUM_ALIGNMENT (exp, mode, align)
+.. c:macro:: MINIMUM_ALIGNMENT (exp, mode, align)
 
   If defined, a C expression to compute the minimum required alignment
   for dynamic stack realignment purposes for :samp:`{exp}` (a type or decl),
@@ -360,14 +360,14 @@ See :ref:`run-time-target`.
 
   If this macro is not defined, then :samp:`{align}` will be used.
 
-.. macro:: EMPTY_FIELD_BOUNDARY
+.. c:macro:: EMPTY_FIELD_BOUNDARY
 
   Alignment in bits to be given to a structure bit-field that follows an
   empty field such as ``int : 0;``.
 
   If ``PCC_BITFIELD_TYPE_MATTERS`` is true, it overrides this macro.
 
-.. macro:: STRUCTURE_SIZE_BOUNDARY
+.. c:macro:: STRUCTURE_SIZE_BOUNDARY
 
   Number of bits which any structure or union's size must be a multiple of.
   Each structure or union's size is rounded up to a multiple of this.
@@ -375,13 +375,13 @@ See :ref:`run-time-target`.
   If you do not define this macro, the default is the same as
   ``BITS_PER_UNIT``.
 
-.. macro:: STRICT_ALIGNMENT
+.. c:macro:: STRICT_ALIGNMENT
 
   Define this macro to be the value 1 if instructions will fail to work
   if given data not on the nominal alignment.  If instructions will merely
   go slower in that case, define this macro as 0.
 
-.. macro:: PCC_BITFIELD_TYPE_MATTERS
+.. c:macro:: PCC_BITFIELD_TYPE_MATTERS
 
   Define this if you wish to imitate the way many other C compilers handle
   alignment of bit-fields and the structures that contain them.
@@ -448,7 +448,7 @@ See :ref:`run-time-target`.
   If this prints 2 and 5, then the compiler's behavior is what you would
   get from ``PCC_BITFIELD_TYPE_MATTERS``.
 
-.. macro:: BITFIELD_NBYTES_LIMITED
+.. c:macro:: BITFIELD_NBYTES_LIMITED
 
   Like ``PCC_BITFIELD_TYPE_MATTERS`` except that its effect is limited
   to aligning a bit-field within the structure.
@@ -480,7 +480,7 @@ See :ref:`run-time-target`.
 
   Normally, this is not needed.
 
-.. macro:: ROUND_TYPE_ALIGN (type, computed, specified)
+.. c:macro:: ROUND_TYPE_ALIGN (type, computed, specified)
 
   Define this macro as an expression for the alignment of a type (given
   by :samp:`{type}` as a tree node) if the alignment computed in the usual
@@ -490,7 +490,7 @@ See :ref:`run-time-target`.
   The default is to use :samp:`{specified}` if it is larger; otherwise, use
   the smaller of :samp:`{computed}` and ``BIGGEST_ALIGNMENT``
 
-.. macro:: MAX_FIXED_MODE_SIZE
+.. c:macro:: MAX_FIXED_MODE_SIZE
 
   An integer expression for the size in bits of the largest integer
   machine mode that should actually be used.  All integer machine modes of
@@ -498,7 +498,7 @@ See :ref:`run-time-target`.
   appropriate sizes.  If this macro is undefined, ``GET_MODE_BITSIZE
   (DImode)`` is assumed.
 
-.. macro:: STACK_SAVEAREA_MODE (save_level)
+.. c:macro:: STACK_SAVEAREA_MODE (save_level)
 
   If defined, an expression of type ``machine_mode`` that
   specifies the mode of the save area operand of a
@@ -512,7 +512,7 @@ See :ref:`run-time-target`.
   ``save_stack_level`` patterns need to support both a 32- and a
   64-bit mode.
 
-.. macro:: STACK_SIZE_MODE
+.. c:macro:: STACK_SIZE_MODE
 
   If defined, an expression of type ``machine_mode`` that
   specifies the mode of the size increment operand of an

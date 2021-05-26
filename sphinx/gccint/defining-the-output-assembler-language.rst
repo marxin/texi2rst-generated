@@ -99,13 +99,13 @@ This describes the overall framework of an assembly file.
   because they couldn't have unwind info then.  The default is to output
   nothing.
 
-.. macro:: ASM_COMMENT_START
+.. c:macro:: ASM_COMMENT_START
 
   A C string constant describing how to begin a comment in the target
   assembler language.  The compiler assumes that the comment will end at
   the end of the line.
 
-.. macro:: ASM_APP_ON
+.. c:macro:: ASM_APP_ON
 
   A C string constant for text to be output before each ``asm``
   statement or group of consecutive ones.  Normally this is
@@ -113,14 +113,14 @@ This describes the overall framework of an assembly file.
   assemblers but tells the GNU assembler that it must check the lines
   that follow for all valid assembler constructs.
 
-.. macro:: ASM_APP_OFF
+.. c:macro:: ASM_APP_OFF
 
   A C string constant for text to be output after each ``asm``
   statement or group of consecutive ones.  Normally this is
   ``"#NO_APP"``, which tells the GNU assembler to resume making the
   time-saving assumptions that are valid for ordinary compiler output.
 
-.. macro:: ASM_OUTPUT_SOURCE_FILENAME (stream, name)
+.. c:macro:: ASM_OUTPUT_SOURCE_FILENAME (stream, name)
 
   A C statement to output COFF information or DWARF debugging information
   which indicates that filename :samp:`{name}` is the current source file to
@@ -139,7 +139,7 @@ This describes the overall framework of an assembly file.
 
   Output a string based on :samp:`{name}`, suitable for the :samp:`#ident`  directive, or the equivalent directive or pragma in non-C-family languages.  If this hook is not defined, nothing is output for the :samp:`#ident`  directive.
 
-.. macro:: OUTPUT_QUOTED_STRING (stream, string)
+.. c:macro:: OUTPUT_QUOTED_STRING (stream, string)
 
   A C statement to output the string :samp:`{string}` to the stdio stream
   :samp:`{stream}`.  If you do not call the function ``output_quoted_string``
@@ -269,7 +269,7 @@ Output of Data
   itself, by calling, for example, ``output_operand_lossage``, it may just
   return ``true``.
 
-.. macro:: ASM_OUTPUT_ASCII (stream, ptr, len)
+.. c:macro:: ASM_OUTPUT_ASCII (stream, ptr, len)
 
   A C statement to output to the stdio stream :samp:`{stream}` an assembler
   instruction to assemble a string constant containing the :samp:`{len}`
@@ -280,13 +280,13 @@ Output of Data
   Berkeley Unix assembler, do not define the macro
   ``ASM_OUTPUT_ASCII``.
 
-.. macro:: ASM_OUTPUT_FDESC (stream, decl, n)
+.. c:macro:: ASM_OUTPUT_FDESC (stream, decl, n)
 
   A C statement to output word :samp:`{n}` of a function descriptor for
   :samp:`{decl}`.  This must be defined if ``TARGET_VTABLE_USES_DESCRIPTORS``
   is defined, and is otherwise unused.
 
-.. macro:: CONSTANT_POOL_BEFORE_FUNCTION
+.. c:macro:: CONSTANT_POOL_BEFORE_FUNCTION
 
   You may define this macro as a C expression.  You should define the
   expression to have a nonzero value if GCC should output the constant
@@ -295,7 +295,7 @@ Output of Data
   not define this macro, the usual case, GCC will output the constant
   pool before the function.
 
-.. macro:: ASM_OUTPUT_POOL_PROLOGUE (file, funname, fundecl, size)
+.. c:macro:: ASM_OUTPUT_POOL_PROLOGUE (file, funname, fundecl, size)
 
   A C statement to output assembler commands to define the start of the
   constant pool for a function.  :samp:`{funname}` is a string giving
@@ -307,7 +307,7 @@ Output of Data
   If no constant-pool prefix is required, the usual case, this macro need
   not be defined.
 
-.. macro:: ASM_OUTPUT_SPECIAL_POOL_ENTRY (file, x, mode, align, labelno, jumpto)
+.. c:macro:: ASM_OUTPUT_SPECIAL_POOL_ENTRY (file, x, mode, align, labelno, jumpto)
 
   A C statement (with or without semicolon) to output a constant in the
   constant pool, if it needs special treatment.  (This macro need not do
@@ -335,7 +335,7 @@ Output of Data
 
   You need not define this macro if it would do nothing.
 
-.. macro:: ASM_OUTPUT_POOL_EPILOGUE (file funname fundecl size)
+.. c:macro:: ASM_OUTPUT_POOL_EPILOGUE (file funname fundecl size)
 
   A C statement to output assembler commands to at the end of the constant
   pool for a function.  :samp:`{funname}` is a string giving the name of the
@@ -346,7 +346,7 @@ Output of Data
   If no constant-pool epilogue is required, the usual case, you need not
   define this macro.
 
-.. macro:: IS_ASM_LOGICAL_LINE_SEPARATOR (C, STR)
+.. c:macro:: IS_ASM_LOGICAL_LINE_SEPARATOR (C, STR)
 
   Define this macro as a C expression which is nonzero if :samp:`{C}` is
   used as a logical line separator by the assembler.  :samp:`{STR}` points
@@ -365,7 +365,7 @@ Output of Data
 These macros are provided by real.h for writing the definitions
 of ``ASM_OUTPUT_DOUBLE`` and the like:
 
-.. macro:: REAL_VALUE_TO_TARGET_SINGLE (x, l)
+.. c:macro:: REAL_VALUE_TO_TARGET_SINGLE (x, l)
 
   These translate :samp:`{x}`, of type ``REAL_VALUE_TYPE``, to the
   target's floating point representation, and store its bit pattern in
@@ -390,7 +390,7 @@ Output of Uninitialized Variables
 Each of the macros in this section is used to do the whole job of
 outputting a single uninitialized variable.
 
-.. macro:: ASM_OUTPUT_COMMON (stream, name, size, rounded)
+.. c:macro:: ASM_OUTPUT_COMMON (stream, name, size, rounded)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` the assembler definition of a common-label named
@@ -411,7 +411,7 @@ outputting a single uninitialized variable.
   This macro controls how the assembler definitions of uninitialized
   common global variables are output.
 
-.. macro:: ASM_OUTPUT_ALIGNED_COMMON (stream, name, size, alignment)
+.. c:macro:: ASM_OUTPUT_ALIGNED_COMMON (stream, name, size, alignment)
 
   Like ``ASM_OUTPUT_COMMON`` except takes the required alignment as a
   separate, explicit argument.  If you define this macro, it is used in
@@ -419,7 +419,7 @@ outputting a single uninitialized variable.
   handling the required alignment of the variable.  The alignment is specified
   as the number of bits.
 
-.. macro:: ASM_OUTPUT_ALIGNED_DECL_COMMON (stream, decl, name, size, alignment)
+.. c:macro:: ASM_OUTPUT_ALIGNED_DECL_COMMON (stream, decl, name, size, alignment)
 
   Like ``ASM_OUTPUT_ALIGNED_COMMON`` except that :samp:`{decl}` of the
   variable to be output, if there is one, or ``NULL_TREE`` if there
@@ -428,7 +428,7 @@ outputting a single uninitialized variable.
   ``ASM_OUTPUT_ALIGNED_COMMON``.  Define this macro when you need to see
   the variable's decl in order to chose what to output.
 
-.. macro:: ASM_OUTPUT_ALIGNED_BSS (stream, decl, name, size, alignment)
+.. c:macro:: ASM_OUTPUT_ALIGNED_BSS (stream, decl, name, size, alignment)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` the assembler definition of uninitialized global :samp:`{decl}` named
@@ -452,7 +452,7 @@ outputting a single uninitialized variable.
   not support global BSS, the front end may choose to make globals
   common in order to save space in the object file.
 
-.. macro:: ASM_OUTPUT_LOCAL (stream, name, size, rounded)
+.. c:macro:: ASM_OUTPUT_LOCAL (stream, name, size, rounded)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` the assembler definition of a local-common-label named
@@ -466,7 +466,7 @@ outputting a single uninitialized variable.
   This macro controls how the assembler definitions of uninitialized
   static variables are output.
 
-.. macro:: ASM_OUTPUT_ALIGNED_LOCAL (stream, name, size, alignment)
+.. c:macro:: ASM_OUTPUT_ALIGNED_LOCAL (stream, name, size, alignment)
 
   Like ``ASM_OUTPUT_LOCAL`` except takes the required alignment as a
   separate, explicit argument.  If you define this macro, it is used in
@@ -474,7 +474,7 @@ outputting a single uninitialized variable.
   handling the required alignment of the variable.  The alignment is specified
   as the number of bits.
 
-.. macro:: ASM_OUTPUT_ALIGNED_DECL_LOCAL (stream, decl, name, size, alignment)
+.. c:macro:: ASM_OUTPUT_ALIGNED_DECL_LOCAL (stream, decl, name, size, alignment)
 
   Like ``ASM_OUTPUT_ALIGNED_LOCAL`` except that :samp:`{decl}` of the
   variable to be output, if there is one, or ``NULL_TREE`` if there
@@ -494,7 +494,7 @@ This is about outputting labels.
 
 .. index:: assemble_name
 
-.. macro:: ASM_OUTPUT_LABEL (stream, name)
+.. c:macro:: ASM_OUTPUT_LABEL (stream, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` the assembler definition of a label named :samp:`{name}`.
@@ -503,7 +503,7 @@ This is about outputting labels.
   assembler syntax for defining the name, and a newline.  A default
   definition of this macro is provided which is correct for most systems.
 
-.. macro:: ASM_OUTPUT_FUNCTION_LABEL (stream, name, decl)
+.. c:macro:: ASM_OUTPUT_FUNCTION_LABEL (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` the assembler definition of a label named :samp:`{name}` of
@@ -518,14 +518,14 @@ This is about outputting labels.
 
 .. index:: assemble_name_raw
 
-.. macro:: ASM_OUTPUT_INTERNAL_LABEL (stream, name)
+.. c:macro:: ASM_OUTPUT_INTERNAL_LABEL (stream, name)
 
   Identical to ``ASM_OUTPUT_LABEL``, except that :samp:`{name}` is known
   to refer to a compiler-generated label.  The default definition uses
   ``assemble_name_raw``, which is like ``assemble_name`` except
   that it is more efficient.
 
-.. macro:: SIZE_ASM_OP
+.. c:macro:: SIZE_ASM_OP
 
   A C string containing the appropriate assembler directive to specify the
   size of a symbol, without any arguments.  On systems that use ELF, the
@@ -538,7 +538,7 @@ This is about outputting labels.
   macros, or if you do not need explicit symbol sizes at all, do not
   define this macro.
 
-.. macro:: ASM_OUTPUT_SIZE_DIRECTIVE (stream, name, size)
+.. c:macro:: ASM_OUTPUT_SIZE_DIRECTIVE (stream, name, size)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` a directive telling the assembler that the size of the
@@ -546,7 +546,7 @@ This is about outputting labels.
   If you define ``SIZE_ASM_OP``, a default definition of this macro is
   provided.
 
-.. macro:: ASM_OUTPUT_MEASURED_SIZE (stream, name)
+.. c:macro:: ASM_OUTPUT_MEASURED_SIZE (stream, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` a directive telling the assembler to calculate the size of
@@ -560,21 +560,21 @@ This is about outputting labels.
   not recognize :samp:`.` or cannot do calculations with it, you will need
   to redefine ``ASM_OUTPUT_MEASURED_SIZE`` to use some other technique.
 
-.. macro:: NO_DOLLAR_IN_LABEL
+.. c:macro:: NO_DOLLAR_IN_LABEL
 
   Define this macro if the assembler does not accept the character
   :samp:`$` in label names.  By default constructors and destructors in
   G++ have :samp:`$` in the identifiers.  If this macro is defined,
   :samp:`.` is used instead.
 
-.. macro:: NO_DOT_IN_LABEL
+.. c:macro:: NO_DOT_IN_LABEL
 
   Define this macro if the assembler does not accept the character
   :samp:`.` in label names.  By default constructors and destructors in G++
   have names that use :samp:`.`.  If this macro is defined, these names
   are rewritten to avoid :samp:`.`.
 
-.. macro:: TYPE_ASM_OP
+.. c:macro:: TYPE_ASM_OP
 
   A C string containing the appropriate assembler directive to specify the
   type of a symbol, without any arguments.  On systems that use ELF, the
@@ -586,7 +586,7 @@ This is about outputting labels.
   custom definition of this macro, or if you do not need explicit symbol
   types at all, do not define this macro.
 
-.. macro:: TYPE_OPERAND_FMT
+.. c:macro:: TYPE_OPERAND_FMT
 
   A C string which specifies (using ``printf`` syntax) the format of
   the second operand to ``TYPE_ASM_OP``.  On systems that use ELF, the
@@ -598,7 +598,7 @@ This is about outputting labels.
   custom definition of this macro, or if you do not need explicit symbol
   types at all, do not define this macro.
 
-.. macro:: ASM_OUTPUT_TYPE_DIRECTIVE (stream, type)
+.. c:macro:: ASM_OUTPUT_TYPE_DIRECTIVE (stream, type)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` a directive telling the assembler that the type of the
@@ -609,7 +609,7 @@ This is about outputting labels.
   If you define ``TYPE_ASM_OP`` and ``TYPE_OPERAND_FMT``, a default
   definition of this macro is provided.
 
-.. macro:: ASM_DECLARE_FUNCTION_NAME (stream, name, decl)
+.. c:macro:: ASM_DECLARE_FUNCTION_NAME (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
@@ -624,7 +624,7 @@ This is about outputting labels.
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
   of this macro.
 
-.. macro:: ASM_DECLARE_FUNCTION_SIZE (stream, name, decl)
+.. c:macro:: ASM_DECLARE_FUNCTION_SIZE (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the size of a function
@@ -637,7 +637,7 @@ This is about outputting labels.
   You may wish to use ``ASM_OUTPUT_MEASURED_SIZE`` in the definition
   of this macro.
 
-.. macro:: ASM_DECLARE_COLD_FUNCTION_NAME (stream, name, decl)
+.. c:macro:: ASM_DECLARE_COLD_FUNCTION_NAME (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
@@ -652,7 +652,7 @@ This is about outputting labels.
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
   of this macro.
 
-.. macro:: ASM_DECLARE_COLD_FUNCTION_SIZE (stream, name, decl)
+.. c:macro:: ASM_DECLARE_COLD_FUNCTION_SIZE (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the size of a cold function
@@ -665,7 +665,7 @@ This is about outputting labels.
   You may wish to use ``ASM_OUTPUT_MEASURED_SIZE`` in the definition
   of this macro.
 
-.. macro:: ASM_DECLARE_OBJECT_NAME (stream, name, decl)
+.. c:macro:: ASM_DECLARE_OBJECT_NAME (stream, name, decl)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of an
@@ -693,7 +693,7 @@ This is about outputting labels.
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in this target hook.
 
-.. macro:: ASM_DECLARE_REGISTER_GLOBAL (stream, decl, regno, name)
+.. c:macro:: ASM_DECLARE_REGISTER_GLOBAL (stream, decl, regno, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for claiming a register :samp:`{regno}`
@@ -702,7 +702,7 @@ This is about outputting labels.
   If you don't define this macro, that is equivalent to defining it to do
   nothing.
 
-.. macro:: ASM_FINISH_DECLARE_OBJECT (stream, decl, toplevel, atend)
+.. c:macro:: ASM_FINISH_DECLARE_OBJECT (stream, decl, toplevel, atend)
 
   A C statement (sans semicolon) to finish up declaring a variable name
   once the compiler has processed its initializer fully and thus has had a
@@ -740,7 +740,7 @@ This is about outputting labels.
   :samp:`{decl}` which is not defined in the current translation unit.  Most
   assemblers do not require anything to be output in this case.
 
-.. macro:: ASM_WEAKEN_LABEL (stream, name)
+.. c:macro:: ASM_WEAKEN_LABEL (stream, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` some commands that will make the label :samp:`{name}` weak;
@@ -754,7 +754,7 @@ This is about outputting labels.
   support weak symbols and you should not define the ``SUPPORTS_WEAK``
   macro.
 
-.. macro:: ASM_WEAKEN_DECL (stream, decl, name, value)
+.. c:macro:: ASM_WEAKEN_DECL (stream, decl, name, value)
 
   Combines (and replaces) the function of ``ASM_WEAKEN_LABEL`` and
   ``ASM_OUTPUT_WEAK_ALIAS``, allowing access to the associated function
@@ -764,13 +764,13 @@ This is about outputting labels.
   :samp:`{value}`.  If :samp:`{value}` is ``NULL``, it should output commands
   to make :samp:`{name}` weak.
 
-.. macro:: ASM_OUTPUT_WEAKREF (stream, decl, name, value)
+.. c:macro:: ASM_OUTPUT_WEAKREF (stream, decl, name, value)
 
   Outputs a directive that enables :samp:`{name}` to be used to refer to
   symbol :samp:`{value}` with weak-symbol semantics.  ``decl`` is the
   declaration of ``name``.
 
-.. macro:: SUPPORTS_WEAK
+.. c:macro:: SUPPORTS_WEAK
 
   A preprocessor constant expression which evaluates to true if the target
   supports weak symbols.
@@ -779,7 +779,7 @@ This is about outputting labels.
   definition.  If either ``ASM_WEAKEN_LABEL`` or ``ASM_WEAKEN_DECL``
   is defined, the default definition is :samp:`1`; otherwise, it is :samp:`0`.
 
-.. macro:: TARGET_SUPPORTS_WEAK
+.. c:macro:: TARGET_SUPPORTS_WEAK
 
   A C expression which evaluates to true if the target supports weak symbols.
 
@@ -788,7 +788,7 @@ This is about outputting labels.
   this macro if you want to control weak symbol support with a compiler
   flag such as :option:`-melf`.
 
-.. macro:: MAKE_DECL_ONE_ONLY (decl)
+.. c:macro:: MAKE_DECL_ONE_ONLY (decl)
 
   A C statement (sans semicolon) to mark :samp:`{decl}` to be emitted as a
   public symbol such that extra copies in multiple translation units will
@@ -797,7 +797,7 @@ This is about outputting labels.
   section flags in the Microsoft Windows PE/COFF format, and this support
   requires changes to :samp:`{decl}`, such as putting it in a separate section.
 
-.. macro:: SUPPORTS_ONE_ONLY
+.. c:macro:: SUPPORTS_ONE_ONLY
 
   A C expression which evaluates to true if the target supports one-only
   semantics.
@@ -815,7 +815,7 @@ This is about outputting labels.
   commands that will make the symbol(s) associated with :samp:`{decl}` have
   hidden, protected or internal visibility as specified by :samp:`{visibility}`.
 
-.. macro:: TARGET_WEAK_NOT_IN_ARCHIVE_TOC
+.. c:macro:: TARGET_WEAK_NOT_IN_ARCHIVE_TOC
 
   A C expression that evaluates to true if the target's linker expects
   that weak symbols do not appear in a static archive's table of contents.
@@ -834,7 +834,7 @@ This is about outputting labels.
   restrictions require weak symbols to be left out of a static archive's
   table of contents.
 
-.. macro:: ASM_OUTPUT_EXTERNAL (stream, decl, name)
+.. c:macro:: ASM_OUTPUT_EXTERNAL (stream, decl, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the name of an external
@@ -857,7 +857,7 @@ This is about outputting labels.
   directive to annotate :samp:`{symbol}` as used.  The Darwin target uses the
   .no_dead_code_strip directive.
 
-.. macro:: ASM_OUTPUT_LABELREF (stream, name)
+.. c:macro:: ASM_OUTPUT_LABELREF (stream, name)
 
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` a reference in assembler syntax to a label named
@@ -869,7 +869,7 @@ This is about outputting labels.
 
   Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's ``assemble_name``, but in memory rather than to a file stream, returning result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and then prepends the ``USER_LABEL_PREFIX``, if any.
 
-.. macro:: ASM_OUTPUT_SYMBOL_REF (stream, sym)
+.. c:macro:: ASM_OUTPUT_SYMBOL_REF (stream, sym)
 
   A C statement (sans semicolon) to output a reference to
   ``SYMBOL_REF`` :samp:`{sym}`.  If not defined, ``assemble_name``
@@ -877,7 +877,7 @@ This is about outputting labels.
   to modify the way a symbol is referenced depending on information
   encoded by ``TARGET_ENCODE_SECTION_INFO``.
 
-.. macro:: ASM_OUTPUT_LABEL_REF (stream, buf)
+.. c:macro:: ASM_OUTPUT_LABEL_REF (stream, buf)
 
   A C statement (sans semicolon) to output a reference to :samp:`{buf}`, the
   result of ``ASM_GENERATE_INTERNAL_LABEL``.  If not defined,
@@ -904,7 +904,7 @@ This is about outputting labels.
 
   The default version of this function utilizes ``ASM_GENERATE_INTERNAL_LABEL``.
 
-.. macro:: ASM_OUTPUT_DEBUG_LABEL (stream, prefix, num)
+.. c:macro:: ASM_OUTPUT_DEBUG_LABEL (stream, prefix, num)
 
   A C statement to output to the stdio stream :samp:`{stream}` a debug info
   label whose name is made from the string :samp:`{prefix}` and the number
@@ -917,7 +917,7 @@ This is about outputting labels.
   If this macro is not defined, then ``(*targetm.asm_out.internal_label)`` will be
   used.
 
-.. macro:: ASM_GENERATE_INTERNAL_LABEL (string, prefix, num)
+.. c:macro:: ASM_GENERATE_INTERNAL_LABEL (string, prefix, num)
 
   A C statement to store into the string :samp:`{string}` a label whose name
   is made from the string :samp:`{prefix}` and the number :samp:`{num}`.
@@ -934,7 +934,7 @@ This is about outputting labels.
   ``ASM_OUTPUT_LABELREF`` is also part of your machine description, so
   you should know what it does on your machine.)
 
-.. macro:: ASM_FORMAT_PRIVATE_NAME (outvar, name, number)
+.. c:macro:: ASM_FORMAT_PRIVATE_NAME (outvar, name, number)
 
   A C expression to assign to :samp:`{outvar}` (which is a variable of type
   ``char *`` ) a newly allocated string made from the string
@@ -956,7 +956,7 @@ This is about outputting labels.
   If this macro is not defined, a default definition will be provided
   which is correct for most systems.
 
-.. macro:: ASM_OUTPUT_DEF (stream, name, value)
+.. c:macro:: ASM_OUTPUT_DEF (stream, name, value)
 
   A C statement to output to the stdio stream :samp:`{stream}` assembler code
   which defines (equates) the symbol :samp:`{name}` to have the value :samp:`{value}`.
@@ -966,7 +966,7 @@ This is about outputting labels.
   If ``SET_ASM_OP`` is defined, a default definition is provided which is
   correct for most systems.
 
-.. macro:: ASM_OUTPUT_DEF_FROM_DECLS (stream, decl_of_name, decl_of_value)
+.. c:macro:: ASM_OUTPUT_DEF_FROM_DECLS (stream, decl_of_name, decl_of_value)
 
   A C statement to output to the stdio stream :samp:`{stream}` assembler code
   which defines (equates) the symbol whose tree node is :samp:`{decl_of_name}`
@@ -979,7 +979,7 @@ This is about outputting labels.
   If ``SET_ASM_OP`` is defined, a default definition is provided which is
   correct for most systems.
 
-.. macro:: TARGET_DEFERRED_OUTPUT_DEFS (decl_of_name, decl_of_value)
+.. c:macro:: TARGET_DEFERRED_OUTPUT_DEFS (decl_of_name, decl_of_value)
 
   A C statement that evaluates to true if the assembler code which defines
   (equates) the symbol whose tree node is :samp:`{decl_of_name}` to have the value
@@ -988,7 +988,7 @@ This is about outputting labels.
   This macro affects defines output by :samp:`ASM_OUTPUT_DEF` and
   :samp:`ASM_OUTPUT_DEF_FROM_DECLS`.
 
-.. macro:: ASM_OUTPUT_WEAK_ALIAS (stream, name, value)
+.. c:macro:: ASM_OUTPUT_WEAK_ALIAS (stream, name, value)
 
   A C statement to output to the stdio stream :samp:`{stream}` assembler code
   which defines (equates) the weak symbol :samp:`{name}` to have the value
@@ -998,7 +998,7 @@ This is about outputting labels.
   Define this macro if the target only supports weak aliases; define
   ``ASM_OUTPUT_DEF`` instead if possible.
 
-.. macro:: OBJC_GEN_METHOD_LABEL (buf, is_inst, class_name, cat_name, sel_name)
+.. c:macro:: OBJC_GEN_METHOD_LABEL (buf, is_inst, class_name, cat_name, sel_name)
 
   Define this macro to override the default assembler names used for
   Objective-C methods.
@@ -1159,7 +1159,7 @@ Macros Controlling Initialization Routines
 Here are the macros that control how the compiler handles initialization
 and termination functions:
 
-.. macro:: INIT_SECTION_ASM_OP
+.. c:macro:: INIT_SECTION_ASM_OP
 
   If defined, a C string constant, including spacing, for the assembler
   operation to identify the following data as initialization code.  If not
@@ -1168,24 +1168,24 @@ and termination functions:
   macro also controls how crtstuff.c and libgcc2.c arrange to
   run the initialization functions.
 
-.. macro:: HAS_INIT_SECTION
+.. c:macro:: HAS_INIT_SECTION
 
   If defined, ``main`` will not call ``__main`` as described above.
   This macro should be defined for systems that control start-up code
   on a symbol-by-symbol basis, such as OSF/1, and should not
   be defined explicitly for systems that support ``INIT_SECTION_ASM_OP``.
 
-.. macro:: LD_INIT_SWITCH
+.. c:macro:: LD_INIT_SWITCH
 
   If defined, a C string constant for a switch that tells the linker that
   the following symbol is an initialization routine.
 
-.. macro:: LD_FINI_SWITCH
+.. c:macro:: LD_FINI_SWITCH
 
   If defined, a C string constant for a switch that tells the linker that
   the following symbol is a finalization routine.
 
-.. macro:: COLLECT_SHARED_INIT_FUNC (stream, func)
+.. c:macro:: COLLECT_SHARED_INIT_FUNC (stream, func)
 
   If defined, a C statement that will write a function that can be
   automatically called when a shared library is loaded.  The function
@@ -1197,7 +1197,7 @@ and termination functions:
   shared library that needs constructors or destructors, or has DWARF2
   exception tables embedded in the code.
 
-.. macro:: COLLECT_SHARED_FINI_FUNC (stream, func)
+.. c:macro:: COLLECT_SHARED_FINI_FUNC (stream, func)
 
   If defined, a C statement that will write a function that can be
   automatically called when a shared library is unloaded.  The function
@@ -1205,14 +1205,14 @@ and termination functions:
   the object format requires an explicit finalization function, then a
   function called ``_GLOBAL__DD`` will be generated.
 
-.. macro:: INVOKE__main
+.. c:macro:: INVOKE__main
 
   If defined, ``main`` will call ``__main`` despite the presence of
   ``INIT_SECTION_ASM_OP``.  This macro should be defined for systems
   where the init section is not actually run automatically, but is still
   useful for collecting the lists of constructors and destructors.
 
-.. macro:: SUPPORTS_INIT_PRIORITY
+.. c:macro:: SUPPORTS_INIT_PRIORITY
 
   If nonzero, the C++ ``init_priority`` attribute is supported and the
   compiler should emit instructions to control the order of initialization
@@ -1255,7 +1255,7 @@ an object file for constructor functions to be called.
 On certain kinds of systems, you can define this macro to make
 :command:`collect2` work faster (and, in some cases, make it work at all):
 
-.. macro:: OBJECT_FORMAT_COFF
+.. c:macro:: OBJECT_FORMAT_COFF
 
   Define this macro if the system uses COFF (Common Object File Format)
   object files, so that :command:`collect2` can assume this format and scan
@@ -1264,13 +1264,13 @@ On certain kinds of systems, you can define this macro to make
   This macro is effective only in a native compiler; :command:`collect2` as
   part of a cross compiler always uses :command:`nm` for the target machine.
 
-.. macro:: REAL_NM_FILE_NAME
+.. c:macro:: REAL_NM_FILE_NAME
 
   Define this macro as a C string constant containing the file name to use
   to execute :command:`nm`.  The default is to search the path normally for
   :command:`nm`.
 
-.. macro:: NM_FLAGS
+.. c:macro:: NM_FLAGS
 
   :command:`collect2` calls :command:`nm` to scan object files for static
   constructors and destructors and LTO info.  By default, :option:`-n` is
@@ -1283,12 +1283,12 @@ dynamic dependencies of a given library or executable, you can define
 these macros to enable support for running initialization and
 termination functions in shared libraries:
 
-.. macro:: LDD_SUFFIX
+.. c:macro:: LDD_SUFFIX
 
   Define this macro to a C string constant containing the name of the program
   which lists dynamic dependencies, like :command:`ldd` under SunOS 4.
 
-.. macro:: PARSE_LDD_OUTPUT (ptr)
+.. c:macro:: PARSE_LDD_OUTPUT (ptr)
 
   Define this macro to be C code that extracts filenames from the output
   of the program denoted by ``LDD_SUFFIX``.  :samp:`{ptr}` is a variable
@@ -1297,7 +1297,7 @@ termination functions in shared libraries:
   code must advance :samp:`{ptr}` to the beginning of the filename on that
   line.  Otherwise, it must set :samp:`{ptr}` to ``NULL``.
 
-.. macro:: SHLIB_SUFFIX
+.. c:macro:: SHLIB_SUFFIX
 
   Define this macro to a C string constant containing the default shared
   library extension of the target (e.g., :samp:`".so"`).  :command:`collect2`
@@ -1314,20 +1314,20 @@ Output of Assembler Instructions
 
 This describes assembler instruction output.
 
-.. macro:: REGISTER_NAMES
+.. c:macro:: REGISTER_NAMES
 
   A C initializer containing the assembler's names for the machine
   registers, each one as a C string constant.  This is what translates
   register numbers in the compiler into assembler language.
 
-.. macro:: ADDITIONAL_REGISTER_NAMES
+.. c:macro:: ADDITIONAL_REGISTER_NAMES
 
   If defined, a C initializer for an array of structures containing a name
   and a register number.  This macro defines additional names for hard
   registers, thus allowing the ``asm`` option in declarations to refer
   to registers using alternate names.
 
-.. macro:: OVERLAPPING_REGISTER_NAMES
+.. c:macro:: OVERLAPPING_REGISTER_NAMES
 
   If defined, a C initializer for an array of structures containing a
   name, a register number and a count of the number of consecutive
@@ -1343,7 +1343,7 @@ This describes assembler instruction output.
   VFP register 'd0' implies clobbering both single-precision registers
   's0' and 's1'.
 
-.. macro:: ASM_OUTPUT_OPCODE (stream, ptr)
+.. c:macro:: ASM_OUTPUT_OPCODE (stream, ptr)
 
   Define this macro if you are using an unusual assembler that
   requires different names for the machine instructions.
@@ -1371,7 +1371,7 @@ This describes assembler instruction output.
   If the macro definition does nothing, the instruction is output
   in the usual way.
 
-.. macro:: FINAL_PRESCAN_INSN (insn, opvec, noperands)
+.. c:macro:: FINAL_PRESCAN_INSN (insn, opvec, noperands)
 
   If defined, a C statement to be executed just prior to the output of
   assembler code for :samp:`{insn}`, to modify the extracted operands so
@@ -1406,7 +1406,7 @@ This describes assembler instruction output.
   template into assembler code, so you can change the assembler mode
   by checking the contents of the vector.
 
-.. macro:: PRINT_OPERAND (stream, x, code)
+.. c:macro:: PRINT_OPERAND (stream, x, code)
 
   A C compound statement to output to stdio stream :samp:`{stream}` the
   assembler syntax for an instruction operand :samp:`{x}`.  :samp:`{x}` is an
@@ -1431,7 +1431,7 @@ This describes assembler instruction output.
   with a null pointer for :samp:`{x}` and the punctuation character for
   :samp:`{code}`.
 
-.. macro:: PRINT_OPERAND_PUNCT_VALID_P (code)
+.. c:macro:: PRINT_OPERAND_PUNCT_VALID_P (code)
 
   A C expression which evaluates to true if :samp:`{code}` is a valid
   punctuation character for use in the ``PRINT_OPERAND`` macro.  If
@@ -1439,7 +1439,7 @@ This describes assembler instruction output.
   punctuation characters (except for the standard one, :samp:`%`) are used
   in this way.
 
-.. macro:: PRINT_OPERAND_ADDRESS (stream, x)
+.. c:macro:: PRINT_OPERAND_ADDRESS (stream, x)
 
   A C compound statement to output to stdio stream :samp:`{stream}` the
   assembler syntax for an instruction operand that is a memory reference
@@ -1454,7 +1454,7 @@ This describes assembler instruction output.
 
 .. index:: dbr_sequence_length
 
-.. macro:: DBR_OUTPUT_SEQEND (file)
+.. c:macro:: DBR_OUTPUT_SEQEND (file)
 
   A C statement, to be executed after all slot-filler instructions have
   been output.  If necessary, call ``dbr_sequence_length`` to
@@ -1477,7 +1477,7 @@ being output.
 
 .. index:: asm_fprintf
 
-.. macro:: REGISTER_PREFIX
+.. c:macro:: REGISTER_PREFIX
 
   If defined, C string expressions to be used for the :samp:`%R`, :samp:`%L`,
   :samp:`%U`, and :samp:`%I` options of ``asm_fprintf`` (see
@@ -1485,7 +1485,7 @@ being output.
   support multiple assembler formats.  In that case, the various tm.h
   files can define these macros differently.
 
-.. macro:: ASM_FPRINTF_EXTENSIONS (file, argptr, format)
+.. c:macro:: ASM_FPRINTF_EXTENSIONS (file, argptr, format)
 
   If defined this macro should expand to a series of ``case``
   statements which will be parsed inside the ``switch`` statement of
@@ -1498,7 +1498,7 @@ being output.
   string, starting the character after the one that is being switched
   upon, is pointed to by :samp:`{format}`.
 
-.. macro:: ASSEMBLER_DIALECT
+.. c:macro:: ASSEMBLER_DIALECT
 
   If your target supports multiple dialects of assembler language (such as
   different opcodes), define this macro as a C expression that gives the
@@ -1532,14 +1532,14 @@ being output.
   if the syntax variant are larger and involve such things as different
   opcodes or operand order.
 
-.. macro:: ASM_OUTPUT_REG_PUSH (stream, regno)
+.. c:macro:: ASM_OUTPUT_REG_PUSH (stream, regno)
 
   A C expression to output to :samp:`{stream}` some assembler code
   which will push hard register number :samp:`{regno}` onto the stack.
   The code need not be optimal, since this macro is used only when
   profiling.
 
-.. macro:: ASM_OUTPUT_REG_POP (stream, regno)
+.. c:macro:: ASM_OUTPUT_REG_POP (stream, regno)
 
   A C expression to output to :samp:`{stream}` some assembler code
   which will pop hard register number :samp:`{regno}` off of the stack.
@@ -1557,7 +1557,7 @@ This concerns dispatch tables.
 
 .. index:: dispatch table
 
-.. macro:: ASM_OUTPUT_ADDR_DIFF_ELT (stream, body, value, rel)
+.. c:macro:: ASM_OUTPUT_ADDR_DIFF_ELT (stream, body, value, rel)
 
   A C statement to output to the stdio stream :samp:`{stream}` an assembler
   pseudo-instruction to generate a difference between two labels.
@@ -1577,7 +1577,7 @@ This concerns dispatch tables.
   :samp:`{body}` is the body of the ``ADDR_DIFF_VEC`` ; it is provided so that the
   mode and flags can be read.
 
-.. macro:: ASM_OUTPUT_ADDR_VEC_ELT (stream, value)
+.. c:macro:: ASM_OUTPUT_ADDR_VEC_ELT (stream, value)
 
   This macro should be provided on machines where the addresses
   in a dispatch table are absolute.
@@ -1592,7 +1592,7 @@ This concerns dispatch tables.
 
     fprintf (stream, "\t.word L%d\n", value)
 
-.. macro:: ASM_OUTPUT_CASE_LABEL (stream, prefix, num, table)
+.. c:macro:: ASM_OUTPUT_CASE_LABEL (stream, prefix, num, table)
 
   Define this if the label before a jump-table needs to be output
   specially.  The first three arguments are the same as for
@@ -1606,7 +1606,7 @@ This concerns dispatch tables.
   If this macro is not defined, these labels are output with
   ``(*targetm.asm_out.internal_label)``.
 
-.. macro:: ASM_OUTPUT_CASE_END (stream, num, table)
+.. c:macro:: ASM_OUTPUT_CASE_END (stream, num, table)
 
   Define this if something special must be output at the end of a
   jump-table.  The definition should be a C statement to be executed
@@ -1679,7 +1679,7 @@ Assembler Commands for Exception Regions
 This describes commands marking the start and the end of an exception
 region.
 
-.. macro:: EH_FRAME_SECTION_NAME
+.. c:macro:: EH_FRAME_SECTION_NAME
 
   If defined, a C string constant for the name of the section containing
   exception handling frame unwind information.  If not defined, GCC will
@@ -1689,7 +1689,7 @@ region.
   You should define this symbol if your target supports DWARF 2 frame
   unwind information and the default definition does not work.
 
-.. macro:: EH_FRAME_THROUGH_COLLECT2
+.. c:macro:: EH_FRAME_THROUGH_COLLECT2
 
   If defined, DWARF 2 frame unwind information will identified by
   specially named labels.  The collect2 process will locate these
@@ -1700,19 +1700,19 @@ region.
   or if the system linker does garbage collection and sections cannot
   be marked as not to be collected.
 
-.. macro:: EH_TABLES_CAN_BE_READ_ONLY
+.. c:macro:: EH_TABLES_CAN_BE_READ_ONLY
 
   Define this macro to 1 if your target is such that no frame unwind
   information encoding used with non-PIC code will ever require a
   runtime relocation, but the linker may not support merging read-only
   and read-write sections into a single read-write section.
 
-.. macro:: MASK_RETURN_ADDR
+.. c:macro:: MASK_RETURN_ADDR
 
   An rtx used to mask the return address found via ``RETURN_ADDR_RTX``, so
   that it does not contain any extraneous set bits in it.
 
-.. macro:: DWARF2_UNWIND_INFO
+.. c:macro:: DWARF2_UNWIND_INFO
 
   Define this macro to 0 if your target supports DWARF 2 frame unwind
   information, but it does not yet work with exception handling.
@@ -1752,13 +1752,13 @@ region.
   tables even when exceptions are not used.  It must not be modified by
   command-line option processing.
 
-.. macro:: DONT_USE_BUILTIN_SETJMP
+.. c:macro:: DONT_USE_BUILTIN_SETJMP
 
   Define this macro to 1 if the ``setjmp`` / ``longjmp`` -based scheme
   should use the ``setjmp`` / ``longjmp`` functions from the C library
   instead of the ``__builtin_setjmp`` / ``__builtin_longjmp`` machinery.
 
-.. macro:: JMP_BUF_SIZE
+.. c:macro:: JMP_BUF_SIZE
 
   This macro has no effect unless ``DONT_USE_BUILTIN_SETJMP`` is also
   defined.  Define this macro if the default size of ``jmp_buf`` buffer
@@ -1766,7 +1766,7 @@ region.
   is not large enough, or if it is much too large.
   The default size is ``FIRST_PSEUDO_REGISTER * sizeof(void *)``.
 
-.. macro:: DWARF_CIE_DATA_ALIGNMENT
+.. c:macro:: DWARF_CIE_DATA_ALIGNMENT
 
   This macro need only be defined if the target might save registers in the
   function prologue at an offset to the stack pointer that is not aligned to
@@ -1830,7 +1830,7 @@ Assembler Commands for Alignment
 
 This describes commands for alignment.
 
-.. macro:: JUMP_ALIGN (label)
+.. c:macro:: JUMP_ALIGN (label)
 
   The alignment (log base 2) to put in front of :samp:`{label}`, which is
   a common destination of jumps and has no fallthru incoming edge.
@@ -1844,7 +1844,7 @@ This describes commands for alignment.
   ``TARGET_OPTION_OVERRIDE``.  Otherwise, you should try to honor the user's
   selection in :samp:`{align_jumps}` in a ``JUMP_ALIGN`` implementation.
 
-.. macro:: LABEL_ALIGN_AFTER_BARRIER (label)
+.. c:macro:: LABEL_ALIGN_AFTER_BARRIER (label)
 
   The alignment (log base 2) to put in front of :samp:`{label}`, which follows
   a ``BARRIER``.
@@ -1853,7 +1853,7 @@ This describes commands for alignment.
   to be done at such a time.  Most machine descriptions do not currently
   define the macro.
 
-.. macro:: LOOP_ALIGN (label)
+.. c:macro:: LOOP_ALIGN (label)
 
   The alignment (log base 2) to put in front of :samp:`{label}` that heads
   a frequently executed basic block (usually the header of a loop).
@@ -1867,7 +1867,7 @@ This describes commands for alignment.
   ``TARGET_OPTION_OVERRIDE``.  Otherwise, you should try to honor the user's
   selection in ``align_loops`` in a ``LOOP_ALIGN`` implementation.
 
-.. macro:: LABEL_ALIGN (label)
+.. c:macro:: LABEL_ALIGN (label)
 
   The alignment (log base 2) to put in front of :samp:`{label}`.
   If ``LABEL_ALIGN_AFTER_BARRIER`` / ``LOOP_ALIGN`` specify a different alignment,
@@ -1878,14 +1878,14 @@ This describes commands for alignment.
   ``TARGET_OPTION_OVERRIDE``.  Otherwise, you should try to honor the user's
   selection in ``align_labels`` in a ``LABEL_ALIGN`` implementation.
 
-.. macro:: ASM_OUTPUT_SKIP (stream, nbytes)
+.. c:macro:: ASM_OUTPUT_SKIP (stream, nbytes)
 
   A C statement to output to the stdio stream :samp:`{stream}` an assembler
   instruction to advance the location counter by :samp:`{nbytes}` bytes.
   Those bytes should be zero when loaded.  :samp:`{nbytes}` will be a C
   expression of type ``unsigned HOST_WIDE_INT``.
 
-.. macro:: ASM_NO_SKIP_IN_TEXT
+.. c:macro:: ASM_NO_SKIP_IN_TEXT
 
   Define this macro if ``ASM_OUTPUT_SKIP`` should not be used in the
   text section because it fails to put zeros in the bytes that are skipped.
@@ -1893,18 +1893,18 @@ This describes commands for alignment.
   produces no-op instructions rather than zeros when used in the text
   section.
 
-.. macro:: ASM_OUTPUT_ALIGN (stream, power)
+.. c:macro:: ASM_OUTPUT_ALIGN (stream, power)
 
   A C statement to output to the stdio stream :samp:`{stream}` an assembler
   command to advance the location counter to a multiple of 2 to the
   :samp:`{power}` bytes.  :samp:`{power}` will be a C expression of type ``int``.
 
-.. macro:: ASM_OUTPUT_ALIGN_WITH_NOP (stream, power)
+.. c:macro:: ASM_OUTPUT_ALIGN_WITH_NOP (stream, power)
 
   Like ``ASM_OUTPUT_ALIGN``, except that the 'nop' instruction is used
   for padding, if necessary.
 
-.. macro:: ASM_OUTPUT_MAX_SKIP_ALIGN (stream, power, max_skip)
+.. c:macro:: ASM_OUTPUT_MAX_SKIP_ALIGN (stream, power, max_skip)
 
   A C statement to output to the stdio stream :samp:`{stream}` an assembler
   command to advance the location counter to a multiple of 2 to the

@@ -5974,7 +5974,7 @@ Macros for the possible return codes of tbegin are defined in the
   The transaction aborted due to a persistent failure.  Re-execution
   under same circumstances will not be productive.
 
-.. macro:: _HTM_FIRST_USER_ABORT_CODE
+.. c:macro:: _HTM_FIRST_USER_ABORT_CODE
 
   The ``_HTM_FIRST_USER_ABORT_CODE`` defined in ``htmintrin.h``
   specifies the first abort code which can be used for

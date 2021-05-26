@@ -12,7 +12,7 @@ Describing Relative Costs of Operations
 These macros let you describe the relative speed of various operations
 on the target machine.
 
-.. macro:: REGISTER_MOVE_COST (mode, from, to)
+.. c:macro:: REGISTER_MOVE_COST (mode, from, to)
 
   A C expression for the cost of moving data of mode :samp:`{mode}` from a
   register in class :samp:`{from}` to one in class :samp:`{to}`.  The classes are
@@ -55,7 +55,7 @@ on the target machine.
 
   The default version of this function returns 2.
 
-.. macro:: MEMORY_MOVE_COST (mode, class, in)
+.. c:macro:: MEMORY_MOVE_COST (mode, class, in)
 
   A C expression for the cost of moving data of mode :samp:`{mode}` between a
   register of class :samp:`{class}` and memory; :samp:`{in}` is zero if the value
@@ -106,7 +106,7 @@ on the target machine.
   value to the result of that function.  The arguments to that function
   are the same as to this target hook.
 
-.. macro:: BRANCH_COST (speed_p, predictable_p)
+.. c:macro:: BRANCH_COST (speed_p, predictable_p)
 
   A C expression for the cost of a branch instruction.  A value of 1 is
   the default; other values are interpreted relative to that. Parameter
@@ -120,7 +120,7 @@ Here are additional macros which do not specify precise relative costs,
 but only that certain actions are more expensive than GCC would
 ordinarily expect.
 
-.. macro:: SLOW_BYTE_ACCESS
+.. c:macro:: SLOW_BYTE_ACCESS
 
   Define this macro as a C expression which is nonzero if accessing less
   than a word of memory (i.e. a ``char`` or a ``short`` ) is no
@@ -152,7 +152,7 @@ ordinarily expect.
   The hook must return true whenever ``STRICT_ALIGNMENT`` is true.
   The default implementation returns ``STRICT_ALIGNMENT``.
 
-.. macro:: MOVE_RATIO (speed)
+.. c:macro:: MOVE_RATIO (speed)
 
   The threshold of number of scalar memory-to-memory move insns, *below*
   which a sequence of insns should be generated instead of a
@@ -220,24 +220,24 @@ ordinarily expect.
   particular mode from being used for block comparisons by returning a
   negative number from this hook.
 
-.. macro:: MOVE_MAX_PIECES
+.. c:macro:: MOVE_MAX_PIECES
 
   A C expression used by ``move_by_pieces`` to determine the largest unit
   a load or store used to copy memory is.  Defaults to ``MOVE_MAX``.
 
-.. macro:: STORE_MAX_PIECES
+.. c:macro:: STORE_MAX_PIECES
 
   A C expression used by ``store_by_pieces`` to determine the largest unit
   a store used to memory is.  Defaults to ``MOVE_MAX_PIECES``, or two times
   the size of ``HOST_WIDE_INT``, whichever is smaller.
 
-.. macro:: COMPARE_MAX_PIECES
+.. c:macro:: COMPARE_MAX_PIECES
 
   A C expression used by ``compare_by_pieces`` to determine the largest unit
   a load or store used to compare memory is.  Defaults to
   ``MOVE_MAX_PIECES``.
 
-.. macro:: CLEAR_RATIO (speed)
+.. c:macro:: CLEAR_RATIO (speed)
 
   The threshold of number of scalar move insns, *below* which a sequence
   of insns should be generated to clear memory instead of a string clear insn
@@ -249,7 +249,7 @@ ordinarily expect.
 
   If you don't define this, a reasonable default is used.
 
-.. macro:: SET_RATIO (speed)
+.. c:macro:: SET_RATIO (speed)
 
   The threshold of number of scalar move insns, *below* which a sequence
   of insns should be generated to set memory to a constant value, instead of
@@ -262,60 +262,60 @@ ordinarily expect.
 
   If you don't define this, it defaults to the value of ``MOVE_RATIO``.
 
-.. macro:: USE_LOAD_POST_INCREMENT (mode)
+.. c:macro:: USE_LOAD_POST_INCREMENT (mode)
 
   A C expression used to determine whether a load postincrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_POST_INCREMENT``.
 
-.. macro:: USE_LOAD_POST_DECREMENT (mode)
+.. c:macro:: USE_LOAD_POST_DECREMENT (mode)
 
   A C expression used to determine whether a load postdecrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_POST_DECREMENT``.
 
-.. macro:: USE_LOAD_PRE_INCREMENT (mode)
+.. c:macro:: USE_LOAD_PRE_INCREMENT (mode)
 
   A C expression used to determine whether a load preincrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_PRE_INCREMENT``.
 
-.. macro:: USE_LOAD_PRE_DECREMENT (mode)
+.. c:macro:: USE_LOAD_PRE_DECREMENT (mode)
 
   A C expression used to determine whether a load predecrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_PRE_DECREMENT``.
 
-.. macro:: USE_STORE_POST_INCREMENT (mode)
+.. c:macro:: USE_STORE_POST_INCREMENT (mode)
 
   A C expression used to determine whether a store postincrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_POST_INCREMENT``.
 
-.. macro:: USE_STORE_POST_DECREMENT (mode)
+.. c:macro:: USE_STORE_POST_DECREMENT (mode)
 
   A C expression used to determine whether a store postdecrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_POST_DECREMENT``.
 
-.. macro:: USE_STORE_PRE_INCREMENT (mode)
+.. c:macro:: USE_STORE_PRE_INCREMENT (mode)
 
   This macro is used to determine whether a store preincrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_PRE_INCREMENT``.
 
-.. macro:: USE_STORE_PRE_DECREMENT (mode)
+.. c:macro:: USE_STORE_PRE_DECREMENT (mode)
 
   This macro is used to determine whether a store predecrement is a good
   thing to use for a given mode.  Defaults to the value of
   ``HAVE_PRE_DECREMENT``.
 
-.. macro:: NO_FUNCTION_CSE
+.. c:macro:: NO_FUNCTION_CSE
 
   Define this macro to be true if it is as good or better to call a constant
   function address than to call an address kept in a register.
 
-.. macro:: LOGICAL_OP_NON_SHORT_CIRCUIT
+.. c:macro:: LOGICAL_OP_NON_SHORT_CIRCUIT
 
   Define this macro if a non-short-circuit operation produced by
   :samp:`fold_range_test ()` is optimal.  This macro defaults to true if
