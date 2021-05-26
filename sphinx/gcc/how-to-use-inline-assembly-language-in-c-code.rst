@@ -1522,7 +1522,6 @@ the addressing register.
 
 .. include:: ../share/md.rst
 
-    Unsigned constant valid for BccUI instructions
 
 .. Each of the following nodes are wrapped in separate
    "@ifset INTERNALS" to work around memory limits for the default

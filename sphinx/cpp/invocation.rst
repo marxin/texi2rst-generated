@@ -78,7 +78,6 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. include:: ../share/cppopts.rst
 
-  When used from GCC without :option:`-E`, this option has no effect.
 
   .. Copyright (C) 1999-2021 Free Software Foundation, Inc.
 
@@ -105,5 +104,4 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. include:: ../share/cppwarnopts.rst
 
-  This warning is on by default.
 

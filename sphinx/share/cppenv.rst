@@ -72,3 +72,4 @@
 
   The value should be a known timestamp such as the last modification
   time of the source or package and it should be set by the build
+  process.

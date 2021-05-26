@@ -63,3 +63,4 @@
     #endif FOO
 
   The second and third ``FOO`` should be in comments.
+  This warning is on by default.

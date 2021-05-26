@@ -3180,3 +3180,4 @@ the meanings of that architecture's constraints.
     Integer constant valid for BccI instructions
 
   ``L``
+    Unsigned constant valid for BccUI instructions

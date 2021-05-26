@@ -2605,7 +2605,6 @@ warn at all unless optimization is enabled.
 
 .. include:: ../share/cppwarnopts.rst
 
-  This warning is on by default.
 
 .. option:: -Wbad-function-cast , -Wbad-function-cast, -Wno-bad-function-cast
 

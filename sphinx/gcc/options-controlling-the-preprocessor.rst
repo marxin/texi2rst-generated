@@ -32,7 +32,6 @@ Warning Options.
 
 .. include:: ../share/cppopts.rst
 
-  When used from GCC without :option:`-E`, this option has no effect.
 
 .. option:: -Wp,option, -Wp
 

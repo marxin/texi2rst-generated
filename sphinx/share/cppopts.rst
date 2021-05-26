@@ -477,3 +477,4 @@
   token in the output is preceded by the dump of the map its location
   belongs to.
 
+  When used from GCC without :option:`-E`, this option has no effect.

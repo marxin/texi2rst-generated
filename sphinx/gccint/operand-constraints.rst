@@ -35,9 +35,8 @@ the addressing register.
 
 .. include:: ../share/md.rst
 
-    Unsigned constant valid for BccUI instructions
 
-    .. _disable-insn-alternatives:
+.. _disable-insn-alternatives:
 
 Disable insn alternatives using the enabled attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

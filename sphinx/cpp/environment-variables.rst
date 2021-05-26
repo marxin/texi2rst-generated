@@ -26,7 +26,6 @@ configuration of GCC.
 
 .. include:: ../share/cppenv.rst
 
-  process.
 
 .. Special handling for inclusion in the install manual.
 

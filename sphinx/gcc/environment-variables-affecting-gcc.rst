@@ -169,5 +169,4 @@ preprocessor.
 
 .. include:: ../share/cppenv.rst
 
-  process.
 
