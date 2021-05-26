@@ -2,6 +2,7 @@
 
   Add the directory :samp:`{dir}` to the list of directories to be searched
   for header files during preprocessing.
+  See :ref:`search-path`.
   If :samp:`{dir}` begins with :samp:`=` or ``$SYSROOT``, then the :samp:`=`
   or ``$SYSROOT`` is replaced by the sysroot prefix; see
   :option:`--sysroot` and :option:`-isysroot`.
@@ -45,6 +46,7 @@
   The :option:`-isystem` and :option:`-idirafter` options also mark the directory
   as a system directory, so that it gets the same special treatment that
   is applied to the standard system directories.
+  See :ref:`system-headers`.
 
   If a standard system include directory, or a directory specified with
   :option:`-isystem`, is also specified with :option:`-I`, the :option:`-I`
@@ -55,6 +57,7 @@
   changed.
   If you really need to change the search order for system directories,
   use the :option:`-nostdinc` and/or :option:`-isystem` options.
+  See :ref:`system-headers`.
 
 .. option:: -I-
 
@@ -73,6 +76,7 @@
   In addition, :option:`-I-` inhibits the use of the directory of the current
   file directory as the first search directory for ``#include
   "file"``.  There is no way to override this effect of :option:`-I-`.
+  See :ref:`search-path`.
 
 .. option:: -iprefix prefix, -iprefix
 

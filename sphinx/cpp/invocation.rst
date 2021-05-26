@@ -569,7 +569,7 @@ options may *not* be grouped: :option:`-dM` is very different from
      If this file is included with the flag ``cppmanual'' set, it is
      formatted for inclusion in the CPP manual; otherwise the main GCC manual.
 
-.. include:: ../share/cppdiropts.texi
+.. include:: ../share/cppdiropts.rst
 
   .. Copyright (C) 1999-2021 Free Software Foundation, Inc.
      This is part of the CPP and GCC manuals.

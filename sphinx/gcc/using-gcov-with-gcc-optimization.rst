@@ -61,13 +61,15 @@ same source lines, the line counts themselves might seem inconsistent.
 
 Long-running applications can use the ``__gcov_reset`` and ``__gcov_dump``
 facilities to restrict profile collection to the program region of
-interest. Calling ``__gcov_reset(void)`` will clear all profile counters
-to zero, and calling ``__gcov_dump(void)`` will cause the profile information
-collected at that point to be dumped to .gcda output files.
+interest. Calling ``__gcov_reset(void)`` will clear all run-time profile
+counters to zero, and calling ``__gcov_dump(void)`` will cause the profile
+information collected at that point to be dumped to .gcda output files
+(the function can be called just once).
 Instrumented applications use a static destructor with priority 99
 to invoke the ``__gcov_dump`` function. Thus ``__gcov_dump``
 is executed after all user defined static destructors,
 as well as handlers registered with ``atexit``.
+
 If an executable loads a dynamic shared object via dlopen functionality,
 :option:`-Wl,--dynamic-list-data` is needed to dump all profile data.
 
