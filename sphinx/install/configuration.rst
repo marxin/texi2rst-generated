@@ -105,19 +105,64 @@ section to make clear that your version contains modifications.
 
   The default value is `https://gcc.gnu.org/ <https://gcc.gnu.org/>`_.
 
-Target specification
-====================
+Host, Build and Target specification
+====================================
 
-* GCC has code to correctly determine the correct value for :samp:`{target}`
-  for nearly all native systems.  Therefore, we highly recommend you do
-  not provide a configure target when configuring a native compiler.
+Specify the host, build and target machine configurations.  You do this
+when you run the configure script.
 
-* :samp:`{target}` must be specified as :option:`--target`:samp:`={target}`
-  when configuring a cross compiler; examples of valid targets would be
-  m68k-elf, sh-elf, etc.
+The :dfn:`build` machine is the system which you are using, the
+:dfn:`host` machine is the system where you want to run the resulting
+compiler (normally the build machine), and the :dfn:`target` machine is
+the system for which you want the compiler to generate code.
 
-* Specifying just :samp:`{target}` instead of :option:`--target`:samp:`={target}`
-  implies that the host defaults to :samp:`{target}`.
+If you are building a compiler to produce code for the machine it runs
+on (a native compiler), you normally do not need to specify any operands
+to configure; it will try to guess the type of machine you are on
+and use that as the build, host and target machines.  So you don't need
+to specify a configuration when building a native compiler unless
+configure cannot figure out what your configuration is or guesses
+wrong.
+
+In those cases, specify the build machine's :dfn:`configuration name`
+with the :option:`--host` option; the host and target will default to be
+the same as the host machine.
+
+Here is an example:
+
+.. code-block:: bash
+
+  ./configure --host=x86_64-pc-linux-gnu
+
+A configuration name may be canonical or it may be more or less
+abbreviated (config.sub script produces canonical versions).
+
+A canonical configuration name has three parts, separated by dashes.
+It looks like this: :samp:`{cpu}-{company}-{system}`.
+
+Here are the possible CPU types:
+
+aarch64, aarch64_be, alpha, alpha64, amdgcn, arc, arceb, arm, armeb, avr, bfin,
+bpf, cr16, cris, csky, epiphany, fido, fr30, frv, ft32, h8300, hppa, hppa2.0,
+hppa64, i486, i686, ia64, iq2000, lm32, m32c, m32r, m32rle, m68k, mcore,
+microblaze, microblazeel, mips, mips64, mips64el, mips64octeon, mips64orion,
+mips64vr, mipsel, mipsisa32, mipsisa32r2, mipsisa64, mipsisa64r2,
+mipsisa64r2el, mipsisa64sb1, mipsisa64sr71k, mipstx39, mmix, mn10300, moxie,
+msp430, nds32be, nds32le, nios2, nvptx, or1k, pdp11, powerpc, powerpc64,
+powerpc64le, powerpcle, pru, riscv32, riscv32be, riscv64, riscv64be, rl78, rx,
+s390, s390x, sh, shle, sparc, sparc64, tic6x, tilegx, tilegxbe, tilepro, v850,
+v850e, v850e1, vax, visium, x86_64, xstormy16, xtensa
+
+Here is a list of system types:
+
+aix :samp:`{version}`, amdhsa, aout, cygwin, darwin :samp:`{version}`,
+eabi, eabialtivec, eabisim, eabisimaltivec, elf, elf32,
+elfbare, elfoabi, freebsd :samp:`{version}`, gnu, hpux, hpux :samp:`{version}`,
+kfreebsd-gnu, kopensolaris-gnu, linux-androideabi, linux-gnu,
+linux-gnu_altivec, linux-musl, linux-uclibc, lynxos, mingw32, mingw32crt,
+mmixware, msdosdjgpp, netbsd, netbsdelf :samp:`{version}`, nto-qnx, openbsd,
+rtems, solaris :samp:`{version}`, symbianelf, tpf, uclinux, uclinux_eabi, vms,
+vxworks, vxworksae, vxworksmils
 
 Options specification
 =====================

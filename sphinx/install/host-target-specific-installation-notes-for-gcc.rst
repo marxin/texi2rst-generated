@@ -1336,8 +1336,7 @@ C++ support is significantly better on ELF targets if you use the
 inlines, vtables and template instantiations will be discarded
 automatically.
 
-.. ***Old documentation******************************************************
-   Copyright (C) 1988-2021 Free Software Foundation, Inc.
-   This is part of the GCC manual.
-   For copying conditions, see the file install.texi.
+.. ***GFDL********************************************************************
+
+.. Special handling for inclusion in the install manual.
 

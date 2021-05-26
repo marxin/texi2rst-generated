@@ -21,7 +21,7 @@ libraries and for parts of the compiler:
    If this file is included with the flag ``cppmanual'' set, it is
    formatted for inclusion in the CPP manual; otherwise the main GCC manual.
 
-.. include:: ../share/cppdiropts.texi
+.. include:: ../share/cppdiropts.rst
 
 .. option:: -iplugindir=dir
 

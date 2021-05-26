@@ -57,7 +57,5 @@ Introduction
   final-installation
   binaries
   host-target-specific-installation-notes-for-gcc
-  old-installation-documentation
 
-.. _old:
 .. _gnu-free-documentation-license:
