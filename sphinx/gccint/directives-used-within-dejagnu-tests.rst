@@ -740,6 +740,12 @@ Vector-specific attributes
 ``vect_variable_length``
   Target has variable-length vectors.
 
+``vect64``
+  Target supports vectors of 64 bits.
+
+``vect32``
+  Target supports vectors of 32 bits.
+
 ``vect_widen_sum_hi_to_si``
   Target supports a vector widening summation of ``short`` operands
   into ``int`` results, or can promote (unpack) from ``short``

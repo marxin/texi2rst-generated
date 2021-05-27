@@ -439,8 +439,9 @@ The following type attributes are supported on most targets.
   from or to the array.
 
   Moreover, the use of type punning or aliasing to toggle the storage order
-  is not supported; that is to say, a given scalar object cannot be accessed
-  through distinct types that assign a different storage order to it.
+  is not supported; that is to say, if a given scalar object can be accessed
+  through distinct types that assign a different storage order to it, then the
+  behavior is undefined.
 
 .. option:: transparent_union
 
