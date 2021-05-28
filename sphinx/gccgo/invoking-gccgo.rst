@@ -3,19 +3,20 @@
 Invoking gccgo
 --------------
 
-@c man begin SYNOPSIS gccgo
-gccgo [@option{-c}|@option{-S}]
-      [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
-      [@option{-I}@var{dir}...] [@option{-L}@var{dir}...]
-      [@option{-o} @var{outfile}] @var{infile}...
+Synopsis
+^^^^^^^^
+
+gccgo [ :option:`-c` | :option:`-S` ]
+      [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
+      [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+      [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
+
+Description
+^^^^^^^^^^^
 
 Only the most useful options are listed here; see below for the
 remainder.
-@c man end
-@c man begin SEEALSO
-gpl(7), gfdl(7), fsf-funding(7), gcc(1)
-and the Info entries for @file{gccgo} and @file{gcc}.
-@c man end
+
 The :command:`gccgo` command is a frontend to :command:`gcc` and
 supports many of the same options.  See :ref:`Option
 Summary <option-summary>`.  This manual
@@ -40,6 +41,9 @@ the link command.
 Go programs must generally be compiled with debugging information, and
 :option:`-g1` is the default as described below.  Stripping a Go
 program will generally cause it to misbehave or fail.
+
+Options
+^^^^^^^
 
 :samp:`-I{dir}`
 
