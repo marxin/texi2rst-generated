@@ -35,27 +35,3 @@ You must move the data files to the expected directory tree in order to
 use them for profile directed optimizations ( :option:`-fprofile-use` ), or to
 use the :command:`gcov` tool.
 
-@c man begin COPYRIGHT
-Copyright @copyright{} 2014-2021 Free Software Foundation, Inc.
-
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3 or
-any later version published by the Free Software Foundation; with the
-Invariant Sections being ``GNU General Public License'' and ``Funding
-Free Software'', the Front-Cover texts being (a) (see below), and with
-the Back-Cover Texts being (b) (see below).  A copy of the license is
-included in the gfdl(7) man page.
-
-(a) The FSF's Front-Cover Text is:
-
-     A GNU Manual
-
-(b) The FSF's Back-Cover Text is:
-
-     You have freedom to copy and modify this GNU Manual, like GNU
-     software.  Copies published by the Free Software Foundation raise
-     funds for GNU development.
-@c man end
-@c Set file name and title for the man page.
-@setfilename gcov-tool
-@settitle offline gcda profile processing tool

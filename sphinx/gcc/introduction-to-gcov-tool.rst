@@ -3,6 +3,9 @@
 Introduction to gcov-tool
 *************************
 
+Description
+^^^^^^^^^^^
+
 :command:`gcov-tool` is an offline tool to process gcc's gcda profile files.
 
 Current gcov-tool supports the following functionalities:

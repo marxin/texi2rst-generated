@@ -9,33 +9,32 @@ Invoking gcov-tool
 
 :command:`gcov-tool` accepts the following options:
 
-@c man begin SYNOPSIS
-gcov-tool [@option{-v}|@option{--version}] [@option{-h}|@option{--help}]
+Synopsis
+^^^^^^^^
 
-gcov-tool merge [merge-options] @var{directory1} @var{directory2}
-     [@option{-o}|@option{--output} @var{directory}]
-     [@option{-v}|@option{--verbose}]
-     [@option{-w}|@option{--weight} @var{w1,w2}]
+gcov-tool [ :option:`-v` | :option:`--version` ] [ :option:`-h` | :option:`--help` ]
 
-gcov-tool rewrite [rewrite-options] @var{directory}
-     [@option{-n}|@option{--normalize} @var{long_long_value}]
-     [@option{-o}|@option{--output} @var{directory}]
-     [@option{-s}|@option{--scale} @var{float_or_simple-frac_value}]
-     [@option{-v}|@option{--verbose}]
+gcov-tool merge [merge-options] :samp:`{directory1}` :samp:`{directory2}`
+     [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
+     [ :option:`-v` | :option:`--verbose` ]
+     [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
 
-gcov-tool overlap [overlap-options] @var{directory1} @var{directory2}
-     [@option{-f}|@option{--function}]
-     [@option{-F}|@option{--fullname}]
-     [@option{-h}|@option{--hotonly}]
-     [@option{-o}|@option{--object}]
-     [@option{-t}|@option{--hot_threshold}] @var{float}
-     [@option{-v}|@option{--verbose}]
+gcov-tool rewrite [rewrite-options] :samp:`{directory}`
+     [ :option:`-n` | :option:`--normalize` :samp:`{long_long_value}` ]
+     [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
+     [ :option:`-s` | :option:`--scale` :samp:`{float_or_simple-frac_value}` ]
+     [ :option:`-v` | :option:`--verbose` ]
 
-@c man end
-@c man begin SEEALSO
-gpl(7), gfdl(7), fsf-funding(7), gcc(1), gcov(1) and the Info entry for
-@file{gcc}.
-@c man end
+gcov-tool overlap [overlap-options] :samp:`{directory1}` :samp:`{directory2}`
+     [ :option:`-f` | :option:`--function` ]
+     [ :option:`-F` | :option:`--fullname` ]
+     [ :option:`-h` | :option:`--hotonly` ]
+     [ :option:`-o` | :option:`--object` ]
+     [ :option:`-t` | :option:`--hot_threshold` ] :samp:`{float}`
+     [ :option:`-v` | :option:`--verbose` ]
+
+Options
+^^^^^^^
 
 ``-h`` ``--help``
   Display help about using :command:`gcov-tool` (on the standard output), and
