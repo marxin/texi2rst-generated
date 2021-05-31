@@ -296,27 +296,27 @@ Intrinsic Procedures
   intrinsic-procedures/abort-abort-the-program
   intrinsic-procedures/abs-absolute-value
   intrinsic-procedures/access-checks-file-access-modes
-  intrinsic-procedures/achar-character-in-ascii-collating-sequence-
-  intrinsic-procedures/acos-arccosine-function-
+  intrinsic-procedures/achar-character-in-ascii-collating-sequence
+  intrinsic-procedures/acos-arccosine-function
   intrinsic-procedures/acosd-arccosine-function-degrees
   intrinsic-procedures/acosh-inverse-hyperbolic-cosine-function
-  intrinsic-procedures/adjustl-left-adjust-a-string-
-  intrinsic-procedures/adjustr-right-adjust-a-string-
-  intrinsic-procedures/aimag-imaginary-part-of-complex-number-
+  intrinsic-procedures/adjustl-left-adjust-a-string
+  intrinsic-procedures/adjustr-right-adjust-a-string
+  intrinsic-procedures/aimag-imaginary-part-of-complex-number
   intrinsic-procedures/aint-truncate-to-a-whole-number
   intrinsic-procedures/alarm-execute-a-routine-after-a-given-delay
-  intrinsic-procedures/all-all-values-in-mask-along-dim-are-true-
+  intrinsic-procedures/all-all-values-in-mask-along-dim-are-true
   intrinsic-procedures/allocated-status-of-an-allocatable-entity
   intrinsic-procedures/and-bitwise-logical-and
   intrinsic-procedures/anint-nearest-whole-number
-  intrinsic-procedures/any-any-value-in-mask-along-dim-is-true-
-  intrinsic-procedures/asin-arcsine-function-
+  intrinsic-procedures/any-any-value-in-mask-along-dim-is-true
+  intrinsic-procedures/asin-arcsine-function
   intrinsic-procedures/asind-arcsine-function-degrees
   intrinsic-procedures/asinh-inverse-hyperbolic-sine-function
-  intrinsic-procedures/associated-status-of-a-pointer-or-pointer-target-pair-
-  intrinsic-procedures/atan-arctangent-function-
+  intrinsic-procedures/associated-status-of-a-pointer-or-pointer-target-pair
+  intrinsic-procedures/atan-arctangent-function
   intrinsic-procedures/atand-arctangent-function-degrees
-  intrinsic-procedures/atan2-arctangent-function-
+  intrinsic-procedures/atan2-arctangent-function
   intrinsic-procedures/atan2d-arctangent-function-degrees
   intrinsic-procedures/atanh-inverse-hyperbolic-tangent-function
   intrinsic-procedures/atomicadd-atomic-add-operation
@@ -386,24 +386,24 @@ Intrinsic Procedures
   intrinsic-procedures/dtime-execution-time-subroutine-or-function
   intrinsic-procedures/eoshift-end-off-shift-elements-of-an-array
   intrinsic-procedures/epsilon-epsilon-function
-  intrinsic-procedures/erf-error-function-
-  intrinsic-procedures/erfc-error-function-
-  intrinsic-procedures/erfcscaled-error-function-
+  intrinsic-procedures/erf-error-function
+  intrinsic-procedures/erfc-error-function
+  intrinsic-procedures/erfcscaled-error-function
   intrinsic-procedures/etime-execution-time-subroutine-or-function
   intrinsic-procedures/eventquery-query-whether-a-coarray-event-has-occurred
   intrinsic-procedures/executecommandline-execute-a-shell-command
-  intrinsic-procedures/exit-exit-the-program-with-status-
-  intrinsic-procedures/exp-exponential-function-
-  intrinsic-procedures/exponent-exponent-function-
+  intrinsic-procedures/exit-exit-the-program-with-status
+  intrinsic-procedures/exp-exponential-function
+  intrinsic-procedures/exponent-exponent-function
   intrinsic-procedures/extendstypeof-query-dynamic-type-for-extension
   intrinsic-procedures/fdate-get-the-current-time-as-a-string
-  intrinsic-procedures/fget-read-a-single-character-in-stream-mode-from-stdin-
+  intrinsic-procedures/fget-read-a-single-character-in-stream-mode-from-stdin
   intrinsic-procedures/fgetc-read-a-single-character-in-stream-mode
   intrinsic-procedures/findloc-search-an-array-for-a-value
   intrinsic-procedures/floor-integer-floor-function
   intrinsic-procedures/flush-flush-i-o-units
   intrinsic-procedures/fnum-file-number-function
-  intrinsic-procedures/fput-write-a-single-character-in-stream-mode-to-stdout-
+  intrinsic-procedures/fput-write-a-single-character-in-stream-mode-to-stdout
   intrinsic-procedures/fputc-write-a-single-character-in-stream-mode
   intrinsic-procedures/fraction-fractional-part-of-the-model-representation
   intrinsic-procedures/free-frees-memory
@@ -426,7 +426,7 @@ Intrinsic Procedures
   intrinsic-procedures/hostnm-get-system-host-name
   intrinsic-procedures/huge-largest-number-of-a-kind
   intrinsic-procedures/hypot-euclidean-distance-function
-  intrinsic-procedures/iachar-code-in-ascii-collating-sequence-
+  intrinsic-procedures/iachar-code-in-ascii-collating-sequence
   intrinsic-procedures/iall-bitwise-and-of-array-elements
   intrinsic-procedures/iand-bitwise-logical-and
   intrinsic-procedures/iany-bitwise-or-of-array-elements
@@ -435,7 +435,7 @@ Intrinsic Procedures
   intrinsic-procedures/ibits-bit-extraction
   intrinsic-procedures/ibset-set-bit
   intrinsic-procedures/ichar-character-to-integer-conversion-function
-  intrinsic-procedures/idate-get-current-local-time-subroutine-day-month-year-
+  intrinsic-procedures/idate-get-current-local-time-subroutine-day-month-year
   intrinsic-procedures/ieor-bitwise-logical-exclusive-or
   intrinsic-procedures/ierrno-get-the-last-system-error-number
   intrinsic-procedures/imageindex-function-that-converts-a-cosubscript-to-an-image-index
@@ -453,7 +453,7 @@ Intrinsic Procedures
   intrinsic-procedures/ishft-shift-bits
   intrinsic-procedures/ishftc-shift-bits-circularly
   intrinsic-procedures/isnan-test-for-a-nan
-  intrinsic-procedures/itime-get-current-local-time-subroutine-hour-minutes-seconds-
+  intrinsic-procedures/itime-get-current-local-time-subroutine-hour-minutes-seconds
   intrinsic-procedures/kill-send-a-signal-to-a-process
   intrinsic-procedures/kind-kind-of-an-entity
   intrinsic-procedures/lbound-lower-dimension-bounds-of-an-array
@@ -520,9 +520,9 @@ Intrinsic Procedures
   intrinsic-procedures/randomseed-initialize-a-pseudo-random-number-sequence
   intrinsic-procedures/range-decimal-exponent-range
   intrinsic-procedures/rank-rank-of-a-data-object
-  intrinsic-procedures/real-convert-to-real-type-
+  intrinsic-procedures/real-convert-to-real-type
   intrinsic-procedures/rename-rename-a-file
-  intrinsic-procedures/repeat-repeated-string-concatenation-
+  intrinsic-procedures/repeat-repeated-string-concatenation
   intrinsic-procedures/reshape-function-to-reshape-an-array
   intrinsic-procedures/rrspacing-reciprocal-of-the-relative-spacing
   intrinsic-procedures/rshift-right-shift-bits
@@ -541,9 +541,9 @@ Intrinsic Procedures
   intrinsic-procedures/shiftr-right-shift
   intrinsic-procedures/sign-sign-copying-function
   intrinsic-procedures/signal-signal-handling-subroutine-or-function
-  intrinsic-procedures/sin-sine-function-
+  intrinsic-procedures/sin-sine-function
   intrinsic-procedures/sind-sine-function-degrees
-  intrinsic-procedures/sinh-hyperbolic-sine-function-
+  intrinsic-procedures/sinh-hyperbolic-sine-function
   intrinsic-procedures/size-determine-the-size-of-an-array
   intrinsic-procedures/sizeof-size-in-bytes-of-an-expression
   intrinsic-procedures/sleep-sleep-for-the-specified-number-of-seconds
@@ -559,7 +559,7 @@ Intrinsic Procedures
   intrinsic-procedures/systemclock-time-function
   intrinsic-procedures/tan-tangent-function
   intrinsic-procedures/tand-tangent-function-degrees
-  intrinsic-procedures/tanh-hyperbolic-tangent-function-
+  intrinsic-procedures/tanh-hyperbolic-tangent-function
   intrinsic-procedures/thisimage-function-that-returns-the-cosubscript-index-of-this-image
   intrinsic-procedures/time-time-function
   intrinsic-procedures/time8-time-function-64-bit

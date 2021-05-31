@@ -72,7 +72,7 @@ through the macros defined in the .h file.
   target-description-macros-and-functions/condition-code-status
   target-description-macros-and-functions/describing-relative-costs-of-operations
   target-description-macros-and-functions/adjusting-the-instruction-scheduler
-  target-description-macros-and-functions/dividing-the-output-into-sections-texts-data-
+  target-description-macros-and-functions/dividing-the-output-into-sections-texts-data
   target-description-macros-and-functions/position-independent-code
   target-description-macros-and-functions/defining-the-output-assembler-language
   target-description-macros-and-functions/controlling-debugging-information-format

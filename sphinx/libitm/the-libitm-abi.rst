@@ -18,6 +18,6 @@ look-up, the following subsections mirror the structure of this specification.
   the-libitm-abi/types-and-macros-list
   the-libitm-abi/function-list
   the-libitm-abi/future-enhancements-to-the-abi
-  the-libitm-abi/sample-code-
+  the-libitm-abi/sample-code
   the-libitm-abi/memory-model
 
