@@ -9,20 +9,20 @@ presented by libgomp.  Only maintainers should need them.
 .. toctree::
   :maxdepth: 2
 
-  implementing-master-construct
-  implementing-critical-construct
-  implementing-atomic-construct
-  implementing-flush-construct
-  implementing-barrier-construct
-  implementing-threadprivate-construct
-  implementing-private-clause
-  implementing-firstprivate-lastprivate-copyin-and-copyprivate-clauses
-  implementing-reduction-clause
-  implementing-parallel-construct
-  implementing-for-construct
-  implementing-ordered-construct
-  implementing-sections-construct
-  implementing-single-construct
-  implementing-openacc's-parallel-construct
-  implementing-openaccs-parallel-construct
+  the-libgomp-abi/implementing-master-construct
+  the-libgomp-abi/implementing-critical-construct
+  the-libgomp-abi/implementing-atomic-construct
+  the-libgomp-abi/implementing-flush-construct
+  the-libgomp-abi/implementing-barrier-construct
+  the-libgomp-abi/implementing-threadprivate-construct
+  the-libgomp-abi/implementing-private-clause
+  the-libgomp-abi/implementing-firstprivate-lastprivate-copyin-and-copyprivate-clauses
+  the-libgomp-abi/implementing-reduction-clause
+  the-libgomp-abi/implementing-parallel-construct
+  the-libgomp-abi/implementing-for-construct
+  the-libgomp-abi/implementing-ordered-construct
+  the-libgomp-abi/implementing-sections-construct
+  the-libgomp-abi/implementing-single-construct
+  the-libgomp-abi/implementing-openacc's-parallel-construct
+  the-libgomp-abi/implementing-openaccs-parallel-construct
 

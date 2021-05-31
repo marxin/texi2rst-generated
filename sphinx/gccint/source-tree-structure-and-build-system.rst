@@ -11,10 +11,10 @@ which it is presumed that you are familiar.
 .. toctree::
   :maxdepth: 2
 
-  configure-terms
-  top-level
-  gcc-directory
-  configure-terms-and-history
-  top-level-source-directory
-  the-gcc-subdirectory
+  source-tree-structure-and-build-system/configure-terms
+  source-tree-structure-and-build-system/top-level
+  source-tree-structure-and-build-system/gcc-directory
+  source-tree-structure-and-build-system/configure-terms-and-history
+  source-tree-structure-and-build-system/top-level-source-directory
+  source-tree-structure-and-build-system/the-gcc-subdirectory
 

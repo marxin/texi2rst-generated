@@ -12,16 +12,16 @@ variable analysis and number of iterations analysis).
 .. toctree::
   :maxdepth: 2
 
-  loop-representation
-  loop-querying
-  loop-manipulation
-  lcssa
-  scalar-evolutions
-  loop-iv
-  number-of-iterations
-  dependency-analysis
-  loop-closed-ssa-form
-  iv-analysis-on-rtl
-  number-of-iterations-analysis
-  data-dependency-analysis
+  analysis-and-representation-of-loops/loop-representation
+  analysis-and-representation-of-loops/loop-querying
+  analysis-and-representation-of-loops/loop-manipulation
+  analysis-and-representation-of-loops/lcssa
+  analysis-and-representation-of-loops/scalar-evolutions
+  analysis-and-representation-of-loops/loop-iv
+  analysis-and-representation-of-loops/number-of-iterations
+  analysis-and-representation-of-loops/dependency-analysis
+  analysis-and-representation-of-loops/loop-closed-ssa-form
+  analysis-and-representation-of-loops/iv-analysis-on-rtl
+  analysis-and-representation-of-loops/number-of-iterations-analysis
+  analysis-and-representation-of-loops/data-dependency-analysis
 

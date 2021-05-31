@@ -19,12 +19,12 @@ where near complete.
 .. toctree::
   :maxdepth: 2
 
-  parsing-pass
-  gimplification-pass
-  pass-manager
-  ipa-passes
-  tree-ssa-passes
-  rtl-passes
-  optimization-info
-  inter-procedural-optimization-passes
+  passes-and-files-of-the-compiler/parsing-pass
+  passes-and-files-of-the-compiler/gimplification-pass
+  passes-and-files-of-the-compiler/pass-manager
+  passes-and-files-of-the-compiler/ipa-passes
+  passes-and-files-of-the-compiler/tree-ssa-passes
+  passes-and-files-of-the-compiler/rtl-passes
+  passes-and-files-of-the-compiler/optimization-info
+  passes-and-files-of-the-compiler/inter-procedural-optimization-passes
 

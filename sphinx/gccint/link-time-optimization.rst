@@ -22,14 +22,14 @@ that is visible at link time).
 .. toctree::
   :maxdepth: 2
 
-  lto-overview
-  lto-object-file-layout
-  ipa
-  whopr
-  internal-flags
-  design-overview
-  lto-file-sections
-  using-summary-information-in-ipa-passes
-  whole-program-assumptions-linker-plugin-and-symbol-visibilities
-  internal-flags-controlling-lto1
+  link-time-optimization/lto-overview
+  link-time-optimization/lto-object-file-layout
+  link-time-optimization/ipa
+  link-time-optimization/whopr
+  link-time-optimization/internal-flags
+  link-time-optimization/design-overview
+  link-time-optimization/lto-file-sections
+  link-time-optimization/using-summary-information-in-ipa-passes
+  link-time-optimization/whole-program-assumptions-linker-plugin-and-symbol-visibilities
+  link-time-optimization/internal-flags-controlling-lto1
 

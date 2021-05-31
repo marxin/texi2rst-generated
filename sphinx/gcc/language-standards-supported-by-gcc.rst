@@ -10,10 +10,10 @@ with some exceptions, and possibly with some extensions.
 .. toctree::
   :maxdepth: 2
 
-  c-language
-  c++-language
-  objective-c-and-objective-c++-languages
-  go-language
-  d-language
-  references-for-other-languages
+  language-standards-supported-by-gcc/c-language
+  language-standards-supported-by-gcc/c++-language
+  language-standards-supported-by-gcc/objective-c-and-objective-c++-languages
+  language-standards-supported-by-gcc/go-language
+  language-standards-supported-by-gcc/d-language
+  language-standards-supported-by-gcc/references-for-other-languages
 

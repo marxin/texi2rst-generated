@@ -6,12 +6,12 @@ Non-Fortran Main Program
 .. toctree::
   :maxdepth: 2
 
-  _gfortran_set_args
-  _gfortran_set_options
-  _gfortran_set_convert
-  _gfortran_set_record_marker
-  _gfortran_set_fpe
-  _gfortran_set_max_subrecord_length
+  non-fortran-main-program/_gfortran_set_args
+  non-fortran-main-program/_gfortran_set_options
+  non-fortran-main-program/_gfortran_set_convert
+  non-fortran-main-program/_gfortran_set_record_marker
+  non-fortran-main-program/_gfortran_set_fpe
+  non-fortran-main-program/_gfortran_set_max_subrecord_length
 
 Even if you are doing mixed-language programming, it is very
 likely that you do not need to know or use the information in this

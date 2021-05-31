@@ -20,14 +20,14 @@ macros when you are compiling C++.
 .. toctree::
   :maxdepth: 2
 
-  object-like-macros
-  function-like-macros
-  macro-arguments
-  stringizing
-  concatenation
-  variadic-macros
-  predefined-macros
-  undefining-and-redefining-macros
-  directives-within-macro-arguments
-  macro-pitfalls
+  macros/object-like-macros
+  macros/function-like-macros
+  macros/macro-arguments
+  macros/stringizing
+  macros/concatenation
+  macros/variadic-macros
+  macros/predefined-macros
+  macros/undefining-and-redefining-macros
+  macros/directives-within-macro-arguments
+  macros/macro-pitfalls
 

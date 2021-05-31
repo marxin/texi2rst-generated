@@ -42,12 +42,12 @@ underscores in header file names, and at most one dot.
 .. toctree::
   :maxdepth: 2
 
-  include-syntax
-  include-operation
-  search-path
-  once-only-headers
-  alternatives-to-wrapper-#ifndef
-  computed-includes
-  wrapper-headers
-  system-headers
+  header-files/include-syntax
+  header-files/include-operation
+  header-files/search-path
+  header-files/once-only-headers
+  header-files/alternatives-to-wrapper-#ifndef
+  header-files/computed-includes
+  header-files/wrapper-headers
+  header-files/system-headers
 

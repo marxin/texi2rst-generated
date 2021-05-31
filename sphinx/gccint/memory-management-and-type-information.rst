@@ -83,18 +83,18 @@ data members.
 .. toctree::
   :maxdepth: 2
 
-  gty-options
-  inheritance-and-gty
-  user-gc
-  ggc-roots
-  files
-  invoking-the-garbage-collector
-  troubleshooting
-  the-inside-of-a-gty
-  support-for-inheritance
-  support-for-user-provided-gc-marking-routines
-  marking-roots-for-the-garbage-collector
-  source-files-containing-type-information
-  how-to-invoke-the-garbage-collector
-  troubleshooting-the-garbage-collector
+  memory-management-and-type-information/gty-options
+  memory-management-and-type-information/inheritance-and-gty
+  memory-management-and-type-information/user-gc
+  memory-management-and-type-information/ggc-roots
+  memory-management-and-type-information/files
+  memory-management-and-type-information/invoking-the-garbage-collector
+  memory-management-and-type-information/troubleshooting
+  memory-management-and-type-information/the-inside-of-a-gty
+  memory-management-and-type-information/support-for-inheritance
+  memory-management-and-type-information/support-for-user-provided-gc-marking-routines
+  memory-management-and-type-information/marking-roots-for-the-garbage-collector
+  memory-management-and-type-information/source-files-containing-type-information
+  memory-management-and-type-information/how-to-invoke-the-garbage-collector
+  memory-management-and-type-information/troubleshooting-the-garbage-collector
 

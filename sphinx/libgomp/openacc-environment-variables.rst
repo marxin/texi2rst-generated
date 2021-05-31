@@ -12,12 +12,12 @@ The variable :envvar:`GCC_ACC_NOTIFY` is used for diagnostic purposes.
 .. toctree::
   :maxdepth: 2
 
-  acc_device_type
-  acc_device_num
-  acc_proflib
-  gcc_acc_notify
-  accdevicetype
-  accdevicenum
-  accproflib
-  gccaccnotify
+  openacc-environment-variables/acc_device_type
+  openacc-environment-variables/acc_device_num
+  openacc-environment-variables/acc_proflib
+  openacc-environment-variables/gcc_acc_notify
+  openacc-environment-variables/accdevicetype
+  openacc-environment-variables/accdevicenum
+  openacc-environment-variables/accproflib
+  openacc-environment-variables/gccaccnotify
 

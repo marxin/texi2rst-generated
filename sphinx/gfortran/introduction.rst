@@ -13,12 +13,12 @@ or alternative to, the Unix :command:`f95` command;
 .. toctree::
   :maxdepth: 2
 
-  about-gnu-fortran
-  gnu-fortran-and-gcc
-  preprocessing-and-conditional-compilation
-  gnu-fortran-and-g77
-  project-status
-  standards
+  introduction/about-gnu-fortran
+  introduction/gnu-fortran-and-gcc
+  introduction/preprocessing-and-conditional-compilation
+  introduction/gnu-fortran-and-g77
+  introduction/project-status
+  introduction/standards
 
 .. -
    About GNU Fortran

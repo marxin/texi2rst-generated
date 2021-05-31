@@ -8,13 +8,13 @@ Intrinsic Modules
 .. toctree::
   :maxdepth: 2
 
-  iso_fortran_env
-  iso_c_binding
-  ieee-modules
-  openmp-modules-omp_lib-and-omp_lib_kinds
-  openacc-module-openacc
-  isofortranenv
-  isocbinding
-  ieee-modules-ieeeexceptions-ieeearithmetic-and-ieeefeatures
-  openmp-modules-omplib-and-omplibkinds
+  intrinsic-modules/iso_fortran_env
+  intrinsic-modules/iso_c_binding
+  intrinsic-modules/ieee-modules
+  intrinsic-modules/openmp-modules-omp_lib-and-omp_lib_kinds
+  intrinsic-modules/openacc-module-openacc
+  intrinsic-modules/isofortranenv
+  intrinsic-modules/isocbinding
+  intrinsic-modules/ieee-modules-ieeeexceptions-ieeearithmetic-and-ieeefeatures
+  intrinsic-modules/openmp-modules-omplib-and-omplibkinds
 

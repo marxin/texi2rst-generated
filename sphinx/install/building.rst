@@ -53,9 +53,9 @@ documentation pre-built for the unmodified documentation in the release.
 .. toctree::
   :maxdepth: 2
 
-  building-a-native-compiler
-  building-a-cross-compiler
-  building-in-parallel
-  building-the-ada-compiler
-  building-with-profile-feedback
+  building/building-a-native-compiler
+  building/building-a-cross-compiler
+  building/building-in-parallel
+  building/building-the-ada-compiler
+  building/building-with-profile-feedback
 

@@ -11,16 +11,16 @@ directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
 .. toctree::
   :maxdepth: 2
 
-  ifdef
-  if
-  defined
-  else
-  elif
-  __has_attribute
-  __has_cpp_attribute
-  __has_c_attribute
-  __has_builtin
-  __has_include
+  conditional-syntax/ifdef
+  conditional-syntax/if
+  conditional-syntax/defined
+  conditional-syntax/else
+  conditional-syntax/elif
+  conditional-syntax/__has_attribute
+  conditional-syntax/__has_cpp_attribute
+  conditional-syntax/__has_c_attribute
+  conditional-syntax/__has_builtin
+  conditional-syntax/__has_include
 
 .. _ifdef:
 

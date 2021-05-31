@@ -30,19 +30,19 @@ seems inelegant.
 .. toctree::
   :maxdepth: 2
 
-  deficiencies
-  tree-overview
-  types
-  declarations
-  attributes
-  expression-trees
-  statements
-  functions
-  language-dependent-trees
-  c-and-c++-trees
-  overview
-  attributes-in-trees
-  expressions
+  generic/deficiencies
+  generic/tree-overview
+  generic/types
+  generic/declarations
+  generic/attributes
+  generic/expression-trees
+  generic/statements
+  generic/functions
+  generic/language-dependent-trees
+  generic/c-and-c++-trees
+  generic/overview
+  generic/attributes-in-trees
+  generic/expressions
 
 .. -
    Deficiencies

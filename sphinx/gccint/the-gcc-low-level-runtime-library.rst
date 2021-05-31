@@ -36,16 +36,16 @@ and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
 .. toctree::
   :maxdepth: 2
 
-  integer-library-routines
-  soft-float-library-routines
-  decimal-float-library-routines
-  fixed-point-fractional-library-routines
-  exception-handling-routines
-  miscellaneous-routines
-  routines-for-integer-arithmetic
-  routines-for-floating-point-emulation
-  routines-for-decimal-floating-point-emulation
-  routines-for-fixed-point-fractional-emulation
-  language-independent-routines-for-exception-handling
-  miscellaneous-runtime-library-routines
+  the-gcc-low-level-runtime-library/integer-library-routines
+  the-gcc-low-level-runtime-library/soft-float-library-routines
+  the-gcc-low-level-runtime-library/decimal-float-library-routines
+  the-gcc-low-level-runtime-library/fixed-point-fractional-library-routines
+  the-gcc-low-level-runtime-library/exception-handling-routines
+  the-gcc-low-level-runtime-library/miscellaneous-routines
+  the-gcc-low-level-runtime-library/routines-for-integer-arithmetic
+  the-gcc-low-level-runtime-library/routines-for-floating-point-emulation
+  the-gcc-low-level-runtime-library/routines-for-decimal-floating-point-emulation
+  the-gcc-low-level-runtime-library/routines-for-fixed-point-fractional-emulation
+  the-gcc-low-level-runtime-library/language-independent-routines-for-exception-handling
+  the-gcc-low-level-runtime-library/miscellaneous-runtime-library-routines
 

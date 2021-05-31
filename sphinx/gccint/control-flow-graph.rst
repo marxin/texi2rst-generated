@@ -33,9 +33,9 @@ without proper maintenance of the CFG simultaneously.
 .. toctree::
   :maxdepth: 2
 
-  basic-blocks
-  edges
-  profile-information
-  maintaining-the-cfg
-  liveness-information
+  control-flow-graph/basic-blocks
+  control-flow-graph/edges
+  control-flow-graph/profile-information
+  control-flow-graph/maintaining-the-cfg
+  control-flow-graph/liveness-information
 

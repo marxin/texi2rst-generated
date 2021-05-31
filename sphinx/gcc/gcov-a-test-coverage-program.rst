@@ -9,13 +9,13 @@ test code coverage in your programs.
 .. toctree::
   :maxdepth: 2
 
-  gcov-intro
-  invoking-gcov
-  gcov-and-optimization
-  gcov-data-files
-  cross-profiling
-  introduction-to-gcov
-  using-gcov-with-gcc-optimization
-  brief-description-of-gcov-data-files
-  data-file-relocation-to-support-cross-profiling
+  gcov-a-test-coverage-program/gcov-intro
+  gcov-a-test-coverage-program/invoking-gcov
+  gcov-a-test-coverage-program/gcov-and-optimization
+  gcov-a-test-coverage-program/gcov-data-files
+  gcov-a-test-coverage-program/cross-profiling
+  gcov-a-test-coverage-program/introduction-to-gcov
+  gcov-a-test-coverage-program/using-gcov-with-gcc-optimization
+  gcov-a-test-coverage-program/brief-description-of-gcov-data-files
+  gcov-a-test-coverage-program/data-file-relocation-to-support-cross-profiling
 

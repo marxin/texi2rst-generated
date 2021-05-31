@@ -20,20 +20,20 @@ where people's opinions differ as to what is best.
 .. toctree::
   :maxdepth: 2
 
-  actual-bugs
-  interoperation
-  incompatibilities
-  fixed-headers
-  standard-libraries
-  disappointments
-  c++-misunderstandings
-  non-bugs
-  warnings-and-errors
-  actual-bugs-we-havent-fixed-yet
-  incompatibilities-of-gcc
-  fixed-header-files
-  disappointments-and-misunderstandings
-  common-misunderstandings-with-gnu-c
-  certain-changes-we-dont-want-to-make
-  warning-messages-and-error-messages
+  known-causes-of-trouble-with-gcc/actual-bugs
+  known-causes-of-trouble-with-gcc/interoperation
+  known-causes-of-trouble-with-gcc/incompatibilities
+  known-causes-of-trouble-with-gcc/fixed-headers
+  known-causes-of-trouble-with-gcc/standard-libraries
+  known-causes-of-trouble-with-gcc/disappointments
+  known-causes-of-trouble-with-gcc/c++-misunderstandings
+  known-causes-of-trouble-with-gcc/non-bugs
+  known-causes-of-trouble-with-gcc/warnings-and-errors
+  known-causes-of-trouble-with-gcc/actual-bugs-we-havent-fixed-yet
+  known-causes-of-trouble-with-gcc/incompatibilities-of-gcc
+  known-causes-of-trouble-with-gcc/fixed-header-files
+  known-causes-of-trouble-with-gcc/disappointments-and-misunderstandings
+  known-causes-of-trouble-with-gcc/common-misunderstandings-with-gnu-c
+  known-causes-of-trouble-with-gcc/certain-changes-we-dont-want-to-make
+  known-causes-of-trouble-with-gcc/warning-messages-and-error-messages
 

@@ -22,12 +22,12 @@ code that uses them running with the GNU Fortran compiler.
 .. toctree::
   :maxdepth: 2
 
-  encode-and-decode-statements
-  variable-format-expressions
-  alternate-complex-function-syntax
-  volatile-common-blocks
-  open(-...-name=)
-  q-edit-descriptor
+  extensions-not-implemented-in-gnu-fortran/encode-and-decode-statements
+  extensions-not-implemented-in-gnu-fortran/variable-format-expressions
+  extensions-not-implemented-in-gnu-fortran/alternate-complex-function-syntax
+  extensions-not-implemented-in-gnu-fortran/volatile-common-blocks
+  extensions-not-implemented-in-gnu-fortran/open(-...-name=)
+  extensions-not-implemented-in-gnu-fortran/q-edit-descriptor
 
 .. _encode-and-decode-statements:
 

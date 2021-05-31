@@ -69,17 +69,17 @@ with the flag :option:`-fdump-tree-gimple`.
 .. toctree::
   :maxdepth: 2
 
-  tuple-representation
-  class-hierarchy-of-gimple-statements
-  gimple-instruction-set
-  gimple-exception-handling
-  temporaries
-  operands
-  manipulating-gimple-statements
-  tuple-specific-accessors
-  gimple-sequences
-  sequence-iterators
-  adding-a-new-gimple-statement-code
-  statement-and-operand-traversals
-  exception-handling
+  gimple/tuple-representation
+  gimple/class-hierarchy-of-gimple-statements
+  gimple/gimple-instruction-set
+  gimple/gimple-exception-handling
+  gimple/temporaries
+  gimple/operands
+  gimple/manipulating-gimple-statements
+  gimple/tuple-specific-accessors
+  gimple/gimple-sequences
+  gimple/sequence-iterators
+  gimple/adding-a-new-gimple-statement-code
+  gimple/statement-and-operand-traversals
+  gimple/exception-handling
 
