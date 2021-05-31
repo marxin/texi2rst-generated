@@ -313,7 +313,7 @@ BOZ literal constants
 
 Besides decimal constants, Fortran also supports binary ( ``b`` ),
 octal ( ``o`` ) and hexadecimal ( ``z`` ) integer constants.  The
-syntax is: :samp:`prefix quote digits quote`, were the prefix is
+syntax is: :samp:`prefix quote digits quote`, where the prefix is
 either ``b``, ``o`` or ``z``, quote is either ``'`` or
 ``"`` and the digits are ``0`` or ``1`` for binary,
 between ``0`` and ``7`` for octal, and between ``0`` and
