@@ -12,12 +12,12 @@ look-up, the following subsections mirror the structure of this specification.
 .. toctree::
   :maxdepth: 2
 
-  [no-changes]-objectives
-  [no-changes]-non-objectives
+  objectives
+  non-objectives
   library-design-principles
   types-and-macros-list
   function-list
-  [no-changes]-future-enhancements-to-the-abi
+  future-enhancements-to-the-abi
   sample-code-
-  [new]-memory-model
+  memory-model
 

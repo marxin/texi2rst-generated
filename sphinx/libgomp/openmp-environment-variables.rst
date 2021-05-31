@@ -30,24 +30,24 @@ beginning with :envvar:`GOMP_` are GNU extensions.
   gomp_stacksize
   gomp_spincount
   gomp_rtems_thread_pools
-  ompcancellation---set-whether-cancellation-is-activated
-  ompdisplayenv---show-openmp-version-and-environment-variables
-  ompdefaultdevice---set-the-device-used-in-target-regions
-  ompdynamic---dynamic-adjustment-of-threads
-  ompmaxactivelevels---set-the-maximum-number-of-nested-parallel-regions
-  ompmaxtaskpriority---set-the-maximum-priority
-  ompnested---nested-parallel-regions
-  ompnumthreads---specifies-the-number-of-threads-to-use
-  ompprocbind---whether-theads-may-be-moved-between-cpus
-  ompplaces---specifies-on-which-cpus-the-theads-should-be-placed
-  ompstacksize---set-default-thread-stack-size
-  ompschedule---how-threads-are-scheduled
-  omptargetoffload---controls-offloading-behaviour
-  ompthreadlimit---set-the-maximum-number-of-threads
-  ompwaitpolicy---how-waiting-threads-are-handled
-  gompcpuaffinity---bind-threads-to-specific-cpus
-  gompdebug---enable-debugging-output
-  gompstacksize---set-default-thread-stack-size
-  gompspincount---set-the-busy-wait-spin-count
-  gomprtemsthreadpools---set-the-rtems-specific-thread-pools
+  ompcancellation-set-whether-cancellation-is-activated
+  ompdisplayenv-show-openmp-version-and-environment-variables
+  ompdefaultdevice-set-the-device-used-in-target-regions
+  ompdynamic-dynamic-adjustment-of-threads
+  ompmaxactivelevels-set-the-maximum-number-of-nested-parallel-regions
+  ompmaxtaskpriority-set-the-maximum-priority
+  ompnested-nested-parallel-regions
+  ompnumthreads-specifies-the-number-of-threads-to-use
+  ompprocbind-whether-theads-may-be-moved-between-cpus
+  ompplaces-specifies-on-which-cpus-the-theads-should-be-placed
+  ompstacksize-set-default-thread-stack-size
+  ompschedule-how-threads-are-scheduled
+  omptargetoffload-controls-offloading-behaviour
+  ompthreadlimit-set-the-maximum-number-of-threads
+  ompwaitpolicy-how-waiting-threads-are-handled
+  gompcpuaffinity-bind-threads-to-specific-cpus
+  gompdebug-enable-debugging-output
+  gompstacksize-set-default-thread-stack-size
+  gompspincount-set-the-busy-wait-spin-count
+  gomprtemsthreadpools-set-the-rtems-specific-thread-pools
 

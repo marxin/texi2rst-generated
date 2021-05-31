@@ -108,7 +108,7 @@ extensions, accepted by GCC in C90 mode and in C++.
   macros-with-a-variable-number-of-arguments
   slightly-looser-rules-for-escaped-newlines
   non-lvalue-arrays-may-have-subscripts
-  arithmetic-on-void--and-function-pointers
+  arithmetic-on-void-and-function-pointers
   pointer-arguments-in-variadic-functions
   pointers-to-arrays-with-qualifiers-work-as-expected
   non-constant-initializers
