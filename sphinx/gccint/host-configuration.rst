@@ -20,6 +20,7 @@ config.gcc entry instead of creating a host configuration
 header.  See :ref:`system-config`.
 
 .. toctree::
+  :maxdepth: 2
 
   host-common
   filesystem

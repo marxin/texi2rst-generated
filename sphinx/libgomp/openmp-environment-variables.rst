@@ -8,6 +8,7 @@ section 4 of the OpenMP specification in version 4.5, while those
 beginning with :envvar:`GOMP_` are GNU extensions.
 
 .. toctree::
+  :maxdepth: 2
 
   omp_cancellation
   omp_display_env

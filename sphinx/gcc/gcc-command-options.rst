@@ -91,6 +91,7 @@ listing and explanation of the binary and decimal byte size prefixes.
 See :ref:`option-index`, for an index to GCC's options.
 
 .. toctree::
+  :maxdepth: 2
 
   option-summary
   overall-options

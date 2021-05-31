@@ -81,6 +81,7 @@ Those are always ignored by ``gengtype``, as it only cares about
 data members.
 
 .. toctree::
+  :maxdepth: 2
 
   gty-options
   inheritance-and-gty

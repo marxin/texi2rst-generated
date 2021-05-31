@@ -4,6 +4,7 @@ OpenACC Library Interoperability
 --------------------------------
 
 .. toctree::
+  :maxdepth: 2
 
   introduction
   first-invocation-nvidia-cublas-library-api

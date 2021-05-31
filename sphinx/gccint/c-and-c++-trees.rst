@@ -45,6 +45,7 @@ but instead might be useful to other people using the GCC front end, you
 should submit your patches for inclusion in GCC.
 
 .. toctree::
+  :maxdepth: 2
 
   types-for-c++
   namespaces

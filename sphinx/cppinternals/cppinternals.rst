@@ -5,6 +5,7 @@
 .. _top:
 
 .. toctree::
+  :maxdepth: 2
 
   cpplib-the-gnu-c-preprocessor
 
@@ -46,6 +47,7 @@ The Lexer
 .. index:: escaped newlines
 
 .. toctree::
+  :maxdepth: 2
 
   overview
   lexing-a-token
@@ -139,6 +141,7 @@ token pasting are supposed to work, damage to your sanity can quickly
 result.
 
 .. toctree::
+  :maxdepth: 2
 
   internal-representation-of-macros
   macro-expansion-overview
@@ -295,6 +298,7 @@ Line numbering
 .. index:: line numbers
 
 .. toctree::
+  :maxdepth: 2
 
   just-which-line-number-anyway
   representation-of-line-numbers

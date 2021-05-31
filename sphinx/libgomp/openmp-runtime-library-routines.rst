@@ -8,6 +8,7 @@ specification in version 4.5.  The routines are structured in following
 three parts:
 
 .. toctree::
+  :maxdepth: 2
 
   Control threads, processors and the parallel environment.  They have C
   linkage, and do not throw exceptions.

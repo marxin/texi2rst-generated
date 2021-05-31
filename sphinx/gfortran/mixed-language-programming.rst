@@ -8,6 +8,7 @@ Mixed-Language Programming
 .. index:: Mixed-language programming
 
 .. toctree::
+  :maxdepth: 2
 
   interoperability-with-c
   gnu-fortran-compiler-directives

@@ -26,6 +26,7 @@ given target or host.  Most targets need a few t- :samp:`{target}`
 fragments, but needing x- :samp:`{host}` fragments is rare.
 
 .. toctree::
+  :maxdepth: 2
 
   target-fragment
   host-fragment

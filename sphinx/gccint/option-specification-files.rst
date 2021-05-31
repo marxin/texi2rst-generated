@@ -12,6 +12,7 @@ definition files, the names of which conventionally end in
 ``.opt``.  This chapter describes the format of these files.
 
 .. toctree::
+  :maxdepth: 2
 
   option-file-format
   option-properties

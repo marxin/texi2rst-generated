@@ -93,6 +93,7 @@ the documentation.  Please report these bugs as you would any other
 bug.
 
 .. toctree::
+  :maxdepth: 2
 
   macros-and-functions
   identifiers

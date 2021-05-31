@@ -23,6 +23,7 @@ See :ref:`attribute-syntax`, for details of the exact syntax for using
 attributes.
 
 .. toctree::
+  :maxdepth: 2
 
   common-variable-attributes
   arc-variable-attributes

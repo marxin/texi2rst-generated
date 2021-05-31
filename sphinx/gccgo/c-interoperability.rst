@@ -12,6 +12,7 @@ use ``import "C"``, as described at
 http://golang.org/cmd/cgo.
 
 .. toctree::
+  :maxdepth: 2
 
   c-type-interoperability
   function-names

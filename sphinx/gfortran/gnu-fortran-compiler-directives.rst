@@ -4,6 +4,7 @@ GNU Fortran Compiler Directives
 *******************************
 
 .. toctree::
+  :maxdepth: 2
 
   attributes-directive
   unroll-directive

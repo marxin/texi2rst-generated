@@ -10,6 +10,7 @@ eventually be merged into a future version of this specification. To ease
 look-up, the following subsections mirror the structure of this specification.
 
 .. toctree::
+  :maxdepth: 2
 
   [no-changes]-objectives
   [no-changes]-non-objectives

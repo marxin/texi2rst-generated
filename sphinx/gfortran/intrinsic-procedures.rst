@@ -6,6 +6,7 @@ Intrinsic Procedures
 .. index:: intrinsic procedures
 
 .. toctree::
+  :maxdepth: 2
 
   introduction-to-intrinsics-
   abort

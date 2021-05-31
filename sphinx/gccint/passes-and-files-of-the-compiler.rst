@@ -17,6 +17,7 @@ some of the language front end interface, though this description is no
 where near complete.
 
 .. toctree::
+  :maxdepth: 2
 
   parsing-pass
   gimplification-pass

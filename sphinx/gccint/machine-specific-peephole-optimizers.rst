@@ -28,6 +28,7 @@ but before scheduling, which may result in much better code for
 targets that do scheduling.
 
 .. toctree::
+  :maxdepth: 2
 
   define_peephole
   define_peephole2

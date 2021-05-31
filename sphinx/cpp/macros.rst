@@ -18,6 +18,7 @@ macro, and C++'s named operators (see :ref:`c++-named-operators`) cannot be
 macros when you are compiling C++.
 
 .. toctree::
+  :maxdepth: 2
 
   object-like-macros
   function-like-macros

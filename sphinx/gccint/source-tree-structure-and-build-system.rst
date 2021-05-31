@@ -9,6 +9,7 @@ is in a separate manual (http://gcc.gnu.org/install/), with
 which it is presumed that you are familiar.
 
 .. toctree::
+  :maxdepth: 2
 
   configure-terms
   top-level

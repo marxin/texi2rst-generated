@@ -10,6 +10,7 @@ Stack Layout and Calling Conventions
 This describes the stack layout and calling conventions.
 
 .. toctree::
+  :maxdepth: 2
 
   frame-layout
   stack-checking

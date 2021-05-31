@@ -21,6 +21,7 @@ This chapter provides guidelines on how to implement diagnostics and
 command-line options in ways that we hope achieve the above ideal.
 
 .. toctree::
+  :maxdepth: 2
 
   guidelines-for-diagnostics
   guidelines-for-options

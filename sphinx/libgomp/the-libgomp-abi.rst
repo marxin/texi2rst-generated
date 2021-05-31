@@ -7,6 +7,7 @@ The following sections present notes on the external ABI as
 presented by libgomp.  Only maintainers should need them.
 
 .. toctree::
+  :maxdepth: 2
 
   implementing-master-construct
   implementing-critical-construct

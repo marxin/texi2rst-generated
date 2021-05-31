@@ -6,6 +6,7 @@ Standards
 .. index:: Standards
 
 .. toctree::
+  :maxdepth: 2
 
   varying-length-character-strings
 

@@ -20,6 +20,7 @@ source tree.  This section only gives a brief overview of it; please
 see the comments in the source code for more details.
 
 .. toctree::
+  :maxdepth: 2
 
   using-rtl-ssa
   rtl-ssa-instructions
@@ -498,6 +499,7 @@ This section first describes the process for changing a single instruction,
 then goes on to describe the differences when changing multiple instructions.
 
 .. toctree::
+  :maxdepth: 2
 
   changing-one-rtl-ssa-instruction
   changing-multiple-rtl-ssa-instructions

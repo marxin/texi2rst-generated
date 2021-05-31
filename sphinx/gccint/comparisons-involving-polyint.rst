@@ -24,6 +24,7 @@ The underlying operators are the same in both cases, but the distinction
 affects how they are used.
 
 .. toctree::
+  :maxdepth: 2
 
   comparison-functions-for-poly_int
   properties-of-the-poly_int-comparisons

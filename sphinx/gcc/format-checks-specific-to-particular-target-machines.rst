@@ -8,6 +8,7 @@ format attribute
 (see :ref:`Declaring Attributes of Functions <function-attributes>`).
 
 .. toctree::
+  :maxdepth: 2
 
   solaris-format-checks
   darwin-format-checks

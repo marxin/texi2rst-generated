@@ -14,6 +14,7 @@ projects as they gain popularity, and are included here to provide a
 central location from which to use, maintain, and distribute them.
 
 .. toctree::
+  :maxdepth: 2
 
   obstacks
 
@@ -39,6 +40,7 @@ the objects are usually small.  And the only space overhead per object is
 the padding needed to start each object on a suitable boundary.
 
 .. toctree::
+  :maxdepth: 2
 
   creating-obstacks
   preparing-for-obstacks

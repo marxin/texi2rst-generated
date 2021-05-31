@@ -42,15 +42,12 @@ This manual documents the use of :command:`gfortran`,
 the GNU Fortran compiler.  You can find in this manual how to invoke
 :command:`gfortran`, as well as its features and incompatibilities.
 
-.. only:: development
-
-  .. warning::
-
-    This document, and the compiler it describes, are still
-    under development.  While efforts are made to keep it up-to-date, it might
-    not accurately reflect the status of the most recent GNU Fortran compiler.
+*Warning:* This document, and the compiler it describes, are still
+under development.  While efforts are made to keep it up-to-date, it might
+not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
+  :maxdepth: 2
 
   introduction
 
@@ -79,6 +76,7 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
    -
 
 .. toctree::
+  :maxdepth: 2
 
   gnu-fortran-command-options
   runtime--influencing-runtime-behavior-with-environment-variables
@@ -107,6 +105,7 @@ We will eventually get around to the things here,
 but they are also things doable by someone who is willing and able.
 
 .. toctree::
+  :maxdepth: 2
 
   contributors
   projects

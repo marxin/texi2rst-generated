@@ -10,6 +10,7 @@ RTL, as well as the interfaces to loop-related analyses (induction
 variable analysis and number of iterations analysis).
 
 .. toctree::
+  :maxdepth: 2
 
   loop-representation
   loop-querying

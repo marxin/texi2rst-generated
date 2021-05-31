@@ -4,6 +4,7 @@ Directives used within DejaGnu tests
 ************************************
 
 .. toctree::
+  :maxdepth: 2
 
   directives
   selectors

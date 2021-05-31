@@ -4,6 +4,7 @@ Non-Fortran Main Program
 ************************
 
 .. toctree::
+  :maxdepth: 2
 
   _gfortran_set_args
   _gfortran_set_options

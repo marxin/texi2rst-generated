@@ -37,6 +37,7 @@ specified already in the compare instruction.  In this case, you are not
 interested in most macros in this section.
 
 .. toctree::
+  :maxdepth: 2
 
   mode_cc-condition-codes
 

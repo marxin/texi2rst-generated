@@ -10,6 +10,7 @@ Static Analyzer
 .. index:: static analyzer
 
 .. toctree::
+  :maxdepth: 2
 
   analyzer-internals
   debugging-the-analyzer

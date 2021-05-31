@@ -13,6 +13,7 @@ might succeed or might fail, depending on the inputs.
 This section describes both types of operation.
 
 .. toctree::
+  :maxdepth: 2
 
   using-poly_int-with-c++-arithmetic-operators
   wi-arithmetic-on-poly_ints

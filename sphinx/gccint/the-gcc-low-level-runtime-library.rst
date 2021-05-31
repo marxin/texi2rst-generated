@@ -34,6 +34,7 @@ and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
 ``unsigned long long`` to ``TImode``.
 
 .. toctree::
+  :maxdepth: 2
 
   integer-library-routines
   soft-float-library-routines

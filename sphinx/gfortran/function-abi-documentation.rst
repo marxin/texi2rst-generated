@@ -4,6 +4,7 @@ Function ABI Documentation
 **************************
 
 .. toctree::
+  :maxdepth: 2
 
   _gfortran_caf_init
   _gfortran_caf_finish

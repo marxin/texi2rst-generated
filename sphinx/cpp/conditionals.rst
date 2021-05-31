@@ -32,6 +32,7 @@ other preprocessing directives, and you can only do it if the code
 remains syntactically valid when it is not to be used.
 
 .. toctree::
+  :maxdepth: 2
 
   conditional-uses
   conditional-syntax

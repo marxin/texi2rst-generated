@@ -22,6 +22,7 @@ should be compatible with true traditional preprocessors in all ways
 that actually matter.
 
 .. toctree::
+  :maxdepth: 2
 
   traditional-lexical-analysis
   traditional-macros

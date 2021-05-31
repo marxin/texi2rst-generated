@@ -4,6 +4,7 @@ Interoperability with C
 ***********************
 
 .. toctree::
+  :maxdepth: 2
 
   intrinsic-types
   derived-types-and-struct

@@ -24,6 +24,7 @@ on this, support for OpenACC and offloading (both OpenACC and OpenMP
 changed to GNU Offloading and Multi Processing Runtime Library.
 
 .. toctree::
+  :maxdepth: 2
 
   enabling-openmp
   runtime-library-routines
@@ -46,6 +47,7 @@ changed to GNU Offloading and Multi Processing Runtime Library.
    -
 
 .. toctree::
+  :maxdepth: 2
 
   openmp-runtime-library-routines
   openmp-environment-variables

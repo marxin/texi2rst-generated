@@ -14,6 +14,7 @@ One possible attribute would be the effect that the insn has on the machine's
 condition code.
 
 .. toctree::
+  :maxdepth: 2
 
   defining-attributes
   tagging-insns

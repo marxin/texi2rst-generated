@@ -23,6 +23,7 @@ fold_buildN API while for the GIMPLE variant and to address 2) new
 APIs are introduced.
 
 .. toctree::
+  :maxdepth: 2
 
   gimple-api
   the-language

@@ -24,6 +24,7 @@ You can also use the ``asm`` keyword to override the assembler name
 for a C symbol, or to place a C variable in a specific register.
 
 .. toctree::
+  :maxdepth: 2
 
   basic-asm
   extended-asm
@@ -1511,6 +1512,7 @@ that the side effects will happen exactly once in an instruction that can update
 the addressing register.
 
 .. toctree::
+  :maxdepth: 2
 
   simple-constraints
   multi-alternative
@@ -1605,6 +1607,7 @@ consequences of performing this association are very different between
 the two, as explained in the sections below.
 
 .. toctree::
+  :maxdepth: 2
 
   global-register-variables
   local-register-variables

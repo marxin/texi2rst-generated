@@ -10,6 +10,7 @@ mode or for more than one rtx code.  GCC provides some simple iterator
 facilities to make this process easier.
 
 .. toctree::
+  :maxdepth: 2
 
   mode-iterators
   code-iterators
@@ -41,6 +42,7 @@ rtx-based construct, such as a ``define_insn``,
 ``define_split``, or ``define_peephole2``.
 
 .. toctree::
+  :maxdepth: 2
 
   defining-mode-iterators
   substitutions

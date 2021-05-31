@@ -14,6 +14,7 @@ GNU programs.  It is available under the Library General Public
 License; for more information, see Library Copying.
 
 .. toctree::
+  :maxdepth: 2
 
   using
 
@@ -24,6 +25,7 @@ License; for more information, see Library Copying.
   licenses
 
 .. toctree::
+  :maxdepth: 2
 
   function-variable-and-macro-listing
 
@@ -33,6 +35,7 @@ Licenses
 --------
 
 .. toctree::
+  :maxdepth: 2
 
   library-copying
   bsd

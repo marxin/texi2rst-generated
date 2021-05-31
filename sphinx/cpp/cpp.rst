@@ -13,6 +13,7 @@ C++, and Objective-C programs before they are compiled.  It can also be
 useful on its own.
 
 .. toctree::
+  :maxdepth: 2
 
   overview
   header-files

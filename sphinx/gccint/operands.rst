@@ -28,6 +28,7 @@ The target of an assignment is usually a variable, but can also be a
 ``MEM_REF`` or a compound lvalue as described below.
 
 .. toctree::
+  :maxdepth: 2
 
   compound-expressions
   compound-lvalues

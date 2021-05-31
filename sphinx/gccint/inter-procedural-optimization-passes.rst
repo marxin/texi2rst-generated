@@ -20,6 +20,7 @@ passes, which are split into small IPA passes, regular IPA passes,
 and late IPA passes, according to the LTO/WHOPR processing model.
 
 .. toctree::
+  :maxdepth: 2
 
   small-ipa-passes
   regular-ipa-passes

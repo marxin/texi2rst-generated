@@ -66,6 +66,7 @@ predicates.  :command:`genrecog` does not do any optimizations or
 diagnosis when special predicates are used.
 
 .. toctree::
+  :maxdepth: 2
 
   machine-independent-predicates
   defining-predicates

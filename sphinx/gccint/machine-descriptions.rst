@@ -17,6 +17,7 @@ is inside a quoted string.
 See the next chapter for information on the C header file.
 
 .. toctree::
+  :maxdepth: 2
 
   patterns
   example

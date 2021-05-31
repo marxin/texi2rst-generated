@@ -16,6 +16,7 @@ transforming code, or analyzing information, plugins
 can be quite useful.
 
 .. toctree::
+  :maxdepth: 2
 
   plugins-loading
   plugin-api

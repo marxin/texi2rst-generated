@@ -45,6 +45,7 @@ a binary plus expression ``expr``, use:
 As this example indicates, the operands are zero-indexed.
 
 .. toctree::
+  :maxdepth: 2
 
   constant-expressions
   storage-references

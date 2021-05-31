@@ -11,6 +11,7 @@ infrastructure is to provide both gcc developers and users detailed
 information about various compiler transformations and optimizations.
 
 .. toctree::
+  :maxdepth: 2
 
   dump-setup
   optimization-groups

@@ -15,6 +15,7 @@ memory, enabling easy-to-use synchronization of accesses to shared memory by
 several threads.
 
 .. toctree::
+  :maxdepth: 2
 
   enabling-libitm
   c-c++-language-constructs-for-tm

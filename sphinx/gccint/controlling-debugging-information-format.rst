@@ -8,6 +8,7 @@ Controlling Debugging Information Format
 This describes how to specify debugging information.
 
 .. toctree::
+  :maxdepth: 2
 
   all-debuggers
   dbx-options

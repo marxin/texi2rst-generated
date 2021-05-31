@@ -26,6 +26,7 @@ if they are not defined elsewhere in GCC, and other functions called
 through the macros defined in the .h file.
 
 .. toctree::
+  :maxdepth: 2
 
   target-structure
   driver

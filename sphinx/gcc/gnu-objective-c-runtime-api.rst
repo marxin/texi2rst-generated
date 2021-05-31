@@ -19,6 +19,7 @@ of the inspection tasks, and you probably will only need direct access
 to the GNU Objective-C runtime API to define new classes or methods.
 
 .. toctree::
+  :maxdepth: 2
 
   modern-gnu-objective-c-runtime-api
   traditional-gnu-objective-c-runtime-api

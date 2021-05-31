@@ -11,6 +11,7 @@ change subtly in future implementations.
 Also documented here are obsolete features still supported by CPP.
 
 .. toctree::
+  :maxdepth: 2
 
   implementation-defined-behavior
   implementation-limits

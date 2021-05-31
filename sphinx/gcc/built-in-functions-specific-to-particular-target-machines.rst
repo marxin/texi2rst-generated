@@ -8,6 +8,7 @@ to those machines.  Generally these generate calls to specific machine
 instructions, but allow the compiler to schedule those calls.
 
 .. toctree::
+  :maxdepth: 2
 
   aarch64-built-in-functions
   alpha-built-in-functions
@@ -1105,6 +1106,7 @@ Such functions are said to be 'directly mapped' and are summarized
 here in tabular form.
 
 .. toctree::
+  :maxdepth: 2
 
   argument-types
   directly-mapped-integer-functions
@@ -1781,6 +1783,7 @@ instruction.
   int8x8_t punpcklbh_s (int8x8_t s, int8x8_t t);
 
 .. toctree::
+  :maxdepth: 2
 
   paired-single-arithmetic
   paired-single-built-in-functions
@@ -2042,6 +2045,7 @@ MIPS SIMD Architecture (MSA) Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
+  :maxdepth: 2
 
   mips-simd-architecture-built-in-functions
 
@@ -2978,6 +2982,7 @@ Basic PowerPC Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
+  :maxdepth: 2
 
   basic-powerpc-built-in-functions-available-on-all-configurations
   basic-powerpc-built-in-functions-available-on-isa-2.05
@@ -3836,6 +3841,7 @@ The PVIPR documents the following overloaded functions:
 ================================  ================================  ===================================
 
 .. toctree::
+  :maxdepth: 2
 
   powerpc-altivec-built-in-functions-on-isa-2.05
   powerpc-altivec-built-in-functions-available-on-isa-2.06

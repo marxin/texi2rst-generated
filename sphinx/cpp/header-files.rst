@@ -40,6 +40,7 @@ In C, the usual convention is to give header files names that end with
 underscores in header file names, and at most one dot.
 
 .. toctree::
+  :maxdepth: 2
 
   include-syntax
   include-operation

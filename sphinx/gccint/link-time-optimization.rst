@@ -20,6 +20,7 @@ to encompass the whole program (or, rather, everything
 that is visible at link time).
 
 .. toctree::
+  :maxdepth: 2
 
   lto-overview
   lto-object-file-layout

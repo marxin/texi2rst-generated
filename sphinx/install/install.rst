@@ -24,6 +24,7 @@ Introduction
    ***Installing GCC**********************************************************
 
 .. toctree::
+  :maxdepth: 2
 
   installing-gcc
   prerequisites

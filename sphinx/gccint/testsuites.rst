@@ -9,6 +9,7 @@ testsuites.  Currently only the C language testsuites are documented
 here; FIXME: document the others.
 
 .. toctree::
+  :maxdepth: 2
 
   test-idioms
   test-directives

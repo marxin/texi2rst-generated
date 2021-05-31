@@ -60,6 +60,7 @@ If you are testing a cross-compiler, you may want to run the testsuite
 on a simulator as described at http://gcc.gnu.org/simtest-howto.html.
 
 .. toctree::
+  :maxdepth: 2
 
   how-can-you-run-the-testsuite-on-selected-tests
   passing-options-and-running-multiple-testsuites

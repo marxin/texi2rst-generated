@@ -13,6 +13,7 @@ a reference to a volatile object is converted into a
 There are also several varieties of complex statements.
 
 .. toctree::
+  :maxdepth: 2
 
   basic-statements
   blocks

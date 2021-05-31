@@ -10,6 +10,7 @@ is defined by section 4 of the OpenACC specification in version 2.6.
 The variable :envvar:`GCC_ACC_NOTIFY` is used for diagnostic purposes.
 
 .. toctree::
+  :maxdepth: 2
 
   acc_device_type
   acc_device_num

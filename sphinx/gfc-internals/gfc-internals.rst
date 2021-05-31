@@ -30,14 +30,12 @@ Introduction
 This manual documents the internals of :command:`gfortran`, 
 the GNU Fortran compiler.
 
-.. only:: development
-
-  .. warning::
-    This document, and the compiler it describes, are still
-    under development.  While efforts are made to keep it up-to-date, it might
-    not accurately reflect the status of the most recent GNU Fortran compiler.
+*Warning:* This document, and the compiler it describes, are still
+under development.  While efforts are made to keep it up-to-date, it might
+not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
+  :maxdepth: 2
 
   introduction
   user-interface
@@ -52,6 +50,7 @@ the GNU Fortran compiler.
    -
 
 .. toctree::
+  :maxdepth: 2
 
   code-that-interacts-with-the-user
   internals-of-fortran-2003-oop-features

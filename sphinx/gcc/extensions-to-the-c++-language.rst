@@ -15,6 +15,7 @@ predefined macro ``__GNUC__``.  You can also use ``__GNUG__`` to
 test specifically for GNU C++ (see :ref:`Predefined Macros <common-predefined-macros>`).
 
 .. toctree::
+  :maxdepth: 2
 
   c++-volatiles
   restricted-pointers

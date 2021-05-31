@@ -23,6 +23,7 @@ that the side effects will happen exactly once in an instruction that can update
 the addressing register.
 
 .. toctree::
+  :maxdepth: 2
 
   simple-constraints
   multi-alternative
@@ -36,7 +37,7 @@ the addressing register.
 .. include:: ../share/md.rst
 
 
-.. _disable-insn-alternatives:
+    .. _disable-insn-alternatives:
 
 Disable insn alternatives using the enabled attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

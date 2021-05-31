@@ -8,6 +8,7 @@ features.  It is not intended to teach you Objective-C.  There are
 several resources on the Internet that present the language.
 
 .. toctree::
+  :maxdepth: 2
 
   gnu-objective-c-runtime-api
   executing-code-before-main

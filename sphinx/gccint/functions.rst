@@ -13,6 +13,7 @@ type as well as information on the surrounding context, visibility,
 and linkage.
 
 .. toctree::
+  :maxdepth: 2
 
   function-basics
   function-properties

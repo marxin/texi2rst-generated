@@ -6,6 +6,7 @@ Intrinsic Modules
 .. index:: intrinsic Modules
 
 .. toctree::
+  :maxdepth: 2
 
   iso_fortran_env
   iso_c_binding

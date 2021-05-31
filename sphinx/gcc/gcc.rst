@@ -42,6 +42,7 @@ targets and some information about how to write front ends for new
 languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
 
 .. toctree::
+  :maxdepth: 2
 
   g++-and-gcc
   standards
@@ -72,6 +73,7 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
   keyword-index
 
 .. toctree::
+  :maxdepth: 2
 
   programming-languages-supported-by-gcc
   language-standards-supported-by-gcc

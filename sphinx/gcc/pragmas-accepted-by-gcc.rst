@@ -17,6 +17,7 @@ compiler pragmas documented here.  Refer to the CPP manual for more
 information.
 
 .. toctree::
+  :maxdepth: 2
 
   aarch64-pragmas
   arm-pragmas

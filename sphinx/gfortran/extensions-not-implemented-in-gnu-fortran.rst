@@ -20,6 +20,7 @@ code that uses them running with the GNU Fortran compiler.
         http://tinyurl.com/2u4h5y
 
 .. toctree::
+  :maxdepth: 2
 
   encode-and-decode-statements
   variable-format-expressions

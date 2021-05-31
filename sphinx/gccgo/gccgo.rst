@@ -12,6 +12,7 @@ language in general, including language specifications and standard
 package documentation, see http://golang.org/.
 
 .. toctree::
+  :maxdepth: 2
 
   general-public-license-3
   gnu-free-documentation-license

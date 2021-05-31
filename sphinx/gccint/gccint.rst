@@ -40,6 +40,7 @@ Additional tutorial information is linked to from
 http://gcc.gnu.org/readings.html.
 
 .. toctree::
+  :maxdepth: 2
 
   contributing
   portability
@@ -81,6 +82,7 @@ http://gcc.gnu.org/readings.html.
   concept-index
 
 .. toctree::
+  :maxdepth: 2
 
   contributing-to-gcc-development
   gcc-and-portability

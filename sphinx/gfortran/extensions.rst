@@ -13,6 +13,7 @@ users, including replacement by standard-conforming code or GNU
 extensions.
 
 .. toctree::
+  :maxdepth: 2
 
   extensions-implemented-in-gnu-fortran
   extensions-not-implemented-in-gnu-fortran

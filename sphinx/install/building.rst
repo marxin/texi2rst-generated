@@ -51,6 +51,7 @@ want Info documentation to be regenerated.  Releases contain Info
 documentation pre-built for the unmodified documentation in the release.
 
 .. toctree::
+  :maxdepth: 2
 
   building-a-native-compiler
   building-a-cross-compiler

@@ -12,6 +12,7 @@ should exhaust all possible valid combinations of content for these
 structures.
 
 .. toctree::
+  :maxdepth: 2
 
   gfc_code
   gfc_expr

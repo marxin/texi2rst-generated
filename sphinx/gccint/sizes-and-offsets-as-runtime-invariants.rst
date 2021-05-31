@@ -35,6 +35,7 @@ does, lists the available operations, and gives some general
 usage guidelines.
 
 .. toctree::
+  :maxdepth: 2
 
   overview-of-poly_int
   consequences-of-using-poly_int

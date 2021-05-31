@@ -13,6 +13,7 @@ In C++, there is a fourth category, the named operators.  They act like
 predefined macros, but you cannot undefine them.
 
 .. toctree::
+  :maxdepth: 2
 
   standard-predefined-macros
   common-predefined-macros

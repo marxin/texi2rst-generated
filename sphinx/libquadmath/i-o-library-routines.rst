@@ -4,6 +4,7 @@ I/O Library Routines
 --------------------
 
 .. toctree::
+  :maxdepth: 2
 
   strtoflt128
   quadmath_snprintf

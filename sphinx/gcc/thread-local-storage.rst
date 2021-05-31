@@ -53,6 +53,7 @@ the four thread-local storage addressing models, and how the runtime
 is expected to function.
 
 .. toctree::
+  :maxdepth: 2
 
   c99-thread-local-edits
   c++98-thread-local-edits

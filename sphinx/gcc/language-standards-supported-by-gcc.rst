@@ -8,6 +8,7 @@ attempts to follow one or more versions of that standard, possibly
 with some exceptions, and possibly with some extensions.
 
 .. toctree::
+  :maxdepth: 2
 
   c-language
   c++-language

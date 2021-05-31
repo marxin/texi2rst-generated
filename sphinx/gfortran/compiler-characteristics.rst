@@ -8,6 +8,7 @@ compiler, that are not specified by the Fortran standard, but which
 might in some way or another become visible to the programmer.
 
 .. toctree::
+  :maxdepth: 2
 
   kind-type-parameters
   internal-representation-of-logical-variables

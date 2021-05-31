@@ -20,6 +20,7 @@ additional compatibility extensions along with those enabled by
 :option:`-std`:samp:`=legacy`.
 
 .. toctree::
+  :maxdepth: 2
 
   old-style-kind-specifications
   old-style-variable-initialization

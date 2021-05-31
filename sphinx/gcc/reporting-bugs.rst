@@ -14,6 +14,7 @@ already known.  See :ref:`trouble`.  If it isn't known, then you should
 report the problem.
 
 .. toctree::
+  :maxdepth: 2
 
   bug-criteria
   bug-reporting

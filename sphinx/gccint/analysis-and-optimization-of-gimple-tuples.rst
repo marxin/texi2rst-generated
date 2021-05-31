@@ -32,6 +32,7 @@ functions and programming constructs needed to implement optimization
 passes for GIMPLE.
 
 .. toctree::
+  :maxdepth: 2
 
   annotations
   ssa-operands

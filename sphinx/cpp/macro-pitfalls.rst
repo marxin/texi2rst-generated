@@ -12,6 +12,7 @@ macro expansion, and point out certain cases in which the rules have
 counter-intuitive consequences that you must watch out for.
 
 .. toctree::
+  :maxdepth: 2
 
   misnesting
   operator-precedence-problems

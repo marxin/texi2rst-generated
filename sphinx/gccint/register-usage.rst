@@ -15,6 +15,7 @@ For passing values in registers, see Register Arguments.
 For returning values in registers, see Scalar Return.
 
 .. toctree::
+  :maxdepth: 2
 
   register-basics
   allocation-order

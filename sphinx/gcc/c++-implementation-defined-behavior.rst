@@ -24,6 +24,7 @@ system (or other environment when compiling for a freestanding
 environment); refer to their documentation for details.
 
 .. toctree::
+  :maxdepth: 2
 
   conditionally-supported-behavior
   exception-handling

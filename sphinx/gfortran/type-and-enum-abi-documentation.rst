@@ -4,6 +4,7 @@ Type and enum ABI Documentation
 *******************************
 
 .. toctree::
+  :maxdepth: 2
 
   caf_token_t
   caf_register_t

@@ -6,6 +6,7 @@ Tuple specific accessors
 .. index:: Tuple specific accessors
 
 .. toctree::
+  :maxdepth: 2
 
   gimple_asm
   gimple_assign

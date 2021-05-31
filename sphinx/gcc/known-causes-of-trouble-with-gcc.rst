@@ -18,6 +18,7 @@ missing features that are too much work to add, and some are places
 where people's opinions differ as to what is best.
 
 .. toctree::
+  :maxdepth: 2
 
   actual-bugs
   interoperation

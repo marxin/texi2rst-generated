@@ -10,6 +10,7 @@ testsuite.  The files that are sources of GCC are documented in a
 separate chapter.  See :ref:`Passes and Files of the Compiler <passes>`.
 
 .. toctree::
+  :maxdepth: 2
 
   subdirectories
   configuration
@@ -86,6 +87,7 @@ file config.in.  The file cstamp-h.in is used as a
 timestamp.
 
 .. toctree::
+  :maxdepth: 2
 
   config-fragments
   system-config
@@ -468,6 +470,7 @@ documentation outside the gcc directory.  FIXME: document the
 documentation for runtime libraries somewhere.
 
 .. toctree::
+  :maxdepth: 2
 
   texinfo-manuals
   man-page-generation
@@ -705,6 +708,7 @@ following are also necessary:
   updated accordingly.
 
 .. toctree::
+  :maxdepth: 2
 
   front-end-directory
   front-end-config

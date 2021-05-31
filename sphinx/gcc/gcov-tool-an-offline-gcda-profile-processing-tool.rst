@@ -7,6 +7,7 @@ gcov-tool-an Offline Gcda Profile Processing Tool
 manipulate or process gcda profile files offline.
 
 .. toctree::
+  :maxdepth: 2
 
   gcov-tool-intro
   invoking-gcov-tool

@@ -8,6 +8,7 @@ to write instructions in assembler language-rather than what the
 instructions do.
 
 .. toctree::
+  :maxdepth: 2
 
   file-framework
   data-output

@@ -67,6 +67,7 @@ You can request to dump a C-like representation of the GIMPLE form
 with the flag :option:`-fdump-tree-gimple`.
 
 .. toctree::
+  :maxdepth: 2
 
   tuple-representation
   class-hierarchy-of-gimple-statements

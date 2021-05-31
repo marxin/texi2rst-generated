@@ -11,6 +11,7 @@ Generally, they are available only for the host, with the exception of
 acceleration device.
 
 .. toctree::
+  :maxdepth: 2
 
   acc_get_num_devices
   acc_set_device_type

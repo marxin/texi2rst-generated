@@ -7,6 +7,7 @@ gcov-a Test Coverage Program
 test code coverage in your programs.
 
 .. toctree::
+  :maxdepth: 2
 
   gcov-intro
   invoking-gcov

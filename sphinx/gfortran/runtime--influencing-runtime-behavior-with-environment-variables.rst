@@ -11,6 +11,7 @@ environment variables.
 Malformed environment variables are silently ignored.
 
 .. toctree::
+  :maxdepth: 2
 
   tmpdir
   gfortran_stdin_unit

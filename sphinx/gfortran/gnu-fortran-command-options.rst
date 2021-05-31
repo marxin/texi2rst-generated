@@ -33,6 +33,7 @@ This manual documents only one of these two forms, whichever
 one is not the default.
 
 .. toctree::
+  :maxdepth: 2
 
   option-summary
   fortran-dialect-options

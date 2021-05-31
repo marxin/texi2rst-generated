@@ -28,6 +28,7 @@ before handing off to ``tree_rest_of_compilation``, but this
 seems inelegant.
 
 .. toctree::
+  :maxdepth: 2
 
   deficiencies
   tree-overview

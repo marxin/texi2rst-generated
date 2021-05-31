@@ -21,6 +21,7 @@ figure out what the code is doing, and why things have been implemented
 the way they have.
 
 .. toctree::
+  :maxdepth: 2
 
   conventions
   lexer

@@ -4,6 +4,7 @@ Fast Enumeration
 ****************
 
 .. toctree::
+  :maxdepth: 2
 
   using-fast-enumeration
   c99-like-fast-enumeration-syntax

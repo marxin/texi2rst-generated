@@ -126,6 +126,7 @@ See :ref:`c++-module-mapper` for details of the :option:`-fmodule-mapper`
 family of options.
 
 .. toctree::
+  :maxdepth: 2
 
   c++-module-mapper
   c++-module-preprocessing

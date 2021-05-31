@@ -4,6 +4,7 @@ Fortran standards status
 ------------------------
 
 .. toctree::
+  :maxdepth: 2
 
   fortran-2003-status
   fortran-2008-status

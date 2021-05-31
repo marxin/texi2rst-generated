@@ -11,6 +11,7 @@ mixed-language and mixed-compiler projects should use the better defined
 C binding for interoperability.  See see :ref:`interoperability-with-c`.
 
 .. toctree::
+  :maxdepth: 2
 
   naming-conventions
   argument-passing-conventions

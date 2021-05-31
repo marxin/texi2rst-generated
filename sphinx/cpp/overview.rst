@@ -53,6 +53,7 @@ For clarity, unless noted otherwise, references to :samp:`CPP` in this
 manual refer to GNU CPP.
 
 .. toctree::
+  :maxdepth: 2
 
   character-sets
   initial-processing

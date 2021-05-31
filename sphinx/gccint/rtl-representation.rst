@@ -20,6 +20,7 @@ in the machine description and in printed debugging dumps.  The textual
 form uses nested parentheses to indicate the pointers in the internal form.
 
 .. toctree::
+  :maxdepth: 2
 
   rtl-objects
   rtl-classes

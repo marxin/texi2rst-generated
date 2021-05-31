@@ -31,6 +31,7 @@ intermediate representation for instructions cannot be easily done
 without proper maintenance of the CFG simultaneously.
 
 .. toctree::
+  :maxdepth: 2
 
   basic-blocks
   edges

@@ -146,6 +146,7 @@ encode ``char *const``.  ``char *const`` would simply be encoded
 as ``*``, and the ``const`` is lost.
 
 .. toctree::
+  :maxdepth: 2
 
   legacy-type-encoding
   @encode

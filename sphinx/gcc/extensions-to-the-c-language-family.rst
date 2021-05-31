@@ -23,6 +23,7 @@ Some features that are in ISO C99 but not C90 or C++ are also, as
 extensions, accepted by GCC in C90 mode and in C++.
 
 .. toctree::
+  :maxdepth: 2
 
   statement-exprs
   local-labels

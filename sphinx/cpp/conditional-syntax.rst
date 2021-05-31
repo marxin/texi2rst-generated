@@ -9,6 +9,7 @@ A conditional in the C preprocessor begins with a :dfn:`conditional
 directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
 
 .. toctree::
+  :maxdepth: 2
 
   ifdef
   if

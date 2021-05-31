@@ -16,6 +16,7 @@ behavior is correct.  This section discusses some areas that frequently
 give rise to questions of this sort.
 
 .. toctree::
+  :maxdepth: 2
 
   static-definitions
   name-lookup

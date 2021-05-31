@@ -23,6 +23,7 @@ library and operating system (or other environment when compiling for
 a freestanding environment); refer to their documentation for details.
 
 .. toctree::
+  :maxdepth: 2
 
   translation-implementation
   environment-implementation

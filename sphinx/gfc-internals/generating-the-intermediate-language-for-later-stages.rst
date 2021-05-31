@@ -11,6 +11,7 @@ Data structures relating to this are found in the source files
 trans*.h and trans-*.c.
 
 .. toctree::
+  :maxdepth: 2
 
   basic-data-structures
   converting-expressions

@@ -20,6 +20,7 @@ GNU Autoconf, if you decide to make use of that program.  Some of these
 functions may call one another.
 
 .. toctree::
+  :maxdepth: 2
 
   memory-allocation
   exit-handlers

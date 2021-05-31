@@ -49,6 +49,7 @@ deleted.
 ``define_insn_and_split`` ).
 
 .. toctree::
+  :maxdepth: 2
 
   define-subst-example
   define-subst-pattern-matching

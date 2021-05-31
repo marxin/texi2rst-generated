@@ -11,6 +11,7 @@ or alternative to, the Unix :command:`f95` command;
 :command:`gfortran` is the command you will use to invoke the compiler.
 
 .. toctree::
+  :maxdepth: 2
 
   about-gnu-fortran
   gnu-fortran-and-gcc
