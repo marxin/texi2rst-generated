@@ -34,10 +34,10 @@ the addressing register.
   operand-constraints/define-constraints
   operand-constraints/c-constraint-interface
 
-.. include:: ../share/md.rst
+.. include:: ../../share/md.rst
 
 
-.. _disable-insn-alternatives:
+    .. _disable-insn-alternatives:
 
 Disable insn alternatives using the enabled attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

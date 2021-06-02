@@ -598,7 +598,7 @@ optimizations to be performed is desired.
   pass is performed after reload.  The purpose of this pass is to clean up
   redundant spilling.
 
-  Enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
+  Enabled by :option:`-O3`, :option:`-fprofile-use` and :option:`-fauto-profile`.
 
 .. option:: -faggressive-loop-optimizations
 

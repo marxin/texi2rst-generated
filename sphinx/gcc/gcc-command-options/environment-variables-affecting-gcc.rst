@@ -158,6 +158,6 @@ See :ref:`driver`.
 Some additional environment variables affect the behavior of the
 preprocessor.
 
-.. include:: ../share/cppenv.rst
+.. include:: ../../share/cppenv.rst
 
 

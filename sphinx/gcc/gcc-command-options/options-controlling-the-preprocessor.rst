@@ -21,7 +21,7 @@ Directory Options.
 Options to control preprocessor diagnostics are listed in 
 Warning Options.
 
-.. include:: ../share/cppopts.rst
+.. include:: ../../share/cppopts.rst
 
 
 .. option:: -Wp,option, -Wp

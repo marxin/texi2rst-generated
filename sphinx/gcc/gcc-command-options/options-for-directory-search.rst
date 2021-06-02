@@ -12,7 +12,7 @@ Options for Directory Search
 These options specify directories to search for header files, for
 libraries and for parts of the compiler:
 
-.. include:: ../share/cppdiropts.rst
+.. include:: ../../share/cppdiropts.rst
 
 .. option:: -iplugindir=dir
 

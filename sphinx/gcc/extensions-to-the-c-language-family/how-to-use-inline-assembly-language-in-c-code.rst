@@ -1519,7 +1519,7 @@ the addressing register.
   how-to-use-inline-assembly-language-in-c-code/modifiers
   how-to-use-inline-assembly-language-in-c-code/machine-constraints
 
-.. include:: ../share/md.rst
+.. include:: ../../share/md.rst
 
 
 .. Each of the following nodes are wrapped in separate

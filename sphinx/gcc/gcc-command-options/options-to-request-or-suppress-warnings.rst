@@ -2594,7 +2594,7 @@ warn at all unless optimization is enabled.
   warning can be suppressed with an explicit type cast and it is also
   enabled by :option:`-Wextra`.
 
-.. include:: ../share/cppwarnopts.rst
+.. include:: ../../share/cppwarnopts.rst
 
 
 .. option:: -Wbad-function-cast , -Wbad-function-cast, -Wno-bad-function-cast
