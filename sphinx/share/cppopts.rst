@@ -54,10 +54,7 @@
 
   Do not predefine any system-specific or GCC-specific macros.  The
   standard predefined macros remain defined.
-
-  .. only:: cpp
-
-    See :ref:`standard-predefined-macros`.
+  See :ref:`standard-predefined-macros`.
 
 .. option:: -pthread
 
@@ -241,10 +238,7 @@
 
   .. _fdollars-in-identifiers:
   Accept :samp:`$` in identifiers.
-
-  .. only:: cpp
-
-    See :ref:`identifier-characters`.
+  See :ref:`identifier-characters`.
 
 .. option:: -fextended-identifiers
 
@@ -328,34 +322,6 @@
   precedence if there's a conflict.  :samp:`{charset}` can be any encoding
   supported by the system's ``iconv`` library routine.
 
-.. only:: not cpp
-
-  .. option:: -fpch-deps
-
-    When using precompiled headers (see :ref:`precompiled-headers`), this flag
-    causes the dependency-output flags to also list the files from the
-    precompiled header's dependencies.  If not specified, only the
-    precompiled header are listed and not the files that were used to
-    create it, because those files are not consulted when a precompiled
-    header is used.
-
-  .. option:: -fpch-preprocess
-
-    This option allows use of a precompiled header (see :ref:`precompiled-headers`) together with :option:`-E`.  It inserts a special ``#pragma``,
-    ``#pragma GCC pch_preprocess "filename"`` in the output to mark
-    the place where the precompiled header was found, and its :samp:`{filename}`.
-    When :option:`-fpreprocessed` is in use, GCC recognizes this ``#pragma``
-    and loads the PCH.
-
-    This option is off by default, because the resulting preprocessed output
-    is only really suitable as input to GCC.  It is switched on by
-    :option:`-save-temps`.
-
-    You should not write this ``#pragma`` in your own code, but it is
-    safe to edit the filename if the PCH file is available in a different
-    location.  The filename may be absolute or it may be relative to GCC's
-    current directory.
-
 .. option:: -fworking-directory, -fno-working-directory
 
   Enable generation of linemarkers in the preprocessor output that
@@ -377,10 +343,7 @@
   :samp:`{answer}`.  This form is preferred to the older form :option:`-A
   `:samp:`{predicate}` ( :samp:`{answer}` ), which is still supported, because
   it does not use shell special characters.
-
-  .. only:: cpp
-
-    See :ref:`obsolete-features`.
+  See :ref:`obsolete-features`.
 
 :samp:`-A -{predicate}={answer}`
   Cancel an assertion with the predicate :samp:`{predicate}` and answer
@@ -418,10 +381,7 @@
   This might be useful when running the preprocessor on something that is
   not C code, and will be sent to a program which might be confused by the
   linemarkers.
-
-  .. only:: cpp
-
-    See :ref:`preprocessor-output`.
+  See :ref:`preprocessor-output`.
 
   .. index:: traditional C language
 
@@ -431,14 +391,7 @@
 
   Try to imitate the behavior of pre-standard C preprocessors, as
   opposed to ISO C preprocessors.
-
-  .. only:: cpp
-
-    See :ref:`traditional-mode`.
-
-  .. only:: not cpp
-
-    See the GNU CPP manual for details.
+  See :ref:`traditional-mode`.
 
   Note that GCC does not otherwise attempt to emulate a pre-standard 
   C compiler, and these options are only supported with the :option:`-E` 
@@ -451,19 +404,7 @@
   are defined by ISO C to stand for single characters.  For example,
   :samp:`??/` stands for :samp:`\`, so :samp:`'??/n'` is a character
   constant for a newline.
-
-  .. only:: cpp
-
-    See :ref:`initial-processing`.
-
-  .. only:: not cpp
-
-    The nine trigraphs and their replacements are
-
-    .. code-block:: c++
-
-      Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
-      Replacement:      [    ]    {    }    #    \    ^    |    ~
+  See :ref:`initial-processing`.
 
   By default, GCC ignores trigraphs, but in
   standard-conforming modes it converts them.  See the :option:`-std` and
@@ -491,10 +432,6 @@
   are silently ignored.  If you specify :samp:`{letters}` whose behavior
   conflicts, the result is undefined.
 
-  .. only:: not cpp
-
-    See :ref:`developer-options`, for more information.
-
   .. option:: -dM
 
     Instead of the normal output, generate a list of :samp:`#define`
@@ -508,12 +445,6 @@
       touch foo.h; cpp -dM foo.h
 
     shows all the predefined macros.
-
-    .. only:: cpp
-
-      If you use :option:`-dM` without the :option:`-E` option, :option:`-dM` is
-      interpreted as a synonym for :option:`-fdump-rtl-mach`.
-      See :ref:`developer-options`.
 
   .. option:: -dD
 

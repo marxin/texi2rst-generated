@@ -163,17 +163,10 @@ g
   .. index:: X in constraint
 
 X
-
-  .. only:: gccint
-
-    Any operand whatsoever is allowed, even if it does not satisfy
-    ``general_operand``.  This is normally used in the constraint of
-    a ``match_scratch`` when certain alternatives will not actually
-    require a scratch register.
-
-  .. only:: not gccint
-
-    Any operand whatsoever is allowed.
+  Any operand whatsoever is allowed, even if it does not satisfy
+  ``general_operand``.  This is normally used in the constraint of
+  a ``match_scratch`` when certain alternatives will not actually
+  require a scratch register.
 
   .. index:: 0 in constraint
 
@@ -197,17 +190,8 @@ X
 
   This is called a :dfn:`matching constraint` and what it really means is
   that the assembler has only a single operand that fills two roles
-
-  .. only:: gccint
-
-    considered separate in the RTL insn.  For example, an add insn has two
-    input operands and one output operand in the RTL, but on most CISC
-
-  .. only:: not gccint
-
-    which ``asm`` distinguishes.  For example, an add instruction uses
-    two input operands and an output operand, but on most CISC
-
+  considered separate in the RTL insn.  For example, an add insn has two
+  input operands and one output operand in the RTL, but on most CISC
   machines an add instruction really has only two operands, one of them an
   input-output operand:
 
@@ -221,14 +205,12 @@ X
   smaller number than the number of the operand that uses it in the
   constraint.
 
-  .. only:: gccint
-
-    For operands to match in a particular case usually means that they
-    are identical-looking RTL expressions.  But in a few special cases
-    specific kinds of dissimilarity are allowed.  For example, ``*x``
-    as an input operand will match ``*x++`` as an output operand.
-    For proper results in such cases, the output template should always
-    use the output-operand's number when printing the operand.
+  For operands to match in a particular case usually means that they
+  are identical-looking RTL expressions.  But in a few special cases
+  specific kinds of dissimilarity are allowed.  For example, ``*x``
+  as an input operand will match ``*x++`` as an output operand.
+  For proper results in such cases, the output template should always
+  use the output-operand's number when printing the operand.
 
   .. index:: load address instruction
 
@@ -259,140 +241,123 @@ other-letters
   :samp:`d`, :samp:`a` and :samp:`f` are defined on the 68000/68020 to stand
   for data, address and floating point registers.
 
-.. only:: gccint
-
   In order to have valid assembler code, each operand must satisfy
-  its constraint.  But a failure to do so does not prevent the pattern
-  from applying to an insn.  Instead, it directs the compiler to modify
-  the code so that the constraint will be satisfied.  Usually this is
-  done by copying an operand into a register.
+its constraint.  But a failure to do so does not prevent the pattern
+from applying to an insn.  Instead, it directs the compiler to modify
+the code so that the constraint will be satisfied.  Usually this is
+done by copying an operand into a register.
 
-  Contrast, therefore, the two instruction patterns that follow:
+Contrast, therefore, the two instruction patterns that follow:
 
-  .. code-block:: c++
+.. code-block:: c++
 
-    (define_insn ""
-      [(set (match_operand:SI 0 "general_operand" "=r")
-            (plus:SI (match_dup 0)
-                     (match_operand:SI 1 "general_operand" "r")))]
-      ""
-      "...")
+  (define_insn ""
+    [(set (match_operand:SI 0 "general_operand" "=r")
+          (plus:SI (match_dup 0)
+                   (match_operand:SI 1 "general_operand" "r")))]
+    ""
+    "...")
 
-  which has two operands, one of which must appear in two places, and
+which has two operands, one of which must appear in two places, and
 
-  .. code-block:: c++
+.. code-block:: c++
 
-    (define_insn ""
-      [(set (match_operand:SI 0 "general_operand" "=r")
-            (plus:SI (match_operand:SI 1 "general_operand" "0")
-                     (match_operand:SI 2 "general_operand" "r")))]
-      ""
-      "...")
+  (define_insn ""
+    [(set (match_operand:SI 0 "general_operand" "=r")
+          (plus:SI (match_operand:SI 1 "general_operand" "0")
+                   (match_operand:SI 2 "general_operand" "r")))]
+    ""
+    "...")
 
-  which has three operands, two of which are required by a constraint to be
-  identical.  If we are considering an insn of the form
+which has three operands, two of which are required by a constraint to be
+identical.  If we are considering an insn of the form
 
-  .. code-block:: c++
+.. code-block:: c++
 
-    (insn n prev next
-      (set (reg:SI 3)
-           (plus:SI (reg:SI 6) (reg:SI 109)))
-      ...)
+  (insn n prev next
+    (set (reg:SI 3)
+         (plus:SI (reg:SI 6) (reg:SI 109)))
+    ...)
 
-  the first pattern would not apply at all, because this insn does not
-  contain two identical subexpressions in the right place.  The pattern would
-  say, 'That does not look like an add instruction; try other patterns'.
-  The second pattern would say, 'Yes, that's an add instruction, but there
-  is something wrong with it'.  It would direct the reload pass of the
-  compiler to generate additional insns to make the constraint true.  The
-  results might look like this:
+the first pattern would not apply at all, because this insn does not
+contain two identical subexpressions in the right place.  The pattern would
+say, 'That does not look like an add instruction; try other patterns'.
+The second pattern would say, 'Yes, that's an add instruction, but there
+is something wrong with it'.  It would direct the reload pass of the
+compiler to generate additional insns to make the constraint true.  The
+results might look like this:
 
-  .. code-block:: c++
+.. code-block:: c++
 
-    (insn n2 prev n
-      (set (reg:SI 3) (reg:SI 6))
-      ...)
+  (insn n2 prev n
+    (set (reg:SI 3) (reg:SI 6))
+    ...)
 
-    (insn n n2 next
-      (set (reg:SI 3)
-           (plus:SI (reg:SI 3) (reg:SI 109)))
-      ...)
+  (insn n n2 next
+    (set (reg:SI 3)
+         (plus:SI (reg:SI 3) (reg:SI 109)))
+    ...)
 
-  It is up to you to make sure that each operand, in each pattern, has
-  constraints that can handle any RTL expression that could be present for
-  that operand.  (When multiple alternatives are in use, each pattern must,
-  for each possible combination of operand expressions, have at least one
-  alternative which can handle that combination of operands.)  The
-  constraints don't need to *allow* any possible operand-when this is
-  the case, they do not constrain-but they must at least point the way to
-  reloading any possible operand so that it will fit.
+It is up to you to make sure that each operand, in each pattern, has
+constraints that can handle any RTL expression that could be present for
+that operand.  (When multiple alternatives are in use, each pattern must,
+for each possible combination of operand expressions, have at least one
+alternative which can handle that combination of operands.)  The
+constraints don't need to *allow* any possible operand-when this is
+the case, they do not constrain-but they must at least point the way to
+reloading any possible operand so that it will fit.
 
-  * If the constraint accepts whatever operands the predicate permits,
-    there is no problem: reloading is never necessary for this operand.
+* If the constraint accepts whatever operands the predicate permits,
+  there is no problem: reloading is never necessary for this operand.
 
-    For example, an operand whose constraints permit everything except
-    registers is safe provided its predicate rejects registers.
+  For example, an operand whose constraints permit everything except
+  registers is safe provided its predicate rejects registers.
 
-    An operand whose predicate accepts only constant values is safe
-    provided its constraints include the letter :samp:`i`.  If any possible
-    constant value is accepted, then nothing less than :samp:`i` will do;
-    if the predicate is more selective, then the constraints may also be
-    more selective.
+  An operand whose predicate accepts only constant values is safe
+  provided its constraints include the letter :samp:`i`.  If any possible
+  constant value is accepted, then nothing less than :samp:`i` will do;
+  if the predicate is more selective, then the constraints may also be
+  more selective.
 
-  * Any operand expression can be reloaded by copying it into a register.
-    So if an operand's constraints allow some kind of register, it is
-    certain to be safe.  It need not permit all classes of registers; the
-    compiler knows how to copy a register into another register of the
-    proper class in order to make an instruction valid.
+* Any operand expression can be reloaded by copying it into a register.
+  So if an operand's constraints allow some kind of register, it is
+  certain to be safe.  It need not permit all classes of registers; the
+  compiler knows how to copy a register into another register of the
+  proper class in order to make an instruction valid.
 
-    .. index:: nonoffsettable memory reference
+  .. index:: nonoffsettable memory reference
 
-    .. index:: memory reference, nonoffsettable
+  .. index:: memory reference, nonoffsettable
 
-  * A nonoffsettable memory reference can be reloaded by copying the
-    address into a register.  So if the constraint uses the letter
-    :samp:`o`, all memory references are taken care of.
+* A nonoffsettable memory reference can be reloaded by copying the
+  address into a register.  So if the constraint uses the letter
+  :samp:`o`, all memory references are taken care of.
 
-  * A constant operand can be reloaded by allocating space in memory to
-    hold it as preinitialized data.  Then the memory reference can be used
-    in place of the constant.  So if the constraint uses the letters
-    :samp:`o` or :samp:`m`, constant operands are not a problem.
+* A constant operand can be reloaded by allocating space in memory to
+  hold it as preinitialized data.  Then the memory reference can be used
+  in place of the constant.  So if the constraint uses the letters
+  :samp:`o` or :samp:`m`, constant operands are not a problem.
 
-  * If the constraint permits a constant and a pseudo register used in an insn
-    was not allocated to a hard register and is equivalent to a constant,
-    the register will be replaced with the constant.  If the predicate does
-    not permit a constant and the insn is re-recognized for some reason, the
-    compiler will crash.  Thus the predicate must always recognize any
-    objects allowed by the constraint.
+* If the constraint permits a constant and a pseudo register used in an insn
+  was not allocated to a hard register and is equivalent to a constant,
+  the register will be replaced with the constant.  If the predicate does
+  not permit a constant and the insn is re-recognized for some reason, the
+  compiler will crash.  Thus the predicate must always recognize any
+  objects allowed by the constraint.
 
-  If the operand's predicate can recognize registers, but the constraint does
-  not permit them, it can make the compiler crash.  When this operand happens
-  to be a register, the reload pass will be stymied, because it does not know
-  how to copy a register temporarily into memory.
+If the operand's predicate can recognize registers, but the constraint does
+not permit them, it can make the compiler crash.  When this operand happens
+to be a register, the reload pass will be stymied, because it does not know
+how to copy a register temporarily into memory.
 
-  If the predicate accepts a unary operator, the constraint applies to the
-  operand.  For example, the MIPS processor at ISA level 3 supports an
-  instruction which adds two registers in ``SImode`` to produce a
-  ``DImode`` result, but only if the registers are correctly sign
-  extended.  This predicate for the input operands accepts a
-  ``sign_extend`` of an ``SImode`` register.  Write the constraint
-  to indicate the type of register that is required for the operand of the
-  ``sign_extend``.
-
-.. only:: not gccint
-
-  So the first alternative for the 68000's logical-or could be written as 
-  ``"+m" (output) : "ir" (input)``.  The second could be ``"+r" 
-  (output): "irm" (input)``.  However, the fact that two memory locations 
-  cannot be used in a single instruction prevents simply using ``"+rm" 
-  (output) : "irm" (input)``.  Using multi-alternatives, this might be 
-  written as ``"+m,r" (output) : "ir,irm" (input)``.  This describes
-  all the available alternatives to the compiler, allowing it to choose 
-  the most efficient one for the current conditions.
-
-  There is no way within the template to determine which alternative was 
-  chosen.  However you may be able to wrap your ``asm`` statements with 
-  builtins such as ``__builtin_constant_p`` to achieve the desired results.
+If the predicate accepts a unary operator, the constraint applies to the
+operand.  For example, the MIPS processor at ISA level 3 supports an
+instruction which adds two registers in ``SImode`` to produce a
+``DImode`` result, but only if the registers are correctly sign
+extended.  This predicate for the input operands accepts a
+``sign_extend`` of an ``SImode`` register.  Write the constraint
+to indicate the type of register that is required for the operand of the
+``sign_extend``.
 
 .. _multi-alternative:
 
@@ -414,100 +379,95 @@ from the first alternative, a comma, the letters for this operand from
 the second alternative, a comma, and so on until the last alternative.
 All operands for a single instruction must have the same number of 
 alternatives.
+Here is how it is done for fullword logical-or on the 68000:
 
-.. only:: gccint
+.. code-block:: c++
 
-  Here is how it is done for fullword logical-or on the 68000:
+  (define_insn "iorsi3"
+    [(set (match_operand:SI 0 "general_operand" "=m,d")
+          (ior:SI (match_operand:SI 1 "general_operand" "%0,0")
+                  (match_operand:SI 2 "general_operand" "dKs,dmKs")))]
+    ...)
 
-  .. code-block:: c++
+The first alternative has :samp:`m` (memory) for operand 0, :samp:`0` for
+operand 1 (meaning it must match operand 0), and :samp:`dKs` for operand
+2.  The second alternative has :samp:`d` (data register) for operand 0,
+:samp:`0` for operand 1, and :samp:`dmKs` for operand 2.  The :samp:`=` and
+:samp:`%` in the constraints apply to all the alternatives; their
+meaning is explained in the next section (see :ref:`class-preferences`).
 
-    (define_insn "iorsi3"
-      [(set (match_operand:SI 0 "general_operand" "=m,d")
-            (ior:SI (match_operand:SI 1 "general_operand" "%0,0")
-                    (match_operand:SI 2 "general_operand" "dKs,dmKs")))]
-      ...)
+If all the operands fit any one alternative, the instruction is valid.
+Otherwise, for each alternative, the compiler counts how many instructions
+must be added to copy the operands so that that alternative applies.
+The alternative requiring the least copying is chosen.  If two alternatives
+need the same amount of copying, the one that comes first is chosen.
+These choices can be altered with the :samp:`?` and :samp:`!` characters:
 
-  The first alternative has :samp:`m` (memory) for operand 0, :samp:`0` for
-  operand 1 (meaning it must match operand 0), and :samp:`dKs` for operand
-  2.  The second alternative has :samp:`d` (data register) for operand 0,
-  :samp:`0` for operand 1, and :samp:`dmKs` for operand 2.  The :samp:`=` and
-  :samp:`%` in the constraints apply to all the alternatives; their
-  meaning is explained in the next section (see :ref:`class-preferences`).
+.. index:: ? in constraint
 
-  If all the operands fit any one alternative, the instruction is valid.
-  Otherwise, for each alternative, the compiler counts how many instructions
-  must be added to copy the operands so that that alternative applies.
-  The alternative requiring the least copying is chosen.  If two alternatives
-  need the same amount of copying, the one that comes first is chosen.
-  These choices can be altered with the :samp:`?` and :samp:`!` characters:
+.. index:: question mark
 
-  .. index:: ? in constraint
+``?``
+  Disparage slightly the alternative that the :samp:`?` appears in,
+  as a choice when no alternative applies exactly.  The compiler regards
+  this alternative as one unit more costly for each :samp:`?` that appears
+  in it.
 
-  .. index:: question mark
+  .. index:: ! in constraint
 
-  ``?``
-    Disparage slightly the alternative that the :samp:`?` appears in,
-    as a choice when no alternative applies exactly.  The compiler regards
-    this alternative as one unit more costly for each :samp:`?` that appears
-    in it.
+  .. index:: exclamation point
 
-    .. index:: ! in constraint
+``!``
+  Disparage severely the alternative that the :samp:`!` appears in.
+  This alternative can still be used if it fits without reloading,
+  but if reloading is needed, some other alternative will be used.
 
-    .. index:: exclamation point
+  .. index:: ^ in constraint
 
-  ``!``
-    Disparage severely the alternative that the :samp:`!` appears in.
-    This alternative can still be used if it fits without reloading,
-    but if reloading is needed, some other alternative will be used.
+  .. index:: caret
 
-    .. index:: ^ in constraint
+``^``
+  This constraint is analogous to :samp:`?` but it disparages slightly
+  the alternative only if the operand with the :samp:`^` needs a reload.
 
-    .. index:: caret
+  .. index:: $ in constraint
 
-  ``^``
-    This constraint is analogous to :samp:`?` but it disparages slightly
-    the alternative only if the operand with the :samp:`^` needs a reload.
+  .. index:: dollar sign
 
-    .. index:: $ in constraint
+``$``
+  This constraint is analogous to :samp:`!` but it disparages severely
+  the alternative only if the operand with the :samp:`$` needs a reload.
 
-    .. index:: dollar sign
-
-  ``$``
-    This constraint is analogous to :samp:`!` but it disparages severely
-    the alternative only if the operand with the :samp:`$` needs a reload.
-
-    When an insn pattern has multiple alternatives in its constraints, often
-  the appearance of the assembler code is determined mostly by which
-  alternative was matched.  When this is so, the C code for writing the
-  assembler code can use the variable ``which_alternative``, which is
-  the ordinal number of the alternative that was actually satisfied (0 for
-  the first, 1 for the second alternative, etc.).  See :ref:`output-statement`.
+  When an insn pattern has multiple alternatives in its constraints, often
+the appearance of the assembler code is determined mostly by which
+alternative was matched.  When this is so, the C code for writing the
+assembler code can use the variable ``which_alternative``, which is
+the ordinal number of the alternative that was actually satisfied (0 for
+the first, 1 for the second alternative, etc.).  See :ref:`output-statement`.
 
 .. _class-preferences:
 
 Register Class Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. only:: gccint
+.. index:: class preference constraints
 
-  .. index:: class preference constraints
+.. index:: register class preference constraints
 
-  .. index:: register class preference constraints
+.. index:: voting between constraint alternatives
 
-  .. index:: voting between constraint alternatives
+The operand constraints have another function: they enable the compiler
+to decide which kind of hardware register a pseudo register is best
+allocated to.  The compiler examines the constraints that apply to the
+insns that use the pseudo register, looking for the machine-dependent
+letters such as :samp:`d` and :samp:`a` that specify classes of registers.
+The pseudo register is put in whichever class gets the most 'votes'.
+The constraint letters :samp:`g` and :samp:`r` also vote: they vote in
+favor of a general register.  The machine description says which registers
+are considered general.
 
-  The operand constraints have another function: they enable the compiler
-  to decide which kind of hardware register a pseudo register is best
-  allocated to.  The compiler examines the constraints that apply to the
-  insns that use the pseudo register, looking for the machine-dependent
-  letters such as :samp:`d` and :samp:`a` that specify classes of registers.
-  The pseudo register is put in whichever class gets the most 'votes'.
-  The constraint letters :samp:`g` and :samp:`r` also vote: they vote in
-  favor of a general register.  The machine description says which registers
-  are considered general.
-
-  Of course, on some machines all registers are equivalent, and no register
-  classes are defined.  Then none of this complexity is relevant.
+Of course, on some machines all registers are equivalent, and no register
+classes are defined.  Then none of this complexity is relevant.
 
 .. _modifiers:
 
@@ -582,65 +542,60 @@ Here are constraint modifier characters.
   the first character in the constraint.  Only read-only operands can use
   :samp:`%`.
 
-  .. only:: gccint
+  This is often used in patterns for addition instructions
+  that really have only two operands: the result must go in one of the
+  arguments.  Here for example, is how the 68000 halfword-add
+  instruction is defined:
 
-    This is often used in patterns for addition instructions
-    that really have only two operands: the result must go in one of the
-    arguments.  Here for example, is how the 68000 halfword-add
-    instruction is defined:
+  .. code-block:: c++
 
-    .. code-block:: c++
-
-      (define_insn "addhi3"
-        [(set (match_operand:HI 0 "general_operand" "=m,r")
-           (plus:HI (match_operand:HI 1 "general_operand" "%0,0")
-                    (match_operand:HI 2 "general_operand" "di,g")))]
-        ...)
+    (define_insn "addhi3"
+      [(set (match_operand:HI 0 "general_operand" "=m,r")
+         (plus:HI (match_operand:HI 1 "general_operand" "%0,0")
+                  (match_operand:HI 2 "general_operand" "di,g")))]
+      ...)
 
   GCC can only handle one commutative pair in an asm; if you use more,
   the compiler may fail.  Note that you need not use the modifier if
   the two alternatives are strictly identical; this would only waste
   time in the reload pass.
+  The modifier is not operational after
+  register allocation, so the result of ``define_peephole2``
+  and ``define_split`` s performed after reload cannot rely on
+  :samp:`%` to make the intended insn match.
 
-  .. only:: gccint
+  .. index:: # in constraint
 
-    The modifier is not operational after
-    register allocation, so the result of ``define_peephole2``
-    and ``define_split`` s performed after reload cannot rely on
-    :samp:`%` to make the intended insn match.
+:samp:`#`
+  Says that all following characters, up to the next comma, are to be
+  ignored as a constraint.  They are significant only for choosing
+  register preferences.
 
-    .. index:: # in constraint
+  .. index:: * in constraint
 
-  :samp:`#`
-    Says that all following characters, up to the next comma, are to be
-    ignored as a constraint.  They are significant only for choosing
-    register preferences.
+:samp:`*`
+  Says that the following character should be ignored when choosing
+  register preferences.  :samp:`*` has no effect on the meaning of the
+  constraint as a constraint, and no effect on reloading.  For LRA
+  :samp:`*` additionally disparages slightly the alternative if the
+  following character matches the operand.
 
-    .. index:: * in constraint
+  Here is an example: the 68000 has an instruction to sign-extend a
+  halfword in a data register, and can also sign-extend a value by
+  copying it into an address register.  While either kind of register is
+  acceptable, the constraints on an address-register destination are
+  less strict, so it is best if register allocation makes an address
+  register its goal.  Therefore, :samp:`*` is used so that the :samp:`d`
+  constraint letter (for data register) is ignored when computing
+  register preferences.
 
-  :samp:`*`
-    Says that the following character should be ignored when choosing
-    register preferences.  :samp:`*` has no effect on the meaning of the
-    constraint as a constraint, and no effect on reloading.  For LRA
-    :samp:`*` additionally disparages slightly the alternative if the
-    following character matches the operand.
+  .. code-block:: c++
 
-    Here is an example: the 68000 has an instruction to sign-extend a
-    halfword in a data register, and can also sign-extend a value by
-    copying it into an address register.  While either kind of register is
-    acceptable, the constraints on an address-register destination are
-    less strict, so it is best if register allocation makes an address
-    register its goal.  Therefore, :samp:`*` is used so that the :samp:`d`
-    constraint letter (for data register) is ignored when computing
-    register preferences.
-
-    .. code-block:: c++
-
-      (define_insn "extendhisi2"
-        [(set (match_operand:SI 0 "general_operand" "=*d,a")
-              (sign_extend:SI
-               (match_operand:HI 1 "general_operand" "0,g")))]
-        ...)
+    (define_insn "extendhisi2"
+      [(set (match_operand:SI 0 "general_operand" "=*d,a")
+            (sign_extend:SI
+             (match_operand:HI 1 "general_operand" "0,g")))]
+      ...)
 
   .. _machine-constraints:
 
@@ -1186,13 +1141,11 @@ the meanings of that architecture's constraints.
     A memory address which uses a base register with a index register
     with its scale.
 
-  .. only:: gccint
-
     The C-SKY back end supports a large set of additional constraints
-    that are only useful for instruction selection or splitting rather
-    than inline asm, such as constraints representing constant integer
-    ranges accepted by particular instruction encodings.
-    Refer to the source code for details.
+  that are only useful for instruction selection or splitting rather
+  than inline asm, such as constraints representing constant integer
+  ranges accepted by particular instruction encodings.
+  Refer to the source code for details.
 
 :samp:`Epiphany-{config/epiphany/constraints.md}`
 
@@ -1245,11 +1198,9 @@ the meanings of that architecture's constraints.
     This constraint does not use a register class, so that it only
     passively matches suitable registers, and doesn't drive register allocation.
 
-  .. only:: gccint
-
-    ``Car``
-      Constant suitable for the addsi3_r pattern.  This is a valid offset
-      For byte, halfword, or word addressing.
+  ``Car``
+    Constant suitable for the addsi3_r pattern.  This is a valid offset
+    For byte, halfword, or word addressing.
 
   ``Rra``
     Matches the return address if it can be replaced with the link register.
@@ -2033,11 +1984,9 @@ the meanings of that architecture's constraints.
     A memory operand suitable for load/store IO and cache
     instructions.
 
-  .. only:: gccint
-
-    ``T``
-      A ``const`` wrapped ``UNSPEC`` expression,
-      representing a supported PIC or TLS relocation.
+  ``T``
+    A ``const`` wrapped ``UNSPEC`` expression,
+    representing a supported PIC or TLS relocation.
 
 :samp:`OpenRISC-{config/or1k/constraints.md}`
 
@@ -2057,10 +2006,8 @@ the meanings of that architecture's constraints.
   ``O``
     Zero
 
-  .. only:: gccint
-
-    ``c``
-      Register usable for sibcalls.
+  ``c``
+    Register usable for sibcalls.
 
 :samp:`PDP-11-{config/pdp11/constraints.md}`
 
@@ -2159,11 +2106,8 @@ the meanings of that architecture's constraints.
            : "=v" (v1)
            : "v" (v2), "v" (v3));
 
-
-  .. only:: gccint
-
-    ``h``
-      A special register ( ``vrsave``, ``ctr``, or ``lr`` ).
+  ``h``
+    A special register ( ``vrsave``, ``ctr``, or ``lr`` ).
 
   ``c``
     The count register, ``ctr``.
@@ -2177,59 +2121,57 @@ the meanings of that architecture's constraints.
   ``y``
     Any condition register field, ``cr0``... ``cr7``.
 
-  .. only:: gccint
+  ``z``
+    The carry bit, ``XER[CA]``.
 
-    ``z``
-      The carry bit, ``XER[CA]``.
+  ``we``
+    Like ``wa``, if :option:`-mpower9-vector` and :option:`-m64` are used;
+    otherwise, ``NO_REGS``.
 
-    ``we``
-      Like ``wa``, if :option:`-mpower9-vector` and :option:`-m64` are used;
-      otherwise, ``NO_REGS``.
+  ``wn``
+    No register ( ``NO_REGS`` ).
 
-    ``wn``
-      No register ( ``NO_REGS`` ).
+  ``wr``
+    Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
 
-    ``wr``
-      Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
+  ``wx``
+    Like ``d``, if :option:`-mpowerpc-gfxopt` is used; otherwise, ``NO_REGS``.
 
-    ``wx``
-      Like ``d``, if :option:`-mpowerpc-gfxopt` is used; otherwise, ``NO_REGS``.
+  ``wA``
+    Like ``b``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
 
-    ``wA``
-      Like ``b``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
+  ``wB``
+    Signed 5-bit constant integer that can be loaded into an Altivec register.
 
-    ``wB``
-      Signed 5-bit constant integer that can be loaded into an Altivec register.
+  ``wD``
+    Int constant that is the element number of the 64-bit scalar in a vector.
 
-    ``wD``
-      Int constant that is the element number of the 64-bit scalar in a vector.
+  ``wE``
+    Vector constant that can be loaded with the XXSPLTIB instruction.
 
-    ``wE``
-      Vector constant that can be loaded with the XXSPLTIB instruction.
+  ``wF``
+    Memory operand suitable for power8 GPR load fusion.
 
-    ``wF``
-      Memory operand suitable for power8 GPR load fusion.
+  ``wL``
+    Int constant that is the element number mfvsrld accesses in a vector.
 
-    ``wL``
-      Int constant that is the element number mfvsrld accesses in a vector.
+  ``wM``
+    Match vector constant with all 1's if the XXLORC instruction is available.
 
-    ``wM``
-      Match vector constant with all 1's if the XXLORC instruction is available.
+  ``wO``
+    Memory operand suitable for the ISA 3.0 vector d-form instructions.
 
-    ``wO``
-      Memory operand suitable for the ISA 3.0 vector d-form instructions.
+  ``wQ``
+    Memory operand suitable for the load/store quad instructions.
 
-    ``wQ``
-      Memory operand suitable for the load/store quad instructions.
+  ``wS``
+    Vector constant that can be loaded with XXSPLTIB & sign extension.
 
-    ``wS``
-      Vector constant that can be loaded with XXSPLTIB & sign extension.
+  ``wY``
+    A memory operand for a DS-form instruction.
 
-    ``wY``
-      A memory operand for a DS-form instruction.
-
-    ``wZ``
-      An indexed or indirect memory operand, ignoring the bottom 4 bits.
+  ``wZ``
+    An indexed or indirect memory operand, ignoring the bottom 4 bits.
 
   ``I``
     A signed 16-bit constant.
@@ -2244,32 +2186,28 @@ the meanings of that architecture's constraints.
   ``L``
     A signed 16-bit constant shifted left 16 bits.
 
-  .. only:: gccint
+  ``M``
+    An integer constant greater than 31.
 
-    ``M``
-      An integer constant greater than 31.
+  ``N``
+    An exact power of 2.
 
-    ``N``
-      An exact power of 2.
+  ``O``
+    The integer constant zero.
 
-    ``O``
-      The integer constant zero.
-
-    ``P``
-      A constant whose negation is a signed 16-bit constant.
+  ``P``
+    A constant whose negation is a signed 16-bit constant.
 
   ``eI``
     A signed 34-bit integer constant if prefixed instructions are supported.
 
-  .. only:: gccint
+  ``G``
+    A floating point constant that can be loaded into a register with one
+    instruction per word.
 
-    ``G``
-      A floating point constant that can be loaded into a register with one
-      instruction per word.
-
-    ``H``
-      A floating point constant that can be loaded into a register using
-      three instructions.
+  ``H``
+    A floating point constant that can be loaded into a register using
+    three instructions.
 
   ``m``
     A memory operand.
@@ -2293,44 +2231,36 @@ the meanings of that architecture's constraints.
 
     is not.
 
-  .. only:: gccint
-
-    ``es``
-      A 'stable' memory operand; that is, one which does not include any
-      automodification of the base register.  This used to be useful when
-      ``m`` allowed automodification of the base register, but as those
-      are now only allowed when ``<`` or ``>`` is used, ``es`` is
-      basically the same as ``m`` without ``<`` and ``>``.
+  ``es``
+    A 'stable' memory operand; that is, one which does not include any
+    automodification of the base register.  This used to be useful when
+    ``m`` allowed automodification of the base register, but as those
+    are now only allowed when ``<`` or ``>`` is used, ``es`` is
+    basically the same as ``m`` without ``<`` and ``>``.
 
   ``Q``
     A memory operand addressed by just a base register.
 
-  .. only:: gccint
-
-    ``Y``
-      A memory operand for a DQ-form instruction.
+  ``Y``
+    A memory operand for a DQ-form instruction.
 
   ``Z``
     A memory operand accessed with indexed or indirect addressing.
 
-  .. only:: gccint
-
-    ``R``
-      An AIX TOC entry.
+  ``R``
+    An AIX TOC entry.
 
   ``a``
     An indexed or indirect address.
 
-  .. only:: gccint
+  ``U``
+    A V.4 small data reference.
 
-    ``U``
-      A V.4 small data reference.
+  ``W``
+    A vector constant that does not require memory.
 
-    ``W``
-      A vector constant that does not require memory.
-
-    ``j``
-      The zero vector constant.
+  ``j``
+    The zero vector constant.
 
 :samp:`PRU-{config/pru/constraints.md}`
 
@@ -2752,22 +2682,20 @@ the meanings of that architecture's constraints.
   ``R``
     Memory location with B base register.
 
-  .. only:: gccint
+  ``S0``
+    On C64x+ targets, a GP-relative small data reference.
 
-    ``S0``
-      On C64x+ targets, a GP-relative small data reference.
+  ``S1``
+    Any kind of ``SYMBOL_REF``, for use in a call address.
 
-    ``S1``
-      Any kind of ``SYMBOL_REF``, for use in a call address.
+  ``Si``
+    Any kind of immediate operand, unless it matches the S0 constraint.
 
-    ``Si``
-      Any kind of immediate operand, unless it matches the S0 constraint.
+  ``T``
+    Memory location with B base register, but not using a long offset.
 
-    ``T``
-      Memory location with B base register, but not using a long offset.
-
-    ``W``
-      A memory operand with an address that cannot be used in an unaligned access.
+  ``W``
+    A memory operand with an address that cannot be used in an unaligned access.
 
   ``Z``
     Register B14 (aka DP).
@@ -2907,10 +2835,8 @@ the meanings of that architecture's constraints.
   ``f``
     Floating point register
 
-  .. only:: gccint
-
-    ``k``
-      Register for sibcall optimization
+  ``k``
+    Register for sibcall optimization
 
   ``l``
     General register, but not ``r29``, ``r30`` and ``r31``
@@ -2960,11 +2886,9 @@ the meanings of that architecture's constraints.
     Any register accessible as ``rh`` : ``a``, ``b``,
     ``c``, and ``d``.
 
-  .. only:: gccint
-
-    ``l``
-      Any register that can be used as the index in a base+index memory
-      access: that is, any general register except the stack pointer.
+  ``l``
+    Any register that can be used as the index in a base+index memory
+    access: that is, any general register except the stack pointer.
 
   ``a``
     The ``a`` register.
@@ -3023,13 +2947,11 @@ the meanings of that architecture's constraints.
   ``u``
     Second from top of 80387 floating-point stack ( ``%st(1)`` ).
 
-  .. only:: gccint
+  ``Yk``
+    Any mask register that can be used as a predicate, i.e. ``k1-k7``.
 
-    ``Yk``
-      Any mask register that can be used as a predicate, i.e. ``k1-k7``.
-
-    ``k``
-      Any mask register.
+  ``k``
+    Any mask register.
 
   ``y``
     Any MMX register.
@@ -3040,65 +2962,61 @@ the meanings of that architecture's constraints.
   ``v``
     Any EVEX encodable SSE register ( ``%xmm0-%xmm31`` ).
 
-  .. only:: gccint
-
-    ``w``
-      Any bound register.
+  ``w``
+    Any bound register.
 
   ``Yz``
     First SSE register ( ``%xmm0`` ).
 
-  .. only:: gccint
+  ``Yi``
+    Any SSE register, when SSE2 and inter-unit moves are enabled.
 
-    ``Yi``
-      Any SSE register, when SSE2 and inter-unit moves are enabled.
+  ``Yj``
+    Any SSE register, when SSE2 and inter-unit moves from vector registers are enabled.
 
-    ``Yj``
-      Any SSE register, when SSE2 and inter-unit moves from vector registers are enabled.
+  ``Ym``
+    Any MMX register, when inter-unit moves are enabled.
 
-    ``Ym``
-      Any MMX register, when inter-unit moves are enabled.
+  ``Yn``
+    Any MMX register, when inter-unit moves from vector registers are enabled.
 
-    ``Yn``
-      Any MMX register, when inter-unit moves from vector registers are enabled.
+  ``Yp``
+    Any integer register when ``TARGET_PARTIAL_REG_STALL`` is disabled.
 
-    ``Yp``
-      Any integer register when ``TARGET_PARTIAL_REG_STALL`` is disabled.
+  ``Ya``
+    Any integer register when zero extensions with ``AND`` are disabled.
 
-    ``Ya``
-      Any integer register when zero extensions with ``AND`` are disabled.
+  ``Yb``
+    Any register that can be used as the GOT base when calling
 
-    ``Yb``
-      Any register that can be used as the GOT base when calling
+    ``___tls_get_addr`` : that is, any general register except ``a``
+    and ``sp`` registers, for :option:`-fno-plt` if linker supports it.
+    Otherwise, ``b`` register.
 
-      ``___tls_get_addr`` : that is, any general register except ``a``
-      and ``sp`` registers, for :option:`-fno-plt` if linker supports it.
-      Otherwise, ``b`` register.
+  ``Yf``
+    Any x87 register when 80387 floating-point arithmetic is enabled.
 
-    ``Yf``
-      Any x87 register when 80387 floating-point arithmetic is enabled.
+  ``Yr``
+    Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
 
-    ``Yr``
-      Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
+  ``Yv``
+    For AVX512VL, any EVEX-encodable SSE register ( ``%xmm0-%xmm31`` ),
+    otherwise any SSE register.
 
-    ``Yv``
-      For AVX512VL, any EVEX-encodable SSE register ( ``%xmm0-%xmm31`` ),
-      otherwise any SSE register.
+  ``Yh``
+    Any EVEX-encodable SSE register, that has number factor of four.
 
-    ``Yh``
-      Any EVEX-encodable SSE register, that has number factor of four.
+  ``Bf``
+    Flags register operand.
 
-    ``Bf``
-      Flags register operand.
+  ``Bg``
+    GOT memory operand.
 
-    ``Bg``
-      GOT memory operand.
+  ``Bm``
+    Vector memory operand.
 
-    ``Bm``
-      Vector memory operand.
-
-    ``Bc``
-      Constant memory operand.
+  ``Bc``
+    Constant memory operand.
 
   ``Bn``
     Memory operand without REX prefix.
@@ -3134,10 +3052,8 @@ the meanings of that architecture's constraints.
     Unsigned 8-bit integer constant (for ``in`` and ``out``
     instructions).
 
-  .. only:: gccint
-
-    ``O``
-      Integer constant in the range 0 ... 127, for 128-bit shifts.
+  ``O``
+    Integer constant in the range 0 ... 127, for 128-bit shifts.
 
   ``G``
     Standard 80387 floating point constant.
