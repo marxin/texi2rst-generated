@@ -20,9 +20,3 @@ for information on how to make useful contributions and avoid
 duplication of effort.  Suggested projects are listed at
 http://gcc.gnu.org/projects/.
 
-@c Set file name and title for man page.
-@setfilename fsf-funding
-@settitle Funding Free Software
-@c man begin SEEALSO
-gpl(7), gfdl(7).
-@c man end

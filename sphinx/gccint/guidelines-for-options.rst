@@ -11,9 +11,3 @@ Guidelines for Options
 
 .. TODO
 
-@c Set file name and title for man page.
-@setfilename fsf-funding
-@settitle Funding Free Software
-@c man begin SEEALSO
-gpl(7), gfdl(7).
-@c man end
