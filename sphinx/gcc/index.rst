@@ -25,14 +25,8 @@ Contents:
   how-to-get-help-with-gcc
   contributing-to-gcc-development
   contributors-to-gcc
+  option-index
 
   funding
   general-public-license-3
   gnu-free-documentation-license
-
-.. include:: ../share/gnu.rst
-
-Indices and tables
-==================
-
-* :ref:`genindex`

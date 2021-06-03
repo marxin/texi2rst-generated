@@ -1,0 +1,2 @@
+.. include:: ../share/gnu.rst
+
