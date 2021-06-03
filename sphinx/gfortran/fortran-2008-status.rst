@@ -7,7 +7,7 @@ The latest version of the Fortran standard is ISO/IEC 1539-1:2010, informally
 known as Fortran 2008.  The official version is available from International
 Organization for Standardization (ISO) or its national member organizations.
 The the final draft (FDIS) can be downloaded free of charge from
-http://www.nag.co.uk//sc22wg5//links.html.  Fortran is developed by the
+http://www.nag.co.uk/sc22wg5/links.html.  Fortran is developed by the
 Working Group 5 of Sub-Committee 22 of the Joint Technical Committee 1 of the
 International Organization for Standardization and the International
 Electrotechnical Commission (IEC).  This group is known as

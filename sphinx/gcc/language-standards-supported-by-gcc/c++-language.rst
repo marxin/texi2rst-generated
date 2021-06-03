@@ -19,32 +19,32 @@ A revised ISO C++ standard was published in 2011 as ISO/IEC
 14882:2011, and is referred to as C++11; before its publication it was
 commonly referred to as C++0x.  C++11 contains several changes to the
 C++ language, all of which have been implemented in GCC. For details
-see https://gcc.gnu.org/projects//cxx-status.html#cxx11.
+see https://gcc.gnu.org/projects/cxx-status.html#cxx11.
 To select this standard in GCC, use the option :option:`-std`:samp:`=c++11`.
 
 Another revised ISO C++ standard was published in 2014 as ISO/IEC
 14882:2014, and is referred to as C++14; before its publication it was
 sometimes referred to as C++1y.  C++14 contains several further
 changes to the C++ language, all of which have been implemented in GCC.
-For details see https://gcc.gnu.org/projects//cxx-status.html#cxx14.
+For details see https://gcc.gnu.org/projects/cxx-status.html#cxx14.
 To select this standard in GCC, use the option :option:`-std`:samp:`=c++14`.
 
 The C++ language was further revised in 2017 and ISO/IEC 14882:2017 was
 published.  This is referred to as C++17, and before publication was
 often referred to as C++1z.  GCC supports all the changes in that
 specification.  For further details see
-https://gcc.gnu.org/projects//cxx-status.html#cxx17.  Use the option
+https://gcc.gnu.org/projects/cxx-status.html#cxx17.  Use the option
 :option:`-std`:samp:`=c++17` to select this variant of C++.
 
 Another revised ISO C++ standard was published in 2020 as ISO/IEC
 14882:2020, and is referred to as C++20; before its publication it was
 sometimes referred to as C++2a.  GCC supports most of the changes in the
 new specification.  For further details see
-https://gcc.gnu.org/projects//cxx-status.html#cxx20.
+https://gcc.gnu.org/projects/cxx-status.html#cxx20.
 To select this standard in GCC, use the option :option:`-std`:samp:`=c++20`.
 
 More information about the C++ standards is available on the ISO C++
-committee's web site at http://www.open-std.org//jtc1//sc22//wg21/.
+committee's web site at http://www.open-std.org/jtc1/sc22/wg21/.
 
 To obtain all the diagnostics required by any of the standard versions
 described above you should specify :option:`-pedantic`

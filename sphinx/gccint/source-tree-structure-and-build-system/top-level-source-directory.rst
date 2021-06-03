@@ -66,7 +66,7 @@ libgfortran
 
 libgo
   The Go runtime library.  The bulk of this library is mirrored from the
-  `master Go repository <https://github.com//golang/go>`_.
+  `master Go repository <https://github.com/golang/go>`_.
 
 libgomp
   The GNU Offloading and Multi Processing Runtime Library.
@@ -87,7 +87,7 @@ libquadmath
 
 libphobos
   The D standard and runtime library.  The bulk of this library is mirrored
-  from the `master D repositories <https://github.com//dlang>`_.
+  from the `master D repositories <https://github.com/dlang>`_.
 
 libssp
   The Stack protector runtime library.

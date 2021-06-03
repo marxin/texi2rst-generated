@@ -410,7 +410,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   In addition, :option:`-mtune` supports 2 extra choices for :samp:`{cpu-type}` :
 
   :samp:`generic`
-    Produce code optimized for the most common IA32//AMD64//EM64T processors.
+    Produce code optimized for the most common IA32/AMD64/EM64T processors.
     If you know the CPU on which your code will run, then you should use
     the corresponding :option:`-mtune` or :option:`-march` option instead of
     :option:`-mtune`:samp:`=generic`.  But, if you do not know exactly what CPU users

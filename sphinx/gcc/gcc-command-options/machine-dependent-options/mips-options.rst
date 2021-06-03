@@ -198,7 +198,7 @@ MIPS Options
   can use :option:`-mgp32` to get 32-bit code instead.
 
   For information about the O64 ABI, see
-  http://gcc.gnu.org//projects//mipso64-abi.html.
+  http://gcc.gnu.org/projects/mipso64-abi.html.
 
   GCC supports a variant of the o32 ABI in which floating-point registers
   are 64 rather than 32 bits wide.  You can select this combination with

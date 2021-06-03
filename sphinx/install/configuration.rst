@@ -626,40 +626,40 @@ corresponding :option:`--without` option.
     profile.  The union of these options is considered when specifying both
     ``aprofile`` and ``rmprofile``.
 
-    ====================  =========================  =======================
-    Option                aprofile                   rmprofile
-    ====================  =========================  =======================
-    ISAs                  ``-marm`` and ``-mthumb``  ``-mthumb``
-    Architectures         default architecture       default architecture
+    ===================  =========================  =======================
+    Option               aprofile                   rmprofile
+    ===================  =========================  =======================
+    ISAs                 ``-marm`` and ``-mthumb``  ``-mthumb``
+    Architectures        default architecture       default architecture
 
-                          ``-march=armv7-a``         ``-march=armv6s-m``
+                         ``-march=armv7-a``         ``-march=armv6s-m``
 
-                          ``-march=armv7ve``         ``-march=armv7-m``
+                         ``-march=armv7ve``         ``-march=armv7-m``
 
-                          ``-march=armv8-a``         ``-march=armv7e-m``
+                         ``-march=armv8-a``         ``-march=armv7e-m``
 
-                                                     ``-march=armv8-m.base``
+                                                    ``-march=armv8-m.base``
 
-                                                     ``-march=armv8-m.main``
+                                                    ``-march=armv8-m.main``
 
-                                                     ``-march=armv7``
-    FPUs                  none                       none
+                                                    ``-march=armv7``
+    FPUs                 none                       none
 
-                          ``-mfpu=vfpv3-d16``        ``-mfpu=vfpv3-d16``
+                         ``-mfpu=vfpv3-d16``        ``-mfpu=vfpv3-d16``
 
-                          ``-mfpu=neon``             ``-mfpu=fpv4-sp-d16``
+                         ``-mfpu=neon``             ``-mfpu=fpv4-sp-d16``
 
-                          ``-mfpu=vfpv4-d16``        ``-mfpu=fpv5-sp-d16``
+                         ``-mfpu=vfpv4-d16``        ``-mfpu=fpv5-sp-d16``
 
-                          ``-mfpu=neon-vfpv4``       ``-mfpu=fpv5-d16``
+                         ``-mfpu=neon-vfpv4``       ``-mfpu=fpv5-d16``
 
-                          ``-mfpu=neon-fp-armv8``
-    floating-point/ ABIs  ``-mfloat-abi=soft``       ``-mfloat-abi=soft``
+                         ``-mfpu=neon-fp-armv8``
+    floating-point ABIs  ``-mfloat-abi=soft``       ``-mfloat-abi=soft``
 
-                          ``-mfloat-abi=softfp``     ``-mfloat-abi=softfp``
+                         ``-mfloat-abi=softfp``     ``-mfloat-abi=softfp``
 
-                          ``-mfloat-abi=hard``       ``-mfloat-abi=hard``
-    ====================  =========================  =======================
+                         ``-mfloat-abi=hard``       ``-mfloat-abi=hard``
+    ===================  =========================  =======================
 
   ``riscv*-*-*``
     :samp:`{list}` is a single ABI name.  The target architecture must be either
@@ -1576,17 +1576,17 @@ corresponding :option:`--without` option.
   do not have their sources present in the GCC source tree then you
   can explicitly specify the directory where they are installed
   (:samp:`--with-gmp={gmpinstalldir}`,
-  :samp:`--with-mpfr=/{mpfrinstalldir}`,
-  :samp:`--with-mpc=/{mpcinstalldir}`).  The
-  :option:`--with-gmp`:samp:`=/{gmpinstalldir}` option is shorthand for
-  :option:`--with-gmp-lib`:samp:`=/{gmpinstalldir}` /lib and
-  :option:`--with-gmp-include`:samp:`=/{gmpinstalldir}` /include.  Likewise the
-  :option:`--with-mpfr`:samp:`=/{mpfrinstalldir}` option is shorthand for
-  :option:`--with-mpfr-lib`:samp:`=/{mpfrinstalldir}` /lib and
-  :option:`--with-mpfr-include`:samp:`=/{mpfrinstalldir}` /include, also the
-  :option:`--with-mpc`:samp:`=/{mpcinstalldir}` option is shorthand for
-  :option:`--with-mpc-lib`:samp:`=/{mpcinstalldir}` /lib and
-  :option:`--with-mpc-include`:samp:`=/{mpcinstalldir}` /include.  If these
+  :samp:`--with-mpfr={mpfrinstalldir}`,
+  :samp:`--with-mpc={mpcinstalldir}`).  The
+  :option:`--with-gmp`:samp:`={gmpinstalldir}` option is shorthand for
+  :option:`--with-gmp-lib`:samp:`={gmpinstalldir}` /lib and
+  :option:`--with-gmp-include`:samp:`={gmpinstalldir}` /include.  Likewise the
+  :option:`--with-mpfr`:samp:`={mpfrinstalldir}` option is shorthand for
+  :option:`--with-mpfr-lib`:samp:`={mpfrinstalldir}` /lib and
+  :option:`--with-mpfr-include`:samp:`={mpfrinstalldir}` /include, also the
+  :option:`--with-mpc`:samp:`={mpcinstalldir}` option is shorthand for
+  :option:`--with-mpc-lib`:samp:`={mpcinstalldir}` /lib and
+  :option:`--with-mpc-include`:samp:`={mpcinstalldir}` /include.  If these
   shorthand assumptions are not correct, you can use the explicit
   include and lib options directly.  You might also need to ensure the
   shared libraries can be found by the dynamic linker when building and
@@ -1600,10 +1600,10 @@ corresponding :option:`--without` option.
 
   If you do not have the isl library installed in a standard location and you
   want to build GCC, you can explicitly specify the directory where it is
-  installed (:samp:`--with-isl=/{islinstalldir}`). The
-  :option:`--with-isl`:samp:`=/{islinstalldir}` option is shorthand for
-  :option:`--with-isl-lib`:samp:`=/{islinstalldir}` /lib and
-  :option:`--with-isl-include`:samp:`=/{islinstalldir}` /include. If this
+  installed (:samp:`--with-isl={islinstalldir}`). The
+  :option:`--with-isl`:samp:`={islinstalldir}` option is shorthand for
+  :option:`--with-isl-lib`:samp:`={islinstalldir}` /lib and
+  :option:`--with-isl-include`:samp:`={islinstalldir}` /include. If this
   shorthand assumption is not correct, you can use the explicit
   include and lib options directly.
 
@@ -1766,10 +1766,10 @@ corresponding :option:`--without` option.
   If you configure GCC with offloading which uses an HSA run-time such as
   AMDGCN but do not have the HSA run-time library installed in a standard
   location then you can explicitly specify the directory where they are
-  installed.  The :option:`--with-hsa-runtime`:samp:`=/{hsainstalldir}` option
+  installed.  The :option:`--with-hsa-runtime`:samp:`={hsainstalldir}` option
   is a shorthand for
-  :option:`--with-hsa-runtime-lib`:samp:`=/{hsainstalldir}` /lib and
-  :option:`--with-hsa-runtime-include`:samp:`=/{hsainstalldir}` /include.
+  :option:`--with-hsa-runtime-lib`:samp:`={hsainstalldir}` /lib and
+  :option:`--with-hsa-runtime-include`:samp:`={hsainstalldir}` /include.
 
 .. option:: --enable-cet
 

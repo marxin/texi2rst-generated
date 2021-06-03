@@ -624,7 +624,7 @@ it.
   the DSOs.
 
   An overview of these techniques, their benefits and how to use them
-  is at http://gcc.gnu.org//wiki//Visibility.
+  is at http://gcc.gnu.org/wiki/Visibility.
 
 .. option:: -fstrict-volatile-bitfields
 

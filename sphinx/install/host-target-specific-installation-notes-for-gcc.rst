@@ -179,7 +179,7 @@ There are a few different CRIS targets:
   :samp:`ETRAX 100 LX` by default.
 
   Pre-packaged tools can be obtained from
-ftp://ftp.axis.com//pub//axis//tools//cris//compiler-kit/.  More
+ftp://ftp.axis.com/pub/axis/tools/cris/compiler-kit/.  More
 information about this platform is available at
 http://developer.axis.com/.
 
@@ -457,8 +457,8 @@ newer (in /usr/gnu/bin/ld and /usr/bin/gld), works,
 as does the latest version, from GNU binutils 2.34.
 
 To use GNU :command:`as`, configure with the options
-:option:`--with-gnu-as --with-as`:samp:`=//usr//gnu//bin//as`.  It may be necessary
-to configure with :option:`--without-gnu-ld --with-ld`:samp:`=//usr//ccs//bin//ld` to
+:option:`--with-gnu-as --with-as`:samp:`=/usr/gnu/bin/as`.  It may be necessary
+to configure with :option:`--without-gnu-ld --with-ld`:samp:`=/usr/ccs/bin/ld` to
 guarantee use of Solaris :command:`ld`.
 
 .. FIXME: why -without-gnu-ld -with-ld?
