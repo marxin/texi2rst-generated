@@ -23,5 +23,5 @@ Contents:
   implementation-details
   invocation
   environment-variables
-  gnu-free-documentation-license
   option-index
+  gnu-free-documentation-license
