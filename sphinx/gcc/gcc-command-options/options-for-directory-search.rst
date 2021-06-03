@@ -21,12 +21,12 @@ libraries and for parts of the compiler:
   :option:`-fplugin`:samp:`={path}` / :samp:`{name}`.so.  This option is not meant
   to be used by the user, but only passed by the driver.
 
-.. option:: -Ldir, -L
+.. option:: -Ldir
 
   Add directory :samp:`{dir}` to the list of directories to be searched
   for :option:`-l`.
 
-.. option:: -Bprefix, -B
+.. option:: -Bprefix
 
   This option specifies where to find the executables, libraries,
   include files, and data files of the compiler itself.
@@ -91,7 +91,7 @@ libraries and for parts of the compiler:
   header file aspect of :option:`--sysroot` still works, but the
   library aspect does not.
 
-.. option:: --no-sysroot-suffix, -no-sysroot-suffix
+.. option:: --no-sysroot-suffix
 
   For some targets, a suffix is added to the root directory specified
   with :option:`--sysroot`, depending on the other options used, so that

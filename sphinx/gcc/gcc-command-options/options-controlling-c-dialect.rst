@@ -227,7 +227,7 @@ accepts:
   dialect ( :option:`-std`:samp:`=gnu11` or similar) is
   :option:`-fpermitted-flt-eval-methods`:samp:`=ts-18661-3`.
 
-.. option:: -aux-info filename, -aux-info
+.. option:: -aux-info filename
 
   Output to the given filename prototyped declarations for all functions
   declared and/or defined in a translation unit, including those in header
@@ -265,7 +265,7 @@ accepts:
   switch only affects the ``asm`` and ``typeof`` keywords, since
   ``inline`` is a standard keyword in ISO C99.
 
-.. option:: -fno-builtin, -fbuiltin
+.. option:: -fno-builtin, -fno-builtin-function, -fbuiltin
 
   .. index:: built-in functions
 

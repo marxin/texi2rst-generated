@@ -294,7 +294,7 @@ it.
 
   Deprecated alias for :option:`-fcheck`:samp:`=bounds`.
 
-.. option:: -ftail-call-workaround
+.. option:: -ftail-call-workaround, -ftail-call-workaround=n
 
   .. index:: tail-call-workaround
 
@@ -498,7 +498,7 @@ it.
   on the stack. This flag cannot be used together with
   :option:`-fmax-stack-var-size` = or :option:`-fno-automatic`.
 
-.. option:: -finit-local-zero
+.. option:: -finit-local-zero, -finit-derived, -finit-integer=n, -finit-real=<zero|inf|-inf|nan|snan>, -finit-logical=<true|false>, -finit-character=n
 
   .. index:: finit-local-zero
 

@@ -94,7 +94,7 @@ These :samp:`-m` options are defined for the ARM port:
   Generate code for a processor running in big-endian mode; the default is
   to compile code for a little-endian processor.
 
-.. option:: -mbe8
+.. option:: -mbe8, -mbe32
 
   When linking a big-endian image select between BE8 and BE32 formats.
   The option has no effect for little-endian images and is ignored.  The
@@ -850,7 +850,7 @@ These :samp:`-m` options are defined for the ARM port:
   by using the ``target("thumb")`` and ``target("arm")`` function attributes
   (see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
 
-.. option:: -mflip-thumb , -mflip-thumb
+.. option:: -mflip-thumb
 
   Switch ARM/Thumb modes on alternating functions.
   This option is provided for regression testing of mixed Thumb/ARM code

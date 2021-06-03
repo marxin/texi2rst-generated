@@ -214,7 +214,7 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
 
   Use a simple data speculation check.  This option is on by default.
 
-.. option:: -msched-control-spec-ldc, -msched-spec-ldc
+.. option:: -msched-control-spec-ldc
 
   Use a simple check for control speculation.  This option is on by default.
 

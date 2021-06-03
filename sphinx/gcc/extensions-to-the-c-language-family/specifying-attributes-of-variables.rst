@@ -236,7 +236,7 @@ The following attributes are supported on most targets.
   It is undefined what happens if :samp:`{cleanup_function}` does not
   return normally.
 
-.. option:: common, -fcommon, -fno-common
+.. option:: common, nocommon
 
   .. index:: common variable attribute
 

@@ -511,11 +511,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
   comparisons.  These correctly handle the case where the result of a
   comparison is unordered.
 
-.. option:: -m80387, -80387, -mhard-float
+.. option:: -m80387, -mhard-float
 
   Generate output containing 80387 instructions for floating point.
 
-.. option:: -mno-80387, -no-80387, -msoft-float
+.. option:: -mno-80387, -msoft-float
 
   Generate output containing library calls for floating point.
 
@@ -755,7 +755,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   as embedded systems and operating system kernels, may want to reduce the
   preferred alignment to :option:`-mpreferred-stack-boundary`:samp:`=2`.
 
-.. option:: -mmmx, -mwidekl
+.. option:: -mmmx, -msse, -msse2, -msse3, -mssse3, -msse4, -msse4a, -msse4.1, -msse4.2, -mavx, -mavx2, -mavx512f, -mavx512pf, -mavx512er, -mavx512cd, -mavx512vl, -mavx512bw, -mavx512dq, -mavx512ifma, -mavx512vbmi, -msha, -maes, -mpclmul, -mclflushopt, -mclwb, -mfsgsbase, -mptwrite, -mrdrnd, -mf16c, -mfma, -mpconfig, -mwbnoinvd, -mfma4, -mprfchw, -mrdpid, -mprefetchwt1, -mrdseed, -msgx, -mxop, -mlwp, -m3dnow, -m3dnowa, -mpopcnt, -mabm, -madx, -mbmi, -mbmi2, -mlzcnt, -mfxsr, -mxsave, -mxsaveopt, -mxsavec, -mxsaves, -mrtm, -mhle, -mtbm, -mmwaitx, -mclzero, -mpku, -mavx512vbmi2, -mavx512bf16, -mgfni, -mvaes, -mwaitpkg, -mvpclmulqdq, -mavx512bitalg, -mmovdiri, -mmovdir64b, -menqcmd, -muintr, -mtsxldtrk, -mavx512vpopcntdq, -mavx512vp2intersect, -mavx5124fmaps, -mavx512vnni, -mavxvnni, -mavx5124vnniw, -mcldemote, -mserialize, -mamx-tile, -mamx-int8, -mamx-bf16, -mhreset, -mkl, -mwidekl
 
   These switches enable the use of instructions in the MMX, SSE,
   SSE2, SSE3, SSSE3, SSE4, SSE4A, SSE4.1, SSE4.2, AVX, AVX2, AVX512F, AVX512PF,
@@ -1229,7 +1229,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-fomit-leaf-frame-pointer` removes the frame pointer for leaf functions,
   which might make debugging harder.
 
-.. option:: -mtls-direct-seg-refs
+.. option:: -mtls-direct-seg-refs, -mno-tls-direct-seg-refs
 
   Controls whether TLS variables may be accessed with offsets from the
   TLS segment register ( ``%gs`` for 32-bit, ``%fs`` for 64-bit),
@@ -1239,25 +1239,25 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   For systems that use the GNU C Library, the default is on.
 
-.. option:: -msse2avx
+.. option:: -msse2avx, -mno-sse2avx
 
   Specify that the assembler should encode SSE instructions with VEX
   prefix.  The option :option:`-mavx` turns this on by default.
 
-.. option:: -mfentry
+.. option:: -mfentry, -mno-fentry
 
   If profiling is active ( :option:`-pg` ), put the profiling
   counter call before the prologue.
   Note: On x86 architectures the attribute ``ms_hook_prologue``
   isn't possible at the moment for :option:`-mfentry` and :option:`-pg`.
 
-.. option:: -mrecord-mcount
+.. option:: -mrecord-mcount, -mno-record-mcount
 
   If profiling is active ( :option:`-pg` ), generate a __mcount_loc section
   that contains pointers to each profiling call. This is useful for
   automatically patching and out calls.
 
-.. option:: -mnop-mcount
+.. option:: -mnop-mcount, -mno-nop-mcount
 
   If profiling is active ( :option:`-pg` ), generate the calls to
   the profiling functions as NOPs. This is useful when they
@@ -1272,7 +1272,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   are :samp:`{none}` to not instrument, :samp:`{call}` to generate a call to __return__,
   or :samp:`{nop5}` to generate a 5 byte nop.
 
-.. option:: -mrecord-return
+.. option:: -mrecord-return, -mno-record-return
 
   Generate a __return_loc section pointing to all return instrumentation code.
 
@@ -1284,7 +1284,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Set name of section to record -mrecord-mcount calls (default __mcount_loc).
 
-.. option:: -mskip-rax-setup
+.. option:: -mskip-rax-setup, -mno-skip-rax-setup
 
   When generating code for the x86-64 architecture with SSE extensions
   disabled, :option:`-mskip-rax-setup` can be used to skip setting up RAX
@@ -1296,7 +1296,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   misbehave or jump to a random location.  GCC 4.4 or newer don't have
   those issues, regardless the RAX register value.
 
-.. option:: -m8bit-idiv
+.. option:: -m8bit-idiv, -mno-8bit-idiv
 
   On some processors, like Intel Atom, 8-bit unsigned integer divide is
   much faster than 32-bit/64-bit integer divide.  This option generates a
@@ -1444,7 +1444,7 @@ on x86-64 processors in 64-bit environments.
   and x32 environments.  It is the default address mode for 32-bit and
   x32 environments.
 
-.. option:: -mneeded
+.. option:: -mneeded, -mno-needed
 
   Emit GNU_PROPERTY_X86_ISA_1_NEEDED GNU property for Linux target to
   indicate the micro-architecture ISA level required to execute the binary.

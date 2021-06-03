@@ -282,7 +282,7 @@ are given below.
 
   The default is :option:`-mno-rtd`.
 
-.. option:: -malign-int, -mno-align-int, -mpcrel
+.. option:: -malign-int, -mno-align-int
 
   Control whether GCC aligns ``int``, ``long``, ``long long``,
   ``float``, ``double``, and ``long double`` variables on a 32-bit

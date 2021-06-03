@@ -65,7 +65,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   function address into a register before performing a (otherwise direct) call.
   This is the default.
 
-.. option:: -mshort-calls, -short-calls
+.. option:: -mshort-calls
 
   If not otherwise specified by an attribute, assume all direct calls are
   in the range of the ``b`` / ``bl`` instructions, so use these instructions
@@ -112,14 +112,14 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
     The default is :option:`-mfp-mode`:samp:`=caller`
 
-.. option:: -mno-split-lohi, -msplit-lohi, -mno-postinc, -mpostinc, -mno-postmodify, -mpostmodify
+.. option:: -mno-split-lohi, -mno-postinc, -mno-postmodify, -msplit-lohi, -mpostinc, -mpostmodify
 
   Code generation tweaks that disable, respectively, splitting of 32-bit
   loads, generation of post-increment addresses, and generation of
   post-modify addresses.  The defaults are msplit-lohi,
   :option:`-mpost-inc`, and :option:`-mpost-modify`.
 
-.. option:: -mnovect-double, -mno-vect-double, -mvect-double
+.. option:: -mnovect-double
 
   Change the preferred SIMD mode to SImode.  The default is
   :option:`-mvect-double`, which uses DImode as preferred SIMD mode.
@@ -138,7 +138,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   can give better register allocation, but so far the reverse seems to be
   generally the case.
 
-.. option:: -m1reg-reg, -m1reg-
+.. option:: -m1reg-reg
 
   Specify a register to hold the constant -1, which makes loading small negative
   constants and certain bitmasks faster.

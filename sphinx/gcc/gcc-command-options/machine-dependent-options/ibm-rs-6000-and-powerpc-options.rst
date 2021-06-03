@@ -526,7 +526,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Specify both :option:`-mcall-sysv` and :option:`-mno-eabi` options.
 
-.. option:: -mcall-aixdesc, -m
+.. option:: -mcall-aixdesc
 
   On System V.4 and embedded PowerPC systems compile code for the AIX
   operating system.
@@ -546,7 +546,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   On System V.4 and embedded PowerPC systems compile code for the
   NetBSD operating system.
 
-.. option:: -mcall-openbsd, -mcall-netbsd
+.. option:: -mcall-openbsd
 
   On System V.4 and embedded PowerPC systems compile code for the
   OpenBSD operating system.
@@ -748,7 +748,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   end of the inline compare a call to ``strcmp`` or ``strncmp`` will
   take care of the rest of the comparison. The default is 64 bytes.
 
-.. option:: -G num, -G
+.. option:: -G num
 
   .. index:: smaller data references (PowerPC)
 
@@ -823,7 +823,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   TLS optimization, which in turn allows GCC to better schedule the
   sequence.
 
-.. option:: -mrecip
+.. option:: -mrecip, -mno-recip
 
   This option enables use of the reciprocal estimate and
   reciprocal square root estimate instructions with additional
@@ -878,7 +878,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   ``FRSQRTE``, ``XSRSQRTEDP``, and ``XVRSQRTEDP`` instructions
   which handle the double-precision reciprocal square root calculations.
 
-.. option:: -mrecip-precision
+.. option:: -mrecip-precision, -mno-recip-precision
 
   Assume (do not assume) that the reciprocal estimate instructions
   provide higher-precision estimates than is mandated by the PowerPC
@@ -912,7 +912,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   :option:`-funsafe-math-optimizations` must also be enabled.  The MASS
   libraries must be specified at link time.
 
-.. option:: -mfriz
+.. option:: -mfriz, -mno-friz
 
   Generate (do not generate) the ``friz`` instruction when the
   :option:`-funsafe-math-optimizations` option is used to optimize
@@ -920,7 +920,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   point.  The ``friz`` instruction does not return the same value if
   the floating-point number is too large to fit in an integer.
 
-.. option:: -mpointers-to-nested-functions
+.. option:: -mpointers-to-nested-functions, -mno-pointers-to-nested-functions
 
   Generate (do not generate) code to load up the static chain register
   ( ``r11`` ) when calling through a pointer on AIX and 64-bit Linux
@@ -932,7 +932,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   to functions compiled in other languages that use the static chain if
   you use :option:`-mno-pointers-to-nested-functions`.
 
-.. option:: -msave-toc-indirect
+.. option:: -msave-toc-indirect, -mno-save-toc-indirect
 
   Generate (do not generate) code to save the TOC value in the reserved
   stack location in the function prologue if the function calls through
@@ -940,7 +940,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   saved in the prologue, it is saved just before the call through the
   pointer.  The :option:`-mno-save-toc-indirect` option is the default.
 
-.. option:: -mcompat-align-parm
+.. option:: -mcompat-align-parm, -mno-compat-align-parm
 
   Generate (do not generate) code to pass structure parameters with a
   maximum alignment of 64 bits, for compatibility with older versions
@@ -996,7 +996,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) code that will run in privileged state.
 
-.. option:: -mblock-ops-unaligned-vsx, -block-ops-unaligned-vsx, -no-block-ops-unaligned-vsx
+.. option:: -mblock-ops-unaligned-vsx, -mno-block-ops-unaligned-vsx
 
   Generate (do not generate) unaligned vsx loads and stores for
   inline expansion of ``memcpy`` and ``memmove``.

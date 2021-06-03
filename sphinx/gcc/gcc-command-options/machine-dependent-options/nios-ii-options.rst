@@ -9,7 +9,7 @@ Nios II Options
 
 These are the options defined for the Altera Nios II processor.
 
-.. option:: -G num, -G
+.. option:: -G num
 
   .. index:: smaller data references
 
@@ -112,7 +112,7 @@ These are the options defined for the Altera Nios II processor.
   using I/O variants of the instructions. The default is not to
   bypass the cache.
 
-.. option:: -mno-cache-volatile , -mcache-volatile, -mno-cache-volatile
+.. option:: -mno-cache-volatile, -mcache-volatile
 
   Volatile memory access bypass the cache using the I/O variants of 
   the load and store instructions. The default is not to bypass the cache.

@@ -458,7 +458,7 @@ it.
   Do not use bit tests for switch statements even where it would be
   more efficient than other code generation strategies.
 
-.. option:: -ffixed-reg, -ffixed
+.. option:: -ffixed-reg
 
   Treat the register named :samp:`{reg}` as a fixed register; generated code
   should never refer to it (except perhaps as a stack pointer, frame
@@ -471,7 +471,7 @@ it.
   This flag does not have a negative form, because it specifies a
   three-way choice.
 
-.. option:: -fcall-used-reg, -fcall-used
+.. option:: -fcall-used-reg
 
   Treat the register named :samp:`{reg}` as an allocable register that is
   clobbered by function calls.  It may be allocated for temporaries or
@@ -485,7 +485,7 @@ it.
   This flag does not have a negative form, because it specifies a
   three-way choice.
 
-.. option:: -fcall-saved-reg, -fcall-saved
+.. option:: -fcall-saved-reg
 
   Treat the register named :samp:`{reg}` as an allocable register saved by
   functions.  It may be allocated even for temporaries or variables that

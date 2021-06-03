@@ -21,12 +21,12 @@ compatibility with other compilers on those systems:
   Refrain from adding ``.ident`` directives to the output file (this is
   the default).
 
-.. option:: -YP,dirs, -YP
+.. option:: -YP,dirs
 
   Search the directories :samp:`{dirs}`, and no others, for libraries
   specified with :option:`-l`.
 
-.. option:: -Ym,dir, -Ym
+.. option:: -Ym,dir
 
   Look in the directory :samp:`{dir}` to find the M4 preprocessor.
   The assembler uses this option.

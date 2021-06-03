@@ -556,7 +556,7 @@ The following attributes are supported on most targets.
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
-.. option:: format (archetype, string-index, first-to-check), -Wformat, -ffreestanding, -fno-builtin
+.. option:: format (archetype, string-index, first-to-check)
 
   .. index:: format function attribute
 
@@ -632,7 +632,7 @@ The following attributes are supported on most targets.
   See :ref:`Format Checks Specific to Particular
   Target Machines <target-format-checks>`.
 
-.. option:: format_arg (string-index), -Wformat-nonliteral
+.. option:: format_arg (string-index)
 
   .. index:: format_arg function attribute
 
@@ -1003,7 +1003,7 @@ The following attributes are supported on most targets.
   This function attribute prevents a functions from being merged with another
   semantically equivalent function.
 
-.. option:: no_instrument_function, -finstrument-functions, -p, -pg
+.. option:: no_instrument_function
 
   .. index:: no_instrument_function function attribute
 
@@ -1083,7 +1083,7 @@ The following attributes are supported on most targets.
   to inform the compiler that it should not do coverage-guided
   fuzzing code instrumentation ( :option:`-fsanitize-coverage` ).
 
-.. option:: no_split_stack, -fsplit-stack
+.. option:: no_split_stack
 
   .. index:: no_split_stack function attribute
 
@@ -4208,7 +4208,7 @@ x86 Function Attributes
 
 These function attributes are supported by the x86 back end:
 
-.. option:: cdecl, -mrtd
+.. option:: cdecl
 
   .. index:: cdecl function attribute, x86-32
 

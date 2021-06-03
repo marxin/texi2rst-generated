@@ -1,4 +1,4 @@
-.. option:: -I dir, -I, -iquote, -isystem, -idirafter
+.. option:: -I dir, -iquote dir, -isystem dir, -idirafter dir
 
   Add the directory :samp:`{dir}` to the list of directories to be searched
   for header files during preprocessing.
@@ -78,27 +78,27 @@
   "file"``.  There is no way to override this effect of :option:`-I-`.
   See :ref:`search-path`.
 
-.. option:: -iprefix prefix, -iprefix
+.. option:: -iprefix prefix
 
   Specify :samp:`{prefix}` as the prefix for subsequent :option:`-iwithprefix`
   options.  If the prefix represents a directory, you should include the
   final :samp:`/`.
 
-.. option:: -iwithprefix dir, -iwithprefix, -iwithprefixbefore
+.. option:: -iwithprefix dir, -iwithprefixbefore dir
 
   Append :samp:`{dir}` to the prefix specified previously with
   :option:`-iprefix`, and add the resulting directory to the include search
   path.  :option:`-iwithprefixbefore` puts it in the same place :option:`-I`
   would; :option:`-iwithprefix` puts it where :option:`-idirafter` would.
 
-.. option:: -isysroot dir, -isysroot
+.. option:: -isysroot dir
 
   This option is like the :option:`--sysroot` option, but applies only to
   header files (except for Darwin targets, where it applies to both header
   files and libraries).  See the :option:`--sysroot` option for more
   information.
 
-.. option:: -imultilib dir, -imultilib
+.. option:: -imultilib dir
 
   Use :samp:`{dir}` as a subdirectory of the directory containing
   target-specific C++ headers.

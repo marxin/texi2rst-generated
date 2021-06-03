@@ -31,7 +31,7 @@ a :samp:`ppc970` object file in a :samp:`ppc7400` library).  The linker
 for executables, :command:`ld`, quietly gives the executable the most
 restrictive subtype of any of its input files.
 
-.. option:: -Fdir, -F
+.. option:: -Fdir
 
   Add the framework directory :samp:`{dir}` to the head of the list of
   directories to be searched for header files.  These directories are
@@ -59,7 +59,7 @@ restrictive subtype of any of its input files.
   the name of the framework and header.h is found in the
   PrivateHeaders or Headers directory.
 
-.. option:: -iframeworkdir, -iframework
+.. option:: -iframeworkdir
 
   Like :option:`-F` except the directory is a treated as a system
   directory.  The main difference between this :option:`-iframework` and
@@ -137,7 +137,7 @@ restrictive subtype of any of its input files.
   Produce a Mach-o bundle format file.
   See man ld(1) for more information.
 
-.. option:: -bundle_loader executable, -bundle_loader
+.. option:: -bundle_loader executable
 
   This option specifies the :samp:`{executable}` that will load the build
   output file being linked.  See man ld(1) for more information.
@@ -152,7 +152,7 @@ restrictive subtype of any of its input files.
   This causes GCC's output file to have the :samp:`ALL` subtype, instead of
   one controlled by the :option:`-mcpu` or :option:`-march` option.
 
-.. option:: -allowable_client  client_name, -allowable_client, -client_name, -compatibility_version, -current_version, -dead_strip, -dependency-file, -dylib_file, -dylinker_install_name, -dynamic, -exported_symbols_list, -filelist, -flat_namespace, -force_flat_namespace, -headerpad_max_install_names, -image_base, -init, -install_name, -keep_private_externs, -multi_module, -multiply_defined, -multiply_defined_unused, -noall_load, -no_dead_strip_inits_and_terms, -nofixprebinding, -nomultidefs, -noprebind, -noseglinkedit, -pagezero_size, -prebind, -prebind_all_twolevel_modules, -private_bundle, -read_only_relocs, -sectalign, -sectobjectsymbols, -whyload, -seg1addr, -sectcreate, -sectorder, -segaddr, -segs_read_only_addr, -segs_read_write_addr, -seg_addr_table, -seg_addr_table_filename, -seglinkedit, -segprot, -single_module, -static, -sub_library, -sub_umbrella, -twolevel_namespace, -umbrella, -undefined, -unexported_symbols_list, -weak_reference_mismatches, -whatsloaded
+.. option:: -allowable_client  client_name, -client_name, -compatibility_version, -current_version, -dead_strip, -dependency-file, -dylib_file, -dylinker_install_name, -dynamic, -exported_symbols_list, -filelist, -flat_namespace, -force_flat_namespace, -headerpad_max_install_names, -image_base, -init, -install_name, -keep_private_externs, -multi_module, -multiply_defined, -multiply_defined_unused, -noall_load, -no_dead_strip_inits_and_terms, -nofixprebinding, -nomultidefs, -noprebind, -noseglinkedit, -pagezero_size, -prebind, -prebind_all_twolevel_modules, -private_bundle, -read_only_relocs, -sectalign, -sectobjectsymbols, -whyload, -seg1addr, -sectcreate, -sectobjectsymbols, -sectorder, -segaddr, -segs_read_only_addr, -segs_read_write_addr, -seg_addr_table, -seg_addr_table_filename, -seglinkedit, -segprot, -segs_read_only_addr, -segs_read_write_addr, -single_module, -static, -sub_library, -sub_umbrella, -twolevel_namespace, -umbrella, -undefined, -unexported_symbols_list, -weak_reference_mismatches, -whatsloaded
 
   These options are passed to the Darwin linker.  The Darwin linker man page
   describes them in detail.

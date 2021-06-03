@@ -15,7 +15,7 @@ These :option:`-m` options are defined for the LatticeMico32 architecture:
 
   Enable divide and modulus instructions.
 
-.. option:: -mmultiply-enabled, -multiply-enabled
+.. option:: -mmultiply-enabled
 
   Enable multiply instructions.
 

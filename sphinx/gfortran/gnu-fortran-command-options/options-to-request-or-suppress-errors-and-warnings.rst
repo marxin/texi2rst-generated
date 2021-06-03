@@ -56,7 +56,7 @@ by GNU Fortran:
   will generate module files for each module present in the code, but no
   other output file.
 
-.. option:: -Wpedantic
+.. option:: -Wpedantic, -pedantic
 
   .. index:: pedantic
 
