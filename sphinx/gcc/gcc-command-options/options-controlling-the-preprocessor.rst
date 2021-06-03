@@ -24,7 +24,7 @@ Warning Options.
 .. include:: ../../share/cppopts.rst
 
 
-.. option:: -Wp,option, -Wp
+.. option:: -Wp,option
 
   You can use :option:`-Wp,`:samp:`{option}` to bypass the compiler driver
   and pass :samp:`{option}` directly through to the preprocessor.  If
@@ -36,7 +36,7 @@ Warning Options.
   you should avoid using :option:`-Wp` and let the driver handle the
   options instead.
 
-.. option:: -Xpreprocessor option, -Xpreprocessor
+.. option:: -Xpreprocessor option
 
   Pass :samp:`{option}` as an option to the preprocessor.  You can use this to
   supply system-specific preprocessor options that GCC does not 

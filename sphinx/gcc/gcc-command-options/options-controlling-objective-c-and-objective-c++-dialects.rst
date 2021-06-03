@@ -186,7 +186,7 @@ and Objective-C++ programs:
   Dump interface declarations for all classes seen in the source file to a
   file named :samp:`{sourcename}`.decl.
 
-.. option:: -Wassign-intercept , -Wassign-intercept, -Wno-assign-intercept
+.. option:: -Wassign-intercept, -Wno-assign-intercept
 
   .. note::
 
@@ -195,7 +195,7 @@ and Objective-C++ programs:
   Warn whenever an Objective-C assignment is being intercepted by the
   garbage collector.
 
-.. option:: -Wno-property-assign-default , -Wproperty-assign-default, -Wno-property-assign-default
+.. option:: -Wno-property-assign-default, -Wproperty-assign-default
 
   .. note::
 
@@ -204,7 +204,7 @@ and Objective-C++ programs:
   Do not warn if a property for an Objective-C object has no assign
   semantics specified.
 
-.. option:: -Wno-protocol , -Wno-protocol, -Wprotocol
+.. option:: -Wno-protocol, -Wprotocol
 
   .. note::
 
@@ -218,7 +218,7 @@ and Objective-C++ programs:
   methods inherited from the superclass are considered to be implemented,
   and no warning is issued for them.
 
-.. option:: -Wobjc-root-class , -Wobjc-root-class
+.. option:: -Wobjc-root-class
 
   .. note::
 
@@ -229,7 +229,7 @@ and Objective-C++ programs:
   classes intended to be root classes, the warning can be suppressed by
   marking their interfaces with ``__attribute__((objc_root_class))``.
 
-.. option:: -Wselector , -Wselector, -Wno-selector
+.. option:: -Wselector, -Wno-selector
 
   .. note::
 
@@ -246,7 +246,7 @@ and Objective-C++ programs:
   found during compilation, or because the :option:`-fsyntax-only` option is
   being used.
 
-.. option:: -Wstrict-selector-match , -Wstrict-selector-match, -Wno-strict-selector-match
+.. option:: -Wstrict-selector-match, -Wno-strict-selector-match
 
   .. note::
 
@@ -259,7 +259,7 @@ and Objective-C++ programs:
   if any differences found are confined to types that share the same size
   and alignment.
 
-.. option:: -Wundeclared-selector , -Wundeclared-selector, -Wno-undeclared-selector
+.. option:: -Wundeclared-selector, -Wno-undeclared-selector
 
   .. note::
 

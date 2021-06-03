@@ -3,7 +3,7 @@
 Options That Control Static Analysis
 ************************************
 
-.. option:: -fanalyzer, -analyzer, -fno-analyzer
+.. option:: -fanalyzer, -fno-analyzer
 
   This option enables an static analysis of program flow which looks
   for 'interesting' interprocedural paths through the
@@ -396,23 +396,23 @@ The following options control the analyzer.
   Nodes are color-coded based on state-machine states to emphasize
   state changes.
 
-.. option:: -fdump-analyzer-exploded-nodes, -dump-analyzer-exploded-nodes
+.. option:: -fdump-analyzer-exploded-nodes
 
   Emit diagnostics showing where nodes in the 'exploded graph' are
   in relation to the program source.
 
-.. option:: -fdump-analyzer-exploded-nodes-2, -dump-analyzer-exploded-nodes-2
+.. option:: -fdump-analyzer-exploded-nodes-2
 
   Dump a textual representation of the 'exploded graph' to
   :samp:`{file}`.eg.txt.
 
-.. option:: -fdump-analyzer-exploded-nodes-3, -dump-analyzer-exploded-nodes-3
+.. option:: -fdump-analyzer-exploded-nodes-3
 
   Dump a textual representation of the 'exploded graph' to
   one dump file per node, to :samp:`{file}`.eg- :samp:`{id}`.txt.
   This is typically a large number of dump files.
 
-.. option:: -fdump-analyzer-feasibility, -dump-analyzer-feasibility
+.. option:: -fdump-analyzer-feasibility
 
   Dump internal details about the analyzer's search for feasible paths.
   The details are written in a form suitable for viewing with GraphViz

@@ -11,7 +11,7 @@ These command-line options are defined for RISC-V targets:
 
   Set the cost of branches to roughly :samp:`{n}` instructions.
 
-.. option:: -mplt, -plt
+.. option:: -mplt, -mno-plt
 
   When generating PIC code, do or don't allow the use of PLTs. Ignored for
   non-PIC.  The default is :option:`-mplt`.
@@ -39,13 +39,13 @@ These command-line options are defined for RISC-V targets:
   only be used with the :samp:`rv32e` architecture.  This ABI is not well
   specified at present, and is subject to change.
 
-.. option:: -mfdiv
+.. option:: -mfdiv, -mno-fdiv
 
   Do or don't use hardware floating-point divide and square root instructions.
   This requires the F or D extensions for floating-point registers.  The default
   is to use them if the specified architecture has these instructions.
 
-.. option:: -mdiv
+.. option:: -mdiv, -mno-div
 
   Do or don't use hardware instructions for integer division.  This requires the
   M extension.  The default is to use them if the specified architecture has
@@ -102,13 +102,13 @@ These command-line options are defined for RISC-V targets:
   Put global and static data smaller than :samp:`{n}` bytes into a special section
   (on some targets).
 
-.. option:: -msave-restore
+.. option:: -msave-restore, -mno-save-restore
 
   Do or don't use smaller but slower prologue and epilogue code that uses
   library function calls.  The default is to use fast inline prologues and
   epilogues.
 
-.. option:: -mshorten-memrefs
+.. option:: -mshorten-memrefs, -mno-shorten-memrefs
 
   Do or do not attempt to make more use of compressed load/store instructions by
   replacing a load/store of 'base register + large offset' with a new load/store
@@ -116,7 +116,7 @@ These command-line options are defined for RISC-V targets:
   register, then the new load/store can be compressed.  Currently targets 32-bit
   integer load/stores only.
 
-.. option:: -mstrict-align
+.. option:: -mstrict-align, -mno-strict-align
 
   Do not or do generate unaligned memory accesses.  The default is set depending
   on whether the processor we are optimizing for supports fast unaligned access

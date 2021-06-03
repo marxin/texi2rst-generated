@@ -13,7 +13,7 @@ Preprocessor related options. See section
 Preprocessing and conditional compilation for more detailed
 information on preprocessing in :command:`gfortran`.
 
-.. option:: -cpp
+.. option:: -cpp, -nocpp
 
   .. index:: cpp
 

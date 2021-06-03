@@ -1,4 +1,4 @@
-.. option:: -D name, -D
+.. option:: -D name
 
   Predefine :samp:`{name}` as a macro, with definition ``1``.
 
@@ -23,12 +23,12 @@
   :option:`-include `:samp:`{file}` options are processed after all
   :option:`-D` and :option:`-U` options.
 
-.. option:: -U name, -U
+.. option:: -U name
 
   Cancel any previous definition of :samp:`{name}`, either built in or
   provided with a :option:`-D` option.
 
-.. option:: -include file, -include
+.. option:: -include file
 
   Process :samp:`{file}` as if ``#include "file"`` appeared as the first
   line of the primary source file.  However, the first directory searched
@@ -40,7 +40,7 @@
   If multiple :option:`-include` options are given, the files are included
   in the order they appear on the command line.
 
-.. option:: -imacros file, -imacros
+.. option:: -imacros file
 
   Exactly like :option:`-include`, except that any output produced by
   scanning :samp:`{file}` is thrown away.  Macros it defines remain defined.
@@ -106,7 +106,7 @@
   :samp:`#include` directive does not in itself determine whether that
   header appears in :option:`-MM` dependency output.
 
-.. option:: -MF file, -MF
+.. option:: -MF file
 
   When used with :option:`-M` or :option:`-MM`, specifies a
   file to write the dependencies to.  If no :option:`-MF` switch is given
@@ -149,7 +149,7 @@
 
     test.h:
 
-.. option:: -MT target, -MT
+.. option:: -MT target
 
   Change the target of the rule emitted by dependency generation.  By
   default CPP takes the name of the main input file, deletes any
@@ -166,7 +166,7 @@
 
     $(objpfx)foo.o: foo.c
 
-.. option:: -MQ target, -MQ
+.. option:: -MQ target
 
   Same as :option:`-MT`, but it quotes any characters which are special to
   Make.  -MQ '$(objpfx)foo.o' gives
@@ -482,7 +482,7 @@
   printed, even if they are found to be invalid; an invalid precompiled
   header file is printed with :samp:`...x` and a valid one with :samp:`...!` .
 
-.. option:: -dletters, -d
+.. option:: -dletters
 
   Says to make debugging dumps during compilation as specified by
   :samp:`{letters}`.  The flags documented here are those relevant to the

@@ -47,7 +47,7 @@ information useful for debugging do not run at all, so that
   if neither of those are supported), including GDB extensions if at all
   possible.
 
-.. option:: -gdwarf
+.. option:: -gdwarf, -gdwarf-version
 
   Produce debugging information in DWARF format (if that is supported).
   The value of :samp:`{version}` may be either 2, 3, 4 or 5; the default

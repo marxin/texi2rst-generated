@@ -15,7 +15,7 @@ is being compiled:
   Generate instructions supported by barrel shifter.  This is the default
   unless :option:`-mcpu`:samp:`=ARC601` or :samp:`-mcpu=ARCEM` is in effect.
 
-.. option:: -mjli-always, -mjli-alawys
+.. option:: -mjli-always
 
   Force to call a function using jli_s instruction.  This option is
   valid only for ARCv2 architecture.
@@ -34,11 +34,11 @@ is being compiled:
   :samp:`arc600`
     Compile for ARC600.  Aliases: :option:`-mA6`, :option:`-mARC600`.
 
-  .. option:: arc601, -mARC601
+  .. option:: arc601
 
     Compile for ARC601.  Alias: :option:`-mARC601`.
 
-  .. option:: arc700, -mA7, -mARC700
+  .. option:: arc700
 
     Compile for ARC700.  Aliases: :option:`-mA7`, :option:`-mARC700`.
     This is the default when configured with :option:`--with-cpu`:samp:`=arc700`.
@@ -466,7 +466,7 @@ The following options control the semantics of generated code:
   conditional branch-and-link.  This is the default for tool chains built
   for ``arc-linux-uclibc`` and ``arceb-linux-uclibc`` targets.
 
-.. option:: -G num, -G
+.. option:: -G num
 
   Put definitions of externally-visible data in a small data section if
   that data is no bigger than :samp:`{num}` bytes.  The default value of

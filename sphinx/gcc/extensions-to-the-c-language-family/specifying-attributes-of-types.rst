@@ -358,7 +358,7 @@ The following type attributes are supported on most targets.
   ``__word__`` for the mode of a one-word integer, and ``pointer``
   or ``__pointer__`` for the mode used to represent pointers.
 
-.. option:: packed, -fshort-enums
+.. option:: packed
 
   .. index:: packed type attribute
 

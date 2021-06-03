@@ -33,7 +33,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   :samp:`ck810`, :samp:`ck810v`, :samp:`ck810f`, :samp:`ck810t`, :samp:`ck810fv`,
   :samp:`ck810tv`, :samp:`ck810ft`, and :samp:`ck810ftv`.
 
-.. option:: -mbig-endian, -EL
+.. option:: -mbig-endian, -EB, -mlittle-endian, -EL
 
   Select big- or little-endian code.  The default is little-endian.
 
@@ -59,13 +59,13 @@ GCC supports these options when compiling for C-SKY V2 processors.
   Select hardware or software floating-point implementations.
   The default is soft float.
 
-.. option:: -mdouble-float
+.. option:: -mdouble-float, -mno-double-float
 
   When :option:`-mhard-float` is in effect, enable generation of
   double-precision float instructions.  This is the default except
   when compiling for CK803.
 
-.. option:: -mfdivdu
+.. option:: -mfdivdu, -mno-fdivdu
 
   When :option:`-mhard-float` is in effect, enable generation of
   ``frecipd``, ``fsqrtd``, and ``fdivd`` instructions.
@@ -80,12 +80,12 @@ GCC supports these options when compiling for C-SKY V2 processors.
   :samp:`fpv2` (:samp:`-mdouble-float -mno-divdu`), and
   :samp:`fpv2_divd` (:samp:`-mdouble-float -mdivdu`).
 
-.. option:: -melrw
+.. option:: -melrw, -mno-elrw
 
   Enable the extended ``lrw`` instruction.  This option defaults to on
   for CK801 and off otherwise.
 
-.. option:: -mistack
+.. option:: -mistack, -mno-istack
 
   Enable interrupt stack instructions; the default is off.
 
@@ -113,43 +113,43 @@ GCC supports these options when compiling for C-SKY V2 processors.
 
   Enable C-SKY trust instructions; the default is off.
 
-.. option:: -mdsp, -mvdsp
+.. option:: -mdsp, -medsp, -mvdsp
 
   Enable C-SKY DSP, Enhanced DSP, or Vector DSP instructions, respectively.
   All of these options default to off.
 
-.. option:: -mdiv
+.. option:: -mdiv, -mno-div
 
   Generate divide instructions.  Default is off.
 
-.. option:: -msmart
+.. option:: -msmart, -mno-smart
 
   Generate code for Smart Mode, using only registers numbered 0-7 to allow
   use of 16-bit instructions.  This option is ignored for CK801 where this
   is the required behavior, and it defaults to on for CK802.
   For other targets, the default is off.
 
-.. option:: -mhigh-registers
+.. option:: -mhigh-registers, -mno-high-registers
 
   Generate code using the high registers numbered 16-31.  This option
   is not supported on CK801, CK802, or CK803, and is enabled by default
   for other processors.
 
-.. option:: -manchor
+.. option:: -manchor, -mno-anchor
 
   Generate code using global anchor symbol addresses.
 
-.. option:: -mpushpop
+.. option:: -mpushpop, -mno-pushpop
 
   Generate code using ``push`` and ``pop`` instructions.  This option
   defaults to on.
 
-.. option:: -mmultiple-stld
+.. option:: -mmultiple-stld, -mstm, -mno-multiple-stld, -mno-stm
 
   Generate code using ``stm`` and ``ldm`` instructions.  This option
   isn't supported on CK801 but is enabled by default on other processors.
 
-.. option:: -mconstpool
+.. option:: -mconstpool, -mno-constpool
 
   Create constant pools in the compiler instead of deferring it to the
   assembler.  This option is the default and required for correct code
@@ -161,7 +161,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   Emit ``.stack_size`` directives for each function in the assembly
   output.  This option defaults to off.
 
-.. option:: -mccrt
+.. option:: -mccrt, -mno-ccrt
 
   Generate code for the C-SKY compiler runtime instead of libgcc.  This
   option defaults to off.
@@ -170,7 +170,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
 
   Set the branch costs to roughly ``n`` instructions.  The default is 1.
 
-.. option:: -msched-prolog
+.. option:: -msched-prolog, -mno-sched-prolog
 
   Permit scheduling of function prologue and epilogue sequences.  Using
   this option can result in code that is not compliant with the C-SKY V2 ABI

@@ -431,7 +431,7 @@ These :samp:`-m` options are defined for the SH implementations:
   Prefer zero-displacement conditional branches for conditional move instruction
   patterns.  This can result in faster code on the SH4 processor.
 
-.. option:: -mfdpic, -fdpic
+.. option:: -mfdpic
 
   Generate code using the FDPIC ABI.
 

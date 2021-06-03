@@ -436,7 +436,7 @@ MIPS Options
   Use (do not use) the MIPS-3D ASE.  See :ref:`mips-3d-built-in-functions`.
   The option :option:`-mips3d` implies :option:`-mpaired-single`.
 
-.. option:: -mmicromips, -mno-mmicromips
+.. option:: -mmicromips, -mno-micromips
 
   Generate (do not generate) microMIPS code.
 
@@ -507,7 +507,7 @@ MIPS Options
   :option:`-mabi`:samp:`=64` and :option:`-mno-abicalls` because it allows GCC
   to generate shorter and faster references to symbolic addresses.
 
-.. option:: -G num, -G
+.. option:: -G num
 
   Put definitions of externally-visible data in a small data section
   if that data is no bigger than :samp:`{num}` bytes.  GCC can then generate
@@ -727,7 +727,7 @@ MIPS Options
   :option:`-march`:samp:`=r10000` is used; :option:`-mno-fix-r10000` is the default
   otherwise.
 
-.. option:: -mfix-r5900
+.. option:: -mfix-r5900, -mno-fix-r5900
 
   Do not attempt to schedule the preceding instruction into the delay slot
   of a branch instruction placed at the end of a short loop of six
@@ -736,12 +736,12 @@ MIPS Options
   execute only once or twice, due to a hardware bug in the R5900 chip.  The
   workaround is implemented by the assembler rather than by GCC.
 
-.. option:: -mfix-rm7000
+.. option:: -mfix-rm7000, -mno-fix-rm7000
 
   Work around the RM7000 ``dmult`` / ``dmultu`` errata.  The
   workarounds are implemented by the assembler rather than by GCC.
 
-.. option:: -mfix-vr4120
+.. option:: -mfix-vr4120, -mno-fix-vr4120
 
   Work around certain VR4120 errata:
 
@@ -765,7 +765,7 @@ MIPS Options
   VR4130 ``macc``, ``macchi``, ``dmacc`` and ``dmacchi``
   instructions are available instead.
 
-.. option:: -mfix-sb1
+.. option:: -mfix-sb1, -mno-fix-sb1
 
   Work around certain SB-1 CPU core errata.
   (This flag currently works around the SB-1 revision 2
@@ -878,7 +878,7 @@ MIPS Options
   slot is successfully filled.  If the delay slot is not filled, a compact
   branch will be chosen if one is available.
 
-.. option:: -mfp-exceptions
+.. option:: -mfp-exceptions, -mno-fp-exceptions
 
   Specifies whether FP exceptions are enabled.  This affects how
   FP instructions are scheduled for some processors.
@@ -889,7 +889,7 @@ MIPS Options
   64-bit code, then we can use both FP pipes.  Otherwise, we can only use one
   FP pipe.
 
-.. option:: -mvr4130-align
+.. option:: -mvr4130-align, -mno-vr4130-align
 
   The VR4130 pipeline is two-way superscalar, but can only issue two
   instructions together if the first one is 8-byte aligned.  When this
@@ -900,7 +900,7 @@ MIPS Options
   It normally makes code faster, but at the expense of making it bigger.
   It is enabled by default at optimization level :option:`-O3`.
 
-.. option:: -msynci
+.. option:: -msynci, -mno-synci
 
   Enable (disable) generation of ``synci`` instructions on
   architectures that support it.  The ``synci`` instructions (if
@@ -915,7 +915,7 @@ MIPS Options
   does not invalidate the instruction caches on all cores and may lead
   to undefined behavior.
 
-.. option:: -mrelax-pic-calls
+.. option:: -mrelax-pic-calls, -mno-relax-pic-calls
 
   Try to turn PIC calls that are normally dispatched via register
   ``$25`` into direct calls.  This is only possible if the linker can
@@ -944,7 +944,7 @@ MIPS Options
 
   The default is :option:`-mno-mcount-ra-address`.
 
-.. option:: -mframe-header-opt
+.. option:: -mframe-header-opt, -mno-frame-header-opt
 
   Enable (disable) frame header optimization in the o32 ABI.  When using the
   o32 ABI, calling functions will allocate 16 bytes on the stack for the called
@@ -954,12 +954,12 @@ MIPS Options
 
   This optimization is off by default at all optimization levels.
 
-.. option:: -mlxc1-sxc1
+.. option:: -mlxc1-sxc1, -mno-lxc1-sxc1
 
   When applicable, enable (disable) the generation of ``lwxc1``,
   ``swxc1``, ``ldxc1``, ``sdxc1`` instructions.  Enabled by default.
 
-.. option:: -mmadd4
+.. option:: -mmadd4, -mno-madd4
 
   When applicable, enable (disable) the generation of 4-operand ``madd.s``,
   ``madd.d`` and related instructions.  Enabled by default.

@@ -64,7 +64,7 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
   Put small global and static data in the small data area, and generate
   special instructions to reference them.
 
-.. option:: -G num, -G
+.. option:: -G num
 
   .. index:: smaller data references
 

@@ -12,7 +12,7 @@ Options controlling Fortran dialect
 The following options control the details of the Fortran dialect
 accepted by the compiler:
 
-.. option:: -ffree-form
+.. option:: -ffree-form, -ffixed-form
 
   .. index:: ffree-form
 
@@ -66,7 +66,7 @@ accepted by the compiler:
   to a warning, and allows a BOZ literal constant to appear where the
   Fortran standard would otherwise prohibit its use.
 
-.. option:: -fd-lines-as-code
+.. option:: -fd-lines-as-code, -fd-lines-as-comments
 
   .. index:: fd-lines-as-code
 
@@ -383,7 +383,7 @@ accepted by the compiler:
   representation of the translated Fortran code, produced by
   :option:`-fdump-tree-original`, is suggested.
 
-.. option:: -freal-4-real-8
+.. option:: -freal-4-real-8, -freal-4-real-10, -freal-4-real-16, -freal-8-real-4, -freal-8-real-10, -freal-8-real-16
 
   .. index:: freal-4-real-8
 

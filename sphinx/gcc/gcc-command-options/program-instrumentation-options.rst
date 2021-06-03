@@ -69,7 +69,7 @@ program analysis purposes.
 
   .. index:: gcov
 
-.. option:: --coverage, -coverage
+.. option:: --coverage
 
   This option is used to compile and link code instrumented for coverage
   analysis.  The option is a synonym for :option:`-fprofile-arcs`
@@ -154,7 +154,7 @@ program analysis purposes.
   ``%q{VAR}``
     value of environment variable :samp:`{VAR}`
 
-.. option:: -fprofile-generate
+.. option:: -fprofile-generate, -fprofile-generate=path
 
   Enable options usually used for instrumenting application to produce
   profile useful for later recompilation with profile feedback based
@@ -171,7 +171,7 @@ program analysis purposes.
   To optimize the program based on the collected profile information, use
   :option:`-fprofile-use`.  See :ref:`optimize-options`, for more information.
 
-.. option:: -fprofile-info-section
+.. option:: -fprofile-info-section, -fprofile-info-section=name
 
   Register the profile information in the specified section instead of using a
   constructor/destructor.  The section name is :samp:`{name}` if it is specified,

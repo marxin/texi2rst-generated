@@ -885,7 +885,7 @@ optimizations to be performed is desired.
   sense when scheduling before register allocation, i.e. with
   :option:`-fschedule-insns` or at :option:`-O2` or higher.
 
-.. option:: -fsched-stalled-insns
+.. option:: -fsched-stalled-insns, -fsched-stalled-insns=n
 
   Define how many insns (if any) can be moved prematurely from the queue
   of stalled insns into the ready list during the second scheduling pass.
@@ -895,7 +895,7 @@ optimizations to be performed is desired.
   :option:`-fsched-stalled-insns` without a value is equivalent to
   :option:`-fsched-stalled-insns`:samp:`=1`.
 
-.. option:: -fsched-stalled-insns-dep
+.. option:: -fsched-stalled-insns-dep, -fsched-stalled-insns-dep=n
 
   Define how many insn groups (cycles) are examined for a dependency
   on a stalled insn that is a candidate for premature removal from the queue
@@ -1720,7 +1720,7 @@ optimizations to be performed is desired.
   with the :option:`-Wformat-overflow` and :option:`-Wformat-truncation`
   options.  The :option:`-fprintf-return-value` option is enabled by default.
 
-.. option:: -fno-peephole, -fpeephole, -fno-peephole2, -fpeephole2
+.. option:: -fno-peephole, -fno-peephole2, -fpeephole, -fpeephole2
 
   Disable any machine-specific peephole optimizations.  The difference
   between :option:`-fno-peephole` and :option:`-fno-peephole2` is in how they
@@ -1857,7 +1857,7 @@ optimizations to be performed is desired.
   The :option:`-fstrict-aliasing` option is enabled at levels
   :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -falign-functions
+.. option:: -falign-functions, -falign-functions=n, -falign-functions=n:m, -falign-functions=n:m:n2, -falign-functions=n:m:n2:m2
 
   Align the start of functions to the next power-of-two greater than or
   equal to :samp:`{n}`, skipping up to :samp:`{m}` -1 bytes.  This ensures that at
@@ -1896,7 +1896,7 @@ optimizations to be performed is desired.
   by the amount specified by :option:`-falign-functions`, but not to
   skip more bytes than the size of the function.
 
-.. option:: -falign-labels
+.. option:: -falign-labels, -falign-labels=n, -falign-labels=n:m, -falign-labels=n:m:n2, -falign-labels=n:m:n2:m2
 
   Align all branch targets to a power-of-two boundary.
 
@@ -1913,7 +1913,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-loops
+.. option:: -falign-loops, -falign-loops=n, -falign-loops=n:m, -falign-loops=n:m:n2, -falign-loops=n:m:n2:m2
 
   Align loops to a power-of-two boundary.  If the loops are executed
   many times, this makes up for any execution of the dummy padding
@@ -1931,7 +1931,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-jumps
+.. option:: -falign-jumps, -falign-jumps=n, -falign-jumps=n:m, -falign-jumps=n:m:n2, -falign-jumps=n:m:n2:m2
 
   Align branch targets to a power-of-two boundary, for branch targets
   where the targets can only be reached by jumping.  In this case,
@@ -2352,7 +2352,7 @@ optimizations to be performed is desired.
   when train run is not representative but also leads to significantly bigger
   code.
 
-.. option:: -fprofile-use
+.. option:: -fprofile-use, -fprofile-use=path
 
   Enable profile feedback-directed optimizations, 
   and the following optimizations, many of which
@@ -2378,7 +2378,7 @@ optimizations to be performed is desired.
   If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
   the profile feedback data files. See :option:`-fprofile-dir`.
 
-.. option:: -fauto-profile
+.. option:: -fauto-profile, -fauto-profile=path
 
   Enable sampling-based feedback-directed optimizations, 
   and the following optimizations,

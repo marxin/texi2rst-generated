@@ -176,7 +176,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   .. index:: output file option
 
-.. option:: -o file, -o
+.. option:: -o file
 
   Place the primary output in file :samp:`{file}`.  This applies to whatever
   sort of output is being produced, whether it be an executable file, an
@@ -246,7 +246,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :option:`-dumpdir`, :option:`-save-temps`:samp:`=cwd`, and
   :option:`-save-temps`:samp:`=obj`.
 
-.. option:: -dumpbase dumpbase, -dumpbase
+.. option:: -dumpbase dumpbase
 
   This option sets the base name for auxiliary and dump output files.  It
   does not affect the name of the primary output file.  Intermediate
@@ -334,7 +334,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   linking will use dir/foobar. as the prefix for dumps and
   auxiliary files.
 
-.. option:: -dumpbase-ext auxdropsuf, -dumpbase-ext
+.. option:: -dumpbase-ext auxdropsuf
 
   When forming the name of an auxiliary (but not a dump) output file, drop
   trailing :samp:`{auxdropsuf}` from :samp:`{dumpbase}` before appending any
@@ -367,7 +367,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   main-foo.* and main-bar.* and dump outputs named
   main-foo.c.* and main-bar.c.*.
 
-.. option:: -dumpdir dumppfx, -dumpdir
+.. option:: -dumpdir dumppfx
 
   When forming the name of an auxiliary or dump output file, use
   :samp:`{dumppfx}` as a prefix:
@@ -506,7 +506,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   are quoted unless they contain only alphanumeric characters or ``./-_``.
   This is useful for shell scripts to capture the driver-generated command lines.
 
-.. option:: --help, -help
+.. option:: --help
 
   Print (on the standard output) a description of the command-line options
   understood by :command:`gcc`.  If the :option:`-v` option is also specified
@@ -516,7 +516,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   (prior to the :option:`--help` option), then command-line options that
   have no documentation associated with them are also displayed.
 
-.. option:: --target-help, -target-help
+.. option:: --target-help
 
   Print (on the standard output) a description of target-specific command-line
   options for each tool.  For some targets extra target-specific
@@ -625,7 +625,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc -c -Q -O2 --help=optimizers > /tmp/O2-opts
     diff /tmp/O2-opts /tmp/O3-opts | grep enabled
 
-.. option:: --version, -version
+.. option:: --version
 
   Display the version number and copyrights of the invoked GCC.
 
@@ -694,7 +694,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   Define an argument called :samp:`{key}` with a value of :samp:`{value}`
   for the plugin called :samp:`{name}`.
 
-.. option:: -fdump-ada-spec[-slim], -fdump-ada-spec
+.. option:: -fdump-ada-spec[-slim]
 
   For C and C++ source and include files, generate corresponding Ada specs.
   See :ref:`generating-ada-bindings-for-c-and-c++-headers`, which provides detailed documentation on this feature.
