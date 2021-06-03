@@ -5,6 +5,9 @@ Environment variables affecting gfortran
 
 .. index:: environment variable
 
+Environment
+^^^^^^^^^^^
+
 The :command:`gfortran` compiler currently does not make use of any environment
 variables to control its operation above and beyond those
 that affect the operation of :command:`gcc`.

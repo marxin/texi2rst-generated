@@ -5,6 +5,9 @@ Environment Variables Affecting GCC
 
 .. index:: environment variables
 
+Environment
+^^^^^^^^^^^
+
 This section describes several environment variables that affect how GCC
 operates.  Some of them work by specifying directories or prefixes to use
 when searching for various kinds of files.  Some are used to specify other

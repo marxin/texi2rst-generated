@@ -9,6 +9,9 @@ GNU Fortran Command Options
 
 .. index:: options, gfortran command
 
+Description
+^^^^^^^^^^^
+
 The :command:`gfortran` command supports all the options supported by the
 :command:`gcc` command.  Only options specific to GNU Fortran are documented
 here.

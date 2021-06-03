@@ -3,6 +3,9 @@
 Option summary
 **************
 
+Options
+^^^^^^^
+
 Here is a summary of all the options specific to GNU Fortran, grouped
 by type.  Explanations are in the following sections.
 

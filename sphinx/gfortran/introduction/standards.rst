@@ -61,53 +61,24 @@ replacement. (Namely, allocatable or pointers of the type
    Compiler Options
    -
 
-@c man begin COPYRIGHT
-Copyright @copyright{} 2004-2021 Free Software Foundation, Inc.
+Synopsis
+^^^^^^^^
 
-Permission is granted to copy, distribute and/or modify this document
-under the terms of the GNU Free Documentation License, Version 1.3 or
-any later version published by the Free Software Foundation; with the
-Invariant Sections being ``Funding Free Software'', the Front-Cover
-Texts being (a) (see below), and with the Back-Cover Texts being (b)
-(see below).  A copy of the license is included in the gfdl(7) man page.
-
-(a) The FSF's Front-Cover Text is:
-
-     A GNU Manual
-
-(b) The FSF's Back-Cover Text is:
-
-     You have freedom to copy and modify this GNU Manual, like GNU
-     software.  Copies published by the Free Software Foundation raise
-     funds for GNU development.
-@c man end
-@c Set file name and title for the man page.
-@setfilename gfortran
-@settitle GNU Fortran compiler.
-@c man begin SYNOPSIS
-gfortran [@option{-c}|@option{-S}|@option{-E}]
-         [@option{-g}] [@option{-pg}] [@option{-O}@var{level}]
-         [@option{-W}@var{warn}...] [@option{-pedantic}]
-         [@option{-I}@var{dir}...] [@option{-L}@var{dir}...]
-         [@option{-D}@var{macro}[=@var{defn}]...] [@option{-U}@var{macro}]
-         [@option{-f}@var{option}...]
-         [@option{-m}@var{machine-option}...]
-         [@option{-o} @var{outfile}] @var{infile}...
+gfortran [ :option:`-c` | :option:`-S` | :option:`-E` ]
+         [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
+         [ :option:`-W`:samp:`{warn}`...] [ :option:`-pedantic` ]
+         [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+         [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
+         [ :option:`-f`:samp:`{option}`...]
+         [ :option:`-m`:samp:`{machine-option}`...]
+         [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
 
 Only the most useful options are listed here; see below for the
 remainder.
-@c man end
-@c man begin SEEALSO
-gpl(7), gfdl(7), fsf-funding(7),
-cpp(1), gcov(1), gcc(1), as(1), ld(1), gdb(1), dbx(1)
-and the Info entries for @file{gcc}, @file{cpp}, @file{gfortran}, @file{as},
-@file{ld}, @file{binutils} and @file{gdb}.
-@c man end
-@c man begin BUGS
+
 For instructions on reporting bugs, see
 |bugurl|.
-@c man end
-@c man begin AUTHOR
-See the Info entry for @command{gfortran} for contributors to GCC and
+
+See the Info entry for :command:`gfortran` for contributors to GCC and
 GNU Fortran.
-@c man end
+
