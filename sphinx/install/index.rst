@@ -15,5 +15,6 @@ Contents:
   final-installation
   binaries
   host-target-specific-installation-notes-for-gcc
-  option-index
   gnu-free-documentation-license.rst
+
+  option-index
