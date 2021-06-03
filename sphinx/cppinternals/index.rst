@@ -1,5 +1,5 @@
 Welcome to cppinternals documentation!
-===============================
+======================================
 
 Contents:
 
