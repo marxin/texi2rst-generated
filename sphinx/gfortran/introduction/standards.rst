@@ -25,7 +25,7 @@ status and Fortran 2018 status sections of the documentation.
 
 Additionally, the GNU Fortran compilers supports the OpenMP specification
 (version 4.5 and partial support of the features of the 5.0 version,
-http://openmp.org//openmp-specifications/).
+http://openmp.org/openmp-specifications/).
 There also is support for the OpenACC specification (targeting
 version 2.6, http://www.openacc.org/).  See
 https://gcc.gnu.org/wiki/OpenACC for more information.
@@ -45,8 +45,8 @@ The Fortran 95 standard specifies in Part 2 (ISO/IEC 1539-2:2000)
 varying length character strings.  While GNU Fortran currently does not
 support such strings directly, there exist two Fortran implementations
 for them, which work with GNU Fortran.  They can be found at
-http://www.fortran.com//iso_varying_string.f95 and at
-ftp://ftp.nag.co.uk//sc22wg5//ISO_VARYING_STRING/.
+http://www.fortran.com/iso_varying_string.f95 and at
+ftp://ftp.nag.co.uk/sc22wg5/ISO_VARYING_STRING/.
 
 Deferred-length character strings of Fortran 2003 supports part of
 the features of ``ISO_VARYING_STRING`` and should be considered as

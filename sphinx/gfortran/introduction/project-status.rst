@@ -36,7 +36,7 @@ compiler benchmarks <http://www.polyhedron.com/fortran-compiler-comparisons/poly
 large real-world programs, including
 `the HARMONIE and HIRLAM weather forecasting code <http://hirlam.org/>`_ and
 `the Tonto quantum chemistry package <http://physical-chemistry.scb.uwa.edu.au/tonto/wiki/index.php/Main_Page>`_; see
-https://gcc.gnu.org//wiki//GfortranApps for an extended list.
+https://gcc.gnu.org/wiki/GfortranApps for an extended list.
 
 Among other things, the GNU Fortran compiler is intended as a replacement
 for G77.  At this point, nearly all programs that could be compiled with

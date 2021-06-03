@@ -817,7 +817,7 @@ An example of passing an argument by value to a C subroutine foo.:
         end
 
 For details refer to the g77 manual
-https://gcc.gnu.org//onlinedocs//gcc-3.4.6//g77//index.html#Top.
+https://gcc.gnu.org/onlinedocs/gcc-3.4.6/g77/index.html#Top.
 
 Also, ``c_by_val.f`` and its partner ``c_by_val.c`` of the
 GNU Fortran testsuite are worth a look.

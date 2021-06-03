@@ -25,7 +25,7 @@ works with the Apple/NeXT Objective-C runtime library.
 There is no formal written standard for Objective-C or Objective-C++.
 The authoritative manual on traditional Objective-C (1.0) is
 'Object-Oriented Programming and the Objective-C Language':
-http://www.gnustep.org//resources//documentation//ObjectivCBook.pdf
+http://www.gnustep.org/resources/documentation/ObjectivCBook.pdf
 is the original NeXTstep document.
 
 The Objective-C exception and synchronization syntax (that is, the
