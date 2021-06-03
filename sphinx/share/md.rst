@@ -323,8 +323,8 @@ other-letters
   that operand.  (When multiple alternatives are in use, each pattern must,
   for each possible combination of operand expressions, have at least one
   alternative which can handle that combination of operands.)  The
-  constraints don't need to *allow* any possible operand-when this is
-  the case, they do not constrain-but they must at least point the way to
+  constraints don't need to *allow* any possible operand---when this is
+  the case, they do not constrain---but they must at least point the way to
   reloading any possible operand so that it will fit.
 
   * If the constraint accepts whatever operands the predicate permits,
@@ -672,7 +672,7 @@ the meanings of that architecture's constraints.
 
 .. Please keep this table alphabetized by target!
 
-:samp:`AArch64 family-{config/aarch64/constraints.md}`
+:samp:`AArch64 family---{config/aarch64/constraints.md}`
 
   ``k``
     The stack pointer register ( ``SP`` )
@@ -735,7 +735,7 @@ the meanings of that architecture's constraints.
     A memory address suitable for a load/store pair instruction in SI, DI, SF and
     DF modes
 
-:samp:`AMD GCN -{config/gcn/constraints.md}`
+:samp:`AMD GCN ---{config/gcn/constraints.md}`
 
   ``I``
     Immediate integer in the range -16 to 64
@@ -826,7 +826,7 @@ the meanings of that architecture's constraints.
   ``RM``
     Memory operand with address space suitable for ``global_*`` instructions
 
-:samp:`ARC -{config/arc/constraints.md}`
+:samp:`ARC ---{config/arc/constraints.md}`
 
   ``q``
     Registers usable in ARCompact 16-bit instructions: ``r0`` - ``r3``,
@@ -874,7 +874,7 @@ the meanings of that architecture's constraints.
   ``H``
     Any const_double value.
 
-:samp:`ARM family-{config/arm/constraints.md}`
+:samp:`ARM family---{config/arm/constraints.md}`
 
   ``h``
     In Thumb state, the core registers ``r8`` - ``r15``.
@@ -939,7 +939,7 @@ the meanings of that architecture's constraints.
   ``Uq``
     A memory reference suitable for the ARMv4 ldrsb instruction.
 
-:samp:`AVR family-{config/avr/constraints.md}`
+:samp:`AVR family---{config/avr/constraints.md}`
 
   ``l``
     Registers from r0 to r15
@@ -954,10 +954,10 @@ the meanings of that architecture's constraints.
     Registers from r24 to r31.  These registers can be used in :samp:`adiw` command
 
   ``e``
-    Pointer register (r26-r31)
+    Pointer register (r26--r31)
 
   ``b``
-    Base pointer register (r28-r31)
+    Base pointer register (r28--r31)
 
   ``q``
     Stack pointer register (SPH:SPL)
@@ -1004,7 +1004,7 @@ the meanings of that architecture's constraints.
   ``Q``
     A memory address based on Y or Z pointer with displacement.
 
-:samp:`Blackfin family-{config/bfin/constraints.md}`
+:samp:`Blackfin family---{config/bfin/constraints.md}`
 
   ``a``
     P register
@@ -1120,7 +1120,7 @@ the meanings of that architecture's constraints.
   ``Q``
     Any SYMBOL_REF.
 
-:samp:`CR16 Architecture-{config/cr16/cr16.h}`
+:samp:`CR16 Architecture---{config/cr16/cr16.h}`
 
   ``b``
     Registers from r0 to r14 (registers without stack pointer)
@@ -1152,7 +1152,7 @@ the meanings of that architecture's constraints.
   ``G``
     Floating point constant that is legal for store immediate
 
-:samp:`C-SKY-{config/csky/constraints.md}`
+:samp:`C-SKY---{config/csky/constraints.md}`
 
   ``a``
     The mini registers r0 - r7.
@@ -1194,7 +1194,7 @@ the meanings of that architecture's constraints.
     ranges accepted by particular instruction encodings.
     Refer to the source code for details.
 
-:samp:`Epiphany-{config/epiphany/constraints.md}`
+:samp:`Epiphany---{config/epiphany/constraints.md}`
 
   ``U16``
     An unsigned 16-bit constant.
@@ -1264,7 +1264,7 @@ the meanings of that architecture's constraints.
     Matches control register values to switch fp mode, which are encapsulated in
     ``UNSPEC_FP_MODE``.
 
-:samp:`FRV-{config/frv/frv.h}`
+:samp:`FRV---{config/frv/frv.h}`
 
   ``a``
     Register in the class ``ACC_REGS`` ( ``acc0`` to ``acc7`` ).
@@ -1345,17 +1345,17 @@ the meanings of that architecture's constraints.
     16-bit unsigned integer constant
 
   ``N``
-    12-bit signed integer constant that is negative-i.e. in the
+    12-bit signed integer constant that is negative---i.e. in the
     range of -2048 to -1
 
   ``O``
     Constant zero
 
   ``P``
-    12-bit signed integer constant that is greater than zero-i.e. in the
+    12-bit signed integer constant that is greater than zero---i.e. in the
     range of 1 to 2047.
 
-:samp:`FT32-{config/ft32/constraints.md}`
+:samp:`FT32---{config/ft32/constraints.md}`
 
   ``A``
     An absolute address
@@ -1396,7 +1396,7 @@ the meanings of that architecture's constraints.
   ``KA``
     A 10-bit signed constant (-512 ... 511)
 
-:samp:`Hewlett-Packard PA-RISC-{config/pa/pa.h}`
+:samp:`Hewlett-Packard PA-RISC---{config/pa/pa.h}`
 
   ``a``
     General register 1
@@ -1466,7 +1466,7 @@ the meanings of that architecture's constraints.
   ``W``
     A register indirect memory operand
 
-:samp:`Intel IA-64-{config/ia64/ia64.h}`
+:samp:`Intel IA-64---{config/ia64/ia64.h}`
 
   ``a``
     General register ``r0`` to ``r3`` for ``addl`` instruction
@@ -1529,7 +1529,7 @@ the meanings of that architecture's constraints.
     now roughly the same as :samp:`m` when not used together with :samp:`<`
     or :samp:`>`.
 
-:samp:`M32C-{config/m32c/m32c.c}`
+:samp:`M32C---{config/m32c/m32c.c}`
 
   ``Rsp`` ``Rfb`` ``Rsb``
     :samp:`$sp`, :samp:`$fb`, :samp:`$sb`.
@@ -1652,7 +1652,7 @@ the meanings of that architecture's constraints.
   ``S1``
     $r1h
 
-:samp:`MicroBlaze-{config/microblaze/constraints.md}`
+:samp:`MicroBlaze---{config/microblaze/constraints.md}`
 
   ``d``
     A general register ( ``r0`` to ``r31`` ).
@@ -1660,7 +1660,7 @@ the meanings of that architecture's constraints.
   ``z``
     A status register ( ``rmsr``, ``$fcc1`` to ``$fcc7`` ).
 
-:samp:`MIPS-{config/mips/constraints.md}`
+:samp:`MIPS---{config/mips/constraints.md}`
 
   ``d``
     A general-purpose register.  This is equivalent to ``r`` unless
@@ -1735,7 +1735,7 @@ the meanings of that architecture's constraints.
     An address suitable for a ``prefetch`` instruction, or for any other
     instruction with the same addressing mode as ``prefetch``.
 
-:samp:`Motorola 680x0-{config/m68k/constraints.md}`
+:samp:`Motorola 680x0---{config/m68k/constraints.md}`
 
   ``a``
     Address register
@@ -1821,7 +1821,7 @@ the meanings of that architecture's constraints.
   ``Ac``
     Non-register operands allowed in clr
 
-:samp:`Moxie-{config/moxie/constraints.md}`
+:samp:`Moxie---{config/moxie/constraints.md}`
 
   ``A``
     An absolute address
@@ -1838,7 +1838,7 @@ the meanings of that architecture's constraints.
   ``N``
     A constant in the range of 0 to -255.
 
-:samp:`MSP430-{config/msp430/constraints.md}`
+:samp:`MSP430--{config/msp430/constraints.md}`
 
   ``R12``
     Register R12.
@@ -1864,7 +1864,7 @@ the meanings of that architecture's constraints.
   ``Ys``
     Memory reference, stack only.
 
-:samp:`NDS32-{config/nds32/constraints.md}`
+:samp:`NDS32---{config/nds32/constraints.md}`
 
   ``w``
     LOW register class $r0 to $r7 constraint for V3/V3M ISA.
@@ -1888,7 +1888,7 @@ the meanings of that architecture's constraints.
     Unsigned immediate 3-bit value.
 
   ``In03``
-    Negative immediate 3-bit value in the range of -7-0.
+    Negative immediate 3-bit value in the range of -7--0.
 
   ``Iu04``
     Unsigned immediate 4-bit value.
@@ -1900,10 +1900,10 @@ the meanings of that architecture's constraints.
     Unsigned immediate 5-bit value.
 
   ``In05``
-    Negative immediate 5-bit value in the range of -31-0.
+    Negative immediate 5-bit value in the range of -31--0.
 
   ``Ip05``
-    Unsigned immediate 5-bit value for movpi45 instruction with range 16-47.
+    Unsigned immediate 5-bit value for movpi45 instruction with range 16--47.
 
   ``Iu06``
     Unsigned immediate 6-bit value constraint for addri36.sp instruction.
@@ -1981,7 +1981,7 @@ the meanings of that architecture's constraints.
   ``U37``
     Memory constraint for 37 format.
 
-:samp:`Nios II family-{config/nios2/constraints.md}`
+:samp:`Nios II family---{config/nios2/constraints.md}`
 
   ``I``
     Integer that is valid as an immediate operand in an
@@ -2039,7 +2039,7 @@ the meanings of that architecture's constraints.
       A ``const`` wrapped ``UNSPEC`` expression,
       representing a supported PIC or TLS relocation.
 
-:samp:`OpenRISC-{config/or1k/constraints.md}`
+:samp:`OpenRISC---{config/or1k/constraints.md}`
 
   ``I``
     Integer that is valid as an immediate operand in an
@@ -2062,7 +2062,7 @@ the meanings of that architecture's constraints.
     ``c``
       Register usable for sibcalls.
 
-:samp:`PDP-11-{config/pdp11/constraints.md}`
+:samp:`PDP-11---{config/pdp11/constraints.md}`
 
   ``a``
     Floating point registers AC0 through AC3.  These can be loaded from/to
@@ -2117,7 +2117,7 @@ the meanings of that architecture's constraints.
   ``R``
     A memory reference that is encoded within the opcode.
 
-:samp:`PowerPC and IBM RS6000-{config/rs6000/constraints.md}`
+:samp:`PowerPC and IBM RS6000---{config/rs6000/constraints.md}`
 
   ``r``
     A general purpose register (GPR), ``r0``... ``r31``.
@@ -2332,7 +2332,7 @@ the meanings of that architecture's constraints.
     ``j``
       The zero vector constant.
 
-:samp:`PRU-{config/pru/constraints.md}`
+:samp:`PRU---{config/pru/constraints.md}`
 
   ``I``
     An unsigned 8-bit integer constant.
@@ -2349,7 +2349,7 @@ the meanings of that architecture's constraints.
   ``Z``
     Integer constant zero.
 
-:samp:`RL78-{config/rl78/constraints.md}`
+:samp:`RL78---{config/rl78/constraints.md}`
 
   ``Int3``
     An integer constant in the range 1 ... 7.
@@ -2379,10 +2379,10 @@ the meanings of that architecture's constraints.
     An integer constant in the range 1 ... 15.
 
   ``Qbi``
-    The built-in compare types-eq, ne, gtu, ltu, geu, and leu.
+    The built-in compare types--eq, ne, gtu, ltu, geu, and leu.
 
   ``Qsc``
-    The synthetic compare types-gt, lt, ge, and le.
+    The synthetic compare types--gt, lt, ge, and le.
 
   ``Wab``
     A memory reference with an absolute address.
@@ -2477,7 +2477,7 @@ the meanings of that architecture's constraints.
   ``x``
     The ``X`` register.
 
-:samp:`RISC-V-{config/riscv/constraints.md}`
+:samp:`RISC-V---{config/riscv/constraints.md}`
 
   ``f``
     A floating-point register (if available).
@@ -2494,7 +2494,7 @@ the meanings of that architecture's constraints.
   ``A``
     An address that is held in a general-purpose register.
 
-:samp:`RX-{config/rx/constraints.md}`
+:samp:`RX---{config/rx/constraints.md}`
 
   ``Q``
     An address which does not involve register indirect addressing or
@@ -2518,7 +2518,7 @@ the meanings of that architecture's constraints.
   ``Uint04``
     A constant in the range 0 to 15, inclusive.
 
-:samp:`S/390 and zSeries-{config/s390/s390.h}`
+:samp:`S/390 and zSeries---{config/s390/s390.h}`
 
   ``a``
     Address register (general purpose register except r0)
@@ -2533,13 +2533,13 @@ the meanings of that architecture's constraints.
     Floating-point register
 
   ``I``
-    Unsigned 8-bit constant (0-255)
+    Unsigned 8-bit constant (0--255)
 
   ``J``
-    Unsigned 12-bit constant (0-4095)
+    Unsigned 12-bit constant (0--4095)
 
   ``K``
-    Signed 16-bit constant (-32768-32767)
+    Signed 16-bit constant (-32768--32767)
 
   ``L``
     Value appropriate as displacement.
@@ -2566,7 +2566,7 @@ the meanings of that architecture's constraints.
       mode of the containing operand
 
     ``0,F:``
-      value of the other parts (F-all bits set)
+      value of the other parts (F---all bits set)
 
       The constraint matches if the specified part of a constant
     has a value different from its other parts.
@@ -2592,7 +2592,7 @@ the meanings of that architecture's constraints.
   ``Y``
     Shift count operand.
 
-:samp:`SPARC-{config/sparc/sparc.h}`
+:samp:`SPARC---{config/sparc/sparc.h}`
 
   ``f``
     Floating-point register on the SPARC-V8 architecture and
@@ -2691,30 +2691,30 @@ the meanings of that architecture's constraints.
   ``Y``
     Vector zero
 
-:samp:`TI C6X family-{config/c6x/constraints.md}`
+:samp:`TI C6X family---{config/c6x/constraints.md}`
 
   ``a``
-    Register file A (A0-A31).
+    Register file A (A0--A31).
 
   ``b``
-    Register file B (B0-B31).
+    Register file B (B0--B31).
 
   ``A``
-    Predicate registers in register file A (A0-A2 on C64X and
+    Predicate registers in register file A (A0--A2 on C64X and
     higher, A1 and A2 otherwise).
 
   ``B``
-    Predicate registers in register file B (B0-B2).
+    Predicate registers in register file B (B0--B2).
 
   ``C``
-    A call-used register in register file B (B0-B9, B16-B31).
+    A call-used register in register file B (B0--B9, B16--B31).
 
   ``Da``
-    Register file A, excluding predicate registers (A3-A31,
+    Register file A, excluding predicate registers (A3--A31,
     plus A0 if not C64X or higher).
 
   ``Db``
-    Register file B, excluding predicate registers (B3-B31).
+    Register file B, excluding predicate registers (B3--B31).
 
   ``Iu4``
     Integer constant in the range 0 ... 15.
@@ -2772,7 +2772,7 @@ the meanings of that architecture's constraints.
   ``Z``
     Register B14 (aka DP).
 
-:samp:`TILE-Gx-{config/tilegx/constraints.md}`
+:samp:`TILE-Gx---{config/tilegx/constraints.md}`
 
   ``R00`` ``R01`` ``R02`` ``R03`` ``R04`` ``R05`` ``R06`` ``R07`` ``R08`` ``R09`` ``R10``
     Each of these represents a register constraint for an individual
@@ -2838,7 +2838,7 @@ the meanings of that architecture's constraints.
   ``Z1``
     The integer constant 0xffffffff00000000.
 
-:samp:`TILEPro-{config/tilepro/constraints.md}`
+:samp:`TILEPro---{config/tilepro/constraints.md}`
 
   ``R00`` ``R01`` ``R02`` ``R03`` ``R04`` ``R05`` ``R06`` ``R07`` ``R08`` ``R09`` ``R10``
     Each of these represents a register constraint for an individual
@@ -2896,7 +2896,7 @@ the meanings of that architecture's constraints.
   ``Y``
     A 2-element vector constant with identical elements.
 
-:samp:`Visium-{config/visium/constraints.md}`
+:samp:`Visium---{config/visium/constraints.md}`
 
   ``b``
     EAM register ``mdb``
@@ -2945,10 +2945,10 @@ the meanings of that architecture's constraints.
   ``P``
     Integer constant 32
 
-:samp:`x86 family-{config/i386/constraints.md}`
+:samp:`x86 family---{config/i386/constraints.md}`
 
   ``R``
-    Legacy register-the eight integer registers available on all
+    Legacy register---the eight integer registers available on all
     i386 processors ( ``a``, ``b``, ``c``, ``d``,
     ``si``, ``di``, ``bp``, ``sp`` ).
 
@@ -3175,7 +3175,7 @@ the meanings of that architecture's constraints.
   ``Ts``
     Address operand without segment register.
 
-:samp:`Xstormy16-{config/stormy16/stormy16.h}`
+:samp:`Xstormy16---{config/stormy16/stormy16.h}`
 
   ``a``
     Register r0.
@@ -3243,7 +3243,7 @@ the meanings of that architecture's constraints.
   ``Z``
     The constant 0.
 
-:samp:`Xtensa-{config/xtensa/constraints.md}`
+:samp:`Xtensa---{config/xtensa/constraints.md}`
 
   ``a``
     General-purpose 32-bit register

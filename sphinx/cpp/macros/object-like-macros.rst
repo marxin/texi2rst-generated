@@ -100,7 +100,7 @@ macro is expanded to produce the final result, ``1024``.
 
 Notice that ``BUFSIZE`` was not defined when ``TABLESIZE`` was
 defined.  The :samp:`#define` for ``TABLESIZE`` uses exactly the
-expansion you specify-in this case, ``BUFSIZE`` -and does not
+expansion you specify---in this case, ``BUFSIZE`` ---and does not
 check to see whether it too contains macro names.  Only when you
 *use* ``TABLESIZE`` is the result of its expansion scanned for
 more macro names.

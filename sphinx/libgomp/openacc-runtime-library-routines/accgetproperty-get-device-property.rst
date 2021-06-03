@@ -1,7 +1,7 @@
   .. _acc_get_property:
 
-acc_get_property - Get device property.
-***************************************
+acc_get_property -- Get device property.
+****************************************
 
 .. index:: acc_get_property
 

@@ -1,7 +1,7 @@
   .. _verify:
 
-VERIFY - Scan a string for characters not a given set
-*****************************************************
+VERIFY --- Scan a string for characters not a given set
+*******************************************************
 
 .. index:: VERIFY
 

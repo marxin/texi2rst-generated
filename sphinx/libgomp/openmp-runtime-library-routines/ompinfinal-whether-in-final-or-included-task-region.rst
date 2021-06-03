@@ -1,7 +1,7 @@
   .. _omp_in_final:
 
-omp_in_final - Whether in final or included task region
-*******************************************************
+omp_in_final -- Whether in final or included task region
+********************************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if currently running in a final

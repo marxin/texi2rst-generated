@@ -66,10 +66,10 @@ Preamble
 The licenses for most software are designed to take away your
 freedom to share and change it.  By contrast, the GNU General Public
 Licenses are intended to guarantee your freedom to share and change
-free software-to make sure the software is free for all its users.
+free software---to make sure the software is free for all its users.
 
 This license, the Lesser General Public License, applies to some
-specially designated software-typically libraries-of the Free
+specially designated software---typically libraries---of the Free
 Software Foundation and other authors who decide to use it.  You can use
 it too, but we suggest you first think carefully about whether this
 license or the ordinary General Public License is the better strategy to

@@ -1,7 +1,7 @@
   .. _num_images:
 
-NUM_IMAGES - Function that returns the number of images
-*******************************************************
+NUM_IMAGES --- Function that returns the number of images
+*********************************************************
 
 .. index:: NUM_IMAGES
 

@@ -480,7 +480,7 @@ accomplish this.
   function treatment.
 
   If leaf function treatment involves renumbering the registers, then the
-  registers marked here should be the ones before renumbering-those that
+  registers marked here should be the ones before renumbering---those that
   GCC would ordinarily allocate.  The registers which will actually be
   used in the assembler code, after renumbering, should not be marked with 1
   in this vector.

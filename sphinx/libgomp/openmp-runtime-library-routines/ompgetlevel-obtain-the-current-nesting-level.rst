@@ -1,7 +1,7 @@
   .. _omp_get_level:
 
-omp_get_level - Obtain the current nesting level
-************************************************
+omp_get_level -- Obtain the current nesting level
+*************************************************
 
 :samp:`{Description}:`
   This function returns the nesting level for the parallel blocks,

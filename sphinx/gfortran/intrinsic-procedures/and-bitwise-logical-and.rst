@@ -1,7 +1,7 @@
   .. _and:
 
-AND - Bitwise logical AND
-*************************
+AND --- Bitwise logical AND
+***************************
 
 .. index:: AND
 

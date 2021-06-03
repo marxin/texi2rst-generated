@@ -1,7 +1,7 @@
   .. _acc_wait:
 
-acc_wait - Wait for completion of a specific asynchronous operation.
-********************************************************************
+acc_wait -- Wait for completion of a specific asynchronous operation.
+*********************************************************************
 
 Description
   This function waits for completion of the asynchronous operation

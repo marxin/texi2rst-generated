@@ -1,7 +1,7 @@
   .. _lto-dump:
 
-lto-dump-Tool for dumping LTO object files.
--------------------------------------------
+lto-dump---Tool for dumping LTO object files.
+---------------------------------------------
 
 Description
 ^^^^^^^^^^^

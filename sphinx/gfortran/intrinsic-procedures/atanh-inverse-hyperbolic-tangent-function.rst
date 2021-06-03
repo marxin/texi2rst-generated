@@ -1,7 +1,7 @@
   .. _atanh:
 
-ATANH - Inverse hyperbolic tangent function
-*******************************************
+ATANH --- Inverse hyperbolic tangent function
+*********************************************
 
 .. index:: ATANH
 

@@ -347,7 +347,7 @@ The following type attributes are supported on most targets.
 
   .. index:: mode type attribute
 
-  This attribute specifies the data type for the declaration-whichever
+  This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
   request an integer or floating-point type according to its width.
 
@@ -375,7 +375,7 @@ The following type attributes are supported on most targets.
 
   In the following example ``struct my_packed_struct`` 's members are
   packed closely together, but the internal layout of its ``s`` member
-  is not packed-to do that, ``struct my_unpacked_struct`` needs to
+  is not packed---to do that, ``struct my_unpacked_struct`` needs to
   be packed too.
 
   .. code-block:: c++

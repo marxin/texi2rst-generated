@@ -1042,7 +1042,7 @@ The files are created in the directory of the output file.
 .. option:: -print-file-name=library
 
   Print the full absolute name of the library file :samp:`{library}` that
-  would be used when linking-and don't do anything else.  With this
+  would be used when linking---and don't do anything else.  With this
   option, GCC does not compile or link anything; it just prints the
   file name.
 
@@ -1093,7 +1093,7 @@ The files are created in the directory of the output file.
 .. option:: -print-search-dirs
 
   Print the name of the configured installation directory and a list of
-  program and library directories :command:`gcc` searches-and don't do anything else.
+  program and library directories :command:`gcc` searches---and don't do anything else.
 
   This is useful when :command:`gcc` prints the error message
   :samp:`installation problem, cannot exec cpp0: No such file or directory`.
@@ -1115,16 +1115,16 @@ The files are created in the directory of the output file.
 
   Print the suffix added to the target sysroot when searching for
   headers, or give an error if the compiler is not configured with such
-  a suffix-and don't do anything else.
+  a suffix---and don't do anything else.
 
 .. option:: -dumpmachine
 
   Print the compiler's target machine (for example,
-  :samp:`i686-pc-linux-gnu`)-and don't do anything else.
+  :samp:`i686-pc-linux-gnu`)---and don't do anything else.
 
 .. option:: -dumpversion
 
-  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7`` )-and don't do
+  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7`` )---and don't do
   anything else.  This is the compiler version used in filesystem paths and
   specs. Depending on how the compiler has been configured it can be just
   a single number (major version), two numbers separated by a dot (major and
@@ -1133,11 +1133,11 @@ The files are created in the directory of the output file.
 
 .. option:: -dumpfullversion
 
-  Print the full compiler version-and don't do anything else. The output is
+  Print the full compiler version---and don't do anything else. The output is
   always three numbers separated by dots, major, minor and patchlevel version.
 
 .. option:: -dumpspecs
 
-  Print the compiler's built-in specs-and don't do anything else.  (This
+  Print the compiler's built-in specs---and don't do anything else.  (This
   is used when GCC itself is being built.)  See :ref:`spec-files`.
 

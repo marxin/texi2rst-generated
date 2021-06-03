@@ -1,7 +1,7 @@
   .. _max:
 
-MAX - Maximum value of an argument list
-***************************************
+MAX --- Maximum value of an argument list
+*****************************************
 
 .. index:: MAX
 

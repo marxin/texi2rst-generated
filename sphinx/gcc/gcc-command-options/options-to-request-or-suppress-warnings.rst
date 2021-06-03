@@ -125,7 +125,7 @@ warn at all unless optimization is enabled.
 
   Some users try to use :option:`-Wpedantic` to check programs for strict ISO
   C conformance.  They soon find that it does not do quite what they want:
-  it finds some non-ISO practices, but not all-only those for which
+  it finds some non-ISO practices, but not all---only those for which
   ISO C *requires* a diagnostic, and some others for which
   diagnostics have been added.
 
@@ -1551,7 +1551,7 @@ warn at all unless optimization is enabled.
   The use of constructor and destructor attributes allow you to assign a
   priority to the constructor/destructor to control its order of execution
   before ``main`` is called or after it returns.  The priority values must be
-  greater than 100 as the compiler reserves priority values between 0-100 for
+  greater than 100 as the compiler reserves priority values between 0--100 for
   the implementation.
 
 .. option:: -Wstrict-aliasing, -Wno-strict-aliasing
@@ -2213,7 +2213,7 @@ warn at all unless optimization is enabled.
   GCC to emit warnings from system headers as if they occurred in user
   code.  However, note that using :option:`-Wall` in conjunction with this
   option does *not* warn about unknown pragmas in system
-  headers-for that, :option:`-Wunknown-pragmas` must also be used.
+  headers---for that, :option:`-Wunknown-pragmas` must also be used.
 
 .. option:: -Wtautological-compare, -Wno-tautological-compare
 

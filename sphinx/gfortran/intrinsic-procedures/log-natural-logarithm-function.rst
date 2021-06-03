@@ -1,7 +1,7 @@
   .. _log:
 
-LOG - Natural logarithm function
-********************************
+LOG --- Natural logarithm function
+**********************************
 
 .. index:: LOG
 

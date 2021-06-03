@@ -1,7 +1,7 @@
   .. _co_max:
 
-CO_MAX - Maximal value on the current set of images
-***************************************************
+CO_MAX --- Maximal value on the current set of images
+*****************************************************
 
 .. index:: CO_MAX
 

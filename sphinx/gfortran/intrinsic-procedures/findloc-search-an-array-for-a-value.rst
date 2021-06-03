@@ -1,7 +1,7 @@
   .. _findloc:
 
-FINDLOC - Search an array for a value
-*************************************
+FINDLOC --- Search an array for a value
+***************************************
 
 .. index:: FINDLOC
 

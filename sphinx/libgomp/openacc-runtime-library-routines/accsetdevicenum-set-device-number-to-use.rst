@@ -1,7 +1,7 @@
   .. _acc_set_device_num:
 
-acc_set_device_num - Set device number to use.
-**********************************************
+acc_set_device_num -- Set device number to use.
+***********************************************
 
 Description
   This function will indicate to the runtime which device number,

@@ -1,7 +1,7 @@
   .. _reshape:
 
-RESHAPE - Function to reshape an array
-**************************************
+RESHAPE --- Function to reshape an array
+****************************************
 
 .. index:: RESHAPE
 

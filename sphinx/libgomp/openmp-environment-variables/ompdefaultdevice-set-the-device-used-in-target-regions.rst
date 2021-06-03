@@ -1,7 +1,7 @@
   .. _omp_default_device:
 
-OMP_DEFAULT_DEVICE - Set the device used in target regions
-**********************************************************
+OMP_DEFAULT_DEVICE -- Set the device used in target regions
+***********************************************************
 
 .. index:: Environment Variable
 

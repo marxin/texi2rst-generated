@@ -1,7 +1,7 @@
   .. _acc_set_device_type:
 
-acc_set_device_type - Set type of device accelerator to use.
-************************************************************
+acc_set_device_type -- Set type of device accelerator to use.
+*************************************************************
 
 Description
   This function indicates to the runtime library which device type, specified

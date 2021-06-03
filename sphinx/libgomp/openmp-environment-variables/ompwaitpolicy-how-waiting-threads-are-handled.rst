@@ -1,7 +1,7 @@
   .. _omp_wait_policy:
 
-OMP_WAIT_POLICY - How waiting threads are handled
-*************************************************
+OMP_WAIT_POLICY -- How waiting threads are handled
+**************************************************
 
 .. index:: Environment Variable
 

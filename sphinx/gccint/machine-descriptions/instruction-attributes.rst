@@ -1068,7 +1068,7 @@ expression according to the following syntax:
 * :samp:`cpu_function_unit_name` denotes reservation of the named
   functional unit.
 
-* :samp:`reservation_name` - see description of construction
+* :samp:`reservation_name` --- see description of construction
   :samp:`define_reservation`.
 
 * :samp:`nothing` denotes no unit reservations.

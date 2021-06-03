@@ -1,7 +1,7 @@
   .. _malloc:
 
-MALLOC - Allocate dynamic memory
-********************************
+MALLOC --- Allocate dynamic memory
+**********************************
 
 .. index:: MALLOC
 

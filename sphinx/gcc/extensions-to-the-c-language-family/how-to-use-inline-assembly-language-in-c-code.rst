@@ -35,8 +35,8 @@ for a C symbol, or to place a C variable in a specific register.
 
 .. _basic-asm:
 
-Basic Asm - Assembler Instructions Without Operands
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Basic Asm --- Assembler Instructions Without Operands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: basic asm
 
@@ -1380,7 +1380,7 @@ that are stack-like registers:
   necessary to know how to adjust the stack to compensate for the pop.
   If any non-popped input is closer to the top of the reg-stack than
   the implicitly popped register, it would not be possible to know what the
-  stack looked like-it's not clear how the rest of the stack 'slides
+  stack looked like---it's not clear how the rest of the stack 'slides
   up'.
 
   All implicitly popped input registers must be closer to the top of
@@ -1410,7 +1410,7 @@ that are stack-like registers:
     asm ("foo" : "=&t" (a) : "f" (b));
 
 * Some operands need to be in particular places on the stack.  All
-  output operands fall in this category-GCC has no other way to
+  output operands fall in this category---GCC has no other way to
   know which registers the outputs appear in unless you indicate
   this in the constraints.
 
@@ -1845,8 +1845,8 @@ does this by counting the number of instructions in the pattern of the
 ``asm`` and multiplying that by the length of the longest
 instruction supported by that processor.  (When working out the number
 of instructions, it assumes that any occurrence of a newline or of
-whatever statement separator character is supported by the assembler -
-typically :samp:`;` - indicates the end of an instruction.)
+whatever statement separator character is supported by the assembler ---
+typically :samp:`;` --- indicates the end of an instruction.)
 
 Normally, GCC's estimate is adequate to ensure that correct
 code is generated, but it is possible to confuse the compiler if you use

@@ -1,7 +1,7 @@
   .. _random_number:
 
-RANDOM_NUMBER - Pseudo-random number
-************************************
+RANDOM_NUMBER --- Pseudo-random number
+**************************************
 
 .. index:: RANDOM_NUMBER
 

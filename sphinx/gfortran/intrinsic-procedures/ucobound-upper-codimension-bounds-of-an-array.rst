@@ -1,7 +1,7 @@
   .. _ucobound:
 
-UCOBOUND - Upper codimension bounds of an array
-***********************************************
+UCOBOUND --- Upper codimension bounds of an array
+*************************************************
 
 .. index:: UCOBOUND
 

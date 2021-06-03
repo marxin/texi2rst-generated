@@ -74,7 +74,7 @@ by GNU Fortran:
   With this option, many of them are rejected.
 
   Some users try to use :option:`-pedantic` to check programs for conformance.
-  They soon find that it does not do quite what they want-it finds some
+  They soon find that it does not do quite what they want---it finds some
   nonstandard practices, but not all.
   However, improvements to GNU Fortran in this area are welcome.
 

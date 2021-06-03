@@ -1,7 +1,7 @@
   .. _asinh:
 
-ASINH - Inverse hyperbolic sine function
-****************************************
+ASINH --- Inverse hyperbolic sine function
+******************************************
 
 .. index:: ASINH
 

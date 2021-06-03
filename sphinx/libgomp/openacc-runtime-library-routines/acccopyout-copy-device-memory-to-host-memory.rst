@@ -1,7 +1,7 @@
   .. _acc_copyout:
 
-acc_copyout - Copy device memory to host memory.
-************************************************
+acc_copyout -- Copy device memory to host memory.
+*************************************************
 
 Description
   This function copies mapped device memory to host memory which is specified

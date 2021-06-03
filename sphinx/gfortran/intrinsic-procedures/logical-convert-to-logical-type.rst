@@ -1,7 +1,7 @@
   .. _logical:
 
-LOGICAL - Convert to logical type
-*********************************
+LOGICAL --- Convert to logical type
+***********************************
 
 .. index:: LOGICAL
 

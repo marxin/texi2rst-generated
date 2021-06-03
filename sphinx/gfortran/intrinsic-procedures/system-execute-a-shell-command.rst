@@ -1,7 +1,7 @@
   .. _system:
 
-SYSTEM - Execute a shell command
-********************************
+SYSTEM --- Execute a shell command
+**********************************
 
 .. index:: SYSTEM
 

@@ -1,7 +1,7 @@
   .. _floor:
 
-FLOOR - Integer floor function
-******************************
+FLOOR --- Integer floor function
+********************************
 
 .. index:: FLOOR
 

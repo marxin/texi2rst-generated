@@ -1,7 +1,7 @@
   .. _getcwd:
 
-GETCWD - Get current working directory
-**************************************
+GETCWD --- Get current working directory
+****************************************
 
 .. index:: GETCWD
 

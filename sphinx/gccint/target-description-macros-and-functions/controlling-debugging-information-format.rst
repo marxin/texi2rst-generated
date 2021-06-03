@@ -262,7 +262,7 @@ This describes file names in DBX format.
 
   A C statement to output DBX debugging information to the stdio stream
   :samp:`{stream}`, which indicates that file :samp:`{name}` is the main source
-  file-the file specified as the input file for compilation.
+  file---the file specified as the input file for compilation.
   This macro is called only once, at the beginning of compilation.
 
   This macro need not be defined if the standard form of output

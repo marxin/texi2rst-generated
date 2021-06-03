@@ -207,7 +207,7 @@ temporary object.  The compiler may very well delete the object before
 you expect it to, leaving a pointer to garbage.  The most common place
 where this problem crops up is in classes like string classes,
 especially ones that define a conversion function to type ``char *``
-or ``const char *`` -which is one reason why the standard
+or ``const char *`` ---which is one reason why the standard
 ``string`` class requires you to call the ``c_str`` member
 function.  However, any class that returns a pointer to some internal
 structure is potentially subject to this problem.

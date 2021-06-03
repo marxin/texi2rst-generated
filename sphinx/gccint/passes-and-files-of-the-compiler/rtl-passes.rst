@@ -73,7 +73,7 @@ passes that are run after the Tree optimization passes.
   speed, while Morel-Renvoise based GCSE does not).
   When optimizing for size, GCSE is done using Morel-Renvoise Partial
   Redundancy Elimination, with the exception that it does not try to move
-  invariants out of loops-that is left to  the loop optimization pass.
+  invariants out of loops---that is left to  the loop optimization pass.
   If MR PRE GCSE is done, code hoisting (aka unification) is also done, as
   well as load motion.
   If you are optimizing for speed, LCM (lazy code motion) based GCSE is
@@ -92,7 +92,7 @@ passes that are run after the Tree optimization passes.
   generic loop analysis and manipulation code.  Initialization and finalization
   of loop structures is handled by loop-init.c.
   A loop invariant motion pass is implemented in loop-invariant.c.
-  Basic block level optimizations-unrolling, and peeling loops-
+  Basic block level optimizations---unrolling, and peeling loops---
   are implemented in loop-unroll.c.
   Replacing of the exit condition of loops by special machine-dependent
   instructions is handled by loop-doloop.c.

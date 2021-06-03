@@ -1,7 +1,7 @@
   .. _getarg:
 
-GETARG - Get command line arguments
-***********************************
+GETARG --- Get command line arguments
+*************************************
 
 .. index:: GETARG
 

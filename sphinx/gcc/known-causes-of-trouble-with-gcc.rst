@@ -10,7 +10,7 @@ Known Causes of Trouble with GCC
 .. index:: known causes of trouble
 
 This section describes known problems that affect users of GCC.  Most
-of these are not GCC bugs per se-if they were, we would fix them.
+of these are not GCC bugs per se---if they were, we would fix them.
 But the result for a user may be like the result of a bug.
 
 Some of these problems are due to bugs in other software, some are

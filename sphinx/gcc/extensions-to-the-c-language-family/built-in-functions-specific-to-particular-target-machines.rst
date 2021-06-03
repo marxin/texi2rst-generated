@@ -5905,8 +5905,8 @@ following functions are supported:
 .. function:: int __builtin_rx_revw (int)
 
   Generates the ``revw`` machine instruction which swaps the bytes in
-  the argument so that bits 0-7 now occupy bits 8-15 and vice versa,
-  and also bits 16-23 occupy bits 24-31 and vice versa.
+  the argument so that bits 0--7 now occupy bits 8--15 and vice versa,
+  and also bits 16--23 occupy bits 24--31 and vice versa.
 
 .. function:: void __builtin_rx_rmpa (void)
 

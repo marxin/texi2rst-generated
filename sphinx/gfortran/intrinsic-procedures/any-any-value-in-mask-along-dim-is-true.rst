@@ -1,7 +1,7 @@
   .. _any:
 
-ANY - Any value in MASK along DIM is true 
-******************************************
+ANY --- Any value in MASK along DIM is true 
+********************************************
 
 .. index:: ANY
 

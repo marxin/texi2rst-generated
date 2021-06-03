@@ -151,8 +151,8 @@ Supporting this should be possible with the EH scheme explained previously
 because via the transactional wrappers for the EH ABI, the TM is able to
 observe and intercept EH.
 
-[No changes] Transition to serial-irrevocable mode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[No changes] Transition to serial--irrevocable mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 [No changes] Data transfer functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -228,8 +228,8 @@ TODO The intention was always to drop the registration functions
 entirely, and create a new ELF Phdr describing the linker-sorted table.  Much
 like what currently happens for ``PT_GNU_EH_FRAME``.
 This work kept getting bogged down in how to represent the :samp:`{N}` different
-code generation variants.  We clearly needed at least two-SW and HW
-transactional clones-but there was always a suggestion of more variants for
+code generation variants.  We clearly needed at least two---SW and HW
+transactional clones---but there was always a suggestion of more variants for
 different TM assumptions/invariants.
 
 The compiler can then use two TM runtime functions to perform indirect calls in
@@ -242,7 +242,7 @@ transactions:
 
 If there is a registered clone for supplied function, both will return a
 pointer to the clone. If not, the first runtime function will attempt to switch
-to serial-irrevocable mode and return the original pointer, whereas the second
+to serial--irrevocable mode and return the original pointer, whereas the second
 will raise a fatal runtime error.
 
 [New] Transactional dynamic memory management

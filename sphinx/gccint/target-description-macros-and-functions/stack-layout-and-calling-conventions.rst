@@ -134,7 +134,7 @@ Here is the basic stack layout.
   itself.
 
   If you don't define this macro, the default is to return the value
-  of :samp:`{frameaddr}` -that is, the stack frame address is also the
+  of :samp:`{frameaddr}` ---that is, the stack frame address is also the
   address of the stack word that points to the previous frame.
 
 .. c:macro:: SETUP_FRAME_ADDRESSES
@@ -1526,7 +1526,7 @@ How Scalar Function Values Are Returned
 .. index:: scalars, returned as values
 
 This section discusses the macros that control returning scalars as
-values-values that can fit in registers.
+values---values that can fit in registers.
 
 .. function:: rtx TARGET_FUNCTION_VALUE (const_tree ret_type, const_tree fn_decl_or_type, bool outgoing)
 

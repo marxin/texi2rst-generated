@@ -1,7 +1,7 @@
   .. _omp_get_num_devices:
 
-omp_get_num_devices - Number of target devices
-**********************************************
+omp_get_num_devices -- Number of target devices
+***********************************************
 
 :samp:`{Description}:`
   Returns the number of target devices.

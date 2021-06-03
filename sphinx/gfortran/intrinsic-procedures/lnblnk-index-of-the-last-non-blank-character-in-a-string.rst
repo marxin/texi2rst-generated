@@ -1,7 +1,7 @@
   .. _lnblnk:
 
-LNBLNK - Index of the last non-blank character in a string
-**********************************************************
+LNBLNK --- Index of the last non-blank character in a string
+************************************************************
 
 .. index:: LNBLNK
 

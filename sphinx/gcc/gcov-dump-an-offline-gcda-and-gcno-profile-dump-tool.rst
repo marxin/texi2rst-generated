@@ -1,7 +1,7 @@
     .. _gcov-dump:
 
-gcov-dump-an Offline Gcda and Gcno Profile Dump Tool
-----------------------------------------------------
+gcov-dump---an Offline Gcda and Gcno Profile Dump Tool
+------------------------------------------------------
 
 Description
 ^^^^^^^^^^^

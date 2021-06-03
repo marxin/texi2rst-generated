@@ -1,7 +1,7 @@
   .. _get_command:
 
-GET_COMMAND - Get the entire command line
-*****************************************
+GET_COMMAND --- Get the entire command line
+*******************************************
 
 .. index:: GET_COMMAND
 

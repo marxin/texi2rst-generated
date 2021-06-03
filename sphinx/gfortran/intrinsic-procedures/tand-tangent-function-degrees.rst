@@ -1,7 +1,7 @@
   .. _tand:
 
-TAND - Tangent function, degrees
-********************************
+TAND --- Tangent function, degrees
+**********************************
 
 .. index:: TAND
 

@@ -1,7 +1,7 @@
   .. _all:
 
-ALL - All values in MASK along DIM are true 
-********************************************
+ALL --- All values in MASK along DIM are true 
+**********************************************
 
 .. index:: ALL
 

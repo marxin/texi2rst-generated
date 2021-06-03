@@ -1,7 +1,7 @@
   .. _shiftl:
 
-SHIFTL - Left shift
-*******************
+SHIFTL --- Left shift
+*********************
 
 .. index:: SHIFTL
 

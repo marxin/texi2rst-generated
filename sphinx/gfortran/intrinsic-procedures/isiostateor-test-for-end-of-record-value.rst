@@ -1,7 +1,7 @@
   .. _is_iostat_eor:
 
-IS_IOSTAT_EOR - Test for end-of-record value
-********************************************
+IS_IOSTAT_EOR --- Test for end-of-record value
+**********************************************
 
 .. index:: IS_IOSTAT_EOR
 

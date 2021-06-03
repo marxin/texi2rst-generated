@@ -1,7 +1,7 @@
   .. _popcnt:
 
-POPCNT - Number of bits set
-***************************
+POPCNT --- Number of bits set
+*****************************
 
 .. index:: POPCNT
 

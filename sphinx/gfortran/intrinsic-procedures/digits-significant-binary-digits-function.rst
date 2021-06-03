@@ -1,7 +1,7 @@
   .. _digits:
 
-DIGITS - Significant binary digits function
-*******************************************
+DIGITS --- Significant binary digits function
+*********************************************
 
 .. index:: DIGITS
 

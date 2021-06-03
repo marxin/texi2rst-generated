@@ -37,7 +37,7 @@ way around them.
   This code really is erroneous, because the scope of ``struct
   mumble`` in the prototype is limited to the argument list containing it.
   It does not refer to the ``struct mumble`` defined with file scope
-  immediately below-they are two unrelated types with similar names in
+  immediately below---they are two unrelated types with similar names in
   different scopes.
 
   But in the definition of ``foo``, the file-scope type is used

@@ -1,7 +1,7 @@
   .. _omp_schedule:
 
-OMP_SCHEDULE - How threads are scheduled
-****************************************
+OMP_SCHEDULE -- How threads are scheduled
+*****************************************
 
 .. index:: Environment Variable
 

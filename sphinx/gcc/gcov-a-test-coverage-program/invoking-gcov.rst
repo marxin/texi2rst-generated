@@ -264,7 +264,7 @@ Options
   Print verbose informations related to basic blocks and arcs.
 
 ``-x`` ``--hash-filenames``
-  When using :samp:`{-preserve-paths}`,
+  When using :samp:`{--preserve-paths}`,
   gcov uses the full pathname of the source files to create
   an output filename.  This can lead to long filenames that can overflow
   filesystem limits.  This option creates names of the form
@@ -272,7 +272,7 @@ Options
   where the :samp:`{source-file}` component is the final filename part and
   the :samp:`{md5}` component is calculated from the full mangled name that
   would have been used otherwise.  The option is an alternative
-  to the :samp:`{-preserve-paths}` on systems which have a filesystem limit.
+  to the :samp:`{--preserve-paths}` on systems which have a filesystem limit.
 
   :command:`gcov` should be run with the current directory the same as that
 when you invoked the compiler.  Otherwise it will not be able to locate
@@ -310,7 +310,7 @@ end with :samp:`*` character and are colored with magenta color with
 the :option:`-k` option.  This functionality is not supported in Ada.
 
 Note that GCC can completely remove the bodies of functions that are
-not needed - for instance if they are inlined everywhere.  Such functions
+not needed -- for instance if they are inlined everywhere.  Such functions
 are marked with :samp:`-`, which can be confusing.
 Use the :option:`-fkeep-inline-functions` and :option:`-fkeep-static-functions`
 options to retain these functions and
@@ -321,7 +321,7 @@ These preamble lines are of the form
 
 :option:`-:0:`:samp:`{tag}` : :samp:`{value}`
 The ordering and number of these preamble lines will be augmented as
-:command:`gcov` development progresses - do not rely on them remaining
+:command:`gcov` development progresses --- do not rely on them remaining
 unchanged.  Use :samp:`{tag}` to locate a particular preamble line.
 
 The additional block information is of the form
@@ -509,7 +509,7 @@ counts, and the output looks like this:
           1:   36-block  0
           -:   37:}
 
-In this mode, each basic block is only shown on one line - the last
+In this mode, each basic block is only shown on one line -- the last
 line of the block.  A multi-line block will only contribute to the
 execution count of that last line, and other lines will not be shown
 to contain code, unless previous blocks end on those lines.

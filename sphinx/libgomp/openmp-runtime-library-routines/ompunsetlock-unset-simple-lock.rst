@@ -1,7 +1,7 @@
   .. _omp_unset_lock:
 
-omp_unset_lock - Unset simple lock
-**********************************
+omp_unset_lock -- Unset simple lock
+***********************************
 
 :samp:`{Description}:`
   A simple lock about to be unset must have been locked by ``omp_set_lock``

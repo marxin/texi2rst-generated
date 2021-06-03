@@ -1,7 +1,7 @@
   .. _spacing:
 
-SPACING - Smallest distance between two numbers of a given type
-***************************************************************
+SPACING --- Smallest distance between two numbers of a given type
+*****************************************************************
 
 .. index:: SPACING
 

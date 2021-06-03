@@ -1,7 +1,7 @@
   .. _real:
 
-REAL - Convert to real type 
-****************************
+REAL --- Convert to real type 
+******************************
 
 .. index:: REAL
 

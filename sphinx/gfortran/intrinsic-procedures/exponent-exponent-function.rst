@@ -1,7 +1,7 @@
   .. _exponent:
 
-EXPONENT - Exponent function 
-*****************************
+EXPONENT --- Exponent function 
+*******************************
 
 .. index:: EXPONENT
 

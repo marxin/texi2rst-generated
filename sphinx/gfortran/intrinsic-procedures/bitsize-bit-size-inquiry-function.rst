@@ -1,7 +1,7 @@
   .. _bit_size:
 
-BIT_SIZE - Bit size inquiry function
-************************************
+BIT_SIZE --- Bit size inquiry function
+**************************************
 
 .. index:: BIT_SIZE
 

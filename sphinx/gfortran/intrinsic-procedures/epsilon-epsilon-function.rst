@@ -1,7 +1,7 @@
   .. _epsilon:
 
-EPSILON - Epsilon function
-**************************
+EPSILON --- Epsilon function
+****************************
 
 .. index:: EPSILON
 

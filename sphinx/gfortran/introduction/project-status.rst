@@ -10,7 +10,7 @@ When :command:`gfortran` is done,
 we'll see if it will be a beautiful butterfly,
 or just a big bug....
 
--Andy Vaught, April 2000
+--Andy Vaught, April 2000
 
 The start of the GNU Fortran 95 project was announced on
 the GCC homepage in March 18, 2000
@@ -47,7 +47,7 @@ The primary work remaining to be done on GNU Fortran falls into three
 categories: bug fixing (primarily regarding the treatment of invalid
 code and providing useful error messages), improving the compiler
 optimizations and the performance of compiled code, and extending the
-compiler to support future standards-in particular, Fortran 2003,
+compiler to support future standards---in particular, Fortran 2003,
 Fortran 2008 and Fortran 2018.
 
 .. -

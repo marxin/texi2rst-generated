@@ -1,7 +1,7 @@
   .. _this_image:
 
-THIS_IMAGE - Function that returns the cosubscript index of this image
-**********************************************************************
+THIS_IMAGE --- Function that returns the cosubscript index of this image
+************************************************************************
 
 .. index:: THIS_IMAGE
 

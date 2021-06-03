@@ -1,7 +1,7 @@
   .. _fget:
 
-FGET - Read a single character in stream mode from stdin 
-*********************************************************
+FGET --- Read a single character in stream mode from stdin 
+***********************************************************
 
 .. index:: FGET
 

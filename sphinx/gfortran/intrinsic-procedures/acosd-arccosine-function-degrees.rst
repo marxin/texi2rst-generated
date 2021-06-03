@@ -1,7 +1,7 @@
   .. _acosd:
 
-ACOSD - Arccosine function, degrees
-***********************************
+ACOSD --- Arccosine function, degrees
+*************************************
 
 .. index:: ACOSD
 

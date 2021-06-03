@@ -10,7 +10,7 @@ Loop-closed SSA form
 Throughout the loop optimizations on tree level, one extra condition is
 enforced on the SSA form:  No SSA name is used outside of the loop in
 that it is defined.  The SSA form satisfying this condition is called
-'loop-closed SSA form' - LCSSA.  To enforce LCSSA, PHI nodes must be
+'loop-closed SSA form' -- LCSSA.  To enforce LCSSA, PHI nodes must be
 created at the exits of the loops for the SSA names that are used
 outside of them.  Only the real operands (not virtual SSA names) are
 held in LCSSA, in order to save memory.
@@ -23,7 +23,7 @@ There are various benefits of LCSSA:
   nodes.
 
 * In induction variable analysis, it is not necessary to specify the
-  loop in that the analysis should be performed - the scalar evolution
+  loop in that the analysis should be performed -- the scalar evolution
   analysis always returns the results with respect to the loop in that the
   SSA name is defined.
 

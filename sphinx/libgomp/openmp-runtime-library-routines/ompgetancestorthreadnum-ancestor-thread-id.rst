@@ -1,7 +1,7 @@
   .. _omp_get_ancestor_thread_num:
 
-omp_get_ancestor_thread_num - Ancestor thread ID
-************************************************
+omp_get_ancestor_thread_num -- Ancestor thread ID
+*************************************************
 
 :samp:`{Description}:`
   This function returns the thread identification number for the given

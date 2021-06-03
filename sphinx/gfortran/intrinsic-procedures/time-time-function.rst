@@ -1,7 +1,7 @@
   .. _time:
 
-TIME - Time function
-********************
+TIME --- Time function
+**********************
 
 .. index:: TIME
 

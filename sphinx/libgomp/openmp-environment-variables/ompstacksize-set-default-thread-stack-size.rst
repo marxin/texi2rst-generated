@@ -1,7 +1,7 @@
   .. _omp_stacksize:
 
-OMP_STACKSIZE - Set default thread stack size
-*********************************************
+OMP_STACKSIZE -- Set default thread stack size
+**********************************************
 
 .. index:: Environment Variable
 

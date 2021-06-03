@@ -1,7 +1,7 @@
   .. _bessel_j1:
 
-BESSEL_J1 - Bessel function of the first kind of order 1
-********************************************************
+BESSEL_J1 --- Bessel function of the first kind of order 1
+**********************************************************
 
 .. index:: BESSEL_J1
 

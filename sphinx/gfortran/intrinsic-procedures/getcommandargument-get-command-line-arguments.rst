@@ -1,7 +1,7 @@
   .. _get_command_argument:
 
-GET_COMMAND_ARGUMENT - Get command line arguments
-*************************************************
+GET_COMMAND_ARGUMENT --- Get command line arguments
+***************************************************
 
 .. index:: GET_COMMAND_ARGUMENT
 

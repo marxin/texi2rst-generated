@@ -1,7 +1,7 @@
   .. _omp_set_lock:
 
-omp_set_lock - Wait for and set simple lock
-*******************************************
+omp_set_lock -- Wait for and set simple lock
+********************************************
 
 :samp:`{Description}:`
   Before setting a simple lock, the lock variable must be initialized by 

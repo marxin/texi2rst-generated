@@ -1,7 +1,7 @@
   .. _acos:
 
-ACOS - Arccosine function 
-**************************
+ACOS --- Arccosine function 
+****************************
 
 .. index:: ACOS
 

@@ -1,7 +1,7 @@
   .. _associated:
 
-ASSOCIATED - Status of a pointer or pointer/target pair 
-********************************************************
+ASSOCIATED --- Status of a pointer or pointer/target pair 
+**********************************************************
 
 .. index:: ASSOCIATED
 

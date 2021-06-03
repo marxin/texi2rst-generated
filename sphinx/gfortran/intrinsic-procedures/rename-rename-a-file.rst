@@ -1,7 +1,7 @@
   .. _rename:
 
-RENAME - Rename a file
-**********************
+RENAME --- Rename a file
+************************
 
 .. index:: RENAME
 

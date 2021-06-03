@@ -482,7 +482,7 @@ Function, Variable, and Macro Listing.
   The ``hex_value`` macro returns ``unsigned int``, rather than
   signed ``int``, to make it easier to use in parsing addresses from
   hex dump files: a signed ``int`` would be sign-extended when
-  converted to a wider unsigned type - like ``bfd_vma``, on some
+  converted to a wider unsigned type --- like ``bfd_vma``, on some
   systems.
 
 .. safe-ctype.c:24
@@ -999,7 +999,7 @@ sets of characters:
     The standard input (output or error) of the program should be read (written) in
     binary mode rather than text mode.  These flags are ignored on systems
     which do not distinguish binary mode and text mode, such as Unix.  For
-    proper behavior these flags should match appropriately-a call to
+    proper behavior these flags should match appropriately---a call to
     ``pex_run`` using ``PEX_BINARY_OUTPUT`` should be followed by a
     call using ``PEX_BINARY_INPUT``.
 

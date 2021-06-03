@@ -108,10 +108,10 @@ there is a trigraph representation for a backslash, so it is possible for
 the trigraph :samp:`??/` to introduce an escaped newline.
 
 Escaped newlines are tedious because theoretically they can occur
-anywhere-between the :samp:`+` and :samp:`=` of the :samp:`+=` token,
+anywhere---between the :samp:`+` and :samp:`=` of the :samp:`+=` token,
 within the characters of an identifier, and even between the :samp:`*`
 and :samp:`/` that terminates a comment.  Moreover, you cannot be sure
-there is just one-there might be an arbitrarily long sequence of them.
+there is just one---there might be an arbitrarily long sequence of them.
 
 So, for example, the routine that lexes a number, ``parse_number``,
 cannot assume that it can scan forwards until the first non-number

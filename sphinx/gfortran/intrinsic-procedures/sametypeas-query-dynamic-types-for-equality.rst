@@ -1,7 +1,7 @@
   .. _same_type_as:
 
-SAME_TYPE_AS -  Query dynamic types for equality
-************************************************
+SAME_TYPE_AS ---  Query dynamic types for equality
+**************************************************
 
 .. index:: SAME_TYPE_AS
 

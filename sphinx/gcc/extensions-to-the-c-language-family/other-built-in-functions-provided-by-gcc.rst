@@ -1091,8 +1091,8 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   restrictions as the argument to ``typeof`` (see :ref:`typeof`).  The
   :samp:`{attribute}` argument is an attribute name optionally followed by
   a comma-separated list of arguments enclosed in parentheses.  Both forms
-  of attribute names-with and without double leading and trailing
-  underscores-are recognized.  See :ref:`attribute-syntax`, for details.
+  of attribute names---with and without double leading and trailing
+  underscores---are recognized.  See :ref:`attribute-syntax`, for details.
   When no attribute arguments are specified for an attribute that expects
   one or more arguments the function returns ``true`` if
   :samp:`{type-or-expression}` has been declared with the attribute regardless

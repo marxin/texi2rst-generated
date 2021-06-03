@@ -18,7 +18,7 @@ list can be found below.  See also the
   override type-bound procedures or to have deferred binding.
 
 * Polymorphic entities (' ``CLASS`` ') for derived types and unlimited
-  polymorphism (' ``CLASS(*)`` ') - including ``SAME_TYPE_AS``,
+  polymorphism (' ``CLASS(*)`` ') -- including ``SAME_TYPE_AS``,
   ``EXTENDS_TYPE_OF`` and ``SELECT TYPE`` for scalars and arrays and
   finalization.
 

@@ -1,7 +1,7 @@
   .. _iand:
 
-IAND - Bitwise logical and
-**************************
+IAND --- Bitwise logical and
+****************************
 
 .. index:: IAND
 

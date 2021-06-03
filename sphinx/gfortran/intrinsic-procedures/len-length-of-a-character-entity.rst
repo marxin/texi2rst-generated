@@ -1,7 +1,7 @@
   .. _len:
 
-LEN - Length of a character entity
-**********************************
+LEN --- Length of a character entity
+************************************
 
 .. index:: LEN
 

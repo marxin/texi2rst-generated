@@ -161,7 +161,7 @@ languages, rather than to fundamental aspects of storage layout.
   appropriate, and finally ``int``.  The string must exactly match one
   of the data type names defined in the function
   ``c_common_nodes_and_builtins`` in the file c-family/c-common.c.
-  You may not omit ``int`` or change the order-that would cause the
+  You may not omit ``int`` or change the order---that would cause the
   compiler to crash on startup.
 
   If you don't define this macro, the default is ``"long unsigned

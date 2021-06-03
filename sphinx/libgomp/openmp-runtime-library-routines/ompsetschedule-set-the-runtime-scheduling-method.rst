@@ -1,7 +1,7 @@
   .. _omp_set_schedule:
 
-omp_set_schedule - Set the runtime scheduling method
-****************************************************
+omp_set_schedule -- Set the runtime scheduling method
+*****************************************************
 
 :samp:`{Description}:`
   Sets the runtime scheduling method.  The :samp:`{kind}` argument can have the

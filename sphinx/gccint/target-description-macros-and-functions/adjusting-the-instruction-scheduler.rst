@@ -281,7 +281,7 @@ them: try the first ones in this list first.
   delays, however: (b) there's a better chance to predict the actual grouping
   that will be formed, and (c) correctly emulating the grouping can be very
   important.  In such targets one may want to allow issuing dependent insns
-  closer to one another-i.e., closer than the dependence distance;  however,
+  closer to one another---i.e., closer than the dependence distance;  however,
   not in cases of 'costly dependences', which this hooks allows to define.
 
 .. function:: void TARGET_SCHED_H_I_D_EXTENDED (void)

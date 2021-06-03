@@ -162,7 +162,7 @@ A few other macros and functions are usable with all types:
   requires structural equality. Finally, if for some reason you cannot
   guarantee that ``TYPE_CANONICAL`` will point to the canonical type,
   use ``SET_TYPE_STRUCTURAL_EQUALITY`` to make sure that the new
-  type-and any type constructed based on it-requires structural
+  type--and any type constructed based on it--requires structural
   equality. If you suspect that the canonical type system is
   miscomparing types, pass ``--param verify-canonical-types=1`` to
   the compiler or configure with ``--enable-checking`` to force the

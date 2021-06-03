@@ -1,7 +1,7 @@
   .. _omp_test_nest_lock:
 
-omp_test_nest_lock - Test and set nested lock if available
-**********************************************************
+omp_test_nest_lock -- Test and set nested lock if available
+***********************************************************
 
 :samp:`{Description}:`
   Before setting a nested lock, the lock variable must be initialized by 

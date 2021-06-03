@@ -79,7 +79,7 @@ register in two parts.  Then pieces of each address form separate
 immediate operands.
 
 The code generated to initialize the trampoline must store the variable
-parts-the static chain value and the function address-into the
+parts---the static chain value and the function address---into the
 immediate operands of the instructions.  On a CISC machine, this is
 simply a matter of copying each address to a memory reference at the
 proper offset from the start of the trampoline.  On a RISC machine, it
@@ -91,7 +91,7 @@ separately.
   This hook is called by ``assemble_trampoline_template`` to output,
   on the stream :samp:`{f}`, assembler code for a block of data that contains
   the constant parts of a trampoline.  This code should not include a
-  label-the label is taken care of automatically.
+  label---the label is taken care of automatically.
 
   If you do not define this hook, it means no template is needed
   for the target.  Do not define this hook on systems where the block move

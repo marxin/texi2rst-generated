@@ -1,7 +1,7 @@
   .. _atand:
 
-ATAND - Arctangent function, degrees
-************************************
+ATAND --- Arctangent function, degrees
+**************************************
 
 .. index:: ATAND
 

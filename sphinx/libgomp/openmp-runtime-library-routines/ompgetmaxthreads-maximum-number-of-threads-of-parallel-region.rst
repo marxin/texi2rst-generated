@@ -1,7 +1,7 @@
   .. _omp_get_max_threads:
 
-omp_get_max_threads - Maximum number of threads of parallel region
-******************************************************************
+omp_get_max_threads -- Maximum number of threads of parallel region
+*******************************************************************
 
 :samp:`{Description}:`
   Return the maximum number of threads used for the current parallel region

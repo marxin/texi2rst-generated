@@ -1,7 +1,7 @@
   .. _rrspacing:
 
-RRSPACING - Reciprocal of the relative spacing
-**********************************************
+RRSPACING --- Reciprocal of the relative spacing
+************************************************
 
 .. index:: RRSPACING
 

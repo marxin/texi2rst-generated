@@ -43,7 +43,7 @@ movm
   .. index:: force_reg
 
   Therefore, when given such a pair of operands, the pattern must generate
-  RTL which needs no reloading and needs no temporary registers-no
+  RTL which needs no reloading and needs no temporary registers---no
   registers other than the operands.  For example, if you support the
   pattern with a ``define_expand``, then in such a case the
   ``define_expand`` mustn't call ``force_reg`` or any other such
@@ -1969,7 +1969,7 @@ cpymemm
   those representable in a full Pmode pointer, you should provide
   a pattern with a
   mode corresponding to the range of values you can handle efficiently
-  (e.g., ``QImode`` for values in the range 0-127; note we avoid numbers
+  (e.g., ``QImode`` for values in the range 0--127; note we avoid numbers
   that appear negative) and also a pattern with ``Pmode``.
 
   The fourth operand is the known shared alignment of the source and
@@ -2007,7 +2007,7 @@ movmemm
   those representable in a full Pmode pointer, you should provide
   a pattern with a
   mode corresponding to the range of values you can handle efficiently
-  (e.g., ``QImode`` for values in the range 0-127; note we avoid numbers
+  (e.g., ``QImode`` for values in the range 0--127; note we avoid numbers
   that appear negative) and also a pattern with ``Pmode``.
 
   The fourth operand is the known shared alignment of the source and
@@ -2485,8 +2485,8 @@ cstoremode4
   ``ordered_comparison_operator`` predicate is often useful in this case).
 
   If this pattern is omitted, the compiler will generate a conditional
-  branch-for example, it may copy a constant one to the target and branching
-  around an assignment of zero to the target-or a libcall.  If the predicate
+  branch---for example, it may copy a constant one to the target and branching
+  around an assignment of zero to the target---or a libcall.  If the predicate
   for operand 1 only rejects some operators, it will also try reordering the
   operands and/or inverting the result value (e.g. by an exclusive OR).
   These possibilities could be cheaper or equivalent to the instructions
@@ -2665,7 +2665,7 @@ casesi
 
   * The lower bound for indices in the table, an integer constant.
 
-  * The total range of indices in the table-the largest index
+  * The total range of indices in the table---the largest index
     minus the smallest one (both inclusive).
 
   * A label that precedes the table itself.

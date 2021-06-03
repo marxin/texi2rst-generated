@@ -1,7 +1,7 @@
   .. _acc_update_device:
 
-acc_update_device - Update device memory from mapped host memory.
-*****************************************************************
+acc_update_device -- Update device memory from mapped host memory.
+******************************************************************
 
 Description
   This function updates the device copy from the previously mapped host memory.

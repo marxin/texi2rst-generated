@@ -1,7 +1,7 @@
   .. _gerror:
 
-GERROR - Get last system error message
-**************************************
+GERROR --- Get last system error message
+****************************************
 
 .. index:: GERROR
 

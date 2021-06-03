@@ -1,7 +1,7 @@
   .. _unlink:
 
-UNLINK - Remove a file from the file system
-*******************************************
+UNLINK --- Remove a file from the file system
+*********************************************
 
 .. index:: UNLINK
 

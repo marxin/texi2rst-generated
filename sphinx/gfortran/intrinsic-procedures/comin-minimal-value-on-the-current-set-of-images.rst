@@ -1,7 +1,7 @@
   .. _co_min:
 
-CO_MIN - Minimal value on the current set of images
-***************************************************
+CO_MIN --- Minimal value on the current set of images
+*****************************************************
 
 .. index:: CO_MIN
 

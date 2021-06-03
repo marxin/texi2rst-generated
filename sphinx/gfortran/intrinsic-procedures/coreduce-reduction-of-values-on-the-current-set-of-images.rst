@@ -1,7 +1,7 @@
   .. _co_reduce:
 
-CO_REDUCE - Reduction of values on the current set of images
-************************************************************
+CO_REDUCE --- Reduction of values on the current set of images
+**************************************************************
 
 .. index:: CO_REDUCE
 

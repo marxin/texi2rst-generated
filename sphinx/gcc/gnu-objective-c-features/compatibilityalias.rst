@@ -14,7 +14,7 @@ tells the compiler that each time it encounters ``WOApplication`` as
 a class name, it should replace it with ``GSWApplication`` (that is,
 ``WOApplication`` is just an alias for ``GSWApplication`` ).
 
-There are some constraints on how this can be used-
+There are some constraints on how this can be used---
 
 * ``WOApplication`` (the alias) must not be an existing class;
 

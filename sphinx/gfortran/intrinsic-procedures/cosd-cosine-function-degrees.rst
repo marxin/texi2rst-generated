@@ -1,7 +1,7 @@
   .. _cosd:
 
-COSD - Cosine function, degrees
-*******************************
+COSD --- Cosine function, degrees
+*********************************
 
 .. index:: COSD
 

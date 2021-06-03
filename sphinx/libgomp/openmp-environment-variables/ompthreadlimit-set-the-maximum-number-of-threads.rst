@@ -1,7 +1,7 @@
   .. _omp_thread_limit:
 
-OMP_THREAD_LIMIT - Set the maximum number of threads
-****************************************************
+OMP_THREAD_LIMIT -- Set the maximum number of threads
+*****************************************************
 
 .. index:: Environment Variable
 

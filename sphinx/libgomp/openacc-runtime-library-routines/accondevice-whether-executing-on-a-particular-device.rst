@@ -1,7 +1,7 @@
   .. _acc_on_device:
 
-acc_on_device - Whether executing on a particular device
-********************************************************
+acc_on_device -- Whether executing on a particular device
+*********************************************************
 
 :samp:`{Description}:`
   This function returns whether the program is executing on a particular

@@ -8,9 +8,9 @@ RTL Templates Transformations
 For some hardware architectures there are common cases when the RTL
 templates for the instructions can be derived from the other RTL
 templates using simple transformations.  E.g., i386.md contains
-an RTL template for the ordinary ``sub`` instruction-
+an RTL template for the ordinary ``sub`` instruction---
 ``*subsi_1``, and for the ``sub`` instruction with subsequent
-zero-extension- ``*subsi_1_zext``.  Such cases can be easily
+zero-extension--- ``*subsi_1_zext``.  Such cases can be easily
 implemented by a single meta-template capable of generating a modified
 case based on the initial one:
 

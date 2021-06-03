@@ -42,7 +42,7 @@ time.  Likewise, because :command:`gcov` accumulates statistics by line (at
 the lowest resolution), it works best with a programming style that
 places only one statement on each line.  If you use complicated macros
 that expand to loops or to other control structures, the statistics are
-less helpful-they only report on the line where the macro call
+less helpful---they only report on the line where the macro call
 appears.  If your complex macros behave like functions, you can replace
 them with inline functions to solve this problem.
 

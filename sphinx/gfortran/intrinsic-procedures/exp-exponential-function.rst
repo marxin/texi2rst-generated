@@ -1,7 +1,7 @@
   .. _exp:
 
-EXP - Exponential function 
-***************************
+EXP --- Exponential function 
+*****************************
 
 .. index:: EXP
 

@@ -46,8 +46,8 @@ bindings they are also accessible from Fortran.
 
 .. __gfortran_set_args:
 
-_gfortran_set_args - Save command-line arguments
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_args --- Save command-line arguments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_args
 
@@ -83,8 +83,8 @@ _gfortran_set_args - Save command-line arguments
 
   .. __gfortran_set_options:
 
-_gfortran_set_options - Set library option flags
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_options --- Set library option flags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_options
 
@@ -160,8 +160,8 @@ _gfortran_set_options - Set library option flags
 
   .. __gfortran_set_convert:
 
-_gfortran_set_convert - Set endian conversion
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_convert --- Set endian conversion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_convert
 
@@ -196,8 +196,8 @@ _gfortran_set_convert - Set endian conversion
 
   .. __gfortran_set_record_marker:
 
-_gfortran_set_record_marker - Set length of record markers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_record_marker --- Set length of record markers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_record_marker
 
@@ -231,8 +231,8 @@ _gfortran_set_record_marker - Set length of record markers
 
   .. __gfortran_set_fpe:
 
-_gfortran_set_fpe - Enable floating point exception traps
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_fpe --- Enable floating point exception traps
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_fpe
 
@@ -271,8 +271,8 @@ _gfortran_set_fpe - Enable floating point exception traps
 
   .. __gfortran_set_max_subrecord_length:
 
-_gfortran_set_max_subrecord_length - Set subrecord length
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_set_max_subrecord_length --- Set subrecord length
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: _gfortran_set_max_subrecord_length
 

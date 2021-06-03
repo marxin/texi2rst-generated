@@ -23,7 +23,7 @@ These :samp:`-m` options are supported on the SPARC:
   With :option:`-mflat`, the compiler does not generate save/restore instructions
   and uses a 'flat' or single register window model.  This model is compatible
   with the regular register window model.  The local registers and the input
-  registers (0-5) are still treated as 'call-saved' registers and are
+  registers (0--5) are still treated as 'call-saved' registers and are
   saved on the stack as needed.
 
   With :option:`-mno-flat` (the default), the compiler generates save/restore

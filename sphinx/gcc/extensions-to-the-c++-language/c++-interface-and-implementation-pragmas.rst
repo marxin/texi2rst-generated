@@ -71,7 +71,7 @@ functions.
   Use the string argument if you want a single implementation file to
   include code from multiple header files.  (You must also use
   :samp:`#include` to include the header file; :samp:`#pragma
-  implementation` only specifies how to use the file-it doesn't actually
+  implementation` only specifies how to use the file---it doesn't actually
   include it.)
 
   There is no way to split up the contents of a single header file into
@@ -88,7 +88,7 @@ effect on function inlining.
 
 If you define a class in a header file marked with :samp:`#pragma
 interface`, the effect on an inline function defined in that class is
-similar to an explicit ``extern`` declaration-the compiler emits
+similar to an explicit ``extern`` declaration---the compiler emits
 no code at all to define an independent version of the function.  Its
 definition is used only for inlining with its callers.
 

@@ -1,7 +1,7 @@
   .. _lbound:
 
-LBOUND - Lower dimension bounds of an array
-*******************************************
+LBOUND --- Lower dimension bounds of an array
+*********************************************
 
 .. index:: LBOUND
 

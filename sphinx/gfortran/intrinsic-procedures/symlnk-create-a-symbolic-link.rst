@@ -1,7 +1,7 @@
   .. _symlnk:
 
-SYMLNK - Create a symbolic link
-*******************************
+SYMLNK --- Create a symbolic link
+*********************************
 
 .. index:: SYMLNK
 

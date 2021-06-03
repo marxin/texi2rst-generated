@@ -1,7 +1,7 @@
   .. _ibits:
 
-IBITS - Bit extraction
-**********************
+IBITS --- Bit extraction
+************************
 
 .. index:: IBITS
 

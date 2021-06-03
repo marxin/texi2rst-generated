@@ -1,7 +1,7 @@
   .. _gomp_spincount:
 
-GOMP_SPINCOUNT - Set the busy-wait spin count
-*********************************************
+GOMP_SPINCOUNT -- Set the busy-wait spin count
+**********************************************
 
 .. index:: Environment Variable
 

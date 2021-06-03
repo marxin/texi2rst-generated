@@ -1,7 +1,7 @@
   .. _c_associated:
 
-C_ASSOCIATED - Status of a C pointer
-************************************
+C_ASSOCIATED --- Status of a C pointer
+**************************************
 
 .. index:: C_ASSOCIATED
 

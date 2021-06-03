@@ -1,7 +1,7 @@
   .. _adjustl:
 
-ADJUSTL - Left adjust a string 
-*******************************
+ADJUSTL --- Left adjust a string 
+*********************************
 
 .. index:: ADJUSTL
 

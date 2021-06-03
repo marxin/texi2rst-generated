@@ -1,7 +1,7 @@
   .. _omp_get_team_size:
 
-omp_get_team_size - Number of threads in a team
-***********************************************
+omp_get_team_size -- Number of threads in a team
+************************************************
 
 :samp:`{Description}:`
   This function returns the number of threads in a thread team to which

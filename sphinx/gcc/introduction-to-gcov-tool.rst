@@ -33,7 +33,7 @@ a list of typical differences:
 
 * histogram difference: This offline tool recomputes the histogram after merging
   the counters. The resulting histogram, therefore, is precise. The online
-  merging does not have this capability - the histogram is merged from two
+  merging does not have this capability -- the histogram is merged from two
   histograms and the result is an approximation.
 
 * summary checksum difference: Summary checksum uses a CRC32 operation. The value

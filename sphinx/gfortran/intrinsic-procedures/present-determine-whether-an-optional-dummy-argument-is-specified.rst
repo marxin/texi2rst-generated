@@ -1,7 +1,7 @@
   .. _present:
 
-PRESENT - Determine whether an optional dummy argument is specified
-*******************************************************************
+PRESENT --- Determine whether an optional dummy argument is specified
+*********************************************************************
 
 .. index:: PRESENT
 

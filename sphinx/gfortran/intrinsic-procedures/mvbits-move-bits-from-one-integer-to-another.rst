@@ -1,7 +1,7 @@
   .. _mvbits:
 
-MVBITS - Move bits from one integer to another
-**********************************************
+MVBITS --- Move bits from one integer to another
+************************************************
 
 .. index:: MVBITS
 

@@ -1,7 +1,7 @@
   .. _sin:
 
-SIN - Sine function 
-********************
+SIN --- Sine function 
+**********************
 
 .. index:: SIN
 

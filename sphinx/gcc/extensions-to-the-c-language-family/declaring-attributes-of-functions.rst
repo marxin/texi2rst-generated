@@ -1105,7 +1105,7 @@ The following attributes are supported on most targets.
   .. index:: noclone function attribute
 
   This function attribute prevents a function from being considered for
-  cloning-a mechanism that produces specialized copies of functions
+  cloning---a mechanism that produces specialized copies of functions
   and which is (currently) performed by interprocedural constant
   propagation.
 
@@ -2505,7 +2505,7 @@ These function attributes are supported by the AVR back end:
     push  __tmp_reg__
     clr   __zero_reg__
 
-  and accordingly for the postamble of the epilogue - no matter whether
+  and accordingly for the postamble of the epilogue --- no matter whether
   the mentioned registers are actually used in the ISR or not.
   Situations where you might want to use this attribute include:
 
@@ -3227,7 +3227,7 @@ targets.
   using thunks.
 
   On the SH Symbian OS target the ``dllimport`` attribute also has
-  another affect-it can cause the vtable and run-time type information
+  another affect---it can cause the vtable and run-time type information
   for a class to be exported.  This happens when the class has a
   dllimported constructor or a non-inline, non-pure virtual function
   and, for either of those two conditions, the class also has an inline

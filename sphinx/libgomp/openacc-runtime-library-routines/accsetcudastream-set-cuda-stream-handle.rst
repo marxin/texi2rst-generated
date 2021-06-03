@@ -1,7 +1,7 @@
   .. _acc_set_cuda_stream:
 
-acc_set_cuda_stream - Set CUDA stream handle.
-*********************************************
+acc_set_cuda_stream -- Set CUDA stream handle.
+**********************************************
 
 Description
   This function associates the stream handle specified by :samp:`{stream}` with

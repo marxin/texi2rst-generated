@@ -1,7 +1,7 @@
   .. _huge:
 
-HUGE - Largest number of a kind
-*******************************
+HUGE --- Largest number of a kind
+*********************************
 
 .. index:: HUGE
 

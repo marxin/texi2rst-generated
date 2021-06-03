@@ -1,7 +1,7 @@
   .. _random_seed:
 
-RANDOM_SEED - Initialize a pseudo-random number sequence
-********************************************************
+RANDOM_SEED --- Initialize a pseudo-random number sequence
+**********************************************************
 
 .. index:: RANDOM_SEED
 

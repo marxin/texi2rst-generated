@@ -1,7 +1,7 @@
   .. _nint:
 
-NINT - Nearest whole number
-***************************
+NINT --- Nearest whole number
+*****************************
 
 .. index:: NINT
 

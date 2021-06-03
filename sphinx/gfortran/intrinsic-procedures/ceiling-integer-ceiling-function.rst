@@ -1,7 +1,7 @@
   .. _ceiling:
 
-CEILING - Integer ceiling function
-**********************************
+CEILING --- Integer ceiling function
+************************************
 
 .. index:: CEILING
 

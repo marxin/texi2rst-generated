@@ -1,7 +1,7 @@
   .. _merge:
 
-MERGE - Merge variables
-***********************
+MERGE --- Merge variables
+*************************
 
 .. index:: MERGE
 

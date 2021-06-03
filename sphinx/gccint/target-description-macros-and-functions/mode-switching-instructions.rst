@@ -35,8 +35,8 @@ The following macros control mode switching optimizations:
   initializer for an array of integers.  Each initializer element
   N refers to an entity that needs mode switching, and specifies the number
   of different modes that might need to be set for this entity.
-  The position of the initializer in the initializer-starting counting at
-  zero-determines the integer that is used to refer to the mode-switched
+  The position of the initializer in the initializer---starting counting at
+  zero---determines the integer that is used to refer to the mode-switched
   entity in question.
   In macros that take mode arguments / yield a mode result, modes are
   represented as numbers 0 ... N - 1.  N is used to specify that no mode

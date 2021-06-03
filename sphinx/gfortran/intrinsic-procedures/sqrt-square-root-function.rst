@@ -1,7 +1,7 @@
   .. _sqrt:
 
-SQRT - Square-root function
-***************************
+SQRT --- Square-root function
+*****************************
 
 .. index:: SQRT
 

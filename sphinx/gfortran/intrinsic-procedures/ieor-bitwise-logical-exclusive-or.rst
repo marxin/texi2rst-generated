@@ -1,7 +1,7 @@
   .. _ieor:
 
-IEOR - Bitwise logical exclusive or
-***********************************
+IEOR --- Bitwise logical exclusive or
+*************************************
 
 .. index:: IEOR
 

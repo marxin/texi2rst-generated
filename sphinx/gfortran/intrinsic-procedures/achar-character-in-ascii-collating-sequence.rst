@@ -1,7 +1,7 @@
   .. _achar:
 
-ACHAR - Character in ASCII collating sequence 
-**********************************************
+ACHAR --- Character in ASCII collating sequence 
+************************************************
 
 .. index:: ACHAR
 

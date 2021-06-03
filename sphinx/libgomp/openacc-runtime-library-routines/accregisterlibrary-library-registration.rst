@@ -1,7 +1,7 @@
   .. _acc_register_library:
 
-acc_register_library - Library registration.
-********************************************
+acc_register_library -- Library registration.
+*********************************************
 
 :samp:`{Description}:`
   Function for library registration.

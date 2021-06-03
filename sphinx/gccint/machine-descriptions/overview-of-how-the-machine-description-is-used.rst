@@ -18,7 +18,7 @@ named ``define_insn`` or a ``define_expand``.  The compiler will
 choose the pattern with the right name and apply the operands according
 to the documentation later in this chapter, without regard for the RTL
 template or operand constraints.  Note that the names the compiler looks
-for are hard-coded in the compiler-it will ignore unnamed patterns and
+for are hard-coded in the compiler---it will ignore unnamed patterns and
 patterns with names it doesn't know about, but if you don't provide a
 named pattern it needs, it will abort.
 

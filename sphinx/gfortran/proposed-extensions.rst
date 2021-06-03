@@ -36,7 +36,7 @@ Environment Options
   LA should use BLAS calling conventions.
 
 * Environment variables controlling actions on arithmetic exceptions like
-  overflow, underflow, precision loss-Generate NaN, abort, default.
+  overflow, underflow, precision loss---Generate NaN, abort, default.
   action.
 
 * Set precision for fp units that support it (i387).

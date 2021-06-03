@@ -1,7 +1,7 @@
   .. _cotan:
 
-COTAN - Cotangent function
-**************************
+COTAN --- Cotangent function
+****************************
 
 .. index:: COTAN
 

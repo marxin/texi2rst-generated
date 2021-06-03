@@ -1,7 +1,7 @@
 .. _gfortran_convert_unit:
 
-GFORTRAN_CONVERT_UNIT-Set endianness for unformatted I/O
-********************************************************
+GFORTRAN_CONVERT_UNIT---Set endianness for unformatted I/O
+**********************************************************
 
 By setting the :envvar:`GFORTRAN_CONVERT_UNIT` variable, it is possible
 to change the representation of data for unformatted files.

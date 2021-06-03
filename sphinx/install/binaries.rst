@@ -24,7 +24,7 @@ contact their makers.
   * `AIX Open Source Packages (AIX5L AIX 6.1
     AIX 7.1) <http://www.perzl.org/aix/>`_.
 
-* DOS-`DJGPP <http://www.delorie.com/djgpp/>`_.
+* DOS---`DJGPP <http://www.delorie.com/djgpp/>`_.
 
 * HP-UX:
 

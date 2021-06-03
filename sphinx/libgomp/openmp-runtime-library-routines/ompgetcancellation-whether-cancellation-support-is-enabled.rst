@@ -1,7 +1,7 @@
   .. _omp_get_cancellation:
 
-omp_get_cancellation - Whether cancellation support is enabled
-**************************************************************
+omp_get_cancellation -- Whether cancellation support is enabled
+***************************************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if cancellation is activated, ``false``

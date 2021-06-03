@@ -9,7 +9,7 @@ we do not make because we think GCC is better without them.
 * Checking the number and type of arguments to a function which has an
   old-fashioned definition and no prototype.
 
-  Such a feature would work only occasionally-only for calls that appear
+  Such a feature would work only occasionally---only for calls that appear
   in the same file as the called function, following the definition.  The
   only way to check all calls reliably is to add a prototype for the
   function.  But adding a prototype eliminates the motivation for this
@@ -135,7 +135,7 @@ we do not make because we think GCC is better without them.
   Sometimes people say that defining ``__STDC__`` in a compiler that
   does not completely conform to the ISO C standard somehow violates the
   standard.  This is illogical.  The standard is a standard for compilers
-  that claim to support ISO C, such as :samp:`gcc -ansi`-not for other
+  that claim to support ISO C, such as :samp:`gcc -ansi`---not for other
   compilers such as plain :command:`gcc`.  Whatever the ISO C standard says
   is relevant to the design of plain :command:`gcc` without :option:`-ansi` only
   for pragmatic reasons, not as a requirement.

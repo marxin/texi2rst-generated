@@ -1,7 +1,7 @@
   .. _maxval:
 
-MAXVAL - Maximum value of an array
-**********************************
+MAXVAL --- Maximum value of an array
+************************************
 
 .. index:: MAXVAL
 

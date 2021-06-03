@@ -1,7 +1,7 @@
   .. _atan2:
 
-ATAN2 - Arctangent function 
-****************************
+ATAN2 --- Arctangent function 
+******************************
 
 .. index:: ATAN2
 

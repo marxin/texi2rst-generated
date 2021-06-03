@@ -1,7 +1,7 @@
   .. _access:
 
-ACCESS - Checks file access modes
-*********************************
+ACCESS --- Checks file access modes
+***********************************
 
 .. index:: ACCESS
 

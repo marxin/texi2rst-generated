@@ -1,7 +1,7 @@
   .. _acc_unmap_data:
 
-acc_unmap_data - Unmap device memory from host memory.
-******************************************************
+acc_unmap_data -- Unmap device memory from host memory.
+*******************************************************
 
 Description
   This function unmaps previously mapped device and host memory. The latter

@@ -1,7 +1,7 @@
   .. _product:
 
-PRODUCT - Product of array elements
-***********************************
+PRODUCT --- Product of array elements
+*************************************
 
 .. index:: PRODUCT
 

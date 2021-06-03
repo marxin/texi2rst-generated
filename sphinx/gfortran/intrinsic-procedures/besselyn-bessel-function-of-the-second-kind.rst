@@ -1,7 +1,7 @@
   .. _bessel_yn:
 
-BESSEL_YN - Bessel function of the second kind
-**********************************************
+BESSEL_YN --- Bessel function of the second kind
+************************************************
 
 .. index:: BESSEL_YN
 
