@@ -1,15 +1,19 @@
 Welcome to install documentation!
-===============================
+=================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   install.rst
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
+  installing-gcc
+  prerequisites
+  downloading-gcc
+  configuration
+  building
+  testing
+  final-installation
+  binaries
+  host-target-specific-installation-notes-for-gcc
+  option-index
+  gnu-free-documentation-license.rst
