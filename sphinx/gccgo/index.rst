@@ -1,15 +1,22 @@
 Welcome to gccgo documentation!
 ===============================
 
-Contents:
+Introduction
+============
+
+This manual describes how to use :command:`gccgo`, the GNU compiler for
+the Go programming language.  This manual is specifically about
+:command:`gccgo`.  For more information about the Go programming
+language in general, including language specifications and standard
+package documentation, see http://golang.org/.
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   gccgo.rst
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
+  invoking-gccgo
+  import-and-export
+  compiler-directives
+  c-interoperability
+  general-public-license-3
+  gnu-free-documentation-license
+  option-index
