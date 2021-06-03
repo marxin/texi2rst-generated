@@ -1,7 +1,7 @@
   .. _range:
 
-RANGE - Decimal exponent range
-******************************
+RANGE --- Decimal exponent range
+********************************
 
 .. index:: RANGE
 

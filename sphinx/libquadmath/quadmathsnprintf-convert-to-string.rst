@@ -1,7 +1,7 @@
   .. _quadmath_snprintf:
 
-quadmath_snprintf - Convert to string
-*************************************
+quadmath_snprintf --- Convert to string
+***************************************
 
 The function ``quadmath_snprintf`` converts a ``__float128`` floating-point
 number into a string.  It is a specialized alternative to ``snprintf``, where

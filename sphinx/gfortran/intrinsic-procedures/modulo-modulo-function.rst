@@ -1,7 +1,7 @@
   .. _modulo:
 
-MODULO - Modulo function
-************************
+MODULO --- Modulo function
+**************************
 
 .. index:: MODULO
 

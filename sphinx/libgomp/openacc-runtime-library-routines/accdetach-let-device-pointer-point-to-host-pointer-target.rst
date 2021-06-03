@@ -1,7 +1,7 @@
   .. _acc_detach:
 
-acc_detach - Let device pointer point to host-pointer target.
-*************************************************************
+acc_detach -- Let device pointer point to host-pointer target.
+**************************************************************
 
 Description
   This function updates a pointer on the device from pointing to a device-pointer

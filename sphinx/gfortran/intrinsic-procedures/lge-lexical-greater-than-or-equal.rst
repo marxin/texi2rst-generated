@@ -1,7 +1,7 @@
   .. _lge:
 
-LGE - Lexical greater than or equal
-***********************************
+LGE --- Lexical greater than or equal
+*************************************
 
 .. index:: LGE
 

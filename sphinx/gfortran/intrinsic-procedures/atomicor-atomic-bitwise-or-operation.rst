@@ -1,7 +1,7 @@
   .. _atomic_or:
 
-ATOMIC_OR - Atomic bitwise OR operation
-***************************************
+ATOMIC_OR --- Atomic bitwise OR operation
+*****************************************
 
 .. index:: ATOMIC_OR
 

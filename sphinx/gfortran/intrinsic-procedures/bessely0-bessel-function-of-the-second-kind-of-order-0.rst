@@ -1,7 +1,7 @@
   .. _bessel_y0:
 
-BESSEL_Y0 - Bessel function of the second kind of order 0
-*********************************************************
+BESSEL_Y0 --- Bessel function of the second kind of order 0
+***********************************************************
 
 .. index:: BESSEL_Y0
 

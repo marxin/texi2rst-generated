@@ -20,7 +20,7 @@ The syntax
 * ``GTY(([options])) typename;``
 
 is *not* accepted.  There should be an ``extern`` declaration
-of such a variable in a header somewhere-mark that, not the
+of such a variable in a header somewhere---mark that, not the
 definition.  Or, if the variable is only used in one file, make it
 ``static``.
 

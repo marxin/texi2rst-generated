@@ -1,7 +1,7 @@
   .. _int8:
 
-INT8 - Convert to 64-bit integer type
-*************************************
+INT8 --- Convert to 64-bit integer type
+***************************************
 
 .. index:: INT8
 

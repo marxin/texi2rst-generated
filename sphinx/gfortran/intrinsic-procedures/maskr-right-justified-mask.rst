@@ -1,7 +1,7 @@
   .. _maskr:
 
-MASKR - Right justified mask
-****************************
+MASKR --- Right justified mask
+******************************
 
 .. index:: MASKR
 

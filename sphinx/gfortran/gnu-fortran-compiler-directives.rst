@@ -31,11 +31,11 @@ for details.
 For procedures and procedure pointers, the following attributes can
 be used to change the calling convention:
 
-* ``CDECL`` - standard C calling convention
+* ``CDECL`` -- standard C calling convention
 
-* ``STDCALL`` - convention where the called procedure pops the stack
+* ``STDCALL`` -- convention where the called procedure pops the stack
 
-* ``FASTCALL`` - part of the arguments are passed via registers
+* ``FASTCALL`` -- part of the arguments are passed via registers
   instead using the stack
 
 Besides changing the calling convention, the attributes also influence
@@ -48,9 +48,9 @@ On some systems, procedures and global variables (module variables and
 ``COMMON`` blocks) need special handling to be accessible when they
 are in a shared library.  The following attributes are available:
 
-* ``DLLEXPORT`` - provide a global pointer to a pointer in the DLL
+* ``DLLEXPORT`` -- provide a global pointer to a pointer in the DLL
 
-* ``DLLIMPORT`` - reference the function or variable using a
+* ``DLLIMPORT`` -- reference the function or variable using a
   global pointer
 
 For dummy arguments, the ``NO_ARG_CHECK`` attribute can be used; in
@@ -72,9 +72,9 @@ attribute; furthermore, they shall be either scalar or of assumed-size
 ( ``dimension(*)`` ). As ``TYPE(*)``, the ``NO_ARG_CHECK`` attribute
 requires an explicit interface.
 
-* ``NO_ARG_CHECK`` - disable the type, kind and rank checking
+* ``NO_ARG_CHECK`` -- disable the type, kind and rank checking
 
-* ``DEPRECATED`` - print a warning when using a such-tagged
+* ``DEPRECATED`` -- print a warning when using a such-tagged
   deprecated procedure, variable or parameter; the warning can be suppressed
   with :option:`-Wno-deprecated-declarations`.
 

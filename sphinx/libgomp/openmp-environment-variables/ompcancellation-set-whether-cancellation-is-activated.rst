@@ -1,7 +1,7 @@
 .. _omp_cancellation:
 
-OMP_CANCELLATION - Set whether cancellation is activated
-********************************************************
+OMP_CANCELLATION -- Set whether cancellation is activated
+*********************************************************
 
 .. index:: Environment Variable
 

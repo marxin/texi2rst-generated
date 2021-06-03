@@ -1,7 +1,7 @@
   .. _acc_async_test:
 
-acc_async_test - Test for completion of a specific asynchronous operation.
-**************************************************************************
+acc_async_test -- Test for completion of a specific asynchronous operation.
+***************************************************************************
 
 Description
   This function tests for completion of the asynchronous operation specified

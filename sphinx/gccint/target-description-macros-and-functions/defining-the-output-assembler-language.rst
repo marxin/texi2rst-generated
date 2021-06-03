@@ -4,7 +4,7 @@ Defining the Output Assembler Language
 **************************************
 
 This section describes macros whose principal purpose is to describe how
-to write instructions in assembler language-rather than what the
+to write instructions in assembler language---rather than what the
 instructions do.
 
 .. toctree::
@@ -1040,9 +1040,9 @@ How Initialization Functions Are Handled
 .. index:: destructors, output of
 
 The compiled code for certain languages includes :dfn:`constructors`
-(also called :dfn:`initialization routines`)-functions to initialize
+(also called :dfn:`initialization routines`)---functions to initialize
 data in the program when the program is started.  These functions need
-to be called before the program is 'started'-that is to say, before
+to be called before the program is 'started'---that is to say, before
 ``main`` is called.
 
 Compiling some languages generates :dfn:`destructors` (also called
@@ -1062,7 +1062,7 @@ Much of the structure is common to all four variations.
 
 .. index:: __DTOR_LIST__
 
-The linker must build two lists of these functions-a list of
+The linker must build two lists of these functions---a list of
 initialization functions, called ``__CTOR_LIST__``, and a list of
 termination functions, called ``__DTOR_LIST__``.
 
@@ -1352,7 +1352,7 @@ This describes assembler instruction output.
   The definition is a C statement or statements which output an
   assembler instruction opcode to the stdio stream :samp:`{stream}`.  The
   macro-operand :samp:`{ptr}` is a variable of type ``char *`` which
-  points to the opcode name in its 'internal' form-the form that is
+  points to the opcode name in its 'internal' form---the form that is
   written in the machine description.  The definition should output the
   opcode name to :samp:`{stream}`, performing any translation you desire, and
   increment the variable :samp:`{ptr}` to point at the end of the opcode
@@ -1890,7 +1890,7 @@ This describes commands for alignment.
 
   Define this macro if ``ASM_OUTPUT_SKIP`` should not be used in the
   text section because it fails to put zeros in the bytes that are skipped.
-  This is true on many Unix systems, where the pseudo-op to skip bytes
+  This is true on many Unix systems, where the pseudo--op to skip bytes
   produces no-op instructions rather than zeros when used in the text
   section.
 

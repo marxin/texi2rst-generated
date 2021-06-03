@@ -1,7 +1,7 @@
   .. _omp_is_initial_device:
 
-omp_is_initial_device - Whether executing on the host device
-************************************************************
+omp_is_initial_device -- Whether executing on the host device
+*************************************************************
 
 :samp:`{Description}:`
   This function returns ``true`` if currently running on the host device,

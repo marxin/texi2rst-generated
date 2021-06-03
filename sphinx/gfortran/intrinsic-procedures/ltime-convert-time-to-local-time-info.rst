@@ -1,7 +1,7 @@
   .. _ltime:
 
-LTIME - Convert time to local time info
-***************************************
+LTIME --- Convert time to local time info
+*****************************************
 
 .. index:: LTIME
 
@@ -38,22 +38,22 @@ LTIME - Convert time to local time info
 :samp:`{Return value}:`
   The elements of :samp:`{VALUES}` are assigned as follows:
 
-  * Seconds after the minute, range 0-59 or 0-61 to allow for leap
+  * Seconds after the minute, range 0--59 or 0--61 to allow for leap
     seconds
 
-  * Minutes after the hour, range 0-59
+  * Minutes after the hour, range 0--59
 
-  * Hours past midnight, range 0-23
+  * Hours past midnight, range 0--23
 
-  * Day of month, range 1-31
+  * Day of month, range 1--31
 
-  * Number of months since January, range 0-11
+  * Number of months since January, range 0--11
 
   * Years since 1900
 
-  * Number of days since Sunday, range 0-6
+  * Number of days since Sunday, range 0--6
 
-  * Days since January 1, range 0-365
+  * Days since January 1, range 0--365
 
   * Daylight savings indicator: positive if daylight savings is in
     effect, zero if not, and negative if the information is not available.

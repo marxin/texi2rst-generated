@@ -1,7 +1,7 @@
   .. _scale:
 
-SCALE - Scale a real value
-**************************
+SCALE --- Scale a real value
+****************************
 
 .. index:: SCALE
 

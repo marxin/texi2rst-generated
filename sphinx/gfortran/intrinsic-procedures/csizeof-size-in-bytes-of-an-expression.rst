@@ -1,7 +1,7 @@
   .. _c_sizeof:
 
-C_SIZEOF - Size in bytes of an expression
-*****************************************
+C_SIZEOF --- Size in bytes of an expression
+*******************************************
 
 .. index:: C_SIZEOF
 

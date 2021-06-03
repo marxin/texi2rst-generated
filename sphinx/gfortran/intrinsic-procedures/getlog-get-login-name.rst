@@ -1,7 +1,7 @@
   .. _getlog:
 
-GETLOG - Get login name
-***********************
+GETLOG --- Get login name
+*************************
 
 .. index:: GETLOG
 

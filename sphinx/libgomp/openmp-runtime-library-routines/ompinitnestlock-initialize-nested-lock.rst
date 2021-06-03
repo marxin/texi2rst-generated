@@ -1,7 +1,7 @@
   .. _omp_init_nest_lock:
 
-omp_init_nest_lock - Initialize nested lock
-*******************************************
+omp_init_nest_lock -- Initialize nested lock
+********************************************
 
 :samp:`{Description}:`
   Initialize a nested lock.  After initialization, the lock is in

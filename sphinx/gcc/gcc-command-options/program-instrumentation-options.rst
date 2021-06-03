@@ -677,7 +677,7 @@ program analysis purposes.
 .. option:: -fstack-protector-strong
 
   Like :option:`-fstack-protector` but includes additional functions to
-  be protected - those that have local array definitions, or have
+  be protected --- those that have local array definitions, or have
   references to local frame addresses.  Only variables that are actually
   allocated on the stack are considered, optimized away variables or variables
   allocated in registers don't count.
@@ -928,8 +928,8 @@ program analysis purposes.
   the area size or to remove it completely on a single function.
   If ``N=0``, no pad location is recorded.
 
-  The NOP instructions are inserted at-and maybe before, depending on
-  :samp:`{M}` -the function entry address, even before the prologue.
+  The NOP instructions are inserted at---and maybe before, depending on
+  :samp:`{M}` ---the function entry address, even before the prologue.
 
   The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.
 

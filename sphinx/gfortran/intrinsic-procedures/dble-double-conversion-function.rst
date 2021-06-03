@@ -1,7 +1,7 @@
   .. _dble:
 
-DBLE - Double conversion function
-*********************************
+DBLE --- Double conversion function
+***********************************
 
 .. index:: DBLE
 

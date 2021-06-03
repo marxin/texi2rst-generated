@@ -12,7 +12,7 @@ MeP Options
 
 .. option:: -mall-opts
 
-  Enables all the optional instructions-average, multiply, divide, bit
+  Enables all the optional instructions---average, multiply, divide, bit
   operations, leading zero, absolute difference, min/max, clip, and
   saturation.
 
@@ -30,7 +30,7 @@ MeP Options
 
 .. option:: -mbitops
 
-  Enables the bit operation instructions-bit test ( ``btstm`` ), set
+  Enables the bit operation instructions---bit test ( ``btstm`` ), set
   ( ``bsetm`` ), clear ( ``bclrm`` ), invert ( ``bnotm`` ), and
   test-and-set ( ``tas`` ).
 

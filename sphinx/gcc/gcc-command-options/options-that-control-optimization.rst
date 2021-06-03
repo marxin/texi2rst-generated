@@ -230,7 +230,7 @@ the last such option is the one that is effective.
 Options of the form :samp:`-fflag` specify machine-independent
 flags.  Most flags have both positive and negative forms; the negative
 form of :samp:`-ffoo` is :samp:`-fno-foo`.  In the table
-below, only one of the forms is listed-the one you typically 
+below, only one of the forms is listed---the one you typically 
 use.  You can figure out the other form by either removing :samp:`no-`
 or adding it.
 
@@ -493,7 +493,7 @@ optimizations to be performed is desired.
   code.
 
   This option turns off this behavior because some programs explicitly
-  rely on variables going to the data section-e.g., so that the
+  rely on variables going to the data section---e.g., so that the
   resulting executable can find the beginning of that section and/or make
   assumptions based on that.
 

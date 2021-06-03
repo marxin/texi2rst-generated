@@ -1,7 +1,7 @@
   .. _conjg:
 
-CONJG - Complex conjugate function
-**********************************
+CONJG --- Complex conjugate function
+************************************
 
 .. index:: CONJG
 

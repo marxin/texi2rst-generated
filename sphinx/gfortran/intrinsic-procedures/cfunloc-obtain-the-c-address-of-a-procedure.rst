@@ -1,7 +1,7 @@
   .. _c_funloc:
 
-C_FUNLOC - Obtain the C address of a procedure
-**********************************************
+C_FUNLOC --- Obtain the C address of a procedure
+************************************************
 
 .. index:: C_FUNLOC
 

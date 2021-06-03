@@ -1,7 +1,7 @@
 .. _strtoflt128:
 
-strtoflt128 - Convert from string
-*********************************
+strtoflt128 --- Convert from string
+***********************************
 
 The function ``strtoflt128`` converts a string into a
 ``__float128`` number.

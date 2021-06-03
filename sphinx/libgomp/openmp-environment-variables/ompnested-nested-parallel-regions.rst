@@ -1,7 +1,7 @@
   .. _omp_nested:
 
-OMP_NESTED - Nested parallel regions
-************************************
+OMP_NESTED -- Nested parallel regions
+*************************************
 
 .. index:: Environment Variable
 

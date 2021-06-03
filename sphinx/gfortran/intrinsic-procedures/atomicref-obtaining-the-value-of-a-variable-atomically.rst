@@ -1,7 +1,7 @@
   .. _atomic_ref:
 
-ATOMIC_REF - Obtaining the value of a variable atomically
-*********************************************************
+ATOMIC_REF --- Obtaining the value of a variable atomically
+***********************************************************
 
 .. index:: ATOMIC_REF
 

@@ -1,7 +1,7 @@
 .. _gfortran_error_backtrace:
 
-GFORTRAN_ERROR_BACKTRACE-Show backtrace on run-time errors
-**********************************************************
+GFORTRAN_ERROR_BACKTRACE---Show backtrace on run-time errors
+************************************************************
 
 If the :envvar:`GFORTRAN_ERROR_BACKTRACE` variable is set to :samp:`y`,
 :samp:`Y` or :samp:`1` (only the first letter is relevant) then a

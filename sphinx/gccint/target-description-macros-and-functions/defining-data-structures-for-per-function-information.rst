@@ -29,7 +29,7 @@ RTX to hold the register containing the function's return address.  This
 RTX can then be used to implement the ``__builtin_return_address``
 function, for level 0.
 
-Note-earlier implementations of GCC used a single data area to hold
+Note---earlier implementations of GCC used a single data area to hold
 all of the per-function information.  Thus when processing of a nested
 function began the old per-function data had to be pushed onto a
 stack, and when the processing was finished, it had to be popped off the

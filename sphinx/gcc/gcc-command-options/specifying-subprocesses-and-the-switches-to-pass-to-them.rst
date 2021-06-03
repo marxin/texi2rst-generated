@@ -353,7 +353,7 @@
     a single space.
 
   ``%<S``
-    Remove all occurrences of ``-S`` from the command line.  Note-this
+    Remove all occurrences of ``-S`` from the command line.  Note---this
     command is position dependent.  :samp:`%` commands in the spec string
     before this one see ``-S``, :samp:`%` commands in the spec string
     after this one do not.

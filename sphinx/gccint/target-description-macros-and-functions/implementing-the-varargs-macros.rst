@@ -64,7 +64,7 @@ below.
 
   ``__builtin_classify_type`` ignores the value of :samp:`{object}`,
   considering only its data type.  It returns an integer describing what
-  kind of type that is-integer, floating, pointer, structure, and so on.
+  kind of type that is---integer, floating, pointer, structure, and so on.
 
   The file typeclass.h defines an enumeration that you can use to
   interpret the values of ``__builtin_classify_type``.

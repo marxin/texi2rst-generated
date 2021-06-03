@@ -66,7 +66,7 @@ Cross-compilers search a little differently:
 
 ``collect2`` explicitly avoids running ``ld`` using the file name
 under which ``collect2`` itself was invoked.  In fact, it remembers
-up a list of such names-in case one copy of ``collect2`` finds
+up a list of such names---in case one copy of ``collect2`` finds
 another copy (or version) of ``collect2`` installed as ``ld`` in a
 second place in the search path.
 

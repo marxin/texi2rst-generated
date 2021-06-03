@@ -897,7 +897,7 @@ These :samp:`-m` options are defined for the ARM port:
 .. option:: -mtls-dialect=dialect
 
   Specify the dialect to use for accessing thread local storage.  Two
-  :samp:`{dialect}` s are supported-:samp:`gnu` and :samp:`gnu2`.  The
+  :samp:`{dialect}` s are supported---:samp:`gnu` and :samp:`gnu2`.  The
   :samp:`gnu` dialect selects the original GNU scheme for supporting
   local and global dynamic TLS models.  The :samp:`gnu2` dialect
   selects the GNU descriptor scheme, which provides better performance

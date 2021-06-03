@@ -1,7 +1,7 @@
   .. _acc_attach:
 
-acc_attach - Let device pointer point to device-pointer target.
-***************************************************************
+acc_attach -- Let device pointer point to device-pointer target.
+****************************************************************
 
 Description
   This function updates a pointer on the device from pointing to a host-pointer

@@ -1,7 +1,7 @@
   .. _btest:
 
-BTEST - Bit test function
-*************************
+BTEST --- Bit test function
+***************************
 
 .. index:: BTEST
 

@@ -1,7 +1,7 @@
   .. _merge_bits:
 
-MERGE_BITS - Merge of bits under mask
-*************************************
+MERGE_BITS --- Merge of bits under mask
+***************************************
 
 .. index:: MERGE_BITS
 

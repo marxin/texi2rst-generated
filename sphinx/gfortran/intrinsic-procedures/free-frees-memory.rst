@@ -1,7 +1,7 @@
   .. _free:
 
-FREE - Frees memory
-*******************
+FREE --- Frees memory
+*********************
 
 .. index:: FREE
 

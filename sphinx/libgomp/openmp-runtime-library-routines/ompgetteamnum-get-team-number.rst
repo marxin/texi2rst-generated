@@ -1,7 +1,7 @@
   .. _omp_get_team_num:
 
-omp_get_team_num - Get team number
-**********************************
+omp_get_team_num -- Get team number
+***********************************
 
 :samp:`{Description}:`
   Returns the team number of the calling thread.

@@ -21,7 +21,7 @@ These additional options are available for Microsoft Windows targets:
 .. option:: -mdll
 
   This option is available for Cygwin and MinGW targets.  It
-  specifies that a DLL-a dynamic link library-is to be
+  specifies that a DLL---a dynamic link library---is to be
   generated, enabling the selection of the required runtime
   startup object and entry point.
 

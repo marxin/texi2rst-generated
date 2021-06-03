@@ -1,7 +1,7 @@
   .. _ibclr:
 
-IBCLR - Clear bit
-*****************
+IBCLR --- Clear bit
+*******************
 
 .. index:: IBCLR
 

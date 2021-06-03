@@ -295,7 +295,7 @@ and using the new compiler to build target libraries.
 
 When GCC is configured for a native configuration, the default action
 for :command:`make` is to do a full three-stage bootstrap.  This means
-that GCC is built three times-once with the native compiler, once with
+that GCC is built three times---once with the native compiler, once with
 the native-built compiler it just built, and once with the compiler it
 built the second time.  In theory, the last two should produce the same
 results, which :samp:`make compare` can check.  Each stage is configured

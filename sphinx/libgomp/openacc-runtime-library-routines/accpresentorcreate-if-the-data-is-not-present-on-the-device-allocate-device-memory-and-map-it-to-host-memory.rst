@@ -1,7 +1,7 @@
   .. _acc_present_or_create:
 
-acc_present_or_create - If the data is not present on the device, allocate device memory and map it to host memory.
-*******************************************************************************************************************
+acc_present_or_create -- If the data is not present on the device, allocate device memory and map it to host memory.
+********************************************************************************************************************
 
 Description
   This function tests if the host data specified by :samp:`{a}` and of length

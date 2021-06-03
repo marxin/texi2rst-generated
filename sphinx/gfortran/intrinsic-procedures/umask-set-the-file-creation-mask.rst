@@ -1,7 +1,7 @@
   .. _umask:
 
-UMASK - Set the file creation mask
-**********************************
+UMASK --- Set the file creation mask
+************************************
 
 .. index:: UMASK
 

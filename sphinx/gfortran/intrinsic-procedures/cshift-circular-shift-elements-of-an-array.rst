@@ -1,7 +1,7 @@
   .. _cshift:
 
-CSHIFT - Circular shift elements of an array
-********************************************
+CSHIFT --- Circular shift elements of an array
+**********************************************
 
 .. index:: CSHIFT
 

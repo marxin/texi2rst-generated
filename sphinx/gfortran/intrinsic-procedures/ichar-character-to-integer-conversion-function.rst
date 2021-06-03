@@ -1,7 +1,7 @@
   .. _ichar:
 
-ICHAR - Character-to-integer conversion function
-************************************************
+ICHAR --- Character-to-integer conversion function
+**************************************************
 
 .. index:: ICHAR
 
@@ -52,7 +52,7 @@ ICHAR - Character-to-integer conversion function
 
 :samp:`{Note}:`
   No intrinsic exists to convert between a numeric value and a formatted
-  character string representation - for instance, given the
+  character string representation -- for instance, given the
   ``CHARACTER`` value ``'154'``, obtaining an ``INTEGER`` or
   ``REAL`` value with the value 154, or vice versa. Instead, this
   functionality is provided by internal-file I/O, as in the following

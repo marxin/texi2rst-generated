@@ -1,7 +1,7 @@
   .. _acc_copyin:
 
-acc_copyin - Allocate device memory and copy host memory to it.
-***************************************************************
+acc_copyin -- Allocate device memory and copy host memory to it.
+****************************************************************
 
 Description
   In C/C++, this function allocates :samp:`{len}` bytes of device memory

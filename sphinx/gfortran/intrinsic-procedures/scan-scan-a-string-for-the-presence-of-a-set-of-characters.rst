@@ -1,7 +1,7 @@
   .. _scan:
 
-SCAN - Scan a string for the presence of a set of characters
-************************************************************
+SCAN --- Scan a string for the presence of a set of characters
+**************************************************************
 
 .. index:: SCAN
 

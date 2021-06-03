@@ -1,7 +1,7 @@
   .. _lstat:
 
-LSTAT - Get file status
-***********************
+LSTAT --- Get file status
+*************************
 
 .. index:: LSTAT
 

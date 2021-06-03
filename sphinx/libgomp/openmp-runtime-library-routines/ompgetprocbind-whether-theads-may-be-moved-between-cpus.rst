@@ -1,7 +1,7 @@
   .. _omp_get_proc_bind:
 
-omp_get_proc_bind - Whether theads may be moved between CPUs
-************************************************************
+omp_get_proc_bind -- Whether theads may be moved between CPUs
+*************************************************************
 
 :samp:`{Description}:`
   This functions returns the currently active thread affinity policy, which is

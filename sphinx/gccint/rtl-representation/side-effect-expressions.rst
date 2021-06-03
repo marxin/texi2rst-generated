@@ -172,7 +172,7 @@ the operands of these.
   ``scratch`` instead of a pseudo-register because this will allow the
   combiner phase to add the ``clobber`` when required.  You do this by
   coding ( ``clobber`` ( ``match_scratch`` ...)).  If you do
-  clobber a pseudo register, use one which appears nowhere else-generate
+  clobber a pseudo register, use one which appears nowhere else---generate
   a new one each time.  Otherwise, you may confuse CSE.
 
   There is one other known use for clobbering a pseudo register in a
@@ -232,7 +232,7 @@ the operands of these.
   Represents several side effects performed in parallel.  The square
   brackets stand for a vector; the operand of ``parallel`` is a
   vector of expressions.  :samp:`{x0}`, :samp:`{x1}` and so on are individual
-  side effect expressions-expressions of code ``set``, ``call``,
+  side effect expressions---expressions of code ``set``, ``call``,
   ``return``, ``simple_return``, ``clobber`` or ``use``.
 
   'In parallel' means that first all the values used in the individual
@@ -271,7 +271,7 @@ the operands of these.
   Peephole optimization, which takes place together with final assembly
   code output, can produce insns whose patterns consist of a ``parallel``
   whose elements are the operands needed to output the resulting
-  assembler code-often ``reg``, ``mem`` or constant expressions.
+  assembler code---often ``reg``, ``mem`` or constant expressions.
   This would not be well-formed RTL at any other stage in compilation,
   but it is OK then because no further optimization remains to be done.
 

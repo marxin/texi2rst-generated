@@ -1,7 +1,7 @@
   .. _rand:
 
-RAND - Real pseudo-random number
-********************************
+RAND --- Real pseudo-random number
+**********************************
 
 .. index:: RAND
 

@@ -1,7 +1,7 @@
   .. _gomp_stacksize:
 
-GOMP_STACKSIZE - Set default thread stack size
-**********************************************
+GOMP_STACKSIZE -- Set default thread stack size
+***********************************************
 
 .. index:: Environment Variable
 

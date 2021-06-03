@@ -1,7 +1,7 @@
   .. _idate:
 
-IDATE - Get current local time subroutine (day/month/year) 
-***********************************************************
+IDATE --- Get current local time subroutine (day/month/year) 
+*************************************************************
 
 .. index:: IDATE
 

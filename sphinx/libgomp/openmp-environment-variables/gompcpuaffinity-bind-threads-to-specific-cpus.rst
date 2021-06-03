@@ -1,7 +1,7 @@
   .. _gomp_cpu_affinity:
 
-GOMP_CPU_AFFINITY - Bind threads to specific CPUs
-*************************************************
+GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
+**************************************************
 
 .. index:: Environment Variable
 

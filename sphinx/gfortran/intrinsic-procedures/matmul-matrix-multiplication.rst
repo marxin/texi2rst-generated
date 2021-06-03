@@ -1,7 +1,7 @@
   .. _matmul:
 
-MATMUL - matrix multiplication
-******************************
+MATMUL --- matrix multiplication
+********************************
 
 .. index:: MATMUL
 

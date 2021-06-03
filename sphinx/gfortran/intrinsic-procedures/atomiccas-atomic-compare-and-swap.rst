@@ -1,7 +1,7 @@
   .. _atomic_cas:
 
-ATOMIC_CAS - Atomic compare and swap
-************************************
+ATOMIC_CAS --- Atomic compare and swap
+**************************************
 
 .. index:: ATOMIC_DEFINE
 

@@ -29,7 +29,7 @@ known missing pieces are:
   Entities may be multiply defined across different header-units.
   These must be de-duplicated, and this is implemented across imports,
   or when an import redefines a textually-defined entity.  However the
-  reverse is not implemented-textually redefining an entity that has
+  reverse is not implemented---textually redefining an entity that has
   been defined in an imported header-unit.  A redefinition error is
   emitted.
 
@@ -50,7 +50,7 @@ known missing pieces are:
   The Standard Library is not provided as importable header units.  If
   you want to import such units, you must explicitly build them first.
   If you do not do this with care, you may have multiple declarations,
-  which the module machinery must merge-compiler resource usage can be
+  which the module machinery must merge---compiler resource usage can be
   affected by how you partition header files into header units.
 
   Modular compilation is *not* enabled with just the
@@ -108,7 +108,7 @@ textual.  With an argument, queries about include translation of a
 header files with that particular trailing pathname are noted.  You
 may repeat this form to cover several different header files.  This
 option may be helpful in determining whether include translation is
-happening-if it is working correctly, it behaves as if it isn't
+happening---if it is working correctly, it behaves as if it isn't
 there at all.
 
 The :option:`-flang-info-module-cmi` option can be used to determine
@@ -309,7 +309,7 @@ option may be used.
 The :option:`--param lazy-modules`:samp:`={n}` parameter controls the limit
 on the number of concurrently open module files during lazy loading.
 Should more modules be imported, an LRU algorithm is used to determine
-which files to close-until that file is needed again.  This limit
+which files to close---until that file is needed again.  This limit
 may be exceeded with deep module dependency hierarchies.  With large
 code bases there may be more imports than the process limit of file
 descriptors.  By default, the limit is a few less than the per-process

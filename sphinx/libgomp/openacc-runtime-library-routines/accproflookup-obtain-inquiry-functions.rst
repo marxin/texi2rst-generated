@@ -1,7 +1,7 @@
   .. _acc_prof_lookup:
 
-acc_prof_lookup - Obtain inquiry functions.
-*******************************************
+acc_prof_lookup -- Obtain inquiry functions.
+********************************************
 
 :samp:`{Description}:`
   Function to obtain inquiry functions.

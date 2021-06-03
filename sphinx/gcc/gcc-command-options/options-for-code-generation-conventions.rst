@@ -14,7 +14,7 @@ used in code generation.
 
 Most of them have both positive and negative forms; the negative form
 of :samp:`-ffoo` is :samp:`-fno-foo`.  In the table below, only
-one of the forms is listed-the one that is not the default.  You
+one of the forms is listed---the one that is not the default.  You
 can figure out the other form by either removing :samp:`no-` or adding
 it.
 
@@ -562,7 +562,7 @@ it.
 
 .. option:: -fvisibility=[default|internal|hidden|protected]
 
-  Set the default ELF image symbol visibility to the specified option-all
+  Set the default ELF image symbol visibility to the specified option---all
   symbols are marked with this unless overridden within the code.
   Using this feature can very substantially improve linking and
   load times of shared object libraries, produce more optimized
@@ -580,7 +580,7 @@ it.
   A good explanation of the benefits offered by ensuring ELF
   symbols have the correct visibility is given by 'How To Write
   Shared Libraries' by Ulrich Drepper (which can be found at
-  https://www.akkadia.org/drepper/)-however a superior
+  https://www.akkadia.org/drepper/)---however a superior
   solution made possible by this option to marking things hidden when
   the default is public is to make the default hidden and mark things
   public.  This is the norm with DLLs on Windows and with :option:`-fvisibility`:samp:`=hidden`
@@ -598,7 +598,7 @@ it.
   part of the API interface contract and thus all new code should
   always specify visibility when it is not the default; i.e., declarations
   only for use within the local DSO should always be marked explicitly
-  as hidden as so to avoid PLT indirection overheads-making this
+  as hidden as so to avoid PLT indirection overheads---making this
   abundantly clear also aids readability and self-documentation of the code.
   Note that due to ISO C++ specification requirements, ``operator new`` and
   ``operator delete`` must always be of default visibility.

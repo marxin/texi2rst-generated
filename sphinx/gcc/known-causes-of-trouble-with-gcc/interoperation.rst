@@ -18,7 +18,7 @@ libraries and debuggers on certain systems.
   including: how class instances are laid out, how multiple inheritance is
   implemented, and how virtual function calls are handled.  If the name
   encoding were made the same, your programs would link against libraries
-  provided from other compilers-but the programs would then crash when
+  provided from other compilers---but the programs would then crash when
   run.  Incompatible libraries are then detected at link time, rather than
   at run time.
 
@@ -120,7 +120,7 @@ libraries and debuggers on certain systems.
   because this option may interfere with the semantics of the user
   program and users may not always use :samp:`g++` to link his or her
   application.  Applications are not required to use the
-  :option:`-Wl,-brtl` flag on the link line-the rest of the
+  :option:`-Wl,-brtl` flag on the link line---the rest of the
   libstdc++.a library which is not dependent on the symbol
   merging semantics will continue to function correctly.
 

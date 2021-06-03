@@ -13,7 +13,7 @@ Machine-Dependent Options
 
 .. index:: machine-dependent options
 
-Each target machine supported by GCC can have its own options-for
+Each target machine supported by GCC can have its own options---for
 example, to allow you to compile for a particular processor variant or
 ABI, or to control optimizations specific to that machine.  By
 convention, the names of machine-specific options start with

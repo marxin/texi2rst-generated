@@ -1,7 +1,7 @@
   .. _shifta:
 
-SHIFTA - Right shift with fill
-******************************
+SHIFTA --- Right shift with fill
+********************************
 
 .. index:: SHIFTA
 

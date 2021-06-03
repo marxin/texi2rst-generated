@@ -1,7 +1,7 @@
   .. _abs:
 
-ABS - Absolute value
-********************
+ABS --- Absolute value
+**********************
 
 .. index:: ABS
 

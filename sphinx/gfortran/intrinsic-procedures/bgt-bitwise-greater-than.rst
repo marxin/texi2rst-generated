@@ -1,7 +1,7 @@
   .. _bgt:
 
-BGT - Bitwise greater than
-**************************
+BGT --- Bitwise greater than
+****************************
 
 .. index:: BGT
 

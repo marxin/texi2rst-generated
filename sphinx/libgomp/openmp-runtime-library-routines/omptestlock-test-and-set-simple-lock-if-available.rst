@@ -1,7 +1,7 @@
   .. _omp_test_lock:
 
-omp_test_lock - Test and set simple lock if available
-*****************************************************
+omp_test_lock -- Test and set simple lock if available
+******************************************************
 
 :samp:`{Description}:`
   Before setting a simple lock, the lock variable must be initialized by 

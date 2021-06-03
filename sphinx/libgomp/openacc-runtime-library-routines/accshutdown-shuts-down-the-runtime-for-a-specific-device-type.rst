@@ -1,7 +1,7 @@
   .. _acc_shutdown:
 
-acc_shutdown - Shuts down the runtime for a specific device type.
-*****************************************************************
+acc_shutdown -- Shuts down the runtime for a specific device type.
+******************************************************************
 
 Description
   This function shuts down the runtime for the device type specified in

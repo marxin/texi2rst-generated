@@ -1,7 +1,7 @@
   .. _len_trim:
 
-LEN_TRIM - Length of a character entity without trailing blank characters
-*************************************************************************
+LEN_TRIM --- Length of a character entity without trailing blank characters
+***************************************************************************
 
 .. index:: LEN_TRIM
 

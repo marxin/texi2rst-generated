@@ -1,7 +1,7 @@
   .. _not:
 
-NOT - Logical negation
-**********************
+NOT --- Logical negation
+************************
 
 .. index:: NOT
 

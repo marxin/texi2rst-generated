@@ -1,7 +1,7 @@
   .. _fdate:
 
-FDATE - Get the current time as a string
-****************************************
+FDATE --- Get the current time as a string
+******************************************
 
 .. index:: FDATE
 

@@ -838,8 +838,8 @@ Here are several miscellaneous parameters.
   that had its initial value copied by using
   ``get_func_hard_reg_initial_val`` or ``get_hard_reg_initial_val``.
   Possible values are ``NULL_RTX``, if you don't want
-  to do any special allocation, a ``REG`` rtx-that would typically be
-  the hard register itself, if it is known not to be clobbered-or a
+  to do any special allocation, a ``REG`` rtx---that would typically be
+  the hard register itself, if it is known not to be clobbered---or a
   ``MEM``.
   If you are returning a ``MEM``, this is only a hint for the allocator;
   it might decide to use another register anyways.

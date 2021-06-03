@@ -1,7 +1,7 @@
   .. _dim:
 
-DIM - Positive difference
-*************************
+DIM --- Positive difference
+***************************
 
 .. index:: DIM
 

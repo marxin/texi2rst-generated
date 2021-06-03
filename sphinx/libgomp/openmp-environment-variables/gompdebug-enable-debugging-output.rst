@@ -1,7 +1,7 @@
   .. _gomp_debug:
 
-GOMP_DEBUG - Enable debugging output
-************************************
+GOMP_DEBUG -- Enable debugging output
+*************************************
 
 .. index:: Environment Variable
 

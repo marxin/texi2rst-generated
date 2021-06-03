@@ -76,7 +76,7 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 
   All modules should be compiled with the same :option:`-G `:samp:`{num}` value.
   Compiling with different values of :samp:`{num}` may or may not work; if it
-  doesn't the linker gives an error message-incorrect code is not
+  doesn't the linker gives an error message---incorrect code is not
   generated.
 
 .. option:: -mdebug

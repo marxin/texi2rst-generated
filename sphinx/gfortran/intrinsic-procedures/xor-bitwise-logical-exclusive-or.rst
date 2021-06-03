@@ -1,7 +1,7 @@
   .. _xor:
 
-XOR - Bitwise logical exclusive OR
-**********************************
+XOR --- Bitwise logical exclusive OR
+************************************
 
 .. index:: XOR
 

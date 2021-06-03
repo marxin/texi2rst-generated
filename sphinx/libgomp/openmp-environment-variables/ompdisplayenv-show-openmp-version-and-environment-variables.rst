@@ -1,7 +1,7 @@
   .. _omp_display_env:
 
-OMP_DISPLAY_ENV - Show OpenMP version and environment variables
-***************************************************************
+OMP_DISPLAY_ENV -- Show OpenMP version and environment variables
+****************************************************************
 
 .. index:: Environment Variable
 

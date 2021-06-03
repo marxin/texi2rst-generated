@@ -1,7 +1,7 @@
   .. _acc_delete:
 
-acc_delete - Free device memory.
-********************************
+acc_delete -- Free device memory.
+*********************************
 
 Description
   This function frees previously allocated device memory specified by

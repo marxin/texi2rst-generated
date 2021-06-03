@@ -1,7 +1,7 @@
   .. _acc_prof_unregister:
 
-acc_prof_unregister - Unregister callbacks.
-*******************************************
+acc_prof_unregister -- Unregister callbacks.
+********************************************
 
 :samp:`{Description}:`
   This function unregisters callbacks.

@@ -166,8 +166,8 @@ semicolon is actually a null statement.  Suppose you write
     SKIP_SPACES (p, lim);
   else ...
 
-The presence of two statements-the compound statement and a null
-statement-in between the ``if`` condition and the ``else``
+The presence of two statements---the compound statement and a null
+statement---in between the ``if`` condition and the ``else``
 makes invalid C code.
 
 The definition of the macro ``SKIP_SPACES`` can be altered to solve
@@ -453,7 +453,7 @@ Here is an example illustrating this:
                      syntax error);
 
 The syntax error triggered by the tokens ``syntax error`` results in
-an error message citing line three-the line of ignore_second_arg-
+an error message citing line three---the line of ignore_second_arg---
 even though the problematic code comes from line five.
 
 We consider this a bug, and intend to fix it in the near future.

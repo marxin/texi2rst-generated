@@ -41,7 +41,7 @@ The SCEV is a normal tree expression, except for the fact that it may
 contain several special tree nodes.  One of them is
 ``SCEV_NOT_KNOWN``, used for SSA names whose value cannot be
 expressed.  The other one is ``POLYNOMIAL_CHREC``.  Polynomial chrec
-has three arguments - base, step and loop (both base and step may
+has three arguments -- base, step and loop (both base and step may
 contain further polynomial chrecs).  Type of the expression and of base
 and step must be the same.  A variable has evolution
 ``POLYNOMIAL_CHREC(base, step, loop)`` if it is (in the specified
@@ -64,6 +64,6 @@ overflow (which restricts the number of iterations of such a loop).
 In many cases, one wants to restrict the attention just to affine
 induction variables.  In this case, the extra expressive power of SCEV
 is not useful, and may complicate the optimizations.  In this case,
-``simple_iv`` function may be used to analyze a value - the result
+``simple_iv`` function may be used to analyze a value -- the result
 is a loop-invariant base and step.
 

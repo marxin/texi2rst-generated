@@ -70,7 +70,7 @@ than once, the directories are searched in the order specified.  Also,
 the placement of the :option:`-l` option is significant.
 
 Many options have long names starting with :samp:`-f` or with
-:samp:`-W`-for example,
+:samp:`-W`---for example,
 :option:`-fmove-loop-invariants`, :option:`-Wformat` and so on.  Most of
 these have both positive and negative forms; the negative form of
 :samp:`-ffoo` is :samp:`-fno-foo`.  This manual documents

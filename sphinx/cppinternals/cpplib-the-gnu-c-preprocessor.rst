@@ -1,5 +1,5 @@
-Cpplib-the GNU C Preprocessor
------------------------------
+Cpplib---the GNU C Preprocessor
+-------------------------------
 
 The GNU C preprocessor is
 implemented as a library, :dfn:`cpplib`, so it can be easily shared between

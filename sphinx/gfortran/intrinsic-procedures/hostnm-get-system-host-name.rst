@@ -1,7 +1,7 @@
   .. _hostnm:
 
-HOSTNM - Get system host name
-*****************************
+HOSTNM --- Get system host name
+*******************************
 
 .. index:: HOSTNM
 

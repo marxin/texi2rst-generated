@@ -1,7 +1,7 @@
   .. _omp_max_active_levels:
 
-OMP_MAX_ACTIVE_LEVELS - Set the maximum number of nested parallel regions
-*************************************************************************
+OMP_MAX_ACTIVE_LEVELS -- Set the maximum number of nested parallel regions
+**************************************************************************
 
 .. index:: Environment Variable
 

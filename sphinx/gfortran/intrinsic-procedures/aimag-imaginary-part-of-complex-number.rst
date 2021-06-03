@@ -1,7 +1,7 @@
   .. _aimag:
 
-AIMAG - Imaginary part of complex number  
-******************************************
+AIMAG --- Imaginary part of complex number  
+********************************************
 
 .. index:: AIMAG
 

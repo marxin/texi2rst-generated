@@ -506,7 +506,7 @@ alphabetical order.
   maintenance, and his ongoing work to make us make Fortran run fast.
 
 * Jason Molenda for major help in the care and feeding of all the services
-  on the gcc.gnu.org (formerly egcs.cygnus.com) machine-mail, web
+  on the gcc.gnu.org (formerly egcs.cygnus.com) machine---mail, web
   services, ftp services, etc etc.  Doing all this work on scrap paper and
   the backs of envelopes would have been... difficult.
 
@@ -660,9 +660,9 @@ alphabetical order.
   work in the reload pass, serving as release manager for
   GCC 2.95.3, and work on the Blackfin and C6X ports.
 
-* Peter Schmid for constant testing of libstdc++-especially application
+* Peter Schmid for constant testing of libstdc++---especially application
   testing, going above and beyond what was requested for the release
-  criteria-and libstdc++ header file tweaks.
+  criteria---and libstdc++ header file tweaks.
 
 * Jason Schroeder for jcf-dump patches.
 

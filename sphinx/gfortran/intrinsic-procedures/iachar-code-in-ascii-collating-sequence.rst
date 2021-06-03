@@ -1,7 +1,7 @@
   .. _iachar:
 
-IACHAR - Code in ASCII collating sequence 
-******************************************
+IACHAR --- Code in ASCII collating sequence 
+********************************************
 
 .. index:: IACHAR
 

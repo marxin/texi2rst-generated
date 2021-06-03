@@ -1,7 +1,7 @@
 .. _abort:
 
-ABORT - Abort the program
-*************************
+ABORT --- Abort the program
+***************************
 
 .. index:: ABORT
 

@@ -20,7 +20,7 @@ other information about the bug or where discussion of it may be
 found.  Some other language testsuites follow similar conventions.
 
 In the gcc.dg testsuite, it is often necessary to test that an
-error is indeed a hard error and not just a warning-for example,
+error is indeed a hard error and not just a warning---for example,
 where it is a constraint violation in the C standard, which must
 become an error with :option:`-pedantic-errors`.  The following idiom,
 where the first line shown is line :samp:`{line}` of the file and the line

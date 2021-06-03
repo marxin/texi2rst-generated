@@ -54,7 +54,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Version 6, which first appeared in G++ 4.7, corrects the promotion
   behavior of C++11 scoped enums and the mangling of template argument
-  packs, const/static_cast, prefix ++ and -, and a class scope function
+  packs, const/static_cast, prefix ++ and --, and a class scope function
   used as a template argument.
 
   Version 7, which first appeared in G++ 4.8, that treats nullptr_t as a

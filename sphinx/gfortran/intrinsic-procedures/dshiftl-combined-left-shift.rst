@@ -1,7 +1,7 @@
   .. _dshiftl:
 
-DSHIFTL - Combined left shift
-*****************************
+DSHIFTL --- Combined left shift
+*******************************
 
 .. index:: DSHIFTL
 

@@ -1,7 +1,7 @@
   .. _maxloc:
 
-MAXLOC - Location of the maximum value within an array
-******************************************************
+MAXLOC --- Location of the maximum value within an array
+********************************************************
 
 .. index:: MAXLOC
 

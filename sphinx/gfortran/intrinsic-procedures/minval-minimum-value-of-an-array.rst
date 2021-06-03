@@ -1,7 +1,7 @@
   .. _minval:
 
-MINVAL - Minimum value of an array
-**********************************
+MINVAL --- Minimum value of an array
+************************************
 
 .. index:: MINVAL
 

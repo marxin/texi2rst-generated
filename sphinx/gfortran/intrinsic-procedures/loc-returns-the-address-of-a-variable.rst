@@ -1,7 +1,7 @@
   .. _loc:
 
-LOC - Returns the address of a variable
-***************************************
+LOC --- Returns the address of a variable
+*****************************************
 
 .. index:: LOC
 

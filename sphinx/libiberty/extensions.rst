@@ -527,7 +527,7 @@ Here is an example:
 
 You can use ``obstack_blank_fast`` with a 'negative' size
 argument to make the current object smaller.  Just don't try to shrink
-it beyond zero length-there's no telling what will happen if you do
+it beyond zero length---there's no telling what will happen if you do
 that.  Earlier versions of obstacks allowed you to use
 ``obstack_blank`` to shrink objects.  This will no longer work.
 
@@ -549,7 +549,7 @@ still growing it.
   This macro returns the tentative address of the beginning of the
   currently growing object in :samp:`{obstack-ptr}`.  If you finish the object
   immediately, it will have that address.  If you make it larger first, it
-  may outgrow the current chunk-then its address will change!
+  may outgrow the current chunk---then its address will change!
 
   If no object is growing, this value says where the next object you
   allocate will start (once again assuming it fits in the current

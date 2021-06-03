@@ -1,7 +1,7 @@
   .. _repeat:
 
-REPEAT - Repeated string concatenation 
-***************************************
+REPEAT --- Repeated string concatenation 
+*****************************************
 
 .. index:: REPEAT
 

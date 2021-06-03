@@ -54,7 +54,7 @@ invalid.  For error recovery, they are considered to end at the end of
 the file.
 
 To avoid confusion, it is best if header files contain only complete
-syntactic units-function declarations or definitions, type
+syntactic units---function declarations or definitions, type
 declarations, etc.
 
 The line following the :samp:`#include` directive is always treated as a

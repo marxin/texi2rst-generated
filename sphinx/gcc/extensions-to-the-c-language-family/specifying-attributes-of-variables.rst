@@ -244,7 +244,7 @@ The following attributes are supported on most targets.
 
   The ``common`` attribute requests GCC to place a variable in
   'common' storage.  The ``nocommon`` attribute requests the
-  opposite-to allocate space for it directly.
+  opposite---to allocate space for it directly.
 
   These attributes override the default chosen by the
   :option:`-fno-common` and :option:`-fcommon` flags respectively.
@@ -300,7 +300,7 @@ The following attributes are supported on most targets.
 
   .. index:: mode variable attribute
 
-  This attribute specifies the data type for the declaration-whichever
+  This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
   request an integer or floating-point type according to its width.
 
@@ -353,7 +353,7 @@ The following attributes are supported on most targets.
   .. index:: packed variable attribute
 
   The ``packed`` attribute specifies that a structure member should have
-  the smallest possible alignment-one bit for a bit-field and one byte
+  the smallest possible alignment---one bit for a bit-field and one byte
   otherwise, unless a larger value is specified with the ``aligned``
   attribute.  The attribute does not apply to non-member objects.
 

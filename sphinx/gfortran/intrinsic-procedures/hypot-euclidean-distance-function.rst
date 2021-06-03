@@ -1,7 +1,7 @@
   .. _hypot:
 
-HYPOT - Euclidean distance function
-***********************************
+HYPOT --- Euclidean distance function
+*************************************
 
 .. index:: HYPOT
 

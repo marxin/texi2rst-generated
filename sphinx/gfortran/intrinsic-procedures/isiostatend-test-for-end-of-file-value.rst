@@ -1,7 +1,7 @@
   .. _is_iostat_end:
 
-IS_IOSTAT_END - Test for end-of-file value
-******************************************
+IS_IOSTAT_END --- Test for end-of-file value
+********************************************
 
 .. index:: IS_IOSTAT_END
 

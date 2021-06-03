@@ -74,7 +74,7 @@ be extracted with the macro ``GET_CODE (x)`` and altered with
 The expression code determines how many operands the expression contains,
 and what kinds of objects they are.  In RTL, unlike Lisp, you cannot tell
 by looking at an operand what kind of object it is.  Instead, you must know
-from its context-from the expression code of the containing expression.
+from its context---from the expression code of the containing expression.
 For example, in an expression of code ``subreg``, the first operand is
 to be regarded as an expression and the second operand as a polynomial
 integer.  In an expression of code ``plus``, there are two operands,

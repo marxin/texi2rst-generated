@@ -1,7 +1,7 @@
   .. _acc_create:
 
-acc_create - Allocate device memory and map it to host memory.
-**************************************************************
+acc_create -- Allocate device memory and map it to host memory.
+***************************************************************
 
 Description
   This function allocates device memory and maps it to host memory specified

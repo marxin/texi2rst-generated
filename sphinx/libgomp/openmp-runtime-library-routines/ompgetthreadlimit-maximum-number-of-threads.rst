@@ -1,7 +1,7 @@
   .. _omp_get_thread_limit:
 
-omp_get_thread_limit - Maximum number of threads
-************************************************
+omp_get_thread_limit -- Maximum number of threads
+*************************************************
 
 :samp:`{Description}:`
   Return the maximum number of threads of the program.

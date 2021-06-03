@@ -792,7 +792,7 @@ and ``%LOC`` statements, for backward compatibility with g77.
 It is recommended that these should be used only for code that is
 accessing facilities outside of GNU Fortran, such as operating system
 or windowing facilities.  It is best to constrain such uses to isolated
-portions of a program-portions that deal specifically and exclusively
+portions of a program--portions that deal specifically and exclusively
 with low-level, system-dependent facilities.  Such portions might well
 provide a portable interface for use by the program as a whole, but are
 themselves not portable, and should be thoroughly tested each time they

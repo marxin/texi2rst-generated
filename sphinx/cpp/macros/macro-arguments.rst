@@ -18,7 +18,7 @@ separated by commas and optionally whitespace.
 To invoke a macro that takes arguments, you write the name of the macro
 followed by a list of :dfn:`actual arguments` in parentheses, separated
 by commas.  The invocation of the macro need not be restricted to a
-single logical line-it can cross as many lines in the source file as
+single logical line---it can cross as many lines in the source file as
 you wish.  The number of arguments you give must match the number of
 parameters in the macro definition.  When the macro is expanded, each
 use of a parameter in its body is replaced by the tokens of the

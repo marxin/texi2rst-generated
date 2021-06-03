@@ -1,7 +1,7 @@
   .. _sleep:
 
-SLEEP - Sleep for the specified number of seconds
-*************************************************
+SLEEP --- Sleep for the specified number of seconds
+***************************************************
 
 .. index:: SLEEP
 

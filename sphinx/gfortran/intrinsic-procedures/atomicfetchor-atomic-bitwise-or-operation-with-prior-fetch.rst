@@ -1,7 +1,7 @@
   .. _atomic_fetch_or:
 
-ATOMIC_FETCH_OR - Atomic bitwise OR operation with prior fetch
-**************************************************************
+ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
+****************************************************************
 
 .. index:: ATOMIC_FETCH_OR
 

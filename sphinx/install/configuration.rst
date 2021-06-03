@@ -311,7 +311,7 @@ corresponding :option:`--without` option.
   For native builds, some of the installed programs are also installed
   with the target alias in front of their name, as in
   :samp:`i686-pc-linux-gnu-gcc`.  All of the above transformations happen
-  before the target alias is prepended to the name-so, specifying
+  before the target alias is prepended to the name---so, specifying
   :option:`--program-prefix`:samp:`=foo-` and program-suffix:samp:`=-3.1`, the
   resulting binary would be installed as
   /usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1.
@@ -338,9 +338,9 @@ corresponding :option:`--without` option.
   logical.
 
   The purpose of :option:`--prefix` is to specify where to *install
-  GCC*.  The local header files in /usr/local/include-if you put
-  any in that directory-are not part of GCC.  They are part of other
-  programs-perhaps many others.  (GCC installs its own header files in
+  GCC*.  The local header files in /usr/local/include---if you put
+  any in that directory---are not part of GCC.  They are part of other
+  programs---perhaps many others.  (GCC installs its own header files in
   another directory which is based on the :option:`--prefix` value.)
 
   Both the local-prefix include directory and the GCC-prefix include
@@ -591,7 +591,7 @@ corresponding :option:`--without` option.
     to enable ILP32 and LP64 run-time libraries, respectively.  If
     :samp:`{list}` is empty, then there will be no multilibs and only the
     default run-time library will be built.  If :samp:`{list}` is
-    ``default`` or -with-multilib-list= is not specified, then the
+    ``default`` or --with-multilib-list= is not specified, then the
     default set of libraries is selected based on the value of
     :option:`--target`.
 
@@ -1627,7 +1627,7 @@ corresponding :option:`--without` option.
 .. option:: --with-boot-ldflags=flags
 
   This option may be used to set linker flags to be used when linking
-  stage 2 and later when bootstrapping GCC.  If -with-boot-libs
+  stage 2 and later when bootstrapping GCC.  If --with-boot-libs
   is not is set to a value, then the default is
   :samp:`-static-libstdc++ -static-libgcc`.
 
@@ -1923,7 +1923,7 @@ Cross-Compiler-Specific OptionsThe following options only apply to building cros
   :option:`--with-double`:samp:`=32,64` :option:`--with-long-double`:samp:`=32` will be
   rejected because the first option specifies the availability of
   multilibs for :samp:`double`, whereas the second option implies
-  that :samp:`long double` - and hence also :samp:`double` - is always
+  that :samp:`long double` --- and hence also :samp:`double` --- is always
   32 bits wide.
 
 .. option:: --with-double-comparison={tristate|bool|libf7}

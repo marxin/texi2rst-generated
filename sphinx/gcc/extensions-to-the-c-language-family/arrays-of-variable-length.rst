@@ -78,7 +78,7 @@ and is remembered for the scope of the array in case you access it with
 ``sizeof``.
 
 If you want to pass the array first and the length afterward, you can
-use a forward declaration in the parameter list-another GNU extension.
+use a forward declaration in the parameter list---another GNU extension.
 
 .. code-block:: c++
 

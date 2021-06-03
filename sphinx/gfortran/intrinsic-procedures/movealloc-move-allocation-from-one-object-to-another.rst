@@ -1,7 +1,7 @@
   .. _move_alloc:
 
-MOVE_ALLOC - Move allocation from one object to another
-*******************************************************
+MOVE_ALLOC --- Move allocation from one object to another
+*********************************************************
 
 .. index:: MOVE_ALLOC
 

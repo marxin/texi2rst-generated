@@ -1,7 +1,7 @@
   .. _gomp_rtems_thread_pools:
 
-GOMP_RTEMS_THREAD_POOLS - Set the RTEMS specific thread pools
-*************************************************************
+GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
+**************************************************************
 
 .. index:: Environment Variable
 

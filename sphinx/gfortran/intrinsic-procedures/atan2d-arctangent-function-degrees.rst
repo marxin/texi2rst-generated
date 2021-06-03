@@ -1,7 +1,7 @@
   .. _atan2d:
 
-ATAN2D - Arctangent function, degrees
-*************************************
+ATAN2D --- Arctangent function, degrees
+***************************************
 
 .. index:: ATAN2D
 

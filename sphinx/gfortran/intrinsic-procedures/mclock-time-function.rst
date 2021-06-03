@@ -1,7 +1,7 @@
   .. _mclock:
 
-MCLOCK - Time function
-**********************
+MCLOCK --- Time function
+************************
 
 .. index:: MCLOCK
 

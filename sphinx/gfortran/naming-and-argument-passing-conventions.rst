@@ -97,7 +97,7 @@ For Boolean ( ``LOGICAL`` ) arguments, please note that GCC expects
 only the integer value 0 and 1.  If a GNU Fortran ``LOGICAL``
 variable contains another integer value, the result is undefined.
 As some other Fortran compilers use -1 for ``.TRUE.``,
-extra care has to be taken - such as passing the value as
+extra care has to be taken -- such as passing the value as
 ``INTEGER``.  (The same value restriction also applies to other
 front ends of GCC, e.g. to GCC's C99 compiler for ``_Bool``
 or GCC's Ada compiler for ``Boolean``.)

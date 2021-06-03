@@ -1,7 +1,7 @@
   .. _image_index:
 
-IMAGE_INDEX - Function that converts a cosubscript to an image index
-********************************************************************
+IMAGE_INDEX --- Function that converts a cosubscript to an image index
+**********************************************************************
 
 .. index:: IMAGE_INDEX
 

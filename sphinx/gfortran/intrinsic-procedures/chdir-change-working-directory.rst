@@ -1,7 +1,7 @@
   .. _chdir:
 
-CHDIR - Change working directory
-********************************
+CHDIR --- Change working directory
+**********************************
 
 .. index:: CHDIR
 

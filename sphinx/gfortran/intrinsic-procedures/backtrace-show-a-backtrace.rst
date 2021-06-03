@@ -1,7 +1,7 @@
   .. _backtrace:
 
-BACKTRACE - Show a backtrace
-****************************
+BACKTRACE --- Show a backtrace
+******************************
 
 .. index:: BACKTRACE
 

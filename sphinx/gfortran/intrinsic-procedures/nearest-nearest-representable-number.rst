@@ -1,7 +1,7 @@
   .. _nearest:
 
-NEAREST - Nearest representable number
-**************************************
+NEAREST --- Nearest representable number
+****************************************
 
 .. index:: NEAREST
 

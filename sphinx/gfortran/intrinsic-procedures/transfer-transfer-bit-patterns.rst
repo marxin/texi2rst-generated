@@ -1,7 +1,7 @@
   .. _transfer:
 
-TRANSFER - Transfer bit patterns
-********************************
+TRANSFER --- Transfer bit patterns
+**********************************
 
 .. index:: TRANSFER
 

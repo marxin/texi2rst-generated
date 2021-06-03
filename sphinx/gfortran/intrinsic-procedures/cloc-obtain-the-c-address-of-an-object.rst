@@ -1,7 +1,7 @@
   .. _c_loc:
 
-C_LOC - Obtain the C address of an object
-*****************************************
+C_LOC --- Obtain the C address of an object
+*******************************************
 
 .. index:: C_LOC
 

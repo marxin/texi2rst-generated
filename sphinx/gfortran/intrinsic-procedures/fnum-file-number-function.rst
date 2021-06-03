@@ -1,7 +1,7 @@
   .. _fnum:
 
-FNUM - File number function
-***************************
+FNUM --- File number function
+*****************************
 
 .. index:: FNUM
 

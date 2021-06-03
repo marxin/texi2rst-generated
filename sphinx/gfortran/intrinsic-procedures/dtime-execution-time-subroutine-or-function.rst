@@ -1,7 +1,7 @@
   .. _dtime:
 
-DTIME - Execution time subroutine (or function)
-***********************************************
+DTIME --- Execution time subroutine (or function)
+*************************************************
 
 .. index:: DTIME
 

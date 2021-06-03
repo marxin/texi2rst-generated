@@ -1,7 +1,7 @@
   .. _omp_init_lock:
 
-omp_init_lock - Initialize simple lock
-**************************************
+omp_init_lock -- Initialize simple lock
+***************************************
 
 :samp:`{Description}:`
   Initialize a simple lock.  After initialization, the lock is in

@@ -1,7 +1,7 @@
   .. _omp_num_threads:
 
-OMP_NUM_THREADS - Specifies the number of threads to use
-********************************************************
+OMP_NUM_THREADS -- Specifies the number of threads to use
+*********************************************************
 
 .. index:: Environment Variable
 

@@ -1,7 +1,7 @@
   .. _ctime:
 
-CTIME - Convert a time into a string
-************************************
+CTIME --- Convert a time into a string
+**************************************
 
 .. index:: CTIME
 

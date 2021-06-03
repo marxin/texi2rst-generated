@@ -1,7 +1,7 @@
   .. _aint:
 
-AINT - Truncate to a whole number
-*********************************
+AINT --- Truncate to a whole number
+***********************************
 
 .. index:: AINT
 

@@ -1,7 +1,7 @@
   .. _fput:
 
-FPUT - Write a single character in stream mode to stdout 
-*********************************************************
+FPUT --- Write a single character in stream mode to stdout 
+***********************************************************
 
 .. index:: FPUT
 

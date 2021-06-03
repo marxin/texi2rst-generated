@@ -1,7 +1,7 @@
   .. _irand:
 
-IRAND - Integer pseudo-random number
-************************************
+IRAND --- Integer pseudo-random number
+**************************************
 
 .. index:: IRAND
 

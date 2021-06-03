@@ -1,7 +1,7 @@
   .. _minloc:
 
-MINLOC - Location of the minimum value within an array
-******************************************************
+MINLOC --- Location of the minimum value within an array
+********************************************************
 
 .. index:: MINLOC
 

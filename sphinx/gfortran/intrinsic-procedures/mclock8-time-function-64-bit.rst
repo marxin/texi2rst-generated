@@ -1,7 +1,7 @@
   .. _mclock8:
 
-MCLOCK8 - Time function (64-bit)
-********************************
+MCLOCK8 --- Time function (64-bit)
+**********************************
 
 .. index:: MCLOCK8
 

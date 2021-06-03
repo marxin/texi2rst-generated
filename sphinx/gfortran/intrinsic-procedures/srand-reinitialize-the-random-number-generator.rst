@@ -1,7 +1,7 @@
   .. _srand:
 
-SRAND - Reinitialize the random number generator
-************************************************
+SRAND --- Reinitialize the random number generator
+**************************************************
 
 .. index:: SRAND
 

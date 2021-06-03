@@ -18,7 +18,7 @@ Conventions
 
 .. index:: header files
 
-cpplib has two interfaces-one is exposed internally only, and the
+cpplib has two interfaces---one is exposed internally only, and the
 other is for both internal and external use.
 
 The convention is that functions and types that are exposed to multiple
@@ -98,7 +98,7 @@ time, each identifier falls into exactly one of three categories:
 
 * Void
 
-  Everything else falls into this category-an identifier that is not
+  Everything else falls into this category---an identifier that is not
   currently a macro, or a macro that has since been undefined with
   ``#undef``.
 
@@ -356,7 +356,7 @@ requirements and makes some allowances as follows:
     #if !defined FOO     [equivalently, #if !defined(FOO)]
 
 * In the second form above, the tokens forming the ``#if`` expression
-  must have come directly from the source file-no macro expansion must
+  must have come directly from the source file---no macro expansion must
   have been involved.  This is because macro definitions can change, and
   tracking whether or not a relevant change has been made is not worth the
   implementation cost.

@@ -1,7 +1,7 @@
 .. _tmpdir:
 
-TMPDIR-Directory for scratch files
-**********************************
+TMPDIR---Directory for scratch files
+************************************
 
 When opening a file with ``STATUS='SCRATCH'``, GNU Fortran tries to
 create the file in one of the potential directories by testing each

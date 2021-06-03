@@ -1,7 +1,7 @@
   .. _shape:
 
-SHAPE - Determine the shape of an array
-***************************************
+SHAPE --- Determine the shape of an array
+*****************************************
 
 .. index:: SHAPE
 

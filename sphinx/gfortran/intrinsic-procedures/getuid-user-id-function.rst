@@ -1,7 +1,7 @@
   .. _getuid:
 
-GETUID - User ID function
-*************************
+GETUID --- User ID function
+***************************
 
 .. index:: GETUID
 

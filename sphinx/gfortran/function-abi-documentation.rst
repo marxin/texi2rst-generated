@@ -45,8 +45,8 @@ Function ABI Documentation
 
 .. __gfortran_caf_init:
 
-_gfortran_caf_init - Initialiation function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_init --- Initialiation function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_init
 
@@ -80,8 +80,8 @@ _gfortran_caf_init - Initialiation function
 
 .. __gfortran_caf_finish:
 
-_gfortran_caf_finish - Finalization function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_finish --- Finalization function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_finish
 
@@ -103,8 +103,8 @@ _gfortran_caf_finish - Finalization function
 
 .. __gfortran_caf_this_image:
 
-_gfortran_caf_this_image - Querying the image number
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_this_image --- Querying the image number
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_this_image
 
@@ -129,8 +129,8 @@ _gfortran_caf_this_image - Querying the image number
 
 .. __gfortran_caf_num_images:
 
-_gfortran_caf_num_images - Querying the maximal number of images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_num_images --- Querying the maximal number of images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_num_images
 
@@ -159,8 +159,8 @@ _gfortran_caf_num_images - Querying the maximal number of images
 
 .. __gfortran_caf_image_status:
 
-_gfortran_caf_image_status - Query the status of an image
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_image_status --- Query the status of an image
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_image_status
 
@@ -189,8 +189,8 @@ _gfortran_caf_image_status - Query the status of an image
 
 .. __gfortran_caf_failed_images:
 
-_gfortran_caf_failed_images - Get an array of the indexes of the failed images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_failed_images --- Get an array of the indexes of the failed images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_failed_images
 
@@ -219,8 +219,8 @@ _gfortran_caf_failed_images - Get an array of the indexes of the failed images
 
 .. __gfortran_caf_stopped_images:
 
-_gfortran_caf_stopped_images - Get an array of the indexes of the stopped images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_stopped_images --- Get an array of the indexes of the stopped images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_stopped_images
 
@@ -249,8 +249,8 @@ _gfortran_caf_stopped_images - Get an array of the indexes of the stopped images
 
 .. __gfortran_caf_register:
 
-_gfortran_caf_register - Registering coarrays
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_register --- Registering coarrays
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_register
 
@@ -326,8 +326,8 @@ _gfortran_caf_register - Registering coarrays
 
 .. __gfortran_caf_deregister:
 
-_gfortran_caf_deregister - Deregistering coarrays
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_deregister --- Deregistering coarrays
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_deregister
 
@@ -364,8 +364,8 @@ _gfortran_caf_deregister - Deregistering coarrays
 
 .. __gfortran_caf_is_present:
 
-_gfortran_caf_is_present - Query whether an allocatable or pointer component in a derived type coarray is allocated
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_is_present --- Query whether an allocatable or pointer component in a derived type coarray is allocated
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_is_present
 
@@ -389,8 +389,8 @@ _gfortran_caf_is_present - Query whether an allocatable or pointer component in 
   =====================  ================================================================================
   .. __gfortran_caf_send:
 
-_gfortran_caf_send - Sending data from a local image to a remote image
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_send --- Sending data from a local image to a remote image
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_send
 
@@ -448,8 +448,8 @@ _gfortran_caf_send - Sending data from a local image to a remote image
 
 .. __gfortran_caf_get:
 
-_gfortran_caf_get - Getting data from a remote image
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_get --- Getting data from a remote image
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_get
 
@@ -506,8 +506,8 @@ _gfortran_caf_get - Getting data from a remote image
 
 .. __gfortran_caf_sendget:
 
-_gfortran_caf_sendget - Sending data between remote images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_sendget --- Sending data between remote images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_sendget
 
@@ -577,8 +577,8 @@ _gfortran_caf_sendget - Sending data between remote images
 
 .. __gfortran_caf_send_by_ref:
 
-_gfortran_caf_send_by_ref - Sending data from a local image to a remote image with enhanced referencing options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_send_by_ref --- Sending data from a local image to a remote image with enhanced referencing options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_send_by_ref
 
@@ -640,8 +640,8 @@ _gfortran_caf_send_by_ref - Sending data from a local image to a remote image wi
 
 .. __gfortran_caf_get_by_ref:
 
-_gfortran_caf_get_by_ref - Getting data from a remote image using enhanced references
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced references
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_get_by_ref
 
@@ -703,8 +703,8 @@ _gfortran_caf_get_by_ref - Getting data from a remote image using enhanced refer
 
 .. __gfortran_caf_sendget_by_ref:
 
-_gfortran_caf_sendget_by_ref - Sending data between remote images using enhanced references on both sides
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanced references on both sides
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_sendget_by_ref
 
@@ -779,8 +779,8 @@ _gfortran_caf_sendget_by_ref - Sending data between remote images using enhanced
 
 .. __gfortran_caf_lock:
 
-_gfortran_caf_lock - Locking a lock variable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_lock --- Locking a lock variable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_lock
 
@@ -820,8 +820,8 @@ _gfortran_caf_lock - Locking a lock variable
 
 .. __gfortran_caf_unlock:
 
-_gfortran_caf_lock - Unlocking a lock variable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_lock --- Unlocking a lock variable
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_unlock
 
@@ -857,8 +857,8 @@ _gfortran_caf_lock - Unlocking a lock variable
 
 .. __gfortran_caf_event_post:
 
-_gfortran_caf_event_post - Post an event
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_event_post --- Post an event
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_event_post
 
@@ -893,8 +893,8 @@ _gfortran_caf_event_post - Post an event
 
 .. __gfortran_caf_event_wait:
 
-_gfortran_caf_event_wait - Wait that an event occurred
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_event_wait --- Wait that an event occurred
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_event_wait
 
@@ -939,8 +939,8 @@ _gfortran_caf_event_wait - Wait that an event occurred
 
 .. __gfortran_caf_event_query:
 
-_gfortran_caf_event_query - Query event count
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_event_query --- Query event count
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_event_query
 
@@ -973,8 +973,8 @@ _gfortran_caf_event_query - Query event count
 
 .. __gfortran_caf_sync_all:
 
-_gfortran_caf_sync_all - All-image barrier
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_sync_all --- All-image barrier
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_sync_all
 
@@ -997,8 +997,8 @@ _gfortran_caf_sync_all - All-image barrier
   ====================  ======================================================
   .. __gfortran_caf_sync_images:
 
-_gfortran_caf_sync_images - Barrier for selected images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_sync_images --- Barrier for selected images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_sync_images
 
@@ -1029,8 +1029,8 @@ _gfortran_caf_sync_images - Barrier for selected images
   ====================  ===================================================================
   .. __gfortran_caf_sync_memory:
 
-_gfortran_caf_sync_memory - Wait for completion of segment-memory operations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_sync_memory
 
@@ -1055,8 +1055,8 @@ _gfortran_caf_sync_memory - Wait for completion of segment-memory operations
 
   .. __gfortran_caf_error_stop:
 
-_gfortran_caf_error_stop - Error termination with exit code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_error_stop --- Error termination with exit code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_error_stop
 
@@ -1074,8 +1074,8 @@ _gfortran_caf_error_stop - Error termination with exit code
   ===============  =======================================
   .. __gfortran_caf_error_stop_str:
 
-_gfortran_caf_error_stop_str - Error termination with string
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_error_stop_str --- Error termination with string
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_error_stop_str
 
@@ -1094,8 +1094,8 @@ _gfortran_caf_error_stop_str - Error termination with string
   ================  ===================================================
   .. __gfortran_caf_fail_image:
 
-_gfortran_caf_fail_image - Mark the image failed and end its execution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_fail_image --- Mark the image failed and end its execution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_fail_image
 
@@ -1112,8 +1112,8 @@ _gfortran_caf_fail_image - Mark the image failed and end its execution
 
 .. __gfortran_caf_atomic_define:
 
-_gfortran_caf_atomic_define - Atomic variable assignment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_atomic_define --- Atomic variable assignment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_atomic_define
 
@@ -1140,8 +1140,8 @@ _gfortran_caf_atomic_define - Atomic variable assignment
   =====================  =========================================================================
   .. __gfortran_caf_atomic_ref:
 
-_gfortran_caf_atomic_ref - Atomic variable reference
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_atomic_ref --- Atomic variable reference
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_atomic_ref
 
@@ -1169,8 +1169,8 @@ _gfortran_caf_atomic_ref - Atomic variable reference
   =====================  =========================================================================
   .. __gfortran_caf_atomic_cas:
 
-_gfortran_caf_atomic_cas - Atomic compare and swap
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_atomic_cas --- Atomic compare and swap
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_atomic_cas
 
@@ -1205,8 +1205,8 @@ _gfortran_caf_atomic_cas - Atomic compare and swap
   =====================  =========================================================================
   .. __gfortran_caf_atomic_op:
 
-_gfortran_caf_atomic_op - Atomic operation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_atomic_op --- Atomic operation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_atomic_op
 
@@ -1245,8 +1245,8 @@ _gfortran_caf_atomic_op - Atomic operation
   =====================  =========================================================================
   .. __gfortran_caf_co_broadcast:
 
-_gfortran_caf_co_broadcast - Sending data to all images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_co_broadcast --- Sending data to all images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_co_broadcast
 
@@ -1272,8 +1272,8 @@ _gfortran_caf_co_broadcast - Sending data to all images
   ======================  ==========================================================================
   .. __gfortran_caf_co_max:
 
-_gfortran_caf_co_max - Collective maximum reduction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_co_max --- Collective maximum reduction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_co_max
 
@@ -1310,8 +1310,8 @@ _gfortran_caf_co_max - Collective maximum reduction
 
 .. __gfortran_caf_co_min:
 
-_gfortran_caf_co_min - Collective minimum reduction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_co_min --- Collective minimum reduction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_co_min
 
@@ -1348,8 +1348,8 @@ _gfortran_caf_co_min - Collective minimum reduction
 
 .. __gfortran_caf_co_sum:
 
-_gfortran_caf_co_sum - Collective summing reduction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_co_sum --- Collective summing reduction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_co_sum
 
@@ -1384,8 +1384,8 @@ _gfortran_caf_co_sum - Collective summing reduction
 
 .. __gfortran_caf_co_reduce:
 
-_gfortran_caf_co_reduce - Generic collective reduction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_gfortran_caf_co_reduce --- Generic collective reduction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: Coarray, _gfortran_caf_co_reduce
 

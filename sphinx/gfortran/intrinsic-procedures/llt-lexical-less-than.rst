@@ -1,7 +1,7 @@
   .. _llt:
 
-LLT - Lexical less than
-***********************
+LLT --- Lexical less than
+*************************
 
 .. index:: LLT
 

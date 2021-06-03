@@ -1,7 +1,7 @@
   .. _acc_get_device_num:
 
-acc_get_device_num - Get device number to be used.
-**************************************************
+acc_get_device_num -- Get device number to be used.
+***************************************************
 
 Description
   This function returns which device number associated with the specified device

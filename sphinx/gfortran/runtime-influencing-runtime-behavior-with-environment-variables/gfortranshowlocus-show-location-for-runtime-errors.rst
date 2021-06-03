@@ -1,7 +1,7 @@
 .. _gfortran_show_locus:
 
-GFORTRAN_SHOW_LOCUS-Show location for runtime errors
-****************************************************
+GFORTRAN_SHOW_LOCUS---Show location for runtime errors
+******************************************************
 
 If the first letter is :samp:`y`, :samp:`Y` or :samp:`1`, filename and
 line numbers for runtime errors are printed.  If the first letter is

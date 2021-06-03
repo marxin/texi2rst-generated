@@ -1,7 +1,7 @@
   .. _dcmplx:
 
-DCMPLX - Double complex conversion function
-*******************************************
+DCMPLX --- Double complex conversion function
+*********************************************
 
 .. index:: DCMPLX
 

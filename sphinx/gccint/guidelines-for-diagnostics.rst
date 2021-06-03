@@ -272,7 +272,7 @@ easily identify what is being referred to:
 .. this was r251239
 
 Avoid using the ``input_location`` global, and the diagnostic functions
-that implicitly use it-use ``error_at`` and ``warning_at`` rather
+that implicitly use it---use ``error_at`` and ``warning_at`` rather
 than ``error`` and ``warning``, and provide the most appropriate
 ``location_t`` value available at that phase of the compilation.  It's
 possible to supply secondary ``location_t`` values via

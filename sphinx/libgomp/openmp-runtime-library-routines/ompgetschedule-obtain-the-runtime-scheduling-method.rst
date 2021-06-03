@@ -1,7 +1,7 @@
   .. _omp_get_schedule:
 
-omp_get_schedule - Obtain the runtime scheduling method
-*******************************************************
+omp_get_schedule -- Obtain the runtime scheduling method
+********************************************************
 
 :samp:`{Description}:`
   Obtain the runtime scheduling method.  The :samp:`{kind}` argument will be

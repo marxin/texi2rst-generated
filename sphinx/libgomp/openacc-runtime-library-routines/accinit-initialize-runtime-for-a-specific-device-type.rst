@@ -1,7 +1,7 @@
   .. _acc_init:
 
-acc_init - Initialize runtime for a specific device type.
-*********************************************************
+acc_init -- Initialize runtime for a specific device type.
+**********************************************************
 
 Description
   This function initializes the runtime for the device type specified in

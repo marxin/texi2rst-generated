@@ -52,7 +52,7 @@ substitution of the operands.
   done on the operand, so anything which occurs in this position is
   valid.
 
-  Most of the time, :samp:`{predicate}` will reject modes other than :samp:`{m}` -but
+  Most of the time, :samp:`{predicate}` will reject modes other than :samp:`{m}` ---but
   not always.  For example, the predicate ``address_operand`` uses
   :samp:`{m}` as the mode of memory ref that the address should be valid for.
   Many predicates accept ``const_int`` nodes even though their mode is

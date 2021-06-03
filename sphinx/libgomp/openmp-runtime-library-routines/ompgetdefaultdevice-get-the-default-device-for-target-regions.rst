@@ -1,7 +1,7 @@
   .. _omp_get_default_device:
 
-omp_get_default_device - Get the default device for target regions
-******************************************************************
+omp_get_default_device -- Get the default device for target regions
+*******************************************************************
 
 :samp:`{Description}:`
   Get the default device for target regions without device clause.

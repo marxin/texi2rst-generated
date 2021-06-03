@@ -1,7 +1,7 @@
   .. _acc_present_or_copyin:
 
-acc_present_or_copyin - If the data is not present on the device, allocate device memory and copy from host memory.
-*******************************************************************************************************************
+acc_present_or_copyin -- If the data is not present on the device, allocate device memory and copy from host memory.
+********************************************************************************************************************
 
 Description
   This function tests if the host data specified by :samp:`{a}` and of length
