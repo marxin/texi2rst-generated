@@ -1,5 +1,5 @@
 Welcome to gfortran documentation!
-=================================
+==================================
 
 .. index:: Introduction
 
@@ -19,7 +19,8 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
   :maxdepth: 2
 
   introduction
-  invoking-gnu-fortran
+  gnu-fortran-command-options
+  runtime-influencing-runtime-behavior-with-environment-variables
 
   fortran-standards-status
   compiler-characteristics
@@ -34,6 +35,3 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
   gnu-free-documentation-license
   funding
   option-index
-
-  gnu-fortran-command-options
-  runtime-influencing-runtime-behavior-with-environment-variables
