@@ -9,6 +9,9 @@ GCC Command Options
 
 .. index:: options, GCC command
 
+Description
+^^^^^^^^^^^
+
 When you invoke GCC, it normally does preprocessing, compilation,
 assembly and linking.  The 'overall options' allow you to stop this
 process at an intermediate stage.  For example, the :option:`-c` option
@@ -137,4 +140,7 @@ See :ref:`option-index`, for an index to GCC's options.
   gcc-command-options/specifying-subprocesses-and-the-switches-to-pass-to-them
   gcc-command-options/environment-variables-affecting-gcc
   gcc-command-options/using-precompiled-headers
+
+Options
+^^^^^^^
 
