@@ -1,15 +1,20 @@
 Welcome to libquadmath documentation!
-===============================
+=====================================
 
-Contents:
+Introduction
+============
+
+.. index:: Introduction
+
+This manual documents the usage of libquadmath, the GCC Quad-Precision
+Math Library Application Programming Interface (API).
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   libquadmath.rst
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
+  typedef-and-constants
+  math-library-routines
+  i-o-library-routines
+  gnu-free-documentation-license
+  reporting-bugs
+  option-index
