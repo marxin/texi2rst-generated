@@ -19,7 +19,7 @@ the GNU Fortran compiler.
 Contents:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   introduction
   frontend-data-structures
@@ -30,4 +30,4 @@ Contents:
   the-libgfortran-runtime-library
   gnu-free-documentation-license
 
-  option-index
+  indices-and-tables

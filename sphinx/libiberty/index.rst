@@ -11,13 +11,13 @@ License; for more information, see Library Copying.
 Contents:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   using
   overview
   function-variable-and-macro-listing
 
-  option-index
+  indices-and-tables
 
 .. _licenses:
 

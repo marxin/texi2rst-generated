@@ -29,7 +29,7 @@ http://gcc.gnu.org/readings.html.
 Contents:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   contributing-to-gcc-development
   gcc-and-portability
