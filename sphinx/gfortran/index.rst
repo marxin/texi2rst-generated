@@ -16,7 +16,7 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
     not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   introduction
   gnu-fortran-command-options

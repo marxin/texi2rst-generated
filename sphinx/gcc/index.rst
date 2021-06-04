@@ -4,7 +4,7 @@ Welcome to gcc documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   gcc.rst
   programming-languages-supported-by-gcc

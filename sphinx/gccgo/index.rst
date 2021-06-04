@@ -11,7 +11,7 @@ language in general, including language specifications and standard
 package documentation, see http://golang.org/.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   invoking-gccgo
   import-and-export
@@ -19,4 +19,4 @@ package documentation, see http://golang.org/.
   c-interoperability
   general-public-license-3
   gnu-free-documentation-license
-  option-index
+  indices-and-tables
