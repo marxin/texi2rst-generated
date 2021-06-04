@@ -27,6 +27,7 @@ Contents:
   contributors-to-gcc
 
   funding
+  gnu
   general-public-license-3
   gnu-free-documentation-license
 
