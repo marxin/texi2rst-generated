@@ -494,7 +494,7 @@ The following options fine tune code generation:
 
 .. option:: -malign-call
 
-  Do alignment optimizations for call instructions.
+  Does nothing.  Preserved for backward compatibility.
 
 .. option:: -mauto-modify-reg
 
@@ -589,9 +589,7 @@ The following options fine tune code generation:
 
 .. option:: -mmixed-code
 
-  Tweak register allocation to help 16-bit instruction generation.
-  This generally has the effect of decreasing the average instruction size
-  while increasing the instruction count.
+  Does nothing.  Preserved for backward compatibility.
 
 .. option:: -mq-class
 
@@ -662,12 +660,7 @@ The following options fine tune code generation:
 
 .. option:: -munalign-prob-threshold=probability
 
-  Set probability threshold for unaligning branches.
-  When tuning for :samp:`ARC700` and optimizing for speed, branches without
-  filled delay slot are preferably emitted unaligned and long, unless
-  profiling indicates that the probability for the branch to be taken
-  is below :samp:`{probability}`.  See :ref:`cross-profiling`.
-  The default is (REG_BR_PROB_BASE/2), i.e. 5000.
+  Does nothing.  Preserved for backward compatibility.
 
 The following options are maintained for backward compatibility, but
 are now deprecated and will be removed in a future release:
