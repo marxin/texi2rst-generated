@@ -22,7 +22,6 @@ DPROD --- Double product function
 :samp:`{Arguments}:`
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
-  ===========  ===========================
   :samp:`{Y}`  The type shall be ``REAL``.
   ===========  ===========================
 
@@ -44,6 +43,5 @@ DPROD --- Double product function
 :samp:`{Specific names}:`
   ==============  ================  ===========  ====================
   Name            Argument          Return type  Standard
-  ==============  ================  ===========  ====================
   ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later
   ==============  ================  ===========  ====================

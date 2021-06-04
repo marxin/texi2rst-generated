@@ -10,7 +10,6 @@ acc_prof_lookup -- Obtain inquiry functions.
   ============  ================================================
   *Prototype*:  ``acc_query_fn acc_prof_lookup (const char *);``
   ============  ================================================
-  ============  ================================================
 
 :samp:`{See also}:`
   OpenACC Profiling Interface

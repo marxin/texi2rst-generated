@@ -33,7 +33,6 @@ FGET --- Read a single character in stream mode from stdin
 :samp:`{Syntax}:`
   ===========================
   ``CALL FGET(C [, STATUS])``
-  ===========================
   ``STATUS = FGET(C)``
   ===========================
 
@@ -41,7 +40,6 @@ FGET --- Read a single character in stream mode from stdin
   ================  =======================================================================
   :samp:`{C}`       The type shall be ``CHARACTER`` and of default
                     kind.
-  ================  =======================================================================
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER``.
                     Returns 0 on success, -1 on end-of-file, and a system specific positive
                     error code otherwise.

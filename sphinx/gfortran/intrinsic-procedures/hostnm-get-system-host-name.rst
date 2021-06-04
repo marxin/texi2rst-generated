@@ -22,14 +22,12 @@ HOSTNM --- Get system host name
 :samp:`{Syntax}:`
   =============================
   ``CALL HOSTNM(C [, STATUS])``
-  =============================
   ``STATUS = HOSTNM(NAME)``
   =============================
 
 :samp:`{Arguments}:`
   ================  ================================================================
   :samp:`{C}`       Shall of type ``CHARACTER`` and of default kind.
-  ================  ================================================================
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER``.
                     Returns 0 on success, or a system specific error code otherwise.
   ================  ================================================================

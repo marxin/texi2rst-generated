@@ -23,7 +23,6 @@ TRIM --- Remove trailing blank characters of a string
   ================  ========================================
   :samp:`{STRING}`  Shall be a scalar of type ``CHARACTER``.
   ================  ========================================
-  ================  ========================================
 
 :samp:`{Return value}:`
   A scalar of type ``CHARACTER`` which length is that of :samp:`{STRING}`

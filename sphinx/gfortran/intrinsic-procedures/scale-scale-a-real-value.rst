@@ -24,7 +24,6 @@ SCALE --- Scale a real value
 :samp:`{Arguments}:`
   ===========  ================================================
   :samp:`{X}`  The type of the argument shall be a ``REAL``.
-  ===========  ================================================
   :samp:`{I}`  The type of the argument shall be a ``INTEGER``.
   ===========  ================================================
 

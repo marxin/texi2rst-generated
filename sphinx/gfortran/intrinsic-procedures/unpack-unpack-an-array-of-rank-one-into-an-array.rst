@@ -27,7 +27,6 @@ UNPACK --- Unpack an array of rank one into an array
   ================  ===========================================================================
   :samp:`{VECTOR}`  Shall be an array of any type and rank one. It 
                     shall have at least as many elements as :samp:`{MASK}` has ``TRUE`` values.
-  ================  ===========================================================================
   :samp:`{MASK}`    Shall be an array of type ``LOGICAL``.
   :samp:`{FIELD}`   Shall be of the same type as :samp:`{VECTOR}` and have
                     the same shape as :samp:`{MASK}`.

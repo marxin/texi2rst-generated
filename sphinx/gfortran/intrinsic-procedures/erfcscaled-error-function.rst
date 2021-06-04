@@ -24,7 +24,6 @@ ERFC_SCALED --- Error function
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.

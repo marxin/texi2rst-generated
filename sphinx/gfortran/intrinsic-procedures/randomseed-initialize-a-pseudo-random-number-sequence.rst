@@ -42,7 +42,6 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
   :samp:`{SIZE}`  (Optional) Shall be a scalar and of type default 
                   ``INTEGER``, with ``INTENT(OUT)``. It specifies the minimum size 
                   of the arrays used with the :samp:`{PUT}` and :samp:`{GET}` arguments.
-  ==============  ======================================================================
   :samp:`{PUT}`   (Optional) Shall be an array of type default 
                   ``INTEGER`` and rank one. It is ``INTENT(IN)`` and the size of 
                   the array must be larger than or equal to the number returned by the 

@@ -28,7 +28,6 @@ SELECTED_REAL_KIND --- Choose real kind
 :samp:`{Arguments}:`
   ===============  =====================================================
   :samp:`{P}`      (Optional) shall be a scalar and of type ``INTEGER``.
-  ===============  =====================================================
   :samp:`{R}`      (Optional) shall be a scalar and of type ``INTEGER``.
   :samp:`{RADIX}`  (Optional) shall be a scalar and of type ``INTEGER``.
   ===============  =====================================================

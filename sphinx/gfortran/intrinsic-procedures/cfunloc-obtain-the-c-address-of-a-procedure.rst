@@ -23,7 +23,6 @@ C_FUNLOC --- Obtain the C address of a procedure
   ===========  ===================================================
   :samp:`{x}`  Interoperable function or pointer to such function.
   ===========  ===================================================
-  ===========  ===================================================
 
 :samp:`{Return value}:`
   The return value is of type ``C_FUNPTR`` and contains the C address

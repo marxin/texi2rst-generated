@@ -26,7 +26,6 @@ NEW_LINE --- New line character
   :samp:`{C}`  The argument shall be a scalar or array of the
                type ``CHARACTER``.
   ===========  ==============================================
-  ===========  ==============================================
 
 :samp:`{Return value}:`
   Returns a :samp:`{CHARACTER}` scalar of length one with the new-line character of

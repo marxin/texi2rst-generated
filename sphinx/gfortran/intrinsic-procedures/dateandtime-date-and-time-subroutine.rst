@@ -25,7 +25,6 @@ DATE_AND_TIME --- Date and time subroutine
 
   ==============  ===================================
   ``VALUE(1)`` :  The year
-  ==============  ===================================
   ``VALUE(2)`` :  The month
   ``VALUE(3)`` :  The day of the month
   ``VALUE(4)`` :  Time difference with UTC in minutes
@@ -48,7 +47,6 @@ DATE_AND_TIME --- Date and time subroutine
   ================  ==================================================
   :samp:`{DATE}`    (Optional) The type shall be ``CHARACTER(LEN=8)``
                     or larger, and of default kind.
-  ================  ==================================================
   :samp:`{TIME}`    (Optional) The type shall be ``CHARACTER(LEN=10)``
                     or larger, and of default kind.
   :samp:`{ZONE}`    (Optional) The type shall be ``CHARACTER(LEN=5)``

@@ -28,7 +28,6 @@ SHIFTR --- Right shift
 :samp:`{Arguments}:`
   ===============  ==============================
   :samp:`{I}`      The type shall be ``INTEGER``.
-  ===============  ==============================
   :samp:`{SHIFT}`  The type shall be ``INTEGER``.
   ===============  ==============================
 

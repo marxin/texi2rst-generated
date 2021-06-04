@@ -28,7 +28,6 @@ ACCESS --- Checks file access modes
                   file name. Tailing blank are ignored unless the character ``achar(0)``
                   is present, then all characters up to and excluding ``achar(0)`` are
                   used as file name.
-  ==============  ======================================================================
   :samp:`{MODE}`  Scalar ``CHARACTER`` of default kind with the
                   file access mode, may be any concatenation of ``"r"`` (readable),
                   ``"w"`` (writable) and ``"x"`` (executable), or ``" "`` to check

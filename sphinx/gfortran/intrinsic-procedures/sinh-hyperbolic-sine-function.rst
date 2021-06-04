@@ -30,7 +30,6 @@ SINH --- Hyperbolic sine function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`.
@@ -47,7 +46,6 @@ SINH --- Hyperbolic sine function
 :samp:`{Specific names}:`
   ============  =============  ===========  ====================
   Name          Argument       Return type  Standard
-  ============  =============  ===========  ====================
   ``DSINH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 90 and later
   ============  =============  ===========  ====================
 

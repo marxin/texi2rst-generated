@@ -21,14 +21,12 @@ ALLOCATED --- Status of an allocatable entity
 :samp:`{Syntax}:`
   ==============================
   ``RESULT = ALLOCATED(ARRAY)``
-  ==============================
   ``RESULT = ALLOCATED(SCALAR)``
   ==============================
 
 :samp:`{Arguments}:`
   ================  ================================================
   :samp:`{ARRAY}`   The argument shall be an ``ALLOCATABLE`` array.
-  ================  ================================================
   :samp:`{SCALAR}`  The argument shall be an ``ALLOCATABLE`` scalar.
   ================  ================================================
 

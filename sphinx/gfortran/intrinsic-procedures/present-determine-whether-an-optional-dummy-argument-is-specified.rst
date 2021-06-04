@@ -23,7 +23,6 @@ PRESENT --- Determine whether an optional dummy argument is specified
                value, or a dummy procedure. It shall be the name of an optional dummy argument
                accessible within the current subroutine or function.
   ===========  ===============================================================================
-  ===========  ===============================================================================
 
 :samp:`{Return value}:`
   Returns either ``TRUE`` if the optional argument :samp:`{A}` is present, or

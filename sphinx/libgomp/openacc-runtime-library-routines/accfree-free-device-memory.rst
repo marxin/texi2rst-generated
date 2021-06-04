@@ -10,7 +10,6 @@ Description
   ============  ========================
   *Prototype*:  ``acc_free(d_void *a);``
   ============  ========================
-  ============  ========================
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

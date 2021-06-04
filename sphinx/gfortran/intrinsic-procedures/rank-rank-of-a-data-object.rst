@@ -23,7 +23,6 @@ RANK --- Rank of a data object
   ===========  ==================
   :samp:`{A}`  can be of any type
   ===========  ==================
-  ===========  ==================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER`` and of the default integer

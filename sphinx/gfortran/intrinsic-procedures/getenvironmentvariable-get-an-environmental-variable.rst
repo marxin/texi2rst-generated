@@ -28,7 +28,6 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
   ===================  ==================================================
   :samp:`{NAME}`       Shall be a scalar of type ``CHARACTER``
                        and of default kind.
-  ===================  ==================================================
   :samp:`{VALUE}`      (Optional) Shall be a scalar of type ``CHARACTER``
                        and of default kind.
   :samp:`{LENGTH}`     (Optional) Shall be a scalar of type ``INTEGER``

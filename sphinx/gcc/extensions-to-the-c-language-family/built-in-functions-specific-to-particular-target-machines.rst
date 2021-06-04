@@ -1126,7 +1126,6 @@ values are given the following pseudo types:
 
 ===========  ======================  =========  =======================
 Pseudo type  Real C type             Constant?  Description
-===========  ======================  =========  =======================
 ``uh``       ``unsigned short``      No         an unsigned halfword
 ``uw1``      ``unsigned int``        No         an unsigned word
 ``sw1``      ``int``                 No         a signed word
@@ -1163,7 +1162,6 @@ The functions listed below map directly to FR-V I-type instructions.
 
 ===========================  ======================  ===============
 Function prototype           Example usage           Assembly output
-===========================  ======================  ===============
 ``sw1 __ADDSS (sw1, sw1)``   ``c = __ADDSS (a, b)``  ``ADDSS a,b,c``
 ``sw1 __SCAN (sw1, sw1)``    ``c = __SCAN (a, b)``   ``SCAN a,b,c``
 ``sw1 __SCUTSS (sw1)``       ``b = __SCUTSS (a)``    ``SCUTSS a,b``
@@ -1184,7 +1182,6 @@ The functions listed below map directly to FR-V M-type instructions.
 
 ====================================  =========================  ===================
 Function prototype                    Example usage              Assembly output
-====================================  =========================  ===================
 ``uw1 __MABSHS (sw1)``                ``b = __MABSHS (a)``       ``MABSHS a,b``
 ``void __MADDACCS (acc, acc)``        ``__MADDACCS (b, a)``      ``MADDACCS a,b``
 ``sw1 __MADDHSS (sw1, sw1)``          ``c = __MADDHSS (a, b)``   ``MADDHSS a,b,c``
@@ -1393,7 +1390,6 @@ and ``c`` and ``d`` are ``v2q15`` values.
 
 =========  ================
 C code     MIPS instruction
-=========  ================
 ``a + b``  ``addu.qb``
 ``c + d``  ``addq.ph``
 ``a - b``  ``subu.qb``
@@ -1405,7 +1401,6 @@ hardware support exists for the DSP ASE REV 2.  ``e`` and ``f`` are
 
 =========  ================
 C code     MIPS instruction
-=========  ================
 ``e * f``  ``mul.ph``
 =========  ================
 It is easier to describe the DSP built-in functions if we first define
@@ -1800,7 +1795,6 @@ values and ``x`` is an integral value.
 
 ================  =========================
 C code            MIPS instruction
-================  =========================
 ``a + b``         ``add.ps``
 ``a - b``         ``sub.ps``
 ``-a``            ``neg.ps``
@@ -3774,7 +3768,6 @@ The PVIPR documents the following overloaded functions:
 
 ================================  ================================  ===================================
 ``vec_abs``                       ``vec_absd``                      ``vec_abss``
-================================  ================================  ===================================
 ``vec_add``                       ``vec_addc``                      ``vec_adde``
 ``vec_addec``                     ``vec_adds``                      ``vec_all_eq``
 ``vec_all_ge``                    ``vec_all_gt``                    ``vec_all_in``

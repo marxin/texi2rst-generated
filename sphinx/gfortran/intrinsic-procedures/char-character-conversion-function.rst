@@ -22,7 +22,6 @@ CHAR --- Character conversion function
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{I}`     The type shall be ``INTEGER``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================
@@ -44,7 +43,6 @@ CHAR --- Character conversion function
 :samp:`{Specific names}:`
   ===========  =============  ====================  ====================
   Name         Argument       Return type           Standard
-  ===========  =============  ====================  ====================
   ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later
   ===========  =============  ====================  ====================
 

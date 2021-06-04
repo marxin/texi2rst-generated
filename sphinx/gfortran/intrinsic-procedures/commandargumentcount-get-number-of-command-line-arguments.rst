@@ -28,7 +28,6 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
   ====
   None
   ====
-  ====
 
 :samp:`{Return value}:`
   The return value is an ``INTEGER`` of default kind.

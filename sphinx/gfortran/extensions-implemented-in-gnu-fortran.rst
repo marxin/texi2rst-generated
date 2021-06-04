@@ -1389,7 +1389,6 @@ compile flag :option:`-fdec`, for compatibility.
 
   =============  ========================================================
   ``'LIST'``     One line feed between records (default)
-  =============  ========================================================
   ``'FORTRAN'``  Legacy interpretation of the first character (see below)
   ``'NONE'``     No separator between records
   =============  ========================================================

@@ -26,7 +26,6 @@ PERROR --- Print system error message
   :samp:`{STRING}`  A scalar of type ``CHARACTER`` and of the
                     default kind.
   ================  =========================================
-  ================  =========================================
 
 :samp:`{See also}:`
   IERRNO

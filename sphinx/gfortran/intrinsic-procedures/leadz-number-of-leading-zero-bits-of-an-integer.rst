@@ -23,7 +23,6 @@ LEADZ --- Number of leading zero bits of an integer
   ===========  =============================
   :samp:`{I}`  Shall be of type ``INTEGER``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The type of the return value is the default ``INTEGER``.

@@ -31,7 +31,6 @@ GETENV --- Get an environmental variable
 :samp:`{Arguments}:`
   ===============  ===================================================
   :samp:`{NAME}`   Shall be of type ``CHARACTER`` and of default kind.
-  ===============  ===================================================
   :samp:`{VALUE}`  Shall be of type ``CHARACTER`` and of default kind.
   ===============  ===================================================
 

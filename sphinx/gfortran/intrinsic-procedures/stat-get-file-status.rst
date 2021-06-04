@@ -16,7 +16,6 @@ STAT --- Get file status
 
   ==============  =====================================================================
   ``VALUES(1)``   Device ID
-  ==============  =====================================================================
   ``VALUES(2)``   Inode number
   ``VALUES(3)``   File mode
   ``VALUES(4)``   Number of links
@@ -45,7 +44,6 @@ STAT --- Get file status
 :samp:`{Syntax}:`
   ======================================
   ``CALL STAT(NAME, VALUES [, STATUS])``
-  ======================================
   ``STATUS = STAT(NAME, VALUES)``
   ======================================
 
@@ -53,7 +51,6 @@ STAT --- Get file status
   ================  =========================================================
   :samp:`{NAME}`    The type shall be ``CHARACTER``, of the
                     default kind and a valid path within the file system.
-  ================  =========================================================
   :samp:`{VALUES}`  The type shall be ``INTEGER(4), DIMENSION(13)``.
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER(4)``. Returns 0 
                     on success and a system specific error code otherwise.

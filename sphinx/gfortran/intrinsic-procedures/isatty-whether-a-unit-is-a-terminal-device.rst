@@ -23,7 +23,6 @@ ISATTY --- Whether a unit is a terminal device.
   ==============  ==============================
   :samp:`{UNIT}`  Shall be a scalar ``INTEGER``.
   ==============  ==============================
-  ==============  ==============================
 
 :samp:`{Return value}:`
   Returns ``.TRUE.`` if the :samp:`{UNIT}` is connected to a terminal 

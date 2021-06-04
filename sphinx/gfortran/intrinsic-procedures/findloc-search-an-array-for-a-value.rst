@@ -33,14 +33,12 @@ FINDLOC --- Search an array for a value
 :samp:`{Syntax}:`
   ================================================================
   ``RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])``
-  ================================================================
   ``RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])``
   ================================================================
 
 :samp:`{Arguments}:`
   ===============  ======================================================================
   :samp:`{ARRAY}`  Shall be an array of intrinsic type.
-  ===============  ======================================================================
   :samp:`{VALUE}`  A scalar of intrinsic type which is in type
                    conformance with :samp:`{ARRAY}`.
   :samp:`{DIM}`    (Optional) Shall be a scalar of type

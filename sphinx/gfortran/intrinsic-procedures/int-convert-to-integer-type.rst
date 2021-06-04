@@ -27,7 +27,6 @@ INT --- Convert to integer type
   ==============  =======================================================
   :samp:`{A}`     Shall be of type ``INTEGER``,
                   ``REAL``, or ``COMPLEX`` or a boz-literal-constant.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================
@@ -62,7 +61,6 @@ INT --- Convert to integer type
 :samp:`{Specific names}:`
   ============  =============  ===========  ====================
   Name          Argument       Return type  Standard
-  ============  =============  ===========  ====================
   ``INT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
   ``IFIX(A)``   ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
   ``IDINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later

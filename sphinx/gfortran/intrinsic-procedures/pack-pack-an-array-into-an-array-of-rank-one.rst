@@ -30,7 +30,6 @@ PACK --- Pack an array into an array of rank one
 :samp:`{Arguments}:`
   ================  ===============================================================================
   :samp:`{ARRAY}`   Shall be an array of any type.
-  ================  ===============================================================================
   :samp:`{MASK}`    Shall be an array of type ``LOGICAL`` and 
                     of the same size as :samp:`{ARRAY}`. Alternatively, it may be a ``LOGICAL`` 
                     scalar.

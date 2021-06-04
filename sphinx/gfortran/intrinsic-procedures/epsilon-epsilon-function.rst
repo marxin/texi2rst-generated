@@ -24,7 +24,6 @@ EPSILON --- Epsilon function
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of same type as the argument.

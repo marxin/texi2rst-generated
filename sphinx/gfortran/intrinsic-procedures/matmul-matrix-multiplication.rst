@@ -26,7 +26,6 @@ MATMUL --- matrix multiplication
   :samp:`{MATRIX_A}`  An array of ``INTEGER``,
                       ``REAL``, ``COMPLEX``, or ``LOGICAL`` type, with a rank of
                       one or two.
-  ==================  ============================================================================
   :samp:`{MATRIX_B}`  An array of ``INTEGER``,
                       ``REAL``, or ``COMPLEX`` type if :samp:`{MATRIX_A}` is of a numeric
                       type; otherwise, an array of ``LOGICAL`` type. The rank shall be one

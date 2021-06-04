@@ -42,7 +42,6 @@ ABS --- Absolute value
   :samp:`{A}`  The type of the argument shall be an ``INTEGER``,
                ``REAL``, or ``COMPLEX``.
   ===========  =================================================
-  ===========  =================================================
 
 :samp:`{Return value}:`
   The return value is of the same type and
@@ -65,7 +64,6 @@ ABS --- Absolute value
 :samp:`{Specific names}:`
   ============  ================  ==============  ====================
   Name          Argument          Return type     Standard
-  ============  ================  ==============  ====================
   ``ABS(A)``    ``REAL(4) A``     ``REAL(4)``     Fortran 77 and later
   ``CABS(A)``   ``COMPLEX(4) A``  ``REAL(4)``     Fortran 77 and later
   ``DABS(A)``   ``REAL(8) A``     ``REAL(8)``     Fortran 77 and later

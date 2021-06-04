@@ -31,7 +31,6 @@ LOG_GAMMA --- Logarithm of the Gamma function
   :samp:`{X}`  Shall be of type ``REAL`` and neither zero
                nor a negative integer.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
@@ -48,7 +47,6 @@ LOG_GAMMA --- Logarithm of the Gamma function
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``LGAMMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``ALGAMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DLGAMA(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension

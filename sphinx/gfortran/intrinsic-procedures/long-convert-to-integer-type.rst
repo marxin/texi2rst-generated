@@ -27,7 +27,6 @@ LONG --- Convert to integer type
   :samp:`{A}`  Shall be of type ``INTEGER``,
                ``REAL``, or ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value is a ``INTEGER(4)`` variable.

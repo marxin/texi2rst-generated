@@ -28,7 +28,6 @@ FREE --- Frees memory
   :samp:`{PTR}`  The type shall be ``INTEGER``. It represents the
                  location of the memory that should be de-allocated.
   =============  ===================================================
-  =============  ===================================================
 
 :samp:`{Return value}:`
   None

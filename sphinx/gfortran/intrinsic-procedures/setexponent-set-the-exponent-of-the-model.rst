@@ -25,7 +25,6 @@ SET_EXPONENT --- Set the exponent of the model
 :samp:`{Arguments}:`
   ===========  =============================
   :samp:`{X}`  Shall be of type ``REAL``.
-  ===========  =============================
   :samp:`{I}`  Shall be of type ``INTEGER``.
   ===========  =============================
 

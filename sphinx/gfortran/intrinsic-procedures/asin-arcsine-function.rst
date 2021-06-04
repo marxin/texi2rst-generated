@@ -28,7 +28,6 @@ ASIN --- Arcsine function
   :samp:`{X}`  The type shall be either ``REAL`` and a magnitude that is
                less than or equal to one - or be ``COMPLEX``.
   ===========  =========================================================
-  ===========  =========================================================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`.
@@ -47,7 +46,6 @@ ASIN --- Arcsine function
 :samp:`{Specific names}:`
   ============  =============  ===========  ====================
   Name          Argument       Return type  Standard
-  ============  =============  ===========  ====================
   ``ASIN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
   ``DASIN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
   ============  =============  ===========  ====================

@@ -24,7 +24,6 @@ ATAN --- Arctangent function
 :samp:`{Syntax}:`
   =======================
   ``RESULT = ATAN(X)``
-  =======================
   ``RESULT = ATAN(Y, X)``
   =======================
 
@@ -32,7 +31,6 @@ ATAN --- Arctangent function
   ===========  ==================================================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX`` ;
                if :samp:`{Y}` is present, :samp:`{X}` shall be REAL.
-  ===========  ==================================================================
   :samp:`{Y}`  The type and kind type parameter shall be the same as :samp:`{X}`.
   ===========  ==================================================================
 
@@ -55,7 +53,6 @@ ATAN --- Arctangent function
 :samp:`{Specific names}:`
   ============  =============  ===========  ====================
   Name          Argument       Return type  Standard
-  ============  =============  ===========  ====================
   ``ATAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
   ``DATAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
   ============  =============  ===========  ====================

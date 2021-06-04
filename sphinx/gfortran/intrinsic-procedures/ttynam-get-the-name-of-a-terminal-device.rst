@@ -23,14 +23,12 @@ TTYNAM --- Get the name of a terminal device.
 :samp:`{Syntax}:`
   ===========================
   ``CALL TTYNAM(UNIT, NAME)``
-  ===========================
   ``NAME = TTYNAM(UNIT)``
   ===========================
 
 :samp:`{Arguments}:`
   ==============  ===============================
   :samp:`{UNIT}`  Shall be a scalar ``INTEGER``.
-  ==============  ===============================
   :samp:`{NAME}`  Shall be of type ``CHARACTER``.
   ==============  ===============================
 

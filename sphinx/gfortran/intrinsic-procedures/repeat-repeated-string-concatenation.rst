@@ -24,7 +24,6 @@ REPEAT --- Repeated string concatenation
 :samp:`{Arguments}:`
   =================  ==========================================
   :samp:`{STRING}`   Shall be scalar and of type ``CHARACTER``.
-  =================  ==========================================
   :samp:`{NCOPIES}`  Shall be scalar and of type ``INTEGER``.
   =================  ==========================================
 

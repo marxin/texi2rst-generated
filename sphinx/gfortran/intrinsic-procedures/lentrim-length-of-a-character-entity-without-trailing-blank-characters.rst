@@ -23,7 +23,6 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
   ================  =======================================================
   :samp:`{STRING}`  Shall be a scalar of type ``CHARACTER``,
                     with ``INTENT(IN)``
-  ================  =======================================================
   :samp:`{KIND}`    (Optional) An ``INTEGER`` initialization
                     expression indicating the kind parameter of the result.
   ================  =======================================================

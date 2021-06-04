@@ -26,7 +26,6 @@ SPACING --- Smallest distance between two numbers of a given type
   ===========  ==========================
   :samp:`{X}`  Shall be of type ``REAL``.
   ===========  ==========================
-  ===========  ==========================
 
 :samp:`{Return value}:`
   The result is of the same type as the input argument :samp:`{X}`.

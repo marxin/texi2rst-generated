@@ -27,7 +27,6 @@ EVENT_QUERY --- Query whether a coarray event has occurred
   ===============  ========================================================
   :samp:`{EVENT}`  (intent(IN)) Scalar of type ``EVENT_TYPE``,
                    defined in ``ISO_FORTRAN_ENV`` ; shall not be coindexed.
-  ===============  ========================================================
   :samp:`{COUNT}`  (intent(out))Scalar integer with at least the
                    precision of default integer.
   :samp:`{STAT}`   (optional) Scalar default-kind integer variable.

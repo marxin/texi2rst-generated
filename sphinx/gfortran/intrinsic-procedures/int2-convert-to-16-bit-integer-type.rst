@@ -30,7 +30,6 @@ INT2 --- Convert to 16-bit integer type
   :samp:`{A}`  Shall be of type ``INTEGER``,
                ``REAL``, or ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value is a ``INTEGER(2)`` variable.

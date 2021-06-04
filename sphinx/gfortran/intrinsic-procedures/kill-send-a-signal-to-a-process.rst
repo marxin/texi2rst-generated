@@ -24,14 +24,12 @@ KILL --- Send a signal to a process
 :samp:`{Syntax}:`
   ==================================
   ``CALL KILL(PID, SIG [, STATUS])``
-  ==================================
   ``STATUS = KILL(PID, SIG)``
   ==================================
 
 :samp:`{Arguments}:`
   ================  =========================================================================
   :samp:`{PID}`     Shall be a scalar ``INTEGER`` with ``INTENT(IN)``.
-  ================  =========================================================================
   :samp:`{SIG}`     Shall be a scalar ``INTEGER`` with ``INTENT(IN)``.
   :samp:`{STATUS}`  [Subroutine](Optional)
                     Shall be a scalar ``INTEGER``.

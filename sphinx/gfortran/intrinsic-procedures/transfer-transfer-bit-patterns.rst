@@ -29,7 +29,6 @@ TRANSFER --- Transfer bit patterns
 :samp:`{Arguments}:`
   ================  ==========================================
   :samp:`{SOURCE}`  Shall be a scalar or an array of any type.
-  ================  ==========================================
   :samp:`{MOLD}`    Shall be a scalar or an array of any type.
   :samp:`{SIZE}`    (Optional) shall be a scalar of type 
                     ``INTEGER``.

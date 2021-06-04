@@ -65,7 +65,6 @@ _gfortran_set_args --- Save command-line arguments
 :samp:`{Arguments}:`
   ==============  ==========================================
   :samp:`{argc}`  number of command line argument strings
-  ==============  ==========================================
   :samp:`{argv}`  the command-line argument strings; argv[0]
                   is the pathname of the executable itself.
   ==============  ==========================================
@@ -105,7 +104,6 @@ _gfortran_set_options --- Set library option flags
 :samp:`{Arguments}:`
   ==============  ========================
   :samp:`{num}`   number of options passed
-  ==============  ========================
   :samp:`{argv}`  The list of flag values
   ==============  ========================
 
@@ -123,7 +121,6 @@ _gfortran_set_options --- Set library option flags
                         GFC_STD_F95_DEL | GFC_STD_F95 | GFC_STD_F2003 | GFC_STD_F2008 |
                         GFC_STD_F2008_TS | GFC_STD_F2008_OBS | GFC_STD_F77 | GFC_STD_F2018 |
                         GFC_STD_F2018_OBS | GFC_STD_F2018_DEL | GFC_STD_GNU | GFC_STD_LEGACY``.
-  ====================  =========================================================================
   :samp:`{option}` [1]  Standard-warning flag; prints a warning to
                         standard error.  Default: ``GFC_STD_F95_DEL | GFC_STD_LEGACY``.
   :samp:`{option}` [2]  If non zero, enable pedantic checking.
@@ -180,7 +177,6 @@ _gfortran_set_convert --- Set endian conversion
                   GFC_CONVERT_NATIVE (0, default), GFC_CONVERT_SWAP (1),
                   GFC_CONVERT_BIG (2), GFC_CONVERT_LITTLE (3).
   ==============  ======================================================
-  ==============  ======================================================
 
 :samp:`{Example}:`
 
@@ -214,7 +210,6 @@ _gfortran_set_record_marker --- Set length of record markers
   =============  =========================================
   :samp:`{val}`  Length of the record marker; valid values
                  are 4 and 8.  Default is 4.
-  =============  =========================================
   =============  =========================================
 
 :samp:`{Example}:`
@@ -254,7 +249,6 @@ _gfortran_set_fpe --- Enable floating point exception traps
                         ``GFC_FPE_ZERO`` (4), ``GFC_FPE_OVERFLOW`` (8),
                         ``GFC_FPE_UNDERFLOW`` (16), and ``GFC_FPE_INEXACT`` (32).
   ====================  =========================================================
-  ====================  =========================================================
 
 :samp:`{Example}:`
 
@@ -291,7 +285,6 @@ _gfortran_set_max_subrecord_length --- Set subrecord length
   :samp:`{val}`  the maximum length for a subrecord;
                  the maximum permitted value is 2147483639, which is also
                  the default.
-  =============  ========================================================
   =============  ========================================================
 
 :samp:`{Example}:`

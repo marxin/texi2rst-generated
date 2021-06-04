@@ -24,7 +24,6 @@ DBLE --- Double conversion function
   :samp:`{A}`  The type shall be ``INTEGER``, ``REAL``,
                or ``COMPLEX``.
   ===========  ========================================
-  ===========  ========================================
 
 :samp:`{Return value}:`
   The return value is of type double precision real.

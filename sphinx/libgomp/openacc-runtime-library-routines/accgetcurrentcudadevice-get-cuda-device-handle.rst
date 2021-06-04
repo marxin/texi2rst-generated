@@ -11,7 +11,6 @@ Description
   ============  ============================================
   *Prototype*:  ``void *acc_get_current_cuda_device(void);``
   ============  ============================================
-  ============  ============================================
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

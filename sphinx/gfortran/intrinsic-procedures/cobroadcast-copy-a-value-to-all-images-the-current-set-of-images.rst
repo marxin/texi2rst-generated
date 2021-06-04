@@ -29,7 +29,6 @@ CO_BROADCAST --- Copy a value to all images the current set of images
   :samp:`{A}`             INTENT(INOUT) argument; shall have the same
                           dynamic type and type parameters on all images of the current team. If it
                           is an array, it shall have the same shape on all images.
-  ======================  =========================================================================
   :samp:`{SOURCE_IMAGE}`  a scalar integer expression.
                           It shall have the same value on all images and refer to an
                           image of the current team.

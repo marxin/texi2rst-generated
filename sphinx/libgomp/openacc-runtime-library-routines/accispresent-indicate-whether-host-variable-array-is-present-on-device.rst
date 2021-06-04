@@ -20,12 +20,10 @@ Description
   ============  ==============================================
   *Prototype*:  ``int acc_is_present(h_void *a, size_t len);``
   ============  ==============================================
-  ============  ==============================================
 
 :samp:`{Fortran}:`
   ============  ===================================
   *Interface*:  ``function acc_is_present(a)``
-  ============  ===================================
                 ``type, dimension(:[,:]...) :: a``
                 ``logical acc_is_present``
   *Interface*:  ``function acc_is_present(a, len)``

@@ -28,7 +28,6 @@ MALLOC --- Allocate dynamic memory
   ==============  ==============================
   :samp:`{SIZE}`  The type shall be ``INTEGER``.
   ==============  ==============================
-  ==============  ==============================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER(K)``, with :samp:`{K}` such that

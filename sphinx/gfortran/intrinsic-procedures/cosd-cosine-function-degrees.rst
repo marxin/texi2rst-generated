@@ -37,7 +37,6 @@ COSD --- Cosine function, degrees
   :samp:`{X}`  The type shall be ``REAL`` or
                ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`. The real part
@@ -56,7 +55,6 @@ COSD --- Cosine function, degrees
 :samp:`{Specific names}:`
   =============  ================  ==============  =============
   Name           Argument          Return type     Standard
-  =============  ================  ==============  =============
   ``COSD(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
   ``DCOSD(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
   ``CCOSD(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension

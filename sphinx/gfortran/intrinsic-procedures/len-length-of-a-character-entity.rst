@@ -26,7 +26,6 @@ LEN --- Length of a character entity
   ================  =======================================================
   :samp:`{STRING}`  Shall be a scalar or array of type
                     ``CHARACTER``, with ``INTENT(IN)``
-  ================  =======================================================
   :samp:`{KIND}`    (Optional) An ``INTEGER`` initialization
                     expression indicating the kind parameter of the result.
   ================  =======================================================
@@ -38,7 +37,6 @@ LEN --- Length of a character entity
 :samp:`{Specific names}:`
   ===============  =============  ===========  ====================
   Name             Argument       Return type  Standard
-  ===============  =============  ===========  ====================
   ``LEN(STRING)``  ``CHARACTER``  ``INTEGER``  Fortran 77 and later
   ===============  =============  ===========  ====================
 

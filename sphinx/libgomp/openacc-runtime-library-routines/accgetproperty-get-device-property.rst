@@ -27,14 +27,12 @@ Description
 :samp:`{C/C++}:`
   ============  ================================================================================================================
   *Prototype*:  ``size_t acc_get_property(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
-  ============  ================================================================================================================
   *Prototype*:  ``const char *acc_get_property_string(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
   ============  ================================================================================================================
 
 :samp:`{Fortran}:`
   ============  ===============================================================================
   *Interface*:  ``function acc_get_property(devicenum, devicetype, property)``
-  ============  ===============================================================================
   *Interface*:  ``subroutine acc_get_property_string(devicenum, devicetype, property, string)``
                 ``use ISO_C_Binding, only: c_size_t``
                 ``integer devicenum``

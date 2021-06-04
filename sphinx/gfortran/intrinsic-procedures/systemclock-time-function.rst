@@ -58,7 +58,6 @@ SYSTEM_CLOCK --- Time function
   ====================  ==============================================
   :samp:`{COUNT}`       (Optional) shall be a scalar of type 
                         ``INTEGER`` with ``INTENT(OUT)``.
-  ====================  ==============================================
   :samp:`{COUNT_RATE}`  (Optional) shall be a scalar of type 
                         ``INTEGER`` or ``REAL``, with ``INTENT(OUT)``.
   :samp:`{COUNT_MAX}`   (Optional) shall be a scalar of type 

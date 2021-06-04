@@ -31,7 +31,6 @@ GETARG --- Get command line arguments
   ===============  ===============================================
   :samp:`{POS}`    Shall be of type ``INTEGER`` and not wider than
                    the default integer kind; :samp:`{POS}` \geq 0
-  ===============  ===============================================
   :samp:`{VALUE}`  Shall be of type ``CHARACTER`` and of default
                    kind.
   ===============  ===============================================

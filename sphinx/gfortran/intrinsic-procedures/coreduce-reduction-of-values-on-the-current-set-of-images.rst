@@ -37,7 +37,6 @@ CO_REDUCE --- Reduction of values on the current set of images
                           it shall be associated.  :samp:`{A}` shall have the same type and type parameters on
                           all images of the team; if it is an array, it shall have the same shape on all
                           images.
-  ======================  ====================================================================================
   :samp:`{OPERATOR}`      pure function with two scalar nonallocatable
                           arguments, which shall be nonpolymorphic and have the same type and type
                           parameters as :samp:`{A}`.  The function shall return a nonallocatable scalar of

@@ -26,14 +26,12 @@ CTIME --- Convert a time into a string
 :samp:`{Syntax}:`
   =============================
   ``CALL CTIME(TIME, RESULT)``.
-  =============================
   ``RESULT = CTIME(TIME)``.
   =============================
 
 :samp:`{Arguments}:`
   ================  =================================================================
   :samp:`{TIME}`    The type shall be of type ``INTEGER``.
-  ================  =================================================================
   :samp:`{RESULT}`  The type shall be of type ``CHARACTER`` and
                     of default kind. It is an ``INTENT(OUT)`` argument. If the length
                     of this variable is too short for the time and date string to fit

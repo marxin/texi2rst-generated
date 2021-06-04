@@ -30,7 +30,6 @@ LTIME --- Convert time to local time info
   ================  ====================================================
   :samp:`{TIME}`    An ``INTEGER`` scalar expression
                     corresponding to a system time, with ``INTENT(IN)``.
-  ================  ====================================================
   :samp:`{VALUES}`  A default ``INTEGER`` array with 9 elements,
                     with ``INTENT(OUT)``.
   ================  ====================================================

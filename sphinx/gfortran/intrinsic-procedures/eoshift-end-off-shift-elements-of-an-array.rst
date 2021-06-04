@@ -22,7 +22,6 @@ EOSHIFT --- End-off shift elements of an array
 
   ==========================  ==========================================
   *Array Type*                *Boundary Value*
-  ==========================  ==========================================
   Numeric                     0 of the type and kind of :samp:`{ARRAY}`.
   Logical                     ``.FALSE.``.
   Character( :samp:`{len}` )  :samp:`{len}` blanks.
@@ -40,7 +39,6 @@ EOSHIFT --- End-off shift elements of an array
 :samp:`{Arguments}:`
   ==================  ==============================
   :samp:`{ARRAY}`     May be any type, not scalar.
-  ==================  ==============================
   :samp:`{SHIFT}`     The type shall be ``INTEGER``.
   :samp:`{BOUNDARY}`  Same type as :samp:`{ARRAY}`.
   :samp:`{DIM}`       The type shall be ``INTEGER``.

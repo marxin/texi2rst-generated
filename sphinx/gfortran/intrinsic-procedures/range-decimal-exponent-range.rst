@@ -25,7 +25,6 @@ RANGE --- Decimal exponent range
   :samp:`{X}`  Shall be of type ``INTEGER``, ``REAL``
                or ``COMPLEX``.
   ===========  ======================================
-  ===========  ======================================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER`` and of the default integer

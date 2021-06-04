@@ -24,7 +24,6 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
 :samp:`{Arguments}:`
   =================  ===============================================
   :samp:`{COARRAY}`  Coarray of any type.
-  =================  ===============================================
   :samp:`{SUB}`      default integer rank-1 array of a size equal to
                      the corank of :samp:`{COARRAY}`.
   =================  ===============================================

@@ -23,7 +23,6 @@ UCOBOUND --- Upper codimension bounds of an array
 :samp:`{Arguments}:`
   ===============  =======================================================
   :samp:`{ARRAY}`  Shall be an coarray, of any type.
-  ===============  =======================================================
   :samp:`{DIM}`    (Optional) Shall be a scalar ``INTEGER``.
   :samp:`{KIND}`   (Optional) An ``INTEGER`` initialization
                    expression indicating the kind parameter of the result.

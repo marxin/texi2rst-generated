@@ -23,7 +23,6 @@ MASKR --- Right justified mask
 :samp:`{Arguments}:`
   ==============  =============================================
   :samp:`{I}`     Shall be of type ``INTEGER``.
-  ==============  =============================================
   :samp:`{KIND}`  Shall be a scalar constant expression of type
                   ``INTEGER``.
   ==============  =============================================

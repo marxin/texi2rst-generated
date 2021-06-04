@@ -29,7 +29,6 @@ ATOMIC_OR --- Atomic bitwise OR operation
   ===============  ===================================================================
   :samp:`{ATOM}`   Scalar coarray or coindexed variable of integer
                    type with ``ATOMIC_INT_KIND`` kind.
-  ===============  ===================================================================
   :samp:`{VALUE}`  Scalar of the same type as :samp:`{ATOM}`. If the kind
                    is different, the value is converted to the kind of :samp:`{ATOM}`.
   :samp:`{STAT}`   (optional) Scalar default-kind integer variable.

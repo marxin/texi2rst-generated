@@ -34,7 +34,6 @@ COS --- Cosine function
   :samp:`{X}`  The type shall be ``REAL`` or
                ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`. The real part
@@ -53,7 +52,6 @@ COS --- Cosine function
 :samp:`{Specific names}:`
   ============  ================  ==============  ====================
   Name          Argument          Return type     Standard
-  ============  ================  ==============  ====================
   ``COS(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
   ``DCOS(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
   ``CCOS(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later

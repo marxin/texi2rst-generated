@@ -23,7 +23,6 @@ SLEEP --- Sleep for the specified number of seconds
   =================  =========================================
   :samp:`{SECONDS}`  The type shall be of default ``INTEGER``.
   =================  =========================================
-  =================  =========================================
 
 :samp:`{Example}:`
 

@@ -64,7 +64,6 @@ _gfortran_caf_init --- Initialiation function
   ==============  =======================================================
   :samp:`{argc}`  intent(inout) An integer pointer with the number of
                   arguments passed to the program or ``NULL``.
-  ==============  =======================================================
   :samp:`{argv}`  intent(inout) A pointer to an array of strings with the
                   command-line arguments or ``NULL``.
   ==============  =======================================================
@@ -119,7 +118,6 @@ _gfortran_caf_this_image --- Querying the image number
   :samp:`{distance}`  As specified for the ``this_image`` intrinsic
                       in TS18508.  Shall be a non-negative number.
   ==================  =============================================
-  ==================  =============================================
 
 .. envvar:: NOTES
 
@@ -148,7 +146,6 @@ _gfortran_caf_num_images --- Querying the maximal number of images
   ==================  =============================================
   :samp:`{distance}`  the distance from this image to the ancestor.
                       Shall be positive.
-  ==================  =============================================
   :samp:`{failed}`    shall be -1, 0, or 1
   ==================  =============================================
 
@@ -177,7 +174,6 @@ _gfortran_caf_image_status --- Query the status of an image
 :samp:`{Arguments}:`
   ===============  ========================================================
   :samp:`{image}`  the positive scalar id of the image in the current TEAM.
-  ===============  ========================================================
   :samp:`{team}`   optional; team on the which the inquiry is to be
                    performed.
   ===============  ========================================================
@@ -208,7 +204,6 @@ _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
   ===============  ==================================================
   :samp:`{team}`   optional; team on the which the inquiry is to be
                    performed.
-  ===============  ==================================================
   :samp:`{image}`  optional; the kind of the resulting integer array.
   ===============  ==================================================
 
@@ -238,7 +233,6 @@ _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped imag
   ===============  ==================================================
   :samp:`{team}`   optional; team on the which the inquiry is to be
                    performed.
-  ===============  ==================================================
   :samp:`{image}`  optional; the kind of the resulting integer array.
   ===============  ==================================================
 
@@ -292,7 +286,6 @@ _gfortran_caf_register --- Registering coarrays
   ====================  ==================================================================
   :samp:`{size}`        For normal coarrays, the byte size of the coarray to be
                         allocated; for lock types and event types, the number of elements.
-  ====================  ==================================================================
   :samp:`{type}`        one of the caf_register_t types.
   :samp:`{token}`       intent(out) An opaque pointer identifying the coarray.
   :samp:`{desc}`        intent(inout) The (pseudo) array descriptor.
@@ -345,7 +338,6 @@ _gfortran_caf_deregister --- Deregistering coarrays
 :samp:`{Arguments}:`
   ====================  =============================================================================
   :samp:`{token}`       the token to free.
-  ====================  =============================================================================
   :samp:`{type}`        the type of action to take for the coarray.  A
                         ``CAF_DEREGTYPE_COARRAY_DEALLOCATE_ONLY`` is allowed only for allocatable or
                         pointer components of derived type coarrays.  The action only deallocates the
@@ -380,7 +372,6 @@ _gfortran_caf_is_present --- Query whether an allocatable or pointer component i
 :samp:`{Arguments}:`
   =====================  ================================================================================
   :samp:`{token}`        An opaque pointer identifying the coarray.
-  =====================  ================================================================================
   :samp:`{image_index}`  The ID of the remote image; must be a positive
                          number.
   :samp:`{ref}`          A chain of references to address the allocatable or
@@ -407,7 +398,6 @@ _gfortran_caf_send --- Sending data from a local image to a remote image
 :samp:`{Arguments}:`
   =========================  ===================================================================================
   :samp:`{token}`            intent(in)  An opaque pointer identifying the coarray.
-  =========================  ===================================================================================
   :samp:`{offset}`           intent(in)  By which amount of bytes the actual data is
                              shifted compared to the base address of the coarray.
   :samp:`{image_index}`      intent(in)  The ID of the remote image; must be a
@@ -466,7 +456,6 @@ _gfortran_caf_get --- Getting data from a remote image
 :samp:`{Arguments}:`
   =========================  ===================================================================================
   :samp:`{token}`            intent(in)  An opaque pointer identifying the coarray.
-  =========================  ===================================================================================
   :samp:`{offset}`           intent(in)  By which amount of bytes the actual data is
                              shifted compared to the base address of the coarray.
   :samp:`{image_index}`      intent(in)  The ID of the remote image; must be a
@@ -527,7 +516,6 @@ _gfortran_caf_sendget --- Sending data between remote images
   =========================  ===================================================================================
   :samp:`{dst_token}`        intent(in)  An opaque pointer identifying the
                              destination coarray.
-  =========================  ===================================================================================
   :samp:`{dst_offset}`       intent(in)  By which amount of bytes the actual data
                              is shifted compared to the base address of the destination coarray.
   :samp:`{dst_image_index}`  intent(in)  The ID of the destination remote
@@ -594,7 +582,6 @@ _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image 
 :samp:`{Arguments}:`
   ===========================  ===================================================================================
   :samp:`{token}`              intent(in)  An opaque pointer identifying the coarray.
-  ===========================  ===================================================================================
   :samp:`{image_index}`        intent(in)  The ID of the remote image; must be a
                                positive number.
   :samp:`{src}`                intent(in) Array descriptor of the local array to be
@@ -657,7 +644,6 @@ _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced ref
 :samp:`{Arguments}:`
   ===========================  ===================================================================================
   :samp:`{token}`              intent(in)  An opaque pointer identifying the coarray.
-  ===========================  ===================================================================================
   :samp:`{image_index}`        intent(in)  The ID of the remote image; must be a
                                positive number.
   :samp:`{refs}`               intent(in) The references to apply to the remote structure
@@ -724,7 +710,6 @@ _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanc
   =========================  ===================================================================================
   :samp:`{dst_token}`        intent(in)  An opaque pointer identifying the
                              destination coarray.
-  =========================  ===================================================================================
   :samp:`{dst_image_index}`  intent(in)  The ID of the destination remote
                              image; must be a positive number.
   :samp:`{dst_refs}`         intent(in) The references on the remote array to store
@@ -799,7 +784,6 @@ _gfortran_caf_lock --- Locking a lock variable
 :samp:`{Arguments}:`
   =======================  ======================================================
   :samp:`{token}`          intent(in)  An opaque pointer identifying the coarray.
-  =======================  ======================================================
   :samp:`{index}`          intent(in)  Array index; first array index is 0.  For
                            scalars, it is always 0.
   :samp:`{image_index}`    intent(in)  The ID of the remote image; must be a
@@ -837,7 +821,6 @@ _gfortran_caf_lock --- Unlocking a lock variable
 :samp:`{Arguments}:`
   =====================  =======================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  =======================================================
   :samp:`{index}`        intent(in)  Array index; first array index is 0.  For
                          scalars, it is always 0.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -872,7 +855,6 @@ _gfortran_caf_event_post --- Post an event
 :samp:`{Arguments}:`
   =====================  ==============================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  ==============================================================================
   :samp:`{index}`        intent(in)  Array index; first array index is 0.  For
                          scalars, it is always 0.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -910,7 +892,6 @@ _gfortran_caf_event_wait --- Wait that an event occurred
 :samp:`{Arguments}:`
   =====================  ======================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  ======================================================
   :samp:`{index}`        intent(in)  Array index; first array index is 0.  For
                          scalars, it is always 0.
   :samp:`{until_count}`  intent(in)  The number of events which have to be
@@ -954,7 +935,6 @@ _gfortran_caf_event_query --- Query event count
 :samp:`{Arguments}:`
   =====================  =============================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  =============================================================================
   :samp:`{index}`        intent(in)  Array index; first array index is 0.  For
                          scalars, it is always 0.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -990,7 +970,6 @@ _gfortran_caf_sync_all --- All-image barrier
 :samp:`{Arguments}:`
   ====================  ======================================================
   :samp:`{stat}`        intent(out)  Stores the status STAT= and may be NULL.
-  ====================  ======================================================
   :samp:`{errmsg}`      intent(out)  When an error occurs, this will be set to
                         an error message; may be NULL.
   :samp:`{errmsg_len}`  intent(in)  the buffer size of errmsg
@@ -1019,7 +998,6 @@ _gfortran_caf_sync_images --- Barrier for selected images
   :samp:`{count}`       intent(in)  The number of images which are provided in
                         the next argument.  For a zero-sized array, the value is zero.  For
                         ``sync images (*)``, the value is -1.
-  ====================  ===================================================================
   :samp:`{images}`      intent(in)  An array with the images provided by the
                         user.  If :samp:`{count}` is zero, a NULL pointer is passed.
   :samp:`{stat}`        intent(out)  Stores the status STAT= and may be NULL.
@@ -1044,7 +1022,6 @@ _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
 :samp:`{Arguments}:`
   ====================  ======================================================
   :samp:`{stat}`        intent(out)  Stores the status STAT= and may be NULL.
-  ====================  ======================================================
   :samp:`{errmsg}`      intent(out)  When an error occurs, this will be set to
                         an error message; may be NULL.
   :samp:`{errmsg_len}`  intent(in)  the buffer size of errmsg
@@ -1071,7 +1048,6 @@ _gfortran_caf_error_stop --- Error termination with exit code
   ===============  =======================================
   :samp:`{error}`  intent(in)  The exit status to be used.
   ===============  =======================================
-  ===============  =======================================
   .. __gfortran_caf_error_stop_str:
 
 _gfortran_caf_error_stop_str --- Error termination with string
@@ -1089,7 +1065,6 @@ _gfortran_caf_error_stop_str --- Error termination with string
 :samp:`{Arguments}:`
   ================  ===================================================
   :samp:`{string}`  intent(in)  the error message (not zero terminated)
-  ================  ===================================================
   :samp:`{len}`     intent(in)  the length of the string
   ================  ===================================================
   .. __gfortran_caf_fail_image:
@@ -1127,7 +1102,6 @@ _gfortran_caf_atomic_define --- Atomic variable assignment
 :samp:`{Arguments}:`
   =====================  =========================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  =========================================================================
   :samp:`{offset}`       intent(in)  By which amount of bytes the actual data is
                          shifted compared to the base address of the coarray.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -1155,7 +1129,6 @@ _gfortran_caf_atomic_ref --- Atomic variable reference
 :samp:`{Arguments}:`
   =====================  =========================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  =========================================================================
   :samp:`{offset}`       intent(in)  By which amount of bytes the actual data is
                          shifted compared to the base address of the coarray.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -1187,7 +1160,6 @@ _gfortran_caf_atomic_cas --- Atomic compare and swap
 :samp:`{Arguments}:`
   =====================  =========================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
-  =====================  =========================================================================
   :samp:`{offset}`       intent(in)  By which amount of bytes the actual data is
                          shifted compared to the base address of the coarray.
   :samp:`{image_index}`  intent(in)  The ID of the remote image; must be a
@@ -1227,7 +1199,6 @@ _gfortran_caf_atomic_op --- Atomic operation
   :samp:`{op}`           intent(in)  the operation to be performed; possible values
                          ``GFC_CAF_ATOMIC_ADD`` (1), ``GFC_CAF_ATOMIC_AND`` (2),
                          ``GFC_CAF_ATOMIC_OR`` (3), ``GFC_CAF_ATOMIC_XOR`` (4).
-  =====================  =========================================================================
   :samp:`{token}`        intent(in)  An opaque pointer identifying the coarray.
   :samp:`{offset}`       intent(in)  By which amount of bytes the actual data is
                          shifted compared to the base address of the coarray.
@@ -1262,7 +1233,6 @@ _gfortran_caf_co_broadcast --- Sending data to all images
   ======================  ==========================================================================
   :samp:`{a}`             intent(inout)  An array descriptor with the data to be
                           broadcasted (on :samp:`{source_image}` ) or to be received (other images).
-  ======================  ==========================================================================
   :samp:`{source_image}`  intent(in)  The ID of the image from which the
                           data should be broadcasted.
   :samp:`{stat}`          intent(out)  Stores the status STAT= and may be NULL.
@@ -1292,7 +1262,6 @@ _gfortran_caf_co_max --- Collective maximum reduction
   ======================  ==============================================================================
   :samp:`{a}`             intent(inout)  An array descriptor for the data to be
                           processed.  On the destination image(s) the result overwrites the old content.
-  ======================  ==============================================================================
   :samp:`{result_image}`  intent(in)  The ID of the image to which the
                           reduced value should be copied to; if zero, it has to be copied to all images.
   :samp:`{stat}`          intent(out)  Stores the status STAT= and may be NULL.
@@ -1330,7 +1299,6 @@ _gfortran_caf_co_min --- Collective minimum reduction
   ======================  ==============================================================================
   :samp:`{a}`             intent(inout)  An array descriptor for the data to be
                           processed.  On the destination image(s) the result overwrites the old content.
-  ======================  ==============================================================================
   :samp:`{result_image}`  intent(in)  The ID of the image to which the
                           reduced value should be copied to; if zero, it has to be copied to all images.
   :samp:`{stat}`          intent(out)  Stores the status STAT= and may be NULL.
@@ -1367,7 +1335,6 @@ _gfortran_caf_co_sum --- Collective summing reduction
   ======================  ==============================================================================
   :samp:`{a}`             intent(inout)  An array descriptor with the data to be
                           processed.  On the destination image(s) the result overwrites the old content.
-  ======================  ==============================================================================
   :samp:`{result_image}`  intent(in)  The ID of the image to which the
                           reduced value should be copied to; if zero, it has to be copied to all images.
   :samp:`{stat}`          intent(out)  Stores the status STAT= and may be NULL.
@@ -1412,7 +1379,6 @@ _gfortran_caf_co_reduce --- Generic collective reduction
   ======================  ==============================================================================
   :samp:`{a}`             intent(inout)  An array descriptor with the data to be
                           processed.  On the destination image(s) the result overwrites the old content.
-  ======================  ==============================================================================
   :samp:`{opr}`           intent(in)  Function pointer to the reduction function
   :samp:`{opr_flags}`     intent(in)  Flags regarding the reduction function
   :samp:`{result_image}`  intent(in)  The ID of the image to which the

@@ -33,7 +33,6 @@ MIN --- Minimum value of an argument list
   ===============================  =======================================================================
   :samp:`{A1}`                     The type shall be ``INTEGER`` or
                                    ``REAL``.
-  ===============================  =======================================================================
   :samp:`{A2}`, :samp:`{A3}`, ...  An expression of the same type and kind
                                    as :samp:`{A1}`.  (As a GNU extension, arguments of different kinds are
                                    permitted.)
@@ -46,7 +45,6 @@ MIN --- Minimum value of an argument list
 :samp:`{Specific names}:`
   =============  =================  ==============  ====================
   Name           Argument           Return type     Standard
-  =============  =================  ==============  ====================
   ``MIN0(A1)``   ``INTEGER(4) A1``  ``INTEGER(4)``  Fortran 77 and later
   ``AMIN0(A1)``  ``INTEGER(4) A1``  ``REAL(4)``     Fortran 77 and later
   ``MIN1(A1)``   ``REAL A1``        ``INTEGER(4)``  Fortran 77 and later

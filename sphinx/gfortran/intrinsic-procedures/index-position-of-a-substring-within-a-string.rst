@@ -29,7 +29,6 @@ INDEX --- Position of a substring within a string
   ===================  =======================================================
   :samp:`{STRING}`     Shall be a scalar ``CHARACTER``, with
                        ``INTENT(IN)``
-  ===================  =======================================================
   :samp:`{SUBSTRING}`  Shall be a scalar ``CHARACTER``, with
                        ``INTENT(IN)``
   :samp:`{BACK}`       (Optional) Shall be a scalar ``LOGICAL``, with
@@ -45,7 +44,6 @@ INDEX --- Position of a substring within a string
 :samp:`{Specific names}:`
   ============================  =============  ==============  ====================
   Name                          Argument       Return type     Standard
-  ============================  =============  ==============  ====================
   ``INDEX(STRING, SUBSTRING)``  ``CHARACTER``  ``INTEGER(4)``  Fortran 77 and later
   ============================  =============  ==============  ====================
 

@@ -46,7 +46,6 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
 :samp:`{Arguments}:`
   ==================  ==================================================
   :samp:`{COMMAND}`   Shall be a default ``CHARACTER`` scalar.
-  ==================  ==================================================
   :samp:`{WAIT}`      (Optional) Shall be a default ``LOGICAL`` scalar.
   :samp:`{EXITSTAT}`  (Optional) Shall be an ``INTEGER`` of the
                       default kind.

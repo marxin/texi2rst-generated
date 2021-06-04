@@ -32,7 +32,6 @@ RAND --- Real pseudo-random number
   ===========  ========================================
   :samp:`{I}`  Shall be a scalar ``INTEGER`` of kind 4.
   ===========  ========================================
-  ===========  ========================================
 
 :samp:`{Return value}:`
   The return value is of ``REAL`` type and the default kind.

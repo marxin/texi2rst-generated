@@ -32,7 +32,6 @@ ATOMIC_CAS --- Atomic compare and swap
   :samp:`{ATOM}`     Scalar coarray or coindexed variable of either integer
                      type with ``ATOMIC_INT_KIND`` kind or logical type with
                      ``ATOMIC_LOGICAL_KIND`` kind.
-  =================  ===================================================================
   :samp:`{OLD}`      Scalar of the same type and kind as :samp:`{ATOM}`.
   :samp:`{COMPARE}`  Scalar variable of the same type and kind as
                      :samp:`{ATOM}`.

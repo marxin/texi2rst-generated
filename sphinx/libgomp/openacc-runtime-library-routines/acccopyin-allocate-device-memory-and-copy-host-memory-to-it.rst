@@ -15,14 +15,12 @@ Description
 :samp:`{C/C++}:`
   ============  =============================================================
   *Prototype*:  ``void *acc_copyin(h_void *a, size_t len);``
-  ============  =============================================================
   *Prototype*:  ``void *acc_copyin_async(h_void *a, size_t len, int async);``
   ============  =============================================================
 
 :samp:`{Fortran}:`
   ============  ==============================================
   *Interface*:  ``subroutine acc_copyin(a)``
-  ============  ==============================================
                 ``type, dimension(:[,:]...) :: a``
   *Interface*:  ``subroutine acc_copyin(a, len)``
                 ``type, dimension(:[,:]...) :: a``

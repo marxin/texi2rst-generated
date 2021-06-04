@@ -26,7 +26,6 @@ EXPONENT --- Exponent function
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type default ``INTEGER``.

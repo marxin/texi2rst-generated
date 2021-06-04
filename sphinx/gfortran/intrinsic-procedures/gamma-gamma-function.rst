@@ -30,7 +30,6 @@ GAMMA --- Gamma function
   :samp:`{X}`  Shall be of type ``REAL`` and neither zero
                nor a negative integer.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
@@ -47,7 +46,6 @@ GAMMA --- Gamma function
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``DGAMMA(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============
 

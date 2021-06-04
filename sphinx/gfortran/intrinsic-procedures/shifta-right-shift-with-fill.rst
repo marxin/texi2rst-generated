@@ -30,7 +30,6 @@ SHIFTA --- Right shift with fill
 :samp:`{Arguments}:`
   ===============  ==============================
   :samp:`{I}`      The type shall be ``INTEGER``.
-  ===============  ==============================
   :samp:`{SHIFT}`  The type shall be ``INTEGER``.
   ===============  ==============================
 

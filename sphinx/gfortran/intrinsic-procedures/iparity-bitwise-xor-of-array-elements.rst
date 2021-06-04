@@ -24,14 +24,12 @@ IPARITY --- Bitwise XOR of array elements
 :samp:`{Syntax}:`
   ========================================
   ``RESULT = IPARITY(ARRAY[, MASK])``
-  ========================================
   ``RESULT = IPARITY(ARRAY, DIM[, MASK])``
   ========================================
 
 :samp:`{Arguments}:`
   ===============  ========================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``
-  ===============  ========================================================================
   :samp:`{DIM}`    (Optional) shall be a scalar of type 
                    ``INTEGER`` with a value in the range from 1 to n, where n 
                    equals the rank of :samp:`{ARRAY}`.

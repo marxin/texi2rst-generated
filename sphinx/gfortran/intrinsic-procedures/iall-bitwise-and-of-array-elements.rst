@@ -22,14 +22,12 @@ IALL --- Bitwise AND of array elements
 :samp:`{Syntax}:`
   =====================================
   ``RESULT = IALL(ARRAY[, MASK])``
-  =====================================
   ``RESULT = IALL(ARRAY, DIM[, MASK])``
   =====================================
 
 :samp:`{Arguments}:`
   ===============  ========================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``
-  ===============  ========================================================================
   :samp:`{DIM}`    (Optional) shall be a scalar of type 
                    ``INTEGER`` with a value in the range from 1 to n, where n 
                    equals the rank of :samp:`{ARRAY}`.

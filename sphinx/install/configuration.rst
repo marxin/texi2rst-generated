@@ -629,7 +629,6 @@ corresponding :option:`--without` option.
 
     ===================  =========================  =======================
     Option               aprofile                   rmprofile
-    ===================  =========================  =======================
     ISAs                 ``-marm`` and ``-mthumb``  ``-mthumb``
     Architectures        default architecture       default architecture
 

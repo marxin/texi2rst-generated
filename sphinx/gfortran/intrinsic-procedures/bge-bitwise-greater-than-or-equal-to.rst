@@ -23,7 +23,6 @@ BGE --- Bitwise greater than or equal to
 :samp:`{Arguments}:`
   ===========  ==================================================
   :samp:`{I}`  Shall be of ``INTEGER`` type.
-  ===========  ==================================================
   :samp:`{J}`  Shall be of ``INTEGER`` type, and of the same kind
                as :samp:`{I}`.
   ===========  ==================================================

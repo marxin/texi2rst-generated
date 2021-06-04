@@ -33,7 +33,6 @@ IRAND --- Integer pseudo-random number
   ===========  ========================================
   :samp:`{I}`  Shall be a scalar ``INTEGER`` of kind 4.
   ===========  ========================================
-  ===========  ========================================
 
 :samp:`{Return value}:`
   The return value is of ``INTEGER(kind=4)`` type.

@@ -24,7 +24,6 @@ SHAPE --- Determine the shape of an array
   :samp:`{SOURCE}`  Shall be an array or scalar of any type. 
                     If :samp:`{SOURCE}` is a pointer it must be associated and allocatable 
                     arrays must be allocated.
-  ================  =======================================================================
   :samp:`{KIND}`    (Optional) An ``INTEGER`` initialization
                     expression indicating the kind parameter of the result.
   ================  =======================================================================

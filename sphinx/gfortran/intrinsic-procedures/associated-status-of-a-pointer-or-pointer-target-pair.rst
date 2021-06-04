@@ -26,7 +26,6 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
   =================  ===============================================================
   :samp:`{POINTER}`  :samp:`{POINTER}` shall have the ``POINTER`` attribute
                      and it can be of any type.
-  =================  ===============================================================
   :samp:`{TARGET}`   (Optional) :samp:`{TARGET}` shall be a pointer or
                      a target.  It must have the same type, kind type parameter, and
                      array rank as :samp:`{POINTER}`.

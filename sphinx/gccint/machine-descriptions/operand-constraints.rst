@@ -362,7 +362,6 @@ each :samp:`>` with :samp:`_g`.  Here are some examples:
 =========  ============
 Original   Mangled  
            ..  c
-=========  ============
 ``x``      ``x``       
            ..  c
 ``P42x``   ``P42x``    

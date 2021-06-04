@@ -26,7 +26,6 @@ COMPLEX --- Complex conversion function
 :samp:`{Arguments}:`
   ===========  ========================================
   :samp:`{X}`  The type may be ``INTEGER`` or ``REAL``.
-  ===========  ========================================
   :samp:`{Y}`  The type may be ``INTEGER`` or ``REAL``.
   ===========  ========================================
 

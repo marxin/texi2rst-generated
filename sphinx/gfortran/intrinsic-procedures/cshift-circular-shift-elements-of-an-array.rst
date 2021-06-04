@@ -33,7 +33,6 @@ CSHIFT --- Circular shift elements of an array
 :samp:`{Arguments}:`
   ===============  ==============================
   :samp:`{ARRAY}`  Shall be an array of any type.
-  ===============  ==============================
   :samp:`{SHIFT}`  The type shall be ``INTEGER``.
   :samp:`{DIM}`    The type shall be ``INTEGER``.
   ===============  ==============================

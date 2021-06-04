@@ -30,14 +30,12 @@ SYMLNK --- Create a symbolic link
 :samp:`{Syntax}:`
   ========================================
   ``CALL SYMLNK(PATH1, PATH2 [, STATUS])``
-  ========================================
   ``STATUS = SYMLNK(PATH1, PATH2)``
   ========================================
 
 :samp:`{Arguments}:`
   ================  ================================================
   :samp:`{PATH1}`   Shall be of default ``CHARACTER`` type.
-  ================  ================================================
   :samp:`{PATH2}`   Shall be of default ``CHARACTER`` type.
   :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
   ================  ================================================

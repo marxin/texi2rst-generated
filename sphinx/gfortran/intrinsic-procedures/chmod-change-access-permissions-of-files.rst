@@ -22,7 +22,6 @@ CHMOD --- Change access permissions of files
 :samp:`{Syntax}:`
   ====================================
   ``CALL CHMOD(NAME, MODE[, STATUS])``
-  ====================================
   ``STATUS = CHMOD(NAME, MODE)``
   ====================================
 
@@ -32,7 +31,6 @@ CHMOD --- Change access permissions of files
                     file name. Trailing blanks are ignored unless the character
                     ``achar(0)`` is present, then all characters up to and excluding
                     ``achar(0)`` are used as the file name.
-  ================  =============================================================================
   :samp:`{MODE}`    Scalar ``CHARACTER`` of default kind giving the
                     file permission. :samp:`{MODE}` uses the same syntax as the ``chmod`` utility
                     as defined by the POSIX standard. The argument shall either be a string of

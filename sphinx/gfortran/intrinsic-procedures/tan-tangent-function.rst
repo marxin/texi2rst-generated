@@ -27,7 +27,6 @@ TAN --- Tangent function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`, and its value is in radians.
@@ -44,7 +43,6 @@ TAN --- Tangent function
 :samp:`{Specific names}:`
   ===========  =============  ===========  ====================
   Name         Argument       Return type  Standard
-  ===========  =============  ===========  ====================
   ``TAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
   ``DTAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
   ===========  =============  ===========  ====================

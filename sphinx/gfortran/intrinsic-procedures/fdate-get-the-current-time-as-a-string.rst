@@ -30,7 +30,6 @@ FDATE --- Get the current time as a string
 :samp:`{Syntax}:`
   =====================
   ``CALL FDATE(DATE)``.
-  =====================
   ``DATE = FDATE()``.
   =====================
 
@@ -40,7 +39,6 @@ FDATE --- Get the current time as a string
                   default kind. It is an ``INTENT(OUT)`` argument.  If the length of
                   this variable is too short for the date and time string to fit
                   completely, it will be blank on procedure return.
-  ==============  ==================================================================
   ==============  ==================================================================
 
 :samp:`{Return value}:`

@@ -26,7 +26,6 @@ Furthermore, if ``__float128`` is supported in C, the named constants
 
 =============  =========================  ===================================  =========
 Fortran Type   Named constant             C type                               Extension
-=============  =========================  ===================================  =========
 ``INTEGER``    ``C_INT``                  ``int``
 ``INTEGER``    ``C_SHORT``                ``short int``
 ``INTEGER``    ``C_LONG``                 ``long int``
@@ -67,7 +66,6 @@ are defined.
 
 =====================  ===============  ========
 Name                   C definition     Value
-=====================  ===============  ========
 ``C_NULL_CHAR``        null character   ``'\0'``
 ``C_ALERT``            alert            ``'\a'``
 ``C_BACKSPACE``        backspace        ``'\b'``
@@ -81,7 +79,6 @@ Moreover, the following two named constants are defined:
 
 =================  ============
 Name               Type
-=================  ============
 ``C_NULL_PTR``     ``C_PTR``
 ``C_NULL_FUNPTR``  ``C_FUNPTR``
 =================  ============

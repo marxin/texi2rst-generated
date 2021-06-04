@@ -31,7 +31,6 @@ LOG10 --- Base 10 logarithm function
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` or ``COMPLEX``.
@@ -49,7 +48,6 @@ LOG10 --- Base 10 logarithm function
 :samp:`{Specific names}:`
   =============  =============  ===========  ====================
   Name           Argument       Return type  Standard
-  =============  =============  ===========  ====================
   ``ALOG10(X)``  ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
   ``DLOG10(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
   =============  =============  ===========  ====================

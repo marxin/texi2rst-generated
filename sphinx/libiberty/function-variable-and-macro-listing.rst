@@ -603,7 +603,6 @@ those provided by ctype.h:
 
   ==========  ================================
   ``ALPHA``   A-Za-z
-  ==========  ================================
   ``ALNUM``   A-Za-z0-9
   ``BLANK``   space tab
   ``CNTRL``   ``!PRINT``
@@ -647,7 +646,6 @@ sets of characters:
 
 ================  ==============================
 ``IDNUM``         A-Za-z0-9_
-================  ==============================
 ``IDST``          A-Za-z_
 ``VSPACE``        \r \n
 ``NVSPACE``       space tab \f \v \0

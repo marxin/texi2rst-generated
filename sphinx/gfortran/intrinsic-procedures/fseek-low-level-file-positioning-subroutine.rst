@@ -49,7 +49,6 @@ FSEEK --- Low level file positioning subroutine
 :samp:`{Arguments}:`
   ================  ======================================
   :samp:`{UNIT}`    Shall be a scalar of type ``INTEGER``.
-  ================  ======================================
   :samp:`{OFFSET}`  Shall be a scalar of type ``INTEGER``.
   :samp:`{WHENCE}`  Shall be a scalar of type ``INTEGER``.
                     Its value shall be either 0, 1 or 2.

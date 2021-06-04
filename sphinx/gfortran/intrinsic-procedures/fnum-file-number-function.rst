@@ -24,7 +24,6 @@ FNUM --- File number function
   ==============  ==============================
   :samp:`{UNIT}`  The type shall be ``INTEGER``.
   ==============  ==============================
-  ==============  ==============================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER``

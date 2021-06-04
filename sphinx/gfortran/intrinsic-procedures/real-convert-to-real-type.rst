@@ -37,7 +37,6 @@ REAL --- Convert to real type
 :samp:`{Syntax}:`
   =============================
   ``RESULT = REAL(A [, KIND])``
-  =============================
   ``RESULT = REALPART(Z)``
   =============================
 
@@ -45,7 +44,6 @@ REAL --- Convert to real type
   ==============  =======================================================
   :samp:`{A}`     Shall be ``INTEGER``, ``REAL``, or
                   ``COMPLEX``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================
@@ -79,7 +77,6 @@ REAL --- Convert to real type
 :samp:`{Specific names}:`
   =============  ==============  ===========  =============
   Name           Argument        Return type  Standard
-  =============  ==============  ===========  =============
   ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension
   ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
   ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension

@@ -37,7 +37,6 @@ SIND --- Sine function, degrees
   :samp:`{X}`  The type shall be ``REAL`` or
                ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
@@ -54,7 +53,6 @@ SIND --- Sine function, degrees
 :samp:`{Specific names}:`
   =============  ================  ==============  =============
   Name           Argument          Return type     Standard
-  =============  ================  ==============  =============
   ``SIND(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
   ``DSIND(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
   ``CSIND(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension
