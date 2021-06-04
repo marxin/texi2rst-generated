@@ -24,7 +24,6 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
   ==============  ==========================================================
   :samp:`{CPTR}`  scalar of the type ``C_FUNPTR``. It is
                   ``INTENT(IN)``.
-  ==============  ==========================================================
   :samp:`{FPTR}`  procedure pointer interoperable with :samp:`{cptr}`. It is
                   ``INTENT(OUT)``.
   ==============  ==========================================================

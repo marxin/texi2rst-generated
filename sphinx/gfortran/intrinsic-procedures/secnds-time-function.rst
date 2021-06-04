@@ -27,7 +27,6 @@ SECNDS --- Time function
 :samp:`{Arguments}:`
   ===========  =============================
   :samp:`{T}`  Shall be of type ``REAL(4)``.
-  ===========  =============================
   :samp:`{X}`  Shall be of type ``REAL(4)``.
   ===========  =============================
 

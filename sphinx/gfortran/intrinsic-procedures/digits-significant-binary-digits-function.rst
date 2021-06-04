@@ -25,7 +25,6 @@ DIGITS --- Significant binary digits function
   ===========  ========================================
   :samp:`{X}`  The type may be ``INTEGER`` or ``REAL``.
   ===========  ========================================
-  ===========  ========================================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER``.

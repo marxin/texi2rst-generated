@@ -25,7 +25,6 @@ GET_COMMAND --- Get the entire command line
   =================  ==============================================
   :samp:`{COMMAND}`  (Optional) shall be of type ``CHARACTER`` and
                      of default kind.
-  =================  ==============================================
   :samp:`{LENGTH}`   (Optional) Shall be of type ``INTEGER`` and of
                      default kind.
   :samp:`{STATUS}`   (Optional) Shall be of type ``INTEGER`` and of

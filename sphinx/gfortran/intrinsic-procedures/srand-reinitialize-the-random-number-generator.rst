@@ -27,7 +27,6 @@ SRAND --- Reinitialize the random number generator
   ==============  ======================================
   :samp:`{SEED}`  Shall be a scalar ``INTEGER(kind=4)``.
   ==============  ======================================
-  ==============  ======================================
 
 :samp:`{Return value}:`
   Does not return anything.

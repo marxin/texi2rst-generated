@@ -33,7 +33,6 @@ IOR --- Bitwise logical or
 :samp:`{Arguments}:`
   ===========  ====================================================================
   :samp:`{I}`  The type shall be ``INTEGER`` or a boz-literal-constant.
-  ===========  ====================================================================
   :samp:`{J}`  The type shall be ``INTEGER`` with the same
                kind type parameter as :samp:`{I}` or a boz-literal-constant.
                :samp:`{I}` and :samp:`{J}` shall not both be boz-literal-constants.
@@ -48,7 +47,6 @@ IOR --- Bitwise logical or
 :samp:`{Specific names}:`
   ===========  ================  ==============  ====================
   Name         Argument          Return type     Standard
-  ===========  ================  ==============  ====================
   ``IOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
   ``BIOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
   ``IIOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

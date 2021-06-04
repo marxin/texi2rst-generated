@@ -22,7 +22,6 @@ LOGICAL --- Convert to logical type
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{L}`     The type shall be ``LOGICAL``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================

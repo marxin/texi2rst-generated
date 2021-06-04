@@ -34,7 +34,6 @@ SIN --- Sine function
   :samp:`{X}`  The type shall be ``REAL`` or
                ``COMPLEX``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`.
@@ -51,7 +50,6 @@ SIN --- Sine function
 :samp:`{Specific names}:`
   ============  ================  ==============  ====================
   Name          Argument          Return type     Standard
-  ============  ================  ==============  ====================
   ``SIN(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
   ``DSIN(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
   ``CSIN(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later

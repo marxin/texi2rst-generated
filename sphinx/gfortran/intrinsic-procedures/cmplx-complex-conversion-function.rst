@@ -28,7 +28,6 @@ CMPLX --- Complex conversion function
   ==============  =======================================================
   :samp:`{X}`     The type may be ``INTEGER``, ``REAL``,
                   or ``COMPLEX``.
-  ==============  =======================================================
   :samp:`{Y}`     (Optional; only allowed if :samp:`{X}` is not
                   ``COMPLEX``.)  May be ``INTEGER`` or ``REAL``.
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization

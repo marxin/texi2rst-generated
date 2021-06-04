@@ -27,7 +27,6 @@ BIT_SIZE --- Bit size inquiry function
   ===========  ==============================
   :samp:`{I}`  The type shall be ``INTEGER``.
   ===========  ==============================
-  ===========  ==============================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER``

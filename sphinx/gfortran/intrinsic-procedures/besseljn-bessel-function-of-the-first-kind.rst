@@ -30,14 +30,12 @@ BESSEL_JN --- Bessel function of the first kind
 :samp:`{Syntax}:`
   =================================
   ``RESULT = BESSEL_JN(N, X)``
-  =================================
   ``RESULT = BESSEL_JN(N1, N2, X)``
   =================================
 
 :samp:`{Arguments}:`
   ============  ====================================================
   :samp:`{N}`   Shall be a scalar or an array of type  ``INTEGER``.
-  ============  ====================================================
   :samp:`{N1}`  Shall be a non-negative scalar of type  ``INTEGER``.
   :samp:`{N2}`  Shall be a non-negative scalar of type  ``INTEGER``.
   :samp:`{X}`   Shall be a scalar or an array of type  ``REAL`` ;
@@ -65,7 +63,6 @@ BESSEL_JN --- Bessel function of the first kind
 :samp:`{Specific names}:`
   ================  =============  ===========  =============
   Name              Argument       Return type  Standard
-  ================  =============  ===========  =============
   ``DBESJN(N, X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
                     ``REAL(8) X``
   ================  =============  ===========  =============

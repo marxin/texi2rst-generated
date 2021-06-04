@@ -25,7 +25,6 @@ ICHAR --- Character-to-integer conversion function
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{C}`     Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================
@@ -46,7 +45,6 @@ ICHAR --- Character-to-integer conversion function
 :samp:`{Specific names}:`
   ============  ===============  ==============  ====================
   Name          Argument         Return type     Standard
-  ============  ===============  ==============  ====================
   ``ICHAR(C)``  ``CHARACTER C``  ``INTEGER(4)``  Fortran 77 and later
   ============  ===============  ==============  ====================
 

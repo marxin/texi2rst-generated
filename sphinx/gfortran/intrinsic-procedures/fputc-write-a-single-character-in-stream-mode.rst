@@ -33,14 +33,12 @@ FPUTC --- Write a single character in stream mode
 :samp:`{Syntax}:`
   ==================================
   ``CALL FPUTC(UNIT, C [, STATUS])``
-  ==================================
   ``STATUS = FPUTC(UNIT, C)``
   ==================================
 
 :samp:`{Arguments}:`
   ================  ======================================================================
   :samp:`{UNIT}`    The type shall be ``INTEGER``.
-  ================  ======================================================================
   :samp:`{C}`       The type shall be ``CHARACTER`` and of default
                     kind.
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER``.

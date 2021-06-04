@@ -21,7 +21,6 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
   ==============  =================================================
   :samp:`{A}`     Shall be an object of extensible declared type or
                   unlimited polymorphic.
-  ==============  =================================================
   :samp:`{MOLD}`  Shall be an object of extensible declared type or
                   unlimited polymorphic.
   ==============  =================================================

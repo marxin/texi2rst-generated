@@ -28,7 +28,6 @@ MAXVAL --- Maximum value of an array
 :samp:`{Syntax}:`
   ========================================
   ``RESULT = MAXVAL(ARRAY, DIM [, MASK])``
-  ========================================
   ``RESULT = MAXVAL(ARRAY [, MASK])``
   ========================================
 
@@ -36,7 +35,6 @@ MAXVAL --- Maximum value of an array
   ===============  ======================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER`` or
                    ``REAL``.
-  ===============  ======================================================================
   :samp:`{DIM}`    (Optional) Shall be a scalar of type
                    ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
                    inclusive.  It may not be an optional dummy argument.

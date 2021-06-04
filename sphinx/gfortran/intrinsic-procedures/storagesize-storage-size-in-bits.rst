@@ -22,7 +22,6 @@ STORAGE_SIZE --- Storage size in bits
 :samp:`{Arguments}:`
   ==============  =========================================================
   :samp:`{A}`     Shall be a scalar or array of any type.
-  ==============  =========================================================
   :samp:`{KIND}`  (Optional) shall be a scalar integer constant expression.
   ==============  =========================================================
 

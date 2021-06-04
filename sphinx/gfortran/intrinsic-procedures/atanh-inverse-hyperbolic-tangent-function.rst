@@ -31,7 +31,6 @@ ATANH --- Inverse hyperbolic tangent function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`. If :samp:`{X}` is
@@ -50,7 +49,6 @@ ATANH --- Inverse hyperbolic tangent function
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``DATANH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============
 

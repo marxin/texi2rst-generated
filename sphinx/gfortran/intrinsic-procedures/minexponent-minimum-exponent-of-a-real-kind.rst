@@ -24,7 +24,6 @@ MINEXPONENT --- Minimum exponent of a real kind
   ===========  ==========================
   :samp:`{X}`  Shall be of type ``REAL``.
   ===========  ==========================
-  ===========  ==========================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER`` and of the default integer

@@ -25,7 +25,6 @@ ACHAR --- Character in ASCII collating sequence
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{I}`     The type shall be ``INTEGER``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================

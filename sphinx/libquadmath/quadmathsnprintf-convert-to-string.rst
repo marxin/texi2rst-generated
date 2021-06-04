@@ -17,7 +17,6 @@ Syntax
 :samp:`{Arguments}:`
   ================  ==============================================
   :samp:`{s}`       output string
-  ================  ==============================================
   :samp:`{size}`    byte size of the string, including tailing NUL
   :samp:`{format}`  conversion specifier string
   ================  ==============================================

@@ -24,7 +24,6 @@ NINT --- Nearest whole number
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{A}`     The type of the argument shall be ``REAL``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================
@@ -49,7 +48,6 @@ NINT --- Nearest whole number
 :samp:`{Specific names}:`
   =============  =============  ===========  ====================
   Name           Argument       Return Type  Standard
-  =============  =============  ===========  ====================
   ``NINT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
   ``IDNINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later
   =============  =============  ===========  ====================

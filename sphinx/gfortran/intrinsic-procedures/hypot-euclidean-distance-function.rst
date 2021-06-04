@@ -23,7 +23,6 @@ HYPOT --- Euclidean distance function
 :samp:`{Arguments}:`
   ===========  =====================================================
   :samp:`{X}`  The type shall be ``REAL``.
-  ===========  =====================================================
   :samp:`{Y}`  The type and kind type parameter shall be the same as
                :samp:`{X}`.
   ===========  =====================================================

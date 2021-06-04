@@ -25,7 +25,6 @@ NEAREST --- Nearest representable number
 :samp:`{Arguments}:`
   ===========  =============================
   :samp:`{X}`  Shall be of type ``REAL``.
-  ===========  =============================
   :samp:`{S}`  Shall be of type ``REAL`` and
                not equal to zero.
   ===========  =============================

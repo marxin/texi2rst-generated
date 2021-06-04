@@ -23,7 +23,6 @@ ERF --- Error function
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL``, of the same kind as
@@ -41,6 +40,5 @@ ERF --- Error function
 :samp:`{Specific names}:`
   ===========  =============  ===========  =============
   Name         Argument       Return type  Standard
-  ===========  =============  ===========  =============
   ``DERF(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   ===========  =============  ===========  =============

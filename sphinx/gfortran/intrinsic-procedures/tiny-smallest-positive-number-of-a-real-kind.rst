@@ -26,7 +26,6 @@ TINY --- Smallest positive number of a real kind
   ===========  ==========================
   :samp:`{X}`  Shall be of type ``REAL``.
   ===========  ==========================
-  ===========  ==========================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`

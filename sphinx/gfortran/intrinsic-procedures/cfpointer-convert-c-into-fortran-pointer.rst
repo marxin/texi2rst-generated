@@ -24,7 +24,6 @@ C_F_POINTER --- Convert C into Fortran pointer
   ===============  ===================================================
   :samp:`{CPTR}`   scalar of the type ``C_PTR``. It is
                    ``INTENT(IN)``.
-  ===============  ===================================================
   :samp:`{FPTR}`   pointer interoperable with :samp:`{cptr}`. It is
                    ``INTENT(OUT)``.
   :samp:`{SHAPE}`  (Optional) Rank-one array of type ``INTEGER``

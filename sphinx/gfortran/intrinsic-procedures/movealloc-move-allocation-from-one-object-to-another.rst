@@ -26,7 +26,6 @@ MOVE_ALLOC --- Move allocation from one object to another
   ==============  ==================================================
   :samp:`{FROM}`  ``ALLOCATABLE``, ``INTENT(INOUT)``, may be
                   of any type and kind.
-  ==============  ==================================================
   :samp:`{TO}`    ``ALLOCATABLE``, ``INTENT(OUT)``, shall be
                   of the same type, kind and rank as :samp:`{FROM}`.
   ==============  ==================================================

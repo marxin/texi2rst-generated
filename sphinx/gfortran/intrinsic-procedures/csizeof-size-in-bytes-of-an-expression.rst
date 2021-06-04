@@ -26,7 +26,6 @@ C_SIZEOF --- Size in bytes of an expression
   ===========  ===================================================
   :samp:`{X}`  The argument shall be an interoperable data entity.
   ===========  ===================================================
-  ===========  ===================================================
 
 :samp:`{Return value}:`
   The return value is of type integer and of the system-dependent kind

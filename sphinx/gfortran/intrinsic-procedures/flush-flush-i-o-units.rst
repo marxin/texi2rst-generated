@@ -24,7 +24,6 @@ FLUSH --- Flush I/O unit(s)
   ==============  =========================================
   :samp:`{UNIT}`  (Optional) The type shall be ``INTEGER``.
   ==============  =========================================
-  ==============  =========================================
 
 :samp:`{Note}:`
   Beginning with the Fortran 2003 standard, there is a ``FLUSH``

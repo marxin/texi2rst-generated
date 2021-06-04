@@ -25,14 +25,12 @@ FSTAT --- Get file status
 :samp:`{Syntax}:`
   =======================================
   ``CALL FSTAT(UNIT, VALUES [, STATUS])``
-  =======================================
   ``STATUS = FSTAT(UNIT, VALUES)``
   =======================================
 
 :samp:`{Arguments}:`
   ================  =========================================================
   :samp:`{UNIT}`    An open I/O unit number of type ``INTEGER``.
-  ================  =========================================================
   :samp:`{VALUES}`  The type shall be ``INTEGER(4), DIMENSION(13)``.
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER(4)``. Returns 0 
                     on success and a system specific error code otherwise.

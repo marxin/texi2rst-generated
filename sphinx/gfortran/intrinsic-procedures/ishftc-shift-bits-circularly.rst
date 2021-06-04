@@ -37,7 +37,6 @@ ISHFTC --- Shift bits circularly
 :samp:`{Arguments}:`
   ===============  =============================================================
   :samp:`{I}`      The type shall be ``INTEGER``.
-  ===============  =============================================================
   :samp:`{SHIFT}`  The type shall be ``INTEGER``.
   :samp:`{SIZE}`   (Optional) The type shall be ``INTEGER`` ;
                    the value must be greater than zero and less than or equal to
@@ -51,7 +50,6 @@ ISHFTC --- Shift bits circularly
 :samp:`{Specific names}:`
   ==============  ================  ==============  ====================
   Name            Argument          Return type     Standard
-  ==============  ================  ==============  ====================
   ``ISHFTC(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
   ``BSHFTC(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
   ``IISHFTC(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

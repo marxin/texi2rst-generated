@@ -26,14 +26,12 @@ SIGNAL --- Signal handling subroutine (or function)
 :samp:`{Syntax}:`
   ===========================================
   ``CALL SIGNAL(NUMBER, HANDLER [, STATUS])``
-  ===========================================
   ``STATUS = SIGNAL(NUMBER, HANDLER)``
   ===========================================
 
 :samp:`{Arguments}:`
   =================  ====================================================
   :samp:`{NUMBER}`   Shall be a scalar integer, with ``INTENT(IN)``
-  =================  ====================================================
   :samp:`{HANDLER}`  Signal handler ( ``INTEGER FUNCTION`` or
                      ``SUBROUTINE`` ) or dummy/global ``INTEGER`` scalar.
                      ``INTEGER``. It is ``INTENT(IN)``.

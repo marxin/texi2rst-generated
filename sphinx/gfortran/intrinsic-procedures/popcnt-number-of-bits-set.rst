@@ -26,7 +26,6 @@ POPCNT --- Number of bits set
   ===========  =============================
   :samp:`{I}`  Shall be of type ``INTEGER``.
   ===========  =============================
-  ===========  =============================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER`` and of the default integer

@@ -30,7 +30,6 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
   ===============  ===================================================================
   :samp:`{ATOM}`   Scalar coarray or coindexed variable of integer
                    type with ``ATOMIC_INT_KIND`` kind.
-  ===============  ===================================================================
   :samp:`{VALUE}`  Scalar of the same type as :samp:`{ATOM}`. If the kind
                    is different, the value is converted to the kind of :samp:`{ATOM}`.
   :samp:`{OLD}`    Scalar of the same type and kind as :samp:`{ATOM}`.

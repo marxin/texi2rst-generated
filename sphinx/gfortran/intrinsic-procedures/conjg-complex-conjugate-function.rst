@@ -26,7 +26,6 @@ CONJG --- Complex conjugate function
   ===========  ==============================
   :samp:`{Z}`  The type shall be ``COMPLEX``.
   ===========  ==============================
-  ===========  ==============================
 
 :samp:`{Return value}:`
   The return value is of type ``COMPLEX``.
@@ -47,6 +46,5 @@ CONJG --- Complex conjugate function
 :samp:`{Specific names}:`
   =============  ================  ==============  =============
   Name           Argument          Return type     Standard
-  =============  ================  ==============  =============
   ``DCONJG(Z)``  ``COMPLEX(8) Z``  ``COMPLEX(8)``  GNU extension
   =============  ================  ==============  =============

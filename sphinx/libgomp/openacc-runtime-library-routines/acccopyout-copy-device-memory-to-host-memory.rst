@@ -14,7 +14,6 @@ Description
 :samp:`{C/C++}:`
   ============  =================================================================
   *Prototype*:  ``acc_copyout(h_void *a, size_t len);``
-  ============  =================================================================
   *Prototype*:  ``acc_copyout_async(h_void *a, size_t len, int async);``
   *Prototype*:  ``acc_copyout_finalize(h_void *a, size_t len);``
   *Prototype*:  ``acc_copyout_finalize_async(h_void *a, size_t len, int async);``
@@ -23,7 +22,6 @@ Description
 :samp:`{Fortran}:`
   ============  ========================================================
   *Interface*:  ``subroutine acc_copyout(a)``
-  ============  ========================================================
                 ``type, dimension(:[,:]...) :: a``
   *Interface*:  ``subroutine acc_copyout(a, len)``
                 ``type, dimension(:[,:]...) :: a``

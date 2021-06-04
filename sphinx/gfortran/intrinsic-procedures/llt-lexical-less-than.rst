@@ -35,7 +35,6 @@ LLT --- Lexical less than
 :samp:`{Arguments}:`
   ==================  =======================================
   :samp:`{STRING_A}`  Shall be of default ``CHARACTER`` type.
-  ==================  =======================================
   :samp:`{STRING_B}`  Shall be of default ``CHARACTER`` type.
   ==================  =======================================
 
@@ -46,7 +45,6 @@ LLT --- Lexical less than
 :samp:`{Specific names}:`
   ===========================  =============  ===========  ====================
   Name                         Argument       Return type  Standard
-  ===========================  =============  ===========  ====================
   ``LLT(STRING_A, STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
   ===========================  =============  ===========  ====================
 

@@ -26,7 +26,6 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
   ================  ==================================================
   :samp:`{NUMBER}`  Shall be a scalar of type ``INTEGER`` and of
                     default kind, :samp:`{NUMBER}` \geq 0
-  ================  ==================================================
   :samp:`{VALUE}`   (Optional) Shall be a scalar of type ``CHARACTER``
                     and of default kind.
   :samp:`{LENGTH}`  (Optional) Shall be a scalar of type ``INTEGER``

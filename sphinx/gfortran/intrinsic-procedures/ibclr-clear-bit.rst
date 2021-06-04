@@ -33,7 +33,6 @@ IBCLR --- Clear bit
 :samp:`{Arguments}:`
   =============  ==============================
   :samp:`{I}`    The type shall be ``INTEGER``.
-  =============  ==============================
   :samp:`{POS}`  The type shall be ``INTEGER``.
   =============  ==============================
 
@@ -44,7 +43,6 @@ IBCLR --- Clear bit
 :samp:`{Specific names}:`
   =============  ================  ==============  ====================
   Name           Argument          Return type     Standard
-  =============  ================  ==============  ====================
   ``IBCLR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
   ``BBCLR(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
   ``IIBCLR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

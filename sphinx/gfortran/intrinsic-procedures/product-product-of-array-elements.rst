@@ -26,7 +26,6 @@ PRODUCT --- Product of array elements
 :samp:`{Syntax}:`
   ========================================
   ``RESULT = PRODUCT(ARRAY[, MASK])``
-  ========================================
   ``RESULT = PRODUCT(ARRAY, DIM[, MASK])``
   ========================================
 
@@ -34,7 +33,6 @@ PRODUCT --- Product of array elements
   ===============  ========================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``, 
                    ``REAL`` or ``COMPLEX``.
-  ===============  ========================================================================
   :samp:`{DIM}`    (Optional) shall be a scalar of type 
                    ``INTEGER`` with a value in the range from 1 to n, where n 
                    equals the rank of :samp:`{ARRAY}`.

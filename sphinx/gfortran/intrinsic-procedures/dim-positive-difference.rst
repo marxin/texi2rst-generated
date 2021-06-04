@@ -27,7 +27,6 @@ DIM --- Positive difference
 :samp:`{Arguments}:`
   ===========  =============================================================
   :samp:`{X}`  The type shall be ``INTEGER`` or ``REAL``
-  ===========  =============================================================
   :samp:`{Y}`  The type shall be the same type and kind as :samp:`{X}`.  (As
                a GNU extension, arguments of different kinds are permitted.)
   ===========  =============================================================
@@ -52,7 +51,6 @@ DIM --- Positive difference
 :samp:`{Specific names}:`
   =============  ===================  ==============  ====================
   Name           Argument             Return type     Standard
-  =============  ===================  ==============  ====================
   ``DIM(X,Y)``   ``REAL(4) X, Y``     ``REAL(4)``     Fortran 77 and later
   ``IDIM(X,Y)``  ``INTEGER(4) X, Y``  ``INTEGER(4)``  Fortran 77 and later
   ``DDIM(X,Y)``  ``REAL(8) X, Y``     ``REAL(8)``     Fortran 77 and later

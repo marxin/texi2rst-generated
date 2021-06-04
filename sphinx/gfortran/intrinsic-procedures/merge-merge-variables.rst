@@ -26,7 +26,6 @@ MERGE --- Merge variables
 :samp:`{Arguments}:`
   =================  =============================================
   :samp:`{TSOURCE}`  May be of any type.
-  =================  =============================================
   :samp:`{FSOURCE}`  Shall be of the same type and type parameters
                      as :samp:`{TSOURCE}`.
   :samp:`{MASK}`     Shall be of type ``LOGICAL``.

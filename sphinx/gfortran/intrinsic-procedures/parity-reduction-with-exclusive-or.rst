@@ -25,12 +25,10 @@ PARITY --- Reduction with exclusive OR
   ================================
   ``RESULT = PARITY(MASK[, DIM])``
   ================================
-  ================================
 
 :samp:`{Arguments}:`
   ==============  ===========================================================
   :samp:`{MASK}`  Shall be an array of type ``LOGICAL``
-  ==============  ===========================================================
   :samp:`{DIM}`   (Optional) shall be a scalar of type 
                   ``INTEGER`` with a value in the range from 1 to n, where n 
                   equals the rank of :samp:`{MASK}`.

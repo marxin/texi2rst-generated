@@ -14,7 +14,6 @@ Description
 :samp:`{C/C++}:`
   ============  ================================================================
   *Prototype*:  ``acc_delete(h_void *a, size_t len);``
-  ============  ================================================================
   *Prototype*:  ``acc_delete_async(h_void *a, size_t len, int async);``
   *Prototype*:  ``acc_delete_finalize(h_void *a, size_t len);``
   *Prototype*:  ``acc_delete_finalize_async(h_void *a, size_t len, int async);``
@@ -23,7 +22,6 @@ Description
 :samp:`{Fortran}:`
   ============  =======================================================
   *Interface*:  ``subroutine acc_delete(a)``
-  ============  =======================================================
                 ``type, dimension(:[,:]...) :: a``
   *Interface*:  ``subroutine acc_delete(a, len)``
                 ``type, dimension(:[,:]...) :: a``

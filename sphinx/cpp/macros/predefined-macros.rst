@@ -643,7 +643,6 @@ These are the named operators and their corresponding punctuators:
 
 ==============  ==========
 Named Operator  Punctuator
-==============  ==========
 ``and``         ``&&``
 ``and_eq``      ``&=``
 ``bitand``      ``&``

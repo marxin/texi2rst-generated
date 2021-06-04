@@ -22,14 +22,12 @@ GETCWD --- Get current working directory
 :samp:`{Syntax}:`
   =============================
   ``CALL GETCWD(C [, STATUS])``
-  =============================
   ``STATUS = GETCWD(C)``
   =============================
 
 :samp:`{Arguments}:`
   ================  ====================================================
   :samp:`{C}`       The type shall be ``CHARACTER`` and of default kind.
-  ================  ====================================================
   :samp:`{STATUS}`  (Optional) status flag. Returns 0 on success, 
                     a system specific and nonzero error code otherwise.
   ================  ====================================================

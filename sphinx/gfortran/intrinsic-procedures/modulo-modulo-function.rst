@@ -24,7 +24,6 @@ MODULO --- Modulo function
 :samp:`{Arguments}:`
   ===========  ============================================================================
   :samp:`{A}`  Shall be a scalar of type ``INTEGER`` or ``REAL``.
-  ===========  ============================================================================
   :samp:`{P}`  Shall be a scalar of the same type and kind as :samp:`{A}`. 
                It shall not be zero.  (As a GNU extension, arguments of different kinds are
                permitted.)

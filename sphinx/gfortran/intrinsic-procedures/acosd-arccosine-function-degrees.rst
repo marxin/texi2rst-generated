@@ -32,7 +32,6 @@ ACOSD --- Arccosine function, degrees
   :samp:`{X}`  The type shall either be ``REAL`` with a magnitude that is
                less than or equal to one - or the type shall be ``COMPLEX``.
   ===========  =============================================================
-  ===========  =============================================================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`.
@@ -51,7 +50,6 @@ ACOSD --- Arccosine function, degrees
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``ACOSD(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DACOSD(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

@@ -29,7 +29,6 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` and lies in the
@@ -48,6 +47,5 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``DBESJ0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

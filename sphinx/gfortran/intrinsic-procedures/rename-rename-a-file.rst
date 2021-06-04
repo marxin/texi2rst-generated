@@ -27,14 +27,12 @@ RENAME --- Rename a file
 :samp:`{Syntax}:`
   ========================================
   ``CALL RENAME(PATH1, PATH2 [, STATUS])``
-  ========================================
   ``STATUS = RENAME(PATH1, PATH2)``
   ========================================
 
 :samp:`{Arguments}:`
   ================  ================================================
   :samp:`{PATH1}`   Shall be of default ``CHARACTER`` type.
-  ================  ================================================
   :samp:`{PATH2}`   Shall be of default ``CHARACTER`` type.
   :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
   ================  ================================================

@@ -24,7 +24,6 @@ ISNAN --- Test for a NaN
   ===========  ==============================
   :samp:`{X}`  Variable of the type ``REAL``.
   ===========  ==============================
-  ===========  ==============================
 
 :samp:`{Return value}:`
   Returns a default-kind ``LOGICAL``. The returned value is ``TRUE``

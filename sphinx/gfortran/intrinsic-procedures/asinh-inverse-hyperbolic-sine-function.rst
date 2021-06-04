@@ -31,7 +31,6 @@ ASINH --- Inverse hyperbolic sine function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as  :samp:`{X}`. If :samp:`{X}` is
@@ -50,7 +49,6 @@ ASINH --- Inverse hyperbolic sine function
 :samp:`{Specific names}:`
   =============  =============  ===========  ==============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  ==============
   ``DASINH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension.
   =============  =============  ===========  ==============
 

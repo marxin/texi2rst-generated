@@ -30,7 +30,6 @@ TAND --- Tangent function, degrees
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
@@ -47,7 +46,6 @@ TAND --- Tangent function, degrees
 :samp:`{Specific names}:`
   ============  =============  ===========  =============
   Name          Argument       Return type  Standard
-  ============  =============  ===========  =============
   ``TAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   ============  =============  ===========  =============

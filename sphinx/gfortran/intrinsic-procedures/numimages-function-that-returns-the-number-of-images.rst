@@ -25,7 +25,6 @@ NUM_IMAGES --- Function that returns the number of images
 :samp:`{Arguments}:`
   ==================  =================================================
   :samp:`{DISTANCE}`  (optional, intent(in)) Nonnegative scalar integer
-  ==================  =================================================
   :samp:`{FAILED}`    (optional, intent(in)) Scalar logical expression
   ==================  =================================================
 

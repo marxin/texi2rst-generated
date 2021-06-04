@@ -32,7 +32,6 @@ ASIND --- Arcsine function, degrees
   :samp:`{X}`  The type shall be either ``REAL`` and a magnitude that is
                less than or equal to one - or be ``COMPLEX``.
   ===========  =========================================================
-  ===========  =========================================================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as :samp:`{X}`.
@@ -51,7 +50,6 @@ ASIND --- Arcsine function, degrees
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``ASIND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DASIND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

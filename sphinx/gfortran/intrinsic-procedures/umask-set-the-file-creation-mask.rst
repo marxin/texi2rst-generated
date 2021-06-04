@@ -21,14 +21,12 @@ UMASK --- Set the file creation mask
 :samp:`{Syntax}:`
   ============================
   ``CALL UMASK(MASK [, OLD])``
-  ============================
   ``OLD = UMASK(MASK)``
   ============================
 
 :samp:`{Arguments}:`
   ==============  ======================================
   :samp:`{MASK}`  Shall be a scalar of type ``INTEGER``.
-  ==============  ======================================
   :samp:`{OLD}`   (Optional) Shall be a scalar of type
                   ``INTEGER``.
   ==============  ======================================

@@ -36,7 +36,6 @@ MOD --- Remainder function
 :samp:`{Arguments}:`
   ===========  =============================================================================
   :samp:`{A}`  Shall be a scalar of type ``INTEGER`` or ``REAL``.
-  ===========  =============================================================================
   :samp:`{P}`  Shall be a scalar of the same type and kind as :samp:`{A}` 
                and not equal to zero.  (As a GNU extension, arguments of different kinds are
                permitted.)
@@ -73,7 +72,6 @@ MOD --- Remainder function
 :samp:`{Specific names}:`
   =============  ==================  ==============  ====================
   Name           Arguments           Return type     Standard
-  =============  ==================  ==============  ====================
   ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
   ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
   ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later

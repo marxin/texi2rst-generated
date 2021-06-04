@@ -31,7 +31,6 @@ ACOSH --- Inverse hyperbolic cosine function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has the same type and kind as :samp:`{X}`. If :samp:`{X}` is
@@ -50,7 +49,6 @@ ACOSH --- Inverse hyperbolic cosine function
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``DACOSH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============
 

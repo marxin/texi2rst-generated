@@ -21,7 +21,6 @@ SAME_TYPE_AS ---  Query dynamic types for equality
   ===========  =================================================
   :samp:`{A}`  Shall be an object of extensible declared type or
                unlimited polymorphic.
-  ===========  =================================================
   :samp:`{B}`  Shall be an object of extensible declared type or
                unlimited polymorphic.
   ===========  =================================================

@@ -26,14 +26,12 @@ UNLINK --- Remove a file from the file system
 :samp:`{Syntax}:`
   ================================
   ``CALL UNLINK(PATH [, STATUS])``
-  ================================
   ``STATUS = UNLINK(PATH)``
   ================================
 
 :samp:`{Arguments}:`
   ================  ================================================
   :samp:`{PATH}`    Shall be of default ``CHARACTER`` type.
-  ================  ================================================
   :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
   ================  ================================================
 

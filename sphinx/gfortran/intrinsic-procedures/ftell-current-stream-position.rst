@@ -22,14 +22,12 @@ FTELL --- Current stream position
 :samp:`{Syntax}:`
   ============================
   ``CALL FTELL(UNIT, OFFSET)``
-  ============================
   ``OFFSET = FTELL(UNIT)``
   ============================
 
 :samp:`{Arguments}:`
   ================  ==========================
   :samp:`{OFFSET}`  Shall of type ``INTEGER``.
-  ================  ==========================
   :samp:`{UNIT}`    Shall of type ``INTEGER``.
   ================  ==========================
 

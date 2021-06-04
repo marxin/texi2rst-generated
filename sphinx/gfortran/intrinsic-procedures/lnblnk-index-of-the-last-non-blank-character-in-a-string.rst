@@ -26,7 +26,6 @@ LNBLNK --- Index of the last non-blank character in a string
   :samp:`{STRING}`  Shall be a scalar of type ``CHARACTER``,
                     with ``INTENT(IN)``
   ================  ========================================
-  ================  ========================================
 
 :samp:`{Return value}:`
   The return value is of ``INTEGER(kind=4)`` type.

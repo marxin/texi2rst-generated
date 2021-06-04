@@ -10,7 +10,6 @@ acc_register_library -- Library registration.
   ============  =================================================================================
   *Prototype*:  ``void acc_register_library (acc_prof_reg, acc_prof_reg, acc_prof_lookup_func);``
   ============  =================================================================================
-  ============  =================================================================================
 
 :samp:`{See also}:`
   OpenACC Profiling Interface, ACC_PROFLIB

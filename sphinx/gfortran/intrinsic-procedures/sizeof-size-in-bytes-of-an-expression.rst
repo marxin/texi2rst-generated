@@ -26,7 +26,6 @@ SIZEOF --- Size in bytes of an expression
   ===========  =================================================
   :samp:`{X}`  The argument shall be of any type, rank or shape.
   ===========  =================================================
-  ===========  =================================================
 
 :samp:`{Return value}:`
   The return value is of type integer and of the system-dependent kind

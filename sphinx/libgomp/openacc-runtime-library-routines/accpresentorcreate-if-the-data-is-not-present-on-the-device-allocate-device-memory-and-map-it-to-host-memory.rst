@@ -19,14 +19,12 @@ Description
 :samp:`{C/C++}:`
   ============  ======================================================
   *Prototype*:  ``void *acc_present_or_create(h_void *a, size_t len)``
-  ============  ======================================================
   *Prototype*:  ``void *acc_pcreate(h_void *a, size_t len)``
   ============  ======================================================
 
 :samp:`{Fortran}:`
   ============  ============================================
   *Interface*:  ``subroutine acc_present_or_create(a)``
-  ============  ============================================
                 ``type, dimension(:[,:]...) :: a``
   *Interface*:  ``subroutine acc_present_or_create(a, len)``
                 ``type, dimension(:[,:]...) :: a``

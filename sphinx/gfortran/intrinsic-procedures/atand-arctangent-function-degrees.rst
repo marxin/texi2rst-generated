@@ -27,7 +27,6 @@ ATAND --- Arctangent function, degrees
 :samp:`{Syntax}:`
   ========================
   ``RESULT = ATAND(X)``
-  ========================
   ``RESULT = ATAND(Y, X)``
   ========================
 
@@ -35,7 +34,6 @@ ATAND --- Arctangent function, degrees
   ===========  ==================================================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX`` ;
                if :samp:`{Y}` is present, :samp:`{X}` shall be REAL.
-  ===========  ==================================================================
   :samp:`{Y}`  The type and kind type parameter shall be the same as :samp:`{X}`.
   ===========  ==================================================================
 
@@ -58,7 +56,6 @@ ATAND --- Arctangent function, degrees
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``ATAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DATAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

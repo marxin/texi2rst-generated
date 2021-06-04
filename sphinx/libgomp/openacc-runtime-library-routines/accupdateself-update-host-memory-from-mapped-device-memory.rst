@@ -15,14 +15,12 @@ Description
 :samp:`{C/C++}:`
   ============  ============================================================
   *Prototype*:  ``acc_update_self(h_void *a, size_t len);``
-  ============  ============================================================
   *Prototype*:  ``acc_update_self_async(h_void *a, size_t len, int async);``
   ============  ============================================================
 
 :samp:`{Fortran}:`
   ============  ===================================================
   *Interface*:  ``subroutine acc_update_self(a)``
-  ============  ===================================================
                 ``type, dimension(:[,:]...) :: a``
   *Interface*:  ``subroutine acc_update_self(a, len)``
                 ``type, dimension(:[,:]...) :: a``

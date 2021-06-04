@@ -32,7 +32,6 @@ NULL --- Function that returns an disassociated pointer
   :samp:`{MOLD}`  (Optional) shall be a pointer of any association
                   status and of any type.
   ==============  ================================================
-  ==============  ================================================
 
 :samp:`{Return value}:`
   A disassociated pointer.

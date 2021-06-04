@@ -33,7 +33,6 @@ FPUT --- Write a single character in stream mode to stdout
 :samp:`{Syntax}:`
   ===========================
   ``CALL FPUT(C [, STATUS])``
-  ===========================
   ``STATUS = FPUT(C)``
   ===========================
 
@@ -41,7 +40,6 @@ FPUT --- Write a single character in stream mode to stdout
   ================  ======================================================================
   :samp:`{C}`       The type shall be ``CHARACTER`` and of default
                     kind.
-  ================  ======================================================================
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER``.
                     Returns 0 on success, -1 on end-of-file and a system specific positive
                     error code otherwise.

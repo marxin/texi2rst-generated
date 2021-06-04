@@ -26,7 +26,6 @@ ALL --- All values in MASK along DIM are true
   ==============  ==================================================================
   :samp:`{MASK}`  The type of the argument shall be ``LOGICAL`` and
                   it shall not be scalar.
-  ==============  ==================================================================
   :samp:`{DIM}`   (Optional) :samp:`{DIM}` shall be a scalar integer
                   with a value that lies between one and the rank of :samp:`{MASK}`.
   ==============  ==================================================================

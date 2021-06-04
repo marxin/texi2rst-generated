@@ -25,7 +25,6 @@ KIND --- Kind of an entity
                ``REAL``, ``COMPLEX`` or ``CHARACTER``.  It may be scalar or
                array valued.
   ===========  ============================================================
-  ===========  ============================================================
 
 :samp:`{Return value}:`
   The return value is a scalar of type ``INTEGER`` and of the default

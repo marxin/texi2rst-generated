@@ -23,7 +23,6 @@ DREAL --- Double real part function
   ===========  =================================
   :samp:`{A}`  The type shall be ``COMPLEX(8)``.
   ===========  =================================
-  ===========  =================================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL(8)``.

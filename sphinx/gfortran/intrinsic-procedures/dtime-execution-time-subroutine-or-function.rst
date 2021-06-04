@@ -38,7 +38,6 @@ DTIME --- Execution time subroutine (or function)
 
   ===============  ================================
   ``VALUES(1)`` :  User time in seconds.
-  ===============  ================================
   ``VALUES(2)`` :  System time in seconds.
   ``TIME`` :       Run time since start in seconds.
   ===============  ================================
@@ -52,14 +51,12 @@ DTIME --- Execution time subroutine (or function)
 :samp:`{Syntax}:`
   ============================================
   ``CALL DTIME(VALUES, TIME)``.
-  ============================================
   ``TIME = DTIME(VALUES)``, (not recommended).
   ============================================
 
 :samp:`{Arguments}:`
   ================  ============================================
   :samp:`{VALUES}`  The type shall be ``REAL(4), DIMENSION(2)``.
-  ================  ============================================
   :samp:`{TIME}`    The type shall be ``REAL(4)``.
   ================  ============================================
 

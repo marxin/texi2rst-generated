@@ -24,7 +24,6 @@ structure takes 4 words (32 bytes) on 64 bit hosts:
 
 =======================  ===========
 Field                    Size (bits)
-=======================  ===========
 ``code``                 8
 ``subcode``              16
 ``no_warning``           1
@@ -134,7 +133,6 @@ is then inherited from the other two tuples.
 
 ===========  ==========================
 ``gsbase``   256
-===========  ==========================
 ``def_ops``  64
 ``use_ops``  64
 ``op``       ``num_ops`` * 64
@@ -168,7 +166,6 @@ vector ( ``gimple_statement_with_memory_ops_base`` and
 
 ============  ==========================
 Field         Size (bits)
-============  ==========================
 ``gsbase``    256
 ``def_ops``   64
 ``use_ops``   64

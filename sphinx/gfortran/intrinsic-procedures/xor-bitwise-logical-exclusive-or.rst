@@ -30,7 +30,6 @@ XOR --- Bitwise logical exclusive OR
   ===========  ===========================================================================
   :samp:`{I}`  The type shall be either a scalar ``INTEGER``
                type or a scalar ``LOGICAL`` type or a boz-literal-constant.
-  ===========  ===========================================================================
   :samp:`{J}`  The type shall be the same as the type of :samp:`{I}` or
                a boz-literal-constant. :samp:`{I}` and :samp:`{J}` shall not both be
                boz-literal-constants.  If either :samp:`{I}` and :samp:`{J}` is a

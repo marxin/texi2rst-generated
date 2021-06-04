@@ -26,7 +26,6 @@ RESHAPE --- Function to reshape an array
 :samp:`{Arguments}:`
   ================  =========================================================================
   :samp:`{SOURCE}`  Shall be an array of any type.
-  ================  =========================================================================
   :samp:`{SHAPE}`   Shall be of type ``INTEGER`` and an 
                     array of rank one. Its values must be positive or zero.
   :samp:`{PAD}`     (Optional) shall be an array of the same 

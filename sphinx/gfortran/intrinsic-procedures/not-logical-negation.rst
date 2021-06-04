@@ -35,7 +35,6 @@ NOT --- Logical negation
   ===========  ==============================
   :samp:`{I}`  The type shall be ``INTEGER``.
   ===========  ==============================
-  ===========  ==============================
 
 :samp:`{Return value}:`
   The return type is ``INTEGER``, of the same kind as the
@@ -44,7 +43,6 @@ NOT --- Logical negation
 :samp:`{Specific names}:`
   ===========  ================  ==============  ====================
   Name         Argument          Return type     Standard
-  ===========  ================  ==============  ====================
   ``NOT(A)``   ``INTEGER A``     ``INTEGER``     Fortran 95 and later
   ``BNOT(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
   ``INOT(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

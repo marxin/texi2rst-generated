@@ -30,14 +30,12 @@ SYSTEM --- Execute a shell command
 :samp:`{Syntax}:`
   ===================================
   ``CALL SYSTEM(COMMAND [, STATUS])``
-  ===================================
   ``STATUS = SYSTEM(COMMAND)``
   ===================================
 
 :samp:`{Arguments}:`
   =================  ================================================
   :samp:`{COMMAND}`  Shall be of default ``CHARACTER`` type.
-  =================  ================================================
   :samp:`{STATUS}`   (Optional) Shall be of default ``INTEGER`` type.
   =================  ================================================
 

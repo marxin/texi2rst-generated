@@ -28,7 +28,6 @@ DCMPLX --- Double complex conversion function
   ===========  ====================================================
   :samp:`{X}`  The type may be ``INTEGER``, ``REAL``,
                or ``COMPLEX``.
-  ===========  ====================================================
   :samp:`{Y}`  (Optional if :samp:`{X}` is not ``COMPLEX``.) May be
                ``INTEGER`` or ``REAL``.
   ===========  ====================================================

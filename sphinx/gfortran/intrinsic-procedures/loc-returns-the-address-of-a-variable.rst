@@ -23,7 +23,6 @@ LOC --- Returns the address of a variable
   ===========  =====================
   :samp:`{X}`  Variable of any type.
   ===========  =====================
-  ===========  =====================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER``, with a ``KIND``

@@ -27,7 +27,6 @@ IACHAR --- Code in ASCII collating sequence
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{C}`     Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================

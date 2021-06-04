@@ -25,7 +25,6 @@ RADIX --- Base of a model number
   ===========  ========================================
   :samp:`{X}`  Shall be of type ``INTEGER`` or ``REAL``
   ===========  ========================================
-  ===========  ========================================
 
 :samp:`{Return value}:`
   The return value is a scalar of type ``INTEGER`` and of the default

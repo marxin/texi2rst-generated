@@ -31,7 +31,6 @@ COTAND --- Cotangent function, degrees
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
@@ -48,7 +47,6 @@ COTAND --- Cotangent function, degrees
 :samp:`{Specific names}:`
   ==============  =============  ===========  =============
   Name            Argument       Return type  Standard
-  ==============  =============  ===========  =============
   ``COTAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DCOTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   ==============  =============  ===========  =============

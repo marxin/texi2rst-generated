@@ -30,7 +30,6 @@ COUNT --- Count function
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{MASK}`  The type shall be ``LOGICAL``.
-  ==============  =======================================================
   :samp:`{DIM}`   (Optional) The type shall be ``INTEGER``.
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.

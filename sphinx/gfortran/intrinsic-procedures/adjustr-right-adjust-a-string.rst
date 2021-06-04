@@ -26,7 +26,6 @@ ADJUSTR --- Right adjust a string
   =============  ================================
   :samp:`{STR}`  The type shall be ``CHARACTER``.
   =============  ================================
-  =============  ================================
 
 :samp:`{Return value}:`
   The return value is of type ``CHARACTER`` and of the same kind as

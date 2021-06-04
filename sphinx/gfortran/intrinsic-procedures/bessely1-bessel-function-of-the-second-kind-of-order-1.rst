@@ -29,7 +29,6 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
   ===========  ===========================
   :samp:`{X}`  The type shall be ``REAL``.
   ===========  ===========================
-  ===========  ===========================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
@@ -46,6 +45,5 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``DBESY1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

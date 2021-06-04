@@ -26,7 +26,6 @@ SIGN --- Sign copying function
 :samp:`{Arguments}:`
   ===========  ==================================================
   :samp:`{A}`  Shall be of type ``INTEGER`` or ``REAL``
-  ===========  ==================================================
   :samp:`{B}`  Shall be of the same type and kind as :samp:`{A}`.
   ===========  ==================================================
 
@@ -52,7 +51,6 @@ SIGN --- Sign copying function
 :samp:`{Specific names}:`
   ==============  ===================  ==============  ====================
   Name            Arguments            Return type     Standard
-  ==============  ===================  ==============  ====================
   ``SIGN(A,B)``   ``REAL(4) A, B``     ``REAL(4)``     Fortran 77 and later
   ``ISIGN(A,B)``  ``INTEGER(4) A, B``  ``INTEGER(4)``  Fortran 77 and later
   ``DSIGN(A,B)``  ``REAL(8) A, B``     ``REAL(8)``     Fortran 77 and later

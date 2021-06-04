@@ -31,7 +31,6 @@ COTAN --- Cotangent function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`, and its value is in radians.
@@ -48,7 +47,6 @@ COTAN --- Cotangent function
 :samp:`{Specific names}:`
   =============  =============  ===========  =============
   Name           Argument       Return type  Standard
-  =============  =============  ===========  =============
   ``COTAN(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
   ``DCOTAN(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
   =============  =============  ===========  =============

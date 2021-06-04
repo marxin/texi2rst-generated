@@ -30,7 +30,6 @@ CO_MAX --- Maximal value on the current set of images
   ======================  ======================================================================
   :samp:`{A}`             shall be an integer, real or character variable,
                           which has the same type and type parameters on all images of the team.
-  ======================  ======================================================================
   :samp:`{RESULT_IMAGE}`  (optional) a scalar integer expression; if
                           present, it shall have the same value on all images and refer to an
                           image of the current team.

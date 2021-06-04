@@ -27,7 +27,6 @@ EXIT --- Exit the program with status.
   ================  ============================================
   :samp:`{STATUS}`  Shall be an ``INTEGER`` of the default kind.
   ================  ============================================
-  ================  ============================================
 
 :samp:`{Return value}:`
   ``STATUS`` is passed to the parent process on exit.

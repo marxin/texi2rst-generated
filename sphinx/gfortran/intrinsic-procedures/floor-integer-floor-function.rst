@@ -24,7 +24,6 @@ FLOOR --- Integer floor function
 :samp:`{Arguments}:`
   ==============  =======================================================
   :samp:`{A}`     The type shall be ``REAL``.
-  ==============  =======================================================
   :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
                   expression indicating the kind parameter of the result.
   ==============  =======================================================

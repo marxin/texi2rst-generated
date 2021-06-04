@@ -29,7 +29,6 @@ COSH --- Hyperbolic cosine function
   ===========  ==========================================
   :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
   ===========  ==========================================
-  ===========  ==========================================
 
 :samp:`{Return value}:`
   The return value has same type and kind as :samp:`{X}`. If :samp:`{X}` is
@@ -49,7 +48,6 @@ COSH --- Hyperbolic cosine function
 :samp:`{Specific names}:`
   ============  =============  ===========  ====================
   Name          Argument       Return type  Standard
-  ============  =============  ===========  ====================
   ``COSH(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
   ``DCOSH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
   ============  =============  ===========  ====================

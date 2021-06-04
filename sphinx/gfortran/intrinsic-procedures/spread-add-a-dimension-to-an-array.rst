@@ -28,7 +28,6 @@ SPREAD --- Add a dimension to an array
   =================  ==============================================================================
   :samp:`{SOURCE}`   Shall be a scalar or an array of any type and 
                      a rank less than seven.
-  =================  ==============================================================================
   :samp:`{DIM}`      Shall be a scalar of type ``INTEGER`` with a 
                      value in the range from 1 to n+1, where n equals the rank of :samp:`{SOURCE}`.
   :samp:`{NCOPIES}`  Shall be a scalar of type ``INTEGER``.

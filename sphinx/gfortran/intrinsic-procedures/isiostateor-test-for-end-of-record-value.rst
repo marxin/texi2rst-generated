@@ -26,7 +26,6 @@ IS_IOSTAT_EOR --- Test for end-of-record value
   ===========  =================================
   :samp:`{I}`  Shall be of the type ``INTEGER``.
   ===========  =================================
-  ===========  =================================
 
 :samp:`{Return value}:`
   Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if

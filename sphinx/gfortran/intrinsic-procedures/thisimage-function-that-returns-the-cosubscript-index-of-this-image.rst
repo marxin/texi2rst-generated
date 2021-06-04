@@ -22,7 +22,6 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
 :samp:`{Syntax}:`
   ========================================
   ``RESULT = THIS_IMAGE()``
-  ========================================
   ``RESULT = THIS_IMAGE(DISTANCE)``
   ``RESULT = THIS_IMAGE(COARRAY [, DIM])``
   ========================================
@@ -31,7 +30,6 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
   ==================  =======================================================================
   :samp:`{DISTANCE}`  (optional, intent(in)) Nonnegative scalar integer
                       (not permitted together with :samp:`{COARRAY}` ).
-  ==================  =======================================================================
   :samp:`{COARRAY}`   Coarray of any type  (optional; if :samp:`{DIM}`
                       present, required).
   :samp:`{DIM}`       default integer scalar (optional). If present,

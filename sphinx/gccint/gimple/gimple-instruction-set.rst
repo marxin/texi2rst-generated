@@ -9,7 +9,6 @@ The following table briefly describes the GIMPLE instruction set.
 
 ==============================  ===========  ==========
 Instruction                     High GIMPLE  Low GIMPLE
-==============================  ===========  ==========
 ``GIMPLE_ASM``                  x            x
 ``GIMPLE_ASSIGN``               x            x
 ``GIMPLE_BIND``                 x

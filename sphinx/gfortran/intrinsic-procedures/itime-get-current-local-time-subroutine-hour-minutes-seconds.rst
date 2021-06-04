@@ -34,7 +34,6 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
   :samp:`{VALUES}`  The type shall be ``INTEGER, DIMENSION(3)``
                     and the kind shall be the default integer kind.
   ================  ===============================================
-  ================  ===============================================
 
 :samp:`{Return value}:`
   Does not return anything.

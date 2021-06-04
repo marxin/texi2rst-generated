@@ -29,7 +29,6 @@ ATAN2 --- Arctangent function
 :samp:`{Arguments}:`
   ===========  ==================================================================
   :samp:`{Y}`  The type shall be ``REAL``.
-  ===========  ==================================================================
   :samp:`{X}`  The type and kind type parameter shall be the same as :samp:`{Y}`.
                If :samp:`{Y}` is zero, then :samp:`{X}` must be nonzero.
   ===========  ==================================================================
@@ -57,7 +56,6 @@ ATAN2 --- Arctangent function
 :samp:`{Specific names}:`
   ================  ================  ===========  ====================
   Name              Argument          Return type  Standard
-  ================  ================  ===========  ====================
   ``ATAN2(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  Fortran 77 and later
   ``DATAN2(X, Y)``  ``REAL(8) X, Y``  ``REAL(8)``  Fortran 77 and later
   ================  ================  ===========  ====================

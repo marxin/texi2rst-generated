@@ -32,7 +32,6 @@ AIMAG --- Imaginary part of complex number
   ===========  ==============================================
   :samp:`{Z}`  The type of the argument shall be ``COMPLEX``.
   ===========  ==============================================
-  ===========  ==============================================
 
 :samp:`{Return value}:`
   The return value is of type ``REAL`` with the
@@ -53,7 +52,6 @@ AIMAG --- Imaginary part of complex number
 :samp:`{Specific names}:`
   ===============  ================  ===========  ====================
   Name             Argument          Return type  Standard
-  ===============  ================  ===========  ====================
   ``AIMAG(Z)``     ``COMPLEX Z``     ``REAL``     Fortran 77 and later
   ``DIMAG(Z)``     ``COMPLEX(8) Z``  ``REAL(8)``  GNU extension
   ``IMAG(Z)``      ``COMPLEX Z``     ``REAL``     GNU extension

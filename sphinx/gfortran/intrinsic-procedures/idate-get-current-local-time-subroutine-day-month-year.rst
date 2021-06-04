@@ -34,7 +34,6 @@ IDATE --- Get current local time subroutine (day/month/year)
   :samp:`{VALUES}`  The type shall be ``INTEGER, DIMENSION(3)`` and
                     the kind shall be the default integer kind.
   ================  ===============================================
-  ================  ===============================================
 
 :samp:`{Return value}:`
   Does not return anything.

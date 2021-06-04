@@ -29,7 +29,6 @@ SCAN --- Scan a string for the presence of a set of characters
 :samp:`{Arguments}:`
   ================  =======================================================
   :samp:`{STRING}`  Shall be of type ``CHARACTER``.
-  ================  =======================================================
   :samp:`{SET}`     Shall be of type ``CHARACTER``.
   :samp:`{BACK}`    (Optional) shall be of type ``LOGICAL``.
   :samp:`{KIND}`    (Optional) An ``INTEGER`` initialization

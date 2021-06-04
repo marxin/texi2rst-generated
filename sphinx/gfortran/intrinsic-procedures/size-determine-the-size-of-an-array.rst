@@ -28,7 +28,6 @@ SIZE --- Determine the size of an array
   ===============  =========================================================================
   :samp:`{ARRAY}`  Shall be an array of any type. If :samp:`{ARRAY}` is
                    a pointer it must be associated and allocatable arrays must be allocated.
-  ===============  =========================================================================
   :samp:`{DIM}`    (Optional) shall be a scalar of type ``INTEGER`` 
                    and its value shall be in the range from 1 to n, where n equals the rank 
                    of :samp:`{ARRAY}`.

@@ -29,7 +29,6 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
                             instance of program execution.  The sequence of random numbers is different
                             for repeated execution of the program.  If it is ``.false.``, the seed
                             is set to a processor-dependent value.
-  ========================  ===========================================================================
   :samp:`{IMAGE_DISTINCT}`  Shall be a scalar with a
                             ``LOGICAL`` type, and it is ``INTENT(IN)``.  If it is ``.true.``,
                             the seed is set to a processor-dependent value that is distinct from th

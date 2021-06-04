@@ -10,7 +10,6 @@ acc_prof_unregister -- Unregister callbacks.
   ============  ==============================================================================
   *Prototype*:  ``void acc_prof_unregister (acc_event_t, acc_prof_callback, acc_register_t);``
   ============  ==============================================================================
-  ============  ==============================================================================
 
 :samp:`{See also}:`
   OpenACC Profiling Interface

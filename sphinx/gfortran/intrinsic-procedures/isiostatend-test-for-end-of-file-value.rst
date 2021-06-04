@@ -26,7 +26,6 @@ IS_IOSTAT_END --- Test for end-of-file value
   ===========  =================================
   :samp:`{I}`  Shall be of the type ``INTEGER``.
   ===========  =================================
-  ===========  =================================
 
 :samp:`{Return value}:`
   Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if

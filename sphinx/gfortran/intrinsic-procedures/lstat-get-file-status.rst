@@ -26,7 +26,6 @@ LSTAT --- Get file status
 :samp:`{Syntax}:`
   =======================================
   ``CALL LSTAT(NAME, VALUES [, STATUS])``
-  =======================================
   ``STATUS = LSTAT(NAME, VALUES)``
   =======================================
 
@@ -34,7 +33,6 @@ LSTAT --- Get file status
   ================  ================================================================
   :samp:`{NAME}`    The type shall be ``CHARACTER`` of the default
                     kind, a valid path within the file system.
-  ================  ================================================================
   :samp:`{VALUES}`  The type shall be ``INTEGER(4), DIMENSION(13)``.
   :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER(4)``.
                     Returns 0 on success and a system specific error code otherwise.

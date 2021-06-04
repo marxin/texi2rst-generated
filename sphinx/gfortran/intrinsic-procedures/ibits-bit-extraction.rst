@@ -36,7 +36,6 @@ IBITS --- Bit extraction
 :samp:`{Arguments}:`
   =============  ==============================
   :samp:`{I}`    The type shall be ``INTEGER``.
-  =============  ==============================
   :samp:`{POS}`  The type shall be ``INTEGER``.
   :samp:`{LEN}`  The type shall be ``INTEGER``.
   =============  ==============================
@@ -48,7 +47,6 @@ IBITS --- Bit extraction
 :samp:`{Specific names}:`
   =============  ================  ==============  ====================
   Name           Argument          Return type     Standard
-  =============  ================  ==============  ====================
   ``IBITS(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
   ``BBITS(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
   ``IIBITS(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

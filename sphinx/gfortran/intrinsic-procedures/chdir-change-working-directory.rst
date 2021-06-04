@@ -22,7 +22,6 @@ CHDIR --- Change working directory
 :samp:`{Syntax}:`
   ===============================
   ``CALL CHDIR(NAME [, STATUS])``
-  ===============================
   ``STATUS = CHDIR(NAME)``
   ===============================
 
@@ -30,7 +29,6 @@ CHDIR --- Change working directory
   ================  =========================================================================
   :samp:`{NAME}`    The type shall be ``CHARACTER`` of default
                     kind and shall specify a valid path within the file system.
-  ================  =========================================================================
   :samp:`{STATUS}`  (Optional) ``INTEGER`` status flag of the default
                     kind.  Returns 0 on success, and a system specific and nonzero error code
                     otherwise.

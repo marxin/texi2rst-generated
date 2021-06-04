@@ -32,7 +32,6 @@ ATAN2D --- Arctangent function, degrees
 :samp:`{Arguments}:`
   ===========  ==================================================================
   :samp:`{Y}`  The type shall be ``REAL``.
-  ===========  ==================================================================
   :samp:`{X}`  The type and kind type parameter shall be the same as :samp:`{Y}`.
                If :samp:`{Y}` is zero, then :samp:`{X}` must be nonzero.
   ===========  ==================================================================
@@ -60,7 +59,6 @@ ATAN2D --- Arctangent function, degrees
 :samp:`{Specific names}:`
   =================  ================  ===========  =============
   Name               Argument          Return type  Standard
-  =================  ================  ===========  =============
   ``ATAN2D(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  GNU extension
   ``DATAN2D(X, Y)``  ``REAL(8) X, Y``  ``REAL(8)``  GNU extension
   =================  ================  ===========  =============

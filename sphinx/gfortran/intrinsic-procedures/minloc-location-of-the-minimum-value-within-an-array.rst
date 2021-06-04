@@ -33,7 +33,6 @@ MINLOC --- Location of the minimum value within an array
 :samp:`{Syntax}:`
   ========================================================
   ``RESULT = MINLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])``
-  ========================================================
   ``RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])``
   ========================================================
 
@@ -41,7 +40,6 @@ MINLOC --- Location of the minimum value within an array
   ===============  ======================================================================
   :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``,
                    ``REAL`` or ``CHARACTER``.
-  ===============  ======================================================================
   :samp:`{DIM}`    (Optional) Shall be a scalar of type
                    ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
                    inclusive.  It may not be an optional dummy argument.

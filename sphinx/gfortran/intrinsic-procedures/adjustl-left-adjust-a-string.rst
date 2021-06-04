@@ -26,7 +26,6 @@ ADJUSTL --- Left adjust a string
   ================  ================================
   :samp:`{STRING}`  The type shall be ``CHARACTER``.
   ================  ================================
-  ================  ================================
 
 :samp:`{Return value}:`
   The return value is of type ``CHARACTER`` and of the same kind as

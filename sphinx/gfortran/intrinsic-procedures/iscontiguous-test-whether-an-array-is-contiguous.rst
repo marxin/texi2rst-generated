@@ -23,7 +23,6 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
   ===============  ==============================
   :samp:`{ARRAY}`  Shall be an array of any type.
   ===============  ==============================
-  ===============  ==============================
 
 :samp:`{Return value}:`
   Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if

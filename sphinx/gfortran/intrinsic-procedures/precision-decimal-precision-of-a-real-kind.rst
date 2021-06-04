@@ -25,7 +25,6 @@ PRECISION --- Decimal precision of a real kind
   :samp:`{X}`  Shall be of type ``REAL`` or ``COMPLEX``. It may
                be scalar or valued.
   ===========  ================================================
-  ===========  ================================================
 
 :samp:`{Return value}:`
   The return value is of type ``INTEGER`` and of the default integer

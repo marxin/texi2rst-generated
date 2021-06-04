@@ -27,7 +27,6 @@ DSHIFTR --- Combined right shift
 :samp:`{Arguments}:`
   ===============  ===========================================================================
   :samp:`{I}`      Shall be of type ``INTEGER`` or a BOZ constant.
-  ===============  ===========================================================================
   :samp:`{J}`      Shall be of type ``INTEGER`` or a BOZ constant.
                    If both :samp:`{I}` and :samp:`{J}` have integer type, then they shall have
                    the same kind type parameter. :samp:`{I}` and :samp:`{J}` shall not both be

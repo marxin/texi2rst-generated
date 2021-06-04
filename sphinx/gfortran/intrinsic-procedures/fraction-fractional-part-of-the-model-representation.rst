@@ -26,7 +26,6 @@ FRACTION --- Fractional part of the model representation
   ===========  =============================================
   :samp:`{X}`  The type of the argument shall be a ``REAL``.
   ===========  =============================================
-  ===========  =============================================
 
 :samp:`{Return value}:`
   The return value is of the same type and kind as the argument.

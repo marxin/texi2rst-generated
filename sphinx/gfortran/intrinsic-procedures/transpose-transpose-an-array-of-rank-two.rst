@@ -28,7 +28,6 @@ TRANSPOSE --- Transpose an array of rank two
   ================  =====================================================
   :samp:`{MATRIX}`  Shall be an array of any type and have a rank of two.
   ================  =====================================================
-  ================  =====================================================
 
 :samp:`{Return value}:`
   The result has the same type as :samp:`{MATRIX}`, and has shape 

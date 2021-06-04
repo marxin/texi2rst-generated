@@ -25,7 +25,6 @@ GETLOG --- Get login name
   ===========  ===================================================
   :samp:`{C}`  Shall be of type ``CHARACTER`` and of default kind.
   ===========  ===================================================
-  ===========  ===================================================
 
 :samp:`{Return value}:`
   Stores the current user name in :samp:`{C}`.  (On systems where POSIX

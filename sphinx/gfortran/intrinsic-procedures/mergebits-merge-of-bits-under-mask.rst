@@ -25,7 +25,6 @@ MERGE_BITS --- Merge of bits under mask
 :samp:`{Arguments}:`
   ==============  ====================================================================
   :samp:`{I}`     Shall be of type ``INTEGER`` or a boz-literal-constant.
-  ==============  ====================================================================
   :samp:`{J}`     Shall be of type ``INTEGER`` with the same
                   kind type parameter as :samp:`{I}` or a boz-literal-constant.
                   :samp:`{I}` and :samp:`{J}` shall not both be boz-literal-constants.
