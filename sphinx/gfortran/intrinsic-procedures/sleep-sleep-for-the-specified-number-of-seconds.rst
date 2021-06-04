@@ -27,7 +27,7 @@ SLEEP --- Sleep for the specified number of seconds
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sleep
       call sleep(5)

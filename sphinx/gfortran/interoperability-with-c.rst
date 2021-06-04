@@ -58,7 +58,7 @@ For compatibility of derived types with ``struct``, one needs to use
 the ``BIND(C)`` attribute in the type declaration.  For instance, the
 following type declaration
 
-.. code-block:: c++
+.. code-block:: fortran
 
    USE ISO_C_BINDING
    TYPE, BIND(C) :: myType
@@ -71,7 +71,7 @@ following type declaration
 
 matches the following ``struct`` declaration in C
 
-.. code-block:: c++
+.. code-block:: fortran
 
    struct {
      int i1, i2;
@@ -102,7 +102,7 @@ have to be declared in the declaration part of a ``MODULE``,
 be of interoperable type, and have neither the ``pointer`` nor
 the ``allocatable`` attribute.
 
-.. code-block:: c++
+.. code-block:: fortran
 
     MODULE m
       USE myType_module
@@ -139,13 +139,13 @@ Further Interoperability of Fortran with C
 To pass a variable by value, use the ``VALUE`` attribute.
 Thus, the following C prototype
 
-.. code-block:: c++
+.. code-block:: fortran
 
   int func(int i, int *j)
 
 matches the Fortran declaration
 
-.. code-block:: c++
+.. code-block:: fortran
 
     integer(c_int) function func(i,j)
       use iso_c_binding, only: c_int
@@ -160,7 +160,7 @@ is a ``NUL`` -terminated array of characters while in Fortran each string
 has a length associated with it and is thus not terminated (by e.g.
 ``NUL`` ).  For example, if one wants to use the following C function,
 
-.. code-block:: c++
+.. code-block:: fortran
 
     #include <stdio.h>
     void print_C(char *string) /* equivalent: char string[]  */
@@ -170,7 +170,7 @@ has a length associated with it and is thus not terminated (by e.g.
 
 to print 'Hello World' from Fortran, one can call it using
 
-.. code-block:: c++
+.. code-block:: fortran
 
     use iso_c_binding, only: C_CHAR, C_NULL_CHAR
     interface
@@ -193,7 +193,7 @@ is equivalent.  However, the standard does not guarantee this.
 The use of strings is now further illustrated using the C library
 function ``strncpy``, whose prototype is
 
-.. code-block:: c++
+.. code-block:: fortran
 
     char *strncpy(char *restrict s1, const char *restrict s2, size_t n);
 
@@ -201,7 +201,7 @@ The function ``strncpy`` copies at most :samp:`{n}` characters from
 string :samp:`{s2}` to :samp:`{s1}` and returns :samp:`{s1}`.  In the following
 example, we ignore the return value:
 
-.. code-block:: c++
+.. code-block:: fortran
 
     use iso_c_binding
     implicit none
@@ -239,7 +239,7 @@ Further Interoperability of Fortran with C.
 
 For example,
 
-.. code-block:: c++
+.. code-block:: fortran
 
     use iso_c_binding
     type(c_ptr) :: cptr1, cptr2
@@ -269,7 +269,7 @@ C to Fortran and vice versa.  Note that these examples are also very
 similar to passing ordinary pointers between both languages. First,
 consider this code in C:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   /* Procedure implemented in Fortran.  */
   void get_values (void (*)(double));
@@ -292,7 +292,7 @@ A matching implementation for ``get_values`` in Fortran, that correctly
 receives the procedure pointer from C and is able to call it, is given
 in the following ``MODULE`` :
 
-.. code-block:: c++
+.. code-block:: fortran
 
   MODULE m
     IMPLICIT NONE
@@ -329,7 +329,7 @@ Next, we want to call a C routine that expects a procedure pointer argument
 and pass it a Fortran procedure (which clearly must be interoperable!).
 Again, the C function may be:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   int
   call_it (int (*func)(int), int arg)

@@ -37,7 +37,7 @@ TAND --- Tangent function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_tand
       real(8) :: x = 0.165_8

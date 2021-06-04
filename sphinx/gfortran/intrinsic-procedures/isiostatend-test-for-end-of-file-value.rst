@@ -35,7 +35,7 @@ IS_IOSTAT_END --- Test for end-of-file value
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM iostat
       IMPLICIT NONE

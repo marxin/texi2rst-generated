@@ -40,7 +40,7 @@ CO_SUM --- Sum of values on the current set of images
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
       integer :: val

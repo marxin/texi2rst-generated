@@ -43,7 +43,7 @@ COS --- Cosine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cos
       real :: x = 0.0

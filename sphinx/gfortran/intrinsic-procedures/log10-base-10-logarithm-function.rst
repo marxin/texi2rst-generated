@@ -39,7 +39,7 @@ LOG10 --- Base 10 logarithm function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_log10
       real(8) :: x = 10.0_8

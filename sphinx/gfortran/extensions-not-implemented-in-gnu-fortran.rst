@@ -44,7 +44,7 @@ statements.  These statements are best replaced by ``READ`` and
 variables and arrays), which have been part of the Fortran standard since
 Fortran 77.  For example, replace a code fragment like
 
-.. code-block:: c++
+.. code-block:: fortran
 
         INTEGER*1 LINE(80)
         REAL A, B, C
@@ -54,7 +54,7 @@ Fortran 77.  For example, replace a code fragment like
 
 with the following:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         CHARACTER(LEN=80) LINE
         REAL A, B, C
@@ -64,7 +64,7 @@ with the following:
 
 Similarly, replace a code fragment like
 
-.. code-block:: c++
+.. code-block:: fortran
 
         INTEGER*1 LINE(80)
         REAL A, B, C
@@ -74,7 +74,7 @@ Similarly, replace a code fragment like
 
 with the following:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         CHARACTER(LEN=80) LINE
         REAL A, B, C
@@ -96,14 +96,14 @@ format expressions can be reproduced by using the more powerful (and
 standard) combination of internal output and string formats.  For example,
 replace a code fragment like this:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         WRITE(6,20) INT1
    20   FORMAT(I<N+1>)
 
 with the following:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   c     Variable declaration
         CHARACTER(LEN=20) FMT
@@ -115,7 +115,7 @@ with the following:
 
 or with:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   c     Variable declaration
         CHARACTER(LEN=20) FMT

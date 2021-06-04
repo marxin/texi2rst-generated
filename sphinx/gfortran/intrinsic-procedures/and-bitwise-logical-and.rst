@@ -46,7 +46,7 @@ AND --- Bitwise logical AND
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_and
       LOGICAL :: T = .TRUE., F = .FALSE.

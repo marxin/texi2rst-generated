@@ -48,7 +48,7 @@ SIGNAL --- Signal handling subroutine (or function)
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_signal
       intrinsic signal

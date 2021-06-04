@@ -34,7 +34,7 @@ REPEAT --- Repeated string concatenation
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_repeat
       write(*,*) repeat("x", 5)   ! "xxxxx"

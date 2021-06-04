@@ -50,7 +50,7 @@ PACK --- Pack an array into an array of rank one
 :samp:`{Example}:`
   Gathering nonzero elements from an array:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_pack_1
       INTEGER :: m(6)
@@ -60,7 +60,7 @@ PACK --- Pack an array into an array of rank one
 
   Gathering nonzero elements from an array and appending elements from :samp:`{VECTOR}` :
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_pack_2
       INTEGER :: m(4)

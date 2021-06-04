@@ -50,7 +50,7 @@ ATAN2D --- Arctangent function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_atan2d
       real(4) :: x = 1.e0_4, y = 0.5e0_4

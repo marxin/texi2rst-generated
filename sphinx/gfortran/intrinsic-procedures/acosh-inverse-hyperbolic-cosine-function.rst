@@ -40,7 +40,7 @@ ACOSH --- Inverse hyperbolic cosine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_acosh
       REAL(8), DIMENSION(3) :: x = (/ 1.0, 2.0, 3.0 /)

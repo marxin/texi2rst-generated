@@ -31,7 +31,7 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
       integer :: a(10)

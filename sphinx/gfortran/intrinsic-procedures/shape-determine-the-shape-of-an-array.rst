@@ -38,7 +38,7 @@ SHAPE --- Determine the shape of an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_shape
       INTEGER, DIMENSION(-1:1, -1:2) :: A

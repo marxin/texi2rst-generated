@@ -32,7 +32,7 @@ MAXEXPONENT --- Maximum exponent of a real kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program exponents
       real(kind=4) :: x

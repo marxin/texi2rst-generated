@@ -41,7 +41,7 @@ GET_COMMAND --- Get the entire command line
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_get_command
       CHARACTER(len=255) :: cmd

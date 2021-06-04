@@ -45,7 +45,7 @@ COUNT --- Count function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_count
         integer, dimension(2,3) :: a, b

@@ -37,7 +37,7 @@ SIGN --- Sign copying function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sign
       print *, sign(-12,1)

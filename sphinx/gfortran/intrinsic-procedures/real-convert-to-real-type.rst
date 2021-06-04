@@ -69,7 +69,7 @@ REAL --- Convert to real type
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_real
       complex :: x = (1.0, 2.0)

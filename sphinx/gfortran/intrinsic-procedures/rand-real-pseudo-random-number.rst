@@ -39,7 +39,7 @@ RAND --- Real pseudo-random number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_rand
       integer,parameter :: seed = 86456

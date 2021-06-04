@@ -39,7 +39,7 @@ NEAREST --- Nearest representable number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_nearest
       real :: x, y

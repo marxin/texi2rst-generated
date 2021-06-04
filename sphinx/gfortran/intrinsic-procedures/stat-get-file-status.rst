@@ -61,7 +61,7 @@ STAT --- Get file status
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_stat
       INTEGER, DIMENSION(13) :: buff

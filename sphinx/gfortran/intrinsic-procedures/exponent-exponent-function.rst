@@ -33,7 +33,7 @@ EXPONENT --- Exponent function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_exponent
       real :: x = 1.0

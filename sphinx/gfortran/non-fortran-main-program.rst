@@ -72,7 +72,7 @@ _gfortran_set_args --- Save command-line arguments
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     int main (int argc, char *argv[])
     {
@@ -152,7 +152,7 @@ _gfortran_set_options --- Set library option flags
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       /* Use gfortran 4.9 default options.  */
       static int options[] = {68, 511, 0, 0, 1, 1, 0, 0, 31};
@@ -184,7 +184,7 @@ _gfortran_set_convert --- Set endian conversion
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     int main (int argc, char *argv[])
     {
@@ -219,7 +219,7 @@ _gfortran_set_record_marker --- Set length of record markers
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     int main (int argc, char *argv[])
     {
@@ -258,7 +258,7 @@ _gfortran_set_fpe --- Enable floating point exception traps
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     int main (int argc, char *argv[])
     {
@@ -296,7 +296,7 @@ _gfortran_set_max_subrecord_length --- Set subrecord length
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     int main (int argc, char *argv[])
     {

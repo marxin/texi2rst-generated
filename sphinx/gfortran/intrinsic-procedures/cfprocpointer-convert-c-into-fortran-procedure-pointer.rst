@@ -31,7 +31,7 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program main
       use iso_c_binding

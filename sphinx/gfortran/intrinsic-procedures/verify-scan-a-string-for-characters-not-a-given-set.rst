@@ -42,7 +42,7 @@ VERIFY --- Scan a string for characters not a given set
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_verify
       WRITE(*,*) VERIFY("FORTRAN", "AO")           ! 1, found 'F'

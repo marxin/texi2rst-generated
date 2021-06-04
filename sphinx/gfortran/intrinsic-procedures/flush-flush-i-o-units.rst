@@ -40,7 +40,7 @@ FLUSH --- Flush I/O unit(s)
   descriptor of the I/O unit as argument (retrieved with GNU intrinsic
   ``FNUM`` ). The following example shows how:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       ! Declare the interface for POSIX fsync function
       interface

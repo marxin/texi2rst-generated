@@ -43,7 +43,7 @@ DOT_PRODUCT --- Dot product function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dot_prod
         integer, dimension(3) :: a, b

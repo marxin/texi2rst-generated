@@ -31,7 +31,7 @@ C_FUNLOC --- Obtain the C address of a procedure
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     module x
       use iso_c_binding

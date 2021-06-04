@@ -39,7 +39,7 @@ C_SIZEOF --- Size in bytes of an expression
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
        use iso_c_binding
        integer(c_int) :: i

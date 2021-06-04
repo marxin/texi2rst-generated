@@ -49,7 +49,7 @@ ALL --- All values in MASK along DIM are true
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_all
       logical l

@@ -120,7 +120,7 @@ by GNU Fortran:
 
   The following example will trigger the warning.
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       interface
         subroutine bar(a,b)
@@ -486,7 +486,7 @@ by GNU Fortran:
   out-of-bounds access even if the compiler cannot prove that the
   statement is actually executed, in cases like
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       real a(3)
       do i=1,4

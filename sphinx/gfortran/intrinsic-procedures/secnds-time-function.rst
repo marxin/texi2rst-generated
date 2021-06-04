@@ -36,7 +36,7 @@ SECNDS --- Time function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_secnds
         integer :: i

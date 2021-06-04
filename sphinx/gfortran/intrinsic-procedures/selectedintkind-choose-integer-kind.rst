@@ -32,7 +32,7 @@ SELECTED_INT_KIND --- Choose integer kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program large_integers
       integer,parameter :: k5 = selected_int_kind(5)

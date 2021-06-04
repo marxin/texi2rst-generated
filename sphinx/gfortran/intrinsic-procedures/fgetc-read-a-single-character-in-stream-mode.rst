@@ -50,7 +50,7 @@ FGETC --- Read a single character in stream mode
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_fgetc
       INTEGER :: fd = 42, status

@@ -18,7 +18,7 @@ underlying system call to flush dirty data to stable storage, such as
 F_FULLSYNC, 0)`` on Mac OS X. The following example shows how to call
 fsync:
 
-.. code-block:: c++
+.. code-block:: fortran
 
     ! Declare the interface for POSIX fsync function
     interface

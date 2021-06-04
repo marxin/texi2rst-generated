@@ -67,7 +67,7 @@ SYSTEM_CLOCK --- Time function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_system_clock
       INTEGER :: count, count_rate, count_max

@@ -30,7 +30,7 @@ ABORT --- Abort the program
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_abort
       integer :: i = 1, j = 2

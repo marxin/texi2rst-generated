@@ -34,7 +34,7 @@ SCALE --- Scale a real value
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_scale
       real :: x = 178.1387e-4

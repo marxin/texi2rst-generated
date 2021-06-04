@@ -38,7 +38,7 @@ ATOMIC_DEFINE --- Setting a variable atomically
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

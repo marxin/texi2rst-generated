@@ -35,7 +35,7 @@ FLOOR --- Integer floor function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_floor
         real :: x = 63.29

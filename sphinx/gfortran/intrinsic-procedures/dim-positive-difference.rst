@@ -38,7 +38,7 @@ DIM --- Positive difference
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dim
         integer :: i

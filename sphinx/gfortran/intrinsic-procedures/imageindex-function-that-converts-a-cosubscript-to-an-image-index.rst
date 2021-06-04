@@ -35,7 +35,7 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     INTEGER :: array[2,-1:4,8,*]
     ! Writes  28 (or 0 if there are fewer than 28 images)

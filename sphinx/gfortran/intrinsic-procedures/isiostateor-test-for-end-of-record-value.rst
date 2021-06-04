@@ -35,7 +35,7 @@ IS_IOSTAT_EOR --- Test for end-of-record value
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM iostat
       IMPLICIT NONE

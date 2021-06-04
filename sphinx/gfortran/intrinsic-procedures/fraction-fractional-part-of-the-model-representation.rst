@@ -35,7 +35,7 @@ FRACTION --- Fractional part of the model representation
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_fraction
       real :: x

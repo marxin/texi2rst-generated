@@ -31,7 +31,7 @@ DBLE --- Double conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dble
         real    :: x = 2.18

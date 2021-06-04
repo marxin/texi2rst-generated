@@ -31,7 +31,7 @@ RANK --- Rank of a data object
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_rank
       integer :: a

@@ -35,7 +35,7 @@ CEILING --- Integer ceiling function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_ceiling
         real :: x = 63.29

@@ -33,7 +33,7 @@ RADIX --- Base of a model number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_radix
       print *, "The radix for the default integer kind is", radix(0)

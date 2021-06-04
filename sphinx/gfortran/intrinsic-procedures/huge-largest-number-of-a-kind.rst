@@ -33,7 +33,7 @@ HUGE --- Largest number of a kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_huge_tiny
       print *, huge(0), huge(0.0), huge(0.0d0)

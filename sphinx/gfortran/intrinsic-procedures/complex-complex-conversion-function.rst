@@ -41,7 +41,7 @@ COMPLEX --- Complex conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_complex
         integer :: i = 42

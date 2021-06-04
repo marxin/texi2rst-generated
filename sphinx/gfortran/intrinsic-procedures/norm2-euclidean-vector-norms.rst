@@ -47,7 +47,7 @@ NORM2 --- Euclidean vector norms
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_sum
       REAL :: x(5) = [ real :: 1, 2, 3, 4, 5 ]

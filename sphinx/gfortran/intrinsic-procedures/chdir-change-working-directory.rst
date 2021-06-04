@@ -38,7 +38,7 @@ CHDIR --- Change working directory
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_chdir
       CHARACTER(len=255) :: path

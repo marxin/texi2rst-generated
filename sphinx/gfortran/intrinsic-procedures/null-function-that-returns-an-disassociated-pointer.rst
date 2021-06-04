@@ -39,7 +39,7 @@ NULL --- Function that returns an disassociated pointer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 

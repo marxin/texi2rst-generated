@@ -41,7 +41,7 @@ ASIND --- Arcsine function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_asind
       real(8) :: x = 0.866_8

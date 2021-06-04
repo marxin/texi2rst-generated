@@ -51,7 +51,7 @@ MOD --- Remainder function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_mod
       print *, mod(17,3)

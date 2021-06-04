@@ -36,7 +36,7 @@ MOVE_ALLOC --- Move allocation from one object to another
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_move_alloc
         integer, allocatable :: a(:), b(:)

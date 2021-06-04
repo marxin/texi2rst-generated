@@ -41,7 +41,7 @@ SIN --- Sine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sin
       real :: x = 0.0

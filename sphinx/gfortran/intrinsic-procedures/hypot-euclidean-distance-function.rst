@@ -33,7 +33,7 @@ HYPOT --- Euclidean distance function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_hypot
       real(4) :: x = 1.e0_4, y = 0.5e0_4

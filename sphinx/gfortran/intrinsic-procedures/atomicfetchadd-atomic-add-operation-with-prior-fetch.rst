@@ -40,7 +40,7 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

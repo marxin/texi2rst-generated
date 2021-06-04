@@ -37,7 +37,7 @@ ATOMIC_XOR --- Atomic bitwise OR operation
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

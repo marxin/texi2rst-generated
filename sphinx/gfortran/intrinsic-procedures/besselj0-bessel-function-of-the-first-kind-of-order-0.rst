@@ -38,7 +38,7 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besj0
       real(8) :: x = 0.0_8

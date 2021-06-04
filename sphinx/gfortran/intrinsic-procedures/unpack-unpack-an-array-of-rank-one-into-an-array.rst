@@ -39,7 +39,7 @@ UNPACK --- Unpack an array of rank one into an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_unpack
       integer :: vector(2)  = (/1,1/)

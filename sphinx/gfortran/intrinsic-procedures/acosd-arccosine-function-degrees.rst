@@ -41,7 +41,7 @@ ACOSD --- Arccosine function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_acosd
       real(8) :: x = 0.866_8

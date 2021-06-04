@@ -32,7 +32,7 @@ ISNAN --- Test for a NaN
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_nan
       implicit none

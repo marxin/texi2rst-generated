@@ -31,7 +31,7 @@ TRIM --- Remove trailing blank characters of a string
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_trim
       CHARACTER(len=10), PARAMETER :: s = "GFORTRAN  "

@@ -56,7 +56,7 @@ ETIME --- Execution time subroutine (or function)
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_etime
         integer(8) :: i, j

@@ -38,7 +38,7 @@ COTAN --- Cotangent function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cotan
       real(8) :: x = 0.165_8

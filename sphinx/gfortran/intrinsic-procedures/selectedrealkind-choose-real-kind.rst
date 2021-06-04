@@ -61,7 +61,7 @@ SELECTED_REAL_KIND --- Choose real kind
     :samp:`-5 if there is no real type with the given {RADIX}`
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program real_kinds
       integer,parameter :: p6 = selected_real_kind(6)

@@ -28,7 +28,7 @@ GERROR --- Get last system error message
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_gerror
       CHARACTER(len=100) :: msg

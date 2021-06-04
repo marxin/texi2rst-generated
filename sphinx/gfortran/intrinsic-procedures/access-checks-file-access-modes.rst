@@ -42,7 +42,7 @@ ACCESS --- Checks file access modes
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program access_test
       implicit none

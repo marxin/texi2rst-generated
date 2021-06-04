@@ -42,7 +42,7 @@ SCAN --- Scan a string for the presence of a set of characters
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_scan
       WRITE(*,*) SCAN("FORTRAN", "AO")          ! 2, found 'O'

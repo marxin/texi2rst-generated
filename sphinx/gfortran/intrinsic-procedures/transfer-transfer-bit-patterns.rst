@@ -57,7 +57,7 @@ TRANSFER --- Transfer bit patterns
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_transfer
       integer :: x = 2143289344

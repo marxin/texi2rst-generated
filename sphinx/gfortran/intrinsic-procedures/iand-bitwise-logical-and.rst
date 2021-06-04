@@ -46,7 +46,7 @@ IAND --- Bitwise logical and
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_iand
       INTEGER :: a, b

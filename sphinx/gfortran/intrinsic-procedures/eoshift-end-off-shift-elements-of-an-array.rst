@@ -51,7 +51,7 @@ EOSHIFT --- End-off shift elements of an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_eoshift
         integer, dimension(3,3) :: a

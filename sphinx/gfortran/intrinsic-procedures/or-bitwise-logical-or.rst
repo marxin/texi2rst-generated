@@ -46,7 +46,7 @@ OR --- Bitwise logical OR
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_or
       LOGICAL :: T = .TRUE., F = .FALSE.

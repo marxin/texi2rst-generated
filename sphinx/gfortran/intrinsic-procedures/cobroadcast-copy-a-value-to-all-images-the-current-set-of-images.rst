@@ -39,7 +39,7 @@ CO_BROADCAST --- Copy a value to all images the current set of images
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
       integer :: val(3)

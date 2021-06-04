@@ -21,13 +21,13 @@ FSEEK --- Low level file positioning subroutine
   In :command:`g77`, the ``FSEEK`` takes a statement label instead of a 
   :samp:`{STATUS}` variable. If FSEEK is used in old code, change
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       CALL FSEEK(UNIT, OFFSET, WHENCE, *label)
 
   to
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       INTEGER :: status
       CALL FSEEK(UNIT, OFFSET, WHENCE, status)
@@ -59,7 +59,7 @@ FSEEK --- Low level file positioning subroutine
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_fseek
       INTEGER, PARAMETER :: SEEK_SET = 0, SEEK_CUR = 1, SEEK_END = 2

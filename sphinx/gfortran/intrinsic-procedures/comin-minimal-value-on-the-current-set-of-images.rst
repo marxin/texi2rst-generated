@@ -40,7 +40,7 @@ CO_MIN --- Minimal value on the current set of images
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
       integer :: val

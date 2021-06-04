@@ -41,7 +41,7 @@ IDATE --- Get current local time subroutine (day/month/year)
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_idate
       integer, dimension(3) :: tarray

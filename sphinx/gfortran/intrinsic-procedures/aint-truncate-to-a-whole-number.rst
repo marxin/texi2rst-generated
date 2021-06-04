@@ -42,7 +42,7 @@ AINT --- Truncate to a whole number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_aint
       real(4) x4

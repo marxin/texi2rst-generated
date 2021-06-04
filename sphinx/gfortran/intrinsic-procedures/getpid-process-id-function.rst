@@ -27,7 +27,7 @@ GETPID --- Process ID function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program info
       print *, "The current process ID is ", getpid()

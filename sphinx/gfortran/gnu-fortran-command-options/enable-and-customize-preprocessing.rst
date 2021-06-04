@@ -51,7 +51,7 @@ information on preprocessing in :command:`gfortran`.
   of finding out what is predefined in your version of the preprocessor.
   Assuming you have no file foo.f90, the command
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       touch foo.f90; gfortran -cpp -E -dM foo.f90
 
