@@ -46,7 +46,7 @@ ar
 ranlib
   This should be a program to construct a symbol table in an archive file.
 
-  The installation of GCC will find these programs in that directory,
+The installation of GCC will find these programs in that directory,
 and copy or link them to the proper place to for the cross-compiler to
 find them when run later.
 

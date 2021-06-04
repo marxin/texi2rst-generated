@@ -441,6 +441,7 @@ corresponding :option:`--without` option.
 .. option:: --with-gnu-as
 
   .. _with-gnu-as:
+
   Specify that the compiler should assume that the
   assembler it finds is the GNU assembler.  However, this does not modify
   the rules to find an assembler and will result in confusion if the
