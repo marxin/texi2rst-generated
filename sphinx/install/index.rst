@@ -4,7 +4,7 @@ Welcome to install documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   installing-gcc
   prerequisites
@@ -17,4 +17,4 @@ Contents:
   host-target-specific-installation-notes-for-gcc
   gnu-free-documentation-license.rst
 
-  option-index
+  indices-and-tables
