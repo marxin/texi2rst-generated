@@ -42,7 +42,7 @@ SQRT --- Square-root function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sqrt
       real(8) :: x = 2.0_8

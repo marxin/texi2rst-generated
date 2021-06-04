@@ -40,7 +40,7 @@ ATANH --- Inverse hyperbolic tangent function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_atanh
       REAL, DIMENSION(3) :: x = (/ -1.0, 0.0, 1.0 /)

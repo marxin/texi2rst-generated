@@ -38,7 +38,7 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

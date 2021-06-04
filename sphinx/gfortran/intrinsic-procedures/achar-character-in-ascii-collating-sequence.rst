@@ -37,7 +37,7 @@ ACHAR --- Character in ASCII collating sequence
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_achar
       character c

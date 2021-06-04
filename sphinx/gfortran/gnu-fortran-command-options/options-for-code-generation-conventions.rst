@@ -109,19 +109,19 @@ it.
   ``max_count()`` are external functions while ``my_var`` and
   ``lvar`` are local variables, a statement like
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     I = J() + MAX_COUNT (MY_VAR, LVAR)
 
   is implemented as something akin to:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     i = j_() + max_count__(&my_var__, &lvar);
 
   With :option:`-fno-underscoring`, the same statement is implemented as:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     i = j() + max_count(&my_var, &lvar);
 
@@ -279,7 +279,7 @@ it.
 
     Example: Assuming you have a file foo.f90, the command
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       gfortran -fcheck=all,no-array-temps foo.f90
 
@@ -342,7 +342,7 @@ it.
   array constructors.  The code below requires this option to expand
   the array at compile time.
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
     implicit none
@@ -428,7 +428,7 @@ it.
   have to be packed, that is put into contiguous memory. An example is
   the call to ``foo`` in
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       subroutine foo(a)
          real, dimension(*) :: a
@@ -604,7 +604,7 @@ it.
   statements, regardless of whether these functions are marked
   ``PURE`` or not. For example, in
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
       a = f(b,c) + f(b,c)
 

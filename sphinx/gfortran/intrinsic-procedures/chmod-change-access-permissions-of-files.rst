@@ -48,7 +48,7 @@ CHMOD --- Change access permissions of files
 :samp:`{Example}:`
   ``CHMOD`` as subroutine
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program chmod_test
       implicit none
@@ -59,7 +59,7 @@ CHMOD --- Change access permissions of files
 
   ``CHMOD`` as function:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program chmod_test
       implicit none

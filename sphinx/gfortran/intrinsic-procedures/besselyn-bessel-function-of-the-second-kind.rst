@@ -55,7 +55,7 @@ BESSEL_YN --- Bessel function of the second kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besyn
       real(8) :: x = 1.0_8

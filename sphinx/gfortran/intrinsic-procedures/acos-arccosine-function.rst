@@ -37,7 +37,7 @@ ACOS --- Arccosine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_acos
       real(8) :: x = 0.866_8

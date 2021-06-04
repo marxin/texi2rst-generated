@@ -119,7 +119,7 @@ are optional and must be either "(inbranch)" or "(notinbranch)".
 ``IF`` statement is optional and is used to filter multilib ABIs
 for the built-in that should be vectorized.  Example usage:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   !GCC$ builtin (sinf) attributes simd (notinbranch) if('x86_64')
 

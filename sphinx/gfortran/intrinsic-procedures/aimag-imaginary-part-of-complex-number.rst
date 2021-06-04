@@ -40,7 +40,7 @@ AIMAG --- Imaginary part of complex number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_aimag
       complex(4) z4

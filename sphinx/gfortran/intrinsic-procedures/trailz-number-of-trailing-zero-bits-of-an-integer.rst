@@ -31,7 +31,7 @@ TRAILZ --- Number of trailing zero bits of an integer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_trailz
       WRITE (*,*) TRAILZ(8)  ! prints 3

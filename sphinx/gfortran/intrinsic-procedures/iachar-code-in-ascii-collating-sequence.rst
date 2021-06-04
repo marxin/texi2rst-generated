@@ -38,7 +38,7 @@ IACHAR --- Code in ASCII collating sequence
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_iachar
       integer i

@@ -40,7 +40,7 @@ IRAND --- Integer pseudo-random number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_irand
       integer,parameter :: seed = 86456

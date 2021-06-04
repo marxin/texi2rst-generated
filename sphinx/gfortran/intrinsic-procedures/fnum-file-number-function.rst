@@ -31,7 +31,7 @@ FNUM --- File number function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_fnum
       integer :: i

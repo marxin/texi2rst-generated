@@ -35,7 +35,7 @@ ADJUSTL --- Left adjust a string
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_adjustl
       character(len=20) :: str = '   gfortran'

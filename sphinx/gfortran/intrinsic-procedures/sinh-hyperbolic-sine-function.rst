@@ -37,7 +37,7 @@ SINH --- Hyperbolic sine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sinh
       real(8) :: x = - 1.0_8

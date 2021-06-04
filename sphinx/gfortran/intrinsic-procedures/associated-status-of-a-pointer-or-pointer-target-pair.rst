@@ -67,7 +67,7 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_associated
        implicit none

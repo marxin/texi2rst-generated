@@ -38,7 +38,7 @@ RANDOM_NUMBER --- Pseudo-random number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_random_number
       REAL :: r(5,5)

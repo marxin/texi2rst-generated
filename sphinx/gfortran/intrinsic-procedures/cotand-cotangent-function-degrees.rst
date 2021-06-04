@@ -38,7 +38,7 @@ COTAND --- Cotangent function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cotand
       real(8) :: x = 0.165_8

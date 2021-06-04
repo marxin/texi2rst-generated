@@ -43,7 +43,7 @@ CSHIFT --- Circular shift elements of an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cshift
         integer, dimension(3,3) :: a

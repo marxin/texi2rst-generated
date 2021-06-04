@@ -7,7 +7,7 @@ By setting the :envvar:`GFORTRAN_CONVERT_UNIT` variable, it is possible
 to change the representation of data for unformatted files.
 The syntax for the :envvar:`GFORTRAN_CONVERT_UNIT` variable is:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   GFORTRAN_CONVERT_UNIT: mode | mode ';' exception | exception ;
   mode: 'native' | 'swap' | 'big_endian' | 'little_endian' ;
@@ -48,14 +48,14 @@ for :command:`csh`-compatible shells.
 
 Example for :command:`sh`:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   $ gfortran foo.f90
   $ GFORTRAN_CONVERT_UNIT='big_endian;native:10-20' ./a.out
 
 Example code for :command:`csh`:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   % gfortran foo.f90
   % setenv GFORTRAN_CONVERT_UNIT 'big_endian;native:10-20'

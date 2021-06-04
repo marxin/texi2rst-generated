@@ -36,7 +36,7 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besy1
       real(8) :: x = 1.0_8

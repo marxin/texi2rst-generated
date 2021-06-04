@@ -49,7 +49,7 @@ LOG --- Natural logarithm function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_log
       real(8) :: x = 2.7182818284590451_8

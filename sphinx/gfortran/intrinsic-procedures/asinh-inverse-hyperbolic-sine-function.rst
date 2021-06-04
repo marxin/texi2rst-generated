@@ -40,7 +40,7 @@ ASINH --- Inverse hyperbolic sine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_asinh
       REAL(8), DIMENSION(3) :: x = (/ -1.0, 0.0, 1.0 /)

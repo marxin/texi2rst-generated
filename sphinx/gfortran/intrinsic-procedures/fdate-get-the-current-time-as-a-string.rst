@@ -48,7 +48,7 @@ FDATE --- Get the current time as a string
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_fdate
         integer(8) :: i, j

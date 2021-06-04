@@ -45,7 +45,7 @@ CTIME --- Convert a time into a string
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_ctime
         integer(8) :: i

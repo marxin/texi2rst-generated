@@ -48,7 +48,7 @@ ATAND --- Arctangent function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_atand
       real(8) :: x = 2.866_8

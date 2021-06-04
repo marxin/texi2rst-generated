@@ -55,7 +55,7 @@ BESSEL_JN --- Bessel function of the first kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besjn
       real(8) :: x = 1.0_8

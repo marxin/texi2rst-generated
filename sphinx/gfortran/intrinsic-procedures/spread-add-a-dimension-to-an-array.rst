@@ -40,7 +40,7 @@ SPREAD --- Add a dimension to an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_spread
       INTEGER :: a = 1, b(2) = (/ 1, 2 /)

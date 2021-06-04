@@ -30,7 +30,7 @@ DREAL --- Double real part function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dreal
         complex(8) :: z = (1.3_8,7.2_8)

@@ -34,7 +34,7 @@ POPCNT --- Number of bits set
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_population
       print *, popcnt(127),       poppar(127)

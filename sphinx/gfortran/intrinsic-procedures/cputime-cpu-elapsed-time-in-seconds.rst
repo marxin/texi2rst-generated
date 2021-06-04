@@ -41,7 +41,7 @@ CPU_TIME --- CPU elapsed time in seconds
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cpu_time
         real :: start, finish

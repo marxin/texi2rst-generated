@@ -33,7 +33,7 @@ SPACING --- Smallest distance between two numbers of a given type
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_spacing
       INTEGER, PARAMETER :: SGL = SELECTED_REAL_KIND(p=6, r=37)

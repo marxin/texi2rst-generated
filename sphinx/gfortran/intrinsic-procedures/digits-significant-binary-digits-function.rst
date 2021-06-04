@@ -32,7 +32,7 @@ DIGITS --- Significant binary digits function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_digits
         integer :: i = 12345

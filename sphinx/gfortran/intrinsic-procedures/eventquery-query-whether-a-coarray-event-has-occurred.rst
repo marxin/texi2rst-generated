@@ -35,7 +35,7 @@ EVENT_QUERY --- Query whether a coarray event has occurred
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

@@ -38,7 +38,7 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besj1
       real(8) :: x = 1.0_8

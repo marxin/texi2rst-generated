@@ -35,7 +35,7 @@ GETLOG --- Get login name
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM TEST_GETLOG
       CHARACTER(32) :: login

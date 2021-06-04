@@ -52,7 +52,7 @@ SUM --- Sum of array elements
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_sum
       INTEGER :: x(5) = (/ 1, 2, 3, 4 ,5 /)

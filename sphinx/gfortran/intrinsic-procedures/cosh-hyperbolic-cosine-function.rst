@@ -39,7 +39,7 @@ COSH --- Hyperbolic cosine function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cosh
       real(8) :: x = 1.0_8

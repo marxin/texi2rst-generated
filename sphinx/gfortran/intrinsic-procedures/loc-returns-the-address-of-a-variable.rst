@@ -32,7 +32,7 @@ LOC --- Returns the address of a variable
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_loc
       integer :: i

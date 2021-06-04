@@ -40,7 +40,7 @@ BTEST --- Bit test function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_btest
         integer :: i = 32768 + 1024 + 64

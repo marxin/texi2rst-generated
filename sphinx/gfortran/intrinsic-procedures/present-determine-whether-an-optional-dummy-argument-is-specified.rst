@@ -31,7 +31,7 @@ PRESENT --- Determine whether an optional dummy argument is specified
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_present
       WRITE(*,*) f(), f(42)      ! "F T"

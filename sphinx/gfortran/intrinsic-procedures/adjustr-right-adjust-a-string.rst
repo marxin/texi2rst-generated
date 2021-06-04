@@ -35,7 +35,7 @@ ADJUSTR --- Right adjust a string
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_adjustr
       character(len=20) :: str = 'gfortran'

@@ -44,7 +44,7 @@ RESHAPE --- Function to reshape an array
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_reshape
       INTEGER, DIMENSION(4) :: x

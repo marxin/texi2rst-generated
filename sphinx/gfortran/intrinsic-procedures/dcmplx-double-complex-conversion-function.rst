@@ -38,7 +38,7 @@ DCMPLX --- Double complex conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dcmplx
         integer :: i = 42

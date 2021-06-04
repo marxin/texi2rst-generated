@@ -31,7 +31,7 @@ DPROD --- Double product function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_dprod
         real :: x = 5.2

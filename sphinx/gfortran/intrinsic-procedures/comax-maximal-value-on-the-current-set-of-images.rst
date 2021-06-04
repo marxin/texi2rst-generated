@@ -40,7 +40,7 @@ CO_MAX --- Maximal value on the current set of images
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test
       integer :: val

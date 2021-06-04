@@ -37,7 +37,7 @@ GAMMA --- Gamma function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_gamma
       real :: x = 1.0

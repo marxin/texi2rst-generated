@@ -41,7 +41,7 @@ EXP --- Exponential function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_exp
       real :: x = 1.0

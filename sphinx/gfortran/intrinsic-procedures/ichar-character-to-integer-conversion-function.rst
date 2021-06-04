@@ -36,7 +36,7 @@ ICHAR --- Character-to-integer conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_ichar
       integer i
@@ -58,7 +58,7 @@ ICHAR --- Character-to-integer conversion function
   functionality is provided by internal-file I/O, as in the following
   example:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program read_val
       integer value

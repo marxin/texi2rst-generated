@@ -33,7 +33,7 @@ SELECTED_CHAR_KIND --- Choose character kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program character_kind
       use iso_fortran_env

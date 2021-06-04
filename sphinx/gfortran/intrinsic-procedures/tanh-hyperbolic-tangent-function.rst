@@ -39,7 +39,7 @@ TANH --- Hyperbolic tangent function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_tanh
       real(8) :: x = 2.1_8

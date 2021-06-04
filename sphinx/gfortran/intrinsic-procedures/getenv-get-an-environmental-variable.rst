@@ -42,7 +42,7 @@ GETENV --- Get an environmental variable
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_getenv
       CHARACTER(len=255) :: homedir

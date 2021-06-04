@@ -35,7 +35,7 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_command_argument_count
         integer :: count

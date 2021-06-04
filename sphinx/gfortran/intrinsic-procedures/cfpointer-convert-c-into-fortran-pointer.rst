@@ -35,7 +35,7 @@ C_F_POINTER --- Convert C into Fortran pointer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program main
       use iso_c_binding

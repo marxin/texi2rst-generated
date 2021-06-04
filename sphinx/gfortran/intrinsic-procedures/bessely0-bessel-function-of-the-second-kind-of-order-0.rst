@@ -36,7 +36,7 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_besy0
       real(8) :: x = 0.0_8

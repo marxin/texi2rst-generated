@@ -38,7 +38,7 @@ LOG_GAMMA --- Logarithm of the Gamma function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_log_gamma
       real :: x = 1.0

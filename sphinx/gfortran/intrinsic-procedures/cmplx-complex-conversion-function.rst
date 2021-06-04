@@ -43,7 +43,7 @@ CMPLX --- Complex conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cmplx
         integer :: i = 42

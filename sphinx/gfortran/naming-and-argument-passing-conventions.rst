@@ -112,7 +112,7 @@ type of the hidden character length argument was a C ``int``.  In
 order to retain compatibility with older versions, one can e.g. for
 the following Fortran procedure
 
-.. code-block:: c++
+.. code-block:: fortran
 
   subroutine fstrlen (s, a)
      character(len=*) :: s
@@ -122,7 +122,7 @@ the following Fortran procedure
 
 define the corresponding C prototype as follows:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   #if __GNUC__ > 7
   typedef size_t fortran_charlen_t;

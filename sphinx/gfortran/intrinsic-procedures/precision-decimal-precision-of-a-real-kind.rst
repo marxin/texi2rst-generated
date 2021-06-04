@@ -33,7 +33,7 @@ PRECISION --- Decimal precision of a real kind
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program prec_and_range
       real(kind=4) :: x(2)

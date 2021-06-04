@@ -36,7 +36,7 @@ GETCWD --- Get current working directory
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_getcwd
       CHARACTER(len=255) :: cwd

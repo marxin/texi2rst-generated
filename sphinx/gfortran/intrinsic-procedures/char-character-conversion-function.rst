@@ -32,7 +32,7 @@ CHAR --- Character conversion function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_char
         integer :: i = 74

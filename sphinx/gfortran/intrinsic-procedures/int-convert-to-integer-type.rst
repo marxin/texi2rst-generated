@@ -50,7 +50,7 @@ INT --- Convert to integer type
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_int
       integer :: i = 42

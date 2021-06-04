@@ -39,7 +39,7 @@ MALLOC --- Allocate dynamic memory
   The following example demonstrates the use of ``MALLOC`` and
   ``FREE`` with Cray pointers.
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_malloc
       implicit none

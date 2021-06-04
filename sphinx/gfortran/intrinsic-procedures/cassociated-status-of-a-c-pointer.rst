@@ -36,7 +36,7 @@ C_ASSOCIATED --- Status of a C pointer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     subroutine association_test(a,b)
       use iso_c_binding, only: c_associated, c_loc, c_ptr

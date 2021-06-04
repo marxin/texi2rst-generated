@@ -36,7 +36,7 @@ NINT --- Nearest whole number
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_nint
       real(4) x4

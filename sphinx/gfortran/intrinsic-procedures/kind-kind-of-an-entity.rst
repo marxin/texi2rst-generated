@@ -33,7 +33,7 @@ KIND --- Kind of an entity
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_kind
       integer,parameter :: kc = kind(' ')

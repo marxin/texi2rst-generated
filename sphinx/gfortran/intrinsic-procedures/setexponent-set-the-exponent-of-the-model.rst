@@ -37,7 +37,7 @@ SET_EXPONENT --- Set the exponent of the model
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_setexp
       REAL :: x = 178.1387e-4

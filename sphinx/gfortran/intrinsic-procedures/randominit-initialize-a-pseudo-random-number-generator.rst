@@ -40,7 +40,7 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_random_seed
       implicit none

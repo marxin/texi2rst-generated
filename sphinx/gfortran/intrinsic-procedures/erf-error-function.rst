@@ -31,7 +31,7 @@ ERF --- Error function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_erf
       real(8) :: x = 0.17_8

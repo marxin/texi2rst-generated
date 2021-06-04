@@ -49,7 +49,7 @@ FGET --- Read a single character in stream mode from stdin
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_fget
       INTEGER, PARAMETER :: strlen = 100

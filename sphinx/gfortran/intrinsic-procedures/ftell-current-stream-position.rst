@@ -39,7 +39,7 @@ FTELL --- Current stream position
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_ftell
       INTEGER :: i

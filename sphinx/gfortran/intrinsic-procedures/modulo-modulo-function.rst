@@ -47,7 +47,7 @@ MODULO --- Modulo function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_modulo
       print *, modulo(17,3)

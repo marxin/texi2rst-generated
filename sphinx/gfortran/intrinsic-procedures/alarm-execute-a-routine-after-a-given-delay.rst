@@ -39,7 +39,7 @@ ALARM --- Execute a routine after a given delay
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_alarm
       external handler_print

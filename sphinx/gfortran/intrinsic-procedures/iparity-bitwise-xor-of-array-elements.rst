@@ -49,7 +49,7 @@ IPARITY --- Bitwise XOR of array elements
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_iparity
       INTEGER(1) :: a(2)

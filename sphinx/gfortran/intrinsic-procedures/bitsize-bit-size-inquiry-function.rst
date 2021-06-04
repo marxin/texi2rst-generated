@@ -34,7 +34,7 @@ BIT_SIZE --- Bit size inquiry function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_bit_size
         integer :: i = 123

@@ -51,7 +51,7 @@ ABS --- Absolute value
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_abs
       integer :: i = -1

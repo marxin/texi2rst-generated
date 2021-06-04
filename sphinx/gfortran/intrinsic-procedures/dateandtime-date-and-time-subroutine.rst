@@ -61,7 +61,7 @@ DATE_AND_TIME --- Date and time subroutine
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_time_and_date
         character(8)  :: date

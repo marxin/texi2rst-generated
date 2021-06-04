@@ -34,7 +34,7 @@ COMPILER_OPTIONS --- Options passed to the compiler
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
        use iso_fortran_env
        print '(4a)', 'This file was compiled by ', &

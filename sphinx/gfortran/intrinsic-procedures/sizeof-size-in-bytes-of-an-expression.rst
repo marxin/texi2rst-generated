@@ -43,7 +43,7 @@ SIZEOF --- Size in bytes of an expression
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
        integer :: i
        real :: r, s(5)

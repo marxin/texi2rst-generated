@@ -31,7 +31,7 @@ LEADZ --- Number of leading zero bits of an integer
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_leadz
       WRITE (*,*) BIT_SIZE(1)  ! prints 32

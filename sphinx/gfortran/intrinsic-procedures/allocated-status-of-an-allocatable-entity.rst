@@ -39,7 +39,7 @@ ALLOCATED --- Status of an allocatable entity
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_allocated
       integer :: i = 4

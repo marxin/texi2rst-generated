@@ -41,7 +41,7 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_itime
       integer, dimension(3) :: tarray

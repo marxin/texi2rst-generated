@@ -67,7 +67,7 @@ Old-style kind specifications
 GNU Fortran allows old-style kind specifications in declarations.  These
 look like:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         TYPESPEC*size x,y,z
 
@@ -79,7 +79,7 @@ parts.)  The statement then declares ``x``, ``y`` and ``z`` to
 be of type ``TYPESPEC`` with the appropriate kind.  This is
 equivalent to the standard-conforming declaration
 
-.. code-block:: c++
+.. code-block:: fortran
 
         TYPESPEC(k) x,y,z
 
@@ -88,7 +88,7 @@ kind parameters are implementation-dependent, use the ``KIND``,
 ``SELECTED_INT_KIND`` and ``SELECTED_REAL_KIND`` intrinsics to retrieve
 the correct value, for instance ``REAL*8 x`` can be replaced by:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   INTEGER, PARAMETER :: dbl = KIND(1.0d0)
   REAL(KIND=dbl) :: x
@@ -101,7 +101,7 @@ Old-style variable initialization
 GNU Fortran allows old-style initialization of variables of the
 form:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         INTEGER i/1/,j/2/
         REAL x(2,2) /3*0.,1./
@@ -118,7 +118,7 @@ declarations.
 Examples of standard-conforming code equivalent to the above example
 are:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   ! Fortran 90
         INTEGER :: i = 1, j = 2
@@ -147,7 +147,7 @@ namelist name.  Two extensions are permitted:
 
 Old-style use of :samp:`$` instead of :samp:`&`
 
-.. code-block:: c++
+.. code-block:: fortran
 
   $MYNML
    X(:)%Y(2) = 1.0 2.0 3.0
@@ -161,7 +161,7 @@ Querying of the namelist when inputting from stdin.  After at least
 one space, entering :samp:`?` sends to stdout the namelist name and the names of
 the variables in the namelist:
 
-.. code-block:: c++
+.. code-block:: fortran
 
    ?
 
@@ -174,7 +174,7 @@ the variables in the namelist:
 Entering :samp:`=?` outputs the namelist to stdout, as if
 ``WRITE(*,NML = mynml)`` had been called:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   =?
 
@@ -190,7 +190,7 @@ messages to stderr and execution continues, even if ``IOSTAT`` is set.
 ``PRINT`` namelist is permitted.  This causes an error if
 :option:`-std`:samp:`=f95` is used.
 
-.. code-block:: c++
+.. code-block:: fortran
 
   PROGRAM test_print
     REAL, dimension (4)  ::  x = (/1.0, 2.0, 3.0, 4.0/)
@@ -203,7 +203,7 @@ Expanded namelist reads are permitted.  This causes an error if
 of the array will be given the value 0.00 and the two succeeding
 elements will be given the values 1.00 and 2.00.
 
-.. code-block:: c++
+.. code-block:: fortran
 
   &MYNML
     X(1,1) = 0.00 , 1.00 , 2.00
@@ -224,7 +224,7 @@ To support legacy codes, GNU Fortran permits the count field of the
 ``X`` edit descriptor in ``FORMAT`` statements to be omitted.
 When omitted, the count is implicitly assumed to be one.
 
-.. code-block:: c++
+.. code-block:: fortran
 
          PRINT 10, 2, 3
   10     FORMAT (I1, X, I1)
@@ -241,7 +241,7 @@ decriptor is permited if the :option:`-fdec-blank-format-item` is given on
 the command line. This is considered non-conforming code and is
 discouraged.
 
-.. code-block:: c++
+.. code-block:: fortran
 
          PRINT 10, 2, 3
   10     FORMAT ('FOO='I1' BAR='I2)
@@ -258,7 +258,7 @@ specifications if and only if :option:`-std`:samp:`=legacy` is given on the
 command line.  This is considered non-conforming code and is
 discouraged.
 
-.. code-block:: c++
+.. code-block:: fortran
 
          REAL :: value
          READ(*,10) value
@@ -274,7 +274,7 @@ specifications if and only if :option:`-fdec-format-defaults` is given on the
 command line.  Default widths will be used. This is considered non-conforming
 code and is discouraged.
 
-.. code-block:: c++
+.. code-block:: fortran
 
          REAL :: value1
          INTEGER :: value2
@@ -358,7 +358,7 @@ As an extension, GNU Fortran allows unary plus and unary minus operators
 to appear as the second operand of binary arithmetic operators without
 the need for parenthesis.
 
-.. code-block:: c++
+.. code-block:: fortran
 
          X = Y * -Z
 
@@ -379,12 +379,12 @@ zero, and ``.TRUE.`` is interpreted as one.  When converting from
 ``INTEGER`` to ``LOGICAL``, the value zero is interpreted as
 ``.FALSE.`` and any nonzero value is interpreted as ``.TRUE.``.
 
-.. code-block:: c++
+.. code-block:: fortran
 
           LOGICAL :: l
           l = 1
 
-.. code-block:: c++
+.. code-block:: fortran
 
           INTEGER :: i
           i = .TRUE.
@@ -411,7 +411,7 @@ the variable in which it is stored.
 
 Examples of valid uses of Hollerith constants:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         complex*16 x(2)
         data x /16Habcdefghijklmnop, 16Hqrstuvwxyz012345/
@@ -420,7 +420,7 @@ Examples of valid uses of Hollerith constants:
 
 Examples of Hollerith constants:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         integer*4 a
         a = 0H         ! Invalid, at least one character is needed.
@@ -437,7 +437,7 @@ case where the intent is specifically to initialize a numeric variable
 with a given byte sequence.  In these cases, the same result can be
 obtained by using the ``TRANSFER`` statement, as in this example.
 
-.. code-block:: c++
+.. code-block:: fortran
 
         integer(kind=4) :: a
         a = transfer ("abcd", a)     ! equivalent to: a = 4Habcd
@@ -445,7 +445,7 @@ obtained by using the ``TRANSFER`` statement, as in this example.
 The use of the :option:`-fdec` option extends support of Hollerith constants
 to comparisons:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         integer*4 a
         a = 4hABCD
@@ -475,7 +475,7 @@ variable in which it is stored.
 
 Examples:
 
-.. code-block:: c++
+.. code-block:: fortran
 
         integer*4 x
         data x / 'abcd' /
@@ -497,13 +497,13 @@ variables: an integer "pointer" that holds a memory address, and a
 
 Pointer/pointee pairs are declared in statements of the form:
 
-.. code-block:: c++
+.. code-block:: fortran
 
           pointer ( <pointer> , <pointee> )
 
 or,
 
-.. code-block:: c++
+.. code-block:: fortran
 
           pointer ( <pointer1> , <pointee1> ), ( <pointer2> , <pointee2> ), ...
 
@@ -522,7 +522,7 @@ declared as an integer prior to the pointer statement.  However, some
 machines have default integer sizes that are different than the size
 of a pointer, and so the following code is not portable:
 
-.. code-block:: c++
+.. code-block:: fortran
 
           integer ipt
           pointer (ipt, iarr)
@@ -540,7 +540,7 @@ as C pointer arithmetic.  Cray pointers are just ordinary integers, so
 the user is responsible for determining how many bytes to add to a
 pointer in order to increment it.  Consider the following example:
 
-.. code-block:: c++
+.. code-block:: fortran
 
           real target(10)
           real pointee(10)
@@ -559,7 +559,7 @@ To get the address of elements, this extension provides an intrinsic
 function ``LOC()``.  The ``LOC()`` function is equivalent to the
 ``&`` operator in C, except the address is cast to an integer type:
 
-.. code-block:: c++
+.. code-block:: fortran
 
           real ar(10)
           pointer(ipt, arpte(10))
@@ -573,7 +573,7 @@ The pointer can also be set by a call to the ``MALLOC`` intrinsic
 Cray pointees often are used to alias an existing variable.  For
 example:
 
-.. code-block:: c++
+.. code-block:: fortran
 
           integer target(10)
           integer iarr(10)
@@ -610,7 +610,7 @@ in equivalence, common, or data statements.
 A Cray pointer may also point to a function or a subroutine.  For
 example, the following excerpt is valid:
 
-.. code-block:: c++
+.. code-block:: fortran
 
     implicit none
     external sub
@@ -657,7 +657,7 @@ Valid values for ``CONVERT`` are:
 
 Using the option could look like this:
 
-.. code-block:: c++
+.. code-block:: fortran
 
     open(file='big.dat',form='unformatted',access='sequential', &
          convert='big_endian')
@@ -805,7 +805,7 @@ a do-nothing.  ``%LOC`` has the same effect as a Fortran pointer.
 
 An example of passing an argument by value to a C subroutine foo.:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   C
   C prototype      void foo_ (float x);
@@ -864,7 +864,7 @@ replace the period ( ``.`` ) by the percent sign ( ``%`` ).
 
 Here is an example of code using the non portable record structure syntax:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   ! Declaring a structure named ``item'' and containing three fields:
   ! an integer ID, an description string and a floating-point price.
@@ -892,7 +892,7 @@ Here is an example of code using the non portable record structure syntax:
 
 This code can easily be rewritten in the Fortran 90 syntax as following:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   ! ``STRUCTURE /name/ ... END STRUCTURE'' becomes
   ! ``TYPE name ... END TYPE''
@@ -930,7 +930,7 @@ rules and exceptions:
   for alignment purposes.  As an example, the following structure will consist
   of at least sixteen bytes:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     structure /padded/
       character(4) start
@@ -941,7 +941,7 @@ rules and exceptions:
 * Structures may share names with other symbols. For example, the following
   is invalid for derived types, but valid for structures:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     structure /header/
       ! ...
@@ -951,7 +951,7 @@ rules and exceptions:
 * Structure types may be declared nested within another parent structure.
   The syntax is:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     structure /type-name/
         ...
@@ -962,7 +962,7 @@ rules and exceptions:
   anonymous, and other structures of the same type cannot be instantiated. The
   following shows some examples:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     structure /appointment/
       ! nested structure definition: app_time is an array of two 'time'
@@ -1018,7 +1018,7 @@ component is in (the compiler gets to figure that out).
 
 Here is a small example:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   structure /myunion/
   union
@@ -1042,7 +1042,7 @@ Here is a small example:
 
 The two maps share memory, and the size of the union is ultimately six bytes:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   0    1    2    3    4   5   6     Byte offset
   -------------------------------
@@ -1057,7 +1057,7 @@ The two maps share memory, and the size of the union is ultimately six bytes:
 
 Following is an example mirroring the layout of an Intel x86_64 register:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   structure /reg/
     union ! U0                ! rax
@@ -1119,7 +1119,7 @@ Similar to the D/C prefixes to real functions to specify the input/output
 types, GNU Fortran offers B/I/J/K prefixes to integer functions for
 compatibility with DEC programs. The types implied by each are:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   B - INTEGER(kind=1)
   I - INTEGER(kind=2)
@@ -1175,7 +1175,7 @@ blanket ``SAVE`` statements.
 
 Examples:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   subroutine f
     integer, automatic :: i  ! automatic variable
@@ -1184,7 +1184,7 @@ Examples:
     ...
   endsubroutine
 
-.. code-block:: c++
+.. code-block:: fortran
 
   subroutine f
     integer a, b, c, x, y, z
@@ -1195,7 +1195,7 @@ Examples:
     ! x and y are static
   endsubroutine
 
-.. code-block:: c++
+.. code-block:: fortran
 
   ! Compiled with -fno-automatic
   subroutine f
@@ -1268,11 +1268,11 @@ For compatibility, GNU Fortran will interpret ``TYPE`` statements as
 ``PRINT`` statements with the flag :option:`-fdec`.  With this flag asserted,
 the following two examples are equivalent:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   TYPE *, 'hello world'
 
-.. code-block:: c++
+.. code-block:: fortran
 
   PRINT *, 'hello world'
 
@@ -1289,13 +1289,13 @@ assignments. For compatibility, GNU Fortran supports the use of ``%LOC`` as
 an alias for the builtin ``LOC`` with :option:`-std`:samp:`=legacy`.  With this
 feature enabled the following two examples are equivalent:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   integer :: i, l
   l = %loc(i)
   call sub(l)
 
-.. code-block:: c++
+.. code-block:: fortran
 
   integer :: i
   call sub(%loc(i))
@@ -1323,7 +1323,7 @@ logical operators to allow integer operands, and performs the corresponding
 bitwise operation instead.  This flag is for compatibility only, and should be
 avoided in new code.  Consider:
 
-.. code-block:: c++
+.. code-block:: fortran
 
     INTEGER :: i, j
     i = z'33'
@@ -1380,7 +1380,7 @@ compile flag :option:`-fdec`, for compatibility.
   opening a unit for formatted writing, the exact ``CARRIAGECONTROL`` setting
   determines what characters to write between output records. The syntax is:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     OPEN(..., CARRIAGECONTROL=cc)
 
@@ -1415,7 +1415,7 @@ compile flag :option:`-fdec`, for compatibility.
   deleted on close (i.e. ``CLOSE`` with ``STATUS="DELETE"`` ). The syntax
   is:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     OPEN(..., READONLY)
 
@@ -1425,7 +1425,7 @@ compile flag :option:`-fdec`, for compatibility.
   it for controlled access from multiple processes/threads. The ``SHARE``
   specifier has several forms:
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     OPEN(..., SHARE=sh)
     OPEN(..., SHARED)
@@ -1462,7 +1462,7 @@ parentheses with :option:`-std`:samp:`=legacy`.  A warning is emitted if used wi
 :option:`-std`:samp:`=gnu`, and an error is acknowledged with a real Fortran standard
 flag ( :option:`-std`:samp:`=f95`, etc...).  These statements take the following form:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   implicit real (E)
   parameter e = 2.718282

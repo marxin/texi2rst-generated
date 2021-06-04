@@ -48,7 +48,7 @@ The format for unformatted sequential data can be duplicated using
 unformatted stream, as shown in the example program for an unformatted
 record containing a single subrecord:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   program main
     use iso_fortran_env, only: int32

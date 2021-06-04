@@ -31,7 +31,7 @@ ERFC_SCALED --- Error function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_erfc_scaled
       real(8) :: x = 0.17_8

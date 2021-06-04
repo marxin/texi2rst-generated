@@ -55,7 +55,7 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_random_seed
       implicit none

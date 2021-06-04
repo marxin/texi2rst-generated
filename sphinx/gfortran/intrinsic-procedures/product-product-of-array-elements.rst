@@ -52,7 +52,7 @@ PRODUCT --- Product of array elements
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_product
       INTEGER :: x(5) = (/ 1, 2, 3, 4 ,5 /)

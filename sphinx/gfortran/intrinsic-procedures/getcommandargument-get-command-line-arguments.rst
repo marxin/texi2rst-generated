@@ -49,7 +49,7 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_get_command_argument
       INTEGER :: i

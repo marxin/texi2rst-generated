@@ -31,7 +31,7 @@ EPSILON --- Epsilon function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_epsilon
         real :: x = 3.143

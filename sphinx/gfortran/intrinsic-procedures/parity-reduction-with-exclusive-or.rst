@@ -48,7 +48,7 @@ PARITY --- Reduction with exclusive OR
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_sum
       LOGICAL :: x(2) = [ .true., .false. ]

@@ -44,7 +44,7 @@ SIND --- Sine function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_sind
       real :: x = 0.0

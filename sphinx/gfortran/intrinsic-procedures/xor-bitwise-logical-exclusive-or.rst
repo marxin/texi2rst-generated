@@ -47,7 +47,7 @@ XOR --- Bitwise logical exclusive OR
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     PROGRAM test_xor
       LOGICAL :: T = .TRUE., F = .FALSE.

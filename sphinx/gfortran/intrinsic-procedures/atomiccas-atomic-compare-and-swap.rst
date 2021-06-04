@@ -43,7 +43,7 @@ ATOMIC_CAS --- Atomic compare and swap
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

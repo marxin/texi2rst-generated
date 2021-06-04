@@ -39,7 +39,7 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program atomic
       use iso_fortran_env

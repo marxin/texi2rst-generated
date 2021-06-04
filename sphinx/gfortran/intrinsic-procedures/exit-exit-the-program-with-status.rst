@@ -34,7 +34,7 @@ EXIT --- Exit the program with status.
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_exit
       integer :: STATUS = 0

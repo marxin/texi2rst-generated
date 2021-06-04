@@ -49,7 +49,7 @@ ANY --- Any value in MASK along DIM is true
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_any
       logical l

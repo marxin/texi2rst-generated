@@ -46,7 +46,7 @@ COSD --- Cosine function, degrees
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_cosd
       real :: x = 0.0

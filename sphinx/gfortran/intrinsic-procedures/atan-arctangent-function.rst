@@ -45,7 +45,7 @@ ATAN --- Arctangent function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_atan
       real(8) :: x = 2.866_8

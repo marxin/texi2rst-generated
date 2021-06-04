@@ -33,7 +33,7 @@ CONJG --- Complex conjugate function
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_conjg
         complex :: z = (2.0, 3.0)

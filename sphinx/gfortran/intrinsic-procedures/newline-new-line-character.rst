@@ -34,7 +34,7 @@ NEW_LINE --- New line character
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program newline
       implicit none

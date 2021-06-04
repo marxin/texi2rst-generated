@@ -58,7 +58,7 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
 
 :samp:`{Example}:`
 
-  .. code-block:: c++
+  .. code-block:: fortran
 
     program test_exec
       integer :: i
