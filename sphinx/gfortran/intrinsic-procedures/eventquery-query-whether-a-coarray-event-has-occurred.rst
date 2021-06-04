@@ -7,45 +7,37 @@ EVENT_QUERY --- Query whether a coarray event has occurred
 
 .. index:: Events, EVENT_QUERY
 
-:samp:`{Description}:`
+.. py:function:: CALL EVENT_QUERY (EVENT, COUNT [, STAT])
+
   ``EVENT_QUERY`` assignes the number of events to :samp:`{COUNT}` which have been
   posted to the :samp:`{EVENT}` variable and not yet been removed by calling
   ``EVENT WAIT``. When :samp:`{STAT}` is present and the invocation was successful,
   it is assigned the value 0. If it is present and the invocation has failed,
   it is assigned a positive value and :samp:`{COUNT}` is assigned the value -1.
 
-:samp:`{Standard}:`
-  TS 18508 or later
+  :samp:`{Standard}:` TS 18508 or later
 
-:samp:`{Class}:`
-  subroutine
+  :samp:`{Class}:` subroutine
 
-:samp:`{Syntax}:`
-  ``CALL EVENT_QUERY (EVENT, COUNT [, STAT])``
+  :param EVENT: (intent(IN)) Scalar of type ``EVENT_TYPE``,
+    defined in ``ISO_FORTRAN_ENV`` ; shall not be coindexed.
+  :param COUNT: (intent(out))Scalar integer with at least the
+    precision of default integer.
+  :param STAT: (optional) Scalar default-kind integer variable.
 
-:samp:`{Arguments}:`
-  ===============  ========================================================
-  :samp:`{EVENT}`  (intent(IN)) Scalar of type ``EVENT_TYPE``,
-                   defined in ``ISO_FORTRAN_ENV`` ; shall not be coindexed.
-  :samp:`{COUNT}`  (intent(out))Scalar integer with at least the
-                   precision of default integer.
-  :samp:`{STAT}`   (optional) Scalar default-kind integer variable.
-  ===============  ========================================================
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
-
-    program atomic
-      use iso_fortran_env
-      implicit none
-      type(event_type) :: event_value_has_been_set[*]
-      integer :: cnt
-      if (this_image() == 1) then
-        call event_query (event_value_has_been_set, cnt)
-        if (cnt > 0) write(*,*) "Value has been set"
-      elseif (this_image() == 2) then
-        event post (event_value_has_been_set[1])
-      end if
-    end program atomic
-
+      program atomic
+        use iso_fortran_env
+        implicit none
+        type(event_type) :: event_value_has_been_set[*]
+        integer :: cnt
+        if (this_image() == 1) then
+          call event_query (event_value_has_been_set, cnt)
+          if (cnt > 0) write(*,*) "Value has been set"
+        elseif (this_image() == 2) then
+          event post (event_value_has_been_set[1])
+        end if
+      end program atomic
