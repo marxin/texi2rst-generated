@@ -73,6 +73,7 @@ and ``c`` and ``d`` are ``v2q15`` values.
 
 =========  ================
 C code     MIPS instruction
+=========  ================
 ``a + b``  ``addu.qb``
 ``c + d``  ``addq.ph``
 ``a - b``  ``subu.qb``
@@ -84,6 +85,7 @@ hardware support exists for the DSP ASE REV 2.  ``e`` and ``f`` are
 
 =========  ================
 C code     MIPS instruction
+=========  ================
 ``e * f``  ``mul.ph``
 =========  ================
 It is easier to describe the DSP built-in functions if we first define

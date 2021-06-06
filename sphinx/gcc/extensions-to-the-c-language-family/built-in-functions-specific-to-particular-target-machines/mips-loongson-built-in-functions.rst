@@ -147,6 +147,7 @@ values and ``x`` is an integral value.
 
 ================  =========================
 C code            MIPS instruction
+================  =========================
 ``a + b``         ``add.ps``
 ``a - b``         ``sub.ps``
 ``-a``            ``neg.ps``

@@ -35,6 +35,7 @@ values are given the following pseudo types:
 
 ===========  ======================  =========  =======================
 Pseudo type  Real C type             Constant?  Description
+===========  ======================  =========  =======================
 ``uh``       ``unsigned short``      No         an unsigned halfword
 ``uw1``      ``unsigned int``        No         an unsigned word
 ``sw1``      ``int``                 No         a signed word
@@ -71,6 +72,7 @@ The functions listed below map directly to FR-V I-type instructions.
 
 ===========================  ======================  ===============
 Function prototype           Example usage           Assembly output
+===========================  ======================  ===============
 ``sw1 __ADDSS (sw1, sw1)``   ``c = __ADDSS (a, b)``  ``ADDSS a,b,c``
 ``sw1 __SCAN (sw1, sw1)``    ``c = __SCAN (a, b)``   ``SCAN a,b,c``
 ``sw1 __SCUTSS (sw1)``       ``b = __SCUTSS (a)``    ``SCUTSS a,b``
@@ -91,6 +93,7 @@ The functions listed below map directly to FR-V M-type instructions.
 
 ====================================  =========================  ===================
 Function prototype                    Example usage              Assembly output
+====================================  =========================  ===================
 ``uw1 __MABSHS (sw1)``                ``b = __MABSHS (a)``       ``MABSHS a,b``
 ``void __MADDACCS (acc, acc)``        ``__MADDACCS (b, a)``      ``MADDACCS a,b``
 ``sw1 __MADDHSS (sw1, sw1)``          ``c = __MADDHSS (a, b)``   ``MADDHSS a,b,c``
