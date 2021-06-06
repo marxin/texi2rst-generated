@@ -832,7 +832,7 @@ The files are created in the directory of the output file.
 
 .. option:: -save-temps=obj
 
-  Equivalent to :option:`-save-temps -dumpdir `outdir/, where
+  Equivalent to :option:`-save-temps`:samp:` -dumpdir `outdir/, where
   outdir/ is the directory of the output file specified after the
   :option:`-o` option, including any directory separators.  If the
   :option:`-o` option is not used, the :option:`-save-temps`:samp:`=obj` switch

@@ -164,26 +164,26 @@ warn at all unless optimization is enabled.
   :option:`-Wall` turns on the following warning flags:
 
   :option:`-Waddress`   
-  :option:`-Warray-bounds`:samp:`=1` (only with :option:`:option:`-O2`` )  
-  :option:`-Warray-parameter`:samp:`=2` (C and Objective :option:`-C` only) 
+  :option:`-Warray-bounds`:samp:`=1` (only with :option:`-O2` )
+  :option:`-Warray-parameter`:samp:`=2` (C and Objective-C only)
   :option:`-Wbool-compare`  
   :option:`-Wbool-operation`  
   :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  
-  :option:`-Wcatch-value` (C++ and Objective :option:`-C++` only)  
+  :option:`-Wcatch-value` (C++ and Objective-C++ only)
   :option:`-Wchar-subscripts`  
   :option:`-Wcomment`  
-  :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
+  :option:`-Wduplicate-decl-specifier` (C and Objective-C only)
   :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
   :option:`-Wformat`   
   :option:`-Wformat-overflow`  
   :option:`-Wformat-truncation`  
   :option:`-Wint-in-bool-context`  
-  :option:`-Wimplicit` (C and Objective :option:`-C` only) 
-  :option:`-Wimplicit-int` (C and Objective :option:`-C` only) 
-  :option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) 
+  :option:`-Wimplicit` (C and Objective-C only)
+  :option:`-Wimplicit-int` (C and Objective-C only)
+  :option:`-Wimplicit-function-declaration` (C and Objective-C only)
   :option:`-Winit-self` (only for C++) 
   :option:`-Wlogical-not-parentheses` 
-  :option:`-Wmain` (only for C/ObjC and unless :option:`:option:`-ffreestanding`` )  
+  :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` )
   :option:`-Wmaybe-uninitialized` 
   :option:`-Wmemset-elt-size` 
   :option:`-Wmemset-transposed-args` 
@@ -218,7 +218,7 @@ warn at all unless optimization is enabled.
   :option:`-Wunused-label`     
   :option:`-Wunused-value`     
   :option:`-Wunused-variable`  
-  :option:`-Wvla-parameter` (C and Objective :option:`-C` only) 
+  :option:`-Wvla-parameter` (C and Objective-C only) 
   :option:`-Wvolatile-register-var`  
   :option:`-Wzero-length-bounds`
   Note that some warning flags are not implied by :option:`-Wall`.  Some of
@@ -252,8 +252,8 @@ warn at all unless optimization is enabled.
   :option:`-Wtype-limits`  
   :option:`-Wuninitialized`  
   :option:`-Wshift-negative-value` (in C++03 and in C99 and newer)  
-  :option:`-Wunused-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` ) 
-  :option:`-Wunused-but-set-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` )
+  :option:`-Wunused-parameter` (only with :option:`-Wunused` or :option:`-Wall` ) 
+  :option:`-Wunused-but-set-parameter` (only with :option:`-Wunused` or :option:`-Wall` )
   The option :option:`-Wextra` also prints warning messages for the
   following cases:
 
