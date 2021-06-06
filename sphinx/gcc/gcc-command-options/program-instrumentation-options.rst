@@ -206,8 +206,8 @@ program analysis purposes.
 .. option:: -fprofile-prefix-path=path
 
   This option can be used in combination with
-  profile-generate:samp:`={profile_dir}` and
-  profile-use:samp:`={profile_dir}` to inform GCC where is the base
+  :option:`-fprofile-generate`:samp:`={profile_dir}` and
+  :option:`-fprofile-use`:samp:`={profile_dir}` to inform GCC where is the base
   directory of built source tree.  By default :samp:`{profile_dir}` will contain
   files with mangled absolute paths of all object files in the built project.
   This is not desirable when directory used to build the instrumented binary

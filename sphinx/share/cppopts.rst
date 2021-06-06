@@ -19,8 +19,8 @@
   :option:`-D'`:samp:`{name}` ( :samp:`{args...}` )= :samp:`{definition}` ' works.
 
   :option:`-D` and :option:`-U` options are processed in the order they
-  are given on the command line.  All :option:`-imacros `:samp:`{file}` and
-  :option:`-include `:samp:`{file}` options are processed after all
+  are given on the command line.  All :option:`-imacros` :samp:`{file}` and
+  :option:`-include` :samp:`{file}` options are processed after all
   :option:`-D` and :option:`-U` options.
 
 .. option:: -U name
@@ -83,7 +83,7 @@
   object file name consists of the name of the source file with any
   suffix replaced with object file suffix and with any leading directory
   parts removed.  If there are many included files then the rule is
-  split into several lines using :samp:`\`-newline.  The rule has no
+  split into several lines using :samp:`\\` -newline.  The rule has no
   commands.
 
   This option does not suppress the preprocessor's debug output, such as
@@ -180,7 +180,7 @@
 
 .. option:: -MD
 
-  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}`, except that
+  :option:`-MD` is equivalent to :option:`-M -MF` :samp:`{file}`, except that
   :option:`-E` is not implied.  The driver determines :samp:`{file}` based on
   whether an :option:`-o` option is given.  If it is, the driver uses its
   argument but with a suffix of .d, otherwise it takes the name
@@ -374,8 +374,8 @@
 .. option:: -A predicate=answer
 
   Make an assertion with the predicate :samp:`{predicate}` and answer
-  :samp:`{answer}`.  This form is preferred to the older form :option:`-A
-  `:samp:`{predicate}` ( :samp:`{answer}` ), which is still supported, because
+  :samp:`{answer}`.  This form is preferred to the older form :option:`-A`
+  :samp:`{predicate}` ( :samp:`{answer}` ), which is still supported, because
   it does not use shell special characters.
 
   .. only:: cpp
@@ -449,7 +449,7 @@
   Support ISO C trigraphs.
   These are three-character sequences, all starting with :samp:`??`, that
   are defined by ISO C to stand for single characters.  For example,
-  :samp:`??/` stands for :samp:`\`, so :samp:`'??/n'` is a character
+  :samp:`??/` stands for :samp:`\\`, so :samp:`??/n` is a character
   constant for a newline.
 
   .. only:: cpp

@@ -35,7 +35,7 @@ implementation-defined behavior.
 * The nesting limit for ``#include`` processing (C90 6.8.2, C99
   and C11 6.10.2).
 
-* Whether the :samp:`#` operator inserts a :samp:`\` character before
+* Whether the :samp:`#` operator inserts a :samp:`\\` character before
   the :samp:`\` character that begins a universal character name in a
   character constant or string literal (C99 and C11 6.10.3.2).
 

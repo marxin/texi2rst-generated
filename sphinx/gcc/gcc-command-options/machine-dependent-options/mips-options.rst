@@ -533,8 +533,8 @@ MIPS Options
   a small data section if the size of that data is within the :option:`-G` limit.
   :option:`-mextern-sdata` is the default for all configurations.
 
-  If you compile a module :samp:`{Mod}` with :option:`-mextern-sdata` :option:`-G
-  `:samp:`{num}` :option:`-mgpopt`, and :samp:`{Mod}` references a variable :samp:`{Var}`
+  If you compile a module :samp:`{Mod}` with :option:`-mextern-sdata` :option:`-G`
+  :samp:`{num}` :option:`-mgpopt`, and :samp:`{Mod}` references a variable :samp:`{Var}`
   that is no bigger than :samp:`{num}` bytes, you must make sure that :samp:`{Var}`
   is placed in a small data section.  If :samp:`{Var}` is defined by another
   module, you must either compile that module with a high-enough

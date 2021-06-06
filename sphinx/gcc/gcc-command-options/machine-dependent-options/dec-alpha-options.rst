@@ -62,7 +62,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mfp-trap-mode=trap-mode
 
   This option controls what floating-point related traps are enabled.
-  Other Alpha compilers call this option :option:`-fptm `:samp:`{trap-mode}`.
+  Other Alpha compilers call this option :option:`-fptm`:samp:` {trap-mode}`.
   The trap mode can be set to one of four values:
 
   :samp:`n`
@@ -84,7 +84,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mfp-rounding-mode=rounding-mode
 
   Selects the IEEE rounding mode.  Other Alpha compilers call this option
-  :option:`-fprm `:samp:`{rounding-mode}`.  The :samp:`{rounding-mode}` can be one
+  :option:`-fprm`:samp:` {rounding-mode}`.  The :samp:`{rounding-mode}` can be one
   of:
 
   :samp:`n`

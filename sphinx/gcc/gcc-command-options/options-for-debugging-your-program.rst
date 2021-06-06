@@ -392,7 +392,7 @@ information useful for debugging do not run at all, so that
 
   A specification has the syntax
 
-  [:samp:`dir:`|:samp:`ind:`][:samp:`ord:`|:samp:`gen:`](:samp:`any`|:samp:`sys`|:samp:`base`|:samp:`none`)
+  [:samp:`dir:` | :samp:`ind:`][:samp:`ord:` | :samp:`gen:`](:samp:`any` | :samp:`sys` | :samp:`base` | :samp:`none`)
 
   The optional first word limits the specification to
   structs that are used directly (:samp:`dir:`) or used indirectly (:samp:`ind:`).

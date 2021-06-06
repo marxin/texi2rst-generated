@@ -42,13 +42,13 @@ that option with all supported languages.
 
 .. index:: target machine, specifying
 
-The usual way to run GCC is to run the executable called :command:`gcc`, or
-:command:`:samp:`{machine}` -gcc` when cross-compiling, or
-:command:`:samp:`{machine}` -gcc- :samp:`{version}`` to run a specific version of GCC.
-When you compile C++ programs, you should invoke GCC as :command:`g++` 
+The usual way to run GCC is to run the executable called :samp:`gcc`, or
+:samp:`{machine}-gcc` when cross-compiling, or
+:samp:`{machine}-gcc-{version}` to run a specific version of GCC.
+When you compile C++ programs, you should invoke GCC as :samp:`g++` 
 instead.  See :ref:`Compiling C++ Programs <invoking-g++>`, 
-for information about the differences in behavior between :command:`gcc` 
-and :command:`g++` when compiling C++ programs.
+for information about the differences in behavior between :samp:`gcc` 
+and :samp:`g++` when compiling C++ programs.
 
 .. index:: grouping options
 

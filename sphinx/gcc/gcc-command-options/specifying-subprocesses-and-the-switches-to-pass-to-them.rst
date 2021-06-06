@@ -568,7 +568,7 @@
     Like %{ ``S`` *}, but preserve order of ``S`` and ``T`` options
     (the order of ``S`` and ``T`` in the spec is not significant).
     There can be any number of ampersand-separated variables; for each the
-    wild card is optional.  Useful for CPP as :samp:`%{D*&U*&A*}`.
+    wild card is optional.  Useful for CPP as ``%{D*&U*&A*}``.
 
   ``%{S:X}``
     Substitutes ``X``, if the :option:`-S` switch is given to GCC.

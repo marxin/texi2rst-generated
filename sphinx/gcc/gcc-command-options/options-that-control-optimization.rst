@@ -374,7 +374,7 @@ optimizations to be performed is desired.
   can be inlined in number of pseudo instructions.
 
   Inlining is actually controlled by a number of parameters, which may be
-  specified individually by using :option:`--param `:samp:`{name}` = :samp:`{value}`.
+  specified individually by using :option:`--param` :samp:`{name}={value}`.
   The :option:`-finline-limit`:samp:`={n}` option sets some of these parameters
   as follows:
 

@@ -20,7 +20,7 @@ and other places where they are not permitted by the standard is
 deprecated and will be removed from a future version of G++.
 
 G++ allows floating-point literals to appear in integral constant expressions,
-e.g. :samp:` enum E { e = int(2.2 * 3.7) } `
+e.g. :samp:`enum E { e = int(2.2 * 3.7) }`
 This extension is deprecated and will be removed from a future version.
 
 G++ allows static data members of const floating-point type to be declared
@@ -30,7 +30,7 @@ enumeration types so this extension has been deprecated and will be removed
 from a future version.
 
 G++ allows attributes to follow a parenthesized direct initializer,
-e.g. :samp:` int f (0) __attribute__ ((something)); ` This extension
+e.g. :samp:`int f (0) __attribute__ ((something));` This extension
 has been ignored since G++ 3.3 and is deprecated.
 
 G++ allows anonymous structs and unions to have members that are not
