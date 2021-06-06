@@ -758,7 +758,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   equal to :samp:`{num}` bytes into the small data or BSS sections instead of
   the normal data or BSS section.  By default, :samp:`{num}` is 8.  The
   :option:`-G`:samp:` {num}` switch is also passed to the linker.
-  All modules should be compiled with the same :option:`-G`:samp:` {num}` value.
+  All modules should be compiled with the same :option:`-G` :samp:`{num}` value.
 
 .. option:: -mregnames, -mno-regnames
 

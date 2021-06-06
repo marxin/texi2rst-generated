@@ -246,7 +246,7 @@ honor these options.
   If set to :samp:`bel`, the default, URLs use BEL escape sequences.
   Any other non-empty value enables the feature.
   If :envvar:`GCC_URLS` is not set, use :envvar:`TERM_URLS` as a fallback.
-  Note: ST is an ANSI escape sequence, string terminator :samp:`ESC \`,
+  Note: ST is an ANSI escape sequence, string terminator :samp:`ESC \\`,
   BEL is an ASCII character, CTRL-G that usually sounds like a beep.
 
   At this time GCC tries to detect also a few terminals that are known to

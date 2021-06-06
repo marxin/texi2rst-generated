@@ -269,7 +269,7 @@ These options are defined for AVR implementations:
   more need for option :option:`-mmcu`:samp:`={mcu}`.
 
   This option can also serve as a replacement for the older way of
-  specifying custom device-specs files that needed :option:`-B`:samp:` {some-path}` to point to a directory
+  specifying custom device-specs files that needed :option:`-B` :samp:`{some-path}` to point to a directory
   which contains a folder named ``device-specs`` which contains a specs file named
   ``specs-mcu``, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
 

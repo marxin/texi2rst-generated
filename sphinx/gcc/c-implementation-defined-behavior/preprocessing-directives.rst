@@ -36,7 +36,7 @@ implementation-defined behavior.
   and C11 6.10.2).
 
 * Whether the :samp:`#` operator inserts a :samp:`\\` character before
-  the :samp:`\` character that begins a universal character name in a
+  the :samp:`\\` character that begins a universal character name in a
   character constant or string literal (C99 and C11 6.10.3.2).
 
 * The behavior on each recognized non- ``STDC #pragma``
