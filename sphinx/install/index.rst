@@ -6,6 +6,7 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
+  copyright
   installing-gcc
   prerequisites
   downloading-gcc

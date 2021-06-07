@@ -6,7 +6,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   libitm.rst
+  copyright
+  libitm.rst
 
 
 Indices and tables

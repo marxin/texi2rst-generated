@@ -4,9 +4,10 @@ Welcome to cppinternals documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+  :maxdepth: 1
 
-   cppinternals.rst
+  copyright
+  cppinternals.rst
 
 
 Indices and tables

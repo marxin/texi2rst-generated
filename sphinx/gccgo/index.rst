@@ -13,6 +13,7 @@ package documentation, see http://golang.org/.
 .. toctree::
   :maxdepth: 1
 
+  copyright
   invoking-gccgo
   import-and-export
   compiler-directives

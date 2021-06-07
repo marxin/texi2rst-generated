@@ -12,6 +12,7 @@ Math Library Application Programming Interface (API).
 .. toctree::
   :maxdepth: 1
 
+  copyright
   typedef-and-constants
   math-library-routines
   i-o-library-routines

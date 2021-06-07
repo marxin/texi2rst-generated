@@ -13,6 +13,7 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
+  copyright
   using
   overview
   function-variable-and-macro-listing

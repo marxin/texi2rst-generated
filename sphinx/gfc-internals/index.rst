@@ -21,6 +21,7 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
+  copyright
   introduction
   frontend-data-structures
 

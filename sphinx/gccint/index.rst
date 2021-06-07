@@ -31,6 +31,7 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
+  copyright
   contributing-to-gcc-development
   gcc-and-portability
   interfacing-to-gcc-output

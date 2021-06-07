@@ -6,7 +6,8 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
-  gcc.rst
+  copyright
+  gcc
   programming-languages-supported-by-gcc
   language-standards-supported-by-gcc
   gcc-command-options

@@ -23,6 +23,7 @@ changed to GNU Offloading and Multi Processing Runtime Library.
 .. toctree::
   :maxdepth: 1
 
+  copyright
   enabling-openmp
   openmp-runtime-library-routines
   openmp-environment-variables
