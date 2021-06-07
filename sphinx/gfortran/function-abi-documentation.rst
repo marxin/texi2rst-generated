@@ -66,7 +66,7 @@ _gfortran_caf_init --- Initialiation function
     intent(inout) A pointer to an array of strings with the
     command-line arguments or ``NULL``.
 
-  .. envvar:: NOTES
+  .. note::
 
     The function is modelled after the initialization function of the Message
     Passing Interface (MPI) specification.  Due to the way coarray registration
@@ -87,7 +87,7 @@ _gfortran_caf_finish --- Finalization function
   This function is called at the end of the Fortran main program, if it has
   been compiled with the :option:`-fcoarray`:samp:`=lib` option.
 
-  .. envvar:: NOTES
+  .. note::
 
     For non-Fortran programs, it is recommended to call the function at the end
     of the main program.  To ensure that the shutdown is also performed for
@@ -111,7 +111,7 @@ _gfortran_caf_this_image --- Querying the image number
     As specified for the ``this_image`` intrinsic
     in TS18508.  Shall be a non-negative number.
 
-  .. envvar:: NOTES
+  .. note::
 
     If the Fortran intrinsic ``this_image`` is invoked without an argument, which
     is the only permitted form in Fortran 2008, GCC passes ``0`` as
@@ -139,7 +139,7 @@ _gfortran_caf_num_images --- Querying the maximal number of images
   :param failed:
     shall be -1, 0, or 1
 
-  .. envvar:: NOTES
+  .. note::
 
     This function follows TS18508. If the num_image intrinsic has no arguments,
     then the compiler passes ``distance=0`` and ``failed=-1`` to the function.
@@ -166,7 +166,7 @@ _gfortran_caf_image_status --- Query the status of an image
     optional; team on the which the inquiry is to be
     performed.
 
-  .. envvar:: NOTES
+  .. note::
 
     This function follows TS18508.  Because team-functionality is not yet
     implemented a null-pointer is passed for the :samp:`{team}` argument at the moment.
@@ -193,7 +193,7 @@ _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
   :param image:
     optional; the kind of the resulting integer array.
 
-  .. envvar:: NOTES
+  .. note::
 
     This function follows TS18508.  Because team-functionality is not yet
     implemented a null-pointer is passed for the :samp:`{team}` argument at the moment.
@@ -220,7 +220,7 @@ _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped imag
   :param image:
     optional; the kind of the resulting integer array.
 
-  .. envvar:: NOTES
+  .. note::
 
     This function follows TS18508.  Because team-functionality is not yet
     implemented a null-pointer is passed for the :samp:`{team}` argument at the moment.
@@ -273,7 +273,7 @@ _gfortran_caf_register --- Registering coarrays
   :param errmsg_len:
     the buffer size of errmsg.
 
-  .. envvar:: NOTES
+  .. note::
 
     Nonallocatable coarrays have to be registered prior use from remote images.
     In order to guarantee this, they have to be registered before the main
@@ -328,7 +328,7 @@ _gfortran_caf_deregister --- Deregistering coarrays
   :param errmsg_len:
     the buffer size of errmsg.
 
-  .. envvar:: NOTES
+  .. note::
 
     For nonalloatable coarrays this function is never called.  If a cleanup is
     required, it has to be handled via the finish, stop and error stop functions,
@@ -412,7 +412,7 @@ _gfortran_caf_send --- Sending data from a local image to a remote image
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory
     of the send-to and the send-from might (partially) overlap in that case.  The
@@ -481,7 +481,7 @@ _gfortran_caf_get --- Getting data from a remote image
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory of
     the send-to and the send-from might (partially) overlap in that case.  The
@@ -568,7 +568,7 @@ _gfortran_caf_sendget --- Sending data between remote images
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have the same image index for both :samp:`{src_image_index}` and
     :samp:`{dst_image_index}` ; the memory of the send-to and the send-from might
@@ -638,7 +638,7 @@ _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image 
     the destination is not an array, than the precise type, e.g. of a component in
     a derived type, is not known, but provided here.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory of
     the send-to and the send-from might (partially) overlap in that case.  The
@@ -713,7 +713,7 @@ _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced ref
     source is not an array, than the precise type, e.g. of a component in a
     derived type, is not known, but provided here.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have ``image_index`` equal the current image; the memory
     of the send-to and the send-from might (partially) overlap in that case.  The
@@ -803,7 +803,7 @@ _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanc
     source is not an array, than the precise type, e.g. of a component in a
     derived type, is not known, but provided here.
 
-  .. envvar:: NOTES
+  .. note::
 
     It is permitted to have the same image index for both :samp:`{src_image_index}` and
     :samp:`{dst_image_index}` ; the memory of the send-to and the send-from might
@@ -863,7 +863,7 @@ _gfortran_caf_lock --- Locking a lock variable
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     This function is also called for critical blocks; for those, the array index
     is always zero and the image index is one.  Libraries are permitted to use other
@@ -904,7 +904,7 @@ _gfortran_caf_lock --- Unlocking a lock variable
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     This function is also called for critical block; for those, the array index
     is always zero and the image index is one.  Libraries are permitted to use other
@@ -942,7 +942,7 @@ _gfortran_caf_event_post --- Post an event
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     This acts like an atomic add of one to the remote image's event variable.
     The statement is an image-control statement but does not imply sync memory.
@@ -984,7 +984,7 @@ _gfortran_caf_event_wait --- Wait that an event occurred
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     This function only operates on a local coarray. It acts like a loop checking
     atomically the value of the event variable, breaking if the value is greater
@@ -1029,7 +1029,7 @@ _gfortran_caf_event_query --- Query event count
   :param stat:
     intent(out)  Stores the STAT=; may be NULL.
 
-  .. envvar:: NOTES
+  .. note::
 
     The typical use is to check the local event variable to only call
     ``event_wait`` when the data is available. However, a coindexed variable
@@ -1165,7 +1165,7 @@ _gfortran_caf_fail_image --- Mark the image failed and end its execution
   Invoked for an ``FAIL IMAGE`` statement.  The function should terminate the
   current image.
 
-  .. envvar:: NOTES
+  .. note::
 
     This function follows TS18508.
 
@@ -1403,7 +1403,7 @@ _gfortran_caf_co_max --- Collective maximum reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
     all images except of the specified one become undefined; hence, the library may
@@ -1445,7 +1445,7 @@ _gfortran_caf_co_min --- Collective minimum reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
     all images except of the specified one become undefined; hence, the library may
@@ -1483,7 +1483,7 @@ _gfortran_caf_co_sum --- Collective summing reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
     all images except of the specified one become undefined; hence, the library may
@@ -1531,7 +1531,7 @@ _gfortran_caf_co_reduce --- Generic collective reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  .. envvar:: NOTES
+  .. note::
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
     all images except of the specified one become undefined; hence, the library may
