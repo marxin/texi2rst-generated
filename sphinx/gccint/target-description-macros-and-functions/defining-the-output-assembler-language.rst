@@ -132,13 +132,18 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_OUTPUT_SOURCE_FILENAME (FILE *file, const char *name)
 
-  Output DWARF debugging information which indicates that filename :samp:`{name}` is the current source file to the stdio stream :samp:`{file}`.
+  Output DWARF debugging information which indicates that filename
+  :samp:`{name}` is the current source file to the stdio stream :samp:`{file}`.
 
-  This target hook need not be defined if the standard form of output for the file format in use is appropriate.
+  This target hook need not be defined if the standard form of output
+  for the file format in use is appropriate.
 
 .. function:: void TARGET_ASM_OUTPUT_IDENT (const char *name)
 
-  Output a string based on :samp:`{name}`, suitable for the :samp:`#ident`  directive, or the equivalent directive or pragma in non-C-family languages.  If this hook is not defined, nothing is output for the :samp:`#ident`  directive.
+  Output a string based on :samp:`{name}`, suitable for the :samp:`#ident`
+  directive, or the equivalent directive or pragma in non-C-family languages.
+  If this hook is not defined, nothing is output for the :samp:`#ident`
+  directive.
 
 .. c:macro:: OUTPUT_QUOTED_STRING (stream, string)
 
@@ -180,7 +185,11 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_FUNCTION_SWITCHED_TEXT_SECTIONS (FILE *file, tree decl, bool new_is_cold)
 
-  Used by the target to emit any assembler directives or additional  labels needed when a function is partitioned between different  sections.  Output should be written to :samp:`{file}`.  The function  decl is available as :samp:`{decl}` and the new section is 'cold' if  :samp:`{new_is_cold}` is ``true``.
+  Used by the target to emit any assembler directives or additional
+  labels needed when a function is partitioned between different
+  sections.  Output should be written to :samp:`{file}`.  The function
+  decl is available as :samp:`{decl}` and the new section is 'cold' if
+  :samp:`{new_is_cold}` is ``true``.
 
 .. c:var:: bool TARGET_HAVE_NAMED_SECTIONS
 
@@ -868,7 +877,11 @@ This is about outputting labels.
 
 .. function:: tree TARGET_MANGLE_ASSEMBLER_NAME (const char *name)
 
-  Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's ``assemble_name``, but in memory rather than to a file stream, returning result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and then prepends the ``USER_LABEL_PREFIX``, if any.
+  Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's
+  ``assemble_name``, but in memory rather than to a file stream, returning
+  result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The
+  default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and
+  then prepends the ``USER_LABEL_PREFIX``, if any.
 
 .. c:macro:: ASM_OUTPUT_SYMBOL_REF (stream, sym)
 
@@ -1650,7 +1663,9 @@ This concerns dispatch tables.
 
 .. function:: void TARGET_ASM_EMIT_EXCEPT_PERSONALITY (rtx personality)
 
-  If the target implements ``TARGET_ASM_UNWIND_EMIT``, this hook may be used to emit a directive to install a personality hook into the unwind info.  This hook should not be used if dwarf2 unwind info is used.
+  If the target implements ``TARGET_ASM_UNWIND_EMIT``, this hook may be
+  used to emit a directive to install a personality hook into the unwind
+  info.  This hook should not be used if dwarf2 unwind info is used.
 
 .. function:: void TARGET_ASM_UNWIND_EMIT (FILE *stream, rtx_insn *insn)
 
@@ -1660,15 +1675,25 @@ This concerns dispatch tables.
 
 .. function:: rtx TARGET_ASM_MAKE_EH_SYMBOL_INDIRECT (rtx origsymbol, bool pubvis)
 
-  If necessary, modify personality and LSDA references to handle indirection.  The original symbol is in ``origsymbol`` and if ``pubvis`` is true  the symbol is visible outside the TU.
+  If necessary, modify personality and LSDA references to handle indirection.
+  The original symbol is in ``origsymbol`` and if ``pubvis`` is true
+  the symbol is visible outside the TU.
 
 .. c:var:: bool TARGET_ASM_UNWIND_EMIT_BEFORE_INSN
 
-  True if the ``TARGET_ASM_UNWIND_EMIT`` hook should be called before the assembly for :samp:`{insn}` has been emitted, false if the hook should be called afterward.
+  True if the ``TARGET_ASM_UNWIND_EMIT`` hook should be called before
+  the assembly for :samp:`{insn}` has been emitted, false if the hook should
+  be called afterward.
 
 .. function:: bool TARGET_ASM_SHOULD_RESTORE_CFA_STATE (void)
 
-  For DWARF-based unwind frames, two CFI instructions provide for save and restore of register state.  GCC maintains the current frame address (CFA) separately from the register bank but the unwinder in libgcc preserves this state along with the registers (and this is expected by the code that writes the unwind frames).  This hook allows the target to specify that the CFA data is not saved/restored along with the registers by the target unwinder so that suitable additional instructions should be emitted to restore it.
+  For DWARF-based unwind frames, two CFI instructions provide for save and
+  restore of register state.  GCC maintains the current frame address (CFA)
+  separately from the register bank but the unwinder in libgcc preserves this
+  state along with the registers (and this is expected by the code that writes
+  the unwind frames).  This hook allows the target to specify that the CFA data
+  is not saved/restored along with the registers by the target unwinder so that
+  suitable additional instructions should be emitted to restore it.
 
 .. _exception-region-output:
 

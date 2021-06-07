@@ -414,13 +414,24 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_C_PREINCLUDE (void)
 
-  Define this hook to return the name of a header file to be included at the start of all compilations, as if it had been included with ``#include <file>``.  If this hook returns ``NULL``, or is not defined, or the header is not found, or if the user specifies :option:`-ffreestanding` or :option:`-nostdinc`, no header is included.
+  Define this hook to return the name of a header file to be included at
+  the start of all compilations, as if it had been included with
+  ``#include <file>``.  If this hook returns ``NULL``, or is
+  not defined, or the header is not found, or if the user specifies
+  :option:`-ffreestanding` or :option:`-nostdinc`, no header is included.
 
-  This hook can be used together with a header provided by the system C library to implement ISO C requirements for certain macros to be predefined that describe properties of the whole implementation rather than just the compiler.
+  This hook can be used together with a header provided by the system C
+  library to implement ISO C requirements for certain macros to be
+  predefined that describe properties of the whole implementation rather
+  than just the compiler.
 
 .. function:: bool TARGET_CXX_IMPLICIT_EXTERN_C (const char*)
 
-  Define this hook to add target-specific C++ implicit extern C functions. If this function returns true for the name of a file-scope function, that function implicitly gets extern "C" linkage rather than whatever language linkage the declaration would normally have.  An example of such function is WinMain on Win32 targets.
+  Define this hook to add target-specific C++ implicit extern C functions.
+  If this function returns true for the name of a file-scope function, that
+  function implicitly gets extern "C" linkage rather than whatever language
+  linkage the declaration would normally have.  An example of such function
+  is WinMain on Win32 targets.
 
 .. c:macro:: SYSTEM_IMPLICIT_EXTERN_C
 
@@ -815,11 +826,17 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_LEGITIMATE_COMBINED_INSN (rtx_insn *insn)
 
-  Take an instruction in :samp:`{insn}` and return ``false`` if the instruction is not appropriate as a combination of two or more instructions.  The default is to accept all instructions.
+  Take an instruction in :samp:`{insn}` and return ``false`` if the instruction
+  is not appropriate as a combination of two or more instructions.  The
+  default is to accept all instructions.
 
 .. function:: bool TARGET_CAN_FOLLOW_JUMP (const rtx_insn *follower, const rtx_insn *followee)
 
-  FOLLOWER and FOLLOWEE are JUMP_INSN instructions;  return true if FOLLOWER may be modified to follow FOLLOWEE;  false, if it can't.  For example, on some targets, certain kinds of branches can't be made to  follow through a hot/cold partitioning.
+  FOLLOWER and FOLLOWEE are JUMP_INSN instructions;
+  return true if FOLLOWER may be modified to follow FOLLOWEE;
+  false, if it can't.
+  For example, on some targets, certain kinds of branches can't be made to
+  follow through a hot/cold partitioning.
 
 .. function:: bool TARGET_COMMUTATIVE_P (const_rtx x, int outer_code)
 
@@ -1158,7 +1175,9 @@ Here are several miscellaneous parameters.
 
 .. c:var:: unsigned char TARGET_ATOMIC_TEST_AND_SET_TRUEVAL
 
-  This value should be set if the result written by ``atomic_test_and_set`` is not exactly 1, i.e. the ``bool`` ``true``.
+  This value should be set if the result written by
+  ``atomic_test_and_set`` is not exactly 1, i.e. the
+  ``bool`` ``true``.
 
 .. function:: bool TARGET_HAS_IFUNC_P (void)
 
@@ -1168,11 +1187,27 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned int TARGET_ATOMIC_ALIGN_FOR_MODE (machine_mode mode)
 
-  If defined, this function returns an appropriate alignment in bits for an atomic object of machine_mode :samp:`{mode}`.  If 0 is returned then the default alignment for the specified mode is used. 
+  If defined, this function returns an appropriate alignment in bits for an
+  atomic object of machine_mode :samp:`{mode}`.  If 0 is returned then the
+  default alignment for the specified mode is used.
 
 .. function:: void TARGET_ATOMIC_ASSIGN_EXPAND_FENV (tree *hold, tree *clear, tree *update)
 
-  ISO C11 requires atomic compound assignments that may raise floating-point exceptions to raise exceptions corresponding to the arithmetic operation whose result was successfully stored in a compare-and-exchange sequence.  This requires code equivalent to calls to ``feholdexcept``, ``feclearexcept`` and ``feupdateenv`` to be generated at appropriate points in the compare-and-exchange sequence.  This hook should set ``*hold`` to an expression equivalent to the call to ``feholdexcept``, ``*clear`` to an expression equivalent to the call to ``feclearexcept`` and ``*update`` to an expression equivalent to the call to ``feupdateenv``.  The three expressions are ``NULL_TREE`` on entry to the hook and may be left as ``NULL_TREE`` if no code is required in a particular place.  The default implementation leaves all three expressions as ``NULL_TREE``.  The ``__atomic_feraiseexcept`` function from ``libatomic`` may be of use as part of the code generated in ``*update``.
+  ISO C11 requires atomic compound assignments that may raise floating-point
+  exceptions to raise exceptions corresponding to the arithmetic operation
+  whose result was successfully stored in a compare-and-exchange sequence.
+  This requires code equivalent to calls to ``feholdexcept``,
+  ``feclearexcept`` and ``feupdateenv`` to be generated at
+  appropriate points in the compare-and-exchange sequence.  This hook should
+  set ``*hold`` to an expression equivalent to the call to
+  ``feholdexcept``, ``*clear`` to an expression equivalent to
+  the call to ``feclearexcept`` and ``*update`` to an expression
+  equivalent to the call to ``feupdateenv``.  The three expressions are
+  ``NULL_TREE`` on entry to the hook and may be left as ``NULL_TREE``
+  if no code is required in a particular place.  The default implementation
+  leaves all three expressions as ``NULL_TREE``.  The
+  ``__atomic_feraiseexcept`` function from ``libatomic`` may be of use
+  as part of the code generated in ``*update``.
 
 .. function:: void TARGET_RECORD_OFFLOAD_SYMBOL (tree)
 

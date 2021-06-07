@@ -118,7 +118,22 @@ See :ref:`run-time-target`.
 
 .. function:: enum flt_eval_method TARGET_C_EXCESS_PRECISION (enum excess_precision_type type)
 
-  Return a value, with the same meaning as the C99 macro ``FLT_EVAL_METHOD`` that describes which excess precision should be applied.  :samp:`{type}` is either ``EXCESS_PRECISION_TYPE_IMPLICIT``, ``EXCESS_PRECISION_TYPE_FAST``, or ``EXCESS_PRECISION_TYPE_STANDARD``.  For ``EXCESS_PRECISION_TYPE_IMPLICIT``, the target should return which precision and range operations will be implictly evaluated in regardless of the excess precision explicitly added.  For ``EXCESS_PRECISION_TYPE_STANDARD`` and ``EXCESS_PRECISION_TYPE_FAST``, the target should return the explicit excess precision that should be added depending on the value set for :option:`-fexcess-precision` =[standard|fast]. Note that unpredictable explicit excess precision does not make sense, so a target should never return ``FLT_EVAL_METHOD_UNPREDICTABLE`` when :samp:`{type}` is ``EXCESS_PRECISION_TYPE_STANDARD`` or ``EXCESS_PRECISION_TYPE_FAST``.
+  Return a value, with the same meaning as the C99 macro
+  ``FLT_EVAL_METHOD`` that describes which excess precision should be
+  applied.  :samp:`{type}` is either ``EXCESS_PRECISION_TYPE_IMPLICIT``,
+  ``EXCESS_PRECISION_TYPE_FAST``, or
+  ``EXCESS_PRECISION_TYPE_STANDARD``.  For
+  ``EXCESS_PRECISION_TYPE_IMPLICIT``, the target should return which
+  precision and range operations will be implictly evaluated in regardless
+  of the excess precision explicitly added.  For
+  ``EXCESS_PRECISION_TYPE_STANDARD`` and
+  ``EXCESS_PRECISION_TYPE_FAST``, the target should return the
+  explicit excess precision that should be added depending on the
+  value set for :option:`-fexcess-precision` =[standard|fast].
+  Note that unpredictable explicit excess precision does not make sense,
+  so a target should never return ``FLT_EVAL_METHOD_UNPREDICTABLE``
+  when :samp:`{type}` is ``EXCESS_PRECISION_TYPE_STANDARD`` or
+  ``EXCESS_PRECISION_TYPE_FAST``.
 
 .. function:: machine_mode TARGET_PROMOTE_FUNCTION_MODE (const_tree type, machine_mode mode, int *punsignedp, const_tree funtype, int for_return)
 

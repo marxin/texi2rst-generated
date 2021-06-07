@@ -76,7 +76,9 @@ be documented in extend.texi.
 
 .. function:: bool TARGET_VALID_DLLIMPORT_ATTRIBUTE_P (const_tree decl)
 
-  :samp:`{decl}` is a variable or function with ``__attribute__((dllimport))`` specified.  Use this hook if the target needs to add extra validation checks to ``handle_dll_attribute``.
+  :samp:`{decl}` is a variable or function with ``__attribute__((dllimport))``
+  specified.  Use this hook if the target needs to add extra validation
+  checks to ``handle_dll_attribute``.
 
 .. c:macro:: TARGET_DECLSPEC
 
@@ -192,5 +194,7 @@ be documented in extend.texi.
 
 .. function:: void TARGET_RELAYOUT_FUNCTION (tree fndecl)
 
-  This target hook fixes function :samp:`{fndecl}` after attributes are processed. Default does nothing. On ARM, the default function's alignment is updated with the attribute target.
+  This target hook fixes function :samp:`{fndecl}` after attributes are processed.
+  Default does nothing. On ARM, the default function's alignment is updated
+  with the attribute target.
 

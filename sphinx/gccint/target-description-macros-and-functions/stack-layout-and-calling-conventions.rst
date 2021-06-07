@@ -543,9 +543,12 @@ in the opposite case.
 .. function:: HOST_WIDE_INT TARGET_STACK_CLASH_PROTECTION_ALLOCA_PROBE_RANGE (void)
 
   Some targets have an ABI defined interval for which no probing needs to be done.
-  When a probe does need to be done this same interval is used as the probe distance up when doing stack clash protection for alloca.
+  When a probe does need to be done this same interval is used as the probe distance
+  up when doing stack clash protection for alloca.
   On such targets this value can be set to override the default probing up interval.
-  Define this variable to return nonzero if such a probe range is required or zero otherwise.  Defining this hook also requires your functions which make use of alloca to have at least 8 byesof outgoing arguments.  If this is not the case the stack will be corrupted.
+  Define this variable to return nonzero if such a probe range is required or zero otherwise.
+  Defining this hook also requires your functions which make use of alloca to have at least 8 byes
+  of outgoing arguments.  If this is not the case the stack will be corrupted.
   You need not define this macro if it would always have the value zero.
 
 .. _frame-registers:
@@ -1354,7 +1357,11 @@ the stack.
 
 .. function:: bool TARGET_REF_MAY_ALIAS_ERRNO (ao_ref *ref)
 
-  Define this to return nonzero if the memory reference :samp:`{ref}`  may alias with the system C library errno location.  The default  version of this hook assumes the system C library errno location  is either a declaration of type int or accessed by dereferencing  a pointer to int.
+  Define this to return nonzero if the memory reference :samp:`{ref}`
+  may alias with the system C library errno location.  The default
+  version of this hook assumes the system C library errno location
+  is either a declaration of type int or accessed by dereferencing
+  a pointer to int.
 
 .. function:: machine_mode TARGET_TRANSLATE_MODE_ATTRIBUTE (machine_mode mode)
 
@@ -1750,11 +1757,15 @@ memory.
 
 .. function:: fixed_size_mode TARGET_GET_RAW_RESULT_MODE (int regno)
 
-  This target hook returns the mode to be used when accessing raw return registers in ``__builtin_return``.  Define this macro if the value in :samp:`{reg_raw_mode}` is not correct.
+  This target hook returns the mode to be used when accessing raw return
+  registers in ``__builtin_return``.  Define this macro if the value
+  in :samp:`{reg_raw_mode}` is not correct.
 
 .. function:: fixed_size_mode TARGET_GET_RAW_ARG_MODE (int regno)
 
-  This target hook returns the mode to be used when accessing raw argument registers in ``__builtin_apply_args``.  Define this macro if the value in :samp:`{reg_raw_mode}` is not correct.
+  This target hook returns the mode to be used when accessing raw argument
+  registers in ``__builtin_apply_args``.  Define this macro if the value
+  in :samp:`{reg_raw_mode}` is not correct.
 
 .. function:: bool TARGET_EMPTY_RECORD_P (const_tree type)
 
@@ -2072,7 +2083,11 @@ These macros will help you generate code for profiling.
 
 .. function:: bool TARGET_KEEP_LEAF_WHEN_PROFILED (void)
 
-  This target hook returns true if the target wants the leaf flag for the current function to stay true even if it calls mcount.  This might make sense for targets using the leaf flag only to determine whether a stack frame needs to be generated or not and for which the call to mcount is generated before the function prologue.
+  This target hook returns true if the target wants the leaf flag for
+  the current function to stay true even if it calls mcount.  This might
+  make sense for targets using the leaf flag only to determine whether a
+  stack frame needs to be generated or not and for which the call to
+  mcount is generated before the function prologue.
 
 .. _tail-calls:
 
@@ -2105,11 +2120,14 @@ Permitting tail calls
 
 .. function:: void TARGET_SET_UP_BY_PROLOGUE (struct hard_reg_set_container *)
 
-  This hook should add additional registers that are computed by the prologue to the hard regset for shrink-wrapping optimization purposes.
+  This hook should add additional registers that are computed by the prologue
+  to the hard regset for shrink-wrapping optimization purposes.
 
 .. function:: bool TARGET_WARN_FUNC_RETURN (tree)
 
-  True if a function's return statements should be checked for matching the function's return type.  This includes checking for falling off the end of a non-void function.  Return false if no such check should be made.
+  True if a function's return statements should be checked for matching
+  the function's return type.  This includes checking for falling off the end
+  of a non-void function.  Return false if no such check should be made.
 
 .. _shrink-wrapping-separate-components:
 
@@ -2206,15 +2224,26 @@ Stack smashing protection
 
 .. function:: bool TARGET_STACK_PROTECT_RUNTIME_ENABLED_P (void)
 
-  Returns true if the target wants GCC's default stack protect runtime support, otherwise return false.  The default implementation always returns true.
+  Returns true if the target wants GCC's default stack protect runtime support,
+  otherwise return false.  The default implementation always returns true.
 
 .. function:: bool TARGET_SUPPORTS_SPLIT_STACK (bool report, struct gcc_options *opts)
 
-  Whether this target supports splitting the stack when the options described in :samp:`{opts}` have been passed.  This is called after options have been parsed, so the target may reject splitting the stack in some configurations.  The default version of this hook returns false.  If :samp:`{report}` is true, this function may issue a warning or error; if :samp:`{report}` is false, it must simply return a value
+  Whether this target supports splitting the stack when the options
+  described in :samp:`{opts}` have been passed.  This is called
+  after options have been parsed, so the target may reject splitting
+  the stack in some configurations.  The default version of this hook
+  returns false.  If :samp:`{report}` is true, this function may issue a warning
+  or error; if :samp:`{report}` is false, it must simply return a value
 
 .. function:: vec<const char *> TARGET_GET_VALID_OPTION_VALUES (int option_code, const char *prefix)
 
-  The hook is used for options that have a non-trivial list of possible option values.  OPTION_CODE is option code of opt_code enum type.  PREFIX is used for bash completion and allows an implementation to return more specific completion based on the prefix.  All string values should be allocated from heap memory and consumers should release them.  The result will be pruned to cases with PREFIX if not NULL.
+  The hook is used for options that have a non-trivial list of
+  possible option values.  OPTION_CODE is option code of opt_code
+  enum type.  PREFIX is used for bash completion and allows an implementation
+  to return more specific completion based on the prefix.  All string values
+  should be allocated from heap memory and consumers should release them.
+  The result will be pruned to cases with PREFIX if not NULL.
 
 .. _miscellaneous-register-hooks:
 
