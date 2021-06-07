@@ -6,12 +6,12 @@ Non-Fortran Main Program
 .. toctree::
   :maxdepth: 2
 
-  non-fortran-main-program/_gfortran_set_args
-  non-fortran-main-program/_gfortran_set_options
-  non-fortran-main-program/_gfortran_set_convert
-  non-fortran-main-program/_gfortran_set_record_marker
-  non-fortran-main-program/_gfortran_set_fpe
-  non-fortran-main-program/_gfortran_set_max_subrecord_length
+  non-fortran-main-program/gfortran_set_args
+  non-fortran-main-program/gfortran_set_options
+  non-fortran-main-program/gfortran_set_convert
+  non-fortran-main-program/gfortran_set_record_marker
+  non-fortran-main-program/gfortran_set_fpe
+  non-fortran-main-program/gfortran_set_max_subrecord_length
 
 Even if you are doing mixed-language programming, it is very
 likely that you do not need to know or use the information in this
@@ -44,7 +44,7 @@ not call any of the following functions.  The libgfortran
 initialization functions are shown in C syntax but using C
 bindings they are also accessible from Fortran.
 
-.. __gfortran_set_args:
+.. _gfortran_set_args:
 
 _gfortran_set_args --- Save command-line arguments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,7 +81,7 @@ _gfortran_set_args --- Save command-line arguments
       return 0;
     }
 
-  .. __gfortran_set_options:
+  .. _gfortran_set_options:
 
 _gfortran_set_options --- Set library option flags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -158,7 +158,7 @@ _gfortran_set_options --- Set library option flags
       static int options[] = {68, 511, 0, 0, 1, 1, 0, 0, 31};
       _gfortran_set_options (9, &options);
 
-  .. __gfortran_set_convert:
+  .. _gfortran_set_convert:
 
 _gfortran_set_convert --- Set endian conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -194,7 +194,7 @@ _gfortran_set_convert --- Set endian conversion
       return 0;
     }
 
-  .. __gfortran_set_record_marker:
+  .. _gfortran_set_record_marker:
 
 _gfortran_set_record_marker --- Set length of record markers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -229,7 +229,7 @@ _gfortran_set_record_marker --- Set length of record markers
       return 0;
     }
 
-  .. __gfortran_set_fpe:
+  .. _gfortran_set_fpe:
 
 _gfortran_set_fpe --- Enable floating point exception traps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -269,7 +269,7 @@ _gfortran_set_fpe --- Enable floating point exception traps
       return 0;
     }
 
-  .. __gfortran_set_max_subrecord_length:
+  .. _gfortran_set_max_subrecord_length:
 
 _gfortran_set_max_subrecord_length --- Set subrecord length
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
