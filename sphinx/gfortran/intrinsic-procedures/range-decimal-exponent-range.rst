@@ -1,4 +1,4 @@
-  .. _range:
+.. _range:
 
 RANGE --- Decimal exponent range
 ********************************
@@ -7,33 +7,32 @@ RANGE --- Decimal exponent range
 
 .. index:: model representation, range
 
-:samp:`{Description}:`
+.. function:: RANGE(X)
+
   ``RANGE(X)`` returns the decimal exponent range in the model of the
   type of ``X``.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``INTEGER``, ``REAL``
+    or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind.
 
-:samp:`{Syntax}:`
-  ``RESULT = RANGE(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ======================================
-  :samp:`{X}`  Shall be of type ``INTEGER``, ``REAL``
-               or ``COMPLEX``.
-  ===========  ======================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = RANGE(X)``
 
-:samp:`{Example}:`
-  See ``PRECISION`` for an example.
+  :samp:`{Example}:`
+    See ``PRECISION`` for an example.
 
-:samp:`{See also}:`
-  SELECTED_REAL_KIND, 
-  PRECISION
+  :samp:`{See also}:`
+    SELECTED_REAL_KIND, 
+    PRECISION
 

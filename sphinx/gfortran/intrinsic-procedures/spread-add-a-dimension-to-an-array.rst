@@ -1,4 +1,4 @@
-  .. _spread:
+.. _spread:
 
 SPREAD --- Add a dimension to an array
 **************************************
@@ -11,42 +11,45 @@ SPREAD --- Add a dimension to an array
 
 .. index:: array, duplicate dimensions
 
-:samp:`{Description}:`
+.. function:: SPREAD
+
   Replicates a :samp:`{SOURCE}` array :samp:`{NCOPIES}` times along a specified 
   dimension :samp:`{DIM}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param SOURCE:
+    Shall be a scalar or an array of any type and 
+    a rank less than seven.
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    Shall be a scalar of type ``INTEGER`` with a 
+    value in the range from 1 to n+1, where n equals the rank of :samp:`{SOURCE}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = SPREAD(SOURCE, DIM, NCOPIES)``
+  :param NCOPIES:
+    Shall be a scalar of type ``INTEGER``.
 
-:samp:`{Arguments}:`
-  =================  ==============================================================================
-  :samp:`{SOURCE}`   Shall be a scalar or an array of any type and 
-                     a rank less than seven.
-  :samp:`{DIM}`      Shall be a scalar of type ``INTEGER`` with a 
-                     value in the range from 1 to n+1, where n equals the rank of :samp:`{SOURCE}`.
-  :samp:`{NCOPIES}`  Shall be a scalar of type ``INTEGER``.
-  =================  ==============================================================================
+  :return:
+    The result is an array of the same type as :samp:`{SOURCE}` and has rank n+1
+    where n equals the rank of :samp:`{SOURCE}`.
 
-:samp:`{Return value}:`
-  The result is an array of the same type as :samp:`{SOURCE}` and has rank n+1
-  where n equals the rank of :samp:`{SOURCE}`.
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Transformational function
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``RESULT = SPREAD(SOURCE, DIM, NCOPIES)``
 
-    PROGRAM test_spread
-      INTEGER :: a = 1, b(2) = (/ 1, 2 /)
-      WRITE(*,*) SPREAD(A, 1, 2)            ! "1 1"
-      WRITE(*,*) SPREAD(B, 1, 2)            ! "1 1 2 2"
-    END PROGRAM
+  :samp:`{Example}:`
 
-:samp:`{See also}:`
-  UNPACK
+    .. code-block:: fortran
+
+      PROGRAM test_spread
+        INTEGER :: a = 1, b(2) = (/ 1, 2 /)
+        WRITE(*,*) SPREAD(A, 1, 2)            ! "1 1"
+        WRITE(*,*) SPREAD(B, 1, 2)            ! "1 1 2 2"
+      END PROGRAM
+
+  :samp:`{See also}:`
+    UNPACK
 

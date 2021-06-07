@@ -1,4 +1,4 @@
-  .. _co_sum:
+.. _co_sum:
 
 CO_SUM --- Sum of values on the current set of images
 *****************************************************
@@ -7,7 +7,8 @@ CO_SUM --- Sum of values on the current set of images
 
 .. index:: Collectives, sum of values
 
-:samp:`{Description}:`
+.. function:: CO_SUM
+
   ``CO_SUM`` sums up the values of each element of :samp:`{A}` on all
   images of the current team.  If :samp:`{RESULT_IMAGE}` is present, the summed-up
   values are returned in :samp:`{A}` on the specified image only and the value
@@ -17,43 +18,47 @@ CO_SUM --- Sum of values on the current set of images
   execution failed, :samp:`{STAT}` gets assigned a nonzero value and, if present,
   :samp:`{ERRMSG}` gets assigned a value describing the occurred error.
 
-:samp:`{Standard}:`
-  Technical Specification (TS) 18508 or later
+  :param A:
+    shall be an integer, real or complex variable,
+    which has the same type and type parameters on all images of the team.
 
-:samp:`{Class}:`
-  Collective subroutine
+  :param RESULT_IMAGE:
+    (optional) a scalar integer expression; if
+    present, it shall have the same value on all images and refer to an
+    image of the current team.
 
-:samp:`{Syntax}:`
-  ``CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])``
+  :param STAT:
+    (optional) a scalar integer variable
 
-:samp:`{Arguments}:`
-  ======================  ======================================================================
-  :samp:`{A}`             shall be an integer, real or complex variable,
-                          which has the same type and type parameters on all images of the team.
-  :samp:`{RESULT_IMAGE}`  (optional) a scalar integer expression; if
-                          present, it shall have the same value on all images and refer to an
-                          image of the current team.
-  :samp:`{STAT}`          (optional) a scalar integer variable
-  :samp:`{ERRMSG}`        (optional) a scalar character variable
-  ======================  ======================================================================
+  :param ERRMSG:
+    (optional) a scalar character variable
 
-:samp:`{Example}:`
+  :samp:`{Standard}:`
+    Technical Specification (TS) 18508 or later
 
-  .. code-block:: fortran
+  :samp:`{Class}:`
+    Collective subroutine
 
-    program test
-      integer :: val
-      val = this_image ()
-      call co_sum (val, result_image=1)
-      if (this_image() == 1) then
-        write(*,*) "The sum is ", val ! prints (n**2 + n)/2,
-                                      ! with n = num_images()
-      end if
-    end program test
+  :samp:`{Syntax}:`
+    ``CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])``
 
-:samp:`{See also}:`
-  CO_MAX, 
-  CO_MIN, 
-  CO_REDUCE, 
-  CO_BROADCAST
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program test
+        integer :: val
+        val = this_image ()
+        call co_sum (val, result_image=1)
+        if (this_image() == 1) then
+          write(*,*) "The sum is ", val ! prints (n**2 + n)/2,
+                                        ! with n = num_images()
+        end if
+      end program test
+
+  :samp:`{See also}:`
+    CO_MAX, 
+    CO_MIN, 
+    CO_REDUCE, 
+    CO_BROADCAST
 

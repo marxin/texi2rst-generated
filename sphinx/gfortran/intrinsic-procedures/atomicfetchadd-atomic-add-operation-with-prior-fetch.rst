@@ -1,4 +1,4 @@
-  .. _atomic_fetch_add:
+.. _atomic_fetch_add:
 
 ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
 **********************************************************
@@ -7,7 +7,8 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
 
 .. index:: Atomic subroutine, ADD with fetch
 
-:samp:`{Description}:`
+.. function:: ATOMIC_FETCH_ADD(ATOM, VALUE, OLD)
+
   ``ATOMIC_FETCH_ADD(ATOM, VALUE, OLD)`` atomically stores the value of
   :samp:`{ATOM}` in :samp:`{OLD}` and adds the value of :samp:`{VALUE}` to the
   variable :samp:`{ATOM}`. When :samp:`{STAT}` is present and the invocation was
@@ -17,41 +18,45 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
   ``ISO_FORTRAN_ENV`` 's ``STAT_STOPPED_IMAGE`` and if the remote image has
   failed, the value ``STAT_FAILED_IMAGE``.
 
-:samp:`{Standard}:`
-  TS 18508 or later
+  :param ATOM:
+    Scalar coarray or coindexed variable of integer
+    type with ``ATOMIC_INT_KIND`` kind.
+    ``ATOMIC_LOGICAL_KIND`` kind.
 
-:samp:`{Class}:`
-  Atomic subroutine
+  :param VALUE:
+    Scalar of the same type as :samp:`{ATOM}`. If the kind
+    is different, the value is converted to the kind of :samp:`{ATOM}`.
 
-:samp:`{Syntax}:`
-  ``CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])``
+  :param OLD:
+    Scalar of the same type and kind as :samp:`{ATOM}`.
 
-:samp:`{Arguments}:`
-  ===============  ===================================================================
-  :samp:`{ATOM}`   Scalar coarray or coindexed variable of integer
-                   type with ``ATOMIC_INT_KIND`` kind.
-                   ``ATOMIC_LOGICAL_KIND`` kind.
-  :samp:`{VALUE}`  Scalar of the same type as :samp:`{ATOM}`. If the kind
-                   is different, the value is converted to the kind of :samp:`{ATOM}`.
-  :samp:`{OLD}`    Scalar of the same type and kind as :samp:`{ATOM}`.
-  :samp:`{STAT}`   (optional) Scalar default-kind integer variable.
-  ===============  ===================================================================
+  :param STAT:
+    (optional) Scalar default-kind integer variable.
 
-:samp:`{Example}:`
+  :samp:`{Standard}:`
+    TS 18508 or later
 
-  .. code-block:: fortran
+  :samp:`{Class}:`
+    Atomic subroutine
 
-    program atomic
-      use iso_fortran_env
-      integer(atomic_int_kind) :: atom[*], old
-      call atomic_add (atom[1], this_image(), old)
-    end program atomic
+  :samp:`{Syntax}:`
+    ``CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])``
 
-:samp:`{See also}:`
-  ATOMIC_DEFINE, 
-  ATOMIC_ADD, 
-  ISO_FORTRAN_ENV, 
-  ATOMIC_FETCH_AND, 
-  ATOMIC_FETCH_OR, 
-  ATOMIC_FETCH_XOR
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program atomic
+        use iso_fortran_env
+        integer(atomic_int_kind) :: atom[*], old
+        call atomic_add (atom[1], this_image(), old)
+      end program atomic
+
+  :samp:`{See also}:`
+    ATOMIC_DEFINE, 
+    ATOMIC_ADD, 
+    ISO_FORTRAN_ENV, 
+    ATOMIC_FETCH_AND, 
+    ATOMIC_FETCH_OR, 
+    ATOMIC_FETCH_XOR
 

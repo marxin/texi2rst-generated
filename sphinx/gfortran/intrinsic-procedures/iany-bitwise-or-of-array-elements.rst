@@ -1,4 +1,4 @@
-  .. _iany:
+.. _iany:
 
 IANY --- Bitwise OR of array elements
 *************************************
@@ -9,56 +9,54 @@ IANY --- Bitwise OR of array elements
 
 .. index:: bits, OR of array elements
 
-:samp:`{Description}:`
+.. function:: IANY
+
   Reduces with bitwise OR (inclusive or) the elements of :samp:`{ARRAY}` along
   dimension :samp:`{DIM}` if the corresponding element in :samp:`{MASK}` is ``TRUE``.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param ARRAY:
+    Shall be an array of type ``INTEGER``
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) shall be a scalar of type 
+    ``INTEGER`` with a value in the range from 1 to n, where n 
+    equals the rank of :samp:`{ARRAY}`.
 
-:samp:`{Syntax}:`
-  =====================================
-  ``RESULT = IANY(ARRAY[, MASK])``
-  ``RESULT = IANY(ARRAY, DIM[, MASK])``
-  =====================================
+  :param MASK:
+    (Optional) shall be of type ``LOGICAL`` 
+    and either be a scalar or an array of the same shape as :samp:`{ARRAY}`.
 
-:samp:`{Arguments}:`
-  ===============  ========================================================================
-  :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``
-  :samp:`{DIM}`    (Optional) shall be a scalar of type 
-                   ``INTEGER`` with a value in the range from 1 to n, where n 
-                   equals the rank of :samp:`{ARRAY}`.
-  :samp:`{MASK}`   (Optional) shall be of type ``LOGICAL`` 
-                   and either be a scalar or an array of the same shape as :samp:`{ARRAY}`.
-  ===============  ========================================================================
+  :return:
+    The result is of the same type as :samp:`{ARRAY}`.
 
-:samp:`{Return value}:`
-  The result is of the same type as :samp:`{ARRAY}`.
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-  If :samp:`{DIM}` is absent, a scalar with the bitwise OR of all elements in
-  :samp:`{ARRAY}` is returned. Otherwise, an array of rank n-1, where n equals
-  the rank of :samp:`{ARRAY}`, and a shape similar to that of :samp:`{ARRAY}` with
-  dimension :samp:`{DIM}` dropped is returned.
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    =====================================
+    ``RESULT = IANY(ARRAY[, MASK])``
+    ``RESULT = IANY(ARRAY, DIM[, MASK])``
+    =====================================
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    PROGRAM test_iany
-      INTEGER(1) :: a(2)
+    .. code-block:: fortran
 
-      a(1) = b'00100100'
-      a(2) = b'01101010'
+      PROGRAM test_iany
+        INTEGER(1) :: a(2)
 
-      ! prints 01101110
-      PRINT '(b8.8)', IANY(a)
-    END PROGRAM
+        a(1) = b'00100100'
+        a(2) = b'01101010'
 
-:samp:`{See also}:`
-  IPARITY, 
-  IALL, 
-  IOR
+        ! prints 01101110
+        PRINT '(b8.8)', IANY(a)
+      END PROGRAM
+
+  :samp:`{See also}:`
+    IPARITY, 
+    IALL, 
+    IOR
 

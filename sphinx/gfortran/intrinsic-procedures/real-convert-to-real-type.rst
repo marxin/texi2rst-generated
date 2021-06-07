@@ -1,4 +1,4 @@
-  .. _real:
+.. _real:
 
 REAL --- Convert to real type 
 ******************************
@@ -23,68 +23,56 @@ REAL --- Convert to real type
 
 .. index:: complex numbers, real part
 
-:samp:`{Description}:`
+.. function:: REAL(A [, KIND])
+
   ``REAL(A [, KIND])`` converts its argument :samp:`{A}` to a real type.  The
   ``REALPART`` function is provided for compatibility with :command:`g77`,
   and its use is strongly discouraged.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later, has GNU extensions
+  :param A:
+    Shall be ``INTEGER``, ``REAL``, or
+    ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  =============================
-  ``RESULT = REAL(A [, KIND])``
-  ``RESULT = REALPART(Z)``
-  =============================
+  :return:
+    These functions return a ``REAL`` variable or array under
+    the following rules: 
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{A}`     Shall be ``INTEGER``, ``REAL``, or
-                  ``COMPLEX``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later, has GNU extensions
 
-:samp:`{Return value}:`
-  These functions return a ``REAL`` variable or array under
-  the following rules: 
+  :samp:`{Class}:`
+    Elemental function
 
-  (A)
-    ``REAL(A)`` is converted to a default real type if :samp:`{A}` is an 
-    integer or real variable.
+  :samp:`{Syntax}:`
+    =============================
+    ``RESULT = REAL(A [, KIND])``
+    ``RESULT = REALPART(Z)``
+    =============================
 
-  (B)
-    ``REAL(A)`` is converted to a real type with the kind type parameter
-    of :samp:`{A}` if :samp:`{A}` is a complex variable.
+  :samp:`{Example}:`
 
-  (C)
-    ``REAL(A, KIND)`` is converted to a real type with kind type
-    parameter :samp:`{KIND}` if :samp:`{A}` is a complex, integer, or real
-    variable.
+    .. code-block:: fortran
 
-:samp:`{Example}:`
+      program test_real
+        complex :: x = (1.0, 2.0)
+        print *, real(x), real(x,8), realpart(x)
+      end program test_real
 
-  .. code-block:: fortran
+  :samp:`{Specific names}:`
+    =============  ==============  ===========  =============
+    Name           Argument        Return type  Standard
+    ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension
+    ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
+    ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension
+    ``FLOATJ(A)``  ``INTEGER(4)``  ``REAL(4)``  GNU extension
+    ``FLOATK(A)``  ``INTEGER(8)``  ``REAL(4)``  GNU extension
+    ``SNGL(A)``    ``INTEGER(8)``  ``REAL(4)``  GNU extension
+    =============  ==============  ===========  =============
 
-    program test_real
-      complex :: x = (1.0, 2.0)
-      print *, real(x), real(x,8), realpart(x)
-    end program test_real
-
-:samp:`{Specific names}:`
-  =============  ==============  ===========  =============
-  Name           Argument        Return type  Standard
-  ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension
-  ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
-  ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension
-  ``FLOATJ(A)``  ``INTEGER(4)``  ``REAL(4)``  GNU extension
-  ``FLOATK(A)``  ``INTEGER(8)``  ``REAL(4)``  GNU extension
-  ``SNGL(A)``    ``INTEGER(8)``  ``REAL(4)``  GNU extension
-  =============  ==============  ===========  =============
-
-:samp:`{See also}:`
-  DBLE
+  :samp:`{See also}:`
+    DBLE
 

@@ -1,4 +1,4 @@
-  .. _c_f_procpointer:
+.. _c_f_procpointer:
 
 C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
 ************************************************************
@@ -7,54 +7,55 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
 
 .. index:: pointer, C address of pointers
 
-:samp:`{Description}:`
+.. function:: C_F_PROCPOINTER(CPTR, FPTR)
+
   ``C_F_PROCPOINTER(CPTR, FPTR)`` Assign the target of the C function pointer
   :samp:`{CPTR}` to the Fortran procedure pointer :samp:`{FPTR}`.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param CPTR:
+    scalar of the type ``C_FUNPTR``. It is
+    ``INTENT(IN)``.
 
-:samp:`{Class}:`
-  Subroutine
+  :param FPTR:
+    procedure pointer interoperable with :samp:`{cptr}`. It is
+    ``INTENT(OUT)``.
 
-:samp:`{Syntax}:`
-  ``CALL C_F_PROCPOINTER(cptr, fptr)``
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Arguments}:`
-  ==============  ==========================================================
-  :samp:`{CPTR}`  scalar of the type ``C_FUNPTR``. It is
-                  ``INTENT(IN)``.
-  :samp:`{FPTR}`  procedure pointer interoperable with :samp:`{cptr}`. It is
-                  ``INTENT(OUT)``.
-  ==============  ==========================================================
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``CALL C_F_PROCPOINTER(cptr, fptr)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program main
-      use iso_c_binding
-      implicit none
-      abstract interface
-        function func(a)
-          import :: c_float
-          real(c_float), intent(in) :: a
-          real(c_float) :: func
-        end function
-      end interface
-      interface
-         function getIterFunc() bind(c,name="getIterFunc")
-           import :: c_funptr
-           type(c_funptr) :: getIterFunc
-         end function
-      end interface
-      type(c_funptr) :: cfunptr
-      procedure(func), pointer :: myFunc
-      cfunptr = getIterFunc()
-      call c_f_procpointer(cfunptr, myFunc)
-    end program main
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  C_LOC, 
-  C_F_POINTER
+      program main
+        use iso_c_binding
+        implicit none
+        abstract interface
+          function func(a)
+            import :: c_float
+            real(c_float), intent(in) :: a
+            real(c_float) :: func
+          end function
+        end interface
+        interface
+           function getIterFunc() bind(c,name="getIterFunc")
+             import :: c_funptr
+             type(c_funptr) :: getIterFunc
+           end function
+        end interface
+        type(c_funptr) :: cfunptr
+        procedure(func), pointer :: myFunc
+        cfunptr = getIterFunc()
+        call c_f_procpointer(cfunptr, myFunc)
+      end program main
+
+  :samp:`{See also}:`
+    C_LOC, 
+    C_F_POINTER
 

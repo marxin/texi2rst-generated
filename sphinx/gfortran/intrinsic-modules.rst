@@ -1,4 +1,4 @@
-  .. _intrinsic-modules:
+.. _intrinsic-modules:
 
 Intrinsic Modules
 -----------------

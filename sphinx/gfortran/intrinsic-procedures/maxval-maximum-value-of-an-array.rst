@@ -1,4 +1,4 @@
-  .. _maxval:
+.. _maxval:
 
 MAXVAL --- Maximum value of an array
 ************************************
@@ -9,7 +9,8 @@ MAXVAL --- Maximum value of an array
 
 .. index:: maximum value
 
-:samp:`{Description}:`
+.. function:: MAXVAL
+
   Determines the maximum value of the elements in an array value, or, if
   the :samp:`{DIM}` argument is supplied, determines the maximum value along
   each row of the array in the :samp:`{DIM}` direction.  If :samp:`{MASK}` is
@@ -19,37 +20,39 @@ MAXVAL --- Maximum value of an array
   if :samp:`{ARRAY}` is numeric, or a string of nulls if :samp:`{ARRAY}` is of character
   type.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param ARRAY:
+    Shall be an array of type ``INTEGER`` or
+    ``REAL``.
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) Shall be a scalar of type
+    ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
+    inclusive.  It may not be an optional dummy argument.
 
-:samp:`{Syntax}:`
-  ========================================
-  ``RESULT = MAXVAL(ARRAY, DIM [, MASK])``
-  ``RESULT = MAXVAL(ARRAY [, MASK])``
-  ========================================
+  :param MASK:
+    (Optional) Shall be of type ``LOGICAL``,
+    and conformable with :samp:`{ARRAY}`.
 
-:samp:`{Arguments}:`
-  ===============  ======================================================================
-  :samp:`{ARRAY}`  Shall be an array of type ``INTEGER`` or
-                   ``REAL``.
-  :samp:`{DIM}`    (Optional) Shall be a scalar of type
-                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
-                   inclusive.  It may not be an optional dummy argument.
-  :samp:`{MASK}`   (Optional) Shall be of type ``LOGICAL``,
-                   and conformable with :samp:`{ARRAY}`.
-  ===============  ======================================================================
+  :return:
+    If :samp:`{DIM}` is absent, or if :samp:`{ARRAY}` has a rank of one, the result
+    is a scalar.  If :samp:`{DIM}` is present, the result is an array with a
+    rank one less than the rank of :samp:`{ARRAY}`, and a size corresponding to
+    the size of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.  In all
+    cases, the result is of the same type and kind as :samp:`{ARRAY}`.
 
-:samp:`{Return value}:`
-  If :samp:`{DIM}` is absent, or if :samp:`{ARRAY}` has a rank of one, the result
-  is a scalar.  If :samp:`{DIM}` is present, the result is an array with a
-  rank one less than the rank of :samp:`{ARRAY}`, and a size corresponding to
-  the size of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.  In all
-  cases, the result is of the same type and kind as :samp:`{ARRAY}`.
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{See also}:`
-  MAX, 
-  MAXLOC
+  :samp:`{Class}:`
+    Transformational function
+
+  :samp:`{Syntax}:`
+    ========================================
+    ``RESULT = MAXVAL(ARRAY, DIM [, MASK])``
+    ``RESULT = MAXVAL(ARRAY [, MASK])``
+    ========================================
+
+  :samp:`{See also}:`
+    MAX, 
+    MAXLOC
 

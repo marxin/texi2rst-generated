@@ -1,4 +1,4 @@
-  .. _mod:
+.. _mod:
 
 MOD --- Remainder function
 **************************
@@ -21,66 +21,67 @@ MOD --- Remainder function
 
 .. index:: division, remainder
 
-:samp:`{Description}:`
+.. function:: MOD(A,P)
+
   ``MOD(A,P)`` computes the remainder of the division of A by P. 
 
-:samp:`{Standard}:`
-  Fortran 77 and later, has overloads that are GNU extensions
+  :param A:
+    Shall be a scalar of type ``INTEGER`` or ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param P:
+    Shall be a scalar of the same type and kind as :samp:`{A}` 
+    and not equal to zero.  (As a GNU extension, arguments of different kinds are
+    permitted.)
 
-:samp:`{Syntax}:`
-  ``RESULT = MOD(A, P)``
+  :return:
+    The return value is the result of ``A - (INT(A/P) * P)``. The type
+    and kind of the return value is the same as that of the arguments. The
+    returned value has the same sign as A and a magnitude less than the
+    magnitude of P.  (As a GNU extension, kind is the largest kind of the actual
+    arguments.)
 
-:samp:`{Arguments}:`
-  ===========  =============================================================================
-  :samp:`{A}`  Shall be a scalar of type ``INTEGER`` or ``REAL``.
-  :samp:`{P}`  Shall be a scalar of the same type and kind as :samp:`{A}` 
-               and not equal to zero.  (As a GNU extension, arguments of different kinds are
-               permitted.)
-  ===========  =============================================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, has overloads that are GNU extensions
 
-:samp:`{Return value}:`
-  The return value is the result of ``A - (INT(A/P) * P)``. The type
-  and kind of the return value is the same as that of the arguments. The
-  returned value has the same sign as A and a magnitude less than the
-  magnitude of P.  (As a GNU extension, kind is the largest kind of the actual
-  arguments.)
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = MOD(A, P)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_mod
-      print *, mod(17,3)
-      print *, mod(17.5,5.5)
-      print *, mod(17.5d0,5.5)
-      print *, mod(17.5,5.5d0)
+    .. code-block:: fortran
 
-      print *, mod(-17,3)
-      print *, mod(-17.5,5.5)
-      print *, mod(-17.5d0,5.5)
-      print *, mod(-17.5,5.5d0)
+      program test_mod
+        print *, mod(17,3)
+        print *, mod(17.5,5.5)
+        print *, mod(17.5d0,5.5)
+        print *, mod(17.5,5.5d0)
 
-      print *, mod(17,-3)
-      print *, mod(17.5,-5.5)
-      print *, mod(17.5d0,-5.5)
-      print *, mod(17.5,-5.5d0)
-    end program test_mod
+        print *, mod(-17,3)
+        print *, mod(-17.5,5.5)
+        print *, mod(-17.5d0,5.5)
+        print *, mod(-17.5,5.5d0)
 
-:samp:`{Specific names}:`
-  =============  ==================  ==============  ====================
-  Name           Arguments           Return type     Standard
-  ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
-  ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
-  ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later
-  ``BMOD(A,P)``  ``INTEGER(1) A,P``  ``INTEGER(1)``  GNU extension
-  ``IMOD(A,P)``  ``INTEGER(2) A,P``  ``INTEGER(2)``  GNU extension
-  ``JMOD(A,P)``  ``INTEGER(4) A,P``  ``INTEGER(4)``  GNU extension
-  ``KMOD(A,P)``  ``INTEGER(8) A,P``  ``INTEGER(8)``  GNU extension
-  =============  ==================  ==============  ====================
+        print *, mod(17,-3)
+        print *, mod(17.5,-5.5)
+        print *, mod(17.5d0,-5.5)
+        print *, mod(17.5,-5.5d0)
+      end program test_mod
 
-:samp:`{See also}:`
-  MODULO
+  :samp:`{Specific names}:`
+    =============  ==================  ==============  ====================
+    Name           Arguments           Return type     Standard
+    ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
+    ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
+    ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later
+    ``BMOD(A,P)``  ``INTEGER(1) A,P``  ``INTEGER(1)``  GNU extension
+    ``IMOD(A,P)``  ``INTEGER(2) A,P``  ``INTEGER(2)``  GNU extension
+    ``JMOD(A,P)``  ``INTEGER(4) A,P``  ``INTEGER(4)``  GNU extension
+    ``KMOD(A,P)``  ``INTEGER(8) A,P``  ``INTEGER(8)``  GNU extension
+    =============  ==================  ==============  ====================
+
+  :samp:`{See also}:`
+    MODULO
 

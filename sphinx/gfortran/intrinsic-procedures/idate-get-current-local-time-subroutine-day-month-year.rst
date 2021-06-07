@@ -1,4 +1,4 @@
-  .. _idate:
+.. _idate:
 
 IDATE --- Get current local time subroutine (day/month/year) 
 *************************************************************
@@ -9,47 +9,41 @@ IDATE --- Get current local time subroutine (day/month/year)
 
 .. index:: current date
 
-:samp:`{Description}:`
+.. function:: IDATE(VALUES)
+
   ``IDATE(VALUES)`` Fills :samp:`{VALUES}` with the numerical values at the  
   current local time. The day (in the range 1-31), month (in the range 1-12), 
   and year appear in elements 1, 2, and 3 of :samp:`{VALUES}`, respectively. 
   The year has four significant digits.
 
-  This intrinsic routine is provided for backwards compatibility with 
-  GNU Fortran 77.  In new code, programmers should consider the use of 
-  the DATE_AND_TIME intrinsic defined by the Fortran 95
-  standard.
+  :param VALUES:
+    The type shall be ``INTEGER, DIMENSION(3)`` and
+    the kind shall be the default integer kind.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    Does not return anything.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL IDATE(VALUES)``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Arguments}:`
-  ================  ===============================================
-  :samp:`{VALUES}`  The type shall be ``INTEGER, DIMENSION(3)`` and
-                    the kind shall be the default integer kind.
-  ================  ===============================================
+  :samp:`{Syntax}:`
+    ``CALL IDATE(VALUES)``
 
-:samp:`{Return value}:`
-  Does not return anything.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_idate
+        integer, dimension(3) :: tarray
+        call idate(tarray)
+        print *, tarray(1)
+        print *, tarray(2)
+        print *, tarray(3)
+      end program test_idate
 
-    program test_idate
-      integer, dimension(3) :: tarray
-      call idate(tarray)
-      print *, tarray(1)
-      print *, tarray(2)
-      print *, tarray(3)
-    end program test_idate
-
-:samp:`{See also}:`
-  DATE_AND_TIME
+  :samp:`{See also}:`
+    DATE_AND_TIME
 

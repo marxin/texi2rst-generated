@@ -1,4 +1,4 @@
-  .. _atomic_fetch_and:
+.. _atomic_fetch_and:
 
 ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
 ******************************************************************
@@ -7,7 +7,8 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
 
 .. index:: Atomic subroutine, AND with fetch
 
-:samp:`{Description}:`
+.. function:: ATOMIC_FETCH_AND
+
   ``ATOMIC_AND(ATOM, VALUE)`` atomically stores the value of :samp:`{ATOM}` in
   :samp:`{OLD}` and defines :samp:`{ATOM}` with the bitwise AND between the values of
   :samp:`{ATOM}` and :samp:`{VALUE}`. When :samp:`{STAT}` is present and the invocation was
@@ -17,40 +18,44 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
   ``ISO_FORTRAN_ENV`` 's ``STAT_STOPPED_IMAGE`` and if the remote image has
   failed, the value ``STAT_FAILED_IMAGE``.
 
-:samp:`{Standard}:`
-  TS 18508 or later
+  :param ATOM:
+    Scalar coarray or coindexed variable of integer
+    type with ``ATOMIC_INT_KIND`` kind.
 
-:samp:`{Class}:`
-  Atomic subroutine
+  :param VALUE:
+    Scalar of the same type as :samp:`{ATOM}`. If the kind
+    is different, the value is converted to the kind of :samp:`{ATOM}`.
 
-:samp:`{Syntax}:`
-  ``CALL ATOMIC_FETCH_AND (ATOM, VALUE, OLD [, STAT])``
+  :param OLD:
+    Scalar of the same type and kind as :samp:`{ATOM}`.
 
-:samp:`{Arguments}:`
-  ===============  ===================================================================
-  :samp:`{ATOM}`   Scalar coarray or coindexed variable of integer
-                   type with ``ATOMIC_INT_KIND`` kind.
-  :samp:`{VALUE}`  Scalar of the same type as :samp:`{ATOM}`. If the kind
-                   is different, the value is converted to the kind of :samp:`{ATOM}`.
-  :samp:`{OLD}`    Scalar of the same type and kind as :samp:`{ATOM}`.
-  :samp:`{STAT}`   (optional) Scalar default-kind integer variable.
-  ===============  ===================================================================
+  :param STAT:
+    (optional) Scalar default-kind integer variable.
 
-:samp:`{Example}:`
+  :samp:`{Standard}:`
+    TS 18508 or later
 
-  .. code-block:: fortran
+  :samp:`{Class}:`
+    Atomic subroutine
 
-    program atomic
-      use iso_fortran_env
-      integer(atomic_int_kind) :: atom[*], old
-      call atomic_fetch_and (atom[1], int(b'10100011101'), old)
-    end program atomic
+  :samp:`{Syntax}:`
+    ``CALL ATOMIC_FETCH_AND (ATOM, VALUE, OLD [, STAT])``
 
-:samp:`{See also}:`
-  ATOMIC_DEFINE, 
-  ATOMIC_AND, 
-  ISO_FORTRAN_ENV, 
-  ATOMIC_FETCH_ADD, 
-  ATOMIC_FETCH_OR, 
-  ATOMIC_FETCH_XOR
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program atomic
+        use iso_fortran_env
+        integer(atomic_int_kind) :: atom[*], old
+        call atomic_fetch_and (atom[1], int(b'10100011101'), old)
+      end program atomic
+
+  :samp:`{See also}:`
+    ATOMIC_DEFINE, 
+    ATOMIC_AND, 
+    ISO_FORTRAN_ENV, 
+    ATOMIC_FETCH_ADD, 
+    ATOMIC_FETCH_OR, 
+    ATOMIC_FETCH_XOR
 

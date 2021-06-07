@@ -1,4 +1,4 @@
-  .. _char:
+.. _char:
 
 CHAR --- Character conversion function
 **************************************
@@ -7,51 +7,52 @@ CHAR --- Character conversion function
 
 .. index:: conversion, to character
 
-:samp:`{Description}:`
+.. function:: CHAR(I [, KIND])
+
   ``CHAR(I [, KIND])`` returns the character represented by the integer :samp:`{I}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = CHAR(I [, KIND])``
+  :return:
+    The return value is of type ``CHARACTER(1)``
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{I}`     The type shall be ``INTEGER``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``CHARACTER(1)``
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = CHAR(I [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_char
-        integer :: i = 74
-        character(1) :: c
-        c = char(i)
-        print *, i, c ! returns 'J'
-    end program test_char
+    .. code-block:: fortran
 
-:samp:`{Specific names}:`
-  ===========  =============  ====================  ====================
-  Name         Argument       Return type           Standard
-  ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later
-  ===========  =============  ====================  ====================
+      program test_char
+          integer :: i = 74
+          character(1) :: c
+          c = char(i)
+          print *, i, c ! returns 'J'
+      end program test_char
 
-:samp:`{Note}:`
-  See ICHAR for a discussion of converting between numerical values
-  and formatted string representations.
+  :samp:`{Specific names}:`
+    ===========  =============  ====================  ====================
+    Name         Argument       Return type           Standard
+    ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later
+    ===========  =============  ====================  ====================
 
-:samp:`{See also}:`
-  ACHAR, 
-  IACHAR, 
-  ICHAR
+  :samp:`{Note}:`
+    See ICHAR for a discussion of converting between numerical values
+    and formatted string representations.
+
+  :samp:`{See also}:`
+    ACHAR, 
+    IACHAR, 
+    ICHAR
 

@@ -1,4 +1,4 @@
-  .. _cotan:
+.. _cotan:
 
 COTAN --- Cotangent function
 ****************************
@@ -11,49 +11,45 @@ COTAN --- Cotangent function
 
 .. index:: cotangent
 
-:samp:`{Description}:`
+.. function:: COTAN(X)
+
   ``COTAN(X)`` computes the cotangent of :samp:`{X}`. Equivalent to ``COS(x)``
   divided by ``SIN(x)``, or ``1 / TAN(x)``.
 
-  This function is for compatibility only and should be avoided in favor of
-  standard constructs wherever possible.
+  :param X:
+    The type shall be ``REAL`` or ``COMPLEX``.
 
-:samp:`{Standard}:`
-  GNU extension, enabled with :option:`-fdec-math`.
+  :return:
+    The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
-:samp:`{Class}:`
-  Elemental function
+  :samp:`{Standard}:`
+    GNU extension, enabled with :option:`-fdec-math`.
 
-:samp:`{Syntax}:`
-  ``RESULT = COTAN(X)``
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Arguments}:`
-  ===========  ==========================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
-  ===========  ==========================================
+  :samp:`{Syntax}:`
+    ``RESULT = COTAN(X)``
 
-:samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}`, and its value is in radians.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_cotan
+        real(8) :: x = 0.165_8
+        x = cotan(x)
+      end program test_cotan
 
-    program test_cotan
-      real(8) :: x = 0.165_8
-      x = cotan(x)
-    end program test_cotan
+  :samp:`{Specific names}:`
+    =============  =============  ===========  =============
+    Name           Argument       Return type  Standard
+    ``COTAN(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
+    ``DCOTAN(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
+    =============  =============  ===========  =============
 
-:samp:`{Specific names}:`
-  =============  =============  ===========  =============
-  Name           Argument       Return type  Standard
-  ``COTAN(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-  ``DCOTAN(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-  =============  =============  ===========  =============
-
-:samp:`{See also}:`
-  Converse function: 
-  TAN 
-  Degrees function: 
-  COTAND
+  :samp:`{See also}:`
+    Converse function: 
+    TAN 
+    Degrees function: 
+    COTAND
 

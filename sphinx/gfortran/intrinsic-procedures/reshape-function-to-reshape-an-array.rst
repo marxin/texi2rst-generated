@@ -1,4 +1,4 @@
-  .. _reshape:
+.. _reshape:
 
 RESHAPE --- Function to reshape an array
 ****************************************
@@ -9,48 +9,53 @@ RESHAPE --- Function to reshape an array
 
 .. index:: array, transmogrify
 
-:samp:`{Description}:`
+.. function:: RESHAPE
+
   Reshapes :samp:`{SOURCE}` to correspond to :samp:`{SHAPE}`. If necessary,
   the new array may be padded with elements from :samp:`{PAD}` or permuted
   as defined by :samp:`{ORDER}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param SOURCE:
+    Shall be an array of any type.
 
-:samp:`{Class}:`
-  Transformational function
+  :param SHAPE:
+    Shall be of type ``INTEGER`` and an 
+    array of rank one. Its values must be positive or zero.
 
-:samp:`{Syntax}:`
-  ``RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])``
+  :param PAD:
+    (Optional) shall be an array of the same 
+    type as :samp:`{SOURCE}`.
 
-:samp:`{Arguments}:`
-  ================  =========================================================================
-  :samp:`{SOURCE}`  Shall be an array of any type.
-  :samp:`{SHAPE}`   Shall be of type ``INTEGER`` and an 
-                    array of rank one. Its values must be positive or zero.
-  :samp:`{PAD}`     (Optional) shall be an array of the same 
-                    type as :samp:`{SOURCE}`.
-  :samp:`{ORDER}`   (Optional) shall be of type ``INTEGER``
-                    and an array of the same shape as :samp:`{SHAPE}`. Its values shall
-                    be a permutation of the numbers from 1 to n, where n is the size of 
-                    :samp:`{SHAPE}`. If :samp:`{ORDER}` is absent, the natural ordering shall
-                    be assumed.
-  ================  =========================================================================
+  :param ORDER:
+    (Optional) shall be of type ``INTEGER``
+    and an array of the same shape as :samp:`{SHAPE}`. Its values shall
+    be a permutation of the numbers from 1 to n, where n is the size of 
+    :samp:`{SHAPE}`. If :samp:`{ORDER}` is absent, the natural ordering shall
+    be assumed.
 
-:samp:`{Return value}:`
-  The result is an array of shape :samp:`{SHAPE}` with the same type as 
-  :samp:`{SOURCE}`. 
+  :return:
+    The result is an array of shape :samp:`{SHAPE}` with the same type as 
+    :samp:`{SOURCE}`. 
 
-:samp:`{Example}:`
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-  .. code-block:: fortran
+  :samp:`{Class}:`
+    Transformational function
 
-    PROGRAM test_reshape
-      INTEGER, DIMENSION(4) :: x
-      WRITE(*,*) SHAPE(x)                       ! prints "4"
-      WRITE(*,*) SHAPE(RESHAPE(x, (/2, 2/)))    ! prints "2 2"
-    END PROGRAM
+  :samp:`{Syntax}:`
+    ``RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])``
 
-:samp:`{See also}:`
-  SHAPE
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      PROGRAM test_reshape
+        INTEGER, DIMENSION(4) :: x
+        WRITE(*,*) SHAPE(x)                       ! prints "4"
+        WRITE(*,*) SHAPE(RESHAPE(x, (/2, 2/)))    ! prints "2 2"
+      END PROGRAM
+
+  :samp:`{See also}:`
+    SHAPE
 

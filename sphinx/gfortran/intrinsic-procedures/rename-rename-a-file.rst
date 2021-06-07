@@ -1,4 +1,4 @@
-  .. _rename:
+.. _rename:
 
 RENAME --- Rename a file
 ************************
@@ -7,7 +7,8 @@ RENAME --- Rename a file
 
 .. index:: file system, rename file
 
-:samp:`{Description}:`
+.. function:: RENAME
+
   Renames a file from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
   character ( ``CHAR(0)`` ) can be used to mark the end of the names in
   :samp:`{PATH1}` and :samp:`{PATH2}` ; otherwise, trailing blanks in the file
@@ -15,28 +16,27 @@ RENAME --- Rename a file
   contains 0 on success or a nonzero error code upon return; see
   ``rename(2)``.
 
-  This intrinsic is provided in both subroutine and function forms;
-  however, only one form can be used in any given program unit.
+  :param PATH1:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param PATH2:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :param STATUS:
+    (Optional) Shall be of default ``INTEGER`` type.
 
-:samp:`{Syntax}:`
-  ========================================
-  ``CALL RENAME(PATH1, PATH2 [, STATUS])``
-  ``STATUS = RENAME(PATH1, PATH2)``
-  ========================================
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ================  ================================================
-  :samp:`{PATH1}`   Shall be of default ``CHARACTER`` type.
-  :samp:`{PATH2}`   Shall be of default ``CHARACTER`` type.
-  :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
-  ================  ================================================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{See also}:`
-  LINK
+  :samp:`{Syntax}:`
+    ========================================
+    ``CALL RENAME(PATH1, PATH2 [, STATUS])``
+    ``STATUS = RENAME(PATH1, PATH2)``
+    ========================================
+
+  :samp:`{See also}:`
+    LINK
 

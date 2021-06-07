@@ -1,4 +1,4 @@
-  .. _iparity:
+.. _iparity:
 
 IPARITY --- Bitwise XOR of array elements
 *****************************************
@@ -11,57 +11,55 @@ IPARITY --- Bitwise XOR of array elements
 
 .. index:: bits, XOR of array elements
 
-:samp:`{Description}:`
+.. function:: IPARITY
+
   Reduces with bitwise XOR (exclusive or) the elements of :samp:`{ARRAY}` along
   dimension :samp:`{DIM}` if the corresponding element in :samp:`{MASK}` is ``TRUE``.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param ARRAY:
+    Shall be an array of type ``INTEGER``
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) shall be a scalar of type 
+    ``INTEGER`` with a value in the range from 1 to n, where n 
+    equals the rank of :samp:`{ARRAY}`.
 
-:samp:`{Syntax}:`
-  ========================================
-  ``RESULT = IPARITY(ARRAY[, MASK])``
-  ``RESULT = IPARITY(ARRAY, DIM[, MASK])``
-  ========================================
+  :param MASK:
+    (Optional) shall be of type ``LOGICAL`` 
+    and either be a scalar or an array of the same shape as :samp:`{ARRAY}`.
 
-:samp:`{Arguments}:`
-  ===============  ========================================================================
-  :samp:`{ARRAY}`  Shall be an array of type ``INTEGER``
-  :samp:`{DIM}`    (Optional) shall be a scalar of type 
-                   ``INTEGER`` with a value in the range from 1 to n, where n 
-                   equals the rank of :samp:`{ARRAY}`.
-  :samp:`{MASK}`   (Optional) shall be of type ``LOGICAL`` 
-                   and either be a scalar or an array of the same shape as :samp:`{ARRAY}`.
-  ===============  ========================================================================
+  :return:
+    The result is of the same type as :samp:`{ARRAY}`.
 
-:samp:`{Return value}:`
-  The result is of the same type as :samp:`{ARRAY}`.
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-  If :samp:`{DIM}` is absent, a scalar with the bitwise XOR of all elements in
-  :samp:`{ARRAY}` is returned. Otherwise, an array of rank n-1, where n equals
-  the rank of :samp:`{ARRAY}`, and a shape similar to that of :samp:`{ARRAY}` with
-  dimension :samp:`{DIM}` dropped is returned.
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ========================================
+    ``RESULT = IPARITY(ARRAY[, MASK])``
+    ``RESULT = IPARITY(ARRAY, DIM[, MASK])``
+    ========================================
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    PROGRAM test_iparity
-      INTEGER(1) :: a(2)
+    .. code-block:: fortran
 
-      a(1) = int(b'00100100', 1)
-      a(2) = int(b'01101010', 1)
+      PROGRAM test_iparity
+        INTEGER(1) :: a(2)
 
-      ! prints 01001110
-      PRINT '(b8.8)', IPARITY(a)
-    END PROGRAM
+        a(1) = int(b'00100100', 1)
+        a(2) = int(b'01101010', 1)
 
-:samp:`{See also}:`
-  IANY, 
-  IALL, 
-  IEOR, 
-  PARITY
+        ! prints 01001110
+        PRINT '(b8.8)', IPARITY(a)
+      END PROGRAM
+
+  :samp:`{See also}:`
+    IANY, 
+    IALL, 
+    IEOR, 
+    PARITY
 

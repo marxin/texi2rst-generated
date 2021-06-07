@@ -1,4 +1,4 @@
-  .. _asinh:
+.. _asinh:
 
 ASINH --- Inverse hyperbolic sine function
 ******************************************
@@ -15,44 +15,43 @@ ASINH --- Inverse hyperbolic sine function
 
 .. index:: sine, hyperbolic, inverse
 
-:samp:`{Description}:`
+.. function:: ASINH(X)
+
   ``ASINH(X)`` computes the inverse hyperbolic sine of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param X:
+    The type shall be ``REAL`` or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of the same type and kind as  :samp:`{X}`. If :samp:`{X}` is
+    complex, the imaginary part of the result is in radians and lies between
+    -\pi/2 \leq \Im \asinh(x) \leq \pi/2.
 
-:samp:`{Syntax}:`
-  ``RESULT = ASINH(X)``
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Arguments}:`
-  ===========  ==========================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
-  ===========  ==========================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as  :samp:`{X}`. If :samp:`{X}` is
-  complex, the imaginary part of the result is in radians and lies between
-  -\pi/2 \leq \Im \asinh(x) \leq \pi/2.
+  :samp:`{Syntax}:`
+    ``RESULT = ASINH(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_asinh
-      REAL(8), DIMENSION(3) :: x = (/ -1.0, 0.0, 1.0 /)
-      WRITE (*,*) ASINH(x)
-    END PROGRAM
+      PROGRAM test_asinh
+        REAL(8), DIMENSION(3) :: x = (/ -1.0, 0.0, 1.0 /)
+        WRITE (*,*) ASINH(x)
+      END PROGRAM
 
-:samp:`{Specific names}:`
-  =============  =============  ===========  ==============
-  Name           Argument       Return type  Standard
-  ``DASINH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension.
-  =============  =============  ===========  ==============
+  :samp:`{Specific names}:`
+    =============  =============  ===========  ==============
+    Name           Argument       Return type  Standard
+    ``DASINH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension.
+    =============  =============  ===========  ==============
 
-:samp:`{See also}:`
-  Inverse function: 
-  SINH
+  :samp:`{See also}:`
+    Inverse function: 
+    SINH
 

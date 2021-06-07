@@ -1,4 +1,4 @@
-  .. _erfc_scaled:
+.. _erfc_scaled:
 
 ERFC_SCALED --- Error function 
 *******************************
@@ -7,33 +7,32 @@ ERFC_SCALED --- Error function
 
 .. index:: error function, complementary, exponentially-scaled
 
-:samp:`{Description}:`
+.. function:: ERFC_SCALED(X)
+
   ``ERFC_SCALED(X)`` computes the exponentially-scaled complementary
   error function of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param X:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = ERFC_SCALED(X)``
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Arguments}:`
-  ===========  ===========================
-  :samp:`{X}`  The type shall be ``REAL``.
-  ===========  ===========================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = ERFC_SCALED(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_erfc_scaled
-      real(8) :: x = 0.17_8
-      x = erfc_scaled(x)
-    end program test_erfc_scaled
+      program test_erfc_scaled
+        real(8) :: x = 0.17_8
+        x = erfc_scaled(x)
+      end program test_erfc_scaled
 

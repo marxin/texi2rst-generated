@@ -1,4 +1,4 @@
-  .. _compiler_options:
+.. _compiler_options:
 
 COMPILER_OPTIONS --- Options passed to the compiler
 ***************************************************
@@ -11,38 +11,39 @@ COMPILER_OPTIONS --- Options passed to the compiler
 
 .. index:: compiler flags inquiry function
 
-:samp:`{Description}:`
+.. function:: COMPILER_OPTIONS
+
   ``COMPILER_OPTIONS`` returns a string with the options used for
   compiling.
 
-:samp:`{Standard}:`
-  Fortran 2008
+  :return:
+    The return value is a default-kind string with system-dependent length.
+    It contains the compiler flags used to compile the file, which called
+    the ``COMPILER_OPTIONS`` intrinsic.
 
-:samp:`{Class}:`
-  Inquiry function of the module ``ISO_FORTRAN_ENV``
+  :samp:`{Standard}:`
+    Fortran 2008
 
-:samp:`{Syntax}:`
-  ``STR = COMPILER_OPTIONS()``
+  :samp:`{Class}:`
+    Inquiry function of the module ``ISO_FORTRAN_ENV``
 
-:samp:`{Arguments}:`
-  None
+  :samp:`{Syntax}:`
+    ``STR = COMPILER_OPTIONS()``
 
-:samp:`{Return value}:`
-  The return value is a default-kind string with system-dependent length.
-  It contains the compiler flags used to compile the file, which called
-  the ``COMPILER_OPTIONS`` intrinsic.
+  :samp:`{Arguments}:`
+    None
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-       use iso_fortran_env
-       print '(4a)', 'This file was compiled by ', &
-                     compiler_version(), ' using the options ', &
-                     compiler_options()
-       end
+         use iso_fortran_env
+         print '(4a)', 'This file was compiled by ', &
+                       compiler_version(), ' using the options ', &
+                       compiler_options()
+         end
 
-:samp:`{See also}:`
-  COMPILER_VERSION, 
-  ISO_FORTRAN_ENV
+  :samp:`{See also}:`
+    COMPILER_VERSION, 
+    ISO_FORTRAN_ENV
 

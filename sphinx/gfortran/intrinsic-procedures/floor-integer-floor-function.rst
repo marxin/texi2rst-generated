@@ -1,4 +1,4 @@
-  .. _floor:
+.. _floor:
 
 FLOOR --- Integer floor function
 ********************************
@@ -9,41 +9,42 @@ FLOOR --- Integer floor function
 
 .. index:: rounding, floor
 
-:samp:`{Description}:`
+.. function:: FLOOR(A)
+
   ``FLOOR(A)`` returns the greatest integer less than or equal to :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 95 and later
+  :param A:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = FLOOR(A [, KIND])``
+  :return:
+    The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
+    and of default-kind ``INTEGER`` otherwise.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{A}`     The type shall be ``REAL``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 95 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
-  and of default-kind ``INTEGER`` otherwise.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = FLOOR(A [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_floor
-        real :: x = 63.29
-        real :: y = -63.59
-        print *, floor(x) ! returns 63
-        print *, floor(y) ! returns -64
-    end program test_floor
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  CEILING, 
-  NINT
+      program test_floor
+          real :: x = 63.29
+          real :: y = -63.59
+          print *, floor(x) ! returns 63
+          print *, floor(y) ! returns -64
+      end program test_floor
+
+  :samp:`{See also}:`
+    CEILING, 
+    NINT
 

@@ -1,4 +1,4 @@
-  .. _dreal:
+.. _dreal:
 
 DREAL --- Double real part function
 ***********************************
@@ -7,35 +7,34 @@ DREAL --- Double real part function
 
 .. index:: complex numbers, real part
 
-:samp:`{Description}:`
+.. function:: DREAL(Z)
+
   ``DREAL(Z)`` returns the real part of complex variable :samp:`{Z}`.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param A:
+    The type shall be ``COMPLEX(8)``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``REAL(8)``.
 
-:samp:`{Syntax}:`
-  ``RESULT = DREAL(A)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===========  =================================
-  :samp:`{A}`  The type shall be ``COMPLEX(8)``.
-  ===========  =================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL(8)``.
+  :samp:`{Syntax}:`
+    ``RESULT = DREAL(A)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_dreal
-        complex(8) :: z = (1.3_8,7.2_8)
-        print *, dreal(z)
-    end program test_dreal
+      program test_dreal
+          complex(8) :: z = (1.3_8,7.2_8)
+          print *, dreal(z)
+      end program test_dreal
 
-:samp:`{See also}:`
-  AIMAG
+  :samp:`{See also}:`
+    AIMAG
 

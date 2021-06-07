@@ -1,4 +1,4 @@
-  .. _len:
+.. _len:
 
 LEN --- Length of a character entity
 ************************************
@@ -7,41 +7,42 @@ LEN --- Length of a character entity
 
 .. index:: string, length
 
-:samp:`{Description}:`
+.. function:: LEN
+
   Returns the length of a character string.  If :samp:`{STRING}` is an array,
   the length of an element of :samp:`{STRING}` is returned.  Note that
   :samp:`{STRING}` need not be defined when this intrinsic is invoked, since
   only the length, not the content, of :samp:`{STRING}` is needed.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
+  :param STRING:
+    Shall be a scalar or array of type
+    ``CHARACTER``, with ``INTENT(IN)``
 
-:samp:`{Class}:`
-  Inquiry function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``L = LEN(STRING [, KIND])``
+  :return:
+    The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
+    :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-:samp:`{Arguments}:`
-  ================  =======================================================
-  :samp:`{STRING}`  Shall be a scalar or array of type
-                    ``CHARACTER``, with ``INTENT(IN)``
-  :samp:`{KIND}`    (Optional) An ``INTEGER`` initialization
-                    expression indicating the kind parameter of the result.
-  ================  =======================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
-  :samp:`{KIND}` is absent, the return value is of default integer kind.
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Specific names}:`
-  ===============  =============  ===========  ====================
-  Name             Argument       Return type  Standard
-  ``LEN(STRING)``  ``CHARACTER``  ``INTEGER``  Fortran 77 and later
-  ===============  =============  ===========  ====================
+  :samp:`{Syntax}:`
+    ``L = LEN(STRING [, KIND])``
 
-:samp:`{See also}:`
-  LEN_TRIM, 
-  ADJUSTL, 
-  ADJUSTR
+  :samp:`{Specific names}:`
+    ===============  =============  ===========  ====================
+    Name             Argument       Return type  Standard
+    ``LEN(STRING)``  ``CHARACTER``  ``INTEGER``  Fortran 77 and later
+    ===============  =============  ===========  ====================
+
+  :samp:`{See also}:`
+    LEN_TRIM, 
+    ADJUSTL, 
+    ADJUSTR
 

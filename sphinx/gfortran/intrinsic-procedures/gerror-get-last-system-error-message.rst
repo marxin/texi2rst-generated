@@ -1,4 +1,4 @@
-  .. _gerror:
+.. _gerror:
 
 GERROR --- Get last system error message
 ****************************************
@@ -7,35 +7,34 @@ GERROR --- Get last system error message
 
 .. index:: system, error handling
 
-:samp:`{Description}:`
+.. function:: GERROR
+
   Returns the system error message corresponding to the last system error.
   This resembles the functionality of ``strerror(3)`` in C.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param RESULT:
+    Shall be of type ``CHARACTER`` and of default kind.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL GERROR(RESULT)``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Arguments}:`
-  ================  ===================================================
-  :samp:`{RESULT}`  Shall be of type ``CHARACTER`` and of default kind.
-  ================  ===================================================
+  :samp:`{Syntax}:`
+    ``CALL GERROR(RESULT)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_gerror
-      CHARACTER(len=100) :: msg
-      CALL gerror(msg)
-      WRITE(*,*) msg
-    END PROGRAM
+      PROGRAM test_gerror
+        CHARACTER(len=100) :: msg
+        CALL gerror(msg)
+        WRITE(*,*) msg
+      END PROGRAM
 
-:samp:`{See also}:`
-  IERRNO, 
-  PERROR
+  :samp:`{See also}:`
+    IERRNO, 
+    PERROR
 

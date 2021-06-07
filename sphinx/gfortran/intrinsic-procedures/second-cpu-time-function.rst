@@ -1,4 +1,4 @@
-  .. _second:
+.. _second:
 
 SECOND --- CPU time function
 ****************************
@@ -9,36 +9,32 @@ SECOND --- CPU time function
 
 .. index:: elapsed time
 
-:samp:`{Description}:`
+.. function:: SECOND
+
   Returns a ``REAL(4)`` value representing the elapsed CPU time in
   seconds.  This provides the same functionality as the standard
   ``CPU_TIME`` intrinsic, and is only included for backwards
   compatibility.
 
-  This intrinsic is provided in both subroutine and function forms;
-  however, only one form can be used in any given program unit.
+  :param TIME:
+    Shall be of type ``REAL(4)``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    In either syntax, :samp:`{TIME}` is set to the process's current runtime in
+    seconds.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  =====================
-  ``CALL SECOND(TIME)``
-  ``TIME = SECOND()``
-  =====================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ==============  =============================
-  :samp:`{TIME}`  Shall be of type ``REAL(4)``.
-  ==============  =============================
+  :samp:`{Syntax}:`
+    =====================
+    ``CALL SECOND(TIME)``
+    ``TIME = SECOND()``
+    =====================
 
-:samp:`{Return value}:`
-  In either syntax, :samp:`{TIME}` is set to the process's current runtime in
-  seconds.
-
-:samp:`{See also}:`
-  CPU_TIME
+  :samp:`{See also}:`
+    CPU_TIME
 

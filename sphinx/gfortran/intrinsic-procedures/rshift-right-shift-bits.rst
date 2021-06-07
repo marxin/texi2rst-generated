@@ -1,4 +1,4 @@
-  .. _rshift:
+.. _rshift:
 
 RSHIFT --- Right shift bits
 ***************************
@@ -7,7 +7,8 @@ RSHIFT --- Right shift bits
 
 .. index:: bits, shift right
 
-:samp:`{Description}:`
+.. function:: RSHIFT
+
   ``RSHIFT`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be
   nonnegative and less than or equal to ``BIT_SIZE(I)``, otherwise
@@ -16,33 +17,30 @@ RSHIFT --- Right shift bits
   end are equal to the leftmost bit, which in two's complement
   representation is the sign bit.
 
-  This function has been superseded by the ``SHIFTA`` intrinsic, which
-  is standard in Fortran 2008 and later.
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param SHIFT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``INTEGER`` and of the same kind as
+    :samp:`{I}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = RSHIFT(I, SHIFT)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===============  ==============================
-  :samp:`{I}`      The type shall be ``INTEGER``.
-  :samp:`{SHIFT}`  The type shall be ``INTEGER``.
-  ===============  ==============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the same kind as
-  :samp:`{I}`.
+  :samp:`{Syntax}:`
+    ``RESULT = RSHIFT(I, SHIFT)``
 
-:samp:`{See also}:`
-  ISHFT, 
-  ISHFTC, 
-  LSHIFT, 
-  SHIFTA, 
-  SHIFTR, 
-  SHIFTL
+  :samp:`{See also}:`
+    ISHFT, 
+    ISHFTC, 
+    LSHIFT, 
+    SHIFTA, 
+    SHIFTR, 
+    SHIFTL
 

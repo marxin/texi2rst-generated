@@ -1,4 +1,4 @@
-  .. _bessel_y0:
+.. _bessel_y0:
 
 BESSEL_Y0 --- Bessel function of the second kind of order 0
 ***********************************************************
@@ -11,39 +11,39 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
 
 .. index:: Bessel function, second kind
 
-:samp:`{Description}:`
+.. function:: BESSEL_Y0(X)
+
   ``BESSEL_Y0(X)`` computes the Bessel function of the second kind of
   order 0 of :samp:`{X}`. This function is available under the name
   ``BESY0`` as a GNU extension.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param X:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = BESSEL_Y0(X)``
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Arguments}:`
-  ===========  ===========================
-  :samp:`{X}`  The type shall be ``REAL``.
-  ===========  ===========================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = BESSEL_Y0(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_besy0
-      real(8) :: x = 0.0_8
-      x = bessel_y0(x)
-    end program test_besy0
+      program test_besy0
+        real(8) :: x = 0.0_8
+        x = bessel_y0(x)
+      end program test_besy0
 
-:samp:`{Specific names}:`
-  =============  =============  ===========  =============
-  Name           Argument       Return type  Standard
-  ``DBESY0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-  =============  =============  ===========  =============
+  :samp:`{Specific names}:`
+    =============  =============  ===========  =============
+    Name           Argument       Return type  Standard
+    ``DBESY0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
+    =============  =============  ===========  =============
+

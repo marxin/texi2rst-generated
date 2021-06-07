@@ -1,4 +1,4 @@
-  .. _ichar:
+.. _ichar:
 
 ICHAR --- Character-to-integer conversion function
 **************************************************
@@ -7,73 +7,74 @@ ICHAR --- Character-to-integer conversion function
 
 .. index:: conversion, to integer
 
-:samp:`{Description}:`
+.. function:: ICHAR(C)
+
   ``ICHAR(C)`` returns the code for the character in the first character
   position of ``C`` in the system's native character set.
   The correspondence between characters and their codes is not necessarily
   the same across different GNU Fortran implementations.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
+  :param C:
+    Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = ICHAR(C [, KIND])``
+  :return:
+    The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
+    :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{C}`     Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
-  :samp:`{KIND}` is absent, the return value is of default integer kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = ICHAR(C [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_ichar
-      integer i
-      i = ichar(' ')
-    end program test_ichar
+    .. code-block:: fortran
 
-:samp:`{Specific names}:`
-  ============  ===============  ==============  ====================
-  Name          Argument         Return type     Standard
-  ``ICHAR(C)``  ``CHARACTER C``  ``INTEGER(4)``  Fortran 77 and later
-  ============  ===============  ==============  ====================
+      program test_ichar
+        integer i
+        i = ichar(' ')
+      end program test_ichar
 
-:samp:`{Note}:`
-  No intrinsic exists to convert between a numeric value and a formatted
-  character string representation -- for instance, given the
-  ``CHARACTER`` value ``'154'``, obtaining an ``INTEGER`` or
-  ``REAL`` value with the value 154, or vice versa. Instead, this
-  functionality is provided by internal-file I/O, as in the following
-  example:
+  :samp:`{Specific names}:`
+    ============  ===============  ==============  ====================
+    Name          Argument         Return type     Standard
+    ``ICHAR(C)``  ``CHARACTER C``  ``INTEGER(4)``  Fortran 77 and later
+    ============  ===============  ==============  ====================
 
-  .. code-block:: fortran
+  :samp:`{Note}:`
+    No intrinsic exists to convert between a numeric value and a formatted
+    character string representation -- for instance, given the
+    ``CHARACTER`` value ``'154'``, obtaining an ``INTEGER`` or
+    ``REAL`` value with the value 154, or vice versa. Instead, this
+    functionality is provided by internal-file I/O, as in the following
+    example:
 
-    program read_val
-      integer value
-      character(len=10) string, string2
-      string = '154'
+    .. code-block:: fortran
 
-      ! Convert a string to a numeric value
-      read (string,'(I10)') value
-      print *, value
+      program read_val
+        integer value
+        character(len=10) string, string2
+        string = '154'
 
-      ! Convert a value to a formatted string
-      write (string2,'(I10)') value
-      print *, string2
-    end program read_val
+        ! Convert a string to a numeric value
+        read (string,'(I10)') value
+        print *, value
 
-:samp:`{See also}:`
-  ACHAR, 
-  CHAR, 
-  IACHAR
+        ! Convert a value to a formatted string
+        write (string2,'(I10)') value
+        print *, string2
+      end program read_val
+
+  :samp:`{See also}:`
+    ACHAR, 
+    CHAR, 
+    IACHAR
 

@@ -1,4 +1,4 @@
-  .. _rank:
+.. _rank:
 
 RANK --- Rank of a data object
 ******************************
@@ -7,35 +7,34 @@ RANK --- Rank of a data object
 
 .. index:: rank
 
-:samp:`{Description}:`
+.. function:: RANK(A)
+
   ``RANK(A)`` returns the rank of a scalar or array data object.
 
-:samp:`{Standard}:`
-  Technical Specification (TS) 29113
+  :param A:
+    can be of any type
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind. For arrays, their rank is returned; for scalars zero is returned.
 
-:samp:`{Syntax}:`
-  ``RESULT = RANK(A)``
+  :samp:`{Standard}:`
+    Technical Specification (TS) 29113
 
-:samp:`{Arguments}:`
-  ===========  ==================
-  :samp:`{A}`  can be of any type
-  ===========  ==================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind. For arrays, their rank is returned; for scalars zero is returned.
+  :samp:`{Syntax}:`
+    ``RESULT = RANK(A)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_rank
-      integer :: a
-      real, allocatable :: b(:,:)
+      program test_rank
+        integer :: a
+        real, allocatable :: b(:,:)
 
-      print *, rank(a), rank(b) ! Prints:  0  2
-    end program test_rank
+        print *, rank(a), rank(b) ! Prints:  0  2
+      end program test_rank
 

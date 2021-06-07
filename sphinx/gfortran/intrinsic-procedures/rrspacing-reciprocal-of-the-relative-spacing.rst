@@ -1,4 +1,4 @@
-  .. _rrspacing:
+.. _rrspacing:
 
 RRSPACING --- Reciprocal of the relative spacing
 ************************************************
@@ -9,29 +9,28 @@ RRSPACING --- Reciprocal of the relative spacing
 
 .. index:: floating point, relative spacing
 
-:samp:`{Description}:`
+.. function:: RRSPACING(X)
+
   ``RRSPACING(X)`` returns the  reciprocal of the relative spacing of
   model numbers near :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of the same type and kind as :samp:`{X}`.
+    The value returned is equal to
+    ``ABS(FRACTION(X)) * FLOAT(RADIX(X))**DIGITS(X)``.
 
-:samp:`{Syntax}:`
-  ``RESULT = RRSPACING(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ==========================
-  :samp:`{X}`  Shall be of type ``REAL``.
-  ===========  ==========================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as :samp:`{X}`.
-  The value returned is equal to
-  ``ABS(FRACTION(X)) * FLOAT(RADIX(X))**DIGITS(X)``.
+  :samp:`{Syntax}:`
+    ``RESULT = RRSPACING(X)``
 
-:samp:`{See also}:`
-  SPACING
+  :samp:`{See also}:`
+    SPACING
 

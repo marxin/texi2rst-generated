@@ -1,4 +1,4 @@
-  .. _popcnt:
+.. _popcnt:
 
 POPCNT --- Number of bits set
 *****************************
@@ -9,40 +9,39 @@ POPCNT --- Number of bits set
 
 .. index:: bits set
 
-:samp:`{Description}:`
+.. function:: POPCNT(I)
+
   ``POPCNT(I)`` returns the number of bits set ('1' bits) in the binary
   representation of ``I``.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of type ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind.
 
-:samp:`{Syntax}:`
-  ``RESULT = POPCNT(I)``
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{I}`  Shall be of type ``INTEGER``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = POPCNT(I)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_population
-      print *, popcnt(127),       poppar(127)
-      print *, popcnt(huge(0_4)), poppar(huge(0_4))
-      print *, popcnt(huge(0_8)), poppar(huge(0_8))
-    end program test_population
+      program test_population
+        print *, popcnt(127),       poppar(127)
+        print *, popcnt(huge(0_4)), poppar(huge(0_4))
+        print *, popcnt(huge(0_8)), poppar(huge(0_8))
+      end program test_population
 
-:samp:`{See also}:`
-  POPPAR, 
-  LEADZ, 
-  TRAILZ
+  :samp:`{See also}:`
+    POPPAR, 
+    LEADZ, 
+    TRAILZ
 

@@ -1,4 +1,4 @@
-  .. _digits:
+.. _digits:
 
 DIGITS --- Significant binary digits function
 *********************************************
@@ -7,38 +7,37 @@ DIGITS --- Significant binary digits function
 
 .. index:: model representation, significant digits
 
-:samp:`{Description}:`
+.. function:: DIGITS(X)
+
   ``DIGITS(X)`` returns the number of significant binary digits of the internal
   model representation of :samp:`{X}`.  For example, on a system using a 32-bit
   floating point representation, a default real number would likely return 24.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    The type may be ``INTEGER`` or ``REAL``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = DIGITS(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ========================================
-  :samp:`{X}`  The type may be ``INTEGER`` or ``REAL``.
-  ===========  ========================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER``.
+  :samp:`{Syntax}:`
+    ``RESULT = DIGITS(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_digits
-        integer :: i = 12345
-        real :: x = 3.143
-        real(8) :: y = 2.33
-        print *, digits(i)
-        print *, digits(x)
-        print *, digits(y)
-    end program test_digits
+      program test_digits
+          integer :: i = 12345
+          real :: x = 3.143
+          real(8) :: y = 2.33
+          print *, digits(i)
+          print *, digits(x)
+          print *, digits(y)
+      end program test_digits
 

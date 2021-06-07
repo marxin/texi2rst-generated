@@ -1,4 +1,4 @@
-  .. _free:
+.. _free:
 
 FREE --- Frees memory
 *********************
@@ -7,34 +7,33 @@ FREE --- Frees memory
 
 .. index:: pointer, cray
 
-:samp:`{Description}:`
+.. function:: FREE
+
   Frees memory previously allocated by ``MALLOC``. The ``FREE``
   intrinsic is an extension intended to be used with Cray pointers, and is
   provided in GNU Fortran to allow user to compile legacy code. For
   new code using Fortran 95 pointers, the memory de-allocation intrinsic is
   ``DEALLOCATE``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param PTR:
+    The type shall be ``INTEGER``. It represents the
+    location of the memory that should be de-allocated.
 
-:samp:`{Class}:`
-  Subroutine
+  :return:
+    None
 
-:samp:`{Syntax}:`
-  ``CALL FREE(PTR)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  =============  ===================================================
-  :samp:`{PTR}`  The type shall be ``INTEGER``. It represents the
-                 location of the memory that should be de-allocated.
-  =============  ===================================================
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Return value}:`
-  None
+  :samp:`{Syntax}:`
+    ``CALL FREE(PTR)``
 
-:samp:`{Example}:`
-  See ``MALLOC`` for an example.
+  :samp:`{Example}:`
+    See ``MALLOC`` for an example.
 
-:samp:`{See also}:`
-  MALLOC
+  :samp:`{See also}:`
+    MALLOC
 

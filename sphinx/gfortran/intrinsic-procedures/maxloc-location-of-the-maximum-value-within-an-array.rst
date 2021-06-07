@@ -1,4 +1,4 @@
-  .. _maxloc:
+.. _maxloc:
 
 MAXLOC --- Location of the maximum value within an array
 ********************************************************
@@ -7,7 +7,8 @@ MAXLOC --- Location of the maximum value within an array
 
 .. index:: array, location of maximum element
 
-:samp:`{Description}:`
+.. function:: MAXLOC
+
   Determines the location of the element in the array with the maximum
   value, or, if the :samp:`{DIM}` argument is supplied, determines the
   locations of the maximum element along each row of the array in the
@@ -22,46 +23,52 @@ MAXLOC --- Location of the maximum value within an array
   and all of the elements of :samp:`{MASK}` along a given row are zero, the
   result value for that row is zero.
 
-:samp:`{Standard}:`
-  Fortran 95 and later; :samp:`{ARRAY}` of ``CHARACTER`` and the
-  :samp:`{KIND}` argument are available in Fortran 2003 and later.
-  The :samp:`{BACK}` argument is available in Fortran 2008 and later.
+  :param ARRAY:
+    Shall be an array of type ``INTEGER`` or
+    ``REAL``.
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) Shall be a scalar of type
+    ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
+    inclusive.  It may not be an optional dummy argument.
 
-:samp:`{Syntax}:`
-  ========================================================
-  ``RESULT = MAXLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])``
-  ``RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])``
-  ========================================================
+  :param MASK:
+    Shall be of type ``LOGICAL``,
+    and conformable with :samp:`{ARRAY}`.
 
-:samp:`{Arguments}:`
-  ===============  ======================================================================
-  :samp:`{ARRAY}`  Shall be an array of type ``INTEGER`` or
-                   ``REAL``.
-  :samp:`{DIM}`    (Optional) Shall be a scalar of type
-                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
-                   inclusive.  It may not be an optional dummy argument.
-  :samp:`{MASK}`   Shall be of type ``LOGICAL``,
-                   and conformable with :samp:`{ARRAY}`.
-  :samp:`{KIND}`   (Optional) An ``INTEGER`` initialization
-                   expression indicating the kind parameter of the result.
-  :samp:`{BACK}`   (Optional) A scalar of type ``LOGICAL``.
-  ===============  ======================================================================
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Return value}:`
-  If :samp:`{DIM}` is absent, the result is a rank-one array with a length
-  equal to the rank of :samp:`{ARRAY}`.  If :samp:`{DIM}` is present, the result
-  is an array with a rank one less than the rank of :samp:`{ARRAY}`, and a
-  size corresponding to the size of :samp:`{ARRAY}` with the :samp:`{DIM}`
-  dimension removed.  If :samp:`{DIM}` is present and :samp:`{ARRAY}` has a rank
-  of one, the result is a scalar.   If the optional argument :samp:`{KIND}`
-  is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
-  is of default kind.
+  :param BACK:
+    (Optional) A scalar of type ``LOGICAL``.
 
-:samp:`{See also}:`
-  FINDLOC, 
-  MAX, 
-  MAXVAL
+  :return:
+    If :samp:`{DIM}` is absent, the result is a rank-one array with a length
+    equal to the rank of :samp:`{ARRAY}`.  If :samp:`{DIM}` is present, the result
+    is an array with a rank one less than the rank of :samp:`{ARRAY}`, and a
+    size corresponding to the size of :samp:`{ARRAY}` with the :samp:`{DIM}`
+    dimension removed.  If :samp:`{DIM}` is present and :samp:`{ARRAY}` has a rank
+    of one, the result is a scalar.   If the optional argument :samp:`{KIND}`
+    is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
+    is of default kind.
+
+  :samp:`{Standard}:`
+    Fortran 95 and later; :samp:`{ARRAY}` of ``CHARACTER`` and the
+    :samp:`{KIND}` argument are available in Fortran 2003 and later.
+    The :samp:`{BACK}` argument is available in Fortran 2008 and later.
+
+  :samp:`{Class}:`
+    Transformational function
+
+  :samp:`{Syntax}:`
+    ========================================================
+    ``RESULT = MAXLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])``
+    ``RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])``
+    ========================================================
+
+  :samp:`{See also}:`
+    FINDLOC, 
+    MAX, 
+    MAXVAL
 

@@ -1,4 +1,4 @@
-  .. _iachar:
+.. _iachar:
 
 IACHAR --- Code in ASCII collating sequence 
 ********************************************
@@ -11,45 +11,46 @@ IACHAR --- Code in ASCII collating sequence
 
 .. index:: conversion, to integer
 
-:samp:`{Description}:`
+.. function:: IACHAR(C)
+
   ``IACHAR(C)`` returns the code for the ASCII character
   in the first character position of ``C``.
 
-:samp:`{Standard}:`
-  Fortran 95 and later, with :samp:`{KIND}` argument Fortran 2003 and later
+  :param C:
+    Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = IACHAR(C [, KIND])``
+  :return:
+    The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
+    :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{C}`     Shall be a scalar ``CHARACTER``, with ``INTENT(IN)``
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 95 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
-  :samp:`{KIND}` is absent, the return value is of default integer kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = IACHAR(C [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_iachar
-      integer i
-      i = iachar(' ')
-    end program test_iachar
+    .. code-block:: fortran
 
-:samp:`{Note}:`
-  See ICHAR for a discussion of converting between numerical values
-  and formatted string representations.
+      program test_iachar
+        integer i
+        i = iachar(' ')
+      end program test_iachar
 
-:samp:`{See also}:`
-  ACHAR, 
-  CHAR, 
-  ICHAR
+  :samp:`{Note}:`
+    See ICHAR for a discussion of converting between numerical values
+    and formatted string representations.
+
+  :samp:`{See also}:`
+    ACHAR, 
+    CHAR, 
+    ICHAR
 

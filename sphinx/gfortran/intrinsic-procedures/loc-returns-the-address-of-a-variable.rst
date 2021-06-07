@@ -1,4 +1,4 @@
-  .. _loc:
+.. _loc:
 
 LOC --- Returns the address of a variable
 *****************************************
@@ -7,36 +7,35 @@ LOC --- Returns the address of a variable
 
 .. index:: location of a variable in memory
 
-:samp:`{Description}:`
+.. function:: LOC(X)
+
   ``LOC(X)`` returns the address of :samp:`{X}` as an integer.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param X:
+    Variable of any type.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER``, with a ``KIND``
+    corresponding to the size (in bytes) of a memory address on the target
+    machine.
 
-:samp:`{Syntax}:`
-  ``RESULT = LOC(X)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===========  =====================
-  :samp:`{X}`  Variable of any type.
-  ===========  =====================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER``, with a ``KIND``
-  corresponding to the size (in bytes) of a memory address on the target
-  machine.
+  :samp:`{Syntax}:`
+    ``RESULT = LOC(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_loc
-      integer :: i
-      real :: r
-      i = loc(r)
-      print *, i
-    end program test_loc
+      program test_loc
+        integer :: i
+        real :: r
+        i = loc(r)
+        print *, i
+      end program test_loc
 

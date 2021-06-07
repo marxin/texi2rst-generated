@@ -1,4 +1,4 @@
-  .. _exp:
+.. _exp:
 
 EXP --- Exponential function 
 *****************************
@@ -17,42 +17,42 @@ EXP --- Exponential function
 
 .. index:: logarithm function, inverse
 
-:samp:`{Description}:`
+.. function:: EXP(X)
+
   ``EXP(X)`` computes the base e exponential of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, has overloads that are GNU extensions
+  :param X:
+    The type shall be ``REAL`` or
+    ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value has same type and kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = EXP(X)``
+  :samp:`{Standard}:`
+    Fortran 77 and later, has overloads that are GNU extensions
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{X}`  The type shall be ``REAL`` or
-               ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = EXP(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_exp
-      real :: x = 1.0
-      x = exp(x)
-    end program test_exp
+      program test_exp
+        real :: x = 1.0
+        x = exp(x)
+      end program test_exp
 
-:samp:`{Specific names}:`
-  ============  ================  ==============  ====================
-  Name          Argument          Return type     Standard
-  ``EXP(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-  ``DEXP(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-  ``CEXP(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-  ``ZEXP(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  ``CDEXP(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  ============  ================  ==============  ====================
+  :samp:`{Specific names}:`
+    ============  ================  ==============  ====================
+    Name          Argument          Return type     Standard
+    ``EXP(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
+    ``DEXP(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
+    ``CEXP(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
+    ``ZEXP(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    ``CDEXP(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    ============  ================  ==============  ====================
+

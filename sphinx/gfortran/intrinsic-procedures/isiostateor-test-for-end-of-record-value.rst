@@ -1,4 +1,4 @@
-  .. _is_iostat_eor:
+.. _is_iostat_eor:
 
 IS_IOSTAT_EOR --- Test for end-of-record value
 **********************************************
@@ -7,40 +7,39 @@ IS_IOSTAT_EOR --- Test for end-of-record value
 
 .. index:: IOSTAT, end of record
 
-:samp:`{Description}:`
+.. function:: IS_IOSTAT_EOR
+
   ``IS_IOSTAT_EOR`` tests whether an variable has the value of the I/O
   status 'end of record'. The function is equivalent to comparing the
   variable with the ``IOSTAT_EOR`` parameter of the intrinsic module
   ``ISO_FORTRAN_ENV``.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param I:
+    Shall be of the type ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if
+    :samp:`{I}` has the value which indicates an end of file condition for
+    ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
 
-:samp:`{Syntax}:`
-  ``RESULT = IS_IOSTAT_EOR(I)``
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Arguments}:`
-  ===========  =================================
-  :samp:`{I}`  Shall be of the type ``INTEGER``.
-  ===========  =================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if
-  :samp:`{I}` has the value which indicates an end of file condition for
-  ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
+  :samp:`{Syntax}:`
+    ``RESULT = IS_IOSTAT_EOR(I)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM iostat
-      IMPLICIT NONE
-      INTEGER :: stat, i(50)
-      OPEN(88, FILE='test.dat', FORM='UNFORMATTED')
-      READ(88, IOSTAT=stat) i
-      IF(IS_IOSTAT_EOR(stat)) STOP 'END OF RECORD'
-    END PROGRAM
+      PROGRAM iostat
+        IMPLICIT NONE
+        INTEGER :: stat, i(50)
+        OPEN(88, FILE='test.dat', FORM='UNFORMATTED')
+        READ(88, IOSTAT=stat) i
+        IF(IS_IOSTAT_EOR(stat)) STOP 'END OF RECORD'
+      END PROGRAM
 

@@ -1,4 +1,4 @@
-  .. _tand:
+.. _tand:
 
 TAND --- Tangent function, degrees
 **********************************
@@ -11,48 +11,44 @@ TAND --- Tangent function, degrees
 
 .. index:: tangent, degrees
 
-:samp:`{Description}:`
+.. function:: TAND(X)
+
   ``TAND(X)`` computes the tangent of :samp:`{X}` in degrees.
 
-  This function is for compatibility only and should be avoided in favor of
-  standard constructs wherever possible.
+  :param X:
+    The type shall be ``REAL`` or ``COMPLEX``.
 
-:samp:`{Standard}:`
-  GNU extension, enabled with :option:`-fdec-math`.
+  :return:
+    The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
-:samp:`{Class}:`
-  Elemental function
+  :samp:`{Standard}:`
+    GNU extension, enabled with :option:`-fdec-math`.
 
-:samp:`{Syntax}:`
-  ``RESULT = TAND(X)``
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Arguments}:`
-  ===========  ==========================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
-  ===========  ==========================================
+  :samp:`{Syntax}:`
+    ``RESULT = TAND(X)``
 
-:samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_tand
+        real(8) :: x = 0.165_8
+        x = tand(x)
+      end program test_tand
 
-    program test_tand
-      real(8) :: x = 0.165_8
-      x = tand(x)
-    end program test_tand
+  :samp:`{Specific names}:`
+    ============  =============  ===========  =============
+    Name          Argument       Return type  Standard
+    ``TAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
+    ``DTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
+    ============  =============  ===========  =============
 
-:samp:`{Specific names}:`
-  ============  =============  ===========  =============
-  Name          Argument       Return type  Standard
-  ``TAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-  ``DTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-  ============  =============  ===========  =============
-
-:samp:`{See also}:`
-  Inverse function: 
-  ATAND 
-  Radians function: 
-  TAN
+  :samp:`{See also}:`
+    Inverse function: 
+    ATAND 
+    Radians function: 
+    TAN
 

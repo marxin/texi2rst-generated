@@ -1,4 +1,4 @@
-  .. _logical:
+.. _logical:
 
 LOGICAL --- Convert to logical type
 ***********************************
@@ -7,32 +7,33 @@ LOGICAL --- Convert to logical type
 
 .. index:: conversion, to logical
 
-:samp:`{Description}:`
+.. function:: LOGICAL
+
   Converts one kind of ``LOGICAL`` variable to another.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param L:
+    The type shall be ``LOGICAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = LOGICAL(L [, KIND])``
+  :return:
+    The return value is a ``LOGICAL`` value equal to :samp:`{L}`, with a
+    kind corresponding to :samp:`{KIND}`, or of the default logical kind if
+    :samp:`{KIND}` is not given.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{L}`     The type shall be ``LOGICAL``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Return value}:`
-  The return value is a ``LOGICAL`` value equal to :samp:`{L}`, with a
-  kind corresponding to :samp:`{KIND}`, or of the default logical kind if
-  :samp:`{KIND}` is not given.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  INT, 
-  REAL, 
-  CMPLX
+  :samp:`{Syntax}:`
+    ``RESULT = LOGICAL(L [, KIND])``
+
+  :samp:`{See also}:`
+    INT, 
+    REAL, 
+    CMPLX
 

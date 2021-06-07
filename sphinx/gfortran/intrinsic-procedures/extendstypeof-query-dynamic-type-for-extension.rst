@@ -1,34 +1,35 @@
-  .. _extends_type_of:
+.. _extends_type_of:
 
 EXTENDS_TYPE_OF ---  Query dynamic type for extension
 *****************************************************
 
 .. index:: EXTENDS_TYPE_OF
 
-:samp:`{Description}:`
+.. function:: EXTENDS_TYPE_OF
+
   Query dynamic type for extension.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param A:
+    Shall be an object of extensible declared type or
+    unlimited polymorphic.
 
-:samp:`{Class}:`
-  Inquiry function
+  :param MOLD:
+    Shall be an object of extensible declared type or
+    unlimited polymorphic.
 
-:samp:`{Syntax}:`
-  ``RESULT = EXTENDS_TYPE_OF(A, MOLD)``
+  :return:
+    The return value is a scalar of type default logical. It is true if and only if
+    the dynamic type of A is an extension type of the dynamic type of MOLD.
 
-:samp:`{Arguments}:`
-  ==============  =================================================
-  :samp:`{A}`     Shall be an object of extensible declared type or
-                  unlimited polymorphic.
-  :samp:`{MOLD}`  Shall be an object of extensible declared type or
-                  unlimited polymorphic.
-  ==============  =================================================
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Return value}:`
-  The return value is a scalar of type default logical. It is true if and only if
-  the dynamic type of A is an extension type of the dynamic type of MOLD.
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{See also}:`
-  SAME_TYPE_AS
+  :samp:`{Syntax}:`
+    ``RESULT = EXTENDS_TYPE_OF(A, MOLD)``
+
+  :samp:`{See also}:`
+    SAME_TYPE_AS
 

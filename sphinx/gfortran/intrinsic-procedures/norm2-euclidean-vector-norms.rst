@@ -1,4 +1,4 @@
-  .. _norm2:
+.. _norm2:
 
 NORM2 --- Euclidean vector norms
 ********************************
@@ -11,44 +11,39 @@ NORM2 --- Euclidean vector norms
 
 .. index:: norm, Euclidean
 
-:samp:`{Description}:`
+.. function:: NORM2
+
   Calculates the Euclidean vector norm (L_2 norm)
   of :samp:`{ARRAY}` along dimension :samp:`{DIM}`.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param ARRAY:
+    Shall be an array of type ``REAL``
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) shall be a scalar of type 
+    ``INTEGER`` with a value in the range from 1 to n, where n 
+    equals the rank of :samp:`{ARRAY}`.
 
-:samp:`{Syntax}:`
-  ================================
-  ``RESULT = NORM2(ARRAY[, DIM])``
-  ================================
+  :return:
+    The result is of the same type as :samp:`{ARRAY}`.
 
-:samp:`{Arguments}:`
-  ===============  ===========================================================
-  :samp:`{ARRAY}`  Shall be an array of type ``REAL``
-  :samp:`{DIM}`    (Optional) shall be a scalar of type 
-                   ``INTEGER`` with a value in the range from 1 to n, where n 
-                   equals the rank of :samp:`{ARRAY}`.
-  ===============  ===========================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The result is of the same type as :samp:`{ARRAY}`.
+  :samp:`{Class}:`
+    Transformational function
 
-  If :samp:`{DIM}` is absent, a scalar with the square root of the sum of all
-  elements in :samp:`{ARRAY}` squared  is returned. Otherwise, an array of
-  rank n-1, where n equals the rank of :samp:`{ARRAY}`, and a
-  shape similar to that of :samp:`{ARRAY}` with dimension :samp:`{DIM}` dropped
-  is returned.
+  :samp:`{Syntax}:`
+    ================================
+    ``RESULT = NORM2(ARRAY[, DIM])``
+    ================================
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_sum
-      REAL :: x(5) = [ real :: 1, 2, 3, 4, 5 ]
-      print *, NORM2(x)  ! = sqrt(55.) ~ 7.416
-    END PROGRAM
+      PROGRAM test_sum
+        REAL :: x(5) = [ real :: 1, 2, 3, 4, 5 ]
+        print *, NORM2(x)  ! = sqrt(55.) ~ 7.416
+      END PROGRAM
 

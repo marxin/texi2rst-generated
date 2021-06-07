@@ -1,4 +1,4 @@
-  .. _sqrt:
+.. _sqrt:
 
 SQRT --- Square-root function
 *****************************
@@ -17,45 +17,45 @@ SQRT --- Square-root function
 
 .. index:: square-root
 
-:samp:`{Description}:`
+.. function:: SQRT(X)
+
   ``SQRT(X)`` computes the square root of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param X:
+    The type shall be ``REAL`` or
+    ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``REAL`` or ``COMPLEX``.
+    The kind type parameter is the same as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = SQRT(X)``
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{X}`  The type shall be ``REAL`` or
-               ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL`` or ``COMPLEX``.
-  The kind type parameter is the same as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = SQRT(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_sqrt
-      real(8) :: x = 2.0_8
-      complex :: z = (1.0, 2.0)
-      x = sqrt(x)
-      z = sqrt(z)
-    end program test_sqrt
+      program test_sqrt
+        real(8) :: x = 2.0_8
+        complex :: z = (1.0, 2.0)
+        x = sqrt(x)
+        z = sqrt(z)
+      end program test_sqrt
 
-:samp:`{Specific names}:`
-  =============  ================  ==============  ====================
-  Name           Argument          Return type     Standard
-  ``SQRT(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-  ``DSQRT(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-  ``CSQRT(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-  ``ZSQRT(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  ``CDSQRT(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  =============  ================  ==============  ====================
+  :samp:`{Specific names}:`
+    =============  ================  ==============  ====================
+    Name           Argument          Return type     Standard
+    ``SQRT(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
+    ``DSQRT(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
+    ``CSQRT(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
+    ``ZSQRT(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    ``CDSQRT(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    =============  ================  ==============  ====================
+

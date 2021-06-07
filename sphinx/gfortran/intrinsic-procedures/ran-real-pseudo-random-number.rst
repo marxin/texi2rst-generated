@@ -1,4 +1,4 @@
-  .. _ran:
+.. _ran:
 
 RAN --- Real pseudo-random number
 *********************************
@@ -7,18 +7,19 @@ RAN --- Real pseudo-random number
 
 .. index:: random number generation
 
-:samp:`{Description}:`
+.. function:: RAN
+
   For compatibility with HP FORTRAN 77/iX, the ``RAN`` intrinsic is
   provided as an alias for ``RAND``.  See RAND for complete
   documentation.
 
-:samp:`{Standard}:`
-  GNU extension
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Class}:`
+    Function
 
-:samp:`{See also}:`
-  RAND, 
-  RANDOM_NUMBER
+  :samp:`{See also}:`
+    RAND, 
+    RANDOM_NUMBER
 

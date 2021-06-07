@@ -1,4 +1,4 @@
-  .. _itime:
+.. _itime:
 
 ITIME --- Get current local time subroutine (hour/minutes/seconds) 
 *******************************************************************
@@ -9,47 +9,41 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
 
 .. index:: current time
 
-:samp:`{Description}:`
+.. function:: ITIME(VALUES)
+
   ``ITIME(VALUES)`` Fills :samp:`{VALUES}` with the numerical values at the  
   current local time. The hour (in the range 1-24), minute (in the range 1-60), 
   and seconds (in the range 1-60) appear in elements 1, 2, and 3 of :samp:`{VALUES}`, 
   respectively.
 
-  This intrinsic routine is provided for backwards compatibility with 
-  GNU Fortran 77.  In new code, programmers should consider the use of 
-  the DATE_AND_TIME intrinsic defined by the Fortran 95
-  standard.
+  :param VALUES:
+    The type shall be ``INTEGER, DIMENSION(3)``
+    and the kind shall be the default integer kind.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    Does not return anything.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL ITIME(VALUES)``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Arguments}:`
-  ================  ===============================================
-  :samp:`{VALUES}`  The type shall be ``INTEGER, DIMENSION(3)``
-                    and the kind shall be the default integer kind.
-  ================  ===============================================
+  :samp:`{Syntax}:`
+    ``CALL ITIME(VALUES)``
 
-:samp:`{Return value}:`
-  Does not return anything.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_itime
+        integer, dimension(3) :: tarray
+        call itime(tarray)
+        print *, tarray(1)
+        print *, tarray(2)
+        print *, tarray(3)
+      end program test_itime
 
-    program test_itime
-      integer, dimension(3) :: tarray
-      call itime(tarray)
-      print *, tarray(1)
-      print *, tarray(2)
-      print *, tarray(3)
-    end program test_itime
-
-:samp:`{See also}:`
-  DATE_AND_TIME
+  :samp:`{See also}:`
+    DATE_AND_TIME
 

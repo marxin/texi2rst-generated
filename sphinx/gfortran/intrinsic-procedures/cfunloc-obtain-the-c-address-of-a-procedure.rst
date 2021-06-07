@@ -1,4 +1,4 @@
-  .. _c_funloc:
+.. _c_funloc:
 
 C_FUNLOC --- Obtain the C address of a procedure
 ************************************************
@@ -7,56 +7,55 @@ C_FUNLOC --- Obtain the C address of a procedure
 
 .. index:: pointer, C address of procedures
 
-:samp:`{Description}:`
+.. function:: C_FUNLOC(x)
+
   ``C_FUNLOC(x)`` determines the C address of the argument.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param x:
+    Interoperable function or pointer to such function.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``C_FUNPTR`` and contains the C address
+    of the argument.
 
-:samp:`{Syntax}:`
-  ``RESULT = C_FUNLOC(x)``
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Arguments}:`
-  ===========  ===================================================
-  :samp:`{x}`  Interoperable function or pointer to such function.
-  ===========  ===================================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``C_FUNPTR`` and contains the C address
-  of the argument.
+  :samp:`{Syntax}:`
+    ``RESULT = C_FUNLOC(x)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    module x
-      use iso_c_binding
-      implicit none
-    contains
-      subroutine sub(a) bind(c)
-        real(c_float) :: a
-        a = sqrt(a)+5.0
-      end subroutine sub
-    end module x
-    program main
-      use iso_c_binding
-      use x
-      implicit none
-      interface
-        subroutine my_routine(p) bind(c,name='myC_func')
-          import :: c_funptr
-          type(c_funptr), intent(in) :: p
-        end subroutine
-      end interface
-      call my_routine(c_funloc(sub))
-    end program main
+      module x
+        use iso_c_binding
+        implicit none
+      contains
+        subroutine sub(a) bind(c)
+          real(c_float) :: a
+          a = sqrt(a)+5.0
+        end subroutine sub
+      end module x
+      program main
+        use iso_c_binding
+        use x
+        implicit none
+        interface
+          subroutine my_routine(p) bind(c,name='myC_func')
+            import :: c_funptr
+            type(c_funptr), intent(in) :: p
+          end subroutine
+        end interface
+        call my_routine(c_funloc(sub))
+      end program main
 
-:samp:`{See also}:`
-  C_ASSOCIATED, 
-  C_LOC, 
-  C_F_POINTER, 
-  C_F_PROCPOINTER
+  :samp:`{See also}:`
+    C_ASSOCIATED, 
+    C_LOC, 
+    C_F_POINTER, 
+    C_F_PROCPOINTER
 

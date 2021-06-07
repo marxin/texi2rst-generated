@@ -1,4 +1,4 @@
-  .. _repeat:
+.. _repeat:
 
 REPEAT --- Repeated string concatenation 
 *****************************************
@@ -9,33 +9,34 @@ REPEAT --- Repeated string concatenation
 
 .. index:: string, concatenate
 
-:samp:`{Description}:`
+.. function:: REPEAT
+
   Concatenates :samp:`{NCOPIES}` copies of a string.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param STRING:
+    Shall be scalar and of type ``CHARACTER``.
 
-:samp:`{Class}:`
-  Transformational function
+  :param NCOPIES:
+    Shall be scalar and of type ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = REPEAT(STRING, NCOPIES)``
+  :return:
+    A new scalar of type ``CHARACTER`` built up from :samp:`{NCOPIES}` copies 
+    of :samp:`{STRING}`.
 
-:samp:`{Arguments}:`
-  =================  ==========================================
-  :samp:`{STRING}`   Shall be scalar and of type ``CHARACTER``.
-  :samp:`{NCOPIES}`  Shall be scalar and of type ``INTEGER``.
-  =================  ==========================================
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Return value}:`
-  A new scalar of type ``CHARACTER`` built up from :samp:`{NCOPIES}` copies 
-  of :samp:`{STRING}`.
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = REPEAT(STRING, NCOPIES)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_repeat
-      write(*,*) repeat("x", 5)   ! "xxxxx"
-    end program
+    .. code-block:: fortran
+
+      program test_repeat
+        write(*,*) repeat("x", 5)   ! "xxxxx"
+      end program
 

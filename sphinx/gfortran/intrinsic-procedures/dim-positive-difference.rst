@@ -1,4 +1,4 @@
-  .. _dim:
+.. _dim:
 
 DIM --- Positive difference
 ***************************
@@ -11,47 +11,49 @@ DIM --- Positive difference
 
 .. index:: positive difference
 
-:samp:`{Description}:`
+.. function:: DIM(X,Y)
+
   ``DIM(X,Y)`` returns the difference ``X-Y`` if the result is positive;
   otherwise returns zero.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param X:
+    The type shall be ``INTEGER`` or ``REAL``
 
-:samp:`{Class}:`
-  Elemental function
+  :param Y:
+    The type shall be the same type and kind as :samp:`{X}`.  (As
+    a GNU extension, arguments of different kinds are permitted.)
 
-:samp:`{Syntax}:`
-  ``RESULT = DIM(X, Y)``
+  :return:
+    The return value is of type ``INTEGER`` or ``REAL``.  (As a GNU
+    extension, kind is the largest kind of the actual arguments.)
 
-:samp:`{Arguments}:`
-  ===========  =============================================================
-  :samp:`{X}`  The type shall be ``INTEGER`` or ``REAL``
-  :samp:`{Y}`  The type shall be the same type and kind as :samp:`{X}`.  (As
-               a GNU extension, arguments of different kinds are permitted.)
-  ===========  =============================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` or ``REAL``.  (As a GNU
-  extension, kind is the largest kind of the actual arguments.)
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = DIM(X, Y)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_dim
-        integer :: i
-        real(8) :: x
-        i = dim(4, 15)
-        x = dim(4.345_8, 2.111_8)
-        print *, i
-        print *, x
-    end program test_dim
+    .. code-block:: fortran
 
-:samp:`{Specific names}:`
-  =============  ===================  ==============  ====================
-  Name           Argument             Return type     Standard
-  ``DIM(X,Y)``   ``REAL(4) X, Y``     ``REAL(4)``     Fortran 77 and later
-  ``IDIM(X,Y)``  ``INTEGER(4) X, Y``  ``INTEGER(4)``  Fortran 77 and later
-  ``DDIM(X,Y)``  ``REAL(8) X, Y``     ``REAL(8)``     Fortran 77 and later
-  =============  ===================  ==============  ====================
+      program test_dim
+          integer :: i
+          real(8) :: x
+          i = dim(4, 15)
+          x = dim(4.345_8, 2.111_8)
+          print *, i
+          print *, x
+      end program test_dim
+
+  :samp:`{Specific names}:`
+    =============  ===================  ==============  ====================
+    Name           Argument             Return type     Standard
+    ``DIM(X,Y)``   ``REAL(4) X, Y``     ``REAL(4)``     Fortran 77 and later
+    ``IDIM(X,Y)``  ``INTEGER(4) X, Y``  ``INTEGER(4)``  Fortran 77 and later
+    ``DDIM(X,Y)``  ``REAL(8) X, Y``     ``REAL(8)``     Fortran 77 and later
+    =============  ===================  ==============  ====================
+

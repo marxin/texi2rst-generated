@@ -1,4 +1,4 @@
-  .. _atan:
+.. _atan:
 
 ATAN --- Arctangent function 
 *****************************
@@ -11,55 +11,56 @@ ATAN --- Arctangent function
 
 .. index:: tangent, inverse
 
-:samp:`{Description}:`
+.. function:: ATAN(X)
+
   ``ATAN(X)`` computes the arctangent of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, for a complex argument and for two arguments
-  Fortran 2008 or later
+  :param X:
+    The type shall be ``REAL`` or ``COMPLEX`` ;
+    if :samp:`{Y}` is present, :samp:`{X}` shall be REAL.
 
-:samp:`{Class}:`
-  Elemental function
+  :param Y:
+    The type and kind type parameter shall be the same as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  =======================
-  ``RESULT = ATAN(X)``
-  ``RESULT = ATAN(Y, X)``
-  =======================
+  :return:
+    The return value is of the same type and kind as :samp:`{X}`.
+    If :samp:`{Y}` is present, the result is identical to ``ATAN2(Y,X)``.
+    Otherwise, it the arcus tangent of :samp:`{X}`, where the real part of
+    the result is in radians and lies in the range
+    -\pi/2 \leq \Re \atan(x) \leq \pi/2.
 
-:samp:`{Arguments}:`
-  ===========  ==================================================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX`` ;
-               if :samp:`{Y}` is present, :samp:`{X}` shall be REAL.
-  :samp:`{Y}`  The type and kind type parameter shall be the same as :samp:`{X}`.
-  ===========  ==================================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, for a complex argument and for two arguments
+    Fortran 2008 or later
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as :samp:`{X}`.
-  If :samp:`{Y}` is present, the result is identical to ``ATAN2(Y,X)``.
-  Otherwise, it the arcus tangent of :samp:`{X}`, where the real part of
-  the result is in radians and lies in the range
-  -\pi/2 \leq \Re \atan(x) \leq \pi/2.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    =======================
+    ``RESULT = ATAN(X)``
+    ``RESULT = ATAN(Y, X)``
+    =======================
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_atan
-      real(8) :: x = 2.866_8
-      x = atan(x)
-    end program test_atan
+    .. code-block:: fortran
 
-:samp:`{Specific names}:`
-  ============  =============  ===========  ====================
-  Name          Argument       Return type  Standard
-  ``ATAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-  ``DATAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-  ============  =============  ===========  ====================
+      program test_atan
+        real(8) :: x = 2.866_8
+        x = atan(x)
+      end program test_atan
 
-:samp:`{See also}:`
-  Inverse function: 
-  TAN 
-  Degrees function: 
-  ATAND
+  :samp:`{Specific names}:`
+    ============  =============  ===========  ====================
+    Name          Argument       Return type  Standard
+    ``ATAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
+    ``DATAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
+    ============  =============  ===========  ====================
+
+  :samp:`{See also}:`
+    Inverse function: 
+    TAN 
+    Degrees function: 
+    ATAND
 

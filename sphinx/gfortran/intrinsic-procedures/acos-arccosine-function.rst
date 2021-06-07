@@ -1,4 +1,4 @@
-  .. _acos:
+.. _acos:
 
 ACOS --- Arccosine function 
 ****************************
@@ -11,48 +11,47 @@ ACOS --- Arccosine function
 
 .. index:: cosine, inverse
 
-:samp:`{Description}:`
+.. function:: ACOS(X)
+
   ``ACOS(X)`` computes the arccosine of :samp:`{X}` (inverse of ``COS(X)`` ).
 
-:samp:`{Standard}:`
-  Fortran 77 and later, for a complex argument Fortran 2008 or later
+  :param X:
+    The type shall either be ``REAL`` with a magnitude that is
+    less than or equal to one - or the type shall be ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of the same type and kind as :samp:`{X}`.
+    The real part of the result is in radians and lies in the range
+    0 \leq \Re \acos(x) \leq \pi.
 
-:samp:`{Syntax}:`
-  ``RESULT = ACOS(X)``
+  :samp:`{Standard}:`
+    Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-:samp:`{Arguments}:`
-  ===========  =============================================================
-  :samp:`{X}`  The type shall either be ``REAL`` with a magnitude that is
-               less than or equal to one - or the type shall be ``COMPLEX``.
-  ===========  =============================================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as :samp:`{X}`.
-  The real part of the result is in radians and lies in the range
-  0 \leq \Re \acos(x) \leq \pi.
+  :samp:`{Syntax}:`
+    ``RESULT = ACOS(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_acos
-      real(8) :: x = 0.866_8
-      x = acos(x)
-    end program test_acos
+      program test_acos
+        real(8) :: x = 0.866_8
+        x = acos(x)
+      end program test_acos
 
-:samp:`{Specific names}:`
-  ============  =============  ===========  ====================
-  Name          Argument       Return type  Standard
-  ``ACOS(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-  ``DACOS(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-  ============  =============  ===========  ====================
+  :samp:`{Specific names}:`
+    ============  =============  ===========  ====================
+    Name          Argument       Return type  Standard
+    ``ACOS(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
+    ``DACOS(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
+    ============  =============  ===========  ====================
 
-:samp:`{See also}:`
-  Inverse function: 
-  COS 
-  Degrees function: 
-  ACOSD
+  :samp:`{See also}:`
+    Inverse function: 
+    COS 
+    Degrees function: 
+    ACOSD
 

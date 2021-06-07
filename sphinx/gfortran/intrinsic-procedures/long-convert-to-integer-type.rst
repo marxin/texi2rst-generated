@@ -1,4 +1,4 @@
-  .. _long:
+.. _long:
 
 LONG --- Convert to integer type
 ********************************
@@ -7,32 +7,31 @@ LONG --- Convert to integer type
 
 .. index:: conversion, to integer
 
-:samp:`{Description}:`
+.. function:: LONG
+
   Convert to a ``KIND=4`` integer type, which is the same size as a C
   ``long`` integer.  This is equivalent to the standard ``INT``
   intrinsic with an optional argument of ``KIND=4``, and is only
   included for backwards compatibility.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param A:
+    Shall be of type ``INTEGER``,
+    ``REAL``, or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is a ``INTEGER(4)`` variable.
 
-:samp:`{Syntax}:`
-  ``RESULT = LONG(A)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{A}`  Shall be of type ``INTEGER``,
-               ``REAL``, or ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is a ``INTEGER(4)`` variable.
+  :samp:`{Syntax}:`
+    ``RESULT = LONG(A)``
 
-:samp:`{See also}:`
-  INT, 
-  INT2, 
-  INT8
+  :samp:`{See also}:`
+    INT, 
+    INT2, 
+    INT8
 

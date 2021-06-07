@@ -1,4 +1,4 @@
-  .. _symlnk:
+.. _symlnk:
 
 SYMLNK --- Create a symbolic link
 *********************************
@@ -9,7 +9,8 @@ SYMLNK --- Create a symbolic link
 
 .. index:: file system, soft link
 
-:samp:`{Description}:`
+.. function:: SYMLNK
+
   Makes a symbolic link from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
   character ( ``CHAR(0)`` ) can be used to mark the end of the names in
   :samp:`{PATH1}` and :samp:`{PATH2}` ; otherwise, trailing blanks in the file
@@ -18,29 +19,28 @@ SYMLNK --- Create a symbolic link
   ``symlink(2)``.  If the system does not supply ``symlink(2)``, 
   ``ENOSYS`` is returned.
 
-  This intrinsic is provided in both subroutine and function forms;
-  however, only one form can be used in any given program unit.
+  :param PATH1:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param PATH2:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :param STATUS:
+    (Optional) Shall be of default ``INTEGER`` type.
 
-:samp:`{Syntax}:`
-  ========================================
-  ``CALL SYMLNK(PATH1, PATH2 [, STATUS])``
-  ``STATUS = SYMLNK(PATH1, PATH2)``
-  ========================================
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ================  ================================================
-  :samp:`{PATH1}`   Shall be of default ``CHARACTER`` type.
-  :samp:`{PATH2}`   Shall be of default ``CHARACTER`` type.
-  :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
-  ================  ================================================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{See also}:`
-  LINK, 
-  UNLINK
+  :samp:`{Syntax}:`
+    ========================================
+    ``CALL SYMLNK(PATH1, PATH2 [, STATUS])``
+    ``STATUS = SYMLNK(PATH1, PATH2)``
+    ========================================
+
+  :samp:`{See also}:`
+    LINK, 
+    UNLINK
 

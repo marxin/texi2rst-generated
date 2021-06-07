@@ -1,4 +1,4 @@
-  .. _minexponent:
+.. _minexponent:
 
 MINEXPONENT --- Minimum exponent of a real kind
 ***********************************************
@@ -7,28 +7,27 @@ MINEXPONENT --- Minimum exponent of a real kind
 
 .. index:: model representation, minimum exponent
 
-:samp:`{Description}:`
+.. function:: MINEXPONENT(X)
+
   ``MINEXPONENT(X)`` returns the minimum exponent in the model of the
   type of ``X``.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``REAL``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind.
 
-:samp:`{Syntax}:`
-  ``RESULT = MINEXPONENT(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ==========================
-  :samp:`{X}`  Shall be of type ``REAL``.
-  ===========  ==========================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = MINEXPONENT(X)``
 
-:samp:`{Example}:`
-  See ``MAXEXPONENT`` for an example.
+  :samp:`{Example}:`
+    See ``MAXEXPONENT`` for an example.
 

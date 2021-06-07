@@ -1,4 +1,4 @@
-  .. _asind:
+.. _asind:
 
 ASIND --- Arcsine function, degrees
 ***********************************
@@ -11,52 +11,48 @@ ASIND --- Arcsine function, degrees
 
 .. index:: sine, inverse, degrees
 
-:samp:`{Description}:`
+.. function:: ASIND(X)
+
   ``ASIND(X)`` computes the arcsine of its :samp:`{X}` in degrees (inverse of
   ``SIND(X)`` ).
 
-  This function is for compatibility only and should be avoided in favor of
-  standard constructs wherever possible.
+  :param X:
+    The type shall be either ``REAL`` and a magnitude that is
+    less than or equal to one - or be ``COMPLEX``.
 
-:samp:`{Standard}:`
-  GNU extension, enabled with :option:`-fdec-math`.
+  :return:
+    The return value is of the same type and kind as :samp:`{X}`.
+    The real part of the result is in degrees and lies in the range
+    -90 \leq \Re \asin(x) \leq 90.
 
-:samp:`{Class}:`
-  Elemental function
+  :samp:`{Standard}:`
+    GNU extension, enabled with :option:`-fdec-math`.
 
-:samp:`{Syntax}:`
-  ``RESULT = ASIND(X)``
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Arguments}:`
-  ===========  =========================================================
-  :samp:`{X}`  The type shall be either ``REAL`` and a magnitude that is
-               less than or equal to one - or be ``COMPLEX``.
-  ===========  =========================================================
+  :samp:`{Syntax}:`
+    ``RESULT = ASIND(X)``
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as :samp:`{X}`.
-  The real part of the result is in degrees and lies in the range
-  -90 \leq \Re \asin(x) \leq 90.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_asind
+        real(8) :: x = 0.866_8
+        x = asind(x)
+      end program test_asind
 
-    program test_asind
-      real(8) :: x = 0.866_8
-      x = asind(x)
-    end program test_asind
+  :samp:`{Specific names}:`
+    =============  =============  ===========  =============
+    Name           Argument       Return type  Standard
+    ``ASIND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
+    ``DASIND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
+    =============  =============  ===========  =============
 
-:samp:`{Specific names}:`
-  =============  =============  ===========  =============
-  Name           Argument       Return type  Standard
-  ``ASIND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-  ``DASIND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-  =============  =============  ===========  =============
-
-:samp:`{See also}:`
-  Inverse function: 
-  SIND 
-  Radians function: 
-  ASIN
+  :samp:`{See also}:`
+    Inverse function: 
+    SIND 
+    Radians function: 
+    ASIN
 

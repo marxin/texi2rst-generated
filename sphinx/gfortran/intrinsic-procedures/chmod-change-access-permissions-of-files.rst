@@ -1,4 +1,4 @@
-  .. _chmod:
+.. _chmod:
 
 CHMOD --- Change access permissions of files
 ********************************************
@@ -7,62 +7,62 @@ CHMOD --- Change access permissions of files
 
 .. index:: file system, change access mode
 
-:samp:`{Description}:`
+.. function:: CHMOD
+
   ``CHMOD`` changes the permissions of a file.
 
-  This intrinsic is provided in both subroutine and function forms; however,
-  only one form can be used in any given program unit.
+  :param NAME:
+    Scalar ``CHARACTER`` of default kind with the
+    file name. Trailing blanks are ignored unless the character
+    ``achar(0)`` is present, then all characters up to and excluding
+    ``achar(0)`` are used as the file name.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param MODE:
+    Scalar ``CHARACTER`` of default kind giving the
+    file permission. :samp:`{MODE}` uses the same syntax as the ``chmod`` utility
+    as defined by the POSIX standard. The argument shall either be a string of
+    a nonnegative octal number or a symbolic mode.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :param STATUS:
+    (optional) scalar ``INTEGER``, which is
+    ``0`` on success and nonzero otherwise.
 
-:samp:`{Syntax}:`
-  ====================================
-  ``CALL CHMOD(NAME, MODE[, STATUS])``
-  ``STATUS = CHMOD(NAME, MODE)``
-  ====================================
+  :return:
+    In either syntax, :samp:`{STATUS}` is set to ``0`` on success and nonzero
+    otherwise.
 
-:samp:`{Arguments}:`
-  ================  =============================================================================
-  :samp:`{NAME}`    Scalar ``CHARACTER`` of default kind with the
-                    file name. Trailing blanks are ignored unless the character
-                    ``achar(0)`` is present, then all characters up to and excluding
-                    ``achar(0)`` are used as the file name.
-  :samp:`{MODE}`    Scalar ``CHARACTER`` of default kind giving the
-                    file permission. :samp:`{MODE}` uses the same syntax as the ``chmod`` utility
-                    as defined by the POSIX standard. The argument shall either be a string of
-                    a nonnegative octal number or a symbolic mode.
-  :samp:`{STATUS}`  (optional) scalar ``INTEGER``, which is
-                    ``0`` on success and nonzero otherwise.
-  ================  =============================================================================
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Return value}:`
-  In either syntax, :samp:`{STATUS}` is set to ``0`` on success and nonzero
-  otherwise.
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Example}:`
-  ``CHMOD`` as subroutine
+  :samp:`{Syntax}:`
+    ====================================
+    ``CALL CHMOD(NAME, MODE[, STATUS])``
+    ``STATUS = CHMOD(NAME, MODE)``
+    ====================================
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
+    ``CHMOD`` as subroutine
 
-    program chmod_test
-      implicit none
-      integer :: status
-      call chmod('test.dat','u+x',status)
-      print *, 'Status: ', status
-    end program chmod_test
+    .. code-block:: fortran
 
-  ``CHMOD`` as function:
+      program chmod_test
+        implicit none
+        integer :: status
+        call chmod('test.dat','u+x',status)
+        print *, 'Status: ', status
+      end program chmod_test
 
-  .. code-block:: fortran
+    ``CHMOD`` as function:
 
-    program chmod_test
-      implicit none
-      integer :: status
-      status = chmod('test.dat','u+x')
-      print *, 'Status: ', status
-    end program chmod_test
+    .. code-block:: fortran
+
+      program chmod_test
+        implicit none
+        integer :: status
+        status = chmod('test.dat','u+x')
+        print *, 'Status: ', status
+      end program chmod_test
 

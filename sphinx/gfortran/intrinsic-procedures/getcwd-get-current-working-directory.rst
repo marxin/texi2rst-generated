@@ -1,4 +1,4 @@
-  .. _getcwd:
+.. _getcwd:
 
 GETCWD --- Get current working directory
 ****************************************
@@ -7,41 +7,39 @@ GETCWD --- Get current working directory
 
 .. index:: system, working directory
 
-:samp:`{Description}:`
+.. function:: GETCWD
+
   Get current working directory.
 
-  This intrinsic is provided in both subroutine and function forms; however,
-  only one form can be used in any given program unit.
+  :param C:
+    The type shall be ``CHARACTER`` and of default kind.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param STATUS:
+    (Optional) status flag. Returns 0 on success, 
+    a system specific and nonzero error code otherwise.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  =============================
-  ``CALL GETCWD(C [, STATUS])``
-  ``STATUS = GETCWD(C)``
-  =============================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ================  ====================================================
-  :samp:`{C}`       The type shall be ``CHARACTER`` and of default kind.
-  :samp:`{STATUS}`  (Optional) status flag. Returns 0 on success, 
-                    a system specific and nonzero error code otherwise.
-  ================  ====================================================
+  :samp:`{Syntax}:`
+    =============================
+    ``CALL GETCWD(C [, STATUS])``
+    ``STATUS = GETCWD(C)``
+    =============================
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_getcwd
-      CHARACTER(len=255) :: cwd
-      CALL getcwd(cwd)
-      WRITE(*,*) TRIM(cwd)
-    END PROGRAM
+      PROGRAM test_getcwd
+        CHARACTER(len=255) :: cwd
+        CALL getcwd(cwd)
+        WRITE(*,*) TRIM(cwd)
+      END PROGRAM
 
-:samp:`{See also}:`
-  CHDIR
+  :samp:`{See also}:`
+    CHDIR
 

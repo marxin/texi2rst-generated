@@ -1,4 +1,4 @@
-  .. _eoshift:
+.. _eoshift:
 
 EOSHIFT --- End-off shift elements of an array
 **********************************************
@@ -7,7 +7,8 @@ EOSHIFT --- End-off shift elements of an array
 
 .. index:: array, shift
 
-:samp:`{Description}:`
+.. function:: EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])
+
   ``EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])`` performs an end-off shift on
   elements of :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is
   omitted it is taken to be ``1``.  :samp:`{DIM}` is a scalar of type
@@ -20,47 +21,44 @@ EOSHIFT --- End-off shift elements of an array
   is copied back in the other end.  If :samp:`{BOUNDARY}` is not present then the
   following are copied in depending on the type of :samp:`{ARRAY}`.
 
-  ==========================  ==========================================
-  *Array Type*                *Boundary Value*
-  Numeric                     0 of the type and kind of :samp:`{ARRAY}`.
-  Logical                     ``.FALSE.``.
-  Character( :samp:`{len}` )  :samp:`{len}` blanks.
-  ==========================  ==========================================
+  :param ARRAY:
+    May be any type, not scalar.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param SHIFT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Transformational function
+  :param BOUNDARY:
+    Same type as :samp:`{ARRAY}`. 
 
-:samp:`{Syntax}:`
-  ``RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])``
+  :param DIM:
+    The type shall be ``INTEGER``.
 
-:samp:`{Arguments}:`
-  ==================  ==============================
-  :samp:`{ARRAY}`     May be any type, not scalar.
-  :samp:`{SHIFT}`     The type shall be ``INTEGER``.
-  :samp:`{BOUNDARY}`  Same type as :samp:`{ARRAY}`.
-  :samp:`{DIM}`       The type shall be ``INTEGER``.
-  ==================  ==============================
+  :return:
+    Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
 
-:samp:`{Return value}:`
-  Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Transformational function
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])``
 
-    program test_eoshift
-        integer, dimension(3,3) :: a
-        a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
-        print '(3i3)', a(1,:)
-        print '(3i3)', a(2,:)
-        print '(3i3)', a(3,:)    
-        a = EOSHIFT(a, SHIFT=(/1, 2, 1/), BOUNDARY=-5, DIM=2)
-        print *
-        print '(3i3)', a(1,:)
-        print '(3i3)', a(2,:)
-        print '(3i3)', a(3,:)
-    end program test_eoshift
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program test_eoshift
+          integer, dimension(3,3) :: a
+          a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
+          print '(3i3)', a(1,:)
+          print '(3i3)', a(2,:)
+          print '(3i3)', a(3,:)    
+          a = EOSHIFT(a, SHIFT=(/1, 2, 1/), BOUNDARY=-5, DIM=2)
+          print *
+          print '(3i3)', a(1,:)
+          print '(3i3)', a(2,:)
+          print '(3i3)', a(3,:)
+      end program test_eoshift
 

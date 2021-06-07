@@ -1,4 +1,4 @@
-  .. _ierrno:
+.. _ierrno:
 
 IERRNO --- Get the last system error number
 *******************************************
@@ -7,26 +7,27 @@ IERRNO --- Get the last system error number
 
 .. index:: system, error handling
 
-:samp:`{Description}:`
+.. function:: IERRNO
+
   Returns the last system error number, as given by the C ``errno``
   variable.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind.
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``RESULT = IERRNO()``
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Arguments}:`
-  None
+  :samp:`{Syntax}:`
+    ``RESULT = IERRNO()``
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind.
+  :samp:`{Arguments}:`
+    None
 
-:samp:`{See also}:`
-  PERROR
+  :samp:`{See also}:`
+    PERROR
 

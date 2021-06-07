@@ -1,4 +1,4 @@
-  .. _mclock:
+.. _mclock:
 
 MCLOCK --- Time function
 ************************
@@ -9,34 +9,29 @@ MCLOCK --- Time function
 
 .. index:: clock ticks
 
-:samp:`{Description}:`
+.. function:: MCLOCK
+
   Returns the number of clock ticks since the start of the process, based
   on the function ``clock(3)`` in the C standard library.
 
-  This intrinsic is not fully portable, such as to systems with 32-bit
-  ``INTEGER`` types but supporting times wider than 32 bits. Therefore,
-  the values returned by this intrinsic might be, or become, negative, or
-  numerically less than previous values, during a single run of the
-  compiled program.
+  :return:
+    The return value is a scalar of type ``INTEGER(4)``, equal to the
+    number of clock ticks since the start of the process, or ``-1`` if
+    the system does not support ``clock(3)``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Syntax}:`
-  ``RESULT = MCLOCK()``
+  :samp:`{Syntax}:`
+    ``RESULT = MCLOCK()``
 
-:samp:`{Return value}:`
-  The return value is a scalar of type ``INTEGER(4)``, equal to the
-  number of clock ticks since the start of the process, or ``-1`` if
-  the system does not support ``clock(3)``.
-
-:samp:`{See also}:`
-  CTIME, 
-  GMTIME, 
-  LTIME, 
-  MCLOCK, 
-  TIME
+  :samp:`{See also}:`
+    CTIME, 
+    GMTIME, 
+    LTIME, 
+    MCLOCK, 
+    TIME
 

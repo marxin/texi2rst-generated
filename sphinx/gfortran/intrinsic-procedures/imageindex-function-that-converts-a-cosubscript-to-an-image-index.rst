@@ -1,4 +1,4 @@
-  .. _image_index:
+.. _image_index:
 
 IMAGE_INDEX --- Function that converts a cosubscript to an image index
 **********************************************************************
@@ -9,38 +9,39 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
 
 .. index:: images, cosubscript to image index conversion
 
-:samp:`{Description}:`
+.. function:: IMAGE_INDEX
+
   Returns the image index belonging to a cosubscript.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param COARRAY:
+    Coarray of any type.
 
-:samp:`{Class}:`
-  Inquiry function.
+  :param SUB:
+    default integer rank-1 array of a size equal to
+    the corank of :samp:`{COARRAY}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = IMAGE_INDEX(COARRAY, SUB)``
+  :return:
+    Scalar default integer with the value of the image index which corresponds
+    to the cosubscripts. For invalid cosubscripts the result is zero.
 
-:samp:`{Arguments}:`
-  =================  ===============================================
-  :samp:`{COARRAY}`  Coarray of any type.
-  :samp:`{SUB}`      default integer rank-1 array of a size equal to
-                     the corank of :samp:`{COARRAY}`.
-  =================  ===============================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  Scalar default integer with the value of the image index which corresponds
-  to the cosubscripts. For invalid cosubscripts the result is zero.
+  :samp:`{Class}:`
+    Inquiry function.
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = IMAGE_INDEX(COARRAY, SUB)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    INTEGER :: array[2,-1:4,8,*]
-    ! Writes  28 (or 0 if there are fewer than 28 images)
-    WRITE (*,*) IMAGE_INDEX (array, [2,0,3,1])
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  THIS_IMAGE, 
-  NUM_IMAGES
+      INTEGER :: array[2,-1:4,8,*]
+      ! Writes  28 (or 0 if there are fewer than 28 images)
+      WRITE (*,*) IMAGE_INDEX (array, [2,0,3,1])
+
+  :samp:`{See also}:`
+    THIS_IMAGE, 
+    NUM_IMAGES
 

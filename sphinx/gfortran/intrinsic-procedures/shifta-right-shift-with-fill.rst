@@ -1,4 +1,4 @@
-  .. _shifta:
+.. _shifta:
 
 SHIFTA --- Right shift with fill
 ********************************
@@ -9,7 +9,8 @@ SHIFTA --- Right shift with fill
 
 .. index:: shift, right with fill
 
-:samp:`{Description}:`
+.. function:: SHIFTA
+
   ``SHIFTA`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` that be
   nonnegative and less than or equal to ``BIT_SIZE(I)``, otherwise
@@ -18,26 +19,26 @@ SHIFTA --- Right shift with fill
   end are equal to the leftmost bit, which in two's complement
   representation is the sign bit.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param SHIFT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = SHIFTA(I, SHIFT)``
+  :return:
+    The return value is of type ``INTEGER`` and of the same kind as
+    :samp:`{I}`.
 
-:samp:`{Arguments}:`
-  ===============  ==============================
-  :samp:`{I}`      The type shall be ``INTEGER``.
-  :samp:`{SHIFT}`  The type shall be ``INTEGER``.
-  ===============  ==============================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the same kind as
-  :samp:`{I}`.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  SHIFTL, 
-  SHIFTR
+  :samp:`{Syntax}:`
+    ``RESULT = SHIFTA(I, SHIFT)``
+
+  :samp:`{See also}:`
+    SHIFTL, 
+    SHIFTR
 

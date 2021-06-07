@@ -1,4 +1,4 @@
-  .. _lle:
+.. _lle:
 
 LLE --- Lexical less than or equal
 **********************************
@@ -9,47 +9,41 @@ LLE --- Lexical less than or equal
 
 .. index:: string, comparison
 
-:samp:`{Description}:`
+.. function:: LLE
+
   Determines whether one string is lexically less than or equal to another
   string, where the two strings are interpreted as containing ASCII
   character codes.  If the String A and String B are not the same length,
   the shorter is compared as if spaces were appended to it to form a value
   that has the same length as the longer.
 
-  In general, the lexical comparison intrinsics ``LGE``, ``LGT``,
-  ``LLE``, and ``LLT`` differ from the corresponding intrinsic
-  operators ``.GE.``, ``.GT.``, ``.LE.``, and ``.LT.``, in
-  that the latter use the processor's character ordering (which is not
-  ASCII on some targets), whereas the former always use the ASCII
-  ordering.
+  :param STRING_A:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param STRING_B:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    Returns ``.TRUE.`` if ``STRING_A <= STRING_B``, and ``.FALSE.``
+    otherwise, based on the ASCII ordering.
 
-:samp:`{Syntax}:`
-  ``RESULT = LLE(STRING_A, STRING_B)``
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Arguments}:`
-  ==================  =======================================
-  :samp:`{STRING_A}`  Shall be of default ``CHARACTER`` type.
-  :samp:`{STRING_B}`  Shall be of default ``CHARACTER`` type.
-  ==================  =======================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  Returns ``.TRUE.`` if ``STRING_A <= STRING_B``, and ``.FALSE.``
-  otherwise, based on the ASCII ordering.
+  :samp:`{Syntax}:`
+    ``RESULT = LLE(STRING_A, STRING_B)``
 
-:samp:`{Specific names}:`
-  ===========================  =============  ===========  ====================
-  Name                         Argument       Return type  Standard
-  ``LLE(STRING_A, STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
-  ===========================  =============  ===========  ====================
+  :samp:`{Specific names}:`
+    ===========================  =============  ===========  ====================
+    Name                         Argument       Return type  Standard
+    ``LLE(STRING_A, STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
+    ===========================  =============  ===========  ====================
 
-:samp:`{See also}:`
-  LGE, 
-  LGT, 
-  LLT
+  :samp:`{See also}:`
+    LGE, 
+    LGT, 
+    LLT
 
