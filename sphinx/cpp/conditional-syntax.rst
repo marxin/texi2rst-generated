@@ -16,11 +16,11 @@ directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
   conditional-syntax/defined
   conditional-syntax/else
   conditional-syntax/elif
-  conditional-syntax/__has_attribute
-  conditional-syntax/__has_cpp_attribute
-  conditional-syntax/__has_c_attribute
-  conditional-syntax/__has_builtin
-  conditional-syntax/__has_include
+  conditional-syntax/has_attribute
+  conditional-syntax/has_cpp_attribute
+  conditional-syntax/has_c_attribute
+  conditional-syntax/has_builtin
+  conditional-syntax/has_include
 
 .. _ifdef:
 

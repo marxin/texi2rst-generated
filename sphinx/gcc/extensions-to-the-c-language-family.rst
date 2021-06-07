@@ -33,7 +33,7 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/constructing-calls
   extensions-to-the-c-language-family/typeof
   extensions-to-the-c-language-family/conditionals
-  extensions-to-the-c-language-family/__int128
+  extensions-to-the-c-language-family/int128
   extensions-to-the-c-language-family/long-long
   extensions-to-the-c-language-family/complex
   extensions-to-the-c-language-family/floating-types
@@ -78,8 +78,8 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/return-address
   extensions-to-the-c-language-family/vector-extensions
   extensions-to-the-c-language-family/offsetof
-  extensions-to-the-c-language-family/__sync-builtins
-  extensions-to-the-c-language-family/__atomic-builtins
+  extensions-to-the-c-language-family/sync-builtins
+  extensions-to-the-c-language-family/atomic-builtins
   extensions-to-the-c-language-family/integer-overflow-builtins
   extensions-to-the-c-language-family/x86-specific-memory-model-extensions-for-transactional-memory
   extensions-to-the-c-language-family/object-size-checking

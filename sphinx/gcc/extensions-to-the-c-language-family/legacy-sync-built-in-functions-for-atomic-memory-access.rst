@@ -1,4 +1,4 @@
-.. ___sync-builtins:
+.. _sync-builtins:
 
 Legacy __sync Built-in Functions for Atomic Memory Access
 *********************************************************
@@ -19,7 +19,7 @@ of the ``uintptr_t`` type.  That is, they are not scaled by the size
 of the type to which the pointer points.
 
 These functions are implemented in terms of the :samp:`__atomic`
-builtins (see :ref:`__atomic-builtins`).  They should not be used for new
+builtins (see :ref:`atomic-builtins`).  They should not be used for new
 code which should use the :samp:`__atomic` builtins instead.
 
 Not all operations are supported by all target processors.  If a particular
