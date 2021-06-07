@@ -49,10 +49,10 @@ REAL --- Convert to real type
 
   :samp:`{Syntax}:`
 
-    =============================
-    ``RESULT = REAL(A [, KIND])``
-    ``RESULT = REALPART(Z)``
-    =============================
+  .. code-block:: fortran
+
+    RESULT = REAL(A [, KIND])
+    RESULT = REALPART(Z)
 
   :samp:`{Example}:`
 

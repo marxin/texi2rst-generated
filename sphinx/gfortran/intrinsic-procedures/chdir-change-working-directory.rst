@@ -28,10 +28,10 @@ CHDIR --- Change working directory
 
   :samp:`{Syntax}:`
 
-    ===============================
-    ``CALL CHDIR(NAME [, STATUS])``
-    ``STATUS = CHDIR(NAME)``
-    ===============================
+  .. code-block:: fortran
+
+    CALL CHDIR(NAME [, STATUS])
+    STATUS = CHDIR(NAME)
 
   :samp:`{Example}:`
 

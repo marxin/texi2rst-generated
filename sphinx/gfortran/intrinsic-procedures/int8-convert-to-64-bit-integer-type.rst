@@ -27,7 +27,10 @@ INT8 --- Convert to 64-bit integer type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = INT8(A)``
+
+  .. code-block:: fortran
+
+    RESULT = INT8(A)
 
   :samp:`{See also}:`
     INT, 

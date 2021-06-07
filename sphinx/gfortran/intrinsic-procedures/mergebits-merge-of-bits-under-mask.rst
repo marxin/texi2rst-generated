@@ -36,5 +36,8 @@ MERGE_BITS --- Merge of bits under mask
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = MERGE_BITS(I, J, MASK)``
+
+  .. code-block:: fortran
+
+    RESULT = MERGE_BITS(I, J, MASK)
 

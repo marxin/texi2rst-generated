@@ -32,7 +32,10 @@ ICHAR --- Character-to-integer conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ICHAR(C [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = ICHAR(C [, KIND])
 
   :samp:`{Example}:`
 

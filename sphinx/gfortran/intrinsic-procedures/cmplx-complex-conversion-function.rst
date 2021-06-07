@@ -41,7 +41,10 @@ CMPLX --- Complex conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = CMPLX(X [, Y [, KIND]])``
+
+  .. code-block:: fortran
+
+    RESULT = CMPLX(X [, Y [, KIND]])
 
   :samp:`{Example}:`
 

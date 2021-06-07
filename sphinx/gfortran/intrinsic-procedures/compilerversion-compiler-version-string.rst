@@ -25,7 +25,10 @@ COMPILER_VERSION --- Compiler version string
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
   :samp:`{Syntax}:`
-    ``STR = COMPILER_VERSION()``
+
+  .. code-block:: fortran
+
+    STR = COMPILER_VERSION()
 
   :samp:`{Arguments}:`
     None

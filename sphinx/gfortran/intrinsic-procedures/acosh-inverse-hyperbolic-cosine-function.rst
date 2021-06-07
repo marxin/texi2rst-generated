@@ -34,7 +34,10 @@ ACOSH --- Inverse hyperbolic cosine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ACOSH(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ACOSH(X)
 
   :samp:`{Example}:`
 

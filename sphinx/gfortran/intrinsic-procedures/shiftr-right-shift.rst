@@ -34,7 +34,10 @@ SHIFTR --- Right shift
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SHIFTR(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = SHIFTR(I, SHIFT)
 
   :samp:`{See also}:`
     SHIFTA, 

@@ -32,7 +32,10 @@ LOG_GAMMA --- Logarithm of the Gamma function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``X = LOG_GAMMA(X)``
+
+  .. code-block:: fortran
+
+    X = LOG_GAMMA(X)
 
   :samp:`{Example}:`
 

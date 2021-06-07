@@ -66,10 +66,10 @@ FINDLOC --- Search an array for a value
 
   :samp:`{Syntax}:`
 
-    ================================================================
-    ``RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])``
-    ``RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])``
-    ================================================================
+  .. code-block:: fortran
+
+    RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])
+    RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])
 
   :samp:`{See also}:`
     MAXLOC, 

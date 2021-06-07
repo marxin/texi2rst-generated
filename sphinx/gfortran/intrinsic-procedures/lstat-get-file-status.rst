@@ -32,10 +32,10 @@ LSTAT --- Get file status
 
   :samp:`{Syntax}:`
 
-    =======================================
-    ``CALL LSTAT(NAME, VALUES [, STATUS])``
-    ``STATUS = LSTAT(NAME, VALUES)``
-    =======================================
+  .. code-block:: fortran
+
+    CALL LSTAT(NAME, VALUES [, STATUS])
+    STATUS = LSTAT(NAME, VALUES)
 
   :samp:`{Example}:`
     See STAT for an example.

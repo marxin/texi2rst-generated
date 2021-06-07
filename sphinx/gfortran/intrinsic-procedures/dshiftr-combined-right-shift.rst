@@ -43,7 +43,10 @@ DSHIFTR --- Combined right shift
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DSHIFTR(I, J, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = DSHIFTR(I, J, SHIFT)
 
   :samp:`{See also}:`
     DSHIFTL

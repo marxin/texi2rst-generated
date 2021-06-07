@@ -27,7 +27,10 @@ ABORT --- Abort the program
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ABORT``
+
+  .. code-block:: fortran
+
+    CALL ABORT
 
   :samp:`{Example}:`
 

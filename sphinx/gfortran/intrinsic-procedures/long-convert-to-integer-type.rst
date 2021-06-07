@@ -28,7 +28,10 @@ LONG --- Convert to integer type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LONG(A)``
+
+  .. code-block:: fortran
+
+    RESULT = LONG(A)
 
   :samp:`{See also}:`
     INT, 

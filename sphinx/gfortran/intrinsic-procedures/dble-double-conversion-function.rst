@@ -25,7 +25,10 @@ DBLE --- Double conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DBLE(A)``
+
+  .. code-block:: fortran
+
+    RESULT = DBLE(A)
 
   :samp:`{Example}:`
 

@@ -38,7 +38,10 @@ SPREAD --- Add a dimension to an array
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = SPREAD(SOURCE, DIM, NCOPIES)``
+
+  .. code-block:: fortran
+
+    RESULT = SPREAD(SOURCE, DIM, NCOPIES)
 
   :samp:`{Example}:`
 

@@ -30,7 +30,10 @@ REPEAT --- Repeated string concatenation
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = REPEAT(STRING, NCOPIES)``
+
+  .. code-block:: fortran
+
+    RESULT = REPEAT(STRING, NCOPIES)
 
   :samp:`{Example}:`
 

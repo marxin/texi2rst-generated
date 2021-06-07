@@ -42,10 +42,10 @@ PRODUCT --- Product of array elements
 
   :samp:`{Syntax}:`
 
-    ========================================
-    ``RESULT = PRODUCT(ARRAY[, MASK])``
-    ``RESULT = PRODUCT(ARRAY, DIM[, MASK])``
-    ========================================
+  .. code-block:: fortran
+
+    RESULT = PRODUCT(ARRAY[, MASK])
+    RESULT = PRODUCT(ARRAY, DIM[, MASK])
 
   :samp:`{Example}:`
 

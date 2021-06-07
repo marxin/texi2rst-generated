@@ -31,7 +31,10 @@ CEILING --- Integer ceiling function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = CEILING(A [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = CEILING(A [, KIND])
 
   :samp:`{Example}:`
 

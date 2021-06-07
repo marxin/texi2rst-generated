@@ -27,7 +27,10 @@ PRECISION --- Decimal precision of a real kind
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = PRECISION(X)``
+
+  .. code-block:: fortran
+
+    RESULT = PRECISION(X)
 
   :samp:`{Example}:`
 

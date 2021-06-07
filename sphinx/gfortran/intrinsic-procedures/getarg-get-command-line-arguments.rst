@@ -37,7 +37,10 @@ GETARG --- Get command line arguments
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GETARG(POS, VALUE)``
+
+  .. code-block:: fortran
+
+    CALL GETARG(POS, VALUE)
 
   :samp:`{Example}:`
 

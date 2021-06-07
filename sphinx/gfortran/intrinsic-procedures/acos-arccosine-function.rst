@@ -31,7 +31,10 @@ ACOS --- Arccosine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ACOS(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ACOS(X)
 
   :samp:`{Example}:`
 

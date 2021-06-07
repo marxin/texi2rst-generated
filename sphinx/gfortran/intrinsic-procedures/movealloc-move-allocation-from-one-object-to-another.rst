@@ -32,7 +32,10 @@ MOVE_ALLOC --- Move allocation from one object to another
     Pure subroutine
 
   :samp:`{Syntax}:`
-    ``CALL MOVE_ALLOC(FROM, TO)``
+
+  .. code-block:: fortran
+
+    CALL MOVE_ALLOC(FROM, TO)
 
   :samp:`{Example}:`
 

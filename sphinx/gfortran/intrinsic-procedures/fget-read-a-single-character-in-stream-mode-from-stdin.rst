@@ -34,10 +34,10 @@ FGET --- Read a single character in stream mode from stdin
 
   :samp:`{Syntax}:`
 
-    ===========================
-    ``CALL FGET(C [, STATUS])``
-    ``STATUS = FGET(C)``
-    ===========================
+  .. code-block:: fortran
+
+    CALL FGET(C [, STATUS])
+    STATUS = FGET(C)
 
   :samp:`{Example}:`
 

@@ -29,7 +29,10 @@ FRACTION --- Fractional part of the model representation
     Elemental function
 
   :samp:`{Syntax}:`
-    ``Y = FRACTION(X)``
+
+  .. code-block:: fortran
+
+    Y = FRACTION(X)
 
   :samp:`{Example}:`
 

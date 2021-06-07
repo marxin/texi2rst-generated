@@ -36,7 +36,10 @@ ANINT --- Nearest whole number
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ANINT(A [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = ANINT(A [, KIND])
 
   :samp:`{Example}:`
 

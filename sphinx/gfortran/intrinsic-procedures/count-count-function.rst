@@ -43,7 +43,10 @@ COUNT --- Count function
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = COUNT(MASK [, DIM, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = COUNT(MASK [, DIM, KIND])
 
   :samp:`{Example}:`
 

@@ -29,7 +29,10 @@ HYPOT --- Euclidean distance function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = HYPOT(X, Y)``
+
+  .. code-block:: fortran
+
+    RESULT = HYPOT(X, Y)
 
   :samp:`{Example}:`
 

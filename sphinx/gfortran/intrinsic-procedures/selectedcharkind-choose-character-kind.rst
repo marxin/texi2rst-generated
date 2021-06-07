@@ -27,7 +27,10 @@ SELECTED_CHAR_KIND --- Choose character kind
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = SELECTED_CHAR_KIND(NAME)``
+
+  .. code-block:: fortran
+
+    RESULT = SELECTED_CHAR_KIND(NAME)
 
   :samp:`{Example}:`
 

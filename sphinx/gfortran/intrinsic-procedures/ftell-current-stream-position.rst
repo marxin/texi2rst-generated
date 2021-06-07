@@ -29,10 +29,10 @@ FTELL --- Current stream position
 
   :samp:`{Syntax}:`
 
-    ============================
-    ``CALL FTELL(UNIT, OFFSET)``
-    ``OFFSET = FTELL(UNIT)``
-    ============================
+  .. code-block:: fortran
+
+    CALL FTELL(UNIT, OFFSET)
+    OFFSET = FTELL(UNIT)
 
   :samp:`{Example}:`
 

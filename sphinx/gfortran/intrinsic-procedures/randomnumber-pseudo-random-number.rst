@@ -22,7 +22,10 @@ RANDOM_NUMBER --- Pseudo-random number
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL RANDOM_NUMBER(HARVEST)``
+
+  .. code-block:: fortran
+
+    CALL RANDOM_NUMBER(HARVEST)
 
   :samp:`{Example}:`
 

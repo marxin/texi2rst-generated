@@ -36,10 +36,10 @@ FDATE --- Get the current time as a string
 
   :samp:`{Syntax}:`
 
-    =====================
-    ``CALL FDATE(DATE)``.
-    ``DATE = FDATE()``.
-    =====================
+  .. code-block:: fortran
+
+    CALL FDATE(DATE).
+    DATE = FDATE().
 
   :samp:`{Example}:`
 

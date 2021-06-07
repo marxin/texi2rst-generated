@@ -25,7 +25,10 @@ TRAILZ --- Number of trailing zero bits of an integer
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = TRAILZ(I)``
+
+  .. code-block:: fortran
+
+    RESULT = TRAILZ(I)
 
   :samp:`{Example}:`
 

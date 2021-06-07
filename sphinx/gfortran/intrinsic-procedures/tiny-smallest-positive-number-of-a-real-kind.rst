@@ -27,7 +27,10 @@ TINY --- Smallest positive number of a real kind
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = TINY(X)``
+
+  .. code-block:: fortran
+
+    RESULT = TINY(X)
 
   :samp:`{Example}:`
     See ``HUGE`` for an example.

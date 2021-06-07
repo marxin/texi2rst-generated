@@ -26,7 +26,10 @@ CPU_TIME --- CPU elapsed time in seconds
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL CPU_TIME(TIME)``
+
+  .. code-block:: fortran
+
+    CALL CPU_TIME(TIME)
 
   :samp:`{Example}:`
 

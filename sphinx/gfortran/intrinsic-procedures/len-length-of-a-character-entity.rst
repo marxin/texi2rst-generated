@@ -33,7 +33,10 @@ LEN --- Length of a character entity
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``L = LEN(STRING [, KIND])``
+
+  .. code-block:: fortran
+
+    L = LEN(STRING [, KIND])
 
   :samp:`{Specific names}:`
 

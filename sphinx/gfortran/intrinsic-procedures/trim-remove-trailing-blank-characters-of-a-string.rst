@@ -25,7 +25,10 @@ TRIM --- Remove trailing blank characters of a string
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = TRIM(STRING)``
+
+  .. code-block:: fortran
+
+    RESULT = TRIM(STRING)
 
   :samp:`{Example}:`
 

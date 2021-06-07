@@ -30,5 +30,8 @@ TRANSPOSE --- Transpose an array of rank two
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = TRANSPOSE(MATRIX)``
+
+  .. code-block:: fortran
+
+    RESULT = TRANSPOSE(MATRIX)
 

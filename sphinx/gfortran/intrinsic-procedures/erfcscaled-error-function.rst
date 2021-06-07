@@ -25,7 +25,10 @@ ERFC_SCALED --- Error function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ERFC_SCALED(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ERFC_SCALED(X)
 
   :samp:`{Example}:`
 

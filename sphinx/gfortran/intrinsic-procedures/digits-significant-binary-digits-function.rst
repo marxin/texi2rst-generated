@@ -26,7 +26,10 @@ DIGITS --- Significant binary digits function
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = DIGITS(X)``
+
+  .. code-block:: fortran
+
+    RESULT = DIGITS(X)
 
   :samp:`{Example}:`
 

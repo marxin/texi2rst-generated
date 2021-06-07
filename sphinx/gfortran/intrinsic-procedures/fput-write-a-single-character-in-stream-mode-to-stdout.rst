@@ -34,10 +34,10 @@ FPUT --- Write a single character in stream mode to stdout
 
   :samp:`{Syntax}:`
 
-    ===========================
-    ``CALL FPUT(C [, STATUS])``
-    ``STATUS = FPUT(C)``
-    ===========================
+  .. code-block:: fortran
+
+    CALL FPUT(C [, STATUS])
+    STATUS = FPUT(C)
 
   :samp:`{Example}:`
 

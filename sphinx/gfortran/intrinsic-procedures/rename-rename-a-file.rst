@@ -33,10 +33,10 @@ RENAME --- Rename a file
 
   :samp:`{Syntax}:`
 
-    ========================================
-    ``CALL RENAME(PATH1, PATH2 [, STATUS])``
-    ``STATUS = RENAME(PATH1, PATH2)``
-    ========================================
+  .. code-block:: fortran
+
+    CALL RENAME(PATH1, PATH2 [, STATUS])
+    STATUS = RENAME(PATH1, PATH2)
 
   :samp:`{See also}:`
     LINK

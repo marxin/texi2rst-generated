@@ -31,7 +31,10 @@ FLOOR --- Integer floor function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = FLOOR(A [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = FLOOR(A [, KIND])
 
   :samp:`{Example}:`
 

@@ -26,7 +26,10 @@ SELECTED_INT_KIND --- Choose integer kind
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = SELECTED_INT_KIND(R)``
+
+  .. code-block:: fortran
+
+    RESULT = SELECTED_INT_KIND(R)
 
   :samp:`{Example}:`
 

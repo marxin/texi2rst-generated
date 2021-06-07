@@ -27,7 +27,10 @@ HUGE --- Largest number of a kind
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = HUGE(X)``
+
+  .. code-block:: fortran
+
+    RESULT = HUGE(X)
 
   :samp:`{Example}:`
 

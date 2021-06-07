@@ -26,7 +26,10 @@ MCLOCK8 --- Time function (64-bit)
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = MCLOCK8()``
+
+  .. code-block:: fortran
+
+    RESULT = MCLOCK8()
 
   :samp:`{See also}:`
     CTIME, 

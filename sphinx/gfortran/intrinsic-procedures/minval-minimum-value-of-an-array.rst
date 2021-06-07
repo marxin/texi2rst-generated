@@ -48,10 +48,10 @@ MINVAL --- Minimum value of an array
 
   :samp:`{Syntax}:`
 
-    ========================================
-    ``RESULT = MINVAL(ARRAY, DIM [, MASK])``
-    ``RESULT = MINVAL(ARRAY [, MASK])``
-    ========================================
+  .. code-block:: fortran
+
+    RESULT = MINVAL(ARRAY, DIM [, MASK])
+    RESULT = MINVAL(ARRAY [, MASK])
 
   :samp:`{See also}:`
     MIN, 

@@ -22,7 +22,10 @@ FLUSH --- Flush I/O unit(s)
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL FLUSH(UNIT)``
+
+  .. code-block:: fortran
+
+    CALL FLUSH(UNIT)
 
   :samp:`{Note}:`
     Beginning with the Fortran 2003 standard, there is a ``FLUSH``

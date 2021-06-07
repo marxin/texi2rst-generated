@@ -40,7 +40,10 @@ SIZE --- Determine the size of an array
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = SIZE(ARRAY[, DIM [, KIND]])``
+
+  .. code-block:: fortran
+
+    RESULT = SIZE(ARRAY[, DIM [, KIND]])
 
   :samp:`{Example}:`
 

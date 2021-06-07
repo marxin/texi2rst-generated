@@ -37,7 +37,10 @@ NOT --- Logical negation
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = NOT(I)``
+
+  .. code-block:: fortran
+
+    RESULT = NOT(I)
 
   :samp:`{Specific names}:`
 

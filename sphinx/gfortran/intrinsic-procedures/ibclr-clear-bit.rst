@@ -39,7 +39,10 @@ IBCLR --- Clear bit
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IBCLR(I, POS)``
+
+  .. code-block:: fortran
+
+    RESULT = IBCLR(I, POS)
 
   :samp:`{Specific names}:`
 

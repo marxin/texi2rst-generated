@@ -34,7 +34,10 @@ LLE --- Lexical less than or equal
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LLE(STRING_A, STRING_B)``
+
+  .. code-block:: fortran
+
+    RESULT = LLE(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
 

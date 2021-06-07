@@ -35,7 +35,10 @@ SIND --- Sine function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SIND(X)``
+
+  .. code-block:: fortran
+
+    RESULT = SIND(X)
 
   :samp:`{Example}:`
 

@@ -29,7 +29,10 @@ IS_IOSTAT_END --- Test for end-of-file value
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IS_IOSTAT_END(I)``
+
+  .. code-block:: fortran
+
+    RESULT = IS_IOSTAT_END(I)
 
   :samp:`{Example}:`
 

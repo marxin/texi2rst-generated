@@ -25,7 +25,10 @@ TIME8 --- Time function (64-bit)
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = TIME8()``
+
+  .. code-block:: fortran
+
+    RESULT = TIME8()
 
   :samp:`{See also}:`
     DATE_AND_TIME, 

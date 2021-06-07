@@ -25,7 +25,10 @@ PRESENT --- Determine whether an optional dummy argument is specified
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = PRESENT(A)``
+
+  .. code-block:: fortran
+
+    RESULT = PRESENT(A)
 
   :samp:`{Example}:`
 

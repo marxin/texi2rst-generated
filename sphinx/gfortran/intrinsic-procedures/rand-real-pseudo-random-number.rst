@@ -28,7 +28,10 @@ RAND --- Real pseudo-random number
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = RAND(I)``
+
+  .. code-block:: fortran
+
+    RESULT = RAND(I)
 
   :samp:`{Example}:`
 

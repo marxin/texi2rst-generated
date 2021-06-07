@@ -38,5 +38,8 @@ MATMUL --- matrix multiplication
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = MATMUL(MATRIX_A, MATRIX_B)``
+
+  .. code-block:: fortran
+
+    RESULT = MATMUL(MATRIX_A, MATRIX_B)
 

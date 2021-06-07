@@ -35,7 +35,10 @@ SIN --- Sine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SIN(X)``
+
+  .. code-block:: fortran
+
+    RESULT = SIN(X)
 
   :samp:`{Example}:`
 

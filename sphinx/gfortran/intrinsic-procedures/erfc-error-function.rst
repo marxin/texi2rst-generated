@@ -25,7 +25,10 @@ ERFC --- Error function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ERFC(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ERFC(X)
 
   :samp:`{Example}:`
 

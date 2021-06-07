@@ -20,7 +20,10 @@ BACKTRACE --- Show a backtrace
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL BACKTRACE``
+
+  .. code-block:: fortran
+
+    CALL BACKTRACE
 
   :samp:`{Arguments}:`
     None

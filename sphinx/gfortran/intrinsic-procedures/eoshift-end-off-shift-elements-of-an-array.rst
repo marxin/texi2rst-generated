@@ -43,7 +43,10 @@ EOSHIFT --- End-off shift elements of an array
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])``
+
+  .. code-block:: fortran
+
+    RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])
 
   :samp:`{Example}:`
 

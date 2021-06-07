@@ -45,7 +45,10 @@ IBITS --- Bit extraction
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IBITS(I, POS, LEN)``
+
+  .. code-block:: fortran
+
+    RESULT = IBITS(I, POS, LEN)
 
   :samp:`{Specific names}:`
 

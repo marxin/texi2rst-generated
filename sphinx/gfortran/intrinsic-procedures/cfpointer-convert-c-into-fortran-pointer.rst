@@ -33,7 +33,10 @@ C_F_POINTER --- Convert C into Fortran pointer
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL C_F_POINTER(CPTR, FPTR[, SHAPE])``
+
+  .. code-block:: fortran
+
+    CALL C_F_POINTER(CPTR, FPTR[, SHAPE])
 
   :samp:`{Example}:`
 

@@ -36,7 +36,10 @@ SHIFTA --- Right shift with fill
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SHIFTA(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = SHIFTA(I, SHIFT)
 
   :samp:`{See also}:`
     SHIFTL, 

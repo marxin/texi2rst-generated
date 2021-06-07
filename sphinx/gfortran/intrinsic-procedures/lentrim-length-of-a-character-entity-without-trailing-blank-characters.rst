@@ -30,7 +30,10 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LEN_TRIM(STRING [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = LEN_TRIM(STRING [, KIND])
 
   :samp:`{See also}:`
     LEN, 

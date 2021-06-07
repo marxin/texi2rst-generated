@@ -35,10 +35,10 @@ DTIME --- Execution time subroutine (or function)
 
   :samp:`{Syntax}:`
 
-    ============================================
-    ``CALL DTIME(VALUES, TIME)``.
-    ``TIME = DTIME(VALUES)``, (not recommended).
-    ============================================
+  .. code-block:: fortran
+
+    CALL DTIME(VALUES, TIME).
+    TIME = DTIME(VALUES), (not recommended).
 
   :samp:`{Example}:`
 

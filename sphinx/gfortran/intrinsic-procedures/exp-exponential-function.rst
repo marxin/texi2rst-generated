@@ -35,7 +35,10 @@ EXP --- Exponential function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = EXP(X)``
+
+  .. code-block:: fortran
+
+    RESULT = EXP(X)
 
   :samp:`{Example}:`
 

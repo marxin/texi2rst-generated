@@ -21,7 +21,10 @@ SLEEP --- Sleep for the specified number of seconds
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL SLEEP(SECONDS)``
+
+  .. code-block:: fortran
+
+    CALL SLEEP(SECONDS)
 
   :samp:`{Example}:`
 

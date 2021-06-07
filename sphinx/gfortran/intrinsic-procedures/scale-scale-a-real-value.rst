@@ -30,7 +30,10 @@ SCALE --- Scale a real value
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SCALE(X, I)``
+
+  .. code-block:: fortran
+
+    RESULT = SCALE(X, I)
 
   :samp:`{Example}:`
 

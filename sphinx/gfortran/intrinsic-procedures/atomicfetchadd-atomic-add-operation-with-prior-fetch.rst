@@ -40,7 +40,10 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])
 
   :samp:`{Example}:`
 

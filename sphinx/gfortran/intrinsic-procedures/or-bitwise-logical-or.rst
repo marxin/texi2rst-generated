@@ -38,7 +38,10 @@ OR --- Bitwise logical OR
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = OR(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = OR(I, J)
 
   :samp:`{Example}:`
 

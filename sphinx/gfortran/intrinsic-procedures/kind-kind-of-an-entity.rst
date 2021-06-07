@@ -27,7 +27,10 @@ KIND --- Kind of an entity
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``K = KIND(X)``
+
+  .. code-block:: fortran
+
+    K = KIND(X)
 
   :samp:`{Example}:`
 

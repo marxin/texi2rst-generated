@@ -27,7 +27,10 @@ DPROD --- Double product function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DPROD(X, Y)``
+
+  .. code-block:: fortran
+
+    RESULT = DPROD(X, Y)
 
   :samp:`{Example}:`
 

@@ -42,7 +42,10 @@ IAND --- Bitwise logical and
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IAND(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = IAND(I, J)
 
   :samp:`{Example}:`
 

@@ -33,7 +33,10 @@ TANH --- Hyperbolic tangent function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``X = TANH(X)``
+
+  .. code-block:: fortran
+
+    X = TANH(X)
 
   :samp:`{Example}:`
 

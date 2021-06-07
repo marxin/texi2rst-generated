@@ -32,7 +32,10 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BESSEL_J0(X)``
+
+  .. code-block:: fortran
+
+    RESULT = BESSEL_J0(X)
 
   :samp:`{Example}:`
 

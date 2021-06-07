@@ -25,7 +25,10 @@ C_LOC --- Obtain the C address of an object
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = C_LOC(X)``
+
+  .. code-block:: fortran
+
+    RESULT = C_LOC(X)
 
   :samp:`{Example}:`
 

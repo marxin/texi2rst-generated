@@ -38,7 +38,10 @@ XOR --- Bitwise logical exclusive OR
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = XOR(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = XOR(I, J)
 
   :samp:`{Example}:`
 

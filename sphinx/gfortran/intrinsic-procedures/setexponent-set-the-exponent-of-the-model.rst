@@ -33,7 +33,10 @@ SET_EXPONENT --- Set the exponent of the model
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SET_EXPONENT(X, I)``
+
+  .. code-block:: fortran
+
+    RESULT = SET_EXPONENT(X, I)
 
   :samp:`{Example}:`
 

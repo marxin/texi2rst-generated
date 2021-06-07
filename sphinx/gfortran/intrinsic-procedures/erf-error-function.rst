@@ -25,7 +25,10 @@ ERF --- Error function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ERF(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ERF(X)
 
   :samp:`{Example}:`
 

@@ -35,9 +35,9 @@ NORM2 --- Euclidean vector norms
 
   :samp:`{Syntax}:`
 
-    ================================
-    ``RESULT = NORM2(ARRAY[, DIM])``
-    ================================
+  .. code-block:: fortran
+
+    RESULT = NORM2(ARRAY[, DIM])
 
   :samp:`{Example}:`
 

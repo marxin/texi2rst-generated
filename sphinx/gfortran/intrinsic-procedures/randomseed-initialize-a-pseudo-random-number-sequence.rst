@@ -38,7 +38,10 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL RANDOM_SEED([SIZE, PUT, GET])``
+
+  .. code-block:: fortran
+
+    CALL RANDOM_SEED([SIZE, PUT, GET])
 
   :samp:`{Example}:`
 

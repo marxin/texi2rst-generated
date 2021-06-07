@@ -37,7 +37,10 @@ SIZEOF --- Size in bytes of an expression
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``N = SIZEOF(X)``
+
+  .. code-block:: fortran
+
+    N = SIZEOF(X)
 
   :samp:`{Example}:`
 

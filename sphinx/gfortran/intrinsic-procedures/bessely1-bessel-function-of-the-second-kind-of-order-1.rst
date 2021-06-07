@@ -30,7 +30,10 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BESSEL_Y1(X)``
+
+  .. code-block:: fortran
+
+    RESULT = BESSEL_Y1(X)
 
   :samp:`{Example}:`
 

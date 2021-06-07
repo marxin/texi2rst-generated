@@ -34,7 +34,10 @@ RSHIFT --- Right shift bits
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = RSHIFT(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = RSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
     ISHFT, 

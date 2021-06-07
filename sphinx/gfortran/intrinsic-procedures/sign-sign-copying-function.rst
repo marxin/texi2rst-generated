@@ -33,7 +33,10 @@ SIGN --- Sign copying function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SIGN(A, B)``
+
+  .. code-block:: fortran
+
+    RESULT = SIGN(A, B)
 
   :samp:`{Example}:`
 

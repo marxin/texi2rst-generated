@@ -24,7 +24,10 @@ PERROR --- Print system error message
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL PERROR(STRING)``
+
+  .. code-block:: fortran
+
+    CALL PERROR(STRING)
 
   :samp:`{See also}:`
     IERRNO

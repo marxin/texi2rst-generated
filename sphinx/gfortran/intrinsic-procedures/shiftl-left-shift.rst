@@ -34,7 +34,10 @@ SHIFTL --- Left shift
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SHIFTL(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = SHIFTL(I, SHIFT)
 
   :samp:`{See also}:`
     SHIFTA, 

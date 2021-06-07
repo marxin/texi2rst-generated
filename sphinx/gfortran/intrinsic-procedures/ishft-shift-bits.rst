@@ -42,7 +42,10 @@ ISHFT --- Shift bits
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ISHFT(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = ISHFT(I, SHIFT)
 
   :samp:`{Specific names}:`
 

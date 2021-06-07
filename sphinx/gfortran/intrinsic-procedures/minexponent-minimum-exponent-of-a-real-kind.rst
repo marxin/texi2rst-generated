@@ -26,7 +26,10 @@ MINEXPONENT --- Minimum exponent of a real kind
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = MINEXPONENT(X)``
+
+  .. code-block:: fortran
+
+    RESULT = MINEXPONENT(X)
 
   :samp:`{Example}:`
     See ``MAXEXPONENT`` for an example.

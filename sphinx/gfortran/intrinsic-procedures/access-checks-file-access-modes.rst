@@ -38,7 +38,10 @@ ACCESS --- Checks file access modes
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = ACCESS(NAME, MODE)``
+
+  .. code-block:: fortran
+
+    RESULT = ACCESS(NAME, MODE)
 
   :samp:`{Example}:`
 

@@ -42,7 +42,10 @@ SELECTED_REAL_KIND --- Choose real kind
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = SELECTED_REAL_KIND([P, R, RADIX])``
+
+  .. code-block:: fortran
+
+    RESULT = SELECTED_REAL_KIND([P, R, RADIX])
 
   :samp:`{Example}:`
 

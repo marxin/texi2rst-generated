@@ -40,7 +40,10 @@ CO_SUM --- Sum of values on the current set of images
     Collective subroutine
 
   :samp:`{Syntax}:`
-    ``CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])``
+
+  .. code-block:: fortran
+
+    CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

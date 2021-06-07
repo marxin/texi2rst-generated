@@ -31,7 +31,10 @@ MASKL --- Left justified mask
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = MASKL(I[, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = MASKL(I[, KIND])
 
   :samp:`{See also}:`
     MASKR

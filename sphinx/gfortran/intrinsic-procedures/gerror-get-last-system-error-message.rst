@@ -22,7 +22,10 @@ GERROR --- Get last system error message
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GERROR(RESULT)``
+
+  .. code-block:: fortran
+
+    CALL GERROR(RESULT)
 
   :samp:`{Example}:`
 

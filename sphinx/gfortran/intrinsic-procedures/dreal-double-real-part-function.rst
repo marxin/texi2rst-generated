@@ -24,7 +24,10 @@ DREAL --- Double real part function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DREAL(A)``
+
+  .. code-block:: fortran
+
+    RESULT = DREAL(A)
 
   :samp:`{Example}:`
 

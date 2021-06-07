@@ -29,7 +29,10 @@ COTAN --- Cotangent function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = COTAN(X)``
+
+  .. code-block:: fortran
+
+    RESULT = COTAN(X)
 
   :samp:`{Example}:`
 

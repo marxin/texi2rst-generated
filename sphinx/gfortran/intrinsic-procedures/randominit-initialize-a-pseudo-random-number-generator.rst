@@ -36,7 +36,10 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)``
+
+  .. code-block:: fortran
+
+    CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 
   :samp:`{Example}:`
 

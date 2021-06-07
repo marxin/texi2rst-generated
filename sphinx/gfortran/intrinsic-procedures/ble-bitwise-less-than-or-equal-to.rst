@@ -29,7 +29,10 @@ BLE --- Bitwise less than or equal to
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BLE(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = BLE(I, J)
 
   :samp:`{See also}:`
     BGT, 

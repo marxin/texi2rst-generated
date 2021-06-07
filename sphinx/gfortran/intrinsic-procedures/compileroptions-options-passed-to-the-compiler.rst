@@ -28,7 +28,10 @@ COMPILER_OPTIONS --- Options passed to the compiler
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
   :samp:`{Syntax}:`
-    ``STR = COMPILER_OPTIONS()``
+
+  .. code-block:: fortran
+
+    STR = COMPILER_OPTIONS()
 
   :samp:`{Arguments}:`
     None

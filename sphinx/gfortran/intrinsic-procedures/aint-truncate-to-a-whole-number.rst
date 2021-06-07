@@ -38,7 +38,10 @@ AINT --- Truncate to a whole number
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = AINT(A [, KIND])`` 
+
+  .. code-block:: fortran
+
+    RESULT = AINT(A [, KIND]) 
 
   :samp:`{Example}:`
 

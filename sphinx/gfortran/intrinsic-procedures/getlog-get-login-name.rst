@@ -29,7 +29,10 @@ GETLOG --- Get login name
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GETLOG(C)``
+
+  .. code-block:: fortran
+
+    CALL GETLOG(C)
 
   :samp:`{Example}:`
 

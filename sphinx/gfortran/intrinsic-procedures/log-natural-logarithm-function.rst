@@ -43,7 +43,10 @@ LOG --- Natural logarithm function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LOG(X)``
+
+  .. code-block:: fortran
+
+    RESULT = LOG(X)
 
   :samp:`{Example}:`
 

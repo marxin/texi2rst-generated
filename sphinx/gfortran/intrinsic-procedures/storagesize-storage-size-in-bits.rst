@@ -24,7 +24,10 @@ STORAGE_SIZE --- Storage size in bits
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = STORAGE_SIZE(A [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = STORAGE_SIZE(A [, KIND])
 
   :samp:`{Return Value}:`
     The result is a scalar integer with the kind type parameter specified by KIND

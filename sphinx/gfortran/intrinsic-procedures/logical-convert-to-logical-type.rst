@@ -30,7 +30,10 @@ LOGICAL --- Convert to logical type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LOGICAL(L [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = LOGICAL(L [, KIND])
 
   :samp:`{See also}:`
     INT, 

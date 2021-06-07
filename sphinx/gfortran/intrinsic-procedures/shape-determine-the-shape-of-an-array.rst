@@ -34,7 +34,10 @@ SHAPE --- Determine the shape of an array
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = SHAPE(SOURCE [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = SHAPE(SOURCE [, KIND])
 
   :samp:`{Example}:`
 

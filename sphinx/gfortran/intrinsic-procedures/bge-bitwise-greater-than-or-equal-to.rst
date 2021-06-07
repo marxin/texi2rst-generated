@@ -29,7 +29,10 @@ BGE --- Bitwise greater than or equal to
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BGE(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = BGE(I, J)
 
   :samp:`{See also}:`
     BGT, 

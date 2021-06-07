@@ -32,7 +32,10 @@ LSHIFT --- Left shift bits
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LSHIFT(I, SHIFT)``
+
+  .. code-block:: fortran
+
+    RESULT = LSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
     ISHFT, 

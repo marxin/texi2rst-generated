@@ -39,7 +39,10 @@ DOT_PRODUCT --- Dot product function
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)``
+
+  .. code-block:: fortran
+
+    RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)
 
   :samp:`{Example}:`
 

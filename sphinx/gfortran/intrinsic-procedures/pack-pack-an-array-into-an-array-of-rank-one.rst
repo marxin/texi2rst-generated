@@ -43,7 +43,10 @@ PACK --- Pack an array into an array of rank one
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = PACK(ARRAY, MASK[,VECTOR])``
+
+  .. code-block:: fortran
+
+    RESULT = PACK(ARRAY, MASK[,VECTOR])
 
   :samp:`{Example}:`
     Gathering nonzero elements from an array:

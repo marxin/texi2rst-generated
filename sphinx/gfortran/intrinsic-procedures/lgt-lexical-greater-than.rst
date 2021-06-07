@@ -34,7 +34,10 @@ LGT --- Lexical greater than
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LGT(STRING_A, STRING_B)``
+
+  .. code-block:: fortran
+
+    RESULT = LGT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
 

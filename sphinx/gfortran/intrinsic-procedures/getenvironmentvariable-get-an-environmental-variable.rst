@@ -51,7 +51,10 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GET_ENVIRONMENT_VARIABLE(NAME[, VALUE, LENGTH, STATUS, TRIM_NAME)``
+
+  .. code-block:: fortran
+
+    CALL GET_ENVIRONMENT_VARIABLE(NAME[, VALUE, LENGTH, STATUS, TRIM_NAME)
 
   :samp:`{Example}:`
 

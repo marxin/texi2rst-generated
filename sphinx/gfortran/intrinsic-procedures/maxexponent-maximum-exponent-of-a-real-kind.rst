@@ -26,7 +26,10 @@ MAXEXPONENT --- Maximum exponent of a real kind
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = MAXEXPONENT(X)``
+
+  .. code-block:: fortran
+
+    RESULT = MAXEXPONENT(X)
 
   :samp:`{Example}:`
 

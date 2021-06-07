@@ -37,7 +37,10 @@ COS --- Cosine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = COS(X)``
+
+  .. code-block:: fortran
+
+    RESULT = COS(X)
 
   :samp:`{Example}:`
 

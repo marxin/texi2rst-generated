@@ -40,7 +40,10 @@ CO_MIN --- Minimal value on the current set of images
     Collective subroutine
 
   :samp:`{Syntax}:`
-    ``CALL CO_MIN(A [, RESULT_IMAGE, STAT, ERRMSG])``
+
+  .. code-block:: fortran
+
+    CALL CO_MIN(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

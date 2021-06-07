@@ -24,7 +24,10 @@ GETUID --- User ID function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = GETUID()``
+
+  .. code-block:: fortran
+
+    RESULT = GETUID()
 
   :samp:`{Example}:`
     See ``GETPID`` for an example.
