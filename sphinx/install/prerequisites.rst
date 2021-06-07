@@ -48,6 +48,7 @@ C standard library and headers
 .. envvar:: GNAT
 
   .. _gnat-prerequisite:
+
   In order to build GNAT, the Ada compiler, you need a working GNAT
   compiler (GCC version 4.7 or later).
 
@@ -130,13 +131,13 @@ Perl version between 5.6.1 and 5.6.24
   Used by :command:`automake`.
 
   Several support libraries are necessary to build GCC, some are required,
-others optional.  While any sufficiently new version of required tools
-usually work, library requirements are generally stricter.  Newer
-versions may work in some cases, but it's safer to use the exact
-versions documented.  We appreciate bug reports about problems with
-newer versions, though.  If your OS vendor provides packages for the
-support libraries then using those packages may be the simplest way to
-install the libraries.
+  others optional.  While any sufficiently new version of required tools
+  usually work, library requirements are generally stricter.  Newer
+  versions may work in some cases, but it's safer to use the exact
+  versions documented.  We appreciate bug reports about problems with
+  newer versions, though.  If your OS vendor provides packages for the
+  support libraries then using those packages may be the simplest way to
+  install the libraries.
 
 GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
   Necessary to build GCC.  If a GMP source distribution is found in a

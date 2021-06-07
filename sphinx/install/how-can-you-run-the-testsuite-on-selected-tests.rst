@@ -33,10 +33,10 @@ single quotes if multiple expressions are desired. For example,
   make check-g++ RUNTESTFLAGS="old-deja.exp=9805*\ virtual2.c other-options"
   make check-g++ RUNTESTFLAGS="'old-deja.exp=9805* virtual2.c' other-options"
 
-The *.exp files are located in the testsuite directories of the GCC
+The \*.exp files are located in the testsuite directories of the GCC
 source, the most important ones being compile.exp,
 execute.exp, dg.exp and old-deja.exp.
-To get a list of the possible *.exp files, pipe the
+To get a list of the possible \*.exp files, pipe the
 output of :samp:`make check` into a file and look at the
 :samp:`Running ...  .exp` lines.
 

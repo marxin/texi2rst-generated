@@ -179,9 +179,9 @@ There are a few different CRIS targets:
   :samp:`ETRAX 100 LX` by default.
 
   Pre-packaged tools can be obtained from
-ftp://ftp.axis.com/pub/axis/tools/cris/compiler-kit/.  More
-information about this platform is available at
-http://developer.axis.com/.
+  ftp://ftp.axis.com/pub/axis/tools/cris/compiler-kit/.  More
+  information about this platform is available at
+  http://developer.axis.com/.
 
 DOS
 ===
@@ -577,6 +577,7 @@ fix for another AIX Assembler bug and a co-dependent AIX Archiver fix
 referenced as APAR IY53606 (AIX 5.2) or as APAR IY54774 (AIX 5.1)
 
 .. _transferaixshobj:
+
 :samp:`libstdc++` in GCC 3.4 increments the major version number of the
 shared object and GCC installation places the libstdc++.a
 shared library in a common location which will overwrite the and GCC
@@ -1214,7 +1215,7 @@ shared objects and the GNU C library (glibc).  It also generates
 position-independent code (PIC) regardless of whether the
 :option:`-fpic` or :option:`-fPIC` options are used.  In other
 respects, this target is the same as the
-#xtensa*-*-elf:samp:`xtensa*-*-elf` target.
+#xtensa\*-\*-elf:samp:`xtensa*-*-elf` target.
 
 Microsoft Windows
 =================
@@ -1230,10 +1231,10 @@ XP, and Windows Vista, are supported by several different target
 platforms.  These targets differ in which Windows subsystem they target
 and which C libraries are used.
 
-* Cygwin #x-x-cygwin*-*-cygwin: Cygwin provides a user-space
+* Cygwin #x-x-cygwin\*-\*-cygwin: Cygwin provides a user-space
   Linux API emulation layer in the Win32 subsystem.
 
-* MinGW #x-x-mingw32*-*-mingw32: MinGW is a native GCC port for
+* MinGW #x-x-mingw32\*-\*-mingw32: MinGW is a native GCC port for
   the Win32 subsystem that provides a subset of POSIX.
 
 * MKS i386-pc-mks: NuTCracker from MKS.  See

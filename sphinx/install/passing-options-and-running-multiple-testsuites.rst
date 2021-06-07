@@ -34,6 +34,7 @@ target, as if you had specified all possible combinations yourself:
                 arm :option:`-sim/-msoft-float/-O2` \
                 arm :option:`-sim/-msoft-float/-O3` \
                 arm :option:`-sim/-msoft-float'`
+
 They can be combined as many times as you wish, in arbitrary ways.  This
 list:
 
