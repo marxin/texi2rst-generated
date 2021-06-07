@@ -8,11 +8,13 @@ Description
   for the device type specified in :samp:`{devicetype}`. 
 
 :samp:`{C/C++}:`
+
   ============  =====================================================
   *Prototype*:  ``int acc_get_num_devices(acc_device_t devicetype);``
   ============  =====================================================
 
 :samp:`{Fortran}:`
+
   ============  ====================================================
   *Interface*:  ``integer function acc_get_num_devices(devicetype)``
                 ``integer(kind=acc_device_kind) devicetype``

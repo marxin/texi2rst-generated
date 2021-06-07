@@ -13,6 +13,7 @@ Description
   The return value is not specified.
 
 :samp:`{C/C++}:`
+
   ============  =====================================================
   *Prototype*:  ``int acc_set_cuda_stream(int async, void *stream);``
   ============  =====================================================

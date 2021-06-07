@@ -47,6 +47,7 @@ MINVAL --- Minimum value of an array
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``RESULT = MINVAL(ARRAY, DIM [, MASK])``
     ``RESULT = MINVAL(ARRAY [, MASK])``

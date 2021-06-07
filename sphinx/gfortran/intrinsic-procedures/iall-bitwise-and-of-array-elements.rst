@@ -36,6 +36,7 @@ IALL --- Bitwise AND of array elements
     Transformational function
 
   :samp:`{Syntax}:`
+
     =====================================
     ``RESULT = IALL(ARRAY[, MASK])``
     ``RESULT = IALL(ARRAY, DIM[, MASK])``

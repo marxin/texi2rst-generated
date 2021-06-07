@@ -10,11 +10,13 @@ omp_get_cancellation -- Whether cancellation support is enabled
   deactivated.
 
 :samp:`{C/C++}:`
+
   ============  ===================================
   *Prototype*:  ``int omp_get_cancellation(void);``
   ============  ===================================
 
 :samp:`{Fortran}:`
+
   ============  ===========================================
   *Interface*:  ``logical function omp_get_cancellation()``
   ============  ===========================================

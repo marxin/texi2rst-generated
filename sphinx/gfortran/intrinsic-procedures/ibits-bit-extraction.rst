@@ -48,6 +48,7 @@ IBITS --- Bit extraction
     ``RESULT = IBITS(I, POS, LEN)``
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     ``IBITS(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later

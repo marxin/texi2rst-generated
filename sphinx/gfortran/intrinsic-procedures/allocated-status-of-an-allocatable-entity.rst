@@ -31,6 +31,7 @@ ALLOCATED --- Status of an allocatable entity
     Inquiry function
 
   :samp:`{Syntax}:`
+
     ==============================
     ``RESULT = ALLOCATED(ARRAY)``
     ``RESULT = ALLOCATED(SCALAR)``

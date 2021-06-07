@@ -7,6 +7,7 @@ Description
   Free previously allocated device memory at the device address ``a``.
 
 :samp:`{C/C++}:`
+
   ============  ========================
   *Prototype*:  ``acc_free(d_void *a);``
   ============  ========================

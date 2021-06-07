@@ -46,6 +46,7 @@ IOR --- Bitwise logical or
     ``RESULT = IOR(I, J)``
 
   :samp:`{Specific names}:`
+
     ===========  ================  ==============  ====================
     Name         Argument          Return type     Standard
     ``IOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later

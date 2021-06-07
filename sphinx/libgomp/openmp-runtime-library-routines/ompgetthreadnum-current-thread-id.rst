@@ -11,11 +11,13 @@ omp_get_thread_num -- Current thread ID
   value of the master thread of a team is always 0.
 
 :samp:`{C/C++}:`
+
   ============  =================================
   *Prototype*:  ``int omp_get_thread_num(void);``
   ============  =================================
 
 :samp:`{Fortran}:`
+
   ============  =========================================
   *Interface*:  ``integer function omp_get_thread_num()``
   ============  =========================================

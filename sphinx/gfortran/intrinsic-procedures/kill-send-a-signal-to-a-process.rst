@@ -36,6 +36,7 @@ KILL --- Send a signal to a process
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ==================================
     ``CALL KILL(PID, SIG [, STATUS])``
     ``STATUS = KILL(PID, SIG)``

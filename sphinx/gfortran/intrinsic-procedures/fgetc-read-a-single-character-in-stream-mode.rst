@@ -36,6 +36,7 @@ FGETC --- Read a single character in stream mode
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ==================================
     ``CALL FGETC(UNIT, C [, STATUS])``
     ``STATUS = FGETC(UNIT, C)``

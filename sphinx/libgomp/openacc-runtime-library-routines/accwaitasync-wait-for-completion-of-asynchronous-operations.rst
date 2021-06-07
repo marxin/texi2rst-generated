@@ -8,11 +8,13 @@ Description
   asynchronous operations enqueued on queue :samp:`{arg}`.
 
 :samp:`{C/C++}:`
+
   ============  =======================================
   *Prototype*:  ``acc_wait_async(int arg, int async);``
   ============  =======================================
 
 :samp:`{Fortran}:`
+
   ============  =========================================
   *Interface*:  ``subroutine acc_wait_async(arg, async)``
                 ``integer(acc_handle_kind) arg, async``

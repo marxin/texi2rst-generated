@@ -35,6 +35,7 @@ SYMLNK --- Create a symbolic link
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``CALL SYMLNK(PATH1, PATH2 [, STATUS])``
     ``STATUS = SYMLNK(PATH1, PATH2)``

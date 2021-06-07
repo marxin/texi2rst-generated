@@ -34,6 +34,7 @@ NORM2 --- Euclidean vector norms
     Transformational function
 
   :samp:`{Syntax}:`
+
     ================================
     ``RESULT = NORM2(ARRAY[, DIM])``
     ================================

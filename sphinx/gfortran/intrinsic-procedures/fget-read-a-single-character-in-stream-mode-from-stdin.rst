@@ -33,6 +33,7 @@ FGET --- Read a single character in stream mode from stdin
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ===========================
     ``CALL FGET(C [, STATUS])``
     ``STATUS = FGET(C)``

@@ -47,6 +47,7 @@ SIN --- Sine function
       end program test_sin
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ``SIN(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later

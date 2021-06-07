@@ -8,6 +8,7 @@ Description
   host address specified by :samp:`{h}`.
 
 :samp:`{C/C++}:`
+
   ============  ===================================
   *Prototype*:  ``void *acc_deviceptr(h_void *h);``
   ============  ===================================

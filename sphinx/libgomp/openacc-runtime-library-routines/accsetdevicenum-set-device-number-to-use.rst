@@ -9,11 +9,13 @@ Description
   type :samp:`{devicetype}`.
 
 :samp:`{C/C++}:`
+
   ============  ===============================================================
   *Prototype*:  ``acc_set_device_num(int devicenum, acc_device_t devicetype);``
   ============  ===============================================================
 
 :samp:`{Fortran}:`
+
   ============  ========================================================
   *Interface*:  ``subroutine acc_set_device_num(devicenum, devicetype)``
                 ``integer devicenum``

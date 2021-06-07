@@ -57,6 +57,7 @@ LOG --- Natural logarithm function
       end program test_log
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ===================
     Name          Argument          Return type     Standard
     ``ALOG(X)``   ``REAL(4) X``     ``REAL(4)``     Fortran 77 or later

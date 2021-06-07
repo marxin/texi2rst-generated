@@ -49,6 +49,7 @@ COS --- Cosine function
       end program test_cos
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ``COS(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later

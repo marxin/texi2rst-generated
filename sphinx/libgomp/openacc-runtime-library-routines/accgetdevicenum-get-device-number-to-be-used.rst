@@ -9,11 +9,13 @@ Description
   region.
 
 :samp:`{C/C++}:`
+
   ============  ====================================================
   *Prototype*:  ``int acc_get_device_num(acc_device_t devicetype);``
   ============  ====================================================
 
 :samp:`{Fortran}:`
+
   ============  ============================================
   *Interface*:  ``function acc_get_device_num(devicetype)``
                 ``integer(kind=acc_device_kind) devicetype``

@@ -8,6 +8,7 @@ Description
   address to pointing to the corresponding host data.
 
 :samp:`{C/C++}:`
+
   ============  =======================================================
   *Prototype*:  ``acc_detach(h_void **ptr);``
   *Prototype*:  ``acc_detach_async(h_void **ptr, int async);``

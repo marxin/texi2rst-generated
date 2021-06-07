@@ -8,11 +8,13 @@ Description
   in :samp:`{devicetype}`, to use when executing a parallel or kernels region. 
 
 :samp:`{C/C++}:`
+
   ============  =================================================
   *Prototype*:  ``acc_set_device_type(acc_device_t devicetype);``
   ============  =================================================
 
 :samp:`{Fortran}:`
+
   ============  ==============================================
   *Interface*:  ``subroutine acc_set_device_type(devicetype)``
                 ``integer(kind=acc_device_kind) devicetype``

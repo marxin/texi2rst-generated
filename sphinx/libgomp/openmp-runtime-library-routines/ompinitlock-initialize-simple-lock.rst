@@ -8,11 +8,13 @@ omp_init_lock -- Initialize simple lock
   an unlocked state.
 
 :samp:`{C/C++}:`
+
   ============  =========================================
   *Prototype*:  ``void omp_init_lock(omp_lock_t *lock);``
   ============  =========================================
 
 :samp:`{Fortran}:`
+
   ============  ===============================================
   *Interface*:  ``subroutine omp_init_lock(svar)``
                 ``integer(omp_lock_kind), intent(out) :: svar``

@@ -15,11 +15,13 @@ omp_get_num_threads -- Size of the active team
   one thread per CPU online is used.
 
 :samp:`{C/C++}:`
+
   ============  ==================================
   *Prototype*:  ``int omp_get_num_threads(void);``
   ============  ==================================
 
 :samp:`{Fortran}:`
+
   ============  ==========================================
   *Interface*:  ``integer function omp_get_num_threads()``
   ============  ==========================================

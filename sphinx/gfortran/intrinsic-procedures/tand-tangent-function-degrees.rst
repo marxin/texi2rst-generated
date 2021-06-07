@@ -40,6 +40,7 @@ TAND --- Tangent function, degrees
       end program test_tand
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  =============
     Name          Argument       Return type  Standard
     ``TAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension

@@ -47,6 +47,7 @@ SIND --- Sine function, degrees
       end program test_sind
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
     ``SIND(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension

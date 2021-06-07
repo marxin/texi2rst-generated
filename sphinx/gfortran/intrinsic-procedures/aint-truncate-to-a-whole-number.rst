@@ -54,6 +54,7 @@ AINT --- Truncate to a whole number
       end program test_aint
 
   :samp:`{Specific names}:`
+
     ===========  =============  ===========  ====================
     Name         Argument       Return type  Standard
     ``AINT(A)``  ``REAL(4) A``  ``REAL(4)``  Fortran 77 and later

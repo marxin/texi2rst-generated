@@ -40,6 +40,7 @@ Field                    Size (bits)
 ``block``                63
 Total size               32 bytes
 =======================  ===========
+
 * ``code``
   Main identifier for a GIMPLE instruction.
 
@@ -138,6 +139,7 @@ is then inherited from the other two tuples.
 ``op``       ``num_ops`` * 64
 Total size   48 + 8 * ``num_ops`` bytes
 ===========  ==========================
+
 * ``gsbase``
   Inherited from ``struct gimple``.
 
@@ -176,6 +178,7 @@ Field         Size (bits)
 ``op``        ``num_ops`` * 64
 Total size    80 + 8 * ``num_ops`` bytes
 ============  ==========================
+
 * ``vdef_ops``
   Similar to ``def_ops`` but for ``VDEF`` operators. There is
   one entry per memory symbol written by this statement. This is

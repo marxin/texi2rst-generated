@@ -43,6 +43,7 @@ ASIN --- Arcsine function
       end program test_asin
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ``ASIN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later

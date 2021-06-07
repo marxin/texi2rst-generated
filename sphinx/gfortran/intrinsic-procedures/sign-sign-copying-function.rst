@@ -50,6 +50,7 @@ SIGN --- Sign copying function
       end program test_sign
 
   :samp:`{Specific names}:`
+
     ==============  ===================  ==============  ====================
     Name            Arguments            Return type     Standard
     ``SIGN(A,B)``   ``REAL(4) A, B``     ``REAL(4)``     Fortran 77 and later

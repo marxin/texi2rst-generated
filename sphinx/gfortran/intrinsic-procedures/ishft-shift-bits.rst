@@ -45,6 +45,7 @@ ISHFT --- Shift bits
     ``RESULT = ISHFT(I, SHIFT)``
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     ``ISHFT(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later

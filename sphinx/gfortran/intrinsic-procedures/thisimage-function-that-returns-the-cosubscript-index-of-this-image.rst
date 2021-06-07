@@ -46,6 +46,7 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``RESULT = THIS_IMAGE()``
     ``RESULT = THIS_IMAGE(DISTANCE)``

@@ -34,6 +34,7 @@ DTIME --- Execution time subroutine (or function)
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ============================================
     ``CALL DTIME(VALUES, TIME)``.
     ``TIME = DTIME(VALUES)``, (not recommended).

@@ -10,11 +10,13 @@ omp_get_ancestor_thread_num -- Ancestor thread ID
   ``omp_get_level`` the result is identical to ``omp_get_thread_num``.
 
 C/C++
+
   ============  ===============================================
   *Prototype*:  ``int omp_get_ancestor_thread_num(int level);``
   ============  ===============================================
 
 :samp:`{Fortran}:`
+
   ============  =======================================================
   *Interface*:  ``integer function omp_get_ancestor_thread_num(level)``
                 ``integer level``

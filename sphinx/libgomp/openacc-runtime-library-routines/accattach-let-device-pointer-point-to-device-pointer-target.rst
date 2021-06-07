@@ -8,6 +8,7 @@ Description
   address to pointing to the corresponding device data.
 
 :samp:`{C/C++}:`
+
   ============  ==============================================
   *Prototype*:  ``acc_attach(h_void **ptr);``
   *Prototype*:  ``acc_attach_async(h_void **ptr, int async);``

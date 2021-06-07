@@ -7,6 +7,7 @@ acc_prof_register -- Register callbacks.
   This function registers callbacks.
 
 :samp:`{C/C++}:`
+
   ============  ============================================================================
   *Prototype*:  ``void acc_prof_register (acc_event_t, acc_prof_callback, acc_register_t);``
   ============  ============================================================================

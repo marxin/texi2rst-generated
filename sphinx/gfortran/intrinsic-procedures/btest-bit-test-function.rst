@@ -53,6 +53,7 @@ BTEST --- Bit test function
       end program test_btest
 
   :samp:`{Specific names}:`
+
     =================  ====================  ==============  ====================
     Name               Argument              Return type     Standard
     ``BTEST(I,POS)``   ``INTEGER I,POS``     ``LOGICAL``     Fortran 95 and later

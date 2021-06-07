@@ -24,11 +24,13 @@ omp_get_nested -- Nested parallel regions
   above one to enable.
 
 :samp:`{C/C++}:`
+
   ============  =============================
   *Prototype*:  ``int omp_get_nested(void);``
   ============  =============================
 
 :samp:`{Fortran}:`
+
   ============  =====================================
   *Interface*:  ``logical function omp_get_nested()``
   ============  =====================================

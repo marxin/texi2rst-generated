@@ -33,6 +33,7 @@ FPUT --- Write a single character in stream mode to stdout
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ===========================
     ``CALL FPUT(C [, STATUS])``
     ``STATUS = FPUT(C)``

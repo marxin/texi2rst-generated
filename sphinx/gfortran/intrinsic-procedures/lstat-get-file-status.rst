@@ -31,6 +31,7 @@ LSTAT --- Get file status
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =======================================
     ``CALL LSTAT(NAME, VALUES [, STATUS])``
     ``STATUS = LSTAT(NAME, VALUES)``

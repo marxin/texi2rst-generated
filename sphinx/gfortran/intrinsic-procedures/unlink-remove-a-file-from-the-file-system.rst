@@ -28,6 +28,7 @@ UNLINK --- Remove a file from the file system
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ================================
     ``CALL UNLINK(PATH [, STATUS])``
     ``STATUS = UNLINK(PATH)``

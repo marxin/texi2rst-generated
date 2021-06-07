@@ -9,11 +9,13 @@ omp_in_parallel -- Whether a parallel region is active
   their language-specific counterparts.
 
 :samp:`{C/C++}:`
+
   ============  ==============================
   *Prototype*:  ``int omp_in_parallel(void);``
   ============  ==============================
 
 :samp:`{Fortran}:`
+
   ============  ======================================
   *Interface*:  ``logical function omp_in_parallel()``
   ============  ======================================

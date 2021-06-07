@@ -37,6 +37,7 @@ ERF --- Error function
       end program test_erf
 
   :samp:`{Specific names}:`
+
     ===========  =============  ===========  =============
     Name         Argument       Return type  Standard
     ``DERF(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension

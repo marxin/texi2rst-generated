@@ -32,6 +32,7 @@ RENAME --- Rename a file
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``CALL RENAME(PATH1, PATH2 [, STATUS])``
     ``STATUS = RENAME(PATH1, PATH2)``

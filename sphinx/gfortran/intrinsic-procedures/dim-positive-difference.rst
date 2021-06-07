@@ -50,6 +50,7 @@ DIM --- Positive difference
       end program test_dim
 
   :samp:`{Specific names}:`
+
     =============  ===================  ==============  ====================
     Name           Argument             Return type     Standard
     ``DIM(X,Y)``   ``REAL(4) X, Y``     ``REAL(4)``     Fortran 77 and later

@@ -12,6 +12,7 @@ Description
   array element and :samp:`{len}` specifies the length in bytes.
 
 :samp:`{C/C++}:`
+
   ============  =================================================================
   *Prototype*:  ``acc_copyout(h_void *a, size_t len);``
   *Prototype*:  ``acc_copyout_async(h_void *a, size_t len, int async);``
@@ -20,6 +21,7 @@ Description
   ============  =================================================================
 
 :samp:`{Fortran}:`
+
   ============  ========================================================
   *Interface*:  ``subroutine acc_copyout(a)``
                 ``type, dimension(:[,:]...) :: a``

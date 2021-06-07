@@ -44,6 +44,7 @@ MIN --- Minimum value of an argument list
     ``RESULT = MIN(A1, A2 [, A3, ...])``
 
   :samp:`{Specific names}:`
+
     =============  =================  ==============  ====================
     Name           Argument           Return type     Standard
     ``MIN0(A1)``   ``INTEGER(4) A1``  ``INTEGER(4)``  Fortran 77 and later

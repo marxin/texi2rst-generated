@@ -12,11 +12,13 @@ acc_on_device -- Whether executing on a particular device
   return ``false``.
 
 :samp:`{C/C++}:`
+
   ============  ===========================================
   *Prototype*:  ``acc_on_device(acc_device_t devicetype);``
   ============  ===========================================
 
 :samp:`{Fortran}:`
+
   ============  =======================================
   *Interface*:  ``function acc_on_device(devicetype)``
                 ``integer(acc_device_kind) devicetype``

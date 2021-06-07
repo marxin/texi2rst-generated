@@ -34,6 +34,7 @@ CTIME --- Convert a time into a string
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =============================
     ``CALL CTIME(TIME, RESULT)``.
     ``RESULT = CTIME(TIME)``.

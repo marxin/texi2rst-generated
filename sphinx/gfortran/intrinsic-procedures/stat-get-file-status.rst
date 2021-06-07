@@ -31,6 +31,7 @@ STAT --- Get file status
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ======================================
     ``CALL STAT(NAME, VALUES [, STATUS])``
     ``STATUS = STAT(NAME, VALUES)``

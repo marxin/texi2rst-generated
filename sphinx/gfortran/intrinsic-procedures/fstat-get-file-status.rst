@@ -29,6 +29,7 @@ FSTAT --- Get file status
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =======================================
     ``CALL FSTAT(UNIT, VALUES [, STATUS])``
     ``STATUS = FSTAT(UNIT, VALUES)``

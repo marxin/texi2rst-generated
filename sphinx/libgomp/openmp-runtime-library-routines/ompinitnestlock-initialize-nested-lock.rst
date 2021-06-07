@@ -8,11 +8,13 @@ omp_init_nest_lock -- Initialize nested lock
   an unlocked state and the nesting count is set to zero.
 
 :samp:`{C/C++}:`
+
   ============  ===================================================
   *Prototype*:  ``void omp_init_nest_lock(omp_nest_lock_t *lock);``
   ============  ===================================================
 
 :samp:`{Fortran}:`
+
   ============  ====================================================
   *Interface*:  ``subroutine omp_init_nest_lock(nvar)``
                 ``integer(omp_nest_lock_kind), intent(out) :: nvar``

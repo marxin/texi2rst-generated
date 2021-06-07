@@ -17,11 +17,13 @@ Description
   a ``false`` is return to indicate the mapped memory is not present.
 
 :samp:`{C/C++}:`
+
   ============  ==============================================
   *Prototype*:  ``int acc_is_present(h_void *a, size_t len);``
   ============  ==============================================
 
 :samp:`{Fortran}:`
+
   ============  ===================================
   *Interface*:  ``function acc_is_present(a)``
                 ``type, dimension(:[,:]...) :: a``

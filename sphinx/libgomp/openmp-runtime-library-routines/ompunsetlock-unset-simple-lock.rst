@@ -11,11 +11,13 @@ omp_unset_lock -- Unset simple lock
   again, set the lock to itself.
 
 :samp:`{C/C++}:`
+
   ============  ==========================================
   *Prototype*:  ``void omp_unset_lock(omp_lock_t *lock);``
   ============  ==========================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================
   *Interface*:  ``subroutine omp_unset_lock(svar)``
                 ``integer(omp_lock_kind), intent(inout) :: svar``

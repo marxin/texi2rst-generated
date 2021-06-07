@@ -34,6 +34,7 @@ PARITY --- Reduction with exclusive OR
     Transformational function
 
   :samp:`{Syntax}:`
+
     ================================
     ``RESULT = PARITY(MASK[, DIM])``
     ================================

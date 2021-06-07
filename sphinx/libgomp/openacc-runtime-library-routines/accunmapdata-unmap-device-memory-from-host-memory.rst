@@ -8,6 +8,7 @@ Description
   specified by :samp:`{h}`.
 
 :samp:`{C/C++}:`
+
   ============  ==============================
   *Prototype*:  ``acc_unmap_data(h_void *h);``
   ============  ==============================

@@ -11,11 +11,13 @@ omp_test_nest_lock -- Test and set nested lock if available
   is returned.  Otherwise, the return value equals zero.
 
 :samp:`{C/C++}:`
+
   ============  ==================================================
   *Prototype*:  ``int omp_test_nest_lock(omp_nest_lock_t *lock);``
   ============  ==================================================
 
 :samp:`{Fortran}:`
+
   ============  ======================================================
   *Interface*:  ``logical function omp_test_nest_lock(nvar)``
                 ``integer(omp_nest_lock_kind), intent(inout) :: nvar``

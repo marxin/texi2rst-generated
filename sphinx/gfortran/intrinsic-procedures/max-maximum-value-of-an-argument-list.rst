@@ -44,6 +44,7 @@ MAX --- Maximum value of an argument list
     ``RESULT = MAX(A1, A2 [, A3 [, ...]])``
 
   :samp:`{Specific names}:`
+
     =============  =================  ================  ====================
     Name           Argument           Return type       Standard
     ``MAX0(A1)``   ``INTEGER(4) A1``  ``INTEGER(4)``    Fortran 77 and later

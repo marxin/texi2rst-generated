@@ -375,6 +375,7 @@ Original   Mangled
 ``P4_g>``  ``P4__g_g`` 
            ..  c
 =========  ============
+
 Throughout this section, the variable :samp:`{c}` is either a constraint
 in the abstract sense, or a constant from ``enum constraint_num`` ;
 the variable :samp:`{m}` is a mangled constraint name (usually as part of

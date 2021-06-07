@@ -9,11 +9,13 @@ omp_in_final -- Whether in final or included task region
   and ``false`` represent their language-specific counterparts.
 
 :samp:`{C/C++}:`
+
   ============  ===========================
   *Prototype*:  ``int omp_in_final(void);``
   ============  ===========================
 
 :samp:`{Fortran}:`
+
   ============  ===================================
   *Interface*:  ``logical function omp_in_final()``
   ============  ===================================

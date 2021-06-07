@@ -44,6 +44,7 @@ ACOSD --- Arccosine function, degrees
       end program test_acosd
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     ``ACOSD(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension

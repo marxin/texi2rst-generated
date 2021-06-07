@@ -7,11 +7,13 @@ omp_get_thread_limit -- Maximum number of threads
   Return the maximum number of threads of the program.
 
 :samp:`{C/C++}:`
+
   ============  ===================================
   *Prototype*:  ``int omp_get_thread_limit(void);``
   ============  ===================================
 
 :samp:`{Fortran}:`
+
   ============  ===========================================
   *Interface*:  ``integer function omp_get_thread_limit()``
   ============  ===========================================

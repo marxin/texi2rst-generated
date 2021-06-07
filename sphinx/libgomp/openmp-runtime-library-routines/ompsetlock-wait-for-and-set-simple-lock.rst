@@ -10,11 +10,13 @@ omp_set_lock -- Wait for and set simple lock
   a deadlock occurs.
 
 :samp:`{C/C++}:`
+
   ============  ========================================
   *Prototype*:  ``void omp_set_lock(omp_lock_t *lock);``
   ============  ========================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================
   *Interface*:  ``subroutine omp_set_lock(svar)``
                 ``integer(omp_lock_kind), intent(inout) :: svar``

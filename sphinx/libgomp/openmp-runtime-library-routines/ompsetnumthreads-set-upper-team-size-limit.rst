@@ -9,11 +9,13 @@ omp_set_num_threads -- Set upper team size limit
   argument of ``omp_set_num_threads`` shall be a positive integer.
 
 :samp:`{C/C++}:`
+
   ============  ==============================================
   *Prototype*:  ``void omp_set_num_threads(int num_threads);``
   ============  ==============================================
 
 :samp:`{Fortran}:`
+
   ============  ===============================================
   *Interface*:  ``subroutine omp_set_num_threads(num_threads)``
                 ``integer, intent(in) :: num_threads``

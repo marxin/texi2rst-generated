@@ -41,6 +41,7 @@ PRODUCT --- Product of array elements
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``RESULT = PRODUCT(ARRAY[, MASK])``
     ``RESULT = PRODUCT(ARRAY, DIM[, MASK])``

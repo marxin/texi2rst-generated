@@ -35,6 +35,7 @@ FDATE --- Get the current time as a string
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =====================
     ``CALL FDATE(DATE)``.
     ``DATE = FDATE()``.

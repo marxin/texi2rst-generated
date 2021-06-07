@@ -15,6 +15,7 @@ Syntax
   ``int quadmath_snprintf (char *s, size_t size, const char *format, ...)``
 
 :samp:`{Arguments}:`
+
   ================  ==============================================
   :samp:`{s}`       output string
   :samp:`{size}`    byte size of the string, including tailing NUL

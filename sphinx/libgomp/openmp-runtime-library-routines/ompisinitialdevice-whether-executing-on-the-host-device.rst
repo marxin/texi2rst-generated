@@ -9,11 +9,13 @@ omp_is_initial_device -- Whether executing on the host device
   their language-specific counterparts.
 
 :samp:`{C/C++}:`
+
   ============  ====================================
   *Prototype*:  ``int omp_is_initial_device(void);``
   ============  ====================================
 
 :samp:`{Fortran}:`
+
   ============  ============================================
   *Interface*:  ``logical function omp_is_initial_device()``
   ============  ============================================

@@ -62,6 +62,7 @@ MINLOC --- Location of the minimum value within an array
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================================
     ``RESULT = MINLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])``
     ``RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])``

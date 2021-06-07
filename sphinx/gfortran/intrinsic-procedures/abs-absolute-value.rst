@@ -61,6 +61,7 @@ ABS --- Absolute value
       end program test_abs
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ``ABS(A)``    ``REAL(4) A``     ``REAL(4)``     Fortran 77 and later

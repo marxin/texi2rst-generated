@@ -12,11 +12,13 @@ omp_set_schedule -- Set the runtime scheduling method
   For ``omp_sched_auto`` the :samp:`{chunk_size}` argument is ignored.
 
 C/C++
+
   ============  ============================================================
   *Prototype*:  ``void omp_set_schedule(omp_sched_t kind, int chunk_size);``
   ============  ============================================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================
   *Interface*:  ``subroutine omp_set_schedule(kind, chunk_size)``
                 ``integer(kind=omp_sched_kind) kind``

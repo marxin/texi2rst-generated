@@ -1392,6 +1392,7 @@ compile flag :option:`-fdec`, for compatibility.
   ``'FORTRAN'``  Legacy interpretation of the first character (see below)
   ``'NONE'``     No separator between records
   =============  ========================================================
+
   With ``CARRIAGECONTROL='FORTRAN'``, when a record is written, the first
   character of the input record is not written, and instead determines the output
   record separator as follows:

@@ -8,11 +8,13 @@ omp_set_default_device -- Set the default device for target regions
   shall be a nonnegative device number.
 
 :samp:`{C/C++}:`
+
   ============  ================================================
   *Prototype*:  ``void omp_set_default_device(int device_num);``
   ============  ================================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================
   *Interface*:  ``subroutine omp_set_default_device(device_num)``
                 ``integer device_num``

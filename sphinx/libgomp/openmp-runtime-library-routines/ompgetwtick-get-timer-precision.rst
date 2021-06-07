@@ -8,11 +8,13 @@ omp_get_wtick -- Get timer precision
   successive clock ticks.
 
 :samp:`{C/C++}:`
+
   ============  ===============================
   *Prototype*:  ``double omp_get_wtick(void);``
   ============  ===============================
 
 :samp:`{Fortran}:`
+
   ============  =============================================
   *Interface*:  ``double precision function omp_get_wtick()``
   ============  =============================================

@@ -14,11 +14,13 @@ omp_set_nested -- Enable/disable nested parallel regions
   regions will set the maximum number of active nested regions to one.
 
 :samp:`{C/C++}:`
+
   ============  ====================================
   *Prototype*:  ``void omp_set_nested(int nested);``
   ============  ====================================
 
 :samp:`{Fortran}:`
+
   ============  =====================================
   *Interface*:  ``subroutine omp_set_nested(nested)``
                 ``logical, intent(in) :: nested``

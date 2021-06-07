@@ -42,6 +42,7 @@ CHAR --- Character conversion function
       end program test_char
 
   :samp:`{Specific names}:`
+
     ===========  =============  ====================  ====================
     Name         Argument       Return type           Standard
     ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later

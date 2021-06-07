@@ -65,6 +65,7 @@ FINDLOC --- Search an array for a value
     Transformational function
 
   :samp:`{Syntax}:`
+
     ================================================================
     ``RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])``
     ``RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])``

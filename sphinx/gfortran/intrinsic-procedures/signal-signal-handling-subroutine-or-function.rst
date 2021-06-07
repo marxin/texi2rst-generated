@@ -37,6 +37,7 @@ SIGNAL --- Signal handling subroutine (or function)
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ===========================================
     ``CALL SIGNAL(NUMBER, HANDLER [, STATUS])``
     ``STATUS = SIGNAL(NUMBER, HANDLER)``

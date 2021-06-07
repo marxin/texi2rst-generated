@@ -43,6 +43,7 @@ BESSEL_YN --- Bessel function of the second kind
     ``BESSEL_YN(N1, N2, X)``
 
   :samp:`{Syntax}:`
+
     =================================
     ``RESULT = BESSEL_YN(N, X)``
     ``RESULT = BESSEL_YN(N1, N2, X)``
@@ -63,6 +64,7 @@ BESSEL_YN --- Bessel function of the second kind
       end program test_besyn
 
   :samp:`{Specific names}:`
+
     ===============  =============  ===========  =============
     Name             Argument       Return type  Standard
     ``DBESYN(N,X)``  ``INTEGER N``  ``REAL(8)``  GNU extension

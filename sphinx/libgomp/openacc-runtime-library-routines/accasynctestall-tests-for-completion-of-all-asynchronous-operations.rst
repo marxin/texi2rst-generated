@@ -11,11 +11,13 @@ Description
   Fortran returns a ``false``.
 
 :samp:`{C/C++}:`
+
   ============  =================================
   *Prototype*:  ``int acc_async_test_all(void);``
   ============  =================================
 
 :samp:`{Fortran}:`
+
   ============  ==============================
   *Interface*:  ``function acc_async_test()``
                 ``logical acc_get_device_num``

@@ -8,11 +8,13 @@ omp_destroy_nest_lock -- Destroy nested lock
   in the unlocked state and its nesting count must equal zero.
 
 :samp:`{C/C++}:`
+
   ============  ==================================================
   *Prototype*:  ``void omp_destroy_nest_lock(omp_nest_lock_t *);``
   ============  ==================================================
 
 :samp:`{Fortran}:`
+
   ============  ======================================================
   *Interface*:  ``subroutine omp_destroy_nest_lock(nvar)``
                 ``integer(omp_nest_lock_kind), intent(inout) :: nvar``

@@ -28,6 +28,7 @@ SYSTEM --- Execute a shell command
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ===================================
     ``CALL SYSTEM(COMMAND [, STATUS])``
     ``STATUS = SYSTEM(COMMAND)``

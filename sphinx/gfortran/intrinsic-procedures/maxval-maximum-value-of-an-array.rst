@@ -47,6 +47,7 @@ MAXVAL --- Maximum value of an array
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``RESULT = MAXVAL(ARRAY, DIM [, MASK])``
     ``RESULT = MAXVAL(ARRAY [, MASK])``

@@ -9,6 +9,7 @@ Description
   specified with the host address :samp:`{h}` and a length of :samp:`{len}`.
 
 :samp:`{C/C++}:`
+
   ============  ===================================================
   *Prototype*:  ``acc_map_data(h_void *h, d_void *d, size_t len);``
   ============  ===================================================
