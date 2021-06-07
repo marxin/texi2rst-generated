@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _co_max:
 
 CO_MAX --- Maximal value on the current set of images

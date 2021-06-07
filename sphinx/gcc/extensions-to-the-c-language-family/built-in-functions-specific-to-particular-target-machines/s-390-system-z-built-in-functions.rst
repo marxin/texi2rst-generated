@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _s-390-system-z-built-in-functions:
 
 S/390 System z Built-in Functions

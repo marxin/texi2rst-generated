@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _objective-c-and-objective-c++-dialect-options:
 
 Options Controlling Objective-C and Objective-C++ Dialects

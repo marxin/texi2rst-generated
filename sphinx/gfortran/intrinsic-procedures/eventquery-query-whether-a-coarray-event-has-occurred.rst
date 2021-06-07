@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _event_query:
 
 EVENT_QUERY --- Query whether a coarray event has occurred

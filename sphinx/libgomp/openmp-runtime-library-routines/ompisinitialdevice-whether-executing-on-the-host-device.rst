@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _omp_is_initial_device:
 
 omp_is_initial_device -- Whether executing on the host device

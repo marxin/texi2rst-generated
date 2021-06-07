@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _gomp_cpu_affinity:
 
 GOMP_CPU_AFFINITY -- Bind threads to specific CPUs

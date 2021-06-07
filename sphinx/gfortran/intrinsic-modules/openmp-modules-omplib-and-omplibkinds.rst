@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _openmp-modules-omp_lib-and-omp_lib_kinds:
 
 OpenMP Modules OMP_LIB and OMP_LIB_KINDS

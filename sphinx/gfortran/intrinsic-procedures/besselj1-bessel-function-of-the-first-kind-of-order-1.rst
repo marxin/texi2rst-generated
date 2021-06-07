@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _bessel_j1:
 
 BESSEL_J1 --- Bessel function of the first kind of order 1

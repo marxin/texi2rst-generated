@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _omp_set_default_device:
 
 omp_set_default_device -- Set the default device for target regions

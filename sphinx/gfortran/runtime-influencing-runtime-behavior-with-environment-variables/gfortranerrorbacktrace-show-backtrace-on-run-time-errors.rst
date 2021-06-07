@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _gfortran_error_backtrace:
 
 GFORTRAN_ERROR_BACKTRACE---Show backtrace on run-time errors
