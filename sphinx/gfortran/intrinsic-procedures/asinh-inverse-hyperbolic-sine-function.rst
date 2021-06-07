@@ -34,7 +34,10 @@ ASINH --- Inverse hyperbolic sine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ASINH(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ASINH(X)
 
   :samp:`{Example}:`
 

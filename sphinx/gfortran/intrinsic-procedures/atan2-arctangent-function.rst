@@ -43,7 +43,10 @@ ATAN2 --- Arctangent function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ATAN2(Y, X)``
+
+  .. code-block:: fortran
+
+    RESULT = ATAN2(Y, X)
 
   :samp:`{Example}:`
 

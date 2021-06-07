@@ -32,7 +32,10 @@ NINT --- Nearest whole number
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = NINT(A [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = NINT(A [, KIND])
 
   :samp:`{Example}:`
 

@@ -39,7 +39,10 @@ GET_COMMAND --- Get the entire command line
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GET_COMMAND([COMMAND, LENGTH, STATUS])``
+
+  .. code-block:: fortran
+
+    CALL GET_COMMAND([COMMAND, LENGTH, STATUS])
 
   :samp:`{Example}:`
 

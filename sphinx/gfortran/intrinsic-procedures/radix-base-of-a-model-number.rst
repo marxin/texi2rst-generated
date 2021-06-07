@@ -27,7 +27,10 @@ RADIX --- Base of a model number
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = RADIX(X)``
+
+  .. code-block:: fortran
+
+    RESULT = RADIX(X)
 
   :samp:`{Example}:`
 

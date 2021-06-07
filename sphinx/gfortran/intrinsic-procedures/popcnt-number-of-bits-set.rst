@@ -28,7 +28,10 @@ POPCNT --- Number of bits set
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = POPCNT(I)``
+
+  .. code-block:: fortran
+
+    RESULT = POPCNT(I)
 
   :samp:`{Example}:`
 

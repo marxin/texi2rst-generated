@@ -39,7 +39,10 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_FETCH_XOR (ATOM, VALUE, OLD [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_FETCH_XOR (ATOM, VALUE, OLD [, STAT])
 
   :samp:`{Example}:`
 

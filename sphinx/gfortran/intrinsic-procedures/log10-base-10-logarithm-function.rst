@@ -33,7 +33,10 @@ LOG10 --- Base 10 logarithm function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LOG10(X)``
+
+  .. code-block:: fortran
+
+    RESULT = LOG10(X)
 
   :samp:`{Example}:`
 

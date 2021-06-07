@@ -36,10 +36,10 @@ SYMLNK --- Create a symbolic link
 
   :samp:`{Syntax}:`
 
-    ========================================
-    ``CALL SYMLNK(PATH1, PATH2 [, STATUS])``
-    ``STATUS = SYMLNK(PATH1, PATH2)``
-    ========================================
+  .. code-block:: fortran
+
+    CALL SYMLNK(PATH1, PATH2 [, STATUS])
+    STATUS = SYMLNK(PATH1, PATH2)
 
   :samp:`{See also}:`
     LINK, 

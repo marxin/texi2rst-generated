@@ -47,7 +47,10 @@ MOD --- Remainder function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = MOD(A, P)``
+
+  .. code-block:: fortran
+
+    RESULT = MOD(A, P)
 
   :samp:`{Example}:`
 

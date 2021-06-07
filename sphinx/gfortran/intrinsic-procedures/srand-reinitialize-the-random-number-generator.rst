@@ -28,7 +28,10 @@ SRAND --- Reinitialize the random number generator
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL SRAND(SEED)``
+
+  .. code-block:: fortran
+
+    CALL SRAND(SEED)
 
   :samp:`{Example}:`
     See ``RAND`` and ``IRAND`` for examples.

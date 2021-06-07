@@ -25,7 +25,10 @@ ISATTY --- Whether a unit is a terminal device.
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = ISATTY(UNIT)``
+
+  .. code-block:: fortran
+
+    RESULT = ISATTY(UNIT)
 
   :samp:`{Example}:`
 

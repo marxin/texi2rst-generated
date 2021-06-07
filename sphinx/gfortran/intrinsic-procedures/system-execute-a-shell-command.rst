@@ -29,10 +29,10 @@ SYSTEM --- Execute a shell command
 
   :samp:`{Syntax}:`
 
-    ===================================
-    ``CALL SYSTEM(COMMAND [, STATUS])``
-    ``STATUS = SYSTEM(COMMAND)``
-    ===================================
+  .. code-block:: fortran
+
+    CALL SYSTEM(COMMAND [, STATUS])
+    STATUS = SYSTEM(COMMAND)
 
   :samp:`{See also}:`
     EXECUTE_COMMAND_LINE, which is part of the Fortran 2008 standard

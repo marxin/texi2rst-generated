@@ -45,7 +45,10 @@ ATOMIC_CAS --- Atomic compare and swap
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_CAS (ATOM, OLD, COMPARE, NEW [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_CAS (ATOM, OLD, COMPARE, NEW [, STAT])
 
   :samp:`{Example}:`
 

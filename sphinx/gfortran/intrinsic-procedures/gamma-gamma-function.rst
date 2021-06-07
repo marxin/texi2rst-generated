@@ -31,7 +31,10 @@ GAMMA --- Gamma function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``X = GAMMA(X)``
+
+  .. code-block:: fortran
+
+    X = GAMMA(X)
 
   :samp:`{Example}:`
 

@@ -27,7 +27,10 @@ SPACING --- Smallest distance between two numbers of a given type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SPACING(X)``
+
+  .. code-block:: fortran
+
+    RESULT = SPACING(X)
 
   :samp:`{Example}:`
 

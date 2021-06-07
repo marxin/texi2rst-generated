@@ -33,7 +33,10 @@ ACHAR --- Character in ASCII collating sequence
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ACHAR(I [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = ACHAR(I [, KIND])
 
   :samp:`{Example}:`
 

@@ -31,7 +31,10 @@ SINH --- Hyperbolic sine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SINH(X)``
+
+  .. code-block:: fortran
+
+    RESULT = SINH(X)
 
   :samp:`{Example}:`
 

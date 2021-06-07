@@ -25,7 +25,10 @@ EPSILON --- Epsilon function
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = EPSILON(X)``
+
+  .. code-block:: fortran
+
+    RESULT = EPSILON(X)
 
   :samp:`{Example}:`
 

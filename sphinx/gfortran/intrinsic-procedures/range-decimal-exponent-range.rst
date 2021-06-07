@@ -27,7 +27,10 @@ RANGE --- Decimal exponent range
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = RANGE(X)``
+
+  .. code-block:: fortran
+
+    RESULT = RANGE(X)
 
   :samp:`{Example}:`
     See ``PRECISION`` for an example.

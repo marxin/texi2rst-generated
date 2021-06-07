@@ -29,7 +29,10 @@ INT2 --- Convert to 16-bit integer type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = INT2(A)``
+
+  .. code-block:: fortran
+
+    RESULT = INT2(A)
 
   :samp:`{See also}:`
     INT, 

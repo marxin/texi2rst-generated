@@ -28,7 +28,10 @@ CHAR --- Character conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = CHAR(I [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = CHAR(I [, KIND])
 
   :samp:`{Example}:`
 

@@ -29,7 +29,10 @@ ADJUSTL --- Left adjust a string
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ADJUSTL(STRING)``
+
+  .. code-block:: fortran
+
+    RESULT = ADJUSTL(STRING)
 
   :samp:`{Example}:`
 

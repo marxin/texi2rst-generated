@@ -35,9 +35,9 @@ PARITY --- Reduction with exclusive OR
 
   :samp:`{Syntax}:`
 
-    ================================
-    ``RESULT = PARITY(MASK[, DIM])``
-    ================================
+  .. code-block:: fortran
+
+    RESULT = PARITY(MASK[, DIM])
 
   :samp:`{Example}:`
 

@@ -28,7 +28,10 @@ TAN --- Tangent function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = TAN(X)``
+
+  .. code-block:: fortran
+
+    RESULT = TAN(X)
 
   :samp:`{Example}:`
 

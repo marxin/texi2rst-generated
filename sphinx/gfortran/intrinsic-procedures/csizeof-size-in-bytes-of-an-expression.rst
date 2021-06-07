@@ -33,7 +33,10 @@ C_SIZEOF --- Size in bytes of an expression
     Inquiry function of the module ``ISO_C_BINDING``
 
   :samp:`{Syntax}:`
-    ``N = C_SIZEOF(X)``
+
+  .. code-block:: fortran
+
+    N = C_SIZEOF(X)
 
   :samp:`{Example}:`
 

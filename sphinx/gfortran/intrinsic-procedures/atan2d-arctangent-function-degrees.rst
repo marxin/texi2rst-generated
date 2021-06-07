@@ -43,7 +43,10 @@ ATAN2D --- Arctangent function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ATAN2D(Y, X)``
+
+  .. code-block:: fortran
+
+    RESULT = ATAN2D(Y, X)
 
   :samp:`{Example}:`
 

@@ -31,7 +31,10 @@ ASIN --- Arcsine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ASIN(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ASIN(X)
 
   :samp:`{Example}:`
 

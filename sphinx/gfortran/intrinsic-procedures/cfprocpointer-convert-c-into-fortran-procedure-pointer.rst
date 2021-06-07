@@ -27,7 +27,10 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL C_F_PROCPOINTER(cptr, fptr)``
+
+  .. code-block:: fortran
+
+    CALL C_F_PROCPOINTER(cptr, fptr)
 
   :samp:`{Example}:`
 

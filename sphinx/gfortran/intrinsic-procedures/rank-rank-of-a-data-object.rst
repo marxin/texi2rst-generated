@@ -25,7 +25,10 @@ RANK --- Rank of a data object
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = RANK(A)``
+
+  .. code-block:: fortran
+
+    RESULT = RANK(A)
 
   :samp:`{Example}:`
 

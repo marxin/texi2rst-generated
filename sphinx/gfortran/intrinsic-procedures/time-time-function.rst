@@ -25,7 +25,10 @@ TIME --- Time function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = TIME()``
+
+  .. code-block:: fortran
+
+    RESULT = TIME()
 
   :samp:`{See also}:`
     DATE_AND_TIME, 

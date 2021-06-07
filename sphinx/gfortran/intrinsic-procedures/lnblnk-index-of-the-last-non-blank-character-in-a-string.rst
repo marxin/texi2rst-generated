@@ -27,7 +27,10 @@ LNBLNK --- Index of the last non-blank character in a string
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LNBLNK(STRING)``
+
+  .. code-block:: fortran
+
+    RESULT = LNBLNK(STRING)
 
   :samp:`{See also}:`
     INDEX intrinsic, 

@@ -34,7 +34,10 @@ DIM --- Positive difference
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DIM(X, Y)``
+
+  .. code-block:: fortran
+
+    RESULT = DIM(X, Y)
 
   :samp:`{Example}:`
 

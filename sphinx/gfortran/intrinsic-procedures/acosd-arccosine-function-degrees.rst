@@ -32,7 +32,10 @@ ACOSD --- Arccosine function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ACOSD(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ACOSD(X)
 
   :samp:`{Example}:`
 

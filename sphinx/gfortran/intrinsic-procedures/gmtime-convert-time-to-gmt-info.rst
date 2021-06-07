@@ -32,7 +32,10 @@ GMTIME --- Convert time to GMT info
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GMTIME(TIME, VALUES)``
+
+  .. code-block:: fortran
+
+    CALL GMTIME(TIME, VALUES)
 
   :samp:`{See also}:`
     DATE_AND_TIME, 

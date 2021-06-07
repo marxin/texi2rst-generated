@@ -34,7 +34,10 @@ AIMAG --- Imaginary part of complex number
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = AIMAG(Z)``
+
+  .. code-block:: fortran
+
+    RESULT = AIMAG(Z)
 
   :samp:`{Example}:`
 

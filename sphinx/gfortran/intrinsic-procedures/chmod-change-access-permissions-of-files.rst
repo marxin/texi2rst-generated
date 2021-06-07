@@ -39,10 +39,10 @@ CHMOD --- Change access permissions of files
 
   :samp:`{Syntax}:`
 
-    ====================================
-    ``CALL CHMOD(NAME, MODE[, STATUS])``
-    ``STATUS = CHMOD(NAME, MODE)``
-    ====================================
+  .. code-block:: fortran
+
+    CALL CHMOD(NAME, MODE[, STATUS])
+    STATUS = CHMOD(NAME, MODE)
 
   :samp:`{Example}:`
     ``CHMOD`` as subroutine

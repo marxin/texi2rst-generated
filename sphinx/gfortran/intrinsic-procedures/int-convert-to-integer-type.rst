@@ -34,7 +34,10 @@ INT --- Convert to integer type
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = INT(A [, KIND))``
+
+  .. code-block:: fortran
+
+    RESULT = INT(A [, KIND))
 
   :samp:`{Example}:`
 

@@ -23,7 +23,10 @@ IERRNO --- Get the last system error number
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = IERRNO()``
+
+  .. code-block:: fortran
+
+    RESULT = IERRNO()
 
   :samp:`{Arguments}:`
     None

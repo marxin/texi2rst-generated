@@ -27,7 +27,10 @@ EXPONENT --- Exponent function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = EXPONENT(X)``
+
+  .. code-block:: fortran
+
+    RESULT = EXPONENT(X)
 
   :samp:`{Example}:`
 

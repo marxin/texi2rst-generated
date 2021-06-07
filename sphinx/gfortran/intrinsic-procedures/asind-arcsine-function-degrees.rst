@@ -32,7 +32,10 @@ ASIND --- Arcsine function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ASIND(X)``
+
+  .. code-block:: fortran
+
+    RESULT = ASIND(X)
 
   :samp:`{Example}:`
 

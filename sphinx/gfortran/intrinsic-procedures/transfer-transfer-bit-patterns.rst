@@ -41,7 +41,10 @@ TRANSFER --- Transfer bit patterns
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = TRANSFER(SOURCE, MOLD[, SIZE])``
+
+  .. code-block:: fortran
+
+    RESULT = TRANSFER(SOURCE, MOLD[, SIZE])
 
   :samp:`{Example}:`
 

@@ -32,7 +32,10 @@ COMPLEX --- Complex conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = COMPLEX(X, Y)``
+
+  .. code-block:: fortran
+
+    RESULT = COMPLEX(X, Y)
 
   :samp:`{Example}:`
 

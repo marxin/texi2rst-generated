@@ -27,7 +27,10 @@ CONJG --- Complex conjugate function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``Z = CONJG(Z)``
+
+  .. code-block:: fortran
+
+    Z = CONJG(Z)
 
   :samp:`{Example}:`
 

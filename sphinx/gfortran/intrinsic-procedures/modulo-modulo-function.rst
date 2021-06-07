@@ -32,7 +32,10 @@ MODULO --- Modulo function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = MODULO(A, P)``
+
+  .. code-block:: fortran
+
+    RESULT = MODULO(A, P)
 
   :samp:`{Example}:`
 

@@ -28,7 +28,10 @@ TAND --- Tangent function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = TAND(X)``
+
+  .. code-block:: fortran
+
+    RESULT = TAND(X)
 
   :samp:`{Example}:`
 

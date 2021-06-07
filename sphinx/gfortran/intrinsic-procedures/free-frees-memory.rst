@@ -29,7 +29,10 @@ FREE --- Frees memory
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL FREE(PTR)``
+
+  .. code-block:: fortran
+
+    CALL FREE(PTR)
 
   :samp:`{Example}:`
     See ``MALLOC`` for an example.

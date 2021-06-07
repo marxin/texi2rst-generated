@@ -25,7 +25,10 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = IS_CONTIGUOUS(ARRAY)``
+
+  .. code-block:: fortran
+
+    RESULT = IS_CONTIGUOUS(ARRAY)
 
   :samp:`{Example}:`
 

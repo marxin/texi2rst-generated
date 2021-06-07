@@ -44,7 +44,10 @@ RESHAPE --- Function to reshape an array
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])``
+
+  .. code-block:: fortran
+
+    RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])
 
   :samp:`{Example}:`
 

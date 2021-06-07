@@ -39,7 +39,10 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_FETCH_AND (ATOM, VALUE, OLD [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_FETCH_AND (ATOM, VALUE, OLD [, STAT])
 
   :samp:`{Example}:`
 

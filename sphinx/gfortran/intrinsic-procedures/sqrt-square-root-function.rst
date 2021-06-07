@@ -36,7 +36,10 @@ SQRT --- Square-root function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SQRT(X)``
+
+  .. code-block:: fortran
+
+    RESULT = SQRT(X)
 
   :samp:`{Example}:`
 

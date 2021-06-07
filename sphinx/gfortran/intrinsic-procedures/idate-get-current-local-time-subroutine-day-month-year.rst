@@ -30,7 +30,10 @@ IDATE --- Get current local time subroutine (day/month/year)
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL IDATE(VALUES)``
+
+  .. code-block:: fortran
+
+    CALL IDATE(VALUES)
 
   :samp:`{Example}:`
 

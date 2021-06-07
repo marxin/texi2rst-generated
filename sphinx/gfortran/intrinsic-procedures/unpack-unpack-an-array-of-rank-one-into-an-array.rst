@@ -37,7 +37,10 @@ UNPACK --- Unpack an array of rank one into an array
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = UNPACK(VECTOR, MASK, FIELD)``
+
+  .. code-block:: fortran
+
+    RESULT = UNPACK(VECTOR, MASK, FIELD)
 
   :samp:`{Example}:`
 

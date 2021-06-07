@@ -26,7 +26,10 @@ LOC --- Returns the address of a variable
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = LOC(X)``
+
+  .. code-block:: fortran
+
+    RESULT = LOC(X)
 
   :samp:`{Example}:`
 

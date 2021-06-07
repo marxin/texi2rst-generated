@@ -37,10 +37,10 @@ FPUTC --- Write a single character in stream mode
 
   :samp:`{Syntax}:`
 
-    ==================================
-    ``CALL FPUTC(UNIT, C [, STATUS])``
-    ``STATUS = FPUTC(UNIT, C)``
-    ==================================
+  .. code-block:: fortran
+
+    CALL FPUTC(UNIT, C [, STATUS])
+    STATUS = FPUTC(UNIT, C)
 
   :samp:`{Example}:`
 

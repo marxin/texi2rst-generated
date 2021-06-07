@@ -34,7 +34,10 @@ IACHAR --- Code in ASCII collating sequence
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IACHAR(C [, KIND])``
+
+  .. code-block:: fortran
+
+    RESULT = IACHAR(C [, KIND])
 
   :samp:`{Example}:`
 

@@ -36,7 +36,10 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_REF(VALUE, ATOM [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_REF(VALUE, ATOM [, STAT])
 
   :samp:`{Example}:`
 

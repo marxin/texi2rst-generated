@@ -30,8 +30,8 @@ HOSTNM --- Get system host name
 
   :samp:`{Syntax}:`
 
-    =============================
-    ``CALL HOSTNM(C [, STATUS])``
-    ``STATUS = HOSTNM(NAME)``
-    =============================
+  .. code-block:: fortran
+
+    CALL HOSTNM(C [, STATUS])
+    STATUS = HOSTNM(NAME)
 

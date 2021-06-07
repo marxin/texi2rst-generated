@@ -42,10 +42,10 @@ SUM --- Sum of array elements
 
   :samp:`{Syntax}:`
 
-    ====================================
-    ``RESULT = SUM(ARRAY[, MASK])``
-    ``RESULT = SUM(ARRAY, DIM[, MASK])``
-    ====================================
+  .. code-block:: fortran
+
+    RESULT = SUM(ARRAY[, MASK])
+    RESULT = SUM(ARRAY, DIM[, MASK])
 
   :samp:`{Example}:`
 

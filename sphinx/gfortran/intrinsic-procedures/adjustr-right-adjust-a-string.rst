@@ -29,7 +29,10 @@ ADJUSTR --- Right adjust a string
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ADJUSTR(STRING)``
+
+  .. code-block:: fortran
+
+    RESULT = ADJUSTR(STRING)
 
   :samp:`{Example}:`
 

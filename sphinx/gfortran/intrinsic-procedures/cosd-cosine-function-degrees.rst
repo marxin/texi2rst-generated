@@ -37,7 +37,10 @@ COSD --- Cosine function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = COSD(X)``
+
+  .. code-block:: fortran
+
+    RESULT = COSD(X)
 
   :samp:`{Example}:`
 

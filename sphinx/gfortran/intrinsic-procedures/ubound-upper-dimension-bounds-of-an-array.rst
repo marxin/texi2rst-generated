@@ -40,7 +40,10 @@ UBOUND --- Upper dimension bounds of an array
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = UBOUND(ARRAY [, DIM [, KIND]])``
+
+  .. code-block:: fortran
+
+    RESULT = UBOUND(ARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
     LBOUND, 

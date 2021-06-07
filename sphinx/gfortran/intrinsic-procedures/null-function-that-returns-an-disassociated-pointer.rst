@@ -27,7 +27,10 @@ NULL --- Function that returns an disassociated pointer
     Transformational function
 
   :samp:`{Syntax}:`
-    ``PTR => NULL([MOLD])``
+
+  .. code-block:: fortran
+
+    PTR => NULL([MOLD])
 
   :samp:`{Example}:`
 

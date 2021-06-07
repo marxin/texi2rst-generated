@@ -24,7 +24,10 @@ GETPID --- Process ID function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = GETPID()``
+
+  .. code-block:: fortran
+
+    RESULT = GETPID()
 
   :samp:`{Example}:`
 

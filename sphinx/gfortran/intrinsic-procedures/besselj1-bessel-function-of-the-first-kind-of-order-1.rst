@@ -32,7 +32,10 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BESSEL_J1(X)``
+
+  .. code-block:: fortran
+
+    RESULT = BESSEL_J1(X)
 
   :samp:`{Example}:`
 

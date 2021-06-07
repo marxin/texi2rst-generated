@@ -37,10 +37,10 @@ FGETC --- Read a single character in stream mode
 
   :samp:`{Syntax}:`
 
-    ==================================
-    ``CALL FGETC(UNIT, C [, STATUS])``
-    ``STATUS = FGETC(UNIT, C)``
-    ==================================
+  .. code-block:: fortran
+
+    CALL FGETC(UNIT, C [, STATUS])
+    STATUS = FGETC(UNIT, C)
 
   :samp:`{Example}:`
 

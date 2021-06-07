@@ -38,7 +38,10 @@ AND --- Bitwise logical AND
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = AND(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = AND(I, J)
 
   :samp:`{Example}:`
 

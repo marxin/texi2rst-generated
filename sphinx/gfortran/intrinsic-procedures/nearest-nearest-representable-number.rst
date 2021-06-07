@@ -35,7 +35,10 @@ NEAREST --- Nearest representable number
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = NEAREST(X, S)``
+
+  .. code-block:: fortran
+
+    RESULT = NEAREST(X, S)
 
   :samp:`{Example}:`
 

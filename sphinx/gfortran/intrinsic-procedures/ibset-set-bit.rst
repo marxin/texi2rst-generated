@@ -37,7 +37,10 @@ IBSET --- Set bit
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IBSET(I, POS)``
+
+  .. code-block:: fortran
+
+    RESULT = IBSET(I, POS)
 
   :samp:`{Specific names}:`
 

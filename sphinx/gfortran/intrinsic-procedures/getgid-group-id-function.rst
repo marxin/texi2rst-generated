@@ -22,7 +22,10 @@ GETGID --- Group ID function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = GETGID()``
+
+  .. code-block:: fortran
+
+    RESULT = GETGID()
 
   :samp:`{Example}:`
     See ``GETPID`` for an example.

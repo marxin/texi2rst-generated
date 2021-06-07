@@ -45,7 +45,10 @@ ABS --- Absolute value
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = ABS(A)``
+
+  .. code-block:: fortran
+
+    RESULT = ABS(A)
 
   :samp:`{Example}:`
 

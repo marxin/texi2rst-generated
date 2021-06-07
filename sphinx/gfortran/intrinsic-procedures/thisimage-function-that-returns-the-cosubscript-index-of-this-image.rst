@@ -47,11 +47,11 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
 
   :samp:`{Syntax}:`
 
-    ========================================
-    ``RESULT = THIS_IMAGE()``
-    ``RESULT = THIS_IMAGE(DISTANCE)``
-    ``RESULT = THIS_IMAGE(COARRAY [, DIM])``
-    ========================================
+  .. code-block:: fortran
+
+    RESULT = THIS_IMAGE()
+    RESULT = THIS_IMAGE(DISTANCE)
+    RESULT = THIS_IMAGE(COARRAY [, DIM])
 
   :samp:`{Example}:`
 

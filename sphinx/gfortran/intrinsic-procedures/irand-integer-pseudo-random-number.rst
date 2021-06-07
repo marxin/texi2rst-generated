@@ -29,7 +29,10 @@ IRAND --- Integer pseudo-random number
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = IRAND(I)``
+
+  .. code-block:: fortran
+
+    RESULT = IRAND(I)
 
   :samp:`{Example}:`
 

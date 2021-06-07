@@ -41,7 +41,10 @@ CSHIFT --- Circular shift elements of an array
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = CSHIFT(ARRAY, SHIFT [, DIM])``
+
+  .. code-block:: fortran
+
+    RESULT = CSHIFT(ARRAY, SHIFT [, DIM])
 
   :samp:`{Example}:`
 

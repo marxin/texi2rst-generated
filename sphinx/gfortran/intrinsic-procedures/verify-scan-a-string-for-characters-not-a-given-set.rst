@@ -36,7 +36,10 @@ VERIFY --- Scan a string for characters not a given set
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = VERIFY(STRING, SET[, BACK [, KIND]])``
+
+  .. code-block:: fortran
+
+    RESULT = VERIFY(STRING, SET[, BACK [, KIND]])
 
   :samp:`{Example}:`
 

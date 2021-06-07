@@ -29,7 +29,10 @@ GETENV --- Get an environmental variable
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL GETENV(NAME, VALUE)``
+
+  .. code-block:: fortran
+
+    CALL GETENV(NAME, VALUE)
 
   :samp:`{Example}:`
 

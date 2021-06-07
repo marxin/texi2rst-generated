@@ -26,7 +26,10 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = COMMAND_ARGUMENT_COUNT()``
+
+  .. code-block:: fortran
+
+    RESULT = COMMAND_ARGUMENT_COUNT()
 
   :samp:`{Example}:`
 

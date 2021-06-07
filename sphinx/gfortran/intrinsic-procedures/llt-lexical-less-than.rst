@@ -34,7 +34,10 @@ LLT --- Lexical less than
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LLT(STRING_A, STRING_B)``
+
+  .. code-block:: fortran
+
+    RESULT = LLT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
 

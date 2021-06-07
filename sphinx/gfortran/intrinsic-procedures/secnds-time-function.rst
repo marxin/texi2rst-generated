@@ -32,7 +32,10 @@ SECNDS --- Time function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = SECNDS (X)``
+
+  .. code-block:: fortran
+
+    RESULT = SECNDS (X)
 
   :samp:`{Example}:`
 

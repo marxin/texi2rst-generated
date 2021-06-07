@@ -28,7 +28,10 @@ NEW_LINE --- New line character
     Inquiry function
 
   :samp:`{Syntax}:`
-    ``RESULT = NEW_LINE(C)``
+
+  .. code-block:: fortran
+
+    RESULT = NEW_LINE(C)
 
   :samp:`{Example}:`
 

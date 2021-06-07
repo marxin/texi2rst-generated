@@ -36,7 +36,10 @@ BTEST --- Bit test function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BTEST(I, POS)``
+
+  .. code-block:: fortran
+
+    RESULT = BTEST(I, POS)
 
   :samp:`{Example}:`
 

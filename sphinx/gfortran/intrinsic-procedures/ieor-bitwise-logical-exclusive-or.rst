@@ -43,7 +43,10 @@ IEOR --- Bitwise logical exclusive or
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IEOR(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = IEOR(I, J)
 
   :samp:`{Specific names}:`
 

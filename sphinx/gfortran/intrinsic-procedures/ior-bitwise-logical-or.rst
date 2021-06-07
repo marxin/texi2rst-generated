@@ -43,7 +43,10 @@ IOR --- Bitwise logical or
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = IOR(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = IOR(I, J)
 
   :samp:`{Specific names}:`
 

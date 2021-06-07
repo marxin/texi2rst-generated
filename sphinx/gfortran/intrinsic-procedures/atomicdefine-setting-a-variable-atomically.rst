@@ -36,7 +36,10 @@ ATOMIC_DEFINE --- Setting a variable atomically
     Atomic subroutine
 
   :samp:`{Syntax}:`
-    ``CALL ATOMIC_DEFINE (ATOM, VALUE [, STAT])``
+
+  .. code-block:: fortran
+
+    CALL ATOMIC_DEFINE (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

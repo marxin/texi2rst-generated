@@ -25,7 +25,10 @@ LEADZ --- Number of leading zero bits of an integer
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = LEADZ(I)``
+
+  .. code-block:: fortran
+
+    RESULT = LEADZ(I)
 
   :samp:`{Example}:`
 

@@ -26,10 +26,10 @@ GETCWD --- Get current working directory
 
   :samp:`{Syntax}:`
 
-    =============================
-    ``CALL GETCWD(C [, STATUS])``
-    ``STATUS = GETCWD(C)``
-    =============================
+  .. code-block:: fortran
+
+    CALL GETCWD(C [, STATUS])
+    STATUS = GETCWD(C)
 
   :samp:`{Example}:`
 

@@ -38,7 +38,10 @@ NUM_IMAGES --- Function that returns the number of images
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = NUM_IMAGES(DISTANCE, FAILED)``
+
+  .. code-block:: fortran
+
+    RESULT = NUM_IMAGES(DISTANCE, FAILED)
 
   :samp:`{Example}:`
 

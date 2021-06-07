@@ -36,7 +36,10 @@ ALL --- All values in MASK along DIM are true
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = ALL(MASK [, DIM])``
+
+  .. code-block:: fortran
+
+    RESULT = ALL(MASK [, DIM])
 
   :samp:`{Example}:`
 

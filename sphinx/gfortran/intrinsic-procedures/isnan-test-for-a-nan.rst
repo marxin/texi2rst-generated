@@ -26,7 +26,10 @@ ISNAN --- Test for a NaN
     Elemental function
 
   :samp:`{Syntax}:`
-    ``ISNAN(X)``
+
+  .. code-block:: fortran
+
+    ISNAN(X)
 
   :samp:`{Example}:`
 

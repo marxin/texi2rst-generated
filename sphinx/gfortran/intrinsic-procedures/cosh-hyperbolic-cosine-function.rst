@@ -33,7 +33,10 @@ COSH --- Hyperbolic cosine function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``X = COSH(X)``
+
+  .. code-block:: fortran
+
+    X = COSH(X)
 
   :samp:`{Example}:`
 

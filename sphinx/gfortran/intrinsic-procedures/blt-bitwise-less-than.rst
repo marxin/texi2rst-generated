@@ -28,7 +28,10 @@ BLT --- Bitwise less than
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = BLT(I, J)``
+
+  .. code-block:: fortran
+
+    RESULT = BLT(I, J)
 
   :samp:`{See also}:`
     BGE, 

@@ -28,7 +28,10 @@ EXIT --- Exit the program with status.
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL EXIT([STATUS])``
+
+  .. code-block:: fortran
+
+    CALL EXIT([STATUS])
 
   :samp:`{Example}:`
 

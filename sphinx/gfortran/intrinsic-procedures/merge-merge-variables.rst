@@ -35,5 +35,8 @@ MERGE --- Merge variables
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = MERGE(TSOURCE, FSOURCE, MASK)``
+
+  .. code-block:: fortran
+
+    RESULT = MERGE(TSOURCE, FSOURCE, MASK)
 

@@ -36,7 +36,10 @@ SCAN --- Scan a string for the presence of a set of characters
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = SCAN(STRING, SET[, BACK [, KIND]])``
+
+  .. code-block:: fortran
+
+    RESULT = SCAN(STRING, SET[, BACK [, KIND]])
 
   :samp:`{Example}:`
 

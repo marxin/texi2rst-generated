@@ -25,7 +25,10 @@ FNUM --- File number function
     Function
 
   :samp:`{Syntax}:`
-    ``RESULT = FNUM(UNIT)``
+
+  .. code-block:: fortran
+
+    RESULT = FNUM(UNIT)
 
   :samp:`{Example}:`
 

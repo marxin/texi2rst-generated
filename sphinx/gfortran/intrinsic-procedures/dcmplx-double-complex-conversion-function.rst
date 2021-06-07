@@ -34,7 +34,10 @@ DCMPLX --- Double complex conversion function
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = DCMPLX(X [, Y])``
+
+  .. code-block:: fortran
+
+    RESULT = DCMPLX(X [, Y])
 
   :samp:`{Example}:`
 

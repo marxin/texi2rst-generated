@@ -38,7 +38,10 @@ SYSTEM_CLOCK --- Time function
     Subroutine
 
   :samp:`{Syntax}:`
-    ``CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])``
+
+  .. code-block:: fortran
+
+    CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])
 
   :samp:`{Example}:`
 

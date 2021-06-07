@@ -44,10 +44,10 @@ BESSEL_YN --- Bessel function of the second kind
 
   :samp:`{Syntax}:`
 
-    =================================
-    ``RESULT = BESSEL_YN(N, X)``
-    ``RESULT = BESSEL_YN(N1, N2, X)``
-    =================================
+  .. code-block:: fortran
+
+    RESULT = BESSEL_YN(N, X)
+    RESULT = BESSEL_YN(N1, N2, X)
 
   :samp:`{Note}:`
     The transformational function uses a recurrence algorithm which might,

@@ -36,7 +36,10 @@ ANY --- Any value in MASK along DIM is true
     Transformational function
 
   :samp:`{Syntax}:`
-    ``RESULT = ANY(MASK [, DIM])``
+
+  .. code-block:: fortran
+
+    RESULT = ANY(MASK [, DIM])
 
   :samp:`{Example}:`
 

@@ -29,7 +29,10 @@ RRSPACING --- Reciprocal of the relative spacing
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = RRSPACING(X)``
+
+  .. code-block:: fortran
+
+    RESULT = RRSPACING(X)
 
   :samp:`{See also}:`
     SPACING

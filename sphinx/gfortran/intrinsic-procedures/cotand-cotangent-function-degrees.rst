@@ -32,7 +32,10 @@ COTAND --- Cotangent function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
-    ``RESULT = COTAND(X)``
+
+  .. code-block:: fortran
+
+    RESULT = COTAND(X)
 
   :samp:`{Example}:`
 
