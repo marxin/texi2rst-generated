@@ -47,6 +47,7 @@ EXP --- Exponential function
       end program test_exp
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ``EXP(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later

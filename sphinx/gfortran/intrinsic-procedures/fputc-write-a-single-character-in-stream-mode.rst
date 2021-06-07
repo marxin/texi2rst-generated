@@ -36,6 +36,7 @@ FPUTC --- Write a single character in stream mode
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ==================================
     ``CALL FPUTC(UNIT, C [, STATUS])``
     ``STATUS = FPUTC(UNIT, C)``

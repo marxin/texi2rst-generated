@@ -29,6 +29,7 @@ HOSTNM --- Get system host name
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =============================
     ``CALL HOSTNM(C [, STATUS])``
     ``STATUS = HOSTNM(NAME)``

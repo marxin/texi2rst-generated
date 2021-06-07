@@ -42,6 +42,7 @@ IBCLR --- Clear bit
     ``RESULT = IBCLR(I, POS)``
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     ``IBCLR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later

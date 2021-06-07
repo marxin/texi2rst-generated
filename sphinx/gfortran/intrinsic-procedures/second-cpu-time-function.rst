@@ -30,6 +30,7 @@ SECOND --- CPU time function
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =====================
     ``CALL SECOND(TIME)``
     ``TIME = SECOND()``

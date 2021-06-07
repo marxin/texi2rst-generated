@@ -8,11 +8,13 @@ omp_get_level -- Obtain the current nesting level
   which enclose the calling call.
 
 C/C++
+
   ============  ============================
   *Prototype*:  ``int omp_get_level(void);``
   ============  ============================
 
 :samp:`{Fortran}:`
+
   ============  ================================
   *Interface*:  ``integer function omp_level()``
   ============  ================================

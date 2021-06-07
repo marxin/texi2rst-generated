@@ -37,6 +37,7 @@ ATAND --- Arctangent function, degrees
     Elemental function
 
   :samp:`{Syntax}:`
+
     ========================
     ``RESULT = ATAND(X)``
     ``RESULT = ATAND(Y, X)``
@@ -52,6 +53,7 @@ ATAND --- Arctangent function, degrees
       end program test_atand
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     ``ATAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension

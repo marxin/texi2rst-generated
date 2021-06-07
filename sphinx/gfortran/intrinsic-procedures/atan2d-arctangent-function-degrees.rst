@@ -55,6 +55,7 @@ ATAN2D --- Arctangent function, degrees
       end program test_atan2d
 
   :samp:`{Specific names}:`
+
     =================  ================  ===========  =============
     Name               Argument          Return type  Standard
     ``ATAN2D(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  GNU extension

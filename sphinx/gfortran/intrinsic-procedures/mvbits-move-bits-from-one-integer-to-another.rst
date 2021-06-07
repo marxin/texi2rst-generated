@@ -50,6 +50,7 @@ MVBITS --- Move bits from one integer to another
     ``CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)``
 
   :samp:`{Specific names}:`
+
     ==============  ================  ==============  ====================
     Name            Argument          Return type     Standard
     ``MVBITS(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later

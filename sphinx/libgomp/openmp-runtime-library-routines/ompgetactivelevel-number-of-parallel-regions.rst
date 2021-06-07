@@ -8,11 +8,13 @@ omp_get_active_level -- Number of parallel regions
   which enclose the calling call.
 
 C/C++
+
   ============  ===================================
   *Prototype*:  ``int omp_get_active_level(void);``
   ============  ===================================
 
 :samp:`{Fortran}:`
+
   ============  ===========================================
   *Interface*:  ``integer function omp_get_active_level()``
   ============  ===========================================

@@ -8,12 +8,14 @@ Description
   specified in :samp:`{arg}`.
 
 :samp:`{C/C++}:`
+
   ========================================  ========================
   *Prototype*:                              ``acc_wait(arg);``
   *Prototype (OpenACC 1.0 compatibility)*:  ``acc_async_wait(arg);``
   ========================================  ========================
 
 :samp:`{Fortran}:`
+
   ========================================  ==================================
   *Interface*:                              ``subroutine acc_wait(arg)``
                                             ``integer(acc_handle_kind) arg``

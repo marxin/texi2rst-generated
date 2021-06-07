@@ -44,6 +44,7 @@ ICHAR --- Character-to-integer conversion function
       end program test_ichar
 
   :samp:`{Specific names}:`
+
     ============  ===============  ==============  ====================
     Name          Argument         Return type     Standard
     ``ICHAR(C)``  ``CHARACTER C``  ``INTEGER(4)``  Fortran 77 and later

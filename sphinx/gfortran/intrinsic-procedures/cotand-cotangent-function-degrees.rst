@@ -44,6 +44,7 @@ COTAND --- Cotangent function, degrees
       end program test_cotand
 
   :samp:`{Specific names}:`
+
     ==============  =============  ===========  =============
     Name            Argument       Return type  Standard
     ``COTAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension

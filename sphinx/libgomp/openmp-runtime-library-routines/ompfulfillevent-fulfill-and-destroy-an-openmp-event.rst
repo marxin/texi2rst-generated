@@ -14,11 +14,13 @@ omp_fulfill_event -- Fulfill and destroy an OpenMP event
   event handle that has already been fulfilled is also undefined.
 
 :samp:`{C/C++}:`
+
   ============  =====================================================
   *Prototype*:  ``void omp_fulfill_event(omp_event_handle_t event);``
   ============  =====================================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================
   *Interface*:  ``subroutine omp_fulfill_event(event)``
                 ``integer (kind=omp_event_handle_kind) :: event``

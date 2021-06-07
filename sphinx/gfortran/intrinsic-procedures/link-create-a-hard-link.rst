@@ -34,6 +34,7 @@ LINK --- Create a hard link
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ======================================
     ``CALL LINK(PATH1, PATH2 [, STATUS])``
     ``STATUS = LINK(PATH1, PATH2)``

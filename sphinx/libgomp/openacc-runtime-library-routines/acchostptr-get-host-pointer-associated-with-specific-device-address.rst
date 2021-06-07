@@ -8,6 +8,7 @@ Description
   device address specified by :samp:`{d}`.
 
 :samp:`{C/C++}:`
+
   ============  =================================
   *Prototype*:  ``void *acc_hostptr(d_void *d);``
   ============  =================================

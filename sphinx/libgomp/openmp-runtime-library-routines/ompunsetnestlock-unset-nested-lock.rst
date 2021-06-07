@@ -11,11 +11,13 @@ omp_unset_nest_lock -- Unset nested lock
   one of them is chosen to, again, set the lock to itself.
 
 :samp:`{C/C++}:`
+
   ============  ====================================================
   *Prototype*:  ``void omp_unset_nest_lock(omp_nest_lock_t *lock);``
   ============  ====================================================
 
 :samp:`{Fortran}:`
+
   ============  ======================================================
   *Interface*:  ``subroutine omp_unset_nest_lock(nvar)``
                 ``integer(omp_nest_lock_kind), intent(inout) :: nvar``

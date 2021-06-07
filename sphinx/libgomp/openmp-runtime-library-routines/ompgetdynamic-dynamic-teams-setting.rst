@@ -14,11 +14,13 @@ omp_get_dynamic -- Dynamic teams setting
   disabled by default.
 
 :samp:`{C/C++}:`
+
   ============  ==============================
   *Prototype*:  ``int omp_get_dynamic(void);``
   ============  ==============================
 
 :samp:`{Fortran}:`
+
   ============  ======================================
   *Interface*:  ``logical function omp_get_dynamic()``
   ============  ======================================

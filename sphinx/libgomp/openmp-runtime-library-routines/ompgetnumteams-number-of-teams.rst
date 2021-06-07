@@ -7,11 +7,13 @@ omp_get_num_teams -- Number of teams
   Returns the number of teams in the current team region.
 
 :samp:`{C/C++}:`
+
   ============  ================================
   *Prototype*:  ``int omp_get_num_teams(void);``
   ============  ================================
 
 :samp:`{Fortran}:`
+
   ============  ========================================
   *Interface*:  ``integer function omp_get_num_teams()``
   ============  ========================================

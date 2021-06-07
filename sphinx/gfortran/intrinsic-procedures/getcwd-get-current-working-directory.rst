@@ -25,6 +25,7 @@ GETCWD --- Get current working directory
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     =============================
     ``CALL GETCWD(C [, STATUS])``
     ``STATUS = GETCWD(C)``

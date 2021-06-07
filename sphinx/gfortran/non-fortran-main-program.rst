@@ -63,6 +63,7 @@ _gfortran_set_args --- Save command-line arguments
   ``void _gfortran_set_args (int argc, char *argv[])``
 
 :samp:`{Arguments}:`
+
   ==============  ==========================================
   :samp:`{argc}`  number of command line argument strings
   :samp:`{argv}`  the command-line argument strings; argv[0]
@@ -102,12 +103,14 @@ _gfortran_set_options --- Set library option flags
   ``void _gfortran_set_options (int num, int options[])``
 
 :samp:`{Arguments}:`
+
   ==============  ========================
   :samp:`{num}`   number of options passed
   :samp:`{argv}`  The list of flag values
   ==============  ========================
 
 :samp:`{option flag list}:`
+
   ====================  =========================================================================
   :samp:`{option}` [0]  Allowed standard; can give run-time errors
                         if e.g. an input-output edit descriptor is invalid in a given
@@ -172,6 +175,7 @@ _gfortran_set_convert --- Set endian conversion
   ``void _gfortran_set_convert (int conv)``
 
 :samp:`{Arguments}:`
+
   ==============  ======================================================
   :samp:`{conv}`  Endian conversion, possible values:
                   GFC_CONVERT_NATIVE (0, default), GFC_CONVERT_SWAP (1),
@@ -207,6 +211,7 @@ _gfortran_set_record_marker --- Set length of record markers
   ``void _gfortran_set_record_marker (int val)``
 
 :samp:`{Arguments}:`
+
   =============  =========================================
   :samp:`{val}`  Length of the record marker; valid values
                  are 4 and 8.  Default is 4.
@@ -242,6 +247,7 @@ _gfortran_set_fpe --- Enable floating point exception traps
   ``void _gfortran_set_fpe (int val)``
 
 :samp:`{Arguments}:`
+
   ====================  =========================================================
   :samp:`{option}` [0]  IEEE exceptions.  Possible values are
                         (bitwise or-ed) zero (0, default) no trapping,
@@ -281,6 +287,7 @@ _gfortran_set_max_subrecord_length --- Set subrecord length
   ``void _gfortran_set_max_subrecord_length (int val)``
 
 :samp:`{Arguments}:`
+
   =============  ========================================================
   :samp:`{val}`  the maximum length for a subrecord;
                  the maximum permitted value is 2147483639, which is also

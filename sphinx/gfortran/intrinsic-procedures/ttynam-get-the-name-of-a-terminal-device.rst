@@ -25,6 +25,7 @@ TTYNAM --- Get the name of a terminal device.
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ===========================
     ``CALL TTYNAM(UNIT, NAME)``
     ``NAME = TTYNAM(UNIT)``

@@ -28,6 +28,7 @@ FTELL --- Current stream position
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ============================
     ``CALL FTELL(UNIT, OFFSET)``
     ``OFFSET = FTELL(UNIT)``

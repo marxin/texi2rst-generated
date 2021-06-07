@@ -8,11 +8,13 @@ Description
   :samp:`{devicetype}`.
 
 :samp:`{C/C++}:`
+
   ============  ==========================================
   *Prototype*:  ``acc_shutdown(acc_device_t devicetype);``
   ============  ==========================================
 
 :samp:`{Fortran}:`
+
   ============  =======================================
   *Interface*:  ``subroutine acc_shutdown(devicetype)``
                 ``integer(acc_device_kind) devicetype``

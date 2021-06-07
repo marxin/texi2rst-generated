@@ -49,6 +49,7 @@ AIMAG --- Imaginary part of complex number
       end program test_aimag
 
   :samp:`{Specific names}:`
+
     ===============  ================  ===========  ====================
     Name             Argument          Return type  Standard
     ``AIMAG(Z)``     ``COMPLEX Z``     ``REAL``     Fortran 77 and later

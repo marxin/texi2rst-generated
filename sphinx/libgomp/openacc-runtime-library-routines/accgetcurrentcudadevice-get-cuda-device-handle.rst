@@ -8,6 +8,7 @@ Description
   as used by the CUDA Runtime or Driver API's.
 
 :samp:`{C/C++}:`
+
   ============  ============================================
   *Prototype*:  ``void *acc_get_current_cuda_device(void);``
   ============  ============================================

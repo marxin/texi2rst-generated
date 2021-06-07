@@ -10,11 +10,13 @@ omp_get_proc_bind -- Whether theads may be moved between CPUs
   ``omp_proc_bind_close`` and ``omp_proc_bind_spread``.
 
 :samp:`{C/C++}:`
+
   ============  ============================================
   *Prototype*:  ``omp_proc_bind_t omp_get_proc_bind(void);``
   ============  ============================================
 
 :samp:`{Fortran}:`
+
   ============  =================================================================
   *Interface*:  ``integer(kind=omp_proc_bind_kind) function omp_get_proc_bind()``
   ============  =================================================================

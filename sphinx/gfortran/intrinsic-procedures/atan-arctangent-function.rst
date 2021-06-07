@@ -37,6 +37,7 @@ ATAN --- Arctangent function
     Elemental function
 
   :samp:`{Syntax}:`
+
     =======================
     ``RESULT = ATAN(X)``
     ``RESULT = ATAN(Y, X)``
@@ -52,6 +53,7 @@ ATAN --- Arctangent function
       end program test_atan
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ``ATAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later

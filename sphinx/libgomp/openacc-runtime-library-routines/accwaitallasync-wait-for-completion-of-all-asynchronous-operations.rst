@@ -9,11 +9,13 @@ Description
   any queue.
 
 :samp:`{C/C++}:`
+
   ============  ==================================
   *Prototype*:  ``acc_wait_all_async(int async);``
   ============  ==================================
 
 :samp:`{Fortran}:`
+
   ============  ========================================
   *Interface*:  ``subroutine acc_wait_all_async(async)``
                 ``integer(acc_handle_kind) async``

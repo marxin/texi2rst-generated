@@ -8,11 +8,13 @@ omp_get_max_threads -- Maximum number of threads of parallel region
   that does not use the clause ``num_threads``.
 
 :samp:`{C/C++}:`
+
   ============  ==================================
   *Prototype*:  ``int omp_get_max_threads(void);``
   ============  ==================================
 
 :samp:`{Fortran}:`
+
   ============  ==========================================
   *Interface*:  ``integer function omp_get_max_threads()``
   ============  ==========================================

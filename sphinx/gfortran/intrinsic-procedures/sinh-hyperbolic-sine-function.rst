@@ -43,6 +43,7 @@ SINH --- Hyperbolic sine function
       end program test_sinh
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ``DSINH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 90 and later

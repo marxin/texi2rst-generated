@@ -36,6 +36,7 @@ IANY --- Bitwise OR of array elements
     Transformational function
 
   :samp:`{Syntax}:`
+
     =====================================
     ``RESULT = IANY(ARRAY[, MASK])``
     ``RESULT = IANY(ARRAY, DIM[, MASK])``

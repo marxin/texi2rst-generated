@@ -45,6 +45,7 @@ LOG10 --- Base 10 logarithm function
       end program test_log10
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  ====================
     Name           Argument       Return type  Standard
     ``ALOG10(X)``  ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later

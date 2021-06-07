@@ -42,6 +42,7 @@ DPROD --- Double product function
       end program test_dprod
 
   :samp:`{Specific names}:`
+
     ==============  ================  ===========  ====================
     Name            Argument          Return type  Standard
     ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later

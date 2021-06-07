@@ -17,12 +17,14 @@ Description
   backward compatibility with OpenACC 2.0; use acc_copyin instead.
 
 :samp:`{C/C++}:`
+
   ============  =======================================================
   *Prototype*:  ``void *acc_present_or_copyin(h_void *a, size_t len);``
   *Prototype*:  ``void *acc_pcopyin(h_void *a, size_t len);``
   ============  =======================================================
 
 :samp:`{Fortran}:`
+
   ============  ============================================
   *Interface*:  ``subroutine acc_present_or_copyin(a)``
                 ``type, dimension(:[,:]...) :: a``

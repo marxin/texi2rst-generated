@@ -27,6 +27,7 @@ UMASK --- Set the file creation mask
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ============================
     ``CALL UMASK(MASK [, OLD])``
     ``OLD = UMASK(MASK)``

@@ -48,6 +48,7 @@ REAL --- Convert to real type
     Elemental function
 
   :samp:`{Syntax}:`
+
     =============================
     ``RESULT = REAL(A [, KIND])``
     ``RESULT = REALPART(Z)``
@@ -63,6 +64,7 @@ REAL --- Convert to real type
       end program test_real
 
   :samp:`{Specific names}:`
+
     =============  ==============  ===========  =============
     Name           Argument        Return type  Standard
     ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension

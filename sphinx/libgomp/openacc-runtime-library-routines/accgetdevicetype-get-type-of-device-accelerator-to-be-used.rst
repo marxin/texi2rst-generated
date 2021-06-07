@@ -14,11 +14,13 @@ Description
   Interface), that is, if the device is currently being initialized.
 
 :samp:`{C/C++}:`
+
   ============  ===========================================
   *Prototype*:  ``acc_device_t acc_get_device_type(void);``
   ============  ===========================================
 
 :samp:`{Fortran}:`
+
   ============  =====================================================
   *Interface*:  ``function acc_get_device_type(void)``
                 ``integer(kind=acc_device_kind) acc_get_device_type``

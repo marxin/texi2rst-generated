@@ -7,6 +7,7 @@ acc_prof_lookup -- Obtain inquiry functions.
   Function to obtain inquiry functions.
 
 :samp:`{C/C++}:`
+
   ============  ================================================
   *Prototype*:  ``acc_query_fn acc_prof_lookup (const char *);``
   ============  ================================================

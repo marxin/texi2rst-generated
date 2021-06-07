@@ -38,6 +38,7 @@ IPARITY --- Bitwise XOR of array elements
     Transformational function
 
   :samp:`{Syntax}:`
+
     ========================================
     ``RESULT = IPARITY(ARRAY[, MASK])``
     ``RESULT = IPARITY(ARRAY, DIM[, MASK])``

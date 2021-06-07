@@ -8,6 +8,7 @@ Description
   the device address of the allocated memory.
 
 :samp:`{C/C++}:`
+
   ============  ===================================
   *Prototype*:  ``d_void* acc_malloc(size_t len);``
   ============  ===================================

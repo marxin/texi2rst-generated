@@ -10,11 +10,13 @@ omp_get_wtime -- Elapsed wall clock time
   guaranteed not to change during the execution of the program.
 
 :samp:`{C/C++}:`
+
   ============  ===============================
   *Prototype*:  ``double omp_get_wtime(void);``
   ============  ===============================
 
 :samp:`{Fortran}:`
+
   ============  =============================================
   *Interface*:  ``double precision function omp_get_wtime()``
   ============  =============================================

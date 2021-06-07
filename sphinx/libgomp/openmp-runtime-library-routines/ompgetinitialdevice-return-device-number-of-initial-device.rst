@@ -9,11 +9,13 @@ omp_get_initial_device -- Return device number of initial device
   ``omp_get_num_devices`` function.
 
 C/C++
+
   ============  =====================================
   *Prototype*:  ``int omp_get_initial_device(void);``
   ============  =====================================
 
 :samp:`{Fortran}:`
+
   ============  =============================================
   *Interface*:  ``integer function omp_get_initial_device()``
   ============  =============================================

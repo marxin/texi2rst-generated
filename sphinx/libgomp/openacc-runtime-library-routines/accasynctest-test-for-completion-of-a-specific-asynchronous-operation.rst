@@ -11,11 +11,13 @@ Description
   a zero and Fortran returns a ``false``.
 
 :samp:`{C/C++}:`
+
   ============  ================================
   *Prototype*:  ``int acc_async_test(int arg);``
   ============  ================================
 
 :samp:`{Fortran}:`
+
   ============  =====================================
   *Interface*:  ``function acc_async_test(arg)``
                 ``integer(kind=acc_handle_kind) arg``

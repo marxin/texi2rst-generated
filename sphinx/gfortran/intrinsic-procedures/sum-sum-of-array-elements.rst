@@ -41,6 +41,7 @@ SUM --- Sum of array elements
     Transformational function
 
   :samp:`{Syntax}:`
+
     ====================================
     ``RESULT = SUM(ARRAY[, MASK])``
     ``RESULT = SUM(ARRAY, DIM[, MASK])``

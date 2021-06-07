@@ -46,6 +46,7 @@ ACOSH --- Inverse hyperbolic cosine function
       END PROGRAM
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     ``DACOSH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension

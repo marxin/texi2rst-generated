@@ -13,12 +13,14 @@ Description
   array element and :samp:`{len}` specifies the length in bytes.
 
 :samp:`{C/C++}:`
+
   ============  ====================================================
   *Prototype*:  ``acc_update_device(h_void *a, size_t len);``
   *Prototype*:  ``acc_update_device(h_void *a, size_t len, async);``
   ============  ====================================================
 
 :samp:`{Fortran}:`
+
   ============  =====================================================
   *Interface*:  ``subroutine acc_update_device(a)``
                 ``type, dimension(:[,:]...) :: a``

@@ -7,11 +7,13 @@ omp_get_team_num -- Get team number
   Returns the team number of the calling thread.
 
 :samp:`{C/C++}:`
+
   ============  ===============================
   *Prototype*:  ``int omp_get_team_num(void);``
   ============  ===============================
 
 :samp:`{Fortran}:`
+
   ============  =======================================
   *Interface*:  ``integer function omp_get_team_num()``
   ============  =======================================

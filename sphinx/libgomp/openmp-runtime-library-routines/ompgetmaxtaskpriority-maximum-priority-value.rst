@@ -9,11 +9,13 @@ that can be set for tasks.
   This function obtains the maximum allowed priority number for tasks.
 
 C/C++
+
   ============  ========================================
   *Prototype*:  ``int omp_get_max_task_priority(void);``
   ============  ========================================
 
 :samp:`{Fortran}:`
+
   ============  ================================================
   *Interface*:  ``integer function omp_get_max_task_priority()``
   ============  ================================================

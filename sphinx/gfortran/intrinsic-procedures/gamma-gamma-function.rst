@@ -43,6 +43,7 @@ GAMMA --- Gamma function
       end program test_gamma
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     ``DGAMMA(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension

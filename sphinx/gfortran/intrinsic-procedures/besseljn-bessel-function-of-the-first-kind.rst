@@ -43,6 +43,7 @@ BESSEL_JN --- Bessel function of the first kind
     ``BESSEL_JN(N1, N2, X)``
 
   :samp:`{Syntax}:`
+
     =================================
     ``RESULT = BESSEL_JN(N, X)``
     ``RESULT = BESSEL_JN(N1, N2, X)``
@@ -63,6 +64,7 @@ BESSEL_JN --- Bessel function of the first kind
       end program test_besjn
 
   :samp:`{Specific names}:`
+
     ================  =============  ===========  =============
     Name              Argument       Return type  Standard
     ``DBESJN(N, X)``  ``INTEGER N``  ``REAL(8)``  GNU extension

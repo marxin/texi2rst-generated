@@ -38,6 +38,7 @@ CHMOD --- Change access permissions of files
     Subroutine, function
 
   :samp:`{Syntax}:`
+
     ====================================
     ``CALL CHMOD(NAME, MODE[, STATUS])``
     ``STATUS = CHMOD(NAME, MODE)``

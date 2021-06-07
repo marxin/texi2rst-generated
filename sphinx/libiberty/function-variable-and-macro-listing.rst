@@ -615,6 +615,7 @@ those provided by ctype.h:
   ``UPPER``   A-Z
   ``XDIGIT``  0-9A-Fa-f
   ==========  ================================
+
   Note that, if the host character set is ASCII or a superset thereof,
   all these macros will return false for all values of ``char`` outside
   the range of 7-bit ASCII.  In particular, both ISPRINT and ISCNTRL return

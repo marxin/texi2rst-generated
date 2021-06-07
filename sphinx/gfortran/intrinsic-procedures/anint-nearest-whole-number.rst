@@ -52,6 +52,7 @@ ANINT --- Nearest whole number
       end program test_anint
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ``ANINT(A)``  ``REAL(4) A``  ``REAL(4)``  Fortran 77 and later

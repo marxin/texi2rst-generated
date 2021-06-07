@@ -10,10 +10,12 @@ Syntax
   ``__float128 strtoflt128 (const char *s, char **sp)``
 
 :samp:`{Arguments}:`
+
   ============  ===============================================
   :samp:`{s}`   input string
   :samp:`{sp}`  the address of the next character in the string
   ============  ===============================================
+
   The argument :samp:`{sp}` contains, if not ``NULL``, the address of the
   next character following the parts of the string, which have been read.
 
