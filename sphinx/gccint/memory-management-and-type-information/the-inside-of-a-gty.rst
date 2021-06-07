@@ -93,7 +93,10 @@ The available options are:
 
   This second use of ``length`` also works on global variables, like:
 
-  static GTY((length("reg_known_value_size"))) rtx *reg_known_value;
+  .. code-block:: c++
+
+    static GTY((length("reg_known_value_size"))) rtx *reg_known_value;
+
   Note that the ``length`` option is only meant for use with arrays of
   non-atomic objects, that is, objects that contain pointers pointing to
   other GTY-managed objects.  For other GC-allocated arrays and strings
