@@ -50,7 +50,7 @@ _gfortran_caf_init --- Initialiation function
 
 .. index:: Coarray, _gfortran_caf_init
 
-.. function:: _gfortran_caf_init
+.. function:: void _gfortran_caf_init (int *argc, char ***argv) 
 
   This function is called at startup of the program before the Fortran main
   program, if the latter has been compiled with :option:`-fcoarray`:samp:`=lib`.
@@ -65,9 +65,6 @@ _gfortran_caf_init --- Initialiation function
   :param argv:
     intent(inout) A pointer to an array of strings with the
     command-line arguments or ``NULL``.
-
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_init (int *argc, char ***argv)``
 
   .. envvar:: NOTES
 
@@ -85,13 +82,10 @@ _gfortran_caf_finish --- Finalization function
 
 .. index:: Coarray, _gfortran_caf_finish
 
-.. function:: _gfortran_caf_finish
+.. function:: void _gfortran_caf_finish (void) 
 
   This function is called at the end of the Fortran main program, if it has
   been compiled with the :option:`-fcoarray`:samp:`=lib` option.
-
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_finish (void)``
 
   .. envvar:: NOTES
 
@@ -109,16 +103,13 @@ _gfortran_caf_this_image --- Querying the image number
 
 .. index:: Coarray, _gfortran_caf_this_image
 
-.. function:: _gfortran_caf_this_image
+.. function:: int _gfortran_caf_this_image (int distance) 
 
   This function returns the current image number, which is a positive number.
 
   :param distance:
     As specified for the ``this_image`` intrinsic
     in TS18508.  Shall be a non-negative number.
-
-  :samp:`{Syntax}:`
-    ``int _gfortran_caf_this_image (int distance)``
 
   .. envvar:: NOTES
 
@@ -133,7 +124,7 @@ _gfortran_caf_num_images --- Querying the maximal number of images
 
 .. index:: Coarray, _gfortran_caf_num_images
 
-.. function:: _gfortran_caf_num_images
+.. function:: int _gfortran_caf_num_images(int distance, int failed) 
 
   This function returns the number of images in the current team, if
   :samp:`{distance}` is 0 or the number of images in the parent team at the specified
@@ -148,9 +139,6 @@ _gfortran_caf_num_images --- Querying the maximal number of images
   :param failed:
     shall be -1, 0, or 1
 
-  :samp:`{Syntax}:`
-    ``int _gfortran_caf_num_images(int distance, int failed)``
-
   .. envvar:: NOTES
 
     This function follows TS18508. If the num_image intrinsic has no arguments,
@@ -163,7 +151,7 @@ _gfortran_caf_image_status --- Query the status of an image
 
 .. index:: Coarray, _gfortran_caf_image_status
 
-.. function:: _gfortran_caf_image_status
+.. function:: int _gfortran_caf_image_status (int image, caf_team_t * team) 
 
   Get the status of the image given by the id :samp:`{image}` of the team given by
   :samp:`{team}`.  Valid results are zero, for image is ok, ``STAT_STOPPED_IMAGE``
@@ -178,9 +166,6 @@ _gfortran_caf_image_status --- Query the status of an image
     optional; team on the which the inquiry is to be
     performed.
 
-  :samp:`{Syntax}:`
-    ``int _gfortran_caf_image_status (int image, caf_team_t * team)``
-
   .. envvar:: NOTES
 
     This function follows TS18508.  Because team-functionality is not yet
@@ -193,7 +178,7 @@ _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
 
 .. index:: Coarray, _gfortran_caf_failed_images
 
-.. function:: _gfortran_caf_failed_images
+.. function:: int _gfortran_caf_failed_images (caf_team_t * team, int * kind) 
 
   Get an array of image indexes in the current :samp:`{team}` that have failed.  The
   array is sorted ascendingly.  When :samp:`{team}` is not provided the current team
@@ -208,9 +193,6 @@ _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
   :param image:
     optional; the kind of the resulting integer array.
 
-  :samp:`{Syntax}:`
-    ``int _gfortran_caf_failed_images (caf_team_t * team, int * kind)``
-
   .. envvar:: NOTES
 
     This function follows TS18508.  Because team-functionality is not yet
@@ -223,7 +205,7 @@ _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped imag
 
 .. index:: Coarray, _gfortran_caf_stopped_images
 
-.. function:: _gfortran_caf_stopped_images
+.. function:: int _gfortran_caf_stopped_images (caf_team_t * team, int * kind) 
 
   Get an array of image indexes in the current :samp:`{team}` that have stopped.  The
   array is sorted ascendingly.  When :samp:`{team}` is not provided the current team
@@ -238,9 +220,6 @@ _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped imag
   :param image:
     optional; the kind of the resulting integer array.
 
-  :samp:`{Syntax}:`
-    ``int _gfortran_caf_stopped_images (caf_team_t * team, int * kind)``
-
   .. envvar:: NOTES
 
     This function follows TS18508.  Because team-functionality is not yet
@@ -253,7 +232,7 @@ _gfortran_caf_register --- Registering coarrays
 
 .. index:: Coarray, _gfortran_caf_register
 
-.. function:: _gfortran_caf_register
+.. function:: void caf_register (size_t size, caf_register_t type, caf_token_t *token, gfc_descriptor_t *desc, int *stat, char *errmsg, size_t errmsg_len) 
 
   Registers memory for a coarray and creates a token to identify the coarray.  The
   routine is called for both coarrays with ``SAVE`` attribute and using an
@@ -294,10 +273,6 @@ _gfortran_caf_register --- Registering coarrays
   :param errmsg_len:
     the buffer size of errmsg.
 
-  :samp:`{Syntax}:`
-    ``void caf_register (size_t size, caf_register_t type, caf_token_t *token,
-    gfc_descriptor_t *desc, int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     Nonallocatable coarrays have to be registered prior use from remote images.
@@ -326,7 +301,7 @@ _gfortran_caf_deregister --- Deregistering coarrays
 
 .. index:: Coarray, _gfortran_caf_deregister
 
-.. function:: _gfortran_caf_deregister
+.. function:: void caf_deregister (caf_token_t *token, caf_deregister_t type, int *stat, char *errmsg, size_t errmsg_len) 
 
   Called to free or deregister the memory of a coarray; the processor calls this
   function for automatic and explicit deallocation.  In case of an error, this
@@ -353,10 +328,6 @@ _gfortran_caf_deregister --- Deregistering coarrays
   :param errmsg_len:
     the buffer size of errmsg.
 
-  :samp:`{Syntax}:`
-    ``void caf_deregister (caf_token_t *token, caf_deregister_t type,
-    int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     For nonalloatable coarrays this function is never called.  If a cleanup is
@@ -370,7 +341,7 @@ _gfortran_caf_is_present --- Query whether an allocatable or pointer component i
 
 .. index:: Coarray, _gfortran_caf_is_present
 
-.. function:: _gfortran_caf_is_present
+.. function:: void _gfortran_caf_is_present (caf_token_t token, int image_index, gfc_reference_t *ref) 
 
   Used to query the coarray library whether an allocatable component in a derived
   type coarray is allocated on a remote image.
@@ -387,10 +358,6 @@ _gfortran_caf_is_present --- Query whether an allocatable or pointer component i
     pointer component in the derived type coarray.  The object reference needs to be
     a scalar or a full array reference, respectively.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_is_present (caf_token_t token, int image_index,
-    gfc_reference_t *ref)``
-
 .. __gfortran_caf_send:
 
 _gfortran_caf_send --- Sending data from a local image to a remote image
@@ -398,7 +365,7 @@ _gfortran_caf_send --- Sending data from a local image to a remote image
 
 .. index:: Coarray, _gfortran_caf_send
 
-.. function:: _gfortran_caf_send
+.. function:: void _gfortran_caf_send (caf_token_t token, size_t offset, int image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector, gfc_descriptor_t *src, int dst_kind, int src_kind, bool may_require_tmp, int *stat) 
 
   Called to send a scalar, an array section or a whole array from a local
   to a remote image identified by the image_index.
@@ -445,12 +412,6 @@ _gfortran_caf_send --- Sending data from a local image to a remote image
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_send (caf_token_t token, size_t offset,
-    int image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector,
-    gfc_descriptor_t *src, int dst_kind, int src_kind, bool may_require_tmp,
-    int *stat)``
-
   .. envvar:: NOTES
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory
@@ -473,7 +434,7 @@ _gfortran_caf_get --- Getting data from a remote image
 
 .. index:: Coarray, _gfortran_caf_get
 
-.. function:: _gfortran_caf_get
+.. function:: void _gfortran_caf_get (caf_token_t token, size_t offset, int image_index, gfc_descriptor_t *src, caf_vector_t *src_vector, gfc_descriptor_t *dest, int src_kind, int dst_kind, bool may_require_tmp, int *stat) 
 
   Called to get an array section or a whole array from a remote,
   image identified by the image_index.
@@ -520,12 +481,6 @@ _gfortran_caf_get --- Getting data from a remote image
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_get (caf_token_t token, size_t offset,
-    int image_index, gfc_descriptor_t *src, caf_vector_t *src_vector,
-    gfc_descriptor_t *dest, int src_kind, int dst_kind, bool may_require_tmp,
-    int *stat)``
-
   .. envvar:: NOTES
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory of
@@ -547,7 +502,7 @@ _gfortran_caf_sendget --- Sending data between remote images
 
 .. index:: Coarray, _gfortran_caf_sendget
 
-.. function:: _gfortran_caf_sendget
+.. function:: void _gfortran_caf_sendget (caf_token_t dst_token, size_t dst_offset, int dst_image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector, caf_token_t src_token, size_t src_offset, int src_image_index, gfc_descriptor_t *src, caf_vector_t *src_vector, int dst_kind, int src_kind, bool may_require_tmp, int *stat) 
 
   Called to send a scalar, an array section or a whole array from a remote image
   identified by the :samp:`{src_image_index}` to a remote image identified by the
@@ -613,13 +568,6 @@ _gfortran_caf_sendget --- Sending data between remote images
     operation, i.e., zero on success and non-zero on error.  When NULL and an error
     occurs, then an error message is printed and the program is terminated.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_sendget (caf_token_t dst_token, size_t dst_offset,
-    int dst_image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector,
-    caf_token_t src_token, size_t src_offset, int src_image_index,
-    gfc_descriptor_t *src, caf_vector_t *src_vector, int dst_kind, int src_kind,
-    bool may_require_tmp, int *stat)``
-
   .. envvar:: NOTES
 
     It is permitted to have the same image index for both :samp:`{src_image_index}` and
@@ -642,7 +590,7 @@ _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image 
 
 .. index:: Coarray, _gfortran_caf_send_by_ref
 
-.. function:: _gfortran_caf_send_by_ref
+.. function:: void _gfortran_caf_send_by_ref (caf_token_t token, int image_index, gfc_descriptor_t *src, caf_reference_t *refs, int dst_kind, int src_kind, bool may_require_tmp, bool dst_reallocatable, int *stat, int dst_type) 
 
   Called to send a scalar, an array section or a whole array from a local to a
   remote image identified by the :samp:`{image_index}`.
@@ -690,11 +638,6 @@ _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image 
     the destination is not an array, than the precise type, e.g. of a component in
     a derived type, is not known, but provided here.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_send_by_ref (caf_token_t token, int image_index,
-    gfc_descriptor_t *src, caf_reference_t *refs, int dst_kind, int src_kind,
-    bool may_require_tmp, bool dst_reallocatable, int *stat, int dst_type)``
-
   .. envvar:: NOTES
 
     It is permitted to have :samp:`{image_index}` equal the current image; the memory of
@@ -721,7 +664,7 @@ _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced ref
 
 .. index:: Coarray, _gfortran_caf_get_by_ref
 
-.. function:: _gfortran_caf_get_by_ref
+.. function:: void _gfortran_caf_get_by_ref (caf_token_t token, int image_index, caf_reference_t *refs, gfc_descriptor_t *dst, int dst_kind, int src_kind, bool may_require_tmp, bool dst_reallocatable, int *stat, int src_type) 
 
   Called to get a scalar, an array section or a whole array from a remote image
   identified by the :samp:`{image_index}`.
@@ -770,11 +713,6 @@ _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced ref
     source is not an array, than the precise type, e.g. of a component in a
     derived type, is not known, but provided here.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_get_by_ref (caf_token_t token, int image_index,
-    caf_reference_t *refs, gfc_descriptor_t *dst, int dst_kind, int src_kind,
-    bool may_require_tmp, bool dst_reallocatable, int *stat, int src_type)``
-
   .. envvar:: NOTES
 
     It is permitted to have ``image_index`` equal the current image; the memory
@@ -800,7 +738,7 @@ _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanc
 
 .. index:: Coarray, _gfortran_caf_sendget_by_ref
 
-.. function:: _gfortran_caf_sendget_by_ref
+.. function:: void _gfortran_caf_sendget_by_ref (caf_token_t dst_token, int dst_image_index, caf_reference_t *dst_refs, caf_token_t src_token, int src_image_index, caf_reference_t *src_refs, int dst_kind, int src_kind, bool may_require_tmp, int *dst_stat, int *src_stat, int dst_type, int src_type) 
 
   Called to send a scalar, an array section or a whole array from a remote image
   identified by the :samp:`{src_image_index}` to a remote image identified by the
@@ -865,13 +803,6 @@ _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanc
     source is not an array, than the precise type, e.g. of a component in a
     derived type, is not known, but provided here.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_sendget_by_ref (caf_token_t dst_token,
-    int dst_image_index, caf_reference_t *dst_refs,
-    caf_token_t src_token, int src_image_index, caf_reference_t *src_refs,
-    int dst_kind, int src_kind, bool may_require_tmp, int *dst_stat,
-    int *src_stat, int dst_type, int src_type)``
-
   .. envvar:: NOTES
 
     It is permitted to have the same image index for both :samp:`{src_image_index}` and
@@ -898,7 +829,7 @@ _gfortran_caf_lock --- Locking a lock variable
 
 .. index:: Coarray, _gfortran_caf_lock
 
-.. function:: _gfortran_caf_lock
+.. function:: void _gfortran_caf_lock (caf_token_t token, size_t index, int image_index, int *acquired_lock, int *stat, char *errmsg, size_t errmsg_len) 
 
   Acquire a lock on the given image on a scalar locking variable or for the
   given array element for an array-valued variable.  If the :samp:`{acquired_lock}`
@@ -932,10 +863,6 @@ _gfortran_caf_lock --- Locking a lock variable
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_lock (caf_token_t token, size_t index, int image_index,
-    int *acquired_lock, int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     This function is also called for critical blocks; for those, the array index
@@ -949,7 +876,7 @@ _gfortran_caf_lock --- Unlocking a lock variable
 
 .. index:: Coarray, _gfortran_caf_unlock
 
-.. function:: _gfortran_caf_lock
+.. function:: void _gfortran_caf_unlock (caf_token_t token, size_t index, int image_index, int *stat, char *errmsg, size_t errmsg_len) 
 
   Release a lock on the given image on a scalar locking variable or for the
   given array element for an array-valued variable. Unlocking a lock variable
@@ -977,10 +904,6 @@ _gfortran_caf_lock --- Unlocking a lock variable
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_unlock (caf_token_t token, size_t index, int image_index,
-    int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     This function is also called for critical block; for those, the array index
@@ -994,7 +917,7 @@ _gfortran_caf_event_post --- Post an event
 
 .. index:: Coarray, _gfortran_caf_event_post
 
-.. function:: _gfortran_caf_event_post
+.. function:: void _gfortran_caf_event_post (caf_token_t token, size_t index, int image_index, int *stat, char *errmsg, size_t errmsg_len) 
 
   Increment the event count of the specified event variable.
 
@@ -1019,10 +942,6 @@ _gfortran_caf_event_post --- Post an event
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_event_post (caf_token_t token, size_t index,
-    int image_index, int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     This acts like an atomic add of one to the remote image's event variable.
@@ -1038,7 +957,7 @@ _gfortran_caf_event_wait --- Wait that an event occurred
 
 .. index:: Coarray, _gfortran_caf_event_wait
 
-.. function:: _gfortran_caf_event_wait
+.. function:: void _gfortran_caf_event_wait (caf_token_t token, size_t index, int until_count, int *stat, char *errmsg, size_t errmsg_len) 
 
   Wait until the event count has reached at least the specified
   :samp:`{until_count}` ; if so, atomically decrement the event variable by this
@@ -1065,10 +984,6 @@ _gfortran_caf_event_wait --- Wait that an event occurred
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_event_wait (caf_token_t token, size_t index,
-    int until_count, int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     This function only operates on a local coarray. It acts like a loop checking
@@ -1092,7 +1007,7 @@ _gfortran_caf_event_query --- Query event count
 
 .. index:: Coarray, _gfortran_caf_event_query
 
-.. function:: _gfortran_caf_event_query
+.. function:: void _gfortran_caf_event_query (caf_token_t token, size_t index, int image_index, int *count, int *stat) 
 
   Return the event count of the specified event variable.
 
@@ -1114,10 +1029,6 @@ _gfortran_caf_event_query --- Query event count
   :param stat:
     intent(out)  Stores the STAT=; may be NULL.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_event_query (caf_token_t token, size_t index,
-    int image_index, int *count, int *stat)``
-
   .. envvar:: NOTES
 
     The typical use is to check the local event variable to only call
@@ -1132,7 +1043,7 @@ _gfortran_caf_sync_all --- All-image barrier
 
 .. index:: Coarray, _gfortran_caf_sync_all
 
-.. function:: _gfortran_caf_sync_all
+.. function:: void _gfortran_caf_sync_all (int *stat, char *errmsg, size_t errmsg_len) 
 
   Synchronization of all images in the current team; the program only continues
   on a given image after this function has been called on all images of the
@@ -1149,9 +1060,6 @@ _gfortran_caf_sync_all --- All-image barrier
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_sync_all (int *stat, char *errmsg, size_t errmsg_len)``
-
 .. __gfortran_caf_sync_images:
 
 _gfortran_caf_sync_images --- Barrier for selected images
@@ -1159,7 +1067,7 @@ _gfortran_caf_sync_images --- Barrier for selected images
 
 .. index:: Coarray, _gfortran_caf_sync_images
 
-.. function:: _gfortran_caf_sync_images
+.. function:: void _gfortran_caf_sync_images (int count, int images[], int *stat, char *errmsg, size_t errmsg_len) 
 
   Synchronization between the specified images; the program only continues on a
   given image after this function has been called on all images specified for
@@ -1187,10 +1095,6 @@ _gfortran_caf_sync_images --- Barrier for selected images
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_sync_images (int count, int images[], int *stat,
-    char *errmsg, size_t errmsg_len)``
-
 .. __gfortran_caf_sync_memory:
 
 _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
@@ -1198,7 +1102,7 @@ _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
 
 .. index:: Coarray, _gfortran_caf_sync_memory
 
-.. function:: _gfortran_caf_sync_memory
+.. function:: void _gfortran_caf_sync_memory (int *stat, char *errmsg, size_t errmsg_len) 
 
   Acts as optimization barrier between different segments. It also ensures that
   all pending memory operations of this image have been completed.
@@ -1213,9 +1117,6 @@ _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_sync_memory (int *stat, char *errmsg, size_t errmsg_len)``
-
   :samp:`{NOTE} A simple implementation could be`
     ``__asm__ __volatile__ ("":::"memory")`` to prevent code movements.
 
@@ -1226,16 +1127,13 @@ _gfortran_caf_error_stop --- Error termination with exit code
 
 .. index:: Coarray, _gfortran_caf_error_stop
 
-.. function:: _gfortran_caf_error_stop
+.. function:: void _gfortran_caf_error_stop (int error) 
 
   Invoked for an ``ERROR STOP`` statement which has an integer argument.  The
   function should terminate the program with the specified exit code.
 
   :param error:
     intent(in)  The exit status to be used.
-
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_error_stop (int error)``
 
 .. __gfortran_caf_error_stop_str:
 
@@ -1244,7 +1142,7 @@ _gfortran_caf_error_stop_str --- Error termination with string
 
 .. index:: Coarray, _gfortran_caf_error_stop_str
 
-.. function:: _gfortran_caf_error_stop_str
+.. function:: void _gfortran_caf_error_stop (const char *string, size_t len) 
 
   Invoked for an ``ERROR STOP`` statement which has a string as argument.  The
   function should terminate the program with a nonzero-exit code.
@@ -1255,9 +1153,6 @@ _gfortran_caf_error_stop_str --- Error termination with string
   :param len:
     intent(in)  the length of the string
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_error_stop (const char *string, size_t len)``
-
 .. __gfortran_caf_fail_image:
 
 _gfortran_caf_fail_image --- Mark the image failed and end its execution
@@ -1265,13 +1160,10 @@ _gfortran_caf_fail_image --- Mark the image failed and end its execution
 
 .. index:: Coarray, _gfortran_caf_fail_image
 
-.. function:: _gfortran_caf_fail_image
+.. function:: void _gfortran_caf_fail_image () 
 
   Invoked for an ``FAIL IMAGE`` statement.  The function should terminate the
   current image.
-
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_fail_image ()``
 
   .. envvar:: NOTES
 
@@ -1284,7 +1176,7 @@ _gfortran_caf_atomic_define --- Atomic variable assignment
 
 .. index:: Coarray, _gfortran_caf_atomic_define
 
-.. function:: _gfortran_caf_atomic_define
+.. function:: void _gfortran_caf_atomic_define (caf_token_t token, size_t offset, int image_index, void *value, int *stat, int type, int kind) 
 
   Assign atomically a value to an integer or logical variable.
 
@@ -1312,10 +1204,6 @@ _gfortran_caf_atomic_define --- Atomic variable assignment
   :param kind:
     intent(in)  The kind value (only 4; always ``int`` )
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_atomic_define (caf_token_t token, size_t offset,
-    int image_index, void *value, int *stat, int type, int kind)``
-
 .. __gfortran_caf_atomic_ref:
 
 _gfortran_caf_atomic_ref --- Atomic variable reference
@@ -1323,7 +1211,7 @@ _gfortran_caf_atomic_ref --- Atomic variable reference
 
 .. index:: Coarray, _gfortran_caf_atomic_ref
 
-.. function:: _gfortran_caf_atomic_ref
+.. function:: void _gfortran_caf_atomic_ref (caf_token_t token, size_t offset, int image_index, void *value, int *stat, int type, int kind) 
 
   Reference atomically a value of a kind-4 integer or logical variable.
 
@@ -1352,10 +1240,6 @@ _gfortran_caf_atomic_ref --- Atomic variable reference
   :param kind:
     The kind value (only 4; always ``int`` )
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_atomic_ref (caf_token_t token, size_t offset,
-    int image_index, void *value, int *stat, int type, int kind)``
-
 .. __gfortran_caf_atomic_cas:
 
 _gfortran_caf_atomic_cas --- Atomic compare and swap
@@ -1363,7 +1247,7 @@ _gfortran_caf_atomic_cas --- Atomic compare and swap
 
 .. index:: Coarray, _gfortran_caf_atomic_cas
 
-.. function:: _gfortran_caf_atomic_cas
+.. function:: void _gfortran_caf_atomic_cas (caf_token_t token, size_t offset, int image_index, void *old, void *compare, void *new_val, int *stat, int type, int kind) 
 
   Atomic compare and swap of a kind-4 integer or logical variable. Assigns
   atomically the specified value to the atomic variable, if the latter has
@@ -1402,11 +1286,6 @@ _gfortran_caf_atomic_cas --- Atomic compare and swap
   :param kind:
     intent(in)  The kind value (only 4; always ``int`` )
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_atomic_cas (caf_token_t token, size_t offset,
-    int image_index, void *old, void *compare, void *new_val, int *stat,
-    int type, int kind)``
-
 .. __gfortran_caf_atomic_op:
 
 _gfortran_caf_atomic_op --- Atomic operation
@@ -1414,7 +1293,7 @@ _gfortran_caf_atomic_op --- Atomic operation
 
 .. index:: Coarray, _gfortran_caf_atomic_op
 
-.. function:: _gfortran_caf_atomic_op
+.. function:: void _gfortran_caf_atomic_op (int op, caf_token_t token, size_t offset, int image_index, void *value, void *old, int *stat, int type, int kind) 
 
   Apply an operation atomically to an atomic integer or logical variable.
   After the operation, :samp:`{old}` contains the value just before the operation,
@@ -1458,10 +1337,6 @@ _gfortran_caf_atomic_op --- Atomic operation
   :param kind:
     intent(in)  the kind value (only 4; always ``int`` )
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_atomic_op (int op, caf_token_t token, size_t offset,
-    int image_index, void *value, void *old, int *stat, int type, int kind)``
-
 .. __gfortran_caf_co_broadcast:
 
 _gfortran_caf_co_broadcast --- Sending data to all images
@@ -1469,7 +1344,7 @@ _gfortran_caf_co_broadcast --- Sending data to all images
 
 .. index:: Coarray, _gfortran_caf_co_broadcast
 
-.. function:: _gfortran_caf_co_broadcast
+.. function:: void _gfortran_caf_co_broadcast (gfc_descriptor_t *a, int source_image, int *stat, char *errmsg, size_t errmsg_len) 
 
   Distribute a value from a given image to all other images in the team. Has to
   be called collectively.
@@ -1492,10 +1367,6 @@ _gfortran_caf_co_broadcast --- Sending data to all images
   :param errmsg_len:
     intent(in)  the buffer size of errmsg.
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_co_broadcast (gfc_descriptor_t *a,
-    int source_image, int *stat, char *errmsg, size_t errmsg_len)``
-
 .. __gfortran_caf_co_max:
 
 _gfortran_caf_co_max --- Collective maximum reduction
@@ -1503,7 +1374,7 @@ _gfortran_caf_co_max --- Collective maximum reduction
 
 .. index:: Coarray, _gfortran_caf_co_max
 
-.. function:: _gfortran_caf_co_max
+.. function:: void _gfortran_caf_co_max (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 
   Calculates for each array element of the variable :samp:`{a}` the maximum
   value for that element in the current team; if :samp:`{result_image}` has the
@@ -1532,10 +1403,6 @@ _gfortran_caf_co_max --- Collective maximum reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_co_max (gfc_descriptor_t *a, int result_image,
-    int *stat, char *errmsg, int a_len, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
@@ -1549,7 +1416,7 @@ _gfortran_caf_co_min --- Collective minimum reduction
 
 .. index:: Coarray, _gfortran_caf_co_min
 
-.. function:: _gfortran_caf_co_min
+.. function:: void _gfortran_caf_co_min (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 
   Calculates for each array element of the variable :samp:`{a}` the minimum
   value for that element in the current team; if :samp:`{result_image}` has the
@@ -1578,10 +1445,6 @@ _gfortran_caf_co_min --- Collective minimum reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_co_min (gfc_descriptor_t *a, int result_image,
-    int *stat, char *errmsg, int a_len, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
@@ -1595,7 +1458,7 @@ _gfortran_caf_co_sum --- Collective summing reduction
 
 .. index:: Coarray, _gfortran_caf_co_sum
 
-.. function:: _gfortran_caf_co_sum
+.. function:: void _gfortran_caf_co_sum (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, size_t errmsg_len) 
 
   Calculates for each array element of the variable :samp:`{a}` the sum of all
   values for that element in the current team; if :samp:`{result_image}` has the
@@ -1620,10 +1483,6 @@ _gfortran_caf_co_sum --- Collective summing reduction
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_co_sum (gfc_descriptor_t *a, int result_image,
-    int *stat, char *errmsg, size_t errmsg_len)``
-
   .. envvar:: NOTES
 
     If :samp:`{result_image}` is nonzero, the data in the array descriptor :samp:`{a}` on
@@ -1637,7 +1496,7 @@ _gfortran_caf_co_reduce --- Generic collective reduction
 
 .. index:: Coarray, _gfortran_caf_co_reduce
 
-.. function:: _gfortran_caf_co_reduce
+.. function:: void _gfortran_caf_co_reduce (gfc_descriptor_t *a, void * (*opr) (void *, void *), int opr_flags, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 
   Calculates for each array element of the variable :samp:`{a}` the reduction
   value for that element in the current team; if :samp:`{result_image}` has the
@@ -1671,11 +1530,6 @@ _gfortran_caf_co_reduce --- Generic collective reduction
 
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
-
-  :samp:`{Syntax}:`
-    ``void _gfortran_caf_co_reduce (gfc_descriptor_t *a,
-    void * (*opr) (void *, void *), int opr_flags, int result_image,
-    int *stat, char *errmsg, int a_len, size_t errmsg_len)``
 
   .. envvar:: NOTES
 
