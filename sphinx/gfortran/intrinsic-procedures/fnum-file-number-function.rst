@@ -1,4 +1,4 @@
-  .. _fnum:
+.. _fnum:
 
 FNUM --- File number function
 *****************************
@@ -7,36 +7,35 @@ FNUM --- File number function
 
 .. index:: file operation, file number
 
-:samp:`{Description}:`
+.. function:: FNUM(UNIT)
+
   ``FNUM(UNIT)`` returns the POSIX file descriptor number corresponding to the
   open Fortran I/O unit ``UNIT``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param UNIT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Function
+  :return:
+    The return value is of type ``INTEGER``
 
-:samp:`{Syntax}:`
-  ``RESULT = FNUM(UNIT)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ==============  ==============================
-  :samp:`{UNIT}`  The type shall be ``INTEGER``.
-  ==============  ==============================
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER``
+  :samp:`{Syntax}:`
+    ``RESULT = FNUM(UNIT)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_fnum
-      integer :: i
-      open (unit=10, status = "scratch")
-      i = fnum(10)
-      print *, i
-      close (10)
-    end program test_fnum
+      program test_fnum
+        integer :: i
+        open (unit=10, status = "scratch")
+        i = fnum(10)
+        print *, i
+        close (10)
+      end program test_fnum
 

@@ -1,4 +1,4 @@
-  .. _fget:
+.. _fget:
 
 FGET --- Read a single character in stream mode from stdin 
 ***********************************************************
@@ -11,60 +11,53 @@ FGET --- Read a single character in stream mode from stdin
 
 .. index:: file operation, read character
 
-:samp:`{Description}:`
+.. function:: FGET
+
   Read a single character in stream mode from stdin by bypassing normal 
   formatted output. Stream I/O should not be mixed with normal record-oriented 
   (formatted or unformatted) I/O on the same unit; the results are unpredictable.
 
-  This intrinsic is provided in both subroutine and function forms; however,
-  only one form can be used in any given program unit.
+  :param C:
+    The type shall be ``CHARACTER`` and of default
+    kind.
 
-  Note that the ``FGET`` intrinsic is provided for backwards compatibility with 
-  :command:`g77`.  GNU Fortran provides the Fortran 2003 Stream facility.
-  Programmers should consider the use of new stream IO feature in new code 
-  for future portability. See also Fortran 2003 status.
+  :param STATUS:
+    (Optional) status flag of type ``INTEGER``.
+    Returns 0 on success, -1 on end-of-file, and a system specific positive
+    error code otherwise.
 
-:samp:`{Standard}:`
-  GNU extension
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Syntax}:`
-  ===========================
-  ``CALL FGET(C [, STATUS])``
-  ``STATUS = FGET(C)``
-  ===========================
+  :samp:`{Syntax}:`
+    ===========================
+    ``CALL FGET(C [, STATUS])``
+    ``STATUS = FGET(C)``
+    ===========================
 
-:samp:`{Arguments}:`
-  ================  =======================================================================
-  :samp:`{C}`       The type shall be ``CHARACTER`` and of default
-                    kind.
-  :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER``.
-                    Returns 0 on success, -1 on end-of-file, and a system specific positive
-                    error code otherwise.
-  ================  =======================================================================
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      PROGRAM test_fget
+        INTEGER, PARAMETER :: strlen = 100
+        INTEGER :: status, i = 1
+        CHARACTER(len=strlen) :: str = ""
 
-    PROGRAM test_fget
-      INTEGER, PARAMETER :: strlen = 100
-      INTEGER :: status, i = 1
-      CHARACTER(len=strlen) :: str = ""
+        WRITE (*,*) 'Enter text:'
+        DO
+          CALL fget(str(i:i), status)
+          if (status /= 0 .OR. i > strlen) exit
+          i = i + 1
+        END DO
+        WRITE (*,*) TRIM(str)
+      END PROGRAM
 
-      WRITE (*,*) 'Enter text:'
-      DO
-        CALL fget(str(i:i), status)
-        if (status /= 0 .OR. i > strlen) exit
-        i = i + 1
-      END DO
-      WRITE (*,*) TRIM(str)
-    END PROGRAM
-
-:samp:`{See also}:`
-  FGETC, 
-  FPUT, 
-  FPUTC
+  :samp:`{See also}:`
+    FGETC, 
+    FPUT, 
+    FPUTC
 

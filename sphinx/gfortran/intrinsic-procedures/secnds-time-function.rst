@@ -1,4 +1,4 @@
-  .. _secnds:
+.. _secnds:
 
 SECNDS --- Time function
 ************************
@@ -9,42 +9,43 @@ SECNDS --- Time function
 
 .. index:: elapsed time
 
-:samp:`{Description}:`
+.. function:: SECNDS(X)
+
   ``SECNDS(X)`` gets the time in seconds from the real-time system clock.
   :samp:`{X}` is a reference time, also in seconds. If this is zero, the time in
   seconds from midnight is returned. This function is non-standard and its
   use is discouraged.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param T:
+    Shall be of type ``REAL(4)``.
 
-:samp:`{Class}:`
-  Function
+  :param X:
+    Shall be of type ``REAL(4)``.
 
-:samp:`{Syntax}:`
-  ``RESULT = SECNDS (X)``
+  :return:
+    None
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{T}`  Shall be of type ``REAL(4)``.
-  :samp:`{X}`  Shall be of type ``REAL(4)``.
-  ===========  =============================
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Return value}:`
-  None
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = SECNDS (X)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_secnds
-        integer :: i
-        real(4) :: t1, t2
-        print *, secnds (0.0)   ! seconds since midnight
-        t1 = secnds (0.0)       ! reference time
-        do i = 1, 10000000      ! do something
-        end do
-        t2 = secnds (t1)        ! elapsed time
-        print *, "Something took ", t2, " seconds."
-    end program test_secnds
+    .. code-block:: fortran
+
+      program test_secnds
+          integer :: i
+          real(4) :: t1, t2
+          print *, secnds (0.0)   ! seconds since midnight
+          t1 = secnds (0.0)       ! reference time
+          do i = 1, 10000000      ! do something
+          end do
+          t2 = secnds (t1)        ! elapsed time
+          print *, "Something took ", t2, " seconds."
+      end program test_secnds
 

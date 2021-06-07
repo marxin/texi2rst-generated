@@ -1,4 +1,4 @@
-  .. _achar:
+.. _achar:
 
 ACHAR --- Character in ASCII collating sequence 
 ************************************************
@@ -9,46 +9,47 @@ ACHAR --- Character in ASCII collating sequence
 
 .. index:: collating sequence, ASCII
 
-:samp:`{Description}:`
+.. function:: ACHAR(I)
+
   ``ACHAR(I)`` returns the character located at position ``I``
   in the ASCII collating sequence.
 
-:samp:`{Standard}:`
-  Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = ACHAR(I [, KIND])``
+  :return:
+    The return value is of type ``CHARACTER`` with a length of one.
+    If the :samp:`{KIND}` argument is present, the return value is of the
+    specified kind and of the default kind otherwise.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{I}`     The type shall be ``INTEGER``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``CHARACTER`` with a length of one.
-  If the :samp:`{KIND}` argument is present, the return value is of the
-  specified kind and of the default kind otherwise.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = ACHAR(I [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_achar
-      character c
-      c = achar(32)
-    end program test_achar
+    .. code-block:: fortran
 
-:samp:`{Note}:`
-  See ICHAR for a discussion of converting between numerical values
-  and formatted string representations.
+      program test_achar
+        character c
+        c = achar(32)
+      end program test_achar
 
-:samp:`{See also}:`
-  CHAR, 
-  IACHAR, 
-  ICHAR
+  :samp:`{Note}:`
+    See ICHAR for a discussion of converting between numerical values
+    and formatted string representations.
+
+  :samp:`{See also}:`
+    CHAR, 
+    IACHAR, 
+    ICHAR
 

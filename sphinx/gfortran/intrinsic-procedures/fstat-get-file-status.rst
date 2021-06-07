@@ -1,4 +1,4 @@
-  .. _fstat:
+.. _fstat:
 
 FSTAT --- Get file status
 *************************
@@ -7,41 +7,39 @@ FSTAT --- Get file status
 
 .. index:: file system, file status
 
-:samp:`{Description}:`
+.. function:: FSTAT
+
   ``FSTAT`` is identical to STAT, except that information about an 
   already opened file is obtained.
 
-  The elements in ``VALUES`` are the same as described by STAT.
+  :param UNIT:
+    An open I/O unit number of type ``INTEGER``.
 
-  This intrinsic is provided in both subroutine and function forms; however,
-  only one form can be used in any given program unit.
+  :param VALUES:
+    The type shall be ``INTEGER(4), DIMENSION(13)``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param STATUS:
+    (Optional) status flag of type ``INTEGER(4)``. Returns 0 
+    on success and a system specific error code otherwise.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  =======================================
-  ``CALL FSTAT(UNIT, VALUES [, STATUS])``
-  ``STATUS = FSTAT(UNIT, VALUES)``
-  =======================================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ================  =========================================================
-  :samp:`{UNIT}`    An open I/O unit number of type ``INTEGER``.
-  :samp:`{VALUES}`  The type shall be ``INTEGER(4), DIMENSION(13)``.
-  :samp:`{STATUS}`  (Optional) status flag of type ``INTEGER(4)``. Returns 0 
-                    on success and a system specific error code otherwise.
-  ================  =========================================================
+  :samp:`{Syntax}:`
+    =======================================
+    ``CALL FSTAT(UNIT, VALUES [, STATUS])``
+    ``STATUS = FSTAT(UNIT, VALUES)``
+    =======================================
 
-:samp:`{Example}:`
-  See STAT for an example.
+  :samp:`{Example}:`
+    See STAT for an example.
 
-:samp:`{See also}:`
-  To stat a link: 
-  LSTAT 
-  To stat a file: 
-  STAT
+  :samp:`{See also}:`
+    To stat a link: 
+    LSTAT 
+    To stat a file: 
+    STAT
 

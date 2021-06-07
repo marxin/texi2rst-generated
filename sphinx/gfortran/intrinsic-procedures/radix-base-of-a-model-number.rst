@@ -1,4 +1,4 @@
-  .. _radix:
+.. _radix:
 
 RADIX --- Base of a model number
 ********************************
@@ -9,36 +9,35 @@ RADIX --- Base of a model number
 
 .. index:: model representation, radix
 
-:samp:`{Description}:`
+.. function:: RADIX(X)
+
   ``RADIX(X)`` returns the base of the model representing the entity :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``INTEGER`` or ``REAL``
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is a scalar of type ``INTEGER`` and of the default
+    integer kind.
 
-:samp:`{Syntax}:`
-  ``RESULT = RADIX(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ========================================
-  :samp:`{X}`  Shall be of type ``INTEGER`` or ``REAL``
-  ===========  ========================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is a scalar of type ``INTEGER`` and of the default
-  integer kind.
+  :samp:`{Syntax}:`
+    ``RESULT = RADIX(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_radix
-      print *, "The radix for the default integer kind is", radix(0)
-      print *, "The radix for the default real kind is", radix(0.0)
-    end program test_radix
+      program test_radix
+        print *, "The radix for the default integer kind is", radix(0)
+        print *, "The radix for the default real kind is", radix(0.0)
+      end program test_radix
 
-:samp:`{See also}:`
-  SELECTED_REAL_KIND
+  :samp:`{See also}:`
+    SELECTED_REAL_KIND
 

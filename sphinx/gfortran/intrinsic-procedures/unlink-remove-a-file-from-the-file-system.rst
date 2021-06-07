@@ -1,4 +1,4 @@
-  .. _unlink:
+.. _unlink:
 
 UNLINK --- Remove a file from the file system
 *********************************************
@@ -7,35 +7,33 @@ UNLINK --- Remove a file from the file system
 
 .. index:: file system, remove file
 
-:samp:`{Description}:`
+.. function:: UNLINK
+
   Unlinks the file :samp:`{PATH}`. A null character ( ``CHAR(0)`` ) can be
   used to mark the end of the name in :samp:`{PATH}` ; otherwise, trailing
   blanks in the file name are ignored.  If the :samp:`{STATUS}` argument is
   supplied, it contains 0 on success or a nonzero error code upon return;
   see ``unlink(2)``.
 
-  This intrinsic is provided in both subroutine and function forms;
-  however, only one form can be used in any given program unit.
+  :param PATH:
+    Shall be of default ``CHARACTER`` type.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param STATUS:
+    (Optional) Shall be of default ``INTEGER`` type.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ================================
-  ``CALL UNLINK(PATH [, STATUS])``
-  ``STATUS = UNLINK(PATH)``
-  ================================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ================  ================================================
-  :samp:`{PATH}`    Shall be of default ``CHARACTER`` type.
-  :samp:`{STATUS}`  (Optional) Shall be of default ``INTEGER`` type.
-  ================  ================================================
+  :samp:`{Syntax}:`
+    ================================
+    ``CALL UNLINK(PATH [, STATUS])``
+    ``STATUS = UNLINK(PATH)``
+    ================================
 
-:samp:`{See also}:`
-  LINK, 
-  SYMLNK
+  :samp:`{See also}:`
+    LINK, 
+    SYMLNK
 

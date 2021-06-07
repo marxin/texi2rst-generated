@@ -1,4 +1,4 @@
-  .. _kind:
+.. _kind:
 
 KIND --- Kind of an entity
 **************************
@@ -7,38 +7,37 @@ KIND --- Kind of an entity
 
 .. index:: kind
 
-:samp:`{Description}:`
+.. function:: KIND(X)
+
   ``KIND(X)`` returns the kind value of the entity :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 95 and later
+  :param X:
+    Shall be of type ``LOGICAL``, ``INTEGER``,
+    ``REAL``, ``COMPLEX`` or ``CHARACTER``.  It may be scalar or
+    array valued.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is a scalar of type ``INTEGER`` and of the default
+    integer kind.
 
-:samp:`{Syntax}:`
-  ``K = KIND(X)``
+  :samp:`{Standard}:`
+    Fortran 95 and later
 
-:samp:`{Arguments}:`
-  ===========  ============================================================
-  :samp:`{X}`  Shall be of type ``LOGICAL``, ``INTEGER``,
-               ``REAL``, ``COMPLEX`` or ``CHARACTER``.  It may be scalar or
-               array valued.
-  ===========  ============================================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is a scalar of type ``INTEGER`` and of the default
-  integer kind.
+  :samp:`{Syntax}:`
+    ``K = KIND(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_kind
-      integer,parameter :: kc = kind(' ')
-      integer,parameter :: kl = kind(.true.)
+      program test_kind
+        integer,parameter :: kc = kind(' ')
+        integer,parameter :: kl = kind(.true.)
 
-      print *, "The default character kind is ", kc
-      print *, "The default logical kind is ", kl
-    end program test_kind
+        print *, "The default character kind is ", kc
+        print *, "The default logical kind is ", kl
+      end program test_kind
 

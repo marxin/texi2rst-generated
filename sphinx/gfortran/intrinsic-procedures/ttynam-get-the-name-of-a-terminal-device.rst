@@ -1,4 +1,4 @@
-  .. _ttynam:
+.. _ttynam:
 
 TTYNAM --- Get the name of a terminal device.
 *********************************************
@@ -7,42 +7,40 @@ TTYNAM --- Get the name of a terminal device.
 
 .. index:: system, terminal
 
-:samp:`{Description}:`
+.. function:: TTYNAM
+
   Get the name of a terminal device. For more information, 
   see ``ttyname(3)``.
 
-  This intrinsic is provided in both subroutine and function forms; 
-  however, only one form can be used in any given program unit.
+  :param UNIT:
+    Shall be a scalar ``INTEGER``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param NAME:
+    Shall be of type ``CHARACTER``.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ===========================
-  ``CALL TTYNAM(UNIT, NAME)``
-  ``NAME = TTYNAM(UNIT)``
-  ===========================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ==============  ===============================
-  :samp:`{UNIT}`  Shall be a scalar ``INTEGER``.
-  :samp:`{NAME}`  Shall be of type ``CHARACTER``.
-  ==============  ===============================
+  :samp:`{Syntax}:`
+    ===========================
+    ``CALL TTYNAM(UNIT, NAME)``
+    ``NAME = TTYNAM(UNIT)``
+    ===========================
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_ttynam
-      INTEGER :: unit
-      DO unit = 1, 10
-        IF (isatty(unit=unit)) write(*,*) ttynam(unit)
-      END DO
-    END PROGRAM
+      PROGRAM test_ttynam
+        INTEGER :: unit
+        DO unit = 1, 10
+          IF (isatty(unit=unit)) write(*,*) ttynam(unit)
+        END DO
+      END PROGRAM
 
-:samp:`{See also}:`
-  ISATTY
+  :samp:`{See also}:`
+    ISATTY
 

@@ -1,4 +1,4 @@
-  .. _dot_product:
+.. _dot_product:
 
 DOT_PRODUCT --- Dot product function
 ************************************
@@ -11,7 +11,8 @@ DOT_PRODUCT --- Dot product function
 
 .. index:: product, vector
 
-:samp:`{Description}:`
+.. function:: DOT_PRODUCT(VECTOR_A, VECTOR_B)
+
   ``DOT_PRODUCT(VECTOR_A, VECTOR_B)`` computes the dot product multiplication
   of two vectors :samp:`{VECTOR_A}` and :samp:`{VECTOR_B}`.  The two vectors may be
   either numeric or logical and must be arrays of rank one and of equal size. If
@@ -20,38 +21,38 @@ DOT_PRODUCT --- Dot product function
   is ``SUM(CONJG(VECTOR_A)*VECTOR_B)``. If the vectors are ``LOGICAL``,
   the result is ``ANY(VECTOR_A .AND. VECTOR_B)``.  
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param VECTOR_A:
+    The type shall be numeric or ``LOGICAL``, rank 1.
 
-:samp:`{Class}:`
-  Transformational function
+  :param VECTOR_B:
+    The type shall be numeric if :samp:`{VECTOR_A}` is of numeric type or ``LOGICAL`` if :samp:`{VECTOR_A}` is of type ``LOGICAL``. :samp:`{VECTOR_B}` shall be a rank-one array.
 
-:samp:`{Syntax}:`
-  ``RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)``
+  :return:
+    If the arguments are numeric, the return value is a scalar of numeric type,
+    ``INTEGER``, ``REAL``, or ``COMPLEX``.  If the arguments are
+    ``LOGICAL``, the return value is ``.TRUE.`` or ``.FALSE.``.
 
-:samp:`{Arguments}:`
-  ==================  =============================================================================================================================================================================
-  :samp:`{VECTOR_A}`  The type shall be numeric or ``LOGICAL``, rank 1.
-  :samp:`{VECTOR_B}`  The type shall be numeric if :samp:`{VECTOR_A}` is of numeric type or ``LOGICAL`` if :samp:`{VECTOR_A}` is of type ``LOGICAL``. :samp:`{VECTOR_B}` shall be a rank-one array.
-  ==================  =============================================================================================================================================================================
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Return value}:`
-  If the arguments are numeric, the return value is a scalar of numeric type,
-  ``INTEGER``, ``REAL``, or ``COMPLEX``.  If the arguments are
-  ``LOGICAL``, the return value is ``.TRUE.`` or ``.FALSE.``.
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_dot_prod
-        integer, dimension(3) :: a, b
-        a = (/ 1, 2, 3 /)
-        b = (/ 4, 5, 6 /)
-        print '(3i3)', a
-        print *
-        print '(3i3)', b
-        print *
-        print *, dot_product(a,b)
-    end program test_dot_prod
+    .. code-block:: fortran
+
+      program test_dot_prod
+          integer, dimension(3) :: a, b
+          a = (/ 1, 2, 3 /)
+          b = (/ 4, 5, 6 /)
+          print '(3i3)', a
+          print *
+          print '(3i3)', b
+          print *
+          print *, dot_product(a,b)
+      end program test_dot_prod
 

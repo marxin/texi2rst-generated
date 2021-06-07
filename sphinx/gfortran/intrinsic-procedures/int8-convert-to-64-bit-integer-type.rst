@@ -1,4 +1,4 @@
-  .. _int8:
+.. _int8:
 
 INT8 --- Convert to 64-bit integer type
 ***************************************
@@ -7,31 +7,30 @@ INT8 --- Convert to 64-bit integer type
 
 .. index:: conversion, to integer
 
-:samp:`{Description}:`
+.. function:: INT8
+
   Convert to a ``KIND=8`` integer type. This is equivalent to the
   standard ``INT`` intrinsic with an optional argument of
   ``KIND=8``, and is only included for backwards compatibility.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param A:
+    Shall be of type ``INTEGER``,
+    ``REAL``, or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is a ``INTEGER(8)`` variable.
 
-:samp:`{Syntax}:`
-  ``RESULT = INT8(A)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{A}`  Shall be of type ``INTEGER``,
-               ``REAL``, or ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is a ``INTEGER(8)`` variable.
+  :samp:`{Syntax}:`
+    ``RESULT = INT8(A)``
 
-:samp:`{See also}:`
-  INT, 
-  INT2, 
-  LONG
+  :samp:`{See also}:`
+    INT, 
+    INT2, 
+    LONG
 

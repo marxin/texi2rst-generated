@@ -1,4 +1,4 @@
-  .. _co_reduce:
+.. _co_reduce:
 
 CO_REDUCE --- Reduction of values on the current set of images
 **************************************************************
@@ -7,7 +7,8 @@ CO_REDUCE --- Reduction of values on the current set of images
 
 .. index:: Collectives, generic reduction
 
-:samp:`{Description}:`
+.. function:: CO_REDUCE
+
   ``CO_REDUCE`` determines element-wise the reduction of the value of :samp:`{A}`
   on all images of the current team.  The pure function passed as :samp:`{OPERATOR}`
   is used to pairwise reduce the values of :samp:`{A}` by passing either the value
@@ -21,64 +22,70 @@ CO_REDUCE --- Reduction of values on the current set of images
   a nonzero value and, if present, :samp:`{ERRMSG}` gets assigned a value describing
   the occurred error.
 
-:samp:`{Standard}:`
-  Technical Specification (TS) 18508 or later
+  :param A:
+    is an ``INTENT(INOUT)`` argument and shall be
+    nonpolymorphic. If it is allocatable, it shall be allocated; if it is a pointer,
+    it shall be associated.  :samp:`{A}` shall have the same type and type parameters on
+    all images of the team; if it is an array, it shall have the same shape on all
+    images.
 
-:samp:`{Class}:`
-  Collective subroutine
+  :param OPERATOR:
+    pure function with two scalar nonallocatable
+    arguments, which shall be nonpolymorphic and have the same type and type
+    parameters as :samp:`{A}`.  The function shall return a nonallocatable scalar of
+    the same type and type parameters as :samp:`{A}`.  The function shall be the same on
+    all images and with regards to the arguments mathematically commutative and
+    associative.  Note that :samp:`{OPERATOR}` may not be an elemental function, unless
+    it is an intrisic function.
 
-:samp:`{Syntax}:`
-  ``CALL CO_REDUCE(A, OPERATOR, [, RESULT_IMAGE, STAT, ERRMSG])``
+  :param RESULT_IMAGE:
+    (optional) a scalar integer expression; if
+    present, it shall have the same value on all images and refer to an
+    image of the current team.
 
-:samp:`{Arguments}:`
-  ======================  ====================================================================================
-  :samp:`{A}`             is an ``INTENT(INOUT)`` argument and shall be
-                          nonpolymorphic. If it is allocatable, it shall be allocated; if it is a pointer,
-                          it shall be associated.  :samp:`{A}` shall have the same type and type parameters on
-                          all images of the team; if it is an array, it shall have the same shape on all
-                          images.
-  :samp:`{OPERATOR}`      pure function with two scalar nonallocatable
-                          arguments, which shall be nonpolymorphic and have the same type and type
-                          parameters as :samp:`{A}`.  The function shall return a nonallocatable scalar of
-                          the same type and type parameters as :samp:`{A}`.  The function shall be the same on
-                          all images and with regards to the arguments mathematically commutative and
-                          associative.  Note that :samp:`{OPERATOR}` may not be an elemental function, unless
-                          it is an intrisic function.
-  :samp:`{RESULT_IMAGE}`  (optional) a scalar integer expression; if
-                          present, it shall have the same value on all images and refer to an
-                          image of the current team.
-  :samp:`{STAT}`          (optional) a scalar integer variable
-  :samp:`{ERRMSG}`        (optional) a scalar character variable
-  ======================  ====================================================================================
+  :param STAT:
+    (optional) a scalar integer variable
 
-:samp:`{Example}:`
+  :param ERRMSG:
+    (optional) a scalar character variable
 
-  .. code-block:: fortran
+  :samp:`{Standard}:`
+    Technical Specification (TS) 18508 or later
 
-    program test
-      integer :: val
-      val = this_image ()
-      call co_reduce (val, result_image=1, operator=myprod)
-      if (this_image() == 1) then
-        write(*,*) "Product value", val  ! prints num_images() factorial
-      end if
-    contains
-      pure function myprod(a, b)
-        integer, value :: a, b
-        integer :: myprod
-        myprod = a * b
-      end function myprod
-    end program test
+  :samp:`{Class}:`
+    Collective subroutine
 
-:samp:`{Note}:`
-  While the rules permit in principle an intrinsic function, none of the
-  intrinsics in the standard fulfill the criteria of having a specific
-  function, which takes two arguments of the same type and returning that
-  type as result.
+  :samp:`{Syntax}:`
+    ``CALL CO_REDUCE(A, OPERATOR, [, RESULT_IMAGE, STAT, ERRMSG])``
 
-:samp:`{See also}:`
-  CO_MIN, 
-  CO_MAX, 
-  CO_SUM, 
-  CO_BROADCAST
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program test
+        integer :: val
+        val = this_image ()
+        call co_reduce (val, result_image=1, operator=myprod)
+        if (this_image() == 1) then
+          write(*,*) "Product value", val  ! prints num_images() factorial
+        end if
+      contains
+        pure function myprod(a, b)
+          integer, value :: a, b
+          integer :: myprod
+          myprod = a * b
+        end function myprod
+      end program test
+
+  :samp:`{Note}:`
+    While the rules permit in principle an intrinsic function, none of the
+    intrinsics in the standard fulfill the criteria of having a specific
+    function, which takes two arguments of the same type and returning that
+    type as result.
+
+  :samp:`{See also}:`
+    CO_MIN, 
+    CO_MAX, 
+    CO_SUM, 
+    CO_BROADCAST
 

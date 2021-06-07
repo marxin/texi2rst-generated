@@ -1,4 +1,4 @@
-  .. _sleep:
+.. _sleep:
 
 SLEEP --- Sleep for the specified number of seconds
 ***************************************************
@@ -7,28 +7,27 @@ SLEEP --- Sleep for the specified number of seconds
 
 .. index:: delayed execution
 
-:samp:`{Description}:`
+.. function:: SLEEP
+
   Calling this subroutine causes the process to pause for :samp:`{SECONDS}` seconds.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param SECONDS:
+    The type shall be of default ``INTEGER``.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL SLEEP(SECONDS)``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Arguments}:`
-  =================  =========================================
-  :samp:`{SECONDS}`  The type shall be of default ``INTEGER``.
-  =================  =========================================
+  :samp:`{Syntax}:`
+    ``CALL SLEEP(SECONDS)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_sleep
-      call sleep(5)
-    end
+      program test_sleep
+        call sleep(5)
+      end
 

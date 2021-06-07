@@ -1,4 +1,4 @@
-  .. _bgt:
+.. _bgt:
 
 BGT --- Bitwise greater than
 ****************************
@@ -7,30 +7,31 @@ BGT --- Bitwise greater than
 
 .. index:: bitwise comparison
 
-:samp:`{Description}:`
+.. function:: BGT
+
   Determines whether an integral is a bitwise greater than another.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of ``INTEGER`` type.
 
-:samp:`{Class}:`
-  Elemental function
+  :param J:
+    Shall be of ``INTEGER`` type, and of the same kind
+    as :samp:`{I}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = BGT(I, J)``
+  :return:
+    The return value is of type ``LOGICAL`` and of the default kind.
 
-:samp:`{Arguments}:`
-  ===========  ==================================================
-  :samp:`{I}`  Shall be of ``INTEGER`` type.
-  :samp:`{J}`  Shall be of ``INTEGER`` type, and of the same kind
-               as :samp:`{I}`.
-  ===========  ==================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``LOGICAL`` and of the default kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  BGE, 
-  BLE, 
-  BLT
+  :samp:`{Syntax}:`
+    ``RESULT = BGT(I, J)``
+
+  :samp:`{See also}:`
+    BGE, 
+    BLE, 
+    BLT
 

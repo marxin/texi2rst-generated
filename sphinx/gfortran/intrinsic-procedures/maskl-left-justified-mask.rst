@@ -1,4 +1,4 @@
-  .. _maskl:
+.. _maskl:
 
 MASKL --- Left justified mask
 *****************************
@@ -7,31 +7,32 @@ MASKL --- Left justified mask
 
 .. index:: mask, left justified
 
-:samp:`{Description}:`
+.. function:: MASKL(I[, KIND])
+
   ``MASKL(I[, KIND])`` has its leftmost :samp:`{I}` bits set to 1, and the
   remaining bits set to 0.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of type ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    Shall be a scalar constant expression of type
+    ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = MASKL(I[, KIND])``
+  :return:
+    The return value is of type ``INTEGER``. If :samp:`{KIND}` is present, it
+    specifies the kind value of the return type; otherwise, it is of the
+    default integer kind.
 
-:samp:`{Arguments}:`
-  ==============  =============================================
-  :samp:`{I}`     Shall be of type ``INTEGER``.
-  :samp:`{KIND}`  Shall be a scalar constant expression of type
-                  ``INTEGER``.
-  ==============  =============================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER``. If :samp:`{KIND}` is present, it
-  specifies the kind value of the return type; otherwise, it is of the
-  default integer kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  MASKR
+  :samp:`{Syntax}:`
+    ``RESULT = MASKL(I[, KIND])``
+
+  :samp:`{See also}:`
+    MASKR
 

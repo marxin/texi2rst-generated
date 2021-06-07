@@ -1,4 +1,4 @@
-  .. _sinh:
+.. _sinh:
 
 SINH --- Hyperbolic sine function 
 **********************************
@@ -13,42 +13,41 @@ SINH --- Hyperbolic sine function
 
 .. index:: sine, hyperbolic
 
-:samp:`{Description}:`
+.. function:: SINH(X)
+
   ``SINH(X)`` computes the hyperbolic sine of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later, for a complex argument Fortran 2008 or later, has
-  a GNU extension
+  :param X:
+    The type shall be ``REAL`` or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value has same type and kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = SINH(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later, for a complex argument Fortran 2008 or later, has
+    a GNU extension
 
-:samp:`{Arguments}:`
-  ===========  ==========================================
-  :samp:`{X}`  The type shall be ``REAL`` or ``COMPLEX``.
-  ===========  ==========================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = SINH(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_sinh
-      real(8) :: x = - 1.0_8
-      x = sinh(x)
-    end program test_sinh
+      program test_sinh
+        real(8) :: x = - 1.0_8
+        x = sinh(x)
+      end program test_sinh
 
-:samp:`{Specific names}:`
-  ============  =============  ===========  ====================
-  Name          Argument       Return type  Standard
-  ``DSINH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 90 and later
-  ============  =============  ===========  ====================
+  :samp:`{Specific names}:`
+    ============  =============  ===========  ====================
+    Name          Argument       Return type  Standard
+    ``DSINH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 90 and later
+    ============  =============  ===========  ====================
 
-:samp:`{See also}:`
-  ASINH
+  :samp:`{See also}:`
+    ASINH
 

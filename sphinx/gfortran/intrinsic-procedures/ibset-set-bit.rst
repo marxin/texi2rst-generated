@@ -1,4 +1,4 @@
-  .. _ibset:
+.. _ibset:
 
 IBSET --- Set bit
 *****************
@@ -15,44 +15,45 @@ IBSET --- Set bit
 
 .. index:: bits, set
 
-:samp:`{Description}:`
+.. function:: IBSET
+
   ``IBSET`` returns the value of :samp:`{I}` with the bit at position
   :samp:`{POS}` set to one.
 
-:samp:`{Standard}:`
-  Fortran 90 and later, has overloads that are GNU extensions
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param POS:
+    The type shall be ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = IBSET(I, POS)``
+  :return:
+    The return value is of type ``INTEGER`` and of the same kind as
+    :samp:`{I}`.
 
-:samp:`{Arguments}:`
-  =============  ==============================
-  :samp:`{I}`    The type shall be ``INTEGER``.
-  :samp:`{POS}`  The type shall be ``INTEGER``.
-  =============  ==============================
+  :samp:`{Standard}:`
+    Fortran 90 and later, has overloads that are GNU extensions
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the same kind as
-  :samp:`{I}`.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Specific names}:`
-  =============  ================  ==============  ====================
-  Name           Argument          Return type     Standard
-  ``IBSET(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-  ``BBSET(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-  ``IIBSET(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-  ``JIBSET(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-  ``KIBSET(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-  =============  ================  ==============  ====================
+  :samp:`{Syntax}:`
+    ``RESULT = IBSET(I, POS)``
 
-:samp:`{See also}:`
-  IBCLR, 
-  IBITS, 
-  IAND, 
-  IOR, 
-  IEOR, 
-  MVBITS
+  :samp:`{Specific names}:`
+    =============  ================  ==============  ====================
+    Name           Argument          Return type     Standard
+    ``IBSET(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
+    ``BBSET(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
+    ``IIBSET(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
+    ``JIBSET(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
+    ``KIBSET(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
+    =============  ================  ==============  ====================
+
+  :samp:`{See also}:`
+    IBCLR, 
+    IBITS, 
+    IAND, 
+    IOR, 
+    IEOR, 
+    MVBITS
 

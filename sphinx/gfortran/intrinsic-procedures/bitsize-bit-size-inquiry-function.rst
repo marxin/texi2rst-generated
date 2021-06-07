@@ -1,4 +1,4 @@
-  .. _bit_size:
+.. _bit_size:
 
 BIT_SIZE --- Bit size inquiry function
 **************************************
@@ -9,36 +9,35 @@ BIT_SIZE --- Bit size inquiry function
 
 .. index:: size of a variable, in bits
 
-:samp:`{Description}:`
+.. function:: BIT_SIZE(I)
+
   ``BIT_SIZE(I)`` returns the number of bits (integer precision plus sign bit)
   represented by the type of :samp:`{I}`.  The result of ``BIT_SIZE(I)`` is
   independent of the actual value of :samp:`{I}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER``
 
-:samp:`{Syntax}:`
-  ``RESULT = BIT_SIZE(I)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ==============================
-  :samp:`{I}`  The type shall be ``INTEGER``.
-  ===========  ==============================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER``
+  :samp:`{Syntax}:`
+    ``RESULT = BIT_SIZE(I)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_bit_size
-        integer :: i = 123
-        integer :: size
-        size = bit_size(i)
-        print *, size
-    end program test_bit_size
+      program test_bit_size
+          integer :: i = 123
+          integer :: size
+          size = bit_size(i)
+          print *, size
+      end program test_bit_size
 

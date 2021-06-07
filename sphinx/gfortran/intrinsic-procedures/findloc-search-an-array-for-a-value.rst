@@ -1,4 +1,4 @@
-  .. _findloc:
+.. _findloc:
 
 FINDLOC --- Search an array for a value
 ***************************************
@@ -7,7 +7,8 @@ FINDLOC --- Search an array for a value
 
 .. index:: findloc
 
-:samp:`{Description}:`
+.. function:: FINDLOC
+
   Determines the location of the element in the array with the value
   given in the :samp:`{VALUE}` argument, or, if the :samp:`{DIM}` argument is
   supplied, determines the locations of the elements equal to the
@@ -24,44 +25,52 @@ FINDLOC --- Search an array for a value
   elements of :samp:`{MASK}` along a given row are zero, the result value
   for that row is zero.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later.
+  :param ARRAY:
+    Shall be an array of intrinsic type.
 
-:samp:`{Class}:`
-  Transformational function
+  :param VALUE:
+    A scalar of intrinsic type which is in type
+    conformance with :samp:`{ARRAY}`.
 
-:samp:`{Syntax}:`
-  ================================================================
-  ``RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])``
-  ``RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])``
-  ================================================================
+  :param DIM:
+    (Optional) Shall be a scalar of type
+    ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
+    inclusive.  It may not be an optional dummy argument.
 
-:samp:`{Arguments}:`
-  ===============  ======================================================================
-  :samp:`{ARRAY}`  Shall be an array of intrinsic type.
-  :samp:`{VALUE}`  A scalar of intrinsic type which is in type
-                   conformance with :samp:`{ARRAY}`.
-  :samp:`{DIM}`    (Optional) Shall be a scalar of type
-                   ``INTEGER``, with a value between one and the rank of :samp:`{ARRAY}`,
-                   inclusive.  It may not be an optional dummy argument.
-  :samp:`{MASK}`   (Optional) Shall be of type ``LOGICAL``,
-                   and conformable with :samp:`{ARRAY}`.
-  :samp:`{KIND}`   (Optional) An ``INTEGER`` initialization
-                   expression indicating the kind parameter of the result.
-  :samp:`{BACK}`   (Optional) A scalar of type ``LOGICAL``.
-  ===============  ======================================================================
+  :param MASK:
+    (Optional) Shall be of type ``LOGICAL``,
+    and conformable with :samp:`{ARRAY}`.
 
-:samp:`{Return value}:`
-  If :samp:`{DIM}` is absent, the result is a rank-one array with a length
-  equal to the rank of :samp:`{ARRAY}`.  If :samp:`{DIM}` is present, the result
-  is an array with a rank one less than the rank of :samp:`{ARRAY}`, and a
-  size corresponding to the size of :samp:`{ARRAY}` with the :samp:`{DIM}`
-  dimension removed.  If :samp:`{DIM}` is present and :samp:`{ARRAY}` has a rank
-  of one, the result is a scalar.  If the optional argument :samp:`{KIND}`
-  is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
-  is of default kind.
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{See also}:`
-  MAXLOC, 
-  MINLOC
+  :param BACK:
+    (Optional) A scalar of type ``LOGICAL``.
+
+  :return:
+    If :samp:`{DIM}` is absent, the result is a rank-one array with a length
+    equal to the rank of :samp:`{ARRAY}`.  If :samp:`{DIM}` is present, the result
+    is an array with a rank one less than the rank of :samp:`{ARRAY}`, and a
+    size corresponding to the size of :samp:`{ARRAY}` with the :samp:`{DIM}`
+    dimension removed.  If :samp:`{DIM}` is present and :samp:`{ARRAY}` has a rank
+    of one, the result is a scalar.  If the optional argument :samp:`{KIND}`
+    is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
+    is of default kind.
+
+  :samp:`{Standard}:`
+    Fortran 2008 and later.
+
+  :samp:`{Class}:`
+    Transformational function
+
+  :samp:`{Syntax}:`
+    ================================================================
+    ``RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])``
+    ``RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])``
+    ================================================================
+
+  :samp:`{See also}:`
+    MAXLOC, 
+    MINLOC
 

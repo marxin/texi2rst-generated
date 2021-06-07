@@ -1,4 +1,4 @@
-  .. _shiftr:
+.. _shiftr:
 
 SHIFTR --- Right shift
 **********************
@@ -9,33 +9,34 @@ SHIFTR --- Right shift
 
 .. index:: shift, right
 
-:samp:`{Description}:`
+.. function:: SHIFTR
+
   ``SHIFTR`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be
   nonnegative and less than or equal to ``BIT_SIZE(I)``, otherwise
   the result value is undefined.  Bits shifted out from the right end
   are lost, and bits shifted in from the left end are set to 0.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    The type shall be ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param SHIFT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = SHIFTR(I, SHIFT)``
+  :return:
+    The return value is of type ``INTEGER`` and of the same kind as
+    :samp:`{I}`.
 
-:samp:`{Arguments}:`
-  ===============  ==============================
-  :samp:`{I}`      The type shall be ``INTEGER``.
-  :samp:`{SHIFT}`  The type shall be ``INTEGER``.
-  ===============  ==============================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the same kind as
-  :samp:`{I}`.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  SHIFTA, 
-  SHIFTL
+  :samp:`{Syntax}:`
+    ``RESULT = SHIFTR(I, SHIFT)``
+
+  :samp:`{See also}:`
+    SHIFTA, 
+    SHIFTL
 

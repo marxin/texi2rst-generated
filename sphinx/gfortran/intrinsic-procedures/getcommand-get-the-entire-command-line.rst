@@ -1,4 +1,4 @@
-  .. _get_command:
+.. _get_command:
 
 GET_COMMAND --- Get the entire command line
 *******************************************
@@ -9,46 +9,49 @@ GET_COMMAND --- Get the entire command line
 
 .. index:: arguments, to program
 
-:samp:`{Description}:`
+.. function:: GET_COMMAND
+
   Retrieve the entire command line that was used to invoke the program.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param COMMAND:
+    (Optional) shall be of type ``CHARACTER`` and
+    of default kind.
 
-:samp:`{Class}:`
-  Subroutine
+  :param LENGTH:
+    (Optional) Shall be of type ``INTEGER`` and of
+    default kind.
 
-:samp:`{Syntax}:`
-  ``CALL GET_COMMAND([COMMAND, LENGTH, STATUS])``
+  :param STATUS:
+    (Optional) Shall be of type ``INTEGER`` and of
+    default kind.
 
-:samp:`{Arguments}:`
-  =================  ==============================================
-  :samp:`{COMMAND}`  (Optional) shall be of type ``CHARACTER`` and
-                     of default kind.
-  :samp:`{LENGTH}`   (Optional) Shall be of type ``INTEGER`` and of
-                     default kind.
-  :samp:`{STATUS}`   (Optional) Shall be of type ``INTEGER`` and of
-                     default kind.
-  =================  ==============================================
+  :return:
+    If :samp:`{COMMAND}` is present, stores the entire command line that was used
+    to invoke the program in :samp:`{COMMAND}`. If :samp:`{LENGTH}` is present, it is
+    assigned the length of the command line. If :samp:`{STATUS}` is present, it
+    is assigned 0 upon success of the command, -1 if :samp:`{COMMAND}` is too
+    short to store the command line, or a positive value in case of an error.
 
-:samp:`{Return value}:`
-  If :samp:`{COMMAND}` is present, stores the entire command line that was used
-  to invoke the program in :samp:`{COMMAND}`. If :samp:`{LENGTH}` is present, it is
-  assigned the length of the command line. If :samp:`{STATUS}` is present, it
-  is assigned 0 upon success of the command, -1 if :samp:`{COMMAND}` is too
-  short to store the command line, or a positive value in case of an error.
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Subroutine
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``CALL GET_COMMAND([COMMAND, LENGTH, STATUS])``
 
-    PROGRAM test_get_command
-      CHARACTER(len=255) :: cmd
-      CALL get_command(cmd)
-      WRITE (*,*) TRIM(cmd)
-    END PROGRAM
+  :samp:`{Example}:`
 
-:samp:`{See also}:`
-  GET_COMMAND_ARGUMENT, 
-  COMMAND_ARGUMENT_COUNT
+    .. code-block:: fortran
+
+      PROGRAM test_get_command
+        CHARACTER(len=255) :: cmd
+        CALL get_command(cmd)
+        WRITE (*,*) TRIM(cmd)
+      END PROGRAM
+
+  :samp:`{See also}:`
+    GET_COMMAND_ARGUMENT, 
+    COMMAND_ARGUMENT_COUNT
 

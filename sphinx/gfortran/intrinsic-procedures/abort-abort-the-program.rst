@@ -11,34 +11,35 @@ ABORT --- Abort the program
 
 .. index:: core, dump
 
-:samp:`{Description}:`
+.. function:: ABORT
+
   ``ABORT`` causes immediate termination of the program.  On operating
   systems that support a core dump, ``ABORT`` will produce a core dump.
   It will also print a backtrace, unless ``-fno-backtrace`` is given.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    Does not return.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL ABORT``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Return value}:`
-  Does not return.
+  :samp:`{Syntax}:`
+    ``CALL ABORT``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_abort
-      integer :: i = 1, j = 2
-      if (i /= j) call abort
-    end program test_abort
+      program test_abort
+        integer :: i = 1, j = 2
+        if (i /= j) call abort
+      end program test_abort
 
-:samp:`{See also}:`
-  EXIT, 
-  KILL, 
-  BACKTRACE
+  :samp:`{See also}:`
+    EXIT, 
+    KILL, 
+    BACKTRACE
 

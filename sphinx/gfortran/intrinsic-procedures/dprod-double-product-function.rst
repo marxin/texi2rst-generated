@@ -1,4 +1,4 @@
-  .. _dprod:
+.. _dprod:
 
 DPROD --- Double product function
 *********************************
@@ -7,41 +7,43 @@ DPROD --- Double product function
 
 .. index:: product, double-precision
 
-:samp:`{Description}:`
+.. function:: DPROD(X,Y)
+
   ``DPROD(X,Y)`` returns the product ``X*Y``.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param X:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param Y:
+    The type shall be ``REAL``.
 
-:samp:`{Syntax}:`
-  ``RESULT = DPROD(X, Y)``
+  :return:
+    The return value is of type ``REAL(8)``.
 
-:samp:`{Arguments}:`
-  ===========  ===========================
-  :samp:`{X}`  The type shall be ``REAL``.
-  :samp:`{Y}`  The type shall be ``REAL``.
-  ===========  ===========================
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL(8)``.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = DPROD(X, Y)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_dprod
-        real :: x = 5.2
-        real :: y = 2.3
-        real(8) :: d
-        d = dprod(x,y)
-        print *, d
-    end program test_dprod
+    .. code-block:: fortran
 
-:samp:`{Specific names}:`
-  ==============  ================  ===========  ====================
-  Name            Argument          Return type  Standard
-  ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later
-  ==============  ================  ===========  ====================
+      program test_dprod
+          real :: x = 5.2
+          real :: y = 2.3
+          real(8) :: d
+          d = dprod(x,y)
+          print *, d
+      end program test_dprod
+
+  :samp:`{Specific names}:`
+    ==============  ================  ===========  ====================
+    Name            Argument          Return type  Standard
+    ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later
+    ==============  ================  ===========  ====================
+

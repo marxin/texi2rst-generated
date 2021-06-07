@@ -1,4 +1,4 @@
-  .. _complex:
+.. _complex:
 
 COMPLEX --- Complex conversion function
 ***************************************
@@ -9,45 +9,41 @@ COMPLEX --- Complex conversion function
 
 .. index:: conversion, to complex
 
-:samp:`{Description}:`
+.. function:: COMPLEX(X, Y)
+
   ``COMPLEX(X, Y)`` returns a complex number where :samp:`{X}` is converted
   to the real component and :samp:`{Y}` is converted to the imaginary
   component.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param X:
+    The type may be ``INTEGER`` or ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param Y:
+    The type may be ``INTEGER`` or ``REAL``.
 
-:samp:`{Syntax}:`
-  ``RESULT = COMPLEX(X, Y)``
+  :return:
+    If :samp:`{X}` and :samp:`{Y}` are both of ``INTEGER`` type, then the return
+    value is of default ``COMPLEX`` type.
 
-:samp:`{Arguments}:`
-  ===========  ========================================
-  :samp:`{X}`  The type may be ``INTEGER`` or ``REAL``.
-  :samp:`{Y}`  The type may be ``INTEGER`` or ``REAL``.
-  ===========  ========================================
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Return value}:`
-  If :samp:`{X}` and :samp:`{Y}` are both of ``INTEGER`` type, then the return
-  value is of default ``COMPLEX`` type.
+  :samp:`{Class}:`
+    Elemental function
 
-  If :samp:`{X}` and :samp:`{Y}` are of ``REAL`` type, or one is of ``REAL``
-  type and one is of ``INTEGER`` type, then the return value is of
-  ``COMPLEX`` type with a kind equal to that of the ``REAL``
-  argument with the highest precision.
+  :samp:`{Syntax}:`
+    ``RESULT = COMPLEX(X, Y)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_complex
-        integer :: i = 42
-        real :: x = 3.14
-        print *, complex(i, x)
-    end program test_complex
+      program test_complex
+          integer :: i = 42
+          real :: x = 3.14
+          print *, complex(i, x)
+      end program test_complex
 
-:samp:`{See also}:`
-  CMPLX
+  :samp:`{See also}:`
+    CMPLX
 

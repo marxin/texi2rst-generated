@@ -1,4 +1,4 @@
-  .. _num_images:
+.. _num_images:
 
 NUM_IMAGES --- Function that returns the number of images
 *********************************************************
@@ -9,51 +9,52 @@ NUM_IMAGES --- Function that returns the number of images
 
 .. index:: images, number of
 
-:samp:`{Description}:`
+.. function:: NUM_IMAGES
+
   Returns the number of images.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later. With :samp:`{DISTANCE}` or :samp:`{FAILED}` argument, 
-  Technical Specification (TS) 18508 or later
+  :param DISTANCE:
+    (optional, intent(in)) Nonnegative scalar integer
 
-:samp:`{Class}:`
-  Transformational function
+  :param FAILED:
+    (optional, intent(in)) Scalar logical expression
 
-:samp:`{Syntax}:`
-  ``RESULT = NUM_IMAGES(DISTANCE, FAILED)``
+  :return:
+    Scalar default-kind integer.  If :samp:`{DISTANCE}` is not present or has value 0,
+    the number of images in the current team is returned. For values smaller or
+    equal distance to the initial team, it returns the number of images index
+    on the ancestor team which has a distance of :samp:`{DISTANCE}` from the invoking
+    team. If :samp:`{DISTANCE}` is larger than the distance to the initial team, the
+    number of images of the initial team is returned. If :samp:`{FAILED}` is not present
+    the total number of images is returned; if it has the value ``.TRUE.``,
+    the number of failed images is returned, otherwise, the number of images which
+    do have not the failed status.
 
-:samp:`{Arguments}:`
-  ==================  =================================================
-  :samp:`{DISTANCE}`  (optional, intent(in)) Nonnegative scalar integer
-  :samp:`{FAILED}`    (optional, intent(in)) Scalar logical expression
-  ==================  =================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later. With :samp:`{DISTANCE}` or :samp:`{FAILED}` argument, 
+    Technical Specification (TS) 18508 or later
 
-:samp:`{Return value}:`
-  Scalar default-kind integer.  If :samp:`{DISTANCE}` is not present or has value 0,
-  the number of images in the current team is returned. For values smaller or
-  equal distance to the initial team, it returns the number of images index
-  on the ancestor team which has a distance of :samp:`{DISTANCE}` from the invoking
-  team. If :samp:`{DISTANCE}` is larger than the distance to the initial team, the
-  number of images of the initial team is returned. If :samp:`{FAILED}` is not present
-  the total number of images is returned; if it has the value ``.TRUE.``,
-  the number of failed images is returned, otherwise, the number of images which
-  do have not the failed status.
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = NUM_IMAGES(DISTANCE, FAILED)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    INTEGER :: value[*]
-    INTEGER :: i
-    value = THIS_IMAGE()
-    SYNC ALL
-    IF (THIS_IMAGE() == 1) THEN
-      DO i = 1, NUM_IMAGES()
-        WRITE(*,'(2(a,i0))') 'value[', i, '] is ', value[i]
-      END DO
-    END IF
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  THIS_IMAGE, 
-  IMAGE_INDEX
+      INTEGER :: value[*]
+      INTEGER :: i
+      value = THIS_IMAGE()
+      SYNC ALL
+      IF (THIS_IMAGE() == 1) THEN
+        DO i = 1, NUM_IMAGES()
+          WRITE(*,'(2(a,i0))') 'value[', i, '] is ', value[i]
+        END DO
+      END IF
+
+  :samp:`{See also}:`
+    THIS_IMAGE, 
+    IMAGE_INDEX
 

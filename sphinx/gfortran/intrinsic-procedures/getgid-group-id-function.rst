@@ -1,4 +1,4 @@
-  .. _getgid:
+.. _getgid:
 
 GETGID --- Group ID function
 ****************************
@@ -7,26 +7,27 @@ GETGID --- Group ID function
 
 .. index:: system, group ID
 
-:samp:`{Description}:`
+.. function:: GETGID
+
   Returns the numerical group ID of the current process.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    The return value of ``GETGID`` is an ``INTEGER`` of the default
+    kind.
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``RESULT = GETGID()``
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Return value}:`
-  The return value of ``GETGID`` is an ``INTEGER`` of the default
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = GETGID()``
 
-:samp:`{Example}:`
-  See ``GETPID`` for an example.
+  :samp:`{Example}:`
+    See ``GETPID`` for an example.
 
-:samp:`{See also}:`
-  GETPID, 
-  GETUID
+  :samp:`{See also}:`
+    GETPID, 
+    GETUID
 

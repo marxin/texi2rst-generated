@@ -1,4 +1,4 @@
-  .. _cmplx:
+.. _cmplx:
 
 CMPLX --- Complex conversion function
 *************************************
@@ -9,49 +9,52 @@ CMPLX --- Complex conversion function
 
 .. index:: conversion, to complex
 
-:samp:`{Description}:`
+.. function:: CMPLX(X [, Y [, KIND]])
+
   ``CMPLX(X [, Y [, KIND]])`` returns a complex number where :samp:`{X}` is converted to
   the real component.  If :samp:`{Y}` is present it is converted to the imaginary
   component.  If :samp:`{Y}` is not present then the imaginary component is set to
   0.0.  If :samp:`{X}` is complex then :samp:`{Y}` must not be present.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param X:
+    The type may be ``INTEGER``, ``REAL``,
+    or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param Y:
+    (Optional; only allowed if :samp:`{X}` is not
+    ``COMPLEX``.)  May be ``INTEGER`` or ``REAL``.
 
-:samp:`{Syntax}:`
-  ``RESULT = CMPLX(X [, Y [, KIND]])``
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{X}`     The type may be ``INTEGER``, ``REAL``,
-                  or ``COMPLEX``.
-  :samp:`{Y}`     (Optional; only allowed if :samp:`{X}` is not
-                  ``COMPLEX``.)  May be ``INTEGER`` or ``REAL``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :return:
+    The return value is of ``COMPLEX`` type, with a kind equal to
+    :samp:`{KIND}` if it is specified.  If :samp:`{KIND}` is not specified, the
+    result is of the default ``COMPLEX`` kind, regardless of the kinds of
+    :samp:`{X}` and :samp:`{Y}`. 
 
-:samp:`{Return value}:`
-  The return value is of ``COMPLEX`` type, with a kind equal to
-  :samp:`{KIND}` if it is specified.  If :samp:`{KIND}` is not specified, the
-  result is of the default ``COMPLEX`` kind, regardless of the kinds of
-  :samp:`{X}` and :samp:`{Y}`. 
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Elemental function
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``RESULT = CMPLX(X [, Y [, KIND]])``
 
-    program test_cmplx
-        integer :: i = 42
-        real :: x = 3.14
-        complex :: z
-        z = cmplx(i, x)
-        print *, z, cmplx(x)
-    end program test_cmplx
+  :samp:`{Example}:`
 
-:samp:`{See also}:`
-  COMPLEX
+    .. code-block:: fortran
+
+      program test_cmplx
+          integer :: i = 42
+          real :: x = 3.14
+          complex :: z
+          z = cmplx(i, x)
+          print *, z, cmplx(x)
+      end program test_cmplx
+
+  :samp:`{See also}:`
+    COMPLEX
 

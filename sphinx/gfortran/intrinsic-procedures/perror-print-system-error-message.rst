@@ -1,4 +1,4 @@
-  .. _perror:
+.. _perror:
 
 PERROR --- Print system error message
 *************************************
@@ -7,26 +7,25 @@ PERROR --- Print system error message
 
 .. index:: system, error handling
 
-:samp:`{Description}:`
+.. function:: PERROR
+
   Prints (on the C ``stderr`` stream) a newline-terminated error
   message corresponding to the last system error. This is prefixed by
   :samp:`{STRING}`, a colon and a space. See ``perror(3)``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param STRING:
+    A scalar of type ``CHARACTER`` and of the
+    default kind.
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``CALL PERROR(STRING)``
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Arguments}:`
-  ================  =========================================
-  :samp:`{STRING}`  A scalar of type ``CHARACTER`` and of the
-                    default kind.
-  ================  =========================================
+  :samp:`{Syntax}:`
+    ``CALL PERROR(STRING)``
 
-:samp:`{See also}:`
-  IERRNO
+  :samp:`{See also}:`
+    IERRNO
 

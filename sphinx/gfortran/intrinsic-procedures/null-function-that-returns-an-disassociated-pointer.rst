@@ -1,4 +1,4 @@
-  .. _null:
+.. _null:
 
 NULL --- Function that returns an disassociated pointer
 *******************************************************
@@ -9,39 +9,32 @@ NULL --- Function that returns an disassociated pointer
 
 .. index:: pointer, disassociated
 
-:samp:`{Description}:`
+.. function:: NULL
+
   Returns a disassociated pointer.
 
-  If :samp:`{MOLD}` is present, a disassociated pointer of the same type is
-  returned, otherwise the type is determined by context.
+  :param MOLD:
+    (Optional) shall be a pointer of any association
+    status and of any type.
 
-  In Fortran 95, :samp:`{MOLD}` is optional. Please note that Fortran 2003
-  includes cases where it is required.
+  :return:
+    A disassociated pointer.
 
-:samp:`{Standard}:`
-  Fortran 95 and later
+  :samp:`{Standard}:`
+    Fortran 95 and later
 
-:samp:`{Class}:`
-  Transformational function
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Syntax}:`
-  ``PTR => NULL([MOLD])``
+  :samp:`{Syntax}:`
+    ``PTR => NULL([MOLD])``
 
-:samp:`{Arguments}:`
-  ==============  ================================================
-  :samp:`{MOLD}`  (Optional) shall be a pointer of any association
-                  status and of any type.
-  ==============  ================================================
+  :samp:`{Example}:`
 
-:samp:`{Return value}:`
-  A disassociated pointer.
+    .. code-block:: fortran
 
-:samp:`{Example}:`
+      REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 
-  .. code-block:: fortran
-
-    REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
-
-:samp:`{See also}:`
-  ASSOCIATED
+  :samp:`{See also}:`
+    ASSOCIATED
 

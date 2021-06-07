@@ -1,4 +1,4 @@
-  .. _backtrace:
+.. _backtrace:
 
 BACKTRACE --- Show a backtrace
 ******************************
@@ -7,23 +7,24 @@ BACKTRACE --- Show a backtrace
 
 .. index:: backtrace
 
-:samp:`{Description}:`
+.. function:: BACKTRACE
+
   ``BACKTRACE`` shows a backtrace at an arbitrary place in user code. Program
   execution continues normally afterwards. The backtrace information is printed
   to the unit corresponding to ``ERROR_UNIT`` in ``ISO_FORTRAN_ENV``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Class}:`
-  Subroutine
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Syntax}:`
-  ``CALL BACKTRACE``
+  :samp:`{Syntax}:`
+    ``CALL BACKTRACE``
 
-:samp:`{Arguments}:`
-  None
+  :samp:`{Arguments}:`
+    None
 
-:samp:`{See also}:`
-  ABORT
+  :samp:`{See also}:`
+    ABORT
 

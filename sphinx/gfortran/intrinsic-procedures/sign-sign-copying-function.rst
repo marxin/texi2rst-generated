@@ -1,4 +1,4 @@
-  .. _sign:
+.. _sign:
 
 SIGN --- Sign copying function
 ******************************
@@ -11,47 +11,49 @@ SIGN --- Sign copying function
 
 .. index:: sign copying
 
-:samp:`{Description}:`
+.. function:: SIGN(A,B)
+
   ``SIGN(A,B)`` returns the value of :samp:`{A}` with the sign of :samp:`{B}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param A:
+    Shall be of type ``INTEGER`` or ``REAL``
 
-:samp:`{Class}:`
-  Elemental function
+  :param B:
+    Shall be of the same type and kind as :samp:`{A}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = SIGN(A, B)``
+  :return:
+    The kind of the return value is that of :samp:`{A}` and :samp:`{B}`.
+    If B\ge 0 then the result is ``ABS(A)``, else
+    it is ``-ABS(A)``.
 
-:samp:`{Arguments}:`
-  ===========  ==================================================
-  :samp:`{A}`  Shall be of type ``INTEGER`` or ``REAL``
-  :samp:`{B}`  Shall be of the same type and kind as :samp:`{A}`.
-  ===========  ==================================================
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Return value}:`
-  The kind of the return value is that of :samp:`{A}` and :samp:`{B}`.
-  If B\ge 0 then the result is ``ABS(A)``, else
-  it is ``-ABS(A)``.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = SIGN(A, B)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_sign
-      print *, sign(-12,1)
-      print *, sign(-12,0)
-      print *, sign(-12,-1)
+    .. code-block:: fortran
 
-      print *, sign(-12.,1.)
-      print *, sign(-12.,0.)
-      print *, sign(-12.,-1.)
-    end program test_sign
+      program test_sign
+        print *, sign(-12,1)
+        print *, sign(-12,0)
+        print *, sign(-12,-1)
 
-:samp:`{Specific names}:`
-  ==============  ===================  ==============  ====================
-  Name            Arguments            Return type     Standard
-  ``SIGN(A,B)``   ``REAL(4) A, B``     ``REAL(4)``     Fortran 77 and later
-  ``ISIGN(A,B)``  ``INTEGER(4) A, B``  ``INTEGER(4)``  Fortran 77 and later
-  ``DSIGN(A,B)``  ``REAL(8) A, B``     ``REAL(8)``     Fortran 77 and later
-  ==============  ===================  ==============  ====================
+        print *, sign(-12.,1.)
+        print *, sign(-12.,0.)
+        print *, sign(-12.,-1.)
+      end program test_sign
+
+  :samp:`{Specific names}:`
+    ==============  ===================  ==============  ====================
+    Name            Arguments            Return type     Standard
+    ``SIGN(A,B)``   ``REAL(4) A, B``     ``REAL(4)``     Fortran 77 and later
+    ``ISIGN(A,B)``  ``INTEGER(4) A, B``  ``INTEGER(4)``  Fortran 77 and later
+    ``DSIGN(A,B)``  ``REAL(8) A, B``     ``REAL(8)``     Fortran 77 and later
+    ==============  ===================  ==============  ====================
+

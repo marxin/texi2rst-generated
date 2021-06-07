@@ -1,4 +1,4 @@
-  .. _set_exponent:
+.. _set_exponent:
 
 SET_EXPONENT --- Set the exponent of the model
 **********************************************
@@ -9,38 +9,39 @@ SET_EXPONENT --- Set the exponent of the model
 
 .. index:: floating point, set exponent
 
-:samp:`{Description}:`
+.. function:: SET_EXPONENT(X, I)
+
   ``SET_EXPONENT(X, I)`` returns the real number whose fractional part
   is that that of :samp:`{X}` and whose exponent part is :samp:`{I}`.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param I:
+    Shall be of type ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = SET_EXPONENT(X, I)``
+  :return:
+    The return value is of the same type and kind as :samp:`{X}`.
+    The real number whose fractional part
+    is that that of :samp:`{X}` and whose exponent part if :samp:`{I}` is returned;
+    it is ``FRACTION(X) * RADIX(X)**I``.
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{X}`  Shall be of type ``REAL``.
-  :samp:`{I}`  Shall be of type ``INTEGER``.
-  ===========  =============================
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as :samp:`{X}`.
-  The real number whose fractional part
-  is that that of :samp:`{X}` and whose exponent part if :samp:`{I}` is returned;
-  it is ``FRACTION(X) * RADIX(X)**I``.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = SET_EXPONENT(X, I)``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    PROGRAM test_setexp
-      REAL :: x = 178.1387e-4
-      INTEGER :: i = 17
-      PRINT *, SET_EXPONENT(x, i), FRACTION(x) * RADIX(x)**i
-    END PROGRAM
+    .. code-block:: fortran
+
+      PROGRAM test_setexp
+        REAL :: x = 178.1387e-4
+        INTEGER :: i = 17
+        PRINT *, SET_EXPONENT(x, i), FRACTION(x) * RADIX(x)**i
+      END PROGRAM
 

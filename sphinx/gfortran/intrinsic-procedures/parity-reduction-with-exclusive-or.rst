@@ -1,4 +1,4 @@
-  .. _parity:
+.. _parity:
 
 PARITY --- Reduction with exclusive OR
 **************************************
@@ -11,45 +11,39 @@ PARITY --- Reduction with exclusive OR
 
 .. index:: XOR reduction
 
-:samp:`{Description}:`
+.. function:: PARITY
+
   Calculates the parity, i.e. the reduction using ``.XOR.``,
   of :samp:`{MASK}` along dimension :samp:`{DIM}`.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param MASK:
+    Shall be an array of type ``LOGICAL``
 
-:samp:`{Class}:`
-  Transformational function
+  :param DIM:
+    (Optional) shall be a scalar of type 
+    ``INTEGER`` with a value in the range from 1 to n, where n 
+    equals the rank of :samp:`{MASK}`.
 
-:samp:`{Syntax}:`
-  ================================
-  ``RESULT = PARITY(MASK[, DIM])``
-  ================================
+  :return:
+    The result is of the same type as :samp:`{MASK}`.
 
-:samp:`{Arguments}:`
-  ==============  ===========================================================
-  :samp:`{MASK}`  Shall be an array of type ``LOGICAL``
-  :samp:`{DIM}`   (Optional) shall be a scalar of type 
-                  ``INTEGER`` with a value in the range from 1 to n, where n 
-                  equals the rank of :samp:`{MASK}`.
-  ==============  ===========================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The result is of the same type as :samp:`{MASK}`.
+  :samp:`{Class}:`
+    Transformational function
 
-  If :samp:`{DIM}` is absent, a scalar with the parity of all elements in
-  :samp:`{MASK}` is returned, i.e. true if an odd number of elements is
-  ``.true.`` and false otherwise.  If :samp:`{DIM}` is present, an array
-  of rank n-1, where n equals the rank of :samp:`{ARRAY}`,
-  and a shape similar to that of :samp:`{MASK}` with dimension :samp:`{DIM}`
-  dropped is returned.
+  :samp:`{Syntax}:`
+    ================================
+    ``RESULT = PARITY(MASK[, DIM])``
+    ================================
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_sum
-      LOGICAL :: x(2) = [ .true., .false. ]
-      print *, PARITY(x) ! prints "T" (true).
-    END PROGRAM
+      PROGRAM test_sum
+        LOGICAL :: x(2) = [ .true., .false. ]
+        print *, PARITY(x) ! prints "T" (true).
+      END PROGRAM
 

@@ -1,4 +1,4 @@
-  .. _ble:
+.. _ble:
 
 BLE --- Bitwise less than or equal to
 *************************************
@@ -7,31 +7,32 @@ BLE --- Bitwise less than or equal to
 
 .. index:: bitwise comparison
 
-:samp:`{Description}:`
+.. function:: BLE
+
   Determines whether an integral is a bitwise less than or equal to
   another.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of ``INTEGER`` type.
 
-:samp:`{Class}:`
-  Elemental function
+  :param J:
+    Shall be of ``INTEGER`` type, and of the same kind
+    as :samp:`{I}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = BLE(I, J)``
+  :return:
+    The return value is of type ``LOGICAL`` and of the default kind.
 
-:samp:`{Arguments}:`
-  ===========  ==================================================
-  :samp:`{I}`  Shall be of ``INTEGER`` type.
-  :samp:`{J}`  Shall be of ``INTEGER`` type, and of the same kind
-               as :samp:`{I}`.
-  ===========  ==================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``LOGICAL`` and of the default kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  BGT, 
-  BGE, 
-  BLT
+  :samp:`{Syntax}:`
+    ``RESULT = BLE(I, J)``
+
+  :samp:`{See also}:`
+    BGT, 
+    BGE, 
+    BLT
 

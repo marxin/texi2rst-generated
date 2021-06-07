@@ -1,4 +1,4 @@
-  .. _getpid:
+.. _getpid:
 
 GETPID --- Process ID function
 ******************************
@@ -9,33 +9,34 @@ GETPID --- Process ID function
 
 .. index:: process ID
 
-:samp:`{Description}:`
+.. function:: GETPID
+
   Returns the numerical process identifier of the current process.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    The return value of ``GETPID`` is an ``INTEGER`` of the default
+    kind.
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``RESULT = GETPID()``
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Return value}:`
-  The return value of ``GETPID`` is an ``INTEGER`` of the default
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = GETPID()``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program info
-      print *, "The current process ID is ", getpid()
-      print *, "Your numerical user ID is ", getuid()
-      print *, "Your numerical group ID is ", getgid()
-    end program info
+      program info
+        print *, "The current process ID is ", getpid()
+        print *, "Your numerical user ID is ", getuid()
+        print *, "Your numerical group ID is ", getgid()
+      end program info
 
-:samp:`{See also}:`
-  GETGID, 
-  GETUID
+  :samp:`{See also}:`
+    GETGID, 
+    GETUID
 

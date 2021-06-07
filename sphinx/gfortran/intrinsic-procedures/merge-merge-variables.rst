@@ -1,4 +1,4 @@
-  .. _merge:
+.. _merge:
 
 MERGE --- Merge variables
 *************************
@@ -9,28 +9,31 @@ MERGE --- Merge variables
 
 .. index:: array, combine arrays
 
-:samp:`{Description}:`
+.. function:: MERGE
+
   Select values from two arrays according to a logical mask.  The result
   is equal to :samp:`{TSOURCE}` if :samp:`{MASK}` is ``.TRUE.``, or equal to
   :samp:`{FSOURCE}` if it is ``.FALSE.``.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param TSOURCE:
+    May be of any type.
 
-:samp:`{Class}:`
-  Elemental function
+  :param FSOURCE:
+    Shall be of the same type and type parameters
+    as :samp:`{TSOURCE}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = MERGE(TSOURCE, FSOURCE, MASK)``
+  :param MASK:
+    Shall be of type ``LOGICAL``.
 
-:samp:`{Arguments}:`
-  =================  =============================================
-  :samp:`{TSOURCE}`  May be of any type.
-  :samp:`{FSOURCE}`  Shall be of the same type and type parameters
-                     as :samp:`{TSOURCE}`.
-  :samp:`{MASK}`     Shall be of type ``LOGICAL``.
-  =================  =============================================
+  :return:
+    The result is of the same type and type parameters as :samp:`{TSOURCE}`.
 
-:samp:`{Return value}:`
-  The result is of the same type and type parameters as :samp:`{TSOURCE}`.
+  :samp:`{Standard}:`
+    Fortran 90 and later
+
+  :samp:`{Class}:`
+    Elemental function
+
+  :samp:`{Syntax}:`
+    ``RESULT = MERGE(TSOURCE, FSOURCE, MASK)``
 

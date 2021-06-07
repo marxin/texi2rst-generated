@@ -1,4 +1,4 @@
-  .. _trim:
+.. _trim:
 
 TRIM --- Remove trailing blank characters of a string
 *****************************************************
@@ -7,37 +7,36 @@ TRIM --- Remove trailing blank characters of a string
 
 .. index:: string, remove trailing whitespace
 
-:samp:`{Description}:`
+.. function:: TRIM
+
   Removes trailing blank characters of a string.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param STRING:
+    Shall be a scalar of type ``CHARACTER``.
 
-:samp:`{Class}:`
-  Transformational function
+  :return:
+    A scalar of type ``CHARACTER`` which length is that of :samp:`{STRING}`
+    less the number of trailing blanks.
 
-:samp:`{Syntax}:`
-  ``RESULT = TRIM(STRING)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ================  ========================================
-  :samp:`{STRING}`  Shall be a scalar of type ``CHARACTER``.
-  ================  ========================================
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Return value}:`
-  A scalar of type ``CHARACTER`` which length is that of :samp:`{STRING}`
-  less the number of trailing blanks.
+  :samp:`{Syntax}:`
+    ``RESULT = TRIM(STRING)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_trim
-      CHARACTER(len=10), PARAMETER :: s = "GFORTRAN  "
-      WRITE(*,*) LEN(s), LEN(TRIM(s))  ! "10 8", with/without trailing blanks
-    END PROGRAM
+      PROGRAM test_trim
+        CHARACTER(len=10), PARAMETER :: s = "GFORTRAN  "
+        WRITE(*,*) LEN(s), LEN(TRIM(s))  ! "10 8", with/without trailing blanks
+      END PROGRAM
 
-:samp:`{See also}:`
-  ADJUSTL, 
-  ADJUSTR
+  :samp:`{See also}:`
+    ADJUSTL, 
+    ADJUSTR
 

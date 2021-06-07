@@ -1,4 +1,4 @@
-  .. _getlog:
+.. _getlog:
 
 GETLOG --- Get login name
 *************************
@@ -9,39 +9,38 @@ GETLOG --- Get login name
 
 .. index:: login name
 
-:samp:`{Description}:`
+.. function:: GETLOG
+
   Gets the username under which the program is running.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param C:
+    Shall be of type ``CHARACTER`` and of default kind.
 
-:samp:`{Class}:`
-  Subroutine
+  :return:
+    Stores the current user name in :samp:`{C}`.  (On systems where POSIX
+    functions ``geteuid`` and ``getpwuid`` are not available, and 
+    the ``getlogin`` function is not implemented either, this will
+    return a blank string.)
 
-:samp:`{Syntax}:`
-  ``CALL GETLOG(C)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ===========  ===================================================
-  :samp:`{C}`  Shall be of type ``CHARACTER`` and of default kind.
-  ===========  ===================================================
+  :samp:`{Class}:`
+    Subroutine
 
-:samp:`{Return value}:`
-  Stores the current user name in :samp:`{C}`.  (On systems where POSIX
-  functions ``geteuid`` and ``getpwuid`` are not available, and 
-  the ``getlogin`` function is not implemented either, this will
-  return a blank string.)
+  :samp:`{Syntax}:`
+    ``CALL GETLOG(C)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM TEST_GETLOG
-      CHARACTER(32) :: login
-      CALL GETLOG(login)
-      WRITE(*,*) login
-    END PROGRAM
+      PROGRAM TEST_GETLOG
+        CHARACTER(32) :: login
+        CALL GETLOG(login)
+        WRITE(*,*) login
+      END PROGRAM
 
-:samp:`{See also}:`
-  GETUID
+  :samp:`{See also}:`
+    GETUID
 

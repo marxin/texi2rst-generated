@@ -1,4 +1,4 @@
-  .. _sin:
+.. _sin:
 
 SIN --- Sine function 
 **********************
@@ -17,49 +17,48 @@ SIN --- Sine function
 
 .. index:: sine
 
-:samp:`{Description}:`
+.. function:: SIN(X)
+
   ``SIN(X)`` computes the sine of :samp:`{X}`.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param X:
+    The type shall be ``REAL`` or
+    ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value has same type and kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = SIN(X)``
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{X}`  The type shall be ``REAL`` or
-               ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value has same type and kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = SIN(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_sin
-      real :: x = 0.0
-      x = sin(x)
-    end program test_sin
+      program test_sin
+        real :: x = 0.0
+        x = sin(x)
+      end program test_sin
 
-:samp:`{Specific names}:`
-  ============  ================  ==============  ====================
-  Name          Argument          Return type     Standard
-  ``SIN(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-  ``DSIN(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-  ``CSIN(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-  ``ZSIN(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  ``CDSIN(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-  ============  ================  ==============  ====================
+  :samp:`{Specific names}:`
+    ============  ================  ==============  ====================
+    Name          Argument          Return type     Standard
+    ``SIN(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
+    ``DSIN(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
+    ``CSIN(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
+    ``ZSIN(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    ``CDSIN(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
+    ============  ================  ==============  ====================
 
-:samp:`{See also}:`
-  Inverse function: 
-  ASIN 
-  Degrees function: 
-  SIND
+  :samp:`{See also}:`
+    Inverse function: 
+    ASIN 
+    Degrees function: 
+    SIND
 

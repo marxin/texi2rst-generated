@@ -1,4 +1,4 @@
-  .. _blt:
+.. _blt:
 
 BLT --- Bitwise less than
 *************************
@@ -7,30 +7,31 @@ BLT --- Bitwise less than
 
 .. index:: bitwise comparison
 
-:samp:`{Description}:`
+.. function:: BLT
+
   Determines whether an integral is a bitwise less than another.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of ``INTEGER`` type.
 
-:samp:`{Class}:`
-  Elemental function
+  :param J:
+    Shall be of ``INTEGER`` type, and of the same kind
+    as :samp:`{I}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = BLT(I, J)``
+  :return:
+    The return value is of type ``LOGICAL`` and of the default kind.
 
-:samp:`{Arguments}:`
-  ===========  ==================================================
-  :samp:`{I}`  Shall be of ``INTEGER`` type.
-  :samp:`{J}`  Shall be of ``INTEGER`` type, and of the same kind
-               as :samp:`{I}`.
-  ===========  ==================================================
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``LOGICAL`` and of the default kind.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{See also}:`
-  BGE, 
-  BGT, 
-  BLE
+  :samp:`{Syntax}:`
+    ``RESULT = BLT(I, J)``
+
+  :samp:`{See also}:`
+    BGE, 
+    BGT, 
+    BLE
 

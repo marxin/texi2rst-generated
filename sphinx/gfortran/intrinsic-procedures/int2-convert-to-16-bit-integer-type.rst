@@ -1,4 +1,4 @@
-  .. _int2:
+.. _int2:
 
 INT2 --- Convert to 16-bit integer type
 ***************************************
@@ -9,33 +9,30 @@ INT2 --- Convert to 16-bit integer type
 
 .. index:: conversion, to integer
 
-:samp:`{Description}:`
+.. function:: INT2
+
   Convert to a ``KIND=2`` integer type. This is equivalent to the
   standard ``INT`` intrinsic with an optional argument of
   ``KIND=2``, and is only included for backwards compatibility.
 
-  The ``SHORT`` intrinsic is equivalent to ``INT2``.
+  :param A:
+    Shall be of type ``INTEGER``,
+    ``REAL``, or ``COMPLEX``.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    The return value is a ``INTEGER(2)`` variable.
 
-:samp:`{Class}:`
-  Elemental function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``RESULT = INT2(A)``
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{A}`  Shall be of type ``INTEGER``,
-               ``REAL``, or ``COMPLEX``.
-  ===========  =============================
+  :samp:`{Syntax}:`
+    ``RESULT = INT2(A)``
 
-:samp:`{Return value}:`
-  The return value is a ``INTEGER(2)`` variable.
-
-:samp:`{See also}:`
-  INT, 
-  INT8, 
-  LONG
+  :samp:`{See also}:`
+    INT, 
+    INT8, 
+    LONG
 

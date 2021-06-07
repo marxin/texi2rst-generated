@@ -1,4 +1,4 @@
-  .. _transpose:
+.. _transpose:
 
 TRANSPOSE --- Transpose an array of rank two
 ********************************************
@@ -11,25 +11,24 @@ TRANSPOSE --- Transpose an array of rank two
 
 .. index:: transpose
 
-:samp:`{Description}:`
+.. function:: TRANSPOSE
+
   Transpose an array of rank two. Element (i, j) of the result has the value 
   ``MATRIX(j, i)``, for all i, j.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param MATRIX:
+    Shall be an array of any type and have a rank of two.
 
-:samp:`{Class}:`
-  Transformational function
+  :return:
+    The result has the same type as :samp:`{MATRIX}`, and has shape 
+    ``(/ m, n /)`` if :samp:`{MATRIX}` has shape ``(/ n, m /)``.
 
-:samp:`{Syntax}:`
-  ``RESULT = TRANSPOSE(MATRIX)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ================  =====================================================
-  :samp:`{MATRIX}`  Shall be an array of any type and have a rank of two.
-  ================  =====================================================
+  :samp:`{Class}:`
+    Transformational function
 
-:samp:`{Return value}:`
-  The result has the same type as :samp:`{MATRIX}`, and has shape 
-  ``(/ m, n /)`` if :samp:`{MATRIX}` has shape ``(/ n, m /)``.
+  :samp:`{Syntax}:`
+    ``RESULT = TRANSPOSE(MATRIX)``
 

@@ -1,4 +1,4 @@
-  .. _new_line:
+.. _new_line:
 
 NEW_LINE --- New line character
 *******************************
@@ -9,34 +9,33 @@ NEW_LINE --- New line character
 
 .. index:: output, newline
 
-:samp:`{Description}:`
+.. function:: NEW_LINE(C)
+
   ``NEW_LINE(C)`` returns the new-line character.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :param C:
+    The argument shall be a scalar or array of the
+    type ``CHARACTER``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    Returns a :samp:`{CHARACTER}` scalar of length one with the new-line character of
+    the same kind as parameter :samp:`{C}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = NEW_LINE(C)``
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Arguments}:`
-  ===========  ==============================================
-  :samp:`{C}`  The argument shall be a scalar or array of the
-               type ``CHARACTER``.
-  ===========  ==============================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  Returns a :samp:`{CHARACTER}` scalar of length one with the new-line character of
-  the same kind as parameter :samp:`{C}`.
+  :samp:`{Syntax}:`
+    ``RESULT = NEW_LINE(C)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program newline
-      implicit none
-      write(*,'(A)') 'This is record 1.'//NEW_LINE('A')//'This is record 2.'
-    end program newline
+      program newline
+        implicit none
+        write(*,'(A)') 'This is record 1.'//NEW_LINE('A')//'This is record 2.'
+      end program newline
 

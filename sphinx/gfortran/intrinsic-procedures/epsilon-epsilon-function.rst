@@ -1,4 +1,4 @@
-  .. _epsilon:
+.. _epsilon:
 
 EPSILON --- Epsilon function
 ****************************
@@ -7,35 +7,34 @@ EPSILON --- Epsilon function
 
 .. index:: model representation, epsilon
 
-:samp:`{Description}:`
+.. function:: EPSILON(X)
+
   ``EPSILON(X)`` returns the smallest number :samp:`{E}` of the same kind
   as :samp:`{X}` such that 1 + E > 1.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of same type as the argument.
 
-:samp:`{Syntax}:`
-  ``RESULT = EPSILON(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ===========================
-  :samp:`{X}`  The type shall be ``REAL``.
-  ===========  ===========================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of same type as the argument.
+  :samp:`{Syntax}:`
+    ``RESULT = EPSILON(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_epsilon
-        real :: x = 3.143
-        real(8) :: y = 2.33
-        print *, EPSILON(x)
-        print *, EPSILON(y)
-    end program test_epsilon
+      program test_epsilon
+          real :: x = 3.143
+          real(8) :: y = 2.33
+          print *, EPSILON(x)
+          print *, EPSILON(y)
+      end program test_epsilon
 

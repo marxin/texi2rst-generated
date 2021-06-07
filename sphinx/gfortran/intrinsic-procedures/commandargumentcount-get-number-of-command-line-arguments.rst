@@ -1,4 +1,4 @@
-  .. _command_argument_count:
+.. _command_argument_count:
 
 COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 ***************************************************************
@@ -11,38 +11,34 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 
 .. index:: arguments, to program
 
-:samp:`{Description}:`
+.. function:: COMMAND_ARGUMENT_COUNT
+
   ``COMMAND_ARGUMENT_COUNT`` returns the number of arguments passed on the
   command line when the containing program was invoked.
 
-:samp:`{Standard}:`
-  Fortran 2003 and later
+  :return:
+    The return value is an ``INTEGER`` of default kind.
 
-:samp:`{Class}:`
-  Inquiry function
+  :samp:`{Standard}:`
+    Fortran 2003 and later
 
-:samp:`{Syntax}:`
-  ``RESULT = COMMAND_ARGUMENT_COUNT()``
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Arguments}:`
-  ====
-  None
-  ====
+  :samp:`{Syntax}:`
+    ``RESULT = COMMAND_ARGUMENT_COUNT()``
 
-:samp:`{Return value}:`
-  The return value is an ``INTEGER`` of default kind.
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: fortran
 
-  .. code-block:: fortran
+      program test_command_argument_count
+          integer :: count
+          count = command_argument_count()
+          print *, count
+      end program test_command_argument_count
 
-    program test_command_argument_count
-        integer :: count
-        count = command_argument_count()
-        print *, count
-    end program test_command_argument_count
-
-:samp:`{See also}:`
-  GET_COMMAND, 
-  GET_COMMAND_ARGUMENT
+  :samp:`{See also}:`
+    GET_COMMAND, 
+    GET_COMMAND_ARGUMENT
 

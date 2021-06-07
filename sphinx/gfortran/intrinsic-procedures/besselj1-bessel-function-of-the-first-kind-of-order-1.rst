@@ -1,4 +1,4 @@
-  .. _bessel_j1:
+.. _bessel_j1:
 
 BESSEL_J1 --- Bessel function of the first kind of order 1
 **********************************************************
@@ -11,41 +11,41 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
 
 .. index:: Bessel function, first kind
 
-:samp:`{Description}:`
+.. function:: BESSEL_J1(X)
+
   ``BESSEL_J1(X)`` computes the Bessel function of the first kind of
   order 1 of :samp:`{X}`. This function is available under the name
   ``BESJ1`` as a GNU extension.
 
-:samp:`{Standard}:`
-  Fortran 2008
+  :param X:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type ``REAL`` and lies in the
+    range - 0.5818... \leq Bessel (0,x) \leq 0.5818 . It has the same
+    kind as :samp:`{X}`.
 
-:samp:`{Syntax}:`
-  ``RESULT = BESSEL_J1(X)``
+  :samp:`{Standard}:`
+    Fortran 2008
 
-:samp:`{Arguments}:`
-  ===========  ===========================
-  :samp:`{X}`  The type shall be ``REAL``.
-  ===========  ===========================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type ``REAL`` and lies in the
-  range - 0.5818... \leq Bessel (0,x) \leq 0.5818 . It has the same
-  kind as :samp:`{X}`.
+  :samp:`{Syntax}:`
+    ``RESULT = BESSEL_J1(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_besj1
-      real(8) :: x = 1.0_8
-      x = bessel_j1(x)
-    end program test_besj1
+      program test_besj1
+        real(8) :: x = 1.0_8
+        x = bessel_j1(x)
+      end program test_besj1
 
-:samp:`{Specific names}:`
-  =============  =============  ===========  =============
-  Name           Argument       Return type  Standard
-  ``DBESJ1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-  =============  =============  ===========  =============
+  :samp:`{Specific names}:`
+    =============  =============  ===========  =============
+    Name           Argument       Return type  Standard
+    ``DBESJ1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
+    =============  =============  ===========  =============
+

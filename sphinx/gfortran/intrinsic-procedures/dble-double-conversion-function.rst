@@ -1,4 +1,4 @@
-  .. _dble:
+.. _dble:
 
 DBLE --- Double conversion function
 ***********************************
@@ -7,38 +7,37 @@ DBLE --- Double conversion function
 
 .. index:: conversion, to real
 
-:samp:`{Description}:`
+.. function:: DBLE(A)
+
   ``DBLE(A)`` Converts :samp:`{A}` to double precision real type.
 
-:samp:`{Standard}:`
-  Fortran 77 and later
+  :param A:
+    The type shall be ``INTEGER``, ``REAL``,
+    or ``COMPLEX``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of type double precision real.
 
-:samp:`{Syntax}:`
-  ``RESULT = DBLE(A)``
+  :samp:`{Standard}:`
+    Fortran 77 and later
 
-:samp:`{Arguments}:`
-  ===========  ========================================
-  :samp:`{A}`  The type shall be ``INTEGER``, ``REAL``,
-               or ``COMPLEX``.
-  ===========  ========================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of type double precision real.
+  :samp:`{Syntax}:`
+    ``RESULT = DBLE(A)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_dble
-        real    :: x = 2.18
-        integer :: i = 5
-        complex :: z = (2.3,1.14)
-        print *, dble(x), dble(i), dble(z)
-    end program test_dble
+      program test_dble
+          real    :: x = 2.18
+          integer :: i = 5
+          complex :: z = (2.3,1.14)
+          print *, dble(x), dble(i), dble(z)
+      end program test_dble
 
-:samp:`{See also}:`
-  REAL
+  :samp:`{See also}:`
+    REAL
 

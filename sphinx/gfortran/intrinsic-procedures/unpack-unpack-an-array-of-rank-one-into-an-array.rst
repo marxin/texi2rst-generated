@@ -1,4 +1,4 @@
-  .. _unpack:
+.. _unpack:
 
 UNPACK --- Unpack an array of rank one into an array
 ****************************************************
@@ -11,45 +11,48 @@ UNPACK --- Unpack an array of rank one into an array
 
 .. index:: array, scatter elements
 
-:samp:`{Description}:`
+.. function:: UNPACK
+
   Store the elements of :samp:`{VECTOR}` in an array of higher rank.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param VECTOR:
+    Shall be an array of any type and rank one. It 
+    shall have at least as many elements as :samp:`{MASK}` has ``TRUE`` values.
 
-:samp:`{Class}:`
-  Transformational function
+  :param MASK:
+    Shall be an array of type ``LOGICAL``.
 
-:samp:`{Syntax}:`
-  ``RESULT = UNPACK(VECTOR, MASK, FIELD)``
+  :param FIELD:
+    Shall be of the same type as :samp:`{VECTOR}` and have
+    the same shape as :samp:`{MASK}`.
 
-:samp:`{Arguments}:`
-  ================  ===========================================================================
-  :samp:`{VECTOR}`  Shall be an array of any type and rank one. It 
-                    shall have at least as many elements as :samp:`{MASK}` has ``TRUE`` values.
-  :samp:`{MASK}`    Shall be an array of type ``LOGICAL``.
-  :samp:`{FIELD}`   Shall be of the same type as :samp:`{VECTOR}` and have
-                    the same shape as :samp:`{MASK}`.
-  ================  ===========================================================================
+  :return:
+    The resulting array corresponds to :samp:`{FIELD}` with ``TRUE`` elements
+    of :samp:`{MASK}` replaced by values from :samp:`{VECTOR}` in array element order.
 
-:samp:`{Return value}:`
-  The resulting array corresponds to :samp:`{FIELD}` with ``TRUE`` elements
-  of :samp:`{MASK}` replaced by values from :samp:`{VECTOR}` in array element order.
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Transformational function
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``RESULT = UNPACK(VECTOR, MASK, FIELD)``
 
-    PROGRAM test_unpack
-      integer :: vector(2)  = (/1,1/)
-      logical :: mask(4)  = (/ .TRUE., .FALSE., .FALSE., .TRUE. /)
-      integer :: field(2,2) = 0, unity(2,2)
+  :samp:`{Example}:`
 
-      ! result: unity matrix
-      unity = unpack(vector, reshape(mask, (/2,2/)), field)
-    END PROGRAM
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  PACK, 
-  SPREAD
+      PROGRAM test_unpack
+        integer :: vector(2)  = (/1,1/)
+        logical :: mask(4)  = (/ .TRUE., .FALSE., .FALSE., .TRUE. /)
+        integer :: field(2,2) = 0, unity(2,2)
+
+        ! result: unity matrix
+        unity = unpack(vector, reshape(mask, (/2,2/)), field)
+      END PROGRAM
+
+  :samp:`{See also}:`
+    PACK, 
+    SPREAD
 

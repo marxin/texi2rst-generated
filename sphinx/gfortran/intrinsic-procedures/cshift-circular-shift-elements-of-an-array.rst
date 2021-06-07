@@ -1,4 +1,4 @@
-  .. _cshift:
+.. _cshift:
 
 CSHIFT --- Circular shift elements of an array
 **********************************************
@@ -11,7 +11,8 @@ CSHIFT --- Circular shift elements of an array
 
 .. index:: array, rotate
 
-:samp:`{Description}:`
+.. function:: CSHIFT(ARRAY, SHIFT [, DIM])
+
   ``CSHIFT(ARRAY, SHIFT [, DIM])`` performs a circular shift on elements of
   :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is omitted it is
   taken to be ``1``.  :samp:`{DIM}` is a scalar of type ``INTEGER`` in the
@@ -21,39 +22,41 @@ CSHIFT --- Circular shift elements of an array
   sections of :samp:`{ARRAY}` along the given dimension are shifted.  Elements
   shifted out one end of each rank one section are shifted back in the other end.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param ARRAY:
+    Shall be an array of any type.
 
-:samp:`{Class}:`
-  Transformational function
+  :param SHIFT:
+    The type shall be ``INTEGER``.
 
-:samp:`{Syntax}:`
-  ``RESULT = CSHIFT(ARRAY, SHIFT [, DIM])``
+  :param DIM:
+    The type shall be ``INTEGER``.
 
-:samp:`{Arguments}:`
-  ===============  ==============================
-  :samp:`{ARRAY}`  Shall be an array of any type.
-  :samp:`{SHIFT}`  The type shall be ``INTEGER``.
-  :samp:`{DIM}`    The type shall be ``INTEGER``.
-  ===============  ==============================
+  :return:
+    Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
 
-:samp:`{Return value}:`
-  Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Example}:`
+  :samp:`{Class}:`
+    Transformational function
 
-  .. code-block:: fortran
+  :samp:`{Syntax}:`
+    ``RESULT = CSHIFT(ARRAY, SHIFT [, DIM])``
 
-    program test_cshift
-        integer, dimension(3,3) :: a
-        a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
-        print '(3i3)', a(1,:)
-        print '(3i3)', a(2,:)
-        print '(3i3)', a(3,:)    
-        a = cshift(a, SHIFT=(/1, 2, -1/), DIM=2)
-        print *
-        print '(3i3)', a(1,:)
-        print '(3i3)', a(2,:)
-        print '(3i3)', a(3,:)
-    end program test_cshift
+  :samp:`{Example}:`
+
+    .. code-block:: fortran
+
+      program test_cshift
+          integer, dimension(3,3) :: a
+          a = reshape( (/ 1, 2, 3, 4, 5, 6, 7, 8, 9 /), (/ 3, 3 /))
+          print '(3i3)', a(1,:)
+          print '(3i3)', a(2,:)
+          print '(3i3)', a(3,:)    
+          a = cshift(a, SHIFT=(/1, 2, -1/), DIM=2)
+          print *
+          print '(3i3)', a(1,:)
+          print '(3i3)', a(2,:)
+          print '(3i3)', a(3,:)
+      end program test_cshift
 

@@ -1,4 +1,4 @@
-  .. _isatty:
+.. _isatty:
 
 ISATTY --- Whether a unit is a terminal device.
 ***********************************************
@@ -7,38 +7,37 @@ ISATTY --- Whether a unit is a terminal device.
 
 .. index:: system, terminal
 
-:samp:`{Description}:`
+.. function:: ISATTY
+
   Determine whether a unit is connected to a terminal device.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param UNIT:
+    Shall be a scalar ``INTEGER``.
 
-:samp:`{Class}:`
-  Function
+  :return:
+    Returns ``.TRUE.`` if the :samp:`{UNIT}` is connected to a terminal 
+    device, ``.FALSE.`` otherwise.
 
-:samp:`{Syntax}:`
-  ``RESULT = ISATTY(UNIT)``
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Arguments}:`
-  ==============  ==============================
-  :samp:`{UNIT}`  Shall be a scalar ``INTEGER``.
-  ==============  ==============================
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Return value}:`
-  Returns ``.TRUE.`` if the :samp:`{UNIT}` is connected to a terminal 
-  device, ``.FALSE.`` otherwise.
+  :samp:`{Syntax}:`
+    ``RESULT = ISATTY(UNIT)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_isatty
-      INTEGER(kind=1) :: unit
-      DO unit = 1, 10
-        write(*,*) isatty(unit=unit)
-      END DO
-    END PROGRAM
+      PROGRAM test_isatty
+        INTEGER(kind=1) :: unit
+        DO unit = 1, 10
+          write(*,*) isatty(unit=unit)
+        END DO
+      END PROGRAM
 
-:samp:`{See also}:`
-  TTYNAM
+  :samp:`{See also}:`
+    TTYNAM
 

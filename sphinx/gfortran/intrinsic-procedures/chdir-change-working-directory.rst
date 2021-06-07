@@ -1,4 +1,4 @@
-  .. _chdir:
+.. _chdir:
 
 CHDIR --- Change working directory
 **********************************
@@ -7,46 +7,44 @@ CHDIR --- Change working directory
 
 .. index:: system, working directory
 
-:samp:`{Description}:`
+.. function:: CHDIR
+
   Change current working directory to a specified path.
 
-  This intrinsic is provided in both subroutine and function forms; however,
-  only one form can be used in any given program unit.
+  :param NAME:
+    The type shall be ``CHARACTER`` of default
+    kind and shall specify a valid path within the file system.
 
-:samp:`{Standard}:`
-  GNU extension
+  :param STATUS:
+    (Optional) ``INTEGER`` status flag of the default
+    kind.  Returns 0 on success, and a system specific and nonzero error code
+    otherwise.
 
-:samp:`{Class}:`
-  Subroutine, function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ===============================
-  ``CALL CHDIR(NAME [, STATUS])``
-  ``STATUS = CHDIR(NAME)``
-  ===============================
+  :samp:`{Class}:`
+    Subroutine, function
 
-:samp:`{Arguments}:`
-  ================  =========================================================================
-  :samp:`{NAME}`    The type shall be ``CHARACTER`` of default
-                    kind and shall specify a valid path within the file system.
-  :samp:`{STATUS}`  (Optional) ``INTEGER`` status flag of the default
-                    kind.  Returns 0 on success, and a system specific and nonzero error code
-                    otherwise.
-  ================  =========================================================================
+  :samp:`{Syntax}:`
+    ===============================
+    ``CALL CHDIR(NAME [, STATUS])``
+    ``STATUS = CHDIR(NAME)``
+    ===============================
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_chdir
-      CHARACTER(len=255) :: path
-      CALL getcwd(path)
-      WRITE(*,*) TRIM(path)
-      CALL chdir("/tmp")
-      CALL getcwd(path)
-      WRITE(*,*) TRIM(path)
-    END PROGRAM
+      PROGRAM test_chdir
+        CHARACTER(len=255) :: path
+        CALL getcwd(path)
+        WRITE(*,*) TRIM(path)
+        CALL chdir("/tmp")
+        CALL getcwd(path)
+        WRITE(*,*) TRIM(path)
+      END PROGRAM
 
-:samp:`{See also}:`
-  GETCWD
+  :samp:`{See also}:`
+    GETCWD
 

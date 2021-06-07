@@ -1,4 +1,4 @@
-  .. _trailz:
+.. _trailz:
 
 TRAILZ --- Number of trailing zero bits of an integer
 *****************************************************
@@ -7,38 +7,37 @@ TRAILZ --- Number of trailing zero bits of an integer
 
 .. index:: zero bits
 
-:samp:`{Description}:`
+.. function:: TRAILZ
+
   ``TRAILZ`` returns the number of trailing zero bits of an integer.
 
-:samp:`{Standard}:`
-  Fortran 2008 and later
+  :param I:
+    Shall be of type ``INTEGER``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The type of the return value is the default ``INTEGER``.
+    If all the bits of ``I`` are zero, the result value is ``BIT_SIZE(I)``.
 
-:samp:`{Syntax}:`
-  ``RESULT = TRAILZ(I)``
+  :samp:`{Standard}:`
+    Fortran 2008 and later
 
-:samp:`{Arguments}:`
-  ===========  =============================
-  :samp:`{I}`  Shall be of type ``INTEGER``.
-  ===========  =============================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The type of the return value is the default ``INTEGER``.
-  If all the bits of ``I`` are zero, the result value is ``BIT_SIZE(I)``.
+  :samp:`{Syntax}:`
+    ``RESULT = TRAILZ(I)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PROGRAM test_trailz
-      WRITE (*,*) TRAILZ(8)  ! prints 3
-    END PROGRAM
+      PROGRAM test_trailz
+        WRITE (*,*) TRAILZ(8)  ! prints 3
+      END PROGRAM
 
-:samp:`{See also}:`
-  BIT_SIZE, 
-  LEADZ, 
-  POPPAR, 
-  POPCNT
+  :samp:`{See also}:`
+    BIT_SIZE, 
+    LEADZ, 
+    POPPAR, 
+    POPCNT
 

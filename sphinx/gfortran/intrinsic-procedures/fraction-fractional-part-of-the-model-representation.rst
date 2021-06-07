@@ -1,4 +1,4 @@
-  .. _fraction:
+.. _fraction:
 
 FRACTION --- Fractional part of the model representation
 ********************************************************
@@ -9,36 +9,35 @@ FRACTION --- Fractional part of the model representation
 
 .. index:: floating point, fraction
 
-:samp:`{Description}:`
+.. function:: FRACTION(X)
+
   ``FRACTION(X)`` returns the fractional part of the model
   representation of ``X``.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    The type of the argument shall be a ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :return:
+    The return value is of the same type and kind as the argument.
+    The fractional part of the model representation of ``X`` is returned;
+    it is ``X * RADIX(X)**(-EXPONENT(X))``.
 
-:samp:`{Syntax}:`
-  ``Y = FRACTION(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  =============================================
-  :samp:`{X}`  The type of the argument shall be a ``REAL``.
-  ===========  =============================================
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Return value}:`
-  The return value is of the same type and kind as the argument.
-  The fractional part of the model representation of ``X`` is returned;
-  it is ``X * RADIX(X)**(-EXPONENT(X))``.
+  :samp:`{Syntax}:`
+    ``Y = FRACTION(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program test_fraction
-      real :: x
-      x = 178.1387e-4
-      print *, fraction(x), x * radix(x)**(-exponent(x))
-    end program test_fraction
+      program test_fraction
+        real :: x
+        x = 178.1387e-4
+        print *, fraction(x), x * radix(x)**(-exponent(x))
+      end program test_fraction
 

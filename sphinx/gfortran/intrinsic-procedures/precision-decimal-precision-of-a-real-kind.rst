@@ -1,4 +1,4 @@
-  .. _precision:
+.. _precision:
 
 PRECISION --- Decimal precision of a real kind
 **********************************************
@@ -7,42 +7,41 @@ PRECISION --- Decimal precision of a real kind
 
 .. index:: model representation, precision
 
-:samp:`{Description}:`
+.. function:: PRECISION(X)
+
   ``PRECISION(X)`` returns the decimal precision in the model of the
   type of ``X``.
 
-:samp:`{Standard}:`
-  Fortran 90 and later
+  :param X:
+    Shall be of type ``REAL`` or ``COMPLEX``. It may
+    be scalar or valued.
 
-:samp:`{Class}:`
-  Inquiry function
+  :return:
+    The return value is of type ``INTEGER`` and of the default integer
+    kind.
 
-:samp:`{Syntax}:`
-  ``RESULT = PRECISION(X)``
+  :samp:`{Standard}:`
+    Fortran 90 and later
 
-:samp:`{Arguments}:`
-  ===========  ================================================
-  :samp:`{X}`  Shall be of type ``REAL`` or ``COMPLEX``. It may
-               be scalar or valued.
-  ===========  ================================================
+  :samp:`{Class}:`
+    Inquiry function
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER`` and of the default integer
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = PRECISION(X)``
 
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    program prec_and_range
-      real(kind=4) :: x(2)
-      complex(kind=8) :: y
+      program prec_and_range
+        real(kind=4) :: x(2)
+        complex(kind=8) :: y
 
-      print *, precision(x), range(x)
-      print *, precision(y), range(y)
-    end program prec_and_range
+        print *, precision(x), range(x)
+        print *, precision(y), range(y)
+      end program prec_and_range
 
-:samp:`{See also}:`
-  SELECTED_REAL_KIND, 
-  RANGE
+  :samp:`{See also}:`
+    SELECTED_REAL_KIND, 
+    RANGE
 

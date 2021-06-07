@@ -1,4 +1,4 @@
-  .. _ceiling:
+.. _ceiling:
 
 CEILING --- Integer ceiling function
 ************************************
@@ -9,41 +9,42 @@ CEILING --- Integer ceiling function
 
 .. index:: rounding, ceiling
 
-:samp:`{Description}:`
+.. function:: CEILING(A)
+
   ``CEILING(A)`` returns the least integer greater than or equal to :samp:`{A}`.
 
-:samp:`{Standard}:`
-  Fortran 95 and later
+  :param A:
+    The type shall be ``REAL``.
 
-:samp:`{Class}:`
-  Elemental function
+  :param KIND:
+    (Optional) An ``INTEGER`` initialization
+    expression indicating the kind parameter of the result.
 
-:samp:`{Syntax}:`
-  ``RESULT = CEILING(A [, KIND])``
+  :return:
+    The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
+    and a default-kind ``INTEGER`` otherwise.
 
-:samp:`{Arguments}:`
-  ==============  =======================================================
-  :samp:`{A}`     The type shall be ``REAL``.
-  :samp:`{KIND}`  (Optional) An ``INTEGER`` initialization
-                  expression indicating the kind parameter of the result.
-  ==============  =======================================================
+  :samp:`{Standard}:`
+    Fortran 95 and later
 
-:samp:`{Return value}:`
-  The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
-  and a default-kind ``INTEGER`` otherwise.
+  :samp:`{Class}:`
+    Elemental function
 
-:samp:`{Example}:`
+  :samp:`{Syntax}:`
+    ``RESULT = CEILING(A [, KIND])``
 
-  .. code-block:: fortran
+  :samp:`{Example}:`
 
-    program test_ceiling
-        real :: x = 63.29
-        real :: y = -63.59
-        print *, ceiling(x) ! returns 64
-        print *, ceiling(y) ! returns -63
-    end program test_ceiling
+    .. code-block:: fortran
 
-:samp:`{See also}:`
-  FLOOR, 
-  NINT
+      program test_ceiling
+          real :: x = 63.29
+          real :: y = -63.59
+          print *, ceiling(x) ! returns 64
+          print *, ceiling(y) ! returns -63
+      end program test_ceiling
+
+  :samp:`{See also}:`
+    FLOOR, 
+    NINT
 

@@ -1,4 +1,4 @@
-  .. _getuid:
+.. _getuid:
 
 GETUID --- User ID function
 ***************************
@@ -9,26 +9,27 @@ GETUID --- User ID function
 
 .. index:: user id
 
-:samp:`{Description}:`
+.. function:: GETUID
+
   Returns the numerical user ID of the current process.
 
-:samp:`{Standard}:`
-  GNU extension
+  :return:
+    The return value of ``GETUID`` is an ``INTEGER`` of the default
+    kind.
 
-:samp:`{Class}:`
-  Function
+  :samp:`{Standard}:`
+    GNU extension
 
-:samp:`{Syntax}:`
-  ``RESULT = GETUID()``
+  :samp:`{Class}:`
+    Function
 
-:samp:`{Return value}:`
-  The return value of ``GETUID`` is an ``INTEGER`` of the default
-  kind.
+  :samp:`{Syntax}:`
+    ``RESULT = GETUID()``
 
-:samp:`{Example}:`
-  See ``GETPID`` for an example.
+  :samp:`{Example}:`
+    See ``GETPID`` for an example.
 
-:samp:`{See also}:`
-  GETPID, 
-  GETLOG
+  :samp:`{See also}:`
+    GETPID, 
+    GETLOG
 
