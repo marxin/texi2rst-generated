@@ -380,7 +380,9 @@ Here are macros for DWARF output.
 
 .. c:var:: bool TARGET_WANT_DEBUG_PUB_SECTIONS
 
-  True if the ``.debug_pubtypes`` and ``.debug_pubnames`` sections should be emitted.  These sections are not used on most platforms, and in particular GDB does not use them.
+  True if the ``.debug_pubtypes`` and ``.debug_pubnames`` sections
+  should be emitted.  These sections are not used on most platforms, and
+  in particular GDB does not use them.
 
 .. c:var:: bool TARGET_DELAY_SCHED2
 

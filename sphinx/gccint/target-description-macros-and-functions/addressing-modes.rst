@@ -347,7 +347,9 @@ This is about addressing modes.
 
 .. function:: bool TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE (const_tree type, bool is_packed)
 
-  Return true if vector alignment is reachable (by peeling N iterations) for the given scalar type :samp:`{type}`.  :samp:`{is_packed}` is false if the scalar access using :samp:`{type}` is known to be naturally aligned.
+  Return true if vector alignment is reachable (by peeling N iterations)
+  for the given scalar type :samp:`{type}`.  :samp:`{is_packed}` is false if the scalar
+  access using :samp:`{type}` is known to be naturally aligned.
 
 .. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST (machine_mode mode, rtx output, rtx in0, rtx in1, const vec_perm_indices &sel)
 
@@ -482,19 +484,37 @@ This is about addressing modes.
 
 .. function:: void * TARGET_VECTORIZE_INIT_COST (class loop *loop_info, bool costing_for_scalar)
 
-  This hook should initialize target-specific data structures in preparation for modeling the costs of vectorizing a loop or basic block.  The default allocates three unsigned integers for accumulating costs for the prologue, body, and epilogue of the loop or basic block.  If :samp:`{loop_info}` is non-NULL, it identifies the loop being vectorized; otherwise a single block is being vectorized.  If :samp:`{costing_for_scalar}` is true, it indicates the current cost model is for the scalar version of a loop or block; otherwise it is for the vector version.
+  This hook should initialize target-specific data structures in preparation
+  for modeling the costs of vectorizing a loop or basic block.  The default
+  allocates three unsigned integers for accumulating costs for the prologue,
+  body, and epilogue of the loop or basic block.  If :samp:`{loop_info}` is
+  non-NULL, it identifies the loop being vectorized; otherwise a single block
+  is being vectorized.  If :samp:`{costing_for_scalar}` is true, it indicates the
+  current cost model is for the scalar version of a loop or block; otherwise
+  it is for the vector version.
 
 .. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST (class vec_info *, void *data, int count, enum vect_cost_for_stmt kind, class _stmt_vec_info *stmt_info, tree vectype, int misalign, enum vect_cost_model_location where)
 
-  This hook should update the target-specific :samp:`{data}` in response to adding :samp:`{count}` copies of the given :samp:`{kind}` of statement to a loop or basic block.  The default adds the builtin vectorizer cost for the copies of the statement to the accumulator specified by :samp:`{where}`, (the prologue, body, or epilogue) and returns the amount added.  The return value should be viewed as a tentative cost that may later be revised.
+  This hook should update the target-specific :samp:`{data}` in response to
+  adding :samp:`{count}` copies of the given :samp:`{kind}` of statement to a
+  loop or basic block.  The default adds the builtin vectorizer cost for
+  the copies of the statement to the accumulator specified by :samp:`{where}`,
+  (the prologue, body, or epilogue) and returns the amount added.  The
+  return value should be viewed as a tentative cost that may later be
+  revised.
 
 .. function:: void TARGET_VECTORIZE_FINISH_COST (void *data, unsigned *prologue_cost, unsigned *body_cost, unsigned *epilogue_cost)
 
-  This hook should complete calculations of the cost of vectorizing a loop or basic block based on :samp:`{data}`, and return the prologue, body, and epilogue costs as unsigned integers.  The default returns the value of the three accumulators.
+  This hook should complete calculations of the cost of vectorizing a loop
+  or basic block based on :samp:`{data}`, and return the prologue, body, and
+  epilogue costs as unsigned integers.  The default returns the value of
+  the three accumulators.
 
 .. function:: void TARGET_VECTORIZE_DESTROY_COST_DATA (void *data)
 
-  This hook should release :samp:`{data}` and any related data structures allocated by TARGET_VECTORIZE_INIT_COST.  The default releases the accumulator.
+  This hook should release :samp:`{data}` and any related data structures
+  allocated by TARGET_VECTORIZE_INIT_COST.  The default releases the
+  accumulator.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_GATHER (const_tree mem_vectype, const_tree index_type, int scale)
 

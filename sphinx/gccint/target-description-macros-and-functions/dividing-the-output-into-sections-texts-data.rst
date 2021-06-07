@@ -265,7 +265,8 @@ if the target does not provide them.
 
 .. function:: section * TARGET_ASM_TM_CLONE_TABLE_SECTION (void)
 
-  Return the section that should be used for transactional memory clone  tables.
+  Return the section that should be used for transactional memory clone
+  tables.
 
 .. function:: section * TARGET_ASM_SELECT_RTX_SECTION (machine_mode mode, rtx x, unsigned HOST_WIDE_INT align)
 

@@ -290,7 +290,10 @@ You can control the compilation driver.
 
 .. c:var:: bool TARGET_ALWAYS_STRIP_DOTDOT
 
-  True if .. components should always be removed from directory names computed relative to GCC's internal directories, false (default) if such components should be preserved and directory names containing them passed to other tools such as the linker.
+  True if .. components should always be removed from directory names
+  computed relative to GCC's internal directories, false (default) if such
+  components should be preserved and directory names containing them passed
+  to other tools such as the linker.
 
 .. c:macro:: MULTILIB_DEFAULTS
 

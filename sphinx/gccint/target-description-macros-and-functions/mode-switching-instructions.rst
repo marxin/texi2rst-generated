@@ -44,25 +44,50 @@ The following macros control mode switching optimizations:
 
 .. function:: void TARGET_MODE_EMIT (int entity, int mode, int prev_mode, HARD_REG_SET regs_live)
 
-  Generate one or more insns to set :samp:`{entity}` to :samp:`{mode}`. :samp:`{hard_reg_live}` is the set of hard registers live at the point where the insn(s) are to be inserted. :samp:`{prev_moxde}` indicates the mode to switch from. Sets of a lower numbered entity will be emitted before sets of a higher numbered entity to a mode of the same or lower priority.
+  Generate one or more insns to set :samp:`{entity}` to :samp:`{mode}`.
+  :samp:`{hard_reg_live}` is the set of hard registers live at the point where
+  the insn(s) are to be inserted. :samp:`{prev_moxde}` indicates the mode
+  to switch from. Sets of a lower numbered entity will be emitted before
+  sets of a higher numbered entity to a mode of the same or lower priority.
 
 .. function:: int TARGET_MODE_NEEDED (int entity, rtx_insn *insn)
 
-  :samp:`{entity}` is an integer specifying a mode-switched entity.  If ``OPTIMIZE_MODE_SWITCHING`` is defined, you must define this macro to return an integer value not larger than the corresponding element in ``NUM_MODES_FOR_MODE_SWITCHING``, to denote the mode that :samp:`{entity}` must be switched into prior to the execution of :samp:`{insn}`.
+  :samp:`{entity}` is an integer specifying a mode-switched entity.
+  If ``OPTIMIZE_MODE_SWITCHING`` is defined, you must define this macro
+  to return an integer value not larger than the corresponding element
+  in ``NUM_MODES_FOR_MODE_SWITCHING``, to denote the mode that :samp:`{entity}`
+  must be switched into prior to the execution of :samp:`{insn}`.
 
 .. function:: int TARGET_MODE_AFTER (int entity, int mode, rtx_insn *insn)
 
-  :samp:`{entity}` is an integer specifying a mode-switched entity.  If this macro is defined, it is evaluated for every :samp:`{insn}` during mode switching.  It determines the mode that an insn results in (if different from the incoming mode).
+  :samp:`{entity}` is an integer specifying a mode-switched entity.
+  If this macro is defined, it is evaluated for every :samp:`{insn}` during mode
+  switching.  It determines the mode that an insn results
+  in (if different from the incoming mode).
 
 .. function:: int TARGET_MODE_ENTRY (int entity)
 
-  If this macro is defined, it is evaluated for every :samp:`{entity}` that needs mode switching.  It should evaluate to an integer, which is a mode that :samp:`{entity}` is assumed to be switched to at function entry.  If ``TARGET_MODE_ENTRY`` is defined then ``TARGET_MODE_EXIT`` must be defined.
+  If this macro is defined, it is evaluated for every :samp:`{entity}` that
+  needs mode switching.  It should evaluate to an integer, which is a mode
+  that :samp:`{entity}` is assumed to be switched to at function entry.
+  If ``TARGET_MODE_ENTRY`` is defined then ``TARGET_MODE_EXIT``
+  must be defined.
 
 .. function:: int TARGET_MODE_EXIT (int entity)
 
-  If this macro is defined, it is evaluated for every :samp:`{entity}` that needs mode switching.  It should evaluate to an integer, which is a mode that :samp:`{entity}` is assumed to be switched to at function exit.  If ``TARGET_MODE_EXIT`` is defined then ``TARGET_MODE_ENTRY`` must be defined.
+  If this macro is defined, it is evaluated for every :samp:`{entity}` that
+  needs mode switching.  It should evaluate to an integer, which is a mode
+  that :samp:`{entity}` is assumed to be switched to at function exit.
+  If ``TARGET_MODE_EXIT`` is defined then ``TARGET_MODE_ENTRY``
+  must be defined.
 
 .. function:: int TARGET_MODE_PRIORITY (int entity, int n)
 
-  This macro specifies the order in which modes for :samp:`{entity}` are processed. 0 is the highest priority, ``NUM_MODES_FOR_MODE_SWITCHING[entity] - 1`` the lowest.  The value of the macro should be an integer designating a mode for :samp:`{entity}`.  For any fixed :samp:`{entity}`, ``mode_priority`` ( :samp:`{entity}`, :samp:`{n}` ) shall be a bijection in 0 ... ``num_modes_for_mode_switching[entity] - 1``.
+  This macro specifies the order in which modes for :samp:`{entity}`
+  are processed. 0 is the highest priority,
+  ``NUM_MODES_FOR_MODE_SWITCHING[entity] - 1`` the lowest.
+  The value of the macro should be an integer designating a mode
+  for :samp:`{entity}`.  For any fixed :samp:`{entity}`, ``mode_priority``
+  ( :samp:`{entity}`, :samp:`{n}` ) shall be a bijection in 0 ...
+  ``num_modes_for_mode_switching[entity] - 1``.
 

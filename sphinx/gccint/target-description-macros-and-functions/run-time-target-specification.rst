@@ -105,23 +105,40 @@ any target-specific headers.
 
 .. function:: tree TARGET_OBJC_CONSTRUCT_STRING_OBJECT (tree string)
 
-  Targets may provide a string object type that can be used within and between C, C++ and their respective Objective-C dialects. A string object might, for example, embed encoding and length information. These objects are considered opaque to the compiler and handled as references. An ideal implementation makes the composition of the string object match that of the Objective-C ``NSString`` ( ``NXString`` for GNUStep), allowing efficient interworking between C-only and Objective-C code. If a target implements string objects then this hook should return a reference to such an object constructed from the normal 'C' string representation provided in :samp:`{string}`. At present, the hook is used by Objective-C only, to obtain a common-format string object when the target provides one.
+  Targets may provide a string object type that can be used within
+  and between C, C++ and their respective Objective-C dialects.
+  A string object might, for example, embed encoding and length information.
+  These objects are considered opaque to the compiler and handled as references.
+  An ideal implementation makes the composition of the string object
+  match that of the Objective-C ``NSString`` ( ``NXString`` for GNUStep),
+  allowing efficient interworking between C-only and Objective-C code.
+  If a target implements string objects then this hook should return a
+  reference to such an object constructed from the normal 'C' string
+  representation provided in :samp:`{string}`.
+  At present, the hook is used by Objective-C only, to obtain a
+   common-format string object when the target provides one.
 
 .. function:: void TARGET_OBJC_DECLARE_UNRESOLVED_CLASS_REFERENCE (const char *classname)
 
-  Declare that Objective C class :samp:`{classname}` is referenced  by the current TU.
+  Declare that Objective C class :samp:`{classname}` is referenced
+  by the current TU.
 
 .. function:: void TARGET_OBJC_DECLARE_CLASS_DEFINITION (const char *classname)
 
-  Declare that Objective C class :samp:`{classname}` is defined  by the current TU.
+  Declare that Objective C class :samp:`{classname}` is defined
+  by the current TU.
 
 .. function:: bool TARGET_STRING_OBJECT_REF_TYPE_P (const_tree stringref)
 
-  If a target implements string objects then this hook should return ``true`` if :samp:`{stringref}` is a valid reference to such an object.
+  If a target implements string objects then this hook should return
+  ``true`` if :samp:`{stringref}` is a valid reference to such an object.
 
 .. function:: void TARGET_CHECK_STRING_OBJECT_FORMAT_ARG (tree format_arg, tree args_list)
 
-  If a target implements string objects then this hook should should  provide a facility to check the function arguments in :samp:`{args_list}`  against the format specifiers in :samp:`{format_arg}` where the type of  :samp:`{format_arg}` is one recognized as a valid string reference type.
+  If a target implements string objects then this hook should should
+  provide a facility to check the function arguments in :samp:`{args_list}`
+  against the format specifiers in :samp:`{format_arg}` where the type of
+  :samp:`{format_arg}` is one recognized as a valid string reference type.
 
 .. function:: void TARGET_OVERRIDE_OPTIONS_AFTER_CHANGE (void)
 
@@ -180,5 +197,11 @@ any target-specific headers.
 
 .. function:: bool TARGET_FLOAT_EXCEPTIONS_ROUNDING_SUPPORTED_P (void)
 
-  Returns true if the target supports IEEE 754 floating-point exceptions and rounding modes, false otherwise.  This is intended to relate to the ``float`` and ``double`` types, but not necessarily ``long double``. By default, returns true if the ``adddf3`` instruction pattern is available and false otherwise, on the assumption that hardware floating point supports exceptions and rounding modes but software floating point does not.
+  Returns true if the target supports IEEE 754 floating-point exceptions
+  and rounding modes, false otherwise.  This is intended to relate to the
+  ``float`` and ``double`` types, but not necessarily ``long double``.
+  By default, returns true if the ``adddf3`` instruction pattern is
+  available and false otherwise, on the assumption that hardware floating
+  point supports exceptions and rounding modes but software floating point
+  does not.
 

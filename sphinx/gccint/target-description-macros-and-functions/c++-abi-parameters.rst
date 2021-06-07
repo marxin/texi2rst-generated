@@ -57,7 +57,12 @@ C++ ABI parameters
 
 .. function:: void TARGET_CXX_DETERMINE_CLASS_DATA_VISIBILITY (tree decl)
 
-  :samp:`{decl}` is a virtual table, virtual table table, typeinfo object, or other similar implicit class data object that will be emitted with external linkage in this translation unit.  No ELF visibility has been explicitly specified.  If the target needs to specify a visibility other than that of the containing class, use this hook to set ``DECL_VISIBILITY`` and ``DECL_VISIBILITY_SPECIFIED``.
+  :samp:`{decl}` is a virtual table, virtual table table, typeinfo object,
+  or other similar implicit class data object that will be emitted with
+  external linkage in this translation unit.  No ELF visibility has been
+  explicitly specified.  If the target needs to specify a visibility
+  other than that of the containing class, use this hook to set
+  ``DECL_VISIBILITY`` and ``DECL_VISIBILITY_SPECIFIED``.
 
 .. function:: bool TARGET_CXX_CLASS_DATA_ALWAYS_COMDAT (void)
 
@@ -89,7 +94,9 @@ C++ ABI parameters
 
 .. function:: void TARGET_CXX_ADJUST_CLASS_AT_DEFINITION (tree type)
 
-  :samp:`{type}` is a C++ class (i.e., RECORD_TYPE or UNION_TYPE) that has just been defined.  Use this hook to make adjustments to the class (eg, tweak visibility or perform any other required target modifications).
+  :samp:`{type}` is a C++ class (i.e., RECORD_TYPE or UNION_TYPE) that has just
+  been defined.  Use this hook to make adjustments to the class (eg, tweak
+  visibility or perform any other required target modifications).
 
 .. function:: tree TARGET_CXX_DECL_MANGLING_CONTEXT (const_tree decl)
 

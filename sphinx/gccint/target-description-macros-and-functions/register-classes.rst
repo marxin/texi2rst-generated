@@ -222,7 +222,16 @@ in many of the tables described below.
 
 .. function:: reg_class_t TARGET_PREFERRED_RENAME_CLASS (reg_class_t rclass)
 
-  A target hook that places additional preference on the register class to use when it is necessary to rename a register in class :samp:`{rclass}` to another class, or perhaps :samp:`{NO_REGS}`, if no preferred register class is found or hook ``preferred_rename_class`` is not implemented. Sometimes returning a more restrictive class makes better code.  For example, on ARM, thumb-2 instructions using ``LO_REGS`` may be smaller than instructions using ``GENERIC_REGS``.  By returning ``LO_REGS`` from ``preferred_rename_class``, code size can be reduced.
+  A target hook that places additional preference on the register
+  class to use when it is necessary to rename a register in class
+  :samp:`{rclass}` to another class, or perhaps :samp:`{NO_REGS}`, if no
+  preferred register class is found or hook ``preferred_rename_class``
+  is not implemented.
+  Sometimes returning a more restrictive class makes better code.  For
+  example, on ARM, thumb-2 instructions using ``LO_REGS`` may be
+  smaller than instructions using ``GENERIC_REGS``.  By returning
+  ``LO_REGS`` from ``preferred_rename_class``, code size can
+  be reduced.
 
 .. function:: reg_class_t TARGET_PREFERRED_RELOAD_CLASS (rtx x, reg_class_t rclass)
 
@@ -605,19 +614,44 @@ in many of the tables described below.
 
 .. function:: bool TARGET_LRA_P (void)
 
-  A target hook which returns true if we use LRA instead of reload pass.    The default version of this target hook returns true.  New ports  should use LRA, and existing ports are encouraged to convert.
+  A target hook which returns true if we use LRA instead of reload pass.
+
+  The default version of this target hook returns true.  New ports
+  should use LRA, and existing ports are encouraged to convert.
 
 .. function:: int TARGET_REGISTER_PRIORITY (int)
 
-  A target hook which returns the register priority number to which the  register :samp:`{hard_regno}` belongs to.  The bigger the number, the  more preferable the hard register usage (when all other conditions are  the same).  This hook can be used to prefer some hard register over  others in LRA.  For example, some x86-64 register usage needs  additional prefix which makes instructions longer.  The hook can  return lower priority number for such registers make them less favorable  and as result making the generated code smaller.    The default version of this target hook returns always zero.
+  A target hook which returns the register priority number to which the
+  register :samp:`{hard_regno}` belongs to.  The bigger the number, the
+  more preferable the hard register usage (when all other conditions are
+  the same).  This hook can be used to prefer some hard register over
+  others in LRA.  For example, some x86-64 register usage needs
+  additional prefix which makes instructions longer.  The hook can
+  return lower priority number for such registers make them less favorable
+  and as result making the generated code smaller.
+
+  The default version of this target hook returns always zero.
 
 .. function:: bool TARGET_REGISTER_USAGE_LEVELING_P (void)
 
-  A target hook which returns true if we need register usage leveling.  That means if a few hard registers are equally good for the  assignment, we choose the least used hard register.  The register  usage leveling may be profitable for some targets.  Don't use the  usage leveling for targets with conditional execution or targets  with big register files as it hurts if-conversion and cross-jumping  optimizations.    The default version of this target hook returns always false.
+  A target hook which returns true if we need register usage leveling.
+  That means if a few hard registers are equally good for the
+  assignment, we choose the least used hard register.  The register
+  usage leveling may be profitable for some targets.  Don't use the
+  usage leveling for targets with conditional execution or targets
+  with big register files as it hurts if-conversion and cross-jumping
+  optimizations.
+
+  The default version of this target hook returns always false.
 
 .. function:: bool TARGET_DIFFERENT_ADDR_DISPLACEMENT_P (void)
 
-  A target hook which returns true if an address with the same structure  can have different maximal legitimate displacement.  For example, the  displacement can depend on memory mode or on operand combinations in  the insn.    The default version of this target hook returns always false.
+  A target hook which returns true if an address with the same structure
+  can have different maximal legitimate displacement.  For example, the
+  displacement can depend on memory mode or on operand combinations in
+  the insn.
+
+  The default version of this target hook returns always false.
 
 .. function:: bool TARGET_CANNOT_SUBSTITUTE_MEM_EQUIV_P (rtx subst)
 
@@ -643,17 +677,32 @@ in many of the tables described below.
 
 .. function:: reg_class_t TARGET_SPILL_CLASS (reg_class_t, machine_mode)
 
-  This hook defines a class of registers which could be used for spilling  pseudos of the given mode and class, or ``NO_REGS`` if only memory  should be used.  Not defining this hook is equivalent to returning  ``NO_REGS`` for all inputs.
+  This hook defines a class of registers which could be used for spilling
+  pseudos of the given mode and class, or ``NO_REGS`` if only memory
+  should be used.  Not defining this hook is equivalent to returning
+  ``NO_REGS`` for all inputs.
 
 .. function:: bool TARGET_ADDITIONAL_ALLOCNO_CLASS_P (reg_class_t)
 
-  This hook should return ``true`` if given class of registers should  be an allocno class in any way.  Usually RA uses only one register  class from all classes containing the same register set.  In some  complicated cases, you need to have two or more such classes as  allocno ones for RA correct work.  Not defining this hook is  equivalent to returning ``false`` for all inputs.
+  This hook should return ``true`` if given class of registers should
+  be an allocno class in any way.  Usually RA uses only one register
+  class from all classes containing the same register set.  In some
+  complicated cases, you need to have two or more such classes as
+  allocno ones for RA correct work.  Not defining this hook is
+  equivalent to returning ``false`` for all inputs.
 
 .. function:: scalar_int_mode TARGET_CSTORE_MODE (enum insn_code icode)
 
-  This hook defines the machine mode to use for the boolean result of  conditional store patterns.  The ICODE argument is the instruction code  for the cstore being performed.  Not definiting this hook is the same  as accepting the mode encoded into operand 0 of the cstore expander  patterns.
+  This hook defines the machine mode to use for the boolean result of
+  conditional store patterns.  The ICODE argument is the instruction code
+  for the cstore being performed.  Not definiting this hook is the same
+  as accepting the mode encoded into operand 0 of the cstore expander
+  patterns.
 
 .. function:: int TARGET_COMPUTE_PRESSURE_CLASSES (enum reg_class *pressure_classes)
 
-  A target hook which lets a backend compute the set of pressure classes to  be used by those optimization passes which take register pressure into  account, as opposed to letting IRA compute them.  It returns the number of  register classes stored in the array :samp:`{pressure_classes}`.
+  A target hook which lets a backend compute the set of pressure classes to
+  be used by those optimization passes which take register pressure into
+  account, as opposed to letting IRA compute them.  It returns the number of
+  register classes stored in the array :samp:`{pressure_classes}`.
 
