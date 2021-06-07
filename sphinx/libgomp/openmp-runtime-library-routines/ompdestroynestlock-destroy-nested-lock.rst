@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _omp_destroy_nest_lock:
 
 omp_destroy_nest_lock -- Destroy nested lock

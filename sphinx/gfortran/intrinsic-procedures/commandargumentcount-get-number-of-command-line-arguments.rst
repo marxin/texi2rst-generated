@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _command_argument_count:
 
 COMMAND_ARGUMENT_COUNT --- Get number of command line arguments

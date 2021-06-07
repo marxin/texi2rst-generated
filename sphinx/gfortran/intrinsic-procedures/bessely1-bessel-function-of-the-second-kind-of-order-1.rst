@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _bessel_y1:
 
 BESSEL_Y1 --- Bessel function of the second kind of order 1

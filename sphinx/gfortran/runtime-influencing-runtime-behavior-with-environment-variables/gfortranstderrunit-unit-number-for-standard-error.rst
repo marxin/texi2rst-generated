@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _gfortran_stderr_unit:
 
 GFORTRAN_STDERR_UNIT---Unit number for standard error

@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _rs-6000-and-powerpc-options:
 
 IBM RS/6000 and PowerPC Options

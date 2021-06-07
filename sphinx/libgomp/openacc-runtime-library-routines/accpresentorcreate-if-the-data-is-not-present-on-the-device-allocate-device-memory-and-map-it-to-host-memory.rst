@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _acc_present_or_create:
 
 acc_present_or_create -- If the data is not present on the device, allocate device memory and map it to host memory.

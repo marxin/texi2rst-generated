@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _atomic_fetch_and:
 
 ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch

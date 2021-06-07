@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _powerpc-matrix-multiply-assist-built-in-functions:
 
 PowerPC Matrix-Multiply Assist Built-in Functions

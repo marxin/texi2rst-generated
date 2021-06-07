@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _messaging-with-the-gnu-objective-c-runtime:
 
 Messaging with the GNU Objective-C Runtime

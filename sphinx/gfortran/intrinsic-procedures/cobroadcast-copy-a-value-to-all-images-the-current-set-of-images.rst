@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. _co_broadcast:
 
 CO_BROADCAST --- Copy a value to all images the current set of images

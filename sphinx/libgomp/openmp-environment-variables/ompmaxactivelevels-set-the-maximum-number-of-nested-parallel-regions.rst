@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
   .. _omp_max_active_levels:
 
 OMP_MAX_ACTIVE_LEVELS -- Set the maximum number of nested parallel regions
