@@ -312,7 +312,7 @@ corresponding :option:`--without` option.
   with the target alias in front of their name, as in
   :samp:`i686-pc-linux-gnu-gcc`.  All of the above transformations happen
   before the target alias is prepended to the name---so, specifying
-  :option:`--program-prefix`:samp:`=foo-` and program-suffix:samp:`=-3.1`, the
+  :option:`--program-prefix`:samp:`=foo-{program-suffix}=-3.1`, the
   resulting binary would be installed as
   /usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1.
 
@@ -351,7 +351,7 @@ corresponding :option:`--without` option.
   include directory.  Another characteristic of system include directories
   is that pedantic warnings are turned off for headers in these directories.
 
-  Some autoconf macros add :option:`-I `:samp:`{directory}` options to the
+  Some autoconf macros add :option:`-I` :samp:`{directory}` options to the
   compiler command line, to ensure that directories containing installed
   packages' headers are searched.  When :samp:`{directory}` is one of GCC's
   system include directories, GCC will ignore the option so that system
@@ -499,12 +499,12 @@ corresponding :option:`--without` option.
 .. option:: --with-gnu-ld
 
   .. _with-gnu-ld:
-  Same as #with-gnu-as:option:`--with-gnu-as`
+  Same as :option:`--with-gnu-as`
   but for the linker.
 
 .. option:: --with-ld=pathname
 
-  Same as #with-as:option:`--with-as`
+  Same as :option:`--with-as`
   but for the linker.
 
 .. option:: --with-stabs
@@ -1215,7 +1215,7 @@ corresponding :option:`--without` option.
 
       * are used for static linking
 
-  While the aix-soname=:samp:`svr4` option does not create ``Shared Object``
+  While the aix-soname= :samp:`svr4` option does not create ``Shared Object``
   files as members of unversioned ``Archive Library`` files any more, package
   managers still are responsible to
   ./specific.html#TransferAixShobjtransfer ``Shared Object`` files
@@ -1858,7 +1858,7 @@ Cross-Compiler-Specific OptionsThe following options only apply to building cros
   Specifies that target headers are available when building a cross compiler.
   The :samp:`{dir}` argument specifies a directory which has the target include
   files.  These include files will be copied into the gcc install
-  directory.  *This option with the :samp:`{dir}` argument is required* when
+  directory.  This option with the :samp:`{dir}` argument is required* when
   building a cross compiler, if :samp:`{prefix}` / :samp:`{target}` /sys-include
   doesn't pre-exist.  If :samp:`{prefix}` / :samp:`{target}` /sys-include does
   pre-exist, the :samp:`{dir}` argument may be omitted.  :command:`fixincludes`

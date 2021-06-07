@@ -261,8 +261,7 @@ Support for HP-UX version 9 and older was discontinued in GCC 3.4.
 We require using gas/binutils on all hppa platforms.  Version 2.19 or
 later is recommended.
 
-It may be helpful to configure GCC with the
-./configure.html#with-gnu-as:option:`--with-gnu-as` and
+It may be helpful to configure GCC with the :option:`--with-gnu-as` and
 :option:`--with-as`:samp:`=...` options to ensure that GCC can find GAS.
 
 The HP assembler should not be used with GCC.  It is rarely tested and may
@@ -611,8 +610,7 @@ libstdc++.a archive:
 
   % ar -q libstdc++.a libstdc++.so.4 libstdc++.so.5
 
-Eventually, the
-./configure.html#WithAixSoname:option:`--with-aix-soname=svr4`
+Eventually, the :option:`--with-aix-soname=svr4`
 configure option may drop the need for this procedure for libraries that
 support it.
 
@@ -990,7 +988,7 @@ following initial sequence of commands
 
 and proceed as described in configure.htmlthe configure instructions.
 In addition we strongly recommend specifying an absolute path to invoke
-:command:`:samp:`{srcdir}` /configure`.
+:samp:`{srcdir}/configure`.
 
 In Solaris 11, you need to check for ``system/header``,
 ``system/linker``, and ``developer/assembler`` packages.
