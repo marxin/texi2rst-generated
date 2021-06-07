@@ -499,8 +499,8 @@ corresponding :option:`--without` option.
 .. option:: --with-gnu-ld
 
   .. _with-gnu-ld:
-  Same as :option:`--with-gnu-as`
-  but for the linker.
+
+  Same as :option:`--with-gnu-as` but for the linker.
 
 .. option:: --with-ld=pathname
 
@@ -615,7 +615,7 @@ corresponding :option:`--without` option.
     user-chosen multilib lists to be configured.  Whether multiple such
     files can be used together depends on the contents of the supplied
     files.  See gcc/config/arm/t-multilib and its supplementary
-    gcc/config/arm/t-*profile files for an example of what such
+    gcc/config/arm/t-\*profile files for an example of what such
     Makefile fragments might look like for this version of GCC.  The macros
     expected to be defined in these fragments are not stable across GCC
     releases, so make sure they define the ``MULTILIB`` -related macros
@@ -892,7 +892,7 @@ corresponding :option:`--without` option.
     option.
 
     In the absence of this configuration option the default is to use the o32
-  FP32 ABI extension.
+    FP32 ABI extension.
 
 .. option:: --with-odd-spreg-32
 
@@ -919,7 +919,7 @@ corresponding :option:`--without` option.
     Use the 754-2008 encoding, as with the :option:`-mnan`:samp:`=2008` command-line
     option.
 
-    To use this configuration option you must have an assembler version
+  To use this configuration option you must have an assembler version
   installed that supports the :option:`-mnan` = command-line option too.
   In the absence of this configuration option the default convention is
   the legacy encoding, as when neither of the :option:`-mnan`:samp:`=2008` and
@@ -1133,6 +1133,7 @@ corresponding :option:`--without` option.
   filenames with the :samp:`-lNAME` linker flag.
 
   .. _aixldcommand:
+
   For detailed information please refer to the AIX
   `ld
   Command <https://www.ibm.com/support/knowledgecenter/search/%22the%20ld%20command%2C%20also%20called%20the%20linkage%20editor%20or%20binder%22>`_ reference.
@@ -1157,8 +1158,7 @@ corresponding :option:`--without` option.
 
       * is used for shared linking
 
-      * is used for static linking, so no separate ``Static Archive
-           Library`` file is needed
+      * is used for static linking, so no separate ``Static Archive Library`` file is needed
 
   ``--with-aix-soname=both``
   .. option:: --with-aix-soname=svr4
@@ -1176,11 +1176,9 @@ corresponding :option:`--without` option.
 
       * is used for runtime loading from inside the :samp:`libNAME.so.V` file
 
-      * is used for dynamic loading via ``dlopen("libNAME.so.V(shr.o)",
-           RTLD_MEMBER)``
+      * is used for dynamic loading via ``dlopen("libNAME.so.V(shr.o)", RTLD_MEMBER)``
 
-    * with the ``Import File`` as archive member named :samp:`shr.imp`,
-       which
+    * with the ``Import File`` as archive member named :samp:`shr.imp`, which
 
       * refers to :samp:`libNAME.so.V(shr.o)` as the "SONAME", to be recorded
            in the ``Loader Section`` of subsequent binaries
@@ -2004,8 +2002,8 @@ script provides three variables for this:
   scripts.
 
   In order to avoid shell and :command:`make` quoting issues for complex
-overrides, you can pass a setting for :envvar:`CONFIG_SITE` and set
-variables in the site file.
+  overrides, you can pass a setting for :envvar:`CONFIG_SITE` and set
+  variables in the site file.
 
 Objective-C-Specific OptionsThe following options apply to the build of the Objective-C runtime library.
 
