@@ -15,7 +15,9 @@ Contents:
   cppinternals.rst
 
 
-Indices and tables
-==================
+  .. only:: html
 
-:ref:`genindex`
+  Indices and tables
+  ==================
+
+  :ref:`genindex`

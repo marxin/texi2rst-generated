@@ -7,4 +7,6 @@ or :samp:`--`.  Where an option has both positive and negative forms
 relevant entries in the manual are indexed under the most appropriate
 form; it may sometimes be useful to look up both forms.
 
-:ref:`genindex`
+.. only:: html
+
+  :ref:`genindex`

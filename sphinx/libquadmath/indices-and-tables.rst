@@ -1,4 +1,6 @@
-Indices and tables
-==================
+.. only:: html
 
-:ref:`genindex`
+  Indices and tables
+  ==================
+
+  :ref:`genindex`
