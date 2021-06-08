@@ -215,4 +215,6 @@ Options
   debugging information, in which case certain standard library
   functions, such as ``runtime.Callers``, will not operate correctly.
 
-.. include:: ../share/copyright.rst
+.. only:: man
+
+  .. include:: ../share/copyright.rst

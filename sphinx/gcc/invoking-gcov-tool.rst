@@ -108,4 +108,6 @@ Options
 
 .. toctree::
 
+  .. only:: man
+
   copyright
