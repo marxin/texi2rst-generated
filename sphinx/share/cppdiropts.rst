@@ -1,3 +1,8 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
 .. option:: -I dir, -iquote dir, -isystem dir, -idirafter dir
 
   Add the directory :samp:`{dir}` to the list of directories to be searched

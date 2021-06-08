@@ -21,11 +21,11 @@ Syntax
 
 :samp:`{Arguments}:`
 
-  ================  ==============================================
+  ================  ===============================================
   :samp:`{s}`       output string
-  :samp:`{size}`    byte size of the string, including tailing NUL
+  :samp:`{size}`    byte size of the string, including trailing NUL
   :samp:`{format}`  conversion specifier string
-  ================  ==============================================
+  ================  ===============================================
 
 Note
   On some targets when supported by the C library hooks are installed

@@ -4252,6 +4252,10 @@ section includes experimental options that may produce broken code.
     The maximum number of assertions to add along the default edge of a switch
     statement during VRP.
 
+  .. option:: evrp-sparse-threshold
+
+    Maximum number of basic blocks before EVRP uses a sparse cache.
+
   .. option:: evrp-mode
 
     Specifies the mode Early VRP should operate in.
