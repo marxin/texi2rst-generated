@@ -86,3 +86,8 @@ Options
 ``-help``
   Display the dump tool help.
 
+.. toctree::
+
+  .. only:: man
+
+  copyright

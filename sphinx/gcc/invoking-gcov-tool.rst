@@ -106,3 +106,8 @@ Options
   ``-v`` ``--verbose``
     Set the verbose mode.
 
+.. toctree::
+
+  .. only:: man
+
+  copyright

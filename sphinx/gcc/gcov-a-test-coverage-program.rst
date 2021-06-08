@@ -24,3 +24,6 @@ test code coverage in your programs.
   gcov-a-test-coverage-program/brief-description-of-gcov-data-files
   gcov-a-test-coverage-program/data-file-relocation-to-support-cross-profiling
 
+  .. only:: man
+
+  copyright
