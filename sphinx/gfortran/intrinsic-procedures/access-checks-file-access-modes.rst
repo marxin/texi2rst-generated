@@ -21,7 +21,7 @@ ACCESS --- Checks file access modes
 
   :param NAME:
     Scalar ``CHARACTER`` of default kind with the
-    file name. Tailing blank are ignored unless the character ``achar(0)``
+    file name. Trailing blank are ignored unless the character ``achar(0)``
     is present, then all characters up to and excluding ``achar(0)`` are
     used as file name.
 
