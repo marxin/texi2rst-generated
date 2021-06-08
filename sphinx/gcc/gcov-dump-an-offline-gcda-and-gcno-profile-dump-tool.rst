@@ -45,8 +45,8 @@ Options
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
 
-.. toctree::
+.. only:: man
 
-  .. only:: man
+  .. toctree::
 
-  copyright
+    copyright

@@ -17,6 +17,8 @@ manipulate or process gcda profile files offline.
   invoking-gcov-tool
   introduction-to-gcov-tool
 
-  .. only:: man
+.. only:: man
+
+  .. toctree::
 
   copyright

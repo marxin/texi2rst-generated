@@ -55,6 +55,8 @@ one is not the default.
   gnu-fortran-command-options/options-for-interoperability-with-other-languages
   gnu-fortran-command-options/environment-variables-affecting-gfortran
 
-  .. only:: man
+.. only:: man
 
-  copyright
+  .. toctree::
+
+    copyright

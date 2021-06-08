@@ -125,10 +125,8 @@ See :ref:`option-index`, for an index to GCC's options.
   gcc-command-options/environment-variables-affecting-gcc
   gcc-command-options/using-precompiled-headers
 
-  .. only:: man
+.. only:: man
 
-  copyright
+  .. toctree::
 
-Options
-^^^^^^^
-
+    copyright
