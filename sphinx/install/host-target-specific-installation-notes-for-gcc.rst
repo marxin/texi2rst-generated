@@ -1220,7 +1220,7 @@ shared objects and the GNU C library (glibc).  It also generates
 position-independent code (PIC) regardless of whether the
 :option:`-fpic` or :option:`-fPIC` options are used.  In other
 respects, this target is the same as the
-#xtensa\*-\*-elf:samp:`xtensa*-*-elf` target.
+:samp:`xtensa*-*-elf` target.
 
 Microsoft Windows
 =================
