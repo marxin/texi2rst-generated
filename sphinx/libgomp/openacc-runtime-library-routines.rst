@@ -15,14 +15,12 @@ Generally, they are available only for the host, with the exception of
 ``acc_on_device``, which is available for both the host and the
 acceleration device.
 
-.. toctree::
-  :maxdepth: 2
-
-
   API routines for target platforms.
 
-
   API routines for the OpenACC Profiling Interface.
+
+.. toctree::
+  :maxdepth: 2
 
   openacc-runtime-library-routines/accgetnumdevices-get-number-of-devices-for-given-device-type
   openacc-runtime-library-routines/accsetdevicetype-set-type-of-device-accelerator-to-use

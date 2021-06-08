@@ -28,6 +28,4 @@ presented by libgomp.  Only maintainers should need them.
   the-libgomp-abi/implementing-ordered-construct
   the-libgomp-abi/implementing-sections-construct
   the-libgomp-abi/implementing-single-construct
-  the-libgomp-abi/implementing-openacc's-parallel-construct
   the-libgomp-abi/implementing-openaccs-parallel-construct
-

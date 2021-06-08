@@ -12,20 +12,11 @@ The runtime routines described here are defined by Section 3 of the OpenMP
 specification in version 4.5.  The routines are structured in following
 three parts:
 
+Control threads, processors and the parallel environment.  They have C
+linkage, and do not throw exceptions.
+
 .. toctree::
   :maxdepth: 2
-
-  Control threads, processors and the parallel environment.  They have C
-  linkage, and do not throw exceptions.
-
-
-  Initialize, set, test, unset and destroy simple and nested locks.
-
-
-  Portable, thread-based, wall clock timer.
-
-
-  Support for event objects.
 
   openmp-runtime-library-routines/ompgetactivelevel-number-of-parallel-regions
   openmp-runtime-library-routines/ompgetancestorthreadnum-ancestor-thread-id
@@ -58,6 +49,12 @@ three parts:
   openmp-runtime-library-routines/ompsetnested-enable-disable-nested-parallel-regions
   openmp-runtime-library-routines/ompsetnumthreads-set-upper-team-size-limit
   openmp-runtime-library-routines/ompsetschedule-set-the-runtime-scheduling-method
+
+Initialize, set, test, unset and destroy simple and nested locks.
+
+.. toctree::
+  :maxdepth: 2
+
   openmp-runtime-library-routines/ompinitlock-initialize-simple-lock
   openmp-runtime-library-routines/ompsetlock-wait-for-and-set-simple-lock
   openmp-runtime-library-routines/omptestlock-test-and-set-simple-lock-if-available
@@ -68,7 +65,18 @@ three parts:
   openmp-runtime-library-routines/omptestnestlock-test-and-set-nested-lock-if-available
   openmp-runtime-library-routines/ompunsetnestlock-unset-nested-lock
   openmp-runtime-library-routines/ompdestroynestlock-destroy-nested-lock
+
+Portable, thread-based, wall clock timer.
+
+.. toctree::
+  :maxdepth: 2
+
   openmp-runtime-library-routines/ompgetwtick-get-timer-precision
   openmp-runtime-library-routines/ompgetwtime-elapsed-wall-clock-time
-  openmp-runtime-library-routines/ompfulfillevent-fulfill-and-destroy-an-openmp-event
 
+Support for event objects.
+
+.. toctree::
+  :maxdepth: 2
+
+  openmp-runtime-library-routines/ompfulfillevent-fulfill-and-destroy-an-openmp-event

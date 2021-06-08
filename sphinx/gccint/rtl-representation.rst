@@ -31,6 +31,7 @@ form uses nested parentheses to indicate the pointers in the internal form.
   rtl-representation/bit-fields
   rtl-representation/vector-operations
   rtl-representation/conversions
+  rtl-representation/declarations
   rtl-representation/insns
   rtl-representation/reading-rtl
   rtl-representation/rtl-object-types

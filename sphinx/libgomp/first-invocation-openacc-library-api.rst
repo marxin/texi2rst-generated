@@ -3,7 +3,6 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Use Case 1 
 First invocation: OpenACC library API
 *************************************
 
