@@ -79,7 +79,8 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'prev_next_buttons_location': 'both'
+    'prev_next_buttons_location': 'both',
+    'theme_navigation_with_keys': True
 }
 
 # By default, do not generate any manual pages

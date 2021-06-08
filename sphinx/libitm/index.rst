@@ -14,9 +14,4 @@ Contents:
   copyright
   libitm.rst
 
-  .. only:: html
-
-  Indices and tables
-  ==================
-
-  :ref:`genindex`
+  indices-and-tables
