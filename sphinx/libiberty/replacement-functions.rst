@@ -27,9 +27,6 @@ functions may call one another.
 .. toctree::
   :maxdepth: 2
 
-  memory-allocation
-  exit-handlers
-  error-reporting
 
 .. _memory-allocation:
 

@@ -54,8 +54,6 @@ Functions.
 .. toctree::
   :maxdepth: 2
 
-  working-with-declarations
-  internal-structure
 
 .. _working-with-declarations:
 
@@ -214,8 +212,6 @@ structures.
 .. toctree::
   :maxdepth: 2
 
-  current-structure-hierarchy
-  adding-new-decl-node-types
 
 .. _current-structure-hierarchy:
 

@@ -11,12 +11,6 @@ Interoperability with C
 .. toctree::
   :maxdepth: 2
 
-  interoperability-with-c/intrinsic-types
-  interoperability-with-c/derived-types-and-struct
-  interoperability-with-c/interoperable-global-variables
-  interoperability-with-c/interoperable-subroutines-and-functions
-  interoperability-with-c/working-with-pointers
-  interoperability-with-c/further-interoperability-of-fortran-with-c
 
 Since Fortran 2003 (ISO/IEC 1539-1:2004(E)) there is a
 standardized way to generate procedure and derived-type

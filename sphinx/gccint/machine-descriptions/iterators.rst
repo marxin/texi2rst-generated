@@ -17,11 +17,6 @@ facilities to make this process easier.
 .. toctree::
   :maxdepth: 2
 
-  iterators/mode-iterators
-  iterators/code-iterators
-  iterators/int-iterators
-  iterators/subst-iterators
-  iterators/parameterized-names
 
 .. _mode-iterators:
 
@@ -49,9 +44,6 @@ rtx-based construct, such as a ``define_insn``,
 .. toctree::
   :maxdepth: 2
 
-  iterators/defining-mode-iterators
-  iterators/substitutions
-  iterators/examples
 
 .. _defining-mode-iterators:
 

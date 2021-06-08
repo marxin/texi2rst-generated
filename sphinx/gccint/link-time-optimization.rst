@@ -27,11 +27,6 @@ that is visible at link time).
 .. toctree::
   :maxdepth: 2
 
-  link-time-optimization/lto-overview
-  link-time-optimization/lto-object-file-layout
-  link-time-optimization/ipa
-  link-time-optimization/whopr
-  link-time-optimization/internal-flags
   link-time-optimization/design-overview
   link-time-optimization/lto-file-sections
   link-time-optimization/using-summary-information-in-ipa-passes

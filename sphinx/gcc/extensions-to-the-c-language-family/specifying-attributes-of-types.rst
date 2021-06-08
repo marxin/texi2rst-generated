@@ -41,12 +41,6 @@ attributes.
 .. toctree::
   :maxdepth: 2
 
-  specifying-attributes-of-types/common-type-attributes
-  specifying-attributes-of-types/arc-type-attributes
-  specifying-attributes-of-types/arm-type-attributes
-  specifying-attributes-of-types/mep-type-attributes
-  specifying-attributes-of-types/powerpc-type-attributes
-  specifying-attributes-of-types/x86-type-attributes
 
 .. _common-type-attributes:
 

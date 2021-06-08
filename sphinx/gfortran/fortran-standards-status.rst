@@ -13,6 +13,5 @@ Fortran standards status
 
   fortran-2003-status
   fortran-2008-status
-  fortran-2018-status
   status-of-fortran-2018-support
 

@@ -18,54 +18,12 @@ acceleration device.
 .. toctree::
   :maxdepth: 2
 
-  openacc-runtime-library-routines/acc_get_num_devices
-  openacc-runtime-library-routines/acc_set_device_type
-  openacc-runtime-library-routines/acc_get_device_type
-  openacc-runtime-library-routines/acc_set_device_num
-  openacc-runtime-library-routines/acc_get_device_num
-  openacc-runtime-library-routines/acc_get_property
-  openacc-runtime-library-routines/acc_async_test
-  openacc-runtime-library-routines/acc_async_test_all
-  openacc-runtime-library-routines/acc_wait
-  openacc-runtime-library-routines/acc_wait_all
-  openacc-runtime-library-routines/acc_wait_all_async
-  openacc-runtime-library-routines/acc_wait_async
-  openacc-runtime-library-routines/acc_init
-  openacc-runtime-library-routines/acc_shutdown
-  openacc-runtime-library-routines/acc_on_device
-  openacc-runtime-library-routines/acc_malloc
-  openacc-runtime-library-routines/acc_free
-  openacc-runtime-library-routines/acc_copyin
-  openacc-runtime-library-routines/acc_present_or_copyin
-  openacc-runtime-library-routines/acc_create
-  openacc-runtime-library-routines/acc_present_or_create
-  openacc-runtime-library-routines/acc_copyout
-  openacc-runtime-library-routines/acc_delete
-  openacc-runtime-library-routines/acc_update_device
-  openacc-runtime-library-routines/acc_update_self
-  openacc-runtime-library-routines/acc_map_data
-  openacc-runtime-library-routines/acc_unmap_data
-  openacc-runtime-library-routines/acc_deviceptr
-  openacc-runtime-library-routines/acc_hostptr
-  openacc-runtime-library-routines/acc_is_present
-  openacc-runtime-library-routines/acc_memcpy_to_device
-  openacc-runtime-library-routines/acc_memcpy_from_device
-  openacc-runtime-library-routines/acc_attach
-  openacc-runtime-library-routines/acc_detach
 
   API routines for target platforms.
 
-  openacc-runtime-library-routines/acc_get_current_cuda_device
-  openacc-runtime-library-routines/acc_get_current_cuda_context
-  openacc-runtime-library-routines/acc_get_cuda_stream
-  openacc-runtime-library-routines/acc_set_cuda_stream
 
   API routines for the OpenACC Profiling Interface.
 
-  openacc-runtime-library-routines/acc_prof_register
-  openacc-runtime-library-routines/acc_prof_unregister
-  openacc-runtime-library-routines/acc_prof_lookup
-  openacc-runtime-library-routines/acc_register_library
   openacc-runtime-library-routines/accgetnumdevices-get-number-of-devices-for-given-device-type
   openacc-runtime-library-routines/accsetdevicetype-set-type-of-device-accelerator-to-use
   openacc-runtime-library-routines/accgetdevicetype-get-type-of-device-accelerator-to-be-used

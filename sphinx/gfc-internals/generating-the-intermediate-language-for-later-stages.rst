@@ -19,7 +19,6 @@ trans*.h and trans-*.c.
   :maxdepth: 2
 
   generating-the-intermediate-language-for-later-stages/basic-data-structures
-  generating-the-intermediate-language-for-later-stages/converting-expressions
   generating-the-intermediate-language-for-later-stages/translating-statements
   generating-the-intermediate-language-for-later-stages/accessing-declarations
   generating-the-intermediate-language-for-later-stages/converting-expressions-to-tree

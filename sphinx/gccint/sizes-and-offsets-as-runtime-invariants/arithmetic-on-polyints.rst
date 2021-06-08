@@ -20,10 +20,6 @@ This section describes both types of operation.
 .. toctree::
   :maxdepth: 2
 
-  using-poly_int-with-c++-arithmetic-operators
-  wi-arithmetic-on-poly_ints
-  division-of-poly_ints
-  other-poly_int-arithmetic
 
 Using poly_int with C++ arithmetic operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

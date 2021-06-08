@@ -17,15 +17,6 @@ separate chapter.  See :ref:`Passes and Files of the Compiler <passes>`.
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-subdirectory/subdirectories
-  the-gcc-subdirectory/configuration
-  the-gcc-subdirectory/build
-  the-gcc-subdirectory/makefile
-  the-gcc-subdirectory/library-files
-  the-gcc-subdirectory/headers
-  the-gcc-subdirectory/documentation
-  the-gcc-subdirectory/front-end
-  the-gcc-subdirectory/back-end
 
 .. _subdirectories:
 
@@ -94,9 +85,6 @@ timestamp.
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-subdirectory/config-fragments
-  the-gcc-subdirectory/system-config
-  the-gcc-subdirectory/configuration-files
 
 .. _config-fragments:
 
@@ -477,9 +465,6 @@ documentation for runtime libraries somewhere.
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-subdirectory/texinfo-manuals
-  the-gcc-subdirectory/man-page-generation
-  the-gcc-subdirectory/miscellaneous-docs
 
 .. _texinfo-manuals:
 
@@ -715,9 +700,6 @@ following are also necessary:
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-subdirectory/front-end-directory
-  the-gcc-subdirectory/front-end-config
-  the-gcc-subdirectory/front-end-makefile
 
 .. _front-end-directory:
 

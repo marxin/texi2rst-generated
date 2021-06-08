@@ -171,11 +171,6 @@ The PVIPR documents the following overloaded functions:
 .. toctree::
   :maxdepth: 2
 
-  powerpc-altivec-vsx-built-in-functions/powerpc-altivec-built-in-functions-on-isa-2.05
-  powerpc-altivec-vsx-built-in-functions/powerpc-altivec-built-in-functions-available-on-isa-2.06
-  powerpc-altivec-vsx-built-in-functions/powerpc-altivec-built-in-functions-available-on-isa-2.07
-  powerpc-altivec-vsx-built-in-functions/powerpc-altivec-built-in-functions-available-on-isa-3.0
-  powerpc-altivec-vsx-built-in-functions/powerpc-altivec-built-in-functions-available-on-isa-3.1
 
 .. _powerpc-altivec-built-in-functions-on-isa-2.05:
 

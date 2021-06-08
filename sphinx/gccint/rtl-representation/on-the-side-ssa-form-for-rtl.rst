@@ -27,14 +27,6 @@ see the comments in the source code for more details.
 .. toctree::
   :maxdepth: 2
 
-  on-the-side-ssa-form-for-rtl/using-rtl-ssa
-  on-the-side-ssa-form-for-rtl/rtl-ssa-instructions
-  on-the-side-ssa-form-for-rtl/rtl-ssa-basic-blocks
-  on-the-side-ssa-form-for-rtl/rtl-ssa-resources
-  on-the-side-ssa-form-for-rtl/rtl-ssa-accesses
-  on-the-side-ssa-form-for-rtl/rtl-ssa-phi-nodes
-  on-the-side-ssa-form-for-rtl/rtl-ssa-access-lists
-  on-the-side-ssa-form-for-rtl/changing-rtl-instructions
 
 .. _using-rtl-ssa:
 
@@ -506,8 +498,6 @@ then goes on to describe the differences when changing multiple instructions.
 .. toctree::
   :maxdepth: 2
 
-  on-the-side-ssa-form-for-rtl/changing-one-rtl-ssa-instruction
-  on-the-side-ssa-form-for-rtl/changing-multiple-rtl-ssa-instructions
 
 .. _changing-one-rtl-ssa-instruction:
 

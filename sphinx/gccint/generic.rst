@@ -36,11 +36,8 @@ seems inelegant.
   :maxdepth: 2
 
   generic/deficiencies
-  generic/tree-overview
   generic/types
   generic/declarations
-  generic/attributes
-  generic/expression-trees
   generic/statements
   generic/functions
   generic/language-dependent-trees

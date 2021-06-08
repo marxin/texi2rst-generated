@@ -11,12 +11,6 @@ Basic PowerPC Built-in Functions
 .. toctree::
   :maxdepth: 2
 
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-all-configurations
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-isa-2.05
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-isa-2.06
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-isa-2.07
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-isa-3.0
-  basic-powerpc-built-in-functions/basic-powerpc-built-in-functions-available-on-isa-3.1
 
 This section describes PowerPC built-in functions that do not require
 the inclusion of any special header files to declare prototypes or

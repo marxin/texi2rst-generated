@@ -88,13 +88,6 @@ data members.
 .. toctree::
   :maxdepth: 2
 
-  memory-management-and-type-information/gty-options
-  memory-management-and-type-information/inheritance-and-gty
-  memory-management-and-type-information/user-gc
-  memory-management-and-type-information/ggc-roots
-  memory-management-and-type-information/files
-  memory-management-and-type-information/invoking-the-garbage-collector
-  memory-management-and-type-information/troubleshooting
   memory-management-and-type-information/the-inside-of-a-gty
   memory-management-and-type-information/support-for-inheritance
   memory-management-and-type-information/support-for-user-provided-gc-marking-routines

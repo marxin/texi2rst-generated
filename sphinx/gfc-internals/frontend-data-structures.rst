@@ -19,8 +19,6 @@ structures.
 .. toctree::
   :maxdepth: 2
 
-  gfc_code
-  gfc_expr
   gfccode
   gfcexpr
 

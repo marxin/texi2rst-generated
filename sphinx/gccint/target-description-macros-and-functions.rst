@@ -33,37 +33,10 @@ through the macros defined in the .h file.
 .. toctree::
   :maxdepth: 2
 
-  target-description-macros-and-functions/target-structure
-  target-description-macros-and-functions/driver
-  target-description-macros-and-functions/run-time-target
-  target-description-macros-and-functions/per-function-data
   target-description-macros-and-functions/storage-layout
-  target-description-macros-and-functions/type-layout
-  target-description-macros-and-functions/registers
   target-description-macros-and-functions/register-classes
-  target-description-macros-and-functions/stack-and-calling
-  target-description-macros-and-functions/varargs
-  target-description-macros-and-functions/trampolines
-  target-description-macros-and-functions/library-calls
   target-description-macros-and-functions/addressing-modes
   target-description-macros-and-functions/anchored-addresses
-  target-description-macros-and-functions/condition-code
-  target-description-macros-and-functions/costs
-  target-description-macros-and-functions/scheduling
-  target-description-macros-and-functions/sections
-  target-description-macros-and-functions/pic
-  target-description-macros-and-functions/assembler-format
-  target-description-macros-and-functions/debugging-info
-  target-description-macros-and-functions/floating-point
-  target-description-macros-and-functions/mode-switching
-  target-description-macros-and-functions/target-attributes
-  target-description-macros-and-functions/emulated-tls
-  target-description-macros-and-functions/mips-coprocessors
-  target-description-macros-and-functions/pch-target
-  target-description-macros-and-functions/c++-abi
-  target-description-macros-and-functions/d-language-and-abi
-  target-description-macros-and-functions/named-address-spaces
-  target-description-macros-and-functions/misc
   target-description-macros-and-functions/the-global-targetm-variable
   target-description-macros-and-functions/controlling-the-compilation-driver-gcc
   target-description-macros-and-functions/run-time-target-specification

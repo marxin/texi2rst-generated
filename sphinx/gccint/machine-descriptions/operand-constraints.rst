@@ -30,14 +30,6 @@ the addressing register.
 .. toctree::
   :maxdepth: 2
 
-  operand-constraints/simple-constraints
-  operand-constraints/multi-alternative
-  operand-constraints/class-preferences
-  operand-constraints/modifiers
-  operand-constraints/machine-constraints
-  operand-constraints/disable-insn-alternatives
-  operand-constraints/define-constraints
-  operand-constraints/c-constraint-interface
 
 .. include:: ../../share/md.rst
 

@@ -11,12 +11,6 @@ GNU Fortran Compiler Directives
 .. toctree::
   :maxdepth: 2
 
-  gnu-fortran-compiler-directives/attributes-directive
-  gnu-fortran-compiler-directives/unroll-directive
-  gnu-fortran-compiler-directives/builtin-directive
-  gnu-fortran-compiler-directives/ivdep-directive
-  gnu-fortran-compiler-directives/vector-directive
-  gnu-fortran-compiler-directives/novector-directive
 
 .. _attributes-directive:
 

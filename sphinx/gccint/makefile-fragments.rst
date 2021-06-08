@@ -33,8 +33,6 @@ fragments, but needing x- :samp:`{host}` fragments is rare.
 .. toctree::
   :maxdepth: 2
 
-  target-fragment
-  host-fragment
   target-makefile-fragments
   host-makefile-fragments
 

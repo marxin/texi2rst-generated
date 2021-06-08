@@ -33,8 +33,6 @@ then it calls it.
 .. toctree::
   :maxdepth: 2
 
-  dynamically-registering-methods
-  forwarding-hook
 
 .. =========================================================================
 

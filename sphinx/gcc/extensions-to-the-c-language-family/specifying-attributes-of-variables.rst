@@ -30,22 +30,6 @@ attributes.
 .. toctree::
   :maxdepth: 2
 
-  specifying-attributes-of-variables/common-variable-attributes
-  specifying-attributes-of-variables/arc-variable-attributes
-  specifying-attributes-of-variables/avr-variable-attributes
-  specifying-attributes-of-variables/blackfin-variable-attributes
-  specifying-attributes-of-variables/h8-300-variable-attributes
-  specifying-attributes-of-variables/ia-64-variable-attributes
-  specifying-attributes-of-variables/m32r-d-variable-attributes
-  specifying-attributes-of-variables/mep-variable-attributes
-  specifying-attributes-of-variables/microsoft-windows-variable-attributes
-  specifying-attributes-of-variables/msp430-variable-attributes
-  specifying-attributes-of-variables/nvidia-ptx-variable-attributes
-  specifying-attributes-of-variables/powerpc-variable-attributes
-  specifying-attributes-of-variables/rl78-variable-attributes
-  specifying-attributes-of-variables/v850-variable-attributes
-  specifying-attributes-of-variables/x86-variable-attributes
-  specifying-attributes-of-variables/xstormy16-variable-attributes
 
 .. _common-variable-attributes:
 

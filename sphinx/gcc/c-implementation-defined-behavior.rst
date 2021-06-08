@@ -30,22 +30,6 @@ a freestanding environment); refer to their documentation for details.
 .. toctree::
   :maxdepth: 2
 
-  c-implementation-defined-behavior/translation-implementation
-  c-implementation-defined-behavior/environment-implementation
-  c-implementation-defined-behavior/identifiers-implementation
-  c-implementation-defined-behavior/characters-implementation
-  c-implementation-defined-behavior/integers-implementation
-  c-implementation-defined-behavior/floating-point-implementation
-  c-implementation-defined-behavior/arrays-and-pointers-implementation
-  c-implementation-defined-behavior/hints-implementation
-  c-implementation-defined-behavior/structures-unions-enumerations-and-bit-fields-implementation
-  c-implementation-defined-behavior/qualifiers-implementation
-  c-implementation-defined-behavior/declarators-implementation
-  c-implementation-defined-behavior/statements-implementation
-  c-implementation-defined-behavior/preprocessing-directives-implementation
-  c-implementation-defined-behavior/library-functions-implementation
-  c-implementation-defined-behavior/architecture-implementation
-  c-implementation-defined-behavior/locale-specific-behavior-implementation
   c-implementation-defined-behavior/translation
   c-implementation-defined-behavior/environment
   c-implementation-defined-behavior/identifiers

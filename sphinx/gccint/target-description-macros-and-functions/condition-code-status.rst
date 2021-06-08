@@ -44,7 +44,6 @@ interested in most macros in this section.
 .. toctree::
   :maxdepth: 2
 
-  mode_cc-condition-codes
 
 .. _mode_cc-condition-codes:
 

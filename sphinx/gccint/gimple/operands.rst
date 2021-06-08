@@ -35,10 +35,6 @@ The target of an assignment is usually a variable, but can also be a
 .. toctree::
   :maxdepth: 2
 
-  compound-expressions
-  compound-lvalues
-  conditional-expressions
-  logical-operators
 
 .. _compound-expressions:
 

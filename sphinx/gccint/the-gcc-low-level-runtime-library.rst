@@ -41,12 +41,6 @@ and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-low-level-runtime-library/integer-library-routines
-  the-gcc-low-level-runtime-library/soft-float-library-routines
-  the-gcc-low-level-runtime-library/decimal-float-library-routines
-  the-gcc-low-level-runtime-library/fixed-point-fractional-library-routines
-  the-gcc-low-level-runtime-library/exception-handling-routines
-  the-gcc-low-level-runtime-library/miscellaneous-routines
   the-gcc-low-level-runtime-library/routines-for-integer-arithmetic
   the-gcc-low-level-runtime-library/routines-for-floating-point-emulation
   the-gcc-low-level-runtime-library/routines-for-decimal-floating-point-emulation

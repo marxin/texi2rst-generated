@@ -14,11 +14,7 @@ test code coverage in your programs.
 .. toctree::
   :maxdepth: 2
 
-  gcov-a-test-coverage-program/gcov-intro
   gcov-a-test-coverage-program/invoking-gcov
-  gcov-a-test-coverage-program/gcov-and-optimization
-  gcov-a-test-coverage-program/gcov-data-files
-  gcov-a-test-coverage-program/cross-profiling
   gcov-a-test-coverage-program/introduction-to-gcov
   gcov-a-test-coverage-program/using-gcov-with-gcc-optimization
   gcov-a-test-coverage-program/brief-description-of-gcov-data-files

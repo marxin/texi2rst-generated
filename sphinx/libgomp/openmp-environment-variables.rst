@@ -15,26 +15,6 @@ beginning with :envvar:`GOMP_` are GNU extensions.
 .. toctree::
   :maxdepth: 2
 
-  openmp-environment-variables/omp_cancellation
-  openmp-environment-variables/omp_display_env
-  openmp-environment-variables/omp_default_device
-  openmp-environment-variables/omp_dynamic
-  openmp-environment-variables/omp_max_active_levels
-  openmp-environment-variables/omp_max_task_priority
-  openmp-environment-variables/omp_nested
-  openmp-environment-variables/omp_num_threads
-  openmp-environment-variables/omp_proc_bind
-  openmp-environment-variables/omp_places
-  openmp-environment-variables/omp_stacksize
-  openmp-environment-variables/omp_schedule
-  openmp-environment-variables/omp_target_offload
-  openmp-environment-variables/omp_thread_limit
-  openmp-environment-variables/omp_wait_policy
-  openmp-environment-variables/gomp_cpu_affinity
-  openmp-environment-variables/gomp_debug
-  openmp-environment-variables/gomp_stacksize
-  openmp-environment-variables/gomp_spincount
-  openmp-environment-variables/gomp_rtems_thread_pools
   openmp-environment-variables/ompcancellation-set-whether-cancellation-is-activated
   openmp-environment-variables/ompdisplayenv-show-openmp-version-and-environment-variables
   openmp-environment-variables/ompdefaultdevice-set-the-device-used-in-target-regions

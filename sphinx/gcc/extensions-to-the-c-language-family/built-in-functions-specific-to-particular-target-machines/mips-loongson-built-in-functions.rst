@@ -137,9 +137,6 @@ instruction.
 .. toctree::
   :maxdepth: 2
 
-  paired-single-arithmetic
-  paired-single-built-in-functions
-  mips-3d-built-in-functions
 
 .. _paired-single-arithmetic:
 

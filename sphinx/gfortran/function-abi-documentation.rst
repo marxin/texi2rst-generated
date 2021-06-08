@@ -11,42 +11,6 @@ Function ABI Documentation
 .. toctree::
   :maxdepth: 2
 
-  function-abi-documentation/gfortran_caf_init
-  function-abi-documentation/gfortran_caf_finish
-  function-abi-documentation/gfortran_caf_this_image
-  function-abi-documentation/gfortran_caf_num_images
-  function-abi-documentation/gfortran_caf_image_status-
-  function-abi-documentation/gfortran_caf_failed_images-
-  function-abi-documentation/gfortran_caf_stopped_images-
-  function-abi-documentation/gfortran_caf_register
-  function-abi-documentation/gfortran_caf_deregister
-  function-abi-documentation/gfortran_caf_is_present
-  function-abi-documentation/gfortran_caf_send
-  function-abi-documentation/gfortran_caf_get
-  function-abi-documentation/gfortran_caf_sendget
-  function-abi-documentation/gfortran_caf_send_by_ref
-  function-abi-documentation/gfortran_caf_get_by_ref
-  function-abi-documentation/gfortran_caf_sendget_by_ref
-  function-abi-documentation/gfortran_caf_lock
-  function-abi-documentation/gfortran_caf_unlock
-  function-abi-documentation/gfortran_caf_event_post
-  function-abi-documentation/gfortran_caf_event_wait
-  function-abi-documentation/gfortran_caf_event_query
-  function-abi-documentation/gfortran_caf_sync_all
-  function-abi-documentation/gfortran_caf_sync_images
-  function-abi-documentation/gfortran_caf_sync_memory
-  function-abi-documentation/gfortran_caf_error_stop
-  function-abi-documentation/gfortran_caf_error_stop_str
-  function-abi-documentation/gfortran_caf_fail_image-
-  function-abi-documentation/gfortran_caf_atomic_define
-  function-abi-documentation/gfortran_caf_atomic_ref
-  function-abi-documentation/gfortran_caf_atomic_cas
-  function-abi-documentation/gfortran_caf_atomic_op
-  function-abi-documentation/gfortran_caf_co_broadcast
-  function-abi-documentation/gfortran_caf_co_max
-  function-abi-documentation/gfortran_caf_co_min
-  function-abi-documentation/gfortran_caf_co_sum
-  function-abi-documentation/gfortran_caf_co_reduce
 
 .. _gfortran_caf_init:
 

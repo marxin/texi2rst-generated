@@ -17,21 +17,6 @@ This describes the stack layout and calling conventions.
 .. toctree::
   :maxdepth: 2
 
-  stack-layout-and-calling-conventions/frame-layout
-  stack-layout-and-calling-conventions/stack-checking
-  stack-layout-and-calling-conventions/frame-registers
-  stack-layout-and-calling-conventions/elimination
-  stack-layout-and-calling-conventions/stack-arguments
-  stack-layout-and-calling-conventions/register-arguments
-  stack-layout-and-calling-conventions/scalar-return
-  stack-layout-and-calling-conventions/aggregate-return
-  stack-layout-and-calling-conventions/caller-saves
-  stack-layout-and-calling-conventions/function-entry
-  stack-layout-and-calling-conventions/profiling
-  stack-layout-and-calling-conventions/tail-calls
-  stack-layout-and-calling-conventions/shrink-wrapping-separate-components
-  stack-layout-and-calling-conventions/stack-smashing-protection
-  stack-layout-and-calling-conventions/miscellaneous-register-hooks
 
 .. _frame-layout:
 

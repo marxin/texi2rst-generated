@@ -31,13 +31,6 @@ affects how they are used.
 .. toctree::
   :maxdepth: 2
 
-  comparisons-involving-polyint/comparison-functions-for-poly_int
-  comparisons-involving-polyint/properties-of-the-poly_int-comparisons
-  comparisons-involving-polyint/comparing-potentially-unordered-poly_ints
-  comparisons-involving-polyint/comparing-ordered-poly_ints
-  comparisons-involving-polyint/checking-for-a-poly_int-marker-value
-  comparisons-involving-polyint/range-checks-on-poly_ints
-  comparisons-involving-polyint/sorting-poly_ints
 
 Comparison functions for poly_int
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

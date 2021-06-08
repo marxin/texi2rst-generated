@@ -21,17 +21,12 @@ instructions, but allow the compiler to schedule those calls.
   built-in-functions-specific-to-particular-target-machines/arc-built-in-functions
   built-in-functions-specific-to-particular-target-machines/arc-simd-built-in-functions
   built-in-functions-specific-to-particular-target-machines/arm-iwmmxt-built-in-functions
-  built-in-functions-specific-to-particular-target-machines/arm-c-language-extensions-(acle)
-  built-in-functions-specific-to-particular-target-machines/arm-floating-point-status-and-control-intrinsics
-  built-in-functions-specific-to-particular-target-machines/arm-armv8-m-security-extensions
   built-in-functions-specific-to-particular-target-machines/avr-built-in-functions
   built-in-functions-specific-to-particular-target-machines/blackfin-built-in-functions
   built-in-functions-specific-to-particular-target-machines/bpf-built-in-functions
   built-in-functions-specific-to-particular-target-machines/fr-v-built-in-functions
   built-in-functions-specific-to-particular-target-machines/mips-dsp-built-in-functions
-  built-in-functions-specific-to-particular-target-machines/mips-paired-single-support
   built-in-functions-specific-to-particular-target-machines/mips-loongson-built-in-functions
-  built-in-functions-specific-to-particular-target-machines/mips-simd-architecture-(msa)-support
   built-in-functions-specific-to-particular-target-machines/other-mips-built-in-functions
   built-in-functions-specific-to-particular-target-machines/msp430-built-in-functions
   built-in-functions-specific-to-particular-target-machines/nds32-built-in-functions
@@ -39,7 +34,6 @@ instructions, but allow the compiler to schedule those calls.
   built-in-functions-specific-to-particular-target-machines/basic-powerpc-built-in-functions
   built-in-functions-specific-to-particular-target-machines/powerpc-altivec-vsx-built-in-functions
   built-in-functions-specific-to-particular-target-machines/powerpc-hardware-transactional-memory-built-in-functions
-  built-in-functions-specific-to-particular-target-machines/powerpc-atomic-memory-operation-functions
   built-in-functions-specific-to-particular-target-machines/powerpc-matrix-multiply-assist-built-in-functions
   built-in-functions-specific-to-particular-target-machines/pru-built-in-functions
   built-in-functions-specific-to-particular-target-machines/risc-v-built-in-functions
@@ -51,8 +45,6 @@ instructions, but allow the compiler to schedule those calls.
   built-in-functions-specific-to-particular-target-machines/tile-gx-built-in-functions
   built-in-functions-specific-to-particular-target-machines/tilepro-built-in-functions
   built-in-functions-specific-to-particular-target-machines/x86-built-in-functions
-  built-in-functions-specific-to-particular-target-machines/x86-transactional-memory-intrinsics
-  built-in-functions-specific-to-particular-target-machines/x86-control-flow-protection-intrinsics
 
 .. _arm-c-language-extensions-(acle):
 
@@ -172,7 +164,6 @@ MIPS SIMD Architecture (MSA) Support
 .. toctree::
   :maxdepth: 2
 
-  built-in-functions-specific-to-particular-target-machines/mips-simd-architecture-built-in-functions
 
 GCC provides intrinsics to access the SIMD instructions provided by the
 MSA MIPS SIMD Architecture.  The interface is made available by including

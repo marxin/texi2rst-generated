@@ -23,16 +23,7 @@ can be quite useful.
 .. toctree::
   :maxdepth: 2
 
-  plugins/plugins-loading
   plugins/plugin-api
-  plugins/plugins-pass
-  plugins/plugins-gc
-  plugins/plugins-description
-  plugins/plugins-attr
-  plugins/plugins-recording
-  plugins/plugins-gate
-  plugins/plugins-tracking
-  plugins/plugins-building
   plugins/loading-plugins
   plugins/interacting-with-the-pass-manager
   plugins/interacting-with-the-gcc-garbage-collector

@@ -15,8 +15,6 @@ format attribute
 .. toctree::
   :maxdepth: 2
 
-  solaris-format-checks
-  darwin-format-checks
 
 .. _solaris-format-checks:
 

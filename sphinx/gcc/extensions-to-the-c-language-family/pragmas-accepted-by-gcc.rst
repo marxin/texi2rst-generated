@@ -24,23 +24,6 @@ information.
 .. toctree::
   :maxdepth: 2
 
-  pragmas-accepted-by-gcc/aarch64-pragmas
-  pragmas-accepted-by-gcc/arm-pragmas
-  pragmas-accepted-by-gcc/m32c-pragmas
-  pragmas-accepted-by-gcc/mep-pragmas
-  pragmas-accepted-by-gcc/pru-pragmas
-  pragmas-accepted-by-gcc/rs-6000-and-powerpc-pragmas
-  pragmas-accepted-by-gcc/s-390-pragmas
-  pragmas-accepted-by-gcc/darwin-pragmas
-  pragmas-accepted-by-gcc/solaris-pragmas
-  pragmas-accepted-by-gcc/symbol-renaming-pragmas
-  pragmas-accepted-by-gcc/structure-layout-pragmas
-  pragmas-accepted-by-gcc/weak-pragmas
-  pragmas-accepted-by-gcc/diagnostic-pragmas
-  pragmas-accepted-by-gcc/visibility-pragmas
-  pragmas-accepted-by-gcc/push-pop-macro-pragmas
-  pragmas-accepted-by-gcc/function-specific-option-pragmas
-  pragmas-accepted-by-gcc/loop-specific-pragmas
 
 .. _aarch64-pragmas:
 

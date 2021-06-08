@@ -22,11 +22,6 @@ here in tabular form.
 .. toctree::
   :maxdepth: 2
 
-  fr-v-built-in-functions/argument-types
-  fr-v-built-in-functions/directly-mapped-integer-functions
-  fr-v-built-in-functions/directly-mapped-media-functions
-  fr-v-built-in-functions/raw-read-write-functions
-  fr-v-built-in-functions/other-built-in-functions
 
 .. _argument-types:
 

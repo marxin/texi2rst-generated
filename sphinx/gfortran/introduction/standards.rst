@@ -13,7 +13,6 @@ Standards
 .. toctree::
   :maxdepth: 2
 
-  varying-length-character-strings
 
 The GNU Fortran compiler implements
 ISO/IEC 1539:1997 (Fortran 95).  As such, it can also compile essentially all

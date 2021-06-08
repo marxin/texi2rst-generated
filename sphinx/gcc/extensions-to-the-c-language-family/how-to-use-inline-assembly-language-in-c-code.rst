@@ -31,12 +31,6 @@ for a C symbol, or to place a C variable in a specific register.
 .. toctree::
   :maxdepth: 2
 
-  how-to-use-inline-assembly-language-in-c-code/basic-asm
-  how-to-use-inline-assembly-language-in-c-code/extended-asm
-  how-to-use-inline-assembly-language-in-c-code/constraints
-  how-to-use-inline-assembly-language-in-c-code/asm-labels
-  how-to-use-inline-assembly-language-in-c-code/explicit-register-variables
-  how-to-use-inline-assembly-language-in-c-code/size-of-an-asm
 
 .. _basic-asm:
 
@@ -1519,10 +1513,6 @@ the addressing register.
 .. toctree::
   :maxdepth: 2
 
-  how-to-use-inline-assembly-language-in-c-code/simple-constraints
-  how-to-use-inline-assembly-language-in-c-code/multi-alternative
-  how-to-use-inline-assembly-language-in-c-code/modifiers
-  how-to-use-inline-assembly-language-in-c-code/machine-constraints
 
 .. include:: ../../share/md.rst
 
@@ -1614,8 +1604,6 @@ the two, as explained in the sections below.
 .. toctree::
   :maxdepth: 2
 
-  how-to-use-inline-assembly-language-in-c-code/global-register-variables
-  how-to-use-inline-assembly-language-in-c-code/local-register-variables
 
 .. _global-register-variables:
 

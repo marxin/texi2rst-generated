@@ -21,14 +21,6 @@ condition code.
 .. toctree::
   :maxdepth: 2
 
-  instruction-attributes/defining-attributes
-  instruction-attributes/tagging-insns
-  instruction-attributes/attr-example
-  instruction-attributes/insn-lengths
-  instruction-attributes/constant-attributes
-  instruction-attributes/mnemonic-attribute
-  instruction-attributes/delay-slots
-  instruction-attributes/processor-pipeline-description
 
 .. _defining-attributes:
 

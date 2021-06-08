@@ -83,7 +83,6 @@ instead of ``+initialize``.
 .. toctree::
   :maxdepth: 2
 
-  what-you-can-and-what-you-cannot-do-in-+load
 
 .. _what-you-can-and-what-you-cannot-do-in-+load:
 

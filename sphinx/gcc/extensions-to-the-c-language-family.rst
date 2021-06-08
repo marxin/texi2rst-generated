@@ -30,71 +30,19 @@ extensions, accepted by GCC in C90 mode and in C++.
 .. toctree::
   :maxdepth: 2
 
-  extensions-to-the-c-language-family/statement-exprs
-  extensions-to-the-c-language-family/local-labels
   extensions-to-the-c-language-family/labels-as-values
   extensions-to-the-c-language-family/nested-functions
   extensions-to-the-c-language-family/nonlocal-gotos
-  extensions-to-the-c-language-family/constructing-calls
-  extensions-to-the-c-language-family/typeof
-  extensions-to-the-c-language-family/conditionals
-  extensions-to-the-c-language-family/int128
-  extensions-to-the-c-language-family/long-long
-  extensions-to-the-c-language-family/complex
-  extensions-to-the-c-language-family/floating-types
-  extensions-to-the-c-language-family/half-precision
-  extensions-to-the-c-language-family/decimal-float
   extensions-to-the-c-language-family/hex-floats
-  extensions-to-the-c-language-family/fixed-point
   extensions-to-the-c-language-family/named-address-spaces
-  extensions-to-the-c-language-family/zero-length
-  extensions-to-the-c-language-family/empty-structures
-  extensions-to-the-c-language-family/variable-length
-  extensions-to-the-c-language-family/variadic-macros
-  extensions-to-the-c-language-family/escaped-newlines
-  extensions-to-the-c-language-family/subscripting
-  extensions-to-the-c-language-family/pointer-arith
-  extensions-to-the-c-language-family/variadic-pointer-args
-  extensions-to-the-c-language-family/pointers-to-arrays
-  extensions-to-the-c-language-family/initializers
   extensions-to-the-c-language-family/compound-literals
-  extensions-to-the-c-language-family/designated-inits
   extensions-to-the-c-language-family/case-ranges
-  extensions-to-the-c-language-family/cast-to-union
-  extensions-to-the-c-language-family/mixed-labels-and-declarations
-  extensions-to-the-c-language-family/function-attributes
-  extensions-to-the-c-language-family/variable-attributes
-  extensions-to-the-c-language-family/type-attributes
   extensions-to-the-c-language-family/label-attributes
   extensions-to-the-c-language-family/enumerator-attributes
   extensions-to-the-c-language-family/statement-attributes
   extensions-to-the-c-language-family/attribute-syntax
-  extensions-to-the-c-language-family/function-prototypes
-  extensions-to-the-c-language-family/c++-comments
-  extensions-to-the-c-language-family/dollar-signs
-  extensions-to-the-c-language-family/character-escapes
-  extensions-to-the-c-language-family/alignment
-  extensions-to-the-c-language-family/inline
-  extensions-to-the-c-language-family/volatiles
-  extensions-to-the-c-language-family/using-assembly-language-with-c
   extensions-to-the-c-language-family/alternate-keywords
-  extensions-to-the-c-language-family/incomplete-enums
-  extensions-to-the-c-language-family/function-names
-  extensions-to-the-c-language-family/return-address
-  extensions-to-the-c-language-family/vector-extensions
-  extensions-to-the-c-language-family/offsetof
-  extensions-to-the-c-language-family/sync-builtins
-  extensions-to-the-c-language-family/atomic-builtins
-  extensions-to-the-c-language-family/integer-overflow-builtins
   extensions-to-the-c-language-family/x86-specific-memory-model-extensions-for-transactional-memory
-  extensions-to-the-c-language-family/object-size-checking
-  extensions-to-the-c-language-family/other-builtins
-  extensions-to-the-c-language-family/target-builtins
-  extensions-to-the-c-language-family/target-format-checks
-  extensions-to-the-c-language-family/pragmas
-  extensions-to-the-c-language-family/unnamed-fields
-  extensions-to-the-c-language-family/thread-local
-  extensions-to-the-c-language-family/binary-constants
   extensions-to-the-c-language-family/statements-and-declarations-in-expressions
   extensions-to-the-c-language-family/locally-declared-labels
   extensions-to-the-c-language-family/constructing-function-calls

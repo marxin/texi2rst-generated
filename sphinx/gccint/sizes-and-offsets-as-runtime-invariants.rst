@@ -42,15 +42,6 @@ usage guidelines.
 .. toctree::
   :maxdepth: 2
 
-  sizes-and-offsets-as-runtime-invariants/overview-of-poly_int
-  sizes-and-offsets-as-runtime-invariants/consequences-of-using-poly_int
-  sizes-and-offsets-as-runtime-invariants/comparisons-involving-poly_int
-  sizes-and-offsets-as-runtime-invariants/arithmetic-on-poly_ints
-  sizes-and-offsets-as-runtime-invariants/alignment-of-poly_ints
-  sizes-and-offsets-as-runtime-invariants/computing-bounds-on-poly_ints
-  sizes-and-offsets-as-runtime-invariants/converting-poly_ints
-  sizes-and-offsets-as-runtime-invariants/miscellaneous-poly_int-routines
-  sizes-and-offsets-as-runtime-invariants/guidelines-for-using-poly_int
   sizes-and-offsets-as-runtime-invariants/overview-of-polyint
   sizes-and-offsets-as-runtime-invariants/consequences-of-using-polyint
   sizes-and-offsets-as-runtime-invariants/comparisons-involving-polyint

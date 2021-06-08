@@ -133,9 +133,6 @@ family of options.
 .. toctree::
   :maxdepth: 2
 
-  c++-module-mapper
-  c++-module-preprocessing
-  c++-compiled-module-interface
 
 .. _c++-module-mapper:
 

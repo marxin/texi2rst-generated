@@ -22,13 +22,7 @@ test specifically for GNU C++ (see :ref:`Predefined Macros <common-predefined-ma
 .. toctree::
   :maxdepth: 2
 
-  extensions-to-the-c++-language/c++-volatiles
-  extensions-to-the-c++-language/restricted-pointers
   extensions-to-the-c++-language/vague-linkage
-  extensions-to-the-c++-language/c++-interface
-  extensions-to-the-c++-language/template-instantiation
-  extensions-to-the-c++-language/bound-member-functions
-  extensions-to-the-c++-language/c++-attributes
   extensions-to-the-c++-language/function-multiversioning
   extensions-to-the-c++-language/type-traits
   extensions-to-the-c++-language/c++-concepts

@@ -100,9 +100,6 @@ bug.
 .. toctree::
   :maxdepth: 2
 
-  macros-and-functions
-  identifiers
-  containers
 
 .. -
    Trees

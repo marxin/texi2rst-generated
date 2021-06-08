@@ -73,8 +73,6 @@ diagnosis when special predicates are used.
 .. toctree::
   :maxdepth: 2
 
-  machine-independent-predicates
-  defining-predicates
 
 .. _machine-independent-predicates:
 

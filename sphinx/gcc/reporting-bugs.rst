@@ -21,8 +21,6 @@ report the problem.
 .. toctree::
   :maxdepth: 2
 
-  bug-criteria
-  bug-reporting
   have-you-found-a-bug
   how-and-where-to-report-bugs
 

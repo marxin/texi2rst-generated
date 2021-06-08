@@ -56,9 +56,6 @@ deleted.
 .. toctree::
   :maxdepth: 2
 
-  define-subst-example
-  define-subst-pattern-matching
-  define-subst-output-template
 
 .. _define-subst-example:
 

@@ -13,35 +13,6 @@ Tuple specific accessors
 .. toctree::
   :maxdepth: 2
 
-  tuple-specific-accessors/gimple_asm
-  tuple-specific-accessors/gimple_assign
-  tuple-specific-accessors/gimple_bind
-  tuple-specific-accessors/gimple_call
-  tuple-specific-accessors/gimple_catch
-  tuple-specific-accessors/gimple_cond
-  tuple-specific-accessors/gimple_debug
-  tuple-specific-accessors/gimple_eh_filter
-  tuple-specific-accessors/gimple_label
-  tuple-specific-accessors/gimple_goto
-  tuple-specific-accessors/gimple_nop
-  tuple-specific-accessors/gimple_omp_atomic_load
-  tuple-specific-accessors/gimple_omp_atomic_store
-  tuple-specific-accessors/gimple_omp_continue
-  tuple-specific-accessors/gimple_omp_critical
-  tuple-specific-accessors/gimple_omp_for
-  tuple-specific-accessors/gimple_omp_master
-  tuple-specific-accessors/gimple_omp_ordered
-  tuple-specific-accessors/gimple_omp_parallel
-  tuple-specific-accessors/gimple_omp_return
-  tuple-specific-accessors/gimple_omp_section
-  tuple-specific-accessors/gimple_omp_sections
-  tuple-specific-accessors/gimple_omp_single
-  tuple-specific-accessors/gimple_phi
-  tuple-specific-accessors/gimple_resx
-  tuple-specific-accessors/gimple_return
-  tuple-specific-accessors/gimple_switch
-  tuple-specific-accessors/gimple_try
-  tuple-specific-accessors/gimple_with_cleanup_expr
 
 GIMPLE_ASM
 ^^^^^^^^^^

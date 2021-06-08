@@ -24,26 +24,9 @@ See the next chapter for information on the C header file.
 .. toctree::
   :maxdepth: 2
 
-  machine-descriptions/patterns
-  machine-descriptions/example
   machine-descriptions/rtl-template
-  machine-descriptions/output-template
-  machine-descriptions/output-statement
   machine-descriptions/predicates
-  machine-descriptions/constraints
-  machine-descriptions/standard-names
-  machine-descriptions/pattern-ordering
-  machine-descriptions/dependent-patterns
-  machine-descriptions/jump-patterns
-  machine-descriptions/looping-patterns
-  machine-descriptions/insn-canonicalizations
-  machine-descriptions/expander-definitions
-  machine-descriptions/insn-splitting
-  machine-descriptions/including-patterns
-  machine-descriptions/peephole-definitions
-  machine-descriptions/insn-attributes
   machine-descriptions/conditional-execution
-  machine-descriptions/define-subst
   machine-descriptions/constant-definitions
   machine-descriptions/iterators
   machine-descriptions/overview-of-how-the-machine-description-is-used

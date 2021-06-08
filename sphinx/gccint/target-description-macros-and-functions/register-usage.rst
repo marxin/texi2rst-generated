@@ -22,11 +22,6 @@ For returning values in registers, see Scalar Return.
 .. toctree::
   :maxdepth: 2
 
-  register-usage/register-basics
-  register-usage/allocation-order
-  register-usage/values-in-registers
-  register-usage/leaf-functions
-  register-usage/stack-registers
 
 .. _register-basics:
 

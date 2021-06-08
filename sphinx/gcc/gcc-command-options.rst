@@ -102,27 +102,6 @@ See :ref:`option-index`, for an index to GCC's options.
   :maxdepth: 2
 
   gcc-command-options/option-summary
-  gcc-command-options/overall-options
-  gcc-command-options/invoking-g++
-  gcc-command-options/c-dialect-options
-  gcc-command-options/c++-dialect-options
-  gcc-command-options/objective-c-and-objective-c++-dialect-options
-  gcc-command-options/diagnostic-message-formatting-options
-  gcc-command-options/warning-options
-  gcc-command-options/static-analyzer-options
-  gcc-command-options/debugging-options
-  gcc-command-options/optimize-options
-  gcc-command-options/instrumentation-options
-  gcc-command-options/preprocessor-options
-  gcc-command-options/assembler-options
-  gcc-command-options/link-options
-  gcc-command-options/directory-options
-  gcc-command-options/code-gen-options
-  gcc-command-options/developer-options
-  gcc-command-options/submodel-options
-  gcc-command-options/spec-files
-  gcc-command-options/environment-variables
-  gcc-command-options/precompiled-headers
   gcc-command-options/c++-modules
   gcc-command-options/options-controlling-the-kind-of-output
   gcc-command-options/compiling-c++-programs

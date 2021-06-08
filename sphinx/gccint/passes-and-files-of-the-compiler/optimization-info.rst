@@ -18,12 +18,6 @@ information about various compiler transformations and optimizations.
 .. toctree::
   :maxdepth: 2
 
-  optimization-info/dump-setup
-  optimization-info/optimization-groups
-  optimization-info/dump-files-and-streams
-  optimization-info/dump-output-verbosity
-  optimization-info/dump-types
-  optimization-info/dump-examples
 
 .. _dump-setup:
 

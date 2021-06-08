@@ -27,7 +27,6 @@ several threads.
   the-libitm-abi
   internals
   gnu-free-documentation-license
-  library-index
 
 .. -
    Enabling libitm

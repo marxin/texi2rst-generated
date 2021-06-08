@@ -44,16 +44,6 @@ one is not the default.
   :maxdepth: 2
 
   gnu-fortran-command-options/option-summary
-  gnu-fortran-command-options/fortran-dialect-options
-  gnu-fortran-command-options/preprocessing-options
-  gnu-fortran-command-options/error-and-warning-options
-  gnu-fortran-command-options/debugging-options
-  gnu-fortran-command-options/directory-options
-  gnu-fortran-command-options/link-options-
-  gnu-fortran-command-options/runtime-options
-  gnu-fortran-command-options/code-gen-options
-  gnu-fortran-command-options/interoperability-options
-  gnu-fortran-command-options/environment-variables
   gnu-fortran-command-options/options-controlling-fortran-dialect
   gnu-fortran-command-options/enable-and-customize-preprocessing
   gnu-fortran-command-options/options-to-request-or-suppress-errors-and-warnings

@@ -20,8 +20,6 @@ and linkage.
 .. toctree::
   :maxdepth: 2
 
-  function-basics
-  function-properties
 
 .. -
    Function Basics

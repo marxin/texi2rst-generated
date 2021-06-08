@@ -52,12 +52,6 @@ should submit your patches for inclusion in GCC.
 .. toctree::
   :maxdepth: 2
 
-  c-and-c++-trees/types-for-c++
-  c-and-c++-trees/namespaces
-  c-and-c++-trees/classes
-  c-and-c++-trees/functions-for-c++
-  c-and-c++-trees/statements-for-c-and-c++
-  c-and-c++-trees/c++-expressions
 
 .. _types-for-c++:
 

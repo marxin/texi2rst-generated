@@ -78,14 +78,12 @@ platform.
   machine-dependent-options/pru-options
   machine-dependent-options/risc-v-options
   machine-dependent-options/rl78-options
-  machine-dependent-options/rs-6000-and-powerpc-options
   machine-dependent-options/rx-options
   machine-dependent-options/s-390-and-zseries-options
   machine-dependent-options/score-options
   machine-dependent-options/sh-options
   machine-dependent-options/solaris-2-options
   machine-dependent-options/sparc-options
-  machine-dependent-options/system-v-options
   machine-dependent-options/tile-gx-options
   machine-dependent-options/tilepro-options
   machine-dependent-options/v850-options

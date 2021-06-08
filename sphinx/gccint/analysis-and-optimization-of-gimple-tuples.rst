@@ -41,7 +41,6 @@ passes for GIMPLE.
 
   analysis-and-optimization-of-gimple-tuples/annotations
   analysis-and-optimization-of-gimple-tuples/ssa-operands
-  analysis-and-optimization-of-gimple-tuples/ssa
   analysis-and-optimization-of-gimple-tuples/alias-analysis
   analysis-and-optimization-of-gimple-tuples/memory-model
   analysis-and-optimization-of-gimple-tuples/static-single-assignment

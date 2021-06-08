@@ -11,12 +11,6 @@ Directives used within DejaGnu tests
 .. toctree::
   :maxdepth: 2
 
-  directives-used-within-dejagnu-tests/directives
-  directives-used-within-dejagnu-tests/selectors
-  directives-used-within-dejagnu-tests/effective-target-keywords
-  directives-used-within-dejagnu-tests/add-options
-  directives-used-within-dejagnu-tests/require-support
-  directives-used-within-dejagnu-tests/final-actions
 
 .. _directives:
 

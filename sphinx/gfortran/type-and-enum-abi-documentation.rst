@@ -11,11 +11,6 @@ Type and enum ABI Documentation
 .. toctree::
   :maxdepth: 2
 
-  type-and-enum-abi-documentation/caf_token_t
-  type-and-enum-abi-documentation/caf_register_t
-  type-and-enum-abi-documentation/caf_deregister_t
-  type-and-enum-abi-documentation/caf_reference_t
-  type-and-enum-abi-documentation/caf_team_t
 
 .. _caf_token_t:
 

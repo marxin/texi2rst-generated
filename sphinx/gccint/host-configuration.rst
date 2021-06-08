@@ -28,7 +28,6 @@ header.  See :ref:`system-config`.
   :maxdepth: 2
 
   host-common
-  filesystem
   host-misc
   host-filesystem
 

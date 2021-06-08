@@ -15,12 +15,6 @@ This describes how to specify debugging information.
 .. toctree::
   :maxdepth: 2
 
-  controlling-debugging-information-format/all-debuggers
-  controlling-debugging-information-format/dbx-options
-  controlling-debugging-information-format/dbx-hooks
-  controlling-debugging-information-format/file-names-and-dbx
-  controlling-debugging-information-format/dwarf
-  controlling-debugging-information-format/vms-debug
 
 .. _all-debuggers:
 

@@ -35,8 +35,6 @@ targets that do scheduling.
 .. toctree::
   :maxdepth: 2
 
-  define_peephole
-  define_peephole2
 
 .. _define_peephole:
 

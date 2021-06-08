@@ -16,9 +16,6 @@ which it is presumed that you are familiar.
 .. toctree::
   :maxdepth: 2
 
-  source-tree-structure-and-build-system/configure-terms
-  source-tree-structure-and-build-system/top-level
-  source-tree-structure-and-build-system/gcc-directory
   source-tree-structure-and-build-system/configure-terms-and-history
   source-tree-structure-and-build-system/top-level-source-directory
   source-tree-structure-and-build-system/the-gcc-subdirectory

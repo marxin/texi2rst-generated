@@ -27,40 +27,6 @@ additional compatibility extensions along with those enabled by
 .. toctree::
   :maxdepth: 2
 
-  extensions-implemented-in-gnu-fortran/old-style-kind-specifications
-  extensions-implemented-in-gnu-fortran/old-style-variable-initialization
-  extensions-implemented-in-gnu-fortran/extensions-to-namelist
-  extensions-implemented-in-gnu-fortran/x-format-descriptor-without-count-field
-  extensions-implemented-in-gnu-fortran/commas-in-format-specifications
-  extensions-implemented-in-gnu-fortran/missing-period-in-format-specifications
-  extensions-implemented-in-gnu-fortran/default-widths-for-f,-g-and-i-format-descriptors
-  extensions-implemented-in-gnu-fortran/i-o-item-lists
-  extensions-implemented-in-gnu-fortran/q-exponent-letter
-  extensions-implemented-in-gnu-fortran/boz-literal-constants
-  extensions-implemented-in-gnu-fortran/real-array-indices
-  extensions-implemented-in-gnu-fortran/unary-operators
-  extensions-implemented-in-gnu-fortran/implicitly-convert-logical-and-integer-values
-  extensions-implemented-in-gnu-fortran/hollerith-constants-support
-  extensions-implemented-in-gnu-fortran/character-conversion
-  extensions-implemented-in-gnu-fortran/cray-pointers
-  extensions-implemented-in-gnu-fortran/convert-specifier
-  extensions-implemented-in-gnu-fortran/openmp
-  extensions-implemented-in-gnu-fortran/openacc
-  extensions-implemented-in-gnu-fortran/argument-list-functions
-  extensions-implemented-in-gnu-fortran/read-write-after-eof-marker
-  extensions-implemented-in-gnu-fortran/structure-and-record
-  extensions-implemented-in-gnu-fortran/union-and-map
-  extensions-implemented-in-gnu-fortran/type-variants-for-integer-intrinsics
-  extensions-implemented-in-gnu-fortran/automatic-and-static-attributes
-  extensions-implemented-in-gnu-fortran/extended-math-intrinsics
-  extensions-implemented-in-gnu-fortran/form-feed-as-whitespace
-  extensions-implemented-in-gnu-fortran/type-as-an-alias-for-print
-  extensions-implemented-in-gnu-fortran/%loc-as-an-rvalue
-  extensions-implemented-in-gnu-fortran/.xor.-operator
-  extensions-implemented-in-gnu-fortran/bitwise-logical-operators
-  extensions-implemented-in-gnu-fortran/extended-i-o-specifiers
-  extensions-implemented-in-gnu-fortran/legacy-parameter-statements
-  extensions-implemented-in-gnu-fortran/default-exponents
 
 .. _old-style-kind-specifications:
 

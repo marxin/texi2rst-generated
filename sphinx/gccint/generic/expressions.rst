@@ -52,10 +52,6 @@ As this example indicates, the operands are zero-indexed.
 .. toctree::
   :maxdepth: 2
 
-  constant-expressions
-  storage-references
-  unary-and-binary-expressions
-  vectors
 
 .. _constant-expressions:
 

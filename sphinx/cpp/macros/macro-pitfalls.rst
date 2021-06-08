@@ -19,13 +19,6 @@ counter-intuitive consequences that you must watch out for.
 .. toctree::
   :maxdepth: 2
 
-  macro-pitfalls/misnesting
-  macro-pitfalls/operator-precedence-problems
-  macro-pitfalls/swallowing-the-semicolon
-  macro-pitfalls/duplication-of-side-effects
-  macro-pitfalls/self-referential-macros
-  macro-pitfalls/argument-prescan
-  macro-pitfalls/newlines-in-arguments
 
 .. _misnesting:
 

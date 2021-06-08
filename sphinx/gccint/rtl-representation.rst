@@ -27,28 +27,11 @@ form uses nested parentheses to indicate the pointers in the internal form.
 .. toctree::
   :maxdepth: 2
 
-  rtl-representation/rtl-objects
-  rtl-representation/rtl-classes
-  rtl-representation/accessors
-  rtl-representation/special-accessors
-  rtl-representation/flags
   rtl-representation/machine-modes
-  rtl-representation/constants
-  rtl-representation/regs-and-memory
-  rtl-representation/arithmetic
-  rtl-representation/comparisons
   rtl-representation/bit-fields
   rtl-representation/vector-operations
   rtl-representation/conversions
-  rtl-representation/rtl-declarations
-  rtl-representation/side-effects
-  rtl-representation/incdec
-  rtl-representation/assembler
-  rtl-representation/debug-information
   rtl-representation/insns
-  rtl-representation/calls
-  rtl-representation/rtl-ssa
-  rtl-representation/sharing
   rtl-representation/reading-rtl
   rtl-representation/rtl-object-types
   rtl-representation/rtl-classes-and-formats

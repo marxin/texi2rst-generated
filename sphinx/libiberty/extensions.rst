@@ -21,7 +21,6 @@ central location from which to use, maintain, and distribute them.
 .. toctree::
   :maxdepth: 2
 
-  extensions/obstacks
 
 .. This is generated from the glibc manual using contrib/make-obstacks-texi.pl
 
@@ -47,17 +46,6 @@ the padding needed to start each object on a suitable boundary.
 .. toctree::
   :maxdepth: 2
 
-  extensions/creating-obstacks
-  extensions/preparing-for-obstacks
-  extensions/allocation-in-an-obstack
-  extensions/freeing-obstack-objects
-  extensions/obstack-functions
-  extensions/growing-objects
-  extensions/extra-fast-growing
-  extensions/status-of-an-obstack
-  extensions/obstacks-data-alignment
-  extensions/obstack-chunks
-  extensions/summary-of-obstacks
 
 .. _creating-obstacks:
 

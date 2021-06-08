@@ -60,8 +60,6 @@ is expected to function.
 .. toctree::
   :maxdepth: 2
 
-  c99-thread-local-edits
-  c++98-thread-local-edits
 
 .. _c99-thread-local-edits:
 

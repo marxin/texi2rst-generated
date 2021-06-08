@@ -18,8 +18,6 @@ C binding for interoperability.  See see :ref:`interoperability-with-c`.
 .. toctree::
   :maxdepth: 2
 
-  naming-conventions
-  argument-passing-conventions
 
 .. _naming-conventions:
 

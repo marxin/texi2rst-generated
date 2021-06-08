@@ -20,10 +20,6 @@ predefined macros, but you cannot undefine them.
 .. toctree::
   :maxdepth: 2
 
-  standard-predefined-macros
-  common-predefined-macros
-  system-specific-predefined-macros
-  c++-named-operators
 
 .. _standard-predefined-macros:
 

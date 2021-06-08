@@ -18,59 +18,15 @@ three parts:
   Control threads, processors and the parallel environment.  They have C
   linkage, and do not throw exceptions.
 
-  openmp-runtime-library-routines/omp_get_active_level
-  openmp-runtime-library-routines/omp_get_ancestor_thread_num
-  openmp-runtime-library-routines/omp_get_cancellation
-  openmp-runtime-library-routines/omp_get_default_device
-  openmp-runtime-library-routines/omp_get_dynamic
-  openmp-runtime-library-routines/omp_get_initial_device
-  openmp-runtime-library-routines/omp_get_level
-  openmp-runtime-library-routines/omp_get_max_active_levels
-  openmp-runtime-library-routines/omp_get_max_task_priority
-  openmp-runtime-library-routines/omp_get_max_threads
-  openmp-runtime-library-routines/omp_get_nested
-  openmp-runtime-library-routines/omp_get_num_devices
-  openmp-runtime-library-routines/omp_get_num_procs
-  openmp-runtime-library-routines/omp_get_num_teams
-  openmp-runtime-library-routines/omp_get_num_threads
-  openmp-runtime-library-routines/omp_get_proc_bind
-  openmp-runtime-library-routines/omp_get_schedule
-  openmp-runtime-library-routines/omp_get_supported_active_levels
-  openmp-runtime-library-routines/omp_get_team_num
-  openmp-runtime-library-routines/omp_get_team_size
-  openmp-runtime-library-routines/omp_get_thread_limit
-  openmp-runtime-library-routines/omp_get_thread_num
-  openmp-runtime-library-routines/omp_in_parallel
-  openmp-runtime-library-routines/omp_in_final
-  openmp-runtime-library-routines/omp_is_initial_device
-  openmp-runtime-library-routines/omp_set_default_device
-  openmp-runtime-library-routines/omp_set_dynamic
-  openmp-runtime-library-routines/omp_set_max_active_levels
-  openmp-runtime-library-routines/omp_set_nested
-  openmp-runtime-library-routines/omp_set_num_threads
-  openmp-runtime-library-routines/omp_set_schedule
 
   Initialize, set, test, unset and destroy simple and nested locks.
 
-  openmp-runtime-library-routines/omp_init_lock
-  openmp-runtime-library-routines/omp_set_lock
-  openmp-runtime-library-routines/omp_test_lock
-  openmp-runtime-library-routines/omp_unset_lock
-  openmp-runtime-library-routines/omp_destroy_lock
-  openmp-runtime-library-routines/omp_init_nest_lock
-  openmp-runtime-library-routines/omp_set_nest_lock
-  openmp-runtime-library-routines/omp_test_nest_lock
-  openmp-runtime-library-routines/omp_unset_nest_lock
-  openmp-runtime-library-routines/omp_destroy_nest_lock
 
   Portable, thread-based, wall clock timer.
 
-  openmp-runtime-library-routines/omp_get_wtick
-  openmp-runtime-library-routines/omp_get_wtime
 
   Support for event objects.
 
-  openmp-runtime-library-routines/omp_fulfill_event
   openmp-runtime-library-routines/ompgetactivelevel-number-of-parallel-regions
   openmp-runtime-library-routines/ompgetancestorthreadnum-ancestor-thread-id
   openmp-runtime-library-routines/ompgetcancellation-whether-cancellation-support-is-enabled

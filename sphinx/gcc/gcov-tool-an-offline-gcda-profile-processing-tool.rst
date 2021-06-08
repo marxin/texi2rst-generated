@@ -14,7 +14,6 @@ manipulate or process gcda profile files offline.
 .. toctree::
   :maxdepth: 2
 
-  gcov-tool-intro
   invoking-gcov-tool
   introduction-to-gcov-tool
 

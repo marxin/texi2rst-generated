@@ -155,9 +155,6 @@ as ``*``, and the ``const`` is lost.
 .. toctree::
   :maxdepth: 2
 
-  legacy-type-encoding
-  @encode
-  method-signatures
 
 .. _legacy-type-encoding:
 

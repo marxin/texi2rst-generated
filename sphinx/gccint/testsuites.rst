@@ -16,17 +16,6 @@ here; FIXME: document the others.
 .. toctree::
   :maxdepth: 2
 
-  testsuites/test-idioms
-  testsuites/test-directives
-  testsuites/ada-tests
-  testsuites/c-tests
-  testsuites/lto-testing
-  testsuites/gcov-testing
-  testsuites/profopt-testing
-  testsuites/compat-testing
-  testsuites/torture-tests
-  testsuites/gimple-tests
-  testsuites/rtl-tests
   testsuites/idioms-used-in-testsuite-code
   testsuites/directives-used-within-dejagnu-tests
   testsuites/ada-language-testsuites

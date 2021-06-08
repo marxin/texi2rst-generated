@@ -20,14 +20,6 @@ There are also several varieties of complex statements.
 .. toctree::
   :maxdepth: 2
 
-  statements/basic-statements
-  statements/blocks
-  statements/statement-sequences
-  statements/empty-statements
-  statements/jumps
-  statements/cleanups
-  statements/openmp
-  statements/openacc
 
 .. _basic-statements:
 

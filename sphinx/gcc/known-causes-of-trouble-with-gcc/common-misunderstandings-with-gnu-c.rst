@@ -23,10 +23,6 @@ give rise to questions of this sort.
 .. toctree::
   :maxdepth: 2
 
-  static-definitions
-  name-lookup
-  temporaries
-  copy-assignment
 
 .. _static-definitions:
 

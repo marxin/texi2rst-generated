@@ -77,7 +77,6 @@ with the flag :option:`-fdump-tree-gimple`.
   gimple/tuple-representation
   gimple/class-hierarchy-of-gimple-statements
   gimple/gimple-instruction-set
-  gimple/gimple-exception-handling
   gimple/temporaries
   gimple/operands
   gimple/manipulating-gimple-statements
