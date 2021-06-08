@@ -78,6 +78,4 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. include:: ../share/cppdiropts.rst
 
-.. only:: man
-
-  .. include:: ../share/copyright.rst
+.. include:: ../share/copyright.rst
