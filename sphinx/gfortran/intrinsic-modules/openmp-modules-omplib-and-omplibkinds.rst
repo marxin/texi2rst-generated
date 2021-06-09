@@ -8,8 +8,6 @@
 OpenMP Modules OMP_LIB and OMP_LIB_KINDS
 ****************************************
 
-.. code-block::
-
 The OpenMP Fortran runtime library routines are provided both in
 a form of two Fortran modules, named ``OMP_LIB`` and
 ``OMP_LIB_KINDS``, and in a form of a Fortran ``include`` file named
@@ -161,4 +159,3 @@ The following scalar integer named constants are of the kind
   omp_const_mem_space
   omp_high_bw_mem_space
   omp_low_lat_mem_space
-
