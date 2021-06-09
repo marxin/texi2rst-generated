@@ -30,7 +30,7 @@ them: try the first ones in this list first.
   This hook is executed by the scheduler after it has scheduled an insn
   from the ready list.  It should return the number of insns which can
   still be issued in the current cycle.  The default is
-  :samp:`:samp:`{more}` - 1` for insns other than ``CLOBBER`` and
+  :samp:`{more} - 1` for insns other than ``CLOBBER`` and
   ``USE``, which normally are not counted against the issue rate.
   You should define this hook if some insns take more machine resources
   than others, so that fewer insns can follow them in the same cycle.

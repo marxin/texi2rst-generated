@@ -22,8 +22,8 @@ following macros in xm- :samp:`{machine}`.h.
   This macro is automatically defined by system.h if the host
   file system obeys the semantics defined by MS-DOS instead of Unix.
   DOS file systems are case insensitive, file specifications may begin
-  with a drive letter, and both forward slash and backslash (:samp:`/`
-  and :samp:`\`) are directory separators.
+  with a drive letter, and both forward slash and backslash (``/``
+  and ``\`) are directory separators.
 
 .. envvar:: DIR_SEPARATORDIR_SEPARATOR
 

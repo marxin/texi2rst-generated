@@ -373,7 +373,7 @@ This is about addressing modes.
 
   If the hook returns false for a mode with multibyte elements, GCC will
   try the equivalent byte operation.  If that also fails, it will try forcing
-  the selector into a register and using the :samp:`{vec_perm :samp:`{mode}` }`
+  the selector into a register and using the :samp:`{vec_perm {mode} }`
   instruction pattern.  There is no need for the hook to handle these two
   implementation approaches itself.
 

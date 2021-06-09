@@ -48,7 +48,7 @@ output template but rather a piece of C program that should compute a
 template.  It should execute a ``return`` statement to return the
 template-string you want.  Most such templates use C string literals, which
 require doublequote characters to delimit them.  To include these
-doublequote characters in the string, prefix each one with :samp:`\`.
+doublequote characters in the string, prefix each one with ``\``.
 
 If the output control string is written as a brace block instead of a
 double-quoted string, it is automatically assumed to be C code.  In that
