@@ -79,11 +79,11 @@ Options
   .. code-block:: json
 
     {
-      "current_working_directory": current_working_directory,
-      "data_file": data_file,
-      "format_version": format_version,
-      "gcc_version": gcc_version
-      "files": [file]
+      "current_working_directory": "foo/bar",
+      "data_file": "a.out",
+      "format_version": "1",
+      "gcc_version": "11.1.1 20210510"
+      "files": ["$file"]
     }
 
   Fields of the root element have following semantics:
@@ -102,9 +102,9 @@ Options
   .. code-block:: json
 
     {
-      "file": file_name,
-      "functions": [function],
-      "lines": [line]
+      "file": "a.c",
+      "functions": ["$function"],
+      "lines": ["$line"]
     }
 
   Fields of the :samp:`{file}` element have following semantics:
@@ -116,15 +116,15 @@ Options
   .. code-block:: json
 
     {
-      "blocks": blocks,
-      "blocks_executed": blocks_executed,
-      "demangled_name": "demangled_name,
-      "end_column": end_column,
-      "end_line": end_line,
-      "execution_count": execution_count,
-      "name": name,
-      "start_column": start_column
-      "start_line": start_line
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "foo",
+      "end_column": 1,
+      "end_line": 4,
+      "execution_count": 1,
+      "name": "foo",
+      "start_column": 5,
+      "start_line": 1
     }
 
   Fields of the :samp:`{function}` element have following semantics:
@@ -157,11 +157,11 @@ Options
   .. code-block:: json
 
     {
-      "branches": [branch],
-      "count": count,
-      "line_number": line_number,
-      "unexecuted_block": unexecuted_block
-      "function_name": function_name,
+      "branches": ["$branch"],
+      "count": 2,
+      "line_number": 15,
+      "unexecuted_block": false,
+      "function_name": "foo",
     }
 
   Branches are present only with :samp:`{-b}` option.
@@ -182,9 +182,9 @@ Options
   .. code-block:: json
 
     {
-      "count": count,
-      "fallthrough": fallthrough,
-      "throw": throw
+      "count": 11,
+      "fallthrough": true,
+      "throw": false
     }
 
   Fields of the :samp:`{branch}` element have following semantics:
