@@ -79,9 +79,9 @@ MOD --- Remainder function
       end program test_mod
 
   :samp:`{Specific names}:`
-
     =============  ==================  ==============  ====================
     Name           Arguments           Return type     Standard
+    =============  ==================  ==============  ====================
     ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
     ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
     ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later

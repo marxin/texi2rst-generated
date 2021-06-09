@@ -53,9 +53,9 @@ COSH --- Hyperbolic cosine function
       end program test_cosh
 
   :samp:`{Specific names}:`
-
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
+    ============  =============  ===========  ====================
     ``COSH(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
     ``DCOSH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
     ============  =============  ===========  ====================

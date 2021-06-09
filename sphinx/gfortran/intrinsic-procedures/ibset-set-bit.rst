@@ -48,9 +48,9 @@ IBSET --- Set bit
     RESULT = IBSET(I, POS)
 
   :samp:`{Specific names}:`
-
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
+    =============  ================  ==============  ====================
     ``IBSET(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
     ``BBSET(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
     ``IIBSET(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

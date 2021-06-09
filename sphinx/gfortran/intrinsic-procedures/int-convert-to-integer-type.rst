@@ -56,9 +56,9 @@ INT --- Convert to integer type
       end program
 
   :samp:`{Specific names}:`
-
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
+    ============  =============  ===========  ====================
     ``INT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
     ``IFIX(A)``   ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
     ``IDINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later

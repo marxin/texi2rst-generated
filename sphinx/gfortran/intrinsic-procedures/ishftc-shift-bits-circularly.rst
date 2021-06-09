@@ -59,9 +59,9 @@ ISHFTC --- Shift bits circularly
     RESULT = ISHFTC(I, SHIFT [, SIZE])
 
   :samp:`{Specific names}:`
-
     ==============  ================  ==============  ====================
     Name            Argument          Return type     Standard
+    ==============  ================  ==============  ====================
     ``ISHFTC(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
     ``BSHFTC(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
     ``IISHFTC(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

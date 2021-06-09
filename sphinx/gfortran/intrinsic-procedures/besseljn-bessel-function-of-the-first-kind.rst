@@ -69,9 +69,9 @@ BESSEL_JN --- Bessel function of the first kind
       end program test_besjn
 
   :samp:`{Specific names}:`
-
     ================  =============  ===========  =============
     Name              Argument       Return type  Standard
+    ================  =============  ===========  =============
     ``DBESJN(N, X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
                       ``REAL(8) X``
     ================  =============  ===========  =============

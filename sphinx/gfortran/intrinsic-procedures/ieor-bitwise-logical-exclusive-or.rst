@@ -54,9 +54,9 @@ IEOR --- Bitwise logical exclusive or
     RESULT = IEOR(I, J)
 
   :samp:`{Specific names}:`
-
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
+    ============  ================  ==============  ====================
     ``IEOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
     ``BIEOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
     ``IIEOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

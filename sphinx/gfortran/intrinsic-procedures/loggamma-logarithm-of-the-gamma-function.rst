@@ -52,9 +52,9 @@ LOG_GAMMA --- Logarithm of the Gamma function
       end program test_log_gamma
 
   :samp:`{Specific names}:`
-
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
+    =============  =============  ===========  =============
     ``LGAMMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
     ``ALGAMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
     ``DLGAMA(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension

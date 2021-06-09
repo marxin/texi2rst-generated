@@ -45,9 +45,9 @@ LGT --- Lexical greater than
     RESULT = LGT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
-
     ===========================  =============  ===========  ====================
     Name                         Argument       Return type  Standard
+    ===========================  =============  ===========  ====================
     ``LGT(STRING_A, STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
     ===========================  =============  ===========  ====================
 

@@ -54,9 +54,9 @@ IOR --- Bitwise logical or
     RESULT = IOR(I, J)
 
   :samp:`{Specific names}:`
-
     ===========  ================  ==============  ====================
     Name         Argument          Return type     Standard
+    ===========  ================  ==============  ====================
     ``IOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
     ``BIOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
     ``IIOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
