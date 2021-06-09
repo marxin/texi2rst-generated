@@ -20,6 +20,6 @@ OMP_STACKSIZE -- Set default thread stack size
   stack size is left unchanged.  If undefined, the stack size is system
   dependent.
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.7
 

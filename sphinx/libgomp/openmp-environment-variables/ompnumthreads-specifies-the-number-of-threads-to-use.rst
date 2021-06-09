@@ -22,6 +22,6 @@ OMP_NUM_THREADS -- Specifies the number of threads to use
 :samp:`{See also}:`
   omp_set_num_threads, OMP_NESTED
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.2
 

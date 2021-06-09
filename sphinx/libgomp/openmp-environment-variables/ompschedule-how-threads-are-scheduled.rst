@@ -22,6 +22,6 @@ OMP_SCHEDULE -- How threads are scheduled
 :samp:`{See also}:`
   omp_set_schedule
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Sections 2.7.1.1 and 4.1
 

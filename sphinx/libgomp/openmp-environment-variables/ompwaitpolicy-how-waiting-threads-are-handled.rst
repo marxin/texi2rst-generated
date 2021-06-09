@@ -20,6 +20,6 @@ OMP_WAIT_POLICY -- How waiting threads are handled
 :samp:`{See also}:`
   GOMP_SPINCOUNT
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.8
 

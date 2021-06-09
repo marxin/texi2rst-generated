@@ -28,6 +28,6 @@ omp_init_lock -- Initialize simple lock
 :samp:`{See also}:`
   omp_destroy_lock
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.1.
 

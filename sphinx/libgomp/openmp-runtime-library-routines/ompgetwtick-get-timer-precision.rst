@@ -27,6 +27,6 @@ omp_get_wtick -- Get timer precision
 :samp:`{See also}:`
   omp_get_wtime
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.4.2.
 

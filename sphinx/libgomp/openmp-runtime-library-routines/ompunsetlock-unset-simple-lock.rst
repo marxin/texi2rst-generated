@@ -31,6 +31,6 @@ omp_unset_lock -- Unset simple lock
 :samp:`{See also}:`
   omp_set_lock, omp_test_lock
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.
 
