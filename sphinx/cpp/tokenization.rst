@@ -138,7 +138,7 @@ lines instead, or string constant concatenation.
 :dfn:`Punctuators` are all the usual bits of punctuation which are
 meaningful to C and C++.  All but three of the punctuation characters in
 ASCII are C punctuators.  The exceptions are :samp:`@`, :samp:`$`, and
-:samp:```.  In addition, all the two- and three-character operators are
+:samp:`\``.  In addition, all the two- and three-character operators are
 punctuators.  There are also six :dfn:`digraphs`, which the C++ standard
 calls :dfn:`alternative tokens`, which are merely alternate ways to spell
 other punctuators.  This is a second attempt to work around missing
@@ -156,7 +156,7 @@ their corresponding normal punctuators are:
 Any other single byte is considered 'other' and passed on to the
 preprocessor's output unchanged.  The C compiler will almost certainly
 reject source code containing 'other' tokens.  In ASCII, the only
-'other' characters are :samp:`@`, :samp:`$`, :samp:```, and control
+'other' characters are :samp:`@`, :samp:`$`, :samp:`\``, and control
 characters other than NUL (all bits zero).  (Note that :samp:`$` is
 normally considered a letter.)  All bytes with the high bit set
 (numeric range 0x7F--0xFF) that were not succesfully interpreted as

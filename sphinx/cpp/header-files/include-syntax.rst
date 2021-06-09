@@ -34,7 +34,7 @@ However, if backslashes occur within :samp:`{file}`, they are considered
 ordinary text characters, not escape characters.  None of the character
 escape sequences appropriate to string constants in C are processed.
 Thus, ``#include "x\n\\y"`` specifies a filename containing three
-backslashes.  (Some systems interpret :samp:`\` as a pathname separator.
+backslashes.  (Some systems interpret :samp:`\\` as a pathname separator.
 All of these also interpret :samp:`/` the same way.  It is most portable
 to use only :samp:`/`.)
 

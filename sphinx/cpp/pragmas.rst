@@ -29,7 +29,7 @@ in a macro.
 Its syntax is ``_Pragma (string-literal)``, where
 :samp:`{string-literal}` can be either a normal or wide-character string
 literal.  It is destringized, by replacing all :samp:`\\` with a single
-:samp:`\` and all :samp:`\"` with a :samp:`"`.  The result is then
+:samp:`\\` and all :samp:`\"` with a :samp:`"`.  The result is then
 processed as if it had appeared as the right hand side of a
 :samp:`#pragma` directive.  For example,
 
