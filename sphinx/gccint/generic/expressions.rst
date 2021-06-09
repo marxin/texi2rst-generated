@@ -25,7 +25,7 @@ nodes being unshared.
 
 The following macros can be used with all expression nodes:
 
-.. envvar:: TREE_TYPETREE_TYPE
+.. envvar:: TREE_TYPE
 
   Returns the type of the expression.  This value may not be precisely the
   same type that would be given the expression in the original program.

@@ -29,35 +29,35 @@ be used.  Edge iterators are constructed using the
 ``edge_iterator`` data structure and several methods are available
 to operate on them:
 
-:samp:`{ei_start}ei_start`
+``ei_start``
   This function initializes an ``edge_iterator`` that points to the
   first edge in a vector of edges.
 
-:samp:`{ei_last}ei_last`
+``ei_last``
   This function initializes an ``edge_iterator`` that points to the
   last edge in a vector of edges.
 
-:samp:`{ei_end_p}ei_end_p`
+``ei_end_p``
   This predicate is ``true`` if an ``edge_iterator`` represents
   the last edge in an edge vector.
 
-:samp:`{ei_one_before_end_p}ei_one_before_end_p`
+``ei_one_before_end_p``
   This predicate is ``true`` if an ``edge_iterator`` represents
   the second last edge in an edge vector.
 
-:samp:`{ei_next}ei_next`
+``ei_next``
   This function takes a pointer to an ``edge_iterator`` and makes it
   point to the next edge in the sequence.
 
-:samp:`{ei_prev}ei_prev`
+``ei_prev``
   This function takes a pointer to an ``edge_iterator`` and makes it
   point to the previous edge in the sequence.
 
-:samp:`{ei_edge}ei_edge`
+``ei_edge``
   This function returns the ``edge`` currently pointed to by an
   ``edge_iterator``.
 
-:samp:`{ei_safe_safe}ei_safe_safe`
+``ei_safe_safe``
   This function returns the ``edge`` currently pointed to by an
   ``edge_iterator``, but returns ``NULL`` if the iterator is
   pointing at the end of the sequence.  This function has been provided

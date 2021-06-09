@@ -126,10 +126,10 @@ expression or declaration in this field.
 
 These are some other functions for handling trees:
 
-:samp:`{tree_size}tree_size`
+``tree_size``
   Return the number of bytes a tree takes.
 
-:samp:`{build0}build0` :samp:`{build1}build1` :samp:`{build2}build2` :samp:`{build3}build3` :samp:`{build4}build4` :samp:`{build5}build5` :samp:`{build6}build6`
+``build0`` :samp:`{build1}build1` :samp:`{build2}build2` :samp:`{build3}build3` :samp:`{build4}build4` :samp:`{build5}build5` :samp:`{build6}build6`
   These functions build a tree and supply values to put in each
   parameter.  The basic signature is :samp:`code, type, [operands]`.
   ``code`` is the ``TREE_CODE``, and ``type`` is a tree
@@ -164,27 +164,27 @@ same identifier.  Therefore, you may use pointer equality to compare
 
 You can use the following macros to access identifiers:
 
-.. envvar:: IDENTIFIER_POINTERIDENTIFIER_POINTER
+.. envvar:: IDENTIFIER_POINTER
 
   The string represented by the identifier, represented as a
   ``char*``.  This string is always ``NUL`` -terminated, and contains
   no embedded ``NUL`` characters.
 
-.. envvar:: IDENTIFIER_LENGTHIDENTIFIER_LENGTH
+.. envvar:: IDENTIFIER_LENGTH
 
   The length of the string returned by ``IDENTIFIER_POINTER``, not
   including the trailing ``NUL``.  This value of
   ``IDENTIFIER_LENGTH (x)`` is always the same as ``strlen
   (IDENTIFIER_POINTER (x))``.
 
-.. envvar:: IDENTIFIER_OPNAME_PIDENTIFIER_OPNAME_P
+.. envvar:: IDENTIFIER_OPNAME_P
 
   This predicate holds if the identifier represents the name of an
   overloaded operator.  In this case, you should not depend on the
   contents of either the ``IDENTIFIER_POINTER`` or the
   ``IDENTIFIER_LENGTH``.
 
-.. envvar:: IDENTIFIER_TYPENAME_PIDENTIFIER_TYPENAME_P
+.. envvar:: IDENTIFIER_TYPENAME_P
 
   This predicate holds if the identifier represents the name of a
   user-defined conversion operator.  In this case, the ``TREE_TYPE`` of

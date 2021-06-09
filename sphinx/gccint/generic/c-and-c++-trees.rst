@@ -121,7 +121,7 @@ the type ``const int ()[7]``, denoting an array of seven ``int`` s.
 
 The following functions and macros deal with cv-qualification of types:
 
-:samp:`{cp_type_quals}cp_type_quals`
+``cp_type_quals``
   This function returns the set of type qualifiers applied to this type.
   This value is ``TYPE_UNQUALIFIED`` if no qualifiers have been
   applied.  The ``TYPE_QUAL_CONST`` bit is set if the type is
@@ -129,19 +129,19 @@ The following functions and macros deal with cv-qualification of types:
   type is ``volatile`` -qualified.  The ``TYPE_QUAL_RESTRICT`` bit is
   set if the type is ``restrict`` -qualified.
 
-.. envvar:: CP_TYPE_CONST_PCP_TYPE_CONST_P
+.. envvar:: CP_TYPE_CONST_P
 
   This macro holds if the type is ``const`` -qualified.
 
-.. envvar:: CP_TYPE_VOLATILE_PCP_TYPE_VOLATILE_P
+.. envvar:: CP_TYPE_VOLATILE_P
 
   This macro holds if the type is ``volatile`` -qualified.
 
-.. envvar:: CP_TYPE_RESTRICT_PCP_TYPE_RESTRICT_P
+.. envvar:: CP_TYPE_RESTRICT_P
 
   This macro holds if the type is ``restrict`` -qualified.
 
-.. envvar:: CP_TYPE_CONST_NON_VOLATILE_PCP_TYPE_CONST_NON_VOLATILE_P
+.. envvar:: CP_TYPE_CONST_NON_VOLATILE_P
 
   This predicate holds for a type that is ``const`` -qualified, but
   *not* ``volatile`` -qualified; other cv-qualifiers are ignored as
@@ -149,17 +149,17 @@ The following functions and macros deal with cv-qualification of types:
 
 A few other macros and functions are usable with all types:
 
-.. envvar:: TYPE_SIZETYPE_SIZE
+.. envvar:: TYPE_SIZE
 
   The number of bits required to represent the type, represented as an
   ``INTEGER_CST``.  For an incomplete type, ``TYPE_SIZE`` will be
   ``NULL_TREE``.
 
-.. envvar:: TYPE_ALIGNTYPE_ALIGN
+.. envvar:: TYPE_ALIGN
 
   The alignment of the type, in bits, represented as an ``int``.
 
-.. envvar:: TYPE_NAMETYPE_NAME
+.. envvar:: TYPE_NAME
 
   This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
   the type.  (Note this macro does *not* return an
@@ -169,38 +169,38 @@ A few other macros and functions are usable with all types:
   for a type that is not a built-in type, the result of a typedef, or a
   named class type.
 
-.. envvar:: CP_INTEGRAL_TYPECP_INTEGRAL_TYPE
+.. envvar:: CP_INTEGRAL_TYPE
 
   This predicate holds if the type is an integral type.  Notice that in
   C++, enumerations are *not* integral types.
 
-.. envvar:: ARITHMETIC_TYPE_PARITHMETIC_TYPE_P
+.. envvar:: ARITHMETIC_TYPE_P
 
   This predicate holds if the type is an integral type (in the C++ sense)
   or a floating point type.
 
-.. envvar:: CLASS_TYPE_PCLASS_TYPE_P
+.. envvar:: CLASS_TYPE_P
 
   This predicate holds for a class-type.
 
-.. envvar:: TYPE_BUILT_INTYPE_BUILT_IN
+.. envvar:: TYPE_BUILT_IN
 
   This predicate holds for a built-in type.
 
-.. envvar:: TYPE_PTRDATAMEM_PTYPE_PTRDATAMEM_P
+.. envvar:: TYPE_PTRDATAMEM_P
 
   This predicate holds if the type is a pointer to data member.
 
-.. envvar:: TYPE_PTR_PTYPE_PTR_P
+.. envvar:: TYPE_PTR_P
 
   This predicate holds if the type is a pointer type, and the pointee is
   not a data member.
 
-.. envvar:: TYPE_PTRFN_PTYPE_PTRFN_P
+.. envvar:: TYPE_PTRFN_P
 
   This predicate holds for a pointer to function type.
 
-.. envvar:: TYPE_PTROB_PTYPE_PTROB_P
+.. envvar:: TYPE_PTROB_P
 
   This predicate holds for a pointer to object type.  Note however that it
   does not hold for the generic pointer to object type ``void *``.  You
@@ -278,7 +278,7 @@ A namespace is represented by a ``NAMESPACE_DECL`` node.
 
 The following macros and functions can be used on a ``NAMESPACE_DECL`` :
 
-.. envvar:: DECL_NAMEDECL_NAME
+.. envvar:: DECL_NAME
 
   This macro is used to obtain the ``IDENTIFIER_NODE`` corresponding to
   the unqualified name of the name of the namespace (see :ref:`identifiers`).
@@ -290,12 +290,12 @@ The following macros and functions can be used on a ``NAMESPACE_DECL`` :
   Within a single translation unit, all unnamed namespaces will have the
   same name.
 
-.. envvar:: DECL_CONTEXTDECL_CONTEXT
+.. envvar:: DECL_CONTEXT
 
   This macro returns the enclosing namespace.  The ``DECL_CONTEXT`` for
   the ``global_namespace`` is ``NULL_TREE``.
 
-.. envvar:: DECL_NAMESPACE_ALIASDECL_NAMESPACE_ALIAS
+.. envvar:: DECL_NAMESPACE_ALIAS
 
   If this declaration is for a namespace alias, then
   ``DECL_NAMESPACE_ALIAS`` is the namespace for which this one is an
@@ -306,12 +306,12 @@ The following macros and functions can be used on a ``NAMESPACE_DECL`` :
   reach an ordinary, non-alias, namespace, and call
   ``cp_namespace_decls`` there.
 
-.. envvar:: DECL_NAMESPACE_STD_PDECL_NAMESPACE_STD_P
+.. envvar:: DECL_NAMESPACE_STD_P
 
   This predicate holds if the namespace is the special ``::std``
   namespace.
 
-:samp:`{cp_namespace_decls}cp_namespace_decls`
+``cp_namespace_decls``
   This function will return the declarations contained in the namespace,
   including types, overloaded functions, other namespaces, and so forth.
   If there are no declarations, this function will return
@@ -427,50 +427,50 @@ virtually or not.  The other flags, ``BINFO_FLAG_0`` to
 
 The following macros can be used on a tree node representing a class-type.
 
-.. envvar:: LOCAL_CLASS_PLOCAL_CLASS_P
+.. envvar:: LOCAL_CLASS_P
 
   This predicate holds if the class is local class *i.e.* declared
   inside a function body.
 
-.. envvar:: TYPE_POLYMORPHIC_PTYPE_POLYMORPHIC_P
+.. envvar:: TYPE_POLYMORPHIC_P
 
   This predicate holds if the class has at least one virtual function
   (declared or inherited).
 
-.. envvar:: TYPE_HAS_DEFAULT_CONSTRUCTORTYPE_HAS_DEFAULT_CONSTRUCTOR
+.. envvar:: TYPE_HAS_DEFAULT_CONSTRUCTOR
 
   This predicate holds whenever its argument represents a class-type with
   default constructor.
 
-.. envvar:: CLASSTYPE_HAS_MUTABLECLASSTYPE_HAS_MUTABLE
+.. envvar:: CLASSTYPE_HAS_MUTABLE
 
   These predicates hold for a class-type having a mutable data member.
 
-.. envvar:: CLASSTYPE_NON_POD_PCLASSTYPE_NON_POD_P
+.. envvar:: CLASSTYPE_NON_POD_P
 
   This predicate holds only for class-types that are not PODs.
 
-.. envvar:: TYPE_HAS_NEW_OPERATORTYPE_HAS_NEW_OPERATOR
+.. envvar:: TYPE_HAS_NEW_OPERATOR
 
   This predicate holds for a class-type that defines
   ``operator new``.
 
-.. envvar:: TYPE_HAS_ARRAY_NEW_OPERATORTYPE_HAS_ARRAY_NEW_OPERATOR
+.. envvar:: TYPE_HAS_ARRAY_NEW_OPERATOR
 
   This predicate holds for a class-type for which
   ``operator new[]`` is defined.
 
-.. envvar:: TYPE_OVERLOADS_CALL_EXPRTYPE_OVERLOADS_CALL_EXPR
+.. envvar:: TYPE_OVERLOADS_CALL_EXPR
 
   This predicate holds for class-type for which the function call
   ``operator()`` is overloaded.
 
-.. envvar:: TYPE_OVERLOADS_ARRAY_REFTYPE_OVERLOADS_ARRAY_REF
+.. envvar:: TYPE_OVERLOADS_ARRAY_REF
 
   This predicate holds for a class-type that overloads
   ``operator[]``
 
-.. envvar:: TYPE_OVERLOADS_ARROWTYPE_OVERLOADS_ARROW
+.. envvar:: TYPE_OVERLOADS_ARROW
 
   This predicate holds for a class-type for which ``operator->`` is
   overloaded.
@@ -527,27 +527,27 @@ the ``DECL_CONTEXT`` for ``f`` will be the
 
 The following macros and functions can be used on a ``FUNCTION_DECL`` :
 
-.. envvar:: DECL_MAIN_PDECL_MAIN_P
+.. envvar:: DECL_MAIN_P
 
   This predicate holds for a function that is the program entry point
   ``::code``.
 
-.. envvar:: DECL_LOCAL_FUNCTION_PDECL_LOCAL_FUNCTION_P
+.. envvar:: DECL_LOCAL_FUNCTION_P
 
   This predicate holds if the function was declared at block scope, even
   though it has a global scope.
 
-.. envvar:: DECL_ANTICIPATEDDECL_ANTICIPATED
+.. envvar:: DECL_ANTICIPATED
 
   This predicate holds if the function is a built-in function but its
   prototype is not yet explicitly declared.
 
-.. envvar:: DECL_EXTERN_C_FUNCTION_PDECL_EXTERN_C_FUNCTION_P
+.. envvar:: DECL_EXTERN_C_FUNCTION_P
 
   This predicate holds if the function is declared as an
   ' ``extern "C"`` ' function.
 
-.. envvar:: DECL_LINKONCE_PDECL_LINKONCE_P
+.. envvar:: DECL_LINKONCE_P
 
   This macro holds if multiple copies of this function may be emitted in
   various translation units.  It is the responsibility of the linker to
@@ -558,77 +558,77 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
 
   FIXME: This macro is not yet implemented.
 
-.. envvar:: DECL_FUNCTION_MEMBER_PDECL_FUNCTION_MEMBER_P
+.. envvar:: DECL_FUNCTION_MEMBER_P
 
   This macro holds if the function is a member of a class, rather than a
   member of a namespace.
 
-.. envvar:: DECL_STATIC_FUNCTION_PDECL_STATIC_FUNCTION_P
+.. envvar:: DECL_STATIC_FUNCTION_P
 
   This predicate holds if the function a static member function.
 
-.. envvar:: DECL_NONSTATIC_MEMBER_FUNCTION_PDECL_NONSTATIC_MEMBER_FUNCTION_P
+.. envvar:: DECL_NONSTATIC_MEMBER_FUNCTION_P
 
   This macro holds for a non-static member function.
 
-.. envvar:: DECL_CONST_MEMFUNC_PDECL_CONST_MEMFUNC_P
+.. envvar:: DECL_CONST_MEMFUNC_P
 
   This predicate holds for a ``const`` -member function.
 
-.. envvar:: DECL_VOLATILE_MEMFUNC_PDECL_VOLATILE_MEMFUNC_P
+.. envvar:: DECL_VOLATILE_MEMFUNC_P
 
   This predicate holds for a ``volatile`` -member function.
 
-.. envvar:: DECL_CONSTRUCTOR_PDECL_CONSTRUCTOR_P
+.. envvar:: DECL_CONSTRUCTOR_P
 
   This macro holds if the function is a constructor.
 
-.. envvar:: DECL_NONCONVERTING_PDECL_NONCONVERTING_P
+.. envvar:: DECL_NONCONVERTING_P
 
   This predicate holds if the constructor is a non-converting constructor.
 
-.. envvar:: DECL_COMPLETE_CONSTRUCTOR_PDECL_COMPLETE_CONSTRUCTOR_P
+.. envvar:: DECL_COMPLETE_CONSTRUCTOR_P
 
   This predicate holds for a function which is a constructor for an object
   of a complete type.
 
-.. envvar:: DECL_BASE_CONSTRUCTOR_PDECL_BASE_CONSTRUCTOR_P
+.. envvar:: DECL_BASE_CONSTRUCTOR_P
 
   This predicate holds for a function which is a constructor for a base
   class sub-object.
 
-.. envvar:: DECL_COPY_CONSTRUCTOR_PDECL_COPY_CONSTRUCTOR_P
+.. envvar:: DECL_COPY_CONSTRUCTOR_P
 
   This predicate holds for a function which is a copy-constructor.
 
-.. envvar:: DECL_DESTRUCTOR_PDECL_DESTRUCTOR_P
+.. envvar:: DECL_DESTRUCTOR_P
 
   This macro holds if the function is a destructor.
 
-.. envvar:: DECL_COMPLETE_DESTRUCTOR_PDECL_COMPLETE_DESTRUCTOR_P
+.. envvar:: DECL_COMPLETE_DESTRUCTOR_P
 
   This predicate holds if the function is the destructor for an object a
   complete type.
 
-.. envvar:: DECL_OVERLOADED_OPERATOR_PDECL_OVERLOADED_OPERATOR_P
+.. envvar:: DECL_OVERLOADED_OPERATOR_P
 
   This macro holds if the function is an overloaded operator.
 
-.. envvar:: DECL_CONV_FN_PDECL_CONV_FN_P
+.. envvar:: DECL_CONV_FN_P
 
   This macro holds if the function is a type-conversion operator.
 
-.. envvar:: DECL_GLOBAL_CTOR_PDECL_GLOBAL_CTOR_P
+.. envvar:: DECL_GLOBAL_CTOR_P
 
   This predicate holds if the function is a file-scope initialization
   function.
 
-.. envvar:: DECL_GLOBAL_DTOR_PDECL_GLOBAL_DTOR_P
+.. envvar:: DECL_GLOBAL_DTOR_P
 
   This predicate holds if the function is a file-scope finalization
   function.
 
-.. envvar:: DECL_THUNK_PDECL_THUNK_P
+.. envvar:: DECL_THUNK_P
 
   This predicate holds if the function is a thunk.
 
@@ -654,11 +654,11 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
   by ``DECL_INITIAL`` ; this will always be an expression for the
   address of a function.
 
-.. envvar:: DECL_NON_THUNK_FUNCTION_PDECL_NON_THUNK_FUNCTION_P
+.. envvar:: DECL_NON_THUNK_FUNCTION_P
 
   This predicate holds if the function is *not* a thunk function.
 
-.. envvar:: GLOBAL_INIT_PRIORITYGLOBAL_INIT_PRIORITY
+.. envvar:: GLOBAL_INIT_PRIORITY
 
   If either ``DECL_GLOBAL_CTOR_P`` or ``DECL_GLOBAL_DTOR_P`` holds,
   then this gives the initialization priority for the function.  The
@@ -667,18 +667,18 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
   before ``main`` is called.  When the program exits, all functions for
   which ``DECL_GLOBAL_DTOR_P`` holds are run in the reverse order.
 
-.. envvar:: TYPE_RAISES_EXCEPTIONSTYPE_RAISES_EXCEPTIONS
+.. envvar:: TYPE_RAISES_EXCEPTIONS
 
   This macro returns the list of exceptions that a (member-)function can
   raise.  The returned list, if non ``NULL``, is comprised of nodes
   whose ``TREE_VALUE`` represents a type.
 
-.. envvar:: TYPE_NOTHROW_PTYPE_NOTHROW_P
+.. envvar:: TYPE_NOTHROW_P
 
   This predicate holds when the exception-specification of its arguments
   is of the form ' ``()`` '.
 
-.. envvar:: DECL_ARRAY_DELETE_OPERATOR_PDECL_ARRAY_DELETE_OPERATOR_P
+.. envvar:: DECL_ARRAY_DELETE_OPERATOR_P
 
   This predicate holds if the function an overloaded
   ``operator delete[]``.
@@ -785,7 +785,7 @@ enumerated here, together with a list of the various macros that can
 be used to obtain information about them.  There are a few macros that
 can be used with all statements:
 
-.. envvar:: STMT_IS_FULL_EXPR_PSTMT_IS_FULL_EXPR_P
+.. envvar:: STMT_IS_FULL_EXPR_P
 
   In C++, statements normally constitute 'full expressions'; temporaries
   created during a statement are destroyed when the statement is complete.
