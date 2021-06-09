@@ -614,8 +614,7 @@ honor these options.
                 }
             ]
     	"column-origin": 1,
-        },
-        ...
+        }
     ]
 
   where the ``note`` is a child of the ``warning``.
