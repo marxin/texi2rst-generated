@@ -12,14 +12,14 @@ Host Misc
 
 .. index:: xm-machine.h
 
-.. envvar:: FATAL_EXIT_CODEFATAL_EXIT_CODE
+.. envvar:: FATAL_EXIT_CODE
 
   A C expression for the status code to be returned when the compiler
   exits after serious errors.  The default is the system-provided macro
   :samp:`EXIT_FAILURE`, or :samp:`1` if the system doesn't define that
   macro.  Define this macro only if these defaults are incorrect.
 
-.. envvar:: SUCCESS_EXIT_CODESUCCESS_EXIT_CODE
+.. envvar:: SUCCESS_EXIT_CODE
 
   A C expression for the status code to be returned when the compiler
   exits without serious errors.  (Warnings are not serious errors.)  The
@@ -27,7 +27,7 @@ Host Misc
   the system doesn't define that macro.  Define this macro only if these
   defaults are incorrect.
 
-.. envvar:: USE_C_ALLOCAUSE_C_ALLOCA
+.. envvar:: USE_C_ALLOCA
 
   Define this macro if GCC should use the C implementation of ``alloca``
   provided by libiberty.a.  This only affects how some parts of the
@@ -40,27 +40,27 @@ Host Misc
   has a small limit on the size of the stack, GCC's builtin ``alloca``
   will not work reliably.
 
-:samp:`{COLLECT2_HOST_INITIALIZATION}COLLECT2_HOST_INITIALIZATION`
+``COLLECT2_HOST_INITIALIZATION``
   If defined, a C statement (sans semicolon) that performs host-dependent
   initialization when ``collect2`` is being initialized.
 
-.. envvar:: GCC_DRIVER_HOST_INITIALIZATIONGCC_DRIVER_HOST_INITIALIZATION
+.. envvar:: GCC_DRIVER_HOST_INITIALIZATION
 
   If defined, a C statement (sans semicolon) that performs host-dependent
   initialization when a compilation driver is being initialized.
 
-.. envvar:: HOST_LONG_LONG_FORMATHOST_LONG_LONG_FORMAT
+.. envvar:: HOST_LONG_LONG_FORMAT
 
   If defined, the string used to indicate an argument of type ``long
   long`` to functions like ``printf``.  The default value is
   ``"ll"``.
 
-.. envvar:: HOST_LONG_FORMATHOST_LONG_FORMAT
+.. envvar:: HOST_LONG_FORMAT
 
   If defined, the string used to indicate an argument of type ``long``
   to functions like ``printf``.  The default value is ``"l"``.
 
-.. envvar:: HOST_PTR_PRINTFHOST_PTR_PRINTF
+.. envvar:: HOST_PTR_PRINTF
 
   If defined, the string used to indicate an argument of type ``void *``
   to functions like ``printf``.  The default value is ``"%p"``.

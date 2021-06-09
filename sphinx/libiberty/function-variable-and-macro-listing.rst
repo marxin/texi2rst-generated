@@ -500,16 +500,16 @@ preprocessor :samp:`#if` statements (the C "execution character set").
 It is defined by safe-ctype.h, and will be an integer constant
 with one of the following values:
 
-.. envvar:: HOST_CHARSET_UNKNOWNHOST_CHARSET_UNKNOWN
+.. envvar:: HOST_CHARSET_UNKNOWN
 
   The host character set is unknown - that is, not one of the next two
   possibilities.
 
-.. envvar:: HOST_CHARSET_ASCIIHOST_CHARSET_ASCII
+.. envvar:: HOST_CHARSET_ASCII
 
   The host character set is ASCII.
 
-.. envvar:: HOST_CHARSET_EBCDICHOST_CHARSET_EBCDIC
+.. envvar:: HOST_CHARSET_EBCDIC
 
   The host character set is some variant of EBCDIC.  (Only one of the
   nineteen EBCDIC varying characters is tested; exercise caution.)

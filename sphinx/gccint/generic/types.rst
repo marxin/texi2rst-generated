@@ -110,7 +110,7 @@ functions under the ``RECORD_TYPE`` case label.
 
 The following functions and macros deal with cv-qualification of types:
 
-.. envvar:: TYPE_MAIN_VARIANTTYPE_MAIN_VARIANT
+.. envvar:: TYPE_MAIN_VARIANT
 
   This macro returns the unqualified version of a type.  It may be applied
   to an unqualified type, but it is not always the identity function in
@@ -118,17 +118,17 @@ The following functions and macros deal with cv-qualification of types:
 
 A few other macros and functions are usable with all types:
 
-.. envvar:: TYPE_SIZETYPE_SIZE
+.. envvar:: TYPE_SIZE
 
   The number of bits required to represent the type, represented as an
   ``INTEGER_CST``.  For an incomplete type, ``TYPE_SIZE`` will be
   ``NULL_TREE``.
 
-.. envvar:: TYPE_ALIGNTYPE_ALIGN
+.. envvar:: TYPE_ALIGN
 
   The alignment of the type, in bits, represented as an ``int``.
 
-.. envvar:: TYPE_NAMETYPE_NAME
+.. envvar:: TYPE_NAME
 
   This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
   the type.  (Note this macro does *not* return an
@@ -138,7 +138,7 @@ A few other macros and functions are usable with all types:
   for a type that is not a built-in type, the result of a typedef, or a
   named class type.
 
-.. envvar:: TYPE_CANONICALTYPE_CANONICAL
+.. envvar:: TYPE_CANONICAL
 
   This macro returns the 'canonical' type for the given type
   node. Canonical types are used to improve performance in the C++ and
@@ -175,18 +175,18 @@ A few other macros and functions are usable with all types:
   structural comparisons; the compiler will then print any warnings if
   the canonical types miscompare.
 
-.. envvar:: TYPE_STRUCTURAL_EQUALITY_PTYPE_STRUCTURAL_EQUALITY_P
+.. envvar:: TYPE_STRUCTURAL_EQUALITY_P
 
   This predicate holds when the node requires structural equality
   checks, e.g., when ``TYPE_CANONICAL`` is ``NULL_TREE``.
 
-.. envvar:: SET_TYPE_STRUCTURAL_EQUALITYSET_TYPE_STRUCTURAL_EQUALITY
+.. envvar:: SET_TYPE_STRUCTURAL_EQUALITY
 
   This macro states that the type node it is given requires structural
   equality checks, e.g., it sets ``TYPE_CANONICAL`` to
   ``NULL_TREE``.
 
-:samp:`{same_type_p}same_type_p`
+``same_type_p``
   This predicate takes two types as input, and holds if they are the same
   type.  For example, if one type is a ``typedef`` for the other, or
   both are ``typedef`` s for the same type.  This predicate also holds if

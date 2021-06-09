@@ -56,32 +56,32 @@ Optimization groups
 The optimization passes are grouped into several categories. Currently
 defined categories in dumpfile.h are
 
-.. envvar:: OPTGROUP_IPAOPTGROUP_IPA
+.. envvar:: OPTGROUP_IPA
 
   IPA optimization passes. Enabled by :option:`-ipa`
 
-.. envvar:: OPTGROUP_LOOPOPTGROUP_LOOP
+.. envvar:: OPTGROUP_LOOP
 
   Loop optimization passes. Enabled by :option:`-loop`.
 
-.. envvar:: OPTGROUP_INLINEOPTGROUP_INLINE
+.. envvar:: OPTGROUP_INLINE
 
   Inlining passes. Enabled by :option:`-inline`.
 
-.. envvar:: OPTGROUP_OMPOPTGROUP_OMP
+.. envvar:: OPTGROUP_OMP
 
   OMP (Offloading and Multi Processing) passes. Enabled by
   :option:`-omp`.
 
-.. envvar:: OPTGROUP_VECOPTGROUP_VEC
+.. envvar:: OPTGROUP_VEC
 
   Vectorization passes. Enabled by :option:`-vec`.
 
-.. envvar:: OPTGROUP_OTHEROPTGROUP_OTHER
+.. envvar:: OPTGROUP_OTHER
 
   All other optimization passes which do not fall into one of the above.
 
-.. envvar:: OPTGROUP_ALLOPTGROUP_ALL
+.. envvar:: OPTGROUP_ALL
 
   All optimization passes. Enabled by :option:`-optall`.
 
@@ -158,7 +158,7 @@ Dump types
 
 .. index:: dump types
 
-:samp:`{dump_printf}dump_printf`
+``dump_printf``
   This is a generic method for doing formatted output. It takes an
   additional argument ``dump_kind`` which signifies the type of
   dump. This method outputs information only when the dumps are enabled
@@ -184,13 +184,13 @@ Dump types
     dump_printf_loc (report_flags, insn,
                      "loop turned into non-loop; it never loops.\n");
 
-:samp:`{dump_basic_block}dump_basic_block`
+``dump_basic_block``
   Output basic block.
 
-:samp:`{dump_generic_expr}dump_generic_expr`
+``dump_generic_expr``
   Output generic expression.
 
-:samp:`{dump_gimple_stmt}dump_gimple_stmt`
+``dump_gimple_stmt``
   Output gimple statement.
 
   Note that the above methods also have variants prefixed with

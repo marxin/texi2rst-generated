@@ -17,7 +17,7 @@ machine's filesystem.  Filesystems with Unix and MS-DOS semantics are
 automatically detected.  For other systems, you can define the
 following macros in xm- :samp:`{machine}`.h.
 
-.. envvar:: HAVE_DOS_BASED_FILE_SYSTEMHAVE_DOS_BASED_FILE_SYSTEM
+.. envvar:: HAVE_DOS_BASED_FILE_SYSTEM
 
   This macro is automatically defined by system.h if the host
   file system obeys the semantics defined by MS-DOS instead of Unix.
@@ -25,7 +25,7 @@ following macros in xm- :samp:`{machine}`.h.
   with a drive letter, and both forward slash and backslash (``/``
   and ``\`) are directory separators.
 
-.. envvar:: DIR_SEPARATORDIR_SEPARATOR
+.. envvar:: DIR_SEPARATOR
 
   If defined, these macros expand to character constants specifying
   separators for directory names within a file specification.
@@ -38,30 +38,29 @@ following macros in xm- :samp:`{machine}`.h.
   separated by a special character, should not define either of these
   macros.
 
-.. envvar:: PATH_SEPARATORPATH_SEPARATOR
+.. envvar:: PATH_SEPARATOR
 
   If defined, this macro should expand to a character constant
   specifying the separator for elements of search paths.  The default
   value is a colon (:samp:`:`).  DOS-based systems usually, but not
   always, use semicolon (:samp:`;`).
 
-.. envvar:: VMSVMS
-
+``VMS``
   Define this macro if the host system is VMS.
 
-.. envvar:: HOST_OBJECT_SUFFIXHOST_OBJECT_SUFFIX
+.. envvar:: HOST_OBJECT_SUFFIX
 
   Define this macro to be a C string representing the suffix for object
   files on your host machine.  If you do not define this macro, GCC will
   use :samp:`.o` as the suffix for object files.
 
-.. envvar:: HOST_EXECUTABLE_SUFFIXHOST_EXECUTABLE_SUFFIX
+.. envvar:: HOST_EXECUTABLE_SUFFIX
 
   Define this macro to be a C string representing the suffix for
   executable files on your host machine.  If you do not define this macro,
   GCC will use the null string as the suffix for executable files.
 
-.. envvar:: HOST_BIT_BUCKETHOST_BIT_BUCKET
+.. envvar:: HOST_BIT_BUCKET
 
   A pathname defined by the host operating system, which can be opened as
   a file and written to, but all the information written is discarded.
@@ -70,9 +69,7 @@ following macros in xm- :samp:`{machine}`.h.
   bucket.  If the host does not support a bit bucket, define this macro to
   an invalid filename.
 
-.. index:: UPDATE_PATH_HOST_CANONICALIZE (path)
-
-UPDATE_PATH_HOST_CANONICALIZE ( :samp:`{path}` )
+:samp:`UPDATE_PATH_HOST_CANONICALIZE ({path})`
   If defined, a C statement (sans semicolon) that performs host-dependent
   canonicalization when a path used in a compilation driver or
   preprocessor is canonicalized.  :samp:`{path}` is a malloc-ed path to be
@@ -80,7 +77,7 @@ UPDATE_PATH_HOST_CANONICALIZE ( :samp:`{path}` )
   different buffer, the old path should be freed and the new buffer should
   have been allocated with malloc.
 
-.. envvar:: DUMPFILE_FORMATDUMPFILE_FORMAT
+.. envvar:: DUMPFILE_FORMAT
 
   Define this macro to be a C string representing the format to use for
   constructing the index part of debugging dump file names.  The resultant
@@ -92,7 +89,7 @@ UPDATE_PATH_HOST_CANONICALIZE ( :samp:`{path}` )
   If you do not define this macro, GCC will use :samp:`.%02d.`.  You should
   define this macro if using the default will create an invalid file name.
 
-.. envvar:: DELETE_IF_ORDINARYDELETE_IF_ORDINARY
+.. envvar:: DELETE_IF_ORDINARY
 
   Define this macro to be a C statement (sans semicolon) that performs
   host-dependent removal of ordinary temp files in the compilation driver.
@@ -102,7 +99,7 @@ UPDATE_PATH_HOST_CANONICALIZE ( :samp:`{path}` )
   the temp file as, for example, on VMS which allows multiple versions
   of a file.
 
-.. envvar:: HOST_LACKS_INODE_NUMBERSHOST_LACKS_INODE_NUMBERS
+.. envvar:: HOST_LACKS_INODE_NUMBERS
 
   Define this macro if the host filesystem does not report meaningful inode
   numbers in struct stat.

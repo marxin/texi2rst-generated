@@ -57,7 +57,7 @@ compilers.  They are documented in the GCC manual.
 
 GCC plugins may provide their own pragmas.
 
-:samp:`{#pragma GCC dependency}#pragma GCC dependency`
+``#pragma GCC dependency``
   ``#pragma GCC dependency`` allows you to check the relative dates of
   the current file and another file.  If the other file is more recent than
   the current file, a warning is issued.  This is useful if the current
@@ -71,7 +71,7 @@ GCC plugins may provide their own pragmas.
     #pragma GCC dependency "parse.y"
     #pragma GCC dependency "/usr/include/time.h" rerun fixincludes
 
-:samp:`{#pragma GCC poison}#pragma GCC poison`
+``#pragma GCC poison``
   Sometimes, there is an identifier that you want to remove completely
   from your program, and make sure that it never creeps back in.  To
   enforce this, you can :dfn:`poison` the identifier with this pragma.
@@ -101,12 +101,12 @@ GCC plugins may provide their own pragmas.
 
   will not produce an error.
 
-:samp:`{#pragma GCC system_header}#pragma GCC system_header`
+``#pragma GCC system_header``
   This pragma takes no arguments.  It causes the rest of the code in the
   current file to be treated as if it came from a system header.
   See :ref:`system-headers`.
 
-:samp:`{#pragma GCC warning}#pragma GCC warning` :samp:`{#pragma GCC error}#pragma GCC error`
+``#pragma GCC warning`` :samp:`{#pragma GCC error}#pragma GCC error`
   ``#pragma GCC warning "message"`` causes the preprocessor to issue
   a warning diagnostic with the text :samp:`message`.  The message
   contained in the pragma must be a single string literal.  Similarly,
@@ -114,7 +114,7 @@ GCC plugins may provide their own pragmas.
   the :samp:`#warning` and :samp:`#error` directives, these pragmas can be
   embedded in preprocessor macros using :samp:`_Pragma`.
 
-:samp:`{#pragma once}#pragma once`
+``#pragma once``
   If ``#pragma once`` is seen when scanning a header file, that
   file will never be read again, no matter what.  It is a less-portable
   alternative to using :samp:`#ifndef` to guard the contents of header files

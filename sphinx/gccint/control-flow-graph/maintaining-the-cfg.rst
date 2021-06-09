@@ -50,39 +50,39 @@ instruction stream.  Block statement iterators are constructed using
 the ``gimple_stmt_iterator`` data structure and several modifiers are
 available, including the following:
 
-:samp:`{gsi_start}gsi_start`
+``gsi_start``
   This function initializes a ``gimple_stmt_iterator`` that points to
   the first non-empty statement in a basic block.
 
-:samp:`{gsi_last}gsi_last`
+``gsi_last``
   This function initializes a ``gimple_stmt_iterator`` that points to
   the last statement in a basic block.
 
-:samp:`{gsi_end_p}gsi_end_p`
+``gsi_end_p``
   This predicate is ``true`` if a ``gimple_stmt_iterator``
   represents the end of a basic block.
 
-:samp:`{gsi_next}gsi_next`
+``gsi_next``
   This function takes a ``gimple_stmt_iterator`` and makes it point to
   its successor.
 
-:samp:`{gsi_prev}gsi_prev`
+``gsi_prev``
   This function takes a ``gimple_stmt_iterator`` and makes it point to
   its predecessor.
 
-:samp:`{gsi_insert_after}gsi_insert_after`
+``gsi_insert_after``
   This function inserts a statement after the ``gimple_stmt_iterator``
   passed in.  The final parameter determines whether the statement
   iterator is updated to point to the newly inserted statement, or left
   pointing to the original statement.
 
-:samp:`{gsi_insert_before}gsi_insert_before`
+``gsi_insert_before``
   This function inserts a statement before the ``gimple_stmt_iterator``
   passed in.  The final parameter determines whether the statement
   iterator is updated to point to the newly inserted statement, or left
   pointing to the original  statement.
 
-:samp:`{gsi_remove}gsi_remove`
+``gsi_remove``
   This function removes the ``gimple_stmt_iterator`` passed in and
   rechains the remaining statements in a basic block, if any.
 

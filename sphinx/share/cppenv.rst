@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. envvar:: CPATHCPATH
+.. envvar:: CPATH
 
   .. Commented out until ObjC++ is part of GCC:
      @itemx OBJCPLUS_INCLUDE_PATH
@@ -34,7 +34,7 @@
 
     See also Search Path.
 
-.. envvar:: DEPENDENCIES_OUTPUTDEPENDENCIES_OUTPUT
+.. envvar:: DEPENDENCIES_OUTPUT
 
   .. index:: dependencies for make as output
 
@@ -62,7 +62,7 @@
 
   with an optional :option:`-MT` switch too.
 
-.. envvar:: SUNPRO_DEPENDENCIESSUNPRO_DEPENDENCIES
+.. envvar:: SUNPRO_DEPENDENCIES
 
   .. index:: dependencies for make as output
 
@@ -79,7 +79,7 @@
 
     See :ref:`preprocessor-options`.
 
-.. envvar:: SOURCE_DATE_EPOCHSOURCE_DATE_EPOCH
+.. envvar:: SOURCE_DATE_EPOCH
 
   If this variable is set, its value specifies a UNIX timestamp to be
   used in replacement of the current date and time in the ``__DATE__``
