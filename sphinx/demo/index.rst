@@ -8,6 +8,10 @@ I'm a demo documentation page.
 
 .. option:: -Wno-shift-overflow, -Wshift-overflow=n, -Wshift-overflow
 
+  .. note::
+
+    Default value is :option:`-Wno-shift-overflow`, :option:`-Wshift-overflow` is enabled by :option:`-Wall`.
+
   These options control warnings about left shift overflows.
 
   ``-Wshift-overflow=1``
@@ -28,5 +32,9 @@ I'm a demo documentation page.
 
   ``-Wshift-overflow3=1``
     This is the warning level of :option:`-Wshift-overflow3` and ...
+
+.. option:: -Wall
+
+Enable it all :)
 
 :ref:`genindex`
