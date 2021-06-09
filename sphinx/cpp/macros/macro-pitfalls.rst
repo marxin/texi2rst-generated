@@ -31,7 +31,7 @@ the input file, for more macro calls.  It is possible to piece together
 a macro call coming partially from the macro body and partially from the
 arguments.  For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define twice(x) (2*(x))
   #define call_with_1(x) x(1)
@@ -44,7 +44,7 @@ an unbalanced open parenthesis in a macro body, it is possible to create
 a macro call that begins inside the macro body but ends outside of it.
 For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define strange(file) fprintf (file, "%s %d",
   ...
@@ -78,7 +78,7 @@ whose purpose is to divide, rounding up.  (One use for this operation is
 to compute how many ``int`` objects are needed to hold a certain
 number of ``char`` objects.)  Then suppose it is used as follows:
 
-.. code-block:: c++
+.. code-block::
 
   a = ceil_div (b & c, sizeof (int));
        → a = (b & c + sizeof (int) - 1) / sizeof (int);
@@ -322,7 +322,7 @@ either.  Thus, if we have
 
 then ``x`` and ``y`` expand as follows:
 
-.. code-block:: c++
+.. code-block::
 
   x    → (4 + y)
        → (4 + (2 * x))
@@ -419,7 +419,7 @@ that the prescan does make a difference in three special cases:
   by the same parentheses that ought to be used to prevent misnesting of
   arithmetic operations:
 
-  .. code-block:: c++
+  .. code-block::
 
     #define foo (a,b)
     or#define bar(x) lose((x))

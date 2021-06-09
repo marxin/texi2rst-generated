@@ -55,7 +55,7 @@ continue the definition onto multiple lines, if necessary, using
 backslash-newline.  When the macro is expanded, however, it will all
 come out on one line.  For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define NUMBERS 1, \
                   2, \
@@ -92,7 +92,7 @@ When the preprocessor expands a macro name, the macro's expansion
 replaces the macro invocation, then the expansion is examined for more
 macros to expand.  For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define TABLESIZE BUFSIZE
   #define BUFSIZE 1024

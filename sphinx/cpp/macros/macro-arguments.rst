@@ -33,7 +33,7 @@ macro body.)
 As an example, here is a macro that computes the minimum of two numeric
 values, as it is defined in many C programs, and some uses.
 
-.. code-block:: c++
+.. code-block::
 
   #define min(X, Y)  ((X) < (Y) ? (X) : (Y))
     x = min(a, b);          →  x = ((a) < (b) ? (a) : (b));
@@ -90,7 +90,7 @@ You cannot leave out arguments entirely; if a macro takes two arguments,
 there must be exactly one comma at the top level of its argument list.
 Here are some silly examples using ``min`` :
 
-.. code-block:: c++
+.. code-block::
 
   min(, b)        → ((   ) < (b) ? (   ) : (b))
   min(a, )        → ((a  ) < ( ) ? (a  ) : ( ))
@@ -110,7 +110,7 @@ empty argument was required.
 Macro parameters appearing inside string literals are not replaced by
 their corresponding actual arguments.
 
-.. code-block:: c++
+.. code-block::
 
   #define foo(x) x, "x"
   foo(bar)        → bar, "x"

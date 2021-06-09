@@ -31,7 +31,7 @@ Once the input file is broken into tokens, the token boundaries never
 change, except when the :samp:`##` preprocessing operator is used to paste
 tokens together.  See :ref:`concatenation`.  For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define foo() bar
   foo()baz
@@ -146,7 +146,7 @@ punctuation in obsolete systems.  It has no negative side effects,
 unlike trigraphs, but does not cover as much ground.  The digraphs and
 their corresponding normal punctuators are:
 
-.. code-block:: c++
+.. code-block::
 
   Digraph:        <%  %>  <:  :>  %:  %:%:
   Punctuator:      {   }   [   ]   #    ##

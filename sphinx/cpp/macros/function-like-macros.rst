@@ -15,7 +15,7 @@ are called :dfn:`function-like macros`.  To define a function-like macro,
 you use the same :samp:`#define` directive, but you put a pair of
 parentheses immediately after the macro name.  For example,
 
-.. code-block:: c++
+.. code-block::
 
   #define lang_init()  c_init()
   lang_init()
@@ -26,7 +26,7 @@ of parentheses after it.  If you write just the name, it is left alone.
 This can be useful when you have a function and a macro of the same
 name, and you wish to use the function sometimes.
 
-.. code-block:: c++
+.. code-block::
 
   extern void foo(void);
   #define foo() /* optimized inline version */
@@ -43,7 +43,7 @@ macro definition, that does not define a function-like macro, it defines
 an object-like macro whose expansion happens to begin with a pair of
 parentheses.
 
-.. code-block:: c++
+.. code-block::
 
   #define lang_init ()    c_init()
   lang_init()

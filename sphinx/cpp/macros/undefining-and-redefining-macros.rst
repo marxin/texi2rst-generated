@@ -21,7 +21,7 @@ macro is function-like.  It is an error if anything appears on the line
 after the macro name.  :samp:`#undef` has no effect if the name is not a
 macro.
 
-.. code-block:: c++
+.. code-block::
 
   #define FOO 4
   x = FOO;        → x = 4;

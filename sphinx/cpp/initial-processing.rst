@@ -68,7 +68,7 @@ standard.
 
   The nine trigraphs and their replacements are
 
-  .. code-block:: c++
+  .. code-block::
 
     Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
     Replacement:      [    ]    {    }    #    \    ^    |    ~
@@ -134,7 +134,7 @@ It is safe to put line comments inside block comments, or vice versa.
 But beware of commenting out one end of a block comment with a line
 comment.
 
-.. code-block:: c++
+.. code-block::
 
    // l.c.  /* block comment begins
       oops! this isn't a comment anymore */
@@ -154,7 +154,7 @@ next line with backslash-newline.  You can even split :samp:`/*`,
 :samp:`*/`, and :samp:`//` onto multiple lines with backslash-newline.
 For example:
 
-.. code-block:: c++
+.. code-block::
 
   /\
   *

@@ -29,7 +29,7 @@ long string.
 
 Here is an example of a macro definition that uses stringizing:
 
-.. code-block:: c++
+.. code-block::
 
   #define WARN_IF(EXP) \
   do { if (EXP) \
@@ -69,7 +69,7 @@ There is no way to convert a macro argument into a character constant.
 If you want to stringize the result of expansion of a macro argument,
 you have to use two levels of macros.
 
-.. code-block:: c++
+.. code-block::
 
   #define xstr(s) str(s)
   #define str(s) #s

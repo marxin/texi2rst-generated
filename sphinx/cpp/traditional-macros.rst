@@ -43,7 +43,7 @@ and so on *ad infinitum*.  GCC detects when it is expanding
 recursive macros, emits an error message, and continues after the
 offending macro invocation.
 
-.. code-block:: c++
+.. code-block::
 
   #define PLUS +
   #define INC(x) PLUS+x
@@ -82,7 +82,7 @@ with their arguments regardless of whether the parameters are within
 quotes or not.  This provides a way to stringize arguments.  For
 example
 
-.. code-block:: c++
+.. code-block::
 
   #define str(x) "x"
   str(/* A comment */some text )
@@ -92,7 +92,7 @@ Note that the comment is removed, but that the trailing space is
 preserved.  Here is an example of using a comment to effect token
 pasting.
 
-.. code-block:: c++
+.. code-block::
 
   #define suffix(x) foo_/**/x
   suffix(bar)

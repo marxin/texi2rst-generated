@@ -29,7 +29,7 @@ argument`.  This sequence of tokens replaces the identifier
 ``__VA_ARGS__`` in the macro body wherever it appears.  Thus, we
 have this expansion:
 
-.. code-block:: c++
+.. code-block::
 
   eprintf ("%s:%d: ", input_file, lineno)
        →  fprintf (stderr, "%s:%d: ", input_file, lineno)
@@ -71,7 +71,7 @@ Furthermore, if you left the variable argument empty, you would have
 gotten a syntax error, because there would have been an extra comma
 after the format string.
 
-.. code-block:: c++
+.. code-block::
 
   eprintf("success!\n", );
        → fprintf(stderr, "success!\n", );
@@ -82,7 +82,7 @@ extensions which deal with this problem.
 First, in GNU CPP, and in C++ beginning in C++2a, you are allowed to
 leave the variable argument out entirely:
 
-.. code-block:: c++
+.. code-block::
 
   eprintf ("success!\n")
        → fprintf(stderr, "success!\n", );
@@ -115,7 +115,7 @@ used, then the comma before the :samp:`##` will be deleted.  This does
 *not* happen if you pass an empty argument, nor does it happen if
 the token preceding :samp:`##` is anything other than a comma.
 
-.. code-block:: c++
+.. code-block::
 
   eprintf ("success!\n")
        → fprintf(stderr, "success!\n");
