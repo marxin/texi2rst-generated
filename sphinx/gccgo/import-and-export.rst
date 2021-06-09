@@ -18,7 +18,14 @@ When Go code imports the package :samp:`{gopackage}`, :command:`gccgo`
 will look for the import data using the following filenames, using the
 first one that it finds.
 
-:samp:`{gopackage}.gox`:samp:`lib{gopackage}.so`:samp:`lib{gopackage}.a`:samp:`{gopackage}.o`The compiler will search for these files in the directories named by
+.. code-block::
+
+  gopackage.gox
+  libgopackage.so
+  libgopackage.a
+  gopackage.o
+
+The compiler will search for these files in the directories named by
 any :option:`-I` options, in order in which the directories appear on
 the command line.  The compiler will then search several standard
 system directories.  Finally the compiler will search the current
