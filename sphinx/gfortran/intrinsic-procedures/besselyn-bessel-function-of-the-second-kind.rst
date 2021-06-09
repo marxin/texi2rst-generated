@@ -69,9 +69,9 @@ BESSEL_YN --- Bessel function of the second kind
       end program test_besyn
 
   :samp:`{Specific names}:`
-
     ===============  =============  ===========  =============
     Name             Argument       Return type  Standard
+    ===============  =============  ===========  =============
     ``DBESYN(N,X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
                      ``REAL(8) X``
     ===============  =============  ===========  =============

@@ -58,9 +58,9 @@ ATAND --- Arctangent function, degrees
       end program test_atand
 
   :samp:`{Specific names}:`
-
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
+    =============  =============  ===========  =============
     ``ATAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
     ``DATAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     =============  =============  ===========  =============

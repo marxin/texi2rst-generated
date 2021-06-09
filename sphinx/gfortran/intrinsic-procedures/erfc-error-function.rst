@@ -45,9 +45,9 @@ ERFC --- Error function
       end program test_erfc
 
   :samp:`{Specific names}:`
-
     ============  =============  ===========  =============
     Name          Argument       Return type  Standard
+    ============  =============  ===========  =============
     ``DERFC(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     ============  =============  ===========  =============
 

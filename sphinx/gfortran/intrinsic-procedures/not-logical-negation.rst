@@ -48,9 +48,9 @@ NOT --- Logical negation
     RESULT = NOT(I)
 
   :samp:`{Specific names}:`
-
     ===========  ================  ==============  ====================
     Name         Argument          Return type     Standard
+    ===========  ================  ==============  ====================
     ``NOT(A)``   ``INTEGER A``     ``INTEGER``     Fortran 95 and later
     ``BNOT(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
     ``INOT(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension

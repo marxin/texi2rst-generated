@@ -69,9 +69,9 @@ REAL --- Convert to real type
       end program test_real
 
   :samp:`{Specific names}:`
-
     =============  ==============  ===========  =============
     Name           Argument        Return type  Standard
+    =============  ==============  ===========  =============
     ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension
     ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
     ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension

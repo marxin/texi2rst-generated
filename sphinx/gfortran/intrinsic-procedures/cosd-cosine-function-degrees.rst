@@ -57,9 +57,9 @@ COSD --- Cosine function, degrees
       end program test_cosd
 
   :samp:`{Specific names}:`
-
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
+    =============  ================  ==============  =============
     ``COSD(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
     ``DCOSD(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
     ``CCOSD(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension

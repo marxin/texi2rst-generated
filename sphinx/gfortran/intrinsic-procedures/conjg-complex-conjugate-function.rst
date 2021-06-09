@@ -51,9 +51,9 @@ CONJG --- Complex conjugate function
       end program test_conjg
 
   :samp:`{Specific names}:`
-
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
+    =============  ================  ==============  =============
     ``DCONJG(Z)``  ``COMPLEX(8) Z``  ``COMPLEX(8)``  GNU extension
     =============  ================  ==============  =============
 

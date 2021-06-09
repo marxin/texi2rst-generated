@@ -49,9 +49,9 @@ COTAN --- Cotangent function
       end program test_cotan
 
   :samp:`{Specific names}:`
-
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
+    =============  =============  ===========  =============
     ``COTAN(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
     ``DCOTAN(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     =============  =============  ===========  =============
