@@ -22,14 +22,7 @@ Contents:
   using
   overview
   function-variable-and-macro-listing
+  lesser-general-public-license-2.1
+  bsd
 
   indices-and-tables
-
-.. _licenses:
-
-Licenses
---------
-
-.. include:: lesser-general-public-license-2.1.rst
-
-.. include:: bsd.rst
