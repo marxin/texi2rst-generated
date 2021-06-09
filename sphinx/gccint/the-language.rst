@@ -14,7 +14,7 @@ The language to write expression simplifications in resembles other
 domain-specific languages GCC uses.  Thus it is lispy.  Lets start
 with an example from the match.pd file:
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (bit_and @0 integer_all_onesp)
@@ -35,7 +35,7 @@ you refer to it in other places of the match-and-simplify.  In the
 above example it is refered to in the replacement expression.  Captures
 are ``@`` followed by a number or an identifier.
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (bit_xor @0 @0)
@@ -51,7 +51,7 @@ operands written in C code.  These can be used in the expression
 replacements and are supposed to evaluate to a tree node which has to
 be a valid GIMPLE operand (so you cannot generate expressions in C code).
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (trunc_mod integer_zerop@0 @1)
@@ -76,7 +76,7 @@ A ``if`` expression can be used to specify a common condition
 for multiple simplify patterns, avoiding the need
 to repeat that multiple times:
 
-.. code-block:: c++
+.. code-block::
 
   (if (!TYPE_SATURATING (type)
        && !FLOAT_TYPE_P (type) && !FIXED_POINT_TYPE_P (type))
@@ -95,7 +95,7 @@ Ifs can be nested.
 There exists a ``switch`` expression which can be used to
 chain conditions avoiding nesting ``if`` s too much:
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
    (simple_comparison @0 REAL_CST@1)
@@ -110,7 +110,7 @@ chain conditions avoiding nesting ``if`` s too much:
 
 Is equal to
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
    (simple_comparison @0 REAL_CST@1)
@@ -131,7 +131,7 @@ no other condition evaluated to true.
 
 Captures can also be used for capturing results of sub-expressions.
 
-.. code-block:: c++
+.. code-block::
 
   #if GIMPLE
   (simplify
@@ -158,7 +158,7 @@ to ``GIMPLE`` or ``GENERIC`` by means of using the pre-defined
 preprocessor macros ``GIMPLE`` and ``GENERIC`` and using
 preprocessor directives.
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (bit_and:c integral_op_p@0 (bit_ior:c (bit_not @0) @1))
@@ -169,7 +169,7 @@ above, ``c``, denotes that the expression should
 be also matched commutated.  Thus the above match expression
 is really the following four match expressions:
 
-.. code-block:: c++
+.. code-block::
 
     (bit_and integral_op_p@0 (bit_ior (bit_not @0) @1))
     (bit_and (bit_ior (bit_not @0) @1) integral_op_p@0)
@@ -186,7 +186,7 @@ generator to fail the pattern if the expression marked with
 results in an expression with more than one operator.
 For example in
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (pointer_plus (pointer_plus:s @0 @1) @3)
@@ -206,7 +206,7 @@ not performed in this case though.
 
 More features exist to avoid too much repetition.
 
-.. code-block:: c++
+.. code-block::
 
   (for op (plus pointer_plus minus bit_ior bit_xor)
     (simplify
@@ -217,7 +217,7 @@ A ``for`` expression can be used to repeat a pattern for each
 operator specified, substituting ``op``.  ``for`` can be
 nested and a ``for`` can have multiple operators to iterate.
 
-.. code-block:: c++
+.. code-block::
 
   (for opa (plus minus)
        opb (minus plus)
@@ -251,7 +251,7 @@ a ``for``.  All operator list uses that appear in a ``simplify``
 or ``match`` pattern in operator positions will implicitely
 be added to a new ``for``.  For example
 
-.. code-block:: c++
+.. code-block::
 
   (define_operator_list SQRT BUILT_IN_SQRTF BUILT_IN_SQRT BUILT_IN_SQRTL)
   (define_operator_list POW BUILT_IN_POWF BUILT_IN_POW BUILT_IN_POWL)
@@ -261,7 +261,7 @@ be added to a new ``for``.  For example
 
 is the same as
 
-.. code-block:: c++
+.. code-block::
 
   (for SQRT (BUILT_IN_SQRTF BUILT_IN_SQRT BUILT_IN_SQRTL)
        POW (BUILT_IN_POWF BUILT_IN_POW BUILT_IN_POWL)
@@ -278,7 +278,7 @@ Another building block are ``with`` expressions in the
 result expression which nest the generated code in a new C block
 followed by its argument:
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
    (convert (mult @0 @1))
@@ -298,7 +298,7 @@ tells the machinery to only consider the simplification in case
 the marked expression simplified to a simple operand.  Consider
 for example
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
     (plus (vec_cond:s @0 @1 @2) @3)
@@ -314,7 +314,7 @@ avoid the need to repeat patterns both with and without such
 conversions.  Namely you can mark a conversion as being optional
 with a ``?`` :
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
    (eq (convert@0 @1) (convert? @2))
@@ -334,7 +334,7 @@ including predicates you declare yourself with ``match``.
 Predicates available from the GCC middle-end need to be made
 available explicitely via ``define_predicates`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_predicates
    integer_onep integer_zerop integer_all_onesp)
@@ -342,7 +342,7 @@ available explicitely via ``define_predicates`` :
 You can also define predicates using the pattern matching language
 and the ``match`` form:
 
-.. code-block:: c++
+.. code-block::
 
   (match negate_expr_p
    INTEGER_CST
@@ -363,7 +363,7 @@ Predicates can also match an expression in which case you need
 to provide a template specifying the identifier and where to
 get its operands from:
 
-.. code-block:: c++
+.. code-block::
 
   (match (logical_inverted_value @0)
    (eq @0 integer_zerop))
@@ -372,7 +372,7 @@ get its operands from:
 
 You can use the above predicate like
 
-.. code-block:: c++
+.. code-block::
 
   (simplify
    (bit_and @0 (logical_inverted_value @0))

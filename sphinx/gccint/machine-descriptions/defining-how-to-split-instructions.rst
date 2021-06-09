@@ -308,7 +308,7 @@ Here is an example from the AArch64 SVE port, in which operand 1 is
 known to be equivalent to an all-true constant and isn't used by the
 output template:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn_and_rewrite "*while_ult<GPI:mode><PRED_ALL:mode>_cc"
     [(set (reg:CC CC_REGNUM)
@@ -338,7 +338,7 @@ The splitter in this case simply replaces operand 1 with the constant
 value that it is known to have.  The equivalent ``define_insn_and_split``
 would be:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn_and_split "*while_ult<GPI:mode><PRED_ALL:mode>_cc"
     [(set (reg:CC CC_REGNUM)

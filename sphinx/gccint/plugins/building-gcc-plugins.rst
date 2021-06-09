@@ -34,7 +34,7 @@ integer numbers, so a plugin could ensure it is built for GCC 4.7 with
 
 The following GNU Makefile excerpt shows how to build a simple plugin:
 
-.. code-block:: c++
+.. code-block::
 
   HOST_GCC=g++
   TARGET_GCC=gcc
@@ -87,7 +87,7 @@ cc1plus.exe.a, etc. The following command line shows how to
 build the single source file plugin on Windows to be used with the C++
 compiler:
 
-.. code-block:: c++
+.. code-block::
 
   g++ -I`gcc -print-file-name=plugin`/include -shared -Wl,--export-all-symbols \
   -o plugin.dll plugin.c `gcc -print-file-name=plugin`/cc1plus.exe.a

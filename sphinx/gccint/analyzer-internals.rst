@@ -120,7 +120,7 @@ There's a tension between:
 
 For example, in general, given this CFG:
 
-.. code-block:: c++
+.. code-block::
 
         A
        / \
@@ -136,7 +136,7 @@ we want to avoid differences in state-tracking in B and C from
 leading to blow-up.  If we don't prevent state blowup, we end up
 with exponential growth of the exploded graph like this:
 
-.. code-block:: c++
+.. code-block::
 
              1:A
             /   \
@@ -181,7 +181,7 @@ a* state pruning: which tries to discard state that won't be relevant
   as these are the kinds of differences that are likely to be most
   interesting.  So, for example, given:
 
-  .. code-block:: c++
+  .. code-block::
 
           if (condition)
             ptr = malloc (size);
@@ -197,7 +197,7 @@ a* state pruning: which tries to discard state that won't be relevant
 
   then we end up with an exploded graph that looks like this:
 
-  .. code-block:: c++
+  .. code-block::
 
                        if (condition)
                          / T      \ F
@@ -246,7 +246,7 @@ Here's an example of printing a ``program_state``, showing the
 ``region_model`` within it, along with state for the ``malloc``
 state machine.
 
-.. code-block:: c++
+.. code-block::
 
   (gdb) call debug (*this)
   rmodel:
@@ -361,7 +361,7 @@ vfuncs to support emitting more precise descriptions, so that e.g.
 
 * a deref-of-unchecked-malloc diagnostic might use:
 
-  .. code-block:: c++
+  .. code-block::
 
       returning possibly-NULL pointer to 'make_obj' from 'allocator'
 
@@ -370,13 +370,13 @@ vfuncs to support emitting more precise descriptions, so that e.g.
 
 * a double-free diagnostic might use:
 
-  .. code-block:: c++
+  .. code-block::
 
       second 'free' here; first 'free' was at (3)
 
   and a use-after-free might use
 
-  .. code-block:: c++
+  .. code-block::
 
       use after 'free' here; memory was freed at (2)
 

@@ -97,7 +97,7 @@ Precision of Wording
 Provide the user with details that allow them to identify what the
 problem is.  For example, the vaguely-worded message:
 
-.. code-block:: c++
+.. code-block::
 
   demo.c:1:1: warning: 'noinline' attribute ignored [-Wattributes]
       1 | int foo __attribute__((noinline));
@@ -109,7 +109,7 @@ source location for the diagnostic is also poor;
 see :ref:`input_location_example`).
 A better message would be:
 
-.. code-block:: c++
+.. code-block::
 
   demo.c:1:24: warning: attribute 'noinline' on variable 'foo' was
      ignored [-Wattributes]
@@ -169,7 +169,7 @@ example:
 
 which leads to:
 
-.. code-block:: c++
+.. code-block::
 
   demo.c: In function 'test':
   demo.c:5:17: warning: duplicated 'if' condition [-Wduplicated-cond]
@@ -293,7 +293,7 @@ diagnostic using ``warning`` :
 
 leads to:
 
-.. code-block:: c++
+.. code-block::
 
   // BAD: uses input_location
   demo.c:1:1: warning: 'noinline' attribute ignored [-Wattributes]
@@ -316,7 +316,7 @@ as a secondary location, and adding a note:
 
 would lead to:
 
-.. code-block:: c++
+.. code-block::
 
   // OK: use location of attribute, with a secondary location
   demo.c:1:24: warning: attribute 'noinline' on variable 'foo' was
@@ -345,7 +345,7 @@ For example, rather than using :samp:`%qT`:
 
 which could lead to:
 
-.. code-block:: c++
+.. code-block::
 
   error: could not convert 'map<int, double>()' from 'map<int,double>'
      to 'map<int,int>'
@@ -360,7 +360,7 @@ using :samp:`%H` and :samp:`%I` (via :samp:`%qH` and :samp:`%qI`):
 
 allows the above output to be simplified to:
 
-.. code-block:: c++
+.. code-block::
 
   error: could not convert 'map<int, double>()' from 'map<[...],double>'
      to 'map<[...],int>'
@@ -458,7 +458,7 @@ For example:
 
 which can lead to:
 
-.. code-block:: c++
+.. code-block::
 
   spellcheck-typenames.C:73:1: error: 'singed' does not name a type; did
      you mean 'signed'?

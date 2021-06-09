@@ -88,7 +88,7 @@ For example, suppose there are two opcodes for storing zero, :samp:`clrreg`
 for registers and :samp:`clrmem` for memory locations.  Here is how
 a pattern could use ``which_alternative`` to choose between them:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn ""
     [(set (match_operand:SI 0 "general_operand" "=r,m")
@@ -103,7 +103,7 @@ The example above, where the assembler code to generate was
 *solely* determined by the alternative, could also have been specified
 as follows, having the output control string start with a :samp:`@`:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn ""
     [(set (match_operand:SI 0 "general_operand" "=r,m")
@@ -116,7 +116,7 @@ as follows, having the output control string start with a :samp:`@`:
 If you just need a little bit of C code in one (or a few) alternatives,
 you can use :samp:`*` inside of a :samp:`@` multi-alternative template:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn ""
     [(set (match_operand:SI 0 "general_operand" "=r,<,m")

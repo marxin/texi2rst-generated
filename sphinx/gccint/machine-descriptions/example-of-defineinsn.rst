@@ -13,7 +13,7 @@ Example of define_insn
 Here is an example of an instruction pattern, taken from the machine
 description for the 68000/68020.
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "tstsi"
     [(set (cc0)

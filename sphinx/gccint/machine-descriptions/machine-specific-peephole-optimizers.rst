@@ -157,7 +157,7 @@ Here is an example, taken from the 68000 machine description:
 
 The effect of this optimization is to change
 
-.. code-block:: c++
+.. code-block::
 
   jbsr _foobar
   addql #4,sp
@@ -167,7 +167,7 @@ The effect of this optimization is to change
 
 into
 
-.. code-block:: c++
+.. code-block::
 
   jbsr _foobar
   movel d1,sp@
