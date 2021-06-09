@@ -328,7 +328,7 @@ it.
 
   gives output similar to this:
 
-  .. code-block:: c++
+  .. code-block::
 
     	.file	"test.c"
     # GNU C11 (GCC) version 7.0.0 20160809 (experimental) (x86_64-pc-linux-gnu)

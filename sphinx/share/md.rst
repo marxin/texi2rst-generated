@@ -216,7 +216,7 @@ X
   machines an add instruction really has only two operands, one of them an
   input-output operand:
 
-  .. code-block:: c++
+  .. code-block::
 
     addl #35,r12
 

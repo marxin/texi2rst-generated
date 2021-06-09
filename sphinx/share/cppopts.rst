@@ -465,7 +465,7 @@
 
     The nine trigraphs and their replacements are
 
-    .. code-block:: c++
+    .. code-block::
 
       Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
       Replacement:      [    ]    {    }    #    \    ^    |    ~

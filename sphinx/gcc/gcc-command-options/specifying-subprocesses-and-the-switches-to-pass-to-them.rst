@@ -88,7 +88,7 @@
       similar to using the :option:`-x` command-line switch to GCC to specify a
       language explicitly.  For example:
 
-      .. code-block:: c++
+      .. code-block::
 
         .ZZ:
         @c++
@@ -595,7 +595,7 @@
     allows the ``%*`` substitution to be used as part of a larger
     string.  For example, a spec string like this:
 
-    .. code-block:: c++
+    .. code-block::
 
       %{mcu=*:--script=%*/memory.ld}
 

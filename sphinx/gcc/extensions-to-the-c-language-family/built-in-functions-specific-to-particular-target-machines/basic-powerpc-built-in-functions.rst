@@ -364,13 +364,13 @@ when hardware decimal floating point
   _Decimal128 __builtin_pack_dec128 (unsigned long long, unsigned long long);
   unsigned long long __builtin_unpack_dec128 (_Decimal128, int);
 
-  The __builtin_set_fpscr_drn builtin allows changing the three decimal
-  floating point rounding mode bits.  The argument is a 3-bit value.  The
-  argument can either be a const int or the value can be stored in
-  a variable.
-  The builtin uses the ISA 3.0 instruction mffscdrn if available.
-  Otherwise the builtin reads the FPSCR, masks the current decimal rounding
-  mode bits out and OR's in the new value.
+The __builtin_set_fpscr_drn builtin allows changing the three decimal
+floating point rounding mode bits.  The argument is a 3-bit value.  The
+argument can either be a const int or the value can be stored in
+a variable.
+The builtin uses the ISA 3.0 instruction mffscdrn if available.
+Otherwise the builtin reads the FPSCR, masks the current decimal rounding
+mode bits out and OR's in the new value.
 
 The following functions require :option:`-mhard-float`,
 :option:`-mpowerpc-gfxopt`, and :option:`-mpopcntb` options.

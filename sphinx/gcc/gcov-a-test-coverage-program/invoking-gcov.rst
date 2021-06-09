@@ -8,7 +8,7 @@
 Invoking gcov
 *************
 
-.. code-block:: c++
+.. code-block::
 
   gcov [options] files
 
@@ -298,7 +298,7 @@ invoke it with the same list of files as the final link of your executable.
 The .gcov files contain the :samp:`:` separated fields along with
 program source code.  The format is
 
-.. code-block:: c++
+.. code-block::
 
   execution_count:line_number:source line text
 
@@ -331,7 +331,7 @@ unchanged.  Use :samp:`{tag}` to locate a particular preamble line.
 
 The additional block information is of the form
 
-.. code-block:: c++
+.. code-block::
 
   tag information
 
@@ -360,7 +360,7 @@ will now produce a listing of the code along with frequency of execution
 for each line.  For example, if your program is called tmp.cpp, this
 is what you see when you use the basic :command:`gcov` facility:
 
-.. code-block:: c++
+.. code-block:: bash
 
   $ g++ --coverage tmp.cpp -c
   $ g++ --coverage tmp.o
@@ -373,7 +373,7 @@ is what you see when you use the basic :command:`gcov` facility:
 The file tmp.cpp.gcov contains output from :command:`gcov`.
 Here is a sample:
 
-.. code-block:: c++
+.. code-block::
 
           -:    0:Source:tmp.cpp
           -:    0:Working directory:/home/gcc/testcase
@@ -441,7 +441,7 @@ some unexecuted basic blocks and thus execution count has asterisk symbol.
 When you use the :option:`-a` option, you will get individual block
 counts, and the output looks like this:
 
-.. code-block:: c++
+.. code-block::
 
           -:    0:Source:tmp.cpp
           -:    0:Working directory:/home/gcc/testcase
@@ -529,7 +529,7 @@ As you can see, line 33 contains a basic block that was not executed.
 
 When you use the :option:`-b` option, your output looks like this:
 
-.. code-block:: c++
+.. code-block::
 
           -:    0:Source:tmp.cpp
           -:    0:Working directory:/home/gcc/testcase

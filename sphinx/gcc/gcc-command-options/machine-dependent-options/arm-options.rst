@@ -825,7 +825,7 @@ These :samp:`-m` options are defined for the ARM port:
   Write the name of each function into the text section, directly
   preceding the function prologue.  The generated code is similar to this:
 
-  .. code-block:: c++
+  .. code-block::
 
          t0
              .ascii "arm_poke_function_name", 0

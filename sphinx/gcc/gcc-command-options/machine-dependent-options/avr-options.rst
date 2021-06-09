@@ -346,7 +346,7 @@ the compiler and are subject to some limitations:
   of startup code from AVR-LibC that sets ``EIND`` to the segment
   where the vector table is located.
 
-  .. code-block:: c++
+  .. code-block::
 
     #include <avr/io.h>
 

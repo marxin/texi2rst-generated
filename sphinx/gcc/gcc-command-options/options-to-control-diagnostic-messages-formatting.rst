@@ -106,7 +106,7 @@ honor these options.
 
   The default :envvar:`GCC_COLORS` is
 
-  .. code-block:: c++
+  .. code-block::
 
     error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:\
     quote=01:path=01;36:fixit-insert=32:fixit-delete=31:\
@@ -284,7 +284,7 @@ honor these options.
   diagnostics can label ranges of source code with pertinent information, such
   as the types of expressions:
 
-  .. code-block:: c++
+  .. code-block::
 
         printf ("foo %s bar", long_i + long_j);
                      ~^       ~~~~~~~~~~~~~~~
@@ -320,7 +320,7 @@ honor these options.
   by IDEs.  For each fix-it, a line will be printed after the relevant
   diagnostic, starting with the string 'fix-it:'.  For example:
 
-  .. code-block:: c++
+  .. code-block::
 
     fix-it:"test.c":{45:3-45:21}:"gtk_widget_show_all"
 
@@ -329,7 +329,7 @@ honor these options.
   bytes 3 through 20 of line 45 of 'test.c' are to be replaced with the
   given string:
 
-  .. code-block:: c++
+  .. code-block::
 
     00000000011111111112222222222
     12345678901234567890123456789
@@ -350,7 +350,7 @@ honor these options.
   Print fix-it hints to stderr in unified diff format, after any diagnostics
   are printed.  For example:
 
-  .. code-block:: bash
+  .. code-block:: diff
 
     --- test.c
     +++ test.c
@@ -370,7 +370,7 @@ honor these options.
   In the C++ frontend, when printing diagnostics showing mismatching
   template types, such as:
 
-  .. code-block:: c++
+  .. code-block::
 
       could not convert 'std::map<int, std::vector<double> >()'
         from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
@@ -379,7 +379,7 @@ honor these options.
   tree-like structure showing the common and differing parts of the types,
   such as:
 
-  .. code-block:: c++
+  .. code-block::
 
       map<
         [...],
@@ -395,7 +395,7 @@ honor these options.
   template types, common parts of the types are printed as '[...]' to
   simplify the error message.  For example:
 
-  .. code-block:: c++
+  .. code-block::
 
       could not convert 'std::map<int, std::vector<double> >()'
         from 'map<[...],vector<double>>' to 'map<[...],vector<float>>
@@ -417,7 +417,7 @@ honor these options.
   :samp:`separate-events` means to print a separate 'note' diagnostic for
   each event within the diagnostic.  For example:
 
-  .. code-block:: c++
+  .. code-block::
 
     test.c:29:5: error: passing NULL as argument 1 to 'PyList_Append' which requires a non-NULL parameter
     test.c:25:10: note: (1) when 'PyList_New' fails, returning NULL
@@ -430,7 +430,7 @@ honor these options.
 
   For example, the same events as above might be printed as:
 
-  .. code-block:: c++
+  .. code-block::
 
       'test': events 1-3
         |
@@ -455,7 +455,7 @@ honor these options.
 
   For example:
 
-  .. code-block:: c++
+  .. code-block::
 
       'test': events 1-2
         |
@@ -557,7 +557,7 @@ honor these options.
 
   Diagnostics can have child diagnostics.  For example, this error and note:
 
-  .. code-block:: c++
+  .. code-block::
 
     misleading-indentation.c:15:3: warning: this 'if' clause does not
       guard... [-Wmisleading-indentation]
@@ -647,7 +647,7 @@ honor these options.
 
   For example, this error:
 
-  .. code-block:: c++
+  .. code-block::
 
     bad-binary-ops.c:64:23: error: invalid operands to binary + (have 'S' {aka
        'struct s'} and 'T' {aka 'struct t'})
@@ -699,7 +699,7 @@ honor these options.
   :option:`-fdiagnostics-parseable-fixits`.  For example, this diagnostic
   with a replacement fix-it hint:
 
-  .. code-block:: c++
+  .. code-block::
 
     demo.c:8:15: error: 'struct s' has no member named 'colour'; did you
       mean 'color'?
@@ -763,7 +763,7 @@ honor these options.
   For example, the intraprocedural example shown for
   :option:`-fdiagnostics-path-format` = might have this JSON for its path:
 
-  .. code-block:: c++
+  .. code-block:: json
 
         "path": [
             {

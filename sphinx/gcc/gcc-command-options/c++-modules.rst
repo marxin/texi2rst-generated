@@ -325,7 +325,7 @@ contents are largely undecipherable.  There is a section named
 than the first line, each line consists of ``tag: value``
 tuples.
 
-.. code-block:: c++
+.. code-block:: bash
 
   > readelf -p.gnu.c++.README gcm.cache/foo.gcm
 

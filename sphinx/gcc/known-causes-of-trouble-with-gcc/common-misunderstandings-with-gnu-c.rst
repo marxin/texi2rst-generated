@@ -172,7 +172,7 @@ Thus a global declaration of such a function must be available, since
 the one in the base class is not visible until instantiation time.  The
 compiler will consequently produce the following error message:
 
-.. code-block:: c++
+.. code-block::
 
     x.cc: In member function `int Derived<T>::g()':
     x.cc:6: error: there are no arguments to `f' that depend on a template
