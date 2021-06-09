@@ -507,7 +507,7 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 'copyright' line and a pointer to where the full notice is found.
 
-.. code-block:: c++
+.. code-block::
 
   one line to give the library's name and an idea of what it does.
   Copyright (C) year  name of author
@@ -533,7 +533,7 @@ You should also get your employer (if you work as a programmer) or your
 school, if any, to sign a 'copyright disclaimer' for the library, if
 necessary.  Here is a sample; alter the names:
 
-.. code-block:: c++
+.. code-block::
 
   Yoyodyne, Inc., hereby disclaims all copyright interest in the library
   `Frob' (a library for tweaking knobs) written by James Random Hacker.

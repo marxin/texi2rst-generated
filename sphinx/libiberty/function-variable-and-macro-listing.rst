@@ -1637,7 +1637,7 @@ sets of characters:
     If the common prefix contains only leading zeroes, the longest part is less
     than the other one; else the comparison behaves normally.
 
-  .. code-block:: c++
+  .. code-block::
 
     strverscmp ("no digit", "no digit")
         ⇒ 0    // same behavior as strcmp.
