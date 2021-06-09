@@ -32,7 +32,7 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
 
   Specify the length of record markers for unformatted files.
   Valid values for :samp:`{length}` are 4 and 8.  Default is 4.
-  *This is different from previous versions of :command:`gfortran`*,
+  This is different from previous versions of :command:`gfortran`,
   which specified a default record marker length of 8 on most
   systems.  If you want to read or write files compatible
   with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`=8`.
