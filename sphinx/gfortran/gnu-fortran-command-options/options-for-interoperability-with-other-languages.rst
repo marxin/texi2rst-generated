@@ -28,7 +28,7 @@ Options for interoperability with other languages
 
   Example of use:
 
-  .. code-block:: fortran
+  .. code-block:: bash
 
     $ gfortran -fc-prototypes -fsyntax-only foo.f90 > foo.h
 
@@ -59,7 +59,7 @@ Options for interoperability with other languages
 
   Example of use:
 
-  .. code-block:: fortran
+  .. code-block:: bash
 
     $ gfortran -fc-prototypes-external -fsyntax-only foo.f > foo.h
 

@@ -118,7 +118,7 @@ namelist name.  Two extensions are permitted:
 
 Old-style use of :samp:`$` instead of :samp:`&`
 
-.. code-block:: fortran
+.. code-block::
 
   $MYNML
    X(:)%Y(2) = 1.0 2.0 3.0
@@ -132,7 +132,7 @@ Querying of the namelist when inputting from stdin.  After at least
 one space, entering :samp:`?` sends to stdout the namelist name and the names of
 the variables in the namelist:
 
-.. code-block:: fortran
+.. code-block::
 
    ?
 
@@ -145,7 +145,7 @@ the variables in the namelist:
 Entering :samp:`=?` outputs the namelist to stdout, as if
 ``WRITE(*,NML = mynml)`` had been called:
 
-.. code-block:: fortran
+.. code-block::
 
   =?
 
@@ -1013,7 +1013,7 @@ Here is a small example:
 
 The two maps share memory, and the size of the union is ultimately six bytes:
 
-.. code-block:: fortran
+.. code-block::
 
   0    1    2    3    4   5   6     Byte offset
   -------------------------------

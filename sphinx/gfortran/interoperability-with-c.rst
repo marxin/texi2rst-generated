@@ -70,7 +70,7 @@ following type declaration
 
 matches the following ``struct`` declaration in C
 
-.. code-block:: fortran
+.. code-block:: c
 
    struct {
      int i1, i2;
@@ -159,7 +159,7 @@ is a ``NUL`` -terminated array of characters while in Fortran each string
 has a length associated with it and is thus not terminated (by e.g.
 ``NUL`` ).  For example, if one wants to use the following C function,
 
-.. code-block:: fortran
+.. code-block:: c
 
     #include <stdio.h>
     void print_C(char *string) /* equivalent: char string[]  */
@@ -192,7 +192,7 @@ is equivalent.  However, the standard does not guarantee this.
 The use of strings is now further illustrated using the C library
 function ``strncpy``, whose prototype is
 
-.. code-block:: fortran
+.. code-block:: c
 
     char *strncpy(char *restrict s1, const char *restrict s2, size_t n);
 
@@ -268,7 +268,7 @@ C to Fortran and vice versa.  Note that these examples are also very
 similar to passing ordinary pointers between both languages. First,
 consider this code in C:
 
-.. code-block:: fortran
+.. code-block:: c
 
   /* Procedure implemented in Fortran.  */
   void get_values (void (*)(double));
@@ -328,7 +328,7 @@ Next, we want to call a C routine that expects a procedure pointer argument
 and pass it a Fortran procedure (which clearly must be interoperable!).
 Again, the C function may be:
 
-.. code-block:: fortran
+.. code-block:: c
 
   int
   call_it (int (*func)(int), int arg)

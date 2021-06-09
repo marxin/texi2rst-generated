@@ -13,7 +13,7 @@ list-directed output.  It may contain any number of spaces and
 at most one comma.  If you specify this on the command line,
 be sure to quote spaces, as in
 
-.. code-block:: fortran
+.. code-block:: bash
 
   $ GFORTRAN_LIST_SEPARATOR='  ,  ' ./a.out
 
