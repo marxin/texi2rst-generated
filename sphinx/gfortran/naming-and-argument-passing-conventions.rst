@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _naming-and-argument-passing-conventions:
+.. _naming-and-argument-passing-conventions:
 
 Naming and argument-passing conventions
 ***************************************

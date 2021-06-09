@@ -52,35 +52,32 @@ _gfortran_set_args --- Save command-line arguments
 
 .. index:: libgfortran initialization, set_args
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_args (int argc, char *argv[]) 
+
   ``_gfortran_set_args`` saves the command-line arguments; this
   initialization is required if any of the command-line intrinsics
   is called.  Additionally, it shall be called if backtracing is
   enabled (see ``_gfortran_set_options`` ).
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_args (int argc, char *argv[])``
+  :param argc:
+    number of command line argument strings
 
-:samp:`{Arguments}:`
+  :param argv:
+    the command-line argument strings; argv[0]
+    is the pathname of the executable itself.
 
-  ==============  ==========================================
-  :samp:`{argc}`  number of command line argument strings
-  :samp:`{argv}`  the command-line argument strings; argv[0]
-                  is the pathname of the executable itself.
-  ==============  ==========================================
-
-:samp:`{Example}:`
+  :samp:`{Example}:`
 
   .. code-block:: c
 
-    int main (int argc, char *argv[])
-    {
-      /* Initialize libgfortran.  */
-      _gfortran_set_args (argc, argv);
-      return 0;
-    }
+      int main (int argc, char *argv[])
+      {
+        /* Initialize libgfortran.  */
+        _gfortran_set_args (argc, argv);
+        return 0;
+      }
 
-  .. _gfortran_set_options:
+.. _gfortran_set_options:
 
 _gfortran_set_options --- Set library option flags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -89,7 +86,8 @@ _gfortran_set_options --- Set library option flags
 
 .. index:: libgfortran initialization, set_options
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_options (int num, int options[]) 
+
   ``_gfortran_set_options`` sets several flags related to the Fortran
   standard to be used, whether backtracing should be enabled
   and whether range checks should be performed.  The syntax allows for
@@ -98,66 +96,62 @@ _gfortran_set_options --- Set library option flags
   see :ref:`code-gen-options`.  Please note that not all flags are actually
   used.
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_options (int num, int options[])``
+  :param num:
+    number of options passed
 
-:samp:`{Arguments}:`
+  :param argv:
+    The list of flag values
 
-  ==============  ========================
-  :samp:`{num}`   number of options passed
-  :samp:`{argv}`  The list of flag values
-  ==============  ========================
+  :samp:`{option flag list}:`
 
-:samp:`{option flag list}:`
+    ====================  =========================================================================
+    :samp:`{option}` [0]  Allowed standard; can give run-time errors
+                          if e.g. an input-output edit descriptor is invalid in a given
+                          standard.  Possible values are (bitwise or-ed) ``GFC_STD_F77`` (1),
+                          ``GFC_STD_F95_OBS`` (2), ``GFC_STD_F95_DEL`` (4),
+                          ``GFC_STD_F95`` (8), ``GFC_STD_F2003`` (16), ``GFC_STD_GNU``
+                          (32), ``GFC_STD_LEGACY`` (64), ``GFC_STD_F2008`` (128),
+                          ``GFC_STD_F2008_OBS`` (256), ``GFC_STD_F2008_TS`` (512),
+                          ``GFC_STD_F2018`` (1024), ``GFC_STD_F2018_OBS`` (2048), and
+                          ``GFC_STD=F2018_DEL`` (4096). Default: ``GFC_STD_F95_OBS |
+                          GFC_STD_F95_DEL | GFC_STD_F95 | GFC_STD_F2003 | GFC_STD_F2008 |
+                          GFC_STD_F2008_TS | GFC_STD_F2008_OBS | GFC_STD_F77 | GFC_STD_F2018 |
+                          GFC_STD_F2018_OBS | GFC_STD_F2018_DEL | GFC_STD_GNU | GFC_STD_LEGACY``.
+    :samp:`{option}` [1]  Standard-warning flag; prints a warning to
+                          standard error.  Default: ``GFC_STD_F95_DEL | GFC_STD_LEGACY``.
+    :samp:`{option}` [2]  If non zero, enable pedantic checking.
+                          Default: off.
+    :samp:`{option}` [3]  Unused.
+    :samp:`{option}` [4]  If non zero, enable backtracing on run-time
+                          errors.  Default: off. (Default in the compiler: on.)
+                          Note: Installs a signal handler and requires command-line
+                          initialization using ``_gfortran_set_args``.
+    :samp:`{option}` [5]  If non zero, supports signed zeros.
+                          Default: enabled.
+    :samp:`{option}` [6]  Enables run-time checking.  Possible values
+                          are (bitwise or-ed): GFC_RTCHECK_BOUNDS (1), GFC_RTCHECK_ARRAY_TEMPS (2),
+                          GFC_RTCHECK_RECURSION (4), GFC_RTCHECK_DO (8), GFC_RTCHECK_POINTER (16),
+                          GFC_RTCHECK_MEM (32), GFC_RTCHECK_BITS (64).
+                          Default: disabled.
+    :samp:`{option}` [7]  Unused.
+    :samp:`{option}` [8]  Show a warning when invoking ``STOP`` and
+                          ``ERROR STOP`` if a floating-point exception occurred. Possible values
+                          are (bitwise or-ed) ``GFC_FPE_INVALID`` (1), ``GFC_FPE_DENORMAL`` (2),
+                          ``GFC_FPE_ZERO`` (4), ``GFC_FPE_OVERFLOW`` (8),
+                          ``GFC_FPE_UNDERFLOW`` (16), ``GFC_FPE_INEXACT`` (32). Default: None (0).
+                          (Default in the compiler: ``GFC_FPE_INVALID | GFC_FPE_DENORMAL |
+                          GFC_FPE_ZERO | GFC_FPE_OVERFLOW | GFC_FPE_UNDERFLOW``.)
+    ====================  =========================================================================
 
-  ====================  =========================================================================
-  :samp:`{option}` [0]  Allowed standard; can give run-time errors
-                        if e.g. an input-output edit descriptor is invalid in a given
-                        standard.  Possible values are (bitwise or-ed) ``GFC_STD_F77`` (1),
-                        ``GFC_STD_F95_OBS`` (2), ``GFC_STD_F95_DEL`` (4),
-                        ``GFC_STD_F95`` (8), ``GFC_STD_F2003`` (16), ``GFC_STD_GNU``
-                        (32), ``GFC_STD_LEGACY`` (64), ``GFC_STD_F2008`` (128),
-                        ``GFC_STD_F2008_OBS`` (256), ``GFC_STD_F2008_TS`` (512),
-                        ``GFC_STD_F2018`` (1024), ``GFC_STD_F2018_OBS`` (2048), and
-                        ``GFC_STD=F2018_DEL`` (4096). Default: ``GFC_STD_F95_OBS |
-                        GFC_STD_F95_DEL | GFC_STD_F95 | GFC_STD_F2003 | GFC_STD_F2008 |
-                        GFC_STD_F2008_TS | GFC_STD_F2008_OBS | GFC_STD_F77 | GFC_STD_F2018 |
-                        GFC_STD_F2018_OBS | GFC_STD_F2018_DEL | GFC_STD_GNU | GFC_STD_LEGACY``.
-  :samp:`{option}` [1]  Standard-warning flag; prints a warning to
-                        standard error.  Default: ``GFC_STD_F95_DEL | GFC_STD_LEGACY``.
-  :samp:`{option}` [2]  If non zero, enable pedantic checking.
-                        Default: off.
-  :samp:`{option}` [3]  Unused.
-  :samp:`{option}` [4]  If non zero, enable backtracing on run-time
-                        errors.  Default: off. (Default in the compiler: on.)
-                        Note: Installs a signal handler and requires command-line
-                        initialization using ``_gfortran_set_args``.
-  :samp:`{option}` [5]  If non zero, supports signed zeros.
-                        Default: enabled.
-  :samp:`{option}` [6]  Enables run-time checking.  Possible values
-                        are (bitwise or-ed): GFC_RTCHECK_BOUNDS (1), GFC_RTCHECK_ARRAY_TEMPS (2),
-                        GFC_RTCHECK_RECURSION (4), GFC_RTCHECK_DO (8), GFC_RTCHECK_POINTER (16),
-                        GFC_RTCHECK_MEM (32), GFC_RTCHECK_BITS (64).
-                        Default: disabled.
-  :samp:`{option}` [7]  Unused.
-  :samp:`{option}` [8]  Show a warning when invoking ``STOP`` and
-                        ``ERROR STOP`` if a floating-point exception occurred. Possible values
-                        are (bitwise or-ed) ``GFC_FPE_INVALID`` (1), ``GFC_FPE_DENORMAL`` (2),
-                        ``GFC_FPE_ZERO`` (4), ``GFC_FPE_OVERFLOW`` (8),
-                        ``GFC_FPE_UNDERFLOW`` (16), ``GFC_FPE_INEXACT`` (32). Default: None (0).
-                        (Default in the compiler: ``GFC_FPE_INVALID | GFC_FPE_DENORMAL |
-                        GFC_FPE_ZERO | GFC_FPE_OVERFLOW | GFC_FPE_UNDERFLOW``.)
-  ====================  =========================================================================
+  :samp:`{Example}:`
 
-:samp:`{Example}:`
+    .. code-block:: c
 
-  .. code-block:: c
+        /* Use gfortran 4.9 default options.  */
+        static int options[] = {68, 511, 0, 0, 1, 1, 0, 0, 31};
+        _gfortran_set_options (9, &options);
 
-      /* Use gfortran 4.9 default options.  */
-      static int options[] = {68, 511, 0, 0, 1, 1, 0, 0, 31};
-      _gfortran_set_options (9, &options);
-
-  .. _gfortran_set_convert:
+.. _gfortran_set_convert:
 
 _gfortran_set_convert --- Set endian conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,34 +160,29 @@ _gfortran_set_convert --- Set endian conversion
 
 .. index:: libgfortran initialization, set_convert
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_convert (int conv) 
+
   ``_gfortran_set_convert`` set the representation of data for
   unformatted files.
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_convert (int conv)``
+  :param conv:
+    Endian conversion, possible values:
+    GFC_CONVERT_NATIVE (0, default), GFC_CONVERT_SWAP (1),
+    GFC_CONVERT_BIG (2), GFC_CONVERT_LITTLE (3).
 
-:samp:`{Arguments}:`
+  :samp:`{Example}:`
 
-  ==============  ======================================================
-  :samp:`{conv}`  Endian conversion, possible values:
-                  GFC_CONVERT_NATIVE (0, default), GFC_CONVERT_SWAP (1),
-                  GFC_CONVERT_BIG (2), GFC_CONVERT_LITTLE (3).
-  ==============  ======================================================
+    .. code-block:: c
 
-:samp:`{Example}:`
+      int main (int argc, char *argv[])
+      {
+        /* Initialize libgfortran.  */
+        _gfortran_set_args (argc, argv);
+        _gfortran_set_convert (1);
+        return 0;
+      }
 
-  .. code-block:: c
-
-    int main (int argc, char *argv[])
-    {
-      /* Initialize libgfortran.  */
-      _gfortran_set_args (argc, argv);
-      _gfortran_set_convert (1);
-      return 0;
-    }
-
-  .. _gfortran_set_record_marker:
+.. _gfortran_set_record_marker:
 
 _gfortran_set_record_marker --- Set length of record markers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -202,33 +191,28 @@ _gfortran_set_record_marker --- Set length of record markers
 
 .. index:: libgfortran initialization, set_record_marker
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_record_marker (int val) 
+
   ``_gfortran_set_record_marker`` sets the length of record markers
   for unformatted files.
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_record_marker (int val)``
+  :param val:
+    Length of the record marker; valid values
+    are 4 and 8.  Default is 4.
 
-:samp:`{Arguments}:`
+  :samp:`{Example}:`
 
-  =============  =========================================
-  :samp:`{val}`  Length of the record marker; valid values
-                 are 4 and 8.  Default is 4.
-  =============  =========================================
+    .. code-block:: c
 
-:samp:`{Example}:`
+      int main (int argc, char *argv[])
+      {
+        /* Initialize libgfortran.  */
+        _gfortran_set_args (argc, argv);
+        _gfortran_set_record_marker (8);
+        return 0;
+      }
 
-  .. code-block:: c 
-
-    int main (int argc, char *argv[])
-    {
-      /* Initialize libgfortran.  */
-      _gfortran_set_args (argc, argv);
-      _gfortran_set_record_marker (8);
-      return 0;
-    }
-
-  .. _gfortran_set_fpe:
+.. _gfortran_set_fpe:
 
 _gfortran_set_fpe --- Enable floating point exception traps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -237,38 +221,33 @@ _gfortran_set_fpe --- Enable floating point exception traps
 
 .. index:: libgfortran initialization, set_fpe
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_fpe (int val) 
+
   ``_gfortran_set_fpe`` enables floating point exception traps for
   the specified exceptions.  On most systems, this will result in a
   SIGFPE signal being sent and the program being aborted.
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_fpe (int val)``
+  :param option} [0]:
+    IEEE exceptions.  Possible values are
+    (bitwise or-ed) zero (0, default) no trapping,
+    ``GFC_FPE_INVALID`` (1), ``GFC_FPE_DENORMAL`` (2),
+    ``GFC_FPE_ZERO`` (4), ``GFC_FPE_OVERFLOW`` (8),
+    ``GFC_FPE_UNDERFLOW`` (16), and ``GFC_FPE_INEXACT`` (32).
 
-:samp:`{Arguments}:`
+  :samp:`{Example}:`
 
-  ====================  =========================================================
-  :samp:`{option}` [0]  IEEE exceptions.  Possible values are
-                        (bitwise or-ed) zero (0, default) no trapping,
-                        ``GFC_FPE_INVALID`` (1), ``GFC_FPE_DENORMAL`` (2),
-                        ``GFC_FPE_ZERO`` (4), ``GFC_FPE_OVERFLOW`` (8),
-                        ``GFC_FPE_UNDERFLOW`` (16), and ``GFC_FPE_INEXACT`` (32).
-  ====================  =========================================================
+    .. code-block:: c
 
-:samp:`{Example}:`
+      int main (int argc, char *argv[])
+      {
+        /* Initialize libgfortran.  */
+        _gfortran_set_args (argc, argv);
+        /* FPE for invalid operations such as SQRT(-1.0).  */
+        _gfortran_set_fpe (1);
+        return 0;
+      }
 
-  .. code-block:: c
-
-    int main (int argc, char *argv[])
-    {
-      /* Initialize libgfortran.  */
-      _gfortran_set_args (argc, argv);
-      /* FPE for invalid operations such as SQRT(-1.0).  */
-      _gfortran_set_fpe (1);
-      return 0;
-    }
-
-  .. _gfortran_set_max_subrecord_length:
+.. _gfortran_set_max_subrecord_length:
 
 _gfortran_set_max_subrecord_length --- Set subrecord length
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -277,31 +256,26 @@ _gfortran_set_max_subrecord_length --- Set subrecord length
 
 .. index:: libgfortran initialization, set_max_subrecord_length
 
-:samp:`{Description}:`
+.. function:: void _gfortran_set_max_subrecord_length (int val) 
+
   ``_gfortran_set_max_subrecord_length`` set the maximum length
   for a subrecord.  This option only makes sense for testing and
   debugging of unformatted I/O.
 
-:samp:`{Syntax}:`
-  ``void _gfortran_set_max_subrecord_length (int val)``
+  :param val:
+    the maximum length for a subrecord;
+    the maximum permitted value is 2147483639, which is also
+    the default.
 
-:samp:`{Arguments}:`
+  :samp:`{Example}:`
 
-  =============  ========================================================
-  :samp:`{val}`  the maximum length for a subrecord;
-                 the maximum permitted value is 2147483639, which is also
-                 the default.
-  =============  ========================================================
+    .. code-block:: c
 
-:samp:`{Example}:`
-
-  .. code-block:: c
-
-    int main (int argc, char *argv[])
-    {
-      /* Initialize libgfortran.  */
-      _gfortran_set_args (argc, argv);
-      _gfortran_set_max_subrecord_length (8);
-      return 0;
-    }
+      int main (int argc, char *argv[])
+      {
+        /* Initialize libgfortran.  */
+        _gfortran_set_args (argc, argv);
+        _gfortran_set_max_subrecord_length (8);
+        return 0;
+      }
 
