@@ -209,7 +209,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``ole``, ``ule``, ``sf``, ``ngle``, ``seq``, ``ngl``,
 ``lt``, ``nge``, ``le`` or ``ngt``.
 
-:samp:`v2sf __builtin_mips_movt_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`v2sf __builtin_mips_movt_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`v2sf __builtin_mips_movf_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
   Conditional move based on floating-point comparison ( ``c.cond.ps``,
   ``movt.ps`` / ``movf.ps`` ).
 
@@ -224,7 +225,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
   The ``movf`` functions are similar but use ``movf.ps`` instead
   of ``movt.ps``.
 
-:samp:`int __builtin_mips_upper_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_c_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_upper_c_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_lower_c_{cond}_ps (v2sf {a}, v2sf {b})`
   Comparison of two paired-single values ( ``c.cond.ps``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -270,17 +272,25 @@ more details on what each instruction does.
 ``v2sf __builtin_mips_cvt_ps_pw (v2sf)``
   Convert paired word to paired single ( ``cvt.ps.pw`` ).
 
-``float __builtin_mips_recip1_s (float)`` ``double __builtin_mips_recip1_d (double)`` ``v2sf __builtin_mips_recip1_ps (v2sf)``
+``float __builtin_mips_recip1_s (float)``
+``double __builtin_mips_recip1_d (double)``
+``v2sf __builtin_mips_recip1_ps (v2sf)``
   Reduced-precision reciprocal (sequence step 1) ( ``recip1.fmt`` ).
 
-``float __builtin_mips_recip2_s (float, float)`` ``double __builtin_mips_recip2_d (double, double)`` ``v2sf __builtin_mips_recip2_ps (v2sf, v2sf)``
+``float __builtin_mips_recip2_s (float, float)``
+``double __builtin_mips_recip2_d (double, double)``
+``v2sf __builtin_mips_recip2_ps (v2sf, v2sf)``
   Reduced-precision reciprocal (sequence step 2) ( ``recip2.fmt`` ).
 
-``float __builtin_mips_rsqrt1_s (float)`` ``double __builtin_mips_rsqrt1_d (double)`` ``v2sf __builtin_mips_rsqrt1_ps (v2sf)``
+``float __builtin_mips_rsqrt1_s (float)``
+``double __builtin_mips_rsqrt1_d (double)``
+``v2sf __builtin_mips_rsqrt1_ps (v2sf)``
   Reduced-precision reciprocal square root (sequence step 1)
   ( ``rsqrt1.fmt`` ).
 
-``float __builtin_mips_rsqrt2_s (float, float)`` ``double __builtin_mips_rsqrt2_d (double, double)`` ``v2sf __builtin_mips_rsqrt2_ps (v2sf, v2sf)``
+``float __builtin_mips_rsqrt2_s (float, float)``
+``double __builtin_mips_rsqrt2_d (double, double)``
+``v2sf __builtin_mips_rsqrt2_ps (v2sf, v2sf)``
   Reduced-precision reciprocal square root (sequence step 2)
   ( ``rsqrt2.fmt`` ).
 
@@ -290,7 +300,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``ole``, ``ule``, ``sf``, ``ngle``, ``seq``,
 ``ngl``, ``lt``, ``nge``, ``le`` or ``ngt``.
 
-:samp:`int __builtin_mips_cabs_{cond}_s (float {a}, float {b})` :samp:`int __builtin_mips_cabs_{cond}_d (double {a}, double {b})`
+:samp:`int __builtin_mips_cabs_{cond}_s (float {a}, float {b})`
+:samp:`int __builtin_mips_cabs_{cond}_d (double {a}, double {b})`
   Absolute comparison of two scalar values ( ``cabs.cond.fmt``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -306,7 +317,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
     else
       false ();
 
-:samp:`int __builtin_mips_upper_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_lower_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_upper_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_lower_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
   Absolute comparison of two paired-single values ( ``cabs.cond.ps``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -326,7 +338,8 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
     else
       lower_halves_are_unequal ();
 
-:samp:`v2sf __builtin_mips_movt_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`v2sf __builtin_mips_movf_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`v2sf __builtin_mips_movt_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`v2sf __builtin_mips_movf_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
   Conditional move based on absolute comparison ( ``cabs.cond.ps``,
   ``movt.ps`` / ``movf.ps`` ).
 
@@ -341,7 +354,10 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
   The ``movf`` functions are similar but use ``movf.ps`` instead
   of ``movt.ps``.
 
-:samp:`int __builtin_mips_any_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_c_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_any_cabs_{cond}_ps (v2sf {a}, v2sf {b})` :samp:`int __builtin_mips_all_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_any_c_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_all_c_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_any_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+:samp:`int __builtin_mips_all_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
   Comparison of two paired-single values
   ( ``c.cond.ps`` / ``cabs.cond.ps``,
   ``bc1any2t`` / ``bc1any2f`` ).
@@ -364,7 +380,10 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
     else
       one_is_false ();
 
-:samp:`int __builtin_mips_any_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_any_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})` :samp:`int __builtin_mips_all_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`int __builtin_mips_any_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`int __builtin_mips_all_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`int __builtin_mips_any_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+:samp:`int __builtin_mips_all_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
   Comparison of four paired-single values
   ( ``c.cond.ps`` / ``cabs.cond.ps``,
   ``bc1any4t`` / ``bc1any4f`` ).
