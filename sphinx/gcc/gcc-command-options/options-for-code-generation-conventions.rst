@@ -565,6 +565,11 @@ it.
   present.  This option must therefore be used on a program-wide basis and be
   manipulated with extreme care.
 
+  For languages other than Ada, the ``-ftrampolines`` and
+  ``-fno-trampolines`` options currently have no effect, and
+  trampolines are always generated on platforms that need them
+  for nested functions.
+
 .. option:: -fvisibility=[default|internal|hidden|protected]
 
   Set the default ELF image symbol visibility to the specified option---all

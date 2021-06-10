@@ -35,7 +35,7 @@ These additional options are available for Microsoft Windows targets:
   This option is available for Cygwin and MinGW targets.  It
   specifies that the ``dllimport`` attribute should be ignored.
 
-.. option:: -mthread
+.. option:: -mthreads
 
   This option is available for MinGW targets. It specifies
   that MinGW-specific thread support is to be used.
