@@ -1337,10 +1337,7 @@ Modifier  Description                                                           
 ``L``     print the opcode suffix of l.                                                                                 ``%L0``  ``l``
 ``N``     print maskz.                                                                                                  ``%N7``  ``{z}``           ``{z}``
 ``p``     Print raw symbol name (without syntax-specific prefixes).                                                     ``%p2``  ``42``            ``42``
-``P``     If used for a function, print the PLT suffix and generate PIC code.
-          For example, emit ``foo@PLT`` instead of 'foo' for the function
-          foo(). If used for a constant, drop all syntax-specific prefixes and
-          issue the bare constant. See ``p`` above.
+``P``     If used for a function, print the PLT suffix and generate PIC code ([#f1]_).
 ``q``     Print the DImode name of the register.                                                                        ``%q0``  ``%rax``          ``rax``
 ``Q``     print the opcode suffix of q.                                                                                 ``%Q0``  ``q``
 ``R``     print embedded rounding and sae.                                                                              ``%R4``  ``{rn-sae}, ``    ``, {rn-sae}``
@@ -1358,6 +1355,12 @@ Modifier  Description                                                           
 ``z``     Print the opcode suffix for the size of the current integer operand (one of ``b`` / ``w`` / ``l`` / ``q`` ).  ``%z0``  ``l``
 ``Z``     Like ``z``, with special suffixes for x87 instructions.
 ========  ============================================================================================================  =======  ================  ==============
+
+.. rubric:: Footnotes
+
+.. [#f1] For example, emit ``foo@PLT`` instead of 'foo' for the function foo(). If used for a constant,
+  drop all syntax-specific prefixes and issue the bare constant. See ``p`` above.
+
 .. _x86floatingpointasmoperands:
 
 x86 Floating-Point asm Operands
