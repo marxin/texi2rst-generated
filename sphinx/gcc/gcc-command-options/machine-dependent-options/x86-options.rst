@@ -534,7 +534,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   register stack, some floating-point opcodes may be emitted even if
   :option:`-msoft-float` is used.
 
-.. option:: -mno-fp-ret-in-387, -mfp-ret-in-387
+.. option:: -mno-fp-ret-in-387
 
   Do not use the FPU registers for return values of functions.
 
@@ -546,7 +546,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
   The option :option:`-mno-fp-ret-in-387` causes such values to be returned
   in ordinary CPU registers instead.
 
-.. option:: -mno-fancy-math-387, -mfancy-math-387
+.. option:: -mfp-ret-in-387
+
+  Default option value for :option:`-mno-fp-ret-in-387`.
+
+.. option:: -mno-fancy-math-387
 
   Some 387 emulators do not support the ``sin``, ``cos`` and
   ``sqrt`` instructions for the 387.  Specify this option to avoid
@@ -556,6 +560,10 @@ These :samp:`-m` options are defined for the x86 family of computers.
   instruction does not need emulation.  These
   instructions are not generated unless you also use the
   :option:`-funsafe-math-optimizations` switch.
+
+.. option:: -mfancy-math-387
+
+  Default option value for :option:`-mno-fancy-math-387`.
 
 .. option:: -malign-double, -mno-align-double
 
@@ -1005,7 +1013,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-fcf-protection`:samp:`=branch` to control ENDBR insertion at the
   function entry.
 
-.. option:: -mcall-ms2sysv-xlogues, -mno-call-ms2sysv-xlogues
+.. option:: -mcall-ms2sysv-xlogues
 
   Due to differences in 64-bit ABIs, any Microsoft ABI function that calls a
   System V ABI function must consider RSI, RDI and XMM6-15 as clobbered.  By
@@ -1014,6 +1022,10 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-mcall-ms2sysv-xlogues` emits prologues and epilogues that
   use stubs in the static portion of libgcc to perform these saves and restores,
   thus reducing function size at the cost of a few extra instructions.
+
+.. option:: -mno-call-ms2sysv-xlogues
+
+  Default option value for :option:`-mcall-ms2sysv-xlogues`.
 
 .. option:: -mtls-dialect=type
 
@@ -1167,11 +1179,15 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
     Here, ``t5`` takes up 2 bytes.
 
-.. option:: -mno-align-stringops, -malign-stringops
+.. option:: -mno-align-stringops
 
   Do not align the destination of inlined string operations.  This switch reduces
   code size and improves performance in case the destination is already aligned,
   but GCC doesn't know about it.
+
+.. option:: -malign-stringops
+
+  Default option value for :option:`-mno-align-stringops`.
 
 .. option:: -minline-all-stringops
 
@@ -1403,13 +1419,17 @@ on x86-64 processors in 64-bit environments.
   The :option:`-miamcu` option generates code which conforms to Intel MCU
   psABI.  It requires the :option:`-m32` option to be turned on.
 
-.. option:: -mno-red-zone, -mred-zone
+.. option:: -mno-red-zone
 
   Do not use a so-called 'red zone' for x86-64 code.  The red zone is mandated
   by the x86-64 ABI; it is a 128-byte area beyond the location of the
   stack pointer that is not modified by signal or interrupt handlers
   and therefore can be used for temporary data without adjusting the stack
   pointer.  The flag :option:`-mno-red-zone` disables this red zone.
+
+.. option:: -mred-zone
+
+  Default option value for :option:`-mno-red-zone`.
 
 .. option:: -mcmodel=small
 

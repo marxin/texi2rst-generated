@@ -60,7 +60,7 @@ These additional options are available for Microsoft Windows targets:
   instructing the linker to set the PE header subsystem type
   appropriately.
 
-.. option:: -fno-set-stack-executable, -fset-stack-executable
+.. option:: -fno-set-stack-executable
 
   This option is available for MinGW targets. It specifies that
   the executable flag for the stack used by nested functions isn't
@@ -68,12 +68,20 @@ These additional options are available for Microsoft Windows targets:
   Microsoft Windows, as there the User32 API, which is used to set executable
   privileges, isn't available.
 
-.. option:: -fwritable-relocated-rdata, -fno-writable-relocated-rdata
+.. option:: -fset-stack-executable
+
+  Default option value for :option:`-fno-set-stack-executable`.
+
+.. option:: -fwritable-relocated-rdata
 
   This option is available for MinGW and Cygwin targets.  It specifies
   that relocated-data in read-only section is put into the ``.data``
   section.  This is a necessary for older runtimes not supporting
   modification of ``.rdata`` sections for pseudo-relocation.
+
+.. option:: -fno-writable-relocated-rdata
+
+  Default option value for :option:`-fwritable-relocated-rdata`.
 
 .. option:: -mpe-aligned-commons
 

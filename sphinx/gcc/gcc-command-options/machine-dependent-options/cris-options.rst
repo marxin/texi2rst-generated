@@ -53,10 +53,14 @@ These options are defined specifically for the CRIS ports.
   Do not use condition-code results from previous instruction; always emit
   compare and test instructions before use of condition codes.
 
-.. option:: -mno-side-effects, -mside-effects
+.. option:: -mno-side-effects
 
   Do not emit instructions with side effects in addressing modes other than
   post-increment.
+
+.. option:: -mside-effects
+
+  Default option value for :option:`-mno-side-effects`.
 
 .. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align, -mconst-align, -mno-const-align
 

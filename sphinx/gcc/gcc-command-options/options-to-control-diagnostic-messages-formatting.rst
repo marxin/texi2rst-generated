@@ -215,6 +215,10 @@ honor these options.
     SGR substring for highlighting mismatching types within template
     arguments in the C++ frontend.
 
+.. option:: -fdiagnostics-color
+
+  Default option value for :option:`-fno-diagnostics-color`.
+
 .. option:: -fdiagnostics-urls[=WHEN]
 
   .. index:: urls
@@ -262,14 +266,18 @@ honor these options.
   gnome-terminal versions, the linux console, and mingw.
   This check can be skipped with the :option:`-fdiagnostics-urls`:samp:`=always`.
 
-.. option:: -fno-diagnostics-show-option, -fdiagnostics-show-option
+.. option:: -fno-diagnostics-show-option
 
   By default, each diagnostic emitted includes text indicating the
   command-line option that directly controls the diagnostic (if such an
   option is known to the diagnostic machinery).  Specifying the
   :option:`-fno-diagnostics-show-option` flag suppresses that behavior.
 
-.. option:: -fno-diagnostics-show-caret, -fdiagnostics-show-caret
+.. option:: -fdiagnostics-show-option
+
+  Default option value for :option:`-fno-diagnostics-show-option`.
+
+.. option:: -fno-diagnostics-show-caret
 
   By default, each diagnostic emitted includes the original source line
   and a caret :samp:`^` indicating the column.  This option suppresses this
@@ -278,7 +286,11 @@ honor these options.
   to the terminal, the width is limited to the width given by the
   :envvar:`COLUMNS` environment variable or, if not set, to the terminal width.
 
-.. option:: -fno-diagnostics-show-labels, -fdiagnostics-show-labels
+.. option:: -fdiagnostics-show-caret
+
+  Default option value for :option:`-fno-diagnostics-show-caret`.
+
+.. option:: -fno-diagnostics-show-labels
 
   By default, when printing source code (via :option:`-fdiagnostics-show-caret` ),
   diagnostics can label ranges of source code with pertinent information, such
@@ -294,7 +306,11 @@ honor these options.
   This option suppresses the printing of these labels (in the example above,
   the vertical bars and the 'char *' and 'long int' text).
 
-.. option:: -fno-diagnostics-show-cwe, -fdiagnostics-show-cwe
+.. option:: -fdiagnostics-show-labels
+
+  Default option value for :option:`-fno-diagnostics-show-labels`.
+
+.. option:: -fno-diagnostics-show-cwe
 
   Diagnostic messages can optionally have an associated
   https://cwe.mitre.org/index.htmlCWE identifier.
@@ -303,11 +319,19 @@ honor these options.
   By default, if this information is present, it will be printed with
   the diagnostic.  This option suppresses the printing of this metadata.
 
-.. option:: -fno-diagnostics-show-line-numbers, -fdiagnostics-show-line-numbers
+.. option:: -fdiagnostics-show-cwe
+
+  Default option value for :option:`-fno-diagnostics-show-cwe`.
+
+.. option:: -fno-diagnostics-show-line-numbers
 
   By default, when printing source code (via :option:`-fdiagnostics-show-caret` ),
   a left margin is printed, showing line numbers.  This option suppresses this
   left margin.
+
+.. option:: -fdiagnostics-show-line-numbers
+
+  Default option value for :option:`-fno-diagnostics-show-line-numbers`.
 
 .. option:: -fdiagnostics-minimum-margin-width=width
 
@@ -389,7 +413,7 @@ honor these options.
   The parts that differ are highlighted with color ('double' and
   'float' in this case).
 
-.. option:: -fno-elide-type, -felide-type
+.. option:: -fno-elide-type
 
   By default when the C++ frontend prints diagnostics showing mismatching
   template types, common parts of the types are printed as '[...]' to
@@ -403,6 +427,10 @@ honor these options.
   Specifying the :option:`-fno-elide-type` flag suppresses that behavior.
   This flag also affects the output of the
   :option:`-fdiagnostics-show-template-tree` flag.
+
+.. option:: -felide-type
+
+  Default option value for :option:`-fno-elide-type`.
 
 .. option:: -fdiagnostics-path-format=KIND
 
@@ -512,11 +540,15 @@ honor these options.
   This is intended for use by GCC developers and plugin developers when
   debugging diagnostics that report interprocedural control flow.
 
-.. option:: -fno-show-column, -fshow-column
+.. option:: -fno-show-column
 
   Do not print column numbers in diagnostics.  This may be necessary if
   diagnostics are being scanned by a program that does not understand the
   column numbers, such as :command:`dejagnu`.
+
+.. option:: -fshow-column
+
+  Default option value for :option:`-fno-show-column`.
 
 .. option:: -fdiagnostics-column-unit=UNIT
 

@@ -278,15 +278,23 @@ These options are defined for AVR implementations:
   which contains a folder named ``device-specs`` which contains a specs file named
   ``specs-mcu``, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
 
-.. option:: -Waddr-space-convert, -Wno-addr-space-convert
+.. option:: -Waddr-space-convert
 
   Warn about conversions between address spaces in the case where the
   resulting address space is not contained in the incoming address space.
 
-.. option:: -Wmisspelled-isr, -Wno-misspelled-isr
+.. option:: -Wno-addr-space-convert
+
+  Default option value for :option:`-Waddr-space-convert`.
+
+.. option:: -Wmisspelled-isr
 
   Warn if the ISR is misspelled, i.e. without __vector prefix.
   Enabled by default.
+
+.. option:: -Wno-misspelled-isr
+
+  Default option value for :option:`-Wmisspelled-isr`.
 
 EIND and Devices with More Than 128 Ki Bytes of Flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -134,10 +134,14 @@ is being compiled:
   ``divaw``, ``adds``, ``subs``, and ``sat16`` are
   supported.  Only valid for :option:`-mcpu`:samp:`=ARC700`.
 
-.. option:: -mno-mpy, -mmpy
+.. option:: -mno-mpy
 
   Do not generate ``mpy`` -family instructions for ARC700.  This option is
   deprecated.
+
+.. option:: -mmpy
+
+  Default option value for :option:`-mno-mpy`.
 
 .. option:: -mmul32x16
 
@@ -478,20 +482,28 @@ The following options control the semantics of generated code:
   :samp:`{num}` is 4 for any ARC configuration, or 8 when we have double
   load/store operations.
 
-.. option:: -mno-sdata, -msdata
+.. option:: -mno-sdata
 
   Do not generate sdata references.  This is the default for tool chains
   built for ``arc-linux-uclibc`` and ``arceb-linux-uclibc``
   targets.
+
+.. option:: -msdata
+
+  Default option value for :option:`-mno-sdata`.
 
 .. option:: -mvolatile-cache
 
   Use ordinarily cached memory accesses for volatile references.  This is the
   default.
 
-.. option:: -mno-volatile-cache, -mvolatile-cache
+.. option:: -mno-volatile-cache
 
   Enable cache bypass for volatile references.
+
+.. option:: -mvolatile-cache
+
+  Default option value for :option:`-mno-volatile-cache`.
 
 The following options fine tune code generation:
 

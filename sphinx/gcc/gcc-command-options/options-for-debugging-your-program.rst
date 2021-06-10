@@ -129,10 +129,14 @@ information useful for debugging do not run at all, so that
   Instead use an additional :option:`-g`:samp:`{level}` option to change the
   debug level for DWARF.
 
-.. option:: -fno-eliminate-unused-debug-symbols, -feliminate-unused-debug-symbols
+.. option:: -fno-eliminate-unused-debug-symbols
 
   By default, no debug information is produced for symbols that are not actually
   used. Use this option if you want debug information for all symbols.
+
+.. option:: -feliminate-unused-debug-symbols
+
+  Default option value for :option:`-fno-eliminate-unused-debug-symbols`.
 
 .. option:: -femit-class-debug-always
 
@@ -143,13 +147,17 @@ information useful for debugging do not run at all, so that
   option increases the size of debugging information by as much as a
   factor of two.
 
-.. option:: -fno-merge-debug-strings, -fmerge-debug-strings
+.. option:: -fno-merge-debug-strings
 
   Direct the linker to not merge together strings in the debugging
   information that are identical in different object files.  Merging is
   not supported by all assemblers or linkers.  Merging decreases the size
   of the debug information in the output file at the cost of increasing
   link processing time.  Merging is enabled by default.
+
+.. option:: -fmerge-debug-strings
+
+  Default option value for :option:`-fno-merge-debug-strings`.
 
 .. option:: -fdebug-prefix-map=old=new
 
@@ -172,7 +180,7 @@ information useful for debugging do not run at all, so that
   :option:`-O`, :option:`-O2`, ...), debugging information ( :option:`-g` ) and
   the debug info format supports it.
 
-.. option:: -fvar-tracking-assignments, -fno-var-tracking-assignments
+.. option:: -fvar-tracking-assignments
 
   Annotate assignments to user variables early in the compilation and
   attempt to carry the annotations over throughout the compilation all the
@@ -183,6 +191,10 @@ information useful for debugging do not run at all, so that
   annotations are created and maintained, but discarded at the end.
   By default, this flag is enabled together with :option:`-fvar-tracking`,
   except when selective scheduling is enabled.
+
+.. option:: -fno-var-tracking-assignments
+
+  Default option value for :option:`-fvar-tracking-assignments`.
 
 .. option:: -gsplit-dwarf
 
@@ -218,7 +230,7 @@ information useful for debugging do not run at all, so that
   suitable for conversion into a GDBindex.  This option is only useful
   with a linker that can produce GDBindex version 7.
 
-.. option:: -fdebug-types-section, -fno-debug-types-section
+.. option:: -fdebug-types-section
 
   When using DWARF Version 4 or higher, type DIEs can be put into
   their own ``.debug_types`` section instead of making them part of the
@@ -227,6 +239,10 @@ information useful for debugging do not run at all, so that
   But not all DWARF consumers support ``.debug_types`` sections yet
   and on some objects ``.debug_types`` produces larger instead of smaller
   debugging information.
+
+.. option:: -fno-debug-types-section
+
+  Default option value for :option:`-fdebug-types-section`.
 
 .. option:: -grecord-gcc-switches, -gno-record-gcc-switches
 
@@ -433,12 +449,16 @@ information useful for debugging do not run at all, so that
 
   This option works only with DWARF debug output.
 
-.. option:: -fno-dwarf2-cfi-asm, -fdwarf2-cfi-asm
+.. option:: -fno-dwarf2-cfi-asm
 
   Emit DWARF unwind info as compiler generated ``.eh_frame`` section
   instead of using GAS ``.cfi_*`` directives.
 
-.. option:: -fno-eliminate-unused-debug-types, -feliminate-unused-debug-types
+.. option:: -fdwarf2-cfi-asm
+
+  Default option value for :option:`-fno-dwarf2-cfi-asm`.
+
+.. option:: -fno-eliminate-unused-debug-types
 
   Normally, when producing DWARF output, GCC avoids producing debug symbol 
   output for types that are nowhere used in the source file being compiled.
@@ -449,4 +469,8 @@ information useful for debugging do not run at all, so that
   if, in the debugger, you want to cast a value to a type that is
   not actually used in your program (but is declared).  More often,
   however, this results in a significant amount of wasted space.
+
+.. option:: -feliminate-unused-debug-types
+
+  Default option value for :option:`-fno-eliminate-unused-debug-types`.
 

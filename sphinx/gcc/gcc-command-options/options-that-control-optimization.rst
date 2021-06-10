@@ -244,13 +244,17 @@ activated by :option:`-O` options or are related to ones that are.  You
 can use the following flags in the rare cases when 'fine-tuning' of
 optimizations to be performed is desired.
 
-.. option:: -fno-defer-pop, -fdefer-pop
+.. option:: -fno-defer-pop
 
   For machines that must pop arguments after a function call, always pop 
   the arguments as soon as each function returns.  
   At levels :option:`-O1` and higher, :option:`-fdefer-pop` is the default;
   this allows the compiler to let arguments accumulate on the stack for several
   function calls and pop them all at once.
+
+.. option:: -fdefer-pop
+
+  Default option value for :option:`-fno-defer-pop`.
 
 .. option:: -fforward-propagate
 
@@ -303,7 +307,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -fno-inline, -finline
+.. option:: -fno-inline
 
   Do not expand any functions inline apart from those marked with
   the ``always_inline`` attribute.  This is the default when not
@@ -311,6 +315,10 @@ optimizations to be performed is desired.
 
   Single functions can be exempted from inlining by marking them
   with the ``noinline`` attribute.
+
+.. option:: -finline
+
+  Default option value for :option:`-fno-inline`.
 
 .. option:: -finline-small-functions
 
@@ -400,12 +408,16 @@ optimizations to be performed is desired.
   of assembly instructions and as such its exact meaning might change from one
   release to an another.
 
-.. option:: -fno-keep-inline-dllexport, -fkeep-inline-dllexport
+.. option:: -fno-keep-inline-dllexport
 
   This is a more fine-grained version of :option:`-fkeep-inline-functions`,
   which applies only to functions that are declared using the ``dllexport``
   attribute or declspec.  See :ref:`Declaring Attributes of
   Functions <function-attributes>`.
+
+.. option:: -fkeep-inline-dllexport
+
+  Default option value for :option:`-fno-keep-inline-dllexport`.
 
 .. option:: -fkeep-inline-functions
 
@@ -466,7 +478,7 @@ optimizations to be performed is desired.
   life-range analysis.  This option is effective only with
   :option:`-fmodulo-sched` enabled.
 
-.. option:: -fno-branch-count-reg, -fbranch-count-reg
+.. option:: -fno-branch-count-reg
 
   Disable the optimization pass that scans for opportunities to use 
   'decrement and branch' instructions on a count register instead of
@@ -480,7 +492,11 @@ optimizations to be performed is desired.
   The default is :option:`-fbranch-count-reg` at :option:`-O1` and higher,
   except for :option:`-Og`.
 
-.. option:: -fno-function-cse, -ffunction-cse
+.. option:: -fbranch-count-reg
+
+  Default option value for :option:`-fno-branch-count-reg`.
+
+.. option:: -fno-function-cse
 
   Do not put function addresses in registers; make each instruction that
   calls a constant function contain the function's address explicitly.
@@ -491,7 +507,11 @@ optimizations to be performed is desired.
 
   The default is :option:`-ffunction-cse`
 
-.. option:: -fno-zero-initialized-in-bss, -fzero-initialized-in-bss
+.. option:: -ffunction-cse
+
+  Default option value for :option:`-fno-function-cse`.
+
+.. option:: -fno-zero-initialized-in-bss
 
   If the target supports a BSS section, GCC by default puts variables that
   are initialized to zero into BSS.  This can save space in the resulting
@@ -503,6 +523,10 @@ optimizations to be performed is desired.
   assumptions based on that.
 
   The default is :option:`-fzero-initialized-in-bss`.
+
+.. option:: -fzero-initialized-in-bss
+
+  Default option value for :option:`-fno-zero-initialized-in-bss`.
 
 .. option:: -fthread-jumps
 
@@ -738,7 +762,7 @@ optimizations to be performed is desired.
   Enabled for Alpha, AArch64 and x86 at levels :option:`-O2`,
   :option:`-O3`, :option:`-Os`.
 
-.. option:: -fno-lifetime-dse, -flifetime-dse
+.. option:: -fno-lifetime-dse
 
   In C++ the value of an object is only affected by changes within its
   lifetime: when the constructor begins, the object has an indeterminate
@@ -752,6 +776,10 @@ optimizations to be performed is desired.
   can use :option:`-flifetime-dse`:samp:`=1`.  The default behavior can be
   explicitly selected with :option:`-flifetime-dse`:samp:`=2`.
   :option:`-flifetime-dse`:samp:`=0` is equivalent to :option:`-fno-lifetime-dse`.
+
+.. option:: -flifetime-dse
+
+  Default option value for :option:`-fno-lifetime-dse`.
 
 .. option:: -flive-range-shrinkage
 
@@ -807,18 +835,26 @@ optimizations to be performed is desired.
 
   This option is enabled at level :option:`-O3` for some targets.
 
-.. option:: -fno-ira-share-save-slots, -fira-share-save-slots
+.. option:: -fno-ira-share-save-slots
 
   Disable sharing of stack slots used for saving call-used hard
   registers living through a call.  Each hard register gets a
   separate stack slot, and as a result function stack frames are
   larger.
 
-.. option:: -fno-ira-share-spill-slots, -fira-share-spill-slots
+.. option:: -fira-share-save-slots
+
+  Default option value for :option:`-fno-ira-share-save-slots`.
+
+.. option:: -fno-ira-share-spill-slots
 
   Disable sharing of stack slots allocated for pseudo-registers.  Each
   pseudo-register that does not get a hard register gets a separate
   stack slot, and as a result function stack frames are larger.
+
+.. option:: -fira-share-spill-slots
+
+  Default option value for :option:`-fno-ira-share-spill-slots`.
 
 .. option:: -flra-remat
 
@@ -856,17 +892,25 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -fno-sched-interblock, -fsched-interblock
+.. option:: -fno-sched-interblock
 
   Disable instruction scheduling across basic blocks, which
   is normally enabled when scheduling before register allocation, i.e.
   with :option:`-fschedule-insns` or at :option:`-O2` or higher.
 
-.. option:: -fno-sched-spec, -fsched-spec
+.. option:: -fsched-interblock
+
+  Default option value for :option:`-fno-sched-interblock`.
+
+.. option:: -fno-sched-spec
 
   Disable speculative motion of non-load instructions, which
   is normally enabled when scheduling before register allocation, i.e.
   with :option:`-fschedule-insns` or at :option:`-O2` or higher.
+
+.. option:: -fsched-spec
+
+  Default option value for :option:`-fno-sched-spec`.
 
 .. option:: -fsched-pressure
 
@@ -1340,7 +1384,7 @@ optimizations to be performed is desired.
   enabled by default at :option:`-O2` and higher if :option:`-Os` is not also
   specified.
 
-.. option:: -ffinite-loops, -fno-finite-loops
+.. option:: -ffinite-loops
 
   Assume that a loop with an exit will eventually take the exit and not loop
   indefinitely.  This allows the compiler to remove loops that otherwise have
@@ -1348,6 +1392,10 @@ optimizations to be performed is desired.
 
   This option is enabled by default at :option:`-O2` for C++ with -std=c++11
   or higher.
+
+.. option:: -fno-finite-loops
+
+  Default option value for :option:`-ffinite-loops`.
 
 .. option:: -ftree-dominator-opts
 
@@ -1700,7 +1748,7 @@ optimizations to be performed is desired.
 
   Disabled at level :option:`-Os`.
 
-.. option:: -fno-printf-return-value, -fprintf-return-value
+.. option:: -fno-printf-return-value
 
   Do not substitute constants for known return value of formatted output
   functions such as ``sprintf``, ``snprintf``, ``vsprintf``, and
@@ -1725,6 +1773,10 @@ optimizations to be performed is desired.
   with the :option:`-Wformat-overflow` and :option:`-Wformat-truncation`
   options.  The :option:`-fprintf-return-value` option is enabled by default.
 
+.. option:: -fprintf-return-value
+
+  Default option value for :option:`-fno-printf-return-value`.
+
 .. option:: -fno-peephole, -fno-peephole2, -fpeephole, -fpeephole2
 
   Disable any machine-specific peephole optimizations.  The difference
@@ -1735,7 +1787,7 @@ optimizations to be performed is desired.
   :option:`-fpeephole` is enabled by default.
   :option:`-fpeephole2` enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -fno-guess-branch-probability, -fguess-branch-probability
+.. option:: -fno-guess-branch-probability
 
   Do not guess branch probabilities using heuristics.
 
@@ -1754,6 +1806,10 @@ optimizations to be performed is desired.
 
   The default is :option:`-fguess-branch-probability` at levels
   :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
+
+.. option:: -fguess-branch-probability
+
+  Default option value for :option:`-fno-guess-branch-probability`.
 
 .. option:: -freorder-blocks
 
@@ -1983,7 +2039,7 @@ optimizations to be performed is desired.
 
   Enabled by default.
 
-.. option:: -fno-toplevel-reorder, -ftoplevel-reorder
+.. option:: -fno-toplevel-reorder
 
   Do not reorder top-level functions, variables, and ``asm``
   statements.  Output them in the same order that they appear in the
@@ -1996,6 +2052,10 @@ optimizations to be performed is desired.
   also at :option:`-O0` if :option:`-fsection-anchors` is explicitly requested.
   Additionally :option:`-fno-toplevel-reorder` implies
   :option:`-fno-section-anchors`.
+
+.. option:: -ftoplevel-reorder
+
+  Default option value for :option:`-fno-toplevel-reorder`.
 
 .. option:: -fweb
 
@@ -2488,7 +2548,7 @@ correctness.  All must be specifically enabled.
   for math functions. It may, however, yield faster code for programs
   that do not require the guarantees of these specifications.
 
-.. option:: -fno-math-errno, -fmath-errno
+.. option:: -fno-math-errno
 
   Do not set ``errno`` after calling math functions that are executed
   with a single instruction, e.g., ``sqrt``.  A program that relies on
@@ -2506,6 +2566,10 @@ correctness.  All must be specifically enabled.
   On Darwin systems, the math library never sets ``errno``.  There is
   therefore no reason for the compiler to consider the possibility that
   it might, and :option:`-fno-math-errno` is the default.
+
+.. option:: -fmath-errno
+
+  Default option value for :option:`-fno-math-errno`.
 
 .. option:: -funsafe-math-optimizations
 
@@ -2565,7 +2629,7 @@ correctness.  All must be specifically enabled.
 
   The default is :option:`-fno-finite-math-only`.
 
-.. option:: -fno-signed-zeros, -fsigned-zeros
+.. option:: -fno-signed-zeros
 
   Allow optimizations for floating-point arithmetic that ignore the
   signedness of zero.  IEEE arithmetic specifies the behavior of
@@ -2575,7 +2639,11 @@ correctness.  All must be specifically enabled.
 
   The default is :option:`-fsigned-zeros`.
 
-.. option:: -fno-trapping-math, -ftrapping-math
+.. option:: -fsigned-zeros
+
+  Default option value for :option:`-fno-signed-zeros`.
+
+.. option:: -fno-trapping-math
 
   Compile code assuming that floating-point operations cannot generate
   user-visible traps.  These traps include division by zero, overflow,
@@ -2589,6 +2657,10 @@ correctness.  All must be specifically enabled.
   math functions.
 
   The default is :option:`-ftrapping-math`.
+
+.. option:: -ftrapping-math
+
+  Default option value for :option:`-fno-trapping-math`.
 
 .. option:: -frounding-math
 
@@ -2625,7 +2697,7 @@ correctness.  All must be specifically enabled.
   This option is experimental and does not currently guarantee to
   disable all GCC optimizations that affect signaling NaN behavior.
 
-.. option:: -fno-fp-int-builtin-inexact, -ffp-int-builtin-inexact
+.. option:: -fno-fp-int-builtin-inexact
 
   Do not allow the built-in functions ``ceil``, ``floor``,
   ``round`` and ``trunc``, and their ``float`` and ``long
@@ -2642,6 +2714,10 @@ correctness.  All must be specifically enabled.
   Even if :option:`-fno-fp-int-builtin-inexact` is used, if the functions
   generate a call to a library function then the 'inexact' exception
   may be raised if the library implementation does not follow TS 18661.
+
+.. option:: -ffp-int-builtin-inexact
+
+  Default option value for :option:`-fno-fp-int-builtin-inexact`.
 
 .. option:: -fsingle-precision-constant
 

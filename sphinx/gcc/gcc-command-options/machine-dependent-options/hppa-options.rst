@@ -50,12 +50,16 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   Prevent the compiler from using indexing address modes.  This avoids some
   rather obscure problems when compiling MIG generated code under MACH.
 
-.. option:: -mno-space-regs, -mspace-regs
+.. option:: -mno-space-regs
 
   Generate code that assumes the target has no space registers.  This allows
   GCC to generate faster indirect calls and use unscaled index address modes.
 
   Such code is suitable for level 0 PA systems and kernels.
+
+.. option:: -mspace-regs
+
+  Default option value for :option:`-mno-space-regs`.
 
 .. option:: -mfast-indirect-calls
 
@@ -153,7 +157,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   `gcc -print-prog-name=ld``.  This option is only available on the 64-bit
   HP-UX GCC, i.e. configured with :samp:`hppa*64*-*-hpux*`.
 
-.. option:: -mlong-calls, -mno-long-calls
+.. option:: -mlong-calls
 
   Generate code that uses long call sequences.  This ensures that a call
   is always able to reach linker generated stubs.  The default is to generate
@@ -179,6 +183,10 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   symbol-difference or pc-relative calls should be relatively small.
   However, an indirect call is used on 32-bit ELF systems in pic code
   and it is quite long.
+
+.. option:: -mno-long-calls
+
+  Default option value for :option:`-mlong-calls`.
 
 .. option:: -munix=unix-std
 

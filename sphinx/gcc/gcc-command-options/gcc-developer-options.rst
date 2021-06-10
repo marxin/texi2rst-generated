@@ -798,11 +798,15 @@ The files are created in the directory of the output file.
     # enable tree full unroll
        -fenable-tree-unroll
 
-.. option:: -fchecking, -fchecking=n, -fno-checking
+.. option:: -fchecking, -fchecking=n
 
   Enable internal consistency checking.  The default depends on
   the compiler configuration.  :option:`-fchecking`:samp:`=2` enables further
   internal consistency checking that might affect code generation.
+
+.. option:: -fno-checking
+
+  Default option value for :option:`-fchecking`.
 
 .. option:: -frandom-seed=string
 
@@ -930,10 +934,14 @@ The files are created in the directory of the output file.
   many times it is given.  This is mainly intended to be used with
   :option:`-fcompare-debug`.
 
-.. option:: -fvar-tracking-assignments-toggle, -fno-var-tracking-assignments-toggle
+.. option:: -fvar-tracking-assignments-toggle
 
   Toggle :option:`-fvar-tracking-assignments`, in the same way that
   :option:`-gtoggle` toggles :option:`-g`.
+
+.. option:: -fno-var-tracking-assignments-toggle
+
+  Default option value for :option:`-fvar-tracking-assignments-toggle`.
 
 .. option:: -Q
 

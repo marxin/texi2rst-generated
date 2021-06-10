@@ -56,7 +56,7 @@ These :samp:`-m` options are defined for the ARM port:
   is generated when :option:`-mthumb-interwork` is specified.  In AAPCS
   configurations this option is meaningless.
 
-.. option:: -mno-sched-prolog, -msched-prolog
+.. option:: -mno-sched-prolog
 
   Prevent the reordering of instructions in the function prologue, or the
   merging of those instruction with the instructions in the function's
@@ -65,6 +65,10 @@ These :samp:`-m` options are defined for the ARM port:
   different function prologues), and this information can be used to
   locate the start of functions inside an executable piece of code.  The
   default is :option:`-msched-prolog`.
+
+.. option:: -msched-prolog
+
+  Default option value for :option:`-mno-sched-prolog`.
 
 .. option:: -mfloat-abi=name
 
