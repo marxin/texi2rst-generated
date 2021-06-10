@@ -26,17 +26,35 @@ I'm a demo documentation page.
     This is the warning level of :option:`-Wshift-overflow2` and ...
 
 .. option:: -Wno-shift-overflow3
-.. option:: -Wshift-overflow3=n (non-default), -Wshift-overflow3 (non-default)
+
+  Default option value for :option:`-Wshift-overflow`.
+
+.. option:: -Wshift-overflow3=n, -Wshift-overflow3
 
   These options control warnings about left shift overflows.
 
   ``-Wshift-overflow3=1``
     This is the warning level of :option:`-Wshift-overflow3` and ...
 
+  Enabled by :option:`-Wall`.
+
+
 .. option:: -Wall
 
 Enable it all :)
 
 I am a :command:`super-command`.
+
+Show it::
+
+  gcc a.c
+  ./a.out
+
+Code block:
+
+.. code-block::
+
+  gcc a.c
+  ./a.out
 
 :ref:`genindex`
