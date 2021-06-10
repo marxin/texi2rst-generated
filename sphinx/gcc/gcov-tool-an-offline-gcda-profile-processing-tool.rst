@@ -19,6 +19,4 @@ manipulate or process gcda profile files offline.
 
 .. only:: man
 
-  .. toctree::
-
-  copyright
+  ..include:: copyright.rst

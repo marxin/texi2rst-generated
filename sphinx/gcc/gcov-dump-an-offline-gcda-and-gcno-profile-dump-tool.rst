@@ -47,6 +47,4 @@ Options
 
 .. only:: man
 
-  .. toctree::
-
-    copyright
+  .. include:: copyright.rst

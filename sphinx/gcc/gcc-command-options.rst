@@ -127,6 +127,4 @@ See :ref:`option-index`, for an index to GCC's options.
 
 .. only:: man
 
-  .. toctree::
-
-    copyright
+  .. include:: copyright.rst

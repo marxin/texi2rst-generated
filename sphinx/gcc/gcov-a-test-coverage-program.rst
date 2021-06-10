@@ -22,6 +22,4 @@ test code coverage in your programs.
 
 .. only:: man
 
-  .. toctree::
-
-  copyright
+  ..include:: copyright.rst
