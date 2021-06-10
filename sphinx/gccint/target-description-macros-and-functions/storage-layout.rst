@@ -628,7 +628,7 @@ See :ref:`run-time-target`.
   fundamental types as :samp:`u {n}{name}`, where :samp:`{name}`
   is the name used for the type in source code, and :samp:`{n}` is the
   length of :samp:`{name}` in decimal.  Encode qualified versions of
-  ordinary types as :samp:`U :samp:`{n}`:samp:`{name}{code}`, where
+  ordinary types as :samp:`U{n}{name}{code}`, where
   :samp:`{name}` is the name used for the type qualifier in source code,
   :samp:`{n}` is the length of :samp:`{name}` as above, and :samp:`{code}` is the
   code used to represent the unqualified version of this type.  (See

@@ -92,8 +92,8 @@ and :samp:`\n\r` as a single new line indicator.  This allows it to
 transparently preprocess MS-DOS, Macintosh and Unix files without their
 needing to pass through a special filter beforehand.
 
-We also decided to treat a backslash, either :samp:`\` or the trigraph
-:samp:`??/`, separated from one of the above newline indicators by
+We also decided to treat a backslash, either ``\`` or the trigraph
+``??/``, separated from one of the above newline indicators by
 non-comment whitespace only, as intending to escape the newline.  It
 tends to be a typing mistake, and cannot reasonably be mistaken for
 anything else in any of the C-family grammars.  Since handling it this
@@ -110,7 +110,7 @@ The most painful aspect of lexing ISO-standard C and C++ is handling
 trigraphs and backlash-escaped newlines.  Trigraphs are processed before
 any interpretation of the meaning of a character is made, and unfortunately
 there is a trigraph representation for a backslash, so it is possible for
-the trigraph :samp:`??/` to introduce an escaped newline.
+the trigraph ``??/`` to introduce an escaped newline.
 
 Escaped newlines are tedious because theoretically they can occur
 anywhere---between the :samp:`+` and :samp:`=` of the :samp:`+=` token,
@@ -123,7 +123,7 @@ cannot assume that it can scan forwards until the first non-number
 character and be done with it, because this could be the :samp:`\`
 introducing an escaped newline, or the :samp:`?` introducing the trigraph
 sequence that represents the :samp:`\` of an escaped newline.  If it
-encounters a :samp:`?` or :samp:`\`, it calls ``skip_escaped_newlines``
+encounters a ``?` or :samp:`\`, it calls ``skip_escaped_newlines``
 to skip over any potential escaped newlines before checking whether the
 number has been finished.
 

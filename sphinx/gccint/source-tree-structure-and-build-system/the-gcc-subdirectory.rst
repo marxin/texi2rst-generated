@@ -645,7 +645,7 @@ A front end for a language in GCC has the following parts:
   link to such information in the front end's own manual.
 
 * Details of source file suffixes for that language and :option:`-x`
-  `:samp:`{lang}` options supported, in gcc/doc/invoke.texi.
+  :samp:`{lang}` options supported, in gcc/doc/invoke.texi.
 
 * Entries in ``default_compilers`` in gcc.c for source file
   suffixes for that language.

@@ -22,9 +22,9 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   representation for unformatted files; :samp:`little-endian`, use little-endian
   representation for unformatted files.
 
-  *This option has an effect only when used in the main program.
+  This option has an effect only when used in the main program.
   The ``CONVERT`` specifier and the GFORTRAN_CONVERT_UNIT environment
-  variable override the default specified by :option:`-fconvert`.*
+  variable override the default specified by :option:`-fconvert`.
 
 .. option:: -frecord-marker=length
 
