@@ -178,7 +178,7 @@ it.
   table is exact at each instruction boundary, so it can be used for stack
   unwinding from asynchronous events (such as debugger or garbage collector).
 
-.. option:: -fno-gnu-unique, -fgnu-unique
+.. option:: -fno-gnu-unique
 
   On systems with recent GNU assembler and C library, the C++ compiler
   uses the ``STB_GNU_UNIQUE`` binding to make sure that definitions
@@ -191,6 +191,10 @@ it.
   DSOs; if your program relies on reinitialization of a DSO via
   ``dlclose`` and ``dlopen``, you can use
   :option:`-fno-gnu-unique`.
+
+.. option:: -fgnu-unique
+
+  Default option value for :option:`-fno-gnu-unique`.
 
 .. option:: -fpcc-struct-return
 
@@ -249,7 +253,7 @@ it.
   code that is not binary compatible with code generated without that switch.
   Use it to conform to a non-default application binary interface.
 
-.. option:: -fcommon, -fno-common
+.. option:: -fcommon
 
   .. index:: tentative definitions
 
@@ -271,9 +275,17 @@ it.
   a speed and code size penalty on global variable references.  It is mainly
   useful to enable legacy code to link without errors.
 
-.. option:: -fno-ident, -fident
+.. option:: -fno-common
+
+  Default option value for :option:`-fcommon`.
+
+.. option:: -fno-ident
 
   Ignore the ``#ident`` directive.
+
+.. option:: -fident
+
+  Default option value for :option:`-fno-ident`.
 
 .. option:: -finhibit-size-directive
 
@@ -432,7 +444,7 @@ it.
   ``__pie__`` and ``__PIE__``.  The macros have the value 1
   for :option:`-fpie` and 2 for :option:`-fPIE`.
 
-.. option:: -fno-plt, -fplt
+.. option:: -fno-plt
 
   Do not use the PLT for external function calls in position-independent code.
   Instead, load the callee address at call sites from the GOT and branch to it.
@@ -449,7 +461,11 @@ it.
   In position-dependent code, a few targets also convert calls to
   functions that are marked to not use the PLT to use the GOT instead.
 
-.. option:: -fno-jump-tables, -fjump-tables
+.. option:: -fplt
+
+  Default option value for :option:`-fno-plt`.
+
+.. option:: -fno-jump-tables
 
   Do not use jump tables for switch statements even where it would be
   more efficient than other code generation strategies.  This option is
@@ -458,10 +474,18 @@ it.
   reference the address of a jump table.  On some targets, jump tables
   do not require a GOT and this option is not needed.
 
-.. option:: -fno-bit-tests, -fbit-tests
+.. option:: -fjump-tables
+
+  Default option value for :option:`-fno-jump-tables`.
+
+.. option:: -fno-bit-tests
 
   Do not use bit tests for switch statements even where it would be
   more efficient than other code generation strategies.
+
+.. option:: -fbit-tests
+
+  Default option value for :option:`-fno-bit-tests`.
 
 .. option:: -ffixed-reg
 

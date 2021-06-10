@@ -42,9 +42,13 @@ warnings but control the kinds of diagnostics produced by GCC.
 
   Inhibit all warning messages.
 
-.. option:: -Werror, -Wno-error
+.. option:: -Werror
 
   Make all warnings into errors.
+
+.. option:: -Wno-error
+
+  Default option value for :option:`-Werror`.
 
 .. option:: -Werror=
 
@@ -66,11 +70,19 @@ warnings but control the kinds of diagnostics produced by GCC.
   :option:`-W`:samp:`{foo}`.  However, :option:`-Wno-error`:samp:`={foo}` does not
   imply anything.
 
-.. option:: -Wfatal-errors, -Wno-fatal-errors
+.. option:: -Wno-error=
+
+  Default option value for :option:`-Werror=`.
+
+.. option:: -Wfatal-errors
 
   This option causes the compiler to abort compilation on the first error
   occurred rather than trying to keep going and printing further error
   messages.
+
+.. option:: -Wno-fatal-errors
+
+  Default option value for :option:`-Wfatal-errors`.
 
 You can request many specific warnings with options beginning with
 :samp:`-W`, for example :option:`-Wimplicit` to request warnings on
@@ -106,7 +118,7 @@ enabled. For example :option:`-Wsuggest-final-types` is more effective
 with link-time optimization and :option:`-Wmaybe-uninitialized` does not
 warn at all unless optimization is enabled.
 
-.. option:: -Wpedantic, -pedantic, -Wno-pedantic
+.. option:: -Wpedantic, -pedantic
 
   Issue all the warnings demanded by strict ISO C and ISO C++;
   reject all programs that use forbidden extensions, and some other
@@ -149,6 +161,10 @@ warn at all unless optimization is enabled.
   features the compiler supports with the given option, and there would be
   nothing to warn about.)
 
+.. option:: -Wno-pedantic
+
+  Default option value for :option:`-Wpedantic`.
+
 .. option:: -pedantic-errors
 
   Give an error whenever the :dfn:`base standard` (see :option:`-Wpedantic` )
@@ -158,7 +174,7 @@ warn at all unless optimization is enabled.
   equivalent to :option:`-Werror`:samp:`=pedantic`, since there are errors enabled
   by this option and not enabled by the latter and vice versa.
 
-.. option:: -Wall, -Wno-all
+.. option:: -Wall
 
   This enables all the warnings about constructions that some users
   consider questionable, and that are easy to avoid (or modify to
@@ -234,7 +250,11 @@ warn at all unless optimization is enabled.
   the warning. Some of them are enabled by :option:`-Wextra` but many of
   them must be enabled individually.
 
-.. option:: -Wextra, -Wno-extra
+.. option:: -Wno-all
+
+  Default option value for :option:`-Wall`.
+
+.. option:: -Wextra
 
   This enables some extra warning flags that are not enabled by
   :option:`-Wall`. (This option used to be called :option:`-W`.  The older
@@ -278,7 +298,11 @@ warn at all unless optimization is enabled.
   * (C++ only) A base class is not initialized in the copy constructor
     of a derived class.
 
-.. option:: -Wabi, -Wno-abi
+.. option:: -Wno-extra
+
+  Default option value for :option:`-Wextra`.
+
+.. option:: -Wabi
 
   .. note::
 
@@ -394,14 +418,22 @@ warn at all unless optimization is enabled.
 
     ``union U`` is now always passed in memory.
 
-.. option:: -Wchar-subscripts, -Wno-char-subscripts
+.. option:: -Wno-abi
+
+  Default option value for :option:`-Wabi`.
+
+.. option:: -Wchar-subscripts
 
   Warn if an array subscript has type ``char``.  This is a common cause
   of error, as programmers often forget that this type is signed on some
   machines.
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wno-coverage-mismatch, -Wcoverage-mismatch
+.. option:: -Wno-char-subscripts
+
+  Default option value for :option:`-Wchar-subscripts`.
+
+.. option:: -Wno-coverage-mismatch
 
   Warn if feedback profiles do not match when using the
   :option:`-fprofile-use` option.
@@ -416,6 +448,10 @@ warn at all unless optimization is enabled.
   case of very minor changes such as bug fixes to an existing code-base.
   Completely disabling the warning is not recommended.
 
+.. option:: -Wcoverage-mismatch
+
+  Default option value for :option:`-Wno-coverage-mismatch`.
+
 ``-Wno-cpp``
   (C, Objective-C, C++, Objective-C++ and Fortran only)
 
@@ -425,7 +461,7 @@ warn at all unless optimization is enabled.
 
   Suppress warning messages emitted by ``#warning`` directives.
 
-.. option:: -Wdouble-promotion, -Wno-double-promotion
+.. option:: -Wdouble-promotion
 
   .. note::
 
@@ -452,7 +488,11 @@ warn at all unless optimization is enabled.
   the compiler performs the entire computation with ``double``
   because the floating-point literal is a ``double``.
 
-.. option:: -Wduplicate-decl-specifier, -Wno-duplicate-decl-specifier
+.. option:: -Wno-double-promotion
+
+  Default option value for :option:`-Wdouble-promotion`.
+
+.. option:: -Wduplicate-decl-specifier
 
   .. note::
 
@@ -462,7 +502,11 @@ warn at all unless optimization is enabled.
   ``restrict`` or ``_Atomic`` specifier.  This warning is enabled by
   :option:`-Wall`.
 
-.. option:: -Wformat, -Wformat=n, -Wno-format
+.. option:: -Wno-duplicate-decl-specifier
+
+  Default option value for :option:`-Wduplicate-decl-specifier`.
+
+.. option:: -Wformat, -Wformat=n
 
   Check calls to ``printf`` and ``scanf``, etc., to make sure that
   the arguments supplied have types appropriate to the format string
@@ -503,12 +547,20 @@ warn at all unless optimization is enabled.
     equivalent to :option:`-Wformat -Wformat-nonliteral -Wformat-security
     -Wformat-y2k`.
 
-.. option:: -Wno-format-contains-nul, -Wformat-contains-nul
+.. option:: -Wno-format
+
+  Default option value for :option:`-Wformat`.
+
+.. option:: -Wno-format-contains-nul
 
   If :option:`-Wformat` is specified, do not warn about format strings that
   contain NUL bytes.
 
-.. option:: -Wno-format-extra-args, -Wformat-extra-args
+.. option:: -Wformat-contains-nul
+
+  Default option value for :option:`-Wno-format-contains-nul`.
+
+.. option:: -Wno-format-extra-args
 
   If :option:`-Wformat` is specified, do not warn about excess arguments to a
   ``printf`` or ``scanf`` format function.  The C standard specifies
@@ -522,7 +574,11 @@ warn at all unless optimization is enabled.
   warning if the unused arguments are all pointers, since the Single
   Unix Specification says that such unused arguments are allowed.
 
-.. option:: -Wformat-overflow, -Wformat-overflow=level, -Wno-format-overflow
+.. option:: -Wformat-extra-args
+
+  Default option value for :option:`-Wno-format-extra-args`.
+
+.. option:: -Wformat-overflow, -Wformat-overflow=level
 
   Warn about calls to formatted input/output functions such as ``sprintf``
   and ``vsprintf`` that might overflow the destination buffer.  When the
@@ -532,7 +588,7 @@ warn at all unless optimization is enabled.
   will in most cases improve the accuracy of the warning, it may also
   result in false positives.
 
-  .. option:: -Wformat-overflow, -Wformat-overflow=1, -Wno-format-overflow
+  .. option:: -Wformat-overflow, -Wformat-overflow=1
 
     Level :samp:`{1}` of :option:`-Wformat-overflow` enabled by :option:`-Wformat`
     employs a conservative approach that warns only about calls that most
@@ -556,6 +612,10 @@ warn at all unless optimization is enabled.
         char buf [13];
         sprintf (buf, "a = %i, b = %i\n", a, b);
       }
+
+  .. option:: -Wno-format-overflow
+
+    Default option value for :option:`-Wformat-overflow`.
 
   ``-Wformat-overflow=2``
     Level :samp:`{2}` warns also about calls that might overflow the destination
@@ -595,18 +655,30 @@ warn at all unless optimization is enabled.
         sprintf (buf, "a = %hi, b = %i\n", a, (short)b);
       }
 
-.. option:: -Wno-format-zero-length, -Wformat-zero-length
+.. option:: -Wno-format-overflow
+
+  Default option value for :option:`-Wformat-overflow`.
+
+.. option:: -Wno-format-zero-length
 
   If :option:`-Wformat` is specified, do not warn about zero-length formats.
   The C standard specifies that zero-length formats are allowed.
 
-.. option:: -Wformat-nonliteral, -Wno-format-nonliteral
+.. option:: -Wformat-zero-length
+
+  Default option value for :option:`-Wno-format-zero-length`.
+
+.. option:: -Wformat-nonliteral
 
   If :option:`-Wformat` is specified, also warn if the format string is not a
   string literal and so cannot be checked, unless the format function
   takes its format arguments as a ``va_list``.
 
-.. option:: -Wformat-security, -Wno-format-security
+.. option:: -Wno-format-nonliteral
+
+  Default option value for :option:`-Wformat-nonliteral`.
+
+.. option:: -Wformat-security
 
   If :option:`-Wformat` is specified, also warn about uses of format
   functions that represent possible security problems.  At present, this
@@ -618,12 +690,20 @@ warn at all unless optimization is enabled.
   in future warnings may be added to :option:`-Wformat-security` that are not
   included in :option:`-Wformat-nonliteral`.)
 
-.. option:: -Wformat-signedness, -Wno-format-signedness
+.. option:: -Wno-format-security
+
+  Default option value for :option:`-Wformat-security`.
+
+.. option:: -Wformat-signedness
 
   If :option:`-Wformat` is specified, also warn if the format string
   requires an unsigned argument and the argument is signed and vice versa.
 
-.. option:: -Wformat-truncation, -Wformat-truncation=level, -Wno-format-truncation
+.. option:: -Wno-format-signedness
+
+  Default option value for :option:`-Wformat-signedness`.
+
+.. option:: -Wformat-truncation, -Wformat-truncation=level
 
   Warn about calls to formatted input/output functions such as ``snprintf``
   and ``vsnprintf`` that might result in output truncation.  When the exact
@@ -634,24 +714,36 @@ warn at all unless optimization is enabled.
   in false positives.  Except as noted otherwise, the option uses the same
   logic :option:`-Wformat-overflow`.
 
-  .. option:: -Wformat-truncation, -Wformat-truncation=1, -Wno-format-truncation
+  .. option:: -Wformat-truncation, -Wformat-truncation=1
 
     Level :samp:`{1}` of :option:`-Wformat-truncation` enabled by :option:`-Wformat`
     employs a conservative approach that warns only about calls to bounded
     functions whose return value is unused and that will most likely result
     in output truncation.
 
+  .. option:: -Wno-format-truncation
+
+    Default option value for :option:`-Wformat-truncation`.
+
   ``-Wformat-truncation=2``
     Level :samp:`{2}` warns also about calls to bounded functions whose return
     value is used and that might result in truncation given an argument of
     sufficient length or magnitude.
 
-.. option:: -Wformat-y2k, -Wno-format-y2k
+.. option:: -Wno-format-truncation
+
+  Default option value for :option:`-Wformat-truncation`.
+
+.. option:: -Wformat-y2k
 
   If :option:`-Wformat` is specified, also warn about ``strftime``
   formats that may yield only a two-digit year.
 
-.. option:: -Wnonnull, -Wno-nonnull
+.. option:: -Wno-format-y2k
+
+  Default option value for :option:`-Wformat-y2k`.
+
+.. option:: -Wnonnull
 
   Warn about passing a null pointer for arguments marked as
   requiring a non-null value by the ``nonnull`` function attribute.
@@ -659,7 +751,11 @@ warn at all unless optimization is enabled.
   :option:`-Wnonnull` is included in :option:`-Wall` and :option:`-Wformat`.  It
   can be disabled with the :option:`-Wno-nonnull` option.
 
-.. option:: -Wnonnull-compare, -Wno-nonnull-compare
+.. option:: -Wno-nonnull
+
+  Default option value for :option:`-Wnonnull`.
+
+.. option:: -Wnonnull-compare
 
   Warn when comparing an argument marked with the ``nonnull``
   function attribute against null inside the function.
@@ -667,7 +763,11 @@ warn at all unless optimization is enabled.
   :option:`-Wnonnull-compare` is included in :option:`-Wall`.  It
   can be disabled with the :option:`-Wno-nonnull-compare` option.
 
-.. option:: -Wnull-dereference, -Wno-null-dereference
+.. option:: -Wno-nonnull-compare
+
+  Default option value for :option:`-Wnonnull-compare`.
+
+.. option:: -Wnull-dereference
 
   Warn if the compiler detects paths that trigger erroneous or
   undefined behavior due to dereferencing a null pointer.  This option
@@ -675,7 +775,11 @@ warn at all unless optimization is enabled.
   which is enabled by optimizations in most targets.  The precision of
   the warnings depends on the optimization options used.
 
-.. option:: -Winit-self, -Wno-init-self
+.. option:: -Wno-null-dereference
+
+  Default option value for :option:`-Wnull-dereference`.
+
+.. option:: -Winit-self
 
   .. note::
 
@@ -697,7 +801,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall` in C++.
 
-.. option:: -Wno-implicit-int, -Wimplicit-int
+.. option:: -Wno-init-self
+
+  Default option value for :option:`-Winit-self`.
+
+.. option:: -Wno-implicit-int
 
   .. note::
 
@@ -707,7 +815,11 @@ warn at all unless optimization is enabled.
   This warning is enabled by default in C99 and later dialects of C,
   and also by :option:`-Wall`.
 
-.. option:: -Wno-implicit-function-declaration, -Wimplicit-function-declaration
+.. option:: -Wimplicit-int
+
+  Default option value for :option:`-Wno-implicit-int`.
+
+.. option:: -Wno-implicit-function-declaration
 
   .. note::
 
@@ -718,7 +830,11 @@ warn at all unless optimization is enabled.
   and also by :option:`-Wall`.
   The warning is made into an error by :option:`-pedantic-errors`.
 
-.. option:: -Wimplicit, -Wno-implicit
+.. option:: -Wimplicit-function-declaration
+
+  Default option value for :option:`-Wno-implicit-function-declaration`.
+
+.. option:: -Wimplicit
 
   .. note::
 
@@ -727,11 +843,19 @@ warn at all unless optimization is enabled.
   Same as :option:`-Wimplicit-int` and :option:`-Wimplicit-function-declaration`.
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wimplicit-fallthrough, -Wno-implicit-fallthrough
+.. option:: -Wno-implicit
+
+  Default option value for :option:`-Wimplicit`.
+
+.. option:: -Wimplicit-fallthrough
 
   :option:`-Wimplicit-fallthrough` is the same as :option:`-Wimplicit-fallthrough`:samp:`=3`
   and :option:`-Wno-implicit-fallthrough` is the same as
   :option:`-Wimplicit-fallthrough`:samp:`=0`.
+
+.. option:: -Wno-implicit-fallthrough
+
+  Default option value for :option:`-Wimplicit-fallthrough`.
 
 .. option:: -Wimplicit-fallthrough=n
 
@@ -854,7 +978,7 @@ warn at all unless optimization is enabled.
 
   The :option:`-Wimplicit-fallthrough`:samp:`=3` warning is enabled by :option:`-Wextra`.
 
-.. option:: -Wno-if-not-aligned, -Wif-not-aligned
+.. option:: -Wno-if-not-aligned
 
   .. note::
 
@@ -863,7 +987,11 @@ warn at all unless optimization is enabled.
   Control if warnings triggered by the ``warn_if_not_aligned`` attribute
   should be issued.  These warnings are enabled by default.
 
-.. option:: -Wignored-qualifiers, -Wno-ignored-qualifiers
+.. option:: -Wif-not-aligned
+
+  Default option value for :option:`-Wno-if-not-aligned`.
+
+.. option:: -Wignored-qualifiers
 
   .. note::
 
@@ -879,7 +1007,11 @@ warn at all unless optimization is enabled.
 
   This warning is also enabled by :option:`-Wextra`.
 
-.. option:: -Wno-ignored-attributes, -Wignored-attributes
+.. option:: -Wno-ignored-qualifiers
+
+  Default option value for :option:`-Wignored-qualifiers`.
+
+.. option:: -Wno-ignored-attributes
 
   .. note::
 
@@ -891,7 +1023,11 @@ warn at all unless optimization is enabled.
   to drop an attribute, not that the attribute is either unknown, used in a
   wrong place, etc.  This warning is enabled by default.
 
-.. option:: -Wmain, -Wno-main
+.. option:: -Wignored-attributes
+
+  Default option value for :option:`-Wno-ignored-attributes`.
+
+.. option:: -Wmain
 
   Warn if the type of ``main`` is suspicious.  ``main`` should be
   a function with external linkage, returning int, taking either zero
@@ -899,7 +1035,11 @@ warn at all unless optimization is enabled.
   is enabled by default in C++ and is enabled by either :option:`-Wall`
   or :option:`-Wpedantic`.
 
-.. option:: -Wmisleading-indentation, -Wno-misleading-indentation
+.. option:: -Wno-main
+
+  Default option value for :option:`-Wmain`.
+
+.. option:: -Wmisleading-indentation
 
   .. note::
 
@@ -941,7 +1081,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall` in C and C++.
 
-.. option:: -Wmissing-attributes, -Wno-missing-attributes
+.. option:: -Wno-misleading-indentation
+
+  Default option value for :option:`-Wmisleading-indentation`.
+
+.. option:: -Wmissing-attributes
 
   Warn when a declaration of a function is missing one or more attributes
   that a related function is declared with and whose absence may adversely
@@ -988,7 +1132,11 @@ warn at all unless optimization is enabled.
     void* __attribute__ ((malloc))   // missing alloc_size
     allocate<void> (size_t);
 
-.. option:: -Wmissing-braces, -Wno-missing-braces
+.. option:: -Wno-missing-attributes
+
+  Default option value for :option:`-Wmissing-attributes`.
+
+.. option:: -Wmissing-braces
 
   Warn if an aggregate or union initializer is not fully bracketed.  In
   the following example, the initializer for ``a`` is not fully
@@ -1001,7 +1149,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wmissing-include-dirs, -Wno-missing-include-dirs
+.. option:: -Wno-missing-braces
+
+  Default option value for :option:`-Wmissing-braces`.
+
+.. option:: -Wmissing-include-dirs
 
   .. note::
 
@@ -1009,7 +1161,11 @@ warn at all unless optimization is enabled.
 
   Warn if a user-supplied include directory does not exist.
 
-.. option:: -Wno-missing-profile, -Wmissing-profile
+.. option:: -Wno-missing-include-dirs
+
+  Default option value for :option:`-Wmissing-include-dirs`.
+
+.. option:: -Wno-missing-profile
 
   This option controls warnings if feedback profiles are missing when using the
   :option:`-fprofile-use` option.
@@ -1027,7 +1183,11 @@ warn at all unless optimization is enabled.
   disable the warning, but this is not recommended and should be done only
   when non-existent profile data is justified.
 
-.. option:: -Wno-mismatched-dealloc, -Wmismatched-dealloc
+.. option:: -Wmissing-profile
+
+  Default option value for :option:`-Wno-missing-profile`.
+
+.. option:: -Wno-mismatched-dealloc
 
   Warn for calls to deallocation functions with pointer arguments returned
   from from allocations functions for which the former isn't a suitable
@@ -1060,7 +1220,11 @@ warn at all unless optimization is enabled.
 
   Option :option:`-Wmismatched-dealloc` is enabled by default.
 
-.. option:: -Wmultistatement-macros, -Wno-multistatement-macros
+.. option:: -Wmismatched-dealloc
+
+  Default option value for :option:`-Wno-mismatched-dealloc`.
+
+.. option:: -Wmultistatement-macros
 
   Warn about unsafe multiple statement macros that appear to be guarded
   by a clause such as ``if``, ``else``, ``for``, ``switch``, or
@@ -1086,7 +1250,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall` in C and C++.
 
-.. option:: -Wparentheses, -Wno-parentheses
+.. option:: -Wno-multistatement-macros
+
+  Default option value for :option:`-Wmultistatement-macros`.
+
+.. option:: -Wparentheses
 
   Warn if parentheses are omitted in certain contexts, such
   as when there is an assignment in a context where a truth value
@@ -1117,7 +1285,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wsequence-point, -Wno-sequence-point
+.. option:: -Wno-parentheses
+
+  Default option value for :option:`-Wparentheses`.
+
+.. option:: -Wsequence-point
 
   Warn about code that may have undefined semantics because of violations
   of sequence point rules in the C and C++ standards.
@@ -1169,12 +1341,20 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall` for C and C++.
 
-.. option:: -Wno-return-local-addr, -Wreturn-local-addr
+.. option:: -Wno-sequence-point
+
+  Default option value for :option:`-Wsequence-point`.
+
+.. option:: -Wno-return-local-addr
 
   Do not warn about returning a pointer (or in C++, a reference) to a
   variable that goes out of scope after the function returns.
 
-.. option:: -Wreturn-type, -Wno-return-type
+.. option:: -Wreturn-local-addr
+
+  Default option value for :option:`-Wno-return-local-addr`.
+
+.. option:: -Wreturn-type
 
   Warn whenever a function is defined with a return type that defaults
   to ``int``.  Also warn about any ``return`` statement with no
@@ -1196,22 +1376,38 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by default in C++ and by :option:`-Wall` otherwise.
 
-.. option:: -Wno-shift-count-negative, -Wshift-count-negative
+.. option:: -Wno-return-type
+
+  Default option value for :option:`-Wreturn-type`.
+
+.. option:: -Wno-shift-count-negative
 
   Controls warnings if a shift count is negative.
   This warning is enabled by default.
 
-.. option:: -Wno-shift-count-overflow, -Wshift-count-overflow
+.. option:: -Wshift-count-negative
+
+  Default option value for :option:`-Wno-shift-count-negative`.
+
+.. option:: -Wno-shift-count-overflow
 
   Controls warnings if a shift count is greater than or equal to the bit width
   of the type.  This warning is enabled by default.
 
-.. option:: -Wshift-negative-value, -Wno-shift-negative-value
+.. option:: -Wshift-count-overflow
+
+  Default option value for :option:`-Wno-shift-count-overflow`.
+
+.. option:: -Wshift-negative-value
 
   Warn if left shifting a negative value.  This warning is enabled by
   :option:`-Wextra` in C99 and C++11 modes (and newer).
 
-.. option:: -Wno-shift-overflow, -Wshift-overflow=n, -Wshift-overflow
+.. option:: -Wno-shift-negative-value
+
+  Default option value for :option:`-Wshift-negative-value`.
+
+.. option:: -Wno-shift-overflow, -Wshift-overflow=n
 
   These options control warnings about left shift overflows.
 
@@ -1227,7 +1423,11 @@ warn at all unless optimization is enabled.
     This warning level also warns about left-shifting 1 into the sign bit,
     unless C++14 mode (or newer) is active.
 
-.. option:: -Wswitch, -Wno-switch
+.. option:: -Wshift-overflow
+
+  Default option value for :option:`-Wno-shift-overflow`.
+
+.. option:: -Wswitch
 
   Warn whenever a ``switch`` statement has an index of enumerated type
   and lacks a ``case`` for one or more of the named codes of that
@@ -1237,12 +1437,20 @@ warn at all unless optimization is enabled.
   ``default`` label).
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wswitch-default, -Wno-switch-default
+.. option:: -Wno-switch
+
+  Default option value for :option:`-Wswitch`.
+
+.. option:: -Wswitch-default
 
   Warn whenever a ``switch`` statement does not have a ``default``
   case.
 
-.. option:: -Wswitch-enum, -Wno-switch-enum
+.. option:: -Wno-switch-default
+
+  Default option value for :option:`-Wswitch-default`.
+
+.. option:: -Wswitch-enum
 
   Warn whenever a ``switch`` statement has an index of enumerated type
   and lacks a ``case`` for one or more of the named codes of that
@@ -1252,7 +1460,11 @@ warn at all unless optimization is enabled.
   warning about an omitted enumeration code even if there is a
   ``default`` label.
 
-.. option:: -Wno-switch-bool, -Wswitch-bool
+.. option:: -Wno-switch-enum
+
+  Default option value for :option:`-Wswitch-enum`.
+
+.. option:: -Wno-switch-bool
 
   Do not warn when a ``switch`` statement has an index of boolean type
   and the case values are outside the range of a boolean type.
@@ -1268,14 +1480,22 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by default for C and C++ programs.
 
-.. option:: -Wno-switch-outside-range, -Wswitch-outside-range
+.. option:: -Wswitch-bool
+
+  Default option value for :option:`-Wno-switch-bool`.
+
+.. option:: -Wno-switch-outside-range
 
   This option controls warnings when a ``switch`` case has a value
   that is outside of its
   respective type range.  This warning is enabled by default for
   C and C++ programs.
 
-.. option:: -Wno-switch-unreachable, -Wswitch-unreachable
+.. option:: -Wswitch-outside-range
+
+  Default option value for :option:`-Wno-switch-outside-range`.
+
+.. option:: -Wno-switch-unreachable
 
   Do not warn when a ``switch`` statement contains statements between the
   controlling expression and the first case label, which will never be
@@ -1307,7 +1527,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by default for C and C++ programs.
 
-.. option:: -Wsync-nand, -Wno-sync-nand
+.. option:: -Wswitch-unreachable
+
+  Default option value for :option:`-Wno-switch-unreachable`.
+
+.. option:: -Wsync-nand
 
   .. note::
 
@@ -1316,7 +1540,11 @@ warn at all unless optimization is enabled.
   Warn when ``__sync_fetch_and_nand`` and ``__sync_nand_and_fetch``
   built-in functions are used.  These functions changed semantics in GCC 4.4.
 
-.. option:: -Wunused-but-set-parameter, -Wno-unused-but-set-parameter
+.. option:: -Wno-sync-nand
+
+  Default option value for :option:`-Wsync-nand`.
+
+.. option:: -Wunused-but-set-parameter
 
   Warn whenever a function parameter is assigned to, but otherwise unused
   (aside from its declaration).
@@ -1327,7 +1555,11 @@ warn at all unless optimization is enabled.
   This warning is also enabled by :option:`-Wunused` together with
   :option:`-Wextra`.
 
-.. option:: -Wunused-but-set-variable, -Wno-unused-but-set-variable
+.. option:: -Wno-unused-but-set-parameter
+
+  Default option value for :option:`-Wunused-but-set-parameter`.
+
+.. option:: -Wunused-but-set-variable
 
   Warn whenever a local variable is assigned to, but otherwise unused
   (aside from its declaration).
@@ -1339,13 +1571,21 @@ warn at all unless optimization is enabled.
   This warning is also enabled by :option:`-Wunused`, which is enabled
   by :option:`-Wall`.
 
-.. option:: -Wunused-function, -Wno-unused-function
+.. option:: -Wno-unused-but-set-variable
+
+  Default option value for :option:`-Wunused-but-set-variable`.
+
+.. option:: -Wunused-function
 
   Warn whenever a static function is declared but not defined or a
   non-inline static function is unused.
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wunused-label, -Wno-unused-label
+.. option:: -Wno-unused-function
+
+  Default option value for :option:`-Wunused-function`.
+
+.. option:: -Wunused-label
 
   Warn whenever a label is declared but not used.
   This warning is enabled by :option:`-Wall`.
@@ -1353,7 +1593,11 @@ warn at all unless optimization is enabled.
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
 
-.. option:: -Wunused-local-typedefs, -Wno-unused-local-typedefs
+.. option:: -Wno-unused-label
+
+  Default option value for :option:`-Wunused-label`.
+
+.. option:: -Wunused-local-typedefs
 
   .. note::
 
@@ -1362,20 +1606,32 @@ warn at all unless optimization is enabled.
   Warn when a typedef locally defined in a function is not used.
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wunused-parameter, -Wno-unused-parameter
+.. option:: -Wno-unused-local-typedefs
+
+  Default option value for :option:`-Wunused-local-typedefs`.
+
+.. option:: -Wunused-parameter
 
   Warn whenever a function parameter is unused aside from its declaration.
 
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
 
-.. option:: -Wno-unused-result, -Wunused-result
+.. option:: -Wno-unused-parameter
+
+  Default option value for :option:`-Wunused-parameter`.
+
+.. option:: -Wno-unused-result
 
   Do not warn if a caller of a function marked with attribute
   ``warn_unused_result`` (see :ref:`function-attributes`) does not use
   its return value. The default is :option:`-Wunused-result`.
 
-.. option:: -Wunused-variable, -Wno-unused-variable
+.. option:: -Wunused-result
+
+  Default option value for :option:`-Wno-unused-result`.
+
+.. option:: -Wunused-variable
 
   Warn whenever a local or static variable is unused aside from its
   declaration. This option implies :option:`-Wunused-const-variable`:samp:`=1` for C,
@@ -1384,7 +1640,11 @@ warn at all unless optimization is enabled.
   To suppress this warning use the ``unused`` attribute
   (see :ref:`variable-attributes`).
 
-.. option:: -Wunused-const-variable, -Wunused-const-variable=n, -Wno-unused-const-variable
+.. option:: -Wno-unused-variable
+
+  Default option value for :option:`-Wunused-variable`.
+
+.. option:: -Wunused-const-variable, -Wunused-const-variable=n
 
   Warn whenever a constant static variable is unused aside from its declaration.
   :option:`-Wunused-const-variable`:samp:`=1` is enabled by :option:`-Wunused-variable`
@@ -1407,7 +1667,11 @@ warn at all unless optimization is enabled.
     in C++ this isn't an error and in C it might be harder to clean up all
     headers included.
 
-.. option:: -Wunused-value, -Wno-unused-value
+.. option:: -Wno-unused-const-variable
+
+  Default option value for :option:`-Wunused-const-variable`.
+
+.. option:: -Wunused-value
 
   Warn whenever a statement computes a result that is explicitly not
   used. To suppress this warning cast the unused expression to
@@ -1418,7 +1682,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wunused, -Wno-unused
+.. option:: -Wno-unused-value
+
+  Default option value for :option:`-Wunused-value`.
+
+.. option:: -Wunused
 
   All the above :option:`-Wunused` options combined.
 
@@ -1426,7 +1694,11 @@ warn at all unless optimization is enabled.
   either specify :option:`-Wextra -Wunused` (note that :option:`-Wall` implies
   :option:`-Wunused` ), or separately specify :option:`-Wunused-parameter`.
 
-.. option:: -Wuninitialized, -Wno-uninitialized
+.. option:: -Wno-unused
+
+  Default option value for :option:`-Wunused`.
+
+.. option:: -Wuninitialized
 
   Warn if an object with automatic or allocated storage duration is used
   without having been initialized.  In C++, also warn if a non-static
@@ -1454,7 +1726,11 @@ warn at all unless optimization is enabled.
   computations may be deleted by data flow analysis before the warnings
   are printed.
 
-.. option:: -Wno-invalid-memory-model, -Winvalid-memory-model
+.. option:: -Wno-uninitialized
+
+  Default option value for :option:`-Wuninitialized`.
+
+.. option:: -Wno-invalid-memory-model
 
   This option controls warnings
   for invocations of __atomic Builtins, __sync Builtins,
@@ -1474,7 +1750,11 @@ warn at all unless optimization is enabled.
 
   :option:`-Winvalid-memory-model` is enabled by default.
 
-.. option:: -Wmaybe-uninitialized, -Wno-maybe-uninitialized
+.. option:: -Winvalid-memory-model
+
+  Default option value for :option:`-Wno-invalid-memory-model`.
+
+.. option:: -Wmaybe-uninitialized
 
   For an object with automatic or allocated storage duration, if there exists
   a path from the function entry to a use of the object that is initialized,
@@ -1531,7 +1811,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall` or :option:`-Wextra`.
 
-.. option:: -Wunknown-pragmas, -Wno-unknown-pragmas
+.. option:: -Wno-maybe-uninitialized
+
+  Default option value for :option:`-Wmaybe-uninitialized`.
+
+.. option:: -Wunknown-pragmas
 
   .. index:: warning for unknown pragmas
 
@@ -1544,13 +1828,21 @@ warn at all unless optimization is enabled.
   for unknown pragmas in system header files.  This is not the case if
   the warnings are only enabled by the :option:`-Wall` command-line option.
 
-.. option:: -Wno-pragmas, -Wpragmas
+.. option:: -Wno-unknown-pragmas
+
+  Default option value for :option:`-Wunknown-pragmas`.
+
+.. option:: -Wno-pragmas
 
   Do not warn about misuses of pragmas, such as incorrect parameters,
   invalid syntax, or conflicts between pragmas.  See also
   :option:`-Wunknown-pragmas`.
 
-.. option:: -Wno-prio-ctor-dtor, -Wprio-ctor-dtor
+.. option:: -Wpragmas
+
+  Default option value for :option:`-Wno-pragmas`.
+
+.. option:: -Wno-prio-ctor-dtor
 
   Do not warn if a priority from 0 to 100 is used for constructor or destructor.
   The use of constructor and destructor attributes allow you to assign a
@@ -1559,7 +1851,11 @@ warn at all unless optimization is enabled.
   greater than 100 as the compiler reserves priority values between 0--100 for
   the implementation.
 
-.. option:: -Wstrict-aliasing, -Wno-strict-aliasing
+.. option:: -Wprio-ctor-dtor
+
+  Default option value for :option:`-Wno-prio-ctor-dtor`.
+
+.. option:: -Wstrict-aliasing
 
   This option is only active when :option:`-fstrict-aliasing` is active.
   It warns about code that might break the strict aliasing rules that the
@@ -1567,6 +1863,10 @@ warn at all unless optimization is enabled.
   cases, but does attempt to catch the more common pitfalls.  It is
   included in :option:`-Wall`.
   It is equivalent to :option:`-Wstrict-aliasing`:samp:`=3`
+
+.. option:: -Wno-strict-aliasing
+
+  Default option value for :option:`-Wstrict-aliasing`.
 
 .. option:: -Wstrict-aliasing=n
 
@@ -1601,7 +1901,7 @@ warn at all unless optimization is enabled.
   Only warns when the converted pointer is dereferenced.
   Does not warn about incomplete types.
 
-.. option:: -Wstrict-overflow, -Wstrict-overflow=n, -Wno-strict-overflow
+.. option:: -Wstrict-overflow, -Wstrict-overflow=n
 
   This option is only active when signed overflow is undefined.
   It warns about cases where the compiler optimizes based on the
@@ -1651,7 +1951,11 @@ warn at all unless optimization is enabled.
     comparisons, so this warning level gives a very large number of
     false positives.
 
-.. option:: -Wstring-compare, -Wno-string-compare
+.. option:: -Wno-strict-overflow
+
+  Default option value for :option:`-Wstrict-overflow`.
+
+.. option:: -Wstring-compare
 
   Warn for calls to ``strcmp`` and ``strncmp`` whose result is
   determined to be either zero or non-zero in tests for such equality
@@ -1674,8 +1978,12 @@ warn at all unless optimization is enabled.
 
   :option:`-Wstring-compare` is enabled by :option:`-Wextra`.
 
+.. option:: -Wno-string-compare
+
+  Default option value for :option:`-Wstring-compare`.
+
 ``-Wno-stringop-overflow``
-.. option:: -Wstringop-overflow, -Wstringop-overflow=type, -Wno-stringop-overflow
+.. option:: -Wstringop-overflow, -Wstringop-overflow=type
 
   Warn for calls to string manipulation functions such as ``memcpy`` and
   ``strcpy`` that are determined to overflow the destination buffer.  The
@@ -1714,7 +2022,7 @@ warn at all unless optimization is enabled.
 
   Option :option:`-Wstringop-overflow`:samp:`=2` is enabled by default.
 
-  .. option:: -Wstringop-overflow, -Wstringop-overflow=1, -Wno-stringop-overflow
+  .. option:: -Wstringop-overflow, -Wstringop-overflow=1
 
     The :option:`-Wstringop-overflow`:samp:`=1` option uses type-zero Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
@@ -1724,6 +2032,10 @@ warn at all unless optimization is enabled.
     one of them.  On Linux systems, when optimization is enabled at this setting
     the option warns for the same code as when the ``_FORTIFY_SOURCE`` macro
     is defined to a non-zero value.
+
+  .. option:: -Wno-stringop-overflow
+
+    Default option value for :option:`-Wstringop-overflow`.
 
   ``-Wstringop-overflow=2``
     The :option:`-Wstringop-overflow`:samp:`=2` option uses type-one Object Size Checking
@@ -1749,7 +2061,11 @@ warn at all unless optimization is enabled.
     whether to issue a warning.  Similarly to :option:`-Wstringop-overflow`:samp:`=3` this
     setting of the option may result in warnings for benign code.
 
-.. option:: -Wno-stringop-overread, -Wstringop-overread
+.. option:: -Wno-stringop-overflow
+
+  Default option value for :option:`-Wstringop-overflow`.
+
+.. option:: -Wno-stringop-overread
 
   Warn for calls to string manipulation functions such as ``memchr``, or
   ``strcpy`` that are determined to read past the end of the source
@@ -1757,7 +2073,11 @@ warn at all unless optimization is enabled.
 
   Option :option:`-Wstringop-overread` is enabled by default.
 
-.. option:: -Wno-stringop-truncation, -Wstringop-truncation
+.. option:: -Wstringop-overread
+
+  Default option value for :option:`-Wno-stringop-overread`.
+
+.. option:: -Wno-stringop-truncation
 
   Do not warn for calls to bounded string manipulation functions
   such as ``strncat``,
@@ -1814,12 +2134,16 @@ warn at all unless optimization is enabled.
   such arrays GCC issues warnings unless it can prove that the use is
   safe.  See :ref:`common-variable-attributes`.
 
+.. option:: -Wstringop-truncation
+
+  Default option value for :option:`-Wno-stringop-truncation`.
+
 .. option:: -Wsuggest-attribute=[pure|const|noreturn|format|cold|malloc]
 
   Warn for cases where adding an attribute may be beneficial. The
   attributes currently supported are listed below.
 
-  .. option:: -Wsuggest-attribute=pure
+  .. option:: -Wsuggest-attribute=pure, -Wno-suggest-attribute=pure, -Wno-suggest-attribute=const, -Wno-suggest-attribute=noreturn, -Wno-missing-noreturn, -Wno-suggest-attribute=malloc
 
     Warn about functions that might be candidates for attributes
     ``pure``, ``const`` or ``noreturn`` or ``malloc``. The compiler
@@ -1831,7 +2155,7 @@ warn at all unless optimization is enabled.
     :option:`-O` and higher.  Higher optimization levels improve the accuracy
     of the analysis.
 
-  .. option:: -Wsuggest-attribute=format
+  .. option:: -Wsuggest-attribute=format, -Wno-suggest-attribute=format, -Wno-missing-format-attribute
 
     Warn about function pointers that might be candidates for ``format``
     attributes.  Note these are only possible candidates, not absolute ones.
@@ -1858,7 +2182,11 @@ warn at all unless optimization is enabled.
     always leads to a call to another ``cold`` function such as wrappers of
     C++ ``throw`` or fatal error reporting functions leading to ``abort``.
 
-.. option:: -Walloc-zero, -Wno-alloc-zero
+  .. option:: -Wno-suggest-attribute=cold
+
+    Default option value for :option:`-Wsuggest-attribute=cold`.
+
+.. option:: -Walloc-zero
 
   Warn about calls to allocation functions decorated with attribute
   ``alloc_size`` that specify zero bytes, including those to the built-in
@@ -1867,6 +2195,10 @@ warn at all unless optimization is enabled.
   when called with a zero size differs among implementations (and in the case
   of ``realloc`` has been deprecated) relying on it may result in subtle
   portability bugs and should be avoided.
+
+.. option:: -Wno-alloc-zero
+
+  Default option value for :option:`-Walloc-zero`.
 
 .. option:: -Walloc-size-larger-than=byte-size
 
@@ -1886,9 +2218,13 @@ warn at all unless optimization is enabled.
   equivalent to :option:`-Walloc-size-larger-than`:samp:`=SIZE_MAX` or
   larger.
 
-.. option:: -Walloca, -Wno-alloca
+.. option:: -Walloca
 
   This option warns on all uses of ``alloca`` in the source.
+
+.. option:: -Wno-alloca
+
+  Default option value for :option:`-Walloca`.
 
 .. option:: -Walloca-larger-than=byte-size
 
@@ -1962,7 +2298,7 @@ warn at all unless optimization is enabled.
   Disable :option:`-Walloca-larger-than` = warnings.  The option is
   equivalent to :option:`-Walloca-larger-than`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Warith-conversion, -Wno-arith-conversion
+.. option:: -Warith-conversion
 
   Do warn about implicit conversions from arithmetic operations even
   when conversion of the operands to the same type cannot change their
@@ -1977,7 +2313,11 @@ warn at all unless optimization is enabled.
       c = c + 1; // only warns with -Warith-conversion
     }
 
-.. option:: -Warray-bounds, -Warray-bounds=n, -Wno-array-bounds
+.. option:: -Wno-arith-conversion
+
+  Default option value for :option:`-Warith-conversion`.
+
+.. option:: -Warray-bounds, -Warray-bounds=n
 
   This option is only active when :option:`-ftree-vrp` is active
   (default for :option:`-O2` and above). It warns about subscripts to arrays
@@ -1993,7 +2333,11 @@ warn at all unless optimization is enabled.
     pointers. This warning level may give a larger number of
     false positives and is deactivated by default.
 
-.. option:: -Warray-parameter, -Warray-parameter=n, -Wno-array-parameter
+.. option:: -Wno-array-bounds
+
+  Default option value for :option:`-Warray-bounds`.
+
+.. option:: -Warray-parameter, -Warray-parameter=n
 
   Warn about redeclarations of functions involving arguments of array or
   pointer types of inconsistent kinds or forms, and enable the detection
@@ -2040,6 +2384,10 @@ warn at all unless optimization is enabled.
   :option:`-Wvla-parameter` option triggers warnings for similar inconsistencies
   involving Variable Length Array arguments.
 
+.. option:: -Wno-array-parameter
+
+  Default option value for :option:`-Warray-parameter`.
+
 .. option:: -Wattribute-alias=n
 
   Warn about declarations using the ``alias`` and similar attributes whose
@@ -2070,7 +2418,11 @@ warn at all unless optimization is enabled.
   This is the default.  You can disable these warnings with either
   :option:`-Wno-attribute-alias` or :option:`-Wattribute-alias`:samp:`=0`.
 
-.. option:: -Wbool-compare, -Wno-bool-compare
+.. option:: -Wattribute-alias
+
+  Default option value for :option:`-Wno-attribute-alias`.
+
+.. option:: -Wbool-compare
 
   Warn about boolean expression compared with an integer value different from
   ``true`` / ``false``.  For instance, the following comparison is
@@ -2084,7 +2436,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wbool-operation, -Wno-bool-operation
+.. option:: -Wno-bool-compare
+
+  Default option value for :option:`-Wbool-compare`.
+
+.. option:: -Wbool-operation
 
   Warn about suspicious operations on expressions of a boolean type.  For
   instance, bitwise negation of a boolean is very likely a bug in the program.
@@ -2094,7 +2450,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wduplicated-branches, -Wno-duplicated-branches
+.. option:: -Wno-bool-operation
+
+  Default option value for :option:`-Wbool-operation`.
+
+.. option:: -Wduplicated-branches
 
   Warn when an if-else has identical branches.  This warning detects cases like
 
@@ -2112,7 +2472,11 @@ warn at all unless optimization is enabled.
 
       int i = x ? *p : *p;
 
-.. option:: -Wduplicated-cond, -Wno-duplicated-cond
+.. option:: -Wno-duplicated-branches
+
+  Default option value for :option:`-Wduplicated-branches`.
+
+.. option:: -Wduplicated-cond
 
   Warn about duplicated conditions in an if-else-if chain.  For instance,
   warn for the following code:
@@ -2122,13 +2486,21 @@ warn at all unless optimization is enabled.
     if (p->q != NULL) { ... }
     else if (p->q != NULL) { ... }
 
-.. option:: -Wframe-address, -Wno-frame-address
+.. option:: -Wno-duplicated-cond
+
+  Default option value for :option:`-Wduplicated-cond`.
+
+.. option:: -Wframe-address
 
   Warn when the :samp:`__builtin_frame_address` or :samp:`__builtin_return_address`
   is called with an argument greater than 0.  Such calls may return indeterminate
   values or crash the program.  The warning is included in :option:`-Wall`.
 
-.. option:: -Wno-discarded-qualifiers, -Wdiscarded-qualifiers
+.. option:: -Wno-frame-address
+
+  Default option value for :option:`-Wframe-address`.
+
+.. option:: -Wno-discarded-qualifiers
 
   .. note::
 
@@ -2139,7 +2511,11 @@ warn at all unless optimization is enabled.
   passed to a function that takes a ``char *`` parameter.  This option
   can be used to suppress such a warning.
 
-.. option:: -Wno-discarded-array-qualifiers, -Wdiscarded-array-qualifiers
+.. option:: -Wdiscarded-qualifiers
+
+  Default option value for :option:`-Wno-discarded-qualifiers`.
+
+.. option:: -Wno-discarded-array-qualifiers
 
   .. note::
 
@@ -2151,7 +2527,11 @@ warn at all unless optimization is enabled.
   takes a ``int (*)[]`` parameter.  This option can be used to
   suppress such a warning.
 
-.. option:: -Wno-incompatible-pointer-types, -Wincompatible-pointer-types
+.. option:: -Wdiscarded-array-qualifiers
+
+  Default option value for :option:`-Wno-discarded-array-qualifiers`.
+
+.. option:: -Wno-incompatible-pointer-types
 
   .. note::
 
@@ -2162,7 +2542,11 @@ warn at all unless optimization is enabled.
   which warns for pointer argument passing or assignment with different
   signedness.
 
-.. option:: -Wno-int-conversion, -Wint-conversion
+.. option:: -Wincompatible-pointer-types
+
+  Default option value for :option:`-Wno-incompatible-pointer-types`.
+
+.. option:: -Wno-int-conversion
 
   .. note::
 
@@ -2172,6 +2556,10 @@ warn at all unless optimization is enabled.
   conversions.  This warning is about implicit conversions; for explicit
   conversions the warnings :option:`-Wno-int-to-pointer-cast` and
   :option:`-Wno-pointer-to-int-cast` may be used.
+
+.. option:: -Wint-conversion
+
+  Default option value for :option:`-Wno-int-conversion`.
 
 .. option:: -Wzero-length-bounds
 
@@ -2199,13 +2587,17 @@ warn at all unless optimization is enabled.
 
   Option :option:`-Wzero-length-bounds` is enabled by :option:`-Warray-bounds`.
 
-.. option:: -Wno-div-by-zero, -Wdiv-by-zero
+.. option:: -Wno-div-by-zero
 
   Do not warn about compile-time integer division by zero.  Floating-point
   division by zero is not warned about, as it can be a legitimate way of
   obtaining infinities and NaNs.
 
-.. option:: -Wsystem-headers, -Wno-system-headers
+.. option:: -Wdiv-by-zero
+
+  Default option value for :option:`-Wno-div-by-zero`.
+
+.. option:: -Wsystem-headers
 
   .. index:: warnings from system headers
 
@@ -2220,7 +2612,11 @@ warn at all unless optimization is enabled.
   option does *not* warn about unknown pragmas in system
   headers---for that, :option:`-Wunknown-pragmas` must also be used.
 
-.. option:: -Wtautological-compare, -Wno-tautological-compare
+.. option:: -Wno-system-headers
+
+  Default option value for :option:`-Wsystem-headers`.
+
+.. option:: -Wtautological-compare
 
   Warn if a self-comparison always evaluates to true or false.  This
   warning detects various mistakes such as:
@@ -2242,7 +2638,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wtrampolines, -Wno-trampolines
+.. option:: -Wno-tautological-compare
+
+  Default option value for :option:`-Wtautological-compare`.
+
+.. option:: -Wtrampolines
 
   Warn about trampolines generated for pointers to nested functions.
   A trampoline is a small piece of data or code that is created at run
@@ -2252,7 +2652,11 @@ warn at all unless optimization is enabled.
   most targets, it is made up of code and thus requires the stack to be
   made executable in order for the program to work properly.
 
-.. option:: -Wfloat-equal, -Wno-float-equal
+.. option:: -Wno-trampolines
+
+  Default option value for :option:`-Wtrampolines`.
+
+.. option:: -Wfloat-equal
 
   Warn if floating-point values are used in equality comparisons.
 
@@ -2267,7 +2671,11 @@ warn at all unless optimization is enabled.
   this is done with the relational operators, so equality comparisons are
   probably mistaken.
 
-.. option:: -Wtraditional, -Wno-traditional
+.. option:: -Wno-float-equal
+
+  Default option value for :option:`-Wfloat-equal`.
+
+.. option:: -Wtraditional
 
   .. note::
 
@@ -2342,7 +2750,11 @@ warn at all unless optimization is enabled.
     because that feature is already a GCC extension and thus not relevant to
     traditional C compatibility.
 
-.. option:: -Wtraditional-conversion, -Wno-traditional-conversion
+.. option:: -Wno-traditional
+
+  Default option value for :option:`-Wtraditional`.
+
+.. option:: -Wtraditional-conversion
 
   .. note::
 
@@ -2354,7 +2766,11 @@ warn at all unless optimization is enabled.
   conversions changing the width or signedness of a fixed-point argument
   except when the same as the default promotion.
 
-.. option:: -Wdeclaration-after-statement, -Wno-declaration-after-statement
+.. option:: -Wno-traditional-conversion
+
+  Default option value for :option:`-Wtraditional-conversion`.
+
+.. option:: -Wdeclaration-after-statement
 
   .. note::
 
@@ -2364,7 +2780,11 @@ warn at all unless optimization is enabled.
   construct, known from C++, was introduced with ISO C99 and is by default
   allowed in GCC.  It is not supported by ISO C90.  See :ref:`mixed-labels-and-declarations`.
 
-.. option:: -Wshadow, -Wno-shadow
+.. option:: -Wno-declaration-after-statement
+
+  Default option value for :option:`-Wdeclaration-after-statement`.
+
+.. option:: -Wshadow
 
   Warn whenever a local variable or type declaration shadows another
   variable, parameter, type, class member (in C++), or instance variable
@@ -2377,7 +2797,11 @@ warn at all unless optimization is enabled.
   :option:`-Wshadow` is used.
   Same as :option:`-Wshadow`:samp:`=global`.
 
-.. option:: -Wno-shadow-ivar, -Wshadow-ivar
+.. option:: -Wno-shadow
+
+  Default option value for :option:`-Wshadow`.
+
+.. option:: -Wno-shadow-ivar
 
   .. note::
 
@@ -2385,6 +2809,10 @@ warn at all unless optimization is enabled.
 
   Do not warn whenever a local variable shadows an instance variable in an
   Objective-C method.
+
+.. option:: -Wshadow-ivar
+
+  Default option value for :option:`-Wno-shadow-ivar`.
 
 .. option:: -Wshadow=global
 
@@ -2466,7 +2894,7 @@ warn at all unless optimization is enabled.
   Disable :option:`-Wframe-larger-than` = warnings.  The option is equivalent
   to :option:`-Wframe-larger-than`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Wno-free-nonheap-object, -Wfree-nonheap-object
+.. option:: -Wno-free-nonheap-object
 
   Warn when attempting to deallocate an object that was either not allocated
   on the heap, or by using a pointer that was not returned from a prior call
@@ -2485,6 +2913,10 @@ warn at all unless optimization is enabled.
     }
 
   :option:`-Wfree-nonheap-object` is enabled by default.
+
+.. option:: -Wfree-nonheap-object
+
+  Default option value for :option:`-Wno-free-nonheap-object`.
 
 .. option:: -Wstack-usage=byte-size
 
@@ -2524,14 +2956,18 @@ warn at all unless optimization is enabled.
   Disable :option:`-Wstack-usage` = warnings.  The option is equivalent
   to :option:`-Wstack-usage`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Wunsafe-loop-optimizations, -Wno-unsafe-loop-optimizations
+.. option:: -Wunsafe-loop-optimizations
 
   Warn if the loop cannot be optimized because the compiler cannot
   assume anything on the bounds of the loop indices.  With
   :option:`-funsafe-loop-optimizations` warn if the compiler makes
   such assumptions.
 
-.. option:: -Wno-pedantic-ms-format, -Wpedantic-ms-format
+.. option:: -Wno-unsafe-loop-optimizations
+
+  Default option value for :option:`-Wunsafe-loop-optimizations`.
+
+.. option:: -Wno-pedantic-ms-format
 
   .. note::
 
@@ -2543,7 +2979,11 @@ warn at all unless optimization is enabled.
   width specifiers ``I32``, ``I64``, and ``I`` used on Windows targets,
   which depend on the MS runtime.
 
-.. option:: -Wpointer-arith, -Wno-pointer-arith
+.. option:: -Wpedantic-ms-format
+
+  Default option value for :option:`-Wno-pedantic-ms-format`.
+
+.. option:: -Wpointer-arith
 
   Warn about anything that depends on the 'size of' a function type or
   of ``void``.  GNU C assigns these types a size of 1, for
@@ -2551,7 +2991,11 @@ warn at all unless optimization is enabled.
   to functions.  In C++, warn also when an arithmetic operation involves
   ``NULL``.  This warning is also enabled by :option:`-Wpedantic`.
 
-.. option:: -Wno-pointer-compare, -Wpointer-compare
+.. option:: -Wno-pointer-arith
+
+  Default option value for :option:`-Wpointer-arith`.
+
+.. option:: -Wno-pointer-compare
 
   Do not warn if a pointer is compared with a zero character constant.
   This usually
@@ -2567,7 +3011,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by default.
 
-.. option:: -Wtsan, -Wno-tsan
+.. option:: -Wpointer-compare
+
+  Default option value for :option:`-Wno-pointer-compare`.
+
+.. option:: -Wtsan
 
   Warn about unsupported features in ThreadSanitizer.
 
@@ -2576,7 +3024,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by default.
 
-.. option:: -Wtype-limits, -Wno-type-limits
+.. option:: -Wno-tsan
+
+  Default option value for :option:`-Wtsan`.
+
+.. option:: -Wtype-limits
 
   Warn if a comparison is always true or always false due to the limited
   range of the data type, but do not warn for constant expressions.  For
@@ -2584,7 +3036,11 @@ warn at all unless optimization is enabled.
   ``<`` or ``>=``.  This warning is also enabled by
   :option:`-Wextra`.
 
-.. option:: -Wabsolute-value, -Wno-absolute-value
+.. option:: -Wno-type-limits
+
+  Default option value for :option:`-Wtype-limits`.
+
+.. option:: -Wabsolute-value
 
   .. note::
 
@@ -2599,10 +3055,18 @@ warn at all unless optimization is enabled.
   warning can be suppressed with an explicit type cast and it is also
   enabled by :option:`-Wextra`.
 
+.. option:: -Wno-absolute-value
+
+  Default option value for :option:`-Wabsolute-value`.
+
 .. include:: ../../share/cppwarnopts.rst
 
 
-.. option:: -Wbad-function-cast, -Wno-bad-function-cast
+.. option:: -Wendif-labels
+
+  Default option value for :option:`-Wno-endif-labels`.
+
+.. option:: -Wbad-function-cast
 
   .. note::
 
@@ -2612,7 +3076,11 @@ warn at all unless optimization is enabled.
   For example, warn if a call to a function returning an integer type 
   is cast to a pointer type.
 
-.. option:: -Wc90-c99-compat, -Wno-c90-c99-compat
+.. option:: -Wno-bad-function-cast
+
+  Default option value for :option:`-Wbad-function-cast`.
+
+.. option:: -Wc90-c99-compat
 
   .. note::
 
@@ -2624,7 +3092,11 @@ warn at all unless optimization is enabled.
   on.  This option is independent of the standards mode.  Warnings are disabled
   in the expression that follows ``__extension__``.
 
-.. option:: -Wc99-c11-compat, -Wno-c99-c11-compat
+.. option:: -Wno-c90-c99-compat
+
+  Default option value for :option:`-Wc90-c99-compat`.
+
+.. option:: -Wc99-c11-compat
 
   .. note::
 
@@ -2637,7 +3109,11 @@ warn at all unless optimization is enabled.
   and so on.  This option is independent of the standards mode.  Warnings are
   disabled in the expression that follows ``__extension__``.
 
-.. option:: -Wc11-c2x-compat, -Wno-c11-c2x-compat
+.. option:: -Wno-c99-c11-compat
+
+  Default option value for :option:`-Wc99-c11-compat`.
+
+.. option:: -Wc11-c2x-compat
 
   .. note::
 
@@ -2650,7 +3126,11 @@ warn at all unless optimization is enabled.
   standards mode.  Warnings are disabled in the expression that follows
   ``__extension__``.
 
-.. option:: -Wc++-compat, -Wno-c++-compat
+.. option:: -Wno-c11-c2x-compat
+
+  Default option value for :option:`-Wc11-c2x-compat`.
+
+.. option:: -Wc++-compat
 
   .. note::
 
@@ -2660,7 +3140,11 @@ warn at all unless optimization is enabled.
   ISO C and ISO C++, e.g. request for implicit conversion from
   ``void *`` to a pointer to non- ``void`` type.
 
-.. option:: -Wc++11-compat, -Wno-c++11-compat
+.. option:: -Wno-c++-compat
+
+  Default option value for :option:`-Wc++-compat`.
+
+.. option:: -Wc++11-compat
 
   .. note::
 
@@ -2671,7 +3155,11 @@ warn at all unless optimization is enabled.
   in ISO C++ 2011.  This warning turns on :option:`-Wnarrowing` and is
   enabled by :option:`-Wall`.
 
-.. option:: -Wc++14-compat, -Wno-c++14-compat
+.. option:: -Wno-c++11-compat
+
+  Default option value for :option:`-Wc++11-compat`.
+
+.. option:: -Wc++14-compat
 
   .. note::
 
@@ -2680,7 +3168,11 @@ warn at all unless optimization is enabled.
   Warn about C++ constructs whose meaning differs between ISO C++ 2011
   and ISO C++ 2014.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wc++17-compat, -Wno-c++17-compat
+.. option:: -Wno-c++14-compat
+
+  Default option value for :option:`-Wc++14-compat`.
+
+.. option:: -Wc++17-compat
 
   .. note::
 
@@ -2689,7 +3181,11 @@ warn at all unless optimization is enabled.
   Warn about C++ constructs whose meaning differs between ISO C++ 2014
   and ISO C++ 2017.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wc++20-compat, -Wno-c++20-compat
+.. option:: -Wno-c++17-compat
+
+  Default option value for :option:`-Wc++17-compat`.
+
+.. option:: -Wc++20-compat
 
   .. note::
 
@@ -2698,7 +3194,11 @@ warn at all unless optimization is enabled.
   Warn about C++ constructs whose meaning differs between ISO C++ 2017
   and ISO C++ 2020.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wno-c++11-extensions, -Wc++11-extensions
+.. option:: -Wno-c++20-compat
+
+  Default option value for :option:`-Wc++20-compat`.
+
+.. option:: -Wno-c++11-extensions
 
   .. note::
 
@@ -2708,7 +3208,11 @@ warn at all unless optimization is enabled.
   an older C++ standard.  Even without this option, some C++11 constructs
   will only be diagnosed if :option:`-Wpedantic` is used.
 
-.. option:: -Wno-c++14-extensions, -Wc++14-extensions
+.. option:: -Wc++11-extensions
+
+  Default option value for :option:`-Wno-c++11-extensions`.
+
+.. option:: -Wno-c++14-extensions
 
   .. note::
 
@@ -2718,7 +3222,11 @@ warn at all unless optimization is enabled.
   an older C++ standard.  Even without this option, some C++14 constructs
   will only be diagnosed if :option:`-Wpedantic` is used.
 
-.. option:: -Wno-c++17-extensions, -Wc++17-extensions
+.. option:: -Wc++14-extensions
+
+  Default option value for :option:`-Wno-c++14-extensions`.
+
+.. option:: -Wno-c++17-extensions
 
   .. note::
 
@@ -2728,7 +3236,11 @@ warn at all unless optimization is enabled.
   an older C++ standard.  Even without this option, some C++17 constructs
   will only be diagnosed if :option:`-Wpedantic` is used.
 
-.. option:: -Wno-c++20-extensions, -Wc++20-extensions
+.. option:: -Wc++17-extensions
+
+  Default option value for :option:`-Wno-c++17-extensions`.
+
+.. option:: -Wno-c++20-extensions
 
   .. note::
 
@@ -2738,7 +3250,11 @@ warn at all unless optimization is enabled.
   an older C++ standard.  Even without this option, some C++20 constructs
   will only be diagnosed if :option:`-Wpedantic` is used.
 
-.. option:: -Wno-c++23-extensions, -Wc++23-extensions
+.. option:: -Wc++20-extensions
+
+  Default option value for :option:`-Wno-c++20-extensions`.
+
+.. option:: -Wno-c++23-extensions
 
   .. note::
 
@@ -2748,7 +3264,11 @@ warn at all unless optimization is enabled.
   an older C++ standard.  Even without this option, some C++23 constructs
   will only be diagnosed if :option:`-Wpedantic` is used.
 
-.. option:: -Wcast-qual, -Wno-cast-qual
+.. option:: -Wc++23-extensions
+
+  Default option value for :option:`-Wno-c++23-extensions`.
+
+.. option:: -Wcast-qual
 
   Warn whenever a pointer is cast so as to remove a type qualifier from
   the target type.  For example, warn if a ``const char *`` is cast
@@ -2767,12 +3287,20 @@ warn at all unless optimization is enabled.
       /* Now char** pointer points to read-only memory.  */
       **p = 'b';
 
-.. option:: -Wcast-align, -Wno-cast-align
+.. option:: -Wno-cast-qual
+
+  Default option value for :option:`-Wcast-qual`.
+
+.. option:: -Wcast-align
 
   Warn whenever a pointer is cast such that the required alignment of the
   target is increased.  For example, warn if a ``char *`` is cast to
   an ``int *`` on machines where integers can only be accessed at
   two- or four-byte boundaries.
+
+.. option:: -Wno-cast-align
+
+  Default option value for :option:`-Wcast-align`.
 
 .. option:: -Wcast-align=strict
 
@@ -2780,7 +3308,7 @@ warn at all unless optimization is enabled.
   target is increased.  For example, warn if a ``char *`` is cast to
   an ``int *`` regardless of the target machine.
 
-.. option:: -Wcast-function-type, -Wno-cast-function-type
+.. option:: -Wcast-function-type
 
   Warn when a function pointer is cast to an incompatible function pointer.
   In a cast involving function types with a variable argument list only
@@ -2794,7 +3322,11 @@ warn at all unless optimization is enabled.
   the type cast is changing the pointer to member type.
   This warning is enabled by :option:`-Wextra`.
 
-.. option:: -Wwrite-strings, -Wno-write-strings
+.. option:: -Wno-cast-function-type
+
+  Default option value for :option:`-Wcast-function-type`.
+
+.. option:: -Wwrite-strings
 
   When compiling C, give string constants the type ``const
   char[length]`` so that copying the address of one into a
@@ -2809,12 +3341,20 @@ warn at all unless optimization is enabled.
   literals to ``char *``.  This warning is enabled by default for C++
   programs.
 
-.. option:: -Wclobbered, -Wno-clobbered
+.. option:: -Wno-write-strings
+
+  Default option value for :option:`-Wwrite-strings`.
+
+.. option:: -Wclobbered
 
   Warn for variables that might be changed by ``longjmp`` or
   ``vfork``.  This warning is also enabled by :option:`-Wextra`.
 
-.. option:: -Wconversion, -Wno-conversion
+.. option:: -Wno-clobbered
+
+  Default option value for :option:`-Wclobbered`.
+
+.. option:: -Wconversion
 
   Warn for implicit conversions that may alter a value. This includes
   conversions between real and integer, like ``abs (x)`` when
@@ -2836,7 +3376,11 @@ warn at all unless optimization is enabled.
   Warnings about conversion from arithmetic on a small type back to that
   type are only given with :option:`-Warith-conversion`.
 
-.. option:: -Wdangling-else, -Wno-dangling-else
+.. option:: -Wno-conversion
+
+  Default option value for :option:`-Wconversion`.
+
+.. option:: -Wdangling-else
 
   Warn about constructions where there may be confusion to which
   ``if`` statement an ``else`` branch belongs.  Here is an example of
@@ -2876,35 +3420,59 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wparentheses`.
 
-.. option:: -Wdate-time, -Wno-date-time
+.. option:: -Wno-dangling-else
+
+  Default option value for :option:`-Wdangling-else`.
+
+.. option:: -Wdate-time
 
   Warn when macros ``__TIME__``, ``__DATE__`` or ``__TIMESTAMP__``
   are encountered as they might prevent bit-wise-identical reproducible
   compilations.
 
-.. option:: -Wempty-body, -Wno-empty-body
+.. option:: -Wno-date-time
+
+  Default option value for :option:`-Wdate-time`.
+
+.. option:: -Wempty-body
 
   Warn if an empty body occurs in an ``if``, ``else`` or ``do
   while`` statement.  This warning is also enabled by :option:`-Wextra`.
 
-.. option:: -Wno-endif-labels, -Wendif-labels
+.. option:: -Wno-empty-body
+
+  Default option value for :option:`-Wempty-body`.
+
+.. option:: -Wno-endif-labels
 
   Do not warn about stray tokens after ``#else`` and ``#endif``.
 
-.. option:: -Wenum-compare, -Wno-enum-compare
+.. option:: -Wendif-labels
+
+  Default option value for :option:`-Wno-endif-labels`.
+
+.. option:: -Wenum-compare
 
   Warn about a comparison between values of different enumerated types.
   In C++ enumerated type mismatches in conditional expressions are also
   diagnosed and the warning is enabled by default.  In C this warning is 
   enabled by :option:`-Wall`.
 
-.. option:: -Wenum-conversion, -Wno-enum-conversion
+.. option:: -Wno-enum-compare
+
+  Default option value for :option:`-Wenum-compare`.
+
+.. option:: -Wenum-conversion
 
   Warn when a value of enumerated type is implicitly converted to a 
   different enumerated type.  This warning is enabled by :option:`-Wextra`
   in C.
 
-.. option:: -Wjump-misses-init, -Wno-jump-misses-init
+.. option:: -Wno-enum-conversion
+
+  Default option value for :option:`-Wenum-conversion`.
+
+.. option:: -Wjump-misses-init
 
   .. note::
 
@@ -2920,7 +3488,11 @@ warn at all unless optimization is enabled.
   :option:`-Wjump-misses-init` is included in :option:`-Wc++-compat`.  It
   can be disabled with the :option:`-Wno-jump-misses-init` option.
 
-.. option:: -Wsign-compare, -Wno-sign-compare
+.. option:: -Wno-jump-misses-init
+
+  Default option value for :option:`-Wjump-misses-init`.
+
+.. option:: -Wsign-compare
 
   .. index:: warning for comparison of signed and unsigned values
 
@@ -2933,25 +3505,41 @@ warn at all unless optimization is enabled.
   In C++, this warning is also enabled by :option:`-Wall`.  In C, it is
   also enabled by :option:`-Wextra`.
 
-.. option:: -Wsign-conversion, -Wno-sign-conversion
+.. option:: -Wno-sign-compare
+
+  Default option value for :option:`-Wsign-compare`.
+
+.. option:: -Wsign-conversion
 
   Warn for implicit conversions that may change the sign of an integer
   value, like assigning a signed integer expression to an unsigned
   integer variable. An explicit cast silences the warning. In C, this
   option is enabled also by :option:`-Wconversion`.
 
-.. option:: -Wfloat-conversion, -Wno-float-conversion
+.. option:: -Wno-sign-conversion
+
+  Default option value for :option:`-Wsign-conversion`.
+
+.. option:: -Wfloat-conversion
 
   Warn for implicit conversions that reduce the precision of a real value.
   This includes conversions from real to integer, and from higher precision
   real to lower precision real values.  This option is also enabled by
   :option:`-Wconversion`.
 
-.. option:: -Wno-scalar-storage-order, -Wscalar-storage-order
+.. option:: -Wno-float-conversion
+
+  Default option value for :option:`-Wfloat-conversion`.
+
+.. option:: -Wno-scalar-storage-order
 
   Do not warn on suspicious constructs involving reverse scalar storage order.
 
-.. option:: -Wsizeof-array-div, -Wno-sizeof-array-div
+.. option:: -Wscalar-storage-order
+
+  Default option value for :option:`-Wno-scalar-storage-order`.
+
+.. option:: -Wsizeof-array-div
 
   Warn about divisions of two sizeof operators when the first one is applied
   to an array and the divisor does not equal the size of the array element.
@@ -2968,7 +3556,11 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wsizeof-pointer-div, -Wno-sizeof-pointer-div
+.. option:: -Wno-sizeof-array-div
+
+  Default option value for :option:`-Wsizeof-array-div`.
+
+.. option:: -Wsizeof-pointer-div
 
   Warn for suspicious divisions of two sizeof expressions that divide
   the pointer size by the element size, which is the usual way to compute
@@ -2976,7 +3568,11 @@ warn at all unless optimization is enabled.
   warns e.g. about ``sizeof (ptr) / sizeof (ptr[0])`` if ``ptr`` is
   not an array, but a pointer.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wsizeof-pointer-memaccess, -Wno-sizeof-pointer-memaccess
+.. option:: -Wno-sizeof-pointer-div
+
+  Default option value for :option:`-Wsizeof-pointer-div`.
+
+.. option:: -Wsizeof-pointer-memaccess
 
   Warn for suspicious length parameters to certain string and memory built-in
   functions if the argument uses ``sizeof``.  This warning triggers for
@@ -3001,13 +3597,21 @@ warn at all unless optimization is enabled.
 
   The :option:`-Wsizeof-pointer-memaccess` option is enabled by :option:`-Wall`.
 
-.. option:: -Wno-sizeof-array-argument, -Wsizeof-array-argument
+.. option:: -Wno-sizeof-pointer-memaccess
+
+  Default option value for :option:`-Wsizeof-pointer-memaccess`.
+
+.. option:: -Wno-sizeof-array-argument
 
   Do not warn when the ``sizeof`` operator is applied to a parameter that is
   declared as an array in a function definition.  This warning is enabled by
   default for C and C++ programs.
 
-.. option:: -Wmemset-elt-size, -Wno-memset-elt-size
+.. option:: -Wsizeof-array-argument
+
+  Default option value for :option:`-Wno-sizeof-array-argument`.
+
+.. option:: -Wmemset-elt-size
 
   Warn for suspicious calls to the ``memset`` built-in function, if the
   first argument references an array, and the third argument is a number
@@ -3015,7 +3619,11 @@ warn at all unless optimization is enabled.
   in memory.  This indicates that the user has omitted a multiplication by
   the element size.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wmemset-transposed-args, -Wno-memset-transposed-args
+.. option:: -Wno-memset-elt-size
+
+  Default option value for :option:`-Wmemset-elt-size`.
+
+.. option:: -Wmemset-transposed-args
 
   Warn for suspicious calls to the ``memset`` built-in function where
   the second argument is not zero and the third argument is zero.  For
@@ -3027,7 +3635,11 @@ warn at all unless optimization is enabled.
   transposed and no warning is emitted.  This warning is enabled
   by :option:`-Wall`.
 
-.. option:: -Waddress, -Wno-address
+.. option:: -Wno-memset-transposed-args
+
+  Default option value for :option:`-Wmemset-transposed-args`.
+
+.. option:: -Waddress
 
   Warn about suspicious uses of memory addresses. These include using
   the address of a function in a conditional expression, such as
@@ -3041,13 +3653,21 @@ warn at all unless optimization is enabled.
   programmer intended to use ``strcmp``.  This warning is enabled by
   :option:`-Wall`.
 
-.. option:: -Wno-address-of-packed-member, -Waddress-of-packed-member
+.. option:: -Wno-address
+
+  Default option value for :option:`-Waddress`.
+
+.. option:: -Wno-address-of-packed-member
 
   Do not warn when the address of packed member of struct or union is taken,
   which usually results in an unaligned pointer value.  This is
   enabled by default.
 
-.. option:: -Wlogical-op, -Wno-logical-op
+.. option:: -Waddress-of-packed-member
+
+  Default option value for :option:`-Wno-address-of-packed-member`.
+
+.. option:: -Wlogical-op
 
   Warn about suspicious uses of logical operators in expressions.
   This includes using logical operators in contexts where a
@@ -3059,7 +3679,11 @@ warn at all unless optimization is enabled.
     extern int a;
     if (a < 0 && a < 0) { ... }
 
-.. option:: -Wlogical-not-parentheses, -Wno-logical-not-parentheses
+.. option:: -Wno-logical-op
+
+  Default option value for :option:`-Wlogical-op`.
+
+.. option:: -Wlogical-not-parentheses
 
   Warn about logical not used on the left hand side operand of a comparison.
   This option does not warn if the right operand is considered to be a boolean
@@ -3080,25 +3704,41 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Waggregate-return, -Wno-aggregate-return
+.. option:: -Wno-logical-not-parentheses
+
+  Default option value for :option:`-Wlogical-not-parentheses`.
+
+.. option:: -Waggregate-return
 
   Warn if any functions that return structures or unions are defined or
   called.  (In languages where you can return an array, this also elicits
   a warning.)
 
-.. option:: -Wno-aggressive-loop-optimizations, -Waggressive-loop-optimizations
+.. option:: -Wno-aggregate-return
+
+  Default option value for :option:`-Waggregate-return`.
+
+.. option:: -Wno-aggressive-loop-optimizations
 
   Warn if in a loop with constant number of iterations the compiler detects
   undefined behavior in some statement during one or more of the iterations.
 
-.. option:: -Wno-attributes, -Wattributes
+.. option:: -Waggressive-loop-optimizations
+
+  Default option value for :option:`-Wno-aggressive-loop-optimizations`.
+
+.. option:: -Wno-attributes
 
   Do not warn if an unexpected ``__attribute__`` is used, such as
   unrecognized attributes, function attributes applied to variables,
   etc.  This does not stop errors for incorrect use of supported
   attributes.
 
-.. option:: -Wno-builtin-declaration-mismatch, -Wbuiltin-declaration-mismatch
+.. option:: -Wattributes
+
+  Default option value for :option:`-Wno-attributes`.
+
+.. option:: -Wno-builtin-declaration-mismatch
 
   Warn if a built-in function is declared with an incompatible signature
   or as a non-function, or when a built-in function declared with a type
@@ -3122,13 +3762,21 @@ warn at all unless optimization is enabled.
       memset (d, '\0', 32);
     }
 
-.. option:: -Wno-builtin-macro-redefined, -Wbuiltin-macro-redefined
+.. option:: -Wbuiltin-declaration-mismatch
+
+  Default option value for :option:`-Wno-builtin-declaration-mismatch`.
+
+.. option:: -Wno-builtin-macro-redefined
 
   Do not warn if certain built-in macros are redefined.  This suppresses
   warnings for redefinition of ``__TIMESTAMP__``, ``__TIME__``,
   ``__DATE__``, ``__FILE__``, and ``__BASE_FILE__``.
 
-.. option:: -Wstrict-prototypes, -Wno-strict-prototypes
+.. option:: -Wbuiltin-macro-redefined
+
+  Default option value for :option:`-Wno-builtin-macro-redefined`.
+
+.. option:: -Wstrict-prototypes
 
   .. note::
 
@@ -3139,7 +3787,11 @@ warn at all unless optimization is enabled.
   a warning if preceded by a declaration that specifies the argument
   types.)
 
-.. option:: -Wold-style-declaration, -Wno-old-style-declaration
+.. option:: -Wno-strict-prototypes
+
+  Default option value for :option:`-Wstrict-prototypes`.
+
+.. option:: -Wold-style-declaration
 
   .. note::
 
@@ -3150,7 +3802,11 @@ warn at all unless optimization is enabled.
   ``static`` are not the first things in a declaration.  This warning
   is also enabled by :option:`-Wextra`.
 
-.. option:: -Wold-style-definition, -Wno-old-style-definition
+.. option:: -Wno-old-style-declaration
+
+  Default option value for :option:`-Wold-style-declaration`.
+
+.. option:: -Wold-style-definition
 
   .. note::
 
@@ -3162,7 +3818,11 @@ warn at all unless optimization is enabled.
   equivalent to :samp:`(void)` in that case, but is considered an
   old-style definition for older standards.
 
-.. option:: -Wmissing-parameter-type, -Wno-missing-parameter-type
+.. option:: -Wno-old-style-definition
+
+  Default option value for :option:`-Wold-style-definition`.
+
+.. option:: -Wmissing-parameter-type
 
   .. note::
 
@@ -3177,7 +3837,11 @@ warn at all unless optimization is enabled.
 
   This warning is also enabled by :option:`-Wextra`.
 
-.. option:: -Wmissing-prototypes, -Wno-missing-prototypes
+.. option:: -Wno-missing-parameter-type
+
+  Default option value for :option:`-Wmissing-parameter-type`.
+
+.. option:: -Wmissing-prototypes
 
   .. note::
 
@@ -3192,7 +3856,11 @@ warn at all unless optimization is enabled.
   overload rather than conflict with an earlier declaration.
   Use :option:`-Wmissing-declarations` to detect missing declarations in C++.
 
-.. option:: -Wmissing-declarations, -Wno-missing-declarations
+.. option:: -Wno-missing-prototypes
+
+  Default option value for :option:`-Wmissing-prototypes`.
+
+.. option:: -Wmissing-declarations
 
   Warn if a global function is defined without a previous declaration.
   Do so even if the definition itself provides a prototype.
@@ -3202,7 +3870,11 @@ warn at all unless optimization is enabled.
   missing prototypes.  In C++, no warnings are issued for function templates,
   or for inline functions, or for functions in anonymous namespaces.
 
-.. option:: -Wmissing-field-initializers, -Wno-missing-field-initializers
+.. option:: -Wno-missing-declarations
+
+  Default option value for :option:`-Wmissing-declarations`.
+
+.. option:: -Wmissing-field-initializers
 
   Warn if a structure's initializer has some fields missing.  For
   example, the following code causes such a warning, because
@@ -3240,11 +3912,19 @@ warn at all unless optimization is enabled.
   This warning is included in :option:`-Wextra`.  To get other :option:`-Wextra`
   warnings without this one, use :option:`-Wextra -Wno-missing-field-initializers`.
 
-.. option:: -Wno-multichar, -Wmultichar
+.. option:: -Wno-missing-field-initializers
+
+  Default option value for :option:`-Wmissing-field-initializers`.
+
+.. option:: -Wno-multichar
 
   Do not warn if a multicharacter constant (:samp:`'FOOF'`) is used.
   Usually they indicate a typo in the user's code, as they have
   implementation-defined values, and should not be used in portable code.
+
+.. option:: -Wmultichar
+
+  Default option value for :option:`-Wno-multichar`.
 
 .. option:: -Wnormalized=[none|id|nfc|nfkc]
 
@@ -3296,7 +3976,7 @@ warn at all unless optimization is enabled.
   useful as a local coding convention if the programming environment 
   cannot be fixed to display these characters distinctly.
 
-.. option:: -Wno-attribute-warning, -Wattribute-warning
+.. option:: -Wno-attribute-warning
 
   Do not warn about usage of functions (see :ref:`function-attributes`)
   declared with ``warning`` attribute.  By default, this warning is
@@ -3304,38 +3984,66 @@ warn at all unless optimization is enabled.
   warning or :option:`-Wno-error`:samp:`=attribute-warning` can be used to
   disable the error when compiled with :option:`-Werror` flag.
 
-.. option:: -Wno-deprecated, -Wdeprecated
+.. option:: -Wattribute-warning
+
+  Default option value for :option:`-Wno-attribute-warning`.
+
+.. option:: -Wno-deprecated
 
   Do not warn about usage of deprecated features.  See :ref:`deprecated-features`.
 
-.. option:: -Wno-deprecated-declarations, -Wdeprecated-declarations
+.. option:: -Wdeprecated
+
+  Default option value for :option:`-Wno-deprecated`.
+
+.. option:: -Wno-deprecated-declarations
 
   Do not warn about uses of functions (see :ref:`function-attributes`),
   variables (see :ref:`variable-attributes`), and types (see :ref:`type-attributes`) marked as deprecated by using the ``deprecated``
   attribute.
 
-.. option:: -Wno-overflow, -Woverflow
+.. option:: -Wdeprecated-declarations
+
+  Default option value for :option:`-Wno-deprecated-declarations`.
+
+.. option:: -Wno-overflow
 
   Do not warn about compile-time overflow in constant expressions.
 
-.. option:: -Wno-odr, -Wodr
+.. option:: -Woverflow
+
+  Default option value for :option:`-Wno-overflow`.
+
+.. option:: -Wno-odr
 
   Warn about One Definition Rule violations during link-time optimization.
   Enabled by default.
 
-.. option:: -Wopenacc-parallelism, -Wno-openacc-parallelism
+.. option:: -Wodr
+
+  Default option value for :option:`-Wno-odr`.
+
+.. option:: -Wopenacc-parallelism
 
   .. index:: OpenACC accelerator programming
 
   Warn about potentially suboptimal choices related to OpenACC parallelism.
 
-.. option:: -Wopenmp-simd, -Wno-openmp-simd
+.. option:: -Wno-openacc-parallelism
+
+  Default option value for :option:`-Wopenacc-parallelism`.
+
+.. option:: -Wopenmp-simd
 
   Warn if the vectorizer cost model overrides the OpenMP
   simd directive set by user.  The :option:`-fsimd-cost-model`:samp:`=unlimited`
   option can be used to relax the cost model.
 
-.. option:: -Woverride-init, -Wno-override-init
+.. option:: -Wno-openmp-simd
+
+  Default option value for :option:`-Wopenmp-simd`.
+
+.. option:: -Woverride-init
 
   .. note::
 
@@ -3349,7 +4057,11 @@ warn at all unless optimization is enabled.
   :option:`-Wextra` warnings without this one, use :option:`-Wextra
   -Wno-override-init`.
 
-.. option:: -Wno-override-init-side-effects, -Woverride-init-side-effects
+.. option:: -Wno-override-init
+
+  Default option value for :option:`-Woverride-init`.
+
+.. option:: -Wno-override-init-side-effects
 
   .. note::
 
@@ -3359,7 +4071,11 @@ warn at all unless optimization is enabled.
   using designated initializers (see :ref:`Designated
   Initializers <designated-inits>`).  This warning is enabled by default.
 
-.. option:: -Wpacked, -Wno-packed
+.. option:: -Woverride-init-side-effects
+
+  Default option value for :option:`-Wno-override-init-side-effects`.
+
+.. option:: -Wpacked
 
   Warn if a structure is given the packed attribute, but the packed
   attribute has no effect on the layout or size of the structure.
@@ -3378,6 +4094,10 @@ warn at all unless optimization is enabled.
       char z;
       struct foo f;
     };
+
+.. option:: -Wno-packed
+
+  Default option value for :option:`-Wpacked`.
 
 .. option:: -Wnopacked-bitfield-compat
 
@@ -3399,7 +4119,7 @@ warn at all unless optimization is enabled.
   This warning is enabled by default.  Use
   :option:`-Wno-packed-bitfield-compat` to disable this warning.
 
-.. option:: -Wpacked-not-aligned, -Wno-packed-not-aligned
+.. option:: -Wpacked-not-aligned
 
   .. note::
 
@@ -3419,19 +4139,31 @@ warn at all unless optimization is enabled.
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wpadded, -Wno-padded
+.. option:: -Wno-packed-not-aligned
+
+  Default option value for :option:`-Wpacked-not-aligned`.
+
+.. option:: -Wpadded
 
   Warn if padding is included in a structure, either to align an element
   of the structure or to align the whole structure.  Sometimes when this
   happens it is possible to rearrange the fields of the structure to
   reduce the padding and so make the structure smaller.
 
-.. option:: -Wredundant-decls, -Wno-redundant-decls
+.. option:: -Wno-padded
+
+  Default option value for :option:`-Wpadded`.
+
+.. option:: -Wredundant-decls
 
   Warn if anything is declared more than once in the same scope, even in
   cases where multiple declaration is valid and changes nothing.
 
-.. option:: -Wrestrict, -Wno-restrict
+.. option:: -Wno-redundant-decls
+
+  Default option value for :option:`-Wredundant-decls`.
+
+.. option:: -Wrestrict
 
   Warn when an object referenced by a ``restrict`` -qualified parameter
   (or, in C++, a ``__restrict`` -qualified parameter) is aliased by another
@@ -3454,7 +4186,11 @@ warn at all unless optimization is enabled.
   even without optimization but works best at :option:`-O2` and above.  It
   is included in :option:`-Wall`.
 
-.. option:: -Wnested-externs, -Wno-nested-externs
+.. option:: -Wno-restrict
+
+  Default option value for :option:`-Wrestrict`.
+
+.. option:: -Wnested-externs
 
   .. note::
 
@@ -3462,7 +4198,11 @@ warn at all unless optimization is enabled.
 
   Warn if an ``extern`` declaration is encountered within a function.
 
-.. option:: -Winline, -Wno-inline
+.. option:: -Wno-nested-externs
+
+  Default option value for :option:`-Wnested-externs`.
+
+.. option:: -Winline
 
   Warn if a function that is declared as inline cannot be inlined.
   Even with this option, the compiler does not warn about failures to
@@ -3475,7 +4215,11 @@ warn at all unless optimization is enabled.
   seemingly insignificant changes in the source program can cause the
   warnings produced by :option:`-Winline` to appear or disappear.
 
-.. option:: -Wint-in-bool-context, -Wno-int-in-bool-context
+.. option:: -Wno-inline
+
+  Default option value for :option:`-Winline`.
+
+.. option:: -Wint-in-bool-context
 
   Warn for suspicious use of integer values where boolean values are expected,
   such as conditional expressions (?:) using non-boolean integer constants in
@@ -3484,13 +4228,21 @@ warn at all unless optimization is enabled.
   for all kinds of multiplications regardless of the data type.
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wno-int-to-pointer-cast, -Wint-to-pointer-cast
+.. option:: -Wno-int-in-bool-context
+
+  Default option value for :option:`-Wint-in-bool-context`.
+
+.. option:: -Wno-int-to-pointer-cast
 
   Suppress warnings from casts to pointer type of an integer of a
   different size. In C++, casting to a pointer type of smaller size is
   an error. Wint-to-pointer-cast is enabled by default.
 
-.. option:: -Wno-pointer-to-int-cast, -Wpointer-to-int-cast
+.. option:: -Wint-to-pointer-cast
+
+  Default option value for :option:`-Wno-int-to-pointer-cast`.
+
+.. option:: -Wno-pointer-to-int-cast
 
   .. note::
 
@@ -3499,30 +4251,50 @@ warn at all unless optimization is enabled.
   Suppress warnings from casts from a pointer to an integer type of a
   different size.
 
-.. option:: -Winvalid-pch, -Wno-invalid-pch
+.. option:: -Wpointer-to-int-cast
+
+  Default option value for :option:`-Wno-pointer-to-int-cast`.
+
+.. option:: -Winvalid-pch
 
   Warn if a precompiled header (see :ref:`precompiled-headers`) is found in
   the search path but cannot be used.
 
-.. option:: -Wlong-long, -Wno-long-long
+.. option:: -Wno-invalid-pch
+
+  Default option value for :option:`-Winvalid-pch`.
+
+.. option:: -Wlong-long
 
   Warn if ``long long`` type is used.  This is enabled by either
   :option:`-Wpedantic` or :option:`-Wtraditional` in ISO C90 and C++98
   modes.  To inhibit the warning messages, use :option:`-Wno-long-long`.
 
-.. option:: -Wvariadic-macros, -Wno-variadic-macros
+.. option:: -Wno-long-long
+
+  Default option value for :option:`-Wlong-long`.
+
+.. option:: -Wvariadic-macros
 
   Warn if variadic macros are used in ISO C90 mode, or if the GNU
   alternate syntax is used in ISO C99 mode.  This is enabled by either
   :option:`-Wpedantic` or :option:`-Wtraditional`.  To inhibit the warning
   messages, use :option:`-Wno-variadic-macros`.
 
-.. option:: -Wno-varargs, -Wvarargs
+.. option:: -Wno-variadic-macros
+
+  Default option value for :option:`-Wvariadic-macros`.
+
+.. option:: -Wno-varargs
 
   Do not warn upon questionable usage of the macros used to handle variable
   arguments like ``va_start``.  These warnings are enabled by default.
 
-.. option:: -Wvector-operation-performance, -Wno-vector-operation-performance
+.. option:: -Wvarargs
+
+  Default option value for :option:`-Wno-varargs`.
+
+.. option:: -Wvector-operation-performance
 
   Warn if vector operation is not implemented via SIMD capabilities of the
   architecture.  Mainly useful for the performance tuning.
@@ -3533,11 +4305,19 @@ warn at all unless optimization is enabled.
   and ``as a single scalar``, which means that vector fits into a
   scalar type.
 
-.. option:: -Wvla, -Wno-vla
+.. option:: -Wno-vector-operation-performance
+
+  Default option value for :option:`-Wvector-operation-performance`.
+
+.. option:: -Wvla
 
   Warn if a variable-length array is used in the code.
   :option:`-Wno-vla` prevents the :option:`-Wpedantic` warning of
   the variable-length array.
+
+.. option:: -Wno-vla
+
+  Default option value for :option:`-Wvla`.
 
 .. option:: -Wvla-larger-than=byte-size
 
@@ -3562,7 +4342,7 @@ warn at all unless optimization is enabled.
   Disable :option:`-Wvla-larger-than` = warnings.  The option is equivalent
   to :option:`-Wvla-larger-than`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Wvla-parameter, -Wno-vla-parameter
+.. option:: -Wvla-parameter
 
   Warn about redeclarations of functions involving arguments of Variable
   Length Array types of inconsistent kinds or forms, and enable the detection
@@ -3599,14 +4379,22 @@ warn at all unless optimization is enabled.
   :option:`-Warray-parameter` option triggers warnings for similar problems
   involving ordinary array arguments.
 
-.. option:: -Wvolatile-register-var, -Wno-volatile-register-var
+.. option:: -Wno-vla-parameter
+
+  Default option value for :option:`-Wvla-parameter`.
+
+.. option:: -Wvolatile-register-var
 
   Warn if a register variable is declared volatile.  The volatile
   modifier does not inhibit all optimizations that may eliminate reads
   and/or writes to register variables.  This warning is enabled by
   :option:`-Wall`.
 
-.. option:: -Wdisabled-optimization, -Wno-disabled-optimization
+.. option:: -Wno-volatile-register-var
+
+  Default option value for :option:`-Wvolatile-register-var`.
+
+.. option:: -Wdisabled-optimization
 
   Warn if a requested optimization pass is disabled.  This warning does
   not generally indicate that there is anything wrong with your code; it
@@ -3615,7 +4403,11 @@ warn at all unless optimization is enabled.
   complex; GCC refuses to optimize programs when the optimization
   itself is likely to take inordinate amounts of time.
 
-.. option:: -Wpointer-sign, -Wno-pointer-sign
+.. option:: -Wno-disabled-optimization
+
+  Default option value for :option:`-Wdisabled-optimization`.
+
+.. option:: -Wpointer-sign
 
   .. note::
 
@@ -3626,12 +4418,20 @@ warn at all unless optimization is enabled.
   :option:`-Wall` and by :option:`-Wpedantic`, which can be disabled with
   :option:`-Wno-pointer-sign`.
 
-.. option:: -Wstack-protector, -Wno-stack-protector
+.. option:: -Wno-pointer-sign
+
+  Default option value for :option:`-Wpointer-sign`.
+
+.. option:: -Wstack-protector
 
   This option is only active when :option:`-fstack-protector` is active.  It
   warns about functions that are not protected against stack smashing.
 
-.. option:: -Woverlength-strings, -Wno-overlength-strings
+.. option:: -Wno-stack-protector
+
+  Default option value for :option:`-Wstack-protector`.
+
+.. option:: -Woverlength-strings
 
   Warn about string constants that are longer than the 'minimum
   maximum' length specified in the C standard.  Modern compilers
@@ -3647,7 +4447,11 @@ warn at all unless optimization is enabled.
   This option is implied by :option:`-Wpedantic`, and can be disabled with
   :option:`-Wno-overlength-strings`.
 
-.. option:: -Wunsuffixed-float-constants, -Wno-unsuffixed-float-constants
+.. option:: -Wno-overlength-strings
+
+  Default option value for :option:`-Woverlength-strings`.
+
+.. option:: -Wunsuffixed-float-constants
 
   .. note::
 
@@ -3659,13 +4463,21 @@ warn at all unless optimization is enabled.
   when preparing code to use with the ``FLOAT_CONST_DECIMAL64`` pragma
   from the decimal floating-point extension to C99.
 
-.. option:: -Wno-lto-type-mismatch, -Wlto-type-mismatch
+.. option:: -Wno-unsuffixed-float-constants
+
+  Default option value for :option:`-Wunsuffixed-float-constants`.
+
+.. option:: -Wno-lto-type-mismatch
 
   During the link-time optimization, do not warn about type mismatches in
   global declarations from different compilation units.
   Requires :option:`-flto` to be enabled.  Enabled by default.
 
-.. option:: -Wno-designated-init, -Wdesignated-init
+.. option:: -Wlto-type-mismatch
+
+  Default option value for :option:`-Wno-lto-type-mismatch`.
+
+.. option:: -Wno-designated-init
 
   .. note::
 
@@ -3674,4 +4486,8 @@ warn at all unless optimization is enabled.
   Suppress warnings when a positional initializer is used to initialize
   a structure that has been marked with the ``designated_init``
   attribute.
+
+.. option:: -Wdesignated-init
+
+  Default option value for :option:`-Wno-designated-init`.
 

@@ -327,7 +327,7 @@
   precedence if there's a conflict.  :samp:`{charset}` can be any encoding
   supported by the system's ``iconv`` library routine.
 
-.. option:: -fworking-directory, -fno-working-directory
+.. option:: -fworking-directory
 
   Enable generation of linemarkers in the preprocessor output that
   let the compiler know the current working directory at the time of
@@ -341,6 +341,10 @@
   form :option:`-fno-working-directory`.  If the :option:`-P` flag is
   present in the command line, this option has no effect, since no
   ``#line`` directives are emitted whatsoever.
+
+.. option:: -fno-working-directory
+
+  Default option value for :option:`-fworking-directory`.
 
 .. option:: -A predicate=answer
 

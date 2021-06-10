@@ -47,9 +47,13 @@ FRV Options
 
   Change ABI to use double word insns.
 
-.. option:: -mno-dword, -mdword
+.. option:: -mno-dword
 
   Do not use double word instructions.
+
+.. option:: -mdword
+
+  Default option value for :option:`-mno-dword`.
 
 .. option:: -mdouble
 
@@ -253,10 +257,14 @@ FRV Options
   This switch removes redundant ``membar`` instructions from the
   compiler-generated code.  It is enabled by default.
 
-.. option:: -mno-optimize-membar, -moptimize-membar
+.. option:: -mno-optimize-membar
 
   This switch disables the automatic removal of redundant ``membar``
   instructions from the generated code.
+
+.. option:: -moptimize-membar
+
+  Default option value for :option:`-mno-optimize-membar`.
 
 .. option:: -mtomcat-stats
 

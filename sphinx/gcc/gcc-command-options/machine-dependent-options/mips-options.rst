@@ -846,6 +846,10 @@ MIPS Options
   depends on the target GCC was configured for, but commonly is either
   ``_flush_func`` or ``__cpu_flush``.
 
+.. option:: -mflush-func
+
+  Default option value for :option:`-mno-flush-func`.
+
 .. option:: mbranch-cost=num
 
   Set the cost of branches to roughly :samp:`{num}` 'simple' instructions.

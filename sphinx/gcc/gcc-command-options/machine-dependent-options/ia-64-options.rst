@@ -91,9 +91,13 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   Generate code for inline divides of integer values
   using the maximum throughput algorithm.
 
-.. option:: -mno-inline-int-divide, -minline-int-divide
+.. option:: -mno-inline-int-divide
 
   Do not generate inline code for divides of integer values.
+
+.. option:: -minline-int-divide
+
+  Default option value for :option:`-mno-inline-int-divide`.
 
 .. option:: -minline-sqrt-min-latency
 

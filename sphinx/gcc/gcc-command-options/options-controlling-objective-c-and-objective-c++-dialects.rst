@@ -61,13 +61,17 @@ and Objective-C++ programs:
   ``__NEXT_RUNTIME__`` is predefined if (and only if) this option is
   used.
 
-.. option:: -fno-nil-receivers, -fnil-receivers
+.. option:: -fno-nil-receivers
 
   Assume that all Objective-C message dispatches ( ``[receiver
   message:arg]`` ) in this translation unit ensure that the receiver is
   not ``nil``.  This allows for more efficient entry points in the
   runtime to be used.  This option is only available in conjunction with
   the NeXT runtime and ABI version 0 or 1.
+
+.. option:: -fnil-receivers
+
+  Default option value for :option:`-fno-nil-receivers`.
 
 .. option:: -fobjc-abi-version=n
 
@@ -171,7 +175,7 @@ and Objective-C++ programs:
   The GNU runtime currently always retains calls to ``objc_get_class("...")``
   regardless of command-line options.
 
-.. option:: -fno-local-ivars, -flocal-ivars
+.. option:: -fno-local-ivars
 
   By default instance variables in Objective-C can be accessed as if
   they were local variables from within the methods of the class they're
@@ -179,6 +183,10 @@ and Objective-C++ programs:
   and other variables declared either locally inside a class method or
   globally with the same name.  Specifying the :option:`-fno-local-ivars`
   flag disables this behavior thus avoiding variable shadowing issues.
+
+.. option:: -flocal-ivars
+
+  Default option value for :option:`-fno-local-ivars`.
 
 .. option:: -fivar-visibility=[public|protected|private|package]
 
@@ -191,7 +199,7 @@ and Objective-C++ programs:
   Dump interface declarations for all classes seen in the source file to a
   file named :samp:`{sourcename}`.decl.
 
-.. option:: -Wassign-intercept, -Wno-assign-intercept
+.. option:: -Wassign-intercept
 
   .. note::
 
@@ -200,7 +208,11 @@ and Objective-C++ programs:
   Warn whenever an Objective-C assignment is being intercepted by the
   garbage collector.
 
-.. option:: -Wno-property-assign-default, -Wproperty-assign-default
+.. option:: -Wno-assign-intercept
+
+  Default option value for :option:`-Wassign-intercept`.
+
+.. option:: -Wno-property-assign-default
 
   .. note::
 
@@ -209,7 +221,11 @@ and Objective-C++ programs:
   Do not warn if a property for an Objective-C object has no assign
   semantics specified.
 
-.. option:: -Wno-protocol, -Wprotocol
+.. option:: -Wproperty-assign-default
+
+  Default option value for :option:`-Wno-property-assign-default`.
+
+.. option:: -Wno-protocol
 
   .. note::
 
@@ -223,6 +239,10 @@ and Objective-C++ programs:
   methods inherited from the superclass are considered to be implemented,
   and no warning is issued for them.
 
+.. option:: -Wprotocol
+
+  Default option value for :option:`-Wno-protocol`.
+
 .. option:: -Wobjc-root-class
 
   .. note::
@@ -234,7 +254,7 @@ and Objective-C++ programs:
   classes intended to be root classes, the warning can be suppressed by
   marking their interfaces with ``__attribute__((objc_root_class))``.
 
-.. option:: -Wselector, -Wno-selector
+.. option:: -Wselector
 
   .. note::
 
@@ -251,7 +271,11 @@ and Objective-C++ programs:
   found during compilation, or because the :option:`-fsyntax-only` option is
   being used.
 
-.. option:: -Wstrict-selector-match, -Wno-strict-selector-match
+.. option:: -Wno-selector
+
+  Default option value for :option:`-Wselector`.
+
+.. option:: -Wstrict-selector-match
 
   .. note::
 
@@ -264,7 +288,11 @@ and Objective-C++ programs:
   if any differences found are confined to types that share the same size
   and alignment.
 
-.. option:: -Wundeclared-selector, -Wno-undeclared-selector
+.. option:: -Wno-strict-selector-match
+
+  Default option value for :option:`-Wstrict-selector-match`.
+
+.. option:: -Wundeclared-selector
 
   .. note::
 
@@ -280,6 +308,10 @@ and Objective-C++ programs:
   while :option:`-Wselector` only performs its checks in the final stage of
   compilation.  This also enforces the coding style convention
   that methods and selectors must be declared before being used.
+
+.. option:: -Wno-undeclared-selector
+
+  Default option value for :option:`-Wundeclared-selector`.
 
 .. option:: -print-objc-runtime-info
 

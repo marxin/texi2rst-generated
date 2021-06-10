@@ -38,11 +38,15 @@ These :samp:`-m` options are defined for the H8/300 implementations:
   with monitor attribute. Default option is :option:`-mexr`.
   This option is valid only for H8S targets.
 
-.. option:: -mno-exr, -mexr
+.. option:: -mno-exr
 
   Extended registers are not stored on stack before execution of function 
   with monitor attribute. Default option is :option:`-mno-exr`. 
   This option is valid only for H8S targets.
+
+.. option:: -mexr
+
+  Default option value for :option:`-mno-exr`.
 
 .. option:: -mint32
 

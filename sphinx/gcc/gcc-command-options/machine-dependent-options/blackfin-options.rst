@@ -62,9 +62,13 @@ Blackfin Options
   contain speculative loads after jump instructions. If this option is used,
   ``__WORKAROUND_SPECULATIVE_LOADS`` is defined.
 
-.. option:: -mno-specld-anomaly, -mspecld-anomaly
+.. option:: -mno-specld-anomaly
 
   Don't generate extra code to prevent speculative loads from occurring.
+
+.. option:: -mspecld-anomaly
+
+  Default option value for :option:`-mno-specld-anomaly`.
 
 .. option:: -mcsync-anomaly
 
@@ -72,10 +76,14 @@ Blackfin Options
   contain CSYNC or SSYNC instructions too soon after conditional branches.
   If this option is used, ``__WORKAROUND_SPECULATIVE_SYNCS`` is defined.
 
-.. option:: -mno-csync-anomaly, -mcsync-anomaly
+.. option:: -mno-csync-anomaly
 
   Don't generate extra code to prevent CSYNC or SSYNC instructions from
   occurring too soon after a conditional branch.
+
+.. option:: -mcsync-anomaly
+
+  Default option value for :option:`-mno-csync-anomaly`.
 
 .. option:: -mlow64k
 
@@ -98,10 +106,14 @@ Blackfin Options
   without virtual memory management.  This option implies :option:`-fPIC`.
   With a :samp:`bfin-elf` target, this option implies :option:`-msim`.
 
-.. option:: -mno-id-shared-library, -mid-shared-library
+.. option:: -mno-id-shared-library
 
   Generate code that doesn't assume ID-based shared libraries are being used.
   This is the default.
+
+.. option:: -mid-shared-library
+
+  Default option value for :option:`-mno-id-shared-library`.
 
 .. option:: -mleaf-id-shared-library
 
@@ -110,10 +122,14 @@ Blackfin Options
   ID shared libraries.  That allows the compiler to use faster code for jumps
   and calls.
 
-.. option:: -mno-leaf-id-shared-library, -mleaf-id-shared-library
+.. option:: -mno-leaf-id-shared-library
 
   Do not assume that the code being compiled won't link against any ID shared
   libraries.  Slower code is generated for jump and call insns.
+
+.. option:: -mleaf-id-shared-library
+
+  Default option value for :option:`-mno-leaf-id-shared-library`.
 
 .. option:: -mshared-library-id=n
 
@@ -129,10 +145,14 @@ Blackfin Options
   an environment without virtual memory management by eliminating relocations
   against the text section.
 
-.. option:: -mno-sep-data, -msep-data
+.. option:: -mno-sep-data
 
   Generate code that assumes that the data segment follows the text segment.
   This is the default.
+
+.. option:: -msep-data
+
+  Default option value for :option:`-mno-sep-data`.
 
 .. option:: -mlong-calls, -mno-long-calls
 

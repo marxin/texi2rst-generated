@@ -117,10 +117,14 @@ Here is a list of options that are *only* for compiling C++ programs:
   along with :option:`-Wabi` (without the version), the version from this
   option is used for the warning.
 
-.. option:: -fno-access-control, -faccess-control
+.. option:: -fno-access-control
 
   Turn off all access checking.  This switch is mainly useful for working
   around bugs in the access control code.
+
+.. option:: -faccess-control
+
+  Default option value for :option:`-fno-access-control`.
 
 .. option:: -faligned-new
 
@@ -244,7 +248,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Enable support for the C++ coroutines extension (experimental).
 
-.. option:: -fno-elide-constructors, -felide-constructors
+.. option:: -fno-elide-constructors
 
   The C++ standard allows an implementation to omit creating a temporary
   that is only used to initialize another object of the same type.
@@ -255,7 +259,11 @@ Here is a list of options that are *only* for compiling C++ programs:
   In C++17, the compiler is required to omit these temporaries, but this
   option still affects trivial member functions.
 
-.. option:: -fno-enforce-eh-specs, -fenforce-eh-specs
+.. option:: -felide-constructors
+
+  Default option value for :option:`-fno-elide-constructors`.
+
+.. option:: -fno-enforce-eh-specs
 
   Don't generate code to check for violation of exception specifications
   at run time.  This option violates the C++ standard, but may be useful
@@ -264,6 +272,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   exceptions in violation of the exception specifications; the compiler
   still optimizes based on the specifications, so throwing an
   unexpected exception results in undefined behavior at run time.
+
+.. option:: -fenforce-eh-specs
+
+  Default option value for :option:`-fno-enforce-eh-specs`.
 
 .. option:: -fextern-tls-init, -fno-extern-tls-init
 
@@ -286,14 +298,18 @@ Here is a list of options that are *only* for compiling C++ programs:
   :option:`-fextern-tls-init`.  On targets that do not support symbol
   aliases, the default is :option:`-fno-extern-tls-init`.
 
-.. option:: -fno-gnu-keywords, -fgnu-keywords
+.. option:: -fno-gnu-keywords
 
   Do not recognize ``typeof`` as a keyword, so that code can use this
   word as an identifier.  You can use the keyword ``__typeof__`` instead.
   This option is implied by the strict ISO C++ dialects: :option:`-ansi`,
   :option:`-std`:samp:`=c++98`, :option:`-std`:samp:`=c++11`, etc.
 
-.. option:: -fno-implicit-templates, -fimplicit-templates
+.. option:: -fgnu-keywords
+
+  Default option value for :option:`-fno-gnu-keywords`.
+
+.. option:: -fno-implicit-templates
 
   Never emit code for non-inline templates that are instantiated
   implicitly (i.e. by use); only emit code for explicit instantiations.
@@ -302,17 +318,29 @@ Here is a list of options that are *only* for compiling C++ programs:
   undefined symbols at link time.
   See :ref:`template-instantiation`, for more information.
 
-.. option:: -fno-implicit-inline-templates, -fimplicit-inline-templates
+.. option:: -fimplicit-templates
+
+  Default option value for :option:`-fno-implicit-templates`.
+
+.. option:: -fno-implicit-inline-templates
 
   Don't emit code for implicit instantiations of inline templates, either.
   The default is to handle inlines differently so that compiles with and
   without optimization need the same set of explicit instantiations.
 
-.. option:: -fno-implement-inlines, -fimplement-inlines
+.. option:: -fimplicit-inline-templates
+
+  Default option value for :option:`-fno-implicit-inline-templates`.
+
+.. option:: -fno-implement-inlines
 
   To save space, do not emit out-of-line copies of inline functions
   controlled by ``#pragma implementation``.  This causes linker
   errors if these functions are not inlined everywhere they are called.
+
+.. option:: -fimplement-inlines
+
+  Default option value for :option:`-fno-implement-inlines`.
 
 .. option:: -fmodules-ts, -fno-modules-ts
 
@@ -335,9 +363,13 @@ Here is a list of options that are *only* for compiling C++ programs:
   so you must use it everywhere or nowhere.  (Such definitions outside
   of a named module remain implicitly inline, regardless.)
 
-.. option:: -fno-module-lazy, -fmodule-lazy
+.. option:: -fno-module-lazy
 
   Disable lazy module importing and module mapper creation.
+
+.. option:: -fmodule-lazy
+
+  Default option value for :option:`-fno-module-lazy`.
 
 .. option:: -fmodule-mapper=[hostname]:port[?ident]
 
@@ -371,11 +403,15 @@ Here is a list of options that are *only* for compiling C++ programs:
   with fewer template parameters.  This flag is enabled by default for
   :option:`-std`:samp:`=c++17`.
 
-.. option:: -fno-nonansi-builtins, -fnonansi-builtins
+.. option:: -fno-nonansi-builtins
 
   Disable built-in declarations of functions that are not mandated by
   ANSI/ISO C.  These include ``ffs``, ``alloca``, ``_exit``,
   ``index``, ``bzero``, ``conjf``, and other related functions.
+
+.. option:: -fnonansi-builtins
+
+  Default option value for :option:`-fno-nonansi-builtins`.
 
 .. option:: -fnothrow-opt
 
@@ -389,17 +425,25 @@ Here is a list of options that are *only* for compiling C++ programs:
   a function with such an exception specification results in a call
   to ``terminate`` rather than ``unexpected``.
 
-.. option:: -fno-operator-names, -foperator-names
+.. option:: -fno-operator-names
 
   Do not treat the operator name keywords ``and``, ``bitand``,
   ``bitor``, ``compl``, ``not``, ``or`` and ``xor`` as
   synonyms as keywords.
 
-.. option:: -fno-optional-diags, -foptional-diags
+.. option:: -foperator-names
+
+  Default option value for :option:`-fno-operator-names`.
+
+.. option:: -fno-optional-diags
 
   Disable diagnostics that the standard says a compiler does not need to
   issue.  Currently, the only such diagnostic issued by G++ is the one for
   a name having multiple meanings within a class.
+
+.. option:: -foptional-diags
+
+  Default option value for :option:`-fno-optional-diags`.
 
 .. option:: -fpermissive
 
@@ -407,7 +451,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   warnings.  Thus, using :option:`-fpermissive` allows some
   nonconforming code to compile.
 
-.. option:: -fno-pretty-templates, -fpretty-templates
+.. option:: -fno-pretty-templates
 
   When an error message refers to a specialization of a function
   template, the compiler normally prints the signature of the
@@ -420,7 +464,11 @@ Here is a list of options that are *only* for compiling C++ programs:
   behaviors make it harder to understand the error message rather than
   easier, you can use :option:`-fno-pretty-templates` to disable them.
 
-.. option:: -fno-rtti, -frtti
+.. option:: -fpretty-templates
+
+  Default option value for :option:`-fno-pretty-templates`.
+
+.. option:: -fno-rtti
 
   Disable generation of information about every class with virtual
   functions for use by the C++ run-time type identification features
@@ -435,6 +483,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   :option:`-fno-rtti` may not work.  For example, programs may
   fail to link if a class compiled with :option:`-fno-rtti` is used as a base 
   for a class compiled with :option:`-frtti`.  
+
+.. option:: -frtti
+
+  Default option value for :option:`-fno-rtti`.
 
 .. option:: -fsized-deallocation
 
@@ -483,12 +535,16 @@ Here is a list of options that are *only* for compiling C++ programs:
   (changed to 1024 in C++11).  The default value is 900, as the compiler
   can run out of stack space before hitting 1024 in some situations.
 
-.. option:: -fno-threadsafe-statics, -fthreadsafe-statics
+.. option:: -fno-threadsafe-statics
 
   Do not emit the extra code to use the routines specified in the C++
   ABI for thread-safe initialization of local statics.  You can use this
   option to reduce code size slightly in code that doesn't need to be
   thread-safe.
+
+.. option:: -fthreadsafe-statics
+
+  Default option value for :option:`-fno-threadsafe-statics`.
 
 .. option:: -fuse-cxa-atexit
 
@@ -498,11 +554,15 @@ Here is a list of options that are *only* for compiling C++ programs:
   destructors, but only works if your C library supports
   ``__cxa_atexit``.
 
-.. option:: -fno-use-cxa-get-exception-ptr, -fuse-cxa-get-exception-ptr
+.. option:: -fno-use-cxa-get-exception-ptr
 
   Don't use the ``__cxa_get_exception_ptr`` runtime routine.  This
   causes ``std::uncaught_exception`` to be incorrect, but is necessary
   if the runtime routine is not available.
+
+.. option:: -fuse-cxa-get-exception-ptr
+
+  Default option value for :option:`-fno-use-cxa-get-exception-ptr`.
 
 .. option:: -fvisibility-inlines-hidden
 
@@ -561,7 +621,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   objects may not compare equal.  When this flag is given, it is a
   violation of the ODR to define types with the same name differently.
 
-.. option:: -fno-weak, -fweak
+.. option:: -fno-weak
 
   Do not use weak symbol support, even if it is provided by the linker.
   By default, G++ uses weak symbols if they are available.  This
@@ -569,7 +629,11 @@ Here is a list of options that are *only* for compiling C++ programs:
   it results in inferior code and has no benefits.  This option may
   be removed in a future release of G++.
 
-.. option:: -fext-numeric-literals, -fno-ext-numeric-literals
+.. option:: -fweak
+
+  Default option value for :option:`-fno-weak`.
+
+.. option:: -fext-numeric-literals
 
   .. note::
 
@@ -584,6 +648,10 @@ Here is a list of options that are *only* for compiling C++ programs:
   :option:`-std`:samp:`=gnu++14`.
   This option is off by default
   for ISO C++11 onwards ( :option:`-std`:samp:`=c++11`, ...).
+
+.. option:: -fno-ext-numeric-literals
+
+  Default option value for :option:`-fext-numeric-literals`.
 
 .. option:: -nostdinc++
 
@@ -630,7 +698,7 @@ In addition, these warning options have meanings only for C++ programs:
   have that ABI tag.  See C++ Attributes for more information
   about ABI tags.
 
-.. option:: -Wcomma-subscript, -Wno-comma-subscript
+.. option:: -Wcomma-subscript
 
   .. note::
 
@@ -649,7 +717,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Enabled by default with :option:`-std`:samp:`=c++20`.
 
-.. option:: -Wctad-maybe-unsupported, -Wno-ctad-maybe-unsupported
+.. option:: -Wno-comma-subscript
+
+  Default option value for :option:`-Wcomma-subscript`.
+
+.. option:: -Wctad-maybe-unsupported
 
   .. note::
 
@@ -671,7 +743,11 @@ In addition, these warning options have meanings only for C++ programs:
     };
     S(allow_ctad_t) -> S<void>; // guide with incomplete parameter type will never be considered
 
-.. option:: -Wctor-dtor-privacy, -Wno-ctor-dtor-privacy
+.. option:: -Wno-ctad-maybe-unsupported
+
+  Default option value for :option:`-Wctad-maybe-unsupported`.
+
+.. option:: -Wctor-dtor-privacy
 
   .. note::
 
@@ -683,7 +759,11 @@ In addition, these warning options have meanings only for C++ programs:
   methods, and there's at least one private member function that isn't
   a constructor or destructor.
 
-.. option:: -Wdelete-non-virtual-dtor, -Wno-delete-non-virtual-dtor
+.. option:: -Wno-ctor-dtor-privacy
+
+  Default option value for :option:`-Wctor-dtor-privacy`.
+
+.. option:: -Wdelete-non-virtual-dtor
 
   .. note::
 
@@ -695,7 +775,11 @@ In addition, these warning options have meanings only for C++ programs:
   base class does not have a virtual destructor.  This warning is enabled
   by :option:`-Wall`.
 
-.. option:: -Wdeprecated-copy, -Wno-deprecated-copy
+.. option:: -Wno-delete-non-virtual-dtor
+
+  Default option value for :option:`-Wdelete-non-virtual-dtor`.
+
+.. option:: -Wdeprecated-copy
 
   .. note::
 
@@ -708,7 +792,11 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-Wdeprecated-copy-dtor`, also deprecate if the class has a
   user-provided destructor.
 
-.. option:: -Wno-deprecated-enum-enum-conversion, -Wdeprecated-enum-enum-conversion
+.. option:: -Wno-deprecated-copy
+
+  Default option value for :option:`-Wdeprecated-copy`.
+
+.. option:: -Wno-deprecated-enum-enum-conversion
 
   .. note::
 
@@ -729,7 +817,11 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-std`:samp:`=c++20`.  In pre-C++20 dialects, this warning can be enabled
   by :option:`-Wenum-conversion`.
 
-.. option:: -Wno-deprecated-enum-float-conversion, -Wdeprecated-enum-float-conversion
+.. option:: -Wdeprecated-enum-enum-conversion
+
+  Default option value for :option:`-Wno-deprecated-enum-enum-conversion`.
+
+.. option:: -Wno-deprecated-enum-float-conversion
 
   .. note::
 
@@ -750,7 +842,11 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-std`:samp:`=c++20`.  In pre-C++20 dialects, this warning can be enabled
   by :option:`-Wenum-conversion`.
 
-.. option:: -Wno-init-list-lifetime, -Winit-list-lifetime
+.. option:: -Wdeprecated-enum-float-conversion
+
+  Default option value for :option:`-Wno-deprecated-enum-float-conversion`.
+
+.. option:: -Wno-init-list-lifetime
 
   .. note::
 
@@ -791,14 +887,22 @@ In addition, these warning options have meanings only for C++ programs:
     ``initializer_list``, the pointer is left dangling by the end of
     the variable declaration statement.
 
-.. option:: -Winvalid-imported-macros, -Wno-invalid-imported-macros
+.. option:: -Winit-list-lifetime
+
+  Default option value for :option:`-Wno-init-list-lifetime`.
+
+.. option:: -Winvalid-imported-macros
 
   Verify all imported macro definitions are valid at the end of
   compilation.  This is not enabled by default, as it requires
   additional processing to determine.  It may be useful when preparing
   sets of header-units to ensure consistent macros.
 
-.. option:: -Wno-literal-suffix, -Wliteral-suffix
+.. option:: -Wno-invalid-imported-macros
+
+  Default option value for :option:`-Winvalid-imported-macros`.
+
+.. option:: -Wno-literal-suffix
 
   .. note::
 
@@ -830,7 +934,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   These warnings are enabled by default.
 
-.. option:: -Wno-narrowing, -Wnarrowing
+.. option:: -Wliteral-suffix
+
+  Default option value for :option:`-Wno-literal-suffix`.
+
+.. option:: -Wno-narrowing
 
   .. note::
 
@@ -853,7 +961,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   This flag is included in :option:`-Wall` and :option:`-Wc++11-compat`.
 
-.. option:: -Wnoexcept, -Wno-noexcept
+.. option:: -Wnarrowing
+
+  Default option value for :option:`-Wno-narrowing`.
+
+.. option:: -Wnoexcept
 
   .. note::
 
@@ -864,7 +976,11 @@ In addition, these warning options have meanings only for C++ programs:
   specification (i.e. ``throw()`` or ``noexcept`` ) but is known by
   the compiler to never throw an exception.
 
-.. option:: -Wnoexcept-type, -Wno-noexcept-type
+.. option:: -Wno-noexcept
+
+  Default option value for :option:`-Wnoexcept`.
+
+.. option:: -Wnoexcept-type
 
   .. note::
 
@@ -885,7 +1001,11 @@ In addition, these warning options have meanings only for C++ programs:
   In C++14, ``f`` calls ``f<void(*)()>``, but in
   C++17 it calls ``f<void(*)()noexcept>``.
 
-.. option:: -Wclass-memaccess, -Wno-class-memaccess
+.. option:: -Wno-noexcept-type
+
+  Default option value for :option:`-Wnoexcept-type`.
+
+.. option:: -Wclass-memaccess
 
   .. note::
 
@@ -912,7 +1032,11 @@ In addition, these warning options have meanings only for C++ programs:
   to a type that can be safely accessed by the raw memory function suppresses
   the warning.
 
-.. option:: -Wnon-virtual-dtor, -Wno-non-virtual-dtor
+.. option:: -Wno-class-memaccess
+
+  Default option value for :option:`-Wclass-memaccess`.
+
+.. option:: -Wnon-virtual-dtor
 
   .. note::
 
@@ -924,7 +1048,11 @@ In addition, these warning options have meanings only for C++ programs:
   class through a pointer to the class itself or base class.  This
   warning is automatically enabled if :option:`-Weffc++` is specified.
 
-.. option:: -Wregister, -Wno-register
+.. option:: -Wno-non-virtual-dtor
+
+  Default option value for :option:`-Wnon-virtual-dtor`.
+
+.. option:: -Wregister
 
   .. note::
 
@@ -936,7 +1064,11 @@ In addition, these warning options have meanings only for C++ programs:
   been deprecated in C++11 and removed in C++17.
   Enabled by default with :option:`-std`:samp:`=c++17`.
 
-.. option:: -Wreorder, -Wno-reorder
+.. option:: -Wno-register
+
+  Default option value for :option:`-Wregister`.
+
+.. option:: -Wreorder
 
   .. note::
 
@@ -961,7 +1093,11 @@ In addition, these warning options have meanings only for C++ programs:
   and ``j`` to match the declaration order of the members, emitting
   a warning to that effect.  This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wno-pessimizing-move, -Wpessimizing-move
+.. option:: -Wno-reorder
+
+  Default option value for :option:`-Wreorder`.
+
+.. option:: -Wno-pessimizing-move
 
   .. note::
 
@@ -989,7 +1125,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wno-redundant-move, -Wredundant-move
+.. option:: -Wpessimizing-move
+
+  Default option value for :option:`-Wno-pessimizing-move`.
+
+.. option:: -Wno-redundant-move
 
   .. note::
 
@@ -1036,7 +1176,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   This warning is enabled by :option:`-Wextra`.
 
-.. option:: -Wrange-loop-construct, -Wno-range-loop-construct
+.. option:: -Wredundant-move
+
+  Default option value for :option:`-Wno-redundant-move`.
+
+.. option:: -Wrange-loop-construct
 
   .. note::
 
@@ -1073,7 +1217,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   This warning is enabled by :option:`-Wall`.
 
-.. option:: -Wredundant-tags, -Wno-redundant-tags
+.. option:: -Wno-range-loop-construct
+
+  Default option value for :option:`-Wrange-loop-construct`.
+
+.. option:: -Wredundant-tags
 
   .. note::
 
@@ -1096,7 +1244,11 @@ In addition, these warning options have meanings only for C++ programs:
     void foo ();   // "hides" struct foo
     void bar (struct foo&);  // no warning, keyword struct is necessary
 
-.. option:: -Wno-subobject-linkage, -Wsubobject-linkage
+.. option:: -Wno-redundant-tags
+
+  Default option value for :option:`-Wredundant-tags`.
+
+.. option:: -Wno-subobject-linkage
 
   .. note::
 
@@ -1114,7 +1266,11 @@ In addition, these warning options have meanings only for C++ programs:
   file, as those are unlikely to have multiple definitions.
   :option:`-Wsubobject-linkage` is enabled by default.
 
-.. option:: -Weffc++, -Wno-effc++
+.. option:: -Wsubobject-linkage
+
+  Default option value for :option:`-Wno-subobject-linkage`.
+
+.. option:: -Weffc++
 
   .. note::
 
@@ -1146,7 +1302,11 @@ In addition, these warning options have meanings only for C++ programs:
   headers do not obey all of these guidelines; use :samp:`grep -v`
   to filter out those warnings.
 
-.. option:: -Wno-exceptions, -Wexceptions
+.. option:: -Wno-effc++
+
+  Default option value for :option:`-Weffc++`.
+
+.. option:: -Wno-exceptions
 
   .. note::
 
@@ -1155,7 +1315,11 @@ In addition, these warning options have meanings only for C++ programs:
   Disable the warning about the case when an exception handler is shadowed by
   another handler, which can point out a wrong ordering of exception handlers.
 
-.. option:: -Wstrict-null-sentinel, -Wno-strict-null-sentinel
+.. option:: -Wexceptions
+
+  Default option value for :option:`-Wno-exceptions`.
+
+.. option:: -Wstrict-null-sentinel
 
   .. note::
 
@@ -1167,7 +1331,11 @@ In addition, these warning options have meanings only for C++ programs:
   null pointer, it is guaranteed to be of the same size as a pointer.
   But this use is not portable across different compilers.
 
-.. option:: -Wno-non-template-friend, -Wnon-template-friend
+.. option:: -Wno-strict-null-sentinel
+
+  Default option value for :option:`-Wstrict-null-sentinel`.
+
+.. option:: -Wno-non-template-friend
 
   .. note::
 
@@ -1181,7 +1349,11 @@ In addition, these warning options have meanings only for C++ programs:
   function; the warning exists to diagnose compatibility problems, 
   and is enabled by default.
 
-.. option:: -Wold-style-cast, -Wno-old-style-cast
+.. option:: -Wnon-template-friend
+
+  Default option value for :option:`-Wno-non-template-friend`.
+
+.. option:: -Wold-style-cast
 
   .. note::
 
@@ -1192,7 +1364,11 @@ In addition, these warning options have meanings only for C++ programs:
   ``static_cast``, ``reinterpret_cast``, and ``const_cast`` ) are
   less vulnerable to unintended effects and much easier to search for.
 
-.. option:: -Woverloaded-virtual, -Wno-overloaded-virtual
+.. option:: -Wno-old-style-cast
+
+  Default option value for :option:`-Wold-style-cast`.
+
+.. option:: -Woverloaded-virtual
 
   .. note::
 
@@ -1225,7 +1401,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   fails to compile.
 
-.. option:: -Wno-pmf-conversions, -Wpmf-conversions
+.. option:: -Wno-overloaded-virtual
+
+  Default option value for :option:`-Woverloaded-virtual`.
+
+.. option:: -Wno-pmf-conversions
 
   .. note::
 
@@ -1234,7 +1414,11 @@ In addition, these warning options have meanings only for C++ programs:
   Disable the diagnostic for converting a bound pointer to member function
   to a plain pointer.
 
-.. option:: -Wsign-promo, -Wno-sign-promo
+.. option:: -Wpmf-conversions
+
+  Default option value for :option:`-Wno-pmf-conversions`.
+
+.. option:: -Wsign-promo
 
   .. note::
 
@@ -1245,7 +1429,11 @@ In addition, these warning options have meanings only for C++ programs:
   the same size.  Previous versions of G++ tried to preserve
   unsignedness, but the standard mandates the current behavior.
 
-.. option:: -Wtemplates, -Wno-templates
+.. option:: -Wno-sign-promo
+
+  Default option value for :option:`-Wsign-promo`.
+
+.. option:: -Wtemplates
 
   .. note::
 
@@ -1257,7 +1445,11 @@ In addition, these warning options have meanings only for C++ programs:
   one can still use the STL.  One may also instantiate or specialize
   templates.
 
-.. option:: -Wno-mismatched-new-delete, -Wmismatched-new-delete
+.. option:: -Wno-templates
+
+  Default option value for :option:`-Wtemplates`.
+
+.. option:: -Wno-mismatched-new-delete
 
   .. note::
 
@@ -1294,7 +1486,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   :option:`-Wmismatched-new-delete` is enabled by default.
 
-.. option:: -Wmismatched-tags, -Wno-mismatched-tags
+.. option:: -Wmismatched-new-delete
+
+  Default option value for :option:`-Wno-mismatched-new-delete`.
+
+.. option:: -Wmismatched-tags
 
   .. note::
 
@@ -1324,7 +1520,11 @@ In addition, these warning options have meanings only for C++ programs:
   declared with different class-keys.  The option can be used either on its
   own or in conjunction with :option:`-Wredundant-tags`.
 
-.. option:: -Wmultiple-inheritance, -Wno-multiple-inheritance
+.. option:: -Wno-mismatched-tags
+
+  Default option value for :option:`-Wmismatched-tags`.
+
+.. option:: -Wmultiple-inheritance
 
   .. note::
 
@@ -1336,7 +1536,11 @@ In addition, these warning options have meanings only for C++ programs:
   such as the STL, so one can still use the STL.  One may also define
   classes that indirectly use multiple inheritance.
 
-.. option:: -Wvirtual-inheritance, -Wno-virtual-inheritance
+.. option:: -Wno-multiple-inheritance
+
+  Default option value for :option:`-Wmultiple-inheritance`.
+
+.. option:: -Wvirtual-inheritance
 
   Warn when a class is defined with a virtual direct base class.  Some
   coding rules disallow multiple inheritance, and this may be used to
@@ -1344,7 +1548,11 @@ In addition, these warning options have meanings only for C++ programs:
   such as the STL, so one can still use the STL.  One may also define
   classes that indirectly use virtual inheritance.
 
-.. option:: -Wno-virtual-move-assign, -Wvirtual-move-assign
+.. option:: -Wno-virtual-inheritance
+
+  Default option value for :option:`-Wvirtual-inheritance`.
+
+.. option:: -Wno-virtual-move-assign
 
   Suppress warnings about inheriting from a virtual base with a
   non-trivial C++11 move assignment operator.  This is dangerous because
@@ -1353,14 +1561,22 @@ In addition, these warning options have meanings only for C++ programs:
   moved-from state.  If the move assignment operator is written to avoid
   moving from a moved-from object, this warning can be disabled.
 
-.. option:: -Wnamespaces, -Wno-namespaces
+.. option:: -Wvirtual-move-assign
+
+  Default option value for :option:`-Wno-virtual-move-assign`.
+
+.. option:: -Wnamespaces
 
   Warn when a namespace definition is opened.  Some coding rules disallow
   namespaces, and this may be used to enforce that rule.  The warning is
   inactive inside a system header file, such as the STL, so one can still
   use the STL.  One may also use using directives and qualified names.
 
-.. option:: -Wno-terminate, -Wterminate
+.. option:: -Wno-namespaces
+
+  Default option value for :option:`-Wnamespaces`.
+
+.. option:: -Wno-terminate
 
   .. note::
 
@@ -1369,7 +1585,11 @@ In addition, these warning options have meanings only for C++ programs:
   Disable the warning about a throw-expression that will immediately
   result in a call to ``terminate``.
 
-.. option:: -Wno-vexing-parse, -Wvexing-parse
+.. option:: -Wterminate
+
+  Default option value for :option:`-Wno-terminate`.
+
+.. option:: -Wno-vexing-parse
 
   .. note::
 
@@ -1403,7 +1623,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   This warning is enabled by default.
 
-.. option:: -Wno-class-conversion, -Wclass-conversion
+.. option:: -Wvexing-parse
+
+  Default option value for :option:`-Wno-vexing-parse`.
+
+.. option:: -Wno-class-conversion
 
   .. note::
 
@@ -1413,7 +1637,11 @@ In addition, these warning options have meanings only for C++ programs:
   object to the same type, to a base class of that type, or to void; such
   a conversion function will never be called.
 
-.. option:: -Wvolatile, -Wno-volatile
+.. option:: -Wclass-conversion
+
+  Default option value for :option:`-Wno-class-conversion`.
+
+.. option:: -Wvolatile
 
   .. note::
 
@@ -1430,7 +1658,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Enabled by default with :option:`-std`:samp:`=c++20`.
 
-.. option:: -Wzero-as-null-pointer-constant, -Wno-zero-as-null-pointer-constant
+.. option:: -Wno-volatile
+
+  Default option value for :option:`-Wvolatile`.
+
+.. option:: -Wzero-as-null-pointer-constant
 
   .. note::
 
@@ -1439,7 +1671,11 @@ In addition, these warning options have meanings only for C++ programs:
   Warn when a literal :samp:`0` is used as null pointer constant.  This can
   be useful to facilitate the conversion to ``nullptr`` in C++11.
 
-.. option:: -Waligned-new, -Wno-aligned-new
+.. option:: -Wno-zero-as-null-pointer-constant
+
+  Default option value for :option:`-Wzero-as-null-pointer-constant`.
+
+.. option:: -Waligned-new
 
   Warn about a new-expression of a type that requires greater alignment
   than the ``alignof(std::max_align_t)`` but uses an allocation
@@ -1450,7 +1686,11 @@ In addition, these warning options have meanings only for C++ programs:
   :option:`-Waligned-new`:samp:`=all` also warns about class member allocation
   functions.
 
-.. option:: -Wno-placement-new, -Wplacement-new=n, -Wplacement-new
+.. option:: -Wno-aligned-new
+
+  Default option value for :option:`-Waligned-new`.
+
+.. option:: -Wno-placement-new, -Wplacement-new=n
 
   Warn about placement new expressions with undefined behavior, such as
   constructing an object in a buffer that is smaller than the type of
@@ -1493,7 +1733,11 @@ In addition, these warning options have meanings only for C++ programs:
       S *s = (S *)malloc (sizeof *s + 32 * sizeof s->a[0]);
       new (s->a)int [32]();
 
-.. option:: -Wcatch-value, -Wcatch-value=n(C++ and Objective-C++ only), -Wno-catch-value
+.. option:: -Wplacement-new
+
+  Default option value for :option:`-Wno-placement-new`.
+
+.. option:: -Wcatch-value, -Wcatch-value=n(C++ and Objective-C++ only)
 
   Warn about catch handlers that do not catch via reference.
   With :option:`-Wcatch-value`:samp:`=1` (or :option:`-Wcatch-value` for short)
@@ -1502,7 +1746,11 @@ In addition, these warning options have meanings only for C++ programs:
   by value. With :option:`-Wcatch-value`:samp:`=3` warn about all types that are
   not caught by reference. :option:`-Wcatch-value` is enabled by :option:`-Wall`.
 
-.. option:: -Wconditionally-supported, -Wno-conditionally-supported
+.. option:: -Wno-catch-value
+
+  Default option value for :option:`-Wcatch-value`.
+
+.. option:: -Wconditionally-supported
 
   .. note::
 
@@ -1510,7 +1758,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn for conditionally-supported (C++11 [intro.defs]) constructs.
 
-.. option:: -Wno-delete-incomplete, -Wdelete-incomplete
+.. option:: -Wno-conditionally-supported
+
+  Default option value for :option:`-Wconditionally-supported`.
+
+.. option:: -Wno-delete-incomplete
 
   .. note::
 
@@ -1519,7 +1771,11 @@ In addition, these warning options have meanings only for C++ programs:
   Do not warn when deleting a pointer to incomplete type, which may cause
   undefined behavior at runtime.  This warning is enabled by default.
 
-.. option:: -Wextra-semi, -Wno-extra-semi
+.. option:: -Wdelete-incomplete
+
+  Default option value for :option:`-Wno-delete-incomplete`.
+
+.. option:: -Wextra-semi
 
   .. note::
 
@@ -1527,7 +1783,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn about redundant semicolons after in-class function definitions.
 
-.. option:: -Wno-inaccessible-base, -Winaccessible-base
+.. option:: -Wno-extra-semi
+
+  Default option value for :option:`-Wextra-semi`.
+
+.. option:: -Wno-inaccessible-base
 
   .. note::
 
@@ -1547,13 +1807,21 @@ In addition, these warning options have meanings only for C++ programs:
 
     struct C : B, A { };
 
-.. option:: -Wno-inherited-variadic-ctor, -Winherited-variadic-ctor
+.. option:: -Winaccessible-base
+
+  Default option value for :option:`-Wno-inaccessible-base`.
+
+.. option:: -Wno-inherited-variadic-ctor
 
   Suppress warnings about use of C++11 inheriting constructors when the
   base class inherited from has a C variadic constructor; the warning is
   on by default because the ellipsis is not inherited.
 
-.. option:: -Wno-invalid-offsetof, -Winvalid-offsetof
+.. option:: -Winherited-variadic-ctor
+
+  Default option value for :option:`-Wno-inherited-variadic-ctor`.
+
+.. option:: -Wno-invalid-offsetof
 
   .. note::
 
@@ -1570,7 +1838,11 @@ In addition, these warning options have meanings only for C++ programs:
   The restrictions on ``offsetof`` may be relaxed in a future version
   of the C++ standard.
 
-.. option:: -Wsized-deallocation, -Wno-sized-deallocation
+.. option:: -Winvalid-offsetof
+
+  Default option value for :option:`-Wno-invalid-offsetof`.
+
+.. option:: -Wsized-deallocation
 
   .. note::
 
@@ -1593,7 +1865,11 @@ In addition, these warning options have meanings only for C++ programs:
   or vice versa.  Enabled by :option:`-Wextra` along with
   :option:`-fsized-deallocation`.
 
-.. option:: -Wsuggest-final-types, -Wno-suggest-final-types
+.. option:: -Wno-sized-deallocation
+
+  Default option value for :option:`-Wsized-deallocation`.
+
+.. option:: -Wsuggest-final-types
 
   Warn about types with virtual methods where code quality would be improved
   if the type were declared with the C++11 ``final`` specifier,
@@ -1604,7 +1880,11 @@ In addition, these warning options have meanings only for C++ programs:
   where the information about the class hierarchy graph is
   more complete.
 
-.. option:: -Wsuggest-final-methods, -Wno-suggest-final-methods
+.. option:: -Wno-suggest-final-types
+
+  Default option value for :option:`-Wsuggest-final-types`.
+
+.. option:: -Wsuggest-final-methods
 
   Warn about virtual methods where code quality would be improved if the method
   were declared with the C++11 ``final`` specifier,
@@ -1616,12 +1896,20 @@ In addition, these warning options have meanings only for C++ programs:
   suggestions of :option:`-Wsuggest-final-types` and then rebuild with new
   annotations.
 
-.. option:: -Wsuggest-override, -Wno-suggest-override
+.. option:: -Wno-suggest-final-methods
+
+  Default option value for :option:`-Wsuggest-final-methods`.
+
+.. option:: -Wsuggest-override
 
   Warn about overriding virtual functions that are not marked with the
   ``override`` keyword.
 
-.. option:: -Wuseless-cast, -Wno-useless-cast
+.. option:: -Wno-suggest-override
+
+  Default option value for :option:`-Wsuggest-override`.
+
+.. option:: -Wuseless-cast
 
   .. note::
 
@@ -1629,7 +1917,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn when an expression is casted to its own type.
 
-.. option:: -Wno-conversion-null, -Wconversion-null
+.. option:: -Wno-useless-cast
+
+  Default option value for :option:`-Wuseless-cast`.
+
+.. option:: -Wno-conversion-null
 
   .. note::
 
@@ -1637,4 +1929,8 @@ In addition, these warning options have meanings only for C++ programs:
 
   Do not warn for conversions between ``NULL`` and non-pointer
   types. :option:`-Wconversion-null` is enabled by default.
+
+.. option:: -Wconversion-null
+
+  Default option value for :option:`-Wno-conversion-null`.
 

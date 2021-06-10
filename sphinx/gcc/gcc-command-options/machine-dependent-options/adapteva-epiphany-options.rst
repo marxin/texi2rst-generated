@@ -35,7 +35,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
   Emit :samp:`{num}` NOPs before every other generated instruction.
 
-.. option:: -mno-soft-cmpsf, -msoft-cmpsf
+.. option:: -mno-soft-cmpsf
 
   For single-precision floating-point comparisons, emit an ``fsub`` instruction
   and test the flags.  This is faster than a software comparison, but can
@@ -43,6 +43,10 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   numbers are compared such that their difference is calculated as zero.
   The default is :option:`-msoft-cmpsf`, which uses slower, but IEEE-compliant,
   software comparisons.
+
+.. option:: -msoft-cmpsf
+
+  Default option value for :option:`-mno-soft-cmpsf`.
 
 .. option:: -mstack-offset=num
 
@@ -58,10 +62,14 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   offset to build working programs, it is recommended to configure the
   toolchain with the appropriate :option:`--with-stack-offset`:samp:`={num}` option.
 
-.. option:: -mno-round-nearest, -mround-nearest
+.. option:: -mno-round-nearest
 
   Make the scheduler assume that the rounding mode has been set to
   truncating.  The default is :option:`-mround-nearest`.
+
+.. option:: -mround-nearest
+
+  Default option value for :option:`-mno-round-nearest`.
 
 .. option:: -mlong-calls
 

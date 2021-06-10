@@ -718,10 +718,14 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   in the ``.data`` section, and all uninitialized data in the
   ``.bss`` section.
 
-.. option:: -mreadonly-in-sdata, -mno-readonly-in-sdata
+.. option:: -mreadonly-in-sdata
 
   Put read-only objects in the ``.sdata`` section as well.  This is the
   default.
+
+.. option:: -mno-readonly-in-sdata
+
+  Default option value for :option:`-mreadonly-in-sdata`.
 
 .. option:: -mblock-move-inline-limit=num
 

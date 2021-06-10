@@ -8,7 +8,7 @@
 Options That Control Static Analysis
 ************************************
 
-.. option:: -fanalyzer, -fno-analyzer
+.. option:: -fanalyzer
 
   This option enables an static analysis of program flow which looks
   for 'interesting' interprocedural paths through the
@@ -42,7 +42,11 @@ Options That Control Static Analysis
   This option is only available if GCC was configured with analyzer
   support enabled.
 
-.. option:: -Wanalyzer-too-complex, -Wno-analyzer-too-complex
+.. option:: -fno-analyzer
+
+  Default option value for :option:`-fanalyzer`.
+
+.. option:: -Wanalyzer-too-complex
 
   If :option:`-fanalyzer` is enabled, the analyzer uses various heuristics
   to attempt to explore the control flow and data flow in the program,
@@ -52,7 +56,11 @@ Options That Control Static Analysis
   complicated for the analyzer to fully explore and it reaches an internal
   limit.  The :option:`-Wanalyzer-too-complex` option warns if this occurs.
 
-.. option:: -Wno-analyzer-double-fclose, -Wanalyzer-double-fclose
+.. option:: -Wno-analyzer-too-complex
+
+  Default option value for :option:`-Wanalyzer-too-complex`.
+
+.. option:: -Wno-analyzer-double-fclose
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-double-fclose` to disable it.
@@ -60,7 +68,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a ``FILE *``
   can have ``fclose`` called on it more than once.
 
-.. option:: -Wno-analyzer-double-free, -Wanalyzer-double-free
+.. option:: -Wanalyzer-double-fclose
+
+  Default option value for :option:`-Wno-analyzer-double-fclose`.
+
+.. option:: -Wno-analyzer-double-free
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-double-free` to disable it.
@@ -69,7 +81,11 @@ Options That Control Static Analysis
   can have a deallocator called on it more than once, either ``free``,
   or a deallocator referenced by attribute ``malloc``.
 
-.. option:: -Wno-analyzer-exposure-through-output-file, -Wanalyzer-exposure-through-output-file
+.. option:: -Wanalyzer-double-free
+
+  Default option value for :option:`-Wno-analyzer-double-free`.
+
+.. option:: -Wno-analyzer-exposure-through-output-file
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-exposure-through-output-file`
@@ -79,7 +95,11 @@ Options That Control Static Analysis
   security-sensitive value is written to an output file
   (such as writing a password to a log file).
 
-.. option:: -Wno-analyzer-file-leak, -Wanalyzer-file-leak
+.. option:: -Wanalyzer-exposure-through-output-file
+
+  Default option value for :option:`-Wno-analyzer-exposure-through-output-file`.
+
+.. option:: -Wno-analyzer-file-leak
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-file-leak`
@@ -88,7 +108,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   ``<stdio.h>`` ``FILE *`` stream object is leaked.
 
-.. option:: -Wno-analyzer-free-of-non-heap, -Wanalyzer-free-of-non-heap
+.. option:: -Wanalyzer-file-leak
+
+  Default option value for :option:`-Wno-analyzer-file-leak`.
+
+.. option:: -Wno-analyzer-free-of-non-heap
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-free-of-non-heap`
@@ -97,7 +121,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which ``free``
   is called on a non-heap pointer (e.g. an on-stack buffer, or a global).
 
-.. option:: -Wno-analyzer-malloc-leak, -Wanalyzer-malloc-leak
+.. option:: -Wanalyzer-free-of-non-heap
+
+  Default option value for :option:`-Wno-analyzer-free-of-non-heap`.
+
+.. option:: -Wno-analyzer-malloc-leak
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-malloc-leak`
@@ -107,7 +135,11 @@ Options That Control Static Analysis
   pointer allocated via an allocator is leaked: either ``malloc``,
   or a function marked with attribute ``malloc``.
 
-.. option:: -Wno-analyzer-mismatching-deallocation, -Wanalyzer-mismatching-deallocation
+.. option:: -Wanalyzer-malloc-leak
+
+  Default option value for :option:`-Wno-analyzer-malloc-leak`.
+
+.. option:: -Wno-analyzer-mismatching-deallocation
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-mismatching-deallocation`
@@ -120,7 +152,11 @@ Options That Control Static Analysis
   and vector ``delete[]``, and those marked as allocator/deallocator
   pairs using attribute ``malloc``.
 
-.. option:: -Wno-analyzer-possible-null-argument, -Wanalyzer-possible-null-argument
+.. option:: -Wanalyzer-mismatching-deallocation
+
+  Default option value for :option:`-Wno-analyzer-mismatching-deallocation`.
+
+.. option:: -Wno-analyzer-possible-null-argument
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-possible-null-argument` to disable it.
@@ -130,7 +166,11 @@ Options That Control Static Analysis
   with ``__attribute__((nonnull))`` as requiring a non-NULL
   value.
 
-.. option:: -Wno-analyzer-possible-null-dereference, -Wanalyzer-possible-null-dereference
+.. option:: -Wanalyzer-possible-null-argument
+
+  Default option value for :option:`-Wno-analyzer-possible-null-argument`.
+
+.. option:: -Wno-analyzer-possible-null-dereference
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-possible-null-dereference` to disable it.
@@ -138,7 +178,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   possibly-NULL value is dereferenced.
 
-.. option:: -Wno-analyzer-null-argument, -Wanalyzer-null-argument
+.. option:: -Wanalyzer-possible-null-dereference
+
+  Default option value for :option:`-Wno-analyzer-possible-null-dereference`.
+
+.. option:: -Wno-analyzer-null-argument
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-null-argument` to disable it.
@@ -148,7 +192,11 @@ Options That Control Static Analysis
   with ``__attribute__((nonnull))`` as requiring a non-NULL
   value.
 
-.. option:: -Wno-analyzer-null-dereference, -Wanalyzer-null-dereference
+.. option:: -Wanalyzer-null-argument
+
+  Default option value for :option:`-Wno-analyzer-null-argument`.
+
+.. option:: -Wno-analyzer-null-dereference
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-null-dereference` to disable it.
@@ -156,7 +204,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   value known to be NULL is dereferenced.
 
-.. option:: -Wno-analyzer-shift-count-negative, -Wanalyzer-shift-count-negative
+.. option:: -Wanalyzer-null-dereference
+
+  Default option value for :option:`-Wno-analyzer-null-dereference`.
+
+.. option:: -Wno-analyzer-shift-count-negative
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-shift-count-negative` to disable it.
@@ -169,7 +221,11 @@ Options That Control Static Analysis
   However, the analyzer does not prioritize detection of such paths, so
   false negatives are more likely relative to other warnings.
 
-.. option:: -Wno-analyzer-shift-count-overflow, -Wanalyzer-shift-count-overflow
+.. option:: -Wanalyzer-shift-count-negative
+
+  Default option value for :option:`-Wno-analyzer-shift-count-negative`.
+
+.. option:: -Wno-analyzer-shift-count-overflow
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-shift-count-overflow` to disable it.
@@ -183,7 +239,11 @@ Options That Control Static Analysis
   However, the analyzer does not prioritize detection of such paths, so
   false negatives are more likely relative to other warnings.
 
-.. option:: -Wno-analyzer-stale-setjmp-buffer, -Wanalyzer-stale-setjmp-buffer
+.. option:: -Wanalyzer-shift-count-overflow
+
+  Default option value for :option:`-Wno-analyzer-shift-count-overflow`.
+
+.. option:: -Wno-analyzer-stale-setjmp-buffer
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-stale-setjmp-buffer` to disable it.
@@ -198,7 +258,11 @@ Options That Control Static Analysis
   to rewind to it via ``longjmp`` would reference a stack frame that
   no longer exists, and likely lead to a crash (or worse).
 
-.. option:: -Wno-analyzer-tainted-array-index, -Wanalyzer-tainted-array-index
+.. option:: -Wanalyzer-stale-setjmp-buffer
+
+  Default option value for :option:`-Wno-analyzer-stale-setjmp-buffer`.
+
+.. option:: -Wno-analyzer-tainted-array-index
 
   This warning requires both :option:`-fanalyzer` and
   :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
@@ -208,7 +272,11 @@ Options That Control Static Analysis
   that could be under an attacker's control is used as the index
   of an array access without being sanitized.
 
-.. option:: -Wno-analyzer-unsafe-call-within-signal-handler, -Wanalyzer-unsafe-call-within-signal-handler
+.. option:: -Wanalyzer-tainted-array-index
+
+  Default option value for :option:`-Wno-analyzer-tainted-array-index`.
+
+.. option:: -Wno-analyzer-unsafe-call-within-signal-handler
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` to disable it.
@@ -217,7 +285,11 @@ Options That Control Static Analysis
   function known to be async-signal-unsafe (such as ``fprintf`` ) is
   called from a signal handler.
 
-.. option:: -Wno-analyzer-use-after-free, -Wanalyzer-use-after-free
+.. option:: -Wanalyzer-unsafe-call-within-signal-handler
+
+  Default option value for :option:`-Wno-analyzer-unsafe-call-within-signal-handler`.
+
+.. option:: -Wno-analyzer-use-after-free
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-use-after-free` to disable it.
@@ -226,7 +298,11 @@ Options That Control Static Analysis
   pointer is used after a deallocator is called on it: either ``free``,
   or a deallocator referenced by attribute ``malloc``.
 
-.. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame, -Wanalyzer-use-of-pointer-in-stale-stack-frame
+.. option:: -Wanalyzer-use-after-free
+
+  Default option value for :option:`-Wno-analyzer-use-after-free`.
+
+.. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`
@@ -235,7 +311,11 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a pointer
   is dereferenced that points to a variable in a stale stack frame.
 
-.. option:: -Wno-analyzer-write-to-const, -Wanalyzer-write-to-const
+.. option:: -Wanalyzer-use-of-pointer-in-stale-stack-frame
+
+  Default option value for :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`.
+
+.. option:: -Wno-analyzer-write-to-const
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-write-to-const`
@@ -246,7 +326,11 @@ Options That Control Static Analysis
   However, the analyzer does not prioritize detection of such paths, so
   false negatives are more likely relative to other warnings.
 
-.. option:: -Wno-analyzer-write-to-string-literal, -Wanalyzer-write-to-string-literal
+.. option:: -Wanalyzer-write-to-const
+
+  Default option value for :option:`-Wno-analyzer-write-to-const`.
+
+.. option:: -Wno-analyzer-write-to-string-literal
 
   This warning requires :option:`-fanalyzer`, which enables it; use
   :option:`-Wno-analyzer-write-to-string-literal`
@@ -257,6 +341,10 @@ Options That Control Static Analysis
   However, the analyzer does not prioritize detection of such paths, so
   false negatives are more likely relative to other warnings.
 
+.. option:: -Wanalyzer-write-to-string-literal
+
+  Default option value for :option:`-Wno-analyzer-write-to-string-literal`.
+
 Pertinent parameters for controlling the exploration are:
 :option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
 :option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
@@ -265,7 +353,7 @@ Pertinent parameters for controlling the exploration are:
 
 The following options control the analyzer.
 
-.. option:: -fanalyzer-call-summaries, -fno-analyzer-call-summaries
+.. option:: -fanalyzer-call-summaries
 
   Simplify interprocedural analysis by computing the effect of certain calls,
   rather than exploring all paths through the function from callsite to each
@@ -274,6 +362,10 @@ The following options control the analyzer.
   If enabled, call summaries are only used for functions with more than one
   call site, and that are sufficiently complicated (as per
   :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}` ).
+
+.. option:: -fno-analyzer-call-summaries
+
+  Default option value for :option:`-fanalyzer-call-summaries`.
 
 .. option:: -fanalyzer-checker=name
 
@@ -284,7 +376,7 @@ The following options control the analyzer.
   :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.
 
-.. option:: -fno-analyzer-feasibility, -fanalyzer-feasibility
+.. option:: -fno-analyzer-feasibility
 
   This option is intended for analyzer developers.
 
@@ -294,7 +386,11 @@ The following options control the analyzer.
   This filtering can be suppressed with :option:`-fno-analyzer-feasibility`, for
   debugging issues in this code.
 
-.. option:: -fanalyzer-fine-grained, -fno-analyzer-fine-grained
+.. option:: -fanalyzer-feasibility
+
+  Default option value for :option:`-fno-analyzer-feasibility`.
+
+.. option:: -fanalyzer-fine-grained
 
   This option is intended for analyzer developers.
 
@@ -305,14 +401,22 @@ The following options control the analyzer.
   of multiple statements within a basic block.  With
   :option:`-fanalyzer-fine-grained`, each statement gets its own edge.
 
-.. option:: -fanalyzer-show-duplicate-count, -fno-analyzer-show-duplicate-count
+.. option:: -fno-analyzer-fine-grained
+
+  Default option value for :option:`-fanalyzer-fine-grained`.
+
+.. option:: -fanalyzer-show-duplicate-count
 
   This option is intended for analyzer developers: if multiple diagnostics
   have been detected as being duplicates of each other, it emits a note when
   reporting the best diagnostic, giving the number of additional diagnostics
   that were suppressed by the deduplication logic.
 
-.. option:: -fno-analyzer-state-merge, -fanalyzer-state-merge
+.. option:: -fno-analyzer-show-duplicate-count
+
+  Default option value for :option:`-fanalyzer-show-duplicate-count`.
+
+.. option:: -fno-analyzer-state-merge
 
   This option is intended for analyzer developers.
 
@@ -321,7 +425,11 @@ The following options control the analyzer.
   'exploded graph'.  With :option:`-fno-analyzer-state-merge` this
   merging can be suppressed, for debugging state-handling issues.
 
-.. option:: -fno-analyzer-state-purge, -fanalyzer-state-purge
+.. option:: -fanalyzer-state-merge
+
+  Default option value for :option:`-fno-analyzer-state-merge`.
+
+.. option:: -fno-analyzer-state-purge
 
   This option is intended for analyzer developers.
 
@@ -333,9 +441,17 @@ The following options control the analyzer.
   With :option:`-fno-analyzer-state-purge` this purging of state can
   be suppressed, for debugging state-handling issues.
 
-.. option:: -fanalyzer-transitivity, -fno-analyzer-transitivity
+.. option:: -fanalyzer-state-purge
+
+  Default option value for :option:`-fno-analyzer-state-purge`.
+
+.. option:: -fanalyzer-transitivity
 
   This option enables transitivity of constraints within the analyzer.
+
+.. option:: -fno-analyzer-transitivity
+
+  Default option value for :option:`-fanalyzer-transitivity`.
 
 ``-fanalyzer-verbose-edges``
   This option is intended for analyzer developers.  It enables more

@@ -140,10 +140,14 @@
   get trigraph conversion without warnings, but get the other
   :option:`-Wall` warnings, use :samp:`-trigraphs -Wall -Wno-trigraphs`.
 
-.. option:: -Wundef, -Wno-undef
+.. option:: -Wundef
 
   Warn if an undefined identifier is evaluated in an ``#if`` directive.
   Such identifiers are replaced with zero.
+
+.. option:: -Wno-undef
+
+  Default option value for :option:`-Wundef`.
 
 .. option:: -Wexpansion-to-defined
 
@@ -173,7 +177,7 @@
     #if defined the_macro_causing_the_warning
     #endif
 
-.. option:: -Wno-endif-labels, -Wendif-labels
+.. option:: -Wno-endif-labels
 
   Do not warn whenever an ``#else`` or an ``#endif`` are followed by text.
   This sometimes happens in older programs with code of the form
@@ -188,4 +192,8 @@
 
   The second and third ``FOO`` should be in comments.
   This warning is on by default.
+
+.. option:: -Wendif-labels
+
+  Default option value for :option:`-Wno-endif-labels`.
 

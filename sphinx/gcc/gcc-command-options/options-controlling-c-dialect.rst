@@ -256,7 +256,7 @@ accepts:
   useful as it is not possible to read the arguments.  This is only
   supported for C as this construct is allowed by C++.
 
-.. option:: -fno-asm, -fasm
+.. option:: -fno-asm
 
   Do not recognize ``asm``, ``inline`` or ``typeof`` as a
   keyword, so that code can use these words as identifiers.  You can use
@@ -270,7 +270,11 @@ accepts:
   switch only affects the ``asm`` and ``typeof`` keywords, since
   ``inline`` is a standard keyword in ISO C99.
 
-.. option:: -fno-builtin, -fno-builtin-function, -fbuiltin
+.. option:: -fasm
+
+  Default option value for :option:`-fno-asm`.
+
+.. option:: -fno-builtin, -fno-builtin-function
 
   .. index:: built-in functions
 
@@ -309,6 +313,10 @@ accepts:
 
     #define abs(n)          __builtin_abs ((n))
     #define strcpy(d, s)    __builtin_strcpy ((d), (s))
+
+.. option:: -fbuiltin
+
+  Default option value for :option:`-fno-builtin`.
 
 .. option:: -fgimple
 
