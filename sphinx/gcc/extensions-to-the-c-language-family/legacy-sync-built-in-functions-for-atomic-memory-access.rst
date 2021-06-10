@@ -53,134 +53,134 @@ variables to be protected.  The list is ignored by GCC which treats it as
 empty.  GCC interprets an empty list as meaning that all globally
 accessible variables should be protected.
 
-:samp:`{type} __sync_fetch_and_add ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_fetch_and_sub ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_fetch_and_or ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_fetch_and_and ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_fetch_and_xor ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_fetch_and_nand ({type} *ptr, {type} value, ...)`
+.. code-block::
 
-  .. index:: __sync_fetch_and_add
+  {type} __sync_fetch_and_add ({type} *ptr, {type} value, ...)
+  {type} __sync_fetch_and_sub ({type} *ptr, {type} value, ...)
+  {type} __sync_fetch_and_or ({type} *ptr, {type} value, ...)
+  {type} __sync_fetch_and_and ({type} *ptr, {type} value, ..)
+  {type} __sync_fetch_and_xor ({type} *ptr, {type} value, ...)
+  {type} __sync_fetch_and_nand ({type} *ptr, {type} value, ...)
 
-  .. index:: __sync_fetch_and_sub
+.. index:: __sync_fetch_and_add
 
-  .. index:: __sync_fetch_and_or
+.. index:: __sync_fetch_and_sub
 
-  .. index:: __sync_fetch_and_and
+.. index:: __sync_fetch_and_or
 
-  .. index:: __sync_fetch_and_xor
+.. index:: __sync_fetch_and_and
 
-  .. index:: __sync_fetch_and_nand
+.. index:: __sync_fetch_and_xor
 
-  These built-in functions perform the operation suggested by the name, and
-  returns the value that had previously been in memory.  That is, operations
-  on integer operands have the following semantics.  Operations on pointer
-  arguments are performed as if the operands were of the ``uintptr_t``
-  type.  That is, they are not scaled by the size of the type to which
-  the pointer points.
+.. index:: __sync_fetch_and_nand
 
-  .. code-block:: c++
+These built-in functions perform the operation suggested by the name, and
+returns the value that had previously been in memory.  That is, operations
+on integer operands have the following semantics.  Operations on pointer
+arguments are performed as if the operands were of the ``uintptr_t``
+type.  That is, they are not scaled by the size of the type to which
+the pointer points.
 
-    { tmp = *ptr; *ptr op= value; return tmp; }
-    { tmp = *ptr; *ptr = ~(tmp & value); return tmp; }   // nand
+.. code-block:: c++
 
-  The object pointed to by the first argument must be of integer or pointer
-  type.  It must not be a boolean type.
+  { tmp = *ptr; *ptr op= value; return tmp; }
+  { tmp = *ptr; *ptr = ~(tmp & value); return tmp; }   // nand
 
-  *Note:* GCC 4.4 and later implement ``__sync_fetch_and_nand``
-  as ``*ptr = ~(tmp & value)`` instead of ``*ptr = ~tmp & value``.
+The object pointed to by the first argument must be of integer or pointer
+type.  It must not be a boolean type.
 
-:samp:`{type} __sync_add_and_fetch ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_sub_and_fetch ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_or_and_fetch ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_and_and_fetch ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_xor_and_fetch ({type} *ptr, {type} value, ...)`
-:samp:`{type} __sync_nand_and_fetch ({type} *ptr, {type} value, ...)`
+*Note:* GCC 4.4 and later implement ``__sync_fetch_and_nand``
+as ``*ptr = ~(tmp & value)`` instead of ``*ptr = ~tmp & value``.
 
-  .. index:: __sync_add_and_fetch
+.. code-block::
 
-  .. index:: __sync_sub_and_fetch
+  {type} __sync_add_and_fetch ({type} *ptr, {type} value, ...)
+  {type} __sync_sub_and_fetch ({type} *ptr, {type} value, ...)
+  {type} __sync_or_and_fetch ({type} *ptr, {type} value, ...)
+  {type} __sync_and_and_fetch ({type} *ptr, {type} value, ...)
+  {type} __sync_xor_and_fetch ({type} *ptr, {type} value, ...)
+  {type} __sync_nand_and_fetch ({type} *ptr, {type} value, ...)
 
-  .. index:: __sync_or_and_fetch
+.. index:: __sync_add_and_fetch
+.. index:: __sync_sub_and_fetch
+.. index:: __sync_or_and_fetch
+.. index:: __sync_and_and_fetch
+.. index:: __sync_xor_and_fetch
+.. index:: __sync_nand_and_fetch
 
-  .. index:: __sync_and_and_fetch
+These built-in functions perform the operation suggested by the name, and
+return the new value.  That is, operations on integer operands have
+the following semantics.  Operations on pointer operands are performed as
+if the operand's type were ``uintptr_t``.
 
-  .. index:: __sync_xor_and_fetch
+.. code-block:: c++
 
-  .. index:: __sync_nand_and_fetch
+  { *ptr op= value; return *ptr; }
+  { *ptr = ~(*ptr & value); return *ptr; }   // nand
 
-  These built-in functions perform the operation suggested by the name, and
-  return the new value.  That is, operations on integer operands have
-  the following semantics.  Operations on pointer operands are performed as
-  if the operand's type were ``uintptr_t``.
+The same constraints on arguments apply as for the corresponding
+``__sync_op_and_fetch`` built-in functions.
 
-  .. code-block:: c++
+*Note:* GCC 4.4 and later implement ``__sync_nand_and_fetch``
+as ``*ptr = ~(*ptr & value)`` instead of
+``*ptr = ~*ptr & value``.
 
-    { *ptr op= value; return *ptr; }
-    { *ptr = ~(*ptr & value); return *ptr; }   // nand
+.. code-block::
 
-  The same constraints on arguments apply as for the corresponding
-  ``__sync_op_and_fetch`` built-in functions.
+  bool __sync_bool_compare_and_swap ({type} *ptr, {type} oldval, {type} newval, ...)
+  {type} __sync_val_compare_and_swap ({type} *ptr, {type} oldval, {type} newval, ...)
 
-  *Note:* GCC 4.4 and later implement ``__sync_nand_and_fetch``
-  as ``*ptr = ~(*ptr & value)`` instead of
-  ``*ptr = ~*ptr & value``.
+.. index:: __sync_bool_compare_and_swap
 
-:samp:`bool __sync_bool_compare_and_swap ({type} *ptr, {type} oldval, {type} newval, ...)`
-:samp:`{type} __sync_val_compare_and_swap ({type} *ptr, {type} oldval, {type} newval, ...)`
+.. index:: __sync_val_compare_and_swap
 
-  .. index:: __sync_bool_compare_and_swap
+These built-in functions perform an atomic compare and swap.
+That is, if the current
+value of ``*ptr`` is :samp:`{oldval}`, then write :samp:`{newval}` into
+``*ptr``.
 
-  .. index:: __sync_val_compare_and_swap
-
-  These built-in functions perform an atomic compare and swap.
-  That is, if the current
-  value of ``*ptr`` is :samp:`{oldval}`, then write :samp:`{newval}` into
-  ``*ptr``.
-
-  The 'bool' version returns ``true`` if the comparison is successful and
-  :samp:`{newval}` is written.  The 'val' version returns the contents
-  of ``*ptr`` before the operation.
+The 'bool' version returns ``true`` if the comparison is successful and
+:samp:`{newval}` is written.  The 'val' version returns the contents
+of ``*ptr`` before the operation.
 
 ``__sync_synchronize (...)``
 
-  .. index:: __sync_synchronize
+.. index:: __sync_synchronize
 
-  This built-in function issues a full memory barrier.
+This built-in function issues a full memory barrier.
 
 :samp:`{type} __sync_lock_test_and_set ({type} *ptr, {type} value, ...)`
 
-  .. index:: __sync_lock_test_and_set
+.. index:: __sync_lock_test_and_set
 
-  This built-in function, as described by Intel, is not a traditional test-and-set
-  operation, but rather an atomic exchange operation.  It writes :samp:`{value}`
-  into ``*ptr``, and returns the previous contents of
-  ``*ptr``.
+This built-in function, as described by Intel, is not a traditional test-and-set
+operation, but rather an atomic exchange operation.  It writes :samp:`{value}`
+into ``*ptr``, and returns the previous contents of
+``*ptr``.
 
-  Many targets have only minimal support for such locks, and do not support
-  a full exchange operation.  In this case, a target may support reduced
-  functionality here by which the *only* valid value to store is the
-  immediate constant 1.  The exact value actually stored in ``*ptr``
-  is implementation defined.
+Many targets have only minimal support for such locks, and do not support
+a full exchange operation.  In this case, a target may support reduced
+functionality here by which the *only* valid value to store is the
+immediate constant 1.  The exact value actually stored in ``*ptr``
+is implementation defined.
 
-  This built-in function is not a full barrier,
-  but rather an :dfn:`acquire barrier`.
-  This means that references after the operation cannot move to (or be
-  speculated to) before the operation, but previous memory stores may not
-  be globally visible yet, and previous memory loads may not yet be
-  satisfied.
+This built-in function is not a full barrier,
+but rather an :dfn:`acquire barrier`.
+This means that references after the operation cannot move to (or be
+speculated to) before the operation, but previous memory stores may not
+be globally visible yet, and previous memory loads may not yet be
+satisfied.
 
 :samp:`void __sync_lock_release ({type} *ptr, ...)`
 
-  .. index:: __sync_lock_release
+.. index:: __sync_lock_release
 
-  This built-in function releases the lock acquired by
-  ``__sync_lock_test_and_set``.
-  Normally this means writing the constant 0 to ``*ptr``.
+This built-in function releases the lock acquired by
+``__sync_lock_test_and_set``.
+Normally this means writing the constant 0 to ``*ptr``.
 
-  This built-in function is not a full barrier,
-  but rather a :dfn:`release barrier`.
-  This means that all previous memory stores are globally visible, and all
-  previous memory loads have been satisfied, but following memory reads
-  are not prevented from being speculated to before the barrier.
-
+This built-in function is not a full barrier,
+but rather a :dfn:`release barrier`.
+This means that all previous memory stores are globally visible, and all
+previous memory loads have been satisfied, but following memory reads
+are not prevented from being speculated to before the barrier.
