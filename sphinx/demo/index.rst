@@ -37,4 +37,6 @@ I'm a demo documentation page.
 
 Enable it all :)
 
+I am a :command:`super-command`.
+
 :ref:`genindex`
