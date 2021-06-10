@@ -557,40 +557,28 @@ with one of the following values:
 
 .. safe-ctype.c:45
 
-.. index:: ISALPHA
-
 Extension ISALPHA  (:samp:`{c}`)
-.. index:: ISALNUM
 
 Extension ISALNUM  (:samp:`{c}`)
-.. index:: ISBLANK
 
 Extension ISBLANK  (:samp:`{c}`)
-.. index:: ISCNTRL
 
 Extension ISCNTRL  (:samp:`{c}`)
-.. index:: ISDIGIT
 
 Extension ISDIGIT  (:samp:`{c}`)
-.. index:: ISGRAPH
 
 Extension ISGRAPH  (:samp:`{c}`)
-.. index:: ISLOWER
 
 Extension ISLOWER  (:samp:`{c}`)
-.. index:: ISPRINT
 
 Extension ISPRINT  (:samp:`{c}`)
-.. index:: ISPUNCT
 
 Extension ISPUNCT  (:samp:`{c}`)
-.. index:: ISSPACE
 
 Extension ISSPACE  (:samp:`{c}`)
-.. index:: ISUPPER
 
 Extension ISUPPER  (:samp:`{c}`)
-.. index:: ISXDIGIT
+
 
 Extension ISXDIGIT (:samp:`{c}`)These twelve macros are defined by safe-ctype.h.  Each has the
 same meaning as the corresponding macro (with name in lowercase)
@@ -628,24 +616,19 @@ those provided by ctype.h:
 
 .. safe-ctype.c:94
 
-.. index:: ISIDNUM
-
 Extension ISIDNUM         (:samp:`{c}`)
-.. index:: ISIDST
 
 Extension ISIDST          (:samp:`{c}`)
-.. index:: IS_VSPACE
 
 Extension IS_VSPACE       (:samp:`{c}`)
-.. index:: IS_NVSPACE
 
 Extension IS_NVSPACE      (:samp:`{c}`)
-.. index:: IS_SPACE_OR_NUL
 
 Extension IS_SPACE_OR_NUL (:samp:`{c}`)
-.. index:: IS_ISOBASIC
 
-Extension IS_ISOBASIC     (:samp:`{c}`)These six macros are defined by safe-ctype.h and provide
+Extension IS_ISOBASIC     (:samp:`{c}`)
+
+These six macros are defined by safe-ctype.h and provide
 additional character classes which are useful when doing lexical
 analysis of C or similar languages.  They are true for the following
 sets of characters:
