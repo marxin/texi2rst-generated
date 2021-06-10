@@ -658,39 +658,71 @@ enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
 The following built-in functions are available on Linux 64-bit systems
 that use a future architecture instruction set ( :option:`-mcpu`:samp:`=power10`):
 
-unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)Perform a 64-bit centrifuge operation, as if implemented by the
+unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
+
+Perform a 64-bit centrifuge operation, as if implemented by the
 ``cfuged`` instruction.
 
 .. index:: __builtin_cfuged
 
-unsigned long long int__builtin_cntlzdm (unsigned long long int, unsigned long long int)Perform a 64-bit count leading zeros operation under mask, as if
+unsigned long long int__builtin_cntlzdm (unsigned long long int, unsigned long long int)
+
+Perform a 64-bit count leading zeros operation under mask, as if
 implemented by the ``cntlzdm`` instruction.
 
 .. index:: __builtin_cntlzdm
 
-unsigned long long int__builtin_cnttzdm (unsigned long long int, unsigned long long int)Perform a 64-bit count trailing zeros operation under mask, as if
+unsigned long long int__builtin_cnttzdm (unsigned long long int, unsigned long long int)
+
+Perform a 64-bit count trailing zeros operation under mask, as if
 implemented by the ``cnttzdm`` instruction.
 
 .. index:: __builtin_cnttzdm
 
-unsigned long long int__builtin_pdepd (unsigned long long int, unsigned long long int)Perform a 64-bit parallel bits deposit operation, as if implemented by the
+unsigned long long int__builtin_pdepd (unsigned long long int, unsigned long long int)
+
+Perform a 64-bit parallel bits deposit operation, as if implemented by the
 ``pdepd`` instruction.
 
 .. index:: __builtin_pdepd
 
-unsigned long long int__builtin_pextd (unsigned long long int, unsigned long long int)Perform a 64-bit parallel bits extract operation, as if implemented by the
+unsigned long long int__builtin_pextd (unsigned long long int, unsigned long long int)
+
+Perform a 64-bit parallel bits extract operation, as if implemented by the
 ``pextd`` instruction.
 
 .. index:: __builtin_pextd
 
-vector signed __int128 vsx_xl_sext (signed long long, signed char *);vector signed __int128 vsx_xl_sext (signed long long, signed short *);vector signed __int128 vsx_xl_sext (signed long long, signed int *);vector signed __int128 vsx_xl_sext (signed long long, signed long long *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned char *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned short *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned int *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned long long *);Load (and sign extend) to an __int128 vector, as if implemented by the ISA 3.1
+.. code-block:: c++
+
+  vector signed __int128 vsx_xl_sext (signed long long, signed char *);
+  vector signed __int128 vsx_xl_sext (signed long long, signed short *);
+  vector signed __int128 vsx_xl_sext (signed long long, signed int *);
+  vector signed __int128 vsx_xl_sext (signed long long, signed long long *);
+  vector unsigned __int128 vsx_xl_zext (signed long long, unsigned char *);
+  vector unsigned __int128 vsx_xl_zext (signed long long, unsigned short *);
+  vector unsigned __int128 vsx_xl_zext (signed long long, unsigned int *);
+  vector unsigned __int128 vsx_xl_zext (signed long long, unsigned long long *);
+
+Load (and sign extend) to an __int128 vector, as if implemented by the ISA 3.1
 ``lxvrbx`` ``lxvrhx`` ``lxvrwx`` ``lxvrdx`` instructions.
 
 .. index:: vsx_xl_sext
 
 .. index:: vsx_xl_zext
 
-void vec_xst_trunc (vector signed __int128, signed long long, signed char *);void vec_xst_trunc (vector signed __int128, signed long long, signed short *);void vec_xst_trunc (vector signed __int128, signed long long, signed int *);void vec_xst_trunc (vector signed __int128, signed long long, signed long long *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned char *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned short *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned int *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned long long *);Truncate and store the rightmost element of a vector, as if implemented by the
+.. code-block:: c++
+
+  void vec_xst_trunc (vector signed __int128, signed long long, signed char *);
+  void vec_xst_trunc (vector signed __int128, signed long long, signed short *);
+  void vec_xst_trunc (vector signed __int128, signed long long, signed int *);
+  void vec_xst_trunc (vector signed __int128, signed long long, signed long long *);
+  void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned char *);
+  void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned short *);
+  void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned int *);
+  void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned long long *);
+
+Truncate and store the rightmost element of a vector, as if implemented by the
 ISA 3.1 ``stxvrbx`` ``stxvrhx`` ``stxvrwx`` ``stxvrdx`` instructions.
 
 .. index:: vec_xst_trunc
