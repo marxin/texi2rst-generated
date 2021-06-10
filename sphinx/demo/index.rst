@@ -27,7 +27,7 @@ I'm a demo documentation page.
 
 .. option:: -Wno-shift-overflow3
 
-  Default option value for :option:`-Wshift-overflow`.
+  Default option value for :option:`-Wshift-overflow3`.
 
 .. option:: -Wshift-overflow3=n, -Wshift-overflow3
 
