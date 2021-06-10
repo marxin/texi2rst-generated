@@ -1308,6 +1308,22 @@ The second argument to :samp:`{__builtin_crypto_vshasigmad}` and
 integer that is 0 or 1.  The third argument to these built-in functions
 must be a constant integer in the range of 0 to 15.
 
+The following sign extension builtins are provided:
+
+.. code-block:: c++
+
+  vector signed int vec_signexti (vector signed char a)
+  vector signed long long vec_signextll (vector signed char a)
+  vector signed int vec_signexti (vector signed short a)
+  vector signed long long vec_signextll (vector signed short a)
+  vector signed long long vec_signextll (vector signed int a)
+  vector signed long long vec_signextq (vector signed long long a)
+
+Each element of the result is produced by sign-extending the element of the
+input vector that would fall in the least significant portion of the result
+element. For example, a sign-extension of a vector signed char to a vector
+signed long long will sign extend the rightmost byte of each doubleword.
+
 .. _powerpc-altivec-built-in-functions-available-on-isa-3.1:
 
 PowerPC AltiVec Built-in Functions Available on ISA 3.1
@@ -1715,4 +1731,142 @@ Generate PCV from specified Mask size, as if implemented by the
 immediate value is either 0, 1, 2 or 3.
 
 .. index:: vec_genpcvm
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_rl (vector unsigned __int128 A,                                         vector unsigned __int128 B);
+  vector signed __int128 vec_rl (vector signed __int128 A,                                       vector unsigned __int128 B);
+
+Result value: Each element of R is obtained by rotating the corresponding element
+of A left by the number of bits specified by the corresponding element of B.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_rlmi (vector unsigned __int128,                                           vector unsigned __int128,
+                                             vector unsigned __int128);
+  vector signed __int128 vec_rlmi (vector signed __int128,                                         vector signed __int128,
+                                           vector unsigned __int128);
+
+Returns the result of rotating the first input and inserting it under mask
+into the second input.  The first bit in the mask, the last bit in the mask are
+obtained from the two 7-bit fields bits [108:115] and bits [117:123]
+respectively of the second input.  The shift is obtained from the third input
+in the 7-bit field [125:131] where all bits counted from zero at the left.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_rlnm (vector unsigned __int128,                                           vector unsigned __int128,
+                                             vector unsigned __int128);
+  vector signed __int128 vec_rlnm (vector signed __int128,                                         vector unsigned __int128,
+                                           vector unsigned __int128);
+
+Returns the result of rotating the first input and ANDing it with a mask.  The
+first bit in the mask and the last bit in the mask are obtained from the two
+7-bit fields bits [117:123] and bits [125:131] respectively of the second
+input.  The shift is obtained from the third input in the 7-bit field bits
+[125:131] where all bits counted from zero at the left.
+
+vector unsigned __int128 vec_sl(vector unsigned __int128 A, vector unsigned __int128 B);vector signed __int128 vec_sl(vector signed __int128 A, vector unsigned __int128 B);Result value: Each element of R is obtained by shifting the corresponding element of
+A left by the number of bits specified by the corresponding element of B.
+
+vector unsigned __int128 vec_sr(vector unsigned __int128 A, vector unsigned __int128 B);vector signed __int128 vec_sr(vector signed __int128 A, vector unsigned __int128 B);Result value: Each element of R is obtained by shifting the corresponding element of
+A right by the number of bits specified by the corresponding element of B.
+
+vector unsigned __int128 vec_sra(vector unsigned __int128 A, vector unsigned __int128 B);vector signed __int128 vec_sra(vector signed __int128 A, vector unsigned __int128 B);Result value: Each element of R is obtained by arithmetic shifting the corresponding
+element of A right by the number of bits specified by the corresponding element of B.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_mule (vector unsigned long long,                                           vector unsigned long long);
+  vector signed __int128 vec_mule (vector signed long long,                                         vector signed long long);
+
+Returns a vector containing a 128-bit integer result of multiplying the even
+doubleword elements of the two inputs.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_mulo (vector unsigned long long,                                           vector unsigned long long);
+  vector signed __int128 vec_mulo (vector signed long long,                                         vector signed long long);
+
+Returns a vector containing a 128-bit integer result of multiplying the odd
+doubleword elements of the two inputs.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_div (vector unsigned __int128,                                          vector unsigned __int128);
+  vector signed __int128 vec_div (vector signed __int128,                                        vector signed __int128);
+
+Returns the result of dividing the first operand by the second operand. An
+attempt to divide any value by zero or to divide the most negative signed
+128-bit integer by negative one results in an undefined value.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_dive (vector unsigned __int128,                                           vector unsigned __int128);
+  vector signed __int128 vec_dive (vector signed __int128,                                         vector signed __int128);
+
+The result is produced by shifting the first input left by 128 bits and
+dividing by the second.  If an attempt is made to divide by zero or the result
+is larger than 128 bits, the result is undefined.
+
+.. code-block:: c++
+
+  vector unsigned __int128 vec_mod (vector unsigned __int128,                                          vector unsigned __int128);
+  vector signed __int128 vec_mod (vector signed __int128,                                        vector signed __int128);
+
+The result is the modulo result of dividing the first input  by the second
+input.
+
+The following builtins perform 128-bit vector comparisons.  The
+``vec_all_xx``, ``vec_any_xx``, and ``vec_cmpxx``, where ``xx`` is
+one of the operations ``eq, ne, gt, lt, ge, le`` perform pairwise
+comparisons between the elements at the same positions within their two vector
+arguments.  The ``vec_all_xx`` function returns a non-zero value if and only
+if all pairwise comparisons are true.  The ``vec_any_xx`` function returns
+a non-zero value if and only if at least one pairwise comparison is true.  The
+``vec_cmpxx`` function returns a vector of the same type as its two
+arguments, within which each element consists of all ones to denote that
+specified logical comparison of the corresponding elements was true.
+Otherwise, the element of the returned vector contains all zeros.
+
+.. code-block:: c++
+
+  vector bool __int128 vec_cmpeq (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmpeq (vector unsigned __int128, vector unsigned __int128);
+  vector bool __int128 vec_cmpne (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmpne (vector unsigned __int128, vector unsigned __int128);
+  vector bool __int128 vec_cmpgt (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmpgt (vector unsigned __int128, vector unsigned __int128);
+  vector bool __int128 vec_cmplt (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmplt (vector unsigned __int128, vector unsigned __int128);
+  vector bool __int128 vec_cmpge (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmpge (vector unsigned __int128, vector unsigned __int128);
+  vector bool __int128 vec_cmple (vector signed __int128, vector signed __int128);
+  vector bool __int128 vec_cmple (vector unsigned __int128, vector unsigned __int128);
+
+  int vec_all_eq (vector signed __int128, vector signed __int128);
+  int vec_all_eq (vector unsigned __int128, vector unsigned __int128);
+  int vec_all_ne (vector signed __int128, vector signed __int128);
+  int vec_all_ne (vector unsigned __int128, vector unsigned __int128);
+  int vec_all_gt (vector signed __int128, vector signed __int128);
+  int vec_all_gt (vector unsigned __int128, vector unsigned __int128);
+  int vec_all_lt (vector signed __int128, vector signed __int128);
+  int vec_all_lt (vector unsigned __int128, vector unsigned __int128);
+  int vec_all_ge (vector signed __int128, vector signed __int128);
+  int vec_all_ge (vector unsigned __int128, vector unsigned __int128);
+  int vec_all_le (vector signed __int128, vector signed __int128);
+  int vec_all_le (vector unsigned __int128, vector unsigned __int128);
+
+  int vec_any_eq (vector signed __int128, vector signed __int128);
+  int vec_any_eq (vector unsigned __int128, vector unsigned __int128);
+  int vec_any_ne (vector signed __int128, vector signed __int128);
+  int vec_any_ne (vector unsigned __int128, vector unsigned __int128);
+  int vec_any_gt (vector signed __int128, vector signed __int128);
+  int vec_any_gt (vector unsigned __int128, vector unsigned __int128);
+  int vec_any_lt (vector signed __int128, vector signed __int128);
+  int vec_any_lt (vector unsigned __int128, vector unsigned __int128);
+  int vec_any_ge (vector signed __int128, vector signed __int128);
+  int vec_any_ge (vector unsigned __int128, vector unsigned __int128);
+  int vec_any_le (vector signed __int128, vector signed __int128);
+  int vec_any_le (vector unsigned __int128, vector unsigned __int128);
 

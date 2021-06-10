@@ -426,6 +426,9 @@ supported, so :option:`--enable-threads`:samp:`=dce` does not work.
 \*-\*-linux-gnu
 ===============
 
+The ``.init_array`` and ``.fini_array`` sections are enabled
+unconditionally which requires at least glibc 2.1 and binutils 2.12.
+
 Versions of libstdc++-v3 starting with 3.2.1 require bug fixes present
 in glibc 2.2.5 and later.  More information is available in the
 libstdc++-v3 documentation.

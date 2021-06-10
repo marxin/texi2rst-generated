@@ -88,7 +88,7 @@ The following mathematical functions are available:
 * :samp:`{casinq}`:  complex arc sine function
 * :samp:`{catanhq}`:  complex arc hyperbolic tangent function
 * :samp:`{catanq}`:  complex arc tangent function
-* :samp:`{ccosq} complex cosine function`: 
+* :samp:`{ccosq}`:  complex cosine function
 * :samp:`{ccoshq}`:  complex hyperbolic cosine function
 * :samp:`{cexpq}`:  complex exponential function
 * :samp:`{cexpiq}`:  computes the exponential function of 'i' times a real value
