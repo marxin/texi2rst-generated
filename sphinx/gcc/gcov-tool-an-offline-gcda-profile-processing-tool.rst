@@ -19,4 +19,4 @@ manipulate or process gcda profile files offline.
 
 .. only:: man
 
-  ..include:: copyright.rst
+  .. include:: copyright.rst

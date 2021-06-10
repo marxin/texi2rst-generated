@@ -22,4 +22,4 @@ test code coverage in your programs.
 
 .. only:: man
 
-  ..include:: copyright.rst
+  .. include:: copyright.rst
