@@ -452,6 +452,20 @@ warn at all unless optimization is enabled.
 
   Default option value for :option:`-Wno-coverage-mismatch`.
 
+.. option:: -Wno-coverage-invalid-line-number
+
+  Warn in case a function ends earlier than it begins due
+  to an invalid linenum macros.  The warning is emitted only
+  with :option:`--coverage` enabled.
+   By default, this warning is enabled and is treated as an
+  error.  :option:`-Wno-coverage-invalid-line-number` can be used to disable the
+  warning or :option:`-Wno-error`:samp:`=coverage-invalid-line-number` can be used to
+  disable the error.
+
+.. option:: -Wcoverage-invalid-line-number
+
+  Default option value for :option:`-Wno-coverage-invalid-line-number`.
+
 ``-Wno-cpp``
   (C, Objective-C, C++, Objective-C++ and Fortran only)
 
