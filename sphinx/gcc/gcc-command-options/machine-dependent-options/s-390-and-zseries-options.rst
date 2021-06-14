@@ -231,7 +231,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   prologue is generated for all functions in the compilation unit.
   The funtion label is prepended with the given number of two-byte
   NOP instructions ( :samp:`{pre-halfwords}`, maximum 1000000).  After
-  the label, 2 * :samp:`{post-halfwords}` bytes are appended, using the
+  the label, 2 \* :samp:`{post-halfwords}` bytes are appended, using the
   largest NOP like instructions the architecture allows (maximum
   1000000).
 

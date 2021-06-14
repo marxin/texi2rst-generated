@@ -566,11 +566,11 @@
     with ``-S``, but which also take an argument.  This is used for
     switches like :option:`-o`, :option:`-D`, :option:`-I`, etc.
     GCC considers :option:`-o foo` as being
-    one switch whose name starts with :samp:`o`.  %{o*} substitutes this
+    one switch whose name starts with :samp:`o`.  %{o\*} substitutes this
     text, including the space.  Thus two arguments are generated.
 
   ``%{S*&T*}``
-    Like %{ ``S`` *}, but preserve order of ``S`` and ``T`` options
+    Like %{ ``S`` \*}, but preserve order of ``S`` and ``T`` options
     (the order of ``S`` and ``T`` in the spec is not significant).
     There can be any number of ampersand-separated variables; for each the
     wild card is optional.  Useful for CPP as ``%{D*&U*&A*}``.
@@ -668,7 +668,7 @@
   handled specifically in these constructs.  If another value of
   :option:`-O` or the negated form of a :option:`-f`, :option:`-m`, or
   :option:`-W` switch is found later in the command line, the earlier
-  switch value is ignored, except with { ``S`` *} where ``S`` is
+  switch value is ignored, except with { ``S`` \*} where ``S`` is
   just one letter, which passes all matching options.
 
   The character :samp:`|` at the beginning of the predicate text is used to

@@ -537,8 +537,8 @@ The following options control the analyzer.
 
   Dump internal details about the analyzer's search for feasible paths.
   The details are written in a form suitable for viewing with GraphViz
-  to filenames of the form :samp:`{file}`.*.fg.dot and
-  :samp:`{file}`.*.tg.dot.
+  to filenames of the form :samp:`{file}`.\*.fg.dot and
+  :samp:`{file}`.\*.tg.dot.
 
 .. option:: -fdump-analyzer-json
 

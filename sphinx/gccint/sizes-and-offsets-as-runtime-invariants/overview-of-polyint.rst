@@ -49,8 +49,8 @@ the value in that case.
 For example, when targetting the Arm SVE ISA, the single indeterminate
 represents the number of 128-bit blocks in a vector *beyond the minimum
 length of 128 bits*.  Thus the number of 64-bit doublewords in a vector
-is 2 + 2 * :samp:`{x1}`.  If an aggregate has a single SVE vector and 16
-additional bytes, its total size is 32 + 16 * :samp:`{x1}` bytes.
+is 2 + 2 \* :samp:`{x1}`.  If an aggregate has a single SVE vector and 16
+additional bytes, its total size is 32 + 16 \* :samp:`{x1}` bytes.
 
 The header file poly-int-types.h provides typedefs for the
 most common forms of ``poly_int``, all having

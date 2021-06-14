@@ -10,7 +10,7 @@ MCore Options
 
 .. index:: MCore options
 
-These are the :samp:`-m` options defined for the Motorola M*Core
+These are the :samp:`-m` options defined for the Motorola M\*Core
 processors.
 
 .. option:: -mhardlit, -mno-hardlit

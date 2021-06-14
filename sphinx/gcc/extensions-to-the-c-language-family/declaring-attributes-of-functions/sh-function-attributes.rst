@@ -46,8 +46,8 @@ These function attributes are supported on the SH family of processors:
   .. index:: nosave_low_regs function attribute, SH
 
   Use this attribute on SH targets to indicate that an ``interrupt_handler``
-  function should not save and restore registers R0..R7.  This can be used on SH3*
-  and SH4* targets that have a second R0..R7 register bank for non-reentrant
+  function should not save and restore registers R0..R7.  This can be used on SH3\*
+  and SH4\* targets that have a second R0..R7 register bank for non-reentrant
   interrupt handlers.
 
 .. option:: renesas

@@ -18,7 +18,7 @@ framework for iterating through statements.
 GIMPLE sequences are of type struct ``gimple_sequence``, but are more
 commonly passed by reference to functions dealing with sequences.
 The type for a sequence pointer is ``gimple_seq`` which is the same
-as struct ``gimple_sequence`` *.  When declaring a local sequence,
+as struct ``gimple_sequence`` \*.  When declaring a local sequence,
 you can define a local variable of type struct ``gimple_sequence``.
 When declaring a sequence allocated on the garbage collected
 heap, use the function ``gimple_seq_alloc`` documented below.
@@ -30,13 +30,13 @@ Below is a list of functions to manipulate and query sequences.
 
 .. function:: void gimple_seq_add_stmt (gimple_seq *seq, gimple g)
 
-  Link a gimple statement to the end of the sequence * ``SEQ`` if ``G`` is
-  not ``NULL``.  If * ``SEQ`` is ``NULL``, allocate a sequence before linking.
+  Link a gimple statement to the end of the sequence \* ``SEQ`` if ``G`` is
+  not ``NULL``.  If \* ``SEQ`` is ``NULL``, allocate a sequence before linking.
 
 .. function:: void gimple_seq_add_seq (gimple_seq *dest, gimple_seq src)
 
-  Append sequence ``SRC`` to the end of sequence * ``DEST`` if ``SRC`` is not
-  ``NULL``.  If * ``DEST`` is ``NULL``, allocate a new sequence before
+  Append sequence ``SRC`` to the end of sequence \* ``DEST`` if ``SRC`` is not
+  ``NULL``.  If \* ``DEST`` is ``NULL``, allocate a new sequence before
   appending.
 
 .. function:: gimple_seq gimple_seq_deep_copy (gimple_seq src)

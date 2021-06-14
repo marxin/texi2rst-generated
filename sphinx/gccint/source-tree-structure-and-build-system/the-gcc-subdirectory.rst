@@ -472,9 +472,9 @@ Texinfo Manuals
 ~~~~~~~~~~~~~~~
 
 The manuals for GCC as a whole, and the C and C++ front ends, are in
-files doc/*.texi.  Other front ends have their own manuals in
-files :samp:`{language}` /*.texi.  Common files
-doc/include/*.texi are provided which may be included in
+files doc/\*.texi.  Other front ends have their own manuals in
+files :samp:`{language}` /\*.texi.  Common files
+doc/include/\*.texi are provided which may be included in
 multiple manuals; the following files are in doc/include:
 
 fdl.texi
@@ -591,7 +591,7 @@ ABOUT-NLS
 COPYING.LIB COPYING3.LIB
   The GNU Lesser General Public License, Versions 2.1 and 3.
 
-*ChangeLog* */ChangeLog*
+\*ChangeLog\* \*/ChangeLog\*
   Change log files for various parts of GCC.
 
 .. envvar:: LANGUAGES

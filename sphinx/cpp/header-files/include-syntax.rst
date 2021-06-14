@@ -28,7 +28,7 @@ directive :samp:`#include`.  It has two variants:
   The argument of :samp:`#include`, whether delimited with quote marks or
 angle brackets, behaves like a string constant in that comments are not
 recognized, and macro names are not expanded.  Thus, ``#include
-<x/*y>`` specifies inclusion of a system header file named x/*y.
+<x/*y>`` specifies inclusion of a system header file named x/\*y.
 
 However, if backslashes occur within :samp:`{file}`, they are considered
 ordinary text characters, not escape characters.  None of the character

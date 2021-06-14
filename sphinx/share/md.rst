@@ -757,7 +757,7 @@ AMD GCN ---:samp:`{config/gcn/constraints.md}`
   ``A``
     Immediate constant that can be inlined in an instruction encoding: integer
     -16..64, or float 0.0, +/-0.5, +/-1.0, +/-2.0,
-    +/-4.0, 1.0/(2.0*PI)
+    +/-4.0, 1.0/(2.0\*PI)
 
   ``B``
     Immediate 32-bit signed integer that can be attached to an instruction encoding

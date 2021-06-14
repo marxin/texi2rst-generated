@@ -223,8 +223,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -c foo.c -o dir/foobar.o ...
 
-  will name aux outputs dir/foobar.* and dump outputs
-  dir/foobar.c.*.
+  will name aux outputs dir/foobar.\* and dump outputs
+  dir/foobar.c.\*.
 
   A linker output will instead prefix aux and dump outputs:
 
@@ -232,9 +232,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -o dir/foobar ...
 
-  will generally name aux outputs dir/foobar-foo.* and
-  dir/foobar-bar.*, and dump outputs dir/foobar-foo.c.* and
-  dir/foobar-bar.c.*.
+  will generally name aux outputs dir/foobar-foo.\* and
+  dir/foobar-bar.\*, and dump outputs dir/foobar-foo.c.\* and
+  dir/foobar-bar.c.\*.
 
   The one exception to the above is when the executable shares the base
   name with the single input:
@@ -243,8 +243,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c -o dir/foo ...
 
-  in which case aux outputs are named dir/foo.* and dump outputs
-  named dir/foo.c.*.
+  in which case aux outputs are named dir/foo.\* and dump outputs
+  named dir/foo.c.\*.
 
   The location and the names of auxiliary and dump outputs can be adjusted
   by the options :option:`-dumpbase`, :option:`-dumpbase-ext`,
@@ -294,7 +294,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc foo.c -c -o dir/foo.o -dumpbase alt/foo \
       -dumpdir pfx- -save-temps=cwd ...
 
-  creates auxiliary and dump outputs named alt/foo.*, disregarding
+  creates auxiliary and dump outputs named alt/foo.\*, disregarding
   dir/ in :option:`-o`, the ./ prefix implied by
   :option:`-save-temps`:samp:`=cwd`, and pfx- in :option:`-dumpdir`.
 
@@ -311,8 +311,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   creates foo.o and bar.o as primary outputs, and avoids
   overwriting the auxiliary and dump outputs by using the :samp:`{dumpbase}`
-  as a prefix, creating auxiliary and dump outputs named main-foo.*
-  and main-bar.*.
+  as a prefix, creating auxiliary and dump outputs named main-foo.\*
+  and main-bar.\*.
 
   An empty string specified as :samp:`{dumpbase}` avoids the influence of the
   output basename in the naming of auxiliary and dump outputs during
@@ -322,8 +322,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -c foo.c -o dir/foobar.o -dumpbase '' ...
 
-  will name aux outputs dir/foo.* and dump outputs
-  dir/foo.c.*.  Note how their basenames are taken from the input
+  will name aux outputs dir/foo.\* and dump outputs
+  dir/foo.c.\*.  Note how their basenames are taken from the input
   name, but the directory still defaults to that of the output.
 
   The empty-string dumpbase does not prevent the use of the output
@@ -334,8 +334,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc foo.c bar.c -o dir/foobar -dumpbase '' -flto ...
 
   The compilation of the source files will name auxiliary outputs
-  dir/foo.* and dir/bar.*, and dump outputs
-  dir/foo.c.* and dir/bar.c.*.  LTO recompilation during
+  dir/foo.\* and dir/bar.\*, and dump outputs
+  dir/foo.c.\* and dir/bar.c.\*.  LTO recompilation during
   linking will use dir/foobar. as the prefix for dumps and
   auxiliary files.
 
@@ -353,9 +353,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc foo.c -c -o dir/foo.o -dumpbase x-foo.c -dumpbase-ext .c ...
 
   creates dir/foo.o as the main output, and generates auxiliary
-  outputs in dir/x-foo.*, taking the location of the primary
+  outputs in dir/x-foo.\*, taking the location of the primary
   output, and dropping the .c suffix from the :samp:`{dumpbase}`.  Dump
-  outputs retain the suffix: dir/x-foo.c.*.
+  outputs retain the suffix: dir/x-foo.c.\*.
 
   This option is disregarded if it does not match the suffix of a
   specified :samp:`{dumpbase}`, except as an alternative to the executable
@@ -369,8 +369,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   creates main.out as the primary output, and avoids overwriting
   the auxiliary and dump outputs by using the executable name minus
   :samp:`{auxdropsuf}` as a prefix, creating auxiliary outputs named
-  main-foo.* and main-bar.* and dump outputs named
-  main-foo.c.* and main-bar.c.*.
+  main-foo.\* and main-bar.\* and dump outputs named
+  main-foo.c.\* and main-bar.c.\*.
 
 .. option:: -dumpdir dumppfx
 
@@ -382,10 +382,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc -dumpdir pfx- -c foo.c ...
 
   creates foo.o as the primary output, and auxiliary outputs named
-  pfx-foo.*, combining the given :samp:`{dumppfx}` with the default
+  pfx-foo.\*, combining the given :samp:`{dumppfx}` with the default
   :samp:`{dumpbase}` derived from the default primary output, derived in turn
   from the input name.  Dump outputs also take the input name suffix:
-  pfx-foo.c.*.
+  pfx-foo.c.\*.
 
   If :samp:`{dumppfx}` is to be used as a directory name, it must end with a
   directory separator:
@@ -395,9 +395,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc -dumpdir dir/ -c foo.c -o obj/bar.o ...
 
   creates obj/bar.o as the primary output, and auxiliary outputs
-  named dir/bar.*, combining the given :samp:`{dumppfx}` with the
+  named dir/bar.\*, combining the given :samp:`{dumppfx}` with the
   default :samp:`{dumpbase}` derived from the primary output name.  Dump
-  outputs also take the input name suffix: dir/bar.c.*.
+  outputs also take the input name suffix: dir/bar.c.\*.
 
   It defaults to the location of the output file; options
   :option:`-save-temps`:samp:`=cwd` and :option:`-save-temps`:samp:`=obj` override this
@@ -408,12 +408,12 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
 
-  outputs foo.o, with auxiliary outputs named foo.* because
+  outputs foo.o, with auxiliary outputs named foo.\* because
   :option:`-save-temps`:samp:`=*` overrides the :samp:`{dumppfx}` given by the earlier
   :option:`-dumpdir` option.  It does not matter that :samp:`=obj` is the
   default for :option:`-save-temps`, nor that the output directory is
   implicitly the current directory.  Dump outputs are named
-  foo.c.*.
+  foo.c.\*.
 
   When compiling from multiple input files, if :option:`-dumpbase` is
   specified, :samp:`{dumpbase}`, minus a :samp:`{auxdropsuf}` suffix, and a dash
@@ -425,10 +425,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -c -dumpdir dir/pfx- -dumpbase main ...
 
-  outputs auxiliary dumps to dir/pfx-main-foo.* and
-  dir/pfx-main-bar.*, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
-  Dump outputs retain the input file suffix: dir/pfx-main-foo.c.*
-  and dir/pfx-main-bar.c.*, respectively.  Contrast with the
+  outputs auxiliary dumps to dir/pfx-main-foo.\* and
+  dir/pfx-main-bar.\*, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
+  Dump outputs retain the input file suffix: dir/pfx-main-foo.c.\*
+  and dir/pfx-main-bar.c.\*, respectively.  Contrast with the
   single-input compilation:
 
   .. code-block:: bash
@@ -437,7 +437,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   that, applying :option:`-dumpbase` to a single source, does not compute
   and append a separate :samp:`{dumpbase}` per input file.  Its auxiliary and
-  dump outputs go in dir/pfx-main.*.
+  dump outputs go in dir/pfx-main.\*.
 
   When compiling and then linking from multiple input files, a defaulted
   or explicitly specified :samp:`{dumppfx}` also undergoes the :samp:`{dumpbase}` -
@@ -470,8 +470,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c -dumpdir alt/pfx- -o dir/main.exe -save-temps=cwd ...
 
-  Auxiliary outputs are named foo.*, and dump outputs
-  foo.c.*, in the current working directory as ultimately requested
+  Auxiliary outputs are named foo.\*, and dump outputs
+  foo.c.\*, in the current working directory as ultimately requested
   by :option:`-save-temps`:samp:`=cwd`.
 
   Summing it all up for an intuitive though slightly imprecise data flow:

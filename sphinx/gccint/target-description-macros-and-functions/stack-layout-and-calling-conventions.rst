@@ -410,7 +410,7 @@ Exception Handling Support
   the macro should evaluate to ``_URC_END_OF_STACK``.
 
   For proper signal handling in Java this macro is accompanied by
-  ``MAKE_THROW_FRAME``, defined in libjava/include/*-signal.h headers.
+  ``MAKE_THROW_FRAME``, defined in libjava/include/\*-signal.h headers.
 
 .. c:macro:: MD_HANDLE_UNWABI (context, fs)
 

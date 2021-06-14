@@ -158,7 +158,7 @@ These options are defined for AArch64 implementations:
 
   Specify the name of the target architecture and, optionally, one or
   more feature modifiers.  This option has the form
-  :option:`-march`:samp:`={arch}` {+[no ] :samp:`{feature}` }*.
+  :option:`-march`:samp:`={arch}` {+[no ] :samp:`{feature}` }\*.
 
   The table below summarizes the permissible values for :samp:`{arch}`
   and the features that they enable by default:
@@ -236,7 +236,7 @@ These options are defined for AArch64 implementations:
 
   Specify the name of the target processor, optionally suffixed by one
   or more feature modifiers.  This option has the form
-  :option:`-mcpu`:samp:`={cpu}` {+[no ] :samp:`{feature}` }*, where
+  :option:`-mcpu`:samp:`={cpu}` {+[no ] :samp:`{feature}` }\*, where
   the permissible values for :samp:`{cpu}` are the same as those available
   for :option:`-mtune`.  The permissible values for :samp:`{feature}` are
   documented in the sub-section on

@@ -228,7 +228,7 @@ The available options are:
   will call the function referenced by the ``reorder`` option, before
   changing the pointers in the object that's pointed to by the field the
   option applies to.  The function must take four arguments, with the
-  signature :samp:`void *, void *, gt_pointer_operator, void *`.
+  signature :samp:`void \*, void \*, gt_pointer_operator, void \*`.
   The first parameter is a pointer to the structure that contains the
   object being updated, or the object itself if there is no containing
   structure.  The second parameter is a cookie that should be ignored.

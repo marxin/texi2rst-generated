@@ -120,7 +120,7 @@ the basic block intermediate language specific pointers.
 Abstract containers and iterators are used to access the PHI nodes
 and statements in a basic blocks.  These iterators are called
 :dfn:`GIMPLE statement iterators` (GSIs).  Grep for ``^gsi``
-in the various gimple-* and tree-* files.
+in the various gimple-\* and tree-\* files.
 There is a ``gimple_stmt_iterator`` type for iterating over
 all kinds of statement, and a ``gphi_iterator`` subclass for
 iterating over PHI nodes.

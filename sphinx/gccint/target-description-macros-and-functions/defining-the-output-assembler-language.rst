@@ -1632,7 +1632,7 @@ This concerns dispatch tables.
   This target hook is used to emit assembly strings required by the target
   after the .cfi_startproc directive.  The first argument is the file stream to
   write the strings to and the second argument is the function's declaration.  The
-  expected use is to add more .cfi_* directives.
+  expected use is to add more .cfi_\* directives.
 
   The default is to not output any assembly strings.
 

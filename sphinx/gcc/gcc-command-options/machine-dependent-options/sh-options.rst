@@ -253,8 +253,8 @@ These :samp:`-m` options are defined for the SH implementations:
     Generate GNU/Linux compatible gUSA software atomic sequences for the atomic
     built-in functions.  The generated atomic sequences require additional support
     from the interrupt/exception handling code of the system and are only suitable
-    for SH3* and SH4* single-core systems.  This option is enabled by default when
-    the target is ``sh*-*-linux*`` and SH3* or SH4*.  When the target is SH4A,
+    for SH3\* and SH4\* single-core systems.  This option is enabled by default when
+    the target is ``sh*-*-linux*`` and SH3\* or SH4\*.  When the target is SH4A,
     this option also partially utilizes the hardware atomic instructions
     ``movli.l`` and ``movco.l`` to create more efficient code, unless
     :samp:`strict` is specified.  
@@ -262,7 +262,7 @@ These :samp:`-m` options are defined for the SH implementations:
   :samp:`soft-tcb`
     Generate software atomic sequences that use a variable in the thread control
     block.  This is a variation of the gUSA sequences which can also be used on
-    SH1* and SH2* targets.  The generated atomic sequences require additional
+    SH1\* and SH2\* targets.  The generated atomic sequences require additional
     support from the interrupt/exception handling code of the system and are only
     suitable for single-core systems.  When using this model, the :samp:`gbr-offset=`
     parameter has to be specified as well.
@@ -273,7 +273,7 @@ These :samp:`-m` options are defined for the SH implementations:
     in privileged mode and is only suitable for single-core systems.  Additional
     support from the interrupt/exception handling code of the system is not
     required.  This model is enabled by default when the target is
-    ``sh*-*-linux*`` and SH1* or SH2*.
+    ``sh*-*-linux*`` and SH1\* or SH2\*.
 
   :samp:`hard-llcs`
     Generate hardware atomic sequences using the ``movli.l`` and ``movco.l``
@@ -316,7 +316,7 @@ These :samp:`-m` options are defined for the SH implementations:
   Don't allow (allow) the compiler generating privileged mode code.  Specifying
   :option:`-musermode` also implies :option:`-mno-inline-ic_invalidate` if the
   inlined code would not work in user mode.  :option:`-musermode` is the default
-  when the target is ``sh*-*-linux*``.  If the target is SH1* or SH2*
+  when the target is ``sh*-*-linux*``.  If the target is SH1\* or SH2\*
   :option:`-musermode` has no effect, since there is no user mode.
 
 .. option:: -multcost=number

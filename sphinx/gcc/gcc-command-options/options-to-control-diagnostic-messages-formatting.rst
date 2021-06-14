@@ -304,7 +304,7 @@ honor these options.
                       char *         long int
 
   This option suppresses the printing of these labels (in the example above,
-  the vertical bars and the 'char *' and 'long int' text).
+  the vertical bars and the 'char \*' and 'long int' text).
 
 .. option:: -fdiagnostics-show-labels
 

@@ -260,7 +260,7 @@ them: try the first ones in this list first.
   This hook is called by the insn scheduler before issuing :samp:`{insn}`
   on cycle :samp:`{clock}`.  If the hook returns nonzero,
   :samp:`{insn}` is not issued on this processor cycle.  Instead,
-  the processor cycle is advanced.  If * :samp:`{sort_p}`
+  the processor cycle is advanced.  If \* :samp:`{sort_p}`
   is zero, the insn ready queue is not sorted on the new cycle
   start as usually.  :samp:`{dump}` and :samp:`{verbose}` specify the file and
   verbosity level to use for debugging output.
@@ -349,7 +349,7 @@ them: try the first ones in this list first.
 
   This hook is used by the insn scheduler to find out what features should be
   enabled/used.
-  The structure * :samp:`{spec_info}` should be filled in by the target.
+  The structure \* :samp:`{spec_info}` should be filled in by the target.
   The structure describes speculation types that can be used in the scheduler.
 
 .. function:: bool TARGET_SCHED_CAN_SPECULATE_INSN (rtx_insn *insn)

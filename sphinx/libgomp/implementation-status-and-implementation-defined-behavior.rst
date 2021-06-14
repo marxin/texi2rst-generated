@@ -112,7 +112,7 @@ acc_prof_info.func_end_line_no
   implementation, this will always be the same value as
   ``acc_prof_info.event_type``.
 
-acc_event_info.*.parent_construct
+acc_event_info.\*.parent_construct
   * Will be ``acc_construct_parallel`` for all OpenACC compute
     constructs as well as many OpenACC Runtime API calls; should be the
     one matching the actual construct, or
@@ -132,7 +132,7 @@ acc_event_info.*.parent_construct
     ``acc_construct_parallel`` ; should reflect the real parent
     construct.
 
-acc_event_info.*.implicit
+acc_event_info.\*.implicit
   For ``acc_ev_alloc``, ``acc_ev_free``,
   ``acc_ev_enqueue_upload_start``, ``acc_ev_enqueue_upload_end``,
   ``acc_ev_enqueue_download_start``, and

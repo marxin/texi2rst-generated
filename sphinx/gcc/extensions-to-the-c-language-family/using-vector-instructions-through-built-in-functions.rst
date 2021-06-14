@@ -154,7 +154,7 @@ and element count ( :samp:`{N}` ) as the output vector.
 The elements of the input vectors are numbered in memory ordering of
 :samp:`{vec0}` beginning at 0 and :samp:`{vec1}` beginning at :samp:`{N}`.  The
 elements of :samp:`{mask}` are considered modulo :samp:`{N}` in the single-operand
-case and modulo 2* :samp:`{N}` in the two-operand case.
+case and modulo 2\* :samp:`{N}` in the two-operand case.
 
 Consider the following example,
 
