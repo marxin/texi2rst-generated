@@ -38,7 +38,7 @@ Some optional tests also require Python3 and pytest module.
 If the directories where :command:`runtest` and :command:`expect` were
 installed are not in the :envvar:`PATH`, you may need to set the following
 environment variables appropriately, as in the following example (which
-assumes that DejaGnu has been installed under /usr/local):
+assumes that DejaGnu has been installed under :samp:`/usr/local`):
 
 .. code-block:: bash
 

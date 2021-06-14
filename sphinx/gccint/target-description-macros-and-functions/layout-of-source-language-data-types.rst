@@ -128,8 +128,8 @@ languages, rather than to fundamental aspects of storage layout.
   hook and should be defined if that hook is overriden to be true.  It
   causes function names in libgcc to be changed to use a ``__gnu_``
   prefix for their name rather than the default ``__``.  A port which
-  uses this macro should also arrange to use t-gnu-prefix in
-  the libgcc config.host.
+  uses this macro should also arrange to use :samp:`t-gnu-prefix` in
+  the libgcc :samp:`config.host`.
 
 .. c:macro:: WIDEST_HARDWARE_FP_SIZE
 
@@ -165,7 +165,7 @@ languages, rather than to fundamental aspects of storage layout.
   spaces, and write first any length keyword, then ``unsigned`` if
   appropriate, and finally ``int``.  The string must exactly match one
   of the data type names defined in the function
-  ``c_common_nodes_and_builtins`` in the file c-family/c-common.c.
+  ``c_common_nodes_and_builtins`` in the file :samp:`c-family/c-common.c`.
   You may not omit ``int`` or change the order---that would cause the
   compiler to crash on startup.
 

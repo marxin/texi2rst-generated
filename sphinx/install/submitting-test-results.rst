@@ -7,7 +7,7 @@ Submitting test results
 ***********************
 
 If you want to report the results to the GCC project, use the
-contrib/test_summary shell script.  Start it in the :samp:`{objdir}` with
+:samp:`contrib/test_summary` shell script.  Start it in the :samp:`{objdir}` with
 
 .. code-block:: bash
 
@@ -15,7 +15,7 @@ contrib/test_summary shell script.  Start it in the :samp:`{objdir}` with
       -m gcc-testresults@gcc.gnu.org |sh
 
 This script uses the :command:`Mail` program to send the results, so
-make sure it is in your :envvar:`PATH`.  The file your_commentary.txt is
+make sure it is in your :envvar:`PATH`.  The file :samp:`your_commentary.txt` is
 prepended to the testsuite summary and should contain any special
 remarks you have on your results or your build environment.  Please
 do not edit the testsuite result block or the subject line, as these

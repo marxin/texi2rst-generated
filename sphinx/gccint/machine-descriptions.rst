@@ -11,9 +11,9 @@ Machine Descriptions
 .. index:: machine descriptions
 
 A machine description has two parts: a file of instruction patterns
-(.md file) and a C header file of macro definitions.
+(:samp:`.md` file) and a C header file of macro definitions.
 
-The .md file for a target machine contains a pattern for each
+The :samp:`.md` file for a target machine contains a pattern for each
 instruction that the target machine supports (or at least each instruction
 that is worth telling the compiler about).  It may also contain comments.
 A semicolon causes the rest of the line to be a comment, unless the semicolon

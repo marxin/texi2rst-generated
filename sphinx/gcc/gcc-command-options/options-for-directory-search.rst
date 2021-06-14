@@ -45,7 +45,7 @@ libraries and for parts of the compiler:
   For each subprogram to be run, the compiler driver first tries the
   :option:`-B` prefix, if any.  If that name is not found, or if :option:`-B`
   is not specified, the driver tries two standard prefixes, 
-  /usr/lib/gcc/ and /usr/local/lib/gcc/.  If neither of
+  :samp:`/usr/lib/gcc/` and :samp:`/usr/local/lib/gcc/`.  If neither of
   those results in a file name that is found, the unmodified program
   name is searched for using the directories specified in your
   :envvar:`PATH` environment variable.
@@ -61,7 +61,7 @@ libraries and for parts of the compiler:
   options into :option:`-isystem` options for the preprocessor.  In this case,
   the compiler appends :samp:`include` to the prefix.
 
-  The runtime support file libgcc.a can also be searched for using
+  The runtime support file :samp:`libgcc.a` can also be searched for using
   the :option:`-B` prefix, if needed.  If it is not found there, the two
   standard prefixes above are tried, and that is all.  The file is left
   out of the link if it is not found by those means.
@@ -70,8 +70,8 @@ libraries and for parts of the compiler:
   the environment variable :envvar:`GCC_EXEC_PREFIX`.  See :ref:`environment-variables`.
 
   As a special kludge, if the path provided by :option:`-B` is
-  [dir/]stage :samp:`{N}` /, where :samp:`{N}` is a number in the range 0 to
-  9, then it is replaced by [dir/]include.  This is to help
+  :samp:`[dir/]stage :samp:`{N}` /`, where :samp:`{N}` is a number in the range 0 to
+  9, then it is replaced by :samp:`[dir/]include`.  This is to help
   with boot-strapping the compiler.
 
 .. option:: -no-canonical-prefixes
@@ -84,8 +84,8 @@ libraries and for parts of the compiler:
 
   Use :samp:`{dir}` as the logical root directory for headers and libraries.
   For example, if the compiler normally searches for headers in
-  /usr/include and libraries in /usr/lib, it instead
-  searches :samp:`{dir}` /usr/include and :samp:`{dir}` /usr/lib.
+  :samp:`/usr/include` and libraries in :samp:`/usr/lib`, it instead
+  searches :samp:`:samp:`{dir}` /usr/include` and :samp:`:samp:`{dir}` /usr/lib`.
 
   If you use both this option and the :option:`-isysroot` option, then
   the :option:`--sysroot` option applies to libraries, but the
@@ -101,7 +101,7 @@ libraries and for parts of the compiler:
   For some targets, a suffix is added to the root directory specified
   with :option:`--sysroot`, depending on the other options used, so that
   headers may for example be found in
-  :samp:`{dir}` / :samp:`{suffix}` /usr/include instead of
-  :samp:`{dir}` /usr/include.  This option disables the addition of
+  :samp:`:samp:`{dir}` / :samp:`{suffix}` /usr/include` instead of
+  :samp:`:samp:`{dir}` /usr/include`.  This option disables the addition of
   such a suffix.
 

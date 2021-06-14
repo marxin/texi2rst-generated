@@ -15,11 +15,11 @@ Host Filesystem
 GCC needs to know a number of things about the semantics of the host
 machine's filesystem.  Filesystems with Unix and MS-DOS semantics are
 automatically detected.  For other systems, you can define the
-following macros in xm- :samp:`{machine}`.h.
+following macros in :samp:`xm- :samp:`{machine}`.h`.
 
 .. envvar:: HAVE_DOS_BASED_FILE_SYSTEM
 
-  This macro is automatically defined by system.h if the host
+  This macro is automatically defined by :samp:`system.h` if the host
   file system obeys the semantics defined by MS-DOS instead of Unix.
   DOS file systems are case insensitive, file specifications may begin
   with a drive letter, and both forward slash and backslash (``/``
@@ -29,9 +29,9 @@ following macros in xm- :samp:`{machine}`.h.
 
   If defined, these macros expand to character constants specifying
   separators for directory names within a file specification.
-  system.h will automatically give them appropriate values on
+  :samp:`system.h` will automatically give them appropriate values on
   Unix and MS-DOS file systems.  If your file system is neither of
-  these, define one or both appropriately in xm- :samp:`{machine}`.h.
+  these, define one or both appropriately in :samp:`xm- :samp:`{machine}`.h`.
 
   However, operating systems like VMS, where constructing a pathname is
   more complicated than just stringing together directory names

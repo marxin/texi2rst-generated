@@ -8,7 +8,7 @@
 Support for testing binary compatibility
 ****************************************
 
-The file compat.exp provides language-independent support for
+The file :samp:`compat.exp` provides language-independent support for
 binary compatibility testing.  It supports testing interoperability of
 two compilers that follow the same ABI, or of multiple sets of
 compiler options that should not affect binary compatibility.  It is
@@ -20,15 +20,15 @@ with each other to split up the functionality being tested.
 
 :samp:`{testname}_main.{suffix}`
   Contains the main program, which calls a function in file
-  :samp:`{testname}` _x. :samp:`{suffix}`.
+  :samp:`:samp:`{testname}` _x. :samp:`{suffix}``.
 
 :samp:`{testname}_x.{suffix}`
   Contains at least one call to a function in
-  :samp:`{testname}` _y. :samp:`{suffix}`.
+  :samp:`:samp:`{testname}` _y. :samp:`{suffix}``.
 
 :samp:`{testname}_y.{suffix}`
   Shares data with, or gets arguments from,
-  :samp:`{testname}` _x. :samp:`{suffix}`.
+  :samp:`:samp:`{testname}` _x. :samp:`{suffix}``.
 
   Within each test, the main program and one functional piece are
 compiled by the GCC under test.  The other piece can be compiled by
@@ -39,7 +39,7 @@ of such a pair specifies options used with the GCC under test, and the
 second element of the pair specifies options used with the alternate
 compiler.  Each test is compiled with each pair of options.
 
-compat.exp defines default pairs of compiler options.
+:samp:`compat.exp` defines default pairs of compiler options.
 These can be overridden by defining the environment variable
 :envvar:`COMPAT_OPTIONS` as:
 
@@ -61,7 +61,7 @@ An alternate compiler is specified by defining an environment
 variable to be the full pathname of an installed compiler; for C
 define :envvar:`ALT_CC_UNDER_TEST`, and for C++ define
 :envvar:`ALT_CXX_UNDER_TEST`.  These will be written to the
-site.exp file used by DejaGnu.  The default is to build each
+:samp:`site.exp` file used by DejaGnu.  The default is to build each
 test with the compiler under test using the first of each pair of
 compiler options from :envvar:`COMPAT_OPTIONS`.  When
 :envvar:`ALT_CC_UNDER_TEST` or
@@ -71,7 +71,7 @@ the compiler under test but with combinations of the options from
 
 To run only the C++ compatibility suite using the compiler under test
 and another version of GCC using specific compiler options, do the
-following from :samp:`{objdir}` /gcc:
+following from :samp:`:samp:`{objdir}` /gcc`:
 
 .. code-block:: c++
 
@@ -94,13 +94,13 @@ The binary compatibility tests support a small number of test framework
 commands that appear within comments in a test file.
 
 ``dg-require-*``
-  These commands can be used in :samp:`{testname}` _main. :samp:`{suffix}`
+  These commands can be used in :samp:`:samp:`{testname}` _main. :samp:`{suffix}``
   to skip the test if specific support is not available on the target.
 
 ``dg-options``
   The specified options are used for compiling this particular source
   file, appended to the options from :envvar:`COMPAT_OPTIONS`.  When this
-  command appears in :samp:`{testname}` _main. :samp:`{suffix}` the options
+  command appears in :samp:`:samp:`{testname}` _main. :samp:`{suffix}`` the options
   are also used to link the test program.
 
 ``dg-xfail-if``

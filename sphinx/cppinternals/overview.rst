@@ -6,7 +6,7 @@
 Overview
 ********
 
-The lexer is contained in the file lex.c.  It is a hand-coded
+The lexer is contained in the file :samp:`lex.c`.  It is a hand-coded
 lexer, and not implemented as a state machine.  It can understand C, C++
 and Objective-C source code, and has been extended to allow reasonably
 successful preprocessing of assembly language.  The lexer does not make

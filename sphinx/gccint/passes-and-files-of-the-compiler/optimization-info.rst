@@ -26,9 +26,9 @@ Dump setup
 
 .. index:: dump setup
 
-A dump_manager class is defined in dumpfile.h. Various passes
+A dump_manager class is defined in :samp:`dumpfile.h`. Various passes
 register dumping pass-specific information via ``dump_register`` in
-passes.c. During the registration, an optimization pass can
+:samp:`passes.c`. During the registration, an optimization pass can
 select its optimization group (see :ref:`optimization-groups`). After
 that optimization information corresponding to the entire group
 (presumably from multiple passes) can be output via command-line
@@ -54,7 +54,7 @@ Optimization groups
 .. index:: optimization groups
 
 The optimization passes are grouped into several categories. Currently
-defined categories in dumpfile.h are
+defined categories in :samp:`dumpfile.h` are
 
 .. envvar:: OPTGROUP_IPA
 
@@ -106,7 +106,7 @@ redirecting ``stderr``.
 ``pstream``
   This stream is for pass-specific dump output. For example,
   :option:`-fdump-tree-vect`:samp:`=foo.v` dumps tree vectorization pass output
-  into the given file name foo.v. If the file name is not provided,
+  into the given file name :samp:`foo.v`. If the file name is not provided,
   the default file name is based on the source file and pass number. Note
   that one could also use special file names ``stdout`` and
   ``stderr`` for dumping to standard output and standard error
@@ -168,7 +168,7 @@ Dump types
   information is relevant, and under what conditions. This determines
   the associated flags.
 
-  Consider the following example from loop-unroll.c where an
+  Consider the following example from :samp:`loop-unroll.c` where an
   informative message about a loop (along with its location) is printed
   when any of the following flags is enabled
 
@@ -221,7 +221,7 @@ Dump examples
   gcc -O3 -fopt-info-missed=missed.all
 
 outputs missed optimization report from all the passes into
-missed.all.
+:samp:`missed.all`.
 
 As another example,
 
@@ -231,15 +231,15 @@ As another example,
 
 will output information about missed optimizations as well as
 optimized locations from all the inlining passes into
-inline.txt.
+:samp:`inline.txt`.
 
 If the :samp:`{filename}` is provided, then the dumps from all the
-applicable optimizations are concatenated into the filename.
-Otherwise the dump is output onto stderr. If :samp:`{options}` is
+applicable optimizations are concatenated into the :samp:`filename`.
+Otherwise the dump is output onto :samp:`stderr`. If :samp:`{options}` is
 omitted, it defaults to optimized-optall, which means dump
 all information about successful optimizations from all the passes.
 In the following example, the optimization information is output on
-to stderr.
+to :samp:`stderr`.
 
 .. code-block:: bash
 
@@ -255,9 +255,9 @@ As another example, consider
 
   gcc -fopt-info-vec-missed=vec.miss -fopt-info-loop-optimized=loop.opt
 
-Here the two output file names vec.miss and loop.opt are
+Here the two output file names :samp:`vec.miss` and :samp:`loop.opt` are
 in conflict since only one output file is allowed. In this case, only
 the first option takes effect and the subsequent options are
-ignored. Thus only the vec.miss is produced which containts
+ignored. Thus only the :samp:`vec.miss` is produced which containts
 dumps from the vectorizer about missed opportunities.
 

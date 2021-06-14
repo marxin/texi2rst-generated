@@ -523,7 +523,7 @@ The following options fine tune code generation:
 
 .. option:: -mno-brcc
 
-  This option disables a target-specific pass in arc_reorg to
+  This option disables a target-specific pass in :samp:`arc_reorg` to
   generate compare-and-branch ( ``brcc`` ) instructions.  
   It has no effect on
   generation of these instructions driven by the combiner pass.

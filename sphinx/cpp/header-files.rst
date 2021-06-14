@@ -41,7 +41,7 @@ as the risk that a failure to find one copy will result in
 inconsistencies within a program.
 
 In C, the usual convention is to give header files names that end with
-.h.  It is most portable to use only letters, digits, dashes, and
+:samp:`.h`.  It is most portable to use only letters, digits, dashes, and
 underscores in header file names, and at most one dot.
 
 .. toctree::

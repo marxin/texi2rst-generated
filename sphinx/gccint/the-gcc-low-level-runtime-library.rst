@@ -8,8 +8,8 @@
 The GCC low-level runtime library
 ---------------------------------
 
-GCC provides a low-level runtime library, libgcc.a or
-libgcc_s.so.1 on some platforms.  GCC generates calls to
+GCC provides a low-level runtime library, :samp:`libgcc.a` or
+:samp:`libgcc_s.so.1` on some platforms.  GCC generates calls to
 routines in this library automatically, whenever it needs to perform
 some operation that is too complicated to emit inline code for.
 

@@ -39,7 +39,7 @@ argument of :samp:`#include`, you simply put a macro name there instead:
   #include SYSTEM_H
 
 ``SYSTEM_H`` will be expanded, and the preprocessor will look for
-system_1.h as if the :samp:`#include` had been written that way
+:samp:`system_1.h` as if the :samp:`#include` had been written that way
 originally.  ``SYSTEM_H`` could be defined by your Makefile with a
 :option:`-D` option.
 
@@ -65,7 +65,7 @@ escapes in the string.  Therefore
   #define HEADER "a\"b"
   #include HEADER
 
-looks for a file named a\"b.  CPP searches for the file according
+looks for a file named :samp:`a\\"b`.  CPP searches for the file according
 to the rules for double-quoted includes.
 
 If the line expands to a token stream beginning with a :samp:`<` token

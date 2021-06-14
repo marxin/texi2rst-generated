@@ -39,39 +39,39 @@ one provided by the 'Objective-C 2.0' Apple/NeXT Objective-C
 runtime.  The API is documented in the public header files of the GNU
 Objective-C runtime:
 
-* objc/objc.h: this is the basic Objective-C header file,
+* :samp:`objc/objc.h`: this is the basic Objective-C header file,
   defining the basic Objective-C types such as ``id``, ``Class``
   and ``BOOL``.  You have to include this header to do almost
   anything with Objective-C.
 
-* objc/runtime.h: this header declares most of the public runtime
+* :samp:`objc/runtime.h`: this header declares most of the public runtime
   API functions allowing you to inspect and manipulate the Objective-C
   runtime data structures.  These functions are fairly standardized
   across Objective-C runtimes and are almost identical to the Apple/NeXT
   Objective-C runtime ones.  It does not declare functions in some
   specialized areas (constructing and forwarding message invocations,
   threading) which are in the other headers below.  You have to include
-  objc/objc.h and objc/runtime.h to use any of the
+  :samp:`objc/objc.h` and :samp:`objc/runtime.h` to use any of the
   functions, such as ``class_getName()``, declared in
-  objc/runtime.h.
+  :samp:`objc/runtime.h`.
 
-* objc/message.h: this header declares public functions used to
+* :samp:`objc/message.h`: this header declares public functions used to
   construct, deconstruct and forward message invocations.  Because
   messaging is done in quite a different way on different runtimes,
   functions in this header are specific to the GNU Objective-C runtime
   implementation.
 
-* objc/objc-exception.h: this header declares some public
+* :samp:`objc/objc-exception.h`: this header declares some public
   functions related to Objective-C exceptions.  For example functions in
   this header allow you to throw an Objective-C exception from plain
   C/C++ code.
 
-* objc/objc-sync.h: this header declares some public functions
+* :samp:`objc/objc-sync.h`: this header declares some public functions
   related to the Objective-C ``@synchronized()`` syntax, allowing
   you to emulate an Objective-C ``@synchronized()`` block in plain
   C/C++ code.
 
-* objc/thr.h: this header declares a public runtime API threading
+* :samp:`objc/thr.h`: this header declares a public runtime API threading
   layer that is only provided by the GNU Objective-C runtime.  It
   declares functions such as ``objc_mutex_lock()``, which provide a
   platform-independent set of threading functions.
@@ -92,7 +92,7 @@ belonging to this API are easy to recognize because they use a
 different naming convention, such as ``class_get_super_class()``
 (traditional API) instead of ``class_getSuperclass()`` (modern
 API).  Software using this API includes the file
-objc/objc-api.h where it is declared.
+:samp:`objc/objc-api.h` where it is declared.
 
 Starting with GCC 4.7.0, the traditional GNU runtime API is no longer
 available.

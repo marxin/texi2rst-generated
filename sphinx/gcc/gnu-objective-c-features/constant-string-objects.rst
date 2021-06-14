@@ -19,7 +19,7 @@ prefixing a C constant string with the character :samp:`@`:
 The constant string objects are by default instances of the
 ``NXConstantString`` class which is provided by the GNU Objective-C
 runtime.  To get the definition of this class you must include the
-objc/NXConstStr.h header file.
+:samp:`objc/NXConstStr.h` header file.
 
 User defined libraries may want to implement their own constant string
 class.  To be able to support them, the GNU Objective-C compiler provides

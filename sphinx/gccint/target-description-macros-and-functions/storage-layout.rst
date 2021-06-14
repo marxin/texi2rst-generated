@@ -264,7 +264,7 @@ See :ref:`run-time-target`.
   supported by GCC.  If not defined, the default value is
   ``BIGGEST_ALIGNMENT``.
 
-  On systems that use ELF, the default (in config/elfos.h) is
+  On systems that use ELF, the default (in :samp:`config/elfos.h`) is
   the largest supported 32-bit ELF section alignment representable on
   a 32-bit host e.g. :samp:`(((uint64_t) 1 << 28) * 8)`.
   On 32-bit ELF the largest supported section alignment in bits is
@@ -632,7 +632,7 @@ See :ref:`run-time-target`.
   :samp:`{name}` is the name used for the type qualifier in source code,
   :samp:`{n}` is the length of :samp:`{name}` as above, and :samp:`{code}` is the
   code used to represent the unqualified version of this type.  (See
-  ``write_builtin_type`` in cp/mangle.c for the list of
+  ``write_builtin_type`` in :samp:`cp/mangle.c` for the list of
   codes.)  In both cases the spaces are for clarity; do not include any
   spaces in your string.
 

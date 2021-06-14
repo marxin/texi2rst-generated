@@ -85,13 +85,13 @@ See :ref:`driver`.
   tries looking in the usual places for the subprogram.
 
   The default value of :envvar:`GCC_EXEC_PREFIX` is
-  :samp:`{prefix}` /lib/gcc/ where :samp:`{prefix}` is the prefix to
+  :samp:`:samp:`{prefix}` /lib/gcc/` where :samp:`{prefix}` is the prefix to
   the installed compiler. In many cases :samp:`{prefix}` is the value
-  of ``prefix`` when you ran the configure script.
+  of ``prefix`` when you ran the :samp:`configure` script.
 
   Other prefixes specified with :option:`-B` take precedence over this prefix.
 
-  This prefix is also used for finding files such as crt0.o that are
+  This prefix is also used for finding files such as :samp:`crt0.o` that are
   used for linking.
 
   In addition, the prefix is used in an unusual way in finding the
@@ -100,8 +100,8 @@ See :ref:`driver`.
   (more precisely, with the value of :envvar:`GCC_INCLUDE_DIR`), GCC tries
   replacing that beginning with the specified prefix to produce an
   alternate directory name.  Thus, with :option:`-Bfoo/`, GCC searches
-  foo/bar just before it searches the standard directory 
-  /usr/local/lib/bar.
+  :samp:`foo/bar` just before it searches the standard directory 
+  :samp:`/usr/local/lib/bar`.
   If a standard directory begins with the configured
   :samp:`{prefix}` then the value of :samp:`{prefix}` is replaced by
   :envvar:`GCC_EXEC_PREFIX` when looking for header files.

@@ -13,7 +13,7 @@ structures to the intermediate language used by the later stages of
 the compiler, the so-called middle end.
 
 Data structures relating to this are found in the source files
-trans\*.h and trans-\*.c.
+:samp:`trans*.h` and :samp:`trans-*.c`.
 
 .. toctree::
   :maxdepth: 2

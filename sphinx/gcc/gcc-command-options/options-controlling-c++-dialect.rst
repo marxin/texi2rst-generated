@@ -17,7 +17,7 @@ Options Controlling C++ Dialect
 This section describes the command-line options that are only meaningful
 for C++ programs.  You can also use most of the GNU compiler options
 regardless of what language your program is in.  For example, you
-might compile a file firstClass.C like this:
+might compile a file :samp:`firstClass.C` like this:
 
 .. code-block:: c++
 

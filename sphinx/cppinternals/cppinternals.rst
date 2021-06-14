@@ -28,12 +28,12 @@ other is for both internal and external use.
 
 The convention is that functions and types that are exposed to multiple
 files internally are prefixed with :samp:`_cpp_`, and are to be found in
-the file internal.h.  Functions and types exposed to external
-clients are in cpplib.h, and prefixed with :samp:`cpp_`.  For
+the file :samp:`internal.h`.  Functions and types exposed to external
+clients are in :samp:`cpplib.h`, and prefixed with :samp:`cpp_`.  For
 historical reasons this is no longer quite true, but we should strive to
 stick to it.
 
-We are striving to reduce the information exposed in cpplib.h to the
+We are striving to reduce the information exposed in :samp:`cpplib.h` to the
 bare minimum necessary, and then to keep it there.  This makes clear
 exactly what external clients are entitled to assume, and allows us to
 change internals in the future without worrying whether library clients
@@ -440,7 +440,7 @@ File Handling
 .. index:: files
 
 Fairly obviously, the file handling code of cpplib resides in the file
-files.c.  It takes care of the details of file searching,
+:samp:`files.c`.  It takes care of the details of file searching,
 opening, reading and caching, for both the main source file and all the
 headers it recursively includes.
 
@@ -459,10 +459,10 @@ filesystem queries whilst searching for the correct file.
 For each file we try to open, we store the constructed path in a splay
 tree.  This path first undergoes simplification by the function
 ``_cpp_simplify_pathname``.  For example,
-/usr/include/bits/../foo.h is simplified to
-/usr/include/foo.h before we enter it in the splay tree and try
+:samp:`/usr/include/bits/../foo.h` is simplified to
+:samp:`/usr/include/foo.h` before we enter it in the splay tree and try
 to ``open ()`` the file.  CPP will then find subsequent uses of
-foo.h, even as /usr/include/foo.h, in the splay tree and
+:samp:`foo.h`, even as :samp:`/usr/include/foo.h`, in the splay tree and
 save system calls.
 
 Further, it is likely the file contents have also been cached, saving a
@@ -486,7 +486,7 @@ directory on a per-file basis is handled by the function
 
 Note that a header included with a directory component, such as
 ``#include "mydir/foo.h"`` and opened as
-/usr/local/include/mydir/foo.h, will have the complete path minus
+:samp:`/usr/local/include/mydir/foo.h`, will have the complete path minus
 the basename :samp:`foo.h` as the current directory.
 
 Enough information is stored in the splay tree that CPP can immediately

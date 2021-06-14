@@ -575,9 +575,9 @@ alphabetical order.
   clean-ups and porting work, and maintaining the IRIX, Solaris 2, and
   Tru64 UNIX ports.
 
-* Steven Pemberton for his contribution of enquire which allowed GCC to
+* Steven Pemberton for his contribution of :samp:`enquire` which allowed GCC to
   determine various properties of the floating point unit and generate
-  float.h in older versions of GCC.
+  :samp:`float.h` in older versions of GCC.
 
 * Hartmut Penner for work on the s390 port.
 
@@ -632,7 +632,7 @@ alphabetical order.
 
 * David Ronis inspired and encouraged Craig to rewrite the G77
   documentation in texinfo format by contributing a first pass at a
-  translation of the old g77-0.5.16/f/DOC file.
+  translation of the old :samp:`g77-0.5.16/f/DOC` file.
 
 * Ken Rose for fixes to GCC's delay slot filling code.
 

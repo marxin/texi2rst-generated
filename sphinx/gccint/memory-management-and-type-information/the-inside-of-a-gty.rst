@@ -293,7 +293,7 @@ The available options are:
 :samp:`special ("{name}")`
   The ``special`` option is used to mark types that have to be dealt
   with by special case machinery.  The parameter is the name of the
-  special case.  See gengtype.c for further details.  Avoid
+  special case.  See :samp:`gengtype.c` for further details.  Avoid
   adding new special cases unless there is no other alternative.
 
   .. index:: user

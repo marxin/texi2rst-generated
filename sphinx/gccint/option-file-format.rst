@@ -46,13 +46,13 @@ The files can contain the following types of record:
   target save code and restored in the target restore code.
 
 * A variable record to record any additional files that the
-  options.h file should include.  This is useful to provide
+  :samp:`options.h` file should include.  This is useful to provide
   enumeration or structure definitions needed for target variables.
   These records have two fields: the string :samp:`HeaderInclude` and the
   name of the include file.
 
 * A variable record to record any additional files that the
-  options.c or options-save.c file should include.  This
+  :samp:`options.c` or :samp:`options-save.c` file should include.  This
   is useful to provide
   inline functions needed for target variables and/or ``#ifdef``
   sequences to properly set up the initialization.  These records have

@@ -17,7 +17,7 @@ variable analysis on GIMPLE.  They enable us to represent variables with
 complicated behavior in a simple and consistent way (we only use it to
 express values of polynomial induction variables, but it is possible to
 extend it).  The interfaces to SCEV analysis are declared in
-tree-scalar-evolution.h.  To use scalar evolutions analysis,
+:samp:`tree-scalar-evolution.h`.  To use scalar evolutions analysis,
 ``scev_initialize`` must be used.  To stop using SCEV,
 ``scev_finalize`` should be used.  SCEV analysis caches results in
 order to save time and memory.  This cache however is made invalid by

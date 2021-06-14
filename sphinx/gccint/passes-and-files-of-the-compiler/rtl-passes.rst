@@ -16,24 +16,24 @@ passes that are run after the Tree optimization passes.
   .. Avoiding overfull is tricky here.
 
   The source files for RTL generation include
-  stmt.c,
-  calls.c,
-  expr.c,
-  explow.c,
-  expmed.c,
-  function.c,
-  optabs.c
-  and emit-rtl.c.
+  :samp:`stmt.c`,
+  :samp:`calls.c`,
+  :samp:`expr.c`,
+  :samp:`explow.c`,
+  :samp:`expmed.c`,
+  :samp:`function.c`,
+  :samp:`optabs.c`
+  and :samp:`emit-rtl.c`.
   Also, the file
-  insn-emit.c, generated from the machine description by the
+  :samp:`insn-emit.c`, generated from the machine description by the
   program ``genemit``, is used in this pass.  The header file
-  expr.h is used for communication within this pass.
+  :samp:`expr.h` is used for communication within this pass.
 
   .. index:: genflags
 
   .. index:: gencodes
 
-  The header files insn-flags.h and insn-codes.h,
+  The header files :samp:`insn-flags.h` and :samp:`insn-codes.h`,
   generated from the machine description by the programs ``genflags``
   and ``gencodes``, tell this pass which standard names are available
   for use and which patterns correspond to them.
@@ -44,7 +44,7 @@ passes that are run after the Tree optimization passes.
   exception handling library routines and the exception handlers within
   the function.  Entry points in the function that are invoked by the
   exception handling library are called :dfn:`landing pads`.  The code
-  for this pass is located in except.c.
+  for this pass is located in :samp:`except.c`.
 
 * Control flow graph cleanup
 
@@ -52,8 +52,8 @@ passes that are run after the Tree optimization passes.
   jump, jumps across jumps, etc.  The pass is run multiple times.
   For historical reasons, it is occasionally referred to as the 'jump
   optimization pass'.  The bulk of the code for this pass is in
-  cfgcleanup.c, and there are support routines in cfgrtl.c
-  and jump.c.
+  :samp:`cfgcleanup.c`, and there are support routines in :samp:`cfgrtl.c`
+  and :samp:`jump.c`.
 
 * Forward propagation of single-def values
 
@@ -62,13 +62,13 @@ passes that are run after the Tree optimization passes.
   seeing if the result can be simplified.  It performs copy propagation
   and addressing mode selection.  The pass is run twice, with values
   being propagated into loops only on the second run.  The code is
-  located in fwprop.c.
+  located in :samp:`fwprop.c`.
 
 * Common subexpression elimination
 
   This pass removes redundant computation within basic blocks, and
   optimizes addressing modes based on cost.  The pass is run twice.
-  The code for this pass is located in cse.c.
+  The code for this pass is located in :samp:`cse.c`.
 
 * Global common subexpression elimination
 
@@ -87,26 +87,26 @@ passes that are run after the Tree optimization passes.
   and store motion when optimizing for speed.
   Regardless of which type of GCSE is used, the GCSE pass also performs
   global constant and  copy propagation.
-  The source file for this pass is gcse.c, and the LCM routines
-  are in lcm.c.
+  The source file for this pass is :samp:`gcse.c`, and the LCM routines
+  are in :samp:`lcm.c`.
 
 * Loop optimization
 
   This pass performs several loop related optimizations.
-  The source files cfgloopanal.c and cfgloopmanip.c contain
+  The source files :samp:`cfgloopanal.c` and :samp:`cfgloopmanip.c` contain
   generic loop analysis and manipulation code.  Initialization and finalization
-  of loop structures is handled by loop-init.c.
-  A loop invariant motion pass is implemented in loop-invariant.c.
+  of loop structures is handled by :samp:`loop-init.c`.
+  A loop invariant motion pass is implemented in :samp:`loop-invariant.c`.
   Basic block level optimizations---unrolling, and peeling loops---
-  are implemented in loop-unroll.c.
+  are implemented in :samp:`loop-unroll.c`.
   Replacing of the exit condition of loops by special machine-dependent
-  instructions is handled by loop-doloop.c.
+  instructions is handled by :samp:`loop-doloop.c`.
 
 * Jump bypassing
 
   This pass is an aggressive form of GCSE that transforms the control
   flow graph of a function by propagating constants into conditional
-  branch instructions.  The source file for this pass is gcse.c.
+  branch instructions.  The source file for this pass is :samp:`gcse.c`.
 
 * If conversion
 
@@ -114,13 +114,13 @@ passes that are run after the Tree optimization passes.
   assignments with arithmetic, boolean value producing comparison
   instructions, and conditional move instructions.  In the very last
   invocation after reload/LRA, it will generate predicated instructions
-  when supported by the target.  The code is located in ifcvt.c.
+  when supported by the target.  The code is located in :samp:`ifcvt.c`.
 
 * Web construction
 
   This pass splits independent uses of each pseudo-register.  This can
   improve effect of the other transformation, such as CSE or register
-  allocation.  The code for this pass is located in web.c.
+  allocation.  The code for this pass is located in :samp:`web.c`.
 
 * Instruction combination
 
@@ -128,7 +128,7 @@ passes that are run after the Tree optimization passes.
   are related by data flow into single instructions.  It combines the
   RTL expressions for the instructions by substitution, simplifies the
   result using algebra, and then attempts to match the result against
-  the machine description.  The code is located in combine.c.
+  the machine description.  The code is located in :samp:`combine.c`.
 
 * Mode switching optimization
 
@@ -136,7 +136,7 @@ passes that are run after the Tree optimization passes.
   specific 'mode' and minimizes the number of mode changes required to
   satisfy all users.  What these modes are, and what they apply to are
   completely target-specific.  The code for this pass is located in
-  mode-switching.c.
+  :samp:`mode-switching.c`.
 
   .. index:: modulo scheduling
 
@@ -147,7 +147,7 @@ passes that are run after the Tree optimization passes.
   This pass looks at innermost loops and reorders their instructions
   by overlapping different iterations.  Modulo scheduling is performed
   immediately before instruction scheduling.  The code for this pass is
-  located in modulo-sched.c.
+  located in :samp:`modulo-sched.c`.
 
 * Instruction scheduling
 
@@ -157,9 +157,9 @@ passes that are run after the Tree optimization passes.
   It re-orders instructions within a basic block to try to separate the
   definition and use of items that otherwise would cause pipeline
   stalls.  This pass is performed twice, before and after register
-  allocation.  The code for this pass is located in haifa-sched.c,
-  sched-deps.c, sched-ebb.c, sched-rgn.c and
-  sched-vis.c.
+  allocation.  The code for this pass is located in :samp:`haifa-sched.c`,
+  :samp:`sched-deps.c`, :samp:`sched-ebb.c`, :samp:`sched-rgn.c` and
+  :samp:`sched-vis.c`.
 
 * Register allocation
 
@@ -182,10 +182,10 @@ passes that are run after the Tree optimization passes.
     register pressure but the user can force it to use one region or
     regions corresponding to all loops.
 
-    Source files of the allocator are ira.c, ira-build.c,
-    ira-costs.c, ira-conflicts.c, ira-color.c,
-    ira-emit.c, ira-lives, plus header files ira.h
-    and ira-int.h used for the communication between the allocator
+    Source files of the allocator are :samp:`ira.c`, :samp:`ira-build.c`,
+    :samp:`ira-costs.c`, :samp:`ira-conflicts.c`, :samp:`ira-color.c`,
+    :samp:`ira-emit.c`, :samp:`ira-lives`, plus header files :samp:`ira.h`
+    and :samp:`ira-int.h` used for the communication between the allocator
     and the rest of the compiler and between the IRA files.
 
     .. index:: reloading
@@ -202,17 +202,17 @@ passes that are run after the Tree optimization passes.
     The reload pass also optionally eliminates the frame pointer and inserts
     instructions to save and restore call-clobbered registers around calls.
 
-    Source files are reload.c and reload1.c, plus the header
-    reload.h used for communication between them.
+    Source files are :samp:`reload.c` and :samp:`reload1.c`, plus the header
+    :samp:`reload.h` used for communication between them.
 
     .. index:: Local Register Allocator (LRA)
 
   * This pass is a modern replacement of the reload pass.  Source files
-    are lra.c, lra-assign.c, lra-coalesce.c,
-    lra-constraints.c, lra-eliminations.c,
-    lra-lives.c, lra-remat.c, lra-spills.c, the
-    header lra-int.h used for communication between them, and the
-    header lra.h used for communication between LRA and the rest of
+    are :samp:`lra.c`, :samp:`lra-assign.c`, :samp:`lra-coalesce.c`,
+    :samp:`lra-constraints.c`, :samp:`lra-eliminations.c`,
+    :samp:`lra-lives.c`, :samp:`lra-remat.c`, :samp:`lra-spills.c`, the
+    header :samp:`lra-int.h` used for communication between them, and the
+    header :samp:`lra.h` used for communication between LRA and the rest of
     compiler.
 
     Unlike the reload pass, intermediate LRA decisions are reflected in
@@ -228,8 +228,8 @@ passes that are run after the Tree optimization passes.
   information is not available, various types of static analysis are
   performed to make the predictions normally coming from the profile
   feedback (IE execution frequency, branch probability, etc).  It is
-  implemented in the file bb-reorder.c, and the various
-  prediction routines are in predict.c.
+  implemented in the file :samp:`bb-reorder.c`, and the various
+  prediction routines are in :samp:`predict.c`.
 
 * Variable tracking
 
@@ -237,13 +237,13 @@ passes that are run after the Tree optimization passes.
   position in code and generates notes describing the variable locations
   to RTL code.  The location lists are then generated according to these
   notes to debug information if the debugging information format supports
-  location lists.  The code is located in var-tracking.c.
+  location lists.  The code is located in :samp:`var-tracking.c`.
 
 * Delayed branch scheduling
 
   This optional pass attempts to find instructions that can go into the
   delay slots of other instructions, usually jumps and calls.  The code
-  for this pass is located in reorg.c.
+  for this pass is located in :samp:`reorg.c`.
 
 * Branch shortening
 
@@ -252,29 +252,29 @@ passes that are run after the Tree optimization passes.
   In this pass, the compiler figures out what how far each instruction
   will be from each other instruction, and therefore whether the usual
   instructions, or the longer sequences, must be used for each branch.
-  The code for this pass is located in final.c.
+  The code for this pass is located in :samp:`final.c`.
 
 * Register-to-stack conversion
 
   Conversion from usage of some hard registers to usage of a register
   stack may be done at this point.  Currently, this is supported only
   for the floating-point registers of the Intel 80387 coprocessor.  The
-  code for this pass is located in reg-stack.c.
+  code for this pass is located in :samp:`reg-stack.c`.
 
 * Final
 
   This pass outputs the assembler code for the function.  The source files
-  are final.c plus insn-output.c; the latter is generated
-  automatically from the machine description by the tool genoutput.
-  The header file conditions.h is used for communication between
+  are :samp:`final.c` plus :samp:`insn-output.c`; the latter is generated
+  automatically from the machine description by the tool :samp:`genoutput`.
+  The header file :samp:`conditions.h` is used for communication between
   these files.
 
 * Debugging information output
 
   This is run after final because it must output the stack slot offsets
   for pseudo registers that did not get hard registers.  Source files
-  are dbxout.c for DBX symbol table format, dwarfout.c for
-  DWARF symbol table format, files dwarf2out.c and dwarf2asm.c
-  for DWARF2 symbol table format, and vmsdbgout.c for VMS debug
+  are :samp:`dbxout.c` for DBX symbol table format, :samp:`dwarfout.c` for
+  DWARF symbol table format, files :samp:`dwarf2out.c` and :samp:`dwarf2asm.c`
+  for DWARF2 symbol table format, and :samp:`vmsdbgout.c` for VMS debug
   symbol table format.
 

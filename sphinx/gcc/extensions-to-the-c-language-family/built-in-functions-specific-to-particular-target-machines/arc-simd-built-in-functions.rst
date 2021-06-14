@@ -12,7 +12,7 @@ SIMD builtins provided by the compiler can be used to generate the
 vector instructions.  This section describes the available builtins
 and their usage in programs.  With the :option:`-msimd` option, the
 compiler provides 128-bit vector types, which can be specified using
-the ``vector_size`` attribute.  The header file arc-simd.h
+the ``vector_size`` attribute.  The header file :samp:`arc-simd.h`
 can be included to use the following predefined types:
 
 .. code-block:: c++
@@ -25,7 +25,7 @@ functions listed in the following section can be used on these
 variables to generate the vector operations.
 
 For all builtins, ``__builtin_arc_someinsn``, the header file
-arc-simd.h also provides equivalent macros called
+:samp:`arc-simd.h` also provides equivalent macros called
 ``_someinsn`` that can be used for programming ease and
 improved readability.  The following macros for DMA control are also
 provided:

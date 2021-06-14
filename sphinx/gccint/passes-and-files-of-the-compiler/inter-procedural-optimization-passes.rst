@@ -45,52 +45,52 @@ hooks are defined.
 * IPA free lang data
 
   This pass frees resources that are used by the front end but are
-  not needed once it is done.  It is located in tree.c and is described by
+  not needed once it is done.  It is located in :samp:`tree.c` and is described by
   ``pass_ipa_free_lang_data``.
 
 * IPA function and variable visibility
 
   This is a local function pass handling visibilities of all symbols.  This
   happens before LTO streaming, so :option:`-fwhole-program` should be ignored
-  at this level.  It is located in ipa-visibility.c and is described by
+  at this level.  It is located in :samp:`ipa-visibility.c` and is described by
   ``pass_ipa_function_and_variable_visibility``.
 
 * IPA remove symbols
 
   This pass performs reachability analysis and reclaims all unreachable nodes.
-  It is located in passes.c and is described by
+  It is located in :samp:`passes.c` and is described by
   ``pass_ipa_remove_symbols``.
 
 * IPA OpenACC
 
   This is a pass group for OpenACC processing.  It is located in
-  tree-ssa-loop.c and is described by ``pass_ipa_oacc``.
+  :samp:`tree-ssa-loop.c` and is described by ``pass_ipa_oacc``.
 
 * IPA points-to analysis
 
   This is a tree-based points-to analysis pass. The idea behind this analyzer
   is to generate set constraints from the program, then solve the resulting
   constraints in order to generate the points-to sets.  It is located in 
-  tree-ssa-structalias.c and is described by ``pass_ipa_pta``.
+  :samp:`tree-ssa-structalias.c` and is described by ``pass_ipa_pta``.
 
 * IPA OpenACC kernels
 
   This is a pass group for processing OpenACC kernels regions.  It is a
   subpass of the IPA OpenACC pass group that runs on offloaded functions
   containing OpenACC kernels loops.  It is located in
-  tree-ssa-loop.c and is described by
+  :samp:`tree-ssa-loop.c` and is described by
   ``pass_ipa_oacc_kernels``.
 
 * Target clone
 
   This is a pass for parsing functions with multiple target attributes.
-  It is located in multiple_target.c and is described by
+  It is located in :samp:`multiple_target.c` and is described by
   ``pass_target_clone``.
 
 * IPA auto profile
 
   This pass uses AutoFDO profiling data to annotate the control flow graph.
-  It is located in auto-profile.c and is described by
+  It is located in :samp:`auto-profile.c` and is described by
   ``pass_ipa_auto_profile``.
 
 * IPA tree profile
@@ -98,32 +98,32 @@ hooks are defined.
   This pass does profiling for all functions in the call graph. 
   It calculates branch
   probabilities and basic block execution counts. It is located
-  in tree-profile.c and is described by ``pass_ipa_tree_profile``.
+  in :samp:`tree-profile.c` and is described by ``pass_ipa_tree_profile``.
 
 * IPA free function summary
 
   This pass is a small IPA pass when argument ``small_p`` is true.
   It releases inline function summaries and call summaries.
-  It is located in ipa-fnsummary.c and is described by
+  It is located in :samp:`ipa-fnsummary.c` and is described by
   ``pass_ipa_free_free_fn_summary``.
 
 * IPA increase alignment
 
   This pass increases the alignment of global arrays to improve
-  vectorization. It is located in tree-vectorizer.c
+  vectorization. It is located in :samp:`tree-vectorizer.c`
   and is described by ``pass_ipa_increase_alignment``.
 
 * IPA transactional memory
 
   This pass is for transactional memory support.
-  It is located in trans-mem.c and is described by
+  It is located in :samp:`trans-mem.c` and is described by
   ``pass_ipa_tm``.
 
 * IPA lower emulated TLS
 
   This pass lowers thread-local storage (TLS) operations
   to emulation functions provided by libgcc.
-  It is located in tree-emutls.c and is described by
+  It is located in :samp:`tree-emutls.c` and is described by
   ``pass_ipa_lower_emutls``.
 
 .. _regular-ipa-passes:
@@ -142,13 +142,13 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   This pass performs various optimizations involving symbol visibility
   with :option:`-fwhole-program`, including symbol privatization,
   discovering local functions, and dismantling comdat groups.  It is
-  located in ipa-visibility.c and is described by
+  located in :samp:`ipa-visibility.c` and is described by
   ``pass_ipa_whole_program_visibility``.
 
 * IPA profile
 
   The IPA profile pass propagates profiling frequencies across the call
-  graph.  It is located in ipa-profile.c and is described by
+  graph.  It is located in :samp:`ipa-profile.c` and is described by
   ``pass_ipa_profile``.
 
 * IPA identical code folding
@@ -156,21 +156,21 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   This is the inter-procedural identical code folding pass.
   The goal of this transformation is to discover functions
   and read-only variables that have exactly the same semantics.  It is
-  located in ipa-icf.c and is described by ``pass_ipa_icf``.
+  located in :samp:`ipa-icf.c` and is described by ``pass_ipa_icf``.
 
 * IPA devirtualization
 
   This pass performs speculative devirtualization based on the type
   inheritance graph.  When a polymorphic call has only one likely target
   in the unit, it is turned into a speculative call. It is located in
-  ipa-devirt.c and is described by ``pass_ipa_devirt``.
+  :samp:`ipa-devirt.c` and is described by ``pass_ipa_devirt``.
 
 * IPA constant propagation
 
   The goal of this pass is to discover functions that are always invoked
   with some arguments with the same known constant values and to modify
   the functions accordingly.  It can also do partial specialization and
-  type-based devirtualization.  It is located in ipa-cp.c and is
+  type-based devirtualization.  It is located in :samp:`ipa-cp.c` and is
   described by ``pass_ipa_cp``.
 
 * IPA scalar replacement of aggregates
@@ -179,14 +179,14 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   representing part of the original, turning those passed by reference
   into new ones which pass the value directly.  It also removes unused
   function return values and unused function parameters.  This pass is
-  located in ipa-sra.c and is described by ``pass_ipa_sra``.
+  located in :samp:`ipa-sra.c` and is described by ``pass_ipa_sra``.
 
 * IPA constructor/destructor merge
 
   This pass merges multiple constructors and destructors for static
   objects into single functions.  It's only run at LTO time unless the
   target doesn't support constructors and destructors natively.  The
-  pass is located in ipa.c and is described by
+  pass is located in :samp:`ipa.c` and is described by
   ``pass_ipa_cdtor_merge``.
 
 * IPA function summary
@@ -195,7 +195,7 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   It collects estimates of function body size, execution time, and frame
   size for each function.  It also estimates information about function
   calls: call statement size, time and how often the parameters change
-  for each call.  It is located in ipa-fnsummary.c and is
+  for each call.  It is located in :samp:`ipa-fnsummary.c` and is
   described by ``pass_ipa_fn_summary``.
 
 * IPA inline
@@ -205,7 +205,7 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   ordered in increasing badness, bounded by unit growth parameters.
   Unreachable functions are removed from the call graph.  Functions called
   once and not exported from the unit are inlined.  This pass is located in
-  ipa-inline.c and is described by ``pass_ipa_inline``.
+  :samp:`ipa-inline.c` and is described by ``pass_ipa_inline``.
 
 * IPA pure/const analysis
 
@@ -213,32 +213,32 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   pure ( ``DECL_PURE_P`` ).  The per-function information is produced
   by ``pure_const_generate_summary``, then the global information is computed
   by performing a transitive closure over the call graph.   It is located in
-  ipa-pure-const.c and is described by ``pass_ipa_pure_const``.
+  :samp:`ipa-pure-const.c` and is described by ``pass_ipa_pure_const``.
 
 * IPA free function summary
 
   This pass is a regular IPA pass when argument ``small_p`` is false.
   It releases inline function summaries and call summaries.
-  It is located in ipa-fnsummary.c and is described by
+  It is located in :samp:`ipa-fnsummary.c` and is described by
   ``pass_ipa_free_fn_summary``.
 
 * IPA reference
 
   This pass gathers information about how variables whose scope is
   confined to the compilation unit are used.  It is located in
-  ipa-reference.c and is described by ``pass_ipa_reference``.
+  :samp:`ipa-reference.c` and is described by ``pass_ipa_reference``.
 
 * IPA single use
 
   This pass checks whether variables are used by a single function.
-  It is located in ipa.c and is described by
+  It is located in :samp:`ipa.c` and is described by
   ``pass_ipa_single_use``.
 
 * IPA comdats
 
   This pass looks for static symbols that are used exclusively
   within one comdat group, and moves them into that comdat group. It is
-  located in ipa-comdats.c and is described by
+  located in :samp:`ipa-comdats.c` and is described by
   ``pass_ipa_comdats``.
 
 .. _late-ipa-passes:
@@ -255,7 +255,7 @@ partitioning and thus see just parts of the compiled unit.
 * Materialize all clones
 
   Once all functions from compilation unit are in memory, produce all clones
-  and update all calls.  It is located in ipa.c and is described by
+  and update all calls.  It is located in :samp:`ipa.c` and is described by
   ``pass_materialize_all_clones``.
 
 * IPA points-to analysis
@@ -267,6 +267,6 @@ partitioning and thus see just parts of the compiled unit.
 
   This is the OpenMP constructs' SIMD clone pass.  It creates the appropriate
   SIMD clones for functions tagged as elemental SIMD functions.
-  It is located in omp-simd-clone.c and is described by
+  It is located in :samp:`omp-simd-clone.c` and is described by
   ``pass_omp_simd_clone``.
 

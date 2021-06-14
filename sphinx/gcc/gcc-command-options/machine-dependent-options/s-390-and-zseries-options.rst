@@ -16,7 +16,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
 
   Use (do not use) the hardware floating-point instructions and registers
   for floating-point operations.  When :option:`-msoft-float` is specified,
-  functions in libgcc.a are used to perform floating-point
+  functions in :samp:`libgcc.a` are used to perform floating-point
   operations.  When :option:`-mhard-float` is specified, the compiler
   generates IEEE floating-point instructions.  This is the default.
 
@@ -24,7 +24,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
 
   Use (do not use) the hardware decimal-floating-point instructions for
   decimal-floating-point operations.  When :option:`-mno-hard-dfp` is
-  specified, functions in libgcc.a are used to perform
+  specified, functions in :samp:`libgcc.a` are used to perform
   decimal-floating-point operations.  When :option:`-mhard-dfp` is
   specified, the compiler generates decimal-floating-point hardware
   instructions.  This is the default for :option:`-march`:samp:`=z9-ec` or higher.
@@ -138,7 +138,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   In addition to the GCC low-level builtins :option:`-mzvector` enables
   a set of builtins added for compatibility with AltiVec-style
   implementations like Power and Cell.  In order to make use of these
-  builtins the header file vecintrin.h needs to be included.
+  builtins the header file :samp:`vecintrin.h` needs to be included.
   :option:`-mzvector` is disabled by default.
 
 .. option:: -mmvcle, -mno-mvcle

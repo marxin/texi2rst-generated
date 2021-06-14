@@ -141,7 +141,7 @@ Operand Iterators And Access Routines
 
 .. index:: Operand Access Routines
 
-Operands are collected by tree-ssa-operands.c.  They are stored
+Operands are collected by :samp:`tree-ssa-operands.c`.  They are stored
 inside each statement's annotation and can be accessed through either the
 operand iterators or an access routine.
 
@@ -209,7 +209,7 @@ How to choose the appropriate iterator:
 
 * Determine which operands you wish to use, and specify the flags of
   those you are interested in.  They are documented in
-  tree-ssa-operands.h:
+  :samp:`tree-ssa-operands.h`:
 
   .. code-block:: c++
 
@@ -259,7 +259,7 @@ aren't using operand pointers, use and defs flags can be mixed.
 ( ``SSA_OP_VUSE`` ).
 
 There are many examples in the code, in addition to the documentation
-in tree-ssa-operands.h and ssa-iterators.h.
+in :samp:`tree-ssa-operands.h` and :samp:`ssa-iterators.h`.
 
 There are also a couple of variants on the stmt iterators regarding PHI
 nodes.

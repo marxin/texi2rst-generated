@@ -79,7 +79,7 @@ The syntax is as follows:
   ])
 
 This definition causes the equivalent of the following C code to appear
-in insn-constants.h:
+in :samp:`insn-constants.h`:
 
 .. code-block:: c++
 
@@ -114,9 +114,9 @@ you like.  The above example is directly equivalent to:
 
 Splitting the enumeration helps to improve the modularity of each
 individual ``.md`` file.  For example, if a port defines its
-synchronization instructions in a separate sync.md file,
+synchronization instructions in a separate :samp:`sync.md` file,
 it is convenient to define all synchronization-specific enumeration
-values in sync.md rather than in the main .md file.
+values in :samp:`sync.md` rather than in the main :samp:`.md` file.
 
 Some enumeration names have special significance to GCC:
 

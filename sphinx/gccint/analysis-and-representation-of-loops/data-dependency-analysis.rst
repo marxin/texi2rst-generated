@@ -11,8 +11,8 @@ Data Dependency Analysis
 .. index:: Data Dependency Analysis
 
 The code for the data dependence analysis can be found in
-tree-data-ref.c and its interface and data structures are
-described in tree-data-ref.h.  The function that computes the
+:samp:`tree-data-ref.c` and its interface and data structures are
+described in :samp:`tree-data-ref.h`.  The function that computes the
 data dependences for all the array and pointer references for a given
 loop is ``compute_data_dependences_for_loop``.  This function is
 currently used by the linear loop transform and the vectorization

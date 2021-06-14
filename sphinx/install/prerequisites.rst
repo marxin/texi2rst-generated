@@ -128,8 +128,8 @@ Perl version between 5.6.1 and 5.6.24
   Necessary when targeting Solaris 2 with Solaris :command:`ld` and not using
   :option:`--disable-symvers`.
 
-  Necessary when regenerating Makefile dependencies in libiberty.
-  Necessary when regenerating libiberty/functions.texi.
+  Necessary when regenerating :samp:`Makefile` dependencies in libiberty.
+  Necessary when regenerating :samp:`libiberty/functions.texi`.
   Necessary when generating manpages from Texinfo manuals.
   Used by various scripts to generate some files included in the source
   repository (mainly Unicode-related and rarely changing) from source
@@ -148,7 +148,7 @@ install the libraries.
 
 GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
   Necessary to build GCC.  If a GMP source distribution is found in a
-  subdirectory of your GCC sources named gmp, it will be built
+  subdirectory of your GCC sources named :samp:`gmp`, it will be built
   together with GCC.  Alternatively, if GMP is already installed but it
   is not in your library search path, you will have to configure with the
   :option:`--with-gmp` configure option.  See also :option:`--with-gmp-lib`
@@ -159,7 +159,7 @@ GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
 MPFR Library version 3.1.0 (or later)
   Necessary to build GCC.  It can be downloaded from
   https://www.mpfr.org.  If an MPFR source distribution is found
-  in a subdirectory of your GCC sources named mpfr, it will be
+  in a subdirectory of your GCC sources named :samp:`mpfr`, it will be
   built together with GCC.  Alternatively, if MPFR is already installed
   but it is not in your default library search path, the
   :option:`--with-mpfr` configure option should be used.  See also
@@ -170,7 +170,7 @@ MPFR Library version 3.1.0 (or later)
 MPC Library version 1.0.1 (or later)
   Necessary to build GCC.  It can be downloaded from
   http://www.multiprecision.org/mpc/.  If an MPC source distribution
-  is found in a subdirectory of your GCC sources named mpc, it
+  is found in a subdirectory of your GCC sources named :samp:`mpc`, it
   will be built together with GCC.  Alternatively, if MPC is already
   installed but it is not in your default library search path, the
   :option:`--with-mpc` configure option should be used.  See also
@@ -182,7 +182,7 @@ isl Library version 0.15 or later.
   Necessary to build GCC with the Graphite loop optimizations.
   It can be downloaded from https://gcc.gnu.org/pub/gcc/infrastructure/.
   If an isl source distribution is found
-  in a subdirectory of your GCC sources named isl, it will be
+  in a subdirectory of your GCC sources named :samp:`isl`, it will be
   built together with GCC.  Alternatively, the :option:`--with-isl` configure
   option should be used if isl is not installed in your default library
   search path.
@@ -196,16 +196,16 @@ Tools/packages necessary for modifying GCC
 ==========================================
 
 autoconf version 2.69, GNU m4 version 1.4.6 (or later)
-  Necessary when modifying configure.ac, aclocal.m4, etc.
-  to regenerate configure and config.in files.
+  Necessary when modifying :samp:`configure.ac`, :samp:`aclocal.m4`, etc.
+  to regenerate :samp:`configure` and :samp:`config.in` files.
 
 automake version 1.15.1
-  Necessary when modifying a Makefile.am file to regenerate its
-  associated Makefile.in.
+  Necessary when modifying a :samp:`Makefile.am` file to regenerate its
+  associated :samp:`Makefile.in`.
 
-  Much of GCC does not use automake, so directly edit the Makefile.in
-  file.  Specifically this applies to the gcc, intl,
-  libcpp, libiberty, libobjc directories as well
+  Much of GCC does not use automake, so directly edit the :samp:`Makefile.in`
+  file.  Specifically this applies to the :samp:`gcc`, :samp:`intl`,
+  :samp:`libcpp`, :samp:`libiberty`, :samp:`libobjc` directories as well
   as any of their subdirectories.
 
   For directories that use automake, GCC requires the latest release in
@@ -214,12 +214,12 @@ automake version 1.15.1
   to the latest released version.
 
 gettext version 0.14.5 (or later)
-  Needed to regenerate gcc.pot.
+  Needed to regenerate :samp:`gcc.pot`.
 
 gperf version 2.7.2 (or later)
   Necessary when modifying :command:`gperf` input files, e.g.
-  gcc/cp/cfns.gperf to regenerate its associated header file, e.g.
-  gcc/cp/cfns.h.
+  :samp:`gcc/cp/cfns.gperf` to regenerate its associated header file, e.g.
+  :samp:`gcc/cp/cfns.h`.
 
 DejaGnu 1.4.4, Expect, Tcl
   Necessary to run the GCC testsuite; see the section on testing for
@@ -230,23 +230,23 @@ DejaGnu 1.4.4, Expect, Tcl
          git grep 'compatibility with earlier Tcl releases'
 
 autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
-  Necessary to regenerate fixinc/fixincl.x from
-  fixinc/inclhack.def and fixinc/\*.tpl.
+  Necessary to regenerate :samp:`fixinc/fixincl.x` from
+  :samp:`fixinc/inclhack.def` and :samp:`fixinc/*.tpl`.
 
-  Necessary to run :samp:`make check` for fixinc.
+  Necessary to run :samp:`make check` for :samp:`fixinc`.
 
-  Necessary to regenerate the top level Makefile.in file from
-  Makefile.tpl and Makefile.def.
+  Necessary to regenerate the top level :samp:`Makefile.in` file from
+  :samp:`Makefile.tpl` and :samp:`Makefile.def`.
 
 Flex version 2.5.4 (or later)
-  Necessary when modifying \*.l files.
+  Necessary when modifying :samp:`*.l` files.
 
   Necessary to build GCC during development because the generated output
   files are not included in the version-controlled source repository.
   They are included in releases.
 
 Texinfo version 4.7 (or later)
-  Necessary for running :command:`makeinfo` when modifying \*.texi
+  Necessary for running :command:`makeinfo` when modifying :samp:`*.texi`
   files to test your changes.
 
   Necessary for running :command:`make dvi` or :command:`make pdf` to
@@ -263,8 +263,8 @@ Tex (any working version)
   DVI or PDF files, respectively.
 
 Sphinx version 1.0 (or later)
-  Necessary to regenerate jit/docs/_build/texinfo from the .rst
-  files in the directories below jit/docs.
+  Necessary to regenerate :samp:`jit/docs/_build/texinfo` from the :samp:`.rst`
+  files in the directories below :samp:`jit/docs`.
 
 git (any version) SSH (any version)
   Necessary to access the source repository.  Public releases and weekly

@@ -48,7 +48,7 @@ to make tree dumps more closely follow the format accepted by the GIMPLE
 parser.
 
 Example DejaGnu tests of GIMPLE can be seen in the source tree at
-gcc/testsuite/gcc.dg/gimplefe-\*.c.
+:samp:`gcc/testsuite/gcc.dg/gimplefe-*.c`.
 
 The ``__GIMPLE`` parser is integrated with the C tokenizer and
 preprocessor, so it should be possible to use macros to build out

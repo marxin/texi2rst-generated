@@ -26,19 +26,19 @@ the relevant compiler front-end program (e.g., :command:`f951` for
 Fortran) for each file in the source code, and then calls the assembler
 and linker as appropriate to produce the compiled output.  In a copy of
 GCC which has been compiled with Fortran language support enabled,
-:command:`gcc` will recognize files with .f, .for, .ftn,
-.f90, .f95, .f03 and .f08 extensions as
+:command:`gcc` will recognize files with :samp:`.f`, :samp:`.for`, :samp:`.ftn`,
+:samp:`.f90`, :samp:`.f95`, :samp:`.f03` and :samp:`.f08` extensions as
 Fortran source code, and compile it accordingly.  A :command:`gfortran`
 driver program is also provided, which is identical to :command:`gcc`
 except that it automatically links the Fortran runtime libraries into the
 compiled program.
 
-Source files with .f, .for, .fpp, .ftn, .F,
-.FOR, .FPP, and .FTN extensions are treated as fixed form.
-Source files with .f90, .f95, .f03, .f08,
-.F90, .F95, .F03 and .F08 extensions are
+Source files with :samp:`.f`, :samp:`.for`, :samp:`.fpp`, :samp:`.ftn`, :samp:`.F`,
+:samp:`.FOR`, :samp:`.FPP`, and :samp:`.FTN` extensions are treated as fixed form.
+Source files with :samp:`.f90`, :samp:`.f95`, :samp:`.f03`, :samp:`.f08`,
+:samp:`.F90`, :samp:`.F95`, :samp:`.F03` and :samp:`.F08` extensions are
 treated as free form.  The capitalized versions of either form are run
-through preprocessing.  Source files with the lower case .fpp
+through preprocessing.  Source files with the lower case :samp:`.fpp`
 extension are also run through preprocessing.
 
 This manual specifically documents the Fortran front end, which handles

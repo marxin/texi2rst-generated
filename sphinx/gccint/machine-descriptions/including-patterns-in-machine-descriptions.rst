@@ -14,7 +14,7 @@ Including Patterns in Machine Descriptions.
 
 The ``include`` pattern tells the compiler tools where to
 look for patterns that are in files other than in the file
-.md.  This is used only at build time and there is no preprocessing allowed.
+:samp:`.md`.  This is used only at build time and there is no preprocessing allowed.
 
 It looks like:
 
@@ -30,8 +30,8 @@ For example:
   (include "filestuff")
 
 Where :samp:`{pathname}` is a string that specifies the location of the file,
-specifies the include file to be in gcc/config/target/filestuff.  The
-directory gcc/config/target is regarded as the default directory.
+specifies the include file to be in :samp:`gcc/config/target/filestuff`.  The
+directory :samp:`gcc/config/target` is regarded as the default directory.
 
 Machine descriptions may be split up into smaller more manageable subsections
 and placed into subdirectories.
@@ -42,7 +42,7 @@ By specifying:
 
   (include "BOGUS/filestuff")
 
-the include file is specified to be in gcc/config/ :samp:`{target}` /BOGUS/filestuff.
+the include file is specified to be in :samp:`gcc/config/ :samp:`{target}` /BOGUS/filestuff`.
 
 Specifying an absolute path for the include file such as;
 

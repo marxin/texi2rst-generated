@@ -10,8 +10,8 @@ Support for testing gcov
 
 Language-independent support for testing :command:`gcov`, and for checking
 that branch profiling produces expected values, is provided by the
-expect file lib/gcov.exp.  :command:`gcov` tests also rely on procedures
-in lib/gcc-dg.exp to compile and run the test program.  A typical
+expect file :samp:`lib/gcov.exp`.  :command:`gcov` tests also rely on procedures
+in :samp:`lib/gcc-dg.exp` to compile and run the test program.  A typical
 :command:`gcov` test contains the following DejaGnu commands within comments:
 
 .. code-block:: c++

@@ -17,7 +17,7 @@ The language front end is invoked only once, via
 front end may use any intermediate language representation deemed
 appropriate.  The C front end uses GENERIC trees (see :ref:`generic`), plus
 a double handful of language specific tree codes defined in
-c-common.def.  The Fortran front end uses a completely different
+:samp:`c-common.def`.  The Fortran front end uses a completely different
 private representation.
 
 .. index:: GIMPLE

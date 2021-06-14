@@ -152,7 +152,7 @@ This describes the overall framework of an assembly file.
 
   Output assembly directives to switch to section :samp:`{name}`.  The section
   should have attributes as specified by :samp:`{flags}`, which is a bit mask
-  of the ``SECTION_*`` flags defined in output.h.  If :samp:`{decl}`
+  of the ``SECTION_*`` flags defined in :samp:`output.h`.  If :samp:`{decl}`
   is non-NULL, it is the ``VAR_DECL`` or ``FUNCTION_DECL`` with which
   this section is associated.
 
@@ -367,7 +367,7 @@ Output of Data
   assembler for grouping arithmetic expressions.  If not overridden, they
   default to normal parentheses, which is correct for most assemblers.
 
-These macros are provided by real.h for writing the definitions
+These macros are provided by :samp:`real.h` for writing the definitions
 of ``ASM_OUTPUT_DOUBLE`` and the like:
 
 .. c:macro:: REAL_VALUE_TO_TARGET_SINGLE (x, l)
@@ -441,7 +441,7 @@ outputting a single uninitialized variable.
   is the alignment specified as the number of bits.
 
   Try to use function ``asm_output_aligned_bss`` defined in file
-  varasm.c when defining this macro.  If unable, use the expression
+  :samp:`varasm.c` when defining this macro.  If unable, use the expression
   ``assemble_name (stream, name)`` to output the name itself;
   before and after that, output the additional assembler syntax for defining
   the name, and a newline.
@@ -534,7 +534,7 @@ This is about outputting labels.
 
   A C string containing the appropriate assembler directive to specify the
   size of a symbol, without any arguments.  On systems that use ELF, the
-  default (in config/elfos.h) is :samp:`"\\t.size\\t"`; on other
+  default (in :samp:`config/elfos.h`) is :samp:`"\\t.size\\t"`; on other
   systems, the default is not to define this macro.
 
   Define this macro only if it is correct to use the default definitions
@@ -583,7 +583,7 @@ This is about outputting labels.
 
   A C string containing the appropriate assembler directive to specify the
   type of a symbol, without any arguments.  On systems that use ELF, the
-  default (in config/elfos.h) is :samp:`"\\t.type\\t"`; on other
+  default (in :samp:`config/elfos.h`) is :samp:`"\\t.type\\t"`; on other
   systems, the default is not to define this macro.
 
   Define this macro only if it is correct to use the default definition of
@@ -595,7 +595,7 @@ This is about outputting labels.
 
   A C string which specifies (using ``printf`` syntax) the format of
   the second operand to ``TYPE_ASM_OP``.  On systems that use ELF, the
-  default (in config/elfos.h) is :samp:`"@%s"`; on other systems,
+  default (in :samp:`config/elfos.h`) is :samp:`"@%s"`; on other systems,
   the default is not to define this macro.
 
   Define this macro only if it is correct to use the default definition of
@@ -780,7 +780,7 @@ This is about outputting labels.
   A preprocessor constant expression which evaluates to true if the target
   supports weak symbols.
 
-  If you don't define this macro, defaults.h provides a default
+  If you don't define this macro, :samp:`defaults.h` provides a default
   definition.  If either ``ASM_WEAKEN_LABEL`` or ``ASM_WEAKEN_DECL``
   is defined, the default definition is :samp:`1`; otherwise, it is :samp:`0`.
 
@@ -788,7 +788,7 @@ This is about outputting labels.
 
   A C expression which evaluates to true if the target supports weak symbols.
 
-  If you don't define this macro, defaults.h provides a default
+  If you don't define this macro, :samp:`defaults.h` provides a default
   definition.  The default definition is :samp:`(SUPPORTS_WEAK)`.  Define
   this macro if you want to control weak symbol support with a compiler
   flag such as :option:`-melf`.
@@ -807,7 +807,7 @@ This is about outputting labels.
   A C expression which evaluates to true if the target supports one-only
   semantics.
 
-  If you don't define this macro, varasm.c provides a default
+  If you don't define this macro, :samp:`varasm.c` provides a default
   definition.  If ``MAKE_DECL_ONE_ONLY`` is defined, the default
   definition is :samp:`1`; otherwise, it is :samp:`0`.  Define this macro if
   you want to control one-only symbol support with a compiler flag, or if
@@ -1081,7 +1081,7 @@ pointers to constructors (or destructors), followed by a function
 pointer containing zero.
 
 Depending on the operating system and its executable file format, either
-crtstuff.c or libgcc2.c traverses these lists at startup
+:samp:`crtstuff.c` or :samp:`libgcc2.c` traverses these lists at startup
 time and exit time.  Constructors are called in reverse order of the
 list; destructors in forward order.
 
@@ -1094,16 +1094,16 @@ the constructor section to point to that function.  The linker
 accumulates all these words into one contiguous :samp:`.ctors` section.
 Termination functions are handled similarly.
 
-This method will be chosen as the default by target-def.h if
+This method will be chosen as the default by :samp:`target-def.h` if
 ``TARGET_ASM_NAMED_SECTION`` is defined.  A target that does not
 support arbitrary sections, but does support special designated
 constructor and destructor sections may define ``CTORS_SECTION_ASM_OP``
 and ``DTORS_SECTION_ASM_OP`` to achieve the same effect.
 
 When arbitrary sections are available, there are two variants, depending
-upon how the code in crtstuff.c is called.  On systems that
+upon how the code in :samp:`crtstuff.c` is called.  On systems that
 support a :dfn:`.init` section which is executed at program startup,
-parts of crtstuff.c are compiled into that section.  The
+parts of :samp:`crtstuff.c` are compiled into that section.  The
 program is linked by the :command:`gcc` driver like this:
 
 .. code-block:: c++
@@ -1111,13 +1111,13 @@ program is linked by the :command:`gcc` driver like this:
   ld -o output_file crti.o crtbegin.o ... -lgcc crtend.o crtn.o
 
 The prologue of a function ( ``__init`` ) appears in the ``.init``
-section of crti.o; the epilogue appears in crtn.o.  Likewise
+section of :samp:`crti.o`; the epilogue appears in :samp:`crtn.o`.  Likewise
 for the function ``__fini`` in the :dfn:`.fini` section.  Normally these
 files are provided by the operating system or by the GNU C library, but
 are provided by GCC for a few targets.
 
-The objects crtbegin.o and crtend.o are (for most targets)
-compiled from crtstuff.c.  They contain, among other things, code
+The objects :samp:`crtbegin.o` and :samp:`crtend.o` are (for most targets)
+compiled from :samp:`crtstuff.c`.  They contain, among other things, code
 fragments within the ``.init`` and ``.fini`` sections that branch
 to routines in the ``.text`` section.  The linker will pull all parts
 of a section together, which results in a complete ``__init`` function
@@ -1131,7 +1131,7 @@ If no init section is available, when GCC compiles any function called
 entry point by the language front end calling ``expand_main_function`` ),
 it inserts a procedure call to ``__main`` as the first executable code
 after the function prologue.  The ``__main`` function is defined
-in libgcc2.c and runs the global constructors.
+in :samp:`libgcc2.c` and runs the global constructors.
 
 In file formats that don't support arbitrary sections, there are again
 two variants.  In the simplest variant, the GNU linker (GNU ``ld`` )
@@ -1158,7 +1158,7 @@ pretends to be the linker, for use with GCC; it does its job by running
 the ordinary linker, but also arranges to include the vectors of
 initialization and termination functions.  These functions are called
 via ``__main`` as described above.  In order to use this method,
-``use_collect2`` must be defined in the target in config.gcc.
+``use_collect2`` must be defined in the target in :samp:`config.gcc`.
 
 .. _macros-for-initialization:
 
@@ -1174,7 +1174,7 @@ and termination functions:
   operation to identify the following data as initialization code.  If not
   defined, GCC will assume such a section does not exist.  When you are
   using special sections for initialization and termination functions, this
-  macro also controls how crtstuff.c and libgcc2.c arrange to
+  macro also controls how :samp:`crtstuff.c` and :samp:`libgcc2.c` arrange to
   run the initialization functions.
 
 .. c:macro:: HAS_INIT_SECTION
@@ -1490,8 +1490,8 @@ being output.
 
   If defined, C string expressions to be used for the :samp:`%R`, :samp:`%L`,
   :samp:`%U`, and :samp:`%I` options of ``asm_fprintf`` (see
-  final.c).  These are useful when a single md file must
-  support multiple assembler formats.  In that case, the various tm.h
+  :samp:`final.c`).  These are useful when a single :samp:`md` file must
+  support multiple assembler formats.  In that case, the various :samp:`tm.h`
   files can define these macros differently.
 
 .. c:macro:: ASM_FPRINTF_EXTENSIONS (file, argptr, format)
@@ -1705,7 +1705,7 @@ region.
   If defined, a C string constant for the name of the section containing
   exception handling frame unwind information.  If not defined, GCC will
   provide a default definition if the target supports named sections.
-  crtstuff.c uses this macro to switch to the appropriate section.
+  :samp:`crtstuff.c` uses this macro to switch to the appropriate section.
 
   You should define this symbol if your target supports DWARF 2 frame
   unwind information and the default definition does not work.
@@ -1717,7 +1717,7 @@ region.
   labels and generate code to register the frames.
 
   This might be necessary, for instance, if the system linker will not
-  place the eh_frames in-between the sentinals from crtstuff.c,
+  place the eh_frames in-between the sentinals from :samp:`crtstuff.c`,
   or if the system linker does garbage collection and sections cannot
   be marked as not to be collected.
 

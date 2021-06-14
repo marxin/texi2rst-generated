@@ -421,7 +421,7 @@ registers and to main memory.
   condition code.  This is best handled by normally generating the
   instruction that does not set the condition code, and making a pattern
   that both performs the arithmetic and sets the condition code register.
-  For examples, search for :samp:`addcc` and :samp:`andcc` in sparc.md.
+  For examples, search for :samp:`addcc` and :samp:`andcc` in :samp:`sparc.md`.
 
   .. index:: pc
 

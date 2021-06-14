@@ -191,7 +191,7 @@ To use a standard subroutine, define the following macro.  In addition,
 you must make sure that the instructions in a trampoline fill an entire
 cache line with identical instructions, or else ensure that the
 beginning of the trampoline code is always aligned at the same point in
-its cache line.  Look in m68k.h as a guide.
+its cache line.  Look in :samp:`m68k.h` as a guide.
 
 .. c:macro:: TRANSFER_FROM_TRAMPOLINE
 

@@ -21,8 +21,8 @@ This variable therefore uniquely enumerates each line in the translation
 unit.  With some simple infrastructure, it is straight forward to map
 from this to the original source file and line number pair, saving space
 whenever line number information needs to be saved.  The code the
-implements this mapping lies in the files line-map.c and
-line-map.h.
+implements this mapping lies in the files :samp:`line-map.c` and
+:samp:`line-map.h`.
 
 Command-line macros and assertions are implemented by pushing a buffer
 containing the right hand side of an equivalent ``#define`` or

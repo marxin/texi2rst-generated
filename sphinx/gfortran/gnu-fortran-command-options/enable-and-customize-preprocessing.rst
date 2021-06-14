@@ -29,8 +29,8 @@ information on preprocessing in :command:`gfortran`.
   .. index:: preprocessor, disable
 
   Enable preprocessing. The preprocessor is automatically invoked if
-  the file extension is .fpp, .FPP,  .F, .FOR,
-  .FTN, .F90, .F95, .F03 or .F08. Use
+  the file extension is :samp:`.fpp`, :samp:`.FPP`,  :samp:`.F`, :samp:`.FOR`,
+  :samp:`.FTN`, :samp:`.F90`, :samp:`.F95`, :samp:`.F03` or :samp:`.F08`. Use
   this option to manually enable preprocessing of any kind of Fortran file.
 
   To disable preprocessing of files with any of the above listed extensions,
@@ -54,7 +54,7 @@ information on preprocessing in :command:`gfortran`.
   directives for all the macros defined during the execution of the
   preprocessor, including predefined macros. This gives you a way
   of finding out what is predefined in your version of the preprocessor.
-  Assuming you have no file foo.f90, the command
+  Assuming you have no file :samp:`foo.f90`, the command
 
   .. code-block:: fortran
 

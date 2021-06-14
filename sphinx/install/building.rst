@@ -37,14 +37,14 @@ If you build GCC on a BSD system using a directory stored in an old System
 V file system, problems may occur in running :command:`fixincludes` if the
 System V file system doesn't support symbolic links.  These problems
 result in a failure to fix the declaration of ``size_t`` in
-sys/types.h.  If you find that ``size_t`` is a signed type and
+:samp:`sys/types.h`.  If you find that ``size_t`` is a signed type and
 that type mismatches occur, this could be the cause.
 
 The solution is not to use such a directory for building GCC.
 
 Similarly, when building from the source repository or snapshots, or if you modify
-\*.l files, you need the Flex lexical analyzer generator
-installed.  If you do not modify \*.l files, releases contain
+:samp:`*.l` files, you need the Flex lexical analyzer generator
+installed.  If you do not modify :samp:`*.l` files, releases contain
 the Flex-generated files and you do not need Flex installed to build
 them.  There is still one Flex-based lexical analyzer (part of the
 build machinery, not of GCC itself) that is used even if you only

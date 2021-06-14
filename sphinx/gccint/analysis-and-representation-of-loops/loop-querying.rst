@@ -11,7 +11,7 @@ Loop querying
 .. index:: Loop querying
 
 The functions to query the information about loops are declared in
-cfgloop.h.  Some of the information can be taken directly from
+:samp:`cfgloop.h`.  Some of the information can be taken directly from
 the structures.  ``loop_father`` field of each basic block contains
 the innermost loop to that the block belongs.  The most useful fields of
 loop structure (that are kept up-to-date at all times) are:

@@ -9,11 +9,11 @@ Plugin API
 **********
 
 Plugins are activated by the compiler at specific events as defined in
-gcc-plugin.h.  For each event of interest, the plugin should
+:samp:`gcc-plugin.h`.  For each event of interest, the plugin should
 call ``register_callback`` specifying the name of the event and
 address of the callback function that will handle that event.
 
-The header gcc-plugin.h must be the first gcc header to be included.
+The header :samp:`gcc-plugin.h` must be the first gcc header to be included.
 
 Plugin license check
 ^^^^^^^^^^^^^^^^^^^^
@@ -30,7 +30,7 @@ and exit with the error message:
   compilation terminated
 
 The declared type of the symbol should be int, to match a forward declaration
-in gcc-plugin.h that suppresses C++ mangling.  It does not need to be in
+in :samp:`gcc-plugin.h` that suppresses C++ mangling.  It does not need to be in
 any allocated section, though.  The compiler merely asserts that
 the symbol exists in the global scope.  Something like this is enough:
 
@@ -92,7 +92,7 @@ such structure and compare them field by field. It can be used by the
 plugin's ``plugin_init`` function.
 
 The version of GCC used to compile the plugin can be found in the symbol
-``gcc_version`` defined in the header plugin-version.h. The
+``gcc_version`` defined in the header :samp:`plugin-version.h`. The
 recommended version check to perform looks like
 
 .. code-block:: c++
@@ -199,7 +199,7 @@ and the ``user_data`` is specific.
 
 When the PLUGIN_PRAGMAS event is triggered (with a null pointer as
 data from GCC), plugins may register their own pragmas.  Notice that
-pragmas are not available from lto1, so plugins used with
+pragmas are not available from :samp:`lto1`, so plugins used with
 ``-flto`` option to GCC during link-time optimization cannot use
 pragmas and do not even see functions like ``c_register_pragma`` or
 ``pragma_lex``.

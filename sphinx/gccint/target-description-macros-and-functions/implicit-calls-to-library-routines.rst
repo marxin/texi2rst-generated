@@ -31,7 +31,7 @@ Here is an explanation of implicit calls to library routines.
 
   This hook should declare additional library routines or rename
   existing ones, using the functions ``set_optab_libfunc`` and
-  ``init_one_libfunc`` defined in optabs.c.
+  ``init_one_libfunc`` defined in :samp:`optabs.c`.
   ``init_optabs`` calls this macro after initializing all the normal
   library routines.
 
@@ -42,8 +42,8 @@ Here is an explanation of implicit calls to library routines.
   If false (the default), internal library routines start with two
   underscores.  If set to true, these routines start with ``__gnu_``
   instead.  E.g., ``__muldi3`` changes to ``__gnu_muldi3``.  This
-  currently only affects functions defined in libgcc2.c.  If this
-  is set to true, the tm.h file must also
+  currently only affects functions defined in :samp:`libgcc2.c`.  If this
+  is set to true, the :samp:`tm.h` file must also
   ``#define LIBGCC2_GNU_PREFIX``.
 
 .. c:macro:: FLOAT_LIB_COMPARE_RETURNS_BOOL (mode, comparison)
@@ -65,7 +65,7 @@ Here is an explanation of implicit calls to library routines.
   and 2 to indicate that the first operand is greater than the second.
   If this macro evaluates to ``false`` the comparison functions return
   -1, 0, and 1 instead of 0, 1, and 2.  If the target uses the routines
-  in libgcc.a, you do not need to define this macro.
+  in :samp:`libgcc.a`, you do not need to define this macro.
 
 .. c:macro:: TARGET_HAS_NO_HW_DIVIDE
 
@@ -84,7 +84,7 @@ Here is an explanation of implicit calls to library routines.
   The value of ``EDOM`` on the target machine, as a C integer constant
   expression.  If you don't define this macro, GCC does not attempt to
   deposit the value of ``EDOM`` into ``errno`` directly.  Look in
-  /usr/include/errno.h to find the value of ``EDOM`` on your
+  :samp:`/usr/include/errno.h` to find the value of ``EDOM`` on your
   system.
 
   If you do not define ``TARGET_EDOM``, then compiled code reports

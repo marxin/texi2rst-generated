@@ -18,7 +18,7 @@ an object file for the single architecture that GCC was built to
 target.  Apple's GCC on Darwin does create 'fat' files if multiple
 :option:`-arch` options are used; it does so by running the compiler or
 linker multiple times and joining the results together with
-lipo.
+:samp:`lipo`.
 
 The subtype of the file created (like :samp:`ppc7400` or :samp:`ppc970` or
 :samp:`i686`) is determined by the flags that specify the ISA
@@ -26,10 +26,10 @@ that GCC is targeting, like :option:`-mcpu` or :option:`-march`.  The
 :option:`-force_cpusubtype_ALL` option can be used to override this.
 
 The Darwin tools vary in their behavior when presented with an ISA
-mismatch.  The assembler, as, only permits instructions to
+mismatch.  The assembler, :samp:`as`, only permits instructions to
 be used that are valid for the subtype of the file it is generating,
 so you cannot put 64-bit instructions in a :samp:`ppc750` object file.
-The linker for shared libraries, /usr/bin/libtool, fails
+The linker for shared libraries, :samp:`/usr/bin/libtool`, fails
 and prints an error if asked to create a shared library with a less
 restrictive subtype than its input files (for instance, trying to put
 a :samp:`ppc970` object file in a :samp:`ppc7400` library).  The linker
@@ -44,13 +44,13 @@ restrictive subtype of any of its input files.
   scanned in a left-to-right order.
 
   A framework directory is a directory with frameworks in it.  A
-  framework is a directory with a Headers and/or
-  PrivateHeaders directory contained directly in it that ends
-  in .framework.  The name of a framework is the name of this
-  directory excluding the .framework.  Headers associated with
+  framework is a directory with a :samp:`Headers` and/or
+  :samp:`PrivateHeaders` directory contained directly in it that ends
+  in :samp:`.framework`.  The name of a framework is the name of this
+  directory excluding the :samp:`.framework`.  Headers associated with
   the framework are found in one of those two directories, with
-  Headers being searched first.  A subframework is a framework
-  directory that is in a framework's Frameworks directory.
+  :samp:`Headers` being searched first.  A subframework is a framework
+  directory that is in a framework's :samp:`Frameworks` directory.
   Includes of subframework headers can only appear in a header of a
   framework that contains the subframework, or in a sibling subframework
   header.  Two subframeworks are siblings if they occur in the same
@@ -58,11 +58,11 @@ restrictive subtype of any of its input files.
   framework; a warning is issued if this is violated.  Currently a
   subframework cannot have subframeworks; in the future, the mechanism
   may be extended to support this.  The standard frameworks can be found
-  in /System/Library/Frameworks and
-  /Library/Frameworks.  An example include looks like
-  ``#include <Framework/header.h>``, where Framework denotes
-  the name of the framework and header.h is found in the
-  PrivateHeaders or Headers directory.
+  in :samp:`/System/Library/Frameworks` and
+  :samp:`/Library/Frameworks`.  An example include looks like
+  ``#include <Framework/header.h>``, where :samp:`Framework` denotes
+  the name of the framework and :samp:`header.h` is found in the
+  :samp:`PrivateHeaders` or :samp:`Headers` directory.
 
 .. option:: -iframeworkdir
 
@@ -118,7 +118,7 @@ restrictive subtype of any of its input files.
 .. option:: -mfix-and-continue, -ffix-and-continue, -findirect-data
 
   Generate code suitable for fast turnaround development, such as to
-  allow GDB to dynamically load .o files into already-running
+  allow GDB to dynamically load :samp:`.o` files into already-running
   programs.  :option:`-findirect-data` and :option:`-ffix-and-continue`
   are provided for backwards compatibility.
 
@@ -150,7 +150,7 @@ restrictive subtype of any of its input files.
 .. option:: -dynamiclib
 
   When passed this option, GCC produces a dynamic library instead of
-  an executable when linking, using the Darwin libtool command.
+  an executable when linking, using the Darwin :samp:`libtool` command.
 
 .. option:: -force_cpusubtype_ALL
 

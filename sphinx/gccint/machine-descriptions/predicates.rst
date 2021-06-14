@@ -84,7 +84,7 @@ Machine-Independent Predicates
 .. index:: generic predicates
 
 These are the generic predicates available to all back ends.  They are
-defined in recog.c.  The first category of predicates allow
+defined in :samp:`recog.c`.  The first category of predicates allow
 only constant, or :dfn:`immediate`, operands.
 
 .. index:: immediate_operand
@@ -354,7 +354,7 @@ by :command:`genrecog`.
 The program :command:`genpreds` is responsible for generating code to
 test predicates.  It also writes a header file containing function
 declarations for all machine-specific predicates.  It is not necessary
-to declare these predicates in :samp:`{cpu}` -protos.h.
+to declare these predicates in :samp:`:samp:`{cpu}` -protos.h`.
 
 .. Most of this node appears by itself (in a different place) even
    when the INTERNALS flag is clear.  Passages that require the internals

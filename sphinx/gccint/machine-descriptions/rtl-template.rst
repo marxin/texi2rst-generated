@@ -235,8 +235,8 @@ substitution of the operands.
       ""
       "loadm 0,0,%1,%2")
 
-  This example comes from a29k.md.  The function
-  ``load_multiple_operation`` is defined in a29k.c and checks
+  This example comes from :samp:`a29k.md`.  The function
+  ``load_multiple_operation`` is defined in :samp:`a29k.c` and checks
   that subsequent elements in the ``parallel`` are the same as the
   ``set`` in the pattern, except that they are referencing subsequent
   registers and memory locations.

@@ -14,7 +14,7 @@ Machine Modes
 
 A machine mode describes a size of data object and the representation used
 for it.  In the C code, machine modes are represented by an enumeration
-type, ``machine_mode``, defined in machmode.def.  Each RTL
+type, ``machine_mode``, defined in :samp:`machmode.def`.  Each RTL
 expression has room for a machine mode and so do certain kinds of tree
 expressions (declarations and types, to be precise).
 
@@ -347,7 +347,7 @@ arrange for the C type ``short int`` to avoid using ``HImode``.
 Very few explicit references to machine modes remain in the compiler and
 these few references will soon be removed.  Instead, the machine modes
 are divided into mode classes.  These are represented by the enumeration
-type ``enum mode_class`` defined in machmode.h.  The possible
+type ``enum mode_class`` defined in :samp:`machmode.h`.  The possible
 mode classes are:
 
 .. index:: MODE_INT
@@ -407,7 +407,7 @@ mode classes are:
 .. envvar:: MODE_CC
 
   Modes representing condition code values.  These are ``CCmode`` plus
-  any ``CC_MODE`` modes listed in the :samp:`{machine}` -modes.def.
+  any ``CC_MODE`` modes listed in the :samp:`:samp:`{machine}` -modes.def`.
   See :ref:`jump-patterns`,
   also see Condition Code.
 
@@ -482,7 +482,7 @@ named modes.
 
 .. index:: opt_mode
 
-machmode.h also defines a template class ``opt_mode<T>``
+:samp:`machmode.h` also defines a template class ``opt_mode<T>``
 that holds a ``T`` or nothing, where ``T`` can be either
 ``machine_mode`` or one of the wrapper classes above.  The main
 operations on an ``opt_mode<T>`` :samp:`{x}` are as follows:
@@ -504,7 +504,7 @@ operations on an ``opt_mode<T>`` :samp:`{x}` are as follows:
   The default constructor sets an ``opt_mode<T>`` to nothing.
 There is also a constructor that takes an initial value of type :samp:`{T}`.
 
-It is possible to use the is-a.h accessors on a ``machine_mode``
+It is possible to use the :samp:`is-a.h` accessors on a ``machine_mode``
 or machine mode wrapper :samp:`{x}` :
 
 .. index:: is_a
@@ -651,7 +651,7 @@ in the compilation process.   The third symbol cannot be overridden.
   always correct for targets whose modes have a fixed size.  Targets
   that might increase the size of a mode beyond this default should define
   ``MAX_BITSIZE_MODE_ANY_MODE`` to the actual upper limit in
-  :samp:`{machine}` -modes.def.
+  :samp:`:samp:`{machine}` -modes.def`.
 
 .. index:: byte_mode
 

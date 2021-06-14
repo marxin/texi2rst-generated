@@ -321,7 +321,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   Support :dfn:`IBM RS/6000 SP` :dfn:`Parallel Environment` (PE).  Link an
   application written to use message passing with special startup code to
   enable the application to run.  The system must have PE installed in the
-  standard location (/usr/lpp/ppe.poe/), or the specs file
+  standard location (:samp:`/usr/lpp/ppe.poe/`), or the :samp:`specs` file
   must be overridden with the :option:`-specs` = option to specify the
   appropriate directory location.  The Parallel Environment does not
   support threads, so the :option:`-mpe` option and the :option:`-pthread`
@@ -630,27 +630,27 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 .. option:: -msim
 
   On embedded PowerPC systems, assume that the startup module is called
-  sim-crt0.o and that the standard C libraries are libsim.a and
-  libc.a.  This is the default for :samp:`powerpc-*-eabisim`
+  :samp:`sim-crt0.o` and that the standard C libraries are :samp:`libsim.a` and
+  :samp:`libc.a`.  This is the default for :samp:`powerpc-*-eabisim`
   configurations.
 
 .. option:: -mmvme
 
   On embedded PowerPC systems, assume that the startup module is called
-  crt0.o and the standard C libraries are libmvme.a and
-  libc.a.
+  :samp:`crt0.o` and the standard C libraries are :samp:`libmvme.a` and
+  :samp:`libc.a`.
 
 .. option:: -mads
 
   On embedded PowerPC systems, assume that the startup module is called
-  crt0.o and the standard C libraries are libads.a and
-  libc.a.
+  :samp:`crt0.o` and the standard C libraries are :samp:`libads.a` and
+  :samp:`libc.a`.
 
 .. option:: -myellowknife
 
   On embedded PowerPC systems, assume that the startup module is called
-  crt0.o and the standard C libraries are libyk.a and
-  libc.a.
+  :samp:`crt0.o` and the standard C libraries are :samp:`libyk.a` and
+  :samp:`libc.a`.
 
 .. option:: -mvxworks
 

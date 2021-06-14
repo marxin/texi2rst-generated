@@ -15,7 +15,7 @@ Host Common
 Some things are just not portable, even between similar operating systems,
 and are too difficult for autoconf to detect.  They get implemented using
 hook functions in the file specified by the :samp:`{host_hook_obj}`
-variable in config.gcc.
+variable in :samp:`config.gcc`.
 
 .. function:: void HOST_HOOKS_EXTRA_SIGNALS (void)
 

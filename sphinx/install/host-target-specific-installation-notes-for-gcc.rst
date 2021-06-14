@@ -82,17 +82,17 @@ amdgcn-\*-amdhsa
 AMD GCN GPU target.
 
 Instead of GNU Binutils, you will need to install LLVM 6, or later, and copy
-bin/llvm-mc to amdgcn-amdhsa/bin/as,
-bin/lld to amdgcn-amdhsa/bin/ld,
-bin/llvm-nm to amdgcn-amdhsa/bin/nm, and
-bin/llvm-ar to both bin/amdgcn-amdhsa-ar and
-bin/amdgcn-amdhsa-ranlib.
+:samp:`bin/llvm-mc` to :samp:`amdgcn-amdhsa/bin/as`,
+:samp:`bin/lld` to :samp:`amdgcn-amdhsa/bin/ld`,
+:samp:`bin/llvm-nm` to :samp:`amdgcn-amdhsa/bin/nm`, and
+:samp:`bin/llvm-ar` to both :samp:`bin/amdgcn-amdhsa-ar` and
+:samp:`bin/amdgcn-amdhsa-ranlib`.
 
 Use Newlib (2019-01-16, or newer).
 
 To run the binaries, install the HSA Runtime from the
 `ROCm Platform <https://rocm.github.io>`_, and use
-libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run to launch them
+:samp:`libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run` to launch them
 on the GPU.
 
 arc-\*-elf32
@@ -216,7 +216,7 @@ the configuration of the system compiler, GCC 4.5 and above as well as
 GCC 4.4 past 2010-06-20 leverage SSP support in libc (which is present
 on FreeBSD 7 or later) and the use of ``__cxa_atexit`` by default
 (on FreeBSD 6 or later).  The use of ``dl_iterate_phdr`` inside
-libgcc_s.so.1 and boehm-gc (on FreeBSD 7 or later) is enabled
+:samp:`libgcc_s.so.1` and boehm-gc (on FreeBSD 7 or later) is enabled
 by GCC 4.5 and above.
 
 We support FreeBSD using the ELF file format with DWARF 2 debugging
@@ -232,9 +232,9 @@ good results on FreeBSD 7.2-STABLE.  In the past, known to bootstrap
 and check with good results on FreeBSD 3.0, 3.4, 4.0, 4.2, 4.3, 4.4,
 4.5, 4.8, 4.9 and 5-CURRENT.
 
-The version of binutils installed in /usr/bin probably works
+The version of binutils installed in :samp:`/usr/bin` probably works
 with this release of GCC.  Bootstrapping against the latest GNU
-binutils and/or the version found in /usr/ports/devel/binutils has
+binutils and/or the version found in :samp:`/usr/ports/devel/binutils` has
 been known to enable additional features and improve overall testsuite
 results.  However, it is currently known that boehm-gc may not configure
 properly on FreeBSD prior to the FreeBSD 7.0 release with GNU binutils
@@ -453,14 +453,14 @@ with GCC 4.7, there is also a 64-bit :samp:`amd64-*-solaris2*` or
 
 It is recommended that you configure GCC to use the GNU assembler.  The
 versions included in Solaris 11.3, from GNU binutils 2.23.1 or
-newer (available as /usr/bin/gas and
-/usr/gnu/bin/as), work fine.  The current version, from GNU
+newer (available as :samp:`/usr/bin/gas` and
+:samp:`/usr/gnu/bin/as`), work fine.  The current version, from GNU
 binutils 2.34, is known to work.  Recent versions of the Solaris assembler in
-/usr/bin/as work almost as well, though.
+:samp:`/usr/bin/as` work almost as well, though.
 
 For linking, the Solaris linker is preferred.  If you want to use the GNU
 linker instead, the version in Solaris 11.3, from GNU binutils 2.23.1 or
-newer (in /usr/gnu/bin/ld and /usr/bin/gld), works,
+newer (in :samp:`/usr/gnu/bin/ld` and :samp:`/usr/bin/gld`), works,
 as does the latest version, from GNU binutils 2.34.
 
 To use GNU :command:`as`, configure with the options
@@ -510,7 +510,7 @@ Support for AIX version 4.2 and older was discontinued in GCC 4.5.
 
 'out of memory' bootstrap failures may indicate a problem with
 process resource limits (ulimit).  Hard limits are configured in the
-/etc/security/limits system configuration file.
+:samp:`/etc/security/limits` system configuration file.
 
 GCC 4.9 and above require a C++ compiler for bootstrap.  IBM VAC++ / xlC
 cannot bootstrap GCC.  xlc can bootstrap an older version of GCC and
@@ -579,7 +579,7 @@ IZ98477 for AIX 5.3 TL11 and IZ98134 for AIX 5.3 TL12). AIX 5.3 TL11 SP8,
 AIX 5.3 TL12 SP5, AIX 6.1 TL04 SP11, AIX 6.1 TL05 SP7, AIX 6.1 TL06 SP6,
 AIX 6.1 TL07 and AIX 7.1 TL01 should include the fix.
 
-Building libstdc++.a requires a fix for an AIX Assembler bug
+Building :samp:`libstdc++.a` requires a fix for an AIX Assembler bug
 APAR IY26685 (AIX 4.3) or APAR IY25528 (AIX 5.1).  It also requires a
 fix for another AIX Assembler bug and a co-dependent AIX Archiver fix
 referenced as APAR IY53606 (AIX 5.2) or as APAR IY54774 (AIX 5.1)
@@ -587,7 +587,7 @@ referenced as APAR IY53606 (AIX 5.2) or as APAR IY54774 (AIX 5.1)
 .. _transferaixshobj:
 
 :samp:`libstdc++` in GCC 3.4 increments the major version number of the
-shared object and GCC installation places the libstdc++.a
+shared object and GCC installation places the :samp:`libstdc++.a`
 shared library in a common location which will overwrite the and GCC
 3.3 version of the shared library.  Applications either need to be
 re-linked against the new shared library or the GCC 3.1 and GCC 3.3
@@ -596,10 +596,10 @@ to the AIX runtime loader.  The GCC 3.1 :samp:`libstdc++.so.4`, if
 present, and GCC 3.3 :samp:`libstdc++.so.5` shared objects can be
 installed for runtime dynamic loading using the following steps to set
 the :samp:`F_LOADONLY` flag in the shared object for *each*
-multilib libstdc++.a installed:
+multilib :samp:`libstdc++.a` installed:
 
 Extract the shared objects from the currently installed
-libstdc++.a archive:
+:samp:`libstdc++.a` archive:
 
 .. code-block:: bash
 
@@ -613,7 +613,7 @@ available for runtime dynamic loading, but not linking:
   % strip -e libstdc++.so.4 libstdc++.so.5
 
 Archive the runtime-only shared object in the GCC 3.4
-libstdc++.a archive:
+:samp:`libstdc++.a` archive:
 
 .. code-block:: bash
 
@@ -833,7 +833,7 @@ Tell GCC where to find it:
 You will need newlib 3.0 git revision
 cd31fbb2aea25f94d7ecedc9db16dfc87ab0c316 or later.  It can be
 automatically built together with GCC.  For this, add a symbolic link
-to nvptx-newlib's newlib directory to the directory containing
+to nvptx-newlib's :samp:`newlib` directory to the directory containing
 the GCC sources.
 
 Use the :option:`--disable-sjlj-exceptions` and
@@ -1003,19 +1003,19 @@ In Solaris 11, you need to check for ``system/header``,
 ``system/linker``, and ``developer/assembler`` packages.
 
 Trying to use the linker and other tools in
-/usr/ucb to install GCC has been observed to cause trouble.
+:samp:`/usr/ucb` to install GCC has been observed to cause trouble.
 For example, the linker may hang indefinitely.  The fix is to remove
-/usr/ucb from your :envvar:`PATH`.
+:samp:`/usr/ucb` from your :envvar:`PATH`.
 
 The build process works more smoothly with the legacy Solaris tools so, if you
-have /usr/xpg4/bin in your :envvar:`PATH`, we recommend that you place
-/usr/bin before /usr/xpg4/bin for the duration of the build.
+have :samp:`/usr/xpg4/bin` in your :envvar:`PATH`, we recommend that you place
+:samp:`/usr/bin` before :samp:`/usr/xpg4/bin` for the duration of the build.
 
 We recommend the use of the Solaris assembler or the GNU assembler, in
 conjunction with the Solaris linker.  The GNU :command:`as`
 versions included in Solaris 11.3,
-from GNU binutils 2.23.1 or newer (in /usr/bin/gas and
-/usr/gnu/bin/as), are known to work.
+from GNU binutils 2.23.1 or newer (in :samp:`/usr/bin/gas` and
+:samp:`/usr/gnu/bin/as`), are known to work.
 The current version, from GNU binutils 2.34,
 is known to work as well.  Note that your mileage may vary
 if you use a combination of the GNU tools and the Solaris tools: while the
@@ -1097,7 +1097,7 @@ When configuring a 64-bit-default GCC on Solaris/SPARC, you must use a
 build compiler that generates 64-bit code, either by default or by
 specifying :samp:`CC='gcc -m64' CXX='gcc-m64'` to :command:`configure`.
 Additionally, you *must* pass :option:`--build`:samp:`=sparc64-sun-solaris2.11`
-or :option:`--build`:samp:`=sparcv9-sun-solaris2.11` because config.guess
+or :option:`--build`:samp:`=sparcv9-sun-solaris2.11` because :samp:`config.guess`
 misdetects this situation, which can cause build failures.
 
 When configuring the GNU Multiple Precision Library (GMP), the MPFR
@@ -1155,11 +1155,11 @@ not interested in supporting older, a.out or COFF-based, versions of
 VxWorks in GCC 3.
 
 VxWorks comes with an older version of GCC installed in
-:samp:`{$WIND_BASE}` /host; we recommend you do not overwrite it.
+:samp:`:samp:`{$WIND_BASE}` /host`; we recommend you do not overwrite it.
 Choose an installation :samp:`{prefix}` entirely outside :samp:`{$WIND_BASE}`.
-Before running :command:`configure`, create the directories :samp:`{prefix}`
-and :samp:`{prefix}` /bin.  Link or copy the appropriate assembler,
-linker, etc. into :samp:`{prefix}` /bin, and set your :samp:`{PATH}` to
+Before running :command:`configure`, create the directories :samp:`:samp:`{prefix}``
+and :samp:`:samp:`{prefix}` /bin`.  Link or copy the appropriate assembler,
+linker, etc. into :samp:`:samp:`{prefix}` /bin`, and set your :samp:`{PATH}` to
 include that directory while running both :command:`configure` and
 :command:`make`.
 
@@ -1168,12 +1168,12 @@ You must give :command:`configure` the
 find the VxWorks system headers.  Since VxWorks is a cross compilation
 target only, you must also specify :option:`--target`:samp:`={target}`.
 :command:`configure` will attempt to create the directory
-:samp:`{prefix}` / :samp:`{target}` /sys-include and copy files into it;
+:samp:`:samp:`{prefix}` / :samp:`{target}` /sys-include` and copy files into it;
 make sure the user running :command:`configure` has sufficient privilege
 to do so.
 
 GCC's exception handling runtime requires a special 'configlette'
-module, contrib/gthr_supp_vxw_5x.c.  Follow the instructions in
+module, :samp:`contrib/gthr_supp_vxw_5x.c`.  Follow the instructions in
 that file to add the module to your kernel build.  (Future versions of
 VxWorks will incorporate this module.)
 
@@ -1195,7 +1195,7 @@ bi-arch compiler is built which generates 32-bit code by default, but
 can generate 64-bit x86-64 code with the :option:`-m64` switch.  Since
 GCC 4.7, there is also a configuration that defaults to 64-bit code, but
 can generate 32-bit code with :option:`-m32`.  To configure and build
-this way, you have to provide all support libraries like libgmp
+this way, you have to provide all support libraries like :samp:`libgmp`
 as 64-bit code, configure with :option:`--target`:samp:`=x86_64-pc-solaris2.11`
 and :samp:`CC=gcc -m64`.
 
@@ -1209,7 +1209,7 @@ Tensilica Instruction Extension (TIE) language are only supported
 through inline assembly.
 
 The Xtensa configuration information must be specified prior to
-building GCC.  The include/xtensa-config.h header
+building GCC.  The :samp:`include/xtensa-config.h` header
 file contains the configuration information.  If you created your
 own Xtensa configuration with the Xtensa Processor Generator, the
 downloaded files include a customized copy of this header file,
@@ -1327,7 +1327,7 @@ bring GCC up on such a system, if still possible with current GCC, may
 require first installing an old version of GCC which did work on that
 system, and using it to compile a more recent GCC, to avoid bugs in the
 vendor compiler.  Old releases of GCC 1 and GCC 2 are available in the
-old-releases directory on the ../mirrors.htmlGCC mirror
+:samp:`old-releases` directory on the ../mirrors.htmlGCC mirror
 sites.  Header bugs may generally be avoided using
 :command:`fixincludes`, but bugs or deficiencies in libraries and the
 operating system may still cause problems.
@@ -1342,7 +1342,7 @@ likely to be accepted, since they should not affect the support for more
 modern targets.
 
 For some systems, old versions of GNU binutils may also be useful,
-and are available from pub/binutils/old-releases on
+and are available from :samp:`pub/binutils/old-releases` on
 `sourceware.org mirror sites <https://sourceware.org/mirrors.html>`_.
 
 Some of the information on specific systems above relates to

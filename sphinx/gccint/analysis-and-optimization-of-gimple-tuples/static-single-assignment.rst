@@ -32,7 +32,7 @@ expressions are renamed so that their version number matches that of
 the most recent assignment.
 
 We represent variable versions using ``SSA_NAME`` nodes.  The
-renaming process in tree-ssa.c wraps every real and
+renaming process in :samp:`tree-ssa.c` wraps every real and
 virtual operand with an ``SSA_NAME`` node which contains
 the version number and the statement that created the
 ``SSA_NAME``.  Only definitions and virtual definitions may
@@ -238,7 +238,7 @@ Walking the dominator tree
 
   This function walks the dominator tree for the current CFG calling a
   set of callback functions defined in :samp:`{struct dom_walk_data}` in
-  domwalk.h.  The call back functions you need to define give you
+  :samp:`domwalk.h`.  The call back functions you need to define give you
   hooks to execute custom code at various points during traversal:
 
   * Once to initialize any local data needed while processing

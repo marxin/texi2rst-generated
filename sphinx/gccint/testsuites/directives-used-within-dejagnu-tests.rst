@@ -285,7 +285,7 @@ Verify output of the test executable
 
 :samp:`{ dg-output {regexp} [{ target/xfail {selector} }] }`
   This DejaGnu directive compares :samp:`{regexp}` to the combined output
-  that the test executable writes to stdout and stderr.
+  that the test executable writes to :samp:`stdout` and :samp:`stderr`.
 
 Specify environment variables for a test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,7 +431,7 @@ particular functionality.  They are used to limit tests to be run only
 for particular targets, or to specify that particular sets of targets
 are expected to fail some tests.
 
-Effective-target keywords are defined in lib/target-supports.exp in
+Effective-target keywords are defined in :samp:`lib/target-supports.exp` in
 the GCC testsuite, with the exception of those that are documented as
 being local to a particular test directory.
 
@@ -1467,18 +1467,18 @@ Environment attributes
 
 ``fd_truncate``
   Target can truncate a file from a file descriptor, as used by
-  libgfortran/io/unix.c:fd_truncate; i.e. ``ftruncate`` or
+  :samp:`libgfortran/io/unix.c:fd_truncate`; i.e. ``ftruncate`` or
   ``chsize``.
 
 ``fenv``
-  Target provides fenv.h include file.
+  Target provides :samp:`fenv.h` include file.
 
 ``fenv_exceptions``
-  Target supports fenv.h with all the standard IEEE exceptions
+  Target supports :samp:`fenv.h` with all the standard IEEE exceptions
   and floating-point exceptions are raised by arithmetic operations.
 
 ``fenv_exceptions_dfp``
-  Target supports fenv.h with all the standard IEEE exceptions
+  Target supports :samp:`fenv.h` with all the standard IEEE exceptions
   and floating-point exceptions are raised by arithmetic operations for
   decimal floating point.
 
@@ -1971,7 +1971,7 @@ take arguments could be replaced with effective-target keywords.
   Skip the test if the host does not support an ASCII locale.
 
 ``dg-require-compat-dfp ""``
-  Skip this test unless both compilers in a compat testsuite
+  Skip this test unless both compilers in a :samp:`compat` testsuite
   support decimal floating point.
 
 ``dg-require-cxa-atexit ""``
@@ -2032,7 +2032,7 @@ Scan a particular file
   Passes if :samp:`{regexp}` matches in Fortran module :samp:`{module}`.
 
 :samp:`dg-check-dot {filename}`
-  Passes if :samp:`{filename}` is a valid .dot file (by running
+  Passes if :samp:`{filename}` is a valid :samp:`.dot` file (by running
   ``dot -Tpng`` on it, and verifying the exit code is 0).
 
 Scan the assembly output

@@ -31,14 +31,14 @@ compilation is done:
   C++ source code that should not be preprocessed.
 
 :samp:`{file}.m`
-  Objective-C source code.  Note that you must link with the libobjc
+  Objective-C source code.  Note that you must link with the :samp:`libobjc`
   library to make an Objective-C program work.
 
 :samp:`{file}.mi`
   Objective-C source code that should not be preprocessed.
 
 :samp:`{file}.mm` :samp:`{file}.M`
-  Objective-C++ source code.  Note that you must link with the libobjc
+  Objective-C++ source code.  Note that you must link with the :samp:`libobjc`
   library to make an Objective-C++ program work.  Note that :samp:`.M` refers
   to a literal capital M.
 
@@ -188,10 +188,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   object file, an assembler file or preprocessed C code.
 
   If :option:`-o` is not specified, the default is to put an executable
-  file in a.out, the object file for
-  :samp:`{source}`. :samp:`{suffix}` in :samp:`{source}`.o, its
-  assembler file in :samp:`{source}`.s, a precompiled header file in
-  :samp:`{source}`. :samp:`{suffix}`.gch, and all preprocessed C source on
+  file in :samp:`a.out`, the object file for
+  :samp:`:samp:`{source}`. :samp:`{suffix}`` in :samp:`:samp:`{source}`.o`, its
+  assembler file in :samp:`:samp:`{source}`.s`, a precompiled header file in
+  :samp:`:samp:`{source}`. :samp:`{suffix}`.gch`, and all preprocessed C source on
   standard output.
 
   Though :option:`-o` names only the primary output, it also affects the
@@ -211,9 +211,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -c foo.c ...
 
-  will use foo.o as the primary output, and place aux outputs and
-  dumps next to it, e.g., aux file foo.dwo for
-  :option:`-gsplit-dwarf`, and dump file foo.c.???r.final for
+  will use :samp:`foo.o` as the primary output, and place aux outputs and
+  dumps next to it, e.g., aux file :samp:`foo.dwo` for
+  :option:`-gsplit-dwarf`, and dump file :samp:`foo.c.???r.final` for
   :option:`-fdump-rtl-final`.
 
   If a non-linker output file is explicitly specified, aux and dump files
@@ -223,8 +223,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -c foo.c -o dir/foobar.o ...
 
-  will name aux outputs dir/foobar.\* and dump outputs
-  dir/foobar.c.\*.
+  will name aux outputs :samp:`dir/foobar.*` and dump outputs
+  :samp:`dir/foobar.c.*`.
 
   A linker output will instead prefix aux and dump outputs:
 
@@ -232,9 +232,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -o dir/foobar ...
 
-  will generally name aux outputs dir/foobar-foo.\* and
-  dir/foobar-bar.\*, and dump outputs dir/foobar-foo.c.\* and
-  dir/foobar-bar.c.\*.
+  will generally name aux outputs :samp:`dir/foobar-foo.*` and
+  :samp:`dir/foobar-bar.*`, and dump outputs :samp:`dir/foobar-foo.c.*` and
+  :samp:`dir/foobar-bar.c.*`.
 
   The one exception to the above is when the executable shares the base
   name with the single input:
@@ -243,8 +243,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c -o dir/foo ...
 
-  in which case aux outputs are named dir/foo.\* and dump outputs
-  named dir/foo.c.\*.
+  in which case aux outputs are named :samp:`dir/foo.*` and dump outputs
+  named :samp:`dir/foo.c.*`.
 
   The location and the names of auxiliary and dump outputs can be adjusted
   by the options :option:`-dumpbase`, :option:`-dumpbase-ext`,
@@ -262,16 +262,16 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -save-temps -S foo.c
 
-  saves the (no longer) temporary preprocessed file in foo.i, and
-  then compiles to the (implied) output file foo.s, whereas:
+  saves the (no longer) temporary preprocessed file in :samp:`foo.i`, and
+  then compiles to the (implied) output file :samp:`foo.s`, whereas:
 
   .. code-block:: bash
 
     gcc -save-temps -dumpbase save-foo -c foo.c
 
-  preprocesses to in save-foo.i, compiles to save-foo.s (now
+  preprocesses to in :samp:`save-foo.i`, compiles to :samp:`save-foo.s` (now
   an intermediate, thus auxiliary output), and then assembles to the
-  (implied) output file foo.o.
+  (implied) output file :samp:`foo.o`.
 
   Absent this option, dump and aux files take their names from the input
   file, or from the (non-linker) output file, if one is explicitly
@@ -294,9 +294,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc foo.c -c -o dir/foo.o -dumpbase alt/foo \
       -dumpdir pfx- -save-temps=cwd ...
 
-  creates auxiliary and dump outputs named alt/foo.\*, disregarding
-  dir/ in :option:`-o`, the ./ prefix implied by
-  :option:`-save-temps`:samp:`=cwd`, and pfx- in :option:`-dumpdir`.
+  creates auxiliary and dump outputs named :samp:`alt/foo.*`, disregarding
+  :samp:`dir/` in :option:`-o`, the :samp:`./` prefix implied by
+  :option:`-save-temps`:samp:`=cwd`, and :samp:`pfx-` in :option:`-dumpdir`.
 
   When :option:`-dumpbase` is specified in a command that compiles multiple
   inputs, or that compiles and then links, it may be combined with
@@ -309,10 +309,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -c -dumpbase main ...
 
-  creates foo.o and bar.o as primary outputs, and avoids
+  creates :samp:`foo.o` and :samp:`bar.o` as primary outputs, and avoids
   overwriting the auxiliary and dump outputs by using the :samp:`{dumpbase}`
-  as a prefix, creating auxiliary and dump outputs named main-foo.\*
-  and main-bar.\*.
+  as a prefix, creating auxiliary and dump outputs named :samp:`main-foo.*`
+  and :samp:`main-bar.*`.
 
   An empty string specified as :samp:`{dumpbase}` avoids the influence of the
   output basename in the naming of auxiliary and dump outputs during
@@ -322,8 +322,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -c foo.c -o dir/foobar.o -dumpbase '' ...
 
-  will name aux outputs dir/foo.\* and dump outputs
-  dir/foo.c.\*.  Note how their basenames are taken from the input
+  will name aux outputs :samp:`dir/foo.*` and dump outputs
+  :samp:`dir/foo.c.*`.  Note how their basenames are taken from the input
   name, but the directory still defaults to that of the output.
 
   The empty-string dumpbase does not prevent the use of the output
@@ -334,9 +334,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc foo.c bar.c -o dir/foobar -dumpbase '' -flto ...
 
   The compilation of the source files will name auxiliary outputs
-  dir/foo.\* and dir/bar.\*, and dump outputs
-  dir/foo.c.\* and dir/bar.c.\*.  LTO recompilation during
-  linking will use dir/foobar. as the prefix for dumps and
+  :samp:`dir/foo.*` and :samp:`dir/bar.*`, and dump outputs
+  :samp:`dir/foo.c.*` and :samp:`dir/bar.c.*`.  LTO recompilation during
+  linking will use :samp:`dir/foobar.` as the prefix for dumps and
   auxiliary files.
 
 .. option:: -dumpbase-ext auxdropsuf
@@ -352,10 +352,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c -c -o dir/foo.o -dumpbase x-foo.c -dumpbase-ext .c ...
 
-  creates dir/foo.o as the main output, and generates auxiliary
-  outputs in dir/x-foo.\*, taking the location of the primary
-  output, and dropping the .c suffix from the :samp:`{dumpbase}`.  Dump
-  outputs retain the suffix: dir/x-foo.c.\*.
+  creates :samp:`dir/foo.o` as the main output, and generates auxiliary
+  outputs in :samp:`dir/x-foo.*`, taking the location of the primary
+  output, and dropping the :samp:`.c` suffix from the :samp:`{dumpbase}`.  Dump
+  outputs retain the suffix: :samp:`dir/x-foo.c.*`.
 
   This option is disregarded if it does not match the suffix of a
   specified :samp:`{dumpbase}`, except as an alternative to the executable
@@ -366,11 +366,11 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -o main.out -dumpbase-ext .out ...
 
-  creates main.out as the primary output, and avoids overwriting
+  creates :samp:`main.out` as the primary output, and avoids overwriting
   the auxiliary and dump outputs by using the executable name minus
   :samp:`{auxdropsuf}` as a prefix, creating auxiliary outputs named
-  main-foo.\* and main-bar.\* and dump outputs named
-  main-foo.c.\* and main-bar.c.\*.
+  :samp:`main-foo.*` and :samp:`main-bar.*` and dump outputs named
+  :samp:`main-foo.c.*` and :samp:`main-bar.c.*`.
 
 .. option:: -dumpdir dumppfx
 
@@ -381,11 +381,11 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -dumpdir pfx- -c foo.c ...
 
-  creates foo.o as the primary output, and auxiliary outputs named
-  pfx-foo.\*, combining the given :samp:`{dumppfx}` with the default
+  creates :samp:`foo.o` as the primary output, and auxiliary outputs named
+  :samp:`pfx-foo.*`, combining the given :samp:`{dumppfx}` with the default
   :samp:`{dumpbase}` derived from the default primary output, derived in turn
   from the input name.  Dump outputs also take the input name suffix:
-  pfx-foo.c.\*.
+  :samp:`pfx-foo.c.*`.
 
   If :samp:`{dumppfx}` is to be used as a directory name, it must end with a
   directory separator:
@@ -394,10 +394,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -dumpdir dir/ -c foo.c -o obj/bar.o ...
 
-  creates obj/bar.o as the primary output, and auxiliary outputs
-  named dir/bar.\*, combining the given :samp:`{dumppfx}` with the
+  creates :samp:`obj/bar.o` as the primary output, and auxiliary outputs
+  named :samp:`dir/bar.*`, combining the given :samp:`{dumppfx}` with the
   default :samp:`{dumpbase}` derived from the primary output name.  Dump
-  outputs also take the input name suffix: dir/bar.c.\*.
+  outputs also take the input name suffix: :samp:`dir/bar.c.*`.
 
   It defaults to the location of the output file; options
   :option:`-save-temps`:samp:`=cwd` and :option:`-save-temps`:samp:`=obj` override this
@@ -408,12 +408,12 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
 
-  outputs foo.o, with auxiliary outputs named foo.\* because
+  outputs :samp:`foo.o`, with auxiliary outputs named :samp:`foo.*` because
   :option:`-save-temps`:samp:`=*` overrides the :samp:`{dumppfx}` given by the earlier
   :option:`-dumpdir` option.  It does not matter that :samp:`=obj` is the
   default for :option:`-save-temps`, nor that the output directory is
   implicitly the current directory.  Dump outputs are named
-  foo.c.\*.
+  :samp:`foo.c.*`.
 
   When compiling from multiple input files, if :option:`-dumpbase` is
   specified, :samp:`{dumpbase}`, minus a :samp:`{auxdropsuf}` suffix, and a dash
@@ -425,10 +425,10 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -c -dumpdir dir/pfx- -dumpbase main ...
 
-  outputs auxiliary dumps to dir/pfx-main-foo.\* and
-  dir/pfx-main-bar.\*, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
-  Dump outputs retain the input file suffix: dir/pfx-main-foo.c.\*
-  and dir/pfx-main-bar.c.\*, respectively.  Contrast with the
+  outputs auxiliary dumps to :samp:`dir/pfx-main-foo.*` and
+  :samp:`dir/pfx-main-bar.*`, appending :samp:`{dumpbase}` - to :samp:`{dumppfx}`.
+  Dump outputs retain the input file suffix: :samp:`dir/pfx-main-foo.c.*`
+  and :samp:`dir/pfx-main-bar.c.*`, respectively.  Contrast with the
   single-input compilation:
 
   .. code-block:: bash
@@ -437,12 +437,12 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   that, applying :option:`-dumpbase` to a single source, does not compute
   and append a separate :samp:`{dumpbase}` per input file.  Its auxiliary and
-  dump outputs go in dir/pfx-main.\*.
+  dump outputs go in :samp:`dir/pfx-main.*`.
 
   When compiling and then linking from multiple input files, a defaulted
   or explicitly specified :samp:`{dumppfx}` also undergoes the :samp:`{dumpbase}` -
-  transformation above (e.g. the compilation of foo.c and
-  bar.c above, but without :option:`-c` ).  If neither
+  transformation above (e.g. the compilation of :samp:`foo.c` and
+  :samp:`bar.c` above, but without :option:`-c` ).  If neither
   :option:`-dumpdir` nor :option:`-dumpbase` are given, the linker output
   base name, minus :samp:`{auxdropsuf}`, if specified, or the executable
   suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`
@@ -452,7 +452,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c bar.c -dumpdir dir/pfx- -o main ...
 
-  does not append the output name main to :samp:`{dumppfx}`, because
+  does not append the output name :samp:`main` to :samp:`{dumppfx}`, because
   :option:`-dumpdir` is explicitly specified.  The goal is that the
   explicitly-specified :samp:`{dumppfx}` may contain the specified output name
   as part of the prefix, if desired; only an explicitly-specified
@@ -470,8 +470,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
     gcc foo.c -dumpdir alt/pfx- -o dir/main.exe -save-temps=cwd ...
 
-  Auxiliary outputs are named foo.\*, and dump outputs
-  foo.c.\*, in the current working directory as ultimately requested
+  Auxiliary outputs are named :samp:`foo.*`, and dump outputs
+  :samp:`foo.c.*`, in the current working directory as ultimately requested
   by :option:`-save-temps`:samp:`=cwd`.
 
   Summing it all up for an intuitive though slightly imprecise data flow:
@@ -652,7 +652,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
 .. option:: -specs=file
 
-  Process :samp:`{file}` after the compiler reads in the standard specs
+  Process :samp:`{file}` after the compiler reads in the standard :samp:`specs`
   file, in order to override the defaults which the :command:`gcc` driver
   program uses when determining what switches to pass to :command:`cc1`,
   :command:`cc1plus`, :command:`as`, :command:`ld`, etc.  More than one
@@ -676,9 +676,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
 .. option:: -ffile-prefix-map=old=new
 
-  When compiling files residing in directory :samp:`{old}`, record
+  When compiling files residing in directory :samp:`:samp:`{old}``, record
   any references to them in the result of the compilation as if the
-  files resided in directory :samp:`{new}` instead.  Specifying this
+  files resided in directory :samp:`:samp:`{new}`` instead.  Specifying this
   option is equivalent to specifying all the individual
   :option:`-f*-prefix-map` options.  This can be used to make reproducible
   builds that are location independent.  See also

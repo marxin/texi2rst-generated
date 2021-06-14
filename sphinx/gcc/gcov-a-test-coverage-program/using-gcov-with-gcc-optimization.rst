@@ -49,9 +49,9 @@ depends on where the function is inlined, or if it is not inlined at all.
 
 If the function is not inlined, the compiler must emit an out of line
 copy of the function, in any object file that needs it.  If
-fileA.o and fileB.o both contain out of line bodies of a
+:samp:`fileA.o` and :samp:`fileB.o` both contain out of line bodies of a
 particular inlineable function, they will also both contain coverage
-counts for that function.  When fileA.o and fileB.o are
+counts for that function.  When :samp:`fileA.o` and :samp:`fileB.o` are
 linked together, the linker will, on many systems, select one of those
 out of line bodies for all calls to that function, and remove or ignore
 the other.  Unfortunately, it will not remove the coverage counters for
@@ -68,7 +68,7 @@ Long-running applications can use the ``__gcov_reset`` and ``__gcov_dump``
 facilities to restrict profile collection to the program region of
 interest. Calling ``__gcov_reset(void)`` will clear all run-time profile
 counters to zero, and calling ``__gcov_dump(void)`` will cause the profile
-information collected at that point to be dumped to .gcda output files.
+information collected at that point to be dumped to :samp:`.gcda` output files.
 Instrumented applications use a static destructor with priority 99
 to invoke the ``__gcov_dump`` function. Thus ``__gcov_dump``
 is executed after all user defined static destructors,

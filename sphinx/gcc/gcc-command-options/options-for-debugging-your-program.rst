@@ -161,12 +161,12 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fdebug-prefix-map=old=new
 
-  When compiling files residing in directory :samp:`{old}`, record
+  When compiling files residing in directory :samp:`:samp:`{old}``, record
   debugging information describing them as if the files resided in
-  directory :samp:`{new}` instead.  This can be used to replace a
+  directory :samp:`:samp:`{new}`` instead.  This can be used to replace a
   build-time path with an install-time path in the debug info.  It can
   also be used to change an absolute path to a relative path by using
-  . for :samp:`{new}`.  This can give more reproducible builds, which
+  :samp:`.` for :samp:`{new}`.  This can give more reproducible builds, which
   are location independent, but may require an extra command to tell GDB
   where to find the source files. See also :option:`-ffile-prefix-map`.
 
@@ -200,9 +200,9 @@ information useful for debugging do not run at all, so that
 
   If DWARF debugging information is enabled, separate as much debugging
   information as possible into a separate output file with the extension
-  .dwo.  This option allows the build system to avoid linking files with
+  :samp:`.dwo`.  This option allows the build system to avoid linking files with
   debug information.  To be useful, this option requires a debugger capable of
-  reading .dwo files.
+  reading :samp:`.dwo` files.
 
 .. option:: -gdwarf32, -gdwarf64
 
@@ -437,8 +437,8 @@ information useful for debugging do not run at all, so that
   The value :samp:`base` means that
   the base of name of the file in which the type declaration appears
   must match the base of the name of the main compilation file.
-  In practice, this means that when compiling foo.c, debug information
-  is generated for types declared in that file and foo.h,
+  In practice, this means that when compiling :samp:`foo.c`, debug information
+  is generated for types declared in that file and :samp:`foo.h`,
   but not other header files.
   The value :samp:`sys` means those types satisfying :samp:`base`
   or declared in system or compiler headers.

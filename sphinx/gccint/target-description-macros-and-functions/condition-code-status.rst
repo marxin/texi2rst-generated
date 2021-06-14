@@ -68,7 +68,7 @@ Representation of condition codes using registers
   unsigned comparison) produced the condition codes.
 
   If other modes than ``CCmode`` are required, add them to
-  :samp:`{machine}` -modes.def and define ``SELECT_CC_MODE`` to choose
+  :samp:`:samp:`{machine}` -modes.def` and define ``SELECT_CC_MODE`` to choose
   a mode given an operand of a compare.  This is needed because the modes
   have to be chosen not only during RTL generation but also, for example,
   by instruction combination.  The result of ``SELECT_CC_MODE`` should
@@ -104,7 +104,7 @@ Representation of condition codes using registers
   this section.
 
   You should define this macro if and only if you define extra CC modes
-  in :samp:`{machine}` -modes.def.
+  in :samp:`:samp:`{machine}` -modes.def`.
 
 .. function:: void TARGET_CANONICALIZE_COMPARISON (int *code, rtx *op0, rtx *op1, bool op0_preserve_value)
 
@@ -123,7 +123,7 @@ Representation of condition codes using registers
 
   GCC will not assume that the comparison resulting from this macro is
   valid but will see if the resulting insn matches a pattern in the
-  md file.
+  :samp:`md` file.
 
   You need not to implement this hook if it would never change the
   comparison code or operands.

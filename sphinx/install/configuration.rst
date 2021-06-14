@@ -20,8 +20,8 @@ We use :samp:`{srcdir}` to refer to the toplevel source directory for
 GCC; we use :samp:`{objdir}` to refer to the toplevel build/object directory.
 
 If you obtained the sources by cloning the repository, :samp:`{srcdir}`
-must refer to the top gcc directory, the one where the
-MAINTAINERS file can be found, and not its gcc
+must refer to the top :samp:`gcc` directory, the one where the
+:samp:`MAINTAINERS` file can be found, and not its :samp:`gcc`
 subdirectory, otherwise the build will fail.
 
 If either :samp:`{srcdir}` or :samp:`{objdir}` is located on an automounted NFS
@@ -41,8 +41,8 @@ of :samp:`{srcdir}` is unsupported.
 
 If you have previously built GCC in the same directory for a
 different target machine, do :samp:`make distclean` to delete all files
-that might be invalid.  One of the files this deletes is Makefile;
-if :samp:`make distclean` complains that Makefile does not exist
+that might be invalid.  One of the files this deletes is :samp:`Makefile`;
+if :samp:`make distclean` complains that :samp:`Makefile` does not exist
 or issues a message like 'don't know how to make distclean' it probably
 means that the directory is already suitably clean.  However, with the
 recommended method of building in a separate :samp:`{objdir}`, you should
@@ -109,7 +109,7 @@ Host, Build and Target specification
 ====================================
 
 Specify the host, build and target machine configurations.  You do this
-when you run the configure script.
+when you run the :samp:`configure` script.
 
 The :dfn:`build` machine is the system which you are using, the
 :dfn:`host` machine is the system where you want to run the resulting
@@ -118,10 +118,10 @@ the system for which you want the compiler to generate code.
 
 If you are building a compiler to produce code for the machine it runs
 on (a native compiler), you normally do not need to specify any operands
-to configure; it will try to guess the type of machine you are on
+to :samp:`configure`; it will try to guess the type of machine you are on
 and use that as the build, host and target machines.  So you don't need
 to specify a configuration when building a native compiler unless
-configure cannot figure out what your configuration is or guesses
+:samp:`configure` cannot figure out what your configuration is or guesses
 wrong.
 
 In those cases, specify the build machine's :dfn:`configuration name`
@@ -135,7 +135,7 @@ Here is an example:
   ./configure --host=x86_64-pc-linux-gnu
 
 A configuration name may be canonical or it may be more or less
-abbreviated (config.sub script produces canonical versions).
+abbreviated (:samp:`config.sub` script produces canonical versions).
 
 A canonical configuration name has three parts, separated by dashes.
 It looks like this: :samp:`{cpu}-{company}-{system}`.
@@ -181,7 +181,7 @@ corresponding :option:`--without` option.
   Specify the toplevel installation
   directory.  This is the recommended way to install the tools into a directory
   other than the default.  The toplevel installation directory defaults to
-  /usr/local.
+  :samp:`/usr/local`.
 
   We **highly** recommend against :samp:`{dirname}` being the same or a
   subdirectory of :samp:`{objdir}` or vice versa.  If specifying a directory
@@ -195,63 +195,63 @@ corresponding :option:`--without` option.
   .. option:: --exec-prefix=dirname
 
     Specify the toplevel installation directory for architecture-dependent
-    files.  The default is :samp:`{prefix}`.
+    files.  The default is :samp:`:samp:`{prefix}``.
 
   .. option:: --bindir=dirname
 
     Specify the installation directory for the executables called by users
     (such as :command:`gcc` and :command:`g++`).  The default is
-    :samp:`{exec-prefix}` /bin.
+    :samp:`:samp:`{exec-prefix}` /bin`.
 
   .. option:: --libdir=dirname
 
     Specify the installation directory for object code libraries and
-    internal data files of GCC.  The default is :samp:`{exec-prefix}` /lib.
+    internal data files of GCC.  The default is :samp:`:samp:`{exec-prefix}` /lib`.
 
   .. option:: --libexecdir=dirname
 
     Specify the installation directory for internal executables of GCC.
-    The default is :samp:`{exec-prefix}` /libexec.
+    The default is :samp:`:samp:`{exec-prefix}` /libexec`.
 
   .. option:: --with-slibdir=dirname
 
     Specify the installation directory for the shared libgcc library.  The
-    default is :samp:`{libdir}`.
+    default is :samp:`:samp:`{libdir}``.
 
   .. option:: --datarootdir=dirname
 
     Specify the root of the directory tree for read-only architecture-independent
-    data files referenced by GCC.  The default is :samp:`{prefix}` /share.
+    data files referenced by GCC.  The default is :samp:`:samp:`{prefix}` /share`.
 
   .. option:: --infodir=dirname
 
     Specify the installation directory for documentation in info format.
-    The default is :samp:`{datarootdir}` /info.
+    The default is :samp:`:samp:`{datarootdir}` /info`.
 
   .. option:: --datadir=dirname
 
     Specify the installation directory for some architecture-independent
-    data files referenced by GCC.  The default is :samp:`{datarootdir}`.
+    data files referenced by GCC.  The default is :samp:`:samp:`{datarootdir}``.
 
   .. option:: --docdir=dirname
 
     Specify the installation directory for documentation files (other
-    than Info) for GCC.  The default is :samp:`{datarootdir}` /doc.
+    than Info) for GCC.  The default is :samp:`:samp:`{datarootdir}` /doc`.
 
   .. option:: --htmldir=dirname
 
     Specify the installation directory for HTML documentation files.
-    The default is :samp:`{docdir}`.
+    The default is :samp:`:samp:`{docdir}``.
 
   .. option:: --pdfdir=dirname
 
     Specify the installation directory for PDF documentation files.
-    The default is :samp:`{docdir}`.
+    The default is :samp:`:samp:`{docdir}``.
 
   .. option:: --mandir=dirname
 
     Specify the installation directory for manual pages.  The default is
-    :samp:`{datarootdir}` /man.  (Note that the manual pages are only extracts
+    :samp:`:samp:`{datarootdir}` /man`.  (Note that the manual pages are only extracts
     from the full GCC manuals, which are provided in Texinfo format.  The manpages
     are derived by an automatic conversion process from parts of the full
     manual.)
@@ -277,14 +277,14 @@ corresponding :option:`--without` option.
   installing them.  This option prepends :samp:`{prefix}` to the names of
   programs to install in :samp:`{bindir}` (see above).  For example, specifying
   :option:`--program-prefix`:samp:`=foo-` would result in :samp:`gcc`
-  being installed as /usr/local/bin/foo-gcc.
+  being installed as :samp:`/usr/local/bin/foo-gcc`.
 
 .. option:: --program-suffix=suffix
 
   Appends :samp:`{suffix}` to the names of programs to install in :samp:`{bindir}`
   (see above).  For example, specifying :option:`--program-suffix`:samp:`=-3.1`
   would result in :samp:`gcc` being installed as
-  /usr/local/bin/gcc-3.1.
+  :samp:`/usr/local/bin/gcc-3.1`.
 
 .. option:: --program-transform-name=pattern
 
@@ -292,9 +292,9 @@ corresponding :option:`--without` option.
   of programs to install in :samp:`{bindir}` (see above).  :samp:`{pattern}` has to
   consist of one or more basic :samp:`sed` editing commands, separated by
   semicolons.  For example, if you want the :samp:`gcc` program name to be
-  transformed to the installed program /usr/local/bin/myowngcc and
+  transformed to the installed program :samp:`/usr/local/bin/myowngcc` and
   the :samp:`g++` program name to be transformed to
-  /usr/local/bin/gspecial++ without changing other program names,
+  :samp:`/usr/local/bin/gspecial++` without changing other program names,
   you could use the pattern
   :option:`--program-transform-name`:samp:`='s/^gcc$/myowngcc/; s/^g++$/gspecial++/'`
   to achieve this effect.
@@ -314,7 +314,7 @@ corresponding :option:`--without` option.
   before the target alias is prepended to the name---so, specifying
   :option:`--program-prefix`:samp:`=foo-{program-suffix}=-3.1`, the
   resulting binary would be installed as
-  /usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1.
+  :samp:`/usr/local/bin/i686-pc-linux-gnu-foo-gcc-3.1`.
 
   As a last shortcoming, none of the installed Ada programs are
   transformed yet, which will be fixed in some time.
@@ -323,22 +323,22 @@ corresponding :option:`--without` option.
 
   Specify the
   installation directory for local include files.  The default is
-  /usr/local.  Specify this option if you want the compiler to
-  search directory :samp:`{dirname}` /include for locally installed
-  header files *instead* of /usr/local/include.
+  :samp:`/usr/local`.  Specify this option if you want the compiler to
+  search directory :samp:`:samp:`{dirname}` /include` for locally installed
+  header files *instead* of :samp:`/usr/local/include`.
 
   You should specify :option:`--with-local-prefix` **only** if your
-  site has a different convention (not /usr/local) for where to put
+  site has a different convention (not :samp:`/usr/local`) for where to put
   site-specific files.
 
-  The default value for :option:`--with-local-prefix` is /usr/local
+  The default value for :option:`--with-local-prefix` is :samp:`/usr/local`
   regardless of the value of :option:`--prefix`.  Specifying
   :option:`--prefix` has no effect on which directory GCC searches for
   local header files.  This may seem counterintuitive, but actually it is
   logical.
 
   The purpose of :option:`--prefix` is to specify where to *install
-  GCC*.  The local header files in /usr/local/include---if you put
+  GCC*.  The local header files in :samp:`/usr/local/include`---if you put
   any in that directory---are not part of GCC.  They are part of other
   programs---perhaps many others.  (GCC installs its own header files in
   another directory which is based on the :option:`--prefix` value.)
@@ -364,7 +364,7 @@ corresponding :option:`--without` option.
   used for both GCC and packages, GCC will automatically search for
   both headers and libraries.  This provides a configuration that is
   easy to use.  GCC behaves in a manner similar to that when it is
-  installed as a system compiler in /usr.
+  installed as a system compiler in :samp:`/usr`.
 
   Sites that need to install multiple versions of GCC may not want to
   use the above simple configuration.  It is possible to use the
@@ -377,10 +377,10 @@ corresponding :option:`--without` option.
   (e.g., with :envvar:`LIBRARY_PATH`).
 
   The same value can be used for both :option:`--with-local-prefix` and
-  :option:`--prefix` provided it is not /usr.  This can be used
-  to avoid the default search of /usr/local/include.
+  :option:`--prefix` provided it is not :samp:`/usr`.  This can be used
+  to avoid the default search of :samp:`/usr/local/include`.
 
-  **Do not** specify /usr as the :option:`--with-local-prefix` !
+  **Do not** specify :samp:`/usr` as the :option:`--with-local-prefix` !
   The directory you use for :option:`--with-local-prefix` **must not**
   contain any of the system's standard header files.  If it did contain
   them, certain programs would be miscompiled (including GNU Emacs, on
@@ -400,7 +400,7 @@ corresponding :option:`--without` option.
 .. option:: --with-native-system-header-dir=dirname
 
   Specifies that :samp:`{dirname}` is the directory that contains native system
-  header files, rather than /usr/include.  This option is most useful
+  header files, rather than :samp:`/usr/include`.  This option is most useful
   if you are creating a compiler that should be isolated from the system
   as much as possible.  It is most commonly used with the
   :option:`--with-sysroot` option and will cause GCC to search
@@ -471,16 +471,16 @@ corresponding :option:`--without` option.
   an assembler, which are:
 
   * Unless GCC is being built with a cross compiler, check the
-    :samp:`{libexec}` /gcc/ :samp:`{target}` / :samp:`{version}` directory.
-    :samp:`{libexec}` defaults to :samp:`{exec-prefix}` /libexec;
+    :samp:`:samp:`{libexec}` /gcc/ :samp:`{target}` / :samp:`{version}`` directory.
+    :samp:`{libexec}` defaults to :samp:`:samp:`{exec-prefix}` /libexec`;
     :samp:`{exec-prefix}` defaults to :samp:`{prefix}`, which
-    defaults to /usr/local unless overridden by the
+    defaults to :samp:`/usr/local` unless overridden by the
     :option:`--prefix`:samp:`={pathname}` switch described above.  :samp:`{target}`
     is the target system triple, such as :samp:`sparc-sun-solaris2.7`, and
     :samp:`{version}` denotes the GCC version, such as 3.0.
 
   * If the target system is the same that you are building on, check
-    operating system specific directories (e.g. /usr/ccs/bin on
+    operating system specific directories (e.g. :samp:`/usr/ccs/bin` on
     Solaris 2).
 
   * Check in the :envvar:`PATH` for a tool whose name is prefixed by the
@@ -607,15 +607,15 @@ corresponding :option:`--without` option.
     option, i.e., only the default run-time library will be enabled.
 
     :samp:`{list}` may instead contain ``@name``, to use the multilib
-    configuration Makefile fragment name in gcc/config/arm in
+    configuration Makefile fragment :samp:`name` in :samp:`gcc/config/arm` in
     the source tree (it is part of the corresponding sources, after all).
     It is recommended, but not required, that files used for this purpose to
-    be named starting with t-ml-, to make their intended purpose
+    be named starting with :samp:`t-ml-`, to make their intended purpose
     self-evident, in line with GCC conventions.  Such files enable custom,
     user-chosen multilib lists to be configured.  Whether multiple such
     files can be used together depends on the contents of the supplied
-    files.  See gcc/config/arm/t-multilib and its supplementary
-    gcc/config/arm/t-\*profile files for an example of what such
+    files.  See :samp:`gcc/config/arm/t-multilib` and its supplementary
+    :samp:`gcc/config/arm/t-*profile` files for an example of what such
     Makefile fragments might look like for this version of GCC.  The macros
     expected to be defined in these fragments are not stable across GCC
     releases, so make sure they define the ``MULTILIB`` -related macros
@@ -1037,7 +1037,7 @@ corresponding :option:`--without` option.
 .. option:: --with-cpp-install-dir=dirname
 
   Specify that the user visible :command:`cpp` program should be installed
-  in :samp:`{prefix}` / :samp:`{dirname}` /cpp, in addition to :samp:`{bindir}`.
+  in :samp:`:samp:`{prefix}` / :samp:`{dirname}` /cpp`, in addition to :samp:`{bindir}`.
 
 .. option:: --enable-comdat
 
@@ -1071,7 +1071,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-maintainer-mode
 
   The build rules that regenerate the Autoconf and Automake output files as
-  well as the GCC master message catalog gcc.pot are normally
+  well as the GCC master message catalog :samp:`gcc.pot` are normally
   disabled.  This is because it can only be rebuilt if the complete source
   tree is present.  If you have changed the sources and want to rebuild the
   catalog, configuring with :option:`--enable-maintainer-mode` will enable
@@ -1113,9 +1113,9 @@ corresponding :option:`--without` option.
 
   Specify
   that runtime libraries should be installed in the compiler specific
-  subdirectory (:samp:`{libdir}` /gcc) rather than the usual places.  In
+  subdirectory (:samp:`:samp:`{libdir}` /gcc`) rather than the usual places.  In
   addition, :samp:`libstdc++`'s include files will be installed into
-  :samp:`{libdir}` unless you overruled it by using
+  :samp:`:samp:`{libdir}`` unless you overruled it by using
   :option:`--with-gxx-include-dir`:samp:`={dirname}`.  Using this option is
   particularly useful if you intend to use several versions of GCC in
   parallel.  The default is :samp:`yes` for :samp:`libada`, and :samp:`no` for
@@ -1213,7 +1213,7 @@ corresponding :option:`--without` option.
   Specify that only a particular subset of compilers and
   their runtime libraries should be built.  For a list of valid values for
   :samp:`{langN}` you can issue the following command in the
-  gcc directory of your GCC source tree:
+  :samp:`gcc` directory of your GCC source tree:
 
   .. code-block:: bash
 
@@ -1224,7 +1224,7 @@ corresponding :option:`--without` option.
   ``fortran``, ``go``, ``jit``, ``lto``, ``objc``, ``obj-c++``.
   Building the Ada compiler has special requirements, see below.
   If you do not pass this flag, or specify the option ``default``, then the
-  default languages available in the gcc sub-tree will be configured.
+  default languages available in the :samp:`gcc` sub-tree will be configured.
   Ada, D, Go, Jit, and Objective-C++ are not default languages.  LTO is not a
   default language, but is built by default because :option:`--enable-lto` is
   enabled by default.  The other languages are default languages.  If
@@ -1469,8 +1469,8 @@ corresponding :option:`--without` option.
 
 .. option:: --with-libiconv-prefix=dir
 
-  Search for libiconv header files in :samp:`{dir}` /include and
-  libiconv library files in :samp:`{dir}` /lib.
+  Search for libiconv header files in :samp:`:samp:`{dir}` /include` and
+  libiconv library files in :samp:`:samp:`{dir}` /lib`.
 
 .. option:: --enable-obsolete
 
@@ -1692,7 +1692,7 @@ corresponding :option:`--without` option.
 
 .. option:: --enable-canonical-system-headers
 
-  Enable system header path canonicalization for libcpp.  This can
+  Enable system header path canonicalization for :samp:`libcpp`.  This can
   produce shorter header file paths in diagnostics and dependency output
   files, but these changed header paths may conflict with some compilation
   environments.  Enabled by default, and may be disabled using
@@ -1719,7 +1719,7 @@ corresponding :option:`--without` option.
 
   Enable offloading to targets :samp:`{target1}`, ..., :samp:`{targetN}`.
   Offload compilers are expected to be already installed.  Default search
-  path for them is :samp:`{exec-prefix}`, but it can be changed by
+  path for them is :samp:`:samp:`{exec-prefix}``, but it can be changed by
   specifying paths :samp:`{path1}`, ..., :samp:`{pathN}`.
 
   .. code-block:: bash
@@ -1809,7 +1809,7 @@ The following options only apply to building cross compilers.
 
   If you specify the :option:`--with-native-system-header-dir`:samp:`={dirname}`
   option then the compiler will search that directory within :samp:`{dirname}` for
-  native system headers rather than the default /usr/include.
+  native system headers rather than the default :samp:`/usr/include`.
 
 .. option:: --with-build-sysroot
 
@@ -1827,17 +1827,18 @@ The following options only apply to building cross compilers.
 
   If you specify the :option:`--with-native-system-header-dir`:samp:`={dirname}`
   option then the compiler will search that directory within :samp:`{dirname}` for
-  native system headers rather than the default /usr/include.
+  native system headers rather than the default :samp:`/usr/include`.
 
 .. option:: --with-headers
 
   Deprecated in favor of :option:`--with-sysroot`.
   Specifies that target headers are available when building a cross compiler.
   The :samp:`{dir}` argument specifies a directory which has the target include
-  files.  These include files will be copied into the gcc install
+<<<<<<< HEAD
+  files.  These include files will be copied into the :samp:`gcc` install
   directory.  This option with the :samp:`{dir}` argument is required* when
-  building a cross compiler, if :samp:`{prefix}` / :samp:`{target}` /sys-include
-  doesn't pre-exist.  If :samp:`{prefix}` / :samp:`{target}` /sys-include does
+  building a cross compiler, if :samp:`{prefix}/{target}/sys-include`
+  doesn't pre-exist.  If :samp:`{prefix}/{target}/sys-include` does
   pre-exist, the :samp:`{dir}` argument may be omitted.  :command:`fixincludes`
   will be run on these files to make them compatible with GCC.
 
@@ -1851,7 +1852,7 @@ The following options only apply to building cross compilers.
 
   Deprecated in favor of :option:`--with-sysroot`.
   Specifies a list of directories which contain the target runtime
-  libraries.  These libraries will be copied into the gcc install
+  libraries.  These libraries will be copied into the :samp:`gcc` install
   directory.  If the directory list is omitted, this option has no
   effect.
 
@@ -1859,15 +1860,15 @@ The following options only apply to building cross compilers.
 
   Specifies that :samp:`newlib` is
   being used as the target C library.  This causes ``__eprintf`` to be
-  omitted from libgcc.a on the assumption that it will be provided by
+  omitted from :samp:`libgcc.a` on the assumption that it will be provided by
   :samp:`newlib`.
 
 .. option:: --with-avrlibc
 
   Only supported for the AVR target. Specifies that :samp:`AVR-Libc` is
   being used as the target C  library.  This causes float support
-  functions like ``__addsf3`` to be omitted from libgcc.a on
-  the assumption that it will be provided by libm.a.  For more
+  functions like ``__addsf3`` to be omitted from :samp:`libgcc.a` on
+  the assumption that it will be provided by :samp:`libm.a`.  For more
   technical details, cf. `PR54461 <http://gcc.gnu.org/PR54461>`_.
   It is not supported for
   RTEMS configurations, which currently use newlib.  The option is
@@ -1919,17 +1920,17 @@ The following options only apply to building cross compilers.
   written in C and (inline) assembly. :samp:`libgcc` adds support
   for functions that one would usually expect in libgcc like double addition,
   double comparisons and double conversions. :samp:`math` also adds routines
-  that one would expect in libm.a, but with ``__`` (two underscores)
-  prepended to the symbol names as specified by math.h.
+  that one would expect in :samp:`libm.a`, but with ``__`` (two underscores)
+  prepended to the symbol names as specified by :samp:`math.h`.
   :samp:`math-symbols` also defines weak aliases for the functions
-  declared in math.h.  However, ``--with-libf7`` won't
-  install no math.h header file whatsoever, this file must come
+  declared in :samp:`math.h`.  However, ``--with-libf7`` won't
+  install no :samp:`math.h` header file whatsoever, this file must come
   from elsewhere.  This option sets :option:`--with-double-comparison`
   to :samp:`bool`.
 
 .. option:: --with-nds32-lib=library
 
-  Specifies that :samp:`{library}` setting is used for building libgcc.a.
+  Specifies that :samp:`{library}` setting is used for building :samp:`libgcc.a`.
   Currently, the valid :samp:`{library}` is :samp:`newlib` or :samp:`mculib`.
   This option is only supported for the NDS32 target.
 
@@ -1941,9 +1942,9 @@ The following options only apply to building cross compilers.
   GCC on, and the system where you will deploy it.
 
   For example, on an :samp:`ia64-hp-hpux` system, you may have the GNU
-  assembler and linker in /usr/bin, and the native tools in a
+  assembler and linker in :samp:`/usr/bin`, and the native tools in a
   different path, and build a toolchain that expects to find the
-  native tools in /usr/bin.
+  native tools in :samp:`/usr/bin`.
 
   When you use this option, you should ensure that :samp:`{dir}` includes
   :command:`ar`, :command:`as`, :command:`ld`, :command:`nm`,

@@ -222,7 +222,7 @@
     all.  These are the two most common ways to instruct a program that it
     should read from standard input or write to standard output.  If you
     need something more elaborate you can use an :samp:`%{pipe: ``X`` }`
-    construct: see for example gcc/fortran/lang-specs.h.
+    construct: see for example :samp:`gcc/fortran/lang-specs.h`.
 
   :samp:`%.{SUFFIX}`
     Substitutes :samp:`{.SUFFIX}` for the suffixes of a matched switch's args
@@ -334,7 +334,7 @@
   ``%S``
     Process the ``startfile`` spec.  This is a spec for deciding which
     object files are the first ones passed to the linker.  Typically
-    this might be a file named crt0.o.
+    this might be a file named :samp:`crt0.o`.
 
   ``%E``
     Process the ``endfile`` spec.  This is a spec string that specifies
@@ -383,13 +383,13 @@
       variable name and a string.  If the environment variable is not
       defined, a fatal error is issued.  Otherwise, the return value is the
       value of the environment variable concatenated with the string.  For
-      example, if :envvar:`TOPDIR` is defined as /path/to/top, then:
+      example, if :envvar:`TOPDIR` is defined as :samp:`/path/to/top`, then:
 
       .. code-block:: c++
 
         %:getenv(TOPDIR /include)
 
-      expands to /path/to/top/include.
+      expands to :samp:`/path/to/top/include`.
 
     ``if-exists``
       The ``if-exists`` spec function takes one argument, an absolute
@@ -502,7 +502,7 @@
 
     ``pass-through-libs``
       The ``pass-through-libs`` spec function takes any number of arguments.  It
-      finds any :option:`-l` options and any non-options ending in .a (which it
+      finds any :option:`-l` options and any non-options ending in :samp:`.a` (which it
       assumes are the names of linker input library archive files) and returns a
       result containing all the found arguments each prepended by
       :option:`-plugin-opt`:samp:`=-pass-through=` and joined by spaces.  This list is

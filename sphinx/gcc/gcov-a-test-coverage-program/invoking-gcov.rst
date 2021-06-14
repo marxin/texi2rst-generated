@@ -72,7 +72,7 @@ Options
   Output gcov file in an easy-to-parse JSON intermediate format
   which does not require source code for generation.  The JSON
   file is compressed with gzip compression algorithm
-  and the files have .gcov.json.gz extension.
+  and the files have :samp:`.gcov.json.gz` extension.
 
   Structure of the JSON is following:
 
@@ -205,10 +205,10 @@ Options
 
 ``-l`` ``--long-file-names``
   Create long file names for included source files.  For example, if the
-  header file x.h contains code, and was included in the file
-  a.c, then running :command:`gcov` on the file a.c will
-  produce an output file called a.c##x.h.gcov instead of
-  x.h.gcov.  This can be useful if x.h is included in
+  header file :samp:`x.h` contains code, and was included in the file
+  :samp:`a.c`, then running :command:`gcov` on the file :samp:`a.c` will
+  produce an output file called :samp:`a.c##x.h.gcov` instead of
+  :samp:`x.h.gcov`.  This can be useful if :samp:`x.h` is included in
   multiple source files and you want to see the individual
   contributions.  If you use the :samp:`-p` option, both the including
   and included file names will be complete path names.
@@ -222,18 +222,18 @@ Options
 
 :samp:`-o {directory|file}` :samp:`--object-directory {directory}` :samp:`--object-file {file}`
   Specify either the directory containing the gcov data files, or the
-  object path name.  The .gcno, and
-  .gcda data files are searched for using this option.  If a directory
+  object path name.  The :samp:`.gcno`, and
+  :samp:`.gcda` data files are searched for using this option.  If a directory
   is specified, the data files are in that directory and named after the
   input file name, without its extension.  If a file is specified here,
   the data files are named after that file, without its extension.
 
 ``-p`` ``--preserve-paths``
   Preserve complete path information in the names of generated
-  .gcov files.  Without this option, just the filename component is
+  :samp:`.gcov` files.  Without this option, just the filename component is
   used.  With this option, all directories are used, with :samp:`/` characters
-  translated to :samp:`#` characters, . directory components
-  removed and unremoveable ..
+  translated to :samp:`#` characters, :samp:`.` directory components
+  removed and unremoveable :samp:`..`
   components renamed to :samp:`^`.  This is useful if sourcefiles are in several
   different directories.
 
@@ -273,7 +273,7 @@ Options
   gcov uses the full pathname of the source files to create
   an output filename.  This can lead to long filenames that can overflow
   filesystem limits.  This option creates names of the form
-  :samp:`{source-file}` ## :samp:`{md5}`.gcov,
+  :samp:`:samp:`{source-file}` ## :samp:`{md5}`.gcov`,
   where the :samp:`{source-file}` component is the final filename part and
   the :samp:`{md5}` component is calculated from the full mangled name that
   would have been used otherwise.  The option is an alternative
@@ -282,9 +282,9 @@ Options
   :command:`gcov` should be run with the current directory the same as that
 when you invoked the compiler.  Otherwise it will not be able to locate
 the source files.  :command:`gcov` produces files called
-:samp:`{mangledname}`.gcov in the current directory.  These contain
+:samp:`:samp:`{mangledname}`.gcov` in the current directory.  These contain
 the coverage information of the source file they correspond to.
-One .gcov file is produced for each source (or header) file
+One :samp:`.gcov` file is produced for each source (or header) file
 containing code,
 which was compiled to produce the data files.  The :samp:`{mangledname}` part
 of the output file name is usually simply the source file name, but can
@@ -295,7 +295,7 @@ If you invoke :command:`gcov` with multiple input files, the
 contributions from each input file are summed.  Typically you would
 invoke it with the same list of files as the final link of your executable.
 
-The .gcov files contain the :samp:`:` separated fields along with
+The :samp:`.gcov` files contain the :samp:`:` separated fields along with
 program source code.  The format is
 
 .. code-block::
@@ -353,11 +353,11 @@ directory where the object file is located.
 
 Running the program will cause profile output to be generated.  For each
 source file compiled with :option:`-fprofile-arcs`, an accompanying
-.gcda file will be placed in the object file directory.
+:samp:`.gcda` file will be placed in the object file directory.
 
 Running :command:`gcov` with your program's source file names as arguments
 will now produce a listing of the code along with frequency of execution
-for each line.  For example, if your program is called tmp.cpp, this
+for each line.  For example, if your program is called :samp:`tmp.cpp`, this
 is what you see when you use the basic :command:`gcov` facility:
 
 .. code-block:: bash
@@ -370,7 +370,7 @@ is what you see when you use the basic :command:`gcov` facility:
   Lines executed:92.86% of 14
   Creating 'tmp.cpp.gcov'
 
-The file tmp.cpp.gcov contains output from :command:`gcov`.
+The file :samp:`tmp.cpp.gcov` contains output from :command:`gcov`.
 Here is a sample:
 
 .. code-block::
@@ -640,7 +640,7 @@ of times the call was executed will be printed.  This will usually be
 and thus may not return every time they are called.
 
 The execution counts are cumulative.  If the example program were
-executed again without removing the .gcda file, the count for the
+executed again without removing the :samp:`.gcda` file, the count for the
 number of times each line in the source was executed would be added to
 the results of the previous run(s).  This is potentially useful in
 several ways.  For example, it could be used to accumulate data over a
@@ -648,9 +648,9 @@ number of program runs as part of a test verification suite, or to
 provide more accurate long-term information over a large number of
 program runs.
 
-The data in the .gcda files is saved immediately before the program
+The data in the :samp:`.gcda` files is saved immediately before the program
 exits.  For each source file compiled with :option:`-fprofile-arcs`, the
-profiling code first attempts to read in an existing .gcda file; if
+profiling code first attempts to read in an existing :samp:`.gcda` file; if
 the file doesn't match the executable (differing number of basic block
 counts) it will ignore the contents of the file.  It then adds in the
 new execution counts and finally writes the data to the file.

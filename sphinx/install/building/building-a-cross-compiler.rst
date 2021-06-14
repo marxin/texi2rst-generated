@@ -35,20 +35,20 @@ Note that if an error occurs in any step the make process will exit.
 If you are not building GNU binutils in the same source tree as GCC,
 you will need a cross-assembler and cross-linker installed before
 configuring GCC.  Put them in the directory
-:samp:`{prefix}` / :samp:`{target}` /bin.  Here is a table of the tools
+:samp:`:samp:`{prefix}` / :samp:`{target}` /bin`.  Here is a table of the tools
 you should put in this directory:
 
-as
+:samp:`as`
   This should be the cross-assembler.
 
-ld
+:samp:`ld`
   This should be the cross-linker.
 
-ar
+:samp:`ar`
   This should be the cross-archiver: a program which can manipulate
   archive files (linker libraries) in the target machine's format.
 
-ranlib
+:samp:`ranlib`
   This should be a program to construct a symbol table in an archive file.
 
 The installation of GCC will find these programs in that directory,
@@ -67,9 +67,9 @@ you should also provide the target libraries and headers before
 configuring GCC, specifying the directories with
 :option:`--with-sysroot` or :option:`--with-headers` and
 :option:`--with-libs`.  Many targets also require 'start files' such
-as crt0.o and
-crtn.o which are linked into each executable.  There may be several
-alternatives for crt0.o, for use with profiling or other
+as :samp:`crt0.o` and
+:samp:`crtn.o` which are linked into each executable.  There may be several
+alternatives for :samp:`crt0.o`, for use with profiling or other
 compilation options.  Check your target's definition of
 ``STARTFILE_SPEC`` to find out what start files it uses.
 

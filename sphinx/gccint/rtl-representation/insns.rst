@@ -205,7 +205,7 @@ Every insn has one of the following expression codes:
   The only place that cares about the distinction between static, global,
   and weak alternate entry points, besides the front-end code that creates
   them, is the function ``output_alternate_entry_point``, in
-  final.c.
+  :samp:`final.c`.
 
   To set the kind of a label, use the ``SET_LABEL_KIND`` macro.
 
@@ -410,7 +410,7 @@ and ``call_insn`` insns:
   such insns.
 
   In the debugging output, this field is printed as a number followed by
-  a symbolic representation that locates the pattern in the md
+  a symbolic representation that locates the pattern in the :samp:`md`
   file as some small positive or negative offset from a named pattern.
 
   .. index:: REG_NOTES

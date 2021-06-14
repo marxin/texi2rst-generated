@@ -16,12 +16,12 @@ Defining target-specific uses of __attribute__
 
 Target-specific attributes may be defined for functions, data and types.
 These are described using the following target hooks; they also need to
-be documented in extend.texi.
+be documented in :samp:`extend.texi`.
 
 .. c:var:: const struct attribute_spec * TARGET_ATTRIBUTE_TABLE
 
   If defined, this target hook points to an array of :samp:`struct
-  attribute_spec` (defined in tree-core.h) specifying the machine
+  attribute_spec` (defined in :samp:`tree-core.h`) specifying the machine
   specific attributes for this target and some of the restrictions on the
   entities to which these attributes are applied and the arguments they
   take.
@@ -76,8 +76,8 @@ be documented in extend.texi.
   the expansion of ``TARGET_MERGE_DECL_ATTRIBUTES``.  You can also
   add ``handle_dll_attribute`` in the attribute table for your port
   to perform initial processing of the :samp:`dllimport` and
-  :samp:`dllexport` attributes.  This is done in i386/cygwin.h and
-  i386/i386.c, for example.
+  :samp:`dllexport` attributes.  This is done in :samp:`i386/cygwin.h` and
+  :samp:`i386/i386.c`, for example.
 
 .. function:: bool TARGET_VALID_DLLIMPORT_ATTRIBUTE_P (const_tree decl)
 

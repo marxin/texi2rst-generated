@@ -99,8 +99,8 @@ Options
 
   .. index:: -fgo-relative-import-path
 
-  A relative import is an import that starts with ./ or
-  ../.  If this option is used, :command:`gccgo` will use
+  A relative import is an import that starts with :samp:`./` or
+  :samp:`../`.  If this option is used, :command:`gccgo` will use
   :samp:`{dir}` as a prefix for the relative import when searching for it.
 
 ``-frequire-return-statement`` ``-fno-require-return-statement``

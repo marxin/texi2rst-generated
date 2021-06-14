@@ -282,7 +282,7 @@ it.
     Note: This check does not work for OpenMP programs and is disabled if used
     together with :option:`-frecursive` and :option:`-fopenmp`.
 
-    Example: Assuming you have a file foo.f90, the command
+    Example: Assuming you have a file :samp:`foo.f90`, the command
 
   .. code-block:: fortran
 

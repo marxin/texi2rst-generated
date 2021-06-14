@@ -278,10 +278,10 @@ Adding new DECL node types
 Adding a new ``DECL`` tree consists of the following steps
 
 :samp:`Add a new tree code for the {DECL} node`
-  For language specific ``DECL`` nodes, there is a .def file
+  For language specific ``DECL`` nodes, there is a :samp:`.def` file
   in each frontend directory where the tree code should be added.
   For ``DECL`` nodes that are part of the middle-end, the code should
-  be added to tree.def.
+  be added to :samp:`tree.def`.
 
 :samp:`Create a new structure type for the {DECL} node`
   These structures should inherit from one of the existing structures in
@@ -298,31 +298,31 @@ Adding a new ``DECL`` tree consists of the following steps
   ``struct tree_decl_with_vis``.
 
   For language specific ``DECL`` nodes, this new structure type
-  should go in the appropriate .h file.
+  should go in the appropriate :samp:`.h` file.
   For ``DECL`` nodes that are part of the middle-end, the structure
-  type should go in tree.h.
+  type should go in :samp:`tree.h`.
 
 Add a member to the tree structure enumerator for the node
   For garbage collection and dynamic checking purposes, each ``DECL``
   node structure type is required to have a unique enumerator value
   specified with it.
   For language specific ``DECL`` nodes, this new enumerator value
-  should go in the appropriate .def file.
+  should go in the appropriate :samp:`.def` file.
   For ``DECL`` nodes that are part of the middle-end, the enumerator
-  values are specified in treestruct.def.
+  values are specified in :samp:`treestruct.def`.
 
 :samp:`Update {union tree_node}`
   In order to make your new structure type usable, it must be added to
   ``union tree_node``.
   For language specific ``DECL`` nodes, a new entry should be added
-  to the appropriate .h file of the form
+  to the appropriate :samp:`.h` file of the form
 
   .. code-block:: c++
 
       struct tree_foo_decl GTY ((tag ("TS_VAR_DECL"))) foo_decl;
 
   For ``DECL`` nodes that are part of the middle-end, the additional
-  member goes directly into ``union tree_node`` in tree.h.
+  member goes directly into ``union tree_node`` in :samp:`tree.h`.
 
 Update dynamic checking info
   In order to be able to check whether accessing a named portion of
@@ -334,7 +334,7 @@ Update dynamic checking info
   inappropriately.
 
   For language specific ``DECL`` nodes, there is an ``init_ts``
-  function in an appropriate .c file, which initializes the lookup
+  function in an appropriate :samp:`.c` file, which initializes the lookup
   table.
   Code setting up the table for new ``DECL`` nodes should be added
   there.
@@ -352,7 +352,7 @@ Update dynamic checking info
     tree_contains_struct[FOO_DECL][TS_DECL_MINIMAL] = 1;
 
   For ``DECL`` nodes that are part of the middle-end, the setup code
-  goes into tree.c.
+  goes into :samp:`tree.c`.
 
 Add macros to access any new fields and flags
   Each added field or flag should have a macro that is used to access
@@ -374,8 +374,8 @@ Add macros to access any new fields and flags
     #define BASE_STRUCT_FIELDNAME(NODE) \
        (BASE_STRUCT_CHECK(NODE)->base_struct.fieldname
 
-  Reading them from the generated all-tree.def file (which in
-  turn includes all the tree.def files), gencheck.c is
+  Reading them from the generated :samp:`all-tree.def` file (which in
+  turn includes all the :samp:`tree.def` files), :samp:`gencheck.c` is
   used during GCC's build to generate the ``*_CHECK`` macros for all
   tree codes.
 

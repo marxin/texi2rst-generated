@@ -19,7 +19,7 @@ To enable the support for it you have to configure the compiler using
 an additional argument, :option:`--enable-objc-gc`.  This will
 build the boehm-gc library, and build an additional runtime library
 which has several enhancements to support the garbage collector.  The
-new library has a new name, libobjc_gc.a to not conflict with
+new library has a new name, :samp:`libobjc_gc.a` to not conflict with
 the non-garbage-collected library.
 
 When the garbage collector is used, the objects are allocated using the

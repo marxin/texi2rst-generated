@@ -40,14 +40,14 @@ These options are defined for OpenRISC:
 .. option:: -mdouble-float
 
   When :option:`-mhard-float` is selected, enables generation of double-precision
-  floating point instructions.  By default functions from libgcc are used
+  floating point instructions.  By default functions from :samp:`libgcc` are used
   to perform double-precision floating point operations.
 
 .. option:: -munordered-float
 
   When :option:`-mhard-float` is selected, enables generation of unordered
   floating point compare and set flag ( ``lf.sfun*`` ) instructions.  By default
-  functions from libgcc are used to perform unordered floating point
+  functions from :samp:`libgcc` are used to perform unordered floating point
   compare and set flag operations.
 
 .. option:: -mcmov
@@ -58,12 +58,12 @@ These options are defined for OpenRISC:
 .. option:: -mror
 
   Enable generation of rotate right ( ``l.ror`` ) instructions.  By default
-  functions from libgcc are used to perform rotate right operations.
+  functions from :samp:`libgcc` are used to perform rotate right operations.
 
 .. option:: -mrori
 
   Enable generation of rotate right with immediate ( ``l.rori`` ) instructions.
-  By default functions from libgcc are used to perform rotate right with
+  By default functions from :samp:`libgcc` are used to perform rotate right with
   immediate operations.
 
 .. option:: -msext
