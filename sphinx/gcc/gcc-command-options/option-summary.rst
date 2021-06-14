@@ -321,10 +321,10 @@ in the following sections.
   See :ref:`Options that Control Optimization <optimize-options>`.
 
   :option:`-faggressive-loop-optimizations` 
-  :option:`-falign-functions[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
-  :option:`-falign-jumps[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
-  :option:`-falign-labels[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
-  :option:`-falign-loops[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-functions`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-jumps`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-labels`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-loops`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]`
   :option:`-fno-allocation-dce` :option:`-fallow-store-data-races` 
   :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile`:samp:`[={path}]`
   :option:`-fauto-inc-dec`  :option:`-fbranch-probabilities` 
