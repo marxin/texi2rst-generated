@@ -27,7 +27,7 @@ the compiler's target system and we added them for compatibility with
 existing compilers.  In practice they are just as unpredictable as the
 system-specific predefined macros.  In addition, they are not part of
 any standard, and only a few compilers support them.
-Therefore, the use of assertions is less portable than the use
+Therefore, the use of assertions is **less** portable than the use
 of system-specific predefined macros.  We recommend you do not use them at
 all.
 

@@ -69,7 +69,7 @@ the compilers to be built, only those you've actually enabled will be
 built.  This will of course only build those runtime libraries, for
 which the particular compiler has been built.  Please note,
 that re-defining :envvar:`LANGUAGES` when calling :samp:`make`
-does not work anymore!
+**does not** work anymore!
 
 If the comparison of stage2 and stage3 fails, this normally indicates
 that the stage2 compiler has compiled GCC incorrectly, and is therefore

@@ -42,7 +42,7 @@ are given below.
   below, which also classifies the CPUs into families:
 
   =============  ========================================================================================================================================================================
-  Family         :samp:`-mcpu` arguments
+  **Family**     **:samp:`-mcpu` arguments**
   =============  ========================================================================================================================================================================
   :samp:`51`     :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
   :samp:`5206`   :samp:`5202` :samp:`5204` :samp:`5206`
@@ -295,7 +295,7 @@ are given below.
   Aligning variables on 32-bit boundaries produces code that runs somewhat
   faster on processors with 32-bit busses at the expense of more memory.
 
-  Warning: if you use the :option:`-malign-int` switch, GCC
+  **Warning:** if you use the :option:`-malign-int` switch, GCC
   aligns structures containing the above types differently than
   most published application binary interface specifications for the m68k.
 

@@ -32,8 +32,8 @@ variable to an automounter-aware :command:`pwd` command, e.g.,
 :command:`pawd` or :samp:`amq -w`, during the configuration and build
 phases.
 
-First, we highly recommend that GCC be built into a
-separate directory from the sources which does not reside
+First, we **highly** recommend that GCC be built into a
+separate directory from the sources which does **not** reside
 within the source tree.  This is how we generally build GCC; building
 where :samp:`{srcdir}` == :samp:`{objdir}` should still work, but doesn't
 get extensive testing; building where :samp:`{objdir}` is a subdirectory
@@ -183,7 +183,7 @@ corresponding :option:`--without` option.
   other than the default.  The toplevel installation directory defaults to
   /usr/local.
 
-  We highly recommend against :samp:`{dirname}` being the same or a
+  We **highly** recommend against :samp:`{dirname}` being the same or a
   subdirectory of :samp:`{objdir}` or vice versa.  If specifying a directory
   beneath a user's home directory tree, some shells will not expand
   :samp:`{dirname}` correctly if it contains the :samp:`~` metacharacter; use
@@ -327,7 +327,7 @@ corresponding :option:`--without` option.
   search directory :samp:`{dirname}` /include for locally installed
   header files *instead* of /usr/local/include.
 
-  You should specify :option:`--with-local-prefix` only if your
+  You should specify :option:`--with-local-prefix` **only** if your
   site has a different convention (not /usr/local) for where to put
   site-specific files.
 
@@ -380,8 +380,8 @@ corresponding :option:`--without` option.
   :option:`--prefix` provided it is not /usr.  This can be used
   to avoid the default search of /usr/local/include.
 
-  Do not specify /usr as the :option:`--with-local-prefix` !
-  The directory you use for :option:`--with-local-prefix` must not
+  **Do not** specify /usr as the :option:`--with-local-prefix` !
+  The directory you use for :option:`--with-local-prefix` **must not**
   contain any of the system's standard header files.  If it did contain
   them, certain programs would be miscompiled (including GNU Emacs, on
   certain targets), because this would override and nullify the header
@@ -1126,7 +1126,7 @@ corresponding :option:`--without` option.
   files as members of unversioned ``Archive Library`` files named
   :samp:`lib.a`) causes numerous headaches for package managers. However,
   ``Import Files`` as members of ``Archive Library`` files allow for
-  filename-based versioning of shared libraries as seen on Linux/SVR4,
+  **filename-based versioning** of shared libraries as seen on Linux/SVR4,
   where this is called the "SONAME". But as they prevent static linking,
   ``Import Files`` may be used with ``Runtime Linking`` only, where the
   linker does search for :samp:`libNAME.so` before :samp:`libNAME.a` library

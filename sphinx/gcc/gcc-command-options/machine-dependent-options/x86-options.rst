@@ -524,7 +524,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Generate output containing library calls for floating point.
 
-  Warning: the requisite libraries are not part of GCC.
+  **Warning:** the requisite libraries are not part of GCC.
   Normally the facilities of the machine's usual C compiler are used, but
   this cannot be done directly in cross-compilation.  You must make your
   own arrangements to provide suitable library functions for
@@ -575,7 +575,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   On x86-64, :option:`-malign-double` is enabled by default.
 
-  Warning: if you use the :option:`-malign-double` switch,
+  **Warning:** if you use the :option:`-malign-double` switch,
   structures containing the above types are aligned differently than
   the published application binary interface specifications for the x86-32
   and are not binary compatible with structures in code compiled
@@ -600,7 +600,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   Notice that neither of these options enable any extra precision over the x87
   standard of 80 bits for a ``long double``.
 
-  Warning: if you override the default value for your target ABI, this
+  **Warning:** if you override the default value for your target ABI, this
   changes the size of 
   structures and arrays containing ``long double`` variables,
   as well as modifying the function calling convention for functions taking
@@ -615,7 +615,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   of 128 bits makes the ``long double`` type equivalent to the
   ``__float128`` type. This is the default for 64-bit Bionic C library.
 
-  Warning: if you override the default value for your target ABI, this
+  **Warning:** if you override the default value for your target ABI, this
   changes the size of
   structures and arrays containing ``long double`` variables,
   as well as modifying the function calling convention for functions taking
@@ -649,7 +649,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   override the :option:`-mrtd` option by using the function attribute
   ``cdecl``.  See :ref:`function-attributes`.
 
-  Warning: this calling convention is incompatible with the one
+  **Warning:** this calling convention is incompatible with the one
   normally used on Unix, so you cannot use it if you need to call
   libraries compiled with the Unix compiler.
 
@@ -670,7 +670,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function by using the function attribute ``regparm``.
   See :ref:`function-attributes`.
 
-  Warning: if you use this switch, and
+  **Warning:** if you use this switch, and
   :samp:`{num}` is nonzero, then you must build all modules with the same
   value, including any libraries.  This includes the system libraries and
   startup modules.
@@ -682,7 +682,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function by using the function attribute ``sseregparm``.
   See :ref:`function-attributes`.
 
-  Warning: if you use this switch then you must build all
+  **Warning:** if you use this switch then you must build all
   modules with the same value, including any libraries.  This includes
   the system libraries and startup modules.
 
@@ -728,7 +728,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128 bits).
 
-  Warning: When generating code for the x86-64 architecture with
+  **Warning:** When generating code for the x86-64 architecture with
   SSE extensions disabled, :option:`-mpreferred-stack-boundary`:samp:`=3` can be
   used to keep the stack boundary aligned to 8 byte boundary.  Since
   x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
@@ -1311,7 +1311,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   disabled, :option:`-mskip-rax-setup` can be used to skip setting up RAX
   register when there are no variable arguments passed in vector registers.
 
-  Warning: Since RAX register is used to avoid unnecessarily
+  **Warning:** Since RAX register is used to avoid unnecessarily
   saving vector registers on stack when passing variable arguments, the
   impacts of this option are callees may waste some stack space,
   misbehave or jump to a random location.  GCC 4.4 or newer don't have

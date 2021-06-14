@@ -117,7 +117,7 @@ per-method-group locks, then TM methods need to avoid those deadlocks:
   per-method-group lock before doing the wake-up, and only blocking on this lock
   using a futex if this bit is not group).
 
-TODO: Can reuse serial lock for gl-*? And if we can, does it make
+**TODO**: Can reuse serial lock for gl-*? And if we can, does it make
 sense to introduce further complexity in the serial lock? For gl-*, we can
 really only avoid an abort if we do -wb and -vbv.
 
@@ -211,7 +211,7 @@ transactions maintain a flag or timestamp in the public/shared part of the
 transaction descriptor. Before blocking, privatizers need to let the other
 transactions know that they should wake up the privatizer.
 
-TODO Ho to implement the waiters? Should those flags be
+**TODO** Ho to implement the waiters? Should those flags be
 per-transaction or at a central place? We want to avoid one wake/wait call
 per active transactions, so we might want to use either a tree or combining
 to reduce the syscall overhead, or rather spin for a long amount of time
@@ -252,7 +252,7 @@ transactions in the future. Everything beyond that is highly related to proper
 contention management across all of the TM (including with TM method to
 choose), and is future work.
 
-TODO Handling thread priorities: We want to avoid priority inversion
+**TODO** Handling thread priorities: We want to avoid priority inversion
 but it's unclear how often that actually matters in practice. Workloads that
 have threads with different priorities will likely also require lower latency
 or higher throughput for high-priority threads. Therefore, it probably makes

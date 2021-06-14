@@ -1051,12 +1051,12 @@ expression according to the following syntax:
   the reservation.
 
 * :samp:`|` is used for describing a reservation described by the first
-  regular expression or a reservation described by the second
-  regular expression or etc.
+  regular expression **or** a reservation described by the second
+  regular expression **or** etc.
 
 * :samp:`+` is used for describing a reservation described by the first
-  regular expression and a reservation described by the
-  second regular expression and etc.
+  regular expression **and** a reservation described by the
+  second regular expression **and** etc.
 
 * :samp:`*` is used for convenience and simply means a sequence in which
   the regular expression are repeated :samp:`{number}` times with cycle

@@ -98,7 +98,7 @@ These command-line options are defined for RISC-V targets:
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128-bits).
 
-  Warning: If you use this switch, then you must build all modules with
+  **Warning:** If you use this switch, then you must build all modules with
   the same value, including any libraries.  This includes the system libraries
   and startup modules.
 

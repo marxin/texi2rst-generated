@@ -109,7 +109,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 .. option:: -msoft-float
 
   Generate output containing library calls for floating point.
-  Warning: the requisite libraries are not available for all HPPA
+  **Warning:** the requisite libraries are not available for all HPPA
   targets.  Normally the facilities of the machine's usual C compiler are
   used, but this cannot be done directly in cross-compilation.  You must make
   your own arrangements to provide suitable library functions for

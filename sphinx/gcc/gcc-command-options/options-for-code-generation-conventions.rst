@@ -210,7 +210,7 @@ it.
   Short structures and unions are those whose size and alignment match
   that of some integer type.
 
-  Warning: code compiled with the :option:`-fpcc-struct-return`
+  **Warning:** code compiled with the :option:`-fpcc-struct-return`
   switch is not binary compatible with code compiled with the
   :option:`-freg-struct-return` switch.
   Use it to conform to a non-default application binary interface.
@@ -228,7 +228,7 @@ it.
   the principal compiler.  In those cases, we can choose the standard, and
   we chose the more efficient register return alternative.
 
-  Warning: code compiled with the :option:`-freg-struct-return`
+  **Warning:** code compiled with the :option:`-freg-struct-return`
   switch is not binary compatible with code compiled with the
   :option:`-fpcc-struct-return` switch.
   Use it to conform to a non-default application binary interface.
@@ -239,7 +239,7 @@ it.
   declared range of possible values.  Specifically, the ``enum`` type
   is equivalent to the smallest integer type that has enough room.
 
-  Warning: the :option:`-fshort-enums` switch causes GCC to generate
+  **Warning:** the :option:`-fshort-enums` switch causes GCC to generate
   code that is not binary compatible with code generated without that switch.
   Use it to conform to a non-default application binary interface.
 
@@ -249,7 +249,7 @@ it.
   unsigned int`` instead of the default for the target.  This option is
   useful for building programs to run under WINE.
 
-  Warning: the :option:`-fshort-wchar` switch causes GCC to generate
+  **Warning:** the :option:`-fshort-wchar` switch causes GCC to generate
   code that is not binary compatible with code generated without that switch.
   Use it to conform to a non-default application binary interface.
 
@@ -539,7 +539,7 @@ it.
   alignment (that is, objects with default alignment requirements larger than
   this are output potentially unaligned at the next fitting location.
 
-  Warning: the :option:`-fpack-struct` switch causes GCC to generate
+  **Warning:** the :option:`-fpack-struct` switch causes GCC to generate
   code that is not binary compatible with code generated without that switch.
   Additionally, it makes the code suboptimal.
   Use it to conform to a non-default application binary interface.
@@ -550,7 +550,7 @@ it.
   change the way C symbols are represented in the object file.  One use
   is to help link with legacy assembly code.
 
-  Warning: the :option:`-fleading-underscore` switch causes GCC to
+  **Warning:** the :option:`-fleading-underscore` switch causes GCC to
   generate code that is not binary compatible with code generated without that
   switch.  Use it to conform to a non-default application binary interface.
   Not all targets provide complete support for this switch.
@@ -601,7 +601,7 @@ it.
   Using this feature can very substantially improve linking and
   load times of shared object libraries, produce more optimized
   code, provide near-perfect API export and prevent symbol clashes.
-  It is strongly recommended that you use this in any shared objects
+  It is **strongly** recommended that you use this in any shared objects
   you distribute.
 
   Despite the nomenclature, :samp:`default` always means public; i.e.,
@@ -628,10 +628,10 @@ it.
   the declarations you wish to set visibility for with (for example)
   ``#pragma GCC visibility push(hidden)`` and
   ``#pragma GCC visibility pop``.
-  Bear in mind that symbol visibility should be viewed as
-  part of the API interface contract and thus all new code should
+  Bear in mind that symbol visibility should be viewed **as
+  part of the API interface contract** and thus all new code should
   always specify visibility when it is not the default; i.e., declarations
-  only for use within the local DSO should always be marked explicitly
+  only for use within the local DSO should **always** be marked explicitly
   as hidden as so to avoid PLT indirection overheads---making this
   abundantly clear also aids readability and self-documentation of the code.
   Note that due to ISO C++ specification requirements, ``operator new`` and
