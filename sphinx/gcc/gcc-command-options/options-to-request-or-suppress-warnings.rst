@@ -1998,7 +1998,6 @@ warn at all unless optimization is enabled.
 
   Default option value for :option:`-Wstring-compare`.
 
-``-Wno-stringop-overflow``
 .. option:: -Wstringop-overflow, -Wstringop-overflow=type
 
   Warn for calls to string manipulation functions such as ``memcpy`` and
@@ -2038,8 +2037,7 @@ warn at all unless optimization is enabled.
 
   Option :option:`-Wstringop-overflow`:samp:`=2` is enabled by default.
 
-  .. option:: -Wstringop-overflow, -Wstringop-overflow=1
-
+  ``-Wstringop-overflow=1``
     The :option:`-Wstringop-overflow`:samp:`=1` option uses type-zero Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     does not warn for writes past the end of subobjects of larger objects accessed
@@ -2048,10 +2046,6 @@ warn at all unless optimization is enabled.
     one of them.  On Linux systems, when optimization is enabled at this setting
     the option warns for the same code as when the ``_FORTIFY_SOURCE`` macro
     is defined to a non-zero value.
-
-  .. option:: -Wno-stringop-overflow
-
-    Default option value for :option:`-Wstringop-overflow`.
 
   ``-Wstringop-overflow=2``
     The :option:`-Wstringop-overflow`:samp:`=2` option uses type-one Object Size Checking
