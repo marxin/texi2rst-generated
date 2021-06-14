@@ -72,7 +72,7 @@ way around them.
   If new system header files are installed, nothing automatically arranges
   to update the corrected header files.  They can be updated using the
   :command:`mkheaders` script installed in
-  :samp:`:samp:`{libexecdir}` /gcc/ :samp:`{target}` / :samp:`{version}` /install-tools/`.
+  :samp:`{libexecdir}/gcc/{target}/{version}/install-tools/`.
 
 * 
   .. index:: floating point precision

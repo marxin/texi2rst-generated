@@ -273,7 +273,7 @@ Options
   gcov uses the full pathname of the source files to create
   an output filename.  This can lead to long filenames that can overflow
   filesystem limits.  This option creates names of the form
-  :samp:`:samp:`{source-file}` ## :samp:`{md5}`.gcov`,
+  :samp:`{source-file}##{md5}.gcov`,
   where the :samp:`{source-file}` component is the final filename part and
   the :samp:`{md5}` component is calculated from the full mangled name that
   would have been used otherwise.  The option is an alternative
@@ -282,7 +282,7 @@ Options
   :command:`gcov` should be run with the current directory the same as that
 when you invoked the compiler.  Otherwise it will not be able to locate
 the source files.  :command:`gcov` produces files called
-:samp:`:samp:`{mangledname}`.gcov` in the current directory.  These contain
+:samp:`{mangledname}.gcov` in the current directory.  These contain
 the coverage information of the source file they correspond to.
 One :samp:`.gcov` file is produced for each source (or header) file
 containing code,

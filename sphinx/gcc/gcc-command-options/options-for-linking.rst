@@ -107,8 +107,8 @@ not doing a link step.
   plus any that you specify with :option:`-L`.
 
   Static libraries are archives of object files, and have file names
-  like :samp:`lib :samp:`{library}`.a`.  Some targets also support shared
-  libraries, which typically have names like :samp:`lib :samp:`{library}`.so`.
+  like :samp:`lib{library}.a`.  Some targets also support shared
+  libraries, which typically have names like :samp:`lib{library}.so`.
   If both static and shared libraries are found, the linker gives
   preference to linking with the shared library unless the
   :option:`-static` option is used.

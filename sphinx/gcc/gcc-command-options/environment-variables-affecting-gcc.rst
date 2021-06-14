@@ -85,7 +85,7 @@ See :ref:`driver`.
   tries looking in the usual places for the subprogram.
 
   The default value of :envvar:`GCC_EXEC_PREFIX` is
-  :samp:`:samp:`{prefix}` /lib/gcc/` where :samp:`{prefix}` is the prefix to
+  :samp:`{prefix}/lib/gcc/` where :samp:`{prefix}` is the prefix to
   the installed compiler. In many cases :samp:`{prefix}` is the value
   of ``prefix`` when you ran the :samp:`configure` script.
 

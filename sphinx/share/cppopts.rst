@@ -287,9 +287,9 @@
 
 .. option:: -fmacro-prefix-map=old=new
 
-  When preprocessing files residing in directory :samp:`:samp:`{old}``,
+  When preprocessing files residing in directory :samp:`{old}`,
   expand the ``__FILE__`` and ``__BASE_FILE__`` macros as if the
-  files resided in directory :samp:`:samp:`{new}`` instead.  This can be used
+  files resided in directory :samp:`{new}` instead.  This can be used
   to change an absolute path to a relative path by using :samp:`.` for
   :samp:`{new}` which can result in more reproducible builds that are
   location independent.  This option also affects

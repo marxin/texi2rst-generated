@@ -195,63 +195,63 @@ corresponding :option:`--without` option.
   .. option:: --exec-prefix=dirname
 
     Specify the toplevel installation directory for architecture-dependent
-    files.  The default is :samp:`:samp:`{prefix}``.
+    files.  The default is :samp:`{prefix}`.
 
   .. option:: --bindir=dirname
 
     Specify the installation directory for the executables called by users
     (such as :command:`gcc` and :command:`g++`).  The default is
-    :samp:`:samp:`{exec-prefix}` /bin`.
+    :samp:`{exec-prefix}/bin`.
 
   .. option:: --libdir=dirname
 
     Specify the installation directory for object code libraries and
-    internal data files of GCC.  The default is :samp:`:samp:`{exec-prefix}` /lib`.
+    internal data files of GCC.  The default is :samp:`{exec-prefix}/lib`.
 
   .. option:: --libexecdir=dirname
 
     Specify the installation directory for internal executables of GCC.
-    The default is :samp:`:samp:`{exec-prefix}` /libexec`.
+    The default is :samp:`{exec-prefix}/libexec`.
 
   .. option:: --with-slibdir=dirname
 
     Specify the installation directory for the shared libgcc library.  The
-    default is :samp:`:samp:`{libdir}``.
+    default is :samp:`{libdir}`.
 
   .. option:: --datarootdir=dirname
 
     Specify the root of the directory tree for read-only architecture-independent
-    data files referenced by GCC.  The default is :samp:`:samp:`{prefix}` /share`.
+    data files referenced by GCC.  The default is :samp:`{prefix}/share`.
 
   .. option:: --infodir=dirname
 
     Specify the installation directory for documentation in info format.
-    The default is :samp:`:samp:`{datarootdir}` /info`.
+    The default is :samp:`{datarootdir}/info`.
 
   .. option:: --datadir=dirname
 
     Specify the installation directory for some architecture-independent
-    data files referenced by GCC.  The default is :samp:`:samp:`{datarootdir}``.
+    data files referenced by GCC.  The default is :samp:`{datarootdir}`.
 
   .. option:: --docdir=dirname
 
     Specify the installation directory for documentation files (other
-    than Info) for GCC.  The default is :samp:`:samp:`{datarootdir}` /doc`.
+    than Info) for GCC.  The default is :samp:`{datarootdir}/doc`.
 
   .. option:: --htmldir=dirname
 
     Specify the installation directory for HTML documentation files.
-    The default is :samp:`:samp:`{docdir}``.
+    The default is :samp:`{docdir}`.
 
   .. option:: --pdfdir=dirname
 
     Specify the installation directory for PDF documentation files.
-    The default is :samp:`:samp:`{docdir}``.
+    The default is :samp:`{docdir}`.
 
   .. option:: --mandir=dirname
 
     Specify the installation directory for manual pages.  The default is
-    :samp:`:samp:`{datarootdir}` /man`.  (Note that the manual pages are only extracts
+    :samp:`{datarootdir}/man`.  (Note that the manual pages are only extracts
     from the full GCC manuals, which are provided in Texinfo format.  The manpages
     are derived by an automatic conversion process from parts of the full
     manual.)
@@ -324,7 +324,7 @@ corresponding :option:`--without` option.
   Specify the
   installation directory for local include files.  The default is
   :samp:`/usr/local`.  Specify this option if you want the compiler to
-  search directory :samp:`:samp:`{dirname}` /include` for locally installed
+  search directory :samp:`{dirname}/include` for locally installed
   header files *instead* of :samp:`/usr/local/include`.
 
   You should specify :option:`--with-local-prefix` **only** if your
@@ -470,8 +470,8 @@ corresponding :option:`--without` option.
   an assembler, which are:
 
   * Unless GCC is being built with a cross compiler, check the
-    :samp:`:samp:`{libexec}` /gcc/ :samp:`{target}` / :samp:`{version}`` directory.
-    :samp:`{libexec}` defaults to :samp:`:samp:`{exec-prefix}` /libexec`;
+    :samp:`{libexec}/gcc/{target}/{version}` directory.
+    :samp:`{libexec}` defaults to :samp:`{exec-prefix}/libexec`;
     :samp:`{exec-prefix}` defaults to :samp:`{prefix}`, which
     defaults to :samp:`/usr/local` unless overridden by the
     :option:`--prefix`:samp:`={pathname}` switch described above.  :samp:`{target}`
@@ -1035,7 +1035,7 @@ corresponding :option:`--without` option.
 .. option:: --with-cpp-install-dir=dirname
 
   Specify that the user visible :command:`cpp` program should be installed
-  in :samp:`:samp:`{prefix}` / :samp:`{dirname}` /cpp`, in addition to :samp:`{bindir}`.
+  in :samp:`{prefix}/{dirname}/cpp`, in addition to :samp:`{bindir}`.
 
 .. option:: --enable-comdat
 
@@ -1111,9 +1111,9 @@ corresponding :option:`--without` option.
 
   Specify
   that runtime libraries should be installed in the compiler specific
-  subdirectory (:samp:`:samp:`{libdir}` /gcc`) rather than the usual places.  In
+  subdirectory (:samp:`{libdir}/gcc`) rather than the usual places.  In
   addition, :samp:`libstdc++`'s include files will be installed into
-  :samp:`:samp:`{libdir}`` unless you overruled it by using
+  :samp:`{libdir}` unless you overruled it by using
   :option:`--with-gxx-include-dir`:samp:`={dirname}`.  Using this option is
   particularly useful if you intend to use several versions of GCC in
   parallel.  The default is :samp:`yes` for :samp:`libada`, and :samp:`no` for
@@ -1494,8 +1494,8 @@ corresponding :option:`--without` option.
 
 .. option:: --with-libiconv-prefix=dir
 
-  Search for libiconv header files in :samp:`:samp:`{dir}` /include` and
-  libiconv library files in :samp:`:samp:`{dir}` /lib`.
+  Search for libiconv header files in :samp:`{dir}/include` and
+  libiconv library files in :samp:`{dir}/lib`.
 
 .. option:: --enable-obsolete
 
@@ -1744,7 +1744,7 @@ corresponding :option:`--without` option.
 
   Enable offloading to targets :samp:`{target1}`, ..., :samp:`{targetN}`.
   Offload compilers are expected to be already installed.  Default search
-  path for them is :samp:`:samp:`{exec-prefix}``, but it can be changed by
+  path for them is :samp:`{exec-prefix}`, but it can be changed by
   specifying paths :samp:`{path1}`, ..., :samp:`{pathN}`.
 
   .. code-block:: bash
@@ -1861,8 +1861,8 @@ The following options only apply to building cross compilers.
   The :samp:`{dir}` argument specifies a directory which has the target include
   files.  These include files will be copied into the :samp:`gcc` install
   directory.  *This option with the :samp:`{dir}` argument is required* when
-  building a cross compiler, if :samp:`:samp:`{prefix}` / :samp:`{target}` /sys-include`
-  doesn't pre-exist.  If :samp:`:samp:`{prefix}` / :samp:`{target}` /sys-include` does
+  building a cross compiler, if :samp:`{prefix}/{target}/sys-include`
+  doesn't pre-exist.  If :samp:`{prefix}/{target}/sys-include` does
   pre-exist, the :samp:`{dir}` argument may be omitted.  :command:`fixincludes`
   will be run on these files to make them compatible with GCC.
 

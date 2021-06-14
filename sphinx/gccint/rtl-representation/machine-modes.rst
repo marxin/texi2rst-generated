@@ -407,7 +407,7 @@ mode classes are:
 .. envvar:: MODE_CC
 
   Modes representing condition code values.  These are ``CCmode`` plus
-  any ``CC_MODE`` modes listed in the :samp:`:samp:`{machine}` -modes.def`.
+  any ``CC_MODE`` modes listed in the :samp:`{machine}-modes.def`.
   See :ref:`jump-patterns`,
   also see Condition Code.
 
@@ -651,7 +651,7 @@ in the compilation process.   The third symbol cannot be overridden.
   always correct for targets whose modes have a fixed size.  Targets
   that might increase the size of a mode beyond this default should define
   ``MAX_BITSIZE_MODE_ANY_MODE`` to the actual upper limit in
-  :samp:`:samp:`{machine}` -modes.def`.
+  :samp:`{machine}-modes.def`.
 
 .. index:: byte_mode
 

@@ -19,7 +19,7 @@ autoconf.  The list of fragments to incorporate is set by
 :samp:`config.gcc` (and occasionally :samp:`config.build`
 and :samp:`config.host`); See :ref:`system-config`.
 
-Fragments are named either :samp:`t- :samp:`{target}`` or :samp:`x- :samp:`{host}``,
+Fragments are named either :samp:`t-{target}` or :samp:`x-{host}`,
 depending on whether they are relevant to configuring GCC to produce
 code for a particular target, or to configuring GCC to run on a
 particular host.  Here :samp:`{target}` and :samp:`{host}` are mnemonics
@@ -27,8 +27,8 @@ which usually have some relationship to the canonical system name, but
 no formal connection.
 
 If these files do not exist, it means nothing needs to be added for a
-given target or host.  Most targets need a few :samp:`t- :samp:`{target}``
-fragments, but needing :samp:`x- :samp:`{host}`` fragments is rare.
+given target or host.  Most targets need a few :samp:`t-{target}`
+fragments, but needing :samp:`x-{host}` fragments is rare.
 
 .. toctree::
   :maxdepth: 2

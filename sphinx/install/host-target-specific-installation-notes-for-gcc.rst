@@ -92,7 +92,7 @@ Use Newlib (2019-01-16, or newer).
 
 To run the binaries, install the HSA Runtime from the
 `ROCm Platform <https://rocm.github.io>`_, and use
-:samp:`libexec/gcc/amdhsa-amdhsa/ :samp:`{version}` /gcn-run` to launch them
+:samp:`libexec/gcc/amdhsa-amdhsa/{version}/gcn-run` to launch them
 on the GPU.
 
 arc-\*-elf32
@@ -1156,11 +1156,11 @@ not interested in supporting older, a.out or COFF-based, versions of
 VxWorks in GCC 3.
 
 VxWorks comes with an older version of GCC installed in
-:samp:`:samp:`{$WIND_BASE}` /host`; we recommend you do not overwrite it.
+:samp:`{$WIND_BASE}/host`; we recommend you do not overwrite it.
 Choose an installation :samp:`{prefix}` entirely outside :samp:`{$WIND_BASE}`.
-Before running :command:`configure`, create the directories :samp:`:samp:`{prefix}``
-and :samp:`:samp:`{prefix}` /bin`.  Link or copy the appropriate assembler,
-linker, etc. into :samp:`:samp:`{prefix}` /bin`, and set your :samp:`{PATH}` to
+Before running :command:`configure`, create the directories :samp:`{prefix}`
+and :samp:`{prefix}/bin`.  Link or copy the appropriate assembler,
+linker, etc. into :samp:`{prefix}/bin`, and set your :samp:`{PATH}` to
 include that directory while running both :command:`configure` and
 :command:`make`.
 
@@ -1169,7 +1169,7 @@ You must give :command:`configure` the
 find the VxWorks system headers.  Since VxWorks is a cross compilation
 target only, you must also specify :option:`--target`:samp:`={target}`.
 :command:`configure` will attempt to create the directory
-:samp:`:samp:`{prefix}` / :samp:`{target}` /sys-include` and copy files into it;
+:samp:`{prefix}/{target}/sys-include` and copy files into it;
 make sure the user running :command:`configure` has sufficient privilege
 to do so.
 

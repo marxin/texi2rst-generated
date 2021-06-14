@@ -12,6 +12,6 @@ Host Makefile Fragments
 
 .. index:: x-host
 
-The use of :samp:`x- :samp:`{host}`` fragments is discouraged.  You should only
+The use of :samp:`x-{host}` fragments is discouraged.  You should only
 use it for makefile dependencies.
 

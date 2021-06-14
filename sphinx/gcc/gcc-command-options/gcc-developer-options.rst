@@ -486,7 +486,7 @@ The files are created in the directory of the output file.
   :samp:`graph`
     For each of the other indicated dump files ( :option:`-fdump-rtl-`:samp:`{pass}` ),
     dump a representation of the control flow graph suitable for viewing with
-    GraphViz to :samp:`:samp:`{file}`. :samp:`{passid}`. :samp:`{pass}`.dot`.  Each function in
+    GraphViz to :samp:`{file}.{passid}.{pass}.dot`.  Each function in
     the file is pretty-printed as a subgraph, so that GraphViz can render them
     all in a single plot.
 
@@ -1078,9 +1078,9 @@ The files are created in the directory of the output file.
   Print the path to OS libraries for the selected
   multilib, relative to some :samp:`lib` subdirectory.  If OS libraries are
   present in the :samp:`lib` subdirectory and no multilibs are used, this is
-  usually just :samp:`.`, if OS libraries are present in :samp:`lib :samp:`{suffix}``
+  usually just :samp:`.`, if OS libraries are present in :samp:`lib{suffix}`
   sibling directories this prints e.g. :samp:`../lib64`, :samp:`../lib` or
-  :samp:`../lib32`, or if OS libraries are present in :samp:`lib/ :samp:`{subdir}``
+  :samp:`../lib32`, or if OS libraries are present in :samp:`lib/{subdir}`
   subdirectories it prints e.g. :samp:`amd64`, :samp:`sparcv9` or :samp:`ev6`.
 
 .. option:: -print-multiarch

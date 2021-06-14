@@ -28,9 +28,9 @@ subdirectories that contain parts of GCC and its runtime libraries:
 :samp:`fixincludes`
   The support for fixing system headers to work with GCC.  See
   :samp:`fixincludes/README` for more information.  The headers fixed by
-  this mechanism are installed in :samp:`:samp:`{libsubdir}` /include-fixed`.
+  this mechanism are installed in :samp:`{libsubdir}/include-fixed`.
   Along with those headers, :samp:`README-fixinc` is also installed, as
-  :samp:`:samp:`{libsubdir}` /include-fixed/README`.
+  :samp:`{libsubdir}/include-fixed/README`.
 
 :samp:`gcc`
   The main sources of GCC itself (except for runtime libraries),

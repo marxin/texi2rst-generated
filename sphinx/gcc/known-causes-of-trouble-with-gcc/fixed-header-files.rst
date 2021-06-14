@@ -23,7 +23,7 @@ doesn't do the right thing automatically.
   system version, the fixed header files of GCC are not automatically
   updated.  They can be updated using the :command:`mkheaders` script
   installed in
-  :samp:`:samp:`{libexecdir}` /gcc/ :samp:`{target}` / :samp:`{version}` /install-tools/`.
+  :samp:`{libexecdir}/gcc/{target}/{version}/install-tools/`.
 
 * On some systems, header file directories contain
   machine-specific symbolic links in certain places.  This makes it

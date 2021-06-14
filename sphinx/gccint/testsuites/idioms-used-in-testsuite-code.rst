@@ -8,14 +8,14 @@
 Idioms Used in Testsuite Code
 *****************************
 
-In general, C testcases have a trailing :samp:`- :samp:`{n}`.c`, starting
+In general, C testcases have a trailing :samp:`-{n}.c`, starting
 with :samp:`-1.c`, in case other testcases with similar names are added
 later.  If the test is a test of some well-defined feature, it should
 have a name referring to that feature such as
-:samp:`:samp:`{feature}` -1.c`.  If it does not test a well-defined feature
+:samp:`{feature}-1.c`.  If it does not test a well-defined feature
 but just happens to exercise a bug somewhere in the compiler, and a
 bug report has been filed for this bug in the GCC bug database,
-:samp:`pr :samp:`{bug-number}` -1.c` is the appropriate form of name.
+:samp:`pr{bug-number}-1.c` is the appropriate form of name.
 Otherwise (for miscellaneous bugs not filed in the GCC bug database),
 and previously more generally, test cases are named after the date on
 which they were added.  This allows people to tell at a glance whether

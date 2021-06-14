@@ -93,7 +93,7 @@ only needs to be given once.  For example:
   #define vector_element_size(SIZE, NELTS) \
     (exact_div (SIZE, NELTS).to_constant ())
 
-Target-specific code in :samp:`config/ :samp:`{cpu}`` only needs to handle
+Target-specific code in :samp:`config/{cpu}` only needs to handle
 non-constant ``poly_int`` s if ``NUM_POLY_INT_COEFFS`` is greater
 than one.  For other targets, ``poly_int`` degenerates to a compile-time
 constant and is often interchangable with a normal scalar integer.
@@ -111,8 +111,8 @@ There are two main exceptions:
   * Convert the target macro to a target hook (for all targets).
 
   * Put the target's implementation of the target macro in its
-    :samp:`:samp:`{cpu}`.c` file and call it from the target macro in the
-    :samp:`:samp:`{cpu}`.h` file.
+    :samp:`{cpu}.c` file and call it from the target macro in the
+    :samp:`{cpu}.h` file.
 
   * Add ``to_constant ()`` calls where necessary.  The previous option
     is preferable because it will help with any future conversion of the

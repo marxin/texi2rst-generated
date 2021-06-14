@@ -21,22 +21,22 @@ depend on this debugging information (catching Ada exceptions for
 instance).
 
 That step completes the installation of GCC; user level binaries can
-be found in :samp:`:samp:`{prefix}` /bin` where :samp:`{prefix}` is the value
+be found in :samp:`{prefix}/bin` where :samp:`{prefix}` is the value
 you specified with the :option:`--prefix` to configure (or
 :samp:`/usr/local` by default).  (If you specified :option:`--bindir`,
 that directory will be used instead; otherwise, if you specified
-:option:`--exec-prefix`, :samp:`:samp:`{exec-prefix}` /bin` will be used.)
+:option:`--exec-prefix`, :samp:`{exec-prefix}/bin` will be used.)
 Headers for the C++ library are installed in
-:samp:`:samp:`{prefix}` /include`; libraries in :samp:`:samp:`{libdir}``
-(normally :samp:`:samp:`{prefix}` /lib`); internal parts of the compiler in
-:samp:`:samp:`{libdir}` /gcc` and :samp:`:samp:`{libexecdir}` /gcc`; documentation
-in info format in :samp:`:samp:`{infodir}`` (normally
-:samp:`:samp:`{prefix}` /info`).
+:samp:`{prefix}/include`; libraries in :samp:`{libdir}`
+(normally :samp:`{prefix}/lib`); internal parts of the compiler in
+:samp:`{libdir}/gcc` and :samp:`{libexecdir}/gcc`; documentation
+in info format in :samp:`{infodir}` (normally
+:samp:`{prefix}/info`).
 
 When installing cross-compilers, GCC's executables
-are not only installed into :samp:`:samp:`{bindir}``, that
-is, :samp:`:samp:`{exec-prefix}` /bin`, but additionally into
-:samp:`:samp:`{exec-prefix}` / :samp:`{target-alias}` /bin`, if that directory
+are not only installed into :samp:`{bindir}`, that
+is, :samp:`{exec-prefix}/bin`, but additionally into
+:samp:`{exec-prefix}/{target-alias}/bin`, if that directory
 exists.  Typically, such :dfn:`tooldirs` hold target-specific
 binutils, including assembler and linker.
 
@@ -55,7 +55,7 @@ need not exist yet; it will be created if necessary.
 There is a subtle point with tooldirs and ``DESTDIR`` :
 If you relocate a cross-compiler installation with
 e.g. :samp:`DESTDIR={rootdir}`, then the directory
-:samp:`:samp:`{rootdir}` / :samp:`{exec-prefix}` / :samp:`{target-alias}` /bin` will
+:samp:`{rootdir}/{exec-prefix}/{target-alias}/bin` will
 be filled with duplicated GCC executables only if it already exists,
 it will not be created otherwise.  This is regarded as a feature,
 not as a bug, because it gives slightly more control to the packagers
@@ -76,7 +76,7 @@ gcc@gcc.gnu.org indicating
 that you successfully built and installed GCC.
 Include the following information:
 
-* Output from running :samp:`:samp:`{srcdir}` /config.guess`.  Do not send
+* Output from running :samp:`{srcdir}/config.guess`.  Do not send
   that file itself, just the one-line output from running it.
 
 * The output of :samp:`gcc -v` for your newly installed :command:`gcc`.
@@ -120,7 +120,7 @@ If you find a bug, please report it following the
 If you want to print the GCC manuals, do :samp:`cd {objdir}; make
 dvi`.  You will need to have :command:`texi2dvi` (version at least 4.7)
 and Tex installed.  This creates a number of :samp:`.dvi` files in
-subdirectories of :samp:`:samp:`{objdir}``; these may be converted for
+subdirectories of :samp:`{objdir}`; these may be converted for
 printing with programs such as :command:`dvips`.  Alternately, by using
 :samp:`make pdf` in place of :samp:`make dvi`, you can create documentation
 in the form of :samp:`.pdf` files; this requires :command:`texi2pdf`, which
@@ -131,7 +131,7 @@ recent version of GCC.
 
 If you would like to generate online HTML documentation, do :samp:`cd
 {objdir}; make html` and HTML will be generated for the gcc manuals in
-:samp:`:samp:`{objdir}` /gcc/HTML`.
+:samp:`{objdir}/gcc/HTML`.
 
 .. ***Binaries****************************************************************
 

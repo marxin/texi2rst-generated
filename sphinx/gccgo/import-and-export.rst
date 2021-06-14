@@ -14,7 +14,7 @@ package is imported, :command:`gccgo` must be able to find the file.
 
 .. index:: .gox
 
-When Go code imports the package :samp:`:samp:`{gopackage}``, :command:`gccgo`
+When Go code imports the package :samp:`{gopackage}`, :command:`gccgo`
 will look for the import data using the following filenames, using the
 first one that it finds.
 
@@ -25,9 +25,9 @@ system directories.  Finally the compiler will search the current
 directory (to search the current directory earlier, use :samp:`-I.`).
 
 The compiler will extract the export information directly from the
-compiled object file.  The file :samp:`:samp:`{gopackage}`.gox` will
+compiled object file.  The file :samp:`{gopackage}.gox` will
 typically contain nothing but export data.  This can be generated from
-:samp:`:samp:`{gopackage}`.o` via
+:samp:`{gopackage}.o` via
 
 .. code-block:: c++
 
@@ -35,7 +35,7 @@ typically contain nothing but export data.  This can be generated from
 
 For example, it may be desirable to extract the export information
 from several different packages into their independent
-:samp:`:samp:`{gopackage}`.gox` files, and then to combine the different
+:samp:`{gopackage}.gox` files, and then to combine the different
 package object files together into a single shared library or archive.
 
 At link time you must explicitly tell :command:`gccgo` which files to

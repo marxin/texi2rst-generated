@@ -51,8 +51,8 @@ less helpful---they only report on the line where the macro call
 appears.  If your complex macros behave like functions, you can replace
 them with inline functions to solve this problem.
 
-:command:`gcov` creates a logfile called :samp:`:samp:`{sourcefile}`.gcov` which
-indicates how many times each line of a source file :samp:`:samp:`{sourcefile}`.c`
+:command:`gcov` creates a logfile called :samp:`{sourcefile}.gcov` which
+indicates how many times each line of a source file :samp:`{sourcefile}.c`
 has executed.  You can use these logfiles along with :command:`gprof` to aid
 in fine-tuning the performance of your programs.  :command:`gprof` gives
 timing information you can use along with the information you get from
