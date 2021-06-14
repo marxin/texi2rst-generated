@@ -17,11 +17,11 @@ in the following sections.
   :option:`-c`  :option:`-S`  :option:`-E`  :option:`-o` :samp:`{file}` 
   :option:`-dumpbase` :samp:`{dumpbase}`  :option:`-dumpbase-ext` :samp:`{auxdropsuf}` 
   :option:`-dumpdir` :samp:`{dumppfx}`  :option:`-x` :samp:`{language}`  
-  :option:`-v`  :option:`-###`  :option:`--help` [= :samp:`{class}` [,...]]  :option:`--target-help`  :option:`--version` 
-  :option:`-pass-exit-codes`  :option:`-pipe`  :option:`-specs`:samp:`={file}`  :option:`-wrapper`  
-  @ :samp:`{file}`  :option:`-ffile-prefix-map`:samp:`={old}` = :samp:`{new}`  
-  :option:`-fplugin`:samp:`={file}`  :option:`-fplugin-arg-`:samp:`{name}` = :samp:`{arg}`  
-  :option:`-fdump-ada-spec`  [:option:`-slim` ]  :option:`-fada-spec-parent`:samp:`={unit}`  :option:`-fdump-go-spec`:samp:`={file}`
+  :option:`-v`  :option:`-###`  :option:`--help`:samp:`[={class}[,...]]`  :option:`--target-help`  :option:`--version` 
+  :option:`-pass-exit-codes`  :option:`-pipe`  :option:`-specs`:samp:`={file}`  :option:`-wrapper`:samp:`@{file}`
+  :option:`-ffile-prefix-map`:samp:`={old}={new}`
+  :option:`-fplugin`:samp:`={file}`  :option:`-fplugin-arg-`:samp:`{name}={arg}`
+  :option:`-fdump-ada-spec`:samp:`[-{slim}]` :option:`-fada-spec-parent`:samp:`={unit}`  :option:`-fdump-go-spec`:samp:`={file}`
 
 *C Language Options*
   See :ref:`Options Controlling C Dialect <c-dialect-options>`.
@@ -51,7 +51,7 @@ in the following sections.
   :option:`-fno-implicit-templates` 
   :option:`-fno-implicit-inline-templates` 
   :option:`-fno-implement-inlines`  
-  :option:`-fmodule-header` [= :samp:`{kind}` ] :option:`-fmodule-only` :option:`-fmodules-ts` 
+  :option:`-fmodule-header` :samp:`[={kind}]` :option:`-fmodule-only` :option:`-fmodules-ts` 
   :option:`-fmodule-implicit-inline` 
   :option:`-fno-module-lazy` 
   :option:`-fmodule-mapper`:samp:`={specification}` 
@@ -70,9 +70,9 @@ in the following sections.
   :option:`-fvisibility-inlines-hidden` 
   :option:`-fvisibility-ms-compat` 
   :option:`-fext-numeric-literals` 
-  :option:`-flang-info-include-translate` [= :samp:`{header}` ] 
+  :option:`-flang-info-include-translate`:samp:`=[{header}]`
   :option:`-flang-info-include-translate-not` 
-  :option:`-flang-info-module-cmi` [= :samp:`{module}` ] 
+  :option:`-flang-info-module-cmi`:samp:`[={module}]`
   :option:`-stdlib`:samp:`={libstdc++,libc++}` 
   :option:`-Wabi-tag`  :option:`-Wcatch-value`  :option:`-Wcatch-value`:samp:`={n}` 
   :option:`-Wno-class-conversion`  :option:`-Wclass-memaccess` 
@@ -115,7 +115,7 @@ in the following sections.
   :option:`-fobjc-nilcheck` 
   :option:`-fobjc-std`:samp:`=objc1` 
   :option:`-fno-local-ivars` 
-  :option:`-fivar-visibility` =[public|protected|private|package] 
+  :option:`-fivar-visibility`:samp:`=[public|protected|private|package]`
   :option:`-freplace-objc-classes` 
   :option:`-fzero-link` 
   :option:`-gen-decls` 
@@ -129,20 +129,20 @@ in the following sections.
 
   :option:`-fmessage-length`:samp:`={n}`  
   :option:`-fdiagnostics-plain-output` 
-  :option:`-fdiagnostics-show-location` =[once|every :option:`-line` ]  
-  :option:`-fdiagnostics-color` =[auto|never|always]  
-  :option:`-fdiagnostics-urls` =[auto|never|always]  
-  :option:`-fdiagnostics-format` =[text|json]  
+  :option:`-fdiagnostics-show-location`:samp:`=[once|every-line]`
+  :option:`-fdiagnostics-color`:samp:`=[auto|never|always]` 
+  :option:`-fdiagnostics-urls`:samp:`=[auto|never|always]`
+  :option:`-fdiagnostics-format`:samp:`=[text|json]`
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` 
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` 
   :option:`-fno-diagnostics-show-cwe`  
   :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}` 
   :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch` 
   :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type` 
-  :option:`-fdiagnostics-path-format` =[none|separate :option:`-events` |inline :option:`-events` ] 
+  :option:`-fdiagnostics-path-format`:samp:`=[none|separate-events|inline-events]`
   :option:`-fdiagnostics-show-path-depths` 
   :option:`-fno-show-column` 
-  :option:`-fdiagnostics-column-unit` =[display|byte] 
+  :option:`-fdiagnostics-column-unit`:samp:`=[display|byte]`
   :option:`-fdiagnostics-column-origin`:samp:`={origin}`
 
 *Warning Options*
@@ -198,7 +198,7 @@ in the following sections.
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` 
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` 
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` 
-  :option:`-Wnormalized` =[none|id|nfc|nfkc] 
+  :option:`-Wnormalized`:samp:`=[none|id|nfc|nfkc]`
   :option:`-Wnull-dereference`  :option:`-Wno-odr`  
   :option:`-Wopenacc-parallelism`  
   :option:`-Wopenmp-simd`  
@@ -222,7 +222,7 @@ in the following sections.
   :option:`-Wstring-compare` 
   :option:`-Wno-stringop-overflow` :option:`-Wno-stringop-overread` 
   :option:`-Wno-stringop-truncation` 
-  :option:`-Wsuggest-attribute` =[pure|const|noreturn|format|malloc] 
+  :option:`-Wsuggest-attribute`:samp:`=[pure|const|noreturn|format|malloc]` 
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` 
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` 
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` 
@@ -307,12 +307,12 @@ in the following sections.
   :option:`-gvariable-location-views`  :option:`-gno-variable-location-views` 
   :option:`-ginternal-reset-location-views`  :option:`-gno-internal-reset-location-views` 
   :option:`-ginline-points`  :option:`-gno-inline-points` 
-  :option:`-gvms`  :option:`-gxcoff`  :option:`-gxcoff+`  :option:`-gz` [= :samp:`{type}` ] 
+  :option:`-gvms`  :option:`-gxcoff`  :option:`-gxcoff+`  :option:`-gz`:samp:`[={type}]`
   :option:`-gsplit-dwarf`  :option:`-gdescribe-dies`  :option:`-gno-describe-dies` 
-  :option:`-fdebug-prefix-map`:samp:`={old}` = :samp:`{new}`  :option:`-fdebug-types-section` 
+  :option:`-fdebug-prefix-map`:samp:`={old}={new}`  :option:`-fdebug-types-section` 
   :option:`-fno-eliminate-unused-debug-types` 
   :option:`-femit-struct-debug-baseonly`  :option:`-femit-struct-debug-reduced` 
-  :option:`-femit-struct-debug-detailed` [= :samp:`{spec-list}` ] 
+  :option:`-femit-struct-debug-detailed`:samp:`[={spec-list}]` 
   :option:`-fno-eliminate-unused-debug-symbols`  :option:`-femit-class-debug-always` 
   :option:`-fno-merge-debug-strings`  :option:`-fno-dwarf2-cfi-asm` 
   :option:`-fvar-tracking`  :option:`-fvar-tracking-assignments`
@@ -321,12 +321,12 @@ in the following sections.
   See :ref:`Options that Control Optimization <optimize-options>`.
 
   :option:`-faggressive-loop-optimizations` 
-  :option:`-falign-functions[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-jumps[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-labels[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-loops[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
+  :option:`-falign-functions[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-jumps[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-labels[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
+  :option:`-falign-loops[`:samp:`={n}[{m}:[{n2}[:{m2}]]]]`
   :option:`-fno-allocation-dce` :option:`-fallow-store-data-races` 
-  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile[`:samp:`={path}` ] 
+  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile`:samp:`[={path}]`
   :option:`-fauto-inc-dec`  :option:`-fbranch-probabilities` 
   :option:`-fcaller-saves` 
   :option:`-fcombine-stack-adjustments`  :option:`-fconserve-stack` 
@@ -379,7 +379,7 @@ in the following sections.
   :option:`-frounding-math`  :option:`-fsave-optimization-record` 
   :option:`-fsched2-use-superblocks`  :option:`-fsched-pressure` 
   :option:`-fsched-spec-load`  :option:`-fsched-spec-load-dangerous` 
-  :option:`-fsched-stalled-insns-dep[`:samp:`={n}` ]  :option:`-fsched-stalled-insns[`:samp:`={n}` ] 
+  :option:`-fsched-stalled-insns-dep`:samp:`[={n}]`  :option:`-fsched-stalled-insns`:samp:`[={n}]` 
   :option:`-fsched-group-heuristic`  :option:`-fsched-critical-path-heuristic` 
   :option:`-fsched-spec-insn-heuristic`  :option:`-fsched-rank-heuristic` 
   :option:`-fsched-last-insn-heuristic`  :option:`-fsched-dep-count-heuristic` 
@@ -409,7 +409,7 @@ in the following sections.
   :option:`-funsafe-math-optimizations`  :option:`-funswitch-loops` 
   :option:`-fipa-ra`  :option:`-fvariable-expansion-in-unroller`  :option:`-fvect-cost-model`  :option:`-fvpt` 
   :option:`-fweb`  :option:`-fwhole-program`  :option:`-fwpa`  :option:`-fuse-linker-plugin` :option:`-fzero-call-used-regs` 
-  :option:`--param` :samp:`{name}` = :samp:`{value}`
+  :option:`--param` :samp:`{name}={value}`
   :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og`
 
 *Program Instrumentation Options*
@@ -422,32 +422,32 @@ in the following sections.
   :option:`-fprofile-note`:samp:`={path}` :option:`-fprofile-prefix-path`:samp:`={path}` 
   :option:`-fprofile-update`:samp:`={method}` :option:`-fprofile-filter-files`:samp:`={regex}` 
   :option:`-fprofile-exclude-files`:samp:`={regex}` 
-  :option:`-fprofile-reproducible` =[multithreaded|parallel :option:`-runs` |serial] 
+  :option:`-fprofile-reproducible`:samp:`=[multithreaded|parallel-runs|serial` 
   :option:`-fsanitize`:samp:`={style}`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover`:samp:`={style}` 
-  :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}`, :samp:`{s2}`,... 
+  :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}, {s2},...`
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` 
-  :option:`-fcf-protection` =[full|branch|return|none|check] 
+  :option:`-fcf-protection`:samp:`=[full|branch|return|none|check]`
   :option:`-fstack-protector`  :option:`-fstack-protector-all`  :option:`-fstack-protector-strong` 
   :option:`-fstack-protector-explicit`  :option:`-fstack-check` 
   :option:`-fstack-limit-register`:samp:`={reg}`  :option:`-fstack-limit-symbol`:samp:`={sym}` 
   :option:`-fno-stack-limit`  :option:`-fsplit-stack` 
-  :option:`-fvtable-verify` =[std|preinit|none] 
+  :option:`-fvtable-verify`:samp:`=[std|preinit|none]` 
   :option:`-fvtv-counts`  :option:`-fvtv-debug` 
   :option:`-finstrument-functions` 
-  :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}`, :samp:`{sym}`,... 
-  :option:`-finstrument-functions-exclude-file-list`:samp:`={file}`, :samp:`{file}`,...
+  :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}, {sym},...` 
+  :option:`-finstrument-functions-exclude-file-list`:samp:`={file}, {file},...`
 
 *Preprocessor Options*
   See :ref:`Options Controlling the Preprocessor <preprocessor-options>`.
 
-  :option:`-A`:samp:`{question}` = :samp:`{answer}` 
-  :option:`-A-`:samp:`{question}` [= :samp:`{answer}` ] 
-  :option:`-C`  :option:`-CC`  :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ] 
+  :option:`-A`:samp:`{question}={answer}` 
+  :option:`-A-`:samp:`{question}[={answer}]` 
+  :option:`-C`  :option:`-CC`  :option:`-D`:samp:`{macro}[={defn}]`
   :option:`-dD`  :option:`-dI`  :option:`-dM`  :option:`-dN`  :option:`-dU` 
   :option:`-fdebug-cpp`  :option:`-fdirectives-only`  :option:`-fdollars-in-identifiers`  
   :option:`-fexec-charset`:samp:`={charset}`  :option:`-fextended-identifiers`  
   :option:`-finput-charset`:samp:`={charset}`  :option:`-flarge-source-files`  
-  :option:`-fmacro-prefix-map`:samp:`={old}` = :samp:`{new}` :option:`-fmax-include-depth`:samp:`={depth}` 
+  :option:`-fmacro-prefix-map`:samp:`={old}={new}` :option:`-fmax-include-depth`:samp:`={depth}` 
   :option:`-fno-canonical-system-headers`  :option:`-fpch-deps`  :option:`-fpch-preprocess`  
   :option:`-fpreprocessed`  :option:`-ftabstop`:samp:`={width}`  :option:`-ftrack-macro-expansion`  
   :option:`-fwide-exec-charset`:samp:`={charset}`  :option:`-fworking-directory` 
@@ -505,43 +505,43 @@ in the following sections.
   :option:`-fleading-underscore`  :option:`-ftls-model`:samp:`={model}` 
   :option:`-fstack-reuse`:samp:`={reuse_level}` 
   :option:`-ftrampolines`  :option:`-ftrapv`  :option:`-fwrapv` 
-  :option:`-fvisibility` =[default|internal|hidden|protected] 
+  :option:`-fvisibility`:samp:`=[default|internal|hidden|protected]`
   :option:`-fstrict-volatile-bitfields`  :option:`-fsync-libcalls`
 
 *Developer Options*
   See :ref:`GCC Developer Options <developer-options>`.
 
   :option:`-d`:samp:`{letters}`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` 
-  :option:`-dumpfullversion`  :option:`-fcallgraph-info` [=su,da]
+  :option:`-dumpfullversion`  :option:`-fcallgraph-info`:samp:`[=su,da]`
   :option:`-fchecking`  :option:`-fchecking`:samp:`={n}`
   :option:`-fdbg-cnt-list`   :option:`-fdbg-cnt`:samp:`={counter-value-list}` 
   :option:`-fdisable-ipa-`:samp:`{pass_name}` 
   :option:`-fdisable-rtl-`:samp:`{pass_name}` 
-  :option:`-fdisable-rtl-`:samp:`{pass-name}` = :samp:`{range-list}` 
+  :option:`-fdisable-rtl-`:samp:`{pass-name}={range-list}` 
   :option:`-fdisable-tree-`:samp:`{pass_name}` 
-  :option:`-fdisable-tree-`:samp:`{pass-name}` = :samp:`{range-list}` 
+  :option:`-fdisable-tree-`:samp:`{pass-name}={range-list}` 
   :option:`-fdump-debug`  :option:`-fdump-earlydebug` 
   :option:`-fdump-noaddr`  :option:`-fdump-unnumbered`  :option:`-fdump-unnumbered-links` 
-  :option:`-fdump-final-insns` [= :samp:`{file}` ] 
+  :option:`-fdump-final-insns`:samp:`[={file}]`
   :option:`-fdump-ipa-all`  :option:`-fdump-ipa-cgraph`  :option:`-fdump-ipa-inline` 
   :option:`-fdump-lang-all` 
   :option:`-fdump-lang-`:samp:`{switch}` 
-  :option:`-fdump-lang-`:samp:`{switch}` - :samp:`{options}` 
-  :option:`-fdump-lang-`:samp:`{switch}` - :samp:`{options}` = :samp:`{filename}` 
+  :option:`-fdump-lang-`:samp:`{switch}-{options}` 
+  :option:`-fdump-lang-`:samp:`{switch}-{options}={filename}` 
   :option:`-fdump-passes` 
-  :option:`-fdump-rtl-`:samp:`{pass}`  :option:`-fdump-rtl-`:samp:`{pass}` = :samp:`{filename}` 
+  :option:`-fdump-rtl-`:samp:`{pass}`  :option:`-fdump-rtl-`:samp:`{pass}={filename}` 
   :option:`-fdump-statistics` 
   :option:`-fdump-tree-all` 
   :option:`-fdump-tree-`:samp:`{switch}` 
-  :option:`-fdump-tree-`:samp:`{switch}` - :samp:`{options}` 
-  :option:`-fdump-tree-`:samp:`{switch}` - :samp:`{options}` = :samp:`{filename}` 
+  :option:`-fdump-tree-`:samp:`{switch}-{options}` 
+  :option:`-fdump-tree-`:samp:`{switch}-{options}={filename}` 
   :option:`-fcompare-debug` [= :samp:`{opts}` ]  :option:`-fcompare-debug-second` 
-  :option:`-fenable-`:samp:`{kind}` - :samp:`{pass}` 
-  :option:`-fenable-`:samp:`{kind}` - :samp:`{pass}` = :samp:`{range-list}` 
+  :option:`-fenable-`:samp:`{kind}-{pass}` 
+  :option:`-fenable-`:samp:`{kind}-{pass}={range-list}` 
   :option:`-fira-verbose`:samp:`={n}` 
   :option:`-flto-report`  :option:`-flto-report-wpa`  :option:`-fmem-report-wpa` 
   :option:`-fmem-report`  :option:`-fpre-ipa-mem-report`  :option:`-fpost-ipa-mem-report` 
-  :option:`-fopt-info`  :option:`-fopt-info-`:samp:`{options}` [= :samp:`{file}` ] 
+  :option:`-fopt-info`  :option:`-fopt-info-`:samp:`{options}:[={file}]`
   :option:`-fprofile-report` 
   :option:`-frandom-seed`:samp:`={string}`  :option:`-fsched-verbose`:samp:`={n}` 
   :option:`-fsel-sched-verbose`  :option:`-fsel-sched-dump-cfg`  :option:`-fsel-sched-pipelining-verbose` 
@@ -551,7 +551,7 @@ in the following sections.
   :option:`-print-multi-directory`  :option:`-print-multi-lib`  :option:`-print-multi-os-directory` 
   :option:`-print-prog-name`:samp:`={program}`  :option:`-print-search-dirs`  :option:`-Q` 
   :option:`-print-sysroot`  :option:`-print-sysroot-headers-suffix` 
-  :option:`-save-temps`  :option:`-save-temps`:samp:`=cwd`  :option:`-save-temps`:samp:`=obj`  :option:`-time` [= :samp:`{file}` ]
+  :option:`-save-temps`  :option:`-save-temps`:samp:`=cwd`  :option:`-save-temps`:samp:`=obj`  :option:`-time`:samp:`[={file}]`
 
 *Machine-Dependent Options*
   See :ref:`Machine-Dependent Options <submodel-options>`.
@@ -575,8 +575,7 @@ in the following sections.
   :option:`-mlow-precision-recip-sqrt`  :option:`-mlow-precision-sqrt`  :option:`-mlow-precision-div` 
   :option:`-mpc-relative-literal-loads` 
   :option:`-msign-return-address`:samp:`={scope}` 
-  :option:`-mbranch-protection`:samp:`={none}` | :samp:`{standard}` | :samp:`{pac-ret}` [+ :samp:`{leaf}`
-  + :samp:`{b-key}` ]| :samp:`{bti}` 
+  :option:`-mbranch-protection`:samp:`={none}|{standard}|{pac-ret}[+{leaf}+{b-key}|{bti}`
   :option:`-mharden-sls`:samp:`={opts}` 
   :option:`-march`:samp:`={name}`  :option:`-mcpu`:samp:`={name}`  :option:`-mtune`:samp:`={name}`  
   :option:`-moverride`:samp:`={string}`  :option:`-mverbose-cost-dump` 
@@ -670,7 +669,7 @@ in the following sections.
 
   *Blackfin Options*
 
-  :option:`-mcpu`:samp:`={cpu}` [- :samp:`{sirevision}` ] 
+  :option:`-mcpu`:samp:`={cpu}[-{sirevision}]`
   :option:`-msim`  :option:`-momit-leaf-frame-pointer`  :option:`-mno-omit-leaf-frame-pointer` 
   :option:`-mspecld-anomaly`  :option:`-mno-specld-anomaly`  :option:`-mcsync-anomaly`  :option:`-mno-csync-anomaly` 
   :option:`-mlow-64k`  :option:`-mno-low64k`  :option:`-mstack-check-l1`  :option:`-mid-shared-library` 
@@ -976,9 +975,9 @@ in the following sections.
 
   :option:`-msim`  :option:`-masm-hex`  :option:`-mmcu` =  :option:`-mcpu` =  :option:`-mlarge`  :option:`-msmall`  :option:`-mrelax` 
   :option:`-mwarn-mcu` 
-  :option:`-mcode-region` =  :option:`-mdata-region` = 
-  :option:`-msilicon-errata` =  :option:`-msilicon-errata-warn` = 
-  :option:`-mhwmult` =  :option:`-minrt`  :option:`-mtiny-printf`  :option:`-mmax-inline-shift` =
+  :option:`-mcode-region` :option:`-mdata-region`
+  :option:`-msilicon-errata` :option:`-msilicon-errata-warn`
+  :option:`-mhwmult` :option:`-minrt`  :option:`-mtiny-printf`  :option:`-mmax-inline-shift`
 
   *NDS32 Options*
 
@@ -1005,7 +1004,7 @@ in the following sections.
   :option:`-mno-cache-volatile`  :option:`-mcache-volatile` 
   :option:`-mno-fast-sw-div`  :option:`-mfast-sw-div` 
   :option:`-mhw-mul`  :option:`-mno-hw-mul`  :option:`-mhw-mulx`  :option:`-mno-hw-mulx`  :option:`-mno-hw-div`  :option:`-mhw-div` 
-  :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}`  :option:`-mno-custom-`:samp:`{insn}` 
+  :option:`-mcustom-`:samp:`{insn}={N}`  :option:`-mno-custom-`:samp:`{insn}` 
   :option:`-mcustom-fpu-cfg`:samp:`={name}` 
   :option:`-mhal`  :option:`-msmallc`  :option:`-msys-crt0`:samp:`={name}`  :option:`-msys-lib`:samp:`={name}` 
   :option:`-march`:samp:`={arch}`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
@@ -1160,7 +1159,7 @@ in the following sections.
   :option:`-mtpf-trace`  :option:`-mno-tpf-trace`  :option:`-mtpf-trace-skip`  :option:`-mno-tpf-trace-skip` 
   :option:`-mfused-madd`  :option:`-mno-fused-madd` 
   :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` 
-  :option:`-mhotpatch`:samp:`={halfwords}`, :samp:`{halfwords}`
+  :option:`-mhotpatch`:samp:`={halfwords},{halfwords}`
 
   *Score Options*
 
