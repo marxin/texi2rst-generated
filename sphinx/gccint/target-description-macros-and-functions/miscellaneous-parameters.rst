@@ -163,7 +163,7 @@ Here are several miscellaneous parameters.
   However, on some machines, such as the 80386 and the 680x0, truncation
   only applies to shift operations and not the (real or pretended)
   bit-field operations.  Define ``SHIFT_COUNT_TRUNCATED`` to be zero on
-  such machines.  Instead, add patterns to the md file that include
+  such machines.  Instead, add patterns to the :samp:`md` file that include
   the implied truncation of the shift instructions.
 
   You need not define this macro if it would always have the value of zero.
@@ -330,7 +330,7 @@ Here are several miscellaneous parameters.
   machines, define the appropriate patterns.  Use the names ``incscc``
   and ``decscc``, respectively, for the patterns which perform
   ``plus`` or ``minus`` operations on condition code values.  See
-  rs6000.md for some examples.  The GNU Superoptimizer can be used to
+  :samp:`rs6000.md` for some examples.  The GNU Superoptimizer can be used to
   find such instruction sequences on other machines.
 
   If this macro is not defined, the default value, 1, is used.  You need
@@ -495,7 +495,7 @@ Here are several miscellaneous parameters.
   to be called from target-specific code, it must only be done so when
   building the C and C++ compilers.  This can be done by defining the
   variables ``c_target_objs`` and ``cxx_target_objs`` in the
-  target entry in the config.gcc file.  These variables should name
+  target entry in the :samp:`config.gcc` file.  These variables should name
   the target-specific, language-specific object file which contains the
   code that uses ``pragma_lex``.  Note it will also be necessary to add a
   rule to the makefile fragment pointed to by ``tmake_file`` that shows
@@ -1109,8 +1109,8 @@ Here are several miscellaneous parameters.
 .. c:macro:: LIBGCC2_UNWIND_ATTRIBUTE
 
   Define this macro if any target-specific attributes need to be attached
-  to the functions in libgcc that provide low-level support for
-  call stack unwinding.  It is used in declarations in unwind-generic.h
+  to the functions in :samp:`libgcc` that provide low-level support for
+  call stack unwinding.  It is used in declarations in :samp:`unwind-generic.h`
   and the associated definitions of those functions.
 
 .. function:: void TARGET_UPDATE_STACK_BOUNDARY (void)

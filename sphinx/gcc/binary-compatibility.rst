@@ -143,7 +143,7 @@ files for that other library.
 The most straightforward way to link a program to use a particular
 C++ library is to use a C++ driver that specifies that C++ library by
 default.  The :command:`g++` driver, for example, tells the linker where
-to find GCC's C++ library (libstdc++) plus the other libraries
+to find GCC's C++ library (:samp:`libstdc++`) plus the other libraries
 and startup files it needs, in the proper order.
 
 If a program must use a different C++ library and it's not possible

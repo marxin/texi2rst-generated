@@ -20,7 +20,7 @@ a register output is used.  One way of obtaining this information
 is to use the RTL SSA form, which provides a Static Single Assignment
 representation of the RTL instructions.
 
-The RTL SSA code is located in the rtl-ssa subdirectory of the GCC
+The RTL SSA code is located in the :samp:`rtl-ssa` subdirectory of the GCC
 source tree.  This section only gives a brief overview of it; please
 see the comments in the source code for more details.
 
@@ -578,7 +578,7 @@ It returns true on success or false if no suitable location exists.
 
 The pass should also tentatively change the pattern of the instruction
 to whatever form the pass wants the instruction to have.  This should use
-the facilities provided by recog.c.  For example:
+the facilities provided by :samp:`recog.c`.  For example:
 
 .. code-block:: c++
 

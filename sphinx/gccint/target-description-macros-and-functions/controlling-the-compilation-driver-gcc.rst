@@ -22,7 +22,7 @@ You can control the compilation driver.
   initializer for an array of strings, with no surrounding braces.
 
   The driver applies these specs to its own command line between loading
-  default specs files (but not command-line specified ones) and
+  default :samp:`specs` files (but not command-line specified ones) and
   choosing the multilib directory or running any subcommands.  It
   applies them in the order given, so each spec can depend on the
   options added by earlier ones.  It is also possible to remove options
@@ -42,13 +42,13 @@ You can control the compilation driver.
   outermost pair of surrounding braces.
 
   The first item in the pair is the name of the default.  This must match
-  the code in config.gcc for the target.  The second item is a spec
+  the code in :samp:`config.gcc` for the target.  The second item is a spec
   to apply if a default with this name was specified.  The string
   :samp:`%(VALUE)` in the spec will be replaced by the value of the default
   everywhere it occurs.
 
   The driver will apply these specs to its own command line between loading
-  default specs files and processing ``DRIVER_SELF_SPECS``, using
+  default :samp:`specs` files and processing ``DRIVER_SELF_SPECS``, using
   the same mechanism as ``DRIVER_SELF_SPECS``.
 
   Do not define this macro if it does not need to do anything.
@@ -93,7 +93,7 @@ You can control the compilation driver.
   A C string constant that tells the GCC driver program options to
   pass to the assembler.  It can also specify how to translate options
   you give to GCC into options for GCC to pass to the assembler.
-  See the file sun3.h for an example of this.
+  See the file :samp:`sun3.h` for an example of this.
 
   Do not define this macro if it does not need to do anything.
 
@@ -101,7 +101,7 @@ You can control the compilation driver.
 
   A C string constant that tells the GCC driver program how to
   run any programs which cleanup after the normal assembler.
-  Normally, this is not needed.  See the file mips.h for
+  Normally, this is not needed.  See the file :samp:`mips.h` for
   an example of this.
 
   Do not define this macro if it does not need to do anything.
@@ -117,7 +117,7 @@ You can control the compilation driver.
   If you do not define this macro, the assembler is assumed to read its
   standard input if given no non-option arguments.  If your assembler
   cannot read standard input at all, use a :samp:`%{pipe:%e}` construct;
-  see mips.h for instance.
+  see :samp:`mips.h` for instance.
 
 .. c:macro:: LINK_SPEC
 
@@ -134,12 +134,12 @@ You can control the compilation driver.
   command given to the linker.
 
   If this macro is not defined, a default is provided that
-  loads the standard C library from the usual place.  See gcc.c.
+  loads the standard C library from the usual place.  See :samp:`gcc.c`.
 
 .. c:macro:: LIBGCC_SPEC
 
   Another C string constant that tells the GCC driver program
-  how and when to place a reference to libgcc.a into the
+  how and when to place a reference to :samp:`libgcc.a` into the
   linker command line.  This constant is placed both before and after
   the value of ``LIB_SPEC``.
 
@@ -150,12 +150,12 @@ You can control the compilation driver.
 
   By default, if ``ENABLE_SHARED_LIBGCC`` is defined, the
   ``LIBGCC_SPEC`` is not directly used by the driver program but is
-  instead modified to refer to different versions of libgcc.a
+  instead modified to refer to different versions of :samp:`libgcc.a`
   depending on the values of the command line flags :option:`-static`,
   :option:`-shared`, :option:`-static-libgcc`, and :option:`-shared-libgcc`.  On
   targets where these modifications are inappropriate, define
   ``REAL_LIBGCC_SPEC`` instead.  ``REAL_LIBGCC_SPEC`` tells the
-  driver how to place a reference to libgcc on the link command
+  driver how to place a reference to :samp:`libgcc` on the link command
   line, but, unlike ``LIBGCC_SPEC``, it is used unmodified.
 
 .. c:macro:: USE_LD_AS_NEEDED
@@ -163,7 +163,7 @@ You can control the compilation driver.
   A macro that controls the modifications to ``LIBGCC_SPEC``
   mentioned in ``REAL_LIBGCC_SPEC``.  If nonzero, a spec will be
   generated that uses :option:`--as-needed` or equivalent options and the
-  shared libgcc in place of the
+  shared :samp:`libgcc` in place of the
   static exception handler library, when linking without any of
   ``-static``, ``-static-libgcc``, or ``-shared-libgcc``.
 
@@ -181,7 +181,7 @@ You can control the compilation driver.
   the very beginning of the command given to the linker.
 
   If this macro is not defined, a default is provided that loads the
-  standard C startup file from the usual place.  See gcc.c.
+  standard C startup file from the usual place.  See :samp:`gcc.c`.
 
 .. c:macro:: ENDFILE_SPEC
 
@@ -199,7 +199,7 @@ You can control the compilation driver.
   ``THREAD_MODEL_SPEC`` such that it evaluates to a string without
   blanks that names one of the recognized thread models.  ``%*``, the
   default value of this macro, will expand to the value of
-  ``thread_file`` set in config.gcc.
+  ``thread_file`` set in :samp:`config.gcc`.
 
 .. c:macro:: SYSROOT_SUFFIX_SPEC
 
@@ -217,7 +217,7 @@ You can control the compilation driver.
 .. c:macro:: EXTRA_SPECS
 
   Define this macro to provide additional specifications to put in the
-  specs file that can be used in various specifications like
+  :samp:`specs` file that can be used in various specifications like
   ``CC1_SPEC``.
 
   The definition should be an initializer for an array of structures,
@@ -236,7 +236,7 @@ You can control the compilation driver.
   used or ``_CALL_AIX`` when the older AIX-based calling sequence is
   used.
 
-  The config/rs6000/rs6000.h target file defines:
+  The :samp:`config/rs6000/rs6000.h` target file defines:
 
   .. code-block:: c++
 
@@ -245,7 +245,7 @@ You can control the compilation driver.
 
     #define CPP_SYS_DEFAULT ""
 
-  The config/rs6000/sysv.h target file defines:
+  The :samp:`config/rs6000/sysv.h` target file defines:
 
   .. code-block:: c++
 
@@ -259,7 +259,7 @@ You can control the compilation driver.
     #undef CPP_SYSV_DEFAULT
     #define CPP_SYSV_DEFAULT "-D_CALL_SYSV"
 
-  while the config/rs6000/eabiaix.h target file defines
+  while the :samp:`config/rs6000/eabiaix.h` target file defines
   ``CPP_SYSV_DEFAULT`` as:
 
   .. code-block:: c++
@@ -270,7 +270,7 @@ You can control the compilation driver.
 .. c:macro:: LINK_LIBGCC_SPECIAL_1
 
   Define this macro if the driver program should find the library
-  libgcc.a.  If you do not define this macro, the driver program will pass
+  :samp:`libgcc.a`.  If you do not define this macro, the driver program will pass
   the argument :option:`-lgcc` to tell the linker to do the search.
 
 .. c:macro:: LINK_GCC_C_SEQUENCE_SPEC
@@ -287,7 +287,7 @@ You can control the compilation driver.
 
   A C string constant giving the complete command line need to execute the
   linker.  When you do this, you will need to update your port each time a
-  change is made to the link command line within gcc.c.  Therefore,
+  change is made to the link command line within :samp:`gcc.c`.  Therefore,
   define this macro only if you need to completely redefine the command
   line for invoking the linker and there is no other way to accomplish
   the effect you need.  Overriding this macro may be avoidable by overriding
@@ -295,7 +295,7 @@ You can control the compilation driver.
 
 .. c:var:: bool TARGET_ALWAYS_STRIP_DOTDOT
 
-  True if .. components should always be removed from directory names
+  True if :samp:`..` components should always be removed from directory names
   computed relative to GCC's internal directories, false (default) if such
   components should be preserved and directory names containing them passed
   to other tools such as the linker.
@@ -324,13 +324,13 @@ You can control the compilation driver.
   ``STANDARD_EXEC_PREFIX``.  ``MD_EXEC_PREFIX`` is not searched
   when the compiler is built as a cross
   compiler.  If you define ``MD_EXEC_PREFIX``, then be sure to add it
-  to the list of directories used to find the assembler in configure.ac.
+  to the list of directories used to find the assembler in :samp:`configure.ac`.
 
 .. c:macro:: STANDARD_STARTFILE_PREFIX
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``libdir`` as the default prefix to
-  try when searching for startup files such as crt0.o.
+  try when searching for startup files such as :samp:`crt0.o`.
   ``STANDARD_STARTFILE_PREFIX`` is not searched when the compiler
   is built as a cross compiler.
 
@@ -338,7 +338,7 @@ You can control the compilation driver.
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``/lib`` as a prefix to try after the default prefix
-  when searching for startup files such as crt0.o.
+  when searching for startup files such as :samp:`crt0.o`.
   ``STANDARD_STARTFILE_PREFIX_1`` is not searched when the compiler
   is built as a cross compiler.
 
@@ -346,7 +346,7 @@ You can control the compilation driver.
 
   Define this macro as a C string constant if you wish to override the
   standard choice of ``/lib`` as yet another prefix to try after the
-  default prefix when searching for startup files such as crt0.o.
+  default prefix when searching for startup files such as :samp:`crt0.o`.
   ``STANDARD_STARTFILE_PREFIX_2`` is not searched when the compiler
   is built as a cross compiler.
 
@@ -372,12 +372,12 @@ You can control the compilation driver.
 .. c:macro:: LOCAL_INCLUDE_DIR
 
   Define this macro as a C string constant if you wish to override the
-  standard choice of /usr/local/include as the default prefix to
+  standard choice of :samp:`/usr/local/include` as the default prefix to
   try when searching for local header files.  ``LOCAL_INCLUDE_DIR``
   comes before ``NATIVE_SYSTEM_HEADER_DIR`` (set in
-  config.gcc, normally /usr/include) in the search order.
+  :samp:`config.gcc`, normally :samp:`/usr/include`) in the search order.
 
-  Cross compilers do not search either /usr/local/include or its
+  Cross compilers do not search either :samp:`/usr/local/include` or its
   replacement.
 
 .. c:macro:: NATIVE_SYSTEM_HEADER_COMPONENT
@@ -393,7 +393,7 @@ You can control the compilation driver.
   usually consists of ``GCC_INCLUDE_DIR``, ``LOCAL_INCLUDE_DIR``,
   ``GPLUSPLUS_INCLUDE_DIR``, and
   ``NATIVE_SYSTEM_HEADER_DIR``.  In addition, ``GPLUSPLUS_INCLUDE_DIR``
-  and ``GCC_INCLUDE_DIR`` are defined automatically by Makefile,
+  and ``GCC_INCLUDE_DIR`` are defined automatically by :samp:`Makefile`,
   and specify private search areas for GCC.  The directory
   ``GPLUSPLUS_INCLUDE_DIR`` is used only for C++ programs.
 
@@ -436,9 +436,9 @@ Here is the order of prefixes tried for exec files:
 * The macro ``STANDARD_EXEC_PREFIX``, if the compiler has been installed
   in the configured-time :samp:`{prefix}`.
 
-* The location /usr/libexec/gcc/, but only if this is a native compiler.
+* The location :samp:`/usr/libexec/gcc/`, but only if this is a native compiler.
 
-* The location /usr/lib/gcc/, but only if this is a native compiler.
+* The location :samp:`/usr/lib/gcc/`, but only if this is a native compiler.
 
 * The macro ``MD_EXEC_PREFIX``, if defined, but only if this is a native
   compiler.
@@ -456,7 +456,7 @@ Here is the order of prefixes tried for startfiles:
 * The macro ``STANDARD_EXEC_PREFIX``, but only if the toolchain is installed
   in the configured :samp:`{prefix}` or this is a native compiler.
 
-* The location /usr/lib/gcc/, but only if this is a native compiler.
+* The location :samp:`/usr/lib/gcc/`, but only if this is a native compiler.
 
 * The macro ``MD_EXEC_PREFIX``, if defined, but only if this is a native
   compiler.
@@ -473,9 +473,9 @@ Here is the order of prefixes tried for startfiles:
 
 * The macro ``STANDARD_STARTFILE_PREFIX_1``, but only if this is a native
   compiler, or we have a target system root. The default for this macro is
-  /lib/.
+  :samp:`/lib/`.
 
 * The macro ``STANDARD_STARTFILE_PREFIX_2``, but only if this is a native
   compiler, or we have a target system root. The default for this macro is
-  /usr/lib/.
+  :samp:`/usr/lib/`.
 

@@ -1834,7 +1834,7 @@ optimizations to be performed is desired.
 
   In addition to reordering basic blocks in the compiled function, in order
   to reduce number of taken branches, partitions hot and cold basic blocks
-  into separate sections of the assembly and .o files, to improve
+  into separate sections of the assembly and :samp:`.o` files, to improve
   paging and cache locality performance.
 
   This optimization is automatically turned off in the presence of
@@ -2102,15 +2102,15 @@ optimizations to be performed is desired.
     gcc -o myprog -flto -O2 foo.o bar.o
 
   The first two invocations to GCC save a bytecode representation
-  of GIMPLE into special ELF sections inside foo.o and
-  bar.o.  The final invocation reads the GIMPLE bytecode from
-  foo.o and bar.o, merges the two files into a single
+  of GIMPLE into special ELF sections inside :samp:`foo.o` and
+  :samp:`bar.o`.  The final invocation reads the GIMPLE bytecode from
+  :samp:`foo.o` and :samp:`bar.o`, merges the two files into a single
   internal image, and compiles the result as usual.  Since both
-  foo.o and bar.o are merged into a single image, this
+  :samp:`foo.o` and :samp:`bar.o` are merged into a single image, this
   causes all the interprocedural analyses and optimizations in GCC to
   work across the two files as if they were a single one.  This means,
   for example, that the inliner is able to inline functions in
-  bar.o into functions in foo.o and vice-versa.
+  :samp:`bar.o` into functions in :samp:`foo.o` and vice-versa.
 
   Another (simpler) way to enable link-time optimization is:
 
@@ -2118,9 +2118,9 @@ optimizations to be performed is desired.
 
     gcc -o myprog -flto -O2 foo.c bar.c
 
-  The above generates bytecode for foo.c and bar.c,
+  The above generates bytecode for :samp:`foo.c` and :samp:`bar.c`,
   merges them together into a single GIMPLE representation and optimizes
-  them as usual to produce myprog.
+  them as usual to produce :samp:`myprog`.
 
   The important thing to keep in mind is that to enable link-time
   optimizations you need to use the GCC driver to perform the link step.
@@ -2245,7 +2245,7 @@ optimizations to be performed is desired.
   regular (non-LTO) compilation.
 
   If object files containing GIMPLE bytecode are stored in a library archive, say
-  libfoo.a, it is possible to extract and use them in an LTO link if you
+  :samp:`libfoo.a`, it is possible to extract and use them in an LTO link if you
   are using a linker with plugin support.  To create static libraries suitable
   for LTO, use :command:`gcc-ar` and :command:`gcc-ranlib` instead of :command:`ar`
   and :command:`ranlib`; 
@@ -2260,11 +2260,11 @@ optimizations to be performed is desired.
     gcc -o myprog -O2 -flto -fuse-linker-plugin a.o b.o -lfoo
 
   With the linker plugin enabled, the linker extracts the needed
-  GIMPLE files from libfoo.a and passes them on to the running GCC
+  GIMPLE files from :samp:`libfoo.a` and passes them on to the running GCC
   to make them part of the aggregated GIMPLE image to be optimized.
 
   If you are not using a linker with plugin support and/or do not
-  enable the linker plugin, then the objects inside libfoo.a
+  enable the linker plugin, then the objects inside :samp:`libfoo.a`
   are extracted and linked as usual, but they do not participate
   in the LTO optimization process.  In order to make a static library suitable
   for both LTO optimization and usual linkage, compile its object files with
@@ -2368,7 +2368,7 @@ optimizations to be performed is desired.
   to these tools. With non fat LTO makefiles need to be modified to use them.
 
   Note that modern binutils provide plugin auto-load mechanism.
-  Installing the linker plugin into $libdir/bfd-plugins has the same
+  Installing the linker plugin into :samp:`$libdir/bfd-plugins` has the same
   effect as usage of the command wrappers (:command:`gcc-ar`, :command:`gcc-nm` and
   :command:`gcc-ranlib`).
 
@@ -2457,7 +2457,7 @@ optimizations to be performed is desired.
   :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` 
   :option:`-fprofile-correction`
   :samp:`{path}` is the name of a file containing AutoFDO profile information.
-  If omitted, it defaults to fbdata.afdo in the current directory.
+  If omitted, it defaults to :samp:`fbdata.afdo` in the current directory.
 
   Producing an AutoFDO profile data file requires running your program
   with the :command:`perf` utility on a supported GNU/Linux target system.
@@ -2751,7 +2751,7 @@ section includes experimental options that may produce broken code.
   :option:`-fbranch-probabilities`, to improve optimizations based on
   the number of times each branch was taken.  When a program
   compiled with :option:`-fprofile-arcs` exits, it saves arc execution
-  counts to a file called :samp:`{sourcename}`.gcda for each source
+  counts to a file called :samp:`:samp:`{sourcename}`.gcda` for each source
   file.  The information in this data file is very dependent on the
   structure of the generated code, so you must use the same source code
   and the same optimization options for both compilations.
@@ -2759,7 +2759,7 @@ section includes experimental options that may produce broken code.
   With :option:`-fbranch-probabilities`, GCC puts a
   :samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.
   These can be used to improve optimization.  Currently, they are only
-  used in one place: in reorg.c, instead of guessing which path a
+  used in one place: in :samp:`reorg.c`, instead of guessing which path a
   branch is most likely to take, the :samp:`REG_BR_PROB` values are used to
   exactly determine which path is taken more often.
 
@@ -4153,7 +4153,7 @@ section includes experimental options that may produce broken code.
     conservative approach taken by algorithm 1 and the rather aggressive
     approach taken by the default scheduler.  It relies more heavily on
     having a regular register file and accurate register pressure classes.
-    See haifa-sched.c in the GCC sources for more details.
+    See :samp:`haifa-sched.c` in the GCC sources for more details.
 
     The default choice depends on the target.
 

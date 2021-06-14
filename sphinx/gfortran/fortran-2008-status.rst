@@ -24,7 +24,7 @@ about the current Fortran 2008 implementation status.  In particular, the
 following is implemented.
 
 * The :option:`-std`:samp:`=f2008` option and support for the file extensions
-  .f08 and .F08.
+  :samp:`.f08` and :samp:`.F08`.
 
 * The ``OPEN`` statement now supports the ``NEWUNIT=`` option,
   which returns a unique file unit, thus preventing inadvertent use of the

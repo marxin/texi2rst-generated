@@ -46,9 +46,9 @@ Fortran source.
   Also note that the general behavior of :option:`-I` and
   ``INCLUDE`` is pretty much the same as of :option:`-I` with
   ``#include`` in the :command:`cpp` preprocessor, with regard to
-  looking for header.gcc files and other such things.
+  looking for :samp:`header.gcc` files and other such things.
 
-  This path is also used to search for .mod files when previously
+  This path is also used to search for :samp:`.mod` files when previously
   compiled modules are required by a ``USE`` statement.
 
   See :ref:`Options for Directory Search <directory-options>`, for information on the
@@ -64,7 +64,7 @@ Fortran source.
 
   .. index:: module search path
 
-  This option specifies where to put .mod files for compiled modules.
+  This option specifies where to put :samp:`.mod` files for compiled modules.
   It is also added to the list of directories to searched by an ``USE``
   statement.
 

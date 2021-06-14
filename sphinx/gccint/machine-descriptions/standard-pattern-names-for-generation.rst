@@ -178,7 +178,7 @@ load_multiple
   ``set`` of one register from the appropriate memory location (you may
   also need ``use`` or ``clobber`` elements).  Use a
   ``match_parallel`` (see :ref:`rtl-template`) to recognize the insn.  See
-  rs6000.md for examples of the use of this insn pattern.
+  :samp:`rs6000.md` for examples of the use of this insn pattern.
 
   .. index:: store_multiple instruction pattern
 

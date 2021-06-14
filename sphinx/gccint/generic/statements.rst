@@ -469,7 +469,7 @@ clauses used by the OpenMP API https://www.openmp.org.
 
   Represents clauses associated with one of the ``OMP_`` directives.
   Clauses are represented by separate subcodes defined in
-  tree.h.  Clauses codes can be one of:
+  :samp:`tree.h`.  Clauses codes can be one of:
   ``OMP_CLAUSE_PRIVATE``, ``OMP_CLAUSE_SHARED``,
   ``OMP_CLAUSE_FIRSTPRIVATE``,
   ``OMP_CLAUSE_LASTPRIVATE``, ``OMP_CLAUSE_COPYIN``,

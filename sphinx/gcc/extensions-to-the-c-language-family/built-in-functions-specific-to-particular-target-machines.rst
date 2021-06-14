@@ -72,7 +72,7 @@ NEON is enabled.
 
 Currently, ARM and AArch64 back ends do not support ACLE 2.0 fully.  Both
 back ends support CRC32 intrinsics and the ARM back end supports the
-Coprocessor intrinsics, all from arm_acle.h.  The ARM back end's 16-bit
+Coprocessor intrinsics, all from :samp:`arm_acle.h`.  The ARM back end's 16-bit
 floating-point Advanced SIMD intrinsics currently comply to ACLE v1.1.
 AArch64's back end does not have support for 16-bit floating point Advanced SIMD
 intrinsics yet.

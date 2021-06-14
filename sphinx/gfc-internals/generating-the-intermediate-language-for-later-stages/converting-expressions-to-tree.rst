@@ -27,7 +27,7 @@ needs to be executed before and after evaluation of the expression.
 When using a local ``gfc_se`` to convert some expression, it is
 often necessary to add the generated ``pre`` and ``post`` blocks
 to the ``pre`` or ``post`` blocks of the outer ``gfc_se``.
-Code like this (lifted from trans-expr.c) is fairly common:
+Code like this (lifted from :samp:`trans-expr.c`) is fairly common:
 
 .. code-block:: c++
 

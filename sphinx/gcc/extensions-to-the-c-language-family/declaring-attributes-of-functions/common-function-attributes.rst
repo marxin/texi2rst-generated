@@ -483,7 +483,7 @@ The following attributes are supported on most targets.
   while values prefixed with :samp:`gnu_` always refer
   to the formats accepted by the GNU C Library.  On Microsoft Windows
   targets, values prefixed with :samp:`ms_` refer to the formats accepted by the
-  msvcrt.dll library.
+  :samp:`msvcrt.dll` library.
   The parameter :samp:`{string-index}`
   specifies which argument is the format string argument (starting
   from 1), while :samp:`{first-to-check}` is the number of the first
@@ -509,7 +509,7 @@ The following attributes are supported on most targets.
   ``sprintf``, ``scanf``, ``fscanf``, ``sscanf``, ``strftime``,
   ``vprintf``, ``vfprintf`` and ``vsprintf`` whenever such
   warnings are requested (using :option:`-Wformat` ), so there is no need to
-  modify the header file stdio.h.  In C99 mode, the functions
+  modify the header file :samp:`stdio.h`.  In C99 mode, the functions
   ``snprintf``, ``vsnprintf``, ``vscanf``, ``vfscanf`` and
   ``vsscanf`` are also checked.  Except in strictly conforming C
   standard modes, the X/Open function ``strfmon`` is also checked as

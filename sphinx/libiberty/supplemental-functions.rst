@@ -29,7 +29,7 @@ family of systems.
 Many such functions are provided in ``libiberty``.  They are quickly
 listed here with little description, as systems which lack them
 become less and less common.  Each function :samp:`{foo}` is implemented
-in :samp:`{foo}`.c but not declared in any ``libiberty`` header file; more
+in :samp:`:samp:`{foo}`.c` but not declared in any ``libiberty`` header file; more
 comments and caveats for each function's implementation are often
 available in the source file.  Generally, the function can simply
 be declared as ``extern``.

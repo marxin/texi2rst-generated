@@ -12,7 +12,7 @@ Machine-Specific Peephole Optimizers
 
 .. index:: defining peephole optimizers
 
-In addition to instruction patterns the md file may contain
+In addition to instruction patterns the :samp:`md` file may contain
 definitions of machine-specific peephole optimizations.
 
 The combiner does not notice certain peephole optimizations when the data

@@ -12,7 +12,7 @@ IV analysis on RTL
 
 The induction variable on RTL is simple and only allows analysis of
 affine induction variables, and only in one loop at once.  The interface
-is declared in cfgloop.h.  Before analyzing induction variables
+is declared in :samp:`cfgloop.h`.  Before analyzing induction variables
 in a loop L, ``iv_analysis_loop_init`` function must be called on L.
 After the analysis (possibly calling ``iv_analysis_loop_init`` for
 several loops) is finished, ``iv_analysis_done`` should be called.

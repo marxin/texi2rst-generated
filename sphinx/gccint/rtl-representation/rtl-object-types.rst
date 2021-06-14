@@ -70,7 +70,7 @@ null pointers are used instead.
 .. index:: PUT_CODE
 
 Expressions are classified by :dfn:`expression codes` (also called RTX
-codes).  The expression code is a name defined in rtl.def, which is
+codes).  The expression code is a name defined in :samp:`rtl.def`, which is
 also (in uppercase) a C enumeration constant.  The possible expression
 codes and their meanings are machine-independent.  The code of an RTX can
 be extracted with the macro ``GET_CODE (x)`` and altered with

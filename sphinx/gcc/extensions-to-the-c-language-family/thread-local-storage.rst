@@ -20,7 +20,7 @@ thread.  The runtime model GCC uses to implement this originates
 in the IA-64 processor-specific ABI, but has since been migrated
 to other processors as well.  It requires significant support from
 the linker (:command:`ld`), dynamic linker (:command:`ld.so`), and
-system libraries (libc.so and libpthread.so), so it
+system libraries (:samp:`libc.so` and :samp:`libpthread.so`), so it
 is not available everywhere.
 
 At the user level, the extension is visible with a new storage

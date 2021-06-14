@@ -302,8 +302,8 @@ double underscores.
 ``__CHAR_UNSIGNED__``
   GCC defines this macro if and only if the data type ``char`` is
   unsigned on the target machine.  It exists to cause the standard header
-  file limits.h to work correctly.  You should not use this macro
-  yourself; instead, refer to the standard macros defined in limits.h.
+  file :samp:`limits.h` to work correctly.  You should not use this macro
+  yourself; instead, refer to the standard macros defined in :samp:`limits.h`.
 
 ``__WCHAR_UNSIGNED__``
   Like ``__CHAR_UNSIGNED__``, this macro is defined if and only if the
@@ -341,11 +341,11 @@ double underscores.
   ``uint_fast8_t``, ``uint_fast16_t``, ``uint_fast32_t``,
   ``uint_fast64_t``, ``intptr_t``, and ``uintptr_t`` typedefs,
   respectively.  They exist to make the standard header files
-  stddef.h, stdint.h, and wchar.h work correctly.
+  :samp:`stddef.h`, :samp:`stdint.h`, and :samp:`wchar.h` work correctly.
   You should not use these macros directly; instead, include the
   appropriate headers and use the typedefs.  Some of these macros may
   not be defined on particular systems if GCC does not provide a
-  stdint.h header on those systems.
+  :samp:`stdint.h` header on those systems.
 
 ``__CHAR_BIT__``
   Defined to the number of bits used in the representation of the
@@ -372,22 +372,22 @@ double underscores.
   standard header given numerical limits work correctly.  You should not
   use these macros directly; instead, include the appropriate headers.
   Some of these macros may not be defined on particular systems if GCC
-  does not provide a stdint.h header on those systems.
+  does not provide a :samp:`stdint.h` header on those systems.
 
 ``__INT8_C`` ``__INT16_C`` ``__INT32_C`` ``__INT64_C`` ``__UINT8_C`` ``__UINT16_C`` ``__UINT32_C`` ``__UINT64_C`` ``__INTMAX_C`` ``__UINTMAX_C``
-  Defined to implementations of the standard stdint.h macros with
+  Defined to implementations of the standard :samp:`stdint.h` macros with
   the same names without the leading ``__``.  They exist the make the
   implementation of that header work correctly.  You should not use
   these macros directly; instead, include the appropriate headers.  Some
   of these macros may not be defined on particular systems if GCC does
-  not provide a stdint.h header on those systems.
+  not provide a :samp:`stdint.h` header on those systems.
 
 ``__SCHAR_WIDTH__`` ``__SHRT_WIDTH__`` ``__INT_WIDTH__`` ``__LONG_WIDTH__`` ``__LONG_LONG_WIDTH__`` ``__PTRDIFF_WIDTH__`` ``__SIG_ATOMIC_WIDTH__`` ``__SIZE_WIDTH__`` ``__WCHAR_WIDTH__`` ``__WINT_WIDTH__`` ``__INT_LEAST8_WIDTH__`` ``__INT_LEAST16_WIDTH__`` ``__INT_LEAST32_WIDTH__`` ``__INT_LEAST64_WIDTH__`` ``__INT_FAST8_WIDTH__`` ``__INT_FAST16_WIDTH__`` ``__INT_FAST32_WIDTH__`` ``__INT_FAST64_WIDTH__`` ``__INTPTR_WIDTH__`` ``__INTMAX_WIDTH__``
   Defined to the bit widths of the corresponding types.  They exist to
-  make the implementations of limits.h and stdint.h behave
+  make the implementations of :samp:`limits.h` and :samp:`stdint.h` behave
   correctly.  You should not use these macros directly; instead, include
   the appropriate headers.  Some of these macros may not be defined on
-  particular systems if GCC does not provide a stdint.h header on
+  particular systems if GCC does not provide a :samp:`stdint.h` header on
   those systems.
 
 ``__SIZEOF_INT__`` ``__SIZEOF_LONG__`` ``__SIZEOF_LONG_LONG__`` ``__SIZEOF_SHORT__`` ``__SIZEOF_POINTER__`` ``__SIZEOF_FLOAT__`` ``__SIZEOF_DOUBLE__`` ``__SIZEOF_LONG_DOUBLE__`` ``__SIZEOF_SIZE_T__`` ``__SIZEOF_WCHAR_T__`` ``__SIZEOF_WINT_T__`` ``__SIZEOF_PTRDIFF_T__``
@@ -522,7 +522,7 @@ double underscores.
 ``__FP_FAST_FMA`` ``__FP_FAST_FMAF`` ``__FP_FAST_FMAL``
   These macros are defined with value 1 if the backend supports the
   ``fma``, ``fmaf``, and ``fmal`` builtin functions, so that
-  the include file math.h can define the macros
+  the include file :samp:`math.h` can define the macros
   ``FP_FAST_FMA``, ``FP_FAST_FMAF``, and ``FP_FAST_FMAL``
   for compatibility with the 1999 C standard.
 
@@ -530,10 +530,10 @@ double underscores.
   These macros are defined with the value 1 if the backend supports the
   ``fma`` functions using the additional ``_Floatn`` and
   ``_Floatnx`` types that are defined in ISO/IEC TS
-  18661-3:2015.  The include file math.h can define the
+  18661-3:2015.  The include file :samp:`math.h` can define the
   ``FP_FAST_FMAFn`` and ``FP_FAST_FMAFnx`` macros if
   the user defined ``__STDC_WANT_IEC_60559_TYPES_EXT__`` before
-  including math.h.
+  including :samp:`math.h`.
 
 ``__GCC_IEC_559``
   This macro is defined to indicate the intended level of support for
@@ -641,7 +641,7 @@ of operators normally written with punctuation.  These keywords are
 treated as such even in the preprocessor.  They function as operators in
 :samp:`#if`, and they cannot be defined as macros or poisoned.  In C, you
 can request that those keywords take their C++ meaning by including
-iso646.h.  That header defines each one as a normal object-like
+:samp:`iso646.h`.  That header defines each one as a normal object-like
 macro expanding to the appropriate punctuator.
 
 These are the named operators and their corresponding punctuators:

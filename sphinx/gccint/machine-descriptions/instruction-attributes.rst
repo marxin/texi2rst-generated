@@ -13,7 +13,7 @@ Instruction Attributes
 .. index:: instruction attributes
 
 In addition to describing the instruction supported by the target machine,
-the md file also defines a group of :dfn:`attributes` and a set of
+the :samp:`md` file also defines a group of :dfn:`attributes` and a set of
 values for each.  Every generated insn is assigned a value for each attribute.
 One possible attribute would be the effect that the insn has on the machine's
 condition code.
@@ -72,7 +72,7 @@ for information on attributes that do not depend on any particular insn.
 .. index:: insn-attr.h
 
 For each defined attribute, a number of definitions are written to the
-insn-attr.h file.  For cases where an explicit set of values is
+:samp:`insn-attr.h` file.  For cases where an explicit set of values is
 specified for an attribute, the following are defined:
 
 * A :samp:`#define` is written for the symbol :samp:`HAVE_ATTR_{name}`.
@@ -84,13 +84,13 @@ specified for an attribute, the following are defined:
 * A function :samp:`get_attr_{name}` is defined that is passed an insn and
   returns the attribute value for that insn.
 
-For example, if the following is present in the md file:
+For example, if the following is present in the :samp:`md` file:
 
 .. code-block:: c++
 
   (define_attr "type" "branch,fp,load,store,arith" ...)
 
-the following lines will be written to the file insn-attr.h.
+the following lines will be written to the file :samp:`insn-attr.h`.
 
 .. code-block:: c++
 
@@ -542,7 +542,7 @@ be changed, be set to agree with the results of the operation, or only
 changed if the item previously set into the condition code has been
 modified.
 
-Here is part of a sample md file for such a machine:
+Here is part of a sample :samp:`md` file for such a machine:
 
 .. code-block:: c++
 
@@ -794,7 +794,7 @@ supported for that delay slot, ``(nil)`` should be coded.
 
 For example, in the common case where branch and call insns require
 a single delay slot, which may contain any insn other than a branch or
-call, the following would be placed in the md file:
+call, the following would be placed in the :samp:`md` file:
 
 .. code-block:: c++
 

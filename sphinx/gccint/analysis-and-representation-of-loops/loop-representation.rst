@@ -14,7 +14,7 @@ Loop representation
 
 This chapter describes the representation of loops in GCC, and functions
 that can be used to build, modify and analyze this representation.  Most
-of the interfaces and data structures are declared in cfgloop.h.
+of the interfaces and data structures are declared in :samp:`cfgloop.h`.
 Loop structures are analyzed and this information disposed or updated
 at the discretion of individual passes.  Still most of the generic
 CFG manipulation routines are aware of loop structures and try to

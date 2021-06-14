@@ -67,6 +67,6 @@ For example,
 
 will run three concurrent 'make-gcc' testsuites, eventually testing all
 ten combinations as described above.  Note that this is currently only
-supported in the gcc subdirectory.  (To see how this works, try
+supported in the :samp:`gcc` subdirectory.  (To see how this works, try
 typing :command:`echo` before the example given here.)
 

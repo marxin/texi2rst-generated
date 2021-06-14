@@ -69,7 +69,7 @@ functions.
   suffixes, such as :samp:`.h` or :samp:`.C` or :samp:`.cc`.
 
    as your source
-  file.  For example, in allclass.cc, giving just
+  file.  For example, in :samp:`allclass.cc`, giving just
   :samp:`#pragma implementation`
   by itself is equivalent to :samp:`#pragma implementation "allclass.h"`.
 

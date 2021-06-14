@@ -66,14 +66,14 @@ libraries and debuggers on certain systems.
 
   Storing into the pointer can be done likewise with the same union.
 
-* On Solaris, the ``malloc`` function in the libmalloc.a library
+* On Solaris, the ``malloc`` function in the :samp:`libmalloc.a` library
   may allocate memory that is only 4 byte aligned.  Since GCC on the
   SPARC assumes that doubles are 8 byte aligned, this may result in a
   fatal signal if doubles are stored in memory allocated by the
-  libmalloc.a library.
+  :samp:`libmalloc.a` library.
 
-  The solution is to not use the libmalloc.a library.  Use instead
-  ``malloc`` and related functions from libc.a; they do not have
+  The solution is to not use the :samp:`libmalloc.a` library.  Use instead
+  ``malloc`` and related functions from :samp:`libc.a`; they do not have
   this problem.
 
 * On the HP PA machine, ADB sometimes fails to work on functions compiled
@@ -114,23 +114,23 @@ libraries and debuggers on certain systems.
   that is too large.  If you should run into it, you can work around by
   making your function smaller.
 
-* The libstdc++.a library in GCC relies on the SVR4 dynamic
+* The :samp:`libstdc++.a` library in GCC relies on the SVR4 dynamic
   linker semantics which merges global symbols between libraries and
   applications, especially necessary for C++ streams functionality.
   This is not the default behavior of AIX shared libraries and dynamic
-  linking.  libstdc++.a is built on AIX with 'runtime-linking'
+  linking.  :samp:`libstdc++.a` is built on AIX with 'runtime-linking'
   enabled so that symbol merging can occur.  To utilize this feature,
-  the application linked with libstdc++.a must include the
+  the application linked with :samp:`libstdc++.a` must include the
   :option:`-Wl,-brtl` flag on the link line.  G++ cannot impose this
   because this option may interfere with the semantics of the user
   program and users may not always use :samp:`g++` to link his or her
   application.  Applications are not required to use the
   :option:`-Wl,-brtl` flag on the link line---the rest of the
-  libstdc++.a library which is not dependent on the symbol
+  :samp:`libstdc++.a` library which is not dependent on the symbol
   merging semantics will continue to function correctly.
 
 * An application can interpose its own definition of functions for
-  functions invoked by libstdc++.a with 'runtime-linking'
+  functions invoked by :samp:`libstdc++.a` with 'runtime-linking'
   enabled on AIX.  To accomplish this the application must be linked
   with 'runtime-linking' option and the functions explicitly must be
   exported by the application ( :option:`-Wl,-brtl,-bE:exportfile` ).

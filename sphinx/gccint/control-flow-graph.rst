@@ -19,11 +19,11 @@ being compiled.  The CFG is a directed graph where the vertices
 represent basic blocks and edges represent possible transfer of
 control flow from one basic block to another.  The data structures
 used to represent the control flow graph are defined in
-basic-block.h.
+:samp:`basic-block.h`.
 
 In GCC, the representation of control flow is maintained throughout
 the compilation process, from constructing the CFG early in 
-``pass_build_cfg`` to ``pass_free_cfg`` (see passes.def).
+``pass_build_cfg`` to ``pass_free_cfg`` (see :samp:`passes.def`).
 The CFG takes various different modes and may undergo extensive
 manipulations, but the graph is always valid between its construction
 and its release.  This way, transfer of information such as data flow,

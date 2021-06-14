@@ -23,7 +23,7 @@ encountered issues are described below.
   smell', consider if you really must use GC for allocating such type.
 
 * Link-time errors about undefined ``gt_ggc_r_foo_bar`` and
-  similarly-named symbols.  Check if your foo_bar source file has
+  similarly-named symbols.  Check if your :samp:`foo_bar` source file has
   ``#include "gt-foo_bar.h"`` as its very last line.
 
 .. Free Software Foundation, Inc.

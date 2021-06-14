@@ -22,7 +22,7 @@ Function, Variable, and Macro Listing.
   calls to this function.  Memory is allocated using ``xmalloc`` under
   normal circumstances.
 
-  The header file alloca-conf.h can be used in conjunction with the
+  The header file :samp:`alloca-conf.h` can be used in conjunction with the
   GNU Autoconf test ``AC_FUNC_ALLOCA`` to test for and properly make
   available this function.  The ``AC_FUNC_ALLOCA`` test requires that
   client code use a block of preprocessor code to be safe (see the Autoconf
@@ -267,7 +267,7 @@ Function, Variable, and Macro Listing.
   This is useful, for example, when we have an open file descriptor for
   an unnamed file, and the name of a file that we believe to correspond
   to that fd.  This can happen when we are exec'd with an already open
-  file ( ``stdout`` for example) or from the SVR4 /proc calls
+  file ( ``stdout`` for example) or from the SVR4 :samp:`/proc` calls
   that return open file descriptors for mapped address spaces.  All we
   have to do is open the file by name and check the two file descriptors
   for a match, which is done by comparing major and minor device numbers
@@ -497,7 +497,7 @@ Function, Variable, and Macro Listing.
 Extension HOST_CHARSETThis macro indicates the basic character set and encoding used by the
 host: more precisely, the encoding used for character constants in
 preprocessor :samp:`#if` statements (the C "execution character set").
-It is defined by safe-ctype.h, and will be an integer constant
+It is defined by :samp:`safe-ctype.h`, and will be an integer constant
 with one of the following values:
 
 .. envvar:: HOST_CHARSET_UNKNOWN
@@ -592,12 +592,12 @@ Extension ISSPACE  (:samp:`{c}`)
 Extension ISUPPER  (:samp:`{c}`)
 .. index:: ISXDIGIT
 
-Extension ISXDIGIT (:samp:`{c}`)These twelve macros are defined by safe-ctype.h.  Each has the
+Extension ISXDIGIT (:samp:`{c}`)These twelve macros are defined by :samp:`safe-ctype.h`.  Each has the
 same meaning as the corresponding macro (with name in lowercase)
-defined by the standard header ctype.h.  For example,
+defined by the standard header :samp:`ctype.h`.  For example,
 ``ISALPHA`` returns true for alphabetic characters and false for
 others.  However, there are two differences between these macros and
-those provided by ctype.h:
+those provided by :samp:`ctype.h`:
 
 * These macros are guaranteed to have well-defined behavior for all 
   values representable by ``signed char`` and ``unsigned char``, and
@@ -645,7 +645,7 @@ Extension IS_NVSPACE      (:samp:`{c}`)
 Extension IS_SPACE_OR_NUL (:samp:`{c}`)
 .. index:: IS_ISOBASIC
 
-Extension IS_ISOBASIC     (:samp:`{c}`)These six macros are defined by safe-ctype.h and provide
+Extension IS_ISOBASIC     (:samp:`{c}`)These six macros are defined by :samp:`safe-ctype.h` and provide
 additional character classes which are useful when doing lexical
 analysis of C or similar languages.  They are true for the following
 sets of characters:
@@ -898,7 +898,7 @@ sets of characters:
   ``pex_input_pipe`` :
 
   * Most systems' pipes can buffer only a fixed amount of data; a process
-    that writes to a full pipe blocks.  Thus, if you write to fp
+    that writes to a full pipe blocks.  Thus, if you write to :samp:`fp`
     before starting the first process, you run the risk of blocking when
     there is no child process yet to read the data and allow you to
     continue.  ``pex_input_pipe`` makes no promises about the

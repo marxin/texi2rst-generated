@@ -62,13 +62,13 @@ Here are run-time target specifications.
 .. c:macro:: TARGET_OBJFMT_CPP_BUILTINS ()
 
   Similarly to ``TARGET_CPU_CPP_BUILTINS`` but this macro is optional
-  and is used for the target object format.  elfos.h uses this
+  and is used for the target object format.  :samp:`elfos.h` uses this
   macro to define ``__ELF__``, so you probably do not need to define
   it yourself.
 
 .. index:: target_flags
 
-Variable extern int target_flagsThis variable is declared in options.h, which is included before
+Variable extern int target_flagsThis variable is declared in :samp:`options.h`, which is included before
 any target-specific headers.
 
 .. c:var:: int TARGET_DEFAULT_TARGET_FLAGS
@@ -83,7 +83,7 @@ any target-specific headers.
 .. function:: bool TARGET_HANDLE_OPTION (struct gcc_options *opts, struct gcc_options *opts_set, const struct cl_decoded_option *decoded, location_t loc)
 
   This hook is called whenever the user specifies one of the
-  target-specific options described by the .opt definition files
+  target-specific options described by the :samp:`.opt` definition files
   (see :ref:`options`).  It has the opportunity to do some option-specific
   processing and should return true if the option is valid.  The default
   definition does nothing but return true.
@@ -97,7 +97,7 @@ any target-specific headers.
 .. function:: bool TARGET_HANDLE_C_OPTION (size_t code, const char *arg, int value)
 
   This target hook is called whenever the user specifies one of the
-  target-specific C language family options described by the .opt
+  target-specific C language family options described by the :samp:`.opt`
   definition files(see :ref:`options`).  It has the opportunity to do some
   option-specific processing and should return true if the option is
   valid.  The arguments are like for ``TARGET_HANDLE_OPTION``.  The
@@ -195,7 +195,7 @@ any target-specific headers.
   in global variables, and recomputing them for each subtarget takes a
   significant amount of time.  The compiler therefore provides a facility
   for maintaining several versions of the global variables and quickly
-  switching between them; see target-globals.h for details.
+  switching between them; see :samp:`target-globals.h` for details.
 
   Define this macro to 1 if your target needs this facility.  The default
   is 0.

@@ -40,7 +40,7 @@ from the debugger using:
 and copy and paste the output into the body of the C function.
 
 Example DejaGnu tests of RTL can be seen in the source tree under
-gcc/testsuite/gcc.dg/rtl.
+:samp:`gcc/testsuite/gcc.dg/rtl`.
 
 The ``__RTL`` parser is not integrated with the C tokenizer or
 preprocessor, and works simply by reading the relevant lines within

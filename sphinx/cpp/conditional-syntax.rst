@@ -102,7 +102,7 @@ Here are some samples.
   Makefile.  See :ref:`invocation`.
 
 * Your program might have a special header file (often called
-  config.h) that is adjusted when the program is compiled.  It can
+  :samp:`config.h`) that is adjusted when the program is compiled.  It can
   define or not define macros depending on the features of the system and
   the desired capabilities of the program.  The adjustment can be
   automated by a tool such as :command:`autoconf`, or done by hand.

@@ -35,7 +35,7 @@
   the precompiled header file cannot be used, it is ignored.
 
   For instance, if you have ``#include "all.h"``, and you have
-  all.h.gch in the same directory as all.h, then the
+  :samp:`all.h.gch` in the same directory as :samp:`all.h`, then the
   precompiled header file is used if possible, and the original
   header is used otherwise.
 
@@ -56,7 +56,7 @@
 
   If you need to precompile the same header file for different
   languages, targets, or compiler options, you can instead make a
-  *directory* named like all.h.gch, and put each precompiled
+  *directory* named like :samp:`all.h.gch`, and put each precompiled
   header in the directory, perhaps using :option:`-o`.  It doesn't matter
   what you call the files in the directory; every precompiled header in
   the directory is considered.  The first precompiled header

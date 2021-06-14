@@ -37,7 +37,7 @@ below.
   On some machines, ``__builtin_saveregs`` is open-coded under the
   control of the target hook ``TARGET_EXPAND_BUILTIN_SAVEREGS``.  On
   other machines, it calls a routine written in assembler language,
-  found in libgcc2.c.
+  found in :samp:`libgcc2.c`.
 
   Code generated for the call to ``__builtin_saveregs`` appears at the
   beginning of the function, as opposed to where the call to
@@ -71,7 +71,7 @@ below.
   considering only its data type.  It returns an integer describing what
   kind of type that is---integer, floating, pointer, structure, and so on.
 
-  The file typeclass.h defines an enumeration that you can use to
+  The file :samp:`typeclass.h` defines an enumeration that you can use to
   interpret the values of ``__builtin_classify_type``.
 
 These machine description macros help implement varargs:

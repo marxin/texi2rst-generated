@@ -107,8 +107,8 @@ not doing a link step.
   plus any that you specify with :option:`-L`.
 
   Static libraries are archives of object files, and have file names
-  like lib :samp:`{library}`.a.  Some targets also support shared
-  libraries, which typically have names like lib :samp:`{library}`.so.
+  like :samp:`lib :samp:`{library}`.a`.  Some targets also support shared
+  libraries, which typically have names like :samp:`lib :samp:`{library}`.so`.
   If both static and shared libraries are found, the linker gives
   preference to linking with the shared library unless the
   :option:`-static` option is used.
@@ -116,7 +116,7 @@ not doing a link step.
   It makes a difference where in the command you write this option; the
   linker searches and processes libraries and object files in the order they
   are specified.  Thus, :samp:`foo.o -lz bar.o` searches library :samp:`z`
-  after file foo.o but before bar.o.  If bar.o refers
+  after file :samp:`foo.o` but before :samp:`bar.o`.  If :samp:`bar.o` refers
   to functions in :samp:`z`, those functions may not be loaded.
 
 .. option:: -lobjc
@@ -148,9 +148,9 @@ not doing a link step.
 .. option:: -nolibc
 
   Do not use the C library or system libraries tightly coupled with it when
-  linking.  Still link with the startup files, libgcc or toolchain
-  provided language support libraries such as libgnat, libgfortran
-  or libstdc++ unless options preventing their inclusion are used as
+  linking.  Still link with the startup files, :samp:`libgcc` or toolchain
+  provided language support libraries such as :samp:`libgnat`, :samp:`libgfortran`
+  or :samp:`libstdc++` unless options preventing their inclusion are used as
   well.  This typically removes :option:`-lc` from the link command line, as well
   as system libraries that normally go with it and become meaningless when
   absence of a C library is assumed, for example :option:`-lpthread` or
@@ -183,12 +183,12 @@ not doing a link step.
   .. index:: unresolved references and -nodefaultlibs
 
   One of the standard libraries bypassed by :option:`-nostdlib` and
-  :option:`-nodefaultlibs` is libgcc.a, a library of internal subroutines
+  :option:`-nodefaultlibs` is :samp:`libgcc.a`, a library of internal subroutines
   which GCC uses to overcome shortcomings of particular machines, or special
   needs for some languages.
   (See :ref:`Interfacing to GCC Output <interface>`,
-  for more discussion of libgcc.a.)
-  In most cases, you need libgcc.a even when you want to avoid
+  for more discussion of :samp:`libgcc.a`.)
+  In most cases, you need :samp:`libgcc.a` even when you want to avoid
   other standard libraries.  In other words, when you specify :option:`-nostdlib`
   or :option:`-nodefaultlibs` you should usually specify :option:`-lgcc` as well.
   This ensures that you have no unresolved references to internal GCC
@@ -268,28 +268,28 @@ not doing a link step.
 
 .. option:: -shared-libgcc, -static-libgcc
 
-  On systems that provide libgcc as a shared library, these options
+  On systems that provide :samp:`libgcc` as a shared library, these options
   force the use of either the shared or static version, respectively.
-  If no shared version of libgcc was built when the compiler was
+  If no shared version of :samp:`libgcc` was built when the compiler was
   configured, these options have no effect.
 
   There are several situations in which an application should use the
-  shared libgcc instead of the static version.  The most common
+  shared :samp:`libgcc` instead of the static version.  The most common
   of these is when the application wishes to throw and catch exceptions
   across different shared libraries.  In that case, each of the libraries
-  as well as the application itself should use the shared libgcc.
+  as well as the application itself should use the shared :samp:`libgcc`.
 
   Therefore, the G++ driver automatically adds :option:`-shared-libgcc`
   whenever you build a shared library or a main executable, because C++
   programs typically use exceptions, so this is the right thing to do.
 
   If, instead, you use the GCC driver to create shared libraries, you may
-  find that they are not always linked with the shared libgcc.
+  find that they are not always linked with the shared :samp:`libgcc`.
   If GCC finds, at its configuration time, that you have a non-GNU linker
   or a GNU linker that does not support option :option:`--eh-frame-hdr`,
-  it links the shared version of libgcc into shared libraries
+  it links the shared version of :samp:`libgcc` into shared libraries
   by default.  Otherwise, it takes advantage of the linker and optimizes
-  away the linking with the shared version of libgcc, linking with
+  away the linking with the shared version of :samp:`libgcc`, linking with
   the static version of libgcc by default.  This allows exceptions to
   propagate through such shared libraries, without incurring relocation
   costs at library load time.
@@ -297,59 +297,59 @@ not doing a link step.
   However, if a library or main executable is supposed to throw or catch
   exceptions, you must link it using the G++ driver, or using the option
   :option:`-shared-libgcc`, such that it is linked with the shared
-  libgcc.
+  :samp:`libgcc`.
 
 .. option:: -static-libasan
 
   When the :option:`-fsanitize`:samp:`=address` option is used to link a program,
   the GCC driver automatically links against libasan.  If
-  libasan is available as a shared library, and the :option:`-static`
+  :samp:`libasan` is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
-  libasan.  The :option:`-static-libasan` option directs the GCC
-  driver to link libasan statically, without necessarily linking
+  :samp:`libasan`.  The :option:`-static-libasan` option directs the GCC
+  driver to link :samp:`libasan` statically, without necessarily linking
   other libraries statically.
 
 .. option:: -static-libtsan
 
   When the :option:`-fsanitize`:samp:`=thread` option is used to link a program,
   the GCC driver automatically links against libtsan.  If
-  libtsan is available as a shared library, and the :option:`-static`
+  :samp:`libtsan` is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
-  libtsan.  The :option:`-static-libtsan` option directs the GCC
-  driver to link libtsan statically, without necessarily linking
+  :samp:`libtsan`.  The :option:`-static-libtsan` option directs the GCC
+  driver to link :samp:`libtsan` statically, without necessarily linking
   other libraries statically.
 
 .. option:: -static-liblsan
 
   When the :option:`-fsanitize`:samp:`=leak` option is used to link a program,
   the GCC driver automatically links against liblsan.  If
-  liblsan is available as a shared library, and the :option:`-static`
+  :samp:`liblsan` is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
-  liblsan.  The :option:`-static-liblsan` option directs the GCC
-  driver to link liblsan statically, without necessarily linking
+  :samp:`liblsan`.  The :option:`-static-liblsan` option directs the GCC
+  driver to link :samp:`liblsan` statically, without necessarily linking
   other libraries statically.
 
 .. option:: -static-libubsan
 
   When the :option:`-fsanitize`:samp:`=undefined` option is used to link a program,
   the GCC driver automatically links against libubsan.  If
-  libubsan is available as a shared library, and the :option:`-static`
+  :samp:`libubsan` is available as a shared library, and the :option:`-static`
   option is not used, then this links against the shared version of
-  libubsan.  The :option:`-static-libubsan` option directs the GCC
-  driver to link libubsan statically, without necessarily linking
+  :samp:`libubsan`.  The :option:`-static-libubsan` option directs the GCC
+  driver to link :samp:`libubsan` statically, without necessarily linking
   other libraries statically.
 
 .. option:: -static-libstdc++
 
   When the :command:`g++` program is used to link a C++ program, it
   normally automatically links against libstdc++.  If
-  libstdc++ is available as a shared library, and the
+  :samp:`libstdc++` is available as a shared library, and the
   :option:`-static` option is not used, then this links against the
-  shared version of libstdc++.  That is normally fine.  However, it
-  is sometimes useful to freeze the version of libstdc++ used by
+  shared version of :samp:`libstdc++`.  That is normally fine.  However, it
+  is sometimes useful to freeze the version of :samp:`libstdc++` used by
   the program without going all the way to a fully static link.  The
   :option:`-static-libstdc++` option directs the :command:`g++` driver to
-  link libstdc++ statically, without necessarily linking other
+  link :samp:`libstdc++` statically, without necessarily linking other
   libraries statically.
 
 .. option:: -symbolic

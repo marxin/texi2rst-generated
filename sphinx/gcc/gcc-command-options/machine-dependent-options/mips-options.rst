@@ -756,7 +756,7 @@ MIPS Options
     of the operands is negative.
 
   The workarounds for the division errata rely on special functions in
-  libgcc.a.  At present, these functions are only provided by
+  :samp:`libgcc.a`.  At present, these functions are only provided by
   the ``mips64vr*-elf`` configurations.
 
   Other VR4120 errata require a NOP to be inserted between certain pairs of

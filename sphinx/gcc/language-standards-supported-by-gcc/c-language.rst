@@ -220,7 +220,7 @@ environment, you need to find them elsewhere (for example, in the
 GNU C library).  See :ref:`Standard Libraries <standard-libraries>`.
 
 Most of the compiler support routines used by GCC are present in
-libgcc, but there are a few exceptions.  GCC requires the
+:samp:`libgcc`, but there are a few exceptions.  GCC requires the
 freestanding environment provide ``memcpy``, ``memmove``,
 ``memset`` and ``memcmp``.
 Finally, if ``__builtin_trap`` is used, and the target does

@@ -53,7 +53,7 @@ processors.
 .. option:: -mno-lsim
 
   Assume that runtime support has been provided and so omit the
-  simulator library (libsim.a) from the linker command line.
+  simulator library (:samp:`libsim.a)` from the linker command line.
 
 .. option:: -mstack-increment=size
 

@@ -330,7 +330,7 @@ ordinarily expect.
 
   Return true if the optimizers should use optab :samp:`{op}` with
   modes :samp:`{mode1}` and :samp:`{mode2}` for optimization type :samp:`{opt_type}`.
-  The optab is known to have an associated .md instruction
+  The optab is known to have an associated :samp:`.md` instruction
   whose C condition is true.  :samp:`{mode2}` is only meaningful for conversion
   optabs; for direct optabs it is a copy of :samp:`{mode1}`.
 

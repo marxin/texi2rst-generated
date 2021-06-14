@@ -38,19 +38,19 @@ names:
 * a hard coded linker file name, if GCC was configured with the
   :option:`--with-ld` option.
 
-* real-ld in the directories listed in the compiler's search
+* :samp:`real-ld` in the directories listed in the compiler's search
   directories.
 
-* real-ld in the directories listed in the environment variable
+* :samp:`real-ld` in the directories listed in the environment variable
   ``PATH``.
 
 * The file specified in the ``REAL_LD_FILE_NAME`` configuration macro,
   if specified.
 
-* ld in the compiler's search directories, except that
+* :samp:`ld` in the compiler's search directories, except that
   ``collect2`` will not execute itself recursively.
 
-* ld in ``PATH``.
+* :samp:`ld` in ``PATH``.
 
 'The compiler's search directories' means all the directories where
 :command:`gcc` searches for passes of the compiler.  This includes
@@ -58,16 +58,16 @@ directories that you specify with :option:`-B`.
 
 Cross-compilers search a little differently:
 
-* real-ld in the compiler's search directories.
+* :samp:`real-ld` in the compiler's search directories.
 
-* :samp:`{target}` -real-ld in ``PATH``.
+* :samp:`:samp:`{target}` -real-ld` in ``PATH``.
 
 * The file specified in the ``REAL_LD_FILE_NAME`` configuration macro,
   if specified.
 
-* ld in the compiler's search directories.
+* :samp:`ld` in the compiler's search directories.
 
-* :samp:`{target}` -ld in ``PATH``.
+* :samp:`:samp:`{target}` -ld` in ``PATH``.
 
 ``collect2`` explicitly avoids running ``ld`` using the file name
 under which ``collect2`` itself was invoked.  In fact, it remembers

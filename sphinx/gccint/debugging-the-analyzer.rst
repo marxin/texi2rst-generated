@@ -17,7 +17,7 @@ Special Functions for Debugging the Analyzer
 
 The analyzer recognizes various special functions by name, for use
 in debugging the analyzer.  Declarations can be seen in the testsuite
-in analyzer-decls.h.  None of these functions are actually
+in :samp:`analyzer-decls.h`.  None of these functions are actually
 implemented.
 
 Add:

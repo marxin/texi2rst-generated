@@ -14,7 +14,7 @@ All methods that are compatible with each other (i.e., that let concurrently
 running transactions still synchronize correctly even if different methods
 are used) belong to the same TM method group. Pointers to TM methods can be
 obtained using the factory methods prefixed with ``dispatch_`` in
-libitm_i.h. There are two special methods, ``dispatch_serial`` and
+:samp:`libitm_i.h`. There are two special methods, ``dispatch_serial`` and
 ``dispatch_serialirr``, that are compatible with all methods because they
 run transactions completely in serial mode.
 
@@ -31,7 +31,7 @@ executed next is not affected by the previous transaction.
 
 There is also global state associated with each method group, which is
 initialized and shut down ( ``method_group::init()`` and ``fini()`` )
-when switching between method groups (see retry.cc).
+when switching between method groups (see :samp:`retry.cc`).
 
 Selecting the default method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

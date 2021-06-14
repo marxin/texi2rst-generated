@@ -19,7 +19,7 @@ appropriate action taken if memory has been exhausted.  A group of
 'replacement functions' is available in ``libiberty`` to address these issues
 for some of the most commonly used subroutines.
 
-All of these functions are declared in the libiberty.h header
+All of these functions are declared in the :samp:`libiberty.h` header
 file.  Many of the implementations will use preprocessor macros set by
 GNU Autoconf, if you decide to make use of that program.  Some of these
 functions may call one another.
@@ -63,7 +63,7 @@ Error Reporting
 .. index:: error reporting
 
 These are a set of routines to facilitate programming with the system
-``errno`` interface.  The ``libiberty`` source file strerror.c
+``errno`` interface.  The ``libiberty`` source file :samp:`strerror.c`
 contains a good deal of documentation for these functions.
 
 .. signal stuff

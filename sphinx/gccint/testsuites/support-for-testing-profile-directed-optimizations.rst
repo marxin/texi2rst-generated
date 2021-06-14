@@ -8,7 +8,7 @@
 Support for testing profile-directed optimizations
 **************************************************
 
-The file profopt.exp provides language-independent support for
+The file :samp:`profopt.exp` provides language-independent support for
 checking correct execution of a test built with profile-directed
 optimization.  This testing requires that a test program be built and
 executed twice.  The first time it is compiled to generate profile
@@ -19,10 +19,10 @@ verify that the test produces the expected results.
 To check that the optimization actually generated better code, a
 test can be built and run a third time with normal optimizations to
 verify that the performance is better with the profile-directed
-optimizations.  profopt.exp has the beginnings of this kind
+optimizations.  :samp:`profopt.exp` has the beginnings of this kind
 of support.
 
-profopt.exp provides generic support for profile-directed
+:samp:`profopt.exp` provides generic support for profile-directed
 optimizations.  Each set of tests that uses it provides information
 about a specific optimization:
 

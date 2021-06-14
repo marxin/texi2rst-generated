@@ -62,14 +62,14 @@ program analysis purposes.
 
   When the compiled
   program exits it saves this data to a file called
-  :samp:`{auxname}`.gcda for each source file.  The data may be used for
+  :samp:`:samp:`{auxname}`.gcda` for each source file.  The data may be used for
   profile-directed optimizations ( :option:`-fbranch-probabilities` ), or for
   test coverage analysis ( :option:`-ftest-coverage` ).  Each object file's
   :samp:`{auxname}` is generated from the name of the output file, if
   explicitly specified and it is not the final executable, otherwise it is
   the basename of the source file.  In both cases any suffix is removed
-  (e.g. foo.gcda for input file dir/foo.c, or
-  dir/foo.gcda for output file specified as :option:`-o dir/foo.o` ).
+  (e.g. :samp:`foo.gcda` for input file :samp:`dir/foo.c`, or
+  :samp:`dir/foo.gcda` for output file specified as :option:`-o dir/foo.o` ).
   See :ref:`cross-profiling`.
 
   .. index:: gcov
@@ -87,7 +87,7 @@ program analysis purposes.
     every source file in a program.
 
   * Compile the source files additionally with :option:`-fprofile-abs-path`
-    to create absolute path names in the .gcno files.  This allows
+    to create absolute path names in the :samp:`.gcno` files.  This allows
     :command:`gcov` to find the correct sources in projects where compilations
     occur with different working directories.
 
@@ -107,7 +107,7 @@ program analysis purposes.
     Control Optimization <optimize-options>`).
 
   * For test coverage analysis, use :command:`gcov` to produce human readable
-    information from the .gcno and .gcda files.  Refer to the
+    information from the :samp:`.gcno` and :samp:`.gcda` files.  Refer to the
     :command:`gcov` documentation for further information.
 
   With :option:`-fprofile-arcs`, for each function of your program GCC
@@ -123,7 +123,7 @@ program analysis purposes.
   Produce a notes file that the :command:`gcov` code-coverage utility
   (see :ref:`gcov`) can use to
   show program coverage.  Each source file's note file is called
-  :samp:`{auxname}`.gcno.  Refer to the :option:`-fprofile-arcs` option
+  :samp:`:samp:`{auxname}`.gcno`.  Refer to the :option:`-fprofile-arcs` option
   above for a description of :samp:`{auxname}` and instructions on how to
   generate test coverage data.  Coverage data matches the source files
   more closely if you do not optimize.
@@ -131,7 +131,7 @@ program analysis purposes.
 .. option:: -fprofile-abs-path
 
   Automatically convert relative source file names to absolute path names
-  in the .gcno files.  This allows :command:`gcov` to find the correct
+  in the :samp:`.gcno` files.  This allows :command:`gcov` to find the correct
   sources in projects where compilations occur with different working
   directories.
 
@@ -146,8 +146,8 @@ program analysis purposes.
   profile data file appears in the same directory as the object file.
   In order to prevent the file name clashing, if the object file name is
   not an absolute path, we mangle the absolute path of the
-  :samp:`{sourcename}`.gcda file and use it as the file name of a
-  .gcda file.  See similar option :option:`-fprofile-note`.
+  :samp:`:samp:`{sourcename}`.gcda` file and use it as the file name of a
+  :samp:`.gcda` file.  See similar option :option:`-fprofile-note`.
 
   When an executable is run in a massive parallel environment, it is recommended
   to save profile to different folders.  That can be done with variables
@@ -204,9 +204,9 @@ program analysis purposes.
 
 .. option:: -fprofile-note=path
 
-  If :samp:`{path}` is specified, GCC saves .gcno file into :samp:`{path}`
+  If :samp:`{path}` is specified, GCC saves :samp:`.gcno` file into :samp:`{path}`
   location.  If you combine the option with multiple source files,
-  the .gcno file will be overwritten.
+  the :samp:`.gcno` file will be overwritten.
 
 .. option:: -fprofile-prefix-path=path
 
@@ -244,7 +244,7 @@ program analysis purposes.
   any of the regular expressions (separated by semi-colons).
 
   For example, :option:`-fprofile-filter-files`:samp:`=main\\.c;module.*\\.c` will instrument
-  only main.c and all C files starting with 'module'.
+  only :samp:`main.c` and all C files starting with 'module'.
 
 .. option:: -fprofile-exclude-files=regex
 
@@ -252,7 +252,7 @@ program analysis purposes.
   any of the regular expressions (separated by semi-colons).
 
   For example, :option:`-fprofile-exclude-files`:samp:`=/usr/.*` will prevent instrumentation
-  of all files that are located in the /usr/ folder.
+  of all files that are located in the :samp:`/usr/` folder.
 
 .. option:: -fprofile-reproducible=[multithreaded|parallel-runs|serial]
 
@@ -812,7 +812,7 @@ program analysis purposes.
   runtime functions for the vtable verification feature to be called.  
   This flag also causes the compiler to log information about which 
   vtable pointers it finds for each class.
-  This information is written to a file named vtv_set_ptr_data.log 
+  This information is written to a file named :samp:`vtv_set_ptr_data.log` 
   in the directory named by the environment variable :envvar:`VTV_LOGS_DIR` 
   if that is defined or the current working directory otherwise.
 
@@ -828,10 +828,10 @@ program analysis purposes.
   counts the number of calls to certain run-time library functions
   that it inserts and logs this information for each compilation unit.
   The compiler writes this information to a file named
-  vtv_count_data.log in the directory named by the environment
+  :samp:`vtv_count_data.log` in the directory named by the environment
   variable :envvar:`VTV_LOGS_DIR` if that is defined or the current working
   directory otherwise.  It also counts the size of the vtable pointer sets
-  for each class, and writes this information to vtv_class_set_sizes.log
+  for each class, and writes this information to :samp:`vtv_class_set_sizes.log`
   in the same directory.
 
   Note:  This feature *appends* data to the log files.  To get fresh log
@@ -889,7 +889,7 @@ program analysis purposes.
 
   :option:`-finstrument-functions-exclude-file-list`:samp:`=/bits/stl,include/sys`
   excludes any inline function defined in files whose pathnames
-  contain /bits/stl or include/sys.
+  contain :samp:`/bits/stl` or :samp:`include/sys`.
 
   If, for some reason, you want to include letter :samp:`,` in one of
   :samp:`{sym}`, write :samp:`\\,`. For example,

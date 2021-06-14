@@ -90,7 +90,7 @@ MicroBlaze Options
   Select application model :samp:`{app-model}`.  Valid models are
 
   :samp:`executable`
-    normal executable (default), uses startup code crt0.o.
+    normal executable (default), uses startup code :samp:`crt0.o`.
 
   .. option:: -mpic-data-is-text-relative
 
@@ -101,18 +101,18 @@ MicroBlaze Options
   :samp:`xmdstub`
     for use with Xilinx Microprocessor Debugger (XMD) based
     software intrusive debug agent called xmdstub. This uses startup file
-    crt1.o and sets the start address of the program to 0x800.
+    :samp:`crt1.o` and sets the start address of the program to 0x800.
 
   :samp:`bootstrap`
     for applications that are loaded using a bootloader.
-    This model uses startup file crt2.o which does not contain a processor
+    This model uses startup file :samp:`crt2.o` which does not contain a processor
     reset vector handler. This is suitable for transferring control on a
     processor reset to the bootloader rather than the application.
 
   :samp:`novectors`
     for applications that do not require any of the
     MicroBlaze vectors. This option may be useful for applications running
-    within a monitoring application. This model uses crt3.o as a startup file.
+    within a monitoring application. This model uses :samp:`crt3.o` as a startup file.
 
     Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for
   :option:`-mxl-mode-`:samp:`{app-model}`.

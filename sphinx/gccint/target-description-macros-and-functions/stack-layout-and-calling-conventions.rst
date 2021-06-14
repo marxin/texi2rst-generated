@@ -120,7 +120,7 @@ Here is the basic stack layout.
 
   The default value for this macro is ``STACK_POINTER_OFFSET`` plus the
   length of the outgoing arguments.  The default is correct for most
-  machines.  See function.c for details.
+  machines.  See :samp:`function.c` for details.
 
 .. c:macro:: INITIAL_FRAME_ADDRESS_RTX
 
@@ -390,7 +390,7 @@ Exception Handling Support
   :samp:`{code}` is 0 for data, 1 for code labels, 2 for function pointers.
   :samp:`{global}` is true if the symbol may be affected by dynamic relocations.
   The macro should return a combination of the ``DW_EH_PE_*`` defines
-  as found in dwarf2.h.
+  as found in :samp:`dwarf2.h`.
 
   If this macro is not defined, pointers will not be encoded but
   represented directly.
@@ -415,8 +415,8 @@ Exception Handling Support
   through signal frames.
 
   This macro is called from ``uw_frame_state_for`` in
-  unwind-dw2.c, unwind-dw2-xtensa.c and
-  unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context`` ;
+  :samp:`unwind-dw2.c`, :samp:`unwind-dw2-xtensa.c` and
+  :samp:`unwind-ia64.c`.  :samp:`{context}` is an ``_Unwind_Context`` ;
   :samp:`{fs}` is an ``_Unwind_FrameState``.  Examine ``context->ra``
   for the address of the code being executed and ``context->cfa`` for
   the stack pointer value.  If the frame can be decoded, the register
@@ -425,7 +425,7 @@ Exception Handling Support
   the macro should evaluate to ``_URC_END_OF_STACK``.
 
   For proper signal handling in Java this macro is accompanied by
-  ``MAKE_THROW_FRAME``, defined in libjava/include/\*-signal.h headers.
+  ``MAKE_THROW_FRAME``, defined in :samp:`libjava/include/*-signal.h` headers.
 
 .. c:macro:: MD_HANDLE_UNWABI (context, fs)
 
@@ -434,7 +434,7 @@ Exception Handling Support
   usually used for signal or interrupt frames.
 
   This macro is called from ``uw_update_context`` in libgcc's
-  unwind-ia64.c.  :samp:`{context}` is an ``_Unwind_Context`` ;
+  :samp:`unwind-ia64.c`.  :samp:`{context}` is an ``_Unwind_Context`` ;
   :samp:`{fs}` is an ``_Unwind_FrameState``.  Examine ``fs->unwabi``
   for the abi and context in the ``.unwabi`` directive.  If the
   ``.unwabi`` directive can be handled, the register save addresses should
@@ -1060,7 +1060,7 @@ the stack.
 
   .. index:: stdarg.h and register arguments
 
-  The usual way to make the ISO library stdarg.h work on a
+  The usual way to make the ISO library :samp:`stdarg.h` work on a
   machine where some arguments are usually passed in registers, is to
   cause nameless arguments to be passed on the stack instead.  This is
   done by making ``TARGET_FUNCTION_ARG`` return 0 whenever
@@ -1081,8 +1081,8 @@ the stack.
 .. function:: bool TARGET_MUST_PASS_IN_STACK (const function_arg_info &arg)
 
   This target hook should return ``true`` if we should not pass :samp:`{arg}`
-  solely in registers.  The file expr.h defines a
-  definition that is usually appropriate, refer to expr.h for additional
+  solely in registers.  The file :samp:`expr.h` defines a
+  definition that is usually appropriate, refer to :samp:`expr.h` for additional
   documentation.
 
 .. function:: rtx TARGET_FUNCTION_INCOMING_ARG (cumulative_args_t ca, const function_arg_info &arg)
@@ -1386,7 +1386,7 @@ the stack.
   The default version of this hook returns true for any mode
   required to handle the basic C types (as defined by the port).
   Included here are the double-word arithmetic supported by the
-  code in optabs.c.
+  code in :samp:`optabs.c`.
 
 .. function:: bool TARGET_VECTOR_MODE_SUPPORTED_P (machine_mode mode)
 
@@ -2215,7 +2215,7 @@ Stack smashing protection
   variable must be ``ptr_type_node``.
 
   The default version of this hook creates a variable called
-  :samp:`__stack_chk_guard`, which is normally defined in libgcc2.c.
+  :samp:`__stack_chk_guard`, which is normally defined in :samp:`libgcc2.c`.
 
 .. function:: tree TARGET_STACK_PROTECT_FAIL (void)
 
@@ -2225,7 +2225,7 @@ Stack smashing protection
 
   The default version of this hook invokes a function called
   :samp:`__stack_chk_fail`, taking no arguments.  This function is
-  normally defined in libgcc2.c.
+  normally defined in :samp:`libgcc2.c`.
 
 .. function:: bool TARGET_STACK_PROTECT_RUNTIME_ENABLED_P (void)
 

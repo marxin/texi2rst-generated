@@ -31,8 +31,8 @@ installation or for use in place of the corresponding tools of your
 OS), unpack the binutils distribution either in the same directory or
 a separate one.  In the latter case, add symbolic links to any
 components of the binutils you intend to build alongside the compiler
-(bfd, binutils, gas, gprof, ld,
-opcodes, ...) to the directory containing the GCC sources.
+(:samp:`bfd`, :samp:`binutils`, :samp:`gas`, :samp:`gprof`, :samp:`ld`,
+:samp:`opcodes`, ...) to the directory containing the GCC sources.
 
 Likewise the GMP, MPFR and MPC libraries can be automatically built
 together with GCC.  You may simply run the
@@ -40,7 +40,7 @@ together with GCC.  You may simply run the
 to set up everything.
 Otherwise unpack the GMP, MPFR and/or MPC source
 distributions in the directory containing the GCC sources and rename
-their directories to gmp, mpfr and mpc,
+their directories to :samp:`gmp`, :samp:`mpfr` and :samp:`mpc`,
 respectively (or use symbolic links with the same name).
 
 .. ***Configuration***********************************************************

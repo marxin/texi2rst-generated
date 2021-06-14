@@ -39,7 +39,7 @@ marginally over different data sets.
 
 When profile feedback is not available, the compiler may be asked to
 attempt to predict the behavior of each branch in the program using a
-set of heuristics (see predict.def for details) and compute
+set of heuristics (see :samp:`predict.def` for details) and compute
 estimated frequencies of each basic block by propagating the
 probabilities over the graph.
 

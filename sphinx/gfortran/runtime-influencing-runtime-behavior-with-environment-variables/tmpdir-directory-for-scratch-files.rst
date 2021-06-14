@@ -19,5 +19,5 @@ directory in the order below.
   :envvar:`TEMP` environment variables, if they exist, in that order.
 
 * The ``P_tmpdir`` macro if it is defined, otherwise the directory
-  /tmp.
+  :samp:`/tmp`.
 

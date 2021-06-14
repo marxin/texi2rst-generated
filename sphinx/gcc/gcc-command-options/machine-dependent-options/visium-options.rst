@@ -34,7 +34,7 @@ Visium Options
 
   :option:`-msoft-float` changes the calling convention in the output file;
   therefore, it is only useful if you compile *all* of a program with
-  this option.  In particular, you need to compile libgcc.a, the
+  this option.  In particular, you need to compile :samp:`libgcc.a`, the
   library that comes with GCC, with :option:`-msoft-float` in order for
   this to work.
 

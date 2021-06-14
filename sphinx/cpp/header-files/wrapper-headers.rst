@@ -43,11 +43,11 @@ searching the list of header file directories *after* the directory
 in which the current file was found.
 
 Suppose you specify :option:`-I /usr/local/include`, and the list of
-directories to search also includes /usr/include; and suppose
-both directories contain signal.h.  Ordinary ``#include
-<signal.h>`` finds the file under /usr/local/include.  If that
+directories to search also includes :samp:`/usr/include`; and suppose
+both directories contain :samp:`signal.h`.  Ordinary ``#include
+<signal.h>`` finds the file under :samp:`/usr/local/include`.  If that
 file contains ``#include_next <signal.h>``, it starts searching
-after that directory, and finds the file in /usr/include.
+after that directory, and finds the file in :samp:`/usr/include`.
 
 :samp:`#include_next` does not distinguish between ``<file>``
 and ``"file"`` inclusion, nor does it check that the file you

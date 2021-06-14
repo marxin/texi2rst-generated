@@ -26,7 +26,7 @@ the target's arithmetic.  To ensure consistency, GCC always uses
 emulation to work with floating point values, even when the host and
 target floating point formats are identical.
 
-The following macros are provided by real.h for the compiler to
+The following macros are provided by :samp:`real.h` for the compiler to
 use.  All parts of the compiler which generate or optimize
 floating-point calculations must use these macros.  They may evaluate
 their operands more than once, so operands must not have side effects.

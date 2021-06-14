@@ -14,7 +14,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   Use (do not use) the hardware floating-point instructions for
   floating-point operations.  When :option:`-msoft-float` is specified,
-  functions in libgcc.a are used to perform floating-point
+  functions in :samp:`libgcc.a` are used to perform floating-point
   operations.  Unless they are replaced by routines that emulate the
   floating-point operations, or compiled in such a way as to call such
   emulations routines, these routines issue floating-point

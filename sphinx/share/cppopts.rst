@@ -118,7 +118,7 @@
   When used with the driver options :option:`-MD` or :option:`-MMD`,
   :option:`-MF` overrides the default dependency output file.
 
-  If :samp:`{file}` is -, then the dependencies are written to stdout.
+  If :samp:`{file}` is :samp:`-`, then the dependencies are written to :samp:`stdout`.
 
 .. option:: -MG
 
@@ -141,7 +141,7 @@
   This option instructs CPP to add a phony target for each dependency
   other than the main file, causing each to depend on nothing.  These
   dummy rules work around errors :command:`make` gives if you remove header
-  files without updating the Makefile to match.
+  files without updating the :samp:`Makefile` to match.
 
   This is typical output:
 
@@ -185,9 +185,9 @@
   :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}`, except that
   :option:`-E` is not implied.  The driver determines :samp:`{file}` based on
   whether an :option:`-o` option is given.  If it is, the driver uses its
-  argument but with a suffix of .d, otherwise it takes the name
+  argument but with a suffix of :samp:`.d`, otherwise it takes the name
   of the input file, removes any directory components and suffix, and
-  applies a .d suffix.
+  applies a :samp:`.d` suffix.
 
   If :option:`-MD` is used in conjunction with :option:`-E`, any
   :option:`-o` switch is understood to specify the dependency output file
@@ -287,10 +287,10 @@
 
 .. option:: -fmacro-prefix-map=old=new
 
-  When preprocessing files residing in directory :samp:`{old}`,
+  When preprocessing files residing in directory :samp:`:samp:`{old}``,
   expand the ``__FILE__`` and ``__BASE_FILE__`` macros as if the
-  files resided in directory :samp:`{new}` instead.  This can be used
-  to change an absolute path to a relative path by using . for
+  files resided in directory :samp:`:samp:`{new}`` instead.  This can be used
+  to change an absolute path to a relative path by using :samp:`.` for
   :samp:`{new}` which can result in more reproducible builds that are
   location independent.  This option also affects
   ``__builtin_FILE()`` during compilation.  See also
@@ -447,7 +447,7 @@
     directives for all the macros defined during the execution of the
     preprocessor, including predefined macros.  This gives you a way of
     finding out what is predefined in your version of the preprocessor.
-    Assuming you have no file foo.h, the command
+    Assuming you have no file :samp:`foo.h`, the command
 
     .. code-block:: c++
 

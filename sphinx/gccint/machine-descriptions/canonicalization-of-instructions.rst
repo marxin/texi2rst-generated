@@ -166,5 +166,5 @@ are performed:
   original operation had sufficient precision to prevent overflow.
 
 Further canonicalization rules are defined in the function
-``commutative_operand_precedence`` in gcc/rtlanal.c.
+``commutative_operand_precedence`` in :samp:`gcc/rtlanal.c`.
 

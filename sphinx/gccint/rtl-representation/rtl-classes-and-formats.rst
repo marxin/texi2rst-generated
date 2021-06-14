@@ -19,7 +19,7 @@ RTL Classes and Formats
 The various expression codes are divided into several :dfn:`classes`,
 which are represented by single characters.  You can determine the class
 of an RTX code with the macro ``GET_RTX_CLASS (code)``.
-Currently, rtl.def defines these classes:
+Currently, :samp:`rtl.def` defines these classes:
 
 .. envvar:: RTX_OBJ
 
@@ -101,7 +101,7 @@ Currently, rtl.def defines these classes:
 
 .. index:: RTL format
 
-For each expression code, rtl.def specifies the number of
+For each expression code, :samp:`rtl.def` specifies the number of
 contained objects and their kinds using a sequence of characters
 called the :dfn:`format` of the expression code.  For example,
 the format of ``subreg`` is :samp:`ep`.

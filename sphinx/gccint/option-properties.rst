@@ -27,7 +27,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 ``Driver``
   The option is handled by the compiler driver using code not shared
-  with the compilers proper (cc1 etc.).
+  with the compilers proper (:samp:`cc1` etc.).
 
 ``language``
   The option is available when compiling for the given language.
@@ -37,7 +37,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   ``Language`` record.  See :ref:`option-file-format`.
 
 ``RejectDriver``
-  The option is only handled by the compilers proper (cc1 etc.)
+  The option is only handled by the compilers proper (:samp:`cc1` etc.)
   and should not be accepted by the driver.
 
 ``RejectNegative``

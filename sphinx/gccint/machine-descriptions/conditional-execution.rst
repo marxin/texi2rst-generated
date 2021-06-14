@@ -17,7 +17,7 @@ execution, or predication.  The hallmark of this feature is the
 ability to nullify most of the instructions in the instruction set.
 When the instruction set is large and not entirely symmetric, it
 can be quite tedious to describe these forms directly in the
-.md file.  An alternative is the ``define_cond_exec`` template.
+:samp:`.md` file.  An alternative is the ``define_cond_exec`` template.
 
 .. index:: define_cond_exec
 

@@ -20,7 +20,7 @@ run after gimplification and what source files they are located in.
   throw, remove lexical bindings that contain no variables, and other
   assorted simplistic cleanups.  The idea is to get rid of the obvious
   stuff quickly rather than wait until later when it's more work to get
-  rid of it.  This pass is located in tree-cfg.c and described by
+  rid of it.  This pass is located in :samp:`tree-cfg.c` and described by
   ``pass_remove_useless_stmts``.
 
 * OpenMP lowering
@@ -32,14 +32,14 @@ run after gimplification and what source files they are located in.
   expressions for local variables that have been mapped using data
   sharing clauses, exposing the control flow of most synchronization
   directives and adding region markers to facilitate the creation of the
-  control flow graph.  The pass is located in omp-low.c and is
+  control flow graph.  The pass is located in :samp:`omp-low.c` and is
   described by ``pass_lower_omp``.
 
 * OpenMP expansion
 
   If OpenMP generation ( :option:`-fopenmp` ) is enabled, this pass expands
   parallel regions into their own functions to be invoked by the thread
-  library.  The pass is located in omp-low.c and is described by
+  library.  The pass is located in :samp:`omp-low.c` and is described by
   ``pass_expand_omp``.
 
 * Lower control flow
@@ -50,7 +50,7 @@ run after gimplification and what source files they are located in.
   statements in its ``then`` and ``else`` arms.  Lexical binding
   information for each statement will be found in ``TREE_BLOCK`` rather
   than being inferred from its position under a ``BIND_EXPR``.  This
-  pass is found in gimple-low.c and is described by
+  pass is found in :samp:`gimple-low.c` and is described by
   ``pass_lower_cf``.
 
 * Lower exception handling control flow
@@ -63,13 +63,13 @@ run after gimplification and what source files they are located in.
   examine ``tree_can_throw_internal`` or ``tree_can_throw_external``
   for exact semantics.  Exact control flow may be extracted from
   ``foreach_reachable_handler``.  The EH region nesting tree is defined
-  in except.h and built in except.c.  The lowering pass
-  itself is in tree-eh.c and is described by ``pass_lower_eh``.
+  in :samp:`except.h` and built in :samp:`except.c`.  The lowering pass
+  itself is in :samp:`tree-eh.c` and is described by ``pass_lower_eh``.
 
 * Build the control flow graph
 
   This pass decomposes a function into basic blocks and creates all of
-  the edges that connect them.  It is located in tree-cfg.c and
+  the edges that connect them.  It is located in :samp:`tree-cfg.c` and
   is described by ``pass_build_cfg``.
 
 * Find all referenced variables
@@ -78,7 +78,7 @@ run after gimplification and what source files they are located in.
   variables referenced in the function, ``referenced_vars``.  The
   index at which a variable is found in the array is used as a UID
   for the variable within this function.  This data is needed by the
-  SSA rewriting routines.  The pass is located in tree-dfa.c
+  SSA rewriting routines.  The pass is located in :samp:`tree-dfa.c`
   and is described by ``pass_referenced_vars``.
 
 * Enter static single assignment form
@@ -88,7 +88,7 @@ run after gimplification and what source files they are located in.
   ``SSA_NAME``, and all occurrences of other variables will be
   annotated with ``VDEFS`` and ``VUSES`` ; PHI nodes will have
   been inserted as necessary for each basic block.  This pass is
-  located in tree-ssa.c and is described by ``pass_build_ssa``.
+  located in :samp:`tree-ssa.c` and is described by ``pass_build_ssa``.
 
 * Warn for uninitialized variables
 
@@ -97,7 +97,7 @@ run after gimplification and what source files they are located in.
   uses are uninitialized.  The pass is run twice, before and after
   optimization (if turned on).  In the first pass we only warn for uses that are
   positively uninitialized; in the second pass we warn for uses that
-  are possibly uninitialized.  The pass is located in tree-ssa.c
+  are possibly uninitialized.  The pass is located in :samp:`tree-ssa.c`
   and is defined by ``pass_early_warn_uninitialized`` and
   ``pass_late_warn_uninitialized``.
 
@@ -107,13 +107,13 @@ run after gimplification and what source files they are located in.
   result is unused.  It does not do memory life analysis, so any value
   that is stored in memory is considered used.  The pass is run multiple
   times throughout the optimization process.  It is located in
-  tree-ssa-dce.c and is described by ``pass_dce``.
+  :samp:`tree-ssa-dce.c` and is described by ``pass_dce``.
 
 * Dominator optimizations
 
   This pass performs trivial dominator-based copy and constant propagation,
   expression simplification, and jump threading.  It is run multiple times
-  throughout the optimization process.  It is located in tree-ssa-dom.c
+  throughout the optimization process.  It is located in :samp:`tree-ssa-dom.c`
   and is described by ``pass_dominator``.
 
 * Forward propagation of single-use variables
@@ -121,7 +121,7 @@ run after gimplification and what source files they are located in.
   This pass attempts to remove redundant computation by substituting
   variables that are used once into the expression that uses them and
   seeing if the result can be simplified.  It is located in
-  tree-ssa-forwprop.c and is described by ``pass_forwprop``.
+  :samp:`tree-ssa-forwprop.c` and is described by ``pass_forwprop``.
 
 * Copy Renaming
 
@@ -129,14 +129,14 @@ run after gimplification and what source files they are located in.
   copy operations such that SSA->normal can coalesce the copy away.  When compiler
   temporaries are copies of user variables, it also renames the compiler
   temporary to the user variable resulting in better use of user symbols.  It is
-  located in tree-ssa-copyrename.c and is described by
+  located in :samp:`tree-ssa-copyrename.c` and is described by
   ``pass_copyrename``.
 
 * PHI node optimizations
 
   This pass recognizes forms of PHI inputs that can be represented as
   conditional expressions and rewrites them into straight line code.
-  It is located in tree-ssa-phiopt.c and is described by
+  It is located in :samp:`tree-ssa-phiopt.c` and is described by
   ``pass_phiopt``.
 
 * May-alias optimization
@@ -147,17 +147,17 @@ run after gimplification and what source files they are located in.
   non-aliased variables that can be renamed into SSA form.  We also
   update the ``VDEF`` / ``VUSE`` memory tags for non-renameable
   aggregates so that we get fewer false kills.  The pass is located
-  in tree-ssa-alias.c and is described by ``pass_may_alias``.
+  in :samp:`tree-ssa-alias.c` and is described by ``pass_may_alias``.
 
   Interprocedural points-to information is located in
-  tree-ssa-structalias.c and described by ``pass_ipa_pta``.
+  :samp:`tree-ssa-structalias.c` and described by ``pass_ipa_pta``.
 
 * Profiling
 
   This pass instruments the function in order to collect runtime block
   and value profiling data.  Such data may be fed back into the compiler
   on a subsequent run so as to allow optimization based on expected
-  execution frequencies.  The pass is located in tree-profile.c and
+  execution frequencies.  The pass is located in :samp:`tree-profile.c` and
   is described by ``pass_ipa_tree_profile``.
 
 * Static profile estimation
@@ -165,13 +165,13 @@ run after gimplification and what source files they are located in.
   This pass implements series of heuristics to guess propababilities
   of branches.  The resulting predictions are turned into edge profile
   by propagating branches across the control flow graphs.
-  The pass is located in tree-profile.c and is described by
+  The pass is located in :samp:`tree-profile.c` and is described by
   ``pass_profile``.
 
 * Lower complex arithmetic
 
   This pass rewrites complex arithmetic operations into their component
-  scalar arithmetic operations.  The pass is located in tree-complex.c
+  scalar arithmetic operations.  The pass is located in :samp:`tree-complex.c`
   and is described by ``pass_lower_complex``.
 
 * Scalar replacement of aggregates
@@ -180,46 +180,46 @@ run after gimplification and what source files they are located in.
   a set of scalar variables.  The resulting scalar variables are
   rewritten into SSA form, which allows subsequent optimization passes
   to do a significantly better job with them.  The pass is located in
-  tree-sra.c and is described by ``pass_sra``.
+  :samp:`tree-sra.c` and is described by ``pass_sra``.
 
 * Dead store elimination
 
   This pass eliminates stores to memory that are subsequently overwritten
   by another store, without any intervening loads.  The pass is located
-  in tree-ssa-dse.c and is described by ``pass_dse``.
+  in :samp:`tree-ssa-dse.c` and is described by ``pass_dse``.
 
 * Tail recursion elimination
 
   This pass transforms tail recursion into a loop.  It is located in
-  tree-tailcall.c and is described by ``pass_tail_recursion``.
+  :samp:`tree-tailcall.c` and is described by ``pass_tail_recursion``.
 
 * Forward store motion
 
   This pass sinks stores and assignments down the flowgraph closer to their
-  use point.  The pass is located in tree-ssa-sink.c and is
+  use point.  The pass is located in :samp:`tree-ssa-sink.c` and is
   described by ``pass_sink_code``.
 
 * Partial redundancy elimination
 
   This pass eliminates partially redundant computations, as well as
-  performing load motion.  The pass is located in tree-ssa-pre.c
+  performing load motion.  The pass is located in :samp:`tree-ssa-pre.c`
   and is described by ``pass_pre``.
 
   Just before partial redundancy elimination, if
   :option:`-funsafe-math-optimizations` is on, GCC tries to convert
   divisions to multiplications by the reciprocal.  The pass is located
-  in tree-ssa-math-opts.c and is described by
+  in :samp:`tree-ssa-math-opts.c` and is described by
   ``pass_cse_reciprocal``.
 
 * Full redundancy elimination
 
   This is a simpler form of PRE that only eliminates redundancies that
-  occur on all paths.  It is located in tree-ssa-pre.c and
+  occur on all paths.  It is located in :samp:`tree-ssa-pre.c` and
   described by ``pass_fre``.
 
 * Loop optimization
 
-  The main driver of the pass is placed in tree-ssa-loop.c
+  The main driver of the pass is placed in :samp:`tree-ssa-loop.c`
   and described by ``pass_loop``.
 
   The optimizations performed by this pass are:
@@ -229,33 +229,33 @@ run after gimplification and what source files they are located in.
   nontrivial sequences of insns).  With :option:`-funswitch-loops` it also moves
   operands of conditions that are invariant out of the loop, so that we can use
   just trivial invariantness analysis in loop unswitching.  The pass also includes
-  store motion.  The pass is implemented in tree-ssa-loop-im.c.
+  store motion.  The pass is implemented in :samp:`tree-ssa-loop-im.c`.
 
   Canonical induction variable creation.  This pass creates a simple counter
   for number of iterations of the loop and replaces the exit condition of the
   loop using it, in case when a complicated analysis is necessary to determine
   the number of iterations.  Later optimizations then may determine the number
-  easily.  The pass is implemented in tree-ssa-loop-ivcanon.c.
+  easily.  The pass is implemented in :samp:`tree-ssa-loop-ivcanon.c`.
 
   Induction variable optimizations.  This pass performs standard induction
   variable optimizations, including strength reduction, induction variable
   merging and induction variable elimination.  The pass is implemented in
-  tree-ssa-loop-ivopts.c.
+  :samp:`tree-ssa-loop-ivopts.c`.
 
   Loop unswitching.  This pass moves the conditional jumps that are invariant
   out of the loops.  To achieve this, a duplicate of the loop is created for
   each possible outcome of conditional jump(s).  The pass is implemented in
-  tree-ssa-loop-unswitch.c.
+  :samp:`tree-ssa-loop-unswitch.c`.
 
   Loop splitting.  If a loop contains a conditional statement that is
   always true for one part of the iteration space and false for the other
   this pass splits the loop into two, one dealing with one side the other
   only with the other, thereby removing one inner-loop conditional.  The
-  pass is implemented in tree-ssa-loop-split.c.
+  pass is implemented in :samp:`tree-ssa-loop-split.c`.
 
   The optimizations also use various utility functions contained in
-  tree-ssa-loop-manip.c, cfgloop.c, cfgloopanal.c and
-  cfgloopmanip.c.
+  :samp:`tree-ssa-loop-manip.c`, :samp:`cfgloop.c`, :samp:`cfgloopanal.c` and
+  :samp:`cfgloopmanip.c`.
 
   Vectorization.  This pass transforms loops to operate on vector types
   instead of scalar types.  Data parallelism across loop iterations is exploited
@@ -267,26 +267,26 @@ run after gimplification and what source files they are located in.
   Additional loop transformations such as peeling and versioning may take place
   to align the number of iterations, and to align the memory accesses in the
   loop.
-  The pass is implemented in tree-vectorizer.c (the main driver),
-  tree-vect-loop.c and tree-vect-loop-manip.c (loop specific parts
-  and general loop utilities), tree-vect-slp (loop-aware SLP
-  functionality), tree-vect-stmts.c, tree-vect-data-refs.c and
-  tree-vect-slp-patterns.c containing the SLP pattern matcher.
-  Analysis of data references is in tree-data-ref.c.
+  The pass is implemented in :samp:`tree-vectorizer.c` (the main driver),
+  :samp:`tree-vect-loop.c` and :samp:`tree-vect-loop-manip.c` (loop specific parts
+  and general loop utilities), :samp:`tree-vect-slp` (loop-aware SLP
+  functionality), :samp:`tree-vect-stmts.c`, :samp:`tree-vect-data-refs.c` and
+  :samp:`tree-vect-slp-patterns.c` containing the SLP pattern matcher.
+  Analysis of data references is in :samp:`tree-data-ref.c`.
 
   SLP Vectorization.  This pass performs vectorization of straight-line code. The
-  pass is implemented in tree-vectorizer.c (the main driver),
-  tree-vect-slp.c, tree-vect-stmts.c and
-  tree-vect-data-refs.c.
+  pass is implemented in :samp:`tree-vectorizer.c` (the main driver),
+  :samp:`tree-vect-slp.c`, :samp:`tree-vect-stmts.c` and
+  :samp:`tree-vect-data-refs.c`.
 
   Autoparallelization.  This pass splits the loop iteration space to run
-  into several threads.  The pass is implemented in tree-parloops.c.
+  into several threads.  The pass is implemented in :samp:`tree-parloops.c`.
 
   Graphite is a loop transformation framework based on the polyhedral
   model.  Graphite stands for Gimple Represented as Polyhedra.  The
   internals of this infrastructure are documented in
   http://gcc.gnu.org/wiki/Graphite.  The passes working on
-  this representation are implemented in the various graphite-\*
+  this representation are implemented in the various :samp:`graphite-*`
   files.
 
 * Tree level if-conversion for vectorizer
@@ -296,28 +296,28 @@ run after gimplification and what source files they are located in.
   basic blocks in one big block.  The idea is to present loop in such
   form so that vectorizer can have one to one mapping between statements
   and available vector operations.  This pass is located in
-  tree-if-conv.c and is described by ``pass_if_conversion``.
+  :samp:`tree-if-conv.c` and is described by ``pass_if_conversion``.
 
 * Conditional constant propagation
 
   This pass relaxes a lattice of values in order to identify those
   that must be constant even in the presence of conditional branches.
-  The pass is located in tree-ssa-ccp.c and is described
+  The pass is located in :samp:`tree-ssa-ccp.c` and is described
   by ``pass_ccp``.
 
   A related pass that works on memory loads and stores, and not just
-  register values, is located in tree-ssa-ccp.c and described by
+  register values, is located in :samp:`tree-ssa-ccp.c` and described by
   ``pass_store_ccp``.
 
 * Conditional copy propagation
 
   This is similar to constant propagation but the lattice of values is
   the 'copy-of' relation.  It eliminates redundant copies from the
-  code.  The pass is located in tree-ssa-copy.c and described by
+  code.  The pass is located in :samp:`tree-ssa-copy.c` and described by
   ``pass_copy_prop``.
 
   A related pass that works on memory copies, and not just register
-  copies, is located in tree-ssa-copy.c and described by
+  copies, is located in :samp:`tree-ssa-copy.c` and described by
   ``pass_store_copy_prop``.
 
 * Value range propagation
@@ -331,26 +331,26 @@ run after gimplification and what source files they are located in.
   propagate branch probabilities nor it uses more than a single
   range per SSA name. This means that the current implementation
   cannot be used for branch prediction (though adapting it would
-  not be difficult).  The pass is located in tree-vrp.c and is
+  not be difficult).  The pass is located in :samp:`tree-vrp.c` and is
   described by ``pass_vrp``.
 
 * Folding built-in functions
 
   This pass simplifies built-in functions, as applicable, with constant
   arguments or with inferable string lengths.  It is located in
-  tree-ssa-ccp.c and is described by ``pass_fold_builtins``.
+  :samp:`tree-ssa-ccp.c` and is described by ``pass_fold_builtins``.
 
 * Split critical edges
 
   This pass identifies critical edges and inserts empty basic blocks
   such that the edge is no longer critical.  The pass is located in
-  tree-cfg.c and is described by ``pass_split_crit_edges``.
+  :samp:`tree-cfg.c` and is described by ``pass_split_crit_edges``.
 
 * Control dependence dead code elimination
 
   This pass is a stronger form of dead code elimination that can
   eliminate unnecessary control flow statements.   It is located
-  in tree-ssa-dce.c and is described by ``pass_cd_dce``.
+  in :samp:`tree-ssa-dce.c` and is described by ``pass_cd_dce``.
 
 * Tail call elimination
 
@@ -359,9 +359,9 @@ run after gimplification and what source files they are located in.
   data and control flow problem is solved.  The code transformation
   requires target support, and so is delayed until RTL.  In the
   meantime ``CALL_EXPR_TAILCALL`` is set indicating the possibility.
-  The pass is located in tree-tailcall.c and is described by
+  The pass is located in :samp:`tree-tailcall.c` and is described by
   ``pass_tail_calls``.  The RTL transformation is handled by
-  ``fixup_tail_calls`` in calls.c.
+  ``fixup_tail_calls`` in :samp:`calls.c`.
 
 * Warn for function return without value
 
@@ -369,7 +369,7 @@ run after gimplification and what source files they are located in.
   not specify a value and issues a warning.  Such a statement may have
   been injected by falling off the end of the function.  This pass is
   run last so that we have as much time as possible to prove that the
-  statement is not reachable.  It is located in tree-cfg.c and
+  statement is not reachable.  It is located in :samp:`tree-cfg.c` and
   is described by ``pass_warn_function_return``.
 
 * Leave static single assignment form
@@ -377,14 +377,14 @@ run after gimplification and what source files they are located in.
   This pass rewrites the function such that it is in normal form.  At
   the same time, we eliminate as many single-use temporaries as possible,
   so the intermediate language is no longer GIMPLE, but GENERIC.  The
-  pass is located in tree-outof-ssa.c and is described by
+  pass is located in :samp:`tree-outof-ssa.c` and is described by
   ``pass_del_ssa``.
 
 * Merge PHI nodes that feed into one another
 
   This is part of the CFG cleanup passes.  It attempts to join PHI nodes
   from a forwarder CFG block into another block with PHI nodes.  The
-  pass is located in tree-cfgcleanup.c and is described by
+  pass is located in :samp:`tree-cfgcleanup.c` and is described by
   ``pass_merge_phi``.
 
 * Return value optimization
@@ -393,7 +393,7 @@ run after gimplification and what source files they are located in.
   variable is an aggregate type, then the variable is replaced with the
   return value for the function (i.e., the function's DECL_RESULT).  This
   is equivalent to the C++ named return value optimization applied to
-  GIMPLE.  The pass is located in tree-nrv.c and is described by
+  GIMPLE.  The pass is located in :samp:`tree-nrv.c` and is described by
   ``pass_nrv``.
 
 * Return slot optimization
@@ -409,13 +409,13 @@ run after gimplification and what source files they are located in.
   This is a propagation pass similar to CCP that tries to remove calls
   to ``__builtin_object_size`` when the size of the object can be
   computed at compile-time.  This pass is located in
-  tree-object-size.c and is described by
+  :samp:`tree-object-size.c` and is described by
   ``pass_object_sizes``.
 
 * Loop invariant motion
 
   This pass removes expensive loop-invariant computations out of loops.
-  The pass is located in tree-ssa-loop.c and described by
+  The pass is located in :samp:`tree-ssa-loop.c` and described by
   ``pass_lim``.
 
 * Loop nest optimizations
@@ -425,19 +425,19 @@ run after gimplification and what source files they are located in.
   all geared to the optimization of data locality in array traversals
   and the removal of dependencies that hamper optimizations such as loop
   parallelization and vectorization.  The pass is located in
-  tree-loop-linear.c and described by
+  :samp:`tree-loop-linear.c` and described by
   ``pass_linear_transform``.
 
 * Removal of empty loops
 
   This pass removes loops with no code in them.  The pass is located in
-  tree-ssa-loop-ivcanon.c and described by
+  :samp:`tree-ssa-loop-ivcanon.c` and described by
   ``pass_empty_loop``.
 
 * Unrolling of small loops
 
   This pass completely unrolls loops with few iterations.  The pass
-  is located in tree-ssa-loop-ivcanon.c and described by
+  is located in :samp:`tree-ssa-loop-ivcanon.c` and described by
   ``pass_complete_unroll``.
 
 * Predictive commoning
@@ -448,20 +448,20 @@ run after gimplification and what source files they are located in.
   of temporary variables that are rotated at the end of loop.  To avoid
   the need for this rotation, the loop is then unrolled and the copies
   of the loop body are rewritten to use the appropriate version of
-  the temporary variable.  This pass is located in tree-predcom.c
+  the temporary variable.  This pass is located in :samp:`tree-predcom.c`
   and described by ``pass_predcom``.
 
 * Array prefetching
 
   This pass issues prefetch instructions for array references inside
-  loops.  The pass is located in tree-ssa-loop-prefetch.c and
+  loops.  The pass is located in :samp:`tree-ssa-loop-prefetch.c` and
   described by ``pass_loop_prefetch``.
 
 * Reassociation
 
   This pass rewrites arithmetic expressions to enable optimizations that
   operate on them, like redundancy elimination and vectorization.  The
-  pass is located in tree-ssa-reassoc.c and described by
+  pass is located in :samp:`tree-ssa-reassoc.c` and described by
   ``pass_reassoc``.
 
 * Optimization of ``stdarg`` functions

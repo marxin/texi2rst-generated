@@ -65,7 +65,7 @@ Creating Obstacks
 ~~~~~~~~~~~~~~~~~
 
 The utilities for manipulating obstacks are declared in the header
-file obstack.h.
+file :samp:`obstack.h`.
 
 .. index:: obstack.h
 
@@ -107,7 +107,7 @@ Preparing for Using Obstacks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each source file in which you plan to use obstacks
-must include the header file obstack.h, like this:
+must include the header file :samp:`obstack.h`, like this:
 
 .. code-block:: c++
 

@@ -22,7 +22,7 @@ flow.  Both representations share as much of the CFG maintenance code
 as possible.  For each representation, a set of :dfn:`hooks` is defined
 so that each representation can provide its own implementation of CFG
 manipulation routines when necessary.  These hooks are defined in
-cfghooks.h.  There are hooks for almost all common CFG
+:samp:`cfghooks.h`.  There are hooks for almost all common CFG
 manipulations, including block splitting and merging, edge redirection
 and creating and deleting basic blocks.  These hooks should provide
 everything you need to maintain and manipulate the CFG in both the RTL
@@ -110,7 +110,7 @@ Another common scenario is redirection of branch instructions, but
 this is best modeled as redirection of edges in the control flow graph
 and thus use of ``redirect_edge_and_branch`` is preferred over more
 low level functions, such as ``redirect_jump`` that operate on RTL
-chain only.  The CFG hooks defined in cfghooks.h should provide
+chain only.  The CFG hooks defined in :samp:`cfghooks.h` should provide
 the complete API required for manipulating and maintaining the CFG.
 
 .. index:: split_block

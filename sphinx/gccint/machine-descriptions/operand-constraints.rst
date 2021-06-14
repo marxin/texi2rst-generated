@@ -352,7 +352,7 @@ Testing constraints from C
 
 It is occasionally useful to test a constraint from C code rather than
 implicitly via the constraint string in a ``match_operand``.  The
-generated file tm_p.h declares a few interfaces for working
+generated file :samp:`tm_p.h` declares a few interfaces for working
 with constraints.  At present these are defined for all constraints
 except ``g`` (which is equivalent to ``general_operand`` ).
 
@@ -397,8 +397,8 @@ argument expect one of these constants.
 
   For each non-register constraint :samp:`{m}` except ``g``, there is
   one of these functions; it returns ``true`` if :samp:`{exp}` satisfies the
-  constraint.  These functions are only visible if rtl.h was included
-  before tm_p.h.
+  constraint.  These functions are only visible if :samp:`rtl.h` was included
+  before :samp:`tm_p.h`.
 
 .. function:: bool constraint_satisfied_p (rtx exp, enum constraint_num c)
 

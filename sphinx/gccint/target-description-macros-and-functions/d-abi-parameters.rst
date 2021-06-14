@@ -26,7 +26,7 @@ D ABI parameters
 
   Register all target information keys relating to the target CPU using the
   function ``d_add_target_info_handlers``, which takes a
-  :samp:`struct d_target_info_spec` (defined in d/d-target.h).  The keys
+  :samp:`struct d_target_info_spec` (defined in :samp:`d/d-target.h`).  The keys
   added by this hook are made available at compile time by the
   ``__traits(getTargetInfo)`` extension, the result is an expression
   describing the requested target information.

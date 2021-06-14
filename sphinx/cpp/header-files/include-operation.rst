@@ -14,13 +14,13 @@ current file.  The output from the preprocessor contains the output
 already generated, followed by the output resulting from the included
 file, followed by the output that comes from the text after the
 :samp:`#include` directive.  For example, if you have a header file
-header.h as follows,
+:samp:`header.h` as follows,
 
 .. code-block:: c++
 
   char *test (void);
 
-and a main program called program.c that uses the header file,
+and a main program called :samp:`program.c` that uses the header file,
 like this,
 
 .. code-block:: c++
@@ -35,7 +35,7 @@ like this,
   }
 
 the compiler will see the same token stream as it would if
-program.c read
+:samp:`program.c` read
 
 .. code-block:: c++
 

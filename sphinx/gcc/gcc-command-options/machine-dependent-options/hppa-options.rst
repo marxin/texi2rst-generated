@@ -17,7 +17,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   Generate code for the specified architecture.  The choices for
   :samp:`{architecture-type}` are :samp:`1.0` for PA 1.0, :samp:`1.1` for PA
   1.1, and :samp:`2.0` for PA 2.0 processors.  Refer to
-  /usr/lib/sched.models on an HP-UX system to determine the proper
+  :samp:`/usr/lib/sched.models` on an HP-UX system to determine the proper
   architecture option for your machine.  Code compiled for lower numbered
   architectures runs on higher numbered architectures, but not the
   other way around.
@@ -96,7 +96,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   Schedule code according to the constraints for the machine type
   :samp:`{cpu-type}`.  The choices for :samp:`{cpu-type}` are :samp:`700`
   :samp:`7100`, :samp:`7100LC`, :samp:`7200`, :samp:`7300` and :samp:`8000`.  Refer
-  to /usr/lib/sched.models on an HP-UX system to determine the
+  to :samp:`/usr/lib/sched.models` on an HP-UX system to determine the
   proper scheduling option for your machine.  The default scheduling is
   :samp:`8000`.
 
@@ -117,7 +117,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
   :option:`-msoft-float` changes the calling convention in the output file;
   therefore, it is only useful if you compile *all* of a program with
-  this option.  In particular, you need to compile libgcc.a, the
+  this option.  In particular, you need to compile :samp:`libgcc.a`, the
   library that comes with GCC, with :option:`-msoft-float` in order for
   this to work.
 
@@ -200,10 +200,10 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
   :option:`-munix`:samp:`=93` provides the same predefines as GCC 3.3 and 3.4.
   :option:`-munix`:samp:`=95` provides additional predefines for ``XOPEN_UNIX``
-  and ``_XOPEN_SOURCE_EXTENDED``, and the startfile unix95.o.
+  and ``_XOPEN_SOURCE_EXTENDED``, and the startfile :samp:`unix95.o`.
   :option:`-munix`:samp:`=98` provides additional predefines for ``_XOPEN_UNIX``,
   ``_XOPEN_SOURCE_EXTENDED``, ``_INCLUDE__STDC_A1_SOURCE`` and
-  ``_INCLUDE_XOPEN_SOURCE_500``, and the startfile unix98.o.
+  ``_INCLUDE_XOPEN_SOURCE_500``, and the startfile :samp:`unix98.o`.
 
   It is *important* to note that this option changes the interfaces
   for various library routines.  It also affects the operational behavior

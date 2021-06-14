@@ -103,7 +103,7 @@ also be insns that are matched by some ``define_insn`` and, if
 of those definitions.
 
 As an example of this usage of ``define_split``, consider the following
-example from a29k.md, which splits a ``sign_extend`` from
+example from :samp:`a29k.md`, which splits a ``sign_extend`` from
 ``HImode`` to ``SImode`` into a pair of shift insns:
 
 .. code-block:: c++
@@ -133,7 +133,7 @@ patterns to be generated.  It will verify that these patterns match some
 ``define_split`` that will never produce insns that match).
 
 Here is an example of this use of ``define_split``, taken from
-rs6000.md:
+:samp:`rs6000.md`:
 
 .. code-block:: c++
 

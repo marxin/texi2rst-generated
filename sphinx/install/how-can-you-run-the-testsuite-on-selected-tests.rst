@@ -11,7 +11,7 @@ In order to run sets of tests selectively, there are targets
 :samp:`make check-c++`, :samp:`make check-d` :samp:`make check-fortran`,
 :samp:`make check-ada`, :samp:`make check-objc`, :samp:`make check-obj-c++`,
 :samp:`make check-lto`
-in the gcc subdirectory of the object directory.  You can also
+in the :samp:`gcc` subdirectory of the object directory.  You can also
 just run :samp:`make check` in a subdirectory of the object directory.
 
 A more selective way to just run all :command:`gcc` execute tests in the
@@ -38,10 +38,10 @@ single quotes if multiple expressions are desired. For example,
   make check-g++ RUNTESTFLAGS="old-deja.exp=9805*\ virtual2.c other-options"
   make check-g++ RUNTESTFLAGS="'old-deja.exp=9805* virtual2.c' other-options"
 
-The \*.exp files are located in the testsuite directories of the GCC
-source, the most important ones being compile.exp,
-execute.exp, dg.exp and old-deja.exp.
-To get a list of the possible \*.exp files, pipe the
+The :samp:`*.exp` files are located in the testsuite directories of the GCC
+source, the most important ones being :samp:`compile.exp`,
+:samp:`execute.exp`, :samp:`dg.exp` and :samp:`old-deja.exp`.
+To get a list of the possible :samp:`*.exp` files, pipe the
 output of :samp:`make check` into a file and look at the
 :samp:`Running ...  .exp` lines.
 

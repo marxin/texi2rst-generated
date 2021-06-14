@@ -23,8 +23,8 @@ through a C preprocessor (CPP; sometimes also called the Fortran preprocessor,
 FPP) to allow for conditional compilation.  In the case of GNU Fortran,
 this is the GNU C Preprocessor in the traditional mode.  On systems with
 case-preserving file names, the preprocessor is automatically invoked if the
-filename extension is .F, .FOR, .FTN, .fpp,
-.FPP, .F90, .F95, .F03 or .F08.  To manually
+filename extension is :samp:`.F`, :samp:`.FOR`, :samp:`.FTN`, :samp:`.fpp`,
+:samp:`.FPP`, :samp:`.F90`, :samp:`.F95`, :samp:`.F03` or :samp:`.F08`.  To manually
 invoke the preprocessor on any file, use :option:`-cpp`, to disable
 preprocessing on files where the preprocessor is run automatically, use
 :option:`-nocpp`.

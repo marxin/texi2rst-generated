@@ -55,8 +55,8 @@ is incomplete:
   rather than the result value specified by the draft technical report.
 
 * GCC does not provide the C library functionality associated with
-  math.h, fenv.h, stdio.h, stdlib.h, and
-  wchar.h, which must come from a separate C library implementation.
+  :samp:`math.h`, :samp:`fenv.h`, :samp:`stdio.h`, :samp:`stdlib.h`, and
+  :samp:`wchar.h`, which must come from a separate C library implementation.
   Because of this the GNU C compiler does not define macro
   ``__STDC_DEC_FP__`` to indicate that the implementation conforms to
   the technical report.

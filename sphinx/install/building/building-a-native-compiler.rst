@@ -76,7 +76,7 @@ that the stage2 compiler has compiled GCC incorrectly, and is therefore
 a potentially serious bug which you should investigate and report.  (On
 a few systems, meaningful comparison of object files is impossible; they
 always appear 'different'.  If you encounter this problem, you will
-need to disable comparison in the Makefile.)
+need to disable comparison in the :samp:`Makefile`.)
 
 If you do not want to bootstrap your compiler, you can configure with
 :option:`--disable-bootstrap`.  In particular cases, you may want to
@@ -88,8 +88,8 @@ the one you are building on: for example, you could build a
 
 ``BUILD_CONFIG`` can be used to bring in additional customization
 to the build.  It can be set to a whitespace-separated list of names.
-For each such ``NAME``, top-level config/ ``NAME``.mk will
-be included by the top-level Makefile, bringing in any settings
+For each such ``NAME``, top-level :samp:`config/ ``NAME``.mk` will
+be included by the top-level :samp:`Makefile`, bringing in any settings
 it contains.  The default ``BUILD_CONFIG`` can be set using the
 configure option :option:`--with-build-config` ``=NAME``....  Some
 examples of supported build configurations are:
@@ -113,7 +113,7 @@ bootstrap-lto-noplugin
   This option is similar to ``bootstrap-lto``, but is intended for
   hosts that do not support the linker plugin.  Without the linker plugin 
   static libraries are not compiled with link-time optimizations.  Since 
-  the GCC middle end and back end are in libbackend.a this means
+  the GCC middle end and back end are in :samp:`libbackend.a` this means
   that only the front end is actually LTO optimized.
 
 bootstrap-lto-lean
@@ -126,7 +126,7 @@ bootstrap-debug
   Verifies that the compiler generates the same executable code, whether
   or not it is asked to emit debug information.  To this end, this
   option builds stage2 host programs without debug information, and uses
-  contrib/compare-debug to compare them with the stripped stage3
+  :samp:`contrib/compare-debug` to compare them with the stripped stage3
   object files.  If ``BOOT_CFLAGS`` is overridden so as to not enable
   debug information, stage2 will have it, and stage3 won't.  This option
   is enabled by default when GCC bootstrapping is enabled, if
@@ -178,7 +178,7 @@ bootstrap-cet
 
 bootstrap-time
   Arranges for the run time of each program started by the GCC driver,
-  built in any stage, to be logged to time.log, in the top level of
+  built in any stage, to be logged to :samp:`time.log`, in the top level of
   the build tree.
 
 bootstrap-asan

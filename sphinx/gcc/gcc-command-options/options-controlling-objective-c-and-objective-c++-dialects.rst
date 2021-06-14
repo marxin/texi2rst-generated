@@ -21,7 +21,7 @@ Supported by GCC <standards>`, for references.)
 This section describes the command-line options that are only meaningful
 for Objective-C and Objective-C++ programs.  You can also use most of
 the language-independent GNU compiler options.
-For example, you might compile a file some_class.m like this:
+For example, you might compile a file :samp:`some_class.m` like this:
 
 .. code-block:: bash
 
@@ -197,7 +197,7 @@ and Objective-C++ programs:
 .. option:: -gen-decls
 
   Dump interface declarations for all classes seen in the source file to a
-  file named :samp:`{sourcename}`.decl.
+  file named :samp:`:samp:`{sourcename}`.decl`.
 
 .. option:: -Wassign-intercept
 

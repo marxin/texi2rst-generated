@@ -10,7 +10,7 @@ Building GCC plugins
 
 If plugins are enabled, GCC installs the headers needed to build a
 plugin (somewhere in the installation tree, e.g. under
-/usr/local).  In particular a plugin/include directory
+:samp:`/usr/local`).  In particular a :samp:`plugin/include` directory
 is installed, containing all the header files needed to build plugins.
 
 On most systems, you can query this ``plugin`` directory by
@@ -21,7 +21,7 @@ Inside plugins, this ``plugin`` directory name can be queried by
 calling ``default_plugin_dir_name ()``.
 
 Plugins may know, when they are compiled, the GCC version for which
-plugin-version.h is provided.  The constant macros
+:samp:`plugin-version.h` is provided.  The constant macros
 ``GCCPLUGIN_VERSION_MAJOR``, ``GCCPLUGIN_VERSION_MINOR``,
 ``GCCPLUGIN_VERSION_PATCHLEVEL``, ``GCCPLUGIN_VERSION`` are
 integer numbers, so a plugin could ensure it is built for GCC 4.7 with 
@@ -47,13 +47,13 @@ The following GNU Makefile excerpt shows how to build a simple plugin:
 
 A single source file plugin may be built with ``g++ -I`gcc
 -print-file-name=plugin`/include -fPIC -shared -fno-rtti -O2 plugin.c -o
-plugin.so``, using backquote shell syntax to query the plugin
+plugin.so``, using backquote shell syntax to query the :samp:`plugin`
 directory.
 
 Plugin support on Windows/MinGW has a number of limitations and
 additional requirements. When building a plugin on Windows we have to
 link an import library for the corresponding backend executable, for
-example, cc1.exe, cc1plus.exe, etc., in order to gain
+example, :samp:`cc1.exe`, :samp:`cc1plus.exe`, etc., in order to gain
 access to the symbols provided by GCC. This means that on Windows a
 plugin is language-specific, for example, for C, C++, etc. If you wish
 to use your plugin with multiple languages, then you will need to
@@ -82,8 +82,8 @@ them with ``__declspec(dllexport)``, for example:
 
 The import libraries are installed into the ``plugin`` directory
 and their names are derived by appending the ``.a`` extension to
-the backend executable names, for example, cc1.exe.a,
-cc1plus.exe.a, etc. The following command line shows how to
+the backend executable names, for example, :samp:`cc1.exe.a`,
+:samp:`cc1plus.exe.a`, etc. The following command line shows how to
 build the single source file plugin on Windows to be used with the C++
 compiler:
 
@@ -93,7 +93,7 @@ compiler:
   -o plugin.dll plugin.c `gcc -print-file-name=plugin`/cc1plus.exe.a
 
 When a plugin needs to use :command:`gengtype`, be sure that both
-gengtype and gtype.state have the same version as the
+:samp:`gengtype` and :samp:`gtype.state` have the same version as the
 GCC for which the plugin is built.
 
 .. Contributed by Jan Hubicka <jh@suse.cz> and

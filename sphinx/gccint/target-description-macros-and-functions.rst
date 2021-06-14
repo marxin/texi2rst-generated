@@ -16,19 +16,19 @@ Target Description Macros and Functions
 
 .. index:: tm.h macros
 
-In addition to the file :samp:`{machine}`.md, a machine description
+In addition to the file :samp:`:samp:`{machine}`.md`, a machine description
 includes a C header file conventionally given the name
-:samp:`{machine}`.h and a C source file named :samp:`{machine}`.c.
+:samp:`:samp:`{machine}`.h` and a C source file named :samp:`:samp:`{machine}`.c`.
 The header file defines numerous macros that convey the information
 about the target machine that does not fit into the scheme of the
-.md file.  The file tm.h should be a link to
-:samp:`{machine}`.h.  The header file config.h includes
-tm.h and most compiler source files include config.h.  The
+:samp:`.md` file.  The file :samp:`tm.h` should be a link to
+:samp:`:samp:`{machine}`.h`.  The header file :samp:`config.h` includes
+:samp:`tm.h` and most compiler source files include :samp:`config.h`.  The
 source file defines a variable ``targetm``, which is a structure
 containing pointers to functions and data relating to the target
-machine.  :samp:`{machine}`.c should also contain their definitions,
+machine.  :samp:`:samp:`{machine}`.c` should also contain their definitions,
 if they are not defined elsewhere in GCC, and other functions called
-through the macros defined in the .h file.
+through the macros defined in the :samp:`.h` file.
 
 .. toctree::
   :maxdepth: 2

@@ -26,7 +26,7 @@ specifying multiple :option:`-fplugin` arguments.
 
 A plugin can be simply given by its short name (no dots or
 slashes). When simply passing :option:`-fplugin`:samp:`={name}`, the plugin is
-loaded from the plugin directory, so :option:`-fplugin`:samp:`={name}` is
+loaded from the :samp:`plugin` directory, so :option:`-fplugin`:samp:`={name}` is
 the same as :option:`-fplugin`:samp:`=`gcc -print-file-name=plugin`/{name}`. :samp:`{ext}`,
-using backquote shell syntax to query the plugin directory.
+using backquote shell syntax to query the :samp:`plugin` directory.
 

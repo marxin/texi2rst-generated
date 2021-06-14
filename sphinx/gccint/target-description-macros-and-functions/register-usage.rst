@@ -541,7 +541,7 @@ they must be consecutively numbered.  Furthermore, the existing
 support for stack-like registers is specific to the 80387 floating
 point coprocessor.  If you have a new architecture that uses
 stack-like registers, you will need to do substantial work on
-reg-stack.c and write your machine description to cooperate
+:samp:`reg-stack.c` and write your machine description to cooperate
 with it, as well as defining these macros.
 
 .. c:macro:: STACK_REGS

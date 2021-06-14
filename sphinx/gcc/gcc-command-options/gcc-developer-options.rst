@@ -394,7 +394,7 @@ The files are created in the directory of the output file.
 .. option:: -fdump-lang
 
   Dump language-specific information.  The file name is made by appending
-  .lang to the source file name.
+  :samp:`.lang` to the source file name.
 
 .. option:: -fdump-lang-all, -fdump-lang-switch, -fdump-lang-switch-options, -fdump-lang-switch-options=filename
 
@@ -423,7 +423,7 @@ The files are created in the directory of the output file.
 
 .. option:: -fdump-passes
 
-  Print on stderr the list of optimization passes that are turned
+  Print on :samp:`stderr` the list of optimization passes that are turned
   on and off by the current command-line options.
 
 .. option:: -fdump-statistics-option
@@ -486,7 +486,7 @@ The files are created in the directory of the output file.
   :samp:`graph`
     For each of the other indicated dump files ( :option:`-fdump-rtl-`:samp:`{pass}` ),
     dump a representation of the control flow graph suitable for viewing with
-    GraphViz to :samp:`{file}`. :samp:`{passid}`. :samp:`{pass}`.dot.  Each function in
+    GraphViz to :samp:`:samp:`{file}`. :samp:`{passid}`. :samp:`{pass}`.dot`.  Each function in
     the file is pretty-printed as a subgraph, so that GraphViz can render them
     all in a single plot.
 
@@ -534,7 +534,7 @@ The files are created in the directory of the output file.
     To determine what tree dumps are available or find the dump for a pass
   of interest follow the steps below.
 
-  * Invoke GCC with :option:`-fdump-passes` and in the stderr output
+  * Invoke GCC with :option:`-fdump-passes` and in the :samp:`stderr` output
     look for a code that corresponds to the pass you are interested in.
     For example, the codes ``tree-evrp``, ``tree-vrp1``, and
     ``tree-vrp2`` correspond to the three Value Range Propagation passes.
@@ -552,7 +552,7 @@ The files are created in the directory of the output file.
     compile, a numeric suffix indicating the pass number followed by the
     letter :samp:`t` for tree passes (and the letter :samp:`r` for RTL passes),
     and finally the pass code.  For example, the Early VRP pass dump might
-    be in a file named myfile.c.038t.evrp in the current working
+    be in a file named :samp:`myfile.c.038t.evrp` in the current working
     directory.  Note that the numeric codes are not stable and may change
     from one version of GCC to another.
 
@@ -632,18 +632,18 @@ The files are created in the directory of the output file.
 
   If the :samp:`{filename}` is provided, then the dumps from all the
   applicable optimizations are concatenated into the :samp:`{filename}`.
-  Otherwise the dump is output onto stderr. Though multiple
+  Otherwise the dump is output onto :samp:`stderr`. Though multiple
   :option:`-fopt-info` options are accepted, only one of them can include
   a :samp:`{filename}`. If other filenames are provided then all but the
   first such option are ignored.
 
   Note that the output :samp:`{filename}` is overwritten
   in case of multiple translation units. If a combined output from
-  multiple translation units is desired, stderr should be used
+  multiple translation units is desired, :samp:`stderr` should be used
   instead.
 
   In the following example, the optimization info is output to
-  stderr:
+  :samp:`stderr`:
 
   .. code-block:: bash
 
@@ -656,14 +656,14 @@ The files are created in the directory of the output file.
     gcc -O3 -fopt-info-missed=missed.all
 
   outputs missed optimization report from all the passes into
-  missed.all, and this one:
+  :samp:`missed.all`, and this one:
 
   .. code-block:: bash
 
     gcc -O2 -ftree-vectorize -fopt-info-vec-missed
 
   prints information about missed optimization opportunities from
-  vectorization passes on stderr.  
+  vectorization passes on :samp:`stderr`.  
   Note that :option:`-fopt-info-vec-missed` is equivalent to 
   :option:`-fopt-info-missed-vec`.  The order of the optimization group
   names and message types listed after :option:`-fopt-info` does not matter.
@@ -676,7 +676,7 @@ The files are created in the directory of the output file.
 
   outputs information about missed optimizations as well as
   optimized locations from all the inlining passes into
-  inline.txt.
+  :samp:`inline.txt`.
 
   Finally, consider:
 
@@ -684,10 +684,10 @@ The files are created in the directory of the output file.
 
     gcc -fopt-info-vec-missed=vec.miss -fopt-info-loop-optimized=loop.opt
 
-  Here the two output filenames vec.miss and loop.opt are
+  Here the two output filenames :samp:`vec.miss` and :samp:`loop.opt` are
   in conflict since only one output file is allowed. In this case, only
   the first option takes effect and the subsequent options are
-  ignored. Thus only vec.miss is produced which contains
+  ignored. Thus only :samp:`vec.miss` is produced which contains
   dumps from the vectorizer about missed opportunities.
 
 .. option:: -fsave-optimization-record
@@ -841,8 +841,8 @@ The files are created in the directory of the output file.
 
 .. option:: -save-temps=obj
 
-  Equivalent to :option:`-save-temps -dumpdir `outdir/, where
-  outdir/ is the directory of the output file specified after the
+  Equivalent to :option:`-save-temps -dumpdir `:samp:`outdir/`, where
+  :samp:`outdir/` is the directory of the output file specified after the
   :option:`-o` option, including any directory separators.  If the
   :option:`-o` option is not used, the :option:`-save-temps`:samp:`=obj` switch
   behaves like :option:`-save-temps`:samp:`=cwd`.
@@ -1003,7 +1003,7 @@ The files are created in the directory of the output file.
 
   Makes the compiler output stack usage information for the program, on a
   per-function basis.  The filename for the dump is made by appending
-  .su to the :samp:`{auxname}`.  :samp:`{auxname}` is generated from the name of
+  :samp:`.su` to the :samp:`{auxname}`.  :samp:`{auxname}` is generated from the name of
   the output file, if explicitly specified and it is not an executable,
   otherwise it is the basename of the source file.  An entry is made up
   of three fields:
@@ -1076,17 +1076,17 @@ The files are created in the directory of the output file.
 .. option:: -print-multi-os-directory
 
   Print the path to OS libraries for the selected
-  multilib, relative to some lib subdirectory.  If OS libraries are
-  present in the lib subdirectory and no multilibs are used, this is
-  usually just ., if OS libraries are present in lib :samp:`{suffix}`
-  sibling directories this prints e.g. ../lib64, ../lib or
-  ../lib32, or if OS libraries are present in lib/ :samp:`{subdir}`
-  subdirectories it prints e.g. amd64, sparcv9 or ev6.
+  multilib, relative to some :samp:`lib` subdirectory.  If OS libraries are
+  present in the :samp:`lib` subdirectory and no multilibs are used, this is
+  usually just :samp:`.`, if OS libraries are present in :samp:`lib :samp:`{suffix}``
+  sibling directories this prints e.g. :samp:`../lib64`, :samp:`../lib` or
+  :samp:`../lib32`, or if OS libraries are present in :samp:`lib/ :samp:`{subdir}``
+  subdirectories it prints e.g. :samp:`amd64`, :samp:`sparcv9` or :samp:`ev6`.
 
 .. option:: -print-multiarch
 
   Print the path to OS libraries for the selected multiarch,
-  relative to some lib subdirectory.
+  relative to some :samp:`lib` subdirectory.
 
 .. option:: -print-prog-name=program
 
@@ -1097,7 +1097,7 @@ The files are created in the directory of the output file.
   Same as :option:`-print-file-name`:samp:`=libgcc.a`.
 
   This is useful when you use :option:`-nostdlib` or :option:`-nodefaultlibs`
-  but you do want to link with libgcc.a.  You can do:
+  but you do want to link with :samp:`libgcc.a`.  You can do:
 
   .. code-block:: bash
 
@@ -1110,7 +1110,7 @@ The files are created in the directory of the output file.
 
   This is useful when :command:`gcc` prints the error message
   :samp:`installation problem, cannot exec cpp0: No such file or directory`.
-  To resolve this you either need to put cpp0 and the other compiler
+  To resolve this you either need to put :samp:`cpp0` and the other compiler
   components where :command:`gcc` expects to find them, or you can set the environment
   variable :envvar:`GCC_EXEC_PREFIX` to the directory where you installed them.
   Don't forget the trailing :samp:`/`.

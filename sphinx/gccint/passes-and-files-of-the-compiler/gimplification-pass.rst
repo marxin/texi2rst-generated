@@ -31,7 +31,7 @@ and let the language-independent gimplifier do most of the work.
 .. index:: lang_hooks.gimplify_expr
 
 The main entry point to this pass is ``gimplify_function_tree``
-located in gimplify.c.  From here we process the entire
+located in :samp:`gimplify.c`.  From here we process the entire
 function gimplifying each statement in turn.  The main workhorse
 for this pass is ``gimplify_expr``.  Approximately everything
 passes through here at least once, and it is from here that we

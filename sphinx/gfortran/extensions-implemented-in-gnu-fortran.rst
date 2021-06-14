@@ -718,7 +718,7 @@ Library.
 
 The OpenMP Fortran runtime library routines are provided both in a
 form of a Fortran 90 module named ``omp_lib`` and in a form of
-a Fortran ``include`` file named omp_lib.h.
+a Fortran ``include`` file named :samp:`omp_lib.h`.
 
 An example of a parallelized loop taken from Appendix A.1 of
 the OpenMP Application Program Interface v2.5:
@@ -777,7 +777,7 @@ Library.
 
 The OpenACC Fortran runtime library routines are provided both in a
 form of a Fortran 90 module named ``openacc`` and in a form of a
-Fortran ``include`` file named openacc_lib.h.
+Fortran ``include`` file named :samp:`openacc_lib.h`.
 
 .. _argument-list-functions:
 

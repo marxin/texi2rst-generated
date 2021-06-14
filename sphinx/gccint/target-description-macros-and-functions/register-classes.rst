@@ -116,7 +116,7 @@ in many of the tables described below.
   When the machine has more than 32 registers, an integer does not suffice.
   Then the integers are replaced by sub-initializers, braced groupings containing
   several integers.  Each sub-initializer must be suitable as an initializer
-  for the type ``HARD_REG_SET`` which is defined in hard-reg-set.h.
+  for the type ``HARD_REG_SET`` which is defined in :samp:`hard-reg-set.h`.
   In this situation, the first integer in each sub-initializer corresponds to
   registers 0 through 31, the second integer to registers 32 through 63, and
   so on.
@@ -518,7 +518,7 @@ in many of the tables described below.
   the DEC Alpha, that store short integers in floating-point registers
   differently than in integer registers.  On those machines, the default
   widening will not work correctly and you must define this hook to
-  suppress that widening in some cases.  See the file alpha.c for
+  suppress that widening in some cases.  See the file :samp:`alpha.c` for
   details.
 
   With LRA, the default is to use :samp:`{mode}` unmodified.
@@ -592,7 +592,7 @@ in many of the tables described below.
   floating-point objects into floating-point registers on Alpha extends them
   to 64 bits.  Therefore loading a 64-bit object and then storing it as a
   32-bit object does not store the low-order 32 bits, as would be the case
-  for a normal register.  Therefore, alpha.h defines
+  for a normal register.  Therefore, :samp:`alpha.h` defines
   ``TARGET_CAN_CHANGE_MODE_CLASS`` to return:
 
   .. code-block:: c++

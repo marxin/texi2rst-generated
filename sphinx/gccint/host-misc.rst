@@ -30,7 +30,7 @@ Host Misc
 .. envvar:: USE_C_ALLOCA
 
   Define this macro if GCC should use the C implementation of ``alloca``
-  provided by libiberty.a.  This only affects how some parts of the
+  provided by :samp:`libiberty.a`.  This only affects how some parts of the
   compiler itself allocate memory.  It does not change code generation.
 
   When GCC is built with a compiler other than itself, the C ``alloca``
@@ -66,7 +66,7 @@ Host Misc
   to functions like ``printf``.  The default value is ``"%p"``.
 
 In addition, if :command:`configure` generates an incorrect definition of
-any of the macros in auto-host.h, you can override that
+any of the macros in :samp:`auto-host.h`, you can override that
 definition in a host configuration header.  If you need to do this,
 first see if it is possible to fix :command:`configure`.
 

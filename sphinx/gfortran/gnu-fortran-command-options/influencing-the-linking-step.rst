@@ -20,8 +20,8 @@ a link step.
 
   .. index:: static-libgfortran
 
-  On systems that provide libgfortran as a shared and a static
+  On systems that provide :samp:`libgfortran` as a shared and a static
   library, this option forces the use of the static version. If no
-  shared version of libgfortran was built when the compiler was
+  shared version of :samp:`libgfortran` was built when the compiler was
   configured, this option has no effect.
 

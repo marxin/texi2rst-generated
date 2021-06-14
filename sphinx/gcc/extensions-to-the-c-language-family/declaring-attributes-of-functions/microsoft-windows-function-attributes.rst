@@ -47,7 +47,7 @@ targets.
 
   For Microsoft Windows targets there are alternative methods for
   including the symbol in the DLL's export table such as using a
-  .def file with an ``EXPORTS`` section or, with GNU ld, using
+  :samp:`.def` file with an ``EXPORTS`` section or, with GNU ld, using
   the :option:`--export-all` linker flag.
 
 .. option:: dllimport

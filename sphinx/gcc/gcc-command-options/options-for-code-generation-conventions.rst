@@ -292,7 +292,7 @@ it.
   Don't output a ``.size`` assembler directive, or anything else that
   would cause trouble if the function is split in the middle, and the
   two halves are placed at locations far apart in memory.  This option is
-  used when compiling crtstuff.c; you should not need to use it
+  used when compiling :samp:`crtstuff.c`; you should not need to use it
   for anything else.
 
 .. option:: -fverbose-asm
@@ -699,5 +699,5 @@ it.
 
   The default value of this option is enabled, thus the only useful form
   of the option is :option:`-fno-sync-libcalls`.  This option is used in
-  the implementation of the libatomic runtime library.
+  the implementation of the :samp:`libatomic` runtime library.
 

@@ -13,7 +13,7 @@ OpenACC Module OPENACC
 
   The OpenACC Fortran runtime library routines are provided both in a
 form of a Fortran 90 module, named ``OPENACC``, and in form of a
-Fortran ``include`` file named openacc_lib.h.  The
+Fortran ``include`` file named :samp:`openacc_lib.h`.  The
 procedures provided by ``OPENACC`` can be found in the
 TopIntroductionlibgompGNU Offloading and Multi Processing
 Runtime Library manual, the named constants defined in the modules

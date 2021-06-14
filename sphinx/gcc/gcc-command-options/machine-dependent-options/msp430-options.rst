@@ -23,7 +23,7 @@ These options are defined for the MSP430:
   Select the MCU to target.  This is used to create a C preprocessor
   symbol based upon the MCU name, converted to upper case and pre- and
   post-fixed with :samp:`__`.  This in turn is used by the
-  msp430.h header file to select an MCU-specific supplementary
+  :samp:`msp430.h` header file to select an MCU-specific supplementary
   header file.
 
   The option also sets the ISA to use.  If the MCU name is one that is
@@ -34,9 +34,9 @@ These options are defined for the MSP430:
 
   In addition an MCU-specific linker script is added to the linker
   command line.  The script's name is the name of the MCU with
-  .ld appended.  Thus specifying :option:`-mmcu`:samp:`=xxx` on the :command:`gcc`
+  :samp:`.ld` appended.  Thus specifying :option:`-mmcu`:samp:`=xxx` on the :command:`gcc`
   command line defines the C preprocessor symbol ``__XXX__`` and
-  cause the linker to search for a script called xxx.ld.
+  cause the linker to search for a script called :samp:`xxx.ld`.
 
   The ISA and hardware multiply supported for the different MCUs is hard-coded
   into GCC.  However, an external :samp:`devices.csv` file can be used to

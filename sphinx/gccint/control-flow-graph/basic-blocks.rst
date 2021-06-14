@@ -85,7 +85,7 @@ Any function that moves or duplicates the basic blocks needs
 to take care of updating of these notes.  Many of these notes expect
 that the instruction stream consists of linear regions, so updating
 can sometimes be tedious.  All types of insn notes are defined
-in insn-notes.def.
+in :samp:`insn-notes.def`.
 
 In the RTL function representation, the instructions contained in a
 basic block always follow a ``NOTE_INSN_BASIC_BLOCK``, but zero
@@ -120,7 +120,7 @@ the basic block intermediate language specific pointers.
 Abstract containers and iterators are used to access the PHI nodes
 and statements in a basic blocks.  These iterators are called
 :dfn:`GIMPLE statement iterators` (GSIs).  Grep for ``^gsi``
-in the various gimple-\* and tree-\* files.
+in the various :samp:`gimple-*` and :samp:`tree-*` files.
 There is a ``gimple_stmt_iterator`` type for iterating over
 all kinds of statement, and a ``gphi_iterator`` subclass for
 iterating over PHI nodes.

@@ -17,25 +17,25 @@ Target makefile fragments can set these Makefile variables.
 .. index:: LIBGCC2_CFLAGS
 
 ``LIBGCC2_CFLAGS``
-  Compiler flags to use when compiling libgcc2.c.
+  Compiler flags to use when compiling :samp:`libgcc2.c`.
 
   .. index:: LIB2FUNCS_EXTRA
 
 ``LIB2FUNCS_EXTRA``
   A list of source file names to be compiled or assembled and inserted
-  into libgcc.a.
+  into :samp:`libgcc.a`.
 
   .. index:: CRTSTUFF_T_CFLAGS
 
 .. envvar:: CRTSTUFF_T_CFLAGS
 
-  Special flags used when compiling crtstuff.c.
+  Special flags used when compiling :samp:`crtstuff.c`.
   See :ref:`initialization`.
 
 .. envvar:: CRTSTUFF_T_CFLAGS_S
 
-  Special flags used when compiling crtstuff.c for shared
-  linking.  Used if you use crtbeginS.o and crtendS.o
+  Special flags used when compiling :samp:`crtstuff.c` for shared
+  linking.  Used if you use :samp:`crtbeginS.o` and :samp:`crtendS.o`
   in ``EXTRA-PARTS``.
   See :ref:`initialization`.
 
@@ -44,20 +44,20 @@ Target makefile fragments can set these Makefile variables.
   For some targets, invoking GCC in different ways produces objects
   that cannot be linked together.  For example, for some targets GCC
   produces both big and little endian code.  For these targets, you must
-  arrange for multiple versions of libgcc.a to be compiled, one for
+  arrange for multiple versions of :samp:`libgcc.a` to be compiled, one for
   each set of incompatible options.  When GCC invokes the linker, it
-  arranges to link in the right version of libgcc.a, based on
+  arranges to link in the right version of :samp:`libgcc.a`, based on
   the command line options used.
 
   The ``MULTILIB_OPTIONS`` macro lists the set of options for which
-  special versions of libgcc.a must be built.  Write options that
+  special versions of :samp:`libgcc.a` must be built.  Write options that
   are mutually incompatible side by side, separated by a slash.  Write
   options that may be used together separated by a space.  The build
   procedure will build all combinations of compatible options.
 
   For example, if you set ``MULTILIB_OPTIONS`` to :samp:`m68000/m68020
-  msoft-float`, Makefile will build special versions of
-  libgcc.a using the following sets of options:  :option:`-m68000`,
+  msoft-float`, :samp:`Makefile` will build special versions of
+  :samp:`libgcc.a` using the following sets of options:  :option:`-m68000`,
   :option:`-m68020`, :option:`-msoft-float`, :samp:`-m68000 -msoft-float`, and
   :samp:`-m68020 -msoft-float`.
 
@@ -165,7 +165,7 @@ Target makefile fragments can set these Makefile variables.
 .. envvar:: MULTILIB_EXTRA_OPTS
 
   Sometimes it is desirable that when building multiple versions of
-  libgcc.a certain options should always be passed on to the
+  :samp:`libgcc.a` certain options should always be passed on to the
   compiler.  In that case, set ``MULTILIB_EXTRA_OPTS`` to be the list
   of options to be used for all builds.  If you set this, you should
   probably set ``CRTSTUFF_T_CFLAGS`` to a dash followed by it.
@@ -229,16 +229,16 @@ Target makefile fragments can set these Makefile variables.
   Unfortunately, setting ``MULTILIB_EXTRA_OPTS`` is not enough, since
   it does not affect the build of target libraries, at least not the
   build of the default multilib.  One possible work-around is to use
-  ``DRIVER_SELF_SPECS`` to bring options from the specs file
+  ``DRIVER_SELF_SPECS`` to bring options from the :samp:`specs` file
   as if they had been passed in the compiler driver command line.
   However, you don't want to be adding these options after the toolchain
-  is installed, so you can instead tweak the specs file that will
+  is installed, so you can instead tweak the :samp:`specs` file that will
   be used during the toolchain build, while you still install the
-  original, built-in specs.  The trick is to set ``SPECS`` to
-  some other filename (say specs.install), that will then be
-  created out of the built-in specs, and introduce a Makefile
-  rule to generate the specs file that's going to be used at
-  build time out of your specs.install.
+  original, built-in :samp:`specs`.  The trick is to set ``SPECS`` to
+  some other filename (say :samp:`specs.install`), that will then be
+  created out of the built-in specs, and introduce a :samp:`Makefile`
+  rule to generate the :samp:`specs` file that's going to be used at
+  build time out of your :samp:`specs.install`.
 
 .. envvar:: T_CFLAGS
 

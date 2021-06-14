@@ -21,6 +21,6 @@ These options are defined specifically for the FR30 port.
 .. option:: -mno-lsim
 
   Assume that runtime support has been provided and so there is no need
-  to include the simulator library (libsim.a) on the linker
+  to include the simulator library (:samp:`libsim.a`) on the linker
   command line.
 

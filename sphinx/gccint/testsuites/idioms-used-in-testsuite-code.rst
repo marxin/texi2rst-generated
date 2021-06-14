@@ -8,14 +8,14 @@
 Idioms Used in Testsuite Code
 *****************************
 
-In general, C testcases have a trailing - :samp:`{n}`.c, starting
-with -1.c, in case other testcases with similar names are added
+In general, C testcases have a trailing :samp:`- :samp:`{n}`.c`, starting
+with :samp:`-1.c`, in case other testcases with similar names are added
 later.  If the test is a test of some well-defined feature, it should
 have a name referring to that feature such as
-:samp:`{feature}` -1.c.  If it does not test a well-defined feature
+:samp:`:samp:`{feature}` -1.c`.  If it does not test a well-defined feature
 but just happens to exercise a bug somewhere in the compiler, and a
 bug report has been filed for this bug in the GCC bug database,
-pr :samp:`{bug-number}` -1.c is the appropriate form of name.
+:samp:`pr :samp:`{bug-number}` -1.c` is the appropriate form of name.
 Otherwise (for miscellaneous bugs not filed in the GCC bug database),
 and previously more generally, test cases are named after the date on
 which they were added.  This allows people to tell at a glance whether
@@ -24,7 +24,7 @@ been fixed, or whether it may be a regression, but does not give any
 other information about the bug or where discussion of it may be
 found.  Some other language testsuites follow similar conventions.
 
-In the gcc.dg testsuite, it is often necessary to test that an
+In the :samp:`gcc.dg` testsuite, it is often necessary to test that an
 error is indeed a hard error and not just a warning---for example,
 where it is a constraint violation in the C standard, which must
 become an error with :option:`-pedantic-errors`.  The following idiom,
@@ -44,11 +44,11 @@ value ``V``, an idiom similar to the following is used:
 
   char x[((E) == (V) ? 1 : -1)];
 
-In gcc.dg tests, ``__typeof__`` is sometimes used to make
+In :samp:`gcc.dg` tests, ``__typeof__`` is sometimes used to make
 assertions about the types of expressions.  See, for example,
-gcc.dg/c99-condexpr-1.c.  The more subtle uses depend on the
+:samp:`gcc.dg/c99-condexpr-1.c`.  The more subtle uses depend on the
 exact rules for the types of conditional expressions in the C
-standard; see, for example, gcc.dg/c99-intconst-1.c.
+standard; see, for example, :samp:`gcc.dg/c99-intconst-1.c`.
 
 It is useful to be able to test that optimizations are being made
 properly.  This cannot be done in all cases, but it can be done where
@@ -56,7 +56,7 @@ the optimization will lead to code being optimized away (for example,
 where flow analysis or alias analysis should show that certain code
 cannot be called) or to functions not being called because they have
 been expanded as built-in functions.  Such tests go in
-gcc.c-torture/execute.  Where code should be optimized away, a
+:samp:`gcc.c-torture/execute`.  Where code should be optimized away, a
 call to a nonexistent function such as ``link_failure ()`` may be
 inserted; a definition
 

@@ -13,7 +13,7 @@ testsuite, publicly available at
 http://www.ada-auth.org/acats.html.
 
 These tests are integrated in the GCC testsuite in the
-ada/acats directory, and
+:samp:`ada/acats` directory, and
 enabled automatically when running ``make check``, assuming
 the Ada language has been enabled when configuring GCC.
 
@@ -26,13 +26,13 @@ chapter to run, e.g.:
   $ make check-ada CHAPTERS="c3 c9"
 
 The tests are organized by directory, each directory corresponding to
-a chapter of the Ada Reference Manual.  So for example, c9 corresponds
+a chapter of the Ada Reference Manual.  So for example, :samp:`c9` corresponds
 to chapter 9, which deals with tasking features of the language.
 
-The tests are run using two :command:`sh` scripts: run_acats and
-run_all.sh.  To run the tests using a simulator or a cross
+The tests are run using two :command:`sh` scripts: :samp:`run_acats` and
+:samp:`run_all.sh`.  To run the tests using a simulator or a cross
 target, see the small
-customization section at the top of run_all.sh.
+customization section at the top of :samp:`run_all.sh`.
 
 These tests are run using the build tree: they can be run without doing
 a ``make install``.

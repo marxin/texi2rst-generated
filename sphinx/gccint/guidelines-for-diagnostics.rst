@@ -438,9 +438,9 @@ Fix-it hints can be added to a diagnostic by using a ``rich_location``
 rather than a ``location_t`` - the fix-it hints are added to the
 ``rich_location`` using one of the various ``add_fixit`` member
 functions of ``rich_location``.  They are documented with
-``rich_location`` in libcpp/line-map.h.
+``rich_location`` in :samp:`libcpp/line-map.h`.
 It's easiest to use the ``gcc_rich_location`` subclass of
-``rich_location`` found in gcc-rich-location.h, as this
+``rich_location`` found in :samp:`gcc-rich-location.h`, as this
 implicitly supplies the ``line_table`` variable.
 
 For example:
@@ -470,7 +470,7 @@ Non-trivial edits can be built up by adding multiple fix-it hints to one
 ``rich_location``.  It's best to express the edits in terms of the
 locations of individual tokens.  Various handy functions for adding
 fix-it hints for idiomatic C and C++ can be seen in
-gcc-rich-location.h.
+:samp:`gcc-rich-location.h`.
 
 Fix-it hints should work
 ~~~~~~~~~~~~~~~~~~~~~~~~

@@ -42,7 +42,7 @@ For example:
   ``SImode`` and ``DImode`` patterns for manipulating pointers.
 
 Mode iterators allow several patterns to be instantiated from one
-.md file template.  They can be used with any type of
+:samp:`.md` file template.  They can be used with any type of
 rtx-based construct, such as a ``define_insn``,
 ``define_split``, or ``define_peephole2``.
 
@@ -66,7 +66,7 @@ The syntax for defining a mode iterator is:
 
   (define_mode_iterator name [(mode1 "cond1") ... (moden "condn")])
 
-This allows subsequent .md file constructs to use the mode suffix
+This allows subsequent :samp:`.md` file constructs to use the mode suffix
 ``:name``.  Every construct that does so will be expanded
 :samp:`{n}` times, once with every use of ``:name`` replaced by
 ``:mode1``, once with every use replaced by ``:mode2``,
@@ -85,7 +85,7 @@ by ``:SI`` and once with every ``:P`` replaced by ``:DI``.
 The ``:SI`` version will only apply if ``Pmode == SImode`` and
 the ``:DI`` version will only apply if ``Pmode == DImode``.
 
-As with other .md conditions, an empty string is treated
+As with other :samp:`.md` conditions, an empty string is treated
 as 'always true'.  ``(mode "")`` can also be abbreviated
 to ``mode``.  For example:
 
@@ -107,7 +107,7 @@ Substitution in Mode Iterators
 
 .. index:: define_mode_attr
 
-If an .md file construct uses mode iterators, each version of the
+If an :samp:`.md` file construct uses mode iterators, each version of the
 construct will often need slightly different strings or modes.  For
 example:
 
@@ -141,7 +141,7 @@ mode attribute.  If the attribute is defined for :samp:`{mode}`, the whole
 ``<...>`` sequence will be replaced by the appropriate attribute
 value.
 
-For example, suppose an .md file has:
+For example, suppose an :samp:`.md` file has:
 
 .. code-block:: c++
 
