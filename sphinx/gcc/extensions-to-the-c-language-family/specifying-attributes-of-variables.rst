@@ -430,9 +430,9 @@ The following attributes are supported on most targets.
 
   .. index:: unused variable attribute
 
-  This attribute, attached to a variable, means that the variable is meant
-  to be possibly unused.  GCC does not produce a warning for this
-  variable.
+  This attribute, attached to a variable or structure field, means that
+  the variable or field is meant to be possibly unused.  GCC does not
+  produce a warning for this variable or field.
 
 .. option:: used
 
