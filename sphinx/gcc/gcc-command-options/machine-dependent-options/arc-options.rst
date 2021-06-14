@@ -642,7 +642,7 @@ The following options fine tune code generation:
   :samp:`3`
     In addition, optional data alignment is dropped, and the option Os is enabled.
 
-    This defaults to :samp:`3` when :option:`-Os` is in effect.  Otherwise,
+  This defaults to :samp:`3` when :option:`-Os` is in effect.  Otherwise,
   the behavior when this is not set is equivalent to level :samp:`1`.
 
 .. option:: -mtune=cpu

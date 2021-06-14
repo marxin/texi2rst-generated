@@ -226,7 +226,7 @@ These options are defined for AArch64 implementations:
   :samp:`native` tunes performance to the host system.  This option has no effect
   if the compiler is unable to recognize the processor of the host system.
 
-  Where none of :option:`-mtune` =, :option:`-mcpu` = or :option:`-march` =
+  Where none of :option:`-mtune`, :option:`-mcpu` or :option:`-march`
   are specified, the code is tuned to perform well across a range
   of target processors.
 
@@ -236,7 +236,7 @@ These options are defined for AArch64 implementations:
 
   Specify the name of the target processor, optionally suffixed by one
   or more feature modifiers.  This option has the form
-  :option:`-mcpu`:samp:`={cpu}` {+[no ] :samp:`{feature}` }\*, where
+  :option:`-mcpu`:samp:`={cpu}{+[no ]{feature}}\*`, where
   the permissible values for :samp:`{cpu}` are the same as those available
   for :option:`-mtune`.  The permissible values for :samp:`{feature}` are
   documented in the sub-section on
@@ -254,7 +254,7 @@ These options are defined for AArch64 implementations:
 .. option:: -moverride=string
 
   Override tuning decisions made by the back-end in response to a
-  :option:`-mtune` = switch.  The syntax, semantics, and accepted values
+  :option:`-mtune` switch.  The syntax, semantics, and accepted values
   for :samp:`{string}` in this option are not guaranteed to be consistent
   across releases.
 
@@ -302,6 +302,7 @@ These options are defined for AArch64 implementations:
   :samp:`{opts}` is a comma-separated list of the following options:
 
   :samp:`retbr` :samp:`blr`
+
   In addition, :option:`-mharden-sls`:samp:`=all` enables all SLS hardening while
   :option:`-mharden-sls`:samp:`=none` disables all SLS hardening.
 
@@ -474,8 +475,7 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`pauth`
   Enable the Pointer Authentication Extension.
 
-  Feature crypto implies aes, sha2, and simd,
+Feature crypto implies aes, sha2, and simd,
 which implies fp.
 Conversely, nofp implies nosimd, which implies
 nocrypto, noaes and nosha2.
-
