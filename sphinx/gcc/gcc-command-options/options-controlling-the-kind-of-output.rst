@@ -128,9 +128,9 @@ You can specify the input language explicitly with the :option:`-x` option:
   :samp:`c` :samp:`c-header` :samp:`cpp-output`
   :samp:`c++  :samp:`c++-header  :samp:`c++-system-header` :samp:`c++-user-header` :samp:`c++-cpp-output`
   :samp:`objective-c` :samp:`objective-c-header` :samp:`objective-c-cpp-output`
-  :samp:`objective-c++ :samp:`objective-c++-header :samp:`objective-c++-cpp-output`
-  :samp:`assembler  :samp:`assembler-with-cpp` :samp:`ada` :samp:`d`
-  :samp:`f77` :samp:`f77-cpp-input` :samp:`f95` :samp:`f95-cpp-input` :samp:`go
+  :samp:`objective-c++` :samp:`objective-c++-header` :samp:`objective-c++-cpp-output`
+  :samp:`assembler` :samp:`assembler-with-cpp` :samp:`ada` :samp:`d`
+  :samp:`f77` :samp:`f77-cpp-input` :samp:`f95` :samp:`f95-cpp-input` :samp:`go`
 
 ``-x none``
   Turn off any specification of a language, so that subsequent files are
