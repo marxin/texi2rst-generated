@@ -31,14 +31,16 @@ with a syntax similar to the brace expansion of popular shells:
 The following will run each testsuite eight times using the :samp:`arm-sim`
 target, as if you had specified all possible combinations yourself:
 
-:option:`--target_board`:samp:`='arm-sim/-mhard-float/-O1` \
-                arm :option:`-sim/-mhard-float/-O2` \
-                arm :option:`-sim/-mhard-float/-O3` \
-                arm :option:`-sim/-mhard-float` \
-                arm :option:`-sim/-msoft-float/-O1` \
-                arm :option:`-sim/-msoft-float/-O2` \
-                arm :option:`-sim/-msoft-float/-O3` \
-                arm :option:`-sim/-msoft-float'`
+.. code-block::
+
+  --target_board='arm-sim/-mhard-float/-O1 \
+                  arm -sim/-mhard-float/-O2 \
+                  arm -sim/-mhard-float/-O3 \
+                  arm -sim/-mhard-float \
+                  arm -sim/-msoft-float/-O1 \
+                  arm -sim/-msoft-float/-O2 \
+                  arm -sim/-msoft-float/-O3 \
+                  arm -sim/-msoft-float'
 
 They can be combined as many times as you wish, in arbitrary ways.  This
 list:
