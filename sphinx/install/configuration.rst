@@ -57,12 +57,7 @@ Note that the bootstrap compiler and the resulting GCC must be link
 compatible, else the bootstrap will fail with linker errors about
 incompatible object file formats.  Several multilibed targets are
 affected by this requirement, see
-@ifnothtml
-@ref{Specific, host/target specific installation notes}.
-@end ifnothtml
-@ifhtml
 @uref{specific.html,,host/target specific installation notes}.
-@end ifhtml
 To configure GCC:
 
 .. code-block:: bash
@@ -274,7 +269,7 @@ corresponding :option:`--without` option.
     This can be useful if you need to turn on a non-standard feature by
     default without modifying the compiler's source code, for instance
     :option:`--with-specs`:samp:`=%{!fcommon:%{!fno-common:-fno-common}}`.
-    See :ref:`Specifying subprocesses and the switches to pass to them <spec-files>`,
+    See 'Spec Files' in the main manual
 
 .. option:: --program-prefix=prefix
 
@@ -624,7 +619,7 @@ corresponding :option:`--without` option.
     expected to be defined in these fragments are not stable across GCC
     releases, so make sure they define the ``MULTILIB`` -related macros
     expected by the version of GCC you are building.
-    See :ref:`Target Makefile Fragments <target-fragment>`.
+    See 'Target Makefile Fragments' in the internals manual.
 
     The table below gives the combination of ISAs, architectures, FPUs and
     floating-point ABIs for which multilibs are built for each predefined
@@ -1231,7 +1226,7 @@ corresponding :option:`--without` option.
   enabled may bloat the TOC, eventually leading to ``TOC overflow`` errors,
   requiring the use of either the :option:`-Wl,-bbigtoc` linker flag (seen to
   break with the ``GDB`` debugger) or some of the TOC-related compiler flags,
-  See :ref:`RS/6000 and PowerPC Options <rs-6000-and-powerpc-options>`.
+  see 'RS/6000 and PowerPC Options' in the main manual.
 
   :option:`--with-aix-soname` is currently supported by :samp:`libgcc_s` only, so
   this option is still experimental and not for normal use yet.
@@ -1353,7 +1348,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-secureplt
 
   This option enables :option:`-msecure-plt` by default for powerpc-linux.
-  See :ref:`RS/6000 and PowerPC Options <rs-6000-and-powerpc-options>`,
+  See 'RS/6000 and PowerPC Options' in the main manual
 
 .. option:: --enable-default-ssp
 
@@ -1362,7 +1357,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-cld
 
   This option enables :option:`-mcld` by default for 32-bit x86 targets.
-  See :ref:`i386 and x86-64 Options <i386-and-x86-64-options>`,
+  See 'i386 and x86-64 Options' in the main manual
 
 .. option:: --enable-large-address-aware
 
