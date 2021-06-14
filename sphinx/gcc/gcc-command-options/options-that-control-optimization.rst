@@ -1918,7 +1918,7 @@ optimizations to be performed is desired.
   The :option:`-fstrict-aliasing` option is enabled at levels
   :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -falign-functions, -falign-functions=n, -falign-functions=n:m, -falign-functions=n:m:n2, -falign-functions=n:m:n2:m2
+.. option:: -falign-functions=n[:m[:n2[:m2]]]
 
   Align the start of functions to the next power-of-two greater than or
   equal to :samp:`{n}`, skipping up to :samp:`{m}` -1 bytes.  This ensures that at
@@ -1951,13 +1951,14 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-``-flimit-function-alignment``
+.. option:: -flimit-function-alignment
+
   If this option is enabled, the compiler tries to avoid unnecessarily
   overaligning functions. It attempts to instruct the assembler to align
   by the amount specified by :option:`-falign-functions`, but not to
   skip more bytes than the size of the function.
 
-.. option:: -falign-labels, -falign-labels=n, -falign-labels=n:m, -falign-labels=n:m:n2, -falign-labels=n:m:n2:m2
+.. option:: -falign-labels=n[:m[:n2[:m2]]]
 
   Align all branch targets to a power-of-two boundary.
 
@@ -1974,7 +1975,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-loops, -falign-loops=n, -falign-loops=n:m, -falign-loops=n:m:n2, -falign-loops=n:m:n2:m2
+.. option:: -falign-loops=n[:m[:n2[:m2]]]
 
   Align loops to a power-of-two boundary.  If the loops are executed
   many times, this makes up for any execution of the dummy padding
@@ -1992,7 +1993,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-jumps, -falign-jumps=n, -falign-jumps=n:m, -falign-jumps=n:m:n2, -falign-jumps=n:m:n2:m2
+.. option:: -falign-jumps=n[:m[:n2[:m2]]]
 
   Align branch targets to a power-of-two boundary, for branch targets
   where the targets can only be reached by jumping.  In this case,
