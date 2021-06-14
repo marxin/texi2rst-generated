@@ -60,14 +60,14 @@ Cross-compilers search a little differently:
 
 * :samp:`real-ld` in the compiler's search directories.
 
-* :samp:`:samp:`{target}` -real-ld` in ``PATH``.
+* :samp:`{target}-real-ld` in ``PATH``.
 
 * The file specified in the ``REAL_LD_FILE_NAME`` configuration macro,
   if specified.
 
 * :samp:`ld` in the compiler's search directories.
 
-* :samp:`:samp:`{target}` -ld` in ``PATH``.
+* :samp:`{target}-ld` in ``PATH``.
 
 ``collect2`` explicitly avoids running ``ld`` using the file name
 under which ``collect2`` itself was invoked.  In fact, it remembers

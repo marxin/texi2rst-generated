@@ -497,7 +497,7 @@ The following options control the analyzer.
 .. option:: -fdump-analyzer
 
   Dump internal details about what the analyzer is doing to
-  :samp:`:samp:`{file}`.analyzer.txt`.
+  :samp:`{file}.analyzer.txt`.
   This option is overridden by :option:`-fdump-analyzer-stderr`.
 
 .. option:: -fdump-analyzer-stderr
@@ -508,12 +508,12 @@ The following options control the analyzer.
 .. option:: -fdump-analyzer-callgraph
 
   Dump a representation of the call graph suitable for viewing with
-  GraphViz to :samp:`:samp:`{file}`.callgraph.dot`.
+  GraphViz to :samp:`{file}.callgraph.dot`.
 
 .. option:: -fdump-analyzer-exploded-graph
 
   Dump a representation of the 'exploded graph' suitable for viewing with
-  GraphViz to :samp:`:samp:`{file}`.eg.dot`.
+  GraphViz to :samp:`{file}.eg.dot`.
   Nodes are color-coded based on state-machine states to emphasize
   state changes.
 
@@ -525,25 +525,25 @@ The following options control the analyzer.
 .. option:: -fdump-analyzer-exploded-nodes-2
 
   Dump a textual representation of the 'exploded graph' to
-  :samp:`:samp:`{file}`.eg.txt`.
+  :samp:`{file}.eg.txt`.
 
 .. option:: -fdump-analyzer-exploded-nodes-3
 
   Dump a textual representation of the 'exploded graph' to
-  one dump file per node, to :samp:`:samp:`{file}`.eg- :samp:`{id}`.txt`.
+  one dump file per node, to :samp:`{file}.eg-{id}.txt`.
   This is typically a large number of dump files.
 
 .. option:: -fdump-analyzer-feasibility
 
   Dump internal details about the analyzer's search for feasible paths.
   The details are written in a form suitable for viewing with GraphViz
-  to filenames of the form :samp:`:samp:`{file}`.*.fg.dot` and
-  :samp:`:samp:`{file}`.*.tg.dot`.
+  to filenames of the form :samp:`{file}.*.fg.dot` and
+  :samp:`{file}.*.tg.dot`.
 
 .. option:: -fdump-analyzer-json
 
   Dump a compressed JSON representation of analyzer internals to
-  :samp:`:samp:`{file}`.analyzer.json.gz`.  The precise format is subject
+  :samp:`{file}.analyzer.json.gz`.  The precise format is subject
   to change.
 
 .. option:: -fdump-analyzer-state-purge
@@ -551,13 +551,13 @@ The following options control the analyzer.
   As per :option:`-fdump-analyzer-supergraph`, dump a representation of the
   'supergraph' suitable for viewing with GraphViz, but annotate the
   graph with information on what state will be purged at each node.
-  The graph is written to :samp:`:samp:`{file}`.state-purge.dot`.
+  The graph is written to :samp:`{file}.state-purge.dot`.
 
 .. option:: -fdump-analyzer-supergraph
 
   Dump representations of the 'supergraph' suitable for viewing with
-  GraphViz to :samp:`:samp:`{file}`.supergraph.dot` and to
-  :samp:`:samp:`{file}`.supergraph-eg.dot`.  These show all of the
+  GraphViz to :samp:`{file}.supergraph.dot` and to
+  :samp:`{file}.supergraph-eg.dot`.  These show all of the
   control flow graphs in the program, with interprocedural edges for
   calls and returns.  The second dump contains annotations showing nodes
   in the 'exploded graph' and diagnostics associated with them.

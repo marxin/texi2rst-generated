@@ -62,7 +62,7 @@ program analysis purposes.
 
   When the compiled
   program exits it saves this data to a file called
-  :samp:`:samp:`{auxname}`.gcda` for each source file.  The data may be used for
+  :samp:`{auxname}.gcda` for each source file.  The data may be used for
   profile-directed optimizations ( :option:`-fbranch-probabilities` ), or for
   test coverage analysis ( :option:`-ftest-coverage` ).  Each object file's
   :samp:`{auxname}` is generated from the name of the output file, if
@@ -123,7 +123,7 @@ program analysis purposes.
   Produce a notes file that the :command:`gcov` code-coverage utility
   (see :ref:`gcov`) can use to
   show program coverage.  Each source file's note file is called
-  :samp:`:samp:`{auxname}`.gcno`.  Refer to the :option:`-fprofile-arcs` option
+  :samp:`{auxname}.gcno`.  Refer to the :option:`-fprofile-arcs` option
   above for a description of :samp:`{auxname}` and instructions on how to
   generate test coverage data.  Coverage data matches the source files
   more closely if you do not optimize.
@@ -146,7 +146,7 @@ program analysis purposes.
   profile data file appears in the same directory as the object file.
   In order to prevent the file name clashing, if the object file name is
   not an absolute path, we mangle the absolute path of the
-  :samp:`:samp:`{sourcename}`.gcda` file and use it as the file name of a
+  :samp:`{sourcename}.gcda` file and use it as the file name of a
   :samp:`.gcda` file.  See similar option :option:`-fprofile-note`.
 
   When an executable is run in a massive parallel environment, it is recommended

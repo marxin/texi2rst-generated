@@ -35,7 +35,7 @@ Note that if an error occurs in any step the make process will exit.
 If you are not building GNU binutils in the same source tree as GCC,
 you will need a cross-assembler and cross-linker installed before
 configuring GCC.  Put them in the directory
-:samp:`:samp:`{prefix}` / :samp:`{target}` /bin`.  Here is a table of the tools
+:samp:`{prefix}/{target}/bin`.  Here is a table of the tools
 you should put in this directory:
 
 :samp:`as`

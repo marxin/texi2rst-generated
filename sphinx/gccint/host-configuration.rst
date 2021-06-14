@@ -14,7 +14,7 @@ Most details about the machine and system on which the compiler is
 actually running are detected by the :command:`configure` script.  Some
 things are impossible for :command:`configure` to detect; these are
 described in two ways, either by macros defined in a file named
-:samp:`xm- :samp:`{machine}`.h` or by hook functions in the file specified
+:samp:`xm-{machine}.h` or by hook functions in the file specified
 by the :samp:`{out_host_hook_obj}` variable in :samp:`config.gcc`.  (The
 intention is that very few hosts will need a header file but nearly
 every fully supported host will need to override some hooks.)

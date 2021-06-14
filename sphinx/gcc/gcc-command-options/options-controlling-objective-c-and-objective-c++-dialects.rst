@@ -197,7 +197,7 @@ and Objective-C++ programs:
 .. option:: -gen-decls
 
   Dump interface declarations for all classes seen in the source file to a
-  file named :samp:`:samp:`{sourcename}`.decl`.
+  file named :samp:`{sourcename}.decl`.
 
 .. option:: -Wassign-intercept
 

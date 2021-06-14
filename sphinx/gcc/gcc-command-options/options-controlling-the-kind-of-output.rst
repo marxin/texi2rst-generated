@@ -189,9 +189,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   If :option:`-o` is not specified, the default is to put an executable
   file in :samp:`a.out`, the object file for
-  :samp:`:samp:`{source}`. :samp:`{suffix}`` in :samp:`:samp:`{source}`.o`, its
-  assembler file in :samp:`:samp:`{source}`.s`, a precompiled header file in
-  :samp:`:samp:`{source}`. :samp:`{suffix}`.gch`, and all preprocessed C source on
+  :samp:`{source}.{suffix}` in :samp:`{source}.o`, its
+  assembler file in :samp:`{source}.s`, a precompiled header file in
+  :samp:`{source}.{suffix}.gch`, and all preprocessed C source on
   standard output.
 
   Though :option:`-o` names only the primary output, it also affects the
@@ -676,9 +676,9 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
 .. option:: -ffile-prefix-map=old=new
 
-  When compiling files residing in directory :samp:`:samp:`{old}``, record
+  When compiling files residing in directory :samp:`{old}`, record
   any references to them in the result of the compilation as if the
-  files resided in directory :samp:`:samp:`{new}`` instead.  Specifying this
+  files resided in directory :samp:`{new}` instead.  Specifying this
   option is equivalent to specifying all the individual
   :option:`-f*-prefix-map` options.  This can be used to make reproducible
   builds that are location independent.  See also

@@ -2759,7 +2759,7 @@ section includes experimental options that may produce broken code.
   :option:`-fbranch-probabilities`, to improve optimizations based on
   the number of times each branch was taken.  When a program
   compiled with :option:`-fprofile-arcs` exits, it saves arc execution
-  counts to a file called :samp:`:samp:`{sourcename}`.gcda` for each source
+  counts to a file called :samp:`{sourcename}.gcda` for each source
   file.  The information in this data file is very dependent on the
   structure of the generated code, so you must use the same source code
   and the same optimization options for both compilations.

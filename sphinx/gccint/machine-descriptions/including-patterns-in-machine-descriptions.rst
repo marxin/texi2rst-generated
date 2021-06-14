@@ -42,7 +42,7 @@ By specifying:
 
   (include "BOGUS/filestuff")
 
-the include file is specified to be in :samp:`gcc/config/ :samp:`{target}` /BOGUS/filestuff`.
+the include file is specified to be in :samp:`gcc/config/{target}/BOGUS/filestuff`.
 
 Specifying an absolute path for the include file such as;
 

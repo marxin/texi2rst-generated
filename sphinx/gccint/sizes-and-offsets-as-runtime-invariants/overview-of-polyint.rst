@@ -36,7 +36,7 @@ The number of coefficients needed for compilation is a fixed
 property of each target and is specified by the configuration macro
 ``NUM_POLY_INT_COEFFS``.  The default value is 1, since most targets
 do not have such runtime invariants.  Targets that need a different
-value should ``#define`` the macro in their :samp:`:samp:`{cpu}` -modes.def`
+value should ``#define`` the macro in their :samp:`{cpu}-modes.def`
 file.  See :ref:`back-end`.
 
 .. index:: poly_int, invariant range

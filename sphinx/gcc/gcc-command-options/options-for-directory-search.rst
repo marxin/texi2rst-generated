@@ -70,7 +70,7 @@ libraries and for parts of the compiler:
   the environment variable :envvar:`GCC_EXEC_PREFIX`.  See :ref:`environment-variables`.
 
   As a special kludge, if the path provided by :option:`-B` is
-  :samp:`[dir/]stage :samp:`{N}` /`, where :samp:`{N}` is a number in the range 0 to
+  :samp:`[dir/]stage{N}/`, where :samp:`{N}` is a number in the range 0 to
   9, then it is replaced by :samp:`[dir/]include`.  This is to help
   with boot-strapping the compiler.
 
@@ -85,7 +85,7 @@ libraries and for parts of the compiler:
   Use :samp:`{dir}` as the logical root directory for headers and libraries.
   For example, if the compiler normally searches for headers in
   :samp:`/usr/include` and libraries in :samp:`/usr/lib`, it instead
-  searches :samp:`:samp:`{dir}` /usr/include` and :samp:`:samp:`{dir}` /usr/lib`.
+  searches :samp:`{dir}/usr/include` and :samp:`{dir}/usr/lib`.
 
   If you use both this option and the :option:`-isysroot` option, then
   the :option:`--sysroot` option applies to libraries, but the
@@ -101,7 +101,7 @@ libraries and for parts of the compiler:
   For some targets, a suffix is added to the root directory specified
   with :option:`--sysroot`, depending on the other options used, so that
   headers may for example be found in
-  :samp:`:samp:`{dir}` / :samp:`{suffix}` /usr/include` instead of
-  :samp:`:samp:`{dir}` /usr/include`.  This option disables the addition of
+  :samp:`{dir}/{suffix}/usr/include` instead of
+  :samp:`{dir}/usr/include`.  This option disables the addition of
   such a suffix.
 

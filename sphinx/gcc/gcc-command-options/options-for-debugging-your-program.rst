@@ -161,9 +161,9 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fdebug-prefix-map=old=new
 
-  When compiling files residing in directory :samp:`:samp:`{old}``, record
+  When compiling files residing in directory :samp:`{old}`, record
   debugging information describing them as if the files resided in
-  directory :samp:`:samp:`{new}`` instead.  This can be used to replace a
+  directory :samp:`{new}` instead.  This can be used to replace a
   build-time path with an install-time path in the debug info.  It can
   also be used to change an absolute path to a relative path by using
   :samp:`.` for :samp:`{new}`.  This can give more reproducible builds, which

@@ -354,7 +354,7 @@ by :command:`genrecog`.
 The program :command:`genpreds` is responsible for generating code to
 test predicates.  It also writes a header file containing function
 declarations for all machine-specific predicates.  It is not necessary
-to declare these predicates in :samp:`:samp:`{cpu}` -protos.h`.
+to declare these predicates in :samp:`{cpu}-protos.h`.
 
 .. Most of this node appears by itself (in a different place) even
    when the INTERNALS flag is clear.  Passages that require the internals
