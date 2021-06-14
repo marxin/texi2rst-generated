@@ -259,7 +259,9 @@ not doing a link step.
   form an executable.  Not all systems support this option.  For predictable
   results, you must also specify the same set of options used for compilation
   ( :option:`-fpic`, :option:`-fPIC`, or model suboptions) when
-  you specify this linker option.On some systems, :samp:`gcc -shared`
+  you specify this linker option.
+
+  On some systems, :samp:`gcc -shared`
   needs to build supplementary stub code for constructors to work.  On
   multi-libbed systems, :samp:`gcc -shared` must select the correct support
   libraries to link against.  Failing to supply the correct flags may lead
