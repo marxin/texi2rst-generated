@@ -17,6 +17,7 @@ described below.
 Tools/packages necessary for building GCC
 =========================================
 
+
 ISO C++11 compiler
   Necessary to bootstrap GCC.
 
@@ -50,8 +51,10 @@ C standard library and headers
   :option:`--disable-multilib`.  Otherwise, you may encounter an error such as
   :samp:`fatal error: gnu/stubs-32.h: No such file`
 
+.. _gnat-prerequisite:
+
 GNAT
-  .. _gnat-prerequisite:
+""""
 
   In order to build GNAT, the Ada compiler, you need a working GNAT
   compiler (GCC version 4.7 or later).
