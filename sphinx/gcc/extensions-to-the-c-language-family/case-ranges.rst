@@ -28,7 +28,7 @@ This feature is especially useful for ranges of ASCII character codes:
 
   case 'A' ... 'Z':
 
-Be careful: Write spaces around the ``...``, for otherwise
+**Be careful:** Write spaces around the ``...``, for otherwise
 it may be parsed wrong when you use it with integer values.  For example,
 write this:
 

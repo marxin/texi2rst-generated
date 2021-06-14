@@ -551,7 +551,7 @@ as static archive libraries works better than shared libraries.
 Errors involving ``alloca`` when building GCC generally are due
 to an incorrect definition of ``CC`` in the Makefile or mixing files
 compiled with the native C compiler and GCC.  During the stage1 phase of
-the build, the native AIX compiler must be invoked as :command:`cc`
+the build, the native AIX compiler **must** be invoked as :command:`cc`
 (not :command:`xlc`).  Once :command:`configure` has been informed of
 :command:`xlc`, one needs to use :samp:`make distclean` to remove the
 configure cache files and ensure that :envvar:`CC` environment variable

@@ -53,7 +53,7 @@ the compiler because it thinks that some kind of global synchronization
 (e.g., serial mode) might perform better? The specification suggests that the
 latter might be the case, but the former seems to be more useful.
 
-The ``readOnly`` bit ( ``0x4000`` ) is new. TODO Lexical or dynamic
+The ``readOnly`` bit ( ``0x4000`` ) is new. **TODO** Lexical or dynamic
 scope?
 
 ``hasNoRetry`` is not supported. If this bit is not set, but
@@ -229,7 +229,7 @@ register/deregister clone tables:
 Registered tables must be writable by the TM runtime, and must be live
 throughout the life-time of the TM runtime.
 
-TODO The intention was always to drop the registration functions
+**TODO** The intention was always to drop the registration functions
 entirely, and create a new ELF Phdr describing the linker-sorted table.  Much
 like what currently happens for ``PT_GNU_EH_FRAME``.
 This work kept getting bogged down in how to represent the :samp:`{N}` different

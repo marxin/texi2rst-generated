@@ -126,7 +126,7 @@ assembly code when optimizing. This can lead to unexpected duplicate
 symbol errors during compilation if your assembly code defines symbols or 
 labels.
 
-Warning: The C standards do not specify semantics for ``asm``,
+**Warning:** The C standards do not specify semantics for ``asm``,
 making it a potential source of incompatibilities between compilers.  These
 incompatibilities may not produce compiler warnings/errors.
 
@@ -902,7 +902,7 @@ consecutive colons where the output operands would go:
      : /* No outputs. */
      : "r" (Offset / 8));
 
-Warning: Do *not* modify the contents of input-only operands 
+**Warning:** Do *not* modify the contents of input-only operands 
 (except for inputs tied to outputs). The compiler assumes that on exit from 
 the ``asm`` statement these operands contain the same values as they 
 had before executing the statement. 

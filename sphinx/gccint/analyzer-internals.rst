@@ -348,7 +348,7 @@ and notes if it is infeasible.
 The above gives us a shortest feasible ``exploded_path`` through the
 ``exploded_graph`` (a list of ``exploded_edge *`` ).  We use this
 ``exploded_path`` to build a ``diagnostic_path`` (a list of
-events for the diagnostic subsystem) - specifically a
+**events** for the diagnostic subsystem) - specifically a
 ``checker_path``.
 
 Having built the ``checker_path``, we prune it to try to eliminate
