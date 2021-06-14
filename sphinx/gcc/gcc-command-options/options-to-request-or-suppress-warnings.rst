@@ -242,6 +242,7 @@ warn at all unless optimization is enabled.
   :option:`-Wvla-parameter` (C and Objective-C only) 
   :option:`-Wvolatile-register-var`  
   :option:`-Wzero-length-bounds`
+
   Note that some warning flags are not implied by :option:`-Wall`.  Some of
   them warn about constructions that users generally do not consider
   questionable, but which occasionally you might wish to check for;
@@ -739,11 +740,8 @@ warn at all unless optimization is enabled.
     functions whose return value is unused and that will most likely result
     in output truncation.
 
-  .. option:: -Wno-format-truncation
+  .. option:: -Wformat-truncation=2
 
-    Default option value for :option:`-Wformat-truncation`.
-
-  ``-Wformat-truncation=2``
     Level :samp:`{2}` warns also about calls to bounded functions whose return
     value is used and that might result in truncation given an argument of
     sufficient length or magnitude.

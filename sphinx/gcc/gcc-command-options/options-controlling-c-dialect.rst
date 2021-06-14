@@ -489,7 +489,9 @@ accepts:
   :samp:`little-endian` and :samp:`native` for the native endianness of
   the target (the default).  This option is not supported for C++.
 
-  **Warning:** the :option:`-fsso-struct` switch causes GCC to generate
-  code that is not binary compatible with code generated without it if the
-  specified endianness is not the native endianness of the target.
+  .. warning::
+
+    The :option:`-fsso-struct` switch causes GCC to generate
+    code that is not binary compatible with code generated without it if the
+    specified endianness is not the native endianness of the target.
 

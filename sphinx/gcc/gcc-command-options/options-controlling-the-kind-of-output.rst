@@ -722,7 +722,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
 :samp:`@{file}`
   Read command-line options from :samp:`{file}`.  The options read are
-  inserted in place of the original @ :samp:`{file}` option.  If :samp:`{file}`
+  inserted in place of the original :samp:`@{file}` option.  If :samp:`{file}`
   does not exist, or cannot be read, then the option will be treated
   literally, and not removed.  
 
@@ -731,5 +731,5 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   option in either single or double quotes.  Any character (including a
   backslash) may be included by prefixing the character to be included
   with a backslash.  The :samp:`{file}` may itself contain additional
-  @ :samp:`{file}` options; any such options will be processed recursively.
+  :samp:`@{file}` options; any such options will be processed recursively.
 
