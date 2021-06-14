@@ -210,10 +210,12 @@ it.
   Short structures and unions are those whose size and alignment match
   that of some integer type.
 
-  **Warning:** code compiled with the :option:`-fpcc-struct-return`
-  switch is not binary compatible with code compiled with the
-  :option:`-freg-struct-return` switch.
-  Use it to conform to a non-default application binary interface.
+  .. warning::
+
+    Code compiled with the :option:`-fpcc-struct-return`
+    switch is not binary compatible with code compiled with the
+    :option:`-freg-struct-return` switch.
+    Use it to conform to a non-default application binary interface.
 
 .. option:: -freg-struct-return
 
@@ -228,10 +230,12 @@ it.
   the principal compiler.  In those cases, we can choose the standard, and
   we chose the more efficient register return alternative.
 
-  **Warning:** code compiled with the :option:`-freg-struct-return`
-  switch is not binary compatible with code compiled with the
-  :option:`-fpcc-struct-return` switch.
-  Use it to conform to a non-default application binary interface.
+  .. warning::
+
+    Code compiled with the :option:`-freg-struct-return`
+    switch is not binary compatible with code compiled with the
+    :option:`-fpcc-struct-return` switch.
+    Use it to conform to a non-default application binary interface.
 
 .. option:: -fshort-enums
 
@@ -239,9 +243,11 @@ it.
   declared range of possible values.  Specifically, the ``enum`` type
   is equivalent to the smallest integer type that has enough room.
 
-  **Warning:** the :option:`-fshort-enums` switch causes GCC to generate
-  code that is not binary compatible with code generated without that switch.
-  Use it to conform to a non-default application binary interface.
+  .. warning::
+
+    The :option:`-fshort-enums` switch causes GCC to generate
+    code that is not binary compatible with code generated without that switch.
+    Use it to conform to a non-default application binary interface.
 
 .. option:: -fshort-wchar
 
@@ -249,9 +255,11 @@ it.
   unsigned int`` instead of the default for the target.  This option is
   useful for building programs to run under WINE.
 
-  **Warning:** the :option:`-fshort-wchar` switch causes GCC to generate
-  code that is not binary compatible with code generated without that switch.
-  Use it to conform to a non-default application binary interface.
+  .. warning::
+
+    The :option:`-fshort-wchar` switch causes GCC to generate
+    code that is not binary compatible with code generated without that switch.
+    Use it to conform to a non-default application binary interface.
 
 .. option:: -fcommon
 
@@ -539,10 +547,12 @@ it.
   alignment (that is, objects with default alignment requirements larger than
   this are output potentially unaligned at the next fitting location.
 
-  **Warning:** the :option:`-fpack-struct` switch causes GCC to generate
-  code that is not binary compatible with code generated without that switch.
-  Additionally, it makes the code suboptimal.
-  Use it to conform to a non-default application binary interface.
+  .. warning::
+
+    The :option:`-fpack-struct` switch causes GCC to generate
+    code that is not binary compatible with code generated without that switch.
+    Additionally, it makes the code suboptimal.
+    Use it to conform to a non-default application binary interface.
 
 .. option:: -fleading-underscore
 
@@ -550,10 +560,12 @@ it.
   change the way C symbols are represented in the object file.  One use
   is to help link with legacy assembly code.
 
-  **Warning:** the :option:`-fleading-underscore` switch causes GCC to
-  generate code that is not binary compatible with code generated without that
-  switch.  Use it to conform to a non-default application binary interface.
-  Not all targets provide complete support for this switch.
+  .. warning::
+
+    The :option:`-fleading-underscore` switch causes GCC to
+    generate code that is not binary compatible with code generated without that
+    switch.  Use it to conform to a non-default application binary interface.
+    Not all targets provide complete support for this switch.
 
 .. option:: -ftls-model=model
 

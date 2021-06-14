@@ -531,7 +531,7 @@ The files are created in the directory of the output file.
     Turn on all optimization options, i.e., optimized,
     missed, and note.
 
-    To determine what tree dumps are available or find the dump for a pass
+  To determine what tree dumps are available or find the dump for a pass
   of interest follow the steps below.
 
   * Invoke GCC with :option:`-fdump-passes` and in the :samp:`stderr` output
@@ -603,7 +603,7 @@ The files are created in the directory of the output file.
     additional, more detailed, messages, which are likely to only be of interest
     to GCC developers.
 
-    One or more of the following option keywords can be used to describe a
+  One or more of the following option keywords can be used to describe a
   group of optimizations:
 
   :samp:`ipa`
@@ -625,7 +625,7 @@ The files are created in the directory of the output file.
     Enable dumps from all optimizations. This is a superset of
     the optimization groups listed above.
 
-    If :samp:`{options}` is
+  If :samp:`{options}` is
   omitted, it defaults to :samp:`optimized-optall`, which means to dump messages
   about successful optimizations from all the passes, omitting messages
   that are treated as 'internals'.
@@ -1042,8 +1042,8 @@ The files are created in the directory of the output file.
 .. option:: -fdbg-cnt=counter-value-list
 
   Set the internal debug counter lower and upper bound.  :samp:`{counter-value-list}`
-  is a comma-separated list of :samp:`{name}` : :samp:`{lower_bound1}` - :samp:`{upper_bound1}`
-  [: :samp:`{lower_bound2}` - :samp:`{upper_bound2}`...] tuples which sets
+  is a comma-separated list of :samp:`{name}:{lower_bound1}-{upper_bound1}`
+  :samp:`[:{lower_bound2}-{upper_bound2}...]` tuples which sets
   the name of the counter and list of closed intervals.
   The :samp:`{lower_bound}` is optional and is zero
   initialized if not set.
