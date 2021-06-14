@@ -30,22 +30,20 @@ These :samp:`-m` options are defined for the ARM port:
 
   This is a synonym for :option:`-mapcs-frame` and is deprecated.
 
-  @c not currently implemented
-  @item -mapcs-stack-check
-  @opindex mapcs-stack-check
+.. option:: -mapcs-stack-check
+
   Generate code to check the amount of stack space available upon entry to
   every function (that actually uses some stack space).  If there is
   insufficient space available then either the function
-  @code{__rt_stkovf_split_small} or @code{__rt_stkovf_split_big} is
+  ``__rt_stkovf_split_small`` or ``__rt_stkovf_split_big`` is
   called, depending upon the amount of stack space required.  The runtime
   system is required to provide these functions.  The default is
-  @option{-mno-apcs-stack-check}, since this produces smaller code.
+  :option:`-mno-apcs-stack-check`, since this produces smaller code.
 
-  @c not currently implemented
-  @item -mapcs-reentrant
-  @opindex mapcs-reentrant
+.. option:: -mapcs-reentrant
+
   Generate reentrant, position-independent code.  The default is
-  @option{-mno-apcs-reentrant}.
+  :option:`-mno-apcs-reentrant`.
 
 .. option:: -mthumb-interwork
 
