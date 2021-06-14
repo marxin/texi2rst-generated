@@ -1228,13 +1228,19 @@ respects, this target is the same as the
 Microsoft Windows
 =================
 
-Intel 16-bit versionsThe 16-bit versions of Microsoft Windows, such as Windows 3.1, are not
+Intel 16-bit versions
+=====================
+
+The 16-bit versions of Microsoft Windows, such as Windows 3.1, are not
 supported.
 
 However, the 32-bit port has limited support for Microsoft
 Windows 3.11 in the Win32s environment, as a target only.  See below.
 
-Intel 32-bit versionsThe 32-bit versions of Windows, including Windows 95, Windows NT, Windows
+Intel 32-bit versions
+=====================
+
+The 32-bit versions of Windows, including Windows 95, Windows NT, Windows
 XP, and Windows Vista, are supported by several different target
 platforms.  These targets differ in which Windows subsystem they target
 and which C libraries are used.
@@ -1248,16 +1254,25 @@ and which C libraries are used.
 * MKS i386-pc-mks: NuTCracker from MKS.  See
   https://www.mkssoftware.com for more information.
 
-Intel 64-bit versionsGCC contains support for x86-64 using the mingw-w64
+Intel 64-bit versions
+=====================
+
+GCC contains support for x86-64 using the mingw-w64
 runtime library, available from http://mingw-w64.org/doku.php.
 This library should be used with the target triple x86_64-pc-mingw32.
 
 Presently Windows for Itanium is not supported.
 
-Windows CEWindows CE is supported as a target only on Hitachi
+Windows CE
+==========
+
+Windows CE is supported as a target only on Hitachi
 SuperH (sh-wince-pe), and MIPS (mips-wince-pe).
 
-Other Windows PlatformsGCC no longer supports Windows NT on the Alpha or PowerPC.
+Other Windows Platforms
+=======================
+
+GCC no longer supports Windows NT on the Alpha or PowerPC.
 
 GCC no longer supports the Windows POSIX subsystem.  However, it does
 support the Interix subsystem.  See above.
