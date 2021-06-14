@@ -467,14 +467,17 @@ warn at all unless optimization is enabled.
 
   Default option value for :option:`-Wno-coverage-invalid-line-number`.
 
-``-Wno-cpp``
-  (C, Objective-C, C++, Objective-C++ and Fortran only)
+.. option:: -Wno-cpp
 
-  .. index:: Wno-cpp
+  .. note::
 
-  .. index:: Wcpp
+    C, Objective-C, C++, Objective-C++ and Fortran only
 
   Suppress warning messages emitted by ``#warning`` directives.
+
+.. option:: -Wcpp
+
+  Default option value for :option:`-Wno-cpp`.
 
 .. option:: -Wdouble-promotion
 
