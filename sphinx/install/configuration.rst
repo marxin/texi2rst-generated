@@ -1802,7 +1802,10 @@ corresponding :option:`--without` option.
   GCC follows and enables the option. For other cross compiles, the default is
   disabled.
 
-Cross-Compiler-Specific OptionsThe following options only apply to building cross compilers.
+Cross-Compiler-Specific Options
+===============================
+
+The following options only apply to building cross compilers.
 
 .. option:: --with-toolexeclibdir=dir
 
@@ -2006,7 +2009,10 @@ script provides three variables for this:
 overrides, you can pass a setting for :envvar:`CONFIG_SITE` and set
 variables in the site file.
 
-Objective-C-Specific OptionsThe following options apply to the build of the Objective-C runtime library.
+Objective-C-Specific Options
+============================
+
+The following options apply to the build of the Objective-C runtime library.
 
 .. option:: --enable-objc-gc
 
@@ -2036,7 +2042,10 @@ Objective-C-Specific OptionsThe following options apply to the build of the Obje
   If none of these options are specified, the library is assumed in
   default locations.
 
-D-Specific OptionsThe following options apply to the build of the D runtime library.
+D-Specific Options
+==================
+
+The following options apply to the build of the D runtime library.
 
 .. option:: --enable-libphobos-checking
 
