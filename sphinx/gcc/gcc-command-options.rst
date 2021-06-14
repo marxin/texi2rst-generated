@@ -125,7 +125,6 @@ See :ref:`option-index`, for an index to GCC's options.
   :maxdepth: 2
 
   gcc-command-options/option-summary
-  gcc-command-options/c++-modules
   gcc-command-options/options-controlling-the-kind-of-output
   gcc-command-options/compiling-c++-programs
   gcc-command-options/options-controlling-c-dialect
@@ -147,6 +146,7 @@ See :ref:`option-index`, for an index to GCC's options.
   gcc-command-options/specifying-subprocesses-and-the-switches-to-pass-to-them
   gcc-command-options/environment-variables-affecting-gcc
   gcc-command-options/using-precompiled-headers
+  gcc-command-options/c++-modules
 
 .. only:: man
 
