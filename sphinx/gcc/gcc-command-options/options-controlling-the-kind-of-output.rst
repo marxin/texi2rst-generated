@@ -125,17 +125,12 @@ You can specify the input language explicitly with the :option:`-x` option:
   name suffix).  This option applies to all following input files until
   the next :option:`-x` option.  Possible values for :samp:`{language}` are:
 
-  .. code-block:: c++
-
-    c  c-header  cpp-output
-    c++  c++-header  c++-system-header c++-user-header c++-cpp-output
-    objective-c  objective-c-header  objective-c-cpp-output
-    objective-c++ objective-c++-header objective-c++-cpp-output
-    assembler  assembler-with-cpp
-    ada
-    d
-    f77  f77-cpp-input f95  f95-cpp-input
-    go
+  :samp:`c` :samp:`c-header` :samp:`cpp-output`
+  :samp:`c++  :samp:`c++-header  :samp:`c++-system-header` :samp:`c++-user-header` :samp:`c++-cpp-output`
+  :samp:`objective-c` :samp:`objective-c-header` :samp:`objective-c-cpp-output`
+  :samp:`objective-c++ :samp:`objective-c++-header :samp:`objective-c++-cpp-output`
+  :samp:`assembler  :samp:`assembler-with-cpp` :samp:`ada` :samp:`d`
+  :samp:`f77` :samp:`f77-cpp-input` :samp:`f95` :samp:`f95-cpp-input` :samp:`go
 
 ``-x none``
   Turn off any specification of a language, so that subsequent files are
