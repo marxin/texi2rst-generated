@@ -87,8 +87,8 @@ This is a good example of the subtlety of getting token spacing correct
 in the preprocessor; there are plenty of tests in the testsuite for
 corner cases like this.
 
-The lexer is written to treat each of :samp:`\r`, :samp:`\n`, :samp:`\r\n`
-and :samp:`\n\r` as a single new line indicator.  This allows it to
+The lexer is written to treat each of :samp:`\\r`, :samp:`\\n`, :samp:`\\r\\n`
+and :samp:`\\n\\r` as a single new line indicator.  This allows it to
 transparently preprocess MS-DOS, Macintosh and Unix files without their
 needing to pass through a special filter beforehand.
 
@@ -120,10 +120,15 @@ there is just one---there might be an arbitrarily long sequence of them.
 
 So, for example, the routine that lexes a number, ``parse_number``,
 cannot assume that it can scan forwards until the first non-number
-character and be done with it, because this could be the :samp:`\`
+character and be done with it, because this could be the :samp:`\\`
 introducing an escaped newline, or the :samp:`?` introducing the trigraph
+<<<<<<< HEAD
 sequence that represents the :samp:`\` of an escaped newline.  If it
 encounters a ``?` or :samp:`\`, it calls ``skip_escaped_newlines``
+=======
+sequence that represents the :samp:`\\` of an escaped newline.  If it
+encounters a :samp:`?` or :samp:`\\`, it calls ``skip_escaped_newlines``
+>>>>>>> raw
 to skip over any potential escaped newlines before checking whether the
 number has been finished.
 

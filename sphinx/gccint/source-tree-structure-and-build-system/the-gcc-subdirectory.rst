@@ -785,7 +785,7 @@ the language:
 ``compilers``
   If defined, a space-separated list of compiler executables that will
   be run by the driver.  The names here will each end
-  with :samp:`\$(exeext)`.
+  with :samp:`\\$(exeext)`.
 
 ``outputs``
   If defined, a space-separated list of files that should be generated

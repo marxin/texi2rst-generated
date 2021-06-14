@@ -59,7 +59,7 @@ and stick to it.
 * The numeric value of character constants in preprocessor expressions.
 
   The preprocessor and compiler interpret character constants in the
-  same way; i.e. escape sequences such as :samp:`\a` are given the
+  same way; i.e. escape sequences such as :samp:`\\a` are given the
   values they would have on the target machine.
 
   The compiler evaluates a multi-character character constant a character
@@ -75,7 +75,7 @@ and stick to it.
 
   For example, ``'ab'`` for a target with an 8-bit ``char`` would be
   interpreted as :samp:`(int) ((unsigned char) 'a' * 256 + (unsigned char)
-  'b')`, and ``'\234a'`` as :samp:`(int) ((unsigned char) '\234' *
+  'b')`, and ``'\234a'`` as :samp:`(int) ((unsigned char) '\\234' *
   256 + (unsigned char) 'a')`.
 
 * Source file inclusion.

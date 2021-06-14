@@ -64,7 +64,7 @@ which punctuation characters are valid with the
 .. index:: backslash
 
 The template may generate multiple assembler instructions.  Write the text
-for the instructions, with :samp:`\;` between them.
+for the instructions, with :samp:`\\;` between them.
 
 .. index:: matching operands
 

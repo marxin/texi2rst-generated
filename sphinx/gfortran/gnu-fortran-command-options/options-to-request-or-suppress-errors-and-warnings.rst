@@ -69,7 +69,7 @@ by GNU Fortran:
 
   Issue warnings for uses of extensions to Fortran.
   :option:`-pedantic` also applies to C-language constructs where they
-  occur in GNU Fortran source files, such as use of :samp:`\e` in a
+  occur in GNU Fortran source files, such as use of :samp:`\\e` in a
   character constant within a directive like ``#include``.
 
   Valid Fortran programs should compile properly with or without
