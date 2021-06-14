@@ -117,8 +117,8 @@ per-method-group locks, then TM methods need to avoid those deadlocks:
   per-method-group lock before doing the wake-up, and only blocking on this lock
   using a futex if this bit is not group).
 
-**TODO**: Can reuse serial lock for gl-*? And if we can, does it make
-sense to introduce further complexity in the serial lock? For gl-*, we can
+**TODO**: Can reuse serial lock for gl-\*? And if we can, does it make
+sense to introduce further complexity in the serial lock? For gl-\*, we can
 really only avoid an abort if we do -wb and -vbv.
 
 Serial lock implementation

@@ -607,7 +607,7 @@ AVR Variable Attributes
   This attribute works similar to the ``section`` attribute
   but adds additional checking.
 
-  *  Ordinary AVR cores with 32 general purpose registers:
+  \*  Ordinary AVR cores with 32 general purpose registers:
     ``progmem`` affects the location
     of the data but not how this data is accessed.
     In order to read data located with the ``progmem`` attribute
@@ -633,7 +633,7 @@ AVR Variable Attributes
     See also the AVR Named Address Spaces section for
     an alternate way to locate and access data in flash memory.
 
-  *  AVR cores with flash memory visible in the RAM address range:
+  \*  AVR cores with flash memory visible in the RAM address range:
     On such devices, there is no need for attribute ``progmem`` or
     AVR Named Address Spaces``__flash`` qualifier at all.
     Just use standard C / C++.  The compiler will generate ``LD*``
@@ -646,7 +646,7 @@ AVR Variable Attributes
     families ``avrtiny`` and ``avrxmega3``, see AVR Options for
     an overview.
 
-  * Reduced AVR Tiny cores like ATtiny40:
+  \* Reduced AVR Tiny cores like ATtiny40:
     The compiler adds ``0x4000``
     to the addresses of objects and declarations in ``progmem`` and locates
     the objects in flash memory, namely in section ``.progmem.data``.

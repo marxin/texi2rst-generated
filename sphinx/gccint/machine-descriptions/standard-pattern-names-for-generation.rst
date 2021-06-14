@@ -541,8 +541,8 @@ vec_permm
   vector of the same width and number of elements as mode :samp:`{m}`.
 
   The input elements are numbered from 0 in operand 1 through
-  2* :samp:`{N}` -1 in operand 2.  The elements of the selector must
-  be computed modulo 2* :samp:`{N}`.  Note that if
+  2\* :samp:`{N}` -1 in operand 2.  The elements of the selector must
+  be computed modulo 2\* :samp:`{N}`.  Note that if
   ``rtx_equal_p(operand1, operand2)``, this can be implemented
   with just operand 1 and selector elements modulo :samp:`{N}`.
 
@@ -908,7 +908,7 @@ vec_shr_m
 vec_pack_trunc_m
   Narrow (demote) and merge the elements of two vectors. Operands 1 and 2
   are vectors of the same mode having N integral or floating point elements
-  of size S.  Operand 0 is the resulting vector in which 2*N elements of
+  of size S.  Operand 0 is the resulting vector in which 2\*N elements of
   size S/2 are concatenated after narrowing them down using truncation.
 
   .. index:: vec_pack_sbool_trunc_m instruction pattern
@@ -916,8 +916,8 @@ vec_pack_trunc_m
 vec_pack_sbool_trunc_m
   Narrow and merge the elements of two vectors.  Operands 1 and 2 are vectors
   of the same type having N boolean elements.  Operand 0 is the resulting
-  vector in which 2*N elements are concatenated.  The last operand (operand 3)
-  is the number of elements in the output vector 2*N as a ``CONST_INT``.
+  vector in which 2\*N elements are concatenated.  The last operand (operand 3)
+  is the number of elements in the output vector 2\*N as a ``CONST_INT``.
   This instruction pattern is used when all the vector input and output
   operands have the same scalar mode :samp:`{m}` and thus using
   ``vec_pack_trunc_m`` would be ambiguous.
@@ -941,7 +941,7 @@ vec_pack_sbool_trunc_m
   Narrow, convert to signed/unsigned integral type and merge the elements
   of two vectors.  Operands 1 and 2 are vectors of the same mode having N
   floating point elements of size S.  Operand 0 is the resulting vector
-  in which 2*N elements of size S/2 are concatenated.
+  in which 2\*N elements of size S/2 are concatenated.
 
   .. index:: vec_packs_float_m instruction pattern
 
@@ -951,7 +951,7 @@ vec_pack_sbool_trunc_m
   Narrow, convert to floating point type and merge the elements
   of two vectors.  Operands 1 and 2 are vectors of the same mode having N
   signed/unsigned integral elements of size S.  Operand 0 is the resulting vector
-  in which 2*N elements of size S/2 are concatenated.
+  in which 2\*N elements of size S/2 are concatenated.
 
   .. index:: vec_unpacks_hi_m instruction pattern
 
@@ -962,7 +962,7 @@ vec_pack_sbool_trunc_m
   integral or floating point elements.  The input vector (operand 1) has N
   elements of size S.  Widen (promote) the high/low elements of the vector
   using signed or floating point extension and place the resulting N/2
-  values of size 2*S in the output vector (operand 0).
+  values of size 2\*S in the output vector (operand 0).
 
   .. index:: vec_unpacku_hi_m instruction pattern
 
@@ -972,7 +972,7 @@ vec_pack_sbool_trunc_m
   Extract and widen (promote) the high/low part of a vector of unsigned
   integral elements.  The input vector (operand 1) has N elements of size S.
   Widen (promote) the high/low elements of the vector using zero extension and
-  place the resulting N/2 values of size 2*S in the output vector (operand 0).
+  place the resulting N/2 values of size 2\*S in the output vector (operand 0).
 
   .. index:: vec_unpacks_sbool_hi_m instruction pattern
 
@@ -999,7 +999,7 @@ vec_pack_sbool_trunc_m
   Extract, convert to floating point type and widen the high/low part of a
   vector of signed/unsigned integral elements.  The input vector (operand 1)
   has N elements of size S.  Convert the high/low elements of the vector using
-  floating point conversion and place the resulting N/2 values of size 2*S in
+  floating point conversion and place the resulting N/2 values of size 2\*S in
   the output vector (operand 0).
 
   .. index:: vec_unpack_sfix_trunc_hi_m instruction pattern
@@ -1014,7 +1014,7 @@ vec_pack_sbool_trunc_m
   Extract, convert to signed/unsigned integer type and widen the high/low part of a
   vector of floating point elements.  The input vector (operand 1)
   has N elements of size S.  Convert the high/low elements of the vector
-  to integers and place the resulting N/2 values of size 2*S in
+  to integers and place the resulting N/2 values of size 2\*S in
   the output vector (operand 0).
 
   .. index:: vec_widen_umult_hi_m instruction pattern
@@ -1036,7 +1036,7 @@ vec_pack_sbool_trunc_m
 :samp:`vec_widen_umult_hi_{m}`, :samp:`vec_widen_umult_lo_{m}` :samp:`vec_widen_smult_hi_{m}`, :samp:`vec_widen_smult_lo_{m}` :samp:`vec_widen_umult_even_{m}`, :samp:`vec_widen_umult_odd_{m}` :samp:`vec_widen_smult_even_{m}`, :samp:`vec_widen_smult_odd_{m}`
   Signed/Unsigned widening multiplication.  The two inputs (operands 1 and 2)
   are vectors with N signed/unsigned elements of size S.  Multiply the high/low
-  or even/odd elements of the two vectors, and put the N/2 products of size 2*S
+  or even/odd elements of the two vectors, and put the N/2 products of size 2\*S
   in the output vector (operand 0). A target shouldn't implement even/odd pattern
   pair if it is less efficient than lo/hi one.
 
@@ -1051,7 +1051,7 @@ vec_pack_sbool_trunc_m
 :samp:`vec_widen_ushiftl_hi_{m}`, :samp:`vec_widen_ushiftl_lo_{m}` :samp:`vec_widen_sshiftl_hi_{m}`, :samp:`vec_widen_sshiftl_lo_{m}`
   Signed/Unsigned widening shift left.  The first input (operand 1) is a vector
   with N signed/unsigned elements of size S.  Operand 2 is a constant.  Shift
-  the high/low elements of operand 1, and put the N/2 results of size 2*S in the
+  the high/low elements of operand 1, and put the N/2 results of size 2\*S in the
   output vector (operand 0).
 
   .. index:: vec_widen_saddl_hi_m instruction pattern
@@ -1065,7 +1065,7 @@ vec_pack_sbool_trunc_m
 :samp:`vec_widen_uaddl_hi_{m}`, :samp:`vec_widen_uaddl_lo_{m}` :samp:`vec_widen_saddl_hi_{m}`, :samp:`vec_widen_saddl_lo_{m}`
   Signed/Unsigned widening add long.  Operands 1 and 2 are vectors with N
   signed/unsigned elements of size S.  Add the high/low elements of 1 and 2
-  together, widen the resulting elements and put the N/2 results of size 2*S in
+  together, widen the resulting elements and put the N/2 results of size 2\*S in
   the output vector (operand 0).
 
   .. index:: vec_widen_ssubl_hi_m instruction pattern
@@ -1079,7 +1079,7 @@ vec_pack_sbool_trunc_m
 :samp:`vec_widen_usubl_hi_{m}`, :samp:`vec_widen_usubl_lo_{m}` :samp:`vec_widen_ssubl_hi_{m}`, :samp:`vec_widen_ssubl_lo_{m}`
   Signed/Unsigned widening subtract long.  Operands 1 and 2 are vectors with N
   signed/unsigned elements of size S.  Subtract the high/low elements of 2 from
-  1 and widen the resulting elements. Put the N/2 results of size 2*S in the
+  1 and widen the resulting elements. Put the N/2 results of size 2\*S in the
   output vector (operand 0).
 
   .. index:: mulhisi3 instruction pattern

@@ -229,7 +229,7 @@ DejaGnu 1.4.4 Expect Tcl
 
 autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
   Necessary to regenerate fixinc/fixincl.x from
-  fixinc/inclhack.def and fixinc/*.tpl.
+  fixinc/inclhack.def and fixinc/\*.tpl.
 
   Necessary to run :samp:`make check` for fixinc.
 
@@ -237,14 +237,14 @@ autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
   Makefile.tpl and Makefile.def.
 
 Flex version 2.5.4 (or later)
-  Necessary when modifying *.l files.
+  Necessary when modifying \*.l files.
 
   Necessary to build GCC during development because the generated output
   files are not included in the version-controlled source repository.
   They are included in releases.
 
 Texinfo version 4.7 (or later)
-  Necessary for running :command:`makeinfo` when modifying *.texi
+  Necessary for running :command:`makeinfo` when modifying \*.texi
   files to test your changes.
 
   Necessary for running :command:`make dvi` or :command:`make pdf` to

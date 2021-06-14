@@ -1227,24 +1227,24 @@ Specifically, :option:`-fdec-math` enables the COTAN intrinsic, and
 trigonometric intrinsics which accept or produce values in degrees instead of
 radians.  Here is a summary of the new intrinsics:
 
-===========  ============
-Radians      Degrees
-===========  ============
-``ACOS``     ``ACOSD`` *
-``ASIN``     ``ASIND`` *
-``ATAN``     ``ATAND`` *
-``ATAN2``    ``ATAN2D`` *
-``COS``      ``COSD`` *
-``COTAN`` *  ``COTAND`` *
-``SIN``      ``SIND`` *
-``TAN``      ``TAND`` *
-===========  ============
-* Enabled with :option:`-fdec-math`.
+============  =============
+Radians       Degrees
+============  =============
+``ACOS``      ``ACOSD`` \*
+``ASIN``      ``ASIND`` \*
+``ATAN``      ``ATAND`` \*
+``ATAN2``     ``ATAN2D`` \*
+``COS``       ``COSD`` \*
+``COTAN`` \*  ``COTAND`` \*
+``SIN``       ``SIND`` \*
+``TAN``       ``TAND`` \*
+============  =============
+\* Enabled with :option:`-fdec-math`.
 
 For advanced users, it may be important to know the implementation of these
 functions. They are simply wrappers around the standard radian functions, which
 have more accurate builtin versions. These functions convert their arguments
-(or results) to degrees (or radians) by taking the value modulus 360 (or 2*pi)
+(or results) to degrees (or radians) by taking the value modulus 360 (or 2\*pi)
 and then multiplying it by a constant radian-to-degree (or degree-to-radian)
 factor, as appropriate. The factor is computed at compile-time as 180/pi (or
 pi/180).

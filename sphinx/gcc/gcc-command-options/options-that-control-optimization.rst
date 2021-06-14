@@ -2627,7 +2627,7 @@ correctness.  All must be specifically enabled.
   Allow optimizations for floating-point arithmetic that ignore the
   signedness of zero.  IEEE arithmetic specifies the behavior of
   distinct +0.0 and -0.0 values, which then prohibits simplification
-  of expressions such as x+0.0 or 0.0*x (even with :option:`-ffinite-math-only` ).
+  of expressions such as x+0.0 or 0.0\*x (even with :option:`-ffinite-math-only` ).
   This option implies that the sign of a zero result isn't significant.
 
   The default is :option:`-fsigned-zeros`.
@@ -3609,7 +3609,7 @@ section includes experimental options that may produce broken code.
     Tuning this may improve compilation speed; it has no effect on code
     generation.
 
-    The default is 30% + 70% * (RAM/1GB) with an upper bound of 100% when
+    The default is 30% + 70% \* (RAM/1GB) with an upper bound of 100% when
     RAM >= 1GB.  If ``getrlimit`` is available, the notion of 'RAM' is
     the smallest of actual RAM and ``RLIMIT_DATA`` or ``RLIMIT_AS``.  If
     GCC is not able to calculate RAM on a particular platform, the lower

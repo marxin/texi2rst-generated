@@ -43,8 +43,8 @@ that type mismatches occur, this could be the cause.
 The solution is not to use such a directory for building GCC.
 
 Similarly, when building from the source repository or snapshots, or if you modify
-*.l files, you need the Flex lexical analyzer generator
-installed.  If you do not modify *.l files, releases contain
+\*.l files, you need the Flex lexical analyzer generator
+installed.  If you do not modify \*.l files, releases contain
 the Flex-generated files and you do not need Flex installed to build
 them.  There is still one Flex-based lexical analyzer (part of the
 build machinery, not of GCC itself) that is used even if you only

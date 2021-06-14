@@ -60,7 +60,7 @@ Environment Options
 
 * Environment variable to display allocated memory at normal program end.
 
-* Environment variable for filename for * IO-unit.
+* Environment variable for filename for \* IO-unit.
 
 * Environment variable for temporary file directory.
 

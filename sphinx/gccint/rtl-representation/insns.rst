@@ -612,7 +612,7 @@ are stored in the ``REG_NOTES`` field of an insn.
 
   These notes are found in JUMP insns after delayed branch scheduling
   has taken place.  They indicate both the direction and the likelihood
-  of the JUMP.  The format is a bitmask of ATTR_FLAG_* values.
+  of the JUMP.  The format is a bitmask of ATTR_FLAG_\* values.
 
 .. envvar:: REG_FRAME_RELATED_EXPR
 

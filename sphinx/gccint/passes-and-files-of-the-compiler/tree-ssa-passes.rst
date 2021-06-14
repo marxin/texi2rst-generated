@@ -286,7 +286,7 @@ run after gimplification and what source files they are located in.
   model.  Graphite stands for Gimple Represented as Polyhedra.  The
   internals of this infrastructure are documented in
   http://gcc.gnu.org/wiki/Graphite.  The passes working on
-  this representation are implemented in the various graphite-*
+  this representation are implemented in the various graphite-\*
   files.
 
 * Tree level if-conversion for vectorizer

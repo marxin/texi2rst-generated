@@ -15,32 +15,32 @@ data types are:
 
 .. envvar:: INTEGER
 
-  1, 2, 4, 8*, 16*, default: 4**
+  1, 2, 4, 8\*, 16\*, default: 4\*\*
 
 .. envvar:: LOGICAL
 
-  1, 2, 4, 8*, 16*, default: 4**
+  1, 2, 4, 8\*, 16\*, default: 4\*\*
 
 .. envvar:: REAL
 
-  4, 8, 10*, 16*, default: 4***
+  4, 8, 10\*, 16\*, default: 4\*\*\*
 
 .. envvar:: COMPLEX
 
-  4, 8, 10*, 16*, default: 4***
+  4, 8, 10\*, 16\*, default: 4\*\*\*
 
 ``DOUBLE PRECISION``
-  4, 8, 10*, 16*, default: 8***
+  4, 8, 10\*, 16\*, default: 8\*\*\*
 
 .. envvar:: CHARACTER
 
   1, 4, default: 1
 
-* not available on all systems 
+\* not available on all systems 
 
-** unless :option:`-fdefault-integer-8` is used 
+\*\* unless :option:`-fdefault-integer-8` is used 
 
-*** unless :option:`-fdefault-real-8` is used (see Fortran Dialect Options)
+\*\*\* unless :option:`-fdefault-real-8` is used (see Fortran Dialect Options)
 
 The ``KIND`` value matches the storage size in bytes, except for
 ``COMPLEX`` where the storage size is twice as much (or both real and

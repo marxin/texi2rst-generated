@@ -6,10 +6,10 @@
 How to interpret test results
 *****************************
 
-The result of running the testsuite are various *.sum and *.log
-files in the testsuite subdirectories.  The *.log files contain a
+The result of running the testsuite are various \*.sum and \*.log
+files in the testsuite subdirectories.  The \*.log files contain a
 detailed log of the compiler invocations and the corresponding
-results, the *.sum files summarize the results.  These summaries
+results, the \*.sum files summarize the results.  These summaries
 contain status codes for all tests:
 
 * PASS: the test passed as expected

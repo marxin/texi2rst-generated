@@ -42,8 +42,8 @@ are ``poly_int`` s and where :samp:`{c1}` and :samp:`{c2}` are scalars:
 :samp:`{p1}` - :samp:`{c2}`
 :samp:`{c1}` - :samp:`{p2}`
 
-:samp:`{c1}` * :samp:`{p2}`
-:samp:`{p1}` * :samp:`{c2}`
+:samp:`{c1}` \* :samp:`{p2}`
+:samp:`{p1}` \* :samp:`{c2}`
 
 :samp:`{p1}` << :samp:`{c2}`
 
@@ -53,7 +53,7 @@ are ``poly_int`` s and where :samp:`{c1}` and :samp:`{c2}` are scalars:
 :samp:`{p1}` :option:`-` = :samp:`{p2}`
 :samp:`{p1}` :option:`-` = :samp:`{c2}`
 
-:samp:`{p1}` *= :samp:`{c2}`
+:samp:`{p1}` \*= :samp:`{c2}`
 :samp:`{p1}` <<= :samp:`{c2}`
 These arithmetic operations handle integer ranks in a similar way
 to C++.  The main difference is that every coefficient narrower than

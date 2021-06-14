@@ -140,7 +140,7 @@ comment.
       oops! this isn't a comment anymore */
 
 Comments are not recognized within string literals.
-"/* blah */" is the string constant :samp:`/* blah */`, not
+"/\* blah \*/" is the string constant :samp:`/\* blah \*/`, not
 an empty string.
 
 Line comments are not in the 1989 edition of the C standard, but they

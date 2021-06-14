@@ -606,7 +606,7 @@ those provided by ctype.h:
 * These macros ignore the current locale; they are true for these
   fixed sets of characters:
 
-  ==========  ================================
+  ==========  =================================
   ``ALPHA``   A-Za-z
   ``ALNUM``   A-Za-z0-9
   ``BLANK``   space tab
@@ -615,11 +615,11 @@ those provided by ctype.h:
   ``GRAPH``   ``ALNUM || PUNCT``
   ``LOWER``   a-z
   ``PRINT``   ``GRAPH ||`` space
-  ``PUNCT``   `~!@#$%^&*()_-=+[{]}\|;:'",<.>/?
+  ``PUNCT``   `~!@#$%^&\*()_-=+[{]}\|;:'",<.>/?
   ``SPACE``   space tab \n \r \f \v
   ``UPPER``   A-Z
   ``XDIGIT``  0-9A-Fa-f
-  ==========  ================================
+  ==========  =================================
 
   Note that, if the host character set is ASCII or a superset thereof,
   all these macros will return false for all values of ``char`` outside

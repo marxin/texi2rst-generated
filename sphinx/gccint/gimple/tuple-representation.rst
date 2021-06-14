@@ -137,13 +137,13 @@ with the ``gimple_statement_with_memory_ops`` tuple. So, these
 common fields are placed in ``gimple_statement_with_ops_base`` which
 is then inherited from the other two tuples.
 
-===========  ==========================
+===========  ===========================
 ``gsbase``   256
 ``def_ops``  64
 ``use_ops``  64
-``op``       ``num_ops`` * 64
-Total size   48 + 8 * ``num_ops`` bytes
-===========  ==========================
+``op``       ``num_ops`` \* 64
+Total size   48 + 8 \* ``num_ops`` bytes
+===========  ===========================
 
 * ``gsbase``
   Inherited from ``struct gimple``.
@@ -171,7 +171,7 @@ the structure is split in two to accommodate for the operand
 vector ( ``gimple_statement_with_memory_ops_base`` and
 ``gimple_statement_with_memory_ops`` ).
 
-============  ==========================
+============  ===========================
 Field         Size (bits)
 ``gsbase``    256
 ``def_ops``   64
@@ -180,9 +180,9 @@ Field         Size (bits)
 ``vuse_ops``  64
 ``stores``    64
 ``loads``     64
-``op``        ``num_ops`` * 64
-Total size    80 + 8 * ``num_ops`` bytes
-============  ==========================
+``op``        ``num_ops`` \* 64
+Total size    80 + 8 \* ``num_ops`` bytes
+============  ===========================
 
 * ``vdef_ops``
   Similar to ``def_ops`` but for ``VDEF`` operators. There is

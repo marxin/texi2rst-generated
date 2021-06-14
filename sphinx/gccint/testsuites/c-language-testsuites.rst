@@ -90,23 +90,23 @@ gcc.misc-tests
   of these tests have individual expect files, and others share
   special-purpose expect files:
 
-  bprob*.c
+  bprob\*.c
     Test :option:`-fbranch-probabilities` using
     gcc.misc-tests/bprob.exp, which
     in turn uses the generic, language-independent framework
     (see :ref:`Support for testing profile-directed
     optimizations <profopt-testing>`).
 
-  gcov*.c
+  gcov\*.c
     Test :command:`gcov` output using gcov.exp, which in turn uses the
     language-independent support (see :ref:`Support for testing gcov <gcov-testing>`).
 
-  i386-pf-*.c
+  i386-pf-\*.c
     Test i386-specific support for data prefetch using i386-prefetch.exp.
 
 gcc.test-framework
 
-  dg-*.c
+  dg-\*.c
     Test the testsuite itself using gcc.test-framework/test-framework.exp.
 
     FIXME: merge in testsuite/README.gcc and discuss the format of

@@ -1182,7 +1182,7 @@ x86_64-\*-\*, amd64-\*-\*
 =========================
 
 GCC supports the x86-64 architecture implemented by the AMD64 processor
-(amd64-*-* is an alias for x86_64-*-*) on GNU/Linux, FreeBSD and NetBSD.
+(amd64-\*-\* is an alias for x86_64-\*-\*) on GNU/Linux, FreeBSD and NetBSD.
 On GNU/Linux the default is a bi-arch compiler which is able to generate
 both 64-bit x86-64 and 32-bit x86 code (via the :option:`-m32` switch).
 
@@ -1224,7 +1224,7 @@ shared objects and the GNU C library (glibc).  It also generates
 position-independent code (PIC) regardless of whether the
 :option:`-fpic` or :option:`-fPIC` options are used.  In other
 respects, this target is the same as the
-#xtensa*-*-elf:samp:`xtensa*-*-elf` target.
+#xtensa\*-\*-elf:samp:`xtensa*-*-elf` target.
 
 Microsoft Windows
 =================
@@ -1246,10 +1246,10 @@ XP, and Windows Vista, are supported by several different target
 platforms.  These targets differ in which Windows subsystem they target
 and which C libraries are used.
 
-* Cygwin #x-x-cygwin*-*-cygwin: Cygwin provides a user-space
+* Cygwin #x-x-cygwin\*-\*-cygwin: Cygwin provides a user-space
   Linux API emulation layer in the Win32 subsystem.
 
-* MinGW #x-x-mingw32*-*-mingw32: MinGW is a native GCC port for
+* MinGW #x-x-mingw32\*-\*-mingw32: MinGW is a native GCC port for
   the Win32 subsystem that provides a subset of POSIX.
 
 * MKS i386-pc-mks: NuTCracker from MKS.  See
@@ -1278,7 +1278,7 @@ GCC no longer supports Windows NT on the Alpha or PowerPC.
 GCC no longer supports the Windows POSIX subsystem.  However, it does
 support the Interix subsystem.  See above.
 
-Old target names including *-*-winnt and *-*-windowsnt are no longer used.
+Old target names including \*-\*-winnt and \*-\*-windowsnt are no longer used.
 
 PW32 (i386-pc-pw32) support was never completed, and the project seems to
 be inactive.  See http://pw32.sourceforge.net/ for more information.

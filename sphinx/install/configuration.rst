@@ -583,7 +583,7 @@ corresponding :option:`--without` option.
 
   Specify what multilibs to build.  :samp:`{list}` is a comma separated list of
   values, possibly consisting of a single value.  Currently only implemented
-  for aarch64*-*-*, arm*-*-*, riscv*-*-*, sh*-*-* and x86-64-*-linux*.  The
+  for aarch64\*-\*-\*, arm\*-\*-\*, riscv\*-\*-\*, sh\*-\*-\* and x86-64-\*-linux\*.  The
   accepted values and meaning for each target is given below.
 
   ``aarch64*-*-*``
@@ -614,7 +614,7 @@ corresponding :option:`--without` option.
     user-chosen multilib lists to be configured.  Whether multiple such
     files can be used together depends on the contents of the supplied
     files.  See gcc/config/arm/t-multilib and its supplementary
-    gcc/config/arm/t-*profile files for an example of what such
+    gcc/config/arm/t-\*profile files for an example of what such
     Makefile fragments might look like for this version of GCC.  The macros
     expected to be defined in these fragments are not stable across GCC
     releases, so make sure they define the ``MULTILIB`` -related macros
@@ -709,7 +709,7 @@ corresponding :option:`--without` option.
 
   Specify what multilibs to build.  :samp:`{config}` is a semicolon separated list of
   values, possibly consisting of a single value.  Currently only implemented
-  for riscv*-*-elf*.  The accepted values and meanings are given below.
+  for riscv\*-\*-elf\*.  The accepted values and meanings are given below.
 
   Every config is constructed with four components: architecture string, ABI,
   reuse rule with architecture string and reuse rule with sub-extension.
@@ -743,7 +743,7 @@ corresponding :option:`--without` option.
 .. option:: --with-endian=endians
 
   Specify what endians to use.
-  Currently only implemented for sh*-*-*.
+  Currently only implemented for sh\*-\*-\*.
 
   :samp:`{endians}` may be one of the following:
 

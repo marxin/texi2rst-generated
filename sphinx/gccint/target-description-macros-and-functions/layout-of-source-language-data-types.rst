@@ -315,7 +315,7 @@ languages, rather than to fundamental aspects of storage layout.
   By default, the vtable entries are void pointers, the so the alignment
   is the same as pointer alignment.  The value of this macro specifies
   the alignment of the vtable entry in bits.  It should be defined only
-  when special alignment is necessary. */
+  when special alignment is necessary. \*/
 
 .. c:macro:: TARGET_VTABLE_DATA_ENTRY_DISTANCE
 

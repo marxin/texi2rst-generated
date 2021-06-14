@@ -53,7 +53,7 @@ longer supported.
 
 .. index:: init_machine_status
 
-Variable void (*)(struct function *) init_machine_statusIf this function pointer is non- ``NULL`` it will be called once per
+Variable void (\*)(struct function \*) init_machine_statusIf this function pointer is non- ``NULL`` it will be called once per
 function, before function compilation starts, in order to allow the
 target to perform any target specific initialization of the
 ``struct function`` structure.  It is intended that this would be

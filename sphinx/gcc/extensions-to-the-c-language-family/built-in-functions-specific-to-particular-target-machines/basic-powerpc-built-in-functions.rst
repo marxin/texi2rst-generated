@@ -689,14 +689,14 @@ unsigned long long int__builtin_pextd (unsigned long long int, unsigned long lon
 
 .. index:: __builtin_pextd
 
-vector signed __int128 vsx_xl_sext (signed long long, signed char *);vector signed __int128 vsx_xl_sext (signed long long, signed short *);vector signed __int128 vsx_xl_sext (signed long long, signed int *);vector signed __int128 vsx_xl_sext (signed long long, signed long long *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned char *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned short *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned int *);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned long long *);Load (and sign extend) to an __int128 vector, as if implemented by the ISA 3.1
+vector signed __int128 vsx_xl_sext (signed long long, signed char \*);vector signed __int128 vsx_xl_sext (signed long long, signed short \*);vector signed __int128 vsx_xl_sext (signed long long, signed int \*);vector signed __int128 vsx_xl_sext (signed long long, signed long long \*);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned char \*);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned short \*);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned int \*);vector unsigned __int128 vsx_xl_zext (signed long long, unsigned long long \*);Load (and sign extend) to an __int128 vector, as if implemented by the ISA 3.1
 ``lxvrbx`` ``lxvrhx`` ``lxvrwx`` ``lxvrdx`` instructions.
 
 .. index:: vsx_xl_sext
 
 .. index:: vsx_xl_zext
 
-void vec_xst_trunc (vector signed __int128, signed long long, signed char *);void vec_xst_trunc (vector signed __int128, signed long long, signed short *);void vec_xst_trunc (vector signed __int128, signed long long, signed int *);void vec_xst_trunc (vector signed __int128, signed long long, signed long long *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned char *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned short *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned int *);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned long long *);Truncate and store the rightmost element of a vector, as if implemented by the
+void vec_xst_trunc (vector signed __int128, signed long long, signed char \*);void vec_xst_trunc (vector signed __int128, signed long long, signed short \*);void vec_xst_trunc (vector signed __int128, signed long long, signed int \*);void vec_xst_trunc (vector signed __int128, signed long long, signed long long \*);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned char \*);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned short \*);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned int \*);void vec_xst_trunc (vector unsigned __int128, signed long long, unsigned long long \*);Truncate and store the rightmost element of a vector, as if implemented by the
 ISA 3.1 ``stxvrbx`` ``stxvrhx`` ``stxvrwx`` ``stxvrdx`` instructions.
 
 .. index:: vec_xst_trunc
