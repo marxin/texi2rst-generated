@@ -21,7 +21,7 @@ with their own installation instructions.  This document supersedes all
 package-specific installation instructions.
 
 *Before* starting the build/install procedure please check the
-Specifichost/target specific installation notes.
+:ref:`specific`.
 We recommend you browse the entire generic installation instructions before
 you proceed.
 

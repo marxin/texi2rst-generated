@@ -50,8 +50,7 @@ C standard library and headers
   :option:`--disable-multilib`.  Otherwise, you may encounter an error such as
   :samp:`fatal error: gnu/stubs-32.h: No such file`
 
-.. envvar:: GNAT
-
+GNAT
   .. _gnat-prerequisite:
 
   In order to build GNAT, the Ada compiler, you need a working GNAT
@@ -135,14 +134,14 @@ Perl version between 5.6.1 and 5.6.24
 
   Used by :command:`automake`.
 
-  Several support libraries are necessary to build GCC, some are required,
-  others optional.  While any sufficiently new version of required tools
-  usually work, library requirements are generally stricter.  Newer
-  versions may work in some cases, but it's safer to use the exact
-  versions documented.  We appreciate bug reports about problems with
-  newer versions, though.  If your OS vendor provides packages for the
-  support libraries then using those packages may be the simplest way to
-  install the libraries.
+Several support libraries are necessary to build GCC, some are required,
+others optional.  While any sufficiently new version of required tools
+usually work, library requirements are generally stricter.  Newer
+versions may work in some cases, but it's safer to use the exact
+versions documented.  We appreciate bug reports about problems with
+newer versions, though.  If your OS vendor provides packages for the
+support libraries then using those packages may be the simplest way to
+install the libraries.
 
 GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
   Necessary to build GCC.  If a GMP source distribution is found in a
@@ -193,7 +192,7 @@ zstd Library.
 Tools/packages necessary for modifying GCC
 ==========================================
 
-autoconf version 2.69 GNU m4 version 1.4.6 (or later)
+autoconf version 2.69, GNU m4 version 1.4.6 (or later)
   Necessary when modifying configure.ac, aclocal.m4, etc.
   to regenerate configure and config.in files.
 
@@ -219,14 +218,13 @@ gperf version 2.7.2 (or later)
   gcc/cp/cfns.gperf to regenerate its associated header file, e.g.
   gcc/cp/cfns.h.
 
-DejaGnu 1.4.4 Expect Tcl
+DejaGnu 1.4.4, Expect, Tcl
+  Necessary to run the GCC testsuite; see the section on testing for
+  details.
 
   .. Once Tcl 8.5 or higher is required, remove any obsolete
      compatibility workarounds:
          git grep 'compatibility with earlier Tcl releases'
-
-  Necessary to run the GCC testsuite; see the section on testing for
-  details.
 
 autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
   Necessary to regenerate fixinc/fixincl.x from
