@@ -230,8 +230,10 @@ program analysis purposes.
   The first one is useful for single-threaded applications,
   while the second one prevents profile corruption by emitting thread-safe code.
 
-  **Warning:** When an application does not properly join all threads
-  (or creates an detached thread), a profile file can be still corrupted.
+  .. warning::
+
+    When an application does not properly join all threads
+    (or creates an detached thread), a profile file can be still corrupted.
 
   Using :samp:`prefer-atomic` would be transformed either to :samp:`atomic`,
   when supported by a target, or to :samp:`single` otherwise.  The GCC driver
