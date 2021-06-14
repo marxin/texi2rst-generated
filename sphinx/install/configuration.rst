@@ -57,7 +57,7 @@ Note that the bootstrap compiler and the resulting GCC must be link
 compatible, else the bootstrap will fail with linker errors about
 incompatible object file formats.  Several multilibed targets are
 affected by this requirement, see
-@ref{Specific, host/target specific installation notes}.
+Specific, host/target specific installation notes.
 To configure GCC:
 
 .. code-block:: bash
