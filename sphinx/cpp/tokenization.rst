@@ -61,7 +61,7 @@ In the 1999 C standard, identifiers may contain letters which are not
 part of the 'basic source character set', at the implementation's
 discretion (such as accented Latin letters, Greek letters, or Chinese
 ideograms).  This may be done with an extended character set, or the
-:samp:`\u` and :samp:`\U` escape sequences.
+:samp:`\\u` and :samp:`\\U` escape sequences.
 
 As an extension, GCC treats :samp:`$` as a letter.  This is for
 compatibility with some systems, such as VMS, where :samp:`$` is commonly

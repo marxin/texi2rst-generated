@@ -654,7 +654,7 @@
   or similar construct can use a backslash to ignore the special meaning
   of the character following it, thus allowing literal matching of a
   character that is otherwise specially treated.  For example,
-  :samp:`%{std=iso9899\:1999:X}` substitutes ``X`` if the
+  :samp:`%{std=iso9899\\:1999:X}` substitutes ``X`` if the
   :option:`-std`:samp:`=iso9899:1999` option is given.
 
   The conditional text ``X`` in a :samp:`%{S:X}` or similar

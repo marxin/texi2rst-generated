@@ -354,8 +354,8 @@ Function, Variable, and Macro Listing.
   as anything other than the first character of the set.  To include a
   dash in the set, list it last in the set.  A backslash character makes
   the following character not special, so for example you could match
-  against a literal asterisk with :samp:`\*`.  To match a literal
-  backslash, use :samp:`\\`.
+  against a literal asterisk with :samp:`\\*`.  To match a literal
+  backslash, use :samp:`\\\\`.
 
   ``flags`` controls various aspects of the matching process, and is a
   boolean OR of zero or more of the following values (defined in

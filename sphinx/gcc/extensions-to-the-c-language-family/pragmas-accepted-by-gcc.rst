@@ -519,7 +519,7 @@ compilation.
 
   Prints :samp:`{string}` as a compiler message on compilation.  The message
   is informational only, and is neither a compilation warning nor an
-  error.  Newlines can be included in the string by using the :samp:`\n`
+  error.  Newlines can be included in the string by using the :samp:`\\n`
   escape sequence.
 
   .. code-block:: c++
@@ -546,7 +546,7 @@ compilation.
   Generates an error message.  This pragma *is* considered to
   indicate an error in the compilation, and it will be treated as such.
 
-  Newlines can be included in the string by using the :samp:`\n`
+  Newlines can be included in the string by using the :samp:`\\n`
   escape sequence.  They will be displayed as newlines even if the
   :option:`-fmessage-length` option is set to zero.
 

@@ -85,7 +85,7 @@
   object file name consists of the name of the source file with any
   suffix replaced with object file suffix and with any leading directory
   parts removed.  If there are many included files then the rule is
-  split into several lines using :samp:`\`-newline.  The rule has no
+  split into several lines using :samp:`\\`-newline.  The rule has no
   commands.
 
   This option does not suppress the preprocessor's debug output, such as
@@ -411,7 +411,7 @@
   Support ISO C trigraphs.
   These are three-character sequences, all starting with :samp:`??`, that
   are defined by ISO C to stand for single characters.  For example,
-  :samp:`??/` stands for :samp:`\`, so :samp:`'??/n'` is a character
+  :samp:`??/` stands for :samp:`\\`, so :samp:`'??/n'` is a character
   constant for a newline.
   See :ref:`initial-processing`.
 

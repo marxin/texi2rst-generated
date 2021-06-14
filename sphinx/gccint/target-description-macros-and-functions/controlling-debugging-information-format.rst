@@ -157,7 +157,7 @@ These are specific options for DBX output.
 
 .. c:macro:: DBX_CONTIN_CHAR
 
-  Normally continuation is indicated by adding a :samp:`\` character to
+  Normally continuation is indicated by adding a :samp:`\\` character to
   the end of a ``.stabs`` string when a continuation follows.  To use
   a different character instead, define this macro as a character
   constant for the character you want to use.  Do not define this macro

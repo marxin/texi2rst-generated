@@ -55,7 +55,7 @@ surrounding embedded string constants, and all backslashes within string and
 character constants, in order to get a valid C string constant with the
 proper contents.  Thus, stringizing ``p = "foo\n";`` results in
 "p = \"foo\\n\";".  However, backslashes that are not inside string
-or character constants are not duplicated: :samp:`\n` by itself
+or character constants are not duplicated: :samp:`\\n` by itself
 stringizes to "\n".
 
 All leading and trailing whitespace in text being stringized is

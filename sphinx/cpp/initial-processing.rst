@@ -50,7 +50,7 @@ standard.
   These are nine three-character sequences, all starting with :samp:`??`,
   that are defined by ISO C to stand for single characters.  They permit
   obsolete systems that lack some of C's punctuation to use C.  For
-  example, :samp:`??/` stands for :samp:`\`, so '??/n' is a character
+  example, :samp:`??/` stands for :samp:`\\`, so '??/n' is a character
   constant for a newline.
 
   Trigraphs are not popular and many compilers implement them
@@ -80,7 +80,7 @@ standard.
 
   Continued lines are merged into one long line.
 
-  A continued line is a line which ends with a backslash, :samp:`\`.  The
+  A continued line is a line which ends with a backslash, :samp:`\\`.  The
   backslash is removed and the following line is joined with the current
   one.  No space is inserted, so you may split a line anywhere, even in
   the middle of a word.  (It is generally more readable to split lines

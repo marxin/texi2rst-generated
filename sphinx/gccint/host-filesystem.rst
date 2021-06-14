@@ -23,7 +23,7 @@ following macros in xm- :samp:`{machine}`.h.
   file system obeys the semantics defined by MS-DOS instead of Unix.
   DOS file systems are case insensitive, file specifications may begin
   with a drive letter, and both forward slash and backslash (:samp:`/`
-  and :samp:`\`) are directory separators.
+  and :samp:`\\`) are directory separators.
 
 .. envvar:: DIR_SEPARATOR
 

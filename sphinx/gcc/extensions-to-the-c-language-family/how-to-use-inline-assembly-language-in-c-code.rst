@@ -81,7 +81,7 @@ Parameters
   You may place multiple assembler instructions together in a single ``asm`` 
   string, separated by the characters normally used in assembly code for the 
   system. A combination that works in most places is a newline to break the 
-  line, plus a tab character (written as :samp:`\n\t`).
+  line, plus a tab character (written as :samp:`\\n\\t`).
   Some assemblers allow semicolons as a line separator. However, 
   note that some assembler dialects use semicolons to start a comment. 
 
@@ -438,7 +438,7 @@ You may place multiple assembler instructions together in a single ``asm``
 string, separated by the characters normally used in assembly code for the 
 system. A combination that works in most places is a newline to break the 
 line, plus a tab character to move to the instruction field (written as 
-:samp:`\n\t`). 
+:samp:`\\n\\t`). 
 Some assemblers allow semicolons as a line separator. However, note 
 that some assembler dialects use semicolons to start a comment. 
 

@@ -544,7 +544,7 @@ This is about outputting labels.
 
   A C string containing the appropriate assembler directive to specify the
   size of a symbol, without any arguments.  On systems that use ELF, the
-  default (in config/elfos.h) is :samp:`"\t.size\t"`; on other
+  default (in config/elfos.h) is :samp:`"\\t.size\\t"`; on other
   systems, the default is not to define this macro.
 
   Define this macro only if it is correct to use the default definitions
@@ -593,7 +593,7 @@ This is about outputting labels.
 
   A C string containing the appropriate assembler directive to specify the
   type of a symbol, without any arguments.  On systems that use ELF, the
-  default (in config/elfos.h) is :samp:`"\t.type\t"`; on other
+  default (in config/elfos.h) is :samp:`"\\t.type\\t"`; on other
   systems, the default is not to define this macro.
 
   Define this macro only if it is correct to use the default definition of

@@ -243,7 +243,7 @@ program analysis purposes.
   Instrument only functions from files whose name matches
   any of the regular expressions (separated by semi-colons).
 
-  For example, :option:`-fprofile-filter-files`:samp:`=main\.c;module.*\.c` will instrument
+  For example, :option:`-fprofile-filter-files`:samp:`=main\\.c;module.*\\.c` will instrument
   only main.c and all C files starting with 'module'.
 
 .. option:: -fprofile-exclude-files=regex
@@ -892,8 +892,8 @@ program analysis purposes.
   contain /bits/stl or include/sys.
 
   If, for some reason, you want to include letter :samp:`,` in one of
-  :samp:`{sym}`, write :samp:`\,`. For example,
-  :option:`-finstrument-functions-exclude-file-list`:samp:`='\,\,tmp'`
+  :samp:`{sym}`, write :samp:`\\,`. For example,
+  :option:`-finstrument-functions-exclude-file-list`:samp:`='\\,\\,tmp'`
   (note the single quote surrounding the option).
 
 .. option:: -finstrument-functions-exclude-function-list=sym,sym,...
