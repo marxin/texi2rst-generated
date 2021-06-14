@@ -691,6 +691,7 @@ corresponding :option:`--without` option.
     endians, with little endian being the default:
 
     :option:`--with-cpu`:samp:`=sh4a` :option:`--with-endian`:samp:`=little,big` :option:`--with-multilib-list` =
+
     Example 2: to configure a compiler for both SH4A and SH4AL-DSP, but with
     only little endian SH4AL:
 
@@ -850,8 +851,8 @@ corresponding :option:`--without` option.
 
 .. option:: --with-schedule=cpu
 
-  These configure options provide default values for the :option:`-mschedule` =,
-  :option:`-march` =, :option:`-mtune` =, :option:`-mabi` =, and :option:`-mfpu` =
+  These configure options provide default values for the :option:`-mschedule`:samp:`=`,
+  :option:`-march`:samp:`=`, :option:`-mtune`:samp:`=`, :option:`-mabi`:samp:`=`, and :option:`-mfpu`:samp:`=`
   options and for :option:`-mhard-float` or :option:`-msoft-float`.  As with
   :option:`--with-cpu`, which switches will be accepted and acceptable values
   of the arguments depend on the target.
@@ -1148,69 +1149,43 @@ corresponding :option:`--without` option.
     * using the :samp:`libNAME.a` filename scheme
 
     * with the ``Shared Object`` file as archive member named
-        :samp:`libNAME.so.V` (except for :samp:`libgcc_s`, where the ``Shared
-        Object`` file is named :samp:`shr.o` for backwards compatibility), which
+      :samp:`libNAME.so.V` (except for :samp:`libgcc_s`, where the ``Shared
+      Object`` file is named :samp:`shr.o` for backwards compatibility), which
 
       * is used for runtime loading from inside the :samp:`libNAME.a` file
-
-      * is used for dynamic loading via
-           ``dlopen("libNAME.a(libNAME.so.V)", RTLD_MEMBER)``
-
+      * is used for dynamic loading via ``dlopen("libNAME.a(libNAME.so.V)", RTLD_MEMBER)``
       * is used for shared linking
-
       * is used for static linking, so no separate ``Static Archive Library`` file is needed
 
   ``--with-aix-soname=both``
   .. option:: --with-aix-soname=svr4
 
     A (second) ``Shared Archive Library`` file is created:
-
     * using the :samp:`libNAME.so.V` filename scheme
-
-    * with the ``Shared Object`` file as archive member named
-       :samp:`shr.o`, which
-
+    * with the ``Shared Object`` file as archive member named :samp:`shr.o`, which
       * is created with the ``-G linker flag``
-
       * has the ``F_LOADONLY`` flag set
-
       * is used for runtime loading from inside the :samp:`libNAME.so.V` file
-
       * is used for dynamic loading via ``dlopen("libNAME.so.V(shr.o)", RTLD_MEMBER)``
 
     * with the ``Import File`` as archive member named :samp:`shr.imp`, which
-
-      * refers to :samp:`libNAME.so.V(shr.o)` as the "SONAME", to be recorded
-           in the ``Loader Section`` of subsequent binaries
-
+      * refers to :samp:`libNAME.so.V(shr.o)` as the "SONAME", to be recorded in the ``Loader Section`` of subsequent binaries
       * indicates whether :samp:`libNAME.so.V(shr.o)` is 32 or 64 bit
-
-      * lists all the public symbols exported by :samp:`lib.so.V(shr.o)`,
-           eventually decorated with the ``weak Keyword``
-
+      * lists all the public symbols exported by :samp:`lib.so.V(shr.o)`, eventually decorated with the ``weak Keyword``
       * is necessary for shared linking against :samp:`lib.so.V(shr.o)`
 
     A symbolic link using the :samp:`libNAME.so` filename scheme is created:
-
     * pointing to the :samp:`libNAME.so.V` ``Shared Archive Library`` file
-
-    * to permit the ``ld Command`` to find :samp:`lib.so.V(shr.imp)` via
-        the :samp:`-lNAME` argument (requires ``Runtime Linking`` to be enabled)
-
-    * to permit dynamic loading of :samp:`lib.so.V(shr.o)` without the need
-        to specify the version number via ``dlopen("libNAME.so(shr.o)",
-        RTLD_MEMBER)``
+    * to permit the ``ld Command`` to find :samp:`lib.so.V(shr.imp)` via the :samp:`-lNAME` argument (requires ``Runtime Linking`` to be enabled)
+    * to permit dynamic loading of :samp:`lib.so.V(shr.o)` without the need to specify the version number via ``dlopen("libNAME.so(shr.o)", RTLD_MEMBER)``
 
   As long as static library creation is enabled, upon:
 
   .. option:: --with-aix-soname=svr4
 
     A ``Static Archive Library`` is created:
-
     * using the :samp:`libNAME.a` filename scheme
-
     * with all the ``Static Object`` files as archive members, which
-
       * are used for static linking
 
   While the aix-soname= :samp:`svr4` option does not create ``Shared Object``
@@ -1221,11 +1196,12 @@ corresponding :option:`--without` option.
   file into the newly installed ``Archive Library`` file with the same
   filename.
 
-  *WARNING:* Creating ``Shared Object`` files with ``Runtime Linking``
-  enabled may bloat the TOC, eventually leading to ``TOC overflow`` errors,
-  requiring the use of either the :option:`-Wl,-bbigtoc` linker flag (seen to
-  break with the ``GDB`` debugger) or some of the TOC-related compiler flags,
-  see 'RS/6000 and PowerPC Options' in the main manual.
+  .. warning::
+    Creating ``Shared Object`` files with ``Runtime Linking``
+    enabled may bloat the TOC, eventually leading to ``TOC overflow`` errors,
+    requiring the use of either the :option:`-Wl,-bbigtoc` linker flag (seen to
+    break with the ``GDB`` debugger) or some of the TOC-related compiler flags,
+    see 'RS/6000 and PowerPC Options' in the main manual.
 
   :option:`--with-aix-soname` is currently supported by :samp:`libgcc_s` only, so
   this option is still experimental and not for normal use yet.
@@ -1372,7 +1348,7 @@ corresponding :option:`--without` option.
   The :option:`--enable-win32-registry` option enables Microsoft Windows-hosted GCC
   to look up installations paths in the registry using the following key:
 
-  .. code-block:: bash
+  .. code-block::
 
     HKEY_LOCAL_MACHINE\SOFTWARE\Free Software Foundation\key
 
@@ -1981,23 +1957,14 @@ system or work around a bug in a test.  The toplevel :command:`configure`
 script provides three variables for this:
 
 ``build_configargs``
-
-  .. index:: build_configargs
-
   The contents of this variable is passed to all build :command:`configure`
   scripts.
 
 ``host_configargs``
-
-  .. index:: host_configargs
-
   The contents of this variable is passed to all host :command:`configure`
   scripts.
 
 ``target_configargs``
-
-  .. index:: target_configargs
-
   The contents of this variable is passed to all target :command:`configure`
   scripts.
 
