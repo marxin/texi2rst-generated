@@ -65,18 +65,6 @@ replacement. (Namely, allocatable or pointers of the type
    Compiler Options
    -
 
-Synopsis
-^^^^^^^^
-
-gfortran [ :option:`-c` | :option:`-S` | :option:`-E` ]
-         [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
-         [ :option:`-W`:samp:`{warn}`...] [ :option:`-pedantic` ]
-         [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-         [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
-         [ :option:`-f`:samp:`{option}`...]
-         [ :option:`-m`:samp:`{machine-option}`...]
-         [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
-
 Only the most useful options are listed here; see below for the
 remainder.
 
