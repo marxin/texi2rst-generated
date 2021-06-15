@@ -8,11 +8,6 @@
 MIPS SIMD Architecture (MSA) Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. toctree::
-  :maxdepth: 2
-
-  mips-simd-architecture-built-in-functions
-
 GCC provides intrinsics to access the SIMD instructions provided by the
 MSA MIPS SIMD Architecture.  The interface is made available by including
 ``<msa.h>`` and using :option:`-mmsa -mhard-float -mfp64 -mnan`:samp:`=2008`.
