@@ -374,7 +374,7 @@ honor these options.
   Print fix-it hints to stderr in unified diff format, after any diagnostics
   are printed.  For example:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     --- test.c
     +++ test.c

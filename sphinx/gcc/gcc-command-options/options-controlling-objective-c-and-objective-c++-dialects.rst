@@ -23,7 +23,7 @@ for Objective-C and Objective-C++ programs.  You can also use most of
 the language-independent GNU compiler options.
 For example, you might compile a file :samp:`some_class.m` like this:
 
-.. code-block:: bash
+.. code-block:: shell-session
 
   gcc -g -fgnu-runtime -O -c some_class.m
 

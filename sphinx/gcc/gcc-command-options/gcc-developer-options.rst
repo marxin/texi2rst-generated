@@ -645,20 +645,20 @@ The files are created in the directory of the output file.
   In the following example, the optimization info is output to
   :samp:`stderr`:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -O3 -fopt-info
 
   This example:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -O3 -fopt-info-missed=missed.all
 
   outputs missed optimization report from all the passes into
   :samp:`missed.all`, and this one:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -O2 -ftree-vectorize -fopt-info-vec-missed
 
@@ -670,7 +670,7 @@ The files are created in the directory of the output file.
 
   As another example,
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -O3 -fopt-info-inline-optimized-missed=inline.txt
 
@@ -680,7 +680,7 @@ The files are created in the directory of the output file.
 
   Finally, consider:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -fopt-info-vec-missed=vec.miss -fopt-info-loop-optimized=loop.opt
 
@@ -1099,7 +1099,7 @@ The files are created in the directory of the output file.
   This is useful when you use :option:`-nostdlib` or :option:`-nodefaultlibs`
   but you do want to link with :samp:`libgcc.a`.  You can do:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -nostdlib files... `gcc -print-libgcc-file-name`
 
