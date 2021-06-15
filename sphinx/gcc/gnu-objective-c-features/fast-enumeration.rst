@@ -157,9 +157,12 @@ Fast Enumeration Protocol
 If you want your own collection object to be usable with fast
 enumeration, you need to have it implement the method
 
-- (unsigned long) countByEnumeratingWithState: (NSFastEnumerationState \*)state
-                                      objects: (id \*)objects
-                                        count: (unsigned long)len;
+.. code-block::
+
+  - (unsigned long) countByEnumeratingWithState: (NSFastEnumerationState \*)state
+                                        objects: (id \*)objects
+                                          count: (unsigned long)len;
+
 where ``NSFastEnumerationState`` must be defined in your code as follows:
 
 .. code-block:: objective-c
