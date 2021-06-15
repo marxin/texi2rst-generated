@@ -540,6 +540,8 @@ with one of the following values:
 
 .. function:: void insque (struct qelem *elem,   struct qelem *pred)
 
+.. function:: void remque (struct qelem *elem)
+
   Routines to manipulate queues built from doubly linked lists.  The
   ``insque`` routine inserts :samp:`{elem}` in the queue immediately
   after :samp:`{pred}`.  The ``remque`` routine removes :samp:`{elem}` from
@@ -1105,6 +1107,12 @@ sets of characters:
 
 .. function:: long int random (void)
 
+.. function:: void srandom (unsigned int seed)
+
+.. function:: void* initstate (unsigned int seed,   void *arg_state, unsigned long n)
+
+.. function:: void* setstate (void *arg_state)
+
   Random number functions.  ``random`` returns a random number in the
   range 0 to ``LONG_MAX``.  ``srandom`` initializes the random
   number generator to some starting point determined by :samp:`{seed}`
@@ -1143,6 +1151,8 @@ sets of characters:
 .. setenv.c:22
 
 .. function:: int setenv (const char *name,   const char *value, int overwrite)
+
+.. function:: void unsetenv (const char *name)
 
   ``setenv`` adds :samp:`{name}` to the environment with value
   :samp:`{value}`.  If the name was already present in the environment,
@@ -1579,6 +1589,8 @@ sets of characters:
 
 .. function:: long int strtol (const char *string,   char **endptr, int base)
 
+.. function:: unsigned long int strtoul (const char *string,   char **endptr, int base)
+
   The ``strtol`` function converts the string in :samp:`{string}` to a
   long integer value according to the given :samp:`{base}`, which must be
   between 2 and 36 inclusive, or be the special value 0.  If :samp:`{base}`
@@ -1592,6 +1604,8 @@ sets of characters:
 .. strtoll.c:33
 
 .. function:: long long int strtoll (const char *string,   char **endptr, int base)
+
+.. function:: unsigned long long int strtoul (  const char *string, char **endptr, int base)
 
   The ``strtoll`` function converts the string in :samp:`{string}` to a
   long long integer value according to the given :samp:`{base}`, which must be
@@ -1721,6 +1735,10 @@ sets of characters:
 .. vprintf.c:3
 
 .. function:: int vprintf (const char *format, va_list ap)
+
+.. function:: int vfprintf (FILE *stream,   const char *format, va_list ap)
+
+.. function:: int vsprintf (char *str,   const char *format, va_list ap)
 
   These functions are the same as ``printf``, ``fprintf``, and
   ``sprintf``, respectively, except that they are called with a
