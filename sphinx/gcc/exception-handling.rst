@@ -14,5 +14,3 @@ Exception Handling
 
   The stack is not unwound before std::terminate is called.
 
-c Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
