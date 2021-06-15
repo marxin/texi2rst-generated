@@ -501,7 +501,7 @@ in the following sections.
   :option:`-fno-jump-tables` :option:`-fno-bit-tests` 
   :option:`-frecord-gcc-switches` 
   :option:`-freg-struct-return`  :option:`-fshort-enums`  :option:`-fshort-wchar` 
-  :option:`-fverbose-asm`  :option:`-fpack-struct[`:samp:`={n}` ]  
+  :option:`-fverbose-asm`  :option:`-fpack-struct`:samp:`[={n}]`
   :option:`-fleading-underscore`  :option:`-ftls-model`:samp:`={model}` 
   :option:`-fstack-reuse`:samp:`={reuse_level}` 
   :option:`-ftrampolines`  :option:`-ftrapv`  :option:`-fwrapv` 
@@ -535,7 +535,7 @@ in the following sections.
   :option:`-fdump-tree-`:samp:`{switch}` 
   :option:`-fdump-tree-`:samp:`{switch}-{options}` 
   :option:`-fdump-tree-`:samp:`{switch}-{options}={filename}` 
-  :option:`-fcompare-debug` [= :samp:`{opts}` ]  :option:`-fcompare-debug-second` 
+  :option:`-fcompare-debug`:samp:`[={opts}]`  :option:`-fcompare-debug-second` 
   :option:`-fenable-`:samp:`{kind}-{pass}` 
   :option:`-fenable-`:samp:`{kind}-{pass}={range-list}` 
   :option:`-fira-verbose`:samp:`={n}` 
@@ -1133,14 +1133,14 @@ in the following sections.
   *RX Options*
 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu`
-  :option:`-mcpu` =
+  :option:`-mcpu`
   :option:`-mbig-endian-data`  :option:`-mlittle-endian-data` 
   :option:`-msmall-data` 
   :option:`-msim`  :option:`-mno-sim`
   :option:`-mas100-syntax`  :option:`-mno-as100-syntax`
   :option:`-mrelax`
-  :option:`-mmax-constant-size` =
-  :option:`-mint-register` =
+  :option:`-mmax-constant-size`
+  :option:`-mint-register`
   :option:`-mpid`
   :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns`
   :option:`-mjsr`
