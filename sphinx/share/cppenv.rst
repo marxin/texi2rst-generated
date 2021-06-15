@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. envvar:: CPATH
+.. envvar:: CPATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, OBJC_INCLUDE_PATH
 
   .. Commented out until ObjC++ is part of GCC:
      @itemx OBJCPLUS_INCLUDE_PATH

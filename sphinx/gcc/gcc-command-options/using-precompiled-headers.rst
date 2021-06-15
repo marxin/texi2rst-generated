@@ -116,7 +116,7 @@
 
     :option:`-fmessage-length` =  :option:`-fpreprocessed`  :option:`-fsched-interblock` 
     :option:`-fsched-spec`  :option:`-fsched-spec-load`  :option:`-fsched-spec-load-dangerous` 
-    :option:`-fsched-verbose`:samp:`={number}`  :option:`-fschedule-insns`  :option:`-fvisibility` = 
+    :option:`-fsched-verbose`:samp:`={number}`  :option:`-fschedule-insns`  :option:`-fvisibility`
     :option:`-pedantic-errors`
 
   * Address space layout randomization (ASLR) can lead to not binary identical

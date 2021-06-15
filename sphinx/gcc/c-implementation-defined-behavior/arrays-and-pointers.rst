@@ -13,10 +13,7 @@ Arrays and Pointers
 
   A cast from pointer to integer discards most-significant bits if the
   pointer representation is larger than the integer type,
-  sign-extendsFuture versions of GCC may zero-extend, or use
-  a target-defined ``ptr_extend`` pattern.  Do not rely on sign extension.
-
-  if the pointer representation is smaller than the integer type, otherwise
+  sign-extends ([#f1]_) if the pointer representation is smaller than the integer type, otherwise
   the bits are unchanged.
 
   .. ??? We've always claimed that pointers were unsigned entities.
@@ -46,3 +43,4 @@ Arrays and Pointers
   The value is as specified in the standard and the type is determined
   by the ABI.
 
+.. [#f1] Future versions of GCC may zero-extend, or use a target-defined ``ptr_extend`` pattern.  Do not rely on sign extension.

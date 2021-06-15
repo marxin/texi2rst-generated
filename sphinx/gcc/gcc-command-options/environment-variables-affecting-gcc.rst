@@ -24,13 +24,7 @@ take precedence over places specified using environment variables, which
 in turn take precedence over those specified by the configuration of GCC.
 See :ref:`driver`.
 
-.. envvar:: LANG
-
-  .. @findex LC_COLLATE
-
-  .. @findex LC_MONETARY
-     @findex LC_NUMERIC
-     @findex LC_TIME
+.. envvar:: LANG, LC_COLLATE, LC_MONETARY, LC_NUMERIC, LC_TIME
 
   .. index:: locale
 
@@ -167,5 +161,3 @@ Some additional environment variables affect the behavior of the
 preprocessor.
 
 .. include:: ../../share/cppenv.rst
-
-
