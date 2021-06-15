@@ -110,11 +110,13 @@ restrictive subtype of any of its input files.
   Darwin/PowerPC and ``1`` when compiling for Darwin/x86, so this
   option has no effect on x86.
 
-  **Warning:** The :option:`-mone-byte-bool` switch causes GCC
-  to generate code that is not binary compatible with code generated
-  without that switch.  Using this switch may require recompiling all
-  other modules in a program, including system libraries.  Use this
-  switch to conform to a non-default data model.
+  .. warning::
+
+    The :option:`-mone-byte-bool` switch causes GCC
+    to generate code that is not binary compatible with code generated
+    without that switch.  Using this switch may require recompiling all
+    other modules in a program, including system libraries.  Use this
+    switch to conform to a non-default data model.
 
 .. option:: -mfix-and-continue, -ffix-and-continue, -findirect-data
 

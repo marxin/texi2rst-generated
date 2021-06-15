@@ -295,9 +295,11 @@ are given below.
   Aligning variables on 32-bit boundaries produces code that runs somewhat
   faster on processors with 32-bit busses at the expense of more memory.
 
-  **Warning:** if you use the :option:`-malign-int` switch, GCC
-  aligns structures containing the above types differently than
-  most published application binary interface specifications for the m68k.
+  .. warning::
+
+    If you use the :option:`-malign-int` switch, GCC
+    aligns structures containing the above types differently than
+    most published application binary interface specifications for the m68k.
 
   Use the pc-relative addressing mode of the 68000 directly, instead of
   using a global offset table.  At present, this option implies :option:`-fpic`,

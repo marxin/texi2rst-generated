@@ -109,11 +109,14 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 .. option:: -msoft-float
 
   Generate output containing library calls for floating point.
-  **Warning:** the requisite libraries are not available for all HPPA
-  targets.  Normally the facilities of the machine's usual C compiler are
-  used, but this cannot be done directly in cross-compilation.  You must make
-  your own arrangements to provide suitable library functions for
-  cross-compilation.
+
+  .. warning::
+
+    The requisite libraries are not available for all HPPA
+    targets.  Normally the facilities of the machine's usual C compiler are
+    used, but this cannot be done directly in cross-compilation.  You must make
+    your own arrangements to provide suitable library functions for
+    cross-compilation.
 
   :option:`-msoft-float` changes the calling convention in the output file;
   therefore, it is only useful if you compile *all* of a program with
