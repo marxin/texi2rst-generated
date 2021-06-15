@@ -524,11 +524,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Generate output containing library calls for floating point.
 
-  **Warning:** the requisite libraries are not part of GCC.
-  Normally the facilities of the machine's usual C compiler are used, but
-  this cannot be done directly in cross-compilation.  You must make your
-  own arrangements to provide suitable library functions for
-  cross-compilation.
+  .. warning::
+
+    The requisite libraries are not part of GCC.
+    Normally the facilities of the machine's usual C compiler are used, but
+    this cannot be done directly in cross-compilation.  You must make your
+    own arrangements to provide suitable library functions for
+    cross-compilation.
 
   On machines where a function returns floating-point results in the 80387
   register stack, some floating-point opcodes may be emitted even if
@@ -575,11 +577,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   On x86-64, :option:`-malign-double` is enabled by default.
 
-  **Warning:** if you use the :option:`-malign-double` switch,
-  structures containing the above types are aligned differently than
-  the published application binary interface specifications for the x86-32
-  and are not binary compatible with structures in code compiled
-  without that switch.
+  .. warning::
+
+    If you use the :option:`-malign-double` switch,
+    structures containing the above types are aligned differently than
+    the published application binary interface specifications for the x86-32
+    and are not binary compatible with structures in code compiled
+    without that switch.
 
 .. option:: -m96bit-long-double, -m128bit-long-double
 
@@ -600,12 +604,14 @@ These :samp:`-m` options are defined for the x86 family of computers.
   Notice that neither of these options enable any extra precision over the x87
   standard of 80 bits for a ``long double``.
 
-  **Warning:** if you override the default value for your target ABI, this
-  changes the size of 
-  structures and arrays containing ``long double`` variables,
-  as well as modifying the function calling convention for functions taking
-  ``long double``.  Hence they are not binary-compatible
-  with code compiled without that switch.
+  .. warning::
+
+    If you override the default value for your target ABI, this
+    changes the size of 
+    structures and arrays containing ``long double`` variables,
+    as well as modifying the function calling convention for functions taking
+    ``long double``.  Hence they are not binary-compatible
+    with code compiled without that switch.
 
 .. option:: -mlong-double-64, -mlong-double-80, -mlong-double-128
 
@@ -615,12 +621,14 @@ These :samp:`-m` options are defined for the x86 family of computers.
   of 128 bits makes the ``long double`` type equivalent to the
   ``__float128`` type. This is the default for 64-bit Bionic C library.
 
-  **Warning:** if you override the default value for your target ABI, this
-  changes the size of
-  structures and arrays containing ``long double`` variables,
-  as well as modifying the function calling convention for functions taking
-  ``long double``.  Hence they are not binary-compatible
-  with code compiled without that switch.
+  .. warning::
+
+    If you override the default value for your target ABI, this
+    changes the size of
+    structures and arrays containing ``long double`` variables,
+    as well as modifying the function calling convention for functions taking
+    ``long double``.  Hence they are not binary-compatible
+    with code compiled without that switch.
 
 .. option:: -malign-data=type
 
@@ -649,9 +657,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
   override the :option:`-mrtd` option by using the function attribute
   ``cdecl``.  See :ref:`function-attributes`.
 
-  **Warning:** this calling convention is incompatible with the one
-  normally used on Unix, so you cannot use it if you need to call
-  libraries compiled with the Unix compiler.
+  .. warning::
+
+    This calling convention is incompatible with the one
+    normally used on Unix, so you cannot use it if you need to call
+    libraries compiled with the Unix compiler.
 
   Also, you must provide function prototypes for all functions that
   take variable numbers of arguments (including ``printf`` );
@@ -670,10 +680,12 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function by using the function attribute ``regparm``.
   See :ref:`function-attributes`.
 
-  **Warning:** if you use this switch, and
-  :samp:`{num}` is nonzero, then you must build all modules with the same
-  value, including any libraries.  This includes the system libraries and
-  startup modules.
+  .. warning::
+
+    If you use this switch, and
+    :samp:`{num}` is nonzero, then you must build all modules with the same
+    value, including any libraries.  This includes the system libraries and
+    startup modules.
 
 .. option:: -msseregparm
 
@@ -682,9 +694,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function by using the function attribute ``sseregparm``.
   See :ref:`function-attributes`.
 
-  **Warning:** if you use this switch then you must build all
-  modules with the same value, including any libraries.  This includes
-  the system libraries and startup modules.
+  .. warning::
+
+    If you use this switch then you must build all
+    modules with the same value, including any libraries.  This includes
+    the system libraries and startup modules.
 
 .. option:: -mvect8-ret-in-mem
 
@@ -728,20 +742,22 @@ These :samp:`-m` options are defined for the x86 family of computers.
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128 bits).
 
-  **Warning:** When generating code for the x86-64 architecture with
-  SSE extensions disabled, :option:`-mpreferred-stack-boundary`:samp:`=3` can be
-  used to keep the stack boundary aligned to 8 byte boundary.  Since
-  x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
-  intended to be used in controlled environment where stack space is
-  important limitation.  This option leads to wrong code when functions
-  compiled with 16 byte stack alignment (such as functions from a standard
-  library) are called with misaligned stack.  In this case, SSE
-  instructions may lead to misaligned memory access traps.  In addition,
-  variable arguments are handled incorrectly for 16 byte aligned
-  objects (including x87 long double and __int128), leading to wrong
-  results.  You must build all modules with
-  :option:`-mpreferred-stack-boundary`:samp:`=3`, including any libraries.  This
-  includes the system libraries and startup modules.
+  .. warning::
+
+    When generating code for the x86-64 architecture with
+    SSE extensions disabled, :option:`-mpreferred-stack-boundary`:samp:`=3` can be
+    used to keep the stack boundary aligned to 8 byte boundary.  Since
+    x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
+    intended to be used in controlled environment where stack space is
+    important limitation.  This option leads to wrong code when functions
+    compiled with 16 byte stack alignment (such as functions from a standard
+    library) are called with misaligned stack.  In this case, SSE
+    instructions may lead to misaligned memory access traps.  In addition,
+    variable arguments are handled incorrectly for 16 byte aligned
+    objects (including x87 long double and __int128), leading to wrong
+    results.  You must build all modules with
+    :option:`-mpreferred-stack-boundary`:samp:`=3`, including any libraries.  This
+    includes the system libraries and startup modules.
 
 .. option:: -mincoming-stack-boundary=num
 
@@ -1269,8 +1285,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   If profiling is active ( :option:`-pg` ), put the profiling
   counter call before the prologue.
-  Note: On x86 architectures the attribute ``ms_hook_prologue``
-  isn't possible at the moment for :option:`-mfentry` and :option:`-pg`.
+
+  .. note::
+
+    On x86 architectures the attribute ``ms_hook_prologue``
+    isn't possible at the moment for :option:`-mfentry` and :option:`-pg`.
 
 .. option:: -mrecord-mcount, -mno-record-mcount
 
@@ -1311,11 +1330,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
   disabled, :option:`-mskip-rax-setup` can be used to skip setting up RAX
   register when there are no variable arguments passed in vector registers.
 
-  **Warning:** Since RAX register is used to avoid unnecessarily
-  saving vector registers on stack when passing variable arguments, the
-  impacts of this option are callees may waste some stack space,
-  misbehave or jump to a random location.  GCC 4.4 or newer don't have
-  those issues, regardless the RAX register value.
+  .. warning::
+
+    Since RAX register is used to avoid unnecessarily
+    saving vector registers on stack when passing variable arguments, the
+    impacts of this option are callees may waste some stack space,
+    misbehave or jump to a random location.  GCC 4.4 or newer don't have
+    those issues, regardless the RAX register value.
 
 .. option:: -m8bit-idiv, -mno-8bit-idiv
 

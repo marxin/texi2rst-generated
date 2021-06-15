@@ -18,7 +18,8 @@ These :samp:`-m` options are defined for the SH implementations:
 
   Generate code for the SH2.
 
-``-m2e``
+.. option:: -m2e
+
   Generate code for the SH2e.
 
 .. option:: -m2a-nofpu
