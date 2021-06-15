@@ -14,16 +14,18 @@ Description
 :command:`gcov-dump` is a tool you can use in conjunction with GCC to
 dump content of gcda and gcno profile files offline.
 
-Synopsis
-^^^^^^^^
+.. only:: man
 
-gcov-dump
-     [ :option:`-v` | :option:`--version` ]
-     [ :option:`-h` | :option:`--help` ]
-     [ :option:`-l` | :option:`--long` ]
-     [ :option:`-p` | :option:`--positions` ]
-     [ :option:`-r` | :option:`--raw` ]
-     [ :samp:`{gcovfiles}` ]
+  Synopsis
+  ^^^^^^^^
+
+  gcov-dump
+       [ :option:`-v` | :option:`--version` ]
+       [ :option:`-h` | :option:`--help` ]
+       [ :option:`-l` | :option:`--long` ]
+       [ :option:`-p` | :option:`--positions` ]
+       [ :option:`-r` | :option:`--raw` ]
+       [ :samp:`{gcovfiles}` ]
 
 Options
 ^^^^^^^
