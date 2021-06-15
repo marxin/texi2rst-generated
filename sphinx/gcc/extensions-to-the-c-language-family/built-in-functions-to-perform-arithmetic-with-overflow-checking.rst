@@ -13,6 +13,18 @@ together with checking whether the operations overflowed.
 
 .. function:: bool __builtin_add_overflow (type1 a, type2 b, type3 *res)
 
+.. function:: bool __builtin_sadd_overflow (int a, int b, int *res)
+
+.. function:: bool __builtin_saddl_overflow (long int a, long int b, long int *res)
+
+.. function:: bool __builtin_saddll_overflow (long long int a, long long int b, long long int *res)
+
+.. function:: bool __builtin_uadd_overflow (unsigned int a, unsigned int b, unsigned int *res)
+
+.. function:: bool __builtin_uaddl_overflow (unsigned long int a, unsigned long int b, unsigned long int *res)
+
+.. function:: bool __builtin_uaddll_overflow (unsigned long long int a, unsigned long long int b, unsigned long long int *res)
+
   These built-in functions promote the first two operands into infinite precision signed
   type and perform addition on those promoted operands.  The result is then
   cast to the type the third pointer argument points to and stored there.
@@ -31,11 +43,35 @@ together with checking whether the operations overflowed.
 
 .. function:: bool __builtin_sub_overflow (type1 a, type2 b, type3 *res)
 
+.. function:: bool __builtin_ssub_overflow (int a, int b, int *res)
+
+.. function:: bool __builtin_ssubl_overflow (long int a, long int b, long int *res)
+
+.. function:: bool __builtin_ssubll_overflow (long long int a, long long int b, long long int *res)
+
+.. function:: bool __builtin_usub_overflow (unsigned int a, unsigned int b, unsigned int *res)
+
+.. function:: bool __builtin_usubl_overflow (unsigned long int a, unsigned long int b, unsigned long int *res)
+
+.. function:: bool __builtin_usubll_overflow (unsigned long long int a, unsigned long long int b, unsigned long long int *res)
+
   These built-in functions are similar to the add overflow checking built-in
   functions above, except they perform subtraction, subtract the second argument
   from the first one, instead of addition.
 
 .. function:: bool __builtin_mul_overflow (type1 a, type2 b, type3 *res)
+
+.. function:: bool __builtin_smul_overflow (int a, int b, int *res)
+
+.. function:: bool __builtin_smull_overflow (long int a, long int b, long int *res)
+
+.. function:: bool __builtin_smulll_overflow (long long int a, long long int b, long long int *res)
+
+.. function:: bool __builtin_umul_overflow (unsigned int a, unsigned int b, unsigned int *res)
+
+.. function:: bool __builtin_umull_overflow (unsigned long int a, unsigned long int b, unsigned long int *res)
+
+.. function:: bool __builtin_umulll_overflow (unsigned long long int a, unsigned long long int b, unsigned long long int *res)
 
   These built-in functions are similar to the add overflow checking built-in
   functions above, except they perform multiplication, instead of addition.
@@ -44,6 +80,10 @@ The following built-in functions allow checking if simple arithmetic operation
 would overflow.
 
 .. function:: bool __builtin_add_overflow_p (type1 a, type2 b, type3 c)
+
+.. function:: bool __builtin_sub_overflow_p (type1 a, type2 b, type3 c)
+
+.. function:: bool __builtin_mul_overflow_p (type1 a, type2 b, type3 c)
 
   These built-in functions are similar to ``__builtin_add_overflow``,
   ``__builtin_sub_overflow``, or ``__builtin_mul_overflow``, except that
