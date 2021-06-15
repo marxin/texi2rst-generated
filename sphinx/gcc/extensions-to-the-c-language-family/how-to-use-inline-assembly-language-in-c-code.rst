@@ -120,9 +120,11 @@ assembly code when optimizing. This can lead to unexpected duplicate
 symbol errors during compilation if your assembly code defines symbols or 
 labels.
 
-**Warning:** The C standards do not specify semantics for ``asm``,
-making it a potential source of incompatibilities between compilers.  These
-incompatibilities may not produce compiler warnings/errors.
+.. warning::
+
+  The C standards do not specify semantics for ``asm``,
+  making it a potential source of incompatibilities between compilers.  These
+  incompatibilities may not produce compiler warnings/errors.
 
 GCC does not parse basic ``asm`` 's :samp:`{AssemblerInstructions}`, which
 means there is no way to communicate to the compiler what is happening
@@ -896,10 +898,13 @@ consecutive colons where the output operands would go:
      : /* No outputs. */
      : "r" (Offset / 8));
 
-**Warning:** Do *not* modify the contents of input-only operands 
-(except for inputs tied to outputs). The compiler assumes that on exit from 
-the ``asm`` statement these operands contain the same values as they 
-had before executing the statement. 
+.. warning::
+
+  Do *not* modify the contents of input-only operands 
+  (except for inputs tied to outputs). The compiler assumes that on exit from 
+  the ``asm`` statement these operands contain the same values as they 
+  had before executing the statement. 
+
 It is *not* possible to use clobbers
 to inform the compiler that the values in these inputs are changing. One 
 common work-around is to tie the changing input variable to an output variable 
@@ -1787,11 +1792,13 @@ letter that matches the register:
   register int *result asm ("r0");
   asm ("sysint" : "=r" (result) : "0" (p1), "r" (p2));
 
-*Warning:* In the above example, be aware that a register (for example 
-``r0`` ) can be call-clobbered by subsequent code, including function 
-calls and library calls for arithmetic operators on other variables (for 
-example the initialization of ``p2`` ).  In this case, use temporary 
-variables for expressions between the register assignments:
+.. warning::
+
+  In the above example, be aware that a register (for example 
+  ``r0`` ) can be call-clobbered by subsequent code, including function 
+  calls and library calls for arithmetic operators on other variables (for 
+  example the initialization of ``p2`` ).  In this case, use temporary 
+  variables for expressions between the register assignments:
 
 .. code-block:: c++
 
