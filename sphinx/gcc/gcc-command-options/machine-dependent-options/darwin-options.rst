@@ -82,7 +82,8 @@ restrictive subtype of any of its input files.
 
   Emit debugging information for all symbols and types.
 
-:samp:`-mmacosx-version-min={version}`
+.. option:: -mmacosx-version-min=version
+
   The earliest version of MacOS X that this executable will run on
   is :samp:`{version}`.  Typical values of :samp:`{version}` include ``10.1``,
   ``10.2``, and ``10.3.9``.

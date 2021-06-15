@@ -30,9 +30,11 @@ These command-line options are defined for RX targets:
   values, however, so the FPU hardware is not used for doubles if the
   :option:`-m64bit-doubles` option is used.
 
-  *Note* If the :option:`-fpu` option is enabled then
-  :option:`-funsafe-math-optimizations` is also enabled automatically.
-  This is because the RX FPU instructions are themselves unsafe.
+  .. note::
+
+    If the :option:`-fpu` option is enabled then
+    :option:`-funsafe-math-optimizations` is also enabled automatically.
+    This is because the RX FPU instructions are themselves unsafe.
 
 .. option:: -mcpu=name
 
@@ -65,9 +67,11 @@ These command-line options are defined for RX targets:
   could result in slower and/or larger code if variables are pushed onto
   the stack instead of being held in this register.
 
-  Note, common variables (variables that have not been initialized) and
-  constants are not placed into the small data area as they are assigned
-  to other sections in the output executable.
+  .. note::
+
+    Common variables (variables that have not been initialized) and
+    constants are not placed into the small data area as they are assigned
+    to other sections in the output executable.
 
   The default value is zero, which disables this feature.  Note, this
   feature is not enabled by default with higher optimization levels
@@ -186,13 +190,14 @@ These command-line options are defined for RX targets:
   instructions.  Note that :option:`-mno-jsr` does not mean to not use
   ``JSR`` but instead means that any type of branch may be used.
 
-*Note:* The generic GCC command-line option :option:`-ffixed-`:samp:`{reg}`
-has special significance to the RX port when used with the
-``interrupt`` function attribute.  This attribute indicates a
-function intended to process fast interrupts.  GCC ensures
-that it only uses the registers ``r10``, ``r11``, ``r12``
-and/or ``r13`` and only provided that the normal use of the
-corresponding registers have been restricted via the
-:option:`-ffixed-`:samp:`{reg}` or :option:`-mint-register` command-line
-options.
+.. note::
 
+  The generic GCC command-line option :option:`-ffixed-`:samp:`{reg}`
+  has special significance to the RX port when used with the
+  ``interrupt`` function attribute.  This attribute indicates a
+  function intended to process fast interrupts.  GCC ensures
+  that it only uses the registers ``r10``, ``r11``, ``r12``
+  and/or ``r13`` and only provided that the normal use of the
+  corresponding registers have been restricted via the
+  :option:`-ffixed-`:samp:`{reg}` or :option:`-mint-register` command-line
+  options.

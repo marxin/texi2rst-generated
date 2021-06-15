@@ -31,7 +31,8 @@ These :samp:`-m` options are defined for picoChip implementations:
   option may suffer from poor performance of byte (char) manipulation,
   since the DSP AE does not provide hardware support for byte load/stores.
 
-``-msymbol-as-address``
+.. option:: -msymbol-as-address
+
   Enable the compiler to directly use a symbol name as an address in a
   load/store instruction, without first loading it into a
   register.  Typically, the use of this option generates larger
@@ -39,7 +40,8 @@ These :samp:`-m` options are defined for picoChip implementations:
   results vary from program to program, so it is left as a user option,
   rather than being permanently enabled.
 
-``-mno-inefficient-warnings``
+.. option:: -mno-inefficient-warnings
+
   Disables warnings about the generation of inefficient code.  These
   warnings can be generated, for example, when compiling code that
   performs byte-level memory operations on the MAC AE type.  The MAC AE has
@@ -49,4 +51,3 @@ These :samp:`-m` options are defined for picoChip implementations:
   that you should rewrite the code to avoid byte operations, or to target
   an AE type that has the necessary hardware support.  This option disables
   these warnings.
-

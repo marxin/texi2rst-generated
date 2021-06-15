@@ -160,8 +160,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   assembler.  This option is the default and required for correct code
   generation on CK801 and CK802, and is optional on other processors.
 
-``-mstack-size``
-.. option:: -mno-stack-size
+.. option:: -mstack-size, -mno-stack-size
 
   Emit ``.stack_size`` directives for each function in the assembly
   output.  This option defaults to off.

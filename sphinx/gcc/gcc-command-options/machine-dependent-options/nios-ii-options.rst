@@ -133,7 +133,8 @@ These are the options defined for the Altera Nios II processor.
   instructions by the compiler. The default is to emit ``mul``
   and not emit ``div`` and ``mulx``.
 
-``-mbmx`` ``-mno-bmx`` ``-mcdx`` ``-mno-cdx``
+.. option:: -mbmx, -mno-bmx, -mcdx, -mno-cdx
+
   Enable or disable generation of Nios II R2 BMX (bit manipulation) and
   CDX (code density) instructions.  Enabling these instructions also
   requires :option:`-march`:samp:`=r2`.  Since these instructions are optional
@@ -273,6 +274,7 @@ These are the options defined for the Altera Nios II processor.
   :option:`-mcustom-fadds`:samp:`=253` 
   :option:`-mcustom-fsubs`:samp:`=254` 
   :option:`-fsingle-precision-constant`
+
   :option:`-mcustom-fpu-cfg`:samp:`=60-2` is equivalent to:
 
   :option:`-mcustom-fmuls`:samp:`=252` 
@@ -280,6 +282,7 @@ These are the options defined for the Altera Nios II processor.
   :option:`-mcustom-fsubs`:samp:`=254` 
   :option:`-mcustom-fdivs`:samp:`=255` 
   :option:`-fsingle-precision-constant`
+
   :option:`-mcustom-fpu-cfg`:samp:`=72-3` is equivalent to:
 
   :option:`-mcustom-floatus`:samp:`=243` 
@@ -294,6 +297,7 @@ These are the options defined for the Altera Nios II processor.
   :option:`-mcustom-fsubs`:samp:`=254` 
   :option:`-mcustom-fdivs`:samp:`=255` 
   :option:`-fsingle-precision-constant`
+
   :option:`-mcustom-fpu-cfg`:samp:`=fph2` is equivalent to:
 
   :option:`-mcustom-fabss`:samp:`=224` 
@@ -314,6 +318,7 @@ These are the options defined for the Altera Nios II processor.
   :option:`-mcustom-fadds`:samp:`=253` 
   :option:`-mcustom-fsubs`:samp:`=254` 
   :option:`-mcustom-fdivs`:samp:`=255` 
+
   Custom instruction assignments given by individual
   :option:`-mcustom-`:samp:`{insn}` = options override those given by
   :option:`-mcustom-fpu-cfg` =, regardless of the

@@ -86,7 +86,8 @@ MicroBlaze Options
 
   Use reorder instructions (swap and byte reversed load/store).
 
-:samp:`-mxl-mode-{app-model}`
+.. option:: -mxl-mode-app-model
+
   Select application model :samp:`{app-model}`.  Valid models are
 
   :samp:`executable`
@@ -114,6 +115,4 @@ MicroBlaze Options
     MicroBlaze vectors. This option may be useful for applications running
     within a monitoring application. This model uses :samp:`crt3.o` as a startup file.
 
-    Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for
-  :option:`-mxl-mode-`:samp:`{app-model}`.
-
+    Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for :option:`-mxl-mode-`:samp:`{app-model}`.

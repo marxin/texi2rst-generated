@@ -98,9 +98,11 @@ These command-line options are defined for RISC-V targets:
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
   the default is 4 (16 bytes or 128-bits).
 
-  **Warning:** If you use this switch, then you must build all modules with
-  the same value, including any libraries.  This includes the system libraries
-  and startup modules.
+  .. warning::
+
+    If you use this switch, then you must build all modules with
+    the same value, including any libraries.  This includes the system libraries
+    and startup modules.
 
 .. option:: -msmall-data-limit=n
 
@@ -140,17 +142,20 @@ These command-line options are defined for RISC-V targets:
   defined symbols must be within any single 2 GiB address range. Programs can be
   statically or dynamically linked.
 
-``-mexplicit-relocs`` ``-mno-exlicit-relocs``
+.. option:: -mexplicit-relocs, -mno-exlicit-relocs
+
   Use or do not use assembler relocation operators when dealing with symbolic
   addresses.  The alternative is to use assembler macros instead, which may
   limit optimization.
 
-``-mrelax`` ``-mno-relax``
+.. option:: -mrelax, -mno-relax
+
   Take advantage of linker relaxations to reduce the number of instructions
   required to materialize symbol addresses. The default is to take advantage of
   linker relaxations.
 
-``-memit-attribute`` ``-mno-emit-attribute``
+.. option:: -memit-attribute, -mno-emit-attribute
+
   Emit (do not emit) RISC-V attribute to record extra information into ELF
   objects.  This feature requires at least binutils 2.32.
 

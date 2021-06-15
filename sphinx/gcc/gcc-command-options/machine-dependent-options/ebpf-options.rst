@@ -36,10 +36,10 @@ eBPF Options
 
   Generate code for a little-endian target.  This is the default.
 
-``-mxbpf``
+.. option:: -mxbpf
+
   Generate code for an expanded version of BPF, which relaxes some of
   the restrictions imposed by the BPF architecture:
 
   * Save and restore callee-saved registers at function entry and
     exit, respectively.
-
