@@ -1163,6 +1163,7 @@ corresponding :option:`--without` option.
     A (second) ``Shared Archive Library`` file is created:
     * using the :samp:`libNAME.so.V` filename scheme
     * with the ``Shared Object`` file as archive member named :samp:`shr.o`, which
+
       * is created with the ``-G linker flag``
       * has the ``F_LOADONLY`` flag set
       * is used for runtime loading from inside the :samp:`libNAME.so.V` file
@@ -1186,6 +1187,7 @@ corresponding :option:`--without` option.
     A ``Static Archive Library`` is created:
     * using the :samp:`libNAME.a` filename scheme
     * with all the ``Static Object`` files as archive members, which
+
       * are used for static linking
 
   While the aix-soname= :samp:`svr4` option does not create ``Shared Object``
