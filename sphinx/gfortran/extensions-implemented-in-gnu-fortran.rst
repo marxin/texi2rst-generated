@@ -829,8 +829,8 @@ which have a different syntax.
 In many cases, record structures can easily be converted to derived types.
 To convert, replace  ``STRUCTURE /``:samp:`{structure-name}` ``/``
 by ``TYPE`` :samp:`{type-name}`.  Additionally, replace
- ``RECORD /``:samp:`{structure-name}` ``/`` by
- ``TYPE(``:samp:`{type-name}` ``)``. Finally, in the component access,
+``RECORD /``:samp:`{structure-name}` ``/`` by
+``TYPE(``:samp:`{type-name}` ``)``. Finally, in the component access,
 replace the period ( ``.`` ) by the percent sign ( ``%`` ).
 
 Here is an example of code using the non portable record structure syntax:
@@ -1119,6 +1119,7 @@ Intrinsic   B           I            J            K
 ``NOT``     ``BNOT``    ``INOT``     ``JNOT``     ``KNOT``
 ``REAL``    ``--``      ``FLOATI``   ``FLOATJ``   ``FLOATK``
 ==========  ==========  ===========  ===========  ===========
+
 .. _automatic-and-static-attributes:
 
 AUTOMATIC and STATIC attributes
@@ -1205,6 +1206,7 @@ Radians       Degrees
 ``SIN``       ``SIND`` \*
 ``TAN``       ``TAND`` \*
 ============  =============
+
 \* Enabled with :option:`-fdec-math`.
 
 For advanced users, it may be important to know the implementation of these
@@ -1322,6 +1324,7 @@ Operator    Intrinsic      Bitwise operation
 ``.NEQV.``  ``IEOR``       exclusive or
 ``.EQV.``   ``NOT(IEOR)``  complement of exclusive or
 ==========  =============  ==========================
+
 .. _extended-i-o-specifiers:
 
 Extended I/O specifiers
@@ -1412,6 +1415,7 @@ compile flag :option:`-fdec`, for compatibility.
   ``SHARE='DENYRW'``    ``NOSHARED``  Exclusive (write) lock
   ``SHARE='DENYNONE'``  ``SHARED``    Shared (read) lock
   ====================  ============  ======================
+
   In general only one process may hold an exclusive (write) lock for a given file
   at a time, whereas many processes may hold shared (read) locks for the same
   file.

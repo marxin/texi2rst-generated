@@ -12,10 +12,10 @@ IEEE modules: IEEE_EXCEPTIONS, IEEE_ARITHMETIC, and IEEE_FEATURES
   Fortran 2003 and later
 
   The ``IEEE_EXCEPTIONS``, ``IEEE_ARITHMETIC``, and ``IEEE_FEATURES``
-intrinsic modules provide support for exceptions and IEEE arithmetic, as
-defined in Fortran 2003 and later standards, and the IEC 60559:1989 standard
-(*Binary floating-point arithmetic for microprocessor systems*). These
-modules are only provided on the following supported platforms:
+  intrinsic modules provide support for exceptions and IEEE arithmetic, as
+  defined in Fortran 2003 and later standards, and the IEC 60559:1989 standard
+  (*Binary floating-point arithmetic for microprocessor systems*). These
+  modules are only provided on the following supported platforms:
 
 * i386 and x86_64 processors
 

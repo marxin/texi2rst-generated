@@ -12,10 +12,11 @@ ISO_C_BINDING
   Fortran 2003 and later, GNU extensions
 
   The following intrinsic procedures are provided by the module; their
-definition can be found in the section Intrinsic Procedures of this
-manual.
+  definition can be found in the section Intrinsic Procedures of this
+  manual.
 
 C_ASSOCIATEDC_F_POINTERC_F_PROCPOINTERC_FUNLOCC_LOCC_SIZEOF
+
 .. TODO: Vertical spacing between C_FUNLOC and C_LOC wrong in PDF,
    don't really know why.
 
@@ -67,6 +68,7 @@ Fortran Type   Named constant             C type                               E
 ``LOGICAL``    ``C_BOOL``                 ``_Bool``
 ``CHARACTER``  ``C_CHAR``                 ``char``
 =============  =========================  ===================================  =========
+
 Additionally, the following parameters of type ``CHARACTER(KIND=C_CHAR)``
 are defined.
 
@@ -82,6 +84,7 @@ Name                   C definition     Value
 ``C_HORIZONTAL_TAB``   horizontal tab   ``'\t'``
 ``C_VERTICAL_TAB``     vertical tab     ``'\v'``
 =====================  ===============  ========
+
 Moreover, the following two named constants are defined:
 
 =================  ============
@@ -90,5 +93,6 @@ Name               Type
 ``C_NULL_PTR``     ``C_PTR``
 ``C_NULL_FUNPTR``  ``C_FUNPTR``
 =================  ============
+
 Both are equivalent to the value ``NULL`` in C.
 

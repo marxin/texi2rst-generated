@@ -11,8 +11,7 @@ ISO_FORTRAN_ENV
 :samp:`{Standard}:`
   Fortran 2003 and later, except when otherwise noted
 
-  The ``ISO_FORTRAN_ENV`` module provides the following scalar default-integer
-named constants:
+  The ``ISO_FORTRAN_ENV`` module provides the following scalar default-integer named constants:
 
 :samp:`{ATOMIC_INT_KIND}:`
   Default-kind integer constant to be used as kind parameter when defining
@@ -114,5 +113,5 @@ named constants:
   (Fortran 2008 or later.)
 
   The module also provides the following intrinsic procedures:
-COMPILER_OPTIONS and COMPILER_VERSION.
+  COMPILER_OPTIONS and COMPILER_VERSION.
 

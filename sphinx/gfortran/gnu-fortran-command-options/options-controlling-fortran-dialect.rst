@@ -191,7 +191,7 @@ accepted by the compiler:
   characters alert, backspace, form feed, newline, carriage return,
   horizontal tab, vertical tab, backslash, and NUL, respectively.
   Additionally,  ``\x``:samp:`{nn}`,  ``\u``:samp:`{nnnn}` and
-   ``\U``:samp:`{nnnnnnnn}` (where each :samp:`{n}` is a hexadecimal digit) are
+  ``\U``:samp:`{nnnnnnnn}` (where each :samp:`{n}` is a hexadecimal digit) are
   translated into the Unicode characters corresponding to the specified code
   points. All other combinations of a character preceded by \ are
   unexpanded.

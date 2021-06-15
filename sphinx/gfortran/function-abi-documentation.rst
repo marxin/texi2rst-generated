@@ -1518,8 +1518,7 @@ _gfortran_caf_co_reduce --- Generic collective reduction
 Some basic guidelines for editing this document:
 
 (1) The intrinsic procedures are to be listed in alphabetical order.
-  (2) The generic name is to be used.
-  (3) The specific names are included in the function index and in a
-      table at the end of the node (See ABS entry).
-  (4) Try to maintain the same style for each entry.
-
+(2) The generic name is to be used.
+(3) The specific names are included in the function index and in a
+    table at the end of the node (See ABS entry).
+(4) Try to maintain the same style for each entry.
