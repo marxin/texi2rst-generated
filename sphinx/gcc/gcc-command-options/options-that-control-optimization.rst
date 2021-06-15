@@ -2096,7 +2096,7 @@ optimizations to be performed is desired.
   link time.  
   For example:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c -O2 -flto foo.c
     gcc -c -O2 -flto bar.c
@@ -2115,7 +2115,7 @@ optimizations to be performed is desired.
 
   Another (simpler) way to enable link-time optimization is:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -o myprog -flto -O2 foo.c bar.c
 
@@ -2239,7 +2239,7 @@ optimizations to be performed is desired.
   Another feature of LTO is that it is possible to apply interprocedural
   optimizations on files written in different languages:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c -flto foo.c
     g++ -c -flto bar.cc
@@ -2263,7 +2263,7 @@ optimizations to be performed is desired.
   flag :option:`-fuse-linker-plugin` to ensure that the library participates in
   the LTO optimization process:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -o myprog -O2 -flto -fuse-linker-plugin a.o b.o -lfoo
 

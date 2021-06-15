@@ -342,7 +342,7 @@ it.
   compiling to (x86_64) assembly via :option:`-S` and emitting the result
   direct to stdout via :option:`-o` :option:`-`
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -S test.c -fverbose-asm -Os -o -
 

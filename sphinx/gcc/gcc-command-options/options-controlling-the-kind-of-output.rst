@@ -202,7 +202,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   disregarding the suffix, the result of the combination is that base
   name, otherwise, they are concatenated, separated by a dash.
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c foo.c ...
 
@@ -214,7 +214,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   If a non-linker output file is explicitly specified, aux and dump files
   by default take the same base name:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c foo.c -o dir/foobar.o ...
 
@@ -223,7 +223,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   A linker output will instead prefix aux and dump outputs:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -o dir/foobar ...
 
@@ -234,7 +234,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   The one exception to the above is when the executable shares the base
   name with the single input:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c -o dir/foo ...
 
@@ -253,14 +253,14 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   outputs, when preserved, are not regarded as primary outputs, but as
   auxiliary outputs:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -save-temps -S foo.c
 
   saves the (no longer) temporary preprocessed file in :samp:`foo.i`, and
   then compiles to the (implied) output file :samp:`foo.s`, whereas:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -save-temps -dumpbase save-foo -c foo.c
 
@@ -284,7 +284,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :option:`-save-temps`:samp:`=*`) is ignored, and instead of appending to it,
   :samp:`{dumpbase}` fully overrides it:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c -c -o dir/foo.o -dumpbase alt/foo \
       -dumpdir pfx- -save-temps=cwd ...
@@ -300,7 +300,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   for :samp:`{dumpbase}` and :samp:`{auxdropsuf}` are computed for each input
   file:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -c -dumpbase main ...
 
@@ -313,7 +313,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   output basename in the naming of auxiliary and dump outputs during
   compilation, computing default values :
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c foo.c -o dir/foobar.o -dumpbase '' ...
 
@@ -324,7 +324,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   The empty-string dumpbase does not prevent the use of the output
   basename for outputs during linking:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -o dir/foobar -dumpbase '' -flto ...
 
@@ -343,7 +343,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :option:`-dumpbase` is not present in the command line, or :samp:`{dumpbase}`
   is combined with :samp:`{dumppfx}`.
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c -c -o dir/foo.o -dumpbase x-foo.c -dumpbase-ext .c ...
 
@@ -357,7 +357,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   suffix when appending the linker output base name to :samp:`{dumppfx}`, as
   specified below:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -o main.out -dumpbase-ext .out ...
 
@@ -372,7 +372,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   When forming the name of an auxiliary or dump output file, use
   :samp:`{dumppfx}` as a prefix:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -dumpdir pfx- -c foo.c ...
 
@@ -385,7 +385,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   If :samp:`{dumppfx}` is to be used as a directory name, it must end with a
   directory separator:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -dumpdir dir/ -c foo.c -o obj/bar.o ...
 
@@ -399,7 +399,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   default, just like an explicit :option:`-dumpdir` option.  In case
   multiple such options are given, the last one prevails:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
 
@@ -416,7 +416,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   explicit or defaulted :samp:`{dumppfx}`, so that each of the multiple
   compilations gets differently-named aux and dump outputs.
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -c -dumpdir dir/pfx- -dumpbase main ...
 
@@ -426,7 +426,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   and :samp:`dir/pfx-main-bar.c.*`, respectively.  Contrast with the
   single-input compilation:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c -c -dumpdir dir/pfx- -dumpbase main ...
 
@@ -443,7 +443,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`
   instead.  Note, however, that unlike earlier cases of linking:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c bar.c -dumpdir dir/pfx- -o main ...
 
@@ -461,7 +461,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   not with an explicit :option:`-dumpdir` that inhibits the combination,
   even if overridden by :option:`-save-temps`:samp:`=*`:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc foo.c -dumpdir alt/pfx- -o dir/main.exe -save-temps=cwd ...
 
@@ -619,7 +619,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   Alternatively you can discover which binary optimizations are enabled
   by :option:`-O3` by using:
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c -Q -O3 --help=optimizers > /tmp/O3-opts
     gcc -c -Q -O2 --help=optimizers > /tmp/O2-opts
@@ -661,7 +661,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   wrapper program and its parameters are passed as a comma separated
   list.
 
-  .. code-block:: bash
+  .. code-block:: shell-session
 
     gcc -c t.c -wrapper gdb,--args
 
