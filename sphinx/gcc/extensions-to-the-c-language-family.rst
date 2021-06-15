@@ -64,11 +64,12 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/mixed-declarations-labels-and-code
   extensions-to-the-c-language-family/declaring-attributes-of-functions
   extensions-to-the-c-language-family/specifying-attributes-of-variables
-  extensions-to-the-c-language-family/label-attributes
   extensions-to-the-c-language-family/specifying-attributes-of-types
+  extensions-to-the-c-language-family/label-attributes
   extensions-to-the-c-language-family/enumerator-attributes
-  extensions-to-the-c-language-family/attribute-syntax
   extensions-to-the-c-language-family/statement-attributes
+  extensions-to-the-c-language-family/attribute-syntax
+  extensions-to-the-c-language-family/prototypes-and-old-style-function-definitions
   extensions-to-the-c-language-family/c++-style-comments
   extensions-to-the-c-language-family/dollar-signs-in-identifier-names
   extensions-to-the-c-language-family/the-character-esc-in-constants
@@ -94,6 +95,4 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/unnamed-structure-and-union-fields
   extensions-to-the-c-language-family/thread-local-storage
   extensions-to-the-c-language-family/binary-constants-using-the-0b-prefix
-
-  extensions-to-the-c-language-family/prototypes-and-old-style-function-definitions
 
