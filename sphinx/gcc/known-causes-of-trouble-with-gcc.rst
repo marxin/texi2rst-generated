@@ -25,13 +25,12 @@ where people's opinions differ as to what is best.
 .. toctree::
   :maxdepth: 2
 
-  known-causes-of-trouble-with-gcc/interoperation
-  known-causes-of-trouble-with-gcc/standard-libraries
   known-causes-of-trouble-with-gcc/actual-bugs-we-havent-fixed-yet
+  known-causes-of-trouble-with-gcc/interoperation
   known-causes-of-trouble-with-gcc/incompatibilities-of-gcc
   known-causes-of-trouble-with-gcc/fixed-header-files
+  known-causes-of-trouble-with-gcc/standard-libraries
   known-causes-of-trouble-with-gcc/disappointments-and-misunderstandings
   known-causes-of-trouble-with-gcc/common-misunderstandings-with-gnu-c
   known-causes-of-trouble-with-gcc/certain-changes-we-dont-want-to-make
   known-causes-of-trouble-with-gcc/warning-messages-and-error-messages
-

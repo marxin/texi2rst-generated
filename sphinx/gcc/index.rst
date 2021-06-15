@@ -30,11 +30,10 @@ Contents:
   reporting-bugs
   how-to-get-help-with-gcc
   contributing-to-gcc-development
-  contributors-to-gcc
-
   funding
   gnu
   general-public-license-3
   gnu-free-documentation-license
+  contributors-to-gcc
 
   option-index
