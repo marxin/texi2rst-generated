@@ -186,8 +186,8 @@ function compiled without ``-mstrict-align`` is not allowed.
 However, inlining a function compiled without :option:`-mstrict-align` into a
 function compiled with :option:`-mstrict-align` is allowed.
 
-Note that CPU tuning options and attributes such as the :option:`-mcpu` =,
-:option:`-mtune` = do not inhibit inlining unless the CPU specified by the
-:option:`-mcpu` = option or the ``cpu=`` attribute conflicts with the
+Note that CPU tuning options and attributes such as the :option:`-mcpu`,
+:option:`-mtune` do not inhibit inlining unless the CPU specified by the
+:option:`-mcpu` option or the ``cpu=`` attribute conflicts with the
 architectural feature rules specified above.
 

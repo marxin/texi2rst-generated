@@ -1734,14 +1734,7 @@ The following attributes are supported on most targets.
   .. index:: zero_call_used_regs function attribute
 
   The ``zero_call_used_regs`` attribute causes the compiler to zero
-  a subset of all call-used registersA 'call-used' register
-  is a register whose contents can be changed by a function call;
-  therefore, a caller cannot assume that the register has the same contents
-  on return from the function as it had before calling the function.  Such
-  registers are also called 'call-clobbered', 'caller-saved', or
-  'volatile'.
-
-   at function return.
+  a subset of all call-used registers ([#f1]_) at function return.
   This is used to increase program security by either mitigating
   Return-Oriented Programming (ROP) attacks or preventing information leakage
   through registers.
@@ -1810,3 +1803,9 @@ The following attributes are supported on most targets.
 
 .. This is the end of the target-independent attribute table
 
+.. [#f1] A 'call-used' register
+  is a register whose contents can be changed by a function call;
+  therefore, a caller cannot assume that the register has the same contents
+  on return from the function as it had before calling the function.  Such
+  registers are also called 'call-clobbered', 'caller-saved', or
+  'volatile'.
