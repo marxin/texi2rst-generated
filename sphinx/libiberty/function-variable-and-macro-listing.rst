@@ -605,7 +605,7 @@ those provided by :samp:`ctype.h`:
   ``GRAPH``   ``ALNUM || PUNCT``
   ``LOWER``   a-z
   ``PRINT``   ``GRAPH ||`` space
-  ``PUNCT``   `~!@#$%^&\*()_-=+[{]}\|;:'",<.>/?
+  ``PUNCT``   \`~!@#$%^&\*()_-=+[{]}\|;:'",<.>/?
   ``SPACE``   space tab \n \r \f \v
   ``UPPER``   A-Z
   ``XDIGIT``  0-9A-Fa-f
@@ -636,8 +636,8 @@ analysis of C or similar languages.  They are true for the following
 sets of characters:
 
 ================  ==============================
-``IDNUM``         A-Za-z0-9_
-``IDST``          A-Za-z_
+``IDNUM``         A-Za-z0-9\_
+``IDST``          A-Za-z\_
 ``VSPACE``        \r \n
 ``NVSPACE``       space tab \f \v \0
 ``SPACE_OR_NUL``  ``VSPACE || NVSPACE``
