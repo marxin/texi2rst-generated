@@ -15,16 +15,6 @@ instructions do.
 .. toctree::
   :maxdepth: 2
 
-  defining-the-output-assembler-language/file-framework
-  defining-the-output-assembler-language/data-output
-  defining-the-output-assembler-language/uninitialized-data
-  defining-the-output-assembler-language/label-output
-  defining-the-output-assembler-language/initialization
-  defining-the-output-assembler-language/macros-for-initialization
-  defining-the-output-assembler-language/instruction-output
-  defining-the-output-assembler-language/dispatch-tables
-  defining-the-output-assembler-language/exception-region-output
-  defining-the-output-assembler-language/alignment-output
   defining-the-output-assembler-language/the-overall-framework-of-an-assembler-file
   defining-the-output-assembler-language/output-of-data
   defining-the-output-assembler-language/output-of-uninitialized-variables
