@@ -13,10 +13,7 @@ This applies to the ``nvptx`` plugin only.
 The library provides elements that perform asynchronous movement of
 data and asynchronous operation of computing constructs.  This
 asynchronous functionality is implemented by making use of CUDA
-streamsSee "Stream Management" in "CUDA Driver API",
-TRM-06703-001, Version 5.5, for additional information
-
-.
+streams [#f1]_.
 
 The primary means by that the asynchronous functionality is accessed
 is through the use of those OpenACC directives which make use of the
@@ -49,3 +46,5 @@ CUDA stream.
    OpenACC Library Interoperability
    -
 
+.. [#f1] See "Stream Management" in "CUDA Driver API",
+  TRM-06703-001, Version 5.5, for additional information
