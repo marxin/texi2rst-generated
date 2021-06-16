@@ -15,10 +15,6 @@ Generally, they are available only for the host, with the exception of
 ``acc_on_device``, which is available for both the host and the
 acceleration device.
 
-  API routines for target platforms.
-
-  API routines for the OpenACC Profiling Interface.
-
 .. toctree::
   :maxdepth: 2
 
@@ -56,12 +52,23 @@ acceleration device.
   openacc-runtime-library-routines/accmemcpyfromdevice-copy-device-memory-to-host-memory
   openacc-runtime-library-routines/accattach-let-device-pointer-point-to-device-pointer-target
   openacc-runtime-library-routines/accdetach-let-device-pointer-point-to-host-pointer-target
+
+API routines for target platforms.
+
+.. toctree::
+  :maxdepth: 2
+
   openacc-runtime-library-routines/accgetcurrentcudadevice-get-cuda-device-handle
   openacc-runtime-library-routines/accgetcurrentcudacontext-get-cuda-context-handle
   openacc-runtime-library-routines/accgetcudastream-get-cuda-stream-handle
   openacc-runtime-library-routines/accsetcudastream-set-cuda-stream-handle
+
+API routines for the OpenACC Profiling Interface.
+
+.. toctree::
+  :maxdepth: 2
+
   openacc-runtime-library-routines/accprofregister-register-callbacks
   openacc-runtime-library-routines/accprofunregister-unregister-callbacks
   openacc-runtime-library-routines/accproflookup-obtain-inquiry-functions
   openacc-runtime-library-routines/accregisterlibrary-library-registration
-
