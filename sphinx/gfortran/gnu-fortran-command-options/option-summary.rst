@@ -15,7 +15,7 @@ Here is a summary of all the options specific to GNU Fortran, grouped
 by type.  Explanations are in the following sections.
 
 *Fortran Language Options*
-  See :ref:`Options controlling Fortran dialect <fortran-dialect-options>`.
+  See :ref:`fortran-dialect-options`.
 
   :option:`-fall-intrinsics` :option:`-fallow-argument-mismatch` :option:`-fallow-invalid-boz` 
   :option:`-fbackslash` :option:`-fcray-pointer` :option:`-fd-lines-as-code` :option:`-fd-lines-as-comments` 
@@ -33,8 +33,8 @@ by type.  Explanations are in the following sections.
 *Preprocessing Options*
   See :ref:`Enable and customize preprocessing <preprocessing-options>`.
 
-  :option:`-A-`:samp:`{question}` [= :samp:`{answer}` ]
-  :option:`-A`:samp:`{question}` = :samp:`{answer}` :option:`-C` :option:`-CC` :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]
+  :option:`-A-`:samp:`{question}`:samp:`[={answer}]`
+  :option:`-A`:samp:`{question}`:samp:`={answer}` :option:`-C` :option:`-CC` :option:`-D`:samp:`{macro}`:samp:`[={defn}]`
   :option:`-H` :option:`-P` 
   :option:`-U`:samp:`{macro}` :option:`-cpp` :option:`-dD` :option:`-dI` :option:`-dM` :option:`-dN` :option:`-dU` :option:`-fworking-directory`
   :option:`-imultilib` :samp:`{dir}` 

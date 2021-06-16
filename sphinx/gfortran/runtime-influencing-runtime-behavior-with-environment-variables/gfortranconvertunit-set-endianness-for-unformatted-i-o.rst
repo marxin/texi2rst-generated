@@ -53,14 +53,14 @@ for :command:`csh`-compatible shells.
 
 Example for :command:`sh`:
 
-.. code-block:: bash
+.. code-block:: shell-session
 
   $ gfortran foo.f90
   $ GFORTRAN_CONVERT_UNIT='big_endian;native:10-20' ./a.out
 
 Example code for :command:`csh`:
 
-.. code-block:: bash
+.. code-block:: shell-session
 
   % gfortran foo.f90
   % setenv GFORTRAN_CONVERT_UNIT 'big_endian;native:10-20'
