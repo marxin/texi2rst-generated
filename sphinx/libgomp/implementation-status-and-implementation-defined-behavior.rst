@@ -205,7 +205,7 @@ acc_api_info.async_handle
     variable mappings specified in OpenACC *declare* directives.
     It's not clear if they should be.
 
-  Callbacks for the following event types will be invoked, but dispatch
+Callbacks for the following event types will be invoked, but dispatch
 and information provided therein has not yet been thoroughly reviewed:
 
 * ``acc_ev_alloc``
