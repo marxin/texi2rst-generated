@@ -20,8 +20,8 @@ variable analysis and number of iterations analysis).
   analysis-and-representation-of-loops/loop-representation
   analysis-and-representation-of-loops/loop-querying
   analysis-and-representation-of-loops/loop-manipulation
-  analysis-and-representation-of-loops/scalar-evolutions
   analysis-and-representation-of-loops/loop-closed-ssa-form
+  analysis-and-representation-of-loops/scalar-evolutions
   analysis-and-representation-of-loops/iv-analysis-on-rtl
   analysis-and-representation-of-loops/number-of-iterations-analysis
   analysis-and-representation-of-loops/data-dependency-analysis
