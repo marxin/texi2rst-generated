@@ -19,7 +19,7 @@ as the successor of the GNU Library Public License, version 2, hence the
 version number 2.1.]
 
 Preamble
---------
+^^^^^^^^
 
 The licenses for most software are designed to take away your
 freedom to share and change it.  By contrast, the GNU General Public
@@ -462,7 +462,7 @@ be combined with the library in order to run.
     DAMAGES.
 
 How to Apply These Terms to Your New Libraries
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you develop a new library, and you want it to be of the greatest
 possible use to the public, we recommend making it free software that
