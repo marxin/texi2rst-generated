@@ -329,7 +329,7 @@ object of ``BITS_PER_UNIT`` bits (see :ref:`storage-layout`).
   These modes stand for bounds for pointer of 32 and 64 bit size respectively.
   Mode size is double pointer mode size.
 
-  The machine description defines ``Pmode`` as a C macro which expands
+The machine description defines ``Pmode`` as a C macro which expands
 into the machine mode used for addresses.  Normally this is the mode
 whose size is ``BITS_PER_WORD``, ``SImode`` on 32-bit machines.
 
@@ -463,7 +463,7 @@ condition holds.  The classes are:
 ``fixed_size_mode``
   A mode whose size is known at compile time.
 
-  Named modes use the most constrained of the available wrapper classes,
+Named modes use the most constrained of the available wrapper classes,
 if one exists, otherwise they use ``machine_mode``.  For example,
 ``QImode`` is a ``scalar_int_mode``, ``SFmode`` is a
 ``scalar_float_mode`` and ``BLKmode`` is a plain
@@ -501,7 +501,7 @@ operations on an ``opt_mode<T>`` :samp:`{x}` are as follows:
   Set :samp:`{x}` to :samp:`{y}`, where :samp:`{y}` is a :samp:`{T}` or implicitly converts
   to a :samp:`{T}`.
 
-  The default constructor sets an ``opt_mode<T>`` to nothing.
+The default constructor sets an ``opt_mode<T>`` to nothing.
 There is also a constructor that takes an initial value of type :samp:`{T}`.
 
 It is possible to use the :samp:`is-a.h` accessors on a ``machine_mode``
@@ -525,7 +525,7 @@ or machine mode wrapper :samp:`{x}` :
   Return an ``opt_mode<T>`` that holds :samp:`{x}` if :samp:`{x}` meets
   the conditions for wrapper class :samp:`{T}` and that holds nothing otherwise.
 
-  The purpose of these wrapper classes is to give stronger static type
+The purpose of these wrapper classes is to give stronger static type
 checking.  For example, if a function takes a ``scalar_int_mode``,
 a caller that has a general ``machine_mode`` must either check or
 assert that the code is indeed a scalar integer first, using one of
@@ -623,7 +623,7 @@ Here are some C macros that relate to machine modes:
 :samp:`GET_CLASS_NARROWEST_MODE ({c})`
   Returns the narrowest mode in mode class :samp:`{c}`.
 
-  The following 3 variables are defined on every target.   They can be
+The following 3 variables are defined on every target.   They can be
 used to allocate buffers that are guaranteed to be large enough to
 hold any value that can be represented on the target.   The first two
 can be overridden by defining them in the target's mode.def file,

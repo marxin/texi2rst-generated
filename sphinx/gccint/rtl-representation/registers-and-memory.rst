@@ -314,7 +314,7 @@ registers and to main memory.
     The compiler can always tell which blocks a valid subreg occupies, and
     whether the subreg is a lowpart of a block.
 
-    A ``MODE_PARTIAL_INT`` mode behaves as if it were as wide as the
+  A ``MODE_PARTIAL_INT`` mode behaves as if it were as wide as the
   corresponding ``MODE_INT`` mode, except that it has a number of
   undefined bits, which are determined by the precision of the
   mode.

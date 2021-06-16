@@ -109,6 +109,6 @@ GCC contains the following C language testsuites, in the
   :samp:`dg-*.c`
     Test the testsuite itself using :samp:`gcc.test-framework/test-framework.exp`.
 
-    FIXME: merge in :samp:`testsuite/README.gcc` and discuss the format of
+FIXME: merge in :samp:`testsuite/README.gcc` and discuss the format of
 test cases and magic comments more.
 

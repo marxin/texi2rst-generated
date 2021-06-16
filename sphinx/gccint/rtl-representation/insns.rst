@@ -420,7 +420,7 @@ and ``call_insn`` insns:
   expressions) giving miscellaneous information about the insn.  It is often
   information pertaining to the registers used in this insn.
 
-  The ``REG_NOTES`` field of an insn is a chain that includes
+The ``REG_NOTES`` field of an insn is a chain that includes
 ``expr_list`` and ``int_list`` expressions as well as ``insn_list``
 expressions.  There are several
 kinds of register notes, which are distinguished by the machine mode, which

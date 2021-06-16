@@ -35,14 +35,12 @@ are:
   keyword.
 
 ``arm_fp16_ieee``
-  .. _arm_fp16_ieee:
   ARM IEEE 754-2008 format VFP half-precision floating point support.
   This feature is only supported by ARM targets and then only in certain
   modes; see the arm_fp16_okarm_fp16_ok effective target
   keyword.
 
 ``arm_fp16_alternative``
-  .. _arm_fp16_alternative:
   ARM Alternative format VFP half-precision floating point support.
   This feature is only supported by ARM targets and then only in certain
   modes; see the arm_fp16_okarm_fp16_ok effective target
@@ -113,7 +111,6 @@ are:
   Only MIPS targets support this feature, and only then in certain modes.
 
 ``stack_size``
-  .. _stack_size_ao:
   Add the flags needed to define macro STACK_SIZE and set it to the stack size
   limit associated with the stack_size_et``stack_size`` effective
   target.

@@ -175,7 +175,7 @@ These commands are available for :samp:`{kind}` of ``tree``, ``ltrans-tree``,
   Passes if :samp:`{regex}` does not match demangled text in the dump file with
   suffix :samp:`{suffix}`.
 
-  The :samp:`{suffix}` argument which describes the dump file to be scanned
+The :samp:`{suffix}` argument which describes the dump file to be scanned
 may contain a glob pattern that must expand to exactly one file
 name. This is useful if, e.g., different pass instances are executed
 depending on torture testing command-line flags, producing dump files

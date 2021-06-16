@@ -751,7 +751,7 @@ Here are several miscellaneous parameters.
   during function multi-versioning to figure out the order in which two
   versions must be dispatched.  A function version with a higher priority
   is checked for dispatching earlier.  :samp:`{decl1}` and :samp:`{decl2}` are
-   the two function decls that will be compared.
+  the two function decls that will be compared.
 
 .. function:: tree TARGET_GET_FUNCTION_VERSIONS_DISPATCHER (void *decl)
 

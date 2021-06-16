@@ -121,7 +121,7 @@ any target-specific headers.
   reference to such an object constructed from the normal 'C' string
   representation provided in :samp:`{string}`.
   At present, the hook is used by Objective-C only, to obtain a
-   common-format string object when the target provides one.
+  common-format string object when the target provides one.
 
 .. function:: void TARGET_OBJC_DECLARE_UNRESOLVED_CLASS_REFERENCE (const char *classname)
 

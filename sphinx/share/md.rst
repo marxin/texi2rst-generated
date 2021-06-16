@@ -481,7 +481,7 @@ alternatives.
     This constraint is analogous to :samp:`!` but it disparages severely
     the alternative only if the operand with the :samp:`$` needs a reload.
 
-    When an insn pattern has multiple alternatives in its constraints, often
+  When an insn pattern has multiple alternatives in its constraints, often
   the appearance of the assembler code is determined mostly by which
   alternative was matched.  When this is so, the C code for writing the
   assembler code can use the variable ``which_alternative``, which is
@@ -2573,7 +2573,7 @@ S/390 and zSeries---:samp:`{config/s390/s390.h}`
     ``0,F:``
       value of the other parts (F---all bits set)
 
-      The constraint matches if the specified part of a constant
+    The constraint matches if the specified part of a constant
     has a value different from its other parts.
 
   ``Q``

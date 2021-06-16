@@ -160,6 +160,7 @@ structures and the underlying CFG ``basic_block`` structures
 .. index:: 'real' instructions, RTL SSA
 
 .. _real-rtl-ssa-insns:
+
 If a CFG basic block :samp:`{bb}` contains an RTL instruction :samp:`{insn}`,
 the RTL SSA represenation of :samp:`{bb}` also contains an RTL SSA representation
 of :samp:`{insn}`Note that this excludes non-instruction things like

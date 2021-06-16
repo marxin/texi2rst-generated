@@ -491,7 +491,7 @@ in many of the tables described below.
   to some other registers without using memory.  Define this hook on
   those machines to return true if objects of mode :samp:`{m}` in registers
   of :samp:`{class1}` can only be copied to registers of class :samp:`{class2}` by
-   storing a register of :samp:`{class1}` into memory and loading that memory
+  storing a register of :samp:`{class1}` into memory and loading that memory
   location into a register of :samp:`{class2}`.  The default definition returns
   false for all inputs.
 

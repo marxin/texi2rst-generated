@@ -159,7 +159,7 @@ These are the most commonly used format characters:
   :samp:`0` slots are not printed at all in dumps, and are often used in
   special ways by small parts of the compiler.
 
-  There are macros to get the number of operands and the format
+There are macros to get the number of operands and the format
 of an expression code:
 
 .. index:: GET_RTX_LENGTH
@@ -172,7 +172,7 @@ of an expression code:
 :samp:`GET_RTX_FORMAT ({code})`
   The format of an RTX of code :samp:`{code}`, as a C string.
 
-  Some classes of RTX codes always have the same format.  For example, it
+Some classes of RTX codes always have the same format.  For example, it
 is safe to assume that all comparison operations have format ``ee``.
 
 .. envvar:: RTX_UNARY

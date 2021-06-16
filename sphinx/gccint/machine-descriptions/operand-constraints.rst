@@ -55,7 +55,7 @@ instruction alternatives:
   Says whether an enabled alternative should be used in code that is
   optimized for speed.
 
-  All these attributes should use ``(const_int 1)`` to allow an alternative
+All these attributes should use ``(const_int 1)`` to allow an alternative
 or ``(const_int 0)`` to disallow it.  The attributes must be a static
 property of the subtarget; they cannot for example depend on the
 current operands, on the current optimization level, on the location
@@ -216,7 +216,7 @@ following variables:
   :samp:`CONST_DOUBLE_REAL_VALUE ({op})`, if :samp:`{op}` is a floating-point
   ``const_double``.
 
-  The :samp:`{*val}` variables should only be used once another piece of the
+The :samp:`{*val}` variables should only be used once another piece of the
 expression has verified that :samp:`{op}` is the appropriate kind of RTL
 object.
 

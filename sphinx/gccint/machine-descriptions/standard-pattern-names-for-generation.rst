@@ -746,10 +746,8 @@ reduc_plus_scal_m
   .. index:: reduc_and_scal_m instruction pattern
 
 reduc_and_scal_m
-.. index:: reduc_ior_scal_m instruction pattern
 
  reduc_ior_scal_m
-.. index:: reduc_xor_scal_m instruction pattern
 
  reduc_xor_scal_m
   Compute the bitwise ``AND`` / ``IOR`` / ``XOR`` reduction of the elements
