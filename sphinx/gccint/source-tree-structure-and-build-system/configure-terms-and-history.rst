@@ -22,7 +22,7 @@ There are three system names that the build knows about: the machine you
 are building on (:dfn:`build`), the machine that you are building for
 (:dfn:`host`), and the machine that GCC will produce code for
 (:dfn:`target`).  When you configure GCC, you specify these with
-:option:`--build` =, :option:`--host` =, and :option:`--target` =.
+:option:`--build`, :option:`--host`, and :option:`--target`.
 
 Specifying the host without specifying the build should be avoided, as
 :command:`configure` may (and once did) assume that the host you specify

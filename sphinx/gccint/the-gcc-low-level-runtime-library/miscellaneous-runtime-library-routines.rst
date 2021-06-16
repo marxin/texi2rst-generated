@@ -50,13 +50,11 @@ Split stack functions and variables
   thread could be looking at the stack while it is changing, and
   anything could happen.
 
-.. index:: __morestack_segments
+.. c:var:: __morestack_segments
 
-Variable __morestack_segments
-.. index:: __morestack_current_segment
+.. c:var:: __morestack_current_segment
 
-Variable __morestack_current_segment
-.. index:: __morestack_initial_sp
+.. c:var:: __morestack_initial_sp
 
-Variable __morestack_initial_spInternal variables used by the :option:`-fsplit-stack` implementation.
+Internal variables used by the :option:`-fsplit-stack` implementation.
 
