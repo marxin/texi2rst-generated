@@ -33,20 +33,20 @@ through the macros defined in the :samp:`.h` file.
 .. toctree::
   :maxdepth: 2
 
-  target-description-macros-and-functions/storage-layout
-  target-description-macros-and-functions/register-classes
-  target-description-macros-and-functions/addressing-modes
-  target-description-macros-and-functions/anchored-addresses
   target-description-macros-and-functions/the-global-targetm-variable
   target-description-macros-and-functions/controlling-the-compilation-driver-gcc
   target-description-macros-and-functions/run-time-target-specification
   target-description-macros-and-functions/defining-data-structures-for-per-function-information
+  target-description-macros-and-functions/storage-layout
   target-description-macros-and-functions/layout-of-source-language-data-types
   target-description-macros-and-functions/register-usage
+  target-description-macros-and-functions/register-classes
   target-description-macros-and-functions/stack-layout-and-calling-conventions
   target-description-macros-and-functions/implementing-the-varargs-macros
   target-description-macros-and-functions/support-for-nested-functions
   target-description-macros-and-functions/implicit-calls-to-library-routines
+  target-description-macros-and-functions/addressing-modes
+  target-description-macros-and-functions/anchored-addresses
   target-description-macros-and-functions/condition-code-status
   target-description-macros-and-functions/describing-relative-costs-of-operations
   target-description-macros-and-functions/adjusting-the-instruction-scheduler
