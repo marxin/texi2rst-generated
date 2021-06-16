@@ -17,9 +17,6 @@ This describes the stack layout and calling conventions.
 .. toctree::
   :maxdepth: 2
 
-  stack-layout-and-calling-conventions/shrink-wrapping-separate-components
-  stack-layout-and-calling-conventions/stack-smashing-protection
-  stack-layout-and-calling-conventions/miscellaneous-register-hooks
   stack-layout-and-calling-conventions/basic-stack-layout
   stack-layout-and-calling-conventions/exception-handling-support
   stack-layout-and-calling-conventions/specifying-how-stack-checking-is-done
@@ -33,4 +30,7 @@ This describes the stack layout and calling conventions.
   stack-layout-and-calling-conventions/function-entry-and-exit
   stack-layout-and-calling-conventions/generating-code-for-profiling
   stack-layout-and-calling-conventions/permitting-tail-calls
+  stack-layout-and-calling-conventions/shrink-wrapping-separate-components
+  stack-layout-and-calling-conventions/stack-smashing-protection
+  stack-layout-and-calling-conventions/miscellaneous-register-hooks
 
