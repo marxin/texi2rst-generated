@@ -88,6 +88,8 @@ This discusses registers that address the stack frame.
 
 .. c:macro:: STATIC_CHAIN_REGNUM
 
+.. c:macro:: STATIC_CHAIN_INCOMING_REGNUM
+
   Register numbers used for passing a function's static chain pointer.  If
   register windows are used, the register number as seen by the called
   function is ``STATIC_CHAIN_INCOMING_REGNUM``, while the register
