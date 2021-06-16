@@ -41,7 +41,7 @@ standard for a wide character set, but the choice of 16-bit
 this.
 
   Octal and hexadecimal escape sequences do not undergo
-conversion; '\x12' has the value 0x12 regardless of the currently
+conversion; ``'\x12'`` has the value 0x12 regardless of the currently
 selected execution character set.  All other escapes are replaced by
 the character in the source character set that they represent, then
 converted to the execution character set, just like unescaped

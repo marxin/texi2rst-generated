@@ -113,15 +113,15 @@ standard uses the term :dfn:`string literal` to refer only to what we are
 calling :dfn:`string constants`.
 
   String constants and character
-constants are straightforward: "..." or '...'.  In
+constants are straightforward: ``"..."`` or ``'...'``.  In
 either case embedded quotes should be escaped with a backslash:
-'\'' is the character constant for :samp:`'`.  There is no limit on
+``'\''`` is the character constant for :samp:`'`.  There is no limit on
 the length of a character constant, but the value of a character
 constant that contains more than one character is
 implementation-defined.  See :ref:`implementation-details`.
 
-Header file names either look like string constants, "...", or are
-written with angle brackets instead, <...>.  In either case,
+Header file names either look like string constants, ``"..."``, or are
+written with angle brackets instead, ``<...>``.  In either case,
 backslash is an ordinary character.  There is no way to escape the
 closing quote or angle bracket.  The preprocessor looks for the header
 file in different places depending on which form you use.  See :ref:`include-operation`.

@@ -54,9 +54,9 @@ around the fragment.  The preprocessor backslash-escapes the quotes
 surrounding embedded string constants, and all backslashes within string and
 character constants, in order to get a valid C string constant with the
 proper contents.  Thus, stringizing ``p = "foo\n";`` results in
-"p = \"foo\\n\";".  However, backslashes that are not inside string
+``"p = \"foo\\n\";"``.  However, backslashes that are not inside string
 or character constants are not duplicated: :samp:`\\n` by itself
-stringizes to "\n".
+stringizes to ``"\n"``.
 
 All leading and trailing whitespace in text being stringized is
 ignored.  Any sequence of whitespace in the middle of the text is
