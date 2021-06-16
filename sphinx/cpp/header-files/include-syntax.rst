@@ -25,7 +25,7 @@ directive :samp:`#include`.  It has two variants:
   directories used for ``<file>``.  You can prepend directories
   to the list of quote directories with the :option:`-iquote` option.
 
-  The argument of :samp:`#include`, whether delimited with quote marks or
+The argument of :samp:`#include`, whether delimited with quote marks or
 angle brackets, behaves like a string constant in that comments are not
 recognized, and macro names are not expanded.  Thus, ``#include
 <x/*y>`` specifies inclusion of a system header file named :samp:`x/*y`.

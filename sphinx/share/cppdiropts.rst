@@ -146,7 +146,8 @@
 
 .. option:: -Wtrigraphs
 
-  .. _wtrigraphs:
+.. _wtrigraphs:
+
   Warn if any trigraphs are encountered that might change the meaning of
   the program.  Trigraphs within comments are not warned about,
   except those that would form escaped newlines.

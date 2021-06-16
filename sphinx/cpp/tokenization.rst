@@ -112,7 +112,7 @@ header file names (the argument of :samp:`#include`).The C
 standard uses the term :dfn:`string literal` to refer only to what we are
 calling :dfn:`string constants`.
 
-  String constants and character
+String constants and character
 constants are straightforward: "..." or '...'.  In
 either case embedded quotes should be escaped with a backslash:
 '\'' is the character constant for :samp:`'`.  There is no limit on

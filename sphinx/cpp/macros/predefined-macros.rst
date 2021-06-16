@@ -48,9 +48,9 @@ them.  Their names all start with double underscores.
   new line of source code.
 
   ``__FILE__`` and ``__LINE__`` are useful in generating an error
-message to report an inconsistency detected by the program; the message
-can state the source line at which the inconsistency was detected.  For
-example,
+  message to report an inconsistency detected by the program; the message
+  can state the source line at which the inconsistency was detected.  For
+  example,
 
 .. code-block:: c++
 

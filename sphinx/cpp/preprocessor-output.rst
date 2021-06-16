@@ -69,7 +69,7 @@ separate them.  Here is what the flags mean:
 
   .. maybe cross reference SYSTEM_IMPLICIT_EXTERN_C
 
-  As an extension, the preprocessor accepts linemarkers in non-assembler
+As an extension, the preprocessor accepts linemarkers in non-assembler
 input files.  They are treated like the corresponding :samp:`#line`
 directive, (see :ref:`line-control`), except that trailing flags are
 permitted, and are interpreted with the meanings described above.  If

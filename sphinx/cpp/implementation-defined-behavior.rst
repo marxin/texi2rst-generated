@@ -27,7 +27,8 @@ and stick to it.
 
 * Identifier characters.
 
-  .. _identifier-characters:
+.. _identifier-characters:
+
   The C and C++ standards allow identifiers to be composed of :samp:`_`
   and the alphanumeric characters.  C++ also allows universal character
   names.  C99 and later C standards permit both universal character
