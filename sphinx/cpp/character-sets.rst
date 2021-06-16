@@ -38,7 +38,7 @@ The default is UTF-16 or UTF-32, whichever fits in the target's
 order [#f1]_.
 
 Octal and hexadecimal escape sequences do not undergo
-conversion; '\x12' has the value 0x12 regardless of the currently
+conversion; ``'\x12'`` has the value 0x12 regardless of the currently
 selected execution character set.  All other escapes are replaced by
 the character in the source character set that they represent, then
 converted to the execution character set, just like unescaped

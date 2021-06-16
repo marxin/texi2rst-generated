@@ -51,7 +51,7 @@ standard.
   These are nine three-character sequences, all starting with :samp:`??`,
   that are defined by ISO C to stand for single characters.  They permit
   obsolete systems that lack some of C's punctuation to use C.  For
-  example, :samp:`??/` stands for :samp:`\\`, so ``??/n`` is a character
+  example, :samp:`??/` stands for :samp:`\\`, so ``'??/n'`` is a character
   constant for a newline.
 
   Trigraphs are not popular and many compilers implement them
@@ -63,7 +63,7 @@ standard.
   In a string constant, you can prevent a sequence of question marks
   from being confused with a trigraph by inserting a backslash between
   the question marks, or by separating the string literal at the
-  trigraph and making use of string literal concatenation.  "(??\?)"
+  trigraph and making use of string literal concatenation.  ``"(??\?)"``
   is the string :samp:`(???)`, not :samp:`(?]`.  Traditional C compilers
   do not recognize these idioms.
 
@@ -141,7 +141,7 @@ comment.
       oops! this isn't a comment anymore */
 
 Comments are not recognized within string literals.
-``/* blah */`` is the string constant ``/* blah */``, not
+``"/* blah */"`` is the string constant :samp:`/\* blah \*/`, not
 an empty string.
 
 Line comments are not in the 1989 edition of the C standard, but they
