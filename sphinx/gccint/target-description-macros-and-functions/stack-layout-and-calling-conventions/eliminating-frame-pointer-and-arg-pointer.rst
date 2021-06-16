@@ -73,7 +73,7 @@ This is about eliminating the frame pointer and arg pointer.
 
   Default return value is ``true``.
 
-.. c:macro:: INITIAL_ELIMINATION_OFFSET (from-reg, to-reg, offset-var)
+.. c:macro:: INITIAL_ELIMINATION_OFFSET (from_reg, to_reg, offset_var)
 
   This macro returns the initial difference between the specified pair
   of registers.  The value would be computed from information
