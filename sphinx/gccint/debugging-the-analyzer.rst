@@ -49,6 +49,13 @@ reaches the call in its traversal of the source.
 
 .. code-block:: c++
 
+  extern void __analyzer_dump_capacity (const void *ptr);
+
+will emit a warning describing the capacity of the base region of
+the region pointed to by the 1st argument.
+
+.. code-block:: c++
+
   __analyzer_dump_path ();
 
 will emit a placeholder 'note' diagnostic with a path to that call site,
