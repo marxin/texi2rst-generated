@@ -10,7 +10,8 @@ Typedef and constants
 
 The following data type has been defined via ``typedef``.
 
-* :samp:`{__complex128}`:  {__float128}-based complex number
+* :samp:`{__complex128}`:  ``__float128``-based complex number
+
 The following macros are defined, which give the numeric limits of the
 ``__float128`` data type.
 
@@ -24,6 +25,7 @@ The following macros are defined, which give the numeric limits of the
 * :samp:`{FLT128_DIG}`:  number of decimal digits in the mantissa
 * :samp:`{FLT128_MIN_10_EXP}`:  maximal negative decimal exponent
 * :samp:`{FLT128_MAX_10_EXP}`:  maximal positive decimal exponent
+
 The following mathematical constants of type ``__float128`` are defined.
 
 * :samp:`{M_Eq}`:  the constant e (Euler's number)
