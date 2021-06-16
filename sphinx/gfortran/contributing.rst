@@ -24,6 +24,6 @@ but they are also things doable by someone who is willing and able.
 .. toctree::
   :maxdepth: 2
 
+  contributors-to-gnu-fortran
   projects
   proposed-extensions
-  contributors-to-gnu-fortran

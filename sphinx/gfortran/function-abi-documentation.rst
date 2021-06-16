@@ -1086,7 +1086,9 @@ _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
   :param errmsg_len:
     intent(in)  the buffer size of errmsg
 
-  :samp:`{NOTE} A simple implementation could be`
+  .. note::
+
+    A simple implementation could be
     ``__asm__ __volatile__ ("":::"memory")`` to prevent code movements.
 
 .. _gfortran_caf_error_stop:
