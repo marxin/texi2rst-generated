@@ -81,9 +81,9 @@ These targets are available from the :samp:`gcc` directory:
   installed, such as Tcl or DejaGnu.
 
   The toplevel tree from which you start GCC compilation is not
-the GCC directory, but rather a complex Makefile that coordinates
-the various steps of the build, including bootstrapping the compiler
-and using the new compiler to build target libraries.
+  the GCC directory, but rather a complex Makefile that coordinates
+  the various steps of the build, including bootstrapping the compiler
+  and using the new compiler to build target libraries.
 
 When GCC is configured for a native configuration, the default action
 for :command:`make` is to do a full three-stage bootstrap.  This means
@@ -168,8 +168,8 @@ Other targets available from the top level include:
   renamed to :samp:`stage2-gcc`.
 
   If you wish to use non-default GCC flags when compiling the stage2 and
-stage3 compilers, set ``BOOT_CFLAGS`` on the command line when doing
-:samp:`make`.
+  stage3 compilers, set ``BOOT_CFLAGS`` on the command line when doing
+  :samp:`make`.
 
 Usually, the first stage only builds the languages that the compiler
 is written in: typically, C and maybe Ada.  If you are debugging a

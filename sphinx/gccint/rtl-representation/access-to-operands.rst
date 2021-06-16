@@ -80,7 +80,7 @@ vector.
   It is up to you to make sure that :samp:`{eltnum}` is not negative
   and is less than ``XVECLEN (exp, idx)``.
 
-  All the macros defined in this section expand into lvalues and therefore
+All the macros defined in this section expand into lvalues and therefore
 can be used to assign the operands, lengths and vector elements as well as
 to access them.
 

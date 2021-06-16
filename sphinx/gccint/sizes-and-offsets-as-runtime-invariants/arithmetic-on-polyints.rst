@@ -152,7 +152,7 @@ There are tentative routines for other operations besides division:
   storing the result in :samp:`{result}` if so.
 
   Also, ANDs with a value :samp:`(1 << {y}) - 1` or its inverse can be
-treated as alignment operations.  See :ref:`alignment-of-poly_ints`.
+  treated as alignment operations.  See :ref:`alignment-of-poly_ints`.
 
 In addition, the following miscellaneous routines are available:
 

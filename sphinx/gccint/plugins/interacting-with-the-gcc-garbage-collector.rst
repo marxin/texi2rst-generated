@@ -30,7 +30,7 @@ Some plugins may need to add extra GGC root tables, e.g. to handle their own
 ``GTY`` -ed data. This can be done with the ``PLUGIN_REGISTER_GGC_ROOTS``
 pseudo-event with a null callback and the extra root table (of type ``struct
 ggc_root_tab*`` ) as ``user_data``.  Running the
- ``gengtype -p source-dirfile-listplugin*.c ...``
+``gengtype -p source-dirfile-listplugin*.c ...``
 utility generates these extra root tables.
 
 You should understand the details of memory management inside GCC

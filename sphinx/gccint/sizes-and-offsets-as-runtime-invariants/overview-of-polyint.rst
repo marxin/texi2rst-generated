@@ -77,5 +77,5 @@ most common forms of ``poly_int``, all having
   a :samp:`poly_int` with ``widest_int`` coefficients.
 
   Since the main purpose of ``poly_int`` is to represent sizes and
-offsets, the last two typedefs are only rarely used.
+  offsets, the last two typedefs are only rarely used.
 

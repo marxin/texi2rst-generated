@@ -83,7 +83,7 @@ Six special side-effect expression codes appear as memory addresses.
 :samp:`(pre_modify:{m}{x}{expr})`
   Similar except side effects happen before the use.
 
-  These embedded side effect expressions must be used with care.  Instruction
+These embedded side effect expressions must be used with care.  Instruction
 patterns may not use them.  Until the :samp:`flow` pass of the compiler,
 they may occur only to represent pushes onto the stack.  The :samp:`flow`
 pass finds cases where registers are incremented or decremented in one

@@ -63,8 +63,7 @@ The functions have their natural meaning:
 :samp:`maybe_gt({a}, {b})`
   Return true if :samp:`{a}` might be greater than :samp:`{b}`.
 
-  For readability, ``poly_int`` also provides 'known' inverses of these
-functions:
+  For readability, ``poly_int`` also provides 'known' inverses of these functions:
 
 .. code-block:: c++
 
@@ -205,7 +204,7 @@ the following utility functions for ordered values:
   why the values are known to be ordered.
 
   For example, if a subreg has an outer mode of size :samp:`{outer}` and an
-inner mode of size :samp:`{inner}` :
+  inner mode of size :samp:`{inner}` :
 
 * the subreg is complete if known_eq ( :samp:`{inner}`, :samp:`{outer}` )
 

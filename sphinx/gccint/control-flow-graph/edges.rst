@@ -65,10 +65,10 @@ to operate on them:
   indicates the end of the sequence.
 
   The convenience macro ``FOR_EACH_EDGE`` can be used to visit all of
-the edges in a sequence of predecessor or successor edges.  It must
-not be used when an element might be removed during the traversal,
-otherwise elements will be missed.  Here is an example of how to use
-the macro:
+  the edges in a sequence of predecessor or successor edges.  It must
+  not be used when an element might be removed during the traversal,
+  otherwise elements will be missed.  Here is an example of how to use
+  the macro:
 
 .. code-block:: c++
 

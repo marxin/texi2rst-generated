@@ -47,8 +47,8 @@ than fully explored) and thus in what order to explore the functions.
 Next is the heart of the analyzer: we use a worklist to explore state
 within the supergraph, building an "exploded graph".
 Nodes in the exploded graph correspond to <point,state> pairs, as in
-     "Precise Interprocedural Dataflow Analysis via Graph Reachability"
-     (Thomas Reps, Susan Horwitz and Mooly Sagiv).
+"Precise Interprocedural Dataflow Analysis via Graph Reachability"
+(Thomas Reps, Susan Horwitz and Mooly Sagiv).
 
 We reuse nodes for <point, state> pairs we've already seen, and avoid
 tracking state too closely, so that (hopefully) we rapidly converge

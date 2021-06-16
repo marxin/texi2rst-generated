@@ -283,5 +283,4 @@ standard rule in :samp:`gcc/Makefile.in` to the variable
   but should not delete anything that is.
 
   :samp:`Make-lang.in` must also define a variable ``lang_OBJS``
-to a list of host object files that are used by that language.
-
+  to a list of host object files that are used by that language.

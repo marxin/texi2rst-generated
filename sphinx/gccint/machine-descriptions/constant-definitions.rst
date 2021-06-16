@@ -154,6 +154,7 @@ Some enumeration names have special significance to GCC:
 .. index:: define_enum
 
 .. _define_enum:
+
 Another way of defining an enumeration is to use ``define_enum`` :
 
 .. code-block:: c++

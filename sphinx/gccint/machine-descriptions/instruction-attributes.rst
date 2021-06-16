@@ -113,13 +113,14 @@ attributes are not free to use for other purposes:
   specific checks in e.g. the pipeline description.
   See :ref:`mnemonic-attribute`.
 
-  For each of these special attributes, the corresponding
+For each of these special attributes, the corresponding
 :samp:`HAVE_ATTR_{name}` :samp:`#define` is also written when the
 attribute is not defined; in that case, it is defined as :samp:`0`.
 
 .. index:: define_enum_attr
 
 .. _define_enum_attr:
+
 Another way of defining an attribute is to use:
 
 .. code-block:: c++

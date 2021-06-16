@@ -197,9 +197,9 @@ A few other macros and functions are usable with all types:
   use ``same_type_p`` instead.
 
   Detailed below are the various kinds of types, and the macros that can
-be used to access them.  Although other kinds of types are used
-elsewhere in G++, the types described here are the only ones that you
-will encounter while examining the intermediate representation.
+  be used to access them.  Although other kinds of types are used
+  elsewhere in G++, the types described here are the only ones that you
+  will encounter while examining the intermediate representation.
 
 .. envvar:: VOID_TYPE
 
@@ -380,7 +380,7 @@ These include:
   A node for ``char``.
 
   It may sometimes be useful to compare one of these variables with a type
-in hand, using ``same_type_p``.
+  in hand, using ``same_type_p``.
 
 .. -
    Declarations

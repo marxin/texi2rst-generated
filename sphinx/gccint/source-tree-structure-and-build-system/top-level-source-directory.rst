@@ -110,7 +110,7 @@ subdirectories that contain parts of GCC and its runtime libraries:
   The ``zlib`` compression library, used for compressing and
   uncompressing GCC's intermediate language in LTO object files.
 
-  The build system in the top level directory, including how recursion
+The build system in the top level directory, including how recursion
 into subdirectories works and how building runtime libraries for
 multilibs is handled, is documented in a separate manual, included
 with GNU Binutils.  See :ref:`GNU configure and build system <top>`, for details.
