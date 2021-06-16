@@ -160,6 +160,7 @@ C code            MIPS instruction
 ``-(a * b - c)``  ``nmsub.ps``
 ``x ? a : b``     ``movn.ps`` / ``movz.ps``
 ================  =========================
+
 Note that the multiply-accumulate instructions can be disabled
 using the command-line option ``-mno-fused-madd``.
 
@@ -199,11 +200,13 @@ for details on what each instruction does.
 ``v2sf __builtin_mips_alnv_ps (v2sf, v2sf, int)``
   Align variable ( ``alnv.ps`` ).
 
-  *Note:* The value of the third parameter must be 0 or 4
-  modulo 8, otherwise the result is unpredictable.  Please read the
-  instruction description for details.
+  .. note::
 
-  The following multi-instruction functions are also available.
+    The value of the third parameter must be 0 or 4
+    modulo 8, otherwise the result is unpredictable.  Please read the
+    instruction description for details.
+
+The following multi-instruction functions are also available.
 In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 ``f``, ``un``, ``eq``, ``ueq``, ``olt``, ``ult``,
 ``ole``, ``ule``, ``sf``, ``ngle``, ``seq``, ``ngl``,
@@ -211,6 +214,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`v2sf __builtin_mips_movt_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
 :samp:`v2sf __builtin_mips_movf_c_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+
   Conditional move based on floating-point comparison ( ``c.cond.ps``,
   ``movt.ps`` / ``movf.ps`` ).
 
@@ -227,6 +231,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`int __builtin_mips_upper_c_{cond}_ps (v2sf {a}, v2sf {b})`
 :samp:`int __builtin_mips_lower_c_{cond}_ps (v2sf {a}, v2sf {b})`
+
   Comparison of two paired-single values ( ``c.cond.ps``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -275,33 +280,39 @@ more details on what each instruction does.
 ``float __builtin_mips_recip1_s (float)``
 ``double __builtin_mips_recip1_d (double)``
 ``v2sf __builtin_mips_recip1_ps (v2sf)``
+
   Reduced-precision reciprocal (sequence step 1) ( ``recip1.fmt`` ).
 
 ``float __builtin_mips_recip2_s (float, float)``
 ``double __builtin_mips_recip2_d (double, double)``
 ``v2sf __builtin_mips_recip2_ps (v2sf, v2sf)``
+
   Reduced-precision reciprocal (sequence step 2) ( ``recip2.fmt`` ).
 
 ``float __builtin_mips_rsqrt1_s (float)``
 ``double __builtin_mips_rsqrt1_d (double)``
 ``v2sf __builtin_mips_rsqrt1_ps (v2sf)``
+
   Reduced-precision reciprocal square root (sequence step 1)
   ( ``rsqrt1.fmt`` ).
 
 ``float __builtin_mips_rsqrt2_s (float, float)``
 ``double __builtin_mips_rsqrt2_d (double, double)``
 ``v2sf __builtin_mips_rsqrt2_ps (v2sf, v2sf)``
+
   Reduced-precision reciprocal square root (sequence step 2)
   ( ``rsqrt2.fmt`` ).
 
-  The following multi-instruction functions are also available.
+The following multi-instruction functions are also available.
 In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
+
 ``f``, ``un``, ``eq``, ``ueq``, ``olt``, ``ult``,
 ``ole``, ``ule``, ``sf``, ``ngle``, ``seq``,
 ``ngl``, ``lt``, ``nge``, ``le`` or ``ngt``.
 
 :samp:`int __builtin_mips_cabs_{cond}_s (float {a}, float {b})`
 :samp:`int __builtin_mips_cabs_{cond}_d (double {a}, double {b})`
+
   Absolute comparison of two scalar values ( ``cabs.cond.fmt``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -319,6 +330,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`int __builtin_mips_upper_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
 :samp:`int __builtin_mips_lower_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+
   Absolute comparison of two paired-single values ( ``cabs.cond.ps``,
   ``bc1t`` / ``bc1f`` ).
 
@@ -340,6 +352,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 
 :samp:`v2sf __builtin_mips_movt_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
 :samp:`v2sf __builtin_mips_movf_cabs_{cond}_ps (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+
   Conditional move based on absolute comparison ( ``cabs.cond.ps``,
   ``movt.ps`` / ``movf.ps`` ).
 
@@ -358,6 +371,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 :samp:`int __builtin_mips_all_c_{cond}_ps (v2sf {a}, v2sf {b})`
 :samp:`int __builtin_mips_any_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
 :samp:`int __builtin_mips_all_cabs_{cond}_ps (v2sf {a}, v2sf {b})`
+
   Comparison of two paired-single values
   ( ``c.cond.ps`` / ``cabs.cond.ps``,
   ``bc1any2t`` / ``bc1any2f`` ).
@@ -384,6 +398,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
 :samp:`int __builtin_mips_all_c_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
 :samp:`int __builtin_mips_any_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
 :samp:`int __builtin_mips_all_cabs_{cond}_4s (v2sf {a}, v2sf {b}, v2sf {c}, v2sf {d})`
+
   Comparison of four paired-single values
   ( ``c.cond.ps`` / ``cabs.cond.ps``,
   ``bc1any4t`` / ``bc1any4f`` ).
