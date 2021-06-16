@@ -35,10 +35,7 @@ constants have their own character set, which is not called out
 specifically in the standard.  Again, it is under control of the user.
 The default is UTF-16 or UTF-32, whichever fits in the target's
 ``wchar_t`` type, in the target machine's byte
-order.UTF-16 does not meet the requirements of the C
-standard for a wide character set, but the choice of 16-bit
-``wchar_t`` is enshrined in some system ABIs so we cannot fix
-this.
+order [#f1]_.
 
 Octal and hexadecimal escape sequences do not undergo
 conversion; '\x12' has the value 0x12 regardless of the currently
@@ -53,3 +50,7 @@ encoding.  If strict ISO C90 conformance is specified with an option
 such as :option:`-std`:samp:`=c90`, or :option:`-fno-extended-identifiers` is
 used, then those constructs are not permitted in identifiers.
 
+.. [#f1] UTF-16 does not meet the requirements of the C
+  standard for a wide character set, but the choice of 16-bit
+  ``wchar_t`` is enshrined in some system ABIs so we cannot fix
+  this.

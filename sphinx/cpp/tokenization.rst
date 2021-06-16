@@ -108,9 +108,7 @@ might have intended.
 .. the @: prevents makeinfo from turning '' into ".
 
 :dfn:`String literals` are string constants, character constants, and
-header file names (the argument of :samp:`#include`).The C
-standard uses the term :dfn:`string literal` to refer only to what we are
-calling :dfn:`string constants`.
+header file names (the argument of :samp:`#include`) [#f1]_.
 
 String constants and character
 constants are straightforward: "..." or '...'.  In
@@ -179,3 +177,6 @@ have the same meaning.
 NULs are preserved.  In the latter two cases the preprocessor emits a
 warning message.
 
+.. [#f1] The C
+  standard uses the term :dfn:`string literal` to refer only to what we are
+  calling :dfn:`string constants`.
