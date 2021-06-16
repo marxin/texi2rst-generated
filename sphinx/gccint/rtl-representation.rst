@@ -27,27 +27,27 @@ form uses nested parentheses to indicate the pointers in the internal form.
 .. toctree::
   :maxdepth: 2
 
-  rtl-representation/machine-modes
-  rtl-representation/bit-fields
-  rtl-representation/vector-operations
-  rtl-representation/conversions
-  rtl-representation/declarations
-  rtl-representation/insns
-  rtl-representation/reading-rtl
   rtl-representation/rtl-object-types
   rtl-representation/rtl-classes-and-formats
   rtl-representation/access-to-operands
   rtl-representation/access-to-special-operands
   rtl-representation/flags-in-an-rtl-expression
+  rtl-representation/machine-modes
   rtl-representation/constant-expression-types
   rtl-representation/registers-and-memory
   rtl-representation/rtl-expressions-for-arithmetic
   rtl-representation/comparison-operations
+  rtl-representation/bit-fields
+  rtl-representation/vector-operations
+  rtl-representation/conversions
+  rtl-representation/declarations
   rtl-representation/side-effect-expressions
   rtl-representation/embedded-side-effects-on-addresses
   rtl-representation/assembler-instructions-as-expressions
   rtl-representation/variable-location-debug-information-in-rtl
+  rtl-representation/insns
   rtl-representation/rtl-representation-of-function-call-insns
   rtl-representation/on-the-side-ssa-form-for-rtl
   rtl-representation/structure-sharing-assumptions
+  rtl-representation/reading-rtl
 

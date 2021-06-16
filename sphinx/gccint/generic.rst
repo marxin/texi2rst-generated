@@ -36,15 +36,15 @@ seems inelegant.
   :maxdepth: 2
 
   generic/deficiencies
+  generic/overview
   generic/types
   generic/declarations
+  generic/attributes-in-trees
+  generic/expressions
   generic/statements
   generic/functions
   generic/language-dependent-trees
   generic/c-and-c++-trees
-  generic/overview
-  generic/attributes-in-trees
-  generic/expressions
 
 .. -
    Deficiencies
