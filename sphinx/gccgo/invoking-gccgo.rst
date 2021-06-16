@@ -3,18 +3,20 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _invoking-gccgo:
+.. only:: man
 
-Invoking gccgo
---------------
+  .. _invoking-gccgo:
 
-Synopsis
-^^^^^^^^
+  Invoking gccgo
+  --------------
 
-gccgo [ :option:`-c` | :option:`-S` ]
-      [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
-      [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-      [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
+  Synopsis
+  ^^^^^^^^
+
+  gccgo [ :option:`-c` | :option:`-S` ]
+        [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
+        [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+        [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
 
 Description
 ^^^^^^^^^^^
