@@ -19,7 +19,7 @@ there are three things you need to do:
 * You need to add the file to the list of source files the type
   machinery scans.  There are four cases:
 
-  a* For a back-end file, this is usually done
+  * For a back-end file, this is usually done
     automatically; if not, you should add it to ``target_gtfiles`` in
     the appropriate port's entries in :samp:`config.gcc`.
 

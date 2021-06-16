@@ -26,13 +26,7 @@ option.  Each concrete subclass must use the 'tag' option to identify
 which value of the discriminator it corresponds to.
 
 Every class in the hierarchy must have a ``GTY(())`` marker, as
-gengtype will only attempt to parse classes that have such a marker
-Classes lacking such a marker will not be identified as being
-part of the hierarchy, and so the marking routines will not handle them,
-leading to a assertion failure within the marking routines due to an
-unknown tag value (assuming that assertions are enabled).
-
-.
+gengtype will only attempt to parse classes that have such a marker [#f1]_.
 
 .. code-block:: c++
 
@@ -59,3 +53,7 @@ The generated marking routines for the above will contain a 'switch'
 on 'kind', visiting all appropriate fields.  For example, if kind is
 2, it will cast to 'some_other_subclass' and visit fields a, b, and c.
 
+.. [#f1] Classes lacking such a marker will not be identified as being
+  part of the hierarchy, and so the marking routines will not handle them,
+  leading to a assertion failure within the marking routines due to an
+  unknown tag value (assuming that assertions are enabled).

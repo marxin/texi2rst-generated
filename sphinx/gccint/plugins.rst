@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2021 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying condtions, see the GPL license file
 
 .. _plugins:
 
@@ -23,8 +23,8 @@ can be quite useful.
 .. toctree::
   :maxdepth: 2
 
-  plugins/plugin-api
   plugins/loading-plugins
+  plugins/plugin-api
   plugins/interacting-with-the-pass-manager
   plugins/interacting-with-the-gcc-garbage-collector
   plugins/giving-information-about-a-plugin
