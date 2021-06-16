@@ -1361,8 +1361,6 @@ Modifier  Description                                                           
 ``Z``     Like ``z``, with special suffixes for x87 instructions.
 ========  ============================================================================================================  =======  ================  ==============
 
-.. rubric:: Footnotes
-
 .. [#f1] For example, emit ``foo@PLT`` instead of 'foo' for the function foo(). If used for a constant,
   drop all syntax-specific prefixes and issue the bare constant. See ``p`` above.
 
