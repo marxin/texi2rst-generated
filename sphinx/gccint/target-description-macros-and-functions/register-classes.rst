@@ -425,6 +425,10 @@ in many of the tables described below.
 
 .. c:macro:: SECONDARY_RELOAD_CLASS (class, mode, x)
 
+.. c:macro:: SECONDARY_INPUT_RELOAD_CLASS (class, mode, x)
+
+.. c:macro:: SECONDARY_OUTPUT_RELOAD_CLASS (class, mode, x)
+
   These macros are obsolete, new ports should use the target hook
   ``TARGET_SECONDARY_RELOAD`` instead.
 

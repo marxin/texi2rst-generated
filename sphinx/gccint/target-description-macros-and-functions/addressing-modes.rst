@@ -16,16 +16,26 @@ This is about addressing modes.
 
 .. c:macro:: HAVE_PRE_INCREMENT
 
+.. c:macro:: HAVE_PRE_DECREMENT
+
+.. c:macro:: HAVE_POST_INCREMENT
+
+.. c:macro:: HAVE_POST_DECREMENT
+
   A C expression that is nonzero if the machine supports pre-increment,
   pre-decrement, post-increment, or post-decrement addressing respectively.
 
 .. c:macro:: HAVE_PRE_MODIFY_DISP
+
+.. c:macro:: HAVE_POST_MODIFY_DISP
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving constants other than
   the size of the memory operand.
 
 .. c:macro:: HAVE_PRE_MODIFY_REG
+
+.. c:macro:: HAVE_POST_MODIFY_REG
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving a register displacement.

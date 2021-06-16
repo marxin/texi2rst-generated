@@ -382,6 +382,16 @@ of ``ASM_OUTPUT_DOUBLE`` and the like:
 
 .. c:macro:: REAL_VALUE_TO_TARGET_SINGLE (x, l)
 
+.. c:macro:: REAL_VALUE_TO_TARGET_DOUBLE (x, l)
+
+.. c:macro:: REAL_VALUE_TO_TARGET_LONG_DOUBLE (x, l)
+
+.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL32 (x, l)
+
+.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL64 (x, l)
+
+.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL128 (x, l)
+
   These translate :samp:`{x}`, of type ``REAL_VALUE_TYPE``, to the
   target's floating point representation, and store its bit pattern in
   the variable :samp:`{l}`.  For ``REAL_VALUE_TO_TARGET_SINGLE`` and
@@ -1497,6 +1507,12 @@ being output.
 .. index:: asm_fprintf
 
 .. c:macro:: REGISTER_PREFIX
+
+.. c:macro:: LOCAL_LABEL_PREFIX
+
+.. c:macro:: USER_LABEL_PREFIX
+
+.. c:macro:: IMMEDIATE_PREFIX
 
   If defined, C string expressions to be used for the :samp:`%R`, :samp:`%L`,
   :samp:`%U`, and :samp:`%I` options of ``asm_fprintf`` (see

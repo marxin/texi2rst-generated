@@ -359,6 +359,8 @@ Here are several miscellaneous parameters.
 
 .. c:macro:: CLZ_DEFINED_VALUE_AT_ZERO (mode, value)
 
+.. c:macro:: CTZ_DEFINED_VALUE_AT_ZERO (mode, value)
+
   A C expression that indicates whether the architecture defines a value
   for ``clz`` or ``ctz`` with a zero operand.
   A result of ``0`` indicates the value is undefined.
