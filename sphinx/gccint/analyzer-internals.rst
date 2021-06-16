@@ -154,7 +154,7 @@ Similar issues arise with loops.
 
 To prevent this, we follow various approaches:
 
-a* state pruning: which tries to discard state that won't be relevant
+* state pruning: which tries to discard state that won't be relevant
   later on withing the function.
   This can be disabled via :option:`-fno-analyzer-state-purge`.
 
