@@ -91,9 +91,6 @@ following are also necessary:
 .. toctree::
   :maxdepth: 2
 
-  front-end-directory
-  front-end-config
-  front-end-makefile
 
 .. _front-end-directory:
 

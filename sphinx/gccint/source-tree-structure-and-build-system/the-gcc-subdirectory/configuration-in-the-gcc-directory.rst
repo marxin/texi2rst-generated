@@ -18,9 +18,6 @@ timestamp.
 .. toctree::
   :maxdepth: 2
 
-  config-fragments
-  system-config
-  configuration-files
 
 .. _config-fragments:
 

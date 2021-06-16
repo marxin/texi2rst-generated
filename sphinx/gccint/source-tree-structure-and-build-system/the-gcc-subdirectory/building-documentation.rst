@@ -20,9 +20,6 @@ documentation for runtime libraries somewhere.
 .. toctree::
   :maxdepth: 2
 
-  texinfo-manuals
-  man-page-generation
-  miscellaneous-docs
 
 .. _texinfo-manuals:
 

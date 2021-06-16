@@ -17,15 +17,6 @@ separate chapter.  See :ref:`Passes and Files of the Compiler <passes>`.
 .. toctree::
   :maxdepth: 2
 
-  the-gcc-subdirectory/subdirectories
-  the-gcc-subdirectory/configuration
-  the-gcc-subdirectory/build
-  the-gcc-subdirectory/makefile
-  the-gcc-subdirectory/library-files
-  the-gcc-subdirectory/headers
-  the-gcc-subdirectory/documentation
-  the-gcc-subdirectory/front-end
-  the-gcc-subdirectory/back-end
   the-gcc-subdirectory/subdirectories-of-gcc
   the-gcc-subdirectory/configuration-in-the-gcc-directory
   the-gcc-subdirectory/build-system-in-the-gcc-directory
