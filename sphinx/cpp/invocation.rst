@@ -28,20 +28,22 @@ pertaining to compilation phases after preprocessing are ignored.
 Only options specific to preprocessing behavior are documented here.
 Refer to the GCC manual for full documentation of other driver options.
 
-Synopsis
-^^^^^^^^
+.. only:: man
 
-cpp [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-iquote`:samp:`{dir}`...]
-    [ :option:`-M` | :option:`-MM` ] [ :option:`-MG` ] [ :option:`-MF` :samp:`{filename}` ]
-    [ :option:`-MP` ] [ :option:`-MQ` :samp:`{target}`...]
-    [ :option:`-MT` :samp:`{target}`...]
-    :samp:`{infile}` [[ :option:`-o` ] :samp:`{outfile}` ]
+  Synopsis
+  ^^^^^^^^
 
-Only the most useful options are given above; see below for a more
-complete list of preprocessor-specific options.  
-In addition, :command:`cpp` accepts most :command:`gcc` driver options, which
-are not listed here.  Refer to the GCC documentation for details.
+  cpp [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
+      [ :option:`-I`:samp:`{dir}`...] [ :option:`-iquote`:samp:`{dir}`...]
+      [ :option:`-M` | :option:`-MM` ] [ :option:`-MG` ] [ :option:`-MF` :samp:`{filename}` ]
+      [ :option:`-MP` ] [ :option:`-MQ` :samp:`{target}`...]
+      [ :option:`-MT` :samp:`{target}`...]
+      :samp:`{infile}` [[ :option:`-o` ] :samp:`{outfile}` ]
+
+  Only the most useful options are given above; see below for a more
+  complete list of preprocessor-specific options.  
+  In addition, :command:`cpp` accepts most :command:`gcc` driver options, which
+  are not listed here.  Refer to the GCC documentation for details.
 
 Options
 ^^^^^^^
