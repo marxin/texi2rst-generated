@@ -39,7 +39,7 @@ are linked-lists formed by the ``block`` members.
 
 Consider the following example code:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   IF (foo < 20) THEN
     PRINT *, "Too small"

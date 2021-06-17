@@ -42,16 +42,14 @@ has its own scope for variables; if it is created using
 
 It is possible to
 
-* Add an expression to the end of a block using
-        ``gfc_add_expr_to_block``
+* Add an expression to the end of a block using ``gfc_add_expr_to_block``
 
-* Add an expression to the beginning of a block using
-        ``void gfc_prepend_expr_to_block``
+* Add an expression to the beginning of a block using ``void gfc_prepend_expr_to_block``
 
 * Make a block into a single ``tree`` using
-        ``gfc_finish_block``.  For example, this is needed to put the
-        contents of a block into the ``if`` or ``else`` branch of
-        a ``COND_EXPR``.
+  ``gfc_finish_block``.  For example, this is needed to put the
+  contents of a block into the ``if`` or ``else`` branch of
+  a ``COND_EXPR``.
 
 Variables are also ``tree`` expressions, they can be created using
 ``gfc_create_var``. Assigning to a variable can be done with

@@ -124,7 +124,7 @@ array rather than being followed by an array-element or -section reference, a
 ``REF_ARRAY`` reference must be built as the last element in the chain with
 an array-reference type of ``AR_FULL``. Consider this example code:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   TYPE :: mytype
     INTEGER :: array(42)

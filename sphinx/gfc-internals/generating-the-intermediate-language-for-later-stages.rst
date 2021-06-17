@@ -19,7 +19,6 @@ Data structures relating to this are found in the source files
   :maxdepth: 2
 
   generating-the-intermediate-language-for-later-stages/basic-data-structures
+  generating-the-intermediate-language-for-later-stages/converting-expressions-to-tree
   generating-the-intermediate-language-for-later-stages/translating-statements
   generating-the-intermediate-language-for-later-stages/accessing-declarations
-  generating-the-intermediate-language-for-later-stages/converting-expressions-to-tree
-

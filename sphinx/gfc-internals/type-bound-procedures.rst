@@ -77,7 +77,7 @@ in whose context the procedure was called is saved by combination of
 
 For code like this:
 
-.. code-block:: c++
+.. code-block:: fortran
 
   CALL myobj%procedure (arg1, arg2)
 

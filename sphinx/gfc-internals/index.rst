@@ -28,9 +28,8 @@ Contents:
 
   copyright
   introduction
-  frontend-data-structures
-
   code-that-interacts-with-the-user
+  frontend-data-structures
   internals-of-fortran-2003-oop-features
   generating-the-intermediate-language-for-later-stages
   the-libgfortran-runtime-library
