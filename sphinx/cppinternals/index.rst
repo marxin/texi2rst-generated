@@ -12,6 +12,7 @@ Contents:
   :maxdepth: 1
 
   copyright
-  cppinternals.rst
+  cppinternals
+  files
 
   indices-and-tables
