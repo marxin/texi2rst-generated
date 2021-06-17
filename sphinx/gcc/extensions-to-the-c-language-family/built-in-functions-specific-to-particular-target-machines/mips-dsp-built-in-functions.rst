@@ -84,6 +84,7 @@ C code     MIPS instruction
 ``a - b``  ``subu.qb``
 ``c - d``  ``subq.ph``
 =========  ================
+
 The table below lists the ``v2i16`` operation for which
 hardware support exists for the DSP ASE REV 2.  ``e`` and ``f`` are
 ``v2i16`` values.
@@ -93,6 +94,7 @@ C code     MIPS instruction
 =========  ================
 ``e * f``  ``mul.ph``
 =========  ================
+
 It is easier to describe the DSP built-in functions if we first define
 the following types:
 

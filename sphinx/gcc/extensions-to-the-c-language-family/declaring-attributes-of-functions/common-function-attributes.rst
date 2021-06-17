@@ -1603,7 +1603,7 @@ The following attributes are supported on most targets.
     definition in that module.  That is, the declared entity cannot be
     overridden by another module.
 
-    All visibilities are supported on many, but not all, ELF targets
+  All visibilities are supported on many, but not all, ELF targets
   (supported when the assembler supports the :samp:`.visibility`
   pseudo-op).  Default visibility is supported everywhere.  Hidden
   visibility is supported on Darwin targets.
@@ -1796,7 +1796,7 @@ The following attributes are supported on most targets.
     zeros all call-used general purpose registers that pass
     arguments.
 
-    Of this list, :samp:`used-arg`, :samp:`used-gpr-arg`, :samp:`all-arg`,
+  Of this list, :samp:`used-arg`, :samp:`used-gpr-arg`, :samp:`all-arg`,
   and :samp:`all-gpr-arg` are mainly used for ROP mitigation.
 
   The default for the attribute is controlled by :option:`-fzero-call-used-regs`.

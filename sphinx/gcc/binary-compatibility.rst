@@ -60,7 +60,7 @@ Binary compatibility encompasses several related concepts:
   Conformance to the same ABI and the same behavior of implementation-defined
   features are both relevant for compatibility.
 
-  The application binary interface implemented by a C or C++ compiler
+The application binary interface implemented by a C or C++ compiler
 affects code generation and runtime support for:
 
 * size and alignment of data types

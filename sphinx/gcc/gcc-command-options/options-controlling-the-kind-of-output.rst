@@ -137,7 +137,7 @@ You can specify the input language explicitly with the :option:`-x` option:
   handled according to their file name suffixes (as they are if :option:`-x`
   has not been used at all).
 
-  If you only want some of the stages of compilation, you can use
+If you only want some of the stages of compilation, you can use
 :option:`-x` (or filename suffixes) to tell :command:`gcc` where to start, and
 one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 :command:`gcc` is to stop.  Note that some combinations (for example,
@@ -568,7 +568,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     Display options taking an argument that appears as a separate word
     following the original option, such as: :samp:`-o output-file`.
 
-    Thus for example to display all the undocumented target-specific
+  Thus for example to display all the undocumented target-specific
   switches supported by the compiler, use:
 
   :option:`--help`:samp:`=target,undocumented`

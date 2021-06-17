@@ -279,7 +279,7 @@ Options
   would have been used otherwise.  The option is an alternative
   to the :samp:`{--preserve-paths}` on systems which have a filesystem limit.
 
-  :command:`gcov` should be run with the current directory the same as that
+:command:`gcov` should be run with the current directory the same as that
 when you invoked the compiler.  Otherwise it will not be able to locate
 the source files.  :command:`gcov` produces files called
 :samp:`{mangledname}.gcov` in the current directory.  These contain

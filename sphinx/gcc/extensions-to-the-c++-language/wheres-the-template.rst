@@ -48,7 +48,7 @@ Cfront model
   of non-inline member templates into a separate file, which should be
   compiled separately.
 
-  G++ implements the Borland model on targets where the linker supports it,
+G++ implements the Borland model on targets where the linker supports it,
 including ELF targets (such as GNU/Linux), Mac OS X and Microsoft Windows.
 Otherwise G++ implements neither automatic model.
 

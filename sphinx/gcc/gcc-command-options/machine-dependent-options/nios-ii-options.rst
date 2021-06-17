@@ -57,7 +57,7 @@ These are the options defined for the Altera Nios II processor.
     linker script to allocate them within the addressable range of the
     global pointer.
 
-    :option:`-mgpopt` is equivalent to :option:`-mgpopt`:samp:`=local`, and
+  :option:`-mgpopt` is equivalent to :option:`-mgpopt`:samp:`=local`, and
   :option:`-mno-gpopt` is equivalent to :option:`-mgpopt`:samp:`=none`.
 
   The default is :option:`-mgpopt` except when :option:`-fpic` or
@@ -228,7 +228,7 @@ These are the options defined for the Altera Nios II processor.
   :samp:`{floatis}, {floatus}, {floatid}, {floatud}`
     Conversion from signed or unsigned integer types to floating-point types.
 
-    In addition, all of the following transfer instructions for internal
+  In addition, all of the following transfer instructions for internal
   registers X and Y must be provided to use any of the double-precision
   floating-point instructions.  Custom instructions taking two
   double-precision source operands expect the first operand in the
@@ -256,7 +256,7 @@ These are the options defined for the Altera Nios II processor.
   frdy
     Read the value of Y and store it into :samp:`{dest}`.
 
-    Note that you can gain more local control over generation of Nios II custom
+  Note that you can gain more local control over generation of Nios II custom
   instructions by using the ``target("custom-insn=N")``
   and ``target("no-custom-insn")`` function attributes
   (see :ref:`function-attributes`)

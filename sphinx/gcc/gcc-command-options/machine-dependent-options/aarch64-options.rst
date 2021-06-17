@@ -175,6 +175,7 @@ These options are defined for AArch64 implementations:
   :samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
   :samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
   ====================  ============  =====================================================================
+
   The value :samp:`native` is available on native AArch64 GNU/Linux and
   causes the compiler to pick the architecture of the host system.  This
   option has no effect if the compiler is unable to recognize the

@@ -67,7 +67,7 @@ Template Instantiations
   but there are other options as well.
   See :ref:`Where's the Template? <template-instantiation>`.
 
-  When used with GNU ld version 2.8 or later on an ELF system such as
+When used with GNU ld version 2.8 or later on an ELF system such as
 GNU/Linux or Solaris 2, or on Microsoft Windows, duplicate copies of
 these constructs will be discarded at link time.  This is known as
 COMDAT support.

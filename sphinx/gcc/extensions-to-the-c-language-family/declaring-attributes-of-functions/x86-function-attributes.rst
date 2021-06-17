@@ -861,7 +861,7 @@ These function attributes are supported by the x86 back end:
     :samp:`512`
       Prefer 512-bit vector width for instructions.
 
-      On the x86, the inliner does not inline a
+    On the x86, the inliner does not inline a
     function that has different target options than the caller, unless the
     callee has a subset of the target options of the caller.  For example
     a function declared with ``target("sse3")`` can inline a function

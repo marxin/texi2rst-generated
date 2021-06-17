@@ -81,7 +81,7 @@ or if not a specific built-in is implemented or not. For example, if
   Insert :samp:`{count}` ``NOP`` instructions.
   The number of instructions must be a compile-time integer constant.
 
-  There are many more AVR-specific built-in functions that are used to
+There are many more AVR-specific built-in functions that are used to
 implement the ISO/IEC TR 18037 'Embedded C' fixed-point functions of
 section 7.18a.6.  You don't need to use these built-ins directly.
 Instead, use the declarations as supplied by the ``stdfix.h`` header

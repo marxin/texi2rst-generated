@@ -132,7 +132,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
     Instruction precision.  The trap handler can determine the exact
     instruction that caused a floating-point exception.
 
-    Other Alpha compilers provide the equivalent options called
+  Other Alpha compilers provide the equivalent options called
   :option:`-scope_safe` and :option:`-resumption_safe`.
 
 .. option:: -mieee-conformant
@@ -238,7 +238,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   :samp:`ev67` :samp:`21264a`
     Schedules as an EV6 and supports the BWX, CIX, FIX, and MAX extensions.
 
-    Native toolchains also support the value :samp:`native`,
+  Native toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
   :option:`-mcpu`:samp:`=native` has no effect if GCC does not recognize
   the processor.

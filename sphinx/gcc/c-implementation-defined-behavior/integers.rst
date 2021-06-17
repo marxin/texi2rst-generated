@@ -19,9 +19,9 @@ Integers
 
   .. the standard type names might be used.  Predefined typedefs should
 
-  .. be used if any extended integer types are to be defined.  The
+  .. be used if any extended integer types are to be defined.  The __int128_t and __uint128_t
 
-  .. __int128_t and __uint128_t typedefs are not extended integer types
+  .. typedefs are not extended integer types
 
   .. as they are generally longer than the ABI-specified intmax_t.
 

@@ -21,7 +21,7 @@ atomic intrinsics.
   End lock elision on a lock variable.
   Memory order must be ``__ATOMIC_RELEASE`` or stronger.
 
-  When a lock acquire fails, it is required for good performance to abort
+When a lock acquire fails, it is required for good performance to abort
 the transaction quickly. This can be done with a ``_mm_pause``.
 
 .. code-block:: c++

@@ -541,7 +541,7 @@ that use the ISA 3.0 instruction set ( :option:`-mcpu`:samp:`=power9`):
 
   .. index:: __builtin_truncf128_round_to_odd
 
-  The following additional built-in functions are also available for the
+The following additional built-in functions are also available for the
 PowerPC family of processors, starting with ISA 3.0 or later:
 
 .. code-block:: c++

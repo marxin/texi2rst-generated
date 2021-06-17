@@ -45,6 +45,7 @@ Pseudo type  Real C type             Constant?  Description
 ``acc``      ``int``                 Yes        an ACC register number
 ``iacc``     ``int``                 Yes        an IACC register number
 ===========  ======================  =========  =======================
+
 These pseudo types are not defined by GCC, they are simply a notational
 convenience used in this manual.
 
@@ -84,6 +85,7 @@ Function prototype           Example usage           Assembly output
 ``sw1 __SUBSS (sw1, sw1)``   ``c = __SUBSS (a, b)``  ``SUBSS a,b,c``
 ``uw2 __UMUL (uw1, uw1)``    ``c = __UMUL (a, b)``   ``UMUL a,b,c``
 ===========================  ======================  ===============
+
 .. _directly-mapped-media-functions:
 
 Directly-Mapped Media Functions
@@ -183,6 +185,7 @@ Function prototype                    Example usage              Assembly output
 ``void __MWTACCG (acc, uw1)``         ``__MWTACCG (b, a)``       ``MWTACCG a,b``
 ``uw1 __MXOR (uw1, uw1)``             ``c = __MXOR (a, b)``      ``MXOR a,b,c``
 ====================================  =========================  ===================
+
 .. _raw-read-write-functions:
 
 Raw Read/Write Functions
@@ -195,7 +198,7 @@ appropriate, as described in Fujitsu's manual described above.
 
 :samp:`unsigned char __builtin_read8 (void *{data})`:samp:`unsigned short __builtin_read16 (void *{data})`:samp:`unsigned long __builtin_read32 (void *{data})`
 :samp:`unsigned long long __builtin_read64 (void *{data})`
-  :samp:`void __builtin_write8 (void *{data}, unsigned char {datum})`:samp:`void __builtin_write16 (void *{data}, unsigned short {datum})`:samp:`void __builtin_write32 (void *{data}, unsigned long {datum})`:samp:`void __builtin_write64 (void *{data}, unsigned long long {datum})`.. _other-built-in-functions:
+:samp:`void __builtin_write8 (void *{data}, unsigned char {datum})`:samp:`void __builtin_write16 (void *{data}, unsigned short {datum})`:samp:`void __builtin_write32 (void *{data}, unsigned long {datum})`:samp:`void __builtin_write64 (void *{data}, unsigned long long {datum})`.. _other-built-in-functions:
 
 Other Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~

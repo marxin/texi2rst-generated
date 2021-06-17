@@ -68,6 +68,7 @@ are given below.
   :samp:`5407`   :samp:`5407`
   :samp:`5475`   :samp:`5470` :samp:`5471` :samp:`5472` :samp:`5473` :samp:`5474` :samp:`5475` :samp:`547x` :samp:`5480` :samp:`5481` :samp:`5482` :samp:`5483` :samp:`5484` :samp:`5485`
   =============  ========================================================================================================================================================================
+
   :option:`-mcpu`:samp:`={cpu}` overrides :option:`-march`:samp:`={arch}` if
   :samp:`{arch}` is compatible with :samp:`{cpu}`.  Other combinations of
   :option:`-mcpu` and :option:`-march` are rejected.

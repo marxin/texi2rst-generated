@@ -882,7 +882,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   :samp:`rsqrtd`
     Enable the double-precision reciprocal square root approximation instructions.
 
-    So, for example, :option:`-mrecip`:samp:`=all,!rsqrtd` enables
+  So, for example, :option:`-mrecip`:samp:`=all,!rsqrtd` enables
   all of the reciprocal estimate instructions, except for the
   ``FRSQRTE``, ``XSRSQRTEDP``, and ``XVRSQRTEDP`` instructions
   which handle the double-precision reciprocal square root calculations.

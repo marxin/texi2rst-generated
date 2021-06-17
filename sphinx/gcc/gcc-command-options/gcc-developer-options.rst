@@ -379,7 +379,7 @@ The files are created in the directory of the output file.
   :samp:`inline`
     Dump after function inlining.
 
-    Additionally, the options :option:`-optimized`, :option:`-missed`,
+  Additionally, the options :option:`-optimized`, :option:`-missed`,
   :option:`-note`, and :option:`-all` can be provided, with the same meaning
   as for :option:`-fopt-info`, defaulting to :option:`-optimized`.
 

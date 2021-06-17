@@ -136,7 +136,7 @@ See :ref:`driver`.
   :samp:`C-EUCJP`
     Recognize EUCJP characters.
 
-    If :envvar:`LANG` is not defined, or if it has some other value, then the
+  If :envvar:`LANG` is not defined, or if it has some other value, then the
   compiler uses ``mblen`` and ``mbtowc`` as defined by the default locale to
   recognize and translate multibyte characters.
 

@@ -601,7 +601,7 @@ Operands are separated by commas.  Each operand has this format:
   Specifies a C lvalue expression to hold the output, typically a variable name.
   The enclosing parentheses are a required part of the syntax.
 
-  When the compiler selects the registers to use to 
+When the compiler selects the registers to use to 
 represent the output operands, it does not use any of the clobbered registers 
 (see :ref:`clobbers-and-scratch-registers`).
 
@@ -885,7 +885,7 @@ Operands are separated by commas.  Each operand has this format:
   This is the C variable or expression being passed to the ``asm`` statement 
   as input.  The enclosing parentheses are a required part of the syntax.
 
-  When the compiler selects the registers to use to represent the input 
+When the compiler selects the registers to use to represent the input 
 operands, it does not use any of the clobbered registers
 (see :ref:`clobbers-and-scratch-registers`).
 
@@ -1017,7 +1017,7 @@ Also, there are two special clobber arguments:
   speculative reads past the ``asm`` statement. To prevent that, you need 
   processor-specific fence instructions.
 
-  Flushing registers to memory has performance implications and may be
+Flushing registers to memory has performance implications and may be
 an issue for time-sensitive code.  You can provide better information
 to GCC to avoid this, as shown in the following examples.  At a
 minimum, aliasing rules allow GCC to know what memory *doesn't*
@@ -1321,6 +1321,7 @@ Operand  :samp:`att`  :samp:`intel`
 ``%5``   ``%xmm0``    ``xmm0``
 ``%7``   ``$0``       ``0``
 =======  ===========  ===================
+
 The table below shows the list of supported modifiers and their effects.
 
 ========  ============================================================================================================  =======  ================  ==============

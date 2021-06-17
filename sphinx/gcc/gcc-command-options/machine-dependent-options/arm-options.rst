@@ -573,7 +573,7 @@ These :samp:`-m` options are defined for the ARM port:
     :samp:`+nofp`
       Disable the floating-point, Advanced SIMD and cryptographic instructions.
 
-      :option:`-march`:samp:`=native` causes the compiler to auto-detect the architecture
+  :option:`-march`:samp:`=native` causes the compiler to auto-detect the architecture
   of the build computer.  At present, this feature is only supported on
   GNU/Linux, and not all architectures are recognized.  If the auto-detect
   is unsuccessful the option has no effect.
@@ -699,7 +699,7 @@ These :samp:`-m` options are defined for the ARM port:
     :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53` and
     :samp:`cortex-a75.cortex-a55`.
 
-    Additionally the :samp:`generic-armv7-a` pseudo target defaults to
+  Additionally the :samp:`generic-armv7-a` pseudo target defaults to
   VFPv3 with 16 double-precision registers.  It supports the following
   extension options: :samp:`mp`, :samp:`sec`, :samp:`vfpv3-d16`,
   :samp:`vfpv3`, :samp:`vfpv3-d16-fp16`, :samp:`vfpv3-fp16`,

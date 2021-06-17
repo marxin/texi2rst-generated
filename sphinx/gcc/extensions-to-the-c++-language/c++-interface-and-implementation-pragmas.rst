@@ -67,8 +67,7 @@ functions.
   an include file with the same basenameA file's :dfn:`basename`
   is the name stripped of all leading path information and of trailing
   suffixes, such as :samp:`.h` or :samp:`.C` or :samp:`.cc`.
-
-   as your source
+  as your source
   file.  For example, in :samp:`allclass.cc`, giving just
   :samp:`#pragma implementation`
   by itself is equivalent to :samp:`#pragma implementation "allclass.h"`.

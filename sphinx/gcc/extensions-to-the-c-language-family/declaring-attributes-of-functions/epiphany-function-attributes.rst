@@ -51,7 +51,7 @@ These function attributes are supported by the Epiphany back end:
   Multiple parameters indicate that multiple entries in the interrupt
   vector table should be initialized for this function, i.e. for each
   parameter :samp:`{name}`, a jump to the function is emitted in
-  the section ivt_entry_ :samp:`{name}`.  The parameter(s) may be omitted
+  the section ivt_entry\_ :samp:`{name}`.  The parameter(s) may be omitted
   entirely, in which case no interrupt vector table entry is provided.
 
   Note that interrupts are enabled inside the function

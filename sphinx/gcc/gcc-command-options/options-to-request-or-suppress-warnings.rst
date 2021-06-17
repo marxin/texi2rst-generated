@@ -2426,7 +2426,7 @@ warn at all unless optimization is enabled.
     ``nonnull``, ``noreturn``, ``nothrow``, ``pure``,
     ``returns_nonnull``, and ``returns_twice``.
 
-    :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias`:samp:`=1`.
+  :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias`:samp:`=1`.
   This is the default.  You can disable these warnings with either
   :option:`-Wno-attribute-alias` or :option:`-Wattribute-alias`:samp:`=0`.
 

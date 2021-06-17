@@ -397,7 +397,7 @@ optimizations to be performed is desired.
   ``max-inline-insns-auto``
     is set to :samp:`{n}` /2.
 
-    See below for a documentation of the individual
+  See below for a documentation of the individual
   parameters controlling inlining and for the defaults of these parameters.
 
   *Note:* there may be no value to :option:`-finline-limit` that results
@@ -1302,7 +1302,7 @@ optimizations to be performed is desired.
 
     :option:`-fipa-cp-clone`  :option:`-fipa-sra`  :option:`-fpartial-inlining`  :option:`-fipa-cp`
     When :option:`-flive-patching` is specified without any value, the default value
-  is :samp:`{inline-clone}`.
+    is :samp:`{inline-clone}`.
 
   This flag is disabled by default.
 
@@ -1872,7 +1872,8 @@ optimizations to be performed is desired.
   ``void*`` or a ``double``.  A character type may alias any other
   type.
 
-  .. _type-punning:
+.. _type-punning:
+
   Pay special attention to code like this:
 
   .. code-block:: c++

@@ -36,7 +36,7 @@ The following keywords are reserved for concepts.
   Introduces constraints on template arguments or requirements for a member
   function of a class template.
 
-  The front end also exposes a number of internal mechanism that can be used
+The front end also exposes a number of internal mechanism that can be used
 to simplify the writing of type traits. Note that some of these traits are
 likely to be removed in the future.
 

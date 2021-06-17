@@ -102,14 +102,14 @@
 
         name compiler not installed on this system.
 
-      GCC already has an extensive list of suffixes built into it.
+    GCC already has an extensive list of suffixes built into it.
     This directive adds an entry to the end of the list of suffixes, but
     since the list is searched from the end backwards, it is effectively
     possible to override earlier entries using this technique.
 
     GCC has the following spec strings built into it.  Spec files can
-  override these strings or create their own.  Note that individual
-  targets can also add their own spec strings to this list.
+    override these strings or create their own.  Note that individual
+    targets can also add their own spec strings to this list.
 
   .. code-block:: c++
 
@@ -481,7 +481,7 @@
       ``<>``
         True if ``switch`` is earlier than ``arg1``, or is ``arg2`` or later
 
-        If the ``switch`` is not present at all, the condition is false unless the first character
+      If the ``switch`` is not present at all, the condition is false unless the first character
       of the ``comparison-op`` is ``!``.
 
       .. code-block:: c++
@@ -650,7 +650,7 @@
     be as many clauses as you need.  This may be combined with ``.``,
     ``,``, ``!``, ``|``, and ``*`` as needed.
 
-    The switch matching text ``S`` in a :samp:`%{S}`, :samp:`%{S:X}`
+  The switch matching text ``S`` in a :samp:`%{S}`, :samp:`%{S:X}`
   or similar construct can use a backslash to ignore the special meaning
   of the character following it, thus allowing literal matching of a
   character that is otherwise specially treated.  For example,

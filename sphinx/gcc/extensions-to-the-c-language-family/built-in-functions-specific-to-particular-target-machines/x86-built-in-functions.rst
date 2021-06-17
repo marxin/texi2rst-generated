@@ -74,7 +74,7 @@ The following built-in functions are always available.
   Generates the ``pause`` machine instruction with a compiler memory
   barrier.
 
-  The following built-in functions are always available and can be used to
+The following built-in functions are always available and can be used to
 check the target platform type.
 
 .. function:: void __builtin_cpu_init (void)
@@ -566,6 +566,7 @@ The following built-in functions are available when :option:`-msse` is used.
   Generates the ``movlps`` machine instruction as a store to memory.
 
   The following built-in functions are available when :option:`-msse2` is used.
+
 All of them generate the machine instruction that is part of the name.
 
 .. code-block:: c++
@@ -855,7 +856,7 @@ used.
 ``v2di __builtin_ia32_vec_set_v2di (v2di, long long, const int)``
   Generates the ``pinsrq`` machine instruction in 64bit mode.
 
-  The following built-in functions are changed to generate new SSE4.1
+The following built-in functions are changed to generate new SSE4.1
 instructions when :option:`-msse4.1` is used.
 
 ``float __builtin_ia32_vec_ext_v4sf (v4sf, const int)``
@@ -867,7 +868,7 @@ instructions when :option:`-msse4.1` is used.
 ``long long __builtin_ia32_vec_ext_v2di (v2di, const int)``
   Generates the ``pextrq`` machine instruction in 64bit mode.
 
-  The following built-in functions are available when :option:`-msse4.2` is
+The following built-in functions are available when :option:`-msse4.2` is
 used.  All of them generate the machine instruction that is part of the
 name.
 
@@ -904,7 +905,7 @@ used.
 ``unsigned long long __builtin_ia32_crc32di (unsigned long long, unsigned long long)``
   Generates the ``crc32q`` machine instruction.
 
-  The following built-in functions are changed to generate new SSE4.2
+The following built-in functions are changed to generate new SSE4.2
 instructions when :option:`-msse4.2` is used.
 
 ``int __builtin_popcount (unsigned int)``
@@ -917,7 +918,7 @@ instructions when :option:`-msse4.2` is used.
 ``int __builtin_popcountll (unsigned long long)``
   Generates the ``popcntq`` machine instruction.
 
-  The following built-in functions are available when :option:`-mavx` is
+The following built-in functions are available when :option:`-mavx` is
 used. All of them generate the machine instruction that is part of the
 name.
 
@@ -1249,7 +1250,7 @@ used.
 ``v2di __builtin_ia32_pclmulqdq128 (v2di, v2di, const int)``
   Generates the ``pclmulqdq`` machine instruction.
 
-  The following built-in function is available when :option:`-mfsgsbase` is
+The following built-in function is available when :option:`-mfsgsbase` is
 used.  All of them generate the machine instruction that is part of the
 name.
 

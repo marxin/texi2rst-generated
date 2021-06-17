@@ -352,7 +352,7 @@ These :samp:`-m` options are defined for the SH implementations:
     for SH4.  Specifying this for targets that do not have dynamic shift
     instructions defaults to ``call-div1``.
 
-    When a division strategy has not been specified the default strategy is
+  When a division strategy has not been specified the default strategy is
   selected based on the current target.  For SH2A the default strategy is to
   use the ``divs`` and ``divu`` instructions instead of library function
   calls.

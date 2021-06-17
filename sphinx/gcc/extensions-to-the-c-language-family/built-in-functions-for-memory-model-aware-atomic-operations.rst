@@ -78,7 +78,7 @@ memory model for precise semantics.
 ``__ATOMIC_SEQ_CST``
   Enforces total ordering with all other ``__ATOMIC_SEQ_CST`` operations.
 
-  Note that in the C++11 memory model, *fences* (e.g.,
+Note that in the C++11 memory model, *fences* (e.g.,
 :samp:`__atomic_thread_fence`) take effect in combination with other
 atomic operations on specific memory locations (e.g., atomic loads);
 operations on specific memory locations do not necessarily affect other

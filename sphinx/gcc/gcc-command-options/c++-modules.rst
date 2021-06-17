@@ -58,7 +58,7 @@ known missing pieces are:
   which the module machinery must merge---compiler resource usage can be
   affected by how you partition header files into header units.
 
-  Modular compilation is *not* enabled with just the
+Modular compilation is *not* enabled with just the
 :option:`-std`:samp:`=c++20` option.  You must explicitly enable it with the
 :option:`-fmodules-ts` option.  It is independent of the language
 version selected, although in pre-C++20 versions, it is of course an
@@ -196,7 +196,7 @@ have one of the following forms:
   module name in the first active line.  Use of this option will disable
   any default module->CMI name mapping.
 
-  As shown, an optional :samp:`{ident}` may suffix the first word of the
+As shown, an optional :samp:`{ident}` may suffix the first word of the
 option, indicated by a :samp:`?` prefix.  The value is used in the
 initial handshake with the module server, or to specify a prefix on
 mapping file lines.  In the server case, the main source file name is
@@ -346,7 +346,7 @@ Amongst other things, this lists the source that was built, C++
 dialect used and imports of the module.The precise contents
 of this output may change.
 
- The timestamp is the same value as that
+The timestamp is the same value as that
 provided by the ``__DATE__`` & ``__TIME__`` macros, and may be
 explicitly specified with the environment variable
 ``SOURCE_DATE_EPOCH``.  See :ref:`environment-variables` for further

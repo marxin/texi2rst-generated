@@ -51,7 +51,7 @@ and suitable fallback code always needs to be supplied.
   ``_XABORT_NESTED``
     Transaction abort in an inner nested transaction.
 
-    There is no guarantee
+  There is no guarantee
   any transaction ever succeeds, so there always needs to be a valid
   fallback path.
 

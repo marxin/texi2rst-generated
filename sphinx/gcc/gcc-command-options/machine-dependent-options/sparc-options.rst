@@ -156,7 +156,7 @@ These :samp:`-m` options are supported on the SPARC:
     ultrasparc, ultrasparc3, niagara, niagara2, niagara3, niagara4,
     niagara7, m8
 
-    By default (unless configured otherwise), GCC generates code for the V7
+  By default (unless configured otherwise), GCC generates code for the V7
   variant of the SPARC architecture.  With :option:`-mcpu`:samp:`=cypress`, the compiler
   additionally optimizes it for the Cypress CY7C602 chip, as used in the
   SPARCStation/SPARCServer 3xx series.  This is also appropriate for the older
@@ -374,7 +374,7 @@ on SPARC-V9 processors in 64-bit environments:
   :samp:`sc`
     Sequential Consistency
 
-    These memory models are formally defined in Appendix D of the SPARC-V9
+  These memory models are formally defined in Appendix D of the SPARC-V9
   architecture manual, as set in the processor's ``PSTATE.MM`` field.
 
 .. option:: -mstack-bias, -mno-stack-bias

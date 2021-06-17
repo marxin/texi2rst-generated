@@ -84,7 +84,7 @@ term 'dependent' for names that depend on the type or value of
 template parameters.  This shorter term will also be used in the rest of
 this section.
 
-  Only names that are dependent are looked up at the point
+Only names that are dependent are looked up at the point
 of instantiation.  For example, consider
 
 .. code-block:: c++

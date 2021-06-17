@@ -50,7 +50,7 @@ These command-line options are defined for PRU target:
     the pointer can be NULL in case the caller is not using the returned value.
     GNU always passes and expects a valid return value pointer.
 
-    The current :option:`-mabi`:samp:`=ti` implementation simply raises a compile error
+  The current :option:`-mabi`:samp:`=ti` implementation simply raises a compile error
   when any of the above code constructs is detected.  As a consequence
   the standard C library cannot be built and it is omitted when linking with
   :option:`-mabi`:samp:`=ti`.

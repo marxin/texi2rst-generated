@@ -224,7 +224,7 @@ These function attributes are supported by the PowerPC back end:
     compilation tunes for the :samp:`{CPU}` architecture, and not the
     default tuning specified on the command line.
 
-    On the PowerPC, the inliner does not inline a
+  On the PowerPC, the inliner does not inline a
   function that has different target options than the caller, unless the
   callee has a subset of the target options of the caller.
 

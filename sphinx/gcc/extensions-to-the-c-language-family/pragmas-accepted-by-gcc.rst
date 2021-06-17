@@ -342,7 +342,7 @@ labels extension (see :ref:`asm-labels`).
   :samp:`{newname}`.  The preprocessor macro ``__PRAGMA_REDEFINE_EXTNAME``
   is defined if this pragma is available (currently on all platforms).
 
-  This pragma and the ``asm`` labels extension interact in a complicated
+This pragma and the ``asm`` labels extension interact in a complicated
 manner.  Here are some corner cases you may want to be aware of:
 
 * This pragma silently applies only to declarations with external
@@ -493,7 +493,7 @@ macros are defined.
     #pragma GCC diagnostic pop
       foo(d);                       /* depends on command-line options */
 
-  GCC also offers a simple mechanism for printing messages during
+GCC also offers a simple mechanism for printing messages during
 compilation.
 
 :samp:`#pragma message {string}`

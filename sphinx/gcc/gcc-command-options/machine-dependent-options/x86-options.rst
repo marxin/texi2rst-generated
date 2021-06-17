@@ -976,7 +976,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`vec-sqrt`
     Enable the approximation for vectorized square root.
 
-    So, for example, :option:`-mrecip`:samp:`=all,!sqrt` enables
+  So, for example, :option:`-mrecip`:samp:`=all,!sqrt` enables
   all of the reciprocal approximations, except for square root.
 
 .. option:: -mveclibabi=type

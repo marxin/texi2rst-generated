@@ -66,7 +66,7 @@ These options are defined for the MSP430:
     there, then the MCU data will be read.  As above, this directory will
     also be registered as an include path, and linker library path.
 
-    If none of the above search methods find :samp:`devices.csv`, then the
+  If none of the above search methods find :samp:`devices.csv`, then the
   hard-coded MCU data is used.
 
 .. option:: -mwarn-mcu, -mno-warn-mcu
