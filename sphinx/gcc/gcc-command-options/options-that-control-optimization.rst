@@ -116,7 +116,7 @@ See :ref:`overall-options`, for examples.
   As compared to :option:`-O`, this option increases both compilation time
   and the performance of the generated code.
 
-  :option:`-O2` turns on all optimization flags specified by :option:`-O`.  It
+  :option:`-O2` turns on all optimization flags specified by :option:`-O1`.  It
   also turns on the following optimization flags:
 
   .. Please keep the following list alphabetized!
@@ -263,7 +263,7 @@ optimizations to be performed is desired.
   is active, two passes are performed and the second is scheduled after
   loop unrolling.
 
-  This option is enabled by default at optimization levels :option:`-O`,
+  This option is enabled by default at optimization levels :option:`-O1`,
   :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -ffp-contract=style
@@ -291,7 +291,7 @@ optimizations to be performed is desired.
   is used in all functions.  Several targets always omit the frame pointer in
   leaf functions.
 
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -foptimize-sibling-calls
 
@@ -450,7 +450,7 @@ optimizations to be performed is desired.
   linker support it.  Use :option:`-fno-merge-constants` to inhibit this
   behavior.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fmerge-all-constants
 
@@ -545,7 +545,7 @@ optimizations to be performed is desired.
   independently.  This normally generates better code for those types,
   but may make debugging more difficult.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`,
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`,
   :option:`-Os`.
 
 .. option:: -fsplit-wide-types-early
@@ -657,18 +657,18 @@ optimizations to be performed is desired.
 
   Combine increments or decrements of addresses with memory accesses.
   This pass is always skipped on architectures that do not have
-  instructions to support this.  Enabled by default at :option:`-O` and
+  instructions to support this.  Enabled by default at :option:`-O1` and
   higher on architectures that support this.
 
 .. option:: -fdce
 
   Perform dead code elimination (DCE) on RTL.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fdse
 
   Perform dead store elimination (DSE) on RTL.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fif-conversion
 
@@ -677,7 +677,7 @@ optimizations to be performed is desired.
   some tricks doable by standard arithmetics.  The use of conditional execution
   on chips where it is available is controlled by :option:`-fif-conversion2`.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
   not with :option:`-Og`.
 
 .. option:: -fif-conversion2
@@ -685,7 +685,7 @@ optimizations to be performed is desired.
   Use conditional execution (where available) to transform conditional jumps into
   branch-less equivalents.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`, but
   not with :option:`-Og`.
 
 .. option:: -fdeclone-ctor-dtor
@@ -870,7 +870,7 @@ optimizations to be performed is desired.
   to exploit instruction slots available after delayed branch
   instructions.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`,
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`,
   but not at :option:`-Og`.
 
 .. option:: -fschedule-insns
@@ -1112,7 +1112,7 @@ optimizations to be performed is desired.
 .. option:: -ftree-reassoc
 
   Perform reassociation on trees.  This flag is enabled by default
-  at :option:`-O` and higher.
+  at :option:`-O1` and higher.
 
 .. option:: -fcode-hoisting
 
@@ -1135,7 +1135,7 @@ optimizations to be performed is desired.
 .. option:: -ftree-forwprop
 
   Perform forward propagation on trees.  This flag is enabled by default
-  at :option:`-O` and higher.
+  at :option:`-O1` and higher.
 
 .. option:: -ftree-fre
 
@@ -1143,12 +1143,12 @@ optimizations to be performed is desired.
   between FRE and PRE is that FRE only considers expressions
   that are computed on all paths leading to the redundant computation.
   This analysis is faster than PRE, though it exposes fewer redundancies.
-  This flag is enabled by default at :option:`-O` and higher.
+  This flag is enabled by default at :option:`-O1` and higher.
 
 .. option:: -ftree-phiprop
 
   Perform hoisting of loads from conditional pointers on trees.  This
-  pass is enabled by default at :option:`-O` and higher.
+  pass is enabled by default at :option:`-O1` and higher.
 
 .. option:: -fhoist-adjacent-loads
 
@@ -1160,24 +1160,24 @@ optimizations to be performed is desired.
 .. option:: -ftree-copy-prop
 
   Perform copy propagation on trees.  This pass eliminates unnecessary
-  copy operations.  This flag is enabled by default at :option:`-O` and
+  copy operations.  This flag is enabled by default at :option:`-O1` and
   higher.
 
 .. option:: -fipa-pure-const
 
   Discover which functions are pure or constant.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-reference
 
   Discover which static variables do not escape the
   compilation unit.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-reference-addressable
 
   Discover read-only, write-only and non-addressable static variables.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-stack-alignment
 
@@ -1198,14 +1198,14 @@ optimizations to be performed is desired.
   ``cold``, ``noreturn``, static constructors or destructors) are
   identified. Cold functions and loop less parts of functions executed once are
   then optimized for size.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-modref
 
   Perform interprocedural mod/ref analysis.  This optimization analyzes the side
   effects of functions (memory locations that are modified or referenced) and
   enables better optimization across the function call boundary.  This flag is
-  enabled by default at :option:`-O` and higher.
+  enabled by default at :option:`-O1` and higher.
 
 .. option:: -fipa-cp
 
@@ -1328,7 +1328,7 @@ optimizations to be performed is desired.
 .. option:: -ftree-sink
 
   Perform forward store motion on trees.  This flag is
-  enabled by default at :option:`-O` and higher.
+  enabled by default at :option:`-O1` and higher.
 
 .. option:: -ftree-bit-ccp
 
@@ -1342,14 +1342,14 @@ optimizations to be performed is desired.
 
   Perform sparse conditional constant propagation (CCP) on trees.  This
   pass only operates on local scalar variables and is enabled by default
-  at :option:`-O` and higher.
+  at :option:`-O1` and higher.
 
 .. option:: -fssa-backprop
 
   Propagate information about uses of a value up the definition chain
   in order to simplify the definitions.  For example, this pass strips
   sign operations if the sign of a value never matters.  The flag is
-  enabled by default at :option:`-O` and higher.
+  enabled by default at :option:`-O1` and higher.
 
 .. option:: -fssa-phiopt
 
@@ -1375,7 +1375,7 @@ optimizations to be performed is desired.
 .. option:: -ftree-dce
 
   Perform dead code elimination (DCE) on trees.  This flag is enabled by
-  default at :option:`-O` and higher.
+  default at :option:`-O1` and higher.
 
 .. option:: -ftree-builtin-call-dce
 
@@ -1403,26 +1403,26 @@ optimizations to be performed is desired.
   propagation, redundancy elimination, range propagation and expression
   simplification) based on a dominator tree traversal.  This also
   performs jump threading (to reduce jumps to jumps). This flag is
-  enabled by default at :option:`-O` and higher.
+  enabled by default at :option:`-O1` and higher.
 
 .. option:: -ftree-dse
 
   Perform dead store elimination (DSE) on trees.  A dead store is a store into
   a memory location that is later overwritten by another store without
   any intervening loads.  In this case the earlier store can be deleted.  This
-  flag is enabled by default at :option:`-O` and higher.
+  flag is enabled by default at :option:`-O1` and higher.
 
 .. option:: -ftree-ch
 
   Perform loop header copying on trees.  This is beneficial since it increases
   effectiveness of code motion optimizations.  It also saves one jump.  This flag
-  is enabled by default at :option:`-O` and higher.  It is not enabled
+  is enabled by default at :option:`-O1` and higher.  It is not enabled
   for :option:`-Os`, since it usually increases code size.
 
 .. option:: -ftree-loop-optimize
 
   Perform loop optimizations on trees.  This flag is enabled by default
-  at :option:`-O` and higher.
+  at :option:`-O1` and higher.
 
 .. option:: -ftree-loop-linear, -floop-strip-mine, -floop-block
 
@@ -1585,7 +1585,7 @@ optimizations to be performed is desired.
   only its initial value and the number of loop iterations, replace uses of
   the final value by such a computation, provided it is sufficiently cheap.
   This reduces data dependencies and may allow further simplifications.
-  Enabled by default at :option:`-O` and higher.
+  Enabled by default at :option:`-O1` and higher.
 
 .. option:: -fivopts
 
@@ -1627,13 +1627,13 @@ optimizations to be performed is desired.
   use/single def temporaries are replaced at their use location with their
   defining expression.  This results in non-GIMPLE code, but gives the expanders
   much more complex trees to work on resulting in better RTL generation.  This is
-  enabled by default at :option:`-O` and higher.
+  enabled by default at :option:`-O1` and higher.
 
 .. option:: -ftree-slsr
 
   Perform straight-line strength reduction on trees.  This recognizes related
   expressions involving multiplications and replaces them by less expensive
-  calculations when possible.  This is enabled by default at :option:`-O` and
+  calculations when possible.  This is enabled by default at :option:`-O1` and
   higher.
 
 .. option:: -ftree-vectorize
@@ -1816,7 +1816,7 @@ optimizations to be performed is desired.
   Reorder basic blocks in the compiled function in order to reduce number of
   taken branches and improve code locality.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -freorder-blocks-algorithm=algorithm
 
@@ -1827,7 +1827,7 @@ optimizations to be performed is desired.
   put all often executed code together, minimizing the number of branches
   executed by making extra copies of code.
 
-  The default is :samp:`simple` at levels :option:`-O`, :option:`-Os`, and
+  The default is :samp:`simple` at levels :option:`-O1`, :option:`-Os`, and
   :samp:`stc` at levels :option:`-O2`, :option:`-O3`.
 
 .. option:: -freorder-blocks-and-partition
@@ -2385,7 +2385,7 @@ optimizations to be performed is desired.
   This pass only applies to certain targets that cannot explicitly represent
   the comparison operation before register allocation is complete.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fcprop-registers
 
@@ -2393,7 +2393,7 @@ optimizations to be performed is desired.
   perform a copy-propagation pass to try to reduce scheduling dependencies
   and occasionally eliminate the copy.
 
-  Enabled at levels :option:`-O`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fprofile-correction
 

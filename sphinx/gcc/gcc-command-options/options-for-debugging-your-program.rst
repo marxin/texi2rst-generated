@@ -308,7 +308,7 @@ information useful for debugging do not run at all, so that
   at the beginning of statements, and to keep them roughly in place
   throughout compilation, using them to guide the output of ``is_stmt``
   markers in the line number table.  This is enabled by default when
-  compiling with optimization ( :option:`-Os`, :option:`-O`, :option:`-O2`,
+  compiling with optimization ( :option:`-Os`, :option:`-O1`, :option:`-O2`,
   ...), and outputting DWARF 2 debug information at the normal level.
 
 .. option:: -gvariable-location-views, -gvariable-location-views=incompat5, -gno-variable-location-views

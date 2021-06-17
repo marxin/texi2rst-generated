@@ -85,7 +85,7 @@ in the following sections.
   :option:`-Wno-inherited-variadic-ctor`  :option:`-Wno-init-list-lifetime` 
   :option:`-Winvalid-imported-macros` 
   :option:`-Wno-invalid-offsetof`  :option:`-Wno-literal-suffix` 
-  :option:`-Wno-mismatched-new-delete` :option:`-Wmismatched-tags` 
+  :option:`-Wmismatched-new-delete` :option:`-Wmismatched-tags` 
   :option:`-Wmultiple-inheritance`  :option:`-Wnamespaces`  :option:`-Wnarrowing` 
   :option:`-Wnoexcept`  :option:`-Wnoexcept-type`  :option:`-Wnon-virtual-dtor` 
   :option:`-Wpessimizing-move`  :option:`-Wno-placement-new`  :option:`-Wplacement-new`:samp:`={n}` 
