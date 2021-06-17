@@ -122,13 +122,8 @@ So, for example, the routine that lexes a number, ``parse_number``,
 cannot assume that it can scan forwards until the first non-number
 character and be done with it, because this could be the :samp:`\\`
 introducing an escaped newline, or the :samp:`?` introducing the trigraph
-<<<<<<< HEAD
-sequence that represents the :samp:`\` of an escaped newline.  If it
-encounters a ``?` or :samp:`\`, it calls ``skip_escaped_newlines``
-=======
 sequence that represents the :samp:`\\` of an escaped newline.  If it
 encounters a :samp:`?` or :samp:`\\`, it calls ``skip_escaped_newlines``
->>>>>>> raw
 to skip over any potential escaped newlines before checking whether the
 number has been finished.
 
