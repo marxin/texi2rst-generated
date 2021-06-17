@@ -15,7 +15,7 @@ the line number of a token passed to it:
   lexed on if, for example, there are intervening escaped newlines or
   C-style comments.  For example:
 
-  .. code-block:: c++
+  .. code-block::
 
     foo /* A long
     comment */ bar \

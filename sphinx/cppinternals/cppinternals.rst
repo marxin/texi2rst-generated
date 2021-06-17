@@ -171,7 +171,7 @@ output results in an identical token stream.  Without taking special
 measures, this might not be the case because of macro substitution.
 For example:
 
-.. code-block:: c++
+.. code-block::
 
   #define PLUS +
   #define EMPTY
@@ -204,7 +204,7 @@ decide whether to insert a space between tokens in the output.
 
 Now consider the result of the following macro expansion:
 
-.. code-block:: c++
+.. code-block::
 
   #define add(x, y, z) x + y +z;
   sum = add (1,2, 3);
@@ -235,7 +235,7 @@ macro replacement list, respectively.
 It is quite easy to get multiple padding tokens in a row, for example if
 a macro's first replacement token expands straight into another macro.
 
-.. code-block:: c++
+.. code-block::
 
   #define foo bar
   #define bar baz
@@ -251,7 +251,7 @@ padding token in a sequence is the one that matters.
 But what if a macro expansion is left?  Adjusting the above
 example slightly:
 
-.. code-block:: c++
+.. code-block::
 
   #define foo bar
   #define bar EMPTY baz

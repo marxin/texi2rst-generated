@@ -140,6 +140,7 @@ middle of a line, and we want to report diagnostics in the correct
 position for text appearing after the end of the comment.
 
 .. _invalid-identifiers:
+
 Some identifiers, such as ``__VA_ARGS__`` and poisoned identifiers,
 may be invalid and require a diagnostic.  However, if they appear in a
 macro expansion we don't want to complain with each use of the macro.
