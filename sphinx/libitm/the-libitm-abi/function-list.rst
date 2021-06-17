@@ -38,6 +38,7 @@ Transaction code properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _txn-code-properties:
+
 The bit ``hasNoXMMUpdate`` is instead called ``hasNoVectorUpdate``.
 Iff it is set, vector register save/restore is not necessary for any target
 machine.

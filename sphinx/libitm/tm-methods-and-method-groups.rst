@@ -40,7 +40,7 @@ The default method that libitm uses for freshly started transactions (but
 not necessarily for restarted transactions) can be set via an environment
 variable (:envvar:`ITM_DEFAULT_METHOD`), whose value should be equal to the name
 of one of the factory methods returning abi_dispatch subclasses but without
-the "dispatch_" prefix (e.g., "serialirr" instead of
+the "dispatch\_" prefix (e.g., "serialirr" instead of
 ``GTM::dispatch_serialirr()`` ).
 
 Note that this environment variable is only a hint for libitm and might not

@@ -4,7 +4,7 @@
   For copying conditions, see the GPL license file
 
 Welcome to libitm documentation!
-===============================
+================================
 
 Introduction
 ============
