@@ -209,6 +209,8 @@ warn at all unless optimization is enabled.
   :option:`-Wmemset-elt-size` 
   :option:`-Wmemset-transposed-args` 
   :option:`-Wmisleading-indentation` (only for C/C++) 
+  :option:`-Wmismatched-dealloc` 
+  :option:`-Wmismatched-new-delete` (only for C/C++) 
   :option:`-Wmissing-attributes` 
   :option:`-Wmissing-braces` (only for C/ObjC) 
   :option:`-Wmultistatement-macros`  
@@ -1203,7 +1205,7 @@ warn at all unless optimization is enabled.
 
   Default option value for :option:`-Wno-missing-profile`.
 
-.. option:: -Wno-mismatched-dealloc
+.. option:: -Wmismatched-dealloc
 
   Warn for calls to deallocation functions with pointer arguments returned
   from from allocations functions for which the former isn't a suitable
@@ -1234,11 +1236,11 @@ warn at all unless optimization is enabled.
   In C++, the related option :option:`-Wmismatched-new-delete` diagnoses
   mismatches involving either ``operator new`` or ``operator delete``.
 
-  Option :option:`-Wmismatched-dealloc` is enabled by default.
+  Option :option:`-Wmismatched-dealloc` is included in :option:`-Wall`.
 
-.. option:: -Wmismatched-dealloc
+.. option:: -Wno-mismatched-dealloc
 
-  Default option value for :option:`-Wno-mismatched-dealloc`.
+  Default option value for :option:`-Wmismatched-dealloc`.
 
 .. option:: -Wmultistatement-macros
 
@@ -2904,7 +2906,7 @@ warn at all unless optimization is enabled.
   Disable :option:`-Wframe-larger-than` = warnings.  The option is equivalent
   to :option:`-Wframe-larger-than`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Wno-free-nonheap-object
+.. option:: -Wfree-nonheap-object
 
   Warn when attempting to deallocate an object that was either not allocated
   on the heap, or by using a pointer that was not returned from a prior call
@@ -2922,11 +2924,11 @@ warn at all unless optimization is enabled.
       free (p);   // warning
     }
 
-  :option:`-Wfree-nonheap-object` is enabled by default.
+  :option:`-Wfree-nonheap-object` is included in :option:`-Wall`.
 
-.. option:: -Wfree-nonheap-object
+.. option:: -Wno-free-nonheap-object
 
-  Default option value for :option:`-Wno-free-nonheap-object`.
+  Default option value for :option:`-Wfree-nonheap-object`.
 
 .. option:: -Wstack-usage=byte-size
 

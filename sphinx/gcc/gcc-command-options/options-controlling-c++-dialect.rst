@@ -1449,7 +1449,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default option value for :option:`-Wtemplates`.
 
-.. option:: -Wno-mismatched-new-delete
+.. option:: -Wmismatched-new-delete
 
   .. note::
 
@@ -1484,11 +1484,11 @@ In addition, these warning options have meanings only for C++ programs:
   involving allocation and deallocation functions other than ``operator
   new`` and ``operator delete``.
 
-  :option:`-Wmismatched-new-delete` is enabled by default.
+  :option:`-Wmismatched-new-delete` is included in :option:`-Wall`.
 
-.. option:: -Wmismatched-new-delete
+.. option:: -Wno-mismatched-new-delete
 
-  Default option value for :option:`-Wno-mismatched-new-delete`.
+  Default option value for :option:`-Wmismatched-new-delete`.
 
 .. option:: -Wmismatched-tags
 
