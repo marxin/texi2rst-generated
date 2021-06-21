@@ -24,14 +24,17 @@ control passing certain arguments in registers.
   cases of mismatch, it also makes for better code on certain machines.
   The default is to not promote prototypes.
 
-.. c:macro:: PUSH_ARGS
+.. function:: bool TARGET_PUSH_ARGUMENT (unsigned int npush)
 
-  A C expression.  If nonzero, push insns will be used to pass
-  outgoing arguments.
-  If the target machine does not have a push instruction, set it to zero.
-  That directs GCC to use an alternate strategy: to
-  allocate the entire argument block and then store the arguments into
-  it.  When ``PUSH_ARGS`` is nonzero, ``PUSH_ROUNDING`` must be defined too.
+  This target hook returns ``true`` if push instructions will be
+  used to pass outgoing arguments.  When the push instruction usage is
+  optional, :samp:`{npush}` is nonzero to indicate the number of bytes to
+  push.  Otherwise, :samp:`{npush}` is zero.  If the target machine does not
+  have a push instruction or push instruction should be avoided,
+  ``false`` should be returned.  That directs GCC to use an alternate
+  strategy: to allocate the entire argument block and then store the
+  arguments into it.  If this target hook may return ``true``,
+  ``PUSH_ROUNDING`` must be defined.
 
 .. c:macro:: PUSH_ARGS_REVERSED
 
