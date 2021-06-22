@@ -12,7 +12,7 @@ Miscellaneous register hooks
 
 .. c:var:: bool TARGET_CALL_FUSAGE_CONTAINS_NON_CALLEE_CLOBBERS
 
-  .. hook-start:TARGET_call_fusage_contains_non_callee_clobbers
+  .. hook-start:TARGET_CALL_FUSAGE_CONTAINS_NON_CALLEE_CLOBBERS
 
   Set to true if each call that binds to a local definition explicitly
   clobbers or sets all non-fixed registers modified by performing the call.

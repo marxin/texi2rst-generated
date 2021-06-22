@@ -12,7 +12,7 @@ Stack smashing protection
 
 .. function:: tree TARGET_STACK_PROTECT_GUARD (void)
 
-  .. hook-start:TARGET_stack_protect_guard
+  .. hook-start:TARGET_STACK_PROTECT_GUARD
 
   This hook returns a ``DECL`` node for the external variable to use
   for the stack protection guard.  This variable is initialized by the
@@ -27,7 +27,7 @@ Stack smashing protection
 
 .. function:: tree TARGET_STACK_PROTECT_FAIL (void)
 
-  .. hook-start:TARGET_stack_protect_fail
+  .. hook-start:TARGET_STACK_PROTECT_FAIL
 
   This hook returns a ``CALL_EXPR`` that alerts the runtime that the
   stack protect guard variable has been modified.  This expression should
@@ -41,7 +41,7 @@ Stack smashing protection
 
 .. function:: bool TARGET_STACK_PROTECT_RUNTIME_ENABLED_P (void)
 
-  .. hook-start:TARGET_stack_protect_runtime_enabled_p
+  .. hook-start:TARGET_STACK_PROTECT_RUNTIME_ENABLED_P
 
   Returns true if the target wants GCC's default stack protect runtime support,
   otherwise return false.  The default implementation always returns true.
@@ -50,7 +50,7 @@ Stack smashing protection
 
 .. function:: bool TARGET_SUPPORTS_SPLIT_STACK (bool report, struct gcc_options *opts)
 
-  .. hook-start:TARGET_supports_split_stack
+  .. hook-start:TARGET_SUPPORTS_SPLIT_STACK
 
   Whether this target supports splitting the stack when the options
   described in :samp:`{opts}` have been passed.  This is called
@@ -63,7 +63,7 @@ Stack smashing protection
 
 .. function:: vec<const char *> TARGET_GET_VALID_OPTION_VALUES (int option_code, const char *prefix)
 
-  .. hook-start:TARGET_get_valid_option_values
+  .. hook-start:TARGET_GET_VALID_OPTION_VALUES
 
   The hook is used for options that have a non-trivial list of
   possible option values.  OPTION_CODE is option code of opt_code

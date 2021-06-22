@@ -15,7 +15,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_ISSUE_RATE (void)
 
-  .. hook-start:TARGET_SCHED_issue_rate
+  .. hook-start:TARGET_SCHED_ISSUE_RATE
 
   This hook returns the maximum number of instructions that can ever
   issue at the same time on the target machine.  The default is one.
@@ -31,7 +31,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_VARIABLE_ISSUE (FILE *file, int verbose, rtx_insn *insn, int more)
 
-  .. hook-start:TARGET_SCHED_variable_issue
+  .. hook-start:TARGET_SCHED_VARIABLE_ISSUE
 
   This hook is executed by the scheduler after it has scheduled an insn
   from the ready list.  It should return the number of insns which can
@@ -49,7 +49,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_ADJUST_COST (rtx_insn *insn, int dep_type1, rtx_insn *dep_insn, int cost, unsigned int dw)
 
-  .. hook-start:TARGET_SCHED_adjust_cost
+  .. hook-start:TARGET_SCHED_ADJUST_COST
 
   This function corrects the value of :samp:`{cost}` based on the
   relationship between :samp:`{insn}` and :samp:`{dep_insn}` through a
@@ -68,7 +68,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_ADJUST_PRIORITY (rtx_insn *insn, int priority)
 
-  .. hook-start:TARGET_SCHED_adjust_priority
+  .. hook-start:TARGET_SCHED_ADJUST_PRIORITY
 
   This hook adjusts the integer scheduling priority :samp:`{priority}` of
   :samp:`{insn}`.  It should return the new priority.  Increase the priority to
@@ -80,7 +80,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_REORDER (FILE *file, int verbose, rtx_insn **ready, int *n_readyp, int clock)
 
-  .. hook-start:TARGET_SCHED_reorder
+  .. hook-start:TARGET_SCHED_REORDER
 
   This hook is executed by the scheduler after it has scheduled the ready
   list, to allow the machine description to reorder it (for example to
@@ -101,7 +101,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_REORDER2 (FILE *file, int verbose, rtx_insn **ready, int *n_readyp, int clock)
 
-  .. hook-start:TARGET_SCHED_reorder2
+  .. hook-start:TARGET_SCHED_REORDER2
 
   Like :samp:`TARGET_SCHED_REORDER`, but called at a different time.  That
   function is called whenever the scheduler starts a new cycle.  This one
@@ -116,7 +116,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_MACRO_FUSION_P (void)
 
-  .. hook-start:TARGET_SCHED_macro_fusion_p
+  .. hook-start:TARGET_SCHED_MACRO_FUSION_P
 
   This hook is used to check whether target platform supports macro fusion.
 
@@ -124,7 +124,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_MACRO_FUSION_PAIR_P (rtx_insn *prev, rtx_insn *curr)
 
-  .. hook-start:TARGET_SCHED_macro_fusion_pair_p
+  .. hook-start:TARGET_SCHED_MACRO_FUSION_PAIR_P
 
   This hook is used to check whether two insns should be macro fused for
   a target microarchitecture. If this hook returns true for the given insn pair
@@ -137,7 +137,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_DEPENDENCIES_EVALUATION_HOOK (rtx_insn *head, rtx_insn *tail)
 
-  .. hook-start:TARGET_SCHED_dependencies_evaluation_hook
+  .. hook-start:TARGET_SCHED_DEPENDENCIES_EVALUATION_HOOK
 
   This hook is called after evaluation forward dependencies of insns in
   chain given by two parameter values ( :samp:`{head}` and :samp:`{tail}`
@@ -151,7 +151,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_INIT (FILE *file, int verbose, int max_ready)
 
-  .. hook-start:TARGET_SCHED_init
+  .. hook-start:TARGET_SCHED_INIT
 
   This hook is executed by the scheduler at the beginning of each block of
   instructions that are to be scheduled.  :samp:`{file}` is either a null
@@ -165,7 +165,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FINISH (FILE *file, int verbose)
 
-  .. hook-start:TARGET_SCHED_finish
+  .. hook-start:TARGET_SCHED_FINISH
 
   This hook is executed by the scheduler at the end of each block of
   instructions that are to be scheduled.  It can be used to perform
@@ -178,7 +178,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_INIT_GLOBAL (FILE *file, int verbose, int old_max_uid)
 
-  .. hook-start:TARGET_SCHED_init_global
+  .. hook-start:TARGET_SCHED_INIT_GLOBAL
 
   This hook is executed by the scheduler after function level initializations.
   :samp:`{file}` is either a null pointer, or a stdio stream to write any debug output to.
@@ -189,7 +189,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FINISH_GLOBAL (FILE *file, int verbose)
 
-  .. hook-start:TARGET_SCHED_finish_global
+  .. hook-start:TARGET_SCHED_FINISH_GLOBAL
 
   This is the cleanup hook corresponding to ``TARGET_SCHED_INIT_GLOBAL``.
   :samp:`{file}` is either a null pointer, or a stdio stream to write any debug output to.
@@ -199,7 +199,7 @@ them: try the first ones in this list first.
 
 .. function:: rtx TARGET_SCHED_DFA_PRE_CYCLE_INSN (void)
 
-  .. hook-start:TARGET_SCHED_dfa_pre_cycle_insn
+  .. hook-start:TARGET_SCHED_DFA_PRE_CYCLE_INSN
 
   The hook returns an RTL insn.  The automaton state used in the
   pipeline hazard recognizer is changed as if the insn were scheduled
@@ -213,7 +213,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_INIT_DFA_PRE_CYCLE_INSN (void)
 
-  .. hook-start:TARGET_SCHED_init_dfa_pre_cycle_insn
+  .. hook-start:TARGET_SCHED_INIT_DFA_PRE_CYCLE_INSN
 
   The hook can be used to initialize data used by the previous hook.
 
@@ -221,7 +221,7 @@ them: try the first ones in this list first.
 
 .. function:: rtx_insn * TARGET_SCHED_DFA_POST_CYCLE_INSN (void)
 
-  .. hook-start:TARGET_SCHED_dfa_post_cycle_insn
+  .. hook-start:TARGET_SCHED_DFA_POST_CYCLE_INSN
 
   The hook is analogous to :samp:`TARGET_SCHED_DFA_PRE_CYCLE_INSN` but used
   to changed the state as if the insn were scheduled when the new
@@ -231,7 +231,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_INIT_DFA_POST_CYCLE_INSN (void)
 
-  .. hook-start:TARGET_SCHED_init_dfa_post_cycle_insn
+  .. hook-start:TARGET_SCHED_INIT_DFA_POST_CYCLE_INSN
 
   The hook is analogous to :samp:`TARGET_SCHED_INIT_DFA_PRE_CYCLE_INSN` but
   used to initialize data used by the previous hook.
@@ -240,7 +240,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_DFA_PRE_ADVANCE_CYCLE (void)
 
-  .. hook-start:TARGET_SCHED_dfa_pre_advance_cycle
+  .. hook-start:TARGET_SCHED_DFA_PRE_ADVANCE_CYCLE
 
   The hook to notify target that the current simulated cycle is about to finish.
   The hook is analogous to :samp:`TARGET_SCHED_DFA_PRE_CYCLE_INSN` but used
@@ -251,7 +251,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_DFA_POST_ADVANCE_CYCLE (void)
 
-  .. hook-start:TARGET_SCHED_dfa_post_advance_cycle
+  .. hook-start:TARGET_SCHED_DFA_POST_ADVANCE_CYCLE
 
   The hook to notify target that new simulated cycle has just started.
   The hook is analogous to :samp:`TARGET_SCHED_DFA_POST_CYCLE_INSN` but used
@@ -262,7 +262,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_FIRST_CYCLE_MULTIPASS_DFA_LOOKAHEAD (void)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_dfa_lookahead
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_DFA_LOOKAHEAD
 
   This hook controls better choosing an insn from the ready insn queue
   for the DFA-based insn scheduler.  Usually the scheduler
@@ -295,7 +295,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_FIRST_CYCLE_MULTIPASS_DFA_LOOKAHEAD_GUARD (rtx_insn *insn, int ready_index)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_dfa_lookahead_guard
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_DFA_LOOKAHEAD_GUARD
 
   This hook controls what insns from the ready insn queue will be
   considered for the multipass insn scheduling.  If the hook returns
@@ -314,7 +314,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_BEGIN (void *data, signed char *ready_try, int n_ready, bool first_cycle_insn_p)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_begin
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_BEGIN
 
   This hook prepares the target backend for a new round of multipass
   scheduling.
@@ -323,7 +323,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_ISSUE (void *data, signed char *ready_try, int n_ready, rtx_insn *insn, const void *prev_data)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_issue
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_ISSUE
 
   This hook is called when multipass scheduling evaluates instruction INSN.
 
@@ -331,7 +331,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_BACKTRACK (const void *data, signed char *ready_try, int n_ready)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_backtrack
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_BACKTRACK
 
   This is called when multipass scheduling backtracks from evaluation of
   an instruction.
@@ -340,7 +340,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_END (const void *data)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_end
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_END
 
   This hook notifies the target about the result of the concluded current
   round of multipass scheduling.
@@ -349,7 +349,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_INIT (void *data)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_init
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_INIT
 
   This hook initializes target-specific data used in multipass scheduling.
 
@@ -357,7 +357,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FIRST_CYCLE_MULTIPASS_FINI (void *data)
 
-  .. hook-start:TARGET_SCHED_first_cycle_multipass_fini
+  .. hook-start:TARGET_SCHED_FIRST_CYCLE_MULTIPASS_FINI
 
   This hook finalizes target-specific data used in multipass scheduling.
 
@@ -365,7 +365,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_DFA_NEW_CYCLE (FILE *dump, int verbose, rtx_insn *insn, int last_clock, int clock, int *sort_p)
 
-  .. hook-start:TARGET_SCHED_dfa_new_cycle
+  .. hook-start:TARGET_SCHED_DFA_NEW_CYCLE
 
   This hook is called by the insn scheduler before issuing :samp:`{insn}`
   on cycle :samp:`{clock}`.  If the hook returns nonzero,
@@ -382,7 +382,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_IS_COSTLY_DEPENDENCE (struct _dep *_dep, int cost, int distance)
 
-  .. hook-start:TARGET_SCHED_is_costly_dependence
+  .. hook-start:TARGET_SCHED_IS_COSTLY_DEPENDENCE
 
   This hook is used to define which dependences are considered costly by
   the target, so costly that it is not advisable to schedule the insns that
@@ -407,7 +407,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_H_I_D_EXTENDED (void)
 
-  .. hook-start:TARGET_SCHED_h_i_d_extended
+  .. hook-start:TARGET_SCHED_H_I_D_EXTENDED
 
   This hook is called by the insn scheduler after emitting a new instruction to
   the instruction stream.  The hook notifies a target backend to extend its
@@ -417,7 +417,7 @@ them: try the first ones in this list first.
 
 .. function:: void * TARGET_SCHED_ALLOC_SCHED_CONTEXT (void)
 
-  .. hook-start:TARGET_SCHED_alloc_sched_context
+  .. hook-start:TARGET_SCHED_ALLOC_SCHED_CONTEXT
 
   Return a pointer to a store large enough to hold target scheduling context.
 
@@ -425,7 +425,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_INIT_SCHED_CONTEXT (void *tc, bool clean_p)
 
-  .. hook-start:TARGET_SCHED_init_sched_context
+  .. hook-start:TARGET_SCHED_INIT_SCHED_CONTEXT
 
   Initialize store pointed to by :samp:`{tc}` to hold target scheduling context.
   It :samp:`{clean_p}` is true then initialize :samp:`{tc}` as if scheduler is at the
@@ -435,7 +435,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_SET_SCHED_CONTEXT (void *tc)
 
-  .. hook-start:TARGET_SCHED_set_sched_context
+  .. hook-start:TARGET_SCHED_SET_SCHED_CONTEXT
 
   Copy target scheduling context pointed to by :samp:`{tc}` to the current context.
 
@@ -443,7 +443,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_CLEAR_SCHED_CONTEXT (void *tc)
 
-  .. hook-start:TARGET_SCHED_clear_sched_context
+  .. hook-start:TARGET_SCHED_CLEAR_SCHED_CONTEXT
 
   Deallocate internal data in target scheduling context pointed to by :samp:`{tc}`.
 
@@ -451,7 +451,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FREE_SCHED_CONTEXT (void *tc)
 
-  .. hook-start:TARGET_SCHED_free_sched_context
+  .. hook-start:TARGET_SCHED_FREE_SCHED_CONTEXT
 
   Deallocate a store for target scheduling context pointed to by :samp:`{tc}`.
 
@@ -459,7 +459,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_SPECULATE_INSN (rtx_insn *insn, unsigned int dep_status, rtx *new_pat)
 
-  .. hook-start:TARGET_SCHED_speculate_insn
+  .. hook-start:TARGET_SCHED_SPECULATE_INSN
 
   This hook is called by the insn scheduler when :samp:`{insn}` has only
   speculative dependencies and therefore can be scheduled speculatively.
@@ -474,7 +474,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_NEEDS_BLOCK_P (unsigned int dep_status)
 
-  .. hook-start:TARGET_SCHED_needs_block_p
+  .. hook-start:TARGET_SCHED_NEEDS_BLOCK_P
 
   This hook is called by the insn scheduler during generation of recovery code
   for :samp:`{insn}`.  It should return ``true``, if the corresponding check
@@ -484,7 +484,7 @@ them: try the first ones in this list first.
 
 .. function:: rtx TARGET_SCHED_GEN_SPEC_CHECK (rtx_insn *insn, rtx_insn *label, unsigned int ds)
 
-  .. hook-start:TARGET_SCHED_gen_spec_check
+  .. hook-start:TARGET_SCHED_GEN_SPEC_CHECK
 
   This hook is called by the insn scheduler to generate a pattern for recovery
   check instruction.  If :samp:`{mutate_p}` is zero, then :samp:`{insn}` is a
@@ -499,7 +499,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_SET_SCHED_FLAGS (struct spec_info_def *spec_info)
 
-  .. hook-start:TARGET_SCHED_set_sched_flags
+  .. hook-start:TARGET_SCHED_SET_SCHED_FLAGS
 
   This hook is used by the insn scheduler to find out what features should be
   enabled/used.
@@ -510,7 +510,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_CAN_SPECULATE_INSN (rtx_insn *insn)
 
-  .. hook-start:TARGET_SCHED_can_speculate_insn
+  .. hook-start:TARGET_SCHED_CAN_SPECULATE_INSN
 
   Some instructions should never be speculated by the schedulers, usually
    because the instruction is too expensive to get this wrong.  Often such
@@ -522,7 +522,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_SMS_RES_MII (struct ddg *g)
 
-  .. hook-start:TARGET_SCHED_sms_res_mii
+  .. hook-start:TARGET_SCHED_SMS_RES_MII
 
   This hook is called by the swing modulo scheduler to calculate a
   resource-based lower bound which is based on the resources available in
@@ -535,7 +535,7 @@ them: try the first ones in this list first.
 
 .. function:: bool TARGET_SCHED_DISPATCH (rtx_insn *insn, int x)
 
-  .. hook-start:TARGET_SCHED_dispatch
+  .. hook-start:TARGET_SCHED_DISPATCH
 
   This hook is called by Haifa Scheduler.  It returns true if dispatch scheduling
   is supported in hardware and the condition specified in the parameter is true.
@@ -544,7 +544,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_DISPATCH_DO (rtx_insn *insn, int x)
 
-  .. hook-start:TARGET_SCHED_dispatch_do
+  .. hook-start:TARGET_SCHED_DISPATCH_DO
 
   This hook is called by Haifa Scheduler.  It performs the operation specified
   in its second parameter.
@@ -553,7 +553,7 @@ them: try the first ones in this list first.
 
 .. c:var:: bool TARGET_SCHED_EXPOSED_PIPELINE
 
-  .. hook-start:TARGET_SCHED_exposed_pipeline
+  .. hook-start:TARGET_SCHED_EXPOSED_PIPELINE
 
   True if the processor has an exposed pipeline, which means that not just
   the order of instructions is important for correctness when scheduling, but
@@ -563,7 +563,7 @@ them: try the first ones in this list first.
 
 .. function:: int TARGET_SCHED_REASSOCIATION_WIDTH (unsigned int opc, machine_mode mode)
 
-  .. hook-start:TARGET_SCHED_reassociation_width
+  .. hook-start:TARGET_SCHED_REASSOCIATION_WIDTH
 
   This hook is called by tree reassociator to determine a level of
   parallelism required in output calculations chain.
@@ -572,7 +572,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_SCHED_FUSION_PRIORITY (rtx_insn *insn, int max_pri, int *fusion_pri, int *pri)
 
-  .. hook-start:TARGET_SCHED_fusion_priority
+  .. hook-start:TARGET_SCHED_FUSION_PRIORITY
 
   This hook is called by scheduling fusion pass.  It calculates fusion
   priorities for each instruction passed in by parameter.  The priorities
@@ -652,7 +652,7 @@ them: try the first ones in this list first.
 
 .. function:: void TARGET_EXPAND_DIVMOD_LIBFUNC (rtx libfunc, machine_mode mode, rtx op0, rtx op1, rtx *quot, rtx *rem)
 
-  .. hook-start:TARGET_expand_divmod_libfunc
+  .. hook-start:TARGET_EXPAND_DIVMOD_LIBFUNC
 
   Define this hook for enabling divmod transform if the port does not have
   hardware divmod insn but defines target-specific divmod libfuncs.

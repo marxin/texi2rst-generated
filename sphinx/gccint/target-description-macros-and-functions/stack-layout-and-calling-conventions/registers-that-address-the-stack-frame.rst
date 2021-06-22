@@ -104,7 +104,7 @@ This discusses registers that address the stack frame.
 
 .. function:: rtx TARGET_STATIC_CHAIN (const_tree fndecl_or_type, bool incoming_p)
 
-  .. hook-start:TARGET_static_chain
+  .. hook-start:TARGET_STATIC_CHAIN
 
   This hook replaces the use of ``STATIC_CHAIN_REGNUM`` et al for
   targets that may use different static chain locations for different

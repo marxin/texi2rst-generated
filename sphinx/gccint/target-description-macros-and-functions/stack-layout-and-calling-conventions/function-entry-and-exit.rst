@@ -19,7 +19,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_PRINT_PATCHABLE_FUNCTION_ENTRY (FILE *file, unsigned HOST_WIDE_INT patch_area_size, bool record_p)
 
-  .. hook-start:TARGET_ASM_print_patchable_function_entry
+  .. hook-start:TARGET_ASM_PRINT_PATCHABLE_FUNCTION_ENTRY
 
   Generate a patchable area at the function start, consisting of
   :samp:`{patch_area_size}` NOP instructions.  If the target supports named
@@ -32,7 +32,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_FUNCTION_PROLOGUE (FILE *file)
 
-  .. hook-start:TARGET_ASM_function_prologue
+  .. hook-start:TARGET_ASM_FUNCTION_PROLOGUE
 
   If defined, a function that outputs the assembler code for entry to a
   function.  The prologue is responsible for setting up the stack frame,
@@ -83,7 +83,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_FUNCTION_END_PROLOGUE (FILE *file)
 
-  .. hook-start:TARGET_ASM_function_end_prologue
+  .. hook-start:TARGET_ASM_FUNCTION_END_PROLOGUE
 
   If defined, a function that outputs assembler code at the end of a
   prologue.  This should be used when the function prologue is being
@@ -94,7 +94,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_FUNCTION_BEGIN_EPILOGUE (FILE *file)
 
-  .. hook-start:TARGET_ASM_function_begin_epilogue
+  .. hook-start:TARGET_ASM_FUNCTION_BEGIN_EPILOGUE
 
   If defined, a function that outputs assembler code at the start of an
   epilogue.  This should be used when the function epilogue is being
@@ -105,7 +105,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_FUNCTION_EPILOGUE (FILE *file)
 
-  .. hook-start:TARGET_ASM_function_epilogue
+  .. hook-start:TARGET_ASM_FUNCTION_EPILOGUE
 
   If defined, a function that outputs the assembler code for exit from a
   function.  The epilogue is responsible for restoring the saved
@@ -217,7 +217,7 @@ This section describes the macros that output function entry
 
 .. function:: void TARGET_ASM_OUTPUT_MI_THUNK (FILE *file, tree thunk_fndecl, HOST_WIDE_INT delta, HOST_WIDE_INT vcall_offset, tree function)
 
-  .. hook-start:TARGET_ASM_output_mi_thunk
+  .. hook-start:TARGET_ASM_OUTPUT_MI_THUNK
 
   A function that outputs the assembler code for a thunk
   function, used to implement C++ virtual function calls with multiple
@@ -263,7 +263,7 @@ This section describes the macros that output function entry
 
 .. function:: bool TARGET_ASM_CAN_OUTPUT_MI_THUNK (const_tree thunk_fndecl, HOST_WIDE_INT delta, HOST_WIDE_INT vcall_offset, const_tree function)
 
-  .. hook-start:TARGET_ASM_can_output_mi_thunk
+  .. hook-start:TARGET_ASM_CAN_OUTPUT_MI_THUNK
 
   A function that returns true if TARGET_ASM_OUTPUT_MI_THUNK would be able
   to output the assembler code for the thunk function specified by the

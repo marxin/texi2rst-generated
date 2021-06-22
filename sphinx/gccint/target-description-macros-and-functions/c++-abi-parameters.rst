@@ -12,7 +12,7 @@ C++ ABI parameters
 
 .. function:: tree TARGET_CXX_GUARD_TYPE (void)
 
-  .. hook-start:TARGET_CXX_guard_type
+  .. hook-start:TARGET_CXX_GUARD_TYPE
 
   Define this hook to override the integer type used for guard variables.
   These are used to implement one-time construction of static objects.  The
@@ -22,7 +22,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_GUARD_MASK_BIT (void)
 
-  .. hook-start:TARGET_CXX_guard_mask_bit
+  .. hook-start:TARGET_CXX_GUARD_MASK_BIT
 
   This hook determines how guard variables are used.  It should return
   ``false`` (the default) if the first byte should be used.  A return value of
@@ -32,7 +32,7 @@ C++ ABI parameters
 
 .. function:: tree TARGET_CXX_GET_COOKIE_SIZE (tree type)
 
-  .. hook-start:TARGET_CXX_get_cookie_size
+  .. hook-start:TARGET_CXX_GET_COOKIE_SIZE
 
   This hook returns the size of the cookie to use when allocating an array
   whose elements have the indicated :samp:`{type}`.  Assumes that it is already
@@ -44,7 +44,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_COOKIE_HAS_SIZE (void)
 
-  .. hook-start:TARGET_CXX_cookie_has_size
+  .. hook-start:TARGET_CXX_COOKIE_HAS_SIZE
 
   This hook should return ``true`` if the element size should be stored in
   array cookies.  The default is to return ``false``.
@@ -53,7 +53,7 @@ C++ ABI parameters
 
 .. function:: int TARGET_CXX_IMPORT_EXPORT_CLASS (tree type, int import_export)
 
-  .. hook-start:TARGET_CXX_import_export_class
+  .. hook-start:TARGET_CXX_IMPORT_EXPORT_CLASS
 
   If defined by a backend this hook allows the decision made to export
   class :samp:`{type}` to be overruled.  Upon entry :samp:`{import_export}`
@@ -66,7 +66,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_CDTOR_RETURNS_THIS (void)
 
-  .. hook-start:TARGET_CXX_cdtor_returns_this
+  .. hook-start:TARGET_CXX_CDTOR_RETURNS_THIS
 
   This hook should return ``true`` if constructors and destructors return
   the address of the object created/destroyed.  The default is to return
@@ -76,7 +76,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_KEY_METHOD_MAY_BE_INLINE (void)
 
-  .. hook-start:TARGET_CXX_key_method_may_be_inline
+  .. hook-start:TARGET_CXX_KEY_METHOD_MAY_BE_INLINE
 
   This hook returns true if the key method for a class (i.e., the method
   which, if defined in the current translation unit, causes the virtual
@@ -90,7 +90,7 @@ C++ ABI parameters
 
 .. function:: void TARGET_CXX_DETERMINE_CLASS_DATA_VISIBILITY (tree decl)
 
-  .. hook-start:TARGET_CXX_determine_class_data_visibility
+  .. hook-start:TARGET_CXX_DETERMINE_CLASS_DATA_VISIBILITY
 
   :samp:`{decl}` is a virtual table, virtual table table, typeinfo object,
   or other similar implicit class data object that will be emitted with
@@ -103,7 +103,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_CLASS_DATA_ALWAYS_COMDAT (void)
 
-  .. hook-start:TARGET_CXX_class_data_always_comdat
+  .. hook-start:TARGET_CXX_CLASS_DATA_ALWAYS_COMDAT
 
   This hook returns true (the default) if virtual tables and other
   similar implicit class data objects are always COMDAT if they have
@@ -115,7 +115,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_LIBRARY_RTTI_COMDAT (void)
 
-  .. hook-start:TARGET_CXX_library_rtti_comdat
+  .. hook-start:TARGET_CXX_LIBRARY_RTTI_COMDAT
 
   This hook returns true (the default) if the RTTI information for
   the basic types which is defined in the C++ runtime should always
@@ -125,7 +125,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_USE_AEABI_ATEXIT (void)
 
-  .. hook-start:TARGET_CXX_use_aeabi_atexit
+  .. hook-start:TARGET_CXX_USE_AEABI_ATEXIT
 
   This hook returns true if ``__aeabi_atexit`` (as defined by the ARM EABI)
   should be used to register static destructors when :option:`-fuse-cxa-atexit`
@@ -135,7 +135,7 @@ C++ ABI parameters
 
 .. function:: bool TARGET_CXX_USE_ATEXIT_FOR_CXA_ATEXIT (void)
 
-  .. hook-start:TARGET_CXX_use_atexit_for_cxa_atexit
+  .. hook-start:TARGET_CXX_USE_ATEXIT_FOR_CXA_ATEXIT
 
   This hook returns true if the target ``atexit`` function can be used
   in the same manner as ``__cxa_atexit`` to register C++ static
@@ -147,7 +147,7 @@ C++ ABI parameters
 
 .. function:: void TARGET_CXX_ADJUST_CLASS_AT_DEFINITION (tree type)
 
-  .. hook-start:TARGET_CXX_adjust_class_at_definition
+  .. hook-start:TARGET_CXX_ADJUST_CLASS_AT_DEFINITION
 
   :samp:`{type}` is a C++ class (i.e., RECORD_TYPE or UNION_TYPE) that has just
   been defined.  Use this hook to make adjustments to the class (eg, tweak
@@ -157,7 +157,7 @@ C++ ABI parameters
 
 .. function:: tree TARGET_CXX_DECL_MANGLING_CONTEXT (const_tree decl)
 
-  .. hook-start:TARGET_CXX_decl_mangling_context
+  .. hook-start:TARGET_CXX_DECL_MANGLING_CONTEXT
 
   Return target-specific mangling context of :samp:`{decl}` or ``NULL_TREE``.
 

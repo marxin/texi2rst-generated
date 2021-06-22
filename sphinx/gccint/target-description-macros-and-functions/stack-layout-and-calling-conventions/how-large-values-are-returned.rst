@@ -28,7 +28,7 @@ memory.
 
 .. function:: bool TARGET_RETURN_IN_MEMORY (const_tree type, const_tree fntype)
 
-  .. hook-start:TARGET_return_in_memory
+  .. hook-start:TARGET_RETURN_IN_MEMORY
 
   This target hook should return a nonzero value to say to return the
   function value in memory, just as large structures are always returned.
@@ -62,7 +62,7 @@ memory.
 
 .. function:: rtx TARGET_STRUCT_VALUE_RTX (tree fndecl, int incoming)
 
-  .. hook-start:TARGET_struct_value_rtx
+  .. hook-start:TARGET_STRUCT_VALUE_RTX
 
   This target hook should return the location of the structure value
   address (normally a ``mem`` or ``reg`` ), or 0 if the address is
@@ -101,7 +101,7 @@ memory.
 
 .. function:: fixed_size_mode TARGET_GET_RAW_RESULT_MODE (int regno)
 
-  .. hook-start:TARGET_get_raw_result_mode
+  .. hook-start:TARGET_GET_RAW_RESULT_MODE
 
   This target hook returns the mode to be used when accessing raw return
   registers in ``__builtin_return``.  Define this macro if the value
@@ -111,7 +111,7 @@ memory.
 
 .. function:: fixed_size_mode TARGET_GET_RAW_ARG_MODE (int regno)
 
-  .. hook-start:TARGET_get_raw_arg_mode
+  .. hook-start:TARGET_GET_RAW_ARG_MODE
 
   This target hook returns the mode to be used when accessing raw argument
   registers in ``__builtin_apply_args``.  Define this macro if the value
@@ -121,7 +121,7 @@ memory.
 
 .. function:: bool TARGET_EMPTY_RECORD_P (const_tree type)
 
-  .. hook-start:TARGET_empty_record_p
+  .. hook-start:TARGET_EMPTY_RECORD_P
 
   This target hook returns true if the type is an empty record.  The default
   is to return ``false``.
@@ -130,7 +130,7 @@ memory.
 
 .. function:: void TARGET_WARN_PARAMETER_PASSING_ABI (cumulative_args_t ca, tree type)
 
-  .. hook-start:TARGET_warn_parameter_passing_abi
+  .. hook-start:TARGET_WARN_PARAMETER_PASSING_ABI
 
   This target hook warns about the change in empty class parameter passing
   ABI.

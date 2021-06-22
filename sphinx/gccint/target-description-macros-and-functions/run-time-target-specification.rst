@@ -73,7 +73,7 @@ any target-specific headers.
 
 .. c:var:: int TARGET_DEFAULT_TARGET_FLAGS
 
-  .. hook-start:TARGET_default_target_flags
+  .. hook-start:TARGET_DEFAULT_TARGET_FLAGS
 
   .. hook-end
 
@@ -86,7 +86,7 @@ any target-specific headers.
 
 .. function:: bool TARGET_HANDLE_OPTION (struct gcc_options *opts, struct gcc_options *opts_set, const struct cl_decoded_option *decoded, location_t loc)
 
-  .. hook-start:TARGET_handle_option
+  .. hook-start:TARGET_HANDLE_OPTION
 
   .. hook-end
 
@@ -104,7 +104,7 @@ any target-specific headers.
 
 .. function:: bool TARGET_HANDLE_C_OPTION (size_t code, const char *arg, int value)
 
-  .. hook-start:TARGET_handle_c_option
+  .. hook-start:TARGET_HANDLE_C_OPTION
 
   .. hook-end
 
@@ -122,7 +122,7 @@ any target-specific headers.
 
 .. function:: tree TARGET_OBJC_CONSTRUCT_STRING_OBJECT (tree string)
 
-  .. hook-start:TARGET_objc_construct_string_object
+  .. hook-start:TARGET_OBJC_CONSTRUCT_STRING_OBJECT
 
   Targets may provide a string object type that can be used within
   and between C, C++ and their respective Objective-C dialects.
@@ -141,7 +141,7 @@ any target-specific headers.
 
 .. function:: void TARGET_OBJC_DECLARE_UNRESOLVED_CLASS_REFERENCE (const char *classname)
 
-  .. hook-start:TARGET_objc_declare_unresolved_class_reference
+  .. hook-start:TARGET_OBJC_DECLARE_UNRESOLVED_CLASS_REFERENCE
 
   Declare that Objective C class :samp:`{classname}` is referenced
   by the current TU.
@@ -150,7 +150,7 @@ any target-specific headers.
 
 .. function:: void TARGET_OBJC_DECLARE_CLASS_DEFINITION (const char *classname)
 
-  .. hook-start:TARGET_objc_declare_class_definition
+  .. hook-start:TARGET_OBJC_DECLARE_CLASS_DEFINITION
 
   Declare that Objective C class :samp:`{classname}` is defined
   by the current TU.
@@ -159,7 +159,7 @@ any target-specific headers.
 
 .. function:: bool TARGET_STRING_OBJECT_REF_TYPE_P (const_tree stringref)
 
-  .. hook-start:TARGET_string_object_ref_type_p
+  .. hook-start:TARGET_STRING_OBJECT_REF_TYPE_P
 
   If a target implements string objects then this hook should return
   ``true`` if :samp:`{stringref}` is a valid reference to such an object.
@@ -168,7 +168,7 @@ any target-specific headers.
 
 .. function:: void TARGET_CHECK_STRING_OBJECT_FORMAT_ARG (tree format_arg, tree args_list)
 
-  .. hook-start:TARGET_check_string_object_format_arg
+  .. hook-start:TARGET_CHECK_STRING_OBJECT_FORMAT_ARG
 
   If a target implements string objects then this hook should should
   provide a facility to check the function arguments in :samp:`{args_list}`
@@ -179,7 +179,7 @@ any target-specific headers.
 
 .. function:: void TARGET_OVERRIDE_OPTIONS_AFTER_CHANGE (void)
 
-  .. hook-start:TARGET_override_options_after_change
+  .. hook-start:TARGET_OVERRIDE_OPTIONS_AFTER_CHANGE
 
   This target function is similar to the hook ``TARGET_OPTION_OVERRIDE``
   but is called when the optimize level is changed via an attribute or
@@ -201,7 +201,7 @@ any target-specific headers.
 
 .. c:var:: const struct default_options * TARGET_OPTION_OPTIMIZATION_TABLE
 
-  .. hook-start:TARGET_option_optimization_table
+  .. hook-start:TARGET_OPTION_OPTIMIZATION_TABLE
 
   .. hook-end
 
@@ -219,7 +219,7 @@ any target-specific headers.
 
 .. function:: void TARGET_OPTION_INIT_STRUCT (struct gcc_options *opts)
 
-  .. hook-start:TARGET_option_init_struct
+  .. hook-start:TARGET_OPTION_INIT_STRUCT
 
   Set target-dependent initial values of fields in :samp:`{opts}`.
 
@@ -246,7 +246,7 @@ any target-specific headers.
 
 .. function:: bool TARGET_FLOAT_EXCEPTIONS_ROUNDING_SUPPORTED_P (void)
 
-  .. hook-start:TARGET_float_exceptions_rounding_supported_p
+  .. hook-start:TARGET_FLOAT_EXCEPTIONS_ROUNDING_SUPPORTED_P
 
   Returns true if the target supports IEEE 754 floating-point exceptions
   and rounding modes, false otherwise.  This is intended to relate to the

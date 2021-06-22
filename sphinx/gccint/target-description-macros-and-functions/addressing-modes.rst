@@ -65,7 +65,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_LEGITIMATE_ADDRESS_P (machine_mode mode, rtx x, bool strict)
 
-  .. hook-start:TARGET_legitimate_address_p
+  .. hook-start:TARGET_LEGITIMATE_ADDRESS_P
 
   A function that returns whether :samp:`{x}` (an RTX) is a legitimate memory
   address on the target machine for a memory operand of mode :samp:`{mode}`.
@@ -159,7 +159,7 @@ This is about addressing modes.
 
 .. function:: rtx TARGET_LEGITIMIZE_ADDRESS (rtx x, rtx oldx, machine_mode mode)
 
-  .. hook-start:TARGET_legitimize_address
+  .. hook-start:TARGET_LEGITIMIZE_ADDRESS
 
   This hook is given an invalid memory address :samp:`{x}` for an
   operand of mode :samp:`{mode}` and should try to return a valid memory
@@ -239,7 +239,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_MODE_DEPENDENT_ADDRESS_P (const_rtx addr, addr_space_t addrspace)
 
-  .. hook-start:TARGET_mode_dependent_address_p
+  .. hook-start:TARGET_MODE_DEPENDENT_ADDRESS_P
 
   This hook returns ``true`` if memory address :samp:`{addr}` in address
   space :samp:`{addrspace}` can have
@@ -260,7 +260,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_LEGITIMATE_CONSTANT_P (machine_mode mode, rtx x)
 
-  .. hook-start:TARGET_legitimate_constant_p
+  .. hook-start:TARGET_LEGITIMATE_CONSTANT_P
 
   This hook returns true if :samp:`{x}` is a legitimate constant for a
   :samp:`{mode}` -mode immediate operand on the target machine.  You can assume that
@@ -272,7 +272,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_PRECOMPUTE_TLS_P (machine_mode mode, rtx x)
 
-  .. hook-start:TARGET_precompute_tls_p
+  .. hook-start:TARGET_PRECOMPUTE_TLS_P
 
   This hook returns true if :samp:`{x}` is a TLS operand on the target
   machine that should be pre-computed when used as the argument in a call.
@@ -285,7 +285,7 @@ This is about addressing modes.
 
 .. function:: rtx TARGET_DELEGITIMIZE_ADDRESS (rtx x)
 
-  .. hook-start:TARGET_delegitimize_address
+  .. hook-start:TARGET_DELEGITIMIZE_ADDRESS
 
   This hook is used to undo the possibly obfuscating effects of the
   ``LEGITIMIZE_ADDRESS`` and ``LEGITIMIZE_RELOAD_ADDRESS`` target
@@ -299,7 +299,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_CONST_NOT_OK_FOR_DEBUG_P (rtx x)
 
-  .. hook-start:TARGET_const_not_ok_for_debug_p
+  .. hook-start:TARGET_CONST_NOT_OK_FOR_DEBUG_P
 
   This hook should return true if :samp:`{x}` should not be emitted into
   debug sections.
@@ -308,7 +308,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_CANNOT_FORCE_CONST_MEM (machine_mode mode, rtx x)
 
-  .. hook-start:TARGET_cannot_force_const_mem
+  .. hook-start:TARGET_CANNOT_FORCE_CONST_MEM
 
   This hook should return true if :samp:`{x}` is of a form that cannot (or
   should not) be spilled to the constant pool.  :samp:`{mode}` is the mode
@@ -326,7 +326,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_USE_BLOCKS_FOR_CONSTANT_P (machine_mode mode, const_rtx x)
 
-  .. hook-start:TARGET_use_blocks_for_constant_p
+  .. hook-start:TARGET_USE_BLOCKS_FOR_CONSTANT_P
 
   This hook should return true if pool entries for constant :samp:`{x}` can
   be placed in an ``object_block`` structure.  :samp:`{mode}` is the mode
@@ -338,7 +338,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_USE_BLOCKS_FOR_DECL_P (const_tree decl)
 
-  .. hook-start:TARGET_use_blocks_for_decl_p
+  .. hook-start:TARGET_USE_BLOCKS_FOR_DECL_P
 
   This hook should return true if pool entries for :samp:`{decl}` should
   be placed in an ``object_block`` structure.
@@ -349,7 +349,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_BUILTIN_RECIPROCAL (tree fndecl)
 
-  .. hook-start:TARGET_builtin_reciprocal
+  .. hook-start:TARGET_BUILTIN_RECIPROCAL
 
   This hook should return the DECL of a function that implements the
   reciprocal of the machine-specific builtin function :samp:`{fndecl}`, or
@@ -359,7 +359,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_MASK_FOR_LOAD (void)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_mask_for_load
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_MASK_FOR_LOAD
 
   This hook should return the DECL of a function :samp:`{f}` that given an
   address :samp:`{addr}` as an argument returns a mask :samp:`{m}` that can be
@@ -392,7 +392,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST (enum vect_cost_for_stmt type_of_cost, tree vectype, int misalign)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_vectorization_cost
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST
 
   Returns cost of different scalar or vector statements for vectorization cost model.
   For vector memory operations the cost may depend on type ( :samp:`{vectype}` ) and
@@ -402,7 +402,7 @@ This is about addressing modes.
 
 .. function:: poly_uint64 TARGET_VECTORIZE_PREFERRED_VECTOR_ALIGNMENT (const_tree type)
 
-  .. hook-start:TARGET_VECTORIZE_preferred_vector_alignment
+  .. hook-start:TARGET_VECTORIZE_PREFERRED_VECTOR_ALIGNMENT
 
   This hook returns the preferred alignment in bits for accesses to
   vectors of type :samp:`{type}` in vectorized code.  This might be less than
@@ -418,7 +418,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE (const_tree type, bool is_packed)
 
-  .. hook-start:TARGET_VECTORIZE_vector_alignment_reachable
+  .. hook-start:TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE
 
   Return true if vector alignment is reachable (by peeling N iterations)
   for the given scalar type :samp:`{type}`.  :samp:`{is_packed}` is false if the scalar
@@ -428,7 +428,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST (machine_mode mode, rtx output, rtx in0, rtx in1, const vec_perm_indices &sel)
 
-  .. hook-start:TARGET_VECTORIZE_vec_perm_const
+  .. hook-start:TARGET_VECTORIZE_VEC_PERM_CONST
 
   This hook is used to test whether the target can permute up to two
   vectors of mode :samp:`{mode}` using the permutation vector ``sel``, and
@@ -453,7 +453,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_VECTORIZED_FUNCTION (unsigned code, tree vec_type_out, tree vec_type_in)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_vectorized_function
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_VECTORIZED_FUNCTION
 
   This hook should return the decl of a function that implements the
   vectorized variant of the function with the ``combined_fn`` code
@@ -465,7 +465,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_MD_VECTORIZED_FUNCTION (tree fndecl, tree vec_type_out, tree vec_type_in)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_md_vectorized_function
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_MD_VECTORIZED_FUNCTION
 
   This hook should return the decl of a function that implements the
   vectorized variant of target built-in function ``fndecl``.  The
@@ -476,7 +476,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_VECTORIZE_SUPPORT_VECTOR_MISALIGNMENT (machine_mode mode, const_tree type, int misalignment, bool is_packed)
 
-  .. hook-start:TARGET_VECTORIZE_support_vector_misalignment
+  .. hook-start:TARGET_VECTORIZE_SUPPORT_VECTOR_MISALIGNMENT
 
   This hook should return true if the target supports misaligned vector
   store/load of a specific factor denoted in the :samp:`{misalignment}`
@@ -488,7 +488,7 @@ This is about addressing modes.
 
 .. function:: machine_mode TARGET_VECTORIZE_PREFERRED_SIMD_MODE (scalar_mode mode)
 
-  .. hook-start:TARGET_VECTORIZE_preferred_simd_mode
+  .. hook-start:TARGET_VECTORIZE_PREFERRED_SIMD_MODE
 
   This hook should return the preferred mode for vectorizing scalar
   mode :samp:`{mode}`.  The default is
@@ -499,7 +499,7 @@ This is about addressing modes.
 
 .. function:: machine_mode TARGET_VECTORIZE_SPLIT_REDUCTION (machine_mode)
 
-  .. hook-start:TARGET_VECTORIZE_split_reduction
+  .. hook-start:TARGET_VECTORIZE_SPLIT_REDUCTION
 
   This hook should return the preferred mode to split the final reduction
   step on :samp:`{mode}` to.  The reduction is then carried out reducing upper
@@ -510,7 +510,7 @@ This is about addressing modes.
 
 .. function:: unsigned int TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_MODES (vector_modes *modes, bool all)
 
-  .. hook-start:TARGET_VECTORIZE_autovectorize_vector_modes
+  .. hook-start:TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_MODES
 
   If using the mode returned by ``TARGET_VECTORIZE_PREFERRED_SIMD_MODE``
   is not the only approach worth considering, this hook should add one mode to
@@ -545,7 +545,7 @@ This is about addressing modes.
 
 .. function:: opt_machine_mode TARGET_VECTORIZE_RELATED_MODE (machine_mode vector_mode, scalar_mode element_mode, poly_uint64 nunits)
 
-  .. hook-start:TARGET_VECTORIZE_related_mode
+  .. hook-start:TARGET_VECTORIZE_RELATED_MODE
 
   If a piece of code is using vector mode :samp:`{vector_mode}` and also wants
   to operate on elements of mode :samp:`{element_mode}`, return the vector mode
@@ -573,7 +573,7 @@ This is about addressing modes.
 
 .. function:: opt_machine_mode TARGET_VECTORIZE_GET_MASK_MODE (machine_mode mode)
 
-  .. hook-start:TARGET_VECTORIZE_get_mask_mode
+  .. hook-start:TARGET_VECTORIZE_GET_MASK_MODE
 
   Return the mode to use for a vector mask that holds one boolean
   result for each element of vector mode :samp:`{mode}`.  The returned mask mode
@@ -589,7 +589,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_VECTORIZE_EMPTY_MASK_IS_EXPENSIVE (unsigned ifn)
 
-  .. hook-start:TARGET_VECTORIZE_empty_mask_is_expensive
+  .. hook-start:TARGET_VECTORIZE_EMPTY_MASK_IS_EXPENSIVE
 
   This hook returns true if masked internal function :samp:`{ifn}` (really of
   type ``internal_fn`` ) should be considered expensive when the mask is
@@ -599,7 +599,7 @@ This is about addressing modes.
 
 .. function:: void * TARGET_VECTORIZE_INIT_COST (class loop *loop_info, bool costing_for_scalar)
 
-  .. hook-start:TARGET_VECTORIZE_init_cost
+  .. hook-start:TARGET_VECTORIZE_INIT_COST
 
   This hook should initialize target-specific data structures in preparation
   for modeling the costs of vectorizing a loop or basic block.  The default
@@ -614,7 +614,7 @@ This is about addressing modes.
 
 .. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST (class vec_info *, void *data, int count, enum vect_cost_for_stmt kind, class _stmt_vec_info *stmt_info, tree vectype, int misalign, enum vect_cost_model_location where)
 
-  .. hook-start:TARGET_VECTORIZE_add_stmt_cost
+  .. hook-start:TARGET_VECTORIZE_ADD_STMT_COST
 
   This hook should update the target-specific :samp:`{data}` in response to
   adding :samp:`{count}` copies of the given :samp:`{kind}` of statement to a
@@ -628,7 +628,7 @@ This is about addressing modes.
 
 .. function:: void TARGET_VECTORIZE_FINISH_COST (void *data, unsigned *prologue_cost, unsigned *body_cost, unsigned *epilogue_cost)
 
-  .. hook-start:TARGET_VECTORIZE_finish_cost
+  .. hook-start:TARGET_VECTORIZE_FINISH_COST
 
   This hook should complete calculations of the cost of vectorizing a loop
   or basic block based on :samp:`{data}`, and return the prologue, body, and
@@ -639,7 +639,7 @@ This is about addressing modes.
 
 .. function:: void TARGET_VECTORIZE_DESTROY_COST_DATA (void *data)
 
-  .. hook-start:TARGET_VECTORIZE_destroy_cost_data
+  .. hook-start:TARGET_VECTORIZE_DESTROY_COST_DATA
 
   This hook should release :samp:`{data}` and any related data structures
   allocated by TARGET_VECTORIZE_INIT_COST.  The default releases the
@@ -649,7 +649,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_GATHER (const_tree mem_vectype, const_tree index_type, int scale)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_gather
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_GATHER
 
   Target builtin that implements vector gather operation.  :samp:`{mem_vectype}`
   is the vector type of the load and :samp:`{index_type}` is scalar type of
@@ -661,7 +661,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_VECTORIZE_BUILTIN_SCATTER (const_tree vectype, const_tree index_type, int scale)
 
-  .. hook-start:TARGET_VECTORIZE_builtin_scatter
+  .. hook-start:TARGET_VECTORIZE_BUILTIN_SCATTER
 
   Target builtin that implements vector scatter operation.  :samp:`{vectype}`
   is the vector type of the store and :samp:`{index_type}` is scalar type of
@@ -673,7 +673,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_SIMD_CLONE_COMPUTE_VECSIZE_AND_SIMDLEN (struct cgraph_node *, struct cgraph_simd_clone *, tree, int)
 
-  .. hook-start:TARGET_SIMD_CLONE_compute_vecsize_and_simdlen
+  .. hook-start:TARGET_SIMD_CLONE_COMPUTE_VECSIZE_AND_SIMDLEN
 
   This hook should set :samp:`{vecsize_mangle}`, :samp:`{vecsize_int}`, :samp:`{vecsize_float}`
   fields in :samp:`{simd_clone}` structure pointed by :samp:`{clone_info}` argument and also
@@ -685,7 +685,7 @@ This is about addressing modes.
 
 .. function:: void TARGET_SIMD_CLONE_ADJUST (struct cgraph_node *)
 
-  .. hook-start:TARGET_SIMD_CLONE_adjust
+  .. hook-start:TARGET_SIMD_CLONE_ADJUST
 
   This hook should add implicit ``attribute(target("..."))`` attribute
   to SIMD clone :samp:`{node}` if needed.
@@ -694,7 +694,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_SIMD_CLONE_USABLE (struct cgraph_node *)
 
-  .. hook-start:TARGET_SIMD_CLONE_usable
+  .. hook-start:TARGET_SIMD_CLONE_USABLE
 
   This hook should return -1 if SIMD clone :samp:`{node}` shouldn't be used
   in vectorized loops in current function, or non-negative number if it is
@@ -705,7 +705,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_SIMT_VF (void)
 
-  .. hook-start:TARGET_SIMT_vf
+  .. hook-start:TARGET_SIMT_VF
 
   Return number of threads in SIMT thread group on the target.
 
@@ -713,7 +713,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_OMP_DEVICE_KIND_ARCH_ISA (enum omp_device_kind_arch_isa trait, const char *name)
 
-  .. hook-start:TARGET_OMP_device_kind_arch_isa
+  .. hook-start:TARGET_OMP_DEVICE_KIND_ARCH_ISA
 
   Return 1 if :samp:`{trait}` :samp:`{name}` is present in the OpenMP context's
   device trait set, return 0 if not present in any OpenMP context in the
@@ -724,7 +724,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_GOACC_VALIDATE_DIMS (tree decl, int *dims, int fn_level, unsigned used)
 
-  .. hook-start:TARGET_GOACC_validate_dims
+  .. hook-start:TARGET_GOACC_VALIDATE_DIMS
 
   This hook should check the launch dimensions provided for an OpenACC
   compute region, or routine.  Defaulted values are represented as -1
@@ -741,7 +741,7 @@ This is about addressing modes.
 
 .. function:: int TARGET_GOACC_DIM_LIMIT (int axis)
 
-  .. hook-start:TARGET_GOACC_dim_limit
+  .. hook-start:TARGET_GOACC_DIM_LIMIT
 
   This hook should return the maximum size of a particular dimension,
   or zero if unbounded.
@@ -750,7 +750,7 @@ This is about addressing modes.
 
 .. function:: bool TARGET_GOACC_FORK_JOIN (gcall *call, const int *dims, bool is_fork)
 
-  .. hook-start:TARGET_GOACC_fork_join
+  .. hook-start:TARGET_GOACC_FORK_JOIN
 
   This hook can be used to convert IFN_GOACC_FORK and IFN_GOACC_JOIN
   function calls to target-specific gimple, or indicate whether they
@@ -764,7 +764,7 @@ This is about addressing modes.
 
 .. function:: void TARGET_GOACC_REDUCTION (gcall *call)
 
-  .. hook-start:TARGET_GOACC_reduction
+  .. hook-start:TARGET_GOACC_REDUCTION
 
   This hook is used by the oacc_transform pass to expand calls to the
   :samp:`{GOACC_REDUCTION}` internal function, into a sequence of gimple
@@ -777,7 +777,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_PREFERRED_ELSE_VALUE (unsigned ifn, tree type, unsigned nops, tree *ops)
 
-  .. hook-start:TARGET_preferred_else_value
+  .. hook-start:TARGET_PREFERRED_ELSE_VALUE
 
   This hook returns the target's preferred final argument for a call
   to conditional internal function :samp:`{ifn}` (really of type
@@ -797,7 +797,7 @@ This is about addressing modes.
 
 .. function:: tree TARGET_GOACC_ADJUST_PRIVATE_DECL (location_t loc, tree var, int level)
 
-  .. hook-start:TARGET_GOACC_adjust_private_decl
+  .. hook-start:TARGET_GOACC_ADJUST_PRIVATE_DECL
 
   This hook, if defined, is used by accelerator target back-ends to adjust
   OpenACC variable declarations that should be made private to the given
@@ -814,7 +814,7 @@ This is about addressing modes.
 
 .. function:: rtx TARGET_GOACC_EXPAND_VAR_DECL (tree var)
 
-  .. hook-start:TARGET_GOACC_expand_var_decl
+  .. hook-start:TARGET_GOACC_EXPAND_VAR_DECL
 
   This hook, if defined, is used by accelerator target back-ends to expand
   specially handled kinds of ``VAR_DECL`` expressions.  A particular use is

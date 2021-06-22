@@ -317,7 +317,7 @@ Here are macros for DWARF output.
 
   .. function:: int TARGET_DWARF_CALLING_CONVENTION (const_tree function)
 
-    .. hook-start:TARGET_dwarf_calling_convention
+    .. hook-start:TARGET_DWARF_CALLING_CONVENTION
 
     Define this to enable the dwarf attribute ``DW_AT_calling_convention`` to
     be emitted for each function.  Instead of an integer return the enum
@@ -341,7 +341,7 @@ Here are macros for DWARF output.
 
 .. function:: enum unwind_info_type TARGET_DEBUG_UNWIND_INFO (void)
 
-  .. hook-start:TARGET_debug_unwind_info
+  .. hook-start:TARGET_DEBUG_UNWIND_INFO
 
   This hook defines the mechanism that will be used for describing frame
   unwind information to the debugger.  Normally the hook will return
@@ -371,7 +371,7 @@ Here are macros for DWARF output.
 
 .. function:: int TARGET_RESET_LOCATION_VIEW (rtx_insn *)
 
-  .. hook-start:TARGET_reset_location_view
+  .. hook-start:TARGET_RESET_LOCATION_VIEW
 
   This hook, if defined, enables -ginternal-reset-location-views, and
   uses its result to override cases in which the estimated min insn
@@ -391,7 +391,7 @@ Here are macros for DWARF output.
 
 .. c:var:: bool TARGET_WANT_DEBUG_PUB_SECTIONS
 
-  .. hook-start:TARGET_want_debug_pub_sections
+  .. hook-start:TARGET_WANT_DEBUG_PUB_SECTIONS
 
   True if the ``.debug_pubtypes`` and ``.debug_pubnames`` sections
   should be emitted.  These sections are not used on most platforms, and
@@ -401,7 +401,7 @@ Here are macros for DWARF output.
 
 .. c:var:: bool TARGET_DELAY_SCHED2
 
-  .. hook-start:TARGET_delay_sched2
+  .. hook-start:TARGET_DELAY_SCHED2
 
   True if sched2 is not to be run at its normal place.
   This usually means it will be run as part of machine-specific reorg.
@@ -410,7 +410,7 @@ Here are macros for DWARF output.
 
 .. c:var:: bool TARGET_DELAY_VARTRACK
 
-  .. hook-start:TARGET_delay_vartrack
+  .. hook-start:TARGET_DELAY_VARTRACK
 
   True if vartrack is not to be run at its normal place.
   This usually means it will be run as part of machine-specific reorg.
@@ -419,7 +419,7 @@ Here are macros for DWARF output.
 
 .. c:var:: bool TARGET_NO_REGISTER_ALLOCATION
 
-  .. hook-start:TARGET_no_register_allocation
+  .. hook-start:TARGET_NO_REGISTER_ALLOCATION
 
   True if register allocation and the passes
   following it should not be run.  Usually true only for virtual assembler
@@ -464,7 +464,7 @@ Here are macros for DWARF output.
 
 .. function:: void TARGET_ASM_OUTPUT_DWARF_DTPREL (FILE *file, int size, rtx x)
 
-  .. hook-start:TARGET_ASM_output_dwarf_dtprel
+  .. hook-start:TARGET_ASM_OUTPUT_DWARF_DTPREL
 
   If defined, this target hook is a function which outputs a DTP-relative
   reference to the given TLS symbol of the specified size.

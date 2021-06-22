@@ -18,7 +18,7 @@ the stack.
 
 .. function:: rtx TARGET_FUNCTION_ARG (cumulative_args_t ca, const function_arg_info &arg)
 
-  .. hook-start:TARGET_function_arg
+  .. hook-start:TARGET_FUNCTION_ARG
 
   Return an RTX indicating whether function argument :samp:`{arg}` is passed
   in a register and if so, which register.  Argument :samp:`{ca}` summarizes all
@@ -76,7 +76,7 @@ the stack.
 
 .. function:: bool TARGET_MUST_PASS_IN_STACK (const function_arg_info &arg)
 
-  .. hook-start:TARGET_must_pass_in_stack
+  .. hook-start:TARGET_MUST_PASS_IN_STACK
 
   This target hook should return ``true`` if we should not pass :samp:`{arg}`
   solely in registers.  The file :samp:`expr.h` defines a
@@ -87,7 +87,7 @@ the stack.
 
 .. function:: rtx TARGET_FUNCTION_INCOMING_ARG (cumulative_args_t ca, const function_arg_info &arg)
 
-  .. hook-start:TARGET_function_incoming_arg
+  .. hook-start:TARGET_FUNCTION_INCOMING_ARG
 
   Define this hook if the caller and callee on the target have different
   views of where arguments are passed.  Also define this hook if there are
@@ -111,7 +111,7 @@ the stack.
 
 .. function:: bool TARGET_USE_PSEUDO_PIC_REG (void)
 
-  .. hook-start:TARGET_use_pseudo_pic_reg
+  .. hook-start:TARGET_USE_PSEUDO_PIC_REG
 
   This hook should return 1 in case pseudo register should be created
   for pic_offset_table_rtx during function expand.
@@ -120,7 +120,7 @@ the stack.
 
 .. function:: void TARGET_INIT_PIC_REG (void)
 
-  .. hook-start:TARGET_init_pic_reg
+  .. hook-start:TARGET_INIT_PIC_REG
 
   Perform a target dependent initialization of pic_offset_table_rtx.
   This hook is called at the start of register allocation.
@@ -129,7 +129,7 @@ the stack.
 
 .. function:: int TARGET_ARG_PARTIAL_BYTES (cumulative_args_t cum, const function_arg_info &arg)
 
-  .. hook-start:TARGET_arg_partial_bytes
+  .. hook-start:TARGET_ARG_PARTIAL_BYTES
 
   This target hook returns the number of bytes at the beginning of an
   argument that must be put in registers.  The value must be zero for
@@ -152,7 +152,7 @@ the stack.
 
 .. function:: bool TARGET_PASS_BY_REFERENCE (cumulative_args_t cum, const function_arg_info &arg)
 
-  .. hook-start:TARGET_pass_by_reference
+  .. hook-start:TARGET_PASS_BY_REFERENCE
 
   This target hook should return ``true`` if argument :samp:`{arg}` at the
   position indicated by :samp:`{cum}` should be passed by reference.  This
@@ -168,7 +168,7 @@ the stack.
 
 .. function:: bool TARGET_CALLEE_COPIES (cumulative_args_t cum, const function_arg_info &arg)
 
-  .. hook-start:TARGET_callee_copies
+  .. hook-start:TARGET_CALLEE_COPIES
 
   The function argument described by the parameters to this hook is
   known to be passed by reference.  The hook should return true if the
@@ -253,7 +253,7 @@ the stack.
 
 .. function:: void TARGET_FUNCTION_ARG_ADVANCE (cumulative_args_t ca, const function_arg_info &arg)
 
-  .. hook-start:TARGET_function_arg_advance
+  .. hook-start:TARGET_FUNCTION_ARG_ADVANCE
 
   This hook updates the summarizer variable pointed to by :samp:`{ca}` to
   advance past argument :samp:`{arg}` in the argument list.  Once this is done,
@@ -268,7 +268,7 @@ the stack.
 
 .. function:: HOST_WIDE_INT TARGET_FUNCTION_ARG_OFFSET (machine_mode mode, const_tree type)
 
-  .. hook-start:TARGET_function_arg_offset
+  .. hook-start:TARGET_FUNCTION_ARG_OFFSET
 
   This hook returns the number of bytes to add to the offset of an
   argument of type :samp:`{type}` and mode :samp:`{mode}` when passed in memory.
@@ -280,7 +280,7 @@ the stack.
 
 .. function:: pad_direction TARGET_FUNCTION_ARG_PADDING (machine_mode mode, const_tree type)
 
-  .. hook-start:TARGET_function_arg_padding
+  .. hook-start:TARGET_FUNCTION_ARG_PADDING
 
   This hook determines whether, and in which direction, to pad out
   an argument of mode :samp:`{mode}` and type :samp:`{type}`.  It returns
@@ -319,7 +319,7 @@ the stack.
 
 .. function:: unsigned int TARGET_FUNCTION_ARG_BOUNDARY (machine_mode mode, const_tree type)
 
-  .. hook-start:TARGET_function_arg_boundary
+  .. hook-start:TARGET_FUNCTION_ARG_BOUNDARY
 
   This hook returns the alignment boundary, in bits, of an argument
   with the specified mode and type.  The default hook returns
@@ -329,7 +329,7 @@ the stack.
 
 .. function:: unsigned int TARGET_FUNCTION_ARG_ROUND_BOUNDARY (machine_mode mode, const_tree type)
 
-  .. hook-start:TARGET_function_arg_round_boundary
+  .. hook-start:TARGET_FUNCTION_ARG_ROUND_BOUNDARY
 
   Normally, the size of an argument is rounded up to ``PARM_BOUNDARY``,
   which is the default value for this hook.  You can define this hook to
@@ -349,7 +349,7 @@ the stack.
 
 .. function:: bool TARGET_SPLIT_COMPLEX_ARG (const_tree type)
 
-  .. hook-start:TARGET_split_complex_arg
+  .. hook-start:TARGET_SPLIT_COMPLEX_ARG
 
   This hook should return true if parameter of type :samp:`{type}` are passed
   as two scalar parameters.  By default, GCC will attempt to pack complex
@@ -366,7 +366,7 @@ the stack.
 
 .. function:: tree TARGET_BUILD_BUILTIN_VA_LIST (void)
 
-  .. hook-start:TARGET_build_builtin_va_list
+  .. hook-start:TARGET_BUILD_BUILTIN_VA_LIST
 
   This hook returns a type node for ``va_list`` for the target.
   The default version of the hook returns ``void*``.
@@ -375,7 +375,7 @@ the stack.
 
 .. function:: int TARGET_ENUM_VA_LIST_P (int idx, const char **pname, tree *ptree)
 
-  .. hook-start:TARGET_enum_va_list_p
+  .. hook-start:TARGET_ENUM_VA_LIST_P
 
   This target hook is used in function ``c_common_nodes_and_builtins``
   to iterate through the target specific builtin types for va_list. The
@@ -393,7 +393,7 @@ the stack.
 
 .. function:: tree TARGET_FN_ABI_VA_LIST (tree fndecl)
 
-  .. hook-start:TARGET_fn_abi_va_list
+  .. hook-start:TARGET_FN_ABI_VA_LIST
 
   This hook returns the va_list type of the calling convention specified by
   :samp:`{fndecl}`.
@@ -403,7 +403,7 @@ the stack.
 
 .. function:: tree TARGET_CANONICAL_VA_LIST_TYPE (tree type)
 
-  .. hook-start:TARGET_canonical_va_list_type
+  .. hook-start:TARGET_CANONICAL_VA_LIST_TYPE
 
   This hook returns the va_list type of the calling convention specified by the
   type of :samp:`{type}`. If :samp:`{type}` is not a valid va_list type, it returns
@@ -413,7 +413,7 @@ the stack.
 
 .. function:: tree TARGET_GIMPLIFY_VA_ARG_EXPR (tree valist, tree type, gimple_seq *pre_p, gimple_seq *post_p)
 
-  .. hook-start:TARGET_gimplify_va_arg_expr
+  .. hook-start:TARGET_GIMPLIFY_VA_ARG_EXPR
 
   This hook performs target-specific gimplification of
   ``VA_ARG_EXPR``.  The first two parameters correspond to the
@@ -424,7 +424,7 @@ the stack.
 
 .. function:: bool TARGET_VALID_POINTER_MODE (scalar_int_mode mode)
 
-  .. hook-start:TARGET_valid_pointer_mode
+  .. hook-start:TARGET_VALID_POINTER_MODE
 
   Define this to return nonzero if the port can handle pointers
   with machine mode :samp:`{mode}`.  The default version of this
@@ -434,7 +434,7 @@ the stack.
 
 .. function:: bool TARGET_REF_MAY_ALIAS_ERRNO (ao_ref *ref)
 
-  .. hook-start:TARGET_ref_may_alias_errno
+  .. hook-start:TARGET_REF_MAY_ALIAS_ERRNO
 
   Define this to return nonzero if the memory reference :samp:`{ref}`
   may alias with the system C library errno location.  The default
@@ -446,7 +446,7 @@ the stack.
 
 .. function:: machine_mode TARGET_TRANSLATE_MODE_ATTRIBUTE (machine_mode mode)
 
-  .. hook-start:TARGET_translate_mode_attribute
+  .. hook-start:TARGET_TRANSLATE_MODE_ATTRIBUTE
 
   Define this hook if during mode attribute processing, the port should
   translate machine_mode :samp:`{mode}` to another mode.  For example, rs6000's
@@ -458,7 +458,7 @@ the stack.
 
 .. function:: bool TARGET_SCALAR_MODE_SUPPORTED_P (scalar_mode mode)
 
-  .. hook-start:TARGET_scalar_mode_supported_p
+  .. hook-start:TARGET_SCALAR_MODE_SUPPORTED_P
 
   Define this to return nonzero if the port is prepared to handle
   insns involving scalar mode :samp:`{mode}`.  For a scalar mode to be
@@ -474,7 +474,7 @@ the stack.
 
 .. function:: bool TARGET_VECTOR_MODE_SUPPORTED_P (machine_mode mode)
 
-  .. hook-start:TARGET_vector_mode_supported_p
+  .. hook-start:TARGET_VECTOR_MODE_SUPPORTED_P
 
   Define this to return nonzero if the port is prepared to handle
   insns involving vector mode :samp:`{mode}`.  At the very least, it
@@ -484,7 +484,7 @@ the stack.
 
 .. function:: bool TARGET_COMPATIBLE_VECTOR_TYPES_P (const_tree type1, const_tree type2)
 
-  .. hook-start:TARGET_compatible_vector_types_p
+  .. hook-start:TARGET_COMPATIBLE_VECTOR_TYPES_P
 
   Return true if there is no target-specific reason for treating
   vector types :samp:`{type1}` and :samp:`{type2}` as distinct types.  The caller
@@ -509,7 +509,7 @@ the stack.
 
 .. function:: opt_machine_mode TARGET_ARRAY_MODE (machine_mode mode, unsigned HOST_WIDE_INT nelems)
 
-  .. hook-start:TARGET_array_mode
+  .. hook-start:TARGET_ARRAY_MODE
 
   Return the mode that GCC should use for an array that has
   :samp:`{nelems}` elements, with each element having mode :samp:`{mode}`.
@@ -527,7 +527,7 @@ the stack.
 
 .. function:: bool TARGET_ARRAY_MODE_SUPPORTED_P (machine_mode mode, unsigned HOST_WIDE_INT nelems)
 
-  .. hook-start:TARGET_array_mode_supported_p
+  .. hook-start:TARGET_ARRAY_MODE_SUPPORTED_P
 
   Return true if GCC should try to use a scalar mode to store an array
   of :samp:`{nelems}` elements, given that each element has mode :samp:`{mode}`.
@@ -559,7 +559,7 @@ the stack.
 
 .. function:: bool TARGET_LIBGCC_FLOATING_MODE_SUPPORTED_P (scalar_float_mode mode)
 
-  .. hook-start:TARGET_libgcc_floating_mode_supported_p
+  .. hook-start:TARGET_LIBGCC_FLOATING_MODE_SUPPORTED_P
 
   Define this to return nonzero if libgcc provides support for the 
   floating-point mode :samp:`{mode}`, which is known to pass 
@@ -571,7 +571,7 @@ the stack.
 
 .. function:: opt_scalar_float_mode TARGET_FLOATN_MODE (int n, bool extended)
 
-  .. hook-start:TARGET_floatn_mode
+  .. hook-start:TARGET_FLOATN_MODE
 
   Define this to return the machine mode to use for the type 
   ``_Floatn``, if :samp:`{extended}` is false, or the type 
@@ -593,7 +593,7 @@ the stack.
 
 .. function:: bool TARGET_FLOATN_BUILTIN_P (int func)
 
-  .. hook-start:TARGET_floatn_builtin_p
+  .. hook-start:TARGET_FLOATN_BUILTIN_P
 
   Define this to return true if the ``_Floatn`` and
   ``_Floatnx`` built-in functions should implicitly enable the
@@ -608,7 +608,7 @@ the stack.
 
 .. function:: bool TARGET_SMALL_REGISTER_CLASSES_FOR_MODE_P (machine_mode mode)
 
-  .. hook-start:TARGET_small_register_classes_for_mode_p
+  .. hook-start:TARGET_SMALL_REGISTER_CLASSES_FOR_MODE_P
 
   Define this to return nonzero for machine modes for which the port has
   small register classes.  If this target hook returns nonzero for a given

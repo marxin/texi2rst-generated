@@ -56,7 +56,7 @@ region.
 
 .. function:: enum unwind_info_type TARGET_EXCEPT_UNWIND_INFO (struct gcc_options *opts)
 
-  .. hook-start:TARGET_except_unwind_info
+  .. hook-start:TARGET_EXCEPT_UNWIND_INFO
 
   .. hook-end
 
@@ -86,7 +86,7 @@ region.
 
 .. c:var:: bool TARGET_UNWIND_TABLES_DEFAULT
 
-  .. hook-start:TARGET_unwind_tables_default
+  .. hook-start:TARGET_UNWIND_TABLES_DEFAULT
 
   .. hook-end
 
@@ -119,7 +119,7 @@ region.
 
 .. c:var:: bool TARGET_TERMINATE_DW2_EH_FRAME_INFO
 
-  .. hook-start:TARGET_terminate_dw2_eh_frame_info
+  .. hook-start:TARGET_TERMINATE_DW2_EH_FRAME_INFO
 
   Contains the value true if the target should add a zero word onto the
   end of a Dwarf-2 frame info section when used for exception handling.
@@ -130,7 +130,7 @@ region.
 
 .. function:: rtx TARGET_DWARF_REGISTER_SPAN (rtx reg)
 
-  .. hook-start:TARGET_dwarf_register_span
+  .. hook-start:TARGET_DWARF_REGISTER_SPAN
 
   Given a register, this hook should return a parallel of registers to
   represent where to find the register pieces.  Define this hook if the
@@ -143,7 +143,7 @@ region.
 
 .. function:: machine_mode TARGET_DWARF_FRAME_REG_MODE (int regno)
 
-  .. hook-start:TARGET_dwarf_frame_reg_mode
+  .. hook-start:TARGET_DWARF_FRAME_REG_MODE
 
   Given a register, this hook should return the mode which the
   corresponding Dwarf frame register should have.  This is normally
@@ -154,7 +154,7 @@ region.
 
 .. function:: void TARGET_INIT_DWARF_REG_SIZES_EXTRA (tree address)
 
-  .. hook-start:TARGET_init_dwarf_reg_sizes_extra
+  .. hook-start:TARGET_INIT_DWARF_REG_SIZES_EXTRA
 
   If some registers are represented in Dwarf-2 unwind information in
   multiple pieces, define this hook to fill in information about the
@@ -167,7 +167,7 @@ region.
 
 .. function:: bool TARGET_ASM_TTYPE (rtx sym)
 
-  .. hook-start:TARGET_ASM_ttype
+  .. hook-start:TARGET_ASM_TTYPE
 
   This hook is used to output a reference from a frame unwinding table to
   the type_info object identified by :samp:`{sym}`.  It should return ``true``
@@ -178,7 +178,7 @@ region.
 
 .. c:var:: bool TARGET_ARM_EABI_UNWINDER
 
-  .. hook-start:TARGET_arm_eabi_unwinder
+  .. hook-start:TARGET_ARM_EABI_UNWINDER
 
   This flag should be set to ``true`` on targets that use an ARM EABI
   based unwinding library, and ``false`` on other targets.  This effects

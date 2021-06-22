@@ -10,7 +10,7 @@ Output of Data
 
 .. c:var:: const char * TARGET_ASM_BYTE_OP
 
-  .. hook-start:TARGET_ASM_byte_op
+  .. hook-start:TARGET_ASM_BYTE_OP
 
   These hooks specify assembly directives for creating certain kinds
   of integer object.  The ``TARGET_ASM_BYTE_OP`` directive creates a
@@ -26,7 +26,7 @@ Output of Data
 
 .. function:: bool TARGET_ASM_INTEGER (rtx x, unsigned int size, int aligned_p)
 
-  .. hook-start:TARGET_ASM_integer
+  .. hook-start:TARGET_ASM_INTEGER
 
   The ``assemble_integer`` function uses this hook to output an
   integer object.  :samp:`{x}` is the object's value, :samp:`{size}` is its size
@@ -43,7 +43,7 @@ Output of Data
 
 .. function:: void TARGET_ASM_DECL_END (void)
 
-  .. hook-start:TARGET_ASM_decl_end
+  .. hook-start:TARGET_ASM_DECL_END
 
   Define this hook if the target assembler requires a special marker to
   terminate an initialized variable declaration.
@@ -52,7 +52,7 @@ Output of Data
 
 .. function:: bool TARGET_ASM_OUTPUT_ADDR_CONST_EXTRA (FILE *file, rtx x)
 
-  .. hook-start:TARGET_ASM_output_addr_const_extra
+  .. hook-start:TARGET_ASM_OUTPUT_ADDR_CONST_EXTRA
 
   A target hook to recognize :samp:`{rtx}` patterns that ``output_addr_const``
   can't deal with, and output assembly code to :samp:`{file}` corresponding to
@@ -157,7 +157,7 @@ Output of Data
 
 .. c:var:: const char * TARGET_ASM_CLOSE_PAREN
 
-  .. hook-start:TARGET_ASM_open_paren
+  .. hook-start:TARGET_ASM_OPEN_PAREN
 
   These target hooks are C string constants, describing the syntax in the
   assembler for grouping arithmetic expressions.  If not overridden, they
