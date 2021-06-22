@@ -110,7 +110,7 @@ Registers have various characteristics.
 
 .. function:: const predefined_function_abi & TARGET_FNTYPE_ABI (const_tree type)
 
-  .. hook-start:TARGET_fntype_abi
+  .. hook-start:TARGET_FNTYPE_ABI
 
   Return the ABI used by a function with type :samp:`{type}` ; see the
   definition of ``predefined_function_abi`` for details of the ABI
@@ -121,7 +121,7 @@ Registers have various characteristics.
 
 .. function:: const predefined_function_abi & TARGET_INSN_CALLEE_ABI (const rtx_insn *insn)
 
-  .. hook-start:TARGET_insn_callee_abi
+  .. hook-start:TARGET_INSN_CALLEE_ABI
 
   This hook returns a description of the ABI used by the target of
   call instruction :samp:`{insn}` ; see the definition of
@@ -142,7 +142,7 @@ Registers have various characteristics.
 
 .. function:: bool TARGET_HARD_REGNO_CALL_PART_CLOBBERED (unsigned int abi_id, unsigned int regno, machine_mode mode)
 
-  .. hook-start:TARGET_hard_regno_call_part_clobbered
+  .. hook-start:TARGET_HARD_REGNO_CALL_PART_CLOBBERED
 
   ABIs usually specify that calls must preserve the full contents
   of a particular register, or that calls can alter any part of a
@@ -168,7 +168,7 @@ Registers have various characteristics.
 
 .. function:: const char * TARGET_GET_MULTILIB_ABI_NAME (void)
 
-  .. hook-start:TARGET_get_multilib_abi_name
+  .. hook-start:TARGET_GET_MULTILIB_ABI_NAME
 
   This hook returns name of multilib ABI name.
 
@@ -186,7 +186,7 @@ Registers have various characteristics.
 
 .. function:: void TARGET_CONDITIONAL_REGISTER_USAGE (void)
 
-  .. hook-start:TARGET_conditional_register_usage
+  .. hook-start:TARGET_CONDITIONAL_REGISTER_USAGE
 
   This hook may conditionally modify five variables
   ``fixed_regs``, ``call_used_regs``, ``global_regs``,
@@ -324,7 +324,7 @@ consecutive registers are needed for a given mode.
 
 .. function:: unsigned int TARGET_HARD_REGNO_NREGS (unsigned int regno, machine_mode mode)
 
-  .. hook-start:TARGET_hard_regno_nregs
+  .. hook-start:TARGET_HARD_REGNO_NREGS
 
   This hook returns the number of consecutive hard registers, starting
   at register number :samp:`{regno}`, required to hold a value of mode
@@ -375,7 +375,7 @@ consecutive registers are needed for a given mode.
 
 .. function:: bool TARGET_HARD_REGNO_MODE_OK (unsigned int regno, machine_mode mode)
 
-  .. hook-start:TARGET_hard_regno_mode_ok
+  .. hook-start:TARGET_HARD_REGNO_MODE_OK
 
   This hook returns true if it is permissible to store a value
   of mode :samp:`{mode}` in hard register number :samp:`{regno}` (or in several
@@ -448,7 +448,7 @@ consecutive registers are needed for a given mode.
 
 .. function:: bool TARGET_MODES_TIEABLE_P (machine_mode mode1, machine_mode mode2)
 
-  .. hook-start:TARGET_modes_tieable_p
+  .. hook-start:TARGET_MODES_TIEABLE_P
 
   This hook returns true if a value of mode :samp:`{mode1}` is accessible
   in mode :samp:`{mode2}` without copying.
@@ -469,7 +469,7 @@ consecutive registers are needed for a given mode.
 
 .. function:: bool TARGET_HARD_REGNO_SCRATCH_OK (unsigned int regno)
 
-  .. hook-start:TARGET_hard_regno_scratch_ok
+  .. hook-start:TARGET_HARD_REGNO_SCRATCH_OK
 
   This target hook should return ``true`` if it is OK to use a hard register
   :samp:`{regno}` as scratch reg in peephole2.

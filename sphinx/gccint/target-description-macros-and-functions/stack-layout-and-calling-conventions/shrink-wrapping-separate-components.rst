@@ -33,7 +33,7 @@ generic code.
 
 .. function:: sbitmap TARGET_SHRINK_WRAP_GET_SEPARATE_COMPONENTS (void)
 
-  .. hook-start:TARGET_SHRINK_WRAP_get_separate_components
+  .. hook-start:TARGET_SHRINK_WRAP_GET_SEPARATE_COMPONENTS
 
   This hook should return an ``sbitmap`` with the bits set for those
   components that can be separately shrink-wrapped in the current function.
@@ -46,7 +46,7 @@ generic code.
 
 .. function:: sbitmap TARGET_SHRINK_WRAP_COMPONENTS_FOR_BB (basic_block)
 
-  .. hook-start:TARGET_SHRINK_WRAP_components_for_bb
+  .. hook-start:TARGET_SHRINK_WRAP_COMPONENTS_FOR_BB
 
   This hook should return an ``sbitmap`` with the bits set for those
   components where either the prologue component has to be executed before
@@ -56,7 +56,7 @@ generic code.
 
 .. function:: void TARGET_SHRINK_WRAP_DISQUALIFY_COMPONENTS (sbitmap components, edge e, sbitmap edge_components, bool is_prologue)
 
-  .. hook-start:TARGET_SHRINK_WRAP_disqualify_components
+  .. hook-start:TARGET_SHRINK_WRAP_DISQUALIFY_COMPONENTS
 
   This hook should clear the bits in the :samp:`{components}` bitmap for those
   components in :samp:`{edge_components}` that the target cannot handle on edge
@@ -67,7 +67,7 @@ generic code.
 
 .. function:: void TARGET_SHRINK_WRAP_EMIT_PROLOGUE_COMPONENTS (sbitmap)
 
-  .. hook-start:TARGET_SHRINK_WRAP_emit_prologue_components
+  .. hook-start:TARGET_SHRINK_WRAP_EMIT_PROLOGUE_COMPONENTS
 
   Emit prologue insns for the components indicated by the parameter.
 
@@ -75,7 +75,7 @@ generic code.
 
 .. function:: void TARGET_SHRINK_WRAP_EMIT_EPILOGUE_COMPONENTS (sbitmap)
 
-  .. hook-start:TARGET_SHRINK_WRAP_emit_epilogue_components
+  .. hook-start:TARGET_SHRINK_WRAP_EMIT_EPILOGUE_COMPONENTS
 
   Emit epilogue insns for the components indicated by the parameter.
 
@@ -83,7 +83,7 @@ generic code.
 
 .. function:: void TARGET_SHRINK_WRAP_SET_HANDLED_COMPONENTS (sbitmap)
 
-  .. hook-start:TARGET_SHRINK_WRAP_set_handled_components
+  .. hook-start:TARGET_SHRINK_WRAP_SET_HANDLED_COMPONENTS
 
   Mark the components in the parameter as handled, so that the
   ``prologue`` and ``epilogue`` named patterns know to ignore those

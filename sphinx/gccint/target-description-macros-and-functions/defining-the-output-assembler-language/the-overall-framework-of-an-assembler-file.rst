@@ -20,7 +20,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_FILE_START (void)
 
-  .. hook-start:TARGET_ASM_file_start
+  .. hook-start:TARGET_ASM_FILE_START
 
   Output to ``asm_out_file`` any text which the assembler expects to
   find at the beginning of a file.  The default behavior is controlled
@@ -33,7 +33,7 @@ This describes the overall framework of an assembly file.
 
 .. c:var:: bool TARGET_ASM_FILE_START_APP_OFF
 
-  .. hook-start:TARGET_asm_file_start_app_off
+  .. hook-start:TARGET_ASM_FILE_START_APP_OFF
 
   If this flag is true, the text of the macro ``ASM_APP_OFF`` will be
   printed as the very first line in the assembly file, unless
@@ -51,7 +51,7 @@ This describes the overall framework of an assembly file.
 
 .. c:var:: bool TARGET_ASM_FILE_START_FILE_DIRECTIVE
 
-  .. hook-start:TARGET_asm_file_start_file_directive
+  .. hook-start:TARGET_ASM_FILE_START_FILE_DIRECTIVE
 
   If this flag is true, ``output_file_directive`` will be called
   for the primary source file, immediately after printing
@@ -62,7 +62,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_FILE_END (void)
 
-  .. hook-start:TARGET_ASM_file_end
+  .. hook-start:TARGET_ASM_FILE_END
 
   Output to ``asm_out_file`` any text which the assembler expects
   to find at the end of a file.  The default is to output nothing.
@@ -80,7 +80,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_LTO_START (void)
 
-  .. hook-start:TARGET_ASM_lto_start
+  .. hook-start:TARGET_ASM_LTO_START
 
   Output to ``asm_out_file`` any text which the assembler expects
   to find at the start of an LTO section.  The default is to output
@@ -90,7 +90,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_LTO_END (void)
 
-  .. hook-start:TARGET_ASM_lto_end
+  .. hook-start:TARGET_ASM_LTO_END
 
   Output to ``asm_out_file`` any text which the assembler expects
   to find at the end of an LTO section.  The default is to output
@@ -100,7 +100,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_CODE_END (void)
 
-  .. hook-start:TARGET_ASM_code_end
+  .. hook-start:TARGET_ASM_CODE_END
 
   Output to ``asm_out_file`` any text which is needed before emitting
   unwind info and debug info at the end of a file.  Some targets emit
@@ -142,7 +142,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_OUTPUT_SOURCE_FILENAME (FILE *file, const char *name)
 
-  .. hook-start:TARGET_ASM_output_source_filename
+  .. hook-start:TARGET_ASM_OUTPUT_SOURCE_FILENAME
 
   Output DWARF debugging information which indicates that filename
   :samp:`{name}` is the current source file to the stdio stream :samp:`{file}`.
@@ -154,7 +154,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_OUTPUT_IDENT (const char *name)
 
-  .. hook-start:TARGET_ASM_output_ident
+  .. hook-start:TARGET_ASM_OUTPUT_IDENT
 
   Output a string based on :samp:`{name}`, suitable for the :samp:`#ident`
   directive, or the equivalent directive or pragma in non-C-family languages.
@@ -173,7 +173,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_NAMED_SECTION (const char *name, unsigned int flags, tree decl)
 
-  .. hook-start:TARGET_ASM_named_section
+  .. hook-start:TARGET_ASM_NAMED_SECTION
 
   Output assembly directives to switch to section :samp:`{name}`.  The section
   should have attributes as specified by :samp:`{flags}`, which is a bit mask
@@ -185,7 +185,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: bool TARGET_ASM_ELF_FLAGS_NUMERIC (unsigned int flags, unsigned int *num)
 
-  .. hook-start:TARGET_ASM_elf_flags_numeric
+  .. hook-start:TARGET_ASM_ELF_FLAGS_NUMERIC
 
   This hook can be used to encode ELF section flags for which no letter
   code has been defined in the assembler.  It is called by
@@ -201,7 +201,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: section * TARGET_ASM_FUNCTION_SECTION (tree decl, enum node_frequency freq, bool startup, bool exit)
 
-  .. hook-start:TARGET_ASM_function_section
+  .. hook-start:TARGET_ASM_FUNCTION_SECTION
 
   Return preferred text (sub)section for function :samp:`{decl}`.
   Main purpose of this function is to separate cold, normal and hot
@@ -215,7 +215,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_FUNCTION_SWITCHED_TEXT_SECTIONS (FILE *file, tree decl, bool new_is_cold)
 
-  .. hook-start:TARGET_ASM_function_switched_text_sections
+  .. hook-start:TARGET_ASM_FUNCTION_SWITCHED_TEXT_SECTIONS
 
   Used by the target to emit any assembler directives or additional
   labels needed when a function is partitioned between different
@@ -227,7 +227,7 @@ This describes the overall framework of an assembly file.
 
 .. c:var:: bool TARGET_HAVE_NAMED_SECTIONS
 
-  .. hook-start:TARGET_have_named_sections
+  .. hook-start:TARGET_HAVE_NAMED_SECTIONS
 
   .. hook-end
 
@@ -236,7 +236,7 @@ This describes the overall framework of an assembly file.
 
 .. c:var:: bool TARGET_HAVE_SWITCHABLE_BSS_SECTIONS
 
-  .. hook-start:TARGET_have_switchable_bss_sections
+  .. hook-start:TARGET_HAVE_SWITCHABLE_BSS_SECTIONS
 
   This flag is true if we can create zeroed data by switching to a BSS
   section and then using ``ASM_OUTPUT_SKIP`` to allocate the space.
@@ -246,7 +246,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: unsigned int TARGET_SECTION_TYPE_FLAGS (tree decl, const char *name, int reloc)
 
-  .. hook-start:TARGET_section_type_flags
+  .. hook-start:TARGET_SECTION_TYPE_FLAGS
 
   Choose a set of section attributes for use by ``TARGET_ASM_NAMED_SECTION``
   based on a variable or function decl, a section name, and whether or not the
@@ -262,7 +262,7 @@ This describes the overall framework of an assembly file.
 
 .. function:: void TARGET_ASM_RECORD_GCC_SWITCHES (const char *)
 
-  .. hook-start:TARGET_ASM_record_gcc_switches
+  .. hook-start:TARGET_ASM_RECORD_GCC_SWITCHES
 
   Provides the target with the ability to record the gcc command line
   switches provided as argument.
@@ -278,7 +278,7 @@ This describes the overall framework of an assembly file.
 
 .. c:var:: const char * TARGET_ASM_RECORD_GCC_SWITCHES_SECTION
 
-  .. hook-start:TARGET_ASM_record_gcc_switches_section
+  .. hook-start:TARGET_ASM_RECORD_GCC_SWITCHES_SECTION
 
   This is the name of the section that will be created by the example
   ELF implementation of the ``TARGET_ASM_RECORD_GCC_SWITCHES`` target

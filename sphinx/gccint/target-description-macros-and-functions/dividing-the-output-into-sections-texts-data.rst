@@ -191,7 +191,7 @@ if the target does not provide them.
 
 .. function:: void TARGET_ASM_INIT_SECTIONS (void)
 
-  .. hook-start:TARGET_ASM_init_sections
+  .. hook-start:TARGET_ASM_INIT_SECTIONS
 
   Define this hook if you need to do something special to set up the
   :samp:`varasm.c` sections, or if your target has some special sections
@@ -205,7 +205,7 @@ if the target does not provide them.
 
 .. function:: int TARGET_ASM_RELOC_RW_MASK (void)
 
-  .. hook-start:TARGET_ASM_reloc_rw_mask
+  .. hook-start:TARGET_ASM_RELOC_RW_MASK
 
   Return a mask describing how relocations should be treated when
   selecting sections.  Bit 1 should be set if global relocations
@@ -221,7 +221,7 @@ if the target does not provide them.
 
 .. function:: bool TARGET_ASM_GENERATE_PIC_ADDR_DIFF_VEC (void)
 
-  .. hook-start:TARGET_ASM_generate_pic_addr_diff_vec
+  .. hook-start:TARGET_ASM_GENERATE_PIC_ADDR_DIFF_VEC
 
   Return true to generate ADDR_DIF_VEC table
   or false to generate ADDR_VEC table for jumps in case of -fPIC.
@@ -233,7 +233,7 @@ if the target does not provide them.
 
 .. function:: section * TARGET_ASM_SELECT_SECTION (tree exp, int reloc, unsigned HOST_WIDE_INT align)
 
-  .. hook-start:TARGET_ASM_select_section
+  .. hook-start:TARGET_ASM_SELECT_SECTION
 
   Return the section into which :samp:`{exp}` should be placed.  You can
   assume that :samp:`{exp}` is either a ``VAR_DECL`` node or a constant of
@@ -260,7 +260,7 @@ if the target does not provide them.
 
 .. function:: void TARGET_ASM_UNIQUE_SECTION (tree decl, int reloc)
 
-  .. hook-start:TARGET_ASM_unique_section
+  .. hook-start:TARGET_ASM_UNIQUE_SECTION
 
   Build up a unique section name, expressed as a ``STRING_CST`` node,
   and assign it to :samp:`DECL_SECTION_NAME ({decl})`.
@@ -276,7 +276,7 @@ if the target does not provide them.
 
 .. function:: section * TARGET_ASM_FUNCTION_RODATA_SECTION (tree decl, bool relocatable)
 
-  .. hook-start:TARGET_ASM_function_rodata_section
+  .. hook-start:TARGET_ASM_FUNCTION_RODATA_SECTION
 
   Return the readonly data or reloc readonly data section associated with
   :samp:`DECL_SECTION_NAME ({decl})`. :samp:`{relocatable}` selects the latter
@@ -290,7 +290,7 @@ if the target does not provide them.
 
 .. c:var:: const char * TARGET_ASM_MERGEABLE_RODATA_PREFIX
 
-  .. hook-start:TARGET_ASM_mergeable_rodata_prefix
+  .. hook-start:TARGET_ASM_MERGEABLE_RODATA_PREFIX
 
   Usually, the compiler uses the prefix ``".rodata"`` to construct
   section names for mergeable constant data.  Define this macro to override
@@ -300,7 +300,7 @@ if the target does not provide them.
 
 .. function:: section * TARGET_ASM_TM_CLONE_TABLE_SECTION (void)
 
-  .. hook-start:TARGET_ASM_tm_clone_table_section
+  .. hook-start:TARGET_ASM_TM_CLONE_TABLE_SECTION
 
   Return the section that should be used for transactional memory clone
   tables.
@@ -309,7 +309,7 @@ if the target does not provide them.
 
 .. function:: section * TARGET_ASM_SELECT_RTX_SECTION (machine_mode mode, rtx x, unsigned HOST_WIDE_INT align)
 
-  .. hook-start:TARGET_ASM_select_rtx_section
+  .. hook-start:TARGET_ASM_SELECT_RTX_SECTION
 
   Return the section into which a constant :samp:`{x}`, of mode :samp:`{mode}`,
   should be placed.  You can assume that :samp:`{x}` is some kind of
@@ -325,7 +325,7 @@ if the target does not provide them.
 
 .. function:: tree TARGET_MANGLE_DECL_ASSEMBLER_NAME (tree decl, tree id)
 
-  .. hook-start:TARGET_mangle_decl_assembler_name
+  .. hook-start:TARGET_MANGLE_DECL_ASSEMBLER_NAME
 
   Define this hook if you need to postprocess the assembler name generated
   by target-independent code.  The :samp:`{id}` provided to this hook will be
@@ -339,7 +339,7 @@ if the target does not provide them.
 
 .. function:: void TARGET_ENCODE_SECTION_INFO (tree decl, rtx rtl, int new_decl_p)
 
-  .. hook-start:TARGET_encode_section_info
+  .. hook-start:TARGET_ENCODE_SECTION_INFO
 
   Define this hook if references to a symbol or a constant must be
   treated differently depending on something about the variable or
@@ -382,7 +382,7 @@ if the target does not provide them.
 
 .. function:: const char * TARGET_STRIP_NAME_ENCODING (const char *name)
 
-  .. hook-start:TARGET_strip_name_encoding
+  .. hook-start:TARGET_STRIP_NAME_ENCODING
 
   Decode :samp:`{name}` and return the real name part, sans
   the characters that ``TARGET_ENCODE_SECTION_INFO``
@@ -392,7 +392,7 @@ if the target does not provide them.
 
 .. function:: bool TARGET_IN_SMALL_DATA_P (const_tree exp)
 
-  .. hook-start:TARGET_in_small_data_p
+  .. hook-start:TARGET_IN_SMALL_DATA_P
 
   Returns true if :samp:`{exp}` should be placed into a 'small data' section.
   The default version of this hook always returns false.
@@ -401,7 +401,7 @@ if the target does not provide them.
 
 .. c:var:: bool TARGET_HAVE_SRODATA_SECTION
 
-  .. hook-start:TARGET_have_srodata_section
+  .. hook-start:TARGET_HAVE_SRODATA_SECTION
 
   Contains the value true if the target places read-only
   'small data' into a separate section.  The default value is false.
@@ -410,7 +410,7 @@ if the target does not provide them.
 
 .. function:: bool TARGET_PROFILE_BEFORE_PROLOGUE (void)
 
-  .. hook-start:TARGET_profile_before_prologue
+  .. hook-start:TARGET_PROFILE_BEFORE_PROLOGUE
 
   It returns true if target wants profile code emitted before prologue.
 
@@ -421,7 +421,7 @@ if the target does not provide them.
 
 .. function:: bool TARGET_BINDS_LOCAL_P (const_tree exp)
 
-  .. hook-start:TARGET_binds_local_p
+  .. hook-start:TARGET_BINDS_LOCAL_P
 
   Returns true if :samp:`{exp}` names an object for which name resolution
   rules must resolve to the current 'module' (dynamic shared library
@@ -435,7 +435,7 @@ if the target does not provide them.
 
 .. c:var:: bool TARGET_HAVE_TLS
 
-  .. hook-start:TARGET_have_tls
+  .. hook-start:TARGET_HAVE_TLS
 
   Contains the value true if the target supports thread-local storage.
   The default value is false.

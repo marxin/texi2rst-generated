@@ -57,7 +57,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned int TARGET_CASE_VALUES_THRESHOLD (void)
 
-  .. hook-start:TARGET_case_values_threshold
+  .. hook-start:TARGET_CASE_VALUES_THRESHOLD
 
   This function return the smallest number of different values for which it
   is best to use a jump-table instead of a tree of conditional branches.
@@ -78,7 +78,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned int TARGET_MIN_ARITHMETIC_PRECISION (void)
 
-  .. hook-start:TARGET_min_arithmetic_precision
+  .. hook-start:TARGET_MIN_ARITHMETIC_PRECISION
 
   On some RISC architectures with 64-bit registers, the processor also
   maintains 32-bit condition codes that make it possible to do real 32-bit
@@ -131,7 +131,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned int TARGET_MIN_DIVISIONS_FOR_RECIP_MUL (machine_mode mode)
 
-  .. hook-start:TARGET_min_divisions_for_recip_mul
+  .. hook-start:TARGET_MIN_DIVISIONS_FOR_RECIP_MUL
 
   When :option:`-ffast-math` is in effect, GCC tries to optimize
   divisions by the same divisor, by turning them into multiplications by
@@ -182,7 +182,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned HOST_WIDE_INT TARGET_SHIFT_TRUNCATION_MASK (machine_mode mode)
 
-  .. hook-start:TARGET_shift_truncation_mask
+  .. hook-start:TARGET_SHIFT_TRUNCATION_MASK
 
   This function describes how the standard shift patterns for :samp:`{mode}`
   deal with shifts by negative amounts or by more than the width of the mode.
@@ -210,7 +210,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_TRULY_NOOP_TRUNCATION (poly_uint64 outprec, poly_uint64 inprec)
 
-  .. hook-start:TARGET_truly_noop_truncation
+  .. hook-start:TARGET_TRULY_NOOP_TRUNCATION
 
   This hook returns true if it is safe to 'convert' a value of
   :samp:`{inprec}` bits to one of :samp:`{outprec}` bits (where :samp:`{outprec}` is
@@ -228,7 +228,7 @@ Here are several miscellaneous parameters.
 
 .. function:: int TARGET_MODE_REP_EXTENDED (scalar_int_mode mode, scalar_int_mode rep_mode)
 
-  .. hook-start:TARGET_mode_rep_extended
+  .. hook-start:TARGET_MODE_REP_EXTENDED
 
   The representation of an integral mode can be such that the values
   are always extended to a wider integral mode.  Return
@@ -260,7 +260,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_SETJMP_PRESERVES_NONVOLATILE_REGS_P (void)
 
-  .. hook-start:TARGET_setjmp_preserves_nonvolatile_regs_p
+  .. hook-start:TARGET_SETJMP_PRESERVES_NONVOLATILE_REGS_P
 
   On some targets, it is assumed that the compiler will spill all pseudos
     that are live across a call to ``setjmp``, while other targets treat
@@ -449,7 +449,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_C_PREINCLUDE (void)
 
-  .. hook-start:TARGET_c_preinclude
+  .. hook-start:TARGET_C_PREINCLUDE
 
   Define this hook to return the name of a header file to be included at
   the start of all compilations, as if it had been included with
@@ -466,7 +466,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_CXX_IMPLICIT_EXTERN_C (const char*)
 
-  .. hook-start:TARGET_cxx_implicit_extern_c
+  .. hook-start:TARGET_CXX_IMPLICIT_EXTERN_C
 
   Define this hook to add target-specific C++ implicit extern C functions.
   If this function returns true for the name of a file-scope function, that
@@ -596,7 +596,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx_insn * TARGET_MD_ASM_ADJUST (vec<rtx>& outputs, vec<rtx>& inputs, vec<machine_mode>& input_modes, vec<const char *>& constraints, vec<rtx>& clobbers, HARD_REG_SET& clobbered_regs)
 
-  .. hook-start:TARGET_md_asm_adjust
+  .. hook-start:TARGET_MD_ASM_ADJUST
 
   This target hook may add :dfn:`clobbers` to :samp:`{clobbers}` and
   :samp:`{clobbered_regs}` for any hard regs the port wishes to automatically
@@ -689,7 +689,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_MACHINE_DEPENDENT_REORG (void)
 
-  .. hook-start:TARGET_machine_dependent_reorg
+  .. hook-start:TARGET_MACHINE_DEPENDENT_REORG
 
   If non-null, this hook performs a target-specific pass over the
   instruction stream.  The compiler will run it at all optimization levels,
@@ -707,7 +707,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_INIT_BUILTINS (void)
 
-  .. hook-start:TARGET_init_builtins
+  .. hook-start:TARGET_INIT_BUILTINS
 
   Define this hook if you have any machine-specific built-in functions
   that need to be defined.  It should be a function that performs the
@@ -729,7 +729,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_BUILTIN_DECL (unsigned code, bool initialize_p)
 
-  .. hook-start:TARGET_builtin_decl
+  .. hook-start:TARGET_BUILTIN_DECL
 
   Define this hook if you have any machine-specific built-in functions
   that need to be defined.  It should be a function that returns the
@@ -743,7 +743,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_EXPAND_BUILTIN (tree exp, rtx target, rtx subtarget, machine_mode mode, int ignore)
 
-  .. hook-start:TARGET_expand_builtin
+  .. hook-start:TARGET_EXPAND_BUILTIN
 
   Expand a call to a machine specific built-in function that was set up by
   :samp:`TARGET_INIT_BUILTINS`.  :samp:`{exp}` is the expression for the
@@ -758,7 +758,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_RESOLVE_OVERLOADED_BUILTIN (unsigned int loc, tree fndecl, void *arglist)
 
-  .. hook-start:TARGET_resolve_overloaded_builtin
+  .. hook-start:TARGET_RESOLVE_OVERLOADED_BUILTIN
 
   Select a replacement for a machine specific built-in function that
   was set up by :samp:`TARGET_INIT_BUILTINS`.  This is done
@@ -774,7 +774,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_CHECK_BUILTIN_CALL (location_t loc, vec<location_t> arg_loc, tree fndecl, tree orig_fndecl, unsigned int nargs, tree *args)
 
-  .. hook-start:TARGET_check_builtin_call
+  .. hook-start:TARGET_CHECK_BUILTIN_CALL
 
   Perform semantic checking on a call to a machine-specific built-in
   function after its arguments have been constrained to the function
@@ -793,7 +793,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_FOLD_BUILTIN (tree fndecl, int n_args, tree *argp, bool ignore)
 
-  .. hook-start:TARGET_fold_builtin
+  .. hook-start:TARGET_FOLD_BUILTIN
 
   Fold a call to a machine specific built-in function that was set up by
   :samp:`TARGET_INIT_BUILTINS`.  :samp:`{fndecl}` is the declaration of the
@@ -807,7 +807,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_GIMPLE_FOLD_BUILTIN (gimple_stmt_iterator *gsi)
 
-  .. hook-start:TARGET_gimple_fold_builtin
+  .. hook-start:TARGET_GIMPLE_FOLD_BUILTIN
 
   Fold a call to a machine specific built-in function that was set up
   by :samp:`TARGET_INIT_BUILTINS`.  :samp:`{gsi}` points to the gimple
@@ -818,7 +818,7 @@ Here are several miscellaneous parameters.
 
 .. function:: int TARGET_COMPARE_VERSION_PRIORITY (tree decl1, tree decl2)
 
-  .. hook-start:TARGET_compare_version_priority
+  .. hook-start:TARGET_COMPARE_VERSION_PRIORITY
 
   This hook is used to compare the target attributes in two functions to
   determine which function's features get higher priority.  This is used
@@ -831,7 +831,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_GET_FUNCTION_VERSIONS_DISPATCHER (void *decl)
 
-  .. hook-start:TARGET_get_function_versions_dispatcher
+  .. hook-start:TARGET_GET_FUNCTION_VERSIONS_DISPATCHER
 
   This hook is used to get the dispatcher function for a set of function
   versions.  The dispatcher function is called to invoke the right function
@@ -842,7 +842,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_GENERATE_VERSION_DISPATCHER_BODY (void *arg)
 
-  .. hook-start:TARGET_generate_version_dispatcher_body
+  .. hook-start:TARGET_GENERATE_VERSION_DISPATCHER_BODY
 
   This hook is used to generate the dispatcher logic to invoke the right
   function version at run-time for a given set of function versions.
@@ -853,7 +853,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_PREDICT_DOLOOP_P (class loop *loop)
 
-  .. hook-start:TARGET_predict_doloop_p
+  .. hook-start:TARGET_PREDICT_DOLOOP_P
 
   Return true if we can predict it is possible to use a low-overhead loop
   for a particular loop.  The parameter :samp:`{loop}` is a pointer to the loop.
@@ -865,7 +865,7 @@ Here are several miscellaneous parameters.
 
 .. c:var:: bool TARGET_HAVE_COUNT_REG_DECR_P
 
-  .. hook-start:TARGET_have_count_reg_decr_p
+  .. hook-start:TARGET_HAVE_COUNT_REG_DECR_P
 
   Return true if the target supports hardware count register for decrement
   and branch.
@@ -875,7 +875,7 @@ Here are several miscellaneous parameters.
 
 .. c:var:: int64_t TARGET_DOLOOP_COST_FOR_GENERIC
 
-  .. hook-start:TARGET_doloop_cost_for_generic
+  .. hook-start:TARGET_DOLOOP_COST_FOR_GENERIC
 
   One IV candidate dedicated for doloop is introduced in IVOPTs, we can
   calculate the computation cost of adopting it to any generic IV use by
@@ -891,7 +891,7 @@ Here are several miscellaneous parameters.
 
 .. c:var:: int64_t TARGET_DOLOOP_COST_FOR_ADDRESS
 
-  .. hook-start:TARGET_doloop_cost_for_address
+  .. hook-start:TARGET_DOLOOP_COST_FOR_ADDRESS
 
   One IV candidate dedicated for doloop is introduced in IVOPTs, we can
   calculate the computation cost of adopting it to any address IV use by
@@ -907,7 +907,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_CAN_USE_DOLOOP_P (const widest_int &iterations, const widest_int &iterations_max, unsigned int loop_depth, bool entered_at_top)
 
-  .. hook-start:TARGET_can_use_doloop_p
+  .. hook-start:TARGET_CAN_USE_DOLOOP_P
 
   Return true if it is possible to use low-overhead loops ( ``doloop_end``
   and ``doloop_begin`` ) for a particular loop.  :samp:`{iterations}` gives the
@@ -925,7 +925,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_INVALID_WITHIN_DOLOOP (const rtx_insn *insn)
 
-  .. hook-start:TARGET_invalid_within_doloop
+  .. hook-start:TARGET_INVALID_WITHIN_DOLOOP
 
   Take an instruction in :samp:`{insn}` and return NULL if it is valid within a
   low-overhead loop, otherwise return a string explaining why doloop
@@ -941,7 +941,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_LEGITIMATE_COMBINED_INSN (rtx_insn *insn)
 
-  .. hook-start:TARGET_legitimate_combined_insn
+  .. hook-start:TARGET_LEGITIMATE_COMBINED_INSN
 
   Take an instruction in :samp:`{insn}` and return ``false`` if the instruction
   is not appropriate as a combination of two or more instructions.  The
@@ -951,7 +951,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_CAN_FOLLOW_JUMP (const rtx_insn *follower, const rtx_insn *followee)
 
-  .. hook-start:TARGET_can_follow_jump
+  .. hook-start:TARGET_CAN_FOLLOW_JUMP
 
   FOLLOWER and FOLLOWEE are JUMP_INSN instructions;
   return true if FOLLOWER may be modified to follow FOLLOWEE;
@@ -963,7 +963,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_COMMUTATIVE_P (const_rtx x, int outer_code)
 
-  .. hook-start:TARGET_commutative_p
+  .. hook-start:TARGET_COMMUTATIVE_P
 
   This target hook returns ``true`` if :samp:`{x}` is considered to be commutative.
   Usually, this is just COMMUTATIVE_P ( :samp:`{x}` ), but the HP PA doesn't consider
@@ -974,7 +974,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_ALLOCATE_INITIAL_VALUE (rtx hard_reg)
 
-  .. hook-start:TARGET_allocate_initial_value
+  .. hook-start:TARGET_ALLOCATE_INITIAL_VALUE
 
   When the initial value of a hard register has been copied in a pseudo
   register, it is often not necessary to actually allocate another register
@@ -999,7 +999,7 @@ Here are several miscellaneous parameters.
 
 .. function:: int TARGET_UNSPEC_MAY_TRAP_P (const_rtx x, unsigned flags)
 
-  .. hook-start:TARGET_unspec_may_trap_p
+  .. hook-start:TARGET_UNSPEC_MAY_TRAP_P
 
   This target hook returns nonzero if :samp:`{x}`, an ``unspec`` or
   ``unspec_volatile`` operation, might cause a trap.  Targets can use
@@ -1012,7 +1012,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_SET_CURRENT_FUNCTION (tree decl)
 
-  .. hook-start:TARGET_set_current_function
+  .. hook-start:TARGET_SET_CURRENT_FUNCTION
 
   The compiler invokes this hook whenever it changes its current function
   context ( ``cfun`` ).  You can define this function if
@@ -1056,7 +1056,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_CANNOT_MODIFY_JUMPS_P (void)
 
-  .. hook-start:TARGET_cannot_modify_jumps_p
+  .. hook-start:TARGET_CANNOT_MODIFY_JUMPS_P
 
   This target hook returns ``true`` past the point in which new jump
   instructions could be created.  On machines that require a register for
@@ -1075,7 +1075,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_HAVE_CONDITIONAL_EXECUTION (void)
 
-  .. hook-start:TARGET_have_conditional_execution
+  .. hook-start:TARGET_HAVE_CONDITIONAL_EXECUTION
 
   This target hook returns true if the target supports conditional execution.
   This target hook is required only when the target has several different
@@ -1085,7 +1085,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_GEN_CCMP_FIRST (rtx_insn **prep_seq, rtx_insn **gen_seq, int code, tree op0, tree op1)
 
-  .. hook-start:TARGET_gen_ccmp_first
+  .. hook-start:TARGET_GEN_CCMP_FIRST
 
   This function prepares to emit a comparison insn for the first compare in a
    sequence of conditional comparisions.  It returns an appropriate comparison
@@ -1099,7 +1099,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_GEN_CCMP_NEXT (rtx_insn **prep_seq, rtx_insn **gen_seq, rtx prev, int cmp_code, tree op0, tree op1, int bit_code)
 
-  .. hook-start:TARGET_gen_ccmp_next
+  .. hook-start:TARGET_GEN_CCMP_NEXT
 
   This function prepares to emit a conditional comparison within a sequence
    of conditional comparisons.  It returns an appropriate comparison with
@@ -1118,7 +1118,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned TARGET_LOOP_UNROLL_ADJUST (unsigned nunroll, class loop *loop)
 
-  .. hook-start:TARGET_loop_unroll_adjust
+  .. hook-start:TARGET_LOOP_UNROLL_ADJUST
 
   This target hook returns a new value for the number of times :samp:`{loop}`
   should be unrolled. The parameter :samp:`{nunroll}` is the number of times
@@ -1200,7 +1200,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_INVALID_ARG_FOR_UNPROTOTYPED_FN (const_tree typelist, const_tree funcdecl, const_tree val)
 
-  .. hook-start:TARGET_invalid_arg_for_unprototyped_fn
+  .. hook-start:TARGET_INVALID_ARG_FOR_UNPROTOTYPED_FN
 
   If defined, this macro returns the diagnostic message when it is
   illegal to pass argument :samp:`{val}` to function :samp:`{funcdecl}`
@@ -1210,7 +1210,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_INVALID_CONVERSION (const_tree fromtype, const_tree totype)
 
-  .. hook-start:TARGET_invalid_conversion
+  .. hook-start:TARGET_INVALID_CONVERSION
 
   If defined, this macro returns the diagnostic message when it is
   invalid to convert from :samp:`{fromtype}` to :samp:`{totype}`, or ``NULL``
@@ -1220,7 +1220,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_INVALID_UNARY_OP (int op, const_tree type)
 
-  .. hook-start:TARGET_invalid_unary_op
+  .. hook-start:TARGET_INVALID_UNARY_OP
 
   If defined, this macro returns the diagnostic message when it is
   invalid to apply operation :samp:`{op}` (where unary plus is denoted by
@@ -1231,7 +1231,7 @@ Here are several miscellaneous parameters.
 
 .. function:: const char * TARGET_INVALID_BINARY_OP (int op, const_tree type1, const_tree type2)
 
-  .. hook-start:TARGET_invalid_binary_op
+  .. hook-start:TARGET_INVALID_BINARY_OP
 
   If defined, this macro returns the diagnostic message when it is
   invalid to apply operation :samp:`{op}` to operands of types :samp:`{type1}`
@@ -1242,7 +1242,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_PROMOTED_TYPE (const_tree type)
 
-  .. hook-start:TARGET_promoted_type
+  .. hook-start:TARGET_PROMOTED_TYPE
 
   If defined, this target hook returns the type to which values of
   :samp:`{type}` should be promoted when they appear in expressions,
@@ -1255,7 +1255,7 @@ Here are several miscellaneous parameters.
 
 .. function:: tree TARGET_CONVERT_TO_TYPE (tree type, tree expr)
 
-  .. hook-start:TARGET_convert_to_type
+  .. hook-start:TARGET_CONVERT_TO_TYPE
 
   If defined, this hook returns the result of converting :samp:`{expr}` to
   :samp:`{type}`.  It should return the converted expression,
@@ -1268,7 +1268,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_VERIFY_TYPE_CONTEXT (location_t loc, type_context_kind context, const_tree type, bool silent_p)
 
-  .. hook-start:TARGET_verify_type_context
+  .. hook-start:TARGET_VERIFY_TYPE_CONTEXT
 
   If defined, this hook returns false if there is a target-specific reason
   why type :samp:`{type}` cannot be used in the source language context described
@@ -1297,7 +1297,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_UPDATE_STACK_BOUNDARY (void)
 
-  .. hook-start:TARGET_update_stack_boundary
+  .. hook-start:TARGET_UPDATE_STACK_BOUNDARY
 
   Define this macro to update the current function stack boundary if
   necessary.
@@ -1306,7 +1306,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_GET_DRAP_RTX (void)
 
-  .. hook-start:TARGET_get_drap_rtx
+  .. hook-start:TARGET_GET_DRAP_RTX
 
   This hook should return an rtx for Dynamic Realign Argument Pointer (DRAP) if a
   different argument pointer register is needed to access the function's
@@ -1317,7 +1317,7 @@ Here are several miscellaneous parameters.
 
 .. function:: HARD_REG_SET TARGET_ZERO_CALL_USED_REGS (HARD_REG_SET selected_regs)
 
-  .. hook-start:TARGET_zero_call_used_regs
+  .. hook-start:TARGET_ZERO_CALL_USED_REGS
 
   This target hook emits instructions to zero the subset of :samp:`{selected_regs}`
   that could conceivably contain values that are useful to an attacker.
@@ -1333,7 +1333,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_ALLOCATE_STACK_SLOTS_FOR_ARGS (void)
 
-  .. hook-start:TARGET_allocate_stack_slots_for_args
+  .. hook-start:TARGET_ALLOCATE_STACK_SLOTS_FOR_ARGS
 
   When optimization is disabled, this hook indicates whether or not
   arguments should be allocated to stack slots.  Normally, GCC allocates
@@ -1348,7 +1348,7 @@ Here are several miscellaneous parameters.
 
 .. c:var:: unsigned HOST_WIDE_INT TARGET_CONST_ANCHOR
 
-  .. hook-start:TARGET_const_anchor
+  .. hook-start:TARGET_CONST_ANCHOR
 
   On some architectures it can take multiple instructions to synthesize
   a constant.  If there is another constant already in a register that
@@ -1370,7 +1370,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned HOST_WIDE_INT TARGET_ASAN_SHADOW_OFFSET (void)
 
-  .. hook-start:TARGET_asan_shadow_offset
+  .. hook-start:TARGET_ASAN_SHADOW_OFFSET
 
   Return the offset bitwise ored into shifted address to get corresponding
   Address Sanitizer shadow memory address.  NULL if Address Sanitizer is not
@@ -1381,7 +1381,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned HOST_WIDE_INT TARGET_MEMMODEL_CHECK (unsigned HOST_WIDE_INT val)
 
-  .. hook-start:TARGET_memmodel_check
+  .. hook-start:TARGET_MEMMODEL_CHECK
 
   Validate target specific memory model mask bits. When NULL no target specific
   memory model bits are allowed.
@@ -1390,7 +1390,7 @@ Here are several miscellaneous parameters.
 
 .. c:var:: unsigned char TARGET_ATOMIC_TEST_AND_SET_TRUEVAL
 
-  .. hook-start:TARGET_atomic_test_and_set_trueval
+  .. hook-start:TARGET_ATOMIC_TEST_AND_SET_TRUEVAL
 
   This value should be set if the result written by
   ``atomic_test_and_set`` is not exactly 1, i.e. the
@@ -1400,7 +1400,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_HAS_IFUNC_P (void)
 
-  .. hook-start:TARGET_has_ifunc_p
+  .. hook-start:TARGET_HAS_IFUNC_P
 
   It returns true if the target supports GNU indirect functions.
   The support includes the assembler, linker and dynamic linker.
@@ -1410,7 +1410,7 @@ Here are several miscellaneous parameters.
 
 .. function:: unsigned int TARGET_ATOMIC_ALIGN_FOR_MODE (machine_mode mode)
 
-  .. hook-start:TARGET_atomic_align_for_mode
+  .. hook-start:TARGET_ATOMIC_ALIGN_FOR_MODE
 
   If defined, this function returns an appropriate alignment in bits for an
   atomic object of machine_mode :samp:`{mode}`.  If 0 is returned then the
@@ -1420,7 +1420,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_ATOMIC_ASSIGN_EXPAND_FENV (tree *hold, tree *clear, tree *update)
 
-  .. hook-start:TARGET_atomic_assign_expand_fenv
+  .. hook-start:TARGET_ATOMIC_ASSIGN_EXPAND_FENV
 
   ISO C11 requires atomic compound assignments that may raise floating-point
   exceptions to raise exceptions corresponding to the arithmetic operation
@@ -1442,7 +1442,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_RECORD_OFFLOAD_SYMBOL (tree)
 
-  .. hook-start:TARGET_record_offload_symbol
+  .. hook-start:TARGET_RECORD_OFFLOAD_SYMBOL
 
   Used when offloaded functions are seen in the compilation unit and no named
   sections are available.  It is called once for each symbol that must be
@@ -1452,7 +1452,7 @@ Here are several miscellaneous parameters.
 
 .. function:: char * TARGET_OFFLOAD_OPTIONS (void)
 
-  .. hook-start:TARGET_offload_options
+  .. hook-start:TARGET_OFFLOAD_OPTIONS
 
   Used when writing out the list of options into an LTO file.  It should
   translate any relevant target-specific options (such as the ABI in use)
@@ -1503,7 +1503,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_HAVE_SPECULATION_SAFE_VALUE (bool active)
 
-  .. hook-start:TARGET_have_speculation_safe_value
+  .. hook-start:TARGET_HAVE_SPECULATION_SAFE_VALUE
 
   This hook is used to determine the level of target support for
    ``__builtin_speculation_safe_value``.  If called with an argument
@@ -1525,7 +1525,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_SPECULATION_SAFE_VALUE (machine_mode mode, rtx result, rtx val, rtx failval)
 
-  .. hook-start:TARGET_speculation_safe_value
+  .. hook-start:TARGET_SPECULATION_SAFE_VALUE
 
   This target hook can be used to generate a target-specific code
    sequence that implements the ``__builtin_speculation_safe_value``
@@ -1547,7 +1547,7 @@ Here are several miscellaneous parameters.
 
 .. function:: void TARGET_RUN_TARGET_SELFTESTS (void)
 
-  .. hook-start:TARGET_run_target_selftests
+  .. hook-start:TARGET_RUN_TARGET_SELFTESTS
 
   If selftests are enabled, run any selftests for this target.
 
@@ -1555,7 +1555,7 @@ Here are several miscellaneous parameters.
 
 .. function:: bool TARGET_MEMTAG_CAN_TAG_ADDRESSES ()
 
-  .. hook-start:TARGET_MEMTAG_can_tag_addresses
+  .. hook-start:TARGET_MEMTAG_CAN_TAG_ADDRESSES
 
   True if the backend architecture naturally supports ignoring some region
   of pointers.  This feature means that :option:`-fsanitize`:samp:`=hwaddress` can
@@ -1568,7 +1568,7 @@ Here are several miscellaneous parameters.
 
 .. function:: uint8_t TARGET_MEMTAG_TAG_SIZE ()
 
-  .. hook-start:TARGET_MEMTAG_tag_size
+  .. hook-start:TARGET_MEMTAG_TAG_SIZE
 
   Return the size of a tag (in bits) for this platform.
 
@@ -1578,7 +1578,7 @@ Here are several miscellaneous parameters.
 
 .. function:: uint8_t TARGET_MEMTAG_GRANULE_SIZE ()
 
-  .. hook-start:TARGET_MEMTAG_granule_size
+  .. hook-start:TARGET_MEMTAG_GRANULE_SIZE
 
   Return the size in real memory that each byte in shadow memory refers to.
   I.e. if a variable is :samp:`{X}` bytes long in memory, then this hook should
@@ -1595,7 +1595,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_MEMTAG_INSERT_RANDOM_TAG (rtx untagged, rtx target)
 
-  .. hook-start:TARGET_MEMTAG_insert_random_tag
+  .. hook-start:TARGET_MEMTAG_INSERT_RANDOM_TAG
 
   Return an RTX representing the value of :samp:`{untagged}` but with a
   (possibly) random tag in it.
@@ -1606,7 +1606,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_MEMTAG_ADD_TAG (rtx base, poly_int64 addr_offset, uint8_t tag_offset)
 
-  .. hook-start:TARGET_MEMTAG_add_tag
+  .. hook-start:TARGET_MEMTAG_ADD_TAG
 
   Return an RTX that represents the result of adding :samp:`{addr_offset}` to
   the address in pointer :samp:`{base}` and :samp:`{tag_offset}` to the tag in pointer
@@ -1621,7 +1621,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_MEMTAG_SET_TAG (rtx untagged_base, rtx tag, rtx target)
 
-  .. hook-start:TARGET_MEMTAG_set_tag
+  .. hook-start:TARGET_MEMTAG_SET_TAG
 
   Return an RTX representing :samp:`{untagged_base}` but with the tag :samp:`{tag}`.
   Try and store this in :samp:`{target}` if convenient.
@@ -1633,7 +1633,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_MEMTAG_EXTRACT_TAG (rtx tagged_pointer, rtx target)
 
-  .. hook-start:TARGET_MEMTAG_extract_tag
+  .. hook-start:TARGET_MEMTAG_EXTRACT_TAG
 
   Return an RTX representing the tag stored in :samp:`{tagged_pointer}`.
   Store the result in :samp:`{target}` if it is convenient.
@@ -1643,7 +1643,7 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_MEMTAG_UNTAGGED_POINTER (rtx tagged_pointer, rtx target)
 
-  .. hook-start:TARGET_MEMTAG_untagged_pointer
+  .. hook-start:TARGET_MEMTAG_UNTAGGED_POINTER
 
   Return an RTX representing :samp:`{tagged_pointer}` with its tag set to zero.
   Store the result in :samp:`{target}` if convenient.

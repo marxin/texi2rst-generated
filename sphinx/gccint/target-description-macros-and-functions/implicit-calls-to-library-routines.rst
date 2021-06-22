@@ -29,7 +29,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. function:: void TARGET_INIT_LIBFUNCS (void)
 
-  .. hook-start:TARGET_init_libfuncs
+  .. hook-start:TARGET_INIT_LIBFUNCS
 
   This hook should declare additional library routines or rename
   existing ones, using the functions ``set_optab_libfunc`` and
@@ -43,7 +43,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. c:var:: bool TARGET_LIBFUNC_GNU_PREFIX
 
-  .. hook-start:TARGET_libfunc_gnu_prefix
+  .. hook-start:TARGET_LIBFUNC_GNU_PREFIX
 
   If false (the default), internal library routines start with two
   underscores.  If set to true, these routines start with ``__gnu_``
@@ -112,7 +112,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. function:: bool TARGET_LIBC_HAS_FUNCTION (enum function_class fn_class, tree type)
 
-  .. hook-start:TARGET_libc_has_function
+  .. hook-start:TARGET_LIBC_HAS_FUNCTION
 
   This hook determines whether a function from a class of functions
   :samp:`{fn_class}` is present in the target C library.  If :samp:`{type}` is NULL,
@@ -124,7 +124,7 @@ Here is an explanation of implicit calls to library routines.
 
 .. function:: bool TARGET_LIBC_HAS_FAST_FUNCTION (int fcode)
 
-  .. hook-start:TARGET_libc_has_fast_function
+  .. hook-start:TARGET_LIBC_HAS_FAST_FUNCTION
 
   This hook determines whether a function from a class of functions
    ``(enum function_class)``:samp:`{fcode}` has a fast implementation.

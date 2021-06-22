@@ -19,7 +19,7 @@ values---values that can fit in registers.
 
 .. function:: rtx TARGET_FUNCTION_VALUE (const_tree ret_type, const_tree fn_decl_or_type, bool outgoing)
 
-  .. hook-start:TARGET_function_value
+  .. hook-start:TARGET_FUNCTION_VALUE
 
   Define this to return an RTX representing the place where a function
   returns or receives a value of data type :samp:`{ret_type}`, a tree node
@@ -81,7 +81,7 @@ values---values that can fit in registers.
 
 .. function:: rtx TARGET_LIBCALL_VALUE (machine_mode mode, const_rtx fun)
 
-  .. hook-start:TARGET_libcall_value
+  .. hook-start:TARGET_LIBCALL_VALUE
 
   Define this hook if the back-end needs to know the name of the libcall
   function in order to determine where the result should be returned.
@@ -117,7 +117,7 @@ values---values that can fit in registers.
 
 .. function:: bool TARGET_FUNCTION_VALUE_REGNO_P (const unsigned int regno)
 
-  .. hook-start:TARGET_function_value_regno_p
+  .. hook-start:TARGET_FUNCTION_VALUE_REGNO_P
 
   A target hook that return ``true`` if :samp:`{regno}` is the number of a hard
   register in which the values of called function may come back.
@@ -142,7 +142,7 @@ values---values that can fit in registers.
 
 .. c:var:: bool TARGET_OMIT_STRUCT_RETURN_REG
 
-  .. hook-start:TARGET_omit_struct_return_reg
+  .. hook-start:TARGET_OMIT_STRUCT_RETURN_REG
 
   Normally, when a function returns a structure by memory, the address
   is passed as an invisible pointer argument, but the compiler also
@@ -154,7 +154,7 @@ values---values that can fit in registers.
 
 .. function:: bool TARGET_RETURN_IN_MSB (const_tree type)
 
-  .. hook-start:TARGET_return_in_msb
+  .. hook-start:TARGET_RETURN_IN_MSB
 
   This hook should return true if values of type :samp:`{type}` are returned
   at the most significant end of a register (in other words, if they are

@@ -49,7 +49,7 @@ Here is the basic stack layout.
 
 .. function:: HOST_WIDE_INT TARGET_STARTING_FRAME_OFFSET (void)
 
-  .. hook-start:TARGET_starting_frame_offset
+  .. hook-start:TARGET_STARTING_FRAME_OFFSET
 
   This hook returns the offset from the frame pointer to the first local
   variable slot to be allocated.  If ``FRAME_GROWS_DOWNWARD``, it is the
@@ -126,7 +126,7 @@ Here is the basic stack layout.
 
 .. function:: rtx TARGET_BUILTIN_SETJMP_FRAME_VALUE (void)
 
-  .. hook-start:TARGET_builtin_setjmp_frame_value
+  .. hook-start:TARGET_BUILTIN_SETJMP_FRAME_VALUE
 
   This target hook should return an rtx that is used to store
   the address of the current frame into the built in ``setjmp`` buffer.
@@ -198,7 +198,7 @@ Here is the basic stack layout.
 
 .. function:: void TARGET_DWARF_HANDLE_FRAME_UNSPEC (const char *label, rtx pattern, int index)
 
-  .. hook-start:TARGET_dwarf_handle_frame_unspec
+  .. hook-start:TARGET_DWARF_HANDLE_FRAME_UNSPEC
 
   This target hook allows the backend to emit frame-related insns that
   contain UNSPECs or UNSPEC_VOLATILEs.  The DWARF 2 call frame debugging
@@ -222,7 +222,7 @@ Here is the basic stack layout.
 
 .. function:: unsigned int TARGET_DWARF_POLY_INDETERMINATE_VALUE (unsigned int i, unsigned int *factor, int *offset)
 
-  .. hook-start:TARGET_dwarf_poly_indeterminate_value
+  .. hook-start:TARGET_DWARF_POLY_INDETERMINATE_VALUE
 
   Express the value of ``poly_int`` indeterminate :samp:`{i}` as a DWARF
   expression, with :samp:`{i}` counting from 1.  Return the number of a DWARF

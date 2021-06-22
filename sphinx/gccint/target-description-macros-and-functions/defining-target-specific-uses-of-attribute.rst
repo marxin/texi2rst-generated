@@ -20,7 +20,7 @@ be documented in :samp:`extend.texi`.
 
 .. c:var:: const struct attribute_spec * TARGET_ATTRIBUTE_TABLE
 
-  .. hook-start:TARGET_attribute_table
+  .. hook-start:TARGET_ATTRIBUTE_TABLE
 
   If defined, this target hook points to an array of :samp:`struct
   attribute_spec` (defined in :samp:`tree-core.h`) specifying the machine
@@ -32,7 +32,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_ATTRIBUTE_TAKES_IDENTIFIER_P (const_tree name)
 
-  .. hook-start:TARGET_attribute_takes_identifier_p
+  .. hook-start:TARGET_ATTRIBUTE_TAKES_IDENTIFIER_P
 
   If defined, this target hook is a function which returns true if the
   machine-specific attribute named :samp:`{name}` expects an identifier
@@ -44,7 +44,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: int TARGET_COMP_TYPE_ATTRIBUTES (const_tree type1, const_tree type2)
 
-  .. hook-start:TARGET_comp_type_attributes
+  .. hook-start:TARGET_COMP_TYPE_ATTRIBUTES
 
   If defined, this target hook is a function which returns zero if the attributes on
   :samp:`{type1}` and :samp:`{type2}` are incompatible, one if they are compatible,
@@ -56,7 +56,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_SET_DEFAULT_TYPE_ATTRIBUTES (tree type)
 
-  .. hook-start:TARGET_set_default_type_attributes
+  .. hook-start:TARGET_SET_DEFAULT_TYPE_ATTRIBUTES
 
   If defined, this target hook is a function which assigns default attributes to
   the newly defined :samp:`{type}`.
@@ -65,7 +65,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: tree TARGET_MERGE_TYPE_ATTRIBUTES (tree type1, tree type2)
 
-  .. hook-start:TARGET_merge_type_attributes
+  .. hook-start:TARGET_MERGE_TYPE_ATTRIBUTES
 
   Define this target hook if the merging of type attributes needs special
   handling.  If defined, the result is a list of the combined
@@ -78,7 +78,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: tree TARGET_MERGE_DECL_ATTRIBUTES (tree olddecl, tree newdecl)
 
-  .. hook-start:TARGET_merge_decl_attributes
+  .. hook-start:TARGET_MERGE_DECL_ATTRIBUTES
 
   Define this target hook if the merging of decl attributes needs special
   handling.  If defined, the result is a list of the combined
@@ -105,7 +105,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_VALID_DLLIMPORT_ATTRIBUTE_P (const_tree decl)
 
-  .. hook-start:TARGET_valid_dllimport_attribute_p
+  .. hook-start:TARGET_VALID_DLLIMPORT_ATTRIBUTE_P
 
   :samp:`{decl}` is a variable or function with ``__attribute__((dllimport))``
   specified.  Use this hook if the target needs to add extra validation
@@ -124,7 +124,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_INSERT_ATTRIBUTES (tree node, tree *attr_ptr)
 
-  .. hook-start:TARGET_insert_attributes
+  .. hook-start:TARGET_INSERT_ATTRIBUTES
 
   Define this target hook if you want to be able to add attributes to a decl
   when it is being created.  This is normally useful for back ends which
@@ -141,7 +141,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: tree TARGET_HANDLE_GENERIC_ATTRIBUTE (tree *node, tree name, tree args, int flags, bool *no_add_attrs)
 
-  .. hook-start:TARGET_handle_generic_attribute
+  .. hook-start:TARGET_HANDLE_GENERIC_ATTRIBUTE
 
   Define this target hook if you want to be able to perform additional
   target-specific processing of an attribute which is handled generically
@@ -153,7 +153,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_FUNCTION_ATTRIBUTE_INLINABLE_P (const_tree fndecl)
 
-  .. hook-start:TARGET_function_attribute_inlinable_p
+  .. hook-start:TARGET_FUNCTION_ATTRIBUTE_INLINABLE_P
 
   .. index:: inlining
 
@@ -166,7 +166,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_OPTION_VALID_ATTRIBUTE_P (tree fndecl, tree name, tree args, int flags)
 
-  .. hook-start:TARGET_OPTION_valid_attribute_p
+  .. hook-start:TARGET_OPTION_VALID_ATTRIBUTE_P
 
   This hook is called to parse ``attribute(target("..."))``, which
   allows setting target-specific options on individual functions.
@@ -182,7 +182,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_OPTION_SAVE (struct cl_target_option *ptr, struct gcc_options *opts, struct gcc_options *opts_set)
 
-  .. hook-start:TARGET_OPTION_save
+  .. hook-start:TARGET_OPTION_SAVE
 
   This hook is called to save any additional target-specific information
   in the ``struct cl_target_option`` structure for function-specific
@@ -193,7 +193,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_OPTION_RESTORE (struct gcc_options *opts, struct gcc_options *opts_set, struct cl_target_option *ptr)
 
-  .. hook-start:TARGET_OPTION_restore
+  .. hook-start:TARGET_OPTION_RESTORE
 
   This hook is called to restore any additional target-specific
   information in the ``struct cl_target_option`` structure for
@@ -203,7 +203,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_OPTION_POST_STREAM_IN (struct cl_target_option *ptr)
 
-  .. hook-start:TARGET_OPTION_post_stream_in
+  .. hook-start:TARGET_OPTION_POST_STREAM_IN
 
   This hook is called to update target-specific information in the
   ``struct cl_target_option`` structure after it is streamed in from
@@ -213,7 +213,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_OPTION_PRINT (FILE *file, int indent, struct cl_target_option *ptr)
 
-  .. hook-start:TARGET_OPTION_print
+  .. hook-start:TARGET_OPTION_PRINT
 
   This hook is called to print any additional target-specific
   information in the ``struct cl_target_option`` structure for
@@ -223,7 +223,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_OPTION_PRAGMA_PARSE (tree args, tree pop_target)
 
-  .. hook-start:TARGET_OPTION_pragma_parse
+  .. hook-start:TARGET_OPTION_PRAGMA_PARSE
 
   This target hook parses the options for ``#pragma GCC target``, which
   sets the target-specific options for functions that occur later in the
@@ -234,7 +234,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_OPTION_OVERRIDE (void)
 
-  .. hook-start:TARGET_OPTION_override
+  .. hook-start:TARGET_OPTION_OVERRIDE
 
   Sometimes certain combinations of command options do not make sense on
   a particular target machine.  You can override the hook
@@ -252,7 +252,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_OPTION_FUNCTION_VERSIONS (tree decl1, tree decl2)
 
-  .. hook-start:TARGET_OPTION_function_versions
+  .. hook-start:TARGET_OPTION_FUNCTION_VERSIONS
 
   This target hook returns ``true`` if :samp:`{DECL1}` and :samp:`{DECL2}` are
   versions of the same function.  :samp:`{DECL1}` and :samp:`{DECL2}` are function
@@ -264,7 +264,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_CAN_INLINE_P (tree caller, tree callee)
 
-  .. hook-start:TARGET_can_inline_p
+  .. hook-start:TARGET_CAN_INLINE_P
 
   This target hook returns ``false`` if the :samp:`{caller}` function
   cannot inline :samp:`{callee}`, based on target specific information.  By
@@ -275,7 +275,7 @@ be documented in :samp:`extend.texi`.
 
 .. function:: void TARGET_RELAYOUT_FUNCTION (tree fndecl)
 
-  .. hook-start:TARGET_relayout_function
+  .. hook-start:TARGET_RELAYOUT_FUNCTION
 
   This target hook fixes function :samp:`{fndecl}` after attributes are processed.
   Default does nothing. On ARM, the default function's alignment is updated

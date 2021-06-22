@@ -104,7 +104,7 @@ in the opposite case.
 
 .. function:: HOST_WIDE_INT TARGET_STACK_CLASH_PROTECTION_ALLOCA_PROBE_RANGE (void)
 
-  .. hook-start:TARGET_stack_clash_protection_alloca_probe_range
+  .. hook-start:TARGET_STACK_CLASH_PROTECTION_ALLOCA_PROBE_RANGE
 
   Some targets have an ABI defined interval for which no probing needs to be done.
   When a probe does need to be done this same interval is used as the probe distance

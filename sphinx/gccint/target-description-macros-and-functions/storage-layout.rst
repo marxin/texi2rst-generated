@@ -123,7 +123,7 @@ See :ref:`run-time-target`.
 
 .. function:: enum flt_eval_method TARGET_C_EXCESS_PRECISION (enum excess_precision_type type)
 
-  .. hook-start:TARGET_C_excess_precision
+  .. hook-start:TARGET_C_EXCESS_PRECISION
 
   Return a value, with the same meaning as the C99 macro
   ``FLT_EVAL_METHOD`` that describes which excess precision should be
@@ -146,7 +146,7 @@ See :ref:`run-time-target`.
 
 .. function:: machine_mode TARGET_PROMOTE_FUNCTION_MODE (const_tree type, machine_mode mode, int *punsignedp, const_tree funtype, int for_return)
 
-  .. hook-start:TARGET_promote_function_mode
+  .. hook-start:TARGET_PROMOTE_FUNCTION_MODE
 
   Like ``PROMOTE_MODE``, but it is applied to outgoing function arguments or
   function return values.  The target hook should return the new mode
@@ -211,7 +211,7 @@ See :ref:`run-time-target`.
 
 .. c:var:: HOST_WIDE_INT TARGET_ABSOLUTE_BIGGEST_ALIGNMENT
 
-  .. hook-start:TARGET_absolute_biggest_alignment
+  .. hook-start:TARGET_ABSOLUTE_BIGGEST_ALIGNMENT
 
   If defined, this target hook specifies the absolute biggest alignment
   that a type or variable can have on this machine, otherwise,
@@ -284,7 +284,7 @@ See :ref:`run-time-target`.
 
 .. function:: void TARGET_LOWER_LOCAL_DECL_ALIGNMENT (tree decl)
 
-  .. hook-start:TARGET_lower_local_decl_alignment
+  .. hook-start:TARGET_LOWER_LOCAL_DECL_ALIGNMENT
 
   Define this hook to lower alignment of local, parm or result
   decl :samp:`({decl})`.
@@ -293,7 +293,7 @@ See :ref:`run-time-target`.
 
 .. function:: HOST_WIDE_INT TARGET_STATIC_RTX_ALIGNMENT (machine_mode mode)
 
-  .. hook-start:TARGET_static_rtx_alignment
+  .. hook-start:TARGET_STATIC_RTX_ALIGNMENT
 
   This hook returns the preferred alignment in bits for a
   statically-allocated rtx, such as a constant pool entry.  :samp:`{mode}`
@@ -328,7 +328,7 @@ See :ref:`run-time-target`.
 
 .. function:: HOST_WIDE_INT TARGET_CONSTANT_ALIGNMENT (const_tree constant, HOST_WIDE_INT basic_align)
 
-  .. hook-start:TARGET_constant_alignment
+  .. hook-start:TARGET_CONSTANT_ALIGNMENT
 
   This hook returns the alignment in bits of a constant that is being
   placed in memory.  :samp:`{constant}` is the constant and :samp:`{basic_align}`
@@ -359,7 +359,7 @@ See :ref:`run-time-target`.
 
 .. function:: HOST_WIDE_INT TARGET_VECTOR_ALIGNMENT (const_tree type)
 
-  .. hook-start:TARGET_vector_alignment
+  .. hook-start:TARGET_VECTOR_ALIGNMENT
 
   This hook can be used to define the alignment for a vector of type
   :samp:`{type}`, in order to comply with a platform ABI.  The default is to
@@ -503,7 +503,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_ALIGN_ANON_BITFIELD (void)
 
-  .. hook-start:TARGET_align_anon_bitfield
+  .. hook-start:TARGET_ALIGN_ANON_BITFIELD
 
   When ``PCC_BITFIELD_TYPE_MATTERS`` is true this hook will determine
   whether unnamed bitfields affect the alignment of the containing
@@ -514,7 +514,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_NARROW_VOLATILE_BITFIELD (void)
 
-  .. hook-start:TARGET_narrow_volatile_bitfield
+  .. hook-start:TARGET_NARROW_VOLATILE_BITFIELD
 
   This target hook should return ``true`` if accesses to volatile bitfields
   should use the narrowest mode possible.  It should return ``false`` if
@@ -526,7 +526,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_MEMBER_TYPE_FORCES_BLK (const_tree field, machine_mode mode)
 
-  .. hook-start:TARGET_member_type_forces_blk
+  .. hook-start:TARGET_MEMBER_TYPE_FORCES_BLK
 
   Return true if a structure, union or array containing :samp:`{field}` should
   be accessed using ``BLKMODE``.
@@ -584,7 +584,7 @@ See :ref:`run-time-target`.
 
 .. function:: scalar_int_mode TARGET_LIBGCC_CMP_RETURN_MODE (void)
 
-  .. hook-start:TARGET_libgcc_cmp_return_mode
+  .. hook-start:TARGET_LIBGCC_CMP_RETURN_MODE
 
   This target hook should return the mode to be used for the return value
   of compare instructions expanded to libgcc calls.  If not defined
@@ -595,7 +595,7 @@ See :ref:`run-time-target`.
 
 .. function:: scalar_int_mode TARGET_LIBGCC_SHIFT_COUNT_MODE (void)
 
-  .. hook-start:TARGET_libgcc_shift_count_mode
+  .. hook-start:TARGET_LIBGCC_SHIFT_COUNT_MODE
 
   This target hook should return the mode to be used for the shift count operand
   of shift instructions expanded to libgcc calls.  If not defined
@@ -606,7 +606,7 @@ See :ref:`run-time-target`.
 
 .. function:: scalar_int_mode TARGET_UNWIND_WORD_MODE (void)
 
-  .. hook-start:TARGET_unwind_word_mode
+  .. hook-start:TARGET_UNWIND_WORD_MODE
 
   Return machine mode to be used for ``_Unwind_Word`` type.
   The default is to use ``word_mode``.
@@ -615,7 +615,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_MS_BITFIELD_LAYOUT_P (const_tree record_type)
 
-  .. hook-start:TARGET_ms_bitfield_layout_p
+  .. hook-start:TARGET_MS_BITFIELD_LAYOUT_P
 
   This target hook returns ``true`` if bit-fields in the given
   :samp:`{record_type}` are to be laid out following the rules of Microsoft
@@ -647,7 +647,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_DECIMAL_FLOAT_SUPPORTED_P (void)
 
-  .. hook-start:TARGET_decimal_float_supported_p
+  .. hook-start:TARGET_DECIMAL_FLOAT_SUPPORTED_P
 
   Returns true if the target supports decimal floating point.
 
@@ -655,7 +655,7 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_FIXED_POINT_SUPPORTED_P (void)
 
-  .. hook-start:TARGET_fixed_point_supported_p
+  .. hook-start:TARGET_FIXED_POINT_SUPPORTED_P
 
   Returns true if the target supports fixed-point arithmetic.
 
@@ -663,7 +663,7 @@ See :ref:`run-time-target`.
 
 .. function:: void TARGET_EXPAND_TO_RTL_HOOK (void)
 
-  .. hook-start:TARGET_expand_to_rtl_hook
+  .. hook-start:TARGET_EXPAND_TO_RTL_HOOK
 
   This hook is called just before expansion into rtl, allowing the target
   to perform additional initializations or analysis before the expansion.
@@ -676,7 +676,7 @@ See :ref:`run-time-target`.
 
 .. function:: void TARGET_INSTANTIATE_DECLS (void)
 
-  .. hook-start:TARGET_instantiate_decls
+  .. hook-start:TARGET_INSTANTIATE_DECLS
 
   This hook allows the backend to perform additional instantiations on rtl
   that are not actually in any insns yet, but will be later.
@@ -685,7 +685,7 @@ See :ref:`run-time-target`.
 
 .. function:: const char * TARGET_MANGLE_TYPE (const_tree type)
 
-  .. hook-start:TARGET_mangle_type
+  .. hook-start:TARGET_MANGLE_TYPE
 
   If your target defines any fundamental types, or any types your target
   uses should be mangled differently from the default, define this hook

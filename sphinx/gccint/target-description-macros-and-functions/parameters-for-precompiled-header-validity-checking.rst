@@ -12,7 +12,7 @@ Parameters for Precompiled Header Validity Checking
 
 .. function:: void * TARGET_GET_PCH_VALIDITY (size_t *sz)
 
-  .. hook-start:TARGET_get_pch_validity
+  .. hook-start:TARGET_GET_PCH_VALIDITY
 
   This hook returns a pointer to the data needed by
   ``TARGET_PCH_VALID_P`` and sets
@@ -22,7 +22,7 @@ Parameters for Precompiled Header Validity Checking
 
 .. function:: const char * TARGET_PCH_VALID_P (const void *data, size_t sz)
 
-  .. hook-start:TARGET_pch_valid_p
+  .. hook-start:TARGET_PCH_VALID_P
 
   This hook checks whether the options used to create a PCH file are
   compatible with the current settings.  It returns ``NULL``
@@ -41,7 +41,7 @@ Parameters for Precompiled Header Validity Checking
 
 .. function:: const char * TARGET_CHECK_PCH_TARGET_FLAGS (int pch_flags)
 
-  .. hook-start:TARGET_check_pch_target_flags
+  .. hook-start:TARGET_CHECK_PCH_TARGET_FLAGS
 
   If this hook is nonnull, the default implementation of
   ``TARGET_PCH_VALID_P`` will use it to check for compatible values
@@ -53,7 +53,7 @@ Parameters for Precompiled Header Validity Checking
 
 .. function:: void TARGET_PREPARE_PCH_SAVE (void)
 
-  .. hook-start:TARGET_prepare_pch_save
+  .. hook-start:TARGET_PREPARE_PCH_SAVE
 
   Called before writing out a PCH file.  If the target has some
   garbage-collected data that needs to be in a particular state on PCH loads,

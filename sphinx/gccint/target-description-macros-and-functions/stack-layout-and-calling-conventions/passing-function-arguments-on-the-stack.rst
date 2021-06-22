@@ -18,7 +18,7 @@ control passing certain arguments in registers.
 
 .. function:: bool TARGET_PROMOTE_PROTOTYPES (const_tree fntype)
 
-  .. hook-start:TARGET_promote_prototypes
+  .. hook-start:TARGET_PROMOTE_PROTOTYPES
 
   This target hook returns ``true`` if an argument declared in a
   prototype as an integral type smaller than ``int`` should actually be
@@ -30,7 +30,7 @@ control passing certain arguments in registers.
 
 .. function:: bool TARGET_PUSH_ARGUMENT (unsigned int npush)
 
-  .. hook-start:TARGET_push_argument
+  .. hook-start:TARGET_PUSH_ARGUMENT
 
   This target hook returns ``true`` if push instructions will be
   used to pass outgoing arguments.  When the push instruction usage is
@@ -141,7 +141,7 @@ control passing certain arguments in registers.
 
 .. function:: poly_int64 TARGET_RETURN_POPS_ARGS (tree fundecl, tree funtype, poly_int64 size)
 
-  .. hook-start:TARGET_return_pops_args
+  .. hook-start:TARGET_RETURN_POPS_ARGS
 
   This target hook returns the number of bytes of its own arguments that
   a function pops on returning, or 0 if the function pops no arguments

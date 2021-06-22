@@ -93,7 +93,7 @@ This describes assembler instruction output.
 
 .. function:: void TARGET_ASM_FINAL_POSTSCAN_INSN (FILE *file, rtx_insn *insn, rtx *opvec, int noperands)
 
-  .. hook-start:TARGET_ASM_final_postscan_insn
+  .. hook-start:TARGET_ASM_FINAL_POSTSCAN_INSN
 
   If defined, this target hook is a function which is executed just after the
   output of assembler code for :samp:`{insn}`, to change the mode of the assembler

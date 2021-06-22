@@ -201,7 +201,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_DECLARE_CONSTANT_NAME (FILE *file, const char *name, const_tree expr, HOST_WIDE_INT size)
 
-  .. hook-start:TARGET_ASM_declare_constant_name
+  .. hook-start:TARGET_ASM_DECLARE_CONSTANT_NAME
 
   A target hook to output to the stdio stream :samp:`{file}` any text necessary
   for declaring the name :samp:`{name}` of a constant which is being defined.  This
@@ -242,7 +242,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_GLOBALIZE_LABEL (FILE *stream, const char *name)
 
-  .. hook-start:TARGET_ASM_globalize_label
+  .. hook-start:TARGET_ASM_GLOBALIZE_LABEL
 
   This target hook is a function to output to the stdio stream
   :samp:`{stream}` some commands that will make the label :samp:`{name}` global;
@@ -255,7 +255,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_GLOBALIZE_DECL_NAME (FILE *stream, tree decl)
 
-  .. hook-start:TARGET_ASM_globalize_decl_name
+  .. hook-start:TARGET_ASM_GLOBALIZE_DECL_NAME
 
   This target hook is a function to output to the stdio stream
   :samp:`{stream}` some commands that will make the name associated with :samp:`{decl}`
@@ -267,7 +267,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_ASSEMBLE_UNDEFINED_DECL (FILE *stream, const char *name, const_tree decl)
 
-  .. hook-start:TARGET_ASM_assemble_undefined_decl
+  .. hook-start:TARGET_ASM_ASSEMBLE_UNDEFINED_DECL
 
   This target hook is a function to output to the stdio stream
   :samp:`{stream}` some commands that will declare the name associated with
@@ -347,7 +347,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_ASSEMBLE_VISIBILITY (tree decl, int visibility)
 
-  .. hook-start:TARGET_ASM_assemble_visibility
+  .. hook-start:TARGET_ASM_ASSEMBLE_VISIBILITY
 
   This target hook is a function to output to :samp:`{asm_out_file}` some
   commands that will make the symbol(s) associated with :samp:`{decl}` have
@@ -387,7 +387,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_EXTERNAL_LIBCALL (rtx symref)
 
-  .. hook-start:TARGET_ASM_external_libcall
+  .. hook-start:TARGET_ASM_EXTERNAL_LIBCALL
 
   This target hook is a function to output to :samp:`{asm_out_file}` an assembler
   pseudo-op to declare a library function name external.  The name of the
@@ -397,7 +397,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_MARK_DECL_PRESERVED (const char *symbol)
 
-  .. hook-start:TARGET_ASM_mark_decl_preserved
+  .. hook-start:TARGET_ASM_MARK_DECL_PRESERVED
 
   This target hook is a function to output to :samp:`{asm_out_file}` an assembler
   directive to annotate :samp:`{symbol}` as used.  The Darwin target uses the
@@ -415,7 +415,7 @@ This is about outputting labels.
 
 .. function:: tree TARGET_MANGLE_ASSEMBLER_NAME (const char *name)
 
-  .. hook-start:TARGET_mangle_assembler_name
+  .. hook-start:TARGET_MANGLE_ASSEMBLER_NAME
 
   Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's
   ``assemble_name``, but in memory rather than to a file stream, returning
@@ -445,7 +445,7 @@ This is about outputting labels.
 
 .. function:: void TARGET_ASM_INTERNAL_LABEL (FILE *stream, const char *prefix, unsigned long labelno)
 
-  .. hook-start:TARGET_ASM_internal_label
+  .. hook-start:TARGET_ASM_INTERNAL_LABEL
 
   A function to output to the stdio stream :samp:`{stream}` a label whose
   name is made from the string :samp:`{prefix}` and the number :samp:`{labelno}`.

@@ -24,7 +24,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_GET_ADDRESS
 
-  .. hook-start:TARGET_EMUTLS_get_address
+  .. hook-start:TARGET_EMUTLS_GET_ADDRESS
 
   Contains the name of the helper function that uses a TLS control
   object to locate a TLS instance.  The default causes libgcc's
@@ -34,7 +34,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_REGISTER_COMMON
 
-  .. hook-start:TARGET_EMUTLS_register_common
+  .. hook-start:TARGET_EMUTLS_REGISTER_COMMON
 
   Contains the name of the helper function that should be used at
   program startup to register TLS objects that are implicitly
@@ -46,7 +46,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_VAR_SECTION
 
-  .. hook-start:TARGET_EMUTLS_var_section
+  .. hook-start:TARGET_EMUTLS_VAR_SECTION
 
   Contains the name of the section in which TLS control variables should
   be placed.  The default of ``NULL`` allows these to be placed in
@@ -56,7 +56,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_TMPL_SECTION
 
-  .. hook-start:TARGET_EMUTLS_tmpl_section
+  .. hook-start:TARGET_EMUTLS_TMPL_SECTION
 
   Contains the name of the section in which TLS initializers should be
   placed.  The default of ``NULL`` allows these to be placed in any
@@ -66,7 +66,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_VAR_PREFIX
 
-  .. hook-start:TARGET_EMUTLS_var_prefix
+  .. hook-start:TARGET_EMUTLS_VAR_PREFIX
 
   Contains the prefix to be prepended to TLS control variable names.
   The default of ``NULL`` uses a target-specific prefix.
@@ -75,7 +75,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: const char * TARGET_EMUTLS_TMPL_PREFIX
 
-  .. hook-start:TARGET_EMUTLS_tmpl_prefix
+  .. hook-start:TARGET_EMUTLS_TMPL_PREFIX
 
   Contains the prefix to be prepended to TLS initializer objects.  The
   default of ``NULL`` uses a target-specific prefix.
@@ -84,7 +84,7 @@ address of the current thread's instance of the TLS object.
 
 .. function:: tree TARGET_EMUTLS_VAR_FIELDS (tree type, tree *name)
 
-  .. hook-start:TARGET_EMUTLS_var_fields
+  .. hook-start:TARGET_EMUTLS_VAR_FIELDS
 
   Specifies a function that generates the FIELD_DECLs for a TLS control
   object type.  :samp:`{type}` is the RECORD_TYPE the fields are for and
@@ -96,7 +96,7 @@ address of the current thread's instance of the TLS object.
 
 .. function:: tree TARGET_EMUTLS_VAR_INIT (tree var, tree decl, tree tmpl_addr)
 
-  .. hook-start:TARGET_EMUTLS_var_init
+  .. hook-start:TARGET_EMUTLS_VAR_INIT
 
   Specifies a function that generates the CONSTRUCTOR to initialize a
   TLS control object.  :samp:`{var}` is the TLS control object, :samp:`{decl}`
@@ -107,7 +107,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: bool TARGET_EMUTLS_VAR_ALIGN_FIXED
 
-  .. hook-start:TARGET_EMUTLS_var_align_fixed
+  .. hook-start:TARGET_EMUTLS_VAR_ALIGN_FIXED
 
   Specifies whether the alignment of TLS control variable objects is
   fixed and should not be increased as some backends may do to optimize
@@ -117,7 +117,7 @@ address of the current thread's instance of the TLS object.
 
 .. c:var:: bool TARGET_EMUTLS_DEBUG_FORM_TLS_ADDRESS
 
-  .. hook-start:TARGET_EMUTLS_debug_form_tls_address
+  .. hook-start:TARGET_EMUTLS_DEBUG_FORM_TLS_ADDRESS
 
   Specifies whether a DWARF ``DW_OP_form_tls_address`` location descriptor
   may be used to describe emulated TLS control objects.

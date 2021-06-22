@@ -57,7 +57,7 @@ for nested functions.
 
 .. c:var:: int TARGET_CUSTOM_FUNCTION_DESCRIPTORS
 
-  .. hook-start:TARGET_custom_function_descriptors
+  .. hook-start:TARGET_CUSTOM_FUNCTION_DESCRIPTORS
 
   If the target can use GCC's generic descriptor mechanism for nested
   functions, define this hook to a power of 2 representing an unused bit
@@ -102,7 +102,7 @@ separately.
 
 .. function:: void TARGET_ASM_TRAMPOLINE_TEMPLATE (FILE *f)
 
-  .. hook-start:TARGET_ASM_trampoline_template
+  .. hook-start:TARGET_ASM_TRAMPOLINE_TEMPLATE
 
   This hook is called by ``assemble_trampoline_template`` to output,
   on the stream :samp:`{f}`, assembler code for a block of data that contains
@@ -134,7 +134,7 @@ separately.
 
 .. function:: void TARGET_TRAMPOLINE_INIT (rtx m_tramp, tree fndecl, rtx static_chain)
 
-  .. hook-start:TARGET_trampoline_init
+  .. hook-start:TARGET_TRAMPOLINE_INIT
 
   This hook is called to initialize a trampoline.
   :samp:`{m_tramp}` is an RTX for the memory block for the trampoline; :samp:`{fndecl}`
@@ -158,7 +158,7 @@ separately.
 
 .. function:: void TARGET_EMIT_CALL_BUILTIN___CLEAR_CACHE (rtx begin, rtx end)
 
-  .. hook-start:TARGET_emit_call_builtin___clear_cache
+  .. hook-start:TARGET_EMIT_CALL_BUILTIN___CLEAR_CACHE
 
   On targets that do not define a ``clear_cache`` insn expander,
   but that define the ``CLEAR_CACHE_INSN`` macro,
@@ -174,7 +174,7 @@ separately.
 
 .. function:: rtx TARGET_TRAMPOLINE_ADJUST_ADDRESS (rtx addr)
 
-  .. hook-start:TARGET_trampoline_adjust_address
+  .. hook-start:TARGET_TRAMPOLINE_ADJUST_ADDRESS
 
   This hook should perform any machine-specific adjustment in
   the address of the trampoline.  Its argument contains the address of the

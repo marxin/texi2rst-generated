@@ -49,7 +49,7 @@ The following macros control mode switching optimizations:
 
 .. function:: void TARGET_MODE_EMIT (int entity, int mode, int prev_mode, HARD_REG_SET regs_live)
 
-  .. hook-start:TARGET_MODE_emit
+  .. hook-start:TARGET_MODE_EMIT
 
   Generate one or more insns to set :samp:`{entity}` to :samp:`{mode}`.
   :samp:`{hard_reg_live}` is the set of hard registers live at the point where
@@ -61,7 +61,7 @@ The following macros control mode switching optimizations:
 
 .. function:: int TARGET_MODE_NEEDED (int entity, rtx_insn *insn)
 
-  .. hook-start:TARGET_MODE_needed
+  .. hook-start:TARGET_MODE_NEEDED
 
   :samp:`{entity}` is an integer specifying a mode-switched entity.
   If ``OPTIMIZE_MODE_SWITCHING`` is defined, you must define this macro
@@ -73,7 +73,7 @@ The following macros control mode switching optimizations:
 
 .. function:: int TARGET_MODE_AFTER (int entity, int mode, rtx_insn *insn)
 
-  .. hook-start:TARGET_MODE_after
+  .. hook-start:TARGET_MODE_AFTER
 
   :samp:`{entity}` is an integer specifying a mode-switched entity.
   If this macro is defined, it is evaluated for every :samp:`{insn}` during mode
@@ -84,7 +84,7 @@ The following macros control mode switching optimizations:
 
 .. function:: int TARGET_MODE_ENTRY (int entity)
 
-  .. hook-start:TARGET_MODE_entry
+  .. hook-start:TARGET_MODE_ENTRY
 
   If this macro is defined, it is evaluated for every :samp:`{entity}` that
   needs mode switching.  It should evaluate to an integer, which is a mode
@@ -96,7 +96,7 @@ The following macros control mode switching optimizations:
 
 .. function:: int TARGET_MODE_EXIT (int entity)
 
-  .. hook-start:TARGET_MODE_exit
+  .. hook-start:TARGET_MODE_EXIT
 
   If this macro is defined, it is evaluated for every :samp:`{entity}` that
   needs mode switching.  It should evaluate to an integer, which is a mode
@@ -108,7 +108,7 @@ The following macros control mode switching optimizations:
 
 .. function:: int TARGET_MODE_PRIORITY (int entity, int n)
 
-  .. hook-start:TARGET_MODE_priority
+  .. hook-start:TARGET_MODE_PRIORITY
 
   This macro specifies the order in which modes for :samp:`{entity}`
   are processed. 0 is the highest priority,
