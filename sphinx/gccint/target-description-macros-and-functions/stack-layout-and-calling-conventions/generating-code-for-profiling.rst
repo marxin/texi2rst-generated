@@ -50,9 +50,13 @@ These macros will help you generate code for profiling.
 
 .. function:: bool TARGET_KEEP_LEAF_WHEN_PROFILED (void)
 
+  .. hook-start:TARGET_keep_leaf_when_profiled
+
   This target hook returns true if the target wants the leaf flag for
   the current function to stay true even if it calls mcount.  This might
   make sense for targets using the leaf flag only to determine whether a
   stack frame needs to be generated or not and for which the call to
   mcount is generated before the function prologue.
+
+.. hook-end
 

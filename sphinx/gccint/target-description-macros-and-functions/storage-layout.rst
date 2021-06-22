@@ -123,6 +123,8 @@ See :ref:`run-time-target`.
 
 .. function:: enum flt_eval_method TARGET_C_EXCESS_PRECISION (enum excess_precision_type type)
 
+  .. hook-start:TARGET_C_excess_precision
+
   Return a value, with the same meaning as the C99 macro
   ``FLT_EVAL_METHOD`` that describes which excess precision should be
   applied.  :samp:`{type}` is either ``EXCESS_PRECISION_TYPE_IMPLICIT``,
@@ -140,7 +142,11 @@ See :ref:`run-time-target`.
   when :samp:`{type}` is ``EXCESS_PRECISION_TYPE_STANDARD`` or
   ``EXCESS_PRECISION_TYPE_FAST``.
 
+.. hook-end
+
 .. function:: machine_mode TARGET_PROMOTE_FUNCTION_MODE (const_tree type, machine_mode mode, int *punsignedp, const_tree funtype, int for_return)
+
+  .. hook-start:TARGET_promote_function_mode
 
   Like ``PROMOTE_MODE``, but it is applied to outgoing function arguments or
   function return values.  The target hook should return the new mode
@@ -161,6 +167,8 @@ See :ref:`run-time-target`.
   The default is to not promote arguments and return values.  You can
   also define the hook to ``default_promote_function_mode_always_promote``
   if you would like to apply the same rules given by ``PROMOTE_MODE``.
+
+.. hook-end
 
 .. c:macro:: PARM_BOUNDARY
 
@@ -203,9 +211,13 @@ See :ref:`run-time-target`.
 
 .. c:var:: HOST_WIDE_INT TARGET_ABSOLUTE_BIGGEST_ALIGNMENT
 
+  .. hook-start:TARGET_absolute_biggest_alignment
+
   If defined, this target hook specifies the absolute biggest alignment
   that a type or variable can have on this machine, otherwise,
   ``BIGGEST_ALIGNMENT`` is used.
+
+.. hook-end
 
 .. c:macro:: MALLOC_ABI_ALIGNMENT
 
@@ -272,15 +284,23 @@ See :ref:`run-time-target`.
 
 .. function:: void TARGET_LOWER_LOCAL_DECL_ALIGNMENT (tree decl)
 
+  .. hook-start:TARGET_lower_local_decl_alignment
+
   Define this hook to lower alignment of local, parm or result
   decl :samp:`({decl})`.
 
+.. hook-end
+
 .. function:: HOST_WIDE_INT TARGET_STATIC_RTX_ALIGNMENT (machine_mode mode)
+
+  .. hook-start:TARGET_static_rtx_alignment
 
   This hook returns the preferred alignment in bits for a
   statically-allocated rtx, such as a constant pool entry.  :samp:`{mode}`
   is the mode of the rtx.  The default implementation returns
   :samp:`GET_MODE_ALIGNMENT ({mode})`.
+
+.. hook-end
 
 .. c:macro:: DATA_ALIGNMENT (type, basic-align)
 
@@ -308,6 +328,8 @@ See :ref:`run-time-target`.
 
 .. function:: HOST_WIDE_INT TARGET_CONSTANT_ALIGNMENT (const_tree constant, HOST_WIDE_INT basic_align)
 
+  .. hook-start:TARGET_constant_alignment
+
   This hook returns the alignment in bits of a constant that is being
   placed in memory.  :samp:`{constant}` is the constant and :samp:`{basic_align}`
   is the alignment that the object would ordinarily have.
@@ -318,6 +340,8 @@ See :ref:`run-time-target`.
   constants to be word aligned so that ``strcpy`` calls that copy
   constants can be done inline.  The function
   ``constant_alignment_word_strings`` provides such a definition.
+
+.. hook-end
 
 .. c:macro:: LOCAL_ALIGNMENT (type, basic-align)
 
@@ -335,11 +359,15 @@ See :ref:`run-time-target`.
 
 .. function:: HOST_WIDE_INT TARGET_VECTOR_ALIGNMENT (const_tree type)
 
+  .. hook-start:TARGET_vector_alignment
+
   This hook can be used to define the alignment for a vector of type
   :samp:`{type}`, in order to comply with a platform ABI.  The default is to
   require natural alignment for vector types.  The alignment returned by
   this hook must be a power-of-two multiple of the default alignment of
   the vector element type.
+
+.. hook-end
 
 .. c:macro:: STACK_SLOT_ALIGNMENT (type, mode, basic-align)
 
@@ -475,12 +503,18 @@ See :ref:`run-time-target`.
 
 .. function:: bool TARGET_ALIGN_ANON_BITFIELD (void)
 
+  .. hook-start:TARGET_align_anon_bitfield
+
   When ``PCC_BITFIELD_TYPE_MATTERS`` is true this hook will determine
   whether unnamed bitfields affect the alignment of the containing
   structure.  The hook should return true if the structure should inherit
   the alignment requirements of an unnamed bitfield's type.
 
+.. hook-end
+
 .. function:: bool TARGET_NARROW_VOLATILE_BITFIELD (void)
+
+  .. hook-start:TARGET_narrow_volatile_bitfield
 
   This target hook should return ``true`` if accesses to volatile bitfields
   should use the narrowest mode possible.  It should return ``false`` if
@@ -488,7 +522,11 @@ See :ref:`run-time-target`.
 
   The default is ``false``.
 
+.. hook-end
+
 .. function:: bool TARGET_MEMBER_TYPE_FORCES_BLK (const_tree field, machine_mode mode)
+
+  .. hook-start:TARGET_member_type_forces_blk
 
   Return true if a structure, union or array containing :samp:`{field}` should
   be accessed using ``BLKMODE``.
@@ -499,6 +537,8 @@ See :ref:`run-time-target`.
   retain the field's mode.
 
   Normally, this is not needed.
+
+.. hook-end
 
 .. c:macro:: ROUND_TYPE_ALIGN (type, computed, specified)
 
@@ -544,24 +584,38 @@ See :ref:`run-time-target`.
 
 .. function:: scalar_int_mode TARGET_LIBGCC_CMP_RETURN_MODE (void)
 
+  .. hook-start:TARGET_libgcc_cmp_return_mode
+
   This target hook should return the mode to be used for the return value
   of compare instructions expanded to libgcc calls.  If not defined
   ``word_mode`` is returned which is the right choice for a majority of
   targets.
 
+.. hook-end
+
 .. function:: scalar_int_mode TARGET_LIBGCC_SHIFT_COUNT_MODE (void)
+
+  .. hook-start:TARGET_libgcc_shift_count_mode
 
   This target hook should return the mode to be used for the shift count operand
   of shift instructions expanded to libgcc calls.  If not defined
   ``word_mode`` is returned which is the right choice for a majority of
   targets.
 
+.. hook-end
+
 .. function:: scalar_int_mode TARGET_UNWIND_WORD_MODE (void)
+
+  .. hook-start:TARGET_unwind_word_mode
 
   Return machine mode to be used for ``_Unwind_Word`` type.
   The default is to use ``word_mode``.
 
+.. hook-end
+
 .. function:: bool TARGET_MS_BITFIELD_LAYOUT_P (const_tree record_type)
+
+  .. hook-start:TARGET_ms_bitfield_layout_p
 
   This target hook returns ``true`` if bit-fields in the given
   :samp:`{record_type}` are to be laid out following the rules of Microsoft
@@ -589,15 +643,27 @@ See :ref:`run-time-target`.
   precedence for that field, but the alignment of the rest of the structure
   may affect its placement.
 
+.. hook-end
+
 .. function:: bool TARGET_DECIMAL_FLOAT_SUPPORTED_P (void)
+
+  .. hook-start:TARGET_decimal_float_supported_p
 
   Returns true if the target supports decimal floating point.
 
+.. hook-end
+
 .. function:: bool TARGET_FIXED_POINT_SUPPORTED_P (void)
+
+  .. hook-start:TARGET_fixed_point_supported_p
 
   Returns true if the target supports fixed-point arithmetic.
 
+.. hook-end
+
 .. function:: void TARGET_EXPAND_TO_RTL_HOOK (void)
+
+  .. hook-start:TARGET_expand_to_rtl_hook
 
   This hook is called just before expansion into rtl, allowing the target
   to perform additional initializations or analysis before the expansion.
@@ -606,12 +672,20 @@ See :ref:`run-time-target`.
   registers whenever the function being expanded has any SDmode
   usage.
 
+.. hook-end
+
 .. function:: void TARGET_INSTANTIATE_DECLS (void)
+
+  .. hook-start:TARGET_instantiate_decls
 
   This hook allows the backend to perform additional instantiations on rtl
   that are not actually in any insns yet, but will be later.
 
+.. hook-end
+
 .. function:: const char * TARGET_MANGLE_TYPE (const_tree type)
+
+  .. hook-start:TARGET_mangle_type
 
   If your target defines any fundamental types, or any types your target
   uses should be mangled differently from the default, define this hook
@@ -644,4 +718,6 @@ See :ref:`run-time-target`.
   The default version of this hook always returns ``NULL``, which is
   appropriate for a target that does not define any new fundamental
   types.
+
+.. hook-end
 

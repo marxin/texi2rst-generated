@@ -109,6 +109,8 @@ Representation of condition codes using registers
 
 .. function:: void TARGET_CANONICALIZE_COMPARISON (int *code, rtx *op0, rtx *op1, bool op0_preserve_value)
 
+  .. hook-start:TARGET_canonicalize_comparison
+
   On some machines not all possible comparisons are defined, but you can
   convert an invalid comparison into a valid one.  For example, the Alpha
   does not have a ``GT`` comparison, but you can use an ``LT``
@@ -128,6 +130,8 @@ Representation of condition codes using registers
 
   You need not to implement this hook if it would never change the
   comparison code or operands.
+
+.. hook-end
 
 .. c:macro:: REVERSIBLE_CC_MODE (mode)
 
@@ -164,6 +168,8 @@ Representation of condition codes using registers
 
 .. function:: bool TARGET_FIXED_CONDITION_CODE_REGS (unsigned int *p1, unsigned int *p2)
 
+  .. hook-start:TARGET_fixed_condition_code_regs
+
   On targets which use a hard
   register rather than a pseudo-register to hold condition codes, the
   regular CSE passes are often not able to identify cases in which the
@@ -177,7 +183,11 @@ Representation of condition codes using registers
 
   The default version of this hook returns false.
 
+.. hook-end
+
 .. function:: machine_mode TARGET_CC_MODES_COMPATIBLE (machine_mode m1, machine_mode m2)
+
+  .. hook-start:TARGET_cc_modes_compatible
 
   On targets which use multiple condition code modes in class
   ``MODE_CC``, it is sometimes the case that a comparison can be
@@ -190,9 +200,15 @@ Representation of condition codes using registers
   same.  If they are, it returns that mode.  If they are different, it
   returns ``VOIDmode``.
 
+.. hook-end
+
 .. c:var:: unsigned int TARGET_FLAGS_REGNUM
+
+  .. hook-start:TARGET_flags_regnum
 
   If the target has a dedicated flags register, and it needs to use the
   post-reload comparison elimination pass, or the delay slot filler pass,
   then this value should be set appropriately.
+
+.. hook-end
 

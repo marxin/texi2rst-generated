@@ -110,12 +110,18 @@ Registers have various characteristics.
 
 .. function:: const predefined_function_abi & TARGET_FNTYPE_ABI (const_tree type)
 
+  .. hook-start:TARGET_fntype_abi
+
   Return the ABI used by a function with type :samp:`{type}` ; see the
   definition of ``predefined_function_abi`` for details of the ABI
   descriptor.  Targets only need to define this hook if they support
   interoperability between several ABIs in the same translation unit.
 
+.. hook-end
+
 .. function:: const predefined_function_abi & TARGET_INSN_CALLEE_ABI (const rtx_insn *insn)
+
+  .. hook-start:TARGET_insn_callee_abi
 
   This hook returns a description of the ABI used by the target of
   call instruction :samp:`{insn}` ; see the definition of
@@ -126,6 +132,8 @@ Registers have various characteristics.
   Targets only need to define this hook if they support
   interoperability between several ABIs in the same translation unit.
 
+.. hook-end
+
 .. index:: call-used register
 
 .. index:: call-clobbered register
@@ -133,6 +141,8 @@ Registers have various characteristics.
 .. index:: call-saved register
 
 .. function:: bool TARGET_HARD_REGNO_CALL_PART_CLOBBERED (unsigned int abi_id, unsigned int regno, machine_mode mode)
+
+  .. hook-start:TARGET_hard_regno_call_part_clobbered
 
   ABIs usually specify that calls must preserve the full contents
   of a particular register, or that calls can alter any part of a
@@ -154,9 +164,15 @@ Registers have various characteristics.
   The default implementation returns false, which is correct
   for targets that don't have partly call-clobbered registers.
 
+.. hook-end
+
 .. function:: const char * TARGET_GET_MULTILIB_ABI_NAME (void)
 
+  .. hook-start:TARGET_get_multilib_abi_name
+
   This hook returns name of multilib ABI name.
+
+.. hook-end
 
 .. index:: fixed_regs
 
@@ -169,6 +185,8 @@ Registers have various characteristics.
 .. index:: reg_class_contents
 
 .. function:: void TARGET_CONDITIONAL_REGISTER_USAGE (void)
+
+  .. hook-start:TARGET_conditional_register_usage
 
   This hook may conditionally modify five variables
   ``fixed_regs``, ``call_used_regs``, ``global_regs``,
@@ -200,6 +218,8 @@ Registers have various characteristics.
   of the insn patterns whose constraints permit this class are
   controlled by target switches, then GCC will automatically avoid using
   these registers when the target switches are opposed to them.)
+
+.. hook-end
 
 .. c:macro:: INCOMING_REGNO (out)
 
@@ -304,6 +324,8 @@ consecutive registers are needed for a given mode.
 
 .. function:: unsigned int TARGET_HARD_REGNO_NREGS (unsigned int regno, machine_mode mode)
 
+  .. hook-start:TARGET_hard_regno_nregs
+
   This hook returns the number of consecutive hard registers, starting
   at register number :samp:`{regno}`, required to hold a value of mode
   :samp:`{mode}`.  This hook must never return zero, even if a register
@@ -312,6 +334,8 @@ consecutive registers are needed for a given mode.
   ``TARGET_CAN_CHANGE_MODE_CLASS`` instead.
 
   The default definition returns the number of words in :samp:`{mode}`.
+
+.. hook-end
 
 .. c:macro:: HARD_REGNO_NREGS_HAS_PADDING (regno, mode)
 
@@ -350,6 +374,8 @@ consecutive registers are needed for a given mode.
   floating-point registers is still 32-bit.
 
 .. function:: bool TARGET_HARD_REGNO_MODE_OK (unsigned int regno, machine_mode mode)
+
+  .. hook-start:TARGET_hard_regno_mode_ok
 
   This hook returns true if it is permissible to store a value
   of mode :samp:`{mode}` in hard register number :samp:`{regno}` (or in several
@@ -407,6 +433,8 @@ consecutive registers are needed for a given mode.
   floating registers are not in class ``GENERAL_REGS``, they will not
   be used unless some pattern's constraint asks for one.
 
+.. hook-end
+
 .. c:macro:: HARD_REGNO_RENAME_OK (from, to)
 
   A C expression that is nonzero if it is OK to rename a hard register
@@ -419,6 +447,8 @@ consecutive registers are needed for a given mode.
   The default is always nonzero.
 
 .. function:: bool TARGET_MODES_TIEABLE_P (machine_mode mode1, machine_mode mode2)
+
+  .. hook-start:TARGET_modes_tieable_p
 
   This hook returns true if a value of mode :samp:`{mode1}` is accessible
   in mode :samp:`{mode2}` without copying.
@@ -435,7 +465,11 @@ consecutive registers are needed for a given mode.
   possible since doing so will allow GCC to perform better register
   allocation.  The default definition returns true unconditionally.
 
+.. hook-end
+
 .. function:: bool TARGET_HARD_REGNO_SCRATCH_OK (unsigned int regno)
+
+  .. hook-start:TARGET_hard_regno_scratch_ok
 
   This target hook should return ``true`` if it is OK to use a hard register
   :samp:`{regno}` as scratch reg in peephole2.
@@ -444,6 +478,8 @@ consecutive registers are needed for a given mode.
   is not saved by a prologue in an interrupt handler.
 
   The default version of this hook always returns ``true``.
+
+.. hook-end
 
 .. c:macro:: AVOID_CCMODE_COPIES
 
