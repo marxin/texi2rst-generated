@@ -25,7 +25,7 @@ Currently, :samp:`rtl.def` defines these classes:
 
   An RTX code that represents an actual object, such as a register
   ( ``REG`` ) or a memory location ( ``MEM``, ``SYMBOL_REF`` ).
-  ``LO_SUM`` ) is also included; instead, ``SUBREG`` and
+  ``LO_SUM`` is also included; instead, ``SUBREG`` and
   ``STRICT_LOW_PART`` are not in this class, but in class
   ``RTX_EXTRA``.
 

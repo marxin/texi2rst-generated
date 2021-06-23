@@ -27,5 +27,3 @@ the way they have.
 
 .. toctree::
   :maxdepth: 2
-
-
