@@ -28,8 +28,8 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompgetmaxactivelevels
   openmp-runtime-library-routines/ompgetmaxtaskpriority
   openmp-runtime-library-routines/ompgetmaxthreads
-  openmp-runtime-library-routines/ompgetnested-nested
-  openmp-runtime-library-routines/ompgetnumdevice
+  openmp-runtime-library-routines/ompgetnested
+  openmp-runtime-library-routines/ompgetnumdevices
   openmp-runtime-library-routines/ompgetnumprocs
   openmp-runtime-library-routines/ompgetnumteams
   openmp-runtime-library-routines/ompgetnumthreads
@@ -79,4 +79,4 @@ Support for event objects.
 .. toctree::
   :maxdepth: 2
 
-  openmp-runtime-library-routines/ompfulfillevent-fulfill-and-destroy-an-openmp-event
+  openmp-runtime-library-routines/ompfulfillevent

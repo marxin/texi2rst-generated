@@ -54,7 +54,7 @@ Contents:
   control-flow-graph
   analysis-and-representation-of-loops
   machine-descriptions
-  target-description-macros-and-functions
+  target-macros
   host-configuration
   makefile-fragments
   collect2

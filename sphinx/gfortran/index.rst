@@ -26,7 +26,7 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
   copyright
   introduction
   gnu-fortran-command-options
-  runtime-influencing-runtime-behavior-with-environment-variables
+  runtime
 
   fortran-standards-status
   compiler-characteristics
