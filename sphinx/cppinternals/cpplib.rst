@@ -28,13 +28,13 @@ the way they have.
 .. toctree::
   :maxdepth: 2
 
-  cpplib-the-gnu-c-preprocessor/conventions
-  cpplib-the-gnu-c-preprocessor/lexer
-  cpplib-the-gnu-c-preprocessor/hash-nodes
-  cpplib-the-gnu-c-preprocessor/macro-expansion
-  cpplib-the-gnu-c-preprocessor/token-spacing
-  cpplib-the-gnu-c-preprocessor/line-numbering
-  cpplib-the-gnu-c-preprocessor/guard-macros
-  cpplib-the-gnu-c-preprocessor/files
-  cpplib-the-gnu-c-preprocessor/concept-index
+  cpplib/conventions
+  cpplib/lexer
+  cpplib/hash-nodes
+  cpplib/macro-expansion
+  cpplib/token-spacing
+  cpplib/line-numbering
+  cpplib/guard-macros
+  cpplib/files
+  cpplib/concept-index
 

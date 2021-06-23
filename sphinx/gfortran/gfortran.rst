@@ -84,7 +84,6 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
   :maxdepth: 2
 
   gnu-fortran-command-options
-  runtime-influencing-runtime-behavior-with-environment-variables
 
 .. _contributing:
 

@@ -12,7 +12,7 @@
 .. toctree::
   :maxdepth: 2
 
-  cpplib-the-gnu-c-preprocessor
+  cpplib
 
 .. _conventions:
 

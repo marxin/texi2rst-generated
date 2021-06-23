@@ -89,10 +89,6 @@ languages, are documented in a separate manual.  See :ref:`Introduction <top>`.
   extensions-to-the-c++-language
   gnu-objective-c-features
   binary-compatibility
-  gcov-a-test-coverage-program
-  gcov-tool-an-offline-gcda-profile-processing-tool
-  gcov-dump-an-offline-gcda-and-gcno-profile-dump-tool
-  lto-dump-tool-for-dumping-lto-object-files
   known-causes-of-trouble-with-gcc
   reporting-bugs
   how-to-get-help-with-gcc

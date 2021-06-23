@@ -103,7 +103,6 @@ http://gcc.gnu.org/readings.html.
   control-flow-graph
   analysis-and-representation-of-loops
   machine-descriptions
-  target-description-macros-and-functions
   host-configuration
   makefile-fragments
   standard-header-file-directories

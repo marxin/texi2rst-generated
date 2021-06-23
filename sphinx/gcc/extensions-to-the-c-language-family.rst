@@ -141,7 +141,6 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/built-in-functions-to-perform-arithmetic-with-overflow-checking
   extensions-to-the-c-language-family/object-size-checking-built-in-functions
   extensions-to-the-c-language-family/other-built-in-functions-provided-by-gcc
-  extensions-to-the-c-language-family/built-in-functions-specific-to-particular-target-machines
   extensions-to-the-c-language-family/format-checks-specific-to-particular-target-machines
   extensions-to-the-c-language-family/pragmas-accepted-by-gcc
   extensions-to-the-c-language-family/unnamed-structure-and-union-fields

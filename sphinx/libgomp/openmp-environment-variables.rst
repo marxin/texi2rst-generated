@@ -35,24 +35,24 @@ beginning with :envvar:`GOMP_` are GNU extensions.
   openmp-environment-variables/gomp_stacksize
   openmp-environment-variables/gomp_spincount
   openmp-environment-variables/gomp_rtems_thread_pools
-  openmp-environment-variables/ompcancellation-set-whether-cancellation-is-activated
-  openmp-environment-variables/ompdisplayenv-show-openmp-version-and-environment-variables
-  openmp-environment-variables/ompdefaultdevice-set-the-device-used-in-target-regions
-  openmp-environment-variables/ompdynamic-dynamic-adjustment-of-threads
-  openmp-environment-variables/ompmaxactivelevels-set-the-maximum-number-of-nested-parallel-regions
-  openmp-environment-variables/ompmaxtaskpriority-set-the-maximum-priority
-  openmp-environment-variables/ompnested-nested-parallel-regions
-  openmp-environment-variables/ompnumthreads-specifies-the-number-of-threads-to-use
-  openmp-environment-variables/ompprocbind-whether-theads-may-be-moved-between-cpus
-  openmp-environment-variables/ompplaces-specifies-on-which-cpus-the-theads-should-be-placed
-  openmp-environment-variables/ompstacksize-set-default-thread-stack-size
-  openmp-environment-variables/ompschedule-how-threads-are-scheduled
-  openmp-environment-variables/omptargetoffload-controls-offloading-behaviour
-  openmp-environment-variables/ompthreadlimit-set-the-maximum-number-of-threads
-  openmp-environment-variables/ompwaitpolicy-how-waiting-threads-are-handled
-  openmp-environment-variables/gompcpuaffinity-bind-threads-to-specific-cpus
-  openmp-environment-variables/gompdebug-enable-debugging-output
-  openmp-environment-variables/gompstacksize-set-default-thread-stack-size
-  openmp-environment-variables/gompspincount-set-the-busy-wait-spin-count
-  openmp-environment-variables/gomprtemsthreadpools-set-the-rtems-specific-thread-pools
+  openmp-environment-variables/ompcancellation
+  openmp-environment-variables/ompdisplayenv
+  openmp-environment-variables/ompdefaultdevice
+  openmp-environment-variables/ompdynamic
+  openmp-environment-variables/ompmaxactivelevels
+  openmp-environment-variables/ompmaxtaskpriority
+  openmp-environment-variables/ompnested
+  openmp-environment-variables/ompnumthreads
+  openmp-environment-variables/ompprocbind
+  openmp-environment-variables/ompplaces
+  openmp-environment-variables/ompstacksize
+  openmp-environment-variables/ompschedule
+  openmp-environment-variables/omptargetoffload
+  openmp-environment-variables/ompthreadlimit
+  openmp-environment-variables/ompwaitpolicy
+  openmp-environment-variables/gompcpuaffinity
+  openmp-environment-variables/gompdebug
+  openmp-environment-variables/gompstacksize
+  openmp-environment-variables/gompspincount
+  openmp-environment-variables/gomprtemsthreadpools
 

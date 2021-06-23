@@ -13,6 +13,5 @@ I/O Library Routines
 
   strtoflt128
   quadmath_snprintf
-  strtoflt128-convert-from-string
-  quadmathsnprintf-convert-to-string
+  quadmathsnprintf
 
