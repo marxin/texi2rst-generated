@@ -15,6 +15,7 @@ package documentation, see http://dlang.org/.
 .. toctree::
   :maxdepth: 2
 
+  copyright
   invoking-gdc
   general-public-license-3
   gnu-free-documentation-license

@@ -42,3 +42,7 @@ Options
   invoking-gdc/warnings
   invoking-gdc/options-for-linking
   invoking-gdc/developer-options
+
+.. only:: man
+
+  .. include:: ../share/copyright.rst
