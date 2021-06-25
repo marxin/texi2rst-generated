@@ -6,15 +6,17 @@
 Welcome to gdc documentation!
 ===============================
 
-Contents:
+This manual describes how to use :command:`gdc`, the GNU compiler for
+the D programming language.  This manual is specifically about
+:command:`gdc`.  For more information about the D programming
+language in general, including language specifications and standard
+package documentation, see http://dlang.org/.
 
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 2
 
-   gdc.rst
+  invoking-gdc
+  general-public-license-3
+  gnu-free-documentation-license
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
+  option-index

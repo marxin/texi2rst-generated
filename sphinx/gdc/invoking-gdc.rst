@@ -29,6 +29,9 @@ The :command:`gdc` command is the GNU compiler for the D language and
 supports many of the same options as :command:`gcc`.  See :ref:`Option Summary <option-summary>`.
 This manual only documents the options specific to :command:`gdc`.
 
+Options
+^^^^^^^
+
 .. toctree::
   :maxdepth: 2
 
@@ -39,7 +42,3 @@ This manual only documents the options specific to :command:`gdc`.
   invoking-gdc/warnings
   invoking-gdc/options-for-linking
   invoking-gdc/developer-options
-
-Options
-^^^^^^^
-
