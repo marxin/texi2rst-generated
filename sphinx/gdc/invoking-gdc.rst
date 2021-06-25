@@ -8,17 +8,19 @@
 Invoking gdc
 ------------
 
-Synopsis
-^^^^^^^^
+.. only:: man
 
-gdc [ :option:`-c` | :option:`-S` ] [ :option:`-g` ] [ :option:`-pg` ]
-    [ :option:`-O`:samp:`{level}` ] [ :option:`-W`:samp:`{warn}`...]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-    [ :option:`-f`:samp:`{option}`...] [ :option:`-m`:samp:`{machine-option}`...]
-    [ :option:`-o` :samp:`{outfile}` ] [@ :samp:`{file}` ] :samp:`{infile}`...
+  Synopsis
+  ^^^^^^^^
 
-Only the most useful options are listed here; see below for the
-remainder.
+  gdc [ :option:`-c` | :option:`-S` ] [ :option:`-g` ] [ :option:`-pg` ]
+      [ :option:`-O`:samp:`{level}` ] [ :option:`-W`:samp:`{warn}`...]
+      [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+      [ :option:`-f`:samp:`{option}`...] [ :option:`-m`:samp:`{machine-option}`...]
+      [ :option:`-o` :samp:`{outfile}` ] [@ :samp:`{file}` ] :samp:`{infile}`...
+
+  Only the most useful options are listed here; see below for the
+  remainder.
 
 Description
 ^^^^^^^^^^^
