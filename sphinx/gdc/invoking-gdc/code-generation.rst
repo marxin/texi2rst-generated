@@ -34,7 +34,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   .. index:: -Hf
 
   Same as :option:`-H` but writes interface files to :samp:`{file}`.  This option can
-  be used with :option:`-Hd `:samp:`{dir}` to independently set the output file and
+  be used with :option:`-Hd` :samp:`{dir}` to independently set the output file and
   directory path.
 
 ``-M``
@@ -95,7 +95,7 @@ In addition to the many :command:`gcc` options controlling code generation,
 
   .. index:: -MD
 
-  This option is equivalent to :option:`-M -MF `:samp:`{file}`.  The driver
+  This option is equivalent to :option:`-M -MF` :samp:`{file}`.  The driver
   determines :samp:`{file}` by removing any directory components and suffix
   from the input file, and then adding a :samp:`.deps` suffix.
 
