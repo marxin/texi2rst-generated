@@ -1,0 +1,20 @@
+..
+  Copyright 1988-2021 Free Software Foundation, Inc.
+  This is part of the GCC manual.
+  For copying conditions, see the GPL license file
+
+Welcome to gdc documentation!
+===============================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   gdc.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
