@@ -24,7 +24,7 @@ compilation is done.  The following kinds of input file names are supported:
 :samp:`{file}.di`
   D interface files.
 
-  You can specify more than one input file on the :command:`gdc` command line,
+You can specify more than one input file on the :command:`gdc` command line,
 each being compiled separately in the compilation process.  If you specify a
 ``-o file`` option, all the input files are compiled together,
 producing a single output file, named :samp:`{file}`.  This is allowed even

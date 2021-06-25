@@ -32,13 +32,11 @@ This manual only documents the options specific to :command:`gdc`.
 
   invoking-gdc/input-and-output-files
   invoking-gdc/runtime-options
-  invoking-gdc/directory-options
+  invoking-gdc/options-for-directory-search
   invoking-gdc/code-generation
   invoking-gdc/warnings
-  invoking-gdc/linking
-  invoking-gdc/developer-options
-  invoking-gdc/options-for-directory-search
   invoking-gdc/options-for-linking
+  invoking-gdc/developer-options
 
 Options
 ^^^^^^^

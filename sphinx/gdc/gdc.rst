@@ -22,10 +22,3 @@ package documentation, see http://dlang.org/.
   general-public-license-3
   gnu-free-documentation-license
   invoking-gdc
-  index
-
-  .. _index:
-
-Index
-=====
-

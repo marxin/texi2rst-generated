@@ -72,7 +72,7 @@ These options affect the runtime behavior of programs compiled with
   function in the ``core.stdc`` package is a built-in function.
 
   ``-fdebug``
-:samp:`-fdebug={value}`
+  :samp:`-fdebug={value}`
 
   .. index:: -fdebug
 
