@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _alternatives-to-wrapper-#ifndef:
+.. _alternatives-to-wrapper-ifndef:
 
 Alternatives to Wrapper #ifndef
 *******************************
