@@ -51,9 +51,9 @@ underscores in header file names, and at most one dot.
   header-files/include-operation
   header-files/search-path
   header-files/once-only-headers
-  header-files/alternatives-to-wrapper-ifndef
+  header-files/alternatives-to-wrapper-#ifndef
   header-files/computed-includes
   header-files/wrapper-headers
   header-files/system-headers
-  header-files/alternatives-to-wrapper-#ifndef
+  header-files/alternatives-to-wrapper-ifndef
 
