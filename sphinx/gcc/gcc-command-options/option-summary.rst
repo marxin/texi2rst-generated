@@ -298,6 +298,7 @@ in the following sections.
   See :ref:`Options for Debugging Your Program <debugging-options>`.
 
   :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` 
+  :option:`-gbtf` :option:`-gctf`  :option:`-gctf`:samp:`{level}` 
   :option:`-ggdb`  :option:`-grecord-gcc-switches`  :option:`-gno-record-gcc-switches` 
   :option:`-gstabs`  :option:`-gstabs+`  :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` 
   :option:`-gas-loc-support`  :option:`-gno-as-loc-support` 
