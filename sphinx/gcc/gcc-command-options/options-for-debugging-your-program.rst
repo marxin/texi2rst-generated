@@ -13,7 +13,9 @@ Options for Debugging Your Program
 .. index:: debugging information options
 
 To tell GCC to emit extra information for use by a debugger, in almost 
-all cases you need only to add :option:`-g` to your other options.
+all cases you need only to add :option:`-g` to your other options.  Some debug
+formats can co-exist (like DWARF with CTF) when each of them is enabled
+explicitly by adding the respective command line option to your other options.
 
 GCC allows you to use :option:`-g` with
 :option:`-O`.  The shortcuts taken by optimized code may occasionally
@@ -71,6 +73,32 @@ information useful for debugging do not run at all, so that
   other DWARF-related options such as
   :option:`-fno-dwarf2-cfi-asm` ) retain a reference to DWARF Version 2
   in their names, but apply to all currently-supported versions of DWARF.
+
+.. option:: -gbtf
+
+  Request BTF debug information.  BTF is the default debugging format for the
+  eBPF target.  On other targets, like x86, BTF debug information can be
+  generated along with DWARF debug information when both of the debug formats are
+  enabled explicitly via their respective command line options.
+
+.. option:: -gctf, -gctflevel
+
+  Request CTF debug information and use level to specify how much CTF debug
+  information should be produced.  If :option:`-gctf` is specified
+  without a value for level, the default level of CTF debug information is 2.
+
+  CTF debug information can be generated along with DWARF debug information when
+  both of the debug formats are enabled explicitly via their respective command
+  line options.
+
+  Level 0 produces no CTF debug information at all.  Thus, :option:`-gctf0`
+  negates :option:`-gctf`.
+
+  Level 1 produces CTF information for tracebacks only.  This includes callsite
+  information, but does not include type information.
+
+  Level 2 produces type information for entities (functions, data objects etc.)
+  at file-scope or global-scope only.
 
 .. option:: -gstabs
 
