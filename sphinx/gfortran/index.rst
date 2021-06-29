@@ -40,4 +40,5 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
   general-public-license-3
   gnu-free-documentation-license
   funding
-  option-index
+
+  indices-and-tables

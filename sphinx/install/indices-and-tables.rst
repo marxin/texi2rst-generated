@@ -1,6 +1,1 @@
-.. only:: html
-
-  Indices and tables
-  ==================
-
-  :ref:`genindex`
+.. include:: ../share/indices-and-tables.rst

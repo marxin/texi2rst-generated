@@ -36,4 +36,4 @@ Contents:
   gnu-free-documentation-license
   contributors-to-gcc
 
-  option-index
+  indices-and-tables

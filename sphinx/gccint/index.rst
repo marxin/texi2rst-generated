@@ -71,4 +71,4 @@ Contents:
   general-public-license-3
   gnu-free-documentation-license
 
-  option-index
+  indices-and-tables

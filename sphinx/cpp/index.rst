@@ -31,4 +31,4 @@ Contents:
   environment-variables
   gnu-free-documentation-license
 
-  option-index
+  indices-and-tables
