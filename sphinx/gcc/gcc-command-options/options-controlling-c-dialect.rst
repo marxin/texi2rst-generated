@@ -191,47 +191,6 @@ accepts:
     and will almost certainly change in incompatible ways in future
     releases.
 
-.. option:: -fgnu89-inline
-
-  The option :option:`-fgnu89-inline` tells GCC to use the traditional
-  GNU semantics for ``inline`` functions when in C99 mode.
-  See :ref:`An Inline Function is As Fast As a Macro <inline>`.
-  Using this option is roughly equivalent to adding the
-  ``gnu_inline`` function attribute to all inline functions
-  (see :ref:`function-attributes`).
-
-  The option :option:`-fno-gnu89-inline` explicitly tells GCC to use the
-  C99 semantics for ``inline`` when in C99 or gnu99 mode (i.e., it
-  specifies the default behavior).
-  This option is not supported in :option:`-std`:samp:`=c90` or
-  :option:`-std`:samp:`=gnu90` mode.
-
-  The preprocessor macros ``__GNUC_GNU_INLINE__`` and
-  ``__GNUC_STDC_INLINE__`` may be used to check which semantics are
-  in effect for ``inline`` functions.  See :ref:`common-predefined-macros`.
-
-.. option:: -fpermitted-flt-eval-methods=style
-
-  ISO/IEC TS 18661-3 defines new permissible values for
-  ``FLT_EVAL_METHOD`` that indicate that operations and constants with
-  a semantic type that is an interchange or extended format should be
-  evaluated to the precision and range of that type.  These new values are
-  a superset of those permitted under C99/C11, which does not specify the
-  meaning of other positive values of ``FLT_EVAL_METHOD``.  As such, code
-  conforming to C11 may not have been written expecting the possibility of
-  the new values.
-
-  :option:`-fpermitted-flt-eval-methods` specifies whether the compiler
-  should allow only the values of ``FLT_EVAL_METHOD`` specified in C99/C11,
-  or the extended set of values specified in ISO/IEC TS 18661-3.
-
-  :samp:`{style}` is either ``c11`` or ``ts-18661-3`` as appropriate.
-
-  The default when in a standards compliant mode ( :option:`-std`:samp:`=c11` or similar)
-  is :option:`-fpermitted-flt-eval-methods`:samp:`=c11`.  The default when in a GNU
-  dialect ( :option:`-std`:samp:`=gnu11` or similar) is
-  :option:`-fpermitted-flt-eval-methods`:samp:`=ts-18661-3`.
-
 .. option:: -aux-info filename
 
   Output to the given filename prototyped declarations for all functions
@@ -318,21 +277,11 @@ accepts:
 
   Default option value for :option:`-fno-builtin`.
 
-.. option:: -fgimple
+.. option:: -fcond-mismatch
 
-  Enable parsing of function definitions marked with ``__GIMPLE``.
-  This is an experimental feature that allows unit testing of GIMPLE
-  passes.
-
-.. option:: -fhosted
-
-  .. index:: hosted environment
-
-  Assert that compilation targets a hosted environment.  This implies
-  :option:`-fbuiltin`.  A hosted environment is one in which the
-  entire standard library is available, and in which ``main`` has a return
-  type of ``int``.  Examples are nearly everything except a kernel.
-  This is equivalent to :option:`-fno-freestanding`.
+  Allow conditional expressions with mismatched types in the second and
+  third arguments.  The value of such an expression is void.  This option
+  is not supported for C++.
 
 .. option:: -ffreestanding
 
@@ -346,6 +295,123 @@ accepts:
 
   See :ref:`Language Standards Supported by GCC <standards>`, for details of
   freestanding and hosted environments.
+
+.. option:: -fgimple
+
+  Enable parsing of function definitions marked with ``__GIMPLE``.
+  This is an experimental feature that allows unit testing of GIMPLE
+  passes.
+
+.. option:: -fgnu-tm
+
+  When the option :option:`-fgnu-tm` is specified, the compiler
+  generates code for the Linux variant of Intel's current Transactional
+  Memory ABI specification document (Revision 1.1, May 6 2009).  This is
+  an experimental feature whose interface may change in future versions
+  of GCC, as the official specification changes.  Please note that not
+  all architectures are supported for this feature.
+
+  For more information on GCC's support for transactional memory,
+  See :ref:`The GNU Transactional Memory Library <enabling-libitm>`.
+
+  Note that the transactional memory feature is not supported with
+  non-call exceptions ( :option:`-fnon-call-exceptions` ).
+
+.. option:: -fgnu89-inline
+
+  The option :option:`-fgnu89-inline` tells GCC to use the traditional
+  GNU semantics for ``inline`` functions when in C99 mode.
+  See :ref:`An Inline Function is As Fast As a Macro <inline>`.
+  Using this option is roughly equivalent to adding the
+  ``gnu_inline`` function attribute to all inline functions
+  (see :ref:`function-attributes`).
+
+  The option :option:`-fno-gnu89-inline` explicitly tells GCC to use the
+  C99 semantics for ``inline`` when in C99 or gnu99 mode (i.e., it
+  specifies the default behavior).
+  This option is not supported in :option:`-std`:samp:`=c90` or
+  :option:`-std`:samp:`=gnu90` mode.
+
+  The preprocessor macros ``__GNUC_GNU_INLINE__`` and
+  ``__GNUC_STDC_INLINE__`` may be used to check which semantics are
+  in effect for ``inline`` functions.  See :ref:`common-predefined-macros`.
+
+.. option:: -fhosted
+
+  .. index:: hosted environment
+
+  Assert that compilation targets a hosted environment.  This implies
+  :option:`-fbuiltin`.  A hosted environment is one in which the
+  entire standard library is available, and in which ``main`` has a return
+  type of ``int``.  Examples are nearly everything except a kernel.
+  This is equivalent to :option:`-fno-freestanding`.
+
+.. option:: -flax-vector-conversions
+
+  Allow implicit conversions between vectors with differing numbers of
+  elements and/or incompatible element types.  This option should not be
+  used for new code.
+
+.. option:: -fms-extensions
+
+  Accept some non-standard constructs used in Microsoft header files.
+
+  In C++ code, this allows member names in structures to be similar
+  to previous types declarations.
+
+  .. code-block:: c++
+
+    typedef int UOW;
+    struct ABC {
+      UOW UOW;
+    };
+
+  Some cases of unnamed fields in structures and unions are only
+  accepted with this option.  See :ref:`Unnamed struct/union
+  fields within structs/unions <unnamed-fields>`, for details.
+
+  Note that this option is off for all targets except for x86
+  targets using ms-abi.
+
+.. option:: -foffload=disable
+
+  .. index:: Offloading targets
+
+  .. index:: OpenACC offloading targets
+
+  .. index:: OpenMP offloading targets
+
+  Specify for which OpenMP and OpenACC offload targets code should be generated.
+  The default behavior, equivalent to :option:`-foffload`:samp:`=default`, is to generate
+  code for all supported offload targets.  The :option:`-foffload`:samp:`=disable` form
+  generates code only for the host fallback, while
+  :option:`-foffload`:samp:`={target-list}` generates code only for the specified
+  comma-separated list of offload targets.
+
+  Offload targets are specified in GCC's internal target-triplet format. You can
+  run the compiler with :option:`-v` to show the list of configured offload targets
+  under ``OFFLOAD_TARGET_NAMES``.
+
+.. option:: -foffload-options=options
+
+  .. index:: Offloading options
+
+  .. index:: OpenACC offloading options
+
+  .. index:: OpenMP offloading options
+
+  With :option:`-foffload-options`:samp:`={options}`, GCC passes the specified
+  :samp:`{options}` to the compilers for all enabled offloading targets.  You can
+  specify options that apply only to a specific target or targets by using
+  the :option:`-foffload-options`:samp:`={target-list}` = :samp:`{options}` form.  The
+  :samp:`{target-list}` is a comma-separated list in the same format as for the
+  :option:`-foffload` = option.
+
+  Typical command lines are
+
+  :option:`-foffload-options`:samp:`=-lgfortran` :option:`-foffload-options`:samp:`=-lm`
+  :option:`-foffload-options`:samp:`="-lgfortran` :option:`-lm"` :option:`-foffload-options`:samp:`=nvptx-none=-latomic`
+  :option:`-foffload-options`:samp:`=amdgcn-amdhsa=-march=gfx906` :option:`-foffload-options`:samp:`=-lm`
 
 .. option:: -fopenacc
 
@@ -389,41 +455,27 @@ accepts:
   in C/C++ and ``!$omp`` in Fortran. Other OpenMP directives
   are ignored.
 
-.. option:: -fgnu-tm
+.. option:: -fpermitted-flt-eval-methods=style
 
-  When the option :option:`-fgnu-tm` is specified, the compiler
-  generates code for the Linux variant of Intel's current Transactional
-  Memory ABI specification document (Revision 1.1, May 6 2009).  This is
-  an experimental feature whose interface may change in future versions
-  of GCC, as the official specification changes.  Please note that not
-  all architectures are supported for this feature.
+  ISO/IEC TS 18661-3 defines new permissible values for
+  ``FLT_EVAL_METHOD`` that indicate that operations and constants with
+  a semantic type that is an interchange or extended format should be
+  evaluated to the precision and range of that type.  These new values are
+  a superset of those permitted under C99/C11, which does not specify the
+  meaning of other positive values of ``FLT_EVAL_METHOD``.  As such, code
+  conforming to C11 may not have been written expecting the possibility of
+  the new values.
 
-  For more information on GCC's support for transactional memory,
-  See :ref:`The GNU Transactional Memory Library <enabling-libitm>`.
+  :option:`-fpermitted-flt-eval-methods` specifies whether the compiler
+  should allow only the values of ``FLT_EVAL_METHOD`` specified in C99/C11,
+  or the extended set of values specified in ISO/IEC TS 18661-3.
 
-  Note that the transactional memory feature is not supported with
-  non-call exceptions ( :option:`-fnon-call-exceptions` ).
+  :samp:`{style}` is either ``c11`` or ``ts-18661-3`` as appropriate.
 
-.. option:: -fms-extensions
-
-  Accept some non-standard constructs used in Microsoft header files.
-
-  In C++ code, this allows member names in structures to be similar
-  to previous types declarations.
-
-  .. code-block:: c++
-
-    typedef int UOW;
-    struct ABC {
-      UOW UOW;
-    };
-
-  Some cases of unnamed fields in structures and unions are only
-  accepted with this option.  See :ref:`Unnamed struct/union
-  fields within structs/unions <unnamed-fields>`, for details.
-
-  Note that this option is off for all targets except for x86
-  targets using ms-abi.
+  The default when in a standards compliant mode ( :option:`-std`:samp:`=c11` or similar)
+  is :option:`-fpermitted-flt-eval-methods`:samp:`=c11`.  The default when in a GNU
+  dialect ( :option:`-std`:samp:`=gnu11` or similar) is
+  :option:`-fpermitted-flt-eval-methods`:samp:`=ts-18661-3`.
 
 .. option:: -fplan9-extensions
 
@@ -436,17 +488,20 @@ accepts:
   struct/union fields within structs/unions <unnamed-fields>`, for details.  This is only
   supported for C, not C++.
 
-.. option:: -fcond-mismatch
+.. option:: -fsigned-bitfields, -funsigned-bitfields, -fno-signed-bitfields, -fno-unsigned-bitfields
 
-  Allow conditional expressions with mismatched types in the second and
-  third arguments.  The value of such an expression is void.  This option
-  is not supported for C++.
+  These options control whether a bit-field is signed or unsigned, when the
+  declaration does not use either ``signed`` or ``unsigned``.  By
+  default, such a bit-field is signed, because this is consistent: the
+  basic integer types such as ``int`` are signed types.
 
-.. option:: -flax-vector-conversions
+.. option:: -fsigned-char
 
-  Allow implicit conversions between vectors with differing numbers of
-  elements and/or incompatible element types.  This option should not be
-  used for new code.
+  Let the type ``char`` be signed, like ``signed char``.
+
+  Note that this is equivalent to :option:`-fno-unsigned-char`, which is
+  the negative form of :option:`-funsigned-char`.  Likewise, the option
+  :option:`-fno-signed-char` is equivalent to :option:`-funsigned-char`.
 
 .. option:: -funsigned-char
 
@@ -466,21 +521,6 @@ accepts:
   The type ``char`` is always a distinct type from each of
   ``signed char`` or ``unsigned char``, even though its behavior
   is always just like one of those two.
-
-.. option:: -fsigned-char
-
-  Let the type ``char`` be signed, like ``signed char``.
-
-  Note that this is equivalent to :option:`-fno-unsigned-char`, which is
-  the negative form of :option:`-funsigned-char`.  Likewise, the option
-  :option:`-fno-signed-char` is equivalent to :option:`-funsigned-char`.
-
-.. option:: -fsigned-bitfields, -funsigned-bitfields, -fno-signed-bitfields, -fno-unsigned-bitfields
-
-  These options control whether a bit-field is signed or unsigned, when the
-  declaration does not use either ``signed`` or ``unsigned``.  By
-  default, such a bit-field is signed, because this is consistent: the
-  basic integer types such as ``int`` are signed types.
 
 .. option:: -fsso-struct=endianness
 
