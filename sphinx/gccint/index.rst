@@ -11,8 +11,8 @@ Contents:
 .. toctree::
   :maxdepth: 1
 
-  introduction
   copyright
+  introduction
   contributing-to-gcc-development
   gcc-and-portability
   interfacing-to-gcc-output

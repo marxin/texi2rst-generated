@@ -6,19 +6,13 @@
 Welcome to libiberty documentation!
 ===================================
 
-Introduction
-============
-
-The ``libiberty`` library is a collection of subroutines used by various
-GNU programs.  It is available under the Library General Public
-License; for more information, see Library Copying.
-
 Contents:
 
 .. toctree::
   :maxdepth: 1
 
   copyright
+  introduction
   using
   overview
   function-variable-and-macro-listing
