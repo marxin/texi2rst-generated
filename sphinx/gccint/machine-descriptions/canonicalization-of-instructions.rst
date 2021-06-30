@@ -34,18 +34,17 @@ are performed:
   ``umax`` are associative when applied to integers, and sometimes to
   floating-point.
 
-* 
-  .. index:: neg, canonicalization of
+.. index:: neg, canonicalization of
 
-  .. index:: not, canonicalization of
+.. index:: not, canonicalization of
 
-  .. index:: mult, canonicalization of
+.. index:: mult, canonicalization of
 
-  .. index:: plus, canonicalization of
+.. index:: plus, canonicalization of
 
-  .. index:: minus, canonicalization of
+.. index:: minus, canonicalization of
 
-  For these operators, if only one operand is a ``neg``, ``not``,
+* For these operators, if only one operand is a ``neg``, ``not``,
   ``mult``, ``plus``, or ``minus`` expression, it will be the
   first operand.
 

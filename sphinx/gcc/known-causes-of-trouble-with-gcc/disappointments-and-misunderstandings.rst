@@ -74,10 +74,9 @@ way around them.
   :command:`mkheaders` script installed in
   :samp:`{libexecdir}/gcc/{target}/{version}/install-tools/`.
 
-* 
-  .. index:: floating point precision
+.. index:: floating point precision
 
-  On 68000 and x86 systems, for instance, you can get paradoxical results
+* On 68000 and x86 systems, for instance, you can get paradoxical results
   if you test the precise values of floating point numbers.  For example,
   you can find that a floating point value which is not a NaN is not equal
   to itself.  This results from the fact that the floating point registers

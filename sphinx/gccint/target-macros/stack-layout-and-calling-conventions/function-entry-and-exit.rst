@@ -183,10 +183,9 @@ This section describes the macros that output function entry
   this region and the save area may occur in the opposite order, with the
   save area closer to the top of the stack.
 
-* 
-  .. index:: ACCUMULATE_OUTGOING_ARGS and stack frames
+.. index:: ACCUMULATE_OUTGOING_ARGS and stack frames
 
-  Optionally, when ``ACCUMULATE_OUTGOING_ARGS`` is defined, a region of
+* Optionally, when ``ACCUMULATE_OUTGOING_ARGS`` is defined, a region of
   ``crtl->outgoing_args_size`` bytes to be used for outgoing
   argument lists of the function.  See :ref:`stack-arguments`.
 
