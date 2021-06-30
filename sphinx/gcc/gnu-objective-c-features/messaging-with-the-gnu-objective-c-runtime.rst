@@ -17,7 +17,7 @@ designed to be portable, and so is based on standard C.
 Sending a message in the GNU Objective-C runtime is composed of two
 separate steps.  First, there is a call to the lookup function,
 ``objc_msg_lookup ()`` (or, in the case of messages to super,
-``objc_msg_lookup_super ()`` ).  This runtime function takes as
+``objc_msg_lookup_super ()``).  This runtime function takes as
 argument the receiver and the selector of the method to be called; it
 returns the ``IMP``, that is a pointer to the function implementing
 the method.  The second step of method invocation consists of casting
@@ -67,15 +67,15 @@ dynamically by ``+resolveInstanceMethod:`` or
 ``+resolveClassMethod:``.
 
 This allows classes to dynamically register methods (by adding them to
-the class using ``class_addMethod`` ) when they are first called.
+the class using ``class_addMethod``) when they are first called.
 To do so, a class should implement ``+resolveInstanceMethod:`` (or,
-depending on the case, ``+resolveClassMethod:`` ) and have it
+depending on the case, ``+resolveClassMethod:``) and have it
 recognize the selectors of methods that can be registered dynamically
 at runtime, register them, and return ``YES``.  It should return
 ``NO`` for methods that it does not dynamically registered at
 runtime.
 
-If ``+resolveInstanceMethod:`` (or ``+resolveClassMethod:`` ) is
+If ``+resolveInstanceMethod:`` (or ``+resolveClassMethod:``) is
 not implemented or returns ``NO``, the runtime then tries the
 forwarding hook.
 
@@ -125,12 +125,12 @@ The forwarding method implementation thus created is returned by
 implementation.  When the forwarding method implementation is called,
 it is usually expected to pack all arguments into some sort of object
 (typically, an ``NSInvocation`` in a 'Foundation' library), and
-hand it over to the programmer ( ``forwardInvocation:`` ) who is then
+hand it over to the programmer (``forwardInvocation:``) who is then
 allowed to manipulate the method invocation using a high-level API
 provided by the 'Foundation' library.  For example, the programmer
 may want to examine the method invocation arguments and name and
 potentially change them before forwarding the method invocation to one
-or more local objects ( ``performInvocation:`` ) or even to remote
+or more local objects (``performInvocation:``) or even to remote
 objects (by using Distributed Objects or some other mechanism).  When
 all this completes, the return value is passed back and must be
 returned correctly to the original caller.

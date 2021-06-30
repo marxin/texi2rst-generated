@@ -34,7 +34,7 @@ This is about outputting labels.
   definition of this macro is provided which is correct for most systems.
 
   If this macro is not defined, then the function name is defined in the
-  usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
+  usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
 
 .. index:: assemble_name_raw
 
@@ -135,11 +135,11 @@ This is about outputting labels.
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
   function which is being defined.  This macro is responsible for
   outputting the label definition (perhaps using
-  ``ASM_OUTPUT_FUNCTION_LABEL`` ).  The argument :samp:`{decl}` is the
+  ``ASM_OUTPUT_FUNCTION_LABEL``).  The argument :samp:`{decl}` is the
   ``FUNCTION_DECL`` tree node representing the function.
 
   If this macro is not defined, then the function name is defined in the
-  usual manner as a label (by means of ``ASM_OUTPUT_FUNCTION_LABEL`` ).
+  usual manner as a label (by means of ``ASM_OUTPUT_FUNCTION_LABEL``).
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
   of this macro.
@@ -163,11 +163,11 @@ This is about outputting labels.
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of a
   cold function partition which is being defined.  This macro is responsible
   for outputting the label definition (perhaps using
-  ``ASM_OUTPUT_FUNCTION_LABEL`` ).  The argument :samp:`{decl}` is the
+  ``ASM_OUTPUT_FUNCTION_LABEL``).  The argument :samp:`{decl}` is the
   ``FUNCTION_DECL`` tree node representing the function.
 
   If this macro is not defined, then the cold partition name is defined in the
-  usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
+  usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in the definition
   of this macro.
@@ -190,11 +190,11 @@ This is about outputting labels.
   A C statement (sans semicolon) to output to the stdio stream
   :samp:`{stream}` any text necessary for declaring the name :samp:`{name}` of an
   initialized variable which is being defined.  This macro must output the
-  label definition (perhaps using ``ASM_OUTPUT_LABEL`` ).  The argument
+  label definition (perhaps using ``ASM_OUTPUT_LABEL``).  The argument
   :samp:`{decl}` is the ``VAR_DECL`` tree node representing the variable.
 
   If this macro is not defined, then the variable name is defined in the
-  usual manner as a label (by means of ``ASM_OUTPUT_LABEL`` ).
+  usual manner as a label (by means of ``ASM_OUTPUT_LABEL``).
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` and/or
   ``ASM_OUTPUT_SIZE_DIRECTIVE`` in the definition of this macro.
@@ -206,12 +206,12 @@ This is about outputting labels.
   A target hook to output to the stdio stream :samp:`{file}` any text necessary
   for declaring the name :samp:`{name}` of a constant which is being defined.  This
   target hook is responsible for outputting the label definition (perhaps using
-  ``assemble_label`` ).  The argument :samp:`{exp}` is the value of the constant,
+  ``assemble_label``).  The argument :samp:`{exp}` is the value of the constant,
   and :samp:`{size}` is the size of the constant in bytes.  The :samp:`{name}`
   will be an internal label.
 
   The default version of this target hook, define the :samp:`{name}` in the
-  usual manner as a label (by means of ``assemble_label`` ).
+  usual manner as a label (by means of ``assemble_label``).
 
   You may wish to use ``ASM_OUTPUT_TYPE_DIRECTIVE`` in this target hook.
 
@@ -497,7 +497,7 @@ This is about outputting labels.
 .. c:macro:: ASM_FORMAT_PRIVATE_NAME (outvar, name, number)
 
   A C expression to assign to :samp:`{outvar}` (which is a variable of type
-  ``char *`` ) a newly allocated string made from the string
+  ``char *``) a newly allocated string made from the string
   :samp:`{name}` and the number :samp:`{number}`, with some suitable punctuation
   added.  Use ``alloca`` to get space for the string.
 

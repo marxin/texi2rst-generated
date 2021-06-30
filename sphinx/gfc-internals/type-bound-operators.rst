@@ -13,7 +13,7 @@ bindings and are represented much in the same way as those (see
 Type-bound Procedures).
 
 They come in two flavours:
-User-defined operators (like ``.MYOPERATOR.`` )
+User-defined operators (like ``.MYOPERATOR.``)
 are stored in the ``f2k_derived`` namespace's ``tb_uop_root``
 symtree exactly like ordinary type-bound procedures are stored in
 ``tb_sym_root`` ; their symtrees' names are the operator-names (e.g.

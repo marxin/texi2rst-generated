@@ -56,7 +56,7 @@ follows:
 
 But this definition computes either :samp:`{a}` or :samp:`{b}` twice, with bad
 results if the operand has side effects.  In GNU C, if you know the
-type of the operands (here taken as ``int`` ), you can avoid this
+type of the operands (here taken as ``int``), you can avoid this
 problem by defining the macro as follows:
 
 .. code-block:: c++
@@ -64,7 +64,7 @@ problem by defining the macro as follows:
   #define maxint(a,b) \
     ({int _a = (a), _b = (b); _a > _b ? _a : _b; })
 
-Note that introducing variable declarations (as we do in ``maxint`` ) can
+Note that introducing variable declarations (as we do in ``maxint``) can
 cause variable shadowing, so while this example using the ``max`` macro
 produces correct results:
 

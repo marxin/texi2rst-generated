@@ -67,7 +67,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   that the option and argument can be included in the same ``argv``
   entry (as with ``-mflush-func=name``, for example).
   ``Separate`` indicates that the option and argument can be
-  separate ``argv`` entries (as with ``-o`` ).  An option is
+  separate ``argv`` entries (as with ``-o``).  An option is
   allowed to have both of these properties.
 
 ``JoinedOrMissing``
@@ -139,7 +139,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`Var({var})`
   The state of this option should be stored in variable :samp:`{var}`
-  (actually a macro for ``global_options.x_var`` ).
+  (actually a macro for ``global_options.x_var``).
   The way that the state is stored depends on the type of option:
 
 ``WarnRemoved``
@@ -174,7 +174,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
   * If the option has the ``Defer`` property, :samp:`{var}` is a pointer to
     a ``VEC(cl_deferred_option,heap)`` that stores the option for later
-    processing.  ( :samp:`{var}` is declared with type ``void *`` and needs
+    processing.  (:samp:`{var}` is declared with type ``void *`` and needs
     to be cast to ``VEC(cl_deferred_option,heap)`` before use.)
 
   * Otherwise, if the option takes an argument, :samp:`{var}` is a pointer to
@@ -221,7 +221,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`Alias({opt})` :samp:`Alias({opt}, {arg})` :samp:`Alias({opt}, {posarg}, {negarg})`
   The option is an alias for :option:`-`:samp:`{opt}` (or the negative form
-  of that option, depending on ``NegativeAlias`` ).  In the first form,
+  of that option, depending on ``NegativeAlias``).  In the first form,
   any argument passed to the alias is considered to be passed to
   :option:`-`:samp:`{opt}`, and :option:`-`:samp:`{opt}` is considered to be
   negated if the alias is used in negated form.  In the second form, the
@@ -313,7 +313,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   :option:`-ffast-math`.  This causes the ``gcc_options`` struct to
   have a field ``frontend_set_name``, where ``name``
   is the name of the field holding the value of this option (without the
-  leading ``x_`` ).  This gives the front end a way to indicate that
+  leading ``x_``).  This gives the front end a way to indicate that
   the value has been set explicitly and should not be changed by the
   combined option.  For example, some front ends use this to prevent
   :option:`-ffast-math` and :option:`-fno-fast-math` from changing the

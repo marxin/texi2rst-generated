@@ -181,7 +181,7 @@ Here is the basic stack layout.
   A C expression whose value is an integer giving a DWARF 2 column
   number that may be used as an alternative return column.  The column
   must not correspond to any gcc hard register (that is, it must not
-  be in the range of ``DWARF_FRAME_REGNUM`` ).
+  be in the range of ``DWARF_FRAME_REGNUM``).
 
   This macro can be useful if ``DWARF_FRAME_RETURN_COLUMN`` is set to a
   general register, but an alternative column needs to be used for signal

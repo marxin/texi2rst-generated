@@ -524,7 +524,7 @@ The following options fine tune code generation:
 .. option:: -mno-brcc
 
   This option disables a target-specific pass in :samp:`arc_reorg` to
-  generate compare-and-branch ( ``brcc`` ) instructions.  
+  generate compare-and-branch (``brcc``) instructions.  
   It has no effect on
   generation of these instructions driven by the combiner pass.
 
@@ -574,7 +574,7 @@ The following options fine tune code generation:
 
   Enable Local Register Allocation.  This is still experimental for ARC,
   so by default the compiler uses standard reload
-  (i.e. :option:`-mno-lra` ).
+  (i.e. :option:`-mno-lra`).
 
 .. option:: -mlra-priority-none
 
@@ -590,7 +590,7 @@ The following options fine tune code generation:
 
 .. option:: -mmillicode
 
-  When optimizing for size (using :option:`-Os` ), prologues and epilogues
+  When optimizing for size (using :option:`-Os`), prologues and epilogues
   that have to save or restore a large number of registers are often
   shortened by using call to a special function in libgcc; this is
   referred to as a *millicode* call.  As these calls can pose

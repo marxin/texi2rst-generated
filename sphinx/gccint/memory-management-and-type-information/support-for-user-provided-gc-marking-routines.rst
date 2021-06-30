@@ -115,7 +115,7 @@ restrictions apply:
 * The pointer walker functions are different for ``TP<T>`` and
   ``TP<T *>``. In the case of ``TP<T>``, references to
   ``T`` must be handled by calling ``gt_pch_nx`` (which
-  will, in turn, walk all the pointers inside fields of ``T`` ).
+  will, in turn, walk all the pointers inside fields of ``T``).
   In the case of ``TP<T *>``, references to ``T *`` must be
   handled by calling the ``op`` function on the address of the
   pointer (see the code snippets above).

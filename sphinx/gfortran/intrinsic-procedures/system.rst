@@ -14,7 +14,7 @@ SYSTEM --- Execute a shell command
 
 .. function:: SYSTEM
 
-  Passes the command :samp:`{COMMAND}` to a shell (see ``system(3)`` ). If
+  Passes the command :samp:`{COMMAND}` to a shell (see ``system(3)``). If
   argument :samp:`{STATUS}` is present, it contains the value returned by
   ``system(3)``, which is presumably 0 if the shell command succeeded.
   Note that which shell is used to invoke the command is system-dependent

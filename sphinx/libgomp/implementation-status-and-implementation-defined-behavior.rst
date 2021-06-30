@@ -52,8 +52,8 @@ acc_prof_info.event_type
   It's not clear if for *nested* event callbacks (for example,
   ``acc_ev_enqueue_launch_start`` as part of a parent compute
   construct), this should be set for the nested event
-  ( ``acc_ev_enqueue_launch_start`` ), or if the value of the parent
-  construct should remain ( ``acc_ev_compute_construct_start`` ).  In
+  (``acc_ev_enqueue_launch_start``), or if the value of the parent
+  construct should remain (``acc_ev_compute_construct_start``).  In
   this implementation, the value will generally correspond to the
   innermost nested event type.
 

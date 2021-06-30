@@ -115,7 +115,7 @@ The following macros control mode switching optimizations:
   ``NUM_MODES_FOR_MODE_SWITCHING[entity] - 1`` the lowest.
   The value of the macro should be an integer designating a mode
   for :samp:`{entity}`.  For any fixed :samp:`{entity}`, ``mode_priority``
-  ( :samp:`{entity}`, :samp:`{n}` ) shall be a bijection in 0 ...
+  (:samp:`{entity}`, :samp:`{n}`) shall be a bijection in 0 ...
   ``num_modes_for_mode_switching[entity] - 1``.
 
 .. hook-end

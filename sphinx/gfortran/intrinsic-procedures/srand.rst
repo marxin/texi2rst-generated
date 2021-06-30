@@ -47,7 +47,7 @@ SRAND --- Reinitialize the random number generator
     generator and ``RANDOM_NUMBER`` to generate pseudo-random numbers.
     These subroutines should be used in new codes.
 
-    Please note that in GNU Fortran, these two sets of intrinsics ( ``RAND``,
+    Please note that in GNU Fortran, these two sets of intrinsics (``RAND``,
     ``IRAND`` and ``SRAND`` on the one hand, ``RANDOM_NUMBER`` and
     ``RANDOM_SEED`` on the other hand) access two independent
     pseudo-random number generators.

@@ -75,7 +75,7 @@ Register classes used for input-operands of bitwise-and or shift
 instructions have a special requirement: each such class must have, for
 each fixed-point machine mode, a subclass whose registers can transfer that
 mode to or from memory.  For example, on some machines, the operations for
-single-byte values ( ``QImode`` ) are limited to certain registers.  When
+single-byte values (``QImode``) are limited to certain registers.  When
 this is so, each register class that is used in a bitwise-and or shift
 instruction must have a subclass consisting of registers from which
 single-byte values can be loaded or stored.  This is so that
@@ -154,9 +154,9 @@ in many of the tables described below.
   base register for a memory reference in mode :samp:`{mode}` to address
   space :samp:`{address_space}` must belong.  :samp:`{outer_code}` and :samp:`{index_code}`
   define the context in which the base register occurs.  :samp:`{outer_code}` is
-  the code of the immediately enclosing expression ( ``MEM`` for the top level
+  the code of the immediately enclosing expression (``MEM`` for the top level
   of an address, ``ADDRESS`` for something that occurs in an
-  ``address_operand`` ).  :samp:`{index_code}` is the code of the corresponding
+  ``address_operand``).  :samp:`{index_code}` is the code of the corresponding
   index expression if :samp:`{outer_code}` is ``PLUS`` ; ``SCRATCH`` otherwise.
 
 .. c:macro:: INDEX_REG_CLASS
@@ -202,9 +202,9 @@ in many of the tables described below.
   This is similar to ``REGNO_MODE_OK_FOR_BASE_P``, except
   that that expression may examine the context in which the register
   appears in the memory reference.  :samp:`{outer_code}` is the code of the
-  immediately enclosing expression ( ``MEM`` if at the top level of the
+  immediately enclosing expression (``MEM`` if at the top level of the
   address, ``ADDRESS`` for something that occurs in an
-  ``address_operand`` ).  :samp:`{index_code}` is the code of the
+  ``address_operand``).  :samp:`{index_code}` is the code of the
   corresponding index expression if :samp:`{outer_code}` is ``PLUS`` ;
   ``SCRATCH`` otherwise.  The mode may be ``VOIDmode`` for addresses
   that appear outside a ``MEM``, i.e., as an ``address_operand``.
@@ -433,7 +433,7 @@ in many of the tables described below.
   Use ``true_regnum`` to find out; it will return -1 if the pseudo is
   in memory and the hard register number if it is in a register.
 
-  Scratch operands in memory (constraint ``"=m"`` / ``"=&m"`` ) are
+  Scratch operands in memory (constraint ``"=m"`` / ``"=&m"``) are
   currently not supported.  For the time being, you will have to continue
   to use ``TARGET_SECONDARY_MEMORY_NEEDED`` for that purpose.
 
@@ -490,7 +490,7 @@ in many of the tables described below.
   These patterns need constraints for the reload register and scratch
   register that
   contain a single register class.  If the original reload register (whose
-  class is :samp:`{class}` ) can meet the constraint given in the pattern, the
+  class is :samp:`{class}`) can meet the constraint given in the pattern, the
   value returned by these macros is used for the class of the scratch
   register.  Otherwise, two additional reload registers are required.
   Their classes are obtained from the constraints in the insn pattern.

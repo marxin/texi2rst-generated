@@ -213,7 +213,7 @@ Target makefile fragments can set these Makefile variables.
   :samp:`{prefix}` / :samp:`{multiarch}` before each directory in the library and
   crt search path.  It will also add two directories
   ``LOCAL_INCLUDE_DIR`` / :samp:`{multiarch}` and
-  ``NATIVE_SYSTEM_HEADER_DIR`` / :samp:`{multiarch}` ) to the system header
+  ``NATIVE_SYSTEM_HEADER_DIR`` / :samp:`{multiarch}`) to the system header
   search path, respectively before ``LOCAL_INCLUDE_DIR`` and
   ``NATIVE_SYSTEM_HEADER_DIR``.
 

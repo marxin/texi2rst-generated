@@ -20,7 +20,7 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
 
   :param DISTANCE:
     (optional, intent(in)) Nonnegative scalar integer
-    (not permitted together with :samp:`{COARRAY}` ).
+    (not permitted together with :samp:`{COARRAY}`).
 
   :param COARRAY:
     Coarray of any type  (optional; if :samp:`{DIM}`

@@ -101,7 +101,7 @@ must be placed into a register.
 
 :samp:`(fix:{m}{x})`
   When :samp:`{m}` is a floating-point mode, represents the result of
-  converting floating point value :samp:`{x}` (valid for mode :samp:`{m}` ) to an
+  converting floating point value :samp:`{x}` (valid for mode :samp:`{m}`) to an
   integer, still represented in floating point mode :samp:`{m}`, by rounding
   towards zero.
 

@@ -70,13 +70,13 @@ Data type sizes
   Target has ``short`` and ``int`` with the same size.
 
 ``ptr_eq_short``
-  Target has pointers ( ``void *`` ) and ``short`` with the same size.
+  Target has pointers (``void *``) and ``short`` with the same size.
 
 ``int_eq_float``
   Target has ``int`` and ``float`` with the same size.
 
 ``ptr_eq_long``
-  Target has pointers ( ``void *`` ) and ``long`` with the same size.
+  Target has pointers (``void *``) and ``long`` with the same size.
 
 ``large_double``
   Target supports ``double`` that is longer than ``float``.
@@ -122,11 +122,11 @@ Data type sizes
   ``_Floatnx`` type.
 
 ``inf``
-  Target supports floating point infinite ( ``inf`` ) for type
+  Target supports floating point infinite (``inf``) for type
   ``double``.
 
 ``inff``
-  Target supports floating point infinite ( ``inf`` ) for type
+  Target supports floating point infinite (``inf``) for type
   ``float``.
 
 Fortran-specific attributes
@@ -481,7 +481,7 @@ ARM-specific attributes
 ``arm_hf_eabi``
   ARM target adheres to the VFP and Advanced SIMD Register Arguments
   variant of the ABI for the ARM Architecture (as selected with
-  ``-mfloat-abi=hard`` ).
+  ``-mfloat-abi=hard``).
 
 ``arm_softfloat``
   ARM target uses emulated floating point operations.
@@ -808,10 +808,10 @@ MSP430-specific attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``msp430_small``
-  MSP430 target has the small memory model enabled ( ``-msmall`` ).
+  MSP430 target has the small memory model enabled (``-msmall``).
 
 ``msp430_large``
-  MSP430 target has the large memory model enabled ( ``-mlarge`` ).
+  MSP430 target has the large memory model enabled (``-mlarge``).
 
 PowerPC-specific attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1313,7 +1313,7 @@ Other attributes
   Target supports -lgccjit, i.e. libgccjit.so can be linked into jit tests.
 
 ``__OPTIMIZE__``
-  Optimizations are enabled ( ``__OPTIMIZE__`` ) per the current
+  Optimizations are enabled (``__OPTIMIZE__``) per the current
   compiler flags.
 
 Local to tests in gcc.target/i386

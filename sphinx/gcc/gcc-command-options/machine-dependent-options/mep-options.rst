@@ -35,9 +35,9 @@ MeP Options
 
 .. option:: -mbitops
 
-  Enables the bit operation instructions---bit test ( ``btstm`` ), set
-  ( ``bsetm`` ), clear ( ``bclrm`` ), invert ( ``bnotm`` ), and
-  test-and-set ( ``tas`` ).
+  Enables the bit operation instructions---bit test (``btstm``), set
+  (``bsetm``), clear (``bclrm``), invert (``bnotm``), and
+  test-and-set (``tas``).
 
 .. option:: -mc=name
 

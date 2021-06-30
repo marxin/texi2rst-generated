@@ -113,7 +113,7 @@ arm-\*-eabi
 ARM-family processors.
 
 Building the Ada frontend commonly fails (an infinite loop executing
-``xsinfo`` ) if the host compiler is GNAT 4.8.  Host compilers built from the
+``xsinfo``) if the host compiler is GNAT 4.8.  Host compilers built from the
 GNAT 4.6, 4.9 or 5 release branches are known to succeed.
 
 avr
@@ -780,7 +780,7 @@ MIPS systems check for division by zero (unless
 generating either a conditional trap or a break instruction.  Using
 trap results in smaller code, but is only supported on MIPS II and
 later.  Also, some versions of the Linux kernel have a bug that
-prevents trap from generating the proper signal ( ``SIGFPE`` ).  To enable
+prevents trap from generating the proper signal (``SIGFPE``).  To enable
 the use of break, use the :option:`--with-divide`:samp:`=breaks`
 :command:`configure` option when configuring GCC.  The default is to
 use traps on systems that support them.
@@ -1028,7 +1028,7 @@ build or cause memory corruption at runtime in some cases for C++ programs.
 GNU :command:`ld` usually works as well.  Again, the current
 version (2.34) is known to work, but generally lacks platform specific
 features, so better stay with Solaris :command:`ld`.  To use the LTO linker
-plugin ( :option:`-fuse-linker-plugin` ) with GNU :command:`ld`, GNU
+plugin (:option:`-fuse-linker-plugin`) with GNU :command:`ld`, GNU
 binutils *must* be configured with :option:`--enable-largefile`.
 
 To enable symbol versioning in :samp:`libstdc++` with the Solaris linker,

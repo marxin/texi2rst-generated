@@ -388,7 +388,7 @@ The files are created in the directory of the output file.
   that were not inlined.
 
   By default, the dump will contain messages about successful
-  optimizations (equivalent to :option:`-optimized` ) together with
+  optimizations (equivalent to :option:`-optimized`) together with
   low-level details about the analysis.
 
 .. option:: -fdump-lang
@@ -484,7 +484,7 @@ The files are created in the directory of the output file.
     Enable showing basic block boundaries (disabled in raw dumps).
 
   :samp:`graph`
-    For each of the other indicated dump files ( :option:`-fdump-rtl-`:samp:`{pass}` ),
+    For each of the other indicated dump files (:option:`-fdump-rtl-`:samp:`{pass}`),
     dump a representation of the control flow graph suitable for viewing with
     GraphViz to :samp:`{file}.{passid}.{pass}.dot`.  Each function in
     the file is pretty-printed as a subgraph, so that GraphViz can render them
@@ -500,7 +500,7 @@ The files are created in the directory of the output file.
     Enable showing line numbers for statements.
 
   :samp:`uid`
-    Enable showing the unique ID ( ``DECL_UID`` ) for each variable.
+    Enable showing the unique ID (``DECL_UID``) for each variable.
 
   :samp:`verbose`
     Enable showing the tree dump for each statement.
@@ -880,7 +880,7 @@ The files are created in the directory of the output file.
 .. option:: -fdump-final-insns[=file]
 
   Dump the final internal representation (RTL) to :samp:`{file}`.  If the
-  optional argument is omitted (or if :samp:`{file}` is ``.`` ), the name
+  optional argument is omitted (or if :samp:`{file}` is ``.``), the name
   of the dump file is determined by appending ``.gkd`` to the
   dump base name, see :option:`-dumpbase`.
 
@@ -968,7 +968,7 @@ The files are created in the directory of the output file.
   Prints a report with internal details on the workings of the link-time
   optimizer.  The contents of this report vary from version to version.
   It is meant to be useful to GCC developers when processing object
-  files in LTO mode (via :option:`-flto` ).
+  files in LTO mode (via :option:`-flto`).
 
   Disabled by default.
 
@@ -1137,7 +1137,7 @@ The files are created in the directory of the output file.
 
 .. option:: -dumpversion
 
-  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7`` )---and don't do
+  Print the compiler version (for example, ``3.0``, ``6.3.0`` or ``7``)---and don't do
   anything else.  This is the compiler version used in filesystem paths and
   specs. Depending on how the compiler has been configured it can be just
   a single number (major version), two numbers separated by a dot (major and

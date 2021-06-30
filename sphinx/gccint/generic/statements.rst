@@ -254,10 +254,10 @@ The first sequence may complete in the following ways:
 * Execute the last statement in the sequence and fall off the
   end.
 
-* Execute a goto statement ( ``GOTO_EXPR`` ) to an ordinary
+* Execute a goto statement (``GOTO_EXPR``) to an ordinary
   label outside the sequence.
 
-* Execute a return statement ( ``RETURN_EXPR`` ).
+* Execute a return statement (``RETURN_EXPR``).
 
 * Throw an exception.  This is currently not explicitly represented in
   GIMPLE.
@@ -429,8 +429,8 @@ clauses used by the OpenMP API https://www.openmp.org.
 
   This does not represent any OpenMP directive, it is an artificial
   marker to indicate the end of the body of an OpenMP. It is used
-  by the flow graph ( ``tree-cfg.c`` ) and OpenMP region
-  building code ( ``omp-low.c`` ).
+  by the flow graph (``tree-cfg.c``) and OpenMP region
+  building code (``omp-low.c``).
 
 .. envvar:: OMP_CONTINUE
 

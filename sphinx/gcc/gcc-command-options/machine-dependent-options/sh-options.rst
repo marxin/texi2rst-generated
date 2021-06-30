@@ -221,7 +221,7 @@ These :samp:`-m` options are defined for the SH implementations:
   Inline code to invalidate instruction cache entries after setting up
   nested function trampolines.
   This option has no effect if :option:`-musermode` is in effect and the selected
-  code generation option (e.g. :option:`-m4` ) does not allow the use of the ``icbi``
+  code generation option (e.g. :option:`-m4`) does not allow the use of the ``icbi``
   instruction.
   If the selected code generation option does not allow the use of the ``icbi``
   instruction, and :option:`-musermode` is not in effect, the inlined code

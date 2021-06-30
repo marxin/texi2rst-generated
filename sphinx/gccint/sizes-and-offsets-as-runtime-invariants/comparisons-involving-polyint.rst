@@ -165,8 +165,8 @@ we can usually make a conservatively-correct assumption.  For example,
 the conservative assumption for alias analysis is that two references
 *might* alias.
 
-One way of checking whether [ :samp:`{begin1}`, :samp:`{end1}` ) might overlap
-[ :samp:`{begin2}`, :samp:`{end2}` ) using the ``poly_int`` comparisons is:
+One way of checking whether [ :samp:`{begin1}`, :samp:`{end1}`) might overlap
+[ :samp:`{begin2}`, :samp:`{end2}`) using the ``poly_int`` comparisons is:
 
 .. code-block:: c++
 
@@ -206,11 +206,11 @@ the following utility functions for ordered values:
   For example, if a subreg has an outer mode of size :samp:`{outer}` and an
   inner mode of size :samp:`{inner}` :
 
-* the subreg is complete if known_eq ( :samp:`{inner}`, :samp:`{outer}` )
+* the subreg is complete if known_eq (:samp:`{inner}`, :samp:`{outer}`)
 
-* otherwise, the subreg is paradoxical if known_le ( :samp:`{inner}`, :samp:`{outer}` )
+* otherwise, the subreg is paradoxical if known_le (:samp:`{inner}`, :samp:`{outer}`)
 
-* otherwise, the subreg is partial if known_le ( :samp:`{outer}`, :samp:`{inner}` )
+* otherwise, the subreg is partial if known_le (:samp:`{outer}`, :samp:`{inner}`)
 
 * otherwise, the subreg is ill-formed
 
@@ -218,11 +218,11 @@ Thus the subreg is only valid if
 :samp:`ordered_p ({outer}, {inner})` is true.  If this condition
 is already known to be true then:
 
-* the subreg is complete if known_eq ( :samp:`{inner}`, :samp:`{outer}` )
+* the subreg is complete if known_eq (:samp:`{inner}`, :samp:`{outer}`)
 
-* the subreg is paradoxical if maybe_lt ( :samp:`{inner}`, :samp:`{outer}` )
+* the subreg is paradoxical if maybe_lt (:samp:`{inner}`, :samp:`{outer}`)
 
-* the subreg is partial if maybe_lt ( :samp:`{outer}`, :samp:`{inner}` )
+* the subreg is partial if maybe_lt (:samp:`{outer}`, :samp:`{inner}`)
 
 with the three conditions being mutually exclusive.
 
@@ -289,7 +289,7 @@ A range of size 0 does not contain anything or overlap anything.
 
 :samp:`endpoint_representable_p ({pos}, {size})`
   Return true if the range described by :samp:`{pos}` and :samp:`{size}` is
-  open-ended or if the endpoint ( :samp:`{pos}` + :samp:`{size}` ) is representable
+  open-ended or if the endpoint (:samp:`{pos}` + :samp:`{size}`) is representable
   in the same type as :samp:`{pos}` and :samp:`{size}`.  The function returns false
   if adding :samp:`{size}` to :samp:`{pos}` makes conceptual sense but could overflow.
 

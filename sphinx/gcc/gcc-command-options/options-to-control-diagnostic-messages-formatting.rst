@@ -292,7 +292,7 @@ honor these options.
 
 .. option:: -fno-diagnostics-show-labels
 
-  By default, when printing source code (via :option:`-fdiagnostics-show-caret` ),
+  By default, when printing source code (via :option:`-fdiagnostics-show-caret`),
   diagnostics can label ranges of source code with pertinent information, such
   as the types of expressions:
 
@@ -325,7 +325,7 @@ honor these options.
 
 .. option:: -fno-diagnostics-show-line-numbers
 
-  By default, when printing source code (via :option:`-fdiagnostics-show-caret` ),
+  By default, when printing source code (via :option:`-fdiagnostics-show-caret`),
   a left margin is printed, showing line numbers.  This option suppresses this
   left margin.
 
@@ -387,7 +387,7 @@ honor these options.
      }
 
   The diff may or may not be colorized, following the same rules
-  as for diagnostics (see :option:`-fdiagnostics-color` ).
+  as for diagnostics (see :option:`-fdiagnostics-color`).
 
 .. option:: -fdiagnostics-show-template-tree
 
@@ -553,7 +553,7 @@ honor these options.
 .. option:: -fdiagnostics-column-unit=UNIT
 
   Select the units for the column number.  This affects traditional diagnostics
-  (in the absence of :option:`-fno-show-column` ), as well as JSON format
+  (in the absence of :option:`-fno-show-column`), as well as JSON format
   diagnostics if requested.
 
   The default :samp:`{UNIT}`, :samp:`display`, considers the number of display

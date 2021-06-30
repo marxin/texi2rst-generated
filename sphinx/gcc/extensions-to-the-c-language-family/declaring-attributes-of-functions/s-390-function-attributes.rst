@@ -42,7 +42,7 @@ These function attributes are supported on the S/390:
   :samp:`no-warn-dynamicstack`
 
   The options work exactly like the S/390 specific command line
-  options (without the prefix :samp:`-m` ) except that they do not
+  options (without the prefix :samp:`-m`) except that they do not
   change any feature macros.  For example,
 
   .. code-block:: c++

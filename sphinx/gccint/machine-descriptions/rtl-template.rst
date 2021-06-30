@@ -85,7 +85,7 @@ substitution of the operands.
 
     (match_operand:m n "scratch_operand" constraint)
 
-  but, when generating RTL, it produces a ( ``scratch`` : :samp:`{m}` )
+  but, when generating RTL, it produces a (``scratch`` : :samp:`{m}`)
   expression.
 
   If the last few expressions in a ``parallel`` are ``clobber``

@@ -63,7 +63,7 @@ Each ``basic_block`` also contains pointers to the first
 instruction (the :dfn:`head`) and the last instruction (the :dfn:`tail`)
 or :dfn:`end` of the instruction stream contained in a basic block.  In
 fact, since the ``basic_block`` data type is used to represent
-blocks in both major intermediate representations of GCC ( ``GIMPLE``
+blocks in both major intermediate representations of GCC (``GIMPLE``
 and RTL), there are pointers to the head and end of a basic block for
 both representations, stored in intermediate representation specific
 data in the ``il`` field of ``struct basic_block_def``.

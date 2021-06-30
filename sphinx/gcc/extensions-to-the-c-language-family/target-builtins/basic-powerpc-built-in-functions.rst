@@ -344,7 +344,7 @@ which is only available on 64-bit targets.
 
 The following built-in functions are available
 when hardware decimal floating point
-( :option:`-mhard-dfp` ) is available:
+(:option:`-mhard-dfp`) is available:
 
 .. code-block:: c++
 
@@ -419,7 +419,7 @@ arguments.
 
 Additional built-in functions are available for the 64-bit PowerPC
 family of processors, for efficient use of 128-bit floating point
-( ``__float128`` ) values.
+(``__float128``) values.
 
 .. _basic-powerpc-built-in-functions-available-on-isa-2.06:
 
@@ -497,7 +497,7 @@ enabling all the same options as for :option:`-mcpu`:samp:`=power8` in
 addition to the :option:`-misel` option.
 
 The following built-in functions are available on Linux 64-bit systems
-that use the ISA 3.0 instruction set ( :option:`-mcpu`:samp:`=power9`):
+that use the ISA 3.0 instruction set (:option:`-mcpu`:samp:`=power9`):
 
 ``__float128 __builtin_addf128_round_to_odd (__float128, __float128)``
   Perform a 128-bit IEEE floating point add using round to odd as the
@@ -656,7 +656,7 @@ command line, specifying option :option:`-mcpu`:samp:`=power10` has the effect o
 enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
 
 The following built-in functions are available on Linux 64-bit systems
-that use a future architecture instruction set ( :option:`-mcpu`:samp:`=power10`):
+that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`):
 
 unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
 

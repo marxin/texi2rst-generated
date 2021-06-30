@@ -188,7 +188,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   :samp:`long time ();` is erroneous.
 
   The solution is to change your program to use appropriate system headers
-  ( ``<time.h>`` on systems with ISO C headers) and not to declare
+  (``<time.h>`` on systems with ISO C headers) and not to declare
   ``time`` if the system header files declare it, or failing that to
   use ``time_t`` as the return type of ``time``.
 

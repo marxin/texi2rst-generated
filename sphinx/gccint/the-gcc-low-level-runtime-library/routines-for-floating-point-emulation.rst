@@ -367,6 +367,6 @@ Other floating-point functions
 .. function:: complex long double __divxc3 (long double a, long double b, long double c, long double d)
 
   These functions return the quotient of :samp:`{a}` + i :samp:`{b}` and
-  :samp:`{c}` + i :samp:`{d}` (i.e., ( :samp:`{a}` + i :samp:`{b}` ) / ( :samp:`{c}`
-  + i :samp:`{d}` )), following the rules of C99 Annex G.
+  :samp:`{c}` + i :samp:`{d}` (i.e., (:samp:`{a}` + i :samp:`{b}`) / (:samp:`{c}`
+  + i :samp:`{d}`)), following the rules of C99 Annex G.
 

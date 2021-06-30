@@ -45,7 +45,7 @@ each attribute is one of the following:
 
 * An attribute name
   (which may be an identifier such as ``unused``, or a reserved
-  word such as ``const`` ).
+  word such as ``const``).
 
 * An attribute name followed by a parenthesized list of
   parameters for the attribute.
@@ -204,7 +204,7 @@ declarators in the ISO C standard.
 
 Consider (as in C99 subclause 6.7.5 paragraph 4) a declaration ``T
 D1``, where ``T`` contains declaration specifiers that specify a type
-:samp:`{Type}` (such as ``int`` ) and ``D1`` is a declarator that
+:samp:`{Type}` (such as ``int``) and ``D1`` is a declarator that
 contains an identifier :samp:`{ident}`.  The type specified for :samp:`{ident}`
 for derived declarators whose type does not include an attribute
 specifier is as in the ISO C standard.

@@ -121,7 +121,7 @@ n
   .. index:: E in constraint
 
 E
-  An immediate floating operand (expression code ``const_double`` ) is
+  An immediate floating operand (expression code ``const_double``) is
   allowed, but only if the target floating point format is the same as
   that of the host machine (on which the compiler is running).
 
@@ -129,7 +129,7 @@ E
 
 F
   An immediate floating operand (expression code ``const_double`` or
-  ``const_vector`` ) is allowed.
+  ``const_vector``) is allowed.
 
   .. index:: G in constraint
 
@@ -680,7 +680,7 @@ the meanings of that architecture's constraints.
 AArch64 family---:samp:`{config/aarch64/constraints.md}`
 
   ``k``
-    The stack pointer register ( ``SP`` )
+    The stack pointer register (``SP``)
 
   ``w``
     Floating point register, Advanced SIMD vector register or SVE vector register
@@ -692,10 +692,10 @@ AArch64 family---:samp:`{config/aarch64/constraints.md}`
     Like ``w``, but restricted to registers 0 to 7 inclusive.
 
   ``Upl``
-    One of the low eight SVE predicate registers ( ``P0`` to ``P7`` )
+    One of the low eight SVE predicate registers (``P0`` to ``P7``)
 
   ``Upa``
-    Any of the SVE predicate registers ( ``P0`` to ``P15`` )
+    Any of the SVE predicate registers (``P0`` to ``P15``)
 
   ``I``
     Integer constant that is valid as an immediate operand in an ``ADD``
@@ -1272,28 +1272,28 @@ Epiphany---:samp:`{config/epiphany/constraints.md}`
 FRV---:samp:`{config/frv/frv.h}`
 
   ``a``
-    Register in the class ``ACC_REGS`` ( ``acc0`` to ``acc7`` ).
+    Register in the class ``ACC_REGS`` (``acc0`` to ``acc7``).
 
   ``b``
-    Register in the class ``EVEN_ACC_REGS`` ( ``acc0`` to ``acc7`` ).
+    Register in the class ``EVEN_ACC_REGS`` (``acc0`` to ``acc7``).
 
   ``c``
-    Register in the class ``CC_REGS`` ( ``fcc0`` to ``fcc3`` and
-    ``icc0`` to ``icc3`` ).
+    Register in the class ``CC_REGS`` (``fcc0`` to ``fcc3`` and
+    ``icc0`` to ``icc3``).
 
   ``d``
-    Register in the class ``GPR_REGS`` ( ``gr0`` to ``gr63`` ).
+    Register in the class ``GPR_REGS`` (``gr0`` to ``gr63``).
 
   ``e``
-    Register in the class ``EVEN_REGS`` ( ``gr0`` to ``gr63`` ).
+    Register in the class ``EVEN_REGS`` (``gr0`` to ``gr63``).
     Odd registers are excluded not in the class but through the use of a machine
     mode larger than 4 bytes.
 
   ``f``
-    Register in the class ``FPR_REGS`` ( ``fr0`` to ``fr63`` ).
+    Register in the class ``FPR_REGS`` (``fr0`` to ``fr63``).
 
   ``h``
-    Register in the class ``FEVEN_REGS`` ( ``fr0`` to ``fr63`` ).
+    Register in the class ``FEVEN_REGS`` (``fr0`` to ``fr63``).
     Odd registers are excluded not in the class but through the use of a machine
     mode larger than 4 bytes.
 
@@ -1301,38 +1301,38 @@ FRV---:samp:`{config/frv/frv.h}`
     Register in the class ``LR_REG`` (the ``lr`` register).
 
   ``q``
-    Register in the class ``QUAD_REGS`` ( ``gr2`` to ``gr63`` ).
+    Register in the class ``QUAD_REGS`` (``gr2`` to ``gr63``).
     Register numbers not divisible by 4 are excluded not in the class but through
     the use of a machine mode larger than 8 bytes.
 
   ``t``
-    Register in the class ``ICC_REGS`` ( ``icc0`` to ``icc3`` ).
+    Register in the class ``ICC_REGS`` (``icc0`` to ``icc3``).
 
   ``u``
-    Register in the class ``FCC_REGS`` ( ``fcc0`` to ``fcc3`` ).
+    Register in the class ``FCC_REGS`` (``fcc0`` to ``fcc3``).
 
   ``v``
-    Register in the class ``ICR_REGS`` ( ``cc4`` to ``cc7`` ).
+    Register in the class ``ICR_REGS`` (``cc4`` to ``cc7``).
 
   ``w``
-    Register in the class ``FCR_REGS`` ( ``cc0`` to ``cc3`` ).
+    Register in the class ``FCR_REGS`` (``cc0`` to ``cc3``).
 
   ``x``
-    Register in the class ``QUAD_FPR_REGS`` ( ``fr0`` to ``fr63`` ).
+    Register in the class ``QUAD_FPR_REGS`` (``fr0`` to ``fr63``).
     Register numbers not divisible by 4 are excluded not in the class but through
     the use of a machine mode larger than 8 bytes.
 
   ``z``
-    Register in the class ``SPR_REGS`` ( ``lcr`` and ``lr`` ).
+    Register in the class ``SPR_REGS`` (``lcr`` and ``lr``).
 
   ``A``
-    Register in the class ``QUAD_ACC_REGS`` ( ``acc0`` to ``acc7`` ).
+    Register in the class ``QUAD_ACC_REGS`` (``acc0`` to ``acc7``).
 
   ``B``
-    Register in the class ``ACCG_REGS`` ( ``accg0`` to ``accg7`` ).
+    Register in the class ``ACCG_REGS`` (``accg0`` to ``accg7``).
 
   ``C``
-    Register in the class ``CR_REGS`` ( ``cc0`` to ``cc7`` ).
+    Register in the class ``CR_REGS`` (``cc0`` to ``cc7``).
 
   ``G``
     Floating point constant zero
@@ -1660,10 +1660,10 @@ M32C---:samp:`{config/m32c/m32c.c}`
 MicroBlaze---:samp:`{config/microblaze/constraints.md}`
 
   ``d``
-    A general register ( ``r0`` to ``r31`` ).
+    A general register (``r0`` to ``r31``).
 
   ``z``
-    A status register ( ``rmsr``, ``$fcc1`` to ``$fcc7`` ).
+    A status register (``rmsr``, ``$fcc1`` to ``$fcc7``).
 
 MIPS---:samp:`{config/mips/constraints.md}`
 
@@ -2057,7 +2057,7 @@ OpenRISC---:samp:`{config/or1k/constraints.md}`
     0 to 65535.
 
   ``M``
-    Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi`` )
+    Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi``)
 
   ``O``
     Zero
@@ -2144,8 +2144,8 @@ PowerPC and IBM RS6000---:samp:`{config/rs6000/constraints.md}`
 
   ``wa``
     A VSX register (VSR), ``vs0``... ``vs63``.  This is either an
-    FPR ( ``vs0``... ``vs31`` are ``f0``... ``f31`` ) or a VR
-    ( ``vs32``... ``vs63`` are ``v0``... ``v31`` ).
+    FPR (``vs0``... ``vs31`` are ``f0``... ``f31``) or a VR
+    (``vs32``... ``vs63`` are ``v0``... ``v31``).
 
     When using ``wa``, you should use the ``%x`` output modifier, so that
     the correct register number is printed.  For example:
@@ -2164,11 +2164,10 @@ PowerPC and IBM RS6000---:samp:`{config/rs6000/constraints.md}`
            : "=v" (v1)
            : "v" (v2), "v" (v3));
 
-
   .. only:: gccint
 
     ``h``
-      A special register ( ``vrsave``, ``ctr``, or ``lr`` ).
+      A special register (``vrsave``, ``ctr``, or ``lr``).
 
   ``c``
     The count register, ``ctr``.
@@ -2192,7 +2191,7 @@ PowerPC and IBM RS6000---:samp:`{config/rs6000/constraints.md}`
       otherwise, ``NO_REGS``.
 
     ``wn``
-      No register ( ``NO_REGS`` ).
+      No register (``NO_REGS``).
 
     ``wr``
       Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
@@ -2450,7 +2449,7 @@ RL78---:samp:`{config/rl78/constraints.md}`
     The 16-bit ``R10`` register.
 
   ``Zint``
-    The registers reserved for interrupts ( ``R24`` to ``R31`` ).
+    The registers reserved for interrupts (``R24`` to ``R31``).
 
   ``a``
     The ``A`` register.
@@ -2954,8 +2953,8 @@ x86 family---:samp:`{config/i386/constraints.md}`
 
   ``R``
     Legacy register---the eight integer registers available on all
-    i386 processors ( ``a``, ``b``, ``c``, ``d``,
-    ``si``, ``di``, ``bp``, ``sp`` ).
+    i386 processors (``a``, ``b``, ``c``, ``d``,
+    ``si``, ``di``, ``bp``, ``sp``).
 
   ``q``
     Any register accessible as ``rl``.  In 32-bit mode, ``a``,
@@ -3023,10 +3022,10 @@ x86 family---:samp:`{config/i386/constraints.md}`
     Any 80387 floating-point (stack) register.
 
   ``t``
-    Top of 80387 floating-point stack ( ``%st(0)`` ).
+    Top of 80387 floating-point stack (``%st(0)``).
 
   ``u``
-    Second from top of 80387 floating-point stack ( ``%st(1)`` ).
+    Second from top of 80387 floating-point stack (``%st(1)``).
 
   .. only:: gccint
 
@@ -3043,7 +3042,7 @@ x86 family---:samp:`{config/i386/constraints.md}`
     Any SSE register.
 
   ``v``
-    Any EVEX encodable SSE register ( ``%xmm0-%xmm31`` ).
+    Any EVEX encodable SSE register (``%xmm0-%xmm31``).
 
   .. only:: gccint
 
@@ -3051,7 +3050,7 @@ x86 family---:samp:`{config/i386/constraints.md}`
       Any bound register.
 
   ``Yz``
-    First SSE register ( ``%xmm0`` ).
+    First SSE register (``%xmm0``).
 
   .. only:: gccint
 
@@ -3087,7 +3086,7 @@ x86 family---:samp:`{config/i386/constraints.md}`
       Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
 
     ``Yv``
-      For AVX512VL, any EVEX-encodable SSE register ( ``%xmm0-%xmm31`` ),
+      For AVX512VL, any EVEX-encodable SSE register (``%xmm0-%xmm31``),
       otherwise any SSE register.
 
     ``Yh``

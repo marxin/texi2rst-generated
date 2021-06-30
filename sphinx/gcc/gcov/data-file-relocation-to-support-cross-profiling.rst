@@ -39,6 +39,6 @@ it.  This can be overcome by, for example, setting the environment as
 setting will name the data file :samp:`/target/run/build/foo.gcda`.
 
 You must move the data files to the expected directory tree in order to
-use them for profile directed optimizations ( :option:`-fprofile-use` ), or to
+use them for profile directed optimizations (:option:`-fprofile-use`), or to
 use the :command:`gcov` tool.
 

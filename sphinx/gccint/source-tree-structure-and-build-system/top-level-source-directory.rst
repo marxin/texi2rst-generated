@@ -52,7 +52,7 @@ subdirectories that contain parts of GCC and its runtime libraries:
 
 :samp:`libatomic`
   The runtime support library for atomic operations (e.g. for ``__sync``
-  and ``__atomic`` ).
+  and ``__atomic``).
 
 :samp:`libcpp`
   The C preprocessor library.

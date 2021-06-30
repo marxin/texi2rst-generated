@@ -78,7 +78,7 @@ either your program or the GNU Fortran compiler.
   being aborted, producing a core file useful for debugging.  :samp:`{list}`
   is a (possibly empty) comma-separated list of the following
   exceptions: :samp:`invalid` (invalid floating point operation, such as
-  ``SQRT(-1.0)`` ), :samp:`zero` (division by zero), :samp:`overflow`
+  ``SQRT(-1.0)``), :samp:`zero` (division by zero), :samp:`overflow`
   (overflow in a floating point operation), :samp:`underflow` (underflow
   in a floating point operation), :samp:`inexact` (loss of precision
   during operation), and :samp:`denormal` (operation performed on a

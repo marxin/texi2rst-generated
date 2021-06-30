@@ -92,7 +92,7 @@ These function attributes are supported for ARM targets:
   values for the argument are ``"aapcs"`` and ``"aapcs-vfp"``.  In
   order to use a variant other than ``"aapcs"`` then the compiler must
   be permitted to use the appropriate co-processor registers (i.e., the
-  VFP registers must be available in order to use ``"aapcs-vfp"`` ).
+  VFP registers must be available in order to use ``"aapcs-vfp"``).
   For example,
 
   .. code-block:: c++

@@ -26,7 +26,7 @@ The following keywords are reserved for concepts.
 
 ``forall``
   Introduces a universally quantified object in an axiom. For example,
-  ``forall (int n) n + 0 == n`` ).
+  ``forall (int n) n + 0 == n``).
 
 ``concept``
   Introduces a concept definition. Concepts are sets of syntactic and semantic

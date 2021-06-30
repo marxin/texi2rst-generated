@@ -48,7 +48,7 @@ values---values that can fit in registers.
   :samp:`{valtype}` is a scalar type.
 
   If the precise function being called is known, :samp:`{func}` is a tree
-  node ( ``FUNCTION_DECL`` ) for it; otherwise, :samp:`{func}` is a null
+  node (``FUNCTION_DECL``) for it; otherwise, :samp:`{func}` is a null
   pointer.  This makes it possible to use a different value-returning
   convention for specific functions when all their calls are
   known.

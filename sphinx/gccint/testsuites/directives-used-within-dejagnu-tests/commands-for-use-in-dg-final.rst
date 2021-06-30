@@ -120,7 +120,7 @@ Scan the assembly output
   It is possible to create non-capturing multi-line regular expression
   groups of the form :samp:`({a}|{b}|...)` by putting the
   :samp:`(`, :samp:`|` and :samp:`)` on separate lines (each still using
-  :samp:`{prefix}` ).  For example:
+  :samp:`{prefix}`).  For example:
 
   .. code-block:: c++
 

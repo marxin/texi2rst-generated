@@ -136,7 +136,7 @@ ordinarily expect.
 .. c:macro:: SLOW_BYTE_ACCESS
 
   Define this macro as a C expression which is nonzero if accessing less
-  than a word of memory (i.e. a ``char`` or a ``short`` ) is no
+  than a word of memory (i.e. a ``char`` or a ``short``) is no
   faster than accessing a word of memory, i.e., if such access
   require more than one instruction or if there is no difference in cost
   between byte and (aligned) word loads.

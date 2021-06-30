@@ -51,7 +51,7 @@ region.
   Define this macro to 0 if your target supports DWARF 2 frame unwind
   information, but it does not yet work with exception handling.
   Otherwise, if your target supports this information (if it defines
-  ``INCOMING_RETURN_ADDR_RTX`` and ``OBJECT_FORMAT_ELF`` ),
+  ``INCOMING_RETURN_ADDR_RTX`` and ``OBJECT_FORMAT_ELF``),
   GCC will provide a default definition of 1.
 
 .. function:: enum unwind_info_type TARGET_EXCEPT_UNWIND_INFO (struct gcc_options *opts)

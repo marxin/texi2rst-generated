@@ -92,8 +92,8 @@ Characters
 
 * The encoding of any of ``wchar_t``, ``char16_t``, and
   ``char32_t`` where the corresponding standard encoding macro
-  ( ``__STDC_ISO_10646__``, ``__STDC_UTF_16__``, or
-  ``__STDC_UTF_32__`` ) is not defined (C11 6.10.8.2).
+  (``__STDC_ISO_10646__``, ``__STDC_UTF_16__``, or
+  ``__STDC_UTF_32__``) is not defined (C11 6.10.8.2).
 
   See :ref:`Implementation-defined
   behavior <implementation-defined-behavior>`.  ``char16_t`` and

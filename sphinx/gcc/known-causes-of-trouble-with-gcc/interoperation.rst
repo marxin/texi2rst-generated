@@ -82,7 +82,7 @@ libraries and debuggers on certain systems.
   generate HP-UX unwind descriptors for such functions.  It may even be
   impossible to generate them.
 
-* Debugging ( :option:`-g` ) is not supported on the HP PA machine, unless you use
+* Debugging (:option:`-g`) is not supported on the HP PA machine, unless you use
   the preliminary GNU tools.
 
 * Taking the address of a label may generate errors from the HP-UX
@@ -133,7 +133,7 @@ libraries and debuggers on certain systems.
   functions invoked by :samp:`libstdc++.a` with 'runtime-linking'
   enabled on AIX.  To accomplish this the application must be linked
   with 'runtime-linking' option and the functions explicitly must be
-  exported by the application ( :option:`-Wl,-brtl,-bE:exportfile` ).
+  exported by the application (:option:`-Wl,-brtl,-bE:exportfile`).
 
 * AIX on the RS/6000 provides support (NLS) for environments outside of
   the United States.  Compilers and assemblers use NLS to support

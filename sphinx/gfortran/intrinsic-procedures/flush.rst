@@ -44,7 +44,7 @@ FLUSH --- Flush I/O unit(s)
     On POSIX systems, you can request that all data is transferred  to  the
     storage device by calling the ``fsync`` function, with the POSIX file
     descriptor of the I/O unit as argument (retrieved with GNU intrinsic
-    ``FNUM`` ). The following example shows how:
+    ``FNUM``). The following example shows how:
 
     .. code-block:: fortran
 

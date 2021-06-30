@@ -266,8 +266,8 @@ three operands:
     indicates a subexpression to extract from the current expression; for
     the first character this is :samp:`{op}`, for the second and subsequent
     characters it is the result of the previous character.  A digit
-    :samp:`{n}` extracts :samp:`XEXP ( {e}, {n} )`; a letter :samp:`{l}`
-    extracts :samp:`XVECEXP ( {e}, 0, {n} )` where :samp:`{n}` is the
+    :samp:`{n}` extracts :samp:`XEXP ({e}, {n})`; a letter :samp:`{l}`
+    extracts :samp:`XVECEXP ({e}, 0, {n})` where :samp:`{n}` is the
     alphabetic ordinal of :samp:`{l}` (0 for 'a', 1 for 'b', and so on).  The
     ``MATCH_CODE`` then examines the RTX code of the subexpression
     extracted by the complete string.  It is not possible to extract

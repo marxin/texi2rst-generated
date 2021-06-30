@@ -27,7 +27,7 @@ C always start with index 0 while in Fortran they start by default with
 1.  Thus, an array declaration ``A(n,m)`` in Fortran matches
 ``A[m][n]`` in C and accessing the element ``A(i,j)`` matches
 ``A[j-1][i-1]``.  The element following ``A(i,j)`` (C: ``A[j-1][i-1]`` ;
-assuming i < n) in memory is ``A(i+1,j)`` (C: ``A[j-1][i]`` ).
+assuming i < n) in memory is ``A(i+1,j)`` (C: ``A[j-1][i]``).
 
 .. _intrinsic-types:
 
@@ -157,7 +157,7 @@ see Working with Pointers.
 Strings are handled quite differently in C and Fortran.  In C a string
 is a ``NUL`` -terminated array of characters while in Fortran each string
 has a length associated with it and is thus not terminated (by e.g.
-``NUL`` ).  For example, if one wants to use the following C function,
+``NUL``).  For example, if one wants to use the following C function,
 
 .. code-block:: c
 
@@ -232,7 +232,7 @@ C pointers are represented in Fortran via the special opaque derived type
 ``type(c_ptr)`` (with private components).  Thus one needs to
 use intrinsic conversion procedures to convert from or to C pointers.
 
-For some applications, using an assumed type ( ``TYPE(*)`` ) can be an
+For some applications, using an assumed type (``TYPE(*)``) can be an
 alternative to a C pointer; see
 Further Interoperability of Fortran with C.
 
@@ -386,8 +386,8 @@ Further Interoperability of Fortran with C
 The Technical Specification ISO/IEC TS 29113:2012 on further
 interoperability of Fortran with C extends the interoperability support
 of Fortran 2003 and Fortran 2008. Besides removing some restrictions
-and constraints, it adds assumed-type ( ``TYPE(*)`` ) and assumed-rank
-( ``dimension`` ) variables and allows for interoperability of
+and constraints, it adds assumed-type (``TYPE(*)``) and assumed-rank
+(``dimension``) variables and allows for interoperability of
 assumed-shape, assumed-rank and deferred-shape arrays, including
 allocatables and pointers.
 
@@ -414,7 +414,7 @@ are supported by GNU Fortran:
 * The ``OPTIONAL`` attribute is now allowed for dummy
   arguments; an absent argument matches a ``NULL`` pointer.
 
-* Assumed types ( ``TYPE(*)`` ) have been added, which may
+* Assumed types (``TYPE(*)``) have been added, which may
   only be used for dummy arguments.  They are unlimited polymorphic
   but contrary to ``CLASS(*)`` they do not contain any type
   information, similar to C's ``void *`` pointers.  Expressions
@@ -427,10 +427,10 @@ are supported by GNU Fortran:
   ``DIMENSION(*)`` only supports array (including array elements) but
   no scalars, it is not a full replacement for ``C_LOC``.  On the
   other hand, assumed-type assumed-rank dummy arguments
-  ( ``TYPE(*), DIMENSION(..)`` ) allow for both scalars and arrays, but
+  (``TYPE(*), DIMENSION(..)``) allow for both scalars and arrays, but
   require special code on the callee side to handle the array descriptor.
 
-* Assumed-rank arrays ( ``DIMENSION(..)`` ) as dummy argument
+* Assumed-rank arrays (``DIMENSION(..)``) as dummy argument
   allow that scalars and arrays of any rank can be passed as actual
   argument. As the Technical Specification does not provide for direct
   means to operate with them, they have to be used either from the C side

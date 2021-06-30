@@ -175,11 +175,11 @@ Expect a test to fail for some targets
 
 :samp:`{ dg-xfail-if {comment} { {selector} } [{ {include-opts} } [{ {exclude-opts} }]] }`
   Expect the test to fail if the conditions (which are the same as for
-  ``dg-skip-if`` ) are met.  This does not affect the execute step.
+  ``dg-skip-if``) are met.  This does not affect the execute step.
 
 :samp:`{ dg-xfail-run-if {comment} { {selector} } [{ {include-opts} } [{ {exclude-opts} }]] }`
   Expect the execute step of a test to fail if the conditions (which are
-  the same as for ``dg-skip-if`` ) are met.
+  the same as for ``dg-skip-if``) are met.
 
 Expect the compiler to crash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ Expect the compiler to crash
 :samp:`{ dg-ice {comment} [{ {selector} } [{ {include-opts} } [{ {exclude-opts} }]]] }`
   Expect the compiler to crash with an internal compiler error and return
   a nonzero exit status if the conditions (which are the same as for
-  ``dg-skip-if`` ) are met.  Used for tests that test bugs that have not been
+  ``dg-skip-if``) are met.  Used for tests that test bugs that have not been
   fixed yet.
 
 Expect the test executable to fail
@@ -195,7 +195,7 @@ Expect the test executable to fail
 
 :samp:`{ dg-shouldfail {comment} [{ {selector} } [{ {include-opts} } [{ {exclude-opts} }]]] }`
   Expect the test executable to return a nonzero exit status if the
-  conditions (which are the same as for ``dg-skip-if`` ) are met.
+  conditions (which are the same as for ``dg-skip-if``) are met.
 
 Verify compiler messages
 ~~~~~~~~~~~~~~~~~~~~~~~~

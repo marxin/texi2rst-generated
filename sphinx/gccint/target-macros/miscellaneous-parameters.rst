@@ -214,7 +214,7 @@ Here are several miscellaneous parameters.
 
   This hook returns true if it is safe to 'convert' a value of
   :samp:`{inprec}` bits to one of :samp:`{outprec}` bits (where :samp:`{outprec}` is
-  smaller than :samp:`{inprec}` ) by merely operating on it as if it had only
+  smaller than :samp:`{inprec}`) by merely operating on it as if it had only
   :samp:`{outprec}` bits.  The default returns true unconditionally, which
   is correct for most machines.  When ``TARGET_TRULY_NOOP_TRUNCATION``
   returns false, the machine description should provide a ``trunc``
@@ -909,8 +909,8 @@ Here are several miscellaneous parameters.
 
   .. hook-start:TARGET_CAN_USE_DOLOOP_P
 
-  Return true if it is possible to use low-overhead loops ( ``doloop_end``
-  and ``doloop_begin`` ) for a particular loop.  :samp:`{iterations}` gives the
+  Return true if it is possible to use low-overhead loops (``doloop_end``
+  and ``doloop_begin``) for a particular loop.  :samp:`{iterations}` gives the
   exact number of iterations, or 0 if not known.  :samp:`{iterations_max}` gives
   the maximum number of iterations, or 0 if not known.  :samp:`{loop_depth}` is
   the nesting depth of the loop, with 1 for innermost loops, 2 for loops that
@@ -966,7 +966,7 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_COMMUTATIVE_P
 
   This target hook returns ``true`` if :samp:`{x}` is considered to be commutative.
-  Usually, this is just COMMUTATIVE_P ( :samp:`{x}` ), but the HP PA doesn't consider
+  Usually, this is just COMMUTATIVE_P (:samp:`{x}`), but the HP PA doesn't consider
   PLUS to be commutative inside a MEM.  :samp:`{outer_code}` is the rtx code
   of the enclosing rtl, if known, otherwise it is UNKNOWN.
 
@@ -1015,7 +1015,7 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_SET_CURRENT_FUNCTION
 
   The compiler invokes this hook whenever it changes its current function
-  context ( ``cfun`` ).  You can define this function if
+  context (``cfun``).  You can define this function if
   the back end needs to perform any initialization or reset actions on a
   per-function basis.  For example, it may be used to implement function
   attributes that affect register usage or code generation patterns.
@@ -1167,7 +1167,7 @@ Here are several miscellaneous parameters.
   for a virtual function :samp:`{fndecl}` when constructing thunks,
   ``false`` otherwise.  By default, the macro returns ``true`` for all
   functions, if a target supports aliases (i.e. defines
-  ``ASM_OUTPUT_DEF`` ), ``false`` otherwise,
+  ``ASM_OUTPUT_DEF``), ``false`` otherwise,
 
 .. c:macro:: TARGET_FORMAT_TYPES
 
@@ -1224,7 +1224,7 @@ Here are several miscellaneous parameters.
 
   If defined, this macro returns the diagnostic message when it is
   invalid to apply operation :samp:`{op}` (where unary plus is denoted by
-  ``CONVERT_EXPR`` ) to an operand of type :samp:`{type}`, or ``NULL``
+  ``CONVERT_EXPR``) to an operand of type :samp:`{type}`, or ``NULL``
   if validity should be determined by the front end.
 
 .. hook-end

@@ -43,7 +43,7 @@ are only reliable for the innermost loops:
   on GIMPLE) duplicate the body of the loop prescribed number of times on
   one of the edges entering loop header, thus performing either loop
   unrolling or loop peeling.  ``can_duplicate_loop_p``
-  ( ``can_unroll_loop_p`` on GIMPLE) must be true for the duplicated
+  (``can_unroll_loop_p`` on GIMPLE) must be true for the duplicated
   loop.
 
 * ``loop_version`` : This function creates a copy of a loop, and

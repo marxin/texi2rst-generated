@@ -228,7 +228,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   and use either software emulation for IEEE 128-bit floating point or
   hardware instructions.
 
-  The VSX instruction set ( :option:`-mvsx`, :option:`-mcpu`:samp:`=power7`,
+  The VSX instruction set (:option:`-mvsx`, :option:`-mcpu`:samp:`=power7`,
   :option:`-mcpu`:samp:`=power8`), or :option:`-mcpu`:samp:`=power9` must be enabled to
   use the IEEE 128-bit floating point support.  The IEEE 128-bit
   floating point support only works on PowerPC Linux systems.
@@ -236,7 +236,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   The default for :option:`-mfloat128` is enabled on PowerPC Linux
   systems using the VSX instruction set, and disabled on other systems.
 
-  If you use the ISA 3.0 instruction set ( :option:`-mpower9-vector` or
+  If you use the ISA 3.0 instruction set (:option:`-mpower9-vector` or
   :option:`-mcpu`:samp:`=power9`) on a 64-bit system, the IEEE 128-bit floating
   point support will also enable the generation of ISA 3.0 IEEE 128-bit
   floating point instructions.  Otherwise, if you do not specify to
@@ -621,7 +621,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   On System V.4 and embedded PowerPC systems assume that all calls to
   variable argument functions are properly prototyped.  Otherwise, the
   compiler must insert an instruction before every non-prototyped call to
-  set or clear bit 6 of the condition code register ( ``CR`` ) to
+  set or clear bit 6 of the condition code register (``CR``) to
   indicate whether floating-point values are passed in the floating-point
   registers in case the function takes variable arguments.  With
   :option:`-mprototype`, only calls to prototyped variable argument functions
@@ -792,7 +792,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   On PowerPC64 ELFv2 and 32-bit PowerPC systems with newer GNU linkers,
   GCC can generate long calls using an inline PLT call sequence (see
-  :option:`-mpltseq` ).  PowerPC with :option:`-mbss-plt` and PowerPC64
+  :option:`-mpltseq`).  PowerPC with :option:`-mbss-plt` and PowerPC64
   ELFv1 (big-endian) do not support inline PLT calls.
 
   On Darwin/PPC systems, ``#pragma longcall`` generates ``jbsr
@@ -841,7 +841,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   the :option:`-ffast-math` option when using :option:`-mrecip` (or at
   least :option:`-funsafe-math-optimizations`,
   :option:`-ffinite-math-only`, :option:`-freciprocal-math` and
-  :option:`-fno-trapping-math` ).  Note that while the throughput of the
+  :option:`-fno-trapping-math`).  Note that while the throughput of the
   sequence is generally higher than the throughput of the non-reciprocal
   instruction, the precision of the sequence can be decreased by up to 2
   ulp (i.e. the inverse of 1.0 equals 0.99999994) for reciprocal square
@@ -932,7 +932,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 .. option:: -mpointers-to-nested-functions, -mno-pointers-to-nested-functions
 
   Generate (do not generate) code to load up the static chain register
-  ( ``r11`` ) when calling through a pointer on AIX and 64-bit Linux
+  (``r11``) when calling through a pointer on AIX and 64-bit Linux
   systems where a function pointer points to a 3-word descriptor giving
   the function address, TOC value to be loaded in register ``r2``, and
   static chain value to be loaded in register ``r11``.  The
@@ -982,8 +982,8 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) pc-relative addressing when the option
   :option:`-mcpu`:samp:`=future` is used.  The :option:`-mpcrel` option requires
-  that the medium code model ( :option:`-mcmodel`:samp:`=medium`) and prefixed
-  addressing ( :option:`-mprefixed` ) options are enabled.
+  that the medium code model (:option:`-mcmodel`:samp:`=medium`) and prefixed
+  addressing (:option:`-mprefixed`) options are enabled.
 
 .. option:: -mprefixed, -mno-prefixed
 
@@ -999,7 +999,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) ROP protection instructions when the target
   processor supports them.  Currently this option disables the shrink-wrap
-  optimization ( :option:`-fshrink-wrap` ).
+  optimization (:option:`-fshrink-wrap`).
 
 .. option:: -mprivileged, -mno-privileged
 

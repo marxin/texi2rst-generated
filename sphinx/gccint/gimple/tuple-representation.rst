@@ -125,7 +125,7 @@ This tuple is actually split in two:
 ``gimple_statement_with_ops``. This is needed to accommodate the
 way the operand vector is allocated. The operand vector is
 defined to be an array of 1 element. So, to allocate a dynamic
-number of operands, the memory allocator ( ``gimple_alloc`` ) simply
+number of operands, the memory allocator (``gimple_alloc``) simply
 allocates enough memory to hold the structure itself plus ``N
 - 1`` operands which run 'off the end' of the structure. For
 example, to allocate space for a tuple with 3 operands,
@@ -168,8 +168,8 @@ This tuple is essentially identical to ``gimple_statement_with_ops``,
 except that it contains 4 additional fields to hold vectors
 related memory stores and loads.  Similar to the previous case,
 the structure is split in two to accommodate for the operand
-vector ( ``gimple_statement_with_memory_ops_base`` and
-``gimple_statement_with_memory_ops`` ).
+vector (``gimple_statement_with_memory_ops_base`` and
+``gimple_statement_with_memory_ops``).
 
 ============  ===========================
 Field         Size (bits)

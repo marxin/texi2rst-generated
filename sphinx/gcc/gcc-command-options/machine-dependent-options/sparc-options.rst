@@ -171,7 +171,7 @@ These :samp:`-m` options are supported on the SPARC:
 
   With :option:`-mcpu`:samp:`=sparclite`, GCC generates code for the SPARClite variant of
   the SPARC architecture.  This adds the integer multiply, integer divide step
-  and scan ( ``ffs`` ) instructions which exist in SPARClite but not in SPARC-V7.
+  and scan (``ffs``) instructions which exist in SPARClite but not in SPARC-V7.
   With :option:`-mcpu`:samp:`=f930`, the compiler additionally optimizes it for the
   Fujitsu MB86930 chip, which is the original SPARClite, with no FPU.  With
   :option:`-mcpu`:samp:`=f934`, the compiler additionally optimizes it for the Fujitsu
@@ -179,7 +179,7 @@ These :samp:`-m` options are supported on the SPARC:
 
   With :option:`-mcpu`:samp:`=sparclet`, GCC generates code for the SPARClet variant of
   the SPARC architecture.  This adds the integer multiply, multiply/accumulate,
-  integer divide step and scan ( ``ffs`` ) instructions which exist in SPARClet
+  integer divide step and scan (``ffs``) instructions which exist in SPARClet
   but not in SPARC-V7.  With :option:`-mcpu`:samp:`=tsc701`, the compiler additionally
   optimizes it for the TEMIC SPARClet chip.
 

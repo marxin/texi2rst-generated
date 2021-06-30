@@ -55,7 +55,7 @@ This concerns dispatch tables.
   specially.  The first three arguments are the same as for
   ``(*targetm.asm_out.internal_label)`` ; the fourth argument is the
   jump-table which follows (a ``jump_table_data`` containing an
-  ``addr_vec`` or ``addr_diff_vec`` ).
+  ``addr_vec`` or ``addr_diff_vec``).
 
   This feature is used on system V to output a ``swbeg`` statement
   for the table.

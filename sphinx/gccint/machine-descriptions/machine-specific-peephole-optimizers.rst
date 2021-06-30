@@ -104,7 +104,7 @@ the operands.
 
 The way to refer to the operands in :samp:`{condition}` is to write
 ``operands[i]`` for operand number :samp:`{i}` (as matched by
-``(match_operand i ...)`` ).  Use the variable ``insn``
+``(match_operand i ...)``).  Use the variable ``insn``
 to refer to the last of the insns being matched; use
 ``prev_active_insn`` to find the preceding insns.
 
@@ -115,8 +115,8 @@ When optimizing computations with intermediate results, you can use
 elsewhere.  Use the C expression ``dead_or_set_p (insn,
 op)``, where :samp:`{insn}` is the insn in which you expect the value
 to be used for the last time (from the value of ``insn``, together
-with use of ``prev_nonnote_insn`` ), and :samp:`{op}` is the intermediate
-value (from ``operands[i]`` ).
+with use of ``prev_nonnote_insn``), and :samp:`{op}` is the intermediate
+value (from ``operands[i]``).
 
 Applying the optimization means replacing the sequence of insns with one
 new insn.  The :samp:`{template}` controls ultimate output of assembler code
@@ -283,7 +283,7 @@ Here is an example from the IA-32 machine description:
 
 This pattern tries to split a load from its use in the hopes that we'll be
 able to schedule around the memory load latency.  It allocates a single
-``SImode`` register of class ``GENERAL_REGS`` ( ``"r"`` ) that needs
+``SImode`` register of class ``GENERAL_REGS`` (``"r"``) that needs
 to be live only at the point just before the arithmetic.
 
 A real example requiring extended scratch lifetimes is harder to come by,
@@ -327,7 +327,7 @@ as a statement.
   prevents the input insn from being split at all.)
 
 If the preparation falls through (invokes neither ``DONE`` nor
-``FAIL`` ), then the ``define_peephole2`` uses the replacement
+``FAIL``), then the ``define_peephole2`` uses the replacement
 template.
 
 If we had not added the ``(match_dup 4)`` in the middle of the input

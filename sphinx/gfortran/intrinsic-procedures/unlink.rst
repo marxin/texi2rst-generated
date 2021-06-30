@@ -14,7 +14,7 @@ UNLINK --- Remove a file from the file system
 
 .. function:: UNLINK
 
-  Unlinks the file :samp:`{PATH}`. A null character ( ``CHAR(0)`` ) can be
+  Unlinks the file :samp:`{PATH}`. A null character (``CHAR(0)``) can be
   used to mark the end of the name in :samp:`{PATH}` ; otherwise, trailing
   blanks in the file name are ignored.  If the :samp:`{STATUS}` argument is
   supplied, it contains 0 on success or a nonzero error code upon return;

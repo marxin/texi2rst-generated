@@ -33,8 +33,8 @@ any language supported by GCC.
 
 Note that since Objective-C is an extension of the C language, Objective-C
 compilations may also use options specific to the C front-end (e.g.,
-:option:`-Wtraditional` ).  Similarly, Objective-C++ compilations may use
-C++-specific options (e.g., :option:`-Wabi` ).
+:option:`-Wtraditional`).  Similarly, Objective-C++ compilations may use
+C++-specific options (e.g., :option:`-Wabi`).
 
 Here is a list of options that are *only* for compiling Objective-C
 and Objective-C++ programs:
@@ -63,8 +63,8 @@ and Objective-C++ programs:
 
 .. option:: -fno-nil-receivers
 
-  Assume that all Objective-C message dispatches ( ``[receiver
-  message:arg]`` ) in this translation unit ensure that the receiver is
+  Assume that all Objective-C message dispatches (``[receiver
+  message:arg]``) in this translation unit ensure that the receiver is
   not ``nil``.  This allows for more efficient entry points in the
   runtime to be used.  This option is only available in conjunction with
   the NeXT runtime and ABI version 0 or 1.
@@ -250,7 +250,7 @@ and Objective-C++ programs:
     Objective-C and Objective-C++ only
 
   Warn if a class interface lacks a superclass. Most classes will inherit
-  from ``NSObject`` (or ``Object`` ) for example.  When declaring
+  from ``NSObject`` (or ``Object``) for example.  When declaring
   classes intended to be root classes, the warning can be suppressed by
   marking their interfaces with ``__attribute__((objc_root_class))``.
 

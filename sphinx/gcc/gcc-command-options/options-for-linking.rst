@@ -69,7 +69,7 @@ not doing a link step.
   link-time optimizations disabled (for example, cross-module inlining 
   happens), but most of benefits of whole program optimizations are lost. 
 
-  During the incremental link (by :option:`-r` ) the linker plugin defaults to
+  During the incremental link (by :option:`-r`) the linker plugin defaults to
   rel. With current interfaces to GNU Binutils it is however not
   possible to incrementally link LTO objects and non-LTO objects into a single
   mixed object file.  If any of object files in incremental link cannot
@@ -206,7 +206,7 @@ not doing a link step.
 
   Produce a dynamically linked position independent executable on targets
   that support it.  For predictable results, you must also specify the same
-  set of options used for compilation ( :option:`-fpie`, :option:`-fPIE`,
+  set of options used for compilation (:option:`-fpie`, :option:`-fPIE`,
   or model suboptions) when you specify this linker option.
 
 .. option:: -no-pie
@@ -219,7 +219,7 @@ not doing a link step.
   it.  A static position independent executable is similar to a static
   executable, but can be loaded at any address without a dynamic linker.
   For predictable results, you must also specify the same set of options
-  used for compilation ( :option:`-fpie`, :option:`-fPIE`, or model
+  used for compilation (:option:`-fpie`, :option:`-fPIE`, or model
   suboptions) when you specify this linker option.
 
 .. option:: -pthread
@@ -258,7 +258,7 @@ not doing a link step.
   Produce a shared object which can then be linked with other objects to
   form an executable.  Not all systems support this option.  For predictable
   results, you must also specify the same set of options used for compilation
-  ( :option:`-fpic`, :option:`-fPIC`, or model suboptions) when
+  (:option:`-fpic`, :option:`-fPIC`, or model suboptions) when
   you specify this linker option.
 
   On some systems, :samp:`gcc -shared`
@@ -358,7 +358,7 @@ not doing a link step.
 
   Bind references to global symbols when building a shared object.  Warn
   about any unresolved references (unless overridden by the link editor
-  option :option:`-Xlinker -z -Xlinker defs` ).  Only a few systems support
+  option :option:`-Xlinker -z -Xlinker defs`).  Only a few systems support
   this option.
 
 .. option:: -T script

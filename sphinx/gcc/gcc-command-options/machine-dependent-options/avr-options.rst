@@ -410,7 +410,7 @@ the compiler and are subject to some limitations:
     }
 
   Instead, a stub has to be set up, i.e. the function has to be called
-  through a symbol ( ``func_4`` in the example):
+  through a symbol (``func_4`` in the example):
 
   .. code-block:: c++
 

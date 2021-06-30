@@ -51,7 +51,7 @@ deleted.
 
 ``define_subst`` can be used only in ``define_insn`` and
 ``define_expand``, it cannot be used in other expressions (e.g. in
-``define_insn_and_split`` ).
+``define_insn_and_split``).
 
 .. toctree::
   :maxdepth: 2
@@ -173,7 +173,7 @@ predicates are compared.  That can be used for more accurate filtering
 of accepted RTL-templates.
 
 ``match_operator`` matches common operators (like ``plus``,
-``minus`` ), ``unspec``, ``unspec_volatile`` operators and
+``minus``), ``unspec``, ``unspec_volatile`` operators and
 ``match_operator`` s from the original pattern if the modes match and
 ``match_operator`` from the input pattern has the same number of
 operands as the operator from the original pattern.

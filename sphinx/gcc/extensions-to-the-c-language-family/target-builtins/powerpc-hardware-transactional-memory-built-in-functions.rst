@@ -22,7 +22,7 @@ The following low level built-in functions are available with
 :option:`-mhtm` or :option:`-mcpu`:samp:`=CPU` where CPU is 'power8' or later.
 They all generate the machine instruction that is part of the name.
 
-The HTM builtins (with the exception of ``__builtin_tbegin`` ) return
+The HTM builtins (with the exception of ``__builtin_tbegin``) return
 the full 4-bit condition register value set by their associated hardware
 instruction.  The header file ``htmintrin.h`` defines some macros that can
 be used to decipher the return value.  The ``__builtin_tbegin`` builtin

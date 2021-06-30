@@ -346,7 +346,7 @@ It is occasionally useful to test a constraint from C code rather than
 implicitly via the constraint string in a ``match_operand``.  The
 generated file :samp:`tm_p.h` declares a few interfaces for working
 with constraints.  At present these are defined for all constraints
-except ``g`` (which is equivalent to ``general_operand`` ).
+except ``g`` (which is equivalent to ``general_operand``).
 
 Some valid constraint names are not valid C identifiers, so there is a
 mangling scheme for referring to them from C.  Constraint names that

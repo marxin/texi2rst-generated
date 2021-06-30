@@ -235,7 +235,7 @@ are given below.
   instructions.  If :option:`-march` is used without :option:`-mcpu`,
   the default is 'on' for ColdFire architectures and 'off' for M680x0
   architectures.  Otherwise, the default is taken from the target CPU
-  (either the default CPU, or the one specified by :option:`-mcpu` ).  For
+  (either the default CPU, or the one specified by :option:`-mcpu`).  For
   example, the default is 'off' for :option:`-mcpu`:samp:`=5206` and 'on' for
   :option:`-mcpu`:samp:`=5206e`.
 
@@ -275,7 +275,7 @@ are given below.
   compiled with the Unix compiler.
 
   Also, you must provide function prototypes for all functions that
-  take variable numbers of arguments (including ``printf`` );
+  take variable numbers of arguments (including ``printf``);
   otherwise incorrect code is generated for calls to those
   functions.
 
@@ -292,7 +292,7 @@ are given below.
 
   Control whether GCC aligns ``int``, ``long``, ``long long``,
   ``float``, ``double``, and ``long double`` variables on a 32-bit
-  boundary ( :option:`-malign-int` ) or a 16-bit boundary ( :option:`-mno-align-int` ).
+  boundary (:option:`-malign-int`) or a 16-bit boundary (:option:`-mno-align-int`).
   Aligning variables on 32-bit boundaries produces code that runs somewhat
   faster on processors with 32-bit busses at the expense of more memory.
 

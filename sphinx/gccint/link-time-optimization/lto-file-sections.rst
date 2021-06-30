@@ -17,7 +17,7 @@ in all at once from :samp:`lto/lto.c`: ``lto_file_read``.  The
 individual functions dealing with the reading/writing of each section
 are described below.
 
-* Command line options ( ``.gnu.lto_.opts`` )
+* Command line options (``.gnu.lto_.opts``)
 
   This section contains the command line options used to generate the
   object files.  This is used at link time to determine the optimization
@@ -32,7 +32,7 @@ are described below.
   usual validation done by option processing).  This is implemented in
   :samp:`lto/lto.c`: ``lto_read_all_file_options``.
 
-* Symbol table ( ``.gnu.lto_.symtab`` )
+* Symbol table (``.gnu.lto_.symtab``)
 
   This table replaces the ELF symbol table for functions and variables
   represented in the LTO IL.  Symbols used and exported by the optimized
@@ -51,7 +51,7 @@ are described below.
   The symbol table is emitted in
   :samp:`lto-streamer-out.c`: ``produce_symtab``.
 
-* Global declarations and types ( ``.gnu.lto_.decls`` )
+* Global declarations and types (``.gnu.lto_.decls``)
 
   This section contains an intermediate language dump of all
   declarations and types required to represent the callgraph, static
@@ -61,9 +61,9 @@ are described below.
   :samp:`lto-streamer-out.c`: ``produce_asm_for_decls``.  Types and
   symbols are emitted in a topological order that preserves the sharing
   of pointers when the file is read back in
-  (:samp:`lto.c`: ``read_cgraph_and_symbols`` ).
+  (:samp:`lto.c`: ``read_cgraph_and_symbols``).
 
-* The callgraph ( ``.gnu.lto_.cgraph`` )
+* The callgraph (``.gnu.lto_.cgraph``)
 
   This section contains the basic data structure used by the GCC
   inter-procedural optimization infrastructure.  This section stores an
@@ -74,13 +74,13 @@ are described below.
   :samp:`lto-streamer-out.c`: ``output_cgraph`` and read in
   :samp:`lto-cgraph.c`: ``input_cgraph``.
 
-* IPA references ( ``.gnu.lto_.refs`` )
+* IPA references (``.gnu.lto_.refs``)
 
   This section contains references between function and static
   variables.  It is emitted by :samp:`lto-cgraph.c`: ``output_refs``
   and read by :samp:`lto-cgraph.c`: ``input_refs``.
 
-* Function bodies ( ``.gnu.lto_.function_body.<name>`` )
+* Function bodies (``.gnu.lto_.function_body.<name>``)
 
   This section contains function bodies in the intermediate language
   representation.  Every function body is in a separate section to allow
@@ -91,15 +91,15 @@ are described below.
   :samp:`lto-streamer-out.c`: ``output_function`` and read in
   :samp:`lto-streamer-in.c`: ``input_function``.
 
-* Static variable initializers ( ``.gnu.lto_.vars`` )
+* Static variable initializers (``.gnu.lto_.vars``)
 
   This section contains all the symbols in the global variable pool.  It
   is emitted by :samp:`lto-cgraph.c`: ``output_varpool`` and read in
   :samp:`lto-cgraph.c`: ``input_cgraph``.
 
 * Summaries and optimization summaries used by IPA passes
-  ( ``.gnu.lto_.<xxx>``, where ``<xxx>`` is one of ``jmpfuncs``,
-  ``pureconst`` or ``reference`` )
+  (``.gnu.lto_.<xxx>``, where ``<xxx>`` is one of ``jmpfuncs``,
+  ``pureconst`` or ``reference``)
 
   These sections are used by IPA passes that need to emit summary
   information during LTO generation to be read and aggregated at

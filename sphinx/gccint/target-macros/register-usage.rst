@@ -92,7 +92,7 @@ Registers have various characteristics.
 
   Like ``CALL_USED_REGISTERS`` except this macro doesn't require
   that the entire set of ``FIXED_REGISTERS`` be included.
-  ( ``CALL_USED_REGISTERS`` must be a superset of ``FIXED_REGISTERS`` ).
+  (``CALL_USED_REGISTERS`` must be a superset of ``FIXED_REGISTERS``).
 
   Exactly one of ``CALL_USED_REGISTERS`` and ``CALL_REALLY_USED_REGISTERS``
   must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
@@ -339,7 +339,7 @@ consecutive registers are needed for a given mode.
   in registers starting at register number :samp:`{regno}` (as determined by
   multiplying GCC's notion of the size of the register when containing
   this mode by the number of registers returned by
-  ``TARGET_HARD_REGNO_NREGS`` ).  By default this is zero.
+  ``TARGET_HARD_REGNO_NREGS``).  By default this is zero.
 
   For example, if a floating-point value is stored in three 32-bit
   registers but takes up 128 bits in memory, then this would be

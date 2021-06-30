@@ -189,8 +189,8 @@ kinds of expressions:
 
   Sometimes this scheme can create two possible encodings of the same
   vector.  For example { 0, 1 } could be seen as two patterns with
-  one element each or one pattern with two elements ( :samp:`{base0}` and
-  :samp:`{base1}` ).  The canonical encoding is always the one with the
+  one element each or one pattern with two elements (:samp:`{base0}` and
+  :samp:`{base1}`).  The canonical encoding is always the one with the
   fewest patterns or (if both encodings have the same number of
   petterns) the one with the fewest encoded elements.
 
@@ -850,7 +850,7 @@ Unary and Binary Expressions
 
   These nodes represent the brace-enclosed initializers for a structure or an
   array.  They contain a sequence of component values made out of a vector of
-  constructor_elt, which is a ( ``INDEX``, ``VALUE`` ) pair.
+  constructor_elt, which is a (``INDEX``, ``VALUE``) pair.
 
   If the ``TREE_TYPE`` of the ``CONSTRUCTOR`` is a ``RECORD_TYPE``,
   ``UNION_TYPE`` or ``QUAL_UNION_TYPE`` then the ``INDEX`` of each
@@ -918,7 +918,7 @@ Unary and Binary Expressions
   always be executed in the order opposite to that in which they were
   encountered.  Note that if a temporary is created on one branch of a
   conditional operator (i.e., in the second or third operand to a
-  ``COND_EXPR`` ), the cleanup must be run only if that branch is
+  ``COND_EXPR``), the cleanup must be run only if that branch is
   actually executed.
 
 .. envvar:: VA_ARG_EXPR
@@ -1009,7 +1009,7 @@ Vectors
 
   These nodes represent widening vector multiplication of the high and low
   parts of the two input vectors, respectively.  Their operands are vectors
-  that contain the same number of elements ( ``N`` ) of the same integral type.
+  that contain the same number of elements (``N``) of the same integral type.
   The result is a vector that contains half as many elements, of an integral type
   whose size is twice as wide.  In the case of ``VEC_WIDEN_MULT_HI_EXPR`` the
   high ``N/2`` elements of the two vector are multiplied to produce the
@@ -1021,7 +1021,7 @@ Vectors
 
   These nodes represent widening vector addition of the high and low parts of
   the two input vectors, respectively.  Their operands are vectors that contain
-  the same number of elements ( ``N`` ) of the same integral type. The result
+  the same number of elements (``N``) of the same integral type. The result
   is a vector that contains half as many elements, of an integral type whose size
   is twice as wide.  In the case of ``VEC_WIDEN_PLUS_HI_EXPR`` the high
   ``N/2`` elements of the two vectors are added to produce the vector of
@@ -1033,7 +1033,7 @@ Vectors
 
   These nodes represent widening vector subtraction of the high and low parts of
   the two input vectors, respectively.  Their operands are vectors that contain
-  the same number of elements ( ``N`` ) of the same integral type. The high/low
+  the same number of elements (``N``) of the same integral type. The high/low
   elements of the second vector are subtracted from the high/low elements of the
   first. The result is a vector that contains half as many elements, of an
   integral type whose size is twice as wide.  In the case of

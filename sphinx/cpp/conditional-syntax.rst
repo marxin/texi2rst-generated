@@ -123,7 +123,7 @@ restrictions.  It may contain
 
 * Arithmetic operators for addition, subtraction, multiplication,
   division, bitwise operations, shifts, comparisons, and logical
-  operations ( ``&&`` and ``||`` ).  The latter two obey the usual
+  operations (``&&`` and ``||``).  The latter two obey the usual
   short-circuiting rules of standard C.
 
 * Macros.  All macros in the expression are expanded before actual

@@ -401,7 +401,7 @@ The following attributes are supported on most targets.
   You may use the ``section`` attribute with initialized or
   uninitialized global variables but the linker requires
   each object be defined once, with the exception that uninitialized
-  variables tentatively go in the ``common`` (or ``bss`` ) section
+  variables tentatively go in the ``common`` (or ``bss``) section
   and can be multiply 'defined'.  Using the ``section`` attribute
   changes what section the variable goes into and may cause the
   linker to issue an error if an uninitialized variable has multiple
@@ -864,7 +864,7 @@ control bus which is specified with ``cb`` attributes.
 
   Variables with the ``near`` attribute are assumed to have addresses
   that fit in a 24-bit addressing mode.  This is the default for large
-  variables ( ``-mtiny=4`` is the default) but this attribute can
+  variables (``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
 .. option:: far
@@ -1116,7 +1116,7 @@ One attribute is currently defined for xstormy16 configurations:
 
   .. index:: below100 variable attribute, Xstormy16
 
-  If a variable has the ``below100`` attribute ( ``BELOW100`` is
+  If a variable has the ``below100`` attribute (``BELOW100`` is
   allowed also), GCC places the variable in the first 0x100 bytes of
   memory and use special opcodes to access it.  Such variables are
   placed in either the ``.bss_below100`` section or the

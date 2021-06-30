@@ -174,7 +174,7 @@ control passing certain arguments in registers.
   calling convention, no functions pop their arguments, so the value of
   the macro is always 0 in this case.  But an alternative calling
   convention is available in which functions that take a fixed number of
-  arguments pop them but other functions (such as ``printf`` ) pop
+  arguments pop them but other functions (such as ``printf``) pop
   nothing (the caller pops all).  When this convention is in use,
   :samp:`{funtype}` is examined to determine whether a function takes a fixed
   number of arguments.

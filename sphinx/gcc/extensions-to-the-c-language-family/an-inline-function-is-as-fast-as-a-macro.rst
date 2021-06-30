@@ -34,7 +34,7 @@ inline.  One is available with :option:`-std`:samp:`=gnu89` or
 on all inline declarations, another when
 :option:`-std`:samp:`=c99`,
 :option:`-std`:samp:`=gnu99` or an option for a later C version is used
-(without :option:`-fgnu89-inline` ), and the third
+(without :option:`-fgnu89-inline`), and the third
 is used when compiling C++.
 
 To declare a function inline, use the ``inline`` keyword in its
@@ -136,7 +136,7 @@ if you had only declared the function, and had not defined it.
 This combination of ``inline`` and ``extern`` has almost the
 effect of a macro.  The way to use it is to put a function definition in
 a header file with these keywords, and put another copy of the
-definition (lacking ``inline`` and ``extern`` ) in a library file.
+definition (lacking ``inline`` and ``extern``) in a library file.
 The definition in the header file causes most calls to the function
 to be inlined.  If any uses of the function remain, they refer to
 the single copy in the library.

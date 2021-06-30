@@ -155,7 +155,7 @@ A few other macros and functions are usable with all types:
 
 .. envvar:: TYPE_NAME
 
-  This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
+  This macro returns a declaration (in the form of a ``TYPE_DECL``) for
   the type.  (Note this macro does *not* return an
   ``IDENTIFIER_NODE``, as you might expect, given its name!)  You can
   look at the ``DECL_NAME`` of the ``TYPE_DECL`` to obtain the
@@ -501,8 +501,8 @@ be ``NULL_TREE``.
 
 To determine the scope of a function, you can use the
 ``DECL_CONTEXT`` macro.  This macro will return the class
-(either a ``RECORD_TYPE`` or a ``UNION_TYPE`` ) or namespace (a
-``NAMESPACE_DECL`` ) of which the function is a member.  For a virtual
+(either a ``RECORD_TYPE`` or a ``UNION_TYPE``) or namespace (a
+``NAMESPACE_DECL``) of which the function is a member.  For a virtual
 function, this macro returns the class in which the function was
 actually defined, not the base class in which the virtual declaration
 occurred.
@@ -634,7 +634,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
   value.  (The ``THUNK_DELTA`` is an ``int``, not an
   ``INTEGER_CST``.)
 
-  Then, if ``THUNK_VCALL_OFFSET`` (an ``INTEGER_CST`` ) is nonzero
+  Then, if ``THUNK_VCALL_OFFSET`` (an ``INTEGER_CST``) is nonzero
   the adjusted ``this`` pointer must be adjusted again.  The complete
   calculation is given by the following pseudo-code:
 
@@ -901,7 +901,7 @@ several statements chained together.
   expression.
 
   If the condition is a ``TREE_LIST``, then the ``TREE_PURPOSE`` is
-  a statement (usually a ``DECL_STMT`` ).  Each time the condition is
+  a statement (usually a ``DECL_STMT``).  Each time the condition is
   evaluated, the statement should be executed.  Then, the
   ``TREE_VALUE`` should be used as the conditional expression itself.
   This representation is used to handle C++ code like this:

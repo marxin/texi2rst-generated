@@ -461,7 +461,7 @@ it.
   This option will make :command:`gfortran` generate calls to BLAS functions
   for some matrix operations like ``MATMUL``, instead of using our own
   algorithms, if the size of the matrices involved is larger than a given
-  limit (see :option:`-fblas-matmul-limit` ).  This may be profitable if an
+  limit (see :option:`-fblas-matmul-limit`).  This may be profitable if an
   optimized vendor BLAS library is available.  The BLAS library will have
   to be specified at link time.
 
@@ -548,7 +548,7 @@ it.
   and ``COMPLEX`` variables with a quiet NaN. For a signalling NaN
   use :option:`-finit-real`:samp:`=snan`; note, however, that compile-time
   optimizations may convert them into quiet NaN and that trapping
-  needs to be enabled (e.g. via :option:`-ffpe-trap` ).
+  needs to be enabled (e.g. via :option:`-ffpe-trap`).
 
   The :option:`-finit-integer` option will parse the value into an
   integer of type ``INTEGER(kind=C_LONG)`` on the host.  Said value
@@ -635,7 +635,7 @@ it.
 
   * replacing ``TRIM(a)`` with ``a(1:LEN_TRIM(a))`` and
 
-  * short-circuiting of logical operators ( ``.AND.`` and ``.OR.`` ).
+  * short-circuiting of logical operators (``.AND.`` and ``.OR.``).
 
   It can be deselected by specifying :option:`-fno-frontend-optimize`.
 

@@ -66,7 +66,7 @@ movm
   address except to use it as it stands.  If it is copied, it will not be
   replaced with a valid address.  No attempt should be made to make such
   an address into a valid address and no routine (such as
-  ``change_address`` ) that will do so may be called.  Note that
+  ``change_address``) that will do so may be called.  Note that
   ``general_operand`` will fail when applied to such an address.
 
   .. index:: reload_in_progress
@@ -101,7 +101,7 @@ movm
   It is obligatory to support floating point :samp:`mov{m}`
   instructions into and out of any registers that can hold fixed point
   values, because unions and structures (which have modes ``SImode`` or
-  ``DImode`` ) can be in those registers and they may have floating
+  ``DImode``) can be in those registers and they may have floating
   point members.
 
   There may also be a need to support fixed point :samp:`mov{m}`
@@ -1633,30 +1633,30 @@ rintm2
   .. index:: lrintmn2
 
 lrintmn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as a signed number according to the current
-  rounding mode and store in operand 0 (which has mode :samp:`{n}` ).
+  rounding mode and store in operand 0 (which has mode :samp:`{n}`).
 
   .. index:: lroundmn2
 
 lroundmn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as a signed number rounding to nearest and away
-  from zero and store in operand 0 (which has mode :samp:`{n}` ).
+  from zero and store in operand 0 (which has mode :samp:`{n}`).
 
   .. index:: lfloormn2
 
 lfloormn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as a signed number rounding down and store in
-  operand 0 (which has mode :samp:`{n}` ).
+  operand 0 (which has mode :samp:`{n}`).
 
   .. index:: lceilmn2
 
 lceilmn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as a signed number rounding up and store in
-  operand 0 (which has mode :samp:`{n}` ).
+  operand 0 (which has mode :samp:`{n}`).
 
   .. index:: copysignm3 instruction pattern
 
@@ -1877,7 +1877,7 @@ ffsm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1895,7 +1895,7 @@ clrsbm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1912,7 +1912,7 @@ clzm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1929,7 +1929,7 @@ ctzm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1943,7 +1943,7 @@ popcountm2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -1958,7 +1958,7 @@ paritym2
   operand 1 has mode :samp:`{m}` but operand 0 can have whatever scalar
   integer mode is suitable for the target.  The compiler will insert
   conversion instructions as necessary (typically to convert the result
-  to the same width as ``int`` ).  When :samp:`{m}` is a vector, both
+  to the same width as ``int``).  When :samp:`{m}` is a vector, both
   operands must have mode :samp:`{m}`.
 
   This pattern is not allowed to ``FAIL``.
@@ -2136,7 +2136,7 @@ cmpmemm
 
 strlenm
   Compute the length of a string, with three operands.
-  Operand 0 is the result (of mode :samp:`{m}` ), operand 1 is
+  Operand 0 is the result (of mode :samp:`{m}`), operand 1 is
   a ``mem`` referring to the first character of the string,
   operand 2 is the character to search for (normally zero),
   and operand 3 is a constant describing the known alignment
@@ -2145,23 +2145,23 @@ strlenm
   .. index:: floatmn2 instruction pattern
 
 floatmn2
-  Convert signed integer operand 1 (valid for fixed point mode :samp:`{m}` ) to
+  Convert signed integer operand 1 (valid for fixed point mode :samp:`{m}`) to
   floating point mode :samp:`{n}` and store in operand 0 (which has mode
-  :samp:`{n}` ).
+  :samp:`{n}`).
 
   .. index:: floatunsmn2 instruction pattern
 
 floatunsmn2
-  Convert unsigned integer operand 1 (valid for fixed point mode :samp:`{m}` )
+  Convert unsigned integer operand 1 (valid for fixed point mode :samp:`{m}`)
   to floating point mode :samp:`{n}` and store in operand 0 (which has mode
-  :samp:`{n}` ).
+  :samp:`{n}`).
 
   .. index:: fixmn2 instruction pattern
 
 fixmn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as a signed number and store in operand 0 (which
-  has mode :samp:`{n}` ).  This instruction's result is defined only when
+  has mode :samp:`{n}`).  This instruction's result is defined only when
   the value of operand 1 is an integer.
 
   If the machine description defines this pattern, it also needs to
@@ -2170,17 +2170,17 @@ fixmn2
   .. index:: fixunsmn2 instruction pattern
 
 fixunsmn2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to fixed
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to fixed
   point mode :samp:`{n}` as an unsigned number and store in operand 0 (which
-  has mode :samp:`{n}` ).  This instruction's result is defined only when the
+  has mode :samp:`{n}`).  This instruction's result is defined only when the
   value of operand 1 is an integer.
 
   .. index:: ftruncm2 instruction pattern
 
 ftruncm2
-  Convert operand 1 (valid for floating point mode :samp:`{m}` ) to an
+  Convert operand 1 (valid for floating point mode :samp:`{m}`) to an
   integer value, still represented in floating point mode :samp:`{m}`, and
-  store it in operand 0 (valid for floating point mode :samp:`{m}` ).
+  store it in operand 0 (valid for floating point mode :samp:`{m}`).
 
   .. index:: fix_truncmn2 instruction pattern
 
@@ -2197,29 +2197,29 @@ fixuns_truncmn2
   .. index:: truncmn2 instruction pattern
 
 truncmn2
-  Truncate operand 1 (valid for mode :samp:`{m}` ) to mode :samp:`{n}` and
-  store in operand 0 (which has mode :samp:`{n}` ).  Both modes must be fixed
+  Truncate operand 1 (valid for mode :samp:`{m}`) to mode :samp:`{n}` and
+  store in operand 0 (which has mode :samp:`{n}`).  Both modes must be fixed
   point or both floating point.
 
   .. index:: extendmn2 instruction pattern
 
 extendmn2
-  Sign-extend operand 1 (valid for mode :samp:`{m}` ) to mode :samp:`{n}` and
-  store in operand 0 (which has mode :samp:`{n}` ).  Both modes must be fixed
+  Sign-extend operand 1 (valid for mode :samp:`{m}`) to mode :samp:`{n}` and
+  store in operand 0 (which has mode :samp:`{n}`).  Both modes must be fixed
   point or both floating point.
 
   .. index:: zero_extendmn2 instruction pattern
 
 zero_extendmn2
-  Zero-extend operand 1 (valid for mode :samp:`{m}` ) to mode :samp:`{n}` and
-  store in operand 0 (which has mode :samp:`{n}` ).  Both modes must be fixed
+  Zero-extend operand 1 (valid for mode :samp:`{m}`) to mode :samp:`{n}` and
+  store in operand 0 (which has mode :samp:`{n}`).  Both modes must be fixed
   point.
 
   .. index:: fractmn2 instruction pattern
 
 fractmn2
   Convert operand 1 of mode :samp:`{m}` to mode :samp:`{n}` and store in
-  operand 0 (which has mode :samp:`{n}` ).  Mode :samp:`{m}` and mode :samp:`{n}`
+  operand 0 (which has mode :samp:`{n}`).  Mode :samp:`{m}` and mode :samp:`{n}`
   could be fixed-point to fixed-point, signed integer to fixed-point,
   fixed-point to signed integer, floating-point to fixed-point,
   or fixed-point to floating-point.
@@ -2229,7 +2229,7 @@ fractmn2
 
 satfractmn2
   Convert operand 1 of mode :samp:`{m}` to mode :samp:`{n}` and store in
-  operand 0 (which has mode :samp:`{n}` ).  Mode :samp:`{m}` and mode :samp:`{n}`
+  operand 0 (which has mode :samp:`{n}`).  Mode :samp:`{m}` and mode :samp:`{n}`
   could be fixed-point to fixed-point, signed integer to fixed-point,
   or floating-point to fixed-point.
   When overflows or underflows happen, the instruction saturates the
@@ -2239,7 +2239,7 @@ satfractmn2
 
 fractunsmn2
   Convert operand 1 of mode :samp:`{m}` to mode :samp:`{n}` and store in
-  operand 0 (which has mode :samp:`{n}` ).  Mode :samp:`{m}` and mode :samp:`{n}`
+  operand 0 (which has mode :samp:`{n}`).  Mode :samp:`{m}` and mode :samp:`{n}`
   could be unsigned integer to fixed-point, or
   fixed-point to unsigned integer.
   When overflows or underflows happen, the results are undefined.
@@ -2248,7 +2248,7 @@ fractunsmn2
 
 satfractunsmn2
   Convert unsigned integer operand 1 of mode :samp:`{m}` to fixed-point mode
-  :samp:`{n}` and store in operand 0 (which has mode :samp:`{n}` ).
+  :samp:`{n}` and store in operand 0 (which has mode :samp:`{n}`).
   When overflows or underflows happen, the instruction saturates the
   results to the maximum or the minimum.
 
@@ -2344,7 +2344,7 @@ extzv
   .. index:: insv instruction pattern
 
 insv
-  Store operand 3 (which must be valid for ``word_mode`` ) into a
+  Store operand 3 (which must be valid for ``word_mode``) into a
   bit-field in operand 0, where operand 1 specifies the width in bits and
   operand 2 the starting bit.  Operand 0 may have mode ``byte_mode`` or
   ``word_mode`` ; often ``word_mode`` is allowed only for registers.
@@ -3108,7 +3108,7 @@ sync_compare_and_swapmode
   ``cbranchcc4`` and/or ``cstorecc4`` instructions.  GCC will then
   be able to take the destination of the ``MODE_CC`` set and pass it
   to the ``cbranchcc4`` or ``cstorecc4`` pattern as the first
-  operand of the comparison (the second will be ``(const_int 0)`` ).
+  operand of the comparison (the second will be ``(const_int 0)``).
 
   For targets where the operating system may provide support for this
   operation via library calls, the ``sync_compare_and_swap_optab``

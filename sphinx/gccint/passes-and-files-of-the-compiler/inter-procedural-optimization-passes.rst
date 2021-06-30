@@ -209,8 +209,8 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
 
 * IPA pure/const analysis
 
-  This pass marks functions as being either const ( ``TREE_READONLY`` ) or
-  pure ( ``DECL_PURE_P`` ).  The per-function information is produced
+  This pass marks functions as being either const (``TREE_READONLY``) or
+  pure (``DECL_PURE_P``).  The per-function information is produced
   by ``pure_const_generate_summary``, then the global information is computed
   by performing a transitive closure over the call graph.   It is located in
   :samp:`ipa-pure-const.c` and is described by ``pass_ipa_pure_const``.

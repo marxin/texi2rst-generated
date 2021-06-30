@@ -24,8 +24,8 @@ SIGNAL --- Signal handling subroutine (or function)
     Shall be a scalar integer, with ``INTENT(IN)``
 
   :param HANDLER:
-    Signal handler ( ``INTEGER FUNCTION`` or
-    ``SUBROUTINE`` ) or dummy/global ``INTEGER`` scalar.
+    Signal handler (``INTEGER FUNCTION`` or
+    ``SUBROUTINE``) or dummy/global ``INTEGER`` scalar.
     ``INTEGER``. It is ``INTENT(IN)``.
 
   :param STATUS:

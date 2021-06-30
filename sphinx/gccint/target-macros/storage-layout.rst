@@ -434,7 +434,7 @@ See :ref:`run-time-target`.
   Define this if you wish to imitate the way many other C compilers handle
   alignment of bit-fields and the structures that contain them.
 
-  The behavior is that the type written for a named bit-field ( ``int``,
+  The behavior is that the type written for a named bit-field (``int``,
   ``short``, or other integer type) imposes an alignment for the entire
   structure, as if the structure really did contain an ordinary field of
   that type.  In addition, the bit-field is placed within the structure so

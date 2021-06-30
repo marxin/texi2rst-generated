@@ -161,7 +161,7 @@ statement iterators.
   Insert statement ``STMT`` before the statement pointed-to by iterator
   ``I``, update ``STMT`` 's basic block and scan it for new operands.  ``MODE``
   specifies how to update iterator ``I`` after insertion (see enum
-  ``gsi_iterator_update`` ).
+  ``gsi_iterator_update``).
 
 .. function:: void gsi_insert_seq_before (gimple_stmt_iterator *i, gimple_seq seq, enum gsi_iterator_update mode)
 
@@ -172,7 +172,7 @@ statement iterators.
   Insert statement ``STMT`` after the statement pointed-to by iterator
   ``I``, update ``STMT`` 's basic block and scan it for new operands.  ``MODE``
   specifies how to update iterator ``I`` after insertion (see enum
-  ``gsi_iterator_update`` ).
+  ``gsi_iterator_update``).
 
 .. function:: void gsi_insert_seq_after (gimple_stmt_iterator *i, gimple_seq seq, enum gsi_iterator_update mode)
 

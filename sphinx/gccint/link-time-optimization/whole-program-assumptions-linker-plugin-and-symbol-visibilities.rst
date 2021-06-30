@@ -31,7 +31,7 @@ whole program when doing link-time optimization.  Strictly
 speaking, the whole program is rarely visible even at link-time.
 Standard system libraries are usually linked dynamically or not
 provided with the link-time information.  In GCC, the whole
-program option ( :option:`-fwhole-program` ) asserts that every
+program option (:option:`-fwhole-program`) asserts that every
 function and variable defined in the current compilation
 unit is static, except for function ``main`` (note: at
 link time, the current unit is the union of all objects compiled

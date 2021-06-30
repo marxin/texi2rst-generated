@@ -246,9 +246,9 @@ These options are defined for AArch64 implementations:
   specified, the right-most feature is used.
 
   GCC uses :samp:`{name}` to determine what kind of instructions it can emit when
-  generating assembly code (as if by :option:`-march` ) and to determine
+  generating assembly code (as if by :option:`-march`) and to determine
   the target processor for which to tune for performance (as if
-  by :option:`-mtune` ).  Where this option is used in conjunction
+  by :option:`-mtune`).  Where this option is used in conjunction
   with :option:`-march` or :option:`-mtune`, those options take precedence
   over the appropriate part of this option.
 

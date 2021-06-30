@@ -148,8 +148,8 @@ Vector shuffling is available using functions
 ``__builtin_shuffle (vec0, vec1, mask)``.
 Both functions construct a permutation of elements from one or two
 vectors and return a vector of the same type as the input vector(s).
-The :samp:`{mask}` is an integral vector with the same width ( :samp:`{W}` )
-and element count ( :samp:`{N}` ) as the output vector.
+The :samp:`{mask}` is an integral vector with the same width (:samp:`{W}`)
+and element count (:samp:`{N}`) as the output vector.
 
 The elements of the input vectors are numbered in memory ordering of
 :samp:`{vec0}` beginning at 0 and :samp:`{vec1}` beginning at :samp:`{N}`.  The

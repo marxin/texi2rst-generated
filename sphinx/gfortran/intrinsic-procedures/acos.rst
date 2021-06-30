@@ -18,7 +18,7 @@ ACOS --- Arccosine function
 
 .. function:: ACOS(X)
 
-  ``ACOS(X)`` computes the arccosine of :samp:`{X}` (inverse of ``COS(X)`` ).
+  ``ACOS(X)`` computes the arccosine of :samp:`{X}` (inverse of ``COS(X)``).
 
   :param X:
     The type shall either be ``REAL`` with a magnitude that is

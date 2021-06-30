@@ -178,8 +178,8 @@ languages, rather than to fundamental aspects of storage layout.
 
 .. c:macro:: SIZETYPE
 
-  GCC defines internal types ( ``sizetype``, ``ssizetype``,
-  ``bitsizetype`` and ``sbitsizetype`` ) for expressions
+  GCC defines internal types (``sizetype``, ``ssizetype``,
+  ``bitsizetype`` and ``sbitsizetype``) for expressions
   dealing with size.  This macro is a C expression for a string describing
   the name of the data type from which the precision of ``sizetype``
   is extracted.
@@ -377,6 +377,6 @@ languages, rather than to fundamental aspects of storage layout.
 
   There are a few non-descriptor entries in the vtable at offsets below
   zero.  If these entries must be padded (say, to preserve the alignment
-  specified by ``TARGET_VTABLE_ENTRY_ALIGN`` ), set this to the number
+  specified by ``TARGET_VTABLE_ENTRY_ALIGN``), set this to the number
   of words in each data entry.
 

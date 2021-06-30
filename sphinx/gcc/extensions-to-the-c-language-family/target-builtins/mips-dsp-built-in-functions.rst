@@ -109,8 +109,8 @@ the following types:
 use ``q31`` to indicate a Q31 fractional value and ``i32`` to
 indicate a 32-bit integer value.  Similarly, ``a64`` is the same as
 ``long long``, but we use ``a64`` to indicate values that are
-placed in one of the four DSP accumulators ( ``$ac0``,
-``$ac1``, ``$ac2`` or ``$ac3`` ).
+placed in one of the four DSP accumulators (``$ac0``,
+``$ac1``, ``$ac2`` or ``$ac3``).
 
 Also, some built-in functions prefer or require immediate numbers as
 parameters, because the corresponding DSP instructions accept both immediate

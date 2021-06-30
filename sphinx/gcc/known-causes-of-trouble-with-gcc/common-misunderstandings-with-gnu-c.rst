@@ -303,7 +303,7 @@ G++ implements the 'intuitive' algorithm for copy-assignment: assign all
 direct bases, then assign all members.  In that algorithm, the virtual
 base subobject can be encountered more than once.  In the example, copying
 proceeds in the following order: :samp:`val`, :samp:`name` (via
-``strdup`` ), :samp:`bval`, and :samp:`name` again.
+``strdup``), :samp:`bval`, and :samp:`name` again.
 
 If application code relies on copy-assignment, a user-defined
 copy-assignment operator removes any uncertainties.  With such an

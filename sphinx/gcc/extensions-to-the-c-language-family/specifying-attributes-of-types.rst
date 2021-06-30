@@ -508,7 +508,7 @@ The following type attributes are supported on most targets.
 
   .. index:: unused type attribute
 
-  When attached to a type (including a ``union`` or a ``struct`` ),
+  When attached to a type (including a ``union`` or a ``struct``),
   this attribute means that variables of that type are meant to appear
   possibly unused.  GCC does not produce a warning for any variables of
   that type, even if the variable appears to do nothing.  This is often

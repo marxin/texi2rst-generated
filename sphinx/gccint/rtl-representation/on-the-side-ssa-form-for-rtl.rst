@@ -202,13 +202,13 @@ need phi nodes because their live values can only come from one source.)
 The contents of a function are therefore represented using a
 four-level hierarchy:
 
-* functions ( ``rtl_ssa::function_info`` ), which contain ...
+* functions (``rtl_ssa::function_info``), which contain ...
 
-* extended basic blocks ( ``rtl_ssa::ebb_info`` ), which contain ...
+* extended basic blocks (``rtl_ssa::ebb_info``), which contain ...
 
-* basic blocks ( ``rtl_ssa::bb_info`` ), which contain ...
+* basic blocks (``rtl_ssa::bb_info``), which contain ...
 
-* instructions ( ``rtl_ssa::insn_info`` )
+* instructions (``rtl_ssa::insn_info``)
 
 In dumps, a basic block is identified as ``bbn``, where :samp:`{n}`
 is the index of the associated CFG ``basic_block`` structure.
@@ -361,12 +361,12 @@ RTL SSA Access Lists
 
 All the definitions of a resource are chained together in reverse postorder.
 In general, this list can contain an arbitrary mix of both sets
-( ``rtl_ssa::set_info`` ) and clobbers ( ``rtl_ssa::clobber_info`` ).
+(``rtl_ssa::set_info``) and clobbers (``rtl_ssa::clobber_info``).
 However, it is often useful to skip over all intervening clobbers
 of a resource in order to find the next set.  The list is constructed
 in such a way that this can be done in amortized constant time.
 
-All uses ( ``rtl_ssa::use_info`` ) of a given set are also chained
+All uses (``rtl_ssa::use_info``) of a given set are also chained
 together into a list.  This list of uses is divided into three parts:
 
 * uses by 'real' nondebug instructions (see :ref:`real-rtl-ssa-insns`)
@@ -520,14 +520,14 @@ Next, the pass should create an ``rtl_ssa::insn_change`` object
 for the instruction that it wants to change.  This object specifies
 several things:
 
-* what the instruction's new list of uses should be ( ``new_uses`` ).
+* what the instruction's new list of uses should be (``new_uses``).
   By default this is the same as the instruction's current list of uses.
 
-* what the instruction's new list of definitions should be ( ``new_defs`` ).
+* what the instruction's new list of definitions should be (``new_defs``).
   By default this is the same as the instruction's current list of
   definitions.
 
-* where the instruction should be located ( ``move_range`` ).
+* where the instruction should be located (``move_range``).
   This is a range of instructions after which the instruction could
   be placed, represented as an ``rtl_ssa::insn_range``.
   By default the instruction must remain at its current position.

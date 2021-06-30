@@ -75,7 +75,7 @@ Some macros can be used with any kind of declaration.  These include:
 
   This macro returns the name of the file in which the entity was
   declared, as a ``char*``.  For an entity declared implicitly by the
-  compiler (like ``__builtin_memcpy`` ), this will be the string
+  compiler (like ``__builtin_memcpy``), this will be the string
   ``"<internal>"``.
 
 .. envvar:: EXPR_LINENO

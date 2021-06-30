@@ -258,7 +258,7 @@ _gfortran_caf_register --- Registering coarrays
     status. Note that for critical blocks, the locking is only required on one
     image; in the locking statement, the processor shall always pass an
     image index of one for critical-block lock variables
-    ( ``CAF_REGTYPE_CRITICAL`` ). For lock types and critical-block variables,
+    (``CAF_REGTYPE_CRITICAL``). For lock types and critical-block variables,
     the initial value shall be unlocked (or, respectively, not in critical
     section) such as the value false; for event types, the initial state should
     be no event, e.g. zero.
@@ -1041,7 +1041,7 @@ _gfortran_caf_sync_images --- Barrier for selected images
   Synchronization between the specified images; the program only continues on a
   given image after this function has been called on all images specified for
   that image. Note that one image can wait for all other images in the current
-  team (e.g. via ``sync images(*)`` ) while those only wait for that specific
+  team (e.g. via ``sync images(*)``) while those only wait for that specific
   image.  Additionally, ``sync images`` ensures that all pending data
   transfers of previous segments have completed.
 
@@ -1173,7 +1173,7 @@ _gfortran_caf_atomic_define --- Atomic variable assignment
     ``BT_LOGICAL`` (2).
 
   :param kind:
-    intent(in)  The kind value (only 4; always ``int`` )
+    intent(in)  The kind value (only 4; always ``int``)
 
 .. _gfortran_caf_atomic_ref:
 
@@ -1209,7 +1209,7 @@ _gfortran_caf_atomic_ref --- Atomic variable reference
     ``BT_LOGICAL`` (2).
 
   :param kind:
-    The kind value (only 4; always ``int`` )
+    The kind value (only 4; always ``int``)
 
 .. _gfortran_caf_atomic_cas:
 
@@ -1255,7 +1255,7 @@ _gfortran_caf_atomic_cas --- Atomic compare and swap
     ``BT_LOGICAL`` (2).
 
   :param kind:
-    intent(in)  The kind value (only 4; always ``int`` )
+    intent(in)  The kind value (only 4; always ``int``)
 
 .. _gfortran_caf_atomic_op:
 
@@ -1306,7 +1306,7 @@ _gfortran_caf_atomic_op --- Atomic operation
     ``BT_LOGICAL`` (2)
 
   :param kind:
-    intent(in)  the kind value (only 4; always ``int`` )
+    intent(in)  the kind value (only 4; always ``int``)
 
 .. _gfortran_caf_co_broadcast:
 
@@ -1322,7 +1322,7 @@ _gfortran_caf_co_broadcast --- Sending data to all images
 
   :param a:
     intent(inout)  An array descriptor with the data to be
-    broadcasted (on :samp:`{source_image}` ) or to be received (other images).
+    broadcasted (on :samp:`{source_image}`) or to be received (other images).
 
   :param source_image:
     intent(in)  The ID of the image from which the

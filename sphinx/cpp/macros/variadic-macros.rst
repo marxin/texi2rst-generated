@@ -141,6 +141,6 @@ replacement list of a variadic macro.
 Variadic macros became a standard part of the C language with C99.  
 GNU CPP previously supported them
 with a named variable argument
-(:samp:`args...`, not :samp:`...` and ``__VA_ARGS__`` ), which
+(:samp:`args...`, not :samp:`...` and ``__VA_ARGS__``), which
 is still supported for backward compatibility.
 

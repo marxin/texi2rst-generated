@@ -457,7 +457,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   template, the compiler normally prints the signature of the
   template followed by the template arguments and any typedefs or
   typenames in the signature (e.g. ``void f(T) [with T = int]``
-  rather than ``void f(int)`` ) so that it's clear which template is
+  rather than ``void f(int)``) so that it's clear which template is
   involved.  When an error message refers to a specialization of a class
   template, the compiler omits any template arguments that match
   the default template arguments for that template.  If either of these
@@ -472,7 +472,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Disable generation of information about every class with virtual
   functions for use by the C++ run-time type identification features
-  ( ``dynamic_cast`` and ``typeid`` ).  If you don't use those parts
+  (``dynamic_cast`` and ``typeid``).  If you don't use those parts
   of the language, you can save some space by using this flag.  Note that
   exception handling uses the same information, but G++ generates it as
   needed. The ``dynamic_cast`` operator can still be used for casts that
@@ -647,7 +647,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   :option:`-std`:samp:`=c++98`, :option:`-std`:samp:`=gnu++98`, :option:`-std`:samp:`=gnu++11`,
   :option:`-std`:samp:`=gnu++14`.
   This option is off by default
-  for ISO C++11 onwards ( :option:`-std`:samp:`=c++11`, ...).
+  for ISO C++11 onwards (:option:`-std`:samp:`=c++11`, ...).
 
 .. option:: -fno-ext-numeric-literals
 
@@ -674,7 +674,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   all read CMI pathnames.  The :samp:`{module}` form will not reading a
   specific module's CMI.  :samp:`{module}` may be a named module or a
   header-unit (the latter indicated by either being a pathname containing
-  directory separators or enclosed in ``<>`` or ``""`` ).
+  directory separators or enclosed in ``<>`` or ``""``).
 
 .. option:: -stdlib=libstdc++,libc++
 
@@ -973,7 +973,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Warn when a noexcept-expression evaluates to false because of a call
   to a function that does not have a non-throwing exception
-  specification (i.e. ``throw()`` or ``noexcept`` ) but is known by
+  specification (i.e. ``throw()`` or ``noexcept``) but is known by
   the compiler to never throw an exception.
 
 .. option:: -Wno-noexcept
@@ -1360,8 +1360,8 @@ In addition, these warning options have meanings only for C++ programs:
     C++ and Objective-C++ only
 
   Warn if an old-style (C-style) cast to a non-void type is used within
-  a C++ program.  The new-style casts ( ``dynamic_cast``,
-  ``static_cast``, ``reinterpret_cast``, and ``const_cast`` ) are
+  a C++ program.  The new-style casts (``dynamic_cast``,
+  ``static_cast``, ``reinterpret_cast``, and ``const_cast``) are
   less vulnerable to unintended effects and much easier to search for.
 
 .. option:: -Wno-old-style-cast

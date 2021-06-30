@@ -19,7 +19,7 @@ ACOSD --- Arccosine function, degrees
 .. function:: ACOSD(X)
 
   ``ACOSD(X)`` computes the arccosine of :samp:`{X}` in degrees (inverse of
-  ``COSD(X)`` ).
+  ``COSD(X)``).
 
   :param X:
     The type shall either be ``REAL`` with a magnitude that is

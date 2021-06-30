@@ -273,7 +273,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   specified: dump output files (e.g. those requested by :option:`-fdump-*`
   options) with the input name suffix, and aux output files (those
   requested by other non-dump options, e.g. ``-save-temps``,
-  ``-gsplit-dwarf``, ``-fcallgraph-info`` ) without it.
+  ``-gsplit-dwarf``, ``-fcallgraph-info``) without it.
 
   Similar suffix differentiation of dump and aux outputs can be attained
   for explicitly-given :option:`-dumpbase basename.suf` by also specifying
@@ -437,7 +437,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   When compiling and then linking from multiple input files, a defaulted
   or explicitly specified :samp:`{dumppfx}` also undergoes the :samp:`{dumpbase}` -
   transformation above (e.g. the compilation of :samp:`foo.c` and
-  :samp:`bar.c` above, but without :option:`-c` ).  If neither
+  :samp:`bar.c` above, but without :option:`-c`).  If neither
   :option:`-dumpdir` nor :option:`-dumpbase` are given, the linker output
   base name, minus :samp:`{auxdropsuf}`, if specified, or the executable
   suffix otherwise, plus a dash is appended to the default :samp:`{dumppfx}`

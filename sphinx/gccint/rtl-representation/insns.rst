@@ -22,7 +22,7 @@ id-number that distinguishes it from all other insns in the current
 function (after delayed branch scheduling, copies of an insn with the
 same id-number may be present in multiple places in a function, but
 these copies will always be identical and will only appear inside a
-``sequence`` ), and chain pointers to the preceding and following
+``sequence``), and chain pointers to the preceding and following
 insns.  These three fields occupy the same position in every insn,
 independent of the expression code of the insn.  They could be accessed
 with ``XEXP`` and ``XINT``, but instead three special macros are
@@ -228,7 +228,7 @@ Every insn has one of the following expression codes:
   Barriers are placed in the instruction stream when control cannot flow
   past them.  They are placed after unconditional jump instructions to
   indicate that the jumps are unconditional and after calls to
-  ``volatile`` functions, which do not return (e.g., ``exit`` ).
+  ``volatile`` functions, which do not return (e.g., ``exit``).
   They contain no information beyond the three standard fields.
 
   .. index:: note

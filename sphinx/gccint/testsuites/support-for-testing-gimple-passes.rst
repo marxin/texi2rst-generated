@@ -43,7 +43,7 @@ the option :option:`-fgimple` to enable this functionality.  For example:
 
 The ``startwith`` argument indicates at which pass to begin.
 
-Use the dump modifier ``-gimple`` (e.g. :option:`-fdump-tree-all-gimple` )
+Use the dump modifier ``-gimple`` (e.g. :option:`-fdump-tree-all-gimple`)
 to make tree dumps more closely follow the format accepted by the GIMPLE
 parser.
 
