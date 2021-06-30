@@ -7,7 +7,6 @@ Welcome to libgomp documentation!
 =================================
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

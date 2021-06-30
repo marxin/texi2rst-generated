@@ -17,7 +17,6 @@ memory, enabling easy-to-use synchronization of accesses to shared memory by
 several threads.
 
 .. toctree::
-  :maxdepth: 2
 
   copyright
   enabling-libitm

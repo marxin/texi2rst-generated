@@ -9,7 +9,6 @@ Welcome to gcc documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   gcc

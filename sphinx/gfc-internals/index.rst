@@ -10,7 +10,6 @@ Welcome to gfc-internals documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

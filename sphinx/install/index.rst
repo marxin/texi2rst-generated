@@ -9,7 +9,6 @@ Welcome to install documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   installing-gcc

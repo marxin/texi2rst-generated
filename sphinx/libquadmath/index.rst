@@ -7,7 +7,6 @@ Welcome to libquadmath documentation!
 =====================================
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

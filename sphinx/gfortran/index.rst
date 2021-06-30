@@ -21,7 +21,6 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
     not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

@@ -8,7 +8,6 @@ Welcome to gccgo documentation!
 
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

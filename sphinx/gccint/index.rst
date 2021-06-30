@@ -9,7 +9,6 @@ Welcome to gccint documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   introduction

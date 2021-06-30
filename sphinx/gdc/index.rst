@@ -13,7 +13,6 @@ language in general, including language specifications and standard
 package documentation, see http://dlang.org/.
 
 .. toctree::
-  :maxdepth: 2
 
   copyright
   invoking-gdc

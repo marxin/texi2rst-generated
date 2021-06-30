@@ -9,7 +9,6 @@ Welcome to cppinternals documentation!
 Contents:
 
 .. toctree::
-  :maxdepth: 1
 
   copyright
   cppinternals
