@@ -65,7 +65,7 @@ memory.
   .. hook-start:TARGET_STRUCT_VALUE_RTX
 
   This target hook should return the location of the structure value
-  address (normally a ``mem`` or ``reg`` ), or 0 if the address is
+  address (normally a ``mem`` or ``reg``), or 0 if the address is
   passed as an 'invisible' first argument.  Note that :samp:`{fndecl}` may
   be ``NULL``, for libcalls.  You do not need to define this target
   hook if the address is always passed as an 'invisible' first

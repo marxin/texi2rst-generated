@@ -301,7 +301,7 @@ corresponding :option:`--without` option.
 
   All three options can be combined and used together, resulting in more
   complex conversion patterns.  As a basic rule, :samp:`{prefix}` (and
-  :samp:`{suffix}` ) are prepended (appended) before further transformations
+  :samp:`{suffix}`) are prepended (appended) before further transformations
   can happen with a special transformation script :samp:`{pattern}`.
 
   As currently implemented, this option only takes effect for native
@@ -561,7 +561,7 @@ corresponding :option:`--without` option.
   predefined set of them.
 
   Some targets provide finer-grained control over which multilibs are built
-  (e.g., :option:`--disable-softfloat` ):
+  (e.g., :option:`--disable-softfloat`):
 
   ``arm-*-*``
     fpu, 26bit, underscore, interwork, biendian, nofmult.
@@ -1045,7 +1045,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-initfini-array
 
   Force the use of sections ``.init_array`` and ``.fini_array``
-  (instead of ``.init`` and ``.fini`` ) for constructors and
+  (instead of ``.init`` and ``.fini``) for constructors and
   destructors.  Option :option:`--disable-initfini-array` has the
   opposite effect.  If neither option is specified, the configure script
   will try to guess whether the ``.init_array`` and
@@ -1839,7 +1839,7 @@ The following options only apply to building cross compilers.
 .. option:: --with-build-sysroot
 
   Tells GCC to consider :samp:`{dir}` as the system root (see
-  :option:`--with-sysroot` ) while building target libraries, instead of
+  :option:`--with-sysroot`) while building target libraries, instead of
   the directory specified with :option:`--with-sysroot`.  This option is
   only useful when you are already using :option:`--with-sysroot`.  You
   can use :option:`--with-build-sysroot` when you are configuring with
@@ -1932,7 +1932,7 @@ The following options only apply to building cross compilers.
 
   Only supported for the AVR target since version 10.
   Specify what result format is returned by library functions that
-  compare 64-bit floating point values ( ``DFmode`` ).
+  compare 64-bit floating point values (``DFmode``).
   The GCC default is :samp:`tristate`.  If the floating point
   implementation returns a boolean instead, set it to :samp:`bool`.
 
@@ -2057,12 +2057,12 @@ The following options apply to the build of the D runtime library.
   :samp:`--enable-libphobos-checking=no`.
 
   The categories of checks available in :samp:`{list}` are :samp:`yes` (compiles
-  libphobos with :option:`-fno-release` ), :samp:`no` (compiles libphobos with
-  :option:`-frelease` ), :samp:`all` (same as :samp:`yes`), :samp:`none` or
+  libphobos with :option:`-fno-release`), :samp:`no` (compiles libphobos with
+  :option:`-frelease`), :samp:`all` (same as :samp:`yes`), :samp:`none` or
   :samp:`release` (same as :samp:`no`).
 
   Individual checks available in :samp:`{list}` are :samp:`assert` (compiles libphobos
-  with an extra option :option:`-fassert` ).
+  with an extra option :option:`-fassert`).
 
 .. option:: --with-libphobos-druntime-only
 

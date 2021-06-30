@@ -24,7 +24,7 @@ Currently, :samp:`rtl.def` defines these classes:
 .. envvar:: RTX_OBJ
 
   An RTX code that represents an actual object, such as a register
-  ( ``REG`` ) or a memory location ( ``MEM``, ``SYMBOL_REF`` ).
+  (``REG``) or a memory location (``MEM``, ``SYMBOL_REF``).
   ``LO_SUM`` is also included; instead, ``SUBREG`` and
   ``STRICT_LOW_PART`` are not in this class, but in class
   ``RTX_EXTRA``.
@@ -93,8 +93,8 @@ Currently, :samp:`rtl.def` defines these classes:
 .. envvar:: RTX_EXTRA
 
   All other RTX codes.  This category includes the remaining codes used
-  only in machine descriptions ( ``DEFINE_*``, etc.).  It also includes
-  all the codes describing side effects ( ``SET``, ``USE``,
+  only in machine descriptions (``DEFINE_*``, etc.).  It also includes
+  all the codes describing side effects (``SET``, ``USE``,
   ``CLOBBER``, etc.) and the non-insns that may appear on an insn
   chain, such as ``NOTE``, ``BARRIER``, and ``CODE_LABEL``.
   ``SUBREG`` is also part of this class.

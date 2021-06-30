@@ -255,8 +255,8 @@ aren't using operand pointers, use and defs flags can be mixed.
       }
 
 ``VDEF`` s are broken into two flags, one for the
-``DEF`` portion ( ``SSA_OP_VDEF`` ) and one for the USE portion
-( ``SSA_OP_VUSE`` ).
+``DEF`` portion (``SSA_OP_VDEF``) and one for the USE portion
+(``SSA_OP_VUSE``).
 
 There are many examples in the code, in addition to the documentation
 in :samp:`tree-ssa-operands.h` and :samp:`ssa-iterators.h`.

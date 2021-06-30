@@ -206,7 +206,7 @@ This describes the overall framework of an assembly file.
   Return preferred text (sub)section for function :samp:`{decl}`.
   Main purpose of this function is to separate cold, normal and hot
   functions. :samp:`{startup}` is true when function is known to be used only
-  at startup (from static constructors or it is ``main()`` ).
+  at startup (from static constructors or it is ``main()``).
   :samp:`{exit}` is true when function is known to be used only at exit
   (from static destructors).
   Return NULL if function should go to default text section.

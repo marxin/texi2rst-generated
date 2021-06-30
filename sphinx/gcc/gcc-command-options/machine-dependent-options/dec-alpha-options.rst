@@ -105,7 +105,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   :samp:`d`
     Dynamic rounding mode.  A field in the floating-point control register
-    ( :samp:`{fpcr}`, see Alpha architecture reference manual) controls the
+    (:samp:`{fpcr}`, see Alpha architecture reference manual) controls the
     rounding mode in effect.  The C library initializes this register for
     rounding towards plus infinity.  Thus, unless your program modifies the
     :samp:`{fpcr}`, :samp:`d` corresponds to round towards plus infinity.

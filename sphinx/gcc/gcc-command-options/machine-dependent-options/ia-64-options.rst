@@ -159,14 +159,14 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
 
   (Dis/En)able data speculative scheduling before reload.
   This results in generation of ``ld.a`` instructions and
-  the corresponding check instructions ( ``ld.c`` / ``chk.a`` ).
+  the corresponding check instructions (``ld.c`` / ``chk.a``).
   The default setting is disabled.
 
 .. option:: -msched-ar-data-spec, -mno-sched-ar-data-spec
 
   (En/Dis)able data speculative scheduling after reload.
   This results in generation of ``ld.a`` instructions and
-  the corresponding check instructions ( ``ld.c`` / ``chk.a`` ).
+  the corresponding check instructions (``ld.c`` / ``chk.a``).
   The default setting is enabled.
 
 .. option:: -mno-sched-control-spec, -msched-control-spec

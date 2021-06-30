@@ -337,7 +337,7 @@ The Solaris target supports ``#pragma redefine_extname``
   .. index:: pragma, init
 
   This pragma causes each listed :samp:`{function}` to be called during
-  initialization (before ``main`` ) or during shared module loading, by
+  initialization (before ``main``) or during shared module loading, by
   adding a call to the ``.init`` section.
 
   .. _symbol-renaming-pragmas:

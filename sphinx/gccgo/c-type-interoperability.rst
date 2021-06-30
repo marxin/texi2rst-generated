@@ -56,7 +56,7 @@ A pointer to a Go function is equivalent to a pointer to a C function
 when the functions have equivalent types.
 
 Go ``interface``, ``channel``, and ``map`` types have no
-corresponding C type ( ``interface`` is a two-element struct and
+corresponding C type (``interface`` is a two-element struct and
 ``channel`` and ``map`` are pointers to structs in C, but the
 structs are deliberately undocumented).  C ``enum`` types
 correspond to some integer type, but precisely which one is difficult

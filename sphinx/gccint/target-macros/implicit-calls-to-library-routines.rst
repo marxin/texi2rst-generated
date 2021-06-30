@@ -68,7 +68,7 @@ Here is an explanation of implicit calls to library routines.
 .. c:macro:: TARGET_LIB_INT_CMP_BIASED
 
   This macro should evaluate to ``true`` if the integer comparison
-  functions (like ``__cmpdi2`` ) return 0 to indicate that the first
+  functions (like ``__cmpdi2``) return 0 to indicate that the first
   operand is smaller than the second, 1 to indicate that they are equal,
   and 2 to indicate that the first operand is greater than the second.
   If this macro evaluates to ``false`` the comparison functions return

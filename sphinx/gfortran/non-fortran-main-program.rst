@@ -63,7 +63,7 @@ _gfortran_set_args --- Save command-line arguments
   ``_gfortran_set_args`` saves the command-line arguments; this
   initialization is required if any of the command-line intrinsics
   is called.  Additionally, it shall be called if backtracing is
-  enabled (see ``_gfortran_set_options`` ).
+  enabled (see ``_gfortran_set_options``).
 
   :param argc:
     number of command line argument strings

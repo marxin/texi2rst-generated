@@ -489,14 +489,14 @@ The following attributes are supported on most targets.
   from 1), while :samp:`{first-to-check}` is the number of the first
   argument to check against the format string.  For functions
   where the arguments are not available to be checked (such as
-  ``vprintf`` ), specify the third parameter as zero.  In this case the
+  ``vprintf``), specify the third parameter as zero.  In this case the
   compiler only checks the format string for consistency.  For
   ``strftime`` formats, the third parameter is required to be zero.
   Since non-static C++ methods have an implicit ``this`` argument, the
   arguments of such methods should be counted from two, not one, when
   giving values for :samp:`{string-index}` and :samp:`{first-to-check}`.
 
-  In the example above, the format string ( ``my_format`` ) is the second
+  In the example above, the format string (``my_format``) is the second
   argument of the function ``my_print``, and the arguments to check
   start with the third argument, so the correct parameters for the format
   attribute are 2 and 3.
@@ -508,7 +508,7 @@ The following attributes are supported on most targets.
   for the standard library functions ``printf``, ``fprintf``,
   ``sprintf``, ``scanf``, ``fscanf``, ``sscanf``, ``strftime``,
   ``vprintf``, ``vfprintf`` and ``vsprintf`` whenever such
-  warnings are requested (using :option:`-Wformat` ), so there is no need to
+  warnings are requested (using :option:`-Wformat`), so there is no need to
   modify the header file :samp:`stdio.h`.  In C99 mode, the functions
   ``snprintf``, ``vsnprintf``, ``vscanf``, ``vfscanf`` and
   ``vsscanf`` are also checked.  Except in strictly conforming C
@@ -516,7 +516,7 @@ The following attributes are supported on most targets.
   are ``printf_unlocked`` and ``fprintf_unlocked``.
   See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
-  For Objective-C dialects, ``NSString`` (or ``__NSString__`` ) is
+  For Objective-C dialects, ``NSString`` (or ``__NSString__``) is
   recognized in the same context.  Declarations including these format attributes
   are parsed for correct syntax, however the result of checking of such format
   strings is not yet defined, and is not carried out by this version of the
@@ -975,7 +975,7 @@ The following attributes are supported on most targets.
 
   The ``no_sanitize_coverage`` attribute on functions is used
   to inform the compiler that it should not do coverage-guided
-  fuzzing code instrumentation ( :option:`-fsanitize-coverage` ).
+  fuzzing code instrumentation (:option:`-fsanitize-coverage`).
 
 .. option:: no_split_stack
 
@@ -1697,7 +1697,7 @@ The following attributes are supported on most targets.
   ``weakref`` implicitly marks the declared symbol as ``weak``.  Without
   a :samp:`{target}` given as an argument to ``weakref`` or to ``alias``,
   ``weakref`` is equivalent to ``weak`` (in that case the declaration
-  may be ``extern`` ).
+  may be ``extern``).
 
   .. code-block:: c++
 
@@ -1724,7 +1724,7 @@ The following attributes are supported on most targets.
   The effect is equivalent to moving all references to the alias to a
   separate translation unit, renaming the alias to the aliased symbol,
   declaring it as weak, compiling the two separate translation units and
-  performing a link with relocatable output (i.e. ``ld -r`` ) on them.
+  performing a link with relocatable output (i.e. ``ld -r``) on them.
 
   A declaration to which ``weakref`` is attached and that is associated
   with a named ``target`` must be ``static``.

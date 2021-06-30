@@ -25,7 +25,7 @@ run after gimplification and what source files they are located in.
 
 * OpenMP lowering
 
-  If OpenMP generation ( :option:`-fopenmp` ) is enabled, this pass lowers
+  If OpenMP generation (:option:`-fopenmp`) is enabled, this pass lowers
   OpenMP constructs into GIMPLE.
 
   Lowering of OpenMP constructs involves creating replacement
@@ -37,15 +37,15 @@ run after gimplification and what source files they are located in.
 
 * OpenMP expansion
 
-  If OpenMP generation ( :option:`-fopenmp` ) is enabled, this pass expands
+  If OpenMP generation (:option:`-fopenmp`) is enabled, this pass expands
   parallel regions into their own functions to be invoked by the thread
   library.  The pass is located in :samp:`omp-low.c` and is described by
   ``pass_expand_omp``.
 
 * Lower control flow
 
-  This pass flattens ``if`` statements ( ``COND_EXPR`` )
-  and moves lexical bindings ( ``BIND_EXPR`` ) out of line.  After
+  This pass flattens ``if`` statements (``COND_EXPR``)
+  and moves lexical bindings (``BIND_EXPR``) out of line.  After
   this pass, all ``if`` statements will have exactly two ``goto``
   statements in its ``then`` and ``else`` arms.  Lexical binding
   information for each statement will be found in ``TREE_BLOCK`` rather
@@ -56,7 +56,7 @@ run after gimplification and what source files they are located in.
 * Lower exception handling control flow
 
   This pass decomposes high-level exception handling constructs
-  ( ``TRY_FINALLY_EXPR`` and ``TRY_CATCH_EXPR`` ) into a form
+  (``TRY_FINALLY_EXPR`` and ``TRY_CATCH_EXPR``) into a form
   that explicitly represents the control flow involved.  After this
   pass, ``lookup_stmt_eh_region`` will return a non-negative
   number for any statement that may have EH control flow semantics;

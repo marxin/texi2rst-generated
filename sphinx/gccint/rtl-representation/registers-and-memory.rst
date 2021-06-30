@@ -23,7 +23,7 @@ registers and to main memory.
 
 :samp:`(reg:{m}{n})`
   For small values of the integer :samp:`{n}` (those that are less than
-  ``FIRST_PSEUDO_REGISTER`` ), this stands for a reference to machine
+  ``FIRST_PSEUDO_REGISTER``), this stands for a reference to machine
   register number :samp:`{n}` : a :dfn:`hard register`.  For larger values of
   :samp:`{n}`, it stands for a temporary value or :dfn:`pseudo register`.
   The compiler's strategy is to generate code assuming an unlimited
@@ -124,7 +124,7 @@ registers and to main memory.
 
     This points to the location in the stack at which outgoing arguments
     should be written when the stack is pre-pushed (arguments pushed using
-    push insns should always use ``STACK_POINTER_REGNUM`` ).
+    push insns should always use ``STACK_POINTER_REGNUM``).
 
     .. index:: STACK_POINTER_OFFSET and virtual registers
 

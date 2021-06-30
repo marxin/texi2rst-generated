@@ -37,7 +37,7 @@ named constants:
 
 :samp:`{INPUT_UNIT}:`
   Identifies the preconnected unit identified by the asterisk
-  ( ``*`` ) in ``READ`` statement.
+  (``*``) in ``READ`` statement.
 
 :samp:`{INT8}, {INT16}, {INT32}, {INT64}:`
   Kind type parameters to specify an INTEGER type with a storage
@@ -70,7 +70,7 @@ named constants:
 
 :samp:`{OUTPUT_UNIT}:`
   Identifies the preconnected unit identified by the asterisk
-  ( ``*`` ) in ``WRITE`` statement.
+  (``*``) in ``WRITE`` statement.
 
 :samp:`{REAL32}, {REAL64}, {REAL128}:`
   Kind type parameters to specify a REAL type with a storage

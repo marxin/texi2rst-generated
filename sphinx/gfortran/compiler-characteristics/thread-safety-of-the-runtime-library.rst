@@ -15,7 +15,7 @@ using OpenMP, by calling OS thread handling functions via the
 ``ISO_C_BINDING`` facility, or by GNU Fortran compiled library code
 being called from a multi-threaded program.
 
-The GNU Fortran runtime library, ( ``libgfortran`` ), supports being
+The GNU Fortran runtime library, (``libgfortran``), supports being
 called concurrently from multiple threads with the following
 exceptions.
 
@@ -42,7 +42,7 @@ using ``setlocale``, the locale is reset to the default 'C'
 locale while executing a formatted ``READ`` or ``WRITE``
 statement.  On targets supporting the POSIX 2008 per-thread locale
 functions (e.g. ``newlocale``, ``uselocale``,
-``freelocale`` ), these are used and thus the global locale set
+``freelocale``), these are used and thus the global locale set
 using ``setlocale`` or the per-thread locales in other threads are
 not affected.  However, on targets lacking this functionality, the
 global LC_NUMERIC locale is set to 'C' during the formatted I/O.

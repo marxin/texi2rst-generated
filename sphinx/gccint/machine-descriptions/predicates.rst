@@ -157,7 +157,7 @@ Function address_operandThis predicate is a little unusual; it allows any operan
 valid expression for the *address* of a quantity of mode
 :samp:`{mode}`, again determined by the weak form of
 ``GO_IF_LEGITIMATE_ADDRESS``.  To first order, if
-:samp:`(mem: :samp:`{mode}` ( :samp:`{exp}` ))` is acceptable to
+:samp:`(mem: :samp:`{mode}` (:samp:`{exp}`))` is acceptable to
 ``memory_operand``, then :samp:`{exp}` is acceptable to
 ``address_operand``.  Note that :samp:`{exp}` does not necessarily have
 the mode :samp:`{mode}`.
@@ -268,8 +268,8 @@ three operands:
     indicates a subexpression to extract from the current expression; for
     the first character this is :samp:`{op}`, for the second and subsequent
     characters it is the result of the previous character.  A digit
-    :samp:`{n}` extracts :samp:`XEXP ( :samp:`{e}`, :samp:`{n}` )`; a letter :samp:`{l}`
-    extracts :samp:`XVECEXP ( :samp:`{e}`, 0, :samp:`{n}` )` where :samp:`{n}` is the
+    :samp:`{n}` extracts :samp:`XEXP (:samp:`{e}`, :samp:`{n}`)`; a letter :samp:`{l}`
+    extracts :samp:`XVECEXP (:samp:`{e}`, 0, :samp:`{n}`)` where :samp:`{n}` is the
     alphabetic ordinal of :samp:`{l}` (0 for 'a', 1 for 'b', and so on).  The
     ``MATCH_CODE`` then examines the RTX code of the subexpression
     extracted by the complete string.  It is not possible to extract

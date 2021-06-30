@@ -176,8 +176,8 @@ This discusses registers that address the stack frame.
 
   Define this macro to map register numbers held in the call frame info
   that GCC has collected using ``DWARF_FRAME_REGNUM`` to those that
-  should be output in .debug_frame ( ``for_eh`` is zero) and
-  .eh_frame ( ``for_eh`` is nonzero).  The default is to
+  should be output in .debug_frame (``for_eh`` is zero) and
+  .eh_frame (``for_eh`` is nonzero).  The default is to
   return ``regno``.
 
 .. c:macro:: REG_VALUE_IN_UNWIND_CONTEXT

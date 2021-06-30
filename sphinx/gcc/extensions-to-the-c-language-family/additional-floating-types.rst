@@ -49,7 +49,7 @@ types, which are not supported by all targets.
   double``.
 
 * ``__float80`` is available on the i386, x86_64, and IA-64
-  targets, and supports the 80-bit ( ``XFmode`` ) floating type.  It is
+  targets, and supports the 80-bit (``XFmode``) floating type.  It is
   an alias for the type name ``_Float64x`` on these targets.
 
 * ``__ibm128`` is available on PowerPC targets, and provides

@@ -282,7 +282,7 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` to disable it.
 
   This diagnostic warns for paths through the code in which a
-  function known to be async-signal-unsafe (such as ``fprintf`` ) is
+  function known to be async-signal-unsafe (such as ``fprintf``) is
   called from a signal handler.
 
 .. option:: -Wanalyzer-unsafe-call-within-signal-handler
@@ -361,7 +361,7 @@ The following options control the analyzer.
 
   If enabled, call summaries are only used for functions with more than one
   call site, and that are sufficiently complicated (as per
-  :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}` ).
+  :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`).
 
 .. option:: -fno-analyzer-call-summaries
 
@@ -371,7 +371,7 @@ The following options control the analyzer.
 
   Restrict the analyzer to run just the named checker, and enable it.
 
-  Some checkers are disabled by default (even with :option:`-fanalyzer` ),
+  Some checkers are disabled by default (even with :option:`-fanalyzer`),
   such as the ``taint`` checker that implements
   :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.

@@ -68,7 +68,7 @@ C and C++ code differs from Motorola's documentation in several ways.
       vector int16 data;
 
     Note that keyword-and-predefine mode is enabled by disabling GNU
-    extensions (e.g., by using ``-std=c11`` ) and including
+    extensions (e.g., by using ``-std=c11``) and including
     ``<altivec.h>``.
 
 * For C, overloaded functions are implemented with macros so the following
@@ -919,7 +919,7 @@ Only functions excluded from the PVIPR are listed here.
 If the ISA 2.07 additions to the vector/scalar (power8-vector)
 instruction set are available, the following additional functions are
 available for 64-bit targets.  New vector types
-( :samp:`{vector __int128}` and :samp:`{vector __uint128}` ) are available
+(:samp:`{vector __int128}` and :samp:`{vector __uint128}`) are available
 to hold the :samp:`{__int128}` and :samp:`{__uint128}` types to use these
 builtins.
 
@@ -994,7 +994,7 @@ PowerPC AltiVec Built-in Functions Available on ISA 3.0
 
 The following additional built-in functions are also available for the
 PowerPC family of processors, starting with ISA 3.0
-( :option:`-mcpu`:samp:`=power9`) or later.
+(:option:`-mcpu`:samp:`=power9`) or later.
 
 Only instructions excluded from the PVIPR are listed here.
 
@@ -1096,7 +1096,7 @@ The ``scalar_test_neg`` built-in function returns 1 if its
 
 The following built-in functions are also available for the PowerPC family
 of processors, starting with ISA 3.0 or later
-( :option:`-mcpu`:samp:`=power9`).  These string functions are described
+(:option:`-mcpu`:samp:`=power9`).  These string functions are described
 separately in order to group the descriptions closer to the function
 prototypes.
 
@@ -1164,7 +1164,7 @@ element size.  However, if the size of the vector element added to
 undefined.
 
 The following functions are also available if the ISA 3.0 instruction
-set additions ( :option:`-mcpu`:samp:`=power9`) are available.
+set additions (:option:`-mcpu`:samp:`=power9`) are available.
 
 Only functions excluded from the PVIPR are listed here.
 
@@ -1202,7 +1202,7 @@ Only functions excluded from the PVIPR are listed here.
   vector long long vec_vprtybd (vector long long);
   vector unsigned long long vec_vprtybd (vector unsigned long long);
 
-On 64-bit targets, if the ISA 3.0 additions ( :option:`-mcpu`:samp:`=power9`)
+On 64-bit targets, if the ISA 3.0 additions (:option:`-mcpu`:samp:`=power9`)
 are available:
 
 .. code-block:: c++
@@ -1219,7 +1219,7 @@ are available:
   vector __uint128 vec_vprtybd (vector __uint128);
 
 The following built-in functions are available for the PowerPC family
-of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`=power9`).
+of processors, starting with ISA 3.0 or later (:option:`-mcpu`:samp:`=power9`).
 
 Only functions excluded from the PVIPR are listed here.
 
@@ -1239,7 +1239,7 @@ arguments, placing the absolute differences into the corresponding
 elements of the vector result.
 
 The following built-in functions are available for the PowerPC family
-of processors, starting with ISA 3.0 or later ( :option:`-mcpu`:samp:`=power9`):
+of processors, starting with ISA 3.0 or later (:option:`-mcpu`:samp:`=power9`):
 
 .. code-block:: c++
 
@@ -1253,7 +1253,7 @@ second argument vector contains the mask  beginning in bits 11:15,
 the mask end in bits 19:23, and the shift count in bits 27:31,
 of each element.
 
-If the cryptographic instructions are enabled ( :option:`-mcrypto` or
+If the cryptographic instructions are enabled (:option:`-mcrypto` or
 :option:`-mcpu`:samp:`=power8`), the following builtins are enabled.
 
 Only functions excluded from the PVIPR are listed here.
@@ -1335,7 +1335,7 @@ PowerPC AltiVec Built-in Functions Available on ISA 3.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following additional built-in functions are also available for the
-PowerPC family of processors, starting with ISA 3.1 ( :option:`-mcpu`:samp:`=power10`):
+PowerPC family of processors, starting with ISA 3.1 (:option:`-mcpu`:samp:`=power10`):
 
 vector unsigned long long intvec_cfuge (vector unsigned long long int, vector unsigned long long int)Perform a vector centrifuge operation, as if implemented by the
 ``vcfuged`` instruction.

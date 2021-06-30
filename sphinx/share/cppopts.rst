@@ -21,7 +21,7 @@
   its argument list with surrounding parentheses before the equals sign
   (if any).  Parentheses are meaningful to most shells, so you should
   quote the option.  With :command:`sh` and :command:`csh`,
-  :option:`-D'`:samp:`{name}` ( :samp:`{args...}` )= :samp:`{definition}` ' works.
+  :option:`-D'`:samp:`{name}` (:samp:`{args...}`)= :samp:`{definition}` ' works.
 
   :option:`-D` and :option:`-U` options are processed in the order they
   are given on the command line.  All :option:`-imacros `:samp:`{file}` and
@@ -81,7 +81,7 @@
   the included files, including those coming from :option:`-include` or
   :option:`-imacros` command-line options.
 
-  Unless specified explicitly (with :option:`-MT` or :option:`-MQ` ), the
+  Unless specified explicitly (with :option:`-MT` or :option:`-MQ`), the
   object file name consists of the name of the source file with any
   suffix replaced with object file suffix and with any leading directory
   parts removed.  If there are many included files then the rule is
@@ -350,7 +350,7 @@
 
   Make an assertion with the predicate :samp:`{predicate}` and answer
   :samp:`{answer}`.  This form is preferred to the older form :option:`-A
-  `:samp:`{predicate}` ( :samp:`{answer}` ), which is still supported, because
+  `:samp:`{predicate}` (:samp:`{answer}`), which is still supported, because
   it does not use shell special characters.
   See :ref:`obsolete-features`.
 

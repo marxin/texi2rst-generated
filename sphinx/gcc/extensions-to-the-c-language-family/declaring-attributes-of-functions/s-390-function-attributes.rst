@@ -35,7 +35,7 @@ These function attributes are supported on the S/390:
   On S/390, the following options are supported:
 
   :samp:`arch=`:samp:`tune=`:samp:`stack-guard=`:samp:`stack-size=`:samp:`branch-cost=`:samp:`warn-framesize=`:samp:`backchain`:samp:`no-backchain`:samp:`hard-dfp`:samp:`no-hard-dfp`:samp:`hard-float`:samp:`soft-float`:samp:`htm`:samp:`no-htm`:samp:`vx`:samp:`no-vx`:samp:`packed-stack`:samp:`no-packed-stack`:samp:`small-exec`:samp:`no-small-exec`:samp:`mvcle`:samp:`no-mvcle`:samp:`warn-dynamicstack`:samp:`no-warn-dynamicstack`The options work exactly like the S/390 specific command line
-  options (without the prefix :option:`-m` ) except that they do not
+  options (without the prefix :option:`-m`) except that they do not
   change any feature macros.  For example,
 
   .. code-block:: c++

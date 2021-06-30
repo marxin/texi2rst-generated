@@ -223,7 +223,7 @@ The 'signature' is a null-terminated string, composed of the following:
 
 * The total size (in bytes) required to pass all the parameters.  This
   includes the two hidden parameters (the object ``self`` and the
-  method selector ``_cmd`` ).
+  method selector ``_cmd``).
 
 * Each argument, with the type encoding, followed by the offset (in
   bytes) of the argument in the list of parameters.
@@ -231,10 +231,10 @@ The 'signature' is a null-terminated string, composed of the following:
 For example, a method with no arguments and returning ``int`` would
 have the signature ``i8@0:4`` if the size of a pointer is 4.  The
 signature is interpreted as follows: the ``i`` is the return type
-(an ``int`` ), the ``8`` is the total size of the parameters in
+(an ``int``), the ``8`` is the total size of the parameters in
 bytes (two pointers each of size 4), the ``@0`` is the first
-parameter (an object at byte offset ``0`` ) and ``:4`` is the
-second parameter (a ``SEL`` at byte offset ``4`` ).
+parameter (an object at byte offset ``0``) and ``:4`` is the
+second parameter (a ``SEL`` at byte offset ``4``).
 
 You can easily find more examples by running the 'strings' program
 on an Objective-C object file compiled by GCC.  You'll see a lot of

@@ -237,7 +237,7 @@ by ``reload`` if they fail to match.
 
 MD Expression define_memory_constraint name docstring expUse this expression for constraints that match a subset of all memory
 operands: that is, ``reload`` can make them match by converting the
-operand to the form :samp:`(mem (reg :samp:`{X}` ))`, where :samp:`{X}` is a
+operand to the form :samp:`(mem (reg :samp:`{X}`))`, where :samp:`{X}` is a
 base register (from the register class specified by
 ``BASE_REG_CLASS``, see :ref:`register-classes`).
 
@@ -297,7 +297,7 @@ The syntax and semantics are otherwise identical to
 
 MD Expression define_address_constraint name docstring expUse this expression for constraints that match a subset of all address
 operands: that is, ``reload`` can make the constraint match by
-converting the operand to the form :samp:`(reg :samp:`{X}` )`, again
+converting the operand to the form :samp:`(reg :samp:`{X}`)`, again
 with :samp:`{X}` a base register.
 
 Constraints defined with ``define_address_constraint`` can only be
@@ -354,7 +354,7 @@ It is occasionally useful to test a constraint from C code rather than
 implicitly via the constraint string in a ``match_operand``.  The
 generated file :samp:`tm_p.h` declares a few interfaces for working
 with constraints.  At present these are defined for all constraints
-except ``g`` (which is equivalent to ``general_operand`` ).
+except ``g`` (which is equivalent to ``general_operand``).
 
 Some valid constraint names are not valid C identifiers, so there is a
 mangling scheme for referring to them from C.  Constraint names that

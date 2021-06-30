@@ -162,8 +162,8 @@ defines the same attributes as:
     (const (symbol_ref "target_tune")))
 
 but without duplicating the processor list.  The second example defines two
-separate C enums ( ``attr_arch`` and ``attr_tune`` ) whereas the first
-defines a single C enum ( ``processor`` ).
+separate C enums (``attr_arch`` and ``attr_tune``) whereas the first
+defines a single C enum (``processor``).
 
 .. _expressions:
 
@@ -240,7 +240,7 @@ Attribute value expressions must have one of the following forms:
 :samp:`(match_operand:{m}{n}{pred}{constraints})`
   This test is true if operand :samp:`{n}` of the insn whose attribute value
   is being determined has mode :samp:`{m}` (this part of the test is ignored
-  if :samp:`{m}` is ``VOIDmode`` ) and the function specified by the string
+  if :samp:`{m}` is ``VOIDmode``) and the function specified by the string
   :samp:`{pred}` returns a nonzero value when passed operand :samp:`{n}` and mode
   :samp:`{m}` (this part of the test is ignored if :samp:`{pred}` is the null
   string).
@@ -1027,7 +1027,7 @@ this case what reservation will be used for the insn is not defined.
 Such cases are not checked during generation of the pipeline hazards
 recognizer because in general recognizing that two conditions may have
 the same value is quite difficult (especially if the conditions
-contain ``symbol_ref`` ).  It is also not checked during the
+contain ``symbol_ref``).  It is also not checked during the
 pipeline hazard recognizer work because it would slow down the
 recognizer considerably.
 

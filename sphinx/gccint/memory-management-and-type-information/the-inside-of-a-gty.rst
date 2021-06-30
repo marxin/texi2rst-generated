@@ -78,7 +78,7 @@ The available options are:
     };
 
   In this case, the ``length`` option is used to override the specified
-  array length (which should usually be ``1`` ).  The parameter of the
+  array length (which should usually be ``1``).  The parameter of the
   option is a fragment of C code that calculates the length.
 
   The second case is when a structure or a global variable contains a

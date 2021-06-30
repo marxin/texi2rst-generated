@@ -51,6 +51,6 @@ relative addresses.
   You can assume that :samp:`{x}` satisfies ``CONSTANT_P``, so you need not
   check this.  You can also assume :samp:`{flag_pic}` is true, so you need not
   check it either.  You need not define this macro if all constants
-  (including ``SYMBOL_REF`` ) can be immediate operands when generating
+  (including ``SYMBOL_REF``) can be immediate operands when generating
   position independent code.
 

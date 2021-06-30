@@ -128,7 +128,7 @@ them: try the first ones in this list first.
 
   This hook is used to check whether two insns should be macro fused for
   a target microarchitecture. If this hook returns true for the given insn pair
-  ( :samp:`{prev}` and :samp:`{curr}` ), the scheduler will put them into a sched
+  (:samp:`{prev}` and :samp:`{curr}`), the scheduler will put them into a sched
   group, and they will not be scheduled apart.  The two insns will be either
   two SET insns or a compare and a conditional jump and this hook should
   validate any dependencies needed to fuse the two insns together.
@@ -140,7 +140,7 @@ them: try the first ones in this list first.
   .. hook-start:TARGET_SCHED_DEPENDENCIES_EVALUATION_HOOK
 
   This hook is called after evaluation forward dependencies of insns in
-  chain given by two parameter values ( :samp:`{head}` and :samp:`{tail}`
+  chain given by two parameter values (:samp:`{head}` and :samp:`{tail}`
   correspondingly) but before insns scheduling of the insn chain.  For
   example, it can be used for better insn classification if it requires
   analysis of dependencies.  This hook can use backward and forward

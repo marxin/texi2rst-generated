@@ -50,7 +50,7 @@ This section describes the macros that output function entry
   ``regs_ever_live`` : element :samp:`{r}` is nonzero if hard register
   :samp:`{r}` is used anywhere within the function.  This implies the function
   prologue should save register :samp:`{r}`, provided it is not one of the
-  call-used registers.  ( ``TARGET_ASM_FUNCTION_EPILOGUE`` must likewise use
+  call-used registers.  (``TARGET_ASM_FUNCTION_EPILOGUE`` must likewise use
   ``regs_ever_live``.)
 
   On machines that have 'register windows', the function entry code does
@@ -249,7 +249,7 @@ This section describes the macros that output function entry
   of the code for a thunk function; ``TARGET_ASM_FUNCTION_PROLOGUE``
   and ``TARGET_ASM_FUNCTION_EPILOGUE`` are not invoked.
 
-  The :samp:`{thunk_fndecl}` is redundant.  ( :samp:`{delta}` and :samp:`{function}`
+  The :samp:`{thunk_fndecl}` is redundant.  (:samp:`{delta}` and :samp:`{function}`
   have already been extracted from it.)  It might possibly be useful on
   some targets, but probably not.
 

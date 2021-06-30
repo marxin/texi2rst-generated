@@ -202,14 +202,14 @@ These are specific options for DBX output.
 .. c:macro:: DBX_BLOCKS_FUNCTION_RELATIVE
 
   Define this macro, with value 1, if the value of a symbol describing
-  the scope of a block ( ``N_LBRAC`` or ``N_RBRAC`` ) should be
+  the scope of a block (``N_LBRAC`` or ``N_RBRAC``) should be
   relative to the start of the enclosing function.  Normally, GCC uses
   an absolute address.
 
 .. c:macro:: DBX_LINES_FUNCTION_RELATIVE
 
   Define this macro, with value 1, if the value of a symbol indicating
-  the current line number ( ``N_SLINE`` ) should be relative to the
+  the current line number (``N_SLINE``) should be relative to the
   start of the enclosing function.  Normally, GCC uses an absolute address.
 
 .. c:macro:: DBX_USE_BINCL

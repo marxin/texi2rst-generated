@@ -122,8 +122,8 @@ These options affect the runtime behavior of programs compiled with
   Turns off generation of the ``ModuleInfo`` and related functions
   that would become unreferenced without it, which may allow linking
   to programs not written in D.  Functions that are not be generated
-  include module constructors and destructors ( ``static this`` and
-  ``static ~this`` ), ``unittest`` code, and ``DSO`` registry
+  include module constructors and destructors (``static this`` and
+  ``static ~this``), ``unittest`` code, and ``DSO`` registry
   functions for dynamically linked code.
 
 :samp:`-fonly={filename}`

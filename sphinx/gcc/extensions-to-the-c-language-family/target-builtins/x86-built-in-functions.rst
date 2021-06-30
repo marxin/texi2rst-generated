@@ -35,7 +35,7 @@ entire vector register, interpreting it as a 128-bit integer, these use mode
 ``TI``.
 
 The x86-32 and x86-64 family of processors use additional built-in
-functions for efficient use of ``TF`` ( ``__float128`` ) 128-bit
+functions for efficient use of ``TF`` (``__float128``) 128-bit
 floating point and ``TC`` 128-bit complex floating-point values.
 
 The following floating-point built-in functions are always available.  All

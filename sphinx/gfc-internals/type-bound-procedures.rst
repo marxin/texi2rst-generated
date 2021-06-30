@@ -26,7 +26,7 @@ Specific Bindings
 
 .. -
 
-For specific bindings (declared with ``PROCEDURE`` ), if they have a
+For specific bindings (declared with ``PROCEDURE``), if they have a
 passed-object argument, the passed-object dummy argument is first saved by its
 name, and later during resolution phase the corresponding argument is looked for
 and its position remembered as ``pass_arg_num`` in ``gfc_typebound_proc``.
@@ -58,7 +58,7 @@ of the specific target.
 
 Calls to generic bindings are handled entirely in the resolution-phase, where
 for the actual argument list present the matching specific binding is found
-and the call's target procedure ( ``value.compcall.tbp`` ) is re-pointed to
+and the call's target procedure (``value.compcall.tbp``) is re-pointed to
 the found specific binding and this call is subsequently handled by the logic
 for specific binding calls.
 

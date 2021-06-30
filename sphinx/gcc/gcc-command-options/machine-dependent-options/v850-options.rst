@@ -110,7 +110,7 @@ These :samp:`-m` options are defined for V850 implementations:
   architecture.
 
   This option is enabled by default when the RH850 ABI is
-  in use (see :option:`-mrh850-abi` ), and disabled by default when the
+  in use (see :option:`-mrh850-abi`), and disabled by default when the
   GCC ABI is in use.  If ``CALLT`` instructions are being generated
   then the C preprocessor symbol ``__V850_CALLT__`` is defined.
 

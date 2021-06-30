@@ -12,7 +12,7 @@ and the 2011, 2014, 2017 and mostly 2020 revisions.
 The original ISO C++ standard was published as the ISO standard (ISO/IEC
 14882:1998) and amended by a Technical Corrigenda published in 2003
 (ISO/IEC 14882:2003). These standards are referred to as C++98 and
-C++03, respectively. GCC implements the majority of C++98 ( ``export``
+C++03, respectively. GCC implements the majority of C++98 (``export``
 is a notable exception) and most of the changes in C++03.  To select
 this standard in GCC, use one of the options :option:`-ansi`,
 :option:`-std`:samp:`=c++98`, or :option:`-std`:samp:`=c++03`; to obtain all the diagnostics

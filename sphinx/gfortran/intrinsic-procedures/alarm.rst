@@ -26,8 +26,8 @@ ALARM --- Execute a routine after a given delay
     ``INTEGER``. It is ``INTENT(IN)``.
 
   :param HANDLER:
-    Signal handler ( ``INTEGER FUNCTION`` or
-    ``SUBROUTINE`` ) or dummy/global ``INTEGER`` scalar. The scalar 
+    Signal handler (``INTEGER FUNCTION`` or
+    ``SUBROUTINE``) or dummy/global ``INTEGER`` scalar. The scalar 
     values may be either ``SIG_IGN=1`` to ignore the alarm generated 
     or ``SIG_DFL=0`` to set the default action. It is ``INTENT(IN)``.
 

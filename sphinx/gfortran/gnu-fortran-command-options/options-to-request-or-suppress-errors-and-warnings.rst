@@ -278,7 +278,7 @@ by GNU Fortran:
   .. index:: warnings, intrinsics of other standards
 
   Warn if :command:`gfortran` finds a procedure named like an intrinsic not
-  available in the currently selected standard (with :option:`-std` ) and treats
+  available in the currently selected standard (with :option:`-std`) and treats
   it as ``EXTERNAL`` procedure because of this.  :option:`-fall-intrinsics` can
   be used to never trigger this behavior and always link to the intrinsic
   regardless of the selected standard.
@@ -410,7 +410,7 @@ by GNU Fortran:
 
   Contrary to :command:`gcc`'s meaning of :option:`-Wunused-parameter`,
   :command:`gfortran`'s implementation of this option does not warn
-  about unused dummy arguments (see :option:`-Wunused-dummy-argument` ),
+  about unused dummy arguments (see :option:`-Wunused-dummy-argument`),
   but about unused ``PARAMETER`` values. :option:`-Wunused-parameter`
   is implied by :option:`-Wextra` if also :option:`-Wunused` or
   :option:`-Wall` is used.
@@ -449,7 +449,7 @@ by GNU Fortran:
   an allocatable array variable of intrinsic type in intrinsic assignments.  In
   hot loops, the Fortran 2003 reallocation feature may reduce the performance.
   If the array is already allocated with the correct shape, consider using a
-  whole-array array-spec (e.g. ``(:,:,:)`` ) for the variable on the left-hand
+  whole-array array-spec (e.g. ``(:,:,:)``) for the variable on the left-hand
   side to prevent the reallocation check. Note that in some cases the warning
   is shown, even if the compiler will optimize reallocation checks away.  For
   instance, when the right-hand side contains the same variable multiplied by

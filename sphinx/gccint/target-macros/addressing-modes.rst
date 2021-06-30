@@ -386,7 +386,7 @@ This is about addressing modes.
   described above.
   If this hook is not defined, then :samp:`{addr}` will be used as
   the argument :samp:`{OFF}` to ``REALIGN_LOAD``, in which case the low
-  log2( :samp:`{VS}` ) - 1 bits of :samp:`{addr}` will be considered.
+  log2(:samp:`{VS}`) - 1 bits of :samp:`{addr}` will be considered.
 
 .. hook-end
 
@@ -395,8 +395,8 @@ This is about addressing modes.
   .. hook-start:TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST
 
   Returns cost of different scalar or vector statements for vectorization cost model.
-  For vector memory operations the cost may depend on type ( :samp:`{vectype}` ) and
-  misalignment value ( :samp:`{misalign}` ).
+  For vector memory operations the cost may depend on type (:samp:`{vectype}`) and
+  misalignment value (:samp:`{misalign}`).
 
 .. hook-end
 
@@ -577,9 +577,9 @@ This is about addressing modes.
 
   Return the mode to use for a vector mask that holds one boolean
   result for each element of vector mode :samp:`{mode}`.  The returned mask mode
-  can be a vector of integers (class ``MODE_VECTOR_INT`` ), a vector of
-  booleans (class ``MODE_VECTOR_BOOL`` ) or a scalar integer (class
-  ``MODE_INT`` ).  Return an empty ``opt_machine_mode`` if no such
+  can be a vector of integers (class ``MODE_VECTOR_INT``), a vector of
+  booleans (class ``MODE_VECTOR_BOOL``) or a scalar integer (class
+  ``MODE_INT``).  Return an empty ``opt_machine_mode`` if no such
   mask mode exists.
 
   The default implementation returns a ``MODE_VECTOR_INT`` with the
@@ -592,7 +592,7 @@ This is about addressing modes.
   .. hook-start:TARGET_VECTORIZE_EMPTY_MASK_IS_EXPENSIVE
 
   This hook returns true if masked internal function :samp:`{ifn}` (really of
-  type ``internal_fn`` ) should be considered expensive when the mask is
+  type ``internal_fn``) should be considered expensive when the mask is
   all zeros.  GCC can then try to branch around the instruction instead.
 
 .. hook-end
@@ -781,7 +781,7 @@ This is about addressing modes.
 
   This hook returns the target's preferred final argument for a call
   to conditional internal function :samp:`{ifn}` (really of type
-  ``internal_fn`` ).  :samp:`{type}` specifies the return type of the
+  ``internal_fn``).  :samp:`{type}` specifies the return type of the
   function and :samp:`{ops}` are the operands to the conditional operation,
   of which there are :samp:`{nops}`.
 
@@ -802,7 +802,7 @@ This is about addressing modes.
   This hook, if defined, is used by accelerator target back-ends to adjust
   OpenACC variable declarations that should be made private to the given
   parallelism level (i.e. ``GOMP_DIM_GANG``, ``GOMP_DIM_WORKER`` or
-  ``GOMP_DIM_VECTOR`` ).  A typical use for this hook is to force variable
+  ``GOMP_DIM_VECTOR``).  A typical use for this hook is to force variable
   declarations at the ``gang`` level to reside in GPU shared memory.
   :samp:`{loc}` may be used for diagnostic purposes.
 

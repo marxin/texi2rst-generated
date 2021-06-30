@@ -130,7 +130,7 @@ A few other macros and functions are usable with all types:
 
 .. envvar:: TYPE_NAME
 
-  This macro returns a declaration (in the form of a ``TYPE_DECL`` ) for
+  This macro returns a declaration (in the form of a ``TYPE_DECL``) for
   the type.  (Note this macro does *not* return an
   ``IDENTIFIER_NODE``, as you might expect, given its name!)  You can
   look at the ``DECL_NAME`` of the ``TYPE_DECL`` to obtain the
@@ -158,7 +158,7 @@ A few other macros and functions are usable with all types:
   The canonical type for a node is always the most fundamental type in
   the equivalence class of types. For instance, ``int`` is its own
   canonical type. A typedef ``I`` of ``int`` will have ``int``
-  as its canonical type. Similarly, ``I*``and a typedef ``IP``(defined to ``I*`` ) will has ``int*`` as their canonical
+  as its canonical type. Similarly, ``I*``and a typedef ``IP``(defined to ``I*``) will has ``int*`` as their canonical
   type. When building a new type node, be sure to set
   ``TYPE_CANONICAL`` to the appropriate canonical type. If the new
   type is a compound type (built from other types), and any of those
@@ -252,7 +252,7 @@ will encounter while examining the intermediate representation.
 .. envvar:: ENUMERAL_TYPE
 
   Used to represent an enumeration type.  The ``TYPE_PRECISION`` gives
-  (as an ``int`` ), the number of bits used to represent the type.  If
+  (as an ``int``), the number of bits used to represent the type.  If
   there are no negative enumeration constants, ``TYPE_UNSIGNED`` will
   hold.  The minimum and maximum enumeration constants may be obtained
   with ``TYPE_MIN_VALUE`` and ``TYPE_MAX_VALUE``, respectively; each
@@ -298,7 +298,7 @@ will encounter while examining the intermediate representation.
   corresponding argument; the ``TREE_PURPOSE`` is an expression for the
   default argument value, if any.  If the last node in the list is
   ``void_list_node`` (a ``TREE_LIST`` node whose ``TREE_VALUE``
-  is the ``void_type_node`` ), then functions of this type do not take
+  is the ``void_type_node``), then functions of this type do not take
   variable arguments.  Otherwise, they do take a variable number of
   arguments.
 

@@ -99,7 +99,7 @@ any target-specific headers.
   :samp:`{decoded}` specifies the option and its arguments.  :samp:`{opts}` and
   :samp:`{opts_set}` are the ``gcc_options`` structures to be used for
   storing option state, and :samp:`{loc}` is the location at which the
-  option was passed ( ``UNKNOWN_LOCATION`` except for options passed
+  option was passed (``UNKNOWN_LOCATION`` except for options passed
   via attributes).
 
 .. function:: bool TARGET_HANDLE_C_OPTION (size_t code, const char *arg, int value)
@@ -129,7 +129,7 @@ any target-specific headers.
   A string object might, for example, embed encoding and length information.
   These objects are considered opaque to the compiler and handled as references.
   An ideal implementation makes the composition of the string object
-  match that of the Objective-C ``NSString`` ( ``NXString`` for GNUStep),
+  match that of the Objective-C ``NSString`` (``NXString`` for GNUStep),
   allowing efficient interworking between C-only and Objective-C code.
   If a target implements string objects then this hook should return a
   reference to such an object constructed from the normal 'C' string

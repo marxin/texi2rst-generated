@@ -49,11 +49,11 @@ loops immediately contained inside loop L are the children of L in the
 tree.  This tree is represented by the ``struct loops`` structure.
 The root of this tree is a fake loop that contains all blocks in the
 function.  Each of the loops is represented in a ``struct loop``
-structure.  Each loop is assigned an index ( ``num`` field of the
+structure.  Each loop is assigned an index (``num`` field of the
 ``struct loop`` structure), and the pointer to the loop is stored in
 the corresponding field of the ``larray`` vector in the loops
 structure.  The indices do not have to be continuous, there may be
-empty ( ``NULL`` ) entries in the ``larray`` created by deleting
+empty (``NULL``) entries in the ``larray`` created by deleting
 loops.  Also, there is no guarantee on the relative order of a loop
 and its subloops in the numbering.  The index of a loop never changes.
 
@@ -69,7 +69,7 @@ created loops are never traversed, if they need to be visited, this
 must be done separately after their creation.
 
 Each basic block contains the reference to the innermost loop it belongs
-to ( ``loop_father`` ).  For this reason, it is only possible to have
+to (``loop_father``).  For this reason, it is only possible to have
 one ``struct loops`` structure initialized at the same time for each
 CFG.  The global variable ``current_loops`` contains the
 ``struct loops`` structure.  Many of the loop manipulation functions
@@ -112,8 +112,8 @@ structures should be calculated/enforced and preserved later:
 
 * ``LOOPS_HAVE_RECORDED_EXITS`` : The lists of exits are recorded
   and updated for each loop.  This makes some functions (e.g.,
-  ``get_loop_exit_edges`` ) more efficient.  Some functions (e.g.,
-  ``single_exit`` ) can be used only if the lists of exits are
+  ``get_loop_exit_edges``) more efficient.  Some functions (e.g.,
+  ``single_exit``) can be used only if the lists of exits are
   recorded.
 
 These properties may also be computed/enforced later, using functions

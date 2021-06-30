@@ -12,7 +12,7 @@ Operands
 
 In general, expressions in GIMPLE consist of an operation and the
 appropriate number of simple operands; these operands must either be a
-GIMPLE rvalue ( ``is_gimple_val`` ), i.e. a constant or a register
+GIMPLE rvalue (``is_gimple_val``), i.e. a constant or a register
 variable.  More complex operands are factored out into temporaries, so
 that
 
@@ -214,7 +214,7 @@ tuple operands use the following accessors
   sizes of the structures used by each statement code defined in
   gimple.def.  Since the operand vector is at the bottom of the
   structure, for a gimple code ``C`` the offset is computed as sizeof
-  (struct-of ``C`` ) - sizeof (tree).
+  (struct-of ``C``) - sizeof (tree).
 
   This mechanism adds one memory indirection to every access when
   using ``gimple_op`` (), if this becomes a bottleneck, a pass can

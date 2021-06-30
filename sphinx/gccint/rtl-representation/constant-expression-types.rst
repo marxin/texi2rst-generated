@@ -23,7 +23,7 @@ The simplest RTL expressions are those that represent constant values.
 
   Constants generated for modes with fewer bits than in
   ``HOST_WIDE_INT`` must be sign extended to full width (e.g., with
-  ``gen_int_mode`` ).  For constants for modes with more bits than in
+  ``gen_int_mode``).  For constants for modes with more bits than in
   ``HOST_WIDE_INT`` the implied high order bits of that constant are
   copies of the top bit.  Note however that values are neither
   inherently signed nor inherently unsigned; where necessary, signedness
@@ -61,7 +61,7 @@ The simplest RTL expressions are those that represent constant values.
 :samp:`(const_double:{m}{i0}{i1} ...)`
   This represents either a floating-point constant of mode :samp:`{m}` or
   (on older ports that do not define
-  ``TARGET_SUPPORTS_WIDE_INT`` ) an integer constant too large to fit
+  ``TARGET_SUPPORTS_WIDE_INT``) an integer constant too large to fit
   into ``HOST_BITS_PER_WIDE_INT`` bits but small enough to fit within
   twice that number of bits.  In the latter case, :samp:`{m}` will be
   ``VOIDmode``.  For integral values constants for modes with more
@@ -226,8 +226,8 @@ The simplest RTL expressions are those that represent constant values.
 
   Sometimes this scheme can create two possible encodings of the same
   vector.  For example { 0, 1 } could be seen as two patterns with
-  one element each or one pattern with two elements ( :samp:`{base0}` and
-  :samp:`{base1}` ).  The canonical encoding is always the one with the
+  one element each or one pattern with two elements (:samp:`{base0}` and
+  :samp:`{base1}`).  The canonical encoding is always the one with the
   fewest patterns or (if both encodings have the same number of
   petterns) the one with the fewest encoded elements.
 

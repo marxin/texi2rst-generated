@@ -19,7 +19,7 @@ ASIND --- Arcsine function, degrees
 .. function:: ASIND(X)
 
   ``ASIND(X)`` computes the arcsine of its :samp:`{X}` in degrees (inverse of
-  ``SIND(X)`` ).
+  ``SIND(X)``).
 
   :param X:
     The type shall be either ``REAL`` and a magnitude that is

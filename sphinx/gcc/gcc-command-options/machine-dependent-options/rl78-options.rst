@@ -72,8 +72,8 @@ RL78 Options
 
 .. option:: -m64bit-doubles, -m32bit-doubles
 
-  Make the ``double`` data type be 64 bits ( :option:`-m64bit-doubles` )
-  or 32 bits ( :option:`-m32bit-doubles` ) in size.  The default is
+  Make the ``double`` data type be 64 bits (:option:`-m64bit-doubles`)
+  or 32 bits (:option:`-m32bit-doubles`) in size.  The default is
   :option:`-m32bit-doubles`.
 
 .. option:: -msave-mduc-in-interrupts, -mno-save-mduc-in-interrupts

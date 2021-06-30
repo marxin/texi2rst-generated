@@ -22,7 +22,7 @@ if the relation holds, or of zeros if it does not, for comparison operators
 that return vector results.
 The mode of the comparison operation is independent of the mode
 of the data being compared.  If the comparison operation is being tested
-(e.g., the first operand of an ``if_then_else`` ), the mode must be
+(e.g., the first operand of an ``if_then_else``), the mode must be
 ``VOIDmode``.
 
 .. index:: condition codes

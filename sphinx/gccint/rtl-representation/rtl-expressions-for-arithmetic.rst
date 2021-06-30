@@ -243,7 +243,7 @@ second operand.
   .. index:: signed maximum
 
 :samp:`(smin:{m}{x}{y})` :samp:`(smax:{m}{x}{y})`
-  Represents the smaller (for ``smin`` ) or larger (for ``smax`` ) of
+  Represents the smaller (for ``smin``) or larger (for ``smax``) of
   :samp:`{x}` and :samp:`{y}`, interpreted as signed values in mode :samp:`{m}`.
   When used with floating point, if both operands are zeros, or if either
   operand is ``NaN``, then it is unspecified which of the two operands

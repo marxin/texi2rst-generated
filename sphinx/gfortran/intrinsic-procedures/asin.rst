@@ -18,7 +18,7 @@ ASIN --- Arcsine function
 
 .. function:: ASIN(X)
 
-  ``ASIN(X)`` computes the arcsine of its :samp:`{X}` (inverse of ``SIN(X)`` ).
+  ``ASIN(X)`` computes the arcsine of its :samp:`{X}` (inverse of ``SIN(X)``).
 
   :param X:
     The type shall be either ``REAL`` and a magnitude that is

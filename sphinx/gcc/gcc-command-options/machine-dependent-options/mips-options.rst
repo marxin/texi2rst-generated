@@ -91,7 +91,7 @@ MIPS Options
   above.  In other words, it has the full prefix and does not
   abbreviate :samp:`000` as :samp:`k`.  In the case of :samp:`from-abi`,
   the macro names the resolved architecture (either ``"mips1"`` or
-  ``"mips3"`` ).  It names the default architecture when no
+  ``"mips3"``).  It names the default architecture when no
   :option:`-march` option is given.
 
 .. option:: -mtune=arch
@@ -221,7 +221,7 @@ MIPS Options
 
   Two additional variants of the o32 ABI are supported to enable
   a transition from 32-bit to 64-bit registers.  These are FPXX
-  ( :option:`-mfpxx` ) and FP64A ( :option:`-mfp64` :option:`-mno-odd-spreg` ).
+  (:option:`-mfpxx`) and FP64A (:option:`-mfp64` :option:`-mno-odd-spreg`).
   The FPXX extension mandates that all code must execute correctly
   when run using 32-bit or 64-bit registers.  The code can be interlinked
   with either FP32 or FP64, but not both.
@@ -634,7 +634,7 @@ MIPS Options
   conditional trap or a break instruction.  Using traps results in
   smaller code, but is only supported on MIPS II and later.  Also, some
   versions of the Linux kernel have a bug that prevents trap from
-  generating the proper signal ( ``SIGFPE`` ).  Use :option:`-mdivide-traps` to
+  generating the proper signal (``SIGFPE``).  Use :option:`-mdivide-traps` to
   allow conditional traps on architectures that support them and
   :option:`-mdivide-breaks` to force the use of breaks.
 

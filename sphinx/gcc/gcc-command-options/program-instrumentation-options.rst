@@ -42,8 +42,8 @@ program analysis purposes.
 .. option:: -p, -pg
 
   Generate extra code to write profile information suitable for the
-  analysis program :command:`prof` (for :option:`-p` ) or :command:`gprof`
-  (for :option:`-pg` ).  You must use this option when compiling
+  analysis program :command:`prof` (for :option:`-p`) or :command:`gprof`
+  (for :option:`-pg`).  You must use this option when compiling
   the source files you want data about, and you must also use it when
   linking.
 
@@ -63,13 +63,13 @@ program analysis purposes.
   When the compiled
   program exits it saves this data to a file called
   :samp:`{auxname}.gcda` for each source file.  The data may be used for
-  profile-directed optimizations ( :option:`-fbranch-probabilities` ), or for
-  test coverage analysis ( :option:`-ftest-coverage` ).  Each object file's
+  profile-directed optimizations (:option:`-fbranch-probabilities`), or for
+  test coverage analysis (:option:`-ftest-coverage`).  Each object file's
   :samp:`{auxname}` is generated from the name of the output file, if
   explicitly specified and it is not the final executable, otherwise it is
   the basename of the source file.  In both cases any suffix is removed
   (e.g. :samp:`foo.gcda` for input file :samp:`dir/foo.c`, or
-  :samp:`dir/foo.gcda` for output file specified as :option:`-o dir/foo.o` ).
+  :samp:`dir/foo.gcda` for output file specified as :option:`-o dir/foo.o`).
   See :ref:`cross-profiling`.
 
   .. index:: gcov
@@ -279,7 +279,7 @@ program analysis purposes.
   With :option:`-fprofile-reproducible`:samp:`=parallel-runs` collected profile
   stays reproducible regardless the order of streaming of the data into
   gcda files.  This setting makes it possible to run multiple instances of
-  instrumented program in parallel (such as with ``make -j`` ). This
+  instrumented program in parallel (such as with ``make -j``). This
   reduces quality of gathered data, in particular of indirect call
   profiling.
 
@@ -372,7 +372,7 @@ program analysis purposes.
 
   Note that sanitized atomic builtins cannot throw exceptions when
   operating on invalid memory addresses with non-call exceptions
-  ( :option:`-fnon-call-exceptions` ).
+  (:option:`-fnon-call-exceptions`).
 
 .. option:: -fsanitize=leak
 
@@ -879,7 +879,7 @@ program analysis purposes.
 .. option:: -finstrument-functions-exclude-file-list=file,file,...
 
   Set the list of functions that are excluded from instrumentation (see
-  the description of :option:`-finstrument-functions` ).  If the file that
+  the description of :option:`-finstrument-functions`).  If the file that
   contains a function definition matches with one of :samp:`{file}`, then
   that function is not instrumented.  The match is done on substrings:
   if the :samp:`{file}` parameter is a substring of the file name, it is
@@ -902,7 +902,7 @@ program analysis purposes.
   but this option sets the list of function names to be excluded from
   instrumentation.  The function name to be matched is its user-visible
   name, such as ``vector<int> blah(const vector<int> &)``, not the
-  internal mangled name (e.g., ``_Z4blahRSt6vectorIiSaIiEE`` ).  The
+  internal mangled name (e.g., ``_Z4blahRSt6vectorIiSaIiEE``).  The
   match is done on substrings: if the :samp:`{sym}` parameter is a substring
   of the function name, it is considered to be a match.  For C99 and C++
   extended identifiers, the function name must be given in UTF-8, not

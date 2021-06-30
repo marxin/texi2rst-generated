@@ -118,8 +118,8 @@ particular case, are not guaranteed:
 * allocation of or sending messages to objects whose classes have a
   category implemented in the same file;
 
-* sending messages to Objective-C constant strings ( ``@"this is a
-  constant string"`` );
+* sending messages to Objective-C constant strings (``@"this is a
+  constant string"``);
 
 You should make no assumptions about receiving ``+load`` in sibling
 classes when you write ``+load`` of a class.  The order in which

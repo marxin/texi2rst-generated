@@ -654,7 +654,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   libraries compiled with the Unix compiler.
 
   Also, you must provide function prototypes for all functions that
-  take variable numbers of arguments (including ``printf`` );
+  take variable numbers of arguments (including ``printf``);
   otherwise incorrect code is generated for calls to those
   functions.
 
@@ -750,7 +750,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   the one specified by :option:`-mpreferred-stack-boundary` is used.
 
   On Pentium and Pentium Pro, ``double`` and ``long double`` values
-  should be aligned to an 8-byte boundary (see :option:`-malign-double` ) or
+  should be aligned to an 8-byte boundary (see :option:`-malign-double`) or
   suffer significant run time performance penalties.  On Pentium III, the
   Streaming SIMD Extension (SSE) data type ``__m128`` may not work
   properly if it is not 16-byte aligned.
@@ -913,7 +913,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -mrecip
 
   This option enables use of ``RCPSS`` and ``RSQRTSS`` instructions
-  (and their vectorized variants ``RCPPS`` and ``RSQRTPS`` )
+  (and their vectorized variants ``RCPPS`` and ``RSQRTPS``)
   with an additional Newton-Raphson step
   to increase precision instead of ``DIVSS`` and ``SQRTSS``
   (and their vectorized
@@ -925,7 +925,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   decreased by up to 2 ulp (i.e. the inverse of 1.0 equals 0.99999994).
 
   Note that GCC implements ``1.0f/sqrtf(x)`` in terms of ``RSQRTSS``
-  (or ``RSQRTPS`` ) already with :option:`-ffast-math` (or the above option
+  (or ``RSQRTPS``) already with :option:`-ffast-math` (or the above option
   combination), and doesn't need :option:`-mrecip`.
 
   Also note that GCC emits the above sequence with additional Newton-Raphson step
@@ -1253,7 +1253,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -mtls-direct-seg-refs, -mno-tls-direct-seg-refs
 
   Controls whether TLS variables may be accessed with offsets from the
-  TLS segment register ( ``%gs`` for 32-bit, ``%fs`` for 64-bit),
+  TLS segment register (``%gs`` for 32-bit, ``%fs`` for 64-bit),
   or whether the thread base pointer must be added.  Whether or not this
   is valid depends on the operating system, and whether it maps the
   segment to cover the entire TLS area.
@@ -1267,20 +1267,20 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mfentry, -mno-fentry
 
-  If profiling is active ( :option:`-pg` ), put the profiling
+  If profiling is active (:option:`-pg`), put the profiling
   counter call before the prologue.
   Note: On x86 architectures the attribute ``ms_hook_prologue``
   isn't possible at the moment for :option:`-mfentry` and :option:`-pg`.
 
 .. option:: -mrecord-mcount, -mno-record-mcount
 
-  If profiling is active ( :option:`-pg` ), generate a __mcount_loc section
+  If profiling is active (:option:`-pg`), generate a __mcount_loc section
   that contains pointers to each profiling call. This is useful for
   automatically patching and out calls.
 
 .. option:: -mnop-mcount, -mno-nop-mcount
 
-  If profiling is active ( :option:`-pg` ), generate the calls to
+  If profiling is active (:option:`-pg`), generate the calls to
   the profiling functions as NOPs. This is useful when they
   should be patched in later dynamically. This is likely only
   useful together with :option:`-mrecord-mcount`.
@@ -1339,7 +1339,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   With the latter choice the options
   :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
-  which segment register ( ``%fs`` or ``%gs`` ) to use as base register
+  which segment register (``%fs`` or ``%gs``) to use as base register
   for reading the canary, and from what offset from that base register.
   The default for those is as specified in the relevant ABI.
 

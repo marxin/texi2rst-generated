@@ -118,12 +118,12 @@ You have the following options for dealing with template instantiations:
   other files) without having to specify them as well.
 
   In addition to forward declaration of explicit instantiations
-  (with ``extern`` ), G++ has extended the template instantiation
+  (with ``extern``), G++ has extended the template instantiation
   syntax to support instantiation of the compiler support data for a
   template class (i.e. the vtable) without instantiating any of its
-  members (with ``inline`` ), and instantiation of only the static data
+  members (with ``inline``), and instantiation of only the static data
   members of a template class, without the support data or member
-  functions (with ``static`` ):
+  functions (with ``static``):
 
   .. code-block:: c++
 

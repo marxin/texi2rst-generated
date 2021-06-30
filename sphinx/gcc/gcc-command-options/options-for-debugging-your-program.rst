@@ -71,7 +71,7 @@ information useful for debugging do not run at all, so that
   GCC no longer supports DWARF Version 1, which is substantially
   different than Version 2 and later.  For historical reasons, some
   other DWARF-related options such as
-  :option:`-fno-dwarf2-cfi-asm` ) retain a reference to DWARF Version 2
+  :option:`-fno-dwarf2-cfi-asm`) retain a reference to DWARF Version 2
   in their names, but apply to all currently-supported versions of DWARF.
 
 .. option:: -gbtf
@@ -204,8 +204,8 @@ information useful for debugging do not run at all, so that
   position in code.  Better debugging information is then generated
   (if the debugging information format supports this information).
 
-  It is enabled by default when compiling with optimization ( :option:`-Os`,
-  :option:`-O`, :option:`-O2`, ...), debugging information ( :option:`-g` ) and
+  It is enabled by default when compiling with optimization (:option:`-Os`,
+  :option:`-O`, :option:`-O2`, ...), debugging information (:option:`-g`) and
   the debug info format supports it.
 
 .. option:: -fvar-tracking-assignments
@@ -336,7 +336,7 @@ information useful for debugging do not run at all, so that
   at the beginning of statements, and to keep them roughly in place
   throughout compilation, using them to guide the output of ``is_stmt``
   markers in the line number table.  This is enabled by default when
-  compiling with optimization ( :option:`-Os`, :option:`-O1`, :option:`-O2`,
+  compiling with optimization (:option:`-Os`, :option:`-O1`, :option:`-O2`,
   ...), and outputting DWARF 2 debug information at the normal level.
 
 .. option:: -gvariable-location-views, -gvariable-location-views=incompat5, -gno-variable-location-views

@@ -852,7 +852,7 @@ a particular case, a call to the library function is emitted.
 
 .. index:: std
 
-Outside strict ISO C mode ( :option:`-ansi`, :option:`-std`:samp:`=c90`,
+Outside strict ISO C mode (:option:`-ansi`, :option:`-std`:samp:`=c90`,
 :option:`-std`:samp:`=c99` or :option:`-std`:samp:`=c11`), the functions
 ``_exit``, ``alloca``, ``bcmp``, ``bzero``,
 ``dcgettext``, ``dgettext``, ``dremf``, ``dreml``,
@@ -920,7 +920,7 @@ The ISO C99 functions
 ``tgamma``, ``truncf``, ``truncl``, ``trunc``,
 ``vfscanf``, ``vscanf``, ``vsnprintf`` and ``vsscanf``
 are handled as built-in functions
-except in strict ISO C90 mode ( :option:`-ansi` or :option:`-std`:samp:`=c90`).
+except in strict ISO C90 mode (:option:`-ansi` or :option:`-std`:samp:`=c90`).
 
 There are also built-in versions of the ISO C99 functions
 ``acosf``, ``acosl``, ``asinf``, ``asinl``, ``atan2f``,
@@ -953,7 +953,7 @@ The ISO C94 functions
 ``iswspace``, ``iswupper``, ``iswxdigit``, ``towlower`` and
 ``towupper``
 are handled as built-in functions
-except in strict ISO C90 mode ( :option:`-ansi` or :option:`-std`:samp:`=c90`).
+except in strict ISO C90 mode (:option:`-ansi` or :option:`-std`:samp:`=c90`).
 
 The ISO C90 functions
 ``abort``, ``abs``, ``acos``, ``asin``, ``atan2``,
@@ -981,7 +981,7 @@ GCC provides built-in versions of the ISO C99 floating-point comparison
 macros that avoid raising exceptions for unordered operands.  They have
 the same names as the standard macros ( ``isgreater``,
 ``isgreaterequal``, ``isless``, ``islessequal``,
-``islessgreater``, and ``isunordered`` ) , with ``__builtin_``
+``islessgreater``, and ``isunordered``) , with ``__builtin_``
 prefixed.  We intend for a library implementor to be able to simply
 ``#define`` each standard macro to its built-in equivalent.
 In the same fashion, GCC provides ``fpclassify``, ``isfinite``,
@@ -1219,7 +1219,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   used in integer constant expressions.
 
   This built-in function ignores top level qualifiers (e.g., ``const``,
-  ``volatile`` ).  For example, ``int`` is equivalent to ``const
+  ``volatile``).  For example, ``int`` is equivalent to ``const
   int``.
 
   The type ``int[]`` and ``int[5]`` are compatible.  On the other
@@ -1303,8 +1303,8 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
           (void)0))
 
   *Note:* This construct is only available for C.  Furthermore, the
-  unused expression ( :samp:`{exp1}` or :samp:`{exp2}` depending on the value of
-  :samp:`{const_exp}` ) may still generate syntax errors.  This may change in
+  unused expression (:samp:`{exp1}` or :samp:`{exp2}` depending on the value of
+  :samp:`{const_exp}`) may still generate syntax errors.  This may change in
   future revisions.
 
 .. function:: type __builtin_tgmath (functions, arguments)
@@ -1420,7 +1420,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   ``__builtin_constant_p`` returns 1 because :samp:`{EXPRESSION}` can be
   folded to a constant but :samp:`{EXPRESSION}` contains operands that are
   not otherwise permitted in a static initializer (for example,
-  ``0 && foo ()`` ).  GCC must be more conservative about evaluating the
+  ``0 && foo ()``).  GCC must be more conservative about evaluating the
   built-in in this case, because it has no opportunity to perform
   optimization.
 
@@ -1475,7 +1475,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   You may use ``__builtin_expect`` to provide the compiler with
   branch prediction information.  In general, you should prefer to
-  use actual profile feedback for this ( :option:`-fprofile-arcs` ), as
+  use actual profile feedback for this (:option:`-fprofile-arcs`), as
   programmers are notoriously bad at predicting how their programs
   actually perform.  However, there are applications in which this
   data is hard to collect.
@@ -1511,7 +1511,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
 .. function:: long __builtin_expect_with_probability
 
-  (long :samp:`{exp}`, long :samp:`{c}`, double :samp:`{probability}` )
+  (long :samp:`{exp}`, long :samp:`{c}`, double :samp:`{probability}`)
 
   This function has the same semantics as ``__builtin_expect``,
   but the caller provides the expected probability that :samp:`{exp}` == :samp:`{c}`.

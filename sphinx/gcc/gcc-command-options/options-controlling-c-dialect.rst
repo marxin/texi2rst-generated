@@ -55,7 +55,7 @@ accepts:
   programs that might use these names for other things.
 
   Functions that are normally built in but do not have semantics
-  defined by ISO C (such as ``alloca`` and ``ffs`` ) are not built-in
+  defined by ISO C (such as ``alloca`` and ``ffs``) are not built-in
   functions when :option:`-ansi` is used.  See :ref:`Other
   built-in functions provided by GCC <other-builtins>`, for details of the functions
   affected.
@@ -225,7 +225,7 @@ accepts:
   In C++, this switch only affects the ``typeof`` keyword, since
   ``asm`` and ``inline`` are standard keywords.  You may want to
   use the :option:`-fno-gnu-keywords` flag instead, which has the same
-  effect.  In C99 mode ( :option:`-std`:samp:`=c99` or :option:`-std`:samp:`=gnu99`), this
+  effect.  In C99 mode (:option:`-std`:samp:`=c99` or :option:`-std`:samp:`=gnu99`), this
   switch only affects the ``asm`` and ``typeof`` keywords, since
   ``inline`` is a standard keyword in ISO C99.
 
@@ -315,7 +315,7 @@ accepts:
   See :ref:`The GNU Transactional Memory Library <enabling-libitm>`.
 
   Note that the transactional memory feature is not supported with
-  non-call exceptions ( :option:`-fnon-call-exceptions` ).
+  non-call exceptions (:option:`-fnon-call-exceptions`).
 
 .. option:: -fgnu89-inline
 
@@ -472,9 +472,9 @@ accepts:
 
   :samp:`{style}` is either ``c11`` or ``ts-18661-3`` as appropriate.
 
-  The default when in a standards compliant mode ( :option:`-std`:samp:`=c11` or similar)
+  The default when in a standards compliant mode (:option:`-std`:samp:`=c11` or similar)
   is :option:`-fpermitted-flt-eval-methods`:samp:`=c11`.  The default when in a GNU
-  dialect ( :option:`-std`:samp:`=gnu11` or similar) is
+  dialect (:option:`-std`:samp:`=gnu11` or similar) is
   :option:`-fpermitted-flt-eval-methods`:samp:`=ts-18661-3`.
 
 .. option:: -fplan9-extensions

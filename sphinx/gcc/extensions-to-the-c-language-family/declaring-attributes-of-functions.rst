@@ -20,9 +20,9 @@ In GNU C and C++, you can use function attributes to specify certain
 function properties that may help the compiler optimize calls or
 check code more carefully for correctness.  For example, you
 can use attributes to specify that a function never returns
-( ``noreturn`` ), returns a value depending only on the values of
-its arguments ( ``const`` ), or has ``printf`` -style arguments
-( ``format`` ).
+(``noreturn``), returns a value depending only on the values of
+its arguments (``const``), or has ``printf`` -style arguments
+(``format``).
 
 You can also use attributes to control memory placement, code
 generation options or call/return conventions within the function

@@ -23,7 +23,7 @@ These function attributes are supported by the RL78 back end:
 
   Use ``brk_interrupt`` instead of ``interrupt`` for
   handlers intended to be used with the ``BRK`` opcode (i.e. those
-  that must end with ``RETB`` instead of ``RETI`` ).
+  that must end with ``RETB`` instead of ``RETI``).
 
 .. option:: naked
 

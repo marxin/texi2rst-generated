@@ -274,7 +274,7 @@ double underscores.
   defined if the compiler is optimizing for size, not speed.
   ``__NO_INLINE__`` is defined if no functions will be inlined into
   their callers (when not optimizing, or when inlining has been
-  specifically disabled by :option:`-fno-inline` ).
+  specifically disabled by :option:`-fno-inline`).
 
   These macros cause certain GNU header files to provide optimized
   definitions, using macros or inline functions, of system library
@@ -463,7 +463,7 @@ double underscores.
 
 ``__NEXT_RUNTIME__``
   This macro is defined, with value 1, if (and only if) the NeXT runtime
-  (as in :option:`-fnext-runtime` ) is in use for Objective-C.  If the GNU
+  (as in :option:`-fnext-runtime`) is in use for Objective-C.  If the GNU
   runtime is used, this macro is not defined, so that you can use this
   macro to determine which runtime (NeXT or GNU) is being used.
 
@@ -555,7 +555,7 @@ double underscores.
   standard pragmas, where those standards do not require a particular
   default state.  It does not indicate whether optimizations respect
   signaling NaN semantics (the macro for that is
-  ``__SUPPORT_SNAN__`` ).  It does not indicate support for decimal
+  ``__SUPPORT_SNAN__``).  It does not indicate support for decimal
   floating point or the IEEE 754 binary16 and binary128 types.
 
 ``__GCC_IEC_559_COMPLEX``
@@ -579,7 +579,7 @@ double underscores.
   set used.  It directly reflects the name passed to the options
   :option:`-fexec-charset` and :option:`-fwide-exec-charset`, or the defaults
   documented for those options (that is, it can expand to something like
-  ``"UTF-8"`` ).  See :ref:`invocation`.
+  ``"UTF-8"``).  See :ref:`invocation`.
 
   .. _system-specific-predefined-macros:
 

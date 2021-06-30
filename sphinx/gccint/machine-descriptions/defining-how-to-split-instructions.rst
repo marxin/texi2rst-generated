@@ -89,7 +89,7 @@ as a statement.
   it was given, and the input insn will not be split.
 
 If the preparation falls through (invokes neither ``DONE`` nor
-``FAIL`` ), then the ``define_split`` uses the replacement
+``FAIL``), then the ``define_split`` uses the replacement
 template.
 
 Patterns are matched against :samp:`{insn-pattern}` in two different

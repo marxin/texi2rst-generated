@@ -62,7 +62,7 @@ Function, Variable, and Macro Listing.
   zero if they are the same, nonzero otherwise.  Returns zero if
   :samp:`{count}` is zero.  A nonzero result only indicates a difference,
   it does not indicate any sorting order (say, by having a positive
-  result mean :samp:`{x}` sorts before :samp:`{y}` ).
+  result mean :samp:`{x}` sorts before :samp:`{y}`).
 
 .. bcopy.c:3
 
@@ -151,7 +151,7 @@ Function, Variable, and Macro Listing.
 
   Return a prefix for temporary file names or ``NULL`` if unable to
   find one.  The current directory is chosen if all else fails so the
-  program is exited if a temporary directory can't be found ( ``mktemp``
+  program is exited if a temporary directory can't be found (``mktemp``
   fails).  The buffer for the result is obtained with ``xmalloc``.
 
   This function is provided for backwards compatibility only.  Its use is
@@ -232,7 +232,7 @@ Function, Variable, and Macro Listing.
   use the ``sys_errlist`` supplied by the system, it is possible for
   there to be more symbolic names than messages, or vice versa.  In
   fact, the manual page for ``perror(3C)`` explicitly warns that one
-  should check the size of the table ( ``sys_nerr`` ) before indexing
+  should check the size of the table (``sys_nerr``) before indexing
   it, since new error codes may be added to the system before they are
   added to the table.  Thus ``sys_nerr`` might be smaller than value
   implied by the largest ``errno`` value defined in ``<errno.h>``.
@@ -267,7 +267,7 @@ Function, Variable, and Macro Listing.
   This is useful, for example, when we have an open file descriptor for
   an unnamed file, and the name of a file that we believe to correspond
   to that fd.  This can happen when we are exec'd with an already open
-  file ( ``stdout`` for example) or from the SVR4 :samp:`/proc` calls
+  file (``stdout`` for example) or from the SVR4 :samp:`/proc` calls
   that return open file descriptors for mapped address spaces.  All we
   have to do is open the file by name and check the two file descriptors
   for a match, which is done by comparing major and minor device numbers
@@ -346,7 +346,7 @@ Function, Variable, and Macro Listing.
   matches, ``FNM_NOMATCH`` if not.  :samp:`{pattern}` may contain the
   wildcards ``?`` to match any one character, ``*`` to match any
   zero or more characters, or a set of alternate characters in square
-  brackets, like :samp:`[a-gt8]`, which match one character ( ``a``
+  brackets, like :samp:`[a-gt8]`, which match one character (``a``
   through ``g``, or ``t``, or ``8``, in this example) if that one
   character is in the set.  A set may be inverted (i.e., match anything
   except what's in the set) by giving ``^`` or ``!`` as the first
@@ -359,7 +359,7 @@ Function, Variable, and Macro Listing.
 
   ``flags`` controls various aspects of the matching process, and is a
   boolean OR of zero or more of the following values (defined in
-  ``<fnmatch.h>`` ):
+  ``<fnmatch.h>``):
 
   .. envvar:: FNM_PATHNAME
 
@@ -524,7 +524,7 @@ with one of the following values:
   types need to be allocated with different allocators.
 
   The created hash table is slightly larger than :samp:`{size}` and it is
-  initially empty (all the hash table entries are ``HTAB_EMPTY_ENTRY`` ).
+  initially empty (all the hash table entries are ``HTAB_EMPTY_ENTRY``).
   The function returns the created hash table, or ``NULL`` if memory
   allocation fails.
 
@@ -751,7 +751,7 @@ sets of characters:
 .. function:: void* memmem (const void *haystack,   size_t haystack_len const void *needle, size_t needle_len)
 
   Returns a pointer to the first occurrence of :samp:`{needle}` (length
-  :samp:`{needle_len}` ) in :samp:`{haystack}` (length :samp:`{haystack_len}` ).
+  :samp:`{needle_len}`) in :samp:`{haystack}` (length :samp:`{haystack_len}`).
   Returns ``NULL`` if not found.
 
 .. memmove.c:6
@@ -1176,7 +1176,7 @@ sets of characters:
   ``sys_siglist`` supplied by the system, it is possible for there to
   be more symbolic names than messages, or vice versa.  In fact, the
   manual page for ``psignal(3b)`` explicitly warns that one should
-  check the size of the table ( ``NSIG`` ) before indexing it, since
+  check the size of the table (``NSIG``) before indexing it, since
   new signal codes may be added to the system before they are added to
   the table.  Thus ``NSIG`` might be smaller than value implied by
   the largest signo value defined in ``<signal.h>``.
@@ -1190,7 +1190,7 @@ sets of characters:
 
   Sets the signal mask to the one provided in :samp:`{set}` and returns
   the old mask (which, for libiberty's implementation, will always
-  be the value ``1`` ).
+  be the value ``1``).
 
 .. simple-object.txh:96
 
@@ -1410,16 +1410,16 @@ sets of characters:
 .. function:: char* stpcpy (char *dst, const char *src)
 
   Copies the string :samp:`{src}` into :samp:`{dst}`.  Returns a pointer to
-  :samp:`{dst}` + strlen( :samp:`{src}` ).
+  :samp:`{dst}` + strlen(:samp:`{src}`).
 
 .. stpncpy.c:23
 
 .. function:: char* stpncpy (char *dst, const char *src,   size_t len)
 
   Copies the string :samp:`{src}` into :samp:`{dst}`, copying exactly :samp:`{len}`
-  and padding with zeros if necessary.  If :samp:`{len}` < strlen( :samp:`{src}` )
+  and padding with zeros if necessary.  If :samp:`{len}` < strlen(:samp:`{src}`)
   then return :samp:`{dst}` + :samp:`{len}`, otherwise returns :samp:`{dst}` +
-  strlen( :samp:`{src}` ).
+  strlen(:samp:`{src}`).
 
 .. strcasecmp.c:15
 
@@ -1447,7 +1447,7 @@ sets of characters:
 .. function:: const char* strerrno (int errnum)
 
   Given an error number returned from a system call (typically returned
-  in ``errno`` ), returns a pointer to a string containing the
+  in ``errno``), returns a pointer to a string containing the
   symbolic name of that error number, as found in ``<errno.h>``.
 
   If the supplied error number is within the valid range of indices for
@@ -1582,7 +1582,7 @@ sets of characters:
 
 .. function:: int strtoerrno (const char *name)
 
-  Given the symbolic name of a error number (e.g., ``EACCES`` ), map it
+  Given the symbolic name of a error number (e.g., ``EACCES``), map it
   to an errno value.  If no translation is found, returns 0.
 
 .. strtol.c:33

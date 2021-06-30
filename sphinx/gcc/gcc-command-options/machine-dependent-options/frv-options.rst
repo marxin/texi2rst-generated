@@ -94,7 +94,7 @@ FRV Options
   Enable inlining of PLT entries in function calls to functions that are
   not known to bind locally.  It has no effect without :option:`-mfdpic`.
   It's enabled by default if optimizing for speed and compiling for
-  shared libraries (i.e., :option:`-fPIC` or :option:`-fpic` ), or when an
+  shared libraries (i.e., :option:`-fPIC` or :option:`-fpic`), or when an
   optimization option such as :option:`-O3` or above is present in the
   command line.
 

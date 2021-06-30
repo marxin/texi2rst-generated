@@ -40,9 +40,9 @@ See also Further Interoperability of Fortran with C.
 * GNU Fortran's implementation for variables with ``ASYNCHRONOUS``
   attribute is compatible with TS 29113.
 
-* Assumed types ( ``TYPE(*)`` ).
+* Assumed types (``TYPE(*)``).
 
-* Assumed-rank ( ``DIMENSION(..)`` ).
+* Assumed-rank (``DIMENSION(..)``).
 
 * ISO_Fortran_binding (now in Fortran 2018 18.4) is implemented such that
   conversion of the array descriptor for assumed type or assumed rank arrays is
@@ -62,10 +62,10 @@ Specification 18508 on Additional Parallel Features in Fortran:
   do not support polymorphic types or types with allocatable, pointer or
   polymorphic components.
 
-* Events ( ``EVENT POST``, ``EVENT WAIT``, ``EVENT_QUERY`` )
+* Events (``EVENT POST``, ``EVENT WAIT``, ``EVENT_QUERY``)
 
-* Failed images ( ``FAIL IMAGE``, ``IMAGE_STATUS``,
-  ``FAILED_IMAGES``, ``STOPPED_IMAGES`` )
+* Failed images (``FAIL IMAGE``, ``IMAGE_STATUS``,
+  ``FAILED_IMAGES``, ``STOPPED_IMAGES``)
 
 .. -
    Compiler Characteristics

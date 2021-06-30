@@ -35,7 +35,7 @@ is the original NeXTstep document.
 
 The Objective-C exception and synchronization syntax (that is, the
 keywords ``@try``, ``@throw``, ``@catch``,
-``@finally`` and ``@synchronized`` ) is
+``@finally`` and ``@synchronized``) is
 supported by GCC and is enabled with the option
 :option:`-fobjc-exceptions`.  The syntax is briefly documented in this
 manual and in the Objective-C 2.0 manuals from Apple.
@@ -43,9 +43,9 @@ manual and in the Objective-C 2.0 manuals from Apple.
 The Objective-C 2.0 language extensions and features are automatically
 enabled; they include properties (via the ``@property``,
 ``@synthesize`` and
-``@dynamic keywords`` ), fast enumeration (not available in
+``@dynamic keywords``), fast enumeration (not available in
 Objective-C++), attributes for methods (such as ``deprecated``,
-``noreturn``, ``sentinel``, ``format`` ),
+``noreturn``, ``sentinel``, ``format``),
 the ``unused`` attribute for method arguments, the
 ``@package`` keyword for instance variables and the ``@optional`` and
 ``@required`` keywords in protocols.  You can disable all these

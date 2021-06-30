@@ -28,10 +28,10 @@ GIMPLE_DEBUG
   the same location.
 
   It is expected that ``var`` be most often a tree for automatic user
-  variables ( ``VAR_DECL`` or ``PARM_DECL`` ) that satisfy the
+  variables (``VAR_DECL`` or ``PARM_DECL``) that satisfy the
   requirements for gimple registers, but it may also be a tree for a
-  scalarized component of a user variable ( ``ARRAY_REF``,
-  ``COMPONENT_REF`` ), or a debug temporary ( ``DEBUG_EXPR_DECL`` ).
+  scalarized component of a user variable (``ARRAY_REF``,
+  ``COMPONENT_REF``), or a debug temporary (``DEBUG_EXPR_DECL``).
 
   As for ``value``, it can be an arbitrary tree expression, but it is
   recommended that it be in a suitable form for a gimple assignment

@@ -14,15 +14,15 @@ These command-line options are defined for RX targets:
 
 .. option:: -m64bit-doubles, -m32bit-doubles
 
-  Make the ``double`` data type be 64 bits ( :option:`-m64bit-doubles` )
-  or 32 bits ( :option:`-m32bit-doubles` ) in size.  The default is
+  Make the ``double`` data type be 64 bits (:option:`-m64bit-doubles`)
+  or 32 bits (:option:`-m32bit-doubles`) in size.  The default is
   :option:`-m32bit-doubles`.  *Note* RX floating-point hardware only
   works on 32-bit values, which is why the default is
   :option:`-m32bit-doubles`.
 
 .. option:: -fpu, -nofpu
 
-  Enables ( :option:`-fpu` ) or disables ( :option:`-nofpu` ) the use of RX
+  Enables (:option:`-fpu`) or disables (:option:`-nofpu`) the use of RX
   floating-point hardware.  The default is enabled for the RX600
   series and disabled for the RX200 series.
 
@@ -60,7 +60,7 @@ These command-line options are defined for RX targets:
   area can lead to smaller and faster code, but the size of area is
   limited and it is up to the programmer to ensure that the area does
   not overflow.  Also when the small data area is used one of the RX's
-  registers (usually ``r13`` ) is reserved for use pointing to this
+  registers (usually ``r13``) is reserved for use pointing to this
   area, so it is no longer available for use by the compiler.  This
   could result in slower and/or larger code if variables are pushed onto
   the stack instead of being held in this register.
@@ -71,7 +71,7 @@ These command-line options are defined for RX targets:
 
   The default value is zero, which disables this feature.  Note, this
   feature is not enabled by default with higher optimization levels
-  ( :option:`-O2` etc) because of the potentially detrimental effects of
+  (:option:`-O2` etc) because of the potentially detrimental effects of
   reserving a register.  It is up to the programmer to experiment and
   discover whether this feature is of benefit to their program.  See the
   description of the :option:`-mpid` option for a description of how the

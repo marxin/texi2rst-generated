@@ -157,7 +157,7 @@ user's source code.  Examples include:
 In each case, the diagnostic should indicate **both** pertinent
 locations (so that the user can easily see the problem and how to fix it).
 
-The standard way to do this is with a note (via ``inform`` ).  For
+The standard way to do this is with a note (via ``inform``).  For
 example:
 
 .. code-block:: c++

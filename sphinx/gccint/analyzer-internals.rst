@@ -346,7 +346,7 @@ This algorithm can be disabled (for debugging purposes) via
 and notes if it is infeasible.
 
 The above gives us a shortest feasible ``exploded_path`` through the
-``exploded_graph`` (a list of ``exploded_edge *`` ).  We use this
+``exploded_graph`` (a list of ``exploded_edge *``).  We use this
 ``exploded_path`` to build a ``diagnostic_path`` (a list of
 **events** for the diagnostic subsystem) - specifically a
 ``checker_path``.
@@ -401,7 +401,7 @@ Limitations
 
 * The constraint_manager's implementation of transitivity is currently too
   expensive to enable by default and so must be manually enabled via
-  :option:`-fanalyzer-transitivity` ).
+  :option:`-fanalyzer-transitivity`).
 
 * The checkers are currently hardcoded and don't allow for user extensibility
   (e.g. adding allocate/release pairs).

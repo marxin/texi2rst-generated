@@ -636,8 +636,8 @@ These :samp:`-m` options are defined for the ARM port:
 
   This specifies the name of the target ARM processor.  GCC uses this name
   to derive the name of the target ARM architecture (as if specified
-  by :option:`-march` ) and the ARM processor type for which to tune for
-  performance (as if specified by :option:`-mtune` ).  Where this option
+  by :option:`-march`) and the ARM processor type for which to tune for
+  performance (as if specified by :option:`-mtune`).  Where this option
   is used in conjunction with :option:`-march` or :option:`-mtune`,
   those options take precedence over the appropriate part of this option.
 
@@ -1006,6 +1006,6 @@ These :samp:`-m` options are defined for the ARM port:
   behavior is acceptable, use -static and -Wl,-dynamic-linker options.
 
   The opposite :option:`-mno-fdpic` option is useful (and required) to
-  build the Linux kernel using the same ( ``arm-*-uclinuxfdpiceabi`` )
+  build the Linux kernel using the same (``arm-*-uclinuxfdpiceabi``)
   toolchain as the one used to build the userland programs.
 

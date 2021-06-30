@@ -18,7 +18,7 @@ present, only the AVR, M32C, RL78, and x86 targets support
 address spaces other than the generic address space.
 
 Address space identifiers may be used exactly like any other C type
-qualifier (e.g., ``const`` or ``volatile`` ).  See the N1275
+qualifier (e.g., ``const`` or ``volatile``).  See the N1275
 document for more details.
 
 .. _avr-named-address-spaces:

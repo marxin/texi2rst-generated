@@ -46,7 +46,7 @@ These options are defined for Nvidia PTX:
   Generate code that does not use ``.local`` memory
   directly for stack storage. Instead, a per-warp stack pointer is
   maintained explicitly. This enables variable-length stack allocation (with
-  variable-length arrays or ``alloca`` ), and when global memory is used for
+  variable-length arrays or ``alloca``), and when global memory is used for
   underlying storage, makes it possible to access automatic variables from other
   threads, or with atomic instructions. This code generation variant is used
   for OpenMP offloading, but the option is exposed on its own for the purpose

@@ -25,7 +25,7 @@ the two original tokens in the macro expansion.  Usually both will be
 identifiers, or one will be an identifier and the other a preprocessing
 number.  When pasted, they make a longer identifier.  This isn't the
 only valid case.  It is also possible to concatenate two numbers (or a
-number and a name, such as ``1.5`` and ``e3`` ) into a number.
+number and a name, such as ``1.5`` and ``e3``) into a number.
 Also, multi-character operators such as ``+=`` can be formed by
 token pasting.
 

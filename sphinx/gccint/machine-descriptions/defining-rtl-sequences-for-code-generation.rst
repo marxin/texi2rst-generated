@@ -102,11 +102,11 @@ as a statement.
   compiler will try other strategies for code generation using other patterns.
 
   Failure is currently supported only for binary (addition, multiplication,
-  shifting, etc.) and bit-field ( ``extv``, ``extzv``, and ``insv`` )
+  shifting, etc.) and bit-field (``extv``, ``extzv``, and ``insv``)
   operations.
 
 If the preparation falls through (invokes neither ``DONE`` nor
-``FAIL`` ), then the ``define_expand`` acts like a
+``FAIL``), then the ``define_expand`` acts like a
 ``define_insn`` in that the RTL template is used to generate the
 insn.
 

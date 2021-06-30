@@ -302,7 +302,7 @@ optimizations to be performed is desired.
 .. option:: -foptimize-strlen
 
   Optimize various standard C string functions (e.g. ``strlen``,
-  ``strchr`` or ``strcpy`` ) and
+  ``strchr`` or ``strcpy``) and
   their ``_FORTIFY_SOURCE`` counterparts into faster alternatives.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
@@ -726,8 +726,8 @@ optimizations to be performed is desired.
 
   Attempt to convert calls to virtual functions to direct calls.  This
   is done both within a procedure and interprocedurally as part of
-  indirect inlining ( :option:`-findirect-inlining` ) and interprocedural constant
-  propagation ( :option:`-fipa-cp` ).
+  indirect inlining (:option:`-findirect-inlining`) and interprocedural constant
+  propagation (:option:`-fipa-cp`).
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fdevirtualize-speculatively
@@ -811,7 +811,7 @@ optimizations to be performed is desired.
     as the regions.  This value usually gives
     the best results in most cases and for most architectures,
     and is enabled by default when compiling with optimization for speed
-    ( :option:`-O`, :option:`-O2`, ...).
+    (:option:`-O`, :option:`-O2`, ...).
 
   :samp:`one`
     Use all functions as a single region.  
@@ -1098,7 +1098,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`, however the option
   is disabled if generated code will be instrumented for profiling
-  ( :option:`-p`, or :option:`-pg` ) or if callee's register usage cannot be known
+  (:option:`-p`, or :option:`-pg`) or if callee's register usage cannot be known
   exactly (this happens on targets that do not expose prologues
   and epilogues in RTL).
 
@@ -1224,7 +1224,7 @@ optimizations to be performed is desired.
   when externally visible function can be called with constant arguments.
   Because this optimization can create multiple copies of functions,
   it may significantly increase code size
-  (see :option:`--param ipa-cp-unit-growth`:samp:`={value}` ).
+  (see :option:`--param ipa-cp-unit-growth`:samp:`={value}`).
   This flag is enabled by default at :option:`-O3`.
   It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
@@ -1307,7 +1307,7 @@ optimizations to be performed is desired.
   This flag is disabled by default.
 
   Note that :option:`-flive-patching` is not supported with link-time optimization
-  ( :option:`-flto` ).
+  (:option:`-flto`).
 
 .. option:: -fisolate-erroneous-paths-dereference
 
@@ -1752,13 +1752,13 @@ optimizations to be performed is desired.
 
   Do not substitute constants for known return value of formatted output
   functions such as ``sprintf``, ``snprintf``, ``vsprintf``, and
-  ``vsnprintf`` (but not ``printf`` of ``fprintf`` ).  This
+  ``vsnprintf`` (but not ``printf`` of ``fprintf``).  This
   transformation allows GCC to optimize or even eliminate branches based
   on the known return value of these functions called with arguments that
   are either constant, or whose values are known to be in a range that
   makes determining the exact return value possible.  For example, when
   :option:`-fprintf-return-value` is in effect, both the branch and the
-  body of the ``if`` statement (but not the call to ``snprint`` )
+  body of the ``if`` statement (but not the call to ``snprint``)
   can be optimized away when ``i`` is a 32-bit or smaller integer
   because the return value is guaranteed to be at most 8.
 
@@ -1792,7 +1792,7 @@ optimizations to be performed is desired.
   Do not guess branch probabilities using heuristics.
 
   GCC uses heuristics to guess branch probabilities if they are
-  not provided by profiling feedback ( :option:`-fprofile-arcs` ).  These
+  not provided by profiling feedback (:option:`-fprofile-arcs`).  These
   heuristics are based on the control flow graph.  If some branch probabilities
   are specified by ``__builtin_expect``, then the heuristics are
   used to guess branch probabilities for the rest of the control flow graph,
@@ -2134,7 +2134,7 @@ optimizations to be performed is desired.
   certain whole program assumptions.  The compiler needs to know
   what functions and variables can be accessed by libraries and runtime
   outside of the link-time optimized unit.  When supported by the linker,
-  the linker plugin (see :option:`-fuse-linker-plugin` ) passes information
+  the linker plugin (see :option:`-fuse-linker-plugin`) passes information
   to the compiler about used and externally visible symbols.  When
   the linker plugin is not available, :option:`-fwhole-program` should be
   used to allow the compiler to make these assumptions, which leads
@@ -2143,7 +2143,7 @@ optimizations to be performed is desired.
   When a file is compiled with :option:`-flto` without
   :option:`-fuse-linker-plugin`, the generated object file is larger than
   a regular object file because it contains GIMPLE bytecodes and the usual
-  final code (see :option:`-ffat-lto-objects` ).  This means that
+  final code (see :option:`-ffat-lto-objects`).  This means that
   object files with LTO information can be linked as normal object
   files; if :option:`-fno-lto` is passed to the linker, no
   interprocedural optimizations are applied.  Note that when
@@ -2276,7 +2276,7 @@ optimizations to be performed is desired.
   the interprocedural optimizers to use more aggressive assumptions which may
   lead to improved optimization opportunities.
   Use of :option:`-fwhole-program` is not needed when linker plugin is
-  active (see :option:`-fuse-linker-plugin` ).
+  active (see :option:`-fuse-linker-plugin`).
 
   The current implementation of LTO makes no
   attempt to generate bytecode that is portable between different
@@ -2325,7 +2325,7 @@ optimizations to be performed is desired.
 
   This option specifies the level of compression used for intermediate
   language written to LTO object files, and is only meaningful in
-  conjunction with LTO mode ( :option:`-flto` ).  GCC currently supports two
+  conjunction with LTO mode (:option:`-flto`).  GCC currently supports two
   LTO compression algorithms. For zstd, valid values are 0 (no compression)
   to 19 (maximum compression), while zlib supports values from 0 to 9.
   Values outside this range are clamped to either minimum or maximum
@@ -2438,7 +2438,7 @@ optimizations to be performed is desired.
   match the source code.  This error can be turned into a warning by using
   :option:`-Wno-error`:samp:`=coverage-mismatch`.  Note this may result in poorly
   optimized code.  Additionally, by default, GCC also emits a warning message if
-  the feedback profiles do not exist (see :option:`-Wmissing-profile` ).
+  the feedback profiles do not exist (see :option:`-Wmissing-profile`).
 
   If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
   the profile feedback data files. See :option:`-fprofile-dir`.
@@ -2627,7 +2627,7 @@ correctness.  All must be specifically enabled.
   Allow optimizations for floating-point arithmetic that ignore the
   signedness of zero.  IEEE arithmetic specifies the behavior of
   distinct +0.0 and -0.0 values, which then prohibits simplification
-  of expressions such as x+0.0 or 0.0\*x (even with :option:`-ffinite-math-only` ).
+  of expressions such as x+0.0 or 0.0\*x (even with :option:`-ffinite-math-only`).
   This option implies that the sign of a zero result isn't significant.
 
   The default is :option:`-fsigned-zeros`.
@@ -3096,11 +3096,11 @@ section includes experimental options that may produce broken code.
 
   .. option:: max-inline-insns-auto
 
-    When you use :option:`-finline-functions` (included in :option:`-O3` ),
+    When you use :option:`-finline-functions` (included in :option:`-O3`),
     a lot of functions that would otherwise not be considered for inlining
     by the compiler are investigated.  To those functions, a different
     (more restrictive) limit compared to functions declared inline can
-    be applied ( :option:`--param max-inline-insns-auto` ).
+    be applied (:option:`--param max-inline-insns-auto`).
 
   .. option:: max-inline-insns-small
 
@@ -3212,7 +3212,7 @@ section includes experimental options that may produce broken code.
     :option:`--param max-inline-insns-recursive` applies to functions
     declared inline.
     For functions not declared inline, recursive inlining
-    happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
+    happens only when :option:`-finline-functions` (included in :option:`-O3`) is
     enabled; :option:`--param max-inline-insns-recursive-auto` applies instead.
 
   .. option:: max-inline-recursive-depth
@@ -3222,7 +3222,7 @@ section includes experimental options that may produce broken code.
 
     :option:`--param max-inline-recursive-depth` applies to functions
     declared inline.  For functions not declared inline, recursive inlining
-    happens only when :option:`-finline-functions` (included in :option:`-O3` ) is
+    happens only when :option:`-finline-functions` (included in :option:`-O3`) is
     enabled; :option:`--param max-inline-recursive-depth-auto` applies instead.
 
   .. option:: min-inline-recursive-probability
@@ -3232,7 +3232,7 @@ section includes experimental options that may produce broken code.
     increasing the prologue size or complexity of function body to other
     optimizers.
 
-    When profile feedback is available (see :option:`-fprofile-generate` ) the actual
+    When profile feedback is available (see :option:`-fprofile-generate`) the actual
     recursion depth can be guessed from the probability that function recurses
     via a given call expression.  This parameter limits inlining only to call
     expressions whose probability exceeds the given threshold (in percents).
@@ -3764,7 +3764,7 @@ section includes experimental options that may produce broken code.
     Estimate on average number of instructions that are executed before
     prefetch finishes.  The distance prefetched ahead is proportional
     to this constant.  Increasing this number may also lead to less
-    streams being prefetched (see simultaneous-prefetches ).
+    streams being prefetched (see simultaneous-prefetches).
 
   .. option:: simultaneous-prefetches
 
@@ -3844,7 +3844,7 @@ section includes experimental options that may produce broken code.
   .. option:: max-partial-antic-length
 
     Maximum length of the partial antic set computed during the tree
-    partial redundancy elimination optimization ( :option:`-ftree-pre` ) when
+    partial redundancy elimination optimization (:option:`-ftree-pre`) when
     optimizing at :option:`-O3` and above.  For some sorts of source code
     the enhanced partial redundancy elimination optimization can run away,
     consuming all of the memory available on the host machine.  This
@@ -3886,7 +3886,7 @@ section includes experimental options that may produce broken code.
   .. option:: ira-loop-reserved-regs
 
     IRA can be used to evaluate more accurate register pressure in loops
-    for decisions to move loop invariants (see :option:`-O3` ).  The number
+    for decisions to move loop invariants (see :option:`-O3`).  The number
     of available registers reserved for some other purposes is given
     by this parameter.  Default of the parameter
     is the best found from numerous experiments.
@@ -3970,8 +3970,8 @@ section includes experimental options that may produce broken code.
     variables.  These parameters control the maximum size, in storage units,
     of aggregate which is considered for replacement when compiling for
     speed
-    ( sra-max-scalarization-size-Ospeed ) or size
-    ( sra-max-scalarization-size-Osize ) respectively.
+    (sra-max-scalarization-size-Ospeed) or size
+    (sra-max-scalarization-size-Osize) respectively.
 
   .. option:: sra-max-propagations
 
@@ -4117,8 +4117,8 @@ section includes experimental options that may produce broken code.
   .. option:: max-stores-to-sink
 
     The maximum number of conditional store pairs that can be sunk.  Set to 0
-    if either vectorization ( :option:`-ftree-vectorize` ) or if-conversion
-    ( :option:`-ftree-loop-if-convert` ) is disabled.
+    if either vectorization (:option:`-ftree-vectorize`) or if-conversion
+    (:option:`-ftree-loop-if-convert`) is disabled.
 
   .. option:: case-values-threshold
 

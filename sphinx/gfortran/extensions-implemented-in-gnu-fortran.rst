@@ -76,7 +76,7 @@ look like:
 
         TYPESPEC*size x,y,z
 
-where ``TYPESPEC`` is a basic type ( ``INTEGER``, ``REAL``,
+where ``TYPESPEC`` is a basic type (``INTEGER``, ``REAL``,
 etc.), and where ``size`` is a byte count corresponding to the
 storage size of a valid kind for that type.  (For ``COMPLEX``
 variables, ``size`` is the total size of the real and imaginary
@@ -116,7 +116,7 @@ unlike in a ``DATA`` statement, an initializer only applies to the
 variable immediately preceding the initialization.  In other words,
 something like ``INTEGER I,J/2,3/`` is not valid.  This style of
 initialization is only allowed in declarations without double colons
-( ``::`` ); the double colons were introduced in Fortran 90, which also
+(``::``); the double colons were introduced in Fortran 90, which also
 introduced a standard syntax for initializing variables in type
 declarations.
 
@@ -317,8 +317,8 @@ BOZ literal constants
 
 .. index:: BOZ literal constants
 
-Besides decimal constants, Fortran also supports binary ( ``b`` ),
-octal ( ``o`` ) and hexadecimal ( ``z`` ) integer constants.  The
+Besides decimal constants, Fortran also supports binary (``b``),
+octal (``o``) and hexadecimal (``z``) integer constants.  The
 syntax is: :samp:`prefix quote digits quote`, where the prefix is
 either ``b``, ``o`` or ``z``, quote is either ``'`` or
 ``"`` and the digits are ``0`` or ``1`` for binary,
@@ -409,8 +409,8 @@ GNU Fortran supports Hollerith constants in assignments, ``DATA``
 statements, function and subroutine arguments. A Hollerith constant is
 written as a string of characters preceded by an integer constant 
 indicating the character count, and the letter ``H`` or
-``h``, and stored in bytewise fashion in a numeric ( ``INTEGER``,
-``REAL``, or ``COMPLEX`` ), ``LOGICAL`` or ``CHARACTER`` variable.
+``h``, and stored in bytewise fashion in a numeric (``INTEGER``,
+``REAL``, or ``COMPLEX``), ``LOGICAL`` or ``CHARACTER`` variable.
 The constant will be padded with spaces or truncated to fit the size of
 the variable in which it is stored.
 
@@ -458,7 +458,7 @@ to comparisons:
           write(*,*) "no match"
         end if
 
-Supported types are numeric ( ``INTEGER``, ``REAL``, or ``COMPLEX`` ),
+Supported types are numeric (``INTEGER``, ``REAL``, or ``COMPLEX``),
 and ``CHARACTER``.
 
 .. _character-conversion:
@@ -473,7 +473,7 @@ is a non-standard extension.  This feature is enabled using
 -fdec-char-conversions and only applies to character literals of ``kind=1``.
 
 Character literals can be used in ``DATA`` statements and assignments with
-numeric ( ``INTEGER``, ``REAL``, or ``COMPLEX`` ) or ``LOGICAL``
+numeric (``INTEGER``, ``REAL``, or ``COMPLEX``) or ``LOGICAL``
 variables. Like Hollerith constants they are copied byte-wise fashion. The
 constant will be padded with spaces or truncated to fit the size of the
 variable in which it is stored.
@@ -865,7 +865,7 @@ To convert, replace  ``STRUCTURE /``:samp:`{structure-name}` ``/``
 by ``TYPE`` :samp:`{type-name}`.  Additionally, replace
  ``RECORD /``:samp:`{structure-name}` ``/`` by
  ``TYPE(``:samp:`{type-name}` ``)``. Finally, in the component access,
-replace the period ( ``.`` ) by the percent sign ( ``%`` ).
+replace the period (``.``) by the percent sign (``%``).
 
 Here is an example of code using the non portable record structure syntax:
 
@@ -1417,7 +1417,7 @@ compile flag :option:`-fdec`, for compatibility.
 
   The ``READONLY`` specifier may be given upon opening a unit, and is
   equivalent to specifying ``ACTION='READ'``, except that the file may not be
-  deleted on close (i.e. ``CLOSE`` with ``STATUS="DELETE"`` ). The syntax
+  deleted on close (i.e. ``CLOSE`` with ``STATUS="DELETE"``). The syntax
   is:
 
   .. code-block:: fortran
@@ -1465,7 +1465,7 @@ Legacy PARAMETER statements
 For compatibility, GNU Fortran supports legacy PARAMETER statements without
 parentheses with :option:`-std`:samp:`=legacy`.  A warning is emitted if used with
 :option:`-std`:samp:`=gnu`, and an error is acknowledged with a real Fortran standard
-flag ( :option:`-std`:samp:`=f95`, etc...).  These statements take the following form:
+flag (:option:`-std`:samp:`=f95`, etc...).  These statements take the following form:
 
 .. code-block:: fortran
 

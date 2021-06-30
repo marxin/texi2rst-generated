@@ -105,7 +105,7 @@ enabled or disabled via pragmas (see :ref:`diagnostic-pragmas`) take effect
 as if they appeared at the end of the command-line.
 
 When an unrecognized warning option is requested (e.g.,
-:option:`-Wunknown-warning` ), GCC emits a diagnostic stating
+:option:`-Wunknown-warning`), GCC emits a diagnostic stating
 that the option is not recognized.  However, if the :option:`-Wno-` form
 is used, the behavior is slightly different: no diagnostic is
 produced for :option:`-Wno-unknown-warning` unless other diagnostics
@@ -167,7 +167,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -pedantic-errors
 
-  Give an error whenever the :dfn:`base standard` (see :option:`-Wpedantic` )
+  Give an error whenever the :dfn:`base standard` (see :option:`-Wpedantic`)
   requires a diagnostic, in some cases where there is undefined behavior
   at compile-time and in some other cases that do not prevent compilation
   of programs that are valid according to the standard. This is not
@@ -319,7 +319,7 @@ warn at all unless optimization is enabled.
   problems if there is a check added later in a release series for an
   ABI issue discovered since the initial release.  :option:`-Wabi` warns
   about more things if an older ABI version is selected (with
-  :option:`-fabi-version`:samp:`={n}` ).
+  :option:`-fabi-version`:samp:`={n}`).
 
   :option:`-Wabi` can also be used with an explicit version number to
   warn about C++ ABI compatibility with a particular :option:`-fabi-version`
@@ -620,7 +620,7 @@ warn at all unless optimization is enabled.
     string literals, are assumed to take on the value within the range that
     results in the most bytes on output.  For example, the call to ``sprintf``
     below is diagnosed because even with both :samp:`{a}` and :samp:`{b}` equal to zero,
-    the terminating NUL character ( ``'\0'`` ) appended by the function
+    the terminating NUL character (``'\0'``) appended by the function
     to the destination buffer will be written past its end.  Increasing
     the size of the buffer by a single byte is sufficient to avoid the
     warning, though it may not be sufficient to avoid the overflow.
@@ -1712,7 +1712,7 @@ warn at all unless optimization is enabled.
 
   In order to get a warning about an unused function parameter, you must
   either specify :option:`-Wextra -Wunused` (note that :option:`-Wall` implies
-  :option:`-Wunused` ), or separately specify :option:`-Wunused-parameter`.
+  :option:`-Wunused`), or separately specify :option:`-Wunused-parameter`.
 
 .. option:: -Wno-unused
 
@@ -1728,7 +1728,7 @@ warn at all unless optimization is enabled.
   In addition, passing a pointer (or in C++, a reference) to an uninitialized
   object to a ``const`` -qualified argument of a built-in function known to
   read the object is also diagnosed by this warning.
-  ( :option:`-Wmaybe-uninitialized` is issued for ordinary functions.)
+  (:option:`-Wmaybe-uninitialized` is issued for ordinary functions.)
 
   If you want to warn about code that uses the uninitialized value of the
   variable in its own initializer, use the :option:`-Winit-self` option.
@@ -1784,7 +1784,7 @@ warn at all unless optimization is enabled.
 
   In addition, passing a pointer (or in C++, a reference) to an uninitialized
   object to a ``const`` -qualified function argument is also diagnosed by
-  this warning.  ( :option:`-Wuninitialized` is issued for built-in functions
+  this warning.  (:option:`-Wuninitialized` is issued for built-in functions
   known to read the object.)  Annotating the function with attribute
   ``access (none)`` indicates that the argument isn't used to access
   the object and avoids the warning (see :ref:`common-function-attributes`).
@@ -1911,7 +1911,7 @@ warn at all unless optimization is enabled.
   Unlike level 1, it only warns when an address is taken.  Warns about
   incomplete types.  Runs in the front end only.
 
-  Level 3 (default for :option:`-Wstrict-aliasing` ):
+  Level 3 (default for :option:`-Wstrict-aliasing`):
   Should have very few false positives and few false
   negatives.  Slightly slower than levels 1 or 2 when optimization is enabled.
   Takes care of the common pun+dereference pattern in the front end:
@@ -1981,7 +1981,7 @@ warn at all unless optimization is enabled.
   determined to be either zero or non-zero in tests for such equality
   owing to the length of one argument being greater than the size of
   the array the other argument is stored in (or the bound in the case
-  of ``strncmp`` ).  Such calls could be mistakes.  For example,
+  of ``strncmp``).  Such calls could be mistakes.  For example,
   the call to ``strcmp`` below is diagnosed because its result is
   necessarily non-zero irrespective of the contents of the array ``a``.
 
@@ -2168,7 +2168,7 @@ warn at all unless optimization is enabled.
     Warn about functions that might be candidates for attributes
     ``pure``, ``const`` or ``noreturn`` or ``malloc``. The compiler
     only warns for functions visible in other compilation units or (in the case of
-    ``pure`` and ``const`` ) if it cannot prove that the function returns
+    ``pure`` and ``const``) if it cannot prove that the function returns
     normally. A function returns normally if it doesn't contain an infinite loop or
     return abnormally by throwing, calling ``abort`` or trapping.  This analysis
     requires option :option:`-fipa-pure-const`, which is enabled by default at

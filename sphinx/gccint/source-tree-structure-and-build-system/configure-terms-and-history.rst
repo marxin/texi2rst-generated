@@ -43,7 +43,7 @@ building on.  This is rare, so there is no common way of describing it.
 There is a proposal to call this a :dfn:`crossback`.
 
 If build and host are the same, the GCC you are building will also be
-used to build the target libraries (like ``libstdc++`` ).  If build and host
+used to build the target libraries (like ``libstdc++``).  If build and host
 are different, you must have already built and installed a cross
 compiler that will be used to build the target libraries (if you
 configured with :option:`--target`:samp:`=foo-bar`, this compiler will be called

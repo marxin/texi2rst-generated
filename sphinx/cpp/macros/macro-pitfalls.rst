@@ -267,7 +267,7 @@ that variable in ``min`` :
     next = min (x + y, tem);
   }
 
-(where we assume that ``foo`` returns type ``int`` ).
+(where we assume that ``foo`` returns type ``int``).
 
 .. _self-referential-macros:
 

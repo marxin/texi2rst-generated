@@ -22,7 +22,7 @@ are always known at compile time, with the :samp:`{c0}` term being the
 
 GCC uses the ``poly_int`` class to represent these coefficients.
 The class has two template parameters: the first specifies the number of
-coefficients ( :samp:`{n}` + 1) and the second specifies the type of the
+coefficients (:samp:`{n}` + 1) and the second specifies the type of the
 coefficients.  For example, :samp:`poly_int<2, unsigned short>` represents
 a polynomial with two coefficients (and thus one indeterminate), with each
 coefficient having type ``unsigned short``.  When :samp:`{n}` is 0,

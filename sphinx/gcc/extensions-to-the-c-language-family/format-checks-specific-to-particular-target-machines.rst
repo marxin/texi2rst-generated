@@ -23,7 +23,7 @@ format attribute
 Solaris Format Checks
 ^^^^^^^^^^^^^^^^^^^^^
 
-Solaris targets support the ``cmn_err`` (or ``__cmn_err__`` ) format
+Solaris targets support the ``cmn_err`` (or ``__cmn_err__``) format
 check.  ``cmn_err`` accepts a subset of the standard ``printf``
 conversions, and the two-argument ``%b`` conversion for displaying
 bit-fields.  See the Solaris man page for ``cmn_err`` for more information.
@@ -35,8 +35,8 @@ Darwin Format Checks
 
 In addition to the full set of format archetypes (attribute format style
 arguments such as ``printf``, ``scanf``, ``strftime``, and
-``strfmon`` ), Darwin targets also support the ``CFString`` (or
-``__CFString__`` ) archetype in the ``format`` attribute.
+``strfmon``), Darwin targets also support the ``CFString`` (or
+``__CFString__``) archetype in the ``format`` attribute.
 Declarations with this archetype are parsed for correct syntax
 and argument types.  However, parsing of the format string itself and
 validating arguments against it in calls to such functions is currently

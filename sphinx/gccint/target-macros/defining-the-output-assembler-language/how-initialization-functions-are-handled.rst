@@ -79,7 +79,7 @@ program is linked by the :command:`gcc` driver like this:
 
   ld -o output_file crti.o crtbegin.o ... -lgcc crtend.o crtn.o
 
-The prologue of a function ( ``__init`` ) appears in the ``.init``
+The prologue of a function (``__init``) appears in the ``.init``
 section of :samp:`crti.o`; the epilogue appears in :samp:`crtn.o`.  Likewise
 for the function ``__fini`` in the :dfn:`.fini` section.  Normally these
 files are provided by the operating system or by the GNU C library, but
@@ -97,13 +97,13 @@ macro properly.
 
 If no init section is available, when GCC compiles any function called
 ``main`` (or more accurately, any function designated as a program
-entry point by the language front end calling ``expand_main_function`` ),
+entry point by the language front end calling ``expand_main_function``),
 it inserts a procedure call to ``__main`` as the first executable code
 after the function prologue.  The ``__main`` function is defined
 in :samp:`libgcc2.c` and runs the global constructors.
 
 In file formats that don't support arbitrary sections, there are again
-two variants.  In the simplest variant, the GNU linker (GNU ``ld`` )
+two variants.  In the simplest variant, the GNU linker (GNU ``ld``)
 and an 'a.out' format must be used.  In this case,
 ``TARGET_ASM_CONSTRUCTOR`` is defined to produce a ``.stabs``
 entry of type :samp:`N_SETT`, referencing the name ``__CTOR_LIST__``,

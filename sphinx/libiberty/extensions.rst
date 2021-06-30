@@ -682,7 +682,7 @@ Summary of Obstack Macros
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here is a summary of all the macros associated with obstacks.  Each
-takes the address of an obstack ( ``struct obstack *`` ) as its first
+takes the address of an obstack (``struct obstack *``) as its first
 argument.
 
 :samp:`int obstack_init (struct obstack *{obstack-ptr})`
@@ -715,7 +715,7 @@ argument.
 
 :samp:`void obstack_free (struct obstack *{obstack-ptr}, void *{object})`
   Free :samp:`{object}` (and everything allocated in the specified obstack
-  more recently than :samp:`{object}` ).  See :ref:`freeing-obstack-objects`.
+  more recently than :samp:`{object}`).  See :ref:`freeing-obstack-objects`.
 
 :samp:`void obstack_blank (struct obstack *{obstack-ptr}, size_t {size})`
   Add :samp:`{size}` uninitialized bytes to a growing object.

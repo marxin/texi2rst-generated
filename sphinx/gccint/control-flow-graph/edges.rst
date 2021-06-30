@@ -207,7 +207,7 @@ the following types:
   However, the classic problem with this transformation is that it has a
   runtime cost in there resulting code: An extra jump.  Therefore, the
   computed jumps are un-factored in the later passes of the compiler
-  (in the pass called ``pass_duplicate_computed_gotos`` ).
+  (in the pass called ``pass_duplicate_computed_gotos``).
   Be aware of that when you work on passes in that area.  There have
   been numerous examples already where the compile time for code with
   unfactored computed jumps caused some serious headaches.

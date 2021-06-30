@@ -51,8 +51,8 @@ main gimplifier lower them the rest of the way; this is often simpler.
 GIMPLE that is not fully lowered is known as 'High GIMPLE' and
 consists of the IL before the pass ``pass_lower_cf``.  High GIMPLE
 contains some container statements like lexical scopes
-(represented by ``GIMPLE_BIND`` ) and nested expressions (e.g.,
-``GIMPLE_TRY`` ), while 'Low GIMPLE' exposes all of the
+(represented by ``GIMPLE_BIND``) and nested expressions (e.g.,
+``GIMPLE_TRY``), while 'Low GIMPLE' exposes all of the
 implicit jumps for control and exception expressions directly in
 the IL and EH region trees.
 

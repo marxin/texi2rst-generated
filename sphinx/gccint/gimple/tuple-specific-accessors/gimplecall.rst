@@ -15,7 +15,7 @@ GIMPLE_CALL
   determined by ``is_gimple_call_addr``.  ``NARGS`` are the number of
   arguments.  The rest of the arguments follow the argument ``NARGS``,
   and must be trees that are valid as rvalues in gimple (i.e., each
-  operand is validated with ``is_gimple_operand`` ).
+  operand is validated with ``is_gimple_operand``).
 
 .. function:: gcall *gimple_build_call_from_tree (tree call_expr, tree fnptrtype)
 

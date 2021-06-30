@@ -76,7 +76,7 @@ link-time compilation modes.
 * *WHOPR or partitioned mode*, designed to utilize multiple
   CPUs and/or a distributed compilation environment to quickly link
   large applications.  WHOPR stands for WHOle Program optimizeR (not to
-  be confused with the semantics of :option:`-fwhole-program` ).  It
+  be confused with the semantics of :option:`-fwhole-program`).  It
   partitions the aggregated callgraph from many different ``.o``
   files and distributes the compilation of the sub-graphs to different
   CPUs.

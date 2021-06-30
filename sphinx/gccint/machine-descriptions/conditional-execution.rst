@@ -58,7 +58,7 @@ certain conditions.
 When ``define_cond_exec`` is used, an implicit reference to
 the ``predicable`` instruction attribute is made.
 See :ref:`insn-attributes`.  This attribute must be a boolean (i.e. have
-exactly two elements in its :samp:`{list-of-values}` ), with the possible
+exactly two elements in its :samp:`{list-of-values}`), with the possible
 values being ``no`` and ``yes``.  The default and all uses in
 the insns must be a simple constant, not a complex expressions.  It
 may, however, depend on the alternative, by using a comma-separated

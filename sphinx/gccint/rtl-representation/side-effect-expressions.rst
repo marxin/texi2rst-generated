@@ -25,7 +25,7 @@ the operands of these.
   Represents the action of storing the value of :samp:`{x}` into the place
   represented by :samp:`{lval}`.  :samp:`{lval}` must be an expression
   representing a place that can be stored in: ``reg`` (or ``subreg``,
-  ``strict_low_part`` or ``zero_extract`` ), ``mem``, ``pc``,
+  ``strict_low_part`` or ``zero_extract``), ``mem``, ``pc``,
   or ``parallel``.
 
   If :samp:`{lval}` is a ``reg``, ``subreg`` or ``mem``, it has a
@@ -176,7 +176,7 @@ the operands of these.
   For instructions that require a temporary register, you should use
   ``scratch`` instead of a pseudo-register because this will allow the
   combiner phase to add the ``clobber`` when required.  You do this by
-  coding ( ``clobber`` ( ``match_scratch`` ...)).  If you do
+  coding (``clobber`` (``match_scratch`` ...)).  If you do
   clobber a pseudo register, use one which appears nowhere else---generate
   a new one each time.  Otherwise, you may confuse CSE.
 

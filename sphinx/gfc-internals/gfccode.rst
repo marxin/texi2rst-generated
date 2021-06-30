@@ -124,14 +124,14 @@ BLOCK and ASSOCIATE
 ^^^^^^^^^^^^^^^^^^^
 
 The code related to a ``BLOCK`` statement is stored inside an
-``gfc_code`` structure (say :samp:`{c}` )
+``gfc_code`` structure (say :samp:`{c}`)
 with ``c.op`` set to ``EXEC_BLOCK``.  The
 ``gfc_namespace`` holding the locally defined variables of the
 ``BLOCK`` is stored in ``c.ext.block.ns``.  The code inside the
 construct is in ``c.code``.
 
 ``ASSOCIATE`` constructs are based on ``BLOCK`` and thus also have
-the internal storage structure described above (including ``EXEC_BLOCK`` ).
+the internal storage structure described above (including ``EXEC_BLOCK``).
 However, for them ``c.ext.block.assoc`` is set additionally and points
 to a linked list of ``gfc_association_list`` structures.  Those
 structures basically store a link of associate-names to target expressions.

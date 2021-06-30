@@ -27,7 +27,7 @@ Hence, ``REAL(KIND=8)`` and ``DOUBLE PRECISION`` are equivalent.
 In the description of generic intrinsic procedures, the kind type parameter
 will be specified by ``KIND=*``, and in the description of specific
 names for an intrinsic procedure the kind type parameter will be explicitly
-given (e.g., ``REAL(KIND=4)`` or ``REAL(KIND=8)`` ).  Finally, for
+given (e.g., ``REAL(KIND=4)`` or ``REAL(KIND=8)``).  Finally, for
 brevity the optional ``KIND=`` syntax will be omitted.
 
 Many of the intrinsic procedures take one or more optional arguments.

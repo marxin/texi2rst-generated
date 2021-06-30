@@ -30,7 +30,7 @@ rollback or commit (of outermost transactions), so that the transaction
 executed next is not affected by the previous transaction.
 
 There is also global state associated with each method group, which is
-initialized and shut down ( ``method_group::init()`` and ``fini()`` )
+initialized and shut down (``method_group::init()`` and ``fini()``)
 when switching between method groups (see :samp:`retry.cc`).
 
 Selecting the default method
@@ -41,7 +41,7 @@ not necessarily for restarted transactions) can be set via an environment
 variable (:envvar:`ITM_DEFAULT_METHOD`), whose value should be equal to the name
 of one of the factory methods returning abi_dispatch subclasses but without
 the "dispatch_" prefix (e.g., "serialirr" instead of
-``GTM::dispatch_serialirr()`` ).
+``GTM::dispatch_serialirr()``).
 
 Note that this environment variable is only a hint for libitm and might not
 be supported in the future.
