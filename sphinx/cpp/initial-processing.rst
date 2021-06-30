@@ -40,8 +40,7 @@ standard.
 
   .. _trigraphs:
 
-* .. _trigraphs:
-  If trigraphs are enabled, they are replaced by their
+* If trigraphs are enabled, they are replaced by their
   corresponding single characters.  By default GCC ignores trigraphs,
   but if you request a strictly conforming mode with the :option:`-std`
   option, or you specify the :option:`-trigraphs` option, then it
