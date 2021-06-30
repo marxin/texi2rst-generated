@@ -78,12 +78,11 @@ list can be found below.  See also the
 * Support for namelist variables with allocatable and pointer
   attribute and nonconstant length type parameter.
 
-* 
-  .. index:: array, constructors
+.. index:: array, constructors
 
-  .. index:: [...]
+.. index:: [...]
 
-  Array constructors using square brackets.  That is, ``[...]`` rather
+* Array constructors using square brackets.  That is, ``[...]`` rather
   than ``(/.../)``.  Type-specification for array constructors like
   ``(/ some-type :: ... /)``.
 
@@ -92,27 +91,25 @@ list can be found below.  See also the
 
 * Support for the asynchronous input/output.
 
+.. index:: FLUSH statement
+
+.. index:: statement, FLUSH
+
+* ``FLUSH`` statement.
+
+.. index:: IOMSG= specifier
+
+* ``IOMSG=`` specifier for I/O statements.
+
+.. index:: ENUM statement
+
+.. index:: ENUMERATOR statement
+
+.. index:: statement, ENUM
+
+.. index:: statement, ENUMERATOR
+
 * 
-  .. index:: FLUSH statement
-
-  .. index:: statement, FLUSH
-
-  ``FLUSH`` statement.
-
-* 
-  .. index:: IOMSG= specifier
-
-  ``IOMSG=`` specifier for I/O statements.
-
-* 
-  .. index:: ENUM statement
-
-  .. index:: ENUMERATOR statement
-
-  .. index:: statement, ENUM
-
-  .. index:: statement, ENUMERATOR
-
   .. index:: fshort-enums
 
   Support for the declaration of enumeration constants via the
@@ -120,32 +117,27 @@ list can be found below.  See also the
   :command:`gcc` is guaranteed also for the case where the
   :command:`-fshort-enums` command line option is given.
 
-* 
-  .. index:: TR 15581
+.. index:: TR 15581
 
-  TR 15581:
+* TR 15581:
 
-  * 
-    .. index:: ALLOCATABLE dummy arguments
+  .. index:: ALLOCATABLE dummy arguments
 
-    ``ALLOCATABLE`` dummy arguments.
+  * ``ALLOCATABLE`` dummy arguments.
 
-  * 
-    .. index:: ALLOCATABLE function results
+  .. index:: ALLOCATABLE function results
 
-    ``ALLOCATABLE`` function results
+  * ``ALLOCATABLE`` function results
 
-  * 
-    .. index:: ALLOCATABLE components of derived types
+  .. index:: ALLOCATABLE components of derived types
 
-    ``ALLOCATABLE`` components of derived types
+  * ``ALLOCATABLE`` components of derived types
 
-* 
-  .. index:: STREAM I/O
+.. index:: STREAM I/O
 
-  .. index:: ACCESS='STREAM' I/O
+.. index:: ACCESS='STREAM' I/O
 
-  The ``OPEN`` statement supports the ``ACCESS='STREAM'`` specifier,
+* The ``OPEN`` statement supports the ``ACCESS='STREAM'`` specifier,
   allowing I/O without any record structure.
 
 * Namelist input/output for internal files.
@@ -155,33 +147,29 @@ list can be found below.  See also the
   should appear for positive numbers. On systems where ``strtod`` honours
   the rounding mode, the rounding mode is also supported for input.
 
-* 
-  .. index:: PROTECTED statement
+.. index:: PROTECTED statement
 
-  .. index:: statement, PROTECTED
+.. index:: statement, PROTECTED
 
-  The ``PROTECTED`` statement and attribute.
+* The ``PROTECTED`` statement and attribute.
 
-* 
-  .. index:: VALUE statement
+.. index:: VALUE statement
 
-  .. index:: statement, VALUE
+.. index:: statement, VALUE
 
-  The ``VALUE`` statement and attribute.
+* The ``VALUE`` statement and attribute.
 
-* 
-  .. index:: VOLATILE statement
+.. index:: VOLATILE statement
 
-  .. index:: statement, VOLATILE
+.. index:: statement, VOLATILE
 
-  The ``VOLATILE`` statement and attribute.
+* The ``VOLATILE`` statement and attribute.
 
-* 
-  .. index:: IMPORT statement
+.. index:: IMPORT statement
 
-  .. index:: statement, IMPORT
+.. index:: statement, IMPORT
 
-  The ``IMPORT`` statement, allowing to import
+* The ``IMPORT`` statement, allowing to import
   host-associated derived types.
 
 * The intrinsic modules ``ISO_FORTRAN_ENVIRONMENT`` is supported,
@@ -189,16 +177,15 @@ list can be found below.  See also the
   procedures for C interoperability are available in the ``ISO_C_BINDING``
   module.
 
-* 
-  .. index:: USE, INTRINSIC statement
+.. index:: USE, INTRINSIC statement
 
-  .. index:: statement, USE, INTRINSIC
+.. index:: statement, USE, INTRINSIC
 
-  .. index:: ISO_FORTRAN_ENV statement
+.. index:: ISO_FORTRAN_ENV statement
 
-  .. index:: statement, ISO_FORTRAN_ENV
+.. index:: statement, ISO_FORTRAN_ENV
 
-  ``USE`` statement with ``INTRINSIC`` and ``NON_INTRINSIC``
+* ``USE`` statement with ``INTRINSIC`` and ``NON_INTRINSIC``
   attribute; supported intrinsic modules: ``ISO_FORTRAN_ENV``,
   ``ISO_C_BINDING``, ``OMP_LIB`` and ``OMP_LIB_KINDS``,
   and ``OPENACC``.

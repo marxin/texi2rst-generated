@@ -62,12 +62,11 @@ A ``define_insn`` is an RTL expression containing four or five operands:
   If the vector has multiple elements, the RTL template is treated as a
   ``parallel`` expression.
 
-* 
-  .. index:: pattern conditions
+.. index:: pattern conditions
 
-  .. index:: conditions, in patterns
+.. index:: conditions, in patterns
 
-  The condition: This is a string which contains a C expression.  When the
+* The condition: This is a string which contains a C expression.  When the
   compiler attempts to match RTL against a pattern, the condition is
   evaluated.  If the condition evaluates to ``true``, the match is
   permitted.  The condition may be an empty string, which is treated

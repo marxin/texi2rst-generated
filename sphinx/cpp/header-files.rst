@@ -17,10 +17,9 @@ C preprocessing directive :samp:`#include`.
 
 Header files serve two purposes.
 
-* 
-  .. index:: system header files
+.. index:: system header files
 
-  System header files declare the interfaces to parts of the operating
+* System header files declare the interfaces to parts of the operating
   system.  You include them in your program to supply the definitions and
   declarations you need to invoke system calls and libraries.
 

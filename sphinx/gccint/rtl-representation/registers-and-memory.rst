@@ -269,17 +269,15 @@ registers and to main memory.
     laid out in memory order.  The memory order of bytes is defined by
     two target macros, ``WORDS_BIG_ENDIAN`` and ``BYTES_BIG_ENDIAN`` :
 
-    * 
-      .. index:: WORDS_BIG_ENDIAN, effect on subreg
+    .. index:: WORDS_BIG_ENDIAN, effect on subreg
 
-      ``WORDS_BIG_ENDIAN``, if set to 1, says that byte number zero is
+    * ``WORDS_BIG_ENDIAN``, if set to 1, says that byte number zero is
       part of the most significant word; otherwise, it is part of the least
       significant word.
 
-    * 
-      .. index:: BYTES_BIG_ENDIAN, effect on subreg
+    .. index:: BYTES_BIG_ENDIAN, effect on subreg
 
-      ``BYTES_BIG_ENDIAN``, if set to 1, says that byte number zero is
+    * ``BYTES_BIG_ENDIAN``, if set to 1, says that byte number zero is
       the most significant byte within a word; otherwise, it is the least
       significant byte within a word.
 

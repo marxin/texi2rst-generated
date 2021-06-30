@@ -16,10 +16,9 @@ all at once, for performance reasons.  These transformations correspond
 roughly to the first three 'phases of translation' described in the C
 standard.
 
-* 
-  .. index:: line endings
+.. index:: line endings
 
-  The input file is read into memory and broken into lines.
+* The input file is read into memory and broken into lines.
 
   Different systems use different conventions to indicate the end of a
   line.  GCC accepts the ASCII control sequences LF, CR
@@ -37,10 +36,9 @@ standard.
   that this condition provokes undefined behavior, so GCC will emit a
   warning message.
 
-* 
-  .. index:: trigraphs
+.. index:: trigraphs
 
-  .. _trigraphs:
+* .. _trigraphs:
   If trigraphs are enabled, they are replaced by their
   corresponding single characters.  By default GCC ignores trigraphs,
   but if you request a strictly conforming mode with the :option:`-std`
@@ -73,12 +71,11 @@ standard.
     Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
     Replacement:      [    ]    {    }    #    \    ^    |    ~
 
-* 
-  .. index:: continued lines
+.. index:: continued lines
 
-  .. index:: backslash-newline
+.. index:: backslash-newline
 
-  Continued lines are merged into one long line.
+* Continued lines are merged into one long line.
 
   A continued line is a line which ends with a backslash, :samp:`\\`.  The
   backslash is removed and the following line is joined with the current
@@ -94,14 +91,13 @@ standard.
   editing mistake, and many compilers will not accept it as a continued
   line, GCC will warn you about it.
 
-* 
-  .. index:: comments
+.. index:: comments
 
-  .. index:: line comments
+.. index:: line comments
 
-  .. index:: block comments
+.. index:: block comments
 
-  All comments are replaced with single spaces.
+* All comments are replaced with single spaces.
 
   There are two kinds of comments.  :dfn:`Block comments` begin with
   :samp:`/*` and continue until the next :samp:`*/`.  Block comments do not
