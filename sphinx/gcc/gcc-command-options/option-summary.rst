@@ -26,17 +26,17 @@ in the following sections.
 *C Language Options*
   See :ref:`Options Controlling C Dialect <c-dialect-options>`.
 
-  :option:`-ansi`  :option:`-std`:samp:`={standard}`  :option:`-fgnu89-inline` 
-  :option:`-fpermitted-flt-eval-methods`:samp:`={standard}` 
-  :option:`-aux-info` :samp:`{filename}`  :option:`-fallow-parameterless-variadic-functions` 
-  :option:`-fno-asm`  :option:`-fno-builtin`  :option:`-fno-builtin-`:samp:`{function}`  :option:`-fgimple`
-  :option:`-fhosted`  :option:`-ffreestanding` 
+  :option:`-ansi`  :option:`-std`:samp:`={standard}`  :option:`-aux-info` :samp:`{filename}` 
+  :option:`-fallow-parameterless-variadic-functions`  :option:`-fno-asm`  
+  :option:`-fno-builtin`  :option:`-fno-builtin-`:samp:`{function}`  :option:`-fcond-mismatch` 
+  :option:`-ffreestanding`  :option:`-fgimple`  :option:`-fgnu-tm`  :option:`-fgnu89-inline`  :option:`-fhosted` 
+  :option:`-flax-vector-conversions`  :option:`-fms-extensions` 
+  :option:`-foffload`:samp:`={arg}`  :option:`-foffload-options`:samp:`={arg}` 
   :option:`-fopenacc`  :option:`-fopenacc-dim`:samp:`={geom}` 
   :option:`-fopenmp`  :option:`-fopenmp-simd` 
-  :option:`-fms-extensions`  :option:`-fplan9-extensions`  :option:`-fsso-struct`:samp:`={endianness}` 
-  :option:`-fallow-single-precision`  :option:`-fcond-mismatch`  :option:`-flax-vector-conversions` 
-  :option:`-fsigned-bitfields`  :option:`-fsigned-char` 
-  :option:`-funsigned-bitfields`  :option:`-funsigned-char`
+  :option:`-fpermitted-flt-eval-methods`:samp:`={standard}` 
+  :option:`-fplan9-extensions`  :option:`-fsigned-bitfields`  :option:`-funsigned-bitfields` 
+  :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct`:samp:`={endianness}`
 
 *C++ Language Options*
   See :ref:`Options Controlling C++ Dialect <c++-dialect-options>`.
