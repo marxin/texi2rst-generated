@@ -41,6 +41,7 @@ I'm a demo documentation page.
 Enable it all :)
 
 I am a :command:`super-command`.
+I am **strong** and I am *emphasis*.
 
 Show :samp:`Samp with a {variable}.`
 
