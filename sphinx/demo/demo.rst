@@ -57,3 +57,8 @@ Code block:
   gcc a.c
   ./a.out
 
+Note1: ([#]_)
+Note2: ([#]_)
+
+.. [#] Future versions of GCC may zero-extend, or use a target-defined ``ptr_extend`` pattern.  Do not rely on sign extension.
+.. [#] I am note 2.
