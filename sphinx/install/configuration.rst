@@ -507,6 +507,11 @@ corresponding :option:`--without` option.
   Same as :option:`--with-as`
   but for the linker.
 
+.. option:: --with-dsymutil=pathname
+
+  Same as #with-as:option:`--with-as`
+  but for the debug linker (only used on Darwin platforms so far).
+
 .. option:: --with-stabs
 
   Specify that stabs debugging

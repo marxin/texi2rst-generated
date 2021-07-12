@@ -614,7 +614,7 @@ Lengths are measured in addressable storage units (bytes).
 Note that it is possible to call functions via the ``symbol_ref``
 mechanism to compute the length of an insn.  However, if you use this
 mechanism you must provide dummy clauses to express the maximum length
-without using the function call.  You can an example of this in the
+without using the function call.  You can see an example of this in the
 ``pa`` machine description for the ``call_symref`` pattern.
 
 The following macros can be used to refine the length computation:
