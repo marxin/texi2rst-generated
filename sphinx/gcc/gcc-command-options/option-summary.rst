@@ -361,7 +361,7 @@ in the following sections.
   :option:`-floop-parallelize-all`  :option:`-flra-remat`  :option:`-flto`  :option:`-flto-compression-level` 
   :option:`-flto-partition`:samp:`={alg}`  :option:`-fmerge-all-constants` 
   :option:`-fmerge-constants`  :option:`-fmodulo-sched`  :option:`-fmodulo-sched-allow-regmoves` 
-  :option:`-fmove-loop-invariants`  :option:`-fno-branch-count-reg` 
+  :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fno-branch-count-reg` 
   :option:`-fno-defer-pop`  :option:`-fno-fp-int-builtin-inexact`  :option:`-fno-function-cse` 
   :option:`-fno-guess-branch-probability`  :option:`-fno-inline`  :option:`-fno-math-errno`  :option:`-fno-peephole` 
   :option:`-fno-peephole2`  :option:`-fno-printf-return-value`  :option:`-fno-sched-interblock` 

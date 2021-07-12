@@ -83,6 +83,7 @@ See :ref:`overall-options`, for examples.
   :option:`-fipa-reference-addressable` 
   :option:`-fmerge-constants` 
   :option:`-fmove-loop-invariants` 
+  :option:`-fmove-loop-stores`
   :option:`-fomit-frame-pointer` 
   :option:`-freorder-blocks` 
   :option:`-fshrink-wrap` 
@@ -226,7 +227,7 @@ See :ref:`overall-options`, for examples.
   :option:`-fbranch-count-reg`  :option:`-fdelayed-branch` 
   :option:`-fdse`  :option:`-fif-conversion`  :option:`-fif-conversion2`  
   :option:`-finline-functions-called-once` 
-  :option:`-fmove-loop-invariants`  :option:`-fssa-phiopt` 
+  :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fssa-phiopt` 
   :option:`-ftree-bit-ccp`  :option:`-ftree-dse`  :option:`-ftree-pta`  :option:`-ftree-sra`
 
 If you use multiple :option:`-O` options, with or without level numbers,
@@ -2855,6 +2856,15 @@ section includes experimental options that may produce broken code.
   Enables the loop invariant motion pass in the RTL loop optimizer.  Enabled
   at level :option:`-O1` and higher, except for :option:`-Og`.
 
+.. option:: -fmove-loop-stores
+
+  Enables the loop store motion pass in the GIMPLE loop optimizer.  This
+  moves invariant stores to after the end of the loop in exchange for
+  carrying the stored value in a register across the iteration.
+  Note for this option to have an effect :option:`-ftree-loop-im` has to
+  be enabled as well.  Enabled at level :option:`-O1` and higher, except
+  for :option:`-Og`.
+
 .. option:: -fsplit-loops
 
   Split a loop into two if it contains a condition that's always true
@@ -3890,6 +3900,17 @@ section includes experimental options that may produce broken code.
     of available registers reserved for some other purposes is given
     by this parameter.  Default of the parameter
     is the best found from numerous experiments.
+
+  .. option:: ira-consider-dup-in-all-alts
+
+    Make IRA to consider matching constraint (duplicated operand number)
+    heavily in all available alternatives for preferred register class.
+    If it is set as zero, it means IRA only respects the matching
+    constraint when it's in the only available alternative with an
+    appropriate register class.  Otherwise, it means IRA will check all
+    available alternatives for preferred register class even if it has
+    found some choice with an appropriate register class and respect the
+    found qualified matching constraint.
 
   .. option:: lra-inheritance-ebb-probability-cutoff
 

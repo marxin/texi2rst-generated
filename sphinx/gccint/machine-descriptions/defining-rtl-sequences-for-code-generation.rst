@@ -139,9 +139,6 @@ Here is an example, the definition of left-shift for the SPUR chip:
             (match_operand:SI 2 "nonmemory_operand" "")))]
     ""
     "
-
-.. code-block:: c++
-
   {
     if (GET_CODE (operands[2]) != CONST_INT
         || (unsigned) INTVAL (operands[2]) > 3)

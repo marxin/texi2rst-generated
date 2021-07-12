@@ -100,3 +100,6 @@ The built-in functions supported are:
   vec_t __builtin_vsx_xvcvspbf16 (vec_t);
   vec_t __builtin_vsx_xvcvbf16spn (vec_t);
 
+  __vector_pair __builtin_vsx_lxvp (size_t, __vector_pair *);
+  void __builtin_vsx_stxvp (__vector_pair, size_t, __vector_pair *);
+

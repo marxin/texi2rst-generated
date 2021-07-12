@@ -1089,6 +1089,22 @@ vec_addsubm3
   lanes doing addition.  Operands 1 and 2 and the outout operand are vectors
   with mode :samp:`{m}`.
 
+  .. index:: vec_fmaddsubm4 instruction pattern
+
+vec_fmaddsubm4
+  Alternating multiply subtract, add with even lanes doing subtract and odd
+  lanes doing addition of the third operand to the multiplication result
+  of the first two operands.  Operands 1, 2 and 3 and the outout operand are vectors
+  with mode :samp:`{m}`.
+
+  .. index:: vec_fmsubaddm4 instruction pattern
+
+vec_fmsubaddm4
+  Alternating multiply add, subtract with even lanes doing addition and odd
+  lanes doing subtraction of the third operand to the multiplication result
+  of the first two operands.  Operands 1, 2 and 3 and the outout operand are vectors
+  with mode :samp:`{m}`.
+
   These instructions are not allowed to ``FAIL``.
 
   .. index:: mulhisi3 instruction pattern
