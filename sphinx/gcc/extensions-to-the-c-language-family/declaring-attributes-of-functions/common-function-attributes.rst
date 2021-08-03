@@ -1057,17 +1057,38 @@ The following attributes are supported on most targets.
     my_memcpy (void *dest, const void *src, size_t len)
             __attribute__((nonnull (1, 2)));
 
-  causes the compiler to check that, in calls to ``my_memcpy``,
-  arguments :samp:`{dest}` and :samp:`{src}` are non-null.  If the compiler
-  determines that a null pointer is passed in an argument slot marked
-  as non-null, and the :option:`-Wnonnull` option is enabled, a warning
-  is issued.  See :ref:`warning-options`.  Unless disabled by
-  the :option:`-fno-delete-null-pointer-checks` option the compiler may
-  also perform optimizations based on the knowledge that certain function
-  arguments cannot be null. In addition,
-  the :option:`-fisolate-erroneous-paths-attribute` option can be specified
-  to have GCC transform calls with null arguments to non-null functions
-  into traps. See :ref:`optimize-options`.
+  informs the compiler that, in calls to ``my_memcpy``, arguments
+  :samp:`{dest}` and :samp:`{src}` must be non-null.
+
+  The attribute has an effect both on functions calls and function definitions.
+
+  For function calls:
+
+  * If the compiler determines that a null pointer is
+    passed in an argument slot marked as non-null, and the
+    :option:`-Wnonnull` option is enabled, a warning is issued.
+    See :ref:`warning-options`.
+
+  * The :option:`-fisolate-erroneous-paths-attribute` option can be
+    specified to have GCC transform calls with null arguments to non-null
+    functions into traps.  See :ref:`optimize-options`.
+
+  * The compiler may also perform optimizations based on the
+    knowledge that certain function arguments cannot be null.  These
+    optimizations can be disabled by the
+    :option:`-fno-delete-null-pointer-checks` option. See :ref:`optimize-options`.
+
+  For function definitions:
+
+  * If the compiler determines that a function parameter that is
+    marked with nonnull is compared with null, and
+    :option:`-Wnonnull-compare` option is enabled, a warning is issued.
+    See :ref:`warning-options`.
+
+  * The compiler may also perform optimizations based on the
+    knowledge that ``nonnul`` parameters cannot be null.  This can
+    currently not be disabled other than by removing the nonnull
+    attribute.
 
   If no :samp:`{arg-index}` is given to the ``nonnull`` attribute,
   all pointer arguments are marked as non-null.  To illustrate, the

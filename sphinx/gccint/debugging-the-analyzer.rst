@@ -92,6 +92,15 @@ will dump the region_model's state to stderr.
 
 .. code-block:: c++
 
+  __analyzer_dump_state ("malloc", ptr);
+
+will emit a warning describing the state of the 2nd argument
+(which can be of any type) with respect to the state machine with
+a name matching the 1st argument (which must be a string literal).
+This is for use when debugging, and may be of use in DejaGnu tests.
+
+.. code-block:: c++
+
   __analyzer_eval (expr);
 
 will emit a warning with text "TRUE", FALSE" or "UNKNOWN" based on the

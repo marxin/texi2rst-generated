@@ -435,7 +435,7 @@ This is about addressing modes.
   also to emit such a permutation.  In the former case :samp:`{in0}`, :samp:`{in1}`
   and :samp:`{out}` are all null.  In the latter case :samp:`{in0}` and :samp:`{in1}` are
   the source vectors and :samp:`{out}` is the destination vector; all three are
-  registers of mode :samp:`{mode}`.  :samp:`{in1}` is the same as :samp:`{in0}` if
+  operands of mode :samp:`{mode}`.  :samp:`{in1}` is the same as :samp:`{in0}` if
   :samp:`{sel}` describes a permutation on one vector instead of two.
 
   Return true if the operation is possible, emitting instructions for it

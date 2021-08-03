@@ -594,14 +594,15 @@ Here are several miscellaneous parameters.
 
   You need not define this macro if it would always evaluate to zero.
 
-.. function:: rtx_insn * TARGET_MD_ASM_ADJUST (vec<rtx>& outputs, vec<rtx>& inputs, vec<machine_mode>& input_modes, vec<const char *>& constraints, vec<rtx>& clobbers, HARD_REG_SET& clobbered_regs)
+.. function:: rtx_insn * TARGET_MD_ASM_ADJUST (vec<rtx>& outputs, vec<rtx>& inputs, vec<machine_mode>& input_modes, vec<const char *>& constraints, vec<rtx>& clobbers, HARD_REG_SET& clobbered_regs, location_t loc)
 
   .. hook-start:TARGET_MD_ASM_ADJUST
 
   This target hook may add :dfn:`clobbers` to :samp:`{clobbers}` and
   :samp:`{clobbered_regs}` for any hard regs the port wishes to automatically
   clobber for an asm.  The :samp:`{outputs}` and :samp:`{inputs}` may be inspected
-  to avoid clobbering a register that is already used by the asm.
+  to avoid clobbering a register that is already used by the asm.  :samp:`{loc}`
+  is the source location of the asm.
 
   It may modify the :samp:`{outputs}`, :samp:`{inputs}`, :samp:`{input_modes}`, and
   :samp:`{constraints}` as necessary for other pre-processing.  In this case the
@@ -939,6 +940,15 @@ Here are several miscellaneous parameters.
 
 .. hook-end
 
+.. function:: machine_mode TARGET_PREFERRED_DOLOOP_MODE (machine_mode mode)
+
+  This hook takes a :samp:`{mode}` for a doloop IV, where ``mode`` is the
+  original mode for the operation.  If the target prefers an alternate
+  ``mode`` for the operation, then this hook should return that mode;
+  otherwise the original ``mode`` should be returned.  For example, on a
+  64-bit target, ``DImode`` might be preferred over ``SImode``.  Both the
+  original and the returned modes should be ``MODE_INT``.
+
 .. function:: bool TARGET_LEGITIMATE_COMBINED_INSN (rtx_insn *insn)
 
   .. hook-start:TARGET_LEGITIMATE_COMBINED_INSN
@@ -1115,6 +1125,13 @@ Here are several miscellaneous parameters.
    :samp:`{bit_code}` is ``AND`` or ``IOR``, which is the op on the compares.
 
 .. hook-end
+
+.. function:: rtx TARGET_GEN_MEMSET_SCRATCH_RTX (machine_mode mode)
+
+  This hook should return an rtx for a scratch register in :samp:`{mode}` to
+  be used when expanding memset calls.  The backend can use a hard scratch
+  register to avoid stack realignment when expanding memset.  The default
+  is ``gen_reg_rtx``.
 
 .. function:: unsigned TARGET_LOOP_UNROLL_ADJUST (unsigned nunroll, class loop *loop)
 

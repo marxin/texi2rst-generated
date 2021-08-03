@@ -57,7 +57,7 @@ to operate on them:
   This function returns the ``edge`` currently pointed to by an
   ``edge_iterator``.
 
-``ei_safe_safe``
+``ei_safe_edge``
   This function returns the ``edge`` currently pointed to by an
   ``edge_iterator``, but returns ``NULL`` if the iterator is
   pointing at the end of the sequence.  This function has been provided

@@ -362,6 +362,10 @@ Vector-specific attributes
 ``vect_udot_qi``
   Target supports a vector dot-product of ``unsigned char``.
 
+``vect_usdot_qi``
+  Target supports a vector dot-product where one operand of the multiply is
+  ``signed char`` and the other of ``unsigned char``.
+
 ``vect_sdot_hi``
   Target supports a vector dot-product of ``signed short``.
 
@@ -633,6 +637,11 @@ ARM-specific attributes
   ARM target supports executing instructions from ARMv8.2-A with the Dot
   Product extension. Some multilibs may be incompatible with these options.
   Implies arm_v8_2a_dotprod_neon_ok.
+
+``arm_v8_2a_i8mm_neon_hw``
+  ARM target supports executing instructions from ARMv8.2-A with the 8-bit
+  Matrix Multiply extension.  Some multilibs may be incompatible with these
+  options.  Implies arm_v8_2a_i8mm_ok.
 
 ``arm_fp16fml_neon_ok``
   .. _arm_fp16fml_neon_ok:

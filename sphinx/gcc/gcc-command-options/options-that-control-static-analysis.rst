@@ -35,6 +35,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-tainted-array-index` 
   :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
   :option:`-Wanalyzer-use-after-free` 
+  :option:`-Wanalyzer-use-of-uninitialized-value` 
   :option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
   :option:`-Wanalyzer-write-to-const` 
   :option:`-Wanalyzer-write-to-string-literal` 
@@ -345,6 +346,18 @@ Options That Control Static Analysis
 
   Default option value for :option:`-Wno-analyzer-write-to-string-literal`.
 
+.. option:: -Wno-analyzer-use-of-uninitialized-value
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-use-of-uninitialized-value` to disable it.
+
+  This diagnostic warns for paths through the code in which an uninitialized
+  value is used.
+
+.. option:: -Wanalyzer-use-of-uninitialized-value
+
+  Default option value for :option:`-Wno-analyzer-use-of-uninitialized-value`.
+
 Pertinent parameters for controlling the exploration are:
 :option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
 :option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
@@ -532,6 +545,11 @@ The following options control the analyzer.
   Dump a textual representation of the 'exploded graph' to
   one dump file per node, to :samp:`{file}.eg-{id}.txt`.
   This is typically a large number of dump files.
+
+.. option:: -fdump-analyzer-exploded-paths
+
+  Dump a textual representation of the 'exploded path' for each
+  diagnostic to :samp:`{file}.{idx}.{kind}.epath.txt`.
 
 .. option:: -fdump-analyzer-feasibility
 
