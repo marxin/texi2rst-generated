@@ -2498,7 +2498,10 @@ RISC-V---:samp:`{config/riscv/constraints.md}`
   ``A``
     An address that is held in a general-purpose register.
 
-RX---:samp:`{config/rx/constraints.md}`
+  ``S``
+    A constraint that matches an absolute symbolic address.
+
+:samp:`RX---{config/rx/constraints.md}`
 
   ``Q``
     An address which does not involve register indirect addressing or

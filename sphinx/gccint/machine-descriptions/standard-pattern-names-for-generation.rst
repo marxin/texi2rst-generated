@@ -792,14 +792,53 @@ mask_fold_left_plus_m
   .. index:: sdot_prodm instruction pattern
 
 sdot_prodm
-.. index:: udot_prodm instruction pattern
+  Compute the sum of the products of two signed elements.
+  Operand 1 and operand 2 are of the same mode. Their
+  product, which is of a wider mode, is computed and added to operand 3.
+  Operand 3 is of a mode equal or wider than the mode of the product. The
+  result is placed in operand 0, which is of the same mode as operand 3.
 
- udot_prodm
-  Compute the sum of the products of two signed/unsigned elements.
-  Operand 1 and operand 2 are of the same mode. Their product, which is of a
-  wider mode, is computed and added to operand 3. Operand 3 is of a mode equal or
-  wider than the mode of the product. The result is placed in operand 0, which
-  is of the same mode as operand 3.
+  Semantically the expressions perform the multiplication in the following signs
+
+  .. code-block:: c++
+
+    sdot<signed op0, signed op1, signed op2, signed op3> ==
+       op0 = sign-ext (op1) * sign-ext (op2) + op3
+    ...
+
+  .. index:: udot_prodm instruction pattern
+
+udot_prodm
+  Compute the sum of the products of two unsigned elements.
+  Operand 1 and operand 2 are of the same mode. Their
+  product, which is of a wider mode, is computed and added to operand 3.
+  Operand 3 is of a mode equal or wider than the mode of the product. The
+  result is placed in operand 0, which is of the same mode as operand 3.
+
+  Semantically the expressions perform the multiplication in the following signs
+
+  .. code-block:: c++
+
+    udot<unsigned op0, unsigned op1, unsigned op2, unsigned op3> ==
+       op0 = zero-ext (op1) * zero-ext (op2) + op3
+    ...
+
+  .. index:: usdot_prodm instruction pattern
+
+usdot_prodm
+  Compute the sum of the products of elements of different signs.
+  Operand 1 must be unsigned and operand 2 signed. Their
+  product, which is of a wider mode, is computed and added to operand 3.
+  Operand 3 is of a mode equal or wider than the mode of the product. The
+  result is placed in operand 0, which is of the same mode as operand 3.
+
+  Semantically the expressions perform the multiplication in the following signs
+
+  .. code-block:: c++
+
+    usdot<signed op0, unsigned op1, signed op2, signed op3> ==
+       op0 = ((signed-conv) zero-ext (op1)) * sign-ext (op2) + op3
+    ...
 
   .. index:: ssadm instruction pattern
 
@@ -2544,8 +2583,12 @@ jump
 call
   Subroutine call instruction returning no value.  Operand 0 is the
   function to call; operand 1 is the number of bytes of arguments pushed
-  as a ``const_int`` ; operand 2 is the number of registers used as
-  operands.
+  as a ``const_int``.  Operand 2 is the result of calling the target
+  hook ``TARGET_FUNCTION_ARG`` with the second argument ``arg``
+  yielding true for ``arg.end_marker_p ()``, in a call after all
+  parameters have been passed to that hook.  By default this is the first
+  register beyond those used for arguments in the call, or ``NULL`` if
+  all the argument-registers are used in the call.
 
   On most machines, operand 2 is not actually stored into the RTL
   pattern.  It is supplied for the sake of some RISC machines which need

@@ -30,14 +30,6 @@ The following are common accessors for gimple statements.
 
   Return the lexical scope block holding statement ``G``.
 
-.. function:: tree gimple_expr_type (gimple stmt)
-
-  Return the type of the main expression computed by ``STMT``. Return
-  ``void_type_node`` if ``STMT`` computes nothing. This will only return
-  something meaningful for ``GIMPLE_ASSIGN``, ``GIMPLE_COND`` and
-  ``GIMPLE_CALL``.  For all other tuple codes, it will return
-  ``void_type_node``.
-
 .. function:: enum tree_code gimple_expr_code (gimple stmt)
 
   Return the tree code for the expression computed by ``STMT``.  This

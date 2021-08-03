@@ -260,6 +260,7 @@ in the following sections.
   :option:`-fdump-analyzer-exploded-nodes` 
   :option:`-fdump-analyzer-exploded-nodes-2` 
   :option:`-fdump-analyzer-exploded-nodes-3` 
+  :option:`-fdump-analyzer-exploded-paths` 
   :option:`-fdump-analyzer-feasibility` 
   :option:`-fdump-analyzer-json` 
   :option:`-fdump-analyzer-state-purge` 

@@ -15,7 +15,6 @@ This describes how to specify debugging information.
 .. toctree::
   :maxdepth: 2
 
-
 .. _all-debuggers:
 
 Macros Affecting All Debugging Formats
@@ -488,4 +487,32 @@ Here are macros for VMS debug format.
   :option:`-g` unless explicitly overridden with :option:`-g0`.  This
   behavior is controlled by ``TARGET_OPTION_OPTIMIZATION`` and
   ``TARGET_OPTION_OVERRIDE``.
+
+.. _ctf-debug:
+
+Macros for CTF Debug Format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. prevent bad page break with this line
+
+Here are macros for CTF debug format.
+
+.. c:macro:: CTF_DEBUGGING_INFO
+
+  Define this macro if GCC should produce debugging output in CTF debug
+  format in response to the :option:`-gctf` option.
+
+.. _btf-debug:
+
+Macros for BTF Debug Format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. prevent bad page break with this line
+
+Here are macros for BTF debug format.
+
+.. c:macro:: BTF_DEBUGGING_INFO
+
+  Define this macro if GCC should produce debugging output in BTF debug
+  format in response to the :option:`-gbtf` option.
 
