@@ -22,6 +22,7 @@ three parts:
   openmp-runtime-library-routines/omp_get_ancestor_thread_num
   openmp-runtime-library-routines/omp_get_cancellation
   openmp-runtime-library-routines/omp_get_default_device
+  openmp-runtime-library-routines/omp_get_device_num
   openmp-runtime-library-routines/omp_get_dynamic
   openmp-runtime-library-routines/omp_get_initial_device
   openmp-runtime-library-routines/omp_get_level
@@ -77,6 +78,7 @@ three parts:
   openmp-runtime-library-routines/ompgetdefaultdevice
   openmp-runtime-library-routines/ompgetdynamic
   openmp-runtime-library-routines/ompgetinitialdevice
+  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetlevel
   openmp-runtime-library-routines/ompgetmaxactivelevels
   openmp-runtime-library-routines/ompgetmaxtaskpriority
