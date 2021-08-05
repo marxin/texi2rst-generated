@@ -2462,7 +2462,13 @@ addmodecc
 
   .. index:: cond_umaxmode instruction pattern
 
-cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode cond_umodmode cond_andmode cond_iormode cond_xormode cond_sminmode cond_smaxmode cond_uminmode cond_umaxmode
+  .. index:: cond_ashlmode instruction pattern
+
+  .. index:: cond_ashrmode instruction pattern
+
+  .. index:: cond_lshrmode instruction pattern
+
+cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode cond_umodmode cond_andmode cond_iormode cond_xormode cond_sminmode cond_smaxmode cond_uminmode cond_umaxmode cond_ashlmode cond_ashrmode cond_lshrmode
   When operand 1 is true, perform an operation on operands 2 and 3 and
   store the result in operand 0, otherwise store operand 4 in operand 0.
   The operation works elementwise if the operands are vectors.
@@ -2489,6 +2495,11 @@ cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode c
   Operands 0, 2, 3 and 4 all have mode :samp:`{m}`.  Operand 1 is a scalar
   integer if :samp:`{m}` is scalar, otherwise it has the mode returned by
   ``TARGET_VECTORIZE_GET_MASK_MODE``.
+
+  :samp:`cond_{op}{mode}` generally corresponds to a conditional
+  form of :samp:`{op}{mode}3`.  As an exception, the vector forms
+  of shifts correspond to patterns like ``vashlmode3`` rather
+  than patterns like ``ashlmode3``.
 
   .. index:: cond_fmamode instruction pattern
 

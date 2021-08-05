@@ -3297,6 +3297,10 @@ section includes experimental options that may produce broken code.
 
     Specifies the maximum number of escape points tracked by modref per SSA-name.
 
+  .. option:: threader-mode
+
+    Specifies the mode the backwards threader should run in.
+
   .. option:: profile-func-internal-id
 
     A parameter to control whether to use function internal id in profile

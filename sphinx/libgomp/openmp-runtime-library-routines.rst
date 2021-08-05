@@ -22,8 +22,10 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompgetancestorthreadnum
   openmp-runtime-library-routines/ompgetcancellation
   openmp-runtime-library-routines/ompgetdefaultdevice
+  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetdynamic
   openmp-runtime-library-routines/ompgetinitialdevice
+  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetlevel
   openmp-runtime-library-routines/ompgetmaxactivelevels
   openmp-runtime-library-routines/ompgetmaxtaskpriority
