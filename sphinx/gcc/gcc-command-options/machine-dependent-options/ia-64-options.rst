@@ -97,7 +97,7 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
 
 .. option:: -minline-int-divide
 
-  Default option value for :option:`-mno-inline-int-divide`.
+  Default setting; overrides :option:`-mno-inline-int-divide`.
 
 .. option:: -minline-sqrt-min-latency
 

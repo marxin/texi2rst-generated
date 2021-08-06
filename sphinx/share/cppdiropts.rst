@@ -147,7 +147,7 @@
 
 .. option:: -Wno-undef
 
-  Default option value for :option:`-Wundef`.
+  Default setting; overrides :option:`-Wundef`.
 
 .. option:: -Wexpansion-to-defined
 
@@ -195,5 +195,5 @@
 
 .. option:: -Wendif-labels
 
-  Default option value for :option:`-Wno-endif-labels`.
+  Default setting; overrides :option:`-Wno-endif-labels`.
 

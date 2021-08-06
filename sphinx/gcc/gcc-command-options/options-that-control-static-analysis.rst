@@ -45,7 +45,7 @@ Options That Control Static Analysis
 
 .. option:: -fno-analyzer
 
-  Default option value for :option:`-fanalyzer`.
+  Default setting; overrides :option:`-fanalyzer`.
 
 .. option:: -Wanalyzer-too-complex
 
@@ -59,7 +59,7 @@ Options That Control Static Analysis
 
 .. option:: -Wno-analyzer-too-complex
 
-  Default option value for :option:`-Wanalyzer-too-complex`.
+  Default setting; overrides :option:`-Wanalyzer-too-complex`.
 
 .. option:: -Wno-analyzer-double-fclose
 
@@ -71,7 +71,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-double-fclose
 
-  Default option value for :option:`-Wno-analyzer-double-fclose`.
+  Default setting; overrides :option:`-Wno-analyzer-double-fclose`.
 
 .. option:: -Wno-analyzer-double-free
 
@@ -84,7 +84,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-double-free
 
-  Default option value for :option:`-Wno-analyzer-double-free`.
+  Default setting; overrides :option:`-Wno-analyzer-double-free`.
 
 .. option:: -Wno-analyzer-exposure-through-output-file
 
@@ -98,7 +98,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-exposure-through-output-file
 
-  Default option value for :option:`-Wno-analyzer-exposure-through-output-file`.
+  Default setting; overrides :option:`-Wno-analyzer-exposure-through-output-file`.
 
 .. option:: -Wno-analyzer-file-leak
 
@@ -111,7 +111,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-file-leak
 
-  Default option value for :option:`-Wno-analyzer-file-leak`.
+  Default setting; overrides :option:`-Wno-analyzer-file-leak`.
 
 .. option:: -Wno-analyzer-free-of-non-heap
 
@@ -124,7 +124,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-free-of-non-heap
 
-  Default option value for :option:`-Wno-analyzer-free-of-non-heap`.
+  Default setting; overrides :option:`-Wno-analyzer-free-of-non-heap`.
 
 .. option:: -Wno-analyzer-malloc-leak
 
@@ -138,7 +138,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-malloc-leak
 
-  Default option value for :option:`-Wno-analyzer-malloc-leak`.
+  Default setting; overrides :option:`-Wno-analyzer-malloc-leak`.
 
 .. option:: -Wno-analyzer-mismatching-deallocation
 
@@ -155,7 +155,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-mismatching-deallocation
 
-  Default option value for :option:`-Wno-analyzer-mismatching-deallocation`.
+  Default setting; overrides :option:`-Wno-analyzer-mismatching-deallocation`.
 
 .. option:: -Wno-analyzer-possible-null-argument
 
@@ -169,7 +169,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-possible-null-argument
 
-  Default option value for :option:`-Wno-analyzer-possible-null-argument`.
+  Default setting; overrides :option:`-Wno-analyzer-possible-null-argument`.
 
 .. option:: -Wno-analyzer-possible-null-dereference
 
@@ -181,7 +181,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-possible-null-dereference
 
-  Default option value for :option:`-Wno-analyzer-possible-null-dereference`.
+  Default setting; overrides :option:`-Wno-analyzer-possible-null-dereference`.
 
 .. option:: -Wno-analyzer-null-argument
 
@@ -195,7 +195,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-null-argument
 
-  Default option value for :option:`-Wno-analyzer-null-argument`.
+  Default setting; overrides :option:`-Wno-analyzer-null-argument`.
 
 .. option:: -Wno-analyzer-null-dereference
 
@@ -207,7 +207,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-null-dereference
 
-  Default option value for :option:`-Wno-analyzer-null-dereference`.
+  Default setting; overrides :option:`-Wno-analyzer-null-dereference`.
 
 .. option:: -Wno-analyzer-shift-count-negative
 
@@ -224,7 +224,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-shift-count-negative
 
-  Default option value for :option:`-Wno-analyzer-shift-count-negative`.
+  Default setting; overrides :option:`-Wno-analyzer-shift-count-negative`.
 
 .. option:: -Wno-analyzer-shift-count-overflow
 
@@ -242,7 +242,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-shift-count-overflow
 
-  Default option value for :option:`-Wno-analyzer-shift-count-overflow`.
+  Default setting; overrides :option:`-Wno-analyzer-shift-count-overflow`.
 
 .. option:: -Wno-analyzer-stale-setjmp-buffer
 
@@ -261,7 +261,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-stale-setjmp-buffer
 
-  Default option value for :option:`-Wno-analyzer-stale-setjmp-buffer`.
+  Default setting; overrides :option:`-Wno-analyzer-stale-setjmp-buffer`.
 
 .. option:: -Wno-analyzer-tainted-array-index
 
@@ -275,7 +275,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-tainted-array-index
 
-  Default option value for :option:`-Wno-analyzer-tainted-array-index`.
+  Default setting; overrides :option:`-Wno-analyzer-tainted-array-index`.
 
 .. option:: -Wno-analyzer-unsafe-call-within-signal-handler
 
@@ -288,7 +288,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-unsafe-call-within-signal-handler
 
-  Default option value for :option:`-Wno-analyzer-unsafe-call-within-signal-handler`.
+  Default setting; overrides :option:`-Wno-analyzer-unsafe-call-within-signal-handler`.
 
 .. option:: -Wno-analyzer-use-after-free
 
@@ -301,7 +301,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-use-after-free
 
-  Default option value for :option:`-Wno-analyzer-use-after-free`.
+  Default setting; overrides :option:`-Wno-analyzer-use-after-free`.
 
 .. option:: -Wno-analyzer-use-of-pointer-in-stale-stack-frame
 
@@ -314,7 +314,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-use-of-pointer-in-stale-stack-frame
 
-  Default option value for :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`.
+  Default setting; overrides :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`.
 
 .. option:: -Wno-analyzer-write-to-const
 
@@ -329,7 +329,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-write-to-const
 
-  Default option value for :option:`-Wno-analyzer-write-to-const`.
+  Default setting; overrides :option:`-Wno-analyzer-write-to-const`.
 
 .. option:: -Wno-analyzer-write-to-string-literal
 
@@ -344,7 +344,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-write-to-string-literal
 
-  Default option value for :option:`-Wno-analyzer-write-to-string-literal`.
+  Default setting; overrides :option:`-Wno-analyzer-write-to-string-literal`.
 
 .. option:: -Wno-analyzer-use-of-uninitialized-value
 
@@ -356,7 +356,7 @@ Options That Control Static Analysis
 
 .. option:: -Wanalyzer-use-of-uninitialized-value
 
-  Default option value for :option:`-Wno-analyzer-use-of-uninitialized-value`.
+  Default setting; overrides :option:`-Wno-analyzer-use-of-uninitialized-value`.
 
 Pertinent parameters for controlling the exploration are:
 :option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
@@ -378,7 +378,7 @@ The following options control the analyzer.
 
 .. option:: -fno-analyzer-call-summaries
 
-  Default option value for :option:`-fanalyzer-call-summaries`.
+  Default setting; overrides :option:`-fanalyzer-call-summaries`.
 
 .. option:: -fanalyzer-checker=name
 
@@ -401,7 +401,7 @@ The following options control the analyzer.
 
 .. option:: -fanalyzer-feasibility
 
-  Default option value for :option:`-fno-analyzer-feasibility`.
+  Default setting; overrides :option:`-fno-analyzer-feasibility`.
 
 .. option:: -fanalyzer-fine-grained
 
@@ -416,7 +416,7 @@ The following options control the analyzer.
 
 .. option:: -fno-analyzer-fine-grained
 
-  Default option value for :option:`-fanalyzer-fine-grained`.
+  Default setting; overrides :option:`-fanalyzer-fine-grained`.
 
 .. option:: -fanalyzer-show-duplicate-count
 
@@ -427,7 +427,7 @@ The following options control the analyzer.
 
 .. option:: -fno-analyzer-show-duplicate-count
 
-  Default option value for :option:`-fanalyzer-show-duplicate-count`.
+  Default setting; overrides :option:`-fanalyzer-show-duplicate-count`.
 
 .. option:: -fno-analyzer-state-merge
 
@@ -440,7 +440,7 @@ The following options control the analyzer.
 
 .. option:: -fanalyzer-state-merge
 
-  Default option value for :option:`-fno-analyzer-state-merge`.
+  Default setting; overrides :option:`-fno-analyzer-state-merge`.
 
 .. option:: -fno-analyzer-state-purge
 
@@ -456,7 +456,7 @@ The following options control the analyzer.
 
 .. option:: -fanalyzer-state-purge
 
-  Default option value for :option:`-fno-analyzer-state-purge`.
+  Default setting; overrides :option:`-fno-analyzer-state-purge`.
 
 .. option:: -fanalyzer-transitivity
 
@@ -464,7 +464,7 @@ The following options control the analyzer.
 
 .. option:: -fno-analyzer-transitivity
 
-  Default option value for :option:`-fanalyzer-transitivity`.
+  Default setting; overrides :option:`-fanalyzer-transitivity`.
 
 ``-fanalyzer-verbose-edges``
   This option is intended for analyzer developers.  It enables more

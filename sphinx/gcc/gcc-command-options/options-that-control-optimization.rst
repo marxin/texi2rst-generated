@@ -255,7 +255,7 @@ optimizations to be performed is desired.
 
 .. option:: -fdefer-pop
 
-  Default option value for :option:`-fno-defer-pop`.
+  Default setting; overrides :option:`-fno-defer-pop`.
 
 .. option:: -fforward-propagate
 
@@ -319,7 +319,7 @@ optimizations to be performed is desired.
 
 .. option:: -finline
 
-  Default option value for :option:`-fno-inline`.
+  Default setting; overrides :option:`-fno-inline`.
 
 .. option:: -finline-small-functions
 
@@ -418,7 +418,7 @@ optimizations to be performed is desired.
 
 .. option:: -fkeep-inline-dllexport
 
-  Default option value for :option:`-fno-keep-inline-dllexport`.
+  Default setting; overrides :option:`-fno-keep-inline-dllexport`.
 
 .. option:: -fkeep-inline-functions
 
@@ -495,7 +495,7 @@ optimizations to be performed is desired.
 
 .. option:: -fbranch-count-reg
 
-  Default option value for :option:`-fno-branch-count-reg`.
+  Default setting; overrides :option:`-fno-branch-count-reg`.
 
 .. option:: -fno-function-cse
 
@@ -510,7 +510,7 @@ optimizations to be performed is desired.
 
 .. option:: -ffunction-cse
 
-  Default option value for :option:`-fno-function-cse`.
+  Default setting; overrides :option:`-fno-function-cse`.
 
 .. option:: -fno-zero-initialized-in-bss
 
@@ -527,7 +527,7 @@ optimizations to be performed is desired.
 
 .. option:: -fzero-initialized-in-bss
 
-  Default option value for :option:`-fno-zero-initialized-in-bss`.
+  Default setting; overrides :option:`-fno-zero-initialized-in-bss`.
 
 .. option:: -fthread-jumps
 
@@ -780,7 +780,7 @@ optimizations to be performed is desired.
 
 .. option:: -flifetime-dse
 
-  Default option value for :option:`-fno-lifetime-dse`.
+  Default setting; overrides :option:`-fno-lifetime-dse`.
 
 .. option:: -flive-range-shrinkage
 
@@ -845,7 +845,7 @@ optimizations to be performed is desired.
 
 .. option:: -fira-share-save-slots
 
-  Default option value for :option:`-fno-ira-share-save-slots`.
+  Default setting; overrides :option:`-fno-ira-share-save-slots`.
 
 .. option:: -fno-ira-share-spill-slots
 
@@ -855,7 +855,7 @@ optimizations to be performed is desired.
 
 .. option:: -fira-share-spill-slots
 
-  Default option value for :option:`-fno-ira-share-spill-slots`.
+  Default setting; overrides :option:`-fno-ira-share-spill-slots`.
 
 .. option:: -flra-remat
 
@@ -901,7 +901,7 @@ optimizations to be performed is desired.
 
 .. option:: -fsched-interblock
 
-  Default option value for :option:`-fno-sched-interblock`.
+  Default setting; overrides :option:`-fno-sched-interblock`.
 
 .. option:: -fno-sched-spec
 
@@ -911,7 +911,7 @@ optimizations to be performed is desired.
 
 .. option:: -fsched-spec
 
-  Default option value for :option:`-fno-sched-spec`.
+  Default setting; overrides :option:`-fno-sched-spec`.
 
 .. option:: -fsched-pressure
 
@@ -1396,7 +1396,7 @@ optimizations to be performed is desired.
 
 .. option:: -fno-finite-loops
 
-  Default option value for :option:`-ffinite-loops`.
+  Default setting; overrides :option:`-ffinite-loops`.
 
 .. option:: -ftree-dominator-opts
 
@@ -1776,7 +1776,7 @@ optimizations to be performed is desired.
 
 .. option:: -fprintf-return-value
 
-  Default option value for :option:`-fno-printf-return-value`.
+  Default setting; overrides :option:`-fno-printf-return-value`.
 
 .. option:: -fno-peephole, -fno-peephole2, -fpeephole, -fpeephole2
 
@@ -1810,7 +1810,7 @@ optimizations to be performed is desired.
 
 .. option:: -fguess-branch-probability
 
-  Default option value for :option:`-fno-guess-branch-probability`.
+  Default setting; overrides :option:`-fno-guess-branch-probability`.
 
 .. option:: -freorder-blocks
 
@@ -2056,7 +2056,7 @@ optimizations to be performed is desired.
 
 .. option:: -ftoplevel-reorder
 
-  Default option value for :option:`-fno-toplevel-reorder`.
+  Default setting; overrides :option:`-fno-toplevel-reorder`.
 
 .. option:: -fweb
 
@@ -2563,7 +2563,7 @@ correctness.  All must be specifically enabled.
 
 .. option:: -fmath-errno
 
-  Default option value for :option:`-fno-math-errno`.
+  Default setting; overrides :option:`-fno-math-errno`.
 
 .. option:: -funsafe-math-optimizations
 
@@ -2635,7 +2635,7 @@ correctness.  All must be specifically enabled.
 
 .. option:: -fsigned-zeros
 
-  Default option value for :option:`-fno-signed-zeros`.
+  Default setting; overrides :option:`-fno-signed-zeros`.
 
 .. option:: -fno-trapping-math
 
@@ -2654,7 +2654,7 @@ correctness.  All must be specifically enabled.
 
 .. option:: -ftrapping-math
 
-  Default option value for :option:`-fno-trapping-math`.
+  Default setting; overrides :option:`-fno-trapping-math`.
 
 .. option:: -frounding-math
 
@@ -2711,7 +2711,7 @@ correctness.  All must be specifically enabled.
 
 .. option:: -ffp-int-builtin-inexact
 
-  Default option value for :option:`-fno-fp-int-builtin-inexact`.
+  Default setting; overrides :option:`-fno-fp-int-builtin-inexact`.
 
 .. option:: -fsingle-precision-constant
 

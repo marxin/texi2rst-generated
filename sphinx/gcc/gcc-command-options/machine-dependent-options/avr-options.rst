@@ -285,7 +285,7 @@ These options are defined for AVR implementations:
 
 .. option:: -Wno-addr-space-convert
 
-  Default option value for :option:`-Waddr-space-convert`.
+  Default setting; overrides :option:`-Waddr-space-convert`.
 
 .. option:: -Wmisspelled-isr
 
@@ -294,7 +294,7 @@ These options are defined for AVR implementations:
 
 .. option:: -Wno-misspelled-isr
 
-  Default option value for :option:`-Wmisspelled-isr`.
+  Default setting; overrides :option:`-Wmisspelled-isr`.
 
 EIND and Devices with More Than 128 Ki Bytes of Flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -164,7 +164,7 @@ information useful for debugging do not run at all, so that
 
 .. option:: -feliminate-unused-debug-symbols
 
-  Default option value for :option:`-fno-eliminate-unused-debug-symbols`.
+  Default setting; overrides :option:`-fno-eliminate-unused-debug-symbols`.
 
 .. option:: -femit-class-debug-always
 
@@ -185,7 +185,7 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fmerge-debug-strings
 
-  Default option value for :option:`-fno-merge-debug-strings`.
+  Default setting; overrides :option:`-fno-merge-debug-strings`.
 
 .. option:: -fdebug-prefix-map=old=new
 
@@ -222,7 +222,7 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fno-var-tracking-assignments
 
-  Default option value for :option:`-fvar-tracking-assignments`.
+  Default setting; overrides :option:`-fvar-tracking-assignments`.
 
 .. option:: -gsplit-dwarf
 
@@ -270,7 +270,7 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fno-debug-types-section
 
-  Default option value for :option:`-fdebug-types-section`.
+  Default setting; overrides :option:`-fdebug-types-section`.
 
 .. option:: -grecord-gcc-switches, -gno-record-gcc-switches
 
@@ -484,7 +484,7 @@ information useful for debugging do not run at all, so that
 
 .. option:: -fdwarf2-cfi-asm
 
-  Default option value for :option:`-fno-dwarf2-cfi-asm`.
+  Default setting; overrides :option:`-fno-dwarf2-cfi-asm`.
 
 .. option:: -fno-eliminate-unused-debug-types
 
@@ -500,5 +500,5 @@ information useful for debugging do not run at all, so that
 
 .. option:: -feliminate-unused-debug-types
 
-  Default option value for :option:`-fno-eliminate-unused-debug-types`.
+  Default setting; overrides :option:`-fno-eliminate-unused-debug-types`.
 

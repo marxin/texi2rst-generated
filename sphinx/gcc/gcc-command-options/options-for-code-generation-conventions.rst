@@ -196,7 +196,7 @@ it.
 
 .. option:: -fgnu-unique
 
-  Default option value for :option:`-fno-gnu-unique`.
+  Default setting; overrides :option:`-fno-gnu-unique`.
 
 .. option:: -fpcc-struct-return
 
@@ -279,7 +279,7 @@ it.
 
 .. option:: -fno-common
 
-  Default option value for :option:`-fcommon`.
+  Default setting; overrides :option:`-fcommon`.
 
 .. option:: -fno-ident
 
@@ -287,7 +287,7 @@ it.
 
 .. option:: -fident
 
-  Default option value for :option:`-fno-ident`.
+  Default setting; overrides :option:`-fno-ident`.
 
 .. option:: -finhibit-size-directive
 
@@ -465,7 +465,7 @@ it.
 
 .. option:: -fplt
 
-  Default option value for :option:`-fno-plt`.
+  Default setting; overrides :option:`-fno-plt`.
 
 .. option:: -fno-jump-tables
 
@@ -478,7 +478,7 @@ it.
 
 .. option:: -fjump-tables
 
-  Default option value for :option:`-fno-jump-tables`.
+  Default setting; overrides :option:`-fno-jump-tables`.
 
 .. option:: -fno-bit-tests
 
@@ -487,7 +487,7 @@ it.
 
 .. option:: -fbit-tests
 
-  Default option value for :option:`-fno-bit-tests`.
+  Default setting; overrides :option:`-fno-bit-tests`.
 
 .. option:: -ffixed-reg
 

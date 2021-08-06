@@ -231,7 +231,7 @@ accepts:
 
 .. option:: -fasm
 
-  Default option value for :option:`-fno-asm`.
+  Default setting; overrides :option:`-fno-asm`.
 
 .. option:: -fno-builtin, -fno-builtin-function
 
@@ -275,7 +275,7 @@ accepts:
 
 .. option:: -fbuiltin
 
-  Default option value for :option:`-fno-builtin`.
+  Default setting; overrides :option:`-fno-builtin`.
 
 .. option:: -fcond-mismatch
 

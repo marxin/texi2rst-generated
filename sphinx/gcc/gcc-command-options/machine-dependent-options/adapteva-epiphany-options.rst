@@ -46,7 +46,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
 .. option:: -msoft-cmpsf
 
-  Default option value for :option:`-mno-soft-cmpsf`.
+  Default setting; overrides :option:`-mno-soft-cmpsf`.
 
 .. option:: -mstack-offset=num
 
@@ -69,7 +69,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
 .. option:: -mround-nearest
 
-  Default option value for :option:`-mno-round-nearest`.
+  Default setting; overrides :option:`-mno-round-nearest`.
 
 .. option:: -mlong-calls
 

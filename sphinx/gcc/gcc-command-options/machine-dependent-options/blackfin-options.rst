@@ -68,7 +68,7 @@ Blackfin Options
 
 .. option:: -mspecld-anomaly
 
-  Default option value for :option:`-mno-specld-anomaly`.
+  Default setting; overrides :option:`-mno-specld-anomaly`.
 
 .. option:: -mcsync-anomaly
 
@@ -83,7 +83,7 @@ Blackfin Options
 
 .. option:: -mcsync-anomaly
 
-  Default option value for :option:`-mno-csync-anomaly`.
+  Default setting; overrides :option:`-mno-csync-anomaly`.
 
 .. option:: -mlow64k
 
@@ -113,7 +113,7 @@ Blackfin Options
 
 .. option:: -mid-shared-library
 
-  Default option value for :option:`-mno-id-shared-library`.
+  Default setting; overrides :option:`-mno-id-shared-library`.
 
 .. option:: -mleaf-id-shared-library
 
@@ -129,7 +129,7 @@ Blackfin Options
 
 .. option:: -mleaf-id-shared-library
 
-  Default option value for :option:`-mno-leaf-id-shared-library`.
+  Default setting; overrides :option:`-mno-leaf-id-shared-library`.
 
 .. option:: -mshared-library-id=n
 
@@ -152,7 +152,7 @@ Blackfin Options
 
 .. option:: -msep-data
 
-  Default option value for :option:`-mno-sep-data`.
+  Default setting; overrides :option:`-mno-sep-data`.
 
 .. option:: -mlong-calls, -mno-long-calls
 

@@ -141,7 +141,7 @@ is being compiled:
 
 .. option:: -mmpy
 
-  Default option value for :option:`-mno-mpy`.
+  Default setting; overrides :option:`-mno-mpy`.
 
 .. option:: -mmul32x16
 
@@ -490,7 +490,7 @@ The following options control the semantics of generated code:
 
 .. option:: -msdata
 
-  Default option value for :option:`-mno-sdata`.
+  Default setting; overrides :option:`-mno-sdata`.
 
 .. option:: -mvolatile-cache
 
@@ -503,7 +503,7 @@ The following options control the semantics of generated code:
 
 .. option:: -mvolatile-cache
 
-  Default option value for :option:`-mno-volatile-cache`.
+  Default setting; overrides :option:`-mno-volatile-cache`.
 
 The following options fine tune code generation:
 

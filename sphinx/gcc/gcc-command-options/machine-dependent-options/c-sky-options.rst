@@ -168,7 +168,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
 
 .. option:: -mstack-size
 
-  Default option value for :option:`-mno-stack-size`.
+  Default setting; overrides :option:`-mno-stack-size`.
 
 .. option:: -mccrt, -mno-ccrt
 
