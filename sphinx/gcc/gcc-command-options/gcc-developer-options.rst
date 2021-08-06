@@ -806,7 +806,7 @@ The files are created in the directory of the output file.
 
 .. option:: -fno-checking
 
-  Default option value for :option:`-fchecking`.
+  Default setting; overrides :option:`-fchecking`.
 
 .. option:: -frandom-seed=string
 
@@ -941,7 +941,7 @@ The files are created in the directory of the output file.
 
 .. option:: -fno-var-tracking-assignments-toggle
 
-  Default option value for :option:`-fvar-tracking-assignments-toggle`.
+  Default setting; overrides :option:`-fvar-tracking-assignments-toggle`.
 
 .. option:: -Q
 

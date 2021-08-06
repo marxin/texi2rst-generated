@@ -60,7 +60,7 @@ These options are defined specifically for the CRIS ports.
 
 .. option:: -mside-effects
 
-  Default option value for :option:`-mno-side-effects`.
+  Default setting; overrides :option:`-mno-side-effects`.
 
 .. option:: -mstack-align, -mno-stack-align, -mdata-align, -mno-data-align, -mconst-align, -mno-const-align
 

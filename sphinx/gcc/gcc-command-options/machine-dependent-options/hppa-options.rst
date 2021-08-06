@@ -59,7 +59,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
 .. option:: -mspace-regs
 
-  Default option value for :option:`-mno-space-regs`.
+  Default setting; overrides :option:`-mno-space-regs`.
 
 .. option:: -mfast-indirect-calls
 
@@ -189,7 +189,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
 .. option:: -mno-long-calls
 
-  Default option value for :option:`-mlong-calls`.
+  Default setting; overrides :option:`-mlong-calls`.
 
 .. option:: -munix=unix-std
 

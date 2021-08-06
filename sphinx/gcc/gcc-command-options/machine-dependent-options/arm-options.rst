@@ -66,7 +66,7 @@ These :samp:`-m` options are defined for the ARM port:
 
 .. option:: -msched-prolog
 
-  Default option value for :option:`-mno-sched-prolog`.
+  Default setting; overrides :option:`-mno-sched-prolog`.
 
 .. option:: -mfloat-abi=name
 

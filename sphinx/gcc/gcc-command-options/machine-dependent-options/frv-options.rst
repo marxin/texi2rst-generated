@@ -53,7 +53,7 @@ FRV Options
 
 .. option:: -mdword
 
-  Default option value for :option:`-mno-dword`.
+  Default setting; overrides :option:`-mno-dword`.
 
 .. option:: -mdouble
 
@@ -264,7 +264,7 @@ FRV Options
 
 .. option:: -moptimize-membar
 
-  Default option value for :option:`-mno-optimize-membar`.
+  Default setting; overrides :option:`-mno-optimize-membar`.
 
 .. option:: -mtomcat-stats
 

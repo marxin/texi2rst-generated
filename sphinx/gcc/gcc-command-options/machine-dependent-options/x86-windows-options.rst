@@ -70,7 +70,7 @@ These additional options are available for Microsoft Windows targets:
 
 .. option:: -fset-stack-executable
 
-  Default option value for :option:`-fno-set-stack-executable`.
+  Default setting; overrides :option:`-fno-set-stack-executable`.
 
 .. option:: -fwritable-relocated-rdata
 
@@ -81,7 +81,7 @@ These additional options are available for Microsoft Windows targets:
 
 .. option:: -fno-writable-relocated-rdata
 
-  Default option value for :option:`-fwritable-relocated-rdata`.
+  Default setting; overrides :option:`-fwritable-relocated-rdata`.
 
 .. option:: -mpe-aligned-commons
 

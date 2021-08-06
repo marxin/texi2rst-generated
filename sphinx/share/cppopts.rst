@@ -379,7 +379,7 @@
 
 .. option:: -fno-working-directory
 
-  Default option value for :option:`-fworking-directory`.
+  Default setting; overrides :option:`-fworking-directory`.
 
 .. option:: -A predicate=answer
 

@@ -124,7 +124,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -faccess-control
 
-  Default option value for :option:`-fno-access-control`.
+  Default setting; overrides :option:`-fno-access-control`.
 
 .. option:: -faligned-new
 
@@ -261,7 +261,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -felide-constructors
 
-  Default option value for :option:`-fno-elide-constructors`.
+  Default setting; overrides :option:`-fno-elide-constructors`.
 
 .. option:: -fno-enforce-eh-specs
 
@@ -275,7 +275,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fenforce-eh-specs
 
-  Default option value for :option:`-fno-enforce-eh-specs`.
+  Default setting; overrides :option:`-fno-enforce-eh-specs`.
 
 .. option:: -fextern-tls-init, -fno-extern-tls-init
 
@@ -307,7 +307,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fgnu-keywords
 
-  Default option value for :option:`-fno-gnu-keywords`.
+  Default setting; overrides :option:`-fno-gnu-keywords`.
 
 .. option:: -fno-implicit-templates
 
@@ -320,7 +320,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fimplicit-templates
 
-  Default option value for :option:`-fno-implicit-templates`.
+  Default setting; overrides :option:`-fno-implicit-templates`.
 
 .. option:: -fno-implicit-inline-templates
 
@@ -330,7 +330,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fimplicit-inline-templates
 
-  Default option value for :option:`-fno-implicit-inline-templates`.
+  Default setting; overrides :option:`-fno-implicit-inline-templates`.
 
 .. option:: -fno-implement-inlines
 
@@ -340,7 +340,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fimplement-inlines
 
-  Default option value for :option:`-fno-implement-inlines`.
+  Default setting; overrides :option:`-fno-implement-inlines`.
 
 .. option:: -fmodules-ts, -fno-modules-ts
 
@@ -369,7 +369,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fmodule-lazy
 
-  Default option value for :option:`-fno-module-lazy`.
+  Default setting; overrides :option:`-fno-module-lazy`.
 
 .. option:: -fmodule-mapper=[hostname]:port[?ident]
 
@@ -411,7 +411,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fnonansi-builtins
 
-  Default option value for :option:`-fno-nonansi-builtins`.
+  Default setting; overrides :option:`-fno-nonansi-builtins`.
 
 .. option:: -fnothrow-opt
 
@@ -433,7 +433,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -foperator-names
 
-  Default option value for :option:`-fno-operator-names`.
+  Default setting; overrides :option:`-fno-operator-names`.
 
 .. option:: -fno-optional-diags
 
@@ -443,7 +443,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -foptional-diags
 
-  Default option value for :option:`-fno-optional-diags`.
+  Default setting; overrides :option:`-fno-optional-diags`.
 
 .. option:: -fpermissive
 
@@ -466,7 +466,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fpretty-templates
 
-  Default option value for :option:`-fno-pretty-templates`.
+  Default setting; overrides :option:`-fno-pretty-templates`.
 
 .. option:: -fno-rtti
 
@@ -486,7 +486,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -frtti
 
-  Default option value for :option:`-fno-rtti`.
+  Default setting; overrides :option:`-fno-rtti`.
 
 .. option:: -fsized-deallocation
 
@@ -544,7 +544,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fthreadsafe-statics
 
-  Default option value for :option:`-fno-threadsafe-statics`.
+  Default setting; overrides :option:`-fno-threadsafe-statics`.
 
 .. option:: -fuse-cxa-atexit
 
@@ -562,7 +562,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fuse-cxa-get-exception-ptr
 
-  Default option value for :option:`-fno-use-cxa-get-exception-ptr`.
+  Default setting; overrides :option:`-fno-use-cxa-get-exception-ptr`.
 
 .. option:: -fvisibility-inlines-hidden
 
@@ -631,7 +631,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fweak
 
-  Default option value for :option:`-fno-weak`.
+  Default setting; overrides :option:`-fno-weak`.
 
 .. option:: -fext-numeric-literals
 
@@ -651,7 +651,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fno-ext-numeric-literals
 
-  Default option value for :option:`-fext-numeric-literals`.
+  Default setting; overrides :option:`-fext-numeric-literals`.
 
 .. option:: -nostdinc++
 
@@ -719,7 +719,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-comma-subscript
 
-  Default option value for :option:`-Wcomma-subscript`.
+  Default setting; overrides :option:`-Wcomma-subscript`.
 
 .. option:: -Wctad-maybe-unsupported
 
@@ -745,7 +745,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-ctad-maybe-unsupported
 
-  Default option value for :option:`-Wctad-maybe-unsupported`.
+  Default setting; overrides :option:`-Wctad-maybe-unsupported`.
 
 .. option:: -Wctor-dtor-privacy
 
@@ -761,7 +761,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-ctor-dtor-privacy
 
-  Default option value for :option:`-Wctor-dtor-privacy`.
+  Default setting; overrides :option:`-Wctor-dtor-privacy`.
 
 .. option:: -Wdelete-non-virtual-dtor
 
@@ -777,7 +777,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-delete-non-virtual-dtor
 
-  Default option value for :option:`-Wdelete-non-virtual-dtor`.
+  Default setting; overrides :option:`-Wdelete-non-virtual-dtor`.
 
 .. option:: -Wdeprecated-copy
 
@@ -794,7 +794,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-deprecated-copy
 
-  Default option value for :option:`-Wdeprecated-copy`.
+  Default setting; overrides :option:`-Wdeprecated-copy`.
 
 .. option:: -Wno-deprecated-enum-enum-conversion
 
@@ -819,7 +819,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wdeprecated-enum-enum-conversion
 
-  Default option value for :option:`-Wno-deprecated-enum-enum-conversion`.
+  Default setting; overrides :option:`-Wno-deprecated-enum-enum-conversion`.
 
 .. option:: -Wno-deprecated-enum-float-conversion
 
@@ -844,7 +844,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wdeprecated-enum-float-conversion
 
-  Default option value for :option:`-Wno-deprecated-enum-float-conversion`.
+  Default setting; overrides :option:`-Wno-deprecated-enum-float-conversion`.
 
 .. option:: -Wno-init-list-lifetime
 
@@ -889,7 +889,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Winit-list-lifetime
 
-  Default option value for :option:`-Wno-init-list-lifetime`.
+  Default setting; overrides :option:`-Wno-init-list-lifetime`.
 
 .. option:: -Winvalid-imported-macros
 
@@ -900,7 +900,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-invalid-imported-macros
 
-  Default option value for :option:`-Winvalid-imported-macros`.
+  Default setting; overrides :option:`-Winvalid-imported-macros`.
 
 .. option:: -Wno-literal-suffix
 
@@ -936,7 +936,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wliteral-suffix
 
-  Default option value for :option:`-Wno-literal-suffix`.
+  Default setting; overrides :option:`-Wno-literal-suffix`.
 
 .. option:: -Wno-narrowing
 
@@ -963,7 +963,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wnarrowing
 
-  Default option value for :option:`-Wno-narrowing`.
+  Default setting; overrides :option:`-Wno-narrowing`.
 
 .. option:: -Wnoexcept
 
@@ -978,7 +978,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-noexcept
 
-  Default option value for :option:`-Wnoexcept`.
+  Default setting; overrides :option:`-Wnoexcept`.
 
 .. option:: -Wnoexcept-type
 
@@ -1003,7 +1003,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-noexcept-type
 
-  Default option value for :option:`-Wnoexcept-type`.
+  Default setting; overrides :option:`-Wnoexcept-type`.
 
 .. option:: -Wclass-memaccess
 
@@ -1034,7 +1034,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-class-memaccess
 
-  Default option value for :option:`-Wclass-memaccess`.
+  Default setting; overrides :option:`-Wclass-memaccess`.
 
 .. option:: -Wnon-virtual-dtor
 
@@ -1050,7 +1050,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-non-virtual-dtor
 
-  Default option value for :option:`-Wnon-virtual-dtor`.
+  Default setting; overrides :option:`-Wnon-virtual-dtor`.
 
 .. option:: -Wregister
 
@@ -1066,7 +1066,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-register
 
-  Default option value for :option:`-Wregister`.
+  Default setting; overrides :option:`-Wregister`.
 
 .. option:: -Wreorder
 
@@ -1095,7 +1095,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-reorder
 
-  Default option value for :option:`-Wreorder`.
+  Default setting; overrides :option:`-Wreorder`.
 
 .. option:: -Wno-pessimizing-move
 
@@ -1127,7 +1127,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wpessimizing-move
 
-  Default option value for :option:`-Wno-pessimizing-move`.
+  Default setting; overrides :option:`-Wno-pessimizing-move`.
 
 .. option:: -Wno-redundant-move
 
@@ -1178,7 +1178,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wredundant-move
 
-  Default option value for :option:`-Wno-redundant-move`.
+  Default setting; overrides :option:`-Wno-redundant-move`.
 
 .. option:: -Wrange-loop-construct
 
@@ -1219,7 +1219,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-range-loop-construct
 
-  Default option value for :option:`-Wrange-loop-construct`.
+  Default setting; overrides :option:`-Wrange-loop-construct`.
 
 .. option:: -Wredundant-tags
 
@@ -1246,7 +1246,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-redundant-tags
 
-  Default option value for :option:`-Wredundant-tags`.
+  Default setting; overrides :option:`-Wredundant-tags`.
 
 .. option:: -Wno-subobject-linkage
 
@@ -1268,7 +1268,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wsubobject-linkage
 
-  Default option value for :option:`-Wno-subobject-linkage`.
+  Default setting; overrides :option:`-Wno-subobject-linkage`.
 
 .. option:: -Weffc++
 
@@ -1304,7 +1304,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-effc++
 
-  Default option value for :option:`-Weffc++`.
+  Default setting; overrides :option:`-Weffc++`.
 
 .. option:: -Wno-exceptions
 
@@ -1317,7 +1317,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wexceptions
 
-  Default option value for :option:`-Wno-exceptions`.
+  Default setting; overrides :option:`-Wno-exceptions`.
 
 .. option:: -Wstrict-null-sentinel
 
@@ -1333,7 +1333,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-strict-null-sentinel
 
-  Default option value for :option:`-Wstrict-null-sentinel`.
+  Default setting; overrides :option:`-Wstrict-null-sentinel`.
 
 .. option:: -Wno-non-template-friend
 
@@ -1351,7 +1351,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wnon-template-friend
 
-  Default option value for :option:`-Wno-non-template-friend`.
+  Default setting; overrides :option:`-Wno-non-template-friend`.
 
 .. option:: -Wold-style-cast
 
@@ -1366,7 +1366,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-old-style-cast
 
-  Default option value for :option:`-Wold-style-cast`.
+  Default setting; overrides :option:`-Wold-style-cast`.
 
 .. option:: -Woverloaded-virtual
 
@@ -1403,7 +1403,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-overloaded-virtual
 
-  Default option value for :option:`-Woverloaded-virtual`.
+  Default setting; overrides :option:`-Woverloaded-virtual`.
 
 .. option:: -Wno-pmf-conversions
 
@@ -1416,7 +1416,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wpmf-conversions
 
-  Default option value for :option:`-Wno-pmf-conversions`.
+  Default setting; overrides :option:`-Wno-pmf-conversions`.
 
 .. option:: -Wsign-promo
 
@@ -1431,7 +1431,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-sign-promo
 
-  Default option value for :option:`-Wsign-promo`.
+  Default setting; overrides :option:`-Wsign-promo`.
 
 .. option:: -Wtemplates
 
@@ -1447,7 +1447,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-templates
 
-  Default option value for :option:`-Wtemplates`.
+  Default setting; overrides :option:`-Wtemplates`.
 
 .. option:: -Wmismatched-new-delete
 
@@ -1488,7 +1488,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-mismatched-new-delete
 
-  Default option value for :option:`-Wmismatched-new-delete`.
+  Default setting; overrides :option:`-Wmismatched-new-delete`.
 
 .. option:: -Wmismatched-tags
 
@@ -1522,7 +1522,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-mismatched-tags
 
-  Default option value for :option:`-Wmismatched-tags`.
+  Default setting; overrides :option:`-Wmismatched-tags`.
 
 .. option:: -Wmultiple-inheritance
 
@@ -1538,7 +1538,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-multiple-inheritance
 
-  Default option value for :option:`-Wmultiple-inheritance`.
+  Default setting; overrides :option:`-Wmultiple-inheritance`.
 
 .. option:: -Wvirtual-inheritance
 
@@ -1550,7 +1550,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-virtual-inheritance
 
-  Default option value for :option:`-Wvirtual-inheritance`.
+  Default setting; overrides :option:`-Wvirtual-inheritance`.
 
 .. option:: -Wno-virtual-move-assign
 
@@ -1563,7 +1563,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wvirtual-move-assign
 
-  Default option value for :option:`-Wno-virtual-move-assign`.
+  Default setting; overrides :option:`-Wno-virtual-move-assign`.
 
 .. option:: -Wnamespaces
 
@@ -1574,7 +1574,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-namespaces
 
-  Default option value for :option:`-Wnamespaces`.
+  Default setting; overrides :option:`-Wnamespaces`.
 
 .. option:: -Wno-terminate
 
@@ -1587,7 +1587,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wterminate
 
-  Default option value for :option:`-Wno-terminate`.
+  Default setting; overrides :option:`-Wno-terminate`.
 
 .. option:: -Wno-vexing-parse
 
@@ -1625,7 +1625,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wvexing-parse
 
-  Default option value for :option:`-Wno-vexing-parse`.
+  Default setting; overrides :option:`-Wno-vexing-parse`.
 
 .. option:: -Wno-class-conversion
 
@@ -1639,7 +1639,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wclass-conversion
 
-  Default option value for :option:`-Wno-class-conversion`.
+  Default setting; overrides :option:`-Wno-class-conversion`.
 
 .. option:: -Wvolatile
 
@@ -1660,7 +1660,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-volatile
 
-  Default option value for :option:`-Wvolatile`.
+  Default setting; overrides :option:`-Wvolatile`.
 
 .. option:: -Wzero-as-null-pointer-constant
 
@@ -1673,7 +1673,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-zero-as-null-pointer-constant
 
-  Default option value for :option:`-Wzero-as-null-pointer-constant`.
+  Default setting; overrides :option:`-Wzero-as-null-pointer-constant`.
 
 .. option:: -Waligned-new
 
@@ -1688,7 +1688,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-aligned-new
 
-  Default option value for :option:`-Waligned-new`.
+  Default setting; overrides :option:`-Waligned-new`.
 
 .. option:: -Wno-placement-new, -Wplacement-new=n
 
@@ -1735,7 +1735,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wplacement-new
 
-  Default option value for :option:`-Wno-placement-new`.
+  Default setting; overrides :option:`-Wno-placement-new`.
 
 .. option:: -Wcatch-value, -Wcatch-value=n(C++ and Objective-C++ only)
 
@@ -1748,7 +1748,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-catch-value
 
-  Default option value for :option:`-Wcatch-value`.
+  Default setting; overrides :option:`-Wcatch-value`.
 
 .. option:: -Wconditionally-supported
 
@@ -1760,7 +1760,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-conditionally-supported
 
-  Default option value for :option:`-Wconditionally-supported`.
+  Default setting; overrides :option:`-Wconditionally-supported`.
 
 .. option:: -Wno-delete-incomplete
 
@@ -1773,7 +1773,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wdelete-incomplete
 
-  Default option value for :option:`-Wno-delete-incomplete`.
+  Default setting; overrides :option:`-Wno-delete-incomplete`.
 
 .. option:: -Wextra-semi
 
@@ -1785,7 +1785,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-extra-semi
 
-  Default option value for :option:`-Wextra-semi`.
+  Default setting; overrides :option:`-Wextra-semi`.
 
 .. option:: -Wno-inaccessible-base
 
@@ -1809,7 +1809,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Winaccessible-base
 
-  Default option value for :option:`-Wno-inaccessible-base`.
+  Default setting; overrides :option:`-Wno-inaccessible-base`.
 
 .. option:: -Wno-inherited-variadic-ctor
 
@@ -1819,7 +1819,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Winherited-variadic-ctor
 
-  Default option value for :option:`-Wno-inherited-variadic-ctor`.
+  Default setting; overrides :option:`-Wno-inherited-variadic-ctor`.
 
 .. option:: -Wno-invalid-offsetof
 
@@ -1840,7 +1840,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Winvalid-offsetof
 
-  Default option value for :option:`-Wno-invalid-offsetof`.
+  Default setting; overrides :option:`-Wno-invalid-offsetof`.
 
 .. option:: -Wsized-deallocation
 
@@ -1867,7 +1867,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-sized-deallocation
 
-  Default option value for :option:`-Wsized-deallocation`.
+  Default setting; overrides :option:`-Wsized-deallocation`.
 
 .. option:: -Wsuggest-final-types
 
@@ -1882,7 +1882,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-suggest-final-types
 
-  Default option value for :option:`-Wsuggest-final-types`.
+  Default setting; overrides :option:`-Wsuggest-final-types`.
 
 .. option:: -Wsuggest-final-methods
 
@@ -1898,7 +1898,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-suggest-final-methods
 
-  Default option value for :option:`-Wsuggest-final-methods`.
+  Default setting; overrides :option:`-Wsuggest-final-methods`.
 
 .. option:: -Wsuggest-override
 
@@ -1907,7 +1907,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-suggest-override
 
-  Default option value for :option:`-Wsuggest-override`.
+  Default setting; overrides :option:`-Wsuggest-override`.
 
 .. option:: -Wuseless-cast
 
@@ -1919,7 +1919,7 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wno-useless-cast
 
-  Default option value for :option:`-Wuseless-cast`.
+  Default setting; overrides :option:`-Wuseless-cast`.
 
 .. option:: -Wno-conversion-null
 
@@ -1932,5 +1932,5 @@ In addition, these warning options have meanings only for C++ programs:
 
 .. option:: -Wconversion-null
 
-  Default option value for :option:`-Wno-conversion-null`.
+  Default setting; overrides :option:`-Wno-conversion-null`.
 

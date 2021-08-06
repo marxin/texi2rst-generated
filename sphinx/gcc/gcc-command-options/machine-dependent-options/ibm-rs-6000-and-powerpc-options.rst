@@ -725,7 +725,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
 .. option:: -mno-readonly-in-sdata
 
-  Default option value for :option:`-mreadonly-in-sdata`.
+  Default setting; overrides :option:`-mreadonly-in-sdata`.
 
 .. option:: -mblock-move-inline-limit=num
 

@@ -848,7 +848,7 @@ MIPS Options
 
 .. option:: -mflush-func
 
-  Default option value for :option:`-mno-flush-func`.
+  Default setting; overrides :option:`-mno-flush-func`.
 
 .. option:: mbranch-cost=num
 

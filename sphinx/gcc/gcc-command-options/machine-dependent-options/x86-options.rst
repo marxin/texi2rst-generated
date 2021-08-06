@@ -550,7 +550,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mfp-ret-in-387
 
-  Default option value for :option:`-mno-fp-ret-in-387`.
+  Default setting; overrides :option:`-mno-fp-ret-in-387`.
 
 .. option:: -mno-fancy-math-387
 
@@ -565,7 +565,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mfancy-math-387
 
-  Default option value for :option:`-mno-fancy-math-387`.
+  Default setting; overrides :option:`-mno-fancy-math-387`.
 
 .. option:: -malign-double, -mno-align-double
 
@@ -1041,7 +1041,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mno-call-ms2sysv-xlogues
 
-  Default option value for :option:`-mcall-ms2sysv-xlogues`.
+  Default setting; overrides :option:`-mcall-ms2sysv-xlogues`.
 
 .. option:: -mtls-dialect=type
 
@@ -1203,7 +1203,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -malign-stringops
 
-  Default option value for :option:`-mno-align-stringops`.
+  Default setting; overrides :option:`-mno-align-stringops`.
 
 .. option:: -minline-all-stringops
 
@@ -1450,7 +1450,7 @@ on x86-64 processors in 64-bit environments.
 
 .. option:: -mred-zone
 
-  Default option value for :option:`-mno-red-zone`.
+  Default setting; overrides :option:`-mno-red-zone`.
 
 .. option:: -mcmodel=small
 

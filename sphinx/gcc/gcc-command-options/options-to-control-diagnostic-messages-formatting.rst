@@ -217,7 +217,7 @@ honor these options.
 
 .. option:: -fdiagnostics-color
 
-  Default option value for :option:`-fno-diagnostics-color`.
+  Default setting; overrides :option:`-fno-diagnostics-color`.
 
 .. option:: -fdiagnostics-urls[=WHEN]
 
@@ -275,7 +275,7 @@ honor these options.
 
 .. option:: -fdiagnostics-show-option
 
-  Default option value for :option:`-fno-diagnostics-show-option`.
+  Default setting; overrides :option:`-fno-diagnostics-show-option`.
 
 .. option:: -fno-diagnostics-show-caret
 
@@ -288,7 +288,7 @@ honor these options.
 
 .. option:: -fdiagnostics-show-caret
 
-  Default option value for :option:`-fno-diagnostics-show-caret`.
+  Default setting; overrides :option:`-fno-diagnostics-show-caret`.
 
 .. option:: -fno-diagnostics-show-labels
 
@@ -308,7 +308,7 @@ honor these options.
 
 .. option:: -fdiagnostics-show-labels
 
-  Default option value for :option:`-fno-diagnostics-show-labels`.
+  Default setting; overrides :option:`-fno-diagnostics-show-labels`.
 
 .. option:: -fno-diagnostics-show-cwe
 
@@ -321,7 +321,7 @@ honor these options.
 
 .. option:: -fdiagnostics-show-cwe
 
-  Default option value for :option:`-fno-diagnostics-show-cwe`.
+  Default setting; overrides :option:`-fno-diagnostics-show-cwe`.
 
 .. option:: -fno-diagnostics-show-line-numbers
 
@@ -331,7 +331,7 @@ honor these options.
 
 .. option:: -fdiagnostics-show-line-numbers
 
-  Default option value for :option:`-fno-diagnostics-show-line-numbers`.
+  Default setting; overrides :option:`-fno-diagnostics-show-line-numbers`.
 
 .. option:: -fdiagnostics-minimum-margin-width=width
 
@@ -430,7 +430,7 @@ honor these options.
 
 .. option:: -felide-type
 
-  Default option value for :option:`-fno-elide-type`.
+  Default setting; overrides :option:`-fno-elide-type`.
 
 .. option:: -fdiagnostics-path-format=KIND
 
@@ -548,7 +548,7 @@ honor these options.
 
 .. option:: -fshow-column
 
-  Default option value for :option:`-fno-show-column`.
+  Default setting; overrides :option:`-fno-show-column`.
 
 .. option:: -fdiagnostics-column-unit=UNIT
 

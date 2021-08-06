@@ -46,7 +46,7 @@ These :samp:`-m` options are defined for the H8/300 implementations:
 
 .. option:: -mexr
 
-  Default option value for :option:`-mno-exr`.
+  Default setting; overrides :option:`-mno-exr`.
 
 .. option:: -mint32
 

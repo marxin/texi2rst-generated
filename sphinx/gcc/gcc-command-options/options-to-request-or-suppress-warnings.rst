@@ -48,7 +48,7 @@ warnings but control the kinds of diagnostics produced by GCC.
 
 .. option:: -Wno-error
 
-  Default option value for :option:`-Werror`.
+  Default setting; overrides :option:`-Werror`.
 
 .. option:: -Werror=
 
@@ -72,7 +72,7 @@ warnings but control the kinds of diagnostics produced by GCC.
 
 .. option:: -Wno-error=
 
-  Default option value for :option:`-Werror=`.
+  Default setting; overrides :option:`-Werror=`.
 
 .. option:: -Wfatal-errors
 
@@ -82,7 +82,7 @@ warnings but control the kinds of diagnostics produced by GCC.
 
 .. option:: -Wno-fatal-errors
 
-  Default option value for :option:`-Wfatal-errors`.
+  Default setting; overrides :option:`-Wfatal-errors`.
 
 You can request many specific warnings with options beginning with
 :samp:`-W`, for example :option:`-Wimplicit` to request warnings on
@@ -163,7 +163,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-pedantic
 
-  Default option value for :option:`-Wpedantic`.
+  Default setting; overrides :option:`-Wpedantic`.
 
 .. option:: -pedantic-errors
 
@@ -255,7 +255,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-all
 
-  Default option value for :option:`-Wall`.
+  Default setting; overrides :option:`-Wall`.
 
 .. option:: -Wextra
 
@@ -303,7 +303,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-extra
 
-  Default option value for :option:`-Wextra`.
+  Default setting; overrides :option:`-Wextra`.
 
 .. option:: -Wabi
 
@@ -423,7 +423,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-abi
 
-  Default option value for :option:`-Wabi`.
+  Default setting; overrides :option:`-Wabi`.
 
 .. option:: -Wchar-subscripts
 
@@ -434,7 +434,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-char-subscripts
 
-  Default option value for :option:`-Wchar-subscripts`.
+  Default setting; overrides :option:`-Wchar-subscripts`.
 
 .. option:: -Wno-coverage-mismatch
 
@@ -453,7 +453,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wcoverage-mismatch
 
-  Default option value for :option:`-Wno-coverage-mismatch`.
+  Default setting; overrides :option:`-Wno-coverage-mismatch`.
 
 .. option:: -Wno-coverage-invalid-line-number
 
@@ -468,7 +468,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wcoverage-invalid-line-number
 
-  Default option value for :option:`-Wno-coverage-invalid-line-number`.
+  Default setting; overrides :option:`-Wno-coverage-invalid-line-number`.
 
 .. option:: -Wno-cpp
 
@@ -480,7 +480,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wcpp
 
-  Default option value for :option:`-Wno-cpp`.
+  Default setting; overrides :option:`-Wno-cpp`.
 
 .. option:: -Wdouble-promotion
 
@@ -511,7 +511,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-double-promotion
 
-  Default option value for :option:`-Wdouble-promotion`.
+  Default setting; overrides :option:`-Wdouble-promotion`.
 
 .. option:: -Wduplicate-decl-specifier
 
@@ -525,7 +525,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-duplicate-decl-specifier
 
-  Default option value for :option:`-Wduplicate-decl-specifier`.
+  Default setting; overrides :option:`-Wduplicate-decl-specifier`.
 
 .. option:: -Wformat, -Wformat=n
 
@@ -570,7 +570,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format
 
-  Default option value for :option:`-Wformat`.
+  Default setting; overrides :option:`-Wformat`.
 
 .. option:: -Wno-format-contains-nul
 
@@ -579,7 +579,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wformat-contains-nul
 
-  Default option value for :option:`-Wno-format-contains-nul`.
+  Default setting; overrides :option:`-Wno-format-contains-nul`.
 
 .. option:: -Wno-format-extra-args
 
@@ -597,7 +597,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wformat-extra-args
 
-  Default option value for :option:`-Wno-format-extra-args`.
+  Default setting; overrides :option:`-Wno-format-extra-args`.
 
 .. option:: -Wformat-overflow, -Wformat-overflow=level
 
@@ -636,7 +636,7 @@ warn at all unless optimization is enabled.
 
   .. option:: -Wno-format-overflow
 
-    Default option value for :option:`-Wformat-overflow`.
+    Default setting; overrides :option:`-Wformat-overflow`.
 
   ``-Wformat-overflow=2``
     Level :samp:`{2}` warns also about calls that might overflow the destination
@@ -678,7 +678,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-overflow
 
-  Default option value for :option:`-Wformat-overflow`.
+  Default setting; overrides :option:`-Wformat-overflow`.
 
 .. option:: -Wno-format-zero-length
 
@@ -687,7 +687,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wformat-zero-length
 
-  Default option value for :option:`-Wno-format-zero-length`.
+  Default setting; overrides :option:`-Wno-format-zero-length`.
 
 .. option:: -Wformat-nonliteral
 
@@ -697,7 +697,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-nonliteral
 
-  Default option value for :option:`-Wformat-nonliteral`.
+  Default setting; overrides :option:`-Wformat-nonliteral`.
 
 .. option:: -Wformat-security
 
@@ -713,7 +713,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-security
 
-  Default option value for :option:`-Wformat-security`.
+  Default setting; overrides :option:`-Wformat-security`.
 
 .. option:: -Wformat-signedness
 
@@ -722,7 +722,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-signedness
 
-  Default option value for :option:`-Wformat-signedness`.
+  Default setting; overrides :option:`-Wformat-signedness`.
 
 .. option:: -Wformat-truncation, -Wformat-truncation=level
 
@@ -750,7 +750,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-truncation
 
-  Default option value for :option:`-Wformat-truncation`.
+  Default setting; overrides :option:`-Wformat-truncation`.
 
 .. option:: -Wformat-y2k
 
@@ -759,7 +759,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-format-y2k
 
-  Default option value for :option:`-Wformat-y2k`.
+  Default setting; overrides :option:`-Wformat-y2k`.
 
 .. option:: -Wnonnull
 
@@ -771,7 +771,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-nonnull
 
-  Default option value for :option:`-Wnonnull`.
+  Default setting; overrides :option:`-Wnonnull`.
 
 .. option:: -Wnonnull-compare
 
@@ -783,7 +783,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-nonnull-compare
 
-  Default option value for :option:`-Wnonnull-compare`.
+  Default setting; overrides :option:`-Wnonnull-compare`.
 
 .. option:: -Wnull-dereference
 
@@ -795,7 +795,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-null-dereference
 
-  Default option value for :option:`-Wnull-dereference`.
+  Default setting; overrides :option:`-Wnull-dereference`.
 
 .. option:: -Winit-self
 
@@ -821,7 +821,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-init-self
 
-  Default option value for :option:`-Winit-self`.
+  Default setting; overrides :option:`-Winit-self`.
 
 .. option:: -Wno-implicit-int
 
@@ -835,7 +835,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wimplicit-int
 
-  Default option value for :option:`-Wno-implicit-int`.
+  Default setting; overrides :option:`-Wno-implicit-int`.
 
 .. option:: -Wno-implicit-function-declaration
 
@@ -850,7 +850,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wimplicit-function-declaration
 
-  Default option value for :option:`-Wno-implicit-function-declaration`.
+  Default setting; overrides :option:`-Wno-implicit-function-declaration`.
 
 .. option:: -Wimplicit
 
@@ -863,7 +863,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-implicit
 
-  Default option value for :option:`-Wimplicit`.
+  Default setting; overrides :option:`-Wimplicit`.
 
 .. option:: -Wimplicit-fallthrough
 
@@ -873,7 +873,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-implicit-fallthrough
 
-  Default option value for :option:`-Wimplicit-fallthrough`.
+  Default setting; overrides :option:`-Wimplicit-fallthrough`.
 
 .. option:: -Wimplicit-fallthrough=n
 
@@ -1007,7 +1007,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wif-not-aligned
 
-  Default option value for :option:`-Wno-if-not-aligned`.
+  Default setting; overrides :option:`-Wno-if-not-aligned`.
 
 .. option:: -Wignored-qualifiers
 
@@ -1027,7 +1027,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-ignored-qualifiers
 
-  Default option value for :option:`-Wignored-qualifiers`.
+  Default setting; overrides :option:`-Wignored-qualifiers`.
 
 .. option:: -Wno-ignored-attributes
 
@@ -1043,7 +1043,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wignored-attributes
 
-  Default option value for :option:`-Wno-ignored-attributes`.
+  Default setting; overrides :option:`-Wno-ignored-attributes`.
 
 .. option:: -Wmain
 
@@ -1055,7 +1055,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-main
 
-  Default option value for :option:`-Wmain`.
+  Default setting; overrides :option:`-Wmain`.
 
 .. option:: -Wmisleading-indentation
 
@@ -1101,7 +1101,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-misleading-indentation
 
-  Default option value for :option:`-Wmisleading-indentation`.
+  Default setting; overrides :option:`-Wmisleading-indentation`.
 
 .. option:: -Wmissing-attributes
 
@@ -1152,7 +1152,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-attributes
 
-  Default option value for :option:`-Wmissing-attributes`.
+  Default setting; overrides :option:`-Wmissing-attributes`.
 
 .. option:: -Wmissing-braces
 
@@ -1169,7 +1169,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-braces
 
-  Default option value for :option:`-Wmissing-braces`.
+  Default setting; overrides :option:`-Wmissing-braces`.
 
 .. option:: -Wmissing-include-dirs
 
@@ -1181,7 +1181,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-include-dirs
 
-  Default option value for :option:`-Wmissing-include-dirs`.
+  Default setting; overrides :option:`-Wmissing-include-dirs`.
 
 .. option:: -Wno-missing-profile
 
@@ -1203,7 +1203,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wmissing-profile
 
-  Default option value for :option:`-Wno-missing-profile`.
+  Default setting; overrides :option:`-Wno-missing-profile`.
 
 .. option:: -Wmismatched-dealloc
 
@@ -1240,7 +1240,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-mismatched-dealloc
 
-  Default option value for :option:`-Wmismatched-dealloc`.
+  Default setting; overrides :option:`-Wmismatched-dealloc`.
 
 .. option:: -Wmultistatement-macros
 
@@ -1270,7 +1270,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-multistatement-macros
 
-  Default option value for :option:`-Wmultistatement-macros`.
+  Default setting; overrides :option:`-Wmultistatement-macros`.
 
 .. option:: -Wparentheses
 
@@ -1305,7 +1305,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-parentheses
 
-  Default option value for :option:`-Wparentheses`.
+  Default setting; overrides :option:`-Wparentheses`.
 
 .. option:: -Wsequence-point
 
@@ -1361,7 +1361,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sequence-point
 
-  Default option value for :option:`-Wsequence-point`.
+  Default setting; overrides :option:`-Wsequence-point`.
 
 .. option:: -Wno-return-local-addr
 
@@ -1370,7 +1370,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wreturn-local-addr
 
-  Default option value for :option:`-Wno-return-local-addr`.
+  Default setting; overrides :option:`-Wno-return-local-addr`.
 
 .. option:: -Wreturn-type
 
@@ -1396,7 +1396,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-return-type
 
-  Default option value for :option:`-Wreturn-type`.
+  Default setting; overrides :option:`-Wreturn-type`.
 
 .. option:: -Wno-shift-count-negative
 
@@ -1405,7 +1405,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wshift-count-negative
 
-  Default option value for :option:`-Wno-shift-count-negative`.
+  Default setting; overrides :option:`-Wno-shift-count-negative`.
 
 .. option:: -Wno-shift-count-overflow
 
@@ -1414,7 +1414,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wshift-count-overflow
 
-  Default option value for :option:`-Wno-shift-count-overflow`.
+  Default setting; overrides :option:`-Wno-shift-count-overflow`.
 
 .. option:: -Wshift-negative-value
 
@@ -1423,7 +1423,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-shift-negative-value
 
-  Default option value for :option:`-Wshift-negative-value`.
+  Default setting; overrides :option:`-Wshift-negative-value`.
 
 .. option:: -Wno-shift-overflow, -Wshift-overflow=n
 
@@ -1443,7 +1443,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wshift-overflow
 
-  Default option value for :option:`-Wno-shift-overflow`.
+  Default setting; overrides :option:`-Wno-shift-overflow`.
 
 .. option:: -Wswitch
 
@@ -1457,7 +1457,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-switch
 
-  Default option value for :option:`-Wswitch`.
+  Default setting; overrides :option:`-Wswitch`.
 
 .. option:: -Wswitch-default
 
@@ -1466,7 +1466,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-switch-default
 
-  Default option value for :option:`-Wswitch-default`.
+  Default setting; overrides :option:`-Wswitch-default`.
 
 .. option:: -Wswitch-enum
 
@@ -1480,7 +1480,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-switch-enum
 
-  Default option value for :option:`-Wswitch-enum`.
+  Default setting; overrides :option:`-Wswitch-enum`.
 
 .. option:: -Wno-switch-bool
 
@@ -1500,7 +1500,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wswitch-bool
 
-  Default option value for :option:`-Wno-switch-bool`.
+  Default setting; overrides :option:`-Wno-switch-bool`.
 
 .. option:: -Wno-switch-outside-range
 
@@ -1511,7 +1511,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wswitch-outside-range
 
-  Default option value for :option:`-Wno-switch-outside-range`.
+  Default setting; overrides :option:`-Wno-switch-outside-range`.
 
 .. option:: -Wno-switch-unreachable
 
@@ -1547,7 +1547,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wswitch-unreachable
 
-  Default option value for :option:`-Wno-switch-unreachable`.
+  Default setting; overrides :option:`-Wno-switch-unreachable`.
 
 .. option:: -Wsync-nand
 
@@ -1560,7 +1560,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sync-nand
 
-  Default option value for :option:`-Wsync-nand`.
+  Default setting; overrides :option:`-Wsync-nand`.
 
 .. option:: -Wunused-but-set-parameter
 
@@ -1575,7 +1575,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-but-set-parameter
 
-  Default option value for :option:`-Wunused-but-set-parameter`.
+  Default setting; overrides :option:`-Wunused-but-set-parameter`.
 
 .. option:: -Wunused-but-set-variable
 
@@ -1591,7 +1591,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-but-set-variable
 
-  Default option value for :option:`-Wunused-but-set-variable`.
+  Default setting; overrides :option:`-Wunused-but-set-variable`.
 
 .. option:: -Wunused-function
 
@@ -1601,7 +1601,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-function
 
-  Default option value for :option:`-Wunused-function`.
+  Default setting; overrides :option:`-Wunused-function`.
 
 .. option:: -Wunused-label
 
@@ -1613,7 +1613,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-label
 
-  Default option value for :option:`-Wunused-label`.
+  Default setting; overrides :option:`-Wunused-label`.
 
 .. option:: -Wunused-local-typedefs
 
@@ -1626,7 +1626,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-local-typedefs
 
-  Default option value for :option:`-Wunused-local-typedefs`.
+  Default setting; overrides :option:`-Wunused-local-typedefs`.
 
 .. option:: -Wunused-parameter
 
@@ -1637,7 +1637,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-parameter
 
-  Default option value for :option:`-Wunused-parameter`.
+  Default setting; overrides :option:`-Wunused-parameter`.
 
 .. option:: -Wno-unused-result
 
@@ -1647,7 +1647,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wunused-result
 
-  Default option value for :option:`-Wno-unused-result`.
+  Default setting; overrides :option:`-Wno-unused-result`.
 
 .. option:: -Wunused-variable
 
@@ -1660,7 +1660,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-variable
 
-  Default option value for :option:`-Wunused-variable`.
+  Default setting; overrides :option:`-Wunused-variable`.
 
 .. option:: -Wunused-const-variable, -Wunused-const-variable=n
 
@@ -1687,7 +1687,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-const-variable
 
-  Default option value for :option:`-Wunused-const-variable`.
+  Default setting; overrides :option:`-Wunused-const-variable`.
 
 .. option:: -Wunused-value
 
@@ -1702,7 +1702,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused-value
 
-  Default option value for :option:`-Wunused-value`.
+  Default setting; overrides :option:`-Wunused-value`.
 
 .. option:: -Wunused
 
@@ -1714,7 +1714,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unused
 
-  Default option value for :option:`-Wunused`.
+  Default setting; overrides :option:`-Wunused`.
 
 .. option:: -Wuninitialized
 
@@ -1746,7 +1746,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-uninitialized
 
-  Default option value for :option:`-Wuninitialized`.
+  Default setting; overrides :option:`-Wuninitialized`.
 
 .. option:: -Wno-invalid-memory-model
 
@@ -1770,7 +1770,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Winvalid-memory-model
 
-  Default option value for :option:`-Wno-invalid-memory-model`.
+  Default setting; overrides :option:`-Wno-invalid-memory-model`.
 
 .. option:: -Wmaybe-uninitialized
 
@@ -1831,7 +1831,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-maybe-uninitialized
 
-  Default option value for :option:`-Wmaybe-uninitialized`.
+  Default setting; overrides :option:`-Wmaybe-uninitialized`.
 
 .. option:: -Wunknown-pragmas
 
@@ -1848,7 +1848,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unknown-pragmas
 
-  Default option value for :option:`-Wunknown-pragmas`.
+  Default setting; overrides :option:`-Wunknown-pragmas`.
 
 .. option:: -Wno-pragmas
 
@@ -1858,7 +1858,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wpragmas
 
-  Default option value for :option:`-Wno-pragmas`.
+  Default setting; overrides :option:`-Wno-pragmas`.
 
 .. option:: -Wno-prio-ctor-dtor
 
@@ -1871,7 +1871,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wprio-ctor-dtor
 
-  Default option value for :option:`-Wno-prio-ctor-dtor`.
+  Default setting; overrides :option:`-Wno-prio-ctor-dtor`.
 
 .. option:: -Wstrict-aliasing
 
@@ -1884,7 +1884,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-strict-aliasing
 
-  Default option value for :option:`-Wstrict-aliasing`.
+  Default setting; overrides :option:`-Wstrict-aliasing`.
 
 .. option:: -Wstrict-aliasing=n
 
@@ -1971,7 +1971,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-strict-overflow
 
-  Default option value for :option:`-Wstrict-overflow`.
+  Default setting; overrides :option:`-Wstrict-overflow`.
 
 .. option:: -Wstring-compare
 
@@ -1998,7 +1998,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-string-compare
 
-  Default option value for :option:`-Wstring-compare`.
+  Default setting; overrides :option:`-Wstring-compare`.
 
 .. option:: -Wstringop-overflow, -Wstringop-overflow=type
 
@@ -2075,7 +2075,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-stringop-overflow
 
-  Default option value for :option:`-Wstringop-overflow`.
+  Default setting; overrides :option:`-Wstringop-overflow`.
 
 .. option:: -Wno-stringop-overread
 
@@ -2087,7 +2087,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wstringop-overread
 
-  Default option value for :option:`-Wno-stringop-overread`.
+  Default setting; overrides :option:`-Wno-stringop-overread`.
 
 .. option:: -Wno-stringop-truncation
 
@@ -2148,7 +2148,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wstringop-truncation
 
-  Default option value for :option:`-Wno-stringop-truncation`.
+  Default setting; overrides :option:`-Wno-stringop-truncation`.
 
 .. option:: -Wsuggest-attribute=[pure|const|noreturn|format|cold|malloc]
 
@@ -2196,7 +2196,7 @@ warn at all unless optimization is enabled.
 
   .. option:: -Wno-suggest-attribute=cold
 
-    Default option value for :option:`-Wsuggest-attribute=cold`.
+    Default setting; overrides :option:`-Wsuggest-attribute=cold`.
 
 .. option:: -Walloc-zero
 
@@ -2210,7 +2210,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-alloc-zero
 
-  Default option value for :option:`-Walloc-zero`.
+  Default setting; overrides :option:`-Walloc-zero`.
 
 .. option:: -Walloc-size-larger-than=byte-size
 
@@ -2236,7 +2236,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-alloca
 
-  Default option value for :option:`-Walloca`.
+  Default setting; overrides :option:`-Walloca`.
 
 .. option:: -Walloca-larger-than=byte-size
 
@@ -2327,7 +2327,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-arith-conversion
 
-  Default option value for :option:`-Warith-conversion`.
+  Default setting; overrides :option:`-Warith-conversion`.
 
 .. option:: -Warray-bounds, -Warray-bounds=n
 
@@ -2347,7 +2347,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-array-bounds
 
-  Default option value for :option:`-Warray-bounds`.
+  Default setting; overrides :option:`-Warray-bounds`.
 
 .. option:: -Warray-parameter, -Warray-parameter=n
 
@@ -2398,7 +2398,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-array-parameter
 
-  Default option value for :option:`-Warray-parameter`.
+  Default setting; overrides :option:`-Warray-parameter`.
 
 .. option:: -Wattribute-alias=n
 
@@ -2432,7 +2432,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wattribute-alias
 
-  Default option value for :option:`-Wno-attribute-alias`.
+  Default setting; overrides :option:`-Wno-attribute-alias`.
 
 .. option:: -Wbool-compare
 
@@ -2450,7 +2450,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-bool-compare
 
-  Default option value for :option:`-Wbool-compare`.
+  Default setting; overrides :option:`-Wbool-compare`.
 
 .. option:: -Wbool-operation
 
@@ -2464,7 +2464,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-bool-operation
 
-  Default option value for :option:`-Wbool-operation`.
+  Default setting; overrides :option:`-Wbool-operation`.
 
 .. option:: -Wduplicated-branches
 
@@ -2486,7 +2486,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-duplicated-branches
 
-  Default option value for :option:`-Wduplicated-branches`.
+  Default setting; overrides :option:`-Wduplicated-branches`.
 
 .. option:: -Wduplicated-cond
 
@@ -2500,7 +2500,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-duplicated-cond
 
-  Default option value for :option:`-Wduplicated-cond`.
+  Default setting; overrides :option:`-Wduplicated-cond`.
 
 .. option:: -Wframe-address
 
@@ -2510,7 +2510,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-frame-address
 
-  Default option value for :option:`-Wframe-address`.
+  Default setting; overrides :option:`-Wframe-address`.
 
 .. option:: -Wno-discarded-qualifiers
 
@@ -2525,7 +2525,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdiscarded-qualifiers
 
-  Default option value for :option:`-Wno-discarded-qualifiers`.
+  Default setting; overrides :option:`-Wno-discarded-qualifiers`.
 
 .. option:: -Wno-discarded-array-qualifiers
 
@@ -2541,7 +2541,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdiscarded-array-qualifiers
 
-  Default option value for :option:`-Wno-discarded-array-qualifiers`.
+  Default setting; overrides :option:`-Wno-discarded-array-qualifiers`.
 
 .. option:: -Wno-incompatible-pointer-types
 
@@ -2556,7 +2556,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wincompatible-pointer-types
 
-  Default option value for :option:`-Wno-incompatible-pointer-types`.
+  Default setting; overrides :option:`-Wno-incompatible-pointer-types`.
 
 .. option:: -Wno-int-conversion
 
@@ -2571,7 +2571,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wint-conversion
 
-  Default option value for :option:`-Wno-int-conversion`.
+  Default setting; overrides :option:`-Wno-int-conversion`.
 
 .. option:: -Wzero-length-bounds
 
@@ -2607,7 +2607,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdiv-by-zero
 
-  Default option value for :option:`-Wno-div-by-zero`.
+  Default setting; overrides :option:`-Wno-div-by-zero`.
 
 .. option:: -Wsystem-headers
 
@@ -2626,7 +2626,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-system-headers
 
-  Default option value for :option:`-Wsystem-headers`.
+  Default setting; overrides :option:`-Wsystem-headers`.
 
 .. option:: -Wtautological-compare
 
@@ -2652,7 +2652,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-tautological-compare
 
-  Default option value for :option:`-Wtautological-compare`.
+  Default setting; overrides :option:`-Wtautological-compare`.
 
 .. option:: -Wtrampolines
 
@@ -2666,7 +2666,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-trampolines
 
-  Default option value for :option:`-Wtrampolines`.
+  Default setting; overrides :option:`-Wtrampolines`.
 
 .. option:: -Wfloat-equal
 
@@ -2685,7 +2685,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-float-equal
 
-  Default option value for :option:`-Wfloat-equal`.
+  Default setting; overrides :option:`-Wfloat-equal`.
 
 .. option:: -Wtraditional
 
@@ -2764,7 +2764,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-traditional
 
-  Default option value for :option:`-Wtraditional`.
+  Default setting; overrides :option:`-Wtraditional`.
 
 .. option:: -Wtraditional-conversion
 
@@ -2780,7 +2780,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-traditional-conversion
 
-  Default option value for :option:`-Wtraditional-conversion`.
+  Default setting; overrides :option:`-Wtraditional-conversion`.
 
 .. option:: -Wdeclaration-after-statement
 
@@ -2794,7 +2794,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-declaration-after-statement
 
-  Default option value for :option:`-Wdeclaration-after-statement`.
+  Default setting; overrides :option:`-Wdeclaration-after-statement`.
 
 .. option:: -Wshadow
 
@@ -2811,7 +2811,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-shadow
 
-  Default option value for :option:`-Wshadow`.
+  Default setting; overrides :option:`-Wshadow`.
 
 .. option:: -Wno-shadow-ivar
 
@@ -2824,7 +2824,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wshadow-ivar
 
-  Default option value for :option:`-Wno-shadow-ivar`.
+  Default setting; overrides :option:`-Wno-shadow-ivar`.
 
 .. option:: -Wshadow=global
 
@@ -2928,7 +2928,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-free-nonheap-object
 
-  Default option value for :option:`-Wfree-nonheap-object`.
+  Default setting; overrides :option:`-Wfree-nonheap-object`.
 
 .. option:: -Wstack-usage=byte-size
 
@@ -2977,7 +2977,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unsafe-loop-optimizations
 
-  Default option value for :option:`-Wunsafe-loop-optimizations`.
+  Default setting; overrides :option:`-Wunsafe-loop-optimizations`.
 
 .. option:: -Wno-pedantic-ms-format
 
@@ -2993,7 +2993,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wpedantic-ms-format
 
-  Default option value for :option:`-Wno-pedantic-ms-format`.
+  Default setting; overrides :option:`-Wno-pedantic-ms-format`.
 
 .. option:: -Wpointer-arith
 
@@ -3005,7 +3005,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-pointer-arith
 
-  Default option value for :option:`-Wpointer-arith`.
+  Default setting; overrides :option:`-Wpointer-arith`.
 
 .. option:: -Wno-pointer-compare
 
@@ -3025,7 +3025,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wpointer-compare
 
-  Default option value for :option:`-Wno-pointer-compare`.
+  Default setting; overrides :option:`-Wno-pointer-compare`.
 
 .. option:: -Wtsan
 
@@ -3038,7 +3038,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-tsan
 
-  Default option value for :option:`-Wtsan`.
+  Default setting; overrides :option:`-Wtsan`.
 
 .. option:: -Wtype-limits
 
@@ -3050,7 +3050,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-type-limits
 
-  Default option value for :option:`-Wtype-limits`.
+  Default setting; overrides :option:`-Wtype-limits`.
 
 .. option:: -Wabsolute-value
 
@@ -3069,14 +3069,14 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-absolute-value
 
-  Default option value for :option:`-Wabsolute-value`.
+  Default setting; overrides :option:`-Wabsolute-value`.
 
 .. include:: ../../share/cppwarnopts.rst
 
 
 .. option:: -Wendif-labels
 
-  Default option value for :option:`-Wno-endif-labels`.
+  Default setting; overrides :option:`-Wno-endif-labels`.
 
 .. option:: -Wbad-function-cast
 
@@ -3090,7 +3090,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-bad-function-cast
 
-  Default option value for :option:`-Wbad-function-cast`.
+  Default setting; overrides :option:`-Wbad-function-cast`.
 
 .. option:: -Wc90-c99-compat
 
@@ -3106,7 +3106,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c90-c99-compat
 
-  Default option value for :option:`-Wc90-c99-compat`.
+  Default setting; overrides :option:`-Wc90-c99-compat`.
 
 .. option:: -Wc99-c11-compat
 
@@ -3123,7 +3123,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c99-c11-compat
 
-  Default option value for :option:`-Wc99-c11-compat`.
+  Default setting; overrides :option:`-Wc99-c11-compat`.
 
 .. option:: -Wc11-c2x-compat
 
@@ -3140,7 +3140,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c11-c2x-compat
 
-  Default option value for :option:`-Wc11-c2x-compat`.
+  Default setting; overrides :option:`-Wc11-c2x-compat`.
 
 .. option:: -Wc++-compat
 
@@ -3154,7 +3154,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c++-compat
 
-  Default option value for :option:`-Wc++-compat`.
+  Default setting; overrides :option:`-Wc++-compat`.
 
 .. option:: -Wc++11-compat
 
@@ -3169,7 +3169,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c++11-compat
 
-  Default option value for :option:`-Wc++11-compat`.
+  Default setting; overrides :option:`-Wc++11-compat`.
 
 .. option:: -Wc++14-compat
 
@@ -3182,7 +3182,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c++14-compat
 
-  Default option value for :option:`-Wc++14-compat`.
+  Default setting; overrides :option:`-Wc++14-compat`.
 
 .. option:: -Wc++17-compat
 
@@ -3195,7 +3195,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c++17-compat
 
-  Default option value for :option:`-Wc++17-compat`.
+  Default setting; overrides :option:`-Wc++17-compat`.
 
 .. option:: -Wc++20-compat
 
@@ -3208,7 +3208,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-c++20-compat
 
-  Default option value for :option:`-Wc++20-compat`.
+  Default setting; overrides :option:`-Wc++20-compat`.
 
 .. option:: -Wno-c++11-extensions
 
@@ -3222,7 +3222,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wc++11-extensions
 
-  Default option value for :option:`-Wno-c++11-extensions`.
+  Default setting; overrides :option:`-Wno-c++11-extensions`.
 
 .. option:: -Wno-c++14-extensions
 
@@ -3236,7 +3236,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wc++14-extensions
 
-  Default option value for :option:`-Wno-c++14-extensions`.
+  Default setting; overrides :option:`-Wno-c++14-extensions`.
 
 .. option:: -Wno-c++17-extensions
 
@@ -3250,7 +3250,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wc++17-extensions
 
-  Default option value for :option:`-Wno-c++17-extensions`.
+  Default setting; overrides :option:`-Wno-c++17-extensions`.
 
 .. option:: -Wno-c++20-extensions
 
@@ -3264,7 +3264,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wc++20-extensions
 
-  Default option value for :option:`-Wno-c++20-extensions`.
+  Default setting; overrides :option:`-Wno-c++20-extensions`.
 
 .. option:: -Wno-c++23-extensions
 
@@ -3278,7 +3278,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wc++23-extensions
 
-  Default option value for :option:`-Wno-c++23-extensions`.
+  Default setting; overrides :option:`-Wno-c++23-extensions`.
 
 .. option:: -Wcast-qual
 
@@ -3301,7 +3301,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-cast-qual
 
-  Default option value for :option:`-Wcast-qual`.
+  Default setting; overrides :option:`-Wcast-qual`.
 
 .. option:: -Wcast-align
 
@@ -3312,7 +3312,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-cast-align
 
-  Default option value for :option:`-Wcast-align`.
+  Default setting; overrides :option:`-Wcast-align`.
 
 .. option:: -Wcast-align=strict
 
@@ -3336,7 +3336,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-cast-function-type
 
-  Default option value for :option:`-Wcast-function-type`.
+  Default setting; overrides :option:`-Wcast-function-type`.
 
 .. option:: -Wwrite-strings
 
@@ -3355,7 +3355,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-write-strings
 
-  Default option value for :option:`-Wwrite-strings`.
+  Default setting; overrides :option:`-Wwrite-strings`.
 
 .. option:: -Wclobbered
 
@@ -3364,7 +3364,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-clobbered
 
-  Default option value for :option:`-Wclobbered`.
+  Default setting; overrides :option:`-Wclobbered`.
 
 .. option:: -Wconversion
 
@@ -3390,7 +3390,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-conversion
 
-  Default option value for :option:`-Wconversion`.
+  Default setting; overrides :option:`-Wconversion`.
 
 .. option:: -Wdangling-else
 
@@ -3434,7 +3434,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-dangling-else
 
-  Default option value for :option:`-Wdangling-else`.
+  Default setting; overrides :option:`-Wdangling-else`.
 
 .. option:: -Wdate-time
 
@@ -3444,7 +3444,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-date-time
 
-  Default option value for :option:`-Wdate-time`.
+  Default setting; overrides :option:`-Wdate-time`.
 
 .. option:: -Wempty-body
 
@@ -3453,7 +3453,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-empty-body
 
-  Default option value for :option:`-Wempty-body`.
+  Default setting; overrides :option:`-Wempty-body`.
 
 .. option:: -Wno-endif-labels
 
@@ -3461,7 +3461,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wendif-labels
 
-  Default option value for :option:`-Wno-endif-labels`.
+  Default setting; overrides :option:`-Wno-endif-labels`.
 
 .. option:: -Wenum-compare
 
@@ -3472,7 +3472,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-enum-compare
 
-  Default option value for :option:`-Wenum-compare`.
+  Default setting; overrides :option:`-Wenum-compare`.
 
 .. option:: -Wenum-conversion
 
@@ -3482,7 +3482,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-enum-conversion
 
-  Default option value for :option:`-Wenum-conversion`.
+  Default setting; overrides :option:`-Wenum-conversion`.
 
 .. option:: -Wjump-misses-init
 
@@ -3502,7 +3502,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-jump-misses-init
 
-  Default option value for :option:`-Wjump-misses-init`.
+  Default setting; overrides :option:`-Wjump-misses-init`.
 
 .. option:: -Wsign-compare
 
@@ -3519,7 +3519,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sign-compare
 
-  Default option value for :option:`-Wsign-compare`.
+  Default setting; overrides :option:`-Wsign-compare`.
 
 .. option:: -Wsign-conversion
 
@@ -3530,7 +3530,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sign-conversion
 
-  Default option value for :option:`-Wsign-conversion`.
+  Default setting; overrides :option:`-Wsign-conversion`.
 
 .. option:: -Wfloat-conversion
 
@@ -3541,7 +3541,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-float-conversion
 
-  Default option value for :option:`-Wfloat-conversion`.
+  Default setting; overrides :option:`-Wfloat-conversion`.
 
 .. option:: -Wno-scalar-storage-order
 
@@ -3549,7 +3549,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wscalar-storage-order
 
-  Default option value for :option:`-Wno-scalar-storage-order`.
+  Default setting; overrides :option:`-Wno-scalar-storage-order`.
 
 .. option:: -Wsizeof-array-div
 
@@ -3570,7 +3570,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sizeof-array-div
 
-  Default option value for :option:`-Wsizeof-array-div`.
+  Default setting; overrides :option:`-Wsizeof-array-div`.
 
 .. option:: -Wsizeof-pointer-div
 
@@ -3582,7 +3582,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sizeof-pointer-div
 
-  Default option value for :option:`-Wsizeof-pointer-div`.
+  Default setting; overrides :option:`-Wsizeof-pointer-div`.
 
 .. option:: -Wsizeof-pointer-memaccess
 
@@ -3611,7 +3611,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-sizeof-pointer-memaccess
 
-  Default option value for :option:`-Wsizeof-pointer-memaccess`.
+  Default setting; overrides :option:`-Wsizeof-pointer-memaccess`.
 
 .. option:: -Wno-sizeof-array-argument
 
@@ -3621,7 +3621,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wsizeof-array-argument
 
-  Default option value for :option:`-Wno-sizeof-array-argument`.
+  Default setting; overrides :option:`-Wno-sizeof-array-argument`.
 
 .. option:: -Wmemset-elt-size
 
@@ -3633,7 +3633,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-memset-elt-size
 
-  Default option value for :option:`-Wmemset-elt-size`.
+  Default setting; overrides :option:`-Wmemset-elt-size`.
 
 .. option:: -Wmemset-transposed-args
 
@@ -3649,7 +3649,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-memset-transposed-args
 
-  Default option value for :option:`-Wmemset-transposed-args`.
+  Default setting; overrides :option:`-Wmemset-transposed-args`.
 
 .. option:: -Waddress
 
@@ -3667,7 +3667,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-address
 
-  Default option value for :option:`-Waddress`.
+  Default setting; overrides :option:`-Waddress`.
 
 .. option:: -Wno-address-of-packed-member
 
@@ -3677,7 +3677,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Waddress-of-packed-member
 
-  Default option value for :option:`-Wno-address-of-packed-member`.
+  Default setting; overrides :option:`-Wno-address-of-packed-member`.
 
 .. option:: -Wlogical-op
 
@@ -3693,7 +3693,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-logical-op
 
-  Default option value for :option:`-Wlogical-op`.
+  Default setting; overrides :option:`-Wlogical-op`.
 
 .. option:: -Wlogical-not-parentheses
 
@@ -3718,7 +3718,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-logical-not-parentheses
 
-  Default option value for :option:`-Wlogical-not-parentheses`.
+  Default setting; overrides :option:`-Wlogical-not-parentheses`.
 
 .. option:: -Waggregate-return
 
@@ -3728,7 +3728,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-aggregate-return
 
-  Default option value for :option:`-Waggregate-return`.
+  Default setting; overrides :option:`-Waggregate-return`.
 
 .. option:: -Wno-aggressive-loop-optimizations
 
@@ -3737,7 +3737,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Waggressive-loop-optimizations
 
-  Default option value for :option:`-Wno-aggressive-loop-optimizations`.
+  Default setting; overrides :option:`-Wno-aggressive-loop-optimizations`.
 
 .. option:: -Wno-attributes
 
@@ -3748,7 +3748,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wattributes
 
-  Default option value for :option:`-Wno-attributes`.
+  Default setting; overrides :option:`-Wno-attributes`.
 
 .. option:: -Wno-builtin-declaration-mismatch
 
@@ -3776,7 +3776,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wbuiltin-declaration-mismatch
 
-  Default option value for :option:`-Wno-builtin-declaration-mismatch`.
+  Default setting; overrides :option:`-Wno-builtin-declaration-mismatch`.
 
 .. option:: -Wno-builtin-macro-redefined
 
@@ -3786,7 +3786,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wbuiltin-macro-redefined
 
-  Default option value for :option:`-Wno-builtin-macro-redefined`.
+  Default setting; overrides :option:`-Wno-builtin-macro-redefined`.
 
 .. option:: -Wstrict-prototypes
 
@@ -3801,7 +3801,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-strict-prototypes
 
-  Default option value for :option:`-Wstrict-prototypes`.
+  Default setting; overrides :option:`-Wstrict-prototypes`.
 
 .. option:: -Wold-style-declaration
 
@@ -3816,7 +3816,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-old-style-declaration
 
-  Default option value for :option:`-Wold-style-declaration`.
+  Default setting; overrides :option:`-Wold-style-declaration`.
 
 .. option:: -Wold-style-definition
 
@@ -3832,7 +3832,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-old-style-definition
 
-  Default option value for :option:`-Wold-style-definition`.
+  Default setting; overrides :option:`-Wold-style-definition`.
 
 .. option:: -Wmissing-parameter-type
 
@@ -3851,7 +3851,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-parameter-type
 
-  Default option value for :option:`-Wmissing-parameter-type`.
+  Default setting; overrides :option:`-Wmissing-parameter-type`.
 
 .. option:: -Wmissing-prototypes
 
@@ -3870,7 +3870,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-prototypes
 
-  Default option value for :option:`-Wmissing-prototypes`.
+  Default setting; overrides :option:`-Wmissing-prototypes`.
 
 .. option:: -Wmissing-declarations
 
@@ -3884,7 +3884,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-declarations
 
-  Default option value for :option:`-Wmissing-declarations`.
+  Default setting; overrides :option:`-Wmissing-declarations`.
 
 .. option:: -Wmissing-field-initializers
 
@@ -3926,7 +3926,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-missing-field-initializers
 
-  Default option value for :option:`-Wmissing-field-initializers`.
+  Default setting; overrides :option:`-Wmissing-field-initializers`.
 
 .. option:: -Wno-multichar
 
@@ -3936,7 +3936,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wmultichar
 
-  Default option value for :option:`-Wno-multichar`.
+  Default setting; overrides :option:`-Wno-multichar`.
 
 .. option:: -Wnormalized=[none|id|nfc|nfkc]
 
@@ -3998,7 +3998,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wattribute-warning
 
-  Default option value for :option:`-Wno-attribute-warning`.
+  Default setting; overrides :option:`-Wno-attribute-warning`.
 
 .. option:: -Wno-deprecated
 
@@ -4006,7 +4006,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdeprecated
 
-  Default option value for :option:`-Wno-deprecated`.
+  Default setting; overrides :option:`-Wno-deprecated`.
 
 .. option:: -Wno-deprecated-declarations
 
@@ -4016,7 +4016,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdeprecated-declarations
 
-  Default option value for :option:`-Wno-deprecated-declarations`.
+  Default setting; overrides :option:`-Wno-deprecated-declarations`.
 
 .. option:: -Wno-overflow
 
@@ -4024,7 +4024,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Woverflow
 
-  Default option value for :option:`-Wno-overflow`.
+  Default setting; overrides :option:`-Wno-overflow`.
 
 .. option:: -Wno-odr
 
@@ -4033,7 +4033,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wodr
 
-  Default option value for :option:`-Wno-odr`.
+  Default setting; overrides :option:`-Wno-odr`.
 
 .. option:: -Wopenacc-parallelism
 
@@ -4043,7 +4043,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-openacc-parallelism
 
-  Default option value for :option:`-Wopenacc-parallelism`.
+  Default setting; overrides :option:`-Wopenacc-parallelism`.
 
 .. option:: -Wopenmp-simd
 
@@ -4053,7 +4053,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-openmp-simd
 
-  Default option value for :option:`-Wopenmp-simd`.
+  Default setting; overrides :option:`-Wopenmp-simd`.
 
 .. option:: -Woverride-init
 
@@ -4071,7 +4071,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-override-init
 
-  Default option value for :option:`-Woverride-init`.
+  Default setting; overrides :option:`-Woverride-init`.
 
 .. option:: -Wno-override-init-side-effects
 
@@ -4085,7 +4085,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Woverride-init-side-effects
 
-  Default option value for :option:`-Wno-override-init-side-effects`.
+  Default setting; overrides :option:`-Wno-override-init-side-effects`.
 
 .. option:: -Wpacked
 
@@ -4109,7 +4109,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-packed
 
-  Default option value for :option:`-Wpacked`.
+  Default setting; overrides :option:`-Wpacked`.
 
 .. option:: -Wnopacked-bitfield-compat
 
@@ -4153,7 +4153,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-packed-not-aligned
 
-  Default option value for :option:`-Wpacked-not-aligned`.
+  Default setting; overrides :option:`-Wpacked-not-aligned`.
 
 .. option:: -Wpadded
 
@@ -4164,7 +4164,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-padded
 
-  Default option value for :option:`-Wpadded`.
+  Default setting; overrides :option:`-Wpadded`.
 
 .. option:: -Wredundant-decls
 
@@ -4173,7 +4173,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-redundant-decls
 
-  Default option value for :option:`-Wredundant-decls`.
+  Default setting; overrides :option:`-Wredundant-decls`.
 
 .. option:: -Wrestrict
 
@@ -4200,7 +4200,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-restrict
 
-  Default option value for :option:`-Wrestrict`.
+  Default setting; overrides :option:`-Wrestrict`.
 
 .. option:: -Wnested-externs
 
@@ -4212,7 +4212,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-nested-externs
 
-  Default option value for :option:`-Wnested-externs`.
+  Default setting; overrides :option:`-Wnested-externs`.
 
 .. option:: -Winline
 
@@ -4229,7 +4229,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-inline
 
-  Default option value for :option:`-Winline`.
+  Default setting; overrides :option:`-Winline`.
 
 .. option:: -Wint-in-bool-context
 
@@ -4242,7 +4242,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-int-in-bool-context
 
-  Default option value for :option:`-Wint-in-bool-context`.
+  Default setting; overrides :option:`-Wint-in-bool-context`.
 
 .. option:: -Wno-int-to-pointer-cast
 
@@ -4252,7 +4252,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wint-to-pointer-cast
 
-  Default option value for :option:`-Wno-int-to-pointer-cast`.
+  Default setting; overrides :option:`-Wno-int-to-pointer-cast`.
 
 .. option:: -Wno-pointer-to-int-cast
 
@@ -4265,7 +4265,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wpointer-to-int-cast
 
-  Default option value for :option:`-Wno-pointer-to-int-cast`.
+  Default setting; overrides :option:`-Wno-pointer-to-int-cast`.
 
 .. option:: -Winvalid-pch
 
@@ -4274,7 +4274,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-invalid-pch
 
-  Default option value for :option:`-Winvalid-pch`.
+  Default setting; overrides :option:`-Winvalid-pch`.
 
 .. option:: -Wlong-long
 
@@ -4284,7 +4284,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-long-long
 
-  Default option value for :option:`-Wlong-long`.
+  Default setting; overrides :option:`-Wlong-long`.
 
 .. option:: -Wvariadic-macros
 
@@ -4295,7 +4295,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-variadic-macros
 
-  Default option value for :option:`-Wvariadic-macros`.
+  Default setting; overrides :option:`-Wvariadic-macros`.
 
 .. option:: -Wno-varargs
 
@@ -4304,7 +4304,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wvarargs
 
-  Default option value for :option:`-Wno-varargs`.
+  Default setting; overrides :option:`-Wno-varargs`.
 
 .. option:: -Wvector-operation-performance
 
@@ -4319,7 +4319,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-vector-operation-performance
 
-  Default option value for :option:`-Wvector-operation-performance`.
+  Default setting; overrides :option:`-Wvector-operation-performance`.
 
 .. option:: -Wvla
 
@@ -4329,7 +4329,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-vla
 
-  Default option value for :option:`-Wvla`.
+  Default setting; overrides :option:`-Wvla`.
 
 .. option:: -Wvla-larger-than=byte-size
 
@@ -4393,7 +4393,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-vla-parameter
 
-  Default option value for :option:`-Wvla-parameter`.
+  Default setting; overrides :option:`-Wvla-parameter`.
 
 .. option:: -Wvolatile-register-var
 
@@ -4404,7 +4404,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-volatile-register-var
 
-  Default option value for :option:`-Wvolatile-register-var`.
+  Default setting; overrides :option:`-Wvolatile-register-var`.
 
 .. option:: -Wdisabled-optimization
 
@@ -4417,7 +4417,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-disabled-optimization
 
-  Default option value for :option:`-Wdisabled-optimization`.
+  Default setting; overrides :option:`-Wdisabled-optimization`.
 
 .. option:: -Wpointer-sign
 
@@ -4432,7 +4432,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-pointer-sign
 
-  Default option value for :option:`-Wpointer-sign`.
+  Default setting; overrides :option:`-Wpointer-sign`.
 
 .. option:: -Wstack-protector
 
@@ -4441,7 +4441,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-stack-protector
 
-  Default option value for :option:`-Wstack-protector`.
+  Default setting; overrides :option:`-Wstack-protector`.
 
 .. option:: -Woverlength-strings
 
@@ -4461,7 +4461,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-overlength-strings
 
-  Default option value for :option:`-Woverlength-strings`.
+  Default setting; overrides :option:`-Woverlength-strings`.
 
 .. option:: -Wunsuffixed-float-constants
 
@@ -4477,7 +4477,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-unsuffixed-float-constants
 
-  Default option value for :option:`-Wunsuffixed-float-constants`.
+  Default setting; overrides :option:`-Wunsuffixed-float-constants`.
 
 .. option:: -Wno-lto-type-mismatch
 
@@ -4487,7 +4487,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wlto-type-mismatch
 
-  Default option value for :option:`-Wno-lto-type-mismatch`.
+  Default setting; overrides :option:`-Wno-lto-type-mismatch`.
 
 .. option:: -Wno-designated-init
 
@@ -4501,5 +4501,5 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wdesignated-init
 
-  Default option value for :option:`-Wno-designated-init`.
+  Default setting; overrides :option:`-Wno-designated-init`.
 

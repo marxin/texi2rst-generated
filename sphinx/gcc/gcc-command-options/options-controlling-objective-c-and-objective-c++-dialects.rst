@@ -71,7 +71,7 @@ and Objective-C++ programs:
 
 .. option:: -fnil-receivers
 
-  Default option value for :option:`-fno-nil-receivers`.
+  Default setting; overrides :option:`-fno-nil-receivers`.
 
 .. option:: -fobjc-abi-version=n
 
@@ -186,7 +186,7 @@ and Objective-C++ programs:
 
 .. option:: -flocal-ivars
 
-  Default option value for :option:`-fno-local-ivars`.
+  Default setting; overrides :option:`-fno-local-ivars`.
 
 .. option:: -fivar-visibility=[public|protected|private|package]
 
@@ -210,7 +210,7 @@ and Objective-C++ programs:
 
 .. option:: -Wno-assign-intercept
 
-  Default option value for :option:`-Wassign-intercept`.
+  Default setting; overrides :option:`-Wassign-intercept`.
 
 .. option:: -Wno-property-assign-default
 
@@ -223,7 +223,7 @@ and Objective-C++ programs:
 
 .. option:: -Wproperty-assign-default
 
-  Default option value for :option:`-Wno-property-assign-default`.
+  Default setting; overrides :option:`-Wno-property-assign-default`.
 
 .. option:: -Wno-protocol
 
@@ -241,7 +241,7 @@ and Objective-C++ programs:
 
 .. option:: -Wprotocol
 
-  Default option value for :option:`-Wno-protocol`.
+  Default setting; overrides :option:`-Wno-protocol`.
 
 .. option:: -Wobjc-root-class
 
@@ -273,7 +273,7 @@ and Objective-C++ programs:
 
 .. option:: -Wno-selector
 
-  Default option value for :option:`-Wselector`.
+  Default setting; overrides :option:`-Wselector`.
 
 .. option:: -Wstrict-selector-match
 
@@ -290,7 +290,7 @@ and Objective-C++ programs:
 
 .. option:: -Wno-strict-selector-match
 
-  Default option value for :option:`-Wstrict-selector-match`.
+  Default setting; overrides :option:`-Wstrict-selector-match`.
 
 .. option:: -Wundeclared-selector
 
@@ -311,7 +311,7 @@ and Objective-C++ programs:
 
 .. option:: -Wno-undeclared-selector
 
-  Default option value for :option:`-Wundeclared-selector`.
+  Default setting; overrides :option:`-Wundeclared-selector`.
 
 .. option:: -print-objc-runtime-info
 
