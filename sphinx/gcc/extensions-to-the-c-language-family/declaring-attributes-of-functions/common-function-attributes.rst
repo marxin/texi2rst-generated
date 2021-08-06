@@ -781,7 +781,7 @@ The following attributes are supported on most targets.
   this reason the attribute is not allowed on types to annotate indirect
   calls.
 
-``malloc``:samp:`malloc ({deallocator})`
+.. option:: malloc ({deallocator})
 .. option:: malloc (deallocator, ptr-index)
 
   .. index:: malloc function attribute
@@ -1181,7 +1181,7 @@ The following attributes are supported on most targets.
   with the notable exceptions of ``qsort`` and ``bsearch`` that
   take function pointer arguments.
 
-:samp:`optimize ({level}, ...)`
+.. option:: optimize ({level}, ...)
 .. option:: optimize (string, ...)
 
   .. index:: optimize function attribute
