@@ -268,7 +268,7 @@ The following attributes are supported on most targets.
   the observable state of the program and that have no observable effects
   on such state other than to return a value may lend themselves to
   optimizations such as common subexpression elimination.  Declaring such
-  functions with the ``const`` attribute allows GCC to avoid emitting
+  functions with the :option:`const` attribute allows GCC to avoid emitting
   some calls in repeated invocations of the function with the same argument
   values.
 
@@ -282,14 +282,14 @@ The following attributes are supported on most targets.
   argument value can be replaced by the result of the first call regardless
   of the statements in between.
 
-  The ``const`` attribute prohibits a function from reading objects
+  The :option:`const` attribute prohibits a function from reading objects
   that affect its return value between successive invocations.  However,
   functions declared with the attribute can safely read objects that do
   not change their return value, such as non-volatile constants.
 
-  The ``const`` attribute imposes greater restrictions on a function's
+  The :option:`const` attribute imposes greater restrictions on a function's
   definition than the similar :option:`pure` attribute.  Declaring the same
-  function with both the ``const`` and the :option:`pure` attribute is
+  function with both the :option:`const` and the :option:`pure` attribute is
   diagnosed.  Because a const function cannot have any observable side
   effects it does not make sense for it to return ``void``.  Declaring
   such a function is diagnosed.
@@ -297,7 +297,7 @@ The following attributes are supported on most targets.
   .. index:: pointer arguments
 
   Note that a function that has pointer arguments and examines the data
-  pointed to must *not* be declared ``const`` if the pointed-to
+  pointed to must *not* be declared :option:`const` if the pointed-to
   data might change between successive invocations of the function.  In
   general, since a function cannot distinguish data that might change
   from data that cannot, const functions should never take pointer or,
@@ -1277,10 +1277,10 @@ The following attributes are supported on most targets.
   a multithreading environment).
 
   The :option:`pure` attribute imposes similar but looser restrictions on
-  a function's definition than the ``const`` attribute: :option:`pure`
+  a function's definition than the :option:`const` attribute: :option:`pure`
   allows the function to read any non-volatile memory, even if it changes
   in between successive invocations of the function.  Declaring the same
-  function with both the :option:`pure` and the ``const`` attribute is
+  function with both the :option:`pure` and the :option:`const` attribute is
   diagnosed.  Because a pure function cannot have any observable side
   effects it does not make sense for such a function to return ``void``.
   Declaring such a function is diagnosed.

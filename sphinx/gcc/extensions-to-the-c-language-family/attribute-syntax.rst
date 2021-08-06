@@ -45,7 +45,7 @@ each attribute is one of the following:
 
 * An attribute name
   (which may be an identifier such as :option:`unused`, or a reserved
-  word such as ``const``).
+  word such as :option:`const`).
 
 * An attribute name followed by a parenthesized list of
   parameters for the attribute.

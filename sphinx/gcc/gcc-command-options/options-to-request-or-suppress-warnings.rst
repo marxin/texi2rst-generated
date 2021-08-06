@@ -1115,7 +1115,7 @@ warn at all unless optimization is enabled.
   issued when the alias is more restrictive than the target, which could
   lead to incorrect code generation.
   Attributes considered include ``alloc_align``, ``alloc_size``,
-  :option:`cold`, ``const``, :option:`hot`, :option:`leaf`, ``malloc``,
+  :option:`cold`, :option:`const`, :option:`hot`, :option:`leaf`, ``malloc``,
   :option:`nonnull`, :option:`noreturn`, :option:`nothrow`, :option:`pure`,
   :option:`returns_nonnull`, and :option:`returns_twice`.
 
@@ -2158,9 +2158,9 @@ warn at all unless optimization is enabled.
   .. option:: -Wsuggest-attribute=pure, -Wno-suggest-attribute=pure, -Wno-suggest-attribute=const, -Wno-suggest-attribute=noreturn, -Wno-missing-noreturn, -Wno-suggest-attribute=malloc
 
     Warn about functions that might be candidates for attributes
-    :option:`pure`, ``const`` or :option:`noreturn` or ``malloc``. The compiler
+    :option:`pure`, :option:`const` or :option:`noreturn` or ``malloc``. The compiler
     only warns for functions visible in other compilation units or (in the case of
-    :option:`pure` and ``const``) if it cannot prove that the function returns
+    :option:`pure` and :option:`const`) if it cannot prove that the function returns
     normally. A function returns normally if it doesn't contain an infinite loop or
     return abnormally by throwing, calling ``abort`` or trapping.  This analysis
     requires option :option:`-fipa-pure-const`, which is enabled by default at
@@ -2422,7 +2422,7 @@ warn at all unless optimization is enabled.
     restrictive than the target, rather than more restrictive.
 
     Attributes considered include ``alloc_align``, ``alloc_size``,
-    :option:`cold`, ``const``, :option:`hot`, :option:`leaf`, ``malloc``,
+    :option:`cold`, :option:`const`, :option:`hot`, :option:`leaf`, ``malloc``,
     :option:`nonnull`, :option:`noreturn`, :option:`nothrow`, :option:`pure`,
     :option:`returns_nonnull`, and :option:`returns_twice`.
 
