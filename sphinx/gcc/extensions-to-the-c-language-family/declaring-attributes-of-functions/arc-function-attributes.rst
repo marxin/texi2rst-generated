@@ -45,7 +45,7 @@ These function attributes are supported by the ARC back end:
   :option:`-mlong-calls` and :option:`-mmedium-calls` (see :ref:`arc-options`)
   command-line switches and ``#pragma long_calls`` settings.
 
-  For ARC, a function marked with the ``long_call`` attribute is
+  For ARC, a function marked with the :option:`long_call` attribute is
   always called using register-indirect jump-and-link instructions,
   thereby enabling the called function to be placed anywhere within the
   32-bit address space.  A function marked with the ``medium_call``

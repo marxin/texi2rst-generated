@@ -14,13 +14,13 @@ The following attributes are supported on most targets.
 
 .. option:: access
 
-  The ``access`` attribute enables the detection of invalid or unsafe
+  The :option:`access` attribute enables the detection of invalid or unsafe
   accesses by functions to which they apply or their callers, as well as
   write-only accesses to objects that are never read from.  Such accesses
   may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
   :option:`-Wuninitialized`, :option:`-Wunused`, and others.
 
-  The ``access`` attribute specifies that a function to whose by-reference
+  The :option:`access` attribute specifies that a function to whose by-reference
   arguments the attribute applies accesses the referenced object according to
   :samp:`{access-mode}`.  The :samp:`{access-mode}` argument is required and must be
   one of four names: ``read_only``, ``read_write``, ``write_only``,
@@ -29,7 +29,7 @@ The following attributes are supported on most targets.
   The required :samp:`{ref-index}` positional argument  denotes a function
   argument of pointer (or in C++, reference) type that is subject to
   the access.  The same pointer argument can be referenced by at most one
-  distinct ``access`` attribute.
+  distinct :option:`access` attribute.
 
   The optional :samp:`{size-index}` positional argument denotes a function
   argument of integer type that specifies the maximum size of the access.
@@ -115,7 +115,7 @@ The following attributes are supported on most targets.
 
   .. index:: aligned function attribute
 
-  The ``aligned`` attribute specifies a minimum alignment for
+  The :option:`aligned` attribute specifies a minimum alignment for
   the first instruction of the function, measured in bytes.  When specified,
   :samp:`{alignment}` must be an integer constant power of 2.  Specifying no
   :samp:`{alignment}` argument implies the ideal alignment for the target.
@@ -131,7 +131,7 @@ The following attributes are supported on most targets.
   Using the attribute overrides the effect of the :option:`-falign-functions`
   (see :ref:`optimize-options`) option for this function.
 
-  Note that the effectiveness of ``aligned`` attributes may be
+  Note that the effectiveness of :option:`aligned` attributes may be
   limited by inherent limitations in the system linker 
   and/or object file format.  On some systems, the
   linker is only able to arrange for functions to be aligned up to a
@@ -139,7 +139,7 @@ The following attributes are supported on most targets.
   alignment may be very very small.)  See your linker documentation for
   further information.
 
-  The ``aligned`` attribute can also be used for variables and fields
+  The :option:`aligned` attribute can also be used for variables and fields
   (see :ref:`variable-attributes`.)
 
 .. option:: alloc_align (position)
@@ -245,7 +245,7 @@ The following attributes are supported on most targets.
 
   .. index:: cold function attribute
 
-  The ``cold`` attribute on functions is used to inform the compiler that
+  The :option:`cold` attribute on functions is used to inform the compiler that
   the function is unlikely to be executed.  The function is optimized for
   size rather than speed and on many targets it is placed into a special
   subsection of the text section so all cold functions appear close together,
@@ -288,8 +288,8 @@ The following attributes are supported on most targets.
   not change their return value, such as non-volatile constants.
 
   The ``const`` attribute imposes greater restrictions on a function's
-  definition than the similar ``pure`` attribute.  Declaring the same
-  function with both the ``const`` and the ``pure`` attribute is
+  definition than the similar :option:`pure` attribute.  Declaring the same
+  function with both the ``const`` and the :option:`pure` attribute is
   diagnosed.  Because a const function cannot have any observable side
   effects it does not make sense for it to return ``void``.  Declaring
   such a function is diagnosed.
@@ -310,7 +310,7 @@ The following attributes are supported on most targets.
 
   .. index:: destructor function attribute
 
-  The ``constructor`` attribute causes the function to be called
+  The :option:`constructor` attribute causes the function to be called
   automatically before execution enters ``main ()``.  Similarly, the
   ``destructor`` attribute causes the function to be called
   automatically after ``main ()`` completes or ``exit ()`` is
@@ -329,11 +329,11 @@ The following attributes are supported on most targets.
   functions are the same as those specified for namespace-scope C++
   objects (see :ref:`c++-attributes`).  However, at present, the order in which
   constructors for C++ objects with static storage duration and functions
-  decorated with attribute ``constructor`` are invoked is unspecified.
+  decorated with attribute :option:`constructor` are invoked is unspecified.
   In mixed declarations, attribute ``init_priority`` can be used to
   impose a specific ordering.
 
-  Using the argument forms of the ``constructor`` and ``destructor``
+  Using the argument forms of the :option:`constructor` and ``destructor``
   attributes on targets where the feature is not supported is rejected with
   an error.
 
@@ -341,26 +341,26 @@ The following attributes are supported on most targets.
 
   .. index:: copy function attribute
 
-  The ``copy`` attribute applies the set of attributes with which
+  The :option:`copy` attribute applies the set of attributes with which
   :samp:`{function}` has been declared to the declaration of the function
   to which the attribute is applied.  The attribute is designed for
   libraries that define aliases or function resolvers that are expected
-  to specify the same set of attributes as their targets.  The ``copy``
+  to specify the same set of attributes as their targets.  The :option:`copy`
   attribute can be used with functions, variables, or types.  However,
   the kind of symbol to which the attribute is applied (either function
   or variable) must match the kind of symbol to which the argument refers.
-  The ``copy`` attribute copies only syntactic and semantic attributes
+  The :option:`copy` attribute copies only syntactic and semantic attributes
   but not attributes that affect a symbol's linkage or visibility such as
-  ``alias``, ``visibility``, or ``weak``.  The ``deprecated``
+  ``alias``, :option:`visibility`, or :option:`weak`.  The :option:`deprecated`
   and ``target_clones`` attribute are also not copied.
   See :ref:`common-type-attributes`.
   See :ref:`common-variable-attributes`.
 
   For example, the :samp:`{StrongAlias}` macro below makes use of the ``alias``
-  and ``copy`` attributes to define an alias named :samp:`{alloc}` for function
+  and :option:`copy` attributes to define an alias named :samp:`{alloc}` for function
   :samp:`{allocate}` declared with attributes :samp:`{alloc_size}`, :samp:`{malloc}`, and
   :samp:`{nothrow}`.  Thanks to the ``__typeof__`` operator the alias has
-  the same type as the target function.  As a result of the ``copy``
+  the same type as the target function.  As a result of the :option:`copy`
   attribute the alias also shares the same attributes as the target.
 
   .. code-block:: c++
@@ -377,7 +377,7 @@ The following attributes are supported on most targets.
 
   .. index:: deprecated function attribute
 
-  The ``deprecated`` attribute results in a warning if the function
+  The :option:`deprecated` attribute results in a warning if the function
   is used anywhere in the source file.  This is useful when identifying
   functions that are expected to be removed in a future version of a
   program.  The warning also includes the location of the declaration
@@ -395,7 +395,7 @@ The following attributes are supported on most targets.
   argument, which must be a string, is printed in the warning if
   present.
 
-  The ``deprecated`` attribute can also be used for variables and
+  The :option:`deprecated` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
   The message attached to the attribute is affected by the setting of
@@ -433,12 +433,12 @@ The following attributes are supported on most targets.
 
   If :option:`-fwhole-program` is used together with :option:`-flto` and 
   :command:`gold` is used as the linker plugin, 
-  ``externally_visible`` attributes are automatically added to functions 
+  :option:`externally_visible` attributes are automatically added to functions 
   (not variable yet due to a current :command:`gold` issue) 
   that are accessed outside of LTO objects according to resolution file
   produced by :command:`gold`.
   For other linkers that cannot generate resolution file,
-  explicit ``externally_visible`` attributes are still necessary.
+  explicit :option:`externally_visible` attributes are still necessary.
 
 .. option:: flatten
 
@@ -446,7 +446,7 @@ The following attributes are supported on most targets.
 
   Generally, inlining into a function is limited.  For a function marked with
   this attribute, every call inside this function is inlined, if possible.
-  Functions declared with attribute ``noinline`` and similar are not
+  Functions declared with attribute :option:`noinline` and similar are not
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
@@ -631,7 +631,7 @@ The following attributes are supported on most targets.
 
   .. index:: hot function attribute
 
-  The ``hot`` attribute on a function is used to inform the compiler that
+  The :option:`hot` attribute on a function is used to inform the compiler that
   the function is a hot spot of the compiled program.  The function is
   optimized more aggressively and on many targets it is placed into a special
   subsection of the text section so all hot functions appear close together,
@@ -768,7 +768,7 @@ The following attributes are supported on most targets.
   defined in the current compilation unit and uses static variables.  There
   is no standard-compliant way to write such a signal handler, resolver
   function, or implementation function, and the best that you can do is to
-  remove the ``leaf`` attribute or mark all such static variables
+  remove the :option:`leaf` attribute or mark all such static variables
   ``volatile``.  Lastly, for ELF-based systems that support symbol
   interposition, care should be taken that functions defined in the
   current compilation unit do not unexpectedly interpose other symbols
@@ -910,7 +910,7 @@ The following attributes are supported on most targets.
 
   .. index:: no_profile_instrument_function function attribute
 
-  The ``no_profile_instrument_function`` attribute on functions is used
+  The :option:`no_profile_instrument_function` attribute on functions is used
   to inform the compiler that it should not process any profile feedback based
   optimization code instrumentation.
 
@@ -918,7 +918,7 @@ The following attributes are supported on most targets.
 
   .. index:: no_reorder function attribute
 
-  Do not reorder functions or variables marked ``no_reorder``
+  Do not reorder functions or variables marked :option:`no_reorder`
   against each other or top level assembler statements the executable.
   The actual order in the program will depend on the linker command
   line. Static variables marked like this are also not removed.
@@ -946,18 +946,18 @@ The following attributes are supported on most targets.
 
   .. index:: no_sanitize_address function attribute
 
-  The ``no_sanitize_address`` attribute on functions is used
+  The :option:`no_sanitize_address` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
   in the function when compiling with the :option:`-fsanitize`:samp:`=address` option.
   The ``no_address_safety_analysis`` is a deprecated alias of the
-  ``no_sanitize_address`` attribute, new code should use
-  ``no_sanitize_address``.
+  :option:`no_sanitize_address` attribute, new code should use
+  :option:`no_sanitize_address`.
 
 .. option:: no_sanitize_thread
 
   .. index:: no_sanitize_thread function attribute
 
-  The ``no_sanitize_thread`` attribute on functions is used
+  The :option:`no_sanitize_thread` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
   in the function when compiling with the :option:`-fsanitize`:samp:`=thread` option.
 
@@ -965,7 +965,7 @@ The following attributes are supported on most targets.
 
   .. index:: no_sanitize_undefined function attribute
 
-  The ``no_sanitize_undefined`` attribute on functions is used
+  The :option:`no_sanitize_undefined` attribute on functions is used
   to inform the compiler that it should not check for undefined behavior
   in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
 
@@ -973,7 +973,7 @@ The following attributes are supported on most targets.
 
   .. index:: no_sanitize_coverage function attribute
 
-  The ``no_sanitize_coverage`` attribute on functions is used
+  The :option:`no_sanitize_coverage` attribute on functions is used
   to inform the compiler that it should not do coverage-guided
   fuzzing code instrumentation (:option:`-fsanitize-coverage`).
 
@@ -1033,8 +1033,8 @@ The following attributes are supported on most targets.
   Disable interprocedural optimizations between the function with this
   attribute and its callers, as if the body of the function is not available
   when optimizing callers and the callers are unavailable when optimizing
-  the body.  This attribute implies ``noinline``, ``noclone`` and
-  ``no_icf`` attributes.    However, this attribute is not equivalent
+  the body.  This attribute implies :option:`noinline`, :option:`noclone` and
+  :option:`no_icf` attributes.    However, this attribute is not equivalent
   to a combination of other attributes, because its purpose is to suppress
   existing and future optimizations employing interprocedural analysis,
   including those that do not have an attribute suitable for disabling
@@ -1047,7 +1047,7 @@ The following attributes are supported on most targets.
 
   .. index:: functions with non-null pointer arguments
 
-  The ``nonnull`` attribute may be applied to a function that takes at
+  The :option:`nonnull` attribute may be applied to a function that takes at
   least one argument of a pointer type.  It indicates that the referenced
   arguments must be non-null pointers.  For instance, the declaration:
 
@@ -1090,7 +1090,7 @@ The following attributes are supported on most targets.
     currently not be disabled other than by removing the nonnull
     attribute.
 
-  If no :samp:`{arg-index}` is given to the ``nonnull`` attribute,
+  If no :samp:`{arg-index}` is given to the :option:`nonnull` attribute,
   all pointer arguments are marked as non-null.  To illustrate, the
   following declaration is equivalent to the previous example:
 
@@ -1104,7 +1104,7 @@ The following attributes are supported on most targets.
 
   .. index:: noplt function attribute
 
-  The ``noplt`` attribute is the counterpart to option :option:`-fno-plt`.
+  The :option:`noplt` attribute is the counterpart to option :option:`-fno-plt`.
   Calls to functions marked with this attribute in position-independent code
   do not use the PLT.
 
@@ -1121,7 +1121,7 @@ The following attributes are supported on most targets.
       /* ... */
     }
 
-  The ``noplt`` attribute on function ``foo``
+  The :option:`noplt` attribute on function ``foo``
   tells the compiler to assume that
   the function ``foo`` is externally defined and that the call to
   ``foo`` must avoid the PLT
@@ -1139,7 +1139,7 @@ The following attributes are supported on most targets.
   A few standard library functions, such as ``abort`` and ``exit``,
   cannot return.  GCC knows this automatically.  Some programs define
   their own functions that never return.  You can declare them
-  ``noreturn`` to tell the compiler this fact.  For example,
+  :option:`noreturn` to tell the compiler this fact.  For example,
 
   .. code-block:: c++
 
@@ -1152,30 +1152,30 @@ The following attributes are supported on most targets.
       exit (1);
     }
 
-  The ``noreturn`` keyword tells the compiler to assume that
+  The :option:`noreturn` keyword tells the compiler to assume that
   ``fatal`` cannot return.  It can then optimize without regard to what
   would happen if ``fatal`` ever did return.  This makes slightly
   better code.  More importantly, it helps avoid spurious warnings of
   uninitialized variables.
 
-  The ``noreturn`` keyword does not affect the exceptional path when that
-  applies: a ``noreturn`` -marked function may still return to the caller
+  The :option:`noreturn` keyword does not affect the exceptional path when that
+  applies: a :option:`noreturn` -marked function may still return to the caller
   by throwing an exception or calling ``longjmp``.
 
   In order to preserve backtraces, GCC will never turn calls to
-  ``noreturn`` functions into tail calls.
+  :option:`noreturn` functions into tail calls.
 
   Do not assume that registers saved by the calling function are
-  restored before calling the ``noreturn`` function.
+  restored before calling the :option:`noreturn` function.
 
-  It does not make sense for a ``noreturn`` function to have a return
+  It does not make sense for a :option:`noreturn` function to have a return
   type other than ``void``.
 
 .. option:: nothrow
 
   .. index:: nothrow function attribute
 
-  The ``nothrow`` attribute is used to inform the compiler that a
+  The :option:`nothrow` attribute is used to inform the compiler that a
   function cannot throw an exception.  For example, most functions in
   the standard C library can be guaranteed not to throw an exception
   with the notable exceptions of ``qsort`` and ``bsearch`` that
@@ -1220,7 +1220,7 @@ The following attributes are supported on most targets.
   any means, padding the function entry with a number of NOPs can be
   used to provide a universal tool for instrumentation.
 
-  The ``patchable_function_entry`` function attribute can be used to
+  The :option:`patchable_function_entry` function attribute can be used to
   change the number of NOPs to any desired value.  The two-value syntax
   is the same as for the command-line switch
   :option:`-fpatchable-function-entry`:samp:`=N,M`, generating :samp:`{N}` NOPs, with
@@ -1243,12 +1243,12 @@ The following attributes are supported on most targets.
   Calls to functions that have no observable effects on the state of
   the program other than to return a value may lend themselves to optimizations
   such as common subexpression elimination.  Declaring such functions with
-  the ``pure`` attribute allows GCC to avoid emitting some calls in repeated
+  the :option:`pure` attribute allows GCC to avoid emitting some calls in repeated
   invocations of the function with the same argument values.
 
-  The ``pure`` attribute prohibits a function from modifying the state
+  The :option:`pure` attribute prohibits a function from modifying the state
   of the program that is observable by means other than inspecting
-  the function's return value.  However, functions declared with the ``pure``
+  the function's return value.  However, functions declared with the :option:`pure`
   attribute can safely read any non-volatile objects, and modify the value of
   objects in a way that does not affect their return value or the observable
   state of the program.
@@ -1276,11 +1276,11 @@ The following attributes are supported on most targets.
   consecutive calls (such as the standard C ``feof`` function in
   a multithreading environment).
 
-  The ``pure`` attribute imposes similar but looser restrictions on
-  a function's definition than the ``const`` attribute: ``pure``
+  The :option:`pure` attribute imposes similar but looser restrictions on
+  a function's definition than the ``const`` attribute: :option:`pure`
   allows the function to read any non-volatile memory, even if it changes
   in between successive invocations of the function.  Declaring the same
-  function with both the ``pure`` and the ``const`` attribute is
+  function with both the :option:`pure` and the ``const`` attribute is
   diagnosed.  Because a pure function cannot have any observable side
   effects it does not make sense for such a function to return ``void``.
   Declaring such a function is diagnosed.
@@ -1289,7 +1289,7 @@ The following attributes are supported on most targets.
 
   .. index:: returns_nonnull function attribute
 
-  The ``returns_nonnull`` attribute specifies that the function
+  The :option:`returns_nonnull` attribute specifies that the function
   return value should be a non-null pointer.  For instance, the declaration:
 
   .. code-block:: c++
@@ -1306,13 +1306,13 @@ The following attributes are supported on most targets.
 
   .. index:: functions that return more than once
 
-  The ``returns_twice`` attribute tells the compiler that a function may
+  The :option:`returns_twice` attribute tells the compiler that a function may
   return more than one time.  The compiler ensures that all registers
   are dead before calling such a function and emits a warning about
   the variables that may be clobbered after the second return from the
   function.  Examples of such functions are ``setjmp`` and ``vfork``.
   The ``longjmp`` -like counterpart of such function, if any, might need
-  to be marked with the ``noreturn`` attribute.
+  to be marked with the :option:`noreturn` attribute.
 
 .. option:: section ("section-name")
 
@@ -1530,7 +1530,7 @@ The following attributes are supported on most targets.
   from a ``target_clone`` caller will not lead to copying
   (target clone) of the called function.
   If you want to enforce such behaviour,
-  we recommend declaring the calling function with the ``flatten`` attribute?
+  we recommend declaring the calling function with the :option:`flatten` attribute?
 
 .. option:: unused
 
@@ -1673,7 +1673,7 @@ The following attributes are supported on most targets.
 
   .. index:: warn_unused_result function attribute
 
-  The ``warn_unused_result`` attribute causes a warning to be emitted
+  The :option:`warn_unused_result` attribute causes a warning to be emitted
   if a caller of the function with this attribute does not use its
   return value.  This is useful for functions where not checking
   the result is either a security problem or always a bug, such as
@@ -1695,7 +1695,7 @@ The following attributes are supported on most targets.
 
   .. index:: weak function attribute
 
-  The ``weak`` attribute causes a declaration of an external symbol
+  The :option:`weak` attribute causes a declaration of an external symbol
   to be emitted as a weak symbol rather than a global.  This is primarily
   useful in defining library functions that can be overridden in user code,
   though it can also be used with non-function declarations.  The overriding
@@ -1708,16 +1708,16 @@ The following attributes are supported on most targets.
 
   .. index:: weakref function attribute
 
-  The ``weakref`` attribute marks a declaration as a weak reference.
+  The :option:`weakref` attribute marks a declaration as a weak reference.
   Without arguments, it should be accompanied by an ``alias`` attribute
   naming the target symbol.  Alternatively, :samp:`{target}` may be given as
-  an argument to ``weakref`` itself, naming the target definition of
+  an argument to :option:`weakref` itself, naming the target definition of
   the alias.  The :samp:`{target}` must have the same type as the declaration.
   In addition, if it designates a variable it must also have the same size
   and alignment as the declaration.  In either form of the declaration
-  ``weakref`` implicitly marks the declared symbol as ``weak``.  Without
-  a :samp:`{target}` given as an argument to ``weakref`` or to ``alias``,
-  ``weakref`` is equivalent to ``weak`` (in that case the declaration
+  :option:`weakref` implicitly marks the declared symbol as :option:`weak`.  Without
+  a :samp:`{target}` given as an argument to :option:`weakref` or to ``alias``,
+  :option:`weakref` is equivalent to :option:`weak` (in that case the declaration
   may be ``extern``).
 
   .. code-block:: c++
@@ -1737,7 +1737,7 @@ The following attributes are supported on most targets.
 
   A weak reference is an alias that does not by itself require a
   definition to be given for the target symbol.  If the target symbol is
-  only referenced through weak references, then it becomes a ``weak``
+  only referenced through weak references, then it becomes a :option:`weak`
   undefined symbol.  If it is directly referenced, however, then such
   strong references prevail, and a definition is required for the
   symbol, not necessarily in the same translation unit.
@@ -1747,7 +1747,7 @@ The following attributes are supported on most targets.
   declaring it as weak, compiling the two separate translation units and
   performing a link with relocatable output (i.e. ``ld -r``) on them.
 
-  A declaration to which ``weakref`` is attached and that is associated
+  A declaration to which :option:`weakref` is attached and that is associated
   with a named ``target`` must be ``static``.
 
 .. option:: zero_call_used_regs ("choice")
@@ -1791,7 +1791,7 @@ The following attributes are supported on most targets.
   ``skip``
     doesn't zero any call-used register.
 
-  ``used``
+  :option:`used`
     only zeros call-used registers that are used in the function.
 
   ``used-gpr``

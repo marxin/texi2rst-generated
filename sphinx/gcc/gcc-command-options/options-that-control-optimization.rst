@@ -311,11 +311,11 @@ optimizations to be performed is desired.
 .. option:: -fno-inline
 
   Do not expand any functions inline apart from those marked with
-  the ``always_inline`` attribute.  This is the default when not
+  the :option:`always_inline` attribute.  This is the default when not
   optimizing.
 
   Single functions can be exempted from inlining by marking them
-  with the ``noinline`` attribute.
+  with the :option:`noinline` attribute.
 
 .. option:: -finline
 
@@ -365,7 +365,7 @@ optimizations to be performed is desired.
 
 .. option:: -fearly-inlining
 
-  Inline functions marked by ``always_inline`` and functions whose body seems
+  Inline functions marked by :option:`always_inline` and functions whose body seems
   smaller than the function call overhead early before doing
   :option:`-fprofile-generate` instrumentation and real inlining pass.  Doing so
   makes profiling significantly cheaper and usually inlining faster on programs
@@ -412,7 +412,7 @@ optimizations to be performed is desired.
 .. option:: -fno-keep-inline-dllexport
 
   This is a more fine-grained version of :option:`-fkeep-inline-functions`,
-  which applies only to functions that are declared using the ``dllexport``
+  which applies only to functions that are declared using the :option:`dllexport`
   attribute or declspec.  See :ref:`Declaring Attributes of
   Functions <function-attributes>`.
 
@@ -1196,7 +1196,7 @@ optimizations to be performed is desired.
 
   Perform interprocedural profile propagation.  The functions called only from
   cold functions are marked as cold. Also functions executed once (such as
-  ``cold``, ``noreturn``, static constructors or destructors) are
+  :option:`cold`, :option:`noreturn`, static constructors or destructors) are
   identified. Cold functions and loop less parts of functions executed once are
   then optimized for size.
   Enabled by default at :option:`-O1` and higher.
@@ -1321,7 +1321,7 @@ optimizations to be performed is desired.
 .. option:: -fisolate-erroneous-paths-attribute
 
   Detect paths that trigger erroneous or undefined behavior due to a null value
-  being used in a way forbidden by a ``returns_nonnull`` or ``nonnull``
+  being used in a way forbidden by a :option:`returns_nonnull` or :option:`nonnull`
   attribute.  Isolate those paths from the main control flow and turn the
   statement with erroneous or undefined behavior into a trap.  This is not
   currently enabled, but may be enabled by :option:`-O2` in the future.
@@ -1858,7 +1858,7 @@ optimizations to be performed is desired.
 
   This option isn't effective unless you either provide profile feedback
   (see :option:`-fprofile-arcs` for details) or manually annotate functions with 
-  ``hot`` or ``cold`` attributes (see :ref:`common-function-attributes`).
+  :option:`hot` or :option:`cold` attributes (see :ref:`common-function-attributes`).
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
@@ -2075,7 +2075,7 @@ optimizations to be performed is desired.
 
   Assume that the current compilation unit represents the whole program being
   compiled.  All public functions and variables with the exception of ``main``
-  and those merged by attribute ``externally_visible`` become static functions
+  and those merged by attribute :option:`externally_visible` become static functions
   and in effect are optimized more aggressively by interprocedural optimizers.
 
   This option should not be used in combination with :option:`-flto`.

@@ -653,7 +653,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   there.
 
   You can specify that an individual function is called with this calling
-  sequence with the function attribute ``stdcall``.  You can also
+  sequence with the function attribute :option:`stdcall`.  You can also
   override the :option:`-mrtd` option by using the function attribute
   ``cdecl``.  See :ref:`function-attributes`.
 
@@ -691,7 +691,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Use SSE register passing conventions for float and double arguments
   and return values.  You can control this behavior for a specific
-  function by using the function attribute ``sseregparm``.
+  function by using the function attribute :option:`sseregparm`.
   See :ref:`function-attributes`.
 
   .. warning::
@@ -733,7 +733,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   option generates an alternate prologue and epilogue that realigns the
   run-time stack if necessary.  This supports mixing legacy codes that keep
   4-byte stack alignment with modern codes that keep 16-byte stack alignment for
-  SSE compatibility.  See also the attribute ``force_align_arg_pointer``,
+  SSE compatibility.  See also the attribute :option:`force_align_arg_pointer`,
   applicable to individual functions.
 
 .. option:: -mpreferred-stack-boundary=num
@@ -1013,7 +1013,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`ms` for the Microsoft ABI.  The default is to use the Microsoft
   ABI when targeting Microsoft Windows and the SysV ABI on all other systems.
   You can control this behavior for specific functions by
-  using the function attributes ``ms_abi`` and ``sysv_abi``.
+  using the function attributes :option:`ms_abi` and ``sysv_abi``.
   See :ref:`function-attributes`.
 
 .. option:: -mforce-indirect-call
@@ -1024,7 +1024,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mmanual-endbr
 
-  Insert ENDBR instruction at function entry only via the ``cf_check``
+  Insert ENDBR instruction at function entry only via the :option:`cf_check`
   function attribute. This is useful when used with the option
   :option:`-fcf-protection`:samp:`=branch` to control ENDBR insertion at the
   function entry.
@@ -1078,7 +1078,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   Enable/disable bit-field layout compatible with the native Microsoft
   Windows compiler.
 
-  If ``packed`` is used on a structure, or if bit-fields are used,
+  If :option:`packed` is used on a structure, or if bit-fields are used,
   it may be that the Microsoft ABI lays out the structure differently
   than the way GCC normally does.  Particularly when moving packed
   data between functions compiled with GCC and the native Microsoft compiler
@@ -1102,7 +1102,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   * Every data object has an alignment requirement.  The alignment requirement
     for all data except structures, unions, and arrays is either the size of the
     object or the current packing size (specified with either the
-    ``aligned`` attribute or the ``pack`` pragma),
+    :option:`aligned` attribute or the ``pack`` pragma),
     whichever is less.  For structures, unions, and arrays,
     the alignment requirement is the largest alignment requirement of its members.
     Every object is allocated an offset so that:
@@ -1288,7 +1288,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   .. note::
 
-    On x86 architectures the attribute ``ms_hook_prologue``
+    On x86 architectures the attribute option:`ms_hook_prologue`
     isn't possible at the moment for :option:`-mfentry` and :option:`-pg`.
 
 .. option:: -mrecord-mcount, -mno-record-mcount

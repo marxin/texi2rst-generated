@@ -44,9 +44,9 @@ The Objective-C 2.0 language extensions and features are automatically
 enabled; they include properties (via the ``@property``,
 ``@synthesize`` and
 ``@dynamic keywords``), fast enumeration (not available in
-Objective-C++), attributes for methods (such as ``deprecated``,
-``noreturn``, ``sentinel``, ``format``),
-the ``unused`` attribute for method arguments, the
+Objective-C++), attributes for methods (such as :option:`deprecated`,
+:option:`noreturn`, :option:`sentinel`, ``format``),
+the :option:`unused` attribute for method arguments, the
 ``@package`` keyword for instance variables and the ``@optional`` and
 ``@required`` keywords in protocols.  You can disable all these
 Objective-C 2.0 language extensions with the option

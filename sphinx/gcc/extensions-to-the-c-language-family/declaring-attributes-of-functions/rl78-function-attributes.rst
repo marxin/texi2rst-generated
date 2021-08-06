@@ -21,7 +21,7 @@ These function attributes are supported by the RL78 back end:
   function entry and exit sequences suitable for use in an interrupt handler
   when this attribute is present.
 
-  Use ``brk_interrupt`` instead of ``interrupt`` for
+  Use ``brk_interrupt`` instead of :option:`interrupt` for
   handlers intended to be used with the ``BRK`` opcode (i.e. those
   that must end with ``RETB`` instead of ``RETI``).
 

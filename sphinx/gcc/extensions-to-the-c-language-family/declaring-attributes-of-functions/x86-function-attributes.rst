@@ -27,7 +27,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the ``fastcall`` attribute causes the compiler to
+  On x86-32 targets, the :option:`fastcall` attribute causes the compiler to
   pass the first argument (if of integral type) in the register ECX and
   the second argument (if of integral type) in the register EDX.  Subsequent
   and other typed arguments are passed on the stack.  The called function
@@ -40,13 +40,13 @@ These function attributes are supported by the x86 back end:
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the ``thiscall`` attribute causes the compiler to
+  On x86-32 targets, the :option:`thiscall` attribute causes the compiler to
   pass the first argument (if of integral type) in the register ECX.
   Subsequent and other typed arguments are passed on the stack. The called
   function pops the arguments off the stack.
   If the number of arguments is variable all arguments are pushed on the
   stack.
-  The ``thiscall`` attribute is intended for C++ non-static member functions.
+  The :option:`thiscall` attribute is intended for C++ non-static member functions.
   As a GCC extension, this calling convention can be used for C functions
   and for static member methods.
 
@@ -58,13 +58,13 @@ These function attributes are supported by the x86 back end:
 
   On 32-bit and 64-bit x86 targets, you can use an ABI attribute
   to indicate which calling convention should be used for a function.  The
-  ``ms_abi`` attribute tells the compiler to use the Microsoft ABI,
+  :option:`ms_abi` attribute tells the compiler to use the Microsoft ABI,
   while the ``sysv_abi`` attribute tells the compiler to use the System V
   ELF ABI, which is used on GNU/Linux and other systems.  The default is to use
   the Microsoft ABI when targeting Windows.  On all other systems, the default
   is the System V ELF ABI.
 
-  Note, the ``ms_abi`` attribute for Microsoft Windows 64-bit targets currently
+  Note, the :option:`ms_abi` attribute for Microsoft Windows 64-bit targets currently
   requires the :option:`-maccumulate-outgoing-args` option.
 
 .. option:: callee_pop_aggregate_return (number)
@@ -131,7 +131,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: sseregparm function attribute, x86
 
-  On x86-32 targets with SSE support, the ``sseregparm`` attribute
+  On x86-32 targets with SSE support, the :option:`sseregparm` attribute
   causes the compiler to pass up to 3 floating-point arguments in
   SSE registers instead of on the stack.  Functions that take a
   variable number of arguments continue to pass all of their
@@ -141,7 +141,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: force_align_arg_pointer function attribute, x86
 
-  On x86 targets, the ``force_align_arg_pointer`` attribute may be
+  On x86 targets, the :option:`force_align_arg_pointer` attribute may be
   applied to individual function definitions, generating an alternate
   prologue and epilogue that realigns the run-time stack if necessary.
   This supports mixing legacy codes that run with a 4-byte aligned stack
@@ -153,7 +153,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the ``stdcall`` attribute causes the compiler to
+  On x86-32 targets, the :option:`stdcall` attribute causes the compiler to
   assume that the called function pops off the stack space used to
   pass arguments, unless it takes a variable number of arguments.
 
@@ -168,7 +168,7 @@ These function attributes are supported by the x86 back end:
   exit sequences to save and restore any modified registers, except for
   the EFLAGS register.  Since GCC doesn't preserve SSE, MMX nor x87
   states, the GCC option :option:`-mgeneral-regs-only` should be used to
-  compile functions with ``no_caller_saved_registers`` attribute.
+  compile functions with :option:`no_caller_saved_registers` attribute.
 
 .. option:: interrupt
 
@@ -894,13 +894,13 @@ These function attributes are supported by the x86 back end:
 
   .. index:: nocf_check function attribute
 
-  The ``nocf_check`` attribute on a function is used to inform the
+  The :option:`nocf_check` attribute on a function is used to inform the
   compiler that the function's prologue should not be instrumented when
   compiled with the :option:`-fcf-protection`:samp:`=branch` option.  The
   compiler assumes that the function's address is a valid target for a
   control-flow transfer.
 
-  The ``nocf_check`` attribute on a type of pointer to function is
+  The :option:`nocf_check` attribute on a type of pointer to function is
   used to inform the compiler that a call through the pointer should
   not be instrumented when compiled with the
   :option:`-fcf-protection`:samp:`=branch` option.  The compiler assumes
@@ -909,11 +909,11 @@ These function attributes are supported by the x86 back end:
   name is assumed to be a safe call thus direct calls are not
   instrumented by the compiler.
 
-  The ``nocf_check`` attribute is applied to an object's type.
+  The :option:`nocf_check` attribute is applied to an object's type.
   In case of assignment of a function address or a function pointer to
   another pointer, the attribute is not carried over from the right-hand
   object's type; the type of left-hand object stays unchanged.  The
-  compiler checks for ``nocf_check`` attribute mismatch and reports
+  compiler checks for :option:`nocf_check` attribute mismatch and reports
   a warning in case of mismatch.
 
   .. code-block:: c++
@@ -953,7 +953,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: cf_check function attribute, x86
 
-  The ``cf_check`` attribute on a function is used to inform the
+  The :option:`cf_check` attribute on a function is used to inform the
   compiler that ENDBR instruction should be placed at the function
   entry when :option:`-fcf-protection`:samp:`=branch` is enabled.
 
@@ -961,7 +961,7 @@ These function attributes are supported by the x86 back end:
 
   .. index:: indirect_return function attribute, x86
 
-  The ``indirect_return`` attribute can be applied to a function,
+  The :option:`indirect_return` attribute can be applied to a function,
   as well as variable or type of function pointer to inform the
   compiler that the function may return via indirect branch.
 

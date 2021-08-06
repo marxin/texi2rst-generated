@@ -45,7 +45,7 @@ per-function basis.
 
   .. index:: strict-align function attribute, AArch64
 
-  ``strict-align`` indicates that the compiler should not assume that unaligned
+  :option:`strict-align` indicates that the compiler should not assume that unaligned
   memory references are handled by the system.  To allow the compiler to assume
   that aligned memory references are handled by the system, the inverse attribute
   ``no-strict-align`` can be specified.  The behavior is same as for the
@@ -100,7 +100,7 @@ per-function basis.
   Select the function scope on which return address signing will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
   :option:`-msign-return-address` =.  The default value is ``none``.  This
-  attribute is deprecated.  The ``branch-protection`` attribute should
+  attribute is deprecated.  The :option:`branch-protection` attribute should
   be used instead.
 
 .. option:: branch-protection
@@ -188,6 +188,5 @@ function compiled with :option:`-mstrict-align` is allowed.
 
 Note that CPU tuning options and attributes such as the :option:`-mcpu`,
 :option:`-mtune` do not inhibit inlining unless the CPU specified by the
-:option:`-mcpu` option or the ``cpu=`` attribute conflicts with the
+:option:`-mcpu` option or the option:`cpu=` attribute conflicts with the
 architectural feature rules specified above.
-

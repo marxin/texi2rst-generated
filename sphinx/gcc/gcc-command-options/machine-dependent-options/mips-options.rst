@@ -169,7 +169,7 @@ MIPS Options
   MIPS32 or MIPS64 architecture, it makes use of the MIPS16e ASE.
 
   MIPS16 code generation can also be controlled on a per-function basis
-  by means of ``mips16`` and ``nomips16`` attributes.
+  by means of :option:`mips16` and ``nomips16`` attributes.
   See :ref:`function-attributes`, for more information.
 
 .. option:: -mflip-mips16

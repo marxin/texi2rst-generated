@@ -87,10 +87,10 @@ These function attributes are supported by the MIPS back end:
 
   These attributes specify how a particular function is called on MIPS.
   The attributes override the :option:`-mlong-calls` (see :ref:`mips-options`)
-  command-line switch.  The ``long_call`` and ``far`` attributes are
+  command-line switch.  The :option:`long_call` and :option:`far` attributes are
   synonyms, and cause the compiler to always call
   the function by first loading its address into a register, and then using
-  the contents of that register.  The ``short_call`` and ``near``
+  the contents of that register.  The ``short_call`` and :option:`near`
   attributes are synonyms, and have the opposite
   effect; they specify that non-PIC calls should be made using the more
   efficient ``jal`` instruction.
@@ -101,9 +101,9 @@ These function attributes are supported by the MIPS back end:
 
   .. index:: nomips16 function attribute, MIPS
 
-  On MIPS targets, you can use the ``mips16`` and ``nomips16``
+  On MIPS targets, you can use the :option:`mips16` and ``nomips16``
   function attributes to locally select or turn off MIPS16 code generation.
-  A function with the ``mips16`` attribute is emitted as MIPS16 code,
+  A function with the :option:`mips16` attribute is emitted as MIPS16 code,
   while MIPS16 code generation is disabled for functions with the
   ``nomips16`` attribute.  These attributes override the
   :option:`-mips16` and :option:`-mno-mips16` options on the command line
@@ -140,7 +140,7 @@ These function attributes are supported by the MIPS back end:
 
   .. index:: nocompression function attribute, MIPS
 
-  On MIPS targets, you can use the ``nocompression`` function attribute
+  On MIPS targets, you can use the :option:`nocompression` function attribute
   to locally turn off MIPS16 and microMIPS code generation.  This attribute
   overrides the :option:`-mips16` and :option:`-mmicromips` options on the
   command line (see :ref:`mips-options`).
