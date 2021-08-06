@@ -1105,7 +1105,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   that expects some are validated and matched up to the provided number.
   The function returns ``true`` if all provided arguments match.  For
   example, the first call to the function below evaluates to ``true``
-  because ``x`` is declared with the ``aligned`` attribute but
+  because ``x`` is declared with the :option:`aligned` attribute but
   the second call evaluates to ``false`` because ``x`` is declared
   ``aligned (8)`` and not ``aligned (4)``.
 

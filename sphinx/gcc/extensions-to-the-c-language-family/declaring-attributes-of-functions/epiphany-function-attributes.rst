@@ -44,7 +44,7 @@ These function attributes are supported by the Epiphany back end:
 
     void __attribute__ ((interrupt ("dma0, dma1"))) universal_dma_handler ();
 
-  Permissible values for these parameters are: ``reset``,
+  Permissible values for these parameters are: :option:`reset`,
   ``software_exception``, ``page_miss``,
   ``timer0``, ``timer1``, ``message``,
   ``dma0``, ``dma1``, ``wand`` and ``swi``.
@@ -55,7 +55,7 @@ These function attributes are supported by the Epiphany back end:
   entirely, in which case no interrupt vector table entry is provided.
 
   Note that interrupts are enabled inside the function
-  unless the ``disinterrupt`` attribute is also specified.
+  unless the :option:`disinterrupt` attribute is also specified.
 
   The following examples are all valid uses of these attributes on
   Epiphany targets:

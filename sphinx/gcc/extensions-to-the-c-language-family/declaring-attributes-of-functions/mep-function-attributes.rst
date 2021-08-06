@@ -47,7 +47,7 @@ These function attributes are supported by the MeP back end:
 
   .. index:: vliw function attribute, MeP
 
-  The ``vliw`` attribute tells the compiler to emit
+  The :option:`vliw` attribute tells the compiler to emit
   instructions in VLIW mode instead of core mode.  Note that this
   attribute is not allowed unless a VLIW coprocessor has been configured
   and enabled through command-line options.

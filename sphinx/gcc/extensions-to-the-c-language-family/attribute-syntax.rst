@@ -44,7 +44,7 @@ each attribute is one of the following:
 * Empty.  Empty attributes are ignored.
 
 * An attribute name
-  (which may be an identifier such as ``unused``, or a reserved
+  (which may be an identifier such as :option:`unused`, or a reserved
   word such as ``const``).
 
 * An attribute name followed by a parenthesized list of
@@ -68,7 +68,7 @@ You may optionally specify attribute names with :samp:`__`
 preceding and following the name.
 This allows you to use them in header files without
 being concerned about a possible macro of the same name.  For example,
-you may use the attribute name ``__noreturn__`` instead of ``noreturn``.
+you may use the attribute name ``__noreturn__`` instead of :option:`noreturn`.
 
 Label Attributes
 ^^^^^^^^^^^^^^^^
@@ -171,7 +171,7 @@ example, in
       __attribute__((format(printf, 1, 2))) d1 (const char *, ...),
        d2 (void);
 
-the ``noreturn`` attribute applies to all the functions
+the :option:`noreturn` attribute applies to all the functions
 declared; the ``format`` attribute only applies to ``d1``.
 
 An attribute specifier list may appear immediately before the comma,

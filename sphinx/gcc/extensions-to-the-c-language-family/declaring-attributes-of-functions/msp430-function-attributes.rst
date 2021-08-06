@@ -16,12 +16,12 @@ These function attributes are supported by the MSP430 back end:
 
   Critical functions disable interrupts upon entry and restore the
   previous interrupt state upon exit.  Critical functions cannot also
-  have the ``naked``, ``reentrant`` or ``interrupt`` attributes.
+  have the :option:`naked`, :option:`reentrant` or :option:`interrupt` attributes.
 
   The MSP430 hardware ensures that interrupts are disabled on entry to
-  ``interrupt`` functions, and restores the previous interrupt state
-  on exit. The ``critical`` attribute is therefore redundant on
-  ``interrupt`` functions.
+  :option:`interrupt` functions, and restores the previous interrupt state
+  on exit. The :option:`critical` attribute is therefore redundant on
+  :option:`interrupt` functions.
 
 .. option:: interrupt
 
@@ -39,7 +39,7 @@ These function attributes are supported by the MSP430 back end:
   is treated as a symbolic name for the vector slot.  These names should
   match up with appropriate entries in the linker script.  By default
   the names ``watchdog`` for vector 26, ``nmi`` for vector 30 and
-  ``reset`` for vector 31 are recognized.
+  :option:`reset` for vector 31 are recognized.
 
 .. option:: naked
 
@@ -59,8 +59,8 @@ These function attributes are supported by the MSP430 back end:
   .. index:: reentrant function attribute, MSP430
 
   Reentrant functions disable interrupts upon entry and enable them
-  upon exit.  Reentrant functions cannot also have the ``naked``
-  or ``critical`` attributes.  They can have the ``interrupt``
+  upon exit.  Reentrant functions cannot also have the :option:`naked`
+  or :option:`critical` attributes.  They can have the :option:`interrupt`
   attribute.
 
 .. option:: wakeup
@@ -91,16 +91,16 @@ These function attributes are supported by the MSP430 back end:
   a ``.upper`` prefix.  So, for example, as well as placing the
   ``.data`` section, the script also specifies the placement of a
   ``.lower.data`` and a ``.upper.data`` section.  The intention
-  is that ``lower`` sections are placed into a small but easier to
+  is that :option:`lower` sections are placed into a small but easier to
   access memory region and the upper sections are placed into a larger, but
   slower to access, region.
 
   The ``either`` attribute is special.  It tells the linker to place
-  the object into the corresponding ``lower`` section if there is
+  the object into the corresponding :option:`lower` section if there is
   room for it.  If there is insufficient room then the object is placed
-  into the corresponding ``upper`` section instead.  Note that the
+  into the corresponding :option:`upper` section instead.  Note that the
   placement algorithm is not very sophisticated.  It does not attempt to
-  find an optimal packing of the ``lower`` sections.  It just makes
+  find an optimal packing of the :option:`lower` sections.  It just makes
   one pass over the objects and does the best that it can.  Using the
   :option:`-ffunction-sections` and :option:`-fdata-sections` command-line
   options can help the packing, however, since they produce smaller,

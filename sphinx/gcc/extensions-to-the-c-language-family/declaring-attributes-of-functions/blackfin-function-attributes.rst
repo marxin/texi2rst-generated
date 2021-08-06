@@ -36,8 +36,8 @@ These function attributes are supported by the Blackfin back end:
 
   .. index:: User stack pointer in interrupts on the Blackfin
 
-  When used together with ``interrupt_handler``, ``exception_handler``
-  or ``nmi_handler``, code is generated to load the stack pointer
+  When used together with :option:`interrupt_handler`, :option:`exception_handler`
+  or :option:`nmi_handler`, code is generated to load the stack pointer
   from the USP register in the function prologue.
 
 .. option:: l1_text
@@ -66,7 +66,7 @@ These function attributes are supported by the Blackfin back end:
 
   .. index:: shortcall function attribute, Blackfin
 
-  The ``longcall`` attribute
+  The :option:`longcall` attribute
   indicates that the function might be far away from the call site and
   require a different (more expensive) calling sequence.  The
   ``shortcall`` attribute indicates that the function is always close
@@ -79,8 +79,8 @@ These function attributes are supported by the Blackfin back end:
 
   .. index:: Allow nesting in an interrupt handler on the Blackfin processor
 
-  Use this attribute together with ``interrupt_handler``,
-  ``exception_handler`` or ``nmi_handler`` to indicate that the function
+  Use this attribute together with :option:`interrupt_handler`,
+  :option:`exception_handler` or :option:`nmi_handler` to indicate that the function
   entry code should enable nested interrupts or exceptions.
 
 .. option:: nmi_handler

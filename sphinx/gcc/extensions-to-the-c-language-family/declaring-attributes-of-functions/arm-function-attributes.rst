@@ -47,7 +47,7 @@ These function attributes are supported for ARM targets:
   .. index:: isr function attribute, ARM
 
   Use this attribute on ARM to write Interrupt Service Routines. This is an
-  alias to the ``interrupt`` attribute above.
+  alias to the :option:`interrupt` attribute above.
 
 .. option:: long_call
 
@@ -61,7 +61,7 @@ These function attributes are supported for ARM targets:
   These attributes override the
   :option:`-mlong-calls` (see :ref:`arm-options`)
   command-line switch and ``#pragma long_calls`` settings.  For ARM, the
-  ``long_call`` attribute indicates that the function might be far
+  :option:`long_call` attribute indicates that the function might be far
   away from the call site and require a different (more expensive)
   calling sequence.   The ``short_call`` attribute always places
   the offset to the function from the call site into the :samp:`BL`
@@ -84,7 +84,7 @@ These function attributes are supported for ARM targets:
 
   .. index:: pcs function attribute, ARM
 
-  The ``pcs`` attribute can be used to control the calling convention
+  The :option:`pcs` attribute can be used to control the calling convention
   used for a function on ARM.  The attribute takes an argument that specifies
   the calling convention to use.
 

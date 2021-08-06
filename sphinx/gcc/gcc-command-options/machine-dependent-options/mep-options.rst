@@ -95,7 +95,7 @@ MeP Options
 
 .. option:: -mio-volatile
 
-  Tells the compiler that any variable marked with the ``io``
+  Tells the compiler that any variable marked with the :option:`io`
   attribute is to be considered volatile.
 
 .. option:: -ml

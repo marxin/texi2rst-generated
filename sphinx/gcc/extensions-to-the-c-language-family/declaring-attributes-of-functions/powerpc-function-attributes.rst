@@ -18,7 +18,7 @@ These function attributes are supported by the PowerPC back end:
 
   .. index:: shortcall function attribute, PowerPC
 
-  The ``longcall`` attribute
+  The :option:`longcall` attribute
   indicates that the function might be far away from the call site and
   require a different (more expensive) calling sequence.  The
   ``shortcall`` attribute indicates that the function is always close

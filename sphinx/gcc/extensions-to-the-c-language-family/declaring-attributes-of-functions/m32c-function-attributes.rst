@@ -24,14 +24,14 @@ These function attributes are supported by the M32C back end:
 
   Use this attribute on the M32C port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
-  ``interrupt`` attribute, except that ``freit`` is used to return
+  :option:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
 .. option:: function_vector
 
   .. index:: function_vector function attribute, M16C/M32C
 
-  On M16C/M32C targets, the ``function_vector`` attribute declares a
+  On M16C/M32C targets, the :option:`function_vector` attribute declares a
   special page subroutine call function. Use of this attribute reduces
   the code size by 2 bytes for each call generated to the
   subroutine. The argument to the attribute is the vector number entry

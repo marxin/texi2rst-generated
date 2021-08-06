@@ -29,7 +29,7 @@ These function attributes are supported on MicroBlaze targets:
   Use this attribute to indicate that
   the specified function is a break handler.  The compiler generates function
   entry and exit sequences suitable for use in an break handler when this
-  attribute is present. The return from ``break_handler`` is done through
+  attribute is present. The return from :option:`break_handler` is done through
   the ``rtbd`` instead of ``rtsd``.
 
   .. code-block:: c++
@@ -43,8 +43,8 @@ These function attributes are supported on MicroBlaze targets:
   .. index:: fast_interrupt function attribute, MicroBlaze
 
   These attributes indicate that the specified function is an interrupt
-  handler.  Use the ``fast_interrupt`` attribute to indicate handlers
-  used in low-latency interrupt mode, and ``interrupt_handler`` for
+  handler.  Use the :option:`fast_interrupt` attribute to indicate handlers
+  used in low-latency interrupt mode, and :option:`interrupt_handler` for
   interrupts that do not use low-latency handlers.  In both cases, GCC
   emits appropriate prologue code and generates a return from the handler
   using ``rtid`` instead of ``rtsd``.

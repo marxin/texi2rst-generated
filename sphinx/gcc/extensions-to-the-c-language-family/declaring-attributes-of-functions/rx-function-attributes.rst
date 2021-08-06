@@ -16,7 +16,7 @@ These function attributes are supported by the RX back end:
 
   Use this attribute on the RX port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
-  ``interrupt`` attribute, except that ``freit`` is used to return
+  :option:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
 .. option:: interrupt
@@ -69,8 +69,8 @@ These function attributes are supported by the RX back end:
 
   .. index:: vector function attribute, RX
 
-  This RX attribute is similar to the ``interrupt`` attribute, including its
+  This RX attribute is similar to the :option:`interrupt` attribute, including its
   parameters, but does not make the function an interrupt-handler type
   function (i.e. it retains the normal C function calling ABI).  See the
-  ``interrupt`` attribute for a description of its arguments.
+  :option:`interrupt` attribute for a description of its arguments.
 

@@ -45,7 +45,7 @@ These function attributes are supported on the SH family of processors:
 
   .. index:: nosave_low_regs function attribute, SH
 
-  Use this attribute on SH targets to indicate that an ``interrupt_handler``
+  Use this attribute on SH targets to indicate that an :option:`interrupt_handler`
   function should not save and restore registers R0..R7.  This can be used on SH3\*
   and SH4\* targets that have a second R0..R7 register bank for non-reentrant
   interrupt handlers.
@@ -62,7 +62,7 @@ These function attributes are supported on the SH family of processors:
   .. index:: resbank function attribute, SH
 
   On the SH2A target, this attribute enables the high-speed register
-  saving and restoration using a register bank for ``interrupt_handler``
+  saving and restoration using a register bank for :option:`interrupt_handler`
   routines.  Saving to the bank is performed automatically after the CPU
   accepts an interrupt that uses a register bank.
 
@@ -76,7 +76,7 @@ These function attributes are supported on the SH family of processors:
 
   .. index:: sp_switch function attribute, SH
 
-  Use this attribute on the SH to indicate an ``interrupt_handler``
+  Use this attribute on the SH to indicate an :option:`interrupt_handler`
   function should switch to an alternate stack.  It expects a string
   argument that names a global variable holding the address of the
   alternate stack.
@@ -91,7 +91,7 @@ These function attributes are supported on the SH family of processors:
 
   .. index:: trap_exit function attribute, SH
 
-  Use this attribute on the SH for an ``interrupt_handler`` to return using
+  Use this attribute on the SH for an :option:`interrupt_handler` to return using
   ``trapa`` instead of ``rte``.  This attribute expects an integer
   argument specifying the trap number to be used.
 
@@ -99,6 +99,6 @@ These function attributes are supported on the SH family of processors:
 
   .. index:: trapa_handler function attribute, SH
 
-  On SH targets this function attribute is similar to ``interrupt_handler``
+  On SH targets this function attribute is similar to :option:`interrupt_handler`
   but it does not save and restore all registers.
 

@@ -30,7 +30,7 @@ mandated by the target ABI.
 
 If the operand of ``__alignof__`` is an lvalue rather than a type,
 its value is the required alignment for its type, taking into account
-any minimum alignment specified by attribute ``aligned``
+any minimum alignment specified by attribute :option:`aligned`
 (see :ref:`common-variable-attributes`).  For example, after this
 declaration:
 
@@ -45,5 +45,5 @@ than ``void``.
 
 If the operand of the ``__alignof__`` expression is a function,
 the expression evaluates to the alignment of the function which may
-be specified by attribute ``aligned`` (see :ref:`common-function-attributes`).
+be specified by attribute :option:`aligned` (see :ref:`common-function-attributes`).
 

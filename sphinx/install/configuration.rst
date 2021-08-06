@@ -1164,7 +1164,7 @@ corresponding :option:`--without` option.
       * is used for static linking, so no separate ``Static Archive
            Library`` file is needed
 
-  ``--with-aix-soname=both``
+  :option:`--with-aix-soname=both`
   .. option:: --with-aix-soname=svr4
 
     A (second) ``Shared Archive Library`` file is created:
@@ -1561,7 +1561,7 @@ corresponding :option:`--without` option.
   On little endian PowerPC Linux systems, if you explicitly set the
   ``long double`` type, it will build multilibs to allow you to
   select either ``long double`` format, unless you disable multilibs
-  with the ``--disable-multilib`` option.  At present,
+  with the :option:`--disable-multilib` option.  At present,
   ``long double`` multilibs are not built on big endian PowerPC Linux
   systems.  If you are building multilibs, you will need to configure
   the compiler using the :option:`--with-system-zlib` option.
@@ -1779,7 +1779,7 @@ corresponding :option:`--without` option.
 
   Enable building target run-time libraries with control-flow
   instrumentation, see :option:`-fcf-protection` option.  When
-  ``--enable-cet`` is specified target libraries are configured
+  :option:`--enable-cet` is specified target libraries are configured
   to add :option:`-fcf-protection` and, if needed, other target
   specific options to a set of building options.
 
