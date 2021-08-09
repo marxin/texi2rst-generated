@@ -942,12 +942,16 @@ Here are several miscellaneous parameters.
 
 .. function:: machine_mode TARGET_PREFERRED_DOLOOP_MODE (machine_mode mode)
 
+   .. hook-start:TARGET_PREFERRED_DOLOOP_MODE
+
   This hook takes a :samp:`{mode}` for a doloop IV, where ``mode`` is the
   original mode for the operation.  If the target prefers an alternate
   ``mode`` for the operation, then this hook should return that mode;
   otherwise the original ``mode`` should be returned.  For example, on a
   64-bit target, ``DImode`` might be preferred over ``SImode``.  Both the
   original and the returned modes should be ``MODE_INT``.
+
+.. hook-end
 
 .. function:: bool TARGET_LEGITIMATE_COMBINED_INSN (rtx_insn *insn)
 
@@ -1128,10 +1132,14 @@ Here are several miscellaneous parameters.
 
 .. function:: rtx TARGET_GEN_MEMSET_SCRATCH_RTX (machine_mode mode)
 
+  .. hook-start:TARGET_GEN_MEMSET_SCRATCH_RTX
+
   This hook should return an rtx for a scratch register in :samp:`{mode}` to
   be used when expanding memset calls.  The backend can use a hard scratch
   register to avoid stack realignment when expanding memset.  The default
   is ``gen_reg_rtx``.
+
+.. hook-end
 
 .. function:: unsigned TARGET_LOOP_UNROLL_ADJUST (unsigned nunroll, class loop *loop)
 
