@@ -829,3 +829,12 @@ This is about addressing modes.
 
 .. hook-end
 
+.. function:: tree TARGET_GOACC_CREATE_WORKER_BROADCAST_RECORD (tree rec, bool sender, const char *name)
+
+  Create a record used to propagate local-variable state from an active
+  worker to other workers.  A possible implementation might adjust the type
+  of REC to place the new variable in shared GPU memory.
+
+  Presence of this target hook indicates that middle end neutering/broadcasting
+  be used.
+
