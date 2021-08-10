@@ -48,10 +48,9 @@ there are three things you need to do:
   The file will be called :samp:`gt-{path}.h` where :samp:`{path}` is the
   pathname relative to the :samp:`gcc` directory with slashes replaced by
   -, so for example the header file to be included in
-  :samp:`cp/parser.c` is called :samp:`gt-cp-parser.c`.  The
+  :samp:`cp/parser.c` is called :samp:`gt-cp-parser.h`.  The
   generated header file should be included after everything else in the
-  source file.  Don't forget to mention this file as a dependency in the
-  :samp:`Makefile`!
+  source file.
 
 For language frontends, there is another file that needs to be included
 somewhere.  It will be called :samp:`gtype-{lang}.h`, where
