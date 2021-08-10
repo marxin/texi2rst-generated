@@ -10,7 +10,7 @@ C-SKY Function Attributes
 
 These function attributes are supported by the C-SKY back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, C-SKY
 
@@ -25,7 +25,7 @@ These function attributes are supported by the C-SKY back end:
   to enable support for the necessary interrupt stack instructions.  They
   are ignored with a warning otherwise.  See :ref:`c-sky-options`.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, C-SKY
 

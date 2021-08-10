@@ -10,7 +10,7 @@ IA-64 Function Attributes
 
 These function attributes are supported on IA-64 targets:
 
-.. option:: syscall_linkage
+.. gcc-attr:: syscall_linkage
 
   .. index:: syscall_linkage function attribute, IA-64
 
@@ -20,7 +20,7 @@ These function attributes are supported on IA-64 targets:
   the input registers.  This also prevents kernel data from leaking into
   application code.
 
-.. option:: version_id
+.. gcc-attr:: version_id
 
   .. index:: version_id function attribute, IA-64
 

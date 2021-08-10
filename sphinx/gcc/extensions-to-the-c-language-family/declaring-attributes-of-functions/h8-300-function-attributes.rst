@@ -10,7 +10,7 @@ H8/300 Function Attributes
 
 These function attributes are available for H8/300 targets:
 
-.. option:: function_vector
+.. gcc-attr:: function_vector
 
   .. index:: function_vector function attribute, H8/300
 
@@ -21,7 +21,7 @@ These function attributes are available for H8/300 targets:
   and 64 entries on the H8/300H and H8S)
   and shares space with the interrupt vector.
 
-.. option:: interrupt_handler
+.. gcc-attr:: interrupt_handler
 
   .. index:: interrupt_handler function attribute, H8/300
 
@@ -30,7 +30,7 @@ These function attributes are available for H8/300 targets:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. option:: saveall
+.. gcc-attr:: saveall
 
   .. index:: saveall function attribute, H8/300
 

@@ -10,7 +10,7 @@ Blackfin Function Attributes
 
 These function attributes are supported by the Blackfin back end:
 
-.. option:: exception_handler
+.. gcc-attr:: exception_handler
 
   .. index:: exception_handler function attribute
 
@@ -21,7 +21,7 @@ These function attributes are supported by the Blackfin back end:
   exit sequences suitable for use in an exception handler when this
   attribute is present.
 
-.. option:: interrupt_handler
+.. gcc-attr:: interrupt_handler
 
   .. index:: interrupt_handler function attribute, Blackfin
 
@@ -30,17 +30,17 @@ These function attributes are supported by the Blackfin back end:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. option:: kspisusp
+.. gcc-attr:: kspisusp
 
   .. index:: kspisusp function attribute, Blackfin
 
   .. index:: User stack pointer in interrupts on the Blackfin
 
-  When used together with :option:`interrupt_handler`, :option:`exception_handler`
-  or :option:`nmi_handler`, code is generated to load the stack pointer
+  When used together with :gcc-attr:`interrupt_handler`, :gcc-attr:`exception_handler`
+  or :gcc-attr:`nmi_handler`, code is generated to load the stack pointer
   from the USP register in the function prologue.
 
-.. option:: l1_text
+.. gcc-attr:: l1_text
 
   .. index:: l1_text function attribute, Blackfin
 
@@ -49,7 +49,7 @@ These function attributes are supported by the Blackfin back end:
   With :option:`-mfdpic`, function calls with a such function as the callee
   or caller uses inlined PLT.
 
-.. option:: l2
+.. gcc-attr:: l2
 
   .. index:: l2 function attribute, Blackfin
 
@@ -58,7 +58,7 @@ These function attributes are supported by the Blackfin back end:
   ``.l2.text``. With :option:`-mfdpic`, callers of such functions use
   an inlined PLT.
 
-.. option:: longcall
+.. gcc-attr:: longcall
 
   .. index:: indirect calls, Blackfin
 
@@ -66,24 +66,24 @@ These function attributes are supported by the Blackfin back end:
 
   .. index:: shortcall function attribute, Blackfin
 
-  The :option:`longcall` attribute
+  The :gcc-attr:`longcall` attribute
   indicates that the function might be far away from the call site and
   require a different (more expensive) calling sequence.  The
   ``shortcall`` attribute indicates that the function is always close
   enough for the shorter calling sequence to be used.  These attributes
   override the :option:`-mlongcall` switch.
 
-.. option:: nesting
+.. gcc-attr:: nesting
 
   .. index:: nesting function attribute, Blackfin
 
   .. index:: Allow nesting in an interrupt handler on the Blackfin processor
 
-  Use this attribute together with :option:`interrupt_handler`,
-  :option:`exception_handler` or :option:`nmi_handler` to indicate that the function
+  Use this attribute together with :gcc-attr:`interrupt_handler`,
+  :gcc-attr:`exception_handler` or :gcc-attr:`nmi_handler` to indicate that the function
   entry code should enable nested interrupts or exceptions.
 
-.. option:: nmi_handler
+.. gcc-attr:: nmi_handler
 
   .. index:: nmi_handler function attribute, Blackfin
 
@@ -94,7 +94,7 @@ These function attributes are supported by the Blackfin back end:
   exit sequences suitable for use in an NMI handler when this
   attribute is present.
 
-.. option:: saveall
+.. gcc-attr:: saveall
 
   .. index:: saveall function attribute, Blackfin
 

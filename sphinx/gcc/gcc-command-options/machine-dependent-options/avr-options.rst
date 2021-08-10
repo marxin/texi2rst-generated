@@ -116,7 +116,7 @@ These options are defined for AVR implementations:
 
   Assume that all data in static storage can be accessed by LDS / STS
   instructions.  This option has only an effect on reduced Tiny devices like
-  ATtiny40.  See also the :option:`absdata`
+  ATtiny40.  See also the :gcc-attr:`absdata`
   AVR Variable Attributesvariable attribute.
 
 .. option:: -maccumulate-args
@@ -160,7 +160,7 @@ These options are defined for AVR implementations:
   Interrupt service routines (ISRs) may use the ``__gcc_isr`` pseudo
   instruction supported by GNU Binutils.
   If this option is on, the feature can still be disabled for individual
-  ISRs by means of the AVR Function Attributes:option:`no_gccisr`
+  ISRs by means of the AVR Function Attributes:gcc-attr:`no_gccisr`
   function attribute.  This feature is activated per default
   if optimization is on (but not with :option:`-Og`, see :ref:`optimize-options`),
   and if GNU Binutils support `PR21683 <https://sourceware.org/PR21683>`_.
@@ -609,7 +609,7 @@ AVR Named Address Spaces and AVR Built-in Functions.
   description file, and is currently available for
   ``avrtiny`` and ``avrxmega3``.  Even more convenient,
   there is no need to use address spaces like ``__flash`` or
-  features like attribute :option:`progmem` and ``pgm_read_*``.
+  features like attribute :gcc-attr:`progmem` and ``pgm_read_*``.
 
 ``__WITH_AVRLIBC__``
   The compiler is configured to be used together with AVR-Libc.

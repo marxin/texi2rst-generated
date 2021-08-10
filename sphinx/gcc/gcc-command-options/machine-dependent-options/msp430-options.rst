@@ -160,9 +160,9 @@ These options are defined for the MSP430:
 .. option:: -mcode-region=
 
   These options tell the compiler where to place functions and data that
-  do not have one of the :option:`lower`, :option:`upper`, ``either`` or
-  ``section`` attributes.  Possible values are :option:`lower`,
-  :option:`upper`, ``either`` or ``any``.  The first three behave
+  do not have one of the :gcc-attr:`lower`, :gcc-attr:`upper`, ``either`` or
+  ``section`` attributes.  Possible values are :gcc-attr:`lower`,
+  :gcc-attr:`upper`, ``either`` or ``any``.  The first three behave
   like the corresponding attribute.  The fourth possible value -
   ``any`` - is the default.  It leaves placement entirely up to the
   linker script and how it assigns the standard sections

@@ -363,7 +363,7 @@ warn at all unless optimization is enabled.
 
     The mangling was changed in :option:`-fabi-version`:samp:`=4`.
 
-  * ``__attribute ((const))`` and :option:`noreturn` were mangled as type
+  * ``__attribute ((const))`` and :gcc-attr:`noreturn` were mangled as type
     qualifiers, and ``decltype`` of a plain declaration was folded away.
 
     These mangling issues were fixed in :option:`-fabi-version`:samp:`=5`.
@@ -766,7 +766,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wnonnull
 
   Warn about passing a null pointer for arguments marked as
-  requiring a non-null value by the :option:`nonnull` function attribute.
+  requiring a non-null value by the :gcc-attr:`nonnull` function attribute.
 
   :option:`-Wnonnull` is included in :option:`-Wall` and :option:`-Wformat`.  It
   can be disabled with the :option:`-Wno-nonnull` option.
@@ -777,7 +777,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wnonnull-compare
 
-  Warn when comparing an argument marked with the :option:`nonnull`
+  Warn when comparing an argument marked with the :gcc-attr:`nonnull`
   function attribute against null inside the function.
 
   :option:`-Wnonnull-compare` is included in :option:`-Wall`.  It
@@ -1117,18 +1117,18 @@ warn at all unless optimization is enabled.
   issued when the alias is more restrictive than the target, which could
   lead to incorrect code generation.
   Attributes considered include ``alloc_align``, ``alloc_size``,
-  :option:`cold`, ``const``, :option:`hot`, :option:`leaf`, ``malloc``,
-  :option:`nonnull`, :option:`noreturn`, :option:`nothrow`, :option:`pure`,
-  :option:`returns_nonnull`, and :option:`returns_twice`.
+  :gcc-attr:`cold`, ``const``, :gcc-attr:`hot`, :gcc-attr:`leaf`, ``malloc``,
+  :gcc-attr:`nonnull`, :gcc-attr:`noreturn`, :gcc-attr:`nothrow`, :gcc-attr:`pure`,
+  :gcc-attr:`returns_nonnull`, and :gcc-attr:`returns_twice`.
 
   In C++, the warning is issued when an explicit specialization of a primary
   template declared with attribute ``alloc_align``, ``alloc_size``,
   ``assume_aligned``, ``format``, ``format_arg``, ``malloc``,
-  or :option:`nonnull` is declared without it.  Attributes :option:`deprecated`,
+  or :gcc-attr:`nonnull` is declared without it.  Attributes :gcc-attr:`deprecated`,
   ``error``, and ``warning`` suppress the warning.
   (see :ref:`function-attributes`).
 
-  You can use the :option:`copy` attribute to apply the same
+  You can use the :gcc-attr:`copy` attribute to apply the same
   set of attributes to a declaration as that on another declaration without
   explicitly enumerating the attributes. This attribute can be applied
   to declarations of functions (see :ref:`common-function-attributes`),
@@ -1569,7 +1569,7 @@ warn at all unless optimization is enabled.
   Warn whenever a function parameter is assigned to, but otherwise unused
   (aside from its declaration).
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   This warning is also enabled by :option:`-Wunused` together with
@@ -1585,7 +1585,7 @@ warn at all unless optimization is enabled.
   (aside from its declaration).
   This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   This warning is also enabled by :option:`-Wunused`, which is enabled
@@ -1610,7 +1610,7 @@ warn at all unless optimization is enabled.
   Warn whenever a label is declared but not used.
   This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-label
@@ -1634,7 +1634,7 @@ warn at all unless optimization is enabled.
 
   Warn whenever a function parameter is unused aside from its declaration.
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-parameter
@@ -1644,7 +1644,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-unused-result
 
   Do not warn if a caller of a function marked with attribute
-  :option:`warn_unused_result` (see :ref:`function-attributes`) does not use
+  :gcc-attr:`warn_unused_result` (see :ref:`function-attributes`) does not use
   its return value. The default is :option:`-Wunused-result`.
 
 .. option:: -Wunused-result
@@ -1657,7 +1657,7 @@ warn at all unless optimization is enabled.
   declaration. This option implies :option:`-Wunused-const-variable`:samp:`=1` for C,
   but not for C++. This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-variable
@@ -1671,7 +1671,7 @@ warn at all unless optimization is enabled.
   for C, but not for C++. In C this declares variable storage, but in C++ this
   is not an error since const variables take the place of ``#define`` s.
 
-  To suppress this warning use the :option:`unused` attribute
+  To suppress this warning use the :gcc-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   ``-Wunused-const-variable=1``
@@ -1827,7 +1827,7 @@ warn at all unless optimization is enabled.
   in fact be called at the place that would cause a problem.
 
   Some spurious warnings can be avoided if you declare all the functions
-  you use that never return as :option:`noreturn`.  See :ref:`function-attributes`.
+  you use that never return as :gcc-attr:`noreturn`.  See :ref:`function-attributes`.
 
   This warning is enabled by :option:`-Wall` or :option:`-Wextra`.
 
@@ -2148,7 +2148,7 @@ warn at all unless optimization is enabled.
 
   In situations where a character array is intended to store a sequence
   of bytes with no terminating ``NUL`` such an array may be annotated
-  with attribute :option:`nonstring` to avoid this warning.  Such arrays,
+  with attribute :gcc-attr:`nonstring` to avoid this warning.  Such arrays,
   however, are not suitable arguments to functions that expect
   ``NUL`` -terminated strings.  To help detect accidental misuses of
   such arrays GCC issues warnings unless it can prove that the use is
@@ -2166,9 +2166,9 @@ warn at all unless optimization is enabled.
   .. option:: -Wsuggest-attribute=pure, -Wno-suggest-attribute=pure, -Wno-suggest-attribute=const, -Wno-suggest-attribute=noreturn, -Wno-missing-noreturn, -Wno-suggest-attribute=malloc
 
     Warn about functions that might be candidates for attributes
-    :option:`pure`, ``const`` or :option:`noreturn` or ``malloc``. The compiler
+    :gcc-attr:`pure`, ``const`` or :gcc-attr:`noreturn` or ``malloc``. The compiler
     only warns for functions visible in other compilation units or (in the case of
-    :option:`pure` and ``const``) if it cannot prove that the function returns
+    :gcc-attr:`pure` and ``const``) if it cannot prove that the function returns
     normally. A function returns normally if it doesn't contain an infinite loop or
     return abnormally by throwing, calling ``abort`` or trapping.  This analysis
     requires option :option:`-fipa-pure-const`, which is enabled by default at
@@ -2197,9 +2197,9 @@ warn at all unless optimization is enabled.
 
   .. option:: -Wsuggest-attribute=cold
 
-    Warn about functions that might be candidates for :option:`cold` attribute.  This
+    Warn about functions that might be candidates for :gcc-attr:`cold` attribute.  This
     is based on static detection and generally only warns about functions which
-    always leads to a call to another :option:`cold` function such as wrappers of
+    always leads to a call to another :gcc-attr:`cold` function such as wrappers of
     C++ ``throw`` or fatal error reporting functions leading to ``abort``.
 
   .. option:: -Wno-suggest-attribute=cold
@@ -2430,9 +2430,9 @@ warn at all unless optimization is enabled.
     restrictive than the target, rather than more restrictive.
 
     Attributes considered include ``alloc_align``, ``alloc_size``,
-    :option:`cold`, ``const``, :option:`hot`, :option:`leaf`, ``malloc``,
-    :option:`nonnull`, :option:`noreturn`, :option:`nothrow`, :option:`pure`,
-    :option:`returns_nonnull`, and :option:`returns_twice`.
+    :gcc-attr:`cold`, ``const``, :gcc-attr:`hot`, :gcc-attr:`leaf`, ``malloc``,
+    :gcc-attr:`nonnull`, :gcc-attr:`noreturn`, :gcc-attr:`nothrow`, :gcc-attr:`pure`,
+    :gcc-attr:`returns_nonnull`, and :gcc-attr:`returns_twice`.
 
     :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias`:samp:`=1`.
   This is the default.  You can disable these warnings with either
@@ -4019,7 +4019,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-deprecated-declarations
 
   Do not warn about uses of functions (see :ref:`function-attributes`),
-  variables (see :ref:`variable-attributes`), and types (see :ref:`type-attributes`) marked as deprecated by using the :option:`deprecated`
+  variables (see :ref:`variable-attributes`), and types (see :ref:`type-attributes`) marked as deprecated by using the :gcc-attr:`deprecated`
   attribute.
 
 .. option:: -Wdeprecated-declarations
@@ -4121,7 +4121,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wnopacked-bitfield-compat
 
-  The 4.1, 4.2 and 4.3 series of GCC ignore the :option:`packed` attribute
+  The 4.1, 4.2 and 4.3 series of GCC ignore the :gcc-attr:`packed` attribute
   on bit-fields of type ``char``.  This was fixed in GCC 4.4 but
   the change can lead to differences in the structure layout.  GCC
   informs you when the offset of such a field has changed in GCC 4.4.
@@ -4504,7 +4504,7 @@ warn at all unless optimization is enabled.
     C and Objective-C only
 
   Suppress warnings when a positional initializer is used to initialize
-  a structure that has been marked with the :option:`designated_init`
+  a structure that has been marked with the :gcc-attr:`designated_init`
   attribute.
 
 .. option:: -Wdesignated-init

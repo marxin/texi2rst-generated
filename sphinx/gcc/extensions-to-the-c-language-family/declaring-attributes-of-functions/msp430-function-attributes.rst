@@ -10,20 +10,20 @@ MSP430 Function Attributes
 
 These function attributes are supported by the MSP430 back end:
 
-.. option:: critical
+.. gcc-attr:: critical
 
   .. index:: critical function attribute, MSP430
 
   Critical functions disable interrupts upon entry and restore the
   previous interrupt state upon exit.  Critical functions cannot also
-  have the :option:`naked`, :option:`reentrant` or :option:`interrupt` attributes.
+  have the :gcc-attr:`naked`, :gcc-attr:`reentrant` or :gcc-attr:`interrupt` attributes.
 
   The MSP430 hardware ensures that interrupts are disabled on entry to
-  :option:`interrupt` functions, and restores the previous interrupt state
-  on exit. The :option:`critical` attribute is therefore redundant on
-  :option:`interrupt` functions.
+  :gcc-attr:`interrupt` functions, and restores the previous interrupt state
+  on exit. The :gcc-attr:`critical` attribute is therefore redundant on
+  :gcc-attr:`interrupt` functions.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, MSP430
 
@@ -39,9 +39,9 @@ These function attributes are supported by the MSP430 back end:
   is treated as a symbolic name for the vector slot.  These names should
   match up with appropriate entries in the linker script.  By default
   the names ``watchdog`` for vector 26, ``nmi`` for vector 30 and
-  :option:`reset` for vector 31 are recognized.
+  :gcc-attr:`reset` for vector 31 are recognized.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, MSP430
 
@@ -54,16 +54,16 @@ These function attributes are supported by the MSP430 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. option:: reentrant
+.. gcc-attr:: reentrant
 
   .. index:: reentrant function attribute, MSP430
 
   Reentrant functions disable interrupts upon entry and enable them
-  upon exit.  Reentrant functions cannot also have the :option:`naked`
-  or :option:`critical` attributes.  They can have the :option:`interrupt`
+  upon exit.  Reentrant functions cannot also have the :gcc-attr:`naked`
+  or :gcc-attr:`critical` attributes.  They can have the :gcc-attr:`interrupt`
   attribute.
 
-.. option:: wakeup
+.. gcc-attr:: wakeup
 
   .. index:: wakeup function attribute, MSP430
 
@@ -72,7 +72,7 @@ These function attributes are supported by the MSP430 back end:
   function will rouse the processor from any low-power state that it
   might be in when the function exits.
 
-.. option:: lower
+.. gcc-attr:: lower
 
   .. index:: lower function attribute, MSP430
 
@@ -91,16 +91,16 @@ These function attributes are supported by the MSP430 back end:
   a ``.upper`` prefix.  So, for example, as well as placing the
   ``.data`` section, the script also specifies the placement of a
   ``.lower.data`` and a ``.upper.data`` section.  The intention
-  is that :option:`lower` sections are placed into a small but easier to
+  is that :gcc-attr:`lower` sections are placed into a small but easier to
   access memory region and the upper sections are placed into a larger, but
   slower to access, region.
 
   The ``either`` attribute is special.  It tells the linker to place
-  the object into the corresponding :option:`lower` section if there is
+  the object into the corresponding :gcc-attr:`lower` section if there is
   room for it.  If there is insufficient room then the object is placed
-  into the corresponding :option:`upper` section instead.  Note that the
+  into the corresponding :gcc-attr:`upper` section instead.  Note that the
   placement algorithm is not very sophisticated.  It does not attempt to
-  find an optimal packing of the :option:`lower` sections.  It just makes
+  find an optimal packing of the :gcc-attr:`lower` sections.  It just makes
   one pass over the objects and does the best that it can.  Using the
   :option:`-ffunction-sections` and :option:`-fdata-sections` command-line
   options can help the packing, however, since they produce smaller,

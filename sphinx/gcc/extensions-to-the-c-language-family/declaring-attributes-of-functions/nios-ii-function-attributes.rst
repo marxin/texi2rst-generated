@@ -10,7 +10,7 @@ Nios II Function Attributes
 
 These function attributes are supported by the Nios II back end:
 
-.. option:: target (options)
+.. gcc-attr:: target (options)
 
   .. index:: target function attribute
 

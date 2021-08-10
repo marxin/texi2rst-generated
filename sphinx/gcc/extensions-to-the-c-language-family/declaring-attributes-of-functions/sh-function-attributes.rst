@@ -10,7 +10,7 @@ SH Function Attributes
 
 These function attributes are supported on the SH family of processors:
 
-.. option:: function_vector
+.. gcc-attr:: function_vector
 
   .. index:: function_vector function attribute, SH
 
@@ -32,7 +32,7 @@ These function attributes are supported on the SH family of processors:
   made to the same function, it saves 2 bytes of code per each of these
   calls.
 
-.. option:: interrupt_handler
+.. gcc-attr:: interrupt_handler
 
   .. index:: interrupt_handler function attribute, SH
 
@@ -41,28 +41,28 @@ These function attributes are supported on the SH family of processors:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. option:: nosave_low_regs
+.. gcc-attr:: nosave_low_regs
 
   .. index:: nosave_low_regs function attribute, SH
 
-  Use this attribute on SH targets to indicate that an :option:`interrupt_handler`
+  Use this attribute on SH targets to indicate that an :gcc-attr:`interrupt_handler`
   function should not save and restore registers R0..R7.  This can be used on SH3\*
   and SH4\* targets that have a second R0..R7 register bank for non-reentrant
   interrupt handlers.
 
-.. option:: renesas
+.. gcc-attr:: renesas
 
   .. index:: renesas function attribute, SH
 
   On SH targets this attribute specifies that the function or struct follows the
   Renesas ABI.
 
-.. option:: resbank
+.. gcc-attr:: resbank
 
   .. index:: resbank function attribute, SH
 
   On the SH2A target, this attribute enables the high-speed register
-  saving and restoration using a register bank for :option:`interrupt_handler`
+  saving and restoration using a register bank for :gcc-attr:`interrupt_handler`
   routines.  Saving to the bank is performed automatically after the CPU
   accepts an interrupt that uses a register bank.
 
@@ -72,11 +72,11 @@ These function attributes are supported on the SH family of processors:
   banks are stacked in first-in last-out (FILO) sequence.  Restoration
   from the bank is executed by issuing a RESBANK instruction.
 
-.. option:: sp_switch
+.. gcc-attr:: sp_switch
 
   .. index:: sp_switch function attribute, SH
 
-  Use this attribute on the SH to indicate an :option:`interrupt_handler`
+  Use this attribute on the SH to indicate an :gcc-attr:`interrupt_handler`
   function should switch to an alternate stack.  It expects a string
   argument that names a global variable holding the address of the
   alternate stack.
@@ -87,18 +87,18 @@ These function attributes are supported on the SH family of processors:
     void f () __attribute__ ((interrupt_handler,
                               sp_switch ("alt_stack")));
 
-.. option:: trap_exit
+.. gcc-attr:: trap_exit
 
   .. index:: trap_exit function attribute, SH
 
-  Use this attribute on the SH for an :option:`interrupt_handler` to return using
+  Use this attribute on the SH for an :gcc-attr:`interrupt_handler` to return using
   ``trapa`` instead of ``rte``.  This attribute expects an integer
   argument specifying the trap number to be used.
 
-.. option:: trapa_handler
+.. gcc-attr:: trapa_handler
 
   .. index:: trapa_handler function attribute, SH
 
-  On SH targets this function attribute is similar to :option:`interrupt_handler`
+  On SH targets this function attribute is similar to :gcc-attr:`interrupt_handler`
   but it does not save and restore all registers.
 

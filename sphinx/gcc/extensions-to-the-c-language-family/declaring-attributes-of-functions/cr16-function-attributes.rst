@@ -10,7 +10,7 @@ CR16 Function Attributes
 
 These function attributes are supported by the CR16 back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, CR16
 

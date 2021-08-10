@@ -54,7 +54,7 @@ Common Variable Attributes
 
 The following attributes are supported on most targets.
 
-.. option:: alias ("target")
+.. gcc-attr:: alias ("target")
 
   .. index:: alias variable attribute
 
@@ -83,9 +83,9 @@ The following attributes are supported on most targets.
 
   .. index:: aligned variable attribute
 
-.. option:: aligned
+.. gcc-attr:: aligned
 
-  The :option:`aligned` attribute specifies a minimum alignment for the variable
+  The :gcc-attr:`aligned` attribute specifies a minimum alignment for the variable
   or structure field, measured in bytes.  When specified, :samp:`{alignment}` must
   be an integer constant power of 2.  Specifying no :samp:`{alignment}` argument
   implies the maximum alignment for the target, which is often, but by no
@@ -137,13 +137,13 @@ The following attributes are supported on most targets.
   aligned this way.  Note that the value of ``__BIGGEST_ALIGNMENT__``
   may change depending on command-line options.
 
-  When used on a struct, or struct member, the :option:`aligned` attribute can
-  only increase the alignment; in order to decrease it, the :option:`packed`
+  When used on a struct, or struct member, the :gcc-attr:`aligned` attribute can
+  only increase the alignment; in order to decrease it, the :gcc-attr:`packed`
   attribute must be specified as well.  When used as part of a typedef, the
-  :option:`aligned` attribute can both increase and decrease alignment, and
-  specifying the :option:`packed` attribute generates a warning.
+  :gcc-attr:`aligned` attribute can both increase and decrease alignment, and
+  specifying the :gcc-attr:`packed` attribute generates a warning.
 
-  Note that the effectiveness of :option:`aligned` attributes for static
+  Note that the effectiveness of :gcc-attr:`aligned` attributes for static
   variables may be limited by inherent limitations in the system linker
   and/or object file format.  On some systems, the linker is
   only able to arrange for variables to be aligned up to a certain maximum
@@ -156,12 +156,12 @@ The following attributes are supported on most targets.
   Stack variables are not affected by linker restrictions; GCC can properly
   align them on any target.
 
-  The :option:`aligned` attribute can also be used for functions
+  The :gcc-attr:`aligned` attribute can also be used for functions
   (see :ref:`common-function-attributes`.)
 
   .. index:: warn_if_not_aligned variable attribute
 
-.. option:: warn_if_not_aligned (alignment)
+.. gcc-attr:: warn_if_not_aligned (alignment)
 
   This attribute specifies a threshold for the structure field, measured
   in bytes.  If the structure field is aligned below the threshold, a
@@ -195,7 +195,7 @@ The following attributes are supported on most targets.
   The ``warn_if_not_aligned`` attribute can also be used for types
   (see :ref:`common-type-attributes`.)
 
-.. option:: alloc_size (position)
+.. gcc-attr:: alloc_size (position)
 
   .. index:: alloc_size variable attribute
 
@@ -223,7 +223,7 @@ The following attributes are supported on most targets.
   ``malloc_ptr``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-.. option:: cleanup (cleanup_function)
+.. gcc-attr:: cleanup (cleanup_function)
 
   .. index:: cleanup variable attribute
 
@@ -254,29 +254,29 @@ The following attributes are supported on most targets.
   These attributes override the default chosen by the
   :option:`-fno-common` and :option:`-fcommon` flags respectively.
 
-.. option:: copy
+.. gcc-attr:: copy
 
   .. index:: copy variable attribute
 
-  The :option:`copy` attribute applies the set of attributes with which
+  The :gcc-attr:`copy` attribute applies the set of attributes with which
   :samp:`{variable}` has been declared to the declaration of the variable
   to which the attribute is applied.  The attribute is designed for
   libraries that define aliases that are expected to specify the same
-  set of attributes as the aliased symbols.  The :option:`copy` attribute
+  set of attributes as the aliased symbols.  The :gcc-attr:`copy` attribute
   can be used with variables, functions or types.  However, the kind
   of symbol to which the attribute is applied (either varible or
   function) must match the kind of symbol to which the argument refers.
-  The :option:`copy` attribute copies only syntactic and semantic attributes
+  The :gcc-attr:`copy` attribute copies only syntactic and semantic attributes
   but not attributes that affect a symbol's linkage or visibility such as
-  ``alias``, :option:`visibility`, or :option:`weak`.  The :option:`deprecated`
+  ``alias``, :gcc-attr:`visibility`, or :gcc-attr:`weak`.  The :gcc-attr:`deprecated`
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-type-attributes`.
 
-.. option:: deprecated
+.. gcc-attr:: deprecated
 
   .. index:: deprecated variable attribute
 
-  The :option:`deprecated` attribute results in a warning if the variable
+  The :gcc-attr:`deprecated` attribute results in a warning if the variable
   is used anywhere in the source file.  This is useful when identifying
   variables that are expected to be removed in a future version of a
   program.  The warning also includes the location of the declaration
@@ -294,14 +294,14 @@ The following attributes are supported on most targets.
   argument, which must be a string, is printed in the warning if
   present.
 
-  The :option:`deprecated` attribute can also be used for functions and
+  The :gcc-attr:`deprecated` attribute can also be used for functions and
   types (see :ref:`common-function-attributes`,
   see :ref:`common-type-attributes`).
 
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. option:: mode (mode)
+.. gcc-attr:: mode (mode)
 
   .. index:: mode variable attribute
 
@@ -316,11 +316,11 @@ The following attributes are supported on most targets.
   ``__word__`` for the mode of a one-word integer, and ``pointer``
   or ``__pointer__`` for the mode used to represent pointers.
 
-.. option:: nonstring
+.. gcc-attr:: nonstring
 
   .. index:: nonstring variable attribute
 
-  The :option:`nonstring` variable attribute specifies that an object or member
+  The :gcc-attr:`nonstring` variable attribute specifies that an object or member
   declaration with type array of ``char``, ``signed char``, or
   ``unsigned char``, or pointer to such a type is intended to store
   character arrays that do not necessarily contain a terminating ``NUL``.
@@ -353,13 +353,13 @@ The following attributes are supported on most targets.
       return strlen (pd->name);   // unsafe, gets a warning
     }
 
-.. option:: packed
+.. gcc-attr:: packed
 
   .. index:: packed variable attribute
 
-  The :option:`packed` attribute specifies that a structure member should have
+  The :gcc-attr:`packed` attribute specifies that a structure member should have
   the smallest possible alignment---one bit for a bit-field and one byte
-  otherwise, unless a larger value is specified with the :option:`aligned`
+  otherwise, unless a larger value is specified with the :gcc-attr:`aligned`
   attribute.  The attribute does not apply to non-member objects.
 
   For example in the structure below, the member array ``x`` is packed
@@ -374,12 +374,12 @@ The following attributes are supported on most targets.
     };
 
   *Note:* The 4.1, 4.2 and 4.3 series of GCC ignore the
-  :option:`packed` attribute on bit-fields of type ``char``.  This has
+  :gcc-attr:`packed` attribute on bit-fields of type ``char``.  This has
   been fixed in GCC 4.4 but the change can lead to differences in the
   structure layout.  See the documentation of
   :option:`-Wpacked-bitfield-compat` for more information.
 
-.. option:: section ("section-name")
+.. gcc-attr:: section ("section-name")
 
   .. index:: section variable attribute
 
@@ -429,7 +429,7 @@ The following attributes are supported on most targets.
   If you need to map the entire contents of a module to a particular
   section, consider using the facilities of the linker instead.
 
-.. option:: tls_model ("tls_model")
+.. gcc-attr:: tls_model ("tls_model")
 
   .. index:: tls_model variable attribute
 
@@ -442,7 +442,7 @@ The following attributes are supported on most targets.
 
   Not all targets support this attribute.
 
-.. option:: unused
+.. gcc-attr:: unused
 
   .. index:: unused variable attribute
 
@@ -450,7 +450,7 @@ The following attributes are supported on most targets.
   the variable or field is meant to be possibly unused.  GCC does not
   produce a warning for this variable or field.
 
-.. option:: used
+.. gcc-attr:: used
 
   .. index:: used variable attribute
 
@@ -462,7 +462,7 @@ The following attributes are supported on most targets.
   attribute also means that the member is instantiated if the
   class itself is instantiated.
 
-.. option:: retain
+.. gcc-attr:: retain
 
   .. index:: retain variable attribute
 
@@ -474,7 +474,7 @@ The following attributes are supported on most targets.
 
   This additional functionality requires Binutils version 2.36 or later.
 
-.. option:: vector_size (bytes)
+.. gcc-attr:: vector_size (bytes)
 
   .. index:: vector_size variable attribute
 
@@ -508,26 +508,26 @@ The following attributes are supported on most targets.
   is invalid even if the size of the structure is the same as the size of
   the ``int``.
 
-.. option:: visibility ("visibility_type")
+.. gcc-attr:: visibility ("visibility_type")
 
   .. index:: visibility variable attribute
 
   This attribute affects the linkage of the declaration to which it is attached.
-  The :option:`visibility` attribute is described in
+  The :gcc-attr:`visibility` attribute is described in
   Common Function Attributes.
 
-.. option:: weak
+.. gcc-attr:: weak
 
   .. index:: weak variable attribute
 
-  The :option:`weak` attribute is described in
+  The :gcc-attr:`weak` attribute is described in
   Common Function Attributes.
 
-.. option:: noinit
+.. gcc-attr:: noinit
 
   .. index:: noinit variable attribute
 
-  Any data with the :option:`noinit` attribute will not be initialized by
+  Any data with the :gcc-attr:`noinit` attribute will not be initialized by
   the C runtime startup code, or the program loader.  Not initializing
   data in this way can reduce program startup times.
 
@@ -535,11 +535,11 @@ The following attributes are supported on most targets.
   script to place sections with the ``.noinit`` prefix in the right
   location.
 
-.. option:: persistent
+.. gcc-attr:: persistent
 
   .. index:: persistent variable attribute
 
-  Any data with the :option:`persistent` attribute will not be initialized by
+  Any data with the :gcc-attr:`persistent` attribute will not be initialized by
   the C runtime startup code, but will be initialized by the program
   loader.  This enables the value of the variable to :samp:`persist`
   between processor resets.
@@ -549,7 +549,7 @@ The following attributes are supported on most targets.
   right location.  Specifically, some type of non-volatile, writeable
   memory is required.
 
-.. option:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
+.. gcc-attr:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
 
   .. index:: objc_nullability variable attribute
 
@@ -582,11 +582,11 @@ The following attributes are supported on most targets.
 ARC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. option:: aux
+.. gcc-attr:: aux
 
   .. index:: aux variable attribute, ARC
 
-  The :option:`aux` attribute is used to directly access the ARC's
+  The :gcc-attr:`aux` attribute is used to directly access the ARC's
   auxiliary register space from C.  The auxilirary register number is
   given via attribute argument.
 
@@ -595,12 +595,12 @@ ARC Variable Attributes
 AVR Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. option:: progmem
+.. gcc-attr:: progmem
 
   .. index:: progmem variable attribute, AVR
 
-  The :option:`progmem` attribute is used on the AVR to place read-only
-  data in the non-volatile program memory (flash). The :option:`progmem`
+  The :gcc-attr:`progmem` attribute is used on the AVR to place read-only
+  data in the non-volatile program memory (flash). The :gcc-attr:`progmem`
   attribute accomplishes this by putting respective variables into a
   section whose name starts with ``.progmem``.
 
@@ -608,9 +608,9 @@ AVR Variable Attributes
   but adds additional checking.
 
   \*  Ordinary AVR cores with 32 general purpose registers:
-    :option:`progmem` affects the location
+    :gcc-attr:`progmem` affects the location
     of the data but not how this data is accessed.
-    In order to read data located with the :option:`progmem` attribute
+    In order to read data located with the :gcc-attr:`progmem` attribute
     (inline) assembler must be used.
 
     .. code-block:: c++
@@ -634,7 +634,7 @@ AVR Variable Attributes
     an alternate way to locate and access data in flash memory.
 
   \*  AVR cores with flash memory visible in the RAM address range:
-    On such devices, there is no need for attribute :option:`progmem` or
+    On such devices, there is no need for attribute :gcc-attr:`progmem` or
     AVR Named Address Spaces``__flash`` qualifier at all.
     Just use standard C / C++.  The compiler will generate ``LD*``
     instructions.  As flash memory is visible in the RAM address range,
@@ -642,18 +642,18 @@ AVR Variable Attributes
     RAM, no special features are needed in order not to waste RAM for
     read-only data or to read from flash.  You might even get slightly better
     performance by
-    avoiding :option:`progmem` and ``__flash``.  This applies to devices from
+    avoiding :gcc-attr:`progmem` and ``__flash``.  This applies to devices from
     families ``avrtiny`` and ``avrxmega3``, see AVR Options for
     an overview.
 
   \* Reduced AVR Tiny cores like ATtiny40:
     The compiler adds ``0x4000``
-    to the addresses of objects and declarations in :option:`progmem` and locates
+    to the addresses of objects and declarations in :gcc-attr:`progmem` and locates
     the objects in flash memory, namely in section ``.progmem.data``.
     The offset is needed because the flash memory is visible in the RAM
     address space starting at address ``0x4000``.
 
-    Data in :option:`progmem` can be accessed by means of ordinary C code,
+    Data in :gcc-attr:`progmem` can be accessed by means of ordinary C code,
     no special functions or macros are needed.
 
     .. code-block:: c++
@@ -666,14 +666,14 @@ AVR Variable Attributes
           return var[i];
       }
 
-    Please notice that on these devices, there is no need for :option:`progmem`
+    Please notice that on these devices, there is no need for :gcc-attr:`progmem`
     at all.
 
-.. option:: io
+.. gcc-attr:: io
 
   .. index:: io variable attribute, AVR
 
-  Variables with the :option:`io` attribute are used to address
+  Variables with the :gcc-attr:`io` attribute are used to address
   memory-mapped peripherals in the io address range.
   If an address is specified, the variable
   is assigned that address, and the value is interpreted as an
@@ -695,31 +695,31 @@ AVR Variable Attributes
 
     extern volatile int porta __attribute__((io));
 
-.. option:: io_low
+.. gcc-attr:: io_low
 
   .. index:: io_low variable attribute, AVR
 
-  This is like the :option:`io` attribute, but additionally it informs the
+  This is like the :gcc-attr:`io` attribute, but additionally it informs the
   compiler that the object lies in the lower half of the I/O area,
   allowing the use of ``cbi``, ``sbi``, ``sbic`` and ``sbis``
   instructions.
 
-.. option:: address
+.. gcc-attr:: address
 
   .. index:: address variable attribute, AVR
 
-  Variables with the :option:`address` attribute are used to address
+  Variables with the :gcc-attr:`address` attribute are used to address
   memory-mapped peripherals that may lie outside the io address range.
 
   .. code-block:: c++
 
     volatile int porta __attribute__((address (0x600)));
 
-.. option:: absdata
+.. gcc-attr:: absdata
 
   .. index:: absdata variable attribute, AVR
 
-  Variables in static storage and with the :option:`absdata` attribute can
+  Variables in static storage and with the :gcc-attr:`absdata` attribute can
   be accessed by the ``LDS`` and ``STS`` instructions which take
   absolute addresses.
 
@@ -746,7 +746,7 @@ Blackfin Variable Attributes
 
 Three attributes are currently defined for the Blackfin.
 
-.. option:: l1_data
+.. gcc-attr:: l1_data
 
   .. index:: l1_data variable attribute, Blackfin
 
@@ -755,17 +755,17 @@ Three attributes are currently defined for the Blackfin.
   .. index:: l1_data_B variable attribute, Blackfin
 
   Use these attributes on the Blackfin to place the variable into L1 Data SRAM.
-  Variables with :option:`l1_data` attribute are put into the specific section
+  Variables with :gcc-attr:`l1_data` attribute are put into the specific section
   named ``.l1.data``. Those with ``l1_data_A`` attribute are put into
   the specific section named ``.l1.data.A``. Those with ``l1_data_B``
   attribute are put into the specific section named ``.l1.data.B``.
 
-.. option:: l2
+.. gcc-attr:: l2
 
   .. index:: l2 variable attribute, Blackfin
 
   Use this attribute on the Blackfin to place the variable into L2 SRAM.
-  Variables with :option:`l2` attribute are put into the specific section
+  Variables with :gcc-attr:`l2` attribute are put into the specific section
   named ``.l2.data``.
 
 .. _h8-300-variable-attributes:
@@ -775,7 +775,7 @@ H8/300 Variable Attributes
 
 These variable attributes are available for H8/300 targets:
 
-.. option:: eightbit_data
+.. gcc-attr:: eightbit_data
 
   .. index:: eightbit_data variable attribute, H8/300
 
@@ -790,7 +790,7 @@ These variable attributes are available for H8/300 targets:
   You must use GAS and GLD from GNU binutils version 2.7 or later for
   this attribute to work correctly.
 
-.. option:: tiny_data
+.. gcc-attr:: tiny_data
 
   .. index:: tiny_data variable attribute, H8/300
 
@@ -809,7 +809,7 @@ IA-64 Variable Attributes
 
 The IA-64 back end supports the following variable attribute:
 
-.. option:: model (model-name)
+.. gcc-attr:: model (model-name)
 
   .. index:: model variable attribute, IA-64
 
@@ -828,7 +828,7 @@ M32R/D Variable Attributes
 
 One attribute is currently defined for the M32R/D.
 
-.. option:: model (model-name)
+.. gcc-attr:: model (model-name)
 
   .. index:: model-name variable attribute, M32R/D
 
@@ -851,50 +851,50 @@ MeP Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 The MeP target has a number of addressing modes and busses.  The
-:option:`near` space spans the standard memory space's first 16 megabytes
-(24 bits).  The :option:`far` space spans the entire 32-bit memory space.
-The :option:`based` space is a 128-byte region in the memory space that
-is addressed relative to the ``$tp`` register.  The :option:`tiny`
+:gcc-attr:`near` space spans the standard memory space's first 16 megabytes
+(24 bits).  The :gcc-attr:`far` space spans the entire 32-bit memory space.
+The :gcc-attr:`based` space is a 128-byte region in the memory space that
+is addressed relative to the ``$tp`` register.  The :gcc-attr:`tiny`
 space is a 65536-byte region relative to the ``$gp`` register.  In
 addition to these memory regions, the MeP target has a separate 16-bit
-control bus which is specified with :option:`cb` attributes.
+control bus which is specified with :gcc-attr:`cb` attributes.
 
-.. option:: based
+.. gcc-attr:: based
 
   .. index:: based variable attribute, MeP
 
-  Any variable with the :option:`based` attribute is assigned to the
+  Any variable with the :gcc-attr:`based` attribute is assigned to the
   ``.based`` section, and is accessed with relative to the
   ``$tp`` register.
 
-.. option:: tiny
+.. gcc-attr:: tiny
 
   .. index:: tiny variable attribute, MeP
 
-  Likewise, the :option:`tiny` attribute assigned variables to the
+  Likewise, the :gcc-attr:`tiny` attribute assigned variables to the
   ``.tiny`` section, relative to the ``$gp`` register.
 
-.. option:: near
+.. gcc-attr:: near
 
   .. index:: near variable attribute, MeP
 
-  Variables with the :option:`near` attribute are assumed to have addresses
+  Variables with the :gcc-attr:`near` attribute are assumed to have addresses
   that fit in a 24-bit addressing mode.  This is the default for large
   variables (``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
-.. option:: far
+.. gcc-attr:: far
 
   .. index:: far variable attribute, MeP
 
-  Variables with the :option:`far` attribute are addressed using a full
+  Variables with the :gcc-attr:`far` attribute are addressed using a full
   32-bit address.  Since this covers the entire memory space, this
   allows modules to make no assumptions about where variables might be
   stored.
 
-.. option:: io
+.. gcc-attr:: io
 
-  Variables with the :option:`io` attribute are used to address
+  Variables with the :gcc-attr:`io` attribute are used to address
   memory-mapped peripherals.  If an address is specified, the variable
   is assigned that address, else it is not assigned an address (it is
   assumed some other module assigns an address).  Example:
@@ -903,11 +903,11 @@ control bus which is specified with :option:`cb` attributes.
 
     int timer_count __attribute__((io(0x123)));
 
-.. option:: cb
+.. gcc-attr:: cb
 
   .. index:: cb variable attribute, MeP
 
-  Variables with the :option:`cb` attribute are used to access the control
+  Variables with the :gcc-attr:`cb` attribute are used to access the control
   bus, using special instructions.  ``addr`` indicates the control bus
   address.  Example:
 
@@ -924,20 +924,20 @@ You can use these attributes on Microsoft Windows targets.
 x86 Variable Attributes for additional Windows compatibility
 attributes available on all x86 targets.
 
-.. option:: dllimport
+.. gcc-attr:: dllimport
 
   .. index:: dllimport variable attribute
 
   .. index:: dllexport variable attribute
 
-  The :option:`dllimport` and :option:`dllexport` attributes are described in
+  The :gcc-attr:`dllimport` and :gcc-attr:`dllexport` attributes are described in
   Microsoft Windows Function Attributes.
 
-.. option:: selectany
+.. gcc-attr:: selectany
 
   .. index:: selectany variable attribute
 
-  The :option:`selectany` attribute causes an initialized global variable to
+  The :gcc-attr:`selectany` attribute causes an initialized global variable to
   have link-once semantics.  When multiple definitions of the variable are
   encountered by the linker, the first is selected and the remainder are
   discarded.  Following usage by the Microsoft compiler, the linker is told
@@ -951,19 +951,19 @@ attributes available on all x86 targets.
   but the calls to the constructor and destructor are protected by a
   link-once guard variable.
 
-  The :option:`selectany` attribute is only available on Microsoft Windows
+  The :gcc-attr:`selectany` attribute is only available on Microsoft Windows
   targets.  You can use ``__declspec (selectany)`` as a synonym for
   ``__attribute__ ((selectany))`` for compatibility with other
   compilers.
 
-.. option:: shared
+.. gcc-attr:: shared
 
   .. index:: shared variable attribute
 
   On Microsoft Windows, in addition to putting variable definitions in a named
   section, the section can also be shared among all running copies of an
   executable or DLL.  For example, this small program defines shared data
-  by putting it in a named section :option:`shared` and marking the section
+  by putting it in a named section :gcc-attr:`shared` and marking the section
   shareable:
 
   .. code-block:: c++
@@ -978,18 +978,18 @@ attributes available on all x86 targets.
       return 0;
     }
 
-  You may only use the :option:`shared` attribute along with ``section``
+  You may only use the :gcc-attr:`shared` attribute along with ``section``
   attribute with a fully-initialized global definition because of the way
   linkers work.  See ``section`` attribute for more information.
 
-  The :option:`shared` attribute is only available on Microsoft Windows.
+  The :gcc-attr:`shared` attribute is only available on Microsoft Windows.
 
 .. _msp430-variable-attributes:
 
 MSP430 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. option:: upper
+.. gcc-attr:: upper
 
   .. index:: upper variable attribute, MSP430
 
@@ -998,7 +998,7 @@ MSP430 Variable Attributes
   These attributes are the same as the MSP430 function attributes of the
   same name (see :ref:`msp430-function-attributes`).  
 
-.. option:: lower
+.. gcc-attr:: lower
 
   .. index:: lower variable attribute, MSP430
 
@@ -1010,7 +1010,7 @@ MSP430 Variable Attributes
   the ``section`` attribute is applied to a variable, the compiler will
   generate 430X instructions to handle it.  This is because the compiler has
   to assume that the variable could get placed in the upper memory region
-  (above address 0xFFFF).  Marking the variable with the :option:`lower` attribute
+  (above address 0xFFFF).  Marking the variable with the :gcc-attr:`lower` attribute
   informs the compiler that the variable will be placed in lower memory so it
   is safe to use 430 instructions to handle it.
 
@@ -1024,7 +1024,7 @@ Nvidia PTX Variable Attributes
 
 These variable attributes are supported by the Nvidia PTX back end:
 
-.. option:: shared
+.. gcc-attr:: shared
 
   .. index:: shared attribute, Nvidia PTX
 
@@ -1039,7 +1039,7 @@ PowerPC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three attributes currently are defined for PowerPC configurations:
-``altivec``, :option:`ms_struct` and ``gcc_struct``.
+``altivec``, :gcc-attr:`ms_struct` and ``gcc_struct``.
 
 .. index:: ms_struct variable attribute, PowerPC
 
@@ -1071,21 +1071,21 @@ V850 Variable Attributes
 
 These variable attributes are supported by the V850 back end:
 
-.. option:: sda
+.. gcc-attr:: sda
 
   .. index:: sda variable attribute, V850
 
   Use this attribute to explicitly place a variable in the small data area,
   which can hold up to 64 kilobytes.
 
-.. option:: tda
+.. gcc-attr:: tda
 
   .. index:: tda variable attribute, V850
 
   Use this attribute to explicitly place a variable in the tiny data area,
   which can hold up to 256 bytes in total.
 
-.. option:: zda
+.. gcc-attr:: zda
 
   .. index:: zda variable attribute, V850
 
@@ -1098,22 +1098,22 @@ x86 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Two attributes are currently defined for x86 configurations:
-:option:`ms_struct` and ``gcc_struct``.
+:gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. option:: ms_struct
+.. gcc-attr:: ms_struct
 
   .. index:: ms_struct variable attribute, x86
 
   .. index:: gcc_struct variable attribute, x86
 
-  If :option:`packed` is used on a structure, or if bit-fields are used,
+  If :gcc-attr:`packed` is used on a structure, or if bit-fields are used,
   it may be that the Microsoft ABI lays out the structure differently
   than the way GCC normally does.  Particularly when moving packed
   data between functions compiled with GCC and the native Microsoft compiler
   (either via function call or as data in a file), it may be necessary to access
   either format.
 
-  The :option:`ms_struct` and ``gcc_struct`` attributes correspond
+  The :gcc-attr:`ms_struct` and ``gcc_struct`` attributes correspond
   to the :option:`-mms-bitfields` and :option:`-mno-ms-bitfields`
   command-line options, respectively;
   see x86 Options, for details of how structure layout is affected.
@@ -1126,13 +1126,13 @@ Xstormy16 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One attribute is currently defined for xstormy16 configurations:
-:option:`below100`.
+:gcc-attr:`below100`.
 
-.. option:: below100
+.. gcc-attr:: below100
 
   .. index:: below100 variable attribute, Xstormy16
 
-  If a variable has the :option:`below100` attribute (``BELOW100`` is
+  If a variable has the :gcc-attr:`below100` attribute (``BELOW100`` is
   allowed also), GCC places the variable in the first 0x100 bytes of
   memory and use special opcodes to access it.  Such variables are
   placed in either the ``.bss_below100`` section or the
