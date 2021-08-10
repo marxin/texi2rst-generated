@@ -10,7 +10,7 @@ Nvidia PTX Function Attributes
 
 These function attributes are supported by the Nvidia PTX back end:
 
-.. option:: kernel
+.. gcc-attr:: kernel
 
   .. index:: kernel attribute, Nvidia PTX
 

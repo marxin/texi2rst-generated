@@ -10,7 +10,7 @@ Epiphany Function Attributes
 
 These function attributes are supported by the Epiphany back end:
 
-.. option:: disinterrupt
+.. gcc-attr:: disinterrupt
 
   .. index:: disinterrupt function attribute, Epiphany
 
@@ -18,7 +18,7 @@ These function attributes are supported by the Epiphany back end:
   instructions to disable interrupts for the duration of the given
   function.
 
-.. option:: forwarder_section
+.. gcc-attr:: forwarder_section
 
   .. index:: forwarder_section function attribute, Epiphany
 
@@ -28,7 +28,7 @@ These function attributes are supported by the Epiphany back end:
   to transfer control.  The single parameter identifies the section where
   the trampoline is placed.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, Epiphany
 
@@ -44,7 +44,7 @@ These function attributes are supported by the Epiphany back end:
 
     void __attribute__ ((interrupt ("dma0, dma1"))) universal_dma_handler ();
 
-  Permissible values for these parameters are: :option:`reset`,
+  Permissible values for these parameters are: :gcc-attr:`reset`,
   ``software_exception``, ``page_miss``,
   ``timer0``, ``timer1``, ``message``,
   ``dma0``, ``dma1``, ``wand`` and ``swi``.
@@ -55,7 +55,7 @@ These function attributes are supported by the Epiphany back end:
   entirely, in which case no interrupt vector table entry is provided.
 
   Note that interrupts are enabled inside the function
-  unless the :option:`disinterrupt` attribute is also specified.
+  unless the :gcc-attr:`disinterrupt` attribute is also specified.
 
   The following examples are all valid uses of these attributes on
   Epiphany targets:
@@ -72,7 +72,7 @@ These function attributes are supported by the Epiphany back end:
                          forwarder_section ("tramp")))
       external_dma_handler ();
 
-.. option:: long_call
+.. gcc-attr:: long_call
 
   .. index:: long_call function attribute, Epiphany
 

@@ -10,7 +10,7 @@ C++-Specific Variable, Function, and Type Attributes
 
 Some attributes only make sense for C++ programs.
 
-.. option:: abi_tag ("tag", ...)
+.. gcc-attr:: abi_tag ("tag", ...)
 
   .. index:: abi_tag function attribute
 
@@ -56,7 +56,7 @@ Some attributes only make sense for C++ programs.
   situation; this warning can be avoided by explicitly tagging the
   variable or function or moving it into a tagged inline namespace.
 
-.. option:: init_priority (priority)
+.. gcc-attr:: init_priority (priority)
 
   .. index:: init_priority variable attribute
 
@@ -80,7 +80,7 @@ Some attributes only make sense for C++ programs.
   Note that the particular values of :samp:`{priority}` do not matter; only their
   relative ordering.
 
-.. option:: warn_unused
+.. gcc-attr:: warn_unused
 
   .. index:: warn_unused type attribute
 

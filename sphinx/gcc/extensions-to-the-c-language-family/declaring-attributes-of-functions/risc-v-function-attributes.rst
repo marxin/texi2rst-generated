@@ -10,7 +10,7 @@ RISC-V Function Attributes
 
 These function attributes are supported by the RISC-V back end:
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, RISC-V
 
@@ -23,7 +23,7 @@ These function attributes are supported by the RISC-V back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, RISC-V
 

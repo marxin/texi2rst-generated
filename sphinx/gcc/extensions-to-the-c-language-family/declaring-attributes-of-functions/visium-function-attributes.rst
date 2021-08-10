@@ -10,7 +10,7 @@ Visium Function Attributes
 
 These function attributes are supported by the Visium back end:
 
-.. option:: interrupt, interrupt_handler
+.. gcc-attr:: interrupt, interrupt_handler
 
   .. index:: interrupt function attribute, Visium
 

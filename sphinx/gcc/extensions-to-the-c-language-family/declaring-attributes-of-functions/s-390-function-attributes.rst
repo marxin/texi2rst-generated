@@ -10,7 +10,7 @@ S/390 Function Attributes
 
 These function attributes are supported on the S/390:
 
-.. option:: hotpatch (halfwords-before-function-label,halfwords-after-function-label)
+.. gcc-attr:: hotpatch (halfwords-before-function-label,halfwords-after-function-label)
 
   .. index:: hotpatch function attribute, S/390
 
@@ -25,7 +25,7 @@ These function attributes are supported on the S/390:
 
   If both arguments are zero, hotpatching is disabled.
 
-.. option:: target (options)
+.. gcc-attr:: target (options)
 
   .. index:: target function attribute
 

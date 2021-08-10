@@ -10,7 +10,7 @@ M32R/D Function Attributes
 
 These function attributes are supported by the M32R/D back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, M32R/D
 
@@ -19,7 +19,7 @@ These function attributes are supported by the M32R/D back end:
   function entry and exit sequences suitable for use in an interrupt handler
   when this attribute is present.
 
-.. option:: model (model-name)
+.. gcc-attr:: model (model-name)
 
   .. index:: model function attribute, M32R/D
 

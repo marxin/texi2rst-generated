@@ -10,7 +10,7 @@ MicroBlaze Function Attributes
 
 These function attributes are supported on MicroBlaze targets:
 
-.. option:: save_volatiles
+.. gcc-attr:: save_volatiles
 
   .. index:: save_volatiles function attribute, MicroBlaze
 
@@ -20,7 +20,7 @@ These function attributes are supported on MicroBlaze targets:
   function, only volatiles used by the function are saved.  A normal function
   return is generated instead of a return from interrupt.
 
-.. option:: break_handler
+.. gcc-attr:: break_handler
 
   .. index:: break_handler function attribute, MicroBlaze
 
@@ -29,22 +29,22 @@ These function attributes are supported on MicroBlaze targets:
   Use this attribute to indicate that
   the specified function is a break handler.  The compiler generates function
   entry and exit sequences suitable for use in an break handler when this
-  attribute is present. The return from :option:`break_handler` is done through
+  attribute is present. The return from :gcc-attr:`break_handler` is done through
   the ``rtbd`` instead of ``rtsd``.
 
   .. code-block:: c++
 
     void f () __attribute__ ((break_handler));
 
-.. option:: interrupt_handler
+.. gcc-attr:: interrupt_handler
 
   .. index:: interrupt_handler function attribute, MicroBlaze
 
   .. index:: fast_interrupt function attribute, MicroBlaze
 
   These attributes indicate that the specified function is an interrupt
-  handler.  Use the :option:`fast_interrupt` attribute to indicate handlers
-  used in low-latency interrupt mode, and :option:`interrupt_handler` for
+  handler.  Use the :gcc-attr:`fast_interrupt` attribute to indicate handlers
+  used in low-latency interrupt mode, and :gcc-attr:`interrupt_handler` for
   interrupts that do not use low-latency handlers.  In both cases, GCC
   emits appropriate prologue code and generates a return from the handler
   using ``rtid`` instead of ``rtsd``.

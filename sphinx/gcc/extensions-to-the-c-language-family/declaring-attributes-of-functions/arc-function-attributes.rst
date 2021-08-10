@@ -10,7 +10,7 @@ ARC Function Attributes
 
 These function attributes are supported by the ARC back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, ARC
 
@@ -30,7 +30,7 @@ These function attributes are supported by the ARC back end:
   ``ilink2`` for ARCv1 architecture, and ``ilink`` and
   ``firq`` for ARCv2 architecture.
 
-.. option:: long_call
+.. gcc-attr:: long_call
 
   .. index:: long_call function attribute, ARC
 
@@ -45,7 +45,7 @@ These function attributes are supported by the ARC back end:
   :option:`-mlong-calls` and :option:`-mmedium-calls` (see :ref:`arc-options`)
   command-line switches and ``#pragma long_calls`` settings.
 
-  For ARC, a function marked with the :option:`long_call` attribute is
+  For ARC, a function marked with the :gcc-attr:`long_call` attribute is
   always called using register-indirect jump-and-link instructions,
   thereby enabling the called function to be placed anywhere within the
   32-bit address space.  A function marked with the ``medium_call``
@@ -56,7 +56,7 @@ These function attributes are supported by the ARC back end:
   branch-and-link instruction, which has a 21-bit offset from
   the call site.
 
-.. option:: jli_always
+.. gcc-attr:: jli_always
 
   .. index:: jli_always function attribute, ARC
 
@@ -65,14 +65,14 @@ These function attributes are supported by the ARC back end:
   into ``.jlitab`` section, which holds the location of the functions
   which are addressed using this instruction.
 
-.. option:: jli_fixed
+.. gcc-attr:: jli_fixed
 
   .. index:: jli_fixed function attribute, ARC
 
   Identical like the above one, but the location of the function in the
   ``jli`` table is known and given as an attribute parameter.
 
-.. option:: secure_call
+.. gcc-attr:: secure_call
 
   .. index:: secure_call function attribute, ARC
 
@@ -80,7 +80,7 @@ These function attributes are supported by the ARC back end:
   callable from normal mode.  The location of the secure call function
   into the ``sjli`` table needs to be passed as argument.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, ARC
 

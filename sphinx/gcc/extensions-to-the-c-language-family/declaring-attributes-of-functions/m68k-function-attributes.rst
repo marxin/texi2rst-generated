@@ -10,7 +10,7 @@ m68k Function Attributes
 
 These function attributes are supported by the m68k back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, m68k
 
@@ -21,7 +21,7 @@ These function attributes are supported by the m68k back end:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.  Either name may be used.
 
-.. option:: interrupt_thread
+.. gcc-attr:: interrupt_thread
 
   .. index:: interrupt_thread function attribute, fido
 

@@ -10,7 +10,7 @@ MCORE Function Attributes
 
 These function attributes are supported by the MCORE back end:
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, MCORE
 

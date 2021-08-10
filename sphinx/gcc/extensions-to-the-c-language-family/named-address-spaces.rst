@@ -35,7 +35,7 @@ Devices belonging to ``avrtiny`` and ``avrxmega3`` can access
 flash memory by means of ``LD*`` instructions because the flash
 memory is mapped into the RAM address space.  There is *no need*
 for language extensions like ``__flash`` or attribute
-AVR Variable Attributes:option:`progmem`.
+AVR Variable Attributes:gcc-attr:`progmem`.
 The default linker description files for these devices cater for that
 feature and ``.rodata`` stays in flash: The compiler just generates
 ``LD*`` instructions, and the linker script adds core specific
@@ -139,13 +139,13 @@ support is available or not:
   }
   #endif /* __FLASH */
 
-Notice that attribute AVR Variable Attributes:option:`progmem`
+Notice that attribute AVR Variable Attributes:gcc-attr:`progmem`
 locates data in flash but
 accesses to these data read from generic address space, i.e.
 from RAM,
 so that you need special accessors like ``pgm_read_byte``
 from `AVR-LibC <http://nongnu.org/avr-libc/user-manual/>`_
-together with attribute :option:`progmem`.
+together with attribute :gcc-attr:`progmem`.
 
 Limitations and caveats
 
@@ -178,7 +178,7 @@ Limitations and caveats
 
 * On the reduced Tiny devices like ATtiny40, no address spaces are supported.
   Just use vanilla C / C++ code without overhead as outlined above.
-  Attribute :option:`progmem` is supported but works differently,
+  Attribute :gcc-attr:`progmem` is supported but works differently,
   see AVR Variable Attributes.
 
 M32C Named Address Spaces

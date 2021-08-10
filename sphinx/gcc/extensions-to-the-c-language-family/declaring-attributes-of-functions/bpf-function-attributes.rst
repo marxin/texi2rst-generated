@@ -10,7 +10,7 @@ BPF Function Attributes
 
 These function attributes are supported by the BPF back end:
 
-.. option:: kernel_helper
+.. gcc-attr:: kernel_helper
 
   .. index:: kernel helper, function attribute, BPF
 

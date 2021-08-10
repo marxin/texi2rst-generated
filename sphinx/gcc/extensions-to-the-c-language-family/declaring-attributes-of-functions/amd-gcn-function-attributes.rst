@@ -10,7 +10,7 @@ AMD GCN Function Attributes
 
 These function attributes are supported by the AMD GCN back end:
 
-.. option:: amdgpu_hsa_kernel
+.. gcc-attr:: amdgpu_hsa_kernel
 
   .. index:: amdgpu_hsa_kernel function attribute, AMD GCN
 

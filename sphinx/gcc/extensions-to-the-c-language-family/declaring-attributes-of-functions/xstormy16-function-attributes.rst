@@ -10,7 +10,7 @@ Xstormy16 Function Attributes
 
 These function attributes are supported by the Xstormy16 back end:
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, Xstormy16
 

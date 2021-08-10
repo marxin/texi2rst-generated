@@ -21,36 +21,36 @@ These function attributes are supported by the x86 back end:
   pass arguments.  This is
   useful to override the effects of the :option:`-mrtd` switch.
 
-.. option:: fastcall
+.. gcc-attr:: fastcall
 
   .. index:: fastcall function attribute, x86-32
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the :option:`fastcall` attribute causes the compiler to
+  On x86-32 targets, the :gcc-attr:`fastcall` attribute causes the compiler to
   pass the first argument (if of integral type) in the register ECX and
   the second argument (if of integral type) in the register EDX.  Subsequent
   and other typed arguments are passed on the stack.  The called function
   pops the arguments off the stack.  If the number of arguments is variable all
   arguments are pushed on the stack.
 
-.. option:: thiscall
+.. gcc-attr:: thiscall
 
   .. index:: thiscall function attribute, x86-32
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the :option:`thiscall` attribute causes the compiler to
+  On x86-32 targets, the :gcc-attr:`thiscall` attribute causes the compiler to
   pass the first argument (if of integral type) in the register ECX.
   Subsequent and other typed arguments are passed on the stack. The called
   function pops the arguments off the stack.
   If the number of arguments is variable all arguments are pushed on the
   stack.
-  The :option:`thiscall` attribute is intended for C++ non-static member functions.
+  The :gcc-attr:`thiscall` attribute is intended for C++ non-static member functions.
   As a GCC extension, this calling convention can be used for C functions
   and for static member methods.
 
-.. option:: ms_abi
+.. gcc-attr:: ms_abi
 
   .. index:: ms_abi function attribute, x86
 
@@ -58,16 +58,16 @@ These function attributes are supported by the x86 back end:
 
   On 32-bit and 64-bit x86 targets, you can use an ABI attribute
   to indicate which calling convention should be used for a function.  The
-  :option:`ms_abi` attribute tells the compiler to use the Microsoft ABI,
+  :gcc-attr:`ms_abi` attribute tells the compiler to use the Microsoft ABI,
   while the ``sysv_abi`` attribute tells the compiler to use the System V
   ELF ABI, which is used on GNU/Linux and other systems.  The default is to use
   the Microsoft ABI when targeting Windows.  On all other systems, the default
   is the System V ELF ABI.
 
-  Note, the :option:`ms_abi` attribute for Microsoft Windows 64-bit targets currently
+  Note, the :gcc-attr:`ms_abi` attribute for Microsoft Windows 64-bit targets currently
   requires the :option:`-maccumulate-outgoing-args` option.
 
-.. option:: callee_pop_aggregate_return (number)
+.. gcc-attr:: callee_pop_aggregate_return (number)
 
   .. index:: callee_pop_aggregate_return function attribute, x86
 
@@ -82,7 +82,7 @@ These function attributes are supported by the x86 back end:
   the compiler assumes that the
   caller pops the stack for hidden pointer.
 
-.. option:: ms_hook_prologue
+.. gcc-attr:: ms_hook_prologue
 
   .. index:: ms_hook_prologue function attribute, x86
 
@@ -91,7 +91,7 @@ These function attributes are supported by the x86 back end:
   prologue used in Win32 API functions in Microsoft Windows XP Service Pack 2
   and newer.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, x86
 
@@ -104,7 +104,7 @@ These function attributes are supported by the x86 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. option:: regparm (number)
+.. gcc-attr:: regparm (number)
 
   .. index:: regparm function attribute, x86
 
@@ -127,37 +127,37 @@ These function attributes are supported by the x86 back end:
   disabled with the linker or the loader if desired, to avoid the
   problem.)
 
-.. option:: sseregparm
+.. gcc-attr:: sseregparm
 
   .. index:: sseregparm function attribute, x86
 
-  On x86-32 targets with SSE support, the :option:`sseregparm` attribute
+  On x86-32 targets with SSE support, the :gcc-attr:`sseregparm` attribute
   causes the compiler to pass up to 3 floating-point arguments in
   SSE registers instead of on the stack.  Functions that take a
   variable number of arguments continue to pass all of their
   floating-point arguments on the stack.
 
-.. option:: force_align_arg_pointer
+.. gcc-attr:: force_align_arg_pointer
 
   .. index:: force_align_arg_pointer function attribute, x86
 
-  On x86 targets, the :option:`force_align_arg_pointer` attribute may be
+  On x86 targets, the :gcc-attr:`force_align_arg_pointer` attribute may be
   applied to individual function definitions, generating an alternate
   prologue and epilogue that realigns the run-time stack if necessary.
   This supports mixing legacy codes that run with a 4-byte aligned stack
   with modern codes that keep a 16-byte stack for SSE compatibility.
 
-.. option:: stdcall
+.. gcc-attr:: stdcall
 
   .. index:: stdcall function attribute, x86-32
 
   .. index:: functions that pop the argument stack on x86-32
 
-  On x86-32 targets, the :option:`stdcall` attribute causes the compiler to
+  On x86-32 targets, the :gcc-attr:`stdcall` attribute causes the compiler to
   assume that the called function pops off the stack space used to
   pass arguments, unless it takes a variable number of arguments.
 
-.. option:: no_caller_saved_registers
+.. gcc-attr:: no_caller_saved_registers
 
   .. index:: no_caller_saved_registers function attribute, x86
 
@@ -168,9 +168,9 @@ These function attributes are supported by the x86 back end:
   exit sequences to save and restore any modified registers, except for
   the EFLAGS register.  Since GCC doesn't preserve SSE, MMX nor x87
   states, the GCC option :option:`-mgeneral-regs-only` should be used to
-  compile functions with :option:`no_caller_saved_registers` attribute.
+  compile functions with :gcc-attr:`no_caller_saved_registers` attribute.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, x86
 
@@ -233,7 +233,7 @@ These function attributes are supported by the x86 back end:
   code; you should use an interrupt handler in other cases.  The system
   will crash if the wrong kind of handler is used.
 
-.. option:: target (options)
+.. gcc-attr:: target (options)
 
   .. index:: target function attribute
 
@@ -867,7 +867,7 @@ These function attributes are supported by the x86 back end:
     a function declared with ``target("sse3")`` can inline a function
     with ``target("sse2")``, since ``-msse3`` implies ``-msse2``.
 
-.. option:: indirect_branch("choice")
+.. gcc-attr:: indirect_branch("choice")
 
   .. index:: indirect_branch function attribute, x86
 
@@ -879,7 +879,7 @@ These function attributes are supported by the x86 back end:
   :samp:`thunk-extern` converts indirect call and jump to external call
   and return thunk provided in a separate object file.
 
-.. option:: function_return("choice")
+.. gcc-attr:: function_return("choice")
 
   .. index:: function_return function attribute, x86
 
@@ -890,17 +890,17 @@ These function attributes are supported by the x86 back end:
   call and return thunk.  :samp:`thunk-extern` converts function return to
   external call and return thunk provided in a separate object file.
 
-.. option:: nocf_check
+.. gcc-attr:: nocf_check
 
   .. index:: nocf_check function attribute
 
-  The :option:`nocf_check` attribute on a function is used to inform the
+  The :gcc-attr:`nocf_check` attribute on a function is used to inform the
   compiler that the function's prologue should not be instrumented when
   compiled with the :option:`-fcf-protection`:samp:`=branch` option.  The
   compiler assumes that the function's address is a valid target for a
   control-flow transfer.
 
-  The :option:`nocf_check` attribute on a type of pointer to function is
+  The :gcc-attr:`nocf_check` attribute on a type of pointer to function is
   used to inform the compiler that a call through the pointer should
   not be instrumented when compiled with the
   :option:`-fcf-protection`:samp:`=branch` option.  The compiler assumes
@@ -909,11 +909,11 @@ These function attributes are supported by the x86 back end:
   name is assumed to be a safe call thus direct calls are not
   instrumented by the compiler.
 
-  The :option:`nocf_check` attribute is applied to an object's type.
+  The :gcc-attr:`nocf_check` attribute is applied to an object's type.
   In case of assignment of a function address or a function pointer to
   another pointer, the attribute is not carried over from the right-hand
   object's type; the type of left-hand object stays unchanged.  The
-  compiler checks for :option:`nocf_check` attribute mismatch and reports
+  compiler checks for :gcc-attr:`nocf_check` attribute mismatch and reports
   a warning in case of mismatch.
 
   .. code-block:: c++
@@ -949,23 +949,23 @@ These function attributes are supported by the x86 back end:
       return 0;
     }
 
-.. option:: cf_check
+.. gcc-attr:: cf_check
 
   .. index:: cf_check function attribute, x86
 
-  The :option:`cf_check` attribute on a function is used to inform the
+  The :gcc-attr:`cf_check` attribute on a function is used to inform the
   compiler that ENDBR instruction should be placed at the function
   entry when :option:`-fcf-protection`:samp:`=branch` is enabled.
 
-.. option:: indirect_return
+.. gcc-attr:: indirect_return
 
   .. index:: indirect_return function attribute, x86
 
-  The :option:`indirect_return` attribute can be applied to a function,
+  The :gcc-attr:`indirect_return` attribute can be applied to a function,
   as well as variable or type of function pointer to inform the
   compiler that the function may return via indirect branch.
 
-.. option:: fentry_name("name")
+.. gcc-attr:: fentry_name("name")
 
   .. index:: fentry_name function attribute, x86
 
@@ -974,7 +974,7 @@ These function attributes are supported by the x86 back end:
   with :option:`-pg -mfentry`. When :samp:`{name}` is nop then a 5 byte
   nop sequence is generated.
 
-.. option:: fentry_section("name")
+.. gcc-attr:: fentry_section("name")
 
   .. index:: fentry_section function attribute, x86
 

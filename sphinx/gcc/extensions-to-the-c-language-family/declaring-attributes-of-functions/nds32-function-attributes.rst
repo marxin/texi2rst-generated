@@ -10,7 +10,7 @@ NDS32 Function Attributes
 
 These function attributes are supported by the NDS32 back end:
 
-.. option:: exception
+.. gcc-attr:: exception
 
   .. index:: exception function attribute
 
@@ -20,7 +20,7 @@ These function attributes are supported by the NDS32 back end:
   is an exception handler.  The compiler will generate corresponding sections
   for use in an exception handler.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, NDS32
 
@@ -63,7 +63,7 @@ These function attributes are supported by the NDS32 back end:
     The system will help save caller registers into stack before entering
     interrupt handler.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, NDS32
 
@@ -76,7 +76,7 @@ These function attributes are supported by the NDS32 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. option:: reset
+.. gcc-attr:: reset
 
   .. index:: reset function attribute, NDS32
 

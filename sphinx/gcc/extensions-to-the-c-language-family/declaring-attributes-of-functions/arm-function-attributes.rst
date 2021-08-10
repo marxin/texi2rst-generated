@@ -10,7 +10,7 @@ ARM Function Attributes
 
 These function attributes are supported for ARM targets:
 
-.. option:: general-regs-only
+.. gcc-attr:: general-regs-only
 
   .. index:: general-regs-only function attribute, ARM
 
@@ -20,7 +20,7 @@ These function attributes are supported for ARM targets:
   the same behavior as that of the command-line option
   :option:`-mgeneral-regs-only`.
 
-.. option:: interrupt
+.. gcc-attr:: interrupt
 
   .. index:: interrupt function attribute, ARM
 
@@ -42,14 +42,14 @@ These function attributes are supported for ARM targets:
   On ARMv7-M the interrupt type is ignored, and the attribute means the function
   may be called with a word-aligned stack pointer.
 
-.. option:: isr
+.. gcc-attr:: isr
 
   .. index:: isr function attribute, ARM
 
   Use this attribute on ARM to write Interrupt Service Routines. This is an
-  alias to the :option:`interrupt` attribute above.
+  alias to the :gcc-attr:`interrupt` attribute above.
 
-.. option:: long_call
+.. gcc-attr:: long_call
 
   .. index:: long_call function attribute, ARM
 
@@ -61,13 +61,13 @@ These function attributes are supported for ARM targets:
   These attributes override the
   :option:`-mlong-calls` (see :ref:`arm-options`)
   command-line switch and ``#pragma long_calls`` settings.  For ARM, the
-  :option:`long_call` attribute indicates that the function might be far
+  :gcc-attr:`long_call` attribute indicates that the function might be far
   away from the call site and require a different (more expensive)
   calling sequence.   The ``short_call`` attribute always places
   the offset to the function from the call site into the :samp:`BL`
   instruction directly.
 
-.. option:: naked
+.. gcc-attr:: naked
 
   .. index:: naked function attribute, ARM
 
@@ -80,11 +80,11 @@ These function attributes are supported for ARM targets:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. option:: pcs
+.. gcc-attr:: pcs
 
   .. index:: pcs function attribute, ARM
 
-  The :option:`pcs` attribute can be used to control the calling convention
+  The :gcc-attr:`pcs` attribute can be used to control the calling convention
   used for a function on ARM.  The attribute takes an argument that specifies
   the calling convention to use.
 
@@ -103,7 +103,7 @@ These function attributes are supported for ARM targets:
   Variadic functions always use the ``"aapcs"`` calling convention and
   the compiler rejects attempts to specify an alternative.
 
-.. option:: target (options)
+.. gcc-attr:: target (options)
 
   .. index:: target function attribute
 

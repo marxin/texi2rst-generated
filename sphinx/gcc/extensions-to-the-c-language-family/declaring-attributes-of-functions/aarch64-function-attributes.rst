@@ -13,7 +13,7 @@ AArch64 target.  For the most part, these options mirror the behavior of
 similar command-line options (see :ref:`aarch64-options`), but on a
 per-function basis.
 
-.. option:: general-regs-only
+.. gcc-attr:: general-regs-only
 
   .. index:: general-regs-only function attribute, AArch64
 
@@ -23,7 +23,7 @@ per-function basis.
   the same behavior as that of the command-line option
   :option:`-mgeneral-regs-only`.
 
-.. option:: fix-cortex-a53-835769
+.. gcc-attr:: fix-cortex-a53-835769
 
   .. index:: fix-cortex-a53-835769 function attribute, AArch64
 
@@ -33,7 +33,7 @@ per-function basis.
   This corresponds to the behavior of the command line options
   :option:`-mfix-cortex-a53-835769` and :option:`-mno-fix-cortex-a53-835769`.
 
-.. option:: cmodel=
+.. gcc-attr:: cmodel=
 
   .. index:: cmodel= function attribute, AArch64
 
@@ -41,17 +41,17 @@ per-function basis.
   this function.  The behavior and permissible arguments are the same as
   for the command line option :option:`-mcmodel` =.
 
-.. option:: strict-align
+.. gcc-attr:: strict-align
 
   .. index:: strict-align function attribute, AArch64
 
-  :option:`strict-align` indicates that the compiler should not assume that unaligned
+  :gcc-attr:`strict-align` indicates that the compiler should not assume that unaligned
   memory references are handled by the system.  To allow the compiler to assume
   that aligned memory references are handled by the system, the inverse attribute
   ``no-strict-align`` can be specified.  The behavior is same as for the
   command-line option :option:`-mstrict-align` and :option:`-mno-strict-align`.
 
-.. option:: omit-leaf-frame-pointer
+.. gcc-attr:: omit-leaf-frame-pointer
 
   .. index:: omit-leaf-frame-pointer function attribute, AArch64
 
@@ -61,7 +61,7 @@ per-function basis.
   the same behavior as the command-line options :option:`-momit-leaf-frame-pointer`
   and :option:`-mno-omit-leaf-frame-pointer`.
 
-.. option:: tls-dialect=
+.. gcc-attr:: tls-dialect=
 
   .. index:: tls-dialect= function attribute, AArch64
 
@@ -69,7 +69,7 @@ per-function basis.
   permissible arguments are the same as for the command-line option
   :option:`-mtls-dialect` =.
 
-.. option:: arch=
+.. gcc-attr:: arch=
 
   .. index:: arch= function attribute, AArch64
 
@@ -77,7 +77,7 @@ per-function basis.
   for this function.  The behavior and permissible arguments are the same as
   for the :option:`-march` = command-line option.
 
-.. option:: tune=
+.. gcc-attr:: tune=
 
   .. index:: tune= function attribute, AArch64
 
@@ -85,7 +85,7 @@ per-function basis.
   The behavior and permissible arguments are the same as for the :option:`-mtune` =
   command-line option.
 
-.. option:: cpu=
+.. gcc-attr:: cpu=
 
   .. index:: cpu= function attribute, AArch64
 
@@ -93,17 +93,17 @@ per-function basis.
   whose architectural features to use.  The behavior and valid arguments are the
   same as for the :option:`-mcpu` = command-line option.
 
-.. option:: sign-return-address
+.. gcc-attr:: sign-return-address
 
   .. index:: sign-return-address function attribute, AArch64
 
   Select the function scope on which return address signing will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
   :option:`-msign-return-address` =.  The default value is ``none``.  This
-  attribute is deprecated.  The :option:`branch-protection` attribute should
+  attribute is deprecated.  The :gcc-attr:`branch-protection` attribute should
   be used instead.
 
-.. option:: branch-protection
+.. gcc-attr:: branch-protection
 
   .. index:: branch-protection function attribute, AArch64
 
@@ -111,7 +111,7 @@ per-function basis.
   behavior and permissible arguments are the same as for the command-line option
   :option:`-mbranch-protection` =.  The default value is ``none``.
 
-.. option:: outline-atomics
+.. gcc-attr:: outline-atomics
 
   .. index:: outline-atomics function attribute, AArch64
 
@@ -188,5 +188,5 @@ function compiled with :option:`-mstrict-align` is allowed.
 
 Note that CPU tuning options and attributes such as the :option:`-mcpu`,
 :option:`-mtune` do not inhibit inlining unless the CPU specified by the
-:option:`-mcpu` option or the option:`cpu=` attribute conflicts with the
+:option:`-mcpu` option or the :gcc-attr:`cpu=` attribute conflicts with the
 architectural feature rules specified above.
