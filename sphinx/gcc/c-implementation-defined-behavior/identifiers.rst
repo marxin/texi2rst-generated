@@ -12,7 +12,7 @@ Identifiers
   and their correspondence to universal character names (C99 and C11 6.4.2).
 
   See :ref:`Implementation-defined
-  behavior <implementation-defined-behavior>`.
+  behavior <cpp:implementation-defined-behavior>`.
 
 * The number of significant initial characters in an identifier
   (C90 6.1.2, C90, C99 and C11 5.2.4.1, C99 and C11 6.4.2).

@@ -121,7 +121,7 @@ avr
 
 ATMEL AVR-family micro controllers.  These are used in embedded
 applications.  There are no standard Unix configurations.
-See :ref:`AVR Options <avr-options>`,
+See :ref:`AVR Options <gcc:avr-options>`,
 for the list of supported MCU types.
 
 Use :samp:`configure --target=avr --enable-languages="c"` to configure GCC.
@@ -145,7 +145,7 @@ Blackfin
 ========
 
 The Blackfin processor, an Analog Devices DSP.
-See :ref:`Blackfin Options <blackfin-options>`,
+See :ref:`Blackfin Options <gcc:blackfin-options>`,
 
 More information, and a version of binutils with support for this processor,
 are available at https://sourceforge.net/projects/adi-toolchain/.
@@ -156,7 +156,7 @@ CR16
 The CR16 CompactRISC architecture is a 16-bit architecture. This
 architecture is used in embedded applications.
 
-See :ref:`CR16 Options <cr16-options>`,
+See :ref:`CR16 Options <gcc:cr16-options>`,
 
 Use :samp:`configure --target=cr16-elf --enable-languages=c,c++` to configure
 GCCfor building a CR16 elf cross-compiler.
@@ -170,7 +170,7 @@ CRIS
 CRIS is the CPU architecture in Axis Communications ETRAX system-on-a-chip
 series.  These are used in embedded applications.
 
-See :ref:`CRIS Options <cris-options>`,
+See :ref:`CRIS Options <gcc:cris-options>`,
 for a list of CRIS-specific options.
 
 There are a few different CRIS targets:

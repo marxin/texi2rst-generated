@@ -24,7 +24,7 @@ remainder.
 
 The :command:`gccgo` command is a frontend to :command:`gcc` and
 supports many of the same options.  See :ref:`Option
-Summary <option-summary>`.  This manual
+Summary <gcc:option-summary>`.  This manual
 only documents the options specific to :command:`gccgo`.
 
 The :command:`gccgo` command may be used to compile Go source code into
@@ -206,7 +206,7 @@ Options
 
   .. index:: -g for gccgo
 
-  This is the standard :command:`gcc` option (see :ref:`Debugging Options <debugging-options>`).  It
+  This is the standard :command:`gcc` option (see :ref:`Debugging Options <gcc:debugging-options>`).  It
   is mentioned here because by default :command:`gccgo` turns on
   debugging information generation with the equivalent of the standard
   option :option:`-g1`.  This is because Go programs require debugging

@@ -23,7 +23,7 @@ listed as 'determined by ABI' below.  See :ref:`Binary
 Compatibility <compatibility>`, and http://gcc.gnu.org/readings.html.  Some
 choices are documented in the preprocessor manual.
 See :ref:`Implementation-defined
-behavior <implementation-defined-behavior>`.  Some choices are made by the
+behavior <cpp:implementation-defined-behavior>`.  Some choices are made by the
 library and operating system (or other environment when compiling for
 a freestanding environment); refer to their documentation for details.
 

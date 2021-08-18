@@ -24,7 +24,7 @@ Description
 ^^^^^^^^^^^
 
 The :command:`gdc` command is the GNU compiler for the D language and
-supports many of the same options as :command:`gcc`.  See :ref:`Option Summary <option-summary>`.
+supports many of the same options as :command:`gcc`.  See :ref:`Option Summary <gcc:option-summary>`.
 This manual only documents the options specific to :command:`gdc`.
 
 .. toctree::

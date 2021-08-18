@@ -1835,7 +1835,7 @@ guarantees that your improvements won't be lost, this usage of Local
 Register Variables is discouraged.
 
 On the MIPS platform, there is related use for local register variables 
-with slightly different characteristics (see :ref:`Defining coprocessor specifics for MIPS targets <mips-coprocessors>`).
+with slightly different characteristics (see :ref:`Defining coprocessor specifics for MIPS targets <gccint:mips-coprocessors>`).
 
 .. _size-of-an-asm:
 

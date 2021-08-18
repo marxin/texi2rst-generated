@@ -312,7 +312,7 @@ accepts:
   all architectures are supported for this feature.
 
   For more information on GCC's support for transactional memory,
-  See :ref:`The GNU Transactional Memory Library <enabling-libitm>`.
+  See :ref:`The GNU Transactional Memory Library <libitm:enabling-libitm>`.
 
   Note that the transactional memory feature is not supported with
   non-call exceptions (:option:`-fnon-call-exceptions`).
@@ -334,7 +334,7 @@ accepts:
 
   The preprocessor macros ``__GNUC_GNU_INLINE__`` and
   ``__GNUC_STDC_INLINE__`` may be used to check which semantics are
-  in effect for ``inline`` functions.  See :ref:`common-predefined-macros`.
+  in effect for ``inline`` functions.  See :ref:`cpp:common-predefined-macros`.
 
 .. option:: -fhosted
 

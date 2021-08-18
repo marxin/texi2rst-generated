@@ -126,7 +126,7 @@ them are freed.  These macros should appear before any use of obstacks
 in the source file.
 
 Usually these are defined to use ``malloc`` via the intermediary
-``xmalloc`` (see :ref:`unconstrained-allocation`).  This is done with
+``xmalloc`` (see :ref:`libc:unconstrained-allocation`).  This is done with
 the following pair of macro definitions:
 
 .. code-block:: c++
@@ -194,7 +194,7 @@ Variable obstack_alloc_failed_handlerThe value of this variable is a pointer to 
 ``obstack`` uses when ``obstack_chunk_alloc`` fails to allocate
 memory.  The default action is to print a message and abort.
 You should supply a function that either calls ``exit``
-(see :ref:`program-termination`) or ``longjmp`` (see :ref:`non-local-exits`) and doesn't return.
+(see :ref:`libc:program-termination`) or ``longjmp`` (see :ref:`libc:non-local-exits`) and doesn't return.
 
 .. code-block:: c++
 
@@ -268,7 +268,7 @@ example of its use:
   }
 
 Contrast this with the previous example of ``savestring`` using
-``malloc`` (see :ref:`basic-allocation`).
+``malloc`` (see :ref:`libc:basic-allocation`).
 
 .. _freeing-obstack-objects:
 

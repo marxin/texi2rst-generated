@@ -309,7 +309,7 @@ The following attributes are supported on most targets.
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
   request an integer or floating-point type according to its width.
 
-  See :ref:`machine-modes`,
+  See :ref:`gccint:machine-modes`,
   for a list of the possible keywords for :samp:`{mode}`.
   You may also specify a mode of ``byte`` or ``__byte__`` to
   indicate the mode corresponding to a one-byte integer, ``word`` or

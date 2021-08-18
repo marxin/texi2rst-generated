@@ -29,7 +29,7 @@ how to port them to new targets and some information about how to
 write front ends for new languages.  It corresponds to the compilers
 |package_version|
 version |gcc_version|.  The use of the GNU compilers is documented in a
-separate manual.  See :ref:`Introduction <top>`.
+separate manual.  See :ref:`Introduction <gcc:top>`.
 
 This manual is mainly a reference manual rather than a tutorial.  It
 discusses how to contribute to GCC (see :ref:`contributing`), the

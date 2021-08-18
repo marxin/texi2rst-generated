@@ -51,7 +51,7 @@ Fortran source.
   This path is also used to search for :samp:`.mod` files when previously
   compiled modules are required by a ``USE`` statement.
 
-  See :ref:`Options for Directory Search <directory-options>`, for information on the
+  See :ref:`Options for Directory Search <gcc:directory-options>`, for information on the
   :option:`-I` option.
 
 .. option:: -Jdir

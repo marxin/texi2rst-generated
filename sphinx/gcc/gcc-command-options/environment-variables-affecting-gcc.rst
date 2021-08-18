@@ -22,7 +22,7 @@ Note that you can also specify places to search using options such as
 :option:`-B`, :option:`-I` and :option:`-L` (see :ref:`directory-options`).  These
 take precedence over places specified using environment variables, which
 in turn take precedence over those specified by the configuration of GCC.
-See :ref:`driver`.
+See :ref:`gccint:driver`.
 
 .. envvar:: LANG
 
