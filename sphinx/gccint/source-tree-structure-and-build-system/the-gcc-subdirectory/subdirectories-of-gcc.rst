@@ -16,8 +16,8 @@ The :samp:`gcc` directory contains the following subdirectories:
   the subdirectories :samp:`c` (for C), :samp:`cp` (for C++),
   :samp:`objc` (for Objective-C), :samp:`objcp` (for Objective-C++),
   and :samp:`lto` (for LTO) are documented in this
-  manual (see :ref:`Passes and Files of the Compiler <passes>`);
-  those for other languages are not.  See :ref:`Anatomy of a Language Front End <front-end>`, for details of the files in these
+  manual (see :ref:`passes`);
+  those for other languages are not.  See :ref:`front-end`, for details of the files in these
   directories.
 
 :samp:`common`
@@ -28,7 +28,7 @@ The :samp:`gcc` directory contains the following subdirectories:
 
 :samp:`config`
   Configuration files for supported architectures and operating
-  systems.  See :ref:`Anatomy of a Target Back End <back-end>`, for
+  systems.  See :ref:`back-end`, for
   details of the files in this directory.
 
 :samp:`doc`
@@ -38,8 +38,7 @@ The :samp:`gcc` directory contains the following subdirectories:
 
 :samp:`ginclude`
   System headers installed by GCC, mainly those required by the C
-  standard of freestanding implementations.  See :ref:`Headers
-  Installed by GCC <headers>`, for details of when these and other headers are
+  standard of freestanding implementations.  See :ref:`headers`, for details of when these and other headers are
   installed.
 
 :samp:`po`

@@ -548,7 +548,7 @@ warn at all unless optimization is enabled.
   particular library's limitations.  However, if :option:`-Wpedantic` is used
   with :option:`-Wformat`, warnings are given about format features not
   in the selected standard version (but not for ``strfmon`` formats,
-  since those are not in any version of the C standard).  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+  since those are not in any version of the C standard).  See :ref:`c-dialect-options`.
 
   .. option:: -Wformat=1
 
@@ -2412,7 +2412,7 @@ warn at all unless optimization is enabled.
 
   Warn about declarations using the ``alias`` and similar attributes whose
   target is incompatible with the type of the alias.
-  See :ref:`Declaring Attributes of Functions <function-attributes>`.
+  See :ref:`function-attributes`.
 
   ``-Wattribute-alias=1``
     The default warning level of the :option:`-Wattribute-alias` option diagnoses
@@ -4070,8 +4070,7 @@ warn at all unless optimization is enabled.
     C and Objective-C only
 
   Warn if an initialized field without side effects is overridden when
-  using designated initializers (see :ref:`Designated
-  Initializers <designated-inits>`).
+  using designated initializers (see :ref:`designated-inits`).
 
   This warning is included in :option:`-Wextra`.  To get other
   :option:`-Wextra` warnings without this one, use :option:`-Wextra
@@ -4088,8 +4087,7 @@ warn at all unless optimization is enabled.
     C and Objective-C only
 
   Do not warn if an initialized field with side effects is overridden when
-  using designated initializers (see :ref:`Designated
-  Initializers <designated-inits>`).  This warning is enabled by default.
+  using designated initializers (see :ref:`designated-inits`).  This warning is enabled by default.
 
 .. option:: -Woverride-init-side-effects
 

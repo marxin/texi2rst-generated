@@ -56,14 +56,12 @@ accepts:
 
   Functions that are normally built in but do not have semantics
   defined by ISO C (such as ``alloca`` and ``ffs``) are not built-in
-  functions when :option:`-ansi` is used.  See :ref:`Other
-  built-in functions provided by GCC <other-builtins>`, for details of the functions
+  functions when :option:`-ansi` is used.  See :ref:`other-builtins`, for details of the functions
   affected.
 
 .. option:: -std=
 
-  Determine the language standard. See :ref:`Language Standards
-  Supported by GCC <standards>`, for details of these standard versions.  This option
+  Determine the language standard. See :ref:`standards`, for details of these standard versions.  This option
   is currently only supported when compiling C or C++.
 
   The compiler can accept several base standards, such as :samp:`c90` or
@@ -238,8 +236,7 @@ accepts:
   .. index:: built-in functions
 
   Don't recognize built-in functions that do not begin with
-  :samp:`__builtin_` as prefix.  See :ref:`Other built-in
-  functions provided by GCC <other-builtins>`, for details of the functions affected,
+  :samp:`__builtin_` as prefix.  See :ref:`other-builtins`, for details of the functions affected,
   including those which are not built-in functions when :option:`-ansi` or
   :option:`-std` options for strict ISO C conformance are used because they
   do not have an ISO standard meaning.
@@ -293,7 +290,7 @@ accepts:
   not necessarily be at ``main``.  The most obvious example is an OS kernel.
   This is equivalent to :option:`-fno-hosted`.
 
-  See :ref:`Language Standards Supported by GCC <standards>`, for details of
+  See :ref:`standards`, for details of
   freestanding and hosted environments.
 
 .. option:: -fgimple
@@ -312,7 +309,7 @@ accepts:
   all architectures are supported for this feature.
 
   For more information on GCC's support for transactional memory,
-  See :ref:`The GNU Transactional Memory Library <libitm:enabling-libitm>`.
+  See :ref:`libitm:enabling-libitm`.
 
   Note that the transactional memory feature is not supported with
   non-call exceptions (:option:`-fnon-call-exceptions`).
@@ -321,7 +318,7 @@ accepts:
 
   The option :option:`-fgnu89-inline` tells GCC to use the traditional
   GNU semantics for ``inline`` functions when in C99 mode.
-  See :ref:`An Inline Function is As Fast As a Macro <inline>`.
+  See :ref:`inline`.
   Using this option is roughly equivalent to adding the
   :gcc-attr:`gnu_inline` function attribute to all inline functions
   (see :ref:`function-attributes`).
@@ -367,8 +364,7 @@ accepts:
     };
 
   Some cases of unnamed fields in structures and unions are only
-  accepted with this option.  See :ref:`Unnamed struct/union
-  fields within structs/unions <unnamed-fields>`, for details.
+  accepted with this option.  See :ref:`unnamed-fields`, for details.
 
   Note that this option is off for all targets except for x86
   targets using ms-abi.
@@ -484,8 +480,7 @@ accepts:
   This enables :option:`-fms-extensions`, permits passing pointers to
   structures with anonymous fields to functions that expect pointers to
   elements of the type of the field, and permits referring to anonymous
-  fields declared using a typedef.  See :ref:`Unnamed
-  struct/union fields within structs/unions <unnamed-fields>`, for details.  This is only
+  fields declared using a typedef.  See :ref:`unnamed-fields`, for details.  This is only
   supported for C, not C++.
 
 .. option:: -fsigned-bitfields, -funsigned-bitfields, -fno-signed-bitfields, -fno-unsigned-bitfields

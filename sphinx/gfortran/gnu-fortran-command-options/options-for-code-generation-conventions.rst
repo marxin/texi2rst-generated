@@ -650,7 +650,7 @@ it.
   At the moment, this option only affects ``FORALL`` and
   ``DO CONCURRENT`` statements with several forall triplets.
 
-See :ref:`Options for Code Generation Conventions <gcc:code-gen-options>`, for information on more options
+See :ref:`gcc:code-gen-options`, for information on more options
 offered by the GBE
 shared by :command:`gfortran`, :command:`gcc`, and other GNU compilers.
 

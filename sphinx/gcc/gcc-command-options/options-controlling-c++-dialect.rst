@@ -29,7 +29,7 @@ language supported by GCC.
 
 Some options for compiling C programs, such as :option:`-std`, are also
 relevant for C++ programs.
-See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+See :ref:`c-dialect-options`.
 
 Here is a list of options that are *only* for compiling C++ programs:
 

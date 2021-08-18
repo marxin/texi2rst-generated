@@ -26,7 +26,7 @@ GCC contains the following C language testsuites, in the
 :samp:`gcc.dg/compat`
   This subdirectory contains tests for binary compatibility using
   :samp:`lib/compat.exp`, which in turn uses the language-independent support
-  (see :ref:`Support for testing binary compatibility <compat-testing>`).
+  (see :ref:`compat-testing`).
 
 :samp:`gcc.dg/cpp`
   This subdirectory contains tests of the preprocessor.
@@ -94,12 +94,11 @@ GCC contains the following C language testsuites, in the
     Test :option:`-fbranch-probabilities` using
     :samp:`gcc.misc-tests/bprob.exp`, which
     in turn uses the generic, language-independent framework
-    (see :ref:`Support for testing profile-directed
-    optimizations <profopt-testing>`).
+    (see :ref:`profopt-testing`).
 
   :samp:`gcov*.c`
     Test :command:`gcov` output using :samp:`gcov.exp`, which in turn uses the
-    language-independent support (see :ref:`Support for testing gcov <gcov-testing>`).
+    language-independent support (see :ref:`gcov-testing`).
 
   :samp:`i386-pf-*.c`
     Test i386-specific support for data prefetch using :samp:`i386-prefetch.exp`.

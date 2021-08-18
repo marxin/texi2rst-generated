@@ -80,8 +80,7 @@ in the configuration process, and are not used in the subsequent
 build; these are not documented.
 
 * :samp:`Makefile` is constructed from :samp:`Makefile.in`, together with
-  the host and target fragments (see :ref:`Makefile
-  Fragments <fragments>`) :samp:`t-{target}` and :samp:`x-{host}` from
+  the host and target fragments (see :ref:`fragments`) :samp:`t-{target}` and :samp:`x-{host}` from
   :samp:`config`, if any, and language Makefile fragments
   :samp:`{language}/Make-lang.in`.
 

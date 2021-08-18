@@ -15,7 +15,7 @@ Here is a summary of all the options specific to GNU Fortran, grouped
 by type.  Explanations are in the following sections.
 
 *Fortran Language Options*
-  See :ref:`Options controlling Fortran dialect <fortran-dialect-options>`.
+  See :ref:`fortran-dialect-options`.
 
   :option:`-fall-intrinsics` :option:`-fallow-argument-mismatch` :option:`-fallow-invalid-boz` 
   :option:`-fbackslash` :option:`-fcray-pointer` :option:`-fd-lines-as-code` :option:`-fd-lines-as-comments` 
@@ -31,7 +31,7 @@ by type.  Explanations are in the following sections.
   :option:`-freal-8-real-16` :option:`-freal-8-real-4` :option:`-std`:samp:`={std}` :option:`-ftest-forall-temp`
 
 *Preprocessing Options*
-  See :ref:`Enable and customize preprocessing <preprocessing-options>`.
+  See :ref:`preprocessing-options`.
 
   :option:`-A-`:samp:`{question}` [= :samp:`{answer}` ]
   :option:`-A`:samp:`{question}` = :samp:`{answer}` :option:`-C` :option:`-CC` :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]
@@ -43,8 +43,7 @@ by type.  Explanations are in the following sections.
   :option:`-undef`
 
 *Error and Warning Options*
-  See :ref:`Options to request or suppress errors
-  and warnings <error-and-warning-options>`.
+  See :ref:`error-and-warning-options`.
 
   :option:`-Waliasing` :option:`-Wall` :option:`-Wampersand` :option:`-Warray-bounds` 
   :option:`-Wc-binding-type` :option:`-Wcharacter-truncation` :option:`-Wconversion` 
@@ -58,35 +57,35 @@ by type.  Explanations are in the following sections.
   :option:`-pedantic-errors` 
 
 *Debugging Options*
-  See :ref:`Options for debugging your program or GNU Fortran <debugging-options>`.
+  See :ref:`debugging-options`.
 
   :option:`-fbacktrace` :option:`-fdump-fortran-optimized` :option:`-fdump-fortran-original` 
   :option:`-fdebug-aux-vars` :option:`-fdump-fortran-global` :option:`-fdump-parse-tree` :option:`-ffpe-trap`:samp:`={list}` 
   :option:`-ffpe-summary`:samp:`={list}`
 
 *Directory Options*
-  See :ref:`Options for directory search <directory-options>`.
+  See :ref:`directory-options`.
 
   :option:`-I`:samp:`{dir}`  :option:`-J`:samp:`{dir}` :option:`-fintrinsic-modules-path` :samp:`{dir}`
 
 *Link Options*
-  See :ref:`Options for influencing the linking step <link-options>`.
+  See :ref:`link-options`.
 
   :option:`-static-libgfortran`
 
 *Runtime Options*
-  See :ref:`Options for influencing runtime behavior <runtime-options>`.
+  See :ref:`runtime-options`.
 
   :option:`-fconvert`:samp:`={conversion}` :option:`-fmax-subrecord-length`:samp:`={length}` 
   :option:`-frecord-marker`:samp:`={length}` :option:`-fsign-zero`
 
 *Interoperability Options*
-  See :ref:`Options for interoperability <interoperability-options>`.
+  See :ref:`interoperability-options`.
 
   :option:`-fc-prototypes` :option:`-fc-prototypes-external`
 
 *Code Generation Options*
-  See :ref:`Options for code generation conventions <code-gen-options>`.
+  See :ref:`code-gen-options`.
 
   :option:`-faggressive-function-elimination` :option:`-fblas-matmul-limit`:samp:`={n}` 
   :option:`-fbounds-check` :option:`-ftail-call-workaround` :option:`-ftail-call-workaround`:samp:`={n}` 

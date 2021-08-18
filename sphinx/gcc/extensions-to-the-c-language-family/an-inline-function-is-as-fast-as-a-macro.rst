@@ -106,7 +106,7 @@ reason for the failure.
 As required by ISO C++, GCC considers member functions defined within
 the body of a class to be marked inline even if they are
 not explicitly declared with the ``inline`` keyword.  You can
-override this with :option:`-fno-default-inline` ; see :ref:`Options Controlling C++ Dialect <c++-dialect-options>`.
+override this with :option:`-fno-default-inline` ; see :ref:`c++-dialect-options`.
 
 GCC does not inline any functions when not optimizing unless you specify
 the :samp:`always_inline` attribute for the function, like this:

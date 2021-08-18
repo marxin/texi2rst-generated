@@ -17,7 +17,7 @@ can also use most of the C language extensions in your C++ programs).  If you
 want to write code that checks whether these features are available, you can
 test for the GNU compiler the same way as for C programs: check for a
 predefined macro ``__GNUC__``.  You can also use ``__GNUG__`` to
-test specifically for GNU C++ (see :ref:`Predefined Macros <cpp:common-predefined-macros>`).
+test specifically for GNU C++ (see :ref:`cpp:common-predefined-macros`).
 
 .. toctree::
   :maxdepth: 2

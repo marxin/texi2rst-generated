@@ -40,8 +40,8 @@ When you compile C++ programs, you may specify many of the same
 command-line options that you use for compiling programs in any
 language; or command-line options meaningful for C and related
 languages; or options that are meaningful only for C++ programs.
-See :ref:`Options Controlling C Dialect <c-dialect-options>`, for
+See :ref:`c-dialect-options`, for
 explanations of options for languages related to C.
-See :ref:`Options Controlling C++ Dialect <c++-dialect-options>`, for
+See :ref:`c++-dialect-options`, for
 explanations of options that are meaningful only for C++ programs.
 

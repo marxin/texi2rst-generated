@@ -588,7 +588,7 @@ Operands are separated by commas.  Each operand has this format:
   existing value) or :samp:`+` (when reading and writing). When using 
   :samp:`=`, do not assume the location contains the existing value
   on entry to the ``asm``, except 
-  when the operand is tied to an input; see :ref:`Input Operands <inputoperands>`.
+  when the operand is tied to an input; see :ref:`inputoperands`.
 
   After the prefix, there must be one or more additional constraints 
   (see :ref:`constraints`) that describe where the value resides. Common 
@@ -1835,7 +1835,7 @@ guarantees that your improvements won't be lost, this usage of Local
 Register Variables is discouraged.
 
 On the MIPS platform, there is related use for local register variables 
-with slightly different characteristics (see :ref:`Defining coprocessor specifics for MIPS targets <gccint:mips-coprocessors>`).
+with slightly different characteristics (see :ref:`gccint:mips-coprocessors`).
 
 .. _size-of-an-asm:
 

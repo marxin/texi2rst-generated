@@ -44,7 +44,7 @@ bugs.  It corresponds to the compilers
 version |gcc_version|.
 The internals of the GNU compilers, including how to port them to new
 targets and some information about how to write front ends for new
-languages, are documented in a separate manual.  See :ref:`Introduction <gccint:top>`.
+languages, are documented in a separate manual.  See :ref:`gccint:top`.
 
 .. toctree::
   :maxdepth: 2
