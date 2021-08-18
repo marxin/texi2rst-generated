@@ -16,7 +16,10 @@ The GCC garbage collector GGC is only invoked explicitly. In contrast
 with many other garbage collectors, it is not implicitly invoked by
 allocation routines when a lot of memory has been consumed. So the
 only way to have GGC reclaim storage is to call the ``ggc_collect``
-function explicitly.  This call is an expensive operation, as it may
+function explicitly.
+With :samp:`{mode}` ``GGC_COLLECT_FORCE`` or otherwise (default
+``GGC_COLLECT_HEURISTIC``) when the internal heuristic decides to
+collect, this call is potentially an expensive operation, as it may
 have to scan the entire heap.  Beware that local variables (on the GCC
 call stack) are not followed by such an invocation (as many other
 garbage collectors do): you should reference all your data from static

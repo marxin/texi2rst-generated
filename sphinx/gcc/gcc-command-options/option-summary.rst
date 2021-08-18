@@ -1020,7 +1020,8 @@ in the following sections.
   :option:`-mboard`:samp:`={name}`  :option:`-mnewlib`  :option:`-mhard-mul`  :option:`-mhard-div` 
   :option:`-msoft-mul`  :option:`-msoft-div` 
   :option:`-msoft-float`  :option:`-mhard-float`  :option:`-mdouble-float` :option:`-munordered-float` 
-  :option:`-mcmov`  :option:`-mror`  :option:`-mrori`  :option:`-msext`  :option:`-msfimm`  :option:`-mshftimm`
+  :option:`-mcmov`  :option:`-mror`  :option:`-mrori`  :option:`-msext`  :option:`-msfimm`  :option:`-mshftimm` 
+  :option:`-mcmodel`:samp:`={code-model}`
 
   *PDP-11 Options*
 

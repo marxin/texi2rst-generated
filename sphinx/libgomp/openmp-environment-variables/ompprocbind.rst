@@ -14,11 +14,12 @@ OMP_PROC_BIND -- Whether theads may be moved between CPUs
   Specifies whether threads may be moved between processors.  If set to
   ``TRUE``, OpenMP theads should not be moved; if set to ``FALSE``
   they may be moved.  Alternatively, a comma separated list with the
-  values ``MASTER``, ``CLOSE`` and ``SPREAD`` can be used to specify
-  the thread affinity policy for the corresponding nesting level.  With
-  ``MASTER`` the worker threads are in the same place partition as the
-  master thread.  With ``CLOSE`` those are kept close to the master thread
-  in contiguous place partitions.  And with ``SPREAD`` a sparse distribution
+  values ``PRIMARY``, ``MASTER``, ``CLOSE`` and ``SPREAD`` can
+  be used to specify the thread affinity policy for the corresponding nesting
+  level.  With ``PRIMARY`` and ``MASTER`` the worker threads are in the
+  same place partition as the primary thread.  With ``CLOSE`` those are
+  kept close to the primary thread in contiguous place partitions.  And
+  with ``SPREAD`` a sparse distribution
   across the place partitions is used.  Specifying more than one item in the
   list will automatically enable nesting by default.
 

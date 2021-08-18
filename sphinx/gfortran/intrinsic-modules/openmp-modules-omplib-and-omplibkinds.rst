@@ -67,6 +67,7 @@ kind ``omp_proc_bind_kind`` :
 
   omp_proc_bind_false
   omp_proc_bind_true
+  omp_proc_bind_primary
   omp_proc_bind_master
   omp_proc_bind_close
   omp_proc_bind_spread

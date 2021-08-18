@@ -83,3 +83,12 @@ These options are defined for OpenRISC:
   ``l.slli``) instructions.  By default extra instructions will be generated
   to store the immediate to a register first.
 
+.. option:: -mcmodel=small
+
+  Generate OpenRISC code for the small model: The GOT is limited to 64k. This is
+  the default model.
+
+.. option:: -mcmodel=large
+
+  Generate OpenRISC code for the large model: The GOT may grow up to 4G in size.
+
