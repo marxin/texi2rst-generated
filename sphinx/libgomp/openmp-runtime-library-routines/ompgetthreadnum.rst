@@ -13,7 +13,7 @@ omp_get_thread_num -- Current thread ID
   In a sequential parts of the program, ``omp_get_thread_num``
   always returns 0.  In parallel regions the return value varies
   from 0 to ``omp_get_num_threads`` -1 inclusive.  The return
-  value of the master thread of a team is always 0.
+  value of the primary thread of a team is always 0.
 
 :samp:`{C/C++}:`
 
