@@ -19,7 +19,7 @@ The :command:`gfortran` command supports all the options supported by the
 :command:`gcc` command.  Only options specific to GNU Fortran are documented
 here.
 
-See :ref:`GCC Command Options <invoking-gcc>`, for information
+See :ref:`GCC Command Options <gcc:invoking-gcc>`, for information
 on the non-Fortran-specific aspects of the :command:`gcc` command (and,
 therefore, the :command:`gfortran` command).
 
