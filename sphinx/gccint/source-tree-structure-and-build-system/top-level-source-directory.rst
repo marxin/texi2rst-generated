@@ -78,7 +78,7 @@ subdirectories that contain parts of GCC and its runtime libraries:
 
 :samp:`libiberty`
   The ``libiberty`` library, used for portability and for some
-  generally useful data structures and algorithms.  See :ref:`Introduction <top>`, for more information
+  generally useful data structures and algorithms.  See :ref:`Introduction <libiberty:top>`, for more information
   about this library.
 
 :samp:`libitm`
@@ -113,5 +113,5 @@ subdirectories that contain parts of GCC and its runtime libraries:
 The build system in the top level directory, including how recursion
 into subdirectories works and how building runtime libraries for
 multilibs is handled, is documented in a separate manual, included
-with GNU Binutils.  See :ref:`GNU configure and build system <top>`, for details.
+with GNU Binutils.  See :ref:`GNU configure and build system <configure:top>`, for details.
 

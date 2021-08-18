@@ -14,7 +14,7 @@ CPP has a small number of internal limits.  This section lists the
 limits which the C standard requires to be no lower than some minimum,
 and all the others known.  It is intended that there should be as few limits
 as possible.  If you encounter an undocumented or inconvenient limit,
-please report that as a bug.  See :ref:`Reporting Bugs <bugs>`.
+please report that as a bug.  See :ref:`Reporting Bugs <gcc:bugs>`.
 
 Where we say something is limited :dfn:`only by available memory`, that
 means that internal data structures impose no intrinsic limit, and space

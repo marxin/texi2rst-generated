@@ -277,7 +277,7 @@ standard rule in :samp:`gcc/Makefile.in` to the variable
 ``mostlyclean`` ``clean`` ``distclean`` ``maintainer-clean``
   The language parts of the standard GNU
   :samp:`*clean` targets.  See :ref:`Standard Targets for
-  Users <standard-targets>`, for details of the standard
+  Users <standards:standard-targets>`, for details of the standard
   targets.  For GCC, ``maintainer-clean`` should delete
   all generated files in the source directory that are not version-controlled,
   but should not delete anything that is.

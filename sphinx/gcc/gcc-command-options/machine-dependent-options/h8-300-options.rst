@@ -13,7 +13,7 @@ These :samp:`-m` options are defined for the H8/300 implementations:
 .. option:: -mrelax
 
   Shorten some address references at link time, when possible; uses the
-  linker option :option:`-relax`.  See :ref:`h8-300`, for a fuller description.
+  linker option :option:`-relax`.  See :ref:`ld:h8-300`, for a fuller description.
 
 .. option:: -mh
 

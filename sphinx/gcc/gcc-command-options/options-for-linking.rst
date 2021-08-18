@@ -186,7 +186,7 @@ not doing a link step.
   :option:`-nodefaultlibs` is :samp:`libgcc.a`, a library of internal subroutines
   which GCC uses to overcome shortcomings of particular machines, or special
   needs for some languages.
-  (See :ref:`Interfacing to GCC Output <interface>`,
+  (See :ref:`Interfacing to GCC Output <gccint:interface>`,
   for more discussion of :samp:`libgcc.a`.)
   In most cases, you need :samp:`libgcc.a` even when you want to avoid
   other standard libraries.  In other words, when you specify :option:`-nostdlib`
@@ -194,7 +194,7 @@ not doing a link step.
   This ensures that you have no unresolved references to internal GCC
   library subroutines.
   (An example of such an internal subroutine is ``__main``, used to ensure C++
-  constructors are called; see :ref:`collect2`.)
+  constructors are called; see :ref:`gccint:collect2`.)
 
 .. option:: -e entry, --entry=entry
 
