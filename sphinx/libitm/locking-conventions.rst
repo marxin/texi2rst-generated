@@ -22,8 +22,7 @@ transactions* (which (are about to) run in serial mode), and management tasks
 that do not execute within a transaction but have acquired the serial mode
 like a serial transaction would do (e.g., to be able to register threads with
 libitm). Transactions become active as soon as they have successfully used the
-serial lock to announce this globally (see :ref:`Serial lock
-implementation <serial-lock-impl>`). Likewise, transactions become serial transactions as soon as
+serial lock to announce this globally (see :ref:`serial-lock-impl`). Likewise, transactions become serial transactions as soon as
 they have acquired the exclusive rights provided by the serial lock (i.e.,
 serial mode, which also means that there are no other concurrent active or
 serial transactions). Note that active transactions can become serial
@@ -106,7 +105,7 @@ per-method-group locks, then TM methods need to avoid those deadlocks:
 
 * When upgrading to a serial transaction, after acquiring exclusive rights
   to the serial lock but before waiting for concurrent active transactions to
-  finish (see :ref:`Serial lock implementation <serial-lock-impl>` for details),
+  finish (see :ref:`serial-lock-impl` for details),
   we have to wake up all active transactions waiting on the upgrader's
   per-method-group locks.
 
@@ -145,7 +144,7 @@ active transactions; we can use the serial lock itself to protect this list
 (i.e., only threads that have acquired the serial lock can modify this list).
 
 We want starvation-freedom for the serial lock to allow for using it to ensure
-progress for potentially starved transactions (see :ref:`Progress Guarantees <progress-guarantees>` for details). However, this is currently not enforced by
+progress for potentially starved transactions (see :ref:`progress-guarantees` for details). However, this is currently not enforced by
 the implementation of the serial lock.
 
 Here is pseudo-code for the read/write fast paths of acquiring the serial

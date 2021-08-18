@@ -15,6 +15,5 @@ of the C library, and are not defined by GCC itself.
   and the source character set in translation phase 1 (C90, C99 and C11
   5.1.1.2).
 
-  See :ref:`Implementation-defined
-  behavior <cpp:implementation-defined-behavior>`.
+  See :ref:`cpp:implementation-defined-behavior`.
 

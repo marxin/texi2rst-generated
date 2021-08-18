@@ -413,8 +413,7 @@ optimizations to be performed is desired.
 
   This is a more fine-grained version of :option:`-fkeep-inline-functions`,
   which applies only to functions that are declared using the :gcc-attr:`dllexport`
-  attribute or declspec.  See :ref:`Declaring Attributes of
-  Functions <function-attributes>`.
+  attribute or declspec.  See :ref:`function-attributes`.
 
 .. option:: -fkeep-inline-dllexport
 

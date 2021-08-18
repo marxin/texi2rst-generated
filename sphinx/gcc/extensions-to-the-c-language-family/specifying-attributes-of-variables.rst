@@ -22,7 +22,7 @@ for functions (see :ref:`function-attributes`), labels (see :ref:`label-attribut
 enumerators (see :ref:`enumerator-attributes`), statements
 (see :ref:`statement-attributes`), and for types (see :ref:`type-attributes`).
 Other front ends might define more attributes
-(see :ref:`Extensions to the C++ Language <c++-extensions>`).
+(see :ref:`c++-extensions`).
 
 See :ref:`attribute-syntax`, for details of the exact syntax for using
 attributes.

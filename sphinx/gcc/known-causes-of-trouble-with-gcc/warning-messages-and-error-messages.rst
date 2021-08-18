@@ -48,6 +48,6 @@ such cases; :option:`-pedantic-errors` says to make them errors instead.
 This does not mean that *all* non-ISO constructs get warnings
 or errors.
 
-See :ref:`Options to Request or Suppress Warnings <warning-options>`, for
+See :ref:`warning-options`, for
 more detail on these and related command-line options.
 

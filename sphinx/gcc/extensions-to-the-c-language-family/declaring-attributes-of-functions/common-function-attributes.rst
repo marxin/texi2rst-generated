@@ -514,7 +514,7 @@ The following attributes are supported on most targets.
   ``vsscanf`` are also checked.  Except in strictly conforming C
   standard modes, the X/Open function ``strfmon`` is also checked as
   are ``printf_unlocked`` and ``fprintf_unlocked``.
-  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+  See :ref:`c-dialect-options`.
 
   For Objective-C dialects, ``NSString`` (or ``__NSString__``) is
   recognized in the same context.  Declarations including these format attributes
@@ -523,8 +523,7 @@ The following attributes are supported on most targets.
   compiler.
 
   The target may also provide additional types of format checks.
-  See :ref:`Format Checks Specific to Particular
-  Target Machines <target-format-checks>`.
+  See :ref:`target-format-checks`.
 
 .. option:: format_arg (string-index)
 
@@ -576,16 +575,14 @@ The following attributes are supported on most targets.
   ``dcgettext`` in this manner except when strict ISO C support is
   requested by :option:`-ansi` or an appropriate :option:`-std` option, or
   :option:`-ffreestanding` or :option:`-fno-builtin`
-  is used.  See :ref:`Options
-  Controlling C Dialect <c-dialect-options>`.
+  is used.  See :ref:`c-dialect-options`.
 
   For Objective-C dialects, the ``format-arg`` attribute may refer to an
   ``NSString`` reference for compatibility with the ``format`` attribute
   above.
 
   The target may also allow additional types in ``format-arg`` attributes.
-  See :ref:`Format Checks Specific to Particular
-  Target Machines <target-format-checks>`.
+  See :ref:`target-format-checks`.
 
 .. gcc-attr:: gnu_inline
 
@@ -620,8 +617,7 @@ The following attributes are supported on most targets.
   measure and as a useful feature in its own right.  This attribute is
   available in GCC 4.1.3 and later.  It is available if either of the
   preprocessor macros ``__GNUC_GNU_INLINE__`` or
-  ``__GNUC_STDC_INLINE__`` are defined.  See :ref:`An Inline
-  Function is As Fast As a Macro <inline>`.
+  ``__GNUC_STDC_INLINE__`` are defined.  See :ref:`inline`.
 
   In C++, this attribute does not depend on ``extern`` in any way,
   but it still requires the ``inline`` keyword to enable its special
@@ -1413,7 +1409,7 @@ The following attributes are supported on most targets.
   command line.  One or more strings can be provided as arguments.
   Each string consists of one or more comma-separated suffixes to
   the ``-m`` prefix jointly forming the name of a machine-dependent
-  option.  See :ref:`Machine-Dependent Options <submodel-options>`.
+  option.  See :ref:`submodel-options`.
 
   The ``target`` attribute can be used for instance to have a function
   compiled with a different ISA (instruction set architecture) than the

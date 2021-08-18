@@ -12,7 +12,7 @@ The :samp:`gcc` directory contains many files that are part of the C
 sources of GCC, other files used as part of the configuration and
 build process, and subdirectories including documentation and a
 testsuite.  The files that are sources of GCC are documented in a
-separate chapter.  See :ref:`Passes and Files of the Compiler <passes>`.
+separate chapter.  See :ref:`passes`.
 
 .. toctree::
   :maxdepth: 2

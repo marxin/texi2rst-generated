@@ -103,8 +103,7 @@ program analysis purposes.
 
   * For profile-directed optimizations, compile the source files again with
     the same optimization and code generation options plus
-    :option:`-fbranch-probabilities` (see :ref:`Options that
-    Control Optimization <optimize-options>`).
+    :option:`-fbranch-probabilities` (see :ref:`optimize-options`).
 
   * For test coverage analysis, use :command:`gcov` to produce human readable
     information from the :samp:`.gcno` and :samp:`.gcda` files.  Refer to the

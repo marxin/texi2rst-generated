@@ -65,7 +65,7 @@ statements (see :ref:`statement-attributes`),
 and types (see :ref:`type-attributes`).
 
 There is some overlap between the purposes of attributes and pragmas
-(see :ref:`Pragmas Accepted by GCC <pragmas>`).  It has been
+(see :ref:`pragmas`).  It has been
 found convenient to use ``__attribute__`` to achieve a natural
 attachment of attributes to their corresponding declarations, whereas
 ``#pragma`` is of use for compatibility with other compilers

@@ -6,7 +6,7 @@ assembly and linking.  The 'overall options' allow you to stop this
 process at an intermediate stage.  For example, the :option:`-c` option
 says not to run the linker.  Then the output consists of object files
 output by the assembler.
-See :ref:`Options Controlling the Kind of Output <overall-options>`.
+See :ref:`overall-options`.
 
 Other options are passed on to one or more stages of processing.  Some options
 control the preprocessor and others the compiler itself.  Yet other
@@ -35,7 +35,7 @@ The usual way to run GCC is to run the executable called :samp:`gcc`, or
 :samp:`{machine}-gcc` when cross-compiling, or
 :samp:`{machine}-gcc-{version}` to run a specific version of GCC.
 When you compile C++ programs, you should invoke GCC as :samp:`g++` 
-instead.  See :ref:`Compiling C++ Programs <invoking-g++>`, 
+instead.  See :ref:`invoking-g++`, 
 for information about the differences in behavior between :samp:`gcc` 
 and :samp:`g++` when compiling C++ programs.
 

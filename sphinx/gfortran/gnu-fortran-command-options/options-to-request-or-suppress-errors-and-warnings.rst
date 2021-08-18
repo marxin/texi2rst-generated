@@ -510,8 +510,7 @@ by GNU Fortran:
 
   Turns all warnings into errors.
 
-See :ref:`Options to Request or Suppress Errors and
-Warnings <gcc:warning-options>`, for information on
+See :ref:`gcc:warning-options`, for information on
 more options offered by the GBE shared by :command:`gfortran`, :command:`gcc`
 and other GNU compilers.
 

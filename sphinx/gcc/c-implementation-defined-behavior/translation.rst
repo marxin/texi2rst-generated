@@ -17,6 +17,5 @@ Translation
   new-line is retained or replaced by one space character in translation
   phase 3 (C90, C99 and C11 5.1.1.2).
 
-  See :ref:`Implementation-defined
-  behavior <cpp:implementation-defined-behavior>`.
+  See :ref:`cpp:implementation-defined-behavior`.
 

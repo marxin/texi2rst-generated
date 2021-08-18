@@ -14,7 +14,6 @@ GNU Fortran Command Options
 
 .. index:: options, gfortran command
 
-
 .. toctree::
   :maxdepth: 2
 

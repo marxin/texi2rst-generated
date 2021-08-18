@@ -12,7 +12,7 @@ Here is a summary of all the options, grouped by type.  Explanations are
 in the following sections.
 
 *Overall Options*
-  See :ref:`Options Controlling the Kind of Output <overall-options>`.
+  See :ref:`overall-options`.
 
   :option:`-c`  :option:`-S`  :option:`-E`  :option:`-o` :samp:`{file}` 
   :option:`-dumpbase` :samp:`{dumpbase}`  :option:`-dumpbase-ext` :samp:`{auxdropsuf}` 
@@ -24,7 +24,7 @@ in the following sections.
   :option:`-fdump-ada-spec`:samp:`[-{slim}]` :option:`-fada-spec-parent`:samp:`={unit}`  :option:`-fdump-go-spec`:samp:`={file}`
 
 *C Language Options*
-  See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+  See :ref:`c-dialect-options`.
 
   :option:`-ansi`  :option:`-std`:samp:`={standard}`  :option:`-aux-info` :samp:`{filename}` 
   :option:`-fallow-parameterless-variadic-functions`  :option:`-fno-asm`  
@@ -39,7 +39,7 @@ in the following sections.
   :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct`:samp:`={endianness}`
 
 *C++ Language Options*
-  See :ref:`Options Controlling C++ Dialect <c++-dialect-options>`.
+  See :ref:`c++-dialect-options`.
 
   :option:`-fabi-version`:samp:`={n}`  :option:`-fno-access-control` 
   :option:`-faligned-new`:samp:`={n}`  :option:`-fargs-in-order`:samp:`={n}`  :option:`-fchar8_t`  :option:`-fcheck-new` 
@@ -101,8 +101,7 @@ in the following sections.
   :option:`-Wno-virtual-move-assign`  :option:`-Wvolatile`  :option:`-Wzero-as-null-pointer-constant`
 
 *Objective-C and Objective-C++ Language Options*
-  See :ref:`Options Controlling
-  Objective-C and Objective-C++ Dialects <objective-c-and-objective-c++-dialect-options>`.
+  See :ref:`objective-c-and-objective-c++-dialect-options`.
 
   :option:`-fconstant-string-class`:samp:`={class-name}` 
   :option:`-fgnu-runtime`  :option:`-fnext-runtime` 
@@ -125,7 +124,7 @@ in the following sections.
   :option:`-Wundeclared-selector`
 
 *Diagnostic Message Formatting Options*
-  See :ref:`Options to Control Diagnostic Messages Formatting <diagnostic-message-formatting-options>`.
+  See :ref:`diagnostic-message-formatting-options`.
 
   :option:`-fmessage-length`:samp:`={n}`  
   :option:`-fdiagnostics-plain-output` 
@@ -146,7 +145,7 @@ in the following sections.
   :option:`-fdiagnostics-column-origin`:samp:`={origin}`
 
 *Warning Options*
-  See :ref:`Options to Request or Suppress Warnings <warning-options>`.
+  See :ref:`warning-options`.
 
   :option:`-fsyntax-only`  :option:`-fmax-errors`:samp:`={n}`  :option:`-Wpedantic` 
   :option:`-pedantic-errors` 
@@ -296,7 +295,7 @@ in the following sections.
   :option:`-Wdeclaration-after-statement`  :option:`-Wpointer-sign`
 
 *Debugging Options*
-  See :ref:`Options for Debugging Your Program <debugging-options>`.
+  See :ref:`debugging-options`.
 
   :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` 
   :option:`-gbtf` :option:`-gctf`  :option:`-gctf`:samp:`{level}` 
@@ -320,7 +319,7 @@ in the following sections.
   :option:`-fvar-tracking`  :option:`-fvar-tracking-assignments`
 
 *Optimization Options*
-  See :ref:`Options that Control Optimization <optimize-options>`.
+  See :ref:`optimize-options`.
 
   :option:`-faggressive-loop-optimizations` 
   :option:`-falign-functions`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]`
@@ -415,7 +414,7 @@ in the following sections.
   :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og`
 
 *Program Instrumentation Options*
-  See :ref:`Program Instrumentation Options <instrumentation-options>`.
+  See :ref:`instrumentation-options`.
 
   :option:`-p`  :option:`-pg`  :option:`-fprofile-arcs`  :option:`--coverage`  :option:`-ftest-coverage` 
   :option:`-fprofile-abs-path` 
@@ -440,7 +439,7 @@ in the following sections.
   :option:`-finstrument-functions-exclude-file-list`:samp:`={file}, {file},...`
 
 *Preprocessor Options*
-  See :ref:`Options Controlling the Preprocessor <preprocessor-options>`.
+  See :ref:`preprocessor-options`.
 
   :option:`-A`:samp:`{question}={answer}` 
   :option:`-A-`:samp:`{question}[={answer}]` 
@@ -461,12 +460,12 @@ in the following sections.
   :option:`-Wp,`:samp:`{option}`  :option:`-Xpreprocessor` :samp:`{option}`
 
 *Assembler Options*
-  See :ref:`Passing Options to the Assembler <assembler-options>`.
+  See :ref:`assembler-options`.
 
   :option:`-Wa,`:samp:`{option}`  :option:`-Xassembler` :samp:`{option}`
 
 *Linker Options*
-  See :ref:`Options for Linking <link-options>`.
+  See :ref:`link-options`.
 
   :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
   :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` 
@@ -479,7 +478,7 @@ in the following sections.
   :option:`-u` :samp:`{symbol}`  :option:`-z` :samp:`{keyword}`
 
 *Directory Options*
-  See :ref:`Options for Directory Search <directory-options>`.
+  See :ref:`directory-options`.
 
   :option:`-B`:samp:`{prefix}`  :option:`-I`:samp:`{dir}`  :option:`-I-` 
   :option:`-idirafter` :samp:`{dir}` 
@@ -491,7 +490,7 @@ in the following sections.
   :option:`-nostdinc`  :option:`-nostdinc++`  :option:`--sysroot`:samp:`={dir}`
 
 *Code Generation Options*
-  See :ref:`Options for Code Generation Conventions <code-gen-options>`.
+  See :ref:`code-gen-options`.
 
   :option:`-fcall-saved-`:samp:`{reg}`  :option:`-fcall-used-`:samp:`{reg}` 
   :option:`-ffixed-`:samp:`{reg}`  :option:`-fexceptions` 
@@ -511,7 +510,7 @@ in the following sections.
   :option:`-fstrict-volatile-bitfields`  :option:`-fsync-libcalls`
 
 *Developer Options*
-  See :ref:`GCC Developer Options <developer-options>`.
+  See :ref:`developer-options`.
 
   :option:`-d`:samp:`{letters}`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` 
   :option:`-dumpfullversion`  :option:`-fcallgraph-info`:samp:`[=su,da]`
@@ -556,7 +555,7 @@ in the following sections.
   :option:`-save-temps`  :option:`-save-temps`:samp:`=cwd`  :option:`-save-temps`:samp:`=obj`  :option:`-time`:samp:`[={file}]`
 
 *Machine-Dependent Options*
-  See :ref:`Machine-Dependent Options <submodel-options>`.
+  See :ref:`submodel-options`.
 
   .. This list is ordered alphanumerically by subsection name.
 

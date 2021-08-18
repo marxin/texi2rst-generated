@@ -8,8 +8,7 @@
 Preprocessing Directives
 ************************
 
-See :ref:`Implementation-defined
-behavior <cpp:implementation-defined-behavior>`, for details of these aspects of
+See :ref:`cpp:implementation-defined-behavior`, for details of these aspects of
 implementation-defined behavior.
 
 * The locations within ``#pragma`` directives where header name
@@ -47,9 +46,8 @@ implementation-defined behavior.
 * The behavior on each recognized non- ``STDC #pragma``
   directive (C90 6.8.6, C99 and C11 6.10.6).
 
-  See :ref:`Pragmas <cpp:pragmas>`, for details of
-  pragmas accepted by GCC on all targets.  See :ref:`Pragmas
-  Accepted by GCC <pragmas>`, for details of target-specific pragmas.
+  See :ref:`cpp:pragmas`, for details of
+  pragmas accepted by GCC on all targets.  See :ref:`pragmas`, for details of target-specific pragmas.
 
 * The definitions for ``__DATE__`` and ``__TIME__`` when
   respectively, the date and time of translation are not available (C90

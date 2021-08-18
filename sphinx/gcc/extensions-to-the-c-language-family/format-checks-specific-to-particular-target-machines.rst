@@ -10,7 +10,7 @@ Format Checks Specific to Particular Target Machines
 
 For some target machines, GCC supports additional options to the
 format attribute
-(see :ref:`Declaring Attributes of Functions <function-attributes>`).
+(see :ref:`function-attributes`).
 
 .. toctree::
   :maxdepth: 2

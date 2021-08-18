@@ -136,6 +136,6 @@ either your program or the GNU Fortran compiler.
   generation. This option only has influence for compilation of the
   Fortran main program.
 
-See :ref:`Options for Debugging Your Program or GCC <gcc:debugging-options>`, for more information on
+See :ref:`gcc:debugging-options`, for more information on
 debugging options.
 

@@ -11,11 +11,11 @@ Anatomy of a Target Back End
 A back end for a target architecture in GCC has the following parts:
 
 * A directory :samp:`{machine}` under :samp:`gcc/config`, containing a
-  machine description :samp:`{machine}.md` file (see :ref:`Machine Descriptions <machine-desc>`), header files :samp:`{machine}.h` and
+  machine description :samp:`{machine}.md` file (see :ref:`machine-desc`), header files :samp:`{machine}.h` and
   :samp:`{machine}-protos.h` and a source file :samp:`{machine}.c`
-  (see :ref:`Target Description Macros and Functions <target-macros>`),
+  (see :ref:`target-macros`),
   possibly a target Makefile fragment :samp:`t-{machine}`
-  (see :ref:`The Target Makefile Fragment <target-fragment>`), and maybe
+  (see :ref:`target-fragment`), and maybe
   some other files.  The names of these files may be changed from the
   defaults given by explicit specifications in :samp:`config.gcc`.
 
@@ -32,8 +32,7 @@ A back end for a target architecture in GCC has the following parts:
   architecture.
 
 * Documentation in :samp:`gcc/doc/invoke.texi` for any command-line
-  options supported by this target (see :ref:`Run-time
-  Target Specification <run-time-target>`).  This means both entries in the summary table
+  options supported by this target (see :ref:`run-time-target`).  This means both entries in the summary table
   of options and details of the individual options.
 
 * Documentation in :samp:`gcc/doc/extend.texi` for any target-specific
@@ -51,8 +50,7 @@ A back end for a target architecture in GCC has the following parts:
   format checking styles supported.
 
 * Documentation in :samp:`gcc/doc/md.texi` of any target-specific
-  constraint letters (see :ref:`Constraints for
-  Particular Machines <machine-constraints>`).
+  constraint letters (see :ref:`machine-constraints`).
 
 * A note in :samp:`gcc/doc/contrib.texi` under the person or people who
   contributed the target support.

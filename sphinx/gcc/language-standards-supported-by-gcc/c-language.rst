@@ -114,8 +114,7 @@ To select this standard in GCC, use one of the options
 :option:`-ansi`, :option:`-std`:samp:`=c90` or :option:`-std`:samp:`=iso9899:1990`; to obtain
 all the diagnostics required by the standard, you should also specify
 :option:`-pedantic` (or :option:`-pedantic-errors` if you want them to be
-errors rather than warnings).  See :ref:`Options
-Controlling C Dialect <c-dialect-options>`.
+errors rather than warnings).  See :ref:`c-dialect-options`.
 
 Errors in the 1990 ISO C standard were corrected in two Technical
 Corrigenda published in 1994 and 1996.  GCC does not support the
@@ -158,7 +157,7 @@ development; experimental and incomplete support for this is enabled
 with :option:`-std`:samp:`=c2x`.
 
 By default, GCC provides some extensions to the C language that, on
-rare occasions conflict with the C standard.  See :ref:`Extensions to the C Language Family <c-extensions>`.  
+rare occasions conflict with the C standard.  See :ref:`c-extensions`.  
 Some features that are part of the C99 standard
 are accepted as extensions in C90 mode, and some features that are part
 of the C11 standard are accepted as extensions in C90 and C99 modes.
@@ -210,14 +209,14 @@ option :option:`-ffreestanding` ; it then defines
 meanings of function names from the standard library, with exceptions
 noted below.  To build an OS kernel, you may well still need to make
 your own arrangements for linking and startup.
-See :ref:`Options Controlling C Dialect <c-dialect-options>`.
+See :ref:`c-dialect-options`.
 
 GCC does not provide the library facilities required only of hosted
 implementations, nor yet all the facilities required by C99 of
 freestanding implementations on all platforms.  
 To use the facilities of a hosted
 environment, you need to find them elsewhere (for example, in the
-GNU C library).  See :ref:`Standard Libraries <standard-libraries>`.
+GNU C library).  See :ref:`standard-libraries`.
 
 Most of the compiler support routines used by GCC are present in
 :samp:`libgcc`, but there are a few exceptions.  GCC requires the
