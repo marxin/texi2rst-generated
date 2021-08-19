@@ -12,7 +12,7 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
 
 .. index:: environment variable
 
-.. function:: GET_ENVIRONMENT_VARIABLE
+.. function:: GET_ENVIRONMENT_VARIABLE(NAME, VALUE, LENGTH, STATUS, TRIM_NAME)
 
   Get the :samp:`{VALUE}` of the environmental variable :samp:`{NAME}`.
 

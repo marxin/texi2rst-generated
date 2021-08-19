@@ -14,7 +14,7 @@ SYMLNK --- Create a symbolic link
 
 .. index:: file system, soft link
 
-.. function:: SYMLNK
+.. function:: SYMLNK(PATH1, PATH2)
 
   Makes a symbolic link from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
   character (``CHAR(0)``) can be used to mark the end of the names in

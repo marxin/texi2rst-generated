@@ -10,7 +10,7 @@ PRESENT --- Determine whether an optional dummy argument is specified
 
 .. index:: PRESENT
 
-.. function:: PRESENT
+.. function:: PRESENT(A)
 
   Determines whether an optional dummy argument is present.
 

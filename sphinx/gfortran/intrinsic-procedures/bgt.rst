@@ -12,7 +12,7 @@ BGT --- Bitwise greater than
 
 .. index:: bitwise comparison
 
-.. function:: BGT
+.. function:: BGT(I, J)
 
   Determines whether an integral is a bitwise greater than another.
 

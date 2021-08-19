@@ -12,7 +12,7 @@ IERRNO --- Get the last system error number
 
 .. index:: system, error handling
 
-.. function:: IERRNO
+.. function:: IERRNO()
 
   Returns the last system error number, as given by the C ``errno``
   variable.

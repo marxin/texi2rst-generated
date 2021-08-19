@@ -18,7 +18,7 @@ PRODUCT --- Product of array elements
 
 .. index:: multiply array elements
 
-.. function:: PRODUCT
+.. function:: PRODUCT(ARRAY, DIM, MASK)
 
   Multiplies the elements of :samp:`{ARRAY}` along dimension :samp:`{DIM}` if
   the corresponding element in :samp:`{MASK}` is ``TRUE``.

@@ -14,7 +14,7 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
 
 .. index:: arguments, to program
 
-.. function:: GET_COMMAND_ARGUMENT
+.. function:: GET_COMMAND_ARGUMENT(NUMBER , VALUE, LENGTH, STATUS)
 
   Retrieve the :samp:`{NUMBER}` -th argument that was passed on the
   command line when the containing program was invoked.

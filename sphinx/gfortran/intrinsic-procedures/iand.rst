@@ -22,7 +22,7 @@ IAND --- Bitwise logical and
 
 .. index:: logical and, bitwise
 
-.. function:: IAND
+.. function:: IAND(I, J)
 
   Bitwise logical ``AND``.
 

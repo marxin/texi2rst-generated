@@ -14,7 +14,7 @@ INDEX --- Position of a substring within a string
 
 .. index:: string, find substring
 
-.. function:: INDEX
+.. function:: INDEX(STRING, SUBSTRING , BACK , KIND)
 
   Returns the position of the start of the first occurrence of string
   :samp:`{SUBSTRING}` as a substring in :samp:`{STRING}`, counting from one.  If

@@ -12,7 +12,7 @@ LNBLNK --- Index of the last non-blank character in a string
 
 .. index:: string, find non-blank character
 
-.. function:: LNBLNK
+.. function:: LNBLNK(STRING)
 
   Returns the length of a character string, ignoring any trailing blanks.
   This is identical to the standard ``LEN_TRIM`` intrinsic, and is only

@@ -12,7 +12,7 @@ LEN --- Length of a character entity
 
 .. index:: string, length
 
-.. function:: LEN
+.. function:: LEN(STRING , KIND)
 
   Returns the length of a character string.  If :samp:`{STRING}` is an array,
   the length of an element of :samp:`{STRING}` is returned.  Note that

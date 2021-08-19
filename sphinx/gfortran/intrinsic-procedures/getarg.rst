@@ -14,7 +14,7 @@ GETARG --- Get command line arguments
 
 .. index:: arguments, to program
 
-.. function:: GETARG
+.. function:: GETARG(POS, VALUE)
 
   Retrieve the :samp:`{POS}` -th argument that was passed on the
   command line when the containing program was invoked.

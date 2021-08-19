@@ -12,7 +12,7 @@ CHDIR --- Change working directory
 
 .. index:: system, working directory
 
-.. function:: CHDIR
+.. function:: CHDIR(NAME)
 
   Change current working directory to a specified path.
 

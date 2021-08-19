@@ -12,7 +12,7 @@ SCAN --- Scan a string for the presence of a set of characters
 
 .. index:: string, find subset
 
-.. function:: SCAN
+.. function:: SCAN(STRING, SET, BACK , KIND)
 
   Scans a :samp:`{STRING}` for any of the characters in a :samp:`{SET}` 
   of characters.

@@ -12,7 +12,7 @@ ISATTY --- Whether a unit is a terminal device.
 
 .. index:: system, terminal
 
-.. function:: ISATTY
+.. function:: ISATTY(UNIT)
 
   Determine whether a unit is connected to a terminal device.
 

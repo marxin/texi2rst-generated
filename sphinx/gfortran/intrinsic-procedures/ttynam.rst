@@ -12,7 +12,7 @@ TTYNAM --- Get the name of a terminal device.
 
 .. index:: system, terminal
 
-.. function:: TTYNAM
+.. function:: TTYNAM(UNIT)
 
   Get the name of a terminal device. For more information, 
   see ``ttyname(3)``.

@@ -14,7 +14,7 @@ TIME --- Time function
 
 .. index:: current time
 
-.. function:: TIME
+.. function:: TIME()
 
   Returns the current time encoded as an integer (in the manner of the
   function ``time(3)`` in the C standard library). This value is

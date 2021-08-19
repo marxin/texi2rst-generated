@@ -14,7 +14,7 @@ GETLOG --- Get login name
 
 .. index:: login name
 
-.. function:: GETLOG
+.. function:: GETLOG(C)
 
   Gets the username under which the program is running.
 

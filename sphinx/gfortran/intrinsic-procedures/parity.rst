@@ -16,7 +16,7 @@ PARITY --- Reduction with exclusive OR
 
 .. index:: XOR reduction
 
-.. function:: PARITY
+.. function:: PARITY(MASK, DIM)
 
   Calculates the parity, i.e. the reduction using ``.XOR.``,
   of :samp:`{MASK}` along dimension :samp:`{DIM}`.

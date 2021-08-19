@@ -10,7 +10,7 @@ KILL --- Send a signal to a process
 
 .. index:: KILL
 
-.. function:: KILL
+.. function:: KILL(PID, SIG)
 
   Sends the signal specified by :samp:`{SIG}` to the process :samp:`{PID}`.
   See ``kill(2)``.

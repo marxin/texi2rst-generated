@@ -14,7 +14,7 @@ LINK --- Create a hard link
 
 .. index:: file system, hard link
 
-.. function:: LINK
+.. function:: LINK(PATH1, PATH2)
 
   Makes a (hard) link from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
   character (``CHAR(0)``) can be used to mark the end of the names in

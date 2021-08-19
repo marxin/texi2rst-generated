@@ -14,7 +14,7 @@ LGE --- Lexical greater than or equal
 
 .. index:: string, comparison
 
-.. function:: LGE
+.. function:: LGE(STRING_A, STRING_B)
 
   Determines whether one string is lexically greater than or equal to
   another string, where the two strings are interpreted as containing

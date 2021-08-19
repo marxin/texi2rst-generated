@@ -12,7 +12,7 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
 
 .. index:: Atomic subroutine, XOR with fetch
 
-.. function:: ATOMIC_FETCH_XOR
+.. function:: ATOMIC_FETCH_XOR (ATOM, VALUE, OLD , STAT)
 
   ``ATOMIC_XOR(ATOM, VALUE)`` atomically stores the value of :samp:`{ATOM}` in
   :samp:`{OLD}` and defines :samp:`{ATOM}` with the bitwise XOR between the values of

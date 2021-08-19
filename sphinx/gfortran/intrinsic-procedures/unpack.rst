@@ -16,7 +16,7 @@ UNPACK --- Unpack an array of rank one into an array
 
 .. index:: array, scatter elements
 
-.. function:: UNPACK
+.. function:: UNPACK(VECTOR, MASK, FIELD)
 
   Store the elements of :samp:`{VECTOR}` in an array of higher rank.
 

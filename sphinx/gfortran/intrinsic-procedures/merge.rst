@@ -14,7 +14,7 @@ MERGE --- Merge variables
 
 .. index:: array, combine arrays
 
-.. function:: MERGE
+.. function:: MERGE(TSOURCE, FSOURCE, MASK)
 
   Select values from two arrays according to a logical mask.  The result
   is equal to :samp:`{TSOURCE}` if :samp:`{MASK}` is ``.TRUE.``, or equal to

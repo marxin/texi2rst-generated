@@ -16,7 +16,7 @@ NORM2 --- Euclidean vector norms
 
 .. index:: norm, Euclidean
 
-.. function:: NORM2
+.. function:: NORM2(ARRAY, DIM)
 
   Calculates the Euclidean vector norm (L_2 norm)
   of :samp:`{ARRAY}` along dimension :samp:`{DIM}`.

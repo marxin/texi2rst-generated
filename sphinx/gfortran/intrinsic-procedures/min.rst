@@ -22,7 +22,7 @@ MIN --- Minimum value of an argument list
 
 .. index:: minimum value
 
-.. function:: MIN
+.. function:: MIN(A1, A2 , A3, ...)
 
   Returns the argument with the smallest (most negative) value.
 

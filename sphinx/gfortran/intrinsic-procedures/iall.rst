@@ -14,7 +14,7 @@ IALL --- Bitwise AND of array elements
 
 .. index:: bits, AND of array elements
 
-.. function:: IALL
+.. function:: IALL(ARRAY, DIM, MASK)
 
   Reduces with bitwise AND the elements of :samp:`{ARRAY}` along dimension :samp:`{DIM}`
   if the corresponding element in :samp:`{MASK}` is ``TRUE``.

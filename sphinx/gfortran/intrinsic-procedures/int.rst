@@ -16,7 +16,7 @@ INT --- Convert to integer type
 
 .. index:: conversion, to integer
 
-.. function:: INT
+.. function:: INT(A , KIND))
 
   Convert to integer type
 

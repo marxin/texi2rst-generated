@@ -14,7 +14,7 @@ SYSTEM_CLOCK --- Time function
 
 .. index:: clock ticks
 
-.. function:: SYSTEM_CLOCK
+.. function:: SYSTEM_CLOCK(COUNT, COUNT_RATE, COUNT_MAX)
 
   Determines the :samp:`{COUNT}` of a processor clock since an unspecified
   time in the past modulo :samp:`{COUNT_MAX}`, :samp:`{COUNT_RATE}` determines

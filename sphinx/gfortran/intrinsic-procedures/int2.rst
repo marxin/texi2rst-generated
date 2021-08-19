@@ -14,7 +14,7 @@ INT2 --- Convert to 16-bit integer type
 
 .. index:: conversion, to integer
 
-.. function:: INT2
+.. function:: INT2(A)
 
   Convert to a ``KIND=2`` integer type. This is equivalent to the
   standard ``INT`` intrinsic with an optional argument of

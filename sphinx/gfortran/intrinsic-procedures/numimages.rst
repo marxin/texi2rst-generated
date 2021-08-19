@@ -14,7 +14,7 @@ NUM_IMAGES --- Function that returns the number of images
 
 .. index:: images, number of
 
-.. function:: NUM_IMAGES
+.. function:: NUM_IMAGES(DISTANCE, FAILED)
 
   Returns the number of images.
 

@@ -12,7 +12,7 @@ RENAME --- Rename a file
 
 .. index:: file system, rename file
 
-.. function:: RENAME
+.. function:: RENAME(PATH1, PATH2)
 
   Renames a file from file :samp:`{PATH1}` to :samp:`{PATH2}`. A null
   character (``CHAR(0)``) can be used to mark the end of the names in

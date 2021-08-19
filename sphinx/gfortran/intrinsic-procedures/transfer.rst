@@ -14,7 +14,7 @@ TRANSFER --- Transfer bit patterns
 
 .. index:: type cast
 
-.. function:: TRANSFER
+.. function:: TRANSFER(SOURCE, MOLD, SIZE)
 
   Interprets the bitwise representation of :samp:`{SOURCE}` in memory as if it
   is the representation of a variable or array of the same type and type

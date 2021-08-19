@@ -12,7 +12,7 @@ LCOBOUND --- Lower codimension bounds of an array
 
 .. index:: coarray, lower bound
 
-.. function:: LCOBOUND
+.. function:: LCOBOUND(COARRAY , DIM , KIND)
 
   Returns the lower bounds of a coarray, or a single lower cobound
   along the :samp:`{DIM}` codimension.

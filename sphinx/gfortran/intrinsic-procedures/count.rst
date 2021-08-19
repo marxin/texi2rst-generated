@@ -16,7 +16,7 @@ COUNT --- Count function
 
 .. index:: array, number of elements
 
-.. function:: COUNT
+.. function:: COUNT(MASK , DIM, KIND)
 
   Counts the number of ``.TRUE.`` elements in a logical :samp:`{MASK}`,
   or, if the :samp:`{DIM}` argument is supplied, counts the number of

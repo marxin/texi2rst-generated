@@ -12,7 +12,7 @@ TRIM --- Remove trailing blank characters of a string
 
 .. index:: string, remove trailing whitespace
 
-.. function:: TRIM
+.. function:: TRIM(STRING)
 
   Removes trailing blank characters of a string.
 

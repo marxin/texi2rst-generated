@@ -12,7 +12,7 @@ SHAPE --- Determine the shape of an array
 
 .. index:: array, shape
 
-.. function:: SHAPE
+.. function:: SHAPE(SOURCE , KIND)
 
   Determines the shape of an array.
 

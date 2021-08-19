@@ -14,7 +14,7 @@ LLE --- Lexical less than or equal
 
 .. index:: string, comparison
 
-.. function:: LLE
+.. function:: LLE(STRING_A, STRING_B)
 
   Determines whether one string is lexically less than or equal to another
   string, where the two strings are interpreted as containing ASCII

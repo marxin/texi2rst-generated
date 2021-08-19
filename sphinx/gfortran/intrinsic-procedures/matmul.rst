@@ -14,7 +14,7 @@ MATMUL --- matrix multiplication
 
 .. index:: product, matrix
 
-.. function:: MATMUL
+.. function:: MATMUL(MATRIX_A, MATRIX_B)
 
   Performs a matrix multiplication on numeric or logical arguments.
 

@@ -12,7 +12,7 @@ GETGID --- Group ID function
 
 .. index:: system, group ID
 
-.. function:: GETGID
+.. function:: GETGID()
 
   Returns the numerical group ID of the current process.
 

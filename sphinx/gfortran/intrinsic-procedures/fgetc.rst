@@ -16,7 +16,7 @@ FGETC --- Read a single character in stream mode
 
 .. index:: file operation, read character
 
-.. function:: FGETC
+.. function:: FGETC(UNIT, C)
 
   Read a single character in stream mode by bypassing normal formatted output. 
   Stream I/O should not be mixed with normal record-oriented (formatted or 

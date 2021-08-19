@@ -16,7 +16,7 @@ TRANSPOSE --- Transpose an array of rank two
 
 .. index:: transpose
 
-.. function:: TRANSPOSE
+.. function:: TRANSPOSE(MATRIX)
 
   Transpose an array of rank two. Element (i, j) of the result has the value 
   ``MATRIX(j, i)``, for all i, j.

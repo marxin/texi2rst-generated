@@ -16,7 +16,7 @@ PACK --- Pack an array into an array of rank one
 
 .. index:: array, gather elements
 
-.. function:: PACK
+.. function:: PACK(ARRAY, MASK,VECTOR)
 
   Stores the elements of :samp:`{ARRAY}` in an array of rank one.
 

@@ -14,7 +14,7 @@ LLT --- Lexical less than
 
 .. index:: string, comparison
 
-.. function:: LLT
+.. function:: LLT(STRING_A, STRING_B)
 
   Determines whether one string is lexically less than another string,
   where the two strings are interpreted as containing ASCII character

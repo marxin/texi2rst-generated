@@ -12,7 +12,7 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
 
 .. index:: Atomic subroutine, AND with fetch
 
-.. function:: ATOMIC_FETCH_AND
+.. function:: ATOMIC_FETCH_AND (ATOM, VALUE, OLD , STAT)
 
   ``ATOMIC_AND(ATOM, VALUE)`` atomically stores the value of :samp:`{ATOM}` in
   :samp:`{OLD}` and defines :samp:`{ATOM}` with the bitwise AND between the values of

@@ -20,7 +20,7 @@ MVBITS --- Move bits from one integer to another
 
 .. index:: bits, move
 
-.. function:: MVBITS
+.. function:: MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 
   Moves :samp:`{LEN}` bits from positions :samp:`{FROMPOS}` through
   ``FROMPOS+LEN-1`` of :samp:`{FROM}` to positions :samp:`{TOPOS}` through

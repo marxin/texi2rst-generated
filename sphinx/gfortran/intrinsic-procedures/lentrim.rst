@@ -12,7 +12,7 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
 
 .. index:: string, length, without trailing whitespace
 
-.. function:: LEN_TRIM
+.. function:: LEN_TRIM(STRING , KIND)
 
   Returns the length of a character string, ignoring any trailing blanks.
 

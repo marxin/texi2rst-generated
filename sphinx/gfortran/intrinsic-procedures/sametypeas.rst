@@ -10,7 +10,7 @@ SAME_TYPE_AS ---  Query dynamic types for equality
 
 .. index:: SAME_TYPE_AS
 
-.. function:: SAME_TYPE_AS
+.. function:: SAME_TYPE_AS(A, B)
 
   Query dynamic types for equality.
 

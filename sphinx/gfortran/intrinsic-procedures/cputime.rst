@@ -12,7 +12,7 @@ CPU_TIME --- CPU elapsed time in seconds
 
 .. index:: time, elapsed
 
-.. function:: CPU_TIME
+.. function:: CPU_TIME(TIME)
 
   Returns a ``REAL`` value representing the elapsed CPU time in
   seconds.  This is useful for testing segments of code to determine

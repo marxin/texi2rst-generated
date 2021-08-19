@@ -14,7 +14,7 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
 
 .. index:: images, cosubscript to image index conversion
 
-.. function:: IMAGE_INDEX
+.. function:: IMAGE_INDEX(COARRAY, SUB)
 
   Returns the image index belonging to a cosubscript.
 

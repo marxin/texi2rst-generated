@@ -12,7 +12,7 @@ GETCWD --- Get current working directory
 
 .. index:: system, working directory
 
-.. function:: GETCWD
+.. function:: GETCWD(C)
 
   Get current working directory.
 

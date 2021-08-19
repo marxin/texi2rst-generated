@@ -12,7 +12,7 @@ MASKR --- Right justified mask
 
 .. index:: mask, right justified
 
-.. function:: MASKR
+.. function:: MASKR(I, KIND)
 
   ``MASKL(I[, KIND])`` has its rightmost :samp:`{I}` bits set to 1, and the
   remaining bits set to 0.

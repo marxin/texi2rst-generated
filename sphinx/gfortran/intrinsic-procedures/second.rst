@@ -14,7 +14,7 @@ SECOND --- CPU time function
 
 .. index:: elapsed time
 
-.. function:: SECOND
+.. function:: SECOND()
 
   Returns a ``REAL(4)`` value representing the elapsed CPU time in
   seconds.  This provides the same functionality as the standard

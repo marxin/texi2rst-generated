@@ -16,7 +16,7 @@ FPUT --- Write a single character in stream mode to stdout
 
 .. index:: file operation, write character
 
-.. function:: FPUT
+.. function:: FPUT(C)
 
   Write a single character in stream mode to stdout by bypassing normal 
   formatted output. Stream I/O should not be mixed with normal record-oriented 

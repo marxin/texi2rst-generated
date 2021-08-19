@@ -12,7 +12,7 @@ RANDOM_NUMBER --- Pseudo-random number
 
 .. index:: random number generation
 
-.. function:: RANDOM_NUMBER
+.. function:: RANDOM_NUMBER(HARVEST)
 
   Returns a single pseudorandom number or an array of pseudorandom numbers
   from the uniform distribution over the range 0 \leq x < 1.

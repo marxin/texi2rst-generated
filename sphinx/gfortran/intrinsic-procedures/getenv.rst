@@ -12,7 +12,7 @@ GETENV --- Get an environmental variable
 
 .. index:: environment variable
 
-.. function:: GETENV
+.. function:: GETENV(NAME, VALUE)
 
   Get the :samp:`{VALUE}` of the environmental variable :samp:`{NAME}`.
 

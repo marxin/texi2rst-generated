@@ -14,7 +14,7 @@ GET_COMMAND --- Get the entire command line
 
 .. index:: arguments, to program
 
-.. function:: GET_COMMAND
+.. function:: GET_COMMAND(COMMAND, LENGTH, STATUS)
 
   Retrieve the entire command line that was used to invoke the program.
 

@@ -12,7 +12,7 @@ LTIME --- Convert time to local time info
 
 .. index:: time, conversion to local time info
 
-.. function:: LTIME
+.. function:: LTIME(TIME, VALUES)
 
   Given a system time value :samp:`{TIME}` (as provided by the TIME
   intrinsic), fills :samp:`{VALUES}` with values extracted from it appropriate
