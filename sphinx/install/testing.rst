@@ -25,7 +25,7 @@ This step is optional and may require you to download additional software,
 but it can give you confidence in your new GCC installation or point out
 problems before you install and start using your new GCC.
 
-First, you must have download.htmldownloaded the testsuites.
+First, you must have :ref:`downloaded the testsuites <downloading-the-source>`.
 These are part of the full distribution, but if you downloaded the
 'core' compiler plus any front ends, you must download the testsuites
 separately.
