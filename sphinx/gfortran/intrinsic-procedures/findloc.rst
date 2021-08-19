@@ -12,7 +12,7 @@ FINDLOC --- Search an array for a value
 
 .. index:: findloc
 
-.. function:: FINDLOC(ARRAY, VALUE, , MASK ,KIND ,BACK)
+.. function:: FINDLOC(ARRAY, VALUE, MASK, KIND, BACK)
 
   Determines the location of the element in the array with the value
   given in the :samp:`{VALUE}` argument, or, if the :samp:`{DIM}` argument is
