@@ -302,14 +302,14 @@ See :ref:`run-time-target`.
 
 .. hook-end
 
-.. c:macro:: DATA_ALIGNMENT (type, basic-align)
+.. c:macro:: DATA_ALIGNMENT (type, basic_align)
 
   If defined, a C expression to compute the alignment for a variable in
-  the static store.  :samp:`{type}` is the data type, and :samp:`{basic-align}` is
+  the static store.  :samp:`{type}` is the data type, and :samp:`{basic_align}` is
   the alignment that the object would ordinarily have.  The value of this
   macro is used instead of that alignment to align the object.
 
-  If this macro is not defined, then :samp:`{basic-align}` is used.
+  If this macro is not defined, then :samp:`{basic_align}` is used.
 
   .. index:: strcpy
 
@@ -318,13 +318,13 @@ See :ref:`run-time-target`.
   arrays to be word-aligned so that ``strcpy`` calls that copy
   constants to character arrays can be done inline.
 
-.. c:macro:: DATA_ABI_ALIGNMENT (type, basic-align)
+.. c:macro:: DATA_ABI_ALIGNMENT (type, basic_align)
 
   Similar to ``DATA_ALIGNMENT``, but for the cases where the ABI mandates
   some alignment increase, instead of optimization only purposes.  E.g.AMD x86-64 psABI says that variables with array type larger than 15 bytes
   must be aligned to 16 byte boundaries.
 
-  If this macro is not defined, then :samp:`{basic-align}` is used.
+  If this macro is not defined, then :samp:`{basic_align}` is used.
 
 .. function:: HOST_WIDE_INT TARGET_CONSTANT_ALIGNMENT (const_tree constant, HOST_WIDE_INT basic_align)
 
@@ -343,14 +343,14 @@ See :ref:`run-time-target`.
 
 .. hook-end
 
-.. c:macro:: LOCAL_ALIGNMENT (type, basic-align)
+.. c:macro:: LOCAL_ALIGNMENT (type, basic_align)
 
   If defined, a C expression to compute the alignment for a variable in
-  the local store.  :samp:`{type}` is the data type, and :samp:`{basic-align}` is
+  the local store.  :samp:`{type}` is the data type, and :samp:`{basic_align}` is
   the alignment that the object would ordinarily have.  The value of this
   macro is used instead of that alignment to align the object.
 
-  If this macro is not defined, then :samp:`{basic-align}` is used.
+  If this macro is not defined, then :samp:`{basic_align}` is used.
 
   One use of this macro is to increase alignment of medium-size data to
   make it all fit in fewer cache lines.
@@ -369,15 +369,15 @@ See :ref:`run-time-target`.
 
 .. hook-end
 
-.. c:macro:: STACK_SLOT_ALIGNMENT (type, mode, basic-align)
+.. c:macro:: STACK_SLOT_ALIGNMENT (type, mode, basic_align)
 
   If defined, a C expression to compute the alignment for stack slot.
   :samp:`{type}` is the data type, :samp:`{mode}` is the widest mode available,
-  and :samp:`{basic-align}` is the alignment that the slot would ordinarily
+  and :samp:`{basic_align}` is the alignment that the slot would ordinarily
   have.  The value of this macro is used instead of that alignment to
   align the slot.
 
-  If this macro is not defined, then :samp:`{basic-align}` is used when
+  If this macro is not defined, then :samp:`{basic_align}` is used when
   :samp:`{type}` is ``NULL``.  Otherwise, ``LOCAL_ALIGNMENT`` will
   be used.
 
