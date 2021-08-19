@@ -38,7 +38,7 @@ standard.
 
 .. index:: trigraphs
 
-  .. _trigraphs:
+.. _trigraphs:
 
 * If trigraphs are enabled, they are replaced by their
   corresponding single characters.  By default GCC ignores trigraphs,
