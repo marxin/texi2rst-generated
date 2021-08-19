@@ -14,7 +14,7 @@ AND --- Bitwise logical AND
 
 .. index:: logical and, bitwise
 
-.. function:: AND
+.. function:: AND(I, J)
 
   Bitwise logical ``AND``.
 

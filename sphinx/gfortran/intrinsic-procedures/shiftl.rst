@@ -14,7 +14,7 @@ SHIFTL --- Left shift
 
 .. index:: shift, left
 
-.. function:: SHIFTL
+.. function:: SHIFTL(I, SHIFT)
 
   ``SHIFTL`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted left by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be

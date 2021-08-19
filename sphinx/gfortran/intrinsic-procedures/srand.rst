@@ -14,7 +14,7 @@ SRAND --- Reinitialize the random number generator
 
 .. index:: seeding a random number generator
 
-.. function:: SRAND
+.. function:: SRAND(SEED)
 
   ``SRAND`` reinitializes the pseudo-random number generator
   called by ``RAND`` and ``IRAND``. The new seed used by the

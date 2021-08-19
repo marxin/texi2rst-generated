@@ -14,7 +14,7 @@ CTIME --- Convert a time into a string
 
 .. index:: conversion, to string
 
-.. function:: CTIME
+.. function:: CTIME(TIME, RESULT)
 
   ``CTIME`` converts a system time value, such as returned by
   TIME8, to a string. The output will be of the form :samp:`Sat

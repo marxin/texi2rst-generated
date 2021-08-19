@@ -16,7 +16,7 @@ AINT --- Truncate to a whole number
 
 .. index:: rounding, floor
 
-.. function:: AINT(A [, KIND])
+.. function:: AINT(A, KIND)
 
   ``AINT(A [, KIND])`` truncates its argument to a whole number.
 

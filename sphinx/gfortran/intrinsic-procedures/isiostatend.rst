@@ -12,7 +12,7 @@ IS_IOSTAT_END --- Test for end-of-file value
 
 .. index:: IOSTAT, end of file
 
-.. function:: IS_IOSTAT_END
+.. function:: IS_IOSTAT_END(I)
 
   ``IS_IOSTAT_END`` tests whether an variable has the value of the I/O
   status 'end of file'. The function is equivalent to comparing the variable

@@ -14,7 +14,7 @@ ALL --- All values in MASK along DIM are true
 
 .. index:: array, condition testing
 
-.. function:: ALL(MASK [, DIM])
+.. function:: ALL(MASK, DIM)
 
   ``ALL(MASK [, DIM])`` determines if all the values are true in :samp:`{MASK}`
   in the array along dimension :samp:`{DIM}`.

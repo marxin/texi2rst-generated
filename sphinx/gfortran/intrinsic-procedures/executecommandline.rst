@@ -14,7 +14,7 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
 
 .. index:: command line
 
-.. function:: EXECUTE_COMMAND_LINE
+.. function:: EXECUTE_COMMAND_LINE(COMMAND, WAIT, EXITSTAT, CMDSTAT, CMDMSG)
 
   ``EXECUTE_COMMAND_LINE`` runs a shell command, synchronously or
   asynchronously.

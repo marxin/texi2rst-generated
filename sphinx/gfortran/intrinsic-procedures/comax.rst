@@ -12,7 +12,7 @@ CO_MAX --- Maximal value on the current set of images
 
 .. index:: Collectives, maximal value
 
-.. function:: CO_MAX
+.. function:: CO_MAX(A, RESULT_IMAGE, STAT, ERRMSG)
 
   ``CO_MAX`` determines element-wise the maximal value of :samp:`{A}` on all
   images of the current team.  If :samp:`{RESULT_IMAGE}` is present, the maximum

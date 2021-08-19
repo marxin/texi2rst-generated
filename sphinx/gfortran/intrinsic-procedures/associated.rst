@@ -14,7 +14,7 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
 
 .. index:: association status
 
-.. function:: ASSOCIATED(POINTER [, TARGET])
+.. function:: ASSOCIATED(POINTER, TARGET)
 
   ``ASSOCIATED(POINTER [, TARGET])`` determines the status of the pointer
   :samp:`{POINTER}` or if :samp:`{POINTER}` is associated with the target :samp:`{TARGET}`.

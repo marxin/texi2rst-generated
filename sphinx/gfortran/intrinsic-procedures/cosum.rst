@@ -12,7 +12,7 @@ CO_SUM --- Sum of values on the current set of images
 
 .. index:: Collectives, sum of values
 
-.. function:: CO_SUM
+.. function:: CO_SUM(A, RESULT_IMAGE, STAT, ERRMSG)
 
   ``CO_SUM`` sums up the values of each element of :samp:`{A}` on all
   images of the current team.  If :samp:`{RESULT_IMAGE}` is present, the summed-up

@@ -16,7 +16,7 @@ IARGC --- Get the number of command line arguments
 
 .. index:: arguments, to program
 
-.. function:: IARGC
+.. function:: IARGC()
 
   ``IARGC`` returns the number of arguments passed on the
   command line when the containing program was invoked.

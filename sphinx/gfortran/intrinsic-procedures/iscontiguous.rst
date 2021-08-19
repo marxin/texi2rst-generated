@@ -12,7 +12,7 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
 
 .. index:: array, contiguity
 
-.. function:: IS_CONTIGUOUS
+.. function:: IS_CONTIGUOUS(ARRAY)
 
   ``IS_CONTIGUOUS`` tests whether an array is contiguous.
 

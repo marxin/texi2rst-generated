@@ -16,7 +16,7 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 
 .. index:: arguments, to program
 
-.. function:: COMMAND_ARGUMENT_COUNT
+.. function:: COMMAND_ARGUMENT_COUNT()
 
   ``COMMAND_ARGUMENT_COUNT`` returns the number of arguments passed on the
   command line when the containing program was invoked.

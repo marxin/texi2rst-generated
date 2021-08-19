@@ -16,7 +16,7 @@ CSHIFT --- Circular shift elements of an array
 
 .. index:: array, rotate
 
-.. function:: CSHIFT(ARRAY, SHIFT [, DIM])
+.. function:: CSHIFT(ARRAY, SHIFT, DIM)
 
   ``CSHIFT(ARRAY, SHIFT [, DIM])`` performs a circular shift on elements of
   :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is omitted it is

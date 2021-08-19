@@ -28,7 +28,7 @@ REAL --- Convert to real type
 
 .. index:: complex numbers, real part
 
-.. function:: REAL(A [, KIND])
+.. function:: REAL(A, KIND)
 
   ``REAL(A [, KIND])`` converts its argument :samp:`{A}` to a real type.  The
   ``REALPART`` function is provided for compatibility with :command:`g77`,

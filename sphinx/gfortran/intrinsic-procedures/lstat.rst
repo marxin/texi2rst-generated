@@ -12,7 +12,7 @@ LSTAT --- Get file status
 
 .. index:: file system, file status
 
-.. function:: LSTAT
+.. function:: LSTAT(NAME, VALUES, STATUS)
 
   ``LSTAT`` is identical to STAT, except that if path is a
   symbolic link, then the link itself is statted, not the file that it

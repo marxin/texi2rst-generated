@@ -20,7 +20,7 @@ IBSET --- Set bit
 
 .. index:: bits, set
 
-.. function:: IBSET
+.. function:: IBSET(I, POS)
 
   ``IBSET`` returns the value of :samp:`{I}` with the bit at position
   :samp:`{POS}` set to one.

@@ -14,7 +14,7 @@ EXIT --- Exit the program with status.
 
 .. index:: terminate program
 
-.. function:: EXIT
+.. function:: EXIT(STATUS)
 
   ``EXIT`` causes immediate termination of the program with status.  If status
   is omitted it returns the canonical *success* for the system.  All Fortran

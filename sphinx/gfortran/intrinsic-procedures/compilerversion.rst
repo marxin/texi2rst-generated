@@ -14,7 +14,7 @@ COMPILER_VERSION --- Compiler version string
 
 .. index:: version of the compiler
 
-.. function:: COMPILER_VERSION
+.. function:: COMPILER_VERSION()
 
   ``COMPILER_VERSION`` returns a string with the name and the
   version of the compiler.

@@ -16,7 +16,7 @@ COMPILER_OPTIONS --- Options passed to the compiler
 
 .. index:: compiler flags inquiry function
 
-.. function:: COMPILER_OPTIONS
+.. function:: COMPILER_OPTIONS()
 
   ``COMPILER_OPTIONS`` returns a string with the options used for
   compiling.

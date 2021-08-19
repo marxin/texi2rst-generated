@@ -14,7 +14,7 @@ DCMPLX --- Double complex conversion function
 
 .. index:: conversion, to complex
 
-.. function:: DCMPLX(X [,Y])
+.. function:: DCMPLX(X, Y)
 
   ``DCMPLX(X [,Y])`` returns a double complex number where :samp:`{X}` is
   converted to the real component.  If :samp:`{Y}` is present it is converted to the

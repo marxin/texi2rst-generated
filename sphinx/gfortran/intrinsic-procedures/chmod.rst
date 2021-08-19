@@ -8,11 +8,11 @@
 CHMOD --- Change access permissions of files
 ********************************************
 
-.. index:: CHMOD
+.. index:: CHMOD(NAME, MODE, STATUS)
 
 .. index:: file system, change access mode
 
-.. function:: CHMOD
+.. function:: CHMOD(NAME, MODE, STATUS)
 
   ``CHMOD`` changes the permissions of a file.
 

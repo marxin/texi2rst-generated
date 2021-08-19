@@ -14,7 +14,7 @@ NULL --- Function that returns an disassociated pointer
 
 .. index:: pointer, disassociated
 
-.. function:: > NULL(MOLD)
+.. function:: NULL(MOLD)
 
   Returns a disassociated pointer.
 

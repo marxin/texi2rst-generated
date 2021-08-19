@@ -12,7 +12,7 @@ CO_MIN --- Minimal value on the current set of images
 
 .. index:: Collectives, minimal value
 
-.. function:: CO_MIN
+.. function:: CO_MIN(A, RESULT_IMAGE, STAT, ERRMSG)
 
   ``CO_MIN`` determines element-wise the minimal value of :samp:`{A}` on all
   images of the current team.  If :samp:`{RESULT_IMAGE}` is present, the minimal

@@ -24,7 +24,7 @@ NOT --- Logical negation
 
 .. index:: logical not, bitwise
 
-.. function:: NOT
+.. function:: NOT(I)
 
   ``NOT`` returns the bitwise Boolean inverse of :samp:`{I}`.
 

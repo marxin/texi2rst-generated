@@ -12,7 +12,7 @@ ATOMIC_CAS --- Atomic compare and swap
 
 .. index:: Atomic subroutine, compare and swap
 
-.. function:: ATOMIC_CAS
+.. function:: ATOMIC_CAS(ATOM, OLD, COMPARE, NEW, STAT)
 
   ``ATOMIC_CAS`` compares the variable :samp:`{ATOM}` with the value of
   :samp:`{COMPARE}` ; if the value is the same, :samp:`{ATOM}` is set to the value

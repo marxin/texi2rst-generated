@@ -12,7 +12,7 @@ LEADZ --- Number of leading zero bits of an integer
 
 .. index:: zero bits
 
-.. function:: LEADZ
+.. function:: LEADZ(I)
 
   ``LEADZ`` returns the number of leading zero bits of an integer.
 

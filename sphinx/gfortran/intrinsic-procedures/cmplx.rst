@@ -14,7 +14,7 @@ CMPLX --- Complex conversion function
 
 .. index:: conversion, to complex
 
-.. function:: CMPLX(X [, Y [, KIND]])
+.. function:: CMPLX(X, Y, KIND)
 
   ``CMPLX(X [, Y [, KIND]])`` returns a complex number where :samp:`{X}` is converted to
   the real component.  If :samp:`{Y}` is present it is converted to the imaginary

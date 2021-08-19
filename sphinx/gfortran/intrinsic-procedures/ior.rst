@@ -22,7 +22,7 @@ IOR --- Bitwise logical or
 
 .. index:: logical or, bitwise
 
-.. function:: IOR
+.. function:: IOR(I, J)
 
   ``IOR`` returns the bitwise Boolean inclusive-OR of :samp:`{I}` and
   :samp:`{J}`.

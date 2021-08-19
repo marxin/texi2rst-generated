@@ -12,7 +12,7 @@ BACKTRACE --- Show a backtrace
 
 .. index:: backtrace
 
-.. function:: BACKTRACE
+.. function:: BACKTRACE()
 
   ``BACKTRACE`` shows a backtrace at an arbitrary place in user code. Program
   execution continues normally afterwards. The backtrace information is printed

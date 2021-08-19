@@ -16,7 +16,7 @@ ABORT --- Abort the program
 
 .. index:: core, dump
 
-.. function:: ABORT
+.. function:: ABORT()
 
   ``ABORT`` causes immediate termination of the program.  On operating
   systems that support a core dump, ``ABORT`` will produce a core dump.

@@ -12,7 +12,7 @@ RAN --- Real pseudo-random number
 
 .. index:: random number generation
 
-.. function:: RAN
+.. function:: RAN()
 
   For compatibility with HP FORTRAN 77/iX, the ``RAN`` intrinsic is
   provided as an alias for ``RAND``.  See RAND for complete

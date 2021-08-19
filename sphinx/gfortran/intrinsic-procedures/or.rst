@@ -14,7 +14,7 @@ OR --- Bitwise logical OR
 
 .. index:: logical or, bitwise
 
-.. function:: OR
+.. function:: OR(I, J)
 
   Bitwise logical ``OR``.
 

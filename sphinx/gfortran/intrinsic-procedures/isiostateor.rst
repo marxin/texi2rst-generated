@@ -12,7 +12,7 @@ IS_IOSTAT_EOR --- Test for end-of-record value
 
 .. index:: IOSTAT, end of record
 
-.. function:: IS_IOSTAT_EOR
+.. function:: IS_IOSTAT_EOR(I)
 
   ``IS_IOSTAT_EOR`` tests whether an variable has the value of the I/O
   status 'end of record'. The function is equivalent to comparing the

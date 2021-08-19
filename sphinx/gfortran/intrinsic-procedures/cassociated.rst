@@ -14,7 +14,7 @@ C_ASSOCIATED --- Status of a C pointer
 
 .. index:: pointer, C association status
 
-.. function:: C_ASSOCIATED(c_ptr_1[, c_ptr_2])
+.. function:: C_ASSOCIATED(c_ptr_1, c_ptr_2)
 
   ``C_ASSOCIATED(c_ptr_1[, c_ptr_2])`` determines the status of the C pointer
   :samp:`{c_ptr_1}` or if :samp:`{c_ptr_1}` is associated with the target :samp:`{c_ptr_2}`.

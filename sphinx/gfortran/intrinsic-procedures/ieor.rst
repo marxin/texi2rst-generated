@@ -22,7 +22,7 @@ IEOR --- Bitwise logical exclusive or
 
 .. index:: logical exclusive or, bitwise
 
-.. function:: IEOR
+.. function:: IEOR(I, J)
 
   ``IEOR`` returns the bitwise Boolean exclusive-OR of :samp:`{I}` and
   :samp:`{J}`.

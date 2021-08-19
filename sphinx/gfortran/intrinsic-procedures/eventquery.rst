@@ -12,7 +12,7 @@ EVENT_QUERY --- Query whether a coarray event has occurred
 
 .. index:: Events, EVENT_QUERY
 
-.. function:: EVENT_QUERY
+.. function:: EVENT_QUERY(EVENT, COUNT, STAT)
 
   ``EVENT_QUERY`` assignes the number of events to :samp:`{COUNT}` which have been
   posted to the :samp:`{EVENT}` variable and not yet been removed by calling

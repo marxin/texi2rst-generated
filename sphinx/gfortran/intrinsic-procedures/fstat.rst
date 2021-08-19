@@ -12,7 +12,7 @@ FSTAT --- Get file status
 
 .. index:: file system, file status
 
-.. function:: FSTAT
+.. function:: FSTAT(UNIT, VALUES, STATUS)
 
   ``FSTAT`` is identical to STAT, except that information about an 
   already opened file is obtained.

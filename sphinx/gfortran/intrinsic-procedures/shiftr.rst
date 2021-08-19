@@ -14,7 +14,7 @@ SHIFTR --- Right shift
 
 .. index:: shift, right
 
-.. function:: SHIFTR
+.. function:: SHIFTR(I, SHIFT)
 
   ``SHIFTR`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be

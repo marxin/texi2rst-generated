@@ -12,7 +12,7 @@ RSHIFT --- Right shift bits
 
 .. index:: bits, shift right
 
-.. function:: RSHIFT
+.. function:: RSHIFT(I, SHIFT)
 
   ``RSHIFT`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be

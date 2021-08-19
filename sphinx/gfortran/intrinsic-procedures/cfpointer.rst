@@ -12,7 +12,7 @@ C_F_POINTER --- Convert C into Fortran pointer
 
 .. index:: pointer, convert C to Fortran
 
-.. function:: C_F_POINTER(CPTR, FPTR[, SHAPE])
+.. function:: C_F_POINTER(CPTR, FPTR, SHAPE)
 
   ``C_F_POINTER(CPTR, FPTR[, SHAPE])`` assigns the target of the C pointer
   :samp:`{CPTR}` to the Fortran pointer :samp:`{FPTR}` and specifies its shape.

@@ -20,7 +20,7 @@ ISHFTC --- Shift bits circularly
 
 .. index:: bits, shift circular
 
-.. function:: ISHFTC
+.. function:: ISHFTC(I, SHIFT, SIZE)
 
   ``ISHFTC`` returns a value corresponding to :samp:`{I}` with the
   rightmost :samp:`{SIZE}` bits shifted circularly :samp:`{SHIFT}` places; that

@@ -12,7 +12,7 @@ SIGNAL --- Signal handling subroutine (or function)
 
 .. index:: system, signal handling
 
-.. function:: SIGNAL(NUMBER, HANDLER [, STATUS])
+.. function:: SIGNAL(NUMBER, HANDLER, STATUS)
 
   ``SIGNAL(NUMBER, HANDLER [, STATUS])`` causes external subroutine
   :samp:`{HANDLER}` to be executed with a single integer argument when signal

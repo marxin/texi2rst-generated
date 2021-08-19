@@ -12,7 +12,7 @@ CO_BROADCAST --- Copy a value to all images the current set of images
 
 .. index:: Collectives, value broadcasting
 
-.. function:: CO_BROADCAST
+.. function:: CO_BROADCAST(A, SOURCE_IMAGE, STAT, ERRMSG)
 
   ``CO_BROADCAST`` copies the value of argument :samp:`{A}` on the image with
   image index ``SOURCE_IMAGE`` to all images in the current team.  :samp:`{A}`

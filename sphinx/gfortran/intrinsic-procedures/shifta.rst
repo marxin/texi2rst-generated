@@ -14,7 +14,7 @@ SHIFTA --- Right shift with fill
 
 .. index:: shift, right with fill
 
-.. function:: SHIFTA
+.. function:: SHIFTA(I, SHIFT)
 
   ``SHIFTA`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted right by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` that be

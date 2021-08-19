@@ -12,7 +12,7 @@ LSHIFT --- Left shift bits
 
 .. index:: bits, shift left
 
-.. function:: LSHIFT
+.. function:: LSHIFT(I, SHIFT)
 
   ``LSHIFT`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted left by :samp:`{SHIFT}` places.  :samp:`{SHIFT}` shall be

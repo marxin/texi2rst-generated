@@ -22,7 +22,7 @@ IBITS --- Bit extraction
 
 .. index:: bits, extract
 
-.. function:: IBITS
+.. function:: IBITS(I, POS, LEN)
 
   ``IBITS`` extracts a field of length :samp:`{LEN}` from :samp:`{I}`,
   starting from bit position :samp:`{POS}` and extending left for :samp:`{LEN}`

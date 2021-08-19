@@ -12,7 +12,7 @@ TRAILZ --- Number of trailing zero bits of an integer
 
 .. index:: zero bits
 
-.. function:: TRAILZ
+.. function:: TRAILZ(I)
 
   ``TRAILZ`` returns the number of trailing zero bits of an integer.
 

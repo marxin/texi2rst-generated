@@ -12,7 +12,7 @@ CO_REDUCE --- Reduction of values on the current set of images
 
 .. index:: Collectives, generic reduction
 
-.. function:: CO_REDUCE
+.. function:: CO_REDUCE(A, OPERATOR, RESULT_IMAGE, STAT, ERRMSG)
 
   ``CO_REDUCE`` determines element-wise the reduction of the value of :samp:`{A}`
   on all images of the current team.  The pure function passed as :samp:`{OPERATOR}`

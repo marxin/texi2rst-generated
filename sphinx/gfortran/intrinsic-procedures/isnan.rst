@@ -12,7 +12,7 @@ ISNAN --- Test for a NaN
 
 .. index:: IEEE, ISNAN
 
-.. function:: ISNAN
+.. function:: ISNAN(X)
 
   ``ISNAN`` tests whether a floating-point value is an IEEE
   Not-a-Number (NaN).

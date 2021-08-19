@@ -12,7 +12,7 @@ ALARM --- Execute a routine after a given delay
 
 .. index:: delayed execution
 
-.. function:: ALARM(SECONDS, HANDLER [, STATUS])
+.. function:: ALARM(SECONDS, HANDLER, STATUS)
 
   ``ALARM(SECONDS, HANDLER [, STATUS])`` causes external subroutine :samp:`{HANDLER}`
   to be executed after a delay of :samp:`{SECONDS}` by using ``alarm(2)`` to

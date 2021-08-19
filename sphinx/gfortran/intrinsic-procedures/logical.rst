@@ -12,7 +12,7 @@ LOGICAL --- Convert to logical type
 
 .. index:: conversion, to logical
 
-.. function:: LOGICAL
+.. function:: LOGICAL(L, KIND)
 
   Converts one kind of ``LOGICAL`` variable to another.
 

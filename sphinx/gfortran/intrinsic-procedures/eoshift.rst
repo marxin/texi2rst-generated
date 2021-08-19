@@ -12,7 +12,7 @@ EOSHIFT --- End-off shift elements of an array
 
 .. index:: array, shift
 
-.. function:: EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])
+.. function:: EOSHIFT(ARRAY, SHIFT, BOUNDARY, DIM)
 
   ``EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])`` performs an end-off shift on
   elements of :samp:`{ARRAY}` along the dimension of :samp:`{DIM}`.  If :samp:`{DIM}` is

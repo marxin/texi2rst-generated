@@ -14,7 +14,7 @@ ANY --- Any value in MASK along DIM is true
 
 .. index:: array, condition testing
 
-.. function:: ANY(MASK [, DIM])
+.. function:: ANY(MASK, DIM)
 
   ``ANY(MASK [, DIM])`` determines if any of the values in the logical array
   :samp:`{MASK}` along dimension :samp:`{DIM}` are ``.TRUE.``.
