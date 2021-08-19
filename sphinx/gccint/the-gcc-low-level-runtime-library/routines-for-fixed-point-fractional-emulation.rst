@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. default-domain:: c
+
 .. _fixed-point-fractional-library-routines:
 
 Routines for fixed-point fractional emulation
