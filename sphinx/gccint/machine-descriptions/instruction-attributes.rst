@@ -256,7 +256,7 @@ Attribute value expressions must have one of the following forms:
   :samp:`{operands}`
     An array of :samp:`{insn}` 's rtl operands.
 
-    :samp:`{c-expr}` behaves like the condition in a C ``if`` statement,
+  :samp:`{c-expr}` behaves like the condition in a C ``if`` statement,
   so there is no need to explicitly convert the expression into a boolean
   0 or 1 value.  For example, the following two tests are equivalent:
 
@@ -467,7 +467,7 @@ The form of each of the above specifications is shown below.  In each case,
   ``attr``, whose sole operand is a string giving the name of the
   attribute being set.  :samp:`{value}` is the value of the attribute.
 
-  The following shows three different ways of representing the same
+The following shows three different ways of representing the same
 attribute value specification:
 
 .. code-block:: c++

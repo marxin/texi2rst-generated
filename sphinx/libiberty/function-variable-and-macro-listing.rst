@@ -1200,7 +1200,7 @@ sets of characters:
 
 .. simple-object.txh:49
 
-.. function:: int simple_object_find_section   (simple_object_read *simple_object off_t *offset,   off_t *length, const char **errmsg, int *err)
+.. function:: int simple_object_find_section (simple_object_read *simple_object, off_t *offset, off_t *length, const char **errmsg, int *err)
 
   Look for the section :samp:`{name}` in :samp:`{simple_object}`.  This returns
   information for the first section with that name.
@@ -1586,9 +1586,9 @@ sets of characters:
 
 .. strtoll.c:33
 
-.. function:: long long int strtoll (const char *string,   char **endptr, int base)
+.. function:: long long int strtoll (const char *string, char **endptr, int base)
 
-.. function:: unsigned long long int strtoul (  const char *string, char **endptr, int base)
+.. function:: unsigned long long int strtoul (const char *string, char **endptr, int base)
 
   The ``strtoll`` function converts the string in :samp:`{string}` to a
   long long integer value according to the given :samp:`{base}`, which must be
