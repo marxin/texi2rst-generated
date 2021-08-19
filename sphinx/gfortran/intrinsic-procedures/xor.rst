@@ -14,7 +14,7 @@ XOR --- Bitwise logical exclusive OR
 
 .. index:: logical exclusive or, bitwise
 
-.. function:: XOR
+.. function:: XOR(I, J)
 
   Bitwise logical exclusive or.
 

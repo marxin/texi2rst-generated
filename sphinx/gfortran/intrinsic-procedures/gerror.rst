@@ -12,7 +12,7 @@ GERROR --- Get last system error message
 
 .. index:: system, error handling
 
-.. function:: GERROR
+.. function:: GERROR(RESULT)
 
   Returns the system error message corresponding to the last system error.
   This resembles the functionality of ``strerror(3)`` in C.

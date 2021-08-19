@@ -12,7 +12,7 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
 
 .. index:: random number generation, initialization
 
-.. function:: RANDOM_INIT
+.. function:: RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 
   Initializes the state of the pseudorandom number generator used by 
   ``RANDOM_NUMBER``.

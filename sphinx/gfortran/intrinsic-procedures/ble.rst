@@ -12,7 +12,7 @@ BLE --- Bitwise less than or equal to
 
 .. index:: bitwise comparison
 
-.. function:: BLE
+.. function:: BLE(I, J)
 
   Determines whether an integral is a bitwise less than or equal to
   another.

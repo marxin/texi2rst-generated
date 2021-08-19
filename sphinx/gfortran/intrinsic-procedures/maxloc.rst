@@ -12,7 +12,7 @@ MAXLOC --- Location of the maximum value within an array
 
 .. index:: array, location of maximum element
 
-.. function:: MAXLOC
+.. function:: MAXLOC(ARRAY , MASK ,KIND ,BACK)
 
   Determines the location of the element in the array with the maximum
   value, or, if the :samp:`{DIM}` argument is supplied, determines the

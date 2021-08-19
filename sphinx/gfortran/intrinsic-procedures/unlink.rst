@@ -12,7 +12,7 @@ UNLINK --- Remove a file from the file system
 
 .. index:: file system, remove file
 
-.. function:: UNLINK
+.. function:: UNLINK(PATH)
 
   Unlinks the file :samp:`{PATH}`. A null character (``CHAR(0)``) can be
   used to mark the end of the name in :samp:`{PATH}` ; otherwise, trailing

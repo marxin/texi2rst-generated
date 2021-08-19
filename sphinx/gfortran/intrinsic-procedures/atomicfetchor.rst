@@ -12,7 +12,7 @@ ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
 
 .. index:: Atomic subroutine, OR with fetch
 
-.. function:: ATOMIC_FETCH_OR
+.. function:: ATOMIC_FETCH_OR (ATOM, VALUE, OLD , STAT)
 
   ``ATOMIC_OR(ATOM, VALUE)`` atomically stores the value of :samp:`{ATOM}` in
   :samp:`{OLD}` and defines :samp:`{ATOM}` with the bitwise OR between the values of

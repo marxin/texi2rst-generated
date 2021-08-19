@@ -12,7 +12,7 @@ FLUSH --- Flush I/O unit(s)
 
 .. index:: file operation, flush
 
-.. function:: FLUSH
+.. function:: FLUSH(UNIT)
 
   Flushes Fortran unit(s) currently open for output. Without the optional
   argument, all units are flushed, otherwise just the unit specified.

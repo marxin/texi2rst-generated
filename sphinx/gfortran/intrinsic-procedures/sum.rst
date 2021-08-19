@@ -18,7 +18,7 @@ SUM --- Sum of array elements
 
 .. index:: sum array elements
 
-.. function:: SUM
+.. function:: SUM(ARRAY, DIM, MASK)
 
   Adds the elements of :samp:`{ARRAY}` along dimension :samp:`{DIM}` if
   the corresponding element in :samp:`{MASK}` is ``TRUE``.

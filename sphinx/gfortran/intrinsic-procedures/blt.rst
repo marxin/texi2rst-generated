@@ -12,7 +12,7 @@ BLT --- Bitwise less than
 
 .. index:: bitwise comparison
 
-.. function:: BLT
+.. function:: BLT(I, J)
 
   Determines whether an integral is a bitwise less than another.
 

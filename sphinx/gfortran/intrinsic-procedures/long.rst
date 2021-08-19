@@ -12,7 +12,7 @@ LONG --- Convert to integer type
 
 .. index:: conversion, to integer
 
-.. function:: LONG
+.. function:: LONG(A)
 
   Convert to a ``KIND=4`` integer type, which is the same size as a C
   ``long`` integer.  This is equivalent to the standard ``INT``

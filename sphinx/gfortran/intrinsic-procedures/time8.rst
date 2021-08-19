@@ -14,7 +14,7 @@ TIME8 --- Time function (64-bit)
 
 .. index:: current time
 
-.. function:: TIME8
+.. function:: TIME8()
 
   Returns the current time encoded as an integer (in the manner of the
   function ``time(3)`` in the C standard library). This value is

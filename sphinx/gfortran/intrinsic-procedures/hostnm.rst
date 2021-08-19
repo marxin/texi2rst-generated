@@ -12,7 +12,7 @@ HOSTNM --- Get system host name
 
 .. index:: system, host name
 
-.. function:: HOSTNM
+.. function:: HOSTNM(NAME)
 
   Retrieves the host name of the system on which the program is running.
 

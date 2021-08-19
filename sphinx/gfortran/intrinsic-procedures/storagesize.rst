@@ -12,7 +12,7 @@ STORAGE_SIZE --- Storage size in bits
 
 .. index:: storage size
 
-.. function:: STORAGE_SIZE
+.. function:: STORAGE_SIZE(A , KIND)
 
   Returns the storage size of argument :samp:`{A}` in bits.
 

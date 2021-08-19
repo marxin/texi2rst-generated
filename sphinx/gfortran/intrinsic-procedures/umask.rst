@@ -12,7 +12,7 @@ UMASK --- Set the file creation mask
 
 .. index:: file system, file creation mask
 
-.. function:: UMASK
+.. function:: UMASK(MASK)
 
   Sets the file creation mask to :samp:`{MASK}`. If called as a function, it
   returns the old value. If called as a subroutine and argument :samp:`{OLD}`

@@ -14,7 +14,7 @@ MCLOCK8 --- Time function (64-bit)
 
 .. index:: clock ticks
 
-.. function:: MCLOCK8
+.. function:: MCLOCK8()
 
   Returns the number of clock ticks since the start of the process, based
   on the function ``clock(3)`` in the C standard library.

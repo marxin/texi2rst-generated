@@ -12,7 +12,7 @@ GMTIME --- Convert time to GMT info
 
 .. index:: time, conversion to GMT info
 
-.. function:: GMTIME
+.. function:: GMTIME(TIME, VALUES)
 
   Given a system time value :samp:`{TIME}` (as provided by the TIME
   intrinsic), fills :samp:`{VALUES}` with values extracted from it appropriate

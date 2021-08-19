@@ -12,7 +12,7 @@ LBOUND --- Lower dimension bounds of an array
 
 .. index:: array, lower bound
 
-.. function:: LBOUND
+.. function:: LBOUND(ARRAY , DIM , KIND)
 
   Returns the lower bounds of an array, or a single lower bound
   along the :samp:`{DIM}` dimension.

@@ -14,7 +14,7 @@ GETPID --- Process ID function
 
 .. index:: process ID
 
-.. function:: GETPID
+.. function:: GETPID()
 
   Returns the numerical process identifier of the current process.
 

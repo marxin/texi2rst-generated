@@ -14,7 +14,7 @@ LGT --- Lexical greater than
 
 .. index:: string, comparison
 
-.. function:: LGT
+.. function:: LGT(STRING_A, STRING_B)
 
   Determines whether one string is lexically greater than another string,
   where the two strings are interpreted as containing ASCII character

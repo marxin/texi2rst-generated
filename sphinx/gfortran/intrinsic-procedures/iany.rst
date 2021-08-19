@@ -14,7 +14,7 @@ IANY --- Bitwise OR of array elements
 
 .. index:: bits, OR of array elements
 
-.. function:: IANY
+.. function:: IANY(ARRAY, DIM, MASK)
 
   Reduces with bitwise OR (inclusive or) the elements of :samp:`{ARRAY}` along
   dimension :samp:`{DIM}` if the corresponding element in :samp:`{MASK}` is ``TRUE``.

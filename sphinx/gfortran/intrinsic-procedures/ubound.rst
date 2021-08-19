@@ -12,7 +12,7 @@ UBOUND --- Upper dimension bounds of an array
 
 .. index:: array, upper bound
 
-.. function:: UBOUND
+.. function:: UBOUND(ARRAY , DIM , KIND)
 
   Returns the upper bounds of an array, or a single upper bound
   along the :samp:`{DIM}` dimension.

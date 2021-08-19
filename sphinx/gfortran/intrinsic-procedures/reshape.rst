@@ -14,7 +14,7 @@ RESHAPE --- Function to reshape an array
 
 .. index:: array, transmogrify
 
-.. function:: RESHAPE
+.. function:: RESHAPE(SOURCE, SHAPE, PAD, ORDER)
 
   Reshapes :samp:`{SOURCE}` to correspond to :samp:`{SHAPE}`. If necessary,
   the new array may be padded with elements from :samp:`{PAD}` or permuted

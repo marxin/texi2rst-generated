@@ -16,7 +16,7 @@ IPARITY --- Bitwise XOR of array elements
 
 .. index:: bits, XOR of array elements
 
-.. function:: IPARITY
+.. function:: IPARITY(ARRAY, DIM, MASK)
 
   Reduces with bitwise XOR (exclusive or) the elements of :samp:`{ARRAY}` along
   dimension :samp:`{DIM}` if the corresponding element in :samp:`{MASK}` is ``TRUE``.

@@ -12,7 +12,7 @@ INT8 --- Convert to 64-bit integer type
 
 .. index:: conversion, to integer
 
-.. function:: INT8
+.. function:: INT8(A)
 
   Convert to a ``KIND=8`` integer type. This is equivalent to the
   standard ``INT`` intrinsic with an optional argument of

@@ -12,7 +12,7 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
 
 .. index:: Atomic subroutine, reference
 
-.. function:: ATOMIC_REF
+.. function:: ATOMIC_REF(VALUE, ATOM , STAT)
 
   ``ATOMIC_DEFINE(ATOM, VALUE)`` atomically assigns the value of the
   variable :samp:`{ATOM}` to :samp:`{VALUE}`. When :samp:`{STAT}` is present and the

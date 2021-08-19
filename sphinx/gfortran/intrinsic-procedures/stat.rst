@@ -12,7 +12,7 @@ STAT --- Get file status
 
 .. index:: file system, file status
 
-.. function:: STAT
+.. function:: STAT(NAME, VALUES)
 
   This function returns information about a file. No permissions are required on 
   the file itself, but execute (search) permission is required on all of the 

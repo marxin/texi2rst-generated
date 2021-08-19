@@ -14,7 +14,7 @@ MAXVAL --- Maximum value of an array
 
 .. index:: maximum value
 
-.. function:: MAXVAL
+.. function:: MAXVAL(ARRAY , MASK)
 
   Determines the maximum value of the elements in an array value, or, if
   the :samp:`{DIM}` argument is supplied, determines the maximum value along

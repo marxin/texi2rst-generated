@@ -12,7 +12,7 @@ ATOMIC_XOR --- Atomic bitwise OR operation
 
 .. index:: Atomic subroutine, XOR
 
-.. function:: ATOMIC_XOR
+.. function:: ATOMIC_XOR (ATOM, VALUE , STAT)
 
   ``ATOMIC_AND(ATOM, VALUE)`` atomically defines :samp:`{ATOM}` with the bitwise
   XOR between the values of :samp:`{ATOM}` and :samp:`{VALUE}`. When :samp:`{STAT}` is present

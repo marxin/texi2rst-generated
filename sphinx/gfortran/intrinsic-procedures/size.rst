@@ -16,7 +16,7 @@ SIZE --- Determine the size of an array
 
 .. index:: array, count elements
 
-.. function:: SIZE
+.. function:: SIZE(ARRAY, DIM , KIND)
 
   Determine the extent of :samp:`{ARRAY}` along a specified dimension :samp:`{DIM}`,
   or the total number of elements in :samp:`{ARRAY}` if :samp:`{DIM}` is absent.

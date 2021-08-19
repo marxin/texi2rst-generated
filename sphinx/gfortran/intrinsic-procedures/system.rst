@@ -12,7 +12,7 @@ SYSTEM --- Execute a shell command
 
 .. index:: system, system call
 
-.. function:: SYSTEM
+.. function:: SYSTEM(COMMAND)
 
   Passes the command :samp:`{COMMAND}` to a shell (see ``system(3)``). If
   argument :samp:`{STATUS}` is present, it contains the value returned by

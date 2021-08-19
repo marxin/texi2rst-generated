@@ -12,7 +12,7 @@ UCOBOUND --- Upper codimension bounds of an array
 
 .. index:: coarray, upper bound
 
-.. function:: UCOBOUND
+.. function:: UCOBOUND(COARRAY , DIM , KIND)
 
   Returns the upper cobounds of a coarray, or a single upper cobound
   along the :samp:`{DIM}` codimension.

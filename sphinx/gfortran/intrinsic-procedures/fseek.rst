@@ -14,7 +14,7 @@ FSEEK --- Low level file positioning subroutine
 
 .. index:: file operation, position
 
-.. function:: FSEEK
+.. function:: FSEEK(UNIT, OFFSET, WHENCE, STATUS)
 
   Moves :samp:`{UNIT}` to the specified :samp:`{OFFSET}`. If :samp:`{WHENCE}` 
   is set to 0, the :samp:`{OFFSET}` is taken as an absolute value ``SEEK_SET``,

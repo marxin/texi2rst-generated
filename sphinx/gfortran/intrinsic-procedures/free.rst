@@ -12,7 +12,7 @@ FREE --- Frees memory
 
 .. index:: pointer, cray
 
-.. function:: FREE
+.. function:: FREE(PTR)
 
   Frees memory previously allocated by ``MALLOC``. The ``FREE``
   intrinsic is an extension intended to be used with Cray pointers, and is

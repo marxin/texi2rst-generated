@@ -14,7 +14,7 @@ REPEAT --- Repeated string concatenation
 
 .. index:: string, concatenate
 
-.. function:: REPEAT
+.. function:: REPEAT(STRING, NCOPIES)
 
   Concatenates :samp:`{NCOPIES}` copies of a string.
 

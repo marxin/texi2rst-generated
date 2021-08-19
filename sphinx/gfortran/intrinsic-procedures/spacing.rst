@@ -14,7 +14,7 @@ SPACING --- Smallest distance between two numbers of a given type
 
 .. index:: floating point, relative spacing
 
-.. function:: SPACING
+.. function:: SPACING(X)
 
   Determines the distance between the argument :samp:`{X}` and the nearest 
   adjacent number of the same type.

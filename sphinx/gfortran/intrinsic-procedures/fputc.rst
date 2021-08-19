@@ -16,7 +16,7 @@ FPUTC --- Write a single character in stream mode
 
 .. index:: file operation, write character
 
-.. function:: FPUTC
+.. function:: FPUTC(UNIT, C)
 
   Write a single character in stream mode by bypassing normal formatted 
   output. Stream I/O should not be mixed with normal record-oriented 

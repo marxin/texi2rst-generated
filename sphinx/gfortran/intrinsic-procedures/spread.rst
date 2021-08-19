@@ -16,7 +16,7 @@ SPREAD --- Add a dimension to an array
 
 .. index:: array, duplicate dimensions
 
-.. function:: SPREAD
+.. function:: SPREAD(SOURCE, DIM, NCOPIES)
 
   Replicates a :samp:`{SOURCE}` array :samp:`{NCOPIES}` times along a specified 
   dimension :samp:`{DIM}`.

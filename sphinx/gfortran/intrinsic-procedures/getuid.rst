@@ -14,7 +14,7 @@ GETUID --- User ID function
 
 .. index:: user id
 
-.. function:: GETUID
+.. function:: GETUID()
 
   Returns the numerical user ID of the current process.
 

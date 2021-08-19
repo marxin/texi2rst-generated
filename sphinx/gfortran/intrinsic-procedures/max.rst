@@ -22,7 +22,7 @@ MAX --- Maximum value of an argument list
 
 .. index:: maximum value
 
-.. function:: MAX
+.. function:: MAX(A1, A2 , A3 , ...)
 
   Returns the argument with the largest (most positive) value.
 

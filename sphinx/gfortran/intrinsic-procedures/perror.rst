@@ -12,7 +12,7 @@ PERROR --- Print system error message
 
 .. index:: system, error handling
 
-.. function:: PERROR
+.. function:: PERROR(STRING)
 
   Prints (on the C ``stderr`` stream) a newline-terminated error
   message corresponding to the last system error. This is prefixed by

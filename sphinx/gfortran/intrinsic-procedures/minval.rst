@@ -14,7 +14,7 @@ MINVAL --- Minimum value of an array
 
 .. index:: minimum value
 
-.. function:: MINVAL
+.. function:: MINVAL(ARRAY , MASK)
 
   Determines the minimum value of the elements in an array value, or, if
   the :samp:`{DIM}` argument is supplied, determines the minimum value along

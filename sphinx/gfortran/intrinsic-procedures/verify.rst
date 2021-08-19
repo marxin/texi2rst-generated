@@ -12,7 +12,7 @@ VERIFY --- Scan a string for characters not a given set
 
 .. index:: string, find missing set
 
-.. function:: VERIFY
+.. function:: VERIFY(STRING, SET, BACK , KIND)
 
   Verifies that all the characters in :samp:`{STRING}` belong to the set of
   characters in :samp:`{SET}`.

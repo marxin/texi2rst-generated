@@ -14,7 +14,7 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
 
 .. index:: seeding a random number generator
 
-.. function:: RANDOM_SEED
+.. function:: RANDOM_SEED(SIZE, PUT, GET)
 
   Restarts or queries the state of the pseudorandom number generator used by 
   ``RANDOM_NUMBER``.

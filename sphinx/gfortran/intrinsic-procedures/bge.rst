@@ -12,7 +12,7 @@ BGE --- Bitwise greater than or equal to
 
 .. index:: bitwise comparison
 
-.. function:: BGE
+.. function:: BGE(I, J)
 
   Determines whether an integral is a bitwise greater than or equal to
   another.

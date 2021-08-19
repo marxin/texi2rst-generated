@@ -14,7 +14,7 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
 
 .. index:: images, index of this image
 
-.. function:: THIS_IMAGE
+.. function:: THIS_IMAGE(COARRAY , DIM)
 
   Returns the cosubscript for this image.
 

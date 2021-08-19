@@ -12,7 +12,7 @@ SLEEP --- Sleep for the specified number of seconds
 
 .. index:: delayed execution
 
-.. function:: SLEEP
+.. function:: SLEEP(SECONDS)
 
   Calling this subroutine causes the process to pause for :samp:`{SECONDS}` seconds.
 

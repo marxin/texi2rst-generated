@@ -12,7 +12,7 @@ FTELL --- Current stream position
 
 .. index:: file operation, position
 
-.. function:: FTELL
+.. function:: FTELL(UNIT)
 
   Retrieves the current position within an open file.
 
