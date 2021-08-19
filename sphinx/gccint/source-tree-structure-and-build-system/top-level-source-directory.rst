@@ -113,5 +113,4 @@ subdirectories that contain parts of GCC and its runtime libraries:
 The build system in the top level directory, including how recursion
 into subdirectories works and how building runtime libraries for
 multilibs is handled, is documented in a separate manual, included
-with GNU Binutils.  See :ref:`configure:top`, for details.
-
+with GNU Binutils.
