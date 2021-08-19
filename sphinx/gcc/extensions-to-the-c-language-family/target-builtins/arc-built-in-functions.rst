@@ -154,7 +154,7 @@ error may be generated.
 
     rtie
 
-.. function:: void __builtin_arc_sleep (int a
+.. function:: void __builtin_arc_sleep (int a)
 
   Generates:
 

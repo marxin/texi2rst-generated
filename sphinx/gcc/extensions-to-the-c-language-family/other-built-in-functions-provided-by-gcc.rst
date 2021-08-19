@@ -1083,16 +1083,16 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   expression, it has no effect on code generation and no attempt is made to
   check its compatibility with :samp:`{size}`.
 
-.. function:: bool __builtin_has_attribute (type-or-expression, attribute)
+.. function:: bool __builtin_has_attribute (type_or_expression, attribute)
 
   The ``__builtin_has_attribute`` function evaluates to an integer constant
   expression equal to ``true`` if the symbol or type referenced by
-  the :samp:`{type-or-expression}` argument has been declared with
+  the :samp:`{type_or_expression}` argument has been declared with
   the :samp:`{attribute}` referenced by the second argument.  For
-  an :samp:`{type-or-expression}` argument that does not reference a symbol,
+  an :samp:`{type_or_expression}` argument that does not reference a symbol,
   since attributes do not apply to expressions the built-in consider
   the type of the argument.  Neither argument is evaluated.
-  The :samp:`{type-or-expression}` argument is subject to the same
+  The :samp:`{type_or_expression}` argument is subject to the same
   restrictions as the argument to ``typeof`` (see :ref:`typeof`).  The
   :samp:`{attribute}` argument is an attribute name optionally followed by
   a comma-separated list of arguments enclosed in parentheses.  Both forms
@@ -1100,7 +1100,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   underscores---are recognized.  See :ref:`attribute-syntax`, for details.
   When no attribute arguments are specified for an attribute that expects
   one or more arguments the function returns ``true`` if
-  :samp:`{type-or-expression}` has been declared with the attribute regardless
+  :samp:`{type_or_expression}` has been declared with the attribute regardless
   of the attribute argument values.  Arguments provided for an attribute
   that expects some are validated and matched up to the provided number.
   The function returns ``true`` if all provided arguments match.  For
@@ -1117,7 +1117,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
 
   Due to a limitation the ``__builtin_has_attribute`` function returns
   ``false`` for the ``mode`` attribute even if the type or variable
-  referenced by the :samp:`{type-or-expression}` argument was declared with one.
+  referenced by the :samp:`{type_or_expression}` argument was declared with one.
   The function is also not supported with labels, and in C with enumerators.
 
   Note that unlike the ``__has_attribute`` preprocessor operator which
@@ -1509,9 +1509,7 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   is used in a loop construct, the provided probability will influence
   the expected number of iterations made by loop optimizations.
 
-.. function:: long __builtin_expect_with_probability
-
-  (long :samp:`{exp}`, long :samp:`{c}`, double :samp:`{probability}`)
+.. function:: long __builtin_expect_with_probability (long exp, long c, double probability)
 
   This function has the same semantics as ``__builtin_expect``,
   but the caller provides the expected probability that :samp:`{exp}` == :samp:`{c}`.
