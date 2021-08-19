@@ -191,7 +191,7 @@ There are a few different CRIS targets:
 DOS
 ===
 
-Please have a look at the binaries.htmlbinaries page.
+Please have a look at the `binaries page <https://gcc.gnu.org/install/binaries.html>`_.
 
 You cannot install GCC by itself on MSDOS; it will not compile under
 any MSDOS compiler except itself.  You need to get the complete
@@ -251,7 +251,7 @@ h8300-hms
 
 Renesas H8/300 series of processors.
 
-Please have a look at the binaries.htmlbinaries page.
+Please have a look at the `binaries page <https://gcc.gnu.org/install/binaries.html>`_.
 
 The calling convention and structure layout has changed in release 2.6.
 All code must be recompiled.  The calling convention now passes the
@@ -327,7 +327,7 @@ be used to compile GCC 3.0 and up.
 
 The libffi library haven't been ported to 64-bit HP-UXand doesn't build.
 
-Refer to binaries.htmlbinaries for information about obtaining
+Refer to `binaries page <https://gcc.gnu.org/install/binaries.html>`_ for information about obtaining
 precompiled GCC binaries for HP-UX.  Precompiled binaries must be obtained
 to build the Ada language as it cannot be bootstrapped using C.  Ada is
 only available for the 32-bit PA-RISC runtime.
@@ -538,8 +538,8 @@ one may use GNU Bash instead of AIX :command:`/bin/sh`, e.g.,
   % CONFIG_SHELL=/opt/freeware/bin/bash
   % export CONFIG_SHELL
 
-and then proceed as described in build.htmlthe build
-instructions, where we strongly recommend specifying an absolute path
+and then proceed as described in :ref:`building`,
+where we strongly recommend specifying an absolute path
 to invoke :samp:`{srcdir}` /configure.
 
 Because GCC on AIX is built as a 32-bit executable by default,
@@ -984,7 +984,7 @@ Solaris 11.3 provides GCC 4.5.2, 4.7.3, and 4.8.2 as
 :command:`/usr/gcc/4.5/bin/gcc` or similar.  Newer Solaris versions
 provide one or more of GCC 5, 7, and 9.  Alternatively,
 you can install a pre-built GCC to bootstrap and install GCC.  See the
-binaries.htmlbinaries page for details.
+`binaries page <https://gcc.gnu.org/install/binaries.html>`_ binaries page for details.
 
 The Solaris 2 :command:`/bin/sh` will often fail to configure
 :samp:`libstdc++-v3`.  We therefore recommend using the
@@ -995,7 +995,7 @@ following initial sequence of commands
   % CONFIG_SHELL=/bin/ksh
   % export CONFIG_SHELL
 
-and proceed as described in configure.htmlthe configure instructions.
+and proceed as described in :ref:`configuration` the configure instructions.
 In addition we strongly recommend specifying an absolute path to invoke
 :samp:`{srcdir}/configure`.
 
@@ -1059,7 +1059,7 @@ Newer versions of the GNU Multiple Precision Library (GMP), the MPFR
 library and the MPC library are known to be miscompiled by earlier
 versions of GCC on these platforms.  We therefore recommend the use
 of the exact versions of these libraries listed as minimal versions
-in prerequisites.htmlthe prerequisites.
+in :ref:`prerequisites` the prerequisites.
 
 sparc-sun-solaris2\*
 ====================
@@ -1327,8 +1327,9 @@ bring GCC up on such a system, if still possible with current GCC, may
 require first installing an old version of GCC which did work on that
 system, and using it to compile a more recent GCC, to avoid bugs in the
 vendor compiler.  Old releases of GCC 1 and GCC 2 are available in the
-:samp:`old-releases` directory on the ../mirrors.htmlGCC mirror
-sites.  Header bugs may generally be avoided using
+:samp:`old-releases` directory on the
+`GCC mirror sites <https://gcc.gnu.org/mirrors.html>`_.
+Header bugs may generally be avoided using
 :command:`fixincludes`, but bugs or deficiencies in libraries and the
 operating system may still cause problems.
 
@@ -1337,7 +1338,7 @@ problematic than support for them as hosts for GCC; if an enthusiast
 wishes to make such a target work again (including resurrecting any of
 the targets that never worked with GCC 2, starting from the last
 version before they were removed), patches
-../contribute.htmlfollowing the usual requirements would be
+https://gcc.gnu.org/contribute.html following the usual requirements would be
 likely to be accepted, since they should not affect the support for more
 modern targets.
 
@@ -1354,7 +1355,7 @@ all ELF targets (SVR4, Solaris 2, etc.)
 =======================================
 
 C++ support is significantly better on ELF targets if you use the
-./configure.html#with-gnu-ldGNU linker; duplicate copies of
+GNU linker; duplicate copies of
 inlines, vtables and template instantiations will be discarded
 automatically.
 

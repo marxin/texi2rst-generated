@@ -115,7 +115,7 @@ incomplete or out of date.  Send a note to
 gcc@gcc.gnu.org detailing how the information should be changed.
 
 If you find a bug, please report it following the
-../bugs/bug reporting guidelines.
+`bug reporting guidelines <https://gcc.gnu.org/bugs/>`_.
 
 If you want to print the GCC manuals, do :samp:`cd {objdir}; make
 dvi`.  You will need to have :command:`texi2dvi` (version at least 4.7)

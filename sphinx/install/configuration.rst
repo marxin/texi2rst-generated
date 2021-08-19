@@ -1165,7 +1165,7 @@ corresponding :option:`--without` option.
 
   As long as shared library creation is enabled, upon:
 
-  ``--with-aix-soname=aix``
+  .. option:: --with-aix-soname=aix
   .. option:: --with-aix-soname=both
 
     A (traditional AIX) ``Shared Archive Library`` file is created:
@@ -1181,7 +1181,7 @@ corresponding :option:`--without` option.
       * is used for shared linking
       * is used for static linking, so no separate ``Static Archive Library`` file is needed
 
-  :option:`--with-aix-soname=both`
+  .. option:: --with-aix-soname=both
   .. option:: --with-aix-soname=svr4
 
     A (second) ``Shared Archive Library`` file is created:
@@ -1216,8 +1216,8 @@ corresponding :option:`--without` option.
 
   While the aix-soname= :samp:`svr4` option does not create ``Shared Object``
   files as members of unversioned ``Archive Library`` files any more, package
-  managers still are responsible to
-  ./specific.html#TransferAixShobjtransfer ``Shared Object`` files
+  managers still are responsible to :ref:`transfer <transferaixshobj>`
+  ``Shared Object`` files
   found as member of a previously installed unversioned ``Archive Library``
   file into the newly installed ``Archive Library`` file with the same
   filename.
@@ -1575,18 +1575,18 @@ corresponding :option:`--without` option.
   library and/or the MPC library installed in a standard location and
   do not have their sources present in the GCC source tree then you
   can explicitly specify the directory where they are installed
-  (:samp:`--with-gmp={gmpinstalldir}`,
-  :samp:`--with-mpfr={mpfrinstalldir}`,
-  :samp:`--with-mpc={mpcinstalldir}`).  The
+  (:option:`--with-gmp`:samp:`={gmpinstalldir}`,
+  :option:`--with-mpfr`:samp:`={mpfrinstalldir}`,
+  :option:`--with-mpc`:samp:`={mpcinstalldir}`).  The
   :option:`--with-gmp`:samp:`={gmpinstalldir}` option is shorthand for
-  :option:`--with-gmp-lib`:samp:`={gmpinstalldir}` /lib and
-  :option:`--with-gmp-include`:samp:`={gmpinstalldir}` /include.  Likewise the
+  :option:`--with-gmp-lib`:samp:`={gmpinstalldir}/lib` and
+  :option:`--with-gmp-include`:samp:`={gmpinstalldir}/include`.  Likewise the
   :option:`--with-mpfr`:samp:`={mpfrinstalldir}` option is shorthand for
-  :option:`--with-mpfr-lib`:samp:`={mpfrinstalldir}` /lib and
-  :option:`--with-mpfr-include`:samp:`={mpfrinstalldir}` /include, also the
+  :option:`--with-mpfr-lib`:samp:`={mpfrinstalldir}/lib` and
+  :option:`--with-mpfr-include`:samp:`={mpfrinstalldir}/include`, also the
   :option:`--with-mpc`:samp:`={mpcinstalldir}` option is shorthand for
-  :option:`--with-mpc-lib`:samp:`={mpcinstalldir}` /lib and
-  :option:`--with-mpc-include`:samp:`={mpcinstalldir}` /include.  If these
+  :option:`--with-mpc-lib`:samp:`={mpcinstalldir}/lib` and
+  :option:`--with-mpc-include`:samp:`={mpcinstalldir}/include`.  If these
   shorthand assumptions are not correct, you can use the explicit
   include and lib options directly.  You might also need to ensure the
   shared libraries can be found by the dynamic linker when building and
@@ -1600,7 +1600,7 @@ corresponding :option:`--without` option.
 
   If you do not have the isl library installed in a standard location and you
   want to build GCC, you can explicitly specify the directory where it is
-  installed (:samp:`--with-isl={islinstalldir}`). The
+  installed (:option:`--with-isl`:samp:`={islinstalldir}`). The
   :option:`--with-isl`:samp:`={islinstalldir}` option is shorthand for
   :option:`--with-isl-lib`:samp:`={islinstalldir}` /lib and
   :option:`--with-isl-include`:samp:`={islinstalldir}` /include. If this
@@ -1811,7 +1811,7 @@ The following options only apply to building cross compilers.
 .. option:: --with-toolexeclibdir=dir
 
   Specify the installation directory for libraries built with a cross compiler.
-  The default is ${gcc_tooldir}/lib.
+  The default is ``${gcc_tooldir}/lib``.
 
 .. option:: --with-sysroot
 
