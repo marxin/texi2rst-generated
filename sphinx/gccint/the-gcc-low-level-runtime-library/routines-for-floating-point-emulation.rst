@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. default-domain:: c
+
 .. _soft-float-library-routines:
 
 Routines for floating point emulation
