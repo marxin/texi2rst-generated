@@ -46,11 +46,13 @@ These options are defined for the MSP430:
   given precedence order, where the first method takes precendence over the
   second which takes precedence over the third.
 
-  :samp:`Include path specified with {-I} and {-L}`
+  Include path specified with -I and -L
+
     :samp:`devices.csv` will be searched for in each of the directories specified by
     include paths and linker library search paths.
 
-  :samp:`Path specified by the environment variable {MSP430_GCC_INCLUDE_DIR}`
+  Path specified by the environment variable MSP430_GCC_INCLUDE_DIR
+
     Define the value of the global environment variable
     :samp:`MSP430_GCC_INCLUDE_DIR`
     to the full path to the directory containing devices.csv, and GCC will search
@@ -59,7 +61,8 @@ These options are defined for the MSP430:
     and linker scripts in this directory can therefore be used without manually
     specifying ``-I`` and ``-L`` on the command line.
 
-  :samp:`The {msp430-elf{,bare}/include/devices} directory`
+  The msp430-elf{,bare}/include/devices directory
+  
     Finally, GCC will examine :samp:`msp430-elf{,bare}/include/devices` from the
     toolchain root directory.  This directory does not exist in a default
     installation, but if the user has created it and copied :samp:`devices.csv`

@@ -103,9 +103,7 @@
     for any cases where this rule is relaxed.
 
   * Each of the following options must be the same when building and using
-    the precompiled header:
-
-    :option:`-fexceptions`
+    the precompiled header: :option:`-fexceptions`
 
   * Some other command-line options starting with :option:`-f`,
     :option:`-p`, or :option:`-O` must be defined in the same way as when

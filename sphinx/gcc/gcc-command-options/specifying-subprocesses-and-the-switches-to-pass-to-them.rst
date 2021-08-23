@@ -70,7 +70,7 @@
     input file with the named suffix, it processes the spec string in
     order to work out how to compile that file.  For example:
 
-    .. code-block:: c++
+    .. code-block::
 
       .ZZ:
       z-compile -input %i
@@ -98,7 +98,7 @@
     :samp:`#{name}`
       This causes an error messages saying:
 
-      .. code-block:: c++
+      .. code-block::
 
         name compiler not installed on this system.
 
@@ -111,7 +111,7 @@
     override these strings or create their own.  Note that individual
     targets can also add their own spec strings to this list.
 
-  .. code-block:: c++
+  .. code-block::
 
     asm          Options to pass to the assembler
     asm_final    Options to pass to the assembler post-processor
@@ -130,7 +130,7 @@
 
   Here is a small example of a spec file:
 
-  .. code-block:: c++
+  .. code-block::
 
     %rename lib                 old_lib
 
@@ -221,7 +221,7 @@
     :samp:`%|` substitutes a single dash and :samp:`%m` substitutes nothing at
     all.  These are the two most common ways to instruct a program that it
     should read from standard input or write to standard output.  If you
-    need something more elaborate you can use an :samp:`%{pipe: ``X`` }`
+    need something more elaborate you can use an :samp:`%{{pipe:X}}`
     construct: see for example :samp:`gcc/fortran/lang-specs.h`.
 
   :samp:`%.{SUFFIX}`
@@ -385,7 +385,7 @@
       value of the environment variable concatenated with the string.  For
       example, if :envvar:`TOPDIR` is defined as :samp:`/path/to/top`, then:
 
-      .. code-block:: c++
+      .. code-block::
 
         %:getenv(TOPDIR /include)
 
@@ -396,7 +396,7 @@
       pathname to a file.  If the file exists, ``if-exists`` returns the
       pathname.  Here is a small example of its usage:
 
-      .. code-block:: c++
+      .. code-block::
 
         *startfile:
         crt0%O%s %:if-exists(crti%O%s) crtbegin%O%s
@@ -409,7 +409,7 @@
       This way, ``if-exists-else`` can be used to select one file or another,
       based on the existence of the first.  Here is a small example of its usage:
 
-      .. code-block:: c++
+      .. code-block::
 
         *startfile:
         crt0%O%s %:if-exists(crti%O%s) \
@@ -430,7 +430,7 @@
       The ``sanitize`` spec function takes no arguments.  It returns non-NULL if
       any address, thread or undefined behavior sanitizers are active.
 
-      .. code-block:: c++
+      .. code-block::
 
         %{%:sanitize(address):-funwind-tables}
 
@@ -439,7 +439,7 @@
       first argument in the outfiles array and replaces it with the second argument.  Here
       is a small example of its usage:
 
-      .. code-block:: c++
+      .. code-block::
 
         %{fgnu-runtime:%:replace-outfile(-lobjc -lobjc-gnu)}
 
@@ -448,7 +448,7 @@
       first argument in the outfiles array and removes it.  Here is a small example
       its usage:
 
-      .. code-block:: c++
+      .. code-block::
 
         %:remove-outfile(-lm)
 
@@ -456,7 +456,7 @@
       The ``version-compare`` spec function takes four or five arguments of the following
       form:
 
-      .. code-block:: c++
+      .. code-block::
 
         <comparison-op> <arg1> [<arg2>] <switch> <result>
 
@@ -484,7 +484,7 @@
       If the ``switch`` is not present at all, the condition is false unless the first character
       of the ``comparison-op`` is ``!``.
 
-      .. code-block:: c++
+      .. code-block::
 
         %:version-compare(>= 10.3 mmacosx-version-min= -lmx)
 
@@ -496,7 +496,7 @@
       that it can be nested inside a spec and thus be conditionalized.  It takes one argument,
       the filename, and looks for it in the startfile path.  It always returns NULL.
 
-      .. code-block:: c++
+      .. code-block::
 
         %{static-libasan|static:%:include(libsanitizer.spec)%(link_libasan)}
 
@@ -508,7 +508,7 @@
       :option:`-plugin-opt`:samp:`=-pass-through=` and joined by spaces.  This list is
       intended to be passed to the LTO linker plugin.
 
-      .. code-block:: c++
+      .. code-block::
 
         %:pass-through-libs(%G %L %G)
 
@@ -516,7 +516,7 @@
       The ``print-asm-header`` function takes no arguments and simply
       prints a banner like:
 
-      .. code-block:: c++
+      .. code-block::
 
         Assembler options
         =================
@@ -532,7 +532,7 @@
       otherwise.  The following example inserts the ``link_gomp`` spec if the last
       :option:`-ftree-parallelize-loops` = option given on the command line is greater than 1:
 
-      .. code-block:: c++
+      .. code-block::
 
         %{%:gt(%{ftree-parallelize-loops=*:%*} 1):%:include(libgomp.spec)%(link_gomp)}
 
@@ -541,7 +541,7 @@
       empty string) if ``debug_info_level`` is greater than the specified number, and NULL
       otherwise.
 
-      .. code-block:: c++
+      .. code-block::
 
         %{%:debug-level-gt(0):%{gdwarf*:--gdwarf2}}
 
@@ -625,14 +625,14 @@
 
     For example, a spec string like this:
 
-    .. code-block:: c++
+    .. code-block::
 
       %{.c:-foo} %{!.c:-bar} %{.c|d:-baz} %{!.c|d:-boggle}
 
     outputs the following command-line options from the following input
     command-line options:
 
-    .. code-block:: c++
+    .. code-block::
 
       fred.c        -foo -baz
       jim.d         -bar -boggle
@@ -668,7 +668,7 @@
   handled specifically in these constructs.  If another value of
   :option:`-O` or the negated form of a :option:`-f`, :option:`-m`, or
   :option:`-W` switch is found later in the command line, the earlier
-  switch value is ignored, except with { ``S`` \*} where ``S`` is
+  switch value is ignored, except with ``{S*}`` where ``S`` is
   just one letter, which passes all matching options.
 
   The character :samp:`|` at the beginning of the predicate text is used to
