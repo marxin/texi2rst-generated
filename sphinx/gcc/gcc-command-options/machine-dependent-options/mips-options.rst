@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _mips-options:
+.. _mips-options:
 
 MIPS Options
 ^^^^^^^^^^^^
