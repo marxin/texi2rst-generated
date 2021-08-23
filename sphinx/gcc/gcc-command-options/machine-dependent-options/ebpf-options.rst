@@ -10,7 +10,8 @@ eBPF Options
 
 .. index:: eBPF Options
 
-:samp:`-mframe-limit={bytes}`
+.. option:: -mframe-limit=bytes
+
   This specifies the hard limit for frame sizes, in bytes.  Currently,
   the value that can be specified should be less than or equal to
   :samp:`32767`.  Defaults to whatever limit is imposed by the version of

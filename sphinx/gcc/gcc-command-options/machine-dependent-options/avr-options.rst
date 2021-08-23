@@ -354,7 +354,7 @@ the compiler and are subject to some limitations:
   of startup code from AVR-LibC that sets ``EIND`` to the segment
   where the vector table is located.
 
-  .. code-block::
+  .. code-block:: c
 
     #include <avr/io.h>
 
@@ -374,7 +374,7 @@ the compiler and are subject to some limitations:
   * The address of a label is taken by means of the ``gs`` modifier
     (short for *generate stubs*) like so:
 
-    .. code-block:: c++
+    .. code-block::
 
       LDI r24, lo8(gs(func))
       LDI r25, hi8(gs(func))
@@ -631,11 +631,8 @@ AVR Named Address Spaces and AVR Built-in Functions.
   Same as above, but for ``long double`` instead of ``double``.
 
 ``__WITH_DOUBLE_COMPARISON__``
-  Reflects the ``--with-double-comparison={tristate|bool|libf7}``
-  `configure option <https://gcc.gnu.org/install/configure.html#avr>`_
+  Reflects the :option:`install:--with-double-comparison`
   and is defined to ``2`` or ``3``.
 
 ``__WITH_LIBF7_LIBGCC__`` ``__WITH_LIBF7_MATH__`` ``__WITH_LIBF7_MATH_SYMBOLS__``
-  Reflects the ``--with-libf7={libgcc|math|math-symbols}``
-  `configure option <https://gcc.gnu.org/install/configure.html#avr>`_.
-
+  Reflects the :option:`install:--with-libf7`.

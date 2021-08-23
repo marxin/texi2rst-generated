@@ -313,26 +313,31 @@ are given below.
   Do not (do) assume that unaligned memory references are handled by
   the system.
 
-``-msep-data``
+.. option:: -msep-data
+
   Generate code that allows the data segment to be located in a different
   area of memory from the text segment.  This allows for execute-in-place in
   an environment without virtual memory management.  This option implies
   :option:`-fPIC`.
 
-``-mno-sep-data``
+.. option:: -mno-sep-data
+
   Generate code that assumes that the data segment follows the text segment.
   This is the default.
 
-``-mid-shared-library``
+.. option:: -mid-shared-library
+
   Generate code that supports shared libraries via the library ID method.
   This allows for execute-in-place and shared libraries in an environment
   without virtual memory management.  This option implies :option:`-fPIC`.
 
-``-mno-id-shared-library``
+.. option:: -mno-id-shared-library
+
   Generate code that doesn't assume ID-based shared libraries are being used.
   This is the default.
 
-``-mshared-library-id=n``
+.. option:: -mshared-library-id=n
+
   Specifies the identification number of the ID-based shared library being
   compiled.  Specifying a value of 0 generates more compact code; specifying
   other values forces the allocation of that number to the current

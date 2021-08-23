@@ -39,12 +39,10 @@ is being compiled:
   :samp:`arc600`
     Compile for ARC600.  Aliases: :option:`-mA6`, :option:`-mARC600`.
 
-  .. option:: arc601
-
+  :samp:`arc601`
     Compile for ARC601.  Alias: :option:`-mARC601`.
 
-  .. option:: arc700
-
+  :samp:`arc700`
     Compile for ARC700.  Aliases: :option:`-mA7`, :option:`-mARC700`.
     This is the default when configured with :option:`--with-cpu`:samp:`=arc700`.
 
@@ -582,11 +580,11 @@ The following options fine tune code generation:
 
 .. option:: -mlra-priority-compact
 
-  Indicate target register priority for r0..r3 / r12..r15.
+  Indicate target register priority for ``r0`` .. ``r3`` / ``r12`` .. ``r15``.
 
 .. option:: -mlra-priority-noncompact
 
-  Reduce target register priority for r0..r3 / r12..r15.
+  Reduce target register priority for ``r0`` .. ``r3`` / ``r12`` .. ``r15``.
 
 .. option:: -mmillicode
 

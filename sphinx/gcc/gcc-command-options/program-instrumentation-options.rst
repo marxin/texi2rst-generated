@@ -875,8 +875,9 @@ program analysis purposes.
   in the directory named by the environment variable :envvar:`VTV_LOGS_DIR` 
   if that is defined or the current working directory otherwise.
 
-  Note:  This feature *appends* data to the log file. If you want a fresh log
-  file, be sure to delete any existing one.
+  .. note::
+    This feature *appends* data to the log file. If you want a fresh log
+    file, be sure to delete any existing one.
 
 .. option:: -fvtv-counts
 
@@ -893,8 +894,9 @@ program analysis purposes.
   for each class, and writes this information to :samp:`vtv_class_set_sizes.log`
   in the same directory.
 
-  Note:  This feature *appends* data to the log files.  To get fresh log
-  files, be sure to delete any existing ones.
+  .. note::
+    This feature *appends* data to the log files.  To get fresh log
+    files, be sure to delete any existing ones.
 
 .. option:: -finstrument-functions
 

@@ -134,14 +134,16 @@ These options are defined for AArch64 implementations:
   precision of division results to about 16 bits for
   single precision and to 32 bits for double precision.
 
-``-mtrack-speculation`` ``-mno-track-speculation``
+.. option:: -mtrack-speculation, -mno-track-speculation
+
   Enable or disable generation of additional code to track speculative
   execution through conditional branches.  The tracking state can then
   be used by the compiler when expanding calls to
   ``__builtin_speculation_safe_copy`` to permit a more efficient code
   sequence to be generated.
 
-``-moutline-atomics`` ``-mno-outline-atomics``
+.. option:: -moutline-atomics, -mno-outline-atomics
+
   Enable or disable calls to out-of-line helpers to implement atomic operations.
   These helpers will, at runtime, determine if the LSE instructions from
   ARMv8.1-A can be used; if not, they will use the load/store-exclusive
@@ -158,7 +160,7 @@ These options are defined for AArch64 implementations:
 
   Specify the name of the target architecture and, optionally, one or
   more feature modifiers.  This option has the form
-  :option:`-march`:samp:`={arch}` {+[no ] :samp:`{feature}` }\*.
+  :option:`-march`:samp:`={arch}{{+[no]feature}}*`.
 
   The table below summarizes the permissible values for :samp:`{arch}`
   and the features that they enable by default:
@@ -182,8 +184,8 @@ These options are defined for AArch64 implementations:
   architecture of the host system,
 
   The permissible values for :samp:`{feature}` are listed in the sub-section
-  on :option:`-march` and :option:`-mcpu`
-  Feature Modifiers.  Where conflicting feature modifiers are
+  on :ref:`aarch64-feature-modifiers`.
+  Where conflicting feature modifiers are
   specified, the right-most feature is used.
 
   GCC uses :samp:`{name}` to determine what kind of instructions it can emit
@@ -246,12 +248,11 @@ These options are defined for AArch64 implementations:
 
   Specify the name of the target processor, optionally suffixed by one
   or more feature modifiers.  This option has the form
-  :option:`-mcpu`:samp:`={cpu}{+[no ]{feature}}\*`, where
+  :option:`-mcpu`:samp:`={cpu}{{+[no]feature}}\*`, where
   the permissible values for :samp:`{cpu}` are the same as those available
   for :option:`-mtune`.  The permissible values for :samp:`{feature}` are
-  documented in the sub-section on
-  :option:`-march` and :option:`-mcpu`
-  Feature Modifiers.  Where conflicting feature modifiers are
+  documented in the sub-section on :ref:`aarch64-feature-modifiers`.
+  Where conflicting feature modifiers are
   specified, the right-most feature is used.
 
   GCC uses :samp:`{name}` to determine what kind of instructions it can emit when
@@ -348,10 +349,11 @@ These options are defined for AArch64 implementations:
   The default is :samp:`-msve-vector-bits=scalable`, which produces
   vector-length agnostic code.
 
--march and -mcpu Feature Modifiers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _aarch64-feature-modifiers:
+
+-march and -mcpu Feature Modifiers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. index:: -march feature modifiers
 
