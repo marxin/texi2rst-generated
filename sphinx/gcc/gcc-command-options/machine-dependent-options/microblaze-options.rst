@@ -93,12 +93,6 @@ MicroBlaze Options
   :samp:`executable`
     normal executable (default), uses startup code :samp:`crt0.o`.
 
-  .. option:: -mpic-data-is-text-relative
-
-    Assume that the displacement between the text and data segments is fixed
-    at static link time.  This allows data to be referenced by offset from start of
-    text address instead of GOT since PC-relative addressing is not supported.
-
   :samp:`xmdstub`
     for use with Xilinx Microprocessor Debugger (XMD) based
     software intrusive debug agent called xmdstub. This uses startup file
@@ -115,4 +109,10 @@ MicroBlaze Options
     MicroBlaze vectors. This option may be useful for applications running
     within a monitoring application. This model uses :samp:`crt3.o` as a startup file.
 
-    Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for :option:`-mxl-mode-`:samp:`{app-model}`.
+  Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for :option:`-mxl-mode-`:samp:`{app-model}`.
+
+.. option:: -mpic-data-is-text-relative
+
+  Assume that the displacement between the text and data segments is fixed
+  at static link time.  This allows data to be referenced by offset from start of
+  text address instead of GOT since PC-relative addressing is not supported.
