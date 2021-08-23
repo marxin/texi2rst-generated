@@ -320,7 +320,8 @@ information useful for debugging do not run at all, so that
   This option will be enabled by default if, at GCC configure time, the
   assembler was found to support them.
 
-``-gno-as-locview-support``
+.. option:: -gno-as-locview-support
+
   Force GCC to assign view numbers internally, if
   :option:`-gvariable-location-views` are explicitly requested.
 

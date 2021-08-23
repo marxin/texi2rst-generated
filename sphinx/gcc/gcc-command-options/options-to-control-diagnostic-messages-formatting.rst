@@ -34,7 +34,8 @@ honor these options.
   function/type/variable attribute.  It does not however affect the
   :samp:`pragma GCC warning` and :samp:`pragma GCC error` pragmas.
 
-``-fdiagnostics-plain-output``
+.. option:: -fdiagnostics-plain-output
+
   This option requests that diagnostic output look as plain as possible, which
   may be useful when running :command:`dejagnu` or other utilities that need to
   parse diagnostics output and prefer that it remain more stable over time.
@@ -58,7 +59,8 @@ honor these options.
   over and over, in subsequent continuation lines.  This is the default
   behavior.
 
-``-fdiagnostics-show-location=every-line``
+.. option:: -fdiagnostics-show-location=every-line
+
   Only meaningful in line-wrapping mode.  Instructs the diagnostic
   messages reporter to emit the same source location information (as
   prefix) for physical lines that result from the process of breaking
@@ -313,7 +315,7 @@ honor these options.
 .. option:: -fno-diagnostics-show-cwe
 
   Diagnostic messages can optionally have an associated
-  https://cwe.mitre.org/index.htmlCWE identifier.
+  `CWE <https://cwe.mitre.org/index.html>`_ identifier.
   GCC itself only provides such metadata for some of the :option:`-fanalyzer`
   diagnostics.  GCC plugins may also provide diagnostics with such metadata.
   By default, if this information is present, it will be printed with

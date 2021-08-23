@@ -169,7 +169,7 @@ A few other macros and functions are usable with all types:
   use ``SET_TYPE_STRUCTURAL_EQUALITY`` to make sure that the new
   type--and any type constructed based on it--requires structural
   equality. If you suspect that the canonical type system is
-  miscomparing types, pass ``--param verify-canonical-types=1`` to
+  miscomparing types, pass :option:`--param` :gcc-param:`verify-canonical-types`:samp:`=1` to
   the compiler or configure with ``--enable-checking`` to force the
   compiler to verify its canonical-type comparisons against the
   structural comparisons; the compiler will then print any warnings if

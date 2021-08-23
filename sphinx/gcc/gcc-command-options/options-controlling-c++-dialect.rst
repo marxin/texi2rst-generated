@@ -953,7 +953,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   With :option:`-Wnarrowing` in C++98, warn when a narrowing
   conversion prohibited by C++11 occurs within
-  :samp:`{ }`, e.g.
+  ``{ }``, e.g.
 
   .. code-block:: c++
 

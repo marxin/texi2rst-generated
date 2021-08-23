@@ -309,7 +309,7 @@ accepts:
   all architectures are supported for this feature.
 
   For more information on GCC's support for transactional memory,
-  See :ref:`libitm:enabling-libitm`.
+  see :ref:`libitm:enabling-libitm`.
 
   Note that the transactional memory feature is not supported with
   non-call exceptions (:option:`-fnon-call-exceptions`).

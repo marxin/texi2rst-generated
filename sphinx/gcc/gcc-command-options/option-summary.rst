@@ -51,7 +51,7 @@ in the following sections.
   :option:`-fno-implicit-templates` 
   :option:`-fno-implicit-inline-templates` 
   :option:`-fno-implement-inlines`  
-  :option:`-fmodule-header` :samp:`[={kind}]` :option:`-fmodule-only` :option:`-fmodules-ts` 
+  :option:`-fmodule-header`:samp:`[={kind}]` :option:`-fmodule-only` :option:`-fmodules-ts` 
   :option:`-fmodule-implicit-inline` 
   :option:`-fno-module-lazy` 
   :option:`-fmodule-mapper`:samp:`={specification}` 
@@ -1339,5 +1339,5 @@ in the following sections.
   :option:`-mabi`:samp:`={abi-type}`
 
   *zSeries Options*
-  See S/390 and zSeries Options.
 
+  See :ref:`s-390-and-zseries-options`.

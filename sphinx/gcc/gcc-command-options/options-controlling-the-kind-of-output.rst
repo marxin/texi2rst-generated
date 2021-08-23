@@ -126,7 +126,7 @@ You can specify the input language explicitly with the :option:`-x` option:
   the next :option:`-x` option.  Possible values for :samp:`{language}` are:
 
   :samp:`c` :samp:`c-header` :samp:`cpp-output`
-  :samp:`c++  :samp:`c++-header  :samp:`c++-system-header` :samp:`c++-user-header` :samp:`c++-cpp-output`
+  :samp:`c++` :samp:`c++-header` :samp:`c++-system-header` :samp:`c++-user-header` :samp:`c++-cpp-output`
   :samp:`objective-c` :samp:`objective-c-header` :samp:`objective-c-cpp-output`
   :samp:`objective-c++` :samp:`objective-c++-header` :samp:`objective-c++-cpp-output`
   :samp:`assembler` :samp:`assembler-with-cpp` :samp:`ada` :samp:`d`
@@ -578,7 +578,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   argument) that have a description, use:
 
   :option:`--help`:samp:`=warnings,^joined,^undocumented`
-  The argument to :option:`--help` = should not consist solely of inverted
+  The argument to :option:`--help`:samp:`=` should not consist solely of inverted
   qualifiers.
 
   Combining several classes is possible, although this usually
@@ -592,11 +592,11 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   successive use displays its requested class of options, skipping
   those that have already been displayed.  If :option:`--help` is also
   specified anywhere on the command line then this takes precedence
-  over any :option:`--help` = option.
+  over any :option:`--help`:samp:`=` option.
 
   If the :option:`-Q` option appears on the command line before the
-  :option:`--help` = option, then the descriptive text displayed by
-  :option:`--help` = is changed.  Instead of describing the displayed
+  :option:`--help`:samp:`=` option, then the descriptive text displayed by
+  :option:`--help`:samp:`=` is changed.  Instead of describing the displayed
   options, an indication is given as to whether the option is enabled,
   disabled or set to a specific value (assuming that the compiler
   knows this at the point where the :option:`--help` = option is used).

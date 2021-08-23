@@ -308,7 +308,7 @@ functionality.  Generally blocks are read when name lookup or template
 instantiation occurs.  To inhibit this, the :option:`-fno-module-lazy`
 option may be used.
 
-The :option:`--param lazy-modules`:samp:`={n}` parameter controls the limit
+The :option:`--param` :gcc-param:`lazy-modules`:samp:`={n}` parameter controls the limit
 on the number of concurrently open module files during lazy loading.
 Should more modules be imported, an LRU algorithm is used to determine
 which files to close---until that file is needed again.  This limit

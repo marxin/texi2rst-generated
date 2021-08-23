@@ -90,8 +90,8 @@ implicit declarations.  Each of these specific warning options also
 has a negative form beginning :samp:`-Wno-` to turn off warnings; for
 example, :option:`-Wno-implicit`.  This manual lists only one of the
 two forms, whichever is not the default.  For further
-language-specific options also refer to C++ Dialect Options and
-Objective-C and Objective-C++ Dialect Options.
+language-specific options also refer to
+:ref:`objective-c-and-objective-c++-dialect-options`.
 Additional warnings can be produced by enabling the static analyzer;
 See :ref:`static-analyzer-options`.
 
@@ -565,8 +565,8 @@ warn at all unless optimization is enabled.
   .. option:: -Wformat=2
 
     Enable :option:`-Wformat` plus additional format checks.  Currently
-    equivalent to :option:`-Wformat -Wformat-nonliteral -Wformat-security
-    -Wformat-y2k`.
+    equivalent to :option:`-Wformat` :option:`-Wformat-nonliteral` :option:`-Wformat-security`
+    :option:`-Wformat-y2k`.
 
 .. option:: -Wno-format
 

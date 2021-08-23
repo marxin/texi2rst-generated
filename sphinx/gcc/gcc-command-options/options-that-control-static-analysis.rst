@@ -359,10 +359,10 @@ Options That Control Static Analysis
   Default setting; overrides :option:`-Wno-analyzer-use-of-uninitialized-value`.
 
 Pertinent parameters for controlling the exploration are:
-:option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
-:option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
-:option:`--param analyzer-max-recursion-depth`:samp:`={value}`, and
-:option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`.
+:option:`--param` :gcc-param:`analyzer-bb-explosion-factor`:samp:`={value}`,
+:option:`--param` :gcc-param:`analyzer-max-enodes-per-program-point`:samp:`={value}`,
+:option:`--param` :gcc-param:`analyzer-max-recursion-depth`:samp:`={value}`, and
+:option:`--param` :gcc-param:`analyzer-min-snodes-for-call-summary`:samp:`={value}`.
 
 The following options control the analyzer.
 
@@ -374,7 +374,7 @@ The following options control the analyzer.
 
   If enabled, call summaries are only used for functions with more than one
   call site, and that are sufficiently complicated (as per
-  :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`).
+  :option:`--param` :gcc-param:`analyzer-min-snodes-for-call-summary`:samp:`={value}`).
 
 .. option:: -fno-analyzer-call-summaries
 
@@ -466,17 +466,20 @@ The following options control the analyzer.
 
   Default setting; overrides :option:`-fanalyzer-transitivity`.
 
-``-fanalyzer-verbose-edges``
+.. option:: -fanalyzer-verbose-edges
+
   This option is intended for analyzer developers.  It enables more
   verbose, lower-level detail in the descriptions of control flow
   within diagnostic paths.
 
-``-fanalyzer-verbose-state-changes``
+.. option:: -fanalyzer-verbose-state-changes
+
   This option is intended for analyzer developers.  It enables more
   verbose, lower-level detail in the descriptions of events relating
   to state machines within diagnostic paths.
 
-:samp:`-fanalyzer-verbosity={level}`
+.. option:: -fanalyzer-verbosity={level}
+
   This option controls the complexity of the control flow paths that are
   emitted for analyzer diagnostics.
 

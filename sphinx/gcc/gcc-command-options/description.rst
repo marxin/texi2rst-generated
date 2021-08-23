@@ -80,5 +80,6 @@ designated by :samp:`{byte-size}` in the following text.  Refer to the NIST,
 IEC, and other relevant national and international standards for the full
 listing and explanation of the binary and decimal byte size prefixes.
 
-See :ref:`option-index`, for an index to GCC's options.
+.. only:: html
 
+    See :ref:`genindex`, for an index to GCC's options.

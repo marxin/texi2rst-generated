@@ -393,21 +393,23 @@ optimizations to be performed is desired.
   as follows:
 
   ``max-inline-insns-single``
-    is set to :samp:`{n}` /2.
+    is set to :samp:`{n}/2`.
 
   ``max-inline-insns-auto``
-    is set to :samp:`{n}` /2.
+    is set to :samp:`{n}/2`.
 
   See below for a documentation of the individual
   parameters controlling inlining and for the defaults of these parameters.
 
-  *Note:* there may be no value to :option:`-finline-limit` that results
-  in default behavior.
+  .. note::
+    There may be no value to :option:`-finline-limit` that results
+    in default behavior.
 
-  *Note:* pseudo instruction represents, in this particular context, an
-  abstract measurement of function's size.  In no way does it represent a count
-  of assembly instructions and as such its exact meaning might change from one
-  release to an another.
+  .. note::
+    Pseudo instruction represents, in this particular context, an
+    abstract measurement of function's size.  In no way does it represent a count
+    of assembly instructions and as such its exact meaning might change from one
+    release to an another.
 
 .. option:: -fno-keep-inline-dllexport
 
@@ -587,10 +589,12 @@ optimizations to be performed is desired.
   Perform a global common subexpression elimination pass.
   This pass also performs global constant and copy propagation.
 
-  *Note:* When compiling a program using computed gotos, a GCC
-  extension, you may get better run-time performance if you disable
-  the global common subexpression elimination pass by adding
-  :option:`-fno-gcse` to the command line.
+  .. note::
+
+    When compiling a program using computed gotos, a GCC
+    extension, you may get better run-time performance if you disable
+    the global common subexpression elimination pass by adding
+    :option:`-fno-gcse` to the command line.
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
@@ -1224,7 +1228,7 @@ optimizations to be performed is desired.
   when externally visible function can be called with constant arguments.
   Because this optimization can create multiple copies of functions,
   it may significantly increase code size
-  (see :option:`--param ipa-cp-unit-growth`:samp:`={value}`).
+  (see :option:`--param` :gcc-param:`ipa-cp-unit-growth`:samp:`={value}`).
   This flag is enabled by default at :option:`-O3`.
   It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
@@ -3118,7 +3122,7 @@ section includes experimental options that may produce broken code.
     a lot of functions that would otherwise not be considered for inlining
     by the compiler are investigated.  To those functions, a different
     (more restrictive) limit compared to functions declared inline can
-    be applied (:option:`--param max-inline-insns-auto`).
+    be applied (:option:`--param` :gcc-param:`max-inline-insns-auto`).
 
   .. gcc-param:: max-inline-insns-small
 
@@ -3151,21 +3155,21 @@ section includes experimental options that may produce broken code.
 
   .. gcc-param:: uninlined-thunk-time
 
-    Same as :option:`--param uninlined-function-insns` and
-    :option:`--param uninlined-function-time` but applied to function thunks.
+    Same as :option:`--param` :gcc-param:`uninlined-function-insns` and
+    :option:`--param` :gcc-param:`uninlined-function-time` but applied to function thunks.
 
   .. gcc-param:: inline-min-speedup
 
     When estimated performance improvement of caller + callee runtime exceeds this
     threshold (in percent), the function can be inlined regardless of the limit on
-    :option:`--param max-inline-insns-single` and :option:`--param
+    :option:`--param` :gcc-param:`max-inline-insns-single` and :option:`--param
     max-inline-insns-auto`.
 
   .. gcc-param:: large-function-insns
 
     The limit specifying really large functions.  For functions larger than this
     limit after inlining, inlining is constrained by
-    :option:`--param large-function-growth`.  This parameter is useful primarily
+    :option:`--param` :gcc-param:`large-function-growth`.  This parameter is useful primarily
     to avoid extreme compilation time caused by non-linear algorithms used by the
     back end.
 
@@ -3178,15 +3182,15 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: large-unit-insns
 
     The limit specifying large translation unit.  Growth caused by inlining of
-    units larger than this limit is limited by :option:`--param inline-unit-growth`.
+    units larger than this limit is limited by :option:`--param` :gcc-param:`inline-unit-growth`.
     For small units this might be too tight.
     For example, consider a unit consisting of function A
     that is inline and B that just calls A three times.  If B is small relative to
     A, the growth of unit is 300\% and yet such inlining is very sane.  For very
     large units consisting of small inlineable functions, however, the overall unit
     growth limit is needed to avoid exponential explosion of code size.  Thus for
-    smaller units, the size is increased to :option:`--param large-unit-insns`
-    before applying :option:`--param inline-unit-growth`.
+    smaller units, the size is increased to :option:`--param` :gcc-param:`large-unit-insns`
+    before applying :option:`--param` :gcc-param:`inline-unit-growth`.
 
   .. gcc-param:: lazy-modules
 
@@ -3221,27 +3225,27 @@ section includes experimental options that may produce broken code.
     the original size.
 
   .. gcc-param:: max-inline-insns-recursive
+  .. gcc-param:: max-inline-insns-recursive-auto
 
-   ``max-inline-insns-recursive-auto``
     Specifies the maximum number of instructions an out-of-line copy of a
     self-recursive inline
     function can grow into by performing recursive inlining.
 
-    :option:`--param max-inline-insns-recursive` applies to functions
+    :option:`--param` :gcc-param:`max-inline-insns-recursive` applies to functions
     declared inline.
     For functions not declared inline, recursive inlining
     happens only when :option:`-finline-functions` (included in :option:`-O3`) is
-    enabled; :option:`--param max-inline-insns-recursive-auto` applies instead.
+    enabled; :option:`--param` :gcc-param:`max-inline-insns-recursive-auto` applies instead.
 
   .. gcc-param:: max-inline-recursive-depth
+  .. gcc-param:: max-inline-recursive-depth-auto
 
-   ``max-inline-recursive-depth-auto``
     Specifies the maximum recursion depth used for recursive inlining.
 
-    :option:`--param max-inline-recursive-depth` applies to functions
+    :option:`--param` :gcc-param:`max-inline-recursive-depth` applies to functions
     declared inline.  For functions not declared inline, recursive inlining
     happens only when :option:`-finline-functions` (included in :option:`-O3`) is
-    enabled; :option:`--param max-inline-recursive-depth-auto` applies instead.
+    enabled; :option:`--param` :gcc-param:`max-inline-recursive-depth-auto` applies instead.
 
   .. gcc-param:: min-inline-recursive-probability
 
@@ -3284,7 +3288,7 @@ section includes experimental options that may produce broken code.
 
     Specifies the maxmal number of tests alias oracle can perform to disambiguate
     memory locations using the mod/ref information.  This parameter ought to be
-    bigger than :option:`--param modref-max-bases` and :option:`--param
+    bigger than :option:`--param` :gcc-param:`modref-max-bases` and :option:`--param
     modref-max-refs`.
 
   .. gcc-param:: modref-max-depth
@@ -3560,8 +3564,8 @@ section includes experimental options that may produce broken code.
     aligned.
 
   .. gcc-param:: tracer-dynamic-coverage
+  .. gcc-param:: tracer-dynamic-coverage-feedback
 
-   ``tracer-dynamic-coverage-feedback``
     This value is used to limit superblock formation once the given percentage of
     executed instructions is covered.  This limits unnecessary code size
     expansion.
@@ -3584,8 +3588,8 @@ section includes experimental options that may produce broken code.
     threshold (in percent).
 
   .. gcc-param:: tracer-min-branch-probability
+  .. gcc-param:: tracer-min-branch-probability-feedback
 
-   ``tracer-min-branch-probability-feedback``
     Stop forward growth if the best edge has probability lower than this
     threshold.
 
@@ -3992,8 +3996,8 @@ section includes experimental options that may produce broken code.
     parameter.
 
   .. gcc-param:: sra-max-scalarization-size-Ospeed
+  .. gcc-param:: sra-max-scalarization-size-Osize
 
-   ``sra-max-scalarization-size-Osize``
     The two Scalar Reduction of Aggregates passes (SRA and IPA-SRA) aim to
     replace scalar parts of aggregates with uses of independent scalar
     variables.  These parameters control the maximum size, in storage units,
@@ -4196,51 +4200,53 @@ section includes experimental options that may produce broken code.
     Enable buffer overflow detection for global objects.  This kind
     of protection is enabled by default if you are using
     :option:`-fsanitize`:samp:`=address` option.
-    To disable global objects protection use :option:`--param asan-globals`:samp:`=0`.
+    To disable global objects protection use :option:`--param` :gcc-param:`asan-globals`:samp:`=0`.
 
   .. gcc-param:: asan-stack
 
     Enable buffer overflow detection for stack objects.  This kind of
     protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
-    To disable stack protection use :option:`--param asan-stack`:samp:`=0` option.
+    To disable stack protection use :option:`--param` :gcc-param:`asan-stack`:samp:`=0` option.
 
   .. gcc-param:: asan-instrument-reads
 
     Enable buffer overflow detection for memory reads.  This kind of
     protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
     To disable memory reads protection use
-    :option:`--param asan-instrument-reads`:samp:`=0`.
+    :option:`--param` :gcc-param:`asan-instrument-reads`:samp:`=0`.
 
   .. gcc-param:: asan-instrument-writes
 
     Enable buffer overflow detection for memory writes.  This kind of
     protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
     To disable memory writes protection use
-    :option:`--param asan-instrument-writes`:samp:`=0` option.
+    :option:`--param` :gcc-param:`asan-instrument-writes`:samp:`=0` option.
 
   .. gcc-param:: asan-memintrin
 
     Enable detection for built-in functions.  This kind of protection
     is enabled by default when using :option:`-fsanitize`:samp:`=address`.
     To disable built-in functions protection use
-    :option:`--param asan-memintrin`:samp:`=0`.
+    :option:`--param` :gcc-param:`asan-memintrin`:samp:`=0`.
 
   .. gcc-param:: asan-use-after-return
 
     Enable detection of use-after-return.  This kind of protection
     is enabled by default when using the :option:`-fsanitize`:samp:`=address` option.
-    To disable it use :option:`--param asan-use-after-return`:samp:`=0`.
+    To disable it use :option:`--param` :gcc-param:`asan-use-after-return`:samp:`=0`.
 
-    Note: By default the check is disabled at run time.  To enable it,
-    add ``detect_stack_use_after_return=1`` to the environment variable
-    :envvar:`ASAN_OPTIONS`.
+    .. note::
+
+      By default the check is disabled at run time.  To enable it,
+      add ``detect_stack_use_after_return=1`` to the environment variable
+      :envvar:`ASAN_OPTIONS`.
 
   .. gcc-param:: asan-instrumentation-with-call-threshold
 
     If number of memory accesses in function being instrumented
     is greater or equal to this number, use callbacks instead of inline checks.
     E.g. to disable inline code use
-    :option:`--param asan-instrumentation-with-call-threshold`:samp:`=0`.
+    :option:`--param` :gcc-param:`asan-instrumentation-with-call-threshold`:samp:`=0`.
 
   .. gcc-param:: hwasan-instrument-stack
 
@@ -4249,8 +4255,8 @@ section includes experimental options that may produce broken code.
     :option:`-fsanitize`:samp:`=hwaddress` and disabled by default when using
     :option:`-fsanitize`:samp:`=kernel-hwaddress`.
     To disable stack instrumentation use
-    :option:`--param hwasan-instrument-stack`:samp:`=0`, and to enable it use
-    :option:`--param hwasan-instrument-stack`:samp:`=1`.
+    :option:`--param` :gcc-param:`hwasan-instrument-stack`:samp:`=0`, and to enable it use
+    :option:`--param` :gcc-param:`hwasan-instrument-stack`:samp:`=1`.
 
   .. gcc-param:: hwasan-random-frame-tag
 
@@ -4259,7 +4265,7 @@ section includes experimental options that may produce broken code.
     parameter unset tags are chosen using the same sequence but beginning from 1.
     This is enabled by default for :option:`-fsanitize`:samp:`=hwaddress` and unavailable
     for :option:`-fsanitize`:samp:`=kernel-hwaddress`.
-    To disable it use :option:`--param hwasan-random-frame-tag`:samp:`=0`.
+    To disable it use :option:`--param` :gcc-param:`hwasan-random-frame-tag`:samp:`=0`.
 
   .. gcc-param:: hwasan-instrument-allocas
 
@@ -4268,8 +4274,8 @@ section includes experimental options that may produce broken code.
     :option:`-fsanitize`:samp:`=hwaddress` and disabled by default when using
     :option:`-fsanitize`:samp:`=kernel-hwaddress`.
     To disable instrumentation of such variables use
-    :option:`--param hwasan-instrument-allocas`:samp:`=0`, and to enable it use
-    :option:`--param hwasan-instrument-allocas`:samp:`=1`.
+    :option:`--param` :gcc-param:`hwasan-instrument-allocas`:samp:`=0`, and to enable it use
+    :option:`--param` :gcc-param:`hwasan-instrument-allocas`:samp:`=1`.
 
   .. gcc-param:: hwasan-instrument-reads
 
@@ -4277,7 +4283,7 @@ section includes experimental options that may produce broken code.
     default for both :option:`-fsanitize`:samp:`=hwaddress` and
     :option:`-fsanitize`:samp:`=kernel-hwaddress`.
     To disable checking memory reads use
-    :option:`--param hwasan-instrument-reads`:samp:`=0`.
+    :option:`--param` :gcc-param:`hwasan-instrument-reads`:samp:`=0`.
 
   .. gcc-param:: hwasan-instrument-writes
 
@@ -4285,7 +4291,7 @@ section includes experimental options that may produce broken code.
     default for both :option:`-fsanitize`:samp:`=hwaddress` and
     :option:`-fsanitize`:samp:`=kernel-hwaddress`.
     To disable checking memory writes use
-    :option:`--param hwasan-instrument-writes`:samp:`=0`.
+    :option:`--param` :gcc-param:`hwasan-instrument-writes`:samp:`=0`.
 
   .. gcc-param:: hwasan-instrument-mem-intrinsics
 
@@ -4293,7 +4299,7 @@ section includes experimental options that may produce broken code.
     builtin functions is enabled by default for both :option:`-fsanitize`:samp:`=hwaddress`
     and :option:`-fsanitize`:samp:`=kernel-hwaddress`.
     To disable instrumentation of builtin functions use
-    :option:`--param hwasan-instrument-mem-intrinsics`:samp:`=0`.
+    :option:`--param` :gcc-param:`hwasan-instrument-mem-intrinsics`:samp:`=0`.
 
   .. gcc-param:: use-after-scope-direct-emission-threshold
 
@@ -4307,7 +4313,7 @@ section includes experimental options that may produce broken code.
 
   .. gcc-param:: tsan-instrument-func-entry-exit
 
-    Emit instrumentation calls to __tsan_func_entry() and __tsan_func_exit().
+    Emit instrumentation calls to :samp:`__tsan_func_entry()` and :samp:`__tsan_func_exit()`.
 
   .. gcc-param:: max-fsm-thread-path-insns
 
@@ -4624,11 +4630,11 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: openacc-kernels
 
     Specify mode of OpenACC 'kernels' constructs handling.
-    With :option:`--param`:samp:`=openacc-kernels=decompose`, OpenACC 'kernels'
+    With :option:`--param` :gcc-param:`openacc-kernels`:samp:`=decompose`, OpenACC 'kernels'
     constructs are decomposed into parts, a sequence of compute
     constructs, each then handled individually.
     This is work in progress.
-    With :option:`--param`:samp:`=openacc-kernels=parloops`, OpenACC 'kernels'
+    With :option:`--param` :gcc-param:`openacc-kernels`:samp:`=parloops`, OpenACC 'kernels'
     constructs are handled by the :samp:`parloops` pass, en bloc.
     This is the current default.
 
@@ -4637,9 +4643,9 @@ section includes experimental options that may produce broken code.
     Specify mode of OpenACC privatization diagnostics for
     :option:`-fopt-info-omp-note` and applicable
     :option:`-fdump-tree-*-details`.
-    With :option:`--param`:samp:`=openacc-privatization=quiet`, don't diagnose.
+    With :option:`--param` :gcc-param:`openacc-privatization`:samp:`=quiet`, don't diagnose.
     This is the current default.
-    With :option:`--param`:samp:`=openacc-privatization=noisy`, do diagnose.
+    With :option:`--param` :gcc-param:`openacc-privatization`:samp:`=noisy`, do diagnose.
 
     The following choices of :samp:`{name}` are available on AArch64 targets:
 
