@@ -1787,7 +1787,7 @@ The following attributes are supported on most targets.
   ``skip``
     doesn't zero any call-used register.
 
-  :gcc-attr:`used`
+  ``used``
     only zeros call-used registers that are used in the function.
 
   ``used-gpr``
