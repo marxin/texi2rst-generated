@@ -13,26 +13,26 @@ KIND Type Parameters
 The ``KIND`` type parameters supported by GNU Fortran for the primitive
 data types are:
 
-.. envvar:: INTEGER
+``INTEGER``
 
   1, 2, 4, 8 [#f1]_, 16 [#f1]_, default: 4 [#f2]_
 
-.. envvar:: LOGICAL
+``LOGICAL``
 
   1, 2, 4, 8 [#f1]_, 16 [#f1]_, default: 4 [#f2]_
 
-.. envvar:: REAL
+``REAL``
 
   4, 8, 10 [#f1]_, 16 [#f1]_, default: 4 [#f3]_
 
-.. envvar:: COMPLEX
+``COMPLEX``
 
   4, 8, 10 [#f1]_, 16 [#f1]_, default: 4 [#f3]_
 
-``DOUBLE PRECISION``
+``DOUBLE`` PRECISION
   4, 8, 10 [#f1]_, 16 [#f1]_, default: 8 [#f3]_
 
-.. envvar:: CHARACTER
+``CHARACTER``
 
   1, 4, default: 1
 

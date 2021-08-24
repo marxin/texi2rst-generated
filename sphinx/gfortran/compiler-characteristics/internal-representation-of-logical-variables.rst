@@ -21,5 +21,5 @@ A ``LOGICAL(KIND=N)`` variable is represented as an
 values: ``1`` for ``.TRUE.`` and ``0`` for
 ``.FALSE.``.  Any other integer value results in undefined behavior.
 
-See also Argument passing conventions and Interoperability with C.
+See also :ref:`argument-passing-conventions` and :ref:`interoperability-with-c`.
 

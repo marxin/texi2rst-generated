@@ -15,7 +15,14 @@ ISO_C_BINDING
   definition can be found in the section Intrinsic Procedures of this
   manual.
 
-C_ASSOCIATEDC_F_POINTERC_F_PROCPOINTERC_FUNLOCC_LOCC_SIZEOF
+::
+
+  C_ASSOCIATED
+  C_F_POINTER
+  C_F_PROCPOINTER
+  C_FUNLOC
+  C_LOC
+  C_SIZEOF
 
 .. TODO: Vertical spacing between C_FUNLOC and C_LOC wrong in PDF,
    don't really know why.

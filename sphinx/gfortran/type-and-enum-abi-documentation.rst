@@ -171,14 +171,14 @@ The references make up a single linked list of reference operations.  The
 the chain.  Component and array refs can be arbitrarily mixed as long as they
 comply to the Fortran standard.
 
-*NOTES*
-The member ``STATIC_ARRAY_TYPE`` is used only when the ``TYPE`` is
-``CAF_REF_STATIC_ARRAY``.  The member gives the type of the data referenced.
-Because no array descriptor is available for a descriptor-less array and
-type conversion still needs to take place the type is transported here.
+.. note::
+  The member ``STATIC_ARRAY_TYPE`` is used only when the ``TYPE`` is
+  ``CAF_REF_STATIC_ARRAY``.  The member gives the type of the data referenced.
+  Because no array descriptor is available for a descriptor-less array and
+  type conversion still needs to take place the type is transported here.
 
-At the moment ``CAF_ARR_REF_VECTOR`` is not implemented in the front end for
-descriptor-less arrays.  The library caf_single has untested support for it.
+  At the moment ``CAF_ARR_REF_VECTOR`` is not implemented in the front end for
+  descriptor-less arrays.  The library caf_single has untested support for it.
 
 .. _caf_team_t:
 

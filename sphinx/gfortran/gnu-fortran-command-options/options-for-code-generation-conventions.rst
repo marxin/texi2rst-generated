@@ -357,8 +357,9 @@ it.
     print '(10(I0,1X))', i
     end program test
 
-  *Caution:  This option can lead to long compile times and excessively
-  large object files.*
+  .. warning::
+    This option can lead to long compile times and excessively
+    large object files.
 
   The default value for :samp:`{n}` is 65535.
 
