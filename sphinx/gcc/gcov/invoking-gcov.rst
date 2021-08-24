@@ -42,33 +42,40 @@ gcov [ :option:`-v` | :option:`--version` ] [ :option:`-h` | :option:`--help` ]
 Options
 ^^^^^^^
 
-``-a`` ``--all-blocks``
+.. option:: -a, --all-blocks
+
   Write individual execution counts for every basic block.  Normally gcov
   outputs execution counts only for the main blocks of a line.  With this
   option you can determine if blocks within a single line are not being
   executed.
 
-``-b`` ``--branch-probabilities``
+.. option:: -b, --branch-probabilities
+
   Write branch frequencies to the output file, and write branch summary
   info to the standard output.  This option allows you to see how often
   each branch in your program was taken.  Unconditional branches will not
   be shown, unless the :option:`-u` option is given.
 
-``-c`` ``--branch-counts``
+.. option:: -c, --branch-counts
+
   Write branch frequencies as the number of branches taken, rather than
   the percentage of branches taken.
 
-``-d`` ``--display-progress``
+.. option:: -d, --display-progress
+
   Display the progress on the standard output.
 
-``-f`` ``--function-summaries``
+.. option:: -f, --function-summaries
+
   Output summaries for each function in addition to the file level summary.
 
-``-h`` ``--help``
+.. option:: -h, --help
+
   Display help about using :command:`gcov` (on the standard output), and
   exit without doing any further processing.
 
-``-j`` ``--json-format``
+.. option:: -j, --json-format
+
   Output gcov file in an easy-to-parse JSON intermediate format
   which does not require source code for generation.  The JSON
   file is compressed with gzip compression algorithm
@@ -195,15 +202,18 @@ Options
 
   * :samp:`{throw}` : true when the branch is an exceptional branch
 
-``-H`` ``--human-readable``
+.. option:: -H, --human-readable
+
   Write counts in human readable format (like 24.6k).
 
-``-k`` ``--use-colors``
+.. option:: -k, --use-colors
+
   Use colors for lines of code that have zero coverage.  We use red color for
   non-exceptional lines and cyan for exceptional.  Same colors are used for
   basic blocks with :option:`-a` option.
 
-``-l`` ``--long-file-names``
+.. option:: -l, --long-file-names
+
   Create long file names for included source files.  For example, if the
   header file :samp:`x.h` contains code, and was included in the file
   :samp:`a.c`, then running :command:`gcov` on the file :samp:`a.c` will
@@ -213,11 +223,13 @@ Options
   contributions.  If you use the :samp:`-p` option, both the including
   and included file names will be complete path names.
 
-``-m`` ``--demangled-names``
+.. option:: -m, --demangled-names
+
   Display demangled function names in output. The default is to show
   mangled function names.
 
-``-n`` ``--no-output``
+.. option:: -n, --no-output
+
   Do not create the :command:`gcov` output file.
 
 :samp:`-o {directory|file}` :samp:`--object-directory {directory}` :samp:`--object-file {file}`
@@ -228,7 +240,8 @@ Options
   input file name, without its extension.  If a file is specified here,
   the data files are named after that file, without its extension.
 
-``-p`` ``--preserve-paths``
+.. option:: -p, --preserve-paths
+
   Preserve complete path information in the names of generated
   :samp:`.gcov` files.  Without this option, just the filename component is
   used.  With this option, all directories are used, with :samp:`/` characters
@@ -237,11 +250,13 @@ Options
   components renamed to :samp:`^`.  This is useful if sourcefiles are in several
   different directories.
 
-``-q`` ``--use-hotness-colors``
+.. option:: -q, --use-hotness-colors
+
   Emit perf-like colored output for hot lines.  Legend of the color scale
   is printed at the very beginning of the output file.
 
-``-r`` ``--relative-only``
+.. option:: -r, --relative-only
+
   Only output information about source files with a relative pathname
   (after source prefix elision).  Absolute paths are usually system
   header files and coverage of any inline functions therein is normally
@@ -254,21 +269,26 @@ Options
   determining the output file names.  Note that this prefix detection is
   applied before determining whether the source file is absolute.
 
-``-t`` ``--stdout``
+.. option:: -t, --stdout
+
   Output to standard output instead of output files.
 
-``-u`` ``--unconditional-branches``
+.. option:: -u, --unconditional-branches
+
   When branch probabilities are given, include those of unconditional branches.
   Unconditional branches are normally not interesting.
 
-``-v`` ``--version``
+.. option:: -v, --version
+
   Display the :command:`gcov` version number (on the standard output),
   and exit without doing any further processing.
 
-``-w`` ``--verbose``
+.. option:: -w, --verbose
+
   Print verbose informations related to basic blocks and arcs.
 
-``-x`` ``--hash-filenames``
+.. option:: -x, --hash-filenames
+
   When using :samp:`{--preserve-paths}`,
   gcov uses the full pathname of the source files to create
   an output filename.  This can lead to long filenames that can overflow

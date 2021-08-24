@@ -38,54 +38,69 @@ lto-dump
 Options
 ^^^^^^^
 
-``-list``
+.. option:: -list
+
   Dumps list of details of functions and variables.
 
-``-demangle``
+.. option:: -demangle
+
   Dump the demangled output.
 
-``-defined-only``
+.. option:: -defined-only
+
   Dump only the defined symbols.
 
-``-print-value``
+.. option:: -print-value
+
   Dump initial values of the variables.
 
-``-name-sort``
+.. option:: -name-sort
+
   Sort the symbols alphabetically.
 
-``-size-sort``
+.. option:: -size-sort
+
   Sort the symbols according to size.
 
-``-reverse-sort``
+.. option:: -reverse-sort
+
   Dump the symbols in reverse order.
 
-``-no-sort``
+.. option:: -no-sort
+
   Dump the symbols in order of occurrence.
 
-``-symbol=``
+.. option:: -symbol=
+
   Dump the details of specific symbol.
 
-``-objects``
+.. option:: -objects
+
   Dump the details of LTO objects.
 
-``-type-stats``
+.. option:: -type-stats
+
   Dump the statistics of tree types.
 
-``-tree-stats``
+.. option:: -tree-stats
+
   Dump the statistics of trees.
 
-``-gimple-stats``
+.. option:: -gimple-stats
+
   Dump the statistics of gimple statements.
 
-``-dump-level=``
+.. option:: -dump-level=
+
   For deciding the optimization level of body.
 
-``-dump-body=``
+.. option:: -dump-body=
+
   Dump the specific gimple body.
 
-``-help``
-  Display the dump tool help.
+.. option:: -help
 
+  Display the dump tool help.
 
 .. only:: man
 

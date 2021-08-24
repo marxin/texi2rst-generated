@@ -30,20 +30,25 @@ dump content of gcda and gcno profile files offline.
 Options
 ^^^^^^^
 
-``-h`` ``--help``
+.. option:: -h, --help
+
   Display help about using :command:`gcov-dump` (on the standard output), and
   exit without doing any further processing.
 
-``-l`` ``--long``
+.. option:: -l, --long
+
   Dump content of records.
 
-``-p`` ``--positions``
+.. option:: -p, --positions
+
   Dump positions of records.
 
-``-r`` ``--raw``
+.. option:: -r, --raw
+
   Print content records in raw format.
 
-``-v`` ``--version``
+.. option:: -v, --version
+
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
 
