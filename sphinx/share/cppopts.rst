@@ -7,7 +7,8 @@
 
   Predefine :samp:`{name}` as a macro, with definition ``1``.
 
-:samp:`-D {name}={definition}`
+.. option:: -D name=definition
+
   The contents of :samp:`{definition}` are tokenized and processed as if
   they appeared during translation phase three in a :samp:`#define`
   directive.  In particular, the definition is truncated by
@@ -392,7 +393,8 @@
 
     See :ref:`obsolete-features`.
 
-:samp:`-A -{predicate}={answer}`
+.. option:: -A -predicate=answer
+
   Cancel an assertion with the predicate :samp:`{predicate}` and answer
   :samp:`{answer}`.
 
