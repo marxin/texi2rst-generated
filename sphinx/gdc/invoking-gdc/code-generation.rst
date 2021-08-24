@@ -13,7 +13,7 @@ Code Generation
 In addition to the many :command:`gcc` options controlling code generation,
 :command:`gdc` has several options specific to itself.
 
-``-H``
+.. option:: -H
 
   .. index:: -H
 
@@ -21,7 +21,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   determines the output file based on the name of the input file, removes
   any directory components and suffix, and applies the :samp:`.di` suffix.
 
-:samp:`-Hd {dir}`
+.. option:: -Hd dir
 
   .. index:: -Hd
 
@@ -29,7 +29,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   This option can be used with :option:`-Hf `:samp:`{file}` to independently set the
   output file and directory path.
 
-:samp:`-Hf {file}`
+.. option:: -Hf file
 
   .. index:: -Hf
 
@@ -37,7 +37,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   be used with :option:`-Hd` :samp:`{dir}` to independently set the output file and
   directory path.
 
-``-M``
+.. option:: -M
 
   .. index:: -M
 
@@ -46,14 +46,14 @@ In addition to the many :command:`gcc` options controlling code generation,
   :command:`make` rule containing the object file name for that source file,
   a colon, and the names of all imported files.
 
-``-MM``
+.. option:: -MM
 
   .. index:: -MM
 
   Like :option:`-M` but does not mention imported modules from the D standard
   library package directories.
 
-:samp:`-MF {file}`
+.. option:: -MF file
 
   .. index:: -MF
 
@@ -61,21 +61,21 @@ In addition to the many :command:`gcc` options controlling code generation,
   the dependencies to.  When used with the driver options :option:`-MD` or
   :option:`-MMD`, :option:`-MF` overrides the default dependency output file.
 
-``-MG``
+.. option:: -MG
 
   .. index:: -MG
 
   This option is for compatibility with :command:`gcc`, and is ignored by the
   compiler.
 
-``-MP``
+.. option:: -MP
 
   .. index:: -MP
 
   Outputs a phony target for each dependency other than the modules being
   compiled, causing each to depend on nothing.
 
-:samp:`-MT {target}`
+.. option:: -MT target
 
   .. index:: -MT
 
@@ -84,14 +84,14 @@ In addition to the many :command:`gcc` options controlling code generation,
   you can specify them as a single argument to :option:`-MT`, or use
   multiple :option:`-MT` options.
 
-:samp:`-MQ {target}`
+.. option:: -MQ target
 
   .. index:: -MQ
 
   Same as :option:`-MT`, but it quotes any characters which are special to
   :command:`make`.
 
-``-MD``
+.. option:: -MD
 
   .. index:: -MD
 
@@ -99,14 +99,14 @@ In addition to the many :command:`gcc` options controlling code generation,
   determines :samp:`{file}` by removing any directory components and suffix
   from the input file, and then adding a :samp:`.deps` suffix.
 
-``-MMD``
+.. option:: -MMD
 
   .. index:: -MMD
 
   Like :option:`-MD` but does not mention imported modules from the D standard
   library package directories.
 
-``-X``
+.. option:: -X
 
   .. index:: -X
 
@@ -115,14 +115,14 @@ In addition to the many :command:`gcc` options controlling code generation,
   removing any directory components and suffix from the input file, and then
   adding a :samp:`.json` suffix.
 
-:samp:`-Xf {file}`
+.. option:: -Xf file
 
   .. index:: -Xf
 
   Same as :option:`-X`, but writes all JSON contents to the specified
   :samp:`{file}`.
 
-``-fdoc``
+.. option:: -fdoc
 
   .. index:: -fdoc
 
@@ -130,7 +130,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   determines :samp:`{file}` by removing any directory components and suffix
   from the input file, and then adding a :samp:`.html` suffix.
 
-:samp:`-fdoc-dir={dir}`
+.. option:: -fdoc-dir=dir
 
   .. index:: -fdoc-dir
 
@@ -138,7 +138,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   This option can be used with :option:`-fdoc-file`:samp:`={file}` to
   independently set the output file and directory path.
 
-:samp:`-fdoc-file={file}`
+.. option:: -fdoc-file=file
 
   .. index:: -fdoc-file
 
@@ -146,7 +146,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   option can be used with :option:`-fdoc-dir`:samp:`={dir}` to independently
   set the output file and directory path.
 
-:samp:`-fdoc-inc={file}`
+.. option:: -fdoc-inc=file
 
   .. index:: -fdoc-inc
 

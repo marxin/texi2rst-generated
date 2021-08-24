@@ -17,14 +17,14 @@ Developer Options
 This section describes command-line options that are primarily of
 interest to developers or language tooling.
 
-``-fdump-d-original``
+.. option:: -fdump-d-original
 
   .. index:: -fdump-d-original
 
   Output the internal front-end AST after the ``semantic3`` stage.
   This option is only useful for debugging the GNU D compiler itself.
 
-``-v``
+.. option:: -v
 
   .. index:: -v
 

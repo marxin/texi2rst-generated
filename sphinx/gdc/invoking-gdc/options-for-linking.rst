@@ -16,7 +16,7 @@ These options come into play when the compiler links object files into an
 executable output file.  They are meaningless if the compiler is not doing
 a link step.
 
-:samp:`-defaultlib={libname}`
+.. option:: -defaultlib=libname
 
   .. index:: -defaultlib=
 
@@ -24,7 +24,7 @@ a link step.
   specifying the linkage of libphobos, such as :option:`-static-libphobos`
   or :option:`-shared-libphobos`, are ignored.
 
-:samp:`-debuglib={libname}`
+.. option:: -debuglib=libname
 
   .. index:: -debuglib=
 
@@ -33,7 +33,7 @@ a link step.
   on the command line.  Options specifying the linkage of libphobos, such
   as :option:`-static-libphobos` or :option:`-shared-libphobos`, are ignored.
 
-``-nophoboslib``
+.. option:: -nophoboslib
 
   .. index:: -nophoboslib
 
@@ -42,7 +42,7 @@ a link step.
   :option:`-shared-libphobos`, are ignored.  The standard system libraries are
   used normally, unless :option:`-nostdlib` or :option:`-nodefaultlibs` is used.
 
-``-shared-libphobos``
+.. option:: -shared-libphobos
 
   .. index:: -shared-libphobos
 
@@ -51,7 +51,7 @@ a link step.
   version.  If no shared version was built when the compiler was configured,
   this option has no effect.
 
-``-static-libphobos``
+.. option:: -static-libphobos
 
   .. index:: -static-libphobos
 

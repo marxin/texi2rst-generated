@@ -17,7 +17,7 @@ Options for Directory Search
 These options specify directories to search for files, libraries, and
 other parts of the compiler:
 
-:samp:`-I{dir}`
+.. option:: -Idir
 
   .. index:: -I
 
@@ -25,7 +25,7 @@ other parts of the compiler:
   compile time.  Multiple :option:`-I` options can be used, and the
   paths are searched in the same order.
 
-:samp:`-J{dir}`
+.. option:: -Jdir
 
   .. index:: -J
 
@@ -34,20 +34,20 @@ other parts of the compiler:
   ``import(file)`` expressions.  Multiple :option:`-J` options can be
   used, and the paths are searched in the same order.
 
-:samp:`-L{dir}`
+.. option:: -Ldir
 
   .. index:: -L
 
   When linking, specify a library search directory, as with :command:`gcc`.
 
-:samp:`-B{dir}`
+.. option:: -Bdir
 
   .. index:: -B
 
   This option specifies where to find the executables, libraries,
   source files, and data files of the compiler itself, as with :command:`gcc`.
 
-:samp:`-fmodule-file={module}={spec}`
+.. option:: -fmodule-file=module=spec
 
   .. index:: -fmodule-file
 
@@ -72,14 +72,14 @@ other parts of the compiler:
     import C.D.E;   // Matches C, searches for bar/D/E.d
     import A.B.C;   // No match, searches for A/B/C.d
 
-:samp:`-imultilib {dir}`
+.. option:: -imultilib dir
 
   .. index:: -imultilib
 
   Use :samp:`{dir}` as a subdirectory of the gcc directory containing
   target-specific D sources and interfaces.
 
-:samp:`-iprefix {prefix}`
+.. option:: -iprefix prefix
 
   .. index:: -iprefix
 
@@ -87,7 +87,7 @@ other parts of the compiler:
   target-specific D sources and interfaces.  If the :samp:`{prefix}` represents
   a directory, you should include the final ``'/'``.
 
-``-nostdinc``
+.. option:: -nostdinc
 
   .. index:: -nostdinc
 

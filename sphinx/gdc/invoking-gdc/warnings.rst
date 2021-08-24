@@ -21,7 +21,7 @@ are not inherently erroneous but that are risky or suggest there
 is likely to be a bug in the program.  Unless :option:`-Werror` is
 specified, they do not prevent compilation of the program.
 
-``-Wall``
+.. option:: -Wall
 
   .. index:: -Wall
 
@@ -31,13 +31,13 @@ specified, they do not prevent compilation of the program.
   the D language, and all constructs for which this may generate a
   warning message are valid code.
 
-``-Walloca``
+.. option:: -Walloca
 
   .. index:: -Walloca
 
   This option warns on all uses of "alloca" in the source.
 
-:samp:`-Walloca-larger-than={n}`
+.. option:: -Walloca-larger-than=n
 
   .. index:: -Walloca-larger-than
 
@@ -49,7 +49,7 @@ specified, they do not prevent compilation of the program.
   :option:`-Walloca-larger-than` warning and is equivalent to
   :option:`-Walloca-larger-than`:samp:`={SIZE_MAX}` or larger.
 
-``-Wcast-result``
+.. option:: -Wcast-result
 
   .. index:: -Wcast-result
 
@@ -59,7 +59,7 @@ specified, they do not prevent compilation of the program.
   this is only done for casting between an imaginary and non-imaginary
   data type, or casting between a D and C++ class.
 
-``-Wno-deprecated``
+.. option:: -Wno-deprecated
 
   .. index:: -Wdeprecated
 
@@ -68,7 +68,7 @@ specified, they do not prevent compilation of the program.
   Do not warn about usage of deprecated features and symbols with
   ``deprecated`` attributes.
 
-``-Werror``
+.. option:: -Werror
 
   .. index:: -Werror
 
@@ -76,7 +76,7 @@ specified, they do not prevent compilation of the program.
 
   Turns all warnings into errors.
 
-``-Wspeculative``
+.. option:: -Wspeculative
 
   .. index:: -Wspeculative
 
@@ -87,7 +87,7 @@ specified, they do not prevent compilation of the program.
   messages as warnings, and these messages therefore never become
   errors when the :option:`-Werror` option is also used.
 
-``-Wtemplates``
+.. option:: -Wtemplates
 
   .. index:: -Wtemplates
 
@@ -96,7 +96,7 @@ specified, they do not prevent compilation of the program.
   Warn when a template instantiation is encountered.  Some coding
   rules disallow templates, and this may be used to enforce that rule.
 
-``-Wunknown-pragmas``
+.. option:: -Wunknown-pragmas
 
   .. index:: -Wunknown-pragmas
 
@@ -107,7 +107,7 @@ specified, they do not prevent compilation of the program.
   where a pragma that is part of the D language, but not implemented by
   the compiler, won't get reported.
 
-``-Wno-varargs``
+.. option:: -Wno-varargs
 
   .. index:: Wvarargs
 
@@ -116,7 +116,7 @@ specified, they do not prevent compilation of the program.
   Do not warn upon questionable usage of the macros used to handle variable
   arguments like ``va_start``.
 
-``-fignore-unknown-pragmas``
+.. option:: -fignore-unknown-pragmas
 
   .. index:: -fignore-unknown-pragmas
 
@@ -124,7 +124,7 @@ specified, they do not prevent compilation of the program.
 
   Turns off errors for unsupported pragmas.
 
-:samp:`-fmax-errors={n}`
+.. option:: -fmax-errors=n
 
   .. index:: -fmax-errors
 
@@ -133,7 +133,7 @@ specified, they do not prevent compilation of the program.
   source code.  If :samp:`{n}` is 0 (the default), there is no limit on the
   number of error messages produced.
 
-``-fsyntax-only``
+.. option:: -fsyntax-only
 
   .. index:: -fsyntax-only
 
@@ -144,7 +144,7 @@ specified, they do not prevent compilation of the program.
   files for each module present on the command-line, but no other output
   file.
 
-:samp:`-ftransition={id}`
+.. option:: -ftransition=id
 
   .. index:: -ftransition
 

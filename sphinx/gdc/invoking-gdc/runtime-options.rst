@@ -13,7 +13,7 @@ Runtime Options
 These options affect the runtime behavior of programs compiled with
 :command:`gdc`.
 
-``-fall-instantiations``
+.. option:: -fall-instantiations
 
   .. index:: -fall-instantiations
 
@@ -24,7 +24,7 @@ These options affect the runtime behavior of programs compiled with
   instantiated speculatively, such as from ``__traits(compiles, ...)``, or
   that come from an imported module not being compiled.
 
-``-fno-assert``
+.. option:: -fno-assert
 
   .. index:: -fassert
 
@@ -32,7 +32,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turn off code generation for ``assert`` contracts.
 
-``-fno-bounds-check``
+.. option:: -fno-bounds-check
 
   .. index:: -fbounds-check
 
@@ -44,7 +44,7 @@ These options affect the runtime behavior of programs compiled with
   does violate array bounds constraints.  It is safe to use this option
   if you are sure that your code never throws a ``RangeError``.
 
-:samp:`-fbounds-check={value}`
+.. option:: -fbounds-check=value
 
   .. index:: -fbounds-check=
 
@@ -61,7 +61,7 @@ These options affect the runtime behavior of programs compiled with
   :samp:`off`
     Turns off array bounds checking completely.
 
-``-fno-builtin``
+.. option:: -fno-builtin
 
   .. index:: -fbuiltin
 
@@ -90,7 +90,7 @@ These options affect the runtime behavior of programs compiled with
   :samp:`ident`
     Turns on compilation of any ``debug`` code identified by :samp:`{ident}`.
 
-``-fno-druntime``
+.. option:: -fno-druntime
 
   .. index:: -fdruntime
 
@@ -105,7 +105,7 @@ These options affect the runtime behavior of programs compiled with
 
     gdc -nophoboslib -fno-exceptions -fno-moduleinfo -fno-rtti
 
-``-fno-invariants``
+.. option:: -fno-invariants
 
   .. index:: -finvariants
 
@@ -113,7 +113,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for class ``invariant`` contracts.
 
-``-fno-moduleinfo``
+.. option:: -fno-moduleinfo
 
   .. index:: -fmoduleinfo
 
@@ -126,7 +126,7 @@ These options affect the runtime behavior of programs compiled with
   ``static ~this``), ``unittest`` code, and ``DSO`` registry
   functions for dynamically linked code.
 
-:samp:`-fonly={filename}`
+.. option:: -fonly=filename
 
   .. index:: -fonly
 
@@ -134,7 +134,7 @@ These options affect the runtime behavior of programs compiled with
   on the command line, but only generate code for the module specified
   by :samp:`{filename}`.
 
-``-fno-postconditions``
+.. option:: -fno-postconditions
 
   .. index:: -fpostconditions
 
@@ -142,7 +142,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for postcondition ``out`` contracts.
 
-``-fno-preconditions``
+.. option:: -fno-preconditions
 
   .. index:: -fpreconditions
 
@@ -150,7 +150,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for precondition ``in`` contracts.
 
-``-frelease``
+.. option:: -frelease
 
   .. index:: -frelease
 
@@ -168,7 +168,7 @@ These options affect the runtime behavior of programs compiled with
     gdc -fno-assert -fbounds-check=safe -fno-invariants \
         -fno-postconditions -fno-preconditions -fno-switch-errors
 
-``-fno-rtti``
+.. option:: -fno-rtti
 
   .. index:: -frtti
 
@@ -178,7 +178,7 @@ These options affect the runtime behavior of programs compiled with
   Any code that uses features of the language that require access to this
   information will result in an error.
 
-``-fno-switch-errors``
+.. option:: -fno-switch-errors
 
   .. index:: -fswitch-errors
 
@@ -189,7 +189,7 @@ These options affect the runtime behavior of programs compiled with
   is to throw a ``SwitchError``.  Turning off :option:`-fswitch-errors`
   means that instead the execution of the program is immediately halted.
 
-``-funittest``
+.. option:: -funittest
 
   .. index:: -funittest
 
@@ -198,7 +198,7 @@ These options affect the runtime behavior of programs compiled with
   Turns on compilation of ``unittest`` code, and turns on the
   ``version(unittest)`` identifier.  This implies :option:`-fassert`.
 
-:samp:`-fversion={value}`
+.. option:: -fversion=value
 
   .. index:: -fversion
 
@@ -212,7 +212,7 @@ These options affect the runtime behavior of programs compiled with
   :samp:`ident`
     Turns on compilation of ``version`` code identified by :samp:`{ident}`.
 
-``-fno-weak-templates``
+.. option:: -fno-weak-templates
 
   .. index:: -fweak-templates
 
