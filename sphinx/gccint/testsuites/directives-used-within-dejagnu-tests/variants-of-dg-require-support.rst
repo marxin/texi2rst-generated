@@ -32,8 +32,8 @@ A few of the ``dg-require`` directives take arguments.
   checked, for ``visibility("vis")`` otherwise.
 
   The original ``dg-require`` directives were defined before there
-was support for effective-target keywords.  The directives that do not
-take arguments could be replaced with effective-target keywords.
+  was support for effective-target keywords.  The directives that do not
+  take arguments could be replaced with effective-target keywords.
 
 ``dg-require-alias ""``
   Skip the test if the target does not support the :samp:`alias` attribute.

@@ -112,7 +112,7 @@ are:
 
 ``stack_size``
   Add the flags needed to define macro STACK_SIZE and set it to the stack size
-  limit associated with the stack_size_et``stack_size`` effective
+  limit associated with the ``stack_size`` effective
   target.
 
 ``sqrt_insn``

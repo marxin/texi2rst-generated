@@ -41,7 +41,7 @@ point in the future we will want to add some way to express that
 the call will throw an exception of a known type.
 
 Just before running the optimizers, the compiler lowers the
-high-level EH constructs above into a set of :samp:`goto`s, magic
+high-level EH constructs above into a set of ``goto`` s, magic
 labels, and EH regions.  Continuing to unwind at the end of a
 cleanup is represented with a ``GIMPLE_RESX``.
 

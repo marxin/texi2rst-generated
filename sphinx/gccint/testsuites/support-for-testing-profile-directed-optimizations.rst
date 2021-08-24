@@ -38,8 +38,7 @@ about a specific optimization:
 ``prof_ext``
   suffix of profile data files
 
-.. envvar:: PROFOPT_OPTIONS
-
+``PROFOPT_OPTIONS``
   list of options with which to run each test, similar to the lists for
   torture tests
 

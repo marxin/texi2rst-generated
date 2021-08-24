@@ -141,16 +141,16 @@ Many diagnostics relate to a mismatch between two different places in the
 user's source code.  Examples include:
 
 * a type mismatch, where the type at a usage site does not match the type
-    at a declaration
+  at a declaration
 
 * the argument count at a call site does not match the parameter count
-    at the declaration
+  at the declaration
 
 * something is erroneously duplicated (e.g. an error, due to breaking a
-    uniqueness requirement, or a warning, if it's suggestive of a bug)
+  uniqueness requirement, or a warning, if it's suggestive of a bug)
 
 * an 'opened' syntactic construct (such as an open-parenthesis) is not
-    closed
+  closed
 
   .. TODO: more examples?
 

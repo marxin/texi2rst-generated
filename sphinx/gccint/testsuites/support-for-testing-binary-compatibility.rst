@@ -30,7 +30,7 @@ with each other to split up the functionality being tested.
   Shares data with, or gets arguments from,
   :samp:`{testname}_x.{suffix}`.
 
-  Within each test, the main program and one functional piece are
+Within each test, the main program and one functional piece are
 compiled by the GCC under test.  The other piece can be compiled by
 an alternate compiler.  If no alternate compiler is specified,
 then all three source files are all compiled by the GCC under test.

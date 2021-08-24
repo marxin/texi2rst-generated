@@ -227,7 +227,8 @@ Region Model
 
 Part of the state stored at a ``exploded_node`` is a ``region_model``.
 This is an implementation of the region-based ternary model described in
-https://www.researchgate.net/publication/221430855_A_Memory_Model_for_Static_Analysis_of_C_Programs"A Memory Model for Static Analysis of C Programs"
+https://www.researchgate.net/publication/221430855_A_Memory_Model_for_Static_Analysis_of_C_Programs
+"A Memory Model for Static Analysis of C Programs"
 (Zhongxing Xu, Ted Kremenek, and Jian Zhang).
 
 A ``region_model`` encapsulates a representation of the state of

@@ -107,8 +107,6 @@ failuresExcept if the compiler was buggy and miscompiled
 some of the files that were not modified.  In this case, it's best
 to use :command:`make restrap`.
 
-.
-
 Other targets available from the top level include:
 
 ``bootstrap-lean``

@@ -110,11 +110,10 @@ These instructions are chained together in a single list that follows
 a reverse postorder (RPO) traversal of the function.  This means that
 if any path through the function can execute an instruction :samp:`{I1}`
 and then later execute an instruction :samp:`{I2}` for the first time,
-:samp:`{I1}` appears before :samp:`{I2}` in the listNote that this
+:samp:`{I1}` appears before :samp:`{I2}` in the list.
+Note that this
 order is different from the order of the underlying RTL instructions,
 which follow machine code order instead.
-
-.
 
 Two RTL SSA instructions can be compared to find which instruction
 occurs earlier than the other in the RPO.  One way to do this is
@@ -163,11 +162,12 @@ structures and the underlying CFG ``basic_block`` structures
 
 If a CFG basic block :samp:`{bb}` contains an RTL instruction :samp:`{insn}`,
 the RTL SSA represenation of :samp:`{bb}` also contains an RTL SSA representation
-of :samp:`{insn}`Note that this excludes non-instruction things like
+of :samp:`{insn}`.
+Note that this excludes non-instruction things like
 ``note`` s and ``barrier`` s that also appear in the chain of RTL
 instructions.
 
-.  Within RTL SSA, these instructions are referred to as
+Within RTL SSA, these instructions are referred to as
 'real' instructions.  These real instructions fall into two groups:
 debug instructions and nondebug instructions.  Only nondebug instructions
 should affect code generation decisions.
@@ -244,11 +244,11 @@ RTL SSA Register and Memory Accesses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the RTL SSA form, most reads or writes of a resource are
-represented as a ``rtl_ssa::access_info``The exceptions
+represented as a ``rtl_ssa::access_info``.
+The exceptions
 are call clobbers, which are generally represented separately.
 See the comment above ``rtl_ssa::insn_info`` for details.
 
-.
 These ``rtl_ssa::access_info`` s are organized into the following
 class hierarchy:
 

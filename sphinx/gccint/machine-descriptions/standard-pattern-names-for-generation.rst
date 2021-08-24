@@ -856,20 +856,24 @@ usadm
   .. index:: widen_ssumm3 instruction pattern
 
 widen_ssumm3
+
 .. index:: widen_usumm3 instruction pattern
 
- widen_usumm3
+widen_usumm3
+
   Operands 0 and 2 are of the same mode, which is wider than the mode of
   operand 1. Add operand 1 to operand 2 and place the widened result in
   operand 0. (This is used express accumulation of elements into an accumulator
   of a wider mode.)
 
-  .. index:: smulhsm3 instruction pattern
+.. index:: smulhsm3 instruction pattern
 
 smulhsm3
+
 .. index:: umulhsm3 instruction pattern
 
- umulhsm3
+umulhsm3
+
   Signed/unsigned multiply high with scale. This is equivalent to the C code:
 
   .. code-block:: c++
@@ -884,9 +888,10 @@ smulhsm3
   .. index:: smulhrsm3 instruction pattern
 
 smulhrsm3
+
 .. index:: umulhrsm3 instruction pattern
 
- umulhrsm3
+umulhrsm3
   Signed/unsigned multiply high with round and scale. This is
   equivalent to the C code:
 
@@ -899,12 +904,13 @@ smulhrsm3
   where the sign of :samp:`narrow` determines whether this is a signed
   or unsigned operation, and :samp:`{N}` is the size of :samp:`wide` in bits.
 
-  .. index:: sdiv_pow2m3 instruction pattern
-
-sdiv_pow2m3
 .. index:: sdiv_pow2m3 instruction pattern
 
- sdiv_pow2m3
+sdiv_pow2m3
+
+.. index:: sdiv_pow2m3 instruction pattern
+
+sdiv_pow2m3
   Signed division by power-of-2 immediate. Equivalent to:
 
   .. code-block:: c++

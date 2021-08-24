@@ -40,7 +40,8 @@ Host Misc
   has a small limit on the size of the stack, GCC's builtin ``alloca``
   will not work reliably.
 
-``COLLECT2_HOST_INITIALIZATION``
+.. envvar:: COLLECT2_HOST_INITIALIZATION
+
   If defined, a C statement (sans semicolon) that performs host-dependent
   initialization when ``collect2`` is being initialized.
 

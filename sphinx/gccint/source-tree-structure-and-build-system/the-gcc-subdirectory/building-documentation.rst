@@ -139,7 +139,7 @@ with miscellaneous documentation:
 :samp:`ABOUT-NLS`
   Notes on the Free Translation Project.
 
-.. envvar:: COPYING
+:samp:`COPYING`
 
   The GNU General Public License, Versions 2 and 3.
 
@@ -149,13 +149,13 @@ with miscellaneous documentation:
 :samp:`*ChangeLog*` :samp:`*/ChangeLog*`
   Change log files for various parts of GCC.
 
-.. envvar:: LANGUAGES
+:samp:`LANGUAGES`
 
   Details of a few changes to the GCC front-end interface.  FIXME: the
   information in this file should be part of general documentation of
   the front-end interface in this manual.
 
-.. envvar:: ONEWS
+:samp:`ONEWS`
 
   Information about new features in old versions of GCC.  (For recent
   versions, the information is on the GCC web site.)
