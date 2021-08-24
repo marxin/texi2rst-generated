@@ -665,7 +665,7 @@ enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
 The following built-in functions are available on Linux 64-bit systems
 that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`):
 
-.. functionL:: unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
+.. function:: unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
 
   Perform a 64-bit centrifuge operation, as if implemented by the
   ``cfuged`` instruction.
