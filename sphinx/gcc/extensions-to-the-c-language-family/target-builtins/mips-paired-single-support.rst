@@ -36,10 +36,11 @@ For example:
   float e, f;
   b = (v2sf) {e, f};
 
-*Note:* The CPU's endianness determines which value is stored in
-the upper half of a register and which value is stored in the lower half.
-On little-endian targets, the first value is the lower one and the second
-value is the upper one.  The opposite order applies to big-endian targets.
-For example, the code above sets the lower half of ``a`` to
-``1.5`` on little-endian targets and ``9.1`` on big-endian targets.
+.. note::
+  The CPU's endianness determines which value is stored in
+  the upper half of a register and which value is stored in the lower half.
+  On little-endian targets, the first value is the lower one and the second
+  value is the upper one.  The opposite order applies to big-endian targets.
+  For example, the code above sets the lower half of ``a`` to
+  ``1.5`` on little-endian targets and ``9.1`` on big-endian targets.
 

@@ -18,8 +18,8 @@ How to Use Inline Assembly Language in C Code
 
 The ``asm`` keyword allows you to embed assembler instructions
 within C code.  GCC provides two forms of inline ``asm``
-statements.  A :dfn:`basic ``asm``` statement is one with no
-operands (see :ref:`basic-asm`), while an :dfn:`extended ``asm```
+statements.  A basic ``asm`` statement is one with no
+operands (see :ref:`basic-asm`), while an extended ``asm``
 statement (see :ref:`extended-asm`) includes one or more operands.  
 The extended form is preferred for mixing C and assembly language
 within a function, but to include assembly language at
@@ -595,7 +595,7 @@ Operands are separated by commas.  Each operand has this format:
   the optimizers to produce the best possible code. 
   If you must use a specific register, but your Machine Constraints do not
   provide sufficient control to select the specific register you want, 
-  local register variables may provide a solution (see :ref:`local-register--variables`).
+  local register variables may provide a solution (see :ref:`local-register-variables`).
 
 :samp:`{cvariablename}`
   Specifies a C lvalue expression to hold the output, typically a variable name.
@@ -638,8 +638,7 @@ is undefined if :samp:`{a}` is modified before using :samp:`{b}`.
 
 ``asm`` supports operand modifiers on operands (for example :samp:`%k2` 
 instead of simply :samp:`%2`). Typically these qualifiers are hardware 
-dependent. The list of supported modifiers for x86 is found at 
-x86Operandmodifiersx86 Operand modifiers.
+dependent. The list of supported modifiers for x86 is found at :ref:`x86operandmodifiers`.
 
 If the C code that follows the ``asm`` makes no use of any of the output 
 operands, use ``volatile`` for the ``asm`` statement to prevent the 
@@ -873,7 +872,7 @@ Operands are separated by commas.  Each operand has this format:
   the compiler chooses the most efficient one based on the current context.
   If you must use a specific register, but your Machine Constraints do not
   provide sufficient control to select the specific register you want, 
-  local register variables may provide a solution (see :ref:`local-register--variables`).
+  local register variables may provide a solution (see :ref:`local-register-variables`).
 
   Input constraints can also be digits (for example, ``"0"``). This indicates 
   that the specified input must be in the same place as the output constraint 
@@ -916,7 +915,7 @@ optimizers may discard the ``asm`` statement as unneeded
 ``asm`` supports operand modifiers on operands (for example :samp:`%k2` 
 instead of simply :samp:`%2`). Typically these qualifiers are hardware 
 dependent. The list of supported modifiers for x86 is found at 
-x86Operandmodifiersx86 Operand modifiers.
+:ref:`x86operandmodifiers`.
 
 In this example using the fictitious ``combine`` instruction, the 
 constraint ``"0"`` for input operand 1 says that it must occupy the same 

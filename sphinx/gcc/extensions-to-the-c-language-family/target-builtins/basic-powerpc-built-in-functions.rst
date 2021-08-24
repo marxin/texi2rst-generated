@@ -499,43 +499,50 @@ addition to the :option:`-misel` option.
 The following built-in functions are available on Linux 64-bit systems
 that use the ISA 3.0 instruction set (:option:`-mcpu`:samp:`=power9`):
 
-``__float128 __builtin_addf128_round_to_odd (__float128, __float128)``
+.. function:: __float128 __builtin_addf128_round_to_odd (__float128, __float128)
+
   Perform a 128-bit IEEE floating point add using round to odd as the
   rounding mode.
 
   .. index:: __builtin_addf128_round_to_odd
 
-``__float128 __builtin_subf128_round_to_odd (__float128, __float128)``
+.. function:: __float128 __builtin_subf128_round_to_odd (__float128, __float128)
+
   Perform a 128-bit IEEE floating point subtract using round to odd as
   the rounding mode.
 
   .. index:: __builtin_subf128_round_to_odd
 
-``__float128 __builtin_mulf128_round_to_odd (__float128, __float128)``
+.. function:: __float128 __builtin_mulf128_round_to_odd (__float128, __float128)
+
   Perform a 128-bit IEEE floating point multiply using round to odd as
   the rounding mode.
 
   .. index:: __builtin_mulf128_round_to_odd
 
-``__float128 __builtin_divf128_round_to_odd (__float128, __float128)``
+.. function:: __float128 __builtin_divf128_round_to_odd (__float128, __float128)
+
   Perform a 128-bit IEEE floating point divide using round to odd as
   the rounding mode.
 
   .. index:: __builtin_divf128_round_to_odd
 
-``__float128 __builtin_sqrtf128_round_to_odd (__float128)``
+.. function:: __float128 __builtin_sqrtf128_round_to_odd (__float128)
+
   Perform a 128-bit IEEE floating point square root using round to odd
   as the rounding mode.
 
   .. index:: __builtin_sqrtf128_round_to_odd
 
-``__float128 __builtin_fmaf128_round_to_odd (__float128, __float128, __float128)``
+.. function:: __float128 __builtin_fmaf128_round_to_odd (__float128, __float128, __float128)
+
   Perform a 128-bit IEEE floating point fused multiply and add operation
   using round to odd as the rounding mode.
 
   .. index:: __builtin_fmaf128_round_to_odd
 
-``double __builtin_truncf128_round_to_odd (__float128)``
+.. function:: double __builtin_truncf128_round_to_odd (__float128)
+
   Convert a 128-bit IEEE floating point value to ``double`` using
   round to odd as the rounding mode.
 
@@ -658,40 +665,30 @@ enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
 The following built-in functions are available on Linux 64-bit systems
 that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`):
 
-unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
+.. functionL:: unsigned long long int__builtin_cfuged (unsigned long long int, unsigned long long int)
 
-Perform a 64-bit centrifuge operation, as if implemented by the
-``cfuged`` instruction.
+  Perform a 64-bit centrifuge operation, as if implemented by the
+  ``cfuged`` instruction.
 
-.. index:: __builtin_cfuged
+.. function:: unsigned long long int__builtin_cntlzdm (unsigned long long int, unsigned long long int)
 
-unsigned long long int__builtin_cntlzdm (unsigned long long int, unsigned long long int)
+  Perform a 64-bit count leading zeros operation under mask, as if
+  implemented by the ``cntlzdm`` instruction.
 
-Perform a 64-bit count leading zeros operation under mask, as if
-implemented by the ``cntlzdm`` instruction.
+.. function:: unsigned long long int__builtin_cnttzdm (unsigned long long int, unsigned long long int)
 
-.. index:: __builtin_cntlzdm
+  Perform a 64-bit count trailing zeros operation under mask, as if
+  implemented by the ``cnttzdm`` instruction.
 
-unsigned long long int__builtin_cnttzdm (unsigned long long int, unsigned long long int)
+.. function:: unsigned long long int__builtin_pdepd (unsigned long long int, unsigned long long int)
 
-Perform a 64-bit count trailing zeros operation under mask, as if
-implemented by the ``cnttzdm`` instruction.
+  Perform a 64-bit parallel bits deposit operation, as if implemented by the
+  ``pdepd`` instruction.
 
-.. index:: __builtin_cnttzdm
+.. function:: unsigned long long int__builtin_pextd (unsigned long long int, unsigned long long int)
 
-unsigned long long int__builtin_pdepd (unsigned long long int, unsigned long long int)
-
-Perform a 64-bit parallel bits deposit operation, as if implemented by the
-``pdepd`` instruction.
-
-.. index:: __builtin_pdepd
-
-unsigned long long int__builtin_pextd (unsigned long long int, unsigned long long int)
-
-Perform a 64-bit parallel bits extract operation, as if implemented by the
-``pextd`` instruction.
-
-.. index:: __builtin_pextd
+  Perform a 64-bit parallel bits extract operation, as if implemented by the
+  ``pextd`` instruction.
 
 .. code-block:: c++
 

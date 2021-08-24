@@ -196,9 +196,16 @@ instructions to access memory.  These functions generate
 ``membar`` instructions to flush the I/O load and stores where
 appropriate, as described in Fujitsu's manual described above.
 
-:samp:`unsigned char __builtin_read8 (void *{data})`:samp:`unsigned short __builtin_read16 (void *{data})`:samp:`unsigned long __builtin_read32 (void *{data})`
-:samp:`unsigned long long __builtin_read64 (void *{data})`
-:samp:`void __builtin_write8 (void *{data}, unsigned char {datum})`:samp:`void __builtin_write16 (void *{data}, unsigned short {datum})`:samp:`void __builtin_write32 (void *{data}, unsigned long {datum})`:samp:`void __builtin_write64 (void *{data}, unsigned long long {datum})`.. _other-built-in-functions:
+::
+
+  unsigned char __builtin_read8 (void *data)
+  unsigned short __builtin_read16 (void *data)
+  unsigned long __builtin_read32 (void *data)
+  unsigned long long __builtin_read64 (void *data)
+  void __builtin_write8 (void *data, unsigned char datum)
+  void __builtin_write16 (void *data, unsigned short datum)
+  void __builtin_write32 (void *data, unsigned long datum)
+  void __builtin_write64 (void *data, unsigned long long datum)
 
 Other Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -206,27 +213,33 @@ Other Built-in Functions
 This section describes built-in functions that are not named after
 a specific FR-V instruction.
 
-:samp:`sw2 __IACCreadll (iacc {reg})`
+.. function:: sw2 __IACCreadll (iacc reg)
+
   Return the full 64-bit value of IACC0.  The :samp:`{reg}` argument is reserved
   for future expansion and must be 0.
 
-:samp:`sw1 __IACCreadl (iacc {reg})`
+.. function:: sw1 __IACCreadl (iacc reg)
+
   Return the value of IACC0H if :samp:`{reg}` is 0 and IACC0L if :samp:`{reg}` is 1.
   Other values of :samp:`{reg}` are rejected as invalid.
 
-:samp:`void __IACCsetll (iacc {reg}, sw2 {x})`
+.. function:: void __IACCsetll (iacc reg, sw2 x)
+
   Set the full 64-bit value of IACC0 to :samp:`{x}`.  The :samp:`{reg}` argument
   is reserved for future expansion and must be 0.
 
-:samp:`void __IACCsetl (iacc {reg}, sw1 {x})`
+.. function:: void __IACCsetl (iacc reg, sw1 x)
+
   Set IACC0H to :samp:`{x}` if :samp:`{reg}` is 0 and IACC0L to :samp:`{x}` if :samp:`{reg}`
   is 1.  Other values of :samp:`{reg}` are rejected as invalid.
 
-:samp:`void __data_prefetch0 (const void *{x})`
+.. function:: void __data_prefetch0 (const void *x)
+
   Use the ``dcpl`` instruction to load the contents of address :samp:`{x}`
   into the data cache.
 
-:samp:`void __data_prefetch (const void *{x})`
+.. function:: void __data_prefetch (const void *x)
+
   Use the ``nldub`` instruction to load the contents of address :samp:`{x}`
   into the data cache.  The instruction is issued in slot I1.
 

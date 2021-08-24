@@ -15,10 +15,11 @@ result to be in a register.  Where necessary further code will be
 generated to ensure this is true, but for brevity this is not
 described in each case.
 
-*Note:* Using a built-in to generate an instruction not supported
-by a target may cause problems. At present the compiler is not
-guaranteed to detect such misuse, and as a result an internal compiler
-error may be generated.
+.. note::
+  Using a built-in to generate an instruction not supported
+  by a target may cause problems. At present the compiler is not
+  guaranteed to detect such misuse, and as a result an internal compiler
+  error may be generated.
 
 .. function:: int __builtin_arc_aligned (void *val, int alignval)
 

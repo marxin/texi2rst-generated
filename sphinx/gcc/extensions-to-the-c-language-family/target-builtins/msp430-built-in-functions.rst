@@ -11,19 +11,22 @@ MSP430 Built-in Functions
 GCC provides a couple of special builtin functions to aid in the
 writing of interrupt handlers in C.
 
-:samp:`__bic_SR_register_on_exit (int {mask})`
+.. function:: __bic_SR_register_on_exit (int mask)
+
   This clears the indicated bits in the saved copy of the status register
   currently residing on the stack.  This only works inside interrupt
   handlers and the changes to the status register will only take affect
   once the handler returns.
 
-:samp:`__bis_SR_register_on_exit (int {mask})`
+.. function:: __bis_SR_register_on_exit (int mask)
+
   This sets the indicated bits in the saved copy of the status register
   currently residing on the stack.  This only works inside interrupt
   handlers and the changes to the status register will only take affect
   once the handler returns.
 
-:samp:`__delay_cycles (long long {cycles})`
+.. function:: __delay_cycles (long long cycles)
+
   This inserts an instruction sequence that takes exactly :samp:`{cycles}`
   cycles (between 0 and about 17E9) to complete.  The inserted sequence
   may use jumps, loops, or no-ops, and does not interfere with any other

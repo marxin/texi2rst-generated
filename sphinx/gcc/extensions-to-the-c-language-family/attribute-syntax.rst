@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _attribute-syntax:
+.. _attribute-syntax:
 
 Attribute Syntax
 ****************

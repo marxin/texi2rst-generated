@@ -14,27 +14,41 @@ or if not a specific built-in is implemented or not. For example, if
 ``__builtin_avr_nop`` is available the macro
 ``__BUILTIN_AVR_NOP`` is defined to ``1`` and undefined otherwise.
 
-``void __builtin_avr_nop (void)`` ``void __builtin_avr_sei (void)`` ``void __builtin_avr_cli (void)`` ``void __builtin_avr_sleep (void)`` ``void __builtin_avr_wdr (void)`` ``unsigned char __builtin_avr_swap (unsigned char)`` ``unsigned int __builtin_avr_fmul (unsigned char, unsigned char)`` ``int __builtin_avr_fmuls (char, char)`` ``int __builtin_avr_fmulsu (char, unsigned char)``
-  These built-in functions map to the respective machine
-  instruction, i.e. ``nop``, ``sei``, ``cli``, ``sleep``,
-  ``wdr``, ``swap``, ``fmul``, ``fmuls``
-  resp. ``fmulsu``. The three ``fmul*`` built-ins are implemented
-  as library call if no hardware multiplier is available.
+::
 
-``void __builtin_avr_delay_cycles (unsigned long ticks)``
+  void __builtin_avr_nop (void)
+  void __builtin_avr_sei (void)
+  void __builtin_avr_cli (void)
+  void __builtin_avr_sleep (void)
+  void __builtin_avr_wdr (void)
+  unsigned char __builtin_avr_swap (unsigned char)
+  unsigned int __builtin_avr_fmul (unsigned char, unsigned char)
+  int __builtin_avr_fmuls (char, char)
+  int __builtin_avr_fmulsu (char, unsigned char)
+
+These built-in functions map to the respective machine
+instruction, i.e. ``nop``, ``sei``, ``cli``, ``sleep``,
+``wdr``, ``swap``, ``fmul``, ``fmuls``
+resp. ``fmulsu``. The three ``fmul*`` built-ins are implemented
+as library call if no hardware multiplier is available.
+
+.. function:: void __builtin_avr_delay_cycles (unsigned long ticks)
+
   Delay execution for :samp:`{ticks}` cycles. Note that this
   built-in does not take into account the effect of interrupts that
   might increase delay time. :samp:`{ticks}` must be a compile-time
   integer constant; delays with a variable number of cycles are not supported.
 
-``char __builtin_avr_flash_segment (const __memx void*)``
+.. function:: char __builtin_avr_flash_segment (const __memx void*)
+
   This built-in takes a byte address to the 24-bit
   AVR Named Address Spacesaddress space ``__memx`` and returns
   the number of the flash segment (the 64 KiB chunk) where the address
   points to.  Counting starts at ``0``.
   If the address does not point to flash memory, return ``-1``.
 
-``uint8_t __builtin_avr_insert_bits (uint32_t map, uint8_t bits, uint8_t val)``
+.. function:: uint8_t __builtin_avr_insert_bits (uint32_t map, uint8_t bits, uint8_t val)
+
   Insert bits from :samp:`{bits}` into :samp:`{val}` and return the resulting
   value. The nibbles of :samp:`{map}` determine how the insertion is
   performed: Let :samp:`{X}` be the :samp:`{n}` -th nibble of :samp:`{map}`
@@ -77,7 +91,8 @@ or if not a specific built-in is implemented or not. For example, if
     // reverse the bit order of bits
     __builtin_avr_insert_bits (0x01234567, bits, 0)
 
-``void __builtin_avr_nops (unsigned count)``
+.. function:: void __builtin_avr_nops (unsigned count)
+
   Insert :samp:`{count}` ``NOP`` instructions.
   The number of instructions must be a compile-time integer constant.
 

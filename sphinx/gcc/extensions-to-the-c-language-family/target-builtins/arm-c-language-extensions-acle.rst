@@ -26,6 +26,6 @@ floating-point Advanced SIMD intrinsics currently comply to ACLE v1.1.
 AArch64's back end does not have support for 16-bit floating point Advanced SIMD
 intrinsics yet.
 
-See ARM Options and AArch64 Options for more information on the
+See :ref:`arm-options` and :ref:`aarch64-options` for more information on the
 availability of extensions.
 
