@@ -4423,9 +4423,10 @@ section includes experimental options that may produce broken code.
 
   .. gcc-param:: vect-inner-loop-cost-factor
 
-    The factor which the loop vectorizer applies to the cost of statements
-    in an inner loop relative to the loop being vectorized.  The default
-    value is 50.
+    The maximum factor which the loop vectorizer applies to the cost of statements
+    in an inner loop relative to the loop being vectorized.  The factor applied
+    is the maximum of the estimated number of iterations of the inner loop and
+    this parameter.  The default value of this parameter is 50.
 
   .. gcc-param:: avoid-fma-max-bits
 

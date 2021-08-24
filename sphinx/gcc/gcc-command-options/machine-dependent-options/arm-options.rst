@@ -991,6 +991,14 @@ These :samp:`-m` options are defined for the ARM port:
   Development Tools Engineering Specification", which can be found on
   https://developer.arm.com/documentation/ecm0359818/latest/.
 
+.. option:: -mfix-cmse-cve-2021-35465
+
+  Mitigate against a potential security issue with the ``VLLDM`` instruction
+  in some M-profile devices when using CMSE (CVE-2021-365465).  This option is
+  enabled by default when the option :option:`-mcpu` = is used with
+  ``cortex-m33``, ``cortex-m35p`` or ``cortex-m55``.  The option
+  :option:`-mno-fix-cmse-cve-2021-35465` can be used to disable the mitigation.
+
 .. option:: -mfdpic, -mno-fdpic
 
   Select the FDPIC ABI, which uses 64-bit function descriptors to
