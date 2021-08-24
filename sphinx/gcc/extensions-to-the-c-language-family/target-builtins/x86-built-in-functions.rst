@@ -48,29 +48,34 @@ of them implement the function that is part of the name.
 
 The following built-in functions are always available.
 
-``__float128 __builtin_infq (void)``
+.. function:: __float128 __builtin_infq (void)
+
   Similar to ``__builtin_inf``, except the return type is ``__float128``.
 
   .. index:: __builtin_infq
 
-``__float128 __builtin_huge_valq (void)``
+.. function:: __float128 __builtin_huge_valq (void)
+
   Similar to ``__builtin_huge_val``, except the return type is ``__float128``.
 
   .. index:: __builtin_huge_valq
 
-``__float128 __builtin_nanq (void)``
+.. function:: __float128 __builtin_nanq (void)
+
   Similar to ``__builtin_nan``, except the return type is ``__float128``.
 
   .. index:: __builtin_nanq
 
-``__float128 __builtin_nansq (void)``
+.. function:: __float128 __builtin_nansq (void)
+
   Similar to ``__builtin_nans``, except the return type is ``__float128``.
 
   .. index:: __builtin_nansq
 
   The following built-in function is always available.
 
-``void __builtin_ia32_pause (void)``
+.. function:: void __builtin_ia32_pause (void)
+
   Generates the ``pause`` machine instruction with a compiler memory
   barrier.
 
@@ -544,25 +549,32 @@ All of them generate the machine instruction that is part of the name.
 
 The following built-in functions are available when :option:`-msse` is used.
 
-``v4sf __builtin_ia32_loadups (float *)``
+.. function:: v4sf __builtin_ia32_loadups (float *)
+
   Generates the ``movups`` machine instruction as a load from memory.
 
-``void __builtin_ia32_storeups (float *, v4sf)``
+.. function:: void __builtin_ia32_storeups (float *, v4sf)
+
   Generates the ``movups`` machine instruction as a store to memory.
 
-``v4sf __builtin_ia32_loadss (float *)``
+.. function:: v4sf __builtin_ia32_loadss (float *)
+
   Generates the ``movss`` machine instruction as a load from memory.
 
-``v4sf __builtin_ia32_loadhps (v4sf, const v2sf *)``
+.. function:: v4sf __builtin_ia32_loadhps (v4sf, const v2sf *)
+
   Generates the ``movhps`` machine instruction as a load from memory.
 
-``v4sf __builtin_ia32_loadlps (v4sf, const v2sf *)``
+.. function:: v4sf __builtin_ia32_loadlps (v4sf, const v2sf *)
+
   Generates the ``movlps`` machine instruction as a load from memory
 
-``void __builtin_ia32_storehps (v2sf *, v4sf)``
+.. function:: void __builtin_ia32_storehps (v2sf *, v4sf)
+
   Generates the ``movhps`` machine instruction as a store to memory.
 
-``void __builtin_ia32_storelps (v2sf *, v4sf)``
+.. function:: void __builtin_ia32_storelps (v2sf *, v4sf)
+
   Generates the ``movlps`` machine instruction as a store to memory.
 
   The following built-in functions are available when :option:`-msse2` is used.
@@ -841,31 +853,39 @@ name.
 The following built-in functions are available when :option:`-msse4.1` is
 used.
 
-``v4sf __builtin_ia32_vec_set_v4sf (v4sf, float, const int)``
+.. function:: v4sf __builtin_ia32_vec_set_v4sf (v4sf, float, const int)
+
   Generates the ``insertps`` machine instruction.
 
-``int __builtin_ia32_vec_ext_v16qi (v16qi, const int)``
+.. function:: int __builtin_ia32_vec_ext_v16qi (v16qi, const int)
+
   Generates the ``pextrb`` machine instruction.
 
-``v16qi __builtin_ia32_vec_set_v16qi (v16qi, int, const int)``
+.. function:: v16qi __builtin_ia32_vec_set_v16qi (v16qi, int, const int)
+
   Generates the ``pinsrb`` machine instruction.
 
-``v4si __builtin_ia32_vec_set_v4si (v4si, int, const int)``
+.. function:: v4si __builtin_ia32_vec_set_v4si (v4si, int, const int)
+
   Generates the ``pinsrd`` machine instruction.
 
-``v2di __builtin_ia32_vec_set_v2di (v2di, long long, const int)``
+.. function:: v2di __builtin_ia32_vec_set_v2di (v2di, long long, const int)
+
   Generates the ``pinsrq`` machine instruction in 64bit mode.
 
 The following built-in functions are changed to generate new SSE4.1
 instructions when :option:`-msse4.1` is used.
 
-``float __builtin_ia32_vec_ext_v4sf (v4sf, const int)``
+.. function:: float __builtin_ia32_vec_ext_v4sf (v4sf, const int)
+
   Generates the ``extractps`` machine instruction.
 
-``int __builtin_ia32_vec_ext_v4si (v4si, const int)``
+.. function:: int __builtin_ia32_vec_ext_v4si (v4si, const int)
+
   Generates the ``pextrd`` machine instruction.
 
-``long long __builtin_ia32_vec_ext_v2di (v2di, const int)``
+.. function:: long long __builtin_ia32_vec_ext_v2di (v2di, const int)
+
   Generates the ``pextrq`` machine instruction in 64bit mode.
 
 The following built-in functions are available when :option:`-msse4.2` is
@@ -893,29 +913,36 @@ name.
 The following built-in functions are available when :option:`-msse4.2` is
 used.
 
-``unsigned int __builtin_ia32_crc32qi (unsigned int, unsigned char)``
+.. function:: unsigned int __builtin_ia32_crc32qi (unsigned int, unsigned char)
+
   Generates the ``crc32b`` machine instruction.
 
-``unsigned int __builtin_ia32_crc32hi (unsigned int, unsigned short)``
+.. function:: unsigned int __builtin_ia32_crc32hi (unsigned int, unsigned short)
+
   Generates the ``crc32w`` machine instruction.
 
-``unsigned int __builtin_ia32_crc32si (unsigned int, unsigned int)``
+.. function:: unsigned int __builtin_ia32_crc32si (unsigned int, unsigned int)
+
   Generates the ``crc32l`` machine instruction.
 
-``unsigned long long __builtin_ia32_crc32di (unsigned long long, unsigned long long)``
+.. function:: unsigned long long __builtin_ia32_crc32di (unsigned long long, unsigned long long)
+
   Generates the ``crc32q`` machine instruction.
 
 The following built-in functions are changed to generate new SSE4.2
 instructions when :option:`-msse4.2` is used.
 
-``int __builtin_popcount (unsigned int)``
+.. function:: int __builtin_popcount (unsigned int)
+
   Generates the ``popcntl`` machine instruction.
 
-``int __builtin_popcountl (unsigned long)``
+.. function:: int __builtin_popcountl (unsigned long)
+
   Generates the ``popcntl`` or ``popcntq`` machine instruction,
   depending on the size of ``unsigned long``.
 
-``int __builtin_popcountll (unsigned long long)``
+.. function:: int __builtin_popcountll (unsigned long long)
+
   Generates the ``popcntq`` machine instruction.
 
 The following built-in functions are available when :option:`-mavx` is
@@ -1247,7 +1274,8 @@ name.
 The following built-in function is available when :option:`-mpclmul` is
 used.
 
-``v2di __builtin_ia32_pclmulqdq128 (v2di, v2di, const int)``
+.. function:: v2di __builtin_ia32_pclmulqdq128 (v2di, v2di, const int)
+
   Generates the ``pclmulqdq`` machine instruction.
 
 The following built-in function is available when :option:`-mfsgsbase` is

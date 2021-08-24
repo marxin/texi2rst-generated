@@ -13,7 +13,8 @@ special PRU instructions.
 
 The built-in functions supported are:
 
-:samp:`__delay_cycles (long long {cycles})`
+.. function:: __delay_cycles (long long cycles)
+
   This inserts an instruction sequence that takes exactly :samp:`{cycles}`
   cycles (between 0 and 0xffffffff) to complete.  The inserted sequence
   may use jumps, loops, or no-ops, and does not interfere with any other
@@ -22,10 +23,12 @@ The built-in functions supported are:
   optimized to a constant later.  The number of cycles delayed by this
   builtin is exact.
 
-``__halt (void)``
+.. function:: __halt (void)
+
   This inserts a HALT instruction to stop processor execution.
 
-:samp:`unsigned int __lmbd (unsigned int {wordval}, unsigned int {bitval})`
+.. function:: unsigned int __lmbd (unsigned int wordval, unsigned int bitval)
+
   This inserts LMBD instruction to calculate the left-most bit with value
   :samp:`{bitval}` in value :samp:`{wordval}`.  Only the least significant bit
   of :samp:`{bitval}` is taken into account.
