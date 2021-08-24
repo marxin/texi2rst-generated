@@ -654,6 +654,7 @@ in the following sections.
   :option:`-mverbose-cost-dump` 
   :option:`-mpure-code` 
   :option:`-mcmse` 
+  :option:`-mfix-cmse-cve-2021-35465` 
   :option:`-mfdpic`
 
   *AVR Options*
