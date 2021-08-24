@@ -51,21 +51,21 @@ program will generally cause it to misbehave or fail.
 Options
 ^^^^^^^
 
-:samp:`-I{dir}`
+.. option:: -Idir
 
   .. index:: -I
 
   Specify a directory to use when searching for an import package at
   compile time.
 
-:samp:`-L{dir}`
+.. option:: -Ldir
 
   .. index:: -L
 
   When linking, specify a library search directory, as with
   :command:`gcc`.
 
-:samp:`-fgo-pkgpath={string}`
+.. option:: -fgo-pkgpath=string
 
   .. index:: -fgo-pkgpath
 
@@ -76,7 +76,7 @@ Options
   it has been installed; in other words, a pathname within the
   directories specified by the :option:`-I` option.
 
-:samp:`-fgo-prefix={string}`
+.. option:: -fgo-prefix=string
 
   .. index:: -fgo-prefix
 
@@ -96,7 +96,7 @@ Options
   the special treatment of the ``main`` package and permits that
   package to be imported like any other.
 
-:samp:`-fgo-relative-import-path={dir}`
+.. option:: -fgo-relative-import-path=dir
 
   .. index:: -fgo-relative-import-path
 
@@ -104,7 +104,8 @@ Options
   :samp:`../`.  If this option is used, :command:`gccgo` will use
   :samp:`{dir}` as a prefix for the relative import when searching for it.
 
-``-frequire-return-statement`` ``-fno-require-return-statement``
+.. option:: -frequire-return-statement
+.. option:: -fno-require-return-statement
 
   .. index:: -frequire-return-statement
 
@@ -115,7 +116,7 @@ Options
   This warning may be disabled using
   :option:`-fno-require-return-statement`.
 
-``-fgo-check-divide-zero``
+.. option:: -fgo-check-divide-zero
 
   .. index:: -fgo-check-divide-zero
 
@@ -131,7 +132,7 @@ Options
   default, but in the future may be off by default on systems that do
   not require it.
 
-``-fgo-check-divide-overflow``
+.. option:: -fgo-check-divide-overflow
 
   .. index:: -fgo-check-divide-overflow
 
@@ -146,21 +147,21 @@ Options
   by default, but in the future may be off by default on systems that do
   not require it.
 
-``-fno-go-optimize-allocs``
+.. option:: -fno-go-optimize-allocs
 
   .. index:: -fno-go-optimize-allocs
 
   Disable escape analysis, which tries to allocate objects on the stack
   rather than the heap.
 
-:samp:`-fgo-debug-escape{n}`
+.. option:: -fgo-debug-escapen
 
   .. index:: -fgo-debug-escape
 
   Output escape analysis debugging information.  Larger values of
   :samp:`{n}` generate more information.
 
-:samp:`-fgo-debug-escape-hash={n}`
+.. option:: -fgo-debug-escape-hash=n
 
   .. index:: -fgo-debug-escape-hash
 
@@ -169,7 +170,7 @@ Options
   that match the given suffix :samp:`{n}`.  This can be used to binary
   search across functions to uncover escape analysis bugs.
 
-``-fgo-debug-optimization``
+.. option:: -fgo-debug-optimization
 
   .. index:: -fgo-debug-optimization
 
@@ -177,14 +178,14 @@ Options
 
   Output optimization diagnostics.
 
-:samp:`-fgo-c-header={file}`
+.. option:: -fgo-c-header=file
 
   .. index:: -fgo-c-header
 
   Write top-level named Go struct definitions to :samp:`{file}` as C code.
   This is used when compiling the runtime package.
 
-``-fgo-compiling-runtime``
+.. option:: -fgo-compiling-runtime
 
   .. index:: -fgo-compiling-runtime
 
@@ -192,7 +193,7 @@ Options
   memory allocation is forbidden.  Some additional compiler directives
   are supported.
 
-:samp:`-fgo-embedcfg={file}`
+.. option:: -fgo-embedcfg=file
 
   .. index:: -fgo-embedcfg
 
@@ -203,7 +204,7 @@ Options
   to a full path to the file.  This option is intended for use by the
   :command:`go` command to implement ``//go:embed``.
 
-``-g``
+.. option:: -g
 
   .. index:: -g for gccgo
 
