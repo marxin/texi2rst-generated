@@ -37,7 +37,7 @@ which I call a :dfn:`token run`, and when meeting an unescaped new line
 (newlines within comments do not count either), to start lexing back at
 the beginning of the run.  Note that we do *not* lex a line of
 tokens at once; if we did that ``parse_identifier`` would not have
-state flags available to warn about invalid identifiers (see :ref:`invalid-identifiers`).
+state flags available to warn about invalid identifiers (see :ref:`Invalid identifiers <invalid-identifiers>`).
 
 In other words, accessing tokens that appeared earlier in the current
 line is valid, but since each logical line overwrites the tokens of the

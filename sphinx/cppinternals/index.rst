@@ -11,7 +11,9 @@ Contents:
 .. toctree::
 
   copyright
+  cpplib
   cppinternals
+  multiple-include-optimization
   files
 
   indices-and-tables
