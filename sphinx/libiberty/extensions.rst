@@ -675,85 +675,106 @@ Here is a summary of all the macros associated with obstacks.  Each
 takes the address of an obstack (``struct obstack *``) as its first
 argument.
 
-:samp:`int obstack_init (struct obstack *{obstack_ptr})`
+.. function:: int obstack_init (struct obstack *obstack_ptr)
+
   Initialize use of an obstack.  See :ref:`creating-obstacks`.
 
-:samp:`int obstack_begin (struct obstack *{obstack_ptr}, size_t chunk_size)`
+.. function:: int obstack_begin (struct obstack *obstack_ptr, size_t chunk_size)
+
   Initialize use of an obstack, with an initial chunk of
   :samp:`{chunk_size}` bytes.
 
-:samp:`int obstack_specify_allocation (struct obstack *{obstack_ptr}, size_t chunk_size, size_t alignment, void *(*chunkfun) (size_t), void (*freefun) (void *))`
+.. function:: int obstack_specify_allocation (struct obstack *obstack_ptr, size_t chunk_size, size_t alignment, void *(*chunkfun) (size_t), void (*freefun) (void *))
+
   Initialize use of an obstack, specifying intial chunk size, chunk
   alignment, and memory allocation functions.
 
-:samp:`int obstack_specify_allocation_with_arg (struct obstack *{obstack_ptr}, size_t chunk_size, size_t alignment, void *(*chunkfun) (void *, size_t), void (*freefun) (void *, void *), void *arg)`
+.. function:: int obstack_specify_allocation_with_arg (struct obstack *obstack_ptr, size_t chunk_size, size_t alignment, void *(*chunkfun) (void *, size_t), void (*freefun) (void *, void *), void *arg)
+
   Like ``obstack_specify_allocation``, but specifying memory
   allocation functions that take an extra first argument, :samp:`{arg}`.
 
-:samp:`void *obstack_alloc (struct obstack *{obstack_ptr}, size_t {size})`
+.. function:: void *obstack_alloc (struct obstack *obstack_ptr, size_t size)
+
   Allocate an object of :samp:`{size}` uninitialized bytes.
   See :ref:`allocation-in-an-obstack`.
 
-:samp:`void *obstack_copy (struct obstack *{obstack_ptr}, void *{address}, size_t {size})`
+.. function:: void *obstack_copy (struct obstack *obstack_ptr, void *address, size_t size)
+
   Allocate an object of :samp:`{size}` bytes, with contents copied from
   :samp:`{address}`.  See :ref:`allocation-in-an-obstack`.
 
-:samp:`void *obstack_copy0 (struct obstack *{obstack_ptr}, void *{address}, size_t {size})`
+.. function:: void *obstack_copy0 (struct obstack *obstack_ptr, void *address, size_t size)
+
   Allocate an object of :samp:`{size}` +1 bytes, with :samp:`{size}` of them copied
   from :samp:`{address}`, followed by a null character at the end.
   See :ref:`allocation-in-an-obstack`.
 
-:samp:`void obstack_free (struct obstack *{obstack_ptr}, void *{object})`
+.. function:: void obstack_free (struct obstack *obstack_ptr, void *object)
+
   Free :samp:`{object}` (and everything allocated in the specified obstack
   more recently than :samp:`{object}`).  See :ref:`freeing-obstack-objects`.
 
-:samp:`void obstack_blank (struct obstack *{obstack_ptr}, size_t {size})`
+.. function:: void obstack_blank (struct obstack *obstack_ptr, size_t size)
+
   Add :samp:`{size}` uninitialized bytes to a growing object.
   See :ref:`growing-objects`.
 
-:samp:`void obstack_grow (struct obstack *{obstack_ptr}, void *{address}, size_t {size})`
+.. function:: void obstack_grow (struct obstack *obstack_ptr, void *address, size_t size)
+
   Add :samp:`{size}` bytes, copied from :samp:`{address}`, to a growing object.
   See :ref:`growing-objects`.
 
-:samp:`void obstack_grow0 (struct obstack *{obstack_ptr}, void *{address}, size_t {size})`
+.. function:: void obstack_grow0 (struct obstack *obstack_ptr, void *address, size_t size)
+
   Add :samp:`{size}` bytes, copied from :samp:`{address}`, to a growing object,
   and then add another byte containing a null character.  See :ref:`growing-objects`.
 
-:samp:`void obstack_1grow (struct obstack *{obstack_ptr}, char {data-char})`
+.. function:: void obstack_1grow (struct obstack *obstack_ptr, char data-char)
+
   Add one byte containing :samp:`{data-char}` to a growing object.
   See :ref:`growing-objects`.
 
-:samp:`void *obstack_finish (struct obstack *{obstack_ptr})`
+.. function:: void *obstack_finish (struct obstack *obstack_ptr)
+
   Finalize the object that is growing and return its permanent address.
   See :ref:`growing-objects`.
 
-:samp:`size_t obstack_object_size (struct obstack *{obstack_ptr})`
+.. function:: size_t obstack_object_size (struct obstack *obstack_ptr)
+
   Get the current size of the currently growing object.  See :ref:`growing-objects`.
 
-:samp:`void obstack_blank_fast (struct obstack *{obstack_ptr}, size_t {size})`
+.. function:: void obstack_blank_fast (struct obstack *obstack_ptr, size_t size)
+
   Add :samp:`{size}` uninitialized bytes to a growing object without checking
   that there is enough room.  See :ref:`extra-fast-growing`.
 
-:samp:`void obstack_1grow_fast (struct obstack *{obstack_ptr}, char {data-char})`
+.. function:: void obstack_1grow_fast (struct obstack *obstack_ptr, char data-char)
+
   Add one byte containing :samp:`{data-char}` to a growing object without
   checking that there is enough room.  See :ref:`extra-fast-growing`.
 
-:samp:`size_t obstack_room (struct obstack *{obstack_ptr})`
+.. function:: size_t obstack_room (struct obstack *obstack_ptr)
+
   Get the amount of room now available for growing the current object.
   See :ref:`extra-fast-growing`.
 
-:samp:`size_t obstack_alignment_mask (struct obstack *{obstack_ptr})`
+.. function:: size_t obstack_alignment_mask (struct obstack *obstack_ptr)
+
   The mask used for aligning the beginning of an object.  This is an
   lvalue.  See :ref:`obstacks-data-alignment`.
 
-:samp:`size_t obstack_chunk_size (struct obstack *{obstack_ptr})`
+.. function:: size_t obstack_chunk_size (struct obstack *obstack_ptr)
+
   The size for allocating chunks.  This is an lvalue.  See :ref:`obstack-chunks`.
 
-:samp:`void *obstack_base (struct obstack *{obstack_ptr})`
+.. function:: void *obstack_base (struct obstack *obstack_ptr)
+
   Tentative starting address of the currently growing object.
   See :ref:`status-of-an-obstack`.
 
-:samp:`void *obstack_next_free (struct obstack *{obstack_ptr})`
+.. function:: void *obstack_next_free (struct obstack *obstack_ptr)
+
   Address just after the end of the currently growing object.
   See :ref:`status-of-an-obstack`.
 

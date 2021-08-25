@@ -494,11 +494,13 @@ Function, Variable, and Macro Listing.
 
 .. index:: HOST_CHARSET
 
-Extension HOST_CHARSETThis macro indicates the basic character set and encoding used by the
-host: more precisely, the encoding used for character constants in
-preprocessor :samp:`#if` statements (the C "execution character set").
-It is defined by :samp:`safe-ctype.h`, and will be an integer constant
-with one of the following values:
+.. macro:: HOST_CHARSET
+
+  This macro indicates the basic character set and encoding used by the
+  host: more precisely, the encoding used for character constants in
+  preprocessor :samp:`#if` statements (the C "execution character set").
+  It is defined by :samp:`safe-ctype.h`, and will be an integer constant
+  with one of the following values:
 
 .. envvar:: HOST_CHARSET_UNKNOWN
 
@@ -559,30 +561,22 @@ with one of the following values:
 
 .. safe-ctype.c:45
 
-Extension ISALPHA  (:samp:`{c}`)
+::
 
-Extension ISALNUM  (:samp:`{c}`)
+  ISALPHA (c)
+  ISALNUM (c)
+  ISBLANK (c)
+  ISCNTRL (c)
+  ISDIGIT (c)
+  ISGRAPH (c)
+  ISLOWER (c)
+  ISPRINT (c)
+  ISPUNCT (c)
+  ISSPACE (c)
+  ISUPPER (c)
+  ISXDIGIT (c)
 
-Extension ISBLANK  (:samp:`{c}`)
-
-Extension ISCNTRL  (:samp:`{c}`)
-
-Extension ISDIGIT  (:samp:`{c}`)
-
-Extension ISGRAPH  (:samp:`{c}`)
-
-Extension ISLOWER  (:samp:`{c}`)
-
-Extension ISPRINT  (:samp:`{c}`)
-
-Extension ISPUNCT  (:samp:`{c}`)
-
-Extension ISSPACE  (:samp:`{c}`)
-
-Extension ISUPPER  (:samp:`{c}`)
-
-
-Extension ISXDIGIT (:samp:`{c}`)These twelve macros are defined by :samp:`safe-ctype.h`.  Each has the
+These twelve macros are defined by :samp:`safe-ctype.h`.  Each has the
 same meaning as the corresponding macro (with name in lowercase)
 defined by the standard header :samp:`ctype.h`.  For example,
 ``ISALPHA`` returns true for alphabetic characters and false for
@@ -618,17 +612,14 @@ those provided by :samp:`ctype.h`:
 
 .. safe-ctype.c:94
 
-Extension ISIDNUM         (:samp:`{c}`)
+::
 
-Extension ISIDST          (:samp:`{c}`)
-
-Extension IS_VSPACE       (:samp:`{c}`)
-
-Extension IS_NVSPACE      (:samp:`{c}`)
-
-Extension IS_SPACE_OR_NUL (:samp:`{c}`)
-
-Extension IS_ISOBASIC     (:samp:`{c}`)
+  ISIDNUM (c)
+  ISIDST (c)
+  IS_VSPACE (c)
+  IS_NVSPACE (c)
+  IS_SPACE_OR_NUL (c)
+  IS_ISOBASIC (c)
 
 These six macros are defined by safe-ctype.h and provide
 additional character classes which are useful when doing lexical
