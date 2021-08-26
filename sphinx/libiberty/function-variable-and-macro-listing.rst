@@ -494,7 +494,7 @@ Function, Variable, and Macro Listing.
 
 .. index:: HOST_CHARSET
 
-.. macro:: HOST_CHARSET
+.. c:macro:: HOST_CHARSET
 
   This macro indicates the basic character set and encoding used by the
   host: more precisely, the encoding used for character constants in
@@ -722,7 +722,7 @@ sets of characters:
 
 .. memmem.c:20
 
-.. function:: void* memmem (const void *haystack,   size_t haystack_len const void *needle, size_t needle_len)
+.. function:: void* memmem (const void *haystack,size_t haystack_len, const void *needle, size_t needle_len)
 
   Returns a pointer to the first occurrence of :samp:`{needle}` (length
   :samp:`{needle_len}`) in :samp:`{haystack}` (length :samp:`{haystack_len}`).
