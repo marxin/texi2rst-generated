@@ -3300,6 +3300,11 @@ section includes experimental options that may produce broken code.
 
     Specifies the maximum number of escape points tracked by modref per SSA-name.
 
+  .. gcc-param:: modref-max-adjustments
+
+    Specifies the maximum number the access range is enlarged during modref dataflow
+    analysis.
+
   .. gcc-param:: profile-func-internal-id
 
     A parameter to control whether to use function internal id in profile
