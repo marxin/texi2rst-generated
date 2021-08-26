@@ -322,16 +322,16 @@ The following attributes are supported on most targets.
   specify a priority to control the order in which constructor and
   destructor functions are run.  A constructor
   with a smaller priority number runs before a constructor with a larger
-  priority number; the opposite relationship holds for destructors.  So,
-  if you have a constructor that allocates a resource and a destructor
-  that deallocates the same resource, both functions typically have the
-  same priority.  The priorities for constructor and destructor
-  functions are the same as those specified for namespace-scope C++
-  objects (see :ref:`c++-attributes`).  However, at present, the order in which
-  constructors for C++ objects with static storage duration and functions
-  decorated with attribute :gcc-attr:`constructor` are invoked is unspecified.
-  In mixed declarations, attribute ``init_priority`` can be used to
-  impose a specific ordering.
+  priority number; the opposite relationship holds for destructors.  Note
+  that priorities 0-100 are reserved.  So, if you have a constructor that
+  allocates a resource and a destructor that deallocates the same
+  resource, both functions typically have the same priority.  The
+  priorities for constructor and destructor functions are the same as
+  those specified for namespace-scope C++ objects (see :ref:`c++-attributes`).
+  However, at present, the order in which constructors for C++ objects
+  with static storage duration and functions decorated with attribute
+  :gcc-attr:`constructor` are invoked is unspecified. In mixed declarations,
+  attribute ``init_priority`` can be used to impose a specific ordering.
 
   Using the argument forms of the :gcc-attr:`constructor` and ``destructor``
   attributes on targets where the feature is not supported is rejected with
