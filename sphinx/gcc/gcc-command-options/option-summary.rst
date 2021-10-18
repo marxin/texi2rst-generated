@@ -79,7 +79,8 @@ in the following sections.
   :option:`-Wcomma-subscript`  :option:`-Wconditionally-supported` 
   :option:`-Wno-conversion-null`  :option:`-Wctad-maybe-unsupported` 
   :option:`-Wctor-dtor-privacy`  :option:`-Wno-delete-incomplete` 
-  :option:`-Wdelete-non-virtual-dtor`  :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` 
+  :option:`-Wdelete-non-virtual-dtor`  :option:`-Wno-deprecated-array-compare` 
+  :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` 
   :option:`-Wno-deprecated-enum-enum-conversion` :option:`-Wno-deprecated-enum-float-conversion` 
   :option:`-Weffc++`  :option:`-Wno-exceptions` :option:`-Wextra-semi`  :option:`-Wno-inaccessible-base` 
   :option:`-Wno-inherited-variadic-ctor`  :option:`-Wno-init-list-lifetime` 
@@ -155,7 +156,7 @@ in the following sections.
   :option:`-Walloca`  :option:`-Walloca-larger-than`:samp:`={byte-size}` 
   :option:`-Wno-aggressive-loop-optimizations` 
   :option:`-Warith-conversion` 
-  :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}` 
+  :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` 
   :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` 
   :option:`-Wno-attribute-warning`  :option:`-Wbool-compare`  :option:`-Wbool-operation` 
   :option:`-Wno-builtin-declaration-mismatch` 
@@ -405,9 +406,9 @@ in the following sections.
   :option:`-ftree-parallelize-loops`:samp:`={n}`  :option:`-ftree-pre`  :option:`-ftree-partial-pre`  :option:`-ftree-pta` 
   :option:`-ftree-reassoc`  :option:`-ftree-scev-cprop`  :option:`-ftree-sink`  :option:`-ftree-slsr`  :option:`-ftree-sra` 
   :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
-  :option:`-ftree-ter`  :option:`-ftree-vectorize`  :option:`-ftree-vrp`  :option:`-funconstrained-commons` 
-  :option:`-funit-at-a-time`  :option:`-funroll-all-loops`  :option:`-funroll-loops` 
-  :option:`-funsafe-math-optimizations`  :option:`-funswitch-loops` 
+  :option:`-ftree-ter`  :option:`-ftree-vectorize`  :option:`-ftree-vrp`  :option:`-ftrivial-auto-var-init` 
+  :option:`-funconstrained-commons` :option:`-funit-at-a-time`  :option:`-funroll-all-loops` 
+  :option:`-funroll-loops` :option:`-funsafe-math-optimizations`  :option:`-funswitch-loops` 
   :option:`-fipa-ra`  :option:`-fvariable-expansion-in-unroller`  :option:`-fvect-cost-model`  :option:`-fvpt` 
   :option:`-fweb`  :option:`-fwhole-program`  :option:`-fwpa`  :option:`-fuse-linker-plugin` :option:`-fzero-call-used-regs` 
   :option:`--param` :samp:`{name}` = :samp:`{value}`
@@ -760,7 +761,8 @@ in the following sections.
   *eBPF Options*
 
   :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel`:samp:`={version}`
-  :option:`-mframe-limit`:samp:`={bytes}` :option:`-mxbpf`
+  :option:`-mframe-limit`:samp:`={bytes}` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`
+  :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu`:samp:`={version}`
 
   *FR30 Options*
 
@@ -1295,6 +1297,7 @@ in the following sections.
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
   :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
+  :option:`-mavx512fp16` 
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy`:samp:`={alg}` 
   :option:`-mkl` :option:`-mwidekl` 

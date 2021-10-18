@@ -107,6 +107,9 @@ GNU binutils
   host/target specific instructions for your platform for the exact
   requirements.
 
+  Note binutils 2.35 or newer is required for LTO to work correctly
+  with GNU libtool that includes doing a bootstrap with LTO enabled.
+
 gzip version 1.2.4 (or later) or bzip2 version 1.0.2 (or later)
   Necessary to uncompress GCC :command:`tar` files when source code is
   obtained via HTTPS mirror sites.

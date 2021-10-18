@@ -344,7 +344,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
 .. option:: -fmodules-ts, -fno-modules-ts
 
-  Enable support for C++20 modules (See :ref:`c++-modules`).  The
+  Enable support for C++20 modules (see :ref:`c++-modules`).  The
   :option:`-fno-modules-ts` is usually not needed, as that is the
   default.  Even though this is a C++20 feature, it is not currently
   implicitly enabled by selecting that standard version.

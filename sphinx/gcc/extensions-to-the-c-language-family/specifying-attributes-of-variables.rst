@@ -202,10 +202,10 @@ The following attributes are supported on most targets.
   The ``alloc_size`` variable attribute may be applied to the declaration
   of a pointer to a function that returns a pointer and takes at least one
   argument of an integer type.  It indicates that the returned pointer points
-  to an object whose size is given by the function argument at :samp:`{position-1}`,
+  to an object whose size is given by the function argument at :samp:`{position}`,
   or by the product of the arguments at :samp:`{position-1}` and :samp:`{position-2}`.
   Meaningful sizes are positive values less than ``PTRDIFF_MAX``.  Other
-  sizes are disagnosed when detected.  GCC uses this information to improve
+  sizes are diagnosed when detected.  GCC uses this information to improve
   the results of ``__builtin_object_size``.
 
   For instance, the following declarations
@@ -300,6 +300,23 @@ The following attributes are supported on most targets.
 
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
+
+.. gcc-attr:: unavailable
+
+  .. index:: unavailable variable attribute
+
+  The :gcc-attr:`unavailable` attribute indicates that the variable so marked
+  is not available, if it is used anywhere in the source file.  It behaves
+  in the same manner as the :gcc-attr:`deprecated` attribute except that the
+  compiler will emit an error rather than a warning.
+
+  It is expected that items marked as :gcc-attr:`deprecated` will eventually be
+  withdrawn from interfaces, and then become unavailable.  This attribute
+  allows for marking them appropriately.
+
+  The :gcc-attr:`unavailable` attribute can also be used for functions and
+  types (see :ref:`common-function-attributes`,
+  see :ref:`common-type-attributes`).
 
 .. gcc-attr:: mode (mode)
 
@@ -473,6 +490,24 @@ The following attributes are supported on most targets.
   will be placed in new, unique sections.
 
   This additional functionality requires Binutils version 2.36 or later.
+
+.. gcc-attr:: uninitialized
+
+  .. index:: uninitialized variable attribute
+
+  This attribute, attached to a variable with automatic storage, means that
+  the variable should not be automatically initialized by the compiler when
+  the option ``-ftrivial-auto-var-init`` presents.
+
+  With the option ``-ftrivial-auto-var-init``, all the automatic variables
+  that do not have explicit initializers will be initialized by the compiler.
+  These additional compiler initializations might incur run-time overhead,
+  sometimes dramatically.  This attribute can be used to mark some variables
+  to be excluded from such automatical initialization in order to reduce runtime
+  overhead.
+
+  This attribute has no effect when the option ``-ftrivial-auto-var-init``
+  does not present.
 
 .. gcc-attr:: vector_size (bytes)
 

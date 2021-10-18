@@ -173,6 +173,8 @@ These options are defined for AArch64 implementations:
   :samp:`armv8.4-a`     Armv8.4-A     :samp:`armv8.3-a`, :samp:`+flagm`, :samp:`+fp16fml`, :samp:`+dotprod`
   :samp:`armv8.5-a`     Armv8.5-A     :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
   :samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
+  :samp:`armv8.7-a`     Armv8.7-A     :samp:`armv8.6-a`, :samp:`+ls64`
+  :samp:`armv9-a`       Armv9-A       :samp:`armv8.5-a`, :samp:`+sve`, :samp:`+sve2`
   :samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
   ====================  ============  =====================================================================
   The value :samp:`native` is available on native AArch64 GNU/Linux and
@@ -215,7 +217,8 @@ These options are defined for AArch64 implementations:
   :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
   :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
   :samp:`cortex-a75.cortex-a55`, :samp:`cortex-a76.cortex-a55`,
-  :samp:`cortex-r82`, :samp:`cortex-x1`, :samp:`native`.
+  :samp:`cortex-r82`, :samp:`cortex-x1`, :samp:`cortex-x2`,
+  :samp:`cortex-a510`, :samp:`cortex-a710`, :samp:`native`.
 
   The values :samp:`cortex-a57.cortex-a53`, :samp:`cortex-a72.cortex-a53`,
   :samp:`cortex-a73.cortex-a35`, :samp:`cortex-a73.cortex-a53`,
@@ -485,6 +488,10 @@ the following and their inverses no :samp:`{feature}` :
   Advanced SIMD and floating-point instructions.  This option is enabled by
   default for :option:`-march`:samp:`=armv8.6-a`.  Use of this option with architectures
   prior to Armv8.2-A is not supported.
+
+:samp:`ls64`
+  Enable the 64-byte atomic load and store instructions for accelerators.
+  This option is enabled by default for :option:`-march`:samp:`=armv8.7-a`.
 
 :samp:`flagm`
   Enable the Flag Manipulation instructions Extension.

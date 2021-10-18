@@ -22,12 +22,14 @@ beginning with :envvar:`GOMP_` are GNU extensions.
   openmp-environment-variables/omp_max_active_levels
   openmp-environment-variables/omp_max_task_priority
   openmp-environment-variables/omp_nested
+  openmp-environment-variables/omp_num_teams
   openmp-environment-variables/omp_num_threads
   openmp-environment-variables/omp_proc_bind
   openmp-environment-variables/omp_places
   openmp-environment-variables/omp_stacksize
   openmp-environment-variables/omp_schedule
   openmp-environment-variables/omp_target_offload
+  openmp-environment-variables/omp_teams_thread_limit
   openmp-environment-variables/omp_thread_limit
   openmp-environment-variables/omp_wait_policy
   openmp-environment-variables/gomp_cpu_affinity
@@ -42,12 +44,14 @@ beginning with :envvar:`GOMP_` are GNU extensions.
   openmp-environment-variables/ompmaxactivelevels
   openmp-environment-variables/ompmaxtaskpriority
   openmp-environment-variables/ompnested
+  openmp-environment-variables/ompnumteams
   openmp-environment-variables/ompnumthreads
   openmp-environment-variables/ompprocbind
   openmp-environment-variables/ompplaces
   openmp-environment-variables/ompstacksize
   openmp-environment-variables/ompschedule
   openmp-environment-variables/omptargetoffload
+  openmp-environment-variables/ompteamsthreadlimit
   openmp-environment-variables/ompthreadlimit
   openmp-environment-variables/ompwaitpolicy
   openmp-environment-variables/gompcpuaffinity

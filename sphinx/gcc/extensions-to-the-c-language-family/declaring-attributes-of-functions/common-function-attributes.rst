@@ -401,6 +401,20 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
+.. gcc-attr:: unavailable
+
+  .. index:: unavailable function attribute
+
+  The :gcc-attr:`unavailable` attribute results in an error if the function
+  is used anywhere in the source file.  This is useful when identifying
+  functions that have been removed from a particular variation of an
+  interface.  Other than emitting an error rather than a warning, the
+  :gcc-attr:`unavailable` attribute behaves in the same manner as
+  :gcc-attr:`deprecated`.
+
+  The :gcc-attr:`unavailable` attribute can also be used for variables and
+  types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
+
 .. gcc-attr:: error ("message")
 
   .. index:: error function attribute
@@ -1184,7 +1198,10 @@ The following attributes are supported on most targets.
 
   The ``optimize`` attribute is used to specify that a function is to
   be compiled with different optimization options than specified on the
-  command line.  Valid arguments are constant non-negative integers and
+  command line.  The optimize attribute arguments of a function behave
+  behave as if appended to the command-line.
+
+  Valid arguments are constant non-negative integers and
   strings.  Each numeric argument specifies an optimization :samp:`{level}`.
   Each :samp:`{string}` argument consists of one or more comma-separated
   substrings.  Each substring that begins with the letter ``O`` refers
@@ -1406,7 +1423,8 @@ The following attributes are supported on most targets.
   Multiple target back ends implement the ``target`` attribute
   to specify that a function is to
   be compiled with different target options than specified on the
-  command line.  One or more strings can be provided as arguments.
+  command line.  The original target command-line options are ignored.
+  One or more strings can be provided as arguments.
   Each string consists of one or more comma-separated suffixes to
   the ``-m`` prefix jointly forming the name of a machine-dependent
   option.  See :ref:`submodel-options`.

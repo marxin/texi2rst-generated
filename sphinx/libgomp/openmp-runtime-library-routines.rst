@@ -28,6 +28,7 @@ three parts:
   openmp-runtime-library-routines/omp_get_level
   openmp-runtime-library-routines/omp_get_max_active_levels
   openmp-runtime-library-routines/omp_get_max_task_priority
+  openmp-runtime-library-routines/omp_get_max_teams
   openmp-runtime-library-routines/omp_get_max_threads
   openmp-runtime-library-routines/omp_get_nested
   openmp-runtime-library-routines/omp_get_num_devices
@@ -39,6 +40,7 @@ three parts:
   openmp-runtime-library-routines/omp_get_supported_active_levels
   openmp-runtime-library-routines/omp_get_team_num
   openmp-runtime-library-routines/omp_get_team_size
+  openmp-runtime-library-routines/omp_get_teams_thread_limit
   openmp-runtime-library-routines/omp_get_thread_limit
   openmp-runtime-library-routines/omp_get_thread_num
   openmp-runtime-library-routines/omp_in_parallel
@@ -48,8 +50,10 @@ three parts:
   openmp-runtime-library-routines/omp_set_dynamic
   openmp-runtime-library-routines/omp_set_max_active_levels
   openmp-runtime-library-routines/omp_set_nested
+  openmp-runtime-library-routines/omp_set_num_teams
   openmp-runtime-library-routines/omp_set_num_threads
   openmp-runtime-library-routines/omp_set_schedule
+  openmp-runtime-library-routines/omp_set_teams_thread_limit
 
   Initialize, set, test, unset and destroy simple and nested locks.
 
@@ -76,12 +80,13 @@ three parts:
   openmp-runtime-library-routines/ompgetancestorthreadnum
   openmp-runtime-library-routines/ompgetcancellation
   openmp-runtime-library-routines/ompgetdefaultdevice
+  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetdynamic
   openmp-runtime-library-routines/ompgetinitialdevice
-  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetlevel
   openmp-runtime-library-routines/ompgetmaxactivelevels
   openmp-runtime-library-routines/ompgetmaxtaskpriority
+  openmp-runtime-library-routines/ompgetmaxteams
   openmp-runtime-library-routines/ompgetmaxthreads
   openmp-runtime-library-routines/ompgetnested
   openmp-runtime-library-routines/ompgetnumdevices
@@ -93,6 +98,7 @@ three parts:
   openmp-runtime-library-routines/ompgetsupportedactivelevels
   openmp-runtime-library-routines/ompgetteamnum
   openmp-runtime-library-routines/ompgetteamsize
+  openmp-runtime-library-routines/ompgetteamsthreadlimit
   openmp-runtime-library-routines/ompgetthreadlimit
   openmp-runtime-library-routines/ompgetthreadnum
   openmp-runtime-library-routines/ompinparallel
@@ -102,8 +108,10 @@ three parts:
   openmp-runtime-library-routines/ompsetdynamic
   openmp-runtime-library-routines/ompsetmaxactivelevels
   openmp-runtime-library-routines/ompsetnested
+  openmp-runtime-library-routines/ompsetnumteams
   openmp-runtime-library-routines/ompsetnumthreads
   openmp-runtime-library-routines/ompsetschedule
+  openmp-runtime-library-routines/ompsetteamsthreadlimit
   openmp-runtime-library-routines/ompinitlock
   openmp-runtime-library-routines/ompsetlock
   openmp-runtime-library-routines/omptestlock

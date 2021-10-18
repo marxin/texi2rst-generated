@@ -44,3 +44,11 @@ This example uses the :gcc-attr:`deprecated` enumerator attribute to indicate th
   information about why the enumerator is deprecated, or what they should
   do instead.  Note that the warnings only occurs for uses.
 
+:gcc-attr:`unavailable`
+
+  .. index:: unavailable enumerator attribute
+
+  The :gcc-attr:`unavailable` attribute results in an error if the enumerator
+  is used anywhere in the source file.  In other respects it behaves in the
+  same manner as the :gcc-attr:`deprecated` attribute.
+

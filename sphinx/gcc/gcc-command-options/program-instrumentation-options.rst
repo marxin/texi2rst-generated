@@ -101,6 +101,10 @@ program analysis purposes.
     a strict ISO C dialect option is in effect, ``fork`` calls are
     detected and correctly handled without double counting.
 
+    Moreover, an object file can be recompiled multiple times
+    and the corresponding :samp:`.gcda` file merges as long as
+    the source file and the compiler options are unchanged.
+
   * For profile-directed optimizations, compile the source files again with
     the same optimization and code generation options plus
     :option:`-fbranch-probabilities` (see :ref:`optimize-options`).
@@ -446,7 +450,8 @@ program analysis purposes.
 
   Enable UndefinedBehaviorSanitizer, a fast undefined behavior detector.
   Various computations are instrumented to detect undefined behavior
-  at runtime.  Current suboptions are:
+  at runtime.  See https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html for more details.   The run-time behavior can be influenced using the
+  :envvar:`UBSAN_OPTIONS` environment variable.  Current suboptions are:
 
   .. option:: -fsanitize=shift
 
@@ -471,7 +476,7 @@ program analysis purposes.
 
   .. option:: -fsanitize=integer-divide-by-zero
 
-    Detect integer division by zero as well as ``INT_MIN / -1`` division.
+    Detect integer division by zero.
 
   .. option:: -fsanitize=unreachable
 
@@ -503,7 +508,8 @@ program analysis purposes.
 
     This option enables signed integer overflow checking.  We check that
     the result of ``+``, ``*``, and both unary and binary ``-``
-    does not overflow in the signed arithmetics.  Note, integer promotion
+    does not overflow in the signed arithmetics.  This also detects
+    ``INT_MIN / -1`` signed division.  Note, integer promotion
     rules must be taken into account.  That is, the following is not an
     overflow:
 

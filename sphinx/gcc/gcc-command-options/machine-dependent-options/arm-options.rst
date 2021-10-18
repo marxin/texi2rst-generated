@@ -126,6 +126,7 @@ These :samp:`-m` options are defined for the ARM port:
   :samp:`armv8.4-a`,
   :samp:`armv8.5-a`,
   :samp:`armv8.6-a`,
+  :samp:`armv9-a`,
   :samp:`armv7-r`,
   :samp:`armv8-r`,
   :samp:`armv6-m`, :samp:`armv6s-m`,
@@ -599,8 +600,8 @@ These :samp:`-m` options are defined for the ARM port:
   :samp:`cortex-a57`, :samp:`cortex-a72`, :samp:`cortex-a73`, :samp:`cortex-a75`,
   :samp:`cortex-a76`, :samp:`cortex-a76ae`, :samp:`cortex-a77`,
   :samp:`cortex-a78`, :samp:`cortex-a78ae`, :samp:`cortex-a78c`,
-  :samp:`ares`, :samp:`cortex-r4`, :samp:`cortex-r4f`,
-  :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52`,
+  :samp:`ares`, :samp:`cortex-r4`, :samp:`cortex-r4f`, :samp:`cortex-r5`,
+  :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52`, :samp:`cortex-r52plus`,
   :samp:`cortex-m0`, :samp:`cortex-m0plus`, :samp:`cortex-m1`, :samp:`cortex-m3`,
   :samp:`cortex-m4`, :samp:`cortex-m7`, :samp:`cortex-m23`, :samp:`cortex-m33`,
   :samp:`cortex-m35p`, :samp:`cortex-m55`, :samp:`cortex-x1`,
@@ -683,8 +684,8 @@ These :samp:`-m` options are defined for the ARM port:
 
   :samp:`+nofp.dp`
     Disables the double-precision component of the floating-point instructions
-    on :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52` and
-    :samp:`cortex-m7`.
+    on :samp:`cortex-r5`, :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52`,
+    :samp:`cortex-r52plus` and :samp:`cortex-m7`.
 
   :samp:`+nosimd`
     Disables the SIMD (but not floating-point) instructions on

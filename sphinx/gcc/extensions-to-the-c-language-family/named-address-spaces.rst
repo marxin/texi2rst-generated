@@ -14,7 +14,7 @@ As an extension, GNU C supports named address spaces as
 defined in the N1275 draft of ISO/IEC DTR 18037.  Support for named
 address spaces in GCC will evolve as the draft technical report
 changes.  Calling conventions for any target might also change.  At
-present, only the AVR, M32C, RL78, and x86 targets support
+present, only the AVR, M32C, PRU, RL78, and x86 targets support
 address spaces other than the generic address space.
 
 Address space identifiers may be used exactly like any other C type
@@ -191,6 +191,25 @@ qualified with ``__far`` are accessed using 32-bit addresses in
 order to access memory beyond the first 64 Ki bytes.  If
 ``__far`` is used with the M32CM or M32C CPU variants, it has no
 effect.
+
+PRU Named Address Spaces
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. index:: __regio_symbol PRU Named Address Spaces
+
+On the PRU target, variables qualified with ``__regio_symbol`` are
+aliases used to access the special I/O CPU registers.  They must be
+declared as ``extern`` because such variables will not be allocated in
+any data memory.  They must also be marked as ``volatile``, and can
+only be 32-bit integer types.  The only names those variables can have
+are ``__R30`` and ``__R31``, representing respectively the
+``R30`` and ``R31`` special I/O CPU registers.  Hence the following
+example is the only valid usage of ``__regio_symbol`` :
+
+.. code-block:: c++
+
+  extern volatile __regio_symbol uint32_t __R30;
+  extern volatile __regio_symbol uint32_t __R31;
 
 RL78 Named Address Spaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^

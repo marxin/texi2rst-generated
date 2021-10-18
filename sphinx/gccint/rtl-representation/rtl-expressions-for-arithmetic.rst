@@ -174,7 +174,23 @@ second operand.
   For unsigned widening multiplication, use the same idiom, but with
   ``zero_extend`` instead of ``sign_extend``.
 
+  .. index:: smul_highpart
+
+  .. index:: umul_highpart
+
+  .. index:: high-part multiplication
+
+  .. index:: multiplication high part
+
+:samp:`(smul_highpart:{m}{x}{y})` :samp:`(umul_highpart:{m}{x}{y})`
+  Represents the high-part multiplication of :samp:`{x}` and :samp:`{y}` carried
+  out in machine mode :samp:`{m}`.  ``smul_highpart`` returns the high part
+  of a signed multiplication, ``umul_highpart`` returns the high part
+  of an unsigned multiplication.
+
   .. index:: fma
+
+  .. index:: fused multiply-add
 
 :samp:`(fma:{m}{x}{y}{z})`
   Represents the ``fma``, ``fmaf``, and ``fmal`` builtin

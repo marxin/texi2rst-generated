@@ -44,6 +44,7 @@ attributes.
   specifying-attributes-of-types/common-type-attributes
   specifying-attributes-of-types/arc-type-attributes
   specifying-attributes-of-types/arm-type-attributes
+  specifying-attributes-of-types/bpf-type-attributes
   specifying-attributes-of-types/mep-type-attributes
   specifying-attributes-of-types/powerpc-type-attributes
   specifying-attributes-of-types/x86-type-attributes
@@ -291,6 +292,18 @@ The following type attributes are supported on most targets.
 
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
+
+.. gcc-attr:: unavailable
+
+  .. index:: unavailable type attribute
+
+  The :gcc-attr:`unavailable` attribute behaves in the same manner as the
+  :gcc-attr:`deprecated` one, but emits an error rather than a warning.  It is
+  used to indicate that a (perhaps previously :gcc-attr:`deprecated`) type is
+  no longer usable.
+
+  The :gcc-attr:`unavailable` attribute can also be used for functions and
+  variables (see :ref:`function-attributes`, see :ref:`variable-attributes`.)
 
 .. gcc-attr:: designated_init
 
@@ -630,6 +643,19 @@ In this code, ``C::C`` is exported from the current DLL, but the
 virtual table for ``C`` is not exported.  (You can use
 ``__attribute__`` instead of ``__declspec`` if you prefer, but
 most Symbian OS code uses ``__declspec``.)
+
+.. _bpf-type-attributes:
+
+BPF Type Attributes
+^^^^^^^^^^^^^^^^^^^
+
+.. index:: preserve_access_index type attribute, BPF
+
+BPF Compile Once - Run Everywhere (CO-RE) support. When attached to a
+``struct`` or ``union`` type definition, indicates that CO-RE
+relocation information should be generated for any access to a variable
+of that type. The behavior is equivalent to the programmer manually
+wrapping every such access with ``__builtin_preserve_access_index``.
 
 .. _mep-type-attributes:
 

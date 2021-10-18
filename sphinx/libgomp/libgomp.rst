@@ -32,6 +32,7 @@ changed to GNU Offloading and Multi Processing Runtime Library.
   :maxdepth: 2
 
   enabling-openmp
+  openmp-implementation-status
   runtime-library-routines
   environment-variables
   enabling-openacc

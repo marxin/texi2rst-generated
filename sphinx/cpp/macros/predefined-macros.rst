@@ -573,6 +573,24 @@ double underscores.
   This macro is defined if :option:`-fno-math-errno` is used, or enabled
   by another option such as :option:`-ffast-math` or by default.
 
+``__RECIPROCAL_MATH__``
+  This macro is defined if :option:`-freciprocal-math` is used, or enabled
+  by another option such as :option:`-ffast-math` or by default.
+
+``__NO_SIGNED_ZEROS__``
+  This macro is defined if :option:`-fno-signed-zeros` is used, or enabled
+  by another option such as :option:`-ffast-math` or by default.
+
+``__NO_TRAPPING_MATH__``
+  This macro is defined if :option:`-fno-trapping-math` is used.
+
+``__ASSOCIATIVE_MATH__``
+  This macro is defined if :option:`-fassociative-math` is used, or enabled
+  by another option such as :option:`-ffast-math` or by default.
+
+``__ROUNDING_MATH__``
+  This macro is defined if :option:`-frounding-math` is used.
+
 ``__GNUC_EXECUTION_CHARSET_NAME`` ``__GNUC_WIDE_EXECUTION_CHARSET_NAME``
   These macros are defined to expand to a narrow string literal of
   the name of the narrow and wide compile-time execution character

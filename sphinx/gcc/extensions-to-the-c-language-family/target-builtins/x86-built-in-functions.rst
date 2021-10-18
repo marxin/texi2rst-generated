@@ -251,6 +251,18 @@ check the target platform type.
   :samp:`znver3`
     AMD Family 19h Zen version 3.
 
+  :samp:`x86-64`
+    Baseline x86-64 microarchitecture level (as defined in x86-64 psABI).
+
+  :samp:`x86-64-v2`
+    x86-64-v2 microarchitecture level.
+
+  :samp:`x86-64-v3`
+    x86-64-v3 microarchitecture level.
+
+  :samp:`x86-64-v4`
+    x86-64-v4 microarchitecture level.
+
     Here is an example:
 
   .. code-block:: c++

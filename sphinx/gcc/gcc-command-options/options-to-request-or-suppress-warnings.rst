@@ -186,6 +186,7 @@ warn at all unless optimization is enabled.
 
   :option:`-Waddress`   
   :option:`-Warray-bounds`:samp:`=1` (only with :option:`:option:`-O2`` )  
+  :option:`-Warray-compare` 
   :option:`-Warray-parameter`:samp:`=2` (C and Objective :option:`-C` only) 
   :option:`-Wbool-compare`  
   :option:`-Wbool-operation`  
@@ -1177,9 +1178,11 @@ warn at all unless optimization is enabled.
 
   .. note::
 
-    C, C++, Objective-C and Objective-C++ only
+    C, C++, Objective-C, Objective-C++ and Fortran only
 
-  Warn if a user-supplied include directory does not exist.
+  Warn if a user-supplied include directory does not exist. This opions is disabled
+  by default for C, C++, Objective-C and Objective-C++. For Fortran, it is partially
+  enabled by default by warning for -I and -J, only.
 
 .. option:: -Wno-missing-include-dirs
 
@@ -2356,6 +2359,23 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-array-bounds
 
   Default setting; overrides :option:`-Warray-bounds`.
+
+.. option:: -Warray-compare
+
+  Warn about equality and relational comparisons between two operands of array
+  type.  This comparison was deprecated in C++20.  For example:
+
+  .. code-block:: c++
+
+    int arr1[5];
+    int arr2[5];
+    bool same = arr1 == arr2;
+
+  :option:`-Warray-compare` is enabled by :option:`-Wall`.
+
+.. option:: -Wno-array-compare
+
+  Default setting; overrides :option:`-Warray-compare`.
 
 .. option:: -Warray-parameter, -Warray-parameter=n
 
@@ -3661,17 +3681,49 @@ warn at all unless optimization is enabled.
 
 .. option:: -Waddress
 
-  Warn about suspicious uses of memory addresses. These include using
-  the address of a function in a conditional expression, such as
-  ``void func(void); if (func)``, and comparisons against the memory
-  address of a string literal, such as ``if (x == "abc")``.  Such
-  uses typically indicate a programmer error: the address of a function
-  always evaluates to true, so their use in a conditional usually
-  indicate that the programmer forgot the parentheses in a function
-  call; and comparisons against string literals result in unspecified
-  behavior and are not portable in C, so they usually indicate that the
-  programmer intended to use ``strcmp``.  This warning is enabled by
-  :option:`-Wall`.
+  Warn about suspicious uses of address expressions. These include comparing
+  the address of a function or a declared object to the null pointer constant
+  such as in
+
+  .. code-block:: c++
+
+    void f (void);
+    void g (void)
+    {
+      if (!func)   // warning: expression evaluates to false
+        abort ();
+    }
+
+  comparisons of a pointer to a string literal, such as in
+
+  .. code-block:: c++
+
+    void f (const char *x)
+    {
+      if (x == "abc")   // warning: expression evaluates to false
+        puts ("equal");
+    }
+
+  and tests of the results of pointer addition or subtraction for equality
+  to null, such as in
+
+  .. code-block:: c++
+
+    void f (const int *p, int i)
+    {
+      return p + i == NULL;
+    }
+
+  Such uses typically indicate a programmer error: the address of most
+  functions and objects necessarily evaluates to true (the exception are
+  weak symbols), so their use in a conditional might indicate missing
+  parentheses in a function call or a missing dereference in an array
+  expression.  The subset of the warning for object pointers can be
+  suppressed by casting the pointer operand to an integer type such
+  as ``inptr_t`` or ``uinptr_t``.
+  Comparisons against string literals result in unspecified behavior
+  and are not portable, and suggest the intent was to call ``strcmp``.
+  :option:`-Waddress` warning is enabled by :option:`-Wall`.
 
 .. option:: -Wno-address
 
@@ -3935,6 +3987,30 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-missing-field-initializers
 
   Default setting; overrides :option:`-Wmissing-field-initializers`.
+
+.. option:: -Wno-missing-requires
+
+  By default, the compiler warns about a concept-id appearing as a C++20 simple-requirement:
+
+  .. code-block:: c++
+
+    bool satisfied = requires { C<T> };
+
+  Here :samp:`satisfied` will be true if :samp:`C<T>` is a valid
+  expression, which it is for all T.  Presumably the user meant to write
+
+  .. code-block:: c++
+
+    bool satisfied = requires { requires C<T> };
+
+  so :samp:`satisfied` is only true if concept :samp:`C` is satisfied for
+  type :samp:`T`.
+
+  This warning can be disabled with :option:`-Wno-missing-requires`.
+
+.. option:: -Wmissing-requires
+
+  Default setting; overrides :option:`-Wno-missing-requires`.
 
 .. option:: -Wno-multichar
 
@@ -4236,6 +4312,43 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-inline
 
   Default setting; overrides :option:`-Winline`.
+
+.. option:: -Winterference-size
+
+  Warn about use of C++17 ``std::hardware_destructive_interference_size``
+  without specifying its value with :option:`--param destructive-interference-size`.
+  Also warn about questionable values for that option.
+
+  This variable is intended to be used for controlling class layout, to
+  avoid false sharing in concurrent code:
+
+  .. code-block:: c++
+
+    struct independent_fields {
+      alignas(std::hardware_destructive_interference_size) std::atomic<int> one;
+      alignas(std::hardware_destructive_interference_size) std::atomic<int> two;
+    };
+
+  Here :samp:`one` and :samp:`two` are intended to be far enough apart
+  that stores to one won't require accesses to the other to reload the
+  cache line.
+
+  By default, :option:`--param destructive-interference-size` and
+  :option:`--param constructive-interference-size` are set based on the
+  current :option:`-mtune` option, typically to the L1 cache line size
+  for the particular target CPU, sometimes to a range if tuning for a
+  generic target.  So all translation units that depend on ABI
+  compatibility for the use of these variables must be compiled with
+  the same :option:`-mtune` (or :option:`-mcpu`).
+
+  If ABI stability is important, such as if the use is in a header for a
+  library, you should probably not use the hardware interference size
+  variables at all.  Alternatively, you can force a particular value
+  with :option:`--param`.
+
+  If you are confident that your use of the variable does not affect ABI
+  outside a single build of your project, you can turn off the warning
+  with :option:`-Wno-interference-size`.
 
 .. option:: -Wint-in-bool-context
 

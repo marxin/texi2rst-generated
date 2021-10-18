@@ -17,11 +17,11 @@ flag :command:`-fopenmp` must be specified.  This enables the OpenMP directive
 arranges for automatic linking of the OpenMP runtime library 
 (Runtime Library Routines).
 
-A complete description of all OpenMP directives accepted may be found in 
-the `OpenMP Application Program Interface <https://www.openmp.org>`_ manual,
-version 4.5.
+A complete description of all OpenMP directives may be found in the
+`OpenMP Application Program Interface <https://www.openmp.org>`_ manuals.
+See also OpenMP Implementation Status.
 
 .. -
-   OpenMP Runtime Library Routines
+   OpenMP Implementation Status
    -
 
