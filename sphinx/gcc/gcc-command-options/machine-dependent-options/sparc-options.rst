@@ -123,10 +123,11 @@ These :samp:`-m` options are supported on the SPARC:
   Set the instruction set, register set, and instruction scheduling parameters
   for machine type :samp:`{cpu_type}`.  Supported values for :samp:`{cpu_type}` are
   :samp:`v7`, :samp:`cypress`, :samp:`v8`, :samp:`supersparc`, :samp:`hypersparc`,
-  :samp:`leon`, :samp:`leon3`, :samp:`leon3v7`, :samp:`sparclite`, :samp:`f930`,
-  :samp:`f934`, :samp:`sparclite86x`, :samp:`sparclet`, :samp:`tsc701`, :samp:`v9`,
-  :samp:`ultrasparc`, :samp:`ultrasparc3`, :samp:`niagara`, :samp:`niagara2`,
-  :samp:`niagara3`, :samp:`niagara4`, :samp:`niagara7` and :samp:`m8`.
+  :samp:`leon`, :samp:`leon3`, :samp:`leon3v7`, :samp:`leon5`, :samp:`sparclite`,
+  :samp:`f930`, :samp:`f934`, :samp:`sparclite86x`, :samp:`sparclet`, :samp:`tsc701`,
+  :samp:`v9`, :samp:`ultrasparc`, :samp:`ultrasparc3`, :samp:`niagara`,
+  :samp:`niagara2`, :samp:`niagara3`, :samp:`niagara4`, :samp:`niagara7` and
+  :samp:`m8`.
 
   Native Solaris and GNU/Linux toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
@@ -144,7 +145,7 @@ These :samp:`-m` options are supported on the SPARC:
     cypress, leon3v7
 
   v8
-    supersparc, hypersparc, leon, leon3
+    supersparc, hypersparc, leon, leon3, leon5
 
   sparclite
     f930, f934, sparclite86x
@@ -210,7 +211,7 @@ These :samp:`-m` options are supported on the SPARC:
   :option:`-mtune`:samp:`={cpu_type}`, but the only useful values are those
   that select a particular CPU implementation.  Those are
   :samp:`cypress`, :samp:`supersparc`, :samp:`hypersparc`, :samp:`leon`,
-  :samp:`leon3`, :samp:`leon3v7`, :samp:`f930`, :samp:`f934`,
+  :samp:`leon3`, :samp:`leon3v7`, :samp:`leon5`, :samp:`f930`, :samp:`f934`,
   :samp:`sparclite86x`, :samp:`tsc701`, :samp:`ultrasparc`,
   :samp:`ultrasparc3`, :samp:`niagara`, :samp:`niagara2`, :samp:`niagara3`,
   :samp:`niagara4`, :samp:`niagara7` and :samp:`m8`.  With native Solaris

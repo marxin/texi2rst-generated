@@ -155,7 +155,8 @@ it.
   not exist everywhere.  Moreover, it only allows *trapping*
   instructions to throw exceptions, i.e. memory references or floating-point
   instructions.  It does not allow exceptions to be thrown from
-  arbitrary signal handlers such as ``SIGALRM``.
+  arbitrary signal handlers such as ``SIGALRM``.  This enables
+  :option:`-fexceptions`.
 
 .. option:: -fdelete-dead-exceptions
 

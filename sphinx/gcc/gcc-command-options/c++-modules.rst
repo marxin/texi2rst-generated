@@ -65,7 +65,7 @@ version selected, although in pre-C++20 versions, it is of course an
 extension.
 
 No new source file suffixes are required or supported.  If you wish to
-use a non-standard suffix (See :ref:`overall-options`), you also need
+use a non-standard suffix (see :ref:`overall-options`), you also need
 to provide a :option:`-x c++` option too.Some users like to
 distinguish module interface files with a new suffix, such as naming
 the source ``module.cppm``, which involves
@@ -127,8 +127,8 @@ to be resolved at the end of compilation.  Without this, imported
 macros are only resolved when expanded or (re)defined.  This option
 detects conflicting import definitions for all macros.
 
-See :ref:`c++-module-mapper` for details of the :option:`-fmodule-mapper`
-family of options.
+For details of the :option:`-fmodule-mapper` family of options,
+see :ref:`c++-module-mapper`.
 
 .. toctree::
   :maxdepth: 2
@@ -349,8 +349,8 @@ of this output may change.
 The timestamp is the same value as that
 provided by the ``__DATE__`` & ``__TIME__`` macros, and may be
 explicitly specified with the environment variable
-``SOURCE_DATE_EPOCH``.  See :ref:`environment-variables` for further
-details.
+``SOURCE_DATE_EPOCH``.  For further details
+see :ref:`environment-variables`.
 
 A set of related CMIs may be copied, provided the relative pathnames
 are preserved.

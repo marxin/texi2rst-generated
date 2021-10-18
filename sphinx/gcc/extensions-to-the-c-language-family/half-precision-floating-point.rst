@@ -12,10 +12,15 @@ Half-Precision Floating Point
 
 .. index:: __fp16 data type
 
+.. index:: __Float16 data type
+
 On ARM and AArch64 targets, GCC supports half-precision (16-bit) floating
 point via the ``__fp16`` type defined in the ARM C Language Extensions.
 On ARM systems, you must enable this type explicitly with the
 :option:`-mfp16-format` command-line option in order to use it.
+On x86 targets with SSE2 enabled, GCC supports half-precision (16-bit)
+floating point via the ``_Float16`` type. For C++, x86 provides a builtin
+type named ``_Float16`` which contains same data format as C.
 
 ARM targets support two incompatible representations for half-precision
 floating-point values.  You must choose one of the representations and
@@ -58,4 +63,19 @@ calls.
 
 It is recommended that portable code use the ``_Float16`` type defined
 by ISO/IEC TS 18661-3:2015.  See :ref:`floating-types`.
+
+On x86 targets with SSE2 enabled, without :option:`-mavx512fp16`,
+all operations will be emulated by software emulation and the ``float``
+instructions. The default behavior for ``FLT_EVAL_METHOD`` is to keep the
+intermediate result of the operation as 32-bit precision. This may lead to
+inconsistent behavior between software emulation and AVX512-FP16 instructions.
+Using :option:`-fexcess-precision`:samp:`=16` will force round back after each operation.
+
+Using :option:`-mavx512fp16` will generate AVX512-FP16 instructions instead of
+software emulation. The default behavior of ``FLT_EVAL_METHOD`` is to round
+after each operation. The same is true with :option:`-fexcess-precision`:samp:`=standard`
+and :option:`-mfpmath`:samp:`=sse`. If there is no :option:`-mfpmath`:samp:`=sse`,
+:option:`-fexcess-precision`:samp:`=standard` alone does the same thing as before,
+It is useful for code that does not have ``_Float16`` and runs on the x87
+FPU.
 

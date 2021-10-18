@@ -37,8 +37,51 @@ eBPF Options
 
   Generate code for a little-endian target.  This is the default.
 
-.. option:: -mxbpf
+.. option:: -mjmpext
 
+  Enable generation of extra conditional-branch instructions.
+  Enabled for CPU v2 and above.
+
+.. option:: -mjmp32
+
+  Enable 32-bit jump instructions. Enabled for CPU v3 and above.
+
+.. option:: -malu32
+
+  Enable 32-bit ALU instructions. Enabled for CPU v3 and above.
+
+.. option:: -mcpu=version
+
+  This specifies which version of the eBPF ISA to target. Newer versions
+  may not be supported by all kernels. The default is :samp:`v3`.
+
+  Supported values for :samp:`{version}` are:
+
+  :samp:`v1`
+    The first stable eBPF ISA with no special features or extensions.
+
+  :samp:`v2`
+    Supports the jump extensions, as in :option:`-mjmpext`.
+
+  :samp:`v3`
+    All features of v2, plus:
+
+    * 32-bit jump operations, as in :option:`-mjmp32`
+
+    * 32-bit ALU operations, as in :option:`-malu32`
+
+.. option:: -mco-re
+
+  Enable BPF Compile Once - Run Everywhere (CO-RE) support. Requires and
+  is implied by :option:`-gbtf`.
+
+.. option:: -mno-co-re
+
+  Disable BPF Compile Once - Run Everywhere (CO-RE) support. BPF CO-RE
+  support is enabled by default when generating BTF debug information for
+  the BPF target.
+
+.. option:: -mxbpf
   Generate code for an expanded version of BPF, which relaxes some of
   the restrictions imposed by the BPF architecture:
 

@@ -154,9 +154,12 @@ See :ref:`overall-options`, for examples.
   :option:`-fstrict-aliasing` 
   :option:`-fthread-jumps` 
   :option:`-ftree-builtin-call-dce` 
+  :option:`-ftree-loop-vectorize` 
   :option:`-ftree-pre` 
+  :option:`-ftree-slp-vectorize` 
   :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
-  :option:`-ftree-vrp`
+  :option:`-ftree-vrp` 
+  :option:`-fvect-cost-model`:samp:`=very-cheap`
   Please note the warning under :option:`-fgcse` about
   invoking :option:`-O2` on programs that use computed gotos.
 
@@ -176,11 +179,8 @@ See :ref:`overall-options`, for examples.
   :option:`-fsplit-loops` 
   :option:`-fsplit-paths` 
   :option:`-ftree-loop-distribution` 
-  :option:`-ftree-loop-vectorize` 
   :option:`-ftree-partial-pre` 
-  :option:`-ftree-slp-vectorize` 
   :option:`-funswitch-loops` 
-  :option:`-fvect-cost-model` 
   :option:`-fvect-cost-model`:samp:`=dynamic` 
   :option:`-fversion-loops-for-strides`
 
@@ -538,7 +538,7 @@ optimizations to be performed is desired.
   second branch or a point immediately following it, depending on whether
   the condition is known to be true or false.
 
-  Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
+  Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
 .. option:: -fsplit-wide-types
 
@@ -1656,6 +1656,36 @@ optimizations to be performed is desired.
   Perform basic block vectorization on trees. This flag is enabled by default at
   :option:`-O3` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
+
+.. option:: -ftrivial-auto-var-init=choice
+
+  Initialize automatic variables with either a pattern or with zeroes to increase
+  the security and predictability of a program by preventing uninitialized memory
+  disclosure and use.
+  GCC still considers an automatic variable that doesn't have an explicit
+  initializer as uninitialized, -Wuninitialized will still report warning messages
+  on such automatic variables.
+  With this option, GCC will also initialize any padding of automatic variables
+  that have structure or union types to zeroes.
+
+  The three values of :samp:`{choice}` are:
+
+  * :samp:`uninitialized` doesn't initialize any automatic variables.
+    This is C and C++'s default.
+
+  * :samp:`pattern` Initialize automatic variables with values which will likely
+    transform logic bugs into crashes down the line, are easily recognized in a
+    crash dump and without being values that programmers can rely on for useful
+    program semantics.
+    The current value is byte-repeatable pattern with byte "0xFE".
+    The values used for pattern initialization might be changed in the future.
+
+  * :samp:`zero` Initialize automatic variables with zeroes.
+
+  The default is :samp:`uninitialized`.
+
+  You can control this behavior for a specific variable by using the variable
+  attribute :gcc-attr:`uninitialized` (see :ref:`variable-attributes`).
 
 .. option:: -fvect-cost-model=model
 
@@ -3836,6 +3866,36 @@ section includes experimental options that may produce broken code.
 
     This setting is only useful for strides that are known and constant.
 
+  .. gcc-param:: destructive-interference-size
+
+  .. gcc-param:: constructive-interference-size
+
+    The values for the C++17 variables
+    ``std::hardware_destructive_interference_size`` and
+    ``std::hardware_constructive_interference_size``.  The destructive
+    interference size is the minimum recommended offset between two
+    independent concurrently-accessed objects; the constructive
+    interference size is the maximum recommended size of contiguous memory
+    accessed together.  Typically both will be the size of an L1 cache
+    line for the target, in bytes.  For a generic target covering a range of L1
+    cache line sizes, typically the constructive interference size will be
+    the small end of the range and the destructive size will be the large
+    end.
+
+    The destructive interference size is intended to be used for layout,
+    and thus has ABI impact.  The default value is not expected to be
+    stable, and on some targets varies with :option:`-mtune`, so use of
+    this variable in a context where ABI stability is important, such as
+    the public interface of a library, is strongly discouraged; if it is
+    used in that context, users can stabilize the value using this
+    option.
+
+    The constructive interference size is less sensitive, as it is
+    typically only used in a :samp:`static_assert` to make sure that a type
+    fits within a cache line.
+
+    See also :option:`-Winterference-size`.
+
   .. gcc-param:: loop-interchange-max-num-stmts
 
     The maximum number of stmts in a loop to be interchanged.
@@ -4066,6 +4126,11 @@ section includes experimental options that may produce broken code.
 
     Recursive cloning only when the probability of call being executed exceeds
     the parameter.
+
+  .. gcc-param:: ipa-cp-recursive-freq-factor
+
+    The number of times interprocedural copy propagation expects recursive
+    functions to call themselves.
 
   .. gcc-param:: ipa-cp-recursion-penalty
 
@@ -4325,16 +4390,6 @@ section includes experimental options that may produce broken code.
     Maximum number of instructions to copy when duplicating blocks on a
     finite state automaton jump thread path.
 
-  .. gcc-param:: max-fsm-thread-length
-
-    Maximum number of basic blocks on a finite state automaton jump thread
-    path.
-
-  .. gcc-param:: max-fsm-thread-paths
-
-    Maximum number of new jump thread paths to create for a finite state
-    automaton.
-
   .. gcc-param:: parloops-chunk-size
 
     Chunk size of omp schedule for loops parallelized by parloops.
@@ -4375,6 +4430,10 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: evrp-mode
 
     Specifies the mode Early VRP should operate in.
+
+  .. gcc-param:: evrp-switch-limit
+
+    Specifies the maximum number of switch cases before EVRP ignores a switch.
 
   .. gcc-param:: unroll-jam-min-percent
 
@@ -4523,11 +4582,6 @@ section includes experimental options that may produce broken code.
 
     Scale factor to apply to the number of statements in a threading path
     when comparing to the number of (scaled) blocks.
-
-  .. gcc-param:: fsm-maximum-phi-arguments
-
-    Maximum number of arguments a PHI may have before the FSM threader
-    will not try to thread through its block.
 
   .. gcc-param:: uninit-control-dep-attempts
 

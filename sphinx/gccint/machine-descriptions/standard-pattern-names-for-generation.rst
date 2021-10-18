@@ -1189,12 +1189,14 @@ mulhisi3
 smulm3_highpart
   Perform a signed multiplication of operands 1 and 2, which have mode
   :samp:`{m}`, and store the most significant half of the product in operand 0.
-  The least significant half of the product is discarded.
+  The least significant half of the product is discarded.  This may be
+  represented in RTL using a ``smul_highpart`` RTX expression.
 
   .. index:: umulm3_highpart instruction pattern
 
 umulm3_highpart
-  Similar, but the multiplication is unsigned.
+  Similar, but the multiplication is unsigned.  This may be represented
+  in RTL using an ``umul_highpart`` RTX expression.
 
   .. index:: maddmn4 instruction pattern
 
@@ -2202,6 +2204,14 @@ strlenm
   operand 2 is the character to search for (normally zero),
   and operand 3 is a constant describing the known alignment
   of the beginning of the string.
+
+  .. index:: rawmemchrm instruction pattern
+
+rawmemchrm
+  Scan memory referred to by operand 1 for the first occurrence of operand 2.
+  Operand 1 is a ``mem`` and operand 2 a ``const_int`` of mode :samp:`{m}`.
+  Operand 0 is the result, i.e., a pointer to the first occurrence of operand 2
+  in the memory block given by operand 1.
 
   .. index:: floatmn2 instruction pattern
 

@@ -74,6 +74,8 @@ The syntax is as follows:
   (define_c_enum "name" [
     value0
     value1
+    (value32 32)
+    value33
     ...
     valuen
   ])
@@ -86,6 +88,8 @@ in :samp:`insn-constants.h`:
   enum name {
     value0 = 0,
     value1 = 1,
+    value32 = 32,
+    value33 = 33,
     ...
     valuen = n
   };

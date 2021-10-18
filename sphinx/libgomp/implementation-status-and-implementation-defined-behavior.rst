@@ -182,7 +182,7 @@ acc_api_info.async_handle
        'libgomp.oacc-c-c++-common/acc_prof-kernels-1.c',
        'libgomp.oacc-c-c++-common/acc_prof-parallel-1.c'.
 
-    Whan a compute construct triggers implicit
+    When a compute construct triggers implicit
     ``acc_ev_device_init_start`` and ``acc_ev_device_init_end``
     events, they currently aren't *nested within* the corresponding
     ``acc_ev_compute_construct_start`` and

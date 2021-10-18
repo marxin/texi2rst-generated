@@ -49,8 +49,8 @@ contact their makers.
 
   * The `Cygwin <https://sourceware.org/cygwin/>`_ project;
 
-  * The `MinGW <http://www.mingw.org/>`_ and
-    `mingw-w64 <http://mingw-w64.org/doku.php>`_ projects.
+  * The `MinGW <https://osdn.net/projects/mingw/>`_ and
+    `mingw-w64 <http://www.mingw-w64.org/>`_ projects.
 
 * `OpenPKG <http://www.openpkg.org/>`_ offers binaries for quite a
   number of platforms.

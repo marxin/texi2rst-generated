@@ -267,10 +267,11 @@ objects behave unspecified when being assigned.  For example:
 
   struct Base{
     char *name;
-    Base(char *n) : name(strdup(n)){}
+    Base(const char *n) : name(strdup(n)){}
     Base& operator= (const Base& other){
      free (name);
      name = strdup (other.name);
+     return *this;
     }
   };
 
@@ -302,8 +303,8 @@ inside :samp:`func` in the example).
 G++ implements the 'intuitive' algorithm for copy-assignment: assign all
 direct bases, then assign all members.  In that algorithm, the virtual
 base subobject can be encountered more than once.  In the example, copying
-proceeds in the following order: :samp:`val`, :samp:`name` (via
-``strdup``), :samp:`bval`, and :samp:`name` again.
+proceeds in the following order: :samp:`name` (via ``strdup``),
+:samp:`val`, :samp:`name` again, and :samp:`bval`.
 
 If application code relies on copy-assignment, a user-defined
 copy-assignment operator removes any uncertainties.  With such an

@@ -25,10 +25,10 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetdynamic
   openmp-runtime-library-routines/ompgetinitialdevice
-  openmp-runtime-library-routines/ompgetdevicenum
   openmp-runtime-library-routines/ompgetlevel
   openmp-runtime-library-routines/ompgetmaxactivelevels
   openmp-runtime-library-routines/ompgetmaxtaskpriority
+  openmp-runtime-library-routines/ompgetmaxteams
   openmp-runtime-library-routines/ompgetmaxthreads
   openmp-runtime-library-routines/ompgetnested
   openmp-runtime-library-routines/ompgetnumdevices
@@ -40,6 +40,7 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompgetsupportedactivelevels
   openmp-runtime-library-routines/ompgetteamnum
   openmp-runtime-library-routines/ompgetteamsize
+  openmp-runtime-library-routines/ompgetteamsthreadlimit
   openmp-runtime-library-routines/ompgetthreadlimit
   openmp-runtime-library-routines/ompgetthreadnum
   openmp-runtime-library-routines/ompinparallel
@@ -49,6 +50,7 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompsetdynamic
   openmp-runtime-library-routines/ompsetmaxactivelevels
   openmp-runtime-library-routines/ompsetnested
+  openmp-runtime-library-routines/ompsetnumteams
   openmp-runtime-library-routines/ompsetnumthreads
   openmp-runtime-library-routines/ompsetschedule
 

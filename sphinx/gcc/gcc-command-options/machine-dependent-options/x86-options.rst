@@ -784,7 +784,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   as embedded systems and operating system kernels, may want to reduce the
   preferred alignment to :option:`-mpreferred-stack-boundary`:samp:`=2`.
 
-.. option:: -mmmx, -msse, -msse2, -msse3, -mssse3, -msse4, -msse4a, -msse4.1, -msse4.2, -mavx, -mavx2, -mavx512f, -mavx512pf, -mavx512er, -mavx512cd, -mavx512vl, -mavx512bw, -mavx512dq, -mavx512ifma, -mavx512vbmi, -msha, -maes, -mpclmul, -mclflushopt, -mclwb, -mfsgsbase, -mptwrite, -mrdrnd, -mf16c, -mfma, -mpconfig, -mwbnoinvd, -mfma4, -mprfchw, -mrdpid, -mprefetchwt1, -mrdseed, -msgx, -mxop, -mlwp, -m3dnow, -m3dnowa, -mpopcnt, -mabm, -madx, -mbmi, -mbmi2, -mlzcnt, -mfxsr, -mxsave, -mxsaveopt, -mxsavec, -mxsaves, -mrtm, -mhle, -mtbm, -mmwaitx, -mclzero, -mpku, -mavx512vbmi2, -mavx512bf16, -mgfni, -mvaes, -mwaitpkg, -mvpclmulqdq, -mavx512bitalg, -mmovdiri, -mmovdir64b, -menqcmd, -muintr, -mtsxldtrk, -mavx512vpopcntdq, -mavx512vp2intersect, -mavx5124fmaps, -mavx512vnni, -mavxvnni, -mavx5124vnniw, -mcldemote, -mserialize, -mamx-tile, -mamx-int8, -mamx-bf16, -mhreset, -mkl, -mwidekl
+.. option:: -mmmx, -msse, -msse2, -msse3, -mssse3, -msse4, -msse4a, -msse4.1, -msse4.2, -mavx, -mavx2, -mavx512f, -mavx512pf, -mavx512er, -mavx512cd, -mavx512vl, -mavx512bw, -mavx512dq, -mavx512ifma, -mavx512vbmi, -msha, -maes, -mpclmul, -mclflushopt, -mclwb, -mfsgsbase, -mptwrite, -mrdrnd, -mf16c, -mfma, -mpconfig, -mwbnoinvd, -mfma4, -mprfchw, -mrdpid, -mprefetchwt1, -mrdseed, -msgx, -mxop, -mlwp, -m3dnow, -m3dnowa, -mpopcnt, -mabm, -madx, -mbmi, -mbmi2, -mlzcnt, -mfxsr, -mxsave, -mxsaveopt, -mxsavec, -mxsaves, -mrtm, -mhle, -mtbm, -mmwaitx, -mclzero, -mpku, -mavx512vbmi2, -mavx512bf16, -mavx512fp16, -mgfni, -mvaes, -mwaitpkg, -mvpclmulqdq, -mavx512bitalg, -mmovdiri, -mmovdir64b, -menqcmd, -muintr, -mtsxldtrk, -mavx512vpopcntdq, -mavx512vp2intersect, -mavx5124fmaps, -mavx512vnni, -mavxvnni, -mavx5124vnniw, -mcldemote, -mserialize, -mamx-tile, -mamx-int8, -mamx-bf16, -mhreset, -mkl, -mwidekl
 
   These switches enable the use of instructions in the MMX, SSE,
   SSE2, SSE3, SSSE3, SSE4, SSE4A, SSE4.1, SSE4.2, AVX, AVX2, AVX512F, AVX512PF,
@@ -795,9 +795,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   XSAVEOPT, XSAVEC, XSAVES, RTM, HLE, TBM, MWAITX, CLZERO, PKU, AVX512VBMI2,
   GFNI, VAES, WAITPKG, VPCLMULQDQ, AVX512BITALG, MOVDIRI, MOVDIR64B, AVX512BF16,
   ENQCMD, AVX512VPOPCNTDQ, AVX5124FMAPS, AVX512VNNI, AVX5124VNNIW, SERIALIZE,
-  UINTR, HRESET, AMXTILE, AMXINT8, AMXBF16, KL, WIDEKL, AVXVNNI or CLDEMOTE
-  extended instruction sets. Each has a corresponding :option:`-mno-` option to
-  disable use of these instructions.
+  UINTR, HRESET, AMXTILE, AMXINT8, AMXBF16, KL, WIDEKL, AVXVNNI, AVX512FP16
+  or CLDEMOTE extended instruction sets. Each has a corresponding
+  :option:`-mno-` option to disable use of these instructions.
 
   These extensions are also available as built-in functions: see
   x86 Built-in Functions, for details of the functions enabled and

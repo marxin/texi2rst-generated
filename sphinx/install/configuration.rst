@@ -512,12 +512,6 @@ corresponding :option:`--without` option.
   Same as #with-as:option:`--with-as`
   but for the debug linker (only used on Darwin platforms so far).
 
-.. option:: --with-stabs
-
-  Specify that stabs debugging
-  information should be used instead of whatever format the host normally
-  uses.  Normally GCC uses the same debug format as the host system.
-
 .. option:: --with-tls=dialect
 
   Specify the default TLS dialect, for systems were there is a choice.
