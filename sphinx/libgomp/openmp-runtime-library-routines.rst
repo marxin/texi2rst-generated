@@ -53,6 +53,7 @@ linkage, and do not throw exceptions.
   openmp-runtime-library-routines/ompsetnumteams
   openmp-runtime-library-routines/ompsetnumthreads
   openmp-runtime-library-routines/ompsetschedule
+  openmp-runtime-library-routines/ompsetteamsthreadlimit
 
 Initialize, set, test, unset and destroy simple and nested locks.
 

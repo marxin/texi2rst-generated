@@ -11,6 +11,7 @@ Welcome to libgomp documentation!
   copyright
   introduction
   enabling-openmp
+  openmp-implementation-status
   openmp-runtime-library-routines
   openmp-environment-variables
   enabling-openacc
