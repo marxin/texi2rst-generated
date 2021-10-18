@@ -112,6 +112,9 @@ needs_sphinx = '1.7'
 # Use xelatex by default
 latex_engine = 'xelatex'
 
+# Remove once xindy works in an openSUSE container
+latex_use_xindy = False
+
 texinfo_elements = { 'preamble': """
 @definfoenclose strong,*,*
 @definfoenclose emph,','
