@@ -218,14 +218,14 @@ accepts:
   Do not recognize ``asm``, ``inline`` or ``typeof`` as a
   keyword, so that code can use these words as identifiers.  You can use
   the keywords ``__asm__``, ``__inline__`` and ``__typeof__``
-  instead.  :option:`-ansi` implies :option:`-fno-asm`.
+  instead.  In C, :option:`-ansi` implies :option:`-fno-asm`.
 
-  In C++, this switch only affects the ``typeof`` keyword, since
-  ``asm`` and ``inline`` are standard keywords.  You may want to
-  use the :option:`-fno-gnu-keywords` flag instead, which has the same
-  effect.  In C99 mode (:option:`-std`:samp:`=c99` or :option:`-std`:samp:`=gnu99`), this
-  switch only affects the ``asm`` and ``typeof`` keywords, since
-  ``inline`` is a standard keyword in ISO C99.
+  In C++, ``inline`` is a standard keyword and is not affected by
+  this switch.  You may want to use the :option:`-fno-gnu-keywords` flag
+  instead, which disables ``typeof`` but not ``asm`` and
+  ``inline``.  In C99 mode (:option:`-std`:samp:`=c99` or :option:`-std`:samp:`=gnu99`),
+  this switch only affects the ``asm`` and ``typeof`` keywords,
+  since ``inline`` is a standard keyword in ISO C99.
 
 .. option:: -fasm
 

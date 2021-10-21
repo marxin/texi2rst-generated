@@ -80,7 +80,7 @@ Other new OpenMP 5.1 features
 =============================================================  ======  ========
 Description                                                    Status  Comments
 =============================================================  ======  ========
-Support of strictly structured blocks in Fortran               N
+Support of strictly structured blocks in Fortran               Y
 Support of structured block sequences in C/C++                 Y
 ``unconstrained`` and ``reproducible`` modifiers on ``order``  Y
       clause

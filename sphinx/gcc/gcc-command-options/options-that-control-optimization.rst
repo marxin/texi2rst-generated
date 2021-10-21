@@ -4375,6 +4375,10 @@ section includes experimental options that may produce broken code.
     Maximum number of instructions to copy when duplicating blocks on a
     finite state automaton jump thread path.
 
+  .. gcc-param:: max-fsm-thread-length
+
+    Maximum number of basic blocks on a jump thread path.
+
   .. gcc-param:: parloops-chunk-size
 
     Chunk size of omp schedule for loops parallelized by parloops.
