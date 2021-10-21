@@ -132,7 +132,7 @@ Output of Data
 
   You need not define this macro if it would do nothing.
 
-.. c:macro:: ASM_OUTPUT_POOL_EPILOGUE (file funname, fundecl size)
+.. c:function:: ASM_OUTPUT_POOL_EPILOGUE (file funname, fundecl size)
 
   A C statement to output assembler commands to at the end of the constant
   pool for a function.  :samp:`{funname}` is a string giving the name of the

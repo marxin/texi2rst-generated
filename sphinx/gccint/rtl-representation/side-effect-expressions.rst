@@ -323,8 +323,8 @@ the operands of these.
   parent instruction.
 
   These expression codes appear in place of a side effect, as the body of
-an insn, though strictly speaking they do not always describe side
-effects as such:
+  an insn, though strictly speaking they do not always describe side
+  effects as such:
 
 .. index:: asm_input
 

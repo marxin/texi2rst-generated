@@ -1186,7 +1186,7 @@ Here are several miscellaneous parameters.
   systems, this is used for Framework includes, which have semantics
   that are different from :option:`-I`.
 
-.. c:macro:: bool TARGET_USE_LOCAL_THUNK_ALIAS_P (tree fndecl)
+.. function:: bool TARGET_USE_LOCAL_THUNK_ALIAS_P (tree fndecl)
 
   This target macro returns ``true`` if it is safe to use a local alias
   for a virtual function :samp:`{fndecl}` when constructing thunks,

@@ -43,7 +43,7 @@ Specify how to build the test
     Produce and run an executable file, which is expected to return
     an exit code of 0.
 
-    The default is ``compile``.  That can be overridden for a set of
+  The default is ``compile``.  That can be overridden for a set of
   tests by redefining ``dg-do-what-default`` within the ``.exp``
   file for those tests.
 

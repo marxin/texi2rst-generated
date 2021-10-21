@@ -19,6 +19,5 @@ OMP_NUM_TEAMS -- Specifies the number of teams to use by teams region
 :samp:`{See also}:`
   omp_set_num_teams
 
-:samp:`{Reference}: `
+:samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 6.23
-
