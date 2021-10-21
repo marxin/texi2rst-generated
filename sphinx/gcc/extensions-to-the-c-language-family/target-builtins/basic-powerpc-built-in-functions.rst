@@ -117,7 +117,7 @@ Basic PowerPC Built-in Functions Available on all Configurations
   ``__builtin_cpu_supports`` built-in function is fully supported.
 
   If GCC was configured to use a GLIBC before 2.23, the built-in
-  function ``__builtin_cpu_suports`` always returns a 0 and the
+  function ``__builtin_cpu_supports`` always returns a 0 and the
   compiler issues a warning.
 
   The following features can be

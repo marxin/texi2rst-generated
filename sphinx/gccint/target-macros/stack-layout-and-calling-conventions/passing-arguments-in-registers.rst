@@ -28,12 +28,6 @@ the stack.
   register in which to pass the argument, or zero to pass the argument
   on the stack.
 
-  The return value can be a ``const_int`` which means argument is
-  passed in a target specific slot with specified number.  Target hooks
-  should be used to store or load argument in such case.  See
-  ``TARGET_STORE_BOUNDS_FOR_ARG`` and ``TARGET_LOAD_BOUNDS_FOR_ARG``
-  for more information.
-
   The value of the expression can also be a ``parallel`` RTX.  This is
   used when an argument is passed in multiple locations.  The mode of the
   ``parallel`` should be the mode of the entire argument.  The

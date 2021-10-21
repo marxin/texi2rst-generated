@@ -47,10 +47,12 @@ A basic ``asm`` statement has the following syntax:
 
   asm asm-qualifiers ( AssemblerInstructions )
 
-The ``asm`` keyword is a GNU extension.
-When writing code that can be compiled with :option:`-ansi` and the
-various :option:`-std` options, use ``__asm__`` instead of 
-``asm`` (see :ref:`alternate-keywords`).
+For the C language, the ``asm`` keyword is a GNU extension.
+When writing C code that can be compiled with :option:`-ansi` and the
+:option:`-std` options that select C dialects without GNU extensions, use
+``__asm__`` instead of ``asm`` (see :ref:`alternate-keywords`).  For
+the C++ language, ``asm`` is a standard keyword, but ``__asm__``
+can be used for code compiled with :option:`-fno-asm`.
 
 Qualifiers
 ^^^^^^^^^^
