@@ -730,7 +730,7 @@ argument.
   Add :samp:`{size}` bytes, copied from :samp:`{address}`, to a growing object,
   and then add another byte containing a null character.  See :ref:`growing-objects`.
 
-.. function:: void obstack_1grow (struct obstack *obstack_ptr, char data-char)
+.. function:: void obstack_1grow (struct obstack *obstack_ptr, char data_char)
 
   Add one byte containing :samp:`{data-char}` to a growing object.
   See :ref:`growing-objects`.
@@ -749,7 +749,7 @@ argument.
   Add :samp:`{size}` uninitialized bytes to a growing object without checking
   that there is enough room.  See :ref:`extra-fast-growing`.
 
-.. function:: void obstack_1grow_fast (struct obstack *obstack_ptr, char data-char)
+.. function:: void obstack_1grow_fast (struct obstack *obstack_ptr, char data_char)
 
   Add one byte containing :samp:`{data-char}` to a growing object without
   checking that there is enough room.  See :ref:`extra-fast-growing`.
