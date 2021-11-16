@@ -577,6 +577,38 @@ honor these options.
   behavior and to the GNU style guide.  Some utilities may perform better with an
   origin of 0; any non-negative value may be specified.
 
+.. option:: -fdiagnostics-escape-format=FORMAT
+
+  When GCC prints pertinent source lines for a diagnostic it normally attempts
+  to print the source bytes directly.  However, some diagnostics relate to encoding
+  issues in the source file, such as malformed UTF-8, or issues with Unicode
+  normalization.  These diagnostics are flagged so that GCC will escape bytes
+  that are not printable ASCII when printing their pertinent source lines.
+
+  This option controls how such bytes should be escaped.
+
+  The default :samp:`{FORMAT}`, :samp:`unicode` displays Unicode characters that
+  are not printable ASCII in the form :samp:`<U+XXXX>`, and bytes that do not
+  correspond to a Unicode character validly-encoded in UTF-8-encoded will be
+  displayed as hexadecimal in the form :samp:`<XX>`.
+
+  For example, a source line containing the string :samp:`before` followed by the
+  Unicode character U+03C0 ('GREEK SMALL LETTER PI', with UTF-8 encoding
+  0xCF 0x80) followed by the byte 0xBF (a stray UTF-8 trailing byte), followed by
+  the string :samp:`after` will be printed for such a diagnostic as:
+
+  .. code-block:: c++
+
+     before<U+03C0><BF>after
+
+  Setting :samp:`{FORMAT}` to :samp:`bytes` will display all non-printable-ASCII bytes
+  in the form :samp:`<XX>`, thus showing the underlying encoding of non-ASCII
+  Unicode characters.  For the example above, the following will be printed:
+
+  .. code-block:: c++
+
+     before<CF><80><BF>after
+
 .. option:: -fdiagnostics-format=FORMAT
 
   Select a different format for printing diagnostics.
@@ -644,9 +676,11 @@ honor these options.
                             }
                         }
                     ],
+                    "escape-source": false,
                     "message": "...this statement, but the latter is ..."
                 }
             ]
+    	"escape-source": false,
     	"column-origin": 1,
         }
     ]
@@ -725,6 +759,7 @@ honor these options.
                     "label": "T {aka struct t}"
                 }
             ],
+            "escape-source": false,
             "message": "invalid operands to binary + ..."
         }
 
@@ -777,6 +812,7 @@ honor these options.
                     }
                 }
             ],
+            "escape-source": false,
             "message": "‘struct s’ has no member named ..."
         }
 
@@ -831,4 +867,8 @@ honor these options.
                 }
             }
         ]
+
+  Diagnostics have a boolean attribute ``escape-source``, hinting whether
+  non-ASCII bytes should be escaped when printing the pertinent lines of
+  source code (``true`` for diagnostics involving source encoding issues).
 

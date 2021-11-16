@@ -38,8 +38,8 @@ are only reliable for the innermost loops:
   GIMPLE.  ``standard_iv_increment_position`` can be used to find a
   suitable place for the iv increment.
 
-* ``duplicate_loop_to_header_edge``,
-  ``tree_duplicate_loop_to_header_edge`` : These functions (on RTL and
+* ``duplicate_loop_body_to_header_edge``,
+  ``tree_duplicate_loop_body_to_header_edge`` : These functions (on RTL and
   on GIMPLE) duplicate the body of the loop prescribed number of times on
   one of the edges entering loop header, thus performing either loop
   unrolling or loop peeling.  ``can_duplicate_loop_p``

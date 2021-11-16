@@ -25,10 +25,10 @@ which provides the command-line interface for the compiler.  It calls
 the relevant compiler front-end program (e.g., :command:`f951` for
 Fortran) for each file in the source code, and then calls the assembler
 and linker as appropriate to produce the compiled output.  In a copy of
-GCC which has been compiled with Fortran language support enabled,
-:command:`gcc` will recognize files with :samp:`.f`, :samp:`.for`, :samp:`.ftn`,
+GCC that has been compiled with Fortran language support enabled,
+:command:`gcc` recognizes files with :samp:`.f`, :samp:`.for`, :samp:`.ftn`,
 :samp:`.f90`, :samp:`.f95`, :samp:`.f03` and :samp:`.f08` extensions as
-Fortran source code, and compile it accordingly.  A :command:`gfortran`
+Fortran source code, and compiles it accordingly.  A :command:`gfortran`
 driver program is also provided, which is identical to :command:`gcc`
 except that it automatically links the Fortran runtime libraries into the
 compiled program.
@@ -44,11 +44,12 @@ extension are also run through preprocessing.
 This manual specifically documents the Fortran front end, which handles
 the programming language's syntax and semantics.  The aspects of GCC
 which relate to the optimization passes and the back-end code generation
+that relate to the optimization passes and the back-end code generation
 are documented in the GCC manual.
 The two manuals together provide a complete reference for the GNU
 Fortran compiler.
 
 .. -
-   Preprocessing and conditional compilation
+   Standards
    -
 

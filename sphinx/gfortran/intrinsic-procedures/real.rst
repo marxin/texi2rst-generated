@@ -69,16 +69,16 @@ REAL --- Convert to real type
       end program test_real
 
   :samp:`{Specific names}:`
-    =============  ==============  ===========  =============
+    =============  ==============  ===========  =====================
     Name           Argument        Return type  Standard
-    =============  ==============  ===========  =============
-    ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  GNU extension
+    =============  ==============  ===========  =====================
+    ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  Fortran 77 and later
     ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
-    ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension
-    ``FLOATJ(A)``  ``INTEGER(4)``  ``REAL(4)``  GNU extension
-    ``FLOATK(A)``  ``INTEGER(8)``  ``REAL(4)``  GNU extension
-    ``SNGL(A)``    ``INTEGER(8)``  ``REAL(4)``  GNU extension
-    =============  ==============  ===========  =============
+    ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension (-fdec)
+    ``FLOATJ(A)``  ``INTEGER(4)``  ``REAL(4)``  GNU extension (-fdec)
+    ``FLOATK(A)``  ``INTEGER(8)``  ``REAL(4)``  GNU extension (-fdec)
+    ``SNGL(A)``    ``REAL(8)``     ``REAL(4)``  Fortran 77 and later
+    =============  ==============  ===========  =====================
 
   :samp:`{See also}:`
     DBLE

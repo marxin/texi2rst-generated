@@ -3798,6 +3798,26 @@ warn at all unless optimization is enabled.
   etc.  This does not stop errors for incorrect use of supported
   attributes.
 
+  Additionally, using :option:`-Wno-attributes` =, it is possible to suppress
+  warnings about unknown scoped attributes (in C++11 and C2X).  For example,
+  :option:`-Wno-attributes`:samp:`=vendor::attr` disables warning about the following
+  declaration:
+
+  .. code-block:: c++
+
+    [[vendor::attr]] void f();
+
+  It is also possible to disable warning about all attributes in a namespace
+  using :option:`-Wno-attributes`:samp:`=vendor::` which prevents warning about both
+  of these declarations:
+
+  .. code-block:: c++
+
+    [[vendor::safe]] void f();
+    [[vendor::unsafe]] void f2();
+
+  Note that :option:`-Wno-attributes` = does not imply :option:`-Wno-attributes`.
+
 .. option:: -Wattributes
 
   Default setting; overrides :option:`-Wno-attributes`.

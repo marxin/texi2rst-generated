@@ -133,6 +133,7 @@ These :samp:`-m` options are defined for the ARM port:
   :samp:`armv7-m`, :samp:`armv7e-m`,
   :samp:`armv8-m.base`, :samp:`armv8-m.main`,
   :samp:`armv8.1-m.main`,
+  :samp:`armv9-a`,
   :samp:`iwmmxt` and :samp:`iwmmxt2`.
 
   Additionally, the following architectures, which lack support for the
@@ -599,7 +600,7 @@ These :samp:`-m` options are defined for the ARM port:
   :samp:`cortex-a32`, :samp:`cortex-a35`, :samp:`cortex-a53`, :samp:`cortex-a55`,
   :samp:`cortex-a57`, :samp:`cortex-a72`, :samp:`cortex-a73`, :samp:`cortex-a75`,
   :samp:`cortex-a76`, :samp:`cortex-a76ae`, :samp:`cortex-a77`,
-  :samp:`cortex-a78`, :samp:`cortex-a78ae`, :samp:`cortex-a78c`,
+  :samp:`cortex-a78`, :samp:`cortex-a78ae`, :samp:`cortex-a78c`, :samp:`cortex-a710`,
   :samp:`ares`, :samp:`cortex-r4`, :samp:`cortex-r4f`, :samp:`cortex-r5`,
   :samp:`cortex-r7`, :samp:`cortex-r8`, :samp:`cortex-r52`, :samp:`cortex-r52plus`,
   :samp:`cortex-m0`, :samp:`cortex-m0plus`, :samp:`cortex-m1`, :samp:`cortex-m3`,

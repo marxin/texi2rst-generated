@@ -1370,6 +1370,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
   prevents the compiler from using floating-point, vector, mask and bound
   registers.
 
+.. option:: -mrelax-cmpxchg-loop
+
+  Relax cmpxchg loop by emitting an early load and compare before cmpxchg,
+  execute pause if load value is not expected. This reduces excessive
+  cachline bouncing when and works for all atomic logic fetch builtins
+  that generates compare and swap loop.
+
 .. option:: -mindirect-branch=choice
 
   Convert indirect call and jump with :samp:`{choice}`.  The default is

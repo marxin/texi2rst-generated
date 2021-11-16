@@ -194,7 +194,6 @@ Intrinsic Procedures
   intrinsic-procedures/log10
   intrinsic-procedures/loggamma
   intrinsic-procedures/logical
-  intrinsic-procedures/long
   intrinsic-procedures/lshift
   intrinsic-procedures/lstat
   intrinsic-procedures/ltime

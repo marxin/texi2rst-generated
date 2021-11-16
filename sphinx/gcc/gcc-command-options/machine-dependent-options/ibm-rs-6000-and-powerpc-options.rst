@@ -69,7 +69,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   :samp:`e6500`, :samp:`ec603e`, :samp:`G3`, :samp:`G4`, :samp:`G5`,
   :samp:`titan`, :samp:`power3`, :samp:`power4`, :samp:`power5`, :samp:`power5+`,
   :samp:`power6`, :samp:`power6x`, :samp:`power7`, :samp:`power8`,
-  :samp:`power9`, :samp:`future`, :samp:`powerpc`, :samp:`powerpc64`,
+  :samp:`power9`, :samp:`power10`, :samp:`powerpc`, :samp:`powerpc64`,
   :samp:`powerpc64le`, :samp:`rs64`, and :samp:`native`.
 
   :option:`-mcpu`:samp:`=powerpc`, :option:`-mcpu`:samp:`=powerpc64`, and
@@ -228,10 +228,9 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   and use either software emulation for IEEE 128-bit floating point or
   hardware instructions.
 
-  The VSX instruction set (:option:`-mvsx`, :option:`-mcpu`:samp:`=power7`,
-  :option:`-mcpu`:samp:`=power8`), or :option:`-mcpu`:samp:`=power9` must be enabled to
-  use the IEEE 128-bit floating point support.  The IEEE 128-bit
-  floating point support only works on PowerPC Linux systems.
+  The VSX instruction set (:option:`-mvsx`) must be enabled to use the IEEE
+  128-bit floating point support.  The IEEE 128-bit floating point is only
+  supported on Linux.
 
   The default for :option:`-mfloat128` is enabled on PowerPC Linux
   systems using the VSX instruction set, and disabled on other systems.
@@ -980,20 +979,21 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
 .. option:: -mpcrel, -mno-pcrel
 
-  Generate (do not generate) pc-relative addressing when the option
-  :option:`-mcpu`:samp:`=future` is used.  The :option:`-mpcrel` option requires
-  that the medium code model (:option:`-mcmodel`:samp:`=medium`) and prefixed
-  addressing (:option:`-mprefixed`) options are enabled.
+  Generate (do not generate) pc-relative addressing.  The :option:`-mpcrel`
+  option requires that the medium code model (:option:`-mcmodel`:samp:`=medium`)
+  and prefixed addressing (:option:`-mprefixed`) options are enabled.
 
 .. option:: -mprefixed, -mno-prefixed
 
   Generate (do not generate) addressing modes using prefixed load and
-  store instructions when the option :option:`-mcpu`:samp:`=future` is used.
+  store instructions.  The :option:`-mprefixed` option requires that
+  the option :option:`-mcpu`:samp:`=power10` (or later) is enabled.
 
 .. option:: -mmma, -mno-mma
 
-  Generate (do not generate) the MMA instructions when the option
-  :option:`-mcpu`:samp:`=future` is used.
+  Generate (do not generate) the MMA instructions.  The :option:`-mma`
+  option requires that the option :option:`-mcpu`:samp:`=power10` (or later)
+  is enabled.
 
 .. option:: -mrop-protect, -mno-rop-protect
 

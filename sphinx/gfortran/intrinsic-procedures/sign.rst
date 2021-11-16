@@ -28,7 +28,7 @@ SIGN --- Sign copying function
 
   :return:
     The kind of the return value is that of :samp:`{A}` and :samp:`{B}`.
-    If B\ge 0 then the result is ``ABS(A)``, else
+    If B \ge 0 then the result is ``ABS(A)``, else
     it is ``-ABS(A)``.
 
   :samp:`{Standard}:`

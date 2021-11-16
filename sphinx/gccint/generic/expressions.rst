@@ -281,26 +281,13 @@ References to storage
   type is the same as that of the first operand.  The range of that array
   type determines the amount of data these expressions access.
 
-.. envvar:: TARGET_MEM_REF
+.. envvar:: COMPONENT_REF
 
-  These nodes represent memory accesses whose address directly map to
-  an addressing mode of the target architecture.  The first argument
-  is ``TMR_SYMBOL`` and must be a ``VAR_DECL`` of an object with
-  a fixed address.  The second argument is ``TMR_BASE`` and the
-  third one is ``TMR_INDEX``.  The fourth argument is
-  ``TMR_STEP`` and must be an ``INTEGER_CST``.  The fifth
-  argument is ``TMR_OFFSET`` and must be an ``INTEGER_CST``.
-  Any of the arguments may be NULL if the appropriate component
-  does not appear in the address.  Address of the ``TARGET_MEM_REF``
-  is determined in the following way.
-
-  .. code-block:: c++
-
-    &TMR_SYMBOL + TMR_BASE + TMR_INDEX * TMR_STEP + TMR_OFFSET
-
-  The sixth argument is the reference to the original memory access, which
-  is preserved for the purposes of the RTL alias analysis.  The seventh
-  argument is a tag representing the results of tree level alias analysis.
+  These nodes represent non-static data member accesses.  The first
+  operand is the object (rather than a pointer to it); the second operand
+  is the ``FIELD_DECL`` for the data member.  The third operand represents
+  the byte offset of the field, but should not be used directly; call
+  ``component_ref_field_offset`` instead.
 
 .. envvar:: ADDR_EXPR
 
@@ -326,16 +313,34 @@ References to storage
   These nodes are used to represent the object pointed to by a pointer
   offset by a constant.
   The first operand is the pointer being dereferenced; it will always have
-  pointer or reference type.  The second operand is a pointer constant.
-  Its type is specifying the type to be used for type-based alias analysis.
+  pointer or reference type.  The second operand is a pointer constant
+  serving as constant offset applied to the pointer being dereferenced
+  with its type specifying the type to be used for type-based alias analysis.
+  The type of the node specifies the alignment of the access.
 
-.. envvar:: COMPONENT_REF
+.. envvar:: TARGET_MEM_REF
 
-  These nodes represent non-static data member accesses.  The first
-  operand is the object (rather than a pointer to it); the second operand
-  is the ``FIELD_DECL`` for the data member.  The third operand represents
-  the byte offset of the field, but should not be used directly; call
-  ``component_ref_field_offset`` instead.
+  These nodes represent memory accesses whose address directly map to
+  an addressing mode of the target architecture.  The first argument
+  is ``TMR_BASE`` and is a pointer to the object being accessed.
+  The second argument is ``TMR_OFFSET`` which is a pointer constant
+  with dual purpose serving both as constant offset and holder of
+  the type used for type-based alias analysis.  The first two operands
+  have exactly the same semantics as ``MEM_REF``.  The third
+  and fourth operand are ``TMR_INDEX`` and ``TMR_STEP`` where
+  the former is an integer and the latter an integer constant.  The
+  fifth and last operand is ``TMR_INDEX2`` which is an alternate
+  non-constant offset.  Any of the third to last operands may be
+  ``NULL`` if the corresponding component does not appear in
+  the address, but ``TMR_INDEX`` and ``TMR_STEP`` shall be
+  always supplied in pair.  The Address of the ``TARGET_MEM_REF``
+  is determined in the following way.
+
+  .. code-block:: c++
+
+    TMR_BASE + TMR_OFFSET + TMR_INDEX * TMR_STEP + TMR_INDEX2
+
+  The type of the node specifies the alignment of the access.
 
 .. _unary-and-binary-expressions:
 

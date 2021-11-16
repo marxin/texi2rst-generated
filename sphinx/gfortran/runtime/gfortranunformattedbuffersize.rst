@@ -17,6 +17,6 @@ The default value is 131072.
    =====================================================================
 
 .. -
-   Fortran standards status
+   Compiler Characteristics
    -
 

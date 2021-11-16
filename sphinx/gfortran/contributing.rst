@@ -26,4 +26,3 @@ but they are also things doable by someone who is willing and able.
 
   contributors-to-gnu-fortran
   projects
-  proposed-extensions

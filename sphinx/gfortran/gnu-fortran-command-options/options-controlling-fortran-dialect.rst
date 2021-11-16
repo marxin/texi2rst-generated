@@ -39,7 +39,7 @@ accepted by the compiler:
   .. index:: fall-intrinsics
 
   This option causes all intrinsic procedures (including the GNU-specific
-  extensions) to be accepted.  This can be useful with :option:`-std`:samp:`=f95` to
+  extensions) to be accepted.  This can be useful with :option:`-std` = to
   force standard-compliance but get access to the full range of intrinsics
   available with :command:`gfortran`.  As a consequence, :option:`-Wintrinsics-std`
   will be ignored and no user-defined procedure with the same name as any
@@ -256,7 +256,7 @@ accepted by the compiler:
   .. index:: fmax-identifier-length=n
 
   Specify the maximum allowed identifier length. Typical values are
-  31 (Fortran 95) and 63 (Fortran 2003 and Fortran 2008).
+  31 (Fortran 95) and 63 (Fortran 2003 and later).
 
 .. option:: -fimplicit-none
 

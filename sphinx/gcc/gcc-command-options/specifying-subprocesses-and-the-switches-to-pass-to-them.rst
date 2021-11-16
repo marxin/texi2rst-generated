@@ -289,8 +289,7 @@
     Accumulate an option for :samp:`%X`.
 
   ``%X``
-    Output the accumulated linker options specified by :option:`-Wl` or a :samp:`%x`
-    spec string.
+    Output the accumulated linker options specified by a :samp:`%x` spec string.
 
   ``%Y``
     Output the accumulated assembler options specified by :option:`-Wa`.

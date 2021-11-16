@@ -81,6 +81,14 @@ and termination functions:
 
 .. hook-end
 
+.. c:var:: bool TARGET_DTORS_FROM_CXA_ATEXIT
+
+  This value is true if the target wants destructors to be queued to be
+  run from __cxa_atexit.  If this is the case then, for each priority level,
+  a new constructor will be entered that registers the destructors for that
+  level with __cxa_atexit (and there will be no destructors emitted).
+  It is false the method implied by ``have_ctors_dtors`` is used.
+
 .. function:: void TARGET_ASM_CONSTRUCTOR (rtx symbol, int priority)
 
   .. hook-start:TARGET_ASM_CONSTRUCTOR

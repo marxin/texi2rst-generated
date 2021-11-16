@@ -27,7 +27,6 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
   gnu-fortran-command-options
   runtime
 
-  fortran-standards-status
   compiler-characteristics
   extensions
   mixed-language-programming

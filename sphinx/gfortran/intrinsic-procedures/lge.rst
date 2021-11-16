@@ -45,11 +45,11 @@ LGE --- Lexical greater than or equal
     RESULT = LGE(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
-    ===========================  =============  ===========  ====================
-    Name                         Argument       Return type  Standard
-    ===========================  =============  ===========  ====================
-    ``LGE(STRING_A, STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
-    ===========================  =============  ===========  ====================
+    ==========================  =============  ===========  ====================
+    Name                        Argument       Return type  Standard
+    ==========================  =============  ===========  ====================
+    ``LGE(STRING_A,STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
+    ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
     LGT, 

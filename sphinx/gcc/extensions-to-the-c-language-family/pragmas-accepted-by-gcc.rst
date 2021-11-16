@@ -493,8 +493,25 @@ macros are defined.
     #pragma GCC diagnostic pop
       foo(d);                       /* depends on command-line options */
 
-GCC also offers a simple mechanism for printing messages during
-compilation.
+``#pragma GCC diagnostic ignored_attributes``
+  Similarly to :option:`-Wno-attributes` =, this pragma allows users to suppress
+  warnings about unknown scoped attributes (in C++11 and C2X).  For example,
+  ``#pragma GCC diagnostic ignored_attributes "vendor::attr"`` disables
+  warning about the following declaration:
+
+  .. code-block:: c++
+
+    [[vendor::attr]] void f();
+
+  whereas ``#pragma GCC diagnostic ignored_attributes "vendor::"`` prevents
+  warning about both of these declarations:
+
+  .. code-block:: c++
+
+    [[vendor::safe]] void f();
+    [[vendor::unsafe]] void f2();
+
+GCC also offers a simple mechanism for printing messages during compilation.
 
 :samp:`#pragma message {string}`
 

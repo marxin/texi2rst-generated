@@ -597,9 +597,9 @@ This is about addressing modes.
 
 .. hook-end
 
-.. function:: void * TARGET_VECTORIZE_INIT_COST (class loop *loop_info, bool costing_for_scalar)
+.. function:: class vector_costs * TARGET_VECTORIZE_CREATE_COSTS (vec_info *vinfo, bool costing_for_scalar)
 
-  .. hook-start:TARGET_VECTORIZE_INIT_COST
+  .. hook-start:TARGET_VECTORIZE_CREATE_COSTS
 
   This hook should initialize target-specific data structures in preparation
   for modeling the costs of vectorizing a loop or basic block.  The default
@@ -609,41 +609,6 @@ This is about addressing modes.
   is being vectorized.  If :samp:`{costing_for_scalar}` is true, it indicates the
   current cost model is for the scalar version of a loop or block; otherwise
   it is for the vector version.
-
-.. hook-end
-
-.. function:: unsigned TARGET_VECTORIZE_ADD_STMT_COST (class vec_info *, void *data, int count, enum vect_cost_for_stmt kind, class _stmt_vec_info *stmt_info, tree vectype, int misalign, enum vect_cost_model_location where)
-
-  .. hook-start:TARGET_VECTORIZE_ADD_STMT_COST
-
-  This hook should update the target-specific :samp:`{data}` in response to
-  adding :samp:`{count}` copies of the given :samp:`{kind}` of statement to a
-  loop or basic block.  The default adds the builtin vectorizer cost for
-  the copies of the statement to the accumulator specified by :samp:`{where}`,
-  (the prologue, body, or epilogue) and returns the amount added.  The
-  return value should be viewed as a tentative cost that may later be
-  revised.
-
-.. hook-end
-
-.. function:: void TARGET_VECTORIZE_FINISH_COST (void *data, unsigned *prologue_cost, unsigned *body_cost, unsigned *epilogue_cost)
-
-  .. hook-start:TARGET_VECTORIZE_FINISH_COST
-
-  This hook should complete calculations of the cost of vectorizing a loop
-  or basic block based on :samp:`{data}`, and return the prologue, body, and
-  epilogue costs as unsigned integers.  The default returns the value of
-  the three accumulators.
-
-.. hook-end
-
-.. function:: void TARGET_VECTORIZE_DESTROY_COST_DATA (void *data)
-
-  .. hook-start:TARGET_VECTORIZE_DESTROY_COST_DATA
-
-  This hook should release :samp:`{data}` and any related data structures
-  allocated by TARGET_VECTORIZE_INIT_COST.  The default releases the
-  accumulator.
 
 .. hook-end
 

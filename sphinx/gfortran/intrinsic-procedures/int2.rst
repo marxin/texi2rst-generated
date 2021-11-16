@@ -10,8 +10,6 @@ INT2 --- Convert to 16-bit integer type
 
 .. index:: INT2
 
-.. index:: SHORT
-
 .. index:: conversion, to integer
 
 .. function:: INT2(A)
@@ -41,6 +39,5 @@ INT2 --- Convert to 16-bit integer type
 
   :samp:`{See also}:`
     INT, 
-    INT8, 
-    LONG
+    INT8
 

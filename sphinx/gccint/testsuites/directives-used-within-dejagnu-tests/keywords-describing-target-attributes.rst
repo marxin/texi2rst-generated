@@ -428,37 +428,59 @@ Vector-specific attributes
   Target supports loop vectorization with partial vectors and
   ``vect-partial-vector-usage`` is nonzero.
 
-``vect_slp_v2qi_store``
+``vect_slp_v2qi_store_align``
   Target supports vectorization of 2-byte char stores with 2-byte aligned
   address at plain :option:`-O2`.
 
-``vect_slp_v4qi_store``
+``vect_slp_v4qi_store_align``
   Target supports vectorization of 4-byte char stores with 4-byte aligned
   address at plain :option:`-O2`.
 
-``vect_slp_v8qi_store``
-  Target supports vectorization of 8-byte char stores with 8-byte aligned
-  address at plain :option:`-O2`.
+``vect_slp_v4qi_store_unalign``
+  Target supports vectorization of 4-byte char stores with unaligned address
+  at plain :option:`-O2`.
 
-``vect_slp_v16qi_store``
-  Target supports vectorization of 16-byte char stores with 16-byte aligned
-  address at plain :option:`-O2`.
+``struct_4char_block_move``
+  Target supports block move for 8-byte aligned 4-byte size struct initialization.
 
-``vect_slp_v2hi_store``
+``vect_slp_v4qi_store_unalign_1``
+  Target supports vectorization of 4-byte char stores with unaligned address
+  or store them with constant pool at plain :option:`-O2`.
+
+``struct_8char_block_move``
+  Target supports block move for 8-byte aligned 8-byte size struct initialization.
+
+``vect_slp_v8qi_store_unalign_1``
+  Target supports vectorization of 8-byte char stores with unaligned address
+  or store them with constant pool at plain :option:`-O2`.
+
+``struct_16char_block_move``
+  Target supports block move for 8-byte aligned 16-byte size struct
+  initialization.
+
+``vect_slp_v16qi_store_unalign_1``
+  Target supports vectorization of 16-byte char stores with unaligned address
+  or store them with constant pool at plain :option:`-O2`.
+
+``vect_slp_v2hi_store_align``
   Target supports vectorization of 4-byte short stores with 4-byte aligned
-  address at plain :option:`-O2`.
+  addressat plain :option:`-O2`.
 
-``vect_slp_v4hi_store``
-  Target supports vectorization of 8-byte short stores with 8-byte aligned
-  address at plain :option:`-O2`.
+``vect_slp_v2hi_store_unalign``
+  Target supports vectorization of 4-byte short stores with unaligned address
+  at plain :option:`-O2`.
 
-``vect_slp_v2si_store``
-  Target supports vectorization of 8-byte int stores with 8-byte aligned
-  address at plain :option:`-O2`.
+``vect_slp_v4hi_store_unalign``
+  Target supports vectorization of 8-byte short stores with unaligned address
+  at plain :option:`-O2`.
 
-``vect_slp_v4si_store``
-  Target supports vectorization of 16-byte int stores with 16-byte aligned
-  address at plain :option:`-O2`.
+``vect_slp_v2si_store_align``
+  Target supports vectorization of 8-byte int stores with 8-byte aligned address
+  at plain :option:`-O2`.
+
+``vect_slp_v4si_store_unalign``
+  Target supports vectorization of 16-byte int stores with unaligned address
+  at plain :option:`-O2`.
 
 Thread Local Storage attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -26,7 +26,7 @@ Iterators                                                                Y
 Nested-parallel changes to *max-active-levels-var* ICV                   Y
 ``requires`` directive                                                   P       Only fulfillable requirement is ``atomic_default_mem_order``
 ``teams`` construct outside an enclosing target region                   Y
-Non-rectangular loop nests                                               Y
+Non-rectangular loop nests                                               P       Only C/C++
 ``!=`` as relational-op in canonical loop form for C/C++                 Y
 ``nonmonotonic`` as default loop schedule modifier for worksharing-loop  Y
       constructs

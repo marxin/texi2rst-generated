@@ -224,7 +224,7 @@ gperf version 2.7.2 (or later)
   :samp:`gcc/cp/cfns.gperf` to regenerate its associated header file, e.g.
   :samp:`gcc/cp/cfns.h`.
 
-DejaGnu 1.4.4, Expect, Tcl
+DejaGnu version 1.5.3 (or later), Expect, Tcl
   Necessary to run the GCC testsuite; see the section on testing for
   details.
 
