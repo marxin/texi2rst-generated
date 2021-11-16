@@ -15,7 +15,7 @@ CO_REDUCE --- Reduction of values on the current set of images
 .. function:: CO_REDUCE
 
   ``CO_REDUCE`` determines element-wise the reduction of the value of :samp:`{A}`
-  on all images of the current team.  The pure function passed as :samp:`{OPERATOR}`
+  on all images of the current team.  The pure function passed as :samp:`{OPERATION}`
   is used to pairwise reduce the values of :samp:`{A}` by passing either the value
   of :samp:`{A}` of different images or the result values of such a reduction as
   argument.  If :samp:`{A}` is an array, the deduction is done element wise. If
@@ -34,13 +34,13 @@ CO_REDUCE --- Reduction of values on the current set of images
     all images of the team; if it is an array, it shall have the same shape on all
     images.
 
-  :param OPERATOR:
+  :param OPERATION:
     pure function with two scalar nonallocatable
     arguments, which shall be nonpolymorphic and have the same type and type
     parameters as :samp:`{A}`.  The function shall return a nonallocatable scalar of
     the same type and type parameters as :samp:`{A}`.  The function shall be the same on
     all images and with regards to the arguments mathematically commutative and
-    associative.  Note that :samp:`{OPERATOR}` may not be an elemental function, unless
+    associative.  Note that :samp:`{OPERATION}` may not be an elemental function, unless
     it is an intrisic function.
 
   :param RESULT_IMAGE:
@@ -64,7 +64,7 @@ CO_REDUCE --- Reduction of values on the current set of images
 
   .. code-block:: fortran
 
-    CALL CO_REDUCE(A, OPERATOR, [, RESULT_IMAGE, STAT, ERRMSG])
+    CALL CO_REDUCE(A, OPERATION, [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 
@@ -73,7 +73,7 @@ CO_REDUCE --- Reduction of values on the current set of images
       program test
         integer :: val
         val = this_image ()
-        call co_reduce (val, result_image=1, operator=myprod)
+        call co_reduce (val, result_image=1, operation=myprod)
         if (this_image() == 1) then
           write(*,*) "Product value", val  ! prints num_images() factorial
         end if

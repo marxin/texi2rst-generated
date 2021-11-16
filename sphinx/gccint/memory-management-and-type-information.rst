@@ -67,6 +67,14 @@ The parser understands simple typedefs such as
 ``typedef int name;``.
 These don't need to be marked.
 
+However, in combination with GTY, avoid using typedefs such as
+``typedef int_hash<...> name;``
+for these generate infinite-recursion code.
+See `PR103157 <https://gcc.gnu.org/PR103157>`_.
+Instead, you may use
+``struct name : int_hash<...> {};``,
+for example.
+
 Since ``gengtype`` 's understanding of C++ is limited, there are
 several constructs and declarations that are not supported inside
 classes/structures marked for automatic GC code generation.  The

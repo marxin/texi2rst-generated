@@ -1644,13 +1644,13 @@ optimizations to be performed is desired.
 .. option:: -ftree-loop-vectorize
 
   Perform loop vectorization on trees. This flag is enabled by default at
-  :option:`-O3` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
+  :option:`-O2` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
 
 .. option:: -ftree-slp-vectorize
 
   Perform basic block vectorization on trees. This flag is enabled by default at
-  :option:`-O3` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
+  :option:`-O2` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
 
 .. option:: -ftrivial-auto-var-init=choice
@@ -4114,6 +4114,12 @@ section includes experimental options that may produce broken code.
     Recursive cloning only when the probability of call being executed exceeds
     the parameter.
 
+  .. gcc-param:: ipa-cp-profile-count-base
+
+    When using :option:`-fprofile-use` option, IPA-CP will consider the measured
+    execution count of a call graph edge at this percentage position in their
+    histogram as the basis for its heuristics calculation.
+
   .. gcc-param:: ipa-cp-recursive-freq-factor
 
     The number of times interprocedural copy propagation expects recursive
@@ -4379,6 +4385,10 @@ section includes experimental options that may produce broken code.
 
     Maximum number of basic blocks on a jump thread path.
 
+  .. gcc-param:: threader-debug
+
+    threader-debug=[none|all] Enables verbose dumping of the threader solver.
+
   .. gcc-param:: parloops-chunk-size
 
     Chunk size of omp schedule for loops parallelized by parloops.
@@ -4419,6 +4429,18 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: evrp-mode
 
     Specifies the mode Early VRP should operate in.
+
+  .. gcc-param:: vrp1-mode
+
+    Specifies the mode VRP pass 1 should operate in.
+
+  .. gcc-param:: vrp2-mode
+
+    Specifies the mode VRP pass 2 should operate in.
+
+  .. gcc-param:: ranger-debug
+
+    Specifies the type of debug output to be issued for ranges.
 
   .. gcc-param:: evrp-switch-limit
 

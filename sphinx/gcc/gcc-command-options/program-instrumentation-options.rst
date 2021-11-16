@@ -724,7 +724,26 @@ program analysis purposes.
   (see :ref:`function-attributes`).
 
   Currently the x86 GNU/Linux target provides an implementation based
-  on Intel Control-flow Enforcement Technology (CET).
+  on Intel Control-flow Enforcement Technology (CET) which works for
+  i686 processor or newer.
+
+.. option:: -fharden-compares
+
+  For every logical test that survives gimple optimizations and is
+  *not* the condition in a conditional branch (for example,
+  conditions tested for conditional moves, or to store in boolean
+  variables), emit extra code to compute and verify the reversed
+  condition, and to call ``__builtin_trap`` if the results do not
+  match.  Use with :samp:`-fharden-conditional-branches` to cover all
+  conditionals.
+
+.. option:: -fharden-conditional-branches
+
+  For every non-vectorized conditional branch that survives gimple
+  optimizations, emit extra code to compute and verify the reversed
+  condition, and to call ``__builtin_trap`` if the result is
+  unexpected.  Use with :samp:`-fharden-compares` to cover all
+  conditionals.
 
 .. option:: -fstack-protector
 

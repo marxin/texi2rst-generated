@@ -8,6 +8,10 @@
 Interoperability with C
 ***********************
 
+.. index:: interoperability with C
+
+.. index:: C interoperability
+
 .. toctree::
   :maxdepth: 2
 
@@ -15,13 +19,13 @@ Interoperability with C
   interoperability-with-c/derived-types-and-struct
   interoperability-with-c/interoperable-global-variables
   interoperability-with-c/interoperable-subroutines-and-functions
-  interoperability-with-c/working-with-pointers
+  interoperability-with-c/working-with-c-pointers
   interoperability-with-c/further-interoperability-of-fortran-with-c
 
 Since Fortran 2003 (ISO/IEC 1539-1:2004(E)) there is a
 standardized way to generate procedure and derived-type
-declarations and global variables which are interoperable with C
-(ISO/IEC 9899:1999).  The ``bind(C)`` attribute has been added
+declarations and global variables that are interoperable with C
+(ISO/IEC 9899:1999).  The ``BIND(C)`` attribute has been added
 to inform the compiler that a symbol shall be interoperable with C;
 also, some constraints are added.  Note, however, that not
 all C features have a Fortran equivalent or vice versa.  For instance,
@@ -40,11 +44,18 @@ assuming i < n) in memory is ``A(i+1,j)`` (C: ``A[j-1][i]``).
 Intrinsic Types
 ^^^^^^^^^^^^^^^
 
+.. index:: C intrinsic type interoperability
+
+.. index:: intrinsic type interoperability with C
+
+.. index:: interoperability, intrinsic type
+
 In order to ensure that exactly the same variable type and kind is used
-in C and Fortran, the named constants shall be used which are defined in the
-``ISO_C_BINDING`` intrinsic module.  That module contains named constants
-for kind parameters and character named constants for the escape sequences
-in C.  For a list of the constants, see ISO_C_BINDING.
+in C and Fortran, you should use the named constants for kind parameters
+that are defined in the ``ISO_C_BINDING`` intrinsic module.
+That module contains named constants of character type representing
+the escaped special characters in C, such as newline.
+For a list of the constants, see ISO_C_BINDING.
 
 For logical types, please note that the Fortran standard only guarantees
 interoperability between C99's ``_Bool`` and Fortran's ``C_Bool`` -kind
@@ -59,7 +70,13 @@ integer is explicitly or implicitly casted to ``_Bool``.)
 Derived Types and struct
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-For compatibility of derived types with ``struct``, one needs to use
+.. index:: C derived type and struct interoperability
+
+.. index:: derived type interoperability with C
+
+.. index:: interoperability, derived type and struct
+
+For compatibility of derived types with ``struct``, use
 the ``BIND(C)`` attribute in the type declaration.  For instance, the
 following type declaration
 
@@ -101,6 +118,12 @@ with bit field or variable-length array members are interoperable.
 Interoperable Global Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. index:: C variable interoperability
+
+.. index:: variable interoperability with C
+
+.. index:: interoperability, variable
+
 Variables can be made accessible from C using the C binding attribute,
 optionally together with specifying a binding name.  Those variables
 have to be declared in the declaration part of a ``MODULE``,
@@ -130,16 +153,22 @@ a macro.  Use the ``IERRNO`` intrinsic (GNU extension) instead.
 Interoperable Subroutines and Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. index:: C procedure interoperability
+
+.. index:: procedure interoperability with C
+
+.. index:: function interoperability with C
+
+.. index:: subroutine interoperability with C
+
+.. index:: interoperability, subroutine and function
+
 Subroutines and functions have to have the ``BIND(C)`` attribute to
 be compatible with C.  The dummy argument declaration is relatively
 straightforward.  However, one needs to be careful because C uses
 call-by-value by default while Fortran behaves usually similar to
 call-by-reference.  Furthermore, strings and pointers are handled
-differently.  Note that in Fortran 2003 and 2008 only explicit size
-and assumed-size arrays are supported but not assumed-shape or
-deferred-shape (i.e. allocatable or pointer) arrays.  However, those
-are allowed since the Technical Specification 29113, see
-Further Interoperability of Fortran with C
+differently.
 
 To pass a variable by value, use the ``VALUE`` attribute.
 Thus, the following C prototype
@@ -158,12 +187,12 @@ matches the Fortran declaration
       integer(c_int) :: j
 
 Note that pointer arguments also frequently need the ``VALUE`` attribute,
-see Working with Pointers.
+see Working with C Pointers.
 
 Strings are handled quite differently in C and Fortran.  In C a string
 is a ``NUL`` -terminated array of characters while in Fortran each string
 has a length associated with it and is thus not terminated (by e.g.
-``NUL``).  For example, if one wants to use the following C function,
+``NUL``).  For example, if you want to use the following C function,
 
 .. code-block:: fortran
 
@@ -173,7 +202,7 @@ has a length associated with it and is thus not terminated (by e.g.
        printf("%s\n", string);
     }
 
-to print 'Hello World' from Fortran, one can call it using
+to print 'Hello World' from Fortran, you can call it using
 
 .. code-block:: fortran
 
@@ -186,7 +215,7 @@ to print 'Hello World' from Fortran, one can call it using
     end interface
     call print_c(C_CHAR_"Hello World"//C_NULL_CHAR)
 
-As the example shows, one needs to ensure that the
+As the example shows, you need to ensure that the
 string is ``NUL`` terminated.  Additionally, the dummy argument
 :samp:`{string}` of ``print_C`` is a length-one assumed-size
 array; using ``character(len=*)`` is not allowed.  The example
@@ -229,20 +258,25 @@ example, we ignore the return value:
 
 The intrinsic procedures are described in Intrinsic Procedures.
 
-.. _working-with-pointers:
+.. _working-with-c-pointers:
 
-Working with Pointers
-^^^^^^^^^^^^^^^^^^^^^
+Working with C Pointers
+^^^^^^^^^^^^^^^^^^^^^^^
 
-C pointers are represented in Fortran via the special opaque derived type
-``type(c_ptr)`` (with private components).  Thus one needs to
+.. index:: C pointers
+
+.. index:: pointers, C
+
+C pointers are represented in Fortran via the special opaque derived
+type ``type(c_ptr)`` (with private components).  C pointers are distinct
+from Fortran objects with the ``POINTER`` attribute.  Thus one needs to
 use intrinsic conversion procedures to convert from or to C pointers.
+For some applications, using an assumed type (``TYPE(*)``) can be
+an alternative to a C pointer, and you can also use library routines
+to access Fortran pointers from C.  See Further Interoperability
+of Fortran with C.
 
-For some applications, using an assumed type (``TYPE(*)``) can be an
-alternative to a C pointer; see
-Further Interoperability of Fortran with C.
-
-For example,
+Here is an example of using C pointers in Fortran:
 
 .. code-block:: fortran
 
@@ -260,7 +294,7 @@ For example,
 When converting C to Fortran arrays, the one-dimensional ``SHAPE`` argument
 has to be passed.
 
-If a pointer is a dummy-argument of an interoperable procedure, it usually
+If a pointer is a dummy argument of an interoperable procedure, it usually
 has to be declared using the ``VALUE`` attribute.  ``void*``
 matches ``TYPE(C_PTR), VALUE``, while ``TYPE(C_PTR)`` alone
 matches ``void**``.
@@ -389,70 +423,34 @@ It can be used as in the following Fortran code:
 Further Interoperability of Fortran with C
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Technical Specification ISO/IEC TS 29113:2012 on further
-interoperability of Fortran with C extends the interoperability support
-of Fortran 2003 and Fortran 2008. Besides removing some restrictions
-and constraints, it adds assumed-type (``TYPE(*)``) and assumed-rank
-(``dimension``) variables and allows for interoperability of
-assumed-shape, assumed-rank and deferred-shape arrays, including
-allocatables and pointers.
+.. index:: Further Interoperability of Fortran with C
+
+.. index:: TS 29113
+
+.. index:: array descriptor
+
+.. index:: dope vector
+
+.. index:: assumed-type
+
+.. index:: assumed-rank
+
+GNU Fortran implements the Technical Specification ISO/IEC TS
+29113:2012, which extends the interoperability support of Fortran 2003
+and Fortran 2008 and is now part of the 2018 Fortran standard.
+Besides removing some restrictions and constraints, the Technical
+Specification adds assumed-type (``TYPE(*)``) and assumed-rank
+(``DIMENSION(..)``) variables and allows for interoperability of
+assumed-shape, assumed-rank, and deferred-shape arrays, as well as
+allocatables and pointers.  Objects of these types are passed to
+``BIND(C)`` functions as descriptors with a standard interface,
+declared in the header file ``<ISO_Fortran_binding.h>``.
 
 Note: Currently, GNU Fortran does not use internally the array descriptor
 (dope vector) as specified in the Technical Specification, but uses
-an array descriptor with different fields. Assumed type and assumed rank
-formal arguments are converted in the library to the specified form. The
-ISO_Fortran_binding API functions (also Fortran 2018 18.4) are implemented
-in libgfortran. Alternatively, the Chasm Language Interoperability Tools,
-http://chasm-interop.sourceforge.net/, provide an interface to GNU
-Fortran's array descriptor.
-
-The Technical Specification adds the following new features, which
-are supported by GNU Fortran:
-
-* The ``ASYNCHRONOUS`` attribute has been clarified and
-  extended to allow its use with asynchronous communication in
-  user-provided libraries such as in implementations of the
-  Message Passing Interface specification.
-
-* Many constraints have been relaxed, in particular for
-  the ``C_LOC`` and ``C_F_POINTER`` intrinsics.
-
-* The ``OPTIONAL`` attribute is now allowed for dummy
-  arguments; an absent argument matches a ``NULL`` pointer.
-
-* Assumed types (``TYPE(*)``) have been added, which may
-  only be used for dummy arguments.  They are unlimited polymorphic
-  but contrary to ``CLASS(*)`` they do not contain any type
-  information, similar to C's ``void *`` pointers.  Expressions
-  of any type and kind can be passed; thus, it can be used as
-  replacement for ``TYPE(C_PTR)``, avoiding the use of
-  ``C_LOC`` in the caller.
-
-  Note, however, that ``TYPE(*)`` only accepts scalar arguments,
-  unless the ``DIMENSION`` is explicitly specified.  As
-  ``DIMENSION(*)`` only supports array (including array elements) but
-  no scalars, it is not a full replacement for ``C_LOC``.  On the
-  other hand, assumed-type assumed-rank dummy arguments
-  (``TYPE(*), DIMENSION(..)``) allow for both scalars and arrays, but
-  require special code on the callee side to handle the array descriptor.
-
-* Assumed-rank arrays (``DIMENSION(..)``) as dummy argument
-  allow that scalars and arrays of any rank can be passed as actual
-  argument. As the Technical Specification does not provide for direct
-  means to operate with them, they have to be used either from the C side
-  or be converted using ``C_LOC`` and ``C_F_POINTER`` to scalars
-  or arrays of a specific rank. The rank can be determined using the
-  ``RANK`` intrinisic.
-
-Currently unimplemented:
-
-* GNU Fortran always uses an array descriptor, which does not
-  match the one of the Technical Specification. The
-  ``ISO_Fortran_binding.h`` header file and the C functions it
-  specifies are not available.
-
-* Using assumed-shape, assumed-rank and deferred-shape arrays in
-  ``BIND(C)`` procedures is not fully supported. In particular,
-  C interoperable strings of other length than one are not supported
-  as this requires the new array descriptor.
+an array descriptor with different fields in functions without the
+``BIND(C)`` attribute.  Arguments to functions marked ``BIND(C)``
+are converted to the specified form.  If you need to access GNU Fortran's
+internal array descriptor, you can use the Chasm Language Interoperability
+Tools, http://chasm-interop.sourceforge.net/.
 

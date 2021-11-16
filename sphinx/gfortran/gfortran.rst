@@ -61,7 +61,6 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
   runtime
 
   Part II: Language Reference
-  fortran-standards-status
   compiler-characteristics
   extensions
   mixed-language-programming
@@ -113,7 +112,6 @@ but they are also things doable by someone who is willing and able.
 
   contributors
   projects
-  proposed-extensions
   contributors-to-gnu-fortran
 
 .. _option-index:

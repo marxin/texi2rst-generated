@@ -27,3 +27,8 @@ These :samp:`-m` options are defined for the VAX:
 
   Output code for G-format floating-point numbers instead of D-format.
 
+.. option:: -mlra, -mno-lra
+
+  Enable Local Register Allocation.  This is still experimental for the VAX,
+  so by default the compiler uses standard reload.
+

@@ -32,7 +32,11 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-shift-count-negative` 
   :option:`-Wanalyzer-shift-count-overflow` 
   :option:`-Wanalyzer-stale-setjmp-buffer` 
+  :option:`-Wanalyzer-tainted-allocation-size` 
   :option:`-Wanalyzer-tainted-array-index` 
+  :option:`-Wanalyzer-tainted-divisor` 
+  :option:`-Wanalyzer-tainted-offset` 
+  :option:`-Wanalyzer-tainted-size` 
   :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
   :option:`-Wanalyzer-use-after-free` 
   :option:`-Wanalyzer-use-of-uninitialized-value` 
@@ -263,6 +267,24 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wno-analyzer-stale-setjmp-buffer`.
 
+.. option:: -Wno-analyzer-tainted-allocation-size
+
+  This warning requires both :option:`-fanalyzer` and
+  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  use :option:`-Wno-analyzer-tainted-allocation-size` to disable it.
+
+  This diagnostic warns for paths through the code in which a value
+  that could be under an attacker's control is used as the size
+  of an allocation without being sanitized, so that an attacker could
+  inject an excessively large allocation and potentially cause a denial
+  of service attack.
+
+  See https://cwe.mitre.org/data/definitions/789.htmlCWE-789: Memory Allocation with Excessive Size Value.
+
+.. option:: -Wanalyzer-tainted-allocation-size
+
+  Default setting; overrides :option:`-Wno-analyzer-tainted-allocation-size`.
+
 .. option:: -Wno-analyzer-tainted-array-index
 
   This warning requires both :option:`-fanalyzer` and
@@ -271,11 +293,61 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through the code in which a value
   that could be under an attacker's control is used as the index
-  of an array access without being sanitized.
+  of an array access without being sanitized, so that an attacker
+  could inject an out-of-bounds access.
+
+  See https://cwe.mitre.org/data/definitions/129.htmlCWE-129: Improper Validation of Array Index.
 
 .. option:: -Wanalyzer-tainted-array-index
 
   Default setting; overrides :option:`-Wno-analyzer-tainted-array-index`.
+
+.. option:: -Wno-analyzer-tainted-divisor
+
+  This warning requires both :option:`-fanalyzer` and
+  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  use :option:`-Wno-analyzer-tainted-divisor` to disable it.
+
+  This diagnostic warns for paths through the code in which a value
+  that could be under an attacker's control is used as the divisor
+  in a division or modulus operation without being sanitized, so that
+  an attacker could inject a division-by-zero.
+
+.. option:: -Wanalyzer-tainted-divisor
+
+  Default setting; overrides :option:`-Wno-analyzer-tainted-divisor`.
+
+.. option:: -Wno-analyzer-tainted-offset
+
+  This warning requires both :option:`-fanalyzer` and
+  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  use :option:`-Wno-analyzer-tainted-offset` to disable it.
+
+  This diagnostic warns for paths through the code in which a value
+  that could be under an attacker's control is used as a pointer offset
+  without being sanitized, so that an attacker could inject an out-of-bounds
+  access.
+
+  See https://cwe.mitre.org/data/definitions/823.htmlCWE-823: Use of Out-of-range Pointer Offset.
+
+.. option:: -Wanalyzer-tainted-offset
+
+  Default setting; overrides :option:`-Wno-analyzer-tainted-offset`.
+
+.. option:: -Wno-analyzer-tainted-size
+
+  This warning requires both :option:`-fanalyzer` and
+  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  use :option:`-Wno-analyzer-tainted-size` to disable it.
+
+  This diagnostic warns for paths through the code in which a value
+  that could be under an attacker's control is used as the size of
+  an operation such as ``memset`` without being sanitized, so that an
+  attacker could inject an out-of-bounds access.
+
+.. option:: -Wanalyzer-tainted-size
+
+  Default setting; overrides :option:`-Wno-analyzer-tainted-size`.
 
 .. option:: -Wno-analyzer-unsafe-call-within-signal-handler
 

@@ -481,15 +481,6 @@ If you are using the installed system libunwind library with
 :option:`--with-system-libunwind`, then you must use libunwind 0.98 or
 later.
 
-None of the following versions of GCC has an ABI that is compatible
-with any of the other versions in this list, with the exception that
-Red Hat 2.96 and Trillian 000171 are compatible with each other:
-3.1, 3.0.2, 3.0.1, 3.0, Red Hat 2.96, and Trillian 000717.
-This primarily affects C++ programs and programs that create shared libraries.
-GCC 3.1 or later is recommended for compiling linux, the kernel.
-As of version 3.1 GCC is believed to be fully ABI compliant, and hence no
-more major ABI changes are expected.
-
 ia64-\*-hpux\*
 ==============
 
@@ -1259,10 +1250,8 @@ Intel 64-bit versions
 =====================
 
 GCC contains support for x86-64 using the mingw-w64
-runtime library, available from http://mingw-w64.org/doku.php.
+runtime library, available from https://mingw-w64.org/doku.php.
 This library should be used with the target triple x86_64-pc-mingw32.
-
-Presently Windows for Itanium is not supported.
 
 Windows CE
 ==========

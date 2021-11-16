@@ -21,3 +21,14 @@ Projects
   add more information (for example, for which version does the testcase
   work, for which versions does it fail?) is also very helpful.
 
+*Missing features*
+  For a larger project, consider working on the missing features required for
+  Fortran language standards compliance (see :ref:`standards`), or contributing
+  to the implementation of extensions such as OpenMP (see :ref:`openmp`) or
+  OpenACC (see :ref:`openacc`) that are under active development.  Again,
+  contributing test cases for these features is useful too!
+
+.. -
+   GNU General Public License
+   -
+

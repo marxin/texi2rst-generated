@@ -143,7 +143,8 @@ in the following sections.
   :option:`-fdiagnostics-show-path-depths` 
   :option:`-fno-show-column` 
   :option:`-fdiagnostics-column-unit` =[display|byte] 
-  :option:`-fdiagnostics-column-origin`:samp:`={origin}`
+  :option:`-fdiagnostics-column-origin`:samp:`={origin}` 
+  :option:`-fdiagnostics-escape-format` =[unicode|bytes]
 
 *Warning Options*
   See :ref:`warning-options`.
@@ -279,7 +280,11 @@ in the following sections.
   :option:`-Wno-analyzer-shift-count-negative` 
   :option:`-Wno-analyzer-shift-count-overflow` 
   :option:`-Wno-analyzer-stale-setjmp-buffer` 
+  :option:`-Wno-analyzer-tainted-allocation-size` 
   :option:`-Wno-analyzer-tainted-array-index` 
+  :option:`-Wno-analyzer-tainted-divisor` 
+  :option:`-Wno-analyzer-tainted-offset` 
+  :option:`-Wno-analyzer-tainted-size` 
   :option:`-Wanalyzer-too-complex` 
   :option:`-Wno-analyzer-unsafe-call-within-signal-handler` 
   :option:`-Wno-analyzer-use-after-free` 
@@ -429,6 +434,7 @@ in the following sections.
   :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}`, :samp:`{s2}`,... 
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` 
   :option:`-fcf-protection` =[full|branch|return|none|check] 
+  :option:`-fharden-compares` :option:`-fharden-conditional-branches` 
   :option:`-fstack-protector`  :option:`-fstack-protector-all`  :option:`-fstack-protector-strong` 
   :option:`-fstack-protector-explicit`  :option:`-fstack-check` 
   :option:`-fstack-limit-register`:samp:`={reg}`  :option:`-fstack-limit-symbol`:samp:`={sym}` 
@@ -1254,7 +1260,7 @@ in the following sections.
 
   *VAX Options*
 
-  :option:`-mg`  :option:`-mgnu`  :option:`-munix`
+  :option:`-mg`  :option:`-mgnu`  :option:`-munix`  :option:`-mlra`
 
   *Visium Options*
 
@@ -1317,7 +1323,7 @@ in the following sections.
   :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
   :option:`-mstack-protector-guard-offset`:samp:`={offset}` 
   :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` 
-  :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` 
+  :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
   :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
   :option:`-mindirect-branch-register` :option:`-mneeded`
 

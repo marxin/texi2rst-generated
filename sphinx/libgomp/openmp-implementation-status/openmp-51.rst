@@ -34,7 +34,7 @@ Loop transformation constructs                                            N
       clauses of the taskloop construct
 ``align`` clause/modifier in ``allocate`` directive/clause                P       C/C++ on clause only
       and ``allocator`` directive
-``thread_limit`` clause to ``target`` construct                           N
+``thread_limit`` clause to ``target`` construct                           Y
 ``has_device_addr`` clause to ``target`` construct                        N
 iterators in ``target update`` motion clauses and ``map``                 N
       clauses

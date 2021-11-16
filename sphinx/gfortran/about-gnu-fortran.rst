@@ -8,41 +8,58 @@
 About GNU Fortran
 *****************
 
-The GNU Fortran compiler supports the Fortran 77, 90 and 95 standards
-completely, parts of the Fortran 2003, 2008 and 2018 standards, and
-several vendor extensions.  The development goal is to provide the
-following features:
+The GNU Fortran compiler is the successor to :command:`g77`, the
+Fortran 77 front end included in GCC prior to version 4 (released in
+2005).  While it is backward-compatible with most :command:`g77`
+extensions and command-line options, :command:`gfortran` is a completely new
+implemention designed to support more modern dialects of Fortran.
+GNU Fortran implements the Fortran 77, 90 and 95 standards
+completely, most of the Fortran 2003 and 2008 standards, and some
+features from the 2018 standard.  It also implements several extensions
+including OpenMP and OpenACC support for parallel programming.
 
-* Read a user's program, stored in a file and containing instructions
-  written in Fortran 77, Fortran 90, Fortran 95, Fortran 2003, Fortran
-  2008 or Fortran 2018.  This file contains :dfn:`source code`.
+The GNU Fortran compiler passes the
+`NIST Fortran 77 Test Suite <http://www.fortran-2000.com/ArnaudRecipes/fcvs21_f95.html>`_, and produces acceptable results on the
+`LAPACK Test Suite <http://www.netlib.org/lapack/faq.html#1.21>`_.
+It also provides respectable performance on
+the `Polyhedron Fortran compiler benchmarks <https://polyhedron.com/?page_id=175>`_ and the
+`Livermore Fortran Kernels test <http://www.netlib.org/benchmark/livermore>`_.  It has been used to compile a number of
+large real-world programs, including
+`the HARMONIE and HIRLAM weather forecasting code <http://hirlam.org/>`_ and
+`the Tonto quantum chemistry package <https://github.com/dylan-jayatilaka/tonto>`_; see
+https://gcc.gnu.org/wiki/GfortranApps for an extended list.
 
-* Translate the user's program into instructions a computer
+GNU Fortran provides the following functionality:
+
+* Read a program, stored in a file and containing :dfn:`source code`
+  instructions written in Fortran 77.
+
+* Translate the program into instructions a computer
   can carry out more quickly than it takes to translate the
-  instructions in the first
-  place.  The result after compilation of a program is
+  original Fortran instructions.
+  The result after compilation of a program is
   :dfn:`machine code`,
-  code designed to be efficiently translated and processed
+  which is efficiently translated and processed
   by a machine such as your computer.
   Humans usually are not as good writing machine code
   as they are at writing Fortran (or C++, Ada, or Java),
   because it is easy to make tiny mistakes writing machine code.
 
-* Provide the user with information about the reasons why
-  the compiler is unable to create a binary from the source code.
-  Usually this will be the case if the source code is flawed.
-  The Fortran 90 standard requires that the compiler can point out
-  mistakes to the user.
+* Provide information about the reasons why
+  the compiler may be unable to create a binary from the source code,
+  for example if the source code is flawed.
+  The Fortran language standards require that the compiler can point out
+  mistakes in your code.
   An incorrect usage of the language causes an :dfn:`error message`.
 
-  The compiler will also attempt to diagnose cases where the
-  user's program contains a correct usage of the language,
+  The compiler also attempts to diagnose cases where your
+  program contains a correct usage of the language,
   but instructs the computer to do something questionable.
-  This kind of diagnostics message is called a :dfn:`warning message`.
+  This kind of diagnostic message is called a :dfn:`warning message`.
 
 * Provide optional information about the translation passes
   from the source code to machine code.
-  This can help a user of the compiler to find the cause of
+  This can help you to find the cause of
   certain bugs which may not be obvious in the source code,
   but may be more easily found at a lower level compiler output.
   It also helps developers to find bugs in the compiler itself.
@@ -52,7 +69,7 @@ following features:
   called a :dfn:`debugger`, such as the GNU Debugger :command:`gdb`).
 
 * Locate and gather machine code already generated to
-  perform actions requested by statements in the user's program.
+  perform actions requested by statements in the program.
   This machine code is organized into :dfn:`modules` and is located
   and :dfn:`linked` to the user program.
 
@@ -72,8 +89,9 @@ The GNU Fortran compiler consists of several components:
   system's :command:`f95` command.
   :command:`gfortran` is just another driver program,
   but specifically for the Fortran compiler only.
-  The difference with :command:`gcc` is that :command:`gfortran`
-  will automatically link the correct libraries to your program.
+  The primary difference between the :command:`gcc` and :command:`gfortran`
+  commands is that the latter automatically links the correct libraries
+  to your program.
 
 * A collection of run-time libraries.
   These libraries contain the machine code needed to support
@@ -94,7 +112,7 @@ The GNU Fortran compiler consists of several components:
   assembler code.  You would typically not use this
   program directly;
   instead, the :command:`gcc` or :command:`gfortran` driver
-  programs will call it for you.
+  programs call it for you.
 
 .. -
    GNU Fortran and GCC

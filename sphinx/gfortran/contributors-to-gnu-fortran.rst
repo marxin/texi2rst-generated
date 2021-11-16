@@ -101,6 +101,8 @@ GNU Fortran project:
 
 * Erik Schnetter
 
+* Gerhard Steinmetz
+
 * Joost VandeVondele
 
 Many other individuals have helped debug,

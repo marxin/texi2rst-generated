@@ -39,6 +39,5 @@ INT8 --- Convert to 64-bit integer type
 
   :samp:`{See also}:`
     INT, 
-    INT2, 
-    LONG
+    INT2
 
