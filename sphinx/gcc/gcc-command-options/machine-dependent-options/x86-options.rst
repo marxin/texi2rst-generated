@@ -1421,6 +1421,21 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Force indirect call and jump via register.
 
+.. option:: -mharden-sls=choice
+
+  Generate code to mitigate against straight line speculation (SLS) with
+  :samp:`{choice}`.  The default is :samp:`none` which disables all SLS
+  hardening.  :samp:`return` enables SLS hardening for function return.
+  :samp:`indirect-branch` enables SLS hardening for indirect branch.
+  :samp:`all` enables all SLS hardening.
+
+.. option:: -mindirect-branch-cs-prefix
+
+  Add CS prefix to call and jmp to indirect thunk with branch target in
+  r8-r15 registers so that the call and jmp instruction length is 6 bytes
+  to allow them to be replaced with :samp:`lfence; call *%r8-r15` or
+  :samp:`lfence; jmp *%r8-r15` at run-time.
+
 These :samp:`-m` switches are supported in addition to the above
 on x86-64 processors in 64-bit environments.
 

@@ -309,6 +309,13 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Default setting; overrides :option:`-fno-gnu-keywords`.
 
+.. option:: -fimplicit-constexpr
+
+  Make inline functions implicitly constexpr, if they satisfy the
+  requirements for a constexpr function.  This option can be used in
+  C++14 mode or later.  This can result in initialization changing from
+  dynamic to static and other optimizations.
+
 .. option:: -fno-implicit-templates
 
   Never emit code for non-inline templates that are instantiated

@@ -1747,6 +1747,18 @@ warn at all unless optimization is enabled.
   computations may be deleted by data flow analysis before the warnings
   are printed.
 
+  In C++, this warning also warns about using uninitialized objects in
+  member-initializer-lists.  For example, GCC warns about ``b`` being
+  uninitialized in the following snippet:
+
+  .. code-block:: c++
+
+    struct A {
+      int a;
+      int b;
+      A() : a(b) { }
+    };
+
 .. option:: -Wno-uninitialized
 
   Default setting; overrides :option:`-Wuninitialized`.
@@ -2453,6 +2465,21 @@ warn at all unless optimization is enabled.
 .. option:: -Wattribute-alias
 
   Default setting; overrides :option:`-Wno-attribute-alias`.
+
+.. option:: -Wbidi-chars=[none|unpaired|any]
+
+  Warn about possibly misleading UTF-8 bidirectional control characters in
+  comments, string literals, character constants, and identifiers.  Such
+  characters can change left-to-right writing direction into right-to-left
+  (and vice versa), which can cause confusion between the logical order and
+  visual order.  This may be dangerous; for instance, it may seem that a piece
+  of code is not commented out, whereas it in fact is.
+
+  There are three levels of warning supported by GCC.  The default is
+  :option:`-Wbidi-chars`:samp:`=unpaired`, which warns about improperly terminated
+  bidi contexts.  :option:`-Wbidi-chars`:samp:`=none` turns the warning off.
+  :option:`-Wbidi-chars`:samp:`=any` warns about any use of bidirectional control
+  characters.
 
 .. option:: -Wbool-compare
 
@@ -3715,6 +3742,8 @@ warn at all unless optimization is enabled.
   as ``inptr_t`` or ``uinptr_t``.
   Comparisons against string literals result in unspecified behavior
   and are not portable, and suggest the intent was to call ``strcmp``.
+  The warning is suppressed if the suspicious expression is the result
+  of macro expansion.
   :option:`-Waddress` warning is enabled by :option:`-Wall`.
 
 .. option:: -Wno-address

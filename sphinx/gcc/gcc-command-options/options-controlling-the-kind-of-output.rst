@@ -394,7 +394,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   default :samp:`{dumpbase}` derived from the primary output name.  Dump
   outputs also take the input name suffix: :samp:`dir/bar.c.*`.
 
-  It defaults to the location of the output file; options
+  It defaults to the location of the output file, unless the output
+  file is a special file like ``/dev/null``. Options
   :option:`-save-temps`:samp:`=cwd` and :option:`-save-temps`:samp:`=obj` override this
   default, just like an explicit :option:`-dumpdir` option.  In case
   multiple such options are given, the last one prevails:

@@ -2478,13 +2478,17 @@ addmodecc
 
   .. index:: cond_umaxmode instruction pattern
 
+  .. index:: cond_fminmode instruction pattern
+
+  .. index:: cond_fmaxmode instruction pattern
+
   .. index:: cond_ashlmode instruction pattern
 
   .. index:: cond_ashrmode instruction pattern
 
   .. index:: cond_lshrmode instruction pattern
 
-cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode cond_umodmode cond_andmode cond_iormode cond_xormode cond_sminmode cond_smaxmode cond_uminmode cond_umaxmode cond_ashlmode cond_ashrmode cond_lshrmode
+cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode cond_umodmode cond_andmode cond_iormode cond_xormode cond_sminmode cond_smaxmode cond_uminmode cond_umaxmode cond_fminmode cond_fmaxmode cond_ashlmode cond_ashrmode cond_lshrmode
   When operand 1 is true, perform an operation on operands 2 and 3 and
   store the result in operand 0, otherwise store operand 4 in operand 0.
   The operation works elementwise if the operands are vectors.
