@@ -73,7 +73,7 @@ Fortran 2003 status
 GNU Fortran implements the Fortran 2003 (ISO/IEC 1539-1:2004) standard
 except for finalization support, which is incomplete.
 See the
-`wiki page <https://gcc.gnu.org/wiki/Fortran2003>`_ for a full list
+`Fortran 2003 wiki page <https://gcc.gnu.org/wiki/Fortran2003>`_ for a full list
 of new features introduced by Fortran 2003 and their implementation status.
 
 .. _fortran-2008-status:
@@ -82,7 +82,7 @@ Fortran 2008 status
 ^^^^^^^^^^^^^^^^^^^
 
 The GNU Fortran compiler supports almost all features of Fortran 2008;
-the `wiki <https://gcc.gnu.org/wiki/Fortran2008Status>`_
+the `Fortran 2008 wiki <https://gcc.gnu.org/wiki/Fortran2008Status>`_
 has some information about the current implementation status.
 In particular, the following are not yet supported:
 
