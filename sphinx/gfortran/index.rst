@@ -24,8 +24,19 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
 
   copyright
   introduction
+
+Part I: Invoking GNU Fortran
+----------------------------
+
+.. toctree::
+
   gnu-fortran-command-options
   runtime
+
+Part II: Language Reference
+---------------------------
+
+.. toctree::
 
   compiler-characteristics
   extensions
