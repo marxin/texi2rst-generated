@@ -25,7 +25,7 @@ set up these lists:
 ``torture-finish``
   Finalize use of torture lists.
 
-  The :samp:`.exp` file for a set of tests that use torture options must
+The :samp:`.exp` file for a set of tests that use torture options must
 include calls to these three procedures if:
 
 * It calls ``gcc-dg-runtest`` and overrides :samp:`{DG_TORTURE_OPTIONS}`.
