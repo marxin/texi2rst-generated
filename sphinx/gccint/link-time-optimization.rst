@@ -3,6 +3,11 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+  Contributed by Jan Hubicka <jh@suse.cz> and
+  Diego Novillo <dnovillo@google.com>
+
+
+
 .. _lto:
 
 Link Time Optimization

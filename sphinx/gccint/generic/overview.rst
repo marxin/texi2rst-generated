@@ -233,8 +233,3 @@ nodes themselves are accessed using the ``TREE_VEC_ELT`` macro, which
 takes two arguments.  The first is the ``TREE_VEC`` in question; the
 second is an integer indicating which element in the vector is desired.
 The elements are indexed from zero.
-
-.. -
-   Types
-   -
-

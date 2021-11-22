@@ -26,10 +26,3 @@ The proper way to interface GCC to a new language front end is with
 the 'tree' data structure, described in the files :samp:`tree.h` and
 :samp:`tree.def`.  The documentation for this structure (see :ref:`generic`)
 is incomplete.
-
-.. -*-texinfo-*-
-
-.. -
-   Control Flow Graph
-   -
-

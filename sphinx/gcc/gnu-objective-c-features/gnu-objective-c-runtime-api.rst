@@ -96,6 +96,3 @@ API).  Software using this API includes the file
 
 Starting with GCC 4.7.0, the traditional GNU runtime API is no longer
 available.
-
-.. =========================================================================
-

@@ -32,6 +32,3 @@ this.
 Only the profile from the current build is used, so when an error
 occurs it is recommended to clean before restarting. Otherwise
 the code quality may be much worse.
-
-.. ***Testing*****************************************************************
-

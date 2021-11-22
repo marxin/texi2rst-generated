@@ -2069,6 +2069,3 @@ The following options apply to the build of the D runtime library.
   to be available for each multilib variant, unless configured with
   :option:`--with-target-system-zlib`:samp:`=auto` in which case the GCCincluded
   :samp:`zlib` is only used when the system installed library is not available.
-
-.. ***Building****************************************************************
-

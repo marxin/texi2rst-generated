@@ -259,10 +259,3 @@ have threads with different priorities will likely also require lower latency
 or higher throughput for high-priority threads. Therefore, it probably makes
 not that much sense (except for eventual progress guarantees) to use
 priority inheritance until the TM has priority-aware contention management.
-
-.. -
-   GNU Free Documentation License
-   -
-
-.. Special handling for inclusion in the install manual.
-

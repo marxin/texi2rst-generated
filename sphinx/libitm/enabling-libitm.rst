@@ -11,8 +11,3 @@ Enabling libitm
 To activate support for TM in C/C++, the compile-time flag :option:`-fgnu-tm`
 must be specified. This enables TM language-level constructs such as
 transaction statements (e.g., ``__transaction_atomic``, see :ref:`c-c++-language-constructs-for-tm` for details).
-
-.. -
-   C/C++ Language Constructs for TM
-   -
-

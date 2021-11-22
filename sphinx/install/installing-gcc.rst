@@ -37,6 +37,3 @@ we suggest that you install GCC into a directory of its own and simply
 remove that directory when you do not need that specific version of GCC
 any longer, and, if shared libraries are installed there as well, no
 more binaries exist that use them.
-
-.. ***Prerequisites**************************************************
-

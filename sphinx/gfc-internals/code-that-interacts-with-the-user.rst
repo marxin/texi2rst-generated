@@ -13,8 +13,3 @@ Code that Interacts with the User
 
   command-line-options
   error-handling
-
-.. -
-   Command-Line Options
-   -
-

@@ -41,8 +41,3 @@ The following mathematical constants of type ``__float128`` are defined.
 * :samp:`{M_2_SQRTPIq}`:  two over square root of pi
 * :samp:`{M_SQRT2q}`:  square root of 2
 * :samp:`{M_SQRT1_2q}`:  one over square root of 2
-
-.. -
-   Math routines
-   -
-

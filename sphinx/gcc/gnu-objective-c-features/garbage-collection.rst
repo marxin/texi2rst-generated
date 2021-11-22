@@ -79,6 +79,3 @@ represented by the :samp:`!` character.  The
 ``class_ivar_set_gcinvisible()`` function adds or removes this
 specifier to the string type description of the instance variable named
 as argument.
-
-.. =========================================================================
-

@@ -356,6 +356,3 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   This warning option corresponds to ``cpplib.h`` warning reason code
   :samp:`{CPP_W_Enum}`.  This should only be used for warning options of the
   C-family front-ends.
-
-.. markers: BUG TODO
-

@@ -42,6 +42,3 @@ Otherwise unpack the GMP, MPFR and/or MPC source
 distributions in the directory containing the GCC sources and rename
 their directories to :samp:`gmp`, :samp:`mpfr` and :samp:`mpc`,
 respectively (or use symbolic links with the same name).
-
-.. ***Configuration***********************************************************
-

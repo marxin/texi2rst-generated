@@ -34,6 +34,3 @@ Because of the interactions between synchronization and exception
 handling, you can only use ``@synchronized`` when compiling with
 exceptions enabled, that is with the command line option
 :option:`-fobjc-exceptions`.
-
-.. =========================================================================
-

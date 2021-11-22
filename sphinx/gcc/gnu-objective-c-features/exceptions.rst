@@ -77,6 +77,3 @@ There are several caveats to using the new exception mechanism:
   exceptions at this time.  This means you cannot ``@throw`` an exception
   from Objective-C and ``catch`` it in C++, or vice versa
   (i.e., ``throw ... @catch``).
-
-.. =========================================================================
-

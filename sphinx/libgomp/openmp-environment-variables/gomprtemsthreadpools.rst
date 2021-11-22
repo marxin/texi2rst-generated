@@ -46,8 +46,3 @@ GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
   instance, the worker thread inherits the priority of the OpenMP primary thread
   that created it.  In the scheduler instance ``WRK1`` there are three thread
   pools available and their worker threads run at priority four.
-
-.. -
-   Enabling OpenACC
-   -
-

@@ -14,8 +14,3 @@ used for accessing that entity in the middle-end.
 
 Accessing declarations is usually done by functions called
 ``gfc_get*``.
-
-.. -
-   LibGFortran
-   -
-

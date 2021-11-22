@@ -1351,8 +1351,3 @@ C++ support is significantly better on ELF targets if you use the
 GNU linker; duplicate copies of
 inlines, vtables and template instantiations will be discarded
 automatically.
-
-.. ***GFDL********************************************************************
-
-.. Special handling for inclusion in the install manual.
-

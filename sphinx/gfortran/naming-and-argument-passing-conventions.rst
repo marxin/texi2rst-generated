@@ -178,8 +178,3 @@ The arguments are passed in the following order
   argument which is a ``CHARACTER`` or a nonallocatable coarray dummy
   argument, followed by the hidden arguments of the next dummy argument
   of such a type
-
-.. -
-   Coarray Programming
-   -
-

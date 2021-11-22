@@ -31,8 +31,3 @@ the operator call.  If there's indeed a relevant definition, the
 operator call is replaced with an internally generated ``GENERIC``
 type-bound procedure call to the respective definition and that call is
 further processed.
-
-.. -
-   - Translating to GENERIC
-   -
-

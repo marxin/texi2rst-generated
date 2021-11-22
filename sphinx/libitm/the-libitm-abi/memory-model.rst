@@ -16,8 +16,3 @@ For example, if a transactional load is ordered before another load/store, then
 the TM runtime must also ensure this ordering when accessing shared state. If
 not, this might break the kind of publication safety used in the C++ TM
 specification. Likewise, the TM runtime must ensure privatization safety.
-
-.. -
-   Internals
-   -
-

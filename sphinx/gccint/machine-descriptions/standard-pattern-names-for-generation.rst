@@ -3606,9 +3606,3 @@ clear_cache
 
   If this pattern is not defined, a call to the library function
   ``__clear_cache`` is used.
-
-.. Each of the following nodes are wrapped in separate
-   "@ifset INTERNALS" to work around memory limits for the default
-   configuration in older tetex distributions.  Known to not work:
-   tetex-1.0.7, known to work: tetex-2.0.2.
-

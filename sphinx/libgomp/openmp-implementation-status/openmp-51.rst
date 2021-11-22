@@ -85,8 +85,3 @@ Support of structured block sequences in C/C++                 Y
 ``unconstrained`` and ``reproducible`` modifiers on ``order``  Y
       clause
 =============================================================  ======  ========
-
-.. -
-   OpenMP Runtime Library Routines
-   -
-

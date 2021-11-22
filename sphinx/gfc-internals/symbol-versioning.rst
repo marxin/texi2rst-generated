@@ -61,10 +61,3 @@ contains this example would define 4 C functions: ``original_foo``,
 
 In this case the map file must contain ``foo`` in ``VERS_1.1``
 and ``VERS_1.2`` as well as in ``VERS_2.0``.
-
-.. -
-   GNU Free Documentation License
-   -
-
-.. Special handling for inclusion in the install manual.
-

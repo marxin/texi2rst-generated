@@ -279,6 +279,3 @@ GNU diffutils version 2.7 (or later)
 patch version 2.5.4 (or later)
   Necessary when applying patches, created with :command:`diff`, to one's
   own sources.
-
-.. ***Downloading the source**************************************************
-

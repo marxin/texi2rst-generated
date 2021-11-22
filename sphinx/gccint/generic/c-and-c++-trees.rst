@@ -1022,6 +1022,3 @@ ends.
   list.
 
   In either case, the expression is void.
-
-.. Free Software Foundation, Inc.
-

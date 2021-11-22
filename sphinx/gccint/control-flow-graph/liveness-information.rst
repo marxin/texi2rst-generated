@@ -46,9 +46,3 @@ representing that the value of a given register is no longer needed, or
 ``REG_UNUSED`` notes representing that the value computed by the
 instruction is never used.  The second is useful for instructions
 computing multiple values at once.
-
-.. Free Software Foundation, Inc.
-   -
-   Loop Representation
-   -
-

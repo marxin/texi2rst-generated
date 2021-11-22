@@ -40,6 +40,3 @@ meant to be used directly from the command line.
   This option specifies the linker resolution file.  This option is
   only meaningful in conjunction with :option:`-fwpa` and as option
   to pass through to the LTO linker plugin.
-
-.. Free Software Foundation, Inc.
-

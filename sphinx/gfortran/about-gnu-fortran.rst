@@ -113,8 +113,3 @@ The GNU Fortran compiler consists of several components:
   program directly;
   instead, the :command:`gcc` or :command:`gfortran` driver
   programs call it for you.
-
-.. -
-   GNU Fortran and GCC
-   -
-

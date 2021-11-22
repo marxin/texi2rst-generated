@@ -60,8 +60,3 @@ statement: ``walk_gimple_op``.
   ``walk_gimple_stmt``.  If ``walk_gimple_stmt`` returns non- ``NULL``, the walk
   is stopped and the value returned.  Otherwise, all the statements
   are walked and ``NULL_TREE`` returned.
-
-.. -
-   Tree SSA
-   -
-

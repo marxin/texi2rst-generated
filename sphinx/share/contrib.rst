@@ -1271,8 +1271,3 @@ to testing:
 And finally we'd like to thank everyone who uses the compiler, provides
 feedback and generally reminds us why we're doing this work in the first
 place.
-
-.. -
-   Indexes
-   -
-

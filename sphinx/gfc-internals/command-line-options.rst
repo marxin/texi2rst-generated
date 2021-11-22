@@ -29,8 +29,3 @@ The global flags that record the option states are stored in the
 Before the options are processed, initial values for these flags are set
 in ``gfc_init_option`` in :samp:`options.c`; these become the default
 values for the options.
-
-.. -
-   Error Handling
-   -
-

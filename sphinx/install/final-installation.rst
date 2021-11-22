@@ -132,6 +132,3 @@ recent version of GCC.
 If you would like to generate online HTML documentation, do :samp:`cd
 {objdir}; make html` and HTML will be generated for the gcc manuals in
 :samp:`{objdir}/gcc/HTML`.
-
-.. ***Binaries****************************************************************
-

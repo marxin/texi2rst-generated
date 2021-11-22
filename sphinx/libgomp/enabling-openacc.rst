@@ -22,8 +22,3 @@ See https://gcc.gnu.org/wiki/OpenACC for more information.
 A complete description of all OpenACC directives accepted may be found in 
 the `OpenACC <https://www.openacc.org>`_ Application Programming
 Interface manual, version 2.6.
-
-.. -
-   OpenACC Runtime Library Routines
-   -
-

@@ -27,8 +27,3 @@ Projects
   to the implementation of extensions such as OpenMP (see :ref:`openmp`) or
   OpenACC (see :ref:`openacc`) that are under active development.  Again,
   contributing test cases for these features is useful too!
-
-.. -
-   GNU General Public License
-   -
-

@@ -381,5 +381,3 @@ You can use the above predicate like
 Which will match a bitwise and of an operand with its logical
 inverted value.
 
-.. Contributed by David Malcolm <dmalcolm@redhat.com>.
-

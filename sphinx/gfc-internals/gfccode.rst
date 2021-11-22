@@ -146,7 +146,3 @@ of the ``BLOCK`` construct assignments are automatically generated to
 set the corresponding variables to their target expressions' values, and
 later on the compiler simply disallows using such associate-names in contexts
 that may change the value.
-
-.. gfc_expr
-   -
-

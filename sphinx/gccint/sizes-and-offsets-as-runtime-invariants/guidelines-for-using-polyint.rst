@@ -117,8 +117,3 @@ There are two main exceptions:
   * Add ``to_constant ()`` calls where necessary.  The previous option
     is preferable because it will help with any future conversion of the
     macro to a hook.
-
-.. -
-   GENERIC
-   -
-

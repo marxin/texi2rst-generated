@@ -71,10 +71,3 @@ Example
         }
       return 0;
     }
-
-.. -
-   GNU Free Documentation License
-   -
-
-.. Special handling for inclusion in the install manual.
-

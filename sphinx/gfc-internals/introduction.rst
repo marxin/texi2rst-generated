@@ -30,8 +30,3 @@ that at some point in the future it will become a reasonably complete
 guide; in the interim, GNU Fortran developers are strongly encouraged to
 contribute to it as a way of keeping notes while working on the 
 compiler.
-
-.. -
-   Code that Interacts with the User
-   -
-

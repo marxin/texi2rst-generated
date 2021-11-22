@@ -81,6 +81,3 @@ values after a ``longjmp``.  And this is all GCC promises to do,
 because it is very difficult to restore register variables correctly, and
 one of GCC's features is that it can put variables in registers without
 your asking it to.
-
-.. Contributed by Aldy Hernandez <aldy@quesejoda.com>
-

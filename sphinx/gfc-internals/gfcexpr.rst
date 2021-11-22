@@ -156,8 +156,3 @@ reference of a constant string, as in the following code snippet:
 In this case, ``value.character`` contains the full string's data as if it
 was a string constant, but the ``ref`` member is also set and points to a
 substring reference as described in the subsection above.
-
-.. -
-   F2003 OOP
-   -
-

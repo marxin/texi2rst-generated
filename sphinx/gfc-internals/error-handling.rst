@@ -73,8 +73,3 @@ the various error and warning functions is similar to the ``printf``
 syntax, with :samp:`%`-escapes to insert variable values.  The details,
 and the allowable codes, are documented in the ``error_print``
 function in :samp:`error.c`.
-
-.. -
-   Frontend Data Structures
-   -
-

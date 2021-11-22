@@ -48,8 +48,3 @@ that relate to the optimization passes and the back-end code generation
 are documented in the GCC manual.
 The two manuals together provide a complete reference for the GNU
 Fortran compiler.
-
-.. -
-   Standards
-   -
-

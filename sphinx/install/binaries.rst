@@ -57,6 +57,3 @@ contact their makers.
 
 * The `GFortran Wiki <http://gcc.gnu.org/wiki/GFortranBinaries>`_ has
   links to GNU Fortran binaries for several platforms.
-
-.. ***Specific****************************************************************
-

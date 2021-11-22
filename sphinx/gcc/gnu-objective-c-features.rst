@@ -25,6 +25,3 @@ several resources on the Internet that present the language.
   gnu-objective-c-features/synchronization
   gnu-objective-c-features/fast-enumeration
   gnu-objective-c-features/messaging-with-the-gnu-objective-c-runtime
-
-.. =========================================================================
-

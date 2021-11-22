@@ -45,8 +45,3 @@ seems inelegant.
   generic/functions
   generic/language-dependent-trees
   generic/c-and-c++-trees
-
-.. -
-   Deficiencies
-   -
-

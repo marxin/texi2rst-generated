@@ -24,6 +24,3 @@ There are some constraints on how this can be used---
 * ``WOApplication`` (the alias) must not be an existing class;
 
 * ``GSWApplication`` (the real class) must be an existing class.
-
-.. =========================================================================
-

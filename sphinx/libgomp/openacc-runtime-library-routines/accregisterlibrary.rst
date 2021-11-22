@@ -23,8 +23,3 @@ acc_register_library -- Library registration.
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.
-
-.. -
-   OpenACC Environment Variables
-   -
-

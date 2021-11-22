@@ -381,8 +381,3 @@ These include:
 
   It may sometimes be useful to compare one of these variables with a type
   in hand, using ``same_type_p``.
-
-.. -
-   Declarations
-   -
-

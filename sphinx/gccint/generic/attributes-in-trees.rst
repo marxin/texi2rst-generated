@@ -33,8 +33,3 @@ declaration or type or to other internal compiler data structures.
 .. function:: tree TYPE_ATTRIBUTES (tree type)
 
   This macro returns the attributes on the type :samp:`{type}`.
-
-.. -
-   Expressions
-   -
-

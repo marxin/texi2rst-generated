@@ -95,8 +95,3 @@ compiler:
 When a plugin needs to use :command:`gengtype`, be sure that both
 :samp:`gengtype` and :samp:`gtype.state` have the same version as the
 GCC for which the plugin is built.
-
-.. Contributed by Jan Hubicka <jh@suse.cz> and
-
-.. Diego Novillo <dnovillo@google.com>
-

@@ -378,8 +378,3 @@ Add macros to access any new fields and flags
   turn includes all the :samp:`tree.def` files), :samp:`gencheck.c` is
   used during GCC's build to generate the ``*_CHECK`` macros for all
   tree codes.
-
-.. -
-   Attributes
-   -
-

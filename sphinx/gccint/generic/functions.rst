@@ -222,8 +222,3 @@ a containing function, and the back end must take appropriate action.
   that are to be used to compile this particular function or
   ``NULL_TREE`` if the function is to be compiled with the
   optimization options specified on the command line.
-
-.. -
-   Language-dependent trees
-   -
-

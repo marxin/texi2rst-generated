@@ -33,8 +33,3 @@ omp_fulfill_event -- Fulfill and destroy an OpenMP event
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.5.1.
-
-.. -
-   OpenMP Environment Variables
-   -
-

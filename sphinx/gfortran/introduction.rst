@@ -16,8 +16,3 @@ Introduction
   about-gnu-fortran
   gnu-fortran-and-gcc
   standards
-
-.. -
-   About GNU Fortran
-   -
-

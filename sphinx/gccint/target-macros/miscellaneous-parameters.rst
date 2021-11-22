@@ -1690,10 +1690,3 @@ Here are several miscellaneous parameters.
   type.
 
 .. hook-end
-
-.. Copyright (C) 1988-2021 Free Software Foundation, Inc.
-
-.. This is part of the GCC manual.
-
-.. For copying conditions, see the file gccint.texi.
-

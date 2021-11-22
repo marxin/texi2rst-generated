@@ -279,8 +279,3 @@ offloading devices (it's not clear if they should be):
 * ``acc_memcpy_to_device``, ``acc_memcpy_to_device_async``
 
 * ``acc_memcpy_from_device``, ``acc_memcpy_from_device_async``
-
-.. -
-   The libgomp ABI
-   -
-

@@ -21,7 +21,3 @@ environment variables, which in turn take precedence over the
 configuration of GCC.
 
 .. include:: ../share/cppenv.rst
-
-
-.. Special handling for inclusion in the install manual.
-

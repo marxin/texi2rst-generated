@@ -556,8 +556,3 @@ clauses used by the OpenACC API https://www.openacc.org.
 .. envvar:: OACC_UPDATE
 
   Represents ``#pragma acc update [clause1 ... clauseN]``.
-
-.. -
-   Functions
-   -
-

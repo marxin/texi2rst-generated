@@ -102,8 +102,3 @@ The following mathematical functions are available:
 * :samp:`{csqrtq}`:  complex square root
 * :samp:`{ctanq}`:  complex tangent function
 * :samp:`{ctanhq}`:  complex hyperbolic tangent function
-
-.. -
-   I/O routines
-   -
-

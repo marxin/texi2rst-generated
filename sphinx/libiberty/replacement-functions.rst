@@ -62,6 +62,3 @@ Error Reporting
 These are a set of routines to facilitate programming with the system
 ``errno`` interface.  The ``libiberty`` source file :samp:`strerror.c`
 contains a good deal of documentation for these functions.
-
-.. signal stuff
-

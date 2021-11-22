@@ -12,8 +12,3 @@ The LibGFortran Runtime Library
   :maxdepth: 2
 
   symbol-versioning
-
-.. -
-   Symbol Versioning
-   -
-

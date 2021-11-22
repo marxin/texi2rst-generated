@@ -26,8 +26,3 @@ For details refer to the actual
 named constant ``openacc_version`` with a value of the form
 :samp:`{yyyymm}`, where ``yyyy`` is the year and :samp:`{mm}` the month
 of the OpenACC version; for OpenACC v2.6 the value is ``201711``.
-
-.. -
-   Contributing
-   -
-

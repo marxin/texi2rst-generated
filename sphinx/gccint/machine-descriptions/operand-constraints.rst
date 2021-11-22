@@ -3,6 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. Most of this node appears by itself (in a different place) even
+   when the INTERNALS flag is clear.  Passages that require the internals
+   manual's context are conditionalized to appear only in the internals manual.
+
 .. _constraints:
 
 Operand Constraints

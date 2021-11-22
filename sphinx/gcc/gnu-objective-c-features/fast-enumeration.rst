@@ -219,6 +219,3 @@ approximate check that the collection has not been mutated.
 Finally, note how we declared the ``len`` argument and the return
 value to be of type ``unsigned long``.  They could also be declared
 to be of type ``unsigned int`` and everything would still work.
-
-.. =========================================================================
-

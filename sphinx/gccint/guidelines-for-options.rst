@@ -15,4 +15,3 @@ Guidelines for Options
 .. index:: guidelines for options
 
 .. TODO
-

@@ -188,9 +188,3 @@ formatted stream, read the data up to the position where the ``Q``
 descriptor occurred, use ``INQUIRE`` to get the file position,
 count the characters up to the next ``NEW_LINE`` and then start
 reading from the position marked previously.
-
-.. -
-   -
-   Mixed-Language Programming
-   -
-

@@ -1141,8 +1141,3 @@ Vectors
   operand must be at lease twice of the size of the vector element of the
   first and second one.  The SAD is calculated between the first and second
   operands, added to the third operand, and returned.
-
-.. -
-   Statements
-   -
-

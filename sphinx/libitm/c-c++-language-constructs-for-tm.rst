@@ -37,8 +37,3 @@ using a single global lock as a guard for all transactions. Note that like
 other synchronization constructs in C/C++, transactions rely on a
 data-race-free program (e.g., a nontransactional write that is concurrent
 with a transactional read to the same memory location is a data race).
-
-.. -
-   The libitm ABI
-   -
-

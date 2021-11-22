@@ -20,6 +20,3 @@ prepended to the testsuite summary and should contain any special
 remarks you have on your results or your build environment.  Please
 do not edit the testsuite result block or the subject line, as these
 messages may be automatically processed.
-
-.. ***Final install***********************************************************
-

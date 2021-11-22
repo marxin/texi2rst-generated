@@ -21,10 +21,3 @@ On some systems, such as Darwin or Solaris, the POSIX thread library
 is always linked in, so asynchronous I/O is always performed. On other
 sytems, such as Linux, it is necessary to specify :option:`-pthread`,
 :option:`-lpthread` or :option:`-fopenmp` during the linking step.
-
-.. -
-   Extensions
-   -
-   Maybe this chapter should be merged with the 'Standards' section,
-   whenever that is written :-)
-

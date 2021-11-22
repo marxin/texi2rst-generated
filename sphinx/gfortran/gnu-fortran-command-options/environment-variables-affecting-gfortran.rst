@@ -22,8 +22,3 @@ variables.
 
 See :ref:`runtime`, for environment variables that affect the
 run-time behavior of programs compiled with GNU Fortran.
-
-.. -
-   Runtime
-   -
-

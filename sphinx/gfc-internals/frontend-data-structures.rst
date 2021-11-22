@@ -21,7 +21,3 @@ structures.
 
   gfccode
   gfcexpr
-
-.. gfc_code
-   -
-

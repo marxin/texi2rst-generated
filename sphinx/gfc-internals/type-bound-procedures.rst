@@ -99,7 +99,3 @@ need not be of type ``EXPR_VARIABLE`` and thus representable in this way.
 Finally, if ``value.compcall.assign`` is set, the call was produced in
 expansion of a type-bound assignment; this means that proper dependency-checking
 needs to be done when relevant.
-
-.. Type-bound operators
-   -
-

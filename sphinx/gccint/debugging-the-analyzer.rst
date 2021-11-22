@@ -115,6 +115,3 @@ and the exploded graph in compressed JSON form.
 One approach when tracking down where a particular bogus state is
 introduced into the ``exploded_graph`` is to add custom code to
 ``program_state::validate``.
-
-.. Free Software Foundation, Inc.
-

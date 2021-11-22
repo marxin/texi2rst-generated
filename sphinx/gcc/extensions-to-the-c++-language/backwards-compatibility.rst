@@ -27,7 +27,3 @@ deprecated.   See :ref:`deprecated-features`.
   implicitly scoped inside a C language scope.  Such headers must
   correctly prototype function argument types, there is no leeway for
   ``()`` to indicate an unspecified set of arguments.
-
-..  LocalWords:  emph deftypefn builtin ARCv2EM SIMD builtins msimd
-    LocalWords:  typedef v4si v8hi DMA dma vdiwr vdowr
-
