@@ -209,6 +209,7 @@ See :ref:`overall-options`, for examples.
   It turns on :option:`-ffast-math`, :option:`-fallow-store-data-races`
   and the Fortran-specific :option:`-fstack-arrays`, unless
   :option:`-fmax-stack-var-size` is specified, and :option:`-fno-protect-parens`.
+  It turns off :option:`-fsemantic-interposition`.
 
 .. option:: -Og
 

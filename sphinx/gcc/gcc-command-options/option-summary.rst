@@ -159,7 +159,9 @@ in the following sections.
   :option:`-Warith-conversion` 
   :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` 
   :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` 
-  :option:`-Wno-attribute-warning`  :option:`-Wbool-compare`  :option:`-Wbool-operation` 
+  :option:`-Wno-attribute-warning`  
+  :option:`-Wbidi-chars` =[none|unpaired|any] 
+  :option:`-Wbool-compare`  :option:`-Wbool-operation` 
   :option:`-Wno-builtin-declaration-mismatch` 
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` 
   :option:`-Wc11-c2x-compat` 
@@ -1325,7 +1327,8 @@ in the following sections.
   :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` 
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
   :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
-  :option:`-mindirect-branch-register` :option:`-mneeded`
+  :option:`-mindirect-branch-register` :option:`-mharden-sls`:samp:`={choice}` 
+  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded`
 
   *x86 Windows Options*
 

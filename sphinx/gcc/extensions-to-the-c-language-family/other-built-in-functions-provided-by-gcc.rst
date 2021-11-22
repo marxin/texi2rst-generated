@@ -1581,6 +1581,23 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
         }
     }
 
+.. function:: type __builtin_assoc_barrier (type expr)
+
+  This built-in inhibits re-association of the floating-point expression
+  :samp:`{expr}` with expressions consuming the return value of the built-in. The
+  expression :samp:`{expr}` itself can be reordered, and the whole expression
+  :samp:`{expr}` can be reordered with operands after the barrier. The barrier is
+  only relevant when ``-fassociative-math`` is active, since otherwise
+  floating-point is not treated as associative.
+
+  .. code-block:: c++
+
+    float x0 = a + b - b;
+    float x1 = __builtin_assoc_barrier(a + b) - b;
+
+  means that, with ``-fassociative-math``, ``x0`` can be optimized to
+  ``x0 = a`` but ``x1`` cannot.
+
 .. function:: void * __builtin_assume_aligned (const void *exp, size_t align, ...)
 
   This function returns its first argument, and allows the compiler
