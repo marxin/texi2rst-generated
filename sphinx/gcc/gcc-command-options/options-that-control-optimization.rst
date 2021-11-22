@@ -4467,11 +4467,6 @@ section includes experimental options that may produce broken code.
     If :option:`-fvariable-expansion-in-unroller` is used, the maximum number
     of times that an individual variable will be expanded during loop unrolling.
 
-  .. gcc-param:: tracer-min-branch-probability-feedback
-
-    Stop forward growth if the probability of best edge is less than
-    this threshold (in percent). Used when profile feedback is available.
-
   .. gcc-param:: partial-inlining-entry-probability
 
     Maximum probability of the entry BB of split region
@@ -4531,11 +4526,6 @@ section includes experimental options that may produce broken code.
 
     The number of cycles the swing modulo scheduler considers when checking
     conflicts using DFA.
-
-  .. gcc-param:: max-inline-insns-recursive-auto
-
-    The maximum number of instructions non-inline function
-    can grow to via recursive inlining.
 
   .. gcc-param:: graphite-allow-codegen-errors
 
@@ -4599,11 +4589,6 @@ section includes experimental options that may produce broken code.
 
     Maximum number of nested calls to search for control dependencies
     during uninitialized variable analysis.
-
-  .. gcc-param:: sra-max-scalarization-size-Osize
-
-    Maximum size, in storage units, of an aggregate
-    which should be considered for scalarization when compiling for size.
 
   .. gcc-param:: fsm-scale-path-blocks
 
