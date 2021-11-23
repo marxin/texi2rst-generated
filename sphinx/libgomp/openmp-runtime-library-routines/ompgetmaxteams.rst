@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_max_teams:
-
+.. _omp_get_max_teams:
 omp_get_max_teams -- Maximum number of teams of teams region
 ************************************************************
 

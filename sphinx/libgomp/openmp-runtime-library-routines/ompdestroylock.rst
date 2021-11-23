@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_destroy_lock:
-
+.. _omp_destroy_lock:
 omp_destroy_lock -- Destroy simple lock
 ***************************************
 

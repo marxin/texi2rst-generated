@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _basic-powerpc-built-in-functions:
-
+.. _basic-powerpc-built-in-functions:
 Basic PowerPC Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

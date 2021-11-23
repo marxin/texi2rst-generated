@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_dynamic:
-
+.. _omp_dynamic:
 OMP_DYNAMIC -- Dynamic adjustment of threads
 ********************************************
 

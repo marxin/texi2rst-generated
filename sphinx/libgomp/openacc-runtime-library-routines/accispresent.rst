@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_is_present:
-
+.. _acc_is_present:
 acc_is_present -- Indicate whether host variable / array is present on device.
 ******************************************************************************
 

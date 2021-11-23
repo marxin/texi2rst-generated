@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_num_teams:
-
+.. _omp_set_num_teams:
 omp_set_num_teams -- Set upper teams limit for teams construct
 **************************************************************
 

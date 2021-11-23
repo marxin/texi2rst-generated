@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _nds32-built-in-functions:
-
+.. _nds32-built-in-functions:
 NDS32 Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^
 

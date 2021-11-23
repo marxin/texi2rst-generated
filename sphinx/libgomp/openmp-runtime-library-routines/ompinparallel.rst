@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_in_parallel:
-
+.. _omp_in_parallel:
 omp_in_parallel -- Whether a parallel region is active
 ******************************************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_get_property:
-
+.. _acc_get_property:
 acc_get_property -- Get device property.
 ****************************************
 

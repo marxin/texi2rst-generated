@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_proc_bind:
-
+.. _omp_get_proc_bind:
 omp_get_proc_bind -- Whether theads may be moved between CPUs
 *************************************************************
 

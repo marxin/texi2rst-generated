@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_team_size:
-
+.. _omp_get_team_size:
 omp_get_team_size -- Number of threads in a team
 ************************************************
 

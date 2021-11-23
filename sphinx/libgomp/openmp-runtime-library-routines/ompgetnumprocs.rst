@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_num_procs:
-
+.. _omp_get_num_procs:
 omp_get_num_procs -- Number of processors online
 ************************************************
 

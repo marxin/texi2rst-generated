@@ -270,8 +270,7 @@ Current structure hierarchy
   This structure inherits from ``struct tree_decl_with_vis``.  It is
   used to represent ``FUNCTION_DECL``.
 
-  .. _adding-new-decl-node-types:
-
+.. _adding-new-decl-node-types:
 Adding new DECL node types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

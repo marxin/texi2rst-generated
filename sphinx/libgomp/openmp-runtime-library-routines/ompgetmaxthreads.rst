@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_max_threads:
-
+.. _omp_get_max_threads:
 omp_get_max_threads -- Maximum number of threads of parallel region
 *******************************************************************
 

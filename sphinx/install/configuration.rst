@@ -440,8 +440,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-gnu-as
 
-  .. _with-gnu-as:
-
+.. _with-gnu-as:
   Specify that the compiler should assume that the
   assembler it finds is the GNU assembler.  However, this does not modify
   the rules to find an assembler and will result in confusion if the
@@ -498,8 +497,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-gnu-ld
 
-  .. _with-gnu-ld:
-
+.. _with-gnu-ld:
   Same as :option:`--with-gnu-as` but for the linker.
 
 .. option:: --with-ld=pathname
@@ -1151,8 +1149,7 @@ corresponding :option:`--without` option.
   linker does search for :samp:`libNAME.so` before :samp:`libNAME.a` library
   filenames with the :samp:`-lNAME` linker flag.
 
-  .. _aixldcommand:
-
+.. _aixldcommand:
   For detailed information please refer to the AIX
   `ld
   Command <https://www.ibm.com/support/knowledgecenter/search/%22the%20ld%20command%2C%20also%20called%20the%20linkage%20editor%20or%20binder%22>`_ reference.

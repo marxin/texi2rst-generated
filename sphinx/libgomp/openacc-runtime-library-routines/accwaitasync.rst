@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_wait_async:
-
+.. _acc_wait_async:
 acc_wait_async -- Wait for completion of asynchronous operations.
 *****************************************************************
 

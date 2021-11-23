@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_max_active_levels:
-
+.. _omp_set_max_active_levels:
 omp_set_max_active_levels -- Limits the number of active parallel regions
 *************************************************************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _mips-dsp-built-in-functions:
-
+.. _mips-dsp-built-in-functions:
 MIPS DSP Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

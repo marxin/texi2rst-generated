@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_nested:
-
+.. _omp_set_nested:
 omp_set_nested -- Enable/disable nested parallel regions
 ********************************************************
 

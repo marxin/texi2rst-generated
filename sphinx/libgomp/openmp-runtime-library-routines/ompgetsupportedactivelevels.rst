@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_supported_active_levels:
-
+.. _omp_get_supported_active_levels:
 omp_get_supported_active_levels -- Maximum number of active regions supported
 *****************************************************************************
 

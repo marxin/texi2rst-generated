@@ -162,8 +162,7 @@ with ``__FILE__`` and ``__LINE__``, though.
   This macro is defined with value 1 when preprocessing assembly
   language.
 
-  .. _common-predefined-macros:
-
+.. _common-predefined-macros:
 Common Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -595,8 +594,7 @@ double underscores.
   documented for those options (that is, it can expand to something like
   ``"UTF-8"``).  See :ref:`invocation`.
 
-  .. _system-specific-predefined-macros:
-
+.. _system-specific-predefined-macros:
 System-specific Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_get_device_num:
-
+.. _acc_get_device_num:
 acc_get_device_num -- Get device number to be used.
 ***************************************************
 

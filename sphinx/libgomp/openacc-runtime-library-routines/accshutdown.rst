@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_shutdown:
-
+.. _acc_shutdown:
 acc_shutdown -- Shuts down the runtime for a specific device type.
 ******************************************************************
 

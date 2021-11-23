@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _gomp_spincount:
-
+.. _gomp_spincount:
 GOMP_SPINCOUNT -- Set the busy-wait spin count
 **********************************************
 

@@ -125,8 +125,7 @@ their names:
   This file, which need not exist, defines any language-specific tree
   codes.
 
-  .. _front-end-config:
-
+.. _front-end-config:
 The Front End config-lang.in File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -191,8 +190,7 @@ the language:
   this language.  This excludes the files that are common to all front
   ends.  See :ref:`type-information`.
 
-  .. _front-end-makefile:
-
+.. _front-end-makefile:
 The Front End Make-lang.in File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

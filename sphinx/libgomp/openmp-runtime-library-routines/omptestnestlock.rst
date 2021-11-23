@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_test_nest_lock:
-
+.. _omp_test_nest_lock:
 omp_test_nest_lock -- Test and set nested lock if available
 ***********************************************************
 

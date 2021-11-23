@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_memcpy_from_device:
-
+.. _acc_memcpy_from_device:
 acc_memcpy_from_device -- Copy device memory to host memory.
 ************************************************************
 

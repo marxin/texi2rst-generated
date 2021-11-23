@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_max_task_priority:
-
+.. _omp_get_max_task_priority:
 omp_get_max_task_priority -- Maximum priority value
 ***************************************************
 

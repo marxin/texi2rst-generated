@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_wtime:
-
+.. _omp_get_wtime:
 omp_get_wtime -- Elapsed wall clock time
 ****************************************
 

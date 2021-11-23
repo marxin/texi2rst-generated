@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_default_device:
-
+.. _omp_default_device:
 OMP_DEFAULT_DEVICE -- Set the device used in target regions
 ***********************************************************
 

@@ -117,8 +117,7 @@ redirecting ``stderr``.
   response to the :option:`-fopt-info`. Again a file name can be given. If
   the file name is not given, it defaults to ``stderr``.
 
-  .. _dump-output-verbosity:
-
+.. _dump-output-verbosity:
 Dump output verbosity
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -151,8 +150,7 @@ The dump verbosity has the following options
   Print detailed optimization information. This includes
   :samp:`{optimized}`, :samp:`{missed}`, and :samp:`{note}`.
 
-  .. _dump-types:
-
+.. _dump-types:
 Dump types
 ^^^^^^^^^^
 
@@ -209,8 +207,7 @@ Dump types
   can also be constructed from a ``gimple *`` and from a ``rtx_insn *``,
   and it too can be passed as the ``_loc`` argument.
 
-  .. _dump-examples:
-
+.. _dump-examples:
 Dump examples
 ^^^^^^^^^^^^^
 

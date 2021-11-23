@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _gcc_acc_notify:
-
+.. _gcc_acc_notify:
 GCC_ACC_NOTIFY
 **************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_async_test_all:
-
+.. _acc_async_test_all:
 acc_async_test_all -- Tests for completion of all asynchronous operations.
 **************************************************************************
 

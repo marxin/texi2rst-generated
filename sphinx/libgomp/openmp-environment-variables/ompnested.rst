@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_nested:
-
+.. _omp_nested:
 OMP_NESTED -- Nested parallel regions
 *************************************
 

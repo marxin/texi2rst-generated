@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_present_or_copyin:
-
+.. _acc_present_or_copyin:
 acc_present_or_copyin -- If the data is not present on the device, allocate device memory and copy from host memory.
 ********************************************************************************************************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _gomp_debug:
-
+.. _gomp_debug:
 GOMP_DEBUG -- Enable debugging output
 *************************************
 

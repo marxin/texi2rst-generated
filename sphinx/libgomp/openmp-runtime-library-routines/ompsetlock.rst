@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_lock:
-
+.. _omp_set_lock:
 omp_set_lock -- Wait for and set simple lock
 ********************************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _machine-modes:
-
+.. _machine-modes:
 Machine Modes
 *************
 

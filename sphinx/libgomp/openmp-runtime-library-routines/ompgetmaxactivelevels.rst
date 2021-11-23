@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_max_active_levels:
-
+.. _omp_get_max_active_levels:
 omp_get_max_active_levels -- Current maximum number of active regions
 *********************************************************************
 

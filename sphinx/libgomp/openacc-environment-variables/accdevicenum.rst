@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_device_num:
-
+.. _acc_device_num:
 ACC_DEVICE_NUM
 **************
 

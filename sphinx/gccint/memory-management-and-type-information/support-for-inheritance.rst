@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _inheritance-and-gty:
-
+.. _inheritance-and-gty:
 Support for inheritance
 ***********************
 

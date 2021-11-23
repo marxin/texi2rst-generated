@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _c++-concepts:
-
+.. _c++-concepts:
 C++ Concepts
 ************
 

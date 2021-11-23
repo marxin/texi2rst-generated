@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _lto-dump:
-
+.. _lto-dump:
 lto-dump---Tool for dumping LTO object files.
 ---------------------------------------------
 

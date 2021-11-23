@@ -399,8 +399,7 @@ Attribute value expressions must have one of the following forms:
   for numeric attributes, as ``eq_attr`` and ``attr_flag``
   produce more efficient code for non-numeric attributes.
 
-  .. _tagging-insns:
-
+.. _tagging-insns:
 Assigning Attribute Values to Insns
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

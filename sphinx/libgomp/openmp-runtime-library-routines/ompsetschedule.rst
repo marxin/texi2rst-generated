@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_schedule:
-
+.. _omp_set_schedule:
 omp_set_schedule -- Set the runtime scheduling method
 *****************************************************
 

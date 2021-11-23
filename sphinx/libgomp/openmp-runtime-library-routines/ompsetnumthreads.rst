@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_num_threads:
-
+.. _omp_set_num_threads:
 omp_set_num_threads -- Set upper team size limit
 ************************************************
 

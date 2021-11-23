@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _overall-options:
-
+.. _overall-options:
 Options Controlling the Kind of Output
 **************************************
 

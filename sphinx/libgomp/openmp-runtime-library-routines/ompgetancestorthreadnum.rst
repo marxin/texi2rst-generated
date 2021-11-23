@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_ancestor_thread_num:
-
+.. _omp_get_ancestor_thread_num:
 omp_get_ancestor_thread_num -- Ancestor thread ID
 *************************************************
 

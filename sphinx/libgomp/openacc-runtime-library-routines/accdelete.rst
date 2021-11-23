@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_delete:
-
+.. _acc_delete:
 acc_delete -- Free device memory.
 *********************************
 

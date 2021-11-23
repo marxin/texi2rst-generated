@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_thread_limit:
-
+.. _omp_get_thread_limit:
 omp_get_thread_limit -- Maximum number of threads
 *************************************************
 

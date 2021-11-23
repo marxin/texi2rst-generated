@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _atomic-builtins:
-
+.. _atomic-builtins:
 Built-in Functions for Memory Model Aware Atomic Operations
 ***********************************************************
 

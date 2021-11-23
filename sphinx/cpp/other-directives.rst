@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _other-directives:
-
+.. _other-directives:
 Other Directives
 ----------------
 

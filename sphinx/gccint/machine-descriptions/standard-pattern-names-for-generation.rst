@@ -1287,8 +1287,7 @@ divmodm4
 udivmodm4
   Similar, but does unsigned division.
 
-  .. _shift-patterns:
-
+.. _shift-patterns:
   .. index:: ashlm3 instruction pattern
 
   .. index:: ssashlm3 instruction pattern
@@ -3037,8 +3036,7 @@ eh_return
 
   .. index:: prologue instruction pattern
 
-  .. _prologue-instruction-pattern:
-
+.. _prologue-instruction-pattern:
 prologue
   This pattern, if defined, emits RTL for entry to a function.  The function
   entry is responsible for setting up the stack frame, initializing the frame
@@ -3052,8 +3050,7 @@ prologue
 
   .. index:: window_save instruction pattern
 
-  .. _window_save-instruction-pattern:
-
+.. _window_save-instruction-pattern:
 window_save
   This pattern, if defined, emits RTL for a register window save.  It should
   be defined if the target machine has register windows but the window events
@@ -3062,8 +3059,7 @@ window_save
 
   .. index:: epilogue instruction pattern
 
-  .. _epilogue-instruction-pattern:
-
+.. _epilogue-instruction-pattern:
 epilogue
   This pattern emits RTL for exit from a function.  The function
   exit is responsible for deallocating the stack frame, restoring callee saved

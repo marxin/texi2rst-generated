@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_test_lock:
-
+.. _omp_test_lock:
 omp_test_lock -- Test and set simple lock if available
 ******************************************************
 

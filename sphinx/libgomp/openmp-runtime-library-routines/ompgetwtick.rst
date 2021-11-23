@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_wtick:
-
+.. _omp_get_wtick:
 omp_get_wtick -- Get timer precision
 ************************************
 

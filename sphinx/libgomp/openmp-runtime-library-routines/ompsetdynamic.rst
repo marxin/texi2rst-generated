@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_set_dynamic:
-
+.. _omp_set_dynamic:
 omp_set_dynamic -- Enable/disable dynamic teams
 ***********************************************
 

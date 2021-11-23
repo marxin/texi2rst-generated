@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_register_library:
-
+.. _acc_register_library:
 acc_register_library -- Library registration.
 *********************************************
 

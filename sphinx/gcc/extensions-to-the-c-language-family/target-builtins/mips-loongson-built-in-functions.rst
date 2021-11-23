@@ -260,8 +260,7 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
     else
       lower_halves_are_unequal ();
 
-  .. _mips-3d-built-in-functions:
-
+.. _mips-3d-built-in-functions:
 MIPS-3D Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _unnamed-fields:
-
+.. _unnamed-fields:
 Unnamed Structure and Union Fields
 **********************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_get_current_cuda_context:
-
+.. _acc_get_current_cuda_context:
 acc_get_current_cuda_context -- Get CUDA context handle.
 ********************************************************
 

@@ -647,8 +647,7 @@ Here are constraint modifier characters.
                (match_operand:HI 1 "general_operand" "0,g")))]
         ...)
 
-  .. _machine-constraints:
-
+.. _machine-constraints:
 Constraints for Particular Machines
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -70,8 +70,7 @@ attributes.
   Do not affect the :gcc-attr:`long_call` or ``short_call`` attributes of
   subsequent functions.
 
-  .. _m32c-pragmas:
-
+.. _m32c-pragmas:
 M32C Pragmas
 ^^^^^^^^^^^^
 
@@ -103,8 +102,7 @@ M32C Pragmas
     #pragma ADDRESS port3 0x103
     char port3;
 
-  .. _mep-pragmas:
-
+.. _mep-pragmas:
 MeP Pragmas
 ^^^^^^^^^^^
 
@@ -184,8 +182,7 @@ MeP Pragmas
     extern int foo ();
     #pragma call foo
 
-  .. _pru-pragmas:
-
+.. _pru-pragmas:
 PRU Pragmas
 ^^^^^^^^^^^
 
@@ -204,8 +201,7 @@ PRU Pragmas
     #pragma ctable_entry 2 0x4802a000
     *(unsigned int *)0x4802a010 = val;
 
-  .. _rs-6000-and-powerpc-pragmas:
-
+.. _rs-6000-and-powerpc-pragmas:
 RS/6000 and PowerPC Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -288,8 +284,7 @@ Mac OS compilers.
   that of the :gcc-attr:`unused` attribute, except that this pragma may appear
   anywhere within the variables' scopes.
 
-  .. _solaris-pragmas:
-
+.. _solaris-pragmas:
 Solaris Pragmas
 ^^^^^^^^^^^^^^^
 
@@ -323,8 +318,7 @@ The Solaris target supports ``#pragma redefine_extname``
   initialization (before ``main``) or during shared module loading, by
   adding a call to the ``.init`` section.
 
-  .. _symbol-renaming-pragmas:
-
+.. _symbol-renaming-pragmas:
 Symbol-Renaming Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -435,8 +429,7 @@ aliases.
   It is an error if :samp:`{symbol2}` is not defined in the current
   translation unit.
 
-  .. _diagnostic-pragmas:
-
+.. _diagnostic-pragmas:
 Diagnostic Pragmas
 ^^^^^^^^^^^^^^^^^^
 
@@ -574,8 +567,7 @@ GCC also offers a simple mechanism for printing messages during compilation.
   :option:`-Werror` is in effect, in which case this pragma will generate
   an error as well.
 
-  .. _visibility-pragmas:
-
+.. _visibility-pragmas:
 Visibility Pragmas
 ^^^^^^^^^^^^^^^^^^
 
@@ -592,8 +584,7 @@ Visibility Pragmas
   affected; if you want to override the visibility for a particular
   member or instantiation, you must use an attribute.
 
-  .. _push-pop-macro-pragmas:
-
+.. _push-pop-macro-pragmas:
 Push/Pop Macro Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -684,8 +675,7 @@ Function Specific Option Pragmas
   ``#pragma GCC optimize`` to use the default switches as specified
   on the command line.
 
-  .. _loop-specific-pragmas:
-
+.. _loop-specific-pragmas:
 Loop-Specific Pragmas
 ^^^^^^^^^^^^^^^^^^^^^
 

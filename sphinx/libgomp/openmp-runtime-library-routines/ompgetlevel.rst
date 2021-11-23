@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_get_level:
-
+.. _omp_get_level:
 omp_get_level -- Obtain the current nesting level
 *************************************************
 

@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _acc_deviceptr:
-
+.. _acc_deviceptr:
 acc_deviceptr -- Get device pointer associated with specific host address.
 **************************************************************************
 

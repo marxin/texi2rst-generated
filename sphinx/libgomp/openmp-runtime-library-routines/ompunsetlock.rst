@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _omp_unset_lock:
-
+.. _omp_unset_lock:
 omp_unset_lock -- Unset simple lock
 ***********************************
 

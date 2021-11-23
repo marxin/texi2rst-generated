@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _msp430-built-in-functions:
-
+.. _msp430-built-in-functions:
 MSP430 Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

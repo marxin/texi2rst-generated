@@ -3,8 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _directory-options:
-
+.. _directory-options:
 Options for Directory Search
 ****************************
 
