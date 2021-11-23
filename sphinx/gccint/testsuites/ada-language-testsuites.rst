@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _ada-tests:
+.. _ada-tests:
 
 Ada Language Testsuites
 ***********************

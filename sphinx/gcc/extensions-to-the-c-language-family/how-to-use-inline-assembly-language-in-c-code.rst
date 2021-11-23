@@ -831,7 +831,7 @@ x86 family
   ``na`` ``nae`` ``nb`` ``nbe`` ``nc`` ``ne`` ``ng`` ``nge`` ``nl`` ``nle`` ``no`` ``np`` ``ns`` ``nz``
     'not' :samp:`{flag}`, or inverted versions of those above
 
-    .. _inputoperands:
+.. _inputoperands:
 
 Input Operands
 ~~~~~~~~~~~~~~
