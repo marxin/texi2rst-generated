@@ -61,7 +61,7 @@ of an accumulator register.  For example, an ``acc`` argument of 2
 selects the ACC2 register.
 
 ``iacc`` arguments are similar to ``acc`` arguments but specify the
-number of an IACC register.  See see :ref:`other-built-in-functions`
+number of an IACC register.  See see :ref:`other-builtins`
 for more details.
 
 .. _directly-mapped-integer-functions:

@@ -963,7 +963,7 @@ enclosed in double quotes and separated by commas.
 Clobber descriptions may not in any way overlap with an input or output 
 operand. For example, you may not have an operand describing a register class 
 with one member when listing that register in the clobber list. Variables 
-declared to live in specific registers (see :ref:`explicit-register--variables`) and used 
+declared to live in specific registers (see :ref:`explicit-register-variables`) and used
 as ``asm`` input or output operands must have no part mentioned in the 
 clobber description. In particular, there is no way to specify that input 
 operands get modified without also specifying them as output operands.
@@ -1166,7 +1166,7 @@ list of all C labels to which the assembler code may jump. GCC assumes that
 ``asm`` execution falls through to the next statement (if this is not the 
 case, consider using the ``__builtin_unreachable`` intrinsic after the 
 ``asm`` statement). Optimization of ``asm goto`` may be improved by 
-using the :gcc-attr:`hot` and :gcc-attr:`cold` label attributes (see :ref:`label--attributes`).
+using the :gcc-attr:`hot` and :gcc-attr:`cold` label attributes (see :ref:`label-attributes`).
 
 If the assembler code does modify anything, use the ``"memory"`` clobber 
 to force the 

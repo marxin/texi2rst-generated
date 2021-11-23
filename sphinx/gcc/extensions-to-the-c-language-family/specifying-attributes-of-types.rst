@@ -21,7 +21,7 @@ of whether a type is a trivial structure or a C++ class with user-defined
 constructors, destructors, or a copy assignment.
 
 Other attributes are defined for functions (see :ref:`function-attributes`),
-labels (see :ref:`label--attributes`), enumerators (see :ref:`enumerator-attributes`), statements (see :ref:`statement-attributes`), and for variables
+labels (see :ref:`label-attributes`), enumerators (see :ref:`enumerator-attributes`), statements (see :ref:`statement-attributes`), and for variables
 (see :ref:`variable-attributes`).
 
 The ``__attribute__`` keyword is followed by an attribute specification

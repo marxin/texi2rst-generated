@@ -195,7 +195,7 @@
 
   If :option:`-MD` is used in conjunction with :option:`-E`, any
   :option:`-o` switch is understood to specify the dependency output file
-  (see :ref:`dashmf`), but if used without :option:`-E`, each :option:`-o`
+  (see :option:`-MF`), but if used without :option:`-E`, each :option:`-o`
   is understood to specify a target object file.
 
   Since :option:`-E` is not implied, :option:`-MD` can be used to generate
