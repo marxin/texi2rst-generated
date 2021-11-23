@@ -4570,16 +4570,6 @@ section includes experimental options that may produce broken code.
 
     Max. size of loc list for which reverse ops should be added.
 
-  .. gcc-param:: tracer-dynamic-coverage-feedback
-
-    The percentage of function, weighted by execution frequency,
-    that must be covered by trace formation.
-    Used when profile feedback is available.
-
-  .. gcc-param:: max-inline-recursive-depth-auto
-
-    The maximum depth of recursive inlining for non-inline functions.
-
   .. gcc-param:: fsm-scale-path-stmts
 
     Scale factor to apply to the number of statements in a threading path
