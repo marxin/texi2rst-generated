@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_schedule:
+
 omp_get_schedule -- Obtain the runtime scheduling method
 ********************************************************
 

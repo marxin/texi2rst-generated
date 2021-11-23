@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _risc-v-built-in-functions:
+
 RISC-V Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

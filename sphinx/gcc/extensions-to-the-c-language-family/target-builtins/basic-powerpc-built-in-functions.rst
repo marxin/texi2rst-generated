@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _basic-powerpc-built-in-functions:
+
 Basic PowerPC Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

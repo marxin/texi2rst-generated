@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_map_data:
+
 acc_map_data -- Map previously allocated device memory to host memory.
 **********************************************************************
 

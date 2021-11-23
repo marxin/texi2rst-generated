@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_num_teams:
+
 omp_get_num_teams -- Number of teams
 ************************************
 

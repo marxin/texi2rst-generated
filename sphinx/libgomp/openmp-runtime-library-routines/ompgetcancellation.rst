@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_cancellation:
+
 omp_get_cancellation -- Whether cancellation support is enabled
 ***************************************************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_default_device:
+
 omp_get_default_device -- Get the default device for target regions
 *******************************************************************
 

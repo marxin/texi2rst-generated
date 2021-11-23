@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _unnamed-fields:
+
 Unnamed Structure and Union Fields
 **********************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_free:
+
 acc_free -- Free device memory.
 *******************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_init_lock:
+
 omp_init_lock -- Initialize simple lock
 ***************************************
 

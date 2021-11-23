@@ -71,6 +71,7 @@ attributes.
   subsequent functions.
 
 .. _m32c-pragmas:
+
 M32C Pragmas
 ^^^^^^^^^^^^
 
@@ -103,6 +104,7 @@ M32C Pragmas
     char port3;
 
 .. _mep-pragmas:
+
 MeP Pragmas
 ^^^^^^^^^^^
 
@@ -183,6 +185,7 @@ MeP Pragmas
     #pragma call foo
 
 .. _pru-pragmas:
+
 PRU Pragmas
 ^^^^^^^^^^^
 
@@ -202,6 +205,7 @@ PRU Pragmas
     *(unsigned int *)0x4802a010 = val;
 
 .. _rs-6000-and-powerpc-pragmas:
+
 RS/6000 and PowerPC Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -285,6 +289,7 @@ Mac OS compilers.
   anywhere within the variables' scopes.
 
 .. _solaris-pragmas:
+
 Solaris Pragmas
 ^^^^^^^^^^^^^^^
 
@@ -319,6 +324,7 @@ The Solaris target supports ``#pragma redefine_extname``
   adding a call to the ``.init`` section.
 
 .. _symbol-renaming-pragmas:
+
 Symbol-Renaming Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -430,6 +436,7 @@ aliases.
   translation unit.
 
 .. _diagnostic-pragmas:
+
 Diagnostic Pragmas
 ^^^^^^^^^^^^^^^^^^
 
@@ -568,6 +575,7 @@ GCC also offers a simple mechanism for printing messages during compilation.
   an error as well.
 
 .. _visibility-pragmas:
+
 Visibility Pragmas
 ^^^^^^^^^^^^^^^^^^
 
@@ -585,6 +593,7 @@ Visibility Pragmas
   member or instantiation, you must use an attribute.
 
 .. _push-pop-macro-pragmas:
+
 Push/Pop Macro Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -676,6 +685,7 @@ Function Specific Option Pragmas
   on the command line.
 
 .. _loop-specific-pragmas:
+
 Loop-Specific Pragmas
 ^^^^^^^^^^^^^^^^^^^^^
 

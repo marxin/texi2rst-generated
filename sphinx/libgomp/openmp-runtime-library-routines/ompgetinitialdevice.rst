@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_initial_device:
+
 omp_get_initial_device -- Return device number of initial device
 ****************************************************************
 

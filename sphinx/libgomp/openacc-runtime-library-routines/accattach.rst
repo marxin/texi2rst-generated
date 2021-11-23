@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_attach:
+
 acc_attach -- Let device pointer point to device-pointer target.
 ****************************************************************
 

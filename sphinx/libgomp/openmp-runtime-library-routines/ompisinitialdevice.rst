@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_is_initial_device:
+
 omp_is_initial_device -- Whether executing on the host device
 *************************************************************
 

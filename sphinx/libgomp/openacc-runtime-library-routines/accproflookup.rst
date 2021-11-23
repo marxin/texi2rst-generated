@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_prof_lookup:
+
 acc_prof_lookup -- Obtain inquiry functions.
 ********************************************
 

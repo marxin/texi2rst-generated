@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_create:
+
 acc_create -- Allocate device memory and map it to host memory.
 ***************************************************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_wait_all_async:
+
 acc_wait_all_async -- Wait for completion of all asynchronous operations.
 *************************************************************************
 

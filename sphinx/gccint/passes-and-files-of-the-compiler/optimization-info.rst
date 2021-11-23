@@ -118,6 +118,7 @@ redirecting ``stderr``.
   the file name is not given, it defaults to ``stderr``.
 
 .. _dump-output-verbosity:
+
 Dump output verbosity
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -151,6 +152,7 @@ The dump verbosity has the following options
   :samp:`{optimized}`, :samp:`{missed}`, and :samp:`{note}`.
 
 .. _dump-types:
+
 Dump types
 ^^^^^^^^^^
 
@@ -208,6 +210,7 @@ Dump types
   and it too can be passed as the ``_loc`` argument.
 
 .. _dump-examples:
+
 Dump examples
 ^^^^^^^^^^^^^
 

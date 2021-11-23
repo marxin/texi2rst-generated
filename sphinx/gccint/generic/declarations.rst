@@ -271,6 +271,7 @@ Current structure hierarchy
   used to represent ``FUNCTION_DECL``.
 
 .. _adding-new-decl-node-types:
+
 Adding new DECL node types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_places:
+
 OMP_PLACES -- Specifies on which CPUs the theads should be placed
 *****************************************************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_nested:
+
 omp_get_nested -- Nested parallel regions
 *****************************************
 

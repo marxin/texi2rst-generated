@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_copyout:
+
 acc_copyout -- Copy device memory to host memory.
 *************************************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_set_cuda_stream:
+
 acc_set_cuda_stream -- Set CUDA stream handle.
 **********************************************
 

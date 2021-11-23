@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_get_teams_thread_limit:
+
 omp_get_teams_thread_limit -- Maximum number of threads imposed by teams
 ************************************************************************
 

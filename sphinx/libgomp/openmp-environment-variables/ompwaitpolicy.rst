@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_wait_policy:
+
 OMP_WAIT_POLICY -- How waiting threads are handled
 **************************************************
 

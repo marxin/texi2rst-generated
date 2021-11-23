@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _lto-dump:
+
 lto-dump---Tool for dumping LTO object files.
 ---------------------------------------------
 

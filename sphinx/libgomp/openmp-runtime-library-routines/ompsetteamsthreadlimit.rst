@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_set_teams_thread_limit:
+
 omp_set_teams_thread_limit -- Set upper thread limit for teams construct
 ************************************************************************
 

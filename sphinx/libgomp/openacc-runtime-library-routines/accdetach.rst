@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_detach:
+
 acc_detach -- Let device pointer point to host-pointer target.
 **************************************************************
 

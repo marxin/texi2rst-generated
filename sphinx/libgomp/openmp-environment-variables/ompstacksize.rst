@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_stacksize:
+
 OMP_STACKSIZE -- Set default thread stack size
 **********************************************
 

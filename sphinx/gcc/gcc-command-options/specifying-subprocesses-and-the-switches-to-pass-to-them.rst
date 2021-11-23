@@ -6,6 +6,7 @@
 .. only:: not man
 
 .. _spec-files:
+
   Specifying Subprocesses and the Switches to Pass to Them
   ********************************************************
 

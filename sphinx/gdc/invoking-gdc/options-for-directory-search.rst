@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _directory-options:
+
 Options for Directory Search
 ****************************
 

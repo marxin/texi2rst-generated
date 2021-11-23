@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_max_task_priority:
+
 OMP_MAX_TASK_PRIORITY -- Set the maximum priority
 *************************************************
 

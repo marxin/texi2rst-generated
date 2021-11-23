@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_unmap_data:
+
 acc_unmap_data -- Unmap device memory from host memory.
 *******************************************************
 

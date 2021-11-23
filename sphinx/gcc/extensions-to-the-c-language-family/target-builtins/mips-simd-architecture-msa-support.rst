@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _mips-simd-architecture-(msa)-support:
+
 MIPS SIMD Architecture (MSA) Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

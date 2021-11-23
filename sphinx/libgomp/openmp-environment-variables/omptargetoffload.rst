@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_target_offload:
+
 OMP_TARGET_OFFLOAD -- Controls offloading behaviour
 ***************************************************
 

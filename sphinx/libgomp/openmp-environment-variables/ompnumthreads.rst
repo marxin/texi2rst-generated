@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_num_threads:
+
 OMP_NUM_THREADS -- Specifies the number of threads to use
 *********************************************************
 

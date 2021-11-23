@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _mips-dsp-built-in-functions:
+
 MIPS DSP Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

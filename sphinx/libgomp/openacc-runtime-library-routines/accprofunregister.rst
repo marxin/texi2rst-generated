@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_prof_unregister:
+
 acc_prof_unregister -- Unregister callbacks.
 ********************************************
 

@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_unset_nest_lock:
+
 omp_unset_nest_lock -- Unset nested lock
 ****************************************
 

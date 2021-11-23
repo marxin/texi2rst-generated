@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_malloc:
+
 acc_malloc -- Allocate device memory.
 *************************************
 

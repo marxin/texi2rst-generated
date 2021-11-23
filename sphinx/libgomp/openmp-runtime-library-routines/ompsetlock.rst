@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_set_lock:
+
 omp_set_lock -- Wait for and set simple lock
 ********************************************
 

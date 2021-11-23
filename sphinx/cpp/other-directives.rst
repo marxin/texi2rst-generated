@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _other-directives:
+
 Other Directives
 ----------------
 

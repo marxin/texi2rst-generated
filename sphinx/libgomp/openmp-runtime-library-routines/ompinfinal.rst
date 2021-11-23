@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_in_final:
+
 omp_in_final -- Whether in final or included task region
 ********************************************************
 

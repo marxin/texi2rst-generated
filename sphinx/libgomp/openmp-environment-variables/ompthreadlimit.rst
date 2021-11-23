@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_thread_limit:
+
 OMP_THREAD_LIMIT -- Set the maximum number of threads
 *****************************************************
 

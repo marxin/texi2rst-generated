@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_on_device:
+
 acc_on_device -- Whether executing on a particular device
 *********************************************************
 

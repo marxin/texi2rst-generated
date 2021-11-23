@@ -163,6 +163,7 @@ with ``__FILE__`` and ``__LINE__``, though.
   language.
 
 .. _common-predefined-macros:
+
 Common Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -595,6 +596,7 @@ double underscores.
   ``"UTF-8"``).  See :ref:`invocation`.
 
 .. _system-specific-predefined-macros:
+
 System-specific Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

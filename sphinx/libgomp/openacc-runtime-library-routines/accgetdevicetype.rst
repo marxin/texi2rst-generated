@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_get_device_type:
+
 acc_get_device_type -- Get type of device accelerator to be used.
 *****************************************************************
 

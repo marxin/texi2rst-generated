@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_set_device_num:
+
 acc_set_device_num -- Set device number to use.
 ***********************************************
 

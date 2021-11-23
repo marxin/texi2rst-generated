@@ -126,6 +126,7 @@ their names:
   codes.
 
 .. _front-end-config:
+
 The Front End config-lang.in File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -191,6 +192,7 @@ the language:
   ends.  See :ref:`type-information`.
 
 .. _front-end-makefile:
+
 The Front End Make-lang.in File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

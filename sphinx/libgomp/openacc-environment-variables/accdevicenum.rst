@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_device_num:
+
 ACC_DEVICE_NUM
 **************
 

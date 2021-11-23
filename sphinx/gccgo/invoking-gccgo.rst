@@ -6,6 +6,7 @@
 .. only:: man
 
 .. _invoking-gccgo:
+
   Invoking gccgo
   --------------
 

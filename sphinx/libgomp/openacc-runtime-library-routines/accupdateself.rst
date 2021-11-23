@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _acc_update_self:
+
 acc_update_self -- Update host memory from mapped device memory.
 ****************************************************************
 

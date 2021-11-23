@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _omp_fulfill_event:
+
 omp_fulfill_event -- Fulfill and destroy an OpenMP event
 ********************************************************
 

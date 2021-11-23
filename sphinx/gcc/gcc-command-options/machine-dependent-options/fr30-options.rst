@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _fr30-options:
+
 FR30 Options
 ^^^^^^^^^^^^
 

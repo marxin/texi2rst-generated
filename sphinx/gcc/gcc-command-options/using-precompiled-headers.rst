@@ -6,6 +6,7 @@
 .. only:: not man
 
 .. _precompiled-headers:
+
   Using Precompiled Headers
   *************************
 

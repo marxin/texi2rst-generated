@@ -4,6 +4,7 @@
   For copying conditions, see the GPL license file
 
 .. _quadmath_snprintf:
+
 quadmath_snprintf --- Convert to string
 ***************************************
 
