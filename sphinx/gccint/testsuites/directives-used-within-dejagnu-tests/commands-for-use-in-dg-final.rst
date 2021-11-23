@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _final-actions:
+.. _final-actions:
 
 Commands for use in dg-final
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

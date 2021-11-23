@@ -180,6 +180,8 @@ Here are several miscellaneous parameters.
 
   You need not define this macro if it would always have the value of zero.
 
+.. _target_shift_truncation_mask:
+
 .. function:: unsigned HOST_WIDE_INT TARGET_SHIFT_TRUNCATION_MASK (machine_mode mode)
 
   .. hook-start:TARGET_SHIFT_TRUNCATION_MASK

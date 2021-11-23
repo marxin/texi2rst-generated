@@ -31,6 +31,7 @@ affects how they are used.
 .. toctree::
   :maxdepth: 2
 
+.. _comparison-functions-for-poly_int:
 
 Comparison functions for poly_int
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -247,6 +248,8 @@ is *not* a marker value is ``maybe_ne``.
 Thus in the size example just mentioned, :samp:`known_eq (size, -1)` would
 check for an unknown size and :samp:`maybe_ne (size, -1)` would check for a
 known size.
+
+.. _range-checks-on-poly_ints:
 
 Range checks on poly_ints
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _require-support:
+.. _require-support:
 
 Variants of dg-require-support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

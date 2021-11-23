@@ -234,6 +234,8 @@ This describes the overall framework of an assembly file.
   This flag is true if the target supports ``TARGET_ASM_NAMED_SECTION``.
   It must not be modified by command-line option processing.
 
+.. _target_have_switchable_bss_sections:
+
 .. c:var:: bool TARGET_HAVE_SWITCHABLE_BSS_SECTIONS
 
   .. hook-start:TARGET_HAVE_SWITCHABLE_BSS_SECTIONS

@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. _alignment-of-poly_ints:
+
 Alignment of poly_ints
 **********************
 

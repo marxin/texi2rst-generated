@@ -283,6 +283,8 @@ than ``error`` and ``warning``, and provide the most appropriate
 possible to supply secondary ``location_t`` values via
 ``rich_location``.
 
+.. _input_location_example:
+
 For example, in the example of imprecise wording above, generating the
 diagnostic using ``warning`` :
 
