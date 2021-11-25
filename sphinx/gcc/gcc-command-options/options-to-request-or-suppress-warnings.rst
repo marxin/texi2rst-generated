@@ -800,6 +800,17 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wnull-dereference`.
 
+.. option:: -Winfinite-recursion
+
+  Warn about infinitely recursive calls.  The warning is effective at all
+  optimization levels but requires optimization in order to detect infinite
+  recursion in calls between two or more functions.
+  :option:`-Winfinite-recursion` is included in :option:`-Wall`.
+
+.. option:: -Wno-infinite-recursion
+
+  Default setting; overrides :option:`-Winfinite-recursion`.
+
 .. option:: -Winit-self
 
   .. note::

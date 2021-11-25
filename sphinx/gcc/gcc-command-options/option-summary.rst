@@ -191,6 +191,7 @@ in the following sections.
   :option:`-Wignored-qualifiers`  :option:`-Wno-incompatible-pointer-types` 
   :option:`-Wimplicit`  :option:`-Wimplicit-fallthrough`  :option:`-Wimplicit-fallthrough`:samp:`={n}` 
   :option:`-Wno-implicit-function-declaration`  :option:`-Wno-implicit-int` 
+  :option:`-Winfinite-recursion` 
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` 
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` 
   :option:`-Winvalid-pch`  :option:`-Wjump-misses-init`  :option:`-Wlarger-than`:samp:`={byte-size}` 
