@@ -1664,8 +1664,8 @@ optimizations to be performed is desired.
   the security and predictability of a program by preventing uninitialized memory
   disclosure and use.
   GCC still considers an automatic variable that doesn't have an explicit
-  initializer as uninitialized, -Wuninitialized will still report warning messages
-  on such automatic variables.
+  initializer as uninitialized, :option:`-Wuninitialized` will still report
+  warning messages on such automatic variables.
   With this option, GCC will also initialize any padding of automatic variables
   that have structure or union types to zeroes.
 
