@@ -269,7 +269,7 @@ corresponding :option:`--without` option.
     This can be useful if you need to turn on a non-standard feature by
     default without modifying the compiler's source code, for instance
     :option:`--with-specs`:samp:`=%{!fcommon:%{!fno-common:-fno-common}}`.
-    See 'Spec Files' in the main manual
+    See :ref:`gcc:spec-files`.
 
 .. option:: --program-prefix=prefix
 
@@ -619,7 +619,7 @@ corresponding :option:`--without` option.
     expected to be defined in these fragments are not stable across GCC
     releases, so make sure they define the ``MULTILIB`` -related macros
     expected by the version of GCC you are building.
-    See 'Target Makefile Fragments' in the internals manual.
+    See :ref:`gccint:target-fragment`.
 
     The table below gives the combination of ISAs, architectures, FPUs and
     floating-point ABIs for which multilibs are built for each predefined
@@ -1221,7 +1221,7 @@ corresponding :option:`--without` option.
     enabled may bloat the TOC, eventually leading to ``TOC overflow`` errors,
     requiring the use of either the :option:`-Wl,-bbigtoc` linker flag (seen to
     break with the ``GDB`` debugger) or some of the TOC-related compiler flags,
-    see 'RS/6000 and PowerPC Options' in the main manual.
+    see :ref:`gcc:rs-6000-and-powerpc-options`.
 
   :option:`--with-aix-soname` is currently supported by :samp:`libgcc_s` only, so
   this option is still experimental and not for normal use yet.
@@ -1343,7 +1343,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-secureplt
 
   This option enables :option:`-msecure-plt` by default for powerpc-linux.
-  See 'RS/6000 and PowerPC Options' in the main manual
+  See :ref:`gcc:rs-6000-and-powerpc-options`.
 
 .. option:: --enable-default-ssp
 
@@ -1352,7 +1352,7 @@ corresponding :option:`--without` option.
 .. option:: --enable-cld
 
   This option enables :option:`-mcld` by default for 32-bit x86 targets.
-  See 'i386 and x86-64 Options' in the main manual
+  See :ref:`gcc:x86-options`.
 
 .. option:: --enable-large-address-aware
 
@@ -2067,5 +2067,5 @@ The following options apply to the build of the D runtime library.
 
   Use installed :samp:`zlib` rather than that included with GCC.  This needs
   to be available for each multilib variant, unless configured with
-  :option:`--with-target-system-zlib`:samp:`=auto` in which case the GCCincluded
+  :option:`--with-target-system-zlib`:samp:`=auto` in which case the GCC included
   :samp:`zlib` is only used when the system installed library is not available.

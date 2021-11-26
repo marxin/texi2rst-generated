@@ -269,7 +269,7 @@ Sphinx version 1.0 (or later)
   Necessary to regenerate :samp:`jit/docs/_build/texinfo` from the :samp:`.rst`
   files in the directories below :samp:`jit/docs`.
 
-git (any version) SSH (any version)
+git (any version) and SSH (any version)
   Necessary to access the source repository.  Public releases and weekly
   snapshots of the development sources are also available via HTTPS.
 
