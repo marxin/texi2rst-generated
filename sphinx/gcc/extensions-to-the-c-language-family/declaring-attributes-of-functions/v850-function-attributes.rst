@@ -10,7 +10,7 @@ V850 Function Attributes
 
 The V850 back end supports these function attributes:
 
-.. gcc-attr:: interrupt
+.. gcc-attr:: interrupt, interrupt_handler
 
   .. index:: interrupt function attribute, V850
 

@@ -12,7 +12,7 @@ The following attributes are supported on most targets.
 
 .. Keep this table alphabetized by attribute name.  Treat _ as space.
 
-.. gcc-attr:: access
+.. gcc-attr:: access, access (access-mode, ref-index), access (access-mode, ref-index, size-index)
 
   The :gcc-attr:`access` attribute enables the detection of invalid or unsafe
   accesses by functions to which they apply or their callers, as well as
@@ -111,7 +111,7 @@ The following attributes are supported on most targets.
   This attribute requires assembler and object file support,
   and may not be available on all targets.
 
-.. gcc-attr:: aligned
+.. gcc-attr:: aligned, aligned (alignment)
 
   .. index:: aligned function attribute
 
@@ -167,7 +167,7 @@ The following attributes are supported on most targets.
   declares that ``my_memalign`` returns memory with minimum alignment
   given by parameter 1.
 
-.. gcc-attr:: alloc_size (position)
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   .. index:: alloc_size function attribute
 
@@ -219,7 +219,7 @@ The following attributes are supported on most targets.
   or using the caller location for all instructions within the inlined
   body.
 
-.. gcc-attr:: assume_aligned (alignment)
+.. gcc-attr:: assume_aligned (alignment), assume_aligned (alignment, offset)
 
   .. index:: assume_aligned function attribute
 
@@ -304,7 +304,7 @@ The following attributes are supported on most targets.
   in C++, reference arguments. Likewise, a function that calls a non-const
   function usually must not be const itself.
 
-.. gcc-attr:: constructor
+.. gcc-attr:: constructor, destructor, constructor (priority), destructor (priority)
 
   .. index:: constructor function attribute
 
@@ -337,7 +337,7 @@ The following attributes are supported on most targets.
   attributes on targets where the feature is not supported is rejected with
   an error.
 
-.. gcc-attr:: copy
+.. gcc-attr:: copy, copy (function)
 
   .. index:: copy function attribute
 
@@ -373,7 +373,7 @@ The following attributes are supported on most targets.
       void* allocate (size_t);
     StrongAlias (allocate, alloc);
 
-.. gcc-attr:: deprecated
+.. gcc-attr:: deprecated, deprecated (msg)
 
   .. index:: deprecated function attribute
 
@@ -401,7 +401,7 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable
+.. gcc-attr:: unavailable, unavailable (msg)
 
   .. index:: unavailable function attribute
 
@@ -415,7 +415,7 @@ The following attributes are supported on most targets.
   The :gcc-attr:`unavailable` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
-.. gcc-attr:: error ("message")
+.. gcc-attr:: error ("message"), warning ("message")
 
   .. index:: error function attribute
 
@@ -744,7 +744,7 @@ The following attributes are supported on most targets.
   Indirect functions cannot be weak.  Binutils version 2.20.1 or higher
   and GNU C Library version 2.11.1 are required to use this feature.
 
-.. gcc-attr:: interrupt
+.. gcc-attr:: interrupt, interrupt_handler
 
   Many GCC back ends support attributes to indicate that a function is
   an interrupt handler, which tells the compiler to generate function
@@ -952,7 +952,7 @@ The following attributes are supported on most targets.
     void __attribute__ ((no_sanitize ("alignment,object-size")))
     g () { /* Do something. */; }
 
-.. gcc-attr:: no_sanitize_address
+.. gcc-attr:: no_sanitize_address, no_address_safety_analysis
 
   .. index:: no_sanitize_address function attribute
 
@@ -1051,7 +1051,7 @@ The following attributes are supported on most targets.
   them individually.  This attribute is supported mainly for the purpose
   of testing the compiler.
 
-.. gcc-attr:: nonnull
+.. gcc-attr:: nonnull, nonnull (arg-index, ...)
 
   .. index:: nonnull function attribute
 
@@ -1350,7 +1350,7 @@ The following attributes are supported on most targets.
   If you need to map the entire contents of a module to a particular
   section, consider using the facilities of the linker instead.
 
-.. gcc-attr:: sentinel
+.. gcc-attr:: sentinel, sentinel (position)
 
   .. index:: sentinel function attribute
 
@@ -1380,7 +1380,7 @@ The following attributes are supported on most targets.
   The warnings for missing or incorrect sentinels are enabled with
   :option:`-Wformat`.
 
-.. gcc-attr:: simd
+.. gcc-attr:: simd, simd("mask")
 
   .. index:: simd function attribute
 
@@ -1718,7 +1718,7 @@ The following attributes are supported on most targets.
   the weak symbol.  Weak symbols are supported for ELF targets, and also
   for a.out targets when using the GNU assembler and linker.
 
-.. gcc-attr:: weakref
+.. gcc-attr:: weakref, weakref ("target")
 
   .. index:: weakref function attribute
 

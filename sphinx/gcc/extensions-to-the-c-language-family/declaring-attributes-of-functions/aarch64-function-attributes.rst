@@ -41,7 +41,7 @@ per-function basis.
   this function.  The behavior and permissible arguments are the same as
   for the command line option :option:`-mcmodel` =.
 
-.. gcc-attr:: strict-align
+.. gcc-attr:: strict-align, no-strict-align
 
   .. index:: strict-align function attribute, AArch64
 

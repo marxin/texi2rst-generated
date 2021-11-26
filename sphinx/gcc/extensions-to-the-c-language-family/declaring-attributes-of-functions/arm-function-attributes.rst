@@ -49,7 +49,7 @@ These function attributes are supported for ARM targets:
   Use this attribute on ARM to write Interrupt Service Routines. This is an
   alias to the :gcc-attr:`interrupt` attribute above.
 
-.. gcc-attr:: long_call
+.. gcc-attr:: long_call, short_call
 
   .. index:: long_call function attribute, ARM
 

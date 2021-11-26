@@ -10,7 +10,7 @@ C-SKY Function Attributes
 
 These function attributes are supported by the C-SKY back end:
 
-.. gcc-attr:: interrupt
+.. gcc-attr:: interrupt, isr
 
   .. index:: interrupt function attribute, C-SKY
 

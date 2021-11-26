@@ -50,7 +50,7 @@ These function attributes are supported by the x86 back end:
   As a GCC extension, this calling convention can be used for C functions
   and for static member methods.
 
-.. gcc-attr:: ms_abi
+.. gcc-attr:: ms_abi, sysv_abi
 
   .. index:: ms_abi function attribute, x86
 

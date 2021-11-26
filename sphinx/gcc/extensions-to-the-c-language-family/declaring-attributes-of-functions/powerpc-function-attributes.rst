@@ -10,7 +10,7 @@ PowerPC Function Attributes
 
 These function attributes are supported by the PowerPC back end:
 
-.. gcc-attr:: longcall
+.. gcc-attr:: longcall, shortcall
 
   .. index:: indirect calls, PowerPC
 

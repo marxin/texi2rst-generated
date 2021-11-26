@@ -30,7 +30,7 @@ These function attributes are supported by the ARC back end:
   ``ilink2`` for ARCv1 architecture, and ``ilink`` and
   ``firq`` for ARCv2 architecture.
 
-.. gcc-attr:: long_call
+.. gcc-attr:: long_call, medium_call, short_call
 
   .. index:: long_call function attribute, ARC
 

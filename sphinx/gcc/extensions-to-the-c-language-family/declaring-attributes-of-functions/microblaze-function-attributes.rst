@@ -36,7 +36,7 @@ These function attributes are supported on MicroBlaze targets:
 
     void f () __attribute__ ((break_handler));
 
-.. gcc-attr:: interrupt_handler
+.. gcc-attr:: interrupt_handler, fast_interrupt
 
   .. index:: interrupt_handler function attribute, MicroBlaze
 

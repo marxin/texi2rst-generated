@@ -73,7 +73,7 @@ These function attributes are supported by the MIPS back end:
     void __attribute__ ((interrupt("eic"))) v8 ();
     void __attribute__ ((interrupt("vector=hw3"))) v9 ();
 
-.. gcc-attr:: long_call
+.. gcc-attr:: long_call, short_call, near, far
 
   .. index:: indirect calls, MIPS
 
@@ -95,7 +95,7 @@ These function attributes are supported by the MIPS back end:
   effect; they specify that non-PIC calls should be made using the more
   efficient ``jal`` instruction.
 
-.. gcc-attr:: mips16
+.. gcc-attr:: mips16, nomips16
 
   .. index:: mips16 function attribute, MIPS
 
@@ -115,7 +115,7 @@ These function attributes are supported by the MIPS back end:
   may interact badly with some GCC extensions such as ``__builtin_apply``
   (see :ref:`constructing-calls`).
 
-.. gcc-attr:: micromips, MIPS
+.. gcc-attr:: micromips, MIPS, nomicromips, MIPS
 
   .. index:: micromips function attribute
 
