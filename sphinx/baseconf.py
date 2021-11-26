@@ -107,6 +107,8 @@ html_theme_options = {
     'navigation_with_keys': True
 }
 
+html_logo = '../logo.svg'
+
 html_last_updated_fmt = ''
 
 html_context = {
@@ -128,8 +130,7 @@ needs_sphinx = '1.7'
 # Use xelatex by default
 latex_engine = 'xelatex'
 
-# Remove once xindy works in an openSUSE container
-latex_use_xindy = False
+latex_logo = '../logo.svg'
 
 texinfo_elements = { 'preamble': """
 @definfoenclose strong,*,*
