@@ -106,7 +106,7 @@ GCC plugins may provide their own pragmas.
   current file to be treated as if it came from a system header.
   See :ref:`system-headers`.
 
-``#pragma GCC warning`` :samp:`{#pragma GCC error}#pragma GCC error`
+``#pragma GCC warning``, ``#pragma GCC error``
   ``#pragma GCC warning "message"`` causes the preprocessor to issue
   a warning diagnostic with the text :samp:`message`.  The message
   contained in the pragma must be a single string literal.  Similarly,
