@@ -72,7 +72,7 @@ These function attributes are supported by the MSP430 back end:
   function will rouse the processor from any low-power state that it
   might be in when the function exits.
 
-.. gcc-attr:: lower
+.. gcc-attr:: lower, upper, either
 
   .. index:: lower function attribute, MSP430
 

@@ -10,7 +10,7 @@ m68k Function Attributes
 
 These function attributes are supported by the m68k back end:
 
-.. gcc-attr:: interrupt
+.. gcc-attr:: interrupt, interrupt_handler
 
   .. index:: interrupt function attribute, m68k
 

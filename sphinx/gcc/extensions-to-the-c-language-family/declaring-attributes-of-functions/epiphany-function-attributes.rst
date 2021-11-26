@@ -72,7 +72,7 @@ These function attributes are supported by the Epiphany back end:
                          forwarder_section ("tramp")))
       external_dma_handler ();
 
-.. gcc-attr:: long_call
+.. gcc-attr:: long_call, short_call
 
   .. index:: long_call function attribute, Epiphany
 

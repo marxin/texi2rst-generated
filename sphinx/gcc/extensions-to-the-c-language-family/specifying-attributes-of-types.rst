@@ -47,7 +47,7 @@ The following type attributes are supported on most targets.
 
 .. index:: aligned type attribute
 
-.. gcc-attr:: aligned
+.. gcc-attr:: aligned, aligned (alignment)
 
   The :gcc-attr:`aligned` attribute specifies a minimum alignment (in bytes) for
   variables of the specified type.  When specified, :samp:`{alignment}` must be
@@ -183,7 +183,7 @@ The following type attributes are supported on most targets.
 
   This warning can be disabled by :option:`-Wno-if-not-aligned`.
 
-.. gcc-attr:: alloc_size (position)
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   .. index:: alloc_size type attribute
 
@@ -211,7 +211,7 @@ The following type attributes are supported on most targets.
   ``malloc_type``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-.. gcc-attr:: copy
+.. gcc-attr:: copy, copy (expression)
 
   .. index:: copy type attribute
 
@@ -244,7 +244,7 @@ The following type attributes are supported on most targets.
     A { /* ... */ };
     struct __attribute__ ((copy ( (struct A *)0)) B { /* ... */ };
 
-.. gcc-attr:: deprecated
+.. gcc-attr:: deprecated, deprecated (msg)
 
   .. index:: deprecated type attribute
 
@@ -282,7 +282,7 @@ The following type attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable
+.. gcc-attr:: unavailable, unavailable (msg)
 
   .. index:: unavailable type attribute
 
@@ -576,7 +576,7 @@ The following type attributes are supported on most targets.
   Otherwise the two shared objects are unable to use the same
   typeinfo node and exception handling will break.
 
-.. gcc-attr:: objc_root_class 
+.. gcc-attr:: objc_root_class
 
   .. note::
 
@@ -704,7 +704,7 @@ x86 Type Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. gcc-attr:: ms_struct
+.. gcc-attr:: ms_struct, gcc_struct
 
   .. index:: ms_struct type attribute, x86
 

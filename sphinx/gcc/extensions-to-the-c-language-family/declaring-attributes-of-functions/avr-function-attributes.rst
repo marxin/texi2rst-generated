@@ -70,7 +70,7 @@ These function attributes are supported by the AVR back end:
   To disable ``__gcc_isr`` generation for the whole compilation unit,
   there is option :option:`-mno-gas-isr-prologues`, see :ref:`avr-options`.
 
-.. gcc-attr:: OS_main
+.. gcc-attr:: OS_main, OS_task
 
   .. index:: OS_main function attribute, AVR
 

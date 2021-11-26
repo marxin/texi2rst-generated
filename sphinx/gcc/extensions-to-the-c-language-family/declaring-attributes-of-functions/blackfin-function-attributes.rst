@@ -58,7 +58,7 @@ These function attributes are supported by the Blackfin back end:
   ``.l2.text``. With :option:`-mfdpic`, callers of such functions use
   an inlined PLT.
 
-.. gcc-attr:: longcall
+.. gcc-attr:: longcall, shortcall
 
   .. index:: indirect calls, Blackfin
 

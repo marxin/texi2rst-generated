@@ -10,7 +10,7 @@ RL78 Function Attributes
 
 These function attributes are supported by the RL78 back end:
 
-.. gcc-attr:: interrupt
+.. gcc-attr:: interrupt, brk_interrupt
 
   .. index:: interrupt function attribute, RL78
 

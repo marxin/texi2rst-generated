@@ -67,7 +67,7 @@ The following attributes are supported on most targets.
 
   .. index:: aligned variable attribute
 
-.. gcc-attr:: aligned
+.. gcc-attr:: aligned, aligned (alignment)
 
   The :gcc-attr:`aligned` attribute specifies a minimum alignment for the variable
   or structure field, measured in bytes.  When specified, :samp:`{alignment}` must
@@ -179,7 +179,7 @@ The following attributes are supported on most targets.
   The ``warn_if_not_aligned`` attribute can also be used for types
   (see :ref:`common-type-attributes`.)
 
-.. gcc-attr:: alloc_size (position)
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   .. index:: alloc_size variable attribute
 
@@ -238,7 +238,7 @@ The following attributes are supported on most targets.
   These attributes override the default chosen by the
   :option:`-fno-common` and :option:`-fcommon` flags respectively.
 
-.. gcc-attr:: copy
+.. gcc-attr:: copy, copy (variable)
 
   .. index:: copy variable attribute
 
@@ -256,7 +256,7 @@ The following attributes are supported on most targets.
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-type-attributes`.
 
-.. gcc-attr:: deprecated
+.. gcc-attr:: deprecated, deprecated (msg)
 
   .. index:: deprecated variable attribute
 
@@ -285,7 +285,7 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable
+.. gcc-attr:: unavailable, unavailable (msg)
 
   .. index:: unavailable variable attribute
 
@@ -688,7 +688,7 @@ AVR Variable Attributes
     Please notice that on these devices, there is no need for :gcc-attr:`progmem`
     at all.
 
-.. gcc-attr:: io
+.. gcc-attr:: io, io (addr)
 
   .. index:: io variable attribute, AVR
 
@@ -714,7 +714,7 @@ AVR Variable Attributes
 
     extern volatile int porta __attribute__((io));
 
-.. gcc-attr:: io_low
+.. gcc-attr:: io_low, io_low (addr)
 
   .. index:: io_low variable attribute, AVR
 
@@ -723,7 +723,7 @@ AVR Variable Attributes
   allowing the use of ``cbi``, ``sbi``, ``sbic`` and ``sbis``
   instructions.
 
-.. gcc-attr:: address
+.. gcc-attr:: address, address (addr)
 
   .. index:: address variable attribute, AVR
 
@@ -765,7 +765,7 @@ Blackfin Variable Attributes
 
 Three attributes are currently defined for the Blackfin.
 
-.. gcc-attr:: l1_data
+.. gcc-attr:: l1_data, l1_data_A, l1_data_B
 
   .. index:: l1_data variable attribute, Blackfin
 
@@ -911,7 +911,7 @@ control bus which is specified with :gcc-attr:`cb` attributes.
   allows modules to make no assumptions about where variables might be
   stored.
 
-.. gcc-attr:: io
+.. gcc-attr:: io, io (addr)
 
   Variables with the :gcc-attr:`io` attribute are used to address
   memory-mapped peripherals.  If an address is specified, the variable
@@ -922,7 +922,7 @@ control bus which is specified with :gcc-attr:`cb` attributes.
 
     int timer_count __attribute__((io(0x123)));
 
-.. gcc-attr:: cb
+.. gcc-attr:: cb, cb (addr)
 
   .. index:: cb variable attribute, MeP
 
@@ -943,7 +943,7 @@ You can use these attributes on Microsoft Windows targets.
 x86 Variable Attributes for additional Windows compatibility
 attributes available on all x86 targets.
 
-.. gcc-attr:: dllimport
+.. gcc-attr:: dllimport, dllexport
 
   .. index:: dllimport variable attribute
 
@@ -1008,7 +1008,7 @@ attributes available on all x86 targets.
 MSP430 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. gcc-attr:: upper
+.. gcc-attr:: upper, either
 
   .. index:: upper variable attribute, MSP430
 
@@ -1119,7 +1119,7 @@ x86 Variable Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. gcc-attr:: ms_struct
+.. gcc-attr:: ms_struct, gcc_struct
 
   .. index:: ms_struct variable attribute, x86
 
