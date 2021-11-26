@@ -12,7 +12,7 @@ omp_get_supported_active_levels -- Maximum number of active regions supported
   This function returns the maximum number of nested, active parallel regions
   supported by this implementation.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ==============================================
   *Prototype*:  ``int omp_get_supported_active_levels(void);``

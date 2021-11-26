@@ -13,7 +13,7 @@ omp_get_initial_device -- Return device number of initial device
   For OpenMP 5.1, this must be equal to the value returned by the
   ``omp_get_num_devices`` function.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  =====================================
   *Prototype*:  ``int omp_get_initial_device(void);``

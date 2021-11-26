@@ -14,7 +14,7 @@ omp_get_device_num -- Return device number of current device
   value returned by the ``omp_get_initial_device`` function when called
   from the host.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  =================================
   *Prototype*:  ``int omp_get_device_num(void);``

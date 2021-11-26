@@ -13,7 +13,7 @@ that can be set for tasks.
 :samp:`{Description}:`
   This function obtains the maximum allowed priority number for tasks.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ========================================
   *Prototype*:  ``int omp_get_max_task_priority(void);``

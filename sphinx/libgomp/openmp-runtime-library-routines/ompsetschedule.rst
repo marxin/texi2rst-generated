@@ -16,7 +16,7 @@ omp_set_schedule -- Set the runtime scheduling method
   :samp:`{chunk_size}` if positive, or to the default value if zero or negative.
   For ``omp_sched_auto`` the :samp:`{chunk_size}` argument is ignored.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ============================================================
   *Prototype*:  ``void omp_set_schedule(omp_sched_t kind, int chunk_size);``

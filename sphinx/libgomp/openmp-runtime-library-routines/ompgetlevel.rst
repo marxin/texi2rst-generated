@@ -12,7 +12,7 @@ omp_get_level -- Obtain the current nesting level
   This function returns the nesting level for the parallel blocks,
   which enclose the calling call.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ============================
   *Prototype*:  ``int omp_get_level(void);``

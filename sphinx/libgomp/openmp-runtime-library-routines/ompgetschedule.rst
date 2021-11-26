@@ -14,7 +14,7 @@ omp_get_schedule -- Obtain the runtime scheduling method
   ``omp_sched_guided`` or ``omp_sched_auto``.  The second argument,
   :samp:`{chunk_size}`, is set to the chunk size.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ==============================================================
   *Prototype*:  ``void omp_get_schedule(omp_sched_t *kind, int *chunk_size);``

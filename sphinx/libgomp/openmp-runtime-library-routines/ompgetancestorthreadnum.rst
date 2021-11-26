@@ -14,7 +14,7 @@ omp_get_ancestor_thread_num -- Ancestor thread ID
   zero to ``omp_get_level`` -1 is returned; if :samp:`{level}` is
   ``omp_get_level`` the result is identical to ``omp_get_thread_num``.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ===============================================
   *Prototype*:  ``int omp_get_ancestor_thread_num(int level);``

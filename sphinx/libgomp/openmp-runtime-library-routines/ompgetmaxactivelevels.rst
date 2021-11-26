@@ -11,7 +11,7 @@ omp_get_max_active_levels -- Current maximum number of active regions
 :samp:`{Description}:`
   This function obtains the maximum allowed number of nested, active parallel regions.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ========================================
   *Prototype*:  ``int omp_get_max_active_levels(void);``

@@ -12,7 +12,7 @@ omp_get_active_level -- Number of parallel regions
   This function returns the nesting level for the active parallel blocks,
   which enclose the calling call.
 
-C/C++
+:samp:`{C/C++}:`
 
   ============  ===================================
   *Prototype*:  ``int omp_get_active_level(void);``
