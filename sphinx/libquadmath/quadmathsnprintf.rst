@@ -27,7 +27,8 @@ Syntax
   :samp:`{format}`  conversion specifier string
   ================  ===============================================
 
-Note
+.. note::
+
   On some targets when supported by the C library hooks are installed
   for ``printf`` family of functions, so that ``printf ("%Qe", 1.2Q);``
   etc. works too.
