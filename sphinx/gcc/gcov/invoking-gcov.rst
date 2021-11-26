@@ -232,7 +232,9 @@ Options
 
   Do not create the :command:`gcov` output file.
 
-:samp:`-o {directory|file}` :samp:`--object-directory {directory}` :samp:`--object-file {file}`
+
+.. option:: -o directory|file, --object-directory directory, --object-file file
+
   Specify either the directory containing the gcov data files, or the
   object path name.  The :samp:`.gcno`, and
   :samp:`.gcda` data files are searched for using this option.  If a directory
@@ -262,7 +264,8 @@ Options
   header files and coverage of any inline functions therein is normally
   uninteresting.
 
-:samp:`-s {directory}` :samp:`--source-prefix {directory}`
+.. option:: -s directory, --source-prefix directory
+
   A prefix for source file names to remove when generating the output
   coverage files.  This option is useful when building in a separate
   directory, and the pathname to the source directory is not wanted when
