@@ -975,7 +975,7 @@ Solaris 11.3 provides GCC 4.5.2, 4.7.3, and 4.8.2 as
 :command:`/usr/gcc/4.5/bin/gcc` or similar.  Newer Solaris versions
 provide one or more of GCC 5, 7, and 9.  Alternatively,
 you can install a pre-built GCC to bootstrap and install GCC.  See the
-`binaries page <https://gcc.gnu.org/install/binaries.html>`_ binaries page for details.
+:ref:`binaries` for details.
 
 The Solaris 2 :command:`/bin/sh` will often fail to configure
 :samp:`libstdc++-v3`.  We therefore recommend using the
