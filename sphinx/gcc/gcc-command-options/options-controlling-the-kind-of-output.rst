@@ -523,7 +523,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   options for each tool.  For some targets extra target-specific
   information may also be printed.
 
-:samp:`--help={{class}{|[}^{]}{qualifier}}{[},...{]}`
+.. option:: --help={class}|[^]qualifier}[,...]
+
   Print (on the standard output) a description of the command-line
   options understood by the compiler that fit into all specified classes
   and qualifiers.  These are the supported classes:

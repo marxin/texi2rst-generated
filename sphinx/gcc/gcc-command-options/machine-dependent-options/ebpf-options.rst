@@ -82,6 +82,7 @@ eBPF Options
   the BPF target.
 
 .. option:: -mxbpf
+
   Generate code for an expanded version of BPF, which relaxes some of
   the restrictions imposed by the BPF architecture:
 
