@@ -791,8 +791,7 @@ The following attributes are supported on most targets.
   this reason the attribute is not allowed on types to annotate indirect
   calls.
 
-.. gcc-attr:: malloc ({deallocator})
-.. gcc-attr:: malloc (deallocator, ptr-index)
+.. gcc-attr:: malloc, malloc (deallocator), malloc (deallocator, ptr-index)
 
   .. index:: malloc function attribute
 
@@ -1191,8 +1190,7 @@ The following attributes are supported on most targets.
   with the notable exceptions of ``qsort`` and ``bsearch`` that
   take function pointer arguments.
 
-.. gcc-attr:: optimize ({level}, ...)
-.. gcc-attr:: optimize (string, ...)
+.. gcc-attr:: optimize (level, ...), optimize (string, ...)
 
   .. index:: optimize function attribute
 

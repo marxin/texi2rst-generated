@@ -568,9 +568,13 @@ The following attributes are supported on most targets.
   right location.  Specifically, some type of non-volatile, writeable
   memory is required.
 
-.. gcc-attr:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
+.. gcc-attr:: objc_nullability (nullability kind)
 
   .. index:: objc_nullability variable attribute
+
+  .. note::
+
+    (Objective-C and Objective-C++ only)
 
   This attribute applies to pointer variables only.  It allows marking the
   pointer with one of four possible values describing the conditions under
