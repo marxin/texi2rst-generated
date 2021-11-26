@@ -39,7 +39,7 @@ BGT --- Bitwise greater than
     RESULT = BGT(I, J)
 
   :samp:`{See also}:`
-    BGE, 
-    BLE, 
-    BLT
+    :ref:`BGE`, 
+    :ref:`BLE`, 
+    :ref:`BLT`
 

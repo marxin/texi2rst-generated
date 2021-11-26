@@ -62,5 +62,5 @@ ATANH --- Inverse hyperbolic tangent function
 
   :samp:`{See also}:`
     Inverse function: 
-    TANH
+    :ref:`TANH`
 

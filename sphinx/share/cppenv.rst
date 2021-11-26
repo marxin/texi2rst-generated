@@ -32,7 +32,7 @@
 
   .. only:: cpp
 
-    See also Search Path.
+    See also :ref:`search-path`.
 
 .. envvar:: DEPENDENCIES_OUTPUT
 

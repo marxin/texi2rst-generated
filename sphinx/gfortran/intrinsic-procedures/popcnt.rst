@@ -49,7 +49,7 @@ POPCNT --- Number of bits set
       end program test_population
 
   :samp:`{See also}:`
-    POPPAR, 
-    LEADZ, 
-    TRAILZ
+    :ref:`POPPAR`, 
+    :ref:`LEADZ`, 
+    :ref:`TRAILZ`
 

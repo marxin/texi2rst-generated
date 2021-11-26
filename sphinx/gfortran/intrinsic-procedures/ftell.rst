@@ -51,5 +51,5 @@ FTELL --- Current stream position
       END PROGRAM
 
   :samp:`{See also}:`
-    FSEEK
+    :ref:`FSEEK`
 

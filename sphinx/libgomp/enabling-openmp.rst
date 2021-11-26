@@ -15,7 +15,7 @@ flag :command:`-fopenmp` must be specified.  This enables the OpenMP directive
 ``!$`` conditional compilation sentinels in free form and ``c$``,
 ``*$`` and ``!$`` sentinels in fixed form, for Fortran.  The flag also
 arranges for automatic linking of the OpenMP runtime library 
-(Runtime Library Routines).
+(:ref:`runtime-library-routines`).
 
 A complete description of all OpenMP directives may be found in the
 `OpenMP Application Program Interface <https://www.openmp.org>`_ manuals.

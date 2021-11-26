@@ -25,7 +25,7 @@ omp_get_max_teams -- Maximum number of teams of teams region
   ============  ========================================
 
 :samp:`{See also}:`
-  omp_set_num_teams, omp_get_num_teams
+  :ref:`omp_set_num_teams`, :ref:`omp_get_num_teams`
 
 :samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.4.

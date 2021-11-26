@@ -162,7 +162,7 @@ The available options are:
   will treat the field ``scope`` as being present.
 
   The ``desc`` and ``tag`` options can also be used for inheritance
-  to denote which subclass an instance is.  See Inheritance and GTY
+  to denote which subclass an instance is.  See :ref:`inheritance-and-gty`
   for more information.
 
   .. index:: cache
@@ -301,5 +301,5 @@ The available options are:
 ``user``
   The ``user`` option indicates that the code to mark structure
   fields is completely handled by user-provided routines.  See section
-  User GC for details on what functions need to be provided.
+  :ref:`user-gc` for details on what functions need to be provided.
 

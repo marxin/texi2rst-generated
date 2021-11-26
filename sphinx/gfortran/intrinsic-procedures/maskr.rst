@@ -42,5 +42,5 @@ MASKR --- Right justified mask
     RESULT = MASKR(I[, KIND])
 
   :samp:`{See also}:`
-    MASKL
+    :ref:`MASKL`
 

@@ -44,5 +44,5 @@ DREAL --- Double real part function
       end program test_dreal
 
   :samp:`{See also}:`
-    AIMAG
+    :ref:`AIMAG`
 

@@ -66,5 +66,5 @@ MALLOC --- Allocate dynamic memory
       end program test_malloc
 
   :samp:`{See also}:`
-    FREE
+    :ref:`FREE`
 

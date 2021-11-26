@@ -47,7 +47,7 @@ ABORT --- Abort the program
       end program test_abort
 
   :samp:`{See also}:`
-    EXIT, 
-    KILL, 
-    BACKTRACE
+    :ref:`EXIT`, 
+    :ref:`KILL`, 
+    :ref:`BACKTRACE`
 

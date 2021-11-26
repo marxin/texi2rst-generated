@@ -38,7 +38,7 @@ IAND --- Bitwise logical and
     The return type is ``INTEGER`` with the kind type parameter of the
     arguments.
     A boz-literal-constant is converted to an ``INTEGER`` with the kind
-    type parameter of the other argument as-if a call to INT occurred.
+    type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
@@ -74,10 +74,10 @@ IAND --- Bitwise logical and
     ============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IOR, 
-    IEOR, 
-    IBITS, 
-    IBSET, 
-    IBCLR, 
-    NOT
+    :ref:`IOR`, 
+    :ref:`IEOR`, 
+    :ref:`IBITS`, 
+    :ref:`IBSET`, 
+    :ref:`IBCLR`, 
+    :ref:`NOT`
 

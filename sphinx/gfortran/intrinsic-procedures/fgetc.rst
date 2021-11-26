@@ -65,7 +65,7 @@ FGETC --- Read a single character in stream mode
       END PROGRAM
 
   :samp:`{See also}:`
-    FGET, 
-    FPUT, 
-    FPUTC
+    :ref:`FGET`, 
+    :ref:`FPUT`, 
+    :ref:`FPUTC`
 

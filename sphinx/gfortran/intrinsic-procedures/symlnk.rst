@@ -47,6 +47,6 @@ SYMLNK --- Create a symbolic link
     STATUS = SYMLNK(PATH1, PATH2)
 
   :samp:`{See also}:`
-    LINK, 
-    UNLINK
+    :ref:`LINK`, 
+    :ref:`UNLINK`
 

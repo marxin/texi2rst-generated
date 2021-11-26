@@ -34,5 +34,5 @@ GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
   ``FALSE``, the host system will handle the assignment of threads to CPUs.
 
 :samp:`{See also}:`
-  OMP_PLACES, OMP_PROC_BIND
+  :ref:`OMP_PLACES`, :ref:`OMP_PROC_BIND`
 

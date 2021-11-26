@@ -50,5 +50,5 @@ GETENV --- Get an environmental variable
       END PROGRAM
 
   :samp:`{See also}:`
-    GET_ENVIRONMENT_VARIABLE
+    :ref:`GET_ENVIRONMENT_VARIABLE`
 

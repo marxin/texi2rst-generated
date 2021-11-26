@@ -56,10 +56,10 @@ ATOMIC_AND --- Atomic bitwise AND operation
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_FETCH_AND, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_ADD, 
-    ATOMIC_OR, 
-    ATOMIC_XOR
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_FETCH_AND`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_ADD`, 
+    :ref:`ATOMIC_OR`, 
+    :ref:`ATOMIC_XOR`
 

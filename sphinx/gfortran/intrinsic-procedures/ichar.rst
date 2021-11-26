@@ -83,7 +83,7 @@ ICHAR --- Character-to-integer conversion function
       end program read_val
 
   :samp:`{See also}:`
-    ACHAR, 
-    CHAR, 
-    IACHAR
+    :ref:`ACHAR`, 
+    :ref:`CHAR`, 
+    :ref:`IACHAR`
 

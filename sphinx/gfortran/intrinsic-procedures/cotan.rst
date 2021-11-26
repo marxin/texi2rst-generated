@@ -58,7 +58,7 @@ COTAN --- Cotangent function
 
   :samp:`{See also}:`
     Converse function: 
-    TAN 
+    :ref:`TAN` 
     Degrees function: 
-    COTAND
+    :ref:`COTAND`
 

@@ -43,10 +43,10 @@ LSHIFT --- Left shift bits
     RESULT = LSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
-    ISHFT, 
-    ISHFTC, 
-    RSHIFT, 
-    SHIFTA, 
-    SHIFTL, 
-    SHIFTR
+    :ref:`ISHFT`, 
+    :ref:`ISHFTC`, 
+    :ref:`RSHIFT`, 
+    :ref:`SHIFTA`, 
+    :ref:`SHIFTL`, 
+    :ref:`SHIFTR`
 

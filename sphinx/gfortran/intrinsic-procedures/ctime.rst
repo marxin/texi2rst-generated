@@ -17,7 +17,7 @@ CTIME --- Convert a time into a string
 .. function:: CTIME(TIME, RESULT)
 
   ``CTIME`` converts a system time value, such as returned by
-  TIME8, to a string. The output will be of the form :samp:`Sat
+  :ref:`TIME8`, to a string. The output will be of the form :samp:`Sat
   Aug 19 18:13:14 1995`.
 
   :param TIME:
@@ -61,9 +61,9 @@ CTIME --- Convert a time into a string
       end program test_ctime
 
   :samp:`{See Also}:`
-    DATE_AND_TIME, 
-    GMTIME, 
-    LTIME, 
-    TIME, 
-    TIME8
+    :ref:`DATE_AND_TIME`, 
+    :ref:`GMTIME`, 
+    :ref:`LTIME`, 
+    :ref:`TIME`, 
+    :ref:`TIME8`
 

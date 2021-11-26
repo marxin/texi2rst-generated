@@ -53,5 +53,5 @@ IDATE --- Get current local time subroutine (day/month/year)
       end program test_idate
 
   :samp:`{See also}:`
-    DATE_AND_TIME
+    :ref:`DATE_AND_TIME`
 

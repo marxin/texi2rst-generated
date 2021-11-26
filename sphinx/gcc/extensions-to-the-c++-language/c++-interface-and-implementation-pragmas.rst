@@ -21,7 +21,7 @@ translation unit.
 
 *Note:* These ``#pragma`` s have been superceded as of GCC 2.7.2
 by COMDAT support and the 'key method' heuristic
-mentioned in Vague Linkage.  Using them can actually cause your
+mentioned in :ref:`vague-linkage`.  Using them can actually cause your
 program to grow due to unnecessary out-of-line copies of inline
 functions.
 

@@ -62,6 +62,6 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
       end program test_random_seed
 
   :samp:`{See also}:`
-    RANDOM_NUMBER, 
-    RANDOM_SEED
+    :ref:`RANDOM_NUMBER`, 
+    :ref:`RANDOM_SEED`
 

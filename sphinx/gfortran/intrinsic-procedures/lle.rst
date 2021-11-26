@@ -52,7 +52,7 @@ LLE --- Lexical less than or equal
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
-    LGE, 
-    LGT, 
-    LLT
+    :ref:`LGE`, 
+    :ref:`LGT`, 
+    :ref:`LLT`
 

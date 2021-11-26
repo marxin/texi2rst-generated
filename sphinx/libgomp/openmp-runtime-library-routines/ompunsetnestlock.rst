@@ -29,7 +29,7 @@ omp_unset_nest_lock -- Unset nested lock
   ============  ======================================================
 
 :samp:`{See also}:`
-  omp_set_nest_lock
+  :ref:`omp_set_nest_lock`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.

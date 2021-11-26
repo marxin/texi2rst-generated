@@ -51,7 +51,7 @@ A ``define_insn`` is an RTL expression containing four or five operands:
 
   The name may also have the form :samp:`@{n}`.  This has the same
   effect as a name :samp:`{n}`, but in addition tells the compiler to
-  generate further helper functions; see Parameterized Names for details.
+  generate further helper functions; see :ref:`parameterized-names` for details.
 
 * The :dfn:`RTL template`: This is a vector of incomplete RTL expressions
   which describe the semantics of the instruction (see :ref:`rtl-template`).

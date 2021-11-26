@@ -64,8 +64,8 @@ CO_MAX --- Maximal value on the current set of images
       end program test
 
   :samp:`{See also}:`
-    CO_MIN, 
-    CO_SUM, 
-    CO_REDUCE, 
-    CO_BROADCAST
+    :ref:`CO_MIN`, 
+    :ref:`CO_SUM`, 
+    :ref:`CO_REDUCE`, 
+    :ref:`CO_BROADCAST`
 

@@ -52,7 +52,7 @@ LGE --- Lexical greater than or equal
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
-    LGT, 
-    LLE, 
-    LLT
+    :ref:`LGT`, 
+    :ref:`LLE`, 
+    :ref:`LLT`
 

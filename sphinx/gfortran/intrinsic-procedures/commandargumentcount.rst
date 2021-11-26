@@ -47,6 +47,6 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
       end program test_command_argument_count
 
   :samp:`{See also}:`
-    GET_COMMAND, 
-    GET_COMMAND_ARGUMENT
+    :ref:`GET_COMMAND`, 
+    :ref:`GET_COMMAND_ARGUMENT`
 

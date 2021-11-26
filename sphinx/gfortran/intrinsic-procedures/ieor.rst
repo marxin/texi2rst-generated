@@ -39,7 +39,7 @@ IEOR --- Bitwise logical exclusive or
     The return type is ``INTEGER`` with the kind type parameter of the
     arguments.
     A boz-literal-constant is converted to an ``INTEGER`` with the kind
-    type parameter of the other argument as-if a call to INT occurred.
+    type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
@@ -65,10 +65,10 @@ IEOR --- Bitwise logical exclusive or
     ============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IOR, 
-    IAND, 
-    IBITS, 
-    IBSET, 
-    IBCLR, 
-    NOT
+    :ref:`IOR`, 
+    :ref:`IAND`, 
+    :ref:`IBITS`, 
+    :ref:`IBSET`, 
+    :ref:`IBCLR`, 
+    :ref:`NOT`
 

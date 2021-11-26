@@ -49,6 +49,6 @@ COMPILER_VERSION --- Compiler version string
          end
 
   :samp:`{See also}:`
-    COMPILER_OPTIONS, 
-    ISO_FORTRAN_ENV
+    :ref:`COMPILER_OPTIONS`, 
+    :ref:`ISO_FORTRAN_ENV`
 

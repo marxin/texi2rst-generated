@@ -54,11 +54,11 @@ IACHAR --- Code in ASCII collating sequence
       end program test_iachar
 
   :samp:`{Note}:`
-    See ICHAR for a discussion of converting between numerical values
+    See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
-    ACHAR, 
-    CHAR, 
-    ICHAR
+    :ref:`ACHAR`, 
+    :ref:`CHAR`, 
+    :ref:`ICHAR`
 

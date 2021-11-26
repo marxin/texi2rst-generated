@@ -757,16 +757,16 @@ ARM-specific attributes
 
 ``arm_coproc2_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in arm_coproc1_ok in addition to the following: ``CDP2``, ``LDC2``,
+  in :ref:`arm_coproc1_ok` in addition to the following: ``CDP2``, ``LDC2``,
   ``LDC2l``, ``STC2``, ``STC2l``, ``MCR2`` and ``MRC2``.
 
 ``arm_coproc3_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in arm_coproc2_ok in addition the following: ``MCRR`` and ``MRRC``.
+  in :ref:`arm_coproc2_ok` in addition the following: ``MCRR`` and ``MRRC``.
 
 ``arm_coproc4_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in arm_coproc3_ok in addition the following: ``MCRR2`` and ``MRRC2``.
+  in :ref:`arm_coproc3_ok` in addition the following: ``MCRR2`` and ``MRRC2``.
 
 ``arm_simd32_ok``
   ARM Target supports options suitable for accessing the SIMD32 intrinsics from
@@ -1330,8 +1330,7 @@ Other attributes
 
 ``stack_size``
   Target has limited stack size.  The stack size limit can be obtained using the
-  STACK_SIZE macro defined by stack_size_ao``dg-add-options`` feature
-  ``stack_size``.
+  STACK_SIZE macro defined by :ref:`stack_size_ao`.
 
 ``static``
   Target supports :option:`-static`.

@@ -53,5 +53,5 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
       end program test_itime
 
   :samp:`{See also}:`
-    DATE_AND_TIME
+    :ref:`DATE_AND_TIME`
 

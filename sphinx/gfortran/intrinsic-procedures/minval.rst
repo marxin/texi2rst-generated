@@ -59,6 +59,6 @@ MINVAL --- Minimum value of an array
     RESULT = MINVAL(ARRAY [, MASK])
 
   :samp:`{See also}:`
-    MIN, 
-    MINLOC
+    :ref:`MIN`, 
+    :ref:`MINLOC`
 

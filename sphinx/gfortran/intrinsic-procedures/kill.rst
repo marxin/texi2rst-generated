@@ -48,6 +48,6 @@ KILL --- Send a signal to a process
     STATUS = KILL(PID, SIG)
 
   :samp:`{See also}:`
-    ABORT, 
-    EXIT
+    :ref:`ABORT`, 
+    :ref:`EXIT`
 

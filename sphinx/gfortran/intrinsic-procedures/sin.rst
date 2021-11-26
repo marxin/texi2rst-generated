@@ -67,7 +67,7 @@ SIN --- Sine function
 
   :samp:`{See also}:`
     Inverse function: 
-    ASIN 
+    :ref:`ASIN` 
     Degrees function: 
-    SIND
+    :ref:`SIND`
 

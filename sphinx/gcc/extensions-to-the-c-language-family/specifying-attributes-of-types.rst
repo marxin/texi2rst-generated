@@ -677,7 +677,7 @@ Three attributes currently are defined for PowerPC configurations:
 .. index:: gcc_struct type attribute, PowerPC
 
 For full documentation of the :gcc-attr:`ms_struct` and ``gcc_struct``
-attributes please see the documentation in x86 Type Attributes.
+attributes please see the documentation in :ref:`x86-type-attributes`.
 
 .. index:: altivec type attribute, PowerPC
 
@@ -720,7 +720,7 @@ Two attributes are currently defined for x86 configurations:
   The :gcc-attr:`ms_struct` and ``gcc_struct`` attributes correspond
   to the :option:`-mms-bitfields` and :option:`-mno-ms-bitfields`
   command-line options, respectively;
-  see x86 Options, for details of how structure layout is affected.
+  see :ref:`x86-options`, for details of how structure layout is affected.
   See :ref:`x86-variable-attributes`, for information about the corresponding
   attributes on variables.
 

@@ -1454,10 +1454,9 @@ The following attributes are supported on most targets.
   a comma (:samp:`,`) within a single string.  Spaces are not permitted
   within the strings.
 
-  The options supported are specific to each target; refer to x86
-  Function Attributes, PowerPC Function Attributes,
-  ARM Function Attributes, AArch64 Function Attributes,
-  Nios II Function Attributes, and S/390 Function Attributes
+  The options supported are specific to each target; refer to :ref:`x86-function-attributes`, :ref:`powerpc-function-attributes`,
+  :ref:`arm-function-attributes`, :ref:`aarch64-function-attributes`,
+  :ref:`nios-ii-function-attributes`, and :ref:`s-390-function-attributes`
   for details.
 
 .. gcc-attr:: symver ("name2@nodename")

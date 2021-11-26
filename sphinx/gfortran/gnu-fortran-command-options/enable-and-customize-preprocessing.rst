@@ -40,7 +40,7 @@ files, use the equivalent preprocessor statement ``#include``.
 If GNU Fortran invokes the preprocessor, ``__GFORTRAN__``
 is defined.  The macros ``__GNUC__``, ``__GNUC_MINOR__`` and
 ``__GNUC_PATCHLEVEL__`` can be used to determine the version of the
-compiler.  See TopOverviewcppThe C Preprocessor for details.
+compiler.  See :ref:`cpp:top` for details.
 
 GNU Fortran supports a number of ``INTEGER`` and ``REAL`` kind types
 in additional to the kind types required by the Fortran standard.

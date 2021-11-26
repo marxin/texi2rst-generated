@@ -70,7 +70,7 @@ Specify additional compiler options
   This directive does nothing on targets that enable the features by
   default, or that don't provide them at all.  It must come after
   all ``dg-options`` directives.
-  For supported values of :samp:`{feature}` see Add Options.
+  For supported values of :samp:`{feature}` see :ref:`add-options`.
 
 :samp:`{ dg-additional-options {options} [{ target {selector} }] }`
   This directive provides a list of compiler options, to be used

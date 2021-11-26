@@ -60,6 +60,6 @@ SIZEOF --- Size in bytes of an expression
     where default ``REAL`` variables are unusually padded.
 
   :samp:`{See also}:`
-    C_SIZEOF, 
-    STORAGE_SIZE
+    :ref:`C_SIZEOF`, 
+    :ref:`STORAGE_SIZE`
 

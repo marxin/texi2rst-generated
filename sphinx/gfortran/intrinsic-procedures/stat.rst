@@ -71,7 +71,7 @@ STAT --- Get file status
 
   :samp:`{See also}:`
     To stat an open file: 
-    FSTAT 
+    :ref:`FSTAT` 
     To stat a link: 
-    LSTAT
+    :ref:`LSTAT`
 

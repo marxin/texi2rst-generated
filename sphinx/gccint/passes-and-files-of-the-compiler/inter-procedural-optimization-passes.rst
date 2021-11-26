@@ -18,7 +18,7 @@ IPA is a critical part of link-time optimization (LTO) and
 whole-program (WHOPR) optimization, and these passes are structured
 with the needs of LTO and WHOPR in mind by dividing their operations
 into stages.  For detailed discussion of the LTO/WHOPR IPA pass stages
-and interfaces, see IPA.
+and interfaces, see :ref:`IPA`.
 
 The following briefly describes the inter-procedural optimization (IPA)
 passes, which are split into small IPA passes, regular IPA passes,
@@ -36,7 +36,7 @@ Small IPA passes
 .. index:: small IPA passes
 
 A small IPA pass is a pass derived from ``simple_ipa_opt_pass``.
-As described in IPA, it does everything at once and 
+As described in :ref:`IPA`, it does everything at once and 
 defines only the *Execute* stage.  During this
 stage it accesses and modifies the function bodies.
 No ``generate_summary``, ``read_summary``, or ``write_summary``

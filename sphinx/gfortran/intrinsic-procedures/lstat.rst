@@ -14,7 +14,7 @@ LSTAT --- Get file status
 
 .. function:: LSTAT(NAME, VALUES, STATUS)
 
-  ``LSTAT`` is identical to STAT, except that if path is a
+  ``LSTAT`` is identical to :ref:`STAT`, except that if path is a
   symbolic link, then the link itself is statted, not the file that it
   refers to.
 
@@ -43,11 +43,11 @@ LSTAT --- Get file status
     STATUS = LSTAT(NAME, VALUES)
 
   :samp:`{Example}:`
-    See STAT for an example.
+    See :ref:`STAT` for an example.
 
   :samp:`{See also}:`
     To stat an open file: 
-    FSTAT 
+    :ref:`FSTAT` 
     To stat a file: 
-    STAT
+    :ref:`STAT`
 

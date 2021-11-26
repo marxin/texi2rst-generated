@@ -47,5 +47,5 @@ DBLE --- Double conversion function
       end program test_dble
 
   :samp:`{See also}:`
-    REAL
+    :ref:`REAL`
 

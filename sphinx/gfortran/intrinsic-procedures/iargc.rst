@@ -40,13 +40,13 @@ IARGC --- Get the number of command line arguments
     None
 
   :samp:`{Example}:`
-    See GETARG
+    See :ref:`GETARG`
 
   :samp:`{See also}:`
     GNU Fortran 77 compatibility subroutine: 
-    GETARG 
+    :ref:`GETARG` 
     Fortran 2003 functions and subroutines: 
-    GET_COMMAND, 
-    GET_COMMAND_ARGUMENT, 
-    COMMAND_ARGUMENT_COUNT
+    :ref:`GET_COMMAND`, 
+    :ref:`GET_COMMAND_ARGUMENT`, 
+    :ref:`COMMAND_ARGUMENT_COUNT`
 

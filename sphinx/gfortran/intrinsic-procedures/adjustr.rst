@@ -50,6 +50,6 @@ ADJUSTR --- Right adjust a string
       end program test_adjustr
 
   :samp:`{See also}:`
-    ADJUSTL, 
-    TRIM
+    :ref:`ADJUSTL`, 
+    :ref:`TRIM`
 

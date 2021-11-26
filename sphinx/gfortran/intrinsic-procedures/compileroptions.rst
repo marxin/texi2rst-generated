@@ -52,6 +52,6 @@ COMPILER_OPTIONS --- Options passed to the compiler
          end
 
   :samp:`{See also}:`
-    COMPILER_VERSION, 
-    ISO_FORTRAN_ENV
+    :ref:`COMPILER_VERSION`, 
+    :ref:`ISO_FORTRAN_ENV`
 

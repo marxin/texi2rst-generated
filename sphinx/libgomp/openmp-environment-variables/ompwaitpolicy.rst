@@ -18,7 +18,7 @@ OMP_WAIT_POLICY -- How waiting threads are handled
   before waiting passively.
 
 :samp:`{See also}:`
-  GOMP_SPINCOUNT
+  :ref:`GOMP_SPINCOUNT`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.8

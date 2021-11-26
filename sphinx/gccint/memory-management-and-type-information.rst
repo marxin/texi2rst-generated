@@ -87,7 +87,7 @@ structures/classes marked for automatic GC code generation:
 
 If you have a class or structure using any of the above constructs,
 you need to mark that class as ``GTY ((user))`` and provide your
-own marking routines (see section User GC for details).
+own marking routines (see section :ref:`user-gc` for details).
 
 It is always valid to include function definitions inside classes.
 Those are always ignored by ``gengtype``, as it only cares about

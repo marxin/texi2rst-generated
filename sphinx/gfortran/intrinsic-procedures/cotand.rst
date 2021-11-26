@@ -61,7 +61,7 @@ COTAND --- Cotangent function, degrees
 
   :samp:`{See also}:`
     Converse function: 
-    TAND 
+    :ref:`TAND` 
     Radians function: 
-    COTAN
+    :ref:`COTAN`
 

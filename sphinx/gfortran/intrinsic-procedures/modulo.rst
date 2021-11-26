@@ -58,5 +58,5 @@ MODULO --- Modulo function
       end program
 
   :samp:`{See also}:`
-    MOD
+    :ref:`MOD`
 

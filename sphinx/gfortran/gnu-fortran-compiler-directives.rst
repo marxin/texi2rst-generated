@@ -24,7 +24,7 @@ directives can be used to set attributes of variables and procedures
 which are not part of the standard.  Whether a given attribute is
 supported and its exact effects depend on both the operating system and
 on the processor; see
-TopC ExtensionsgccUsing the GNU Compiler Collection (GCC)
+:ref:`gcc:top`
 for details.
 
 For procedures and procedure pointers, the following attributes can

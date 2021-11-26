@@ -50,5 +50,5 @@ GETLOG --- Get login name
       END PROGRAM
 
   :samp:`{See also}:`
-    GETUID
+    :ref:`GETUID`
 

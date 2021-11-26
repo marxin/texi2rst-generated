@@ -38,17 +38,17 @@ data types are:
 
 .. [#f1] not available on all systems
 .. [#f2] unless :option:`-fdefault-integer-8` is used
-.. [#f3] unless :option:`-fdefault-real-8` is used (see Fortran Dialect Options)
+.. [#f3] unless :option:`-fdefault-real-8` is used (see :ref:`fortran-dialect-options`)
 
 The ``KIND`` value matches the storage size in bytes, except for
 ``COMPLEX`` where the storage size is twice as much (or both real and
 imaginary part are a real value of the given size).  It is recommended to use
-the SELECTED_CHAR_KIND, SELECTED_INT_KIND and
-SELECTED_REAL_KIND intrinsics or the ``INT8``, ``INT16``,
+the :ref:`SELECTED_CHAR_KIND`, :ref:`SELECTED_INT_KIND` and
+:ref:`SELECTED_REAL_KIND` intrinsics or the ``INT8``, ``INT16``,
 ``INT32``, ``INT64``, ``REAL32``, ``REAL64``, and ``REAL128``
 parameters of the ``ISO_FORTRAN_ENV`` module instead of the concrete values.
 The available kind parameters can be found in the constant arrays
 ``CHARACTER_KINDS``, ``INTEGER_KINDS``, ``LOGICAL_KINDS`` and
-``REAL_KINDS`` in the ISO_FORTRAN_ENV module.  For C interoperability,
-the kind parameters of the ISO_C_BINDING module should be used.
+``REAL_KINDS`` in the :ref:`ISO_FORTRAN_ENV` module.  For C interoperability,
+the kind parameters of the :ref:`ISO_C_BINDING` module should be used.
 

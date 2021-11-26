@@ -63,8 +63,8 @@ CO_BROADCAST --- Copy a value to all images the current set of images
       end program test
 
   :samp:`{See also}:`
-    CO_MAX, 
-    CO_MIN, 
-    CO_SUM, 
-    CO_REDUCE
+    :ref:`CO_MAX`, 
+    :ref:`CO_MIN`, 
+    :ref:`CO_SUM`, 
+    :ref:`CO_REDUCE`
 

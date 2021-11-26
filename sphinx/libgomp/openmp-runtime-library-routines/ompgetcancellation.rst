@@ -27,7 +27,7 @@ omp_get_cancellation -- Whether cancellation support is enabled
   ============  ===========================================
 
 :samp:`{See also}:`
-  OMP_CANCELLATION
+  :ref:`OMP_CANCELLATION`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.9.

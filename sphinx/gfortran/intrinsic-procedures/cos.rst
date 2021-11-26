@@ -69,7 +69,7 @@ COS --- Cosine function
 
   :samp:`{See also}:`
     Inverse function: 
-    ACOS 
+    :ref:`ACOS` 
     Degrees function: 
-    COSD
+    :ref:`COSD`
 

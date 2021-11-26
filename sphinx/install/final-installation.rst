@@ -109,7 +109,7 @@ Include the following information:
   will include a link to the archived copy of your message.
 
 We'd also like to know if the
-Specifichost/target specific installation notes
+:ref:`specific`
 didn't include your host/target information or if that information is
 incomplete or out of date.  Send a note to
 gcc@gcc.gnu.org detailing how the information should be changed.

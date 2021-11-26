@@ -25,7 +25,7 @@ We're not yet accounting for the fact that OpenACC events may
 occur during event processing.
 We just handle one case specially, as required by CUDA 9.0
 :command:`nvprof`, that ``acc_get_device_type``
-(acc_get_device_type)) may be called from
+(:ref:`acc_get_device_type`)) may be called from
 ``acc_ev_device_init_start``, ``acc_ev_device_init_end``
 callbacks.
 

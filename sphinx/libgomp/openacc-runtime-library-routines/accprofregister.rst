@@ -18,7 +18,7 @@ acc_prof_register -- Register callbacks.
   ============  ============================================================================
 
 :samp:`{See also}:`
-  OpenACC Profiling Interface
+  :ref:`openacc-profiling-interface`
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

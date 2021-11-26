@@ -57,11 +57,11 @@ CHAR --- Character conversion function
     ===========  =============  ====================  ====================
 
   :samp:`{Note}:`
-    See ICHAR for a discussion of converting between numerical values
+    See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
-    ACHAR, 
-    IACHAR, 
-    ICHAR
+    :ref:`ACHAR`, 
+    :ref:`IACHAR`, 
+    :ref:`ICHAR`
 

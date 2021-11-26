@@ -72,7 +72,7 @@ ATAN2 --- Arctangent function
 
   :samp:`{See also}:`
     Alias: 
-    ATAN 
+    :ref:`ATAN` 
     Degrees function: 
-    ATAN2D
+    :ref:`ATAN2D`
 

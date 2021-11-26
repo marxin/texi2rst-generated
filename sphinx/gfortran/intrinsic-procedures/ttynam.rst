@@ -48,5 +48,5 @@ TTYNAM --- Get the name of a terminal device.
       END PROGRAM
 
   :samp:`{See also}:`
-    ISATTY
+    :ref:`ISATTY`
 

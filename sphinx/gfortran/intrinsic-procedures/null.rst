@@ -44,5 +44,5 @@ NULL --- Function that returns an disassociated pointer
       REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 
   :samp:`{See also}:`
-    ASSOCIATED
+    :ref:`ASSOCIATED`
 

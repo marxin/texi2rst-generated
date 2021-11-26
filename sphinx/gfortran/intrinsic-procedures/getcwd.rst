@@ -47,5 +47,5 @@ GETCWD --- Get current working directory
       END PROGRAM
 
   :samp:`{See also}:`
-    CHDIR
+    :ref:`CHDIR`
 

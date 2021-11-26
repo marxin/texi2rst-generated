@@ -57,11 +57,11 @@ ATOMIC_DEFINE --- Setting a variable atomically
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_REF, 
-    ATOMIC_CAS, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_ADD, 
-    ATOMIC_AND, 
-    ATOMIC_OR, 
-    ATOMIC_XOR
+    :ref:`ATOMIC_REF`, 
+    :ref:`ATOMIC_CAS`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_ADD`, 
+    :ref:`ATOMIC_AND`, 
+    :ref:`ATOMIC_OR`, 
+    :ref:`ATOMIC_XOR`
 

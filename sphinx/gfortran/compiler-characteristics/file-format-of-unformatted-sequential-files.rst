@@ -29,8 +29,8 @@ are four-byte integers by default, and eight-byte integers if the
 compability only) is in effect.
 
 The representation of the record markers is that of unformatted files
-given with the :option:`-fconvert` option, the CONVERT specifier
-in an open statement or the GFORTRAN_CONVERT_UNIT environment
+given with the :option:`-fconvert` option, the :ref:`convert-specifier`
+in an open statement or the :ref:`GFORTRAN_CONVERT_UNIT` environment
 variable.
 
 The maximum number of bytes of user data in a subrecord is 2147483639

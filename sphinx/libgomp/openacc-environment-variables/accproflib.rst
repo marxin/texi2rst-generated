@@ -9,7 +9,7 @@ ACC_PROFLIB
 ***********
 
 :samp:`{See also}:`
-  acc_register_library, OpenACC Profiling Interface
+  :ref:`acc_register_library`, :ref:`openacc-profiling-interface`
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

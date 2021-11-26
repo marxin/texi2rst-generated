@@ -59,6 +59,6 @@ VERIFY --- Scan a string for characters not a given set
       END PROGRAM
 
   :samp:`{See also}:`
-    SCAN, 
-    INDEX intrinsic
+    :ref:`SCAN`, 
+    :ref:`index-intrinsic`
 

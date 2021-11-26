@@ -61,10 +61,10 @@ IBCLR --- Clear bit
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IBITS, 
-    IBSET, 
-    IAND, 
-    IOR, 
-    IEOR, 
-    MVBITS
+    :ref:`IBITS`, 
+    :ref:`IBSET`, 
+    :ref:`IAND`, 
+    :ref:`IOR`, 
+    :ref:`IEOR`, 
+    :ref:`MVBITS`
 

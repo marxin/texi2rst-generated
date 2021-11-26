@@ -51,7 +51,7 @@ LEN --- Length of a character entity
     ===============  =============  ===========  ====================
 
   :samp:`{See also}:`
-    LEN_TRIM, 
-    ADJUSTL, 
-    ADJUSTR
+    :ref:`LEN_TRIM`, 
+    :ref:`ADJUSTL`, 
+    :ref:`ADJUSTR`
 

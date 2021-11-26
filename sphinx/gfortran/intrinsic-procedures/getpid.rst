@@ -45,6 +45,6 @@ GETPID --- Process ID function
       end program info
 
   :samp:`{See also}:`
-    GETGID, 
-    GETUID
+    :ref:`GETGID`, 
+    :ref:`GETUID`
 

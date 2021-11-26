@@ -59,6 +59,6 @@ MAXVAL --- Maximum value of an array
     RESULT = MAXVAL(ARRAY [, MASK])
 
   :samp:`{See also}:`
-    MAX, 
-    MAXLOC
+    :ref:`MAX`, 
+    :ref:`MAXLOC`
 

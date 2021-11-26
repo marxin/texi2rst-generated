@@ -45,8 +45,8 @@ LEADZ --- Number of leading zero bits of an integer
       END PROGRAM
 
   :samp:`{See also}:`
-    BIT_SIZE, 
-    TRAILZ, 
-    POPCNT, 
-    POPPAR
+    :ref:`BIT_SIZE`, 
+    :ref:`TRAILZ`, 
+    :ref:`POPCNT`, 
+    :ref:`POPPAR`
 

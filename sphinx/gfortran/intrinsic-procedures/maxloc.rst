@@ -74,7 +74,7 @@ MAXLOC --- Location of the maximum value within an array
     RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])
 
   :samp:`{See also}:`
-    FINDLOC, 
-    MAX, 
-    MAXVAL
+    :ref:`FINDLOC`, 
+    :ref:`MAX`, 
+    :ref:`MAXVAL`
 

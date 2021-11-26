@@ -46,6 +46,6 @@ LINK --- Create a hard link
     STATUS = LINK(PATH1, PATH2)
 
   :samp:`{See also}:`
-    SYMLNK, 
-    UNLINK
+    :ref:`SYMLNK`, 
+    :ref:`UNLINK`
 

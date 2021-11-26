@@ -35,5 +35,5 @@ PERROR --- Print system error message
     CALL PERROR(STRING)
 
   :samp:`{See also}:`
-    IERRNO
+    :ref:`IERRNO`
 

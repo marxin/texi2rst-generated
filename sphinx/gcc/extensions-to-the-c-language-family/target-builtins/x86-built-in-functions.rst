@@ -1627,7 +1627,7 @@ All of them generate the machine instruction that is part of the name.
 The following built-in functions are available when :option:`-mrtm` is used
 They are used for restricted transactional memory. These are the internal
 low level functions. Normally the functions in 
-x86 transactional memory intrinsics should be used instead.
+:ref:`x86-transactional-memory-intrinsics` should be used instead.
 
 .. code-block:: c++
 
@@ -1664,7 +1664,7 @@ The following built-in functions are available when
 machine instructions from Intel Control-flow Enforcement Technology (CET).
 Each built-in function generates the  machine instruction that is part
 of the function's name.  These are the internal low-level functions.
-Normally the functions in x86 control-flow protection intrinsics
+Normally the functions in :ref:`x86-control-flow-protection-intrinsics`
 should be used instead.
 
 .. code-block:: c++

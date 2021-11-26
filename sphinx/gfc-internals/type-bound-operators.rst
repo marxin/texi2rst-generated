@@ -10,7 +10,7 @@ Type-bound Operators
 
 Type-bound operators are in fact basically just ``GENERIC`` procedure
 bindings and are represented much in the same way as those (see
-Type-bound Procedures).
+:ref:`type-bound-procedures`).
 
 They come in two flavours:
 User-defined operators (like ``.MYOPERATOR.``)

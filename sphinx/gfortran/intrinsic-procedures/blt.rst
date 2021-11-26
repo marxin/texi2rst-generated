@@ -39,7 +39,7 @@ BLT --- Bitwise less than
     RESULT = BLT(I, J)
 
   :samp:`{See also}:`
-    BGE, 
-    BGT, 
-    BLE
+    :ref:`BGE`, 
+    :ref:`BGT`, 
+    :ref:`BLE`
 

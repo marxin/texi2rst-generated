@@ -47,6 +47,6 @@ LCOBOUND --- Lower codimension bounds of an array
     RESULT = LCOBOUND(COARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
-    UCOBOUND, 
-    LBOUND
+    :ref:`UCOBOUND`, 
+    :ref:`LBOUND`
 

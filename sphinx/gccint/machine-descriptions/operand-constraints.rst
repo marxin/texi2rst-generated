@@ -326,8 +326,7 @@ that match ``const_double`` s or ``const_int`` s.
 
 Each docstring in a constraint definition should be one or more complete
 sentences, marked up in Texinfo format.  *They are currently unused.*
-In the future they will be copied into the GCC manual, in Machine
-Constraints, replacing the hand-maintained tables currently found in
+In the future they will be copied into the GCC manual, in :ref:`machine-constraints`, replacing the hand-maintained tables currently found in
 that section.  Also, in the future the compiler may use this to give
 more helpful diagnostics when poor choice of ``asm`` constraints
 causes a reload failure.

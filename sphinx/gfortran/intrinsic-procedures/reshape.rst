@@ -65,5 +65,5 @@ RESHAPE --- Function to reshape an array
       END PROGRAM
 
   :samp:`{See also}:`
-    SHAPE
+    :ref:`SHAPE`
 

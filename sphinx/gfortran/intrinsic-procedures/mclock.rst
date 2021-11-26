@@ -37,9 +37,9 @@ MCLOCK --- Time function
     RESULT = MCLOCK()
 
   :samp:`{See also}:`
-    CTIME, 
-    GMTIME, 
-    LTIME, 
-    MCLOCK, 
-    TIME
+    :ref:`CTIME`, 
+    :ref:`GMTIME`, 
+    :ref:`LTIME`, 
+    :ref:`MCLOCK`, 
+    :ref:`TIME`
 

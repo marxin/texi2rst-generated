@@ -45,6 +45,6 @@ TRIM --- Remove trailing blank characters of a string
       END PROGRAM
 
   :samp:`{See also}:`
-    ADJUSTL, 
-    ADJUSTR
+    :ref:`ADJUSTL`, 
+    :ref:`ADJUSTR`
 

@@ -53,11 +53,11 @@ ACHAR --- Character in ASCII collating sequence
       end program test_achar
 
   :samp:`{Note}:`
-    See ICHAR for a discussion of converting between numerical values
+    See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
-    CHAR, 
-    IACHAR, 
-    ICHAR
+    :ref:`CHAR`, 
+    :ref:`IACHAR`, 
+    :ref:`ICHAR`
 

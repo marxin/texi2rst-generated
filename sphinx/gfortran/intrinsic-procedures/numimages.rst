@@ -63,6 +63,6 @@ NUM_IMAGES --- Function that returns the number of images
       END IF
 
   :samp:`{See also}:`
-    THIS_IMAGE, 
-    IMAGE_INDEX
+    :ref:`THIS_IMAGE`, 
+    :ref:`IMAGE_INDEX`
 

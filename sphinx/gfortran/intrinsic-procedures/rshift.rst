@@ -45,10 +45,10 @@ RSHIFT --- Right shift bits
     RESULT = RSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
-    ISHFT, 
-    ISHFTC, 
-    LSHIFT, 
-    SHIFTA, 
-    SHIFTR, 
-    SHIFTL
+    :ref:`ISHFT`, 
+    :ref:`ISHFTC`, 
+    :ref:`LSHIFT`, 
+    :ref:`SHIFTA`, 
+    :ref:`SHIFTR`, 
+    :ref:`SHIFTL`
 

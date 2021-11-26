@@ -12,8 +12,7 @@ Command-line options for :command:`gfortran` involve four interrelated
 pieces within the Fortran compiler code.
 
 The relevant command-line flag is defined in :samp:`lang.opt`, according
-to the documentation in OptionsOptionsgccintGNU Compiler
-Collection Internals.  This is then processed by the overall GCC
+to the documentation in :ref:`gccint:options`.  This is then processed by the overall GCC
 machinery to create the code that enables :command:`gfortran` and
 :command:`gcc` to recognize the option in the command-line arguments and
 call the relevant handler function.

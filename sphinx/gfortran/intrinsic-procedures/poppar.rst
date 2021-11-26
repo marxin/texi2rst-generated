@@ -51,7 +51,7 @@ POPPAR --- Parity of the number of bits set
       end program test_population
 
   :samp:`{See also}:`
-    POPCNT, 
-    LEADZ, 
-    TRAILZ
+    :ref:`POPCNT`, 
+    :ref:`LEADZ`, 
+    :ref:`TRAILZ`
 

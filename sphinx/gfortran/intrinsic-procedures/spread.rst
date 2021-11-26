@@ -59,5 +59,5 @@ SPREAD --- Add a dimension to an array
       END PROGRAM
 
   :samp:`{See also}:`
-    UNPACK
+    :ref:`UNPACK`
 

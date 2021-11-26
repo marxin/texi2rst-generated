@@ -43,6 +43,6 @@ GERROR --- Get last system error message
       END PROGRAM
 
   :samp:`{See also}:`
-    IERRNO, 
-    PERROR
+    :ref:`IERRNO`, 
+    :ref:`PERROR`
 

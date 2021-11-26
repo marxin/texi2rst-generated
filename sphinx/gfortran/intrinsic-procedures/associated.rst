@@ -58,5 +58,5 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
       end program test_associated
 
   :samp:`{See also}:`
-    NULL
+    :ref:`NULL`
 

@@ -38,6 +38,6 @@ LNBLNK --- Index of the last non-blank character in a string
     RESULT = LNBLNK(STRING)
 
   :samp:`{See also}:`
-    INDEX intrinsic, 
-    LEN_TRIM
+    :ref:`index-intrinsic`, 
+    :ref:`LEN_TRIM`
 

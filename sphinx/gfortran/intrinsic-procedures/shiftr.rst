@@ -45,6 +45,6 @@ SHIFTR --- Right shift
     RESULT = SHIFTR(I, SHIFT)
 
   :samp:`{See also}:`
-    SHIFTA, 
-    SHIFTL
+    :ref:`SHIFTA`, 
+    :ref:`SHIFTL`
 

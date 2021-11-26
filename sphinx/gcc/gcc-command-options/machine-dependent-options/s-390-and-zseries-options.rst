@@ -112,7 +112,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   The :option:`-mhtm` option enables a set of builtins making use of
   instructions available with the transactional execution facility
   introduced with the IBM zEnterprise EC12 machine generation
-  S/390 System z Built-in Functions.
+  :ref:`s-390-system-z-built-in-functions`.
   :option:`-mhtm` is enabled by default when using :option:`-march`:samp:`=zEC12`.
 
 .. option:: -mvx, -mno-vx

@@ -34,5 +34,5 @@ BACKTRACE --- Show a backtrace
     None
 
   :samp:`{See also}:`
-    ABORT
+    :ref:`ABORT`
 

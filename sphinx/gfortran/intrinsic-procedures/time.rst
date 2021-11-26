@@ -18,7 +18,7 @@ TIME --- Time function
 
   Returns the current time encoded as an integer (in the manner of the
   function ``time(3)`` in the C standard library). This value is
-  suitable for passing to CTIME, GMTIME, and LTIME.
+  suitable for passing to :ref:`CTIME`, :ref:`GMTIME`, and :ref:`LTIME`.
 
   :return:
     The return value is a scalar of type ``INTEGER(4)``.
@@ -36,10 +36,10 @@ TIME --- Time function
     RESULT = TIME()
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CTIME, 
-    GMTIME, 
-    LTIME, 
-    MCLOCK, 
-    TIME8
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CTIME`, 
+    :ref:`GMTIME`, 
+    :ref:`LTIME`, 
+    :ref:`MCLOCK`, 
+    :ref:`TIME8`
 

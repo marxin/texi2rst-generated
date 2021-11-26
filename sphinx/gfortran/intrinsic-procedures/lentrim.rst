@@ -41,7 +41,7 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
     RESULT = LEN_TRIM(STRING [, KIND])
 
   :samp:`{See also}:`
-    LEN, 
-    ADJUSTL, 
-    ADJUSTR
+    :ref:`LEN`, 
+    :ref:`ADJUSTL`, 
+    :ref:`ADJUSTR`
 

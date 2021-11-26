@@ -19,7 +19,7 @@ this to have gengtype autogenerate marking routines, provided:
 * None of the classes within the hierarchy are templates.
 
 If your class hierarchy does not fit in this pattern, you must use
-User GC instead.
+:ref:`user-gc` instead.
 
 The base class and its discriminator must be identified using the 'desc'
 option.  Each concrete subclass must use the 'tag' option to identify

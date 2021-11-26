@@ -82,7 +82,7 @@ and stick to it.
 * Source file inclusion.
 
   For a discussion on how the preprocessor locates header files,
-  Include Operation.
+  :ref:`include-operation`.
 
 * Interpretation of the filename resulting from a macro-expanded
   :samp:`#include` directive.

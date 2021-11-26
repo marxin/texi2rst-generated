@@ -14,10 +14,10 @@ This section explains how to describe what registers the target machine
 has, and how (in general) they can be used.
 
 The description of which registers a specific instruction can use is
-done with register classes; see Register Classes.  For information
-on using registers to access a stack frame, see Frame Registers.
-For passing values in registers, see Register Arguments.
-For returning values in registers, see Scalar Return.
+done with register classes; see :ref:`register-classes`.  For information
+on using registers to access a stack frame, see :ref:`frame-registers`.
+For passing values in registers, see :ref:`register-arguments`.
+For returning values in registers, see :ref:`scalar-return`.
 
 .. toctree::
   :maxdepth: 2

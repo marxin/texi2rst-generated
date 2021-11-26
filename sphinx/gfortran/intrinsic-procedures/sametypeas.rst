@@ -39,5 +39,5 @@ SAME_TYPE_AS ---  Query dynamic types for equality
     RESULT = SAME_TYPE_AS(A, B)
 
   :samp:`{See also}:`
-    EXTENDS_TYPE_OF
+    :ref:`EXTENDS_TYPE_OF`
 

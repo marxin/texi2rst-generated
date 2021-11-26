@@ -645,7 +645,7 @@ dependent. The list of supported modifiers for x86 is found at :ref:`x86operandm
 If the C code that follows the ``asm`` makes no use of any of the output 
 operands, use ``volatile`` for the ``asm`` statement to prevent the 
 optimizers from discarding the ``asm`` statement as unneeded 
-(see Volatile).
+(see :ref:`volatile`).
 
 This code makes no use of the optional :samp:`{asmSymbolicName}`. Therefore it 
 references the first output operand as ``%0`` (were there a second, it 
@@ -912,7 +912,7 @@ common work-around is to tie the changing input variable to an output variable
 that never gets used. Note, however, that if the code that follows the 
 ``asm`` statement makes no use of any of the output operands, the GCC 
 optimizers may discard the ``asm`` statement as unneeded 
-(see Volatile).
+(see :ref:`volatile`).
 
 ``asm`` supports operand modifiers on operands (for example :samp:`%k2` 
 instead of simply :samp:`%2`). Typically these qualifiers are hardware 
@@ -1567,7 +1567,7 @@ linker that do not start with an underscore.
 GCC does not support using this feature with a non-static local variable 
 since such variables do not have assembler names.  If you are
 trying to put the variable in a particular register, see 
-Explicit Register Variables.
+:ref:`explicit-register-variables`.
 
 Assembler names for functions:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

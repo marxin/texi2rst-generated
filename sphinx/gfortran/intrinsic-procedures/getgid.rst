@@ -36,6 +36,6 @@ GETGID --- Group ID function
     See ``GETPID`` for an example.
 
   :samp:`{See also}:`
-    GETPID, 
-    GETUID
+    :ref:`GETPID`, 
+    :ref:`GETUID`
 

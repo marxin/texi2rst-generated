@@ -51,6 +51,6 @@ RAND --- Real pseudo-random number
       end program test_rand
 
   :samp:`{See also}:`
-    SRAND, 
-    RANDOM_NUMBER
+    :ref:`SRAND`, 
+    :ref:`RANDOM_NUMBER`
 

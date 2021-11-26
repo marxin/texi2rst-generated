@@ -244,7 +244,7 @@ These :samp:`-m` options are defined for the SH implementations:
 
   Sets the model of atomic operations and additional parameters as a comma
   separated list.  For details on the atomic built-in functions see
-  __atomic Builtins.  The following models and parameters are supported:
+  :ref:`atomic-builtins`.  The following models and parameters are supported:
 
   :samp:`none`
     Disable compiler generated atomic sequences and emit library calls for atomic

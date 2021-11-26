@@ -29,7 +29,7 @@ omp_get_team_size -- Number of threads in a team
   ============  =============================================
 
 :samp:`{See also}:`
-  omp_get_num_threads, omp_get_level, omp_get_ancestor_thread_num
+  :ref:`omp_get_num_threads`, :ref:`omp_get_level`, :ref:`omp_get_ancestor_thread_num`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.19.

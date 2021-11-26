@@ -63,6 +63,6 @@ NINT --- Nearest whole number
     =============  =============  ===========  ====================
 
   :samp:`{See also}:`
-    CEILING, 
-    FLOOR
+    :ref:`CEILING`, 
+    :ref:`FLOOR`
 

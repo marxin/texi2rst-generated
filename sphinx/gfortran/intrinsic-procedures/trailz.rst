@@ -44,8 +44,8 @@ TRAILZ --- Number of trailing zero bits of an integer
       END PROGRAM
 
   :samp:`{See also}:`
-    BIT_SIZE, 
-    LEADZ, 
-    POPPAR, 
-    POPCNT
+    :ref:`BIT_SIZE`, 
+    :ref:`LEADZ`, 
+    :ref:`POPPAR`, 
+    :ref:`POPCNT`
 

@@ -67,7 +67,7 @@ SIND --- Sine function, degrees
 
   :samp:`{See also}:`
     Inverse function: 
-    ASIND 
+    :ref:`ASIND` 
     Radians function: 
-    SIN 
+    :ref:`SIN` 
 

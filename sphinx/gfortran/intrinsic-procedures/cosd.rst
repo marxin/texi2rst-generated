@@ -69,7 +69,7 @@ COSD --- Cosine function, degrees
 
   :samp:`{See also}:`
     Inverse function: 
-    ACOSD 
+    :ref:`ACOSD` 
     Radians function: 
-    COS
+    :ref:`COS`
 

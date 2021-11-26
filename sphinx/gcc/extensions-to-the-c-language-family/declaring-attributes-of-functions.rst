@@ -32,7 +32,7 @@ handler functions, which typically must follow special register usage
 and return conventions.  Such attributes are described in the subsection
 for each target.  However, a considerable number of attributes are
 supported by most, if not all targets.  Those are described in
-the Common Function Attributes section.
+the :ref:`common-function-attributes` section.
 
 Function attributes are introduced by the ``__attribute__`` keyword
 in the declaration of a function, followed by an attribute specification

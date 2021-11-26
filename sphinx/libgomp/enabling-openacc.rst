@@ -15,7 +15,7 @@ flag :option:`-fopenacc` must be specified.  This enables the OpenACC directive
 ``!$`` conditional compilation sentinels in free form and ``c$``,
 ``*$`` and ``!$`` sentinels in fixed form, for Fortran.  The flag also
 arranges for automatic linking of the OpenACC runtime library 
-(OpenACC Runtime Library Routines).
+(:ref:`openacc-runtime-library-routines`).
 
 See https://gcc.gnu.org/wiki/OpenACC for more information.
 

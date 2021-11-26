@@ -22,11 +22,11 @@ be no space between the ``//`` and the name of the directive.
 
 :samp:`//extern {extern_name}`
   The ``extern`` directive sets the externally visible name of the
-  next function declaration.  See Function Names.
+  next function declaration.  See :ref:`function-names`.
 
 :samp:`//go:compile {go_name}{extern_name}`
   The ``go:compile`` directives sets the externally visible name of a
-  function definition or declaration.  See Function Names.
+  function definition or declaration.  See :ref:`function-names`.
 
 ``//go:noescape``
   The ``//go:noescape`` directive specifies that the next declaration

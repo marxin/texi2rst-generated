@@ -60,6 +60,6 @@ GET_COMMAND --- Get the entire command line
       END PROGRAM
 
   :samp:`{See also}:`
-    GET_COMMAND_ARGUMENT, 
-    COMMAND_ARGUMENT_COUNT
+    :ref:`GET_COMMAND_ARGUMENT`, 
+    :ref:`COMMAND_ARGUMENT_COUNT`
 

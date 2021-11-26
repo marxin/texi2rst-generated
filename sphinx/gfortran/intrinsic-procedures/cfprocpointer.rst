@@ -64,6 +64,6 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
       end program main
 
   :samp:`{See also}:`
-    C_LOC, 
-    C_F_POINTER
+    :ref:`C_LOC`, 
+    :ref:`C_F_POINTER`
 

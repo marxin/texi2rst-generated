@@ -61,6 +61,6 @@ UNPACK --- Unpack an array of rank one into an array
       END PROGRAM
 
   :samp:`{See also}:`
-    PACK, 
-    SPREAD
+    :ref:`PACK`, 
+    :ref:`SPREAD`
 

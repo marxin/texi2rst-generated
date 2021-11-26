@@ -29,5 +29,5 @@ GOMP_SPINCOUNT -- Set the busy-wait spin count
   or :envvar:`OMP_WAIT_POLICY` is ``PASSIVE``.
 
 :samp:`{See also}:`
-  OMP_WAIT_POLICY
+  :ref:`OMP_WAIT_POLICY`
 
