@@ -62,7 +62,7 @@ IALL --- Bitwise AND of array elements
       END PROGRAM
 
   :samp:`{See also}:`
-    IANY, 
-    IPARITY, 
-    IAND
+    :ref:`IANY`, 
+    :ref:`IPARITY`, 
+    :ref:`IAND`
 

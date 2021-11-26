@@ -59,6 +59,6 @@ SYSTEM_CLOCK --- Time function
       END PROGRAM
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CPU_TIME
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CPU_TIME`
 

@@ -117,7 +117,7 @@ These options are defined for AVR implementations:
   Assume that all data in static storage can be accessed by LDS / STS
   instructions.  This option has only an effect on reduced Tiny devices like
   ATtiny40.  See also the :gcc-attr:`absdata`
-  AVR Variable Attributesvariable attribute.
+  :ref:`avr-variable-attributes`.
 
 .. option:: -maccumulate-args
 
@@ -160,7 +160,7 @@ These options are defined for AVR implementations:
   Interrupt service routines (ISRs) may use the ``__gcc_isr`` pseudo
   instruction supported by GNU Binutils.
   If this option is on, the feature can still be disabled for individual
-  ISRs by means of the AVR Function Attributes:gcc-attr:`no_gccisr`
+  ISRs by means of the :ref:`avr-function-attributes`
   function attribute.  This feature is activated per default
   if optimization is on (but not with :option:`-Og`, see :ref:`optimize-options`),
   and if GNU Binutils support `PR21683 <https://sourceware.org/PR21683>`_.
@@ -176,7 +176,7 @@ These options are defined for AVR implementations:
 .. option:: -mmain-is-OS_task
 
   Do not save registers in ``main``.  The effect is the same like
-  attaching attribute AVR Function Attributes``OS_task``
+  attaching attribute :ref:`avr-function-attributes`
   to ``main``. It is activated per default if optimization is on.
 
 .. option:: -mn-flash=num
@@ -448,7 +448,7 @@ register, respectively, to get a wide address. Similarly,
 * The startup code initializes the ``RAMP`` special function
   registers with zero.
 
-* If a AVR Named Address Spacesnamed address space other than
+* If a :ref:`avr-named-address-spaces` other than
   generic or ``__flash`` is used, then ``RAMPZ`` is set
   as needed before the operation.
 
@@ -474,7 +474,7 @@ built-in macros are deduced from device capabilities and thus
 triggered by the :option:`-mmcu` = command-line option.
 
 For even more AVR-specific built-in macros see
-AVR Named Address Spaces and AVR Built-in Functions.
+:ref:`avr-named-address-spaces` and :ref:`avr-built-in-functions`.
 
 ``__AVR_ARCH__``
   Build-in macro that resolves to a decimal number that identifies the

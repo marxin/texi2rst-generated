@@ -29,7 +29,7 @@ or if not a specific built-in is implemented or not. For example, if
 
 ``char __builtin_avr_flash_segment (const __memx void*)``
   This built-in takes a byte address to the 24-bit
-  AVR Named Address Spacesaddress space ``__memx`` and returns
+  :ref:`avr-named-address-spaces` ``__memx`` and returns
   the number of the flash segment (the 64 KiB chunk) where the address
   points to.  Counting starts at ``0``.
   If the address does not point to flash memory, return ``-1``.

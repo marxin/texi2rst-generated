@@ -67,5 +67,5 @@ DTIME --- Execution time subroutine (or function)
       end program test_dtime
 
   :samp:`{See also}:`
-    CPU_TIME
+    :ref:`CPU_TIME`
 

@@ -53,7 +53,7 @@ SRAND --- Reinitialize the random number generator
     pseudo-random number generators.
 
   :samp:`{See also}:`
-    RAND, 
-    RANDOM_SEED, 
-    RANDOM_NUMBER
+    :ref:`RAND`, 
+    :ref:`RANDOM_SEED`, 
+    :ref:`RANDOM_NUMBER`
 

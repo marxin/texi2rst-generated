@@ -47,6 +47,6 @@ UCOBOUND --- Upper codimension bounds of an array
     RESULT = UCOBOUND(COARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
-    LCOBOUND, 
-    LBOUND
+    :ref:`LCOBOUND`, 
+    :ref:`LBOUND`
 

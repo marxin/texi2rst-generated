@@ -27,8 +27,8 @@ C/C++
   ============  ====================================================
 
 :samp:`{See also}:`
-  omp_get_max_active_levels, omp_get_active_level,
-  omp_get_supported_active_levels
+  :ref:`omp_get_max_active_levels`, :ref:`omp_get_active_level`,
+  :ref:`omp_get_supported_active_levels`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.15.

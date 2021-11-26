@@ -549,14 +549,14 @@ The following attributes are supported on most targets.
 
   This attribute affects the linkage of the declaration to which it is attached.
   The :gcc-attr:`visibility` attribute is described in
-  Common Function Attributes.
+  :ref:`common-function-attributes`.
 
 .. gcc-attr:: weak
 
   .. index:: weak variable attribute
 
   The :gcc-attr:`weak` attribute is described in
-  Common Function Attributes.
+  :ref:`common-function-attributes`.
 
 .. gcc-attr:: noinit
 
@@ -665,12 +665,12 @@ AVR Variable Attributes
     AVR is a Harvard architecture processor and data and read-only data
     normally resides in the data memory (RAM).
 
-    See also the AVR Named Address Spaces section for
+    See also the :ref:`avr-named-address-spaces` section for
     an alternate way to locate and access data in flash memory.
 
   \*  AVR cores with flash memory visible in the RAM address range:
     On such devices, there is no need for attribute :gcc-attr:`progmem` or
-    AVR Named Address Spaces``__flash`` qualifier at all.
+    :ref:`avr-named-address-spaces` qualifier at all.
     Just use standard C / C++.  The compiler will generate ``LD*``
     instructions.  As flash memory is visible in the RAM address range,
     and the default linker script does *not* locate ``.rodata`` in
@@ -678,7 +678,7 @@ AVR Variable Attributes
     read-only data or to read from flash.  You might even get slightly better
     performance by
     avoiding :gcc-attr:`progmem` and ``__flash``.  This applies to devices from
-    families ``avrtiny`` and ``avrxmega3``, see AVR Options for
+    families ``avrtiny`` and ``avrxmega3``, see :ref:`avr-options` for
     an overview.
 
   \* Reduced AVR Tiny cores like ATtiny40:
@@ -772,7 +772,7 @@ AVR Variable Attributes
 
     ``module.c:(.text+0x1c): warning: internal error: out of range error``
 
-  See also the :option:`-mabsdata` AVR Optionscommand-line option.
+  See also the :option:`-mabsdata` :ref:`avr-options`.
 
 .. _blackfin-variable-attributes:
 
@@ -956,7 +956,7 @@ Microsoft Windows Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can use these attributes on Microsoft Windows targets.
-x86 Variable Attributes for additional Windows compatibility
+:ref:`x86-variable-attributes` for additional Windows compatibility
 attributes available on all x86 targets.
 
 .. gcc-attr:: dllimport, dllexport
@@ -966,7 +966,7 @@ attributes available on all x86 targets.
   .. index:: dllexport variable attribute
 
   The :gcc-attr:`dllimport` and :gcc-attr:`dllexport` attributes are described in
-  Microsoft Windows Function Attributes.
+  :ref:`microsoft-windows-function-attributes`.
 
 .. gcc-attr:: selectany
 
@@ -1081,12 +1081,12 @@ Three attributes currently are defined for PowerPC configurations:
 .. index:: gcc_struct variable attribute, PowerPC
 
 For full documentation of the struct attributes please see the
-documentation in x86 Variable Attributes.
+documentation in :ref:`x86-variable-attributes`.
 
 .. index:: altivec variable attribute, PowerPC
 
 For documentation of ``altivec`` attribute please see the
-documentation in PowerPC Type Attributes.
+documentation in :ref:`powerpc-type-attributes`.
 
 .. _rl78-variable-attributes:
 
@@ -1151,7 +1151,7 @@ Two attributes are currently defined for x86 configurations:
   The :gcc-attr:`ms_struct` and ``gcc_struct`` attributes correspond
   to the :option:`-mms-bitfields` and :option:`-mno-ms-bitfields`
   command-line options, respectively;
-  see x86 Options, for details of how structure layout is affected.
+  see :ref:`x86-options`, for details of how structure layout is affected.
   See :ref:`x86-type-attributes`, for information about the corresponding
   attributes on types.
 

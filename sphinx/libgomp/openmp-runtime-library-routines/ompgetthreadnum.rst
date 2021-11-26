@@ -28,7 +28,7 @@ omp_get_thread_num -- Current thread ID
   ============  =========================================
 
 :samp:`{See also}:`
-  omp_get_num_threads, omp_get_ancestor_thread_num
+  :ref:`omp_get_num_threads`, :ref:`omp_get_ancestor_thread_num`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.4.

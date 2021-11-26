@@ -62,7 +62,7 @@ IANY --- Bitwise OR of array elements
       END PROGRAM
 
   :samp:`{See also}:`
-    IPARITY, 
-    IALL, 
-    IOR
+    :ref:`IPARITY`, 
+    :ref:`IALL`, 
+    :ref:`IOR`
 

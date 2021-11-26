@@ -47,5 +47,5 @@ ISATTY --- Whether a unit is a terminal device.
       END PROGRAM
 
   :samp:`{See also}:`
-    TTYNAM
+    :ref:`TTYNAM`
 

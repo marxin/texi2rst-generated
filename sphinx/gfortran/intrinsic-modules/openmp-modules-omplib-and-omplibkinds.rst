@@ -14,8 +14,7 @@ The OpenMP Fortran runtime library routines are provided both in
 a form of two Fortran modules, named ``OMP_LIB`` and
 ``OMP_LIB_KINDS``, and in a form of a Fortran ``include`` file named
 :samp:`omp_lib.h`. The procedures provided by ``OMP_LIB`` can be found
-in the TopIntroductionlibgompGNU Offloading and Multi
-Processing Runtime Library manual,
+in the :ref:`libgomp:top` manual,
 the named constants defined in the modules are listed
 below.
 

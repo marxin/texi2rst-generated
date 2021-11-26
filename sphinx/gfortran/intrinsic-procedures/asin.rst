@@ -60,7 +60,7 @@ ASIN --- Arcsine function
 
   :samp:`{See also}:`
     Inverse function: 
-    SIN 
+    :ref:`SIN` 
     Degrees function: 
-    ASIND
+    :ref:`ASIND`
 

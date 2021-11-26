@@ -30,7 +30,7 @@
   :envvar:`CPATH` is ``:/special/include``, that has the same
   effect as :samp:`-I. -I/special/include`.
 
-  See also Search Path.
+  See also :ref:`search-path`.
 
 .. envvar:: DEPENDENCIES_OUTPUT
 

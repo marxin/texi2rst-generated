@@ -63,7 +63,7 @@ MIN --- Minimum value of an argument list
     =============  =================  ==============  ====================
 
   :samp:`{See also}:`
-    MAX, 
-    MINLOC, 
-    MINVAL
+    :ref:`MAX`, 
+    :ref:`MINLOC`, 
+    :ref:`MINVAL`
 

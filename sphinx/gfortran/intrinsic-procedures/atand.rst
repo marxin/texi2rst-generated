@@ -19,7 +19,7 @@ ATAND --- Arctangent function, degrees
 .. function:: ATAND(X)
 
   ``ATAND(X)`` computes the arctangent of :samp:`{X}` in degrees (inverse of
-  TAND).
+  :ref:`TAND`).
 
   :param X:
     The type shall be ``REAL`` or ``COMPLEX`` ;
@@ -67,7 +67,7 @@ ATAND --- Arctangent function, degrees
 
   :samp:`{See also}:`
     Inverse function: 
-    TAND 
+    :ref:`TAND` 
     Radians function: 
-    ATAN
+    :ref:`ATAN`
 

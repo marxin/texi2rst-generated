@@ -65,8 +65,8 @@ CO_SUM --- Sum of values on the current set of images
       end program test
 
   :samp:`{See also}:`
-    CO_MAX, 
-    CO_MIN, 
-    CO_REDUCE, 
-    CO_BROADCAST
+    :ref:`CO_MAX`, 
+    :ref:`CO_MIN`, 
+    :ref:`CO_REDUCE`, 
+    :ref:`CO_BROADCAST`
 

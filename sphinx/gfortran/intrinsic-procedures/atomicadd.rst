@@ -56,10 +56,10 @@ ATOMIC_ADD --- Atomic ADD operation
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_FETCH_ADD, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_AND, 
-    ATOMIC_OR, 
-    ATOMIC_XOR
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_FETCH_ADD`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_AND`, 
+    :ref:`ATOMIC_OR`, 
+    :ref:`ATOMIC_XOR`
 

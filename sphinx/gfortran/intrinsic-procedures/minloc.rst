@@ -74,7 +74,7 @@ MINLOC --- Location of the minimum value within an array
     RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])
 
   :samp:`{See also}:`
-    FINDLOC, 
-    MIN, 
-    MINVAL
+    :ref:`FINDLOC`, 
+    :ref:`MIN`, 
+    :ref:`MINVAL`
 

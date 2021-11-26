@@ -49,6 +49,6 @@ CPU_TIME --- CPU elapsed time in seconds
       end program test_cpu_time
 
   :samp:`{See also}:`
-    SYSTEM_CLOCK, 
-    DATE_AND_TIME
+    :ref:`SYSTEM_CLOCK`, 
+    :ref:`DATE_AND_TIME`
 

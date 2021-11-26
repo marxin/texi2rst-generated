@@ -81,5 +81,5 @@ REAL --- Convert to real type
     =============  ==============  ===========  =====================
 
   :samp:`{See also}:`
-    DBLE
+    :ref:`DBLE`
 

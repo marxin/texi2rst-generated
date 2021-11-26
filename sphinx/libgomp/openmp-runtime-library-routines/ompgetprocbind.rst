@@ -28,7 +28,7 @@ omp_get_proc_bind -- Whether theads may be moved between CPUs
   ============  =================================================================
 
 :samp:`{See also}:`
-  OMP_PROC_BIND, OMP_PLACES, GOMP_CPU_AFFINITY,
+  :ref:`OMP_PROC_BIND`, :ref:`OMP_PLACES`, :ref:`GOMP_CPU_AFFINITY`,
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.22.

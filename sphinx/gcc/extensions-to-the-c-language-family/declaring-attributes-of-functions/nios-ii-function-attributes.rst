@@ -14,7 +14,7 @@ These function attributes are supported by the Nios II back end:
 
   .. index:: target function attribute
 
-  As discussed in Common Function Attributes, this attribute 
+  As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.
 
   When compiling for Nios II, the following options are allowed:

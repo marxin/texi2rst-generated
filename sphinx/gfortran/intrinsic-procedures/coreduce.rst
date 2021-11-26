@@ -92,8 +92,8 @@ CO_REDUCE --- Reduction of values on the current set of images
     type as result.
 
   :samp:`{See also}:`
-    CO_MIN, 
-    CO_MAX, 
-    CO_SUM, 
-    CO_BROADCAST
+    :ref:`CO_MIN`, 
+    :ref:`CO_MAX`, 
+    :ref:`CO_SUM`, 
+    :ref:`CO_BROADCAST`
 

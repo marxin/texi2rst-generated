@@ -61,7 +61,7 @@ ACOSD --- Arccosine function, degrees
 
   :samp:`{See also}:`
     Inverse function: 
-    COSD 
+    :ref:`COSD` 
     Radians function: 
-    ACOS 
+    :ref:`ACOS` 
 

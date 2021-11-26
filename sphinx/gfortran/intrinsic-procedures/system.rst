@@ -40,6 +40,6 @@ SYSTEM --- Execute a shell command
     STATUS = SYSTEM(COMMAND)
 
   :samp:`{See also}:`
-    EXECUTE_COMMAND_LINE, which is part of the Fortran 2008 standard
+    :ref:`EXECUTE_COMMAND_LINE`, which is part of the Fortran 2008 standard
     and should considered in new code for future portability.
 

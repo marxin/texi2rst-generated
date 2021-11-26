@@ -67,7 +67,7 @@ ATAN --- Arctangent function
 
   :samp:`{See also}:`
     Inverse function: 
-    TAN 
+    :ref:`TAN` 
     Degrees function: 
-    ATAND
+    :ref:`ATAND`
 

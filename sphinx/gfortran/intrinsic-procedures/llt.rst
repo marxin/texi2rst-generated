@@ -52,7 +52,7 @@ LLT --- Lexical less than
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
-    LGE, 
-    LGT, 
-    LLE
+    :ref:`LGE`, 
+    :ref:`LGT`, 
+    :ref:`LLE`
 

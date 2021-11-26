@@ -24,7 +24,7 @@ OMP_NESTED -- Nested parallel regions
   more than one item, otherwise they are disabled by default.
 
 :samp:`{See also}:`
-  omp_set_max_active_levels, omp_set_nested
+  :ref:`omp_set_max_active_levels`, :ref:`omp_set_nested`
 
 :samp:`{Reference}: `
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.6

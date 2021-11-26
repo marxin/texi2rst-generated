@@ -59,10 +59,10 @@ NOT --- Logical negation
     ===========  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IAND, 
-    IEOR, 
-    IOR, 
-    IBITS, 
-    IBSET, 
-    IBCLR
+    :ref:`IAND`, 
+    :ref:`IEOR`, 
+    :ref:`IOR`, 
+    :ref:`IBITS`, 
+    :ref:`IBSET`, 
+    :ref:`IBCLR`
 

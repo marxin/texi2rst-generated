@@ -53,5 +53,5 @@ COMPLEX --- Complex conversion function
       end program test_complex
 
   :samp:`{See also}:`
-    CMPLX
+    :ref:`CMPLX`
 

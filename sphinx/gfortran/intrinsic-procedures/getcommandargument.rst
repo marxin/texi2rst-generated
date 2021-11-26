@@ -78,6 +78,6 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
       END PROGRAM
 
   :samp:`{See also}:`
-    GET_COMMAND, 
-    COMMAND_ARGUMENT_COUNT
+    :ref:`GET_COMMAND`, 
+    :ref:`COMMAND_ARGUMENT_COUNT`
 

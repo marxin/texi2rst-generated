@@ -58,5 +58,5 @@ SINH --- Hyperbolic sine function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
-    ASINH
+    :ref:`ASINH`
 

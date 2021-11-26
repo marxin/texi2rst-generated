@@ -55,7 +55,7 @@ in C and Fortran, you should use the named constants for kind parameters
 that are defined in the ``ISO_C_BINDING`` intrinsic module.
 That module contains named constants of character type representing
 the escaped special characters in C, such as newline.
-For a list of the constants, see ISO_C_BINDING.
+For a list of the constants, see :ref:`ISO_C_BINDING`.
 
 For logical types, please note that the Fortran standard only guarantees
 interoperability between C99's ``_Bool`` and Fortran's ``C_Bool`` -kind
@@ -187,7 +187,7 @@ matches the Fortran declaration
       integer(c_int) :: j
 
 Note that pointer arguments also frequently need the ``VALUE`` attribute,
-see Working with C Pointers.
+see :ref:`working-with-c-pointers`.
 
 Strings are handled quite differently in C and Fortran.  In C a string
 is a ``NUL`` -terminated array of characters while in Fortran each string
@@ -256,7 +256,7 @@ example, we ignore the return value:
     print '(a)', str ! prints: "Hello WorldXXXXXXXXXXXXXXXXXXX"
     end
 
-The intrinsic procedures are described in Intrinsic Procedures.
+The intrinsic procedures are described in :ref:`intrinsic-procedures`.
 
 .. _working-with-c-pointers:
 
@@ -273,8 +273,7 @@ from Fortran objects with the ``POINTER`` attribute.  Thus one needs to
 use intrinsic conversion procedures to convert from or to C pointers.
 For some applications, using an assumed type (``TYPE(*)``) can be
 an alternative to a C pointer, and you can also use library routines
-to access Fortran pointers from C.  See Further Interoperability
-of Fortran with C.
+to access Fortran pointers from C.  See :ref:`further-interoperability-of-fortran-with-c`.
 
 Here is an example of using C pointers in Fortran:
 

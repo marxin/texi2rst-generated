@@ -61,7 +61,7 @@ ASIND --- Arcsine function, degrees
 
   :samp:`{See also}:`
     Inverse function: 
-    SIND 
+    :ref:`SIND` 
     Radians function: 
-    ASIN
+    :ref:`ASIN`
 

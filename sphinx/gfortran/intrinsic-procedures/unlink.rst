@@ -40,6 +40,6 @@ UNLINK --- Remove a file from the file system
     STATUS = UNLINK(PATH)
 
   :samp:`{See also}:`
-    LINK, 
-    SYMLNK
+    :ref:`LINK`, 
+    :ref:`SYMLNK`
 

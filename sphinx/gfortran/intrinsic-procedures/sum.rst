@@ -63,5 +63,5 @@ SUM --- Sum of array elements
       END PROGRAM
 
   :samp:`{See also}:`
-    PRODUCT
+    :ref:`PRODUCT`
 

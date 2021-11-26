@@ -38,6 +38,6 @@ INT2 --- Convert to 16-bit integer type
     RESULT = INT2(A)
 
   :samp:`{See also}:`
-    INT, 
-    INT8
+    :ref:`INT`, 
+    :ref:`INT8`
 

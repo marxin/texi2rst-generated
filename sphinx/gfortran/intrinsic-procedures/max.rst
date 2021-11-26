@@ -63,7 +63,7 @@ MAX --- Maximum value of an argument list
     =============  =================  ================  ====================
 
   :samp:`{See also}:`
-    MAXLOC 
-    MAXVAL, 
-    MIN
+    :ref:`MAXLOC` 
+    :ref:`MAXVAL`, 
+    :ref:`MIN`
 

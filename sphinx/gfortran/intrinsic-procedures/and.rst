@@ -34,7 +34,7 @@ AND --- Bitwise logical AND
     smaller kind type is implicitly converted to larger kind, and the 
     return has the larger kind.  A boz-literal-constant is 
     converted to an ``INTEGER`` with the kind type parameter of
-    the other argument as-if a call to INT occurred.
+    the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
     GNU extension
@@ -63,5 +63,5 @@ AND --- Bitwise logical AND
 
   :samp:`{See also}:`
     Fortran 95 elemental function: 
-    IAND
+    :ref:`IAND`
 

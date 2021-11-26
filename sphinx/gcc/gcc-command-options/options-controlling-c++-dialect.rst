@@ -702,7 +702,7 @@ In addition, these warning options have meanings only for C++ programs:
     C++ and Objective-C++ only
 
   Warn when a type with an ABI tag is used in a context that does not
-  have that ABI tag.  See C++ Attributes for more information
+  have that ABI tag.  See :ref:`c++-attributes` for more information
   about ABI tags.
 
 .. option:: -Wcomma-subscript
@@ -1074,7 +1074,7 @@ In addition, these warning options have meanings only for C++ programs:
     C++ and Objective-C++ only
 
   Warn on uses of the ``register`` storage class specifier, except
-  when it is part of the GNU Explicit Register Variables extension.
+  when it is part of the GNU :ref:`explicit-register-variables` extension.
   The use of the ``register`` keyword as storage class specifier has
   been deprecated in C++11 and removed in C++17.
   Enabled by default with :option:`-std`:samp:`=c++17`.

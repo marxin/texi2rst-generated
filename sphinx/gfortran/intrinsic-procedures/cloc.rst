@@ -49,8 +49,8 @@ C_LOC --- Obtain the C address of an object
       end subroutine association_test
 
   :samp:`{See also}:`
-    C_ASSOCIATED, 
-    C_FUNLOC, 
-    C_F_POINTER, 
-    C_F_PROCPOINTER
+    :ref:`C_ASSOCIATED`, 
+    :ref:`C_FUNLOC`, 
+    :ref:`C_F_POINTER`, 
+    :ref:`C_F_PROCPOINTER`
 

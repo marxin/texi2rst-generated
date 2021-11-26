@@ -73,5 +73,5 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     terminated alongside.
 
   :samp:`{See also}:`
-    SYSTEM
+    :ref:`SYSTEM`
 

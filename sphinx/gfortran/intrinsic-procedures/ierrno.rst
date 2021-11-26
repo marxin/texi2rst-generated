@@ -37,5 +37,5 @@ IERRNO --- Get the last system error number
     None
 
   :samp:`{See also}:`
-    PERROR
+    :ref:`PERROR`
 

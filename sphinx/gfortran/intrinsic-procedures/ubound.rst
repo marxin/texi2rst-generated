@@ -51,6 +51,6 @@ UBOUND --- Upper dimension bounds of an array
     RESULT = UBOUND(ARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
-    LBOUND, 
-    LCOBOUND
+    :ref:`LBOUND`, 
+    :ref:`LCOBOUND`
 

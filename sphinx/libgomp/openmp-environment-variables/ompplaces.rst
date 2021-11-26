@@ -39,8 +39,8 @@ OMP_PLACES -- Specifies on which CPUs the theads should be placed
   between CPUs following no placement policy.
 
 :samp:`{See also}:`
-  OMP_PROC_BIND, GOMP_CPU_AFFINITY, omp_get_proc_bind,
-  OMP_DISPLAY_ENV
+  :ref:`OMP_PROC_BIND`, :ref:`GOMP_CPU_AFFINITY`, :ref:`omp_get_proc_bind`,
+  :ref:`OMP_DISPLAY_ENV`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.5

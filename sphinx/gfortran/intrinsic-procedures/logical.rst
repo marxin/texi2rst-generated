@@ -41,7 +41,7 @@ LOGICAL --- Convert to logical type
     RESULT = LOGICAL(L [, KIND])
 
   :samp:`{See also}:`
-    INT, 
-    REAL, 
-    CMPLX
+    :ref:`INT`, 
+    :ref:`REAL`, 
+    :ref:`CMPLX`
 

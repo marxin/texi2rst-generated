@@ -76,6 +76,6 @@ DATE_AND_TIME --- Date and time subroutine
       end program test_time_and_date
 
   :samp:`{See also}:`
-    CPU_TIME, 
-    SYSTEM_CLOCK
+    :ref:`CPU_TIME`, 
+    :ref:`SYSTEM_CLOCK`
 

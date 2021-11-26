@@ -62,5 +62,5 @@ ASINH --- Inverse hyperbolic sine function
 
   :samp:`{See also}:`
     Inverse function: 
-    SINH
+    :ref:`SINH`
 

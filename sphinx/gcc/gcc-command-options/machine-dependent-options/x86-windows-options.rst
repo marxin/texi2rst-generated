@@ -92,5 +92,5 @@ These additional options are available for Microsoft Windows targets:
   GCC detects that the target assembler found during configuration
   supports the feature.
 
-See also under x86 Options for standard options.
+See also under :ref:`x86-options` for standard options.
 

@@ -28,7 +28,7 @@ omp_set_lock -- Wait for and set simple lock
   ============  =================================================
 
 :samp:`{See also}:`
-  omp_init_lock, omp_test_lock, omp_unset_lock
+  :ref:`omp_init_lock`, :ref:`omp_test_lock`, :ref:`omp_unset_lock`
 
 :samp:`{Reference}: `
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.

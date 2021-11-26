@@ -57,7 +57,7 @@ FPUT --- Write a single character in stream mode to stdout
       END PROGRAM
 
   :samp:`{See also}:`
-    FPUTC, 
-    FGET, 
-    FGETC
+    :ref:`FPUTC`, 
+    :ref:`FGET`, 
+    :ref:`FGETC`
 

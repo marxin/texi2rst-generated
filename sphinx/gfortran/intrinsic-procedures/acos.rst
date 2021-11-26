@@ -60,7 +60,7 @@ ACOS --- Arccosine function
 
   :samp:`{See also}:`
     Inverse function: 
-    COS 
+    :ref:`COS` 
     Degrees function: 
-    ACOSD
+    :ref:`ACOSD`
 

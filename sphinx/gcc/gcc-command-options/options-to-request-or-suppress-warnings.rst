@@ -90,8 +90,8 @@ implicit declarations.  Each of these specific warning options also
 has a negative form beginning :samp:`-Wno-` to turn off warnings; for
 example, :option:`-Wno-implicit`.  This manual lists only one of the
 two forms, whichever is not the default.  For further
-language-specific options also refer to C++ Dialect Options and
-Objective-C and Objective-C++ Dialect Options.
+language-specific options also refer to :ref:`c++-dialect-options` and
+:ref:`objective-c-and-objective-c++-dialect-options`.
 Additional warnings can be produced by enabling the static analyzer;
 See :ref:`static-analyzer-options`.
 
@@ -179,8 +179,7 @@ warn at all unless optimization is enabled.
   This enables all the warnings about constructions that some users
   consider questionable, and that are easy to avoid (or modify to
   prevent the warning), even in conjunction with macros.  This also
-  enables some language-specific warnings described in C++ Dialect
-  Options and Objective-C and Objective-C++ Dialect Options.
+  enables some language-specific warnings described in :ref:`c++-dialect-options` and :ref:`objective-c-and-objective-c++-dialect-options`.
 
   :option:`-Wall` turns on the following warning flags:
 
@@ -1779,7 +1778,7 @@ warn at all unless optimization is enabled.
 .. option:: -Wno-invalid-memory-model
 
   This option controls warnings
-  for invocations of __atomic Builtins, __sync Builtins,
+  for invocations of :ref:`atomic-builtins`, :ref:`sync-builtins`,
   and the C11 atomic generic functions with a memory consistency argument
   that is either invalid for the operation or outside the range of values
   of the ``memory_order`` enumeration.  For example, since the

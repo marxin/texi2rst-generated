@@ -41,6 +41,6 @@ RANGE --- Decimal exponent range
     See ``PRECISION`` for an example.
 
   :samp:`{See also}:`
-    SELECTED_REAL_KIND, 
-    PRECISION
+    :ref:`SELECTED_REAL_KIND`, 
+    :ref:`PRECISION`
 

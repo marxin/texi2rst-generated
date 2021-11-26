@@ -21,7 +21,7 @@ FDATE --- Get the current time as a string
 .. function:: FDATE(DATE)
 
   ``FDATE(DATE)`` returns the current date (using the same format as
-  CTIME) in :samp:`{DATE}`. It is equivalent to ``CALL CTIME(DATE,
+  :ref:`CTIME`) in :samp:`{DATE}`. It is equivalent to ``CALL CTIME(DATE,
   TIME())``.
 
   :param DATE:
@@ -63,6 +63,6 @@ FDATE --- Get the current time as a string
       end program test_fdate
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CTIME
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CTIME`
 

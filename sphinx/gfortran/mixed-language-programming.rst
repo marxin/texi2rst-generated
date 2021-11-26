@@ -36,5 +36,5 @@ non-Fortran code into the same program, or you can use :command:`gcc`
 or :command:`g++` if you also add an explicit :option:`-lgfortran` option
 to link with the Fortran library.  If your main program is written in
 C or some other language instead of Fortran, see
-Non-Fortran Main Program, below.
+:ref:`non-fortran-main-program`, below.
 

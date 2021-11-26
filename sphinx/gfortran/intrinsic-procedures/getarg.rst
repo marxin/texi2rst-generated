@@ -63,9 +63,9 @@ GETARG --- Get command line arguments
 
   :samp:`{See also}:`
     GNU Fortran 77 compatibility function: 
-    IARGC 
+    :ref:`IARGC` 
     Fortran 2003 functions and subroutines: 
-    GET_COMMAND, 
-    GET_COMMAND_ARGUMENT, 
-    COMMAND_ARGUMENT_COUNT
+    :ref:`GET_COMMAND`, 
+    :ref:`GET_COMMAND_ARGUMENT`, 
+    :ref:`COMMAND_ARGUMENT_COUNT`
 

@@ -41,6 +41,6 @@ STORAGE_SIZE --- Storage size in bits
     parameters of A.
 
   :samp:`{See also}:`
-    C_SIZEOF, 
-    SIZEOF
+    :ref:`C_SIZEOF`, 
+    :ref:`SIZEOF`
 

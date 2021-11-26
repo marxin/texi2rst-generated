@@ -22,9 +22,9 @@ compilation.
 
 In addition to the options listed here, there are a number of options 
 to control search paths for include files documented in 
-Directory Options.  
+:ref:`directory-options`.  
 Options to control preprocessor diagnostics are listed in 
-Warning Options.
+:ref:`warning-options`.
 
 .. include:: ../../share/cppopts.rst
 

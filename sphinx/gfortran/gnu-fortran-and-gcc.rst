@@ -45,7 +45,7 @@ This manual specifically documents the Fortran front end, which handles
 the programming language's syntax and semantics.  The aspects of GCC
 that relate to the optimization passes and the back-end code generation
 are documented in the GCC manual; see
-TopIntroductiongccUsing the GNU Compiler Collection (GCC).
+:ref:`gcc:top`.
 The two manuals together provide a complete reference for the GNU
 Fortran compiler.
 

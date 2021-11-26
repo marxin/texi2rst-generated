@@ -29,7 +29,7 @@ These function attributes are supported on the S/390:
 
   .. index:: target function attribute
 
-  As discussed in Common Function Attributes, this attribute
+  As discussed in :ref:`common-function-attributes`, this attribute
   allows specification of target-specific compilation options.
 
   On S/390, the following options are supported:

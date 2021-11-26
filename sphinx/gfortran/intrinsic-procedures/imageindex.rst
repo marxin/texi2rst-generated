@@ -50,6 +50,6 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
       WRITE (*,*) IMAGE_INDEX (array, [2,0,3,1])
 
   :samp:`{See also}:`
-    THIS_IMAGE, 
-    NUM_IMAGES
+    :ref:`THIS_IMAGE`, 
+    :ref:`NUM_IMAGES`
 

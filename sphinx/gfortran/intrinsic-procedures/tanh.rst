@@ -61,5 +61,5 @@ TANH --- Hyperbolic tangent function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
-    ATANH
+    :ref:`ATANH`
 

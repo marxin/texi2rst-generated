@@ -77,6 +77,6 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
         error stop "something is rotten here"
 
   :samp:`{See also}:`
-    NUM_IMAGES, 
-    IMAGE_INDEX
+    :ref:`NUM_IMAGES`, 
+    :ref:`IMAGE_INDEX`
 

@@ -114,5 +114,5 @@ named constants:
   (Fortran 2008 or later.)
 
   The module also provides the following intrinsic procedures:
-COMPILER_OPTIONS and COMPILER_VERSION.
+:ref:`COMPILER_OPTIONS` and :ref:`COMPILER_VERSION`.
 

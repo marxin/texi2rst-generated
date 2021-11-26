@@ -62,5 +62,5 @@ ACOSH --- Inverse hyperbolic cosine function
 
   :samp:`{See also}:`
     Inverse function: 
-    COSH
+    :ref:`COSH`
 

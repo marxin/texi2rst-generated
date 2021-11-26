@@ -14,7 +14,7 @@ Hints
   The ``register`` specifier affects code generation only in these ways:
 
   * When used as part of the register variable extension, see
-    Explicit Register Variables.
+    :ref:`explicit-register-variables`.
 
   * When :option:`-O0` is in use, the compiler allocates distinct stack
     memory for all variables that do not have the ``register``

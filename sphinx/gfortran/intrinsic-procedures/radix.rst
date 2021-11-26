@@ -47,5 +47,5 @@ RADIX --- Base of a model number
       end program test_radix
 
   :samp:`{See also}:`
-    SELECTED_REAL_KIND
+    :ref:`SELECTED_REAL_KIND`
 

@@ -57,6 +57,6 @@ SCAN --- Scan a string for the presence of a set of characters
       END PROGRAM
 
   :samp:`{See also}:`
-    INDEX intrinsic, 
-    VERIFY
+    :ref:`index-intrinsic`, 
+    :ref:`VERIFY`
 

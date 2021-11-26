@@ -40,7 +40,7 @@ BGE --- Bitwise greater than or equal to
     RESULT = BGE(I, J)
 
   :samp:`{See also}:`
-    BGT, 
-    BLE, 
-    BLT
+    :ref:`BGT`, 
+    :ref:`BLE`, 
+    :ref:`BLT`
 

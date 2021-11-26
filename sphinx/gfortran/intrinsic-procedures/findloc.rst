@@ -77,6 +77,6 @@ FINDLOC --- Search an array for a value
     RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])
 
   :samp:`{See also}:`
-    MAXLOC, 
-    MINLOC
+    :ref:`MAXLOC`, 
+    :ref:`MINLOC`
 

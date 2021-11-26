@@ -59,10 +59,10 @@ IBSET --- Set bit
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IBCLR, 
-    IBITS, 
-    IAND, 
-    IOR, 
-    IEOR, 
-    MVBITS
+    :ref:`IBCLR`, 
+    :ref:`IBITS`, 
+    :ref:`IAND`, 
+    :ref:`IOR`, 
+    :ref:`IEOR`, 
+    :ref:`MVBITS`
 

@@ -20,7 +20,7 @@ GOMP_STACKSIZE -- Set default thread stack size
   the stack size is system dependent.
 
 :samp:`{See also}:`
-  OMP_STACKSIZE
+  :ref:`OMP_STACKSIZE`
 
 :samp:`{Reference}: `
   `GCC Patches Mailinglist <https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00493.html>`_, 

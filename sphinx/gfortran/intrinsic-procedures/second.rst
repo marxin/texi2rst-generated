@@ -42,5 +42,5 @@ SECOND --- CPU time function
     TIME = SECOND()
 
   :samp:`{See also}:`
-    CPU_TIME
+    :ref:`CPU_TIME`
 

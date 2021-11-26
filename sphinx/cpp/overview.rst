@@ -51,8 +51,7 @@ This manual describes the behavior of the ISO preprocessor.  To
 minimize gratuitous differences, where the ISO preprocessor's
 behavior does not conflict with traditional semantics, the
 traditional preprocessor should behave the same way.  The various
-differences that do exist are detailed in the section Traditional
-Mode.
+differences that do exist are detailed in the section :ref:`traditional-mode`.
 
 For clarity, unless noted otherwise, references to :samp:`CPP` in this
 manual refer to GNU CPP.

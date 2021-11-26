@@ -54,5 +54,5 @@ DSHIFTL --- Combined left shift
     RESULT = DSHIFTL(I, J, SHIFT)
 
   :samp:`{See also}:`
-    DSHIFTR
+    :ref:`DSHIFTR`
 

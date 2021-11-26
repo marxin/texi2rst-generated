@@ -40,7 +40,7 @@ BLE --- Bitwise less than or equal to
     RESULT = BLE(I, J)
 
   :samp:`{See also}:`
-    BGT, 
-    BGE, 
-    BLT
+    :ref:`BGT`, 
+    :ref:`BGE`, 
+    :ref:`BLT`
 

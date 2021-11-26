@@ -64,8 +64,8 @@ IPARITY --- Bitwise XOR of array elements
       END PROGRAM
 
   :samp:`{See also}:`
-    IANY, 
-    IALL, 
-    IEOR, 
-    PARITY
+    :ref:`IANY`, 
+    :ref:`IALL`, 
+    :ref:`IEOR`, 
+    :ref:`PARITY`
 

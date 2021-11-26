@@ -52,5 +52,5 @@ CHDIR --- Change working directory
       END PROGRAM
 
   :samp:`{See also}:`
-    GETCWD
+    :ref:`GETCWD`
 

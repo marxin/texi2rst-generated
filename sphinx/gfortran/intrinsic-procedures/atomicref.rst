@@ -63,11 +63,11 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_CAS, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_FETCH_ADD, 
-    ATOMIC_FETCH_AND, 
-    ATOMIC_FETCH_OR, 
-    ATOMIC_FETCH_XOR
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_CAS`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_FETCH_ADD`, 
+    :ref:`ATOMIC_FETCH_AND`, 
+    :ref:`ATOMIC_FETCH_OR`, 
+    :ref:`ATOMIC_FETCH_XOR`
 

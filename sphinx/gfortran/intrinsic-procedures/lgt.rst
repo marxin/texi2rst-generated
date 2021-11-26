@@ -52,7 +52,7 @@ LGT --- Lexical greater than
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
-    LGE, 
-    LLE, 
-    LLT
+    :ref:`LGE`, 
+    :ref:`LLE`, 
+    :ref:`LLT`
 

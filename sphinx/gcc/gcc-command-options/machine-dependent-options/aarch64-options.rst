@@ -183,8 +183,7 @@ These options are defined for AArch64 implementations:
   architecture of the host system,
 
   The permissible values for :samp:`{feature}` are listed in the sub-section
-  on aarch64-feature-modifiers:option:`-march` and :option:`-mcpu`
-  Feature Modifiers.  Where conflicting feature modifiers are
+  on :ref:`aarch64-feature-modifiers`.  Where conflicting feature modifiers are
   specified, the right-most feature is used.
 
   GCC uses :samp:`{name}` to determine what kind of instructions it can emit
@@ -252,8 +251,7 @@ These options are defined for AArch64 implementations:
   the permissible values for :samp:`{cpu}` are the same as those available
   for :option:`-mtune`.  The permissible values for :samp:`{feature}` are
   documented in the sub-section on
-  aarch64-feature-modifiers:option:`-march` and :option:`-mcpu`
-  Feature Modifiers.  Where conflicting feature modifiers are
+  :ref:`aarch64-feature-modifiers`.  Where conflicting feature modifiers are
   specified, the right-most feature is used.
 
   GCC uses :samp:`{name}` to determine what kind of instructions it can emit when

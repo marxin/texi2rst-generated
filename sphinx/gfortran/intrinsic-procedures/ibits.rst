@@ -67,10 +67,10 @@ IBITS --- Bit extraction
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    BIT_SIZE, 
-    IBCLR, 
-    IBSET, 
-    IAND, 
-    IOR, 
-    IEOR
+    :ref:`BIT_SIZE`, 
+    :ref:`IBCLR`, 
+    :ref:`IBSET`, 
+    :ref:`IAND`, 
+    :ref:`IOR`, 
+    :ref:`IEOR`
 

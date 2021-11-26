@@ -38,6 +38,6 @@ GETUID --- User ID function
     See ``GETPID`` for an example.
 
   :samp:`{See also}:`
-    GETPID, 
-    GETLOG
+    :ref:`GETPID`, 
+    :ref:`GETLOG`
 

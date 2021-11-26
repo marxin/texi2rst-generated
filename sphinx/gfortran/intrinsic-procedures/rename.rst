@@ -44,5 +44,5 @@ RENAME --- Rename a file
     STATUS = RENAME(PATH1, PATH2)
 
   :samp:`{See also}:`
-    LINK
+    :ref:`LINK`
 

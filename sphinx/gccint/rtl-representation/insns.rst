@@ -315,7 +315,7 @@ Every insn has one of the following expression codes:
   that hold debugging information for variable tracking at assignments
   (see :option:`-fvar-tracking-assignments` option).  They are the RTL
   representation of ``GIMPLE_DEBUG`` statements
-  (``GIMPLE_DEBUG``), with a ``VAR_LOCATION`` operand that
+  (:ref:`GIMPLE_DEBUG`), with a ``VAR_LOCATION`` operand that
   binds a user variable tree to an RTL representation of the
   ``value`` in the corresponding statement.  A ``DEBUG_EXPR`` in
   it stands for the value bound to the corresponding
@@ -543,7 +543,7 @@ The following notes describe attributes of outputs of an insn:
   initialized by making the replacement in the initial copy instruction as
   well.  This is used on machines for which the calling convention
   allocates stack space for register parameters.  See
-  ``REG_PARM_STACK_SPACE`` in Stack Arguments.
+  ``REG_PARM_STACK_SPACE`` in :ref:`stack-arguments`.
 
   In the case of ``REG_EQUAL``, the register that is set by this insn
   will be equal to :samp:`{op}` at run time at the end of this insn but not

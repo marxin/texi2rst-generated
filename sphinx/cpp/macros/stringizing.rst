@@ -47,7 +47,7 @@ The argument for ``EXP`` is substituted once, as-is, into the
 The ``do`` and ``while (0)`` are a kludge to make it possible to
 write ``WARN_IF (arg);``, which the resemblance of
 ``WARN_IF`` to a function would make C programmers want to do; see
-Swallowing the Semicolon.
+:ref:`swallowing-the-semicolon`.
 
 Stringizing in C involves more than putting double-quote characters
 around the fragment.  The preprocessor backslash-escapes the quotes

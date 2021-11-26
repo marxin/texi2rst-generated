@@ -49,7 +49,7 @@ Declarations
 This section covers the various kinds of declarations that appear in the
 internal representation, except for declarations of functions
 (represented by ``FUNCTION_DECL`` nodes), which are described in
-Functions.
+:ref:`functions`.
 
 .. toctree::
   :maxdepth: 2
@@ -111,7 +111,7 @@ The various kinds of declarations include:
 .. envvar:: LABEL_DECL
 
   These nodes are used to represent labels in function bodies.  For more
-  information, see Functions.  These nodes only appear in block
+  information, see :ref:`functions`.  These nodes only appear in block
   scopes.
 
 .. envvar:: CONST_DECL

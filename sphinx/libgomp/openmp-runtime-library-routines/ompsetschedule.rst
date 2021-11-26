@@ -31,8 +31,8 @@ C/C++
   ============  =================================================
 
 :samp:`{See also}:`
-  omp_get_schedule
-  OMP_SCHEDULE
+  :ref:`omp_get_schedule`
+  :ref:`OMP_SCHEDULE`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.12.

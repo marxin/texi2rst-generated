@@ -14,7 +14,7 @@ LTIME --- Convert time to local time info
 
 .. function:: LTIME(TIME, VALUES)
 
-  Given a system time value :samp:`{TIME}` (as provided by the TIME
+  Given a system time value :samp:`{TIME}` (as provided by the :ref:`TIME`
   intrinsic), fills :samp:`{VALUES}` with values extracted from it appropriate
   to the local time zone using ``localtime(3)``.
 
@@ -42,9 +42,9 @@ LTIME --- Convert time to local time info
     CALL LTIME(TIME, VALUES)
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CTIME, 
-    GMTIME, 
-    TIME, 
-    TIME8
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CTIME`, 
+    :ref:`GMTIME`, 
+    :ref:`TIME`, 
+    :ref:`TIME8`
 

@@ -49,6 +49,6 @@ EXIT --- Exit the program with status.
       end program test_exit
 
   :samp:`{See also}:`
-    ABORT, 
-    KILL
+    :ref:`ABORT`, 
+    :ref:`KILL`
 

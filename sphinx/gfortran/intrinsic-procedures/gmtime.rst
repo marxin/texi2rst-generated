@@ -14,7 +14,7 @@ GMTIME --- Convert time to GMT info
 
 .. function:: GMTIME(TIME, VALUES)
 
-  Given a system time value :samp:`{TIME}` (as provided by the TIME
+  Given a system time value :samp:`{TIME}` (as provided by the :ref:`TIME`
   intrinsic), fills :samp:`{VALUES}` with values extracted from it appropriate
   to the UTC time zone (Universal Coordinated Time, also known in some
   countries as GMT, Greenwich Mean Time), using ``gmtime(3)``.
@@ -43,9 +43,9 @@ GMTIME --- Convert time to GMT info
     CALL GMTIME(TIME, VALUES)
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CTIME, 
-    LTIME, 
-    TIME, 
-    TIME8
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CTIME`, 
+    :ref:`LTIME`, 
+    :ref:`TIME`, 
+    :ref:`TIME8`
 

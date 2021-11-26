@@ -27,7 +27,7 @@ omp_get_wtime -- Elapsed wall clock time
   ============  =============================================
 
 :samp:`{See also}:`
-  omp_get_wtick
+  :ref:`omp_get_wtick`
 
 :samp:`{Reference}: `
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.4.1.

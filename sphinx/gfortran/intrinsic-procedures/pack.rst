@@ -76,5 +76,5 @@ PACK --- Pack an array into an array of rank one
       END PROGRAM
 
   :samp:`{See also}:`
-    UNPACK
+    :ref:`UNPACK`
 

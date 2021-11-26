@@ -50,6 +50,6 @@ PRECISION --- Decimal precision of a real kind
       end program prec_and_range
 
   :samp:`{See also}:`
-    SELECTED_REAL_KIND, 
-    RANGE
+    :ref:`SELECTED_REAL_KIND`, 
+    :ref:`RANGE`
 

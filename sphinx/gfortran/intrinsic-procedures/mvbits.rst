@@ -69,10 +69,10 @@ MVBITS --- Move bits from one integer to another
     ==============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    IBCLR, 
-    IBSET, 
-    IBITS, 
-    IAND, 
-    IOR, 
-    IEOR
+    :ref:`IBCLR`, 
+    :ref:`IBSET`, 
+    :ref:`IBITS`, 
+    :ref:`IAND`, 
+    :ref:`IOR`, 
+    :ref:`IEOR`
 

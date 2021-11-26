@@ -66,7 +66,7 @@ ATOMIC_CAS --- Atomic compare and swap
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_REF, 
-    ISO_FORTRAN_ENV
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_REF`, 
+    :ref:`ISO_FORTRAN_ENV`
 

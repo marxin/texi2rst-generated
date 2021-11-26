@@ -70,7 +70,7 @@ SELECTED_REAL_KIND --- Choose real kind
       end program real_kinds
 
   :samp:`{See also}:`
-    PRECISION, 
-    RANGE, 
-    RADIX
+    :ref:`PRECISION`, 
+    :ref:`RANGE`, 
+    :ref:`RADIX`
 

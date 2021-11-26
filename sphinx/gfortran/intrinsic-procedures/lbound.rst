@@ -50,6 +50,6 @@ LBOUND --- Lower dimension bounds of an array
     RESULT = LBOUND(ARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
-    UBOUND, 
-    LCOBOUND
+    :ref:`UBOUND`, 
+    :ref:`LCOBOUND`
 

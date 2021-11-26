@@ -28,7 +28,7 @@ C/C++
   ============  =======================================================
 
 :samp:`{See also}:`
-  omp_get_level, omp_get_thread_num, omp_get_team_size
+  :ref:`omp_get_level`, :ref:`omp_get_thread_num`, :ref:`omp_get_team_size`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.18.

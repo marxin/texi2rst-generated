@@ -57,7 +57,7 @@ TAN --- Tangent function
 
   :samp:`{See also}:`
     Inverse function: 
-    ATAN 
+    :ref:`ATAN` 
     Degrees function: 
-    TAND
+    :ref:`TAND`
 

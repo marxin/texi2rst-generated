@@ -40,5 +40,5 @@ RRSPACING --- Reciprocal of the relative spacing
     RESULT = RRSPACING(X)
 
   :samp:`{See also}:`
-    SPACING
+    :ref:`SPACING`
 

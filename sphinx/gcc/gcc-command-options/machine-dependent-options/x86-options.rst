@@ -784,7 +784,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-mno-` option to disable use of these instructions.
 
   These extensions are also available as built-in functions: see
-  x86 Built-in Functions, for details of the functions enabled and
+  :ref:`x86-built-in-functions`, for details of the functions enabled and
   disabled by these switches.
 
   To generate SSE/SSE2 instructions automatically from floating-point
@@ -873,7 +873,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   code to implement compare-and-exchange operations on 16-byte aligned 128-bit
   objects.  This is useful for atomic updates of data structures exceeding one
   machine word in size.  The compiler uses this instruction to implement
-  __sync Builtins.  However, for __atomic Builtins operating on
+  :ref:`sync-builtins`.  However, for :ref:`atomic-builtins` operating on
   128-bit integers, a library call is always used.
 
 .. option:: -msahf
@@ -886,7 +886,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   These are load and store instructions, respectively, for certain status flags.
   In 64-bit mode, the ``SAHF`` instruction is used to optimize ``fmod``,
   ``drem``, and ``remainder`` built-in functions;
-  see Other Builtins for details.
+  see :ref:`other-builtins` for details.
 
 .. option:: -mmovbe
 
@@ -1071,8 +1071,8 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   This option is enabled by default for Microsoft Windows
   targets.  This behavior can also be controlled locally by use of variable
-  or type attributes.  For more information, see x86 Variable Attributes
-  and x86 Type Attributes.
+  or type attributes.  For more information, see :ref:`x86-variable-attributes`
+  and :ref:`x86-type-attributes`.
 
   The Microsoft structure layout algorithm is fairly simple with the exception
   of the bit-field packing.  

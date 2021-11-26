@@ -18,7 +18,7 @@ TIME8 --- Time function (64-bit)
 
   Returns the current time encoded as an integer (in the manner of the
   function ``time(3)`` in the C standard library). This value is
-  suitable for passing to CTIME, GMTIME, and LTIME.
+  suitable for passing to :ref:`CTIME`, :ref:`GMTIME`, and :ref:`LTIME`.
 
   :return:
     The return value is a scalar of type ``INTEGER(8)``.
@@ -36,10 +36,10 @@ TIME8 --- Time function (64-bit)
     RESULT = TIME8()
 
   :samp:`{See also}:`
-    DATE_AND_TIME, 
-    CTIME, 
-    GMTIME, 
-    LTIME, 
-    MCLOCK8, 
-    TIME
+    :ref:`DATE_AND_TIME`, 
+    :ref:`CTIME`, 
+    :ref:`GMTIME`, 
+    :ref:`LTIME`, 
+    :ref:`MCLOCK8`, 
+    :ref:`TIME`
 

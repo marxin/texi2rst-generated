@@ -26,7 +26,7 @@ omp_set_default_device -- Set the default device for target regions
   ============  =================================================
 
 :samp:`{See also}:`
-  OMP_DEFAULT_DEVICE, omp_get_default_device
+  :ref:`OMP_DEFAULT_DEVICE`, :ref:`omp_get_default_device`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.29.

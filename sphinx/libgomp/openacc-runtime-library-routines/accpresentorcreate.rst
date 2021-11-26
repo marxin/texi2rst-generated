@@ -19,7 +19,7 @@ Description
   array element and :samp:`{len}` specifies the length in bytes.
 
   Note that ``acc_present_or_create`` and ``acc_pcreate`` exist for
-  backward compatibility with OpenACC 2.0; use acc_create instead.
+  backward compatibility with OpenACC 2.0; use :ref:`acc_create` instead.
 
 :samp:`{C/C++}:`
 

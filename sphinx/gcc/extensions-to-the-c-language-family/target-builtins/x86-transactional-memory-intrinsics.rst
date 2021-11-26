@@ -12,7 +12,7 @@ These hardware transactional memory intrinsics for x86 allow you to use
 memory transactions with RTM (Restricted Transactional Memory).
 This support is enabled with the :option:`-mrtm` option.
 For using HLE (Hardware Lock Elision) see 
-x86 specific memory model extensions for transactional memory instead.
+:ref:`x86-specific-memory-model-extensions-for-transactional-memory` instead.
 
 A memory transaction commits all changes to memory in an atomic way,
 as visible to other threads. If the transaction fails it is rolled back

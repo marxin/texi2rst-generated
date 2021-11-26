@@ -43,5 +43,5 @@ FREE --- Frees memory
     See ``MALLOC`` for an example.
 
   :samp:`{See also}:`
-    MALLOC
+    :ref:`MALLOC`
 

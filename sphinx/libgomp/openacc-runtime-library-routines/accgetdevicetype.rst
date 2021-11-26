@@ -15,8 +15,7 @@ Description
   This function returns ``acc_device_none`` if
   ``acc_get_device_type`` is called from
   ``acc_ev_device_init_start``, ``acc_ev_device_init_end``
-  callbacks of the OpenACC Profiling Interface (OpenACC Profiling
-  Interface), that is, if the device is currently being initialized.
+  callbacks of the OpenACC Profiling Interface (:ref:`openacc-profiling-interface`), that is, if the device is currently being initialized.
 
 :samp:`{C/C++}:`
 

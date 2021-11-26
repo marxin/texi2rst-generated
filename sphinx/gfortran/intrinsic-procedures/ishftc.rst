@@ -70,5 +70,5 @@ ISHFTC --- Shift bits circularly
     ==============  ================  ==============  ====================
 
   :samp:`{See also}:`
-    ISHFT
+    :ref:`ISHFT`
 

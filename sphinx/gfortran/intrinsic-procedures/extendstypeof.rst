@@ -39,5 +39,5 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
     RESULT = EXTENDS_TYPE_OF(A, MOLD)
 
   :samp:`{See also}:`
-    SAME_TYPE_AS
+    :ref:`SAME_TYPE_AS`
 

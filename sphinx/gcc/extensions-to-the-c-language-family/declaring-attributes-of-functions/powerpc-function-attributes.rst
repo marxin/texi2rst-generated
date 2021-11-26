@@ -33,7 +33,7 @@ These function attributes are supported by the PowerPC back end:
 
   .. index:: target function attribute
 
-  As discussed in Common Function Attributes, this attribute 
+  As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.
 
   On the PowerPC, the following options are allowed:

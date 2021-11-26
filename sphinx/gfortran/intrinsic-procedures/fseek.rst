@@ -75,5 +75,5 @@ FSEEK --- Low level file positioning subroutine
       END PROGRAM
 
   :samp:`{See also}:`
-    FTELL
+    :ref:`FTELL`
 

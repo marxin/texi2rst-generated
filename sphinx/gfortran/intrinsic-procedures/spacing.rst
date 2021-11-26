@@ -50,5 +50,5 @@ SPACING --- Smallest distance between two numbers of a given type
       END PROGRAM
 
   :samp:`{See also}:`
-    RRSPACING
+    :ref:`RRSPACING`
 

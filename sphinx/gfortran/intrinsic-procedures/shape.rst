@@ -55,6 +55,6 @@ SHAPE --- Determine the shape of an array
       END PROGRAM
 
   :samp:`{See also}:`
-    RESHAPE, 
-    SIZE
+    :ref:`RESHAPE`, 
+    :ref:`SIZE`
 

@@ -27,7 +27,7 @@ C/C++
   ============  =========================================
 
 :samp:`{See also}:`
-  omp_get_initial_device
+  :ref:`omp_get_initial_device`
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.2.37.

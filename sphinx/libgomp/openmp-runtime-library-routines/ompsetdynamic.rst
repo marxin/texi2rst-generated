@@ -28,7 +28,7 @@ omp_set_dynamic -- Enable/disable dynamic teams
   ============  ===============================================
 
 :samp:`{See also}:`
-  OMP_DYNAMIC, omp_get_dynamic
+  :ref:`OMP_DYNAMIC`, :ref:`omp_get_dynamic`
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.7.

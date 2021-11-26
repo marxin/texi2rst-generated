@@ -92,5 +92,5 @@ MOD --- Remainder function
     =============  ==================  ==============  ====================
 
   :samp:`{See also}:`
-    MODULO
+    :ref:`MODULO`
 

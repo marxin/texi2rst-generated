@@ -42,6 +42,6 @@ RANDOM_NUMBER --- Pseudo-random number
       end program
 
   :samp:`{See also}:`
-    RANDOM_SEED, 
-    RANDOM_INIT
+    :ref:`RANDOM_SEED`, 
+    :ref:`RANDOM_INIT`
 

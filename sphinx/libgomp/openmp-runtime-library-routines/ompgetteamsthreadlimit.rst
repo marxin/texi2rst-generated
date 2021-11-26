@@ -25,7 +25,7 @@ omp_get_teams_thread_limit -- Maximum number of threads imposed by teams
   ============  =================================================
 
 :samp:`{See also}:`
-  omp_set_teams_thread_limit, OMP_TEAMS_THREAD_LIMIT
+  :ref:`omp_set_teams_thread_limit`, :ref:`OMP_TEAMS_THREAD_LIMIT`
 
 :samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.6.

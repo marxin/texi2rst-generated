@@ -60,10 +60,10 @@ ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_OR, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_FETCH_ADD, 
-    ATOMIC_FETCH_AND, 
-    ATOMIC_FETCH_XOR
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_OR`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_FETCH_ADD`, 
+    :ref:`ATOMIC_FETCH_AND`, 
+    :ref:`ATOMIC_FETCH_XOR`
 

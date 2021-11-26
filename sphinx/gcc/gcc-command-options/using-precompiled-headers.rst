@@ -127,7 +127,7 @@
   ignores the precompiled header if the conditions aren't met.  If you
   find an option combination that doesn't work and doesn't cause the
   precompiled header to be ignored, please consider filing a bug report,
-  see Bugs.
+  see :ref:`bugs`.
 
   If you do use differing options when generating and using the
   precompiled header, the actual behavior is a mixture of the

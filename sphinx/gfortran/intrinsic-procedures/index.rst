@@ -62,6 +62,6 @@ INDEX --- Position of a substring within a string
     ===========================  =============  ==============  ====================
 
   :samp:`{See also}:`
-    SCAN, 
-    VERIFY
+    :ref:`SCAN`, 
+    :ref:`VERIFY`
 

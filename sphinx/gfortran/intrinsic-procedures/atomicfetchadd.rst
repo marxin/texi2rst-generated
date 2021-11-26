@@ -61,10 +61,10 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
       end program atomic
 
   :samp:`{See also}:`
-    ATOMIC_DEFINE, 
-    ATOMIC_ADD, 
-    ISO_FORTRAN_ENV, 
-    ATOMIC_FETCH_AND, 
-    ATOMIC_FETCH_OR, 
-    ATOMIC_FETCH_XOR
+    :ref:`ATOMIC_DEFINE`, 
+    :ref:`ATOMIC_ADD`, 
+    :ref:`ISO_FORTRAN_ENV`, 
+    :ref:`ATOMIC_FETCH_AND`, 
+    :ref:`ATOMIC_FETCH_OR`, 
+    :ref:`ATOMIC_FETCH_XOR`
 

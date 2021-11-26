@@ -56,6 +56,6 @@ C_ASSOCIATED --- Status of a C pointer
       end subroutine association_test
 
   :samp:`{See also}:`
-    C_LOC, 
-    C_FUNLOC
+    :ref:`C_LOC`, 
+    :ref:`C_FUNLOC`
 

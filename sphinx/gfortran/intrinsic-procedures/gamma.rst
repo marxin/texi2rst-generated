@@ -59,5 +59,5 @@ GAMMA --- Gamma function
 
   :samp:`{See also}:`
     Logarithm of the Gamma function: 
-    LOG_GAMMA
+    :ref:`LOG_GAMMA`
 

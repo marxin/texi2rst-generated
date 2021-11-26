@@ -15,7 +15,7 @@ RAN --- Real pseudo-random number
 .. function:: RAN
 
   For compatibility with HP FORTRAN 77/iX, the ``RAN`` intrinsic is
-  provided as an alias for ``RAND``.  See RAND for complete
+  provided as an alias for ``RAND``.  See :ref:`RAND` for complete
   documentation.
 
   :samp:`{Standard}:`
@@ -25,6 +25,6 @@ RAN --- Real pseudo-random number
     Function
 
   :samp:`{See also}:`
-    RAND, 
-    RANDOM_NUMBER
+    :ref:`RAND`, 
+    :ref:`RANDOM_NUMBER`
 

@@ -20,7 +20,7 @@ OMP_NUM_THREADS -- Specifies the number of threads to use
   nesting by default.  If undefined one thread per CPU is used.
 
 :samp:`{See also}:`
-  omp_set_num_threads, OMP_NESTED
+  :ref:`omp_set_num_threads`, :ref:`OMP_NESTED`
 
 :samp:`{Reference}: `
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.2

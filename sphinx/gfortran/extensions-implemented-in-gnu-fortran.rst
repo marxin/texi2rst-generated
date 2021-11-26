@@ -573,7 +573,7 @@ function ``LOC()``.  The ``LOC()`` function is equivalent to the
           arpte(1) = 1.0 ! Sets ar(1) to 1.0
 
 The pointer can also be set by a call to the ``MALLOC`` intrinsic
-(see MALLOC).
+(see :ref:`MALLOC`).
 
 Cray pointees often are used to alias an existing variable.  For
 example:
@@ -713,8 +713,7 @@ in free form; and the ``c$``, ``*$`` and ``!$`` sentinels
 in fixed form, :command:`gfortran` needs to be invoked with the
 :option:`-fopenmp`.  This also arranges for automatic linking of the
 GNU Offloading and Multi Processing Runtime Library
-ToplibgomplibgompGNU Offloading and Multi Processing Runtime
-Library.
+:ref:`libgomp:top`.
 
 The OpenMP Fortran runtime library routines are provided both in a
 form of a Fortran 90 module named ``omp_lib`` and in a form of
@@ -772,8 +771,7 @@ sentinels in free form; and the ``c$``, ``*$`` and ``!$``
 sentinels in fixed form, :command:`gfortran` needs to be invoked with
 the :option:`-fopenacc`.  This also arranges for automatic linking of
 the GNU Offloading and Multi Processing Runtime Library
-ToplibgomplibgompGNU Offloading and Multi Processing Runtime
-Library.
+:ref:`libgomp:top`.
 
 The OpenACC Fortran runtime library routines are provided both in a
 form of a Fortran 90 module named ``openacc`` and in a form of a
@@ -992,10 +990,10 @@ rules and exceptions:
     end structure
 
 * Structures may contain ``UNION`` blocks. For more detail see the
-  section on UNION and MAP.
+  section on :ref:`union-and-map`.
 
 * Structures support old-style initialization of components, like
-  those described in Old-style variable initialization. For array
+  those described in :ref:`old-style-variable-initialization`. For array
   initializers, an initializer may contain a repeat specification of the form
   ``<literal-integer> * <constant-initializer>``. The value of the integer
   indicates the number of times to repeat the constant initializer when expanding
@@ -1011,7 +1009,7 @@ UNION and MAP
 .. index:: MAP
 
 Unions are an old vendor extension which were commonly used with the
-non-standard STRUCTURE and RECORD extensions. Use of ``UNION`` and
+non-standard :ref:`structure-and-record` extensions. Use of ``UNION`` and
 ``MAP`` is automatically enabled with :option:`-fdec-structure`.
 
 A ``UNION`` declaration occurs within a structure; within the definition of
@@ -1133,7 +1131,7 @@ compatibility with DEC programs. The types implied by each are:
 
 GNU Fortran supports these with the flag :option:`-fdec-intrinsic-ints`.
 Intrinsics for which prefixed versions are available and in what form are noted
-in Intrinsic Procedures. The complete list of supported intrinsics is
+in :ref:`intrinsic-procedures`. The complete list of supported intrinsics is
 here:
 
 ==========  ==========  ===========  ===========  ===========
@@ -1220,10 +1218,10 @@ Extended math intrinsics
 
 GNU Fortran supports an extended list of mathematical intrinsics with the
 compile flag :option:`-fdec-math` for compatability with legacy code.
-These intrinsics are described fully in Intrinsic Procedures where it is
+These intrinsics are described fully in :ref:`intrinsic-procedures` where it is
 noted that they are extensions and should be avoided whenever possible.
 
-Specifically, :option:`-fdec-math` enables the COTAN intrinsic, and
+Specifically, :option:`-fdec-math` enables the :ref:`COTAN` intrinsic, and
 trigonometric intrinsics which accept or produce values in degrees instead of
 radians.  Here is a summary of the new intrinsics:
 
@@ -1337,7 +1335,7 @@ avoided in new code.  Consider:
 
 In this example, compiled with :option:`-fdec`, GNU Fortran will
 replace the ``.AND.`` operation with a call to the intrinsic
-``IAND`` function, yielding the bitwise-and of ``i`` and ``j``.
+```` function, yielding the bitwise-and of ``i`` and ``j``.
 
 Note that this conversion will occur if at least one operand is of integral
 type.  As a result, a logical operand will be converted to an integer when the

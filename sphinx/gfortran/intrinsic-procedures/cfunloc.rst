@@ -62,8 +62,8 @@ C_FUNLOC --- Obtain the C address of a procedure
       end program main
 
   :samp:`{See also}:`
-    C_ASSOCIATED, 
-    C_LOC, 
-    C_F_POINTER, 
-    C_F_PROCPOINTER
+    :ref:`C_ASSOCIATED`, 
+    :ref:`C_LOC`, 
+    :ref:`C_F_POINTER`, 
+    :ref:`C_F_PROCPOINTER`
 

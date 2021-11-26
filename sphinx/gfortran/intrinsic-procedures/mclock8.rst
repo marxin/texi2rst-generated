@@ -37,9 +37,9 @@ MCLOCK8 --- Time function (64-bit)
     RESULT = MCLOCK8()
 
   :samp:`{See also}:`
-    CTIME, 
-    GMTIME, 
-    LTIME, 
-    MCLOCK, 
-    TIME8
+    :ref:`CTIME`, 
+    :ref:`GMTIME`, 
+    :ref:`LTIME`, 
+    :ref:`MCLOCK`, 
+    :ref:`TIME8`
 

@@ -64,8 +64,8 @@ CO_MIN --- Minimal value on the current set of images
       end program test
 
   :samp:`{See also}:`
-    CO_MAX, 
-    CO_SUM, 
-    CO_REDUCE, 
-    CO_BROADCAST
+    :ref:`CO_MAX`, 
+    :ref:`CO_SUM`, 
+    :ref:`CO_REDUCE`, 
+    :ref:`CO_BROADCAST`
 

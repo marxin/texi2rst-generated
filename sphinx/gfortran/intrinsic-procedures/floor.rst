@@ -53,6 +53,6 @@ FLOOR --- Integer floor function
       end program test_floor
 
   :samp:`{See also}:`
-    CEILING, 
-    NINT
+    :ref:`CEILING`, 
+    :ref:`NINT`
 

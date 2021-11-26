@@ -38,6 +38,6 @@ INT8 --- Convert to 64-bit integer type
     RESULT = INT8(A)
 
   :samp:`{See also}:`
-    INT, 
-    INT2
+    :ref:`INT`, 
+    :ref:`INT2`
 

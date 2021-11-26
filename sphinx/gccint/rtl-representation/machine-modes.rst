@@ -409,7 +409,7 @@ mode classes are:
   Modes representing condition code values.  These are ``CCmode`` plus
   any ``CC_MODE`` modes listed in the :samp:`{machine}-modes.def`.
   See :ref:`jump-patterns`,
-  also see Condition Code.
+  also see :ref:`condition-code`.
 
 .. envvar:: MODE_POINTER_BOUNDS
 

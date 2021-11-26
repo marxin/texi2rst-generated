@@ -116,7 +116,7 @@ new features of this standard:
   This includes assumed-type and assumed-rank objects and
   the ``SELECT RANK`` construct as well as the parts relating to
   ``BIND(C)`` functions.
-  See also Further Interoperability of Fortran with C.
+  See also :ref:`further-interoperability-of-fortran-with-c`.
 
 * GNU Fortran supports a subset of features derived from ISO/IEC TS 18508:2015,
   'Additional Parallel Features in Fortran':

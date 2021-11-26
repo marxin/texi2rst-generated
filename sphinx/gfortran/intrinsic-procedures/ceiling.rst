@@ -53,6 +53,6 @@ CEILING --- Integer ceiling function
       end program test_ceiling
 
   :samp:`{See also}:`
-    FLOOR, 
-    NINT
+    :ref:`FLOOR`, 
+    :ref:`NINT`
 

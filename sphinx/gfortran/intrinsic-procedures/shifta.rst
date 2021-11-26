@@ -47,6 +47,6 @@ SHIFTA --- Right shift with fill
     RESULT = SHIFTA(I, SHIFT)
 
   :samp:`{See also}:`
-    SHIFTL, 
-    SHIFTR
+    :ref:`SHIFTL`, 
+    :ref:`SHIFTR`
 

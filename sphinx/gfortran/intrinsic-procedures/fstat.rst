@@ -14,7 +14,7 @@ FSTAT --- Get file status
 
 .. function:: FSTAT
 
-  ``FSTAT`` is identical to STAT, except that information about an 
+  ``FSTAT`` is identical to :ref:`STAT`, except that information about an 
   already opened file is obtained.
 
   :param UNIT:
@@ -41,11 +41,11 @@ FSTAT --- Get file status
     STATUS = FSTAT(UNIT, VALUES)
 
   :samp:`{Example}:`
-    See STAT for an example.
+    See :ref:`STAT` for an example.
 
   :samp:`{See also}:`
     To stat a link: 
-    LSTAT 
+    :ref:`LSTAT` 
     To stat a file: 
-    STAT
+    :ref:`STAT`
 

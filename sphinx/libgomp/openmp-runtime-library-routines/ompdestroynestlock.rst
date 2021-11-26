@@ -26,7 +26,7 @@ omp_destroy_nest_lock -- Destroy nested lock
   ============  ======================================================
 
 :samp:`{See also}:`
-  omp_init_lock
+  :ref:`omp_init_lock`
 
 :samp:`{Reference}: `
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.3.
