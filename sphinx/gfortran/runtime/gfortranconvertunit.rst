@@ -76,8 +76,10 @@ data representation for unformatted files.  See :ref:`runtime-options`, for
 setting a default data representation for the whole program.  The
 ``CONVERT`` specifier overrides the :option:`-fconvert` compile options.
 
-*Note that the values specified via the GFORTRAN_CONVERT_UNIT
-environment variable will override the CONVERT specifier in the
-open statement*.  This is to give control over data formats to
-users who do not have the source code of their program available.
+.. note::
+
+  The values specified via the GFORTRAN_CONVERT_UNIT
+  environment variable will override the CONVERT specifier in the
+  open statement*.  This is to give control over data formats to
+  users who do not have the source code of their program available.
 
