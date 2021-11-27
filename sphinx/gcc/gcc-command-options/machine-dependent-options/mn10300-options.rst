@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: MN10300
+
 .. _mn10300-options:
 
 MN10300 Options

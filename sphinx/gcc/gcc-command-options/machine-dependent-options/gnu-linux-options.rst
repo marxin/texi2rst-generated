@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: GNU/Linux
+
 .. _gnu-linux-options:
 
 GNU/Linux Options

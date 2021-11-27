@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: x86 Windows
+
 .. _x86-windows-options:
 
 x86 Windows Options

@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: Solaris 2
+
 .. _solaris-2-options:
 
 Solaris 2 Options

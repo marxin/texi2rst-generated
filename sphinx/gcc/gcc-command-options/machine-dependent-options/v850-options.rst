@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: V850
+
 .. _v850-options:
 
 V850 Options

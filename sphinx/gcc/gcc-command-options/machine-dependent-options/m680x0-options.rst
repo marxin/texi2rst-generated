@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: M680x0
+
 .. _m680x0-options:
 
 M680x0 Options

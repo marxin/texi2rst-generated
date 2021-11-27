@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: FT32
+
 .. _ft32-options:
 
 FT32 Options
