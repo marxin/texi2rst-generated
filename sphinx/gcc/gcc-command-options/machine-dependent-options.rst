@@ -99,3 +99,4 @@ platform.
   machine-dependent-options/xtensa-options
   machine-dependent-options/zseries-options
 
+.. program:: None
