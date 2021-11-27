@@ -109,6 +109,8 @@ html_theme_options = {
 
 html_logo = '../logo.svg'
 
+html_favicon = '../favicon.ico'
+
 html_last_updated_fmt = ''
 
 html_context = {
