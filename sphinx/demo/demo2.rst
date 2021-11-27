@@ -13,14 +13,6 @@ Arithmetic functions
 
   These functions return the sum of :samp:`{a}` and :samp:`{b}`.
 
-Names:
-^^^^^^
-
-* Make
-* Make2
-
-    Install these requirements.
-
 Tools/packages necessary for building GCC
 =========================================
 
