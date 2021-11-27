@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: gcov-tool
+
 .. _gcov-tool:
 
 gcov-tool---an Offline Gcda Profile Processing Tool
