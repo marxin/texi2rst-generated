@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: IA-64
+
 .. _ia-64-options:
 
 IA-64 Options

@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: S/390 and zSeries
+
 .. _s-390-and-zseries-options:
 
 S/390 and zSeries Options

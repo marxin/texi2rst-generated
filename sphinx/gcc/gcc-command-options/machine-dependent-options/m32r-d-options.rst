@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: M32R/D
+
 .. _m32r-d-options:
 
 M32R/D Options

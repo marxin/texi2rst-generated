@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: AArch64
+
 .. _aarch64-options:
 
 AArch64 Options

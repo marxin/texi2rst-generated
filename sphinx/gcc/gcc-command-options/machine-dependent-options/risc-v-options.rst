@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: RISC-V
+
 .. _risc-v-options:
 
 RISC-V Options

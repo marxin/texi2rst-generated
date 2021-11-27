@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: System V
+
 .. _system-v-options:
 
 Options for System V

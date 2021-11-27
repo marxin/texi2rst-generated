@@ -3,7 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _fr30-options:
+.. program:: FR30
+
+.. _fr30-options:
 
 FR30 Options
 ^^^^^^^^^^^^

@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: MSP430
+
 .. _msp430-options:
 
 MSP430 Options

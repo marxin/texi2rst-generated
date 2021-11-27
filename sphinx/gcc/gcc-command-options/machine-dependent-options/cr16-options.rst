@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: CR16
+
 .. _cr16-options:
 
 CR16 Options

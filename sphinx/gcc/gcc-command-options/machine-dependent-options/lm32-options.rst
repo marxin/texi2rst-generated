@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: LM32
+
 .. _lm32-options:
 
 LM32 Options

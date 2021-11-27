@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: Nios II
+
 .. _nios-ii-options:
 
 Nios II Options

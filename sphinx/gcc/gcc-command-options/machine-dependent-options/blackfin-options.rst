@@ -3,7 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-  .. _blackfin-options:
+.. program:: Blackfin
+
+.. _blackfin-options:
 
 Blackfin Options
 ^^^^^^^^^^^^^^^^

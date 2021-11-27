@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: RL78
+
 .. _rl78-options:
 
 RL78 Options

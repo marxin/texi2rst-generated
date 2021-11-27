@@ -3,6 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. program:: Xstormy16
+
 .. _xstormy16-options:
 
 Xstormy16 Options
