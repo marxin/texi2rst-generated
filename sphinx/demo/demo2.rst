@@ -13,6 +13,15 @@ Arithmetic functions
 
   These functions return the sum of :samp:`{a}` and :samp:`{b}`.
 
+Names:
+^^^^^^
+
+* git
+* SSH
+* FooBar (all versions)
+
+    Install these requirements.
+
 Tools/packages necessary for building GCC
 =========================================
 
