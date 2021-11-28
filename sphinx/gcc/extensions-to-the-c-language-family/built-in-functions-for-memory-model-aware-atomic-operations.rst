@@ -187,16 +187,11 @@ ensures proper usage.
   pointer.
 
 .. function:: type __atomic_add_fetch (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_sub_fetch (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_and_fetch (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_xor_fetch (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_or_fetch (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_nand_fetch (type *ptr, type val, int memorder)
+              type __atomic_sub_fetch (type *ptr, type val, int memorder)
+              type __atomic_and_fetch (type *ptr, type val, int memorder)
+              type __atomic_xor_fetch (type *ptr, type val, int memorder)
+              type __atomic_or_fetch (type *ptr, type val, int memorder)
+              type __atomic_nand_fetch (type *ptr, type val, int memorder)
 
   These built-in functions perform the operation suggested by the name, and
   return the result of the operation.  Operations on pointer arguments are
@@ -212,16 +207,11 @@ ensures proper usage.
   type.  It must not be a boolean type.  All memory orders are valid.
 
 .. function:: type __atomic_fetch_add (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_fetch_sub (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_fetch_and (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_fetch_xor (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_fetch_or (type *ptr, type val, int memorder)
-
-.. function:: type __atomic_fetch_nand (type *ptr, type val, int memorder)
+              type __atomic_fetch_sub (type *ptr, type val, int memorder)
+              type __atomic_fetch_and (type *ptr, type val, int memorder)
+              type __atomic_fetch_xor (type *ptr, type val, int memorder)
+              type __atomic_fetch_or (type *ptr, type val, int memorder)
+              type __atomic_fetch_nand (type *ptr, type val, int memorder)
 
   These built-in functions perform the operation suggested by the name, and
   return the value that had previously been in ``*ptr``.  Operations

@@ -539,8 +539,7 @@ with one of the following values:
 .. insque.c:6
 
 .. function:: void insque (struct qelem *elem,   struct qelem *pred)
-
-.. function:: void remque (struct qelem *elem)
+              void remque (struct qelem *elem)
 
   Routines to manipulate queues built from doubly linked lists.  The
   ``insque`` routine inserts :samp:`{elem}` in the queue immediately
@@ -1106,12 +1105,9 @@ sets of characters:
 .. random.c:39
 
 .. function:: long int random (void)
-
-.. function:: void srandom (unsigned int seed)
-
-.. function:: void* initstate (unsigned int seed,   void *arg_state, unsigned long n)
-
-.. function:: void* setstate (void *arg_state)
+              void srandom (unsigned int seed)
+              void* initstate (unsigned int seed,   void *arg_state, unsigned long n)
+              void* setstate (void *arg_state)
 
   Random number functions.  ``random`` returns a random number in the
   range 0 to ``LONG_MAX``.  ``srandom`` initializes the random
@@ -1151,8 +1147,7 @@ sets of characters:
 .. setenv.c:22
 
 .. function:: int setenv (const char *name,   const char *value, int overwrite)
-
-.. function:: void unsetenv (const char *name)
+              void unsetenv (const char *name)
 
   ``setenv`` adds :samp:`{name}` to the environment with value
   :samp:`{value}`.  If the name was already present in the environment,
@@ -1588,8 +1583,7 @@ sets of characters:
 .. strtol.c:33
 
 .. function:: long int strtol (const char *string,   char **endptr, int base)
-
-.. function:: unsigned long int strtoul (const char *string,   char **endptr, int base)
+              unsigned long int strtoul (const char *string,   char **endptr, int base)
 
   The ``strtol`` function converts the string in :samp:`{string}` to a
   long integer value according to the given :samp:`{base}`, which must be
@@ -1604,8 +1598,7 @@ sets of characters:
 .. strtoll.c:33
 
 .. function:: long long int strtoll (const char *string,   char **endptr, int base)
-
-.. function:: unsigned long long int strtoul (  const char *string, char **endptr, int base)
+              unsigned long long int strtoul (  const char *string, char **endptr, int base)
 
   The ``strtoll`` function converts the string in :samp:`{string}` to a
   long long integer value according to the given :samp:`{base}`, which must be
@@ -1735,10 +1728,8 @@ sets of characters:
 .. vprintf.c:3
 
 .. function:: int vprintf (const char *format, va_list ap)
-
-.. function:: int vfprintf (FILE *stream,   const char *format, va_list ap)
-
-.. function:: int vsprintf (char *str,   const char *format, va_list ap)
+              int vfprintf (FILE *stream,   const char *format, va_list ap)
+              int vsprintf (char *str,   const char *format, va_list ap)
 
   These functions are the same as ``printf``, ``fprintf``, and
   ``sprintf``, respectively, except that they are called with a
