@@ -27,6 +27,7 @@ Tools/packages necessary for building GCC
 
 autoconf version 2.69
 GNU m4 version 1.4.6 (or later)
+
   Necessary when modifying :samp:`configure.ac`, :samp:`aclocal.m4`, etc.
   to regenerate :samp:`configure` and :samp:`config.in` files.
 
@@ -43,3 +44,5 @@ Foobar (all versions)
 
   These switches enable the use of instructions in the MMX, SSE,
   SSE2, ... 
+
+Use these options: :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3`.
