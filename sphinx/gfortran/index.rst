@@ -21,33 +21,36 @@ the GNU Fortran compiler.  You can find in this manual how to invoke
     not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. toctree::
+   :maxdepth: 3
 
-  copyright
-  introduction
+   copyright
+   introduction
 
 Part I: Invoking GNU Fortran
 ----------------------------
 
 .. toctree::
+   :maxdepth: 3
 
-  gnu-fortran-command-options
-  runtime
+   gnu-fortran-command-options
+   runtime
 
 Part II: Language Reference
 ---------------------------
 
 .. toctree::
+   :maxdepth: 3
 
-  compiler-characteristics
-  extensions
-  mixed-language-programming
-  coarray-programming
-  intrinsic-procedures
-  intrinsic-modules
+   compiler-characteristics
+   extensions
+   mixed-language-programming
+   coarray-programming
+   intrinsic-procedures
+   intrinsic-modules
 
-  contributing
-  general-public-license-3
-  gnu-free-documentation-license
-  funding
+   contributing
+   general-public-license-3
+   gnu-free-documentation-license
+   funding
 
-  indices-and-tables
+   indices-and-tables
