@@ -60,7 +60,7 @@ ideas and significant help to the GNU Fortran project
 
 * Asher Langton
 
-* H.J.Lu
+* H.J. Lu
 
 * Toon Moene
 
