@@ -217,6 +217,10 @@ Vector-specific attributes
 ``vect_masked_store``
   Target supports vector masked stores.
 
+``vect_gather_load_ifn``
+  Target supports vector gather loads using internal functions
+  (rather than via built-in functions or emulation).
+
 ``vect_scatter_store``
   Target supports vector scatter stores.
 

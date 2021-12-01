@@ -736,6 +736,16 @@ fnmsm4
   operand 1, and operand 0 is the scalar result, with mode equal to the mode of
   the elements of the input vector.
 
+  .. index:: reduc_fmin_scal_m instruction pattern
+
+  .. index:: reduc_fmax_scal_m instruction pattern
+
+:samp:`reduc_fmin_scal_{m}`, :samp:`reduc_fmax_scal_{m}`
+  Find the floating-point minimum/maximum of the elements of a vector,
+  using the same rules as ``fminm3`` and ``fmaxm3``.
+  Operand 1 is a vector of mode :samp:`{m}` and operand 0 is the scalar
+  result, which has mode ``GET_MODE_INNER (m)``.
+
   .. index:: reduc_plus_scal_m instruction pattern
 
 reduc_plus_scal_m

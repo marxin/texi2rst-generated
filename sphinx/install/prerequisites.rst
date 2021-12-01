@@ -80,6 +80,25 @@ C standard library and headers
   by verifying that :samp:`gnatls -v` lists only one explicit path in each
   section.
 
+GDC
+  .. _gdc-prerequisite:
+  In order to build GDC, the D compiler, you need a working GDC
+  compiler (GCC version 9.1 or later), as the D front end is written in D.
+
+  Versions of GDC prior to 12 can be built with an ISO C++11 compiler, which can
+  then be installed and used to bootstrap newer versions of the D front end.
+
+  It is strongly recommended to use an older version of GDC to build GDC. More
+  recent versions of GDC than the version built are not guaranteed to work and
+  will often fail during the build with compilation errors relating to
+  deprecations or removed features.
+
+  Note that :command:`configure` does not test whether the GDC installation works
+  and has a sufficiently recent version.  Though the implementation of the D
+  front end does not make use of any GDC-specific extensions, or novel features
+  of the D language, if too old a GDC version is installed and
+  :option:`--enable-languages`:samp:`=d` is used, the build will fail.
+
 A 'working' POSIX compatible shell, or GNU bash
   Necessary when running :command:`configure` because some
   :command:`/bin/sh` shells have bugs and may crash when configuring the
