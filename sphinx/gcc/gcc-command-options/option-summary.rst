@@ -1129,10 +1129,7 @@ in the following sections.
   :option:`-msymbol-as-address`  :option:`-mno-inefficient-warnings`
 
   *PowerPC Options*
-  See RS/6000 and PowerPC Options.
-
-  .. program:: PowerPC
-  See RS/6000 and PowerPC.
+  See :ref:`rs-6000-and-powerpc-options`.
 
   *PRU Options*
 
@@ -1176,7 +1173,7 @@ in the following sections.
 
   *RS/6000 and PowerPC Options*
 
-  .. program:: RS/6000 and PowerPC
+  .. program:: IBM RS/6000 and PowerPC
 
   :option:`-mcpu`:samp:`={cpu-type}` 
   :option:`-mtune`:samp:`={cpu-type}` 
