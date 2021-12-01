@@ -577,782 +577,782 @@ in the following sections.
 
   *AArch64 Options*
 
-  :option:`AArch64 -mabi`:samp:`={name}`  :option:`AArch64 -mbig-endian`  :option:`AArch64 -mlittle-endian` 
-  :option:`AArch64 -mgeneral-regs-only` 
-  :option:`AArch64 -mcmodel`:samp:`=tiny`  :option:`AArch64 -mcmodel`:samp:`=small`  :option:`AArch64 -mcmodel`:samp:`=large` 
-  :option:`AArch64 -mstrict-align`  :option:`AArch64 -mno-strict-align` 
-  :option:`AArch64 -momit-leaf-frame-pointer` 
-  :option:`AArch64 -mtls-dialect`:samp:`=desc`  :option:`AArch64 -mtls-dialect`:samp:`=traditional` 
-  :option:`AArch64 -mtls-size`:samp:`={size}` 
-  :option:`AArch64 -mfix-cortex-a53-835769`  :option:`AArch64 -mfix-cortex-a53-843419` 
-  :option:`AArch64 -mlow-precision-recip-sqrt`  :option:`AArch64 -mlow-precision-sqrt`  :option:`AArch64 -mlow-precision-div` 
-  :option:`AArch64 -mpc-relative-literal-loads` 
-  :option:`AArch64 -msign-return-address`:samp:`={scope}` 
-  :option:`AArch64 -mbranch-protection`:samp:`={none}|{standard}|{pac-ret}[+{leaf}+{b-key}|{bti}`
-  :option:`AArch64 -mharden-sls`:samp:`={opts}` 
-  :option:`AArch64 -march`:samp:`={name}`  :option:`AArch64 -mcpu`:samp:`={name}`  :option:`AArch64 -mtune`:samp:`={name}`  
-  :option:`AArch64 -moverride`:samp:`={string}`  :option:`AArch64 -mverbose-cost-dump` 
-  :option:`AArch64 -mstack-protector-guard`:samp:`={guard}` :option:`AArch64 -mstack-protector-guard-reg`:samp:`={sysreg}` 
-  :option:`AArch64 -mstack-protector-guard-offset`:samp:`={offset}` :option:`AArch64 -mtrack-speculation` 
-  :option:`AArch64 -moutline-atomics` 
+  :option:`-mabi`:samp:`={name}`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
+  :option:`-mgeneral-regs-only` 
+  :option:`-mcmodel`:samp:`=tiny`  :option:`-mcmodel`:samp:`=small`  :option:`-mcmodel`:samp:`=large` 
+  :option:`-mstrict-align`  :option:`-mno-strict-align` 
+  :option:`-momit-leaf-frame-pointer` 
+  :option:`-mtls-dialect`:samp:`=desc`  :option:`-mtls-dialect`:samp:`=traditional` 
+  :option:`-mtls-size`:samp:`={size}` 
+  :option:`-mfix-cortex-a53-835769`  :option:`-mfix-cortex-a53-843419` 
+  :option:`-mlow-precision-recip-sqrt`  :option:`-mlow-precision-sqrt`  :option:`-mlow-precision-div` 
+  :option:`-mpc-relative-literal-loads` 
+  :option:`-msign-return-address`:samp:`={scope}` 
+  :option:`-mbranch-protection`:samp:`={none}|{standard}|{pac-ret}[+{leaf}+{b-key}|{bti}`
+  :option:`-mharden-sls`:samp:`={opts}` 
+  :option:`-march`:samp:`={name}`  :option:`-mcpu`:samp:`={name}`  :option:`-mtune`:samp:`={name}`  
+  :option:`-moverride`:samp:`={string}`  :option:`-mverbose-cost-dump` 
+  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={sysreg}` 
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mtrack-speculation` 
+  :option:`-moutline-atomics` 
 
   *Adapteva Epiphany Options*
 
-  :option:`Adapteva Epiphany -mhalf-reg-file`  :option:`Adapteva Epiphany -mprefer-short-insn-regs` 
-  :option:`Adapteva Epiphany -mbranch-cost`:samp:`={num}`  :option:`Adapteva Epiphany -mcmove`  :option:`Adapteva Epiphany -mnops`:samp:`={num}`  :option:`Adapteva Epiphany -msoft-cmpsf` 
-  :option:`Adapteva Epiphany -msplit-lohi`  :option:`Adapteva Epiphany -mpost-inc`  :option:`Adapteva Epiphany -mpost-modify`  :option:`Adapteva Epiphany -mstack-offset`:samp:`={num}` 
-  :option:`Adapteva Epiphany -mround-nearest`  :option:`Adapteva Epiphany -mlong-calls`  :option:`Adapteva Epiphany -mshort-calls`  :option:`Adapteva Epiphany -msmall16` 
-  :option:`Adapteva Epiphany -mfp-mode`:samp:`={mode}`  :option:`Adapteva Epiphany -mvect-double`  :option:`Adapteva Epiphany -max-vect-align`:samp:`={num}` 
-  :option:`Adapteva Epiphany -msplit-vecmove-early`  :option:`Adapteva Epiphany -m1reg-`:samp:`{reg}`
+  :option:`-mhalf-reg-file`  :option:`-mprefer-short-insn-regs` 
+  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mcmove`  :option:`-mnops`:samp:`={num}`  :option:`-msoft-cmpsf` 
+  :option:`-msplit-lohi`  :option:`-mpost-inc`  :option:`-mpost-modify`  :option:`-mstack-offset`:samp:`={num}` 
+  :option:`-mround-nearest`  :option:`-mlong-calls`  :option:`-mshort-calls`  :option:`-msmall16` 
+  :option:`-mfp-mode`:samp:`={mode}`  :option:`-mvect-double`  :option:`-max-vect-align`:samp:`={num}` 
+  :option:`-msplit-vecmove-early`  :option:`-m1reg-`:samp:`{reg}`
 
   *AMD GCN Options*
 
-  :option:`AMD GCN -march`:samp:`={gpu}` :option:`AMD GCN -mtune`:samp:`={gpu}` :option:`AMD GCN -mstack-size`:samp:`={bytes}`
+  :option:`-march`:samp:`={gpu}` :option:`-mtune`:samp:`={gpu}` :option:`-mstack-size`:samp:`={bytes}`
 
   *ARC Options*
 
-  :option:`ARC -mbarrel-shifter`  :option:`ARC -mjli-always` 
-  :option:`ARC -mcpu`:samp:`={cpu}`  :option:`ARC -mA6`  :option:`ARC -mARC600`  :option:`ARC -mA7`  :option:`ARC -mARC700` 
-  :option:`ARC -mdpfp`  :option:`ARC -mdpfp-compact`  :option:`ARC -mdpfp-fast`  :option:`ARC -mno-dpfp-lrsr` 
-  :option:`ARC -mea`  :option:`ARC -mno-mpy`  :option:`ARC -mmul32x16`  :option:`ARC -mmul64`  :option:`ARC -matomic` 
-  :option:`ARC -mnorm`  :option:`ARC -mspfp`  :option:`ARC -mspfp-compact`  :option:`ARC -mspfp-fast`  :option:`ARC -msimd`  :option:`ARC -msoft-float`  :option:`ARC -mswap` 
-  :option:`ARC -mcrc`  :option:`ARC -mdsp-packa`  :option:`ARC -mdvbf`  :option:`ARC -mlock`  :option:`ARC -mmac-d16`  :option:`ARC -mmac-24`  :option:`ARC -mrtsc`  :option:`ARC -mswape` 
-  :option:`ARC -mtelephony`  :option:`ARC -mxy`  :option:`ARC -misize`  :option:`ARC -mannotate-align`  :option:`ARC -marclinux`  :option:`ARC -marclinux_prof` 
-  :option:`ARC -mlong-calls`  :option:`ARC -mmedium-calls`  :option:`ARC -msdata`  :option:`ARC -mirq-ctrl-saved` 
-  :option:`ARC -mrgf-banked-regs`  :option:`ARC -mlpc-width`:samp:`={width}`  :option:`ARC -G` :samp:`{num}` 
-  :option:`ARC -mvolatile-cache`  :option:`ARC -mtp-regno`:samp:`={regno}` 
-  :option:`ARC -malign-call`  :option:`ARC -mauto-modify-reg`  :option:`ARC -mbbit-peephole`  :option:`ARC -mno-brcc` 
-  :option:`ARC -mcase-vector-pcrel`  :option:`ARC -mcompact-casesi`  :option:`ARC -mno-cond-exec`  :option:`ARC -mearly-cbranchsi` 
-  :option:`ARC -mexpand-adddi`  :option:`ARC -mindexed-loads`  :option:`ARC -mlra`  :option:`ARC -mlra-priority-none` 
-  :option:`ARC -mlra-priority-compact` mlra :option:`ARC -priority-noncompact`  :option:`ARC -mmillicode` 
-  :option:`ARC -mmixed-code`  :option:`ARC -mq-class`  :option:`ARC -mRcq`  :option:`ARC -mRcw`  :option:`ARC -msize-level`:samp:`={level}` 
-  :option:`ARC -mtune`:samp:`={cpu}`  :option:`ARC -mmultcost`:samp:`={num}`  :option:`ARC -mcode-density-frame` 
-  :option:`ARC -munalign-prob-threshold`:samp:`={probability}`  :option:`ARC -mmpy-option`:samp:`={multo}` 
-  :option:`ARC -mdiv-rem`  :option:`ARC -mcode-density`  :option:`ARC -mll64`  :option:`ARC -mfpu`:samp:`={fpu}`  :option:`ARC -mrf16`  :option:`ARC -mbranch-index`
+  :option:`-mbarrel-shifter`  :option:`-mjli-always` 
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-mA6`  :option:`-mARC600`  :option:`-mA7`  :option:`-mARC700` 
+  :option:`-mdpfp`  :option:`-mdpfp-compact`  :option:`-mdpfp-fast`  :option:`-mno-dpfp-lrsr` 
+  :option:`-mea`  :option:`-mno-mpy`  :option:`-mmul32x16`  :option:`-mmul64`  :option:`-matomic` 
+  :option:`-mnorm`  :option:`-mspfp`  :option:`-mspfp-compact`  :option:`-mspfp-fast`  :option:`-msimd`  :option:`-msoft-float`  :option:`-mswap` 
+  :option:`-mcrc`  :option:`-mdsp-packa`  :option:`-mdvbf`  :option:`-mlock`  :option:`-mmac-d16`  :option:`-mmac-24`  :option:`-mrtsc`  :option:`-mswape` 
+  :option:`-mtelephony`  :option:`-mxy`  :option:`-misize`  :option:`-mannotate-align`  :option:`-marclinux`  :option:`-marclinux_prof` 
+  :option:`-mlong-calls`  :option:`-mmedium-calls`  :option:`-msdata`  :option:`-mirq-ctrl-saved` 
+  :option:`-mrgf-banked-regs`  :option:`-mlpc-width`:samp:`={width}`  :option:`-G` :samp:`{num}` 
+  :option:`-mvolatile-cache`  :option:`-mtp-regno`:samp:`={regno}` 
+  :option:`-malign-call`  :option:`-mauto-modify-reg`  :option:`-mbbit-peephole`  :option:`-mno-brcc` 
+  :option:`-mcase-vector-pcrel`  :option:`-mcompact-casesi`  :option:`-mno-cond-exec`  :option:`-mearly-cbranchsi` 
+  :option:`-mexpand-adddi`  :option:`-mindexed-loads`  :option:`-mlra`  :option:`-mlra-priority-none` 
+  :option:`-mlra-priority-compact` mlra :option:`-priority-noncompact`  :option:`-mmillicode` 
+  :option:`-mmixed-code`  :option:`-mq-class`  :option:`-mRcq`  :option:`-mRcw`  :option:`-msize-level`:samp:`={level}` 
+  :option:`-mtune`:samp:`={cpu}`  :option:`-mmultcost`:samp:`={num}`  :option:`-mcode-density-frame` 
+  :option:`-munalign-prob-threshold`:samp:`={probability}`  :option:`-mmpy-option`:samp:`={multo}` 
+  :option:`-mdiv-rem`  :option:`-mcode-density`  :option:`-mll64`  :option:`-mfpu`:samp:`={fpu}`  :option:`-mrf16`  :option:`-mbranch-index`
 
   *ARM Options*
 
-  :option:`ARM -mapcs-frame`  :option:`ARM -mno-apcs-frame` 
-  :option:`ARM -mabi`:samp:`={name}` 
-  :option:`ARM -mapcs-stack-check`  :option:`ARM -mno-apcs-stack-check` 
-  :option:`ARM -mapcs-reentrant`  :option:`ARM -mno-apcs-reentrant` 
-  :option:`ARM -mgeneral-regs-only` 
-  :option:`ARM -msched-prolog`  :option:`ARM -mno-sched-prolog` 
-  :option:`ARM -mlittle-endian`  :option:`ARM -mbig-endian` 
-  :option:`ARM -mbe8`  :option:`ARM -mbe32` 
-  :option:`ARM -mfloat-abi`:samp:`={name}` 
-  :option:`ARM -mfp16-format`:samp:`={name}`
-  :option:`ARM -mthumb-interwork`  :option:`ARM -mno-thumb-interwork` 
-  :option:`ARM -mcpu`:samp:`={name}`  :option:`ARM -march`:samp:`={name}`  :option:`ARM -mfpu`:samp:`={name}`  
-  :option:`ARM -mtune`:samp:`={name}`  :option:`ARM -mprint-tune-info` 
-  :option:`ARM -mstructure-size-boundary`:samp:`={n}` 
-  :option:`ARM -mabort-on-noreturn` 
-  :option:`ARM -mlong-calls`  :option:`ARM -mno-long-calls` 
-  :option:`ARM -msingle-pic-base`  :option:`ARM -mno-single-pic-base` 
-  :option:`ARM -mpic-register`:samp:`={reg}` 
-  :option:`ARM -mnop-fun-dllimport` 
-  :option:`ARM -mpoke-function-name` 
-  :option:`ARM -mthumb`  :option:`ARM -marm`  :option:`ARM -mflip-thumb` 
-  :option:`ARM -mtpcs-frame`  :option:`ARM -mtpcs-leaf-frame` 
-  :option:`ARM -mcaller-super-interworking`  :option:`ARM -mcallee-super-interworking` 
-  :option:`ARM -mtp`:samp:`={name}`  :option:`ARM -mtls-dialect`:samp:`={dialect}` 
-  :option:`ARM -mword-relocations` 
-  :option:`ARM -mfix-cortex-m3-ldrd` 
-  :option:`ARM -munaligned-access` 
-  :option:`ARM -mneon-for-64bits` 
-  :option:`ARM -mslow-flash-data` 
-  :option:`ARM -masm-syntax-unified` 
-  :option:`ARM -mrestrict-it` 
-  :option:`ARM -mverbose-cost-dump` 
-  :option:`ARM -mpure-code` 
-  :option:`ARM -mcmse` 
-  :option:`ARM -mfix-cmse-cve-2021-35465` 
-  :option:`ARM -mfdpic`
+  :option:`-mapcs-frame`  :option:`-mno-apcs-frame` 
+  :option:`-mabi`:samp:`={name}` 
+  :option:`-mapcs-stack-check`  :option:`-mno-apcs-stack-check` 
+  :option:`-mapcs-reentrant`  :option:`-mno-apcs-reentrant` 
+  :option:`-mgeneral-regs-only` 
+  :option:`-msched-prolog`  :option:`-mno-sched-prolog` 
+  :option:`-mlittle-endian`  :option:`-mbig-endian` 
+  :option:`-mbe8`  :option:`-mbe32` 
+  :option:`-mfloat-abi`:samp:`={name}` 
+  :option:`-mfp16-format`:samp:`={name}`
+  :option:`-mthumb-interwork`  :option:`-mno-thumb-interwork` 
+  :option:`-mcpu`:samp:`={name}`  :option:`-march`:samp:`={name}`  :option:`-mfpu`:samp:`={name}`  
+  :option:`-mtune`:samp:`={name}`  :option:`-mprint-tune-info` 
+  :option:`-mstructure-size-boundary`:samp:`={n}` 
+  :option:`-mabort-on-noreturn` 
+  :option:`-mlong-calls`  :option:`-mno-long-calls` 
+  :option:`-msingle-pic-base`  :option:`-mno-single-pic-base` 
+  :option:`-mpic-register`:samp:`={reg}` 
+  :option:`-mnop-fun-dllimport` 
+  :option:`-mpoke-function-name` 
+  :option:`-mthumb`  :option:`-marm`  :option:`-mflip-thumb` 
+  :option:`-mtpcs-frame`  :option:`-mtpcs-leaf-frame` 
+  :option:`-mcaller-super-interworking`  :option:`-mcallee-super-interworking` 
+  :option:`-mtp`:samp:`={name}`  :option:`-mtls-dialect`:samp:`={dialect}` 
+  :option:`-mword-relocations` 
+  :option:`-mfix-cortex-m3-ldrd` 
+  :option:`-munaligned-access` 
+  :option:`-mneon-for-64bits` 
+  :option:`-mslow-flash-data` 
+  :option:`-masm-syntax-unified` 
+  :option:`-mrestrict-it` 
+  :option:`-mverbose-cost-dump` 
+  :option:`-mpure-code` 
+  :option:`-mcmse` 
+  :option:`-mfix-cmse-cve-2021-35465` 
+  :option:`-mfdpic`
 
   *AVR Options*
 
-  :option:`AVR -mmcu`:samp:`={mcu}`  :option:`AVR -mabsdata`  :option:`AVR -maccumulate-args` 
-  :option:`AVR -mbranch-cost`:samp:`={cost}` 
-  :option:`AVR -mcall-prologues`  :option:`AVR -mgas-isr-prologues`  :option:`AVR -mint8` 
-  :option:`AVR -mdouble`:samp:`={bits}` :option:`AVR -mlong-double`:samp:`={bits}` 
-  :option:`AVR -mn_flash`:samp:`={size}`  :option:`AVR -mno-interrupts` 
-  :option:`AVR -mmain-is-OS_task`  :option:`AVR -mrelax`  :option:`AVR -mrmw`  :option:`AVR -mstrict-X`  :option:`AVR -mtiny-stack` 
-  :option:`AVR -mfract-convert-truncate` 
-  :option:`AVR -mshort-calls`  :option:`AVR -nodevicelib`  :option:`AVR -nodevicespecs` 
-  :option:`AVR -Waddr-space-convert`  :option:`AVR -Wmisspelled-isr`
+  :option:`-mmcu`:samp:`={mcu}`  :option:`-mabsdata`  :option:`-maccumulate-args` 
+  :option:`-mbranch-cost`:samp:`={cost}` 
+  :option:`-mcall-prologues`  :option:`-mgas-isr-prologues`  :option:`-mint8` 
+  :option:`-mdouble`:samp:`={bits}` :option:`-mlong-double`:samp:`={bits}` 
+  :option:`-mn_flash`:samp:`={size}`  :option:`-mno-interrupts` 
+  :option:`-mmain-is-OS_task`  :option:`-mrelax`  :option:`-mrmw`  :option:`-mstrict-X`  :option:`-mtiny-stack` 
+  :option:`-mfract-convert-truncate` 
+  :option:`-mshort-calls`  :option:`-nodevicelib`  :option:`-nodevicespecs` 
+  :option:`-Waddr-space-convert`  :option:`-Wmisspelled-isr`
 
   *Blackfin Options*
 
-  :option:`Blackfin -mcpu`:samp:`={cpu}[-{sirevision}]`
-  :option:`Blackfin -msim`  :option:`Blackfin -momit-leaf-frame-pointer`  :option:`Blackfin -mno-omit-leaf-frame-pointer` 
-  :option:`Blackfin -mspecld-anomaly`  :option:`Blackfin -mno-specld-anomaly`  :option:`Blackfin -mcsync-anomaly`  :option:`Blackfin -mno-csync-anomaly` 
-  :option:`Blackfin -mlow-64k`  :option:`Blackfin -mno-low64k`  :option:`Blackfin -mstack-check-l1`  :option:`Blackfin -mid-shared-library` 
-  :option:`Blackfin -mno-id-shared-library`  :option:`Blackfin -mshared-library-id`:samp:`={n}` 
-  :option:`Blackfin -mleaf-id-shared-library`  :option:`Blackfin -mno-leaf-id-shared-library` 
-  :option:`Blackfin -msep-data`  :option:`Blackfin -mno-sep-data`  :option:`Blackfin -mlong-calls`  :option:`Blackfin -mno-long-calls` 
-  :option:`Blackfin -mfast-fp`  :option:`Blackfin -minline-plt`  :option:`Blackfin -mmulticore`  :option:`Blackfin -mcorea`  :option:`Blackfin -mcoreb`  :option:`Blackfin -msdram` 
-  :option:`Blackfin -micplb`
+  :option:`-mcpu`:samp:`={cpu}[-{sirevision}]`
+  :option:`-msim`  :option:`-momit-leaf-frame-pointer`  :option:`-mno-omit-leaf-frame-pointer` 
+  :option:`-mspecld-anomaly`  :option:`-mno-specld-anomaly`  :option:`-mcsync-anomaly`  :option:`-mno-csync-anomaly` 
+  :option:`-mlow-64k`  :option:`-mno-low64k`  :option:`-mstack-check-l1`  :option:`-mid-shared-library` 
+  :option:`-mno-id-shared-library`  :option:`-mshared-library-id`:samp:`={n}` 
+  :option:`-mleaf-id-shared-library`  :option:`-mno-leaf-id-shared-library` 
+  :option:`-msep-data`  :option:`-mno-sep-data`  :option:`-mlong-calls`  :option:`-mno-long-calls` 
+  :option:`-mfast-fp`  :option:`-minline-plt`  :option:`-mmulticore`  :option:`-mcorea`  :option:`-mcoreb`  :option:`-msdram` 
+  :option:`-micplb`
 
   *C6X Options*
 
-  :option:`C6X -mbig-endian`  :option:`C6X -mlittle-endian`  :option:`C6X -march`:samp:`={cpu}` 
-  :option:`C6X -msim`  :option:`C6X -msdata`:samp:`={sdata-type}`
+  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-march`:samp:`={cpu}` 
+  :option:`-msim`  :option:`-msdata`:samp:`={sdata-type}`
 
   *CRIS Options*
 
-  :option:`CRIS -mcpu`:samp:`={cpu}`  :option:`CRIS -march`:samp:`={cpu}`  :option:`CRIS -mtune`:samp:`={cpu}` 
-  :option:`CRIS -mmax-stack-frame`:samp:`={n}`  :option:`CRIS -melinux-stacksize`:samp:`={n}` 
-  :option:`CRIS -metrax4`  :option:`CRIS -metrax100`  :option:`CRIS -mpdebug`  :option:`CRIS -mcc-init`  :option:`CRIS -mno-side-effects` 
-  :option:`CRIS -mstack-align`  :option:`CRIS -mdata-align`  :option:`CRIS -mconst-align` 
-  :option:`CRIS -m32-bit`  :option:`CRIS -m16-bit`  :option:`CRIS -m8-bit`  :option:`CRIS -mno-prologue-epilogue`  :option:`CRIS -mno-gotplt` 
-  :option:`CRIS -melf`  :option:`CRIS -maout`  :option:`CRIS -melinux`  :option:`CRIS -mlinux`  :option:`CRIS -sim`  :option:`CRIS -sim2` 
-  :option:`CRIS -mmul-bug-workaround`  :option:`CRIS -mno-mul-bug-workaround`
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`  :option:`-mtune`:samp:`={cpu}` 
+  :option:`-mmax-stack-frame`:samp:`={n}`  :option:`-melinux-stacksize`:samp:`={n}` 
+  :option:`-metrax4`  :option:`-metrax100`  :option:`-mpdebug`  :option:`-mcc-init`  :option:`-mno-side-effects` 
+  :option:`-mstack-align`  :option:`-mdata-align`  :option:`-mconst-align` 
+  :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue`  :option:`-mno-gotplt` 
+  :option:`-melf`  :option:`-maout`  :option:`-melinux`  :option:`-mlinux`  :option:`-sim`  :option:`-sim2` 
+  :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
 
   *CR16 Options*
 
-  :option:`CR16 -mmac` 
-  :option:`CR16 -mcr16cplus`  :option:`CR16 -mcr16c` 
-  :option:`CR16 -msim`  :option:`CR16 -mint32`  :option:`CR16 -mbit-ops`
-  :option:`CR16 -mdata-model`:samp:`={model}`
+  :option:`-mmac` 
+  :option:`-mcr16cplus`  :option:`-mcr16c` 
+  :option:`-msim`  :option:`-mint32`  :option:`-mbit-ops`
+  :option:`-mdata-model`:samp:`={model}`
 
   *C-SKY Options*
 
-  :option:`C-SKY -march`:samp:`={arch}`  :option:`C-SKY -mcpu`:samp:`={cpu}` 
-  :option:`C-SKY -mbig-endian`  :option:`C-SKY -EB`  :option:`C-SKY -mlittle-endian`  :option:`C-SKY -EL` 
-  :option:`C-SKY -mhard-float`  :option:`C-SKY -msoft-float`  :option:`C-SKY -mfpu`:samp:`={fpu}`  :option:`C-SKY -mdouble-float`  :option:`C-SKY -mfdivdu` 
-  :option:`C-SKY -mfloat-abi`:samp:`={name}` 
-  :option:`C-SKY -melrw`  :option:`C-SKY -mistack`  :option:`C-SKY -mmp`  :option:`C-SKY -mcp`  :option:`C-SKY -mcache`  :option:`C-SKY -msecurity`  :option:`C-SKY -mtrust` 
-  :option:`C-SKY -mdsp`  :option:`C-SKY -medsp`  :option:`C-SKY -mvdsp` 
-  :option:`C-SKY -mdiv`  :option:`C-SKY -msmart`  :option:`C-SKY -mhigh-registers`  :option:`C-SKY -manchor` 
-  :option:`C-SKY -mpushpop`  :option:`C-SKY -mmultiple-stld`  :option:`C-SKY -mconstpool`  :option:`C-SKY -mstack-size`  :option:`C-SKY -mccrt` 
-  :option:`C-SKY -mbranch-cost`:samp:`={n}`  :option:`C-SKY -mcse-cc`  :option:`C-SKY -msched-prolog` :option:`C-SKY -msim`
+  :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}` 
+  :option:`-mbig-endian`  :option:`-EB`  :option:`-mlittle-endian`  :option:`-EL` 
+  :option:`-mhard-float`  :option:`-msoft-float`  :option:`-mfpu`:samp:`={fpu}`  :option:`-mdouble-float`  :option:`-mfdivdu` 
+  :option:`-mfloat-abi`:samp:`={name}` 
+  :option:`-melrw`  :option:`-mistack`  :option:`-mmp`  :option:`-mcp`  :option:`-mcache`  :option:`-msecurity`  :option:`-mtrust` 
+  :option:`-mdsp`  :option:`-medsp`  :option:`-mvdsp` 
+  :option:`-mdiv`  :option:`-msmart`  :option:`-mhigh-registers`  :option:`-manchor` 
+  :option:`-mpushpop`  :option:`-mmultiple-stld`  :option:`-mconstpool`  :option:`-mstack-size`  :option:`-mccrt` 
+  :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcse-cc`  :option:`-msched-prolog` :option:`-msim`
 
   *Darwin Options*
 
-  :option:`Darwin -all_load`  :option:`Darwin -allowable_client`  :option:`Darwin -arch`  :option:`Darwin -arch_errors_fatal` 
-  :option:`Darwin -arch_only`  :option:`Darwin -bind_at_load`  :option:`Darwin -bundle`  :option:`Darwin -bundle_loader` 
-  :option:`Darwin -client_name`  :option:`Darwin -compatibility_version`  :option:`Darwin -current_version` 
-  :option:`Darwin -dead_strip` 
-  :option:`Darwin -dependency-file`  :option:`Darwin -dylib_file`  :option:`Darwin -dylinker_install_name` 
-  :option:`Darwin -dynamic`  :option:`Darwin -dynamiclib`  :option:`Darwin -exported_symbols_list` 
-  :option:`Darwin -filelist`  :option:`Darwin -flat_namespace`  :option:`Darwin -force_cpusubtype_ALL` 
-  :option:`Darwin -force_flat_namespace`  :option:`Darwin -headerpad_max_install_names` 
-  :option:`Darwin -iframework` 
-  :option:`Darwin -image_base`  :option:`Darwin -init`  :option:`Darwin -install_name`  :option:`Darwin -keep_private_externs` 
-  :option:`Darwin -multi_module`  :option:`Darwin -multiply_defined`  :option:`Darwin -multiply_defined_unused` 
-  :option:`Darwin -noall_load`   :option:`Darwin -no_dead_strip_inits_and_terms` 
-  :option:`Darwin -nofixprebinding`  :option:`Darwin -nomultidefs`  :option:`Darwin -noprebind`  :option:`Darwin -noseglinkedit` 
-  :option:`Darwin -pagezero_size`  :option:`Darwin -prebind`  :option:`Darwin -prebind_all_twolevel_modules` 
-  :option:`Darwin -private_bundle`  :option:`Darwin -read_only_relocs`  :option:`Darwin -sectalign` 
-  :option:`Darwin -sectobjectsymbols`  :option:`Darwin -whyload`  :option:`Darwin -seg1addr` 
-  :option:`Darwin -sectcreate`  :option:`Darwin -sectobjectsymbols`  :option:`Darwin -sectorder` 
-  :option:`Darwin -segaddr`  :option:`Darwin -segs_read_only_addr`  :option:`Darwin -segs_read_write_addr` 
-  :option:`Darwin -seg_addr_table`  :option:`Darwin -seg_addr_table_filename`  :option:`Darwin -seglinkedit` 
-  :option:`Darwin -segprot`  :option:`Darwin -segs_read_only_addr`  :option:`Darwin -segs_read_write_addr` 
-  :option:`Darwin -single_module`  :option:`Darwin -static`  :option:`Darwin -sub_library`  :option:`Darwin -sub_umbrella` 
-  :option:`Darwin -twolevel_namespace`  :option:`Darwin -umbrella`  :option:`Darwin -undefined` 
-  :option:`Darwin -unexported_symbols_list`  :option:`Darwin -weak_reference_mismatches` 
-  :option:`Darwin -whatsloaded`  :option:`Darwin -F`  :option:`Darwin -gused`  :option:`Darwin -gfull`  :option:`Darwin -mmacosx-version-min`:samp:`={version}` 
-  :option:`Darwin -mkernel`  :option:`Darwin -mone-byte-bool`
+  :option:`-all_load`  :option:`-allowable_client`  :option:`-arch`  :option:`-arch_errors_fatal` 
+  :option:`-arch_only`  :option:`-bind_at_load`  :option:`-bundle`  :option:`-bundle_loader` 
+  :option:`-client_name`  :option:`-compatibility_version`  :option:`-current_version` 
+  :option:`-dead_strip` 
+  :option:`-dependency-file`  :option:`-dylib_file`  :option:`-dylinker_install_name` 
+  :option:`-dynamic`  :option:`-dynamiclib`  :option:`-exported_symbols_list` 
+  :option:`-filelist`  :option:`-flat_namespace`  :option:`-force_cpusubtype_ALL` 
+  :option:`-force_flat_namespace`  :option:`-headerpad_max_install_names` 
+  :option:`-iframework` 
+  :option:`-image_base`  :option:`-init`  :option:`-install_name`  :option:`-keep_private_externs` 
+  :option:`-multi_module`  :option:`-multiply_defined`  :option:`-multiply_defined_unused` 
+  :option:`-noall_load`   :option:`-no_dead_strip_inits_and_terms` 
+  :option:`-nofixprebinding`  :option:`-nomultidefs`  :option:`-noprebind`  :option:`-noseglinkedit` 
+  :option:`-pagezero_size`  :option:`-prebind`  :option:`-prebind_all_twolevel_modules` 
+  :option:`-private_bundle`  :option:`-read_only_relocs`  :option:`-sectalign` 
+  :option:`-sectobjectsymbols`  :option:`-whyload`  :option:`-seg1addr` 
+  :option:`-sectcreate`  :option:`-sectobjectsymbols`  :option:`-sectorder` 
+  :option:`-segaddr`  :option:`-segs_read_only_addr`  :option:`-segs_read_write_addr` 
+  :option:`-seg_addr_table`  :option:`-seg_addr_table_filename`  :option:`-seglinkedit` 
+  :option:`-segprot`  :option:`-segs_read_only_addr`  :option:`-segs_read_write_addr` 
+  :option:`-single_module`  :option:`-static`  :option:`-sub_library`  :option:`-sub_umbrella` 
+  :option:`-twolevel_namespace`  :option:`-umbrella`  :option:`-undefined` 
+  :option:`-unexported_symbols_list`  :option:`-weak_reference_mismatches` 
+  :option:`-whatsloaded`  :option:`-F`  :option:`-gused`  :option:`-gfull`  :option:`-mmacosx-version-min`:samp:`={version}` 
+  :option:`-mkernel`  :option:`-mone-byte-bool`
 
   *DEC Alpha Options*
 
-  :option:`DEC Alpha -mno-fp-regs`  :option:`DEC Alpha -msoft-float` 
-  :option:`DEC Alpha -mieee`  :option:`DEC Alpha -mieee-with-inexact`  :option:`DEC Alpha -mieee-conformant` 
-  :option:`DEC Alpha -mfp-trap-mode`:samp:`={mode}`  :option:`DEC Alpha -mfp-rounding-mode`:samp:`={mode}` 
-  :option:`DEC Alpha -mtrap-precision`:samp:`={mode}`  :option:`DEC Alpha -mbuild-constants` 
-  :option:`DEC Alpha -mcpu`:samp:`={cpu-type}`  :option:`DEC Alpha -mtune`:samp:`={cpu-type}` 
-  :option:`DEC Alpha -mbwx`  :option:`DEC Alpha -mmax`  :option:`DEC Alpha -mfix`  :option:`DEC Alpha -mcix` 
-  :option:`DEC Alpha -mfloat-vax`  :option:`DEC Alpha -mfloat-ieee` 
-  :option:`DEC Alpha -mexplicit-relocs`  :option:`DEC Alpha -msmall-data`  :option:`DEC Alpha -mlarge-data` 
-  :option:`DEC Alpha -msmall-text`  :option:`DEC Alpha -mlarge-text` 
-  :option:`DEC Alpha -mmemory-latency`:samp:`={time}`
+  :option:`-mno-fp-regs`  :option:`-msoft-float` 
+  :option:`-mieee`  :option:`-mieee-with-inexact`  :option:`-mieee-conformant` 
+  :option:`-mfp-trap-mode`:samp:`={mode}`  :option:`-mfp-rounding-mode`:samp:`={mode}` 
+  :option:`-mtrap-precision`:samp:`={mode}`  :option:`-mbuild-constants` 
+  :option:`-mcpu`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mbwx`  :option:`-mmax`  :option:`-mfix`  :option:`-mcix` 
+  :option:`-mfloat-vax`  :option:`-mfloat-ieee` 
+  :option:`-mexplicit-relocs`  :option:`-msmall-data`  :option:`-mlarge-data` 
+  :option:`-msmall-text`  :option:`-mlarge-text` 
+  :option:`-mmemory-latency`:samp:`={time}`
 
   *eBPF Options*
 
-  :option:`eBPF -mbig-endian` :option:`eBPF -mlittle-endian` :option:`eBPF -mkernel`:samp:`={version}`
-  :option:`eBPF -mframe-limit`:samp:`={bytes}` :option:`eBPF -mxbpf` :option:`eBPF -mco-re` :option:`eBPF -mno-co-re`
-  :option:`eBPF -mjmpext` :option:`eBPF -mjmp32` :option:`eBPF -malu32` :option:`eBPF -mcpu`:samp:`={version}`
+  :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel`:samp:`={version}`
+  :option:`-mframe-limit`:samp:`={bytes}` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`
+  :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu`:samp:`={version}`
 
   *FR30 Options*
 
-  :option:`FR30 -msmall-model`  :option:`FR30 -mno-lsim`
+  :option:`-msmall-model`  :option:`-mno-lsim`
 
   *FT32 Options*
 
-  :option:`FT32 -msim`  :option:`FT32 -mlra`  :option:`FT32 -mnodiv`  :option:`FT32 -mft32b`  :option:`FT32 -mcompress`  :option:`FT32 -mnopm`
+  :option:`-msim`  :option:`-mlra`  :option:`-mnodiv`  :option:`-mft32b`  :option:`-mcompress`  :option:`-mnopm`
 
   *FRV Options*
 
-  :option:`FRV -mgpr-32`  :option:`FRV -mgpr-64`  :option:`FRV -mfpr-32`  :option:`FRV -mfpr-64` 
-  :option:`FRV -mhard-float`  :option:`FRV -msoft-float` 
-  :option:`FRV -malloc-cc`  :option:`FRV -mfixed-cc`  :option:`FRV -mdword`  :option:`FRV -mno-dword` 
-  :option:`FRV -mdouble`  :option:`FRV -mno-double` 
-  :option:`FRV -mmedia`  :option:`FRV -mno-media`  :option:`FRV -mmuladd`  :option:`FRV -mno-muladd` 
-  :option:`FRV -mfdpic`  :option:`FRV -minline-plt`  :option:`FRV -mgprel-ro`  :option:`FRV -multilib-library-pic` 
-  :option:`FRV -mlinked-fp`  :option:`FRV -mlong-calls`  :option:`FRV -malign-labels` 
-  :option:`FRV -mlibrary-pic`  :option:`FRV -macc-4`  :option:`FRV -macc-8` 
-  :option:`FRV -mpack`  :option:`FRV -mno-pack`  :option:`FRV -mno-eflags`  :option:`FRV -mcond-move`  :option:`FRV -mno-cond-move` 
-  :option:`FRV -moptimize-membar`  :option:`FRV -mno-optimize-membar` 
-  :option:`FRV -mscc`  :option:`FRV -mno-scc`  :option:`FRV -mcond-exec`  :option:`FRV -mno-cond-exec` 
-  :option:`FRV -mvliw-branch`  :option:`FRV -mno-vliw-branch` 
-  :option:`FRV -mmulti-cond-exec`  :option:`FRV -mno-multi-cond-exec`  :option:`FRV -mnested-cond-exec` 
-  :option:`FRV -mno-nested-cond-exec`  :option:`FRV -mtomcat-stats` 
-  :option:`FRV -mTLS`  :option:`FRV -mtls` 
-  :option:`FRV -mcpu`:samp:`={cpu}`
+  :option:`-mgpr-32`  :option:`-mgpr-64`  :option:`-mfpr-32`  :option:`-mfpr-64` 
+  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-malloc-cc`  :option:`-mfixed-cc`  :option:`-mdword`  :option:`-mno-dword` 
+  :option:`-mdouble`  :option:`-mno-double` 
+  :option:`-mmedia`  :option:`-mno-media`  :option:`-mmuladd`  :option:`-mno-muladd` 
+  :option:`-mfdpic`  :option:`-minline-plt`  :option:`-mgprel-ro`  :option:`-multilib-library-pic` 
+  :option:`-mlinked-fp`  :option:`-mlong-calls`  :option:`-malign-labels` 
+  :option:`-mlibrary-pic`  :option:`-macc-4`  :option:`-macc-8` 
+  :option:`-mpack`  :option:`-mno-pack`  :option:`-mno-eflags`  :option:`-mcond-move`  :option:`-mno-cond-move` 
+  :option:`-moptimize-membar`  :option:`-mno-optimize-membar` 
+  :option:`-mscc`  :option:`-mno-scc`  :option:`-mcond-exec`  :option:`-mno-cond-exec` 
+  :option:`-mvliw-branch`  :option:`-mno-vliw-branch` 
+  :option:`-mmulti-cond-exec`  :option:`-mno-multi-cond-exec`  :option:`-mnested-cond-exec` 
+  :option:`-mno-nested-cond-exec`  :option:`-mtomcat-stats` 
+  :option:`-mTLS`  :option:`-mtls` 
+  :option:`-mcpu`:samp:`={cpu}`
 
   *GNU/Linux Options*
 
-  :option:`GNU/Linux -mglibc`  :option:`GNU/Linux -muclibc`  :option:`GNU/Linux -mmusl`  :option:`GNU/Linux -mbionic`  :option:`GNU/Linux -mandroid` 
-  :option:`GNU/Linux -tno-android-cc`  :option:`GNU/Linux -tno-android-ld`
+  :option:`-mglibc`  :option:`-muclibc`  :option:`-mmusl`  :option:`-mbionic`  :option:`-mandroid` 
+  :option:`-tno-android-cc`  :option:`-tno-android-ld`
 
   *H8/300 Options*
 
-  :option:`H8/300 -mrelax`  :option:`H8/300 -mh`  :option:`H8/300 -ms`  :option:`H8/300 -mn`  :option:`H8/300 -mexr`  :option:`H8/300 -mno-exr`  :option:`H8/300 -mint32`  :option:`H8/300 -malign-300`
+  :option:`-mrelax`  :option:`-mh`  :option:`-ms`  :option:`-mn`  :option:`-mexr`  :option:`-mno-exr`  :option:`-mint32`  :option:`-malign-300`
 
   *HPPA Options*
 
-  :option:`HPPA -march`:samp:`={architecture-type}` 
-  :option:`HPPA -mcaller-copies`  :option:`HPPA -mdisable-fpregs`  :option:`HPPA -mdisable-indexing` 
-  :option:`HPPA -mfast-indirect-calls`  :option:`HPPA -mgas`  :option:`HPPA -mgnu-ld`   :option:`HPPA -mhp-ld` 
-  :option:`HPPA -mfixed-range`:samp:`={register-range}` 
-  :option:`HPPA -mjump-in-delay`  :option:`HPPA -mlinker-opt`  :option:`HPPA -mlong-calls` 
-  :option:`HPPA -mlong-load-store`  :option:`HPPA -mno-disable-fpregs` 
-  :option:`HPPA -mno-disable-indexing`  :option:`HPPA -mno-fast-indirect-calls`  :option:`HPPA -mno-gas` 
-  :option:`HPPA -mno-jump-in-delay`  :option:`HPPA -mno-long-load-store` 
-  :option:`HPPA -mno-portable-runtime`  :option:`HPPA -mno-soft-float` 
-  :option:`HPPA -mno-space-regs`  :option:`HPPA -msoft-float`  :option:`HPPA -mpa-risc-1-0` 
-  :option:`HPPA -mpa-risc-1-1`  :option:`HPPA -mpa-risc-2-0`  :option:`HPPA -mportable-runtime` 
-  :option:`HPPA -mschedule`:samp:`={cpu-type}`  :option:`HPPA -mspace-regs`  :option:`HPPA -msio`  :option:`HPPA -mwsio` 
-  :option:`HPPA -munix`:samp:`={unix-std}`  :option:`HPPA -nolibdld`  :option:`HPPA -static`  :option:`HPPA -threads`
+  :option:`-march`:samp:`={architecture-type}` 
+  :option:`-mcaller-copies`  :option:`-mdisable-fpregs`  :option:`-mdisable-indexing` 
+  :option:`-mfast-indirect-calls`  :option:`-mgas`  :option:`-mgnu-ld`   :option:`-mhp-ld` 
+  :option:`-mfixed-range`:samp:`={register-range}` 
+  :option:`-mjump-in-delay`  :option:`-mlinker-opt`  :option:`-mlong-calls` 
+  :option:`-mlong-load-store`  :option:`-mno-disable-fpregs` 
+  :option:`-mno-disable-indexing`  :option:`-mno-fast-indirect-calls`  :option:`-mno-gas` 
+  :option:`-mno-jump-in-delay`  :option:`-mno-long-load-store` 
+  :option:`-mno-portable-runtime`  :option:`-mno-soft-float` 
+  :option:`-mno-space-regs`  :option:`-msoft-float`  :option:`-mpa-risc-1-0` 
+  :option:`-mpa-risc-1-1`  :option:`-mpa-risc-2-0`  :option:`-mportable-runtime` 
+  :option:`-mschedule`:samp:`={cpu-type}`  :option:`-mspace-regs`  :option:`-msio`  :option:`-mwsio` 
+  :option:`-munix`:samp:`={unix-std}`  :option:`-nolibdld`  :option:`-static`  :option:`-threads`
 
   *IA-64 Options*
 
-  :option:`IA-64 -mbig-endian`  :option:`IA-64 -mlittle-endian`  :option:`IA-64 -mgnu-as`  :option:`IA-64 -mgnu-ld`  :option:`IA-64 -mno-pic` 
-  :option:`IA-64 -mvolatile-asm-stop`  :option:`IA-64 -mregister-names`  :option:`IA-64 -msdata`  :option:`IA-64 -mno-sdata` 
-  :option:`IA-64 -mconstant-gp`  :option:`IA-64 -mauto-pic`  :option:`IA-64 -mfused-madd` 
-  :option:`IA-64 -minline-float-divide-min-latency` 
-  :option:`IA-64 -minline-float-divide-max-throughput` 
-  :option:`IA-64 -mno-inline-float-divide` 
-  :option:`IA-64 -minline-int-divide-min-latency` 
-  :option:`IA-64 -minline-int-divide-max-throughput`  
-  :option:`IA-64 -mno-inline-int-divide` 
-  :option:`IA-64 -minline-sqrt-min-latency`  :option:`IA-64 -minline-sqrt-max-throughput` 
-  :option:`IA-64 -mno-inline-sqrt` 
-  :option:`IA-64 -mdwarf2-asm`  :option:`IA-64 -mearly-stop-bits` 
-  :option:`IA-64 -mfixed-range`:samp:`={register-range}`  :option:`IA-64 -mtls-size`:samp:`={tls-size}` 
-  :option:`IA-64 -mtune`:samp:`={cpu-type}`  :option:`IA-64 -milp32`  :option:`IA-64 -mlp64` 
-  :option:`IA-64 -msched-br-data-spec`  :option:`IA-64 -msched-ar-data-spec`  :option:`IA-64 -msched-control-spec` 
-  :option:`IA-64 -msched-br-in-data-spec`  :option:`IA-64 -msched-ar-in-data-spec`  :option:`IA-64 -msched-in-control-spec` 
-  :option:`IA-64 -msched-spec-ldc`  :option:`IA-64 -msched-spec-control-ldc` 
-  :option:`IA-64 -msched-prefer-non-data-spec-insns`  :option:`IA-64 -msched-prefer-non-control-spec-insns` 
-  :option:`IA-64 -msched-stop-bits-after-every-cycle`  :option:`IA-64 -msched-count-spec-in-critical-path` 
-  :option:`IA-64 -msel-sched-dont-check-control-spec`  :option:`IA-64 -msched-fp-mem-deps-zero-cost` 
-  :option:`IA-64 -msched-max-memory-insns-hard-limit`  :option:`IA-64 -msched-max-memory-insns`:samp:`={max-insns}`
+  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mgnu-as`  :option:`-mgnu-ld`  :option:`-mno-pic` 
+  :option:`-mvolatile-asm-stop`  :option:`-mregister-names`  :option:`-msdata`  :option:`-mno-sdata` 
+  :option:`-mconstant-gp`  :option:`-mauto-pic`  :option:`-mfused-madd` 
+  :option:`-minline-float-divide-min-latency` 
+  :option:`-minline-float-divide-max-throughput` 
+  :option:`-mno-inline-float-divide` 
+  :option:`-minline-int-divide-min-latency` 
+  :option:`-minline-int-divide-max-throughput`  
+  :option:`-mno-inline-int-divide` 
+  :option:`-minline-sqrt-min-latency`  :option:`-minline-sqrt-max-throughput` 
+  :option:`-mno-inline-sqrt` 
+  :option:`-mdwarf2-asm`  :option:`-mearly-stop-bits` 
+  :option:`-mfixed-range`:samp:`={register-range}`  :option:`-mtls-size`:samp:`={tls-size}` 
+  :option:`-mtune`:samp:`={cpu-type}`  :option:`-milp32`  :option:`-mlp64` 
+  :option:`-msched-br-data-spec`  :option:`-msched-ar-data-spec`  :option:`-msched-control-spec` 
+  :option:`-msched-br-in-data-spec`  :option:`-msched-ar-in-data-spec`  :option:`-msched-in-control-spec` 
+  :option:`-msched-spec-ldc`  :option:`-msched-spec-control-ldc` 
+  :option:`-msched-prefer-non-data-spec-insns`  :option:`-msched-prefer-non-control-spec-insns` 
+  :option:`-msched-stop-bits-after-every-cycle`  :option:`-msched-count-spec-in-critical-path` 
+  :option:`-msel-sched-dont-check-control-spec`  :option:`-msched-fp-mem-deps-zero-cost` 
+  :option:`-msched-max-memory-insns-hard-limit`  :option:`-msched-max-memory-insns`:samp:`={max-insns}`
 
   *LM32 Options*
 
-  :option:`LM32 -mbarrel-shift-enabled`  :option:`LM32 -mdivide-enabled`  :option:`LM32 -mmultiply-enabled` 
-  :option:`LM32 -msign-extend-enabled`  :option:`LM32 -muser-enabled`
+  :option:`-mbarrel-shift-enabled`  :option:`-mdivide-enabled`  :option:`-mmultiply-enabled` 
+  :option:`-msign-extend-enabled`  :option:`-muser-enabled`
 
   *M32R/D Options*
 
-  :option:`M32R/D -m32r2`  :option:`M32R/D -m32rx`  :option:`M32R/D -m32r` 
-  :option:`M32R/D -mdebug` 
-  :option:`M32R/D -malign-loops`  :option:`M32R/D -mno-align-loops` 
-  :option:`M32R/D -missue-rate`:samp:`={number}` 
-  :option:`M32R/D -mbranch-cost`:samp:`={number}` 
-  :option:`M32R/D -mmodel`:samp:`={code-size-model-type}` 
-  :option:`M32R/D -msdata`:samp:`={sdata-type}` 
-  :option:`M32R/D -mno-flush-func`  :option:`M32R/D -mflush-func`:samp:`={name}` 
-  :option:`M32R/D -mno-flush-trap`  :option:`M32R/D -mflush-trap`:samp:`={number}` 
-  :option:`M32R/D -G` :samp:`{num}`
+  :option:`-m32r2`  :option:`-m32rx`  :option:`-m32r` 
+  :option:`-mdebug` 
+  :option:`-malign-loops`  :option:`-mno-align-loops` 
+  :option:`-missue-rate`:samp:`={number}` 
+  :option:`-mbranch-cost`:samp:`={number}` 
+  :option:`-mmodel`:samp:`={code-size-model-type}` 
+  :option:`-msdata`:samp:`={sdata-type}` 
+  :option:`-mno-flush-func`  :option:`-mflush-func`:samp:`={name}` 
+  :option:`-mno-flush-trap`  :option:`-mflush-trap`:samp:`={number}` 
+  :option:`-G` :samp:`{num}`
 
   *M32C Options*
 
-  :option:`M32C -mcpu`:samp:`={cpu}`  :option:`M32C -msim`  :option:`M32C -memregs`:samp:`={number}`
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-msim`  :option:`-memregs`:samp:`={number}`
 
   *M680x0 Options*
 
-  :option:`M680x0 -march`:samp:`={arch}`  :option:`M680x0 -mcpu`:samp:`={cpu}`  :option:`M680x0 -mtune`:samp:`={tune}` 
-  :option:`M680x0 -m68000`  :option:`M680x0 -m68020`  :option:`M680x0 -m68020-40`  :option:`M680x0 -m68020-60`  :option:`M680x0 -m68030`  :option:`M680x0 -m68040` 
-  :option:`M680x0 -m68060`  :option:`M680x0 -mcpu32`  :option:`M680x0 -m5200`  :option:`M680x0 -m5206e`  :option:`M680x0 -m528x`  :option:`M680x0 -m5307`  :option:`M680x0 -m5407` 
-  :option:`M680x0 -mcfv4e`  :option:`M680x0 -mbitfield`  :option:`M680x0 -mno-bitfield`  :option:`M680x0 -mc68000`  :option:`M680x0 -mc68020` 
-  :option:`M680x0 -mnobitfield`  :option:`M680x0 -mrtd`  :option:`M680x0 -mno-rtd`  :option:`M680x0 -mdiv`  :option:`M680x0 -mno-div`  :option:`M680x0 -mshort` 
-  :option:`M680x0 -mno-short`  :option:`M680x0 -mhard-float`  :option:`M680x0 -m68881`  :option:`M680x0 -msoft-float`  :option:`M680x0 -mpcrel` 
-  :option:`M680x0 -malign-int`  :option:`M680x0 -mstrict-align`  :option:`M680x0 -msep-data`  :option:`M680x0 -mno-sep-data` 
-  :option:`M680x0 -mshared-library-id`:samp:`=n`  :option:`M680x0 -mid-shared-library`  :option:`M680x0 -mno-id-shared-library` 
-  :option:`M680x0 -mxgot`  :option:`M680x0 -mno-xgot`  :option:`M680x0 -mlong-jump-table-offsets`
+  :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}`  :option:`-mtune`:samp:`={tune}` 
+  :option:`-m68000`  :option:`-m68020`  :option:`-m68020-40`  :option:`-m68020-60`  :option:`-m68030`  :option:`-m68040` 
+  :option:`-m68060`  :option:`-mcpu32`  :option:`-m5200`  :option:`-m5206e`  :option:`-m528x`  :option:`-m5307`  :option:`-m5407` 
+  :option:`-mcfv4e`  :option:`-mbitfield`  :option:`-mno-bitfield`  :option:`-mc68000`  :option:`-mc68020` 
+  :option:`-mnobitfield`  :option:`-mrtd`  :option:`-mno-rtd`  :option:`-mdiv`  :option:`-mno-div`  :option:`-mshort` 
+  :option:`-mno-short`  :option:`-mhard-float`  :option:`-m68881`  :option:`-msoft-float`  :option:`-mpcrel` 
+  :option:`-malign-int`  :option:`-mstrict-align`  :option:`-msep-data`  :option:`-mno-sep-data` 
+  :option:`-mshared-library-id`:samp:`=n`  :option:`-mid-shared-library`  :option:`-mno-id-shared-library` 
+  :option:`-mxgot`  :option:`-mno-xgot`  :option:`-mlong-jump-table-offsets`
 
   *MCore Options*
 
-  :option:`MCore -mhardlit`  :option:`MCore -mno-hardlit`  :option:`MCore -mdiv`  :option:`MCore -mno-div`  :option:`MCore -mrelax-immediates` 
-  :option:`MCore -mno-relax-immediates`  :option:`MCore -mwide-bitfields`  :option:`MCore -mno-wide-bitfields` 
-  :option:`MCore -m4byte-functions`  :option:`MCore -mno-4byte-functions`  :option:`MCore -mcallgraph-data` 
-  :option:`MCore -mno-callgraph-data`  :option:`MCore -mslow-bytes`  :option:`MCore -mno-slow-bytes`  :option:`MCore -mno-lsim` 
-  :option:`MCore -mlittle-endian`  :option:`MCore -mbig-endian`  :option:`MCore -m210`  :option:`MCore -m340`  :option:`MCore -mstack-increment`
+  :option:`-mhardlit`  :option:`-mno-hardlit`  :option:`-mdiv`  :option:`-mno-div`  :option:`-mrelax-immediates` 
+  :option:`-mno-relax-immediates`  :option:`-mwide-bitfields`  :option:`-mno-wide-bitfields` 
+  :option:`-m4byte-functions`  :option:`-mno-4byte-functions`  :option:`-mcallgraph-data` 
+  :option:`-mno-callgraph-data`  :option:`-mslow-bytes`  :option:`-mno-slow-bytes`  :option:`-mno-lsim` 
+  :option:`-mlittle-endian`  :option:`-mbig-endian`  :option:`-m210`  :option:`-m340`  :option:`-mstack-increment`
 
   *MeP Options*
 
-  :option:`MeP -mabsdiff`  :option:`MeP -mall-opts`  :option:`MeP -maverage`  :option:`MeP -mbased`:samp:`={n}`  :option:`MeP -mbitops` 
-  :option:`MeP -mc`:samp:`={n}`  :option:`MeP -mclip`  :option:`MeP -mconfig`:samp:`={name}`  :option:`MeP -mcop`  :option:`MeP -mcop32`  :option:`MeP -mcop64`  :option:`MeP -mivc2` 
-  :option:`MeP -mdc`  :option:`MeP -mdiv`  :option:`MeP -meb`  :option:`MeP -mel`  :option:`MeP -mio-volatile`  :option:`MeP -ml`  :option:`MeP -mleadz`  :option:`MeP -mm`  :option:`MeP -mminmax` 
-  :option:`MeP -mmult`  :option:`MeP -mno-opts`  :option:`MeP -mrepeat`  :option:`MeP -ms`  :option:`MeP -msatur`  :option:`MeP -msdram`  :option:`MeP -msim`  :option:`MeP -msimnovec`  :option:`MeP -mtf` 
-  :option:`MeP -mtiny`:samp:`={n}`
+  :option:`-mabsdiff`  :option:`-mall-opts`  :option:`-maverage`  :option:`-mbased`:samp:`={n}`  :option:`-mbitops` 
+  :option:`-mc`:samp:`={n}`  :option:`-mclip`  :option:`-mconfig`:samp:`={name}`  :option:`-mcop`  :option:`-mcop32`  :option:`-mcop64`  :option:`-mivc2` 
+  :option:`-mdc`  :option:`-mdiv`  :option:`-meb`  :option:`-mel`  :option:`-mio-volatile`  :option:`-ml`  :option:`-mleadz`  :option:`-mm`  :option:`-mminmax` 
+  :option:`-mmult`  :option:`-mno-opts`  :option:`-mrepeat`  :option:`-ms`  :option:`-msatur`  :option:`-msdram`  :option:`-msim`  :option:`-msimnovec`  :option:`-mtf` 
+  :option:`-mtiny`:samp:`={n}`
 
   *MicroBlaze Options*
 
-  :option:`MicroBlaze -msoft-float`  :option:`MicroBlaze -mhard-float`  :option:`MicroBlaze -msmall-divides`  :option:`MicroBlaze -mcpu`:samp:`={cpu}` 
-  :option:`MicroBlaze -mmemcpy`  :option:`MicroBlaze -mxl-soft-mul`  :option:`MicroBlaze -mxl-soft-div`  :option:`MicroBlaze -mxl-barrel-shift` 
-  :option:`MicroBlaze -mxl-pattern-compare`  :option:`MicroBlaze -mxl-stack-check`  :option:`MicroBlaze -mxl-gp-opt`  :option:`MicroBlaze -mno-clearbss` 
-  :option:`MicroBlaze -mxl-multiply-high`  :option:`MicroBlaze -mxl-float-convert`  :option:`MicroBlaze -mxl-float-sqrt` 
-  :option:`MicroBlaze -mbig-endian`  :option:`MicroBlaze -mlittle-endian`  :option:`MicroBlaze -mxl-reorder`  :option:`MicroBlaze -mxl-mode-`:samp:`{app-model}` 
-  :option:`MicroBlaze -mpic-data-is-text-relative`
+  :option:`-msoft-float`  :option:`-mhard-float`  :option:`-msmall-divides`  :option:`-mcpu`:samp:`={cpu}` 
+  :option:`-mmemcpy`  :option:`-mxl-soft-mul`  :option:`-mxl-soft-div`  :option:`-mxl-barrel-shift` 
+  :option:`-mxl-pattern-compare`  :option:`-mxl-stack-check`  :option:`-mxl-gp-opt`  :option:`-mno-clearbss` 
+  :option:`-mxl-multiply-high`  :option:`-mxl-float-convert`  :option:`-mxl-float-sqrt` 
+  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mxl-reorder`  :option:`-mxl-mode-`:samp:`{app-model}` 
+  :option:`-mpic-data-is-text-relative`
 
   *MIPS Options*
 
-  :option:`MIPS -EL`  :option:`MIPS -EB`  :option:`MIPS -march`:samp:`={arch}`  :option:`MIPS -mtune`:samp:`={arch}` 
-  :option:`MIPS -mips1`  :option:`MIPS -mips2`  :option:`MIPS -mips3`  :option:`MIPS -mips4`  :option:`MIPS -mips32`  :option:`MIPS -mips32r2`  :option:`MIPS -mips32r3`  :option:`MIPS -mips32r5` 
-  :option:`MIPS -mips32r6`  :option:`MIPS -mips64`  :option:`MIPS -mips64r2`  :option:`MIPS -mips64r3`  :option:`MIPS -mips64r5`  :option:`MIPS -mips64r6` 
-  :option:`MIPS -mips16`  :option:`MIPS -mno-mips16`  :option:`MIPS -mflip-mips16` 
-  :option:`MIPS -minterlink-compressed`  :option:`MIPS -mno-interlink-compressed` 
-  :option:`MIPS -minterlink-mips16`  :option:`MIPS -mno-interlink-mips16` 
-  :option:`MIPS -mabi`:samp:`={abi}`  :option:`MIPS -mabicalls`  :option:`MIPS -mno-abicalls` 
-  :option:`MIPS -mshared`  :option:`MIPS -mno-shared`  :option:`MIPS -mplt`  :option:`MIPS -mno-plt`  :option:`MIPS -mxgot`  :option:`MIPS -mno-xgot` 
-  :option:`MIPS -mgp32`  :option:`MIPS -mgp64`  :option:`MIPS -mfp32`  :option:`MIPS -mfpxx`  :option:`MIPS -mfp64`  :option:`MIPS -mhard-float`  :option:`MIPS -msoft-float` 
-  :option:`MIPS -mno-float`  :option:`MIPS -msingle-float`  :option:`MIPS -mdouble-float` 
-  :option:`MIPS -modd-spreg`  :option:`MIPS -mno-odd-spreg` 
-  :option:`MIPS -mabs`:samp:`={mode}`  :option:`MIPS -mnan`:samp:`={encoding}` 
-  :option:`MIPS -mdsp`  :option:`MIPS -mno-dsp`  :option:`MIPS -mdspr2`  :option:`MIPS -mno-dspr2` 
-  :option:`MIPS -mmcu`  :option:`MIPS -mmno-mcu` 
-  :option:`MIPS -meva`  :option:`MIPS -mno-eva` 
-  :option:`MIPS -mvirt`  :option:`MIPS -mno-virt` 
-  :option:`MIPS -mxpa`  :option:`MIPS -mno-xpa` 
-  :option:`MIPS -mcrc`  :option:`MIPS -mno-crc` 
-  :option:`MIPS -mginv`  :option:`MIPS -mno-ginv` 
-  :option:`MIPS -mmicromips`  :option:`MIPS -mno-micromips` 
-  :option:`MIPS -mmsa`  :option:`MIPS -mno-msa` 
-  :option:`MIPS -mloongson-mmi`  :option:`MIPS -mno-loongson-mmi` 
-  :option:`MIPS -mloongson-ext`  :option:`MIPS -mno-loongson-ext` 
-  :option:`MIPS -mloongson-ext2`  :option:`MIPS -mno-loongson-ext2` 
-  :option:`MIPS -mfpu`:samp:`={fpu-type}` 
-  :option:`MIPS -msmartmips`  :option:`MIPS -mno-smartmips` 
-  :option:`MIPS -mpaired-single`  :option:`MIPS -mno-paired-single`  :option:`MIPS -mdmx`  :option:`MIPS -mno-mdmx` 
-  :option:`MIPS -mips3d`  :option:`MIPS -mno-mips3d`  :option:`MIPS -mmt`  :option:`MIPS -mno-mt`  :option:`MIPS -mllsc`  :option:`MIPS -mno-llsc` 
-  :option:`MIPS -mlong64`  :option:`MIPS -mlong32`  :option:`MIPS -msym32`  :option:`MIPS -mno-sym32` 
-  :option:`MIPS -G`:samp:`{num}`  :option:`MIPS -mlocal-sdata`  :option:`MIPS -mno-local-sdata` 
-  :option:`MIPS -mextern-sdata`  :option:`MIPS -mno-extern-sdata`  :option:`MIPS -mgpopt`  :option:`MIPS -mno-gopt` 
-  :option:`MIPS -membedded-data`  :option:`MIPS -mno-embedded-data` 
-  :option:`MIPS -muninit-const-in-rodata`  :option:`MIPS -mno-uninit-const-in-rodata` 
-  :option:`MIPS -mcode-readable`:samp:`={setting}` 
-  :option:`MIPS -msplit-addresses`  :option:`MIPS -mno-split-addresses` 
-  :option:`MIPS -mexplicit-relocs`  :option:`MIPS -mno-explicit-relocs` 
-  :option:`MIPS -mcheck-zero-division`  :option:`MIPS -mno-check-zero-division` 
-  :option:`MIPS -mdivide-traps`  :option:`MIPS -mdivide-breaks` 
-  :option:`MIPS -mload-store-pairs`  :option:`MIPS -mno-load-store-pairs` 
-  :option:`MIPS -mmemcpy`  :option:`MIPS -mno-memcpy`  :option:`MIPS -mlong-calls`  :option:`MIPS -mno-long-calls` 
-  :option:`MIPS -mmad`  :option:`MIPS -mno-mad`  :option:`MIPS -mimadd`  :option:`MIPS -mno-imadd`  :option:`MIPS -mfused-madd`  :option:`MIPS -mno-fused-madd`  :option:`MIPS -nocpp` 
-  :option:`MIPS -mfix-24k`  :option:`MIPS -mno-fix-24k` 
-  :option:`MIPS -mfix-r4000`  :option:`MIPS -mno-fix-r4000`  :option:`MIPS -mfix-r4400`  :option:`MIPS -mno-fix-r4400` 
-  :option:`MIPS -mfix-r5900`  :option:`MIPS -mno-fix-r5900` 
-  :option:`MIPS -mfix-r10000`  :option:`MIPS -mno-fix-r10000`  :option:`MIPS -mfix-rm7000`  :option:`MIPS -mno-fix-rm7000` 
-  :option:`MIPS -mfix-vr4120`  :option:`MIPS -mno-fix-vr4120` 
-  :option:`MIPS -mfix-vr4130`  :option:`MIPS -mno-fix-vr4130`  :option:`MIPS -mfix-sb1`  :option:`MIPS -mno-fix-sb1` 
-  :option:`MIPS -mflush-func`:samp:`={func}`  :option:`MIPS -mno-flush-func` 
-  :option:`MIPS -mbranch-cost`:samp:`={num}`  :option:`MIPS -mbranch-likely`  :option:`MIPS -mno-branch-likely` 
-  :option:`MIPS -mcompact-branches`:samp:`={policy}` 
-  :option:`MIPS -mfp-exceptions`  :option:`MIPS -mno-fp-exceptions` 
-  :option:`MIPS -mvr4130-align`  :option:`MIPS -mno-vr4130-align`  :option:`MIPS -msynci`  :option:`MIPS -mno-synci` 
-  :option:`MIPS -mlxc1-sxc1`  :option:`MIPS -mno-lxc1-sxc1`  :option:`MIPS -mmadd4`  :option:`MIPS -mno-madd4` 
-  :option:`MIPS -mrelax-pic-calls`  :option:`MIPS -mno-relax-pic-calls`  :option:`MIPS -mmcount-ra-address` 
-  :option:`MIPS -mframe-header-opt`  :option:`MIPS -mno-frame-header-opt`
+  :option:`-EL`  :option:`-EB`  :option:`-march`:samp:`={arch}`  :option:`-mtune`:samp:`={arch}` 
+  :option:`-mips1`  :option:`-mips2`  :option:`-mips3`  :option:`-mips4`  :option:`-mips32`  :option:`-mips32r2`  :option:`-mips32r3`  :option:`-mips32r5` 
+  :option:`-mips32r6`  :option:`-mips64`  :option:`-mips64r2`  :option:`-mips64r3`  :option:`-mips64r5`  :option:`-mips64r6` 
+  :option:`-mips16`  :option:`-mno-mips16`  :option:`-mflip-mips16` 
+  :option:`-minterlink-compressed`  :option:`-mno-interlink-compressed` 
+  :option:`-minterlink-mips16`  :option:`-mno-interlink-mips16` 
+  :option:`-mabi`:samp:`={abi}`  :option:`-mabicalls`  :option:`-mno-abicalls` 
+  :option:`-mshared`  :option:`-mno-shared`  :option:`-mplt`  :option:`-mno-plt`  :option:`-mxgot`  :option:`-mno-xgot` 
+  :option:`-mgp32`  :option:`-mgp64`  :option:`-mfp32`  :option:`-mfpxx`  :option:`-mfp64`  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-mno-float`  :option:`-msingle-float`  :option:`-mdouble-float` 
+  :option:`-modd-spreg`  :option:`-mno-odd-spreg` 
+  :option:`-mabs`:samp:`={mode}`  :option:`-mnan`:samp:`={encoding}` 
+  :option:`-mdsp`  :option:`-mno-dsp`  :option:`-mdspr2`  :option:`-mno-dspr2` 
+  :option:`-mmcu`  :option:`-mmno-mcu` 
+  :option:`-meva`  :option:`-mno-eva` 
+  :option:`-mvirt`  :option:`-mno-virt` 
+  :option:`-mxpa`  :option:`-mno-xpa` 
+  :option:`-mcrc`  :option:`-mno-crc` 
+  :option:`-mginv`  :option:`-mno-ginv` 
+  :option:`-mmicromips`  :option:`-mno-micromips` 
+  :option:`-mmsa`  :option:`-mno-msa` 
+  :option:`-mloongson-mmi`  :option:`-mno-loongson-mmi` 
+  :option:`-mloongson-ext`  :option:`-mno-loongson-ext` 
+  :option:`-mloongson-ext2`  :option:`-mno-loongson-ext2` 
+  :option:`-mfpu`:samp:`={fpu-type}` 
+  :option:`-msmartmips`  :option:`-mno-smartmips` 
+  :option:`-mpaired-single`  :option:`-mno-paired-single`  :option:`-mdmx`  :option:`-mno-mdmx` 
+  :option:`-mips3d`  :option:`-mno-mips3d`  :option:`-mmt`  :option:`-mno-mt`  :option:`-mllsc`  :option:`-mno-llsc` 
+  :option:`-mlong64`  :option:`-mlong32`  :option:`-msym32`  :option:`-mno-sym32` 
+  :option:`-G`:samp:`{num}`  :option:`-mlocal-sdata`  :option:`-mno-local-sdata` 
+  :option:`-mextern-sdata`  :option:`-mno-extern-sdata`  :option:`-mgpopt`  :option:`-mno-gopt` 
+  :option:`-membedded-data`  :option:`-mno-embedded-data` 
+  :option:`-muninit-const-in-rodata`  :option:`-mno-uninit-const-in-rodata` 
+  :option:`-mcode-readable`:samp:`={setting}` 
+  :option:`-msplit-addresses`  :option:`-mno-split-addresses` 
+  :option:`-mexplicit-relocs`  :option:`-mno-explicit-relocs` 
+  :option:`-mcheck-zero-division`  :option:`-mno-check-zero-division` 
+  :option:`-mdivide-traps`  :option:`-mdivide-breaks` 
+  :option:`-mload-store-pairs`  :option:`-mno-load-store-pairs` 
+  :option:`-mmemcpy`  :option:`-mno-memcpy`  :option:`-mlong-calls`  :option:`-mno-long-calls` 
+  :option:`-mmad`  :option:`-mno-mad`  :option:`-mimadd`  :option:`-mno-imadd`  :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-nocpp` 
+  :option:`-mfix-24k`  :option:`-mno-fix-24k` 
+  :option:`-mfix-r4000`  :option:`-mno-fix-r4000`  :option:`-mfix-r4400`  :option:`-mno-fix-r4400` 
+  :option:`-mfix-r5900`  :option:`-mno-fix-r5900` 
+  :option:`-mfix-r10000`  :option:`-mno-fix-r10000`  :option:`-mfix-rm7000`  :option:`-mno-fix-rm7000` 
+  :option:`-mfix-vr4120`  :option:`-mno-fix-vr4120` 
+  :option:`-mfix-vr4130`  :option:`-mno-fix-vr4130`  :option:`-mfix-sb1`  :option:`-mno-fix-sb1` 
+  :option:`-mflush-func`:samp:`={func}`  :option:`-mno-flush-func` 
+  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mbranch-likely`  :option:`-mno-branch-likely` 
+  :option:`-mcompact-branches`:samp:`={policy}` 
+  :option:`-mfp-exceptions`  :option:`-mno-fp-exceptions` 
+  :option:`-mvr4130-align`  :option:`-mno-vr4130-align`  :option:`-msynci`  :option:`-mno-synci` 
+  :option:`-mlxc1-sxc1`  :option:`-mno-lxc1-sxc1`  :option:`-mmadd4`  :option:`-mno-madd4` 
+  :option:`-mrelax-pic-calls`  :option:`-mno-relax-pic-calls`  :option:`-mmcount-ra-address` 
+  :option:`-mframe-header-opt`  :option:`-mno-frame-header-opt`
 
   *MMIX Options*
 
-  :option:`MMIX -mlibfuncs`  :option:`MMIX -mno-libfuncs`  :option:`MMIX -mepsilon`  :option:`MMIX -mno-epsilon`  :option:`MMIX -mabi`:samp:`=gnu` 
-  :option:`MMIX -mabi`:samp:`=mmixware`  :option:`MMIX -mzero-extend`  :option:`MMIX -mknuthdiv`  :option:`MMIX -mtoplevel-symbols` 
-  :option:`MMIX -melf`  :option:`MMIX -mbranch-predict`  :option:`MMIX -mno-branch-predict`  :option:`MMIX -mbase-addresses` 
-  :option:`MMIX -mno-base-addresses`  :option:`MMIX -msingle-exit`  :option:`MMIX -mno-single-exit`
+  :option:`-mlibfuncs`  :option:`-mno-libfuncs`  :option:`-mepsilon`  :option:`-mno-epsilon`  :option:`-mabi`:samp:`=gnu` 
+  :option:`-mabi`:samp:`=mmixware`  :option:`-mzero-extend`  :option:`-mknuthdiv`  :option:`-mtoplevel-symbols` 
+  :option:`-melf`  :option:`-mbranch-predict`  :option:`-mno-branch-predict`  :option:`-mbase-addresses` 
+  :option:`-mno-base-addresses`  :option:`-msingle-exit`  :option:`-mno-single-exit`
 
   *MN10300 Options*
 
-  :option:`MN10300 -mmult-bug`  :option:`MN10300 -mno-mult-bug` 
-  :option:`MN10300 -mno-am33`  :option:`MN10300 -mam33`  :option:`MN10300 -mam33-2`  :option:`MN10300 -mam34` 
-  :option:`MN10300 -mtune`:samp:`={cpu-type}` 
-  :option:`MN10300 -mreturn-pointer-on-d0` 
-  :option:`MN10300 -mno-crt0`  :option:`MN10300 -mrelax`  :option:`MN10300 -mliw`  :option:`MN10300 -msetlb`
+  :option:`-mmult-bug`  :option:`-mno-mult-bug` 
+  :option:`-mno-am33`  :option:`-mam33`  :option:`-mam33-2`  :option:`-mam34` 
+  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mreturn-pointer-on-d0` 
+  :option:`-mno-crt0`  :option:`-mrelax`  :option:`-mliw`  :option:`-msetlb`
 
   *Moxie Options*
 
-  :option:`Moxie -meb`  :option:`Moxie -mel`  :option:`Moxie -mmul.x`  :option:`Moxie -mno-crt0`
+  :option:`-meb`  :option:`-mel`  :option:`-mmul.x`  :option:`-mno-crt0`
 
   *MSP430 Options*
 
-  :option:`MSP430 -msim` :option:`MSP430 -masm-hex` :option:`MSP430 -mmcu` :option:`MSP430 -mcpu` :option:`MSP430 -mlarge` :option:`MSP430 -msmall` :option:`MSP430 -mrelax` 
-  :option:`MSP430 -mwarn-mcu` 
-  :option:`MSP430 -mcode-region` :option:`MSP430 -mdata-region` 
-  :option:`MSP430 -msilicon-errata` :option:`MSP430 -msilicon-errata-warn` 
-  :option:`MSP430 -mhwmult` :option:`MSP430 -minrt` :option:`MSP430 -mtiny-printf` :option:`MSP430 -mmax-inline-shift`
+  :option:`-msim` :option:`-masm-hex` :option:`-mmcu` :option:`-mcpu` :option:`-mlarge` :option:`-msmall` :option:`-mrelax` 
+  :option:`-mwarn-mcu` 
+  :option:`-mcode-region` :option:`-mdata-region` 
+  :option:`-msilicon-errata` :option:`-msilicon-errata-warn` 
+  :option:`-mhwmult` :option:`-minrt` :option:`-mtiny-printf` :option:`-mmax-inline-shift`
 
   *NDS32 Options*
 
-  :option:`NDS32 -mbig-endian`  :option:`NDS32 -mlittle-endian` 
-  :option:`NDS32 -mreduced-regs`  :option:`NDS32 -mfull-regs` 
-  :option:`NDS32 -mcmov`  :option:`NDS32 -mno-cmov` 
-  :option:`NDS32 -mext-perf`  :option:`NDS32 -mno-ext-perf` 
-  :option:`NDS32 -mext-perf2`  :option:`NDS32 -mno-ext-perf2` 
-  :option:`NDS32 -mext-string`  :option:`NDS32 -mno-ext-string` 
-  :option:`NDS32 -mv3push`  :option:`NDS32 -mno-v3push` 
-  :option:`NDS32 -m16bit`  :option:`NDS32 -mno-16bit` 
-  :option:`NDS32 -misr-vector-size`:samp:`={num}` 
-  :option:`NDS32 -mcache-block-size`:samp:`={num}` 
-  :option:`NDS32 -march`:samp:`={arch}` 
-  :option:`NDS32 -mcmodel`:samp:`={code-model}` 
-  :option:`NDS32 -mctor-dtor`  :option:`NDS32 -mrelax`
+  :option:`-mbig-endian`  :option:`-mlittle-endian` 
+  :option:`-mreduced-regs`  :option:`-mfull-regs` 
+  :option:`-mcmov`  :option:`-mno-cmov` 
+  :option:`-mext-perf`  :option:`-mno-ext-perf` 
+  :option:`-mext-perf2`  :option:`-mno-ext-perf2` 
+  :option:`-mext-string`  :option:`-mno-ext-string` 
+  :option:`-mv3push`  :option:`-mno-v3push` 
+  :option:`-m16bit`  :option:`-mno-16bit` 
+  :option:`-misr-vector-size`:samp:`={num}` 
+  :option:`-mcache-block-size`:samp:`={num}` 
+  :option:`-march`:samp:`={arch}` 
+  :option:`-mcmodel`:samp:`={code-model}` 
+  :option:`-mctor-dtor`  :option:`-mrelax`
 
   *Nios II Options*
 
-  :option:`Nios II -G` :samp:`{num}`  :option:`Nios II -mgpopt`:samp:`={option}`  :option:`Nios II -mgpopt`  :option:`Nios II -mno-gpopt` 
-  :option:`Nios II -mgprel-sec`:samp:`={regexp}`  :option:`Nios II -mr0rel-sec`:samp:`={regexp}` 
-  :option:`Nios II -mel`  :option:`Nios II -meb` 
-  :option:`Nios II -mno-bypass-cache`  :option:`Nios II -mbypass-cache` 
-  :option:`Nios II -mno-cache-volatile`  :option:`Nios II -mcache-volatile` 
-  :option:`Nios II -mno-fast-sw-div`  :option:`Nios II -mfast-sw-div` 
-  :option:`Nios II -mhw-mul`  :option:`Nios II -mno-hw-mul`  :option:`Nios II -mhw-mulx` :option:`Nios II -mno-hw-mulx` :option:`Nios II -mno-hw-div` :option:`Nios II -mhw-div` 
-  :option:`Nios II -mcustom-`:samp:`{insn}`:samp:`={N}`  :option:`Nios II -mno-custom-`:samp:`{insn}` 
-  :option:`Nios II -mcustom-fpu-cfg`:samp:`={name}` 
-  :option:`Nios II -mhal`  :option:`Nios II -msmallc` :option:`Nios II -msys-crt0`:samp:`={name}`  option:`Nios II -msys-lib`:samp:`={name}` 
-  :option:`Nios II -march`:samp:`={arch}`  :option:`Nios II -mbmx`  :option:`Nios II -mno-bmx`  :option:`Nios II -mcdx`  :option:`Nios II -mno-cdx`
+  :option:`-G` :samp:`{num}`  :option:`-mgpopt`:samp:`={option}`  :option:`-mgpopt`  :option:`-mno-gpopt` 
+  :option:`-mgprel-sec`:samp:`={regexp}`  :option:`-mr0rel-sec`:samp:`={regexp}` 
+  :option:`-mel`  :option:`-meb` 
+  :option:`-mno-bypass-cache`  :option:`-mbypass-cache` 
+  :option:`-mno-cache-volatile`  :option:`-mcache-volatile` 
+  :option:`-mno-fast-sw-div`  :option:`-mfast-sw-div` 
+  :option:`-mhw-mul`  :option:`-mno-hw-mul`  :option:`-mhw-mulx` :option:`-mno-hw-mulx` :option:`-mno-hw-div` :option:`-mhw-div` 
+  :option:`-mcustom-`:samp:`{insn}`:samp:`={N}`  :option:`-mno-custom-`:samp:`{insn}` 
+  :option:`-mcustom-fpu-cfg`:samp:`={name}` 
+  :option:`-mhal`  :option:`-msmallc` :option:`-msys-crt0`:samp:`={name}`  option:`-msys-lib`:samp:`={name}` 
+  :option:`-march`:samp:`={arch}`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
 
   *Nvidia PTX Options*
 
-  :option:`Nvidia PTX -m64`  :option:`Nvidia PTX -mmainkernel`  :option:`Nvidia PTX -moptimize`
+  :option:`-m64`  :option:`-mmainkernel`  :option:`-moptimize`
 
   *OpenRISC Options*
 
-  :option:`OpenRISC -mboard`:samp:`={name}`  :option:`OpenRISC -mnewlib`  :option:`OpenRISC -mhard-mul`  :option:`OpenRISC -mhard-div` 
-  :option:`OpenRISC -msoft-mul`  :option:`OpenRISC -msoft-div` 
-  :option:`OpenRISC -msoft-float`  :option:`OpenRISC -mhard-float`  :option:`OpenRISC -mdouble-float` :option:`OpenRISC -munordered-float` 
-  :option:`OpenRISC -mcmov`  :option:`OpenRISC -mror`  :option:`OpenRISC -mrori`  :option:`OpenRISC -msext`  :option:`OpenRISC -msfimm`  :option:`OpenRISC -mshftimm` 
-  :option:`OpenRISC -mcmodel`:samp:`={code-model}`
+  :option:`-mboard`:samp:`={name}`  :option:`-mnewlib`  :option:`-mhard-mul`  :option:`-mhard-div` 
+  :option:`-msoft-mul`  :option:`-msoft-div` 
+  :option:`-msoft-float`  :option:`-mhard-float`  :option:`-mdouble-float` :option:`-munordered-float` 
+  :option:`-mcmov`  :option:`-mror`  :option:`-mrori`  :option:`-msext`  :option:`-msfimm`  :option:`-mshftimm` 
+  :option:`-mcmodel`:samp:`={code-model}`
 
   *PDP-11 Options*
 
-  :option:`PDP-11 -mfpu`  :option:`PDP-11 -msoft-float`  :option:`PDP-11 -mac0`  :option:`PDP-11 -mno-ac0`  :option:`PDP-11 -m40`  :option:`PDP-11 -m45`  :option:`PDP-11 -m10` 
-  :option:`PDP-11 -mint32`  :option:`PDP-11 -mno-int16`  :option:`PDP-11 -mint16`  :option:`PDP-11 -mno-int32` 
-  :option:`PDP-11 -msplit`  :option:`PDP-11 -munix-asm`  :option:`PDP-11 -mdec-asm`  :option:`PDP-11 -mgnu-asm`  :option:`PDP-11 -mlra`
+  :option:`-mfpu`  :option:`-msoft-float`  :option:`-mac0`  :option:`-mno-ac0`  :option:`-m40`  :option:`-m45`  :option:`-m10` 
+  :option:`-mint32`  :option:`-mno-int16`  :option:`-mint16`  :option:`-mno-int32` 
+  :option:`-msplit`  :option:`-munix-asm`  :option:`-mdec-asm`  :option:`-mgnu-asm`  :option:`-mlra`
 
   *picoChip Options*
 
-  :option:`picoChip -mae`:samp:`={ae_type}`  :option:`picoChip -mvliw-lookahead`:samp:`={N}` 
-  :option:`picoChip -msymbol-as-address`  :option:`picoChip -mno-inefficient-warnings`
+  :option:`-mae`:samp:`={ae_type}`  :option:`-mvliw-lookahead`:samp:`={N}` 
+  :option:`-msymbol-as-address`  :option:`-mno-inefficient-warnings`
 
   *PowerPC Options*
   See RS/6000 and PowerPC Options.
 
   *PRU Options*
 
-  :option:`PRU -mmcu`:samp:`={mcu}`  :option:`PRU -minrt`  :option:`PRU -mno-relax`  :option:`PRU -mloop` 
-  :option:`PRU -mabi`:samp:`={variant}` 
+  :option:`-mmcu`:samp:`={mcu}`  :option:`-minrt`  :option:`-mno-relax`  :option:`-mloop` 
+  :option:`-mabi`:samp:`={variant}` 
 
   *RISC-V Options*
 
-  :option:`RISC-V -mbranch-cost`:samp:`={N-instruction}` 
-  :option:`RISC-V -mplt`  :option:`RISC-V -mno-plt` 
-  :option:`RISC-V -mabi`:samp:`={ABI-string}` 
-  :option:`RISC-V -mfdiv`  :option:`RISC-V -mno-fdiv` 
-  :option:`RISC-V -mdiv`  :option:`RISC-V -mno-div` 
-  :option:`RISC-V -march`:samp:`={ISA-string}` 
-  :option:`RISC-V -mtune`:samp:`={processor-string}` 
-  :option:`RISC-V -mpreferred-stack-boundary`:samp:`={num}` 
-  :option:`RISC-V -msmall-data-limit`:samp:`={N-bytes}` 
-  :option:`RISC-V -msave-restore`  :option:`RISC-V -mno-save-restore` 
-  :option:`RISC-V -mshorten-memrefs`  :option:`RISC-V -mno-shorten-memrefs` 
-  :option:`RISC-V -mstrict-align`  :option:`RISC-V -mno-strict-align` 
-  :option:`RISC-V -mcmodel`:samp:`=medlow`  :option:`RISC-V -mcmodel`:samp:`=medany` 
-  :option:`RISC-V -mexplicit-relocs`  :option:`RISC-V -mno-explicit-relocs` 
-  :option:`RISC-V -mrelax`  :option:`RISC-V -mno-relax` 
-  :option:`RISC-V -mriscv-attribute`  :option:`RISC-V -mmo-riscv-attribute` 
-  :option:`RISC-V -malign-data`:samp:`={type}` 
-  :option:`RISC-V -mbig-endian`  :option:`RISC-V -mlittle-endian` 
-  :option:`RISC-V -mstack-protector-guard`:samp:`={guard}` :option:`RISC-V -mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`RISC-V -mstack-protector-guard-offset`:samp:`={offset}`
+  :option:`-mbranch-cost`:samp:`={N-instruction}` 
+  :option:`-mplt`  :option:`-mno-plt` 
+  :option:`-mabi`:samp:`={ABI-string}` 
+  :option:`-mfdiv`  :option:`-mno-fdiv` 
+  :option:`-mdiv`  :option:`-mno-div` 
+  :option:`-march`:samp:`={ISA-string}` 
+  :option:`-mtune`:samp:`={processor-string}` 
+  :option:`-mpreferred-stack-boundary`:samp:`={num}` 
+  :option:`-msmall-data-limit`:samp:`={N-bytes}` 
+  :option:`-msave-restore`  :option:`-mno-save-restore` 
+  :option:`-mshorten-memrefs`  :option:`-mno-shorten-memrefs` 
+  :option:`-mstrict-align`  :option:`-mno-strict-align` 
+  :option:`-mcmodel`:samp:`=medlow`  :option:`-mcmodel`:samp:`=medany` 
+  :option:`-mexplicit-relocs`  :option:`-mno-explicit-relocs` 
+  :option:`-mrelax`  :option:`-mno-relax` 
+  :option:`-mriscv-attribute`  :option:`-mmo-riscv-attribute` 
+  :option:`-malign-data`:samp:`={type}` 
+  :option:`-mbig-endian`  :option:`-mlittle-endian` 
+  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}`
 
   *RL78 Options*
 
-  :option:`RL78 -msim`  :option:`RL78 -mmul`:samp:`=none`  :option:`RL78 -mmul`:samp:`=g13`  :option:`RL78 -mmul`:samp:`=g14`  :option:`RL78 -mallregs` 
-  :option:`RL78 -mcpu`:samp:`=g10`  :option:`RL78 -mcpu`:samp:`=g13`  :option:`RL78 -mcpu`:samp:`=g14`  :option:`RL78 -mg10`  :option:`RL78 -mg13`  :option:`RL78 -mg14` 
-  :option:`RL78 -m64bit-doubles`  :option:`RL78 -m32bit-doubles`  :option:`RL78 -msave-mduc-in-interrupts`
+  :option:`-msim`  :option:`-mmul`:samp:`=none`  :option:`-mmul`:samp:`=g13`  :option:`-mmul`:samp:`=g14`  :option:`-mallregs` 
+  :option:`-mcpu`:samp:`=g10`  :option:`-mcpu`:samp:`=g13`  :option:`-mcpu`:samp:`=g14`  :option:`-mg10`  :option:`-mg13`  :option:`-mg14` 
+  :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-msave-mduc-in-interrupts`
 
   *RS/6000 and PowerPC Options*
 
-  :option:`RS/6000 and PowerPC -mcpu`:samp:`={cpu-type}` 
-  :option:`RS/6000 and PowerPC -mtune`:samp:`={cpu-type}` 
-  :option:`RS/6000 and PowerPC -mcmodel`:samp:`={code-model}` 
-  :option:`RS/6000 and PowerPC -mpowerpc64` 
-  :option:`RS/6000 and PowerPC -maltivec`  :option:`RS/6000 and PowerPC -mno-altivec` 
-  :option:`RS/6000 and PowerPC -mpowerpc-gpopt`  :option:`RS/6000 and PowerPC -mno-powerpc-gpopt` 
-  :option:`RS/6000 and PowerPC -mpowerpc-gfxopt`  :option:`RS/6000 and PowerPC -mno-powerpc-gfxopt` 
-  :option:`RS/6000 and PowerPC -mmfcrf`  :option:`RS/6000 and PowerPC -mno-mfcrf`  :option:`RS/6000 and PowerPC -mpopcntb`  :option:`RS/6000 and PowerPC -mno-popcntb`  :option:`RS/6000 and PowerPC -mpopcntd`  :option:`RS/6000 and PowerPC -mno-popcntd` 
-  :option:`RS/6000 and PowerPC -mfprnd`  :option:`RS/6000 and PowerPC -mno-fprnd` 
-  :option:`RS/6000 and PowerPC -mcmpb`  :option:`RS/6000 and PowerPC -mno-cmpb`  :option:`RS/6000 and PowerPC -mhard-dfp`  :option:`RS/6000 and PowerPC -mno-hard-dfp` 
-  :option:`RS/6000 and PowerPC -mfull-toc`   :option:`RS/6000 and PowerPC -mminimal-toc`  :option:`RS/6000 and PowerPC -mno-fp-in-toc`  :option:`RS/6000 and PowerPC -mno-sum-in-toc` 
-  :option:`RS/6000 and PowerPC -m64`  :option:`RS/6000 and PowerPC -m32`  :option:`RS/6000 and PowerPC -mxl-compat`  :option:`RS/6000 and PowerPC -mno-xl-compat`  :option:`RS/6000 and PowerPC -mpe` 
-  :option:`RS/6000 and PowerPC -malign-power`  :option:`RS/6000 and PowerPC -malign-natural` 
-  :option:`RS/6000 and PowerPC -msoft-float`  :option:`RS/6000 and PowerPC -mhard-float`  :option:`RS/6000 and PowerPC -mmultiple`  :option:`RS/6000 and PowerPC -mno-multiple` 
-  :option:`RS/6000 and PowerPC -mupdate`  :option:`RS/6000 and PowerPC -mno-update` 
-  :option:`RS/6000 and PowerPC -mavoid-indexed-addresses`  :option:`RS/6000 and PowerPC -mno-avoid-indexed-addresses` 
-  :option:`RS/6000 and PowerPC -mfused-madd`  :option:`RS/6000 and PowerPC -mno-fused-madd`  :option:`RS/6000 and PowerPC -mbit-align`  :option:`RS/6000 and PowerPC -mno-bit-align` 
-  :option:`RS/6000 and PowerPC -mstrict-align`  :option:`RS/6000 and PowerPC -mno-strict-align`  :option:`RS/6000 and PowerPC -mrelocatable` 
-  :option:`RS/6000 and PowerPC -mno-relocatable`  :option:`RS/6000 and PowerPC -mrelocatable-lib`  :option:`RS/6000 and PowerPC -mno-relocatable-lib` 
-  :option:`RS/6000 and PowerPC -mtoc`  :option:`RS/6000 and PowerPC -mno-toc`  :option:`RS/6000 and PowerPC -mlittle`  :option:`RS/6000 and PowerPC -mlittle-endian`  :option:`RS/6000 and PowerPC -mbig`  :option:`RS/6000 and PowerPC -mbig-endian` 
-  :option:`RS/6000 and PowerPC -mdynamic-no-pic`  :option:`RS/6000 and PowerPC -mswdiv`  :option:`RS/6000 and PowerPC -msingle-pic-base` 
-  :option:`RS/6000 and PowerPC -mprioritize-restricted-insns`:samp:`={priority}` 
-  :option:`RS/6000 and PowerPC -msched-costly-dep`:samp:`={dependence_type}` 
-  :option:`RS/6000 and PowerPC -minsert-sched-nops`:samp:`={scheme}` 
-  :option:`RS/6000 and PowerPC -mcall-aixdesc`  :option:`RS/6000 and PowerPC -mcall-eabi`  :option:`RS/6000 and PowerPC -mcall-freebsd`  
-  :option:`RS/6000 and PowerPC -mcall-linux`  :option:`RS/6000 and PowerPC -mcall-netbsd`  :option:`RS/6000 and PowerPC -mcall-openbsd`  
-  :option:`RS/6000 and PowerPC -mcall-sysv`  :option:`RS/6000 and PowerPC -mcall-sysv-eabi`  :option:`RS/6000 and PowerPC -mcall-sysv-noeabi` 
-  :option:`RS/6000 and PowerPC -mtraceback`:samp:`={traceback_type}` 
-  :option:`RS/6000 and PowerPC -maix-struct-return`  :option:`RS/6000 and PowerPC -msvr4-struct-return` 
-  :option:`RS/6000 and PowerPC -mabi`:samp:`={abi-type}`  :option:`RS/6000 and PowerPC -msecure-plt`  :option:`RS/6000 and PowerPC -mbss-plt` 
-  :option:`RS/6000 and PowerPC -mlongcall`  :option:`RS/6000 and PowerPC -mno-longcall`  :option:`RS/6000 and PowerPC -mpltseq`  :option:`RS/6000 and PowerPC -mno-pltseq`  
-  :option:`RS/6000 and PowerPC -mblock-move-inline-limit`:samp:`={num}` 
-  :option:`RS/6000 and PowerPC -mblock-compare-inline-limit`:samp:`={num}` 
-  :option:`RS/6000 and PowerPC -mblock-compare-inline-loop-limit`:samp:`={num}` 
-  :option:`RS/6000 and PowerPC -mno-block-ops-unaligned-vsx` 
-  :option:`RS/6000 and PowerPC -mstring-compare-inline-limit`:samp:`={num}` 
-  :option:`RS/6000 and PowerPC -misel`  :option:`RS/6000 and PowerPC -mno-isel` 
-  :option:`RS/6000 and PowerPC -mvrsave`  :option:`RS/6000 and PowerPC -mno-vrsave` 
-  :option:`RS/6000 and PowerPC -mmulhw`  :option:`RS/6000 and PowerPC -mno-mulhw` 
-  :option:`RS/6000 and PowerPC -mdlmzb`  :option:`RS/6000 and PowerPC -mno-dlmzb` 
-  :option:`RS/6000 and PowerPC -mprototype`  :option:`RS/6000 and PowerPC -mno-prototype` 
-  :option:`RS/6000 and PowerPC -msim`  :option:`RS/6000 and PowerPC -mmvme`  :option:`RS/6000 and PowerPC -mads`  :option:`RS/6000 and PowerPC -myellowknife`  :option:`RS/6000 and PowerPC -memb`  :option:`RS/6000 and PowerPC -msdata` 
-  :option:`RS/6000 and PowerPC -msdata`:samp:`={opt}`  :option:`RS/6000 and PowerPC -mreadonly-in-sdata`  :option:`RS/6000 and PowerPC -mvxworks`  :option:`RS/6000 and PowerPC -G` :samp:`{num}` 
-  :option:`RS/6000 and PowerPC -mrecip`  :option:`RS/6000 and PowerPC -mrecip`:samp:`={opt}`  :option:`RS/6000 and PowerPC -mno-recip`  :option:`RS/6000 and PowerPC -mrecip-precision` 
-  :option:`RS/6000 and PowerPC -mno-recip-precision` 
-  :option:`RS/6000 and PowerPC -mveclibabi`:samp:`={type}`  :option:`RS/6000 and PowerPC -mfriz`  :option:`RS/6000 and PowerPC -mno-friz` 
-  :option:`RS/6000 and PowerPC -mpointers-to-nested-functions`  :option:`RS/6000 and PowerPC -mno-pointers-to-nested-functions` 
-  :option:`RS/6000 and PowerPC -msave-toc-indirect`  :option:`RS/6000 and PowerPC -mno-save-toc-indirect` 
-  :option:`RS/6000 and PowerPC -mpower8-fusion`  :option:`RS/6000 and PowerPC -mno-mpower8-fusion`  :option:`RS/6000 and PowerPC -mpower8-vector`  :option:`RS/6000 and PowerPC -mno-power8-vector` 
-  :option:`RS/6000 and PowerPC -mcrypto`  :option:`RS/6000 and PowerPC -mno-crypto`  :option:`RS/6000 and PowerPC -mhtm`  :option:`RS/6000 and PowerPC -mno-htm` 
-  :option:`RS/6000 and PowerPC -mquad-memory`  :option:`RS/6000 and PowerPC -mno-quad-memory` 
-  :option:`RS/6000 and PowerPC -mquad-memory-atomic`  :option:`RS/6000 and PowerPC -mno-quad-memory-atomic` 
-  :option:`RS/6000 and PowerPC -mcompat-align-parm`  :option:`RS/6000 and PowerPC -mno-compat-align-parm` 
-  :option:`RS/6000 and PowerPC -mfloat128`  :option:`RS/6000 and PowerPC -mno-float128`  :option:`RS/6000 and PowerPC -mfloat128-hardware`  :option:`RS/6000 and PowerPC -mno-float128-hardware` 
-  :option:`RS/6000 and PowerPC -mgnu-attribute`  :option:`RS/6000 and PowerPC -mno-gnu-attribute` 
-  :option:`RS/6000 and PowerPC -mstack-protector-guard`:samp:`={guard}` :option:`RS/6000 and PowerPC -mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`RS/6000 and PowerPC -mstack-protector-guard-offset`:samp:`={offset}` :option:`RS/6000 and PowerPC -mprefixed` :option:`RS/6000 and PowerPC -mno-prefixed` 
-  :option:`RS/6000 and PowerPC -mpcrel` :option:`RS/6000 and PowerPC -mno-pcrel` :option:`RS/6000 and PowerPC -mmma` :option:`RS/6000 and PowerPC -mno-mmma` :option:`RS/6000 and PowerPC -mrop-protect` :option:`RS/6000 and PowerPC -mno-rop-protect` 
-  :option:`RS/6000 and PowerPC -mprivileged` :option:`RS/6000 and PowerPC -mno-privileged`
+  :option:`-mcpu`:samp:`={cpu-type}` 
+  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mcmodel`:samp:`={code-model}` 
+  :option:`-mpowerpc64` 
+  :option:`-maltivec`  :option:`-mno-altivec` 
+  :option:`-mpowerpc-gpopt`  :option:`-mno-powerpc-gpopt` 
+  :option:`-mpowerpc-gfxopt`  :option:`-mno-powerpc-gfxopt` 
+  :option:`-mmfcrf`  :option:`-mno-mfcrf`  :option:`-mpopcntb`  :option:`-mno-popcntb`  :option:`-mpopcntd`  :option:`-mno-popcntd` 
+  :option:`-mfprnd`  :option:`-mno-fprnd` 
+  :option:`-mcmpb`  :option:`-mno-cmpb`  :option:`-mhard-dfp`  :option:`-mno-hard-dfp` 
+  :option:`-mfull-toc`   :option:`-mminimal-toc`  :option:`-mno-fp-in-toc`  :option:`-mno-sum-in-toc` 
+  :option:`-m64`  :option:`-m32`  :option:`-mxl-compat`  :option:`-mno-xl-compat`  :option:`-mpe` 
+  :option:`-malign-power`  :option:`-malign-natural` 
+  :option:`-msoft-float`  :option:`-mhard-float`  :option:`-mmultiple`  :option:`-mno-multiple` 
+  :option:`-mupdate`  :option:`-mno-update` 
+  :option:`-mavoid-indexed-addresses`  :option:`-mno-avoid-indexed-addresses` 
+  :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-mbit-align`  :option:`-mno-bit-align` 
+  :option:`-mstrict-align`  :option:`-mno-strict-align`  :option:`-mrelocatable` 
+  :option:`-mno-relocatable`  :option:`-mrelocatable-lib`  :option:`-mno-relocatable-lib` 
+  :option:`-mtoc`  :option:`-mno-toc`  :option:`-mlittle`  :option:`-mlittle-endian`  :option:`-mbig`  :option:`-mbig-endian` 
+  :option:`-mdynamic-no-pic`  :option:`-mswdiv`  :option:`-msingle-pic-base` 
+  :option:`-mprioritize-restricted-insns`:samp:`={priority}` 
+  :option:`-msched-costly-dep`:samp:`={dependence_type}` 
+  :option:`-minsert-sched-nops`:samp:`={scheme}` 
+  :option:`-mcall-aixdesc`  :option:`-mcall-eabi`  :option:`-mcall-freebsd`  
+  :option:`-mcall-linux`  :option:`-mcall-netbsd`  :option:`-mcall-openbsd`  
+  :option:`-mcall-sysv`  :option:`-mcall-sysv-eabi`  :option:`-mcall-sysv-noeabi` 
+  :option:`-mtraceback`:samp:`={traceback_type}` 
+  :option:`-maix-struct-return`  :option:`-msvr4-struct-return` 
+  :option:`-mabi`:samp:`={abi-type}`  :option:`-msecure-plt`  :option:`-mbss-plt` 
+  :option:`-mlongcall`  :option:`-mno-longcall`  :option:`-mpltseq`  :option:`-mno-pltseq`  
+  :option:`-mblock-move-inline-limit`:samp:`={num}` 
+  :option:`-mblock-compare-inline-limit`:samp:`={num}` 
+  :option:`-mblock-compare-inline-loop-limit`:samp:`={num}` 
+  :option:`-mno-block-ops-unaligned-vsx` 
+  :option:`-mstring-compare-inline-limit`:samp:`={num}` 
+  :option:`-misel`  :option:`-mno-isel` 
+  :option:`-mvrsave`  :option:`-mno-vrsave` 
+  :option:`-mmulhw`  :option:`-mno-mulhw` 
+  :option:`-mdlmzb`  :option:`-mno-dlmzb` 
+  :option:`-mprototype`  :option:`-mno-prototype` 
+  :option:`-msim`  :option:`-mmvme`  :option:`-mads`  :option:`-myellowknife`  :option:`-memb`  :option:`-msdata` 
+  :option:`-msdata`:samp:`={opt}`  :option:`-mreadonly-in-sdata`  :option:`-mvxworks`  :option:`-G` :samp:`{num}` 
+  :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}`  :option:`-mno-recip`  :option:`-mrecip-precision` 
+  :option:`-mno-recip-precision` 
+  :option:`-mveclibabi`:samp:`={type}`  :option:`-mfriz`  :option:`-mno-friz` 
+  :option:`-mpointers-to-nested-functions`  :option:`-mno-pointers-to-nested-functions` 
+  :option:`-msave-toc-indirect`  :option:`-mno-save-toc-indirect` 
+  :option:`-mpower8-fusion`  :option:`-mno-mpower8-fusion`  :option:`-mpower8-vector`  :option:`-mno-power8-vector` 
+  :option:`-mcrypto`  :option:`-mno-crypto`  :option:`-mhtm`  :option:`-mno-htm` 
+  :option:`-mquad-memory`  :option:`-mno-quad-memory` 
+  :option:`-mquad-memory-atomic`  :option:`-mno-quad-memory-atomic` 
+  :option:`-mcompat-align-parm`  :option:`-mno-compat-align-parm` 
+  :option:`-mfloat128`  :option:`-mno-float128`  :option:`-mfloat128-hardware`  :option:`-mno-float128-hardware` 
+  :option:`-mgnu-attribute`  :option:`-mno-gnu-attribute` 
+  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mprefixed` :option:`-mno-prefixed` 
+  :option:`-mpcrel` :option:`-mno-pcrel` :option:`-mmma` :option:`-mno-mmma` :option:`-mrop-protect` :option:`-mno-rop-protect` 
+  :option:`-mprivileged` :option:`-mno-privileged`
 
   *RX Options*
 
-  :option:`RX -m64bit-doubles`  :option:`RX -m32bit-doubles`  :option:`RX -fpu`  :option:`RX -nofpu`
-  :option:`RX -mcpu` =
-  :option:`RX -mbig-endian-data`  :option:`RX -mlittle-endian-data` 
-  :option:`RX -msmall-data` 
-  :option:`RX -msim`  :option:`RX -mno-sim`
-  :option:`RX -mas100-syntax`  :option:`RX -mno-as100-syntax`
-  :option:`RX -mrelax`
-  :option:`RX -mmax-constant-size` =
-  :option:`RX -mint-register` =
-  :option:`RX -mpid`
-  :option:`RX -mallow-string-insns`  :option:`RX -mno-allow-string-insns`
-  :option:`RX -mjsr`
-  :option:`RX -mno-warn-multiple-fast-interrupts`
-  :option:`RX -msave-acc-in-interrupts`
+  :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu`
+  :option:`-mcpu` =
+  :option:`-mbig-endian-data`  :option:`-mlittle-endian-data` 
+  :option:`-msmall-data` 
+  :option:`-msim`  :option:`-mno-sim`
+  :option:`-mas100-syntax`  :option:`-mno-as100-syntax`
+  :option:`-mrelax`
+  :option:`-mmax-constant-size` =
+  :option:`-mint-register` =
+  :option:`-mpid`
+  :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns`
+  :option:`-mjsr`
+  :option:`-mno-warn-multiple-fast-interrupts`
+  :option:`-msave-acc-in-interrupts`
 
   *S/390 and zSeries Options*
 
-  :option:`S/390 and zSeries -mtune`:samp:`={cpu-type}`  :option:`S/390 and zSeries -march`:samp:`={cpu-type}` 
-  :option:`S/390 and zSeries -mhard-float`  :option:`S/390 and zSeries -msoft-float`  :option:`S/390 and zSeries -mhard-dfp`  :option:`S/390 and zSeries -mno-hard-dfp` 
-  :option:`S/390 and zSeries -mlong-double-64`  :option:`S/390 and zSeries -mlong-double-128` 
-  :option:`S/390 and zSeries -mbackchain`  :option:`S/390 and zSeries -mno-backchain`  :option:`S/390 and zSeries -mpacked-stack`  :option:`S/390 and zSeries -mno-packed-stack` 
-  :option:`S/390 and zSeries -msmall-exec`  :option:`S/390 and zSeries -mno-small-exec`  :option:`S/390 and zSeries -mmvcle`  :option:`S/390 and zSeries -mno-mvcle` 
-  :option:`S/390 and zSeries -m64`  :option:`S/390 and zSeries -m31`  :option:`S/390 and zSeries -mdebug`  :option:`S/390 and zSeries -mno-debug`  :option:`S/390 and zSeries -mesa`  :option:`S/390 and zSeries -mzarch` 
-  :option:`S/390 and zSeries -mhtm`  :option:`S/390 and zSeries -mvx`  :option:`S/390 and zSeries -mzvector` 
-  :option:`S/390 and zSeries -mtpf-trace`  :option:`S/390 and zSeries -mno-tpf-trace`  :option:`S/390 and zSeries -mtpf-trace-skip`  :option:`S/390 and zSeries -mno-tpf-trace-skip` 
-  :option:`S/390 and zSeries -mfused-madd`  :option:`S/390 and zSeries -mno-fused-madd` 
-  :option:`S/390 and zSeries -mwarn-framesize`  :option:`S/390 and zSeries -mwarn-dynamicstack`  :option:`S/390 and zSeries -mstack-size`  :option:`S/390 and zSeries -mstack-guard` 
-  :option:`S/390 and zSeries -mhotpatch`:samp:`={halfwords},{halfwords}`
+  :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
+  :option:`-mhard-float`  :option:`-msoft-float`  :option:`-mhard-dfp`  :option:`-mno-hard-dfp` 
+  :option:`-mlong-double-64`  :option:`-mlong-double-128` 
+  :option:`-mbackchain`  :option:`-mno-backchain`  :option:`-mpacked-stack`  :option:`-mno-packed-stack` 
+  :option:`-msmall-exec`  :option:`-mno-small-exec`  :option:`-mmvcle`  :option:`-mno-mvcle` 
+  :option:`-m64`  :option:`-m31`  :option:`-mdebug`  :option:`-mno-debug`  :option:`-mesa`  :option:`-mzarch` 
+  :option:`-mhtm`  :option:`-mvx`  :option:`-mzvector` 
+  :option:`-mtpf-trace`  :option:`-mno-tpf-trace`  :option:`-mtpf-trace-skip`  :option:`-mno-tpf-trace-skip` 
+  :option:`-mfused-madd`  :option:`-mno-fused-madd` 
+  :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` 
+  :option:`-mhotpatch`:samp:`={halfwords},{halfwords}`
 
   *Score Options*
 
-  :option:`Score -meb`  :option:`Score -mel` 
-  :option:`Score -mnhwloop` 
-  :option:`Score -muls` 
-  :option:`Score -mmac` 
-  :option:`Score -mscore5`  :option:`Score -mscore5u`  :option:`Score -mscore7`  :option:`Score -mscore7d`
+  :option:`-meb`  :option:`-mel` 
+  :option:`-mnhwloop` 
+  :option:`-muls` 
+  :option:`-mmac` 
+  :option:`-mscore5`  :option:`-mscore5u`  :option:`-mscore7`  :option:`-mscore7d`
 
   *SH Options*
 
-  :option:`SH -m1`  :option:`SH -m2`  :option:`SH -m2e` 
-  :option:`SH -m2a-nofpu`  :option:`SH -m2a-single-only`  :option:`SH -m2a-single`  :option:`SH -m2a` 
-  :option:`SH -m3`  :option:`SH -m3e` 
-  :option:`SH -m4-nofpu`  :option:`SH -m4-single-only`  :option:`SH -m4-single`  :option:`SH -m4` 
-  :option:`SH -m4a-nofpu`  :option:`SH -m4a-single-only`  :option:`SH -m4a-single`  :option:`SH -m4a`  :option:`SH -m4al` 
-  :option:`SH -mb`  :option:`SH -ml`  :option:`SH -mdalign`  :option:`SH -mrelax` 
-  :option:`SH -mbigtable`  :option:`SH -mfmovd`  :option:`SH -mrenesas`  :option:`SH -mno-renesas`  :option:`SH -mnomacsave` 
-  :option:`SH -mieee`  :option:`SH -mno-ieee`  :option:`SH -mbitops`  :option:`SH -misize`  :option:`SH -minline-ic_invalidate`  :option:`SH -mpadstruct` 
-  :option:`SH -mprefergot`  :option:`SH -musermode`  :option:`SH -multcost`:samp:`={number}`  :option:`SH -mdiv`:samp:`={strategy}` 
-  :option:`SH -mdivsi3_libfunc`:samp:`={name}`  :option:`SH -mfixed-range`:samp:`={register-range}` 
-  :option:`SH -maccumulate-outgoing-args` 
-  :option:`SH -matomic-model`:samp:`={atomic-model}` 
-  :option:`SH -mbranch-cost`:samp:`={num}`  :option:`SH -mzdcbranch`  :option:`SH -mno-zdcbranch` 
-  :option:`SH -mcbranch-force-delay-slot` 
-  :option:`SH -mfused-madd`  :option:`SH -mno-fused-madd`  :option:`SH -mfsca`  :option:`SH -mno-fsca`  :option:`SH -mfsrra`  :option:`SH -mno-fsrra` 
-  :option:`SH -mpretend-cmove`  :option:`SH -mtas`
+  :option:`-m1`  :option:`-m2`  :option:`-m2e` 
+  :option:`-m2a-nofpu`  :option:`-m2a-single-only`  :option:`-m2a-single`  :option:`-m2a` 
+  :option:`-m3`  :option:`-m3e` 
+  :option:`-m4-nofpu`  :option:`-m4-single-only`  :option:`-m4-single`  :option:`-m4` 
+  :option:`-m4a-nofpu`  :option:`-m4a-single-only`  :option:`-m4a-single`  :option:`-m4a`  :option:`-m4al` 
+  :option:`-mb`  :option:`-ml`  :option:`-mdalign`  :option:`-mrelax` 
+  :option:`-mbigtable`  :option:`-mfmovd`  :option:`-mrenesas`  :option:`-mno-renesas`  :option:`-mnomacsave` 
+  :option:`-mieee`  :option:`-mno-ieee`  :option:`-mbitops`  :option:`-misize`  :option:`-minline-ic_invalidate`  :option:`-mpadstruct` 
+  :option:`-mprefergot`  :option:`-musermode`  :option:`-multcost`:samp:`={number}`  :option:`-mdiv`:samp:`={strategy}` 
+  :option:`-mdivsi3_libfunc`:samp:`={name}`  :option:`-mfixed-range`:samp:`={register-range}` 
+  :option:`-maccumulate-outgoing-args` 
+  :option:`-matomic-model`:samp:`={atomic-model}` 
+  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mzdcbranch`  :option:`-mno-zdcbranch` 
+  :option:`-mcbranch-force-delay-slot` 
+  :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-mfsca`  :option:`-mno-fsca`  :option:`-mfsrra`  :option:`-mno-fsrra` 
+  :option:`-mpretend-cmove`  :option:`-mtas`
 
   *Solaris 2 Options*
 
-  :option:`Solaris 2 -mclear-hwcap`  :option:`Solaris 2 -mno-clear-hwcap`  :option:`Solaris 2 -mimpure-text`  :option:`Solaris 2 -mno-impure-text` 
-  :option:`Solaris 2 -pthreads`
+  :option:`-mclear-hwcap`  :option:`-mno-clear-hwcap`  :option:`-mimpure-text`  :option:`-mno-impure-text` 
+  :option:`-pthreads`
 
   *SPARC Options*
 
-  :option:`SPARC -mcpu`:samp:`={cpu-type}` 
-  :option:`SPARC -mtune`:samp:`={cpu-type}` 
-  :option:`SPARC -mcmodel`:samp:`={code-model}` 
-  :option:`SPARC -mmemory-model`:samp:`={mem-model}` 
-  :option:`SPARC -m32`  :option:`SPARC -m64`  :option:`SPARC -mapp-regs`  :option:`SPARC -mno-app-regs` 
-  :option:`SPARC -mfaster-structs`  :option:`SPARC -mno-faster-structs`  :option:`SPARC -mflat`  :option:`SPARC -mno-flat` 
-  :option:`SPARC -mfpu`  :option:`SPARC -mno-fpu`  :option:`SPARC -mhard-float`  :option:`SPARC -msoft-float` 
-  :option:`SPARC -mhard-quad-float`  :option:`SPARC -msoft-quad-float` 
-  :option:`SPARC -mstack-bias`  :option:`SPARC -mno-stack-bias` 
-  :option:`SPARC -mstd-struct-return`  :option:`SPARC -mno-std-struct-return` 
-  :option:`SPARC -munaligned-doubles`  :option:`SPARC -mno-unaligned-doubles` 
-  :option:`SPARC -muser-mode`  :option:`SPARC -mno-user-mode` 
-  :option:`SPARC -mv8plus`  :option:`SPARC -mno-v8plus`  :option:`SPARC -mvis`  :option:`SPARC -mno-vis` 
-  :option:`SPARC -mvis2`  :option:`SPARC -mno-vis2`  :option:`SPARC -mvis3`  :option:`SPARC -mno-vis3` 
-  :option:`SPARC -mvis4`  :option:`SPARC -mno-vis4`  :option:`SPARC -mvis4b`  :option:`SPARC -mno-vis4b` 
-  :option:`SPARC -mcbcond`  :option:`SPARC -mno-cbcond`  :option:`SPARC -mfmaf`  :option:`SPARC -mno-fmaf`  :option:`SPARC -mfsmuld`  :option:`SPARC -mno-fsmuld`  
-  :option:`SPARC -mpopc`  :option:`SPARC -mno-popc`  :option:`SPARC -msubxc`  :option:`SPARC -mno-subxc` 
-  :option:`SPARC -mfix-at697f`  :option:`SPARC -mfix-ut699`  :option:`SPARC -mfix-ut700`  :option:`SPARC -mfix-gr712rc` 
-  :option:`SPARC -mlra`  :option:`SPARC -mno-lra`
+  :option:`-mcpu`:samp:`={cpu-type}` 
+  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mcmodel`:samp:`={code-model}` 
+  :option:`-mmemory-model`:samp:`={mem-model}` 
+  :option:`-m32`  :option:`-m64`  :option:`-mapp-regs`  :option:`-mno-app-regs` 
+  :option:`-mfaster-structs`  :option:`-mno-faster-structs`  :option:`-mflat`  :option:`-mno-flat` 
+  :option:`-mfpu`  :option:`-mno-fpu`  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-mhard-quad-float`  :option:`-msoft-quad-float` 
+  :option:`-mstack-bias`  :option:`-mno-stack-bias` 
+  :option:`-mstd-struct-return`  :option:`-mno-std-struct-return` 
+  :option:`-munaligned-doubles`  :option:`-mno-unaligned-doubles` 
+  :option:`-muser-mode`  :option:`-mno-user-mode` 
+  :option:`-mv8plus`  :option:`-mno-v8plus`  :option:`-mvis`  :option:`-mno-vis` 
+  :option:`-mvis2`  :option:`-mno-vis2`  :option:`-mvis3`  :option:`-mno-vis3` 
+  :option:`-mvis4`  :option:`-mno-vis4`  :option:`-mvis4b`  :option:`-mno-vis4b` 
+  :option:`-mcbcond`  :option:`-mno-cbcond`  :option:`-mfmaf`  :option:`-mno-fmaf`  :option:`-mfsmuld`  :option:`-mno-fsmuld`  
+  :option:`-mpopc`  :option:`-mno-popc`  :option:`-msubxc`  :option:`-mno-subxc` 
+  :option:`-mfix-at697f`  :option:`-mfix-ut699`  :option:`-mfix-ut700`  :option:`-mfix-gr712rc` 
+  :option:`-mlra`  :option:`-mno-lra`
 
   *System V Options*
 
-  :option:`System V -Qy`  :option:`System V -Qn`  :option:`System V -YP,`:samp:`{paths}`  :option:`System V -Ym,`:samp:`{dir}`
+  :option:`-Qy`  :option:`-Qn`  :option:`-YP,`:samp:`{paths}`  :option:`-Ym,`:samp:`{dir}`
 
   *TILE-Gx Options*
 
-  :option:`TILE-Gx -mcpu`:samp:`=CPU`  :option:`TILE-Gx -m32`  :option:`TILE-Gx -m64`  :option:`TILE-Gx -mbig-endian`  :option:`TILE-Gx -mlittle-endian` 
-  :option:`TILE-Gx -mcmodel`:samp:`={code-model}`
+  :option:`-mcpu`:samp:`=CPU`  :option:`-m32`  :option:`-m64`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
+  :option:`-mcmodel`:samp:`={code-model}`
 
   *TILEPro Options*
 
-  :option:`TILEPro -mcpu`:samp:`={cpu}`  :option:`TILEPro -m32`
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-m32`
 
   *V850 Options*
 
-  :option:`V850 -mlong-calls`  :option:`V850 -mno-long-calls`  :option:`V850 -mep`  :option:`V850 -mno-ep` 
-  :option:`V850 -mprolog-function`  :option:`V850 -mno-prolog-function`  :option:`V850 -mspace` 
-  :option:`V850 -mtda`:samp:`={n}`  :option:`V850 -msda`:samp:`={n}`  :option:`V850 -mzda`:samp:`={n}` 
-  :option:`V850 -mapp-regs`  :option:`V850 -mno-app-regs` 
-  :option:`V850 -mdisable-callt`  :option:`V850 -mno-disable-callt` 
-  :option:`V850 -mv850e2v3`  :option:`V850 -mv850e2`  :option:`V850 -mv850e1`  :option:`V850 -mv850es` 
-  :option:`V850 -mv850e`  :option:`V850 -mv850`  :option:`V850 -mv850e3v5` 
-  :option:`V850 -mloop` 
-  :option:`V850 -mrelax` 
-  :option:`V850 -mlong-jumps` 
-  :option:`V850 -msoft-float` 
-  :option:`V850 -mhard-float` 
-  :option:`V850 -mgcc-abi` 
-  :option:`V850 -mrh850-abi` 
-  :option:`V850 -mbig-switch`
+  :option:`-mlong-calls`  :option:`-mno-long-calls`  :option:`-mep`  :option:`-mno-ep` 
+  :option:`-mprolog-function`  :option:`-mno-prolog-function`  :option:`-mspace` 
+  :option:`-mtda`:samp:`={n}`  :option:`-msda`:samp:`={n}`  :option:`-mzda`:samp:`={n}` 
+  :option:`-mapp-regs`  :option:`-mno-app-regs` 
+  :option:`-mdisable-callt`  :option:`-mno-disable-callt` 
+  :option:`-mv850e2v3`  :option:`-mv850e2`  :option:`-mv850e1`  :option:`-mv850es` 
+  :option:`-mv850e`  :option:`-mv850`  :option:`-mv850e3v5` 
+  :option:`-mloop` 
+  :option:`-mrelax` 
+  :option:`-mlong-jumps` 
+  :option:`-msoft-float` 
+  :option:`-mhard-float` 
+  :option:`-mgcc-abi` 
+  :option:`-mrh850-abi` 
+  :option:`-mbig-switch`
 
   *VAX Options*
 
-  :option:`VAX -mg`  :option:`VAX -mgnu`  :option:`VAX -munix`  :option:`VAX -mlra`
+  :option:`-mg`  :option:`-mgnu`  :option:`-munix`  :option:`-mlra`
 
   *Visium Options*
 
-  :option:`Visium -mdebug`  :option:`Visium -msim`  :option:`Visium -mfpu`  :option:`Visium -mno-fpu`  :option:`Visium -mhard-float`  :option:`Visium -msoft-float` 
-  :option:`Visium -mcpu`:samp:`={cpu-type}`  :option:`Visium -mtune`:samp:`={cpu-type}`  :option:`Visium -msv-mode`  :option:`Visium -muser-mode`
+  :option:`-mdebug`  :option:`-msim`  :option:`-mfpu`  :option:`-mno-fpu`  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-mcpu`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}`  :option:`-msv-mode`  :option:`-muser-mode`
 
   *VMS Options*
 
-  :option:`VMS -mvms-return-codes`  :option:`VMS -mdebug-main`:samp:`={prefix}`  :option:`VMS -mmalloc64` 
-  :option:`VMS -mpointer-size`:samp:`={size}`
+  :option:`-mvms-return-codes`  :option:`-mdebug-main`:samp:`={prefix}`  :option:`-mmalloc64` 
+  :option:`-mpointer-size`:samp:`={size}`
 
   *VxWorks Options*
 
-  :option:`VxWorks -mrtp`  :option:`VxWorks -non-static`  :option:`VxWorks -Bstatic`  :option:`VxWorks -Bdynamic` 
-  :option:`VxWorks -Xbind-lazy`  :option:`VxWorks -Xbind-now`
+  :option:`-mrtp`  :option:`-non-static`  :option:`-Bstatic`  :option:`-Bdynamic` 
+  :option:`-Xbind-lazy`  :option:`-Xbind-now`
 
   *x86 Options*
 
-  :option:`x86 -mtune`:samp:`={cpu-type}`  :option:`x86 -march`:samp:`={cpu-type}` 
-  :option:`x86 -mtune-ctrl`:samp:`={feature-list}`  :option:`x86 -mdump-tune-features`  :option:`x86 -mno-default` 
-  :option:`x86 -mfpmath`:samp:`={unit}` 
-  :option:`x86 -masm`:samp:`={dialect}`  :option:`x86 -mno-fancy-math-387` 
-  :option:`x86 -mno-fp-ret-in-387`  :option:`x86 -m80387`  :option:`x86 -mhard-float`  :option:`x86 -msoft-float` 
-  :option:`x86 -mno-wide-multiply`  :option:`x86 -mrtd`  :option:`x86 -malign-double` 
-  :option:`x86 -mpreferred-stack-boundary`:samp:`={num}` 
-  :option:`x86 -mincoming-stack-boundary`:samp:`={num}` 
-  :option:`x86 -mcld`  :option:`x86 -mcx16`  :option:`x86 -msahf`  :option:`x86 -mmovbe`  :option:`x86 -mcrc32` :option:`x86 -mmwait` 
-  :option:`x86 -mrecip`  :option:`x86 -mrecip`:samp:`={opt}` 
-  :option:`x86 -mvzeroupper`  :option:`x86 -mprefer-avx128`  :option:`x86 -mprefer-vector-width`:samp:`={opt}` 
-  :option:`x86 -mmmx`  :option:`x86 -msse`  :option:`x86 -msse2`  :option:`x86 -msse3`  :option:`x86 -mssse3`  :option:`x86 -msse4.1`  :option:`x86 -msse4.2`  :option:`x86 -msse4`  :option:`x86 -mavx` 
-  :option:`x86 -mavx2`  :option:`x86 -mavx512f`  :option:`x86 -mavx512pf`  :option:`x86 -mavx512er`  :option:`x86 -mavx512cd`  :option:`x86 -mavx512vl` 
-  :option:`x86 -mavx512bw`  :option:`x86 -mavx512dq`  :option:`x86 -mavx512ifma`  :option:`x86 -mavx512vbmi`  :option:`x86 -msha`  :option:`x86 -maes` 
-  :option:`x86 -mpclmul`  :option:`x86 -mfsgsbase`  :option:`x86 -mrdrnd`  :option:`x86 -mf16c`  :option:`x86 -mfma`  :option:`x86 -mpconfig`  :option:`x86 -mwbnoinvd`  
-  :option:`x86 -mptwrite`  :option:`x86 -mprefetchwt1`  :option:`x86 -mclflushopt`  :option:`x86 -mclwb`  :option:`x86 -mxsavec`  :option:`x86 -mxsaves` 
-  :option:`x86 -msse4a`  :option:`x86 -m3dnow`  :option:`x86 -m3dnowa`  :option:`x86 -mpopcnt`  :option:`x86 -mabm`  :option:`x86 -mbmi`  :option:`x86 -mtbm`  :option:`x86 -mfma4`  :option:`x86 -mxop` 
-  :option:`x86 -madx`  :option:`x86 -mlzcnt`  :option:`x86 -mbmi2`  :option:`x86 -mfxsr`  :option:`x86 -mxsave`  :option:`x86 -mxsaveopt`  :option:`x86 -mrtm`  :option:`x86 -mhle`  :option:`x86 -mlwp` 
-  :option:`x86 -mmwaitx`  :option:`x86 -mclzero`  :option:`x86 -mpku`  :option:`x86 -mthreads`  :option:`x86 -mgfni`  :option:`x86 -mvaes`  :option:`x86 -mwaitpkg` 
-  :option:`x86 -mshstk` :option:`x86 -mmanual-endbr` :option:`x86 -mforce-indirect-call`  :option:`x86 -mavx512vbmi2` :option:`x86 -mavx512bf16` :option:`x86 -menqcmd` 
-  :option:`x86 -mvpclmulqdq`  :option:`x86 -mavx512bitalg`  :option:`x86 -mmovdiri`  :option:`x86 -mmovdir64b`  :option:`x86 -mavx512vpopcntdq` 
-  :option:`x86 -mavx5124fmaps`  :option:`x86 -mavx512vnni`  :option:`x86 -mavx5124vnniw`  :option:`x86 -mprfchw`  :option:`x86 -mrdpid` 
-  :option:`x86 -mrdseed`  :option:`x86 -msgx` :option:`x86 -mavx512vp2intersect` :option:`x86 -mserialize` :option:`x86 -mtsxldtrk`
-  :option:`x86 -mamx-tile`  :option:`x86 -mamx-int8`  :option:`x86 -mamx-bf16` :option:`x86 -muintr` :option:`x86 -mhreset` :option:`x86 -mavxvnni`
-  :option:`x86 -mavx512fp16` 
-  :option:`x86 -mcldemote`  :option:`x86 -mms-bitfields`  :option:`x86 -mno-align-stringops`  :option:`x86 -minline-all-stringops` 
-  :option:`x86 -minline-stringops-dynamically`  :option:`x86 -mstringop-strategy`:samp:`={alg}` 
-  :option:`x86 -mkl` :option:`x86 -mwidekl` 
-  :option:`x86 -mmemcpy-strategy`:samp:`={strategy}`  :option:`x86 -mmemset-strategy`:samp:`={strategy}` 
-  :option:`x86 -mpush-args`  :option:`x86 -maccumulate-outgoing-args`  :option:`x86 -m128bit-long-double` 
-  :option:`x86 -m96bit-long-double`  :option:`x86 -mlong-double-64`  :option:`x86 -mlong-double-80`  :option:`x86 -mlong-double-128` 
-  :option:`x86 -mregparm`:samp:`={num}`  :option:`x86 -msseregparm` 
-  :option:`x86 -mveclibabi`:samp:`={type}`  :option:`x86 -mvect8-ret-in-mem` 
-  :option:`x86 -mpc32`  :option:`x86 -mpc64`  :option:`x86 -mpc80`  :option:`x86 -mstackrealign` 
-  :option:`x86 -momit-leaf-frame-pointer`  :option:`x86 -mno-red-zone`  :option:`x86 -mno-tls-direct-seg-refs` 
-  :option:`x86 -mcmodel`:samp:`={code-model}`  :option:`x86 -mabi`:samp:`={name}`  :option:`x86 -maddress-mode`:samp:`={mode}` 
-  :option:`x86 -m32`  :option:`x86 -m64`  :option:`x86 -mx32`  :option:`x86 -m16`  :option:`x86 -miamcu`  :option:`x86 -mlarge-data-threshold`:samp:`={num}` 
-  :option:`x86 -msse2avx`  :option:`x86 -mfentry`  :option:`x86 -mrecord-mcount`  :option:`x86 -mnop-mcount`  :option:`x86 -m8bit-idiv` 
-  :option:`x86 -minstrument-return`:samp:`={type}` :option:`x86 -mfentry-name`:samp:`={name}` :option:`x86 -mfentry-section`:samp:`={name}` 
-  :option:`x86 -mavx256-split-unaligned-load`  :option:`x86 -mavx256-split-unaligned-store` 
-  :option:`x86 -malign-data`:samp:`={type}`  :option:`x86 -mstack-protector-guard`:samp:`={guard}` 
-  :option:`x86 -mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`x86 -mstack-protector-guard-offset`:samp:`={offset}` 
-  :option:`x86 -mstack-protector-guard-symbol`:samp:`={symbol}` 
-  :option:`x86 -mgeneral-regs-only`  :option:`x86 -mcall-ms2sysv-xlogues` :option:`x86 -mrelax-cmpxchg-loop` 
-  :option:`x86 -mindirect-branch`:samp:`={choice}`  :option:`x86 -mfunction-return`:samp:`={choice}` 
-  :option:`x86 -mindirect-branch-register` :option:`x86 -mharden-sls`:samp:`={choice}` 
-  :option:`x86 -mindirect-branch-cs-prefix` :option:`x86 -mneeded`
+  :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
+  :option:`-mtune-ctrl`:samp:`={feature-list}`  :option:`-mdump-tune-features`  :option:`-mno-default` 
+  :option:`-mfpmath`:samp:`={unit}` 
+  :option:`-masm`:samp:`={dialect}`  :option:`-mno-fancy-math-387` 
+  :option:`-mno-fp-ret-in-387`  :option:`-m80387`  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-mno-wide-multiply`  :option:`-mrtd`  :option:`-malign-double` 
+  :option:`-mpreferred-stack-boundary`:samp:`={num}` 
+  :option:`-mincoming-stack-boundary`:samp:`={num}` 
+  :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` :option:`-mmwait` 
+  :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}` 
+  :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width`:samp:`={opt}` 
+  :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` 
+  :option:`-mavx2`  :option:`-mavx512f`  :option:`-mavx512pf`  :option:`-mavx512er`  :option:`-mavx512cd`  :option:`-mavx512vl` 
+  :option:`-mavx512bw`  :option:`-mavx512dq`  :option:`-mavx512ifma`  :option:`-mavx512vbmi`  :option:`-msha`  :option:`-maes` 
+  :option:`-mpclmul`  :option:`-mfsgsbase`  :option:`-mrdrnd`  :option:`-mf16c`  :option:`-mfma`  :option:`-mpconfig`  :option:`-mwbnoinvd`  
+  :option:`-mptwrite`  :option:`-mprefetchwt1`  :option:`-mclflushopt`  :option:`-mclwb`  :option:`-mxsavec`  :option:`-mxsaves` 
+  :option:`-msse4a`  :option:`-m3dnow`  :option:`-m3dnowa`  :option:`-mpopcnt`  :option:`-mabm`  :option:`-mbmi`  :option:`-mtbm`  :option:`-mfma4`  :option:`-mxop` 
+  :option:`-madx`  :option:`-mlzcnt`  :option:`-mbmi2`  :option:`-mfxsr`  :option:`-mxsave`  :option:`-mxsaveopt`  :option:`-mrtm`  :option:`-mhle`  :option:`-mlwp` 
+  :option:`-mmwaitx`  :option:`-mclzero`  :option:`-mpku`  :option:`-mthreads`  :option:`-mgfni`  :option:`-mvaes`  :option:`-mwaitpkg` 
+  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mforce-indirect-call`  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` 
+  :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` 
+  :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
+  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
+  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
+  :option:`-mavx512fp16` 
+  :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
+  :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy`:samp:`={alg}` 
+  :option:`-mkl` :option:`-mwidekl` 
+  :option:`-mmemcpy-strategy`:samp:`={strategy}`  :option:`-mmemset-strategy`:samp:`={strategy}` 
+  :option:`-mpush-args`  :option:`-maccumulate-outgoing-args`  :option:`-m128bit-long-double` 
+  :option:`-m96bit-long-double`  :option:`-mlong-double-64`  :option:`-mlong-double-80`  :option:`-mlong-double-128` 
+  :option:`-mregparm`:samp:`={num}`  :option:`-msseregparm` 
+  :option:`-mveclibabi`:samp:`={type}`  :option:`-mvect8-ret-in-mem` 
+  :option:`-mpc32`  :option:`-mpc64`  :option:`-mpc80`  :option:`-mstackrealign` 
+  :option:`-momit-leaf-frame-pointer`  :option:`-mno-red-zone`  :option:`-mno-tls-direct-seg-refs` 
+  :option:`-mcmodel`:samp:`={code-model}`  :option:`-mabi`:samp:`={name}`  :option:`-maddress-mode`:samp:`={mode}` 
+  :option:`-m32`  :option:`-m64`  :option:`-mx32`  :option:`-m16`  :option:`-miamcu`  :option:`-mlarge-data-threshold`:samp:`={num}` 
+  :option:`-msse2avx`  :option:`-mfentry`  :option:`-mrecord-mcount`  :option:`-mnop-mcount`  :option:`-m8bit-idiv` 
+  :option:`-minstrument-return`:samp:`={type}` :option:`-mfentry-name`:samp:`={name}` :option:`-mfentry-section`:samp:`={name}` 
+  :option:`-mavx256-split-unaligned-load`  :option:`-mavx256-split-unaligned-store` 
+  :option:`-malign-data`:samp:`={type}`  :option:`-mstack-protector-guard`:samp:`={guard}` 
+  :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
+  :option:`-mstack-protector-guard-offset`:samp:`={offset}` 
+  :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` 
+  :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
+  :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
+  :option:`-mindirect-branch-register` :option:`-mharden-sls`:samp:`={choice}` 
+  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded`
 
   *x86 Windows Options*
 
-  :option:`x86 Windows -mconsole`  :option:`x86 Windows -mcygwin`  :option:`x86 Windows -mno-cygwin`  :option:`x86 Windows -mdll` 
-  :option:`x86 Windows -mnop-fun-dllimport`  :option:`x86 Windows -mthread` 
-  :option:`x86 Windows -municode`  :option:`x86 Windows -mwin32`  :option:`x86 Windows -mwindows`  :option:`x86 Windows -fno-set-stack-executable`
+  :option:`-mconsole`  :option:`-mcygwin`  :option:`-mno-cygwin`  :option:`-mdll` 
+  :option:`-mnop-fun-dllimport`  :option:`-mthread` 
+  :option:`-municode`  :option:`-mwin32`  :option:`-mwindows`  :option:`-fno-set-stack-executable`
 
   *Xstormy16 Options*
 
-  :option:`Xstormy16 -msim`
+  :option:`-msim`
 
   *Xtensa Options*
 
-  :option:`Xtensa -mconst16`  :option:`Xtensa -mno-const16` 
-  :option:`Xtensa -mfused-madd`  :option:`Xtensa -mno-fused-madd` 
-  :option:`Xtensa -mforce-no-pic` 
-  :option:`Xtensa -mserialize-volatile`  :option:`Xtensa -mno-serialize-volatile` 
-  :option:`Xtensa -mtext-section-literals`  :option:`Xtensa -mno-text-section-literals` 
-  :option:`Xtensa -mauto-litpools`  :option:`Xtensa -mno-auto-litpools` 
-  :option:`Xtensa -mtarget-align`  :option:`Xtensa -mno-target-align` 
-  :option:`Xtensa -mlongcalls`  :option:`Xtensa -mno-longcalls` 
-  :option:`Xtensa -mabi`:samp:`={abi-type}`
+  :option:`-mconst16`  :option:`-mno-const16` 
+  :option:`-mfused-madd`  :option:`-mno-fused-madd` 
+  :option:`-mforce-no-pic` 
+  :option:`-mserialize-volatile`  :option:`-mno-serialize-volatile` 
+  :option:`-mtext-section-literals`  :option:`-mno-text-section-literals` 
+  :option:`-mauto-litpools`  :option:`-mno-auto-litpools` 
+  :option:`-mtarget-align`  :option:`-mno-target-align` 
+  :option:`-mlongcalls`  :option:`-mno-longcalls` 
+  :option:`-mabi`:samp:`={abi-type}`
 
   *zSeries Options*
 
