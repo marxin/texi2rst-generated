@@ -71,10 +71,21 @@ These options affect the runtime behavior of programs compiled with
   :samp:`__builtin_`.  By default, the compiler will recognize when a
   function in the ``core.stdc`` package is a built-in function.
 
-  ``-fdebug``
-  :samp:`-fdebug={value}`
+.. option:: fcheckaction
 
-  .. index:: -fdebug
+  This option controls what code is generated on an assertion, bounds check, or
+  final switch failure.  The following values are supported:
+
+  :samp:`context`
+    Throw an ``AssertError`` with extra context information.
+
+  :samp:`halt`
+    Halt the program execution.
+
+  :samp:`throw`
+    Throw an ``AssertError`` (the default).
+
+.. option:: -fdebug=value
 
   .. index:: -fno-debug
 
@@ -104,6 +115,27 @@ These options affect the runtime behavior of programs compiled with
   .. code-block:: c++
 
     gdc -nophoboslib -fno-exceptions -fno-moduleinfo -fno-rtti
+
+.. option:: -fextern-std=standard
+
+  Sets the C++ name mangling compatibility to the version identified by
+  :samp:`{standard}`.  The following values are supported:
+
+  :samp:`c++98`
+  :samp:`c++03`
+    Sets ``__traits(getTargetInfo "cppStd")`` to ``199711``.
+
+  :samp:`c++11`
+    Sets ``__traits(getTargetInfo "cppStd")`` to ``201103``.
+
+  :samp:`c++14`
+    Sets ``__traits(getTargetInfo "cppStd")`` to ``201402``.
+
+  :samp:`c++17`
+    Sets ``__traits(getTargetInfo "cppStd")`` to ``201703``.
+
+  :samp:`c++20`
+    Sets ``__traits(getTargetInfo "cppStd")`` to ``202002``.
 
 .. option:: -fno-invariants
 
@@ -150,9 +182,62 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for precondition ``in`` contracts.
 
-.. option:: -frelease
+.. option:: -fpreview=id
 
-  .. index:: -frelease
+  .. index:: -fpreview
+
+  Turns on an upcoming D language change identified by :samp:`{id}`.  The following
+  values are supported:
+
+  :samp:`all`
+    Turns on all upcoming D language features.
+
+  :samp:`dip1000`
+    Implements http://wiki.dlang.org/DIP1000 (Scoped pointers).
+
+  :samp:`dip1008`
+    Implements http://wiki.dlang.org/DIP1008 (Allow exceptions in
+    ``@nogc`` code).
+
+  :samp:`dip1021`
+    Implements http://wiki.dlang.org/DIP1021 (Mutable function arguments).
+
+  :samp:`dip25`
+    Implements http://wiki.dlang.org/DIP25 (Sealed references).
+
+  :samp:`dtorfields`
+    Turns on generation for destructing fields of partially constructed objects.
+
+  :samp:`fieldwise`
+    Turns on generation of struct equality to use field-wise comparisons.
+
+  :samp:`fixaliasthis`
+    Implements new lookup rules that check the current scope for ``alias this``
+    before searching in upper scopes.
+
+  :samp:`in`
+    Implements ``in`` parameters to mean ``scope const [ref]`` and accepts
+    rvalues.
+
+  :samp:`inclusiveincontracts`
+    Implements ``in`` contracts of overridden methods to be a superset of parent
+    contract.
+
+  :samp:`intpromote`
+    Implements C-style integral promotion for unary ``+``, ``-`` and ``~``
+    expressions.
+
+  :samp:`nosharedaccess`
+    Turns off and disallows all access to shared memory objects.
+
+  :samp:`rvaluerefparam`
+    Implements rvalue arguments to ``ref`` parameters.
+
+  :samp:`shortenedmethods`
+    Implements use of ``=>`` for methods and top-level functions in addition to
+    lambdas.
+
+.. option:: -frelease
 
   .. index:: -fno-release
 
@@ -167,6 +252,25 @@ These options affect the runtime behavior of programs compiled with
 
     gdc -fno-assert -fbounds-check=safe -fno-invariants \
         -fno-postconditions -fno-preconditions -fno-switch-errors
+
+.. option:: -frevert=
+
+  .. index:: -frevert
+
+  Turns off a D language feature identified by :samp:`{id}`.  The following values
+  are supported:
+
+  :samp:`all`
+    Turns off all revertable D language features.
+
+  :samp:`dip25`
+    Reverts http://wiki.dlang.org/DIP25 (Sealed references).
+
+  :samp:`dtorfields`
+    Turns off generation for destructing fields of partially constructed objects.
+
+  :samp:`markdown`
+    Turns off Markdown replacements in Ddoc comments.
 
 .. option:: -fno-rtti
 

@@ -154,3 +154,18 @@ In addition to the many :command:`gcc` options controlling code generation,
   :option:`-fdoc-inc` options can be used, and files are read and processed
   in the same order.
 
+:samp:`-fdump-c++-spec={file}`
+  For D source files, generate corresponding C++ declarations in :samp:`{file}`.
+
+``-fdump-c++-spec-verbose``
+  In conjunction with :option:`-fdump-c++-spec` = above, add comments for ignored
+  declarations in the generated C++ header.
+
+:samp:`-fsave-mixins={file}`
+
+  .. index:: -fsave-mixins
+
+  Generates code expanded from D ``mixin`` statements and writes the
+  processed sources to :samp:`{file}`.  This is useful to debug errors in compilation
+  and provides source for debuggers to show when requested.
+

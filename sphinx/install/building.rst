@@ -62,5 +62,6 @@ documentation pre-built for the unmodified documentation in the release.
   building/building-a-cross-compiler
   building/building-in-parallel
   building/building-the-ada-compiler
+  building/building-the-d-compiler
   building/building-with-profile-feedback
 

@@ -152,16 +152,10 @@ specified, they do not prevent compilation of the program.
   :samp:`{id}`.  The following values are supported:
 
   :samp:`all`
-    List information on all language changes.
+    List information on all D language transitions.
 
   :samp:`complex`
     List all usages of complex or imaginary types.
-
-  :samp:`dip1000`
-    Implements http://wiki.dlang.org/DIP1000 (experimental).
-
-  :samp:`dip25`
-    Implements http://wiki.dlang.org/DIP25 (experimental).
 
   :samp:`field`
     List all non-mutable fields which occupy an object instance.
@@ -169,6 +163,12 @@ specified, they do not prevent compilation of the program.
   :samp:`nogc`
     List all hidden GC allocations.
 
+  :samp:`templates`
+    List statistics on template instantiations.
+
   :samp:`tls`
     List all variables going into thread local storage.
+
+  :samp:`vmarkdown`
+    List instances of Markdown replacements in Ddoc.
 
