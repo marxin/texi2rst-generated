@@ -162,7 +162,7 @@ in the following sections.
   :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` 
   :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` 
   :option:`-Wno-attribute-warning`  
-  :option:`-Wbidi-chars` =[none|unpaired|any] 
+  :option:`-Wbidi-chars`:samp:`=[none|unpaired|any]`
   :option:`-Wbool-compare`  :option:`-Wbool-operation` 
   :option:`-Wno-builtin-declaration-mismatch` 
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` 
