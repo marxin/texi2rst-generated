@@ -46,3 +46,18 @@ Foobar (all versions)
   SSE2, ... 
 
 Use these options: :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3` :option:`-Wno-shift-overflow3`.
+
+Code block:
+
+.. code-block::
+
+  gcc a.c
+  ./a.out
+
+And then there's a note:
+
+.. note::
+
+   I am a note!
+
+And then there's something else.
