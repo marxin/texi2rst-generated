@@ -86,3 +86,54 @@ Note2: ([#]_)
   :option:`-fdiagnostics-column-origin`:samp:`={origin}`
   :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
 
+*Static Analyzer Options*
+
+  :option:`-fanalyzer`
+  :option:`-fanalyzer-call-summaries`
+  :option:`-fanalyzer-checker`:samp:`={name}`
+  :option:`-fno-analyzer-feasibility`
+  :option:`-fanalyzer-fine-grained`
+  :option:`-fanalyzer-state-merge`
+  :option:`-fanalyzer-state-purge`
+  :option:`-fanalyzer-transitivity`
+  :option:`-fanalyzer-verbose-edges`
+  :option:`-fanalyzer-verbose-state-changes`
+  :option:`-fanalyzer-verbosity`:samp:`={level}`
+  :option:`-fdump-analyzer`
+  :option:`-fdump-analyzer-stderr`
+  :option:`-fdump-analyzer-callgraph`
+  :option:`-fdump-analyzer-exploded-graph`
+  :option:`-fdump-analyzer-exploded-nodes`
+  :option:`-fdump-analyzer-exploded-nodes-2`
+  :option:`-fdump-analyzer-exploded-nodes-3`
+  :option:`-fdump-analyzer-exploded-paths`
+  :option:`-fdump-analyzer-feasibility`
+  :option:`-fdump-analyzer-json`
+  :option:`-fdump-analyzer-state-purge`
+  :option:`-fdump-analyzer-supergraph`
+  :option:`-Wno-analyzer-double-fclose`
+  :option:`-Wno-analyzer-double-free`
+  :option:`-Wno-analyzer-exposure-through-output-file`
+  :option:`-Wno-analyzer-file-leak`
+  :option:`-Wno-analyzer-free-of-non-heap`
+  :option:`-Wno-analyzer-malloc-leak`
+  :option:`-Wno-analyzer-mismatching-deallocation`
+  :option:`-Wno-analyzer-null-argument`
+  :option:`-Wno-analyzer-null-dereference`
+  :option:`-Wno-analyzer-possible-null-argument`
+  :option:`-Wno-analyzer-possible-null-dereference`
+  :option:`-Wno-analyzer-shift-count-negative`
+  :option:`-Wno-analyzer-shift-count-overflow`
+  :option:`-Wno-analyzer-stale-setjmp-buffer`
+  :option:`-Wno-analyzer-tainted-allocation-size`
+  :option:`-Wno-analyzer-tainted-array-index`
+  :option:`-Wno-analyzer-tainted-divisor`
+  :option:`-Wno-analyzer-tainted-offset`
+  :option:`-Wno-analyzer-tainted-size`
+  :option:`-Wanalyzer-too-complex`
+  :option:`-Wno-analyzer-unsafe-call-within-signal-handler`
+  :option:`-Wno-analyzer-use-after-free`
+  :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`
+  :option:`-Wno-analyzer-use-of-uninitialized-value`
+  :option:`-Wno-analyzer-write-to-const`
+  :option:`-Wno-analyzer-write-to-string-literal`
