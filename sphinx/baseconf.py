@@ -144,8 +144,13 @@ latex_engine = 'xelatex'
 
 latex_logo = '../logo.pdf'
 
-# Remove once xindy works in an openSUSE container
+# TODO: Remove once xindy works in an openSUSE container
 latex_use_xindy = False
+
+# TODO: workaround for https://github.com/sphinx-doc/sphinx/issues/9925
+latex_elements = {
+    'preamble': r'\def\sphinxhyphen{\mbox{-}}',
+}
 
 texinfo_elements = { 'preamble': """
 @definfoenclose strong,*,*
