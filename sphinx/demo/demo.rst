@@ -62,3 +62,27 @@ Note2: ([#]_)
 
 .. [#] Future versions of GCC may zero-extend, or use a target-defined ``ptr_extend`` pattern.  Do not rely on sign extension.
 .. [#] I am note 2.
+
+*Diagnostic Message Formatting Options*
+
+  See :ref:`diagnostic-message-formatting-options`.
+
+  :option:`-fmessage-length`:samp:`={n}`
+  :option:`-fdiagnostics-plain-output`
+  :option:`-fdiagnostics-show-location`:samp:`=[once|every-line]`
+  :option:`-fdiagnostics-color`:samp:`=[auto|never|always]`
+  :option:`-fdiagnostics-urls`:samp:`=[auto|never|always]`
+  :option:`-fdiagnostics-format`:samp:`=[text|json]`
+  :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret`
+  :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers`
+  :option:`-fno-diagnostics-show-cwe`
+  :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}`
+  :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch`
+  :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type`
+  :option:`-fdiagnostics-path-format`:samp:`=[none|separate-events|inline-events]`
+  :option:`-fdiagnostics-show-path-depths`
+  :option:`-fno-show-column`
+  :option:`-fdiagnostics-column-unit`:samp:`=[display|byte]`
+  :option:`-fdiagnostics-column-origin`:samp:`={origin}`
+  :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+
