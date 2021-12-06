@@ -67,24 +67,31 @@ Note2: ([#]_)
 
   See :ref:`diagnostic-message-formatting-options`.
 
-  :option:`-fmessage-length`:samp:`={n}`
-  :option:`-fdiagnostics-plain-output`
-  :option:`-fdiagnostics-show-location`:samp:`=[once|every-line]`
-  :option:`-fdiagnostics-color`:samp:`=[auto|never|always]`
-  :option:`-fdiagnostics-urls`:samp:`=[auto|never|always]`
-  :option:`-fdiagnostics-format`:samp:`=[text|json]`
-  :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret`
-  :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers`
-  :option:`-fno-diagnostics-show-cwe`
-  :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}`
-  :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch`
-  :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type`
-  :option:`-fdiagnostics-path-format`:samp:`=[none|separate-events|inline-events]`
-  :option:`-fdiagnostics-show-path-depths`
-  :option:`-fno-show-column`
-  :option:`-fdiagnostics-column-unit`:samp:`=[display|byte]`
-  :option:`-fdiagnostics-column-origin`:samp:`={origin}`
+  :option:`-fmessage-length`:samp:`={n}` :option:`-fdiagnostics-plain-output` |gol|
+  :option:`-fdiagnostics-show-location`:samp:`=[once|every-line]` |gol|
+  :option:`-fdiagnostics-color`:samp:`=[auto|never|always]` |gol|
+  :option:`-fdiagnostics-urls`:samp:`=[auto|never|always]` |gol|
+  :option:`-fdiagnostics-format`:samp:`=[text|json]` |gol|
+  :option:`-fno-diagnostics-show-option` :option:`-fno-diagnostics-show-caret` |gol|
+  :option:`-fno-diagnostics-show-labels` :option:`-fno-diagnostics-show-line-numbers` |gol|
+  :option:`-fno-diagnostics-show-cwe` |gol|
+  :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}` |gol|
+  :option:`-fdiagnostics-parseable-fixits` :option:`-fdiagnostics-generate-patch` |gol|
+  :option:`-fdiagnostics-show-template-tree` :option:`-fno-elide-type` |gol|
+  :option:`-fdiagnostics-path-format`:samp:`=[none|separate-events|inline-events]` |gol|
+  :option:`-fdiagnostics-show-path-depths` |gol|
+  :option:`-fno-show-column` :option:`-fdiagnostics-column-unit`:samp:`=[display|byte]` |gol|
+  :option:`-fdiagnostics-column-origin`:samp:`={origin}` |gol|
   :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
+- :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
 
 *Static Analyzer Options*
 
