@@ -129,6 +129,10 @@ html_static_path = [
     '../_static'
 ]
 
+html_css_files = [
+    'custom.css'
+]
+
 # By default, do not generate any manual pages
 man_pages = []
 
