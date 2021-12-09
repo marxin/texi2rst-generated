@@ -283,6 +283,14 @@ program analysis purposes.
   pointing to the base directory of the build can be used to strip the irrelevant
   part of the path and keep all file names relative to the main build directory.
 
+.. option:: -fprofile-prefix-map=old=new
+
+  When compiling files residing in directory :samp:`{old}`, record
+  profiling information (with :option:`--coverage`)
+  describing them as if the files resided in
+  directory :samp:`{new}` instead.
+  See also :option:`-ffile-prefix-map`.
+
 .. option:: -fprofile-update=method
 
   Alter the update method for an application instrumented for profile

@@ -652,6 +652,13 @@ MIPS Options
   default but only takes effect when the selected architecture is known
   to support bonding.
 
+.. option:: -munaligned-access, -mno-unaligned-access
+
+  Enable (disable) direct unaligned access for MIPS Release 6.
+  MIPSr6 requires load/store unaligned-access support,
+  by hardware or trap&emulate.
+  So :option:`-mno-unaligned-access` may be needed by kernel.
+
 .. option:: -mmemcpy, -mno-memcpy
 
   Force (do not force) the use of ``memcpy`` for non-trivial block
