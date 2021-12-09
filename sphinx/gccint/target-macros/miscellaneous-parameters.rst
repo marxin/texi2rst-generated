@@ -1425,6 +1425,11 @@ Here are several miscellaneous parameters.
 
 .. hook-end
 
+.. function:: bool TARGET_IFUNC_REF_LOCAL_OK (void)
+
+  Return true if it is OK to reference indirect function resolvers
+  locally.  The default is to return false.
+
 .. function:: unsigned int TARGET_ATOMIC_ALIGN_FOR_MODE (machine_mode mode)
 
   .. hook-start:TARGET_ATOMIC_ALIGN_FOR_MODE

@@ -114,6 +114,15 @@ The available options are:
   This is somewhat dangerous; the only safe use is in a union when one
   field really isn't ever used.
 
+  .. index:: callback
+
+``callback``
+  ``callback`` should be applied to fields with pointer to function type
+  and causes the field to be ignored similarly to ``skip``, except when
+  writing PCH and the field is non-NULL it will remember the field's address
+  for relocation purposes if the process writing PCH has different load base
+  from a process reading PCH.
+
   .. index:: for_user
 
 ``for_user``

@@ -857,6 +857,18 @@ These :samp:`-m` options are defined for the x86 family of computers.
   This option instructs GCC to use :samp:`{opt}` -bit vector width in instructions
   instead of default on the selected platform.
 
+.. option:: -mmove-max=bits
+
+  This option instructs GCC to set the maximum number of bits can be
+  moved from memory to memory efficiently to :samp:`{bits}`.  The valid
+  :samp:`{bits}` are 128, 256 and 512.
+
+.. option:: -mstore-max=bits
+
+  This option instructs GCC to set the maximum number of bits can be
+  stored to memory efficiently to :samp:`{bits}`.  The valid :samp:`{bits}` are
+  128, 256 and 512.
+
   :samp:`none`
     No extra limitations applied to GCC other than defined by the selected platform.
 

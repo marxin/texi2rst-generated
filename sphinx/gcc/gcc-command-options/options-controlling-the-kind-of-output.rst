@@ -683,7 +683,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   option is equivalent to specifying all the individual
   :option:`-f*-prefix-map` options.  This can be used to make reproducible
   builds that are location independent.  See also
-  :option:`-fmacro-prefix-map` and :option:`-fdebug-prefix-map`.
+  :option:`-fmacro-prefix-map`, :option:`-fdebug-prefix-map` and
+  :option:`-fprofile-prefix-map`.
 
 .. option:: -fplugin=name.so
 

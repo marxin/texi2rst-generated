@@ -152,6 +152,15 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for class ``invariant`` contracts.
 
+``-fmain``
+
+  .. index:: -fmain
+
+  Generates a default ``main()`` function when compiling.  This is useful when
+  unittesting a library, as it enables running the unittests in a library without
+  having to manually define an entry-point function.  This option does nothing
+  when ``main`` is already defined in user code.
+
 ``-fno-moduleinfo``
 
   .. index:: -fmoduleinfo

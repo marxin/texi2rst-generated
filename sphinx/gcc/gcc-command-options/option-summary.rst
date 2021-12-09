@@ -447,6 +447,7 @@ in the following sections.
   :option:`-finstrument-functions` 
   :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}`, :samp:`{sym}`,... 
   :option:`-finstrument-functions-exclude-file-list`:samp:`={file}`, :samp:`{file}`,...
+  -fprofile-prefix-map= :samp:`{old}` = :samp:`{new}`
 
 *Preprocessor Options*
   See :ref:`preprocessor-options`.
@@ -1009,6 +1010,7 @@ in the following sections.
   :option:`-mcheck-zero-division`  :option:`-mno-check-zero-division` 
   :option:`-mdivide-traps`  :option:`-mdivide-breaks` 
   :option:`-mload-store-pairs`  :option:`-mno-load-store-pairs` 
+  :option:`-munaligned-access`  :option:`-mno-unaligned-access` 
   :option:`-mmemcpy`  :option:`-mno-memcpy`  :option:`-mlong-calls`  :option:`-mno-long-calls` 
   :option:`-mmad`  :option:`-mno-mad`  :option:`-mimadd`  :option:`-mno-imadd`  :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-nocpp` 
   :option:`-mfix-24k`  :option:`-mno-fix-24k` 
@@ -1414,6 +1416,7 @@ in the following sections.
   :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` :option:`-mmwait` 
   :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}` 
   :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width`:samp:`={opt}` 
+  :option:`-mmove-max`:samp:`={bits}` :option:`-mstore-max`:samp:`={bits}` 
   :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` 
   :option:`-mavx2`  :option:`-mavx512f`  :option:`-mavx512pf`  :option:`-mavx512er`  :option:`-mavx512cd`  :option:`-mavx512vl` 
   :option:`-mavx512bw`  :option:`-mavx512dq`  :option:`-mavx512ifma`  :option:`-mavx512vbmi`  :option:`-msha`  :option:`-maes` 

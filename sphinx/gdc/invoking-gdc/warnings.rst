@@ -160,6 +160,9 @@ specified, they do not prevent compilation of the program.
   :samp:`field`
     List all non-mutable fields which occupy an object instance.
 
+  :samp:`in`
+    List all usages of ``in`` on parameter.
+
   :samp:`nogc`
     List all hidden GC allocations.
 
