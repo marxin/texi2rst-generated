@@ -153,6 +153,8 @@ latex_logo = '../logo.pdf'
 # TODO: Remove once xindy works in an openSUSE container
 latex_use_xindy = False
 
+texinfo_cross_references = False
+
 texinfo_elements = { 'preamble': """
 @definfoenclose strong,*,*
 @definfoenclose emph,','
