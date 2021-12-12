@@ -3126,6 +3126,16 @@ section includes experimental options that may produce broken code.
     when modulo scheduling a loop.  Larger values can exponentially increase
     compilation time.
 
+  .. gcc-param:: max-inline-functions-called-once-loop-depth
+
+    Maximal loop depth of a call considered by inline heuristics that tries to
+    inline all functions called once.
+
+  .. gcc-param:: max-inline-functions-called-once-insns
+
+    Maximal estimated size of functions produced while inlining functions called
+    once.
+
   .. gcc-param:: max-inline-insns-single
 
     Several parameters control the tree inliner used in GCC.  This number sets the

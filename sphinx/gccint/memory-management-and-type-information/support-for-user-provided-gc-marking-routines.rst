@@ -36,7 +36,7 @@ should be defined to mark ``my_struct`` :
   void gt_pch_nx (my_struct *p, gt_pointer_operator op, void *cookie)
   {
     /* For every field 'fld', call the given pointer operator.  */
-    op (&(tp->fld), cookie);
+    op (&(tp->fld), NULL, cookie);
   }
 
 In general, each marker ``M`` should call ``M`` for every
@@ -91,7 +91,7 @@ could be more.
   {
     /* For every field 'fld' of 'tp' with type 'T *', call the given
        pointer operator.  */
-    op (&(tp->fld), cookie);
+    op (&(tp->fld), NULL, cookie);
   }
 
   template<typename T>
