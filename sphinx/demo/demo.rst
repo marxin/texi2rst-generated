@@ -44,6 +44,21 @@ Enable it all :)
 I am a :command:`super-command`.
 I am **strong** and I am *emphasis*.
 
+ .. code-block:: c++
+
+    extern void *
+    my_memcpy (void *dest, const void *src, size_t len)
+            __attribute__((nonnull (1, 2)));
+
+    void fatal () __attribute__ ((noreturn));
+
+    void
+    fatal (/* ... */)
+    {
+      /* ... */ /* Print error message. */ /* ... */
+      exit (1);
+    }
+
 Show :samp:`Samp with a {variable}.`
 
 Show it::
