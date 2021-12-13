@@ -31,7 +31,8 @@ I'm a demo documentation page.
   These options control warnings about left shift overflows.
 
   ``-Wshift-overflow3=1``
-    This is the warning level of :option:`-Wshift-overflow3` and ...
+    This is the warning level of :option:`-Wshift-overflow3` and :option:`-Wshift-overflow3` and
+    :option:`-Wshift-overflow3` and :option:`-Wshift-overflow3` and :option:`-Wshift-overflow3` and ...
 
   Enabled by :option:`-Wall`.
 
