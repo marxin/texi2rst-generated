@@ -14,13 +14,13 @@ The following attributes are supported on most targets.
 
 .. gcc-attr:: access (access-mode, ref-index), access (access-mode, ref-index, size-index)
 
-  The ``access`` attribute enables the detection of invalid or unsafe
+  The :gcc-attr:`access` attribute enables the detection of invalid or unsafe
   accesses by functions to which they apply or their callers, as well as
   write-only accesses to objects that are never read from.  Such accesses
   may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
   :option:`-Wuninitialized`, :option:`-Wunused`, and others.
 
-  The ``access`` attribute specifies that a function to whose by-reference
+  The :gcc-attr:`access` attribute specifies that a function to whose by-reference
   arguments the attribute applies accesses the referenced object according to
   :samp:`{access-mode}`.  The :samp:`{access-mode}` argument is required and must be
   one of four names: ``read_only``, ``read_write``, ``write_only``,
@@ -29,7 +29,7 @@ The following attributes are supported on most targets.
   The required :samp:`{ref-index}` positional argument  denotes a function
   argument of pointer (or in C++, reference) type that is subject to
   the access.  The same pointer argument can be referenced by at most one
-  distinct ``access`` attribute.
+  distinct :gcc-attr:`access` attribute.
 
   The optional :samp:`{size-index}` positional argument denotes a function
   argument of integer type that specifies the maximum size of the access.
