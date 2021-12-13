@@ -12,82 +12,84 @@ The following attributes are supported on most targets.
 
 .. Keep this table alphabetized by attribute name.  Treat _ as space.
 
-:samp:`access ({access-mode}, {ref-index})`:samp:`access ({access-mode}, {ref-index}, {size-index})`The ``access`` attribute enables the detection of invalid or unsafe
-accesses by functions to which they apply or their callers, as well as
-write-only accesses to objects that are never read from.  Such accesses
-may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
-:option:`-Wuninitialized`, :option:`-Wunused`, and others.
+.. gcc-attr:: access (access-mode, ref-index), access (access-mode, ref-index, size-index)
 
-The ``access`` attribute specifies that a function to whose by-reference
-arguments the attribute applies accesses the referenced object according to
-:samp:`{access-mode}`.  The :samp:`{access-mode}` argument is required and must be
-one of four names: ``read_only``, ``read_write``, ``write_only``,
-or ``none``.  The remaining two are positional arguments.
+  The ``access`` attribute enables the detection of invalid or unsafe
+  accesses by functions to which they apply or their callers, as well as
+  write-only accesses to objects that are never read from.  Such accesses
+  may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
+  :option:`-Wuninitialized`, :option:`-Wunused`, and others.
 
-The required :samp:`{ref-index}` positional argument  denotes a function
-argument of pointer (or in C++, reference) type that is subject to
-the access.  The same pointer argument can be referenced by at most one
-distinct ``access`` attribute.
+  The ``access`` attribute specifies that a function to whose by-reference
+  arguments the attribute applies accesses the referenced object according to
+  :samp:`{access-mode}`.  The :samp:`{access-mode}` argument is required and must be
+  one of four names: ``read_only``, ``read_write``, ``write_only``,
+  or ``none``.  The remaining two are positional arguments.
 
-The optional :samp:`{size-index}` positional argument denotes a function
-argument of integer type that specifies the maximum size of the access.
-The size is the number of elements of the type referenced by :samp:`{ref-index}`,
-or the number of bytes when the pointer type is ``void*``.  When no
-:samp:`{size-index}` argument is specified, the pointer argument must be either
-null or point to a space that is suitably aligned and large for at least one
-object of the referenced type (this implies that a past-the-end pointer is
-not a valid argument).  The actual size of the access may be less but it
-must not be more.
+  The required :samp:`{ref-index}` positional argument  denotes a function
+  argument of pointer (or in C++, reference) type that is subject to
+  the access.  The same pointer argument can be referenced by at most one
+  distinct ``access`` attribute.
 
-The ``read_only`` access mode specifies that the pointer to which it
-applies is used to read the referenced object but not write to it.  Unless
-the argument specifying the size of the access denoted by :samp:`{size-index}`
-is zero, the referenced object must be initialized.  The mode implies
-a stronger guarantee than the ``const`` qualifier which, when cast away
-from a pointer, does not prevent the pointed-to object from being modified.
-Examples of the use of the ``read_only`` access mode is the argument to
-the ``puts`` function, or the second and third arguments to
-the ``memcpy`` function.
+  The optional :samp:`{size-index}` positional argument denotes a function
+  argument of integer type that specifies the maximum size of the access.
+  The size is the number of elements of the type referenced by :samp:`{ref-index}`,
+  or the number of bytes when the pointer type is ``void*``.  When no
+  :samp:`{size-index}` argument is specified, the pointer argument must be either
+  null or point to a space that is suitably aligned and large for at least one
+  object of the referenced type (this implies that a past-the-end pointer is
+  not a valid argument).  The actual size of the access may be less but it
+  must not be more.
 
-.. code-block:: c++
+  The ``read_only`` access mode specifies that the pointer to which it
+  applies is used to read the referenced object but not write to it.  Unless
+  the argument specifying the size of the access denoted by :samp:`{size-index}`
+  is zero, the referenced object must be initialized.  The mode implies
+  a stronger guarantee than the ``const`` qualifier which, when cast away
+  from a pointer, does not prevent the pointed-to object from being modified.
+  Examples of the use of the ``read_only`` access mode is the argument to
+  the ``puts`` function, or the second and third arguments to
+  the ``memcpy`` function.
 
-  __attribute__ ((access (read_only, 1))) int puts (const char*);
-  __attribute__ ((access (read_only, 2, 3))) void* memcpy (void*, const void*, size_t);
+  .. code-block:: c++
 
-The ``read_write`` access mode applies to arguments of pointer types
-without the ``const`` qualifier.  It specifies that the pointer to which
-it applies is used to both read and write the referenced object.  Unless
-the argument specifying the size of the access denoted by :samp:`{size-index}`
-is zero, the object referenced by the pointer must be initialized.  An example
-of the use of the ``read_write`` access mode is the first argument to
-the ``strcat`` function.
+    __attribute__ ((access (read_only, 1))) int puts (const char*);
+    __attribute__ ((access (read_only, 2, 3))) void* memcpy (void*, const void*, size_t);
 
-.. code-block:: c++
+  The ``read_write`` access mode applies to arguments of pointer types
+  without the ``const`` qualifier.  It specifies that the pointer to which
+  it applies is used to both read and write the referenced object.  Unless
+  the argument specifying the size of the access denoted by :samp:`{size-index}`
+  is zero, the object referenced by the pointer must be initialized.  An example
+  of the use of the ``read_write`` access mode is the first argument to
+  the ``strcat`` function.
 
-  __attribute__ ((access (read_write, 1), access (read_only, 2))) char* strcat (char*, const char*);
+  .. code-block:: c++
 
-The ``write_only`` access mode applies to arguments of pointer types
-without the ``const`` qualifier.  It specifies that the pointer to which
-it applies is used to write to the referenced object but not read from it.
-The object referenced by the pointer need not be initialized.  An example
-of the use of the ``write_only`` access mode is the first argument to
-the ``strcpy`` function, or the first two arguments to the ``fgets``
-function.
+    __attribute__ ((access (read_write, 1), access (read_only, 2))) char* strcat (char*, const char*);
 
-.. code-block:: c++
+  The ``write_only`` access mode applies to arguments of pointer types
+  without the ``const`` qualifier.  It specifies that the pointer to which
+  it applies is used to write to the referenced object but not read from it.
+  The object referenced by the pointer need not be initialized.  An example
+  of the use of the ``write_only`` access mode is the first argument to
+  the ``strcpy`` function, or the first two arguments to the ``fgets``
+  function.
 
-  __attribute__ ((access (write_only, 1), access (read_only, 2))) char* strcpy (char*, const char*);
-  __attribute__ ((access (write_only, 1, 2), access (read_write, 3))) int fgets (char*, int, FILE*);
+  .. code-block:: c++
 
-The access mode ``none`` specifies that the pointer to which it applies
-is not used to access the referenced object at all.  Unless the pointer is
-null the pointed-to object must exist and have at least the size as denoted
-by the :samp:`{size-index}` argument.  When the optional :samp:`{size-index}`
-argument is omitted for an argument of ``void*`` type the actual pointer
-agument is ignored.  The referenced object need not be initialized.
-The mode is intended to be used as a means to help validate the expected
-object size, for example in functions that call ``__builtin_object_size``.
-See :ref:`object-size-checking`.
+    __attribute__ ((access (write_only, 1), access (read_only, 2))) char* strcpy (char*, const char*);
+    __attribute__ ((access (write_only, 1, 2), access (read_write, 3))) int fgets (char*, int, FILE*);
+
+  The access mode ``none`` specifies that the pointer to which it applies
+  is not used to access the referenced object at all.  Unless the pointer is
+  null the pointed-to object must exist and have at least the size as denoted
+  by the :samp:`{size-index}` argument.  When the optional :samp:`{size-index}`
+  argument is omitted for an argument of ``void*`` type the actual pointer
+  agument is ignored.  The referenced object need not be initialized.
+  The mode is intended to be used as a means to help validate the expected
+  object size, for example in functions that call ``__builtin_object_size``.
+  See :ref:`object-size-checking`.
 
 .. gcc-attr:: alias ("target")
 
