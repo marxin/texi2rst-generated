@@ -156,6 +156,7 @@ latex_use_xindy = False
 latex_elements = {
     'preamble': r'''
 \fvset{formatcom=\let\textbf\relax}
+\protected\def\sphinxcrossref#1{#1}
 ''',
 }
 
