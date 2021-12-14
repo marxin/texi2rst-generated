@@ -145,9 +145,6 @@ suppress_warnings = [
 # sphinx-build -j auto is supported since 1.7
 needs_sphinx = '1.7'
 
-# Use xelatex by default
-latex_engine = 'xelatex'
-
 latex_logo = '../logo.pdf'
 
 # TODO: Remove once xindy works in an openSUSE container
