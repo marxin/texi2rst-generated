@@ -154,6 +154,7 @@ latex_elements = {
     'preamble': r'''
 \fvset{formatcom=\let\textbf\relax}
 ''',
+}
 
 texinfo_cross_references = False
 
