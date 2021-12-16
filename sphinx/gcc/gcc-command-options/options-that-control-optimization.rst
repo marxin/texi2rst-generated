@@ -1949,6 +1949,16 @@ optimizations to be performed is desired.
   The :option:`-fstrict-aliasing` option is enabled at levels
   :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
+.. option:: -fipa-strict-aliasing
+
+  Constrols whether rules of :option:`-fstrict-aliasing` are applied across
+  function boundaries.  Note that if multiple functions gets inlined into a
+  signle function the memory accesses are no longer considred to be crossing a
+  function bounday.
+
+  The :option:`-fipa-strict-aliasing` option is enabled by default and is
+  effective only in combination with :option:`-fstrict-aliasing`.
+
 .. option:: -falign-functions, -falign-functions=n, -falign-functions=n:m, -falign-functions=n:m:n2, -falign-functions=n:m:n2:m2
 
   Align the start of functions to the next power-of-two greater than or

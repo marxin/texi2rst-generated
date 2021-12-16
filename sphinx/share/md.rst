@@ -2206,6 +2206,14 @@ the meanings of that architecture's constraints.
   ``eI``
     A signed 34-bit integer constant if prefixed instructions are supported.
 
+  ``eP``
+    A scalar floating point constant or a vector constant that can be
+    loaded to a VSX register with one prefixed instruction.
+
+  ``eQ``
+    An IEEE 128-bit constant that can be loaded into a VSX register with
+    the ``lxvkq`` instruction.
+
   ``G``
     A floating point constant that can be loaded into a register with one
     instruction per word.

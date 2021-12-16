@@ -176,6 +176,7 @@ These options are defined for AArch64 implementations:
   :samp:`armv8.5-a`     Armv8.5-A     :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
   :samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
   :samp:`armv8.7-a`     Armv8.7-A     :samp:`armv8.6-a`, :samp:`+ls64`
+  :samp:`armv8.8-a`     Armv8.8-a     :samp:`armv8.7-a`, :samp:`+mops`
   :samp:`armv9-a`       Armv9-A       :samp:`armv8.5-a`, :samp:`+sve`, :samp:`+sve2`
   :samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
   ====================  ============  =====================================================================
@@ -492,6 +493,11 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`ls64`
   Enable the 64-byte atomic load and store instructions for accelerators.
   This option is enabled by default for :option:`-march`:samp:`=armv8.7-a`.
+
+:samp:`mops`
+  Enable the instructions to accelerate memory operations like ``memcpy``,
+  ``memmove``, ``memset``.  This option is enabled by default for
+  :option:`-march`:samp:`=armv8.8-a`
 
 :samp:`flagm`
   Enable the Flag Manipulation instructions Extension.

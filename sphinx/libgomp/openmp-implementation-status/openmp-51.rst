@@ -11,9 +11,9 @@ OpenMP 5.1
 New features listed in Appendix B of the OpenMP specification
 *************************************************************
 
-========================================================================  ======  ==================================
+========================================================================  ======  =============================
 Description                                                               Status  Comments
-========================================================================  ======  ==================================
+========================================================================  ======  =============================
 OpenMP directive as C++ attribute specifiers                              Y
 ``omp_all_memory`` reserved locator                                       N
 *target_device trait* in OpenMP Context                                   N
@@ -43,7 +43,7 @@ indirect calls to the device version of a procedure or function in        N
 ``interop`` directive                                                     N
 ``omp_interop_t`` object support in runtime routines                      N
 ``nowait`` clause in ``taskwait`` directive                               N
-Extensions to the ``atomic`` directive                                    P       ``compare`` unsupported in Fortran
+Extensions to the ``atomic`` directive                                    Y
 ``seq_cst`` clause on a ``flush`` construct                               Y
 ``inoutset`` argument to the ``depend`` clause                            N
 ``private`` and ``firstprivate`` argument to ``default``                  Y
@@ -72,7 +72,7 @@ Extensions to the ``atomic`` directive                                    P     
 ``OMP_PLACES`` syntax extensions                                          Y
 ``OMP_NUM_TEAMS`` and ``OMP_TEAMS_THREAD_LIMIT`` environment              Y
       variables
-========================================================================  ======  ==================================
+========================================================================  ======  =============================
 
 Other new OpenMP 5.1 features
 *****************************
