@@ -36,6 +36,10 @@ I'm a demo documentation page.
 
   Enabled by :option:`-Wall`.
 
+.. option:: -Wauggest-attribute=[pure|const|noreturn|format|cold|malloc]
+
+   Suggest it.
+
 
 .. option:: -Wall
 
