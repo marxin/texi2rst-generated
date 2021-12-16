@@ -404,7 +404,7 @@ in the following sections.
   :option:`-fsingle-precision-constant`  :option:`-fsplit-ivs-in-unroller`  :option:`-fsplit-loops`
   :option:`-fsplit-paths` 
   :option:`-fsplit-wide-types`  :option:`-fsplit-wide-types-early`  :option:`-fssa-backprop`  :option:`-fssa-phiopt` 
-  :option:`-fstdarg-opt`  :option:`-fstore-merging`  :option:`-fstrict-aliasing` 
+  :option:`-fstdarg-opt`  :option:`-fstore-merging`  :option:`-fstrict-aliasing` :option:`-fipa-strict-aliasing` 
   :option:`-fthread-jumps`  :option:`-ftracer`  :option:`-ftree-bit-ccp` 
   :option:`-ftree-builtin-call-dce`  :option:`-ftree-ccp`  :option:`-ftree-ch` 
   :option:`-ftree-coalesce-vars`  :option:`-ftree-copy-prop`  :option:`-ftree-dce`  :option:`-ftree-dominator-opts` 

@@ -123,19 +123,20 @@ These options affect the runtime behavior of programs compiled with
 
   :samp:`c++98`
   :samp:`c++03`
-    Sets ``__traits(getTargetInfo "cppStd")`` to ``199711``.
+    Sets ``__traits(getTargetInfo, "cppStd")`` to ``199711``.
 
   :samp:`c++11`
-    Sets ``__traits(getTargetInfo "cppStd")`` to ``201103``.
+    Sets ``__traits(getTargetInfo, "cppStd")`` to ``201103``.
 
   :samp:`c++14`
-    Sets ``__traits(getTargetInfo "cppStd")`` to ``201402``.
+    Sets ``__traits(getTargetInfo, "cppStd")`` to ``201402``.
 
   :samp:`c++17`
-    Sets ``__traits(getTargetInfo "cppStd")`` to ``201703``.
+    Sets ``__traits(getTargetInfo, "cppStd")`` to ``201703``.
+    This is the default.
 
   :samp:`c++20`
-    Sets ``__traits(getTargetInfo "cppStd")`` to ``202002``.
+    Sets ``__traits(getTargetInfo, "cppStd")`` to ``202002``.
 
 .. option:: -fno-invariants
 

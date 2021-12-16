@@ -2265,6 +2265,10 @@ PowerPC and IBM RS6000---:samp:`{config/rs6000/constraints.md}`
   ``eI``
     A signed 34-bit integer constant if prefixed instructions are supported.
 
+  ``eQ``
+    An IEEE 128-bit constant that can be loaded into a VSX register with
+    the ``lxvkq`` instruction.
+
   .. only:: gccint
 
     ``G``
