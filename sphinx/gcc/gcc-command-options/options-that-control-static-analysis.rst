@@ -18,30 +18,30 @@ Options That Control Static Analysis
 
   Enabling this option effectively enables the following warnings:
 
-  :option:`-Wanalyzer-double-fclose` 
-  :option:`-Wanalyzer-double-free` 
-  :option:`-Wanalyzer-exposure-through-output-file` 
-  :option:`-Wanalyzer-file-leak` 
-  :option:`-Wanalyzer-free-of-non-heap` 
-  :option:`-Wanalyzer-malloc-leak` 
-  :option:`-Wanalyzer-mismatching-deallocation` 
-  :option:`-Wanalyzer-possible-null-argument` 
-  :option:`-Wanalyzer-possible-null-dereference` 
-  :option:`-Wanalyzer-null-argument` 
-  :option:`-Wanalyzer-null-dereference` 
-  :option:`-Wanalyzer-shift-count-negative` 
-  :option:`-Wanalyzer-shift-count-overflow` 
-  :option:`-Wanalyzer-stale-setjmp-buffer` 
-  :option:`-Wanalyzer-tainted-allocation-size` 
-  :option:`-Wanalyzer-tainted-array-index` 
-  :option:`-Wanalyzer-tainted-divisor` 
-  :option:`-Wanalyzer-tainted-offset` 
-  :option:`-Wanalyzer-tainted-size` 
-  :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
-  :option:`-Wanalyzer-use-after-free` 
-  :option:`-Wanalyzer-use-of-uninitialized-value` 
-  :option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
-  :option:`-Wanalyzer-write-to-const` 
+  :option:`-Wanalyzer-double-fclose` |gol|
+  :option:`-Wanalyzer-double-free` |gol|
+  :option:`-Wanalyzer-exposure-through-output-file` |gol|
+  :option:`-Wanalyzer-file-leak` |gol|
+  :option:`-Wanalyzer-free-of-non-heap` |gol|
+  :option:`-Wanalyzer-malloc-leak` |gol|
+  :option:`-Wanalyzer-mismatching-deallocation` |gol|
+  :option:`-Wanalyzer-possible-null-argument` |gol|
+  :option:`-Wanalyzer-possible-null-dereference` |gol|
+  :option:`-Wanalyzer-null-argument` |gol|
+  :option:`-Wanalyzer-null-dereference` |gol|
+  :option:`-Wanalyzer-shift-count-negative` |gol|
+  :option:`-Wanalyzer-shift-count-overflow` |gol|
+  :option:`-Wanalyzer-stale-setjmp-buffer` |gol|
+  :option:`-Wanalyzer-tainted-allocation-size` |gol|
+  :option:`-Wanalyzer-tainted-array-index` |gol|
+  :option:`-Wanalyzer-tainted-divisor` |gol|
+  :option:`-Wanalyzer-tainted-offset` |gol|
+  :option:`-Wanalyzer-tainted-size` |gol|
+  :option:`-Wanalyzer-unsafe-call-within-signal-handler` |gol|
+  :option:`-Wanalyzer-use-after-free` |gol|
+  :option:`-Wanalyzer-use-of-uninitialized-value` |gol|
+  :option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` |gol|
+  :option:`-Wanalyzer-write-to-const` |gol|
   :option:`-Wanalyzer-write-to-string-literal` 
 
   This option is only available if GCC was configured with analyzer

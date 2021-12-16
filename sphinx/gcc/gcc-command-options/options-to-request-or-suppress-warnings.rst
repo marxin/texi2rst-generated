@@ -183,66 +183,66 @@ warn at all unless optimization is enabled.
 
   :option:`-Wall` turns on the following warning flags:
 
-  :option:`-Waddress`   
-  :option:`-Warray-bounds`:samp:`=1` (only with :option:`-O2` )  
-  :option:`-Warray-compare` 
-  :option:`-Warray-parameter`:samp:`=2` (C and Objective-C only) 
-  :option:`-Wbool-compare`  
-  :option:`-Wbool-operation`  
-  :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  
-  :option:`-Wcatch-value` (C++ and Objective-C++ only)
-  :option:`-Wchar-subscripts`  
-  :option:`-Wcomment`  
-  :option:`-Wduplicate-decl-specifier` (C and Objective-C only)
-  :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
-  :option:`-Wformat`   
-  :option:`-Wformat-overflow`  
-  :option:`-Wformat-truncation`  
-  :option:`-Wint-in-bool-context`  
-  :option:`-Wimplicit` (C and Objective-C only)
-  :option:`-Wimplicit-int` (C and Objective-C only)
-  :option:`-Wimplicit-function-declaration` (C and Objective-C only)
-  :option:`-Winit-self` (only for C++) 
-  :option:`-Wlogical-not-parentheses` 
-  :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` )
-  :option:`-Wmaybe-uninitialized` 
-  :option:`-Wmemset-elt-size` 
-  :option:`-Wmemset-transposed-args` 
-  :option:`-Wmisleading-indentation` (only for C/C++) 
-  :option:`-Wmismatched-dealloc` 
-  :option:`-Wmismatched-new-delete` (only for C/C++) 
-  :option:`-Wmissing-attributes` 
-  :option:`-Wmissing-braces` (only for C/ObjC) 
-  :option:`-Wmultistatement-macros`  
-  :option:`-Wnarrowing` (only for C++)  
-  :option:`-Wnonnull`  
-  :option:`-Wnonnull-compare`  
-  :option:`-Wopenmp-simd` 
-  :option:`-Wparentheses`  
-  :option:`-Wpessimizing-move` (only for C++)  
-  :option:`-Wpointer-sign`  
-  :option:`-Wrange-loop-construct` (only for C++)  
-  :option:`-Wreorder`   
-  :option:`-Wrestrict`   
-  :option:`-Wreturn-type`  
-  :option:`-Wsequence-point`  
-  :option:`-Wsign-compare` (only in C++)  
-  :option:`-Wsizeof-array-div` 
-  :option:`-Wsizeof-pointer-div` 
-  :option:`-Wsizeof-pointer-memaccess` 
-  :option:`-Wstrict-aliasing`  
-  :option:`-Wstrict-overflow`:samp:`=1`  
-  :option:`-Wswitch`  
-  :option:`-Wtautological-compare`  
-  :option:`-Wtrigraphs`  
-  :option:`-Wuninitialized`  
-  :option:`-Wunknown-pragmas`  
-  :option:`-Wunused-function`  
-  :option:`-Wunused-label`     
-  :option:`-Wunused-value`     
-  :option:`-Wunused-variable`  
-  :option:`-Wvla-parameter` (C and Objective-C only) 
-  :option:`-Wvolatile-register-var`  
+  :option:`-Waddress` |gol|
+  :option:`-Warray-bounds`:samp:`=1` (only with :option:`-O2` ) |gol|
+  :option:`-Warray-compare` |gol|
+  :option:`-Warray-parameter`:samp:`=2` (C and Objective-C only) |gol|
+  :option:`-Wbool-compare` |gol|
+  :option:`-Wbool-operation` |gol|
+  :option:`-Wc++11-compat`  :option:`-Wc++14-compat` |gol|
+  :option:`-Wcatch-value` (C++ and Objective-C++ only) |gol|
+  :option:`-Wchar-subscripts` |gol|
+  :option:`-Wcomment` |gol|
+  :option:`-Wduplicate-decl-specifier` (C and Objective-C only) |gol|
+  :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) |gol|
+  :option:`-Wformat` |gol|
+  :option:`-Wformat-overflow` |gol|
+  :option:`-Wformat-truncation` |gol|
+  :option:`-Wint-in-bool-context` |gol|
+  :option:`-Wimplicit` (C and Objective-C only) |gol|
+  :option:`-Wimplicit-int` (C and Objective-C only) |gol|
+  :option:`-Wimplicit-function-declaration` (C and Objective-C only) |gol|
+  :option:`-Winit-self` (only for C++) |gol|
+  :option:`-Wlogical-not-parentheses` |gol|
+  :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` ) |gol|
+  :option:`-Wmaybe-uninitialized` |gol|
+  :option:`-Wmemset-elt-size` |gol|
+  :option:`-Wmemset-transposed-args` |gol|
+  :option:`-Wmisleading-indentation` (only for C/C++) |gol|
+  :option:`-Wmismatched-dealloc` |gol|
+  :option:`-Wmismatched-new-delete` (only for C/C++) |gol|
+  :option:`-Wmissing-attributes` |gol|
+  :option:`-Wmissing-braces` (only for C/ObjC) |gol|
+  :option:`-Wmultistatement-macros` |gol|
+  :option:`-Wnarrowing` (only for C++) |gol|
+  :option:`-Wnonnull` |gol|
+  :option:`-Wnonnull-compare` |gol|
+  :option:`-Wopenmp-simd` |gol|
+  :option:`-Wparentheses` |gol|
+  :option:`-Wpessimizing-move` (only for C++) |gol|
+  :option:`-Wpointer-sign` |gol|
+  :option:`-Wrange-loop-construct` (only for C++) |gol|
+  :option:`-Wreorder` |gol|
+  :option:`-Wrestrict` |gol|
+  :option:`-Wreturn-type` |gol|
+  :option:`-Wsequence-point` |gol|
+  :option:`-Wsign-compare` (only in C++) |gol|
+  :option:`-Wsizeof-array-div` |gol|
+  :option:`-Wsizeof-pointer-div` |gol|
+  :option:`-Wsizeof-pointer-memaccess` |gol|
+  :option:`-Wstrict-aliasing` |gol|
+  :option:`-Wstrict-overflow`:samp:`=1` |gol|
+  :option:`-Wswitch` |gol|
+  :option:`-Wtautological-compare` |gol|
+  :option:`-Wtrigraphs` |gol|
+  :option:`-Wuninitialized` |gol|
+  :option:`-Wunknown-pragmas` |gol|
+  :option:`-Wunused-function` |gol|
+  :option:`-Wunused-label` |gol|
+  :option:`-Wunused-value` |gol|
+  :option:`-Wunused-variable` |gol|
+  :option:`-Wvla-parameter` (C and Objective-C only) |gol|
+  :option:`-Wvolatile-register-var` |gol|
   :option:`-Wzero-length-bounds`
 
   Note that some warning flags are not implied by :option:`-Wall`.  Some of
@@ -263,25 +263,26 @@ warn at all unless optimization is enabled.
   :option:`-Wall`. (This option used to be called :option:`-W`.  The older
   name is still supported, but the newer name is more descriptive.)
 
-  :option:`-Wclobbered`  
-  :option:`-Wcast-function-type`  
-  :option:`-Wdeprecated-copy` (C++ only) 
-  :option:`-Wempty-body`  
-  :option:`-Wenum-conversion` (C only) 
-  :option:`-Wignored-qualifiers` 
-  :option:`-Wimplicit-fallthrough`:samp:`=3` 
-  :option:`-Wmissing-field-initializers`  
-  :option:`-Wmissing-parameter-type` (C only)  
-  :option:`-Wold-style-declaration` (C only)  
-  :option:`-Woverride-init`  
-  :option:`-Wsign-compare` (C only) 
-  :option:`-Wstring-compare` 
-  :option:`-Wredundant-move` (only for C++)  
-  :option:`-Wtype-limits`  
-  :option:`-Wuninitialized`  
-  :option:`-Wshift-negative-value` (in C++03 and in C99 and newer)  
-  :option:`-Wunused-parameter` (only with :option:`-Wunused` or :option:`-Wall` ) 
+  :option:`-Wclobbered` |gol|
+  :option:`-Wcast-function-type` |gol|
+  :option:`-Wdeprecated-copy` (C++ only) |gol|
+  :option:`-Wempty-body` |gol|
+  :option:`-Wenum-conversion` (C only) |gol|
+  :option:`-Wignored-qualifiers` |gol|
+  :option:`-Wimplicit-fallthrough`:samp:`=3` |gol|
+  :option:`-Wmissing-field-initializers` |gol|
+  :option:`-Wmissing-parameter-type` (C only) |gol|
+  :option:`-Wold-style-declaration` (C only) |gol|
+  :option:`-Woverride-init` |gol|
+  :option:`-Wsign-compare` (C only) |gol|
+  :option:`-Wstring-compare` |gol|
+  :option:`-Wredundant-move` (only for C++) |gol|
+  :option:`-Wtype-limits` |gol|
+  :option:`-Wuninitialized` |gol|
+  :option:`-Wshift-negative-value` (in C++03 and in C99 and newer) |gol|
+  :option:`-Wunused-parameter` (only with :option:`-Wunused` or :option:`-Wall` ) |gol|
   :option:`-Wunused-but-set-parameter` (only with :option:`-Wunused` or :option:`-Wall` )
+
   The option :option:`-Wextra` also prints warning messages for the
   following cases:
 

@@ -1291,9 +1291,9 @@ optimizations to be performed is desired.
 
     :option:`-flive-patching`:samp:`=inline-clone` disables the following optimization flags:
 
-    :option:`-fwhole-program`  :option:`-fipa-pta`  :option:`-fipa-reference`  :option:`-fipa-ra` 
-    :option:`-fipa-icf`  :option:`-fipa-icf-functions`  :option:`-fipa-icf-variables` 
-    :option:`-fipa-bit-cp`  :option:`-fipa-vrp`  :option:`-fipa-pure-const`  :option:`-fipa-reference-addressable` 
+    :option:`-fwhole-program`  :option:`-fipa-pta`  :option:`-fipa-reference`  :option:`-fipa-ra` |gol|
+    :option:`-fipa-icf`  :option:`-fipa-icf-functions`  :option:`-fipa-icf-variables` |gol|
+    :option:`-fipa-bit-cp`  :option:`-fipa-vrp`  :option:`-fipa-pure-const`  :option:`-fipa-reference-addressable` |gol|
     :option:`-fipa-stack-alignment` :option:`-fipa-modref`
 
   :samp:`inline-only-static`
@@ -1307,6 +1307,7 @@ optimizations to be performed is desired.
     optimization flags:
 
     :option:`-fipa-cp-clone`  :option:`-fipa-sra`  :option:`-fpartial-inlining`  :option:`-fipa-cp`
+
     When :option:`-flive-patching` is specified without any value, the default value
     is :samp:`{inline-clone}`.
 

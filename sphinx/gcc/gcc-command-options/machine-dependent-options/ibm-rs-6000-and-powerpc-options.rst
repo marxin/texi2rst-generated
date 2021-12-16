@@ -93,14 +93,15 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   The :option:`-mcpu` options automatically enable or disable the
   following options:
 
-  :option:`-maltivec`  :option:`-mfprnd`  :option:`-mhard-float`  :option:`-mmfcrf`  :option:`-mmultiple` 
-  :option:`-mpopcntb`  :option:`-mpopcntd`  :option:`-mpowerpc64` 
-  :option:`-mpowerpc-gpopt`  :option:`-mpowerpc-gfxopt` 
-  :option:`-mmulhw`  :option:`-mdlmzb`  :option:`-mmfpgpr`  :option:`-mvsx` 
-  :option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` 
-  :option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` 
-  :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma` 
-  :option:`-mrop-protect`
+  :option:`-maltivec`  :option:`-mfprnd`  :option:`-mhard-float`  :option:`-mmfcrf`  :option:`-mmultiple` |gol|
+  :option:`-mpopcntb`  :option:`-mpopcntd`  :option:`-mpowerpc64` |gol|
+  :option:`-mpowerpc-gpopt`  :option:`-mpowerpc-gfxopt` |gol|
+  :option:`-mmulhw`  :option:`-mdlmzb`  :option:`-mmfpgpr`  :option:`-mvsx` |gol|
+  :option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` |gol|
+  :option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` |gol|
+  :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma` |gol|
+  :option:`-mrop-protect
+
   The particular options set for any particular CPU varies between
   compiler versions, depending on what setting seems to produce optimal
   code for that CPU; it doesn't necessarily reflect the actual hardware's

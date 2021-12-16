@@ -42,11 +42,12 @@ honor these options.
   :option:`-fdiagnostics-plain-output` is currently equivalent to the following
   options:
 
-  :option:`-fno-diagnostics-show-caret` 
-  :option:`-fno-diagnostics-show-line-numbers` 
-  :option:`-fdiagnostics-color`:samp:`=never` 
-  :option:`-fdiagnostics-urls`:samp:`=never` 
+  :option:`-fno-diagnostics-show-caret` |gol|
+  :option:`-fno-diagnostics-show-line-numbers`  |gol|
+  :option:`-fdiagnostics-color`:samp:`=never`  |gol|
+  :option:`-fdiagnostics-urls`:samp:`=never`  |gol|
   :option:`-fdiagnostics-path-format`:samp:`=separate-events`
+
   In the future, if GCC changes the default appearance of its diagnostics, the
   corresponding option to disable the new behavior will be added to this list.
 

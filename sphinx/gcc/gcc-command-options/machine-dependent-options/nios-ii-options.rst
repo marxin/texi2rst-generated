@@ -272,53 +272,53 @@ These are the options defined for the Altera Nios II processor.
 
   :option:`-mcustom-fpu-cfg`:samp:`=60-1` is equivalent to:
 
-  :option:`-mcustom-fmuls`:samp:`=252` 
-  :option:`-mcustom-fadds`:samp:`=253` 
-  :option:`-mcustom-fsubs`:samp:`=254` 
+  :option:`-mcustom-fmuls`:samp:`=252` |gol|
+  :option:`-mcustom-fadds`:samp:`=253` |gol|
+  :option:`-mcustom-fsubs`:samp:`=254` |gol|
   :option:`-fsingle-precision-constant`
 
   :option:`-mcustom-fpu-cfg`:samp:`=60-2` is equivalent to:
 
   :option:`-mcustom-fmuls`:samp:`=252` 
-  :option:`-mcustom-fadds`:samp:`=253` 
-  :option:`-mcustom-fsubs`:samp:`=254` 
-  :option:`-mcustom-fdivs`:samp:`=255` 
-  :option:`-fsingle-precision-constant`
+  :option:`-mcustom-fadds`:samp:`=253` |gol|
+  :option:`-mcustom-fsubs`:samp:`=254` |gol|
+  :option:`-mcustom-fdivs`:samp:`=255` |gol|
+  :option:`-fsingle-precision-constant` |gol|
 
   :option:`-mcustom-fpu-cfg`:samp:`=72-3` is equivalent to:
 
-  :option:`-mcustom-floatus`:samp:`=243` 
-  :option:`-mcustom-fixsi`:samp:`=244` 
-  :option:`-mcustom-floatis`:samp:`=245` 
-  :option:`-mcustom-fcmpgts`:samp:`=246` 
-  :option:`-mcustom-fcmples`:samp:`=249` 
-  :option:`-mcustom-fcmpeqs`:samp:`=250` 
-  :option:`-mcustom-fcmpnes`:samp:`=251` 
-  :option:`-mcustom-fmuls`:samp:`=252` 
-  :option:`-mcustom-fadds`:samp:`=253` 
-  :option:`-mcustom-fsubs`:samp:`=254` 
-  :option:`-mcustom-fdivs`:samp:`=255` 
+  :option:`-mcustom-floatus`:samp:`=243` |gol|
+  :option:`-mcustom-fixsi`:samp:`=244` |gol|
+  :option:`-mcustom-floatis`:samp:`=245` |gol|
+  :option:`-mcustom-fcmpgts`:samp:`=246` |gol|
+  :option:`-mcustom-fcmples`:samp:`=249` |gol|
+  :option:`-mcustom-fcmpeqs`:samp:`=250` |gol|
+  :option:`-mcustom-fcmpnes`:samp:`=251` |gol|
+  :option:`-mcustom-fmuls`:samp:`=252` |gol|
+  :option:`-mcustom-fadds`:samp:`=253` |gol|
+  :option:`-mcustom-fsubs`:samp:`=254` |gol|
+  :option:`-mcustom-fdivs`:samp:`=255` |gol|
   :option:`-fsingle-precision-constant`
 
   :option:`-mcustom-fpu-cfg`:samp:`=fph2` is equivalent to:
 
-  :option:`-mcustom-fabss`:samp:`=224` 
-  :option:`-mcustom-fnegs`:samp:`=225` 
-  :option:`-mcustom-fcmpnes`:samp:`=226` 
-  :option:`-mcustom-fcmpeqs`:samp:`=227` 
-  :option:`-mcustom-fcmpges`:samp:`=228` 
-  :option:`-mcustom-fcmpgts`:samp:`=229` 
-  :option:`-mcustom-fcmples`:samp:`=230` 
-  :option:`-mcustom-fcmplts`:samp:`=231` 
-  :option:`-mcustom-fmaxs`:samp:`=232` 
-  :option:`-mcustom-fmins`:samp:`=233` 
-  :option:`-mcustom-round`:samp:`=248` 
-  :option:`-mcustom-fixsi`:samp:`=249` 
-  :option:`-mcustom-floatis`:samp:`=250` 
-  :option:`-mcustom-fsqrts`:samp:`=251` 
-  :option:`-mcustom-fmuls`:samp:`=252` 
-  :option:`-mcustom-fadds`:samp:`=253` 
-  :option:`-mcustom-fsubs`:samp:`=254` 
+  :option:`-mcustom-fabss`:samp:`=224` |gol|
+  :option:`-mcustom-fnegs`:samp:`=225` |gol|
+  :option:`-mcustom-fcmpnes`:samp:`=226` |gol|
+  :option:`-mcustom-fcmpeqs`:samp:`=227` |gol|
+  :option:`-mcustom-fcmpges`:samp:`=228` |gol|
+  :option:`-mcustom-fcmpgts`:samp:`=229` |gol|
+  :option:`-mcustom-fcmples`:samp:`=230` |gol|
+  :option:`-mcustom-fcmplts`:samp:`=231` |gol|
+  :option:`-mcustom-fmaxs`:samp:`=232` |gol|
+  :option:`-mcustom-fmins`:samp:`=233` |gol|
+  :option:`-mcustom-round`:samp:`=248` |gol|
+  :option:`-mcustom-fixsi`:samp:`=249` |gol|
+  :option:`-mcustom-floatis`:samp:`=250` |gol|
+  :option:`-mcustom-fsqrts`:samp:`=251` |gol|
+  :option:`-mcustom-fmuls`:samp:`=252` |gol|
+  :option:`-mcustom-fadds`:samp:`=253` |gol|
+  :option:`-mcustom-fsubs`:samp:`=254` |gol|
   :option:`-mcustom-fdivs`:samp:`=255` 
 
   Custom instruction assignments given by individual
