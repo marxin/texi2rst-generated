@@ -1194,7 +1194,7 @@ to testing:
 
 * Anand Krishnaswamy
 
-* A. O. V. Le Blanc
+* A.O.V. Le Blanc
 
 * llewelly
 
