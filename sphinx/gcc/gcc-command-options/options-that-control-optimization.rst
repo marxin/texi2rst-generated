@@ -122,43 +122,43 @@ See :ref:`overall-options`, for examples.
 
   .. Please keep the following list alphabetized!
 
-  :option:`-falign-functions`  :option:`-falign-jumps` |gol|
-  :option:`-falign-labels`  :option:`-falign-loops` |gol|
-  :option:`-fcaller-saves` |gol|
-  :option:`-fcode-hoisting` |gol|
-  :option:`-fcrossjumping` |gol|
-  :option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks` |gol|
-  :option:`-fdelete-null-pointer-checks` |gol|
-  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` |gol|
-  :option:`-fexpensive-optimizations` |gol|
-  :option:`-ffinite-loops` |gol|
-  :option:`-fgcse`  :option:`-fgcse-lm`  |gol|
-  :option:`-fhoist-adjacent-loads` |gol|
-  :option:`-finline-functions` |gol|
-  :option:`-finline-small-functions` |gol|
-  :option:`-findirect-inlining` |gol|
-  :option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf` |gol|
-  :option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp` |gol|
-  :option:`-fisolate-erroneous-paths-dereference` |gol|
-  :option:`-flra-remat` |gol|
-  :option:`-foptimize-sibling-calls` |gol|
-  :option:`-foptimize-strlen` |gol|
-  :option:`-fpartial-inlining` |gol|
-  :option:`-fpeephole2` |gol|
-  :option:`-freorder-blocks-algorithm`:samp:`=stc` |gol|
-  :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` |gol|
-  :option:`-frerun-cse-after-loop`  |gol|
-  :option:`-fschedule-insns`  :option:`-fschedule-insns2` |gol|
-  :option:`-fsched-interblock`  :option:`-fsched-spec` |gol|
-  :option:`-fstore-merging` |gol|
-  :option:`-fstrict-aliasing` |gol|
-  :option:`-fthread-jumps` |gol|
-  :option:`-ftree-builtin-call-dce` |gol|
-  :option:`-ftree-loop-vectorize` |gol|
-  :option:`-ftree-pre` |gol|
-  :option:`-ftree-slp-vectorize` |gol|
-  :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` |gol|
-  :option:`-ftree-vrp` |gol|
+  :option:`-falign-functions`  :option:`-falign-jumps`
+  :option:`-falign-labels`  :option:`-falign-loops`
+  :option:`-fcaller-saves`
+  :option:`-fcode-hoisting`
+  :option:`-fcrossjumping`
+  :option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks`
+  :option:`-fdelete-null-pointer-checks`
+  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively`
+  :option:`-fexpensive-optimizations`
+  :option:`-ffinite-loops`
+  :option:`-fgcse`  :option:`-fgcse-lm`
+  :option:`-fhoist-adjacent-loads`
+  :option:`-finline-functions`
+  :option:`-finline-small-functions`
+  :option:`-findirect-inlining`
+  :option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf`
+  :option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp`
+  :option:`-fisolate-erroneous-paths-dereference`
+  :option:`-flra-remat`
+  :option:`-foptimize-sibling-calls`
+  :option:`-foptimize-strlen`
+  :option:`-fpartial-inlining`
+  :option:`-fpeephole2`
+  :option:`-freorder-blocks-algorithm`:samp:`=stc`
+  :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions`
+  :option:`-frerun-cse-after-loop`
+  :option:`-fschedule-insns`  :option:`-fschedule-insns2`
+  :option:`-fsched-interblock`  :option:`-fsched-spec`
+  :option:`-fstore-merging`
+  :option:`-fstrict-aliasing`
+  :option:`-fthread-jumps`
+  :option:`-ftree-builtin-call-dce`
+  :option:`-ftree-loop-vectorize`
+  :option:`-ftree-pre`
+  :option:`-ftree-slp-vectorize`
+  :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge`
+  :option:`-ftree-vrp`
   :option:`-fvect-cost-model`:samp:`=very-cheap`
 
   Please note the warning under :option:`-fgcse` about
