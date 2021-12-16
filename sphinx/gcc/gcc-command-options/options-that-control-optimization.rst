@@ -62,52 +62,52 @@ See :ref:`overall-options`, for examples.
 
   .. Please keep the following list alphabetized.
 
-  :option:`-fauto-inc-dec` |gol|
-  :option:`-fbranch-count-reg` |gol|
-  :option:`-fcombine-stack-adjustments` |gol|
-  :option:`-fcompare-elim` |gol|
-  :option:`-fcprop-registers` |gol|
-  :option:`-fdce` |gol|
-  :option:`-fdefer-pop` |gol|
-  :option:`-fdelayed-branch` |gol|
-  :option:`-fdse` |gol|
-  :option:`-fforward-propagate` |gol|
-  :option:`-fguess-branch-probability` |gol|
-  :option:`-fif-conversion` |gol|
-  :option:`-fif-conversion2` |gol|
-  :option:`-finline-functions-called-once` |gol|
-  :option:`-fipa-modref` |gol|
-  :option:`-fipa-profile` |gol|
-  :option:`-fipa-pure-const` |gol|
-  :option:`-fipa-reference` |gol|
-  :option:`-fipa-reference-addressable` |gol|
-  :option:`-fmerge-constants` |gol|
-  :option:`-fmove-loop-invariants` |gol|
-  :option:`-fmove-loop-stores` |gol|
-  :option:`-fomit-frame-pointer` |gol|
-  :option:`-freorder-blocks` |gol|
-  :option:`-fshrink-wrap` |gol|
-  :option:`-fshrink-wrap-separate` |gol|
-  :option:`-fsplit-wide-types` |gol|
-  :option:`-fssa-backprop` |gol|
-  :option:`-fssa-phiopt` |gol|
-  :option:`-ftree-bit-ccp` |gol|
-  :option:`-ftree-ccp` |gol|
-  :option:`-ftree-ch` |gol|
-  :option:`-ftree-coalesce-vars` |gol|
-  :option:`-ftree-copy-prop` |gol|
-  :option:`-ftree-dce` |gol|
-  :option:`-ftree-dominator-opts` |gol|
-  :option:`-ftree-dse` |gol|
-  :option:`-ftree-forwprop` |gol|
-  :option:`-ftree-fre` |gol|
-  :option:`-ftree-phiprop` |gol|
-  :option:`-ftree-pta` |gol|
-  :option:`-ftree-scev-cprop` |gol|
-  :option:`-ftree-sink` |gol|
-  :option:`-ftree-slsr` |gol|
-  :option:`-ftree-sra` |gol|
-  :option:`-ftree-ter` |gol|
+  :option:`-fauto-inc-dec` 
+  :option:`-fbranch-count-reg` 
+  :option:`-fcombine-stack-adjustments` 
+  :option:`-fcompare-elim` 
+  :option:`-fcprop-registers` 
+  :option:`-fdce` 
+  :option:`-fdefer-pop` 
+  :option:`-fdelayed-branch` 
+  :option:`-fdse` 
+  :option:`-fforward-propagate` 
+  :option:`-fguess-branch-probability` 
+  :option:`-fif-conversion` 
+  :option:`-fif-conversion2` 
+  :option:`-finline-functions-called-once` 
+  :option:`-fipa-modref` 
+  :option:`-fipa-profile` 
+  :option:`-fipa-pure-const` 
+  :option:`-fipa-reference` 
+  :option:`-fipa-reference-addressable` 
+  :option:`-fmerge-constants` 
+  :option:`-fmove-loop-invariants` 
+  :option:`-fmove-loop-stores`
+  :option:`-fomit-frame-pointer` 
+  :option:`-freorder-blocks` 
+  :option:`-fshrink-wrap` 
+  :option:`-fshrink-wrap-separate` 
+  :option:`-fsplit-wide-types` 
+  :option:`-fssa-backprop` 
+  :option:`-fssa-phiopt` 
+  :option:`-ftree-bit-ccp` 
+  :option:`-ftree-ccp` 
+  :option:`-ftree-ch` 
+  :option:`-ftree-coalesce-vars` 
+  :option:`-ftree-copy-prop` 
+  :option:`-ftree-dce` 
+  :option:`-ftree-dominator-opts` 
+  :option:`-ftree-dse` 
+  :option:`-ftree-forwprop` 
+  :option:`-ftree-fre` 
+  :option:`-ftree-phiprop` 
+  :option:`-ftree-pta` 
+  :option:`-ftree-scev-cprop` 
+  :option:`-ftree-sink` 
+  :option:`-ftree-slsr` 
+  :option:`-ftree-sra` 
+  :option:`-ftree-ter` 
   :option:`-funit-at-a-time`
 
 .. option:: -O2
@@ -122,44 +122,44 @@ See :ref:`overall-options`, for examples.
 
   .. Please keep the following list alphabetized!
 
-  :option:`-falign-functions`  :option:`-falign-jumps` |gol|
-  :option:`-falign-labels`  :option:`-falign-loops` |gol|
-  :option:`-fcaller-saves` |gol|
-  :option:`-fcode-hoisting` |gol|
-  :option:`-fcrossjumping` |gol|
-  :option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks` |gol|
-  :option:`-fdelete-null-pointer-checks` |gol|
-  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` |gol|
-  :option:`-fexpensive-optimizations` |gol|
-  :option:`-ffinite-loops` |gol|
-  :option:`-fgcse`  :option:`-fgcse-lm` |gol|
-  :option:`-fhoist-adjacent-loads` |gol|
-  :option:`-finline-functions` |gol|
-  :option:`-finline-small-functions` |gol|
-  :option:`-findirect-inlining` |gol|
-  :option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf` |gol|
-  :option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp` |gol|
-  :option:`-fisolate-erroneous-paths-dereference` |gol|
-  :option:`-flra-remat` |gol|
-  :option:`-foptimize-sibling-calls` |gol|
-  :option:`-foptimize-strlen` |gol|
-  :option:`-fpartial-inlining` |gol|
-  :option:`-fpeephole2` |gol|
-  :option:`-freorder-blocks-algorithm`:samp:`=stc` |gol|
-  :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` |gol|
-  :option:`-frerun-cse-after-loop` |gol|
-  :option:`-fschedule-insns`  :option:`-fschedule-insns2` |gol|
-  :option:`-fsched-interblock`  :option:`-fsched-spec` |gol|
-  :option:`-fstore-merging` |gol|
-  :option:`-fstrict-aliasing` |gol|
-  :option:`-fthread-jumps` |gol|
-  :option:`-ftree-builtin-call-dce` |gol|
-  :option:`-ftree-loop-vectorize` |gol|
-  :option:`-ftree-pre` |gol|
-  :option:`-ftree-slp-vectorize` |gol|
-  :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` |gol|
-  :option:`-ftree-vrp` |gol|
-  :option:`-fvect-cost-model`:samp:`=very-cheap` |gol|
+  :option:`-falign-functions`  :option:`-falign-jumps` 
+  :option:`-falign-labels`  :option:`-falign-loops` 
+  :option:`-fcaller-saves` 
+  :option:`-fcode-hoisting` 
+  :option:`-fcrossjumping` 
+  :option:`-fcse-follow-jumps`  :option:`-fcse-skip-blocks` 
+  :option:`-fdelete-null-pointer-checks` 
+  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` 
+  :option:`-fexpensive-optimizations` 
+  :option:`-ffinite-loops` 
+  :option:`-fgcse`  :option:`-fgcse-lm`  
+  :option:`-fhoist-adjacent-loads` 
+  :option:`-finline-functions` 
+  :option:`-finline-small-functions` 
+  :option:`-findirect-inlining` 
+  :option:`-fipa-bit-cp`  :option:`-fipa-cp`  :option:`-fipa-icf` 
+  :option:`-fipa-ra`  :option:`-fipa-sra`  :option:`-fipa-vrp` 
+  :option:`-fisolate-erroneous-paths-dereference` 
+  :option:`-flra-remat` 
+  :option:`-foptimize-sibling-calls` 
+  :option:`-foptimize-strlen` 
+  :option:`-fpartial-inlining` 
+  :option:`-fpeephole2` 
+  :option:`-freorder-blocks-algorithm`:samp:`=stc` 
+  :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` 
+  :option:`-frerun-cse-after-loop`  
+  :option:`-fschedule-insns`  :option:`-fschedule-insns2` 
+  :option:`-fsched-interblock`  :option:`-fsched-spec` 
+  :option:`-fstore-merging` 
+  :option:`-fstrict-aliasing` 
+  :option:`-fthread-jumps` 
+  :option:`-ftree-builtin-call-dce` 
+  :option:`-ftree-loop-vectorize` 
+  :option:`-ftree-pre` 
+  :option:`-ftree-slp-vectorize` 
+  :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
+  :option:`-ftree-vrp` 
+  :option:`-fvect-cost-model`:samp:`=very-cheap`
   Please note the warning under :option:`-fgcse` about
   invoking :option:`-O2` on programs that use computed gotos.
 
@@ -170,18 +170,18 @@ See :ref:`overall-options`, for examples.
 
   .. Please keep the following list alphabetized!
 
-  :option:`-fgcse-after-reload` |gol|
-  :option:`-fipa-cp-clone` |gol|
-  :option:`-floop-interchange` |gol|
-  :option:`-floop-unroll-and-jam` |gol|
-  :option:`-fpeel-loops` |gol|
-  :option:`-fpredictive-commoning` |gol|
-  :option:`-fsplit-loops` |gol|
-  :option:`-fsplit-paths` |gol|
-  :option:`-ftree-loop-distribution` |gol|
-  :option:`-ftree-partial-pre` |gol|
-  :option:`-funswitch-loops` |gol|
-  :option:`-fvect-cost-model`:samp:`=dynamic` |gol|
+  :option:`-fgcse-after-reload` 
+  :option:`-fipa-cp-clone`
+  :option:`-floop-interchange` 
+  :option:`-floop-unroll-and-jam` 
+  :option:`-fpeel-loops` 
+  :option:`-fpredictive-commoning` 
+  :option:`-fsplit-loops` 
+  :option:`-fsplit-paths` 
+  :option:`-ftree-loop-distribution` 
+  :option:`-ftree-partial-pre` 
+  :option:`-funswitch-loops` 
+  :option:`-fvect-cost-model`:samp:`=dynamic` 
   :option:`-fversion-loops-for-strides`
 
 .. option:: -O0
@@ -194,9 +194,9 @@ See :ref:`overall-options`, for examples.
   Optimize for size.  :option:`-Os` enables all :option:`-O2` optimizations 
   except those that often increase code size:
 
-  :option:`-falign-functions`  :option:`-falign-jumps` |gol|
-  :option:`-falign-labels`  :option:`-falign-loops` |gol|
-  :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm`:samp:`=stc` |gol|
+  :option:`-falign-functions`  :option:`-falign-jumps` 
+  :option:`-falign-labels`  :option:`-falign-loops` 
+  :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm`:samp:`=stc`
   It also enables :option:`-finline-functions`, causes the compiler to tune for
   code size rather than execution speed, and performs further optimizations
   designed to reduce code size.
@@ -225,10 +225,10 @@ See :ref:`overall-options`, for examples.
   no effect.  Otherwise :option:`-Og` enables all :option:`-O1` 
   optimization flags except for those that may interfere with debugging:
 
-  :option:`-fbranch-count-reg`  :option:`-fdelayed-branch` |gol|
-  :option:`-fdse`  :option:`-fif-conversion`  :option:`-fif-conversion2` |gol|
-  :option:`-finline-functions-called-once` |gol|
-  :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fssa-phiopt` |gol|
+  :option:`-fbranch-count-reg`  :option:`-fdelayed-branch` 
+  :option:`-fdse`  :option:`-fif-conversion`  :option:`-fif-conversion2`  
+  :option:`-finline-functions-called-once` 
+  :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fssa-phiopt` 
   :option:`-ftree-bit-ccp`  :option:`-ftree-dse`  :option:`-ftree-pta`  :option:`-ftree-sra`
 
 If you use multiple :option:`-O` options, with or without level numbers,
@@ -2222,19 +2222,19 @@ optimizations to be performed is desired.
   The following options :option:`-fPIC`, :option:`-fpic`, :option:`-fpie` and
   :option:`-fPIE` are combined based on the following scheme:
 
-  :option:`:option:`-fPIC`` + :option:`:option:`-fpic`` = :option:`:option:`-fpic`` |gol|
-  :option:`:option:`-fPIC`` + :option:`:option:`-fno-pic`` = :option:`:option:`-fno-pic`` |gol|
+  :option:`:option:`-fPIC`` + :option:`:option:`-fpic`` = :option:`:option:`-fpic``
+  :option:`:option:`-fPIC`` + :option:`:option:`-fno-pic`` = :option:`:option:`-fno-pic``
   :option:`:option:`-fpic/-fPIC`` + (no option) = (no option)
-  :option:`:option:`-fPIC`` + :option:`:option:`-fPIE`` = :option:`:option:`-fPIE`` |gol|
-  :option:`:option:`-fpic`` + :option:`:option:`-fPIE`` = :option:`:option:`-fpie`` |gol|
-  :option:`:option:`-fPIC/-fpic`` + :option:`:option:`-fpie`` = :option:`:option:`-fpie`` |gol|
+  :option:`:option:`-fPIC`` + :option:`:option:`-fPIE`` = :option:`:option:`-fPIE``
+  :option:`:option:`-fpic`` + :option:`:option:`-fPIE`` = :option:`:option:`-fpie``
+  :option:`:option:`-fPIC/-fpic`` + :option:`:option:`-fpie`` = :option:`:option:`-fpie``
   Certain ABI-changing flags are required to match in all compilation units,
   and trying to override this at link time with a conflicting value
   is ignored.  This includes options such as :option:`-freg-struct-return`
   and :option:`-fpcc-struct-return`. 
 
   Other options such as :option:`-ffp-contract`, :option:`-fno-strict-overflow`,
-  :option:`-fwrapv`, :option:`-fno-trapv` or :option:`-fno-strict-aliasing` |gol|
+  :option:`-fwrapv`, :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
   are passed through to the link stage and merged conservatively for
   conflicting translation units.  Specifically
   :option:`-fno-strict-overflow`, :option:`-fwrapv` and :option:`-fno-trapv` take
@@ -2464,13 +2464,13 @@ optimizations to be performed is desired.
   and the following optimizations, many of which
   are generally profitable only with profile feedback available:
 
-  :option:`-fbranch-probabilities`  :option:`-fprofile-values` |gol|
-  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` |gol|
-  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` |gol|
-  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` |gol|
-  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` |gol|
-  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` |gol|
-  :option:`-fprofile-reorder-functions` |gol|
+  :option:`-fbranch-probabilities`  :option:`-fprofile-values` 
+  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
+  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
+  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
+  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
+  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fprofile-reorder-functions`
   Before you can use this option, you must first generate profiling information.
   See :ref:`instrumentation-options`, for information about the
   :option:`-fprofile-generate` option.
@@ -2490,13 +2490,13 @@ optimizations to be performed is desired.
   and the following optimizations,
   many of which are generally profitable only with profile feedback available:
 
-  :option:`-fbranch-probabilities`  :option:`-fprofile-values` |gol|
-  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` |gol|
-  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` |gol|
-  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` |gol|
-  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` |gol|
-  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` |gol|
-  :option:`-fprofile-correction` |gol|
+  :option:`-fbranch-probabilities`  :option:`-fprofile-values` 
+  :option:`-funroll-loops`  :option:`-fpeel-loops`  :option:`-ftracer`  :option:`-fvpt` 
+  :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
+  :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
+  :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
+  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fprofile-correction`
   :samp:`{path}` is the name of a file containing AutoFDO profile information.
   If omitted, it defaults to :samp:`fbdata.afdo` in the current directory.
 
