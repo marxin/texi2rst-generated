@@ -571,12 +571,8 @@ in the following sections.
   See :ref:`submodel-options`.
 
   .. This list is ordered alphanumerically by subsection name.
-
-  .. Try and put the significant identifier (CPU or system) first,
-
-  .. so users have a clue at guessing where the ones they want will be.
-
-  .. program:: See .
+     Try and put the significant identifier (CPU or system) first,
+     so users have a clue at guessing where the ones they want will be.
 
   *AArch64 Options*
 
