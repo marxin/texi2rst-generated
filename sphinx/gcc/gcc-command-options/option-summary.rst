@@ -14,6 +14,7 @@ Here is a summary of all the options, grouped by type.  Explanations are
 in the following sections.
 
 *Overall Options*
+
   See :ref:`overall-options`.
 
   :option:`-c`  :option:`-S`  :option:`-E`  :option:`-o` :samp:`{file}` |gol|
@@ -26,6 +27,7 @@ in the following sections.
   :option:`-fdump-ada-spec`:samp:`[-{slim}]` :option:`-fada-spec-parent`:samp:`={unit}`  :option:`-fdump-go-spec`:samp:`={file}`
 
 *C Language Options*
+
   See :ref:`c-dialect-options`.
 
   :option:`-ansi`  :option:`-std`:samp:`={standard}`  :option:`-aux-info` :samp:`{filename}` |gol|
@@ -41,6 +43,7 @@ in the following sections.
   :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct`:samp:`={endianness}`
 
 *C++ Language Options*
+
   See :ref:`c++-dialect-options`.
 
   :option:`-fabi-version`:samp:`={n}`  :option:`-fno-access-control` |gol|
@@ -104,6 +107,7 @@ in the following sections.
   :option:`-Wno-virtual-move-assign`  :option:`-Wvolatile`  :option:`-Wzero-as-null-pointer-constant`
 
 *Objective-C and Objective-C++ Language Options*
+
   See :ref:`objective-c-and-objective-c++-dialect-options`.
 
   :option:`-fconstant-string-class`:samp:`={class-name}` |gol|
@@ -127,6 +131,7 @@ in the following sections.
   :option:`-Wundeclared-selector`
 
 *Diagnostic Message Formatting Options*
+
   See :ref:`diagnostic-message-formatting-options`.
 
   :option:`-fmessage-length`:samp:`={n}` |gol|
@@ -149,6 +154,7 @@ in the following sections.
   :option:`-fdiagnostics-escape-format`:samp:`=[unicode|bytes]`
 
 *Warning Options*
+
   See :ref:`warning-options`.
 
   :option:`-fsyntax-only`  :option:`-fmax-errors`:samp:`={n}`  :option:`-Wpedantic` |gol|
@@ -248,6 +254,7 @@ in the following sections.
   :option:`-Wzero-length-bounds`
 
 *Static Analyzer Options*
+
   :option:`-fanalyzer` |gol|
   :option:`-fanalyzer-call-summaries` |gol|
   :option:`-fanalyzer-checker`:samp:`={name}` |gol|
@@ -299,6 +306,7 @@ in the following sections.
   :option:`-Wno-analyzer-write-to-string-literal` 
 
 *C and Objective-C-only Warning Options*
+
   :option:`-Wbad-function-cast`  :option:`-Wmissing-declarations` |gol|
   :option:`-Wmissing-parameter-type`  :option:`-Wmissing-prototypes`  :option:`-Wnested-externs` |gol|
   :option:`-Wold-style-declaration`  :option:`-Wold-style-definition` |gol|
@@ -306,6 +314,7 @@ in the following sections.
   :option:`-Wdeclaration-after-statement`  :option:`-Wpointer-sign`
 
 *Debugging Options*
+
   See :ref:`debugging-options`.
 
   :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` |gol|
@@ -330,6 +339,7 @@ in the following sections.
   :option:`-fvar-tracking`  :option:`-fvar-tracking-assignments`
 
 *Optimization Options*
+
   See :ref:`optimize-options`.
 
   :option:`-faggressive-loop-optimizations` |gol|
@@ -425,6 +435,7 @@ in the following sections.
   :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og`
 
 *Program Instrumentation Options*
+
   See :ref:`instrumentation-options`.
 
   :option:`-p`  :option:`-pg`  :option:`-fprofile-arcs`  :option:`--coverage`  :option:`-ftest-coverage` |gol|
@@ -452,6 +463,7 @@ in the following sections.
   option:`-fprofile-prefix-map`:samp:`={old}={new}`
 
 *Preprocessor Options*
+
   See :ref:`preprocessor-options`.
 
   :option:`-A`:samp:`{question}={answer}` |gol|
@@ -473,11 +485,13 @@ in the following sections.
   :option:`-Wp,`:samp:`{option}`  :option:`-Xpreprocessor` :samp:`{option}`
 
 *Assembler Options*
+
   See :ref:`assembler-options`.
 
   :option:`-Wa,`:samp:`{option}`  :option:`-Xassembler` :samp:`{option}`
 
 *Linker Options*
+
   See :ref:`link-options`.
 
   :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
@@ -491,6 +505,7 @@ in the following sections.
   :option:`-u` :samp:`{symbol}`  :option:`-z` :samp:`{keyword}`
 
 *Directory Options*
+
   See :ref:`directory-options`.
 
   :option:`-B`:samp:`{prefix}`  :option:`-I`:samp:`{dir}`  :option:`-I-` |gol|
@@ -503,6 +518,7 @@ in the following sections.
   :option:`-nostdinc`  :option:`-nostdinc++`  :option:`--sysroot`:samp:`={dir}`
 
 *Code Generation Options*
+
   See :ref:`code-gen-options`.
 
   :option:`-fcall-saved-`:samp:`{reg}`  :option:`-fcall-used-`:samp:`{reg}` |gol|
@@ -523,6 +539,7 @@ in the following sections.
   :option:`-fstrict-volatile-bitfields`  :option:`-fsync-libcalls`
 
 *Developer Options*
+
   See :ref:`developer-options`.
 
   :option:`-d`:samp:`{letters}`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` |gol|
@@ -568,6 +585,7 @@ in the following sections.
   :option:`-save-temps`  :option:`-save-temps`:samp:`=cwd`  :option:`-save-temps`:samp:`=obj`  :option:`-time`:samp:`[={file}]`
 
 *Machine-Dependent Options*
+
   See :ref:`submodel-options`.
 
   .. This list is ordered alphanumerically by subsection name.

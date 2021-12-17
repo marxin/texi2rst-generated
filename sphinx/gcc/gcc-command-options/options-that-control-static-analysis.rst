@@ -279,7 +279,7 @@ Options That Control Static Analysis
   inject an excessively large allocation and potentially cause a denial
   of service attack.
 
-  See https://cwe.mitre.org/data/definitions/789.htmlCWE-789: Memory Allocation with Excessive Size Value.
+  See `CWE-789 <https://cwe.mitre.org/data/definitions/789.html>`_: Memory Allocation with Excessive Size Value.
 
 .. option:: -Wanalyzer-tainted-allocation-size
 
@@ -296,7 +296,7 @@ Options That Control Static Analysis
   of an array access without being sanitized, so that an attacker
   could inject an out-of-bounds access.
 
-  See https://cwe.mitre.org/data/definitions/129.htmlCWE-129: Improper Validation of Array Index.
+  See `CWE-129 <https://cwe.mitre.org/data/definitions/129.html>`_: Improper Validation of Array Index.
 
 .. option:: -Wanalyzer-tainted-array-index
 
@@ -328,7 +328,7 @@ Options That Control Static Analysis
   without being sanitized, so that an attacker could inject an out-of-bounds
   access.
 
-  See https://cwe.mitre.org/data/definitions/823.htmlCWE-823: Use of Out-of-range Pointer Offset.
+  See `CWE-823 <https://cwe.mitre.org/data/definitions/823.html>`_: Use of Out-of-range Pointer Offset.
 
 .. option:: -Wanalyzer-tainted-offset
 
