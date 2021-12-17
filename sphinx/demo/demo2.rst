@@ -61,3 +61,19 @@ And then there's a note:
    I am a note!
 
 And then there's something else.
+
+Listing:
+
+:samp:`{file}.cc` :samp:`{file}.cp` :samp:`{file}.cxx` :samp:`{file}.cpp` :samp:`{file}.CPP` :samp:`{file}.c++` :samp:`{file}.C`
+  C++ source code that must be preprocessed.  Note that in :samp:`.cxx`,
+  the last two letters must both be literally :samp:`x`.  Likewise,
+  :samp:`.C` refers to a literal capital C.
+
+:samp:`{file}.mm` :samp:`{file}.M`
+  Objective-C++ source code that must be preprocessed.
+
+:samp:`{file}.mii`
+  Objective-C++ source code that should not be preprocessed.
+
+:samp:`{file}.hh` :samp:`{file}.H` :samp:`{file}.hp` :samp:`{file}.hxx` :samp:`{file}.hpp` :samp:`{file}.HPP` :samp:`{file}.h++` :samp:`{file}.tcc`
+  C++ header file to be turned into a precompiled header or Ada spec.
