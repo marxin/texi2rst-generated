@@ -405,8 +405,8 @@ accepts:
 
   Typical command lines are
 
-  :option:`-foffload-options`:samp:`=-lgfortran` :option:`-foffload-options`:samp:`=-lm`
-  :option:`-foffload-options`:samp:`="-lgfortran` :option:`-lm"` :option:`-foffload-options`:samp:`=nvptx-none=-latomic`
+  :option:`-foffload-options`:samp:`=-lgfortran` :option:`-foffload-options`:samp:`=-lm` |gol|
+  :option:`-foffload-options`:samp:`="-lgfortran` :option:`-lm"` :option:`-foffload-options`:samp:`=nvptx-none=-latomic` |gol|
   :option:`-foffload-options`:samp:`=amdgcn-amdhsa=-march=gfx906` :option:`-foffload-options`:samp:`=-lm`
 
 .. option:: -fopenacc

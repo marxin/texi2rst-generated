@@ -605,7 +605,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   Here is a truncated example from the ARM port of :command:`gcc`:
 
-  .. code-block:: c++
+  .. code-block:: shell-session
 
       % gcc -Q -mabi=2 --help=target -c
       The following options are target specific:
@@ -618,6 +618,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   are enabled at :option:`-O2` by using:
 
   :option:`-Q` :option:`-O2` :option:`--help`:samp:`=optimizers`
+
   Alternatively you can discover which binary optimizations are enabled
   by :option:`-O3` by using:
 
