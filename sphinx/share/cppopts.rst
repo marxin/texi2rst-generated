@@ -22,7 +22,7 @@
   its argument list with surrounding parentheses before the equals sign
   (if any).  Parentheses are meaningful to most shells, so you should
   quote the option.  With :command:`sh` and :command:`csh`,
-  :option:`-D'`:samp:`{name}` (:samp:`{args...}`)= :samp:`{definition}` ' works.
+  :option:`-D'`:samp:`{name}(args...)={definition}` works.
 
   :option:`-D` and :option:`-U` options are processed in the order they
   are given on the command line.  All :option:`-imacros` :samp:`{file}` and
