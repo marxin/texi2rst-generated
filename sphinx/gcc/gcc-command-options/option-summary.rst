@@ -86,7 +86,8 @@ in the following sections.
   :option:`-Wctor-dtor-privacy`  :option:`-Wno-delete-incomplete` |gol|
   :option:`-Wdelete-non-virtual-dtor`  :option:`-Wno-deprecated-array-compare` |gol|
   :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` |gol|
-  :option:`-Wno-deprecated-enum-enum-conversion` :option:`-Wno-deprecated-enum-float-conversion` |gol|
+  :option:`-Wno-deprecated-enum-enum-conversion` |gol|
+  :option:`-Wno-deprecated-enum-float-conversion` |gol|
   :option:`-Weffc++`  :option:`-Wno-exceptions` :option:`-Wextra-semi`  :option:`-Wno-inaccessible-base` |gol|
   :option:`-Wno-inherited-variadic-ctor`  :option:`-Wno-init-list-lifetime` |gol|
   :option:`-Winvalid-imported-macros` |gol|
@@ -494,7 +495,7 @@ in the following sections.
 
   See :ref:`link-options`.
 
-  :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
+  :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` |gol|
   :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` |gol|
   :option:`-e` :samp:`{entry}`  :option:`--entry`:samp:`={entry}` |gol|
   :option:`-pie`  :option:`-pthread`  :option:`-r`  :option:`-rdynamic` |gol|
@@ -607,7 +608,7 @@ in the following sections.
   :option:`-mlow-precision-recip-sqrt`  :option:`-mlow-precision-sqrt`  :option:`-mlow-precision-div` |gol|
   :option:`-mpc-relative-literal-loads` |gol|
   :option:`-msign-return-address`:samp:`={scope}` |gol|
-  :option:`-mbranch-protection`:samp:`={none}|{standard}|{pac-ret}[+{leaf}+{b-key}|{bti}` |gol|
+  :option:`-mbranch-protection`:samp:`={none}|{standard}|{pac-ret}[+{leaf}+{b-key}|{bti}]` |gol|
   :option:`-mharden-sls`:samp:`={opts}` |gol|
   :option:`-march`:samp:`={name}`  :option:`-mcpu`:samp:`={name}`  :option:`-mtune`:samp:`={name}` |gol|
   :option:`-moverride`:samp:`={string}`  :option:`-mverbose-cost-dump` |gol|
@@ -649,7 +650,7 @@ in the following sections.
   :option:`-malign-call`  :option:`-mauto-modify-reg`  :option:`-mbbit-peephole`  :option:`-mno-brcc` |gol|
   :option:`-mcase-vector-pcrel`  :option:`-mcompact-casesi`  :option:`-mno-cond-exec`  :option:`-mearly-cbranchsi` |gol|
   :option:`-mexpand-adddi`  :option:`-mindexed-loads`  :option:`-mlra`  :option:`-mlra-priority-none` |gol|
-  :option:`-mlra-priority-compact` mlra :option:`-priority-noncompact`  :option:`-mmillicode` |gol|
+  :option:`-mlra-priority-compact` :option:`-mlra-priority-noncompact`  :option:`-mmillicode` |gol|
   :option:`-mmixed-code`  :option:`-mq-class`  :option:`-mRcq`  :option:`-mRcw`  :option:`-msize-level`:samp:`={level}` |gol|
   :option:`-mtune`:samp:`={cpu}`  :option:`-mmultcost`:samp:`={num}`  :option:`-mcode-density-frame` |gol|
   :option:`-munalign-prob-threshold`:samp:`={probability}`  :option:`-mmpy-option`:samp:`={multo}` |gol|
@@ -714,8 +715,7 @@ in the following sections.
 
   .. program:: Blackfin
 
-  :option:`-mcpu`:samp:`={cpu}[-{sirevision}]`
-
+  :option:`-mcpu`:samp:`={cpu}[-{sirevision}]` |gol|
   :option:`-msim`  :option:`-momit-leaf-frame-pointer`  :option:`-mno-omit-leaf-frame-pointer` |gol|
   :option:`-mspecld-anomaly`  :option:`-mno-specld-anomaly`  :option:`-mcsync-anomaly`  :option:`-mno-csync-anomaly` |gol|
   :option:`-mlow-64k`  :option:`-mno-low64k`  :option:`-mstack-check-l1`  :option:`-mid-shared-library` |gol|
@@ -905,9 +905,12 @@ in the following sections.
   :option:`-msched-br-data-spec`  :option:`-msched-ar-data-spec`  :option:`-msched-control-spec` |gol|
   :option:`-msched-br-in-data-spec`  :option:`-msched-ar-in-data-spec`  :option:`-msched-in-control-spec` |gol|
   :option:`-msched-spec-ldc`  :option:`-msched-spec-control-ldc` |gol|
-  :option:`-msched-prefer-non-data-spec-insns`  :option:`-msched-prefer-non-control-spec-insns` |gol|
-  :option:`-msched-stop-bits-after-every-cycle`  :option:`-msched-count-spec-in-critical-path` |gol|
-  :option:`-msel-sched-dont-check-control-spec`  :option:`-msched-fp-mem-deps-zero-cost` |gol|
+  :option:`-msched-prefer-non-data-spec-insns` |gol|
+  :option:`-msched-prefer-non-control-spec-insns` |gol|
+  :option:`-msched-stop-bits-after-every-cycle` |gol|
+  :option:`-msched-count-spec-in-critical-path` |gol|
+  :option:`-msel-sched-dont-check-control-spec` |gol|
+  :option:`-msched-fp-mem-deps-zero-cost` |gol|
   :option:`-msched-max-memory-insns-hard-limit`  :option:`-msched-max-memory-insns`:samp:`={max-insns}`
 
   *LM32 Options*
@@ -1110,7 +1113,7 @@ in the following sections.
   :option:`-mhw-mul`  :option:`-mno-hw-mul`  :option:`-mhw-mulx` :option:`-mno-hw-mulx` :option:`-mno-hw-div` :option:`-mhw-div` |gol|
   :option:`-mcustom-`:samp:`{insn}`:samp:`={N}`  :option:`-mno-custom-`:samp:`{insn}` |gol|
   :option:`-mcustom-fpu-cfg`:samp:`={name}` |gol|
-  :option:`-mhal`  :option:`-msmallc` :option:`-msys-crt0`:samp:`={name}`  option:`-msys-lib`:samp:`={name}` |gol|
+  :option:`-mhal`  :option:`-msmallc` :option:`-msys-crt0`:samp:`={name}` :option:`-msys-lib`:samp:`={name}` |gol|
   :option:`-march`:samp:`={arch}`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
 
   *Nvidia PTX Options*
@@ -1145,6 +1148,7 @@ in the following sections.
   :option:`-msymbol-as-address`  :option:`-mno-inefficient-warnings`
 
   *PowerPC Options*
+
   See :ref:`rs-6000-and-powerpc-options`.
 
   *PRU Options*
@@ -1256,14 +1260,14 @@ in the following sections.
   .. program:: RX
 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu` |gol|
-  :option:`-mcpu` = |gol|
+  :option:`-mcpu` |gol|
   :option:`-mbig-endian-data`  :option:`-mlittle-endian-data` |gol|
   :option:`-msmall-data` |gol|
   :option:`-msim`  :option:`-mno-sim` |gol|
   :option:`-mas100-syntax`  :option:`-mno-as100-syntax` |gol|
   :option:`-mrelax` |gol|
-  :option:`-mmax-constant-size` = |gol|
-  :option:`-mint-register` = |gol|
+  :option:`-mmax-constant-size` |gol|
+  :option:`-mint-register` |gol|
   :option:`-mpid` |gol|
   :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns` |gol|
   :option:`-mjsr` |gol|
@@ -1438,7 +1442,8 @@ in the following sections.
   :option:`-msse4a`  :option:`-m3dnow`  :option:`-m3dnowa`  :option:`-mpopcnt`  :option:`-mabm`  :option:`-mbmi`  :option:`-mtbm`  :option:`-mfma4`  :option:`-mxop` |gol|
   :option:`-madx`  :option:`-mlzcnt`  :option:`-mbmi2`  :option:`-mfxsr`  :option:`-mxsave`  :option:`-mxsaveopt`  :option:`-mrtm`  :option:`-mhle`  :option:`-mlwp` |gol|
   :option:`-mmwaitx`  :option:`-mclzero`  :option:`-mpku`  :option:`-mthreads`  :option:`-mgfni`  :option:`-mvaes`  :option:`-mwaitpkg` |gol|
-  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mforce-indirect-call`  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` |gol|
+  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mforce-indirect-call` |gol|
+  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` |gol|
   :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` |gol|
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` |gol|
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk` |gol|
