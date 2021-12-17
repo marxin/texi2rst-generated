@@ -10,6 +10,8 @@ Object Size Checking Built-in Functions
 
 .. index:: __builtin_object_size
 
+.. index:: __builtin_dynamic_object_size
+
 .. index:: __builtin___memcpy_chk
 
 .. index:: __builtin___mempcpy_chk
@@ -91,6 +93,18 @@ a limited extent, they can be used without optimization as well.
             == (char *) (&var + 1) - (char *) &var.b);
     /* The subobject q points to is var.b.  */
     assert (__builtin_object_size (q, 1) == sizeof (var.b));
+
+.. function:: size_t __builtin_dynamic_object_size (const void * ptr, int type)
+
+  is similar to ``__builtin_object_size`` in that it returns a number of bytes
+  from :samp:`{ptr}` to the end of the object :samp:`{ptr}` pointer points to, except
+  that the size returned may not be a constant.  This results in successful
+  evaluation of object size estimates in a wider range of use cases and can be
+  more precise than ``__builtin_object_size``, but it incurs a performance
+  penalty since it may add a runtime overhead on size computation.  Semantics of
+  :samp:`{type}` as well as return values in case it is not possible to determine
+  which objects :samp:`{ptr}` points to at compile time are the same as in the case
+  of ``__builtin_object_size``.
 
 There are built-in functions added for many common string operation
 functions, e.g., for ``memcpy`` ``__builtin___memcpy_chk``

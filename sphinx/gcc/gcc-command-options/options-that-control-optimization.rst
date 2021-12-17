@@ -1951,10 +1951,10 @@ optimizations to be performed is desired.
 
 .. option:: -fipa-strict-aliasing
 
-  Constrols whether rules of :option:`-fstrict-aliasing` are applied across
+  Controls whether rules of :option:`-fstrict-aliasing` are applied across
   function boundaries.  Note that if multiple functions gets inlined into a
-  signle function the memory accesses are no longer considred to be crossing a
-  function bounday.
+  single function the memory accesses are no longer considered to be crossing a
+  function boundary.
 
   The :option:`-fipa-strict-aliasing` option is enabled by default and is
   effective only in combination with :option:`-fstrict-aliasing`.
@@ -3807,7 +3807,7 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: ssp-buffer-size
 
     The minimum size of buffers (i.e. arrays) that receive stack smashing
-    protection when :option:`-fstack-protection` is used.
+    protection when :option:`-fstack-protector` is used.
 
   .. gcc-param:: min-size-for-stack-sharing
 
