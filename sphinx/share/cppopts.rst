@@ -166,7 +166,7 @@
   specify.  If you want multiple targets, you can specify them as a single
   argument to :option:`-MT`, or use multiple :option:`-MT` options.
 
-  For example, -MT '$(objpfx)foo.o' might give
+  For example, ``-MT '$(objpfx)foo.o'`` might give
 
   .. code-block:: c++
 
@@ -175,7 +175,7 @@
 .. option:: -MQ target
 
   Same as :option:`-MT`, but it quotes any characters which are special to
-  Make.  -MQ '$(objpfx)foo.o' gives
+  Make. ``-MQ '$(objpfx)foo.o'`` gives
 
   .. code-block:: c++
 
