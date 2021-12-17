@@ -3,10 +3,12 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Welcome to gcc documentation!
-===============================
+Using the GNU Compiler Collection (GCC)
+=======================================
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 
