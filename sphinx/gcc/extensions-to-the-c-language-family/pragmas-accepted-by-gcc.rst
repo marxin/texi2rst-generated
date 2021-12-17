@@ -239,7 +239,10 @@ S/390 Pragmas
 The pragmas defined by the S/390 target correspond to the S/390
 target function attributes and some the additional options:
 
-:samp:`zvector`:samp:`no-zvector`Note that options of the pragma, unlike options of the target
+:samp:`zvector`
+:samp:`no-zvector`
+
+Note that options of the pragma, unlike options of the target
 attribute, do change the value of preprocessor macros like
 ``__VEC__``.  They can be specified as below:
 
