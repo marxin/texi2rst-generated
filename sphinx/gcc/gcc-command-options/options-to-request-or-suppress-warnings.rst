@@ -2252,7 +2252,7 @@ warn at all unless optimization is enabled.
 
 .. option:: -Wno-alloc-size-larger-than
 
-  Disable :option:`-Walloc-size-larger-than` = warnings.  The option is
+  Disable :option:`-Walloc-size-larger-than` warnings.  The option is
   equivalent to :option:`-Walloc-size-larger-than`:samp:`=SIZE_MAX` or
   larger.
 
@@ -2680,7 +2680,7 @@ warn at all unless optimization is enabled.
   GCC to emit warnings from system headers as if they occurred in user
   code.  However, note that using :option:`-Wall` in conjunction with this
   option does *not* warn about unknown pragmas in system
-  headers---for that, :option:`-Wunknown-pragmas` must also be used.
+  headers --- for that, :option:`-Wunknown-pragmas` must also be used.
 
 .. option:: -Wno-system-headers
 
