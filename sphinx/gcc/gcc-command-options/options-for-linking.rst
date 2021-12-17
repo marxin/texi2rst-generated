@@ -383,7 +383,7 @@ not doing a link step.
   string as a single argument, which is not what the linker expects.
 
   When using the GNU linker, it is usually more convenient to pass
-  arguments to linker options using the :samp:`{option}` = :samp:`{value}`
+  arguments to linker options using the :samp:`{option}={value}`
   syntax than as separate arguments.  For example, you can specify
   :option:`-Xlinker -Map`:samp:`=output.map` rather than
   :option:`-Xlinker -Map -Xlinker output.map`.  Other linkers may not support
