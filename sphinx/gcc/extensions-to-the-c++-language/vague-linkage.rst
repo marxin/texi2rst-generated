@@ -30,9 +30,6 @@ Inline Functions
   between all inlined and out-of-line instances of the function.
 
 VTables
-
-  .. index:: vtable
-
   C++ virtual functions are implemented in most compilers using a lookup
   table, known as a vtable.  The vtable contains pointers to the virtual
   functions provided by a class, and each object of the class contains a
@@ -42,17 +39,14 @@ VTables
   and the vtable is only emitted in the translation unit where the key
   method is defined.
 
-  *Note:* If the chosen key method is later defined as inline, the
-  vtable is still emitted in every translation unit that defines it.
-  Make sure that any inline virtuals are declared inline in the class
-  body, even if they are not defined there.
+  .. note::
+
+    If the chosen key method is later defined as inline, the
+    vtable is still emitted in every translation unit that defines it.
+    Make sure that any inline virtuals are declared inline in the class
+    body, even if they are not defined there.
 
 :samp:`{type_info} objects`
-
-  .. index:: type_info
-
-  .. index:: RTTI
-
   C++ requires information about types to be written out in order to
   implement :samp:`dynamic_cast`, :samp:`typeid` and exception handling.
   For polymorphic classes (classes with virtual functions), the :samp:`type_info`
