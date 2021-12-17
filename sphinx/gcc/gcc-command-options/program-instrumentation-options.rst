@@ -413,10 +413,13 @@ program analysis purposes.
   The option must be combined with either :option:`-fsanitize`:samp:`=kernel-address` or
   :option:`-fsanitize`:samp:`=address`
   The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
-  Note: By default the check is disabled at run time.  To enable it,
-  add ``detect_invalid_pointer_pairs=2`` to the environment variable
-  :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
-  invalid operation only when both pointers are non-null.
+
+  .. note::
+
+    By default the check is disabled at run time.  To enable it,
+    add ``detect_invalid_pointer_pairs=2`` to the environment variable
+    :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
+    invalid operation only when both pointers are non-null.
 
 .. option:: -fsanitize=pointer-subtract
 
@@ -424,10 +427,12 @@ program analysis purposes.
   The option must be combined with either :option:`-fsanitize`:samp:`=kernel-address` or
   :option:`-fsanitize`:samp:`=address`
   The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
-  Note: By default the check is disabled at run time.  To enable it,
-  add ``detect_invalid_pointer_pairs=2`` to the environment variable
-  :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
-  invalid operation only when both pointers are non-null.
+  .. note::
+
+    By default the check is disabled at run time.  To enable it,
+    add ``detect_invalid_pointer_pairs=2`` to the environment variable
+    :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
+    invalid operation only when both pointers are non-null.
 
 .. option:: -fsanitize=thread
 
