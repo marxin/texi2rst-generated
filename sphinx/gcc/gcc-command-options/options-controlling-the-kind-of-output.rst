@@ -574,12 +574,14 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   switches supported by the compiler, use:
 
   :option:`--help`:samp:`=target,undocumented`
+
   The sense of a qualifier can be inverted by prefixing it with the
   :samp:`^` character, so for example to display all binary warning
   options (i.e., ones that are either on or off and that do not take an
   argument) that have a description, use:
 
   :option:`--help`:samp:`=warnings,^joined,^undocumented`
+
   The argument to :option:`--help`:samp:`=` should not consist solely of inverted
   qualifiers.
 
@@ -590,6 +592,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   optimization options, use:
 
   :option:`--help`:samp:`=target,optimizers`
+
   The :option:`--help` = option can be repeated on the command line.  Each
   successive use displays its requested class of options, skipping
   those that have already been displayed.  If :option:`--help` is also
