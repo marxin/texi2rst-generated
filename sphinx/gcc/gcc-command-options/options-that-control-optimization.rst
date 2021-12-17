@@ -198,6 +198,7 @@ See :ref:`overall-options`, for examples.
   :option:`-falign-functions`  :option:`-falign-jumps` |gol|
   :option:`-falign-labels`  :option:`-falign-loops` |gol|
   :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm`:samp:`=stc` |gol|
+
   It also enables :option:`-finline-functions`, causes the compiler to tune for
   code size rather than execution speed, and performs further optimizations
   designed to reduce code size.
@@ -1981,7 +1982,7 @@ optimizations to be performed is desired.
   :option:`-falign-functions`:samp:`=32:7` aligns to the next
   32-byte boundary only if this can be done by skipping 6 bytes or less.
 
-  The second pair of :samp:`{n2}` : :samp:`{m2}` values allows you to specify
+  The second pair of :samp:`{n2}:{m2}` values allows you to specify
   a secondary alignment: :option:`-falign-functions`:samp:`=64:7:32:3` aligns to
   the next 64-byte boundary if this can be done by skipping 6 bytes or less,
   otherwise aligns to the next 32-byte boundary if this can be done
@@ -2249,7 +2250,7 @@ optimizations to be performed is desired.
   and :option:`-fpcc-struct-return`. 
 
   Other options such as :option:`-ffp-contract`, :option:`-fno-strict-overflow`,
-  :option:`-fwrapv`, :option:`-fno-trapv` or :option:`-fno-strict-aliasing` |gol|
+  :option:`-fwrapv`, :option:`-fno-trapv` or :option:`-fno-strict-aliasing`
   are passed through to the link stage and merged conservatively for
   conflicting translation units.  Specifically
   :option:`-fno-strict-overflow`, :option:`-fwrapv` and :option:`-fno-trapv` take
@@ -2485,7 +2486,8 @@ optimizations to be performed is desired.
   :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` |gol|
   :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` |gol|
   :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` |gol|
-  :option:`-fprofile-reorder-functions` |gol|
+  :option:`-fprofile-reorder-functions`
+
   Before you can use this option, you must first generate profiling information.
   See :ref:`instrumentation-options`, for information about the
   :option:`-fprofile-generate` option.
@@ -2511,7 +2513,8 @@ optimizations to be performed is desired.
   :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` |gol|
   :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` |gol|
   :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` |gol|
-  :option:`-fprofile-correction` |gol|
+  :option:`-fprofile-correction`
+
   :samp:`{path}` is the name of a file containing AutoFDO profile information.
   If omitted, it defaults to :samp:`fbdata.afdo` in the current directory.
 
@@ -2777,8 +2780,8 @@ correctness.  All must be specifically enabled.
 
   When enabled, this option states that a range reduction step is not
   needed when performing complex division.  Also, there is no checking
-  whether the result of a complex multiplication or division is ``NaN
-  + I*NaN``, with an attempt to rescue the situation in that case.  The
+  whether the result of a complex multiplication or division is
+  ``NaN I*NaN``, with an attempt to rescue the situation in that case.  The
   default is :option:`-fno-cx-limited-range`, but is enabled by
   :option:`-ffast-math`.
 
@@ -3205,8 +3208,7 @@ section includes experimental options that may produce broken code.
     very profitable (will enable later optimizations).
 
   .. gcc-param:: uninlined-thunk-insns
-
-  .. gcc-param:: uninlined-thunk-time
+                 uninlined-thunk-time
 
     Same as :option:`--param` :gcc-param:`uninlined-function-insns` and
     :option:`--param` :gcc-param:`uninlined-function-time` but applied to function thunks.
@@ -3215,8 +3217,8 @@ section includes experimental options that may produce broken code.
 
     When estimated performance improvement of caller + callee runtime exceeds this
     threshold (in percent), the function can be inlined regardless of the limit on
-    :option:`--param` :gcc-param:`max-inline-insns-single` and :option:`--param
-    max-inline-insns-auto`.
+    :option:`--param` :gcc-param:`max-inline-insns-single` and :option:`--param`
+    :gcc-param:`max-inline-insns-auto`.
 
   .. gcc-param:: large-function-insns
 
@@ -3278,7 +3280,7 @@ section includes experimental options that may produce broken code.
     the original size.
 
   .. gcc-param:: max-inline-insns-recursive
-  .. gcc-param:: max-inline-insns-recursive-auto
+                 max-inline-insns-recursive-auto
 
     Specifies the maximum number of instructions an out-of-line copy of a
     self-recursive inline
@@ -3291,7 +3293,7 @@ section includes experimental options that may produce broken code.
     enabled; :option:`--param` :gcc-param:`max-inline-insns-recursive-auto` applies instead.
 
   .. gcc-param:: max-inline-recursive-depth
-  .. gcc-param:: max-inline-recursive-depth-auto
+                 max-inline-recursive-depth-auto
 
     Specifies the maximum recursion depth used for recursive inlining.
 
@@ -3329,10 +3331,8 @@ section includes experimental options that may produce broken code.
     are shared across multiple compilation units.
 
   .. gcc-param:: modref-max-bases
-
-  .. gcc-param:: modref-max-refs
-
-  .. gcc-param:: modref-max-accesses
+                 modref-max-refs
+                 modref-max-accesses
 
     Specifies the maximal number of base pointers, references and accesses stored
     for a single function by mod/ref analysis.
@@ -3342,7 +3342,7 @@ section includes experimental options that may produce broken code.
     Specifies the maxmal number of tests alias oracle can perform to disambiguate
     memory locations using the mod/ref information.  This parameter ought to be
     bigger than :option:`--param` :gcc-param:`modref-max-bases` and :option:`--param
-    modref-max-refs`.
+    :gcc-param:`modref-max-refs`.
 
   .. gcc-param:: modref-max-depth
 
@@ -3622,7 +3622,7 @@ section includes experimental options that may produce broken code.
     aligned.
 
   .. gcc-param:: tracer-dynamic-coverage
-  .. gcc-param:: tracer-dynamic-coverage-feedback
+                 tracer-dynamic-coverage-feedback
 
     This value is used to limit superblock formation once the given percentage of
     executed instructions is covered.  This limits unnecessary code size
@@ -3646,7 +3646,7 @@ section includes experimental options that may produce broken code.
     threshold (in percent).
 
   .. gcc-param:: tracer-min-branch-probability
-  .. gcc-param:: tracer-min-branch-probability-feedback
+                 tracer-min-branch-probability-feedback
 
     Stop forward growth if the best edge has probability lower than this
     threshold.
@@ -3844,7 +3844,7 @@ section includes experimental options that may produce broken code.
     Estimate on average number of instructions that are executed before
     prefetch finishes.  The distance prefetched ahead is proportional
     to this constant.  Increasing this number may also lead to less
-    streams being prefetched (see simultaneous-prefetches).
+    streams being prefetched (see :gcc-param:`simultaneous-prefetches`).
 
   .. gcc-param:: simultaneous-prefetches
 
@@ -3890,8 +3890,7 @@ section includes experimental options that may produce broken code.
     This setting is only useful for strides that are known and constant.
 
   .. gcc-param:: destructive-interference-size
-
-  .. gcc-param:: constructive-interference-size
+                 constructive-interference-size
 
     The values for the C++17 variables
     ``std::hardware_destructive_interference_size`` and
@@ -4084,15 +4083,15 @@ section includes experimental options that may produce broken code.
     parameter.
 
   .. gcc-param:: sra-max-scalarization-size-Ospeed
-  .. gcc-param:: sra-max-scalarization-size-Osize
+                 sra-max-scalarization-size-Osize
 
     The two Scalar Reduction of Aggregates passes (SRA and IPA-SRA) aim to
     replace scalar parts of aggregates with uses of independent scalar
     variables.  These parameters control the maximum size, in storage units,
     of aggregate which is considered for replacement when compiling for
     speed
-    (sra-max-scalarization-size-Ospeed) or size
-    (sra-max-scalarization-size-Osize) respectively.
+    (:gcc-param:`sra-max-scalarization-size-Ospeed``) or size
+    (:gcc-param:`sra-max-scalarization-size-Osize``) respectively.
 
   .. gcc-param:: sra-max-propagations
 
@@ -4132,14 +4131,14 @@ section includes experimental options that may produce broken code.
 
     IPA-CP attempts to track all possible values and types passed to a function's
     parameter in order to propagate them and perform devirtualization.
-    ipa-cp-value-list-size is the maximum number of values and types it
+    :gcc-param:`ipa-cp-value-list-size` is the maximum number of values and types it
     stores per one formal parameter of a function.
 
   .. gcc-param:: ipa-cp-eval-threshold
 
     IPA-CP calculates its own score of cloning profitability heuristics
     and performs those cloning opportunities with scores that exceed
-    ipa-cp-eval-threshold.
+    :gcc-param:`ipa-cp-eval-threshold`.
 
   .. gcc-param:: ipa-cp-max-recursive-depth
 
@@ -4174,7 +4173,7 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: ipa-max-agg-items
 
     IPA-CP is also capable to propagate a number of scalar values passed
-    in an aggregate. ipa-max-agg-items controls the maximum
+    in an aggregate. :gcc-param:`ipa-max-agg-items`` controls the maximum
     number of such values per one parameter.
 
   .. gcc-param:: ipa-cp-loop-hint-bonus
@@ -4195,7 +4194,7 @@ section includes experimental options that may produce broken code.
     in order to track values pointed to by function parameters.  In order
     not spend too much time analyzing huge functions, it gives up and
     consider all memory clobbered after examining
-    ipa-max-aa-steps statements modifying memory.
+    :gcc-param:`ipa-max-aa-steps` statements modifying memory.
 
   .. gcc-param:: ipa-max-switch-predicate-bounds
 
@@ -4209,7 +4208,7 @@ section includes experimental options that may produce broken code.
     IPA-CP will analyze conditional statement that references some function
     parameter to estimate benefit for cloning upon certain constant value.
     But if number of operations in a parameter expression exceeds
-    ipa-max-param-expr-ops, the expression is treated as complicated
+    :gcc-param:`ipa-max-param-expr-ops`, the expression is treated as complicated
     one, and is not handled by IPA analysis.
 
   .. gcc-param:: lto-partitions
@@ -4425,7 +4424,8 @@ section includes experimental options that may produce broken code.
 
   .. gcc-param:: threader-debug
 
-    threader-debug=[none|all] Enables verbose dumping of the threader solver.
+    threader-debug=[none|all]
+    Enables verbose dumping of the threader solver.
 
   .. gcc-param:: parloops-chunk-size
 
@@ -4776,7 +4776,7 @@ section includes experimental options that may produce broken code.
     :samp:`4`
       Use both Advanced SIMD and SVE.  Prefer SVE when the costs are deemed equal.
 
-      The default value is 0.
+    The default value is 0.
 
   .. gcc-param:: aarch64-loop-vect-issue-rate-niters
 
@@ -4786,4 +4786,3 @@ section includes experimental options that may produce broken code.
     If this parameter is set to :samp:`{n}`, GCC will not use this heuristic
     for loops that are known to execute in fewer than :samp:`{n}` Advanced
     SIMD iterations.
-

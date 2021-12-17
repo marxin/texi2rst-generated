@@ -431,9 +431,10 @@ Options That Control Static Analysis
   Default setting; overrides :option:`-Wno-analyzer-use-of-uninitialized-value`.
 
 Pertinent parameters for controlling the exploration are:
+
 :option:`--param` :gcc-param:`analyzer-bb-explosion-factor`:samp:`={value}`,
 :option:`--param` :gcc-param:`analyzer-max-enodes-per-program-point`:samp:`={value}`,
-:option:`--param` :gcc-param:`analyzer-max-recursion-depth`:samp:`={value}`, and
+:option:`--param` :gcc-param:`analyzer-max-recursion-depth`:samp:`={value}` and
 :option:`--param` :gcc-param:`analyzer-min-snodes-for-call-summary`:samp:`={value}`.
 
 The following options control the analyzer.
