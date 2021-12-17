@@ -154,6 +154,9 @@ latex_logo = '../logo.pdf'
 latex_use_xindy = False
 
 latex_elements = {
+    'fontpkg': r'''
+\setmonofont[Scale=0.8]{DejaVu Sans Mono}
+''',
     'preamble': r'''
 \fvset{formatcom=\let\textbf\relax}
 \protected\def\sphinxcrossref#1{#1}
