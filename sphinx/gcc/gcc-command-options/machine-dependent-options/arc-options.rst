@@ -648,7 +648,7 @@ The following options fine tune code generation:
 .. option:: -mtune=cpu
 
   Set instruction scheduling parameters for :samp:`{cpu}`, overriding any implied
-  by :option:`-mcpu` =.
+  by :option:`-mcpu`.
 
   Supported values for :samp:`{cpu}` are
 

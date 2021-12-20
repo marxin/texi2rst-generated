@@ -167,7 +167,6 @@ These :samp:`-m` options are defined for the ARM port:
   Architectures not mentioned do not support any extensions.
 
   :samp:`armv5te` :samp:`armv6` :samp:`armv6j` :samp:`armv6k` :samp:`armv6kz` :samp:`armv6t2` :samp:`armv6z` :samp:`armv6zk`
-
     :samp:`+fp`
       The VFPv2 floating-point instructions.  The extension :samp:`+vfpv2` can be
       used as an alias for this extension.
@@ -189,7 +188,6 @@ These :samp:`-m` options are defined for the ARM port:
       Disable the floating-point instructions.
 
   :samp:`armv7-a`
-
     :samp:`+mp`
       The multiprocessing extension.
 
@@ -290,7 +288,6 @@ These :samp:`-m` options are defined for the ARM port:
       Disable the floating-point and Advanced SIMD instructions.
 
   :samp:`armv8-a`
-
     :samp:`+crc`
       The Cyclic Redundancy Check (CRC) instructions.
 
@@ -313,7 +310,6 @@ These :samp:`-m` options are defined for the ARM port:
       Execution and Data Prediction Restriction Instructions.
 
   :samp:`armv8.1-a`
-
     :samp:`+simd`
       The ARMv8.1-A Advanced SIMD and floating-point instructions.
 
@@ -334,7 +330,6 @@ These :samp:`-m` options are defined for the ARM port:
       Execution and Data Prediction Restriction Instructions.
 
   :samp:`armv8.2-a` :samp:`armv8.3-a`
-
     :samp:`+fp16`
       The half-precision floating-point data processing instructions.
       This also enables the Advanced SIMD and floating-point instructions.
@@ -375,7 +370,6 @@ These :samp:`-m` options are defined for the ARM port:
       This also enables Advanced SIMD and floating-point instructions.
 
   :samp:`armv8.4-a`
-
     :samp:`+fp16`
       The half-precision floating-point data processing instructions.
       This also enables the Advanced SIMD and floating-point instructions as well
@@ -411,7 +405,6 @@ These :samp:`-m` options are defined for the ARM port:
       This also enables Advanced SIMD and floating-point instructions.
 
   :samp:`armv8.5-a`
-
     :samp:`+fp16`
       The half-precision floating-point data processing instructions.
       This also enables the Advanced SIMD and floating-point instructions as well
@@ -441,7 +434,6 @@ These :samp:`-m` options are defined for the ARM port:
       This also enables Advanced SIMD and floating-point instructions.
 
   :samp:`armv8.6-a`
-
     :samp:`+fp16`
       The half-precision floating-point data processing instructions.
       This also enables the Advanced SIMD and floating-point instructions as well
@@ -471,7 +463,6 @@ These :samp:`-m` options are defined for the ARM port:
       This also enables Advanced SIMD and floating-point instructions.
 
   :samp:`armv7-r`
-
     :samp:`+fp.sp`
       The single-precision VFPv3 floating-point instructions.  The extension
       :samp:`+vfpv3xd` can be used as an alias for this extension.
@@ -498,7 +489,6 @@ These :samp:`-m` options are defined for the ARM port:
       Disable the ARM-state integer division extension.
 
   :samp:`armv7e-m`
-
     :samp:`+fp`
       The single-precision VFPv4 floating-point instructions.
 
@@ -512,7 +502,6 @@ These :samp:`-m` options are defined for the ARM port:
       Disable the floating-point extensions.
 
   :samp:`armv8.1-m.main`
-
     :samp:`+dsp`
       The DSP instructions.
 
@@ -537,7 +526,6 @@ These :samp:`-m` options are defined for the ARM port:
       to the numbers given in the options in the range 0 to 7.
 
   :samp:`armv8-m.main`
-
     :samp:`+dsp`
       The DSP instructions.
 
@@ -558,7 +546,6 @@ These :samp:`-m` options are defined for the ARM port:
       to the numbers given in the options in the range 0 to 7.
 
   :samp:`armv8-r`
-
     :samp:`+crc`
       The Cyclic Redundancy Check (CRC) instructions.
 
