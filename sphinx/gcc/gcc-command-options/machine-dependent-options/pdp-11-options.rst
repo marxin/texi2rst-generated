@@ -17,7 +17,7 @@ These options are defined for the PDP-11:
 .. option:: -mfpu
 
   Use hardware FPP floating point.  This is the default.  (FIS floating
-  point on the PDP-11/40 is not supported.)  Implies -m45.
+  point on the PDP-11/40 is not supported.)  Implies :option:`-m45`.
 
 .. option:: -msoft-float
 

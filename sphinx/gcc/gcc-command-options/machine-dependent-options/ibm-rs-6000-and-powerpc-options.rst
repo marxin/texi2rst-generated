@@ -100,7 +100,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   :option:`-mcrypto`  :option:`-mhtm`  :option:`-mpower8-fusion`  :option:`-mpower8-vector` |gol|
   :option:`-mquad-memory`  :option:`-mquad-memory-atomic`  :option:`-mfloat128` |gol|
   :option:`-mfloat128-hardware` :option:`-mprefixed` :option:`-mpcrel` :option:`-mmma` |gol|
-  :option:`-mrop-protect
+  :option:`-mrop-protect`
 
   The particular options set for any particular CPU varies between
   compiler versions, depending on what setting seems to produce optimal

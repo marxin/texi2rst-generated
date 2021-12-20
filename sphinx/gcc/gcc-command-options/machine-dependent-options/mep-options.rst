@@ -65,7 +65,7 @@ MeP Options
 
   Enables the coprocessor instructions.  By default, this is a 32-bit
   coprocessor.  Note that the coprocessor is normally enabled via the
-  :option:`-mconfig` = option.
+  :option:`-mconfig`:samp:`=`` option.
 
 .. option:: -mcop32
 

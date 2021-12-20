@@ -553,11 +553,11 @@
     and outputs the command-line option :option:`-foo`.
 
   ``%W{S}``
-    Like %{ ``S`` } but mark last argument supplied within as a file to be
+    Like ``%{S}`` but mark last argument supplied within as a file to be
     deleted on failure.
 
   ``%@{S}``
-    Like %{ ``S`` } but puts the result into a ``FILE`` and substitutes
+    Like ``%{S}`` but puts the result into a ``FILE`` and substitutes
     ``@FILE`` if an ``@file`` argument has been supplied.
 
   ``%{S*}``
@@ -569,7 +569,7 @@
     text, including the space.  Thus two arguments are generated.
 
   ``%{S*&T*}``
-    Like %{ ``S`` \*}, but preserve order of ``S`` and ``T`` options
+    Like ``%{S*}``, but preserve order of ``S`` and ``T`` options
     (the order of ``S`` and ``T`` in the spec is not significant).
     There can be any number of ampersand-separated variables; for each the
     wild card is optional.  Useful for CPP as ``%{D*&U*&A*}``.

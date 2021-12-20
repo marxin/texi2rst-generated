@@ -18,9 +18,13 @@ These command-line options are defined for RX targets:
 
   Make the ``double`` data type be 64 bits (:option:`-m64bit-doubles`)
   or 32 bits (:option:`-m32bit-doubles`) in size.  The default is
-  :option:`-m32bit-doubles`.  *Note* RX floating-point hardware only
-  works on 32-bit values, which is why the default is
   :option:`-m32bit-doubles`.
+
+  .. note::
+
+    RX floating-point hardware only
+    works on 32-bit values, which is why the default is
+    :option:`-m32bit-doubles`.
 
 .. option:: -fpu, -nofpu
 

@@ -1906,6 +1906,8 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
+.. _type-punning:
+
 .. option:: -fstrict-aliasing
 
   Allow the compiler to assume the strictest aliasing rules applicable to
@@ -1916,8 +1918,6 @@ optimizations to be performed is desired.
   example, an ``unsigned int`` can alias an ``int``, but not a
   ``void*`` or a ``double``.  A character type may alias any other
   type.
-
-.. _type-punning:
 
   Pay special attention to code like this:
 
