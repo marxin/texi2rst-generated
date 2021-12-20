@@ -20,7 +20,7 @@ is being compiled:
 .. option:: -mbarrel-shifter
 
   Generate instructions supported by barrel shifter.  This is the default
-  unless :option:`-mcpu`:samp:`=ARC601` or :samp:`-mcpu=ARCEM` is in effect.
+  unless :option:`-mcpu`:samp:`=ARC601` or :option:`-mcpu`:samp:`=ARCEM` is in effect.
 
 .. option:: -mjli-always
 

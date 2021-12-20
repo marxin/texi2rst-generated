@@ -23,7 +23,7 @@ libraries and for parts of the compiler:
 
   Set the directory to search for plugins that are passed
   by :option:`-fplugin`:samp:`={name}` instead of
-  :option:`-fplugin`:samp:`={path}` / :samp:`{name}`.so.  This option is not meant
+  :option:`-fplugin`:samp:`={path}/{name}`.so.  This option is not meant
   to be used by the user, but only passed by the driver.
 
 .. option:: -Ldir
