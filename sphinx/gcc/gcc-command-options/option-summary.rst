@@ -341,6 +341,7 @@ in the following sections.
 
   See :ref:`optimize-options`.
 
+<<<<<<< HEAD
   :option:`-faggressive-loop-optimizations` |gol|
   :option:`-falign-functions`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
   :option:`-falign-jumps`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
@@ -431,7 +432,7 @@ in the following sections.
   :option:`-fipa-ra`  :option:`-fvariable-expansion-in-unroller`  :option:`-fvect-cost-model`  :option:`-fvpt` |gol|
   :option:`-fweb`  :option:`-fwhole-program`  :option:`-fwpa`  :option:`-fuse-linker-plugin` :option:`-fzero-call-used-regs` |gol|
   :option:`--param` :samp:`{name}={value}` |gol|
-  :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og`
+  :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og` :option:`-Oz`
 
 *Program Instrumentation Options*
 
