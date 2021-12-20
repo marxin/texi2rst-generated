@@ -231,6 +231,13 @@ See :ref:`overall-options`, for examples.
   :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fssa-phiopt` 
   :option:`-ftree-bit-ccp`  :option:`-ftree-dse`  :option:`-ftree-pta`  :option:`-ftree-sra`
 
+.. option:: -Oz
+
+  Optimize aggressively for size rather than speed.  This may increase
+  the number of instructions executed if those instructions require
+  fewer bytes to encode.  :option:`-Oz` behaves similarly to :option:`-Os`
+  including enabling most :option:`-O2` optimizations.
+
 If you use multiple :option:`-O` options, with or without level numbers,
 the last such option is the one that is effective.
 
