@@ -77,3 +77,13 @@ Listing:
 
 :samp:`{file}.hh` :samp:`{file}.H` :samp:`{file}.hp` :samp:`{file}.hxx` :samp:`{file}.hpp` :samp:`{file}.HPP` :samp:`{file}.h++` :samp:`{file}.tcc`
   C++ header file to be turned into a precompiled header or Ada spec.
+
+.. program:: make
+
+.. option:: --verbose
+
+Use verbose mode.
+
+.. program:: None
+
+Use :option:`--verbose` mode.
