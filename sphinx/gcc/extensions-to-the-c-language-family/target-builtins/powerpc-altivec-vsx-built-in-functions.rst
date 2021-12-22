@@ -1340,7 +1340,7 @@ PowerPC family of processors, starting with ISA 3.1 (:option:`-mcpu`:samp:`=powe
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_cfuge (vector unsigned long long int, vector unsigned long long int)
+  vec_cfuge (vector unsigned long long int, vector unsigned long long int);
 
 Perform a vector centrifuge operation, as if implemented by the
 ``vcfuged`` instruction.
@@ -1350,7 +1350,7 @@ Perform a vector centrifuge operation, as if implemented by the
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_cntlzm (vector unsigned long long int, vector unsigned long long int)
+  vec_cntlzm (vector unsigned long long int, vector unsigned long long int);
 
 Perform a vector count leading zeros under bit mask operation, as if
 implemented by the ``vclzdm`` instruction.
@@ -1360,7 +1360,7 @@ implemented by the ``vclzdm`` instruction.
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_cnttzm (vector unsigned long long int, vector unsigned long long int)
+  vec_cnttzm (vector unsigned long long int, vector unsigned long long int);
 
 Perform a vector count trailing zeros under bit mask operation, as if
 implemented by the ``vctzdm`` instruction.
@@ -1370,9 +1370,9 @@ implemented by the ``vctzdm`` instruction.
 .. code-block:: c++
 
   vector signed char
-  vec_clrl (vector signed char a, unsigned int n)
+  vec_clrl (vector signed char a, unsigned int n);
   vector unsigned char
-  vec_clrl (vector unsigned char a, unsigned int n)
+  vec_clrl (vector unsigned char a, unsigned int n);
 
 Clear the left-most ``(16 - n)`` bytes of vector argument ``a``, as if
 implemented by the ``vclrlb`` instruction on a big-endian target
@@ -1384,9 +1384,9 @@ value of ``n`` that is greater than 16 is treated as if it equaled 16.
 .. code-block:: c++
 
   vector signed char
-  vec_clrr (vector signed char a, unsigned int n)
+  vec_clrr (vector signed char a, unsigned int n);
   vector unsigned char
-  vec_clrr (vector unsigned char a, unsigned int n)
+  vec_clrr (vector unsigned char a, unsigned int n);
 
 Clear the right-most ``(16 - n)`` bytes of vector argument ``a``, as if
 implemented by the ``vclrrb`` instruction on a big-endian target
@@ -1398,7 +1398,7 @@ value of ``n`` that is greater than 16 is treated as if it equaled 16.
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_gnb (vector unsigned __int128, const unsigned char)
+  vec_gnb (vector unsigned __int128, const unsigned char);
 
 Perform a 128-bit vector gather  operation, as if implemented by the
 ``vgnb`` instruction.  The second argument must be a literal
@@ -1411,13 +1411,13 @@ Vector Extract
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_extractl (vector unsigned char, vector unsigned char, unsigned int)
+  vec_extractl (vector unsigned char, vector unsigned char, unsigned int);
   vector unsigned long long int
-  vec_extractl (vector unsigned short, vector unsigned short, unsigned int)
+  vec_extractl (vector unsigned short, vector unsigned short, unsigned int);
   vector unsigned long long int
-  vec_extractl (vector unsigned int, vector unsigned int, unsigned int)
+  vec_extractl (vector unsigned int, vector unsigned int, unsigned int);
   vector unsigned long long int
-  vec_extractl (vector unsigned long long, vector unsigned long long, unsigned int)
+  vec_extractl (vector unsigned long long, vector unsigned long long, unsigned int);
 
 Extract an element from two concatenated vectors starting at the given byte index
 in natural-endian order, and place it zero-extended in doubleword 1 of the result
@@ -1439,8 +1439,8 @@ consistent with the limitation on ``vec_perm``.
 
 .. code-block:: c++
 
-  vector unsigned long long intvec_extracth (vector unsigned char, vector unsigned char, unsigned int)vector unsigned long long intvec_extracth (vector unsigned short, vector unsigned short,unsigned int)
-  vector unsigned long long intvec_extracth (vector unsigned int, vector unsigned int, unsigned int)vector unsigned long long intvec_extracth (vector unsigned long long, vector unsigned long long,unsigned int)
+  vector unsigned long long intvec_extracth (vector unsigned char, vector unsigned char, unsigned int);vector unsigned long long intvec_extracth (vector unsigned short, vector unsigned short,unsigned int);
+  vector unsigned long long intvec_extracth (vector unsigned int, vector unsigned int, unsigned int);vector unsigned long long intvec_extracth (vector unsigned long long, vector unsigned long long,unsigned int);
 
 Extract an element from two concatenated vectors starting at the given byte
 index.  The index is based on big endian order for a little endian system.
@@ -1466,7 +1466,7 @@ limitation on ``vec_perm``.
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_pdep (vector unsigned long long int, vector unsigned long long int)
+  vec_pdep (vector unsigned long long int, vector unsigned long long int);
 
 Perform a vector parallel bits deposit operation, as if implemented by
 the ``vpdepd`` instruction.
@@ -1678,7 +1678,7 @@ contained in the first two arguments.
 .. code-block:: c++
 
   vector unsigned long long int
-  vec_pext (vector unsigned long long int, vector unsigned long long int)
+  vec_pext (vector unsigned long long int, vector unsigned long long int);
 
 Perform a vector parallel bit extract operation, as if implemented by
 the ``vpextd`` instruction.
@@ -1687,10 +1687,10 @@ the ``vpextd`` instruction.
 
 .. code-block:: c++
 
-  vector unsigned char vec_stril (vector unsigned char)
-  vector signed char vec_stril (vector signed char)
-  vector unsigned short vec_stril (vector unsigned short)
-  vector signed short vec_stril (vector signed short)
+  vector unsigned char vec_stril (vector unsigned char);
+  vector signed char vec_stril (vector signed char);
+  vector unsigned short vec_stril (vector unsigned short);
+  vector signed short vec_stril (vector signed short);
 
 Isolate the left-most non-zero elements of the incoming vector argument,
 replacing all elements to the right of the left-most zero element
@@ -1703,10 +1703,10 @@ little-endian targets.
 
 .. code-block:: c++
 
-  int vec_stril_p (vector unsigned char)
-  int vec_stril_p (vector signed char)
-  int short vec_stril_p (vector unsigned short)
-  int vec_stril_p (vector signed short)
+  int vec_stril_p (vector unsigned char);
+  int vec_stril_p (vector signed char);
+  int short vec_stril_p (vector unsigned short);
+  int vec_stril_p (vector signed short);
 
 Return a non-zero value if and only if the argument contains a zero
 element.  The typical implementation uses
@@ -1719,10 +1719,10 @@ zero element if the same argument is also passed to ``vec_stril``.
 
 .. code-block:: c++
 
-  vector unsigned char vec_strir (vector unsigned char)
-  vector signed char vec_strir (vector signed char)
-  vector unsigned short vec_strir (vector unsigned short)
-  vector signed short vec_strir (vector signed short)
+  vector unsigned char vec_strir (vector unsigned char);
+  vector signed char vec_strir (vector signed char);
+  vector unsigned short vec_strir (vector unsigned short);
+  vector signed short vec_strir (vector signed short);
 
 Isolate the right-most non-zero elements of the incoming vector argument,
 replacing all elements to the left of the right-most zero element
@@ -1735,10 +1735,10 @@ little-endian targets.
 
 .. code-block:: c++
 
-  int vec_strir_p (vector unsigned char)
-  int vec_strir_p (vector signed char)
-  int short vec_strir_p (vector unsigned short)
-  int vec_strir_p (vector signed short)
+  int vec_strir_p (vector unsigned char);
+  int vec_strir_p (vector signed char);
+  int short vec_strir_p (vector unsigned short);
+  int vec_strir_p (vector signed short);
 
 Return a non-zero value if and only if the argument contains a zero
 element.  The typical implementation uses
@@ -1751,11 +1751,11 @@ zero element if the same argument is also passed to ``vec_strir``.
 
 .. code-block:: c++
 
-  vector unsigned charvec_ternarylogic (vector unsigned char, vector unsigned char,            vector unsigned char, const unsigned int)
-  vector unsigned shortvec_ternarylogic (vector unsigned short, vector unsigned short,            vector unsigned short, const unsigned int)
-  vector unsigned intvec_ternarylogic (vector unsigned int, vector unsigned int,            vector unsigned int, const unsigned int)
-  vector unsigned long long intvec_ternarylogic (vector unsigned long long int, vector unsigned long long int,            vector unsigned long long int, const unsigned int)
-  vector unsigned __int128vec_ternarylogic (vector unsigned __int128, vector unsigned __int128,            vector unsigned __int128, const unsigned int)
+  vector unsigned charvec_ternarylogic (vector unsigned char, vector unsigned char,            vector unsigned char, const unsigned int);
+  vector unsigned shortvec_ternarylogic (vector unsigned short, vector unsigned short,            vector unsigned short, const unsigned int);
+  vector unsigned intvec_ternarylogic (vector unsigned int, vector unsigned int,            vector unsigned int, const unsigned int);
+  vector unsigned long long intvec_ternarylogic (vector unsigned long long int, vector unsigned long long int,            vector unsigned long long int, const unsigned int);
+  vector unsigned __int128vec_ternarylogic (vector unsigned __int128, vector unsigned __int128,            vector unsigned __int128, const unsigned int);
 
 Perform a 128-bit vector evaluate operation, as if implemented by the
 ``xxeval`` instruction.  The fourth argument must be a literal
@@ -1765,16 +1765,16 @@ integer value between 0 and 255 inclusive.
 
 .. code-block:: c++
 
-  vector unsigned char vec_genpcvm (vector unsigned char, const int)vector unsigned short vec_genpcvm (vector unsigned short, const int)vector unsigned int vec_genpcvm (vector unsigned int, const int)vector unsigned int vec_genpcvm (vector unsigned long long int,                                         const int)
+  vector unsigned char vec_genpcvm (vector unsigned char, const int);vector unsigned short vec_genpcvm (vector unsigned short, const int);vector unsigned int vec_genpcvm (vector unsigned int, const int);vector unsigned int vec_genpcvm (vector unsigned long long int,                                         const int);
 
 Vector Integer Multiply/Divide/Modulo
 
 .. code-block:: c++
 
   vector signed int
-  vec_mulh (vector signed int a, vector signed int b)
+  vec_mulh (vector signed int a, vector signed int b);
   vector unsigned int
-  vec_mulh (vector unsigned int a, vector unsigned int b)
+  vec_mulh (vector unsigned int a, vector unsigned int b);
 
 For each integer value ``i`` from 0 to 3, do the following. The integer
 value in word element ``i`` of a is multiplied by the integer value in word
@@ -1784,9 +1784,9 @@ into word element ``i`` of the vector returned.
 .. code-block:: c++
 
   vector signed long long
-  vec_mulh (vector signed long long a, vector signed long long b)
+  vec_mulh (vector signed long long a, vector signed long long b);
   vector unsigned long long
-  vec_mulh (vector unsigned long long a, vector unsigned long long b)
+  vec_mulh (vector unsigned long long a, vector unsigned long long b);
 
 For each integer value ``i`` from 0 to 1, do the following. The integer
 value in doubleword element ``i`` of a is multiplied by the integer value in
@@ -1796,9 +1796,9 @@ are placed into doubleword element ``i`` of the vector returned.
 .. code-block:: c++
 
   vector unsigned long long
-  vec_mul (vector unsigned long long a, vector unsigned long long b)
+  vec_mul (vector unsigned long long a, vector unsigned long long b);
   vector signed long long
-  vec_mul (vector signed long long a, vector signed long long b)
+  vec_mul (vector signed long long a, vector signed long long b);
 
 For each integer value ``i`` from 0 to 1, do the following. The integer
 value in doubleword element ``i`` of a is multiplied by the integer value in
@@ -1808,9 +1808,9 @@ are placed into doubleword element ``i`` of the vector returned.
 .. code-block:: c++
 
   vector signed int
-  vec_div (vector signed int a, vector signed int b)
+  vec_div (vector signed int a, vector signed int b);
   vector unsigned int
-  vec_div (vector unsigned int a, vector unsigned int b)
+  vec_div (vector unsigned int a, vector unsigned int b);
 
 For each integer value ``i`` from 0 to 3, do the following. The integer in
 word element ``i`` of a is divided by the integer in word element ``i``
@@ -1821,9 +1821,9 @@ the vector returned. If an attempt is made to perform any of the divisions
 .. code-block:: c++
 
   vector signed long long
-  vec_div (vector signed long long a, vector signed long long b)
+  vec_div (vector signed long long a, vector signed long long b);
   vector unsigned long long
-  vec_div (vector unsigned long long a, vector unsigned long long b)
+  vec_div (vector unsigned long long a, vector unsigned long long b);
 
 For each integer value ``i`` from 0 to 1, do the following. The integer in
 doubleword element ``i`` of a is divided by the integer in doubleword
@@ -1835,9 +1835,9 @@ the quotient is undefined.
 .. code-block:: c++
 
   vector signed int
-  vec_dive (vector signed int a, vector signed int b)
+  vec_dive (vector signed int a, vector signed int b);
   vector unsigned int
-  vec_dive (vector unsigned int a, vector unsigned int b)
+  vec_dive (vector unsigned int a, vector unsigned int b);
 
 For each integer value ``i`` from 0 to 3, do the following. The integer in
 word element ``i`` of a is shifted left by 32 bits, then divided by the
@@ -1849,9 +1849,9 @@ divisions <anything> ÷ 0 then the quotient is undefined.
 .. code-block:: c++
 
   vector signed long long
-  vec_dive (vector signed long long a, vector signed long long b)
+  vec_dive (vector signed long long a, vector signed long long b);
   vector unsigned long long
-  vec_dive (vector unsigned long long a, vector unsigned long long b)
+  vec_dive (vector unsigned long long a, vector unsigned long long b);
 
 For each integer value ``i`` from 0 to 1, do the following. The integer in
 doubleword element ``i`` of a is shifted left by 64 bits, then divided by
@@ -1863,9 +1863,9 @@ quotient cannot be represented in 64 bits, or if an attempt is made to perform
 .. code-block:: c++
 
   vector signed int
-  vec_mod (vector signed int a, vector signed int b)
+  vec_mod (vector signed int a, vector signed int b);
   vector unsigned int
-  vec_mod (vector unsigned int a, vector unsigned int b)
+  vec_mod (vector unsigned int a, vector unsigned int b);
 
 For each integer value ``i`` from 0 to 3, do the following. The integer in
 word element ``i`` of a is divided by the integer in word element ``i``
@@ -1876,9 +1876,9 @@ the vector returned.  If an attempt is made to perform any of the divisions
 .. code-block:: c++
 
   vector signed long long
-  vec_mod (vector signed long long a, vector signed long long b)
+  vec_mod (vector signed long long a, vector signed long long b);
   vector unsigned long long
-  vec_mod (vector unsigned long long a, vector unsigned long long b)
+  vec_mod (vector unsigned long long a, vector unsigned long long b);
 
 For each integer value ``i`` from 0 to 1, do the following. The integer in
 doubleword element ``i`` of a is divided by the integer in doubleword

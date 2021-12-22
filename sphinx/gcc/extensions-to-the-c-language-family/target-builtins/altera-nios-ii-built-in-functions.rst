@@ -25,7 +25,7 @@ all generate the machine instruction that is part of the name.
   void __builtin_sthio (volatile void *, int);
   void __builtin_stwio (volatile void *, int);
   void __builtin_sync (void);
-  int __builtin_rdctl (int) 
+  int __builtin_rdctl (int);
   int __builtin_rdprs (int, int);
   void __builtin_wrctl (int, int);
   void __builtin_flushd (volatile void *);

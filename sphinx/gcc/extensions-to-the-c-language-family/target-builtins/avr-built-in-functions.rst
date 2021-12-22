@@ -54,28 +54,28 @@ or if not a specific built-in is implemented or not. For example, if
   .. code-block:: c++
 
     // same as val, bits is unused
-    __builtin_avr_insert_bits (0xffffffff, bits, val)
+    __builtin_avr_insert_bits (0xffffffff, bits, val);
 
   .. code-block:: c++
 
     // same as bits, val is unused
-    __builtin_avr_insert_bits (0x76543210, bits, val)
+    __builtin_avr_insert_bits (0x76543210, bits, val);
 
   .. code-block:: c++
 
     // same as rotating bits by 4
-    __builtin_avr_insert_bits (0x32107654, bits, 0)
+    __builtin_avr_insert_bits (0x32107654, bits, 0);
 
   .. code-block:: c++
 
     // high nibble of result is the high nibble of val
     // low nibble of result is the low nibble of bits
-    __builtin_avr_insert_bits (0xffff3210, bits, val)
+    __builtin_avr_insert_bits (0xffff3210, bits, val);
 
   .. code-block:: c++
 
     // reverse the bit order of bits
-    __builtin_avr_insert_bits (0x01234567, bits, 0)
+    __builtin_avr_insert_bits (0x01234567, bits, 0);
 
 ``void __builtin_avr_nops (unsigned count)``
   Insert :samp:`{count}` ``NOP`` instructions.
