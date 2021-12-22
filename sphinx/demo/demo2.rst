@@ -87,3 +87,5 @@ Use verbose mode.
 .. program:: None
 
 Use :option:`--verbose` mode.
+
+This works: :option:`--verbose <make --verbose>`
