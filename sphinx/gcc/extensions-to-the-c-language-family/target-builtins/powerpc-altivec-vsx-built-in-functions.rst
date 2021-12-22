@@ -1434,8 +1434,10 @@ consistent with the limitation on ``vec_perm``.
 
 .. code-block:: c++
 
-  vector unsigned long long intvec_extracth (vector unsigned char, vector unsigned char, unsigned int);vector unsigned long long intvec_extracth (vector unsigned short, vector unsigned short,unsigned int);
-  vector unsigned long long intvec_extracth (vector unsigned int, vector unsigned int, unsigned int);vector unsigned long long intvec_extracth (vector unsigned long long, vector unsigned long long,unsigned int);
+  vector unsigned long long intvec_extracth (vector unsigned char, vector unsigned char, unsigned int);
+  vector unsigned long long intvec_extracth (vector unsigned short, vector unsigned short,unsigned int);
+  vector unsigned long long intvec_extracth (vector unsigned int, vector unsigned int, unsigned int);
+  vector unsigned long long intvec_extracth (vector unsigned long long, vector unsigned long long,unsigned int);
 
 Extract an element from two concatenated vectors starting at the given byte
 index.  The index is based on big endian order for a little endian system.
@@ -1472,8 +1474,12 @@ Vector Insert
 
 .. code-block:: c++
 
-  vector unsigned charvec_insertl (unsigned char, vector unsigned char, unsigned int);vector unsigned shortvec_insertl (unsigned short, vector unsigned short, unsigned int);vector unsigned intvec_insertl (unsigned int, vector unsigned int, unsigned int);vector unsigned long longvec_insertl (unsigned long long, vector unsigned long long,unsigned int);
-  vector unsigned charvec_insertl (vector unsigned char, vector unsigned char, unsigned int;vector unsigned shortvec_insertl (vector unsigned short, vector unsigned short,unsigned int);
+  vector unsigned charvec_insertl (unsigned char, vector unsigned char, unsigned int);
+  vector unsigned shortvec_insertl (unsigned short, vector unsigned short, unsigned int);
+  vector unsigned intvec_insertl (unsigned int, vector unsigned int, unsigned int);
+  vector unsigned long longvec_insertl (unsigned long long, vector unsigned long long,unsigned int);
+  vector unsigned charvec_insertl (vector unsigned char, vector unsigned char, unsigned int;
+  vector unsigned shortvec_insertl (vector unsigned short, vector unsigned short,unsigned int);
   vector unsigned intvec_insertl (vector unsigned int, vector unsigned int, unsigned int);
 
 Let src be the first argument, when the first argument is a scalar, or the
@@ -1493,8 +1499,12 @@ type of element being inserted.
 
 .. code-block:: c++
 
-  vector unsigned charvec_inserth (unsigned char, vector unsigned char, unsigned int);vector unsigned shortvec_inserth (unsigned short, vector unsigned short, unsigned int);vector unsigned intvec_inserth (unsigned int, vector unsigned int, unsigned int);vector unsigned long longvec_inserth (unsigned long long, vector unsigned long long,unsigned int);
-  vector unsigned charvec_inserth (vector unsigned char, vector unsigned char, unsigned int);vector unsigned shortvec_inserth (vector unsigned short, vector unsigned short,unsigned int);
+  vector unsigned charvec_inserth (unsigned char, vector unsigned char, unsigned int);
+  vector unsigned shortvec_inserth (unsigned short, vector unsigned short, unsigned int);
+  vector unsigned intvec_inserth (unsigned int, vector unsigned int, unsigned int);
+  vector unsigned long longvec_inserth (unsigned long long, vector unsigned long long,unsigned int);
+  vector unsigned charvec_inserth (vector unsigned char, vector unsigned char, unsigned int);
+  vector unsigned shortvec_inserth (vector unsigned short, vector unsigned short,unsigned int);
   vector unsigned intvec_inserth (vector unsigned int, vector unsigned int, unsigned int);
 
 Let src be the first argument, when the first argument is a scalar, or the
@@ -1519,7 +1529,8 @@ Vector Replace Element
 
   vector signed int vec_replace_elt (vector signed int, signed int,const int);
   vector unsigned int vec_replace_elt (vector unsigned int,unsigned int, const int);
-  vector float vec_replace_elt (vector float, float, const int);vector signed long long vec_replace_elt (vector signed long long,signed long long, const int);
+  vector float vec_replace_elt (vector float, float, const int);
+  vector signed long long vec_replace_elt (vector signed long long,signed long long, const int);
   vector unsigned long long vec_replace_elt (vector unsigned long long,unsigned long long, const int);
   vector double rec_replace_elt (vector double, double, const int);
 
@@ -1746,11 +1757,11 @@ zero element if the same argument is also passed to ``vec_strir``.
 
 .. code-block:: c++
 
-  vector unsigned charvec_ternarylogic (vector unsigned char, vector unsigned char,            vector unsigned char, const unsigned int);
-  vector unsigned shortvec_ternarylogic (vector unsigned short, vector unsigned short,            vector unsigned short, const unsigned int);
-  vector unsigned intvec_ternarylogic (vector unsigned int, vector unsigned int,            vector unsigned int, const unsigned int);
-  vector unsigned long long intvec_ternarylogic (vector unsigned long long int, vector unsigned long long int,            vector unsigned long long int, const unsigned int);
-  vector unsigned __int128vec_ternarylogic (vector unsigned __int128, vector unsigned __int128,            vector unsigned __int128, const unsigned int);
+  vector unsigned charvec_ternarylogic (vector unsigned char, vector unsigned char, vector unsigned char, const unsigned int);
+  vector unsigned shortvec_ternarylogic (vector unsigned short, vector unsigned short, vector unsigned short, const unsigned int);
+  vector unsigned intvec_ternarylogic (vector unsigned int, vector unsigned int, vector unsigned int, const unsigned int);
+  vector unsigned long long intvec_ternarylogic (vector unsigned long long int, vector unsigned long long int, vector unsigned long long int, const unsigned int);
+  vector unsigned __int128vec_ternarylogic (vector unsigned __int128, vector unsigned __int128, vector unsigned __int128, const unsigned int);
 
 Perform a 128-bit vector evaluate operation, as if implemented by the
 ``xxeval`` instruction.  The fourth argument must be a literal
@@ -1760,7 +1771,10 @@ integer value between 0 and 255 inclusive.
 
 .. code-block:: c++
 
-  vector unsigned char vec_genpcvm (vector unsigned char, const int);vector unsigned short vec_genpcvm (vector unsigned short, const int);vector unsigned int vec_genpcvm (vector unsigned int, const int);vector unsigned int vec_genpcvm (vector unsigned long long int,                                         const int);
+  vector unsigned char vec_genpcvm (vector unsigned char, const int);
+  vector unsigned short vec_genpcvm (vector unsigned short, const int);
+  vector unsigned int vec_genpcvm (vector unsigned int, const int);
+  vector unsigned int vec_genpcvm (vector unsigned long long int, const int);
 
 Vector Integer Multiply/Divide/Modulo
 
@@ -1889,18 +1903,16 @@ immediate value is either 0, 1, 2 or 3.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_rl (vector unsigned __int128 A,                                         vector unsigned __int128 B);
-  vector signed __int128 vec_rl (vector signed __int128 A,                                       vector unsigned __int128 B);
+  vector unsigned __int128 vec_rl (vector unsigned __int128 A, vector unsigned __int128 B);
+  vector signed __int128 vec_rl (vector signed __int128 A, vector unsigned __int128 B);
 
 Result value: Each element of R is obtained by rotating the corresponding element
 of A left by the number of bits specified by the corresponding element of B.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_rlmi (vector unsigned __int128,                                           vector unsigned __int128,
-                                             vector unsigned __int128);
-  vector signed __int128 vec_rlmi (vector signed __int128,                                         vector signed __int128,
-                                           vector unsigned __int128);
+  vector unsigned __int128 vec_rlmi (vector unsigned __int128, vector unsigned __int128, vector unsigned __int128);
+  vector signed __int128 vec_rlmi (vector signed __int128, vector signed __int128, vector unsigned __int128);
 
 Returns the result of rotating the first input and inserting it under mask
 into the second input.  The first bit in the mask, the last bit in the mask are
@@ -1910,10 +1922,8 @@ in the 7-bit field [125:131] where all bits counted from zero at the left.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_rlnm (vector unsigned __int128,                                           vector unsigned __int128,
-                                             vector unsigned __int128);
-  vector signed __int128 vec_rlnm (vector signed __int128,                                         vector unsigned __int128,
-                                           vector unsigned __int128);
+  vector unsigned __int128 vec_rlnm (vector unsigned __int128, vector unsigned __int128, vector unsigned __int128);
+  vector signed __int128 vec_rlnm (vector signed __int128, vector unsigned __int128, vector unsigned __int128);
 
 Returns the result of rotating the first input and ANDing it with a mask.  The
 first bit in the mask and the last bit in the mask are obtained from the two
@@ -1947,24 +1957,24 @@ element of A right by the number of bits specified by the corresponding element 
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_mule (vector unsigned long long,                                           vector unsigned long long);
-  vector signed __int128 vec_mule (vector signed long long,                                         vector signed long long);
+  vector unsigned __int128 vec_mule (vector unsigned long long, vector unsigned long long);
+  vector signed __int128 vec_mule (vector signed long long, vector signed long long);
 
 Returns a vector containing a 128-bit integer result of multiplying the even
 doubleword elements of the two inputs.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_mulo (vector unsigned long long,                                           vector unsigned long long);
-  vector signed __int128 vec_mulo (vector signed long long,                                         vector signed long long);
+  vector unsigned __int128 vec_mulo (vector unsigned long long, vector unsigned long long);
+  vector signed __int128 vec_mulo (vector signed long long, vector signed long long);
 
 Returns a vector containing a 128-bit integer result of multiplying the odd
 doubleword elements of the two inputs.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_div (vector unsigned __int128,                                          vector unsigned __int128);
-  vector signed __int128 vec_div (vector signed __int128,                                        vector signed __int128);
+  vector unsigned __int128 vec_div (vector unsigned __int128, vector unsigned __int128);
+  vector signed __int128 vec_div (vector signed __int128, vector signed __int128);
 
 Returns the result of dividing the first operand by the second operand. An
 attempt to divide any value by zero or to divide the most negative signed
@@ -1972,8 +1982,8 @@ attempt to divide any value by zero or to divide the most negative signed
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_dive (vector unsigned __int128,                                           vector unsigned __int128);
-  vector signed __int128 vec_dive (vector signed __int128,                                         vector signed __int128);
+  vector unsigned __int128 vec_dive (vector unsigned __int128, vector unsigned __int128);
+  vector signed __int128 vec_dive (vector signed __int128, vector signed __int128);
 
 The result is produced by shifting the first input left by 128 bits and
 dividing by the second.  If an attempt is made to divide by zero or the result
@@ -1981,8 +1991,8 @@ is larger than 128 bits, the result is undefined.
 
 .. code-block:: c++
 
-  vector unsigned __int128 vec_mod (vector unsigned __int128,                                          vector unsigned __int128);
-  vector signed __int128 vec_mod (vector signed __int128,                                        vector signed __int128);
+  vector unsigned __int128 vec_mod (vector unsigned __int128, vector unsigned __int128);
+  vector signed __int128 vec_mod (vector signed __int128, vector signed __int128);
 
 The result is the modulo result of dividing the first input  by the second
 input.
