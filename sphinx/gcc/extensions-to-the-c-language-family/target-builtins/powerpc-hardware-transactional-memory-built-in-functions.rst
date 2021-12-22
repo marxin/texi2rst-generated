@@ -34,28 +34,28 @@ Refer to the ISA manual for a description of each instruction's operands.
 
 .. code-block:: c++
 
-  unsigned int __builtin_tbegin (unsigned int)
-  unsigned int __builtin_tend (unsigned int)
+  unsigned int __builtin_tbegin (unsigned int);
+  unsigned int __builtin_tend (unsigned int);
 
-  unsigned int __builtin_tabort (unsigned int)
-  unsigned int __builtin_tabortdc (unsigned int, unsigned int, unsigned int)
-  unsigned int __builtin_tabortdci (unsigned int, unsigned int, int)
-  unsigned int __builtin_tabortwc (unsigned int, unsigned int, unsigned int)
-  unsigned int __builtin_tabortwci (unsigned int, unsigned int, int)
+  unsigned int __builtin_tabort (unsigned int);
+  unsigned int __builtin_tabortdc (unsigned int, unsigned int, unsigned int);
+  unsigned int __builtin_tabortdci (unsigned int, unsigned int, int);
+  unsigned int __builtin_tabortwc (unsigned int, unsigned int, unsigned int);
+  unsigned int __builtin_tabortwci (unsigned int, unsigned int, int);
 
-  unsigned int __builtin_tcheck (void)
-  unsigned int __builtin_treclaim (unsigned int)
-  unsigned int __builtin_trechkpt (void)
-  unsigned int __builtin_tsr (unsigned int)
+  unsigned int __builtin_tcheck (void);
+  unsigned int __builtin_treclaim (unsigned int);
+  unsigned int __builtin_trechkpt (void);
+  unsigned int __builtin_tsr (unsigned int);
 
 In addition to the above HTM built-ins, we have added built-ins for
 some common extended mnemonics of the HTM instructions:
 
 .. code-block:: c++
 
-  unsigned int __builtin_tendall (void)
-  unsigned int __builtin_tresume (void)
-  unsigned int __builtin_tsuspend (void)
+  unsigned int __builtin_tendall (void);
+  unsigned int __builtin_tresume (void);
+  unsigned int __builtin_tsuspend (void);
 
 Note that the semantics of the above HTM builtins are required to mimic
 the locking semantics used for critical sections.  Builtins that are used
@@ -84,10 +84,10 @@ to the HTM specific special purpose registers.
 
 .. code-block:: c++
 
-  unsigned long __builtin_get_texasr (void)
-  unsigned long __builtin_get_texasru (void)
-  unsigned long __builtin_get_tfhar (void)
-  unsigned long __builtin_get_tfiar (void)
+  unsigned long __builtin_get_texasr (void);
+  unsigned long __builtin_get_texasru (void);
+  unsigned long __builtin_get_tfhar (void);
+  unsigned long __builtin_get_tfiar (void);
 
   void __builtin_set_texasr (unsigned long);
   void __builtin_set_texasru (unsigned long);
@@ -169,24 +169,24 @@ can be compiled and executed on either system.
 
 .. code-block:: c++
 
-  long __TM_simple_begin (void)
-  long __TM_begin (void* const TM_buff)
-  long __TM_end (void)
-  void __TM_abort (void)
-  void __TM_named_abort (unsigned char const code)
-  void __TM_resume (void)
-  void __TM_suspend (void)
+  long __TM_simple_begin (void);
+  long __TM_begin (void* const TM_buff);
+  long __TM_end (void);
+  void __TM_abort (void);
+  void __TM_named_abort (unsigned char const code);
+  void __TM_resume (void);
+  void __TM_suspend (void);
 
-  long __TM_is_user_abort (void* const TM_buff)
-  long __TM_is_named_user_abort (void* const TM_buff, unsigned char *code)
-  long __TM_is_illegal (void* const TM_buff)
-  long __TM_is_footprint_exceeded (void* const TM_buff)
-  long __TM_nesting_depth (void* const TM_buff)
-  long __TM_is_nested_too_deep(void* const TM_buff)
-  long __TM_is_conflict(void* const TM_buff)
-  long __TM_is_failure_persistent(void* const TM_buff)
-  long __TM_failure_address(void* const TM_buff)
-  long long __TM_failure_code(void* const TM_buff)
+  long __TM_is_user_abort (void* const TM_buff);
+  long __TM_is_named_user_abort (void* const TM_buff, unsigned char *code);
+  long __TM_is_illegal (void* const TM_buff);
+  long __TM_is_footprint_exceeded (void* const TM_buff);
+  long __TM_nesting_depth (void* const TM_buff);
+  long __TM_is_nested_too_deep(void* const TM_buff);
+  long __TM_is_conflict(void* const TM_buff);
+  long __TM_is_failure_persistent(void* const TM_buff);
+  long __TM_failure_address(void* const TM_buff);
+  long long __TM_failure_code(void* const TM_buff);
 
 Using these common set of HTM inline functions, we can create
 a more portable version of the HTM example in the previous

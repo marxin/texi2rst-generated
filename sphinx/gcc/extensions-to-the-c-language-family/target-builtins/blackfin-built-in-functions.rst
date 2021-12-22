@@ -16,6 +16,6 @@ instructions.  These functions are named as follows:
 
 .. code-block:: c++
 
-  void __builtin_bfin_csync (void)
-  void __builtin_bfin_ssync (void)
+  void __builtin_bfin_csync (void);
+  void __builtin_bfin_ssync (void);
 

@@ -132,110 +132,110 @@ for details on what each instruction does.
 
 .. code-block:: c++
 
-  v2q15 __builtin_mips_addq_ph (v2q15, v2q15)
-  v2q15 __builtin_mips_addq_s_ph (v2q15, v2q15)
-  q31 __builtin_mips_addq_s_w (q31, q31)
-  v4i8 __builtin_mips_addu_qb (v4i8, v4i8)
-  v4i8 __builtin_mips_addu_s_qb (v4i8, v4i8)
-  v2q15 __builtin_mips_subq_ph (v2q15, v2q15)
-  v2q15 __builtin_mips_subq_s_ph (v2q15, v2q15)
-  q31 __builtin_mips_subq_s_w (q31, q31)
-  v4i8 __builtin_mips_subu_qb (v4i8, v4i8)
-  v4i8 __builtin_mips_subu_s_qb (v4i8, v4i8)
-  i32 __builtin_mips_addsc (i32, i32)
-  i32 __builtin_mips_addwc (i32, i32)
-  i32 __builtin_mips_modsub (i32, i32)
-  i32 __builtin_mips_raddu_w_qb (v4i8)
-  v2q15 __builtin_mips_absq_s_ph (v2q15)
-  q31 __builtin_mips_absq_s_w (q31)
-  v4i8 __builtin_mips_precrq_qb_ph (v2q15, v2q15)
-  v2q15 __builtin_mips_precrq_ph_w (q31, q31)
-  v2q15 __builtin_mips_precrq_rs_ph_w (q31, q31)
-  v4i8 __builtin_mips_precrqu_s_qb_ph (v2q15, v2q15)
-  q31 __builtin_mips_preceq_w_phl (v2q15)
-  q31 __builtin_mips_preceq_w_phr (v2q15)
-  v2q15 __builtin_mips_precequ_ph_qbl (v4i8)
-  v2q15 __builtin_mips_precequ_ph_qbr (v4i8)
-  v2q15 __builtin_mips_precequ_ph_qbla (v4i8)
-  v2q15 __builtin_mips_precequ_ph_qbra (v4i8)
-  v2q15 __builtin_mips_preceu_ph_qbl (v4i8)
-  v2q15 __builtin_mips_preceu_ph_qbr (v4i8)
-  v2q15 __builtin_mips_preceu_ph_qbla (v4i8)
-  v2q15 __builtin_mips_preceu_ph_qbra (v4i8)
-  v4i8 __builtin_mips_shll_qb (v4i8, imm0_7)
-  v4i8 __builtin_mips_shll_qb (v4i8, i32)
-  v2q15 __builtin_mips_shll_ph (v2q15, imm0_15)
-  v2q15 __builtin_mips_shll_ph (v2q15, i32)
-  v2q15 __builtin_mips_shll_s_ph (v2q15, imm0_15)
-  v2q15 __builtin_mips_shll_s_ph (v2q15, i32)
-  q31 __builtin_mips_shll_s_w (q31, imm0_31)
-  q31 __builtin_mips_shll_s_w (q31, i32)
-  v4i8 __builtin_mips_shrl_qb (v4i8, imm0_7)
-  v4i8 __builtin_mips_shrl_qb (v4i8, i32)
-  v2q15 __builtin_mips_shra_ph (v2q15, imm0_15)
-  v2q15 __builtin_mips_shra_ph (v2q15, i32)
-  v2q15 __builtin_mips_shra_r_ph (v2q15, imm0_15)
-  v2q15 __builtin_mips_shra_r_ph (v2q15, i32)
-  q31 __builtin_mips_shra_r_w (q31, imm0_31)
-  q31 __builtin_mips_shra_r_w (q31, i32)
-  v2q15 __builtin_mips_muleu_s_ph_qbl (v4i8, v2q15)
-  v2q15 __builtin_mips_muleu_s_ph_qbr (v4i8, v2q15)
-  v2q15 __builtin_mips_mulq_rs_ph (v2q15, v2q15)
-  q31 __builtin_mips_muleq_s_w_phl (v2q15, v2q15)
-  q31 __builtin_mips_muleq_s_w_phr (v2q15, v2q15)
-  a64 __builtin_mips_dpau_h_qbl (a64, v4i8, v4i8)
-  a64 __builtin_mips_dpau_h_qbr (a64, v4i8, v4i8)
-  a64 __builtin_mips_dpsu_h_qbl (a64, v4i8, v4i8)
-  a64 __builtin_mips_dpsu_h_qbr (a64, v4i8, v4i8)
-  a64 __builtin_mips_dpaq_s_w_ph (a64, v2q15, v2q15)
-  a64 __builtin_mips_dpaq_sa_l_w (a64, q31, q31)
-  a64 __builtin_mips_dpsq_s_w_ph (a64, v2q15, v2q15)
-  a64 __builtin_mips_dpsq_sa_l_w (a64, q31, q31)
-  a64 __builtin_mips_mulsaq_s_w_ph (a64, v2q15, v2q15)
-  a64 __builtin_mips_maq_s_w_phl (a64, v2q15, v2q15)
-  a64 __builtin_mips_maq_s_w_phr (a64, v2q15, v2q15)
-  a64 __builtin_mips_maq_sa_w_phl (a64, v2q15, v2q15)
-  a64 __builtin_mips_maq_sa_w_phr (a64, v2q15, v2q15)
-  i32 __builtin_mips_bitrev (i32)
-  i32 __builtin_mips_insv (i32, i32)
-  v4i8 __builtin_mips_repl_qb (imm0_255)
-  v4i8 __builtin_mips_repl_qb (i32)
-  v2q15 __builtin_mips_repl_ph (imm_n512_511)
-  v2q15 __builtin_mips_repl_ph (i32)
-  void __builtin_mips_cmpu_eq_qb (v4i8, v4i8)
-  void __builtin_mips_cmpu_lt_qb (v4i8, v4i8)
-  void __builtin_mips_cmpu_le_qb (v4i8, v4i8)
-  i32 __builtin_mips_cmpgu_eq_qb (v4i8, v4i8)
-  i32 __builtin_mips_cmpgu_lt_qb (v4i8, v4i8)
-  i32 __builtin_mips_cmpgu_le_qb (v4i8, v4i8)
-  void __builtin_mips_cmp_eq_ph (v2q15, v2q15)
-  void __builtin_mips_cmp_lt_ph (v2q15, v2q15)
-  void __builtin_mips_cmp_le_ph (v2q15, v2q15)
-  v4i8 __builtin_mips_pick_qb (v4i8, v4i8)
-  v2q15 __builtin_mips_pick_ph (v2q15, v2q15)
-  v2q15 __builtin_mips_packrl_ph (v2q15, v2q15)
-  i32 __builtin_mips_extr_w (a64, imm0_31)
-  i32 __builtin_mips_extr_w (a64, i32)
-  i32 __builtin_mips_extr_r_w (a64, imm0_31)
-  i32 __builtin_mips_extr_s_h (a64, i32)
-  i32 __builtin_mips_extr_rs_w (a64, imm0_31)
-  i32 __builtin_mips_extr_rs_w (a64, i32)
-  i32 __builtin_mips_extr_s_h (a64, imm0_31)
-  i32 __builtin_mips_extr_r_w (a64, i32)
-  i32 __builtin_mips_extp (a64, imm0_31)
-  i32 __builtin_mips_extp (a64, i32)
-  i32 __builtin_mips_extpdp (a64, imm0_31)
-  i32 __builtin_mips_extpdp (a64, i32)
-  a64 __builtin_mips_shilo (a64, imm_n32_31)
-  a64 __builtin_mips_shilo (a64, i32)
-  a64 __builtin_mips_mthlip (a64, i32)
-  void __builtin_mips_wrdsp (i32, imm0_63)
-  i32 __builtin_mips_rddsp (imm0_63)
-  i32 __builtin_mips_lbux (void *, i32)
-  i32 __builtin_mips_lhx (void *, i32)
-  i32 __builtin_mips_lwx (void *, i32)
-  a64 __builtin_mips_ldx (void *, i32) [MIPS64 only]
-  i32 __builtin_mips_bposge32 (void)
+  v2q15 __builtin_mips_addq_ph (v2q15, v2q15);
+  v2q15 __builtin_mips_addq_s_ph (v2q15, v2q15);
+  q31 __builtin_mips_addq_s_w (q31, q31);
+  v4i8 __builtin_mips_addu_qb (v4i8, v4i8);
+  v4i8 __builtin_mips_addu_s_qb (v4i8, v4i8);
+  v2q15 __builtin_mips_subq_ph (v2q15, v2q15);
+  v2q15 __builtin_mips_subq_s_ph (v2q15, v2q15);
+  q31 __builtin_mips_subq_s_w (q31, q31);
+  v4i8 __builtin_mips_subu_qb (v4i8, v4i8);
+  v4i8 __builtin_mips_subu_s_qb (v4i8, v4i8);
+  i32 __builtin_mips_addsc (i32, i32);
+  i32 __builtin_mips_addwc (i32, i32);
+  i32 __builtin_mips_modsub (i32, i32);
+  i32 __builtin_mips_raddu_w_qb (v4i8);
+  v2q15 __builtin_mips_absq_s_ph (v2q15);
+  q31 __builtin_mips_absq_s_w (q31);
+  v4i8 __builtin_mips_precrq_qb_ph (v2q15, v2q15);
+  v2q15 __builtin_mips_precrq_ph_w (q31, q31);
+  v2q15 __builtin_mips_precrq_rs_ph_w (q31, q31);
+  v4i8 __builtin_mips_precrqu_s_qb_ph (v2q15, v2q15);
+  q31 __builtin_mips_preceq_w_phl (v2q15);
+  q31 __builtin_mips_preceq_w_phr (v2q15);
+  v2q15 __builtin_mips_precequ_ph_qbl (v4i8);
+  v2q15 __builtin_mips_precequ_ph_qbr (v4i8);
+  v2q15 __builtin_mips_precequ_ph_qbla (v4i8);
+  v2q15 __builtin_mips_precequ_ph_qbra (v4i8);
+  v2q15 __builtin_mips_preceu_ph_qbl (v4i8);
+  v2q15 __builtin_mips_preceu_ph_qbr (v4i8);
+  v2q15 __builtin_mips_preceu_ph_qbla (v4i8);
+  v2q15 __builtin_mips_preceu_ph_qbra (v4i8);
+  v4i8 __builtin_mips_shll_qb (v4i8, imm0_7);
+  v4i8 __builtin_mips_shll_qb (v4i8, i32);
+  v2q15 __builtin_mips_shll_ph (v2q15, imm0_15);
+  v2q15 __builtin_mips_shll_ph (v2q15, i32);
+  v2q15 __builtin_mips_shll_s_ph (v2q15, imm0_15);
+  v2q15 __builtin_mips_shll_s_ph (v2q15, i32);
+  q31 __builtin_mips_shll_s_w (q31, imm0_31);
+  q31 __builtin_mips_shll_s_w (q31, i32);
+  v4i8 __builtin_mips_shrl_qb (v4i8, imm0_7);
+  v4i8 __builtin_mips_shrl_qb (v4i8, i32);
+  v2q15 __builtin_mips_shra_ph (v2q15, imm0_15);
+  v2q15 __builtin_mips_shra_ph (v2q15, i32);
+  v2q15 __builtin_mips_shra_r_ph (v2q15, imm0_15);
+  v2q15 __builtin_mips_shra_r_ph (v2q15, i32);
+  q31 __builtin_mips_shra_r_w (q31, imm0_31);
+  q31 __builtin_mips_shra_r_w (q31, i32);
+  v2q15 __builtin_mips_muleu_s_ph_qbl (v4i8, v2q15);
+  v2q15 __builtin_mips_muleu_s_ph_qbr (v4i8, v2q15);
+  v2q15 __builtin_mips_mulq_rs_ph (v2q15, v2q15);
+  q31 __builtin_mips_muleq_s_w_phl (v2q15, v2q15);
+  q31 __builtin_mips_muleq_s_w_phr (v2q15, v2q15);
+  a64 __builtin_mips_dpau_h_qbl (a64, v4i8, v4i8);
+  a64 __builtin_mips_dpau_h_qbr (a64, v4i8, v4i8);
+  a64 __builtin_mips_dpsu_h_qbl (a64, v4i8, v4i8);
+  a64 __builtin_mips_dpsu_h_qbr (a64, v4i8, v4i8);
+  a64 __builtin_mips_dpaq_s_w_ph (a64, v2q15, v2q15);
+  a64 __builtin_mips_dpaq_sa_l_w (a64, q31, q31);
+  a64 __builtin_mips_dpsq_s_w_ph (a64, v2q15, v2q15);
+  a64 __builtin_mips_dpsq_sa_l_w (a64, q31, q31);
+  a64 __builtin_mips_mulsaq_s_w_ph (a64, v2q15, v2q15);
+  a64 __builtin_mips_maq_s_w_phl (a64, v2q15, v2q15);
+  a64 __builtin_mips_maq_s_w_phr (a64, v2q15, v2q15);
+  a64 __builtin_mips_maq_sa_w_phl (a64, v2q15, v2q15);
+  a64 __builtin_mips_maq_sa_w_phr (a64, v2q15, v2q15);
+  i32 __builtin_mips_bitrev (i32);
+  i32 __builtin_mips_insv (i32, i32);
+  v4i8 __builtin_mips_repl_qb (imm0_255);
+  v4i8 __builtin_mips_repl_qb (i32);
+  v2q15 __builtin_mips_repl_ph (imm_n512_511);
+  v2q15 __builtin_mips_repl_ph (i32);
+  void __builtin_mips_cmpu_eq_qb (v4i8, v4i8);
+  void __builtin_mips_cmpu_lt_qb (v4i8, v4i8);
+  void __builtin_mips_cmpu_le_qb (v4i8, v4i8);
+  i32 __builtin_mips_cmpgu_eq_qb (v4i8, v4i8);
+  i32 __builtin_mips_cmpgu_lt_qb (v4i8, v4i8);
+  i32 __builtin_mips_cmpgu_le_qb (v4i8, v4i8);
+  void __builtin_mips_cmp_eq_ph (v2q15, v2q15);
+  void __builtin_mips_cmp_lt_ph (v2q15, v2q15);
+  void __builtin_mips_cmp_le_ph (v2q15, v2q15);
+  v4i8 __builtin_mips_pick_qb (v4i8, v4i8);
+  v2q15 __builtin_mips_pick_ph (v2q15, v2q15);
+  v2q15 __builtin_mips_packrl_ph (v2q15, v2q15);
+  i32 __builtin_mips_extr_w (a64, imm0_31);
+  i32 __builtin_mips_extr_w (a64, i32);
+  i32 __builtin_mips_extr_r_w (a64, imm0_31);
+  i32 __builtin_mips_extr_s_h (a64, i32);
+  i32 __builtin_mips_extr_rs_w (a64, imm0_31);
+  i32 __builtin_mips_extr_rs_w (a64, i32);
+  i32 __builtin_mips_extr_s_h (a64, imm0_31);
+  i32 __builtin_mips_extr_r_w (a64, i32);
+  i32 __builtin_mips_extp (a64, imm0_31);
+  i32 __builtin_mips_extp (a64, i32);
+  i32 __builtin_mips_extpdp (a64, imm0_31);
+  i32 __builtin_mips_extpdp (a64, i32);
+  a64 __builtin_mips_shilo (a64, imm_n32_31);
+  a64 __builtin_mips_shilo (a64, i32);
+  a64 __builtin_mips_mthlip (a64, i32);
+  void __builtin_mips_wrdsp (i32, imm0_63);
+  i32 __builtin_mips_rddsp (imm0_63);
+  i32 __builtin_mips_lbux (void *, i32);
+  i32 __builtin_mips_lhx (void *, i32);
+  i32 __builtin_mips_lwx (void *, i32);
+  a64 __builtin_mips_ldx (void *, i32); /* MIPS64 only */
+  i32 __builtin_mips_bposge32 (void);
   a64 __builtin_mips_madd (a64, i32, i32);
   a64 __builtin_mips_maddu (a64, ui32, ui32);
   a64 __builtin_mips_msub (a64, i32, i32);
