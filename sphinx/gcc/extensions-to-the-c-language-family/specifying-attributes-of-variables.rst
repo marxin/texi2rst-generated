@@ -436,7 +436,7 @@ The following attributes are supported on most targets.
 
   The ``tls_model`` attribute sets thread-local storage model
   (see :ref:`thread-local`) of a particular ``__thread`` variable,
-  overriding :option:`-ftls-model` = command-line switch on a per-variable
+  overriding :option:`-ftls-model`:samp:`=` command-line switch on a per-variable
   basis.
   The :samp:`{tls_model}` argument should be one of ``global-dynamic``,
   ``local-dynamic``, ``initial-exec`` or ``local-exec``.

@@ -74,7 +74,7 @@ Using :option:`-fexcess-precision`:samp:`=16` will force round back after each o
 Using :option:`-mavx512fp16` will generate AVX512-FP16 instructions instead of
 software emulation. The default behavior of ``FLT_EVAL_METHOD`` is to round
 after each operation. The same is true with :option:`-fexcess-precision`:samp:`=standard`
-and :option:`-mfpmath`:samp:`=sse`. If there is no :option:`-mfpmath`:samp:`=sse`,
+and :option:`-mfpmath <x86 -mfpmath>`:samp:`=sse`. If there is no :option:`-mfpmath <x86 -mfpmath>`:samp:`=sse`,
 :option:`-fexcess-precision`:samp:`=standard` alone does the same thing as before,
 It is useful for code that does not have ``_Float16`` and runs on the x87
 FPU.

@@ -33,7 +33,7 @@ These function attributes are supported by the MeP back end:
 
   This attribute causes the compiler to assume the called
   function is close enough to use the normal calling convention,
-  overriding the :option:`-mtf` command-line option.
+  overriding the :option:`-mtf <MeP -mtf>` command-line option.
 
 .. gcc-attr:: far
 

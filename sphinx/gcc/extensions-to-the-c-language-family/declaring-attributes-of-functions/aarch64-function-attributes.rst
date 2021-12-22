@@ -39,7 +39,7 @@ per-function basis.
 
   Indicates that code should be generated for a particular code model for
   this function.  The behavior and permissible arguments are the same as
-  for the command line option :option:`-mcmodel` =.
+  for the command line option :option:`-mcmodel`:samp:`=`.
 
 .. gcc-attr:: strict-align, no-strict-align
 
@@ -67,7 +67,7 @@ per-function basis.
 
   Specifies the TLS dialect to use for this function.  The behavior and
   permissible arguments are the same as for the command-line option
-  :option:`-mtls-dialect` =.
+  :option:`-mtls-dialect`:samp:`=`.
 
 .. gcc-attr:: arch=
 
@@ -82,7 +82,7 @@ per-function basis.
   .. index:: tune= function attribute, AArch64
 
   Specifies the core for which to tune the performance of this function.
-  The behavior and permissible arguments are the same as for the :option:`-mtune` =
+  The behavior and permissible arguments are the same as for the :option:`-mtune`:samp:`=`
   command-line option.
 
 .. gcc-attr:: cpu=
@@ -147,7 +147,7 @@ without having to specify a particular architecture version or core.  Example:
 
 In this example ``target("+crc+nocrypto")`` enables the ``crc``
 extension and disables the ``crypto`` extension for the function ``foo``
-without modifying an existing :option:`-march` = or :option:`-mcpu` option.
+without modifying an existing :option:`-march` or :option:`-mcpu` option.
 
 Multiple target function attributes can be specified by separating them with
 a comma.  For example:

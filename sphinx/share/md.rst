@@ -2505,7 +2505,7 @@ RISC-V---:samp:`{config/riscv/constraints.md}`
   ``S``
     A constraint that matches an absolute symbolic address.
 
-:samp:`RX---{config/rx/constraints.md}`
+RX---:samp:`{config/rx/constraints.md}`
 
   ``Q``
     An address which does not involve register indirect addressing or
