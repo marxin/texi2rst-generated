@@ -21,16 +21,16 @@ is used here to mean any function pointer type.
 
 .. code-block:: c++
 
-  cmse_address_info_t cmse_TT (void *)
-  cmse_address_info_t cmse_TT_fptr (FPTR)
-  cmse_address_info_t cmse_TTT (void *)
-  cmse_address_info_t cmse_TTT_fptr (FPTR)
-  cmse_address_info_t cmse_TTA (void *)
-  cmse_address_info_t cmse_TTA_fptr (FPTR)
-  cmse_address_info_t cmse_TTAT (void *)
-  cmse_address_info_t cmse_TTAT_fptr (FPTR)
-  void * cmse_check_address_range (void *, size_t, int)
-  typeof(p) cmse_nsfptr_create (FPTR p)
-  intptr_t cmse_is_nsfptr (FPTR)
-  int cmse_nonsecure_caller (void)
+  cmse_address_info_t cmse_TT (void *);
+  cmse_address_info_t cmse_TT_fptr (FPTR);
+  cmse_address_info_t cmse_TTT (void *);
+  cmse_address_info_t cmse_TTT_fptr (FPTR);
+  cmse_address_info_t cmse_TTA (void *);
+  cmse_address_info_t cmse_TTA_fptr (FPTR);
+  cmse_address_info_t cmse_TTAT (void *);
+  cmse_address_info_t cmse_TTAT_fptr (FPTR);
+  void * cmse_check_address_range (void *, size_t, int);
+  typeof(p) cmse_nsfptr_create (FPTR p);
+  intptr_t cmse_is_nsfptr (FPTR);
+  int cmse_nonsecure_caller (void);
 

@@ -23,14 +23,14 @@ The intrinsics are:
 
 .. code-block:: c++
 
-  unsigned long long __tile_idn0_receive (void)
-  unsigned long long __tile_idn1_receive (void)
-  unsigned long long __tile_udn0_receive (void)
-  unsigned long long __tile_udn1_receive (void)
-  unsigned long long __tile_udn2_receive (void)
-  unsigned long long __tile_udn3_receive (void)
-  void __tile_idn_send (unsigned long long)
-  void __tile_udn_send (unsigned long long)
+  unsigned long long __tile_idn0_receive (void);
+  unsigned long long __tile_idn1_receive (void);
+  unsigned long long __tile_udn0_receive (void);
+  unsigned long long __tile_udn1_receive (void);
+  unsigned long long __tile_udn2_receive (void);
+  unsigned long long __tile_udn3_receive (void);
+  void __tile_idn_send (unsigned long long);
+  void __tile_udn_send (unsigned long long);
 
 The intrinsic ``void __tile_network_barrier (void)`` is used to
 guarantee that no network operations before it are reordered with

@@ -638,13 +638,13 @@ These function attributes are supported by the x86 back end:
 
     .. index:: target("sse4.1") function attribute, x86
 
-    Enable/disable the generation of the sse4.1 instructions.
+    Enable/disable the generation of the SSE4.1 instructions.
 
   :samp:`sse4.2` :samp:`no-sse4.2`
 
     .. index:: target("sse4.2") function attribute, x86
 
-    Enable/disable the generation of the sse4.2 instructions.
+    Enable/disable the generation of the SSE4.2 instructions.
 
   :samp:`sse4a` :samp:`no-sse4a`
 

@@ -1312,12 +1312,12 @@ The following sign extension builtins are provided:
 
 .. code-block:: c++
 
-  vector signed int vec_signexti (vector signed char a)
-  vector signed long long vec_signextll (vector signed char a)
-  vector signed int vec_signexti (vector signed short a)
-  vector signed long long vec_signextll (vector signed short a)
-  vector signed long long vec_signextll (vector signed int a)
-  vector signed long long vec_signextq (vector signed long long a)
+  vector signed int vec_signexti (vector signed char a);
+  vector signed long long vec_signextll (vector signed char a);
+  vector signed int vec_signexti (vector signed short a);
+  vector signed long long vec_signextll (vector signed short a);
+  vector signed long long vec_signextll (vector signed int a);
+  vector signed long long vec_signextq (vector signed long long a);
 
 Each element of the result is produced by sign-extending the element of the
 input vector that would fall in the least significant portion of the result
