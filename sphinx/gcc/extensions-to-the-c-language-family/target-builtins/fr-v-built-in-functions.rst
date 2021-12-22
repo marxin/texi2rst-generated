@@ -196,16 +196,16 @@ instructions to access memory.  These functions generate
 ``membar`` instructions to flush the I/O load and stores where
 appropriate, as described in Fujitsu's manual described above.
 
-::
+.. code-block:: c++
 
-  unsigned char __builtin_read8 (void *data)
-  unsigned short __builtin_read16 (void *data)
-  unsigned long __builtin_read32 (void *data)
-  unsigned long long __builtin_read64 (void *data)
-  void __builtin_write8 (void *data, unsigned char datum)
-  void __builtin_write16 (void *data, unsigned short datum)
-  void __builtin_write32 (void *data, unsigned long datum)
-  void __builtin_write64 (void *data, unsigned long long datum)
+  unsigned char __builtin_read8 (void *data);
+  unsigned short __builtin_read16 (void *data);
+  unsigned long __builtin_read32 (void *data);
+  unsigned long long __builtin_read64 (void *data);
+  void __builtin_write8 (void *data, unsigned char datum);
+  void __builtin_write16 (void *data, unsigned short datum);
+  void __builtin_write32 (void *data, unsigned long datum);
+  void __builtin_write64 (void *data, unsigned long long datum);
 
 Other Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~

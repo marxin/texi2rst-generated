@@ -14,17 +14,17 @@ or if not a specific built-in is implemented or not. For example, if
 ``__builtin_avr_nop`` is available the macro
 ``__BUILTIN_AVR_NOP`` is defined to ``1`` and undefined otherwise.
 
-::
+.. code-block:: c++
 
-  void __builtin_avr_nop (void)
-  void __builtin_avr_sei (void)
-  void __builtin_avr_cli (void)
-  void __builtin_avr_sleep (void)
-  void __builtin_avr_wdr (void)
-  unsigned char __builtin_avr_swap (unsigned char)
-  unsigned int __builtin_avr_fmul (unsigned char, unsigned char)
-  int __builtin_avr_fmuls (char, char)
-  int __builtin_avr_fmulsu (char, unsigned char)
+  void __builtin_avr_nop (void);
+  void __builtin_avr_sei (void);
+  void __builtin_avr_cli (void);
+  void __builtin_avr_sleep (void);
+  void __builtin_avr_wdr (void);
+  unsigned char __builtin_avr_swap (unsigned char);
+  unsigned int __builtin_avr_fmul (unsigned char, unsigned char);
+  int __builtin_avr_fmuls (char, char);
+  int __builtin_avr_fmulsu (char, unsigned char);
 
 These built-in functions map to the respective machine
 instruction, i.e. ``nop``, ``sei``, ``cli``, ``sleep``,
