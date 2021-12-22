@@ -25,10 +25,10 @@ can relocate the data files based on two environment variables:
 * GCOV_PREFIX_STRIP indicates the how many initial directory names to strip off
   the hardwired absolute paths. Default value is 0.
 
-  .. note::
+.. note::
 
-    If GCOV_PREFIX_STRIP is set without GCOV_PREFIX is undefined,
-    then a relative path is made out of the hardwired absolute paths.
+  If GCOV_PREFIX_STRIP is set without GCOV_PREFIX is undefined,
+  then a relative path is made out of the hardwired absolute paths.
 
 For example, if the object file :samp:`/user/build/foo.o` was built with
 :option:`-fprofile-arcs`, the final executable will try to create the data file

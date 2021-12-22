@@ -425,9 +425,6 @@ directives for declaring symbols to be weak, and defining weak
 aliases.
 
 :samp:`#pragma weak {symbol}`
-
-  .. index:: pragma, weak
-
   This pragma declares :samp:`{symbol}` to be weak, as if the declaration
   had the attribute of the same name.  The pragma may appear before
   or after the declaration of :samp:`{symbol}`.  It is not an error for
@@ -452,9 +449,6 @@ diagnostics and treat them as errors depending on which preprocessor
 macros are defined.
 
 :samp:`#pragma GCC diagnostic {kind}{option}`
-
-  .. index:: pragma, diagnostic
-
   Modifies the disposition of a diagnostic.  Note that not all
   diagnostics are modifiable; at the moment only warnings (normally
   controlled by :samp:`-W...`) can be controlled, and not all of them.

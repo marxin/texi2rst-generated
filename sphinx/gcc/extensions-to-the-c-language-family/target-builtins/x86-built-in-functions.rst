@@ -395,7 +395,7 @@ check the target platform type.
   :samp:`avx512bitalg`
     AVX512BITALG instructions.
 
-    Here is an example:
+  Here is an example:
 
   .. code-block:: c++
 
