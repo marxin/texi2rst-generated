@@ -160,29 +160,6 @@ latex_elements = {
     'preamble': r'''
 \fvset{formatcom=\let\textbf\relax}
 \protected\def\sphinxcrossref#1{#1}
-
-% FIXME: remove Numpy trick once #9985 gets fixed
-% In the parameters section, place a newline after the Parameters
-% header
-\usepackage{expdlist}
-\let\latexdescription=\description
-\def\description{\latexdescription{}{} \breaklabel}
-% but expdlist old LaTeX package requires fixes:
-% 1) remove extra space
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
-\makeatother
-% 2) fix bug in expdlist's way of breaking the line after long item label
-\makeatletter
-\def\breaklabel{%
-    \def\@breaklabel{%
-        \leavevmode\par
-        % now a hack because Sphinx inserts \leavevmode after term node
-        \def\leavevmode{\def\leavevmode{\unhbox\voidb@x}}%
-    }%
-}
-\makeatother
 ''',
 }
 
