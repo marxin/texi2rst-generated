@@ -96,7 +96,7 @@ accepts:
     bugs and floating-point issues
     (mainly but not entirely relating to optional C99 features from
     Annexes F and G).  See
-    http://gcc.gnu.org/c99status.html for more information.  The
+    https://gcc.gnu.org/c99status.html for more information.  The
     names :samp:`c9x` and :samp:`iso9899:199x` are deprecated.
 
   :samp:`c11` :samp:`c1x` :samp:`iso9899:2011`

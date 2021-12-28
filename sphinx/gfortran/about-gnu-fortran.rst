@@ -20,10 +20,10 @@ including OpenMP and OpenACC support for parallel programming.
 
 The GNU Fortran compiler passes the
 `NIST Fortran 77 Test Suite <http://www.fortran-2000.com/ArnaudRecipes/fcvs21_f95.html>`_, and produces acceptable results on the
-`LAPACK Test Suite <http://www.netlib.org/lapack/faq.html#1.21>`_.
+`LAPACK Test Suite <https://www.netlib.org/lapack/faq.html#1.21>`_.
 It also provides respectable performance on
 the `Polyhedron Fortran compiler benchmarks <https://polyhedron.com/?page_id=175>`_ and the
-`Livermore Fortran Kernels test <http://www.netlib.org/benchmark/livermore>`_.  It has been used to compile a number of
+`Livermore Fortran Kernels test <https://www.netlib.org/benchmark/livermore>`_.  It has been used to compile a number of
 large real-world programs, including
 `the HARMONIE and HIRLAM weather forecasting code <http://hirlam.org/>`_ and
 `the Tonto quantum chemistry package <https://github.com/dylan-jayatilaka/tonto>`_; see

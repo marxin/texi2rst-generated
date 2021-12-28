@@ -12,10 +12,10 @@ Downloading GCC
 
 .. index:: Downloading the Source
 
-GCC is distributed via `git <http://gcc.gnu.org/git.html>`_ and via
+GCC is distributed via `git <https://gcc.gnu.org/git.html>`_ and via
 HTTPS as tarballs compressed with :command:`gzip` or :command:`bzip2`.
 
-Please refer to the `releases web page <http://gcc.gnu.org/releases.html>`_
+Please refer to the `releases web page <https://gcc.gnu.org/releases.html>`_
 for information on how to obtain GCC.
 
 The source distribution includes the C, C++, Objective-C, Fortran,

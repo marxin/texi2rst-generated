@@ -670,7 +670,7 @@ It consists of a set of compiler directives, library routines,
 and environment variables that influence run-time behavior.
 
 GNU Fortran strives to be compatible to the
-`OpenMP Application Program Interface v4.5 <http://openmp.org/wp/openmp-specifications/>`_.
+`OpenMP Application Program Interface v4.5 <https://openmp.org/wp/openmp-specifications/>`_.
 
 To enable the processing of the OpenMP directive ``!$omp`` in
 free-form source code; the ``c$omp``, ``*$omp`` and ``!$omp``
@@ -728,7 +728,7 @@ influence run-time behavior.
 
 GNU Fortran strives to be compatible to the
 `OpenACC Application Programming
-Interface v2.6 <http://www.openacc.org/>`_.
+Interface v2.6 <https://www.openacc.org/>`_.
 
 To enable the processing of the OpenACC directive ``!$acc`` in
 free-form source code; the ``c$acc``, ``*$acc`` and ``!$acc``

@@ -23,5 +23,5 @@ ways to find it:
   https://www.fsf.org/resources/service.
 
 For further information, see
-http://gcc.gnu.org/faq.html#support.
+https://gcc.gnu.org/faq.html#support.
 

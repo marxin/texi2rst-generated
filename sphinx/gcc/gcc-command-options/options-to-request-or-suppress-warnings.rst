@@ -1369,7 +1369,7 @@ warn at all unless optimization is enabled.
   over the precise meaning of the sequence point rules in subtle cases.
   Links to discussions of the problem, including proposed formal
   definitions, may be found on the GCC readings page, at
-  http://gcc.gnu.org/readings.html.
+  https://gcc.gnu.org/readings.html.
 
   This warning is enabled by :option:`-Wall` for C and C++.
 

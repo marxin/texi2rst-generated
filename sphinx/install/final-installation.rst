@@ -69,7 +69,7 @@ You can install stripped programs and libraries with
 
 If you are bootstrapping a released version of GCC then please
 quickly review the build status page for your release, available from
-http://gcc.gnu.org/buildstat.html.
+https://gcc.gnu.org/buildstat.html.
 If your system is not listed for the version of GCC that you built,
 send a note to
 gcc@gcc.gnu.org indicating
