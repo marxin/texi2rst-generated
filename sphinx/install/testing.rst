@@ -17,9 +17,9 @@ Testing
 Before you install GCC, we encourage you to run the testsuites and to
 compare your results with results from a similar configuration that have
 been submitted to the
-`gcc-testresults mailing list <http://gcc.gnu.org/ml/gcc-testresults/>`_.
+`gcc-testresults mailing list <https://gcc.gnu.org/ml/gcc-testresults/>`_.
 Some of these archived results are linked from the build status lists
-at http://gcc.gnu.org/buildstat.html, although not everyone who
+at https://gcc.gnu.org/buildstat.html, although not everyone who
 reports a successful build runs the testsuites and submits the results.
 This step is optional and may require you to download additional software,
 but it can give you confidence in your new GCC installation or point out
@@ -31,7 +31,7 @@ These are part of the full distribution, but if you downloaded the
 separately.
 
 Second, you must have the testing tools installed.  This includes
-`DejaGnu <http://www.gnu.org/software/dejagnu/>`_, Tcl, and Expect;
+`DejaGnu <https://www.gnu.org/software/dejagnu/>`_, Tcl, and Expect;
 the DejaGnu site has links to these.
 Some optional tests also require Python3 and pytest module.
 
@@ -62,7 +62,7 @@ might emit some harmless messages resembling
 :samp:`WARNING: Couldn't find tool init file` that can be ignored.
 
 If you are testing a cross-compiler, you may want to run the testsuite
-on a simulator as described at http://gcc.gnu.org/simtest-howto.html.
+on a simulator as described at https://gcc.gnu.org/simtest-howto.html.
 
 .. toctree::
   :maxdepth: 2

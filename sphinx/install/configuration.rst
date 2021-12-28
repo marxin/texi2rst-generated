@@ -1911,7 +1911,7 @@ The following options only apply to building cross compilers.
   being used as the target C  library.  This causes float support
   functions like ``__addsf3`` to be omitted from :samp:`libgcc.a` on
   the assumption that it will be provided by :samp:`libm.a`.  For more
-  technical details, cf. `PR54461 <http://gcc.gnu.org/PR54461>`_.
+  technical details, cf. `PR54461 <https://gcc.gnu.org/PR54461>`_.
   It is not supported for
   RTEMS configurations, which currently use newlib.  The option is
   supported since version 4.7.2 and is the default in 4.8.0 and newer.

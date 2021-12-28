@@ -133,7 +133,7 @@ A new edition of the ISO C standard was published in 1999 as ISO/IEC
 development, drafts of this standard version were referred to as
 :dfn:`C9X`.)  GCC has substantially
 complete support for this standard version; see
-http://gcc.gnu.org/c99status.html for details.  To select this
+https://gcc.gnu.org/c99status.html for details.  To select this
 standard, use :option:`-std`:samp:`=c99` or :option:`-std`:samp:`=iso9899:1999`.  
 
 Errors in the 1999 ISO C standard were corrected in three Technical
@@ -228,5 +228,5 @@ to ``abort``.
 
 For references to Technical Corrigenda, Rationale documents and
 information concerning the history of C that is available online, see
-http://gcc.gnu.org/readings.html
+https://gcc.gnu.org/readings.html
 

@@ -62,5 +62,5 @@ different target string.  Function foo is called or a pointer to it is
 taken just like a regular function.  GCC takes care of doing the
 dispatching to call the right version at runtime.  Refer to the
 `GCC wiki on
-Function Multiversioning <http://gcc.gnu.org/wiki/FunctionMultiVersioning>`_ for more details.
+Function Multiversioning <https://gcc.gnu.org/wiki/FunctionMultiVersioning>`_ for more details.
 

@@ -210,17 +210,17 @@ These options affect the runtime behavior of programs compiled with
     Turns on all upcoming D language features.
 
   :samp:`dip1000`
-    Implements http://wiki.dlang.org/DIP1000 (Scoped pointers).
+    Implements https://wiki.dlang.org/DIP1000 (Scoped pointers).
 
   :samp:`dip1008`
-    Implements http://wiki.dlang.org/DIP1008 (Allow exceptions in
+    Implements https://wiki.dlang.org/DIP1008 (Allow exceptions in
     ``@nogc`` code).
 
   :samp:`dip1021`
-    Implements http://wiki.dlang.org/DIP1021 (Mutable function arguments).
+    Implements https://wiki.dlang.org/DIP1021 (Mutable function arguments).
 
   :samp:`dip25`
-    Implements http://wiki.dlang.org/DIP25 (Sealed references).
+    Implements https://wiki.dlang.org/DIP25 (Sealed references).
 
   :samp:`dtorfields`
     Turns on generation for destructing fields of partially constructed objects.
@@ -283,7 +283,7 @@ These options affect the runtime behavior of programs compiled with
     Turns off all revertable D language features.
 
   :samp:`dip25`
-    Reverts http://wiki.dlang.org/DIP25 (Sealed references).
+    Reverts https://wiki.dlang.org/DIP25 (Sealed references).
 
   :samp:`dtorfields`
     Turns off generation for destructing fields of partially constructed objects.

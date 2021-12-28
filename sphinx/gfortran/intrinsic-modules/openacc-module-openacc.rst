@@ -19,7 +19,7 @@ procedures provided by ``OPENACC`` can be found in the
 are listed below.
 
 For details refer to the actual
-`OpenACC Application Programming Interface v2.6 <http://www.openacc.org/>`_.
+`OpenACC Application Programming Interface v2.6 <https://www.openacc.org/>`_.
 
 ``OPENACC`` provides the scalar default-integer
 named constant ``openacc_version`` with a value of the form

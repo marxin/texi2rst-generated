@@ -61,5 +61,5 @@ The authoritative manual on Objective-C 2.0 is available from Apple:
 * https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
 
 For more information concerning the history of Objective-C that is
-available online, see http://gcc.gnu.org/readings.html
+available online, see https://gcc.gnu.org/readings.html
 

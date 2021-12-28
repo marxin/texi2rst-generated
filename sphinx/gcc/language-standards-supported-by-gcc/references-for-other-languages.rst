@@ -30,6 +30,6 @@ For instructions on reporting bugs, see
 |bugurl|.
 
 See the Info entry for :command:`gcc`, or
-http://gcc.gnu.org/onlinedocs/gcc/Contributors.html,
+https://gcc.gnu.org/onlinedocs/gcc/Contributors.html,
 for contributors to GCC.
 

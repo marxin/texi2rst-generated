@@ -20,6 +20,6 @@ For more information, see:
 
 .. code-block:: c++
 
-  http://www.gnu.org/
-  http://www.gnu.org/gnu/linux-and-gnu.html
+  https://www.gnu.org/
+  https://www.gnu.org/gnu/linux-and-gnu.html
 

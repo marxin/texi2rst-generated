@@ -42,7 +42,7 @@ interfaces to GCC front ends, and how support for a target system is
 implemented in GCC.
 
 Additional tutorial information is linked to from
-http://gcc.gnu.org/readings.html.
+https://gcc.gnu.org/readings.html.
 
 .. toctree::
   :maxdepth: 2

@@ -55,7 +55,7 @@ contact their makers.
 * `OpenPKG <http://www.openpkg.org/>`_ offers binaries for quite a
   number of platforms.
 
-* The `GFortran Wiki <http://gcc.gnu.org/wiki/GFortranBinaries>`_ has
+* The `GFortran Wiki <https://gcc.gnu.org/wiki/GFortranBinaries>`_ has
   links to GNU Fortran binaries for several platforms.
 
 .. ***Specific****************************************************************

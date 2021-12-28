@@ -434,7 +434,7 @@ i?86-\*-linux\*
 ===============
 
 As of GCC 3.3, binutils 2.13.1 or later is required for this platform.
-See `bug 10877 <http://gcc.gnu.org/PR10877>`_ for more information.
+See `bug 10877 <https://gcc.gnu.org/PR10877>`_ for more information.
 
 If you receive Signal 11 errors when building on GNU/Linux, then it is
 possible you have a hardware problem.  Further information on this can be
@@ -633,19 +633,19 @@ overflow severe error when the :option:`-bbigtoc` option is used to link
 GCC-produced object files into an executable that overflows the TOC.  A fix
 for APAR IX75823 (OVERFLOW DURING LINK WHEN USING GCC AND -BBIGTOC) is
 available from IBM Customer Support and from its
-`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
+`techsupport.services.ibm.com <https://techsupport.services.ibm.com/>`_
 website as PTF U455193.
 
 The AIX 4.3.2.1 linker (bos.rte.bind_cmds Level 4.3.2.1) will dump core
 with a segmentation fault when invoked by any version of GCC.  A fix for
 APAR IX87327 is available from IBM Customer Support and from its
-`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
+`techsupport.services.ibm.com <https://techsupport.services.ibm.com/>`_
 website as PTF U461879.  This fix is incorporated in AIX 4.3.3 and above.
 
 The initial assembler shipped with AIX 4.3.0 generates incorrect object
 files.  A fix for APAR IX74254 (64BIT DISASSEMBLED OUTPUT FROM COMPILER FAILS
 TO ASSEMBLE/BIND) is available from IBM Customer Support and from its
-`techsupport.services.ibm.com <http://techsupport.services.ibm.com/>`_
+`techsupport.services.ibm.com <https://techsupport.services.ibm.com/>`_
 website as PTF U453956.  This fix is incorporated in AIX 4.3.1 and above.
 
 AIX provides National Language Support (NLS).  Compilers and assemblers
@@ -858,7 +858,7 @@ https://opensource.apple.com.
 
 This version of GCC requires at least cctools-590.36.  The
 cctools-590.36 package referenced from
-http://gcc.gnu.org/ml/gcc/2006-03/msg00507.html will not work
+https://gcc.gnu.org/ml/gcc/2006-03/msg00507.html will not work
 on systems older than 10.3.9 (aka darwin7.9.0).
 
 powerpc-\*-elf

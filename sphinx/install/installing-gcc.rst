@@ -9,7 +9,7 @@ Installing GCC
 --------------
 
 The latest version of this document is always available at
-`http://gcc.gnu.org/install/ <http://gcc.gnu.org/install/>`_.
+`https://gcc.gnu.org/install/ <https://gcc.gnu.org/install/>`_.
 It refers to the current development sources, instructions for
 specific released versions are included with the sources.
 
@@ -26,7 +26,7 @@ We recommend you browse the entire generic installation instructions before
 you proceed.
 
 Lists of successful builds for released versions of GCC are
-available at http://gcc.gnu.org/buildstat.html.
+available at https://gcc.gnu.org/buildstat.html.
 These lists are updated as new information becomes available.
 
 The installation procedure itself is broken into five steps.

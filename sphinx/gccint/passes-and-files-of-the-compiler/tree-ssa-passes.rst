@@ -285,7 +285,7 @@ run after gimplification and what source files they are located in.
   Graphite is a loop transformation framework based on the polyhedral
   model.  Graphite stands for Gimple Represented as Polyhedra.  The
   internals of this infrastructure are documented in
-  http://gcc.gnu.org/wiki/Graphite.  The passes working on
+  https://gcc.gnu.org/wiki/Graphite.  The passes working on
   this representation are implemented in the various :samp:`graphite-*`
   files.
 
