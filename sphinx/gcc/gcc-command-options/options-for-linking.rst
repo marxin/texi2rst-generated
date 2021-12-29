@@ -90,6 +90,10 @@ not doing a link step.
 
   Use the LLVM :command:`lld` linker instead of the default linker.
 
+.. option:: -fuse-ld=mold
+
+  Use the Modern Linker (:command:`mold`) instead of the default linker.
+
   .. index:: Libraries
 
 .. option:: -llibrary, -l library
