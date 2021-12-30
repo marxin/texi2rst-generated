@@ -395,7 +395,7 @@ corresponding :option:`--without` option.
 .. option:: --with-gcc-major-version-only
 
   Specifies that GCC should use only the major number rather than
-  :samp:`{major}`. :samp:`{minor}`. :samp:`{patchlevel}` in filesystem paths.
+  :samp:`{major}.{minor}.{patchlevel}` in filesystem paths.
 
 .. option:: --with-native-system-header-dir=dirname
 
@@ -509,7 +509,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-dsymutil=pathname
 
-  Same as #with-as:option:`--with-as`
+  Same as :option:`--with-as`
   but for the debug linker (only used on Darwin platforms so far).
 
 .. option:: --with-tls=dialect
@@ -939,7 +939,7 @@ corresponding :option:`--without` option.
     option.
 
   To use this configuration option you must have an assembler version
-  installed that supports the :option:`-mnan` = command-line option too.
+  installed that supports the :option:`-mnan` command-line option too.
   In the absence of this configuration option the default convention is
   the legacy encoding, as when neither of the :option:`-mnan`:samp:`=2008` and
   :option:`-mnan`:samp:`=legacy` command-line options has been used.
@@ -1179,6 +1179,7 @@ corresponding :option:`--without` option.
   .. option:: --with-aix-soname=svr4
 
     A (second) ``Shared Archive Library`` file is created:
+
     * using the :samp:`libNAME.so.V` filename scheme
     * with the ``Shared Object`` file as archive member named :samp:`shr.o`, which
 
@@ -1203,6 +1204,7 @@ corresponding :option:`--without` option.
   .. option:: --with-aix-soname=svr4
 
     A ``Static Archive Library`` is created:
+
     * using the :samp:`libNAME.a` filename scheme
     * with all the ``Static Object`` files as archive members, which
 
@@ -1660,7 +1662,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-diagnostics-color=choice
 
-  Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-color` =
+  Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-color`
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
   where :samp:`auto` is the default.  :samp:`auto-if-env` makes
@@ -1670,7 +1672,7 @@ corresponding :option:`--without` option.
 
 .. option:: --with-diagnostics-urls=choice
 
-  Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-urls` =
+  Tells GCC to use :samp:`{choice}` as the default for :option:`-fdiagnostics-urls`
   option (if not used explicitly on the command line).  :samp:`{choice}`
   can be one of :samp:`never`, :samp:`auto`, :samp:`always`, and :samp:`auto-if-env`
   where :samp:`auto` is the default.  :samp:`auto-if-env` makes
@@ -1762,8 +1764,8 @@ corresponding :option:`--without` option.
   location then you can explicitly specify the directory where they are
   installed.  The :option:`--with-hsa-runtime`:samp:`={hsainstalldir}` option
   is a shorthand for
-  :option:`--with-hsa-runtime-lib`:samp:`={hsainstalldir}` /lib and
-  :option:`--with-hsa-runtime-include`:samp:`={hsainstalldir}` /include.
+  :option:`--with-hsa-runtime-lib`:samp:`={hsainstalldir}/lib` and
+  :option:`--with-hsa-runtime-include`:samp:`={hsainstalldir}/include`.
 
 .. option:: --enable-cet
 
@@ -1773,7 +1775,7 @@ corresponding :option:`--without` option.
   to add :option:`-fcf-protection` and, if needed, other target
   specific options to a set of building options.
 
-  ``--enable-cet=auto`` is default.  CET is enabled on Linux/x86 if
+  :option:`--enable-cet`:samp:`=auto` is default.  CET is enabled on Linux/x86 if
   target binutils supports ``Intel CET`` instructions and disabled
   otherwise.  In this case, the target libraries are configured to get
   additional :option:`-fcf-protection` option.
@@ -1855,7 +1857,7 @@ The following options only apply to building cross compilers.
   Specifies that target headers are available when building a cross compiler.
   The :samp:`{dir}` argument specifies a directory which has the target include
   files.  These include files will be copied into the :samp:`gcc` install
-  directory.  This option with the :samp:`{dir}` argument is required* when
+  directory.  This option with the :samp:`{dir}` argument is required when
   building a cross compiler, if :samp:`{prefix}/{target}/sys-include`
   doesn't pre-exist.  If :samp:`{prefix}/{target}/sys-include` does
   pre-exist, the :samp:`{dir}` argument may be omitted.  :command:`fixincludes`

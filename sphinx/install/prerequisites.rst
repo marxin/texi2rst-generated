@@ -83,8 +83,11 @@ GNAT
   by verifying that :samp:`gnatls -v` lists only one explicit path in each
   section.
 
+.. _gdc-prerequisite:
+
 GDC
-  .. _gdc-prerequisite:
+"""
+
   In order to build GDC, the D compiler, you need a working GDC
   compiler (GCC version 9.1 or later), as the D front end is written in D.
 
@@ -176,7 +179,7 @@ GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
   :option:`--with-gmp` configure option.  See also :option:`--with-gmp-lib`
   and :option:`--with-gmp-include`.
   The in-tree build is only supported with the GMP version that
-  download_prerequisites installs.
+  :command:`download_prerequisites` installs.
 
 MPFR Library version 3.1.0 (or later)
   Necessary to build GCC.  It can be downloaded from
@@ -187,7 +190,7 @@ MPFR Library version 3.1.0 (or later)
   :option:`--with-mpfr` configure option should be used.  See also
   :option:`--with-mpfr-lib` and :option:`--with-mpfr-include`.
   The in-tree build is only supported with the MPFR version that
-  download_prerequisites installs.
+  :command:`download_prerequisites` installs.
 
 MPC Library version 1.0.1 (or later)
   Necessary to build GCC.  It can be downloaded from
@@ -198,7 +201,7 @@ MPC Library version 1.0.1 (or later)
   :option:`--with-mpc` configure option should be used.  See also
   :option:`--with-mpc-lib` and :option:`--with-mpc-include`.
   The in-tree build is only supported with the MPC version that
-  download_prerequisites installs.
+  :command:`download_prerequisites` installs.
 
 isl Library version 0.15 or later.
   Necessary to build GCC with the Graphite loop optimizations.

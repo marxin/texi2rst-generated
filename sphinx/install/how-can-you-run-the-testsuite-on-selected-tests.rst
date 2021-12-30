@@ -28,7 +28,7 @@ the testsuite with filenames matching :samp:`9805*`, you would use
 
   make check-g++ RUNTESTFLAGS="old-deja.exp=9805* other-options"
 
-The file-matching expression following :samp:`{filename}`:command:`.exp=` is treated
+The file-matching expression following :samp:`{filename}.exp=` is treated
 as a series of whitespace-delimited glob expressions so that multiple patterns
 may be passed, although any whitespace must either be escaped or surrounded by
 single quotes if multiple expressions are desired. For example,
