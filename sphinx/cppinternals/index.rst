@@ -3,8 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Welcome to cppinternals documentation!
-======================================
+The GNU C Preprocessor Internals
+================================
 
 Contents:
 

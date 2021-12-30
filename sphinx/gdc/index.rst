@@ -3,8 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Welcome to gdc documentation!
-===============================
+The GNU D Compiler
+==================
 
 This manual describes how to use :command:`gdc`, the GNU compiler for
 the D programming language.  This manual is specifically about

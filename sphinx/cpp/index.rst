@@ -3,8 +3,8 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Welcome to cpp documentation!
-===============================
+The C Preprocessor
+==================
 
 The C preprocessor implements the macro language used to transform C,
 C++, and Objective-C programs before they are compiled.  It can also be

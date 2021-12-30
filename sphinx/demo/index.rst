@@ -1,5 +1,5 @@
-Welcome to demo documentation!
-==============================
+Demo documentation
+==================
 
 .. toctree::
 
