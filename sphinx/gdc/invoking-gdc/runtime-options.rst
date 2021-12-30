@@ -71,7 +71,7 @@ These options affect the runtime behavior of programs compiled with
   :samp:`__builtin_`.  By default, the compiler will recognize when a
   function in the ``core.stdc`` package is a built-in function.
 
-.. option:: fcheckaction
+.. option:: -fcheckaction
 
   This option controls what code is generated on an assertion, bounds check, or
   final switch failure.  The following values are supported:
@@ -146,7 +146,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turns off code generation for class ``invariant`` contracts.
 
-.. option:: -fmain``
+.. option:: -fmain
 
   Generates a default ``main()`` function when compiling.  This is useful when
   unittesting a library, as it enables running the unittests in a library without

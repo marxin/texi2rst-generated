@@ -162,9 +162,6 @@ In addition to the many :command:`gcc` options controlling code generation,
   declarations in the generated C++ header.
 
 :samp:`-fsave-mixins={file}`
-
-  .. index:: -fsave-mixins
-
   Generates code expanded from D ``mixin`` statements and writes the
   processed sources to :samp:`{file}`.  This is useful to debug errors in compilation
   and provides source for debuggers to show when requested.
