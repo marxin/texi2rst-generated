@@ -1303,7 +1303,7 @@ avoided in new code.  Consider:
 
 In this example, compiled with :option:`-fdec`, GNU Fortran will
 replace the ``.AND.`` operation with a call to the intrinsic
-```` function, yielding the bitwise-and of ``i`` and ``j``.
+function, yielding the bitwise-and of ``i`` and ``j``.
 
 Note that this conversion will occur if at least one operand is of integral
 type.  As a result, a logical operand will be converted to an integer when the
