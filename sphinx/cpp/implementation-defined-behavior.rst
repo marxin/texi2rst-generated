@@ -47,7 +47,7 @@ and stick to it.
   operating system.
 
   You can override the default with :option:`-fdollars-in-identifiers` or
-  fno-dollars-in-identifiers.  See :ref:`fdollars-in-identifiers`.
+  :option:`-fno-dollars-in-identifiers`.  See :ref:`fdollars-in-identifiers`.
 
 * Non-empty sequences of whitespace characters.
 
