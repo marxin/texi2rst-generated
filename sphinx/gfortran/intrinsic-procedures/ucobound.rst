@@ -42,9 +42,9 @@ UCOBOUND --- Upper codimension bounds of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = UCOBOUND(COARRAY [, DIM [, KIND]])
+      RESULT = UCOBOUND(COARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
     :ref:`LCOBOUND`, 

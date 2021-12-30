@@ -35,9 +35,9 @@ HYPOT --- Euclidean distance function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = HYPOT(X, Y)
+      RESULT = HYPOT(X, Y)
 
   :samp:`{Example}:`
 

@@ -49,9 +49,9 @@ ATAN2 --- Arctangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ATAN2(Y, X)
+      RESULT = ATAN2(Y, X)
 
   :samp:`{Example}:`
 

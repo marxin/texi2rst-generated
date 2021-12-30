@@ -36,9 +36,9 @@ REPEAT --- Repeated string concatenation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = REPEAT(STRING, NCOPIES)
+      RESULT = REPEAT(STRING, NCOPIES)
 
   :samp:`{Example}:`
 

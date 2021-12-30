@@ -49,9 +49,9 @@ LOG --- Natural logarithm function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LOG(X)
+      RESULT = LOG(X)
 
   :samp:`{Example}:`
 

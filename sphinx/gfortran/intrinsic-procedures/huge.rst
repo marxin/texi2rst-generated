@@ -33,9 +33,9 @@ HUGE --- Largest number of a kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = HUGE(X)
+      RESULT = HUGE(X)
 
   :samp:`{Example}:`
 

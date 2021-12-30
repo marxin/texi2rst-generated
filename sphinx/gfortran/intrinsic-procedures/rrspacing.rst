@@ -35,9 +35,9 @@ RRSPACING --- Reciprocal of the relative spacing
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RRSPACING(X)
+      RESULT = RRSPACING(X)
 
   :samp:`{See also}:`
     :ref:`SPACING`

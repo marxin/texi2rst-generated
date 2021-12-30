@@ -36,9 +36,9 @@ SCALE --- Scale a real value
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SCALE(X, I)
+      RESULT = SCALE(X, I)
 
   :samp:`{Example}:`
 

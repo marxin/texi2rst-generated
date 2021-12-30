@@ -38,9 +38,9 @@ ASIND --- Arcsine function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ASIND(X)
+      RESULT = ASIND(X)
 
   :samp:`{Example}:`
 

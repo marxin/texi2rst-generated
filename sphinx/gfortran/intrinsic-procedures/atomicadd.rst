@@ -41,9 +41,9 @@ ATOMIC_ADD --- Atomic ADD operation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_ADD (ATOM, VALUE [, STAT])
+      CALL ATOMIC_ADD (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

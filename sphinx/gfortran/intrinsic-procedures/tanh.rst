@@ -39,9 +39,9 @@ TANH --- Hyperbolic tangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    X = TANH(X)
+      X = TANH(X)
 
   :samp:`{Example}:`
 

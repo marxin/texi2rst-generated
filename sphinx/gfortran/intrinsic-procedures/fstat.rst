@@ -35,10 +35,10 @@ FSTAT --- Get file status
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL FSTAT(UNIT, VALUES [, STATUS])
-    STATUS = FSTAT(UNIT, VALUES)
+      CALL FSTAT(UNIT, VALUES [, STATUS])
+      STATUS = FSTAT(UNIT, VALUES)
 
   :samp:`{Example}:`
     See :ref:`STAT` for an example.

@@ -37,9 +37,9 @@ MALLOC --- Allocate dynamic memory
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PTR = MALLOC(SIZE)
+      PTR = MALLOC(SIZE)
 
   :samp:`{Example}:`
     The following example demonstrates the use of ``MALLOC`` and

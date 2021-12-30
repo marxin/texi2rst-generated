@@ -32,9 +32,9 @@ IARGC --- Get the number of command line arguments
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IARGC()
+      RESULT = IARGC()
 
   :samp:`{Arguments}:`
     None

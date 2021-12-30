@@ -40,9 +40,9 @@ ASINH --- Inverse hyperbolic sine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ASINH(X)
+      RESULT = ASINH(X)
 
   :samp:`{Example}:`
 

@@ -37,9 +37,9 @@ LTIME --- Convert time to local time info
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL LTIME(TIME, VALUES)
+      CALL LTIME(TIME, VALUES)
 
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`, 

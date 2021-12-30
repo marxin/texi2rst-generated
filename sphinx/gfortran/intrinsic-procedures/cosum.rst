@@ -46,9 +46,9 @@ CO_SUM --- Sum of values on the current set of images
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])
+      CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

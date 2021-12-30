@@ -41,7 +41,7 @@ MERGE --- Merge variables
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MERGE(TSOURCE, FSOURCE, MASK)
+      RESULT = MERGE(TSOURCE, FSOURCE, MASK)
 

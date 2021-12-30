@@ -51,9 +51,9 @@ ATOMIC_CAS --- Atomic compare and swap
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_CAS (ATOM, OLD, COMPARE, NEW [, STAT])
+      CALL ATOMIC_CAS (ATOM, OLD, COMPARE, NEW [, STAT])
 
   :samp:`{Example}:`
 

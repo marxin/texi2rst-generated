@@ -35,9 +35,9 @@ IS_IOSTAT_EOR --- Test for end-of-record value
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IS_IOSTAT_EOR(I)
+      RESULT = IS_IOSTAT_EOR(I)
 
   :samp:`{Example}:`
 

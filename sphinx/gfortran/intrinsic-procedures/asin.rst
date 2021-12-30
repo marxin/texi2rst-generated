@@ -37,9 +37,9 @@ ASIN --- Arcsine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ASIN(X)
+      RESULT = ASIN(X)
 
   :samp:`{Example}:`
 

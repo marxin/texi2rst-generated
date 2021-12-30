@@ -32,9 +32,9 @@ MCLOCK8 --- Time function (64-bit)
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MCLOCK8()
+      RESULT = MCLOCK8()
 
   :samp:`{See also}:`
     :ref:`CTIME`, 

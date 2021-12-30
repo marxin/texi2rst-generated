@@ -37,9 +37,9 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IMAGE_INDEX(COARRAY, SUB)
+      RESULT = IMAGE_INDEX(COARRAY, SUB)
 
   :samp:`{Example}:`
 

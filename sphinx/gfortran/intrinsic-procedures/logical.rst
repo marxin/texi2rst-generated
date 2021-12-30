@@ -36,9 +36,9 @@ LOGICAL --- Convert to logical type
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LOGICAL(L [, KIND])
+      RESULT = LOGICAL(L [, KIND])
 
   :samp:`{See also}:`
     :ref:`INT`, 

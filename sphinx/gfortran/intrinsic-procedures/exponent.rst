@@ -33,9 +33,9 @@ EXPONENT --- Exponent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = EXPONENT(X)
+      RESULT = EXPONENT(X)
 
   :samp:`{Example}:`
 

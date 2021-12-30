@@ -34,9 +34,9 @@ COMPILER_OPTIONS --- Options passed to the compiler
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    STR = COMPILER_OPTIONS()
+      STR = COMPILER_OPTIONS()
 
   :samp:`{Arguments}:`
     None

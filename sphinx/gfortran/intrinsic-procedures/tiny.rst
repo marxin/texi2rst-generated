@@ -33,9 +33,9 @@ TINY --- Smallest positive number of a real kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TINY(X)
+      RESULT = TINY(X)
 
   :samp:`{Example}:`
     See ``HUGE`` for an example.

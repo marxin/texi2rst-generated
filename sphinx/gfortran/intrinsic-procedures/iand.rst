@@ -48,9 +48,9 @@ IAND --- Bitwise logical and
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IAND(I, J)
+      RESULT = IAND(I, J)
 
   :samp:`{Example}:`
 

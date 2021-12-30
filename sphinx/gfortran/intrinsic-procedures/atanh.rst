@@ -40,9 +40,9 @@ ATANH --- Inverse hyperbolic tangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ATANH(X)
+      RESULT = ATANH(X)
 
   :samp:`{Example}:`
 

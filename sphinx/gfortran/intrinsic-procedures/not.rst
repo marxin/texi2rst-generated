@@ -43,9 +43,9 @@ NOT --- Logical negation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NOT(I)
+      RESULT = NOT(I)
 
   :samp:`{Specific names}:`
     ===========  ================  ==============  ====================

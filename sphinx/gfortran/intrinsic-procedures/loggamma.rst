@@ -38,9 +38,9 @@ LOG_GAMMA --- Logarithm of the Gamma function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    X = LOG_GAMMA(X)
+      X = LOG_GAMMA(X)
 
   :samp:`{Example}:`
 

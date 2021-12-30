@@ -40,10 +40,10 @@ CTIME --- Convert a time into a string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CTIME(TIME, RESULT).
-    RESULT = CTIME(TIME).
+      CALL CTIME(TIME, RESULT).
+      RESULT = CTIME(TIME).
 
   :samp:`{Example}:`
 

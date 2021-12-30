@@ -36,10 +36,10 @@ ETIME --- Execution time subroutine (or function)
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ETIME(VALUES, TIME).
-    TIME = ETIME(VALUES), (not recommended).
+      CALL ETIME(VALUES, TIME).
+      TIME = ETIME(VALUES), (not recommended).
 
   :samp:`{Example}:`
 

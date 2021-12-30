@@ -43,9 +43,9 @@ UNPACK --- Unpack an array of rank one into an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = UNPACK(VECTOR, MASK, FIELD)
+      RESULT = UNPACK(VECTOR, MASK, FIELD)
 
   :samp:`{Example}:`
 

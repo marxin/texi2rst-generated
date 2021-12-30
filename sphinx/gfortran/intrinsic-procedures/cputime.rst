@@ -32,9 +32,9 @@ CPU_TIME --- CPU elapsed time in seconds
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CPU_TIME(TIME)
+      CALL CPU_TIME(TIME)
 
   :samp:`{Example}:`
 

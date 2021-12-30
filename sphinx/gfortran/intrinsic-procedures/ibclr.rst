@@ -45,9 +45,9 @@ IBCLR --- Clear bit
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IBCLR(I, POS)
+      RESULT = IBCLR(I, POS)
 
   :samp:`{Specific names}:`
     =============  ================  ==============  ====================

@@ -33,10 +33,10 @@ CHDIR --- Change working directory
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CHDIR(NAME [, STATUS])
-    STATUS = CHDIR(NAME)
+      CALL CHDIR(NAME [, STATUS])
+      STATUS = CHDIR(NAME)
 
   :samp:`{Example}:`
 

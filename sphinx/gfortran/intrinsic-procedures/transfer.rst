@@ -47,9 +47,9 @@ TRANSFER --- Transfer bit patterns
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TRANSFER(SOURCE, MOLD[, SIZE])
+      RESULT = TRANSFER(SOURCE, MOLD[, SIZE])
 
   :samp:`{Example}:`
 

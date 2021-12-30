@@ -42,9 +42,9 @@ LCOBOUND --- Lower codimension bounds of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LCOBOUND(COARRAY [, DIM [, KIND]])
+      RESULT = LCOBOUND(COARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
     :ref:`UCOBOUND`, 

@@ -42,10 +42,10 @@ IALL --- Bitwise AND of array elements
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IALL(ARRAY[, MASK])
-    RESULT = IALL(ARRAY, DIM[, MASK])
+      RESULT = IALL(ARRAY[, MASK])
+      RESULT = IALL(ARRAY, DIM[, MASK])
 
   :samp:`{Example}:`
 

@@ -44,9 +44,9 @@ NUM_IMAGES --- Function that returns the number of images
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NUM_IMAGES(DISTANCE, FAILED)
+      RESULT = NUM_IMAGES(DISTANCE, FAILED)
 
   :samp:`{Example}:`
 

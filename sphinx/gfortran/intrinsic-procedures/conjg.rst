@@ -33,9 +33,9 @@ CONJG --- Complex conjugate function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    Z = CONJG(Z)
+      Z = CONJG(Z)
 
   :samp:`{Example}:`
 

@@ -42,9 +42,9 @@ BTEST --- Bit test function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BTEST(I, POS)
+      RESULT = BTEST(I, POS)
 
   :samp:`{Example}:`
 

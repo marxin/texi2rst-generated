@@ -34,9 +34,9 @@ BGT --- Bitwise greater than
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BGT(I, J)
+      RESULT = BGT(I, J)
 
   :samp:`{See also}:`
     :ref:`BGE`, 

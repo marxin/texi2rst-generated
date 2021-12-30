@@ -32,9 +32,9 @@ MAXEXPONENT --- Maximum exponent of a real kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MAXEXPONENT(X)
+      RESULT = MAXEXPONENT(X)
 
   :samp:`{Example}:`
 

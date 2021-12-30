@@ -40,9 +40,9 @@ SHIFTR --- Right shift
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SHIFTR(I, SHIFT)
+      RESULT = SHIFTR(I, SHIFT)
 
   :samp:`{See also}:`
     :ref:`SHIFTA`, 

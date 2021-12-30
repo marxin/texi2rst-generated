@@ -31,9 +31,9 @@ FNUM --- File number function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = FNUM(UNIT)
+      RESULT = FNUM(UNIT)
 
   :samp:`{Example}:`
 

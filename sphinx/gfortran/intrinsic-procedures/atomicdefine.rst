@@ -42,9 +42,9 @@ ATOMIC_DEFINE --- Setting a variable atomically
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_DEFINE (ATOM, VALUE [, STAT])
+      CALL ATOMIC_DEFINE (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

@@ -41,9 +41,9 @@ SIN --- Sine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SIN(X)
+      RESULT = SIN(X)
 
   :samp:`{Example}:`
 

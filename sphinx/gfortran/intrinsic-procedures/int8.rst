@@ -33,9 +33,9 @@ INT8 --- Convert to 64-bit integer type
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = INT8(A)
+      RESULT = INT8(A)
 
   :samp:`{See also}:`
     :ref:`INT`, 

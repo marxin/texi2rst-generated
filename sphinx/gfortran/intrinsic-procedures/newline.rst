@@ -34,9 +34,9 @@ NEW_LINE --- New line character
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NEW_LINE(C)
+      RESULT = NEW_LINE(C)
 
   :samp:`{Example}:`
 

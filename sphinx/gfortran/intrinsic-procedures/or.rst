@@ -44,9 +44,9 @@ OR --- Bitwise logical OR
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = OR(I, J)
+      RESULT = OR(I, J)
 
   :samp:`{Example}:`
 

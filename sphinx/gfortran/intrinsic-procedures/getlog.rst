@@ -35,9 +35,9 @@ GETLOG --- Get login name
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GETLOG(C)
+      CALL GETLOG(C)
 
   :samp:`{Example}:`
 

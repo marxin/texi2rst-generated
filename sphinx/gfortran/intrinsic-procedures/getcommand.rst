@@ -45,9 +45,9 @@ GET_COMMAND --- Get the entire command line
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GET_COMMAND([COMMAND, LENGTH, STATUS])
+      CALL GET_COMMAND([COMMAND, LENGTH, STATUS])
 
   :samp:`{Example}:`
 

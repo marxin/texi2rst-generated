@@ -47,9 +47,9 @@ MIN --- Minimum value of an argument list
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MIN(A1, A2 [, A3, ...])
+      RESULT = MIN(A1, A2 [, A3, ...])
 
   :samp:`{Specific names}:`
     =============  =================  ==============  ====================

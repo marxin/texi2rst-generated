@@ -35,9 +35,9 @@ IRAND --- Integer pseudo-random number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IRAND(I)
+      RESULT = IRAND(I)
 
   :samp:`{Example}:`
 

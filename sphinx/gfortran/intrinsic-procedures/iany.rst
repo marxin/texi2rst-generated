@@ -42,10 +42,10 @@ IANY --- Bitwise OR of array elements
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IANY(ARRAY[, MASK])
-    RESULT = IANY(ARRAY, DIM[, MASK])
+      RESULT = IANY(ARRAY[, MASK])
+      RESULT = IANY(ARRAY, DIM[, MASK])
 
   :samp:`{Example}:`
 

@@ -38,9 +38,9 @@ MODULO --- Modulo function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MODULO(A, P)
+      RESULT = MODULO(A, P)
 
   :samp:`{Example}:`
 

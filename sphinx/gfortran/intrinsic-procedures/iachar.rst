@@ -40,9 +40,9 @@ IACHAR --- Code in ASCII collating sequence
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IACHAR(C [, KIND])
+      RESULT = IACHAR(C [, KIND])
 
   :samp:`{Example}:`
 

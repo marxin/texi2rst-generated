@@ -33,9 +33,9 @@ RADIX --- Base of a model number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RADIX(X)
+      RESULT = RADIX(X)
 
   :samp:`{Example}:`
 

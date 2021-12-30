@@ -53,10 +53,10 @@ MAXVAL --- Maximum value of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MAXVAL(ARRAY, DIM [, MASK])
-    RESULT = MAXVAL(ARRAY [, MASK])
+      RESULT = MAXVAL(ARRAY, DIM [, MASK])
+      RESULT = MAXVAL(ARRAY [, MASK])
 
   :samp:`{See also}:`
     :ref:`MAX`, 

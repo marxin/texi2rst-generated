@@ -35,9 +35,9 @@ COTAN --- Cotangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COTAN(X)
+      RESULT = COTAN(X)
 
   :samp:`{Example}:`
 

@@ -44,9 +44,9 @@ ACCESS --- Checks file access modes
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ACCESS(NAME, MODE)
+      RESULT = ACCESS(NAME, MODE)
 
   :samp:`{Example}:`
 

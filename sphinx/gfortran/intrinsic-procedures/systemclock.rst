@@ -44,9 +44,9 @@ SYSTEM_CLOCK --- Time function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])
+      CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])
 
   :samp:`{Example}:`
 

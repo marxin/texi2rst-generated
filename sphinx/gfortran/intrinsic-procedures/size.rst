@@ -46,9 +46,9 @@ SIZE --- Determine the size of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SIZE(ARRAY[, DIM [, KIND]])
+      RESULT = SIZE(ARRAY[, DIM [, KIND]])
 
   :samp:`{Example}:`
 

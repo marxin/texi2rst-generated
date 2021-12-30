@@ -40,10 +40,10 @@ LINK --- Create a hard link
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL LINK(PATH1, PATH2 [, STATUS])
-    STATUS = LINK(PATH1, PATH2)
+      CALL LINK(PATH1, PATH2 [, STATUS])
+      STATUS = LINK(PATH1, PATH2)
 
   :samp:`{See also}:`
     :ref:`SYMLNK`, 

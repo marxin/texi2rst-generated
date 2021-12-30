@@ -53,9 +53,9 @@ DATE_AND_TIME --- Date and time subroutine
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL DATE_AND_TIME([DATE, TIME, ZONE, VALUES])
+      CALL DATE_AND_TIME([DATE, TIME, ZONE, VALUES])
 
   :samp:`{Example}:`
 

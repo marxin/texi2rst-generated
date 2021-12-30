@@ -35,9 +35,9 @@ ADJUSTL --- Left adjust a string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ADJUSTL(STRING)
+      RESULT = ADJUSTL(STRING)
 
   :samp:`{Example}:`
 

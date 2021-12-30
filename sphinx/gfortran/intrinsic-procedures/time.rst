@@ -31,9 +31,9 @@ TIME --- Time function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TIME()
+      RESULT = TIME()
 
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`, 

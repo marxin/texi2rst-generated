@@ -31,9 +31,9 @@ TRIM --- Remove trailing blank characters of a string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TRIM(STRING)
+      RESULT = TRIM(STRING)
 
   :samp:`{Example}:`
 

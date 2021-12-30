@@ -34,9 +34,9 @@ EXIT --- Exit the program with status.
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL EXIT([STATUS])
+      CALL EXIT([STATUS])
 
   :samp:`{Example}:`
 

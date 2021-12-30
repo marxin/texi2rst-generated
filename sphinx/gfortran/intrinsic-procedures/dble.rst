@@ -31,9 +31,9 @@ DBLE --- Double conversion function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DBLE(A)
+      RESULT = DBLE(A)
 
   :samp:`{Example}:`
 

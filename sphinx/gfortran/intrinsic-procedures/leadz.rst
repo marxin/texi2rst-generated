@@ -31,9 +31,9 @@ LEADZ --- Number of leading zero bits of an integer
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LEADZ(I)
+      RESULT = LEADZ(I)
 
   :samp:`{Example}:`
 

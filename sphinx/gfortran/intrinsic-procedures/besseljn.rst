@@ -49,10 +49,10 @@ BESSEL_JN --- Bessel function of the first kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BESSEL_JN(N, X)
-    RESULT = BESSEL_JN(N1, N2, X)
+      RESULT = BESSEL_JN(N, X)
+      RESULT = BESSEL_JN(N1, N2, X)
 
   :samp:`{Note}:`
     The transformational function uses a recurrence algorithm which might,

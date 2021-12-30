@@ -45,9 +45,9 @@ LBOUND --- Lower dimension bounds of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LBOUND(ARRAY [, DIM [, KIND]])
+      RESULT = LBOUND(ARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
     :ref:`UBOUND`, 

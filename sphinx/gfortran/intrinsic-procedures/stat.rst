@@ -37,10 +37,10 @@ STAT --- Get file status
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL STAT(NAME, VALUES [, STATUS])
-    STATUS = STAT(NAME, VALUES)
+      CALL STAT(NAME, VALUES [, STATUS])
+      STATUS = STAT(NAME, VALUES)
 
   :samp:`{Example}:`
 

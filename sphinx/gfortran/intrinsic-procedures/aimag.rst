@@ -40,9 +40,9 @@ AIMAG --- Imaginary part of complex number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = AIMAG(Z)
+      RESULT = AIMAG(Z)
 
   :samp:`{Example}:`
 

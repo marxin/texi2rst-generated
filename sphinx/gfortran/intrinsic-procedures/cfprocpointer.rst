@@ -33,9 +33,9 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL C_F_PROCPOINTER(cptr, fptr)
+      CALL C_F_PROCPOINTER(cptr, fptr)
 
   :samp:`{Example}:`
 

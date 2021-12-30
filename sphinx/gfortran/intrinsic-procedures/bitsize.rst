@@ -34,9 +34,9 @@ BIT_SIZE --- Bit size inquiry function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BIT_SIZE(I)
+      RESULT = BIT_SIZE(I)
 
   :samp:`{Example}:`
 

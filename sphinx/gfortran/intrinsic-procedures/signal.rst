@@ -43,10 +43,10 @@ SIGNAL --- Signal handling subroutine (or function)
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL SIGNAL(NUMBER, HANDLER [, STATUS])
-    STATUS = SIGNAL(NUMBER, HANDLER)
+      CALL SIGNAL(NUMBER, HANDLER [, STATUS])
+      STATUS = SIGNAL(NUMBER, HANDLER)
 
   :samp:`{Example}:`
 

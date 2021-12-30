@@ -51,9 +51,9 @@ ABS --- Absolute value
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ABS(A)
+      RESULT = ABS(A)
 
   :samp:`{Example}:`
 

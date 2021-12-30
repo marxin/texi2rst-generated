@@ -42,9 +42,9 @@ ANINT --- Nearest whole number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ANINT(A [, KIND])
+      RESULT = ANINT(A [, KIND])
 
   :samp:`{Example}:`
 

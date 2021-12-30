@@ -38,9 +38,9 @@ NINT --- Nearest whole number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NINT(A [, KIND])
+      RESULT = NINT(A [, KIND])
 
   :samp:`{Example}:`
 

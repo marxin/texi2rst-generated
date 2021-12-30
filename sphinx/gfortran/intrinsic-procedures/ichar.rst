@@ -38,9 +38,9 @@ ICHAR --- Character-to-integer conversion function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ICHAR(C [, KIND])
+      RESULT = ICHAR(C [, KIND])
 
   :samp:`{Example}:`
 

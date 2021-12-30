@@ -43,9 +43,9 @@ COSD --- Cosine function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COSD(X)
+      RESULT = COSD(X)
 
   :samp:`{Example}:`
 

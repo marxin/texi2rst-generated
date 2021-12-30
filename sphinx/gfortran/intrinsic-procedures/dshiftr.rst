@@ -49,9 +49,9 @@ DSHIFTR --- Combined right shift
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DSHIFTR(I, J, SHIFT)
+      RESULT = DSHIFTR(I, J, SHIFT)
 
   :samp:`{See also}:`
     :ref:`DSHIFTL`

@@ -40,9 +40,9 @@ LGE --- Lexical greater than or equal
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LGE(STRING_A, STRING_B)
+      RESULT = LGE(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
     ==========================  =============  ===========  ====================

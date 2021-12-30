@@ -35,9 +35,9 @@ FRACTION --- Fractional part of the model representation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    Y = FRACTION(X)
+      Y = FRACTION(X)
 
   :samp:`{Example}:`
 

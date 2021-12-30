@@ -50,9 +50,9 @@ RESHAPE --- Function to reshape an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])
+      RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])
 
   :samp:`{Example}:`
 

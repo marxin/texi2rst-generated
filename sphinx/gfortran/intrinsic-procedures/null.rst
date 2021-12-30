@@ -33,9 +33,9 @@ NULL --- Function that returns an disassociated pointer
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    PTR => NULL([MOLD])
+      PTR => NULL([MOLD])
 
   :samp:`{Example}:`
 

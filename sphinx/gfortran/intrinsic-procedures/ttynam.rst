@@ -31,10 +31,10 @@ TTYNAM --- Get the name of a terminal device.
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL TTYNAM(UNIT, NAME)
-    NAME = TTYNAM(UNIT)
+      CALL TTYNAM(UNIT, NAME)
+      NAME = TTYNAM(UNIT)
 
   :samp:`{Example}:`
 

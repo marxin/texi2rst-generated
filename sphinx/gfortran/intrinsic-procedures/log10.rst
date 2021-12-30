@@ -39,9 +39,9 @@ LOG10 --- Base 10 logarithm function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LOG10(X)
+      RESULT = LOG10(X)
 
   :samp:`{Example}:`
 

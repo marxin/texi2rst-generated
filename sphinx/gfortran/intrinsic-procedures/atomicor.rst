@@ -41,9 +41,9 @@ ATOMIC_OR --- Atomic bitwise OR operation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_OR (ATOM, VALUE [, STAT])
+      CALL ATOMIC_OR (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

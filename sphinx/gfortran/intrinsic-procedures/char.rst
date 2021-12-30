@@ -34,9 +34,9 @@ CHAR --- Character conversion function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = CHAR(I [, KIND])
+      RESULT = CHAR(I [, KIND])
 
   :samp:`{Example}:`
 

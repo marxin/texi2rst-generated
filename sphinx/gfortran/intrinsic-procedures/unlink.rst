@@ -34,10 +34,10 @@ UNLINK --- Remove a file from the file system
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL UNLINK(PATH [, STATUS])
-    STATUS = UNLINK(PATH)
+      CALL UNLINK(PATH [, STATUS])
+      STATUS = UNLINK(PATH)
 
   :samp:`{See also}:`
     :ref:`LINK`, 

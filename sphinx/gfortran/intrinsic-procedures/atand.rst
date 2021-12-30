@@ -43,10 +43,10 @@ ATAND --- Arctangent function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ATAND(X)
-    RESULT = ATAND(Y, X)
+      RESULT = ATAND(X)
+      RESULT = ATAND(Y, X)
 
   :samp:`{Example}:`
 

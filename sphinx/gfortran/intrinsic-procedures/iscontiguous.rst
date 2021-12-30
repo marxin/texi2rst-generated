@@ -31,9 +31,9 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IS_CONTIGUOUS(ARRAY)
+      RESULT = IS_CONTIGUOUS(ARRAY)
 
   :samp:`{Example}:`
 

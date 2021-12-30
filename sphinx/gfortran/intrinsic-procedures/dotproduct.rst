@@ -45,9 +45,9 @@ DOT_PRODUCT --- Dot product function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)
+      RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)
 
   :samp:`{Example}:`
 

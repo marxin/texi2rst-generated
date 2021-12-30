@@ -43,9 +43,9 @@ COS --- Cosine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COS(X)
+      RESULT = COS(X)
 
   :samp:`{Example}:`
 

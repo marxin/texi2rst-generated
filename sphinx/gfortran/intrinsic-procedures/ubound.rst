@@ -46,9 +46,9 @@ UBOUND --- Upper dimension bounds of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = UBOUND(ARRAY [, DIM [, KIND]])
+      RESULT = UBOUND(ARRAY [, DIM [, KIND]])
 
   :samp:`{See also}:`
     :ref:`LBOUND`, 

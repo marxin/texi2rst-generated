@@ -34,9 +34,9 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = EXTENDS_TYPE_OF(A, MOLD)
+      RESULT = EXTENDS_TYPE_OF(A, MOLD)
 
   :samp:`{See also}:`
     :ref:`SAME_TYPE_AS`

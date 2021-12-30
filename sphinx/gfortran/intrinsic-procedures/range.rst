@@ -33,9 +33,9 @@ RANGE --- Decimal exponent range
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RANGE(X)
+      RESULT = RANGE(X)
 
   :samp:`{Example}:`
     See ``PRECISION`` for an example.

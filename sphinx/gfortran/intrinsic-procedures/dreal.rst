@@ -30,9 +30,9 @@ DREAL --- Double real part function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DREAL(A)
+      RESULT = DREAL(A)
 
   :samp:`{Example}:`
 

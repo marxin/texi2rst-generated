@@ -28,9 +28,9 @@ GERROR --- Get last system error message
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GERROR(RESULT)
+      CALL GERROR(RESULT)
 
   :samp:`{Example}:`
 

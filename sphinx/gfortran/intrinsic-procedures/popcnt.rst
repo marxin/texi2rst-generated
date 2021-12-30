@@ -34,9 +34,9 @@ POPCNT --- Number of bits set
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = POPCNT(I)
+      RESULT = POPCNT(I)
 
   :samp:`{Example}:`
 

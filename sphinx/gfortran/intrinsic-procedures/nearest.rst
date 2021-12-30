@@ -41,9 +41,9 @@ NEAREST --- Nearest representable number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NEAREST(X, S)
+      RESULT = NEAREST(X, S)
 
   :samp:`{Example}:`
 

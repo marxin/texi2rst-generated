@@ -43,9 +43,9 @@ SIZEOF --- Size in bytes of an expression
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    N = SIZEOF(X)
+      N = SIZEOF(X)
 
   :samp:`{Example}:`
 

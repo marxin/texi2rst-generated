@@ -49,9 +49,9 @@ IOR --- Bitwise logical or
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IOR(I, J)
+      RESULT = IOR(I, J)
 
   :samp:`{Specific names}:`
     ===========  ================  ==============  ====================

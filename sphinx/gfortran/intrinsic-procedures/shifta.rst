@@ -42,9 +42,9 @@ SHIFTA --- Right shift with fill
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SHIFTA(I, SHIFT)
+      RESULT = SHIFTA(I, SHIFT)
 
   :samp:`{See also}:`
     :ref:`SHIFTL`, 

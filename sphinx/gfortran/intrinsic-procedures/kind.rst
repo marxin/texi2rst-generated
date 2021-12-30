@@ -33,9 +33,9 @@ KIND --- Kind of an entity
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    K = KIND(X)
+      K = KIND(X)
 
   :samp:`{Example}:`
 

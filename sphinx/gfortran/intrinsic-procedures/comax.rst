@@ -46,9 +46,9 @@ CO_MAX --- Maximal value on the current set of images
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CO_MAX(A [, RESULT_IMAGE, STAT, ERRMSG])
+      CALL CO_MAX(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

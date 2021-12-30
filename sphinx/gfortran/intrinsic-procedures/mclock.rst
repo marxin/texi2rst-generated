@@ -32,9 +32,9 @@ MCLOCK --- Time function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MCLOCK()
+      RESULT = MCLOCK()
 
   :samp:`{See also}:`
     :ref:`CTIME`, 

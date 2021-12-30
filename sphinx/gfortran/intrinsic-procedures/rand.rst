@@ -34,9 +34,9 @@ RAND --- Real pseudo-random number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RAND(I)
+      RESULT = RAND(I)
 
   :samp:`{Example}:`
 

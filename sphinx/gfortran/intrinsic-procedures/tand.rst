@@ -34,9 +34,9 @@ TAND --- Tangent function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TAND(X)
+      RESULT = TAND(X)
 
   :samp:`{Example}:`
 

@@ -35,9 +35,9 @@ FREE --- Frees memory
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL FREE(PTR)
+      CALL FREE(PTR)
 
   :samp:`{Example}:`
     See ``MALLOC`` for an example.

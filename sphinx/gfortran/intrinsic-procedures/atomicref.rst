@@ -42,9 +42,9 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_REF(VALUE, ATOM [, STAT])
+      CALL ATOMIC_REF(VALUE, ATOM [, STAT])
 
   :samp:`{Example}:`
 

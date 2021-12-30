@@ -40,9 +40,9 @@ DIM --- Positive difference
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DIM(X, Y)
+      RESULT = DIM(X, Y)
 
   :samp:`{Example}:`
 

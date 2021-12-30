@@ -44,7 +44,7 @@ MATMUL --- matrix multiplication
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MATMUL(MATRIX_A, MATRIX_B)
+      RESULT = MATMUL(MATRIX_A, MATRIX_B)
 

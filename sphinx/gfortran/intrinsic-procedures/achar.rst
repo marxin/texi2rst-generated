@@ -39,9 +39,9 @@ ACHAR --- Character in ASCII collating sequence
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ACHAR(I [, KIND])
+      RESULT = ACHAR(I [, KIND])
 
   :samp:`{Example}:`
 

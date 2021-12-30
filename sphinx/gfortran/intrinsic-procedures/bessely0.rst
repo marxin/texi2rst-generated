@@ -36,9 +36,9 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BESSEL_Y0(X)
+      RESULT = BESSEL_Y0(X)
 
   :samp:`{Example}:`
 

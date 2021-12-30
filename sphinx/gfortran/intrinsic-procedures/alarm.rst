@@ -43,9 +43,9 @@ ALARM --- Execute a routine after a given delay
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ALARM(SECONDS, HANDLER [, STATUS])
+      CALL ALARM(SECONDS, HANDLER [, STATUS])
 
   :samp:`{Example}:`
 

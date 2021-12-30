@@ -31,9 +31,9 @@ C_FUNLOC --- Obtain the C address of a procedure
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = C_FUNLOC(x)
+      RESULT = C_FUNLOC(x)
 
   :samp:`{Example}:`
 

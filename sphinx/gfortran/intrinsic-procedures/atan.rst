@@ -43,10 +43,10 @@ ATAN --- Arctangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ATAN(X)
-    RESULT = ATAN(Y, X)
+      RESULT = ATAN(X)
+      RESULT = ATAN(Y, X)
 
   :samp:`{Example}:`
 

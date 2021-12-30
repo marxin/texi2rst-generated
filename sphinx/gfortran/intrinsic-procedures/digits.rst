@@ -32,9 +32,9 @@ DIGITS --- Significant binary digits function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DIGITS(X)
+      RESULT = DIGITS(X)
 
   :samp:`{Example}:`
 

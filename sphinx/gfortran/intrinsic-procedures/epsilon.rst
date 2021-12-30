@@ -31,9 +31,9 @@ EPSILON --- Epsilon function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = EPSILON(X)
+      RESULT = EPSILON(X)
 
   :samp:`{Example}:`
 

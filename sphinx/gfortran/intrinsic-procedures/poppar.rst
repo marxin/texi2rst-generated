@@ -36,9 +36,9 @@ POPPAR --- Parity of the number of bits set
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = POPPAR(I)
+      RESULT = POPPAR(I)
 
   :samp:`{Example}:`
 

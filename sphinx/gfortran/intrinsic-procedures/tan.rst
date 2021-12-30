@@ -34,9 +34,9 @@ TAN --- Tangent function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TAN(X)
+      RESULT = TAN(X)
 
   :samp:`{Example}:`
 

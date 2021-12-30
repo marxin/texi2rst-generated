@@ -33,9 +33,9 @@ INT2 --- Convert to 16-bit integer type
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = INT2(A)
+      RESULT = INT2(A)
 
   :samp:`{See also}:`
     :ref:`INT`, 

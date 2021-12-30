@@ -47,9 +47,9 @@ CSHIFT --- Circular shift elements of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = CSHIFT(ARRAY, SHIFT [, DIM])
+      RESULT = CSHIFT(ARRAY, SHIFT [, DIM])
 
   :samp:`{Example}:`
 
