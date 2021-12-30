@@ -700,14 +700,16 @@ the OpenMP Application Program Interface v2.5:
   !$OMP END PARALLEL DO
   END SUBROUTINE A1
 
-Please note:
+.. note::
 
-* :option:`-fopenmp` implies :option:`-frecursive`, i.e., all local arrays
+  :option:`-fopenmp` implies :option:`-frecursive`, i.e., all local arrays
   will be allocated on the stack.  When porting existing code to OpenMP,
   this may lead to surprising results, especially to segmentation faults
   if the stacksize is limited.
 
-* On glibc-based systems, OpenMP enabled applications cannot be statically
+.. note::
+
+  On glibc-based systems, OpenMP enabled applications cannot be statically
   linked due to limitations of the underlying pthreads-implementation.  It
   might be possible to get a working solution if
   :command:`-Wl,--whole-archive -lpthread -Wl,--no-whole-archive` is added

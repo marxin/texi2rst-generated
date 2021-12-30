@@ -23,8 +23,8 @@ by type.  Explanations are in the following sections.
   :option:`-fdec-static` :option:`-fdec-math` :option:`-fdec-include` :option:`-fdec-format-defaults` |gol|
   :option:`-fdec-blank-format-item` :option:`-fdefault-double-8` :option:`-fdefault-integer-8` |gol|
   :option:`-fdefault-real-8` :option:`-fdefault-real-10` :option:`-fdefault-real-16` :option:`-fdollar-ok` |gol|
-  :option:`-ffixed-line-length-`:samp:`{n}` :option:`-ffixed-line-length-none` :option:`-fpad-source` |gol|
-  :option:`-ffree-form` :option:`-ffree-line-length-`:samp:`{n}` :option:`-ffree-line-length-none` |gol|
+  :option:`-ffixed-line-length-n` :option:`-ffixed-line-length-none` :option:`-fpad-source` |gol|
+  :option:`-ffree-form` :option:`-ffree-line-length-n` :option:`-ffree-line-length-none` |gol|
   :option:`-fimplicit-none` :option:`-finteger-4-integer-8` :option:`-fmax-identifier-length` |gol|
   :option:`-fmodule-private` :option:`-ffixed-form` :option:`-fno-range-check` :option:`-fopenacc` :option:`-fopenmp` |gol|
   :option:`-freal-4-real-10` :option:`-freal-4-real-16` :option:`-freal-4-real-8` :option:`-freal-8-real-10` |gol|

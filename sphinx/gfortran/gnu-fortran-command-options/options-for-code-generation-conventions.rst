@@ -70,15 +70,19 @@ it.
   This does not affect the generation of code that interfaces with
   the :command:`libgfortran` library.
 
-  *Caution:* It is not a good idea to mix Fortran code compiled with
-  :option:`-ff2c` with code compiled with the default :option:`-fno-f2c`
-  calling conventions as, calling ``COMPLEX`` or default ``REAL``
-  functions between program parts which were compiled with different
-  calling conventions will break at execution time.
+  .. warning::
+    
+    It is not a good idea to mix Fortran code compiled with
+    :option:`-ff2c` with code compiled with the default :option:`-fno-f2c`
+    calling conventions as, calling ``COMPLEX`` or default ``REAL``
+    functions between program parts which were compiled with different
+    calling conventions will break at execution time.
 
-  *Caution:* This will break code which passes intrinsic functions
-  of type default ``REAL`` or ``COMPLEX`` as actual arguments, as
-  the library implementations use the :option:`-fno-f2c` calling conventions.
+  .. warning::
+    
+    This will break code which passes intrinsic functions
+    of type default ``REAL`` or ``COMPLEX`` as actual arguments, as
+    the library implementations use the :option:`-fno-f2c` calling conventions.
 
 .. option:: -fno-underscoring
 
@@ -99,11 +103,13 @@ it.
   underscore to external names with no underscores.  This is done to ensure
   compatibility with code produced by many UNIX Fortran compilers.
 
-  *Caution*: The default behavior of GNU Fortran is
-  incompatible with :command:`f2c` and :command:`g77`, please use the
-  :option:`-ff2c` option if you want object files compiled with
-  GNU Fortran to be compatible with object code created with these
-  tools.
+  .. warning::
+
+    The default behavior of GNU Fortran is
+    incompatible with :command:`f2c` and :command:`g77`, please use the
+    :option:`-ff2c` option if you want object files compiled with
+    GNU Fortran to be compatible with object code created with these
+    tools.
 
   Use of :option:`-fno-underscoring` is not recommended unless you are
   experimenting with issues such as integration of GNU Fortran into
@@ -504,19 +510,12 @@ it.
   on the stack. This flag cannot be used together with
   :option:`-fmax-stack-var-size` = or :option:`-fno-automatic`.
 
-.. option:: -finit-local-zero, -finit-derived, -finit-integer=n, -finit-real=<zero|inf|-inf|nan|snan>, -finit-logical=<true|false>, -finit-character=n
-
-  .. index:: finit-local-zero
-
-  .. index:: finit-derived
-
-  .. index:: finit-integer
-
-  .. index:: finit-real
-
-  .. index:: finit-logical
-
-  .. index:: finit-character
+.. option:: -finit-local-zero
+            -finit-derived
+            -finit-integer=n
+            -finit-real=<zero|inf|-inf|nan|snan>
+            -finit-logical=<true|false>
+            -finit-character=n
 
   The :option:`-finit-local-zero` option instructs the compiler to
   initialize local ``INTEGER``, ``REAL``, and ``COMPLEX``

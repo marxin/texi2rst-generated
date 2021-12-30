@@ -94,9 +94,10 @@ accepted by the compiler:
   full documentation.
 
   Other flags enabled by this switch are:
-  :option:`-fdollar-ok` :option:`-fcray-pointer` :option:`-fdec-char-conversions`
-  :option:`-fdec-structure` :option:`-fdec-intrinsic-ints` :option:`-fdec-static`
-  :option:`-fdec-math` :option:`-fdec-include` :option:`-fdec-blank-format-item`
+
+  :option:`-fdollar-ok` :option:`-fcray-pointer` :option:`-fdec-char-conversions` |gol|
+  :option:`-fdec-structure` :option:`-fdec-intrinsic-ints` :option:`-fdec-static` |gol|
+  :option:`-fdec-math` :option:`-fdec-include` :option:`-fdec-blank-format-item` |gol|
   :option:`-fdec-format-defaults`
 
   If :option:`-fd-lines-as-code` / :option:`-fd-lines-as-comments` are unset, then
@@ -209,6 +210,8 @@ accepted by the compiler:
   declared as ``PUBLIC``.
 
 .. option:: -ffixed-line-length-n
+            -ffixed-line-length-none
+            -ffixed-line-length-0
 
   .. index:: ffixed-line-length-n
 
@@ -240,6 +243,8 @@ accepted by the compiler:
   to them to fill out the line.
 
 .. option:: -ffree-line-length-n
+            -ffree-line-length-none
+            -ffree-line-length-0
 
   .. index:: ffree-line-length-n
 
