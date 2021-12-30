@@ -245,8 +245,6 @@
 
 .. option:: -fdollars-in-identifiers
 
-.. _fdollars-in-identifiers:
-
   Accept :samp:`$` in identifiers.
 
   .. only:: cpp

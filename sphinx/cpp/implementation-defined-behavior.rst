@@ -5,6 +5,8 @@
 
 .. _implementation-defined-behavior:
 
+.. _identifier-characters:
+
 Implementation-defined behavior
 *******************************
 
@@ -26,8 +28,6 @@ and stick to it.
   :option:`-fwide-exec-charset` options.
 
 * Identifier characters.
-
-.. _identifier-characters:
 
   The C and C++ standards allow identifiers to be composed of :samp:`_`
   and the alphanumeric characters.  C++ also allows universal character
