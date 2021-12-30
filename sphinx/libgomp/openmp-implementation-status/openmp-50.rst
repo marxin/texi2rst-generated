@@ -13,9 +13,9 @@ New features listed in Appendix B of the OpenMP specification
 
 .. This list is sorted as in OpenMP 5.1's B.3 not as in OpenMP 5.0's B.2
 
-=======================================================================  ======  ============================================================
+=======================================================================  ======  ===================================
 Description                                                              Status  Comments
-=======================================================================  ======  ============================================================
+=======================================================================  ======  ===================================
 Array shaping                                                            N
 Array sections with non-unit strides in C and C++                        N
 Iterators                                                                Y
@@ -24,7 +24,7 @@ Iterators                                                                Y
 *target-offload-var* ICV and ``OMP_TARGET_OFFLOAD``                      Y
       env variable
 Nested-parallel changes to *max-active-levels-var* ICV                   Y
-``requires`` directive                                                   P       Only fulfillable requirement is ``atomic_default_mem_order``
+``requires`` directive                                                   P       See note [#f1]_.
 ``teams`` construct outside an enclosing target region                   Y
 Non-rectangular loop nests                                               P       Only C/C++
 ``!=`` as relational-op in canonical loop form for C/C++                 Y
@@ -72,7 +72,7 @@ Map-order clarifications                                                 P
 ``close`` *map-type-modifier*                                            Y
 Mapping C/C++ pointer variables and to assign the address of             P
       device memory mapped by an array section
-Mapping of Fortran pointer and allocatable variables, including pointer  P       Mapping of vars with allocatable components unspported
+Mapping of Fortran pointer and allocatable variables, including pointer  P       See note [#f2]_.
       and allocatable components of variables
 ``defaultmap`` extensions                                                Y
 ``declare mapper`` directive                                             N
@@ -84,7 +84,10 @@ Runtime routines and environment variables to display runtime thread     Y
 ``omp_get_device_num`` runtime routine                                   Y
 OMPT interface                                                           N
 OMPD interface                                                           N
-=======================================================================  ======  ============================================================
+=======================================================================  ======  ===================================
+
+.. [#f1] Only fulfillable requirement is ``atomic_default_mem_order``
+.. [#f2] Mapping of vars with allocatable components unspported
 
 Other new OpenMP 5.0 features
 *****************************
