@@ -33,7 +33,8 @@ language standards, so they are available with all compilers that
 implement those standards.  Older compilers may not provide all of
 them.  Their names all start with double underscores.
 
-``__FILE__``
+.. c:macro:: __FILE__
+
   This macro expands to the name of the current input file, in the form of
   a C string constant.  This is the path by which the preprocessor opened
   the file, not the short name specified in :samp:`#include` or as the
@@ -41,7 +42,8 @@ them.  Their names all start with double underscores.
   ``"/usr/local/include/myheader.h"`` is a possible expansion of this
   macro.
 
-``__LINE__``
+.. c:macro:: __LINE__
+
   This macro expands to the current input line number, in the form of a
   decimal integer constant.  While we call it a predefined macro, it's
   a pretty strange macro, since its 'definition' changes with each
@@ -77,7 +79,8 @@ manual).  Neither of them is a macro; the preprocessor does not know the
 name of the current function.  They tend to be useful in conjunction
 with ``__FILE__`` and ``__LINE__``, though.
 
-``__DATE__``
+.. c:macro:: __DATE__
+
   This macro expands to a string constant that describes the date on which
   the preprocessor is being run.  The string constant contains eleven
   characters and looks like ``"Feb 12 1996"``.  If the day of the
@@ -87,7 +90,8 @@ with ``__FILE__`` and ``__LINE__``, though.
   (once per compilation) and ``__DATE__`` will expand to
   ``"??? ?? ????"``.
 
-``__TIME__``
+.. c:macro:: __TIME__
+
   This macro expands to a string constant that describes the time at
   which the preprocessor is being run.  The string constant contains
   eight characters and looks like ``"23:59:01"``.
@@ -96,7 +100,8 @@ with ``__FILE__`` and ``__LINE__``, though.
   (once per compilation) and ``__TIME__`` will expand to
   ``"??:??:??"``.
 
-``__STDC__``
+.. c:macro:: __STDC__
+
   In normal operation, this macro expands to the constant 1, to signify
   that this compiler conforms to ISO Standard C.  If GNU CPP is used with
   a compiler other than GCC, this is not necessarily true; however, the
@@ -113,7 +118,8 @@ with ``__FILE__`` and ``__LINE__``, though.
   for instance, some versions of Solaris provide X Windows headers that
   expect ``__STDC__`` to be either undefined or 1.  See :ref:`invocation`.
 
-``__STDC_VERSION__``
+.. c:macro:: __STDC_VERSION__
+
   This macro expands to the C Standard's version number, a long integer
   constant of the form ``yyyymmL`` where :samp:`{yyyy}` and
   :samp:`{mm}` are the year and month of the Standard version.  This signifies
@@ -133,12 +139,14 @@ with ``__FILE__`` and ``__LINE__``, though.
   This macro is not defined if the :option:`-traditional-cpp` option is
   used, nor when compiling C++ or Objective-C.
 
-``__STDC_HOSTED__``
+.. c:macro:: __STDC_HOSTED__
+
   This macro is defined, with value 1, if the compiler's target is a
   :dfn:`hosted environment`.  A hosted environment has the complete
   facilities of the standard C library available.
 
-``__cplusplus``
+.. c:macro:: __cplusplus
+
   This macro is defined when the C++ compiler is in use.  You can use
   ``__cplusplus`` to test whether a header is compiled by a C compiler
   or a C++ compiler.  This macro is similar to ``__STDC_VERSION__``, in
@@ -153,12 +161,14 @@ with ``__FILE__`` and ``__LINE__``, though.
   experimental languages enabled by :option:`-std`:samp:`=c++23` and
   :option:`-std`:samp:`=gnu++23`.
 
-``__OBJC__``
+.. c:macro:: __OBJC__
+
   This macro is defined, with value 1, when the Objective-C compiler is in
   use.  You can use ``__OBJC__`` to test whether a header is compiled
   by a C compiler or an Objective-C compiler.
 
-``__ASSEMBLER__``
+.. c:macro:: __ASSEMBLER__
+
   This macro is defined with value 1 when preprocessing assembly
   language.
 
@@ -174,17 +184,22 @@ with the same meanings regardless of the machine or operating system on
 which you are using GNU C or GNU Fortran.  Their names all start with
 double underscores.
 
-``__COUNTER__``
+.. c:macro:: __COUNTER__
+
   This macro expands to sequential integral values starting from 0.  In
   conjunction with the ``##`` operator, this provides a convenient means to
   generate unique identifiers.  Care must be taken to ensure that
   ``__COUNTER__`` is not expanded prior to inclusion of precompiled headers
   which use it.  Otherwise, the precompiled headers will not be used.
 
-``__GFORTRAN__``
+.. c:macro:: __GFORTRAN__
+
   The GNU Fortran compiler defines this.
 
-``__GNUC__`` ``__GNUC_MINOR__`` ``__GNUC_PATCHLEVEL__``
+.. c:macro:: __GNUC__
+             __GNUC_MINOR__
+             __GNUC_PATCHLEVEL__
+
   These macros are defined by all GNU compilers that use the C
   preprocessor: C, C++, Objective-C and Fortran.  Their values are the major
   version, minor version, and patch level of the compiler, as integer
@@ -225,46 +240,56 @@ double underscores.
 
   Many people find this form easier to understand.
 
-``__GNUG__``
+.. c:macro:: __GNUG__
+
   The GNU C++ compiler defines this.  Testing it is equivalent to
   testing ``(__GNUC__ && __cplusplus)``.
 
-``__STRICT_ANSI__``
+.. c:macro:: __STRICT_ANSI__
+
   GCC defines this macro if and only if the :option:`-ansi` switch, or a
   :option:`-std` switch specifying strict conformance to some version of ISO C
   or ISO C++, was specified when GCC was invoked.  It is defined to :samp:`1`.
   This macro exists primarily to direct GNU libc's header files to use only
   definitions found in standard C.
 
-``__BASE_FILE__``
+.. c:macro:: __BASE_FILE__
+
   This macro expands to the name of the main input file, in the form
   of a C string constant.  This is the source file that was specified
   on the command line of the preprocessor or C compiler.
 
-``__FILE_NAME__``
+.. c:macro:: __FILE_NAME__
+
   This macro expands to the basename of the current input file, in the
   form of a C string constant.  This is the last path component by which
   the preprocessor opened the file.  For example, processing
   ``"/usr/local/include/myheader.h"`` would set this
   macro to ``"myheader.h"``.
 
-``__INCLUDE_LEVEL__``
+.. c:macro:: __INCLUDE_LEVEL__
+
   This macro expands to a decimal integer constant that represents the
   depth of nesting in include files.  The value of this macro is
   incremented on every :samp:`#include` directive and decremented at the
   end of every included file.  It starts out at 0, its value within the
   base file specified on the command line.
 
-``__ELF__``
+.. c:macro:: __ELF__
+
   This macro is defined if the target uses the ELF object format.
 
-``__VERSION__``
+.. c:macro:: __VERSION__
+
   This macro expands to a string constant which describes the version of
   the compiler in use.  You should not rely on its contents having any
   particular form, but it can be counted on to contain at least the
   release number.
 
-``__OPTIMIZE__`` ``__OPTIMIZE_SIZE__`` ``__NO_INLINE__``
+.. c:macro:: __OPTIMIZE__
+             __OPTIMIZE_SIZE__
+             __NO_INLINE__
+
   These macros describe the compilation mode.  ``__OPTIMIZE__`` is
   defined in all optimizing compilations.  ``__OPTIMIZE_SIZE__`` is
   defined if the compiler is optimizing for size, not speed.
@@ -278,14 +303,16 @@ double underscores.
   sure that programs will execute with the same effect whether or not they
   are defined.  If they are defined, their value is 1.
 
-``__GNUC_GNU_INLINE__``
+.. c:macro:: __GNUC_GNU_INLINE__
+
   GCC defines this macro if functions declared ``inline`` will be
   handled in GCC's traditional gnu90 mode.  Object files will contain
   externally visible definitions of all functions declared ``inline``
   without ``extern`` or ``static``.  They will not contain any
   definitions of any functions declared ``extern inline``.
 
-``__GNUC_STDC_INLINE__``
+.. c:macro:: __GNUC_STDC_INLINE__
+
   GCC defines this macro if functions declared ``inline`` will be
   handled according to the ISO C99 or later standards.  Object files will contain
   externally visible definitions of all functions declared ``extern
@@ -295,17 +322,20 @@ double underscores.
   If this macro is defined, GCC supports the ``gnu_inline`` function
   attribute as a way to always get the gnu90 behavior.
 
-``__CHAR_UNSIGNED__``
+.. c:macro:: __CHAR_UNSIGNED__
+
   GCC defines this macro if and only if the data type ``char`` is
   unsigned on the target machine.  It exists to cause the standard header
   file :samp:`limits.h` to work correctly.  You should not use this macro
   yourself; instead, refer to the standard macros defined in :samp:`limits.h`.
 
-``__WCHAR_UNSIGNED__``
+.. c:macro:: __WCHAR_UNSIGNED__
+
   Like ``__CHAR_UNSIGNED__``, this macro is defined if and only if the
   data type ``wchar_t`` is unsigned and the front-end is in C++ mode.
 
-``__REGISTER_PREFIX__``
+.. c:macro:: __REGISTER_PREFIX__
+
   This macro expands to a single token (not a string constant) which is
   the prefix applied to CPU register names in assembly language for this
   target.  You can use it to write assembly that is usable in multiple
@@ -313,7 +343,8 @@ double underscores.
   expands to nothing, but in the ``m68k-coff`` environment it expands
   to a single :samp:`%`.
 
-``__USER_LABEL_PREFIX__``
+.. c:macro:: __USER_LABEL_PREFIX__
+
   This macro expands to a single token which is the prefix applied to
   user labels (symbols visible to C code) in assembly.  For example, in
   the ``m68k-aout`` environment it expands to an :samp:`_`, but in the
@@ -324,7 +355,40 @@ double underscores.
   target-specific options that adjust this prefix are used (e.g. the
   OSF/rose :option:`-mno-underscores` option).
 
-``__SIZE_TYPE__`` ``__PTRDIFF_TYPE__`` ``__WCHAR_TYPE__`` ``__WINT_TYPE__`` ``__INTMAX_TYPE__`` ``__UINTMAX_TYPE__`` ``__SIG_ATOMIC_TYPE__`` ``__INT8_TYPE__`` ``__INT16_TYPE__`` ``__INT32_TYPE__`` ``__INT64_TYPE__`` ``__UINT8_TYPE__`` ``__UINT16_TYPE__`` ``__UINT32_TYPE__`` ``__UINT64_TYPE__`` ``__INT_LEAST8_TYPE__`` ``__INT_LEAST16_TYPE__`` ``__INT_LEAST32_TYPE__`` ``__INT_LEAST64_TYPE__`` ``__UINT_LEAST8_TYPE__`` ``__UINT_LEAST16_TYPE__`` ``__UINT_LEAST32_TYPE__`` ``__UINT_LEAST64_TYPE__`` ``__INT_FAST8_TYPE__`` ``__INT_FAST16_TYPE__`` ``__INT_FAST32_TYPE__`` ``__INT_FAST64_TYPE__`` ``__UINT_FAST8_TYPE__`` ``__UINT_FAST16_TYPE__`` ``__UINT_FAST32_TYPE__`` ``__UINT_FAST64_TYPE__`` ``__INTPTR_TYPE__`` ``__UINTPTR_TYPE__``
+.. c:macro:: __SIZE_TYPE__
+             __PTRDIFF_TYPE__
+             __WCHAR_TYPE__
+             __WINT_TYPE__
+             __INTMAX_TYPE__
+             __UINTMAX_TYPE__
+             __SIG_ATOMIC_TYPE__
+             __INT8_TYPE__
+             __INT16_TYPE__
+             __INT32_TYPE__
+             __INT64_TYPE__
+             __UINT8_TYPE__
+             __UINT16_TYPE__
+             __UINT32_TYPE__
+             __UINT64_TYPE__
+             __INT_LEAST8_TYPE__
+             __INT_LEAST16_TYPE__
+             __INT_LEAST32_TYPE__
+             __INT_LEAST64_TYPE__
+             __UINT_LEAST8_TYPE__
+             __UINT_LEAST16_TYPE__
+             __UINT_LEAST32_TYPE__
+             __UINT_LEAST64_TYPE__
+             __INT_FAST8_TYPE__
+             __INT_FAST16_TYPE__
+             __INT_FAST32_TYPE__
+             __INT_FAST64_TYPE__
+             __UINT_FAST8_TYPE__
+             __UINT_FAST16_TYPE__
+             __UINT_FAST32_TYPE__
+             __UINT_FAST64_TYPE__
+             __INTPTR_TYPE__
+             __UINTPTR_TYPE__
+
   These macros are defined to the correct underlying types for the
   ``size_t``, ``ptrdiff_t``, ``wchar_t``, ``wint_t``,
   ``intmax_t``, ``uintmax_t``, ``sig_atomic_t``, ``int8_t``,
@@ -343,13 +407,55 @@ double underscores.
   not be defined on particular systems if GCC does not provide a
   :samp:`stdint.h` header on those systems.
 
-``__CHAR_BIT__``
+.. c:macro:: __CHAR_BIT__
+
   Defined to the number of bits used in the representation of the
   ``char`` data type.  It exists to make the standard header given
   numerical limits work correctly.  You should not use
   this macro directly; instead, include the appropriate headers.
 
-``__SCHAR_MAX__`` ``__WCHAR_MAX__`` ``__SHRT_MAX__`` ``__INT_MAX__`` ``__LONG_MAX__`` ``__LONG_LONG_MAX__`` ``__WINT_MAX__`` ``__SIZE_MAX__`` ``__PTRDIFF_MAX__`` ``__INTMAX_MAX__`` ``__UINTMAX_MAX__`` ``__SIG_ATOMIC_MAX__`` ``__INT8_MAX__`` ``__INT16_MAX__`` ``__INT32_MAX__`` ``__INT64_MAX__`` ``__UINT8_MAX__`` ``__UINT16_MAX__`` ``__UINT32_MAX__`` ``__UINT64_MAX__`` ``__INT_LEAST8_MAX__`` ``__INT_LEAST16_MAX__`` ``__INT_LEAST32_MAX__`` ``__INT_LEAST64_MAX__`` ``__UINT_LEAST8_MAX__`` ``__UINT_LEAST16_MAX__`` ``__UINT_LEAST32_MAX__`` ``__UINT_LEAST64_MAX__`` ``__INT_FAST8_MAX__`` ``__INT_FAST16_MAX__`` ``__INT_FAST32_MAX__`` ``__INT_FAST64_MAX__`` ``__UINT_FAST8_MAX__`` ``__UINT_FAST16_MAX__`` ``__UINT_FAST32_MAX__`` ``__UINT_FAST64_MAX__`` ``__INTPTR_MAX__`` ``__UINTPTR_MAX__`` ``__WCHAR_MIN__`` ``__WINT_MIN__`` ``__SIG_ATOMIC_MIN__``
+.. c:macro:: __SCHAR_MAX__
+             __WCHAR_MAX__
+             __SHRT_MAX__
+             __INT_MAX__
+             __LONG_MAX__
+             __LONG_LONG_MAX__
+             __WINT_MAX__
+             __SIZE_MAX__
+             __PTRDIFF_MAX__
+             __INTMAX_MAX__
+             __UINTMAX_MAX__
+             __SIG_ATOMIC_MAX__
+             __INT8_MAX__
+             __INT16_MAX__
+             __INT32_MAX__
+             __INT64_MAX__
+             __UINT8_MAX__
+             __UINT16_MAX__
+             __UINT32_MAX__
+             __UINT64_MAX__
+             __INT_LEAST8_MAX__
+             __INT_LEAST16_MAX__
+             __INT_LEAST32_MAX__
+             __INT_LEAST64_MAX__
+             __UINT_LEAST8_MAX__
+             __UINT_LEAST16_MAX__
+             __UINT_LEAST32_MAX__
+             __UINT_LEAST64_MAX__
+             __INT_FAST8_MAX__
+             __INT_FAST16_MAX__
+             __INT_FAST32_MAX__
+             __INT_FAST64_MAX__
+             __UINT_FAST8_MAX__
+             __UINT_FAST16_MAX__
+             __UINT_FAST32_MAX__
+             __UINT_FAST64_MAX__
+             __INTPTR_MAX__
+             __UINTPTR_MAX__
+             __WCHAR_MIN__
+             __WINT_MIN__
+             __SIG_ATOMIC_MIN__
+
   Defined to the maximum value of the ``signed char``, ``wchar_t``,
   ``signed short``,
   ``signed int``, ``signed long``, ``signed long long``,
@@ -370,7 +476,17 @@ double underscores.
   Some of these macros may not be defined on particular systems if GCC
   does not provide a :samp:`stdint.h` header on those systems.
 
-``__INT8_C`` ``__INT16_C`` ``__INT32_C`` ``__INT64_C`` ``__UINT8_C`` ``__UINT16_C`` ``__UINT32_C`` ``__UINT64_C`` ``__INTMAX_C`` ``__UINTMAX_C``
+.. c:macro:: __INT8_C
+             __INT16_C
+             __INT32_C
+             __INT64_C
+             __UINT8_C
+             __UINT16_C
+             __UINT32_C
+             __UINT64_C
+             __INTMAX_C
+             __UINTMAX_C
+
   Defined to implementations of the standard :samp:`stdint.h` macros with
   the same names without the leading ``__``.  They exist the make the
   implementation of that header work correctly.  You should not use
@@ -378,7 +494,27 @@ double underscores.
   of these macros may not be defined on particular systems if GCC does
   not provide a :samp:`stdint.h` header on those systems.
 
-``__SCHAR_WIDTH__`` ``__SHRT_WIDTH__`` ``__INT_WIDTH__`` ``__LONG_WIDTH__`` ``__LONG_LONG_WIDTH__`` ``__PTRDIFF_WIDTH__`` ``__SIG_ATOMIC_WIDTH__`` ``__SIZE_WIDTH__`` ``__WCHAR_WIDTH__`` ``__WINT_WIDTH__`` ``__INT_LEAST8_WIDTH__`` ``__INT_LEAST16_WIDTH__`` ``__INT_LEAST32_WIDTH__`` ``__INT_LEAST64_WIDTH__`` ``__INT_FAST8_WIDTH__`` ``__INT_FAST16_WIDTH__`` ``__INT_FAST32_WIDTH__`` ``__INT_FAST64_WIDTH__`` ``__INTPTR_WIDTH__`` ``__INTMAX_WIDTH__``
+.. c:macro:: __SCHAR_WIDTH__
+             __SHRT_WIDTH__
+             __INT_WIDTH__
+             __LONG_WIDTH__
+             __LONG_LONG_WIDTH__
+             __PTRDIFF_WIDTH__
+             __SIG_ATOMIC_WIDTH__
+             __SIZE_WIDTH__
+             __WCHAR_WIDTH__
+             __WINT_WIDTH__
+             __INT_LEAST8_WIDTH__
+             __INT_LEAST16_WIDTH__
+             __INT_LEAST32_WIDTH__
+             __INT_LEAST64_WIDTH__
+             __INT_FAST8_WIDTH__
+             __INT_FAST16_WIDTH__
+             __INT_FAST32_WIDTH__
+             __INT_FAST64_WIDTH__
+             __INTPTR_WIDTH__
+             __INTMAX_WIDTH__
+
   Defined to the bit widths of the corresponding types.  They exist to
   make the implementations of :samp:`limits.h` and :samp:`stdint.h` behave
   correctly.  You should not use these macros directly; instead, include
@@ -386,13 +522,29 @@ double underscores.
   particular systems if GCC does not provide a :samp:`stdint.h` header on
   those systems.
 
-``__SIZEOF_INT__`` ``__SIZEOF_LONG__`` ``__SIZEOF_LONG_LONG__`` ``__SIZEOF_SHORT__`` ``__SIZEOF_POINTER__`` ``__SIZEOF_FLOAT__`` ``__SIZEOF_DOUBLE__`` ``__SIZEOF_LONG_DOUBLE__`` ``__SIZEOF_SIZE_T__`` ``__SIZEOF_WCHAR_T__`` ``__SIZEOF_WINT_T__`` ``__SIZEOF_PTRDIFF_T__``
+.. c:macro:: __SIZEOF_INT__
+             __SIZEOF_LONG__
+             __SIZEOF_LONG_LONG__
+             __SIZEOF_SHORT__
+             __SIZEOF_POINTER__
+             __SIZEOF_FLOAT__
+             __SIZEOF_DOUBLE__
+             __SIZEOF_LONG_DOUBLE__
+             __SIZEOF_SIZE_T__
+             __SIZEOF_WCHAR_T__
+             __SIZEOF_WINT_T__
+             __SIZEOF_PTRDIFF_T__
+
   Defined to the number of bytes of the C standard data types: ``int``,
   ``long``, ``long long``, ``short``, ``void *``, ``float``,
   ``double``, ``long double``, ``size_t``, ``wchar_t``, ``wint_t``
   and ``ptrdiff_t``.
 
-``__BYTE_ORDER__`` ``__ORDER_LITTLE_ENDIAN__`` ``__ORDER_BIG_ENDIAN__`` ``__ORDER_PDP_ENDIAN__``
+.. c:macro:: __BYTE_ORDER__
+             __ORDER_LITTLE_ENDIAN__
+             __ORDER_BIG_ENDIAN__
+             __ORDER_PDP_ENDIAN__
+
   ``__BYTE_ORDER__`` is defined to one of the values
   ``__ORDER_LITTLE_ENDIAN__``, ``__ORDER_BIG_ENDIAN__``, or
   ``__ORDER_PDP_ENDIAN__`` to reflect the layout of multi-byte and
@@ -413,32 +565,38 @@ double underscores.
     /* Test for a little-endian machine */
     #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
 
-``__FLOAT_WORD_ORDER__``
+.. c:macro:: __FLOAT_WORD_ORDER__
+
   ``__FLOAT_WORD_ORDER__`` is defined to one of the values
   ``__ORDER_LITTLE_ENDIAN__`` or ``__ORDER_BIG_ENDIAN__`` to reflect
   the layout of the words of multi-word floating-point quantities.
 
-``__DEPRECATED``
+.. c:macro:: __DEPRECATED
+
   This macro is defined, with value 1, when compiling a C++ source file
   with warnings about deprecated constructs enabled.  These warnings are
   enabled by default, but can be disabled with :option:`-Wno-deprecated`.
 
-``__EXCEPTIONS``
+.. c:macro:: __EXCEPTIONS
+
   This macro is defined, with value 1, when compiling a C++ source file
   with exceptions enabled.  If :option:`-fno-exceptions` is used when
   compiling the file, then this macro is not defined.
 
-``__GXX_RTTI``
+.. c:macro:: __GXX_RTTI
+
   This macro is defined, with value 1, when compiling a C++ source file
   with runtime type identification enabled.  If :option:`-fno-rtti` is
   used when compiling the file, then this macro is not defined.
 
-``__USING_SJLJ_EXCEPTIONS__``
+.. c:macro:: __USING_SJLJ_EXCEPTIONS__
+
   This macro is defined, with value 1, if the compiler uses the old
   mechanism based on ``setjmp`` and ``longjmp`` for exception
   handling.
 
-``__GXX_EXPERIMENTAL_CXX0X__``
+.. c:macro:: __GXX_EXPERIMENTAL_CXX0X__
+
   This macro is defined when compiling a C++ source file with C++11 features
   enabled, i.e., for all C++ language dialects except :option:`-std`:samp:`=c++98`
   and :option:`-std`:samp:`=gnu++98`. This macro is obsolete, but can be used to
@@ -447,7 +605,8 @@ double underscores.
   code should test ``__cplusplus >= 201103L`` instead of using this
   macro.
 
-``__GXX_WEAK__``
+.. c:macro:: __GXX_WEAK__
+
   This macro is defined when compiling a C++ source file.  It has the
   value 1 if the compiler will use weak symbols, COMDAT sections, or
   other similar techniques to collapse symbols with 'vague linkage'
@@ -457,41 +616,51 @@ double underscores.
   purpose of this macro is to ease implementation of the C++ runtime
   library provided with G++.
 
-``__NEXT_RUNTIME__``
+.. c:macro:: __NEXT_RUNTIME__
+
   This macro is defined, with value 1, if (and only if) the NeXT runtime
   (as in :option:`-fnext-runtime`) is in use for Objective-C.  If the GNU
   runtime is used, this macro is not defined, so that you can use this
   macro to determine which runtime (NeXT or GNU) is being used.
 
-``__LP64__`` ``_LP64``
+.. c:macro:: __LP64__
+             _LP64
+
   These macros are defined, with value 1, if (and only if) the compilation
   is for a target where ``long int`` and pointer both use 64-bits and
   ``int`` uses 32-bit.
 
-``__SSP__``
+.. c:macro:: __SSP__
+
   This macro is defined, with value 1, when :option:`-fstack-protector` is in
   use.
 
-``__SSP_ALL__``
+.. c:macro:: __SSP_ALL__
+
   This macro is defined, with value 2, when :option:`-fstack-protector-all` is
   in use.
 
-``__SSP_STRONG__``
+.. c:macro:: __SSP_STRONG__
+
   This macro is defined, with value 3, when :option:`-fstack-protector-strong` is
   in use.
 
-``__SSP_EXPLICIT__``
+.. c:macro:: __SSP_EXPLICIT__
+
   This macro is defined, with value 4, when :option:`-fstack-protector-explicit` is
   in use.
 
-``__SANITIZE_ADDRESS__``
+.. c:macro:: __SANITIZE_ADDRESS__
+
   This macro is defined, with value 1, when :option:`-fsanitize`:samp:`=address`
   or :option:`-fsanitize`:samp:`=kernel-address` are in use.
 
-``__SANITIZE_THREAD__``
+.. c:macro:: __SANITIZE_THREAD__
+
   This macro is defined, with value 1, when :option:`-fsanitize`:samp:`=thread` is in use.
 
-``__TIMESTAMP__``
+.. c:macro:: __TIMESTAMP__
+
   This macro expands to a string constant that describes the date and time
   of the last modification of the current source file. The string constant
   contains abbreviated day of the week, month, day of the month, time in
@@ -502,27 +671,44 @@ double underscores.
   (once per compilation) and ``__TIMESTAMP__`` will expand to
   ``"??? ??? ?? ??:??:?? ????"``.
 
-``__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1`` ``__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2`` ``__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4`` ``__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8`` ``__GCC_HAVE_SYNC_COMPARE_AND_SWAP_16``
+.. c:macro:: __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1
+             __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2
+             __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4
+             __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8
+             __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16
+
   These macros are defined when the target processor supports atomic compare
   and swap operations on operands 1, 2, 4, 8 or 16 bytes in length, respectively.
 
-``__HAVE_SPECULATION_SAFE_VALUE``
+.. c:macro:: __HAVE_SPECULATION_SAFE_VALUE
+
   This macro is defined with the value 1 to show that this version of GCC
   supports ``__builtin_speculation_safe_value``.
 
-``__GCC_HAVE_DWARF2_CFI_ASM``
+.. c:macro:: __GCC_HAVE_DWARF2_CFI_ASM
+
   This macro is defined when the compiler is emitting DWARF CFI directives
   to the assembler.  When this is defined, it is possible to emit those same
   directives in inline assembly.
 
-``__FP_FAST_FMA`` ``__FP_FAST_FMAF`` ``__FP_FAST_FMAL``
+.. c:macro:: __FP_FAST_FMA
+             __FP_FAST_FMAF
+             __FP_FAST_FMAL
+
   These macros are defined with value 1 if the backend supports the
   ``fma``, ``fmaf``, and ``fmal`` builtin functions, so that
   the include file :samp:`math.h` can define the macros
   ``FP_FAST_FMA``, ``FP_FAST_FMAF``, and ``FP_FAST_FMAL``
   for compatibility with the 1999 C standard.
 
-``__FP_FAST_FMAF16`` ``__FP_FAST_FMAF32`` ``__FP_FAST_FMAF64`` ``__FP_FAST_FMAF128`` ``__FP_FAST_FMAF32X`` ``__FP_FAST_FMAF64X`` ``__FP_FAST_FMAF128X``
+.. c:macro:: __FP_FAST_FMAF16
+             __FP_FAST_FMAF32
+             __FP_FAST_FMAF64
+             __FP_FAST_FMAF128
+             __FP_FAST_FMAF32X
+             __FP_FAST_FMAF64X
+             __FP_FAST_FMAF128X
+
   These macros are defined with the value 1 if the backend supports the
   ``fma`` functions using the additional ``_Floatn`` and
   ``_Floatnx`` types that are defined in ISO/IEC TS
@@ -531,7 +717,8 @@ double underscores.
   the user defined ``__STDC_WANT_IEC_60559_TYPES_EXT__`` before
   including :samp:`math.h`.
 
-``__GCC_IEC_559``
+.. c:macro:: __GCC_IEC_559
+
   This macro is defined to indicate the intended level of support for
   IEEE 754 (IEC 60559) floating-point arithmetic.  It expands to a
   nonnegative integer value.  If 0, it indicates that the combination of
@@ -554,7 +741,8 @@ double underscores.
   ``__SUPPORT_SNAN__``).  It does not indicate support for decimal
   floating point or the IEEE 754 binary16 and binary128 types.
 
-``__GCC_IEC_559_COMPLEX``
+.. c:macro:: __GCC_IEC_559_COMPLEX
+
   This macro is defined to indicate the intended level of support for
   IEEE 754 (IEC 60559) floating-point arithmetic for complex numbers, as
   defined in C99 and C11 Annex G.  It expands to a nonnegative integer
@@ -565,29 +753,37 @@ double underscores.
   those requirements; this does not mean that all relevant language
   features are supported by GCC.
 
-``__NO_MATH_ERRNO__``
+.. c:macro:: __NO_MATH_ERRNO__
+
   This macro is defined if :option:`-fno-math-errno` is used, or enabled
   by another option such as :option:`-ffast-math` or by default.
 
-``__RECIPROCAL_MATH__``
+.. c:macro:: __RECIPROCAL_MATH__
+
   This macro is defined if :option:`-freciprocal-math` is used, or enabled
   by another option such as :option:`-ffast-math` or by default.
 
-``__NO_SIGNED_ZEROS__``
+.. c:macro:: __NO_SIGNED_ZEROS__
+
   This macro is defined if :option:`-fno-signed-zeros` is used, or enabled
   by another option such as :option:`-ffast-math` or by default.
 
-``__NO_TRAPPING_MATH__``
+.. c:macro:: __NO_TRAPPING_MATH__
+
   This macro is defined if :option:`-fno-trapping-math` is used.
 
-``__ASSOCIATIVE_MATH__``
+.. c:macro:: __ASSOCIATIVE_MATH__
+
   This macro is defined if :option:`-fassociative-math` is used, or enabled
   by another option such as :option:`-ffast-math` or by default.
 
-``__ROUNDING_MATH__``
+.. c:macro:: __ROUNDING_MATH__
+
   This macro is defined if :option:`-frounding-math` is used.
 
-``__GNUC_EXECUTION_CHARSET_NAME`` ``__GNUC_WIDE_EXECUTION_CHARSET_NAME``
+.. c:macro:: __GNUC_EXECUTION_CHARSET_NAME
+             __GNUC_WIDE_EXECUTION_CHARSET_NAME
+
   These macros are defined to expand to a narrow string literal of
   the name of the narrow and wide compile-time execution character
   set used.  It directly reflects the name passed to the options
