@@ -49,9 +49,9 @@ IEOR --- Bitwise logical exclusive or
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IEOR(I, J)
+      RESULT = IEOR(I, J)
 
   :samp:`{Specific names}:`
     ============  ================  ==============  ====================

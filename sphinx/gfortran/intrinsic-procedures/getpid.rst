@@ -30,9 +30,9 @@ GETPID --- Process ID function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = GETPID()
+      RESULT = GETPID()
 
   :samp:`{Example}:`
 

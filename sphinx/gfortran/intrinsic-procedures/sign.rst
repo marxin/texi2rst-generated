@@ -39,9 +39,9 @@ SIGN --- Sign copying function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SIGN(A, B)
+      RESULT = SIGN(A, B)
 
   :samp:`{Example}:`
 

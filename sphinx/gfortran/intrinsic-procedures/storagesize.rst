@@ -30,9 +30,9 @@ STORAGE_SIZE --- Storage size in bits
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = STORAGE_SIZE(A [, KIND])
+      RESULT = STORAGE_SIZE(A [, KIND])
 
   :samp:`{Return Value}:`
     The result is a scalar integer with the kind type parameter specified by KIND

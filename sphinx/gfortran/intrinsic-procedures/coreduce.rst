@@ -62,9 +62,9 @@ CO_REDUCE --- Reduction of values on the current set of images
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CO_REDUCE(A, OPERATION, [, RESULT_IMAGE, STAT, ERRMSG])
+      CALL CO_REDUCE(A, OPERATION, [, RESULT_IMAGE, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

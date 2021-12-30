@@ -38,9 +38,9 @@ COMPLEX --- Complex conversion function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COMPLEX(X, Y)
+      RESULT = COMPLEX(X, Y)
 
   :samp:`{Example}:`
 

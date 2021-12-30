@@ -40,9 +40,9 @@ SHAPE --- Determine the shape of an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SHAPE(SOURCE [, KIND])
+      RESULT = SHAPE(SOURCE [, KIND])
 
   :samp:`{Example}:`
 

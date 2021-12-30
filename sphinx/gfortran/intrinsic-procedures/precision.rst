@@ -33,9 +33,9 @@ PRECISION --- Decimal precision of a real kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = PRECISION(X)
+      RESULT = PRECISION(X)
 
   :samp:`{Example}:`
 

@@ -40,9 +40,9 @@ NORM2 --- Euclidean vector norms
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = NORM2(ARRAY[, DIM])
+      RESULT = NORM2(ARRAY[, DIM])
 
   :samp:`{Example}:`
 

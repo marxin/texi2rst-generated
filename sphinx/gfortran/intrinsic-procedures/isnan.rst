@@ -32,9 +32,9 @@ ISNAN --- Test for a NaN
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    ISNAN(X)
+      ISNAN(X)
 
   :samp:`{Example}:`
 

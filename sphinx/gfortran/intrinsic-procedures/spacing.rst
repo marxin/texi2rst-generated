@@ -33,9 +33,9 @@ SPACING --- Smallest distance between two numbers of a given type
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SPACING(X)
+      RESULT = SPACING(X)
 
   :samp:`{Example}:`
 

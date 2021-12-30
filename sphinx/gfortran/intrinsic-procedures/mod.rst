@@ -53,9 +53,9 @@ MOD --- Remainder function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MOD(A, P)
+      RESULT = MOD(A, P)
 
   :samp:`{Example}:`
 

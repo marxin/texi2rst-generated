@@ -40,9 +40,9 @@ LLT --- Lexical less than
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LLT(STRING_A, STRING_B)
+      RESULT = LLT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
     ==========================  =============  ===========  ====================

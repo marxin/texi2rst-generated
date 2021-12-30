@@ -34,9 +34,9 @@ SRAND --- Reinitialize the random number generator
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL SRAND(SEED)
+      CALL SRAND(SEED)
 
   :samp:`{Example}:`
     See ``RAND`` and ``IRAND`` for examples.

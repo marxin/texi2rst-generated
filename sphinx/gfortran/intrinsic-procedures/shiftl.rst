@@ -40,9 +40,9 @@ SHIFTL --- Left shift
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SHIFTL(I, SHIFT)
+      RESULT = SHIFTL(I, SHIFT)
 
   :samp:`{See also}:`
     :ref:`SHIFTA`, 

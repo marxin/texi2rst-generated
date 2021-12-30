@@ -48,9 +48,9 @@ SELECTED_REAL_KIND --- Choose real kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SELECTED_REAL_KIND([P, R, RADIX])
+      RESULT = SELECTED_REAL_KIND([P, R, RADIX])
 
   :samp:`{Example}:`
 

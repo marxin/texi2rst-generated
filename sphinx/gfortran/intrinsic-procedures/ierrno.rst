@@ -29,9 +29,9 @@ IERRNO --- Get the last system error number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IERRNO()
+      RESULT = IERRNO()
 
   :samp:`{Arguments}:`
     None

@@ -40,9 +40,9 @@ INT --- Convert to integer type
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = INT(A [, KIND))
+      RESULT = INT(A [, KIND))
 
   :samp:`{Example}:`
 

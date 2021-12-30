@@ -31,9 +31,9 @@ ERFC_SCALED --- Error function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ERFC_SCALED(X)
+      RESULT = ERFC_SCALED(X)
 
   :samp:`{Example}:`
 

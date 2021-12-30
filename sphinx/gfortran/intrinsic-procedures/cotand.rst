@@ -38,9 +38,9 @@ COTAND --- Cotangent function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COTAND(X)
+      RESULT = COTAND(X)
 
   :samp:`{Example}:`
 

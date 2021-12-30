@@ -33,9 +33,9 @@ SELECTED_CHAR_KIND --- Choose character kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SELECTED_CHAR_KIND(NAME)
+      RESULT = SELECTED_CHAR_KIND(NAME)
 
   :samp:`{Example}:`
 

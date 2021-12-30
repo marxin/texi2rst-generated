@@ -42,9 +42,9 @@ SQRT --- Square-root function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SQRT(X)
+      RESULT = SQRT(X)
 
   :samp:`{Example}:`
 

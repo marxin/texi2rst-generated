@@ -53,9 +53,9 @@ MVBITS --- Move bits from one integer to another
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
+      CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 
   :samp:`{Specific names}:`
     ==============  ================  ==============  ====================

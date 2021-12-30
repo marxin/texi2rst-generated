@@ -37,9 +37,9 @@ CEILING --- Integer ceiling function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = CEILING(A [, KIND])
+      RESULT = CEILING(A [, KIND])
 
   :samp:`{Example}:`
 

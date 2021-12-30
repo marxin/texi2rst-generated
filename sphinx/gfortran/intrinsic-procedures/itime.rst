@@ -36,9 +36,9 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ITIME(VALUES)
+      CALL ITIME(VALUES)
 
   :samp:`{Example}:`
 

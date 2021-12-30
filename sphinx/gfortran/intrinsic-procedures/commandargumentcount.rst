@@ -32,9 +32,9 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COMMAND_ARGUMENT_COUNT()
+      RESULT = COMMAND_ARGUMENT_COUNT()
 
   :samp:`{Example}:`
 

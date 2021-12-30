@@ -27,9 +27,9 @@ SLEEP --- Sleep for the specified number of seconds
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL SLEEP(SECONDS)
+      CALL SLEEP(SECONDS)
 
   :samp:`{Example}:`
 

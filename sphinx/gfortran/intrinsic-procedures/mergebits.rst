@@ -42,7 +42,7 @@ MERGE_BITS --- Merge of bits under mask
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MERGE_BITS(I, J, MASK)
+      RESULT = MERGE_BITS(I, J, MASK)
 

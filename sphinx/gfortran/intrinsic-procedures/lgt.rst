@@ -40,9 +40,9 @@ LGT --- Lexical greater than
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LGT(STRING_A, STRING_B)
+      RESULT = LGT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
     ==========================  =============  ===========  ====================

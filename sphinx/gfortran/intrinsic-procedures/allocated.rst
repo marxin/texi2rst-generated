@@ -37,10 +37,10 @@ ALLOCATED --- Status of an allocatable entity
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ALLOCATED(ARRAY)
-    RESULT = ALLOCATED(SCALAR) 
+      RESULT = ALLOCATED(ARRAY)
+      RESULT = ALLOCATED(SCALAR) 
 
   :samp:`{Example}:`
 

@@ -39,9 +39,9 @@ LEN --- Length of a character entity
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    L = LEN(STRING [, KIND])
+      L = LEN(STRING [, KIND])
 
   :samp:`{Specific names}:`
     ===============  =============  ===========  ====================

@@ -33,9 +33,9 @@ ABORT --- Abort the program
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ABORT
+      CALL ABORT
 
   :samp:`{Example}:`
 

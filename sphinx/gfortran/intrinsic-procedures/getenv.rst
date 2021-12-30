@@ -35,9 +35,9 @@ GETENV --- Get an environmental variable
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GETENV(NAME, VALUE)
+      CALL GETENV(NAME, VALUE)
 
   :samp:`{Example}:`
 

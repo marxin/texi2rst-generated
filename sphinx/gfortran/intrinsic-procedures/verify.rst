@@ -42,9 +42,9 @@ VERIFY --- Scan a string for characters not a given set
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = VERIFY(STRING, SET[, BACK [, KIND]])
+      RESULT = VERIFY(STRING, SET[, BACK [, KIND]])
 
   :samp:`{Example}:`
 

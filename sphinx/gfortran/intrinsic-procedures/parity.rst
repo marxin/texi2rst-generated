@@ -40,9 +40,9 @@ PARITY --- Reduction with exclusive OR
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = PARITY(MASK[, DIM])
+      RESULT = PARITY(MASK[, DIM])
 
   :samp:`{Example}:`
 

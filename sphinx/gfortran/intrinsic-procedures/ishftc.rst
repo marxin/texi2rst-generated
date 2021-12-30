@@ -54,9 +54,9 @@ ISHFTC --- Shift bits circularly
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ISHFTC(I, SHIFT [, SIZE])
+      RESULT = ISHFTC(I, SHIFT [, SIZE])
 
   :samp:`{Specific names}:`
     ==============  ================  ==============  ====================

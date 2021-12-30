@@ -35,9 +35,9 @@ BLE --- Bitwise less than or equal to
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BLE(I, J)
+      RESULT = BLE(I, J)
 
   :samp:`{See also}:`
     :ref:`BGT`, 

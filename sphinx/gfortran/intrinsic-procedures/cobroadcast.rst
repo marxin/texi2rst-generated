@@ -45,9 +45,9 @@ CO_BROADCAST --- Copy a value to all images the current set of images
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL CO_BROADCAST(A, SOURCE_IMAGE [, STAT, ERRMSG])
+      CALL CO_BROADCAST(A, SOURCE_IMAGE [, STAT, ERRMSG])
 
   :samp:`{Example}:`
 

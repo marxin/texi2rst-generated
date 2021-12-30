@@ -68,10 +68,10 @@ MAXLOC --- Location of the maximum value within an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MAXLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
-    RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])
+      RESULT = MAXLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
+      RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])
 
   :samp:`{See also}:`
     :ref:`FINDLOC`, 

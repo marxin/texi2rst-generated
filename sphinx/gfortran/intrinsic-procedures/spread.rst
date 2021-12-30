@@ -44,9 +44,9 @@ SPREAD --- Add a dimension to an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SPREAD(SOURCE, DIM, NCOPIES)
+      RESULT = SPREAD(SOURCE, DIM, NCOPIES)
 
   :samp:`{Example}:`
 

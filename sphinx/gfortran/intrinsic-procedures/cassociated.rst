@@ -38,9 +38,9 @@ C_ASSOCIATED --- Status of a C pointer
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = C_ASSOCIATED(c_ptr_1[, c_ptr_2])
+      RESULT = C_ASSOCIATED(c_ptr_1[, c_ptr_2])
 
   :samp:`{Example}:`
 

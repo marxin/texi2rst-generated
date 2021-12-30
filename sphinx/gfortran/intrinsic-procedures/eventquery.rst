@@ -39,9 +39,9 @@ EVENT_QUERY --- Query whether a coarray event has occurred
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL EVENT_QUERY (EVENT, COUNT [, STAT])
+      CALL EVENT_QUERY (EVENT, COUNT [, STAT])
 
   :samp:`{Example}:`
 

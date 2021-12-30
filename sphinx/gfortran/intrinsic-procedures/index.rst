@@ -50,9 +50,9 @@ INDEX --- Position of a substring within a string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
+      RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
 
   :samp:`{Specific names}:`
     ===========================  =============  ==============  ====================

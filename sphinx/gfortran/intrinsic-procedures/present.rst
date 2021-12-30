@@ -31,9 +31,9 @@ PRESENT --- Determine whether an optional dummy argument is specified
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = PRESENT(A)
+      RESULT = PRESENT(A)
 
   :samp:`{Example}:`
 

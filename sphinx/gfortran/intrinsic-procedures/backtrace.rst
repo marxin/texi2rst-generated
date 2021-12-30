@@ -26,9 +26,9 @@ BACKTRACE --- Show a backtrace
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL BACKTRACE
+      CALL BACKTRACE
 
   :samp:`{Arguments}:`
     None

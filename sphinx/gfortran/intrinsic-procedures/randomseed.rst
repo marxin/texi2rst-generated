@@ -44,9 +44,9 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL RANDOM_SEED([SIZE, PUT, GET])
+      CALL RANDOM_SEED([SIZE, PUT, GET])
 
   :samp:`{Example}:`
 

@@ -43,9 +43,9 @@ IBSET --- Set bit
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IBSET(I, POS)
+      RESULT = IBSET(I, POS)
 
   :samp:`{Specific names}:`
     =============  ================  ==============  ====================

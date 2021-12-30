@@ -33,8 +33,8 @@ UMASK --- Set the file creation mask
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL UMASK(MASK [, OLD])
-    OLD = UMASK(MASK)
+      CALL UMASK(MASK [, OLD])
+      OLD = UMASK(MASK)
 

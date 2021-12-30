@@ -31,9 +31,9 @@ ERFC --- Error function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ERFC(X)
+      RESULT = ERFC(X)
 
   :samp:`{Example}:`
 

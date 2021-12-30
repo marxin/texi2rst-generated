@@ -43,9 +43,9 @@ GETARG --- Get command line arguments
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GETARG(POS, VALUE)
+      CALL GETARG(POS, VALUE)
 
   :samp:`{Example}:`
 

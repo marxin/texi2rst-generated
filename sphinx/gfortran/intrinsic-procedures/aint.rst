@@ -44,9 +44,9 @@ AINT --- Truncate to a whole number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = AINT(A [, KIND]) 
+      RESULT = AINT(A [, KIND]) 
 
   :samp:`{Example}:`
 

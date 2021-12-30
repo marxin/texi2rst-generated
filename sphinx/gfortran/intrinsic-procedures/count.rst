@@ -49,9 +49,9 @@ COUNT --- Count function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = COUNT(MASK [, DIM, KIND])
+      RESULT = COUNT(MASK [, DIM, KIND])
 
   :samp:`{Example}:`
 

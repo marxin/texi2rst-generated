@@ -33,9 +33,9 @@ DPROD --- Double product function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DPROD(X, Y)
+      RESULT = DPROD(X, Y)
 
   :samp:`{Example}:`
 

@@ -49,9 +49,9 @@ ATAN2D --- Arctangent function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ATAN2D(Y, X)
+      RESULT = ATAN2D(Y, X)
 
   :samp:`{Example}:`
 

@@ -42,10 +42,10 @@ KILL --- Send a signal to a process
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL KILL(PID, SIG [, STATUS])
-    STATUS = KILL(PID, SIG)
+      CALL KILL(PID, SIG [, STATUS])
+      STATUS = KILL(PID, SIG)
 
   :samp:`{See also}:`
     :ref:`ABORT`, 

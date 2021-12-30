@@ -33,9 +33,9 @@ LNBLNK --- Index of the last non-blank character in a string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LNBLNK(STRING)
+      RESULT = LNBLNK(STRING)
 
   :samp:`{See also}:`
     :ref:`index-intrinsic`, 

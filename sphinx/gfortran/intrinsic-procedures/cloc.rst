@@ -31,9 +31,9 @@ C_LOC --- Obtain the C address of an object
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = C_LOC(X)
+      RESULT = C_LOC(X)
 
   :samp:`{Example}:`
 

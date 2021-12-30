@@ -41,9 +41,9 @@ ATOMIC_XOR --- Atomic bitwise OR operation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_XOR (ATOM, VALUE [, STAT])
+      CALL ATOMIC_XOR (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

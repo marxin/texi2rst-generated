@@ -32,9 +32,9 @@ MINEXPONENT --- Minimum exponent of a real kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MINEXPONENT(X)
+      RESULT = MINEXPONENT(X)
 
   :samp:`{Example}:`
     See ``MAXEXPONENT`` for an example.

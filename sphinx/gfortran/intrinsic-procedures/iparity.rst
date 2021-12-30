@@ -44,10 +44,10 @@ IPARITY --- Bitwise XOR of array elements
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IPARITY(ARRAY[, MASK])
-    RESULT = IPARITY(ARRAY, DIM[, MASK])
+      RESULT = IPARITY(ARRAY[, MASK])
+      RESULT = IPARITY(ARRAY, DIM[, MASK])
 
   :samp:`{Example}:`
 

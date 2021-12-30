@@ -68,10 +68,10 @@ MINLOC --- Location of the minimum value within an array
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MINLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
-    RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])
+      RESULT = MINLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
+      RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])
 
   :samp:`{See also}:`
     :ref:`FINDLOC`, 

@@ -45,9 +45,9 @@ FSEEK --- Low level file positioning subroutine
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL FSEEK(UNIT, OFFSET, WHENCE[, STATUS])
+      CALL FSEEK(UNIT, OFFSET, WHENCE[, STATUS])
 
   :samp:`{Example}:`
 

@@ -31,9 +31,9 @@ TRAILZ --- Number of trailing zero bits of an integer
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TRAILZ(I)
+      RESULT = TRAILZ(I)
 
   :samp:`{Example}:`
 

@@ -42,9 +42,9 @@ SCAN --- Scan a string for the presence of a set of characters
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SCAN(STRING, SET[, BACK [, KIND]])
+      RESULT = SCAN(STRING, SET[, BACK [, KIND]])
 
   :samp:`{Example}:`
 

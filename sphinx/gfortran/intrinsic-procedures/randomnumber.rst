@@ -28,9 +28,9 @@ RANDOM_NUMBER --- Pseudo-random number
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL RANDOM_NUMBER(HARVEST)
+      CALL RANDOM_NUMBER(HARVEST)
 
   :samp:`{Example}:`
 

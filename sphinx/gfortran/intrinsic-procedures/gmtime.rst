@@ -38,9 +38,9 @@ GMTIME --- Convert time to GMT info
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GMTIME(TIME, VALUES)
+      CALL GMTIME(TIME, VALUES)
 
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`, 

@@ -38,9 +38,9 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BESSEL_J1(X)
+      RESULT = BESSEL_J1(X)
 
   :samp:`{Example}:`
 

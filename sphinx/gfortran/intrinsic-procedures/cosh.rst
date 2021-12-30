@@ -39,9 +39,9 @@ COSH --- Hyperbolic cosine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    X = COSH(X)
+      X = COSH(X)
 
   :samp:`{Example}:`
 

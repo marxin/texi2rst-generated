@@ -32,9 +32,9 @@ LOC --- Returns the address of a variable
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LOC(X)
+      RESULT = LOC(X)
 
   :samp:`{Example}:`
 

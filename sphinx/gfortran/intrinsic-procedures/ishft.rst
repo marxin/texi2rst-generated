@@ -48,9 +48,9 @@ ISHFT --- Shift bits
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ISHFT(I, SHIFT)
+      RESULT = ISHFT(I, SHIFT)
 
   :samp:`{Specific names}:`
     =============  ================  ==============  ====================

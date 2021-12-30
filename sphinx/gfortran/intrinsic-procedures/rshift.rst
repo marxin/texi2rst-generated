@@ -40,9 +40,9 @@ RSHIFT --- Right shift bits
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RSHIFT(I, SHIFT)
+      RESULT = RSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
     :ref:`ISHFT`, 

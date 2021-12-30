@@ -38,9 +38,9 @@ ACOSD --- Arccosine function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ACOSD(X)
+      RESULT = ACOSD(X)
 
   :samp:`{Example}:`
 

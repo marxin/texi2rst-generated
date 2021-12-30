@@ -38,9 +38,9 @@ SECNDS --- Time function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SECNDS (X)
+      RESULT = SECNDS (X)
 
   :samp:`{Example}:`
 

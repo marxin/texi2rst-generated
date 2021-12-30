@@ -36,7 +36,7 @@ TRANSPOSE --- Transpose an array of rank two
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = TRANSPOSE(MATRIX)
+      RESULT = TRANSPOSE(MATRIX)
 

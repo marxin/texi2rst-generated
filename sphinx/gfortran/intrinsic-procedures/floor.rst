@@ -37,9 +37,9 @@ FLOOR --- Integer floor function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = FLOOR(A [, KIND])
+      RESULT = FLOOR(A [, KIND])
 
   :samp:`{Example}:`
 

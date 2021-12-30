@@ -31,9 +31,9 @@ ERF --- Error function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ERF(X)
+      RESULT = ERF(X)
 
   :samp:`{Example}:`
 

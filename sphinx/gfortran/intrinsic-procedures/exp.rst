@@ -41,9 +41,9 @@ EXP --- Exponential function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = EXP(X)
+      RESULT = EXP(X)
 
   :samp:`{Example}:`
 

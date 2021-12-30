@@ -42,9 +42,9 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
+      CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 
   :samp:`{Example}:`
 

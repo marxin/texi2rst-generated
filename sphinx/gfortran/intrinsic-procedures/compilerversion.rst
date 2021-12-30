@@ -31,9 +31,9 @@ COMPILER_VERSION --- Compiler version string
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    STR = COMPILER_VERSION()
+      STR = COMPILER_VERSION()
 
   :samp:`{Arguments}:`
     None

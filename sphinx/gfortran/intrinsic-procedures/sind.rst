@@ -41,9 +41,9 @@ SIND --- Sine function, degrees
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SIND(X)
+      RESULT = SIND(X)
 
   :samp:`{Example}:`
 

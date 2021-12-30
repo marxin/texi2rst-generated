@@ -47,9 +47,9 @@ MAX --- Maximum value of an argument list
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = MAX(A1, A2 [, A3 [, ...]])
+      RESULT = MAX(A1, A2 [, A3 [, ...]])
 
   :samp:`{Specific names}:`
     =============  =================  ================  ====================

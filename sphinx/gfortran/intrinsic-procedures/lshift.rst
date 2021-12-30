@@ -38,9 +38,9 @@ LSHIFT --- Left shift bits
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = LSHIFT(I, SHIFT)
+      RESULT = LSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
     :ref:`ISHFT`, 

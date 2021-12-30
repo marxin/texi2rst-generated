@@ -40,9 +40,9 @@ ACOSH --- Inverse hyperbolic cosine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ACOSH(X)
+      RESULT = ACOSH(X)
 
   :samp:`{Example}:`
 

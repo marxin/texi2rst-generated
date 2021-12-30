@@ -42,9 +42,9 @@ ALL --- All values in MASK along DIM are true
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ALL(MASK [, DIM])
+      RESULT = ALL(MASK [, DIM])
 
   :samp:`{Example}:`
 

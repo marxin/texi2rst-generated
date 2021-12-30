@@ -41,9 +41,9 @@ ATOMIC_AND --- Atomic bitwise AND operation
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL ATOMIC_AND (ATOM, VALUE [, STAT])
+      CALL ATOMIC_AND (ATOM, VALUE [, STAT])
 
   :samp:`{Example}:`
 

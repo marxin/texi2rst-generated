@@ -34,9 +34,9 @@ BLT --- Bitwise less than
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = BLT(I, J)
+      RESULT = BLT(I, J)
 
   :samp:`{See also}:`
     :ref:`BGE`, 

@@ -37,9 +37,9 @@ GAMMA --- Gamma function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    X = GAMMA(X)
+      X = GAMMA(X)
 
   :samp:`{Example}:`
 

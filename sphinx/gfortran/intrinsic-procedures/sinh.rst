@@ -37,9 +37,9 @@ SINH --- Hyperbolic sine function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SINH(X)
+      RESULT = SINH(X)
 
   :samp:`{Example}:`
 

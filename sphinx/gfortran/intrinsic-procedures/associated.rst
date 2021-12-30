@@ -40,9 +40,9 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = ASSOCIATED(POINTER [, TARGET])
+      RESULT = ASSOCIATED(POINTER [, TARGET])
 
   :samp:`{Example}:`
 

@@ -34,9 +34,9 @@ SAME_TYPE_AS ---  Query dynamic types for equality
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SAME_TYPE_AS(A, B)
+      RESULT = SAME_TYPE_AS(A, B)
 
   :samp:`{See also}:`
     :ref:`EXTENDS_TYPE_OF`

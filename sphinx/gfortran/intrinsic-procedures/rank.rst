@@ -31,9 +31,9 @@ RANK --- Rank of a data object
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = RANK(A)
+      RESULT = RANK(A)
 
   :samp:`{Example}:`
 

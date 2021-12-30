@@ -55,9 +55,9 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL GET_COMMAND_ARGUMENT(NUMBER [, VALUE, LENGTH, STATUS])
+      CALL GET_COMMAND_ARGUMENT(NUMBER [, VALUE, LENGTH, STATUS])
 
   :samp:`{Example}:`
 

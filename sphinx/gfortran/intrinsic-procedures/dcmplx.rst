@@ -40,9 +40,9 @@ DCMPLX --- Double complex conversion function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = DCMPLX(X [, Y])
+      RESULT = DCMPLX(X [, Y])
 
   :samp:`{Example}:`
 

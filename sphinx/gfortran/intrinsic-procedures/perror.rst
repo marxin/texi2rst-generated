@@ -30,9 +30,9 @@ PERROR --- Print system error message
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL PERROR(STRING)
+      CALL PERROR(STRING)
 
   :samp:`{See also}:`
     :ref:`IERRNO`

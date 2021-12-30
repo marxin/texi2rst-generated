@@ -32,9 +32,9 @@ SELECTED_INT_KIND --- Choose integer kind
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = SELECTED_INT_KIND(R)
+      RESULT = SELECTED_INT_KIND(R)
 
   :samp:`{Example}:`
 

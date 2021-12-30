@@ -51,9 +51,9 @@ IBITS --- Bit extraction
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    RESULT = IBITS(I, POS, LEN)
+      RESULT = IBITS(I, POS, LEN)
 
   :samp:`{Specific names}:`
     =============  ================  ==============  ====================

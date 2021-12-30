@@ -36,10 +36,10 @@ SECOND --- CPU time function
 
   :samp:`{Syntax}:`
 
-  .. code-block:: fortran
+    .. code-block:: fortran
 
-    CALL SECOND(TIME)
-    TIME = SECOND()
+      CALL SECOND(TIME)
+      TIME = SECOND()
 
   :samp:`{See also}:`
     :ref:`CPU_TIME`
