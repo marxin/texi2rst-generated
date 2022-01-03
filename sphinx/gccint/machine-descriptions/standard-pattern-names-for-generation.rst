@@ -3499,6 +3499,31 @@ atomic_bit_test_and_setmode atomic_bit_test_and_complementmode atomic_bit_test_a
   counterparts.  If none of these are available a compare-and-swap
   loop will be used.
 
+  .. index:: atomic_add_fetch_cmp_0mode instruction pattern
+
+  .. index:: atomic_sub_fetch_cmp_0mode instruction pattern
+
+  .. index:: atomic_and_fetch_cmp_0mode instruction pattern
+
+  .. index:: atomic_or_fetch_cmp_0mode instruction pattern
+
+  .. index:: atomic_xor_fetch_cmp_0mode instruction pattern
+
+atomic_add_fetch_cmp_0mode atomic_sub_fetch_cmp_0mode atomic_and_fetch_cmp_0mode atomic_or_fetch_cmp_0mode atomic_xor_fetch_cmp_0mode
+  These patterns emit code for an atomic operation on memory with memory
+  model semantics if the fetch result is used only in a comparison against
+  zero.
+  Operand 0 is an output operand which contains a boolean result of comparison
+  of the value after the operation against zero.  Operand 1 is the memory on
+  which the atomic operation is performed.  Operand 2 is the second operand
+  to the binary operator.  Operand 3 is the memory model to be used by the
+  operation.  Operand 4 is an integer holding the comparison code, one of
+  ``EQ``, ``NE``, ``LT``, ``GT``, ``LE`` or ``GE``.
+
+  If these patterns are not defined, attempts will be made to use separate
+  atomic operation and fetch pattern followed by comparison of the result
+  against zero.
+
   .. index:: mem_thread_fence instruction pattern
 
 mem_thread_fence
