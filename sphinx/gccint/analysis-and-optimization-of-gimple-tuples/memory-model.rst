@@ -18,7 +18,7 @@ The following is a refinement of ISO C99 6.5/6, clarifying the block copy case
 to follow common sense and extending the concept of a dynamic effective
 type to objects with a declared type as required for C++.
 
-.. code-block:: c++
+.. code-block::
 
   The effective type of an object for an access to its stored value is
   the declared type of the object or the effective type determined by

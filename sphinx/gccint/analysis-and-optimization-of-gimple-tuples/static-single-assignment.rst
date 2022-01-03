@@ -69,27 +69,26 @@ which'.
 
 The following functions can be used to examine PHI nodes
 
-.. index:: gimple_phi_result
+.. function:: gimple_phi_result (phi)
 
-Function gimple_phi_result (:samp:`{phi}`)Returns the ``SSA_NAME`` created by PHI node :samp:`{phi}` (i.e.,
-:samp:`{phi}` 's LHS).
+  Returns the ``SSA_NAME`` created by PHI node :samp:`{phi}` (i.e., :samp:`{phi}` 's LHS).
 
-.. index:: gimple_phi_num_args
+.. function:: gimple_phi_num_args (phi)
 
-Function gimple_phi_num_args (:samp:`{phi}`)Returns the number of arguments in :samp:`{phi}`.  This number is exactly
-the number of incoming edges to the basic block holding :samp:`{phi}`.
+  Returns the number of arguments in :samp:`{phi}`.  This number is exactly
+  the number of incoming edges to the basic block holding :samp:`{phi}`.
 
-.. index:: gimple_phi_arg
+.. function:: gimple_phi_arg (phi, i)
 
-Function gimple_phi_arg (:samp:`{phi}`, :samp:`{i}`)Returns :samp:`{i}` th argument of :samp:`{phi}`.
+  Returns :samp:`{i}` th argument of :samp:`{phi}`.
 
-.. index:: gimple_phi_arg_edge
+.. function:: gimple_phi_arg_edge (phi, i)
 
-Function gimple_phi_arg_edge (:samp:`{phi}`, :samp:`{i}`)Returns the incoming edge for the :samp:`{i}` th argument of :samp:`{phi}`.
+  Returns the incoming edge for the :samp:`{i}` th argument of :samp:`{phi}`.
 
-.. index:: gimple_phi_arg_def
+.. function:: gimple_phi_arg_def (phi, i)
 
-Function gimple_phi_arg_def (:samp:`{phi}`, :samp:`{i}`)Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
+  Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
 
 Preserving the SSA form
 ^^^^^^^^^^^^^^^^^^^^^^^

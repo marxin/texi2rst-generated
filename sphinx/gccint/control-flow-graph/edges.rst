@@ -94,6 +94,7 @@ about the type of edge we are dealing with.  Each edge is of one of
 the following types:
 
 *jump*
+
   No type flags are set for edges corresponding to jump instructions.
   These edges are used for unconditional or conditional jumps and in
   RTL also for table jumps.  They are the easiest to manipulate as they
@@ -244,6 +245,7 @@ the following types:
   90 needs to be implemented.
 
 *function exits*
+
   In the pre-reload representation a function terminates after the last
   instruction in the insn chain and no explicit return instructions are
   used.  This corresponds to the fall-thru edge into exit block.  After
