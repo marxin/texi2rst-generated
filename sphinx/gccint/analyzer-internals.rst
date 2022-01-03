@@ -163,19 +163,19 @@ To prevent this, we follow various approaches:
   We have two strategies here:
 
   * the worklist keeps new nodes for the same program_point together,
-         and tries to merge them before processing, and thus before they have
-         successors.  Hence, in the above, the two nodes for D (4 and 5) reach
-         the front of the worklist together, and we create a node for D with
-         the merger of the incoming states.
+    and tries to merge them before processing, and thus before they have
+    successors.  Hence, in the above, the two nodes for D (4 and 5) reach
+    the front of the worklist together, and we create a node for D with
+    the merger of the incoming states.
 
   * try merging with the state of existing enodes for the program_point
-         (which may have already been explored).  There will be duplication,
-         but only one set of duplication; subsequent duplicates are more likely
-         to hit the cache.  In particular, (hopefully) all merger chains are
-         finite, and so we guarantee termination.
-         This is intended to help with loops: we ought to explore the first
-         iteration, and then have a "subsequent iterations" exploration,
-         which uses a state merged from that of the first, to be more abstract.
+    (which may have already been explored).  There will be duplication,
+    but only one set of duplication; subsequent duplicates are more likely
+    to hit the cache.  In particular, (hopefully) all merger chains are
+    finite, and so we guarantee termination.
+    This is intended to help with loops: we ought to explore the first
+    iteration, and then have a "subsequent iterations" exploration,
+    which uses a state merged from that of the first, to be more abstract.
 
   We avoid merging pairs of states that have state-machine differences,
   as these are the kinds of differences that are likely to be most

@@ -23,7 +23,7 @@ to assert that it has been licensed under a GPL-compatible license.
 If this symbol does not exist, the compiler will emit a fatal error
 and exit with the error message:
 
-.. code-block:: c++
+.. code-block::
 
   fatal error: plugin name is not licensed under a GPL-compatible license
   name: undefined symbol: plugin_is_GPL_compatible
