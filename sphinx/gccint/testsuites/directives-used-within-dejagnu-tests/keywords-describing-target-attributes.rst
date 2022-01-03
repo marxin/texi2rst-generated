@@ -530,10 +530,14 @@ ARM-specific attributes
 ``arm_eabi``
   ARM target adheres to the ABI for the ARM Architecture.
 
+.. _arm_fp_ok:
+
 ``arm_fp_ok``
   ARM target defines ``__ARM_FP`` using ``-mfloat-abi=softfp`` or
   equivalent options.  Some multilibs may be incompatible with these
   options.
+
+.. _arm_fp_dp_ok:
 
 ``arm_fp_dp_ok``
   ARM target defines ``__ARM_FP`` with double-precision support using
@@ -568,6 +572,8 @@ ARM-specific attributes
 ``arm_neonv2_hw``
   Test system supports executing NEON v2 instructions.
 
+.. _arm_neon_ok:
+
 ``arm_neon_ok``
   ARM Target supports ``-mfpu=neon -mfloat-abi=softfp`` or compatible
   options.  Some multilibs may be incompatible with these options.
@@ -581,6 +587,8 @@ ARM-specific attributes
   ARM Target supports ``-mfpu=neon-vfpv4 -mfloat-abi=softfp`` or compatible
   options.  Some multilibs may be incompatible with these options.
 
+.. _arm_fp16_ok:
+
 ``arm_fp16_ok``
   Target supports options to generate VFP half-precision floating-point
   instructions.  Some multilibs may be incompatible with these
@@ -589,6 +597,8 @@ ARM-specific attributes
 ``arm_fp16_hw``
   Target supports executing VFP half-precision floating-point
   instructions.  This test is valid for ARM only.
+
+.. _arm_neon_fp16_ok:
 
 ``arm_neon_fp16_ok``
   ARM Target supports ``-mfpu=neon-fp16 -mfloat-abi=softfp`` or compatible
@@ -619,9 +629,13 @@ ARM-specific attributes
   ARM target supports ``-mfpu=vfp -mfloat-abi=softfp``.
   Some multilibs may be incompatible with these options.
 
+.. _arm_vfp3_ok:
+
 ``arm_vfp3_ok``
   ARM target supports ``-mfpu=vfp3 -mfloat-abi=softfp``.
   Some multilibs may be incompatible with these options.
+
+.. _arm_arch_v8a_hard_ok:
 
 ``arm_arch_v8a_hard_ok``
   The compiler is targeting ``arm*-*-*`` and can compile and assemble code
@@ -641,6 +655,8 @@ ARM-specific attributes
   ARM target supports ``-mfpu=neon-fp-armv8 -mfloat-abi=softfp``.
   Some multilibs may be incompatible with these options.
 
+.. _arm_v8_1a_neon_ok:
+
 ``arm_v8_1a_neon_ok``
   ARM target supports options to generate ARMv8.1-A Adv.SIMD instructions.
   Some multilibs may be incompatible with these options.
@@ -653,6 +669,8 @@ ARM-specific attributes
 ``arm_acq_rel``
   ARM target supports acquire-release instructions.
 
+.. _arm_v8_2a_fp16_scalar_ok:
+
 ``arm_v8_2a_fp16_scalar_ok``
   ARM target supports options to generate instructions for ARMv8.2-A and
   scalar instructions from the FP16 extension.  Some multilibs may be
@@ -663,6 +681,8 @@ ARM-specific attributes
   instructions from the FP16 extension.  Some multilibs may be
   incompatible with these options.  Implies arm_v8_2a_fp16_neon_ok.
 
+.. _arm_v8_2a_fp16_neon_ok:
+
 ``arm_v8_2a_fp16_neon_ok``
   ARM target supports options to generate instructions from ARMv8.2-A with
   the FP16 extension.  Some multilibs may be incompatible with these
@@ -672,6 +692,8 @@ ARM-specific attributes
   ARM target supports executing instructions from ARMv8.2-A with the FP16
   extension.  Some multilibs may be incompatible with these options.
   Implies arm_v8_2a_fp16_neon_ok and arm_v8_2a_fp16_scalar_hw.
+
+.. _arm_v8_2a_dotprod_neon_ok:
 
 ``arm_v8_2a_dotprod_neon_ok``
   ARM target supports options to generate instructions from ARMv8.2-A with
@@ -687,6 +709,8 @@ ARM-specific attributes
   ARM target supports executing instructions from ARMv8.2-A with the 8-bit
   Matrix Multiply extension.  Some multilibs may be incompatible with these
   options.  Implies arm_v8_2a_i8mm_ok.
+
+.. _arm_fp16fml_neon_ok:
 
 ``arm_fp16fml_neon_ok``
   ARM target supports extensions to generate the ``VFMAL`` and ``VFMLS``
@@ -755,22 +779,28 @@ ARM-specific attributes
 ``arm_cmse_hw``
   Test system supports executing CMSE instructions.
 
+.. _arm_coproc1_ok:
+
 ``arm_coproc1_ok``
   ARM target supports the following coprocessor instructions: ``CDP``,
   ``LDC``, ``STC``, ``MCR`` and ``MRC``.
 
+.. _arm_coproc2_ok:
+
 ``arm_coproc2_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in :ref:`arm_coproc1_ok` in addition to the following: ``CDP2``, ``LDC2``,
+  in :ref:`_arm_coproc1_ok <arm_coproc1_ok>` in addition to the following: ``CDP2``, ``LDC2``,
   ``LDC2l``, ``STC2``, ``STC2l``, ``MCR2`` and ``MRC2``.
+
+.. _arm_coproc3_ok:
 
 ``arm_coproc3_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in :ref:`arm_coproc2_ok` in addition the following: ``MCRR`` and ``MRRC``.
+  in :ref:`arm_coproc2_ok <arm_coproc2_ok>` in addition the following: ``MCRR`` and ``MRRC``.
 
 ``arm_coproc4_ok``
   ARM target supports all the coprocessor instructions also listed as supported
-  in :ref:`arm_coproc3_ok` in addition the following: ``MCRR2`` and ``MRRC2``.
+  in :ref:`arm_coproc3_ok <arm_coproc3_ok>` in addition the following: ``MCRR2`` and ``MRRC2``.
 
 ``arm_simd32_ok``
   ARM Target supports options suitable for accessing the SIMD32 intrinsics from
@@ -781,6 +811,8 @@ ARM-specific attributes
   ARM Target supports options suitable for accessing the saturation
   intrinsics from ``arm_acle.h``.
   Some multilibs may be incompatible with these options.
+
+.. _arm_dsp_ok:
 
 ``arm_dsp_ok``
   ARM Target supports options suitable for accessing the DSP intrinsics
@@ -1332,9 +1364,11 @@ Other attributes
 ``short_enums``
   Target defaults to short enums.
 
+.. _stack_size_et:
+
 ``stack_size``
   Target has limited stack size.  The stack size limit can be obtained using the
-  STACK_SIZE macro defined by :ref:`stack_size_ao`.
+  STACK_SIZE macro defined by :ref:`stack_size_ao <stack_size_ao>`.
 
 ``static``
   Target supports :option:`-static`.
