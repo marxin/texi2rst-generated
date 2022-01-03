@@ -560,20 +560,18 @@ Function, Variable, and Macro Listing.
 
 .. safe-ctype.c:45
 
-::
-
-  ISALPHA (c)
-  ISALNUM (c)
-  ISBLANK (c)
-  ISCNTRL (c)
-  ISDIGIT (c)
-  ISGRAPH (c)
-  ISLOWER (c)
-  ISPRINT (c)
-  ISPUNCT (c)
-  ISSPACE (c)
-  ISUPPER (c)
-  ISXDIGIT (c)
+.. c:macro:: ISALPHA (c)
+             ISALNUM (c)
+             ISBLANK (c)
+             ISCNTRL (c)
+             ISDIGIT (c)
+             ISGRAPH (c)
+             ISLOWER (c)
+             ISPRINT (c)
+             ISPUNCT (c)
+             ISSPACE (c)
+             ISUPPER (c)
+             ISXDIGIT (c)
 
 These twelve macros are defined by :samp:`safe-ctype.h`.  Each has the
 same meaning as the corresponding macro (with name in lowercase)
@@ -611,14 +609,12 @@ those provided by :samp:`ctype.h`:
 
 .. safe-ctype.c:94
 
-::
-
-  ISIDNUM (c)
-  ISIDST (c)
-  IS_VSPACE (c)
-  IS_NVSPACE (c)
-  IS_SPACE_OR_NUL (c)
-  IS_ISOBASIC (c)
+.. c:macro:: ISIDNUM (c)
+             ISIDST (c)
+             IS_VSPACE (c)
+             IS_NVSPACE (c)
+             IS_SPACE_OR_NUL (c)
+             IS_ISOBASIC (c)
 
 These six macros are defined by safe-ctype.h and provide
 additional character classes which are useful when doing lexical
