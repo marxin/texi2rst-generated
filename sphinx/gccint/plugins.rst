@@ -1,5 +1,5 @@
 ..
-  Copyright 1988-2021 Free Software Foundation, Inc.
+  Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
   For copying condtions, see the GPL license file
 
