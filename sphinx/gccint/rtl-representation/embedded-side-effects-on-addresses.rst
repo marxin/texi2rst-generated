@@ -20,7 +20,7 @@ Six special side-effect expression codes appear as memory addresses.
 
 .. index:: pre_dec
 
-:samp:`(pre_dec:{m}{x})`
+:samp:`(pre_dec:{m} {x})`
   Represents the side effect of decrementing :samp:`{x}` by a standard
   amount and represents also the value that :samp:`{x}` has after being
   decremented.  :samp:`{x}` must be a ``reg`` or ``mem``, but most
@@ -39,24 +39,24 @@ Six special side-effect expression codes appear as memory addresses.
 
   .. index:: pre_inc
 
-:samp:`(pre_inc:{m}{x})`
+:samp:`(pre_inc:{m} {x})`
   Similar, but specifies incrementing :samp:`{x}` instead of decrementing it.
 
   .. index:: post_dec
 
-:samp:`(post_dec:{m}{x})`
+:samp:`(post_dec:{m} {x})`
   Represents the same side effect as ``pre_dec`` but a different
   value.  The value represented here is the value :samp:`{x}` has before
   being decremented.
 
   .. index:: post_inc
 
-:samp:`(post_inc:{m}{x})`
+:samp:`(post_inc:{m} {x})`
   Similar, but specifies incrementing :samp:`{x}` instead of decrementing it.
 
   .. index:: post_modify
 
-:samp:`(post_modify:{m}{x}{y})`
+:samp:`(post_modify:{m} {x} {y})`
   Represents the side effect of setting :samp:`{x}` to :samp:`{y}` and
   represents :samp:`{x}` before :samp:`{x}` is modified.  :samp:`{x}` must be a
   ``reg`` or ``mem``, but most machines allow only a ``reg``.
@@ -80,7 +80,7 @@ Six special side-effect expression codes appear as memory addresses.
 
   .. index:: pre_modify
 
-:samp:`(pre_modify:{m}{x}{expr})`
+:samp:`(pre_modify:{m} {x} {expr})`
   Similar except side effects happen before the use.
 
 These embedded side effect expressions must be used with care.  Instruction

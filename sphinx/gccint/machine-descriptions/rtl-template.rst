@@ -30,7 +30,7 @@ substitution of the operands.
 
 .. index:: match_operand
 
-:samp:`(match_operand:{m}{n}{predicate}{constraint})`
+:samp:`(match_operand:{m} {n} {predicate} {constraint})`
   This expression is a placeholder for operand number :samp:`{n}` of
   the insn.  When constructing an insn, operand number :samp:`{n}`
   will be substituted at this point.  When matching an insn, whatever
@@ -74,7 +74,7 @@ substitution of the operands.
 
   .. index:: match_scratch
 
-:samp:`(match_scratch:{m}{n}{constraint})`
+:samp:`(match_scratch:{m} {n} {constraint})`
   This expression is also a placeholder for operand number :samp:`{n}`
   and indicates that operand must be a ``scratch`` or ``reg``
   expression.
@@ -119,7 +119,7 @@ substitution of the operands.
 
   .. index:: match_operator
 
-:samp:`(match_operator:{m}{n}{predicate} [{operands}...])`
+:samp:`(match_operator:{m} {n} {predicate} [{operands}...])`
   This pattern is a kind of placeholder for a variable RTL expression
   code.
 
@@ -194,7 +194,7 @@ substitution of the operands.
 
   .. index:: match_op_dup
 
-:samp:`(match_op_dup:{m}{n}[{operands}...])`
+:samp:`(match_op_dup:{m} {n}[{operands}...])`
   Like ``match_dup``, except that it applies to operators instead of
   operands.  When constructing an insn, operand number :samp:`{n}` will be
   substituted at this point.  But in matching, ``match_op_dup`` behaves
@@ -205,7 +205,7 @@ substitution of the operands.
 
   .. index:: match_parallel
 
-:samp:`(match_parallel {n}{predicate} [{subpat}...])`
+:samp:`(match_parallel {n} {predicate} [{subpat}...])`
   This pattern is a placeholder for an insn that consists of a
   ``parallel`` expression with a variable number of elements.  This
   expression should only appear at the top level of an insn pattern.

@@ -21,7 +21,7 @@ the operands of these.
 
 .. index:: set
 
-:samp:`(set {lval}{x})`
+:samp:`(set {lval} {x})`
   Represents the action of storing the value of :samp:`{x}` into the place
   represented by :samp:`{lval}`.  :samp:`{lval}` must be an expression
   representing a place that can be stored in: ``reg`` (or ``subreg``,
@@ -109,7 +109,7 @@ the operands of these.
 
   .. index:: call
 
-:samp:`(call {function}{nargs})`
+:samp:`(call {function} {nargs})`
   Represents a function call.  :samp:`{function}` is a ``mem`` expression
   whose address is the address of the function to be called.
   :samp:`{nargs}` is an expression which can be used for two purposes: on
@@ -233,7 +233,7 @@ the operands of these.
 
   .. index:: parallel
 
-:samp:`(parallel [{x0}{x1} ...])`
+:samp:`(parallel [{x0} {x1} ...])`
   Represents several side effects performed in parallel.  The square
   brackets stand for a vector; the operand of ``parallel`` is a
   vector of expressions.  :samp:`{x0}`, :samp:`{x1}` and so on are individual
@@ -282,7 +282,7 @@ the operands of these.
 
   .. index:: cond_exec
 
-:samp:`(cond_exec [{cond}{expr}])`
+:samp:`(cond_exec [{cond} {expr}])`
   Represents a conditionally executed expression.  The :samp:`{expr}` is
   executed only if the :samp:`{cond}` is nonzero.  The :samp:`{cond}` expression
   must not have side-effects, but the :samp:`{expr}` may very well have
@@ -346,7 +346,7 @@ the operands of these.
 
   .. index:: addr_vec
 
-:samp:`(addr_vec:{m} [{lr0}{lr1} ...])`
+:samp:`(addr_vec:{m} [{lr0} {lr1} ...])`
   Represents a table of jump addresses.  The vector elements :samp:`{lr0}`,
   etc., are ``label_ref`` expressions.  The mode :samp:`{m}` specifies
   how much space is given to each address; normally :samp:`{m}` would be
@@ -354,7 +354,7 @@ the operands of these.
 
   .. index:: addr_diff_vec
 
-:samp:`(addr_diff_vec:{m}{base} [{lr0}{lr1} ...] {min}{max}{flags})`
+:samp:`(addr_diff_vec:{m} {base} [{lr0} {lr1} ...] {min} {max} {flags})`
   Represents a table of jump addresses expressed as offsets from
   :samp:`{base}`.  The vector elements :samp:`{lr0}`, etc., are ``label_ref``
   expressions and so is :samp:`{base}`.  The mode :samp:`{m}` specifies how much
@@ -366,7 +366,7 @@ the operands of these.
 
   .. index:: prefetch
 
-:samp:`(prefetch:{m}{addr}{rw}{locality})`
+:samp:`(prefetch:{m} {addr} {rw} {locality})`
   Represents prefetch of memory at address :samp:`{addr}`.
   Operand :samp:`{rw}` is 1 if the prefetch is for data to be written, 0 otherwise;
   targets that do not support write prefetches should treat this as a normal

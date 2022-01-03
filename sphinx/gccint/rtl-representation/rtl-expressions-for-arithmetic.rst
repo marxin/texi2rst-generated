@@ -36,7 +36,7 @@ second operand.
 
 .. index:: RTL addition with unsigned saturation
 
-:samp:`(plus:{m}{x}{y})` :samp:`(ss_plus:{m}{x}{y})` :samp:`(us_plus:{m}{x}{y})`
+:samp:`(plus:{m} {x} {y})` :samp:`(ss_plus:{m} {x} {y})` :samp:`(us_plus:{m} {x} {y})`
   These three expressions all represent the sum of the values
   represented by :samp:`{x}` and :samp:`{y}` carried out in machine mode
   :samp:`{m}`.  They differ in their behavior on overflow of integer modes.
@@ -48,7 +48,7 @@ second operand.
 
   .. index:: lo_sum
 
-:samp:`(lo_sum:{m}{x}{y})`
+:samp:`(lo_sum:{m} {x} {y})`
   This expression represents the sum of :samp:`{x}` and the low-order bits
   of :samp:`{y}`.  It is used with ``high`` (see :ref:`constants`) to
   represent the typical two-instruction sequence used in RISC machines to
@@ -74,7 +74,7 @@ second operand.
 
   .. index:: RTL subtraction with unsigned saturation
 
-:samp:`(minus:{m}{x}{y})` :samp:`(ss_minus:{m}{x}{y})` :samp:`(us_minus:{m}{x}{y})`
+:samp:`(minus:{m} {x} {y})` :samp:`(ss_minus:{m} {x} {y})` :samp:`(us_minus:{m} {x} {y})`
   These three expressions represent the result of subtracting :samp:`{y}`
   from :samp:`{x}`, carried out in mode :samp:`{M}`.  Behavior on overflow is
   the same as for the three variants of ``plus`` (see above).
@@ -83,7 +83,7 @@ second operand.
 
   .. index:: RTL comparison
 
-:samp:`(compare:{m}{x}{y})`
+:samp:`(compare:{m} {x} {y})`
   Represents the result of subtracting :samp:`{y}` from :samp:`{x}` for purposes
   of comparison.  The result is computed without overflow, as if with
   infinite precision.
@@ -132,7 +132,7 @@ second operand.
 
   .. index:: negation with unsigned saturation
 
-:samp:`(neg:{m}{x})` :samp:`(ss_neg:{m}{x})` :samp:`(us_neg:{m}{x})`
+:samp:`(neg:{m} {x})` :samp:`(ss_neg:{m} {x})` :samp:`(us_neg:{m} {x})`
   These two expressions represent the negation (subtraction from zero) of
   the value represented by :samp:`{x}`, carried out in mode :samp:`{m}`.  They
   differ in the behavior on overflow of integer modes.  In the case of
@@ -155,7 +155,7 @@ second operand.
 
   .. index:: multiplication with unsigned saturation
 
-:samp:`(mult:{m}{x}{y})` :samp:`(ss_mult:{m}{x}{y})` :samp:`(us_mult:{m}{x}{y})`
+:samp:`(mult:{m} {x} {y})` :samp:`(ss_mult:{m} {x} {y})` :samp:`(us_mult:{m} {x} {y})`
   Represents the signed product of the values represented by :samp:`{x}` and
   :samp:`{y}` carried out in machine mode :samp:`{m}`.
   ``ss_mult`` and ``us_mult`` ensure that an out-of-bounds result
@@ -182,7 +182,7 @@ second operand.
 
   .. index:: multiplication high part
 
-:samp:`(smul_highpart:{m}{x}{y})` :samp:`(umul_highpart:{m}{x}{y})`
+:samp:`(smul_highpart:{m} {x} {y})` :samp:`(umul_highpart:{m} {x} {y})`
   Represents the high-part multiplication of :samp:`{x}` and :samp:`{y}` carried
   out in machine mode :samp:`{m}`.  ``smul_highpart`` returns the high part
   of a signed multiplication, ``umul_highpart`` returns the high part
@@ -192,7 +192,7 @@ second operand.
 
   .. index:: fused multiply-add
 
-:samp:`(fma:{m}{x}{y}{z})`
+:samp:`(fma:{m} {x} {y} {z})`
   Represents the ``fma``, ``fmaf``, and ``fmal`` builtin
   functions, which compute :samp:`{x} * {y} + {z}`
   without doing an intermediate rounding step.
@@ -209,7 +209,7 @@ second operand.
 
   .. index:: quotient
 
-:samp:`(div:{m}{x}{y})` :samp:`(ss_div:{m}{x}{y})`
+:samp:`(div:{m} {x} {y})` :samp:`(ss_div:{m} {x} {y})`
   Represents the quotient in signed division of :samp:`{x}` by :samp:`{y}`,
   carried out in machine mode :samp:`{m}`.  If :samp:`{m}` is a floating point
   mode, it represents the exact quotient; otherwise, the integerized
@@ -233,7 +233,7 @@ second operand.
 
   .. index:: division
 
-:samp:`(udiv:{m}{x}{y})` :samp:`(us_div:{m}{x}{y})`
+:samp:`(udiv:{m} {x} {y})` :samp:`(us_div:{m} {x} {y})`
   Like ``div`` but represents unsigned division.
   ``us_div`` ensures that an out-of-bounds result saturates to the maximum
   or minimum unsigned value.
@@ -246,7 +246,7 @@ second operand.
 
   .. index:: division
 
-:samp:`(mod:{m}{x}{y})` :samp:`(umod:{m}{x}{y})`
+:samp:`(mod:{m} {x} {y})` :samp:`(umod:{m} {x} {y})`
   Like ``div`` and ``udiv`` but represent the remainder instead of
   the quotient.
 
@@ -258,7 +258,7 @@ second operand.
 
   .. index:: signed maximum
 
-:samp:`(smin:{m}{x}{y})` :samp:`(smax:{m}{x}{y})`
+:samp:`(smin:{m} {x} {y})` :samp:`(smax:{m} {x} {y})`
   Represents the smaller (for ``smin``) or larger (for ``smax``) of
   :samp:`{x}` and :samp:`{y}`, interpreted as signed values in mode :samp:`{m}`.
   When used with floating point, if both operands are zeros, or if either
@@ -271,7 +271,7 @@ second operand.
 
   .. index:: unsigned minimum and maximum
 
-:samp:`(umin:{m}{x}{y})` :samp:`(umax:{m}{x}{y})`
+:samp:`(umin:{m} {x} {y})` :samp:`(umax:{m} {x} {y})`
   Like ``smin`` and ``smax``, but the values are interpreted as unsigned
   integers.
 
@@ -281,7 +281,7 @@ second operand.
 
   .. index:: bitwise complement
 
-:samp:`(not:{m}{x})`
+:samp:`(not:{m} {x})`
   Represents the bitwise complement of the value represented by :samp:`{x}`,
   carried out in mode :samp:`{m}`, which must be a fixed-point machine mode.
 
@@ -291,7 +291,7 @@ second operand.
 
   .. index:: bitwise logical-and
 
-:samp:`(and:{m}{x}{y})`
+:samp:`(and:{m} {x} {y})`
   Represents the bitwise logical-and of the values represented by
   :samp:`{x}` and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be
   a fixed-point machine mode.
@@ -302,7 +302,7 @@ second operand.
 
   .. index:: bitwise inclusive-or
 
-:samp:`(ior:{m}{x}{y})`
+:samp:`(ior:{m} {x} {y})`
   Represents the bitwise inclusive-or of the values represented by :samp:`{x}`
   and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
@@ -313,7 +313,7 @@ second operand.
 
   .. index:: bitwise exclusive-or
 
-:samp:`(xor:{m}{x}{y})`
+:samp:`(xor:{m} {x} {y})`
   Represents the bitwise exclusive-or of the values represented by :samp:`{x}`
   and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
@@ -334,7 +334,7 @@ second operand.
 
   .. index:: arithmetic shift with unsigned saturation
 
-:samp:`(ashift:{m}{x}{c})` :samp:`(ss_ashift:{m}{x}{c})` :samp:`(us_ashift:{m}{x}{c})`
+:samp:`(ashift:{m} {x} {c})` :samp:`(ss_ashift:{m} {x} {c})` :samp:`(us_ashift:{m} {x} {c})`
   These three expressions represent the result of arithmetically shifting :samp:`{x}`
   left by :samp:`{c}` places.  They differ in their behavior on overflow of integer
   modes.  An ``ashift`` operation is a plain shift with no special behavior
@@ -354,7 +354,7 @@ second operand.
 
   .. index:: ashiftrt
 
-:samp:`(lshiftrt:{m}{x}{c})` :samp:`(ashiftrt:{m}{x}{c})`
+:samp:`(lshiftrt:{m} {x} {c})` :samp:`(ashiftrt:{m} {x} {c})`
   Like ``ashift`` but for right shift.  Unlike the case for left shift,
   these two operations are distinct.
 
@@ -368,7 +368,7 @@ second operand.
 
   .. index:: right rotate
 
-:samp:`(rotate:{m}{x}{c})` :samp:`(rotatert:{m}{x}{c})`
+:samp:`(rotate:{m} {x} {c})` :samp:`(rotatert:{m} {x} {c})`
   Similar but represent left and right rotate.  If :samp:`{c}` is a constant,
   use ``rotate``.
 
@@ -378,8 +378,8 @@ second operand.
 
   .. index:: absolute value
 
-  :samp:`(abs:{m}{x})`
-:samp:`(ss_abs:{m}{x})`
+  :samp:`(abs:{m} {x})`
+:samp:`(ss_abs:{m} {x})`
   Represents the absolute value of :samp:`{x}`, computed in mode :samp:`{m}`.
   ``ss_abs`` ensures that an out-of-bounds result saturates to the
   maximum signed value.
@@ -388,13 +388,13 @@ second operand.
 
   .. index:: square root
 
-:samp:`(sqrt:{m}{x})`
+:samp:`(sqrt:{m} {x})`
   Represents the square root of :samp:`{x}`, computed in mode :samp:`{m}`.
   Most often :samp:`{m}` will be a floating point mode.
 
   .. index:: ffs
 
-:samp:`(ffs:{m}{x})`
+:samp:`(ffs:{m} {x})`
   Represents one plus the index of the least significant 1-bit in
   :samp:`{x}`, represented as an integer of mode :samp:`{m}`.  (The value is
   zero if :samp:`{x}` is zero.)  The mode of :samp:`{x}` must be :samp:`{m}`
@@ -402,7 +402,7 @@ second operand.
 
   .. index:: clrsb
 
-:samp:`(clrsb:{m}{x})`
+:samp:`(clrsb:{m} {x})`
   Represents the number of redundant leading sign bits in :samp:`{x}`,
   represented as an integer of mode :samp:`{m}`, starting at the most
   significant bit position.  This is one less than the number of leading
@@ -411,7 +411,7 @@ second operand.
 
   .. index:: clz
 
-:samp:`(clz:{m}{x})`
+:samp:`(clz:{m} {x})`
   Represents the number of leading 0-bits in :samp:`{x}`, represented as an
   integer of mode :samp:`{m}`, starting at the most significant bit position.
   If :samp:`{x}` is zero, the value is determined by
@@ -421,7 +421,7 @@ second operand.
 
   .. index:: ctz
 
-:samp:`(ctz:{m}{x})`
+:samp:`(ctz:{m} {x})`
   Represents the number of trailing 0-bits in :samp:`{x}`, represented as an
   integer of mode :samp:`{m}`, starting at the least significant bit position.
   If :samp:`{x}` is zero, the value is determined by
@@ -431,20 +431,20 @@ second operand.
 
   .. index:: popcount
 
-:samp:`(popcount:{m}{x})`
+:samp:`(popcount:{m} {x})`
   Represents the number of 1-bits in :samp:`{x}`, represented as an integer of
   mode :samp:`{m}`.  The mode of :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.
 
   .. index:: parity
 
-:samp:`(parity:{m}{x})`
+:samp:`(parity:{m} {x})`
   Represents the number of 1-bits modulo 2 in :samp:`{x}`, represented as an
   integer of mode :samp:`{m}`.  The mode of :samp:`{x}` must be :samp:`{m}` or
   ``VOIDmode``.
 
   .. index:: bswap
 
-:samp:`(bswap:{m}{x})`
+:samp:`(bswap:{m} {x})`
   Represents the value :samp:`{x}` with the order of bytes reversed, carried out
   in mode :samp:`{m}`, which must be a fixed-point machine mode.
   The mode of :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.

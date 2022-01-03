@@ -197,14 +197,14 @@ Attribute value expressions must have one of the following forms:
 
   .. index:: if_then_else and attributes
 
-:samp:`(if_then_else {test}{true-value}{false-value})`
+:samp:`(if_then_else {test} {true-value} {false-value})`
   :samp:`{test}` specifies an attribute test, whose format is defined below.
   The value of this expression is :samp:`{true-value}` if :samp:`{test}` is true,
   otherwise it is :samp:`{false-value}`.
 
   .. index:: cond and attributes
 
-:samp:`(cond [{test1}{value1} ...] {default})`
+:samp:`(cond [{test1} {value1} ...] {default})`
   The first operand of this expression is a vector containing an even
   number of expressions and consisting of pairs of :samp:`{test}` and :samp:`{value}`
   expressions.  The value of the ``cond`` expression is that of the
@@ -225,12 +225,12 @@ Attribute value expressions must have one of the following forms:
 
   .. index:: and and attributes
 
-:samp:`(not {test})` :samp:`(ior {test1}{test2})` :samp:`(and {test1}{test2})`
+:samp:`(not {test})` :samp:`(ior {test1} {test2})` :samp:`(and {test1} {test2})`
   These tests are true if the indicated logical function is true.
 
   .. index:: match_operand and attributes
 
-:samp:`(match_operand:{m}{n}{pred}{constraints})`
+:samp:`(match_operand:{m} {n} {pred} {constraints})`
   This test is true if operand :samp:`{n}` of the insn whose attribute value
   is being determined has mode :samp:`{m}` (this part of the test is ignored
   if :samp:`{m}` is ``VOIDmode``) and the function specified by the string
@@ -303,7 +303,7 @@ Attribute value expressions must have one of the following forms:
 
   .. index:: ashiftrt and attributes
 
-:samp:`(le {arith1}{arith2})` :samp:`(leu {arith1}{arith2})` :samp:`(lt {arith1}{arith2})` :samp:`(ltu {arith1}{arith2})` :samp:`(gt {arith1}{arith2})` :samp:`(gtu {arith1}{arith2})` :samp:`(ge {arith1}{arith2})` :samp:`(geu {arith1}{arith2})` :samp:`(ne {arith1}{arith2})` :samp:`(eq {arith1}{arith2})`
+:samp:`(le {arith1} {arith2})` :samp:`(leu {arith1} {arith2})` :samp:`(lt {arith1} {arith2})` :samp:`(ltu {arith1} {arith2})` :samp:`(gt {arith1} {arith2})` :samp:`(gtu {arith1} {arith2})` :samp:`(ge {arith1} {arith2})` :samp:`(geu {arith1} {arith2})` :samp:`(ne {arith1} {arith2})` :samp:`(eq {arith1} {arith2})`
   These tests are true if the indicated comparison of the two arithmetic
   expressions is true.  Arithmetic expressions are formed with
   ``plus``, ``minus``, ``mult``, ``div``, ``mod``,
@@ -319,7 +319,7 @@ Attribute value expressions must have one of the following forms:
 
   .. index:: eq_attr
 
-:samp:`(eq_attr {name}{value})`
+:samp:`(eq_attr {name} {value})`
   :samp:`{name}` is a string specifying the name of an attribute.
 
   :samp:`{value}` is a string that is either a valid value for attribute
@@ -443,7 +443,7 @@ of attribute values, one for each alternative.
 The form of each of the above specifications is shown below.  In each case,
 :samp:`{name}` is a string specifying the attribute to be set.
 
-:samp:`(set_attr {name}{value-string})`
+:samp:`(set_attr {name} {value-string})`
   :samp:`{value-string}` is either a string giving the desired attribute value,
   or a string containing a comma-separated list giving the values for
   succeeding alternatives.  The number of elements must match the number
@@ -455,7 +455,7 @@ The form of each of the above specifications is shown below.  In each case,
 
   .. index:: set_attr_alternative
 
-:samp:`(set_attr_alternative {name} [{value1}{value2} ...])`
+:samp:`(set_attr_alternative {name} [{value1} {value2} ...])`
   Depending on the alternative of the insn, the value will be one of the
   specified values.  This is a shorthand for using a ``cond`` with
   tests on the :samp:`alternative` attribute.

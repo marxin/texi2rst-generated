@@ -54,7 +54,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
 .. index:: equal
 
-:samp:`(eq:{m}{x}{y})`
+:samp:`(eq:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the values represented by :samp:`{x}` and :samp:`{y}`
   are equal, otherwise 0.
 
@@ -62,7 +62,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: not equal
 
-:samp:`(ne:{m}{x}{y})`
+:samp:`(ne:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the values represented by :samp:`{x}` and :samp:`{y}`
   are not equal, otherwise 0.
 
@@ -70,7 +70,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: greater than
 
-:samp:`(gt:{m}{x}{y})`
+:samp:`(gt:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the :samp:`{x}` is greater than :samp:`{y}`.  If they
   are fixed-point, the comparison is done in a signed sense.
 
@@ -80,7 +80,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: unsigned greater than
 
-:samp:`(gtu:{m}{x}{y})`
+:samp:`(gtu:{m} {x} {y})`
   Like ``gt`` but does unsigned comparison, on fixed-point numbers only.
 
   .. index:: lt
@@ -91,7 +91,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: unsigned less than
 
-:samp:`(lt:{m}{x}{y})` :samp:`(ltu:{m}{x}{y})`
+:samp:`(lt:{m} {x} {y})` :samp:`(ltu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'less than'.
 
   .. index:: ge
@@ -102,7 +102,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: unsigned greater than
 
-:samp:`(ge:{m}{x}{y})` :samp:`(geu:{m}{x}{y})`
+:samp:`(ge:{m} {x} {y})` :samp:`(geu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'greater than or equal'.
 
   .. index:: le
@@ -113,12 +113,12 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: unsigned less than
 
-:samp:`(le:{m}{x}{y})` :samp:`(leu:{m}{x}{y})`
+:samp:`(le:{m} {x} {y})` :samp:`(leu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'less than or equal'.
 
   .. index:: if_then_else
 
-:samp:`(if_then_else {cond}{then}{else})`
+:samp:`(if_then_else {cond} {then} {else})`
   This is not a comparison operation but is listed here because it is
   always used in conjunction with a comparison operation.  To be
   precise, :samp:`{cond}` is a comparison expression.  This expression
@@ -130,7 +130,7 @@ point comparisons are distinguished by the machine modes of the operands.
 
   .. index:: cond
 
-:samp:`(cond [{test1}{value1}{test2}{value2} ...] {default})`
+:samp:`(cond [{test1} {value1} {test2} {value2} ...] {default})`
   Similar to ``if_then_else``, but more general.  Each of :samp:`{test1}`,
   :samp:`{test2}`, ... is performed in turn.  The result of this expression is
   the :samp:`{value}` corresponding to the first nonzero test, or :samp:`{default}` if

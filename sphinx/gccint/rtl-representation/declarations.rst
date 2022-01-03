@@ -19,7 +19,7 @@ but rather state assertions about their operands.
 
 .. index:: subreg, in strict_low_part
 
-:samp:`(strict_low_part (subreg:{m} (reg:{n}{r}) 0))`
+:samp:`(strict_low_part (subreg:{m} (reg:{n} {r}) 0))`
   This expression code is used in only one context: as the destination operand of a
   ``set`` expression.  In addition, the operand of this expression
   must be a non-paradoxical ``subreg`` expression.
