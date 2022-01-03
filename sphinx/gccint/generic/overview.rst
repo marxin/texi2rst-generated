@@ -126,7 +126,7 @@ These are some other functions for handling trees:
 ``tree_size``
   Return the number of bytes a tree takes.
 
-``build0`` :samp:`{build1}build1` :samp:`{build2}build2` :samp:`{build3}build3` :samp:`{build4}build4` :samp:`{build5}build5` :samp:`{build6}build6`
+``build0``, ``build1``, ``build2``, ``build3``, ``build4``, ``build5``, ``build6``
   These functions build a tree and supply values to put in each
   parameter.  The basic signature is :samp:`code, type, [operands]`.
   ``code`` is the ``TREE_CODE``, and ``type`` is a tree

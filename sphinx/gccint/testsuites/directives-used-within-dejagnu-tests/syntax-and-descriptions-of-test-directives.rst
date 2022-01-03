@@ -236,7 +236,7 @@ can be used if there is no line associated with the message.
   However, if :samp:`dg-note` is used at least once in a testcase,
   they're not pruned and instead must *all* be handled explicitly.
   Thus, if looking for just single instances of messages with
-  :samp:`note: ` prefixes without caring for all of them, use
+  :samp:`note:` prefixes without caring for all of them, use
   :samp:`dg-message "note: [...]"` instead of :samp:`dg-note`, or use
   :samp:`dg-note` together with :samp:`dg-prune-output "note: "`.
 
