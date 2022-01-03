@@ -10,7 +10,9 @@ The C preprocessor implements the macro language used to transform C,
 C++, and Objective-C programs before they are compiled.  It can also be
 useful on its own.
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 

@@ -6,7 +6,9 @@
 The GNU C Preprocessor Internals
 ================================
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 

@@ -6,6 +6,10 @@
 GCC libquadmath
 ===============
 
+.. only:: html
+
+  Contents:
+
 .. toctree::
 
   copyright

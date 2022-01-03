@@ -6,8 +6,9 @@
 GNU Fortran Compiler Internals
 ==============================
 
+.. only:: html
 
-Contents:
+  Contents:
 
 .. toctree::
 

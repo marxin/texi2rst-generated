@@ -6,7 +6,9 @@
 GNU Compiler Collection (GCC) Internals
 =======================================
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 

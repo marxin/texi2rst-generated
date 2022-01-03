@@ -6,6 +6,10 @@
 GNU libgomp
 ===========
 
+.. only:: html
+
+  Contents:
+
 .. toctree::
 
   copyright

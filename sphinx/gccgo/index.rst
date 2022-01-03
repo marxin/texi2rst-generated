@@ -6,6 +6,9 @@
 The GNU Go Compiler
 ===================
 
+.. only:: html
+
+  Contents:
 
 .. toctree::
 

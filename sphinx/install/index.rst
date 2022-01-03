@@ -6,7 +6,9 @@
 Installing GCC
 ==============
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 

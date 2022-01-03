@@ -6,7 +6,9 @@
 GNU libiberty
 =============
 
-Contents:
+.. only:: html
+
+  Contents:
 
 .. toctree::
 
