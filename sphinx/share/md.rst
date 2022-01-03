@@ -1843,7 +1843,7 @@ Moxie---:samp:`{config/moxie/constraints.md}`
   ``N``
     A constant in the range of 0 to -255.
 
-:samp:`MSP430--{config/msp430/constraints.md}`
+MSP430---:samp:`{config/msp430/constraints.md}`
 
   ``R12``
     Register R12.

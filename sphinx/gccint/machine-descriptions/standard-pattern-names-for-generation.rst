@@ -755,11 +755,7 @@ reduc_plus_scal_m
 
   .. index:: reduc_and_scal_m instruction pattern
 
-reduc_and_scal_m
-
- reduc_ior_scal_m
-
- reduc_xor_scal_m
+reduc_and_scal_m, reduc_ior_scal_m, reduc_xor_scal_m
   Compute the bitwise ``AND`` / ``IOR`` / ``XOR`` reduction of the elements
   of a vector of mode :samp:`{m}`.  Operand 1 is the vector input and operand 0
   is the scalar result.  The mode of the scalar result is the same as one
@@ -851,12 +847,9 @@ usdot_prodm
     ...
 
   .. index:: ssadm instruction pattern
-
-ssadm
-
   .. index:: usadm instruction pattern
 
-usadm
+ssadm, usadm
   Compute the sum of absolute differences of two signed/unsigned elements.
   Operand 1 and operand 2 are of the same mode. Their absolute difference, which
   is of a wider mode, is computed and added to operand 3. Operand 3 is of a mode
@@ -877,12 +870,9 @@ widen_usumm3
   of a wider mode.)
 
 .. index:: smulhsm3 instruction pattern
-
-smulhsm3
-
 .. index:: umulhsm3 instruction pattern
 
-umulhsm3
+smulhsm3, umulhsm3
 
   Signed/unsigned multiply high with scale. This is equivalent to the C code:
 
@@ -895,13 +885,11 @@ umulhsm3
   where the sign of :samp:`narrow` determines whether this is a signed
   or unsigned operation, and :samp:`{N}` is the size of :samp:`wide` in bits.
 
-  .. index:: smulhrsm3 instruction pattern
-
-smulhrsm3
-
+.. index:: smulhrsm3 instruction pattern
 .. index:: umulhrsm3 instruction pattern
 
-umulhrsm3
+smulhrsm3, umulhrsm3
+
   Signed/unsigned multiply high with round and scale. This is
   equivalent to the C code:
 
@@ -913,10 +901,6 @@ umulhrsm3
 
   where the sign of :samp:`narrow` determines whether this is a signed
   or unsigned operation, and :samp:`{N}` is the size of :samp:`wide` in bits.
-
-.. index:: sdiv_pow2m3 instruction pattern
-
-sdiv_pow2m3
 
 .. index:: sdiv_pow2m3 instruction pattern
 
