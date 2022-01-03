@@ -13,6 +13,6 @@ processors with floating-point unit.
 
 .. code-block:: c++
 
-  unsigned int __builtin_arm_get_fpscr ()
-  void __builtin_arm_set_fpscr (unsigned int)
+  unsigned int __builtin_arm_get_fpscr ();
+  void __builtin_arm_set_fpscr (unsigned int);
 

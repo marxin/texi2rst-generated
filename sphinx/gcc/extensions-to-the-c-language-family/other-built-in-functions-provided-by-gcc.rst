@@ -1364,16 +1364,6 @@ built-in functions appear both with and without the ``__builtin_`` prefix.
   has at least the range and precision of :samp:`{u}` is called, and it is
   an error if there is no such function.
 
-.. function:: type __builtin_complex (real, imag)
-
-  The built-in function ``__builtin_complex`` is provided for use in
-  implementing the ISO C11 macros ``CMPLXF``, ``CMPLX`` and
-  ``CMPLXL``.  :samp:`{real}` and :samp:`{imag}` must have the same type, a
-  real binary floating-point type, and the result has the corresponding
-  complex type with real and imaginary parts :samp:`{real}` and :samp:`{imag}`.
-  Unlike :samp:`{real} + I * {imag}`, this works even when
-  infinities, NaNs and negative zeros are involved.
-
 .. function:: int __builtin_constant_p (exp)
 
   You can use the built-in function ``__builtin_constant_p`` to
