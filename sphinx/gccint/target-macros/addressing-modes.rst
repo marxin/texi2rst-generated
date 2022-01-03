@@ -15,27 +15,22 @@ Addressing Modes
 This is about addressing modes.
 
 .. c:macro:: HAVE_PRE_INCREMENT
-
-.. c:macro:: HAVE_PRE_DECREMENT
-
-.. c:macro:: HAVE_POST_INCREMENT
-
-.. c:macro:: HAVE_POST_DECREMENT
+             HAVE_PRE_DECREMENT
+             HAVE_POST_INCREMENT
+             HAVE_POST_DECREMENT
 
   A C expression that is nonzero if the machine supports pre-increment,
   pre-decrement, post-increment, or post-decrement addressing respectively.
 
 .. c:macro:: HAVE_PRE_MODIFY_DISP
-
-.. c:macro:: HAVE_POST_MODIFY_DISP
+             HAVE_POST_MODIFY_DISP
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving constants other than
   the size of the memory operand.
 
 .. c:macro:: HAVE_PRE_MODIFY_REG
-
-.. c:macro:: HAVE_POST_MODIFY_REG
+             HAVE_POST_MODIFY_REG
 
   A C expression that is nonzero if the machine supports pre- or
   post-address side-effect generation involving a register displacement.
@@ -202,14 +197,18 @@ This is about addressing modes.
   generated for adjacent some stack slots can be made identical, and thus
   be shared.
 
-  *Note*: This macro should be used with caution.  It is necessary
-  to know something of how reload works in order to effectively use this,
-  and it is quite easy to produce macros that build in too much knowledge
-  of reload internals.
+  .. note::
 
-  *Note*: This macro must be able to reload an address created by a
-  previous invocation of this macro.  If it fails to handle such addresses
-  then the compiler may generate incorrect code or abort.
+    This macro should be used with caution.  It is necessary
+    to know something of how reload works in order to effectively use this,
+    and it is quite easy to produce macros that build in too much knowledge
+    of reload internals.
+
+  .. note::
+
+    This macro must be able to reload an address created by a
+    previous invocation of this macro.  If it fails to handle such addresses
+    then the compiler may generate incorrect code or abort.
 
   .. index:: push_reload
 

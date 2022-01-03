@@ -265,15 +265,15 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_SETJMP_PRESERVES_NONVOLATILE_REGS_P
 
   On some targets, it is assumed that the compiler will spill all pseudos
-    that are live across a call to ``setjmp``, while other targets treat
-    ``setjmp`` calls as normal function calls.
+  that are live across a call to ``setjmp``, while other targets treat
+  ``setjmp`` calls as normal function calls.
 
   This hook returns false if ``setjmp`` calls do not preserve all
-    non-volatile registers so that gcc that must spill all pseudos that are
-    live across ``setjmp`` calls.  Define this to return true if the
-    target does not need to spill all pseudos live across ``setjmp`` calls.
-    The default implementation conservatively assumes all pseudos must be
-    spilled across ``setjmp`` calls.
+  non-volatile registers so that gcc that must spill all pseudos that are
+  live across ``setjmp`` calls.  Define this to return true if the
+  target does not need to spill all pseudos live across ``setjmp`` calls.
+  The default implementation conservatively assumes all pseudos must be
+  spilled across ``setjmp`` calls.
 
 .. hook-end
 
@@ -944,7 +944,7 @@ Here are several miscellaneous parameters.
 
 .. function:: machine_mode TARGET_PREFERRED_DOLOOP_MODE (machine_mode mode)
 
-   .. hook-start:TARGET_PREFERRED_DOLOOP_MODE
+  .. hook-start:TARGET_PREFERRED_DOLOOP_MODE
 
   This hook takes a :samp:`{mode}` for a doloop IV, where ``mode`` is the
   original mode for the operation.  If the target prefers an alternate
@@ -1104,12 +1104,12 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_GEN_CCMP_FIRST
 
   This function prepares to emit a comparison insn for the first compare in a
-   sequence of conditional comparisions.  It returns an appropriate comparison
-   with ``CC`` for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
-   The insns to prepare the compare are saved in :samp:`{prep_seq}` and the compare
-   insns are saved in :samp:`{gen_seq}`.  They will be emitted when all the
-   compares in the conditional comparision are generated without error.
-   :samp:`{code}` is the ``rtx_code`` of the compare for :samp:`{op0}` and :samp:`{op1}`.
+  sequence of conditional comparisions.  It returns an appropriate comparison
+  with ``CC`` for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
+  The insns to prepare the compare are saved in :samp:`{prep_seq}` and the compare
+  insns are saved in :samp:`{gen_seq}`.  They will be emitted when all the
+  compares in the conditional comparision are generated without error.
+  :samp:`{code}` is the ``rtx_code`` of the compare for :samp:`{op0}` and :samp:`{op1}`.
 
 .. hook-end
 
@@ -1118,17 +1118,17 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_GEN_CCMP_NEXT
 
   This function prepares to emit a conditional comparison within a sequence
-   of conditional comparisons.  It returns an appropriate comparison with
-   ``CC`` for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
-   The insns to prepare the compare are saved in :samp:`{prep_seq}` and the compare
-   insns are saved in :samp:`{gen_seq}`.  They will be emitted when all the
-   compares in the conditional comparision are generated without error.  The
-   :samp:`{prev}` expression is the result of a prior call to ``gen_ccmp_first``
-   or ``gen_ccmp_next``.  It may return ``NULL`` if the combination of
-   :samp:`{prev}` and this comparison is not supported, otherwise the result must
-   be appropriate for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
-   :samp:`{code}` is the ``rtx_code`` of the compare for :samp:`{op0}` and :samp:`{op1}`.
-   :samp:`{bit_code}` is ``AND`` or ``IOR``, which is the op on the compares.
+  of conditional comparisons.  It returns an appropriate comparison with
+  ``CC`` for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
+  The insns to prepare the compare are saved in :samp:`{prep_seq}` and the compare
+  insns are saved in :samp:`{gen_seq}`.  They will be emitted when all the
+  compares in the conditional comparision are generated without error.  The
+  :samp:`{prev}` expression is the result of a prior call to ``gen_ccmp_first``
+  or ``gen_ccmp_next``.  It may return ``NULL`` if the combination of
+  :samp:`{prev}` and this comparison is not supported, otherwise the result must
+  be appropriate for passing to ``gen_ccmp_next`` or ``cbranch_optab``.
+  :samp:`{code}` is the ``rtx_code`` of the compare for :samp:`{op0}` and :samp:`{op1}`.
+  :samp:`{bit_code}` is ``AND`` or ``IOR``, which is the op on the compares.
 
 .. hook-end
 
@@ -1538,20 +1538,20 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_HAVE_SPECULATION_SAFE_VALUE
 
   This hook is used to determine the level of target support for
-   ``__builtin_speculation_safe_value``.  If called with an argument
-   of false, it returns true if the target has been modified to support
-   this builtin.  If called with an argument of true, it returns true
-   if the target requires active mitigation execution might be speculative.
+  ``__builtin_speculation_safe_value``.  If called with an argument
+  of false, it returns true if the target has been modified to support
+  this builtin.  If called with an argument of true, it returns true
+  if the target requires active mitigation execution might be speculative.
 
   The default implementation returns false if the target does not define
-   a pattern named ``speculation_barrier``.  Else it returns true
-   for the first case and whether the pattern is enabled for the current
-   compilation for the second case.
+  a pattern named ``speculation_barrier``.  Else it returns true
+  for the first case and whether the pattern is enabled for the current
+  compilation for the second case.
 
   For targets that have no processors that can execute instructions
-   speculatively an alternative implemenation of this hook is available:
-   simply redefine this hook to ``speculation_safe_value_not_needed``
-   along with your other target hooks.
+  speculatively an alternative implemenation of this hook is available:
+  simply redefine this hook to ``speculation_safe_value_not_needed``
+  along with your other target hooks.
 
 .. hook-end
 
@@ -1560,20 +1560,20 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_SPECULATION_SAFE_VALUE
 
   This target hook can be used to generate a target-specific code
-   sequence that implements the ``__builtin_speculation_safe_value``
-   built-in function.  The function must always return :samp:`{val}` in
-   :samp:`{result}` in mode :samp:`{mode}` when the cpu is not executing
-   speculatively, but must never return that when speculating until it
-   is known that the speculation will not be unwound.  The hook supports
-   two primary mechanisms for implementing the requirements.  The first
-   is to emit a speculation barrier which forces the processor to wait
-   until all prior speculative operations have been resolved; the second
-   is to use a target-specific mechanism that can track the speculation
-   state and to return :samp:`{failval}` if it can determine that
-   speculation must be unwound at a later time.
+  sequence that implements the ``__builtin_speculation_safe_value``
+  built-in function.  The function must always return :samp:`{val}` in
+  :samp:`{result}` in mode :samp:`{mode}` when the cpu is not executing
+  speculatively, but must never return that when speculating until it
+  is known that the speculation will not be unwound.  The hook supports
+  two primary mechanisms for implementing the requirements.  The first
+  is to emit a speculation barrier which forces the processor to wait
+  until all prior speculative operations have been resolved; the second
+  is to use a target-specific mechanism that can track the speculation
+  state and to return :samp:`{failval}` if it can determine that
+  speculation must be unwound at a later time.
 
   The default implementation simply copies :samp:`{val}` to :samp:`{result}` and
-   emits a ``speculation_barrier`` instruction if that is defined.
+  emits a ``speculation_barrier`` instruction if that is defined.
 
 .. hook-end
 

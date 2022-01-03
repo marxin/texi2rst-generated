@@ -513,10 +513,10 @@ them: try the first ones in this list first.
   .. hook-start:TARGET_SCHED_CAN_SPECULATE_INSN
 
   Some instructions should never be speculated by the schedulers, usually
-   because the instruction is too expensive to get this wrong.  Often such
-   instructions have long latency, and often they are not fully modeled in the
-   pipeline descriptions.  This hook should return ``false`` if :samp:`{insn}`
-   should not be speculated.
+  because the instruction is too expensive to get this wrong.  Often such
+  instructions have long latency, and often they are not fully modeled in the
+  pipeline descriptions.  This hook should return ``false`` if :samp:`{insn}`
+  should not be speculated.
 
 .. hook-end
 

@@ -174,9 +174,8 @@ into
   movel d0,sp@-
   fmoved sp@+,fp0
 
-@findex CC_REVERSED
 If a peephole matches a sequence including one or more jump insns, you must
-take account of the flags such as @code{CC_REVERSED} which specify that the
+take account of the flags such as ``CC_REVERSED`` which specify that the
 condition codes are represented in an unusual manner.  The compiler
 automatically alters any ordinary conditional jumps which occur in such
 situations, but the compiler cannot alter jumps which have been replaced by

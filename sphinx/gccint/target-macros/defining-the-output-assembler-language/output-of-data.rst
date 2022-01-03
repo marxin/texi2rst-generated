@@ -169,16 +169,11 @@ These macros are provided by :samp:`real.h` for writing the definitions
 of ``ASM_OUTPUT_DOUBLE`` and the like:
 
 .. c:macro:: REAL_VALUE_TO_TARGET_SINGLE (x, l)
-
-.. c:macro:: REAL_VALUE_TO_TARGET_DOUBLE (x, l)
-
-.. c:macro:: REAL_VALUE_TO_TARGET_LONG_DOUBLE (x, l)
-
-.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL32 (x, l)
-
-.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL64 (x, l)
-
-.. c:macro:: REAL_VALUE_TO_TARGET_DECIMAL128 (x, l)
+             REAL_VALUE_TO_TARGET_DOUBLE (x, l)
+             REAL_VALUE_TO_TARGET_LONG_DOUBLE (x, l)
+             REAL_VALUE_TO_TARGET_DECIMAL32 (x, l)
+             REAL_VALUE_TO_TARGET_DECIMAL64 (x, l)
+             REAL_VALUE_TO_TARGET_DECIMAL128 (x, l)
 
   These translate :samp:`{x}`, of type ``REAL_VALUE_TYPE``, to the
   target's floating point representation, and store its bit pattern in

@@ -447,10 +447,8 @@ in many of the tables described below.
 .. hook-end
 
 .. c:macro:: SECONDARY_RELOAD_CLASS (class, mode, x)
-
-.. c:macro:: SECONDARY_INPUT_RELOAD_CLASS (class, mode, x)
-
-.. c:macro:: SECONDARY_OUTPUT_RELOAD_CLASS (class, mode, x)
+             SECONDARY_INPUT_RELOAD_CLASS (class, mode, x)
+             SECONDARY_OUTPUT_RELOAD_CLASS (class, mode, x)
 
   These macros are obsolete, new ports should use the target hook
   ``TARGET_SECONDARY_RELOAD`` instead.
@@ -666,7 +664,7 @@ in many of the tables described below.
   .. hook-start:TARGET_IRA_CHANGE_PSEUDO_ALLOCNO_CLASS
 
   A target hook which can change allocno class for given pseudo from
-    allocno and best class calculated by IRA.
+  allocno and best class calculated by IRA.
 
   The default version of this target hook always returns given class.
 

@@ -892,13 +892,13 @@ is based on a deterministic finite state automaton (DFA):
 the instruction issue is possible if there is a transition from one
 automaton state to another one.  This algorithm is very fast, and
 furthermore, its speed is not dependent on processor
-complexityHowever, the size of the automaton depends on
-processor complexity.  To limit this effect, machine descriptions
-can split orthogonal parts of the machine description among several
-automata: but then, since each of these must be stepped independently,
-this does cause a small decrease in the algorithm's performance.
+complexity [#f1]_.
 
-.
+.. [#f1] However, the size of the automaton depends on
+  processor complexity.  To limit this effect, machine descriptions
+  can split orthogonal parts of the machine description among several
+  automata: but then, since each of these must be stepped independently,
+  this does cause a small decrease in the algorithm's performance.
 
 .. index:: automaton based pipeline description
 

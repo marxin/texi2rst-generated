@@ -180,12 +180,9 @@ being output.
 .. index:: asm_fprintf
 
 .. c:macro:: REGISTER_PREFIX
-
-.. c:macro:: LOCAL_LABEL_PREFIX
-
-.. c:macro:: USER_LABEL_PREFIX
-
-.. c:macro:: IMMEDIATE_PREFIX
+             LOCAL_LABEL_PREFIX
+             USER_LABEL_PREFIX
+             IMMEDIATE_PREFIX
 
   If defined, C string expressions to be used for the :samp:`%R`, :samp:`%L`,
   :samp:`%U`, and :samp:`%I` options of ``asm_fprintf`` (see
