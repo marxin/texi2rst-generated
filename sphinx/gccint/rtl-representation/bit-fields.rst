@@ -16,7 +16,7 @@ Special expression codes exist to represent bit-field instructions.
 
 .. index:: BITS_BIG_ENDIAN, effect on sign_extract
 
-:samp:`(sign_extract:{m}{loc}{size}{pos})`
+:samp:`(sign_extract:{m} {loc} {size} {pos})`
   This represents a reference to a sign-extended bit-field contained or
   starting in :samp:`{loc}` (a memory or register reference).  The bit-field
   is :samp:`{size}` bits wide and starts at bit :samp:`{pos}`.  The compilation
@@ -40,7 +40,7 @@ Special expression codes exist to represent bit-field instructions.
 
   .. index:: zero_extract
 
-:samp:`(zero_extract:{m}{loc}{size}{pos})`
+:samp:`(zero_extract:{m} {loc} {size} {pos})`
   Like ``sign_extract`` but refers to an unsigned or zero-extended
   bit-field.  The same sequence of bits are extracted, but they
   are filled to an entire word with zeros instead of by sign-extension.

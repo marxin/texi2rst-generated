@@ -21,7 +21,7 @@ location may vary, it relies on the following types of notes.
 
 .. index:: var_location
 
-:samp:`(var_location:{mode}{var}{exp}{stat})`
+:samp:`(var_location:{mode} {var} {exp} {stat})`
   Binds variable ``var``, a tree, to value :samp:`{exp}`, an RTL
   expression.  It appears only in ``NOTE_INSN_VAR_LOCATION`` and
   ``DEBUG_INSN`` s, with slightly different meanings.  :samp:`{mode}`, if
@@ -32,25 +32,25 @@ location may vary, it relies on the following types of notes.
 
   .. index:: debug_expr
 
-:samp:`(debug_expr:{mode}{decl})`
+:samp:`(debug_expr:{mode} {decl})`
   Stands for the value bound to the ``DEBUG_EXPR_DECL`` :samp:`{decl}`,
   that points back to it, within value expressions in
   ``VAR_LOCATION`` nodes.
 
   .. index:: debug_implicit_ptr
 
-:samp:`(debug_implicit_ptr:{mode}{decl})`
+:samp:`(debug_implicit_ptr:{mode} {decl})`
   Stands for the location of a :samp:`{decl}` that is no longer addressable.
 
   .. index:: entry_value
 
-:samp:`(entry_value:{mode}{decl})`
+:samp:`(entry_value:{mode} {decl})`
   Stands for the value a :samp:`{decl}` had at the entry point of the
   containing function.
 
   .. index:: debug_parameter_ref
 
-:samp:`(debug_parameter_ref:{mode}{decl})`
+:samp:`(debug_parameter_ref:{mode} {decl})`
   Refers to a parameter that was completely optimized out.
 
   .. index:: debug_marker

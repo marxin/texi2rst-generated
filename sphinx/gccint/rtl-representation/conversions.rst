@@ -36,35 +36,35 @@ must be placed into a register.
 
 .. index:: sign_extend
 
-:samp:`(sign_extend:{m}{x})`
+:samp:`(sign_extend:{m} {x})`
   Represents the result of sign-extending the value :samp:`{x}`
   to machine mode :samp:`{m}`.  :samp:`{m}` must be a fixed-point mode
   and :samp:`{x}` a fixed-point value of a mode narrower than :samp:`{m}`.
 
   .. index:: zero_extend
 
-:samp:`(zero_extend:{m}{x})`
+:samp:`(zero_extend:{m} {x})`
   Represents the result of zero-extending the value :samp:`{x}`
   to machine mode :samp:`{m}`.  :samp:`{m}` must be a fixed-point mode
   and :samp:`{x}` a fixed-point value of a mode narrower than :samp:`{m}`.
 
   .. index:: float_extend
 
-:samp:`(float_extend:{m}{x})`
+:samp:`(float_extend:{m} {x})`
   Represents the result of extending the value :samp:`{x}`
   to machine mode :samp:`{m}`.  :samp:`{m}` must be a floating point mode
   and :samp:`{x}` a floating point value of a mode narrower than :samp:`{m}`.
 
   .. index:: truncate
 
-:samp:`(truncate:{m}{x})`
+:samp:`(truncate:{m} {x})`
   Represents the result of truncating the value :samp:`{x}`
   to machine mode :samp:`{m}`.  :samp:`{m}` must be a fixed-point mode
   and :samp:`{x}` a fixed-point value of a mode wider than :samp:`{m}`.
 
   .. index:: ss_truncate
 
-:samp:`(ss_truncate:{m}{x})`
+:samp:`(ss_truncate:{m} {x})`
   Represents the result of truncating the value :samp:`{x}`
   to machine mode :samp:`{m}`, using signed saturation in the case of
   overflow.  Both :samp:`{m}` and the mode of :samp:`{x}` must be fixed-point
@@ -72,7 +72,7 @@ must be placed into a register.
 
   .. index:: us_truncate
 
-:samp:`(us_truncate:{m}{x})`
+:samp:`(us_truncate:{m} {x})`
   Represents the result of truncating the value :samp:`{x}`
   to machine mode :samp:`{m}`, using unsigned saturation in the case of
   overflow.  Both :samp:`{m}` and the mode of :samp:`{x}` must be fixed-point
@@ -80,26 +80,26 @@ must be placed into a register.
 
   .. index:: float_truncate
 
-:samp:`(float_truncate:{m}{x})`
+:samp:`(float_truncate:{m} {x})`
   Represents the result of truncating the value :samp:`{x}`
   to machine mode :samp:`{m}`.  :samp:`{m}` must be a floating point mode
   and :samp:`{x}` a floating point value of a mode wider than :samp:`{m}`.
 
   .. index:: float
 
-:samp:`(float:{m}{x})`
+:samp:`(float:{m} {x})`
   Represents the result of converting fixed point value :samp:`{x}`,
   regarded as signed, to floating point mode :samp:`{m}`.
 
   .. index:: unsigned_float
 
-:samp:`(unsigned_float:{m}{x})`
+:samp:`(unsigned_float:{m} {x})`
   Represents the result of converting fixed point value :samp:`{x}`,
   regarded as unsigned, to floating point mode :samp:`{m}`.
 
   .. index:: fix
 
-:samp:`(fix:{m}{x})`
+:samp:`(fix:{m} {x})`
   When :samp:`{m}` is a floating-point mode, represents the result of
   converting floating point value :samp:`{x}` (valid for mode :samp:`{m}`) to an
   integer, still represented in floating point mode :samp:`{m}`, by rounding
@@ -112,14 +112,14 @@ must be placed into a register.
 
   .. index:: unsigned_fix
 
-:samp:`(unsigned_fix:{m}{x})`
+:samp:`(unsigned_fix:{m} {x})`
   Represents the result of converting floating point value :samp:`{x}` to
   fixed point mode :samp:`{m}`, regarded as unsigned.  How rounding is done
   is not specified.
 
   .. index:: fract_convert
 
-:samp:`(fract_convert:{m}{x})`
+:samp:`(fract_convert:{m} {x})`
   Represents the result of converting fixed-point value :samp:`{x}` to
   fixed-point mode :samp:`{m}`, signed integer value :samp:`{x}` to
   fixed-point mode :samp:`{m}`, floating-point value :samp:`{x}` to
@@ -129,7 +129,7 @@ must be placed into a register.
 
   .. index:: sat_fract
 
-:samp:`(sat_fract:{m}{x})`
+:samp:`(sat_fract:{m} {x})`
   Represents the result of converting fixed-point value :samp:`{x}` to
   fixed-point mode :samp:`{m}`, signed integer value :samp:`{x}` to
   fixed-point mode :samp:`{m}`, or floating-point value :samp:`{x}` to
@@ -139,7 +139,7 @@ must be placed into a register.
 
   .. index:: unsigned_fract_convert
 
-:samp:`(unsigned_fract_convert:{m}{x})`
+:samp:`(unsigned_fract_convert:{m} {x})`
   Represents the result of converting fixed-point value :samp:`{x}` to
   integer mode :samp:`{m}` regarded as unsigned, or unsigned integer value :samp:`{x}` to
   fixed-point mode :samp:`{m}`.
@@ -147,7 +147,7 @@ must be placed into a register.
 
   .. index:: unsigned_sat_fract
 
-:samp:`(unsigned_sat_fract:{m}{x})`
+:samp:`(unsigned_sat_fract:{m} {x})`
   Represents the result of converting unsigned integer value :samp:`{x}` to
   fixed-point mode :samp:`{m}`.
   When overflows or underflows happen, the results are saturated to the

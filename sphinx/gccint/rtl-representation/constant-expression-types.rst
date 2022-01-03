@@ -58,7 +58,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: const_double
 
-:samp:`(const_double:{m}{i0}{i1} ...)`
+:samp:`(const_double:{m} {i0} {i1} ...)`
   This represents either a floating-point constant of mode :samp:`{m}` or
   (on older ports that do not define
   ``TARGET_SUPPORTS_WIDE_INT``) an integer constant too large to fit
@@ -110,7 +110,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: CONST_WIDE_INT
 
-:samp:`(const_wide_int:{m}{nunits}{elt0} ...)`
+:samp:`(const_wide_int:{m} {nunits} {elt0} ...)`
   This contains an array of ``HOST_WIDE_INT`` s that is large enough
   to hold any constant that can be represented on the target.  This form
   of rtl is only used on targets that define
@@ -154,7 +154,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: const_poly_int
 
-:samp:`(const_poly_int:{m} [{c0}{c1} ...])`
+:samp:`(const_poly_int:{m} [{c0} {c1} ...])`
   Represents a ``poly_int`` -style polynomial integer with coefficients
   :samp:`{c0}`, :samp:`{c1}`, ....  The coefficients are ``wide_int`` -based
   integers rather than rtxes.  ``CONST_POLY_INT_COEFFS`` gives the
@@ -164,7 +164,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: const_vector
 
-:samp:`(const_vector:{m} [{x0}{x1} ...])`
+:samp:`(const_vector:{m} [{x0} {x1} ...])`
   Represents a vector constant.  The values in square brackets are
   elements of the vector, which are always ``const_int``,
   ``const_wide_int``, ``const_double`` or ``const_fixed``
@@ -261,7 +261,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: symbol_ref
 
-:samp:`(symbol_ref:{mode}{symbol})`
+:samp:`(symbol_ref:{mode} {symbol})`
   Represents the value of an assembler label for data.  :samp:`{symbol}` is
   a string that describes the name of the assembler label.  If it starts
   with a :samp:`*`, the label is the rest of :samp:`{symbol}` not including
@@ -273,7 +273,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: label_ref
 
-:samp:`(label_ref:{mode}{label})`
+:samp:`(label_ref:{mode} {label})`
   Represents the value of an assembler label for code.  It contains one
   operand, an expression, which must be a ``code_label`` or a ``note``
   of type ``NOTE_INSN_DELETED_LABEL`` that appears in the instruction
@@ -287,7 +287,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: const
 
-:samp:`(const:{m}{exp})`
+:samp:`(const:{m} {exp})`
   Represents a constant that is the result of an assembly-time
   arithmetic computation.  The operand, :samp:`{exp}`, contains only
   ``const_int``, ``symbol_ref``, ``label_ref`` or ``unspec``
@@ -297,7 +297,7 @@ The simplest RTL expressions are those that represent constant values.
 
   .. index:: high
 
-:samp:`(high:{m}{exp})`
+:samp:`(high:{m} {exp})`
   Represents the high-order bits of :samp:`{exp}`.  
   The number of bits is machine-dependent and is
   normally the number of bits specified in an instruction that initializes

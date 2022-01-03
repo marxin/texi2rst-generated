@@ -21,7 +21,7 @@ registers and to main memory.
 
 .. index:: pseudo registers
 
-:samp:`(reg:{m}{n})`
+:samp:`(reg:{m} {n})`
   For small values of the integer :samp:`{n}` (those that are less than
   ``FIRST_PSEUDO_REGISTER``), this stands for a reference to machine
   register number :samp:`{n}` : a :dfn:`hard register`.  For larger values of
@@ -133,7 +133,7 @@ registers and to main memory.
 
   .. index:: subreg
 
-:samp:`(subreg:{m1}{reg:m2}{bytenum})`
+:samp:`(subreg:{m1} {reg:m2} {bytenum})`
   ``subreg`` expressions are used to refer to a register in a machine
   mode other than its natural one, or to refer to one register of
   a multi-part ``reg`` that actually refers to several registers.
@@ -442,7 +442,7 @@ registers and to main memory.
 
   .. index:: mem
 
-:samp:`(mem:{m}{addr}{alias})`
+:samp:`(mem:{m} {addr} {alias})`
   This RTX represents a reference to main memory at an address
   represented by the expression :samp:`{addr}`.  :samp:`{m}` specifies how large
   a unit of memory is accessed.  :samp:`{alias}` specifies an alias set for the
@@ -455,7 +455,7 @@ registers and to main memory.
 
   .. index:: concat
 
-:samp:`(concat{m}{rtx}{rtx})`
+:samp:`(concat{m} {rtx} {rtx})`
   This RTX represents the concatenation of two other RTXs.  This is used
   for complex values.  It should only appear in the RTL attached to
   declarations and during RTL generation.  It should not appear in the
