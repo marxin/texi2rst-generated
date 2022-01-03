@@ -89,3 +89,7 @@ Use verbose mode.
 Use :option:`--verbose` mode.
 
 This works: :option:`--verbose <make --verbose>`
+
+.. function:: enum gimple_code gimple_code (gimple g)
+
+  Return the code for statement ``G``.
