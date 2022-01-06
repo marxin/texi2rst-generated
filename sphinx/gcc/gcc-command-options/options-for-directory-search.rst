@@ -19,7 +19,7 @@ libraries and for parts of the compiler:
 
 .. include:: ../../share/cppdiropts.rst
 
-.. option:: -iplugindir=dir
+.. option:: -iplugindir={dir}
 
   Set the directory to search for plugins that are passed
   by :option:`-fplugin`:samp:`={name}` instead of
@@ -80,7 +80,7 @@ libraries and for parts of the compiler:
   or :samp:`/./`, or make the path absolute when generating a relative
   prefix.
 
-.. option:: --sysroot=dir
+.. option:: --sysroot={dir}
 
   Use :samp:`{dir}` as the logical root directory for headers and libraries.
   For example, if the compiler normally searches for headers in

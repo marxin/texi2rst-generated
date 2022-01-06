@@ -23,7 +23,7 @@ one of the forms is listed---the one that is not the default.  You
 can figure out the other form by either removing :samp:`no-` or adding
 it.
 
-.. option:: -fstack-reuse=reuse-level
+.. option:: -fstack-reuse={reuse-level}
 
   This option controls stack space reuse for user declared local/auto variables
   and compiler generated temporaries.  :samp:`{reuse_level}` can be :samp:`all`,
@@ -534,7 +534,7 @@ it.
   This flag does not have a negative form, because it specifies a
   three-way choice.
 
-.. option:: -fpack-struct[=n]
+.. option:: -fpack-struct[={n}]
 
   Without a value specified, pack all structure members together without
   holes.  When a value is specified (which must be a small power of two), pack
@@ -558,7 +558,7 @@ it.
   switch.  Use it to conform to a non-default application binary interface.
   Not all targets provide complete support for this switch.
 
-.. option:: -ftls-model=model
+.. option:: -ftls-model={model}
 
   Alter the thread-local storage model to be used (see :ref:`thread-local`).
   The :samp:`{model}` argument should be one of :samp:`global-dynamic`,

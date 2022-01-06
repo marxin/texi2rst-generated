@@ -38,7 +38,7 @@ C++-specific options (e.g., :option:`-Wabi`).
 Here is a list of options that are *only* for compiling Objective-C
 and Objective-C++ programs:
 
-.. option:: -fconstant-string-class=class-name
+.. option:: -fconstant-string-class={class-name}
 
   Use :samp:`{class-name}` as the name of the class to instantiate for each
   literal string specified with the syntax ``@"..."``.  The default
@@ -72,7 +72,7 @@ and Objective-C++ programs:
 
   Default setting; overrides :option:`-fno-nil-receivers`.
 
-.. option:: -fobjc-abi-version=n
+.. option:: -fobjc-abi-version={n}
 
   Use version :samp:`{n}` of the Objective-C ABI for the selected runtime.
   This option is currently supported only for the NeXT runtime.  In that

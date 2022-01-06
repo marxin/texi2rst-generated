@@ -78,20 +78,20 @@ These options are defined for NDS32 implementations:
 
   Do not generate 16-bit instructions.
 
-.. option:: -misr-vector-size=num
+.. option:: -misr-vector-size={num}
 
   Specify the size of each interrupt vector, which must be 4 or 16.
 
-.. option:: -mcache-block-size=num
+.. option:: -mcache-block-size={num}
 
   Specify the size of each cache block,
   which must be a power of 2 between 4 and 512.
 
-.. option:: -march=arch
+.. option:: -march={arch}
 
   Specify the name of the target architecture.
 
-.. option:: -mcmodel=code-model
+.. option:: -mcmodel={code-model}
 
   Set the code model to one of
 

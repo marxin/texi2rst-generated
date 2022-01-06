@@ -272,7 +272,7 @@ FRV Options
 
   Cause gas to print out tomcat statistics.
 
-.. option:: -mcpu=cpu
+.. option:: -mcpu={cpu}
 
   Select the processor type for which to generate code.  Possible values are
   :samp:`frv`, :samp:`fr550`, :samp:`tomcat`, :samp:`fr500`, :samp:`fr450`,

@@ -14,7 +14,7 @@ x86 Options
 
 These :samp:`-m` options are defined for the x86 family of computers.
 
-.. option:: -march=cpu-type
+.. option:: -march={cpu-type}
 
   Generate instructions for the machine type :samp:`{cpu-type}`.  In contrast to
   :option:`-mtune`:samp:`={cpu-type}`, which merely tunes the generated code 
@@ -401,7 +401,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`geode`
     AMD Geode embedded processor with MMX and 3DNow! instruction set support.
 
-.. option:: -mtune=cpu-type
+.. option:: -mtune={cpu-type}
 
   Tune to :samp:`{cpu-type}` everything applicable about the generated code, except
   for the ABI and the set of available instructions.  
@@ -455,11 +455,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
     :option:`-mtune` indicates the processor (or, in this case, collection of
     processors) for which the code is optimized.
 
-.. option:: -mcpu=cpu-type
+.. option:: -mcpu={cpu-type}
 
   A deprecated synonym for :option:`-mtune`.
 
-.. option:: -mfpmath=unit
+.. option:: -mfpmath={unit}
 
   Generate floating-point arithmetic for selected unit :samp:`{unit}`.  The choices
   for :samp:`{unit}` are:
@@ -502,7 +502,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     still experimental, because the GCC register allocator does not model separate
     functional units well, resulting in unstable performance.
 
-.. option:: -masm=dialect
+.. option:: -masm={dialect}
 
   .. index:: masm=dialect
 
@@ -624,7 +624,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   ``long double``.  Hence they are not binary-compatible
   with code compiled without that switch.
 
-.. option:: -malign-data=type
+.. option:: -malign-data={type}
 
   Control how GCC aligns variables.  Supported values for :samp:`{type}` are
   :samp:`compat` uses increased alignment value compatible uses GCC 4.8
@@ -632,7 +632,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   psABI, and :samp:`cacheline` uses increased alignment value to match
   the cache line size.  :samp:`compat` is the default.
 
-.. option:: -mlarge-data-threshold=threshold
+.. option:: -mlarge-data-threshold={threshold}
 
   When :option:`-mcmodel`:samp:`=medium` is specified, data objects larger than
   :samp:`{threshold}` are placed in the large data section.  This value must be the
@@ -664,7 +664,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function with too many arguments.  (Normally, extra arguments are
   harmlessly ignored.)
 
-.. option:: -mregparm=num
+.. option:: -mregparm={num}
 
   Control how many registers are used to pass integer arguments.  By
   default, no registers are used to pass arguments, and at most 3
@@ -724,7 +724,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   SSE compatibility.  See also the attribute :gcc-attr:`force_align_arg_pointer`,
   applicable to individual functions.
 
-.. option:: -mpreferred-stack-boundary=num
+.. option:: -mpreferred-stack-boundary={num}
 
   Attempt to keep the stack boundary aligned to a 2 raised to :samp:`{num}`
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
@@ -745,7 +745,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-mpreferred-stack-boundary`:samp:`=3`, including any libraries.  This
   includes the system libraries and startup modules.
 
-.. option:: -mincoming-stack-boundary=num
+.. option:: -mincoming-stack-boundary={num}
 
   Assume the incoming stack is aligned to a 2 raised to :samp:`{num}` byte
   boundary.  If :option:`-mincoming-stack-boundary` is not specified,
@@ -809,7 +809,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   tuning features and default settings. The names can be used in 
   :option:`-mtune-ctrl`:samp:`={feature-list}`.
 
-.. option:: -mtune-ctrl=feature-list
+.. option:: -mtune-ctrl={feature-list}
 
   .. index:: mtune-ctrl=feature-list
 
@@ -852,18 +852,18 @@ These :samp:`-m` options are defined for the x86 family of computers.
   This option instructs GCC to use 128-bit AVX instructions instead of
   256-bit AVX instructions in the auto-vectorizer.
 
-.. option:: -mprefer-vector-width=opt
+.. option:: -mprefer-vector-width={opt}
 
   This option instructs GCC to use :samp:`{opt}` -bit vector width in instructions
   instead of default on the selected platform.
 
-.. option:: -mmove-max=bits
+.. option:: -mmove-max={bits}
 
   This option instructs GCC to set the maximum number of bits can be
   moved from memory to memory efficiently to :samp:`{bits}`.  The valid
   :samp:`{bits}` are 128, 256 and 512.
 
-.. option:: -mstore-max=bits
+.. option:: -mstore-max={bits}
 
   This option instructs GCC to set the maximum number of bits can be
   stored to memory efficiently to :samp:`{bits}`.  The valid :samp:`{bits}` are
@@ -947,7 +947,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   already with :option:`-ffast-math` (or the above option combination), and
   doesn't need :option:`-mrecip`.
 
-.. option:: -mrecip=opt
+.. option:: -mrecip={opt}
 
   This option controls which reciprocal estimate instructions
   may be used.  :samp:`{opt}` is a comma-separated list of options, which may
@@ -977,7 +977,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     So, for example, :option:`-mrecip`:samp:`=all,!sqrt` enables
   all of the reciprocal approximations, except for square root.
 
-.. option:: -mveclibabi=type
+.. option:: -mveclibabi={type}
 
   Specifies the ABI type to use for vectorizing intrinsics using an
   external library.  Supported values for :samp:`{type}` are :samp:`svml` 
@@ -1004,7 +1004,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   ``__vrs4_log10f`` and ``__vrs4_powf`` for the corresponding function type
   when :option:`-mveclibabi`:samp:`=acml` is used.  
 
-.. option:: -mabi=name
+.. option:: -mabi={name}
 
   Generate code for the specified calling convention.  Permissible values
   are :samp:`sysv` for the ABI used on GNU/Linux and other systems, and
@@ -1041,7 +1041,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Default setting; overrides :option:`-mcall-ms2sysv-xlogues`.
 
-.. option:: -mtls-dialect=type
+.. option:: -mtls-dialect={type}
 
   Generate code to access thread-local storage using the :samp:`gnu` or
   :samp:`gnu2` conventions.  :samp:`gnu` is the conservative default;
@@ -1218,7 +1218,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   For string operations of unknown size, use run-time checks with
   inline code for small blocks and a library call for large blocks.
 
-.. option:: -mstringop-strategy=alg
+.. option:: -mstringop-strategy={alg}
 
   .. index:: mstringop-strategy=alg
 
@@ -1234,7 +1234,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`libcall`
     Always use a library call.
 
-.. option:: -mmemcpy-strategy=strategy
+.. option:: -mmemcpy-strategy={strategy}
 
   .. index:: mmemcpy-strategy=strategy
 
@@ -1249,7 +1249,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`{alg}` is ``0`` for the first triplet and ``max_size + 1`` of the 
   preceding range.
 
-.. option:: -mmemset-strategy=strategy
+.. option:: -mmemset-strategy={strategy}
 
   .. index:: mmemset-strategy=strategy
 
@@ -1299,7 +1299,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   should be patched in later dynamically. This is likely only
   useful together with :option:`-mrecord-mcount`.
 
-.. option:: -minstrument-return=type
+.. option:: -minstrument-return={type}
 
   Instrument function exit in -pg -mfentry instrumented functions with
   call to specified function. This only instruments true returns ending
@@ -1311,11 +1311,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Generate a __return_loc section pointing to all return instrumentation code.
 
-.. option:: -mfentry-name=name
+.. option:: -mfentry-name={name}
 
   Set name of __fentry__ symbol called at function entry for -pg -mfentry functions.
 
-.. option:: -mfentry-section=name
+.. option:: -mfentry-section={name}
 
   Set name of section to record -mrecord-mcount calls (default __mcount_loc).
 
@@ -1343,7 +1343,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Split 32-byte AVX unaligned load and store.
 
-.. option:: -mstack-protector-guard=guard
+.. option:: -mstack-protector-guard={guard}
 
   Generate stack protection code using canary at :samp:`{guard}`.  Supported
   locations are :samp:`global` for global canary or :samp:`tls` for per-thread
@@ -1370,7 +1370,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   cachline bouncing when and works for all atomic logic fetch builtins
   that generates compare and swap loop.
 
-.. option:: -mindirect-branch=choice
+.. option:: -mindirect-branch={choice}
 
   Convert indirect call and jump with :samp:`{choice}`.  The default is
   :samp:`keep`, which keeps indirect call and jump unmodified.
@@ -1390,7 +1390,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-fcf-protection`:samp:`=branch` since the external thunk can be made
   to enable control-flow check.
 
-.. option:: -mfunction-return=choice
+.. option:: -mfunction-return={choice}
 
   Convert function return with :samp:`{choice}`.  The default is :samp:`keep`,
   which keeps function return unmodified.  :samp:`thunk` converts function
@@ -1414,7 +1414,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Force indirect call and jump via register.
 
-.. option:: -mharden-sls=choice
+.. option:: -mharden-sls={choice}
 
   Generate code to mitigate against straight line speculation (SLS) with
   :samp:`{choice}`.  The default is :samp:`none` which disables all SLS

@@ -18,7 +18,7 @@ eBPF Options
   :samp:`32767`.  Defaults to whatever limit is imposed by the version of
   the Linux kernel targeted.
 
-.. option:: -mkernel=version
+.. option:: -mkernel={version}
 
   This specifies the minimum version of the kernel that will run the
   compiled program.  GCC uses this version to determine which
@@ -51,7 +51,7 @@ eBPF Options
 
   Enable 32-bit ALU instructions. Enabled for CPU v3 and above.
 
-.. option:: -mcpu=version
+.. option:: -mcpu={version}
 
   This specifies which version of the eBPF ISA to target. Newer versions
   may not be supported by all kernels. The default is :samp:`v3`.

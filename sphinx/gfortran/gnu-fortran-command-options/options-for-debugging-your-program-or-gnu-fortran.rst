@@ -68,7 +68,7 @@ either your program or the GNU Fortran compiler.
   between releases.  This option may also generate internal compiler
   errors for features which have only recently been added.
 
-.. option:: -ffpe-trap=list
+.. option:: -ffpe-trap={list}
 
   .. index:: ffpe-trap=list
 
@@ -104,7 +104,7 @@ either your program or the GNU Fortran compiler.
 
   By default no exception traps are enabled.
 
-.. option:: -ffpe-summary=list
+.. option:: -ffpe-summary={list}
 
   .. index:: ffpe-summary=list
 

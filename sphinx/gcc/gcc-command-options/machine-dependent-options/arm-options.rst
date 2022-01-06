@@ -14,7 +14,7 @@ ARM Options
 
 These :samp:`-m` options are defined for the ARM port:
 
-.. option:: -mabi=name
+.. option:: -mabi={name}
 
   Generate code for the specified ABI.  Permissible values are: :samp:`apcs-gnu`,
   :samp:`atpcs`, :samp:`aapcs`, :samp:`aapcs-linux` and :samp:`iwmmxt`.
@@ -70,7 +70,7 @@ These :samp:`-m` options are defined for the ARM port:
 
   Default setting; overrides :option:`-mno-sched-prolog`.
 
-.. option:: -mfloat-abi=name
+.. option:: -mfloat-abi={name}
 
   Specifies which floating-point ABI to use.  Permissible values
   are: :samp:`soft`, :samp:`softfp` and :samp:`hard`.
@@ -111,7 +111,7 @@ These :samp:`-m` options are defined for the ARM port:
   and later architectures the default is BE8, for older architectures
   the default is BE32.  BE32 format has been deprecated by ARM.
 
-.. option:: -march=name[+extension...]
+.. option:: -march={name}[+extension...]
 
   This specifies the name of the target ARM architecture.  GCC uses this
   name to determine what kind of instructions it can emit when generating
@@ -582,7 +582,7 @@ These :samp:`-m` options are defined for the ARM port:
   GNU/Linux, and not all architectures are recognized.  If the auto-detect
   is unsuccessful the option has no effect.
 
-.. option:: -mtune=name
+.. option:: -mtune={name}
 
   This option specifies the name of the target ARM processor for
   which GCC should tune the performance of the code.
@@ -636,7 +636,7 @@ These :samp:`-m` options are defined for the ARM port:
   GNU/Linux, and not all architectures are recognized.  If the auto-detect is
   unsuccessful the option has no effect.
 
-.. option:: -mcpu=name[+extension...]
+.. option:: -mcpu={name}[+extension...]
 
   This specifies the name of the target ARM processor.  GCC uses this name
   to derive the name of the target ARM architecture (as if specified
@@ -720,7 +720,7 @@ These :samp:`-m` options are defined for the ARM port:
   GNU/Linux, and not all architectures are recognized.  If the auto-detect
   is unsuccessful the option has no effect.
 
-.. option:: -mfpu=name
+.. option:: -mfpu={name}
 
   This specifies what floating-point hardware (or hardware emulation) is
   available on the target.  Permissible names are: :samp:`auto`, :samp:`vfpv2`,
@@ -747,14 +747,14 @@ These :samp:`-m` options are defined for the ARM port:
 
   You can also set the fpu name at function level by using the ``target("fpu=")`` function attributes (see :ref:`arm-function-attributes`) or pragmas (see :ref:`function-specific-option-pragmas`).
 
-.. option:: -mfp16-format=name
+.. option:: -mfp16-format={name}
 
   Specify the format of the ``__fp16`` half-precision floating-point type.
   Permissible names are :samp:`none`, :samp:`ieee`, and :samp:`alternative`;
   the default is :samp:`none`, in which case the ``__fp16`` type is not
   defined.  See :ref:`half-precision`, for more information.
 
-.. option:: -mstructure-size-boundary=n
+.. option:: -mstructure-size-boundary={n}
 
   The sizes of all structures and unions are rounded up to a multiple
   of the number of bits set by this option.  Permissible values are 8, 32
@@ -809,7 +809,7 @@ These :samp:`-m` options are defined for the ARM port:
   responsible for initializing this register with an appropriate value
   before execution begins.
 
-.. option:: -mpic-register=reg
+.. option:: -mpic-register={reg}
 
   Specify the register to be used for PIC addressing.
   For standard PIC base case, the default is any suitable register
@@ -896,7 +896,7 @@ These :samp:`-m` options are defined for the ARM port:
   is not valid in AAPCS configurations because interworking is enabled
   by default.
 
-.. option:: -mtp=name
+.. option:: -mtp={name}
 
   Specify the access model for the thread local storage pointer.  The valid
   models are :samp:`soft`, which generates calls to ``__aeabi_read_tp``,
@@ -905,7 +905,7 @@ These :samp:`-m` options are defined for the ARM port:
   best available method for the selected processor.  The default setting is
   :samp:`auto`.
 
-.. option:: -mtls-dialect=dialect
+.. option:: -mtls-dialect={dialect}
 
   Specify the dialect to use for accessing thread local storage.  Two
   :samp:`{dialect}` s are supported---:samp:`gnu` and :samp:`gnu2`.  The

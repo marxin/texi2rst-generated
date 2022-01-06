@@ -131,7 +131,7 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   instruction that triggered the stop bit.  This can improve instruction
   scheduling, but does not always do so.
 
-.. option:: -mfixed-range=register-range
+.. option:: -mfixed-range={register-range}
 
   Generate code treating the given register range as fixed registers.
   A fixed register is one that the register allocator cannot use.  This is
@@ -139,12 +139,12 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   two registers separated by a dash.  Multiple register ranges can be
   specified separated by a comma.
 
-.. option:: -mtls-size=tls-size
+.. option:: -mtls-size={tls-size}
 
   Specify bit size of immediate TLS offsets.  Valid values are 14, 22, and
   64.
 
-.. option:: -mtune=cpu-type
+.. option:: -mtune={cpu-type}
 
   Tune the instruction scheduling for a particular CPU, Valid values are
   :samp:`itanium`, :samp:`itanium1`, :samp:`merced`, :samp:`itanium2`,
@@ -245,7 +245,7 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   Generate checks for control speculation in selective scheduling.
   This flag is disabled by default.
 
-.. option:: -msched-max-memory-insns=max-insns
+.. option:: -msched-max-memory-insns={max-insns}
 
   Limit on the number of memory insns per instruction group, giving lower
   priority to subsequent memory insns attempting to schedule in the same

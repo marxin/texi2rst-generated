@@ -106,7 +106,7 @@ These options are supported for Xtensa targets:
   instructions.  Note that the assembler uses an indirect call for
   every cross-file call, not just those that really are out of range.
 
-.. option:: -mabi=name
+.. option:: -mabi={name}
 
   Generate code for the specified ABI.  Permissible values are: :samp:`call0`,
   :samp:`windowed`.  Default ABI is chosen by the Xtensa core configuration.

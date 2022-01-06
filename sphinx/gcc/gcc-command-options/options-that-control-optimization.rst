@@ -275,7 +275,7 @@ optimizations to be performed is desired.
   This option is enabled by default at optimization levels :option:`-O1`,
   :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -ffp-contract=style
+.. option:: -ffp-contract={style}
 
   :option:`-ffp-contract`:samp:`=off` disables floating-point expression contraction.
   :option:`-ffp-contract`:samp:`=fast` enables floating-point expression contraction
@@ -389,7 +389,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3` and :option:`-Os`.
 
-.. option:: -finline-limit=n
+.. option:: -finline-limit={n}
 
   By default, GCC limits the size of functions that can be inlined.  This flag
   allows coarse control of this limit.  :samp:`{n}` is the size of functions that
@@ -795,7 +795,7 @@ optimizations to be performed is desired.
   shrinkage.  This is helpful for fast processors with small or moderate
   size register sets.
 
-.. option:: -fira-algorithm=algorithm
+.. option:: -fira-algorithm={algorithm}
 
   Use the specified coloring algorithm for the integrated register
   allocator.  The :samp:`{algorithm}` argument can be :samp:`priority`, which
@@ -804,7 +804,7 @@ optimizations to be performed is desired.
   for all architectures, but for those targets that do support it, it is
   the default because it generates better code.
 
-.. option:: -fira-region=region
+.. option:: -fira-region={region}
 
   Use specified regions for the integrated register allocator.  The
   :samp:`{region}` argument should be one of the following:
@@ -942,7 +942,7 @@ optimizations to be performed is desired.
   sense when scheduling before register allocation, i.e. with
   :option:`-fschedule-insns` or at :option:`-O2` or higher.
 
-.. option:: -fsched-stalled-insns, -fsched-stalled-insns=n
+.. option:: -fsched-stalled-insns, -fsched-stalled-insns={n}
 
   Define how many insns (if any) can be moved prematurely from the queue
   of stalled insns into the ready list during the second scheduling pass.
@@ -952,7 +952,7 @@ optimizations to be performed is desired.
   :option:`-fsched-stalled-insns` without a value is equivalent to
   :option:`-fsched-stalled-insns`:samp:`=1`.
 
-.. option:: -fsched-stalled-insns-dep, -fsched-stalled-insns-dep=n
+.. option:: -fsched-stalled-insns-dep, -fsched-stalled-insns-dep={n}
 
   Define how many insn groups (cycles) are examined for a dependency
   on a stalled insn that is a candidate for premature removal from the queue
@@ -1262,7 +1262,7 @@ optimizations to be performed is desired.
 
   This flag is enabled by default at :option:`-O2` and :option:`-Os`.
 
-.. option:: -flive-patching=level
+.. option:: -flive-patching={level}
 
   Control GCC's optimizations to produce output suitable for live-patching.
 
@@ -1661,7 +1661,7 @@ optimizations to be performed is desired.
   :option:`-O2` and by :option:`-ftree-vectorize`, :option:`-fprofile-use`,
   and :option:`-fauto-profile`.
 
-.. option:: -ftrivial-auto-var-init=choice
+.. option:: -ftrivial-auto-var-init={choice}
 
   Initialize automatic variables with either a pattern or with zeroes to increase
   the security and predictability of a program by preventing uninitialized memory
@@ -1691,7 +1691,7 @@ optimizations to be performed is desired.
   You can control this behavior for a specific variable by using the variable
   attribute :gcc-attr:`uninitialized` (see :ref:`variable-attributes`).
 
-.. option:: -fvect-cost-model=model
+.. option:: -fvect-cost-model={model}
 
   Alter the cost model used for vectorization.  The :samp:`{model}` argument
   should be one of :samp:`unlimited`, :samp:`dynamic`, :samp:`cheap` or
@@ -1714,7 +1714,7 @@ optimizations to be performed is desired.
   The default cost model depends on other optimization flags and is
   either :samp:`dynamic` or :samp:`cheap`.
 
-.. option:: -fsimd-cost-model=model
+.. option:: -fsimd-cost-model={model}
 
   Alter the cost model used for vectorization of loops marked with the OpenMP
   simd directive.  The :samp:`{model}` argument should be one of
@@ -1856,7 +1856,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O1`, :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
-.. option:: -freorder-blocks-algorithm=algorithm
+.. option:: -freorder-blocks-algorithm={algorithm}
 
   Use the specified algorithm for basic block reordering.  The
   :samp:`{algorithm}` argument can be :samp:`simple`, which does not increase
@@ -1966,7 +1966,7 @@ optimizations to be performed is desired.
   The :option:`-fipa-strict-aliasing` option is enabled by default and is
   effective only in combination with :option:`-fstrict-aliasing`.
 
-.. option:: -falign-functions, -falign-functions=n, -falign-functions=n:m, -falign-functions=n:m:n2, -falign-functions=n:m:n2:m2
+.. option:: -falign-functions, -falign-functions={n}, -falign-functions={n}:{m}, -falign-functions={n}:{m}:{n2}, -falign-functions={n}:{m}:{n2}:{m2}
 
   Align the start of functions to the next power-of-two greater than or
   equal to :samp:`{n}`, skipping up to :samp:`{m}` -1 bytes.  This ensures that at
@@ -2005,7 +2005,7 @@ optimizations to be performed is desired.
   by the amount specified by :option:`-falign-functions`, but not to
   skip more bytes than the size of the function.
 
-.. option:: -falign-labels, -falign-labels=n, -falign-labels=n:m, -falign-labels=n:m:n2, -falign-labels=n:m:n2:m2
+.. option:: -falign-labels, -falign-labels={n}, -falign-labels={n}:{m}, -falign-labels={n}:{m}:{n2}, -falign-labels={n}:{m}:{n2}:{m2}
 
   Align all branch targets to a power-of-two boundary.
 
@@ -2022,7 +2022,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-loops, -falign-loops=n, -falign-loops=n:m, -falign-loops=n:m:n2, -falign-loops=n:m:n2:m2
+.. option:: -falign-loops, -falign-loops={n}, -falign-loops={n}:{m}, -falign-loops={n}:{m}:{n2}, -falign-loops={n}:{m}:{n2}:{m2}
 
   Align loops to a power-of-two boundary.  If the loops are executed
   many times, this makes up for any execution of the dummy padding
@@ -2040,7 +2040,7 @@ optimizations to be performed is desired.
 
   Enabled at levels :option:`-O2`, :option:`-O3`.
 
-.. option:: -falign-jumps, -falign-jumps=n, -falign-jumps=n:m, -falign-jumps=n:m:n2, -falign-jumps=n:m:n2:m2
+.. option:: -falign-jumps, -falign-jumps={n}, -falign-jumps={n}:{m}, -falign-jumps={n}:{m}:{n2}, -falign-jumps={n}:{m}:{n2}:{m2}
 
   Align branch targets to a power-of-two boundary, for branch targets
   where the targets can only be reached by jumping.  In this case,
@@ -2127,7 +2127,7 @@ optimizations to be performed is desired.
   Instead relying on a linker plugin should provide safer and more precise
   information.
 
-.. option:: -flto[=n]
+.. option:: -flto[={n}]
 
   This option runs the standard link-time optimizer.  When invoked
   with source code, it generates GIMPLE (one of GCC's internal
@@ -2354,7 +2354,7 @@ optimizations to be performed is desired.
   or otherwise fall back to autodetection of the number of CPU threads
   present in your system.
 
-.. option:: -flto-partition=alg
+.. option:: -flto-partition={alg}
 
   Specify the partitioning algorithm used by the link-time optimizer.
   The value is either :samp:`1to1` to specify a partitioning mirroring
@@ -2369,7 +2369,7 @@ optimizations to be performed is desired.
   used while the value :samp:`none` bypasses partitioning and executes
   the link-time optimization step directly from the WPA phase.
 
-.. option:: -flto-compression-level=n
+.. option:: -flto-compression-level={n}
 
   This option specifies the level of compression used for intermediate
   language written to LTO object files, and is only meaningful in
@@ -2465,7 +2465,7 @@ optimizations to be performed is desired.
   when train run is not representative but also leads to significantly bigger
   code.
 
-.. option:: -fprofile-use, -fprofile-use=path
+.. option:: -fprofile-use, -fprofile-use={path}
 
   Enable profile feedback-directed optimizations, 
   and the following optimizations, many of which
@@ -2491,7 +2491,7 @@ optimizations to be performed is desired.
   If :samp:`{path}` is specified, GCC looks at the :samp:`{path}` to find
   the profile feedback data files. See :option:`-fprofile-dir`.
 
-.. option:: -fauto-profile, -fauto-profile=path
+.. option:: -fauto-profile, -fauto-profile={path}
 
   Enable sampling-based feedback-directed optimizations, 
   and the following optimizations,
@@ -2550,7 +2550,7 @@ correctness.  All must be specifically enabled.
   point.  Use :option:`-ffloat-store` for such programs, after modifying
   them to store all pertinent intermediate computations into variables.
 
-.. option:: -fexcess-precision=style
+.. option:: -fexcess-precision={style}
 
   This option allows further control over excess precision on machines
   where floating-point operations occur in a format with more precision or
@@ -3014,7 +3014,7 @@ section includes experimental options that may produce broken code.
 
   Not all targets support this option.
 
-.. option:: -fzero-call-used-regs=choice
+.. option:: -fzero-call-used-regs={choice}
 
   Zero call-used registers at function return to increase program
   security by either mitigating Return-Oriented Programming (ROP)
@@ -3027,7 +3027,7 @@ section includes experimental options that may produce broken code.
   You can control this behavior for a specific function by using the function
   attribute ``zero_call_used_regs`` (see :ref:`function-attributes`).
 
-.. option:: --param name=value
+.. option:: --param {name}={value}
 
   In some places, GCC uses various constants to control the amount of
   optimization that is done.  For example, GCC does not inline functions

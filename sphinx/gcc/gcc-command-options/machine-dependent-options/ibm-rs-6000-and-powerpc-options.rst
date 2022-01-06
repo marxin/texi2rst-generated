@@ -57,7 +57,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   and to treat GPRs as 64-bit, doubleword quantities.  GCC defaults to
   :option:`-mno-powerpc64`.
 
-.. option:: -mcpu=cpu_type
+.. option:: -mcpu={cpu_type}
 
   Set architecture type, register usage, and
   instruction scheduling parameters for machine type :samp:`{cpu_type}`.
@@ -114,7 +114,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   enable or disable them individually if you're sure it'll work in your
   environment.
 
-.. option:: -mtune=cpu_type
+.. option:: -mtune={cpu_type}
 
   Set the instruction scheduling parameters for machine type
   :samp:`{cpu_type}`, but do not set the architecture type or register usage,
@@ -464,7 +464,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   responsible for initializing this register with an appropriate value
   before execution begins.
 
-.. option:: -mprioritize-restricted-insns=priority
+.. option:: -mprioritize-restricted-insns={priority}
 
   This option controls the priority that is assigned to
   dispatch-slot restricted instructions during the second scheduling
@@ -473,7 +473,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   priority to dispatch-slot restricted
   instructions.
 
-.. option:: -msched-costly-dep=dependence_type
+.. option:: -msched-costly-dep={dependence_type}
 
   This option controls which dependences are considered costly
   by the target during instruction scheduling.  The argument
@@ -495,7 +495,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
     Any dependence for which the latency is greater than or equal to 
     :samp:`{number}` is costly.
 
-.. option:: -minsert-sched-nops=scheme
+.. option:: -minsert-sched-nops={scheme}
 
   This option controls which NOP insertion scheme is used during
   the second scheduling pass.  The argument :samp:`{scheme}` takes one of the
@@ -557,7 +557,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   On System V.4 and embedded PowerPC systems compile code for the
   OpenBSD operating system.
 
-.. option:: -mtraceback=traceback_type
+.. option:: -mtraceback={traceback_type}
 
   Select the type of traceback table. Valid values for :samp:`{traceback_type}`
   are :samp:`full`, :samp:`part`, and :samp:`no`.
@@ -571,7 +571,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   Return structures smaller than 8 bytes in registers (as specified by the
   SVR4 ABI).
 
-.. option:: -mabi=abi-type
+.. option:: -mabi={abi-type}
 
   Extend the current ABI with a particular extension, or remove such extension.
   Valid values are: :samp:`altivec`, :samp:`no-altivec`,
@@ -728,21 +728,21 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Default setting; overrides :option:`-mreadonly-in-sdata`.
 
-.. option:: -mblock-move-inline-limit=num
+.. option:: -mblock-move-inline-limit={num}
 
   Inline all block moves (such as calls to ``memcpy`` or structure
   copies) less than or equal to :samp:`{num}` bytes.  The minimum value for
   :samp:`{num}` is 32 bytes on 32-bit targets and 64 bytes on 64-bit
   targets.  The default value is target-specific.
 
-.. option:: -mblock-compare-inline-limit=num
+.. option:: -mblock-compare-inline-limit={num}
 
   Generate non-looping inline code for all block compares (such as calls
   to ``memcmp`` or structure compares) less than or equal to :samp:`{num}`
   bytes. If :samp:`{num}` is 0, all inline expansion (non-loop and loop) of
   block compare is disabled. The default value is target-specific.
 
-.. option:: -mblock-compare-inline-loop-limit=num
+.. option:: -mblock-compare-inline-loop-limit={num}
 
   Generate an inline expansion using loop code for all block compares that
   are less than or equal to :samp:`{num}` bytes, but greater than the limit
@@ -751,14 +751,14 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   is called to compare the remainder of the block. The default value is
   target-specific.
 
-.. option:: -mstring-compare-inline-limit=num
+.. option:: -mstring-compare-inline-limit={num}
 
   Compare at most :samp:`{num}` string bytes with inline code.
   If the difference or end of string is not found at the
   end of the inline compare a call to ``strcmp`` or ``strncmp`` will
   take care of the rest of the comparison. The default is 64 bytes.
 
-.. option:: -G num
+.. option:: -G {num}
 
   .. index:: smaller data references (PowerPC)
 
@@ -848,7 +848,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   ulp (i.e. the inverse of 1.0 equals 0.99999994) for reciprocal square
   roots.
 
-.. option:: -mrecip=opt
+.. option:: -mrecip={opt}
 
   This option controls which reciprocal estimate instructions
   may be used.  :samp:`{opt}` is a comma-separated list of options, which may
@@ -898,7 +898,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   default on low-precision machines, since they do not provide an
   estimate that converges after three steps.
 
-.. option:: -mveclibabi=type
+.. option:: -mveclibabi={type}
 
   Specifies the ABI type to use for vectorizing intrinsics using an
   external library.  The only type supported at present is :samp:`mass`,
@@ -965,7 +965,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   The :option:`-mno-compat-align-parm` option is the default.
 
-.. option:: -mstack-protector-guard=guard
+.. option:: -mstack-protector-guard={guard}
 
   Generate stack protection code using canary at :samp:`{guard}`.  Supported
   locations are :samp:`global` for global canary or :samp:`tls` for per-thread

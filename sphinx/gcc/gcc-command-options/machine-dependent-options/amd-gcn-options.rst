@@ -14,7 +14,7 @@ AMD GCN Options
 
 These options are defined specifically for the AMD GCN port.
 
-.. option:: -march=gpu
+.. option:: -march={gpu}
 
   Set architecture type or tuning for :samp:`{gpu}`. Supported values for :samp:`{gpu}`
   are
@@ -37,7 +37,7 @@ These options are defined specifically for the AMD GCN port.
   devices.  The compiled code must match the device mode. The default is
   :samp:`any`, for devices that support it.
 
-.. option:: -mstack-size=bytes
+.. option:: -mstack-size={bytes}
 
   Specify how many :samp:`{bytes}` of stack space will be requested for each GPU
   thread (wave-front).  Beware that there may be many threads and limited memory

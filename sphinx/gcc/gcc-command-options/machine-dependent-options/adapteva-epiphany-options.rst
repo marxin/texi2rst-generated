@@ -23,7 +23,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   This can result in increased instruction count, so this may either reduce or
   increase overall code size.
 
-.. option:: -mbranch-cost=num
+.. option:: -mbranch-cost={num}
 
   Set the cost of branches to roughly :samp:`{num}` 'simple' instructions.
   This cost is only a heuristic and is not guaranteed to produce
@@ -33,7 +33,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
   Enable the generation of conditional moves.
 
-.. option:: -mnops=num
+.. option:: -mnops={num}
 
   Emit :samp:`{num}` NOPs before every other generated instruction.
 
@@ -50,7 +50,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
 
   Default setting; overrides :option:`-mno-soft-cmpsf`.
 
-.. option:: -mstack-offset=num
+.. option:: -mstack-offset={num}
 
   Set the offset between the top of the stack and the stack pointer.
   E.g., a value of 8 means that the eight bytes in the range ``sp+0...sp+7``
@@ -92,7 +92,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   apply to function addresses for which :option:`-mlong-calls` semantics
   are in effect.
 
-.. option:: -mfp-mode=mode
+.. option:: -mfp-mode={mode}
 
   Set the prevailing mode of the floating-point unit.
   This determines the floating-point mode that is provided and expected
@@ -139,7 +139,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   Change the preferred SIMD mode to SImode.  The default is
   :option:`-mvect-double`, which uses DImode as preferred SIMD mode.
 
-.. option:: -max-vect-align=num
+.. option:: -max-vect-align={num}
 
   The maximum alignment for SIMD vector mode types.
   :samp:`{num}` may be 4 or 8.  The default is 8.

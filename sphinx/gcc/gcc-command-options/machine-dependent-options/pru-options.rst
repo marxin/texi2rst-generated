@@ -22,7 +22,7 @@ These command-line options are defined for PRU target:
   generate code with static initializers and constructors.  It is up to the
   programmer to ensure that the source program will not use those features.
 
-.. option:: -mmcu=mcu
+.. option:: -mmcu={mcu}
 
   Specify the PRU MCU variant to use.  Check Newlib for the exact list of
   supported MCUs.
@@ -36,7 +36,7 @@ These command-line options are defined for PRU target:
 
   Allow (or do not allow) GCC to use the LOOP instruction.
 
-.. option:: -mabi=variant
+.. option:: -mabi={variant}
 
   Specify the ABI variant to output code for.  :option:`-mabi`:samp:`=ti` selects the
   unmodified TI ABI while :option:`-mabi`:samp:`=gnu` selects a GNU variant that copes

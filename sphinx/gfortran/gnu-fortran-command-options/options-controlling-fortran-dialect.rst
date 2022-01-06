@@ -251,7 +251,7 @@ accepted by the compiler:
   :option:`-ffree-line-length-0` means the same thing as
   :option:`-ffree-line-length-none`.
 
-.. option:: -fmax-identifier-length=n
+.. option:: -fmax-identifier-length={n}
 
   .. index:: fmax-identifier-length=n
 
@@ -425,7 +425,7 @@ accepted by the compiler:
   intermediate representation of the translated Fortran code, produced by
   :option:`-fdump-fortran-original` or :option:`-fdump-tree-original`, is suggested.
 
-.. option:: -std=std
+.. option:: -std={std}
 
   .. index:: std=std option
 

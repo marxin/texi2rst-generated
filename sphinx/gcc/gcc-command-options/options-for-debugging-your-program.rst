@@ -187,7 +187,7 @@ information useful for debugging do not run at all, so that
 
   Default setting; overrides :option:`-fno-merge-debug-strings`.
 
-.. option:: -fdebug-prefix-map=old=new
+.. option:: -fdebug-prefix-map={old}={new}
 
   When compiling files residing in directory :samp:`{old}`, record
   debugging information describing them as if the files resided in
@@ -389,7 +389,7 @@ information useful for debugging do not run at all, so that
   along with statement frontiers, and it is only enabled by default if
   location views are enabled.
 
-.. option:: -gz[=type]
+.. option:: -gz[={type}]
 
   Produce compressed debug sections in DWARF format, if that is supported.
   If :samp:`{type}` is not given, the default type depends on the capabilities
@@ -428,7 +428,7 @@ information useful for debugging do not run at all, so that
 
   This option works only with DWARF debug output.
 
-.. option:: -femit-struct-debug-detailed[=spec-list]
+.. option:: -femit-struct-debug-detailed[={spec-list}]
 
   Specify the struct-like types
   for which the compiler generates debug information.

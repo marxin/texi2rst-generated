@@ -57,7 +57,7 @@ processors.
   Assume that runtime support has been provided and so omit the
   simulator library (:samp:`libsim.a)` from the linker command line.
 
-.. option:: -mstack-increment=size
+.. option:: -mstack-increment={size}
 
   Set the maximum amount for a single stack increment operation.  Large
   values can increase the speed of programs that contain functions

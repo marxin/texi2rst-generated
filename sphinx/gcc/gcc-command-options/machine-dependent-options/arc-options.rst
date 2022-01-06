@@ -27,7 +27,7 @@ is being compiled:
   Force to call a function using jli_s instruction.  This option is
   valid only for ARCv2 architecture.
 
-.. option:: -mcpu=cpu
+.. option:: -mcpu={cpu}
 
   Set architecture type, register usage, and instruction scheduling
   parameters for :samp:`{cpu}`.  There are also shortcut alias options
@@ -205,11 +205,11 @@ is being compiled:
 
   Enable double load/store operations for ARC HS cores.
 
-.. option:: -mtp-regno=regno
+.. option:: -mtp-regno={regno}
 
   Specify thread pointer register number.
 
-.. option:: -mmpy-option=multo
+.. option:: -mmpy-option={multo}
 
   Compile ARCv2 code with a multiplier design option.  You can specify 
   the option using either a string or numeric value for :samp:`{multo}`.  
@@ -258,7 +258,7 @@ is being compiled:
 
     This option is only available for ARCv2 cores.
 
-.. option:: -mfpu=fpu
+.. option:: -mfpu={fpu}
 
   Enables support for specific floating-point hardware extensions for ARCv2
   cores.  Supported values for :samp:`{fpu}` are:
@@ -324,7 +324,7 @@ is being compiled:
     Enables support for all single- and double-precision floating-point
     hardware extensions.  Not available for ARC EM.
 
-.. option:: -mirq-ctrl-saved=register-range, blink, lp_count
+.. option:: -mirq-ctrl-saved={register-range}, {blink}, {lp_count}
 
   Specifies general-purposes registers that the processor automatically
   saves/restores on interrupt entry and exit.  :samp:`{register-range}` is
@@ -333,7 +333,7 @@ is being compiled:
   :samp:`{blink}` and :samp:`{lp_count}` are optional.  This option is only
   valid for ARC EM and ARC HS cores.
 
-.. option:: -mrgf-banked-regs=number
+.. option:: -mrgf-banked-regs={number}
 
   Specifies the number of registers replicated in second register bank
   on entry to fast interrupt.  Fast interrupts are interrupts with the
@@ -342,7 +342,7 @@ is being compiled:
   sequences.  Use this option when you are using fast interrupts in an
   ARC V2 family processor.  Permitted values are 4, 8, 16, and 32.
 
-.. option:: -mlpc-width=width
+.. option:: -mlpc-width={width}
 
   Specify the width of the ``lp_count`` register.  Valid values for
   :samp:`{width}` are 8, 16, 20, 24, 28 and 32 bits.  The default width is
@@ -477,7 +477,7 @@ The following options control the semantics of generated code:
   conditional branch-and-link.  This is the default for tool chains built
   for ``arc-linux-uclibc`` and ``arceb-linux-uclibc`` targets.
 
-.. option:: -G num
+.. option:: -G {num}
 
   Put definitions of externally-visible data in a small data section if
   that data is no bigger than :samp:`{num}` bytes.  The default value of
@@ -627,7 +627,7 @@ The following options fine tune code generation:
   Most ccfsm condexec mostly depends on this.
   This is the default.
 
-.. option:: -msize-level=level
+.. option:: -msize-level={level}
 
   Fine-tune size optimization with regards to instruction lengths and alignment.
   The recognized values for :samp:`{level}` are:
@@ -647,7 +647,7 @@ The following options fine tune code generation:
     This defaults to :samp:`3` when :option:`-Os` is in effect.  Otherwise,
   the behavior when this is not set is equivalent to level :samp:`1`.
 
-.. option:: -mtune=cpu
+.. option:: -mtune={cpu}
 
   Set instruction scheduling parameters for :samp:`{cpu}`, overriding any implied
   by :option:`-mcpu` =.
@@ -672,12 +672,12 @@ The following options fine tune code generation:
   :samp:`ARC750D`
     Tune for ARC750D CPU.
 
-.. option:: -mmultcost=num
+.. option:: -mmultcost={num}
 
   Cost to assume for a multiply instruction, with :samp:`4` being equal to a
   normal instruction.
 
-.. option:: -munalign-prob-threshold=probability
+.. option:: -munalign-prob-threshold={probability}
 
   Does nothing.  Preserved for backward compatibility.
 
@@ -740,13 +740,13 @@ are now deprecated and will be removed in a future release:
 
   Replaced by :option:`-mspfp-fast`.
 
-.. option:: -mtune=cpu
+.. option:: -mtune={cpu}
 
   Values :samp:`arc600`, :samp:`arc601`, :samp:`arc700` and
   :samp:`arc700-xmac` for :samp:`{cpu}` are replaced by :samp:`ARC600`,
   :samp:`ARC601`, :samp:`ARC700` and :samp:`ARC700-xmac` respectively.
 
-.. option:: -multcost=num
+.. option:: -multcost={num}
 
   Replaced by :option:`-mmultcost`.
 

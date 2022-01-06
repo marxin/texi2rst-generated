@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. option:: -D name
+.. option:: -D {name}
 
   Predefine :samp:`{name}` as a macro, with definition ``1``.
 
@@ -28,12 +28,12 @@
   :option:`-include `:samp:`{file}` options are processed after all
   :option:`-D` and :option:`-U` options.
 
-.. option:: -U name
+.. option:: -U {name}
 
   Cancel any previous definition of :samp:`{name}`, either built in or
   provided with a :option:`-D` option.
 
-.. option:: -include file
+.. option:: -include {file}
 
   Process :samp:`{file}` as if ``#include "file"`` appeared as the first
   line of the primary source file.  However, the first directory searched
@@ -45,7 +45,7 @@
   If multiple :option:`-include` options are given, the files are included
   in the order they appear on the command line.
 
-.. option:: -imacros file
+.. option:: -imacros {file}
 
   Exactly like :option:`-include`, except that any output produced by
   scanning :samp:`{file}` is thrown away.  Macros it defines remain defined.
@@ -108,7 +108,7 @@
   :samp:`#include` directive does not in itself determine whether that
   header appears in :option:`-MM` dependency output.
 
-.. option:: -MF file
+.. option:: -MF {file}
 
   When used with :option:`-M` or :option:`-MM`, specifies a
   file to write the dependencies to.  If no :option:`-MF` switch is given
@@ -151,7 +151,7 @@
 
     test.h:
 
-.. option:: -MT target
+.. option:: -MT {target}
 
   Change the target of the rule emitted by dependency generation.  By
   default CPP takes the name of the main input file, deletes any
@@ -168,7 +168,7 @@
 
     $(objpfx)foo.o: foo.c
 
-.. option:: -MQ target
+.. option:: -MQ {target}
 
   Same as :option:`-MT`, but it quotes any characters which are special to
   Make.  -MQ '$(objpfx)foo.o' gives
@@ -255,18 +255,18 @@
 
   When preprocessing, do not shorten system header paths with canonicalization.
 
-.. option:: -fmax-include-depth=depth
+.. option:: -fmax-include-depth={depth}
 
   Set the maximum depth of the nested #include. The default is 200.
 
-.. option:: -ftabstop=width
+.. option:: -ftabstop={width}
 
   Set the distance between tab stops.  This helps the preprocessor report
   correct column numbers in warnings or errors, even if tabs appear on the
   line.  If the value is less than 1 or greater than 100, the option is
   ignored.  The default is 8.
 
-.. option:: -ftrack-macro-expansion[=level]
+.. option:: -ftrack-macro-expansion[={level}]
 
   Track locations of tokens across macro expansions. This allows the
   compiler to emit diagnostic about the current macro expansion stack
@@ -285,7 +285,7 @@
 
   Note that ``-ftrack-macro-expansion=2`` is activated by default.
 
-.. option:: -fmacro-prefix-map=old=new
+.. option:: -fmacro-prefix-map={old}={new}
 
   When preprocessing files residing in directory :samp:`{old}`,
   expand the ``__FILE__`` and ``__BASE_FILE__`` macros as if the
@@ -296,7 +296,7 @@
   ``__builtin_FILE()`` during compilation.  See also
   :option:`-ffile-prefix-map`.
 
-.. option:: -fexec-charset=charset
+.. option:: -fexec-charset={charset}
 
   .. index:: character set, execution
 
@@ -304,7 +304,7 @@
   constants.  The default is UTF-8.  :samp:`{charset}` can be any encoding
   supported by the system's ``iconv`` library routine.
 
-.. option:: -fwide-exec-charset=charset
+.. option:: -fwide-exec-charset={charset}
 
   .. index:: character set, wide execution
 
@@ -315,7 +315,7 @@
   by the system's ``iconv`` library routine; however, you will have
   problems with encodings that do not fit exactly in ``wchar_t``.
 
-.. option:: -finput-charset=charset
+.. option:: -finput-charset={charset}
 
   .. index:: character set, input
 
@@ -346,7 +346,7 @@
 
   Default setting; overrides :option:`-fworking-directory`.
 
-.. option:: -A predicate=answer
+.. option:: -A {predicate}={answer}
 
   Make an assertion with the predicate :samp:`{predicate}` and answer
   :samp:`{answer}`.  This form is preferred to the older form :option:`-A

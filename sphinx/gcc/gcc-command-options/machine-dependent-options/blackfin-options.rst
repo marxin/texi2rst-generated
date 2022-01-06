@@ -12,7 +12,7 @@ Blackfin Options
 
 .. index:: Blackfin Options
 
-.. option:: -mcpu=cpu[-sirevision]
+.. option:: -mcpu={cpu}[-{sirevision}]
 
   Specifies the name of the target Blackfin processor.  Currently, :samp:`{cpu}`
   can be one of :samp:`bf512`, :samp:`bf514`, :samp:`bf516`, :samp:`bf518`,

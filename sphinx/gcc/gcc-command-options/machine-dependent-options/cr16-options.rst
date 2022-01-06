@@ -36,7 +36,7 @@ These options are defined specifically for the CR16 ports.
 
   Generates ``sbit`` / ``cbit`` instructions for bit manipulations.
 
-.. option:: -mdata-model=model
+.. option:: -mdata-model={model}
 
   Choose a data model. The choices for :samp:`{model}` are :samp:`near`,
   :samp:`far` or :samp:`medium`. :samp:`medium` is default.

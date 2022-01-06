@@ -14,7 +14,7 @@ picoChip Options
 
 These :samp:`-m` options are defined for picoChip implementations:
 
-.. option:: -mae=ae_type
+.. option:: -mae={ae_type}
 
   Set the instruction set, register set, and instruction scheduling
   parameters for array element type :samp:`{ae_type}`.  Supported values

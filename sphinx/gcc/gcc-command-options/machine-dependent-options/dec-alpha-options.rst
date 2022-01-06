@@ -66,7 +66,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   normally not specify this option.  Other Alpha compilers call this
   option :option:`-ieee_with_inexact`.
 
-.. option:: -mfp-trap-mode=trap-mode
+.. option:: -mfp-trap-mode={trap-mode}
 
   This option controls what floating-point related traps are enabled.
   Other Alpha compilers call this option :option:`-fptm `:samp:`{trap-mode}`.
@@ -88,7 +88,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   :samp:`sui`
     Like :samp:`su`, but inexact traps are enabled as well.
 
-.. option:: -mfp-rounding-mode=rounding-mode
+.. option:: -mfp-rounding-mode={rounding-mode}
 
   Selects the IEEE rounding mode.  Other Alpha compilers call this option
   :option:`-fprm `:samp:`{rounding-mode}`.  The :samp:`{rounding-mode}` can be one
@@ -112,7 +112,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
     rounding towards plus infinity.  Thus, unless your program modifies the
     :samp:`{fpcr}`, :samp:`d` corresponds to round towards plus infinity.
 
-.. option:: -mtrap-precision=trap-precision
+.. option:: -mtrap-precision={trap-precision}
 
   In the Alpha architecture, floating-point traps are imprecise.  This
   means without software assistance it is impossible to recover from a
@@ -210,7 +210,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   The default is :option:`-mlarge-text`.
 
-.. option:: -mcpu=cpu_type
+.. option:: -mcpu={cpu_type}
 
   Set the instruction set and instruction scheduling parameters for
   machine type :samp:`{cpu_type}`.  You can specify either the :samp:`EV`
@@ -245,7 +245,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   :option:`-mcpu`:samp:`=native` has no effect if GCC does not recognize
   the processor.
 
-.. option:: -mtune=cpu_type
+.. option:: -mtune={cpu_type}
 
   Set only the instruction scheduling parameters for machine type
   :samp:`{cpu_type}`.  The instruction set is not changed.
@@ -255,7 +255,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
   :option:`-mtune`:samp:`=native` has no effect if GCC does not recognize
   the processor.
 
-.. option:: -mmemory-latency=time
+.. option:: -mmemory-latency={time}
 
   Sets the latency the scheduler should assume for typical memory
   references as seen by the application.  This number is highly

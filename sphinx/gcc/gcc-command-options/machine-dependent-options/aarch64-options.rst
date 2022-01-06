@@ -14,7 +14,7 @@ AArch64 Options
 
 These options are defined for AArch64 implementations:
 
-.. option:: -mabi=name
+.. option:: -mabi={name}
 
   Generate code for the specified data model.  Permissible values
   are :samp:`ilp32` for SysV-like data model where int, long int and pointers
@@ -70,7 +70,7 @@ These options are defined for AArch64 implementations:
   Omit or keep the frame pointer in leaf functions.  The former behavior is the
   default.
 
-.. option:: -mstack-protector-guard=guard
+.. option:: -mstack-protector-guard={guard}
 
   Generate stack protection code using canary at :samp:`{guard}`.  Supported
   locations are :samp:`global` for a global canary or :samp:`sysreg` for a
@@ -94,7 +94,7 @@ These options are defined for AArch64 implementations:
   Use traditional TLS as the thread-local storage mechanism for dynamic accesses
   of TLS variables.
 
-.. option:: -mtls-size=size
+.. option:: -mtls-size={size}
 
   Specify bit size of immediate TLS offsets.  Valid values are 12, 24, 32, 48.
   This option requires binutils 2.26 or newer.
@@ -156,7 +156,7 @@ These options are defined for AArch64 implementations:
   selected cpu supports the :samp:`lse` feature.
   This option is on by default.
 
-.. option:: -march=name
+.. option:: -march={name}
 
   Specify the name of the target architecture and, optionally, one or
   more feature modifiers.  This option has the form
@@ -195,7 +195,7 @@ These options are defined for AArch64 implementations:
   specified, the code is tuned to perform well across a range of target
   processors implementing the target architecture.
 
-.. option:: -mtune=name
+.. option:: -mtune={name}
 
   Specify the name of the target processor for which GCC should tune the
   performance of the code.  Permissible values for this option are:
@@ -246,7 +246,7 @@ These options are defined for AArch64 implementations:
 
   This option cannot be suffixed by feature modifiers.
 
-.. option:: -mcpu=name
+.. option:: -mcpu={name}
 
   Specify the name of the target processor, optionally suffixed by one
   or more feature modifiers.  This option has the form
@@ -274,7 +274,7 @@ These options are defined for AArch64 implementations:
   :option:`-mcpu`:samp:`=neoverse-512tvb` tunes code in the same way as for
   :option:`-mtune`:samp:`=neoverse-512tvb`.
 
-.. option:: -moverride=string
+.. option:: -moverride={string}
 
   Override tuning decisions made by the back-end in response to a
   :option:`-mtune` = switch.  The syntax, semantics, and accepted values
@@ -295,7 +295,7 @@ These options are defined for AArch64 implementations:
   limits the maximum size of functions to 1MB.  This is enabled by default for
   :option:`-mcmodel`:samp:`=tiny`.
 
-.. option:: -msign-return-address=scope
+.. option:: -msign-return-address={scope}
 
   Select the function scope on which return address signing will be applied.
   Permissible values are :samp:`none`, which disables return address signing,
@@ -304,7 +304,7 @@ These options are defined for AArch64 implementations:
   default value is :samp:`none`. This option has been deprecated by
   -mbranch-protection.
 
-.. option:: -mbranch-protection=none|standard|pac-ret[+leaf+b-key]|bti
+.. option:: -mbranch-protection={none}|{standard}|{pac-ret}[+{leaf}+{b-key}]|{bti}
 
   Select the branch protection features to use.
   :samp:`none` is the default and turns off all types of branch protection.
@@ -319,7 +319,7 @@ These options are defined for AArch64 implementations:
   with the B-key instead of the A-key.
   :samp:`bti` turns on branch target identification mechanism.
 
-.. option:: -mharden-sls=opts
+.. option:: -mharden-sls={opts}
 
   Enable compiler hardening against straight line speculation (SLS).
   :samp:`{opts}` is a comma-separated list of the following options:
@@ -327,7 +327,7 @@ These options are defined for AArch64 implementations:
   :samp:`retbr`:samp:`blr`In addition, :samp:`-mharden-sls=all` enables all SLS hardening while
   :samp:`-mharden-sls=none` disables all SLS hardening.
 
-.. option:: -msve-vector-bits=bits
+.. option:: -msve-vector-bits={bits}
 
   Specify the number of bits in an SVE vector register.  This option only has
   an effect when SVE is enabled.

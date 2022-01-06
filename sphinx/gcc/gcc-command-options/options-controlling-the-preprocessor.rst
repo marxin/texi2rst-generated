@@ -41,7 +41,7 @@ Options to control preprocessor diagnostics are listed in
   you should avoid using :option:`-Wp` and let the driver handle the
   options instead.
 
-.. option:: -Xpreprocessor option
+.. option:: -Xpreprocessor {option}
 
   Pass :samp:`{option}` as an option to the preprocessor.  You can use this to
   supply system-specific preprocessor options that GCC does not 

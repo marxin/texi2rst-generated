@@ -17,7 +17,7 @@ The default settings depend on which architecture was selected when
 the compiler was configured; the defaults for the most common choices
 are given below.
 
-.. option:: -march=arch
+.. option:: -march={arch}
 
   Generate code for a specific M680x0 or ColdFire instruction set
   architecture.  Permissible values of :samp:`{arch}` for M680x0
@@ -35,7 +35,7 @@ are given below.
   that runs on a family of similar processors but that is optimized
   for a particular microarchitecture.
 
-.. option:: -mcpu=cpu
+.. option:: -mcpu={cpu}
 
   Generate code for a specific M680x0 or ColdFire processor.
   The M680x0 :samp:`{cpu}` s are: :samp:`68000`, :samp:`68010`, :samp:`68020`,
@@ -78,7 +78,7 @@ are given below.
   :samp:`{cpu}` is selected.  It also defines ``__mcf_family_family``,
   where the value of :samp:`{family}` is given by the table above.
 
-.. option:: -mtune=tune
+.. option:: -mtune={tune}
 
   Tune the code for a particular microarchitecture within the
   constraints set by :option:`-march` and :option:`-mcpu`.

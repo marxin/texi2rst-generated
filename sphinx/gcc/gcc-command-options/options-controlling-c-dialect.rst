@@ -189,7 +189,7 @@ accepts:
     and will almost certainly change in incompatible ways in future
     releases.
 
-.. option:: -aux-info filename
+.. option:: -aux-info {filename}
 
   Output to the given filename prototyped declarations for all functions
   declared and/or defined in a translation unit, including those in header
@@ -388,7 +388,7 @@ accepts:
   run the compiler with :option:`-v` to show the list of configured offload targets
   under ``OFFLOAD_TARGET_NAMES``.
 
-.. option:: -foffload-options=options
+.. option:: -foffload-options={options}
 
   .. index:: Offloading options
 
@@ -420,7 +420,7 @@ accepts:
   implies :option:`-pthread`, and thus is only supported on targets that
   have support for :option:`-pthread`.
 
-.. option:: -fopenacc-dim=geom
+.. option:: -fopenacc-dim={geom}
 
   .. index:: OpenACC accelerator programming
 
@@ -451,7 +451,7 @@ accepts:
   in C/C++ and ``!$omp`` in Fortran. Other OpenMP directives
   are ignored.
 
-.. option:: -fpermitted-flt-eval-methods=style
+.. option:: -fpermitted-flt-eval-methods={style}
 
   ISO/IEC TS 18661-3 defines new permissible values for
   ``FLT_EVAL_METHOD`` that indicate that operations and constants with
@@ -517,7 +517,7 @@ accepts:
   ``signed char`` or ``unsigned char``, even though its behavior
   is always just like one of those two.
 
-.. option:: -fsso-struct=endianness
+.. option:: -fsso-struct={endianness}
 
   Set the default scalar storage order of structures and unions to the
   specified endianness.  The accepted values are :samp:`big-endian`,

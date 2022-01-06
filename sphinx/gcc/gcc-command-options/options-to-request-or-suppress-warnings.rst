@@ -29,7 +29,7 @@ warnings but control the kinds of diagnostics produced by GCC.
 
   Check the code for syntax errors, but don't do anything beyond that.
 
-.. option:: -fmax-errors=n
+.. option:: -fmax-errors={n}
 
   Limits the maximum number of error messages to :samp:`{n}`, at which point
   GCC bails out rather than attempting to continue processing the source
@@ -526,7 +526,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wduplicate-decl-specifier`.
 
-.. option:: -Wformat, -Wformat=n
+.. option:: -Wformat, -Wformat={n}
 
   Check calls to ``printf`` and ``scanf``, etc., to make sure that
   the arguments supplied have types appropriate to the format string
@@ -598,7 +598,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wno-format-extra-args`.
 
-.. option:: -Wformat-overflow, -Wformat-overflow=level
+.. option:: -Wformat-overflow, -Wformat-overflow={level}
 
   Warn about calls to formatted input/output functions such as ``sprintf``
   and ``vsprintf`` that might overflow the destination buffer.  When the
@@ -723,7 +723,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wformat-signedness`.
 
-.. option:: -Wformat-truncation, -Wformat-truncation=level
+.. option:: -Wformat-truncation, -Wformat-truncation={level}
 
   Warn about calls to formatted input/output functions such as ``snprintf``
   and ``vsnprintf`` that might result in output truncation.  When the exact
@@ -888,7 +888,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wimplicit-fallthrough`.
 
-.. option:: -Wimplicit-fallthrough=n
+.. option:: -Wimplicit-fallthrough={n}
 
   Warn when a switch case falls through.  For example:
 
@@ -1440,7 +1440,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wshift-negative-value`.
 
-.. option:: -Wno-shift-overflow, -Wshift-overflow=n
+.. option:: -Wno-shift-overflow, -Wshift-overflow={n}
 
   These options control warnings about left shift overflows.
 
@@ -1677,7 +1677,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wunused-variable`.
 
-.. option:: -Wunused-const-variable, -Wunused-const-variable=n
+.. option:: -Wunused-const-variable, -Wunused-const-variable={n}
 
   Warn whenever a constant static variable is unused aside from its declaration.
   :option:`-Wunused-const-variable`:samp:`=1` is enabled by :option:`-Wunused-variable`
@@ -1946,7 +1946,7 @@ warn at all unless optimization is enabled.
   Only warns when the converted pointer is dereferenced.
   Does not warn about incomplete types.
 
-.. option:: -Wstrict-overflow, -Wstrict-overflow=n
+.. option:: -Wstrict-overflow, -Wstrict-overflow={n}
 
   This option is only active when signed overflow is undefined.
   It warns about cases where the compiler optimizes based on the
@@ -2028,7 +2028,7 @@ warn at all unless optimization is enabled.
   Default setting; overrides :option:`-Wstring-compare`.
 
 ``-Wno-stringop-overflow``
-.. option:: -Wstringop-overflow, -Wstringop-overflow=type
+.. option:: -Wstringop-overflow, -Wstringop-overflow={type}
 
   Warn for calls to string manipulation functions such as ``memcpy`` and
   ``strcpy`` that are determined to overflow the destination buffer.  The
@@ -2245,7 +2245,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Walloc-zero`.
 
-.. option:: -Walloc-size-larger-than=byte-size
+.. option:: -Walloc-size-larger-than={byte-size}
 
   Warn about calls to functions decorated with attribute ``alloc_size``
   that attempt to allocate objects larger than the specified number of bytes,
@@ -2271,7 +2271,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Walloca`.
 
-.. option:: -Walloca-larger-than=byte-size
+.. option:: -Walloca-larger-than={byte-size}
 
   This option warns on calls to ``alloca`` with an integer argument whose
   value is either zero, or that is not bounded by a controlling predicate
@@ -2362,7 +2362,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Warith-conversion`.
 
-.. option:: -Warray-bounds, -Warray-bounds=n
+.. option:: -Warray-bounds, -Warray-bounds={n}
 
   This option is only active when :option:`-ftree-vrp` is active
   (default for :option:`-O2` and above). It warns about subscripts to arrays
@@ -2399,7 +2399,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Warray-compare`.
 
-.. option:: -Warray-parameter, -Warray-parameter=n
+.. option:: -Warray-parameter, -Warray-parameter={n}
 
   Warn about redeclarations of functions involving arguments of array or
   pointer types of inconsistent kinds or forms, and enable the detection
@@ -2450,7 +2450,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Warray-parameter`.
 
-.. option:: -Wattribute-alias=n
+.. option:: -Wattribute-alias={n}
 
   Warn about declarations using the ``alias`` and similar attributes whose
   target is incompatible with the type of the alias.
@@ -2932,7 +2932,7 @@ warn at all unless optimization is enabled.
 
   This warning is also enabled by :option:`-Wshadow`:samp:`=local`.
 
-.. option:: -Wlarger-than=byte-size
+.. option:: -Wlarger-than={byte-size}
 
   .. index:: Wlarger-than-byte-size
 
@@ -2951,7 +2951,7 @@ warn at all unless optimization is enabled.
   Disable :option:`-Wlarger-than` = warnings.  The option is equivalent
   to :option:`-Wlarger-than`:samp:`=SIZE_MAX` or larger.
 
-.. option:: -Wframe-larger-than=byte-size
+.. option:: -Wframe-larger-than={byte-size}
 
   Warn if the size of a function frame exceeds :samp:`{byte-size}`.
   The computation done to determine the stack frame size is approximate
@@ -2995,7 +2995,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wfree-nonheap-object`.
 
-.. option:: -Wstack-usage=byte-size
+.. option:: -Wstack-usage={byte-size}
 
   Warn if the stack usage of a function might exceed :samp:`{byte-size}`.
   The computation done to determine the stack usage is conservative.
@@ -4509,7 +4509,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wvla`.
 
-.. option:: -Wvla-larger-than=byte-size
+.. option:: -Wvla-larger-than={byte-size}
 
   If this option is used, the compiler warns for declarations of
   variable-length arrays whose size is either unbounded, or bounded
