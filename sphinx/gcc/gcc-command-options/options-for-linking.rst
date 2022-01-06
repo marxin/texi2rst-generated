@@ -30,7 +30,7 @@ not doing a link step.
   If any of these options is used, then the linker is not run, and
   object file names should not be used as arguments.  See :ref:`overall-options`.
 
-.. option:: -flinker-output=type
+.. option:: -flinker-output={type}
 
   This option controls code generation of the link-time optimizer.  By
   default the linker output is automatically determined by the linker
@@ -96,7 +96,7 @@ not doing a link step.
 
   .. index:: Libraries
 
-.. option:: -llibrary, -l library
+.. option:: -llibrary, -l {library}
 
   Search the library named :samp:`{library}` when linking.  (The second
   alternative with the library as a separate argument is only for
@@ -200,7 +200,7 @@ not doing a link step.
   (An example of such an internal subroutine is ``__main``, used to ensure C++
   constructors are called; see :ref:`gccint:collect2`.)
 
-.. option:: -e entry, --entry=entry
+.. option:: -e {entry}, --entry={entry}
 
   Specify that the program entry point is :samp:`{entry}`.  The argument is
   interpreted by the linker; the GNU linker accepts either a symbol name
@@ -365,7 +365,7 @@ not doing a link step.
   option :option:`-Xlinker -z -Xlinker defs`).  Only a few systems support
   this option.
 
-.. option:: -T script
+.. option:: -T {script}
 
   .. index:: linker script
 
@@ -374,7 +374,7 @@ not doing a link step.
   targets without an operating system, the :option:`-T` option may be required
   when linking to avoid references to undefined symbols.
 
-.. option:: -Xlinker option
+.. option:: -Xlinker {option}
 
   Pass :samp:`{option}` as an option to the linker.  You can use this to
   supply system-specific linker options that GCC does not recognize.
@@ -402,13 +402,13 @@ not doing a link step.
   linker.  When using the GNU linker, you can also get the same effect with
   :option:`-Wl,-Map`:samp:`=output.map`.
 
-.. option:: -u symbol
+.. option:: -u {symbol}
 
   Pretend the symbol :samp:`{symbol}` is undefined, to force linking of
   library modules to define it.  You can use :option:`-u` multiple times with
   different symbols to force loading of additional library modules.
 
-.. option:: -z keyword
+.. option:: -z {keyword}
 
   :option:`-z` is passed directly on to the linker along with the keyword
   :samp:`{keyword}`. See the section in the documentation of your linker for

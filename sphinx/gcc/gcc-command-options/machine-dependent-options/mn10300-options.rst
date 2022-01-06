@@ -41,7 +41,7 @@ These :option:`-m` options are defined for Matsushita MN10300 architectures:
 
   Generate code using features specific to the AM34 processor.
 
-.. option:: -mtune=cpu-type
+.. option:: -mtune={cpu-type}
 
   Use the timing characteristics of the indicated CPU type when
   scheduling instructions.  This does not change the targeted processor

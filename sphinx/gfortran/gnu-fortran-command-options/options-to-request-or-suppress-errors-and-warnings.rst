@@ -40,7 +40,7 @@ two forms, whichever is not the default.
 These options control the amount and kinds of errors and warnings produced
 by GNU Fortran:
 
-.. option:: -fmax-errors=n
+.. option:: -fmax-errors={n}
 
   .. index:: fmax-errors=n
 

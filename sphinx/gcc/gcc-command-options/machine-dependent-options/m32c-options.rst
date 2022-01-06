@@ -12,7 +12,7 @@ M32C Options
 
 .. index:: M32C options
 
-.. option:: -mcpu=name
+.. option:: -mcpu={name}
 
   Select the CPU for which code is generated.  :samp:`{name}` may be one of
   :samp:`r8c` for the R8C/Tiny series, :samp:`m16c` for the M16C (up to
@@ -27,7 +27,7 @@ M32C Options
   programs that will run on real hardware; you must provide your own
   runtime library for whatever I/O functions are needed.
 
-.. option:: -memregs=number
+.. option:: -memregs={number}
 
   Specifies the number of memory-based pseudo-registers GCC uses
   during code generation.  These pseudo-registers are used like real

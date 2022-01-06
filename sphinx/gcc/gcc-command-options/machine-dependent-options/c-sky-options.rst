@@ -14,13 +14,13 @@ C-SKY Options
 
 GCC supports these options when compiling for C-SKY V2 processors.
 
-.. option:: -march=arch
+.. option:: -march={arch}
 
   Specify the C-SKY target architecture.  Valid values for :samp:`{arch}` are:
   :samp:`ck801`, :samp:`ck802`, :samp:`ck803`, :samp:`ck807`, and :samp:`ck810`.
   The default is :samp:`ck810`.
 
-.. option:: -mcpu=cpu
+.. option:: -mcpu={cpu}
 
   Specify the C-SKY target processor.  Valid values for :samp:`{cpu}` are:
   :samp:`ck801`, :samp:`ck801t`,
@@ -44,7 +44,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
 
   Select big- or little-endian code.  The default is little-endian.
 
-.. option:: -mfloat-abi=name
+.. option:: -mfloat-abi={name}
 
   Specifies which floating-point ABI to use.  Permissible values
   are: :samp:`soft`, :samp:`softfp` and :samp:`hard`.
@@ -78,7 +78,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   ``frecipd``, ``fsqrtd``, and ``fdivd`` instructions.
   This is the default except when compiling for CK803.
 
-.. option:: -mfpu=fpu
+.. option:: -mfpu={fpu}
 
   Select the floating-point processor.  This option can only be used with
   :option:`-mhard-float`.
@@ -176,7 +176,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   Generate code for the C-SKY compiler runtime instead of libgcc.  This
   option defaults to off.
 
-.. option:: -mbranch-cost=n
+.. option:: -mbranch-cost={n}
 
   Set the branch costs to roughly ``n`` instructions.  The default is 1.
 

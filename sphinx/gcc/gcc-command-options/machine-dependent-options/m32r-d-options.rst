@@ -71,7 +71,7 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
   Put small global and static data in the small data area, and generate
   special instructions to reference them.
 
-.. option:: -G num
+.. option:: -G {num}
 
   .. index:: smaller data references
 
@@ -99,21 +99,21 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 
   Do not enforce a 32-byte alignment for loops.  This is the default.
 
-.. option:: -missue-rate=number
+.. option:: -missue-rate={number}
 
   .. index:: missue-rate=number
 
   Issue :samp:`{number}` instructions per cycle.  :samp:`{number}` can only be 1
   or 2.
 
-.. option:: -mbranch-cost=number
+.. option:: -mbranch-cost={number}
 
   .. index:: mbranch-cost=number
 
   :samp:`{number}` can only be 1 or 2.  If it is 1 then branches are
   preferred over conditional code, if it is 2, then the opposite applies.
 
-.. option:: -mflush-trap=number
+.. option:: -mflush-trap={number}
 
   .. index:: mflush-trap=number
 
@@ -124,7 +124,7 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 
   Specifies that the cache cannot be flushed by using a trap.
 
-.. option:: -mflush-func=name
+.. option:: -mflush-func={name}
 
   .. index:: mflush-func=name
 

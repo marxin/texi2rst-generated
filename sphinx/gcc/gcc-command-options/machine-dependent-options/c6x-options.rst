@@ -12,7 +12,7 @@ C6X Options
 
 .. index:: C6X Options
 
-.. option:: -march=name
+.. option:: -march={name}
 
   This specifies the name of the target architecture.  GCC uses this
   name to determine what kind of instructions it can emit when generating

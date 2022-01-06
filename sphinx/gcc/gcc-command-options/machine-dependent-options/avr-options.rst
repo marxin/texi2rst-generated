@@ -14,7 +14,7 @@ AVR Options
 
 These options are defined for AVR implementations:
 
-.. option:: -mmcu=mcu
+.. option:: -mmcu={mcu}
 
   Specify Atmel AVR instruction set architectures (ISA) or MCU type.
 
@@ -137,7 +137,7 @@ These options are defined for AVR implementations:
   several calls to functions that get their arguments on the stack like
   calls to printf-like functions.
 
-.. option:: -mbranch-cost=cost
+.. option:: -mbranch-cost={cost}
 
   Set the branch costs for conditional branch instructions to
   :samp:`{cost}`.  Reasonable values for :samp:`{cost}` are small, non-negative
@@ -148,7 +148,7 @@ These options are defined for AVR implementations:
   Functions prologues/epilogues are expanded as calls to appropriate
   subroutines.  Code size is smaller.
 
-.. option:: -mdouble=bits
+.. option:: -mdouble={bits}
 
   Set the size (in bits) of the ``double`` or ``long double`` type,
   respectively.  Possible values for :samp:`{bits}` are 32 and 64.
@@ -181,7 +181,7 @@ These options are defined for AVR implementations:
   attaching attribute :ref:`avr-function-attributes`
   to ``main``. It is activated per default if optimization is on.
 
-.. option:: -mn-flash=num
+.. option:: -mn-flash={num}
 
   Assume that the flash memory has a size of 
   :samp:`{num}` times 64 KiB.

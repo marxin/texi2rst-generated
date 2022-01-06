@@ -70,7 +70,7 @@ Fortran source.
 
   The default is the current directory.
 
-.. option:: -fintrinsic-modules-path dir
+.. option:: -fintrinsic-modules-path {dir}
 
   .. index:: fintrinsic-modules-pathdir
 

@@ -28,7 +28,7 @@ MeP Options
   Enables the ``ave`` instruction, which computes the average of two
   registers.
 
-.. option:: -mbased=n
+.. option:: -mbased={n}
 
   Variables of size :samp:`{n}` bytes or smaller are placed in the
   ``.based`` section by default.  Based variables use the ``$tp``
@@ -41,7 +41,7 @@ MeP Options
   (``bsetm``), clear (``bclrm``), invert (``bnotm``), and
   test-and-set (``tas``).
 
-.. option:: -mc=name
+.. option:: -mc={name}
 
   Selects which section constant data is placed in.  :samp:`{name}` may
   be :samp:`tiny`, :samp:`near`, or :samp:`far`.
@@ -51,7 +51,7 @@ MeP Options
   Enables the ``clip`` instruction.  Note that :option:`-mclip` is not
   useful unless you also provide :option:`-mminmax`.
 
-.. option:: -mconfig=name
+.. option:: -mconfig={name}
 
   Selects one of the built-in core configurations.  Each MeP chip has
   one or more modules in it; each module has a core CPU and a variety of
@@ -159,7 +159,7 @@ MeP Options
   Causes all functions to default to the ``.far`` section.  Without
   this option, functions default to the ``.near`` section.
 
-.. option:: -mtiny=n
+.. option:: -mtiny={n}
 
   Variables that are :samp:`{n}` bytes or smaller are allocated to the
   ``.tiny`` section.  These variables use the ``$gp`` base

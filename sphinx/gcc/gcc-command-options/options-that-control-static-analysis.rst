@@ -453,7 +453,7 @@ The following options control the analyzer.
 
   Default setting; overrides :option:`-fanalyzer-call-summaries`.
 
-.. option:: -fanalyzer-checker=name
+.. option:: -fanalyzer-checker={name}
 
   Restrict the analyzer to run just the named checker, and enable it.
 

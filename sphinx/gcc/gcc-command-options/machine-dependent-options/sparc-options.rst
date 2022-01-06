@@ -120,7 +120,7 @@ These :samp:`-m` options are supported on the SPARC:
   Enable Local Register Allocation.  This is the default for SPARC since GCC 7
   so :option:`-mno-lra` needs to be passed to get old Reload.
 
-.. option:: -mcpu=cpu_type
+.. option:: -mcpu={cpu_type}
 
   Set the instruction set, register set, and instruction scheduling parameters
   for machine type :samp:`{cpu_type}`.  Supported values for :samp:`{cpu_type}` are
@@ -203,7 +203,7 @@ These :samp:`-m` options are supported on the SPARC:
   Oracle SPARC M7 chips.  With :option:`-mcpu`:samp:`=m8`, the compiler
   additionally optimizes it for Oracle M8 chips.
 
-.. option:: -mtune=cpu_type
+.. option:: -mtune={cpu_type}
 
   Set the instruction scheduling parameters for machine type
   :samp:`{cpu_type}`, but do not set the instruction set or register set that the
@@ -330,7 +330,7 @@ on SPARC-V9 processors in 64-bit environments:
   The 64-bit environment sets int to 32 bits and long and pointer
   to 64 bits.
 
-.. option:: -mcmodel=which
+.. option:: -mcmodel={which}
 
   Set the code model to one of
 
@@ -358,7 +358,7 @@ on SPARC-V9 processors in 64-bit environments:
     global register %g4 points to the base of the data segment.  Programs
     are statically linked and PIC is not supported.
 
-.. option:: -mmemory-model=mem-model
+.. option:: -mmemory-model={mem-model}
 
   Set the memory model in force on the processor to one of
 

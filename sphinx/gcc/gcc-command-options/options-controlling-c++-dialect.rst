@@ -33,7 +33,7 @@ See :ref:`c-dialect-options`.
 
 Here is a list of options that are *only* for compiling C++ programs:
 
-.. option:: -fabi-version=n
+.. option:: -fabi-version={n}
 
   Use version :samp:`{n}` of the C++ ABI.  The default is version 0.
 
@@ -100,7 +100,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   See also :option:`-Wabi`.
 
-.. option:: -fabi-compat-version=n
+.. option:: -fabi-compat-version={n}
 
   On targets that support strong aliases, G++
   works around mangling changes by creating an alias with the correct
@@ -210,14 +210,14 @@ Here is a list of options that are *only* for compiling C++ programs:
   constructs that were allowed in the TS but didn't make it into the
   standard can still be enabled by :option:`-fconcepts-ts`.
 
-.. option:: -fconstexpr-depth=n
+.. option:: -fconstexpr-depth={n}
 
   Set the maximum nested evaluation depth for C++11 constexpr functions
   to :samp:`{n}`.  A limit is needed to detect endless recursion during
   constant expression evaluation.  The minimum specified by the standard
   is 512.
 
-.. option:: -fconstexpr-cache-depth=n
+.. option:: -fconstexpr-cache-depth={n}
 
   Set the maximum level of nested evaluation depth for C++11 constexpr
   functions that will be cached to :samp:`{n}`.  This is a heuristic that
@@ -242,13 +242,13 @@ Here is a list of options that are *only* for compiling C++ programs:
 
     constexpr float inf = 1./0.; // OK with -fconstexpr-fp-except
 
-.. option:: -fconstexpr-loop-limit=n
+.. option:: -fconstexpr-loop-limit={n}
 
   Set the maximum number of iterations for a loop in C++14 constexpr functions
   to :samp:`{n}`.  A limit is needed to detect infinite loops during
   constant expression evaluation.  The default is 262144 (1<<18).
 
-.. option:: -fconstexpr-ops-limit=n
+.. option:: -fconstexpr-ops-limit={n}
 
   Set the maximum number of operations during a single constexpr evaluation.
   Even when number of iterations of a single loop is limited with the above limit,
@@ -392,7 +392,7 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Default setting; overrides :option:`-fno-module-lazy`.
 
-.. option:: -fmodule-mapper=[hostname]:port[?ident]
+.. option:: -fmodule-mapper=[{hostname}]:{port}[?{ident}]
 
   .. index:: CXX_MODULE_MAPPER environment variable
 
@@ -542,12 +542,12 @@ Here is a list of options that are *only* for compiling C++ programs:
   access and shift expressions, and is the default without
   :option:`-std`:samp:`=c++17`.
 
-.. option:: -ftemplate-backtrace-limit=n
+.. option:: -ftemplate-backtrace-limit={n}
 
   Set the maximum number of template instantiation notes for a single
   warning or error to :samp:`{n}`.  The default value is 10.
 
-.. option:: -ftemplate-depth=n
+.. option:: -ftemplate-depth={n}
 
   Set the maximum instantiation depth for template classes to :samp:`{n}`.
   A limit on the template instantiation depth is needed to detect
@@ -680,7 +680,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   C++, but do still search the other standard directories.  (This option
   is used when building the C++ library.)
 
-.. option:: -flang-info-include-translate, -flang-info-include-translate-not, -flang-info-include-translate=header
+.. option:: -flang-info-include-translate, -flang-info-include-translate-not, -flang-info-include-translate={header}
 
   Inform of include translation events.  The first will note accepted
   include translations, the second will note declined include
@@ -689,7 +689,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   the form ``"user"`` or ``<system>`` it will be resolved to a
   specific user or system header using the include path.
 
-.. option:: -flang-info-module-cmi, -flang-info-module-cmi=module
+.. option:: -flang-info-module-cmi, -flang-info-module-cmi={module}
 
   Inform of Compiled Module Interface pathnames.  The first will note
   all read CMI pathnames.  The :samp:`{module}` form will not reading a
@@ -697,7 +697,7 @@ Here is a list of options that are *only* for compiling C++ programs:
   header-unit (the latter indicated by either being a pathname containing
   directory separators or enclosed in ``<>`` or ``""``).
 
-.. option:: -stdlib=libstdc++,libc++
+.. option:: -stdlib={libstdc++,libc++}
 
   When G++ is configured to support this option, it allows specification of
   alternate C++ runtime libraries.  Two options are available: :samp:`{libstdc++}`
@@ -1719,7 +1719,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Waligned-new`.
 
-.. option:: -Wno-placement-new, -Wplacement-new=n
+.. option:: -Wno-placement-new, -Wplacement-new={n}
 
   Warn about placement new expressions with undefined behavior, such as
   constructing an object in a buffer that is smaller than the type of
@@ -1766,7 +1766,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Wno-placement-new`.
 
-.. option:: -Wcatch-value, -Wcatch-value=n(C++ and Objective-C++ only)
+.. option:: -Wcatch-value, -Wcatch-value={n}(C++ and Objective-C++ only)
 
   Warn about catch handlers that do not catch via reference.
   With :option:`-Wcatch-value`:samp:`=1` (or :option:`-Wcatch-value` for short)

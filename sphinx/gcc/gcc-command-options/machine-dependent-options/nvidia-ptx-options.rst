@@ -21,13 +21,13 @@ These options are defined for Nvidia PTX:
   Ignored, but preserved for backward compatibility.  Only 64-bit ABI is
   supported.
 
-.. option:: -misa=ISA-string
+.. option:: -misa={ISA-string}
 
   Generate code for given the specified PTX ISA (e.g. :samp:`sm_35`).  ISA
   strings must be lower-case.  Valid ISA strings include :samp:`sm_30` and
   :samp:`sm_35`.  The default ISA is sm_35.
 
-.. option:: -mptx=version-string
+.. option:: -mptx={version-string}
 
   Generate code for given the specified PTX version (e.g. :samp:`6.3`).
   Valid version strings include :samp:`3.1` and :samp:`6.3`.  The default PTX

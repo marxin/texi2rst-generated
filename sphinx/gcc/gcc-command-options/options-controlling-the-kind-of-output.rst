@@ -176,7 +176,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   .. index:: output file option
 
-.. option:: -o file
+.. option:: -o {file}
 
   Place the primary output in file :samp:`{file}`.  This applies to whatever
   sort of output is being produced, whether it be an executable file, an
@@ -246,7 +246,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :option:`-dumpdir`, :option:`-save-temps`:samp:`=cwd`, and
   :option:`-save-temps`:samp:`=obj`.
 
-.. option:: -dumpbase dumpbase
+.. option:: -dumpbase {dumpbase}
 
   This option sets the base name for auxiliary and dump output files.  It
   does not affect the name of the primary output file.  Intermediate
@@ -334,7 +334,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   linking will use :samp:`dir/foobar.` as the prefix for dumps and
   auxiliary files.
 
-.. option:: -dumpbase-ext auxdropsuf
+.. option:: -dumpbase-ext {auxdropsuf}
 
   When forming the name of an auxiliary (but not a dump) output file, drop
   trailing :samp:`{auxdropsuf}` from :samp:`{dumpbase}` before appending any
@@ -367,7 +367,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :samp:`main-foo.*` and :samp:`main-bar.*` and dump outputs named
   :samp:`main-foo.c.*` and :samp:`main-bar.c.*`.
 
-.. option:: -dumpdir dumppfx
+.. option:: -dumpdir {dumppfx}
 
   When forming the name of an auxiliary or dump output file, use
   :samp:`{dumppfx}` as a prefix:
@@ -651,7 +651,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   the assembler is unable to read from a pipe; but the GNU assembler has
   no trouble.
 
-.. option:: -specs=file
+.. option:: -specs={file}
 
   Process :samp:`{file}` after the compiler reads in the standard :samp:`specs`
   file, in order to override the defaults which the :command:`gcc` driver
@@ -675,7 +675,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :samp:`gdb --args`, thus the invocation of :command:`cc1` is
   :samp:`gdb --args cc1 ...`.
 
-.. option:: -ffile-prefix-map=old=new
+.. option:: -ffile-prefix-map={old}={new}
 
   When compiling files residing in directory :samp:`{old}`, record
   any references to them in the result of the compilation as if the
@@ -686,7 +686,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :option:`-fmacro-prefix-map`, :option:`-fdebug-prefix-map` and
   :option:`-fprofile-prefix-map`.
 
-.. option:: -fplugin=name.so
+.. option:: -fplugin={name}.so
 
   Load the plugin code in file :samp:`{name}`.so, assumed to be a
   shared object to be dlopen'd by the compiler.  The base name of
@@ -696,7 +696,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   Each plugin should define the callback functions specified in the
   Plugins API.
 
-.. option:: -fplugin-arg-name-key=value
+.. option:: -fplugin-arg-name-key={value}
 
   Define an argument called :samp:`{key}` with a value of :samp:`{value}`
   for the plugin called :samp:`{name}`.
@@ -706,12 +706,12 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   For C and C++ source and include files, generate corresponding Ada specs.
   See :ref:`gnat_ugn:generating-ada-bindings-for-c-and-c++-headers`, which provides detailed documentation on this feature.
 
-.. option:: -fada-spec-parent=unit
+.. option:: -fada-spec-parent={unit}
 
   In conjunction with :option:`-fdump-ada-spec` [-slim] above, generate
   Ada specs as child units of parent :samp:`{unit}`.
 
-.. option:: -fdump-go-spec=file
+.. option:: -fdump-go-spec={file}
 
   For input files in any language, generate corresponding Go
   declarations in :samp:`{file}`.  This generates Go ``const``,

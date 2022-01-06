@@ -12,7 +12,7 @@ Influencing runtime behavior
 
 These options affect the runtime behavior of programs compiled with GNU Fortran.
 
-.. option:: -fconvert=conversion
+.. option:: -fconvert={conversion}
 
   .. index:: fconvert=conversion
 
@@ -26,7 +26,7 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   The ``CONVERT`` specifier and the GFORTRAN_CONVERT_UNIT environment
   variable override the default specified by :option:`-fconvert`.
 
-.. option:: -frecord-marker=length
+.. option:: -frecord-marker={length}
 
   .. index:: frecord-marker=length
 
@@ -37,7 +37,7 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   systems.  If you want to read or write files compatible
   with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`=8`.
 
-.. option:: -fmax-subrecord-length=length
+.. option:: -fmax-subrecord-length={length}
 
   .. index:: fmax-subrecord-length=length
 

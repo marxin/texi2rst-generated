@@ -240,7 +240,7 @@ These :samp:`-m` options are defined for the SH implementations:
   This option is deprecated.  It pads structures to multiple of 4 bytes,
   which is incompatible with the SH ABI.
 
-.. option:: -matomic-model=model
+.. option:: -matomic-model={model}
 
   .. index:: matomic-model=model
 
@@ -322,13 +322,13 @@ These :samp:`-m` options are defined for the SH implementations:
   when the target is ``sh*-*-linux*``.  If the target is SH1\* or SH2\*
   :option:`-musermode` has no effect, since there is no user mode.
 
-.. option:: -multcost=number
+.. option:: -multcost={number}
 
   .. index:: multcost=number
 
   Set the cost to assume for a multiply insn.
 
-.. option:: -mdiv=strategy
+.. option:: -mdiv={strategy}
 
   .. index:: mdiv=strategy
 
@@ -365,7 +365,7 @@ These :samp:`-m` options are defined for the SH implementations:
   than around each call.  Generally beneficial for performance and size.  Also
   needed for unwinding to avoid changing the stack frame around conditional code.
 
-.. option:: -mdivsi3_libfunc=name
+.. option:: -mdivsi3_libfunc={name}
 
   .. index:: mdivsi3_libfunc=name
 
@@ -375,7 +375,7 @@ These :samp:`-m` options are defined for the SH implementations:
   the compiler still expects the same sets of input/output/clobbered registers as
   if this option were not present.
 
-.. option:: -mfixed-range=register-range
+.. option:: -mfixed-range={register-range}
 
   Generate code treating the given register range as fixed registers.
   A fixed register is one that the register allocator cannot use.  This is
@@ -383,7 +383,7 @@ These :samp:`-m` options are defined for the SH implementations:
   two registers separated by a dash.  Multiple register ranges can be
   specified separated by a comma.
 
-.. option:: -mbranch-cost=num
+.. option:: -mbranch-cost={num}
 
   .. index:: mbranch-cost=num
 

@@ -16,7 +16,7 @@ Nios II Options
 
 These are the options defined for the Altera Nios II processor.
 
-.. option:: -G num
+.. option:: -G {num}
 
   .. index:: smaller data references
 
@@ -24,7 +24,7 @@ These are the options defined for the Altera Nios II processor.
   into the small data or BSS sections instead of the normal data or BSS
   sections.  The default value of :samp:`{num}` is 8.
 
-.. option:: -mgpopt=option
+.. option:: -mgpopt={option}
 
   Generate (do not generate) GP-relative accesses.  The following 
   :samp:`{option}` names are recognized:
@@ -73,7 +73,7 @@ These are the options defined for the Altera Nios II processor.
   addressing may not be large enough to allow access to the entire 
   small data section.
 
-.. option:: -mgprel-sec=regexp
+.. option:: -mgprel-sec={regexp}
 
   This option specifies additional section names that can be accessed via
   GP-relative addressing.  It is most useful in conjunction with 
@@ -85,7 +85,7 @@ These are the options defined for the Altera Nios II processor.
   the specified sections are in addition to the standard ``.sdata``
   and ``.sbss`` small-data sections that are recognized by :option:`-mgpopt`.
 
-.. option:: -mr0rel-sec=regexp
+.. option:: -mr0rel-sec={regexp}
 
   This option specifies names of sections that can be accessed via a 
   16-bit offset from ``r0`` ; that is, in the low 32K or high 32K 
@@ -104,7 +104,7 @@ These are the options defined for the Altera Nios II processor.
   Generate little-endian (default) or big-endian (experimental) code,
   respectively.
 
-.. option:: -march=arch
+.. option:: -march={arch}
 
   This specifies the name of the target Nios II architecture.  GCC uses this
   name to determine what kind of instructions it can emit when generating
@@ -142,7 +142,7 @@ These are the options defined for the Altera Nios II processor.
   requires :option:`-march`:samp:`=r2`.  Since these instructions are optional
   extensions to the R2 architecture, the default is not to emit them.
 
-.. option:: -mcustom-insn=N
+.. option:: -mcustom-insn={N}
 
   .. index:: mcustom-insn
 
@@ -264,7 +264,7 @@ These are the options defined for the Altera Nios II processor.
   (see :ref:`function-attributes`)
   or pragmas (see :ref:`function-specific-option-pragmas`).
 
-.. option:: -mcustom-fpu-cfg=name
+.. option:: -mcustom-fpu-cfg={name}
 
   This option enables a predefined, named set of custom instruction encodings
   (see :option:`-mcustom-`:samp:`{insn}` above).  
@@ -354,12 +354,12 @@ ELF (bare-metal) target:
   Link with a limited version of the C library, :option:`-lsmallc`, rather than
   Newlib.
 
-.. option:: -msys-crt0=startfile
+.. option:: -msys-crt0={startfile}
 
   :samp:`{startfile}` is the file name of the startfile (crt0) to use 
   when linking.  This option is only useful in conjunction with :option:`-mhal`.
 
-.. option:: -msys-lib=systemlib
+.. option:: -msys-lib={systemlib}
 
   :samp:`{systemlib}` is the library name of the library that provides
   low-level system calls required by the C library,

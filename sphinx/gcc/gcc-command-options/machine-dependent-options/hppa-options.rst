@@ -14,7 +14,7 @@ HPPA Options
 
 These :samp:`-m` options are defined for the HPPA family of computers:
 
-.. option:: -march=architecture-type
+.. option:: -march={architecture-type}
 
   Generate code for the specified architecture.  The choices for
   :samp:`{architecture-type}` are :samp:`1.0` for PA 1.0, :samp:`1.1` for PA
@@ -71,7 +71,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   This option does not work in the presence of shared libraries or nested
   functions.
 
-.. option:: -mfixed-range=register-range
+.. option:: -mfixed-range={register-range}
 
   Generate code treating the given register range as fixed registers.
   A fixed register is one that the register allocator cannot use.  This is
@@ -93,7 +93,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
   Enable the use of assembler directives only GAS understands.
 
-.. option:: -mschedule=cpu-type
+.. option:: -mschedule={cpu-type}
 
   Schedule code according to the constraints for the machine type
   :samp:`{cpu-type}`.  The choices for :samp:`{cpu-type}` are :samp:`700`
@@ -193,7 +193,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
   Default setting; overrides :option:`-mlong-calls`.
 
-.. option:: -munix=unix-std
+.. option:: -munix={unix-std}
 
   Generate compiler predefines and select a startfile for the specified
   UNIX standard.  The choices for :samp:`{unix-std}` are :samp:`93`, :samp:`95`

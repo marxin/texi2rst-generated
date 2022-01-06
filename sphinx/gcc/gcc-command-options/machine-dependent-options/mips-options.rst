@@ -21,7 +21,7 @@ MIPS Options
   Generate little-endian code.  This is the default for :samp:`mips*el-*-*`
   configurations.
 
-.. option:: -march=arch
+.. option:: -march={arch}
 
   Generate code that runs on :samp:`{arch}`, which can be the name of a
   generic MIPS ISA, or the name of a particular processor.
@@ -96,7 +96,7 @@ MIPS Options
   ``"mips3"``).  It names the default architecture when no
   :option:`-march` option is given.
 
-.. option:: -mtune=arch
+.. option:: -mtune={arch}
 
   Optimize for :samp:`{arch}`.  Among other things, this option controls
   the way instructions are scheduled, and the perceived cost of arithmetic
@@ -514,7 +514,7 @@ MIPS Options
   :option:`-mabi`:samp:`=64` and :option:`-mno-abicalls` because it allows GCC
   to generate shorter and faster references to symbolic addresses.
 
-.. option:: -G num
+.. option:: -G {num}
 
   Put definitions of externally-visible data in a small data section
   if that data is no bigger than :samp:`{num}` bytes.  GCC can then generate
@@ -586,7 +586,7 @@ MIPS Options
   Put uninitialized ``const`` variables in the read-only data section.
   This option is only meaningful in conjunction with :option:`-membedded-data`.
 
-.. option:: -mcode-readable=setting
+.. option:: -mcode-readable={setting}
 
   Specify whether GCC may generate code that reads from executable sections.
   There are three possible settings:
@@ -785,7 +785,7 @@ MIPS Options
   (This flag currently works around the SB-1 revision 2
   'F1' and 'F2' floating-point errata.)
 
-.. option:: -mr10k-cache-barrier=setting
+.. option:: -mr10k-cache-barrier={setting}
 
   Specify whether GCC should insert cache barriers to avoid the
   side effects of speculation on R10K processors.
@@ -845,7 +845,7 @@ MIPS Options
   ``-mr10k-cache-barrier=none``
     Disable the insertion of cache barriers.  This is the default setting.
 
-.. option:: -mflush-func=func
+.. option:: -mflush-func={func}
 
   Specifies the function to call to flush the I and D caches, or to not
   call any such function.  If called, the function must take the same

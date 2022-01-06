@@ -168,7 +168,7 @@ The following options control preprocessing of Fortran code:
   in the command line, this option has no effect, since no ``#line``
   directives are emitted whatsoever.
 
-.. option:: -idirafter dir
+.. option:: -idirafter {dir}
 
   .. index:: idirafter dir
 
@@ -180,7 +180,7 @@ The following options control preprocessing of Fortran code:
   If dir begins with ``=``, then the ``=`` will be replaced by
   the sysroot prefix; see :option:`--sysroot` and :option:`-isysroot`.
 
-.. option:: -imultilib dir
+.. option:: -imultilib {dir}
 
   .. index:: imultilib dir
 
@@ -189,7 +189,7 @@ The following options control preprocessing of Fortran code:
   Use :samp:`{dir}` as a subdirectory of the directory containing target-specific
   C++ headers.
 
-.. option:: -iprefix prefix
+.. option:: -iprefix {prefix}
 
   .. index:: iprefix prefix
 
@@ -199,7 +199,7 @@ The following options control preprocessing of Fortran code:
   options. If the :samp:`{prefix}` represents a directory, you should include
   the final ``'/'``.
 
-.. option:: -isysroot dir
+.. option:: -isysroot {dir}
 
   .. index:: isysroot dir
 
@@ -208,7 +208,7 @@ The following options control preprocessing of Fortran code:
   This option is like the :option:`--sysroot` option, but applies only to
   header files. See the :option:`--sysroot` option for more information.
 
-.. option:: -iquote dir
+.. option:: -iquote {dir}
 
   .. index:: iquote dir
 
@@ -220,7 +220,7 @@ The following options control preprocessing of Fortran code:
   :samp:`{dir}` begins with ``=``, then the ``=`` will be replaced by the
   sysroot prefix; see :option:`--sysroot` and :option:`-isysroot`.
 
-.. option:: -isystem dir
+.. option:: -isystem {dir}
 
   .. index:: isystem dir
 
@@ -248,7 +248,7 @@ The following options control preprocessing of Fortran code:
   Do not predefine any system-specific or GCC-specific macros.
   The standard predefined macros remain defined.
 
-.. option:: -Apredicate=answer
+.. option:: -Apredicate={answer}
 
   .. index:: Apredicate=answer
 
@@ -258,7 +258,7 @@ The following options control preprocessing of Fortran code:
   This form is preferred to the older form -A predicate(answer), which is still
   supported, because it does not use shell special characters.
 
-.. option:: -A-predicate=answer
+.. option:: -A-predicate={answer}
 
   .. index:: A-predicate=answer
 
@@ -312,7 +312,7 @@ The following options control preprocessing of Fortran code:
 
   Predefine name as a macro, with definition ``1``.
 
-.. option:: -Dname=definition
+.. option:: -Dname={definition}
 
   .. index:: Dname=definition
 

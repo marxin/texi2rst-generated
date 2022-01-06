@@ -48,7 +48,7 @@ one of :samp:`i` (inter-procedural analysis), :samp:`l`
 (language-specific), :samp:`r` (RTL), or :samp:`t` (tree). 
 The files are created in the directory of the output file. 
 
-.. option:: -fcallgraph-info, -fcallgraph-info=MARKERS
+.. option:: -fcallgraph-info, -fcallgraph-info={MARKERS}
 
   Makes the compiler output callgraph information for the program, on a
   per-object-file basis.  The information is generated in the common VCG
@@ -65,7 +65,7 @@ The files are created in the directory of the output file.
   may generate multiple callgraph information files next to intermediate
   LTO output files.
 
-.. option:: -dletters, -fdump-rtl-pass, -fdump-rtl-pass=filename
+.. option:: -dletters, -fdump-rtl-pass, -fdump-rtl-pass={filename}
 
   .. index:: fdump-rtl-pass
 
@@ -396,7 +396,7 @@ The files are created in the directory of the output file.
   Dump language-specific information.  The file name is made by appending
   :samp:`.lang` to the source file name.
 
-.. option:: -fdump-lang-all, -fdump-lang-switch, -fdump-lang-switch-options, -fdump-lang-switch-options=filename
+.. option:: -fdump-lang-all, -fdump-lang-switch, -fdump-lang-switch-options, -fdump-lang-switch-options={filename}
 
   Control the dumping of language-specific information.  The :samp:`{options}`
   and :samp:`{filename}` portions behave as described in the
@@ -437,7 +437,7 @@ The files are created in the directory of the output file.
   the passes generate them.  The default with no option is to sum
   counters for each function compiled.
 
-.. option:: -fdump-tree-all, -fdump-tree-switch, -fdump-tree-switch-options, -fdump-tree-switch-options=filename
+.. option:: -fdump-tree-all, -fdump-tree-switch, -fdump-tree-switch-options, -fdump-tree-switch-options={filename}
 
   Control the dumping at various stages of processing the intermediate
   language tree to a file.  If the :samp:`-{options}`
@@ -556,7 +556,7 @@ The files are created in the directory of the output file.
     directory.  Note that the numeric codes are not stable and may change
     from one version of GCC to another.
 
-.. option:: -fopt-info, -fopt-info-options, -fopt-info-options=filename
+.. option:: -fopt-info, -fopt-info-options, -fopt-info-options={filename}
 
   Controls optimization dumps from various optimization passes. If the
   :samp:`-{options}` form is used, :samp:`{options}` is a list of
@@ -725,7 +725,7 @@ The files are created in the directory of the output file.
   messages, reflecting implementation details of the optimization
   passes.
 
-.. option:: -fsched-verbose=n
+.. option:: -fsched-verbose={n}
 
   On targets that use instruction scheduling, this option controls the
   amount of debugging output the scheduler prints to the dump files.
@@ -738,7 +738,7 @@ The files are created in the directory of the output file.
   And for :samp:`{n}` over four, :option:`-fsched-verbose` also includes
   dependence info.
 
-.. option:: -fenable-kind-pass, -fdisable-kind-pass=range-list
+.. option:: -fenable-kind-pass, -fdisable-kind-pass={range-list}
 
   This is a set of options that are used to explicitly disable/enable
   optimization passes.  These options are intended for use for debugging GCC.
@@ -798,7 +798,7 @@ The files are created in the directory of the output file.
     # enable tree full unroll
        -fenable-tree-unroll
 
-.. option:: -fchecking, -fchecking=n
+.. option:: -fchecking, -fchecking={n}
 
   Enable internal consistency checking.  The default depends on
   the compiler configuration.  :option:`-fchecking`:samp:`=2` enables further
@@ -808,7 +808,7 @@ The files are created in the directory of the output file.
 
   Default setting; overrides :option:`-fchecking`.
 
-.. option:: -frandom-seed=string
+.. option:: -frandom-seed={string}
 
   This option provides a seed that GCC uses in place of
   random numbers in generating certain symbol names
@@ -847,7 +847,7 @@ The files are created in the directory of the output file.
   :option:`-o` option is not used, the :option:`-save-temps`:samp:`=obj` switch
   behaves like :option:`-save-temps`:samp:`=cwd`.
 
-.. option:: -time[=file]
+.. option:: -time[={file}]
 
   Report the CPU time taken by each subprocess in the compilation
   sequence.  For C source files, this is the compiler proper and assembler
@@ -877,14 +877,14 @@ The files are created in the directory of the output file.
   name, and the options passed to the program are displayed, so that one
   can later tell what file was being compiled, and with which options.
 
-.. option:: -fdump-final-insns[=file]
+.. option:: -fdump-final-insns[={file}]
 
   Dump the final internal representation (RTL) to :samp:`{file}`.  If the
   optional argument is omitted (or if :samp:`{file}` is ``.``), the name
   of the dump file is determined by appending ``.gkd`` to the
   dump base name, see :option:`-dumpbase`.
 
-.. option:: -fcompare-debug[=opts]
+.. option:: -fcompare-debug[={opts}]
 
   If no error occurs during compilation, run the compiler a second time,
   adding :samp:`{opts}` and :option:`-fcompare-debug-second` to the arguments
@@ -957,7 +957,7 @@ The files are created in the directory of the output file.
 
   Record the time consumed by infrastructure parts separately for each pass.
 
-.. option:: -fira-verbose=n
+.. option:: -fira-verbose={n}
 
   Control the verbosity of the dump file for the integrated register allocator.
   The default value is 5.  If the value :samp:`{n}` is greater or equal to 10,
@@ -1039,7 +1039,7 @@ The files are created in the directory of the output file.
 
   Print the name and the counter upper bound for all debug counters.
 
-.. option:: -fdbg-cnt=counter-value-list
+.. option:: -fdbg-cnt={counter-value-list}
 
   Set the internal debug counter lower and upper bound.  :samp:`{counter-value-list}`
   is a comma-separated list of :samp:`{name}:{lower_bound1}-{upper_bound1}`
@@ -1052,7 +1052,7 @@ The files are created in the directory of the output file.
   eleventh invocation.
   For ``dbg_cnt(tail_call)`` true is returned for first 10 invocations.
 
-.. option:: -print-file-name=library
+.. option:: -print-file-name={library}
 
   Print the full absolute name of the library file :samp:`{library}` that
   would be used when linking---and don't do anything else.  With this
@@ -1088,7 +1088,7 @@ The files are created in the directory of the output file.
   Print the path to OS libraries for the selected multiarch,
   relative to some :samp:`lib` subdirectory.
 
-.. option:: -print-prog-name=program
+.. option:: -print-prog-name={program}
 
   Like :option:`-print-file-name`, but searches for a program such as :command:`cpp`.
 

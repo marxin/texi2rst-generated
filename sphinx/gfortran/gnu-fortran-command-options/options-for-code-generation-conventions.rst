@@ -197,7 +197,7 @@ it.
   for compatibility with :command:`g77` and :command:`f2c`, and is implied
   by use of the :option:`-ff2c` option.
 
-.. option:: -fcoarray=<keyword>
+.. option:: -fcoarray={<keyword>}
 
   .. index:: fcoarray
 
@@ -214,7 +214,7 @@ it.
     Library-based coarray parallelization; a suitable GNU Fortran coarray
     library needs to be linked.
 
-.. option:: -fcheck=<keyword>
+.. option:: -fcheck={<keyword>}
 
   .. index:: fcheck
 
@@ -305,7 +305,7 @@ it.
 
   Deprecated alias for :option:`-fcheck`:samp:`=bounds`.
 
-.. option:: -ftail-call-workaround, -ftail-call-workaround=n
+.. option:: -ftail-call-workaround, -ftail-call-workaround={n}
 
   .. index:: tail-call-workaround
 
@@ -345,7 +345,7 @@ it.
 
   Deprecated alias for :option:`-fcheck`:samp:`=array-temps`.
 
-.. option:: -fmax-array-constructor=n
+.. option:: -fmax-array-constructor={n}
 
   .. index:: fmax-array-constructor
 
@@ -369,7 +369,7 @@ it.
 
   The default value for :samp:`{n}` is 65535.
 
-.. option:: -fmax-stack-var-size=n
+.. option:: -fmax-stack-var-size={n}
 
   .. index:: fmax-stack-var-size
 
@@ -472,7 +472,7 @@ it.
   optimized vendor BLAS library is available.  The BLAS library will have
   to be specified at link time.
 
-.. option:: -fblas-matmul-limit=n
+.. option:: -fblas-matmul-limit={n}
 
   .. index:: fblas-matmul-limit
 
@@ -485,7 +485,7 @@ it.
 
   The default value for :samp:`{n}` is 30.
 
-.. option:: -finline-matmul-limit=n
+.. option:: -finline-matmul-limit={n}
 
   .. index:: finline-matmul-limit
 
@@ -512,10 +512,10 @@ it.
 
 .. option:: -finit-local-zero
             -finit-derived
-            -finit-integer=n
-            -finit-real=<zero|inf|-inf|nan|snan>
-            -finit-logical=<true|false>
-            -finit-character=n
+            -finit-integer={n}
+            -finit-real={<zero|inf|-inf|nan|snan>}
+            -finit-logical={<true|false>}
+            -finit-character={n}
 
   The :option:`-finit-local-zero` option instructs the compiler to
   initialize local ``INTEGER``, ``REAL``, and ``COMPLEX``

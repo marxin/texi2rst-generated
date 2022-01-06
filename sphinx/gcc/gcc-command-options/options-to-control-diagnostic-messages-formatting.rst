@@ -22,7 +22,7 @@ e.g. how many characters per line, how often source location
 information should be reported.  Note that some language front ends may not
 honor these options.
 
-.. option:: -fmessage-length=n
+.. option:: -fmessage-length={n}
 
   Try to format error messages so that they fit on lines of about
   :samp:`{n}` characters.  If :samp:`{n}` is zero, then no line-wrapping is
@@ -67,7 +67,7 @@ honor these options.
   prefix) for physical lines that result from the process of breaking
   a message which is too long to fit on a single line.
 
-.. option:: -fdiagnostics-color[=WHEN]
+.. option:: -fdiagnostics-color[={WHEN}]
 
   .. index:: highlight, color
 
@@ -222,7 +222,7 @@ honor these options.
 
   Default setting; overrides :option:`-fno-diagnostics-color`.
 
-.. option:: -fdiagnostics-urls[=WHEN]
+.. option:: -fdiagnostics-urls[={WHEN}]
 
   .. index:: urls
 
@@ -336,7 +336,7 @@ honor these options.
 
   Default setting; overrides :option:`-fno-diagnostics-show-line-numbers`.
 
-.. option:: -fdiagnostics-minimum-margin-width=width
+.. option:: -fdiagnostics-minimum-margin-width={width}
 
   This option controls the minimum width of the left margin printed by
   :option:`-fdiagnostics-show-line-numbers`.  It defaults to 6.
@@ -435,7 +435,7 @@ honor these options.
 
   Default setting; overrides :option:`-fno-elide-type`.
 
-.. option:: -fdiagnostics-path-format=KIND
+.. option:: -fdiagnostics-path-format={KIND}
 
   Specify how to print paths of control-flow events for diagnostics that
   have such a path associated with them.
@@ -553,7 +553,7 @@ honor these options.
 
   Default setting; overrides :option:`-fno-show-column`.
 
-.. option:: -fdiagnostics-column-unit=UNIT
+.. option:: -fdiagnostics-column-unit={UNIT}
 
   Select the units for the column number.  This affects traditional diagnostics
   (in the absence of :option:`-fno-show-column`), as well as JSON format
@@ -571,14 +571,14 @@ honor these options.
   Setting :samp:`{UNIT}` to :samp:`byte` changes the column number to the raw byte
   count in all cases, as was traditionally output by GCC prior to version 11.1.0.
 
-.. option:: -fdiagnostics-column-origin=ORIGIN
+.. option:: -fdiagnostics-column-origin={ORIGIN}
 
   Select the origin for column numbers, i.e. the column number assigned to the
   first column.  The default value of 1 corresponds to traditional GCC
   behavior and to the GNU style guide.  Some utilities may perform better with an
   origin of 0; any non-negative value may be specified.
 
-.. option:: -fdiagnostics-escape-format=FORMAT
+.. option:: -fdiagnostics-escape-format={FORMAT}
 
   When GCC prints pertinent source lines for a diagnostic it normally attempts
   to print the source bytes directly.  However, some diagnostics relate to encoding
@@ -610,7 +610,7 @@ honor these options.
 
      before<CF><80><BF>after
 
-.. option:: -fdiagnostics-format=FORMAT
+.. option:: -fdiagnostics-format={FORMAT}
 
   Select a different format for printing diagnostics.
   :samp:`{FORMAT}` is :samp:`text` or :samp:`json`.

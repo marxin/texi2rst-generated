@@ -28,7 +28,7 @@ MicroBlaze Options
 
   This option is deprecated.  Use :option:`-fno-zero-initialized-in-bss` instead.
 
-.. option:: -mcpu=cpu-type
+.. option:: -mcpu={cpu-type}
 
   Use features of, and schedule code for, the given CPU.
   Supported values are in the format :samp:`v{X}.{YY}.{Z}`,

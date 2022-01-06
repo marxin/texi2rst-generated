@@ -14,7 +14,7 @@ TILEPro Options
 
 These :samp:`-m` options are supported on the TILEPro:
 
-.. option:: -mcpu=name
+.. option:: -mcpu={name}
 
   Selects the type of CPU to be targeted.  Currently the only supported
   type is :samp:`tilepro`.

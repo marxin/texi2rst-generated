@@ -14,7 +14,7 @@ CRIS Options
 
 These options are defined specifically for the CRIS ports.
 
-.. option:: -march=architecture-type
+.. option:: -march={architecture-type}
 
   Generate code for the specified architecture.  The choices for
   :samp:`{architecture-type}` are :samp:`v3`, :samp:`v8` and :samp:`v10` for
@@ -22,14 +22,14 @@ These options are defined specifically for the CRIS ports.
   Default is :samp:`v0` except for cris-axis-linux-gnu, where the default is
   :samp:`v10`.
 
-.. option:: -mtune=architecture-type
+.. option:: -mtune={architecture-type}
 
   Tune to :samp:`{architecture-type}` everything applicable about the generated
   code, except for the ABI and the set of available instructions.  The
   choices for :samp:`{architecture-type}` are the same as for
   :option:`-march`:samp:`={architecture-type}`.
 
-.. option:: -mmax-stack-frame=n
+.. option:: -mmax-stack-frame={n}
 
   Warn when the stack frame of a function exceeds :samp:`{n}` bytes.
 

@@ -14,7 +14,7 @@ RISC-V Options
 
 These command-line options are defined for RISC-V targets:
 
-.. option:: -mbranch-cost=n
+.. option:: -mbranch-cost={n}
 
   Set the cost of branches to roughly :samp:`{n}` instructions.
 
@@ -23,7 +23,7 @@ These command-line options are defined for RISC-V targets:
   When generating PIC code, do or don't allow the use of PLTs. Ignored for
   non-PIC.  The default is :option:`-mplt`.
 
-.. option:: -mabi=ABI-string
+.. option:: -mabi={ABI-string}
 
   Specify integer and floating-point calling convention.  :samp:`{ABI-string}`
   contains two parts: the size of integer types and the registers used for
@@ -58,7 +58,7 @@ These command-line options are defined for RISC-V targets:
   M extension.  The default is to use them if the specified architecture has
   these instructions.
 
-.. option:: -march=ISA-string
+.. option:: -march={ISA-string}
 
   Generate code for given RISC-V ISA (e.g. :samp:`rv64im`).  ISA strings must be
   lower-case.  Examples include :samp:`rv64i`, :samp:`rv32g`, :samp:`rv32e`, and
@@ -70,7 +70,7 @@ These command-line options are defined for RISC-V targets:
   this argument is system dependent, users who want a specific architecture
   extensions should specify one explicitly.
 
-.. option:: -mcpu=processor-string
+.. option:: -mcpu={processor-string}
 
   Use architecture of and optimize the output for the given processor, specified
   by particular CPU name.
@@ -79,7 +79,7 @@ These command-line options are defined for RISC-V targets:
   :samp:`sifive-s21`, :samp:`sifive-s51`, :samp:`sifive-s54`, :samp:`sifive-s76`,
   :samp:`sifive-u54`, and :samp:`sifive-u74`.
 
-.. option:: -mtune=processor-string
+.. option:: -mtune={processor-string}
 
   Optimize the output for the given processor, specified by microarchitecture or
   particular CPU name.  Permissible values for this option are: :samp:`rocket`,
@@ -94,7 +94,7 @@ These command-line options are defined for RISC-V targets:
   provided by :option:`-mtune` =, but does not override the pipeline info.  This
   helps reduce code size while still giving good performance.
 
-.. option:: -mpreferred-stack-boundary=num
+.. option:: -mpreferred-stack-boundary={num}
 
   Attempt to keep the stack boundary aligned to a 2 raised to :samp:`{num}`
   byte boundary.  If :option:`-mpreferred-stack-boundary` is not specified,
@@ -106,7 +106,7 @@ These command-line options are defined for RISC-V targets:
     the same value, including any libraries.  This includes the system libraries
     and startup modules.
 
-.. option:: -msmall-data-limit=n
+.. option:: -msmall-data-limit={n}
 
   Put global and static data smaller than :samp:`{n}` bytes into a special section
   (on some targets).
@@ -161,7 +161,7 @@ These command-line options are defined for RISC-V targets:
   Emit (do not emit) RISC-V attribute to record extra information into ELF
   objects.  This feature requires at least binutils 2.32.
 
-.. option:: -malign-data=type
+.. option:: -malign-data={type}
 
   Control how GCC aligns variables and constants of array, structure, or union
   types.  Supported values for :samp:`{type}` are :samp:`xlen` which uses x register
@@ -179,7 +179,7 @@ These command-line options are defined for RISC-V targets:
   :samp:`riscv64-*-*` or :samp:`riscv32-*-*` but not a :samp:`riscv64be-*-*` or
   :samp:`riscv32be-*-*` target.
 
-.. option:: -mstack-protector-guard=guard
+.. option:: -mstack-protector-guard={guard}
 
   Generate stack protection code using canary at :samp:`{guard}`.  Supported
   locations are :samp:`global` for a global canary or :samp:`tls` for per-thread

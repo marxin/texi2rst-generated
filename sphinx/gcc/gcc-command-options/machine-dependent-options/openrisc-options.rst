@@ -14,7 +14,7 @@ OpenRISC Options
 
 These options are defined for OpenRISC:
 
-.. option:: -mboard=name
+.. option:: -mboard={name}
 
   Configure a board specific runtime.  This will be passed to the linker for
   newlib board library linking.  The default is ``or1ksim``.

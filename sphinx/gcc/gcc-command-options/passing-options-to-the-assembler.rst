@@ -17,7 +17,7 @@ You can pass options to the assembler.
   Pass :samp:`{option}` as an option to the assembler.  If :samp:`{option}`
   contains commas, it is split into multiple options at the commas.
 
-.. option:: -Xassembler option
+.. option:: -Xassembler {option}
 
   Pass :samp:`{option}` as an option to the assembler.  You can use this to
   supply system-specific assembler options that GCC does not

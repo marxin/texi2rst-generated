@@ -25,7 +25,7 @@ These :samp:`-m` options are supported on the TILE-Gx:
   Generate code for the large model.  There is no limitation on call
   distance, pc-relative addresses, or absolute addresses.
 
-.. option:: -mcpu=name
+.. option:: -mcpu={name}
 
   Selects the type of CPU to be targeted.  Currently the only supported
   type is :samp:`tilegx`.

@@ -40,7 +40,7 @@ Visium Options
   library that comes with GCC, with :option:`-msoft-float` in order for
   this to work.
 
-.. option:: -mcpu=cpu_type
+.. option:: -mcpu={cpu_type}
 
   Set the instruction set, register set, and instruction scheduling parameters
   for machine type :samp:`{cpu_type}`.  Supported values for :samp:`{cpu_type}` are
@@ -55,7 +55,7 @@ Visium Options
   architecture.  The only difference from GR5 code is that the compiler will
   generate block move instructions.
 
-.. option:: -mtune=cpu_type
+.. option:: -mtune={cpu_type}
 
   Set the instruction scheduling parameters for machine type :samp:`{cpu_type}`,
   but do not set the instruction set or register set that the option

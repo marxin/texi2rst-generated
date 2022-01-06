@@ -40,19 +40,19 @@ These :samp:`-m` options are defined for V850 implementations:
   Try to make the code as small as possible.  At present, this just turns
   on the :option:`-mep` and :option:`-mprolog-function` options.
 
-.. option:: -mtda=n
+.. option:: -mtda={n}
 
   Put static or global variables whose size is :samp:`{n}` bytes or less into
   the tiny data area that register ``ep`` points to.  The tiny data
   area can hold up to 256 bytes in total (128 bytes for byte references).
 
-.. option:: -msda=n
+.. option:: -msda={n}
 
   Put static or global variables whose size is :samp:`{n}` bytes or less into
   the small data area that register ``gp`` points to.  The small data
   area can hold up to 64 kilobytes.
 
-.. option:: -mzda=n
+.. option:: -mzda={n}
 
   Put static or global variables whose size is :samp:`{n}` bytes or less into
   the first 32 kilobytes of memory.
