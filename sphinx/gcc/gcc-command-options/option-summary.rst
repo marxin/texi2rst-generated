@@ -341,7 +341,6 @@ in the following sections.
 
   See :ref:`optimize-options`.
 
-<<<<<<< HEAD
   :option:`-faggressive-loop-optimizations` |gol|
   :option:`-falign-functions`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
   :option:`-falign-jumps`:samp:`[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
