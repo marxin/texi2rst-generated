@@ -56,6 +56,14 @@ the region pointed to by the 1st argument.
 
 .. code-block:: c++
 
+  extern void __analyzer_dump_escaped (void);
+
+will emit a warning giving the number of decls that have escaped on this
+analysis path, followed by a comma-separated list of their names,
+in alphabetical order.
+
+.. code-block:: c++
+
   __analyzer_dump_path ();
 
 will emit a placeholder 'note' diagnostic with a path to that call site,
@@ -115,3 +123,15 @@ and the exploded graph in compressed JSON form.
 One approach when tracking down where a particular bogus state is
 introduced into the ``exploded_graph`` is to add custom code to
 ``program_state::validate``.
+
+The debug function ``region::is_named_decl_p`` can be used when debugging,
+such as for assertions and conditional breakpoints.  For example, when
+tracking down a bug in handling a decl called ``yy_buffer_stack``, I
+temporarily added a:
+
+.. code-block:: c++
+
+    gcc_assert (!m_base_region->is_named_decl_p ("yy_buffer_stack"));
+
+to ``binding_cluster::mark_as_escaped`` to trap a point where
+``yy_buffer_stack`` was mistakenly being treated as having escaped.

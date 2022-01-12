@@ -1439,8 +1439,8 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Generate code to mitigate against straight line speculation (SLS) with
   :samp:`{choice}`.  The default is :samp:`none` which disables all SLS
-  hardening.  :samp:`return` enables SLS hardening for function return.
-  :samp:`indirect-branch` enables SLS hardening for indirect branch.
+  hardening.  :samp:`return` enables SLS hardening for function returns.
+  :samp:`indirect-jmp` enables SLS hardening for indirect jumps.
   :samp:`all` enables all SLS hardening.
 
 .. option:: -mindirect-branch-cs-prefix

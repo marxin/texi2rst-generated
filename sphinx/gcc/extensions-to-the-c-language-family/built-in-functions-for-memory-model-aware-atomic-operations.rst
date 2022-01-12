@@ -146,9 +146,7 @@ ensures proper usage.
   :samp:`{val}` into ``*ptr``, and returns the previous contents of
   ``*ptr``.
 
-  The valid memory order variants are
-  ``__ATOMIC_RELAXED``, ``__ATOMIC_SEQ_CST``, ``__ATOMIC_ACQUIRE``,
-  ``__ATOMIC_RELEASE``, and ``__ATOMIC_ACQ_REL``.
+  All memory order variants are valid.
 
 .. function:: void __atomic_exchange (type *ptr, type *val, type *ret, int memorder)
 
