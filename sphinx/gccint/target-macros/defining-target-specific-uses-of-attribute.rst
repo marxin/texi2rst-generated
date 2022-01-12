@@ -273,6 +273,37 @@ be documented in :samp:`extend.texi`.
 
 .. hook-end
 
+.. function:: bool TARGET_UPDATE_IPA_FN_TARGET_INFO (unsigned int& info, const gimple* stmt)
+
+  Allow target to analyze all gimple statements for the given function to
+  record and update some target specific information for inlining.  A typical
+  example is that a caller with one isa feature disabled is normally not
+  allowed to inline a callee with that same isa feature enabled even which is
+  attributed by always_inline, but with the conservative analysis on all
+  statements of the callee if we are able to guarantee the callee does not
+  exploit any instructions from the mismatch isa feature, it would be safe to
+  allow the caller to inline the callee.
+  :samp:`{info}` is one ``unsigned int`` value to record information in which
+  one set bit indicates one corresponding feature is detected in the analysis,
+  :samp:`{stmt}` is the statement being analyzed.  Return true if target still
+  need to analyze the subsequent statements, otherwise return false to stop
+  subsequent analysis.
+  The default version of this hook returns false.
+
+.. function:: bool TARGET_NEED_IPA_FN_TARGET_INFO (const_tree decl, unsigned int& info)
+
+  Allow target to check early whether it is necessary to analyze all gimple
+  statements in the given function to update target specific information for
+  inlining.  See hook ``update_ipa_fn_target_info`` for usage example of
+  target specific information.  This hook is expected to be invoked ahead of
+  the iterating with hook ``update_ipa_fn_target_info``.
+  :samp:`{decl}` is the function being analyzed, :samp:`{info}` is the same as what
+  in hook ``update_ipa_fn_target_info``, target can do one time update
+  into :samp:`{info}` without iterating for some case.  Return true if target
+  decides to analyze all gimple statements to collect information, otherwise
+  return false.
+  The default version of this hook returns false.
+
 .. function:: void TARGET_RELAYOUT_FUNCTION (tree fndecl)
 
   .. hook-start:TARGET_RELAYOUT_FUNCTION
