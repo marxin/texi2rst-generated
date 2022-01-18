@@ -12,8 +12,8 @@ LTO information is stored in several ELF sections inside object files.
 Data structures and enum codes for sections are defined in
 :samp:`lto-streamer.h`.
 
-These sections are emitted from :samp:`lto-streamer-out.c` and mapped
-in all at once from :samp:`lto/lto.c`: ``lto_file_read``.  The
+These sections are emitted from :samp:`lto-streamer-out.cc` and mapped
+in all at once from :samp:`lto/lto.cc`: ``lto_file_read``.  The
 individual functions dealing with the reading/writing of each section
 are described below.
 
@@ -30,7 +30,7 @@ are described below.
   saved on all the files in a link-time set are applied globally.  No
   attempt is made at validating the combination of flags (other than the
   usual validation done by option processing).  This is implemented in
-  :samp:`lto/lto.c`: ``lto_read_all_file_options``.
+  :samp:`lto/lto.cc`: ``lto_read_all_file_options``.
 
 * Symbol table (``.gnu.lto_.symtab``)
 
@@ -49,7 +49,7 @@ are described below.
   symbol table was used.
 
   The symbol table is emitted in
-  :samp:`lto-streamer-out.c`: ``produce_symtab``.
+  :samp:`lto-streamer-out.cc`: ``produce_symtab``.
 
 * Global declarations and types (``.gnu.lto_.decls``)
 
@@ -58,10 +58,10 @@ are described below.
   variables and top-level debug info.
 
   The contents of this section are emitted in
-  :samp:`lto-streamer-out.c`: ``produce_asm_for_decls``.  Types and
+  :samp:`lto-streamer-out.cc`: ``produce_asm_for_decls``.  Types and
   symbols are emitted in a topological order that preserves the sharing
   of pointers when the file is read back in
-  (:samp:`lto.c`: ``read_cgraph_and_symbols``).
+  (:samp:`lto.cc`: ``read_cgraph_and_symbols``).
 
 * The callgraph (``.gnu.lto_.cgraph``)
 
@@ -71,14 +71,14 @@ are described below.
   well as the variables, aliases and top-level ``asm`` statements.
 
   This section is emitted in
-  :samp:`lto-streamer-out.c`: ``output_cgraph`` and read in
-  :samp:`lto-cgraph.c`: ``input_cgraph``.
+  :samp:`lto-streamer-out.cc`: ``output_cgraph`` and read in
+  :samp:`lto-cgraph.cc`: ``input_cgraph``.
 
 * IPA references (``.gnu.lto_.refs``)
 
   This section contains references between function and static
-  variables.  It is emitted by :samp:`lto-cgraph.c`: ``output_refs``
-  and read by :samp:`lto-cgraph.c`: ``input_refs``.
+  variables.  It is emitted by :samp:`lto-cgraph.cc`: ``output_refs``
+  and read by :samp:`lto-cgraph.cc`: ``input_refs``.
 
 * Function bodies (``.gnu.lto_.function_body.<name>``)
 
@@ -88,14 +88,14 @@ are described below.
   reading the function on demand.
 
   Functions are emitted in
-  :samp:`lto-streamer-out.c`: ``output_function`` and read in
-  :samp:`lto-streamer-in.c`: ``input_function``.
+  :samp:`lto-streamer-out.cc`: ``output_function`` and read in
+  :samp:`lto-streamer-in.cc`: ``input_function``.
 
 * Static variable initializers (``.gnu.lto_.vars``)
 
   This section contains all the symbols in the global variable pool.  It
-  is emitted by :samp:`lto-cgraph.c`: ``output_varpool`` and read in
-  :samp:`lto-cgraph.c`: ``input_cgraph``.
+  is emitted by :samp:`lto-cgraph.cc`: ``output_varpool`` and read in
+  :samp:`lto-cgraph.cc`: ``input_cgraph``.
 
 * Summaries and optimization summaries used by IPA passes
   (``.gnu.lto_.<xxx>``, where ``<xxx>`` is one of ``jmpfuncs``,

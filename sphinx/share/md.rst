@@ -1485,7 +1485,7 @@ the meanings of that architecture's constraints.
     now roughly the same as :samp:`m` when not used together with :samp:`<`
     or :samp:`>`.
 
-:samp:`M32C---{config/m32c/m32c.c}`
+:samp:`M32C---{config/m32c/m32c.cc}`
 
   ``Rsp`` ``Rfb`` ``Rsb``
     :samp:`$sp`, :samp:`$fb`, :samp:`$sb`.

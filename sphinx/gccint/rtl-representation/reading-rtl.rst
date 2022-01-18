@@ -10,7 +10,7 @@ Reading RTL
 
 To read an RTL object from a file, call ``read_rtx``.  It takes one
 argument, a stdio stream, and returns a single RTL object.  This routine
-is defined in :samp:`read-rtl.c`.  It is not available in the compiler
+is defined in :samp:`read-rtl.cc`.  It is not available in the compiler
 itself, only the various programs that generate the compiler back end
 from the machine description.
 

@@ -193,6 +193,7 @@ warn at all unless optimization is enabled.
   :option:`-Wcatch-value` (C++ and Objective :option:`-C++` only)  
   :option:`-Wchar-subscripts`  
   :option:`-Wcomment`  
+  :option:`-Wdangling-pointer`:samp:`=2`  
   :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
   :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
   :option:`-Wformat`   
@@ -241,6 +242,7 @@ warn at all unless optimization is enabled.
   :option:`-Wunused-label`     
   :option:`-Wunused-value`     
   :option:`-Wunused-variable`  
+  :option:`-Wuse-after-free`:samp:`=3`  
   :option:`-Wvla-parameter` (C and Objective :option:`-C` only) 
   :option:`-Wvolatile-register-var`  
   :option:`-Wzero-length-bounds`
@@ -3501,6 +3503,65 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wdangling-else`.
 
+.. option:: -Wdangling-pointer, -Wdangling-pointer={n}
+
+  Warn about uses of pointers (or C++ references) to objects with automatic
+  storage duration after their lifetime has ended.  This includes local
+  variables declared in nested blocks, compound literals and other unnamed
+  temporary objects.  In addition, warn about storing the address of such
+  objects in escaped pointers.  The warning is enabled at all optimization
+  levels but may yield different results with optimization than without.
+
+  ``-Wdangling-pointer=1``
+    At level 1 the warning diagnoses only unconditional uses of dangling pointers.
+    For example
+
+    .. code-block:: c++
+
+      int f (int c1, int c2, x)
+      {
+        char *p = strchr ((char[]){ c1, c2 }, c3);
+        return p ? *p : 'x';   // warning: dangling pointer to a compound literal
+      }
+
+    In the following function the store of the address of the local variable
+    ``x`` in the escaped pointer ``*p`` also triggers the warning.
+
+    .. code-block:: c++
+
+      void g (int **p)
+      {
+        int x = 7;
+        *p = &x;   // warning: storing the address of a local variable in *p
+      }
+
+  ``-Wdangling-pointer=2``
+    At level 2, in addition to unconditional uses the warning also diagnoses
+    conditional uses of dangling pointers.
+
+    For example, because the array :samp:`{a}` in the following function is out of
+    scope when the pointer :samp:`{s}` that was set to point is used, the warning
+    triggers at this level.
+
+    .. code-block:: c++
+
+      void f (char *s)
+      {
+        if (!s)
+          {
+            char a[12] = "tmpname";
+            s = a;
+          }
+        strcat (s, ".tmp");   // warning: dangling pointer to a may be used
+        ...
+      }
+
+    :option:`-Wdangling-pointer`:samp:`=2` is included in :option:`-Wall`.
+
+.. option:: -Wno-dangling-pointer
+
+  Default setting; overrides :option:`-Wdangling-pointer`.
+
 .. option:: -Wdate-time
 
   Warn when macros ``__TIME__``, ``__DATE__`` or ``__TIMESTAMP__``
@@ -4070,6 +4131,41 @@ warn at all unless optimization is enabled.
 .. option:: -Wmissing-requires
 
   Default setting; overrides :option:`-Wno-missing-requires`.
+
+.. option:: -Wno-missing-template-keyword
+
+  The member access tokens ., -> and :: must be followed by the ``template``
+  keyword if the parent object is dependent and the member being named is a
+  template.
+
+  .. code-block:: c++
+
+    template <class X>
+    void DoStuff (X x)
+    {
+      x.template DoSomeOtherStuff<X>(); // Good.
+      x.DoMoreStuff<X>(); // Warning, x is dependent.
+    }
+
+  In rare cases it is possible to get false positives. To silence this, wrap
+  the expression in parentheses. For example, the following is treated as a
+  template, even where m and N are integers:
+
+  .. code-block:: c++
+
+    void NotATemplate (my_class t)
+    {
+      int N = 5;
+
+      bool test = t.m < N > (0); // Treated as a template.
+      test = (t.m < N) > (0); // Same meaning, but not treated as a template.
+    }
+
+  This warning can be disabled with :option:`-Wno-missing-template-keyword`.
+
+.. option:: -Wmissing-template-keyword
+
+  Default setting; overrides :option:`-Wno-missing-template-keyword`.
 
 .. option:: -Wno-multichar
 

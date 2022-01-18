@@ -52,7 +52,7 @@ The files can contain the following types of record:
   name of the include file.
 
 * A variable record to record any additional files that the
-  :samp:`options.c` or :samp:`options-save.c` file should include.  This
+  :samp:`options.cc` or :samp:`options-save.cc` file should include.  This
   is useful to provide
   inline functions needed for target variables and/or ``#ifdef``
   sequences to properly set up the initialization.  These records have

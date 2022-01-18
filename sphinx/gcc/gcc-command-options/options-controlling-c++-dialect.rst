@@ -1938,6 +1938,72 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Wsuggest-override`.
 
+.. option:: -Wuse-after-free, -Wuse-after-free={n}
+
+  Warn about uses of pointers to dynamically allocated objects that have
+  been rendered indeterminate by a call to a deallocation function.
+  The warning is enabled at all optimization levels but may yield different
+  results with optimization than without.
+
+  ``-Wuse-after-free=1``
+    At level 1 the warning attempts to diagnose only unconditional uses
+    of pointers made indeterminate by a deallocation call or a successful
+    call to ``realloc``, regardless of whether or not the call resulted
+    in an actual reallocatio of memory.  This includes double- ``free``
+    calls as well as uses in arithmetic and relational expressions.  Although
+    undefined, uses of indeterminate pointers in equality (or inequality)
+    expressions are not diagnosed at this level.
+
+  ``-Wuse-after-free=2``
+    At level 2, in addition to unconditional uses, the warning also diagnoses
+    conditional uses of pointers made indeterminate by a deallocation call.
+    As at level 2, uses in equality (or inequality) expressions are not
+    diagnosed.  For example, the second call to ``free`` in the following
+    function is diagnosed at this level:
+
+    .. code-block:: c++
+
+      struct A { int refcount; void *data; };
+
+      void release (struct A *p)
+      {
+        int refcount = --p->refcount;
+        free (p);
+        if (refcount == 0)
+          free (p->data);   // warning: p may be used after free
+      }
+
+  ``-Wuse-after-free=3``
+    At level 3, the warning also diagnoses uses of indeterminate pointers in
+    equality expressions.  All uses of indeterminate pointers are undefined
+    but equality tests sometimes appear after calls to ``realloc`` as
+    an attempt to determine whether the call resulted in relocating the object
+    to a different address.  They are diagnosed at a separate level to aid
+    legacy code gradually transition to safe alternatives.  For example,
+    the equality test in the function below is diagnosed at this level:
+
+    .. code-block:: c++
+
+      void adjust_pointers (int**, int);
+
+      void grow (int **p, int n)
+      {
+        int **q = (int**)realloc (p, n *= 2);
+        if (q == p)
+          return;
+        adjust_pointers ((int**)q, n);
+      }
+
+    To avoid the warning at this level, store offsets into allocated memory
+    instead of pointers.  This approach obviates needing to adjust the stored
+    pointers after reallocation.
+
+    :option:`-Wuse-after-free`:samp:`=2` is included in :option:`-Wall`.
+
+.. option:: -Wno-use-after-free
+
+  Default setting; overrides :option:`-Wuse-after-free`.
+
 .. option:: -Wuseless-cast
 
   .. note::

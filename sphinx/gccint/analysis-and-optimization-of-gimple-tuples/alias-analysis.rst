@@ -76,7 +76,7 @@ be queried to disambiguate explicit and implicit memory references.
 * Type-based alias analysis
 
   Type-based alias analysis is frontend dependent though generic
-  support is provided by the middle-end in ``alias.c``.  TBAA
+  support is provided by the middle-end in ``alias.cc``.  TBAA
   code is used by both tree optimizers and RTL optimizers.
 
   Every language that wishes to perform language-specific alias analysis

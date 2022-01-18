@@ -173,7 +173,8 @@ in the following sections.
   :option:`-Wchar-subscripts` 
   :option:`-Wclobbered`  :option:`-Wcomment` 
   :option:`-Wconversion`  :option:`-Wno-coverage-mismatch`  :option:`-Wno-cpp` 
-  :option:`-Wdangling-else`  :option:`-Wdate-time` 
+  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer`:samp:`={n}`  
+  :option:`-Wdate-time` 
   :option:`-Wno-deprecated`  :option:`-Wno-deprecated-declarations`  :option:`-Wno-designated-init` 
   :option:`-Wdisabled-optimization` 
   :option:`-Wno-discarded-array-qualifiers`  :option:`-Wno-discarded-qualifiers` 

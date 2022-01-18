@@ -35,7 +35,7 @@ variable, this will be parsed as an assignment statement, and the error
 discarded.  However, when ``IF`` is not a valid variable, this
 buffered error message will be reported to the user.
 
-The error handling code is implemented in :samp:`error.c`.  Errors are
+The error handling code is implemented in :samp:`error.cc`.  Errors are
 normally entered into the buffer with the ``gfc_error`` function.
 Warnings go through a similar buffering process, and are entered into
 the buffer with ``gfc_warning``.  There is also a special-purpose
@@ -72,7 +72,7 @@ The syntax for the strings used to produce the error/warning message in
 the various error and warning functions is similar to the ``printf``
 syntax, with :samp:`%`-escapes to insert variable values.  The details,
 and the allowable codes, are documented in the ``error_print``
-function in :samp:`error.c`.
+function in :samp:`error.cc`.
 
 .. -
    Frontend Data Structures

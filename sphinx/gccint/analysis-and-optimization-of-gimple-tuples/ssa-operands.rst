@@ -141,7 +141,7 @@ Operand Iterators And Access Routines
 
 .. index:: Operand Access Routines
 
-Operands are collected by :samp:`tree-ssa-operands.c`.  They are stored
+Operands are collected by :samp:`tree-ssa-operands.cc`.  They are stored
 inside each statement's annotation and can be accessed through either the
 operand iterators or an access routine.
 

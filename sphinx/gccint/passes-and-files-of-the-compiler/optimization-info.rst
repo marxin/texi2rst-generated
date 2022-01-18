@@ -34,7 +34,7 @@ Dump setup
 
 A dump_manager class is defined in :samp:`dumpfile.h`. Various passes
 register dumping pass-specific information via ``dump_register`` in
-:samp:`passes.c`. During the registration, an optimization pass can
+:samp:`passes.cc`. During the registration, an optimization pass can
 select its optimization group (see :ref:`optimization-groups`). After
 that optimization information corresponding to the entire group
 (presumably from multiple passes) can be output via command-line
@@ -174,7 +174,7 @@ Dump types
   information is relevant, and under what conditions. This determines
   the associated flags.
 
-  Consider the following example from :samp:`loop-unroll.c` where an
+  Consider the following example from :samp:`loop-unroll.cc` where an
   informative message about a loop (along with its location) is printed
   when any of the following flags is enabled
 

@@ -713,7 +713,7 @@ applied.
   :samp:`{name}` is the name used for the type qualifier in source code,
   :samp:`{n}` is the length of :samp:`{name}` as above, and :samp:`{code}` is the
   code used to represent the unqualified version of this type.  (See
-  ``write_builtin_type`` in :samp:`cp/mangle.c` for the list of
+  ``write_builtin_type`` in :samp:`cp/mangle.cc` for the list of
   codes.)  In both cases the spaces are for clarity; do not include any
   spaces in your string.
 

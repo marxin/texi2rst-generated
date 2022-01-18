@@ -35,7 +35,7 @@ In general ``LIVE`` is the most useful of the three.  The macros
 The macros take a basic block number and return a bitmap that is indexed
 by the register number.  This information is only guaranteed to be up to
 date after calls are made to ``df_analyze``.  See the file
-``df-core.c`` for details on using the dataflow.
+``df-core.cc`` for details on using the dataflow.
 
 .. index:: REG_DEAD, REG_UNUSED
 

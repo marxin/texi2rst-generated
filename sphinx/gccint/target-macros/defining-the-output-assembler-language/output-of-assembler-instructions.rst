@@ -189,7 +189,7 @@ being output.
 
   If defined, C string expressions to be used for the :samp:`%R`, :samp:`%L`,
   :samp:`%U`, and :samp:`%I` options of ``asm_fprintf`` (see
-  :samp:`final.c`).  These are useful when a single :samp:`md` file must
+  :samp:`final.cc`).  These are useful when a single :samp:`md` file must
   support multiple assembler formats.  In that case, the various :samp:`tm.h`
   files can define these macros differently.
 

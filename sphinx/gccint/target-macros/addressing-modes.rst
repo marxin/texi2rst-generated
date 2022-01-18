@@ -147,9 +147,9 @@ This is about addressing modes.
 .. c:macro:: FIND_BASE_TERM (x)
 
   A C expression to determine the base term of address :samp:`{x}`,
-  or to provide a simplified version of :samp:`{x}` from which :samp:`alias.c`
+  or to provide a simplified version of :samp:`{x}` from which :samp:`alias.cc`
   can easily find the base term.  This macro is used in only two places:
-  ``find_base_value`` and ``find_base_term`` in :samp:`alias.c`.
+  ``find_base_value`` and ``find_base_term`` in :samp:`alias.cc`.
 
   It is always safe for this macro to not be defined.  It exists so
   that alias analysis can understand machine-dependent addresses.

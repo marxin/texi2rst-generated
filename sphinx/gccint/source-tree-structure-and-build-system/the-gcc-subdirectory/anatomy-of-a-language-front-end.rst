@@ -38,7 +38,7 @@ A front end for a language in GCC has the following parts:
 * Details of source file suffixes for that language and :option:`-x
   `:samp:`{lang}` options supported, in :samp:`gcc/doc/invoke.texi`.
 
-* Entries in ``default_compilers`` in :samp:`gcc.c` for source file
+* Entries in ``default_compilers`` in :samp:`gcc.cc` for source file
   suffixes for that language.
 
 * Preferably testsuites, which may be under :samp:`gcc/testsuite` or
@@ -121,7 +121,7 @@ their names:
 
 :samp:`lang-specs.h`
   This file provides entries for ``default_compilers`` in
-  :samp:`gcc.c` which override the default of giving an error that a
+  :samp:`gcc.cc` which override the default of giving an error that a
   compiler for that language is not installed.
 
 :samp:`{language}-tree.def`
@@ -190,7 +190,7 @@ the language:
 
 ``gtfiles``
   If defined, a space-separated list of files that should be scanned by
-  :samp:`gengtype.c` to generate the garbage collection tables and routines for
+  :samp:`gengtype.cc` to generate the garbage collection tables and routines for
   this language.  This excludes the files that are common to all front
   ends.  See :ref:`type-information`.
 

@@ -52,7 +52,7 @@ Clauses ``if``, ``nontemporal`` and ``order(concurrent)`` in             Y
 Predefined memory spaces, memory allocators, allocator traits            Y       Some are only stubs
 Memory management routines                                               Y
 ``allocate`` directive                                                   N
-``allocate`` clause                                                      P       initial support in C/C++ only
+``allocate`` clause                                                      P       initial support
 ``use_device_addr`` clause on ``target data``                            Y
 ``ancestor`` modifier on ``device`` clause                               P       Reverse offload unsupported
 Implicit declare target directive                                        Y

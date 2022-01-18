@@ -54,7 +54,7 @@ C standard library and headers
 
   .. _gnat-prerequisite:
   In order to build GNAT, the Ada compiler, you need a working GNAT
-  compiler (GCC version 4.7 or later).
+  compiler (GCC version 5.1 or later).
 
   This includes GNAT tools such as :command:`gnatmake` and
   :command:`gnatlink`, since the Ada front end is written in Ada and

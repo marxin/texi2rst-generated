@@ -32,7 +32,7 @@ expressions are renamed so that their version number matches that of
 the most recent assignment.
 
 We represent variable versions using ``SSA_NAME`` nodes.  The
-renaming process in :samp:`tree-ssa.c` wraps every real and
+renaming process in :samp:`tree-ssa.cc` wraps every real and
 virtual operand with an ``SSA_NAME`` node which contains
 the version number and the statement that created the
 ``SSA_NAME``.  Only definitions and virtual definitions may

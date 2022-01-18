@@ -287,7 +287,7 @@ registers and to main memory.
     ``WORDS_BIG_ENDIAN``.  However, most parts of the compiler treat
     floating point values as if they had the same endianness as integer
     values.  This works because they handle them solely as a collection of
-    integer values, with no particular numerical value.  Only real.c and
+    integer values, with no particular numerical value.  Only real.cc and
     the runtime libraries care about ``FLOAT_WORDS_BIG_ENDIAN``.
 
     Thus,

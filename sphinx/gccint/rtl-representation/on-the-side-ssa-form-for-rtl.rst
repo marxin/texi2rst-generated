@@ -578,7 +578,7 @@ It returns true on success or false if no suitable location exists.
 
 The pass should also tentatively change the pattern of the instruction
 to whatever form the pass wants the instruction to have.  This should use
-the facilities provided by :samp:`recog.c`.  For example:
+the facilities provided by :samp:`recog.cc`.  For example:
 
 .. code-block:: c++
 

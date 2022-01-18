@@ -18,7 +18,7 @@ machinery to create the code that enables :command:`gfortran` and
 call the relevant handler function.
 
 This generated code calls the ``gfc_handle_option`` code in
-:samp:`options.c` with an enumerator variable indicating which option is
+:samp:`options.cc` with an enumerator variable indicating which option is
 to be processed, and the relevant integer or string values associated
 with that option flag.  Typically, ``gfc_handle_option`` uses these
 arguments to set global flags which record the option states.
@@ -26,7 +26,7 @@ arguments to set global flags which record the option states.
 The global flags that record the option states are stored in the
 ``gfc_option_t`` struct, which is defined in :samp:`gfortran.h`.
 Before the options are processed, initial values for these flags are set
-in ``gfc_init_option`` in :samp:`options.c`; these become the default
+in ``gfc_init_option`` in :samp:`options.cc`; these become the default
 values for the options.
 
 .. -

@@ -86,7 +86,7 @@ Machine-Independent Predicates
 .. index:: generic predicates
 
 These are the generic predicates available to all back ends.  They are
-defined in :samp:`recog.c`.  The first category of predicates allow
+defined in :samp:`recog.cc`.  The first category of predicates allow
 only constant, or :dfn:`immediate`, operands.
 
 .. index:: immediate_operand

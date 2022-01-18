@@ -205,7 +205,7 @@ Every insn has one of the following expression codes:
   The only place that cares about the distinction between static, global,
   and weak alternate entry points, besides the front-end code that creates
   them, is the function ``output_alternate_entry_point``, in
-  :samp:`final.c`.
+  :samp:`final.cc`.
 
   To set the kind of a label, use the ``SET_LABEL_KIND`` macro.
 

@@ -412,7 +412,7 @@ the stack.
   This hook performs target-specific gimplification of
   ``VA_ARG_EXPR``.  The first two parameters correspond to the
   arguments to ``va_arg`` ; the latter two are as in
-  ``gimplify.c:gimplify_expr``.
+  ``gimplify.cc:gimplify_expr``.
 
 .. hook-end
 
@@ -462,7 +462,7 @@ the stack.
   The default version of this hook returns true for any mode
   required to handle the basic C types (as defined by the port).
   Included here are the double-word arithmetic supported by the
-  code in :samp:`optabs.c`.
+  code in :samp:`optabs.cc`.
 
 .. hook-end
 

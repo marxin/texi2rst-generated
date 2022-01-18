@@ -134,7 +134,7 @@ You can control the compilation driver.
   command given to the linker.
 
   If this macro is not defined, a default is provided that
-  loads the standard C library from the usual place.  See :samp:`gcc.c`.
+  loads the standard C library from the usual place.  See :samp:`gcc.cc`.
 
 .. c:macro:: LIBGCC_SPEC
 
@@ -181,7 +181,7 @@ You can control the compilation driver.
   the very beginning of the command given to the linker.
 
   If this macro is not defined, a default is provided that loads the
-  standard C startup file from the usual place.  See :samp:`gcc.c`.
+  standard C startup file from the usual place.  See :samp:`gcc.cc`.
 
 .. c:macro:: ENDFILE_SPEC
 
@@ -287,7 +287,7 @@ You can control the compilation driver.
 
   A C string constant giving the complete command line need to execute the
   linker.  When you do this, you will need to update your port each time a
-  change is made to the link command line within :samp:`gcc.c`.  Therefore,
+  change is made to the link command line within :samp:`gcc.cc`.  Therefore,
   define this macro only if you need to completely redefine the command
   line for invoking the linker and there is no other way to accomplish
   the effect you need.  Overriding this macro may be avoidable by overriding

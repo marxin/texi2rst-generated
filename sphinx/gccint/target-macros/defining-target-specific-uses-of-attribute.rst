@@ -99,7 +99,7 @@ be documented in :samp:`extend.texi`.
   add ``handle_dll_attribute`` in the attribute table for your port
   to perform initial processing of the :samp:`dllimport` and
   :samp:`dllexport` attributes.  This is done in :samp:`i386/cygwin.h` and
-  :samp:`i386/i386.c`, for example.
+  :samp:`i386/i386.cc`, for example.
 
 .. hook-end
 

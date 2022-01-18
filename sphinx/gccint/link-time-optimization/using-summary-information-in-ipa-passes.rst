@@ -187,9 +187,9 @@ locations where the address of ``A`` is taken and, when
 ``A`` is a variable, a list of all direct stores and reads
 to/from ``A``.  References represent an oriented multi-graph on
 the union of nodes of the callgraph and the varpool.  See
-:samp:`ipa-reference.c`: ``ipa_reference_write_optimization_summary``
+:samp:`ipa-reference.cc`: ``ipa_reference_write_optimization_summary``
 and
-:samp:`ipa-reference.c`: ``ipa_reference_read_optimization_summary``
+:samp:`ipa-reference.cc`: ``ipa_reference_read_optimization_summary``
 for details.
 
 Jump functions

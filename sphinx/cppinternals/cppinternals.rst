@@ -440,7 +440,7 @@ File Handling
 .. index:: files
 
 Fairly obviously, the file handling code of cpplib resides in the file
-:samp:`files.c`.  It takes care of the details of file searching,
+:samp:`files.cc`.  It takes care of the details of file searching,
 opening, reading and caching, for both the main source file and all the
 headers it recursively includes.
 
