@@ -33,7 +33,7 @@ Here is an explanation of implicit calls to library routines.
 
   This hook should declare additional library routines or rename
   existing ones, using the functions ``set_optab_libfunc`` and
-  ``init_one_libfunc`` defined in :samp:`optabs.c`.
+  ``init_one_libfunc`` defined in :samp:`optabs.cc`.
   ``init_optabs`` calls this macro after initializing all the normal
   library routines.
 

@@ -14,7 +14,7 @@ The GIMPLE and GENERIC pattern matching project match-and-simplify
 tries to address several issues.
 
 * unify expression simplifications currently spread and duplicated
-  over separate files like fold-const.c, gimple-fold.c and builtins.c
+  over separate files like fold-const.cc, gimple-fold.cc and builtins.cc
 
 * allow for a cheap way to implement building and simplifying
   non-trivial GIMPLE expressions, avoiding the need to go through

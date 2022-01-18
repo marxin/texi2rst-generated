@@ -758,7 +758,7 @@ AVR Variable Attributes
     and ``STS``, there is currently (Binutils 2.26) just an unspecific
     warning like
 
-    ``module.c:(.text+0x1c): warning: internal error: out of range error``
+    ``module.cc:(.text+0x1c): warning: internal error: out of range error``
 
   See also the :option:`-mabsdata` :ref:`avr-options`.
 

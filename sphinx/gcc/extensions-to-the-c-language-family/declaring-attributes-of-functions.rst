@@ -62,7 +62,8 @@ variable declarations (see :ref:`variable-attributes`),
 labels (see :ref:`label-attributes`),
 enumerators (see :ref:`enumerator-attributes`),
 statements (see :ref:`statement-attributes`),
-and types (see :ref:`type-attributes`).
+types (see :ref:`type-attributes`),
+and on field declarations (for :gcc-attr:`tainted_args`).
 
 There is some overlap between the purposes of attributes and pragmas
 (see :ref:`pragmas`).  It has been

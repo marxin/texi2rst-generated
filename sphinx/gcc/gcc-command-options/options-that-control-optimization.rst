@@ -54,7 +54,7 @@ See :ref:`overall-options`, for examples.
   time, without performing any optimizations that take a great deal of
   compilation time.
 
-  .. Note that in addition to the default_options_table list in opts.c,
+  .. Note that in addition to the default_options_table list in opts.cc,
      several optimization flags default to true but control optimization
      passes that are explicitly disabled at -O0.
 
@@ -2825,7 +2825,7 @@ section includes experimental options that may produce broken code.
   With :option:`-fbranch-probabilities`, GCC puts a
   :samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.
   These can be used to improve optimization.  Currently, they are only
-  used in one place: in :samp:`reorg.c`, instead of guessing which path a
+  used in one place: in :samp:`reorg.cc`, instead of guessing which path a
   branch is most likely to take, the :samp:`REG_BR_PROB` values are used to
   exactly determine which path is taken more often.
 
@@ -4291,7 +4291,7 @@ section includes experimental options that may produce broken code.
     conservative approach taken by algorithm 1 and the rather aggressive
     approach taken by the default scheduler.  It relies more heavily on
     having a regular register file and accurate register pressure classes.
-    See :samp:`haifa-sched.c` in the GCC sources for more details.
+    See :samp:`haifa-sched.cc` in the GCC sources for more details.
 
     The default choice depends on the target.
 

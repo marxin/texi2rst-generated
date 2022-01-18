@@ -549,7 +549,7 @@ in many of the tables described below.
   the DEC Alpha, that store short integers in floating-point registers
   differently than in integer registers.  On those machines, the default
   widening will not work correctly and you must define this hook to
-  suppress that widening in some cases.  See the file :samp:`alpha.c` for
+  suppress that widening in some cases.  See the file :samp:`alpha.cc` for
   details.
 
   With LRA, the default is to use :samp:`{mode}` unmodified.

@@ -23,9 +23,9 @@ These options are defined for AVR implementations:
   GCC supports the following AVR devices and ISAs:
 
   .. This file is generated automatically using
-     gcc/config/avr/gen-avr-mmcu-texi.c from:
+     gcc/config/avr/gen-avr-mmcu-texi.cc from:
       c	 gcc/config/avr/avr-arch.h
-      c	 gcc/config/avr/avr-devices.c
+      c	 gcc/config/avr/avr-devices.cc
       c	 gcc/config/avr/avr-mcus.def
      Please do not edit manually.
 

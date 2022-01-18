@@ -180,7 +180,8 @@ in the following sections.
   :option:`-Wchar-subscripts` |gol|
   :option:`-Wclobbered`  :option:`-Wcomment` |gol|
   :option:`-Wconversion`  :option:`-Wno-coverage-mismatch`  :option:`-Wno-cpp` |gol|
-  :option:`-Wdangling-else`  :option:`-Wdate-time` |gol|
+  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer`:samp:`={n}`  
+  :option:`-Wdate-time` 
   :option:`-Wno-deprecated`  :option:`-Wno-deprecated-declarations`  :option:`-Wno-designated-init` |gol|
   :option:`-Wdisabled-optimization` |gol|
   :option:`-Wno-discarded-array-qualifiers`  :option:`-Wno-discarded-qualifiers` |gol|

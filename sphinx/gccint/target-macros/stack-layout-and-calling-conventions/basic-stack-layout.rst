@@ -94,7 +94,7 @@ Here is the basic stack layout.
 
   The default value for this macro is ``STACK_POINTER_OFFSET`` plus the
   length of the outgoing arguments.  The default is correct for most
-  machines.  See :samp:`function.c` for details.
+  machines.  See :samp:`function.cc` for details.
 
 .. c:macro:: INITIAL_FRAME_ADDRESS_RTX
 

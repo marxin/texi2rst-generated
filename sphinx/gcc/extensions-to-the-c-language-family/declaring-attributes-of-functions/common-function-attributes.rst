@@ -1515,6 +1515,28 @@ The following attributes are supported on most targets.
   ``"name2@nodename"`` was used) the version will be also used
   to resolve :samp:`{name2}` by the linker.
 
+.. gcc-attr:: tainted_args
+
+  .. index:: tainted_args function attribute
+
+  The :gcc-attr:`tainted_args` attribute is used to specify that a function is called
+  in a way that requires sanitization of its arguments, such as a system
+  call in an operating system kernel.  Such a function can be considered part
+  of the 'attack surface' of the program.  The attribute can be used both
+  on function declarations, and on field declarations containing function
+  pointers.  In the latter case, any function used as an initializer of
+  such a callback field will be treated as being called with tainted
+  arguments.
+
+  The analyzer will pay particular attention to such functions when both
+  :option:`-fanalyzer` and :option:`-fanalyzer-checker`:samp:`=taint` are supplied,
+  potentially issuing warnings guarded by
+  :option:`-Wanalyzer-tainted-allocation-size`,
+  :option:`-Wanalyzer-tainted-array-index`,
+  :option:`-Wanalyzer-tainted-divisor`,
+  :option:`-Wanalyzer-tainted-offset`,
+  and :option:`-Wanalyzer-tainted-size`.
+
 .. gcc-attr:: target_clones (options)
 
   .. index:: target_clones function attribute

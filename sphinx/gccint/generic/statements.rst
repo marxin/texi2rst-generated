@@ -429,8 +429,8 @@ clauses used by the OpenMP API https://www.openmp.org.
 
   This does not represent any OpenMP directive, it is an artificial
   marker to indicate the end of the body of an OpenMP. It is used
-  by the flow graph (``tree-cfg.c``) and OpenMP region
-  building code (``omp-low.c``).
+  by the flow graph (``tree-cfg.cc``) and OpenMP region
+  building code (``omp-low.cc``).
 
 .. envvar:: OMP_CONTINUE
 

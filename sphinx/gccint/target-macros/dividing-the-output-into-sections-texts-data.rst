@@ -20,11 +20,11 @@ section`, which holds initialized writable data; and the :dfn:`bss
 section`, which holds uninitialized data.  Some systems have other kinds
 of sections.
 
-:samp:`varasm.c` provides several well-known sections, such as
+:samp:`varasm.cc` provides several well-known sections, such as
 ``text_section``, ``data_section`` and ``bss_section``.
 The normal way of controlling a ``foo_section`` variable
 is to define the associated ``FOO_SECTION_ASM_OP`` macro,
-as described below.  The macros are only read once, when :samp:`varasm.c`
+as described below.  The macros are only read once, when :samp:`varasm.cc`
 initializes itself, so their values must be run-time constants.
 They may however depend on command-line flags.
 
@@ -44,7 +44,7 @@ in ``TARGET_ASM_INIT_SECTIONS``.  The same is true of
 create a distinct ``readonly_data_section``, the default is to
 reuse ``text_section``.
 
-All the other :samp:`varasm.c` sections are optional, and are null
+All the other :samp:`varasm.cc` sections are optional, and are null
 if the target does not provide them.
 
 .. c:macro:: TEXT_SECTION_ASM_OP
@@ -194,7 +194,7 @@ if the target does not provide them.
   .. hook-start:TARGET_ASM_INIT_SECTIONS
 
   Define this hook if you need to do something special to set up the
-  :samp:`varasm.c` sections, or if your target has some special sections
+  :samp:`varasm.cc` sections, or if your target has some special sections
   of its own that you need to create.
 
   GCC calls this hook after processing the command line, but before writing
@@ -374,7 +374,7 @@ if the target does not provide them.
   discouraged; use ``SYMBOL_REF_FLAGS``.
 
   The default definition of this hook, ``default_encode_section_info``
-  in :samp:`varasm.c`, sets a number of commonly-useful bits in
+  in :samp:`varasm.cc`, sets a number of commonly-useful bits in
   ``SYMBOL_REF_FLAGS``.  Check whether the default does what you need
   before overriding it.
 

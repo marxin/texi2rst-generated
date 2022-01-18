@@ -46,7 +46,7 @@ The following GNU Makefile excerpt shows how to build a simple plugin:
      $(HOST_GCC) -shared $(CXXFLAGS) $^ -o $@
 
 A single source file plugin may be built with ``g++ -I`gcc
--print-file-name=plugin`/include -fPIC -shared -fno-rtti -O2 plugin.c -o
+-print-file-name=plugin`/include -fPIC -shared -fno-rtti -O2 plugin.cc -o
 plugin.so``, using backquote shell syntax to query the :samp:`plugin`
 directory.
 
@@ -90,7 +90,7 @@ compiler:
 .. code-block::
 
   g++ -I`gcc -print-file-name=plugin`/include -shared -Wl,--export-all-symbols \
-  -o plugin.dll plugin.c `gcc -print-file-name=plugin`/cc1plus.exe.a
+  -o plugin.dll plugin.cc `gcc -print-file-name=plugin`/cc1plus.exe.a
 
 When a plugin needs to use :command:`gengtype`, be sure that both
 :samp:`gengtype` and :samp:`gtype.state` have the same version as the

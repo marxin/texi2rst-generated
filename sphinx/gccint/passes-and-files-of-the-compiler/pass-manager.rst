@@ -8,7 +8,7 @@
 Pass manager
 ************
 
-The pass manager is located in :samp:`passes.c`, :samp:`tree-optimize.c`
+The pass manager is located in :samp:`passes.cc`, :samp:`tree-optimize.c`
 and :samp:`tree-pass.h`.
 It processes passes as described in :samp:`passes.def`.
 Its job is to run all of the individual passes in the correct order,

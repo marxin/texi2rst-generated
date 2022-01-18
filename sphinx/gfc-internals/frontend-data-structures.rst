@@ -12,7 +12,7 @@ Frontend Data Structures
 
 This chapter should describe the details necessary to understand how
 the various ``gfc_*`` data are used and interact.  In general it is
-advisable to read the code in :samp:`dump-parse-tree.c` as its routines
+advisable to read the code in :samp:`dump-parse-tree.cc` as its routines
 should exhaust all possible valid combinations of content for these
 structures.
 

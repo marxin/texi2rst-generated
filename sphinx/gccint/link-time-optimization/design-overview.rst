@@ -45,22 +45,22 @@ Currently, this phase is composed of two IPA passes:
 
 * ``pass_ipa_lto_gimple_out``
   This pass executes the function ``lto_output`` in
-  :samp:`lto-streamer-out.c`, which traverses the call graph encoding
+  :samp:`lto-streamer-out.cc`, which traverses the call graph encoding
   every reachable declaration, type and function.  This generates a
   memory representation of all the file sections described below.
 
 * ``pass_ipa_lto_finish_out``
   This pass executes the function ``produce_asm_for_decls`` in
-  :samp:`lto-streamer-out.c`, which takes the memory image built in the
+  :samp:`lto-streamer-out.cc`, which takes the memory image built in the
   previous pass and encodes it in the corresponding ELF file sections.
 
 The second half of LTO support is the 'reader'.  This is implemented
-as the GCC front end :samp:`lto1` in :samp:`lto/lto.c`.  When
+as the GCC front end :samp:`lto1` in :samp:`lto/lto.cc`.  When
 :samp:`collect2` detects a link set of ``.o`` / ``.a`` files with
 LTO information and the :option:`-flto` is enabled, it invokes
 :samp:`lto1` which reads the set of files and aggregates them into a
 single translation unit for optimization.  The main entry point for
-the reader is :samp:`lto/lto.c`: ``lto_main``.
+the reader is :samp:`lto/lto.cc`: ``lto_main``.
 
 LTO modes of operation
 ^^^^^^^^^^^^^^^^^^^^^^

@@ -352,7 +352,7 @@ Update dynamic checking info
     tree_contains_struct[FOO_DECL][TS_DECL_MINIMAL] = 1;
 
   For ``DECL`` nodes that are part of the middle-end, the setup code
-  goes into :samp:`tree.c`.
+  goes into :samp:`tree.cc`.
 
 Add macros to access any new fields and flags
   Each added field or flag should have a macro that is used to access
@@ -375,6 +375,6 @@ Add macros to access any new fields and flags
        (BASE_STRUCT_CHECK(NODE)->base_struct.fieldname
 
   Reading them from the generated :samp:`all-tree.def` file (which in
-  turn includes all the :samp:`tree.def` files), :samp:`gencheck.c` is
+  turn includes all the :samp:`tree.def` files), :samp:`gencheck.cc` is
   used during GCC's build to generate the ``*_CHECK`` macros for all
   tree codes.

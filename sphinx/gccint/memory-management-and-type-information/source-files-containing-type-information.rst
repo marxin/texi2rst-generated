@@ -40,15 +40,15 @@ there are three things you need to do:
   header file, this should be done automatically.  For a front-end header
   file, it needs to be included by the same file that includes
   :samp:`gtype-{lang}.h`.  For other header files, it needs to be
-  included in :samp:`gtype-desc.c`, which is a generated file, so add it to
-  ``ifiles`` in ``open_base_file`` in :samp:`gengtype.c`.
+  included in :samp:`gtype-desc.cc`, which is a generated file, so add it to
+  ``ifiles`` in ``open_base_file`` in :samp:`gengtype.cc`.
 
   For source files that aren't header files, the machinery will generate a
   header file that should be included in the source file you just changed.
   The file will be called :samp:`gt-{path}.h` where :samp:`{path}` is the
   pathname relative to the :samp:`gcc` directory with slashes replaced by
   -, so for example the header file to be included in
-  :samp:`cp/parser.c` is called :samp:`gt-cp-parser.h`.  The
+  :samp:`cp/parser.cc` is called :samp:`gt-cp-parser.h`.  The
   generated header file should be included after everything else in the
   source file.
 

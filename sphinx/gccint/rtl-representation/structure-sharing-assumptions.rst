@@ -93,7 +93,7 @@ no RTL objects are common to two functions.
 
 * During initial RTL generation, shared structure is freely introduced.
   After all the RTL for a function has been generated, all shared
-  structure is copied by ``unshare_all_rtl`` in :samp:`emit-rtl.c`,
+  structure is copied by ``unshare_all_rtl`` in :samp:`emit-rtl.cc`,
   after which the above rules are guaranteed to be followed.
 
   .. index:: copy_rtx_if_shared

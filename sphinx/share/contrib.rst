@@ -492,7 +492,7 @@ alphabetical order.
   entire Debian archive.
 
 * David Miller for his direction via the steering committee, lots of
-  SPARC work, improvements in jump.c and interfacing with the Linux kernel
+  SPARC work, improvements in jump.cc and interfacing with the Linux kernel
   developers.
 
 * Gary Miller ported GCC to Charles River Data Systems machines.

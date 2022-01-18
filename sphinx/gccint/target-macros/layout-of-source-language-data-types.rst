@@ -169,7 +169,7 @@ languages, rather than to fundamental aspects of storage layout.
   spaces, and write first any length keyword, then ``unsigned`` if
   appropriate, and finally ``int``.  The string must exactly match one
   of the data type names defined in the function
-  ``c_common_nodes_and_builtins`` in the file :samp:`c-family/c-common.c`.
+  ``c_common_nodes_and_builtins`` in the file :samp:`c-family/c-common.cc`.
   You may not omit ``int`` or change the order---that would cause the
   compiler to crash on startup.
 

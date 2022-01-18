@@ -57,7 +57,7 @@ outputting a single uninitialized variable.
   is the alignment specified as the number of bits.
 
   Try to use function ``asm_output_aligned_bss`` defined in file
-  :samp:`varasm.c` when defining this macro.  If unable, use the expression
+  :samp:`varasm.cc` when defining this macro.  If unable, use the expression
   ``assemble_name (stream, name)`` to output the name itself;
   before and after that, output the additional assembler syntax for defining
   the name, and a newline.

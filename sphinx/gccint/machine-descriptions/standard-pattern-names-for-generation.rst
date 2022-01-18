@@ -507,26 +507,44 @@ maskstoremn
   .. index:: len_load_m instruction pattern
 
 len_load_m
-  Load the number of vector elements specified by operand 2 from memory
-  operand 1 into vector register operand 0, setting the other elements of
+  Load (operand 2 - operand 3) elements from vector memory operand 1
+  into vector register operand 0, setting the other elements of
   operand 0 to undefined values.  Operands 0 and 1 have mode :samp:`{m}`,
   which must be a vector mode.  Operand 2 has whichever integer mode the
-  target prefers.  If operand 2 exceeds the number of elements in mode
-  :samp:`{m}`, the behavior is undefined.  If the target prefers the length
-  to be measured in bytes rather than elements, it should only implement
-  this pattern for vectors of ``QI`` elements.
+  target prefers.  Operand 3 conceptually has mode ``QI``.
+
+  Operand 2 can be a variable or a constant amount.  Operand 3 specifies a
+  constant bias: it is either a constant 0 or a constant -1.  The predicate on
+  operand 3 must only accept the bias values that the target actually supports.
+  GCC handles a bias of 0 more efficiently than a bias of -1.
+
+  If (operand 2 - operand 3) exceeds the number of elements in mode
+  :samp:`{m}`, the behavior is undefined.
+
+  If the target prefers the length to be measured in bytes rather than
+  elements, it should only implement this pattern for vectors of ``QI``
+  elements.
 
   This pattern is not allowed to ``FAIL``.
 
   .. index:: len_store_m instruction pattern
 
 len_store_m
-  Store the number of vector elements specified by operand 2 from vector
-  register operand 1 into memory operand 0, leaving the other elements of
+  Store (operand 2 - operand 3) vector elements from vector register operand 1
+  into memory operand 0, leaving the other elements of
   operand 0 unchanged.  Operands 0 and 1 have mode :samp:`{m}`, which must be
   a vector mode.  Operand 2 has whichever integer mode the target prefers.
-  If operand 2 exceeds the number of elements in mode :samp:`{m}`, the behavior
-  is undefined.  If the target prefers the length to be measured in bytes
+  Operand 3 conceptually has mode ``QI``.
+
+  Operand 2 can be a variable or a constant amount.  Operand 3 specifies a
+  constant bias: it is either a constant 0 or a constant -1.  The predicate on
+  operand 3 must only accept the bias values that the target actually supports.
+  GCC handles a bias of 0 more efficiently than a bias of -1.
+
+  If (operand 2 - operand 3) exceeds the number of elements in mode
+  :samp:`{m}`, the behavior is undefined.
+
+  If the target prefers the length to be measured in bytes
   rather than elements, it should only implement this pattern for vectors
   of ``QI`` elements.
 
@@ -3625,3 +3643,13 @@ clear_cache
 
   If this pattern is not defined, a call to the library function
   ``__clear_cache`` is used.
+
+  .. index:: spaceshipm3 instruction pattern
+
+spaceshipm3
+  Initialize output operand 0 with mode of integer type to -1, 0, 1 or 2
+  if operand 1 with mode :samp:`{m}` compares less than operand 2, equal to
+  operand 2, greater than operand 2 or is unordered with operand 2.
+  :samp:`{m}` should be a scalar floating point mode.
+
+  This pattern is not allowed to ``FAIL``.

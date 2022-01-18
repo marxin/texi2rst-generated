@@ -1534,7 +1534,7 @@ Intel IA-64---:samp:`{config/ia64/ia64.h}`
     now roughly the same as :samp:`m` when not used together with :samp:`<`
     or :samp:`>`.
 
-M32C---:samp:`{config/m32c/m32c.c}`
+M32C---:samp:`{config/m32c/m32c.cc}`
 
   ``Rsp`` ``Rfb`` ``Rsb``
     :samp:`$sp`, :samp:`$fb`, :samp:`$sb`.

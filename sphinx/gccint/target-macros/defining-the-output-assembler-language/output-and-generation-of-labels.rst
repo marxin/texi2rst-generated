@@ -338,7 +338,7 @@ This is about outputting labels.
   A C expression which evaluates to true if the target supports one-only
   semantics.
 
-  If you don't define this macro, :samp:`varasm.c` provides a default
+  If you don't define this macro, :samp:`varasm.cc` provides a default
   definition.  If ``MAKE_DECL_ONE_ONLY`` is defined, the default
   definition is :samp:`1`; otherwise, it is :samp:`0`.  Define this macro if
   you want to control one-only symbol support with a compiler flag, or if
@@ -417,7 +417,7 @@ This is about outputting labels.
 
   .. hook-start:TARGET_MANGLE_ASSEMBLER_NAME
 
-  Given a symbol :samp:`{name}`, perform same mangling as ``varasm.c`` 's
+  Given a symbol :samp:`{name}`, perform same mangling as ``varasm.cc`` 's
   ``assemble_name``, but in memory rather than to a file stream, returning
   result as an ``IDENTIFIER_NODE``.  Required for correct LTO symtabs.  The
   default implementation calls the ``TARGET_STRIP_NAME_ENCODING`` hook and
