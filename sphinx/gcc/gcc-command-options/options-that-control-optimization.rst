@@ -4718,6 +4718,10 @@ section includes experimental options that may produce broken code.
     Maximum depth of logical expression evaluation ranger will look through
     when evaluating outgoing edge ranges.
 
+  .. gcc-param:: relation-block-limit
+
+    Maximum number of relations the oracle will register in a basic block.
+
   .. gcc-param:: openacc-kernels
 
     Specify mode of OpenACC 'kernels' constructs handling.

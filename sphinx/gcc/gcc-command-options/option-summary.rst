@@ -685,6 +685,8 @@ in the following sections.
   :option:`-mtp`:samp:`={name}`  :option:`-mtls-dialect`:samp:`={dialect}` |gol|
   :option:`-mword-relocations` |gol|
   :option:`-mfix-cortex-m3-ldrd` |gol|
+  :option:`-mfix-cortex-a57-aes-1742098` |gol|
+  :option:`-mfix-cortex-a72-aes-1655431` |gol|
   :option:`-munaligned-access` |gol|
   :option:`-mneon-for-64bits` |gol|
   :option:`-mslow-flash-data` |gol|
