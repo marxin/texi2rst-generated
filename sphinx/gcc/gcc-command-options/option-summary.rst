@@ -671,6 +671,8 @@ in the following sections.
   :option:`-mtp`:samp:`={name}`  :option:`-mtls-dialect`:samp:`={dialect}` 
   :option:`-mword-relocations` 
   :option:`-mfix-cortex-m3-ldrd` 
+  :option:`-mfix-cortex-a57-aes-1742098` 
+  :option:`-mfix-cortex-a72-aes-1655431` 
   :option:`-munaligned-access` 
   :option:`-mneon-for-64bits` 
   :option:`-mslow-flash-data` 
