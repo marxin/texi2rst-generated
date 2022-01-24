@@ -996,6 +996,14 @@ These :samp:`-m` options are defined for the ARM port:
   ``cortex-m33``, ``cortex-m35p`` or ``cortex-m55``.  The option
   :option:`-mno-fix-cmse-cve-2021-35465` can be used to disable the mitigation.
 
+.. option:: -mstack-protector-guard={guard}
+
+  Generate stack protection code using canary at :samp:`{guard}`.  Supported
+  locations are :samp:`global` for a global canary or :samp:`tls` for a
+  canary accessible via the TLS register. The option
+  :option:`-mstack-protector-guard-offset` = is for use with
+  :option:`-fstack-protector-guard`:samp:`=tls` and not for use in user-land code.
+
 .. option:: -mfdpic, -mno-fdpic
 
   Select the FDPIC ABI, which uses 64-bit function descriptors to

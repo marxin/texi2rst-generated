@@ -417,6 +417,8 @@ Unary and Binary Expressions
 
 .. index:: MULT_EXPR
 
+.. index:: WIDEN_MULT_EXPR
+
 .. index:: MULT_HIGHPART_EXPR
 
 .. index:: RDIV_EXPR
@@ -679,11 +681,20 @@ Unary and Binary Expressions
   The behavior of these operations on signed arithmetic overflow is
   controlled by the ``flag_wrapv`` and ``flag_trapv`` variables.
 
+.. envvar:: WIDEN_MULT_EXPR
+
+  This node represents a widening multiplication.  The operands have
+  integral types with same :samp:`{b}` bits of precision, producing an
+  integral type result with at least 2 :samp:`{b}` bits of precision.
+  The behaviour is equivalent to extending both operands, possibly of
+  different signedness, to the result type, then multiplying them.
+
 .. envvar:: MULT_HIGHPART_EXPR
 
   This node represents the 'high-part' of a widening multiplication.
   For an integral type with :samp:`{b}` bits of precision, the result is
   the most significant :samp:`{b}` bits of the full 2 :samp:`{b}` product.
+  Both operands must have the same precision and same signedness.
 
 .. envvar:: RDIV_EXPR
 

@@ -696,6 +696,7 @@ in the following sections.
   :option:`-mpure-code` |gol|
   :option:`-mcmse` |gol|
   :option:`-mfix-cmse-cve-2021-35465` |gol|
+  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-offset`:samp:`={offset}`  |gol|
   :option:`-mfdpic`
 
   *AVR Options*
