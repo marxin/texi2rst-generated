@@ -215,6 +215,24 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   converted to the integer specified in the corresponding
   :samp:`EnumValue` record before being passed to option handlers.
 
+``EnumSet``
+  Must be used together with the ``Enum(name)`` property.
+  Corresponding :samp:`Enum` record must use ``Set`` properties.
+  The option's argument is either a string from the set like for
+  ``Enum(name)``, but with a slightly different behavior that
+  the whole ``Var`` isn't overwritten, but only the bits in all the
+  enumeration values with the same set bitwise ored together.
+  Or option's argument can be a comma separated list of strings where
+  each string is from a different ``Set(number)``.
+
+``EnumBitSet``
+  Must be used together with the ``Enum(name)`` property.
+  Similar to :samp:`EnumSet`, but corresponding :samp:`Enum` record must
+  not use ``Set`` properties, each ``EnumValue`` should have
+  ``Value`` that is a power of 2, each value is treated as its own
+  set and its value as the set's mask, so there are no mutually
+  exclusive arguments.
+
 ``Defer``
   The option should be stored in a vector, specified with ``Var``,
   for later processing.

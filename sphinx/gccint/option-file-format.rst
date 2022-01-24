@@ -112,6 +112,21 @@ The files can contain the following types of record:
     :samp:`gcc -v` shows how the options chosen depended on the system on
     which the compiler was run.
 
+  :samp:`Set({number})`
+    This property is optional, required for enumerations used in
+    ``EnumSet`` options.  :samp:`{number}` should be decimal number between
+    1 and 64 inclusive and divides the enumeration into a set of
+    sets of mutually exclusive arguments.  Arguments with the same
+    :samp:`{number}` can't be specified together in the same option, but
+    arguments with different :samp:`{number}` can.  :samp:`{value}` needs to be
+    chosen such that a mask of all :samp:`{value}` values from the same set
+    :samp:`{number}` bitwise ored doesn't overlap with masks for other sets.
+    When ``-foption=arg_from_set1,arg_from_set4`` and
+    ``-fno-option=arg_from_set3`` are used, the effect is that previous
+    value of the ``Var`` will get bits from set 1 and 4 masks cleared,
+    ored ``Value`` of ``arg_from_set1`` and ``arg_from_set4``
+    and then will get bits from set 3 mask cleared.
+
 * An option definition record.  These records have the following fields:
 
   * the name of the option, with the leading '-' removed
