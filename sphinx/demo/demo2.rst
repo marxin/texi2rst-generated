@@ -93,3 +93,11 @@ This works: :option:`--verbose <make --verbose>`
 .. function:: enum gimple_code gimple_code (gimple g)
 
   Return the code for statement ``G``.
+
+.. option:: -o directory, --object-directory directory, --object-file file
+
+  Test it.
+
+.. option:: -foo={BAR}, -f {BAR} {BAZ}
+
+   Test it 2.
