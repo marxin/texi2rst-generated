@@ -1538,6 +1538,26 @@ atanm2
 
   This pattern is not allowed to ``FAIL``.
 
+  .. index:: fegetroundm instruction pattern
+
+fegetroundm
+  Store the current machine floating-point rounding mode into operand 0.
+  Operand 0 has mode :samp:`{m}`, which is scalar.  This pattern is used to
+  implement the ``fegetround`` function from the ISO C99 standard.
+
+  .. index:: feclearexceptm instruction pattern
+
+  .. index:: feraiseexceptm instruction pattern
+
+  feclearexceptm
+feraiseexceptm
+  Clears or raises the supported machine floating-point exceptions
+  represented by the bits in operand 1.  Error status is stored as
+  nonzero value in operand 0.  Both operands have mode :samp:`{m}`, which is
+  a scalar.  These patterns are used to implement the
+  ``feclearexcept`` and ``feraiseexcept`` functions from the ISO
+  C99 standard.
+
   .. index:: expm2 instruction pattern
 
 expm2

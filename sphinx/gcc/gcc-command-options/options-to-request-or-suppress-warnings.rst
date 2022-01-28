@@ -2486,7 +2486,7 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wno-attribute-alias`.
 
-.. option:: -Wbidi-chars=[none|unpaired|any]
+.. option:: -Wbidi-chars=[none|unpaired|any|ucn]
 
   Warn about possibly misleading UTF-8 bidirectional control characters in
   comments, string literals, character constants, and identifiers.  Such
@@ -2500,6 +2500,10 @@ warn at all unless optimization is enabled.
   bidi contexts.  :option:`-Wbidi-chars`:samp:`=none` turns the warning off.
   :option:`-Wbidi-chars`:samp:`=any` warns about any use of bidirectional control
   characters.
+
+  By default, this warning does not warn about UCNs.  It is, however, possible
+  to turn on such checking by using :option:`-Wbidi-chars`:samp:`=unpaired,ucn` or
+  :option:`-Wbidi-chars`:samp:`=any,ucn`.
 
 .. option:: -Wbool-compare
 

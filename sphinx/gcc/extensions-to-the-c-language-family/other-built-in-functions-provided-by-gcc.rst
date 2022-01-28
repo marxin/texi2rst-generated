@@ -989,6 +989,14 @@ In the same fashion, GCC provides ``fpclassify``, ``isfinite``,
 ``__builtin_`` prefixed.  The ``isinf`` and ``isnan``
 built-in functions appear both with and without the ``__builtin_`` prefix.
 
+GCC provides built-in versions of the ISO C99 floating-point rounding and
+exceptions handling functions ``fegetround``, ``feclearexcept`` and
+``feraiseexcept``.  They may not be available for all targets, and because
+they need close interaction with libc internal values, they may not be available
+for all target libcs, but in all cases they will gracefully fallback to libc
+calls.  This built-in functions appear both with and without the
+``__builtin_`` prefix.
+
 .. function:: void *__builtin_alloca (size_t size)
 
   The ``__builtin_alloca`` function must be called at block scope.

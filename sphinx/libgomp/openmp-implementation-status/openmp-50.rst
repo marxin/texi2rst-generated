@@ -13,9 +13,9 @@ New features listed in Appendix B of the OpenMP specification
 
 .. This list is sorted as in OpenMP 5.1's B.3 not as in OpenMP 5.0's B.2
 
-=======================================================================  ======  ============================================================
+=======================================================================  ======  =============================================================
 Description                                                              Status  Comments
-=======================================================================  ======  ============================================================
+=======================================================================  ======  =============================================================
 Array shaping                                                            N
 Array sections with non-unit strides in C and C++                        N
 Iterators                                                                Y
@@ -24,7 +24,8 @@ Iterators                                                                Y
 *target-offload-var* ICV and ``OMP_TARGET_OFFLOAD``                      Y
       env variable
 Nested-parallel changes to *max-active-levels-var* ICV                   Y
-``requires`` directive                                                   P       Only fulfillable requirement is ``atomic_default_mem_order``
+``requires`` directive                                                   P       Only fulfillable requirement are ``atomic_default_mem_order``
+                                                                                       and ``dynamic_allocators``
 ``teams`` construct outside an enclosing target region                   Y
 Non-rectangular loop nests                                               P       Only C/C++
 ``!=`` as relational-op in canonical loop form for C/C++                 Y
@@ -39,7 +40,7 @@ Clauses ``if``, ``nontemporal`` and ``order(concurrent)`` in             Y
 ``scan`` directive and ``in_scan`` modifier for the                      Y
       ``reduction`` clause
 ``in_reduction`` clause on ``task`` constructs                           Y
-``in_reduction`` clause on ``target`` constructs                         P       Only C/C++, ``nowait`` only stub
+``in_reduction`` clause on ``target`` constructs                         P       ``nowait`` only stub
 ``task_reduction`` clause with ``taskgroup``                             Y
 ``task`` modifier to ``reduction`` clause                                Y
 ``affinity`` clause to ``task`` construct                                Y       Stub only
@@ -84,7 +85,7 @@ Runtime routines and environment variables to display runtime thread     Y
 ``omp_get_device_num`` runtime routine                                   Y
 OMPT interface                                                           N
 OMPD interface                                                           N
-=======================================================================  ======  ============================================================
+=======================================================================  ======  =============================================================
 
 Other new OpenMP 5.0 features
 *****************************
