@@ -39,7 +39,7 @@ Clauses ``if``, ``nontemporal`` and ``order(concurrent)`` in             Y
 ``scan`` directive and ``in_scan`` modifier for the                      Y
       ``reduction`` clause
 ``in_reduction`` clause on ``task`` constructs                           Y
-``in_reduction`` clause on ``target`` constructs                         P       Only C/C++, ``nowait`` only stub
+``in_reduction`` clause on ``target`` constructs                         P       ``nowait`` only stub
 ``task_reduction`` clause with ``taskgroup``                             Y
 ``task`` modifier to ``reduction`` clause                                Y
 ``affinity`` clause to ``task`` construct                                Y       Stub only
@@ -86,7 +86,7 @@ OMPT interface                                                           N
 OMPD interface                                                           N
 =======================================================================  ======  ===================================
 
-.. [#f1] Only fulfillable requirement is ``atomic_default_mem_order``
+.. [#f1] Only fulfillable requirement are ``atomic_default_mem_order`` and ``dynamic_allocators``
 .. [#f2] Mapping of vars with allocatable components unspported
 
 Other new OpenMP 5.0 features

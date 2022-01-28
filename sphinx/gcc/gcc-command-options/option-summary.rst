@@ -167,7 +167,7 @@ in the following sections.
   :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` |gol|
   :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` |gol|
   :option:`-Wno-attribute-warning` |gol|
-  :option:`-Wbidi-chars`:samp:`=[none|unpaired|any]` |gol|
+  :option:`-Wbidi-chars`:samp:`=[none|unpaired|any|ucn]` |gol|
   :option:`-Wbool-compare`  :option:`-Wbool-operation` |gol|
   :option:`-Wno-builtin-declaration-mismatch` |gol|
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` |gol|

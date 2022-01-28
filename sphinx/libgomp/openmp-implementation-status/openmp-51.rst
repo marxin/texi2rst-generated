@@ -60,7 +60,7 @@ Extensions to the ``atomic`` directive                                    Y
       ``omp_aligned_calloc`` runtime routines
 ``omp_alloctrait_key_t`` enum: ``omp_atv_serialized`` added,              Y
       ``omp_atv_default`` changed
-``omp_display_env`` runtime routine                                       P       Not inside ``target`` regions
+``omp_display_env`` runtime routine                                       Y       Not inside ``target`` regions
 ``ompt_scope_endpoint_t`` enum: ``ompt_scope_beginend``                   N
 ``ompt_sync_region_t`` enum additions                                     N
 ``ompt_state_t`` enum: ``ompt_state_wait_barrier_implementation``         N
