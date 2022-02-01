@@ -107,7 +107,7 @@ acc_prof_info.func_line_no
 acc_prof_info.func_end_line_no
   Always ``-1`` ; not yet implemented.
 
-:samp:`{acc_event_info.event_type}, {acc_event_info.*.event_type}`
+acc_event_info.event_type, acc_event_info.*.event_type
   Relating to ``acc_prof_info.event_type`` discussed above, in this
   implementation, this will always be the same value as
   ``acc_prof_info.event_type``.
@@ -174,9 +174,9 @@ acc_api_info.context_handle
 acc_api_info.async_handle
   Always ``NULL`` ; not yet implemented.
 
-  Remarks about certain event types:
+Remarks about certain event types:
 
-:samp:`{acc_ev_device_init_start}, {acc_ev_device_init_end}`
+acc_ev_device_init_start, acc_ev_device_init_end
   * 
     .. See 'DEVICE_INIT_INSIDE_COMPUTE_CONSTRUCT' in
        'libgomp.oacc-c-c++-common/acc_prof-kernels-1.c',
@@ -196,7 +196,7 @@ acc_api_info.async_handle
     ``acc_set_device_type`` and ``acc_set_device_num`` functions.
     It's not clear if they should be.
 
-:samp:`{acc_ev_enter_data_start}, {acc_ev_enter_data_end}, {acc_ev_exit_data_start}, {acc_ev_exit_data_end}`
+acc_ev_enter_data_start, acc_ev_enter_data_end, acc_ev_exit_data_start, acc_ev_exit_data_end
   * Callbacks for these event types will also be invoked for OpenACC
     *host_data* constructs.
     It's not clear if they should be.
