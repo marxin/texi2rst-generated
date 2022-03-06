@@ -58,6 +58,24 @@ These command-line options are defined for RISC-V targets:
   M extension.  The default is to use them if the specified architecture has
   these instructions.
 
+.. option:: -misa-spec={ISA-spec-string}
+
+  Specify the version of the RISC-V Unprivileged (formerly User-Level)
+  ISA specification to produce code conforming to.  The possibilities
+  for :samp:`{ISA-spec-string}` are:
+
+  ``2.2``
+    Produce code conforming to version 2.2.
+
+  ``20190608``
+    Produce code conforming to version 20190608.
+
+  ``20191213``
+    Produce code conforming to version 20191213.
+
+    The default is :option:`-misa-spec`:samp:`=20191213` unless GCC has been configured
+  with :option:`--with-isa-spec` = specifying a different default version.
+
 .. option:: -march={ISA-string}
 
   Generate code for given RISC-V ISA (e.g. :samp:`rv64im`).  ISA strings must be

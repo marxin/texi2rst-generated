@@ -29,9 +29,10 @@ These options are defined for Nvidia PTX:
 
 .. option:: -mptx={version-string}
 
-  Generate code for given the specified PTX version (e.g. :samp:`6.3`).
-  Valid version strings include :samp:`3.1` and :samp:`6.3`.  The default PTX
-  version is 3.1.
+  Generate code for given the specified PTX version (e.g. :samp:`7.0`).
+  Valid version strings include :samp:`3.1`, :samp:`6.0`, :samp:`6.3`, and
+  :samp:`7.0`.  The default PTX version is 6.0, unless a higher minimal
+  version is required for specified PTX ISA via option :option:`-misa` =.
 
 .. option:: -mmainkernel
 

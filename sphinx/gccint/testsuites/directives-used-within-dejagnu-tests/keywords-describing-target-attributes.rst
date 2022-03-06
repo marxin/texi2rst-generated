@@ -825,6 +825,10 @@ ARM-specific attributes
 ``arm_hard_ok``
   ARM target supports the ``-mfloat-abi=hard`` option.
 
+``arm_mve``
+  .. _arm_mve:
+  ARM target supports generating MVE instructions.
+
 ``arm_v8_1_lob_ok``
   ARM Target supports executing the Armv8.1-M Mainline Low Overhead Loop
   instructions ``DLS`` and ``LE``.

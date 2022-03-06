@@ -238,7 +238,7 @@ in the following sections.
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` |gol|
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` |gol|
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` |gol|
-  :option:`-Wtsan` :option:`-Wtype-limits`  :option:`-Wundef` |gol|
+  :option:`-Wtrivial-auto-var-init` :option:`-Wtsan` :option:`-Wtype-limits`  :option:`-Wundef` |gol|
   :option:`-Wuninitialized`  :option:`-Wunknown-pragmas` |gol|
   :option:`-Wunsuffixed-float-constants`  :option:`-Wunused` |gol|
   :option:`-Wunused-but-set-parameter`  :option:`-Wunused-but-set-variable` |gol|
@@ -1169,6 +1169,7 @@ in the following sections.
   :option:`-mabi`:samp:`={ABI-string}` |gol|
   :option:`-mfdiv`  :option:`-mno-fdiv` |gol|
   :option:`-mdiv`  :option:`-mno-div` |gol|
+  :option:`-misa-spec`:samp:`={ISA-spec-string}` |gol|
   :option:`-march`:samp:`={ISA-string}` |gol|
   :option:`-mtune`:samp:`={processor-string}` |gol|
   :option:`-mpreferred-stack-boundary`:samp:`={num}` |gol|
@@ -1473,7 +1474,7 @@ in the following sections.
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` |gol|
   :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` |gol|
   :option:`-mindirect-branch-register` :option:`-mharden-sls`:samp:`={choice}` |gol|
-  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded`
+  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded` :option:`-mno-direct-extern-access`
 
   *x86 Windows Options*
 

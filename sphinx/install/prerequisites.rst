@@ -31,11 +31,6 @@ ISO C++11 compiler
   GCC binary (version 4.8 or later) because source code for language
   frontends other than C might use GCC extensions.
 
-  Note that to bootstrap GCC with versions of GCC earlier than 4.8, you
-  may need to use :option:`--disable-stage1-checking`, though
-  bootstrapping the compiler with such earlier compilers is strongly
-  discouraged.
-
 C standard library and headers
   In order to build GCC, the C standard library and headers must be present
   for all target variants for which target libraries will be built (and not
@@ -194,7 +189,7 @@ MPFR Library version 3.1.0 (or later)
 
 MPC Library version 1.0.1 (or later)
   Necessary to build GCC.  It can be downloaded from
-  http://www.multiprecision.org/mpc/.  If an MPC source distribution
+  https://www.multiprecision.org/mpc/.  If an MPC source distribution
   is found in a subdirectory of your GCC sources named :samp:`mpc`, it
   will be built together with GCC.  Alternatively, if MPC is already
   installed but it is not in your default library search path, the

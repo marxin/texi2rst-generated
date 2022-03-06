@@ -982,3 +982,10 @@ These function attributes are supported by the x86 back end:
   of the section to record function entry instrumentation calls in when
   enabled with :option:`-pg -mrecord-mcount`
 
+.. option:: nodirect_extern_access
+
+  .. index:: nodirect_extern_access function attribute
+
+  This attribute, attached to a global variable or function, is the
+  counterpart to option :option:`-mno-direct-extern-access`.
+

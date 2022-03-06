@@ -115,8 +115,10 @@ warns that an unrecognized option is present.
 
 The effectiveness of some warnings depends on optimizations also being
 enabled. For example :option:`-Wsuggest-final-types` is more effective
-with link-time optimization and :option:`-Wmaybe-uninitialized` does not
-warn at all unless optimization is enabled.
+with link-time optimization and some instances of other warnings may
+not be issued at all unless optimization is enabled.  While optimization
+in general improves the efficacy of control and data flow sensitive
+warnings, in some cases it may also cause false positives.
 
 .. option:: -Wpedantic, -pedantic
 
@@ -1578,6 +1580,17 @@ warn at all unless optimization is enabled.
 
   Default setting; overrides :option:`-Wsync-nand`.
 
+.. option:: -Wtrivial-auto-var-init
+
+  Warn when ``-ftrivial-auto-var-init`` cannot initialize the automatic
+  variable.  A common situation is an automatic variable that is declared
+  between the controlling expression and the first case label of a ``switch``
+  statement.
+
+.. option:: -Wno-trivial-auto-var-init
+
+  Default setting; overrides :option:`-Wtrivial-auto-var-init`.
+
 .. option:: -Wunused-but-set-parameter
 
   Warn whenever a function parameter is assigned to, but otherwise unused
@@ -2359,19 +2372,21 @@ warn at all unless optimization is enabled.
 
 .. option:: -Warray-bounds, -Warray-bounds={n}
 
-  This option is only active when :option:`-ftree-vrp` is active
-  (default for :option:`-O2` and above). It warns about subscripts to arrays
-  that are always out of bounds. This warning is enabled by :option:`-Wall`.
+  Warn about out of bounds subscripts or offsets into arrays.  This warning
+  is enabled by :option:`-Wall`.  It is more effective when :option:`-ftree-vrp`
+  is active (the default for :option:`-O2` and above) but a subset of instances
+  are issued even without optimization.
 
   ``-Warray-bounds=1``
-    This is the warning level of :option:`-Warray-bounds` and is enabled
+    This is the default warning level of :option:`-Warray-bounds` and is enabled
     by :option:`-Wall` ; higher levels are not, and must be explicitly requested.
 
   ``-Warray-bounds=2``
-    This warning level also warns about out of bounds access for
-    arrays at the end of a struct and for arrays accessed through
-    pointers. This warning level may give a larger number of
-    false positives and is deactivated by default.
+    This warning level also warns about out of bounds accesses to trailing
+    struct members of one-element array types (see :ref:`zero-length`) and about
+    the intermediate results of pointer arithmetic that may yield out of bounds
+    values.  This warning level may give a larger number of false positives and
+    is deactivated by default.
 
 .. option:: -Wno-array-bounds
 
@@ -2496,7 +2511,9 @@ warn at all unless optimization is enabled.
 
   By default, this warning does not warn about UCNs.  It is, however, possible
   to turn on such checking by using :option:`-Wbidi-chars`:samp:`=unpaired,ucn` or
-  :option:`-Wbidi-chars`:samp:`=any,ucn`.
+  :option:`-Wbidi-chars`:samp:`=any,ucn`.  Using :option:`-Wbidi-chars`:samp:`=ucn` is valid,
+  and is equivalent to :option:`-Wbidi-chars`:samp:`=unpaired,ucn`, if no previous
+  :option:`-Wbidi-chars`:samp:`=any` was specified.
 
 .. option:: -Wbool-compare
 

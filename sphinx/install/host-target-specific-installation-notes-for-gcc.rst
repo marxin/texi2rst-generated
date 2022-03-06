@@ -437,7 +437,7 @@ See `bug 10877 <https://gcc.gnu.org/PR10877>`_ for more information.
 
 If you receive Signal 11 errors when building on GNU/Linux, then it is
 possible you have a hardware problem.  Further information on this can be
-found on `www.bitwizard.nl <http://www.bitwizard.nl/sig11/>`_.
+found on `www.bitwizard.nl <https://www.bitwizard.nl/sig11/>`_.
 
 i?86-\*-solaris2\*
 ==================
