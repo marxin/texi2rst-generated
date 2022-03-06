@@ -231,7 +231,7 @@ in the following sections.
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` 
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` 
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` 
-  :option:`-Wtsan` :option:`-Wtype-limits`  :option:`-Wundef` 
+  :option:`-Wtrivial-auto-var-init` :option:`-Wtsan` :option:`-Wtype-limits`  :option:`-Wundef` 
   :option:`-Wuninitialized`  :option:`-Wunknown-pragmas` 
   :option:`-Wunsuffixed-float-constants`  :option:`-Wunused` 
   :option:`-Wunused-but-set-parameter`  :option:`-Wunused-but-set-variable` 
@@ -1154,6 +1154,7 @@ in the following sections.
   :option:`-mabi`:samp:`={ABI-string}` 
   :option:`-mfdiv`  :option:`-mno-fdiv` 
   :option:`-mdiv`  :option:`-mno-div` 
+  :option:`-misa-spec`:samp:`={ISA-spec-string}` 
   :option:`-march`:samp:`={ISA-string}` 
   :option:`-mtune`:samp:`={processor-string}` 
   :option:`-mpreferred-stack-boundary`:samp:`={num}` 
@@ -1457,7 +1458,7 @@ in the following sections.
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
   :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
   :option:`-mindirect-branch-register` :option:`-mharden-sls`:samp:`={choice}` 
-  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded`
+  :option:`-mindirect-branch-cs-prefix` :option:`-mneeded` :option:`-mno-direct-extern-access`
 
   *x86 Windows Options*
 

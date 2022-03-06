@@ -1030,6 +1030,23 @@ corresponding :option:`--without` option.
   size as a power of two in bytes.  On AArch64 :samp:`{size}` is required to be either
   12 (4KB) or 16 (64KB).
 
+.. option:: --with-isa-spec=ISA-spec-string
+
+  On RISC-V targets specify the default version of the RISC-V Unprivileged
+  (formerly User-Level) ISA specification to produce code conforming to.
+  The possibilities for :samp:`{ISA-spec-string}` are:
+
+  ``2.2``
+    Produce code conforming to version 2.2.
+
+  ``20190608``
+    Produce code conforming to version 20190608.
+
+  ``20191213``
+    Produce code conforming to version 20191213.
+
+    In the absence of this configuration option the default version is 20191213.
+
 .. option:: --enable-__cxa_atexit
 
   Define if you want to use __cxa_atexit, rather than atexit, to

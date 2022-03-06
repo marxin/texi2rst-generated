@@ -1842,12 +1842,13 @@ cmlam4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
+      complex TYPE op3[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] += a[i] * b[i];
+          op0[i] = op1[i] * op2[i] + op3[i];
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with
@@ -1866,12 +1867,13 @@ cmla_conjm4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
+      complex TYPE op3[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] += a[i] * conj (b[i]);
+          op0[i] = op1[i] * conj (op2[i]) + op3[i];
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with
@@ -1889,12 +1891,13 @@ cmlsm4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
+      complex TYPE op3[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] -= a[i] * b[i];
+          op0[i] = op1[i] * op2[i] - op3[i];
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with
@@ -1913,12 +1916,13 @@ cmls_conjm4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
+      complex TYPE op3[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] -= a[i] * conj (b[i]);
+          op0[i] = op1[i] * conj (op2[i]) - op3[i];
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with
@@ -1936,12 +1940,12 @@ cmulm4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] = a[i] * b[i];
+          op0[i] = op1[i] * op2[i];
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with
@@ -1959,12 +1963,12 @@ cmul_conjm4
 
   .. code-block:: c++
 
-      complex TYPE c[N];
-      complex TYPE a[N];
-      complex TYPE b[N];
+      complex TYPE op0[N];
+      complex TYPE op1[N];
+      complex TYPE op2[N];
       for (int i = 0; i < N; i += 1)
         {
-          c[i] = a[i] * conj (b[i]);
+          op0[i] = op1[i] * conj (op2[i]);
         }
 
   In GCC lane ordering the real part of the number must be in the even lanes with

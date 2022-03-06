@@ -1667,10 +1667,15 @@ optimizations to be performed is desired.
   the security and predictability of a program by preventing uninitialized memory
   disclosure and use.
   GCC still considers an automatic variable that doesn't have an explicit
-  initializer as uninitialized, :option:`-Wuninitialized` will still report
+  initializer as uninitialized, :option:`-Wuninitialized` and
+  :option:`-Wanalyzer-use-of-uninitialized-value` will still report
   warning messages on such automatic variables.
   With this option, GCC will also initialize any padding of automatic variables
   that have structure or union types to zeroes.
+  However, the current implementation cannot initialize automatic variables that
+  are declared between the controlling expression and the first case of a
+  ``switch`` statement.  Using :option:`-Wtrivial-auto-var-init` to report all
+  such cases.
 
   The three values of :samp:`{choice}` are:
 
@@ -2803,6 +2808,7 @@ section includes experimental options that may produce broken code.
   file.  The information in this data file is very dependent on the
   structure of the generated code, so you must use the same source code
   and the same optimization options for both compilations.
+  See details about the file naming in :option:`-fprofile-arcs`.
 
   With :option:`-fbranch-probabilities`, GCC puts a
   :samp:`REG_BR_PROB` note on each :samp:`JUMP_INSN` and :samp:`CALL_INSN`.

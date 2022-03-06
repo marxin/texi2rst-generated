@@ -1688,6 +1688,15 @@ Here are several miscellaneous parameters.
 
 .. hook-end
 
+.. c:var:: bool TARGET_HAVE_SHADOW_CALL_STACK
+
+  .. hook-start:TARGET_HAVE_SHADOW_CALL_STACK
+
+  This value is true if the target platform supports
+  :option:`-fsanitize`:samp:`=shadow-call-stack`.  The default value is false.
+
+.. hook-end
+
 .. Copyright (C) 1988-2022 Free Software Foundation, Inc.
 
 .. This is part of the GCC manual.

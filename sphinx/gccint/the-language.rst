@@ -306,8 +306,10 @@ for example
 
 which moves the outer ``plus`` operation to the inner arms
 of the ``vec_cond`` expression but only if the actual plus
-operations both simplify.  Note this is currently only supported
-for code generation targeting ``GIMPLE``.
+operations both simplify.  Note that on ``GENERIC`` a simple
+operand means that the result satisfies ``!EXPR_P`` which
+can be limiting if the operation itself simplifies but the
+remaining operand is an (unrelated) expression.
 
 As intermediate conversions are often optional there is a way to
 avoid the need to repeat patterns both with and without such

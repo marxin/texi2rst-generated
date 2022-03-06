@@ -41,7 +41,7 @@ These options are defined specifically for the CRIS ports.
 .. option:: -mmul-bug-workaround, -mno-mul-bug-workaround
 
   Work around a bug in the ``muls`` and ``mulu`` instructions for CPU
-  models where it applies.  This option is active by default.
+  models where it applies.  This option is disabled by default.
 
 .. option:: -mpdebug
 

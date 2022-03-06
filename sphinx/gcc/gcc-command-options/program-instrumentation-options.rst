@@ -70,6 +70,12 @@ program analysis purposes.
   the basename of the source file.  In both cases any suffix is removed
   (e.g. :samp:`foo.gcda` for input file :samp:`dir/foo.c`, or
   :samp:`dir/foo.gcda` for output file specified as :option:`-o dir/foo.o`).
+
+  Note that if a command line directly links source files, the corresponding
+  :samp:`{.gcda}` files will be prefixed with the unsuffixed name of the output file.
+  E.g. ``gcc a.c b.c -o binary`` would generate :samp:`binary-a.gcda` and
+  :samp:`binary-b.gcda` files.
+
   See :ref:`cross-profiling`.
 
   .. index:: gcov
@@ -150,7 +156,8 @@ program analysis purposes.
   In order to prevent the file name clashing, if the object file name is
   not an absolute path, we mangle the absolute path of the
   :samp:`{sourcename}.gcda` file and use it as the file name of a
-  :samp:`.gcda` file.  See similar option :option:`-fprofile-note`.
+  :samp:`.gcda` file.  See details about the file naming in :option:`-fprofile-arcs`.
+  See similar option :option:`-fprofile-note`.
 
   When an executable is run in a massive parallel environment, it is recommended
   to save profile to different folders.  That can be done with variables
@@ -426,6 +433,36 @@ program analysis purposes.
   add ``detect_invalid_pointer_pairs=2`` to the environment variable
   :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
   invalid operation only when both pointers are non-null.
+
+.. option:: -fsanitize=shadow-call-stack
+
+  Enable ShadowCallStack, a security enhancement mechanism used to protect
+  programs against return address overwrites (e.g. stack buffer overflows.)
+  It works by saving a function's return address to a separately allocated
+  shadow call stack in the function prologue and restoring the return address
+  from the shadow call stack in the function epilogue.  Instrumentation only
+  occurs in functions that need to save the return address to the stack.
+
+  Currently it only supports the aarch64 platform.  It is specifically
+  designed for linux kernels that enable the CONFIG_SHADOW_CALL_STACK option.
+  For the user space programs, runtime support is not currently provided
+  in libc and libgcc.  Users who want to use this feature in user space need
+  to provide their own support for the runtime.  It should be noted that
+  this may cause the ABI rules to be broken.
+
+  On aarch64, the instrumentation makes use of the platform register ``x18``.
+  This generally means that any code that may run on the same thread as code
+  compiled with ShadowCallStack must be compiled with the flag
+  :option:`-ffixed-x18`, otherwise functions compiled without
+  :option:`-ffixed-x18` might clobber ``x18`` and so corrupt the shadow
+  stack pointer.
+
+  Also, because there is no userspace runtime support, code compiled with
+  ShadowCallStack cannot use exception handling.  Use :option:`-fno-exceptions`
+  to turn off exceptions.
+
+  See https://clang.llvm.org/docs/ShadowCallStack.html for more
+  details.
 
 .. option:: -fsanitize=thread
 
