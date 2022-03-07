@@ -8,7 +8,6 @@ Invariant Sections being **Funding Free Software**,
 the Front-Cover texts being (a) (see below), and with
 the Back-Cover Texts being (b) (see below).  A copy of the license is
 in the :ref:`gnu_fdl`.
-:ref:`gnu_fdl`.
 
 (a) The FSF's Front-Cover Text is:
 
