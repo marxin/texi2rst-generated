@@ -17,7 +17,7 @@ SET_EXPONENT --- Set the exponent of the model
 .. function:: SET_EXPONENT(X, I)
 
   ``SET_EXPONENT(X, I)`` returns the real number whose fractional part
-  is that that of :samp:`{X}` and whose exponent part is :samp:`{I}`.
+  is that of :samp:`{X}` and whose exponent part is :samp:`{I}`.
 
   :param X:
     Shall be of type ``REAL``.
@@ -28,7 +28,7 @@ SET_EXPONENT --- Set the exponent of the model
   :return:
     The return value is of the same type and kind as :samp:`{X}`.
     The real number whose fractional part
-    is that that of :samp:`{X}` and whose exponent part if :samp:`{I}` is returned;
+    is that of :samp:`{X}` and whose exponent part if :samp:`{I}` is returned;
     it is ``FRACTION(X) * RADIX(X)**I``.
 
   :samp:`{Standard}:`

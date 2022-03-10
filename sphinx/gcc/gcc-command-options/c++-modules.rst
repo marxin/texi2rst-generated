@@ -15,9 +15,7 @@ provides a modular compilation system, intending to provide both
 faster builds and better library isolation.  The 'Merging Modules'
 paper https://wg21.link/p1103, provides the easiest to read set
 of changes to the standard, although it does not capture later
-changes.  That specification is now part of C++20,
-git@github.com:cplusplus/draft.git, it is considered complete
-(there may be defect reports to come).
+changes.
 
 *G++'s modules support is not complete.*  Other than bugs, the
 known missing pieces are:

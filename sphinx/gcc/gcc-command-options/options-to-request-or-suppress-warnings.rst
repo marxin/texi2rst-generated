@@ -282,7 +282,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wredundant-move` (only for C++)  
   :option:`-Wtype-limits`  
   :option:`-Wuninitialized`  
-  :option:`-Wshift-negative-value` (in C++03 and in C99 and newer)  
+  :option:`-Wshift-negative-value` (in C++11 to C++17 and in C99 and newer)  
   :option:`-Wunused-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` ) 
   :option:`-Wunused-but-set-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` )
   The option :option:`-Wextra` also prints warning messages for the
@@ -1438,7 +1438,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wshift-negative-value
 
   Warn if left shifting a negative value.  This warning is enabled by
-  :option:`-Wextra` in C99 and C++11 modes (and newer).
+  :option:`-Wextra` in C99 (and newer) and C++11 to C++17 modes.
 
 .. option:: -Wno-shift-negative-value
 

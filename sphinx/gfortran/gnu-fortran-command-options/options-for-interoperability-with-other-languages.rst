@@ -48,7 +48,7 @@ Options for interoperability with other languages
   :option:`-fc-prototypes` for that.
 
   The generated prototypes may need inclusion of an appropriate
-  header, such as as ``<stdint.h>`` or ``<stdlib.h>``.
+  header, such as ``<stdint.h>`` or ``<stdlib.h>``.
 
   This is primarily meant for legacy code to ensure that existing C
   bindings match what :command:`gfortran` emits.  The generated C
