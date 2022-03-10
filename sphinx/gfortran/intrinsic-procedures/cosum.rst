@@ -5,12 +5,12 @@
 
 .. _co_sum:
 
-CO_SUM --- Sum of values on the current set of images
-*****************************************************
-
 .. index:: CO_SUM
 
 .. index:: Collectives, sum of values
+
+CO_SUM --- Sum of values on the current set of images
+*****************************************************
 
 .. function:: CO_SUM
 

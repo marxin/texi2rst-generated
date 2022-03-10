@@ -239,9 +239,9 @@ These :samp:`-m` options are defined for the SH implementations:
   This option is deprecated.  It pads structures to multiple of 4 bytes,
   which is incompatible with the SH ABI.
 
-.. option:: -matomic-model={model}
+.. index:: matomic-model=model
 
-  .. index:: matomic-model=model
+.. option:: -matomic-model={model}
 
   Sets the model of atomic operations and additional parameters as a comma
   separated list.  For details on the atomic built-in functions see
@@ -321,15 +321,15 @@ These :samp:`-m` options are defined for the SH implementations:
   when the target is ``sh*-*-linux*``.  If the target is SH1\* or SH2\*
   :option:`-musermode` has no effect, since there is no user mode.
 
-.. option:: -multcost={number}
+.. index:: multcost=number
 
-  .. index:: multcost=number
+.. option:: -multcost={number}
 
   Set the cost to assume for a multiply insn.
 
-.. option:: -mdiv={strategy}
+.. index:: mdiv=strategy
 
-  .. index:: mdiv=strategy
+.. option:: -mdiv={strategy}
 
   Set the division strategy to be used for integer division operations.
   :samp:`{strategy}` can be one of: 
@@ -364,9 +364,9 @@ These :samp:`-m` options are defined for the SH implementations:
   than around each call.  Generally beneficial for performance and size.  Also
   needed for unwinding to avoid changing the stack frame around conditional code.
 
-.. option:: -mdivsi3_libfunc={name}
+.. index:: mdivsi3_libfunc=name
 
-  .. index:: mdivsi3_libfunc=name
+.. option:: -mdivsi3_libfunc={name}
 
   Set the name of the library function used for 32-bit signed division to
   :samp:`{name}`.
@@ -382,9 +382,9 @@ These :samp:`-m` options are defined for the SH implementations:
   two registers separated by a dash.  Multiple register ranges can be
   specified separated by a comma.
 
-.. option:: -mbranch-cost={num}
+.. index:: mbranch-cost=num
 
-  .. index:: mbranch-cost=num
+.. option:: -mbranch-cost={num}
 
   Assume :samp:`{num}` to be the cost for a branch instruction.  Higher numbers
   make the compiler try to generate more branch-free code if possible.  

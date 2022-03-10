@@ -5,14 +5,14 @@
 
 .. _random_seed:
 
-RANDOM_SEED --- Initialize a pseudo-random number sequence
-**********************************************************
-
 .. index:: RANDOM_SEED
 
 .. index:: random number generation, seeding
 
 .. index:: seeding a random number generator
+
+RANDOM_SEED --- Initialize a pseudo-random number sequence
+**********************************************************
 
 .. function:: RANDOM_SEED(SIZE, PUT, GET)
 

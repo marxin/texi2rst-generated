@@ -5,14 +5,14 @@
 
 .. _once-only-headers:
 
-Once-Only Headers
-*****************
-
 .. index:: repeated inclusion
 
 .. index:: including just once
 
 .. index:: wrapper #ifndef
+
+Once-Only Headers
+*****************
 
 If a header file happens to be included twice, the compiler will process
 its contents twice.  This is very likely to cause an error, e.g. when the

@@ -5,10 +5,10 @@
 
 .. _machine-desc:
 
+.. index:: machine descriptions
+
 Machine Descriptions
 --------------------
-
-.. index:: machine descriptions
 
 A machine description has two parts: a file of instruction patterns
 (:samp:`.md` file) and a C header file of macro definitions.

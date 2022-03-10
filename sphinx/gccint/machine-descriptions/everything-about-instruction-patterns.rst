@@ -5,14 +5,14 @@
 
 .. _patterns:
 
-Everything about Instruction Patterns
-*************************************
-
 .. index:: patterns
 
 .. index:: instruction patterns
 
 .. index:: define_insn
+
+Everything about Instruction Patterns
+*************************************
 
 A ``define_insn`` expression is used to define instruction patterns
 to which insns may be matched.  A ``define_insn`` expression contains

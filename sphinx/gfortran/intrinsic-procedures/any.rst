@@ -5,14 +5,14 @@
 
 .. _any:
 
-ANY --- Any value in MASK along DIM is true 
-********************************************
-
 .. index:: ANY
 
 .. index:: array, apply condition
 
 .. index:: array, condition testing
+
+ANY --- Any value in MASK along DIM is true 
+********************************************
 
 .. function:: ANY(MASK [, DIM])
 

@@ -9,10 +9,10 @@
 
 .. _top:
 
+.. index:: Introduction
+
 Introduction
 ============
-
-.. index:: Introduction
 
 This manual documents the usage of libgomp, the GNU Offloading and
 Multi Processing Runtime Library.  This includes the GNU

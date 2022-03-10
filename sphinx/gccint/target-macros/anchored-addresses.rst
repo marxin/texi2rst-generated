@@ -5,12 +5,12 @@
 
 .. _anchored-addresses:
 
-Anchored Addresses
-******************
-
 .. index:: anchored addresses
 
 .. index:: -fsection-anchors
+
+Anchored Addresses
+******************
 
 GCC usually addresses every static object as a separate entity.
 For example, if we have:

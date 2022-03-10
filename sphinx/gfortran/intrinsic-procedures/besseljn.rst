@@ -5,9 +5,6 @@
 
 .. _bessel_jn:
 
-BESSEL_JN --- Bessel function of the first kind
-***********************************************
-
 .. index:: BESSEL_JN
 
 .. index:: BESJN
@@ -15,6 +12,9 @@ BESSEL_JN --- Bessel function of the first kind
 .. index:: DBESJN
 
 .. index:: Bessel function, first kind
+
+BESSEL_JN --- Bessel function of the first kind
+***********************************************
 
 .. function:: BESSEL_JN(N, X)
 

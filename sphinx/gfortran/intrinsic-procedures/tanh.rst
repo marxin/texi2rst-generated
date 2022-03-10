@@ -5,9 +5,6 @@
 
 .. _tanh:
 
-TANH --- Hyperbolic tangent function 
-*************************************
-
 .. index:: TANH
 
 .. index:: DTANH
@@ -17,6 +14,9 @@ TANH --- Hyperbolic tangent function
 .. index:: hyperbolic function, tangent
 
 .. index:: tangent, hyperbolic
+
+TANH --- Hyperbolic tangent function 
+*************************************
 
 .. function:: TANH(X)
 

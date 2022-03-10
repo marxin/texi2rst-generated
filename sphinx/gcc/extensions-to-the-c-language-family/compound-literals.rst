@@ -5,9 +5,6 @@
 
 .. _compound-literals:
 
-Compound Literals
-*****************
-
 .. index:: constructor expressions
 
 .. index:: initializations in expressions
@@ -17,6 +14,9 @@ Compound Literals
 .. index:: expressions, constructor
 
 .. index:: compound literals
+
+Compound Literals
+*****************
 
 .. The GNU C name for what C99 calls compound literals was "constructor expressions".
 

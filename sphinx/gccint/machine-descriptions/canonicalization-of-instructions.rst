@@ -5,12 +5,12 @@
 
 .. _insn-canonicalizations:
 
-Canonicalization of Instructions
-********************************
-
 .. index:: canonicalization of instructions
 
 .. index:: insn canonicalization
+
+Canonicalization of Instructions
+********************************
 
 There are often cases where multiple RTL expressions could represent an
 operation performed by a single machine instruction.  This situation is

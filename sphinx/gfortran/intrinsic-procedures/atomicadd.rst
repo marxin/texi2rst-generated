@@ -5,12 +5,12 @@
 
 .. _atomic_add:
 
-ATOMIC_ADD --- Atomic ADD operation
-***********************************
-
 .. index:: ATOMIC_ADD
 
 .. index:: Atomic subroutine, add
+
+ATOMIC_ADD --- Atomic ADD operation
+***********************************
 
 .. function:: ATOMIC_ADD(ATOM, VALUE)
 

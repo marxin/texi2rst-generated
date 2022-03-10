@@ -7,10 +7,10 @@
 
 .. _pdp-11-options:
 
+.. index:: PDP-11 Options
+
 PDP-11 Options
 ^^^^^^^^^^^^^^
-
-.. index:: PDP-11 Options
 
 These options are defined for the PDP-11:
 

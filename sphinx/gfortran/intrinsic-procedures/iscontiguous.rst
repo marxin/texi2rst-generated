@@ -5,12 +5,12 @@
 
 .. _is_contiguous:
 
-IS_CONTIGUOUS --- Test whether an array is contiguous
-*****************************************************
-
 .. index:: IS_IOSTAT_EOR
 
 .. index:: array, contiguity
+
+IS_CONTIGUOUS --- Test whether an array is contiguous
+*****************************************************
 
 .. function:: IS_CONTIGUOUS
 

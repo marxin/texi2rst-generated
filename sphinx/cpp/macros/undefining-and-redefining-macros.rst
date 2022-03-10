@@ -5,14 +5,14 @@
 
 .. _undefining-and-redefining-macros:
 
-Undefining and Redefining Macros
-********************************
-
 .. index:: undefining macros
 
 .. index:: redefining macros
 
 .. index:: #undef
+
+Undefining and Redefining Macros
+********************************
 
 If a macro ceases to be useful, it may be :dfn:`undefined` with the
 :samp:`#undef` directive.  :samp:`#undef` takes a single argument, the

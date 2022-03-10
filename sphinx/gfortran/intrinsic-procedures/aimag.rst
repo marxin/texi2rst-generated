@@ -5,9 +5,6 @@
 
 .. _aimag:
 
-AIMAG --- Imaginary part of complex number  
-********************************************
-
 .. index:: AIMAG
 
 .. index:: DIMAG
@@ -17,6 +14,9 @@ AIMAG --- Imaginary part of complex number
 .. index:: IMAGPART
 
 .. index:: complex numbers, imaginary part
+
+AIMAG --- Imaginary part of complex number  
+********************************************
 
 .. function:: AIMAG(Z)
 

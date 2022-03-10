@@ -5,12 +5,12 @@
 
 .. _ran:
 
-RAN --- Real pseudo-random number
-*********************************
-
 .. index:: RAN
 
 .. index:: random number generation
+
+RAN --- Real pseudo-random number
+*********************************
 
 .. function:: RAN
 

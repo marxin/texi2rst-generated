@@ -5,12 +5,12 @@
 
 .. _etime:
 
-ETIME --- Execution time subroutine (or function)
-*************************************************
-
 .. index:: ETIME
 
 .. index:: time, elapsed
+
+ETIME --- Execution time subroutine (or function)
+*************************************************
 
 .. function:: ETIME(VALUES, TIME)
 

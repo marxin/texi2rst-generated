@@ -5,14 +5,14 @@
 
 .. _shiftl:
 
-SHIFTL --- Left shift
-*********************
-
 .. index:: SHIFTL
 
 .. index:: bits, shift left
 
 .. index:: shift, left
+
+SHIFTL --- Left shift
+*********************
 
 .. function:: SHIFTL
 

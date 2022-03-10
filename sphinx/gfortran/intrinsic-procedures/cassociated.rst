@@ -5,14 +5,14 @@
 
 .. _c_associated:
 
-C_ASSOCIATED --- Status of a C pointer
-**************************************
-
 .. index:: C_ASSOCIATED
 
 .. index:: association status, C pointer
 
 .. index:: pointer, C association status
+
+C_ASSOCIATED --- Status of a C pointer
+**************************************
 
 .. function:: C_ASSOCIATED(c_ptr_1[, c_ptr_2])
 

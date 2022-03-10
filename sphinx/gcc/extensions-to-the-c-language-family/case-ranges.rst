@@ -5,12 +5,12 @@
 
 .. _case-ranges:
 
-Case Ranges
-***********
-
 .. index:: case ranges
 
 .. index:: ranges in case statements
+
+Case Ranges
+***********
 
 You can specify a range of consecutive values in a single ``case`` label,
 like this:

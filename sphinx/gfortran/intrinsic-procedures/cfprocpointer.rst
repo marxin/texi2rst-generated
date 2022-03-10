@@ -5,12 +5,12 @@
 
 .. _c_f_procpointer:
 
-C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
-************************************************************
-
 .. index:: C_F_PROCPOINTER
 
 .. index:: pointer, C address of pointers
+
+C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
+************************************************************
 
 .. function:: C_F_PROCPOINTER(CPTR, FPTR)
 

@@ -5,12 +5,12 @@
 
 .. _mixed-language-programming:
 
-Mixed-Language Programming
---------------------------
-
 .. index:: Interoperability
 
 .. index:: Mixed-language programming
+
+Mixed-Language Programming
+--------------------------
 
 .. toctree::
   :maxdepth: 2

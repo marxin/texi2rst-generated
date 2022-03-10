@@ -5,14 +5,14 @@
 
 .. _calls:
 
-RTL Representation of Function-Call Insns
-*****************************************
-
 .. index:: calling functions in RTL
 
 .. index:: RTL function-call insns
 
 .. index:: function-call insns
+
+RTL Representation of Function-Call Insns
+*****************************************
 
 Insns that call subroutines have the RTL expression code ``call_insn``.
 These insns must satisfy special rules, and their bodies must use a special

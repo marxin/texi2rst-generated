@@ -5,10 +5,10 @@
 
 .. _function-multiversioning:
 
+.. index:: function versions
+
 Function Multiversioning
 ************************
-
-.. index:: function versions
 
 With the GNU C++ front end, for x86 targets, you may specify multiple
 versions of a function, where each function is specialized for a

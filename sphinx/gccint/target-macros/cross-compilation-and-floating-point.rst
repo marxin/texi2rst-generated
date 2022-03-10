@@ -5,12 +5,12 @@
 
 .. _floating-point:
 
-Cross Compilation and Floating Point
-************************************
-
 .. index:: cross compilation and floating point
 
 .. index:: floating point and cross compilation
+
+Cross Compilation and Floating Point
+************************************
 
 While all modern machines use twos-complement representation for integers,
 there are a variety of representations for floating point numbers.  This

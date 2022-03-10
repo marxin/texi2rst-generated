@@ -5,9 +5,6 @@
 
 .. _specific:
 
-Host/target specific installation notes for GCC
------------------------------------------------
-
 .. index:: Specific
 
 .. index:: Specific installation notes
@@ -17,6 +14,9 @@ Host/target specific installation notes for GCC
 .. index:: Host specific installation
 
 .. index:: Target specific installation notes
+
+Host/target specific installation notes for GCC
+-----------------------------------------------
 
 Please read this document carefully *before* installing the
 GNU Compiler Collection on your machine.

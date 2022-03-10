@@ -5,14 +5,14 @@
 
 .. _selected_int_kind:
 
-SELECTED_INT_KIND --- Choose integer kind
-*****************************************
-
 .. index:: SELECTED_INT_KIND
 
 .. index:: integer kind
 
 .. index:: kind, integer
+
+SELECTED_INT_KIND --- Choose integer kind
+*****************************************
 
 .. function:: SELECTED_INT_KIND(R)
 

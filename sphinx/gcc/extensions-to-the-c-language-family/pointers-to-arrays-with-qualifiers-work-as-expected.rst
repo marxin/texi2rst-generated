@@ -5,12 +5,12 @@
 
 .. _pointers-to-arrays:
 
-Pointers to Arrays with Qualifiers Work as Expected
-***************************************************
-
 .. index:: pointers to arrays
 
 .. index:: const qualifier
+
+Pointers to Arrays with Qualifiers Work as Expected
+***************************************************
 
 In GNU C, pointers to arrays with qualifiers work similar to pointers
 to other qualified types. For example, a value of type ``int (*)[5]``

@@ -5,12 +5,12 @@
 
 .. _constraints:
 
-Operand Constraints
-*******************
-
 .. index:: operand constraints
 
 .. index:: constraints
+
+Operand Constraints
+*******************
 
 Each ``match_operand`` in an instruction pattern can specify
 constraints for the operands allowed.  The constraints allow you to
@@ -44,10 +44,10 @@ the addressing register.
 
     .. _disable-insn-alternatives:
 
+.. index:: enabled
+
 Disable insn alternatives using the enabled attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: enabled
 
 There are three insn attributes that may be used to selectively disable
 instruction alternatives:
@@ -140,12 +140,12 @@ with the ``enabled`` attribute defined like this:
 
 .. _define-constraints:
 
-Defining Machine-Specific Constraints
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: defining constraints
 
 .. index:: constraints, defining
+
+Defining Machine-Specific Constraints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Machine-specific constraints fall into two categories: register and
 non-register constraints.  Within the latter category, constraints
@@ -342,12 +342,12 @@ Use this for constraints that should not appear in ``asm`` statements.
 
 .. _c-constraint-interface:
 
-Testing constraints from C
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: testing constraints
 
 .. index:: constraints, testing
+
+Testing constraints from C
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is occasionally useful to test a constraint from C code rather than
 implicitly via the constraint string in a ``match_operand``.  The

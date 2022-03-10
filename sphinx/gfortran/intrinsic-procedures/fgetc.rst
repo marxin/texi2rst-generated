@@ -5,9 +5,6 @@
 
 .. _fgetc:
 
-FGETC --- Read a single character in stream mode
-************************************************
-
 .. index:: FGETC
 
 .. index:: read character, stream mode
@@ -15,6 +12,9 @@ FGETC --- Read a single character in stream mode
 .. index:: stream mode, read character
 
 .. index:: file operation, read character
+
+FGETC --- Read a single character in stream mode
+************************************************
 
 .. function:: FGETC(UNIT, C)
 

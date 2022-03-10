@@ -3,16 +3,16 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. program:: x86 Windows
+.. program::
 
 .. _x86-windows-options:
-
-x86 Windows Options
-^^^^^^^^^^^^^^^^^^^
 
 .. index:: x86 Windows Options
 
 .. index:: Windows Options for x86
+
+x86 Windows Options
+^^^^^^^^^^^^^^^^^^^
 
 These additional options are available for Microsoft Windows targets:
 

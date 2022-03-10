@@ -7,10 +7,10 @@
 
 .. _ebpf-options:
 
+.. index:: eBPF Options
+
 eBPF Options
 ^^^^^^^^^^^^
-
-.. index:: eBPF Options
 
 :samp:`-mframe-limit={bytes}`
   This specifies the hard limit for frame sizes, in bytes.  Currently,

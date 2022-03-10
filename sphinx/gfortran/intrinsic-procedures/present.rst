@@ -5,10 +5,10 @@
 
 .. _present:
 
+.. index:: PRESENT
+
 PRESENT --- Determine whether an optional dummy argument is specified
 *********************************************************************
-
-.. index:: PRESENT
 
 .. function:: PRESENT(A)
 

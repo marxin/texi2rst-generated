@@ -5,9 +5,6 @@
 
 .. _anint:
 
-ANINT --- Nearest whole number
-******************************
-
 .. index:: ANINT
 
 .. index:: DNINT
@@ -15,6 +12,9 @@ ANINT --- Nearest whole number
 .. index:: ceiling
 
 .. index:: rounding, ceiling
+
+ANINT --- Nearest whole number
+******************************
 
 .. function:: ANINT(A [, KIND])
 

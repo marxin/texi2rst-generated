@@ -5,14 +5,14 @@
 
 .. _null:
 
-NULL --- Function that returns an disassociated pointer
-*******************************************************
-
 .. index:: NULL
 
 .. index:: pointer, status
 
 .. index:: pointer, disassociated
+
+NULL --- Function that returns an disassociated pointer
+*******************************************************
 
 .. function:: > NULL(MOLD)
 

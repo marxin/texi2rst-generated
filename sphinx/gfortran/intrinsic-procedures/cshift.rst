@@ -5,9 +5,6 @@
 
 .. _cshift:
 
-CSHIFT --- Circular shift elements of an array
-**********************************************
-
 .. index:: CSHIFT
 
 .. index:: array, shift circularly
@@ -15,6 +12,9 @@ CSHIFT --- Circular shift elements of an array
 .. index:: array, permutation
 
 .. index:: array, rotate
+
+CSHIFT --- Circular shift elements of an array
+**********************************************
 
 .. function:: CSHIFT(ARRAY, SHIFT [, DIM])
 

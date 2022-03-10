@@ -5,12 +5,12 @@
 
 .. _isatty:
 
-ISATTY --- Whether a unit is a terminal device.
-***********************************************
-
 .. index:: ISATTY
 
 .. index:: system, terminal
+
+ISATTY --- Whether a unit is a terminal device.
+***********************************************
 
 .. function:: ISATTY(UNIT)
 

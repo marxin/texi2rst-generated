@@ -5,10 +5,10 @@
 
 .. _loop-querying:
 
+.. index:: Loop querying
+
 Loop querying
 *************
-
-.. index:: Loop querying
 
 The functions to query the information about loops are declared in
 :samp:`cfgloop.h`.  Some of the information can be taken directly from

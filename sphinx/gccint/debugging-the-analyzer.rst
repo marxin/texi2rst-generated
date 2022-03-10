@@ -5,12 +5,12 @@
 
 .. _debugging-the-analyzer:
 
-Debugging the Analyzer
-**********************
-
 .. index:: analyzer, debugging
 
 .. index:: static analyzer, debugging
+
+Debugging the Analyzer
+**********************
 
 Special Functions for Debugging the Analyzer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

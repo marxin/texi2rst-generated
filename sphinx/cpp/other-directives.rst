@@ -5,12 +5,12 @@
 
   .. _other-directives:
 
-Other Directives
-----------------
-
 .. index:: #ident
 
 .. index:: #sccs
+
+Other Directives
+----------------
 
 The :samp:`#ident` directive takes one argument, a string constant.  On
 some systems, that string constant is copied into a special segment of

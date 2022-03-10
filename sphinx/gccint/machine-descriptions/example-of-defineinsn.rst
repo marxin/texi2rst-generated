@@ -5,10 +5,10 @@
 
 .. _example:
 
+.. index:: define_insn example
+
 Example of define_insn
 **********************
-
-.. index:: define_insn example
 
 Here is an example of an instruction pattern, taken from the machine
 description for the 68000/68020.

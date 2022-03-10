@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_ASSIGN
+
 GIMPLE_ASSIGN
 ^^^^^^^^^^^^^
-
-.. index:: GIMPLE_ASSIGN
 
 .. function:: gassign *gimple_build_assign (tree lhs, tree rhs)
 

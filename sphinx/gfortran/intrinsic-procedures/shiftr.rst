@@ -5,14 +5,14 @@
 
 .. _shiftr:
 
-SHIFTR --- Right shift
-**********************
-
 .. index:: SHIFTR
 
 .. index:: bits, shift right
 
 .. index:: shift, right
+
+SHIFTR --- Right shift
+**********************
 
 .. function:: SHIFTR
 

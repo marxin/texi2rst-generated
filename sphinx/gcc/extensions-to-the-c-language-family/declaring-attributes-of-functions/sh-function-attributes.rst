@@ -10,11 +10,11 @@ SH Function Attributes
 
 These function attributes are supported on the SH family of processors:
 
+.. index:: function_vector function attribute, SH
+
+.. index:: calling functions through the function vector on SH2A
+
 .. gcc-attr:: function_vector
-
-  .. index:: function_vector function attribute, SH
-
-  .. index:: calling functions through the function vector on SH2A
 
   On SH2A targets, this attribute declares a function to be called using the
   TBR relative addressing mode.  The argument to this attribute is the entry
@@ -32,34 +32,34 @@ These function attributes are supported on the SH family of processors:
   made to the same function, it saves 2 bytes of code per each of these
   calls.
 
-.. gcc-attr:: interrupt_handler
+.. index:: interrupt_handler function attribute, SH
 
-  .. index:: interrupt_handler function attribute, SH
+.. gcc-attr:: interrupt_handler
 
   Use this attribute to
   indicate that the specified function is an interrupt handler.  The compiler
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. gcc-attr:: nosave_low_regs
+.. index:: nosave_low_regs function attribute, SH
 
-  .. index:: nosave_low_regs function attribute, SH
+.. gcc-attr:: nosave_low_regs
 
   Use this attribute on SH targets to indicate that an :gcc-attr:`interrupt_handler`
   function should not save and restore registers R0..R7.  This can be used on SH3\*
   and SH4\* targets that have a second R0..R7 register bank for non-reentrant
   interrupt handlers.
 
-.. gcc-attr:: renesas
+.. index:: renesas function attribute, SH
 
-  .. index:: renesas function attribute, SH
+.. gcc-attr:: renesas
 
   On SH targets this attribute specifies that the function or struct follows the
   Renesas ABI.
 
-.. gcc-attr:: resbank
+.. index:: resbank function attribute, SH
 
-  .. index:: resbank function attribute, SH
+.. gcc-attr:: resbank
 
   On the SH2A target, this attribute enables the high-speed register
   saving and restoration using a register bank for :gcc-attr:`interrupt_handler`
@@ -72,9 +72,9 @@ These function attributes are supported on the SH family of processors:
   banks are stacked in first-in last-out (FILO) sequence.  Restoration
   from the bank is executed by issuing a RESBANK instruction.
 
-.. gcc-attr:: sp_switch
+.. index:: sp_switch function attribute, SH
 
-  .. index:: sp_switch function attribute, SH
+.. gcc-attr:: sp_switch
 
   Use this attribute on the SH to indicate an :gcc-attr:`interrupt_handler`
   function should switch to an alternate stack.  It expects a string
@@ -87,17 +87,17 @@ These function attributes are supported on the SH family of processors:
     void f () __attribute__ ((interrupt_handler,
                               sp_switch ("alt_stack")));
 
-.. gcc-attr:: trap_exit
+.. index:: trap_exit function attribute, SH
 
-  .. index:: trap_exit function attribute, SH
+.. gcc-attr:: trap_exit
 
   Use this attribute on the SH for an :gcc-attr:`interrupt_handler` to return using
   ``trapa`` instead of ``rte``.  This attribute expects an integer
   argument specifying the trap number to be used.
 
-.. gcc-attr:: trapa_handler
+.. index:: trapa_handler function attribute, SH
 
-  .. index:: trapa_handler function attribute, SH
+.. gcc-attr:: trapa_handler
 
   On SH targets this function attribute is similar to :gcc-attr:`interrupt_handler`
   but it does not save and restore all registers.

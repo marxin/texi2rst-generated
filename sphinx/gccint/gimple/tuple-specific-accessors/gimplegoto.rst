@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_GOTO
+
 GIMPLE_GOTO
 ^^^^^^^^^^^
-
-.. index:: GIMPLE_GOTO
 
 .. function:: ggoto *gimple_build_goto (tree dest)
 

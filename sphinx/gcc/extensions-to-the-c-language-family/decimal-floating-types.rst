@@ -5,9 +5,6 @@
 
 .. _decimal-float:
 
-Decimal Floating Types
-**********************
-
 .. index:: decimal floating types
 
 .. index:: _Decimal32 data type
@@ -27,6 +24,9 @@ Decimal Floating Types
 .. index:: DD integer suffix
 
 .. index:: DL integer suffix
+
+Decimal Floating Types
+**********************
 
 As an extension, GNU C supports decimal floating types as
 defined in the N1312 draft of ISO/IEC WDTR24732.  Support for decimal

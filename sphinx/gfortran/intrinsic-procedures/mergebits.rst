@@ -5,12 +5,12 @@
 
 .. _merge_bits:
 
-MERGE_BITS --- Merge of bits under mask
-***************************************
-
 .. index:: MERGE_BITS
 
 .. index:: bits, merge
+
+MERGE_BITS --- Merge of bits under mask
+***************************************
 
 .. function:: MERGE_BITS(I, J, MASK)
 

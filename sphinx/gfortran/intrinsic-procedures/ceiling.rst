@@ -5,14 +5,14 @@
 
 .. _ceiling:
 
-CEILING --- Integer ceiling function
-************************************
-
 .. index:: CEILING
 
 .. index:: ceiling
 
 .. index:: rounding, ceiling
+
+CEILING --- Integer ceiling function
+************************************
 
 .. function:: CEILING(A)
 

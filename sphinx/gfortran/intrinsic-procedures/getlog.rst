@@ -5,14 +5,14 @@
 
 .. _getlog:
 
-GETLOG --- Get login name
-*************************
-
 .. index:: GETLOG
 
 .. index:: system, login name
 
 .. index:: login name
+
+GETLOG --- Get login name
+*************************
 
 .. function:: GETLOG(C)
 

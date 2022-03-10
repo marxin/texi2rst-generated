@@ -5,12 +5,12 @@
 
 .. _ssa:
 
-Static Single Assignment
-************************
-
 .. index:: SSA
 
 .. index:: static single assignment
+
+Static Single Assignment
+************************
 
 Most of the tree optimizers rely on the data flow information provided
 by the Static Single Assignment (SSA) form.  We implement the SSA form
@@ -91,12 +91,12 @@ Function gimple_phi_arg_edge (:samp:`{phi}`, :samp:`{i}`)Returns the incoming ed
 
 Function gimple_phi_arg_def (:samp:`{phi}`, :samp:`{i}`)Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
 
-Preserving the SSA form
-^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: update_ssa
 
 .. index:: preserving SSA form
+
+Preserving the SSA form
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Some optimization passes make changes to the function that
 invalidate the SSA property.  This can happen when a pass has
@@ -213,10 +213,10 @@ There are several ``TODO`` flags that control the behavior of
   are explicitly destroyed and only the symbols marked for
   renaming are processed.
 
+.. index:: examining SSA_NAMEs
+
 Examining SSA_NAME nodes
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: examining SSA_NAMEs
 
 The following macros can be used to examine ``SSA_NAME`` nodes
 

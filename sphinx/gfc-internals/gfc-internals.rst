@@ -27,10 +27,10 @@
 
 .. _top:
 
+.. index:: Introduction
+
 Introduction
 ============
-
-.. index:: Introduction
 
 This manual documents the internals of :command:`gfortran`, 
 the GNU Fortran compiler.

@@ -5,12 +5,12 @@
 
 .. _findloc:
 
-FINDLOC --- Search an array for a value
-***************************************
-
 .. index:: FINDLOC
 
 .. index:: findloc
+
+FINDLOC --- Search an array for a value
+***************************************
 
 .. function:: FINDLOC(ARRAY, VALUE, , MASK ,KIND ,BACK)
 

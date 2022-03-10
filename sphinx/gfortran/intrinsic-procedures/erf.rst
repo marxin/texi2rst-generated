@@ -5,12 +5,12 @@
 
 .. _erf:
 
-ERF --- Error function 
-***********************
-
 .. index:: ERF
 
 .. index:: error function
+
+ERF --- Error function 
+***********************
 
 .. function:: ERF(X)
 

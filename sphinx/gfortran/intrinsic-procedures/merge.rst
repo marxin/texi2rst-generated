@@ -5,14 +5,14 @@
 
 .. _merge:
 
-MERGE --- Merge variables
-*************************
-
 .. index:: MERGE
 
 .. index:: array, merge arrays
 
 .. index:: array, combine arrays
+
+MERGE --- Merge variables
+*************************
 
 .. function:: MERGE(TSOURCE, FSOURCE, MASK)
 

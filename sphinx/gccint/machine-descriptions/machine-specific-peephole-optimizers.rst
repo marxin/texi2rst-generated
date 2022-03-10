@@ -5,12 +5,12 @@
 
 .. _peephole-definitions:
 
-Machine-Specific Peephole Optimizers
-************************************
-
 .. index:: peephole optimizer definitions
 
 .. index:: defining peephole optimizers
+
+Machine-Specific Peephole Optimizers
+************************************
 
 In addition to instruction patterns the :samp:`md` file may contain
 definitions of machine-specific peephole optimizations.
@@ -40,10 +40,10 @@ targets that do scheduling.
 
 .. _define_peephole:
 
+.. index:: define_peephole
+
 RTL to Text Peephole Optimizers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: define_peephole
 
 A definition looks like this:
 
@@ -224,10 +224,10 @@ then the way to mention this insn in a peephole is as follows:
 
 .. _define_peephole2:
 
+.. index:: define_peephole2
+
 RTL to RTL Peephole Optimizers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: define_peephole2
 
 The ``define_peephole2`` definition tells the compiler how to
 substitute one sequence of instructions for another sequence,

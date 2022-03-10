@@ -5,14 +5,14 @@
 
 .. _typeof:
 
-Referring to a Type with typeof
-*******************************
-
 .. index:: typeof
 
 .. index:: sizeof
 
 .. index:: macros, types of arguments
+
+Referring to a Type with typeof
+*******************************
 
 Another way to refer to the type of an expression is with ``typeof``.
 The syntax of using of this keyword looks like ``sizeof``, but the

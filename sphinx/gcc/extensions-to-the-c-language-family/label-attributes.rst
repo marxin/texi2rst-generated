@@ -5,10 +5,10 @@
 
 .. _label-attributes:
 
+.. index:: Label Attributes
+
 Label Attributes
 ****************
-
-.. index:: Label Attributes
 
 GCC allows attributes to be set on C labels.  See :ref:`attribute-syntax`, for 
 details of the exact syntax for using attributes.  Other attributes are 

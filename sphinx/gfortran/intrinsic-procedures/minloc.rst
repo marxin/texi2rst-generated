@@ -5,12 +5,12 @@
 
 .. _minloc:
 
-MINLOC --- Location of the minimum value within an array
-********************************************************
-
 .. index:: MINLOC
 
 .. index:: array, location of minimum element
+
+MINLOC --- Location of the minimum value within an array
+********************************************************
 
 .. function:: MINLOC(ARRAY , MASK, ,KIND ,BACK)
 

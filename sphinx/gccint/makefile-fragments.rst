@@ -5,10 +5,10 @@
 
 .. _fragments:
 
+.. index:: makefile fragment
+
 Makefile Fragments
 ------------------
-
-.. index:: makefile fragment
 
 When you configure GCC using the :samp:`configure` script, it will
 construct the file :samp:`Makefile` from the template file

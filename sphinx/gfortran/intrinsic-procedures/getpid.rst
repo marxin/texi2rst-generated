@@ -5,14 +5,14 @@
 
 .. _getpid:
 
-GETPID --- Process ID function
-******************************
-
 .. index:: GETPID
 
 .. index:: system, process ID
 
 .. index:: process ID
+
+GETPID --- Process ID function
+******************************
 
 .. function:: GETPID()
 

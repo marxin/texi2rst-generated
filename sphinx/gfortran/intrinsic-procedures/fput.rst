@@ -5,9 +5,6 @@
 
 .. _fput:
 
-FPUT --- Write a single character in stream mode to stdout 
-***********************************************************
-
 .. index:: FPUT
 
 .. index:: write character, stream mode
@@ -15,6 +12,9 @@ FPUT --- Write a single character in stream mode to stdout
 .. index:: stream mode, write character
 
 .. index:: file operation, write character
+
+FPUT --- Write a single character in stream mode to stdout 
+***********************************************************
 
 .. function:: FPUT(C)
 

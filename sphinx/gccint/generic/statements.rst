@@ -5,10 +5,10 @@
 
 .. _statements:
 
+.. index:: Statements
+
 Statements
 **********
-
-.. index:: Statements
 
 Most statements in GIMPLE are assignment statements, represented by
 ``GIMPLE_ASSIGN``.  No other C expressions can appear at statement level;
@@ -31,10 +31,10 @@ There are also several varieties of complex statements.
 
 .. _basic-statements:
 
+.. index:: Basic Statements
+
 Basic Statements
 ^^^^^^^^^^^^^^^^
-
-.. index:: Basic Statements
 
 .. envvar:: ASM_EXPR
 
@@ -160,10 +160,10 @@ Basic Statements
 
 .. _blocks:
 
+.. index:: Blocks
+
 Blocks
 ^^^^^^
-
-.. index:: Blocks
 
 Block scopes and the variables they declare in GENERIC are
 expressed using the ``BIND_EXPR`` code, which in previous
@@ -198,10 +198,10 @@ level use the same ``BIND_EXPR``.
 
 .. _statement-sequences:
 
+.. index:: Statement Sequences
+
 Statement Sequences
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: Statement Sequences
 
 Multiple statements at the same nesting level are collected into
 a ``STATEMENT_LIST``.  Statement lists are modified and
@@ -209,10 +209,10 @@ traversed using the interface in :samp:`tree-iterator.h`.
 
 .. _empty-statements:
 
+.. index:: Empty Statements
+
 Empty Statements
 ^^^^^^^^^^^^^^^^
-
-.. index:: Empty Statements
 
 Whenever possible, statements with no effect are discarded.  But
 if they are nested within another construct which cannot be
@@ -225,10 +225,10 @@ An empty statement is represented as ``(void)0``.
 
 .. _jumps:
 
+.. index:: Jumps
+
 Jumps
 ^^^^^
-
-.. index:: Jumps
 
 Other jumps are expressed by either ``GOTO_EXPR`` or
 ``RETURN_EXPR``.
@@ -246,10 +246,10 @@ the future, perhaps by moving most of that logic into
 
 .. _cleanups:
 
+.. index:: Cleanups
+
 Cleanups
 ^^^^^^^^
-
-.. index:: Cleanups
 
 Destructors for local C++ objects and similar dynamic cleanups are
 represented in GIMPLE by a ``TRY_FINALLY_EXPR``.

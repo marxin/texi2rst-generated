@@ -5,9 +5,6 @@
 
 .. _unpack:
 
-UNPACK --- Unpack an array of rank one into an array
-****************************************************
-
 .. index:: UNPACK
 
 .. index:: array, unpacking
@@ -15,6 +12,9 @@ UNPACK --- Unpack an array of rank one into an array
 .. index:: array, increase dimension
 
 .. index:: array, scatter elements
+
+UNPACK --- Unpack an array of rank one into an array
+****************************************************
 
 .. function:: UNPACK(VECTOR, MASK, FIELD)
 

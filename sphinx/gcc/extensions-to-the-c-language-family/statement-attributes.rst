@@ -5,10 +5,10 @@
 
   .. _statement-attributes:
 
+.. index:: Statement Attributes
+
 Statement Attributes
 ********************
-
-.. index:: Statement Attributes
 
 GCC allows attributes to be set on null statements.  See :ref:`attribute-syntax`,
 for details of the exact syntax for using attributes.  Other attributes are

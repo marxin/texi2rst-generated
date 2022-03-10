@@ -5,9 +5,6 @@
 
 .. _ibset:
 
-IBSET --- Set bit
-*****************
-
 .. index:: IBSET
 
 .. index:: BBSET
@@ -19,6 +16,9 @@ IBSET --- Set bit
 .. index:: KIBSET
 
 .. index:: bits, set
+
+IBSET --- Set bit
+*****************
 
 .. function:: IBSET
 

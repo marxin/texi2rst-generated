@@ -5,14 +5,14 @@
 
 .. _invoking-gcc:
 
-GCC Command Options
--------------------
-
 .. index:: GCC command options
 
 .. index:: command options
 
 .. index:: options, GCC command
+
+GCC Command Options
+-------------------
 
 Description
 ^^^^^^^^^^^

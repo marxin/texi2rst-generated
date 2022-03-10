@@ -5,10 +5,10 @@
 
 .. _pragmas:
 
+.. index:: pragma directive
+
 Pragmas
 -------
-
-.. index:: pragma directive
 
 The :samp:`#pragma` directive is the method specified by the C standard
 for providing additional information to the compiler, beyond what is

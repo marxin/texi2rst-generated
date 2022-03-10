@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_RETURN
+
 GIMPLE_RETURN
 ^^^^^^^^^^^^^
-
-.. index:: GIMPLE_RETURN
 
 .. function:: greturn *gimple_build_return (tree retval)
 

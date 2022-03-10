@@ -5,14 +5,14 @@
 
 .. _reshape:
 
-RESHAPE --- Function to reshape an array
-****************************************
-
 .. index:: RESHAPE
 
 .. index:: array, change dimensions
 
 .. index:: array, transmogrify
+
+RESHAPE --- Function to reshape an array
+****************************************
 
 .. function:: RESHAPE(SOURCE, SHAPE, PAD, ORDER)
 

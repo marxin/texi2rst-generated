@@ -5,10 +5,10 @@
 
 .. _language-dependent-trees:
 
+.. index:: language-dependent trees
+
 Language-dependent trees
 ************************
-
-.. index:: language-dependent trees
 
 Front ends may wish to keep some state associated with various GENERIC
 trees while parsing.  To support this, trees provide a set of flags

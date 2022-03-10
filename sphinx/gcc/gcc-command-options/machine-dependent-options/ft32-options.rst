@@ -7,10 +7,10 @@
 
 .. _ft32-options:
 
+.. index:: FT32 Options
+
 FT32 Options
 ^^^^^^^^^^^^
-
-.. index:: FT32 Options
 
 These options are defined specifically for the FT32 port.
 

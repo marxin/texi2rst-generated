@@ -5,12 +5,12 @@
 
 .. _chmod:
 
-CHMOD --- Change access permissions of files
-********************************************
-
 .. index:: CHMOD
 
 .. index:: file system, change access mode
+
+CHMOD --- Change access permissions of files
+********************************************
 
 .. function:: CHMOD
 

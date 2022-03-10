@@ -5,14 +5,14 @@
 
 .. _compiler_version:
 
-COMPILER_VERSION --- Compiler version string
-********************************************
-
 .. index:: COMPILER_VERSION
 
 .. index:: compiler, name and version
 
 .. index:: version of the compiler
+
+COMPILER_VERSION --- Compiler version string
+********************************************
 
 .. function:: COMPILER_VERSION
 

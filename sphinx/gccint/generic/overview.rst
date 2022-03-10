@@ -5,12 +5,12 @@
 
 .. _tree-overview:
 
-Overview
-********
-
 .. index:: tree
 
 .. index:: TREE_CODE
+
+Overview
+********
 
 The central data structure used by the internal representation is the
 ``tree``.  These nodes, while all of the C type ``tree``, are of
@@ -110,14 +110,14 @@ bug.
 
 .. _macros-and-functions:
 
-Trees
-^^^^^
-
 .. index:: tree
 
 .. index:: TREE_CHAIN
 
 .. index:: TREE_TYPE
+
+Trees
+^^^^^
 
 All GENERIC trees have two fields in common.  First, ``TREE_CHAIN``
 is a pointer that can be used as a singly-linked list to other trees.
@@ -142,12 +142,12 @@ These are some other functions for handling trees:
 
 .. _identifiers:
 
-Identifiers
-^^^^^^^^^^^
-
 .. index:: identifier
 
 .. index:: name
+
+Identifiers
+^^^^^^^^^^^
 
 .. index:: IDENTIFIER_NODE
 
@@ -197,14 +197,14 @@ You can use the following macros to access identifiers:
 
 .. _containers:
 
-Containers
-^^^^^^^^^^
-
 .. index:: container
 
 .. index:: list
 
 .. index:: vector
+
+Containers
+^^^^^^^^^^
 
 .. index:: TREE_LIST
 

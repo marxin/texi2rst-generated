@@ -5,12 +5,12 @@
 
 .. _binaries:
 
+.. index:: Binaries
+
+.. index:: Binaries
+
 Binaries
 --------
-
-.. index:: Binaries
-
-.. index:: Binaries
 
 We are often asked about pre-compiled versions of GCC.  While we cannot
 provide these for all platforms, below you'll find links to binaries for

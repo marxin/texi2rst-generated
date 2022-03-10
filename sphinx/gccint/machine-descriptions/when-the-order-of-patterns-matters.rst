@@ -5,12 +5,12 @@
 
 .. _pattern-ordering:
 
-When the Order of Patterns Matters
-**********************************
-
 .. index:: Pattern Ordering
 
 .. index:: Ordering of Patterns
+
+When the Order of Patterns Matters
+**********************************
 
 Sometimes an insn can match more than one instruction pattern.  Then the
 pattern that appears first in the machine description is the one used.

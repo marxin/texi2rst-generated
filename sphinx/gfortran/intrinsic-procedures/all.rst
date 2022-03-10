@@ -5,14 +5,14 @@
 
 .. _all:
 
-ALL --- All values in MASK along DIM are true 
-**********************************************
-
 .. index:: ALL
 
 .. index:: array, apply condition
 
 .. index:: array, condition testing
+
+ALL --- All values in MASK along DIM are true 
+**********************************************
 
 .. function:: ALL(MASK [, DIM])
 

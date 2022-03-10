@@ -10,9 +10,9 @@ RISC-V Function Attributes
 
 These function attributes are supported by the RISC-V back end:
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, RISC-V
 
-  .. index:: naked function attribute, RISC-V
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -23,9 +23,9 @@ These function attributes are supported by the RISC-V back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, RISC-V
 
-  .. index:: interrupt function attribute, RISC-V
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate that the specified function is an interrupt
   handler.  The compiler generates function entry and exit sequences suitable

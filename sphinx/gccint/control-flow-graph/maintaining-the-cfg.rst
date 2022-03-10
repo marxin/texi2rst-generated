@@ -5,10 +5,10 @@
 
 .. _maintaining-the-cfg:
 
+.. index:: cfghooks.h
+
 Maintaining the CFG
 *******************
-
-.. index:: cfghooks.h
 
 An important task of each compiler pass is to keep both the control
 flow graph and all profile information up-to-date.  Reconstruction of

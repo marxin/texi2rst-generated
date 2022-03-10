@@ -5,9 +5,6 @@
 
 .. _warning-options:
 
-Options to Request or Suppress Warnings
-***************************************
-
 .. index:: options to control warnings
 
 .. index:: warning messages
@@ -15,6 +12,9 @@ Options to Request or Suppress Warnings
 .. index:: messages, warning
 
 .. index:: suppressing warnings
+
+Options to Request or Suppress Warnings
+***************************************
 
 Warnings are diagnostic messages that report constructions that
 are not inherently erroneous but that are risky or suggest there
@@ -1875,13 +1875,13 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wmaybe-uninitialized`.
 
+.. index:: warning for unknown pragmas
+
+.. index:: unknown pragmas, warning
+
+.. index:: pragmas, warning of unknown
+
 .. option:: -Wunknown-pragmas
-
-  .. index:: warning for unknown pragmas
-
-  .. index:: unknown pragmas, warning
-
-  .. index:: pragmas, warning of unknown
 
   Warn when a ``#pragma`` directive is encountered that is not understood by 
   GCC.  If this command-line option is used, warnings are even issued
@@ -2697,11 +2697,11 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wno-div-by-zero`.
 
+.. index:: warnings from system headers
+
+.. index:: system headers, warnings from
+
 .. option:: -Wsystem-headers
-
-  .. index:: warnings from system headers
-
-  .. index:: system headers, warnings from
 
   Print warning messages for constructs found in system header files.
   Warnings from system headers are normally suppressed, on the assumption
@@ -2955,9 +2955,9 @@ warnings, in some cases it may also cause false positives.
 
   This warning is also enabled by :option:`-Wshadow`:samp:`=local`.
 
-.. option:: -Wlarger-than={byte-size}
+.. index:: Wlarger-than-byte-size
 
-  .. index:: Wlarger-than-byte-size
+.. option:: -Wlarger-than={byte-size}
 
   Warn whenever an object is defined whose size exceeds :samp:`{byte-size}`.
   :option:`-Wlarger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
@@ -3651,13 +3651,13 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wjump-misses-init`.
 
+.. index:: warning for comparison of signed and unsigned values
+
+.. index:: comparison of signed and unsigned values, warning
+
+.. index:: signed and unsigned values, comparison warning
+
 .. option:: -Wsign-compare
-
-  .. index:: warning for comparison of signed and unsigned values
-
-  .. index:: comparison of signed and unsigned values, warning
-
-  .. index:: signed and unsigned values, comparison warning
 
   Warn when a comparison between signed and unsigned values could produce
   an incorrect result when the signed value is converted to unsigned.
@@ -4198,13 +4198,13 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wno-multichar`.
 
+.. index:: NFC
+
+.. index:: NFKC
+
+.. index:: character set, input normalization
+
 .. option:: -Wnormalized=[none|id|nfc|nfkc]
-
-  .. index:: NFC
-
-  .. index:: NFKC
-
-  .. index:: character set, input normalization
 
   In ISO C and ISO C++, two identifiers are different if they are
   different sequences of characters.  However, sometimes when characters
@@ -4295,9 +4295,9 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wno-odr`.
 
-.. option:: -Wopenacc-parallelism
+.. index:: OpenACC accelerator programming
 
-  .. index:: OpenACC accelerator programming
+.. option:: -Wopenacc-parallelism
 
   Warn about potentially suboptimal choices related to OpenACC parallelism.
 

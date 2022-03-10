@@ -7,10 +7,10 @@
 
 .. _v850-options:
 
+.. index:: V850 Options
+
 V850 Options
 ^^^^^^^^^^^^
-
-.. index:: V850 Options
 
 These :samp:`-m` options are defined for V850 implementations:
 

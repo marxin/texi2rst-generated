@@ -5,12 +5,12 @@
 
 .. _input-and-output-files:
 
-Input and Output files
-**********************
-
 .. index:: suffixes for D source
 
 .. index:: D source file suffixes
+
+Input and Output files
+**********************
 
 For any given input file, the file name suffix determines what kind of
 compilation is done.  The following kinds of input file names are supported:

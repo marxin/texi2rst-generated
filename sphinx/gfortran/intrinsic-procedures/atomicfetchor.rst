@@ -5,12 +5,12 @@
 
 .. _atomic_fetch_or:
 
-ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
-****************************************************************
-
 .. index:: ATOMIC_FETCH_OR
 
 .. index:: Atomic subroutine, OR with fetch
+
+ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
+****************************************************************
 
 .. function:: ATOMIC_FETCH_OR (ATOM, VALUE, OLD , STAT)
 

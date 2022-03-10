@@ -5,12 +5,12 @@
 
 .. _lshift:
 
-LSHIFT --- Left shift bits
-**************************
-
 .. index:: LSHIFT
 
 .. index:: bits, shift left
+
+LSHIFT --- Left shift bits
+**************************
 
 .. function:: LSHIFT
 

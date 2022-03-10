@@ -5,10 +5,10 @@
 
   .. _insns:
 
+.. index:: insns
+
 Insns
 *****
-
-.. index:: insns
 
 The RTL representation of the code for a function is a doubly-linked
 chain of objects called :dfn:`insns`.  Insns are expressions with

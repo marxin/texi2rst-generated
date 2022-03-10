@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_MASTER
+
 GIMPLE_OMP_MASTER
 ^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_MASTER
 
 .. function:: gimple gimple_build_omp_master (gimple_seq body)
 

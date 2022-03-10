@@ -7,10 +7,10 @@
 
 .. _x86-options:
 
+.. index:: x86 Options
+
 x86 Options
 ^^^^^^^^^^^
-
-.. index:: x86 Options
 
 These :samp:`-m` options are defined for the x86 family of computers.
 
@@ -513,9 +513,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
     still experimental, because the GCC register allocator does not model separate
     functional units well, resulting in unstable performance.
 
-.. option:: -masm={dialect}
+.. index:: masm=dialect
 
-  .. index:: masm=dialect
+.. option:: -masm={dialect}
 
   Output assembly instructions using selected :samp:`{dialect}`.  Also affects
   which dialect is used for basic ``asm`` (see :ref:`basic-asm`) and
@@ -820,9 +820,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   tuning features and default settings. The names can be used in 
   :option:`-mtune-ctrl`:samp:`={feature-list}`.
 
-.. option:: -mtune-ctrl={feature-list}
+.. index:: mtune-ctrl=feature-list
 
-  .. index:: mtune-ctrl=feature-list
+.. option:: -mtune-ctrl={feature-list}
 
   This option is used to do fine grain control of x86 code generation features.
   :samp:`{feature-list}` is a comma separated list of :samp:`{feature}` names. See also
@@ -1229,9 +1229,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   For string operations of unknown size, use run-time checks with
   inline code for small blocks and a library call for large blocks.
 
-.. option:: -mstringop-strategy={alg}
+.. index:: mstringop-strategy=alg
 
-  .. index:: mstringop-strategy=alg
+.. option:: -mstringop-strategy={alg}
 
   Override the internal decision heuristic for the particular algorithm to use
   for inlining string operations.  The allowed values for :samp:`{alg}` are:
@@ -1245,9 +1245,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`libcall`
     Always use a library call.
 
-.. option:: -mmemcpy-strategy={strategy}
+.. index:: mmemcpy-strategy=strategy
 
-  .. index:: mmemcpy-strategy=strategy
+.. option:: -mmemcpy-strategy={strategy}
 
   Override the internal decision heuristic to decide if ``__builtin_memcpy``
   should be inlined and what inline algorithm to use when the expected size
@@ -1260,9 +1260,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`{alg}` is ``0`` for the first triplet and ``max_size + 1`` of the 
   preceding range.
 
-.. option:: -mmemset-strategy={strategy}
+.. index:: mmemset-strategy=strategy
 
-  .. index:: mmemset-strategy=strategy
+.. option:: -mmemset-strategy={strategy}
 
   The option is similar to :option:`-mmemcpy-strategy` = except that it is to control
   ``__builtin_memset`` expansion.

@@ -5,14 +5,14 @@
 
 .. _and:
 
-AND --- Bitwise logical AND
-***************************
-
 .. index:: AND
 
 .. index:: bitwise logical and
 
 .. index:: logical and, bitwise
+
+AND --- Bitwise logical AND
+***************************
 
 .. function:: AND
 

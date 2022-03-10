@@ -5,14 +5,14 @@
 
 .. _floor:
 
-FLOOR --- Integer floor function
-********************************
-
 .. index:: FLOOR
 
 .. index:: floor
 
 .. index:: rounding, floor
+
+FLOOR --- Integer floor function
+********************************
 
 .. function:: FLOOR(A)
 

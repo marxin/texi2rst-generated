@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_CALL
+
 GIMPLE_CALL
 ^^^^^^^^^^^
-
-.. index:: GIMPLE_CALL
 
 .. function:: gcall *gimple_build_call (tree fn, unsigned nargs, ...)
 

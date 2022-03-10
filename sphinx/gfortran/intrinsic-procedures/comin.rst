@@ -5,12 +5,12 @@
 
 .. _co_min:
 
-CO_MIN --- Minimal value on the current set of images
-*****************************************************
-
 .. index:: CO_MIN
 
 .. index:: Collectives, minimal value
+
+CO_MIN --- Minimal value on the current set of images
+*****************************************************
 
 .. function:: CO_MIN
 

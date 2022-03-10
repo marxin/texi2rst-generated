@@ -7,10 +7,10 @@
 
 .. _aarch64-options:
 
+.. index:: AArch64 Options
+
 AArch64 Options
 ^^^^^^^^^^^^^^^
-
-.. index:: AArch64 Options
 
 These options are defined for AArch64 implementations:
 

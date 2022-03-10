@@ -5,12 +5,12 @@
 
 .. _storage_size:
 
-STORAGE_SIZE --- Storage size in bits
-*************************************
-
 .. index:: STORAGE_SIZE
 
 .. index:: storage size
+
+STORAGE_SIZE --- Storage size in bits
+*************************************
 
 .. function:: STORAGE_SIZE(A , KIND)
 

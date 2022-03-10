@@ -5,10 +5,10 @@
 
 .. _template-instantiation:
 
+.. index:: template instantiation
+
 Where's the Template?
 *********************
-
-.. index:: template instantiation
 
 C++ templates were the first language feature to require more
 intelligence from the environment than was traditionally found on a UNIX

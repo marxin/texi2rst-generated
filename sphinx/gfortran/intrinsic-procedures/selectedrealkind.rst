@@ -5,9 +5,6 @@
 
 .. _selected_real_kind:
 
-SELECTED_REAL_KIND --- Choose real kind
-***************************************
-
 .. index:: SELECTED_REAL_KIND
 
 .. index:: real kind
@@ -15,6 +12,9 @@ SELECTED_REAL_KIND --- Choose real kind
 .. index:: kind, real
 
 .. index:: radix, real
+
+SELECTED_REAL_KIND --- Choose real kind
+***************************************
 
 .. function:: SELECTED_REAL_KIND(P,R)
 

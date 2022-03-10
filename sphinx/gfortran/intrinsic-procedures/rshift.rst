@@ -5,12 +5,12 @@
 
 .. _rshift:
 
-RSHIFT --- Right shift bits
-***************************
-
 .. index:: RSHIFT
 
 .. index:: bits, shift right
+
+RSHIFT --- Right shift bits
+***************************
 
 .. function:: RSHIFT
 

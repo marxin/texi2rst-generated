@@ -5,9 +5,6 @@
 
 .. _acosh:
 
-ACOSH --- Inverse hyperbolic cosine function
-********************************************
-
 .. index:: ACOSH
 
 .. index:: DACOSH
@@ -19,6 +16,9 @@ ACOSH --- Inverse hyperbolic cosine function
 .. index:: hyperbolic function, cosine, inverse
 
 .. index:: cosine, hyperbolic, inverse
+
+ACOSH --- Inverse hyperbolic cosine function
+********************************************
 
 .. function:: ACOSH(X)
 

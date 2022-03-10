@@ -5,14 +5,14 @@
 
 .. _restricted-pointers:
 
-Restricting Pointer Aliasing
-****************************
-
 .. index:: restricted pointers
 
 .. index:: restricted references
 
 .. index:: restricted this pointer
+
+Restricting Pointer Aliasing
+****************************
 
 As with the C front end, G++ understands the C99 feature of restricted pointers,
 specified with the ``__restrict__``, or ``__restrict`` type

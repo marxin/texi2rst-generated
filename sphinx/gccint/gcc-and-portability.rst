@@ -5,12 +5,12 @@
 
 .. _portability:
 
-GCC and Portability
--------------------
-
 .. index:: portability
 
 .. index:: GCC and portability
+
+GCC and Portability
+-------------------
 
 GCC itself aims to be portable to any machine where ``int`` is at least
 a 32-bit type.  It aims to target machines with a flat (non-segmented) byte

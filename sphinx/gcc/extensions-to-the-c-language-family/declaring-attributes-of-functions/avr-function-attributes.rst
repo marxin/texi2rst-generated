@@ -10,9 +10,9 @@ AVR Function Attributes
 
 These function attributes are supported by the AVR back end:
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, AVR
 
-  .. index:: interrupt function attribute, AVR
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -27,9 +27,9 @@ These function attributes are supported by the AVR back end:
   :gcc-attr:`interrupt` are specified for the same function, :gcc-attr:`signal`
   is silently ignored.
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, AVR
 
-  .. index:: naked function attribute, AVR
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -40,9 +40,9 @@ These function attributes are supported by the AVR back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. gcc-attr:: no_gccisr
+.. index:: no_gccisr function attribute, AVR
 
-  .. index:: no_gccisr function attribute, AVR
+.. gcc-attr:: no_gccisr
 
   Do not use ``__gcc_isr`` pseudo instructions in a function with
   the :gcc-attr:`interrupt` or :gcc-attr:`signal` attribute aka. interrupt
@@ -70,11 +70,11 @@ These function attributes are supported by the AVR back end:
   To disable ``__gcc_isr`` generation for the whole compilation unit,
   there is option :option:`-mno-gas-isr-prologues`, see :ref:`avr-options`.
 
+.. index:: OS_main function attribute, AVR
+
+.. index:: OS_task function attribute, AVR
+
 .. gcc-attr:: OS_main, OS_task
-
-  .. index:: OS_main function attribute, AVR
-
-  .. index:: OS_task function attribute, AVR
 
   On AVR, functions with the :gcc-attr:`OS_main` or ``OS_task`` attribute
   do not save/restore any call-saved register in their prologue/epilogue.
@@ -100,9 +100,9 @@ These function attributes are supported by the AVR back end:
     or a frame pointer whereas :gcc-attr:`OS_main` and ``OS_task`` do this
     as needed.
 
-.. gcc-attr:: signal
+.. index:: signal function attribute, AVR
 
-  .. index:: signal function attribute, AVR
+.. gcc-attr:: signal
 
   Use this attribute on the AVR to indicate that the specified
   function is an interrupt handler.  The compiler generates function

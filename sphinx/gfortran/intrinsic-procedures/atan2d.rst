@@ -5,9 +5,6 @@
 
 .. _atan2d:
 
-ATAN2D --- Arctangent function, degrees
-***************************************
-
 .. index:: ATAN2D
 
 .. index:: DATAN2D
@@ -15,6 +12,9 @@ ATAN2D --- Arctangent function, degrees
 .. index:: trigonometric function, tangent, inverse, degrees
 
 .. index:: tangent, inverse, degrees
+
+ATAN2D --- Arctangent function, degrees
+***************************************
 
 .. function:: ATAN2D(Y, X)
 

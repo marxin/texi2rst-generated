@@ -10,42 +10,42 @@ MeP Function Attributes
 
 These function attributes are supported by the MeP back end:
 
-.. gcc-attr:: disinterrupt
+.. index:: disinterrupt function attribute, MeP
 
-  .. index:: disinterrupt function attribute, MeP
+.. gcc-attr:: disinterrupt
 
   On MeP targets, this attribute causes the compiler to emit
   instructions to disable interrupts for the duration of the given
   function.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, MeP
 
-  .. index:: interrupt function attribute, MeP
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
   function entry and exit sequences suitable for use in an interrupt handler
   when this attribute is present.
 
-.. gcc-attr:: near
+.. index:: near function attribute, MeP
 
-  .. index:: near function attribute, MeP
+.. gcc-attr:: near
 
   This attribute causes the compiler to assume the called
   function is close enough to use the normal calling convention,
   overriding the :option:`-mtf` command-line option.
 
-.. gcc-attr:: far
+.. index:: far function attribute, MeP
 
-  .. index:: far function attribute, MeP
+.. gcc-attr:: far
 
   On MeP targets this causes the compiler to use a calling convention
   that assumes the called function is too far away for the built-in
   addressing modes.
 
-.. gcc-attr:: vliw
+.. index:: vliw function attribute, MeP
 
-  .. index:: vliw function attribute, MeP
+.. gcc-attr:: vliw
 
   The :gcc-attr:`vliw` attribute tells the compiler to emit
   instructions in VLIW mode instead of core mode.  Note that this

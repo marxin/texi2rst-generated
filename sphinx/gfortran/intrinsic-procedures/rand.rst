@@ -5,12 +5,12 @@
 
 .. _rand:
 
-RAND --- Real pseudo-random number
-**********************************
-
 .. index:: RAND
 
 .. index:: random number generation
+
+RAND --- Real pseudo-random number
+**********************************
 
 .. function:: RAND(FLAG)
 

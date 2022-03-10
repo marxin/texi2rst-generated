@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_NOP
+
 GIMPLE_NOP
 ^^^^^^^^^^
-
-.. index:: GIMPLE_NOP
 
 .. function:: gimple gimple_build_nop (void)
 

@@ -5,9 +5,6 @@
 
 .. _sin:
 
-SIN --- Sine function 
-**********************
-
 .. index:: SIN
 
 .. index:: DSIN
@@ -21,6 +18,9 @@ SIN --- Sine function
 .. index:: trigonometric function, sine
 
 .. index:: sine
+
+SIN --- Sine function 
+**********************
 
 .. function:: SIN(X)
 

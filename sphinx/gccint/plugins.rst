@@ -5,10 +5,10 @@
 
 .. _plugins:
 
+.. index:: Plugins
+
 Plugins
 -------
-
-.. index:: Plugins
 
 GCC plugins are loadable modules that provide extra features to the
 compiler.  Like GCC itself they can be distributed in source and

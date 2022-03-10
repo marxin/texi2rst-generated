@@ -7,10 +7,10 @@
 
 .. _lm32-options:
 
+.. index:: LM32 options
+
 LM32 Options
 ^^^^^^^^^^^^
-
-.. index:: LM32 options
 
 These :option:`-m` options are defined for the LatticeMico32 architecture:
 

@@ -7,10 +7,10 @@
 
 .. _ia-64-options:
 
+.. index:: IA-64 Options
+
 IA-64 Options
 ^^^^^^^^^^^^^
-
-.. index:: IA-64 Options
 
 These are the :samp:`-m` options defined for the Intel IA-64 architecture.
 

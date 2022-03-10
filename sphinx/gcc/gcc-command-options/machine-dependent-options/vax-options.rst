@@ -7,10 +7,10 @@
 
 .. _vax-options:
 
+.. index:: VAX options
+
 VAX Options
 ^^^^^^^^^^^
-
-.. index:: VAX options
 
 These :samp:`-m` options are defined for the VAX:
 

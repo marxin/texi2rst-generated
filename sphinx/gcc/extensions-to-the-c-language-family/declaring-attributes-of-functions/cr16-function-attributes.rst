@@ -10,9 +10,9 @@ CR16 Function Attributes
 
 These function attributes are supported by the CR16 back end:
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, CR16
 
-  .. index:: interrupt function attribute, CR16
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates

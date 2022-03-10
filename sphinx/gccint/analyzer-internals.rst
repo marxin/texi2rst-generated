@@ -5,12 +5,12 @@
 
 .. _analyzer-internals:
 
-Analyzer Internals
-******************
-
 .. index:: analyzer, internals
 
 .. index:: static analyzer, internals
+
+Analyzer Internals
+******************
 
 Overview
 ^^^^^^^^

@@ -7,10 +7,10 @@
 
 .. _m32r-d-options:
 
+.. index:: M32R/D options
+
 M32R/D Options
 ^^^^^^^^^^^^^^
-
-.. index:: M32R/D options
 
 These :option:`-m` options are defined for Renesas M32R/D architectures:
 
@@ -71,9 +71,9 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
   Put small global and static data in the small data area, and generate
   special instructions to reference them.
 
-.. option:: -G {num}
+.. index:: smaller data references
 
-  .. index:: smaller data references
+.. option:: -G {num}
 
   Put global and static objects less than or equal to :samp:`{num}` bytes
   into the small data or BSS sections instead of the normal data or BSS
@@ -99,23 +99,23 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 
   Do not enforce a 32-byte alignment for loops.  This is the default.
 
-.. option:: -missue-rate={number}
+.. index:: missue-rate=number
 
-  .. index:: missue-rate=number
+.. option:: -missue-rate={number}
 
   Issue :samp:`{number}` instructions per cycle.  :samp:`{number}` can only be 1
   or 2.
 
-.. option:: -mbranch-cost={number}
+.. index:: mbranch-cost=number
 
-  .. index:: mbranch-cost=number
+.. option:: -mbranch-cost={number}
 
   :samp:`{number}` can only be 1 or 2.  If it is 1 then branches are
   preferred over conditional code, if it is 2, then the opposite applies.
 
-.. option:: -mflush-trap={number}
+.. index:: mflush-trap=number
 
-  .. index:: mflush-trap=number
+.. option:: -mflush-trap={number}
 
   Specifies the trap number to use to flush the cache.  The default is
   12.  Valid numbers are between 0 and 15 inclusive.
@@ -124,9 +124,9 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 
   Specifies that the cache cannot be flushed by using a trap.
 
-.. option:: -mflush-func={name}
+.. index:: mflush-func=name
 
-  .. index:: mflush-func=name
+.. option:: -mflush-func={name}
 
   Specifies the name of the operating system function to call to flush
   the cache.  The default is :samp:`_flush_cache`, but a function call

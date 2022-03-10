@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_COND
+
 GIMPLE_COND
 ^^^^^^^^^^^
-
-.. index:: GIMPLE_COND
 
 .. function:: gcond *gimple_build_cond ( enum tree_code pred_code, tree lhs, tree rhs, tree t_label, tree f_label)
 

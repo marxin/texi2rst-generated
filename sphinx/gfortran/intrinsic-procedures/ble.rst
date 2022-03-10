@@ -5,12 +5,12 @@
 
 .. _ble:
 
-BLE --- Bitwise less than or equal to
-*************************************
-
 .. index:: BLE
 
 .. index:: bitwise comparison
+
+BLE --- Bitwise less than or equal to
+*************************************
 
 .. function:: BLE(I, J)
 

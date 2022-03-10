@@ -7,10 +7,10 @@
 
 .. _arm-options:
 
+.. index:: ARM options
+
 ARM Options
 ^^^^^^^^^^^
-
-.. index:: ARM options
 
 These :samp:`-m` options are defined for the ARM port:
 

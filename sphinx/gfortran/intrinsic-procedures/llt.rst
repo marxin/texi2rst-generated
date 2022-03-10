@@ -5,14 +5,14 @@
 
 .. _llt:
 
-LLT --- Lexical less than
-*************************
-
 .. index:: LLT
 
 .. index:: lexical comparison of strings
 
 .. index:: string, comparison
+
+LLT --- Lexical less than
+*************************
 
 .. function:: LLT(STRING_A, STRING_B)
 

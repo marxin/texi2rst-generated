@@ -5,9 +5,6 @@
 
 .. _real:
 
-REAL --- Convert to real type 
-******************************
-
 .. index:: REAL
 
 .. index:: REALPART
@@ -27,6 +24,9 @@ REAL --- Convert to real type
 .. index:: conversion, to real
 
 .. index:: complex numbers, real part
+
+REAL --- Convert to real type 
+******************************
 
 .. function:: REAL(A [, KIND])
 

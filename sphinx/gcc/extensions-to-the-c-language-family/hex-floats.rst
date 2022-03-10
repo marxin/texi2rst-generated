@@ -5,10 +5,10 @@
 
 .. _hex-floats:
 
+.. index:: hex floats
+
 Hex Floats
 **********
-
-.. index:: hex floats
 
 ISO C99 and ISO C++17 support floating-point numbers written not only in
 the usual decimal notation, such as ``1.55e1``, but also numbers such as

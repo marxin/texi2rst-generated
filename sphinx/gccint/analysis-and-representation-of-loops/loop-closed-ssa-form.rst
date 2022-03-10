@@ -5,12 +5,12 @@
 
 .. _lcssa:
 
-Loop-closed SSA form
-********************
-
 .. index:: LCSSA
 
 .. index:: Loop-closed SSA form
+
+Loop-closed SSA form
+********************
 
 Throughout the loop optimizations on tree level, one extra condition is
 enforced on the SSA form:  No SSA name is used outside of the loop in

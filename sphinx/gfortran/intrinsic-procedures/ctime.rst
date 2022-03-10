@@ -5,14 +5,14 @@
 
 .. _ctime:
 
-CTIME --- Convert a time into a string
-**************************************
-
 .. index:: CTIME
 
 .. index:: time, conversion to string
 
 .. index:: conversion, to string
+
+CTIME --- Convert a time into a string
+**************************************
 
 .. function:: CTIME
 

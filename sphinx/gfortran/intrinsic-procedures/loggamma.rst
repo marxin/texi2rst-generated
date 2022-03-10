@@ -5,9 +5,6 @@
 
 .. _log_gamma:
 
-LOG_GAMMA --- Logarithm of the Gamma function
-*********************************************
-
 .. index:: LOG_GAMMA
 
 .. index:: LGAMMA
@@ -17,6 +14,9 @@ LOG_GAMMA --- Logarithm of the Gamma function
 .. index:: DLGAMA
 
 .. index:: Gamma function, logarithm of
+
+LOG_GAMMA --- Logarithm of the Gamma function
+*********************************************
 
 .. function:: LOG_GAMMA(X)
 

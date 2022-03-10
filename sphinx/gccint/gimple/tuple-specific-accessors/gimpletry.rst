@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_TRY
+
 GIMPLE_TRY
 ^^^^^^^^^^
-
-.. index:: GIMPLE_TRY
 
 .. function:: gtry *gimple_build_try (gimple_seq eval, gimple_seq cleanup, unsigned int kind)
 

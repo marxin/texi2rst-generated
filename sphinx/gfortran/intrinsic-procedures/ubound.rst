@@ -5,12 +5,12 @@
 
 .. _ubound:
 
-UBOUND --- Upper dimension bounds of an array
-*********************************************
-
 .. index:: UBOUND
 
 .. index:: array, upper bound
+
+UBOUND --- Upper dimension bounds of an array
+*********************************************
 
 .. function:: UBOUND(ARRAY , DIM , KIND)
 

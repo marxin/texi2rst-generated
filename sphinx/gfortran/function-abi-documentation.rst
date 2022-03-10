@@ -50,10 +50,10 @@ Function ABI Documentation
 
 .. _gfortran_caf_init:
 
+.. index:: Coarray, _gfortran_caf_init
+
 _gfortran_caf_init --- Initialiation function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_init
 
 .. function:: void _gfortran_caf_init (int *argc, char ***argv) 
 
@@ -82,10 +82,10 @@ _gfortran_caf_init --- Initialiation function
 
 .. _gfortran_caf_finish:
 
+.. index:: Coarray, _gfortran_caf_finish
+
 _gfortran_caf_finish --- Finalization function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_finish
 
 .. function:: void _gfortran_caf_finish (void) 
 
@@ -103,10 +103,10 @@ _gfortran_caf_finish --- Finalization function
 
 .. _gfortran_caf_this_image:
 
+.. index:: Coarray, _gfortran_caf_this_image
+
 _gfortran_caf_this_image --- Querying the image number
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_this_image
 
 .. function:: int _gfortran_caf_this_image (int distance) 
 
@@ -124,10 +124,10 @@ _gfortran_caf_this_image --- Querying the image number
 
 .. _gfortran_caf_num_images:
 
+.. index:: Coarray, _gfortran_caf_num_images
+
 _gfortran_caf_num_images --- Querying the maximal number of images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_num_images
 
 .. function:: int _gfortran_caf_num_images(int distance, int failed) 
 
@@ -151,10 +151,10 @@ _gfortran_caf_num_images --- Querying the maximal number of images
 
 .. _gfortran_caf_image_status:
 
+.. index:: Coarray, _gfortran_caf_image_status
+
 _gfortran_caf_image_status --- Query the status of an image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_image_status
 
 .. function:: int _gfortran_caf_image_status (int image, caf_team_t * team) 
 
@@ -178,10 +178,10 @@ _gfortran_caf_image_status --- Query the status of an image
 
 .. _gfortran_caf_failed_images:
 
+.. index:: Coarray, _gfortran_caf_failed_images
+
 _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_failed_images
 
 .. function:: int _gfortran_caf_failed_images (caf_team_t * team, int * kind) 
 
@@ -205,10 +205,10 @@ _gfortran_caf_failed_images --- Get an array of the indexes of the failed images
 
 .. _gfortran_caf_stopped_images:
 
+.. index:: Coarray, _gfortran_caf_stopped_images
+
 _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_stopped_images
 
 .. function:: int _gfortran_caf_stopped_images (caf_team_t * team, int * kind) 
 
@@ -232,10 +232,10 @@ _gfortran_caf_stopped_images --- Get an array of the indexes of the stopped imag
 
 .. _gfortran_caf_register:
 
+.. index:: Coarray, _gfortran_caf_register
+
 _gfortran_caf_register --- Registering coarrays
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_register
 
 .. function:: void caf_register (size_t size, caf_register_t type, caf_token_t *token, gfc_descriptor_t *desc, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -301,10 +301,10 @@ _gfortran_caf_register --- Registering coarrays
 
 .. _gfortran_caf_deregister:
 
+.. index:: Coarray, _gfortran_caf_deregister
+
 _gfortran_caf_deregister --- Deregistering coarrays
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_deregister
 
 .. function:: void caf_deregister (caf_token_t *token, caf_deregister_t type, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -341,10 +341,10 @@ _gfortran_caf_deregister --- Deregistering coarrays
 
 .. _gfortran_caf_is_present:
 
+.. index:: Coarray, _gfortran_caf_is_present
+
 _gfortran_caf_is_present --- Query whether an allocatable or pointer component in a derived type coarray is allocated
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_is_present
 
 .. function:: void _gfortran_caf_is_present (caf_token_t token, int image_index, gfc_reference_t *ref) 
 
@@ -365,10 +365,10 @@ _gfortran_caf_is_present --- Query whether an allocatable or pointer component i
 
 .. _gfortran_caf_send:
 
+.. index:: Coarray, _gfortran_caf_send
+
 _gfortran_caf_send --- Sending data from a local image to a remote image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_send
 
 .. function:: void _gfortran_caf_send (caf_token_t token, size_t offset, int image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector, gfc_descriptor_t *src, int dst_kind, int src_kind, bool may_require_tmp, int *stat) 
 
@@ -434,10 +434,10 @@ _gfortran_caf_send --- Sending data from a local image to a remote image
 
 .. _gfortran_caf_get:
 
+.. index:: Coarray, _gfortran_caf_get
+
 _gfortran_caf_get --- Getting data from a remote image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_get
 
 .. function:: void _gfortran_caf_get (caf_token_t token, size_t offset, int image_index, gfc_descriptor_t *src, caf_vector_t *src_vector, gfc_descriptor_t *dest, int src_kind, int dst_kind, bool may_require_tmp, int *stat) 
 
@@ -502,10 +502,10 @@ _gfortran_caf_get --- Getting data from a remote image
 
 .. _gfortran_caf_sendget:
 
+.. index:: Coarray, _gfortran_caf_sendget
+
 _gfortran_caf_sendget --- Sending data between remote images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_sendget
 
 .. function:: void _gfortran_caf_sendget (caf_token_t dst_token, size_t dst_offset, int dst_image_index, gfc_descriptor_t *dest, caf_vector_t *dst_vector, caf_token_t src_token, size_t src_offset, int src_image_index, gfc_descriptor_t *src, caf_vector_t *src_vector, int dst_kind, int src_kind, bool may_require_tmp, int *stat) 
 
@@ -590,10 +590,10 @@ _gfortran_caf_sendget --- Sending data between remote images
 
 .. _gfortran_caf_send_by_ref:
 
+.. index:: Coarray, _gfortran_caf_send_by_ref
+
 _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image with enhanced referencing options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_send_by_ref
 
 .. function:: void _gfortran_caf_send_by_ref (caf_token_t token, int image_index, gfc_descriptor_t *src, caf_reference_t *refs, int dst_kind, int src_kind, bool may_require_tmp, bool dst_reallocatable, int *stat, int dst_type) 
 
@@ -664,10 +664,10 @@ _gfortran_caf_send_by_ref --- Sending data from a local image to a remote image 
 
 .. _gfortran_caf_get_by_ref:
 
+.. index:: Coarray, _gfortran_caf_get_by_ref
+
 _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced references
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_get_by_ref
 
 .. function:: void _gfortran_caf_get_by_ref (caf_token_t token, int image_index, caf_reference_t *refs, gfc_descriptor_t *dst, int dst_kind, int src_kind, bool may_require_tmp, bool dst_reallocatable, int *stat, int src_type) 
 
@@ -738,10 +738,10 @@ _gfortran_caf_get_by_ref --- Getting data from a remote image using enhanced ref
 
 .. _gfortran_caf_sendget_by_ref:
 
+.. index:: Coarray, _gfortran_caf_sendget_by_ref
+
 _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanced references on both sides
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_sendget_by_ref
 
 .. function:: void _gfortran_caf_sendget_by_ref (caf_token_t dst_token, int dst_image_index, caf_reference_t *dst_refs, caf_token_t src_token, int src_image_index, caf_reference_t *src_refs, int dst_kind, int src_kind, bool may_require_tmp, int *dst_stat, int *src_stat, int dst_type, int src_type) 
 
@@ -829,10 +829,10 @@ _gfortran_caf_sendget_by_ref --- Sending data between remote images using enhanc
 
 .. _gfortran_caf_lock:
 
+.. index:: Coarray, _gfortran_caf_lock
+
 _gfortran_caf_lock --- Locking a lock variable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_lock
 
 .. function:: void _gfortran_caf_lock (caf_token_t token, size_t index, int image_index, int *acquired_lock, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -876,10 +876,10 @@ _gfortran_caf_lock --- Locking a lock variable
 
 .. _gfortran_caf_unlock:
 
+.. index:: Coarray, _gfortran_caf_unlock
+
 _gfortran_caf_lock --- Unlocking a lock variable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_unlock
 
 .. function:: void _gfortran_caf_unlock (caf_token_t token, size_t index, int image_index, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -917,10 +917,10 @@ _gfortran_caf_lock --- Unlocking a lock variable
 
 .. _gfortran_caf_event_post:
 
+.. index:: Coarray, _gfortran_caf_event_post
+
 _gfortran_caf_event_post --- Post an event
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_event_post
 
 .. function:: void _gfortran_caf_event_post (caf_token_t token, size_t index, int image_index, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -957,10 +957,10 @@ _gfortran_caf_event_post --- Post an event
 
 .. _gfortran_caf_event_wait:
 
+.. index:: Coarray, _gfortran_caf_event_wait
+
 _gfortran_caf_event_wait --- Wait that an event occurred
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_event_wait
 
 .. function:: void _gfortran_caf_event_wait (caf_token_t token, size_t index, int until_count, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1007,10 +1007,10 @@ _gfortran_caf_event_wait --- Wait that an event occurred
 
 .. _gfortran_caf_event_query:
 
+.. index:: Coarray, _gfortran_caf_event_query
+
 _gfortran_caf_event_query --- Query event count
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_event_query
 
 .. function:: void _gfortran_caf_event_query (caf_token_t token, size_t index, int image_index, int *count, int *stat) 
 
@@ -1043,10 +1043,10 @@ _gfortran_caf_event_query --- Query event count
 
 .. _gfortran_caf_sync_all:
 
+.. index:: Coarray, _gfortran_caf_sync_all
+
 _gfortran_caf_sync_all --- All-image barrier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_sync_all
 
 .. function:: void _gfortran_caf_sync_all (int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1067,10 +1067,10 @@ _gfortran_caf_sync_all --- All-image barrier
 
 .. _gfortran_caf_sync_images:
 
+.. index:: Coarray, _gfortran_caf_sync_images
+
 _gfortran_caf_sync_images --- Barrier for selected images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_sync_images
 
 .. function:: void _gfortran_caf_sync_images (int count, int images[], int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1102,10 +1102,10 @@ _gfortran_caf_sync_images --- Barrier for selected images
 
 .. _gfortran_caf_sync_memory:
 
+.. index:: Coarray, _gfortran_caf_sync_memory
+
 _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_sync_memory
 
 .. function:: void _gfortran_caf_sync_memory (int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1127,10 +1127,10 @@ _gfortran_caf_sync_memory --- Wait for completion of segment-memory operations
 
 .. _gfortran_caf_error_stop:
 
+.. index:: Coarray, _gfortran_caf_error_stop
+
 _gfortran_caf_error_stop --- Error termination with exit code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_error_stop
 
 .. function:: void _gfortran_caf_error_stop (int error) 
 
@@ -1142,10 +1142,10 @@ _gfortran_caf_error_stop --- Error termination with exit code
 
 .. _gfortran_caf_error_stop_str:
 
+.. index:: Coarray, _gfortran_caf_error_stop_str
+
 _gfortran_caf_error_stop_str --- Error termination with string
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_error_stop_str
 
 .. function:: void _gfortran_caf_error_stop (const char *string, size_t len) 
 
@@ -1160,10 +1160,10 @@ _gfortran_caf_error_stop_str --- Error termination with string
 
 .. _gfortran_caf_fail_image:
 
+.. index:: Coarray, _gfortran_caf_fail_image
+
 _gfortran_caf_fail_image --- Mark the image failed and end its execution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_fail_image
 
 .. function:: void _gfortran_caf_fail_image () 
 
@@ -1176,10 +1176,10 @@ _gfortran_caf_fail_image --- Mark the image failed and end its execution
 
 .. _gfortran_caf_atomic_define:
 
+.. index:: Coarray, _gfortran_caf_atomic_define
+
 _gfortran_caf_atomic_define --- Atomic variable assignment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_atomic_define
 
 .. function:: void _gfortran_caf_atomic_define (caf_token_t token, size_t offset, int image_index, void *value, int *stat, int type, int kind) 
 
@@ -1211,10 +1211,10 @@ _gfortran_caf_atomic_define --- Atomic variable assignment
 
 .. _gfortran_caf_atomic_ref:
 
+.. index:: Coarray, _gfortran_caf_atomic_ref
+
 _gfortran_caf_atomic_ref --- Atomic variable reference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_atomic_ref
 
 .. function:: void _gfortran_caf_atomic_ref (caf_token_t token, size_t offset, int image_index, void *value, int *stat, int type, int kind) 
 
@@ -1247,10 +1247,10 @@ _gfortran_caf_atomic_ref --- Atomic variable reference
 
 .. _gfortran_caf_atomic_cas:
 
+.. index:: Coarray, _gfortran_caf_atomic_cas
+
 _gfortran_caf_atomic_cas --- Atomic compare and swap
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_atomic_cas
 
 .. function:: void _gfortran_caf_atomic_cas (caf_token_t token, size_t offset, int image_index, void *old, void *compare, void *new_val, int *stat, int type, int kind) 
 
@@ -1293,10 +1293,10 @@ _gfortran_caf_atomic_cas --- Atomic compare and swap
 
 .. _gfortran_caf_atomic_op:
 
+.. index:: Coarray, _gfortran_caf_atomic_op
+
 _gfortran_caf_atomic_op --- Atomic operation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_atomic_op
 
 .. function:: void _gfortran_caf_atomic_op (int op, caf_token_t token, size_t offset, int image_index, void *value, void *old, int *stat, int type, int kind) 
 
@@ -1344,10 +1344,10 @@ _gfortran_caf_atomic_op --- Atomic operation
 
 .. _gfortran_caf_co_broadcast:
 
+.. index:: Coarray, _gfortran_caf_co_broadcast
+
 _gfortran_caf_co_broadcast --- Sending data to all images
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_co_broadcast
 
 .. function:: void _gfortran_caf_co_broadcast (gfc_descriptor_t *a, int source_image, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1374,10 +1374,10 @@ _gfortran_caf_co_broadcast --- Sending data to all images
 
 .. _gfortran_caf_co_max:
 
+.. index:: Coarray, _gfortran_caf_co_max
+
 _gfortran_caf_co_max --- Collective maximum reduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_co_max
 
 .. function:: void _gfortran_caf_co_max (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 
@@ -1416,10 +1416,10 @@ _gfortran_caf_co_max --- Collective maximum reduction
 
 .. _gfortran_caf_co_min:
 
+.. index:: Coarray, _gfortran_caf_co_min
+
 _gfortran_caf_co_min --- Collective minimum reduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_co_min
 
 .. function:: void _gfortran_caf_co_min (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 
@@ -1458,10 +1458,10 @@ _gfortran_caf_co_min --- Collective minimum reduction
 
 .. _gfortran_caf_co_sum:
 
+.. index:: Coarray, _gfortran_caf_co_sum
+
 _gfortran_caf_co_sum --- Collective summing reduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_co_sum
 
 .. function:: void _gfortran_caf_co_sum (gfc_descriptor_t *a, int result_image, int *stat, char *errmsg, size_t errmsg_len) 
 
@@ -1496,10 +1496,10 @@ _gfortran_caf_co_sum --- Collective summing reduction
 
 .. _gfortran_caf_co_reduce:
 
+.. index:: Coarray, _gfortran_caf_co_reduce
+
 _gfortran_caf_co_reduce --- Generic collective reduction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Coarray, _gfortran_caf_co_reduce
 
 .. function:: void _gfortran_caf_co_reduce (gfc_descriptor_t *a, void * (*opr) (void *, void *), int opr_flags, int result_image, int *stat, char *errmsg, int a_len, size_t errmsg_len) 
 

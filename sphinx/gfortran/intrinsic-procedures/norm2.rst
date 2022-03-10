@@ -5,9 +5,6 @@
 
 .. _norm2:
 
-NORM2 --- Euclidean vector norms
-********************************
-
 .. index:: NORM2
 
 .. index:: Euclidean vector norm
@@ -15,6 +12,9 @@ NORM2 --- Euclidean vector norms
 .. index:: L2 vector norm
 
 .. index:: norm, Euclidean
+
+NORM2 --- Euclidean vector norms
+********************************
 
 .. function:: NORM2(ARRAY, DIM)
 

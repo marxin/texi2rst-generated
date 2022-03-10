@@ -5,12 +5,12 @@
 
 .. _function-names:
 
-Function Names
-**************
-
 .. index:: extern
 
 .. index:: external names
+
+Function Names
+**************
 
 Go code can call C functions directly using the ``//extern`` or
 ``//go:linkname`` compiler directives.  An ``//extern``

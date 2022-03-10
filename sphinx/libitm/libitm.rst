@@ -9,10 +9,10 @@
 
 .. _top:
 
+.. index:: Introduction
+
 Introduction
 ============
-
-.. index:: Introduction
 
 This manual documents the usage and internals of libitm, the GNU Transactional
 Memory Library. It provides transaction support for accesses to a process'

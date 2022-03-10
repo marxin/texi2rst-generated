@@ -5,12 +5,12 @@
 
 .. _eoshift:
 
-EOSHIFT --- End-off shift elements of an array
-**********************************************
-
 .. index:: EOSHIFT
 
 .. index:: array, shift
+
+EOSHIFT --- End-off shift elements of an array
+**********************************************
 
 .. function:: EOSHIFT(ARRAY, SHIFT[, BOUNDARY, DIM])
 

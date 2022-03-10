@@ -5,9 +5,6 @@
 
 .. _bessel_j1:
 
-BESSEL_J1 --- Bessel function of the first kind of order 1
-**********************************************************
-
 .. index:: BESSEL_J1
 
 .. index:: BESJ1
@@ -15,6 +12,9 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
 .. index:: DBESJ1
 
 .. index:: Bessel function, first kind
+
+BESSEL_J1 --- Bessel function of the first kind of order 1
+**********************************************************
 
 .. function:: BESSEL_J1(X)
 

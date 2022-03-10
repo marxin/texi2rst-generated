@@ -5,12 +5,12 @@
 
 .. _replacement-functions:
 
-Replacement Functions
-*********************
-
 .. index:: replacement functions
 
 .. index:: functions, replacement
+
+Replacement Functions
+*********************
 
 Some functions have extremely limited implementations on different
 platforms.  Other functions are tedious to use correctly; for example,
@@ -33,10 +33,10 @@ functions may call one another.
 
 .. _memory-allocation:
 
+.. index:: memory allocation
+
 Memory Allocation
 ^^^^^^^^^^^^^^^^^
-
-.. index:: memory allocation
 
 The functions beginning with the letter :samp:`x` are wrappers around
 standard functions; the functions provided by the system environment
@@ -46,10 +46,10 @@ terminate the program.  Thus, these versions can be used with impunity.
 
 .. _exit-handlers:
 
+.. index:: exit handlers
+
 Exit Handlers
 ^^^^^^^^^^^^^
-
-.. index:: exit handlers
 
 The existence and implementation of the ``atexit`` routine varies
 amongst the flavors of Unix.  ``libiberty`` provides an unvarying dependable
@@ -57,10 +57,10 @@ implementation via ``xatexit`` and ``xexit``.
 
 .. _error-reporting:
 
+.. index:: error reporting
+
 Error Reporting
 ^^^^^^^^^^^^^^^
-
-.. index:: error reporting
 
 These are a set of routines to facilitate programming with the system
 ``errno`` interface.  The ``libiberty`` source file :samp:`strerror.c`

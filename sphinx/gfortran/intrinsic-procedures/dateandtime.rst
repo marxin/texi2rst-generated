@@ -5,9 +5,6 @@
 
 .. _date_and_time:
 
-DATE_AND_TIME --- Date and time subroutine
-******************************************
-
 .. index:: DATE_AND_TIME
 
 .. index:: date, current
@@ -17,6 +14,9 @@ DATE_AND_TIME --- Date and time subroutine
 .. index:: time, current
 
 .. index:: current time
+
+DATE_AND_TIME --- Date and time subroutine
+******************************************
 
 .. function:: DATE_AND_TIME(DATE, TIME, ZONE, VALUES)
 

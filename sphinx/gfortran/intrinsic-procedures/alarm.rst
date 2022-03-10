@@ -5,12 +5,12 @@
 
 .. _alarm:
 
-ALARM --- Execute a routine after a given delay
-***********************************************
-
 .. index:: ALARM
 
 .. index:: delayed execution
+
+ALARM --- Execute a routine after a given delay
+***********************************************
 
 .. function:: ALARM(SECONDS, HANDLER [, STATUS])
 

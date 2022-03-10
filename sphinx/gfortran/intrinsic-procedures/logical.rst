@@ -5,12 +5,12 @@
 
 .. _logical:
 
-LOGICAL --- Convert to logical type
-***********************************
-
 .. index:: LOGICAL
 
 .. index:: conversion, to logical
+
+LOGICAL --- Convert to logical type
+***********************************
 
 .. function:: LOGICAL
 

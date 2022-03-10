@@ -5,9 +5,6 @@
 
 .. _log:
 
-LOG --- Natural logarithm function
-**********************************
-
 .. index:: LOG
 
 .. index:: ALOG
@@ -25,6 +22,9 @@ LOG --- Natural logarithm function
 .. index:: logarithm function
 
 .. index:: natural logarithm function
+
+LOG --- Natural logarithm function
+**********************************
 
 .. function:: LOG(X)
 

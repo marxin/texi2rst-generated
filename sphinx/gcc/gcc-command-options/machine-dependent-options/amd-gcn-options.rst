@@ -7,10 +7,10 @@
 
 .. _amd-gcn-options:
 
+.. index:: AMD GCN Options
+
 AMD GCN Options
 ^^^^^^^^^^^^^^^
-
-.. index:: AMD GCN Options
 
 These options are defined specifically for the AMD GCN port.
 

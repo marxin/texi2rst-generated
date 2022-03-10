@@ -5,10 +5,10 @@
 
 .. _functions:
 
+.. index:: function
+
 Functions
 *********
-
-.. index:: function
 
 .. index:: FUNCTION_DECL
 
@@ -29,9 +29,6 @@ and linkage.
 
 .. _function-basics:
 
-Function Basics
-^^^^^^^^^^^^^^^
-
 .. index:: DECL_NAME
 
 .. index:: DECL_ASSEMBLER_NAME
@@ -43,6 +40,9 @@ Function Basics
 .. index:: DECL_FUNCTION_SPECIFIC_TARGET
 
 .. index:: DECL_FUNCTION_SPECIFIC_OPTIMIZATION
+
+Function Basics
+^^^^^^^^^^^^^^^
 
 A function has four core parts: the name, the parameters, the result,
 and the body.  The following macros and functions access these parts
@@ -147,12 +147,12 @@ of a ``FUNCTION_DECL`` as well as other basic features:
 
 .. _function-properties:
 
-Function Properties
-^^^^^^^^^^^^^^^^^^^
-
 .. index:: function properties
 
 .. index:: statements
+
+Function Properties
+^^^^^^^^^^^^^^^^^^^
 
 To determine the scope of a function, you can use the
 ``DECL_CONTEXT`` macro.  This macro will return the class

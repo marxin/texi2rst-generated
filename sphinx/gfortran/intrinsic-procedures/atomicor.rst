@@ -5,12 +5,12 @@
 
 .. _atomic_or:
 
-ATOMIC_OR --- Atomic bitwise OR operation
-*****************************************
-
 .. index:: ATOMIC_OR
 
 .. index:: Atomic subroutine, OR
+
+ATOMIC_OR --- Atomic bitwise OR operation
+*****************************************
 
 .. function:: ATOMIC_OR(ATOM, VALUE)
 

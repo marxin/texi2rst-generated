@@ -5,14 +5,14 @@
 
 .. _maxval:
 
-MAXVAL --- Maximum value of an array
-************************************
-
 .. index:: MAXVAL
 
 .. index:: array, maximum value
 
 .. index:: maximum value
+
+MAXVAL --- Maximum value of an array
+************************************
 
 .. function:: MAXVAL(ARRAY , MASK)
 

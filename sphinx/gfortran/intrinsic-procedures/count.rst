@@ -5,9 +5,6 @@
 
 .. _count:
 
-COUNT --- Count function
-************************
-
 .. index:: COUNT
 
 .. index:: array, conditionally count elements
@@ -15,6 +12,9 @@ COUNT --- Count function
 .. index:: array, element counting
 
 .. index:: array, number of elements
+
+COUNT --- Count function
+************************
 
 .. function:: COUNT(MASK , DIM, KIND)
 

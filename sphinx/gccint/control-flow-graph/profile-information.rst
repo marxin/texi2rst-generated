@@ -5,10 +5,10 @@
 
   .. _profile-information:
 
+.. index:: profile representation
+
 Profile information
 *******************
-
-.. index:: profile representation
 
 In many cases a compiler must make a choice whether to trade speed in
 one part of code for speed in another, or to trade code size for code

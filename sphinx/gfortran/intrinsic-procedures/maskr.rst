@@ -5,12 +5,12 @@
 
 .. _maskr:
 
-MASKR --- Right justified mask
-******************************
-
 .. index:: MASKR
 
 .. index:: mask, right justified
+
+MASKR --- Right justified mask
+******************************
 
 .. function:: MASKR(I, KIND)
 

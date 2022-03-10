@@ -5,9 +5,6 @@
 
 .. _passes:
 
-Passes and Files of the Compiler
---------------------------------
-
 .. index:: passes and files of the compiler
 
 .. index:: files and passes of the compiler
@@ -15,6 +12,9 @@ Passes and Files of the Compiler
 .. index:: compiler passes and files
 
 .. index:: pass dumps
+
+Passes and Files of the Compiler
+--------------------------------
 
 This chapter is dedicated to giving an overview of the optimization and
 code generation passes of the compiler.  In the process, it describes

@@ -5,10 +5,10 @@
 
 .. _function-like-macros:
 
+.. index:: function-like macros
+
 Function-like Macros
 ********************
-
-.. index:: function-like macros
 
 You can also define macros whose use looks like a function call.  These
 are called :dfn:`function-like macros`.  To define a function-like macro,

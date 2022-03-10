@@ -5,14 +5,14 @@
 
 .. _bit_size:
 
-BIT_SIZE --- Bit size inquiry function
-**************************************
-
 .. index:: BIT_SIZE
 
 .. index:: bits, number of
 
 .. index:: size of a variable, in bits
+
+BIT_SIZE --- Bit size inquiry function
+**************************************
 
 .. function:: BIT_SIZE(I)
 

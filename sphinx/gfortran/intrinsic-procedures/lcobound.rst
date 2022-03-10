@@ -5,12 +5,12 @@
 
 .. _lcobound:
 
-LCOBOUND --- Lower codimension bounds of an array
-*************************************************
-
 .. index:: LCOBOUND
 
 .. index:: coarray, lower bound
+
+LCOBOUND --- Lower codimension bounds of an array
+*************************************************
 
 .. function:: LCOBOUND(COARRAY , DIM , KIND)
 

@@ -5,9 +5,6 @@
 
 .. _mod:
 
-MOD --- Remainder function
-**************************
-
 .. index:: MOD
 
 .. index:: AMOD
@@ -25,6 +22,9 @@ MOD --- Remainder function
 .. index:: remainder
 
 .. index:: division, remainder
+
+MOD --- Remainder function
+**************************
 
 .. function:: MOD(A,P)
 

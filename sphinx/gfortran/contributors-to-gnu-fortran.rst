@@ -5,14 +5,14 @@
 
 .. _contributors:
 
-Contributors to GNU Fortran
-***************************
-
 .. index:: Contributors
 
 .. index:: Credits
 
 .. index:: Authors
+
+Contributors to GNU Fortran
+***************************
 
 Most of the parser was hand-crafted by *Andy Vaught*, who is
 also the initiator of the whole project.  Thanks Andy!

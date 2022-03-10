@@ -5,10 +5,10 @@
 
 .. _conditional-syntax:
 
+.. index:: #if
+
 Conditional Syntax
 ******************
-
-.. index:: #if
 
 A conditional in the C preprocessor begins with a :dfn:`conditional
 directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
@@ -29,12 +29,12 @@ directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
 
 .. _ifdef:
 
-Ifdef
-^^^^^
-
 .. index:: #ifdef
 
 .. index:: #endif
+
+Ifdef
+^^^^^
 
 The simplest sort of conditional is
 
@@ -168,10 +168,10 @@ text}` is included; otherwise it is skipped.
 
 .. _defined:
 
+.. index:: defined
+
 Defined
 ^^^^^^^
-
-.. index:: defined
 
 The special operator ``defined`` is used in :samp:`#if` and
 :samp:`#elif` expressions to test whether a certain name is defined as a
@@ -210,10 +210,10 @@ individually with :option:`-Wexpansion-to-defined`.
 
 .. _else:
 
+.. index:: #else
+
 Else
 ^^^^
-
-.. index:: #else
 
 The :samp:`#else` directive can be added to a conditional to provide
 alternative text to be used if the condition fails.  This is what it
@@ -235,10 +235,10 @@ You can use :samp:`#else` with :samp:`#ifdef` and :samp:`#ifndef`, too.
 
 .. _elif:
 
+.. index:: #elif
+
 Elif
 ^^^^
-
-.. index:: #elif
 
 One common case of nested conditionals is used to check for more than two
 possible alternatives.  For example, you might have
@@ -283,10 +283,10 @@ condition succeeds after the original :samp:`#if` and all previous
 :samp:`#else` is allowed after any number of :samp:`#elif` directives, but
 :samp:`#elif` may not follow :samp:`#else`.
 
+.. index:: __has_attribute
+
 __has_attribute
 ^^^^^^^^^^^^^^^
-
-.. index:: __has_attribute
 
 The special operator ``__has_attribute (operand)`` may be used
 in :samp:`#if` and :samp:`#elif` expressions to test whether the attribute
@@ -323,10 +323,10 @@ but not with others that don't.
   ...
   #endif
 
+.. index:: __has_cpp_attribute
+
 __has_cpp_attribute
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: __has_cpp_attribute
 
 The special operator ``__has_cpp_attribute (operand)`` may be used
 in :samp:`#if` and :samp:`#elif` expressions in C++ code to test whether
@@ -339,10 +339,10 @@ the attribute was first introduced into the C++ standard.  For additional
 information including the dates of the introduction of current standard
 attributes, see `SD-6: SG10 Feature Test Recommendations <https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations/>`_.
 
+.. index:: __has_c_attribute
+
 __has_c_attribute
 ^^^^^^^^^^^^^^^^^
-
-.. index:: __has_c_attribute
 
 The special operator ``__has_c_attribute (operand)`` may be
 used in :samp:`#if` and :samp:`#elif` expressions in C code to test
@@ -355,10 +355,10 @@ standard attribute it evaluates to an integer constant of the form
 first introduced into the C standard, or when the syntax of operands
 to the attribute was extended in the C standard.
 
+.. index:: __has_builtin
+
 __has_builtin
 ^^^^^^^^^^^^^
-
-.. index:: __has_builtin
 
 The special operator ``__has_builtin (operand)`` may be used in
 constant integer contexts and in preprocessor :samp:`#if` and :samp:`#elif`
@@ -383,10 +383,10 @@ the operator is as follows:
   #  define builtin_object_size(ptr)   ((size_t)-1)
   #endif
 
+.. index:: __has_include
+
 __has_include
 ^^^^^^^^^^^^^
-
-.. index:: __has_include
 
 The special operator ``__has_include (operand)`` may be used in
 :samp:`#if` and :samp:`#elif` expressions to test whether the header referenced

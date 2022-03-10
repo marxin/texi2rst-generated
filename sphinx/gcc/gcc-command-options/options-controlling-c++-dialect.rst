@@ -5,14 +5,14 @@
 
 .. _c++-dialect-options:
 
-Options Controlling C++ Dialect
-*******************************
-
 .. index:: compiler options, C++
 
 .. index:: C++ options, command-line
 
 .. index:: options, C++
+
+Options Controlling C++ Dialect
+*******************************
 
 This section describes the command-line options that are only meaningful
 for C++ programs.  You can also use most of the GNU compiler options
@@ -392,9 +392,9 @@ Here is a list of options that are *only* for compiling C++ programs:
 
   Default setting; overrides :option:`-fno-module-lazy`.
 
-.. option:: -fmodule-mapper=[{hostname}]:{port}[?{ident}]
+.. index:: CXX_MODULE_MAPPER environment variable
 
-  .. index:: CXX_MODULE_MAPPER environment variable
+.. option:: -fmodule-mapper=[{hostname}]:{port}[?{ident}]
 
   An oracle to query for module name to filename mappings.  If
   unspecified the :envvar:`CXX_MODULE_MAPPER` environment variable is used,

@@ -5,10 +5,10 @@
 
 .. _extensions-implemented-in-gnu-fortran:
 
+.. index:: extensions, implemented
+
 Extensions implemented in GNU Fortran
 *************************************
-
-.. index:: extensions, implemented
 
 GNU Fortran implements a number of extensions over standard Fortran.
 This chapter contains information on their syntax and meaning.  There
@@ -64,10 +64,10 @@ additional compatibility extensions along with those enabled by
 
 .. _old-style-kind-specifications:
 
+.. index:: kind, old-style
+
 Old-style kind specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: kind, old-style
 
 GNU Fortran allows old-style kind specifications in declarations.  These
 look like:
@@ -139,10 +139,10 @@ attribute.
 
 .. _extensions-to-namelist:
 
+.. index:: Namelist
+
 Extensions to namelist
 ^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Namelist
 
 GNU Fortran fully supports the Fortran 95 standard for namelist I/O
 including array qualifiers, substrings and fully qualified derived types.
@@ -288,19 +288,19 @@ code and is discouraged.
 
 .. _i-o-item-lists:
 
+.. index:: I/O item lists
+
 I/O item lists
 ^^^^^^^^^^^^^^
-
-.. index:: I/O item lists
 
 To support legacy codes, GNU Fortran allows the input item list
 of the ``READ`` statement, and the output item lists of the
 ``WRITE`` and ``PRINT`` statements, to start with a comma.
 
+.. index:: Q exponent-letter
+
 Q exponent-letter
 ^^^^^^^^^^^^^^^^^
-
-.. index:: Q exponent-letter
 
 GNU Fortran accepts real literal constants with an exponent-letter
 of ``Q``, for example, ``1.23Q45``.  The constant is interpreted
@@ -312,10 +312,10 @@ type, then the real-literal-constant will be interpreted as a
 
 .. _boz-literal-constants:
 
+.. index:: BOZ literal constants
+
 BOZ literal constants
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: BOZ literal constants
 
 Besides decimal constants, Fortran also supports binary (``b``),
 octal (``o``) and hexadecimal (``z``) integer constants.  The
@@ -344,20 +344,20 @@ Use :option:`-fallow-invalid-boz` to enable the extension.
 
 .. _real-array-indices:
 
+.. index:: array, indices of type real
+
 Real array indices
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: array, indices of type real
 
 As an extension, GNU Fortran allows the use of ``REAL`` expressions
 or variables as array indices.
 
 .. _unary-operators:
 
+.. index:: operators, unary
+
 Unary operators
 ^^^^^^^^^^^^^^^
-
-.. index:: operators, unary
 
 As an extension, GNU Fortran allows unary plus and unary minus operators
 to appear as the second operand of binary arithmetic operators without
@@ -369,12 +369,12 @@ the need for parenthesis.
 
 .. _implicitly-convert-logical-and-integer-values:
 
-Implicitly convert LOGICAL and INTEGER values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: conversion, to integer
 
 .. index:: conversion, to logical
+
+Implicitly convert LOGICAL and INTEGER values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As an extension for backwards compatibility with other compilers, GNU
 Fortran allows the implicit conversion of ``LOGICAL`` values to
@@ -400,10 +400,10 @@ in I/O operations.
 
 .. _hollerith-constants-support:
 
+.. index:: Hollerith constants
+
 Hollerith constants support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Hollerith constants
 
 GNU Fortran supports Hollerith constants in assignments, ``DATA``
 statements, function and subroutine arguments. A Hollerith constant is
@@ -463,10 +463,10 @@ and ``CHARACTER``.
 
 .. _character-conversion:
 
+.. index:: conversion, to character
+
 Character conversion
 ^^^^^^^^^^^^^^^^^^^^
-
-.. index:: conversion, to character
 
 Allowing character literals to be used in a similar way to Hollerith constants
 is a non-standard extension.  This feature is enabled using
@@ -490,10 +490,10 @@ Examples:
 
 .. _cray-pointers:
 
+.. index:: pointer, Cray
+
 Cray pointers
 ^^^^^^^^^^^^^
-
-.. index:: pointer, Cray
 
 Cray pointers are part of a non-standard extension that provides a
 C-like pointer in Fortran.  This is accomplished through a pair of
@@ -636,10 +636,10 @@ will not change the base address of the array that was passed.
 
 .. _convert-specifier:
 
+.. index:: CONVERT specifier
+
 CONVERT specifier
 ^^^^^^^^^^^^^^^^^
-
-.. index:: CONVERT specifier
 
 GNU Fortran allows the conversion of unformatted data between little-
 and big-endian representation to facilitate moving of data
@@ -691,10 +691,10 @@ portable.
 
 .. _openmp:
 
+.. index:: OpenMP
+
 OpenMP
 ^^^^^^
-
-.. index:: OpenMP
 
 OpenMP (Open Multi-Processing) is an application programming
 interface (API) that supports multi-platform shared memory
@@ -750,10 +750,10 @@ Please note:
 
 .. _openacc:
 
+.. index:: OpenACC
+
 OpenACC
 ^^^^^^^
-
-.. index:: OpenACC
 
 OpenACC is an application programming interface (API) that supports
 offloading of code to accelerator devices.  It consists of a set of
@@ -779,9 +779,6 @@ Fortran ``include`` file named :samp:`openacc_lib.h`.
 
 .. _argument-list-functions:
 
-Argument list functions %VAL, %REF and %LOC
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: argument list functions
 
 .. index:: %VAL
@@ -789,6 +786,9 @@ Argument list functions %VAL, %REF and %LOC
 .. index:: %REF
 
 .. index:: %LOC
+
+Argument list functions %VAL, %REF and %LOC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 GNU Fortran supports argument list functions ``%VAL``, ``%REF``
 and ``%LOC`` statements, for backward compatibility with g77.
@@ -827,14 +827,14 @@ GNU Fortran testsuite are worth a look.
 
 .. _read-write-after-eof-marker:
 
-Read/Write after EOF marker
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: EOF
 
 .. index:: BACKSPACE
 
 .. index:: REWIND
+
+Read/Write after EOF marker
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Some legacy codes rely on allowing ``READ`` or ``WRITE`` after the
 EOF file marker in order to find the end of a file. GNU Fortran normally
@@ -845,12 +845,12 @@ be disabled using -std=legacy.
 
 .. _structure-and-record:
 
-STRUCTURE and RECORD
-^^^^^^^^^^^^^^^^^^^^
-
 .. index:: STRUCTURE
 
 .. index:: RECORD
+
+STRUCTURE and RECORD
+^^^^^^^^^^^^^^^^^^^^
 
 Record structures are a pre-Fortran-90 vendor extension to create
 user-defined aggregate data types.  Support for record structures in GNU
@@ -1001,12 +1001,12 @@ rules and exceptions:
 
 .. _union-and-map:
 
-UNION and MAP
-^^^^^^^^^^^^^
-
 .. index:: UNION
 
 .. index:: MAP
+
+UNION and MAP
+^^^^^^^^^^^^^
 
 Unions are an old vendor extension which were commonly used with the
 non-standard :ref:`structure-and-record` extensions. Use of ``UNION`` and
@@ -1113,10 +1113,10 @@ Following is an example mirroring the layout of an Intel x86_64 register:
 
 .. _type-variants-for-integer-intrinsics:
 
+.. index:: intrinsics, integer
+
 Type variants for integer intrinsics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: intrinsics, integer
 
 Similar to the D/C prefixes to real functions to specify the input/output
 types, GNU Fortran offers B/I/J/K prefixes to integer functions for
@@ -1153,14 +1153,14 @@ Intrinsic   B           I            J            K
 ==========  ==========  ===========  ===========  ===========
 .. _automatic-and-static-attributes:
 
-AUTOMATIC and STATIC attributes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: variable attributes
 
 .. index:: AUTOMATIC
 
 .. index:: STATIC
+
+AUTOMATIC and STATIC attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With :option:`-fdec-static` GNU Fortran supports the DEC extended attributes
 ``STATIC`` and ``AUTOMATIC`` to provide explicit specification of entity
@@ -1209,12 +1209,12 @@ Examples:
 
 .. _extended-math-intrinsics:
 
-Extended math intrinsics
-^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: intrinsics, math
 
 .. index:: intrinsics, trigonometric functions
+
+Extended math intrinsics
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 GNU Fortran supports an extended list of mathematical intrinsics with the
 compile flag :option:`-fdec-math` for compatability with legacy code.
@@ -1249,10 +1249,10 @@ pi/180).
 
 .. _form-feed-as-whitespace:
 
+.. index:: form feed whitespace
+
 Form feed as whitespace
 ^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: form feed whitespace
 
 Historically, legacy compilers allowed insertion of form feed characters ('\f',
 ASCII 0xC) at the beginning of lines for formatted output to line printers,
@@ -1262,10 +1262,10 @@ compatibility.
 
 .. _type-as-an-alias-for-print:
 
+.. index:: type alias print
+
 TYPE as an alias for PRINT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: type alias print
 
 For compatibility, GNU Fortran will interpret ``TYPE`` statements as
 ``PRINT`` statements with the flag :option:`-fdec`.  With this flag asserted,
@@ -1281,10 +1281,10 @@ the following two examples are equivalent:
 
 .. _%loc-as-an-rvalue:
 
+.. index:: LOC
+
 %LOC as an rvalue
 ^^^^^^^^^^^^^^^^^
-
-.. index:: LOC
 
 Normally ``%LOC`` is allowed only in parameter lists.  However the intrinsic
 function ``LOC`` does the same thing, and is usable as the right-hand-side of
@@ -1305,10 +1305,10 @@ feature enabled the following two examples are equivalent:
 
 .. _.xor.-operator:
 
+.. index:: operators, xor
+
 .XOR. operator
 ^^^^^^^^^^^^^^
-
-.. index:: operators, xor
 
 GNU Fortran supports ``.XOR.`` as a logical operator with ``-std=legacy``
 for compatibility with legacy code. ``.XOR.`` is equivalent to
@@ -1316,10 +1316,10 @@ for compatibility with legacy code. ``.XOR.`` is equivalent to
 
 .. _bitwise-logical-operators:
 
+.. index:: logical, bitwise
+
 Bitwise logical operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: logical, bitwise
 
 With :option:`-fdec`, GNU Fortran relaxes the type constraints on
 logical operators to allow integer operands, and performs the corresponding
@@ -1356,9 +1356,6 @@ Operator    Intrinsic      Bitwise operation
 ==========  =============  ==========================
 .. _extended-i-o-specifiers:
 
-Extended I/O specifiers
-^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: CARRIAGECONTROL
 
 .. index:: READONLY
@@ -1370,6 +1367,9 @@ Extended I/O specifiers
 .. index:: NOSHARED
 
 .. index:: I/O specifiers
+
+Extended I/O specifiers
+^^^^^^^^^^^^^^^^^^^^^^^
 
 GNU Fortran supports the additional legacy I/O specifiers
 ``CARRIAGECONTROL``, ``READONLY``, and ``SHARE`` with the
@@ -1455,10 +1455,10 @@ compile flag :option:`-fdec`, for compatibility.
 
 .. _legacy-parameter-statements:
 
+.. index:: PARAMETER
+
 Legacy PARAMETER statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: PARAMETER
 
 For compatibility, GNU Fortran supports legacy PARAMETER statements without
 parentheses with :option:`-std`:samp:`=legacy`.  A warning is emitted if used with
@@ -1474,10 +1474,10 @@ flag (:option:`-std`:samp:`=f95`, etc...).  These statements take the following 
 
 .. _default-exponents:
 
+.. index:: exponent
+
 Default exponents
 ^^^^^^^^^^^^^^^^^
-
-.. index:: exponent
 
 For compatibility, GNU Fortran supports a default exponent of zero in real
 constants with :option:`-fdec`.  For example, ``9e`` would be

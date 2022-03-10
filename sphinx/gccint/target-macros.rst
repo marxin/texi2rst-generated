@@ -5,9 +5,6 @@
 
 .. _target-macros:
 
-Target Description Macros and Functions
----------------------------------------
-
 .. index:: machine description macros
 
 .. index:: target description macros
@@ -15,6 +12,9 @@ Target Description Macros and Functions
 .. index:: macros, target description
 
 .. index:: tm.h macros
+
+Target Description Macros and Functions
+---------------------------------------
 
 In addition to the file :samp:`{machine}.md`, a machine description
 includes a C header file conventionally given the name

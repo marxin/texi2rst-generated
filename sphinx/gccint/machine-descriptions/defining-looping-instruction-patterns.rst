@@ -5,12 +5,12 @@
 
 .. _looping-patterns:
 
-Defining Looping Instruction Patterns
-*************************************
-
 .. index:: looping instruction patterns
 
 .. index:: defining looping instruction patterns
+
+Defining Looping Instruction Patterns
+*************************************
 
 Some machines have special jump instructions that can be utilized to
 make loops more efficient.  A common example is the 68000 :samp:`dbra`

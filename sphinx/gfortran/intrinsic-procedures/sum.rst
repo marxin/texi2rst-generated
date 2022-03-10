@@ -5,9 +5,6 @@
 
 .. _sum:
 
-SUM --- Sum of array elements
-*****************************
-
 .. index:: SUM
 
 .. index:: array, sum
@@ -17,6 +14,9 @@ SUM --- Sum of array elements
 .. index:: array, conditionally add elements
 
 .. index:: sum array elements
+
+SUM --- Sum of array elements
+*****************************
 
 .. function:: SUM(ARRAY, DIM, MASK)
 

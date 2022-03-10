@@ -5,12 +5,12 @@
 
 .. _atomic_fetch_add:
 
-ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
-**********************************************************
-
 .. index:: ATOMIC_FETCH_ADD
 
 .. index:: Atomic subroutine, ADD with fetch
+
+ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
+**********************************************************
 
 .. function:: ATOMIC_FETCH_ADD(ATOM, VALUE, OLD)
 

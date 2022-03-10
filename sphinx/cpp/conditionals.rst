@@ -5,10 +5,10 @@
 
 .. _conditionals:
 
+.. index:: conditionals
+
 Conditionals
 ------------
-
-.. index:: conditionals
 
 A :dfn:`conditional` is a directive that instructs the preprocessor to
 select whether or not to include a chunk of code in the final token

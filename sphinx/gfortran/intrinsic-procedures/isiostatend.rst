@@ -5,12 +5,12 @@
 
 .. _is_iostat_end:
 
-IS_IOSTAT_END --- Test for end-of-file value
-********************************************
-
 .. index:: IS_IOSTAT_END
 
 .. index:: IOSTAT, end of file
+
+IS_IOSTAT_END --- Test for end-of-file value
+********************************************
 
 .. function:: IS_IOSTAT_END
 

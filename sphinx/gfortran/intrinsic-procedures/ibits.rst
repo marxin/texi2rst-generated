@@ -5,9 +5,6 @@
 
 .. _ibits:
 
-IBITS --- Bit extraction
-************************
-
 .. index:: IBITS
 
 .. index:: BBITS
@@ -21,6 +18,9 @@ IBITS --- Bit extraction
 .. index:: bits, get
 
 .. index:: bits, extract
+
+IBITS --- Bit extraction
+************************
 
 .. function:: IBITS
 

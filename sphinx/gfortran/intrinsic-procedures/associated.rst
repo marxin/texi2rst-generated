@@ -5,14 +5,14 @@
 
 .. _associated:
 
-ASSOCIATED --- Status of a pointer or pointer/target pair 
-**********************************************************
-
 .. index:: ASSOCIATED
 
 .. index:: pointer, status
 
 .. index:: association status
+
+ASSOCIATED --- Status of a pointer or pointer/target pair 
+**********************************************************
 
 .. function:: ASSOCIATED(POINTER [, TARGET])
 

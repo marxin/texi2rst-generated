@@ -5,14 +5,14 @@
 
 .. _conjg:
 
-CONJG --- Complex conjugate function
-************************************
-
 .. index:: CONJG
 
 .. index:: DCONJG
 
 .. index:: complex conjugate
+
+CONJG --- Complex conjugate function
+************************************
 
 .. function:: CONJG(Z)
 

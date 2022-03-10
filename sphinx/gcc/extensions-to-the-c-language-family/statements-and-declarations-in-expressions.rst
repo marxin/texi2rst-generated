@@ -5,9 +5,6 @@
 
 .. _statement-exprs:
 
-Statements and Declarations in Expressions
-******************************************
-
 .. index:: statements inside expressions
 
 .. index:: declarations inside expressions
@@ -15,6 +12,9 @@ Statements and Declarations in Expressions
 .. index:: expressions containing statements
 
 .. index:: macros, statements in expressions
+
+Statements and Declarations in Expressions
+******************************************
 
 .. the above section title wrapped and causes an underfull hbox.. i
    changed it from "within" to "in". -mew 4feb93

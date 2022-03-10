@@ -5,12 +5,12 @@
 
 .. _erfc_scaled:
 
-ERFC_SCALED --- Error function 
-*******************************
-
 .. index:: ERFC_SCALED
 
 .. index:: error function, complementary, exponentially-scaled
+
+ERFC_SCALED --- Error function 
+*******************************
 
 .. function:: ERFC_SCALED(X)
 

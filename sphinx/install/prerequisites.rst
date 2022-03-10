@@ -5,10 +5,10 @@
 
 .. _prerequisites:
 
+.. index:: Prerequisites
+
 Prerequisites
 -------------
-
-.. index:: Prerequisites
 
 GCC requires that various tools and packages be available for use in the
 build procedure.  Modifying GCC sources requires additional tools

@@ -5,9 +5,6 @@
 
 .. _ishft:
 
-ISHFT --- Shift bits
-********************
-
 .. index:: ISHFT
 
 .. index:: BSHFT
@@ -19,6 +16,9 @@ ISHFT --- Shift bits
 .. index:: KISHFT
 
 .. index:: bits, shift
+
+ISHFT --- Shift bits
+********************
 
 .. function:: ISHFT
 

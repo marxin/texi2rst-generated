@@ -5,12 +5,12 @@
 
 .. _file-framework:
 
-The Overall Framework of an Assembler File
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: assembler format
 
 .. index:: output of assembler code
+
+The Overall Framework of an Assembler File
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. prevent bad page break with this line
 

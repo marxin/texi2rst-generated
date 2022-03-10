@@ -5,14 +5,14 @@
 
 .. _static-analyzer:
 
-Static Analyzer
----------------
-
 .. index:: analyzer
 
 .. index:: static analysis
 
 .. index:: static analyzer
+
+Static Analyzer
+---------------
 
 .. toctree::
   :maxdepth: 2

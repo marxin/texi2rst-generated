@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_RESX
+
 GIMPLE_RESX
 ^^^^^^^^^^^
-
-.. index:: GIMPLE_RESX
 
 .. function:: gresx *gimple_build_resx (int region)
 

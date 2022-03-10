@@ -5,12 +5,12 @@
 
 .. _jump-patterns:
 
-Defining Jump Instruction Patterns
-**********************************
-
 .. index:: jump instruction patterns
 
 .. index:: defining jump instruction patterns
+
+Defining Jump Instruction Patterns
+**********************************
 
 GCC does not assume anything about how the machine realizes jumps.
 The machine description should define a single pattern, usually

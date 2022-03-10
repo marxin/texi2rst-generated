@@ -7,10 +7,10 @@
 
 .. _mips-options:
 
+.. index:: MIPS options
+
 MIPS Options
 ^^^^^^^^^^^^
-
-.. index:: MIPS options
 
 .. option:: -EB
 

@@ -5,14 +5,14 @@
 
 .. _diagnostic-message-formatting-options:
 
-Options to Control Diagnostic Messages Formatting
-*************************************************
-
 .. index:: options to control diagnostics formatting
 
 .. index:: diagnostic messages
 
 .. index:: message formatting
+
+Options to Control Diagnostic Messages Formatting
+*************************************************
 
 Traditionally, diagnostic messages have been formatted irrespective of
 the output device's aspect (e.g. its width, ...).  You can use the
@@ -64,11 +64,11 @@ honor these options.
   prefix) for physical lines that result from the process of breaking
   a message which is too long to fit on a single line.
 
+.. index:: highlight, color
+
+.. index:: GCC_COLORS environment variable
+
 .. option:: -fdiagnostics-color[={WHEN}]
-
-  .. index:: highlight, color
-
-  .. index:: GCC_COLORS environment variable
 
   Use color in diagnostics.  :samp:`{WHEN}` is :samp:`never`, :samp:`always`,
   or :samp:`auto`.  The default depends on how the compiler has been configured,
@@ -219,13 +219,13 @@ honor these options.
 
   Default setting; overrides :option:`-fno-diagnostics-color`.
 
+.. index:: urls
+
+.. index:: GCC_URLS environment variable
+
+.. index:: TERM_URLS environment variable
+
 .. option:: -fdiagnostics-urls[={WHEN}]
-
-  .. index:: urls
-
-  .. index:: GCC_URLS environment variable
-
-  .. index:: TERM_URLS environment variable
 
   Use escape sequences to embed URLs in diagnostics.  For example, when
   :option:`-fdiagnostics-show-option` emits text showing the command-line

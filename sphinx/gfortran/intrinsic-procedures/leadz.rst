@@ -5,12 +5,12 @@
 
 .. _leadz:
 
-LEADZ --- Number of leading zero bits of an integer
-***************************************************
-
 .. index:: LEADZ
 
 .. index:: zero bits
+
+LEADZ --- Number of leading zero bits of an integer
+***************************************************
 
 .. function:: LEADZ
 

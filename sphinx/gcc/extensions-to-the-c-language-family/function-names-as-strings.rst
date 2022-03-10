@@ -5,14 +5,14 @@
 
 .. _function-names:
 
-Function Names as Strings
-*************************
-
 .. index:: __func__ identifier
 
 .. index:: __FUNCTION__ identifier
 
 .. index:: __PRETTY_FUNCTION__ identifier
+
+Function Names as Strings
+*************************
 
 GCC provides three magic constants that hold the name of the current
 function as a string.  In C++11 and later modes, all three are treated

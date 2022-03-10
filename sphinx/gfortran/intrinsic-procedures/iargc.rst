@@ -5,9 +5,6 @@
 
 .. _iargc:
 
-IARGC --- Get the number of command line arguments
-**************************************************
-
 .. index:: IARGC
 
 .. index:: command-line arguments
@@ -15,6 +12,9 @@ IARGC --- Get the number of command line arguments
 .. index:: command-line arguments, number of
 
 .. index:: arguments, to program
+
+IARGC --- Get the number of command line arguments
+**************************************************
 
 .. function:: IARGC
 

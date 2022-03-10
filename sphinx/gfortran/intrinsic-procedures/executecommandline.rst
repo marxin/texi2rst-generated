@@ -5,14 +5,14 @@
 
 .. _execute_command_line:
 
-EXECUTE_COMMAND_LINE --- Execute a shell command
-************************************************
-
 .. index:: EXECUTE_COMMAND_LINE
 
 .. index:: system, system call
 
 .. index:: command line
+
+EXECUTE_COMMAND_LINE --- Execute a shell command
+************************************************
 
 .. function:: EXECUTE_COMMAND_LINE
 

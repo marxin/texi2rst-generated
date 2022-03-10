@@ -5,12 +5,12 @@
 
 .. _rename:
 
-RENAME --- Rename a file
-************************
-
 .. index:: RENAME
 
 .. index:: file system, rename file
+
+RENAME --- Rename a file
+************************
 
 .. function:: RENAME(PATH1, PATH2)
 

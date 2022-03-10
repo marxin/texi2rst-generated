@@ -5,9 +5,6 @@
 
 .. _labels-as-values:
 
-Labels as Values
-****************
-
 .. index:: labels as values
 
 .. index:: computed gotos
@@ -15,6 +12,9 @@ Labels as Values
 .. index:: goto with computed label
 
 .. index:: address of a label
+
+Labels as Values
+****************
 
 You can get the address of a label defined in the current function
 (or a containing function) with the unary operator :samp:`&&`.  The

@@ -5,12 +5,12 @@
 
 .. _atomic_cas:
 
-ATOMIC_CAS --- Atomic compare and swap
-**************************************
-
 .. index:: ATOMIC_DEFINE
 
 .. index:: Atomic subroutine, compare and swap
+
+ATOMIC_CAS --- Atomic compare and swap
+**************************************
 
 .. function:: ATOMIC_CAS
 

@@ -5,12 +5,12 @@
 
 .. _maxexponent:
 
-MAXEXPONENT --- Maximum exponent of a real kind
-***********************************************
-
 .. index:: MAXEXPONENT
 
 .. index:: model representation, maximum exponent
+
+MAXEXPONENT --- Maximum exponent of a real kind
+***********************************************
 
 .. function:: MAXEXPONENT(X)
 

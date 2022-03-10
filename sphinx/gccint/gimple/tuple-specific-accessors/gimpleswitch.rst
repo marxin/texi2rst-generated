@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_SWITCH
+
 GIMPLE_SWITCH
 ^^^^^^^^^^^^^
-
-.. index:: GIMPLE_SWITCH
 
 .. function:: gswitch *gimple_build_switch (tree index, tree default_label, vec<tree> *args)
 

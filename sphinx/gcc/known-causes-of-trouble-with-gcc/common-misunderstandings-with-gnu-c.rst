@@ -5,14 +5,14 @@
 
 .. _c++-misunderstandings:
 
-Common Misunderstandings with GNU C++
-*************************************
-
 .. index:: misunderstandings in C++
 
 .. index:: surprises in C++
 
 .. index:: C++ misunderstandings
+
+Common Misunderstandings with GNU C++
+*************************************
 
 C++ is a complex language and an evolving one, and its standard
 definition (the ISO C++ standard) was only recently completed.  As a
@@ -30,9 +30,6 @@ give rise to questions of this sort.
 
 .. _static-definitions:
 
-Declare and Define Static Members
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: C++ static data, declaring and defining
 
 .. index:: static data in C++, declaring and defining
@@ -40,6 +37,9 @@ Declare and Define Static Members
 .. index:: declaring static data in C++
 
 .. index:: defining static data in C++
+
+Declare and Define Static Members
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When a class has static data members, it is not enough to *declare*
 the static member; you must also *define* it.  For example:
@@ -72,14 +72,14 @@ symbols any static data members that lack definitions.
 
 .. _name-lookup:
 
-Name Lookup, Templates, and Accessing Members of Base Classes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: base class members
 
 .. index:: two-stage name lookup
 
 .. index:: dependent name lookup
+
+Name Lookup, Templates, and Accessing Members of Base Classes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The C++ standard prescribes that all names that are not dependent on
 template parameters are bound to their present definitions when parsing
@@ -200,12 +200,12 @@ do not implement two-stage name lookup correctly.
 
 .. _temporaries:
 
-Temporaries May Vanish Before You Expect
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: temporaries, lifetime of
 
 .. index:: portions of temporary objects, pointers to
+
+Temporaries May Vanish Before You Expect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is dangerous to use pointers or references to *portions* of a
 temporary object.  The compiler may very well delete the object before

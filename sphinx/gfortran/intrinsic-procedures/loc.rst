@@ -5,12 +5,12 @@
 
 .. _loc:
 
-LOC --- Returns the address of a variable
-*****************************************
-
 .. index:: LOC
 
 .. index:: location of a variable in memory
+
+LOC --- Returns the address of a variable
+*****************************************
 
 .. function:: LOC(X)
 

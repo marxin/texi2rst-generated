@@ -5,14 +5,14 @@
 
 .. _nearest:
 
-NEAREST --- Nearest representable number
-****************************************
-
 .. index:: NEAREST
 
 .. index:: real number, nearest different
 
 .. index:: floating point, nearest different
+
+NEAREST --- Nearest representable number
+****************************************
 
 .. function:: NEAREST(X, S)
 

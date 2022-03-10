@@ -5,14 +5,14 @@
 
   .. _directory-options:
 
-Options for Directory Search
-****************************
-
 .. index:: directory options
 
 .. index:: options, directory search
 
 .. index:: search path
+
+Options for Directory Search
+****************************
 
 These options specify directories to search for files, libraries, and
 other parts of the compiler:

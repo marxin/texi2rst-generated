@@ -5,12 +5,12 @@
 
 .. _co_max:
 
-CO_MAX --- Maximal value on the current set of images
-*****************************************************
-
 .. index:: CO_MAX
 
 .. index:: Collectives, maximal value
+
+CO_MAX --- Maximal value on the current set of images
+*****************************************************
 
 .. function:: CO_MAX
 

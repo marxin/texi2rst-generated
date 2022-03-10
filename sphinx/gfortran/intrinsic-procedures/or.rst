@@ -5,14 +5,14 @@
 
 .. _or:
 
-OR --- Bitwise logical OR
-*************************
-
 .. index:: OR
 
 .. index:: bitwise logical or
 
 .. index:: logical or, bitwise
+
+OR --- Bitwise logical OR
+*************************
 
 .. function:: OR
 

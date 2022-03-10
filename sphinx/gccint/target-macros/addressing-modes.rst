@@ -5,10 +5,10 @@
 
 .. _addressing-modes:
 
+.. index:: addressing modes
+
 Addressing Modes
 ****************
-
-.. index:: addressing modes
 
 .. prevent bad page break with this line
 

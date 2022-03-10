@@ -7,10 +7,10 @@
 
 .. _xtensa-options:
 
+.. index:: Xtensa Options
+
 Xtensa Options
 ^^^^^^^^^^^^^^
-
-.. index:: Xtensa Options
 
 These options are supported for Xtensa targets:
 

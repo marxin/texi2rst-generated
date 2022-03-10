@@ -5,10 +5,10 @@
 
 .. _data-consistency-and-durability:
 
+.. index:: consistency, durability
+
 Data consistency and durability
 *******************************
-
-.. index:: consistency, durability
 
 This section contains a brief overview of data and metadata
 consistency and durability issues when doing I/O.

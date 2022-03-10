@@ -5,10 +5,10 @@
 
 .. _adding-a-new-gimple-statement-code:
 
+.. index:: Adding a new GIMPLE statement code
+
 Adding a new GIMPLE statement code
 **********************************
-
-.. index:: Adding a new GIMPLE statement code
 
 The first step in adding a new GIMPLE statement code, is
 modifying the file ``gimple.def``, which contains all the GIMPLE

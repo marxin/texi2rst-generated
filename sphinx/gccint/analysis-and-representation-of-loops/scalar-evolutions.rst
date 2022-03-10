@@ -5,12 +5,12 @@
 
 .. _scalar-evolutions:
 
-Scalar evolutions
-*****************
-
 .. index:: Scalar evolutions
 
 .. index:: IV analysis on GIMPLE
+
+Scalar evolutions
+*****************
 
 Scalar evolutions (SCEV) are used to represent results of induction
 variable analysis on GIMPLE.  They enable us to represent variables with

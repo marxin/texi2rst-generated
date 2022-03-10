@@ -10,61 +10,61 @@ Blackfin Function Attributes
 
 These function attributes are supported by the Blackfin back end:
 
+.. index:: exception_handler function attribute
+
+.. index:: exception handler functions, Blackfin
+
 .. gcc-attr:: exception_handler
-
-  .. index:: exception_handler function attribute
-
-  .. index:: exception handler functions, Blackfin
 
   Use this attribute on the Blackfin to indicate that the specified function
   is an exception handler.  The compiler generates function entry and
   exit sequences suitable for use in an exception handler when this
   attribute is present.
 
-.. gcc-attr:: interrupt_handler
+.. index:: interrupt_handler function attribute, Blackfin
 
-  .. index:: interrupt_handler function attribute, Blackfin
+.. gcc-attr:: interrupt_handler
 
   Use this attribute to
   indicate that the specified function is an interrupt handler.  The compiler
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
+.. index:: kspisusp function attribute, Blackfin
+
+.. index:: User stack pointer in interrupts on the Blackfin
+
 .. gcc-attr:: kspisusp
-
-  .. index:: kspisusp function attribute, Blackfin
-
-  .. index:: User stack pointer in interrupts on the Blackfin
 
   When used together with :gcc-attr:`interrupt_handler`, :gcc-attr:`exception_handler`
   or :gcc-attr:`nmi_handler`, code is generated to load the stack pointer
   from the USP register in the function prologue.
 
-.. gcc-attr:: l1_text
+.. index:: l1_text function attribute, Blackfin
 
-  .. index:: l1_text function attribute, Blackfin
+.. gcc-attr:: l1_text
 
   This attribute specifies a function to be placed into L1 Instruction
   SRAM. The function is put into a specific section named ``.l1.text``.
   With :option:`-mfdpic`, function calls with a such function as the callee
   or caller uses inlined PLT.
 
-.. gcc-attr:: l2
+.. index:: l2 function attribute, Blackfin
 
-  .. index:: l2 function attribute, Blackfin
+.. gcc-attr:: l2
 
   This attribute specifies a function to be placed into L2
   SRAM. The function is put into a specific section named
   ``.l2.text``. With :option:`-mfdpic`, callers of such functions use
   an inlined PLT.
 
+.. index:: indirect calls, Blackfin
+
+.. index:: longcall function attribute, Blackfin
+
+.. index:: shortcall function attribute, Blackfin
+
 .. gcc-attr:: longcall, shortcall
-
-  .. index:: indirect calls, Blackfin
-
-  .. index:: longcall function attribute, Blackfin
-
-  .. index:: shortcall function attribute, Blackfin
 
   The :gcc-attr:`longcall` attribute
   indicates that the function might be far away from the call site and
@@ -73,32 +73,32 @@ These function attributes are supported by the Blackfin back end:
   enough for the shorter calling sequence to be used.  These attributes
   override the :option:`-mlongcall` switch.
 
+.. index:: nesting function attribute, Blackfin
+
+.. index:: Allow nesting in an interrupt handler on the Blackfin processor
+
 .. gcc-attr:: nesting
-
-  .. index:: nesting function attribute, Blackfin
-
-  .. index:: Allow nesting in an interrupt handler on the Blackfin processor
 
   Use this attribute together with :gcc-attr:`interrupt_handler`,
   :gcc-attr:`exception_handler` or :gcc-attr:`nmi_handler` to indicate that the function
   entry code should enable nested interrupts or exceptions.
 
+.. index:: nmi_handler function attribute, Blackfin
+
+.. index:: NMI handler functions on the Blackfin processor
+
 .. gcc-attr:: nmi_handler
-
-  .. index:: nmi_handler function attribute, Blackfin
-
-  .. index:: NMI handler functions on the Blackfin processor
 
   Use this attribute on the Blackfin to indicate that the specified function
   is an NMI handler.  The compiler generates function entry and
   exit sequences suitable for use in an NMI handler when this
   attribute is present.
 
+.. index:: saveall function attribute, Blackfin
+
+.. index:: save all registers on the Blackfin
+
 .. gcc-attr:: saveall
-
-  .. index:: saveall function attribute, Blackfin
-
-  .. index:: save all registers on the Blackfin
 
   Use this attribute to indicate that
   all registers except the stack pointer should be saved in the prologue

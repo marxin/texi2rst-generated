@@ -5,10 +5,10 @@
 
 .. _standard-libraries:
 
+.. index:: Wall
+
 Standard Libraries
 ******************
-
-.. index:: Wall
 
 GCC by itself attempts to be a conforming freestanding implementation.
 See :ref:`standards`, for details of

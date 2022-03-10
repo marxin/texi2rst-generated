@@ -7,10 +7,10 @@
 
 .. _tilepro-options:
 
+.. index:: TILEPro options
+
 TILEPro Options
 ^^^^^^^^^^^^^^^
-
-.. index:: TILEPro options
 
 These :samp:`-m` options are supported on the TILEPro:
 

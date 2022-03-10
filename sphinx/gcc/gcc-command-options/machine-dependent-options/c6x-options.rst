@@ -7,10 +7,10 @@
 
 .. _c6x-options:
 
+.. index:: C6X Options
+
 C6X Options
 ^^^^^^^^^^^
-
-.. index:: C6X Options
 
 .. option:: -march={name}
 

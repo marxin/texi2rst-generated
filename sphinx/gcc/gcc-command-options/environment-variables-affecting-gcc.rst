@@ -5,10 +5,10 @@
 
 .. _environment-variables:
 
+.. index:: environment variables
+
 Environment Variables Affecting GCC
 ***********************************
-
-.. index:: environment variables
 
 Environment
 ^^^^^^^^^^^
@@ -123,9 +123,9 @@ See :ref:`gccint:driver`.
   libraries for the :option:`-l` option (but directories specified with
   :option:`-L` come first).
 
-.. envvar:: LANG
+.. index:: locale definition
 
-  .. index:: locale definition
+.. envvar:: LANG
 
   This variable is used to pass locale information to the compiler.  One way in
   which this information is used is to determine the character set to be used

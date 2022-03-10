@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_BIND
+
 GIMPLE_BIND
 ^^^^^^^^^^^
-
-.. index:: GIMPLE_BIND
 
 .. function:: gbind *gimple_build_bind (tree vars, gimple_seq body)
 

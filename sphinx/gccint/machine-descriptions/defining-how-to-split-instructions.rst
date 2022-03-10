@@ -5,14 +5,14 @@
 
 .. _insn-splitting:
 
-Defining How to Split Instructions
-**********************************
-
 .. index:: insn splitting
 
 .. index:: instruction splitting
 
 .. index:: splitting instructions
+
+Defining How to Split Instructions
+**********************************
 
 There are two cases where you should specify how to split a pattern
 into multiple insns.  On machines that have instructions requiring

@@ -7,10 +7,10 @@
 
 .. _picochip-options:
 
+.. index:: picoChip options
+
 picoChip Options
 ^^^^^^^^^^^^^^^^
-
-.. index:: picoChip options
 
 These :samp:`-m` options are defined for picoChip implementations:
 

@@ -5,9 +5,6 @@
 
 .. _conditionals:
 
-Conditionals with Omitted Operands
-**********************************
-
 .. index:: conditional expressions, extensions
 
 .. index:: omitted middle-operands
@@ -17,6 +14,9 @@ Conditionals with Omitted Operands
 .. index:: extensions, ?:
 
 .. index:: ?: extensions
+
+Conditionals with Omitted Operands
+**********************************
 
 The middle operand in a conditional expression may be omitted.  Then
 if the first operand is nonzero, its value is the value of the conditional

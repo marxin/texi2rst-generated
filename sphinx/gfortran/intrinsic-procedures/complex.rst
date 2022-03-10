@@ -5,14 +5,14 @@
 
 .. _complex:
 
-COMPLEX --- Complex conversion function
-***************************************
-
 .. index:: COMPLEX
 
 .. index:: complex numbers, conversion to
 
 .. index:: conversion, to complex
+
+COMPLEX --- Complex conversion function
+***************************************
 
 .. function:: COMPLEX(X, Y)
 

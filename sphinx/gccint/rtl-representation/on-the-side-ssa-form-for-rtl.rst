@@ -5,12 +5,12 @@
 
 .. _rtl-ssa:
 
-On-the-Side SSA Form for RTL
-****************************
-
 .. index:: SSA, RTL form
 
 .. index:: RTL SSA
+
+On-the-Side SSA Form for RTL
+****************************
 
 The patterns of an individual RTL instruction describe which registers
 are inputs to that instruction and which registers are outputs from
@@ -102,9 +102,6 @@ discard the RTL SSA form and free the associated memory.
 
 .. _rtl-ssa-instructions:
 
-RTL SSA Instructions
-^^^^^^^^^^^^^^^^^^^^
-
 .. index:: RPO
 
 .. index:: reverse postorder
@@ -112,6 +109,9 @@ RTL SSA Instructions
 .. index:: instructions, RTL SSA
 
 .. index:: rtl_ssa::insn_info
+
+RTL SSA Instructions
+^^^^^^^^^^^^^^^^^^^^
 
 RTL SSA instructions are represented by an ``rtl_ssa::insn_info``.
 These instructions are chained together in a single list that follows
@@ -150,14 +150,14 @@ inline assembly instruction, whether it has volatile accesses, and so on.
 
 .. _rtl-ssa-basic-blocks:
 
-RTL SSA Basic Blocks
-^^^^^^^^^^^^^^^^^^^^
-
 .. index:: basic blocks, RTL SSA
 
 .. index:: basic_block
 
 .. index:: rtl_ssa::bb_info
+
+RTL SSA Basic Blocks
+^^^^^^^^^^^^^^^^^^^^
 
 RTL SSA instructions (see :ref:`rtl-ssa-instructions`) are organized into
 basic blocks, with each block being represented by an ``rtl_ssa:bb_info``.
@@ -306,12 +306,12 @@ into a single definition (see :ref:`rtl-ssa-phi-nodes`).
 
 .. _rtl-ssa-phi-nodes:
 
-RTL SSA Phi Nodes
-^^^^^^^^^^^^^^^^^
-
 .. index:: phi nodes, RTL SSA
 
 .. index:: rtl_ssa::phi_info
+
+RTL SSA Phi Nodes
+^^^^^^^^^^^^^^^^^
 
 If a resource is live on entry to an extended basic block and if the
 resource's value can come from multiple sources, the extended basic block
@@ -493,10 +493,10 @@ following is true:
 
 .. _changing-rtl-instructions:
 
+.. index:: rtl_ssa::insn_change
+
 Using the RTL SSA framework to change instructions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: rtl_ssa::insn_change
 
 There are various routines that help to change a single RTL instruction
 or a group of RTL instructions while keeping the RTL SSA form up-to-date.

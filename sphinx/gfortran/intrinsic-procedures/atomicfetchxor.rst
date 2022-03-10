@@ -5,12 +5,12 @@
 
 .. _atomic_fetch_xor:
 
-ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
-******************************************************************
-
 .. index:: ATOMIC_FETCH_XOR
 
 .. index:: Atomic subroutine, XOR with fetch
+
+ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
+******************************************************************
 
 .. function:: ATOMIC_FETCH_XOR (ATOM, VALUE, OLD , STAT)
 

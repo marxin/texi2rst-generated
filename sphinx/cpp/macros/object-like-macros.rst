@@ -5,14 +5,14 @@
 
 .. _object-like-macros:
 
-Object-like Macros
-******************
-
 .. index:: object-like macro
 
 .. index:: symbolic constants
 
 .. index:: manifest constants
+
+Object-like Macros
+******************
 
 An :dfn:`object-like macro` is a simple identifier which will be replaced
 by a code fragment.  It is called object-like because it looks like a

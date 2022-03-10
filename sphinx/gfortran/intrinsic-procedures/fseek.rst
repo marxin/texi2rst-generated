@@ -5,14 +5,14 @@
 
 .. _fseek:
 
-FSEEK --- Low level file positioning subroutine
-***********************************************
-
 .. index:: FSEEK
 
 .. index:: file operation, seek
 
 .. index:: file operation, position
+
+FSEEK --- Low level file positioning subroutine
+***********************************************
 
 .. function:: FSEEK(UNIT, OFFSET, WHENCE, STATUS)
 

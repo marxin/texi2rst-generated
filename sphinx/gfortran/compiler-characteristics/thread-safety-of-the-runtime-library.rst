@@ -5,10 +5,10 @@
 
 .. _thread-safety-of-the-runtime-library:
 
+.. index:: thread-safety, threads
+
 Thread-safety of the runtime library
 ************************************
-
-.. index:: thread-safety, threads
 
 GNU Fortran can be used in programs with multiple threads, e.g. by
 using OpenMP, by calling OS thread handling functions via the

@@ -5,9 +5,6 @@
 
 .. _submodel-options:
 
-Machine-Dependent Options
-*************************
-
 .. index:: submodel options
 
 .. index:: specifying hardware config
@@ -17,6 +14,9 @@ Machine-Dependent Options
 .. index:: target-dependent options
 
 .. index:: machine-dependent options
+
+Machine-Dependent Options
+*************************
 
 Each target machine supported by GCC can have its own options---for
 example, to allow you to compile for a particular processor variant or

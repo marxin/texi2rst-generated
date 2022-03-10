@@ -5,10 +5,10 @@
 
 .. _simple-constraints:
 
+.. index:: simple constraints
+
 Simple Constraints
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: simple constraints
 
 The simplest kind of constraint is a string full of letters, each of
 which describes one kind of operand that is permitted.  Here are
@@ -366,10 +366,10 @@ to indicate the type of register that is required for the operand of the
 
 .. _multi-alternative:
 
+.. index:: multiple alternative constraints
+
 Multiple Alternative Constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: multiple alternative constraints
 
 Sometimes a single instruction has multiple alternative sets of possible
 operands.  For example, on the 68000, a logical-or instruction can combine
@@ -452,14 +452,14 @@ the first, 1 for the second alternative, etc.).  See :ref:`output-statement`.
 
 .. _class-preferences:
 
-Register Class Preferences
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: class preference constraints
 
 .. index:: register class preference constraints
 
 .. index:: voting between constraint alternatives
+
+Register Class Preferences
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The operand constraints have another function: they enable the compiler
 to decide which kind of hardware register a pseudo register is best
@@ -476,12 +476,12 @@ classes are defined.  Then none of this complexity is relevant.
 
 .. _modifiers:
 
-Constraint Modifier Characters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: modifiers in constraints
 
 .. index:: constraint modifier characters
+
+Constraint Modifier Characters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. prevent bad page break with this line
 
@@ -604,12 +604,12 @@ Here are constraint modifier characters.
 
   .. _machine-constraints:
 
-Constraints for Particular Machines
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: machine specific constraints
 
 .. index:: constraints, machine specific
+
+Constraints for Particular Machines
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whenever possible, you should use the general-purpose constraint letters
 in ``asm`` arguments, since they will convey meaning more readily to

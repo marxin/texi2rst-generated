@@ -5,12 +5,12 @@
 
 .. _shape:
 
-SHAPE --- Determine the shape of an array
-*****************************************
-
 .. index:: SHAPE
 
 .. index:: array, shape
+
+SHAPE --- Determine the shape of an array
+*****************************************
 
 .. function:: SHAPE(SOURCE , KIND)
 

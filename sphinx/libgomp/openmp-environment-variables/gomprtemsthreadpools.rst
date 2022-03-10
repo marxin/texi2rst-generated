@@ -5,12 +5,12 @@
 
   .. _gomp_rtems_thread_pools:
 
-GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
-**************************************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
+**************************************************************
 
 :samp:`{Description}:`
   This environment variable is only used on the RTEMS real-time operating system.

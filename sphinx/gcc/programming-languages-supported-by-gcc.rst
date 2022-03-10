@@ -5,9 +5,6 @@
 
 .. _g++-and-gcc:
 
-Programming Languages Supported by GCC
---------------------------------------
-
 .. index:: GCC
 
 .. index:: GNU Compiler Collection
@@ -25,6 +22,9 @@ Programming Languages Supported by GCC
 .. index:: Objective-C
 
 .. index:: Objective-C++
+
+Programming Languages Supported by GCC
+--------------------------------------
 
 GCC stands for 'GNU Compiler Collection'.  GCC is an integrated
 distribution of compilers for several major programming languages.  These

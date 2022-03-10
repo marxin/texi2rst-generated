@@ -5,10 +5,10 @@
 
 .. _manipulating-gimple-statements:
 
+.. index:: Manipulating GIMPLE statements
+
 Manipulating GIMPLE statements
 ******************************
-
-.. index:: Manipulating GIMPLE statements
 
 This section documents all the functions available to handle each
 of the GIMPLE instructions.

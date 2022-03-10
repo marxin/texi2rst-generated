@@ -5,12 +5,12 @@
 
 .. _co_reduce:
 
-CO_REDUCE --- Reduction of values on the current set of images
-**************************************************************
-
 .. index:: CO_REDUCE
 
 .. index:: Collectives, generic reduction
+
+CO_REDUCE --- Reduction of values on the current set of images
+**************************************************************
 
 .. function:: CO_REDUCE
 

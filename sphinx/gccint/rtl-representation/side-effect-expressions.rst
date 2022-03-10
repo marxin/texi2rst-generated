@@ -5,10 +5,10 @@
 
   .. _side-effects:
 
+.. index:: RTL side effect expressions
+
 Side Effect Expressions
 ***********************
-
-.. index:: RTL side effect expressions
 
 The expression codes described so far represent values, not actions.
 But machine instructions never produce values; they are meaningful

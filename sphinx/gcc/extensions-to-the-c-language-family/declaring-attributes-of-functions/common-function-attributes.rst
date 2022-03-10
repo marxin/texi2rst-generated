@@ -91,9 +91,9 @@ The following attributes are supported on most targets.
   object size, for example in functions that call ``__builtin_object_size``.
   See :ref:`object-size-checking`.
 
-.. gcc-attr:: alias ("target")
+.. index:: alias function attribute
 
-  .. index:: alias function attribute
+.. gcc-attr:: alias ("target")
 
   The ``alias`` attribute causes the declaration to be emitted as an alias
   for another symbol, which must have been previously declared with the same
@@ -113,9 +113,9 @@ The following attributes are supported on most targets.
   This attribute requires assembler and object file support,
   and may not be available on all targets.
 
-.. gcc-attr:: aligned, aligned (alignment)
+.. index:: aligned function attribute
 
-  .. index:: aligned function attribute
+.. gcc-attr:: aligned, aligned (alignment)
 
   The :gcc-attr:`aligned` attribute specifies a minimum alignment for
   the first instruction of the function, measured in bytes.  When specified,
@@ -144,9 +144,9 @@ The following attributes are supported on most targets.
   The :gcc-attr:`aligned` attribute can also be used for variables and fields
   (see :ref:`variable-attributes`.)
 
-.. gcc-attr:: alloc_align (position)
+.. index:: alloc_align function attribute
 
-  .. index:: alloc_align function attribute
+.. gcc-attr:: alloc_align (position)
 
   The ``alloc_align`` attribute may be applied to a function that
   returns a pointer and takes at least one argument of an integer or
@@ -169,9 +169,9 @@ The following attributes are supported on most targets.
   declares that ``my_memalign`` returns memory with minimum alignment
   given by parameter 1.
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. index:: alloc_size function attribute
 
-  .. index:: alloc_size function attribute
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` attribute may be applied to a function that
   returns a pointer and takes at least one argument of an integer or
@@ -199,9 +199,9 @@ The following attributes are supported on most targets.
   the product of parameter 1 and 2 and that ``my_realloc`` returns memory
   of the size given by parameter 2.
 
-.. gcc-attr:: always_inline
+.. index:: always_inline function attribute
 
-  .. index:: always_inline function attribute
+.. gcc-attr:: always_inline
 
   Generally, functions are not inlined unless optimization is specified.
   For functions declared inline, this attribute inlines the function
@@ -211,9 +211,9 @@ The following attributes are supported on most targets.
   or may not inline it depending on optimization level and a failure
   to inline an indirect call may or may not be diagnosed.
 
-.. gcc-attr:: artificial
+.. index:: artificial function attribute
 
-  .. index:: artificial function attribute
+.. gcc-attr:: artificial
 
   This attribute is useful for small inline wrappers that if possible
   should appear during debugging as a unit.  Depending on the debug
@@ -221,9 +221,9 @@ The following attributes are supported on most targets.
   or using the caller location for all instructions within the inlined
   body.
 
-.. gcc-attr:: assume_aligned (alignment), assume_aligned (alignment, offset)
+.. index:: assume_aligned function attribute
 
-  .. index:: assume_aligned function attribute
+.. gcc-attr:: assume_aligned (alignment), assume_aligned (alignment, offset)
 
   The ``assume_aligned`` attribute may be applied to a function that
   returns a pointer.  It indicates that the returned pointer is aligned
@@ -243,9 +243,9 @@ The following attributes are supported on most targets.
   that ``my_alloc2`` returns a pointer whose value modulo 32 is equal
   to 8.
 
-.. gcc-attr:: cold
+.. index:: cold function attribute
 
-  .. index:: cold function attribute
+.. gcc-attr:: cold
 
   The :gcc-attr:`cold` attribute on functions is used to inform the compiler that
   the function is unlikely to be executed.  The function is optimized for
@@ -260,11 +260,11 @@ The following attributes are supported on most targets.
   When profile feedback is available, via :option:`-fprofile-use`, cold functions
   are automatically detected and this attribute is ignored.
 
+.. index:: const function attribute
+
+.. index:: functions that have no side effects
+
 .. gcc-attr:: const
-
-  .. index:: const function attribute
-
-  .. index:: functions that have no side effects
 
   Calls to functions whose return value is not affected by changes to
   the observable state of the program and that have no observable effects
@@ -306,11 +306,11 @@ The following attributes are supported on most targets.
   in C++, reference arguments. Likewise, a function that calls a non-const
   function usually must not be const itself.
 
+.. index:: constructor function attribute
+
+.. index:: destructor function attribute
+
 .. gcc-attr:: constructor, destructor, constructor (priority), destructor (priority)
-
-  .. index:: constructor function attribute
-
-  .. index:: destructor function attribute
 
   The :gcc-attr:`constructor` attribute causes the function to be called
   automatically before execution enters ``main ()``.  Similarly, the
@@ -339,9 +339,9 @@ The following attributes are supported on most targets.
   attributes on targets where the feature is not supported is rejected with
   an error.
 
-.. gcc-attr:: copy, copy (function)
+.. index:: copy function attribute
 
-  .. index:: copy function attribute
+.. gcc-attr:: copy, copy (function)
 
   The :gcc-attr:`copy` attribute applies the set of attributes with which
   :samp:`{function}` has been declared to the declaration of the function
@@ -375,9 +375,9 @@ The following attributes are supported on most targets.
       void* allocate (size_t);
     StrongAlias (allocate, alloc);
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. index:: deprecated function attribute
 
-  .. index:: deprecated function attribute
+.. gcc-attr:: deprecated, deprecated (msg)
 
   The :gcc-attr:`deprecated` attribute results in a warning if the function
   is used anywhere in the source file.  This is useful when identifying
@@ -403,9 +403,9 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. index:: unavailable function attribute
 
-  .. index:: unavailable function attribute
+.. gcc-attr:: unavailable, unavailable (msg)
 
   The :gcc-attr:`unavailable` attribute results in an error if the function
   is used anywhere in the source file.  This is useful when identifying
@@ -417,11 +417,11 @@ The following attributes are supported on most targets.
   The :gcc-attr:`unavailable` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
+.. index:: error function attribute
+
+.. index:: warning function attribute
+
 .. gcc-attr:: error ("message"), warning ("message")
-
-  .. index:: error function attribute
-
-  .. index:: warning function attribute
 
   If the ``error`` or ``warning`` attribute 
   is used on a function declaration and a call to such a function
@@ -439,9 +439,9 @@ The following attributes are supported on most targets.
   earlier and with exact location of the call even in presence of inline
   functions or when not emitting debugging information.
 
-.. gcc-attr:: externally_visible
+.. index:: externally_visible function attribute
 
-  .. index:: externally_visible function attribute
+.. gcc-attr:: externally_visible
 
   This attribute, attached to a global variable or function, nullifies
   the effect of the :option:`-fwhole-program` command-line option, so the
@@ -456,9 +456,9 @@ The following attributes are supported on most targets.
   For other linkers that cannot generate resolution file,
   explicit :gcc-attr:`externally_visible` attributes are still necessary.
 
-.. gcc-attr:: flatten
+.. index:: flatten function attribute
 
-  .. index:: flatten function attribute
+.. gcc-attr:: flatten
 
   Generally, inlining into a function is limited.  For a function marked with
   this attribute, every call inside this function is inlined, if possible.
@@ -466,11 +466,11 @@ The following attributes are supported on most targets.
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
+.. index:: format function attribute
+
+.. index:: functions with printf, scanf, strftime or strfmon style arguments
+
 .. option:: format (archetype, string-index, first-to-check)
-
-  .. index:: format function attribute
-
-  .. index:: functions with printf, scanf, strftime or strfmon style arguments
 
   The ``format`` attribute specifies that a function takes ``printf``,
   ``scanf``, ``strftime`` or ``strfmon`` style arguments that
@@ -541,9 +541,9 @@ The following attributes are supported on most targets.
   The target may also provide additional types of format checks.
   See :ref:`target-format-checks`.
 
-.. option:: format_arg (string-index)
+.. index:: format_arg function attribute
 
-  .. index:: format_arg function attribute
+.. option:: format_arg (string-index)
 
   The ``format_arg`` attribute specifies that a function takes one or
   more format strings for a ``printf``, ``scanf``, ``strftime`` or
@@ -600,9 +600,9 @@ The following attributes are supported on most targets.
   The target may also allow additional types in ``format-arg`` attributes.
   See :ref:`target-format-checks`.
 
-.. gcc-attr:: gnu_inline
+.. index:: gnu_inline function attribute
 
-  .. index:: gnu_inline function attribute
+.. gcc-attr:: gnu_inline
 
   This attribute should be used with a function that is also declared
   with the ``inline`` keyword.  It directs GCC to treat the function
@@ -639,9 +639,9 @@ The following attributes are supported on most targets.
   but it still requires the ``inline`` keyword to enable its special
   behavior.
 
-.. gcc-attr:: hot
+.. index:: hot function attribute
 
-  .. index:: hot function attribute
+.. gcc-attr:: hot
 
   The :gcc-attr:`hot` attribute on a function is used to inform the compiler that
   the function is a hot spot of the compiled program.  The function is
@@ -652,13 +652,13 @@ The following attributes are supported on most targets.
   When profile feedback is available, via :option:`-fprofile-use`, hot functions
   are automatically detected and this attribute is ignored.
 
+.. index:: ifunc function attribute
+
+.. index:: indirect functions
+
+.. index:: functions that are dynamically resolved
+
 .. gcc-attr:: ifunc ("resolver")
-
-  .. index:: ifunc function attribute
-
-  .. index:: indirect functions
-
-  .. index:: functions that are dynamically resolved
 
   The ``ifunc`` attribute is used to mark a function as an indirect
   function using the STT_GNU_IFUNC symbol type extension to the ELF
@@ -754,9 +754,9 @@ The following attributes are supported on most targets.
   functions.  The exact syntax and behavior are target-specific;
   refer to the following subsections for details.
 
-.. gcc-attr:: leaf
+.. index:: leaf function attribute
 
-  .. index:: leaf function attribute
+.. gcc-attr:: leaf
 
   Calls to external functions with this attribute must return to the
   current compilation unit only by return or by exception handling.  In
@@ -794,11 +794,11 @@ The following attributes are supported on most targets.
   calls.
 
 ``malloc``:samp:`malloc ({deallocator})`
+.. index:: malloc function attribute
+
+.. index:: functions that behave like malloc
+
 .. gcc-attr:: malloc (deallocator, ptr-index)
-
-  .. index:: malloc function attribute
-
-  .. index:: functions that behave like malloc
 
   Attribute ``malloc`` indicates that a function is ``malloc`` -like,
   i.e., that the pointer :samp:`{P}` returned by the function cannot alias any
@@ -902,33 +902,33 @@ The following attributes are supported on most targets.
   a :option:`-Wanalyzer-possible-null-argument` diagnostic for code paths
   in which the deallocator is called with NULL.
 
-.. gcc-attr:: no_icf
+.. index:: no_icf function attribute
 
-  .. index:: no_icf function attribute
+.. gcc-attr:: no_icf
 
   This function attribute prevents a functions from being merged with another
   semantically equivalent function.
 
-.. option:: no_instrument_function
+.. index:: no_instrument_function function attribute
 
-  .. index:: no_instrument_function function attribute
+.. option:: no_instrument_function
 
   If any of :option:`-finstrument-functions`, :option:`-p`, or :option:`-pg` are 
   given, profiling function calls are
   generated at entry and exit of most user-compiled functions.
   Functions with this attribute are not so instrumented.
 
-.. gcc-attr:: no_profile_instrument_function
+.. index:: no_profile_instrument_function function attribute
 
-  .. index:: no_profile_instrument_function function attribute
+.. gcc-attr:: no_profile_instrument_function
 
   The :gcc-attr:`no_profile_instrument_function` attribute on functions is used
   to inform the compiler that it should not process any profile feedback based
   optimization code instrumentation.
 
-.. gcc-attr:: no_reorder
+.. index:: no_reorder function attribute
 
-  .. index:: no_reorder function attribute
+.. gcc-attr:: no_reorder
 
   Do not reorder functions or variables marked :gcc-attr:`no_reorder`
   against each other or top level assembler statements the executable.
@@ -938,9 +938,9 @@ The following attributes are supported on most targets.
   as the :option:`-fno-toplevel-reorder` option, but only applies to the
   marked symbols.
 
-.. gcc-attr:: no_sanitize ("sanitize_option")
+.. index:: no_sanitize function attribute
 
-  .. index:: no_sanitize function attribute
+.. gcc-attr:: no_sanitize ("sanitize_option")
 
   The ``no_sanitize`` attribute on functions is used
   to inform the compiler that it should not do sanitization of any option
@@ -954,9 +954,9 @@ The following attributes are supported on most targets.
     void __attribute__ ((no_sanitize ("alignment,object-size")))
     g () { /* Do something. */; }
 
-.. gcc-attr:: no_sanitize_address, no_address_safety_analysis
+.. index:: no_sanitize_address function attribute
 
-  .. index:: no_sanitize_address function attribute
+.. gcc-attr:: no_sanitize_address, no_address_safety_analysis
 
   The :gcc-attr:`no_sanitize_address` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
@@ -965,59 +965,59 @@ The following attributes are supported on most targets.
   :gcc-attr:`no_sanitize_address` attribute, new code should use
   :gcc-attr:`no_sanitize_address`.
 
-.. gcc-attr:: no_sanitize_thread
+.. index:: no_sanitize_thread function attribute
 
-  .. index:: no_sanitize_thread function attribute
+.. gcc-attr:: no_sanitize_thread
 
   The :gcc-attr:`no_sanitize_thread` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
   in the function when compiling with the :option:`-fsanitize`:samp:`=thread` option.
 
-.. gcc-attr:: no_sanitize_undefined
+.. index:: no_sanitize_undefined function attribute
 
-  .. index:: no_sanitize_undefined function attribute
+.. gcc-attr:: no_sanitize_undefined
 
   The :gcc-attr:`no_sanitize_undefined` attribute on functions is used
   to inform the compiler that it should not check for undefined behavior
   in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
 
-.. gcc-attr:: no_sanitize_coverage
+.. index:: no_sanitize_coverage function attribute
 
-  .. index:: no_sanitize_coverage function attribute
+.. gcc-attr:: no_sanitize_coverage
 
   The :gcc-attr:`no_sanitize_coverage` attribute on functions is used
   to inform the compiler that it should not do coverage-guided
   fuzzing code instrumentation (:option:`-fsanitize-coverage`).
 
-.. option:: no_split_stack
+.. index:: no_split_stack function attribute
 
-  .. index:: no_split_stack function attribute
+.. option:: no_split_stack
 
   If :option:`-fsplit-stack` is given, functions have a small
   prologue which decides whether to split the stack.  Functions with the
   ``no_split_stack`` attribute do not have that prologue, and thus
   may run with only a small amount of stack space available.
 
-.. gcc-attr:: no_stack_limit
+.. index:: no_stack_limit function attribute
 
-  .. index:: no_stack_limit function attribute
+.. gcc-attr:: no_stack_limit
 
   This attribute locally overrides the :option:`-fstack-limit-register`
   and :option:`-fstack-limit-symbol` command-line options; it has the effect
   of disabling stack limit checking in the function it applies to.
 
-.. gcc-attr:: noclone
+.. index:: noclone function attribute
 
-  .. index:: noclone function attribute
+.. gcc-attr:: noclone
 
   This function attribute prevents a function from being considered for
   cloning---a mechanism that produces specialized copies of functions
   and which is (currently) performed by interprocedural constant
   propagation.
 
-.. gcc-attr:: noinline
+.. index:: noinline function attribute
 
-  .. index:: noinline function attribute
+.. gcc-attr:: noinline
 
   This function attribute prevents a function from being considered for
   inlining.
@@ -1038,9 +1038,9 @@ The following attributes are supported on most targets.
   (see :ref:`extended-asm`) in the called function, to serve as a special
   side effect.
 
-.. gcc-attr:: noipa
+.. index:: noipa function attribute
 
-  .. index:: noipa function attribute
+.. gcc-attr:: noipa
 
   Disable interprocedural optimizations between the function with this
   attribute and its callers, as if the body of the function is not available
@@ -1053,11 +1053,11 @@ The following attributes are supported on most targets.
   them individually.  This attribute is supported mainly for the purpose
   of testing the compiler.
 
+.. index:: nonnull function attribute
+
+.. index:: functions with non-null pointer arguments
+
 .. gcc-attr:: nonnull, nonnull (arg-index, ...)
-
-  .. index:: nonnull function attribute
-
-  .. index:: functions with non-null pointer arguments
 
   The :gcc-attr:`nonnull` attribute may be applied to a function that takes at
   least one argument of a pointer type.  It indicates that the referenced
@@ -1112,9 +1112,9 @@ The following attributes are supported on most targets.
     my_memcpy (void *dest, const void *src, size_t len)
             __attribute__((nonnull));
 
-.. gcc-attr:: noplt
+.. index:: noplt function attribute
 
-  .. index:: noplt function attribute
+.. gcc-attr:: noplt
 
   The :gcc-attr:`noplt` attribute is the counterpart to option :option:`-fno-plt`.
   Calls to functions marked with this attribute in position-independent code
@@ -1142,11 +1142,11 @@ The following attributes are supported on most targets.
   In position-dependent code, a few targets also convert calls to
   functions that are marked to not use the PLT to use the GOT instead.
 
+.. index:: noreturn function attribute
+
+.. index:: functions that never return
+
 .. gcc-attr:: noreturn
-
-  .. index:: noreturn function attribute
-
-  .. index:: functions that never return
 
   A few standard library functions, such as ``abort`` and ``exit``,
   cannot return.  GCC knows this automatically.  Some programs define
@@ -1183,9 +1183,9 @@ The following attributes are supported on most targets.
   It does not make sense for a :gcc-attr:`noreturn` function to have a return
   type other than ``void``.
 
-.. gcc-attr:: nothrow
+.. index:: nothrow function attribute
 
-  .. index:: nothrow function attribute
+.. gcc-attr:: nothrow
 
   The :gcc-attr:`nothrow` attribute is used to inform the compiler that a
   function cannot throw an exception.  For example, most functions in
@@ -1194,9 +1194,9 @@ The following attributes are supported on most targets.
   take function pointer arguments.
 
 :samp:`optimize ({level}, ...)`
-.. gcc-attr:: optimize (string, ...)
+.. index:: optimize function attribute
 
-  .. index:: optimize function attribute
+.. gcc-attr:: optimize (string, ...)
 
   The ``optimize`` attribute is used to specify that a function is to
   be compiled with different optimization options than specified on the
@@ -1225,11 +1225,11 @@ The following attributes are supported on most targets.
   The ``optimize`` attribute should be used for debugging purposes only.
   It is not suitable in production code.
 
+.. index:: patchable_function_entry function attribute
+
+.. index:: extra NOP instructions at the function entry point
+
 .. gcc-attr:: patchable_function_entry
-
-  .. index:: patchable_function_entry function attribute
-
-  .. index:: extra NOP instructions at the function entry point
 
   In case the target's text segment can be made writable at run time by
   any means, padding the function entry with a number of NOPs can be
@@ -1249,11 +1249,11 @@ The following attributes are supported on most targets.
   framework with the attribute ``patchable_function_entry (0)``
   to prevent recursion.
 
+.. index:: pure function attribute
+
+.. index:: functions that have no side effects
+
 .. gcc-attr:: pure
-
-  .. index:: pure function attribute
-
-  .. index:: functions that have no side effects
 
   Calls to functions that have no observable effects on the state of
   the program other than to return a value may lend themselves to optimizations
@@ -1300,9 +1300,9 @@ The following attributes are supported on most targets.
   effects it does not make sense for such a function to return ``void``.
   Declaring such a function is diagnosed.
 
-.. gcc-attr:: returns_nonnull
+.. index:: returns_nonnull function attribute
 
-  .. index:: returns_nonnull function attribute
+.. gcc-attr:: returns_nonnull
 
   The :gcc-attr:`returns_nonnull` attribute specifies that the function
   return value should be a non-null pointer.  For instance, the declaration:
@@ -1315,11 +1315,11 @@ The following attributes are supported on most targets.
   lets the compiler optimize callers based on the knowledge
   that the return value will never be null.
 
+.. index:: returns_twice function attribute
+
+.. index:: functions that return more than once
+
 .. gcc-attr:: returns_twice
-
-  .. index:: returns_twice function attribute
-
-  .. index:: functions that return more than once
 
   The :gcc-attr:`returns_twice` attribute tells the compiler that a function may
   return more than one time.  The compiler ensures that all registers
@@ -1329,11 +1329,11 @@ The following attributes are supported on most targets.
   The ``longjmp`` -like counterpart of such function, if any, might need
   to be marked with the :gcc-attr:`noreturn` attribute.
 
+.. index:: section function attribute
+
+.. index:: functions in arbitrary sections
+
 .. gcc-attr:: section ("section-name")
-
-  .. index:: section function attribute
-
-  .. index:: functions in arbitrary sections
 
   Normally, the compiler places the code it generates in the ``text`` section.
   Sometimes, however, you need additional sections, or you need certain
@@ -1352,9 +1352,9 @@ The following attributes are supported on most targets.
   If you need to map the entire contents of a module to a particular
   section, consider using the facilities of the linker instead.
 
-.. gcc-attr:: sentinel, sentinel (position)
+.. index:: sentinel function attribute
 
-  .. index:: sentinel function attribute
+.. gcc-attr:: sentinel, sentinel (position)
 
   This function attribute indicates that an argument in a call to the function
   is expected to be an explicit ``NULL``.  The attribute is only valid on
@@ -1382,9 +1382,9 @@ The following attributes are supported on most targets.
   The warnings for missing or incorrect sentinels are enabled with
   :option:`-Wformat`.
 
-.. gcc-attr:: simd, simd("mask")
+.. index:: simd function attribute
 
-  .. index:: simd function attribute
+.. gcc-attr:: simd, simd("mask")
 
   This attribute enables creation of one or more function versions that
   can process multiple arguments using SIMD instructions from a
@@ -1404,23 +1404,23 @@ The following attributes are supported on most targets.
   present on a declaration and the :option:`-fopenmp` or :option:`-fopenmp-simd`
   switch is specified, then the attribute is ignored.
 
-.. gcc-attr:: stack_protect
+.. index:: stack_protect function attribute
 
-  .. index:: stack_protect function attribute
+.. gcc-attr:: stack_protect
 
   This attribute adds stack protection code to the function if 
   flags :option:`-fstack-protector`, :option:`-fstack-protector-strong`
   or :option:`-fstack-protector-explicit` are set.
 
-.. gcc-attr:: no_stack_protector
+.. index:: no_stack_protector function attribute
 
-  .. index:: no_stack_protector function attribute
+.. gcc-attr:: no_stack_protector
 
   This attribute prevents stack protection code for the function.
 
-.. gcc-attr:: target (string, ...)
+.. index:: target function attribute
 
-  .. index:: target function attribute
+.. gcc-attr:: target (string, ...)
 
   Multiple target back ends implement the ``target`` attribute
   to specify that a function is to
@@ -1463,9 +1463,9 @@ The following attributes are supported on most targets.
   :ref:`nios-ii-function-attributes`, and :ref:`s-390-function-attributes`
   for details.
 
-.. gcc-attr:: symver ("name2@nodename")
+.. index:: symver function attribute
 
-  .. index:: symver function attribute
+.. gcc-attr:: symver ("name2@nodename")
 
   On ELF targets this attribute creates a symbol version.  The :samp:`{name2}` part
   of the parameter is the actual name of the symbol by which it will be
@@ -1517,9 +1517,9 @@ The following attributes are supported on most targets.
   ``"name2@nodename"`` was used) the version will be also used
   to resolve :samp:`{name2}` by the linker.
 
-.. gcc-attr:: tainted_args
+.. index:: tainted_args function attribute
 
-  .. index:: tainted_args function attribute
+.. gcc-attr:: tainted_args
 
   The :gcc-attr:`tainted_args` attribute is used to specify that a function is called
   in a way that requires sanitization of its arguments, such as a system
@@ -1539,9 +1539,9 @@ The following attributes are supported on most targets.
   :option:`-Wanalyzer-tainted-offset`,
   and :option:`-Wanalyzer-tainted-size`.
 
-.. gcc-attr:: target_clones (options)
+.. index:: target_clones function attribute
 
-  .. index:: target_clones function attribute
+.. gcc-attr:: target_clones (options)
 
   The ``target_clones`` attribute is used to specify that a function
   be cloned into multiple versions compiled with different target options
@@ -1569,17 +1569,17 @@ The following attributes are supported on most targets.
   If you want to enforce such behaviour,
   we recommend declaring the calling function with the :gcc-attr:`flatten` attribute?
 
-.. gcc-attr:: unused
+.. index:: unused function attribute
 
-  .. index:: unused function attribute
+.. gcc-attr:: unused
 
   This attribute, attached to a function, means that the function is meant
   to be possibly unused.  GCC does not produce a warning for this
   function.
 
-.. gcc-attr:: used
+.. index:: used function attribute
 
-  .. index:: used function attribute
+.. gcc-attr:: used
 
   This attribute, attached to a function, means that code must be emitted
   for the function even if it appears that the function is not referenced.
@@ -1590,9 +1590,9 @@ The following attributes are supported on most targets.
   attribute also means that the function is instantiated if the
   class itself is instantiated.
 
-.. gcc-attr:: retain
+.. index:: retain function attribute
 
-  .. index:: retain function attribute
+.. gcc-attr:: retain
 
   For ELF targets that support the GNU or FreeBSD OSABIs, this attribute
   will save the function from linker garbage collection.  To support
@@ -1602,9 +1602,9 @@ The following attributes are supported on most targets.
 
   This additional functionality requires Binutils version 2.36 or later.
 
-.. gcc-attr:: visibility ("visibility_type")
+.. index:: visibility function attribute
 
-  .. index:: visibility function attribute
+.. gcc-attr:: visibility ("visibility_type")
 
   This attribute affects the linkage of the declaration to which it is attached.
   It can be applied to variables (see :ref:`common-variable-attributes`) and types
@@ -1706,9 +1706,9 @@ The following attributes are supported on most targets.
   If both the template and enclosing class have explicit visibility, the
   visibility from the template is used.
 
-.. gcc-attr:: warn_unused_result
+.. index:: warn_unused_result function attribute
 
-  .. index:: warn_unused_result function attribute
+.. gcc-attr:: warn_unused_result
 
   The :gcc-attr:`warn_unused_result` attribute causes a warning to be emitted
   if a caller of the function with this attribute does not use its
@@ -1728,9 +1728,9 @@ The following attributes are supported on most targets.
 
   results in warning on line 5.
 
-.. gcc-attr:: weak
+.. index:: weak function attribute
 
-  .. index:: weak function attribute
+.. gcc-attr:: weak
 
   The :gcc-attr:`weak` attribute causes a declaration of an external symbol
   to be emitted as a weak symbol rather than a global.  This is primarily
@@ -1741,9 +1741,9 @@ The following attributes are supported on most targets.
   the weak symbol.  Weak symbols are supported for ELF targets, and also
   for a.out targets when using the GNU assembler and linker.
 
-.. gcc-attr:: weakref, weakref ("target")
+.. index:: weakref function attribute
 
-  .. index:: weakref function attribute
+.. gcc-attr:: weakref, weakref ("target")
 
   The :gcc-attr:`weakref` attribute marks a declaration as a weak reference.
   Without arguments, it should be accompanied by an ``alias`` attribute
@@ -1787,9 +1787,9 @@ The following attributes are supported on most targets.
   A declaration to which :gcc-attr:`weakref` is attached and that is associated
   with a named ``target`` must be ``static``.
 
-.. gcc-attr:: zero_call_used_regs ("choice")
+.. index:: zero_call_used_regs function attribute
 
-  .. index:: zero_call_used_regs function attribute
+.. gcc-attr:: zero_call_used_regs ("choice")
 
   The ``zero_call_used_regs`` attribute causes the compiler to zero
   a subset of all call-used registersA 'call-used' register

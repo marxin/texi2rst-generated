@@ -5,14 +5,14 @@
 
 .. _dcmplx:
 
-DCMPLX --- Double complex conversion function
-*********************************************
-
 .. index:: DCMPLX
 
 .. index:: complex numbers, conversion to
 
 .. index:: conversion, to complex
+
+DCMPLX --- Double complex conversion function
+*********************************************
 
 .. function:: DCMPLX(X [,Y])
 

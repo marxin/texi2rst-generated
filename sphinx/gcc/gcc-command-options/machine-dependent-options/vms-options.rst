@@ -17,9 +17,9 @@ These :samp:`-m` options are defined for the VMS implementations:
   Return VMS condition codes from ``main``. The default is to return POSIX-style
   condition (e.g. error) codes.
 
-.. option:: -mdebug-main={prefix}
+.. index:: mdebug-main=prefix
 
-  .. index:: mdebug-main=prefix
+.. option:: -mdebug-main={prefix}
 
   Flag the first routine whose name starts with :samp:`{prefix}` as the main
   routine for the debugger.
@@ -28,9 +28,9 @@ These :samp:`-m` options are defined for the VMS implementations:
 
   Default to 64-bit memory allocation routines.
 
-.. option:: -mpointer-size={size}
+.. index:: mpointer-size=size
 
-  .. index:: mpointer-size=size
+.. option:: -mpointer-size={size}
 
   Set the default size of pointers. Possible options for :samp:`{size}` are
   :samp:`32` or :samp:`short` for 32 bit pointers, :samp:`64` or :samp:`long`

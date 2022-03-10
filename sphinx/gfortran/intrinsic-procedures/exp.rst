@@ -5,9 +5,6 @@
 
 .. _exp:
 
-EXP --- Exponential function 
-*****************************
-
 .. index:: EXP
 
 .. index:: DEXP
@@ -21,6 +18,9 @@ EXP --- Exponential function
 .. index:: exponential function
 
 .. index:: logarithm function, inverse
+
+EXP --- Exponential function 
+*****************************
 
 .. function:: EXP(X)
 

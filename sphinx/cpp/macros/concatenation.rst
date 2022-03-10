@@ -5,9 +5,6 @@
 
 .. _concatenation:
 
-Concatenation
-*************
-
 .. index:: concatenation
 
 .. index:: token pasting
@@ -15,6 +12,9 @@ Concatenation
 .. index:: token concatenation
 
 .. index:: ## operator
+
+Concatenation
+*************
 
 It is often useful to merge two tokens into one while expanding macros.
 This is called :dfn:`token pasting` or :dfn:`token concatenation`.  The

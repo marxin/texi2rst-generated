@@ -3,9 +3,6 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-C Language
-**********
-
 .. index:: C standard
 
 .. index:: C standards
@@ -99,6 +96,9 @@ C Language
 .. index:: pedantic
 
 .. index:: pedantic-errors
+
+C Language
+**********
 
 The original ANSI C standard (X3.159-1989) was ratified in 1989 and
 published in 1990.  This standard was ratified as an ISO standard

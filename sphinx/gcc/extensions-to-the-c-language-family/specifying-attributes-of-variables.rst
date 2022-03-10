@@ -5,12 +5,12 @@
 
 .. _variable-attributes:
 
-Specifying Attributes of Variables
-**********************************
-
 .. index:: attribute of variables
 
 .. index:: variable attributes
+
+Specifying Attributes of Variables
+**********************************
 
 The keyword ``__attribute__`` allows you to specify special properties
 of variables, function parameters, or structure, union, and, in C++, class
@@ -54,9 +54,9 @@ Common Variable Attributes
 
 The following attributes are supported on most targets.
 
-.. gcc-attr:: alias ("target")
+.. index:: alias variable attribute
 
-  .. index:: alias variable attribute
+.. gcc-attr:: alias ("target")
 
   The ``alias`` variable attribute causes the declaration to be emitted
   as an alias for another symbol known as an :dfn:`alias target`.  Except
@@ -195,9 +195,9 @@ The following attributes are supported on most targets.
   The ``warn_if_not_aligned`` attribute can also be used for types
   (see :ref:`common-type-attributes`.)
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. index:: alloc_size variable attribute
 
-  .. index:: alloc_size variable attribute
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` variable attribute may be applied to the declaration
   of a pointer to a function that returns a pointer and takes at least one
@@ -223,9 +223,9 @@ The following attributes are supported on most targets.
   ``malloc_ptr``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-.. gcc-attr:: cleanup (cleanup_function)
+.. index:: cleanup variable attribute
 
-  .. index:: cleanup variable attribute
+.. gcc-attr:: cleanup (cleanup_function)
 
   The ``cleanup`` attribute runs a function when the variable goes
   out of scope.  This attribute can only be applied to auto function
@@ -241,11 +241,11 @@ The following attributes are supported on most targets.
   It is undefined what happens if :samp:`{cleanup_function}` does not
   return normally.
 
+.. index:: common variable attribute
+
+.. index:: nocommon variable attribute
+
 .. option:: common, nocommon
-
-  .. index:: common variable attribute
-
-  .. index:: nocommon variable attribute
 
   The ``common`` attribute requests GCC to place a variable in
   'common' storage.  The ``nocommon`` attribute requests the
@@ -254,9 +254,9 @@ The following attributes are supported on most targets.
   These attributes override the default chosen by the
   :option:`-fno-common` and :option:`-fcommon` flags respectively.
 
-.. gcc-attr:: copy, copy (variable)
+.. index:: copy variable attribute
 
-  .. index:: copy variable attribute
+.. gcc-attr:: copy, copy (variable)
 
   The :gcc-attr:`copy` attribute applies the set of attributes with which
   :samp:`{variable}` has been declared to the declaration of the variable
@@ -272,9 +272,9 @@ The following attributes are supported on most targets.
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-type-attributes`.
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. index:: deprecated variable attribute
 
-  .. index:: deprecated variable attribute
+.. gcc-attr:: deprecated, deprecated (msg)
 
   The :gcc-attr:`deprecated` attribute results in a warning if the variable
   is used anywhere in the source file.  This is useful when identifying
@@ -301,9 +301,9 @@ The following attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. index:: unavailable variable attribute
 
-  .. index:: unavailable variable attribute
+.. gcc-attr:: unavailable, unavailable (msg)
 
   The :gcc-attr:`unavailable` attribute indicates that the variable so marked
   is not available, if it is used anywhere in the source file.  It behaves
@@ -318,9 +318,9 @@ The following attributes are supported on most targets.
   types (see :ref:`common-function-attributes`,
   see :ref:`common-type-attributes`).
 
-.. gcc-attr:: mode (mode)
+.. index:: mode variable attribute
 
-  .. index:: mode variable attribute
+.. gcc-attr:: mode (mode)
 
   This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
@@ -333,9 +333,9 @@ The following attributes are supported on most targets.
   ``__word__`` for the mode of a one-word integer, and ``pointer``
   or ``__pointer__`` for the mode used to represent pointers.
 
-.. gcc-attr:: nonstring
+.. index:: nonstring variable attribute
 
-  .. index:: nonstring variable attribute
+.. gcc-attr:: nonstring
 
   The :gcc-attr:`nonstring` variable attribute specifies that an object or member
   declaration with type array of ``char``, ``signed char``, or
@@ -370,9 +370,9 @@ The following attributes are supported on most targets.
       return strlen (pd->name);   // unsafe, gets a warning
     }
 
-.. gcc-attr:: packed
+.. index:: packed variable attribute
 
-  .. index:: packed variable attribute
+.. gcc-attr:: packed
 
   The :gcc-attr:`packed` attribute specifies that a structure member should have
   the smallest possible alignment---one bit for a bit-field and one byte
@@ -396,9 +396,9 @@ The following attributes are supported on most targets.
   structure layout.  See the documentation of
   :option:`-Wpacked-bitfield-compat` for more information.
 
-.. gcc-attr:: section ("section-name")
+.. index:: section variable attribute
 
-  .. index:: section variable attribute
+.. gcc-attr:: section ("section-name")
 
   Normally, the compiler places the objects it generates in sections like
   ``data`` and ``bss``.  Sometimes, however, you need additional sections,
@@ -446,9 +446,9 @@ The following attributes are supported on most targets.
   If you need to map the entire contents of a module to a particular
   section, consider using the facilities of the linker instead.
 
-.. gcc-attr:: tls_model ("tls_model")
+.. index:: tls_model variable attribute
 
-  .. index:: tls_model variable attribute
+.. gcc-attr:: tls_model ("tls_model")
 
   The ``tls_model`` attribute sets thread-local storage model
   (see :ref:`thread-local`) of a particular ``__thread`` variable,
@@ -459,17 +459,17 @@ The following attributes are supported on most targets.
 
   Not all targets support this attribute.
 
-.. gcc-attr:: unused
+.. index:: unused variable attribute
 
-  .. index:: unused variable attribute
+.. gcc-attr:: unused
 
   This attribute, attached to a variable or structure field, means that
   the variable or field is meant to be possibly unused.  GCC does not
   produce a warning for this variable or field.
 
-.. gcc-attr:: used
+.. index:: used variable attribute
 
-  .. index:: used variable attribute
+.. gcc-attr:: used
 
   This attribute, attached to a variable with static storage, means that
   the variable must be emitted even if it appears that the variable is not
@@ -479,9 +479,9 @@ The following attributes are supported on most targets.
   attribute also means that the member is instantiated if the
   class itself is instantiated.
 
-.. gcc-attr:: retain
+.. index:: retain variable attribute
 
-  .. index:: retain variable attribute
+.. gcc-attr:: retain
 
   For ELF targets that support the GNU or FreeBSD OSABIs, this attribute
   will save the variable from linker garbage collection.  To support
@@ -491,9 +491,9 @@ The following attributes are supported on most targets.
 
   This additional functionality requires Binutils version 2.36 or later.
 
-.. gcc-attr:: uninitialized
+.. index:: uninitialized variable attribute
 
-  .. index:: uninitialized variable attribute
+.. gcc-attr:: uninitialized
 
   This attribute, attached to a variable with automatic storage, means that
   the variable should not be automatically initialized by the compiler when
@@ -509,9 +509,9 @@ The following attributes are supported on most targets.
   This attribute has no effect when the option ``-ftrivial-auto-var-init``
   does not present.
 
-.. gcc-attr:: vector_size (bytes)
+.. index:: vector_size variable attribute
 
-  .. index:: vector_size variable attribute
+.. gcc-attr:: vector_size (bytes)
 
   This attribute specifies the vector size for the type of the declared
   variable, measured in bytes.  The type to which it applies is known as
@@ -543,24 +543,24 @@ The following attributes are supported on most targets.
   is invalid even if the size of the structure is the same as the size of
   the ``int``.
 
-.. gcc-attr:: visibility ("visibility_type")
+.. index:: visibility variable attribute
 
-  .. index:: visibility variable attribute
+.. gcc-attr:: visibility ("visibility_type")
 
   This attribute affects the linkage of the declaration to which it is attached.
   The :gcc-attr:`visibility` attribute is described in
   :ref:`common-function-attributes`.
 
-.. gcc-attr:: weak
+.. index:: weak variable attribute
 
-  .. index:: weak variable attribute
+.. gcc-attr:: weak
 
   The :gcc-attr:`weak` attribute is described in
   :ref:`common-function-attributes`.
 
-.. gcc-attr:: noinit
+.. index:: noinit variable attribute
 
-  .. index:: noinit variable attribute
+.. gcc-attr:: noinit
 
   Any data with the :gcc-attr:`noinit` attribute will not be initialized by
   the C runtime startup code, or the program loader.  Not initializing
@@ -570,9 +570,9 @@ The following attributes are supported on most targets.
   script to place sections with the ``.noinit`` prefix in the right
   location.
 
-.. gcc-attr:: persistent
+.. index:: persistent variable attribute
 
-  .. index:: persistent variable attribute
+.. gcc-attr:: persistent
 
   Any data with the :gcc-attr:`persistent` attribute will not be initialized by
   the C runtime startup code, but will be initialized by the program
@@ -584,9 +584,9 @@ The following attributes are supported on most targets.
   right location.  Specifically, some type of non-volatile, writeable
   memory is required.
 
-.. gcc-attr:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
+.. index:: objc_nullability variable attribute
 
-  .. index:: objc_nullability variable attribute
+.. gcc-attr:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
 
   This attribute applies to pointer variables only.  It allows marking the
   pointer with one of four possible values describing the conditions under
@@ -617,9 +617,9 @@ The following attributes are supported on most targets.
 ARC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. gcc-attr:: aux
+.. index:: aux variable attribute, ARC
 
-  .. index:: aux variable attribute, ARC
+.. gcc-attr:: aux
 
   The :gcc-attr:`aux` attribute is used to directly access the ARC's
   auxiliary register space from C.  The auxilirary register number is
@@ -630,9 +630,9 @@ ARC Variable Attributes
 AVR Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. gcc-attr:: progmem
+.. index:: progmem variable attribute, AVR
 
-  .. index:: progmem variable attribute, AVR
+.. gcc-attr:: progmem
 
   The :gcc-attr:`progmem` attribute is used on the AVR to place read-only
   data in the non-volatile program memory (flash). The :gcc-attr:`progmem`
@@ -704,9 +704,9 @@ AVR Variable Attributes
     Please notice that on these devices, there is no need for :gcc-attr:`progmem`
     at all.
 
-.. gcc-attr:: io, io (addr)
+.. index:: io variable attribute, AVR
 
-  .. index:: io variable attribute, AVR
+.. gcc-attr:: io, io (addr)
 
   Variables with the :gcc-attr:`io` attribute are used to address
   memory-mapped peripherals in the io address range.
@@ -730,18 +730,18 @@ AVR Variable Attributes
 
     extern volatile int porta __attribute__((io));
 
-.. gcc-attr:: io_low, io_low (addr)
+.. index:: io_low variable attribute, AVR
 
-  .. index:: io_low variable attribute, AVR
+.. gcc-attr:: io_low, io_low (addr)
 
   This is like the :gcc-attr:`io` attribute, but additionally it informs the
   compiler that the object lies in the lower half of the I/O area,
   allowing the use of ``cbi``, ``sbi``, ``sbic`` and ``sbis``
   instructions.
 
-.. gcc-attr:: address, address (addr)
+.. index:: address variable attribute, AVR
 
-  .. index:: address variable attribute, AVR
+.. gcc-attr:: address, address (addr)
 
   Variables with the :gcc-attr:`address` attribute are used to address
   memory-mapped peripherals that may lie outside the io address range.
@@ -750,9 +750,9 @@ AVR Variable Attributes
 
     volatile int porta __attribute__((address (0x600)));
 
-.. gcc-attr:: absdata
+.. index:: absdata variable attribute, AVR
 
-  .. index:: absdata variable attribute, AVR
+.. gcc-attr:: absdata
 
   Variables in static storage and with the :gcc-attr:`absdata` attribute can
   be accessed by the ``LDS`` and ``STS`` instructions which take
@@ -781,13 +781,13 @@ Blackfin Variable Attributes
 
 Three attributes are currently defined for the Blackfin.
 
+.. index:: l1_data variable attribute, Blackfin
+
+.. index:: l1_data_A variable attribute, Blackfin
+
+.. index:: l1_data_B variable attribute, Blackfin
+
 .. gcc-attr:: l1_data, l1_data_A, l1_data_B
-
-  .. index:: l1_data variable attribute, Blackfin
-
-  .. index:: l1_data_A variable attribute, Blackfin
-
-  .. index:: l1_data_B variable attribute, Blackfin
 
   Use these attributes on the Blackfin to place the variable into L1 Data SRAM.
   Variables with :gcc-attr:`l1_data` attribute are put into the specific section
@@ -795,9 +795,9 @@ Three attributes are currently defined for the Blackfin.
   the specific section named ``.l1.data.A``. Those with ``l1_data_B``
   attribute are put into the specific section named ``.l1.data.B``.
 
-.. gcc-attr:: l2
+.. index:: l2 variable attribute, Blackfin
 
-  .. index:: l2 variable attribute, Blackfin
+.. gcc-attr:: l2
 
   Use this attribute on the Blackfin to place the variable into L2 SRAM.
   Variables with :gcc-attr:`l2` attribute are put into the specific section
@@ -810,11 +810,11 @@ H8/300 Variable Attributes
 
 These variable attributes are available for H8/300 targets:
 
+.. index:: eightbit_data variable attribute, H8/300
+
+.. index:: eight-bit data on the H8/300, H8/300H, and H8S
+
 .. gcc-attr:: eightbit_data
-
-  .. index:: eightbit_data variable attribute, H8/300
-
-  .. index:: eight-bit data on the H8/300, H8/300H, and H8S
 
   Use this attribute on the H8/300, H8/300H, and H8S to indicate that the specified
   variable should be placed into the eight-bit data section.
@@ -825,11 +825,11 @@ These variable attributes are available for H8/300 targets:
   You must use GAS and GLD from GNU binutils version 2.7 or later for
   this attribute to work correctly.
 
+.. index:: tiny_data variable attribute, H8/300
+
+.. index:: tiny data section on the H8/300H and H8S
+
 .. gcc-attr:: tiny_data
-
-  .. index:: tiny_data variable attribute, H8/300
-
-  .. index:: tiny data section on the H8/300H and H8S
 
   Use this attribute on the H8/300H and H8S to indicate that the specified
   variable should be placed into the tiny data section.
@@ -844,9 +844,9 @@ IA-64 Variable Attributes
 
 The IA-64 back end supports the following variable attribute:
 
-.. gcc-attr:: model (model-name)
+.. index:: model variable attribute, IA-64
 
-  .. index:: model variable attribute, IA-64
+.. gcc-attr:: model (model-name)
 
   On IA-64, use this attribute to set the addressability of an object.
   At present, the only supported identifier for :samp:`{model-name}` is
@@ -863,11 +863,11 @@ M32R/D Variable Attributes
 
 One attribute is currently defined for the M32R/D.
 
+.. index:: model-name variable attribute, M32R/D
+
+.. index:: variable addressability on the M32R/D
+
 .. gcc-attr:: model (model-name)
-
-  .. index:: model-name variable attribute, M32R/D
-
-  .. index:: variable addressability on the M32R/D
 
   Use this attribute on the M32R/D to set the addressability of an object.
   The identifier :samp:`{model-name}` is one of ``small``, ``medium``,
@@ -894,33 +894,33 @@ space is a 65536-byte region relative to the ``$gp`` register.  In
 addition to these memory regions, the MeP target has a separate 16-bit
 control bus which is specified with :gcc-attr:`cb` attributes.
 
-.. gcc-attr:: based
+.. index:: based variable attribute, MeP
 
-  .. index:: based variable attribute, MeP
+.. gcc-attr:: based
 
   Any variable with the :gcc-attr:`based` attribute is assigned to the
   ``.based`` section, and is accessed with relative to the
   ``$tp`` register.
 
-.. gcc-attr:: tiny
+.. index:: tiny variable attribute, MeP
 
-  .. index:: tiny variable attribute, MeP
+.. gcc-attr:: tiny
 
   Likewise, the :gcc-attr:`tiny` attribute assigned variables to the
   ``.tiny`` section, relative to the ``$gp`` register.
 
-.. gcc-attr:: near
+.. index:: near variable attribute, MeP
 
-  .. index:: near variable attribute, MeP
+.. gcc-attr:: near
 
   Variables with the :gcc-attr:`near` attribute are assumed to have addresses
   that fit in a 24-bit addressing mode.  This is the default for large
   variables (``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
-.. gcc-attr:: far
+.. index:: far variable attribute, MeP
 
-  .. index:: far variable attribute, MeP
+.. gcc-attr:: far
 
   Variables with the :gcc-attr:`far` attribute are addressed using a full
   32-bit address.  Since this covers the entire memory space, this
@@ -938,9 +938,9 @@ control bus which is specified with :gcc-attr:`cb` attributes.
 
     int timer_count __attribute__((io(0x123)));
 
-.. gcc-attr:: cb, cb (addr)
+.. index:: cb variable attribute, MeP
 
-  .. index:: cb variable attribute, MeP
+.. gcc-attr:: cb, cb (addr)
 
   Variables with the :gcc-attr:`cb` attribute are used to access the control
   bus, using special instructions.  ``addr`` indicates the control bus
@@ -959,18 +959,18 @@ You can use these attributes on Microsoft Windows targets.
 :ref:`x86-variable-attributes` for additional Windows compatibility
 attributes available on all x86 targets.
 
+.. index:: dllimport variable attribute
+
+.. index:: dllexport variable attribute
+
 .. gcc-attr:: dllimport, dllexport
-
-  .. index:: dllimport variable attribute
-
-  .. index:: dllexport variable attribute
 
   The :gcc-attr:`dllimport` and :gcc-attr:`dllexport` attributes are described in
   :ref:`microsoft-windows-function-attributes`.
 
-.. gcc-attr:: selectany
+.. index:: selectany variable attribute
 
-  .. index:: selectany variable attribute
+.. gcc-attr:: selectany
 
   The :gcc-attr:`selectany` attribute causes an initialized global variable to
   have link-once semantics.  When multiple definitions of the variable are
@@ -991,9 +991,9 @@ attributes available on all x86 targets.
   ``__attribute__ ((selectany))`` for compatibility with other
   compilers.
 
-.. gcc-attr:: shared
+.. index:: shared variable attribute
 
-  .. index:: shared variable attribute
+.. gcc-attr:: shared
 
   On Microsoft Windows, in addition to putting variable definitions in a named
   section, the section can also be shared among all running copies of an
@@ -1024,18 +1024,18 @@ attributes available on all x86 targets.
 MSP430 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. index:: upper variable attribute, MSP430
+
+.. index:: either variable attribute, MSP430
+
 .. gcc-attr:: upper, either
-
-  .. index:: upper variable attribute, MSP430
-
-  .. index:: either variable attribute, MSP430
 
   These attributes are the same as the MSP430 function attributes of the
   same name (see :ref:`msp430-function-attributes`).  
 
-.. gcc-attr:: lower
+.. index:: lower variable attribute, MSP430
 
-  .. index:: lower variable attribute, MSP430
+.. gcc-attr:: lower
 
   This option behaves mostly the same as the MSP430 function attribute of the
   same name (see :ref:`msp430-function-attributes`), but it has some additional
@@ -1059,9 +1059,9 @@ Nvidia PTX Variable Attributes
 
 These variable attributes are supported by the Nvidia PTX back end:
 
-.. gcc-attr:: shared
+.. index:: shared attribute, Nvidia PTX
 
-  .. index:: shared attribute, Nvidia PTX
+.. gcc-attr:: shared
 
   Use this attribute to place a variable in the ``.shared`` memory space.
   This memory space is private to each cooperative thread array; only threads
@@ -1090,10 +1090,10 @@ documentation in :ref:`powerpc-type-attributes`.
 
 .. _rl78-variable-attributes:
 
+.. index:: saddr variable attribute, RL78
+
 RL78 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: saddr variable attribute, RL78
 
 The RL78 back end supports the ``saddr`` variable attribute.  This
 specifies placement of the corresponding variable in the SADDR area,
@@ -1106,23 +1106,23 @@ V850 Variable Attributes
 
 These variable attributes are supported by the V850 back end:
 
-.. gcc-attr:: sda
+.. index:: sda variable attribute, V850
 
-  .. index:: sda variable attribute, V850
+.. gcc-attr:: sda
 
   Use this attribute to explicitly place a variable in the small data area,
   which can hold up to 64 kilobytes.
 
-.. gcc-attr:: tda
+.. index:: tda variable attribute, V850
 
-  .. index:: tda variable attribute, V850
+.. gcc-attr:: tda
 
   Use this attribute to explicitly place a variable in the tiny data area,
   which can hold up to 256 bytes in total.
 
-.. gcc-attr:: zda
+.. index:: zda variable attribute, V850
 
-  .. index:: zda variable attribute, V850
+.. gcc-attr:: zda
 
   Use this attribute to explicitly place a variable in the first 32 kilobytes
   of memory.
@@ -1135,11 +1135,11 @@ x86 Variable Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
+.. index:: ms_struct variable attribute, x86
+
+.. index:: gcc_struct variable attribute, x86
+
 .. gcc-attr:: ms_struct, gcc_struct
-
-  .. index:: ms_struct variable attribute, x86
-
-  .. index:: gcc_struct variable attribute, x86
 
   If :gcc-attr:`packed` is used on a structure, or if bit-fields are used,
   it may be that the Microsoft ABI lays out the structure differently
@@ -1163,9 +1163,9 @@ Xstormy16 Variable Attributes
 One attribute is currently defined for xstormy16 configurations:
 :gcc-attr:`below100`.
 
-.. gcc-attr:: below100
+.. index:: below100 variable attribute, Xstormy16
 
-  .. index:: below100 variable attribute, Xstormy16
+.. gcc-attr:: below100
 
   If a variable has the :gcc-attr:`below100` attribute (``BELOW100`` is
   allowed also), GCC places the variable in the first 0x100 bytes of

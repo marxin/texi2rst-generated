@@ -10,9 +10,9 @@ Xstormy16 Function Attributes
 
 These function attributes are supported by the Xstormy16 back end:
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, Xstormy16
 
-  .. index:: interrupt function attribute, Xstormy16
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates

@@ -5,12 +5,12 @@
 
 .. _ipa-passes:
 
-Inter-procedural optimization passes
-************************************
-
 .. index:: IPA passes
 
 .. index:: inter-procedural optimization passes
+
+Inter-procedural optimization passes
+************************************
 
 The inter-procedural optimization (IPA) passes use call graph
 information to perform transformations across function boundaries.
@@ -33,10 +33,10 @@ and late IPA passes, according to the LTO/WHOPR processing model.
 
 .. _small-ipa-passes:
 
+.. index:: small IPA passes
+
 Small IPA passes
 ^^^^^^^^^^^^^^^^
-
-.. index:: small IPA passes
 
 A small IPA pass is a pass derived from ``simple_ipa_opt_pass``.
 As described in :ref:`IPA`, it does everything at once and 
@@ -131,10 +131,10 @@ hooks are defined.
 
 .. _regular-ipa-passes:
 
+.. index:: regular IPA passes
+
 Regular IPA passes
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: regular IPA passes
 
 A regular IPA pass is a pass derived from ``ipa_opt_pass_d`` that
 is executed in WHOPR compilation. Regular IPA passes may have summary
@@ -246,10 +246,10 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
 
 .. _late-ipa-passes:
 
+.. index:: late IPA passes
+
 Late IPA passes
 ^^^^^^^^^^^^^^^
-
-.. index:: late IPA passes
 
 Late IPA passes are simple IPA passes executed after
 the regular passes.  In WHOPR mode the passes are executed after

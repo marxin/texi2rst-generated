@@ -5,9 +5,6 @@
 
 .. _fputc:
 
-FPUTC --- Write a single character in stream mode
-*************************************************
-
 .. index:: FPUTC
 
 .. index:: write character, stream mode
@@ -15,6 +12,9 @@ FPUTC --- Write a single character in stream mode
 .. index:: stream mode, write character
 
 .. index:: file operation, write character
+
+FPUTC --- Write a single character in stream mode
+*************************************************
 
 .. function:: FPUTC(UNIT, C)
 

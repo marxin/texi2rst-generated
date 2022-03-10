@@ -5,12 +5,12 @@
 
 .. _regs-and-memory:
 
-Registers and Memory
-********************
-
 .. index:: RTL register expressions
 
 .. index:: RTL memory expressions
+
+Registers and Memory
+********************
 
 Here are the RTL expression types for describing access to machine
 registers and to main memory.

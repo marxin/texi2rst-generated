@@ -7,12 +7,12 @@
 
   .. _precompiled-headers:
 
-  Using Precompiled Headers
-  *************************
-
   .. index:: precompiled headers
 
   .. index:: speed of compilation
+
+  Using Precompiled Headers
+  *************************
 
   Often large projects have many header files that are included in every
   source file.  The time the compiler takes to process these header files

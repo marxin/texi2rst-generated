@@ -7,10 +7,10 @@
 
 .. _s-390-and-zseries-options:
 
+.. index:: S/390 and zSeries Options
+
 S/390 and zSeries Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: S/390 and zSeries Options
 
 These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
 

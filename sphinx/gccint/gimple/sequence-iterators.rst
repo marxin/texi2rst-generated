@@ -5,10 +5,10 @@
 
 .. _sequence-iterators:
 
+.. index:: Sequence iterators
+
 Sequence iterators
 ******************
-
-.. index:: Sequence iterators
 
 Sequence iterators are convenience constructs for iterating
 through statements in a sequence.  Given a sequence ``SEQ``, here is

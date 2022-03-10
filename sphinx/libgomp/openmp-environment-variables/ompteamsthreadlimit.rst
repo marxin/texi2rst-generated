@@ -5,10 +5,10 @@
 
   .. _omp_teams_thread_limit:
 
+.. index:: Environment Variable
+
 OMP_TEAMS_THREAD_LIMIT -- Set the maximum number of threads imposed by teams
 ****************************************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Specifies an upper bound for the number of threads to use by each contention

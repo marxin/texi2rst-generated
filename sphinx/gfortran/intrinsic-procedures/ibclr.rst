@@ -5,9 +5,6 @@
 
 .. _ibclr:
 
-IBCLR --- Clear bit
-*******************
-
 .. index:: IBCLR
 
 .. index:: BBCLR
@@ -21,6 +18,9 @@ IBCLR --- Clear bit
 .. index:: bits, unset
 
 .. index:: bits, clear
+
+IBCLR --- Clear bit
+*******************
 
 .. function:: IBCLR
 

@@ -32,9 +32,9 @@
 
   See also :ref:`search-path`.
 
-.. envvar:: DEPENDENCIES_OUTPUT
+.. index:: dependencies for make as output
 
-  .. index:: dependencies for make as output
+.. envvar:: DEPENDENCIES_OUTPUT
 
   If this variable is set, its value specifies how to output
   dependencies for Make based on the non-system header files processed
@@ -52,9 +52,9 @@
   (see :ref:`invocation`),
   with an optional :option:`-MT` switch too.
 
-.. envvar:: SUNPRO_DEPENDENCIES
+.. index:: dependencies for make as output
 
-  .. index:: dependencies for make as output
+.. envvar:: SUNPRO_DEPENDENCIES
 
   This variable is the same as :envvar:`DEPENDENCIES_OUTPUT` (see above),
   except that system header files are not ignored, so it implies

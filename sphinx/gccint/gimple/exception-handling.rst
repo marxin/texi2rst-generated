@@ -5,10 +5,10 @@
 
 .. _gimple-exception-handling:
 
+.. index:: GIMPLE Exception Handling
+
 Exception Handling
 ******************
-
-.. index:: GIMPLE Exception Handling
 
 Other exception handling constructs are represented using
 ``GIMPLE_TRY_CATCH``.  ``GIMPLE_TRY_CATCH`` has two operands.  The

@@ -5,12 +5,12 @@
 
 .. _bgt:
 
-BGT --- Bitwise greater than
-****************************
-
 .. index:: BGT
 
 .. index:: bitwise comparison
+
+BGT --- Bitwise greater than
+****************************
 
 .. function:: BGT(I, J)
 

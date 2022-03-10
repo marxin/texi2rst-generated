@@ -7,10 +7,10 @@
 
 .. _m32c-options:
 
+.. index:: M32C options
+
 M32C Options
 ^^^^^^^^^^^^
-
-.. index:: M32C options
 
 .. option:: -mcpu={name}
 

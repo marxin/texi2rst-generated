@@ -5,9 +5,6 @@
 
 .. _not:
 
-NOT --- Logical negation
-************************
-
 .. index:: NOT
 
 .. index:: BNOT
@@ -23,6 +20,9 @@ NOT --- Logical negation
 .. index:: bitwise logical not
 
 .. index:: logical not, bitwise
+
+NOT --- Logical negation
+************************
 
 .. function:: NOT
 

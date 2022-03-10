@@ -5,12 +5,12 @@
 
 .. _kind:
 
-KIND --- Kind of an entity
-**************************
-
 .. index:: KIND
 
 .. index:: kind
+
+KIND --- Kind of an entity
+**************************
 
 .. function:: KIND(X)
 

@@ -5,12 +5,12 @@
 
   .. _rtl-declarations:
 
-Declarations
-************
-
 .. index:: RTL declarations
 
 .. index:: declarations, RTL
+
+Declarations
+************
 
 Declaration expression codes do not represent arithmetic operations
 but rather state assertions about their operands.

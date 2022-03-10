@@ -5,12 +5,12 @@
 
 .. _fstat:
 
-FSTAT --- Get file status
-*************************
-
 .. index:: FSTAT
 
 .. index:: file system, file status
+
+FSTAT --- Get file status
+*************************
 
 .. function:: FSTAT
 

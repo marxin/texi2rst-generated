@@ -5,9 +5,6 @@
 
   .. _incdec:
 
-Embedded Side-Effects on Addresses
-**********************************
-
 .. index:: RTL preincrement
 
 .. index:: RTL postincrement
@@ -15,6 +12,9 @@ Embedded Side-Effects on Addresses
 .. index:: RTL predecrement
 
 .. index:: RTL postdecrement
+
+Embedded Side-Effects on Addresses
+**********************************
 
 Six special side-effect expression codes appear as memory addresses.
 

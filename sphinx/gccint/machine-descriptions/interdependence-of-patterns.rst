@@ -5,12 +5,12 @@
 
 .. _dependent-patterns:
 
-Interdependence of Patterns
-***************************
-
 .. index:: Dependent Patterns
 
 .. index:: Interdependence of Patterns
+
+Interdependence of Patterns
+***************************
 
 In some cases machines support instructions identical except for the
 machine mode of one or more operands.  For example, there may be

@@ -5,12 +5,12 @@
 
 .. _c_f_pointer:
 
-C_F_POINTER --- Convert C into Fortran pointer
-**********************************************
-
 .. index:: C_F_POINTER
 
 .. index:: pointer, convert C to Fortran
+
+C_F_POINTER --- Convert C into Fortran pointer
+**********************************************
 
 .. function:: C_F_POINTER(CPTR, FPTR[, SHAPE])
 

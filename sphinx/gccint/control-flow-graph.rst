@@ -5,12 +5,12 @@
 
 .. _control-flow:
 
-Control Flow Graph
-------------------
-
 .. index:: CFG, Control Flow Graph
 
 .. index:: basic-block.h
+
+Control Flow Graph
+------------------
 
 A control flow graph (CFG) is a data structure built on top of the
 intermediate code representation (the RTL or ``GIMPLE`` instruction

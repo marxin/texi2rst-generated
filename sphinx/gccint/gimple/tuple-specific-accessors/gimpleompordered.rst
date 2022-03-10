@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_ORDERED
+
 GIMPLE_OMP_ORDERED
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_ORDERED
 
 .. function:: gimple gimple_build_omp_ordered (gimple_seq body)
 

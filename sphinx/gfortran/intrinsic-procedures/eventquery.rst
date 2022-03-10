@@ -5,12 +5,12 @@
 
 .. _event_query:
 
-EVENT_QUERY --- Query whether a coarray event has occurred
-**********************************************************
-
 .. index:: EVENT_QUERY
 
 .. index:: Events, EVENT_QUERY
+
+EVENT_QUERY --- Query whether a coarray event has occurred
+**********************************************************
 
 .. function:: EVENT_QUERY
 

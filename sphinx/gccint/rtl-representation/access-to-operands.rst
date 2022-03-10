@@ -5,9 +5,6 @@
 
 .. _accessors:
 
-Access to Operands
-******************
-
 .. index:: accessors
 
 .. index:: access to operands
@@ -21,6 +18,9 @@ Access to Operands
 .. index:: XWINT
 
 .. index:: XSTR
+
+Access to Operands
+******************
 
 Operands of expressions are accessed using the macros ``XEXP``,
 ``XINT``, ``XWINT`` and ``XSTR``.  Each of these macros takes

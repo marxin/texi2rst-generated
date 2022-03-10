@@ -5,14 +5,14 @@
 
 .. _minval:
 
-MINVAL --- Minimum value of an array
-************************************
-
 .. index:: MINVAL
 
 .. index:: array, minimum value
 
 .. index:: minimum value
+
+MINVAL --- Minimum value of an array
+************************************
 
 .. function:: MINVAL(ARRAY , MASK)
 

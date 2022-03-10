@@ -38,10 +38,10 @@
 
 .. _top:
 
+.. index:: Introduction
+
 Introduction
 ============
-
-.. index:: Introduction
 
 This manual documents the use of :command:`gfortran`,
 the GNU Fortran compiler.  You can find in this manual how to invoke
@@ -86,10 +86,10 @@ not accurately reflect the status of the most recent GNU Fortran compiler.
 
 .. _contributing:
 
+.. index:: Contributing
+
 Contributing
 ============
-
-.. index:: Contributing
 
 Free software is only possible if people contribute to efforts
 to create it.

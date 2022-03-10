@@ -5,14 +5,14 @@
 
 .. _half-precision:
 
-Half-Precision Floating Point
-*****************************
-
 .. index:: half-precision floating point
 
 .. index:: __fp16 data type
 
 .. index:: __Float16 data type
+
+Half-Precision Floating Point
+*****************************
 
 On ARM and AArch64 targets, GCC supports half-precision (16-bit) floating
 point via the ``__fp16`` type defined in the ARM C Language Extensions.

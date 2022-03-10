@@ -5,10 +5,10 @@
 
 .. _host-config:
 
+.. index:: host configuration
+
 Host Configuration
 ------------------
-
-.. index:: host configuration
 
 Most details about the machine and system on which the compiler is
 actually running are detected by the :command:`configure` script.  Some

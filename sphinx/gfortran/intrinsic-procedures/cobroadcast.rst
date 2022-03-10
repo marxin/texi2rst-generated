@@ -5,12 +5,12 @@
 
 .. _co_broadcast:
 
-CO_BROADCAST --- Copy a value to all images the current set of images
-*********************************************************************
-
 .. index:: CO_BROADCAST
 
 .. index:: Collectives, value broadcasting
+
+CO_BROADCAST --- Copy a value to all images the current set of images
+*********************************************************************
 
 .. function:: CO_BROADCAST
 

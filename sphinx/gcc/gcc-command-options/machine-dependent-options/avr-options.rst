@@ -7,10 +7,10 @@
 
 .. _avr-options:
 
+.. index:: AVR Options
+
 AVR Options
 ^^^^^^^^^^^
-
-.. index:: AVR Options
 
 These options are defined for AVR implementations:
 
@@ -298,10 +298,10 @@ These options are defined for AVR implementations:
 
   Default setting; overrides :option:`-Wmisspelled-isr`.
 
+.. index:: EIND
+
 EIND and Devices with More Than 128 Ki Bytes of Flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: EIND
 
 Pointers in the implementation are 16 bits wide.
 The address of a function or label is represented as word address so
@@ -427,9 +427,6 @@ the compiler and are subject to some limitations:
   and the application be linked with :option:`-Wl,--defsym,func_4`:samp:`=0x4`.
   Alternatively, ``func_4`` can be defined in the linker script.
 
-Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. index:: RAMPD
 
 .. index:: RAMPX
@@ -437,6 +434,9 @@ Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
 .. index:: RAMPY
 
 .. index:: RAMPZ
+
+Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some AVR devices support memories larger than the 64 KiB range
 that can be accessed with 16-bit pointers.  To access memory locations

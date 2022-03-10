@@ -5,14 +5,14 @@
 
 .. _srand:
 
-SRAND --- Reinitialize the random number generator
-**************************************************
-
 .. index:: SRAND
 
 .. index:: random number generation, seeding
 
 .. index:: seeding a random number generator
+
+SRAND --- Reinitialize the random number generator
+**************************************************
 
 .. function:: SRAND
 

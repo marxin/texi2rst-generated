@@ -5,12 +5,12 @@
 
 .. _signal:
 
-SIGNAL --- Signal handling subroutine (or function)
-***************************************************
-
 .. index:: SIGNAL
 
 .. index:: system, signal handling
+
+SIGNAL --- Signal handling subroutine (or function)
+***************************************************
 
 .. function:: SIGNAL(NUMBER, HANDLER [, STATUS])
 

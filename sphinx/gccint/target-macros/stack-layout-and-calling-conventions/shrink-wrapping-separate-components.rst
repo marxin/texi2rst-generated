@@ -5,10 +5,10 @@
 
 .. _shrink-wrapping-separate-components:
 
+.. index:: shrink-wrapping separate components
+
 Shrink-wrapping separate components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: shrink-wrapping separate components
 
 The prologue may perform a variety of target dependent tasks such as
 saving callee-saved registers, saving the return address, aligning the

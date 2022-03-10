@@ -7,10 +7,10 @@
 
 .. _rl78-options:
 
+.. index:: RL78 Options
+
 RL78 Options
 ^^^^^^^^^^^^
-
-.. index:: RL78 Options
 
 .. option:: -msim
 

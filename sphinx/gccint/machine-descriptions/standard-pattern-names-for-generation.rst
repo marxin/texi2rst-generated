@@ -5,14 +5,14 @@
 
 .. _standard-names:
 
-Standard Pattern Names For Generation
-*************************************
-
 .. index:: standard pattern names
 
 .. index:: pattern names
 
 .. index:: names, pattern
+
+Standard Pattern Names For Generation
+*************************************
 
 Here is a table of the instruction names that are meaningful in the RTL
 generation pass of the compiler.  Giving one of these names to an

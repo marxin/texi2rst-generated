@@ -5,9 +5,6 @@
 
 .. _ior:
 
-IOR --- Bitwise logical or
-**************************
-
 .. index:: IOR
 
 .. index:: BIOR
@@ -21,6 +18,9 @@ IOR --- Bitwise logical or
 .. index:: bitwise logical or
 
 .. index:: logical or, bitwise
+
+IOR --- Bitwise logical or
+**************************
 
 .. function:: IOR
 

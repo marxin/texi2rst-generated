@@ -5,12 +5,12 @@
 
 .. _epsilon:
 
-EPSILON --- Epsilon function
-****************************
-
 .. index:: EPSILON
 
 .. index:: model representation, epsilon
+
+EPSILON --- Epsilon function
+****************************
 
 .. function:: EPSILON(X)
 

@@ -5,20 +5,20 @@
 
 .. _tuple-representation:
 
+.. index:: tuples
+
 Tuple representation
 ********************
-
-.. index:: tuples
 
 GIMPLE instructions are tuples of variable size divided in two
 groups: a header describing the instruction and its locations,
 and a variable length body with all the operands. Tuples are
 organized into a hierarchy with 3 main classes of tuples.
 
+.. index:: gimple
+
 gimple (gsbase)
 ^^^^^^^^^^^^^^^
-
-.. index:: gimple
 
 This is the root of the hierarchy, it holds basic information
 needed by most GIMPLE statements. There are some fields that
@@ -115,10 +115,10 @@ Total size               32 bytes
   Lexical block holding this statement.  Also used for debug
   information generation.
 
+.. index:: gimple_statement_with_ops
+
 gimple_statement_with_ops
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: gimple_statement_with_ops
 
 This tuple is actually split in two:
 ``gimple_statement_with_ops_base`` and

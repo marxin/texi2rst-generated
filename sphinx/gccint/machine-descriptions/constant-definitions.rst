@@ -5,12 +5,12 @@
 
 .. _constant-definitions:
 
-Constant Definitions
-********************
-
 .. index:: constant definitions
 
 .. index:: define_constants
+
+Constant Definitions
+********************
 
 Using literal constants inside instruction patterns reduces legibility and
 can be a maintenance problem.

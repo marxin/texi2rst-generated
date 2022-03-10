@@ -5,10 +5,10 @@
 
 .. _troubleshooting:
 
+.. index:: garbage collector, troubleshooting
+
 Troubleshooting the garbage collector
 *************************************
-
-.. index:: garbage collector, troubleshooting
 
 With the current garbage collector implementation, most issues should
 show up as GCC compilation errors.  Some of the most commonly

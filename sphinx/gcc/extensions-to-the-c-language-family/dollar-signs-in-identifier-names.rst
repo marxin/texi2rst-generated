@@ -5,14 +5,14 @@
 
 .. _dollar-signs:
 
-Dollar Signs in Identifier Names
-********************************
-
 .. index:: $
 
 .. index:: dollar signs in identifier names
 
 .. index:: identifier names, dollar signs in
+
+Dollar Signs in Identifier Names
+********************************
 
 In GNU C, you may normally use dollar signs in identifier names.
 This is because many traditional C implementations allow such identifiers.

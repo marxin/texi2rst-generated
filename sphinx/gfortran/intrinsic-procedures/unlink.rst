@@ -5,12 +5,12 @@
 
 .. _unlink:
 
-UNLINK --- Remove a file from the file system
-*********************************************
-
 .. index:: UNLINK
 
 .. index:: file system, remove file
+
+UNLINK --- Remove a file from the file system
+*********************************************
 
 .. function:: UNLINK(PATH)
 

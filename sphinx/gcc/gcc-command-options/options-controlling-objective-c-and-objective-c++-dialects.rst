@@ -5,14 +5,14 @@
 
 .. _objective-c-and-objective-c++-dialect-options:
 
-Options Controlling Objective-C and Objective-C++ Dialects
-**********************************************************
-
 .. index:: compiler options, Objective-C and Objective-C++
 
 .. index:: Objective-C and Objective-C++ options, command-line
 
 .. index:: options, Objective-C and Objective-C++
+
+Options Controlling Objective-C and Objective-C++ Dialects
+**********************************************************
 
 (NOTE: This manual does not describe the Objective-C and Objective-C++
 languages themselves.  See :ref:`standards`, for references.)

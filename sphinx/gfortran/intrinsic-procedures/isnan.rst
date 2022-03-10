@@ -5,12 +5,12 @@
 
 .. _isnan:
 
-ISNAN --- Test for a NaN
-************************
-
 .. index:: ISNAN
 
 .. index:: IEEE, ISNAN
+
+ISNAN --- Test for a NaN
+************************
 
 .. function:: ISNAN
 

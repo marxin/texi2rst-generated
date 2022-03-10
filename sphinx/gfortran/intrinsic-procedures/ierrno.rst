@@ -5,12 +5,12 @@
 
 .. _ierrno:
 
-IERRNO --- Get the last system error number
-*******************************************
-
 .. index:: IERRNO
 
 .. index:: system, error handling
+
+IERRNO --- Get the last system error number
+*******************************************
 
 .. function:: IERRNO()
 

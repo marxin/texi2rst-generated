@@ -5,14 +5,14 @@
 
 .. _bound-member-functions:
 
-Extracting the Function Pointer from a Bound Pointer to Member Function
-***********************************************************************
-
 .. index:: pmf
 
 .. index:: pointer to member function
 
 .. index:: bound pointer to member function
+
+Extracting the Function Pointer from a Bound Pointer to Member Function
+***********************************************************************
 
 In C++, pointer to member functions (PMFs) are implemented using a wide
 pointer of sorts to handle all the possible call mechanisms; the PMF

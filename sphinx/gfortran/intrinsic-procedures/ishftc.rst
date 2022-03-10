@@ -5,9 +5,6 @@
 
 .. _ishftc:
 
-ISHFTC --- Shift bits circularly
-********************************
-
 .. index:: ISHFTC
 
 .. index:: BSHFTC
@@ -19,6 +16,9 @@ ISHFTC --- Shift bits circularly
 .. index:: KISHFTC
 
 .. index:: bits, shift circular
+
+ISHFTC --- Shift bits circularly
+********************************
 
 .. function:: ISHFTC
 

@@ -7,10 +7,10 @@
 
 .. _vxworks-options:
 
+.. index:: VxWorks Options
+
 VxWorks Options
 ^^^^^^^^^^^^^^^
-
-.. index:: VxWorks Options
 
 The options in this section are defined for all VxWorks targets.
 Options specific to the target hardware are listed with the other

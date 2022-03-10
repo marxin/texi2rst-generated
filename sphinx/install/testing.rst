@@ -5,14 +5,14 @@
 
 .. _testing:
 
-Testing
--------
-
 .. index:: Testing
 
 .. index:: Testing
 
 .. index:: Testsuite
+
+Testing
+-------
 
 Before you install GCC, we encourage you to run the testsuites and to
 compare your results with results from a similar configuration that have

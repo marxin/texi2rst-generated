@@ -5,10 +5,10 @@
 
 .. _liveness-information:
 
+.. index:: Liveness representation
+
 Liveness information
 ********************
-
-.. index:: Liveness representation
 
 Liveness information is useful to determine whether some register is
 'live' at given point of program, i.e. that it contains a value that

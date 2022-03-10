@@ -7,10 +7,10 @@
 
 .. _m680x0-options:
 
+.. index:: M680x0 options
+
 M680x0 Options
 ^^^^^^^^^^^^^^
-
-.. index:: M680x0 options
 
 These are the :samp:`-m` options defined for M680x0 and ColdFire processors.
 The default settings depend on which architecture was selected when

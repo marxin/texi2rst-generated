@@ -5,10 +5,10 @@
 
 .. _intrinsic-modules:
 
+.. index:: intrinsic Modules
+
 Intrinsic Modules
 -----------------
-
-.. index:: intrinsic Modules
 
 .. toctree::
   :maxdepth: 2

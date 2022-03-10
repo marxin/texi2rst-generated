@@ -5,14 +5,14 @@
 
 .. _iall:
 
-IALL --- Bitwise AND of array elements
-**************************************
-
 .. index:: IALL
 
 .. index:: array, AND
 
 .. index:: bits, AND of array elements
+
+IALL --- Bitwise AND of array elements
+**************************************
 
 .. function:: IALL(ARRAY, DIM, MASK)
 

@@ -5,14 +5,14 @@
 
 .. _system_clock:
 
-SYSTEM_CLOCK --- Time function
-******************************
-
 .. index:: SYSTEM_CLOCK
 
 .. index:: time, clock ticks
 
 .. index:: clock ticks
+
+SYSTEM_CLOCK --- Time function
+******************************
 
 .. function:: SYSTEM_CLOCK(COUNT, COUNT_RATE, COUNT_MAX)
 

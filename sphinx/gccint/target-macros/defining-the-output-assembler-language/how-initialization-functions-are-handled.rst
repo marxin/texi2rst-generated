@@ -5,9 +5,6 @@
 
 .. _initialization:
 
-How Initialization Functions Are Handled
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: initialization routines
 
 .. index:: termination routines
@@ -15,6 +12,9 @@ How Initialization Functions Are Handled
 .. index:: constructors, output of
 
 .. index:: destructors, output of
+
+How Initialization Functions Are Handled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The compiled code for certain languages includes :dfn:`constructors`
 (also called :dfn:`initialization routines`)---functions to initialize

@@ -5,9 +5,6 @@
 
 .. _tand:
 
-TAND --- Tangent function, degrees
-**********************************
-
 .. index:: TAND
 
 .. index:: DTAND
@@ -15,6 +12,9 @@ TAND --- Tangent function, degrees
 .. index:: trigonometric function, tangent, degrees
 
 .. index:: tangent, degrees
+
+TAND --- Tangent function, degrees
+**********************************
 
 .. function:: TAND(X)
 

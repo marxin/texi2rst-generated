@@ -7,10 +7,10 @@
 
 .. _solaris-2-options:
 
+.. index:: Solaris 2 options
+
 Solaris 2 Options
 ^^^^^^^^^^^^^^^^^
-
-.. index:: Solaris 2 options
 
 These :samp:`-m` options are supported on Solaris 2:
 

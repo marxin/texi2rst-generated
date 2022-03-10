@@ -5,12 +5,12 @@
 
 .. _erfc:
 
-ERFC --- Error function 
-************************
-
 .. index:: ERFC
 
 .. index:: error function, complementary
+
+ERFC --- Error function 
+************************
 
 .. function:: ERFC(X)
 

@@ -5,12 +5,12 @@
 
 .. _maskl:
 
-MASKL --- Left justified mask
-*****************************
-
 .. index:: MASKL
 
 .. index:: mask, left justified
+
+MASKL --- Left justified mask
+*****************************
 
 .. function:: MASKL(I[, KIND])
 

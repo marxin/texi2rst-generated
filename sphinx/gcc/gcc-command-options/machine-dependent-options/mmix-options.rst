@@ -7,10 +7,10 @@
 
 .. _mmix-options:
 
+.. index:: MMIX Options
+
 MMIX Options
 ^^^^^^^^^^^^
-
-.. index:: MMIX Options
 
 These options are defined for the MMIX:
 

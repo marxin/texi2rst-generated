@@ -7,10 +7,10 @@
 
 .. _fr30-options:
 
+.. index:: FR30 Options
+
 FR30 Options
 ^^^^^^^^^^^^
-
-.. index:: FR30 Options
 
 These options are defined specifically for the FR30 port.
 

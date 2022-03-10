@@ -5,12 +5,12 @@
 
 .. _minexponent:
 
-MINEXPONENT --- Minimum exponent of a real kind
-***********************************************
-
 .. index:: MINEXPONENT
 
 .. index:: model representation, minimum exponent
+
+MINEXPONENT --- Minimum exponent of a real kind
+***********************************************
 
 .. function:: MINEXPONENT(X)
 

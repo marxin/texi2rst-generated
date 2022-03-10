@@ -19,10 +19,10 @@
 
 .. _top:
 
+.. index:: introduction
+
 Introduction
 ============
-
-.. index:: introduction
 
 This manual documents the internals of the GNU compilers, including
 how to port them to new targets and some information about how to

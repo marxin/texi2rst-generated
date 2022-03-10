@@ -5,12 +5,12 @@
 
 .. _gerror:
 
-GERROR --- Get last system error message
-****************************************
-
 .. index:: GERROR
 
 .. index:: system, error handling
+
+GERROR --- Get last system error message
+****************************************
 
 .. function:: GERROR(RESULT)
 

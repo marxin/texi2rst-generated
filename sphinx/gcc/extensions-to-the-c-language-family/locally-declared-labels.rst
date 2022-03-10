@@ -5,12 +5,12 @@
 
 .. _local-labels:
 
-Locally Declared Labels
-***********************
-
 .. index:: local labels
 
 .. index:: macros, local labels
+
+Locally Declared Labels
+***********************
 
 GCC allows you to declare :dfn:`local labels` in any nested block
 scope.  A local label is just like an ordinary label, but you can

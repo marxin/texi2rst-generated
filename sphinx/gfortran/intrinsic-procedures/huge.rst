@@ -5,14 +5,14 @@
 
 .. _huge:
 
-HUGE --- Largest number of a kind
-*********************************
-
 .. index:: HUGE
 
 .. index:: limits, largest number
 
 .. index:: model representation, largest number
+
+HUGE --- Largest number of a kind
+*********************************
 
 .. function:: HUGE(X)
 

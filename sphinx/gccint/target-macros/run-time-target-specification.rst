@@ -5,14 +5,14 @@
 
 .. _run-time-target:
 
-Run-time Target Specification
-*****************************
-
 .. index:: run-time target specification
 
 .. index:: predefined macros
 
 .. index:: target specifications
+
+Run-time Target Specification
+*****************************
 
 .. prevent bad page break with this line
 

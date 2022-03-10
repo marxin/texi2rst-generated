@@ -5,10 +5,10 @@
 
 .. _match-and-simplify:
 
+.. index:: Match and Simplify
+
 Match and Simplify
 ------------------
-
-.. index:: Match and Simplify
 
 The GIMPLE and GENERIC pattern matching project match-and-simplify
 tries to address several issues.

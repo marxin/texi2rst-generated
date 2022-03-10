@@ -5,10 +5,10 @@
 
   .. _code-generation:
 
+.. index:: options, code generation
+
 Code Generation
 ***************
-
-.. index:: options, code generation
 
 In addition to the many :command:`gcc` options controlling code generation,
 :command:`gdc` has several options specific to itself.

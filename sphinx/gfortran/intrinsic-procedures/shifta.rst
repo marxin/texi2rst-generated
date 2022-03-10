@@ -5,14 +5,14 @@
 
 .. _shifta:
 
-SHIFTA --- Right shift with fill
-********************************
-
 .. index:: SHIFTA
 
 .. index:: bits, shift right
 
 .. index:: shift, right with fill
+
+SHIFTA --- Right shift with fill
+********************************
 
 .. function:: SHIFTA
 

@@ -5,9 +5,6 @@
 
 .. _object-size-checking:
 
-Object Size Checking Built-in Functions
-***************************************
-
 .. index:: __builtin_object_size
 
 .. index:: __builtin_dynamic_object_size
@@ -45,6 +42,9 @@ Object Size Checking Built-in Functions
 .. index:: __builtin___fprintf_chk
 
 .. index:: __builtin___vfprintf_chk
+
+Object Size Checking Built-in Functions
+***************************************
 
 GCC implements a limited buffer overflow protection mechanism that can
 prevent some buffer overflow attacks by determining the sizes of objects

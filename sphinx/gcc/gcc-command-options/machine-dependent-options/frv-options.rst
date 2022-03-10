@@ -7,10 +7,10 @@
 
 .. _frv-options:
 
+.. index:: FRV Options
+
 FRV Options
 ^^^^^^^^^^^
-
-.. index:: FRV Options
 
 .. option:: -mgpr-32
 

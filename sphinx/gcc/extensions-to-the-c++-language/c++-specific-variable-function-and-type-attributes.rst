@@ -10,13 +10,13 @@ C++-Specific Variable, Function, and Type Attributes
 
 Some attributes only make sense for C++ programs.
 
+.. index:: abi_tag function attribute
+
+.. index:: abi_tag variable attribute
+
+.. index:: abi_tag type attribute
+
 .. gcc-attr:: abi_tag ("tag", ...)
-
-  .. index:: abi_tag function attribute
-
-  .. index:: abi_tag variable attribute
-
-  .. index:: abi_tag type attribute
 
   The ``abi_tag`` attribute can be applied to a function, variable, or class
   declaration.  It modifies the mangled name of the entity to
@@ -56,9 +56,9 @@ Some attributes only make sense for C++ programs.
   situation; this warning can be avoided by explicitly tagging the
   variable or function or moving it into a tagged inline namespace.
 
-.. gcc-attr:: init_priority (priority)
+.. index:: init_priority variable attribute
 
-  .. index:: init_priority variable attribute
+.. gcc-attr:: init_priority (priority)
 
   In Standard C++, objects defined at namespace scope are guaranteed to be
   initialized in an order in strict accordance with that of their definitions
@@ -80,9 +80,9 @@ Some attributes only make sense for C++ programs.
   Note that the particular values of :samp:`{priority}` do not matter; only their
   relative ordering.
 
-.. gcc-attr:: warn_unused
+.. index:: warn_unused type attribute
 
-  .. index:: warn_unused type attribute
+.. gcc-attr:: warn_unused
 
   For C++ types with non-trivial constructors and/or destructors it is
   impossible for the compiler to determine whether a variable of this

@@ -5,12 +5,12 @@
 
 .. _target-structure:
 
-The Global targetm Variable
-***************************
-
 .. index:: target hooks
 
 .. index:: target functions
+
+The Global targetm Variable
+***************************
 
 .. index:: targetm
 

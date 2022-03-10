@@ -5,14 +5,14 @@
 
 .. _cmplx:
 
-CMPLX --- Complex conversion function
-*************************************
-
 .. index:: CMPLX
 
 .. index:: complex numbers, conversion to
 
 .. index:: conversion, to complex
+
+CMPLX --- Complex conversion function
+*************************************
 
 .. function:: CMPLX(X [, Y [, KIND]])
 

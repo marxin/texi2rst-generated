@@ -5,12 +5,12 @@
 
   .. _omp_target_offload:
 
-OMP_TARGET_OFFLOAD -- Controls offloading behaviour
-***************************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+OMP_TARGET_OFFLOAD -- Controls offloading behaviour
+***************************************************
 
 :samp:`{Description}:`
   Specifies the behaviour with regard to offloading code to a device.  This

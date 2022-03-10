@@ -5,12 +5,12 @@
 
 .. _pic:
 
-Position Independent Code
-*************************
-
 .. index:: position independent code
 
 .. index:: PIC
+
+Position Independent Code
+*************************
 
 This section describes macros that help implement generation of position
 independent code.  Simply defining these macros is not enough to

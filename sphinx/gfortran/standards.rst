@@ -5,10 +5,10 @@
 
 .. _standards:
 
+.. index:: Standards
+
 Standards
 *********
-
-.. index:: Standards
 
 .. toctree::
   :maxdepth: 2
@@ -49,14 +49,14 @@ https://gcc.gnu.org/wiki/OpenACC for more information.
 
 .. _fortran-95-status:
 
-Fortran 95 status
-^^^^^^^^^^^^^^^^^
-
 .. index:: Varying length strings
 
 .. index:: strings, varying length
 
 .. index:: conditional compilation
+
+Fortran 95 status
+^^^^^^^^^^^^^^^^^
 
 The Fortran 95 standard specifies in Part 2 (ISO/IEC 1539-2:2000)
 varying length character strings.  While GNU Fortran currently does not

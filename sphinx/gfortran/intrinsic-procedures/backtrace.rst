@@ -5,12 +5,12 @@
 
 .. _backtrace:
 
-BACKTRACE --- Show a backtrace
-******************************
-
 .. index:: BACKTRACE
 
 .. index:: backtrace
+
+BACKTRACE --- Show a backtrace
+******************************
 
 .. function:: BACKTRACE
 

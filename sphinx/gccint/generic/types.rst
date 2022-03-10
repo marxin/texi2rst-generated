@@ -5,9 +5,6 @@
 
 .. _types:
 
-Types
-*****
-
 .. index:: type
 
 .. index:: pointer
@@ -17,6 +14,9 @@ Types
 .. index:: fundamental type
 
 .. index:: array
+
+Types
+*****
 
 .. index:: VOID_TYPE
 

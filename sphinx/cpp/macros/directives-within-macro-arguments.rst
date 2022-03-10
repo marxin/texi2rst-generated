@@ -5,10 +5,10 @@
 
 .. _directives-within-macro-arguments:
 
+.. index:: macro arguments and directives
+
 Directives Within Macro Arguments
 *********************************
-
-.. index:: macro arguments and directives
 
 Occasionally it is convenient to use preprocessor directives within
 the arguments of a macro.  The C and C++ standards declare that

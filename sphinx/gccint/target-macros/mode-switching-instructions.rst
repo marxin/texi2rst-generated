@@ -5,10 +5,10 @@
 
 .. _mode-switching:
 
+.. index:: mode switching
+
 Mode Switching Instructions
 ***************************
-
-.. index:: mode switching
 
 The following macros control mode switching optimizations:
 

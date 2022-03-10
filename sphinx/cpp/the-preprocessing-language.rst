@@ -5,9 +5,6 @@
 
 .. _the-preprocessing-language:
 
-The preprocessing language
-**************************
-
 .. index:: directives
 
 .. index:: preprocessing directives
@@ -15,6 +12,9 @@ The preprocessing language
 .. index:: directive line
 
 .. index:: directive name
+
+The preprocessing language
+**************************
 
 After tokenization, the stream of tokens may simply be passed straight
 to the compiler's parser.  However, if it contains any operations in the

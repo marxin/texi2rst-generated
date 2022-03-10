@@ -5,12 +5,12 @@
 
 .. _c_loc:
 
-C_LOC --- Obtain the C address of an object
-*******************************************
-
 .. index:: C_LOC
 
 .. index:: procedure pointer, convert C to Fortran
+
+C_LOC --- Obtain the C address of an object
+*******************************************
 
 .. function:: C_LOC(X)
 

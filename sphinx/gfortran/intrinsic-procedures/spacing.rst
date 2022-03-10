@@ -5,14 +5,14 @@
 
 .. _spacing:
 
-SPACING --- Smallest distance between two numbers of a given type
-*****************************************************************
-
 .. index:: SPACING
 
 .. index:: real number, relative spacing
 
 .. index:: floating point, relative spacing
+
+SPACING --- Smallest distance between two numbers of a given type
+*****************************************************************
 
 .. function:: SPACING(X)
 

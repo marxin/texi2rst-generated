@@ -5,10 +5,10 @@
 
 .. _tail-calls:
 
+.. index:: tail calls
+
 Permitting tail calls
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: tail calls
 
 .. function:: bool TARGET_FUNCTION_OK_FOR_SIBCALL (tree decl, tree exp)
 

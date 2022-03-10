@@ -5,9 +5,6 @@
 
 .. _cotand:
 
-COTAND --- Cotangent function, degrees
-**************************************
-
 .. index:: COTAND
 
 .. index:: DCOTAND
@@ -15,6 +12,9 @@ COTAND --- Cotangent function, degrees
 .. index:: trigonometric function, cotangent, degrees
 
 .. index:: cotangent, degrees
+
+COTAND --- Cotangent function, degrees
+**************************************
 
 .. function:: COTAND(X)
 

@@ -5,9 +5,6 @@
 
 .. _acosd:
 
-ACOSD --- Arccosine function, degrees
-*************************************
-
 .. index:: ACOSD
 
 .. index:: DACOSD
@@ -15,6 +12,9 @@ ACOSD --- Arccosine function, degrees
 .. index:: trigonometric function, cosine, inverse, degrees
 
 .. index:: cosine, inverse, degrees
+
+ACOSD --- Arccosine function, degrees
+*************************************
 
 .. function:: ACOSD(X)
 

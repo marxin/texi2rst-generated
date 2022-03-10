@@ -5,10 +5,10 @@
 
 .. _lexing-a-line:
 
+.. index:: token run
+
 Lexing a line
 *************
-
-.. index:: token run
 
 When the preprocessor was changed to return pointers to tokens, one
 feature I wanted was some sort of guarantee regarding how long a

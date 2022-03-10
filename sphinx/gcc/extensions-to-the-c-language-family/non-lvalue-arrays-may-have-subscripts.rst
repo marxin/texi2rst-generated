@@ -5,14 +5,14 @@
 
 .. _subscripting:
 
-Non-Lvalue Arrays May Have Subscripts
-*************************************
-
 .. index:: subscripting
 
 .. index:: arrays, non-lvalue
 
 .. index:: subscripting and function values
+
+Non-Lvalue Arrays May Have Subscripts
+*************************************
 
 In ISO C99, arrays that are not lvalues still decay to pointers, and
 may be subscripted, although they may not be modified or used after

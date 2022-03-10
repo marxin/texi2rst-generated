@@ -5,10 +5,10 @@
 
   .. _omp_proc_bind:
 
+.. index:: Environment Variable
+
 OMP_PROC_BIND -- Whether theads may be moved between CPUs
 *********************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Specifies whether threads may be moved between processors.  If set to

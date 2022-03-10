@@ -5,12 +5,12 @@
 
 .. _register-classes:
 
-Register Classes
-****************
-
 .. index:: register class definitions
 
 .. index:: class definitions, register
+
+Register Classes
+****************
 
 On many machines, the numbered registers are not all equivalent.
 For example, certain registers may not be allowed for indexed addressing;

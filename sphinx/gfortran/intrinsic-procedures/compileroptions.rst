@@ -5,9 +5,6 @@
 
 .. _compiler_options:
 
-COMPILER_OPTIONS --- Options passed to the compiler
-***************************************************
-
 .. index:: COMPILER_OPTIONS
 
 .. index:: flags inquiry function
@@ -15,6 +12,9 @@ COMPILER_OPTIONS --- Options passed to the compiler
 .. index:: options inquiry function
 
 .. index:: compiler flags inquiry function
+
+COMPILER_OPTIONS --- Options passed to the compiler
+***************************************************
 
 .. function:: COMPILER_OPTIONS
 

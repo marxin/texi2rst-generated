@@ -5,12 +5,12 @@
 
 .. _cast-to-union:
 
-Cast to a Union Type
-********************
-
 .. index:: cast to a union
 
 .. index:: union, casting to a
+
+Cast to a Union Type
+********************
 
 A cast to a union type is a C extension not available in C++.  It looks
 just like ordinary casts with the constraint that the type specified is

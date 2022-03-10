@@ -5,12 +5,12 @@
 
   .. _unnamed-fields:
 
-Unnamed Structure and Union Fields
-**********************************
-
 .. index:: struct
 
 .. index:: union
+
+Unnamed Structure and Union Fields
+**********************************
 
 As permitted by ISO C11 and for compatibility with other compilers,
 GCC allows you to define

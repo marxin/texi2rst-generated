@@ -5,12 +5,12 @@
 
 .. _random_number:
 
-RANDOM_NUMBER --- Pseudo-random number
-**************************************
-
 .. index:: RANDOM_NUMBER
 
 .. index:: random number generation
+
+RANDOM_NUMBER --- Pseudo-random number
+**************************************
 
 .. function:: RANDOM_NUMBER(HARVEST)
 

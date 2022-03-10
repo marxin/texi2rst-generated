@@ -5,9 +5,6 @@
 
 .. _fget:
 
-FGET --- Read a single character in stream mode from stdin 
-***********************************************************
-
 .. index:: FGET
 
 .. index:: read character, stream mode
@@ -15,6 +12,9 @@ FGET --- Read a single character in stream mode from stdin
 .. index:: stream mode, read character
 
 .. index:: file operation, read character
+
+FGET --- Read a single character in stream mode from stdin 
+***********************************************************
 
 .. function:: FGET(C)
 

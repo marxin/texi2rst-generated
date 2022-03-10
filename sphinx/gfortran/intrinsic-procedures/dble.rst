@@ -5,12 +5,12 @@
 
 .. _dble:
 
-DBLE --- Double conversion function
-***********************************
-
 .. index:: DBLE
 
 .. index:: conversion, to real
+
+DBLE --- Double conversion function
+***********************************
 
 .. function:: DBLE(A)
 

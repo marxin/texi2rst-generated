@@ -5,14 +5,14 @@
 
 .. _warnings-and-errors:
 
-Warning Messages and Error Messages
-***********************************
-
 .. index:: error messages
 
 .. index:: warnings vs errors
 
 .. index:: messages, warning and error
+
+Warning Messages and Error Messages
+***********************************
 
 The GNU compiler can produce two kinds of diagnostics: errors and
 warnings.  Each kind has a different purpose:

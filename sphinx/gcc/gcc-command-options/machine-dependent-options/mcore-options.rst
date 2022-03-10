@@ -7,10 +7,10 @@
 
 .. _mcore-options:
 
+.. index:: MCore options
+
 MCore Options
 ^^^^^^^^^^^^^
-
-.. index:: MCore options
 
 These are the :samp:`-m` options defined for the Motorola M\*Core
 processors.

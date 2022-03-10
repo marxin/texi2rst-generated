@@ -5,12 +5,12 @@
 
 .. _stat:
 
-STAT --- Get file status
-************************
-
 .. index:: STAT
 
 .. index:: file system, file status
+
+STAT --- Get file status
+************************
 
 .. function:: STAT(NAME, VALUES)
 

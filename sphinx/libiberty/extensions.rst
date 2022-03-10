@@ -5,12 +5,12 @@
 
 .. _extensions:
 
-Extensions
-**********
-
 .. index:: extensions
 
 .. index:: functions, extension
+
+Extensions
+**********
 
 ``libiberty`` includes additional functionality above and beyond standard
 functions, which has proven generically useful in GNU programs, such as
@@ -27,10 +27,10 @@ central location from which to use, maintain, and distribute them.
 
 .. _obstacks:
 
+.. index:: obstacks
+
 Obstacks
 ^^^^^^^^
-
-.. index:: obstacks
 
 An :dfn:`obstack` is a pool of memory containing a stack of objects.  You
 can create any number of separate obstacks, and then allocate objects in
@@ -204,10 +204,10 @@ You should supply a function that either calls ``exit``
 
 .. _allocation-in-an-obstack:
 
+.. index:: allocation (obstacks)
+
 Allocation in an Obstack
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: allocation (obstacks)
 
 The most direct way to allocate an object in an obstack is with
 ``obstack_alloc``, which is invoked almost like ``malloc``.
@@ -272,10 +272,10 @@ Contrast this with the previous example of ``savestring`` using
 
 .. _freeing-obstack-objects:
 
+.. index:: freeing (obstacks)
+
 Freeing Objects in an Obstack
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: freeing (obstacks)
 
 To free an object allocated in an obstack, use the macro
 ``obstack_free``.  Since the obstack is a stack of objects, freeing
@@ -305,10 +305,10 @@ obstacks, or non-obstack allocation, can reuse the space of the chunk.
 
 .. _obstack-functions:
 
+.. index:: macros
+
 Obstack Functions and Macros
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: macros
 
 The interfaces for using obstacks are shown here as functions to
 specify the return type and argument types, but they are really
@@ -344,12 +344,12 @@ even when not using GNU C.
 
 .. _growing-objects:
 
-Growing Objects
-~~~~~~~~~~~~~~~
-
 .. index:: growing objects (in obstacks)
 
 .. index:: changing the size of a block (obstacks)
+
+Growing Objects
+~~~~~~~~~~~~~~~
 
 Because memory in obstack chunks is used sequentially, it is possible to
 build up an object step by step, adding one or more bytes at a time to the
@@ -436,10 +436,10 @@ This has no effect if no object was growing.
 
 .. _extra-fast-growing:
 
+.. index:: efficiency and obstacks
+
 Extra Fast Growing Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: efficiency and obstacks
 
 The usual macros for growing objects incur overhead for checking
 whether there is room for the new growth in the current chunk.  If you
@@ -538,12 +538,12 @@ that.  Earlier versions of obstacks allowed you to use
 
 .. _status-of-an-obstack:
 
-Status of an Obstack
-~~~~~~~~~~~~~~~~~~~~
-
 .. index:: obstack status
 
 .. index:: status of obstack
+
+Status of an Obstack
+~~~~~~~~~~~~~~~~~~~~
 
 Here are macros that provide information on the current status of
 allocation in an obstack.  You can use them to learn about an object while
@@ -578,10 +578,10 @@ still growing it.
 
 .. _obstacks-data-alignment:
 
+.. index:: alignment (in obstacks)
+
 Alignment of Data in Obstacks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: alignment (in obstacks)
 
 Each obstack has an :dfn:`alignment boundary`; each object allocated in
 the obstack automatically starts on an address that is a multiple of the
@@ -620,12 +620,12 @@ the next object.
 
 .. _obstack-chunks:
 
-Obstack Chunks
-~~~~~~~~~~~~~~
-
 .. index:: efficiency of chunks
 
 .. index:: chunks
+
+Obstack Chunks
+~~~~~~~~~~~~~~
 
 Obstacks work by allocating space for themselves in large chunks, and
 then parceling out space in the chunks to satisfy your requests.  Chunks

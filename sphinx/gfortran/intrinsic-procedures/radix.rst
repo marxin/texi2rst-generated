@@ -5,14 +5,14 @@
 
 .. _radix:
 
-RADIX --- Base of a model number
-********************************
-
 .. index:: RADIX
 
 .. index:: model representation, base
 
 .. index:: model representation, radix
+
+RADIX --- Base of a model number
+********************************
 
 .. function:: RADIX(X)
 

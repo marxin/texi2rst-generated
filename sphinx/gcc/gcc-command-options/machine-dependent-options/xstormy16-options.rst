@@ -7,10 +7,10 @@
 
 .. _xstormy16-options:
 
+.. index:: Xstormy16 Options
+
 Xstormy16 Options
 ^^^^^^^^^^^^^^^^^
-
-.. index:: Xstormy16 Options
 
 These options are defined for Xstormy16:
 

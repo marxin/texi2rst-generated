@@ -5,10 +5,10 @@
 
 .. _named-address-spaces:
 
+.. index:: named address spaces
+
 Adding support for named address spaces
 ***************************************
-
-.. index:: named address spaces
 
 The draft technical report of the ISO/IEC JTC1 S22 WG14 N1275
 standards committee, Programming Languages - C - Extensions to

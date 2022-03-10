@@ -5,12 +5,12 @@
 
 .. _bge:
 
-BGE --- Bitwise greater than or equal to
-****************************************
-
 .. index:: BGE
 
 .. index:: bitwise comparison
+
+BGE --- Bitwise greater than or equal to
+****************************************
 
 .. function:: BGE(I, J)
 

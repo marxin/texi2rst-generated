@@ -5,12 +5,12 @@
 
     .. _linking:
 
-Options for Linking
-*******************
-
 .. index:: options, linking
 
 .. index:: linking, static
+
+Options for Linking
+*******************
 
 These options come into play when the compiler links object files into an
 executable output file.  They are meaningless if the compiler is not doing

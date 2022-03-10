@@ -5,12 +5,12 @@
 
 .. _computed-includes:
 
-Computed Includes
-*****************
-
 .. index:: computed includes
 
 .. index:: macros in include
+
+Computed Includes
+*****************
 
 Sometimes it is necessary to select one of several different header
 files to be included into your program.  They might specify

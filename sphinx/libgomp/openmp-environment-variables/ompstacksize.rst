@@ -5,10 +5,10 @@
 
   .. _omp_stacksize:
 
+.. index:: Environment Variable
+
 OMP_STACKSIZE -- Set default thread stack size
 **********************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Set the default thread stack size in kilobytes, unless the number

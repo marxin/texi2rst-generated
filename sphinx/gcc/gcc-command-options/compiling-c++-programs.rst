@@ -5,12 +5,12 @@
 
   .. _invoking-g++:
 
-Compiling C++ Programs
-**********************
-
 .. index:: suffixes for C++ source
 
 .. index:: C++ source file suffixes
+
+Compiling C++ Programs
+**********************
 
 C++ source files conventionally use one of the suffixes :samp:`.C`,
 :samp:`.cc`, :samp:`.cpp`, :samp:`.CPP`, :samp:`.c++`, :samp:`.cp`, or

@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_WITH_CLEANUP_EXPR
+
 GIMPLE_WITH_CLEANUP_EXPR
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_WITH_CLEANUP_EXPR
 
 .. function:: gimple gimple_build_wce (gimple_seq cleanup)
 

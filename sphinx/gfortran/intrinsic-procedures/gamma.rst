@@ -5,9 +5,6 @@
 
 .. _gamma:
 
-GAMMA --- Gamma function
-************************
-
 .. index:: GAMMA
 
 .. index:: DGAMMA
@@ -15,6 +12,9 @@ GAMMA --- Gamma function
 .. index:: Gamma function
 
 .. index:: Factorial function
+
+GAMMA --- Gamma function
+************************
 
 .. function:: GAMMA(X)
 

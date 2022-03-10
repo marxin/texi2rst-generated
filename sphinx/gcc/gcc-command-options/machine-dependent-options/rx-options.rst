@@ -7,10 +7,10 @@
 
 .. _rx-options:
 
+.. index:: RX Options
+
 RX Options
 ^^^^^^^^^^
-
-.. index:: RX Options
 
 These command-line options are defined for RX targets:
 

@@ -10,9 +10,9 @@ MSP430 Function Attributes
 
 These function attributes are supported by the MSP430 back end:
 
-.. gcc-attr:: critical
+.. index:: critical function attribute, MSP430
 
-  .. index:: critical function attribute, MSP430
+.. gcc-attr:: critical
 
   Critical functions disable interrupts upon entry and restore the
   previous interrupt state upon exit.  Critical functions cannot also
@@ -23,9 +23,9 @@ These function attributes are supported by the MSP430 back end:
   on exit. The :gcc-attr:`critical` attribute is therefore redundant on
   :gcc-attr:`interrupt` functions.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, MSP430
 
-  .. index:: interrupt function attribute, MSP430
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -41,9 +41,9 @@ These function attributes are supported by the MSP430 back end:
   the names ``watchdog`` for vector 26, ``nmi`` for vector 30 and
   :gcc-attr:`reset` for vector 31 are recognized.
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, MSP430
 
-  .. index:: naked function attribute, MSP430
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -54,31 +54,31 @@ These function attributes are supported by the MSP430 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. gcc-attr:: reentrant
+.. index:: reentrant function attribute, MSP430
 
-  .. index:: reentrant function attribute, MSP430
+.. gcc-attr:: reentrant
 
   Reentrant functions disable interrupts upon entry and enable them
   upon exit.  Reentrant functions cannot also have the :gcc-attr:`naked`
   or :gcc-attr:`critical` attributes.  They can have the :gcc-attr:`interrupt`
   attribute.
 
-.. gcc-attr:: wakeup
+.. index:: wakeup function attribute, MSP430
 
-  .. index:: wakeup function attribute, MSP430
+.. gcc-attr:: wakeup
 
   This attribute only applies to interrupt functions.  It is silently
   ignored if applied to a non-interrupt function.  A wakeup interrupt
   function will rouse the processor from any low-power state that it
   might be in when the function exits.
 
+.. index:: lower function attribute, MSP430
+
+.. index:: upper function attribute, MSP430
+
+.. index:: either function attribute, MSP430
+
 .. gcc-attr:: lower, upper, either
-
-  .. index:: lower function attribute, MSP430
-
-  .. index:: upper function attribute, MSP430
-
-  .. index:: either function attribute, MSP430
 
   On the MSP430 target these attributes can be used to specify whether
   the function or variable should be placed into low memory, high

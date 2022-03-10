@@ -5,14 +5,14 @@
 
 .. _popcnt:
 
-POPCNT --- Number of bits set
-*****************************
-
 .. index:: POPCNT
 
 .. index:: binary representation
 
 .. index:: bits set
+
+POPCNT --- Number of bits set
+*****************************
 
 .. function:: POPCNT(I)
 

@@ -5,14 +5,14 @@
 
 .. _declarations:
 
-Declarations
-************
-
 .. index:: declaration
 
 .. index:: variable
 
 .. index:: type declaration
+
+Declarations
+************
 
 .. index:: LABEL_DECL
 

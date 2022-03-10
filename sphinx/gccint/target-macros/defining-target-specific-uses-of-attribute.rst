@@ -5,14 +5,14 @@
 
 .. _target-attributes:
 
-Defining target-specific uses of __attribute__
-**********************************************
-
 .. index:: target attributes
 
 .. index:: machine attributes
 
 .. index:: attributes, target-specific
+
+Defining target-specific uses of __attribute__
+**********************************************
 
 Target-specific attributes may be defined for functions, data and types.
 These are described using the following target hooks; they also need to

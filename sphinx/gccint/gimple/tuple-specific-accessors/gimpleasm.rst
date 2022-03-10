@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_ASM
+
 GIMPLE_ASM
 ^^^^^^^^^^
-
-.. index:: GIMPLE_ASM
 
 .. function:: gasm *gimple_build_asm_vec ( const char *string, vec<tree, va_gc> *inputs, vec<tree, va_gc> *outputs, vec<tree, va_gc> *clobbers, vec<tree, va_gc> *labels)
 

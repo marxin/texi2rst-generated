@@ -5,14 +5,14 @@
 
 .. _costs:
 
-Describing Relative Costs of Operations
-***************************************
-
 .. index:: costs of instructions
 
 .. index:: relative costs
 
 .. index:: speed of instructions
+
+Describing Relative Costs of Operations
+***************************************
 
 These macros let you describe the relative speed of various operations
 on the target machine.

@@ -10,26 +10,26 @@ M32C Function Attributes
 
 These function attributes are supported by the M32C back end:
 
-.. gcc-attr:: bank_switch
+.. index:: bank_switch function attribute, M32C
 
-  .. index:: bank_switch function attribute, M32C
+.. gcc-attr:: bank_switch
 
   When added to an interrupt handler with the M32C port, causes the
   prologue and epilogue to use bank switching to preserve the registers
   rather than saving them on the stack.
 
-.. gcc-attr:: fast_interrupt
+.. index:: fast_interrupt function attribute, M32C
 
-  .. index:: fast_interrupt function attribute, M32C
+.. gcc-attr:: fast_interrupt
 
   Use this attribute on the M32C port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
   :gcc-attr:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
-.. gcc-attr:: function_vector
+.. index:: function_vector function attribute, M16C/M32C
 
-  .. index:: function_vector function attribute, M16C/M32C
+.. gcc-attr:: function_vector
 
   On M16C/M32C targets, the :gcc-attr:`function_vector` attribute declares a
   special page subroutine call function. Use of this attribute reduces
@@ -65,9 +65,9 @@ These function attributes are supported by the M32C back end:
 
   This attribute is ignored for R8C target.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, M32C
 
-  .. index:: interrupt function attribute, M32C
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates

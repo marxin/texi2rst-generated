@@ -5,10 +5,10 @@
 
 .. _tuple-specific-accessors:
 
+.. index:: Tuple specific accessors
+
 Tuple specific accessors
 ************************
-
-.. index:: Tuple specific accessors
 
 .. toctree::
   :maxdepth: 2

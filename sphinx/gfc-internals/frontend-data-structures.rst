@@ -5,10 +5,10 @@
 
 .. _frontend-data-structures:
 
+.. index:: data structures
+
 Frontend Data Structures
 ------------------------
-
-.. index:: data structures
 
 This chapter should describe the details necessary to understand how
 the various ``gfc_*`` data are used and interact.  In general it is

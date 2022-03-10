@@ -7,10 +7,10 @@
 
 .. _risc-v-options:
 
+.. index:: RISC-V Options
+
 RISC-V Options
 ^^^^^^^^^^^^^^
-
-.. index:: RISC-V Options
 
 These command-line options are defined for RISC-V targets:
 

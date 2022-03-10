@@ -5,10 +5,10 @@
 
 .. _c++-modules:
 
+.. index:: speed of compilation
+
 C++ Modules
 ***********
-
-.. index:: speed of compilation
 
 Modules are a C++20 language feature.  As the name suggests, they
 provides a modular compilation system, intending to provide both
@@ -137,10 +137,10 @@ see :ref:`c++-module-mapper`.
 
 .. _c++-module-mapper:
 
+.. index:: C++ Module Mapper
+
 Module Mapper
 ^^^^^^^^^^^^^
-
-.. index:: C++ Module Mapper
 
 A module mapper provides a server or file that the compiler queries to
 determine the mapping between module names and CMI files.  It is also
@@ -240,10 +240,10 @@ server implementation embedded in :command:`make` was described in
 
 .. _c++-module-preprocessing:
 
+.. index:: C++ Module Preprocessing
+
 Module Preprocessing
 ^^^^^^^^^^^^^^^^^^^^
-
-.. index:: C++ Module Preprocessing
 
 Modules affect preprocessing because of header units and include
 translation.  Some uses of the preprocessor as a separate step either
@@ -283,10 +283,10 @@ preprocessing a header-unit, or consuming such preprocessed output:
 
 .. _c++-compiled-module-interface:
 
+.. index:: C++ Compiled Module Interface
+
 Compiled Module Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: C++ Compiled Module Interface
 
 CMIs are an additional artifact when compiling named module
 interfaces, partitions or header units.  These are read when

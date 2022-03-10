@@ -5,10 +5,10 @@
 
 .. _kill:
 
+.. index:: KILL
+
 KILL --- Send a signal to a process
 ***********************************
-
-.. index:: KILL
 
 .. function:: KILL(PID, SIG)
 

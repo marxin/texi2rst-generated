@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_SINGLE
+
 GIMPLE_OMP_SINGLE
 ^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_SINGLE
 
 .. function:: gomp_single *gimple_build_omp_single ( gimple_seq body, tree clauses)
 

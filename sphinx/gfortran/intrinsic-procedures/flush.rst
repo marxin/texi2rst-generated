@@ -5,12 +5,12 @@
 
 .. _flush:
 
-FLUSH --- Flush I/O unit(s)
-***************************
-
 .. index:: FLUSH
 
 .. index:: file operation, flush
+
+FLUSH --- Flush I/O unit(s)
+***************************
 
 .. function:: FLUSH(UNIT)
 

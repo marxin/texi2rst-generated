@@ -5,14 +5,14 @@
 
 .. _rrspacing:
 
-RRSPACING --- Reciprocal of the relative spacing
-************************************************
-
 .. index:: RRSPACING
 
 .. index:: real number, relative spacing
 
 .. index:: floating point, relative spacing
+
+RRSPACING --- Reciprocal of the relative spacing
+************************************************
 
 .. function:: RRSPACING(X)
 

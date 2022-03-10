@@ -5,9 +5,6 @@
 
 .. _aint:
 
-AINT --- Truncate to a whole number
-***********************************
-
 .. index:: AINT
 
 .. index:: DINT
@@ -15,6 +12,9 @@ AINT --- Truncate to a whole number
 .. index:: floor
 
 .. index:: rounding, floor
+
+AINT --- Truncate to a whole number
+***********************************
 
 .. function:: AINT(A [, KIND])
 

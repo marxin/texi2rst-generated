@@ -5,12 +5,12 @@
 
 .. _preprocessor-options:
 
-Options Controlling the Preprocessor
-************************************
-
 .. index:: preprocessor options
 
 .. index:: options, preprocessor
+
+Options Controlling the Preprocessor
+************************************
 
 These options control the C preprocessor, which is run on each C source
 file before actual compilation.

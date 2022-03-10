@@ -5,14 +5,14 @@
 
 .. _modulo:
 
-MODULO --- Modulo function
-**************************
-
 .. index:: MODULO
 
 .. index:: modulo
 
 .. index:: division, modulo
+
+MODULO --- Modulo function
+**************************
 
 .. function:: MODULO(A,P)
 

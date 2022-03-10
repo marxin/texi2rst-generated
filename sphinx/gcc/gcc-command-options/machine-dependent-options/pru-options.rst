@@ -7,10 +7,10 @@
 
 .. _pru-options:
 
+.. index:: PRU Options
+
 PRU Options
 ^^^^^^^^^^^
-
-.. index:: PRU Options
 
 These command-line options are defined for PRU target:
 

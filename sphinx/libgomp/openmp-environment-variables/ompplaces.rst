@@ -5,10 +5,10 @@
 
   .. _omp_places:
 
+.. index:: Environment Variable
+
 OMP_PLACES -- Specifies on which CPUs the theads should be placed
 *****************************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   The thread placement can be either specified using an abstract name or by an

@@ -5,12 +5,12 @@
 
 .. _maxloc:
 
-MAXLOC --- Location of the maximum value within an array
-********************************************************
-
 .. index:: MAXLOC
 
 .. index:: array, location of maximum element
+
+MAXLOC --- Location of the maximum value within an array
+********************************************************
 
 .. function:: MAXLOC(ARRAY , MASK ,KIND ,BACK)
 

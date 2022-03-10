@@ -5,10 +5,10 @@
 
 .. _statement-and-operand-traversals:
 
+.. index:: Statement and operand traversals
+
 Statement and operand traversals
 ********************************
-
-.. index:: Statement and operand traversals
 
 There are two functions available for walking statements and
 sequences: ``walk_gimple_stmt`` and ``walk_gimple_seq``,

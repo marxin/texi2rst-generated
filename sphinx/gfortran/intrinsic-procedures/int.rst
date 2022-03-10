@@ -5,9 +5,6 @@
 
 .. _int:
 
-INT --- Convert to integer type
-*******************************
-
 .. index:: INT
 
 .. index:: IFIX
@@ -15,6 +12,9 @@ INT --- Convert to integer type
 .. index:: IDINT
 
 .. index:: conversion, to integer
+
+INT --- Convert to integer type
+*******************************
 
 .. function:: INT(A , KIND))
 

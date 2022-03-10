@@ -5,9 +5,6 @@
 
   .. _warnings:
 
-Warnings
-********
-
 .. index:: options to control warnings
 
 .. index:: warning messages
@@ -15,6 +12,9 @@ Warnings
 .. index:: messages, warning
 
 .. index:: suppressing warnings
+
+Warnings
+********
 
 Warnings are diagnostic messages that report constructions that
 are not inherently erroneous but that are risky or suggest there

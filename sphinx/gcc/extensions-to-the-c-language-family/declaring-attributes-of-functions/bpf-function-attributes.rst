@@ -10,9 +10,9 @@ BPF Function Attributes
 
 These function attributes are supported by the BPF back end:
 
-.. gcc-attr:: kernel_helper
+.. index:: kernel helper, function attribute, BPF
 
-  .. index:: kernel helper, function attribute, BPF
+.. gcc-attr:: kernel_helper
 
   use this attribute to indicate the specified function declaration is a
   kernel helper.  The helper function is passed as an argument to the

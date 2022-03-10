@@ -5,14 +5,14 @@
 
 .. _exit:
 
-EXIT --- Exit the program with status. 
-***************************************
-
 .. index:: EXIT
 
 .. index:: program termination
 
 .. index:: terminate program
+
+EXIT --- Exit the program with status. 
+***************************************
 
 .. function:: EXIT
 

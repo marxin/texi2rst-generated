@@ -5,12 +5,12 @@
 
 .. _irand:
 
-IRAND --- Integer pseudo-random number
-**************************************
-
 .. index:: IRAND
 
 .. index:: random number generation
+
+IRAND --- Integer pseudo-random number
+**************************************
 
 .. function:: IRAND(FLAG)
 

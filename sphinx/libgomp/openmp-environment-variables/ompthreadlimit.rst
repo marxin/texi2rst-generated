@@ -5,10 +5,10 @@
 
   .. _omp_thread_limit:
 
+.. index:: Environment Variable
+
 OMP_THREAD_LIMIT -- Set the maximum number of threads
 *****************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Specifies the number of threads to use for the whole program.  The

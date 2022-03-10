@@ -5,12 +5,12 @@
 
 .. _poly_int:
 
-Sizes and offsets as runtime invariants
----------------------------------------
-
 .. index:: polynomial integers
 
 .. index:: poly_int
+
+Sizes and offsets as runtime invariants
+---------------------------------------
 
 GCC allows the size of a hardware register to be a runtime invariant
 rather than a compile-time constant.  This in turn means that various

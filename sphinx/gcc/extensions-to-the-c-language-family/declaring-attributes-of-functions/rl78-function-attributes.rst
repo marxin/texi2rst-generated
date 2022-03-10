@@ -10,11 +10,11 @@ RL78 Function Attributes
 
 These function attributes are supported by the RL78 back end:
 
+.. index:: interrupt function attribute, RL78
+
+.. index:: brk_interrupt function attribute, RL78
+
 .. gcc-attr:: interrupt, brk_interrupt
-
-  .. index:: interrupt function attribute, RL78
-
-  .. index:: brk_interrupt function attribute, RL78
 
   These attributes indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -25,9 +25,9 @@ These function attributes are supported by the RL78 back end:
   handlers intended to be used with the ``BRK`` opcode (i.e. those
   that must end with ``RETB`` instead of ``RETI``).
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, RL78
 
-  .. index:: naked function attribute, RL78
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the

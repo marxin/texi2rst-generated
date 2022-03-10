@@ -5,12 +5,12 @@
 
 .. _char:
 
-CHAR --- Character conversion function
-**************************************
-
 .. index:: CHAR
 
 .. index:: conversion, to character
+
+CHAR --- Character conversion function
+**************************************
 
 .. function:: CHAR(I [, KIND])
 

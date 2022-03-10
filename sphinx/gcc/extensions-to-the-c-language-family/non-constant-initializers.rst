@@ -5,12 +5,12 @@
 
 .. _initializers:
 
-Non-Constant Initializers
-*************************
-
 .. index:: initializers, non-constant
 
 .. index:: non-constant initializers
+
+Non-Constant Initializers
+*************************
 
 As in standard C++ and ISO C99, the elements of an aggregate initializer for an
 automatic variable are not required to be constant expressions in GNU C.

@@ -5,10 +5,10 @@
 
   .. _vector-operations:
 
+.. index:: vector operations
+
 Vector Operations
 *****************
-
-.. index:: vector operations
 
 All normal RTL expressions can be used with vector modes; they are
 interpreted as operating on each part of the vector independently.

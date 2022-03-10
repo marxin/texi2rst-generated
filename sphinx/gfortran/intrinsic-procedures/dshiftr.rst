@@ -5,14 +5,14 @@
 
 .. _dshiftr:
 
-DSHIFTR --- Combined right shift
-********************************
-
 .. index:: DSHIFTR
 
 .. index:: right shift, combined
 
 .. index:: shift, right
+
+DSHIFTR --- Combined right shift
+********************************
 
 .. function:: DSHIFTR(I, J, SHIFT)
 

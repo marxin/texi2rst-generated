@@ -5,14 +5,14 @@
 
 .. _mixed-labels-and-declarations:
 
-Mixed Declarations, Labels and Code
-***********************************
-
 .. index:: mixed declarations and code
 
 .. index:: declarations, mixed with code
 
 .. index:: code, mixed with declarations
+
+Mixed Declarations, Labels and Code
+***********************************
 
 ISO C99 and ISO C++ allow declarations and code to be freely mixed
 within compound statements.  ISO C2X allows labels to be

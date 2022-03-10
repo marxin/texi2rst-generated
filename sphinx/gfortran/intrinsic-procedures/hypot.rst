@@ -5,12 +5,12 @@
 
 .. _hypot:
 
-HYPOT --- Euclidean distance function
-*************************************
-
 .. index:: HYPOT
 
 .. index:: Euclidean distance
+
+HYPOT --- Euclidean distance function
+*************************************
 
 .. function:: HYPOT(X,Y)
 

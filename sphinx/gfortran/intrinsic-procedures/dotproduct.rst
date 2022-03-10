@@ -5,9 +5,6 @@
 
 .. _dot_product:
 
-DOT_PRODUCT --- Dot product function
-************************************
-
 .. index:: DOT_PRODUCT
 
 .. index:: dot product
@@ -15,6 +12,9 @@ DOT_PRODUCT --- Dot product function
 .. index:: vector product
 
 .. index:: product, vector
+
+DOT_PRODUCT --- Dot product function
+************************************
 
 .. function:: DOT_PRODUCT(VECTOR_A, VECTOR_B)
 

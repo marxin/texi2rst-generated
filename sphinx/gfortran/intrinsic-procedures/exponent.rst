@@ -5,14 +5,14 @@
 
 .. _exponent:
 
-EXPONENT --- Exponent function 
-*******************************
-
 .. index:: EXPONENT
 
 .. index:: real number, exponent
 
 .. index:: floating point, exponent
+
+EXPONENT --- Exponent function 
+*******************************
 
 .. function:: EXPONENT(X)
 

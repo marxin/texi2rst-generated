@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_PARALLEL
+
 GIMPLE_OMP_PARALLEL
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_PARALLEL
 
 .. function:: gomp_parallel *gimple_build_omp_parallel (gimple_seq body, tree clauses, tree child_fn, tree data_arg)
 

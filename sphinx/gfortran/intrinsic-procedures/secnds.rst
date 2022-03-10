@@ -5,14 +5,14 @@
 
 .. _secnds:
 
-SECNDS --- Time function
-************************
-
 .. index:: SECNDS
 
 .. index:: time, elapsed
 
 .. index:: elapsed time
+
+SECNDS --- Time function
+************************
 
 .. function:: SECNDS(X)
 

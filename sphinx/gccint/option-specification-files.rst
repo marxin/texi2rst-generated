@@ -5,12 +5,12 @@
 
 .. _options:
 
-Option specification files
---------------------------
-
 .. index:: option specification files
 
 .. index:: optc-gen.awk
+
+Option specification files
+--------------------------
 
 Most GCC command-line options are described by special option
 definition files, the names of which conventionally end in

@@ -5,14 +5,14 @@
 
 .. _rtl:
 
-RTL Representation
-------------------
-
 .. index:: RTL representation
 
 .. index:: representation of RTL
 
 .. index:: Register Transfer Language (RTL)
+
+RTL Representation
+------------------
 
 The last part of the compiler work is done on a low-level intermediate
 representation called Register Transfer Language.  In this language, the

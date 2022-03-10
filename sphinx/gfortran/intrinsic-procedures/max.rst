@@ -5,9 +5,6 @@
 
 .. _max:
 
-MAX --- Maximum value of an argument list
-*****************************************
-
 .. index:: MAX
 
 .. index:: MAX0
@@ -21,6 +18,9 @@ MAX --- Maximum value of an argument list
 .. index:: DMAX1
 
 .. index:: maximum value
+
+MAX --- Maximum value of an argument list
+*****************************************
 
 .. function:: MAX(A1, A2 , A3 , ...)
 

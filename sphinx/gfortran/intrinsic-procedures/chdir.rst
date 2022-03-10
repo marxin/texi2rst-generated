@@ -5,12 +5,12 @@
 
 .. _chdir:
 
-CHDIR --- Change working directory
-**********************************
-
 .. index:: CHDIR
 
 .. index:: system, working directory
+
+CHDIR --- Change working directory
+**********************************
 
 .. function:: CHDIR(NAME)
 

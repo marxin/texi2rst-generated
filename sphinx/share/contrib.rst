@@ -5,10 +5,10 @@
 
 .. _contributors:
 
+.. index:: contributors
+
 Contributors to GCC
 ===================
-
-.. index:: contributors
 
 The GCC project would like to thank its many contributors.  Without them the
 project would not have been nearly as successful as it has been.  Any omissions

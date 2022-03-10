@@ -5,10 +5,10 @@
 
 .. _memory-model:
 
+.. index:: memory model
+
 Memory model
 ************
-
-.. index:: memory model
 
 The memory model used by the middle-end models that of the C/C++
 languages.  The middle-end has the notion of an effective type

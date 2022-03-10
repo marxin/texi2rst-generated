@@ -5,14 +5,14 @@
 
 .. _xor:
 
-XOR --- Bitwise logical exclusive OR
-************************************
-
 .. index:: XOR
 
 .. index:: bitwise logical exclusive or
 
 .. index:: logical exclusive or, bitwise
+
+XOR --- Bitwise logical exclusive OR
+************************************
 
 .. function:: XOR(I, J)
 

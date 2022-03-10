@@ -5,12 +5,12 @@
 
 .. _getcwd:
 
-GETCWD --- Get current working directory
-****************************************
-
 .. index:: GETCWD
 
 .. index:: system, working directory
+
+GETCWD --- Get current working directory
+****************************************
 
 .. function:: GETCWD(C)
 

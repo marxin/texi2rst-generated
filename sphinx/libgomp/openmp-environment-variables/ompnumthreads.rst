@@ -5,12 +5,12 @@
 
   .. _omp_num_threads:
 
-OMP_NUM_THREADS -- Specifies the number of threads to use
-*********************************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+OMP_NUM_THREADS -- Specifies the number of threads to use
+*********************************************************
 
 :samp:`{Description}:`
   Specifies the default number of threads to use in parallel regions.  The 

@@ -5,9 +5,6 @@
 
 .. _cos:
 
-COS --- Cosine function
-***********************
-
 .. index:: COS
 
 .. index:: DCOS
@@ -21,6 +18,9 @@ COS --- Cosine function
 .. index:: trigonometric function, cosine
 
 .. index:: cosine
+
+COS --- Cosine function
+***********************
 
 .. function:: COS(X)
 

@@ -5,14 +5,14 @@
 
 .. _matmul:
 
-MATMUL --- matrix multiplication
-********************************
-
 .. index:: MATMUL
 
 .. index:: matrix multiplication
 
 .. index:: product, matrix
+
+MATMUL --- matrix multiplication
+********************************
 
 .. function:: MATMUL(MATRIX_A, MATRIX_B)
 

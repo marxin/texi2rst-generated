@@ -5,12 +5,12 @@
 
 .. _range:
 
-RANGE --- Decimal exponent range
-********************************
-
 .. index:: RANGE
 
 .. index:: model representation, range
+
+RANGE --- Decimal exponent range
+********************************
 
 .. function:: RANGE(X)
 

@@ -5,12 +5,12 @@
 
 .. _type-attributes:
 
-Specifying Attributes of Types
-******************************
-
 .. index:: attribute of types
 
 .. index:: type attributes
+
+Specifying Attributes of Types
+******************************
 
 The keyword ``__attribute__`` allows you to specify various special
 properties of types.  Some type attributes apply only to structure and
@@ -194,9 +194,9 @@ The following type attributes are supported on most targets.
 
   This warning can be disabled by :option:`-Wno-if-not-aligned`.
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. index:: alloc_size type attribute
 
-  .. index:: alloc_size type attribute
+.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` type attribute may be applied to the definition
   of a type of a function that returns a pointer and takes at least one
@@ -222,9 +222,9 @@ The following type attributes are supported on most targets.
   ``malloc_type``, like the standard C function ``malloc``,
   returns an object whose size is given by argument 1 to the function.
 
-.. gcc-attr:: copy, copy (expression)
+.. index:: copy type attribute
 
-  .. index:: copy type attribute
+.. gcc-attr:: copy, copy (expression)
 
   The :gcc-attr:`copy` attribute applies the set of attributes with which
   the type of the :samp:`{expression}` has been declared to the declaration
@@ -255,9 +255,9 @@ The following type attributes are supported on most targets.
     A { /* ... */ };
     struct __attribute__ ((copy ( (struct A *)0)) B { /* ... */ };
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. index:: deprecated type attribute
 
-  .. index:: deprecated type attribute
+.. gcc-attr:: deprecated, deprecated (msg)
 
   The :gcc-attr:`deprecated` attribute results in a warning if the type
   is used anywhere in the source file.  This is useful when identifying
@@ -293,9 +293,9 @@ The following type attributes are supported on most targets.
   The message attached to the attribute is affected by the setting of
   the :option:`-fmessage-length` option.
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. index:: unavailable type attribute
 
-  .. index:: unavailable type attribute
+.. gcc-attr:: unavailable, unavailable (msg)
 
   The :gcc-attr:`unavailable` attribute behaves in the same manner as the
   :gcc-attr:`deprecated` one, but emits an error rather than a warning.  It is
@@ -305,9 +305,9 @@ The following type attributes are supported on most targets.
   The :gcc-attr:`unavailable` attribute can also be used for functions and
   variables (see :ref:`function-attributes`, see :ref:`variable-attributes`.)
 
-.. gcc-attr:: designated_init
+.. index:: designated_init type attribute
 
-  .. index:: designated_init type attribute
+.. gcc-attr:: designated_init
 
   This attribute may only be applied to structure types.  It indicates
   that any initialization of an object of this type must use designated
@@ -319,9 +319,9 @@ The following type attributes are supported on most targets.
   GCC emits warnings based on this attribute by default; use
   :option:`-Wno-designated-init` to suppress them.
 
-.. gcc-attr:: may_alias
+.. index:: may_alias type attribute
 
-  .. index:: may_alias type attribute
+.. gcc-attr:: may_alias
 
   Accesses through pointers to types with this attribute are not subject
   to type-based alias analysis, but are instead assumed to be able to alias
@@ -361,9 +361,9 @@ The following type attributes are supported on most targets.
   :option:`-fstrict-aliasing`, which is on by default at :option:`-O2` or
   above.
 
-.. gcc-attr:: mode (mode)
+.. index:: mode type attribute
 
-  .. index:: mode type attribute
+.. gcc-attr:: mode (mode)
 
   This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
@@ -376,9 +376,9 @@ The following type attributes are supported on most targets.
   ``__word__`` for the mode of a one-word integer, and ``pointer``
   or ``__pointer__`` for the mode used to represent pointers.
 
-.. option:: packed
+.. index:: packed type attribute
 
-  .. index:: packed type attribute
+.. option:: packed
 
   This attribute, attached to a ``struct``, ``union``, or C++ ``class``
   type definition, specifies that each of its members (other than zero-width
@@ -416,9 +416,9 @@ The following type attributes are supported on most targets.
   not on a ``typedef`` that does not also define the enumerated type,
   structure, union, or class.
 
-.. gcc-attr:: scalar_storage_order ("endianness")
+.. index:: scalar_storage_order type attribute
 
-  .. index:: scalar_storage_order type attribute
+.. gcc-attr:: scalar_storage_order ("endianness")
 
   When attached to a ``union`` or a ``struct``, this attribute sets
   the storage order, aka endianness, of the scalar fields of the type, as
@@ -462,9 +462,9 @@ The following type attributes are supported on most targets.
   through distinct types that assign a different storage order to it, then the
   behavior is undefined.
 
-.. gcc-attr:: transparent_union
+.. index:: transparent_union type attribute
 
-  .. index:: transparent_union type attribute
+.. gcc-attr:: transparent_union
 
   This attribute, attached to a ``union`` type definition, indicates
   that any function parameter having that union type causes calls to that
@@ -523,9 +523,9 @@ The following type attributes are supported on most targets.
       return waitpid (-1, p.__ip, 0);
     }
 
-.. gcc-attr:: unused
+.. index:: unused type attribute
 
-  .. index:: unused type attribute
+.. gcc-attr:: unused
 
   When attached to a type (including a ``union`` or a ``struct``),
   this attribute means that variables of that type are meant to appear
@@ -535,9 +535,9 @@ The following type attributes are supported on most targets.
   not referenced, but contain constructors and destructors that have
   nontrivial bookkeeping functions.
 
-.. gcc-attr:: vector_size (bytes)
+.. index:: vector_size type attribute
 
-  .. index:: vector_size type attribute
+.. gcc-attr:: vector_size (bytes)
 
   This attribute specifies the vector size for the type, measured in bytes.
   The type to which it applies is known as the :dfn:`base type`.  The :samp:`{bytes}`
@@ -571,9 +571,9 @@ The following type attributes are supported on most targets.
   declares ``get_flt_vec16`` to be a function returning a 16-byte vector
   with the base type ``float``.
 
-.. gcc-attr:: visibility
+.. index:: visibility type attribute
 
-  .. index:: visibility type attribute
+.. gcc-attr:: visibility
 
   In C++, attribute visibility (see :ref:`function-attributes`) can also be
   applied to class, struct, union and enum types.  Unlike other type
@@ -605,10 +605,10 @@ packed))`.
 
 .. _arc-type-attributes:
 
+.. index:: uncached type attribute, ARC
+
 ARC Type Attributes
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: uncached type attribute, ARC
 
 Declaring objects with ``uncached`` allows you to exclude
 data-cache participation in load and store operations on those objects
@@ -618,10 +618,10 @@ loads and stores of data declared ``uncached``.
 
 .. _arm-type-attributes:
 
+.. index:: notshared type attribute, ARM
+
 ARM Type Attributes
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: notshared type attribute, ARM
 
 On those ARM targets that support :gcc-attr:`dllimport` (such as Symbian
 OS), you can use the ``notshared`` attribute to indicate that the
@@ -646,10 +646,10 @@ most Symbian OS code uses ``__declspec``.)
 
 .. _bpf-type-attributes:
 
+.. index:: preserve_access_index type attribute, BPF
+
 BPF Type Attributes
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: preserve_access_index type attribute, BPF
 
 BPF Compile Once - Run Everywhere (CO-RE) support. When attached to a
 ``struct`` or ``union`` type definition, indicates that CO-RE
@@ -659,9 +659,6 @@ wrapping every such access with ``__builtin_preserve_access_index``.
 
 .. _mep-type-attributes:
 
-MeP Type Attributes
-^^^^^^^^^^^^^^^^^^^
-
 .. index:: based type attribute, MeP
 
 .. index:: tiny type attribute, MeP
@@ -669,6 +666,9 @@ MeP Type Attributes
 .. index:: near type attribute, MeP
 
 .. index:: far type attribute, MeP
+
+MeP Type Attributes
+^^^^^^^^^^^^^^^^^^^
 
 Many of the MeP variable attributes may be applied to types as well.
 Specifically, the :gcc-attr:`based`, :gcc-attr:`tiny`, :gcc-attr:`near`, and
@@ -715,11 +715,11 @@ x86 Type Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
+.. index:: ms_struct type attribute, x86
+
+.. index:: gcc_struct type attribute, x86
+
 .. gcc-attr:: ms_struct, gcc_struct
-
-  .. index:: ms_struct type attribute, x86
-
-  .. index:: gcc_struct type attribute, x86
 
   If :gcc-attr:`packed` is used on a structure, or if bit-fields are used
   it may be that the Microsoft ABI packs them differently

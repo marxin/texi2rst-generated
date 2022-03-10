@@ -5,9 +5,6 @@
 
 .. _abort:
 
-ABORT --- Abort the program
-***************************
-
 .. index:: ABORT
 
 .. index:: program termination, with core dump
@@ -15,6 +12,9 @@ ABORT --- Abort the program
 .. index:: terminate program, with core dump
 
 .. index:: core, dump
+
+ABORT --- Abort the program
+***************************
 
 .. function:: ABORT
 

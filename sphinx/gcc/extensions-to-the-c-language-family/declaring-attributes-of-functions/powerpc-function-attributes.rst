@@ -10,13 +10,13 @@ PowerPC Function Attributes
 
 These function attributes are supported by the PowerPC back end:
 
+.. index:: indirect calls, PowerPC
+
+.. index:: longcall function attribute, PowerPC
+
+.. index:: shortcall function attribute, PowerPC
+
 .. gcc-attr:: longcall, shortcall
-
-  .. index:: indirect calls, PowerPC
-
-  .. index:: longcall function attribute, PowerPC
-
-  .. index:: shortcall function attribute, PowerPC
 
   The :gcc-attr:`longcall` attribute
   indicates that the function might be far away from the call site and
@@ -29,9 +29,9 @@ These function attributes are supported by the PowerPC back end:
   See :ref:`rs-6000-and-powerpc-options`, for more information on whether long
   calls are necessary.
 
-.. gcc-attr:: target (options)
+.. index:: target function attribute
 
-  .. index:: target function attribute
+.. gcc-attr:: target (options)
 
   As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.

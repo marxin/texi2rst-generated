@@ -5,12 +5,12 @@
 
 .. _c++-extensions:
 
-Extensions to the C++ Language
-------------------------------
-
 .. index:: extensions, C++ language
 
 .. index:: C++ language extensions
+
+Extensions to the C++ Language
+------------------------------
 
 The GNU compiler provides these extensions to the C++ language (and you
 can also use most of the C language extensions in your C++ programs).  If you

@@ -5,12 +5,12 @@
 
 .. _is_iostat_eor:
 
-IS_IOSTAT_EOR --- Test for end-of-record value
-**********************************************
-
 .. index:: IS_IOSTAT_EOR
 
 .. index:: IOSTAT, end of record
+
+IS_IOSTAT_EOR --- Test for end-of-record value
+**********************************************
 
 .. function:: IS_IOSTAT_EOR
 

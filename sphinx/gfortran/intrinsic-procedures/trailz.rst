@@ -5,12 +5,12 @@
 
 .. _trailz:
 
-TRAILZ --- Number of trailing zero bits of an integer
-*****************************************************
-
 .. index:: TRAILZ
 
 .. index:: zero bits
+
+TRAILZ --- Number of trailing zero bits of an integer
+*****************************************************
 
 .. function:: TRAILZ
 

@@ -5,9 +5,6 @@
 
 .. _iand:
 
-IAND --- Bitwise logical and
-****************************
-
 .. index:: IAND
 
 .. index:: BIAND
@@ -21,6 +18,9 @@ IAND --- Bitwise logical and
 .. index:: bitwise logical and
 
 .. index:: logical and, bitwise
+
+IAND --- Bitwise logical and
+****************************
 
 .. function:: IAND(I, J)
 

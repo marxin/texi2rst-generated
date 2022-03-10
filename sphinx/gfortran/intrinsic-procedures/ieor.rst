@@ -5,9 +5,6 @@
 
 .. _ieor:
 
-IEOR --- Bitwise logical exclusive or
-*************************************
-
 .. index:: IEOR
 
 .. index:: BIEOR
@@ -21,6 +18,9 @@ IEOR --- Bitwise logical exclusive or
 .. index:: bitwise logical exclusive or
 
 .. index:: logical exclusive or, bitwise
+
+IEOR --- Bitwise logical exclusive or
+*************************************
 
 .. function:: IEOR
 

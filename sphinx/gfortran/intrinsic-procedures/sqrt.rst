@@ -5,9 +5,6 @@
 
 .. _sqrt:
 
-SQRT --- Square-root function
-*****************************
-
 .. index:: SQRT
 
 .. index:: DSQRT
@@ -21,6 +18,9 @@ SQRT --- Square-root function
 .. index:: root
 
 .. index:: square-root
+
+SQRT --- Square-root function
+*****************************
 
 .. function:: SQRT(X)
 

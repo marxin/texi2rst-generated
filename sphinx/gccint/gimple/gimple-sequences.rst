@@ -5,10 +5,10 @@
 
 .. _gimple-sequences:
 
+.. index:: GIMPLE sequences
+
 GIMPLE sequences
 ****************
-
-.. index:: GIMPLE sequences
 
 GIMPLE sequences are the tuple equivalent of ``STATEMENT_LIST`` 's
 used in ``GENERIC``.  They are used to chain statements together, and

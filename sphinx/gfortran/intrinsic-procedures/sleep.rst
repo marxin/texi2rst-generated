@@ -5,12 +5,12 @@
 
 .. _sleep:
 
-SLEEP --- Sleep for the specified number of seconds
-***************************************************
-
 .. index:: SLEEP
 
 .. index:: delayed execution
+
+SLEEP --- Sleep for the specified number of seconds
+***************************************************
 
 .. function:: SLEEP(SECONDS)
 

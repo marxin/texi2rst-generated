@@ -5,12 +5,12 @@
 
 .. _bugs:
 
-Reporting Bugs
---------------
-
 .. index:: bugs
 
 .. index:: reporting bugs
+
+Reporting Bugs
+--------------
 
 Your bug reports play an essential role in making GCC reliable.
 
