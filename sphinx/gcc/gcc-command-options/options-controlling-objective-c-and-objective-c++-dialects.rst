@@ -11,6 +11,9 @@
 
 .. index:: options, Objective-C and Objective-C++
 
+Options Controlling Objective-C and Objective-C++ Dialects
+**********************************************************
+
 .. note::
 
   This manual does not describe the Objective-C and Objective-C++
