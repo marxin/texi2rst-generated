@@ -5,9 +5,6 @@
 
 .. _cosh:
 
-COSH --- Hyperbolic cosine function
-***********************************
-
 .. index:: COSH
 
 .. index:: DCOSH
@@ -17,6 +14,9 @@ COSH --- Hyperbolic cosine function
 .. index:: hyperbolic function, cosine
 
 .. index:: cosine, hyperbolic
+
+COSH --- Hyperbolic cosine function
+***********************************
 
 .. function:: COSH(X)
 

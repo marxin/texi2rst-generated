@@ -5,10 +5,10 @@
 
 .. _exception-handling:
 
+.. index:: exception handling
+
 Exception Handling Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: exception handling
 
 .. c:macro:: EH_RETURN_DATA_REGNO (N)
 

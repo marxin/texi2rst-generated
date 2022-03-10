@@ -5,10 +5,10 @@
 
 .. _gomp_debug:
 
+.. index:: Environment Variable
+
 GOMP_DEBUG -- Enable debugging output
 *************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Enable debugging output.  The variable should be set to ``0``

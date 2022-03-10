@@ -7,10 +7,10 @@
 
 .. _cr16-options:
 
+.. index:: CR16 Options
+
 CR16 Options
 ^^^^^^^^^^^^
-
-.. index:: CR16 Options
 
 These options are defined specifically for the CR16 ports.
 

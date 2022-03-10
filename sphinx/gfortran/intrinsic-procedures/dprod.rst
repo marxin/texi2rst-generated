@@ -5,12 +5,12 @@
 
 .. _dprod:
 
-DPROD --- Double product function
-*********************************
-
 .. index:: DPROD
 
 .. index:: product, double-precision
+
+DPROD --- Double product function
+*********************************
 
 .. function:: DPROD(X,Y)
 

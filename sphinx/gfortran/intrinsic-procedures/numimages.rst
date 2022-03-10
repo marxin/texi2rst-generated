@@ -5,14 +5,14 @@
 
 .. _num_images:
 
-NUM_IMAGES --- Function that returns the number of images
-*********************************************************
-
 .. index:: NUM_IMAGES
 
 .. index:: coarray, NUM_IMAGES
 
 .. index:: images, number of
+
+NUM_IMAGES --- Function that returns the number of images
+*********************************************************
 
 .. function:: NUM_IMAGES(DISTANCE, FAILED)
 

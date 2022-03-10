@@ -5,10 +5,10 @@
 
 .. _deleted-code:
 
+.. index:: commenting out code
+
 Deleted Code
 ************
-
-.. index:: commenting out code
 
 If you replace or delete a part of the program but want to keep the old
 code around for future reference, you often cannot simply comment it

@@ -5,12 +5,12 @@
 
 .. _stack-arguments:
 
-Passing Function Arguments on the Stack
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: arguments on stack
 
 .. index:: stack arguments
+
+Passing Function Arguments on the Stack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The macros in this section control how arguments are passed
 on the stack.  See the following section for other macros that

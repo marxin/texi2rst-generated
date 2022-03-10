@@ -7,10 +7,10 @@
 
 .. _cris-options:
 
+.. index:: CRIS Options
+
 CRIS Options
 ^^^^^^^^^^^^
-
-.. index:: CRIS Options
 
 These options are defined specifically for the CRIS ports.
 

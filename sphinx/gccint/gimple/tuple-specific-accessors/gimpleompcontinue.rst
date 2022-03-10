@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_CONTINUE
+
 GIMPLE_OMP_CONTINUE
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_CONTINUE
 
 .. function:: gomp_continue *gimple_build_omp_continue ( tree control_def, tree control_use)
 

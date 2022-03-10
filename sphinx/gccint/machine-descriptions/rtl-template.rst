@@ -5,9 +5,6 @@
 
 .. _rtl-template:
 
-RTL Template
-************
-
 .. index:: RTL insn template
 
 .. index:: generating insns
@@ -17,6 +14,9 @@ RTL Template
 .. index:: recognizing insns
 
 .. index:: insns, recognizing
+
+RTL Template
+************
 
 The RTL template is used to define which insns match the particular pattern
 and how to find their operands.  For named patterns, the RTL template also

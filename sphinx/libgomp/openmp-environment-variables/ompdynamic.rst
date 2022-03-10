@@ -5,10 +5,10 @@
 
 .. _omp_dynamic:
 
+.. index:: Environment Variable
+
 OMP_DYNAMIC -- Dynamic adjustment of threads
 ********************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Enable or disable the dynamic adjustment of the number of threads 

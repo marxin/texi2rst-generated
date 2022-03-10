@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_RETURN
+
 GIMPLE_OMP_RETURN
 ^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_RETURN
 
 .. function:: gimple gimple_build_omp_return (bool wait_p)
 

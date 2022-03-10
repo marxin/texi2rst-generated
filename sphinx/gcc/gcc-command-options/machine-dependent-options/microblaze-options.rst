@@ -7,10 +7,10 @@
 
 .. _microblaze-options:
 
+.. index:: MicroBlaze Options
+
 MicroBlaze Options
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: MicroBlaze Options
 
 .. option:: -msoft-float
 

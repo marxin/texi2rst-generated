@@ -5,10 +5,10 @@
 
 .. _gimple-api:
 
+.. index:: GIMPLE API
+
 GIMPLE API
 **********
-
-.. index:: GIMPLE API
 
 .. function:: tree gimple_simplify (enum tree_code, tree, tree, gimple_seq *, tree (*)(tree))
               tree gimple_simplify (enum tree_code, tree, tree, tree, gimple_seq *, tree (*)(tree))

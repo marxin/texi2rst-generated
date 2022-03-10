@@ -5,10 +5,10 @@
 
 .. _gimple-instruction-set:
 
+.. index:: GIMPLE instruction set
+
 GIMPLE instruction set
 **********************
-
-.. index:: GIMPLE instruction set
 
 The following table briefly describes the GIMPLE instruction set.
 

@@ -5,14 +5,14 @@
 
 .. _index-intrinsic:
 
-INDEX --- Position of a substring within a string
-*************************************************
-
 .. index:: INDEX
 
 .. index:: substring position
 
 .. index:: string, find substring
+
+INDEX --- Position of a substring within a string
+*************************************************
 
 .. function:: INDEX(STRING, SUBSTRING , BACK , KIND)
 

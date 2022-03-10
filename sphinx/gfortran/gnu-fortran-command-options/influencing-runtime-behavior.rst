@@ -5,16 +5,16 @@
 
 .. _runtime-options:
 
+.. index:: options, runtime
+
 Influencing runtime behavior
 ****************************
 
-.. index:: options, runtime
-
 These options affect the runtime behavior of programs compiled with GNU Fortran.
 
-.. option:: -fconvert={conversion}
+.. index:: fconvert=conversion
 
-  .. index:: fconvert=conversion
+.. option:: -fconvert={conversion}
 
   Specify the representation of data for unformatted files.  Valid
   values for conversion are: :samp:`native`, the default; :samp:`swap`,
@@ -26,9 +26,9 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   The ``CONVERT`` specifier and the GFORTRAN_CONVERT_UNIT environment
   variable override the default specified by :option:`-fconvert`.
 
-.. option:: -frecord-marker={length}
+.. index:: frecord-marker=length
 
-  .. index:: frecord-marker=length
+.. option:: -frecord-marker={length}
 
   Specify the length of record markers for unformatted files.
   Valid values for :samp:`{length}` are 4 and 8.  Default is 4.
@@ -37,17 +37,17 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   systems.  If you want to read or write files compatible
   with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`=8`.
 
-.. option:: -fmax-subrecord-length={length}
+.. index:: fmax-subrecord-length=length
 
-  .. index:: fmax-subrecord-length=length
+.. option:: -fmax-subrecord-length={length}
 
   Specify the maximum length for a subrecord.  The maximum permitted
   value for length is 2147483639, which is also the default.  Only
   really useful for use by the gfortran testsuite.
 
-.. option:: -fsign-zero
+.. index:: fsign-zero
 
-  .. index:: fsign-zero
+.. option:: -fsign-zero
 
   When enabled, floating point numbers of value zero with the sign bit set
   are written as negative number in formatted output and treated as

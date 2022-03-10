@@ -5,14 +5,14 @@
 
 .. _getuid:
 
-GETUID --- User ID function
-***************************
-
 .. index:: GETUID
 
 .. index:: system, user ID
 
 .. index:: user id
+
+GETUID --- User ID function
+***************************
 
 .. function:: GETUID()
 

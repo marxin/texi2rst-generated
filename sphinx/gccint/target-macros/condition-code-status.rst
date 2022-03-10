@@ -5,10 +5,10 @@
 
 .. _condition-code:
 
+.. index:: condition code status
+
 Condition Code Status
 *********************
-
-.. index:: condition code status
 
 Condition codes in GCC are represented as registers,
 which provides better schedulability for
@@ -47,12 +47,12 @@ interested in most macros in this section.
 
 .. _mode_cc-condition-codes:
 
-Representation of condition codes using registers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: CCmode
 
 .. index:: MODE_CC
+
+Representation of condition codes using registers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. c:macro:: SELECT_CC_MODE (op, x, y)
 

@@ -5,10 +5,10 @@
 
 .. _profiling:
 
+.. index:: profiling, code generation
+
 Generating Code for Profiling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: profiling, code generation
 
 These macros will help you generate code for profiling.
 

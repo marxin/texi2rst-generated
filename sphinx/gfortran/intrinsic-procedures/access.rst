@@ -5,12 +5,12 @@
 
 .. _access:
 
-ACCESS --- Checks file access modes
-***********************************
-
 .. index:: ACCESS
 
 .. index:: file system, access mode
+
+ACCESS --- Checks file access modes
+***********************************
 
 .. function:: ACCESS(NAME, MODE)
 

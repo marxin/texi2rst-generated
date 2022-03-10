@@ -5,12 +5,12 @@
 
 .. _type-information:
 
-Memory Management and Type Information
---------------------------------------
-
 .. index:: GGC
 
 .. index:: GTY
+
+Memory Management and Type Information
+--------------------------------------
 
 GCC uses some fairly sophisticated memory management techniques, which
 involve determining information about GCC's data structures from GCC's

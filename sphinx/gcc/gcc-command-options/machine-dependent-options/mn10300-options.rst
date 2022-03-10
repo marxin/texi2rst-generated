@@ -7,10 +7,10 @@
 
 .. _mn10300-options:
 
+.. index:: MN10300 options
+
 MN10300 Options
 ^^^^^^^^^^^^^^^
-
-.. index:: MN10300 options
 
 These :option:`-m` options are defined for Matsushita MN10300 architectures:
 

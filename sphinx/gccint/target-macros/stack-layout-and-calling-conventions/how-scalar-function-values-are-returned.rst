@@ -5,14 +5,14 @@
 
 .. _scalar-return:
 
-How Scalar Function Values Are Returned
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: return values in registers
 
 .. index:: values, returned by functions
 
 .. index:: scalars, returned as values
+
+How Scalar Function Values Are Returned
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This section discusses the macros that control returning scalars as
 values---values that can fit in registers.

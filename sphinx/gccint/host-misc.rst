@@ -5,12 +5,12 @@
 
 .. _host-misc:
 
-Host Misc
-*********
-
 .. index:: configuration file
 
 .. index:: xm-machine.h
+
+Host Misc
+*********
 
 .. envvar:: FATAL_EXIT_CODE
 

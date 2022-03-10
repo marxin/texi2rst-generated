@@ -5,14 +5,14 @@
 
 .. _itime:
 
-ITIME --- Get current local time subroutine (hour/minutes/seconds) 
-*******************************************************************
-
 .. index:: ITIME
 
 .. index:: time, current
 
 .. index:: current time
+
+ITIME --- Get current local time subroutine (hour/minutes/seconds) 
+*******************************************************************
 
 .. function:: ITIME(VALUES)
 

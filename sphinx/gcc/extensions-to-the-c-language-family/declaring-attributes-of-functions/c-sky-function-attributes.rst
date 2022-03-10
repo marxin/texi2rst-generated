@@ -10,11 +10,11 @@ C-SKY Function Attributes
 
 These function attributes are supported by the C-SKY back end:
 
+.. index:: interrupt function attribute, C-SKY
+
+.. index:: isr function attribute, C-SKY
+
 .. gcc-attr:: interrupt, isr
-
-  .. index:: interrupt function attribute, C-SKY
-
-  .. index:: isr function attribute, C-SKY
 
   Use these attributes to indicate that the specified function
   is an interrupt handler.
@@ -25,9 +25,9 @@ These function attributes are supported by the C-SKY back end:
   to enable support for the necessary interrupt stack instructions.  They
   are ignored with a warning otherwise.  See :ref:`c-sky-options`.
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, C-SKY
 
-  .. index:: naked function attribute, C-SKY
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the

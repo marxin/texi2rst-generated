@@ -5,10 +5,10 @@
 
 .. _dependency-analysis:
 
+.. index:: Data Dependency Analysis
+
 Data Dependency Analysis
 ************************
-
-.. index:: Data Dependency Analysis
 
 The code for the data dependence analysis can be found in
 :samp:`tree-data-ref.cc` and its interface and data structures are

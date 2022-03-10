@@ -5,12 +5,12 @@
 
 .. _constructing-calls:
 
-Constructing Function Calls
-***************************
-
 .. index:: constructing calls
 
 .. index:: forwarding calls
+
+Constructing Function Calls
+***************************
 
 Using the built-in functions described below, you can record
 the arguments a function received, and call another function

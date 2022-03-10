@@ -5,10 +5,10 @@
 
 .. _header-files:
 
+.. index:: header file
+
 Header Files
 ------------
-
-.. index:: header file
 
 A header file is a file containing C declarations and macro definitions
 (see :ref:`macros`) to be shared between several source files.  You request

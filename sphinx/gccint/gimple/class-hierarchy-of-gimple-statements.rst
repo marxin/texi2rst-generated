@@ -5,10 +5,10 @@
 
 .. _class-hierarchy-of-gimple-statements:
 
+.. index:: GIMPLE class hierarchy
+
 Class hierarchy of GIMPLE statements
 ************************************
-
-.. index:: GIMPLE class hierarchy
 
 The following diagram shows the C++ inheritance hierarchy of statement
 kinds, along with their relationships to ``GSS_`` values (layouts) and

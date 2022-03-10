@@ -5,14 +5,14 @@
 
 .. _function-prototypes:
 
-Prototypes and Old-Style Function Definitions
-*********************************************
-
 .. index:: function prototype declarations
 
 .. index:: old-style function definitions
 
 .. index:: promotion of formal parameters
+
+Prototypes and Old-Style Function Definitions
+*********************************************
 
 GNU C extends ISO C to allow a function prototype to override a later
 old-style non-prototype definition.  Consider the following example:

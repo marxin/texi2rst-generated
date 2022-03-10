@@ -5,14 +5,14 @@
 
 .. _lle:
 
-LLE --- Lexical less than or equal
-**********************************
-
 .. index:: LLE
 
 .. index:: lexical comparison of strings
 
 .. index:: string, comparison
+
+LLE --- Lexical less than or equal
+**********************************
 
 .. function:: LLE(STRING_A, STRING_B)
 

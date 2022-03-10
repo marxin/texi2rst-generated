@@ -5,12 +5,12 @@
 
 .. _guidelines-for-diagnostics:
 
-Guidelines for Diagnostics
-**************************
-
 .. index:: guidelines for diagnostics
 
 .. index:: diagnostics, guidelines for
+
+Guidelines for Diagnostics
+**************************
 
 Talk in terms of the user's code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -18,10 +18,10 @@ Talk in terms of the user's code
 Diagnostics should be worded in terms of the user's source code, and the
 source language, rather than GCC's own implementation details.
 
+.. index:: diagnostics, actionable
+
 Diagnostics are actionable
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: diagnostics, actionable
 
 A good diagnostic is :dfn:`actionable`: it should assist the user in
 taking action.
@@ -215,9 +215,6 @@ or two diagnostics:
       (
       ^
 
-Location Information
-^^^^^^^^^^^^^^^^^^^^
-
 .. index:: diagnostics, locations
 
 .. index:: location information
@@ -225,6 +222,9 @@ Location Information
 .. index:: source code, location information
 
 .. index:: caret
+
+Location Information
+^^^^^^^^^^^^^^^^^^^^
 
 GCC's ``location_t`` type can support both ordinary locations,
 and locations relating to a macro expansion.
@@ -418,12 +418,12 @@ Spelling and Terminology
 See the `terminology and markup <https://gcc.gnu.org/codingconventions.html#Spelling
 Spelling>`_ section of the GCC coding conventions.
 
-Fix-it hints
-^^^^^^^^^^^^
-
 .. index:: fix-it hints
 
 .. index:: diagnostics guidelines, fix-it hints
+
+Fix-it hints
+^^^^^^^^^^^^
 
 GCC's diagnostic subsystem can emit :dfn:`fix-it hints`: small suggested
 edits to the user's source code.

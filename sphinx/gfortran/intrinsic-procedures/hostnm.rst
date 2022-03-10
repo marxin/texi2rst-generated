@@ -5,12 +5,12 @@
 
 .. _hostnm:
 
-HOSTNM --- Get system host name
-*******************************
-
 .. index:: HOSTNM
 
 .. index:: system, host name
+
+HOSTNM --- Get system host name
+*******************************
 
 .. function:: HOSTNM(NAME)
 

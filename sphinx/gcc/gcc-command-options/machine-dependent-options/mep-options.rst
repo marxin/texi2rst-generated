@@ -7,10 +7,10 @@
 
 .. _mep-options:
 
+.. index:: MeP options
+
 MeP Options
 ^^^^^^^^^^^
-
-.. index:: MeP options
 
 .. option:: -mabsdiff
 

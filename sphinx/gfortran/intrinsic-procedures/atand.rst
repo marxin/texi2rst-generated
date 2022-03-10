@@ -5,9 +5,6 @@
 
 .. _atand:
 
-ATAND --- Arctangent function, degrees
-**************************************
-
 .. index:: ATAND
 
 .. index:: DATAND
@@ -15,6 +12,9 @@ ATAND --- Arctangent function, degrees
 .. index:: trigonometric function, tangent, inverse, degrees
 
 .. index:: tangent, inverse, degrees
+
+ATAND --- Arctangent function, degrees
+**************************************
 
 .. function:: ATAND(X)
 

@@ -5,10 +5,10 @@
 
 .. _bug-criteria:
 
+.. index:: bug criteria
+
 Have You Found a Bug?
 *********************
-
-.. index:: bug criteria
 
 If you are not sure whether you have found a bug, here are some guidelines:
 

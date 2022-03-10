@@ -5,9 +5,6 @@
 
 .. _sinh:
 
-SINH --- Hyperbolic sine function 
-**********************************
-
 .. index:: SINH
 
 .. index:: DSINH
@@ -17,6 +14,9 @@ SINH --- Hyperbolic sine function
 .. index:: hyperbolic function, sine
 
 .. index:: sine, hyperbolic
+
+SINH --- Hyperbolic sine function 
+**********************************
 
 .. function:: SINH(X)
 

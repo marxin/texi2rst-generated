@@ -5,10 +5,10 @@
 
 .. _number-of-iterations:
 
+.. index:: Number of iterations analysis
+
 Number of iterations analysis
 *****************************
-
-.. index:: Number of iterations analysis
 
 Both on GIMPLE and on RTL, there are functions available to determine
 the number of iterations of a loop, with a similar interface.  The

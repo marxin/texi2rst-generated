@@ -5,14 +5,14 @@
 
 .. _time8:
 
-TIME8 --- Time function (64-bit)
-********************************
-
 .. index:: TIME8
 
 .. index:: time, current
 
 .. index:: current time
+
+TIME8 --- Time function (64-bit)
+********************************
 
 .. function:: TIME8()
 

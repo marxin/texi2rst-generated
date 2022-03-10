@@ -5,12 +5,12 @@
 
 .. _gmtime:
 
-GMTIME --- Convert time to GMT info
-***********************************
-
 .. index:: GMTIME
 
 .. index:: time, conversion to GMT info
+
+GMTIME --- Convert time to GMT info
+***********************************
 
 .. function:: GMTIME(TIME, VALUES)
 

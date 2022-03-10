@@ -5,14 +5,14 @@
 
 .. _c-extensions:
 
-Extensions to the C Language Family
------------------------------------
-
 .. index:: extensions, C language
 
 .. index:: C language extensions
 
 .. index:: pedantic
+
+Extensions to the C Language Family
+-----------------------------------
 
 GNU C provides several language features not found in ISO standard C.
 (The :option:`-pedantic` option directs GCC to print a warning message if

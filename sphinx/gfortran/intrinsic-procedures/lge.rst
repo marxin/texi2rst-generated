@@ -5,14 +5,14 @@
 
 .. _lge:
 
-LGE --- Lexical greater than or equal
-*************************************
-
 .. index:: LGE
 
 .. index:: lexical comparison of strings
 
 .. index:: string, comparison
+
+LGE --- Lexical greater than or equal
+*************************************
 
 .. function:: LGE(STRING_A, STRING_B)
 

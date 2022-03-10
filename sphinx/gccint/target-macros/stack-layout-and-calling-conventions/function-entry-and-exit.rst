@@ -5,14 +5,14 @@
 
 .. _function-entry:
 
-Function Entry and Exit
-^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: function entry and exit
 
 .. index:: prologue
 
 .. index:: epilogue
+
+Function Entry and Exit
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This section describes the macros that output function entry
 (:dfn:`prologue`) and exit (:dfn:`epilogue`) code.

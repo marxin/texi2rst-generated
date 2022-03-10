@@ -5,12 +5,12 @@
 
 .. _trim:
 
-TRIM --- Remove trailing blank characters of a string
-*****************************************************
-
 .. index:: TRIM
 
 .. index:: string, remove trailing whitespace
+
+TRIM --- Remove trailing blank characters of a string
+*****************************************************
 
 .. function:: TRIM(STRING)
 

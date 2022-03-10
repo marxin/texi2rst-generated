@@ -5,12 +5,12 @@
 
 .. _per-function-data:
 
-Defining data structures for per-function information.
-******************************************************
-
 .. index:: per-function data
 
 .. index:: data structures
+
+Defining data structures for per-function information.
+******************************************************
 
 If the target needs to store information on a per-function basis, GCC
 provides a macro and a couple of variables to allow this.  Note, just

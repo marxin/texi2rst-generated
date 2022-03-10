@@ -5,12 +5,12 @@
 
 .. _ggc-roots:
 
-Marking Roots for the Garbage Collector
-***************************************
-
 .. index:: roots, marking
 
 .. index:: marking roots
+
+Marking Roots for the Garbage Collector
+***************************************
 
 In addition to keeping track of types, the type machinery also locates
 the global variables (:dfn:`roots`) that the garbage collector starts

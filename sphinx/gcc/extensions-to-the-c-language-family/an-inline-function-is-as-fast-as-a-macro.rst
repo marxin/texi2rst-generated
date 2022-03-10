@@ -5,9 +5,6 @@
 
 .. _inline:
 
-An Inline Function is As Fast As a Macro
-****************************************
-
 .. index:: inline functions
 
 .. index:: integrating function code
@@ -15,6 +12,9 @@ An Inline Function is As Fast As a Macro
 .. index:: open coding
 
 .. index:: macros, inline alternative
+
+An Inline Function is As Fast As a Macro
+****************************************
 
 By declaring a function inline, you can direct GCC to make
 calls to that function faster.  One way GCC can achieve this is to

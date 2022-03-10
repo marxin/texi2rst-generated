@@ -7,10 +7,10 @@
 
 .. _c-sky-options:
 
+.. index:: C-SKY Options
+
 C-SKY Options
 ^^^^^^^^^^^^^
-
-.. index:: C-SKY Options
 
 GCC supports these options when compiling for C-SKY V2 processors.
 

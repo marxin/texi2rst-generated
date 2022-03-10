@@ -5,9 +5,6 @@
 
 .. _rtl-objects:
 
-RTL Object Types
-****************
-
 .. index:: RTL object types
 
 .. index:: RTL integers
@@ -19,6 +16,9 @@ RTL Object Types
 .. index:: RTL expression
 
 .. index:: RTX (See RTL)
+
+RTL Object Types
+****************
 
 RTL uses five kinds of objects: expressions, integers, wide integers,
 strings and vectors.  Expressions are the most important ones.  An RTL

@@ -5,12 +5,12 @@
 
 .. _len_trim:
 
-LEN_TRIM --- Length of a character entity without trailing blank characters
-***************************************************************************
-
 .. index:: LEN_TRIM
 
 .. index:: string, length, without trailing whitespace
+
+LEN_TRIM --- Length of a character entity without trailing blank characters
+***************************************************************************
 
 .. function:: LEN_TRIM(STRING , KIND)
 

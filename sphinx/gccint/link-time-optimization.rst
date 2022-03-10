@@ -10,9 +10,6 @@
 
 .. _lto:
 
-Link Time Optimization
-----------------------
-
 .. index:: lto
 
 .. index:: whopr
@@ -20,6 +17,9 @@ Link Time Optimization
 .. index:: wpa
 
 .. index:: ltrans
+
+Link Time Optimization
+----------------------
 
 Link Time Optimization (LTO) gives GCC the capability of
 dumping its internal representation (GIMPLE) to disk,

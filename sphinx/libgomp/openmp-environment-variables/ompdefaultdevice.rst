@@ -5,10 +5,10 @@
 
 .. _omp_default_device:
 
+.. index:: Environment Variable
+
 OMP_DEFAULT_DEVICE -- Set the device used in target regions
 ***********************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Set to choose the device which is used in a ``target`` region, unless the

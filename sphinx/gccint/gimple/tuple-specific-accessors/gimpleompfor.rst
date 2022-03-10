@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_FOR
+
 GIMPLE_OMP_FOR
 ^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_FOR
 
 .. function:: gomp_for *gimple_build_omp_for (gimple_seq body, tree clauses, tree index, tree initial, tree final, tree incr, gimple_seq pre_body, enum tree_code omp_for_cond)
 

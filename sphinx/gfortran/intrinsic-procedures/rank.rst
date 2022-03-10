@@ -5,12 +5,12 @@
 
 .. _rank:
 
-RANK --- Rank of a data object
-******************************
-
 .. index:: RANK
 
 .. index:: rank
+
+RANK --- Rank of a data object
+******************************
 
 .. function:: RANK(A)
 

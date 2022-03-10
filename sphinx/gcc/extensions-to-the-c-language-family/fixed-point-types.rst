@@ -5,9 +5,6 @@
 
 .. _fixed-point:
 
-Fixed-Point Types
-*****************
-
 .. index:: fixed-point types
 
 .. index:: _Fract data type
@@ -79,6 +76,9 @@ Fixed-Point Types
 .. index:: ULK fixed-suffix
 
 .. index:: ULLK fixed-suffix
+
+Fixed-Point Types
+*****************
 
 As an extension, GNU C supports fixed-point types as
 defined in the N1169 draft of ISO/IEC DTR 18037.  Support for fixed-point

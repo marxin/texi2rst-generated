@@ -72,11 +72,11 @@
   This option is supported on GNU/Linux targets, most other Unix derivatives,
   and also on x86 Cygwin and MinGW targets.
 
+.. index:: make
+
+.. index:: dependencies, make
+
 .. option:: -M
-
-  .. index:: make
-
-  .. index:: dependencies, make
 
   Instead of outputting the result of preprocessing, output a rule
   suitable for :command:`make` describing the dependencies of the main
@@ -302,17 +302,17 @@
   ``__builtin_FILE()`` during compilation.  See also
   :option:`-ffile-prefix-map`.
 
-.. option:: -fexec-charset={charset}
+.. index:: character set, execution
 
-  .. index:: character set, execution
+.. option:: -fexec-charset={charset}
 
   Set the execution character set, used for string and character
   constants.  The default is UTF-8.  :samp:`{charset}` can be any encoding
   supported by the system's ``iconv`` library routine.
 
-.. option:: -fwide-exec-charset={charset}
+.. index:: character set, wide execution
 
-  .. index:: character set, wide execution
+.. option:: -fwide-exec-charset={charset}
 
   Set the wide execution character set, used for wide string and
   character constants.  The default is UTF-32 or UTF-16, whichever
@@ -321,9 +321,9 @@
   by the system's ``iconv`` library routine; however, you will have
   problems with encodings that do not fit exactly in ``wchar_t``.
 
-.. option:: -finput-charset={charset}
+.. index:: character set, input
 
-  .. index:: character set, input
+.. option:: -finput-charset={charset}
 
   Set the input character set, used for translation from the character
   set of the input file to the source character set used by GCC.  If the

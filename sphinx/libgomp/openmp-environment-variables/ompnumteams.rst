@@ -5,10 +5,10 @@
 
 .. _omp_num_teams:
 
+.. index:: Environment Variable
+
 OMP_NUM_TEAMS -- Specifies the number of teams to use by teams region
 *********************************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Specifies the upper bound for number of teams to use in teams regions

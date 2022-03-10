@@ -5,12 +5,12 @@
 
 .. _alternate-keywords:
 
-Alternate Keywords
-******************
-
 .. index:: alternate keywords
 
 .. index:: keywords, alternate
+
+Alternate Keywords
+******************
 
 :option:`-ansi` and the various :option:`-std` options disable certain
 keywords.  This causes trouble when you want to use GNU C extensions, or

@@ -5,14 +5,14 @@
 
 .. _expander-definitions:
 
-Defining RTL Sequences for Code Generation
-******************************************
-
 .. index:: expander definitions
 
 .. index:: code generation RTL sequences
 
 .. index:: defining RTL sequences for code generation
+
+Defining RTL Sequences for Code Generation
+******************************************
 
 On some target machines, some standard pattern names for RTL generation
 cannot be handled with single insn, but a sequence of RTL insns can

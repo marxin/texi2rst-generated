@@ -5,12 +5,12 @@
 
 .. _invocation:
 
-Invocation
-----------
-
 .. index:: invocation
 
 .. index:: command line
+
+Invocation
+----------
 
 Most often when you use the C preprocessor you do not have to invoke it
 explicitly: the C compiler does so automatically.  However, the

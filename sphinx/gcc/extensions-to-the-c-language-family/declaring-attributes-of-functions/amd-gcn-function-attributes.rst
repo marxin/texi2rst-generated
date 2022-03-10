@@ -10,9 +10,9 @@ AMD GCN Function Attributes
 
 These function attributes are supported by the AMD GCN back end:
 
-.. gcc-attr:: amdgpu_hsa_kernel
+.. index:: amdgpu_hsa_kernel function attribute, AMD GCN
 
-  .. index:: amdgpu_hsa_kernel function attribute, AMD GCN
+.. gcc-attr:: amdgpu_hsa_kernel
 
   This attribute indicates that the corresponding function should be compiled as
   a kernel function, that is an entry point that can be invoked from the host

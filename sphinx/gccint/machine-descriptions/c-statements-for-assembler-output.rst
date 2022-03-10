@@ -5,14 +5,14 @@
 
 .. _output-statement:
 
-C Statements for Assembler Output
-*********************************
-
 .. index:: output statements
 
 .. index:: C statements for assembler output
 
 .. index:: generating assembler output
+
+C Statements for Assembler Output
+*********************************
 
 Often a single fixed template string cannot produce correct and efficient
 assembler code for all the cases that are recognized by a single

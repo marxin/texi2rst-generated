@@ -5,10 +5,10 @@
 
 .. _stack-and-calling:
 
+.. index:: calling conventions
+
 Stack Layout and Calling Conventions
 ************************************
-
-.. index:: calling conventions
 
 .. prevent bad page break with this line
 

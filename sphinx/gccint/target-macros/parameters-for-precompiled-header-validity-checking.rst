@@ -5,10 +5,10 @@
 
 .. _pch-target:
 
+.. index:: parameters, precompiled headers
+
 Parameters for Precompiled Header Validity Checking
 ***************************************************
-
-.. index:: parameters, precompiled headers
 
 .. function:: void * TARGET_GET_PCH_VALIDITY (size_t *sz)
 

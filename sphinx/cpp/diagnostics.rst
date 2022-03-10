@@ -5,9 +5,6 @@
 
 .. _diagnostics:
 
-Diagnostics
------------
-
 .. index:: diagnostic
 
 .. index:: reporting errors
@@ -15,6 +12,9 @@ Diagnostics
 .. index:: reporting warnings
 
 .. index:: #error
+
+Diagnostics
+-----------
 
 The directive :samp:`#error` causes the preprocessor to report a fatal
 error.  The tokens forming the rest of the line following :samp:`#error`

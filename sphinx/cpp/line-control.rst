@@ -5,10 +5,10 @@
 
 .. _line-control:
 
+.. index:: line control
+
 Line Control
 ------------
-
-.. index:: line control
 
 The C preprocessor informs the C compiler of the location in your source
 code where each token came from.  Presently, this is just the file name

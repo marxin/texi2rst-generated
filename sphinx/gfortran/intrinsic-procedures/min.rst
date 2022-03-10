@@ -5,9 +5,6 @@
 
 .. _min:
 
-MIN --- Minimum value of an argument list
-*****************************************
-
 .. index:: MIN
 
 .. index:: MIN0
@@ -21,6 +18,9 @@ MIN --- Minimum value of an argument list
 .. index:: DMIN1
 
 .. index:: minimum value
+
+MIN --- Minimum value of an argument list
+*****************************************
 
 .. function:: MIN(A1, A2 , A3, ...)
 

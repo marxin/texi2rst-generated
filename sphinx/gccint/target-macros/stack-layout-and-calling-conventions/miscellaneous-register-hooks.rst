@@ -5,10 +5,10 @@
 
 .. _miscellaneous-register-hooks:
 
+.. index:: miscellaneous register hooks
+
 Miscellaneous register hooks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: miscellaneous register hooks
 
 .. c:var:: bool TARGET_CALL_FUSAGE_CONTAINS_NON_CALLEE_CLOBBERS
 

@@ -5,10 +5,10 @@
 
 .. _system-headers:
 
+.. index:: system header files
+
 System Headers
 **************
-
-.. index:: system header files
 
 The header files declaring interfaces to the operating system and
 runtime libraries often cannot be written in strictly conforming C.

@@ -5,9 +5,6 @@
 
 .. _sign:
 
-SIGN --- Sign copying function
-******************************
-
 .. index:: SIGN
 
 .. index:: ISIGN
@@ -15,6 +12,9 @@ SIGN --- Sign copying function
 .. index:: DSIGN
 
 .. index:: sign copying
+
+SIGN --- Sign copying function
+******************************
 
 .. function:: SIGN(A,B)
 

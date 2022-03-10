@@ -5,10 +5,10 @@
 
 .. _environment-variables:
 
+.. index:: environment variables
+
 Environment Variables
 ---------------------
-
-.. index:: environment variables
 
 This section describes the environment variables that affect how CPP
 operates.  You can use them to specify directories or prefixes to use

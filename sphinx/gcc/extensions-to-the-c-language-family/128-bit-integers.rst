@@ -5,10 +5,10 @@
 
 .. _int128:
 
+.. index:: __int128 data types
+
 128-bit Integers
 ****************
-
-.. index:: __int128 data types
 
 As an extension the integer scalar type ``__int128`` is supported for
 targets which have an integer mode wide enough to hold 128 bits.

@@ -5,9 +5,6 @@
 
 .. _asind:
 
-ASIND --- Arcsine function, degrees
-***********************************
-
 .. index:: ASIND
 
 .. index:: DASIND
@@ -15,6 +12,9 @@ ASIND --- Arcsine function, degrees
 .. index:: trigonometric function, sine, inverse, degrees
 
 .. index:: sine, inverse, degrees
+
+ASIND --- Arcsine function, degrees
+***********************************
 
 .. function:: ASIND(X)
 

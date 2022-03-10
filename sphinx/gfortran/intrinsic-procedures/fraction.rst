@@ -5,14 +5,14 @@
 
 .. _fraction:
 
-FRACTION --- Fractional part of the model representation
-********************************************************
-
 .. index:: FRACTION
 
 .. index:: real number, fraction
 
 .. index:: floating point, fraction
+
+FRACTION --- Fractional part of the model representation
+********************************************************
 
 .. function:: FRACTION(X)
 

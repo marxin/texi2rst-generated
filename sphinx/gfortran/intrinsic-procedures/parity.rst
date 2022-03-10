@@ -5,9 +5,6 @@
 
 .. _parity:
 
-PARITY --- Reduction with exclusive OR
-**************************************
-
 .. index:: PARITY
 
 .. index:: Parity
@@ -15,6 +12,9 @@ PARITY --- Reduction with exclusive OR
 .. index:: Reduction, XOR
 
 .. index:: XOR reduction
+
+PARITY --- Reduction with exclusive OR
+**************************************
 
 .. function:: PARITY(MASK, DIM)
 

@@ -5,12 +5,12 @@
 
 .. _conversions:
 
-Conversions
-***********
-
 .. index:: conversions
 
 .. index:: machine mode conversions
+
+Conversions
+***********
 
 All conversions between machine modes must be represented by
 explicit conversion operations.  For example, an expression

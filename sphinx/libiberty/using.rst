@@ -5,14 +5,14 @@
 
 .. _using:
 
-Using
------
-
 .. index:: using libiberty
 
 .. index:: libiberty usage
 
 .. index:: how to use
+
+Using
+-----
 
 .. THIS SECTION IS CRAP AND NEEDS REWRITING BADLY.
 

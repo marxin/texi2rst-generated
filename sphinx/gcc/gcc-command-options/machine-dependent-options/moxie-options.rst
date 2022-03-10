@@ -7,10 +7,10 @@
 
 .. _moxie-options:
 
+.. index:: Moxie Options
+
 Moxie Options
 ^^^^^^^^^^^^^
-
-.. index:: Moxie Options
 
 .. option:: -meb
 

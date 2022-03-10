@@ -5,14 +5,14 @@
 
 .. _wrapper-headers:
 
-Wrapper Headers
-***************
-
 .. index:: wrapper headers
 
 .. index:: overriding a header file
 
 .. index:: #include_next
+
+Wrapper Headers
+***************
 
 Sometimes it is necessary to adjust the contents of a system-provided
 header file without editing it directly.  GCC's :command:`fixincludes`

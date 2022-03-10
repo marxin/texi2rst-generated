@@ -7,10 +7,10 @@
 
 .. _tile-gx-options:
 
+.. index:: TILE-Gx options
+
 TILE-Gx Options
 ^^^^^^^^^^^^^^^
-
-.. index:: TILE-Gx options
 
 These :samp:`-m` options are supported on the TILE-Gx:
 

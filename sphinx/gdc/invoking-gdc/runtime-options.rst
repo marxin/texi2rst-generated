@@ -5,10 +5,10 @@
 
 .. _runtime-options:
 
+.. index:: options, runtime
+
 Runtime Options
 ***************
-
-.. index:: options, runtime
 
 These options affect the runtime behavior of programs compiled with
 :command:`gdc`.

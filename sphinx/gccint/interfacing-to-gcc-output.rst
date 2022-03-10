@@ -5,9 +5,6 @@
 
 .. _interface:
 
-Interfacing to GCC Output
--------------------------
-
 .. index:: interfacing to GCC output
 
 .. index:: run-time conventions
@@ -15,6 +12,9 @@ Interfacing to GCC Output
 .. index:: function call conventions
 
 .. index:: conventions, run-time
+
+Interfacing to GCC Output
+-------------------------
 
 GCC is normally configured to use the same function calling convention
 normally in use on the target system.  This is done with the

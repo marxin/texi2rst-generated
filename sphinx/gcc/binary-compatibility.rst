@@ -5,14 +5,14 @@
 
 .. _compatibility:
 
-Binary Compatibility
---------------------
-
 .. index:: binary compatibility
 
 .. index:: ABI
 
 .. index:: application binary interface
+
+Binary Compatibility
+--------------------
 
 Binary compatibility encompasses several related concepts:
 

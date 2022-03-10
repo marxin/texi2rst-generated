@@ -7,10 +7,10 @@
 
 .. _visium-options:
 
+.. index:: Visium options
+
 Visium Options
 ^^^^^^^^^^^^^^
-
-.. index:: Visium options
 
 .. option:: -mdebug
 

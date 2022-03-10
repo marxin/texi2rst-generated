@@ -5,10 +5,10 @@
 
 .. _simple-constraints:
 
+.. index:: simple constraints
+
 Simple Constraints
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: simple constraints
 
 The simplest kind of constraint is a string full of letters, each of
 which describes one kind of operand that is permitted.  Here are
@@ -401,10 +401,10 @@ other-letters
 
 .. _multi-alternative:
 
+.. index:: multiple alternative constraints
+
 Multiple Alternative Constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: multiple alternative constraints
 
 Sometimes a single instruction has multiple alternative sets of possible
 operands.  For example, on the 68000, a logical-or instruction can combine
@@ -516,12 +516,12 @@ Register Class Preferences
 
 .. _modifiers:
 
-Constraint Modifier Characters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: modifiers in constraints
 
 .. index:: constraint modifier characters
+
+Constraint Modifier Characters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. prevent bad page break with this line
 
@@ -649,12 +649,12 @@ Here are constraint modifier characters.
 
 .. _machine-constraints:
 
-Constraints for Particular Machines
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: machine specific constraints
 
 .. index:: constraints, machine specific
+
+Constraints for Particular Machines
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Whenever possible, you should use the general-purpose constraint letters
 in ``asm`` arguments, since they will convey meaning more readily to

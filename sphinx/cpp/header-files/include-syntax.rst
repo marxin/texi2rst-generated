@@ -5,10 +5,10 @@
 
 .. _include-syntax:
 
+.. index:: #include
+
 Include Syntax
 **************
-
-.. index:: #include
 
 Both user and system header files are included using the preprocessing
 directive :samp:`#include`.  It has two variants:

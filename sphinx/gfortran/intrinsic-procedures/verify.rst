@@ -5,12 +5,12 @@
 
 .. _verify:
 
-VERIFY --- Scan a string for characters not a given set
-*******************************************************
-
 .. index:: VERIFY
 
 .. index:: string, find missing set
+
+VERIFY --- Scan a string for characters not a given set
+*******************************************************
 
 .. function:: VERIFY(STRING, SET, BACK , KIND)
 

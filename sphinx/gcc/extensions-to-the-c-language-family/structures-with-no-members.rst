@@ -5,12 +5,12 @@
 
 .. _empty-structures:
 
-Structures with No Members
-**************************
-
 .. index:: empty structures
 
 .. index:: zero-size structures
+
+Structures with No Members
+**************************
 
 GCC permits a C structure to have no members:
 

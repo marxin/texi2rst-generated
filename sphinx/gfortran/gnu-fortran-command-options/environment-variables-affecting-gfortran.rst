@@ -5,10 +5,10 @@
 
 .. _environment-variables:
 
+.. index:: environment variable
+
 Environment variables affecting gfortran
 ****************************************
-
-.. index:: environment variable
 
 Environment
 ^^^^^^^^^^^

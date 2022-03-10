@@ -5,12 +5,12 @@
 
 .. _register-arguments:
 
-Passing Arguments in Registers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: arguments in registers
 
 .. index:: registers arguments
+
+Passing Arguments in Registers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This section describes the macros which let you control how various
 types of arguments are passed in registers or how they are arranged in

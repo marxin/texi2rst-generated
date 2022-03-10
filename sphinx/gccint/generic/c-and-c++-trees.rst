@@ -251,10 +251,10 @@ language-dependent info about GENERIC types.
 
 .. _namespaces:
 
+.. index:: namespace, scope
+
 Namespaces
 ^^^^^^^^^^
-
-.. index:: namespace, scope
 
 .. index:: NAMESPACE_DECL
 
@@ -334,10 +334,10 @@ The following macros and functions can be used on a ``NAMESPACE_DECL`` :
 
 .. _classes:
 
+.. index:: class, scope
+
 Classes
 ^^^^^^^
-
-.. index:: class, scope
 
 .. index:: RECORD_TYPE
 
@@ -471,10 +471,10 @@ The following macros can be used on a tree node representing a class-type.
 
 .. _functions-for-c++:
 
+.. index:: function
+
 Functions for C++
 ^^^^^^^^^^^^^^^^^
-
-.. index:: function
 
 .. index:: FUNCTION_DECL
 
@@ -683,10 +683,10 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
 
 .. _statements-for-c-and-c++:
 
+.. index:: statements
+
 Statements for C and C++
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: statements
 
 .. index:: BREAK_STMT
 

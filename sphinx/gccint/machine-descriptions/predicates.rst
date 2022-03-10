@@ -5,14 +5,14 @@
 
 .. _predicates:
 
-Predicates
-**********
-
 .. index:: predicates
 
 .. index:: operand predicates
 
 .. index:: operator predicates
+
+Predicates
+**********
 
 A predicate determines whether a ``match_operand`` or
 ``match_operator`` expression matches, and therefore whether the
@@ -76,12 +76,12 @@ diagnosis when special predicates are used.
 
 .. _machine-independent-predicates:
 
-Machine-Independent Predicates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: machine-independent predicates
 
 .. index:: generic predicates
+
+Machine-Independent Predicates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These are the generic predicates available to all back ends.  They are
 defined in :samp:`recog.cc`.  The first category of predicates allow
@@ -220,14 +220,14 @@ modes; that is, the expression code will be one of ``eq``, ``ne``,
 
 .. _defining-predicates:
 
-Defining Machine-Specific Predicates
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: defining predicates
 
 .. index:: define_predicate
 
 .. index:: define_special_predicate
+
+Defining Machine-Specific Predicates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Many machines have requirements for their operands that cannot be
 expressed precisely using the generic predicates.  You can define

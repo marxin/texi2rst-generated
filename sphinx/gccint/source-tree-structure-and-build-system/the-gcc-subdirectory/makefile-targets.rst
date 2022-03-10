@@ -5,12 +5,12 @@
 
 .. _makefile:
 
-Makefile Targets
-^^^^^^^^^^^^^^^^
-
 .. index:: makefile targets
 
 .. index:: targets, makefile
+
+Makefile Targets
+^^^^^^^^^^^^^^^^
 
 These targets are available from the :samp:`gcc` directory:
 

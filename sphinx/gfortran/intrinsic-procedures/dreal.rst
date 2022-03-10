@@ -5,12 +5,12 @@
 
 .. _dreal:
 
-DREAL --- Double real part function
-***********************************
-
 .. index:: DREAL
 
 .. index:: complex numbers, real part
+
+DREAL --- Double real part function
+***********************************
 
 .. function:: DREAL(Z)
 

@@ -5,14 +5,14 @@
 
 .. _c-dialect-options:
 
-Options Controlling C Dialect
-*****************************
-
 .. index:: dialect options
 
 .. index:: language dialect options
 
 .. index:: options, dialect
+
+Options Controlling C Dialect
+*****************************
 
 The following options control the dialect of C (or languages derived
 from C, such as C++, Objective-C and Objective-C++) that the compiler
@@ -231,9 +231,9 @@ accepts:
 
   Default setting; overrides :option:`-fno-asm`.
 
-.. option:: -fno-builtin, -fno-builtin-function
+.. index:: built-in functions
 
-  .. index:: built-in functions
+.. option:: -fno-builtin, -fno-builtin-function
 
   Don't recognize built-in functions that do not begin with
   :samp:`__builtin_` as prefix.  See :ref:`other-builtins`, for details of the functions affected,
@@ -280,9 +280,9 @@ accepts:
   third arguments.  The value of such an expression is void.  This option
   is not supported for C++.
 
-.. option:: -ffreestanding
+.. index:: hosted environment
 
-  .. index:: hosted environment
+.. option:: -ffreestanding
 
   Assert that compilation targets a freestanding environment.  This
   implies :option:`-fno-builtin`.  A freestanding environment
@@ -333,9 +333,9 @@ accepts:
   ``__GNUC_STDC_INLINE__`` may be used to check which semantics are
   in effect for ``inline`` functions.  See :ref:`cpp:common-predefined-macros`.
 
-.. option:: -fhosted
+.. index:: hosted environment
 
-  .. index:: hosted environment
+.. option:: -fhosted
 
   Assert that compilation targets a hosted environment.  This implies
   :option:`-fbuiltin`.  A hosted environment is one in which the
@@ -369,13 +369,13 @@ accepts:
   Note that this option is off for all targets except for x86
   targets using ms-abi.
 
+.. index:: Offloading targets
+
+.. index:: OpenACC offloading targets
+
+.. index:: OpenMP offloading targets
+
 .. option:: -foffload=disable
-
-  .. index:: Offloading targets
-
-  .. index:: OpenACC offloading targets
-
-  .. index:: OpenMP offloading targets
 
   Specify for which OpenMP and OpenACC offload targets code should be generated.
   The default behavior, equivalent to :option:`-foffload`:samp:`=default`, is to generate
@@ -388,13 +388,13 @@ accepts:
   run the compiler with :option:`-v` to show the list of configured offload targets
   under ``OFFLOAD_TARGET_NAMES``.
 
+.. index:: Offloading options
+
+.. index:: OpenACC offloading options
+
+.. index:: OpenMP offloading options
+
 .. option:: -foffload-options={options}
-
-  .. index:: Offloading options
-
-  .. index:: OpenACC offloading options
-
-  .. index:: OpenMP offloading options
 
   With :option:`-foffload-options`:samp:`={options}`, GCC passes the specified
   :samp:`{options}` to the compilers for all enabled offloading targets.  You can
@@ -409,9 +409,9 @@ accepts:
   :option:`-foffload-options`:samp:`="-lgfortran` :option:`-lm"` :option:`-foffload-options`:samp:`=nvptx-none=-latomic` |gol|
   :option:`-foffload-options`:samp:`=amdgcn-amdhsa=-march=gfx906` :option:`-foffload-options`:samp:`=-lm`
 
-.. option:: -fopenacc
+.. index:: OpenACC accelerator programming
 
-  .. index:: OpenACC accelerator programming
+.. option:: -fopenacc
 
   Enable handling of OpenACC directives ``#pragma acc`` in C/C++ and
   ``!$acc`` in Fortran.  When :option:`-fopenacc` is specified, the
@@ -420,18 +420,18 @@ accepts:
   implies :option:`-pthread`, and thus is only supported on targets that
   have support for :option:`-pthread`.
 
-.. option:: -fopenacc-dim={geom}
+.. index:: OpenACC accelerator programming
 
-  .. index:: OpenACC accelerator programming
+.. option:: -fopenacc-dim={geom}
 
   Specify default compute dimensions for parallel offload regions that do
   not explicitly specify.  The :samp:`{geom}` value is a triple of
   ':'-separated sizes, in order 'gang', 'worker' and, 'vector'.  A size
   can be omitted, to use a target-specific default value.
 
-.. option:: -fopenmp
+.. index:: OpenMP parallel
 
-  .. index:: OpenMP parallel
+.. option:: -fopenmp
 
   Enable handling of OpenMP directives ``#pragma omp`` in C/C++ and
   ``!$omp`` in Fortran.  When :option:`-fopenmp` is specified, the
@@ -441,11 +441,11 @@ accepts:
   have support for :option:`-pthread`. :option:`-fopenmp` implies
   :option:`-fopenmp-simd`.
 
+.. index:: OpenMP SIMD
+
+.. index:: SIMD
+
 .. option:: -fopenmp-simd
-
-  .. index:: OpenMP SIMD
-
-  .. index:: SIMD
 
   Enable handling of OpenMP's SIMD directives with ``#pragma omp``
   in C/C++ and ``!$omp`` in Fortran. Other OpenMP directives

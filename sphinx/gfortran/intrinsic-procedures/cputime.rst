@@ -5,12 +5,12 @@
 
 .. _cpu_time:
 
-CPU_TIME --- CPU elapsed time in seconds
-****************************************
-
 .. index:: CPU_TIME
 
 .. index:: time, elapsed
+
+CPU_TIME --- CPU elapsed time in seconds
+****************************************
 
 .. function:: CPU_TIME(TIME)
 

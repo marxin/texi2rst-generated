@@ -5,10 +5,10 @@
 
 .. _offsetof:
 
+.. index:: __builtin_offsetof
+
 Support for offsetof
 ********************
-
-.. index:: __builtin_offsetof
 
 GCC implements for both C and C++ a syntactic extension to implement
 the ``offsetof`` macro.

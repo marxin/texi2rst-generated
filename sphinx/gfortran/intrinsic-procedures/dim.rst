@@ -5,9 +5,6 @@
 
 .. _dim:
 
-DIM --- Positive difference
-***************************
-
 .. index:: DIM
 
 .. index:: IDIM
@@ -15,6 +12,9 @@ DIM --- Positive difference
 .. index:: DDIM
 
 .. index:: positive difference
+
+DIM --- Positive difference
+***************************
 
 .. function:: DIM(X,Y)
 

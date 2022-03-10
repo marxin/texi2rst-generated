@@ -5,12 +5,12 @@
 
 .. _basic-blocks:
 
-Basic Blocks
-************
-
 .. index:: basic block
 
 .. index:: basic_block
+
+Basic Blocks
+************
 
 A basic block is a straight-line sequence of code with only one entry
 point and only one exit.  In GCC, basic blocks are represented using

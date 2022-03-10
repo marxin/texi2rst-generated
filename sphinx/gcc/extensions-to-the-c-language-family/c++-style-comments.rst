@@ -5,14 +5,14 @@
 
 .. _c++-comments:
 
-C++ Style Comments
-******************
-
 .. index:: //
 
 .. index:: C++ comments
 
 .. index:: comments, C++ style
+
+C++ Style Comments
+******************
 
 In GNU C, you may use C++ style comments, which start with :samp:`//` and
 continue until the end of the line.  Many other C implementations allow

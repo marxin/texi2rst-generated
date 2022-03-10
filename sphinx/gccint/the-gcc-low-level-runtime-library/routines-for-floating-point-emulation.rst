@@ -7,9 +7,6 @@
 
 .. _soft-float-library-routines:
 
-Routines for floating point emulation
-*************************************
-
 .. index:: soft float library
 
 .. index:: arithmetic library
@@ -17,6 +14,9 @@ Routines for floating point emulation
 .. index:: math library
 
 .. index:: msoft-float
+
+Routines for floating point emulation
+*************************************
 
 The software floating point library is used on machines which do not
 have hardware support for floating point.  It is also used whenever

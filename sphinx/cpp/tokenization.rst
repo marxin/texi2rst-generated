@@ -5,12 +5,12 @@
 
 .. _tokenization:
 
-Tokenization
-************
-
 .. index:: tokens
 
 .. index:: preprocessing tokens
+
+Tokenization
+************
 
 After the textual transformations are finished, the input file is
 converted into a sequence of :dfn:`preprocessing tokens`.  These mostly

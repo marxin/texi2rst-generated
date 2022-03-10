@@ -5,14 +5,14 @@
 
 .. _idate:
 
-IDATE --- Get current local time subroutine (day/month/year) 
-*************************************************************
-
 .. index:: IDATE
 
 .. index:: date, current
 
 .. index:: current date
+
+IDATE --- Get current local time subroutine (day/month/year) 
+*************************************************************
 
 .. function:: IDATE(VALUES)
 

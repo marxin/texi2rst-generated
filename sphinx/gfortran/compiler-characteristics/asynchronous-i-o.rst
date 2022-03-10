@@ -5,12 +5,12 @@
 
 .. _asynchronous-i-o:
 
-Asynchronous I/O
-****************
-
 .. index:: input/output, asynchronous
 
 .. index:: asynchronous I/O
+
+Asynchronous I/O
+****************
 
 Asynchronous I/O is supported if the program is linked against the
 POSIX thread library. If that is not the case, all I/O is performed

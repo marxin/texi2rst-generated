@@ -7,10 +7,10 @@
 
 .. _openrisc-options:
 
+.. index:: OpenRISC Options
+
 OpenRISC Options
 ^^^^^^^^^^^^^^^^
-
-.. index:: OpenRISC Options
 
 These options are defined for OpenRISC:
 

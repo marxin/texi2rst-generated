@@ -5,14 +5,14 @@
 
 .. _developer-options:
 
-Developer Options
-*****************
-
 .. index:: developer options
 
 .. index:: debug dump options
 
 .. index:: dump options
+
+Developer Options
+*****************
 
 This section describes command-line options that are primarily of
 interest to developers or language tooling.

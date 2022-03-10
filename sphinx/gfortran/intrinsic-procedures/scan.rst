@@ -5,12 +5,12 @@
 
 .. _scan:
 
-SCAN --- Scan a string for the presence of a set of characters
-**************************************************************
-
 .. index:: SCAN
 
 .. index:: string, find subset
+
+SCAN --- Scan a string for the presence of a set of characters
+**************************************************************
 
 .. function:: SCAN(STRING, SET, BACK , KIND)
 

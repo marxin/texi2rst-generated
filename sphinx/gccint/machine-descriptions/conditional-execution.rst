@@ -5,12 +5,12 @@
 
 .. _conditional-execution:
 
-Conditional Execution
-*********************
-
 .. index:: conditional execution
 
 .. index:: predication
+
+Conditional Execution
+*********************
 
 A number of architectures provide for some form of conditional
 execution, or predication.  The hallmark of this feature is the

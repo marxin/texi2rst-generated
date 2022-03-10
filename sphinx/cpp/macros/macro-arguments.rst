@@ -5,14 +5,14 @@
 
 .. _macro-arguments:
 
-Macro Arguments
-***************
-
 .. index:: arguments
 
 .. index:: macros with arguments
 
 .. index:: arguments in macro definitions
+
+Macro Arguments
+***************
 
 Function-like macros can take :dfn:`arguments`, just like true functions.
 To define a macro that uses arguments, you insert :dfn:`parameters`

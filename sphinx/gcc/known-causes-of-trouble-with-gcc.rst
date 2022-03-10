@@ -5,14 +5,14 @@
 
 .. _trouble:
 
-Known Causes of Trouble with GCC
---------------------------------
-
 .. index:: bugs, known
 
 .. index:: installation trouble
 
 .. index:: known causes of trouble
+
+Known Causes of Trouble with GCC
+--------------------------------
 
 This section describes known problems that affect users of GCC.  Most
 of these are not GCC bugs per se---if they were, we would fix them.

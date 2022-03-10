@@ -5,10 +5,10 @@
 
 .. _iterators:
 
+.. index:: iterators in .md files
+
 Iterators
 *********
-
-.. index:: iterators in .md files
 
 Ports often need to define similar patterns for more than one machine
 mode or for more than one rtx code.  GCC provides some simple iterator
@@ -20,10 +20,10 @@ facilities to make this process easier.
 
 .. _mode-iterators:
 
+.. index:: mode iterators in .md files
+
 Mode Iterators
 ^^^^^^^^^^^^^^
-
-.. index:: mode iterators in .md files
 
 Ports often need to define similar patterns for two or more different modes.
 For example:
@@ -47,10 +47,10 @@ rtx-based construct, such as a ``define_insn``,
 
 .. _defining-mode-iterators:
 
+.. index:: define_mode_iterator
+
 Defining Mode Iterators
 ~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: define_mode_iterator
 
 The syntax for defining a mode iterator is:
 
@@ -94,10 +94,10 @@ substitutions.  See :ref:`substitutions`.
 
 .. _substitutions:
 
+.. index:: define_mode_attr
+
 Substitution in Mode Iterators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. index:: define_mode_attr
 
 If an :samp:`.md` file construct uses mode iterators, each version of the
 construct will often need slightly different strings or modes.  For
@@ -208,14 +208,14 @@ This is exactly equivalent to:
 
 .. _code-iterators:
 
-Code Iterators
-^^^^^^^^^^^^^^
-
 .. index:: code iterators in .md files
 
 .. index:: define_code_iterator
 
 .. index:: define_code_attr
+
+Code Iterators
+^^^^^^^^^^^^^^
 
 Code iterators operate in a similar way to mode iterators.  See :ref:`mode-iterators`.
 
@@ -315,14 +315,14 @@ This is equivalent to:
 
 .. _int-iterators:
 
-Int Iterators
-^^^^^^^^^^^^^
-
 .. index:: int iterators in .md files
 
 .. index:: define_int_iterator
 
 .. index:: define_int_attr
+
+Int Iterators
+^^^^^^^^^^^^^
 
 Int iterators operate in a similar way to code iterators.  See :ref:`code-iterators`.
 
@@ -395,14 +395,14 @@ This is equivalent to:
 
 .. _subst-iterators:
 
-Subst Iterators
-^^^^^^^^^^^^^^^
-
 .. index:: subst iterators in .md files
 
 .. index:: define_subst
 
 .. index:: define_subst_attr
+
+Subst Iterators
+^^^^^^^^^^^^^^^
 
 Subst iterators are special type of iterators with the following
 restrictions: they could not be declared explicitly, they always have
@@ -448,10 +448,10 @@ replaced in the second copy of the original RTL-template.
 
 .. _parameterized-names:
 
+.. index:: @ in instruction pattern names
+
 Parameterized Names
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: @ in instruction pattern names
 
 Ports sometimes need to apply iterators using C++ code, in order to
 get the code or RTL pattern for a specific instruction.  For example,

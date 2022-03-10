@@ -5,10 +5,10 @@
 
 .. _debug-information:
 
+.. index:: Variable Location Debug Information in RTL
+
 Variable Location Debug Information in RTL
 ******************************************
-
-.. index:: Variable Location Debug Information in RTL
 
 Variable tracking relies on ``MEM_EXPR`` and ``REG_EXPR``
 annotations to determine what user variables memory and register

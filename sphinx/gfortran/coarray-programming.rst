@@ -5,10 +5,10 @@
 
 .. _coarray-programming:
 
+.. index:: Coarrays
+
 Coarray Programming
 -------------------
-
-.. index:: Coarrays
 
 .. toctree::
   :maxdepth: 2

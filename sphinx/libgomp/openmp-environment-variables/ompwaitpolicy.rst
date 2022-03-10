@@ -5,10 +5,10 @@
 
 .. _omp_wait_policy:
 
+.. index:: Environment Variable
+
 OMP_WAIT_POLICY -- How waiting threads are handled
 **************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Specifies whether waiting threads should be active or passive.  If

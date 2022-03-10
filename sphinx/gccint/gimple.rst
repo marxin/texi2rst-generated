@@ -5,10 +5,10 @@
 
 .. _gimple:
 
+.. index:: GIMPLE
+
 GIMPLE
 ------
-
-.. index:: GIMPLE
 
 GIMPLE is a three-address representation derived from GENERIC by
 breaking down GENERIC expressions into tuples of no more than 3

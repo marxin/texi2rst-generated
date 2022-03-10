@@ -5,9 +5,6 @@
 
 .. _instrumentation-options:
 
-Program Instrumentation Options
-*******************************
-
 .. index:: instrumentation options
 
 .. index:: program instrumentation options
@@ -21,6 +18,9 @@ Program Instrumentation Options
 .. index:: options, run-time error checking
 
 .. index:: options, profiling
+
+Program Instrumentation Options
+*******************************
 
 GCC supports a number of command-line options that control adding
 run-time instrumentation to the code it normally generates.  

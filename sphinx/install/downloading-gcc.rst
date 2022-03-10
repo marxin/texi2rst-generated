@@ -5,12 +5,12 @@
 
 .. _downloading-the-source:
 
-Downloading GCC
----------------
-
 .. index:: Downloading GCC
 
 .. index:: Downloading the Source
+
+Downloading GCC
+---------------
 
 GCC is distributed via `git <https://gcc.gnu.org/git.html>`_ and via
 HTTPS as tarballs compressed with :command:`gzip` or :command:`bzip2`.

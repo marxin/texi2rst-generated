@@ -5,14 +5,14 @@
 
 .. _move_alloc:
 
-MOVE_ALLOC --- Move allocation from one object to another
-*********************************************************
-
 .. index:: MOVE_ALLOC
 
 .. index:: moving allocation
 
 .. index:: allocation, moving
+
+MOVE_ALLOC --- Move allocation from one object to another
+*********************************************************
 
 .. function:: MOVE_ALLOC(FROM, TO)
 

@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: poly_int, runtime value
+
 Overview of poly_int
 ********************
-
-.. index:: poly_int, runtime value
 
 We define indeterminates :samp:`{x1}`, ..., :samp:`{xn}` whose values are
 only known at runtime and use polynomials of the form:

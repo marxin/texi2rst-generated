@@ -5,9 +5,6 @@
 
 .. _developer-options:
 
-GCC Developer Options
-*********************
-
 .. index:: developer options
 
 .. index:: debugging GCC
@@ -17,6 +14,9 @@ GCC Developer Options
 .. index:: dump options
 
 .. index:: compilation statistics
+
+GCC Developer Options
+*********************
 
 This section describes command-line options that are primarily of
 interest to GCC developers, including options to support compiler
@@ -65,9 +65,9 @@ The files are created in the directory of the output file.
   may generate multiple callgraph information files next to intermediate
   LTO output files.
 
-.. option:: -dletters, -fdump-rtl-pass, -fdump-rtl-pass={filename}
+.. index:: fdump-rtl-pass
 
-  .. index:: fdump-rtl-pass
+.. option:: -dletters, -fdump-rtl-pass, -fdump-rtl-pass={filename}
 
   Says to make debugging dumps during compilation at times specified by
   :samp:`{letters}`.  This is used for debugging the RTL-based passes of the

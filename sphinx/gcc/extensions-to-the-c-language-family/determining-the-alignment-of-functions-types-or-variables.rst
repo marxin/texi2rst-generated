@@ -5,14 +5,14 @@
 
 .. _alignment:
 
-Determining the Alignment of Functions, Types or Variables
-**********************************************************
-
 .. index:: alignment
 
 .. index:: type alignment
 
 .. index:: variable alignment
+
+Determining the Alignment of Functions, Types or Variables
+**********************************************************
 
 The keyword ``__alignof__`` determines the alignment requirement of
 a function, object, or a type, or the minimum alignment usually required

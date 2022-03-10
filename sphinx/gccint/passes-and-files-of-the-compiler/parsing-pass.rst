@@ -5,12 +5,12 @@
 
 .. _parsing-pass:
 
-Parsing pass
-************
-
 .. index:: GENERIC
 
 .. index:: lang_hooks.parse_file
+
+Parsing pass
+************
 
 The language front end is invoked only once, via
 ``lang_hooks.parse_file``, to parse the entire input.  The language

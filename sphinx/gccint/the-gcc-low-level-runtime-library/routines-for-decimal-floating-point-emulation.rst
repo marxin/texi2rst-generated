@@ -5,12 +5,12 @@
 
 .. _decimal-float-library-routines:
 
-Routines for decimal floating point emulation
-*********************************************
-
 .. index:: decimal float library
 
 .. index:: IEEE 754-2008
+
+Routines for decimal floating point emulation
+*********************************************
 
 The software decimal floating point library implements IEEE 754-2008
 decimal floating point arithmetic and is only activated on selected

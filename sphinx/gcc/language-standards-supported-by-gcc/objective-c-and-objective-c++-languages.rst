@@ -3,12 +3,12 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-Objective-C and Objective-C++ Languages
-***************************************
-
 .. index:: Objective-C
 
 .. index:: Objective-C++
+
+Objective-C and Objective-C++ Languages
+***************************************
 
 GCC supports 'traditional' Objective-C (also known as 'Objective-C
 1.0') and contains support for the Objective-C exception and

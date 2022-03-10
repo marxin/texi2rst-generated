@@ -5,14 +5,14 @@
 
 .. _arithmetic:
 
-RTL Expressions for Arithmetic
-******************************
-
 .. index:: arithmetic, in RTL
 
 .. index:: math, in RTL
 
 .. index:: RTL expressions for arithmetic
+
+RTL Expressions for Arithmetic
+******************************
 
 Unless otherwise specified, all the operands of arithmetic expressions
 must be valid for mode :samp:`{m}`.  An operand is valid for mode :samp:`{m}`

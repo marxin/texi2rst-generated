@@ -5,9 +5,6 @@
 
 .. _fdate:
 
-FDATE --- Get the current time as a string
-******************************************
-
 .. index:: FDATE
 
 .. index:: time, current
@@ -17,6 +14,9 @@ FDATE --- Get the current time as a string
 .. index:: date, current
 
 .. index:: current date
+
+FDATE --- Get the current time as a string
+******************************************
 
 .. function:: FDATE(DATE)
 

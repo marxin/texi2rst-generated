@@ -7,10 +7,10 @@
 
 .. _msp430-options:
 
+.. index:: MSP430 Options
+
 MSP430 Options
 ^^^^^^^^^^^^^^
-
-.. index:: MSP430 Options
 
 These options are defined for the MSP430:
 

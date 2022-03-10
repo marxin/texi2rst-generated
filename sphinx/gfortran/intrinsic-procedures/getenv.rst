@@ -5,12 +5,12 @@
 
 .. _getenv:
 
-GETENV --- Get an environmental variable
-****************************************
-
 .. index:: GETENV
 
 .. index:: environment variable
+
+GETENV --- Get an environmental variable
+****************************************
 
 .. function:: GETENV(NAME, VALUE)
 

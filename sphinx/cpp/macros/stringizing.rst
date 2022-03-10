@@ -5,12 +5,12 @@
 
 .. _stringizing:
 
-Stringizing
-***********
-
 .. index:: stringizing
 
 .. index:: # operator
+
+Stringizing
+***********
 
 Sometimes you may want to convert a macro argument into a string
 constant.  Parameters are not replaced inside string constants, but you

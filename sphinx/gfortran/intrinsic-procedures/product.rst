@@ -5,9 +5,6 @@
 
 .. _product:
 
-PRODUCT --- Product of array elements
-*************************************
-
 .. index:: PRODUCT
 
 .. index:: array, product
@@ -17,6 +14,9 @@ PRODUCT --- Product of array elements
 .. index:: array, conditionally multiply elements
 
 .. index:: multiply array elements
+
+PRODUCT --- Product of array elements
+*************************************
 
 .. function:: PRODUCT(ARRAY, DIM, MASK)
 

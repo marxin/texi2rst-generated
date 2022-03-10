@@ -5,14 +5,14 @@
 
 .. _code-gen-options:
 
-Options for Code Generation Conventions
-***************************************
-
 .. index:: code generation conventions
 
 .. index:: options, code generation
 
 .. index:: run-time options
+
+Options for Code Generation Conventions
+***************************************
 
 These machine-independent options control the interface conventions
 used in code generation.
@@ -264,9 +264,9 @@ it.
     code that is not binary compatible with code generated without that switch.
     Use it to conform to a non-default application binary interface.
 
-.. option:: -fcommon
+.. index:: tentative definitions
 
-  .. index:: tentative definitions
+.. option:: -fcommon
 
   In C code, this option controls the placement of global variables
   defined without an initializer, known as :dfn:`tentative definitions`
@@ -406,11 +406,11 @@ it.
   See also :option:`-grecord-gcc-switches` for another
   way of storing compiler options into the object file.
 
+.. index:: global offset table
+
+.. index:: PIC
+
 .. option:: -fpic
-
-  .. index:: global offset table
-
-  .. index:: PIC
 
   Generate position-independent code (PIC) suitable for use in a shared
   library, if supported for the target machine.  Such code accesses all

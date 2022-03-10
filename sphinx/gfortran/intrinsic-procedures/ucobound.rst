@@ -5,12 +5,12 @@
 
 .. _ucobound:
 
-UCOBOUND --- Upper codimension bounds of an array
-*************************************************
-
 .. index:: UCOBOUND
 
 .. index:: coarray, upper bound
+
+UCOBOUND --- Upper codimension bounds of an array
+*************************************************
 
 .. function:: UCOBOUND(COARRAY , DIM , KIND)
 

@@ -5,10 +5,10 @@
 
 .. _building:
 
+.. index:: Building
+
 Building
 --------
-
-.. index:: Building
 
 Now that GCC is configured, you are ready to build the compiler and
 runtime libraries.

@@ -5,12 +5,12 @@
 
 .. _gomp_stacksize:
 
-GOMP_STACKSIZE -- Set default thread stack size
-***********************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+GOMP_STACKSIZE -- Set default thread stack size
+***********************************************
 
 :samp:`{Description}:`
   Set the default thread stack size in kilobytes.  This is different from

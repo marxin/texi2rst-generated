@@ -5,14 +5,14 @@
 
 .. _iany:
 
-IANY --- Bitwise OR of array elements
-*************************************
-
 .. index:: IANY
 
 .. index:: array, OR
 
 .. index:: bits, OR of array elements
+
+IANY --- Bitwise OR of array elements
+*************************************
 
 .. function:: IANY(ARRAY, DIM, MASK)
 

@@ -5,14 +5,14 @@
 
 .. _mclock:
 
-MCLOCK --- Time function
-************************
-
 .. index:: MCLOCK
 
 .. index:: time, clock ticks
 
 .. index:: clock ticks
+
+MCLOCK --- Time function
+************************
 
 .. function:: MCLOCK()
 

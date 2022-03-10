@@ -5,9 +5,6 @@
 
 .. _volatiles:
 
-When is a Volatile Object Accessed?
-***********************************
-
 .. index:: accessing volatiles
 
 .. index:: volatile read
@@ -15,6 +12,9 @@ When is a Volatile Object Accessed?
 .. index:: volatile write
 
 .. index:: volatile access
+
+When is a Volatile Object Accessed?
+***********************************
 
 C has the concept of volatile objects.  These are normally accessed by
 pointers and used for accessing hardware or inter-thread

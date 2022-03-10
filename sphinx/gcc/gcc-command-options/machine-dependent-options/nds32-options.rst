@@ -7,10 +7,10 @@
 
 .. _nds32-options:
 
+.. index:: NDS32 Options
+
 NDS32 Options
 ^^^^^^^^^^^^^
-
-.. index:: NDS32 Options
 
 These options are defined for NDS32 implementations:
 

@@ -5,14 +5,14 @@
 
 .. _expression-trees:
 
-Expressions
-***********
-
 .. index:: expression
 
 .. index:: TREE_TYPE
 
 .. index:: TREE_OPERAND
+
+Expressions
+***********
 
 The internal representation for expressions is for the most part quite
 straightforward.  However, there are a few facts that one must bear in

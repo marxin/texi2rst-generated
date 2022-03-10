@@ -10,9 +10,9 @@ IA-64 Function Attributes
 
 These function attributes are supported on IA-64 targets:
 
-.. gcc-attr:: syscall_linkage
+.. index:: syscall_linkage function attribute, IA-64
 
-  .. index:: syscall_linkage function attribute, IA-64
+.. gcc-attr:: syscall_linkage
 
   This attribute is used to modify the IA-64 calling convention by marking
   all input registers as live at all function exits.  This makes it possible
@@ -20,9 +20,9 @@ These function attributes are supported on IA-64 targets:
   the input registers.  This also prevents kernel data from leaking into
   application code.
 
-.. gcc-attr:: version_id
+.. index:: version_id function attribute, IA-64
 
-  .. index:: version_id function attribute, IA-64
+.. gcc-attr:: version_id
 
   This IA-64 HP-UX attribute, attached to a global variable or function, renames a
   symbol to contain a version string, thus allowing for function level

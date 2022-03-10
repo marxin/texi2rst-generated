@@ -5,12 +5,12 @@
 
 .. _incompatibilities:
 
-Incompatibilities of GCC
-************************
-
 .. index:: incompatibilities of GCC
 
 .. index:: traditional
+
+Incompatibilities of GCC
+************************
 
 There are several noteworthy incompatibilities between GNU C and K&R
 (non-ISO) versions of C.

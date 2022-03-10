@@ -5,12 +5,12 @@
 
 .. _lnblnk:
 
-LNBLNK --- Index of the last non-blank character in a string
-************************************************************
-
 .. index:: LNBLNK
 
 .. index:: string, find non-blank character
+
+LNBLNK --- Index of the last non-blank character in a string
+************************************************************
 
 .. function:: LNBLNK(STRING)
 

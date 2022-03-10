@@ -5,14 +5,14 @@
 
 .. _poppar:
 
-POPPAR --- Parity of the number of bits set
-*******************************************
-
 .. index:: POPPAR
 
 .. index:: binary representation
 
 .. index:: parity
+
+POPPAR --- Parity of the number of bits set
+*******************************************
 
 .. function:: POPPAR(I)
 

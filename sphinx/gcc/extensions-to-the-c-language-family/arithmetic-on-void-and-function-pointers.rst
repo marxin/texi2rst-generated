@@ -5,9 +5,6 @@
 
 .. _pointer-arith:
 
-Arithmetic on void- and Function-Pointers
-*****************************************
-
 .. index:: void pointers, arithmetic
 
 .. index:: void, size of pointer to
@@ -15,6 +12,9 @@ Arithmetic on void- and Function-Pointers
 .. index:: function pointers, arithmetic
 
 .. index:: function, size of pointer to
+
+Arithmetic on void- and Function-Pointers
+*****************************************
 
 In GNU C, addition and subtraction operations are supported on pointers to
 ``void`` and on pointers to functions.  This is done by treating the

@@ -5,12 +5,12 @@
 
 .. _tree-ssa:
 
-Analysis and Optimization of GIMPLE tuples
-------------------------------------------
-
 .. index:: Tree SSA
 
 .. index:: Optimization infrastructure for GIMPLE
+
+Analysis and Optimization of GIMPLE tuples
+------------------------------------------
 
 GCC uses three main intermediate languages to represent the program
 during compilation: GENERIC, GIMPLE and RTL.  GENERIC is a

@@ -5,12 +5,12 @@
 
 .. _files:
 
-Source Files Containing Type Information
-****************************************
-
 .. index:: generated files
 
 .. index:: files, generated
+
+Source Files Containing Type Information
+****************************************
 
 Whenever you add ``GTY`` markers to a source file that previously
 had none, or create a new source file containing ``GTY`` markers,

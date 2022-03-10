@@ -5,12 +5,12 @@
 
 .. _host-fragment:
 
-Host Makefile Fragments
-***********************
-
 .. index:: host makefile fragment
 
 .. index:: x-host
+
+Host Makefile Fragments
+***********************
 
 The use of :samp:`x-{host}` fragments is discouraged.  You should only
 use it for makefile dependencies.

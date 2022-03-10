@@ -5,12 +5,12 @@
 
 .. _lbound:
 
-LBOUND --- Lower dimension bounds of an array
-*********************************************
-
 .. index:: LBOUND
 
 .. index:: array, lower bound
+
+LBOUND --- Lower dimension bounds of an array
+*********************************************
 
 .. function:: LBOUND(ARRAY , DIM , KIND)
 

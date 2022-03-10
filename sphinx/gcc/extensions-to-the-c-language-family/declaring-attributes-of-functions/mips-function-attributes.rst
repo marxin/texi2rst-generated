@@ -10,9 +10,9 @@ MIPS Function Attributes
 
 These function attributes are supported by the MIPS back end:
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, MIPS
 
-  .. index:: interrupt function attribute, MIPS
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate that the specified function is an interrupt
   handler.  The compiler generates function entry and exit sequences suitable
@@ -73,17 +73,17 @@ These function attributes are supported by the MIPS back end:
     void __attribute__ ((interrupt("eic"))) v8 ();
     void __attribute__ ((interrupt("vector=hw3"))) v9 ();
 
+.. index:: indirect calls, MIPS
+
+.. index:: long_call function attribute, MIPS
+
+.. index:: short_call function attribute, MIPS
+
+.. index:: near function attribute, MIPS
+
+.. index:: far function attribute, MIPS
+
 .. gcc-attr:: long_call, short_call, near, far
-
-  .. index:: indirect calls, MIPS
-
-  .. index:: long_call function attribute, MIPS
-
-  .. index:: short_call function attribute, MIPS
-
-  .. index:: near function attribute, MIPS
-
-  .. index:: far function attribute, MIPS
 
   These attributes specify how a particular function is called on MIPS.
   The attributes override the :option:`-mlong-calls` (see :ref:`mips-options`)
@@ -95,11 +95,11 @@ These function attributes are supported by the MIPS back end:
   effect; they specify that non-PIC calls should be made using the more
   efficient ``jal`` instruction.
 
+.. index:: mips16 function attribute, MIPS
+
+.. index:: nomips16 function attribute, MIPS
+
 .. gcc-attr:: mips16, nomips16
-
-  .. index:: mips16 function attribute, MIPS
-
-  .. index:: nomips16 function attribute, MIPS
 
   On MIPS targets, you can use the :gcc-attr:`mips16` and ``nomips16``
   function attributes to locally select or turn off MIPS16 code generation.
@@ -115,11 +115,11 @@ These function attributes are supported by the MIPS back end:
   may interact badly with some GCC extensions such as ``__builtin_apply``
   (see :ref:`constructing-calls`).
 
+.. index:: micromips function attribute
+
+.. index:: nomicromips function attribute
+
 .. gcc-attr:: micromips, MIPS, nomicromips, MIPS
-
-  .. index:: micromips function attribute
-
-  .. index:: nomicromips function attribute
 
   On MIPS targets, you can use the ``micromips`` and ``nomicromips``
   function attributes to locally select or turn off microMIPS code generation.
@@ -136,9 +136,9 @@ These function attributes are supported by the MIPS back end:
   may interact badly with some GCC extensions such as ``__builtin_apply``
   (see :ref:`constructing-calls`).
 
-.. gcc-attr:: nocompression
+.. index:: nocompression function attribute, MIPS
 
-  .. index:: nocompression function attribute, MIPS
+.. gcc-attr:: nocompression
 
   On MIPS targets, you can use the :gcc-attr:`nocompression` function attribute
   to locally turn off MIPS16 and microMIPS code generation.  This attribute

@@ -5,10 +5,10 @@
 
 .. _bit-fields:
 
+.. index:: bit-fields
+
 Bit-Fields
 **********
-
-.. index:: bit-fields
 
 Special expression codes exist to represent bit-field instructions.
 

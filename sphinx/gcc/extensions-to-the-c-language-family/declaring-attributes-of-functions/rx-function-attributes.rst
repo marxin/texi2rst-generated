@@ -10,18 +10,18 @@ RX Function Attributes
 
 These function attributes are supported by the RX back end:
 
-.. gcc-attr:: fast_interrupt
+.. index:: fast_interrupt function attribute, RX
 
-  .. index:: fast_interrupt function attribute, RX
+.. gcc-attr:: fast_interrupt
 
   Use this attribute on the RX port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
   :gcc-attr:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, RX
 
-  .. index:: interrupt function attribute, RX
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -52,9 +52,9 @@ These function attributes are supported by the RX back end:
     void __attribute__ ((interrupt (RXD1_VECT,RXD2_VECT,"dct","$default")))
     	txd1_handler ();
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, RX
 
-  .. index:: naked function attribute, RX
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -65,9 +65,9 @@ These function attributes are supported by the RX back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. gcc-attr:: vector
+.. index:: vector function attribute, RX
 
-  .. index:: vector function attribute, RX
+.. gcc-attr:: vector
 
   This RX attribute is similar to the :gcc-attr:`interrupt` attribute, including its
   parameters, but does not make the function an interrupt-handler type

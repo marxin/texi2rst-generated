@@ -5,20 +5,20 @@
 
 .. _link-options:
 
-Influencing the linking step
-****************************
-
 .. index:: options, linking
 
 .. index:: linking, static
+
+Influencing the linking step
+****************************
 
 These options come into play when the compiler links object files into an 
 executable output file. They are meaningless if the compiler is not doing 
 a link step.
 
-.. option:: -static-libgfortran
+.. index:: static-libgfortran
 
-  .. index:: static-libgfortran
+.. option:: -static-libgfortran
 
   On systems that provide :samp:`libgfortran` as a shared and a static
   library, this option forces the use of the static version. If no

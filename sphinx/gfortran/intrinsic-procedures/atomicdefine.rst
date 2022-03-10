@@ -5,12 +5,12 @@
 
 .. _atomic_define:
 
-ATOMIC_DEFINE --- Setting a variable atomically
-***********************************************
-
 .. index:: ATOMIC_DEFINE
 
 .. index:: Atomic subroutine, define
+
+ATOMIC_DEFINE --- Setting a variable atomically
+***********************************************
 
 .. function:: ATOMIC_DEFINE(ATOM, VALUE)
 

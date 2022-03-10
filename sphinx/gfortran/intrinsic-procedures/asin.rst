@@ -5,9 +5,6 @@
 
 .. _asin:
 
-ASIN --- Arcsine function 
-**************************
-
 .. index:: ASIN
 
 .. index:: DASIN
@@ -15,6 +12,9 @@ ASIN --- Arcsine function
 .. index:: trigonometric function, sine, inverse
 
 .. index:: sine, inverse
+
+ASIN --- Arcsine function 
+**************************
 
 .. function:: ASIN(X)
 

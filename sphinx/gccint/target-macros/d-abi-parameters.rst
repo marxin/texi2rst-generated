@@ -5,10 +5,10 @@
 
 .. _d-language-and-abi:
 
+.. index:: parameters, d abi
+
 D ABI parameters
 ****************
-
-.. index:: parameters, d abi
 
 .. function:: void TARGET_D_CPU_VERSIONS (void)
 

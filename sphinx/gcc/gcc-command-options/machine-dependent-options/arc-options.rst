@@ -7,10 +7,10 @@
 
 .. _arc-options:
 
+.. index:: ARC options
+
 ARC Options
 ^^^^^^^^^^^
-
-.. index:: ARC options
 
 The following options control the architecture variant for which code
 is being compiled:

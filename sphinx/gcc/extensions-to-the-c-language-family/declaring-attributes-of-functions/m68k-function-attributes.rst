@@ -10,20 +10,20 @@ m68k Function Attributes
 
 These function attributes are supported by the m68k back end:
 
+.. index:: interrupt function attribute, m68k
+
+.. index:: interrupt_handler function attribute, m68k
+
 .. gcc-attr:: interrupt, interrupt_handler
-
-  .. index:: interrupt function attribute, m68k
-
-  .. index:: interrupt_handler function attribute, m68k
 
   Use this attribute to
   indicate that the specified function is an interrupt handler.  The compiler
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.  Either name may be used.
 
-.. gcc-attr:: interrupt_thread
+.. index:: interrupt_thread function attribute, fido
 
-  .. index:: interrupt_thread function attribute, fido
+.. gcc-attr:: interrupt_thread
 
   Use this attribute on fido, a subarchitecture of the m68k, to indicate
   that the specified function is an interrupt handler that is designed

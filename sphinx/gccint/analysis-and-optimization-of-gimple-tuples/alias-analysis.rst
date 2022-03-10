@@ -5,14 +5,14 @@
 
 .. _alias-analysis:
 
-Alias analysis
-**************
-
 .. index:: alias
 
 .. index:: flow-sensitive alias analysis
 
 .. index:: flow-insensitive alias analysis
+
+Alias analysis
+**************
 
 Alias analysis in GIMPLE SSA form consists of two pieces.  First
 the virtual SSA web ties conflicting memory accesses and provides

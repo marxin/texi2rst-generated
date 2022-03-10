@@ -5,14 +5,14 @@
 
 .. _transfer:
 
-TRANSFER --- Transfer bit patterns
-**********************************
-
 .. index:: TRANSFER
 
 .. index:: bits, move
 
 .. index:: type cast
+
+TRANSFER --- Transfer bit patterns
+**********************************
 
 .. function:: TRANSFER(SOURCE, MOLD, SIZE)
 

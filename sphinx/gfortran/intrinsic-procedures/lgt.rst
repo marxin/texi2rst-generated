@@ -5,14 +5,14 @@
 
 .. _lgt:
 
-LGT --- Lexical greater than
-****************************
-
 .. index:: LGT
 
 .. index:: lexical comparison of strings
 
 .. index:: string, comparison
+
+LGT --- Lexical greater than
+****************************
 
 .. function:: LGT(STRING_A, STRING_B)
 

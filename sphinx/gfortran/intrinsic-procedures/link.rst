@@ -5,14 +5,14 @@
 
 .. _link:
 
-LINK --- Create a hard link
-***************************
-
 .. index:: LINK
 
 .. index:: file system, create link
 
 .. index:: file system, hard link
+
+LINK --- Create a hard link
+***************************
 
 .. function:: LINK(PATH1, PATH2)
 

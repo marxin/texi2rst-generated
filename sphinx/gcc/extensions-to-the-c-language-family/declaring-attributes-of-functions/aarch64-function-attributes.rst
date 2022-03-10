@@ -13,9 +13,9 @@ AArch64 target.  For the most part, these options mirror the behavior of
 similar command-line options (see :ref:`aarch64-options`), but on a
 per-function basis.
 
-.. gcc-attr:: general-regs-only
+.. index:: general-regs-only function attribute, AArch64
 
-  .. index:: general-regs-only function attribute, AArch64
+.. gcc-attr:: general-regs-only
 
   Indicates that no floating-point or Advanced SIMD registers should be
   used when generating code for this function.  If the function explicitly
@@ -23,9 +23,9 @@ per-function basis.
   the same behavior as that of the command-line option
   :option:`-mgeneral-regs-only`.
 
-.. gcc-attr:: fix-cortex-a53-835769
+.. index:: fix-cortex-a53-835769 function attribute, AArch64
 
-  .. index:: fix-cortex-a53-835769 function attribute, AArch64
+.. gcc-attr:: fix-cortex-a53-835769
 
   Indicates that the workaround for the Cortex-A53 erratum 835769 should be
   applied to this function.  To explicitly disable the workaround for this
@@ -33,17 +33,17 @@ per-function basis.
   This corresponds to the behavior of the command line options
   :option:`-mfix-cortex-a53-835769` and :option:`-mno-fix-cortex-a53-835769`.
 
-.. gcc-attr:: cmodel=
+.. index:: cmodel= function attribute, AArch64
 
-  .. index:: cmodel= function attribute, AArch64
+.. gcc-attr:: cmodel=
 
   Indicates that code should be generated for a particular code model for
   this function.  The behavior and permissible arguments are the same as
   for the command line option :option:`-mcmodel`:samp:`=`.
 
-.. gcc-attr:: strict-align, no-strict-align
+.. index:: strict-align function attribute, AArch64
 
-  .. index:: strict-align function attribute, AArch64
+.. gcc-attr:: strict-align, no-strict-align
 
   :gcc-attr:`strict-align` indicates that the compiler should not assume that unaligned
   memory references are handled by the system.  To allow the compiler to assume
@@ -51,9 +51,9 @@ per-function basis.
   ``no-strict-align`` can be specified.  The behavior is same as for the
   command-line option :option:`-mstrict-align` and :option:`-mno-strict-align`.
 
-.. gcc-attr:: omit-leaf-frame-pointer
+.. index:: omit-leaf-frame-pointer function attribute, AArch64
 
-  .. index:: omit-leaf-frame-pointer function attribute, AArch64
+.. gcc-attr:: omit-leaf-frame-pointer
 
   Indicates that the frame pointer should be omitted for a leaf function call.
   To keep the frame pointer, the inverse attribute
@@ -61,41 +61,41 @@ per-function basis.
   the same behavior as the command-line options :option:`-momit-leaf-frame-pointer`
   and :option:`-mno-omit-leaf-frame-pointer`.
 
-.. gcc-attr:: tls-dialect=
+.. index:: tls-dialect= function attribute, AArch64
 
-  .. index:: tls-dialect= function attribute, AArch64
+.. gcc-attr:: tls-dialect=
 
   Specifies the TLS dialect to use for this function.  The behavior and
   permissible arguments are the same as for the command-line option
   :option:`-mtls-dialect`:samp:`=`.
 
-.. gcc-attr:: arch=
+.. index:: arch= function attribute, AArch64
 
-  .. index:: arch= function attribute, AArch64
+.. gcc-attr:: arch=
 
   Specifies the architecture version and architectural extensions to use
   for this function.  The behavior and permissible arguments are the same as
   for the :option:`-march` = command-line option.
 
-.. gcc-attr:: tune=
+.. index:: tune= function attribute, AArch64
 
-  .. index:: tune= function attribute, AArch64
+.. gcc-attr:: tune=
 
   Specifies the core for which to tune the performance of this function.
   The behavior and permissible arguments are the same as for the :option:`-mtune`:samp:`=`
   command-line option.
 
-.. gcc-attr:: cpu=
+.. index:: cpu= function attribute, AArch64
 
-  .. index:: cpu= function attribute, AArch64
+.. gcc-attr:: cpu=
 
   Specifies the core for which to tune the performance of this function and also
   whose architectural features to use.  The behavior and valid arguments are the
   same as for the :option:`-mcpu` = command-line option.
 
-.. gcc-attr:: sign-return-address
+.. index:: sign-return-address function attribute, AArch64
 
-  .. index:: sign-return-address function attribute, AArch64
+.. gcc-attr:: sign-return-address
 
   Select the function scope on which return address signing will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
@@ -103,17 +103,17 @@ per-function basis.
   attribute is deprecated.  The :gcc-attr:`branch-protection` attribute should
   be used instead.
 
-.. gcc-attr:: branch-protection
+.. index:: branch-protection function attribute, AArch64
 
-  .. index:: branch-protection function attribute, AArch64
+.. gcc-attr:: branch-protection
 
   Select the function scope on which branch protection will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
   :option:`-mbranch-protection` =.  The default value is ``none``.
 
-.. gcc-attr:: outline-atomics
+.. index:: outline-atomics function attribute, AArch64
 
-  .. index:: outline-atomics function attribute, AArch64
+.. gcc-attr:: outline-atomics
 
   Enable or disable calls to out-of-line helpers to implement atomic operations.
   This corresponds to the behavior of the command line options

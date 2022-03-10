@@ -5,12 +5,12 @@
 
 .. _link-options:
 
-Options for Linking
-*******************
-
 .. index:: link options
 
 .. index:: options, linking
+
+Options for Linking
+*******************
 
 These options come into play when the compiler links object files into
 an executable output file.  They are meaningless if the compiler is
@@ -365,9 +365,9 @@ not doing a link step.
   option :option:`-Xlinker -z -Xlinker defs`).  Only a few systems support
   this option.
 
-.. option:: -T {script}
+.. index:: linker script
 
-  .. index:: linker script
+.. option:: -T {script}
 
   Use :samp:`{script}` as the linker script.  This option is supported by most
   systems using the GNU linker.  On some targets, such as bare-board

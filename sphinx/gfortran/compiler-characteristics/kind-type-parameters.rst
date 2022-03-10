@@ -5,10 +5,10 @@
 
 .. _kind-type-parameters:
 
+.. index:: kind
+
 KIND Type Parameters
 ********************
-
-.. index:: kind
 
 The ``KIND`` type parameters supported by GNU Fortran for the primitive
 data types are:

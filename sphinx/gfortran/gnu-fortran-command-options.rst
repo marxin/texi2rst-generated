@@ -5,9 +5,6 @@
 
 .. _invoking-gnu-fortran:
 
-GNU Fortran Command Options
----------------------------
-
 .. index:: GNU Fortran command options
 
 .. index:: command options

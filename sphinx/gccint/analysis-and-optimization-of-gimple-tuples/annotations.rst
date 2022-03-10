@@ -5,10 +5,10 @@
 
 .. _annotations:
 
+.. index:: annotations
+
 Annotations
 ***********
-
-.. index:: annotations
 
 The optimizers need to associate attributes with variables during the
 optimization process.  For instance, we need to know whether a

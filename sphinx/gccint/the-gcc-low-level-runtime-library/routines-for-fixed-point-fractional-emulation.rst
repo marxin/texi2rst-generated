@@ -7,14 +7,14 @@
 
 .. _fixed-point-fractional-library-routines:
 
-Routines for fixed-point fractional emulation
-*********************************************
-
 .. index:: fixed-point fractional library
 
 .. index:: fractional types
 
 .. index:: Embedded C
+
+Routines for fixed-point fractional emulation
+*********************************************
 
 The software fixed-point library implements fixed-point fractional
 arithmetic, and is only activated on selected targets.

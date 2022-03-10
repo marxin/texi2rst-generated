@@ -3,16 +3,16 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. program:: IBM RS/6000 and PowerPC
+.. program::
 
 .. _rs-6000-and-powerpc-options:
-
-IBM RS/6000 and PowerPC Options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. index:: RS/6000 and PowerPC Options
 
 .. index:: IBM RS/6000 and PowerPC Options
+
+IBM RS/6000 and PowerPC Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
@@ -759,11 +759,11 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   end of the inline compare a call to ``strcmp`` or ``strncmp`` will
   take care of the rest of the comparison. The default is 64 bytes.
 
+.. index:: smaller data references (PowerPC)
+
+.. index:: .sdata/.sdata2 references (PowerPC)
+
 .. option:: -G {num}
-
-  .. index:: smaller data references (PowerPC)
-
-  .. index:: .sdata/.sdata2 references (PowerPC)
 
   On embedded PowerPC systems, put global and static items less than or
   equal to :samp:`{num}` bytes into the small data or BSS sections instead of

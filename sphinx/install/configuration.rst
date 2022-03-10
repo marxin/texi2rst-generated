@@ -5,12 +5,12 @@
 
 .. _configuration:
 
+.. index:: Configuration
+
+.. index:: Configuration
+
 Configuration
 -------------
-
-.. index:: Configuration
-
-.. index:: Configuration
 
 Like most GNU software, GCC must be configured before it can be built.
 This document describes the recommended configuration procedure

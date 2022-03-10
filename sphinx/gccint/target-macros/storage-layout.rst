@@ -5,10 +5,10 @@
 
 .. _storage-layout:
 
+.. index:: storage layout
+
 Storage Layout
 **************
-
-.. index:: storage layout
 
 Note that the definitions of the macros in this table which are sizes or
 alignments measured in bits do not need to be constant.  They can be C

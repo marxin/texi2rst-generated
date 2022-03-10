@@ -10,8 +10,6 @@
 Implementation-defined behavior
 *******************************
 
-.. index:: implementation-defined behavior
-
 This is how CPP behaves in all the cases which the C standard
 describes as :dfn:`implementation-defined`.  This term means that the
 implementation is free to do what it likes, but must document its choice

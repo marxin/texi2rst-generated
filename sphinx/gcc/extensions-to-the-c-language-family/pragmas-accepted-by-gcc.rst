@@ -5,12 +5,12 @@
 
 .. _pragmas:
 
-Pragmas Accepted by GCC
-***********************
-
 .. index:: pragmas
 
 .. index:: #pragma
+
+Pragmas Accepted by GCC
+***********************
 
 GCC supports several types of pragmas, primarily in order to compile
 code originally written for other compilers.  Note that in general

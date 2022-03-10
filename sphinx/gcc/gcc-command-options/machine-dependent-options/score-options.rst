@@ -7,10 +7,10 @@
 
 .. _score-options:
 
+.. index:: Score Options
+
 Score Options
 ^^^^^^^^^^^^^
-
-.. index:: Score Options
 
 These options are defined for Score implementations:
 

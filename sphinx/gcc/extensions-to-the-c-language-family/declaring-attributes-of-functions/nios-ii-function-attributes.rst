@@ -10,9 +10,9 @@ Nios II Function Attributes
 
 These function attributes are supported by the Nios II back end:
 
-.. gcc-attr:: target (options)
+.. index:: target function attribute
 
-  .. index:: target function attribute
+.. gcc-attr:: target (options)
 
   As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.

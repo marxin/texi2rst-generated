@@ -5,12 +5,12 @@
 
 .. _gomp_spincount:
 
-GOMP_SPINCOUNT -- Set the busy-wait spin count
-**********************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+GOMP_SPINCOUNT -- Set the busy-wait spin count
+**********************************************
 
 :samp:`{Description}:`
   Determines how long a threads waits actively with consuming CPU power

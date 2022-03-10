@@ -5,10 +5,10 @@
 
 .. _predefined-macros:
 
+.. index:: predefined macros
+
 Predefined Macros
 *****************
-
-.. index:: predefined macros
 
 Several object-like macros are predefined; you use them without
 supplying their definitions.  They fall into three classes: standard,
@@ -23,10 +23,10 @@ predefined macros, but you cannot undefine them.
 
 .. _standard-predefined-macros:
 
+.. index:: standard predefined macros.
+
 Standard Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: standard predefined macros.
 
 The standard predefined macros are specified by the relevant
 language standards, so they are available with all compilers that
@@ -174,10 +174,10 @@ with ``__FILE__`` and ``__LINE__``, though.
 
 .. _common-predefined-macros:
 
+.. index:: common predefined macros
+
 Common Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: common predefined macros
 
 The common predefined macros are GNU C extensions.  They are available
 with the same meanings regardless of the machine or operating system on
@@ -793,14 +793,14 @@ double underscores.
 
 .. _system-specific-predefined-macros:
 
-System-specific Predefined Macros
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: system-specific predefined macros
 
 .. index:: predefined macros, system-specific
 
 .. index:: reserved namespace
+
+System-specific Predefined Macros
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The C preprocessor normally predefines several macros that indicate what
 type of system and machine is in use.  They are obviously different on
@@ -837,14 +837,14 @@ check specifically for features you need, using a tool such as
 
 .. _c++-named-operators:
 
-C++ Named Operators
-^^^^^^^^^^^^^^^^^^^
-
 .. index:: named operators
 
 .. index:: C++ named operators
 
 .. index:: iso646.h
+
+C++ Named Operators
+^^^^^^^^^^^^^^^^^^^
 
 In C++, there are eleven keywords which are simply alternate spellings
 of operators normally written with punctuation.  These keywords are

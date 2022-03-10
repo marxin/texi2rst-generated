@@ -5,9 +5,6 @@
 
 .. _transpose:
 
-TRANSPOSE --- Transpose an array of rank two
-********************************************
-
 .. index:: TRANSPOSE
 
 .. index:: array, transpose
@@ -15,6 +12,9 @@ TRANSPOSE --- Transpose an array of rank two
 .. index:: matrix, transpose
 
 .. index:: transpose
+
+TRANSPOSE --- Transpose an array of rank two
+********************************************
 
 .. function:: TRANSPOSE(MATRIX)
 

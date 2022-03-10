@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_EH_FILTER
+
 GIMPLE_EH_FILTER
 ^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_EH_FILTER
 
 .. function:: geh_filter *gimple_build_eh_filter (tree types, gimple_seq failure)
 

@@ -5,14 +5,14 @@
 
 .. _getarg:
 
-GETARG --- Get command line arguments
-*************************************
-
 .. index:: GETARG
 
 .. index:: command-line arguments
 
 .. index:: arguments, to program
+
+GETARG --- Get command line arguments
+*************************************
 
 .. function:: GETARG(POS, VALUE)
 

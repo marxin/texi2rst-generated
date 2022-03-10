@@ -10,9 +10,9 @@ MicroBlaze Function Attributes
 
 These function attributes are supported on MicroBlaze targets:
 
-.. gcc-attr:: save_volatiles
+.. index:: save_volatiles function attribute, MicroBlaze
 
-  .. index:: save_volatiles function attribute, MicroBlaze
+.. gcc-attr:: save_volatiles
 
   Use this attribute to indicate that the function is
   an interrupt handler.  All volatile registers (in addition to non-volatile
@@ -20,11 +20,11 @@ These function attributes are supported on MicroBlaze targets:
   function, only volatiles used by the function are saved.  A normal function
   return is generated instead of a return from interrupt.
 
+.. index:: break_handler function attribute, MicroBlaze
+
+.. index:: break handler functions
+
 .. gcc-attr:: break_handler
-
-  .. index:: break_handler function attribute, MicroBlaze
-
-  .. index:: break handler functions
 
   Use this attribute to indicate that
   the specified function is a break handler.  The compiler generates function
@@ -36,11 +36,11 @@ These function attributes are supported on MicroBlaze targets:
 
     void f () __attribute__ ((break_handler));
 
+.. index:: interrupt_handler function attribute, MicroBlaze
+
+.. index:: fast_interrupt function attribute, MicroBlaze
+
 .. gcc-attr:: interrupt_handler, fast_interrupt
-
-  .. index:: interrupt_handler function attribute, MicroBlaze
-
-  .. index:: fast_interrupt function attribute, MicroBlaze
 
   These attributes indicate that the specified function is an interrupt
   handler.  Use the :gcc-attr:`fast_interrupt` attribute to indicate handlers

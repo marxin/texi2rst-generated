@@ -5,12 +5,12 @@
 
 .. _gimplification-pass:
 
-Gimplification pass
-*******************
-
 .. index:: gimplification
 
 .. index:: GIMPLE
+
+Gimplification pass
+*******************
 
 :dfn:`Gimplification` is a whimsical term for the process of converting
 the intermediate representation of a function into the GIMPLE language

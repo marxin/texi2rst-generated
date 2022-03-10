@@ -5,14 +5,14 @@
 
 .. _variable-length:
 
-Arrays of Variable Length
-*************************
-
 .. index:: variable-length arrays
 
 .. index:: arrays of variable length
 
 .. index:: VLAs
+
+Arrays of Variable Length
+*************************
 
 Variable-length automatic arrays are allowed in ISO C99, and as an
 extension GCC accepts them in C90 mode and in C++.  These arrays are

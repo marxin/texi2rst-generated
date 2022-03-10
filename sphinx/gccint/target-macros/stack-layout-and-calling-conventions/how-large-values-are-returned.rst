@@ -5,9 +5,6 @@
 
 .. _aggregate-return:
 
-How Large Values Are Returned
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: aggregates as return values
 
 .. index:: large return values
@@ -15,6 +12,9 @@ How Large Values Are Returned
 .. index:: returning aggregate values
 
 .. index:: structure value address
+
+How Large Values Are Returned
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When a function value's mode is ``BLKmode`` (and in some other
 cases), the value is not returned according to

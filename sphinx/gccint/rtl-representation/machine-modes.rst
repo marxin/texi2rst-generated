@@ -5,12 +5,12 @@
 
 .. _machine-modes:
 
-Machine Modes
-*************
-
 .. index:: machine modes
 
 .. index:: machine_mode
+
+Machine Modes
+*************
 
 A machine mode describes a size of data object and the representation used
 for it.  In the C code, machine modes are represented by an enumeration

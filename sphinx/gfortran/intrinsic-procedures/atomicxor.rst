@@ -5,12 +5,12 @@
 
 .. _atomic_xor:
 
-ATOMIC_XOR --- Atomic bitwise OR operation
-******************************************
-
 .. index:: ATOMIC_XOR
 
 .. index:: Atomic subroutine, XOR
+
+ATOMIC_XOR --- Atomic bitwise OR operation
+******************************************
 
 .. function:: ATOMIC_XOR (ATOM, VALUE , STAT)
 

@@ -5,14 +5,14 @@
 
 .. _selected_char_kind:
 
-SELECTED_CHAR_KIND --- Choose character kind
-********************************************
-
 .. index:: SELECTED_CHAR_KIND
 
 .. index:: character kind
 
 .. index:: kind, character
+
+SELECTED_CHAR_KIND --- Choose character kind
+********************************************
 
 .. function:: SELECTED_CHAR_KIND(NAME)
 

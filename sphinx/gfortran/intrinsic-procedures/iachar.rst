@@ -5,9 +5,6 @@
 
 .. _iachar:
 
-IACHAR --- Code in ASCII collating sequence 
-********************************************
-
 .. index:: IACHAR
 
 .. index:: ASCII collating sequence
@@ -15,6 +12,9 @@ IACHAR --- Code in ASCII collating sequence
 .. index:: collating sequence, ASCII
 
 .. index:: conversion, to integer
+
+IACHAR --- Code in ASCII collating sequence 
+********************************************
 
 .. function:: IACHAR(C)
 

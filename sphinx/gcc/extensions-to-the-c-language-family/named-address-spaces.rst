@@ -5,10 +5,10 @@
 
 .. _named-address-spaces:
 
+.. index:: Named Address Spaces
+
 Named Address Spaces
 ********************
-
-.. index:: Named Address Spaces
 
 As an extension, GNU C supports named address spaces as
 defined in the N1275 draft of ISO/IEC DTR 18037.  Support for named
@@ -181,10 +181,10 @@ Limitations and caveats
   Attribute :gcc-attr:`progmem` is supported but works differently,
   see :ref:`avr-variable-attributes`.
 
+.. index:: __far M32C Named Address Spaces
+
 M32C Named Address Spaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: __far M32C Named Address Spaces
 
 On the M32C target, with the R8C and M16C CPU variants, variables
 qualified with ``__far`` are accessed using 32-bit addresses in
@@ -192,10 +192,10 @@ order to access memory beyond the first 64 Ki bytes.  If
 ``__far`` is used with the M32CM or M32C CPU variants, it has no
 effect.
 
+.. index:: __regio_symbol PRU Named Address Spaces
+
 PRU Named Address Spaces
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: __regio_symbol PRU Named Address Spaces
 
 On the PRU target, variables qualified with ``__regio_symbol`` are
 aliases used to access the special I/O CPU registers.  They must be
@@ -211,20 +211,20 @@ example is the only valid usage of ``__regio_symbol`` :
   extern volatile __regio_symbol uint32_t __R30;
   extern volatile __regio_symbol uint32_t __R31;
 
+.. index:: __far RL78 Named Address Spaces
+
 RL78 Named Address Spaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: __far RL78 Named Address Spaces
 
 On the RL78 target, variables qualified with ``__far`` are accessed
 with 32-bit pointers (20-bit addresses) rather than the default 16-bit
 addresses.  Non-far variables are assumed to appear in the topmost
 64 KiB of the address space.
 
+.. index:: x86 named address spaces
+
 x86 Named Address Spaces
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: x86 named address spaces
 
 On the x86 target, variables may be declared as being relative
 to the ``%fs`` or ``%gs`` segments.

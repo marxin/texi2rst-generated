@@ -5,9 +5,6 @@
 
 .. _asinh:
 
-ASINH --- Inverse hyperbolic sine function
-******************************************
-
 .. index:: ASINH
 
 .. index:: DASINH
@@ -19,6 +16,9 @@ ASINH --- Inverse hyperbolic sine function
 .. index:: hyperbolic function, sine, inverse
 
 .. index:: sine, hyperbolic, inverse
+
+ASINH --- Inverse hyperbolic sine function
+******************************************
 
 .. function:: ASINH(X)
 

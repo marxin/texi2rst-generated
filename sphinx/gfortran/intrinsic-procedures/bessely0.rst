@@ -5,9 +5,6 @@
 
 .. _bessel_y0:
 
-BESSEL_Y0 --- Bessel function of the second kind of order 0
-***********************************************************
-
 .. index:: BESSEL_Y0
 
 .. index:: BESY0
@@ -15,6 +12,9 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
 .. index:: DBESY0
 
 .. index:: Bessel function, second kind
+
+BESSEL_Y0 --- Bessel function of the second kind of order 0
+***********************************************************
 
 .. function:: BESSEL_Y0(X)
 

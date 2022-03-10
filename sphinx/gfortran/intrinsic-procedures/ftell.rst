@@ -5,12 +5,12 @@
 
 .. _ftell:
 
-FTELL --- Current stream position
-*********************************
-
 .. index:: FTELL
 
 .. index:: file operation, position
+
+FTELL --- Current stream position
+*********************************
 
 .. function:: FTELL(UNIT)
 

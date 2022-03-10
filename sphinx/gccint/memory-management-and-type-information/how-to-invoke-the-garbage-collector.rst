@@ -5,12 +5,12 @@
 
 .. _invoking-the-garbage-collector:
 
-How to invoke the garbage collector
-***********************************
-
 .. index:: garbage collector, invocation
 
 .. index:: ggc_collect
+
+How to invoke the garbage collector
+***********************************
 
 The GCC garbage collector GGC is only invoked explicitly. In contrast
 with many other garbage collectors, it is not implicitly invoked by

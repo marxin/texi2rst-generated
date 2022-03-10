@@ -5,9 +5,6 @@
 
 .. _sind:
 
-SIND --- Sine function, degrees
-*******************************
-
 .. index:: SIND
 
 .. index:: DSIND
@@ -21,6 +18,9 @@ SIND --- Sine function, degrees
 .. index:: trigonometric function, sine, degrees
 
 .. index:: sine, degrees
+
+SIND --- Sine function, degrees
+*******************************
 
 .. function:: SIND(X)
 

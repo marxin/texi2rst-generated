@@ -5,14 +5,14 @@
 
 .. _get_command:
 
-GET_COMMAND --- Get the entire command line
-*******************************************
-
 .. index:: GET_COMMAND
 
 .. index:: command-line arguments
 
 .. index:: arguments, to program
+
+GET_COMMAND --- Get the entire command line
+*******************************************
 
 .. function:: GET_COMMAND(COMMAND, LENGTH, STATUS)
 

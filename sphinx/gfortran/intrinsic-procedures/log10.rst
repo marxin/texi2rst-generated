@@ -5,9 +5,6 @@
 
 .. _log10:
 
-LOG10 --- Base 10 logarithm function
-************************************
-
 .. index:: LOG10
 
 .. index:: ALOG10
@@ -19,6 +16,9 @@ LOG10 --- Base 10 logarithm function
 .. index:: logarithm function with base 10
 
 .. index:: base 10 logarithm function
+
+LOG10 --- Base 10 logarithm function
+************************************
 
 .. function:: LOG10(X)
 

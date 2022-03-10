@@ -5,10 +5,10 @@
 
 .. _implementation-limits:
 
+.. index:: implementation limits
+
 Implementation limits
 *********************
-
-.. index:: implementation limits
 
 CPP has a small number of internal limits.  This section lists the
 limits which the C standard requires to be no lower than some minimum,

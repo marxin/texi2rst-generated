@@ -5,10 +5,10 @@
 
 .. _user-gc:
 
+.. index:: user gc
+
 Support for user-provided GC marking routines
 *********************************************
-
-.. index:: user gc
 
 The garbage collector supports types for which no automatic marking
 code is generated.  For these types, the user is required to provide

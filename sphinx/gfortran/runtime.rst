@@ -5,10 +5,10 @@
 
 .. _runtime:
 
+.. index:: environment variable
+
 Runtime:  Influencing runtime behavior with environment variables
 -----------------------------------------------------------------
-
-.. index:: environment variable
 
 The behavior of the :command:`gfortran` can be influenced by
 environment variables.

@@ -5,10 +5,10 @@
 
 .. _extensions:
 
+.. index:: extensions
+
 Extensions
 ----------
-
-.. index:: extensions
 
 The two sections below detail the extensions to standard Fortran that are
 implemented in GNU Fortran, as well as some of the popular or

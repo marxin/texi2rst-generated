@@ -5,10 +5,10 @@
 
 .. _vague-linkage:
 
+.. index:: vague linkage
+
 Vague Linkage
 *************
-
-.. index:: vague linkage
 
 There are several constructs in C++ that require space in the object
 file but are not clearly tied to a single translation unit.  We say that

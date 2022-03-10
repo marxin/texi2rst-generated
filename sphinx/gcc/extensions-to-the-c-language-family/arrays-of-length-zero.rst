@@ -5,9 +5,6 @@
 
 .. _zero-length:
 
-Arrays of Length Zero
-*********************
-
 .. index:: arrays of length zero
 
 .. index:: zero-length arrays
@@ -15,6 +12,9 @@ Arrays of Length Zero
 .. index:: length-zero arrays
 
 .. index:: flexible array members
+
+Arrays of Length Zero
+*********************
 
 Declaring zero-length arrays is allowed in GNU C as an extension.
 A zero-length array can be useful as the last element of a structure

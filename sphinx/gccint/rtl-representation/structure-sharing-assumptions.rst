@@ -5,12 +5,12 @@
 
 .. _sharing:
 
-Structure Sharing Assumptions
-*****************************
-
 .. index:: sharing of RTL components
 
 .. index:: RTL structure sharing assumptions
+
+Structure Sharing Assumptions
+*****************************
 
 The compiler assumes that certain kinds of RTL expressions are unique;
 there do not exist two distinct objects representing the same value.

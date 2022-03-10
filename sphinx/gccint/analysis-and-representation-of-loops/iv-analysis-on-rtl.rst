@@ -5,10 +5,10 @@
 
 .. _loop-iv:
 
+.. index:: IV analysis on RTL
+
 IV analysis on RTL
 ******************
-
-.. index:: IV analysis on RTL
 
 The induction variable on RTL is simple and only allows analysis of
 affine induction variables, and only in one loop at once.  The interface

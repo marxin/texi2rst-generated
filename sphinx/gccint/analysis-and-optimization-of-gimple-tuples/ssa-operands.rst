@@ -5,9 +5,6 @@
 
 .. _ssa-operands:
 
-SSA Operands
-************
-
 .. index:: operands
 
 .. index:: virtual operands
@@ -15,6 +12,9 @@ SSA Operands
 .. index:: real operands
 
 .. index:: update_stmt
+
+SSA Operands
+************
 
 Almost every GIMPLE statement will contain a reference to a variable
 or memory location.  Since statements come in different shapes and
@@ -134,12 +134,12 @@ must be made to ``update_stmt`` when complete.  Calling one of the
 ``bsi_insert`` routines or ``bsi_replace`` performs an implicit
 call to ``update_stmt``.
 
-Operand Iterators And Access Routines
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: Operand Iterators
 
 .. index:: Operand Access Routines
+
+Operand Iterators And Access Routines
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Operands are collected by :samp:`tree-ssa-operands.cc`.  They are stored
 inside each statement's annotation and can be accessed through either the
@@ -302,10 +302,10 @@ appropriate but they are not quite as efficient as the individual
        my_code;
     }
 
+.. index:: Immediate Uses
+
 Immediate Uses
 ^^^^^^^^^^^^^^
-
-.. index:: Immediate Uses
 
 Immediate use information is now always available.  Using the immediate use
 iterators, you may examine every use of any ``SSA_NAME``. For instance,

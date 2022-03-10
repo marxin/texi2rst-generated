@@ -5,14 +5,14 @@
 
 .. _second:
 
-SECOND --- CPU time function
-****************************
-
 .. index:: SECOND
 
 .. index:: time, elapsed
 
 .. index:: elapsed time
+
+SECOND --- CPU time function
+****************************
 
 .. function:: SECOND()
 

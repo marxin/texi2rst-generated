@@ -5,12 +5,12 @@
 
 .. _malloc:
 
-MALLOC --- Allocate dynamic memory
-**********************************
-
 .. index:: MALLOC
 
 .. index:: pointer, cray
+
+MALLOC --- Allocate dynamic memory
+**********************************
 
 .. function:: MALLOC(SIZE)
 

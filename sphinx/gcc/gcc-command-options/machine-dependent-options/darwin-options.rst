@@ -7,10 +7,10 @@
 
 .. _darwin-options:
 
+.. index:: Darwin options
+
 Darwin Options
 ^^^^^^^^^^^^^^
-
-.. index:: Darwin options
 
 These options are defined for all architectures running the Darwin operating
 system.

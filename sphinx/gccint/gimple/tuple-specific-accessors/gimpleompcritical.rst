@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_CRITICAL
+
 GIMPLE_OMP_CRITICAL
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_CRITICAL
 
 .. function:: gomp_critical *gimple_build_omp_critical ( gimple_seq body, tree name)
 

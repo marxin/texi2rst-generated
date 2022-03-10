@@ -5,12 +5,12 @@
 
 .. _including-patterns:
 
-Including Patterns in Machine Descriptions.
-*******************************************
-
 .. index:: insn includes
 
 .. index:: include
+
+Including Patterns in Machine Descriptions.
+*******************************************
 
 The ``include`` pattern tells the compiler tools where to
 look for patterns that are in files other than in the file
@@ -52,14 +52,14 @@ Specifying an absolute path for the include file such as;
 
 is permitted but is not encouraged.
 
-RTL Generation Tool Options for Directory Search
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: directory options .md
 
 .. index:: options, directory search
 
 .. index:: search options
+
+RTL Generation Tool Options for Directory Search
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The :option:`-I`:samp:`{dir}` option specifies directories to search for machine descriptions.
 For example:

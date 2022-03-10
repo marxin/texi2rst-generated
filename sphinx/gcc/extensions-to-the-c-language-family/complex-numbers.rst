@@ -5,14 +5,14 @@
 
 .. _complex:
 
-Complex Numbers
-***************
-
 .. index:: complex numbers
 
 .. index:: _Complex keyword
 
 .. index:: __complex__ keyword
+
+Complex Numbers
+***************
 
 ISO C99 supports complex floating data types, and as an extension GCC
 supports them in C90 mode and in C++.  GCC also supports complex integer data

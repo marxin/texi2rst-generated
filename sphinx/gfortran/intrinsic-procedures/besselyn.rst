@@ -5,9 +5,6 @@
 
 .. _bessel_yn:
 
-BESSEL_YN --- Bessel function of the second kind
-************************************************
-
 .. index:: BESSEL_YN
 
 .. index:: BESYN
@@ -15,6 +12,9 @@ BESSEL_YN --- Bessel function of the second kind
 .. index:: DBESYN
 
 .. index:: Bessel function, second kind
+
+BESSEL_YN --- Bessel function of the second kind
+************************************************
 
 .. function:: BESSEL_YN(N, X)
 

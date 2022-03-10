@@ -5,12 +5,12 @@
 
 .. _user-experience-guidelines:
 
-User Experience Guidelines
---------------------------
-
 .. index:: user experience guidelines
 
 .. index:: guidelines, user experience
+
+User Experience Guidelines
+--------------------------
 
 To borrow a slogan from
 `Elm <https://elm-lang.org/news/compilers-as-assistants>`_,

@@ -5,12 +5,12 @@
 
 .. _atomic_fetch_and:
 
-ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
-******************************************************************
-
 .. index:: ATOMIC_FETCH_AND
 
 .. index:: Atomic subroutine, AND with fetch
+
+ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
+******************************************************************
 
 .. function:: ATOMIC_FETCH_AND (ATOM, VALUE, OLD , STAT)
 

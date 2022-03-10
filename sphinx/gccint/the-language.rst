@@ -5,10 +5,10 @@
 
 .. _the-language:
 
+.. index:: The Language
+
 The Language
 ************
-
-.. index:: The Language
 
 The language to write expression simplifications in resembles other
 domain-specific languages GCC uses.  Thus it is lispy.  Lets start

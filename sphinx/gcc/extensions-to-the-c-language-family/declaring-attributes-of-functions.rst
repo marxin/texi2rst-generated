@@ -5,9 +5,6 @@
 
 .. _function-attributes:
 
-Declaring Attributes of Functions
-*********************************
-
 .. index:: function attributes
 
 .. index:: declaring attributes of functions
@@ -15,6 +12,9 @@ Declaring Attributes of Functions
 .. index:: volatile applied to function
 
 .. index:: const applied to function
+
+Declaring Attributes of Functions
+*********************************
 
 In GNU C and C++, you can use function attributes to specify certain
 function properties that may help the compiler optimize calls or

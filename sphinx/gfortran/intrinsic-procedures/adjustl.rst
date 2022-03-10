@@ -5,14 +5,14 @@
 
 .. _adjustl:
 
-ADJUSTL --- Left adjust a string 
-*********************************
-
 .. index:: ADJUSTL
 
 .. index:: string, adjust left
 
 .. index:: adjust string
+
+ADJUSTL --- Left adjust a string 
+*********************************
 
 .. function:: ADJUSTL(STRING)
 

@@ -5,14 +5,14 @@
 
 .. _time:
 
-TIME --- Time function
-**********************
-
 .. index:: TIME
 
 .. index:: time, current
 
 .. index:: current time
+
+TIME --- Time function
+**********************
 
 .. function:: TIME()
 

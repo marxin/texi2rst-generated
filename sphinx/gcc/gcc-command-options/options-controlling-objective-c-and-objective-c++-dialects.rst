@@ -5,9 +5,6 @@
 
 .. _objective-c-and-objective-c++-dialect-options:
 
-Options Controlling Objective-C and Objective-C++ Dialects
-**********************************************************
-
 .. index:: compiler options, Objective-C and Objective-C++
 
 .. index:: Objective-C and Objective-C++ options, command-line

@@ -5,14 +5,14 @@
 
 .. _supplemental-functions:
 
-Supplemental Functions
-**********************
-
 .. index:: supplemental functions
 
 .. index:: functions, supplemental
 
 .. index:: functions, missing
+
+Supplemental Functions
+**********************
 
 Certain operating systems do not provide functions which have since
 become standardized, or at least common.  For example, the Single

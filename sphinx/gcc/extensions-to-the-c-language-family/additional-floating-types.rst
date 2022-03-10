@@ -5,9 +5,6 @@
 
 .. _floating-types:
 
-Additional Floating Types
-*************************
-
 .. index:: additional floating types
 
 .. index:: _Floatn data types
@@ -27,6 +24,9 @@ Additional Floating Types
 .. index:: W floating point suffix
 
 .. index:: Q floating point suffix
+
+Additional Floating Types
+*************************
 
 ISO/IEC TS 18661-3:2015 defines C support for additional floating
 types ``_Floatn`` and ``_Floatnx``, and GCC supports

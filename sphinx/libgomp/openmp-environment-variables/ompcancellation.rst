@@ -5,10 +5,10 @@
 
 .. _omp_cancellation:
 
+.. index:: Environment Variable
+
 OMP_CANCELLATION -- Set whether cancellation is activated
 *********************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   If set to ``TRUE``, the cancellation is activated.  If set to ``FALSE`` or

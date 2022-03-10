@@ -5,9 +5,6 @@
 
 .. _using-assembly-language-with-c:
 
-How to Use Inline Assembly Language in C Code
-*********************************************
-
 .. index:: asm keyword
 
 .. index:: assembly language in C
@@ -15,6 +12,9 @@ How to Use Inline Assembly Language in C Code
 .. index:: inline assembly language
 
 .. index:: mixing assembly language and C
+
+How to Use Inline Assembly Language in C Code
+*********************************************
 
 The ``asm`` keyword allows you to embed assembler instructions
 within C code.  GCC provides two forms of inline ``asm``
@@ -34,12 +34,12 @@ for a C symbol, or to place a C variable in a specific register.
 
 .. _basic-asm:
 
-Basic Asm --- Assembler Instructions Without Operands
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: basic asm
 
 .. index:: assembly language in C, basic
+
+Basic Asm --- Assembler Instructions Without Operands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A basic ``asm`` statement has the following syntax:
 
@@ -170,12 +170,12 @@ Here is an example of basic ``asm`` for i386:
 
 .. _extended-asm:
 
-Extended Asm - Assembler Instructions with C Expression Operands
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: extended asm
 
 .. index:: assembly language in C, extended
+
+Extended Asm - Assembler Instructions with C Expression Operands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With extended ``asm`` you can read and write C variables from 
 assembler and perform jumps from assembler code to C labels.  
@@ -290,12 +290,12 @@ This code copies ``src`` to ``dst`` and add 1 to ``dst``.
 
 .. _volatile:
 
-Volatile
-~~~~~~~~
-
 .. index:: volatile asm
 
 .. index:: asm volatile
+
+Volatile
+~~~~~~~~
 
 GCC's optimizers sometimes discard ``asm`` statements if they determine 
 there is no need for the output variables. Also, the optimizers may move 
@@ -417,10 +417,10 @@ Using :samp:`%=`
 
 .. _assemblertemplate:
 
+.. index:: asm assembler template
+
 Assembler Template
 ~~~~~~~~~~~~~~~~~~
-
-.. index:: asm assembler template
 
 An assembler template is a literal string containing assembler instructions.
 The compiler replaces tokens in the template that refer 
@@ -533,10 +533,10 @@ There is no support for nesting dialect alternatives.
 
 .. _outputoperands:
 
+.. index:: asm output operands
+
 Output Operands
 ~~~~~~~~~~~~~~~
-
-.. index:: asm output operands
 
 An ``asm`` statement has zero or more output operands indicating the names
 of C variables modified by the assembler code.
@@ -709,10 +709,10 @@ for ``d`` by specifying both constraints.
 
 .. _flagoutputoperands:
 
+.. index:: asm flag output operands
+
 Flag Output Operands
 ~~~~~~~~~~~~~~~~~~~~
-
-.. index:: asm flag output operands
 
 Some targets have a special register that holds the 'flags' for the
 result of an operation or comparison.  Normally, the contents of that
@@ -833,12 +833,12 @@ x86 family
 
 .. _inputoperands:
 
-Input Operands
-~~~~~~~~~~~~~~
-
 .. index:: asm input operands
 
 .. index:: asm expressions
+
+Input Operands
+~~~~~~~~~~~~~~
 
 Input operands make values from C variables and expressions available to the 
 assembly code.
@@ -944,12 +944,12 @@ Here is an example using symbolic names.
 
 .. _clobbers-and-scratch-registers:
 
-Clobbers and Scratch Registers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. index:: asm clobbers
 
 .. index:: asm scratch registers
+
+Clobbers and Scratch Registers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 While the compiler is aware of changes to entries listed in the output 
 operands, the inline ``asm`` code may modify more than just the outputs. For 
@@ -1154,10 +1154,10 @@ number of ``asm`` parameters.
 
 .. _gotolabels:
 
+.. index:: asm goto labels
+
 Goto Labels
 ~~~~~~~~~~~
-
-.. index:: asm goto labels
 
 ``asm goto`` allows assembly code to jump to one or more C labels.  The
 :samp:`{GotoLabels}` section in an ``asm goto`` statement contains 
@@ -1497,14 +1497,14 @@ Modifier  Description
 
 .. _constraints:
 
-Constraints for asm Operands
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: operand constraints, asm
 
 .. index:: constraints, asm
 
 .. index:: asm constraints
+
+Constraints for asm Operands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here are specific details on what constraint letters you can use with
 ``asm`` operands.
@@ -1532,14 +1532,14 @@ the addressing register.
 
 .. _asm-labels:
 
-Controlling Names Used in Assembler Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: assembler names for identifiers
 
 .. index:: names used in assembler code
 
 .. index:: identifiers, names in assembler code
+
+Controlling Names Used in Assembler Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can specify the name to be used in the assembler code for a C
 function or variable by writing the ``asm`` (or ``__asm__``)
@@ -1699,10 +1699,10 @@ restore it before returning.
 On machines with register windows, be sure to choose a global
 register that is not affected magically by the function call mechanism.
 
+.. index:: qsort, and global register variables
+
 Using the variable
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: qsort, and global register variables
 
 When calling routines that are not aware of the reservation, be 
 cautious if those routines call back into code which uses them. As an 

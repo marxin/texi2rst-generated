@@ -5,10 +5,10 @@
 
 .. _operands:
 
+.. index:: Operands
+
 Operands
 ********
-
-.. index:: Operands
 
 In general, expressions in GIMPLE consist of an operation and the
 appropriate number of simple operands; these operands must either be a
@@ -38,20 +38,20 @@ The target of an assignment is usually a variable, but can also be a
 
 .. _compound-expressions:
 
+.. index:: Compound Expressions
+
 Compound Expressions
 ^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Compound Expressions
 
 The left-hand side of a C comma expression is simply moved into a separate
 statement.
 
 .. _compound-lvalues:
 
+.. index:: Compound Lvalues
+
 Compound Lvalues
 ^^^^^^^^^^^^^^^^
-
-.. index:: Compound Lvalues
 
 Currently compound lvalues involving array and structure field references
 are not broken down; an expression like ``a.b[2] = 42`` is not reduced
@@ -71,10 +71,10 @@ optimizer improvements may make this limitation unnecessary.
 
 .. _conditional-expressions:
 
+.. index:: Conditional Expressions
+
 Conditional Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Conditional Expressions
 
 A C ``?:`` expression is converted into an ``if`` statement with
 each branch assigning to the same temporary.  So,
@@ -102,10 +102,10 @@ Note that in GIMPLE, ``if`` statements are represented using
 
 .. _logical-operators:
 
+.. index:: Logical Operators
+
 Logical Operators
 ^^^^^^^^^^^^^^^^^
-
-.. index:: Logical Operators
 
 Except when they appear in the condition operand of a
 ``GIMPLE_COND``, logical 'and' and 'or' operators are simplified

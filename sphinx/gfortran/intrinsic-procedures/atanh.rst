@@ -5,9 +5,6 @@
 
 .. _atanh:
 
-ATANH --- Inverse hyperbolic tangent function
-*********************************************
-
 .. index:: ATANH
 
 .. index:: DATANH
@@ -19,6 +16,9 @@ ATANH --- Inverse hyperbolic tangent function
 .. index:: hyperbolic function, tangent, inverse
 
 .. index:: tangent, hyperbolic, inverse
+
+ATANH --- Inverse hyperbolic tangent function
+*********************************************
 
 .. function:: ATANH(X)
 

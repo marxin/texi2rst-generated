@@ -5,10 +5,10 @@
 
 .. _attributes:
 
+.. index:: attributes
+
 Attributes in trees
 *******************
-
-.. index:: attributes
 
 Attributes, as specified using the ``__attribute__`` keyword, are
 represented internally as a ``TREE_LIST``.  The ``TREE_PURPOSE``

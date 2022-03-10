@@ -5,9 +5,6 @@
 
 .. _trampolines:
 
-Support for Nested Functions
-****************************
-
 .. index:: support for nested functions
 
 .. index:: trampolines for nested functions
@@ -15,6 +12,9 @@ Support for Nested Functions
 .. index:: descriptors for nested functions
 
 .. index:: nested functions, support for
+
+Support for Nested Functions
+****************************
 
 Taking the address of a nested function requires special compiler
 handling to ensure that the static chain register is loaded when

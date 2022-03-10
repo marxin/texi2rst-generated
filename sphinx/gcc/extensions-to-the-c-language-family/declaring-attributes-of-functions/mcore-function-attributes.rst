@@ -10,9 +10,9 @@ MCORE Function Attributes
 
 These function attributes are supported by the MCORE back end:
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, MCORE
 
-  .. index:: naked function attribute, MCORE
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the

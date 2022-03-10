@@ -5,10 +5,10 @@
 
 .. _registers:
 
+.. index:: register usage
+
 Register Usage
 **************
-
-.. index:: register usage
 
 This section explains how to describe what registers the target machine
 has, and how (in general) they can be used.
@@ -247,12 +247,12 @@ Registers have various characteristics.
 
 .. _allocation-order:
 
-Order of Allocation of Registers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: order of register allocation
 
 .. index:: register allocation order
+
+Order of Allocation of Registers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. prevent bad page break with this line
 
@@ -484,12 +484,12 @@ consecutive registers are needed for a given mode.
 
 .. _leaf-functions:
 
-Handling Leaf Functions
-^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: leaf functions
 
 .. index:: functions, leaf
+
+Handling Leaf Functions
+^^^^^^^^^^^^^^^^^^^^^^^
 
 On some machines, a leaf function (i.e., one which makes no calls) can run
 more efficiently if it does not make its own register window.  Often this

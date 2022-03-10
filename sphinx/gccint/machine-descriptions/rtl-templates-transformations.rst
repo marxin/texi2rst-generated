@@ -5,10 +5,10 @@
 
 .. _define-subst:
 
+.. index:: define_subst
+
 RTL Templates Transformations
 *****************************
-
-.. index:: define_subst
 
 For some hardware architectures there are common cases when the RTL
 templates for the instructions can be derived from the other RTL
@@ -59,10 +59,10 @@ deleted.
 
 .. _define-subst-example:
 
+.. index:: define_subst
+
 define_subst Example
 ^^^^^^^^^^^^^^^^^^^^
-
-.. index:: define_subst
 
 To illustrate how ``define_subst`` works, let us examine a simple
 template transformation.
@@ -153,10 +153,10 @@ The result of the ``define_subst`` usage would look like the following:
 
 .. _define-subst-pattern-matching:
 
+.. index:: define_subst
+
 Pattern Matching in define_subst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: define_subst
 
 All expressions, allowed in ``define_insn`` or ``define_expand``,
 are allowed in the input-template of ``define_subst``, except
@@ -180,10 +180,10 @@ operands as the operator from the original pattern.
 
 .. _define-subst-output-template:
 
+.. index:: define_subst
+
 Generation of output template in define_subst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: define_subst
 
 If all necessary checks for ``define_subst`` application pass, a new
 RTL-pattern, based on the output-template, is created to replace the old

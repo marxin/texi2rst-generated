@@ -5,14 +5,14 @@
 
 .. _dtime:
 
-DTIME --- Execution time subroutine (or function)
-*************************************************
-
 .. index:: DTIME
 
 .. index:: time, elapsed
 
 .. index:: elapsed time
+
+DTIME --- Execution time subroutine (or function)
+*************************************************
 
 .. function:: DTIME(VALUES, TIME)
 

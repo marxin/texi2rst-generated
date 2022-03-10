@@ -5,10 +5,10 @@
 
 .. _extends_type_of:
 
+.. index:: EXTENDS_TYPE_OF
+
 EXTENDS_TYPE_OF ---  Query dynamic type for extension
 *****************************************************
-
-.. index:: EXTENDS_TYPE_OF
 
 .. function:: EXTENDS_TYPE_OF(A, MOLD)
 

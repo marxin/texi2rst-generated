@@ -5,12 +5,12 @@
 
 .. _system:
 
-SYSTEM --- Execute a shell command
-**********************************
-
 .. index:: SYSTEM
 
 .. index:: system, system call
+
+SYSTEM --- Execute a shell command
+**********************************
 
 .. function:: SYSTEM(COMMAND)
 

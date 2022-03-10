@@ -5,12 +5,12 @@
 
 .. _escaped-newlines:
 
-Slightly Looser Rules for Escaped Newlines
-******************************************
-
 .. index:: escaped newlines
 
 .. index:: newlines (escaped)
+
+Slightly Looser Rules for Escaped Newlines
+******************************************
 
 The preprocessor treatment of escaped newlines is more relaxed 
 than that specified by the C90 standard, which requires the newline

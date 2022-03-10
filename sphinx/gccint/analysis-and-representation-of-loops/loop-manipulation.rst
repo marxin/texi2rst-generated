@@ -5,10 +5,10 @@
 
 .. _loop-manipulation:
 
+.. index:: Loop manipulation
+
 Loop manipulation
 *****************
-
-.. index:: Loop manipulation
 
 The loops tree can be manipulated using the following functions:
 

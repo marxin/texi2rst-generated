@@ -5,14 +5,14 @@
 
 .. _scale:
 
-SCALE --- Scale a real value
-****************************
-
 .. index:: SCALE
 
 .. index:: real number, scale
 
 .. index:: floating point, scale
+
+SCALE --- Scale a real value
+****************************
 
 .. function:: SCALE(X,I)
 

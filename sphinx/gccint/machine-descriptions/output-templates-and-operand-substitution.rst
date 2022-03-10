@@ -5,9 +5,6 @@
 
 .. _output-template:
 
-Output Templates and Operand Substitution
-*****************************************
-
 .. index:: output templates
 
 .. index:: operand substitution
@@ -15,6 +12,9 @@ Output Templates and Operand Substitution
 .. index:: % in template
 
 .. index:: percent sign
+
+Output Templates and Operand Substitution
+*****************************************
 
 The :dfn:`output template` is a string which specifies how to output the
 assembler code for an instruction pattern.  Most of the template is a

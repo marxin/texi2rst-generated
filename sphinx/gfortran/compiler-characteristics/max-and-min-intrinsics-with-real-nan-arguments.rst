@@ -5,10 +5,10 @@
 
 .. _max-and-min-intrinsics-with-real-nan-arguments:
 
+.. index:: MAX, MIN, NaN
+
 MAX and MIN intrinsics with REAL NaN arguments
 **********************************************
-
-.. index:: MAX, MIN, NaN
 
 The Fortran standard does not specify what the result of the
 ``MAX`` and ``MIN`` intrinsics are if one of the arguments is a

@@ -5,12 +5,12 @@
 
 .. _acc_get_property:
 
-acc_get_property -- Get device property.
-****************************************
-
 .. index:: acc_get_property
 
 .. index:: acc_get_property_string
+
+acc_get_property -- Get device property.
+****************************************
 
 Description
   These routines return the value of the specified :samp:`{property}` for the

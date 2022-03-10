@@ -3,22 +3,22 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. program:: Nios II
+.. program::
 
 .. _nios-ii-options:
-
-Nios II Options
-^^^^^^^^^^^^^^^
 
 .. index:: Nios II options
 
 .. index:: Altera Nios II options
 
+Nios II Options
+^^^^^^^^^^^^^^^
+
 These are the options defined for the Altera Nios II processor.
 
-.. option:: -G {num}
+.. index:: smaller data references
 
-  .. index:: smaller data references
+.. option:: -G {num}
 
   Put global and static objects less than or equal to :samp:`{num}` bytes
   into the small data or BSS sections instead of the normal data or BSS
@@ -142,11 +142,11 @@ These are the options defined for the Altera Nios II processor.
   requires :option:`-march`:samp:`=r2`.  Since these instructions are optional
   extensions to the R2 architecture, the default is not to emit them.
 
+.. index:: mcustom-insn
+
+.. index:: mno-custom-insn
+
 .. option:: -mcustom-insn={N}
-
-  .. index:: mcustom-insn
-
-  .. index:: mno-custom-insn
 
   Each :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` option enables use of a
   custom instruction with encoding :samp:`{N}` when generating code that uses 

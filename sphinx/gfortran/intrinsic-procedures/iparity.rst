@@ -5,9 +5,6 @@
 
 .. _iparity:
 
-IPARITY --- Bitwise XOR of array elements
-*****************************************
-
 .. index:: IPARITY
 
 .. index:: array, parity
@@ -15,6 +12,9 @@ IPARITY --- Bitwise XOR of array elements
 .. index:: array, XOR
 
 .. index:: bits, XOR of array elements
+
+IPARITY --- Bitwise XOR of array elements
+*****************************************
 
 .. function:: IPARITY(ARRAY, DIM, MASK)
 

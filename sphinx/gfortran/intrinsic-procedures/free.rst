@@ -5,12 +5,12 @@
 
 .. _free:
 
-FREE --- Frees memory
-*********************
-
 .. index:: FREE
 
 .. index:: pointer, cray
+
+FREE --- Frees memory
+*********************
 
 .. function:: FREE(PTR)
 

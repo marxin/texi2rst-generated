@@ -5,12 +5,12 @@
 
 .. _int2:
 
-INT2 --- Convert to 16-bit integer type
-***************************************
-
 .. index:: INT2
 
 .. index:: conversion, to integer
+
+INT2 --- Convert to 16-bit integer type
+***************************************
 
 .. function:: INT2(A)
 

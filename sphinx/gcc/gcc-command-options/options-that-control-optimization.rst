@@ -5,12 +5,12 @@
 
 .. _optimize-options:
 
-Options That Control Optimization
-*********************************
-
 .. index:: optimize options
 
 .. index:: options, optimization
+
+Options That Control Optimization
+*********************************
 
 These options control various sorts of optimizations.
 

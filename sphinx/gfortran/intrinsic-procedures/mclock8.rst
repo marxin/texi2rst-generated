@@ -5,14 +5,14 @@
 
 .. _mclock8:
 
-MCLOCK8 --- Time function (64-bit)
-**********************************
-
 .. index:: MCLOCK8
 
 .. index:: time, clock ticks
 
 .. index:: clock ticks
+
+MCLOCK8 --- Time function (64-bit)
+**********************************
 
 .. function:: MCLOCK8()
 

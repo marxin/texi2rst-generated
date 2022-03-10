@@ -5,12 +5,12 @@
 
 .. _host-common:
 
-Host Common
-***********
-
 .. index:: host hooks
 
 .. index:: host functions
+
+Host Common
+***********
 
 Some things are just not portable, even between similar operating systems,
 and are too difficult for autoconf to detect.  They get implemented using

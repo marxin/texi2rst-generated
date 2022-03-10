@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_ATOMIC_LOAD
+
 GIMPLE_OMP_ATOMIC_LOAD
 ^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_ATOMIC_LOAD
 
 .. function:: gomp_atomic_load *gimple_build_omp_atomic_load ( tree lhs, tree rhs)
 

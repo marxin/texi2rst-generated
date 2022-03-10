@@ -5,9 +5,6 @@
 
 .. _file-format-of-unformatted-sequential-files:
 
-File format of unformatted sequential files
-*******************************************
-
 .. index:: file, unformatted sequential
 
 .. index:: unformatted sequential
@@ -17,6 +14,9 @@ File format of unformatted sequential files
 .. index:: record marker
 
 .. index:: subrecord
+
+File format of unformatted sequential files
+*******************************************
 
 Unformatted sequential files are stored as logical records using
 record markers.  Each logical record consists of one of more

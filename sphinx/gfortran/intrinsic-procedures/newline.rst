@@ -5,14 +5,14 @@
 
 .. _new_line:
 
-NEW_LINE --- New line character
-*******************************
-
 .. index:: NEW_LINE
 
 .. index:: newline
 
 .. index:: output, newline
+
+NEW_LINE --- New line character
+*******************************
 
 .. function:: NEW_LINE(C)
 

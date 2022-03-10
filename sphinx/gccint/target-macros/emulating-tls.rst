@@ -5,10 +5,10 @@
 
 .. _emulated-tls:
 
+.. index:: Emulated TLS
+
 Emulating TLS
 *************
-
-.. index:: Emulated TLS
 
 For targets whose psABI does not provide Thread Local Storage via
 specific relocations and instruction sequences, an emulation layer is

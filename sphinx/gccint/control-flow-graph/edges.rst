@@ -5,12 +5,12 @@
 
 .. _edges:
 
-Edges
-*****
-
 .. index:: edge in the flow graph
 
 .. index:: edge
+
+Edges
+*****
 
 Edges represent possible control flow transfers from the end of some
 basic block A to the head of another basic block B.  We say that A is

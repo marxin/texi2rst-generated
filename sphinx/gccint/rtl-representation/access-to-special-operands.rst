@@ -5,10 +5,10 @@
 
 .. _special-accessors:
 
+.. index:: access to special operands
+
 Access to Special Operands
 **************************
-
-.. index:: access to special operands
 
 Some RTL nodes have special annotations associated with them.
 

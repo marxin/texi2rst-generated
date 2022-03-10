@@ -5,14 +5,14 @@
 
 .. _nint:
 
-NINT --- Nearest whole number
-*****************************
-
 .. index:: NINT
 
 .. index:: IDNINT
 
 .. index:: rounding, nearest whole number
+
+NINT --- Nearest whole number
+*****************************
 
 .. function:: NINT(A)
 

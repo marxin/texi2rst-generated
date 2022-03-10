@@ -5,10 +5,10 @@
 
 .. _temporaries:
 
+.. index:: Temporaries
+
 Temporaries
 ***********
-
-.. index:: Temporaries
 
 When gimplification encounters a subexpression that is too
 complex, it creates a new temporary variable to hold the value of

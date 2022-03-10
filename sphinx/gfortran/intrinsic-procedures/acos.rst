@@ -5,9 +5,6 @@
 
 .. _acos:
 
-ACOS --- Arccosine function 
-****************************
-
 .. index:: ACOS
 
 .. index:: DACOS
@@ -15,6 +12,9 @@ ACOS --- Arccosine function
 .. index:: trigonometric function, cosine, inverse
 
 .. index:: cosine, inverse
+
+ACOS --- Arccosine function 
+****************************
 
 .. function:: ACOS(X)
 

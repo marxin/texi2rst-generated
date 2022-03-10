@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_LABEL
+
 GIMPLE_LABEL
 ^^^^^^^^^^^^
-
-.. index:: GIMPLE_LABEL
 
 .. function:: glabel *gimple_build_label (tree label)
 

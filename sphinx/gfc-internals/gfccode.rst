@@ -5,10 +5,10 @@
 
 .. _gfc_code:
 
+.. index:: statement chaining
+
 gfc_code
 ********
-
-.. index:: statement chaining
 
 .. index:: gfc_code
 

@@ -5,10 +5,10 @@
 
 .. _c-implementation:
 
+.. index:: implementation-defined behavior, C language
+
 C Implementation-Defined Behavior
 ---------------------------------
-
-.. index:: implementation-defined behavior, C language
 
 A conforming implementation of ISO C is required to document its
 choice of behavior in each of the areas that are designated

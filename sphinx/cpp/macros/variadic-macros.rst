@@ -5,14 +5,14 @@
 
 .. _variadic-macros:
 
-Variadic Macros
-***************
-
 .. index:: variable number of arguments
 
 .. index:: macros with variable arguments
 
 .. index:: variadic macros
+
+Variadic Macros
+***************
 
 A macro can be declared to accept a variable number of arguments much as
 a function can.  The syntax for defining the macro is similar to that of

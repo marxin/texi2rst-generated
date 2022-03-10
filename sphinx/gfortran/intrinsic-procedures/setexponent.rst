@@ -5,14 +5,14 @@
 
 .. _set_exponent:
 
-SET_EXPONENT --- Set the exponent of the model
-**********************************************
-
 .. index:: SET_EXPONENT
 
 .. index:: real number, set exponent
 
 .. index:: floating point, set exponent
+
+SET_EXPONENT --- Set the exponent of the model
+**********************************************
 
 .. function:: SET_EXPONENT(X, I)
 

@@ -5,12 +5,12 @@
 
 .. _fnum:
 
-FNUM --- File number function
-*****************************
-
 .. index:: FNUM
 
 .. index:: file operation, file number
+
+FNUM --- File number function
+*****************************
 
 .. function:: FNUM(UNIT)
 

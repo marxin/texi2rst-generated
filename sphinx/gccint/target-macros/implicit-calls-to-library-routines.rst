@@ -5,12 +5,12 @@
 
 .. _library-calls:
 
-Implicit Calls to Library Routines
-**********************************
-
 .. index:: library subroutine names
 
 .. index:: libgcc.a
+
+Implicit Calls to Library Routines
+**********************************
 
 .. prevent bad page break with this line
 

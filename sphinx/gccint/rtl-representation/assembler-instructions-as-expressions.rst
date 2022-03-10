@@ -5,12 +5,12 @@
 
 .. _assembler:
 
-Assembler Instructions as Expressions
-*************************************
-
 .. index:: assembler instructions in RTL
 
 .. index:: asm_operands, usage
+
+Assembler Instructions as Expressions
+*************************************
 
 The RTX code ``asm_operands`` represents a value produced by a
 user-specified assembler instruction.  It is used to represent

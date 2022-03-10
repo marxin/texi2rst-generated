@@ -5,9 +5,6 @@
 
 .. _c++-volatiles:
 
-When is a Volatile C++ Object Accessed?
-***************************************
-
 .. index:: accessing volatiles
 
 .. index:: volatile read
@@ -15,6 +12,9 @@ When is a Volatile C++ Object Accessed?
 .. index:: volatile write
 
 .. index:: volatile access
+
+When is a Volatile C++ Object Accessed?
+***************************************
 
 The C++ standard differs from the C standard in its treatment of
 volatile objects.  It fails to specify what constitutes a volatile

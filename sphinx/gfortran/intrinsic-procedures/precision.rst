@@ -5,12 +5,12 @@
 
 .. _precision:
 
-PRECISION --- Decimal precision of a real kind
-**********************************************
-
 .. index:: PRECISION
 
 .. index:: model representation, precision
+
+PRECISION --- Decimal precision of a real kind
+**********************************************
 
 .. function:: PRECISION(X)
 

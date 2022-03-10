@@ -5,14 +5,14 @@
 
 .. _get_command_argument:
 
-GET_COMMAND_ARGUMENT --- Get command line arguments
-***************************************************
-
 .. index:: GET_COMMAND_ARGUMENT
 
 .. index:: command-line arguments
 
 .. index:: arguments, to program
+
+GET_COMMAND_ARGUMENT --- Get command line arguments
+***************************************************
 
 .. function:: GET_COMMAND_ARGUMENT(NUMBER , VALUE, LENGTH, STATUS)
 

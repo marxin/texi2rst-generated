@@ -5,9 +5,6 @@
 
 .. _size:
 
-SIZE --- Determine the size of an array
-***************************************
-
 .. index:: SIZE
 
 .. index:: array, size
@@ -15,6 +12,9 @@ SIZE --- Determine the size of an array
 .. index:: array, number of elements
 
 .. index:: array, count elements
+
+SIZE --- Determine the size of an array
+***************************************
 
 .. function:: SIZE(ARRAY, DIM , KIND)
 

@@ -5,12 +5,12 @@
 
 .. _allocated:
 
-ALLOCATED --- Status of an allocatable entity
-*********************************************
-
 .. index:: ALLOCATED
 
 .. index:: allocation, status
+
+ALLOCATED --- Status of an allocatable entity
+*********************************************
 
 .. function:: ALLOCATED(ARRAY)
 

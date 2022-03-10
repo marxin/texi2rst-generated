@@ -5,9 +5,6 @@
 
 .. _rtl-classes:
 
-RTL Classes and Formats
-***********************
-
 .. index:: RTL classes
 
 .. index:: classes of RTX codes
@@ -15,6 +12,9 @@ RTL Classes and Formats
 .. index:: RTX codes, classes of
 
 .. index:: GET_RTX_CLASS
+
+RTL Classes and Formats
+***********************
 
 The various expression codes are divided into several :dfn:`classes`,
 which are represented by single characters.  You can determine the class

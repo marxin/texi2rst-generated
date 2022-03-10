@@ -5,12 +5,12 @@
 
 .. _omp_nested:
 
-OMP_NESTED -- Nested parallel regions
-*************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+OMP_NESTED -- Nested parallel regions
+*************************************
 
 :samp:`{Description}:`
   Enable or disable nested parallel regions, i.e., whether team members

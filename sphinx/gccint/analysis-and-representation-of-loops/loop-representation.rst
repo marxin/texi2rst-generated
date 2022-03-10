@@ -5,12 +5,12 @@
 
 .. _loop-representation:
 
-Loop representation
-*******************
-
 .. index:: Loop representation
 
 .. index:: Loop analysis
+
+Loop representation
+*******************
 
 This chapter describes the representation of loops in GCC, and functions
 that can be used to build, modify and analyze this representation.  Most

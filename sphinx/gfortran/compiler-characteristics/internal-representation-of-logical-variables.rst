@@ -5,10 +5,10 @@
 
 .. _internal-representation-of-logical-variables:
 
+.. index:: logical, variable representation
+
 Internal representation of LOGICAL variables
 ********************************************
-
-.. index:: logical, variable representation
 
 The Fortran standard does not specify how variables of ``LOGICAL``
 type are represented, beyond requiring that ``LOGICAL`` variables

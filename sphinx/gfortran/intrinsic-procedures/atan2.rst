@@ -5,9 +5,6 @@
 
 .. _atan2:
 
-ATAN2 --- Arctangent function 
-******************************
-
 .. index:: ATAN2
 
 .. index:: DATAN2
@@ -15,6 +12,9 @@ ATAN2 --- Arctangent function
 .. index:: trigonometric function, tangent, inverse
 
 .. index:: tangent, inverse
+
+ATAN2 --- Arctangent function 
+******************************
 
 .. function:: ATAN2(Y, X)
 

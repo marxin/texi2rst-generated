@@ -5,10 +5,10 @@
 
 .. _files-opened-without-an-explicit-action=-specifier:
 
+.. index:: open, action
+
 Files opened without an explicit ACTION= specifier
 **************************************************
-
-.. index:: open, action
 
 The Fortran standard says that if an ``OPEN`` statement is executed
 without an explicit ``ACTION=`` specifier, the default value is

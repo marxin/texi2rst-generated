@@ -5,12 +5,12 @@
 
 .. _gnu-fortran-and-gcc:
 
-GNU Fortran and GCC
-*******************
-
 .. index:: GNU Compiler Collection
 
 .. index:: GCC
+
+GNU Fortran and GCC
+*******************
 
 GNU Fortran is a part of GCC, the :dfn:`GNU Compiler Collection`.  GCC
 consists of a collection of front ends for various languages, which

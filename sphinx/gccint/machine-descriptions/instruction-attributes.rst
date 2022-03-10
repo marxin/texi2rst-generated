@@ -5,12 +5,12 @@
 
 .. _insn-attributes:
 
-Instruction Attributes
-**********************
-
 .. index:: insn attributes
 
 .. index:: instruction attributes
+
+Instruction Attributes
+**********************
 
 In addition to describing the instruction supported by the target machine,
 the :samp:`md` file also defines a group of :dfn:`attributes` and a set of
@@ -24,14 +24,14 @@ condition code.
 
 .. _defining-attributes:
 
-Defining Attributes and their Values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: defining attributes and their values
 
 .. index:: attributes, defining
 
 .. index:: define_attr
+
+Defining Attributes and their Values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ``define_attr`` expression is used to define each attribute required
 by the target machine.  It looks like:
@@ -160,10 +160,10 @@ defines a single C enum (``processor``).
 
 .. _expressions:
 
+.. index:: attribute expressions
+
 Attribute Expressions
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: attribute expressions
 
 RTL expressions used to define attributes use the codes described above
 plus a few specific to attribute definitions, to be discussed below.
@@ -401,12 +401,12 @@ Attribute value expressions must have one of the following forms:
 
 .. _tagging-insns:
 
-Assigning Attribute Values to Insns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: tagging insns
 
 .. index:: assigning attribute values to insns
+
+Assigning Attribute Values to Insns
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The value assigned to an attribute of an insn is primarily determined by
 which pattern is matched by that insn (or which ``define_peephole``
@@ -510,12 +510,12 @@ of a single machine instruction.
 
 .. _attr-example:
 
-Example of Attribute Specifications
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: attribute specifications example
 
 .. index:: attribute specifications
+
+Example of Attribute Specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The judicious use of defaulting is important in the efficient use of
 insn attributes.  Typically, insns are divided into :dfn:`types` and an
@@ -569,12 +569,12 @@ full-word result.
 
 .. _insn-lengths:
 
-Computing the Length of an Insn
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: insn lengths, computing
 
 .. index:: computing the length of an insn
+
+Computing the Length of an Insn
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For many machines, multiple types of branch instructions are provided, each
 for different length branch displacements.  In most cases, the assembler
@@ -665,10 +665,10 @@ as follows:
 
 .. _constant-attributes:
 
+.. index:: constant attributes
+
 Constant Attributes
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: constant attributes
 
 A special form of ``define_attr``, where the expression for the
 default value is a ``const`` expression, indicates an attribute that
@@ -697,10 +697,10 @@ forms involving insn attributes.
 
 .. _mnemonic-attribute:
 
+.. index:: mnemonic attribute
+
 Mnemonic Attribute
 ^^^^^^^^^^^^^^^^^^
-
-.. index:: mnemonic attribute
 
 The ``mnemonic`` attribute is a string type attribute holding the
 instruction mnemonic for an insn alternative.  The attribute values
@@ -739,10 +739,10 @@ additional insn attributes.
 
 .. _delay-slots:
 
+.. index:: delay slots, defining
+
 Delay Slot Scheduling
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: delay slots, defining
 
 The insn attribute mechanism can be used to specify the requirements for
 delay slots, if any, on a target machine.  An instruction is said to
@@ -819,9 +819,6 @@ branch is true, we might represent this as follows:
 
 .. _processor-pipeline-description:
 
-Specifying processor pipeline description
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: processor pipeline description
 
 .. index:: processor functional units
@@ -847,6 +844,9 @@ Specifying processor pipeline description
 .. index:: RISC
 
 .. index:: VLIW
+
+Specifying processor pipeline description
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To achieve better performance, most modern processors
 (super-pipelined, superscalar RISC, and VLIW

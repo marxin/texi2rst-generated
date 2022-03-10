@@ -5,14 +5,14 @@
 
 .. _symlnk:
 
-SYMLNK --- Create a symbolic link
-*********************************
-
 .. index:: SYMLNK
 
 .. index:: file system, create link
 
 .. index:: file system, soft link
+
+SYMLNK --- Create a symbolic link
+*********************************
 
 .. function:: SYMLNK(PATH1, PATH2)
 

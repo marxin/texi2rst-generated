@@ -5,12 +5,12 @@
 
 .. _interoperability-with-c:
 
-Interoperability with C
-***********************
-
 .. index:: interoperability with C
 
 .. index:: C interoperability
+
+Interoperability with C
+***********************
 
 .. toctree::
   :maxdepth: 2
@@ -34,14 +34,14 @@ assuming i < n) in memory is ``A(i+1,j)`` (C: ``A[j-1][i]``).
 
 .. _intrinsic-types:
 
-Intrinsic Types
-^^^^^^^^^^^^^^^
-
 .. index:: C intrinsic type interoperability
 
 .. index:: intrinsic type interoperability with C
 
 .. index:: interoperability, intrinsic type
+
+Intrinsic Types
+^^^^^^^^^^^^^^^
 
 In order to ensure that exactly the same variable type and kind is used
 in C and Fortran, you should use the named constants for kind parameters
@@ -60,14 +60,14 @@ integer is explicitly or implicitly casted to ``_Bool``.)
 
 .. _derived-types-and-struct:
 
-Derived Types and struct
-^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: C derived type and struct interoperability
 
 .. index:: derived type interoperability with C
 
 .. index:: interoperability, derived type and struct
+
+Derived Types and struct
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 For compatibility of derived types with ``struct``, use
 the ``BIND(C)`` attribute in the type declaration.  For instance, the
@@ -108,14 +108,14 @@ with bit field or variable-length array members are interoperable.
 
 .. _interoperable-global-variables:
 
-Interoperable Global Variables
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: C variable interoperability
 
 .. index:: variable interoperability with C
 
 .. index:: interoperability, variable
+
+Interoperable Global Variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Variables can be made accessible from C using the C binding attribute,
 optionally together with specifying a binding name.  Those variables
@@ -143,9 +143,6 @@ a macro.  Use the ``IERRNO`` intrinsic (GNU extension) instead.
 
 .. _interoperable-subroutines-and-functions:
 
-Interoperable Subroutines and Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: C procedure interoperability
 
 .. index:: procedure interoperability with C
@@ -155,6 +152,9 @@ Interoperable Subroutines and Functions
 .. index:: subroutine interoperability with C
 
 .. index:: interoperability, subroutine and function
+
+Interoperable Subroutines and Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Subroutines and functions have to have the ``BIND(C)`` attribute to
 be compatible with C.  The dummy argument declaration is relatively
@@ -253,12 +253,12 @@ The intrinsic procedures are described in :ref:`intrinsic-procedures`.
 
 .. _working-with-c-pointers:
 
-Working with C Pointers
-^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: C pointers
 
 .. index:: pointers, C
+
+Working with C Pointers
+^^^^^^^^^^^^^^^^^^^^^^^
 
 C pointers are represented in Fortran via the special opaque derived
 type ``type(c_ptr)`` (with private components).  C pointers are distinct
@@ -412,9 +412,6 @@ It can be used as in the following Fortran code:
 
 .. _further-interoperability-of-fortran-with-c:
 
-Further Interoperability of Fortran with C
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: Further Interoperability of Fortran with C
 
 .. index:: TS 29113
@@ -426,6 +423,9 @@ Further Interoperability of Fortran with C
 .. index:: assumed-type
 
 .. index:: assumed-rank
+
+Further Interoperability of Fortran with C
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 GNU Fortran implements the Technical Specification ISO/IEC TS
 29113:2012, which extends the interoperability support of Fortran 2003

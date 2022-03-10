@@ -5,9 +5,6 @@
 
 .. _spread:
 
-SPREAD --- Add a dimension to an array
-**************************************
-
 .. index:: SPREAD
 
 .. index:: array, increase dimension
@@ -15,6 +12,9 @@ SPREAD --- Add a dimension to an array
 .. index:: array, duplicate elements
 
 .. index:: array, duplicate dimensions
+
+SPREAD --- Add a dimension to an array
+**************************************
 
 .. function:: SPREAD(SOURCE, DIM, NCOPIES)
 

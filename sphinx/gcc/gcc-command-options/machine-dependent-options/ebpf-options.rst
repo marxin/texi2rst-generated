@@ -7,6 +7,8 @@
 
 .. _ebpf-options:
 
+.. index:: eBPF Options
+
 eBPF Options
 ^^^^^^^^^^^^
 

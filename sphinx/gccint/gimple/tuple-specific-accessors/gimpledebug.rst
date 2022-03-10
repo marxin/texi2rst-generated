@@ -5,9 +5,6 @@
 
 .. _gimple_debug:
 
-GIMPLE_DEBUG
-^^^^^^^^^^^^
-
 .. index:: GIMPLE_DEBUG
 
 .. index:: GIMPLE_DEBUG_BIND
@@ -15,6 +12,9 @@ GIMPLE_DEBUG
 .. index:: GIMPLE_DEBUG_BEGIN_STMT
 
 .. index:: GIMPLE_DEBUG_INLINE_ENTRY
+
+GIMPLE_DEBUG
+^^^^^^^^^^^^
 
 .. function:: gdebug *gimple_build_debug_bind (tree var, tree value, gimple stmt)
 

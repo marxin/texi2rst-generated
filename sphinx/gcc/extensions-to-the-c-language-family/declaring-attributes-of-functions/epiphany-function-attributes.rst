@@ -10,17 +10,17 @@ Epiphany Function Attributes
 
 These function attributes are supported by the Epiphany back end:
 
-.. gcc-attr:: disinterrupt
+.. index:: disinterrupt function attribute, Epiphany
 
-  .. index:: disinterrupt function attribute, Epiphany
+.. gcc-attr:: disinterrupt
 
   This attribute causes the compiler to emit
   instructions to disable interrupts for the duration of the given
   function.
 
-.. gcc-attr:: forwarder_section
+.. index:: forwarder_section function attribute, Epiphany
 
-  .. index:: forwarder_section function attribute, Epiphany
+.. gcc-attr:: forwarder_section
 
   This attribute modifies the behavior of an interrupt handler.
   The interrupt handler may be in external memory which cannot be
@@ -28,9 +28,9 @@ These function attributes are supported by the Epiphany back end:
   to transfer control.  The single parameter identifies the section where
   the trampoline is placed.
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, Epiphany
 
-  .. index:: interrupt function attribute, Epiphany
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -72,13 +72,13 @@ These function attributes are supported by the Epiphany back end:
                          forwarder_section ("tramp")))
       external_dma_handler ();
 
+.. index:: long_call function attribute, Epiphany
+
+.. index:: short_call function attribute, Epiphany
+
+.. index:: indirect calls, Epiphany
+
 .. gcc-attr:: long_call, short_call
-
-  .. index:: long_call function attribute, Epiphany
-
-  .. index:: short_call function attribute, Epiphany
-
-  .. index:: indirect calls, Epiphany
 
   These attributes specify how a particular function is called.
   These attributes override the

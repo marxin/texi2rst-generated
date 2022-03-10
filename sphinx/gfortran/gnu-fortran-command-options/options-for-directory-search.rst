@@ -5,9 +5,6 @@
 
 .. _directory-options:
 
-Options for directory search
-****************************
-
 .. index:: directory, options
 
 .. index:: options, directory search
@@ -18,6 +15,9 @@ Options for directory search
 
 .. index:: directive, INCLUDE
 
+Options for directory search
+****************************
+
 These options affect how GNU Fortran searches
 for files specified by the ``INCLUDE`` directive and where it searches
 for previously compiled modules.
@@ -25,19 +25,19 @@ for previously compiled modules.
 It also affects the search paths used by :command:`cpp` when used to preprocess
 Fortran source.
 
+.. index:: Idir
+
+.. index:: directory, search paths for inclusion
+
+.. index:: inclusion, directory search paths for
+
+.. index:: search paths, for included files
+
+.. index:: paths, search
+
+.. index:: module search path
+
 .. option:: -Idir
-
-  .. index:: Idir
-
-  .. index:: directory, search paths for inclusion
-
-  .. index:: inclusion, directory search paths for
-
-  .. index:: search paths, for included files
-
-  .. index:: paths, search
-
-  .. index:: module search path
 
   These affect interpretation of the ``INCLUDE`` directive
   (as well as of the ``#include`` directive of the :command:`cpp`
@@ -54,15 +54,15 @@ Fortran source.
   See :ref:`gcc:directory-options`, for information on the
   :option:`-I` option.
 
+.. index:: Jdir
+
+.. index:: Mdir
+
+.. index:: paths, search
+
+.. index:: module search path
+
 .. option:: -Jdir
-
-  .. index:: Jdir
-
-  .. index:: Mdir
-
-  .. index:: paths, search
-
-  .. index:: module search path
 
   This option specifies where to put :samp:`.mod` files for compiled modules.
   It is also added to the list of directories to searched by an ``USE``
@@ -70,13 +70,13 @@ Fortran source.
 
   The default is the current directory.
 
+.. index:: fintrinsic-modules-pathdir
+
+.. index:: paths, search
+
+.. index:: module search path
+
 .. option:: -fintrinsic-modules-path {dir}
-
-  .. index:: fintrinsic-modules-pathdir
-
-  .. index:: paths, search
-
-  .. index:: module search path
 
   This option specifies the location of pre-compiled intrinsic modules, if
   they are not in the default location expected by the compiler.

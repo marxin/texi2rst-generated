@@ -5,14 +5,14 @@
 
 .. _achar:
 
-ACHAR --- Character in ASCII collating sequence 
-************************************************
-
 .. index:: ACHAR
 
 .. index:: ASCII collating sequence
 
 .. index:: collating sequence, ASCII
+
+ACHAR --- Character in ASCII collating sequence 
+************************************************
 
 .. function:: ACHAR(I)
 

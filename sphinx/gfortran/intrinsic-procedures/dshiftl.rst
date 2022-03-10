@@ -5,14 +5,14 @@
 
 .. _dshiftl:
 
-DSHIFTL --- Combined left shift
-*******************************
-
 .. index:: DSHIFTL
 
 .. index:: left shift, combined
 
 .. index:: shift, left
+
+DSHIFTL --- Combined left shift
+*******************************
 
 .. function:: DSHIFTL(I, J, SHIFT)
 

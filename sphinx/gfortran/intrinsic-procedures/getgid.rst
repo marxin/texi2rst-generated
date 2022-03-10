@@ -5,12 +5,12 @@
 
 .. _getgid:
 
-GETGID --- Group ID function
-****************************
-
 .. index:: GETGID
 
 .. index:: system, group ID
+
+GETGID --- Group ID function
+****************************
 
 .. function:: GETGID()
 

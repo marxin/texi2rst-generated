@@ -11,11 +11,11 @@ Microsoft Windows Function Attributes
 The following attributes are available on Microsoft Windows and Symbian OS
 targets.
 
+.. index:: dllexport function attribute
+
+.. index:: __declspec(dllexport)
+
 .. gcc-attr:: dllexport
-
-  .. index:: dllexport function attribute
-
-  .. index:: __declspec(dllexport)
 
   On Microsoft Windows targets and Symbian OS targets the
   :gcc-attr:`dllexport` attribute causes the compiler to provide a global
@@ -50,11 +50,11 @@ targets.
   :samp:`.def` file with an ``EXPORTS`` section or, with GNU ld, using
   the :option:`--export-all` linker flag.
 
+.. index:: dllimport function attribute
+
+.. index:: __declspec(dllimport)
+
 .. gcc-attr:: dllimport
-
-  .. index:: dllimport function attribute
-
-  .. index:: __declspec(dllimport)
 
   On Microsoft Windows and Symbian OS targets, the :gcc-attr:`dllimport`
   attribute causes the compiler to reference a function or variable via

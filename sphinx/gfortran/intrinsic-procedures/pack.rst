@@ -5,9 +5,6 @@
 
 .. _pack:
 
-PACK --- Pack an array into an array of rank one
-************************************************
-
 .. index:: PACK
 
 .. index:: array, packing
@@ -15,6 +12,9 @@ PACK --- Pack an array into an array of rank one
 .. index:: array, reduce dimension
 
 .. index:: array, gather elements
+
+PACK --- Pack an array into an array of rank one
+************************************************
 
 .. function:: PACK(ARRAY, MASK,VECTOR)
 

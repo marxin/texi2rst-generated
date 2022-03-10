@@ -5,14 +5,14 @@
 
 .. _nested-functions:
 
-Nested Functions
-****************
-
 .. index:: nested functions
 
 .. index:: downward funargs
 
 .. index:: thunks
+
+Nested Functions
+****************
 
 A :dfn:`nested function` is a function defined inside another function.
 Nested functions are supported as an extension in GNU C, but are not

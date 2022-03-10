@@ -5,12 +5,12 @@
 
 .. _get_environment_variable:
 
-GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
-**********************************************************
-
 .. index:: GET_ENVIRONMENT_VARIABLE
 
 .. index:: environment variable
+
+GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
+**********************************************************
 
 .. function:: GET_ENVIRONMENT_VARIABLE(NAME, VALUE, LENGTH, STATUS, TRIM_NAME)
 

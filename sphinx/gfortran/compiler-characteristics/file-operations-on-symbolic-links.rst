@@ -5,10 +5,10 @@
 
 .. _file-operations-on-symbolic-links:
 
+.. index:: file, symbolic link
+
 File operations on symbolic links
 *********************************
-
-.. index:: file, symbolic link
 
 This section documents the behavior of GNU Fortran for file operations on
 symbolic links, on systems that support them.

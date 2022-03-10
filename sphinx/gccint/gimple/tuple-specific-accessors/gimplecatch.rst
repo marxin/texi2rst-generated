@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_CATCH
+
 GIMPLE_CATCH
 ^^^^^^^^^^^^
-
-.. index:: GIMPLE_CATCH
 
 .. function:: gcatch *gimple_build_catch (tree types, gimple_seq handler)
 

@@ -5,12 +5,12 @@
 
 .. _atomic_and:
 
-ATOMIC_AND --- Atomic bitwise AND operation
-*******************************************
-
 .. index:: ATOMIC_AND
 
 .. index:: Atomic subroutine, AND
+
+ATOMIC_AND --- Atomic bitwise AND operation
+*******************************************
 
 .. function:: ATOMIC_AND(ATOM, VALUE)
 

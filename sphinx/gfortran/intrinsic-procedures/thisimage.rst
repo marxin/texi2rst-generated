@@ -5,14 +5,14 @@
 
 .. _this_image:
 
-THIS_IMAGE --- Function that returns the cosubscript index of this image
-************************************************************************
-
 .. index:: THIS_IMAGE
 
 .. index:: coarray, THIS_IMAGE
 
 .. index:: images, index of this image
+
+THIS_IMAGE --- Function that returns the cosubscript index of this image
+************************************************************************
 
 .. function:: THIS_IMAGE(COARRAY , DIM)
 

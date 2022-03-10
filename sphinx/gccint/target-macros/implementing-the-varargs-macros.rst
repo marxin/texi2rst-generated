@@ -5,10 +5,10 @@
 
 .. _varargs:
 
+.. index:: varargs implementation
+
 Implementing the Varargs Macros
 *******************************
-
-.. index:: varargs implementation
 
 GCC comes with an implementation of ``<varargs.h>`` and
 ``<stdarg.h>`` that work without change on machines that pass arguments

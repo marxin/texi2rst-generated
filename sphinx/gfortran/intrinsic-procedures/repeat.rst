@@ -5,14 +5,14 @@
 
 .. _repeat:
 
-REPEAT --- Repeated string concatenation 
-*****************************************
-
 .. index:: REPEAT
 
 .. index:: string, repeat
 
 .. index:: string, concatenate
+
+REPEAT --- Repeated string concatenation 
+*****************************************
 
 .. function:: REPEAT(STRING, NCOPIES)
 

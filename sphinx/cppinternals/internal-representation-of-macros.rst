@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: macro representation (internal)
+
 Internal representation of macros
 *********************************
-
-.. index:: macro representation (internal)
 
 The preprocessor stores macro expansions in tokenized form.  This
 saves repeated lexing passes during expansion, at the cost of a small

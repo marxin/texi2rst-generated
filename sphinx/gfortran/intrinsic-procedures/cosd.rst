@@ -5,9 +5,6 @@
 
 .. _cosd:
 
-COSD --- Cosine function, degrees
-*********************************
-
 .. index:: COSD
 
 .. index:: DCOSD
@@ -21,6 +18,9 @@ COSD --- Cosine function, degrees
 .. index:: trigonometric function, cosine, degrees
 
 .. index:: cosine, degrees
+
+COSD --- Cosine function, degrees
+*********************************
 
 .. function:: COSD(X)
 

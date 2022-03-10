@@ -5,14 +5,14 @@
 
 .. _sizeof:
 
-SIZEOF --- Size in bytes of an expression
-*****************************************
-
 .. index:: SIZEOF
 
 .. index:: expression size
 
 .. index:: size of an expression
+
+SIZEOF --- Size in bytes of an expression
+*****************************************
 
 .. function:: SIZEOF(X)
 

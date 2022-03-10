@@ -5,9 +5,6 @@
 
 .. _abs:
 
-ABS --- Absolute value
-**********************
-
 .. index:: ABS
 
 .. index:: CABS
@@ -29,6 +26,9 @@ ABS --- Absolute value
 .. index:: KIABS
 
 .. index:: absolute value
+
+ABS --- Absolute value
+**********************
 
 .. function:: ABS(A)
 

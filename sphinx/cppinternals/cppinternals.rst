@@ -9,12 +9,12 @@
 
 .. _conventions:
 
-Conventions
-===========
-
 .. index:: interface
 
 .. index:: header files
+
+Conventions
+===========
 
 cpplib has two interfaces---one is exposed internally only, and the
 other is for both internal and external use.
@@ -35,14 +35,14 @@ behavior.
 
 .. _lexer:
 
-The Lexer
-=========
-
 .. index:: lexer
 
 .. index:: newlines
 
 .. index:: escaped newlines
+
+The Lexer
+=========
 
 .. toctree::
   :maxdepth: 2
@@ -53,9 +53,6 @@ The Lexer
 
 .. _hash-nodes:
 
-Hash Nodes
-==========
-
 .. index:: hash table
 
 .. index:: identifiers
@@ -65,6 +62,9 @@ Hash Nodes
 .. index:: assertions
 
 .. index:: named operators
+
+Hash Nodes
+==========
 
 When cpplib encounters an 'identifier', it generates a hash code for
 it and stores it in the hash table.  By 'identifier' we mean tokens
@@ -121,10 +121,10 @@ enum stored in its hash node, so that directive lookup is also O(1).
 
 .. _macro-expansion:
 
+.. index:: macro expansion
+
 Macro Expansion Algorithm
 =========================
-
-.. index:: macro expansion
 
 Macro expansion is a tricky operation, fraught with nasty corner cases
 and situations that render what you thought was a nifty way to
@@ -149,14 +149,14 @@ result.
 
 .. _token-spacing:
 
-Token Spacing
-=============
-
 .. index:: paste avoidance
 
 .. index:: spacing
 
 .. index:: token spacing
+
+Token Spacing
+=============
 
 First, consider an issue that only concerns the stand-alone
 preprocessor: there needs to be a guarantee that re-reading its preprocessed
@@ -290,10 +290,10 @@ space where one is not strictly needed.
 
 .. _line-numbering:
 
+.. index:: line numbers
+
 Line numbering
 ==============
-
-.. index:: line numbers
 
 .. toctree::
   :maxdepth: 2

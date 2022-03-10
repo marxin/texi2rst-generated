@@ -5,10 +5,10 @@
 
 .. _c++-abi:
 
+.. index:: parameters, c++ abi
+
 C++ ABI parameters
 ******************
-
-.. index:: parameters, c++ abi
 
 .. function:: tree TARGET_CXX_GUARD_TYPE (void)
 

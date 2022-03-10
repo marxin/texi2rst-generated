@@ -5,10 +5,10 @@
 
 .. _binary-constants:
 
+.. index:: Binary constants using the 0b prefix
+
 Binary Constants using the 0b Prefix
 ************************************
-
-.. index:: Binary constants using the 0b prefix
 
 Integer constants can be written as binary constants, consisting of a
 sequence of :samp:`0` and :samp:`1` digits, prefixed by :samp:`0b` or

@@ -5,10 +5,10 @@
 
 .. _extensions-not-implemented-in-gnu-fortran:
 
+.. index:: extensions, not implemented
+
 Extensions not implemented in GNU Fortran
 *****************************************
-
-.. index:: extensions, not implemented
 
 The long history of the Fortran language, its wide use and broad
 userbase, the large number of different compiler vendors and the lack of
@@ -30,12 +30,12 @@ code that uses them running with the GNU Fortran compiler.
 
 .. _encode-and-decode-statements:
 
-ENCODE and DECODE statements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: ENCODE
 
 .. index:: DECODE
+
+ENCODE and DECODE statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 GNU Fortran does not support the ``ENCODE`` and ``DECODE``
 statements.  These statements are best replaced by ``READ`` and
@@ -83,10 +83,10 @@ with the following:
 
 .. _variable-format-expressions:
 
+.. index:: FORMAT
+
 Variable FORMAT expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: FORMAT
 
 A variable ``FORMAT`` expression is format statement which includes
 angle brackets enclosing a Fortran expression: ``FORMAT(I<N>)``.  GNU
@@ -126,10 +126,10 @@ or with:
 
 .. _alternate-complex-function-syntax:
 
+.. index:: Complex function
+
 Alternate complex function syntax
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: Complex function
 
 Some Fortran compilers, including :command:`g77`, let the user declare
 complex functions with the syntax ``COMPLEX FUNCTION name*16()``, as
@@ -139,12 +139,12 @@ common, but not the former.
 
 .. _volatile-common-blocks:
 
-Volatile COMMON blocks
-^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: VOLATILE
 
 .. index:: COMMON
+
+Volatile COMMON blocks
+^^^^^^^^^^^^^^^^^^^^^^
 
 Some Fortran compilers, including :command:`g77`, let the user declare
 ``COMMON`` with the ``VOLATILE`` attribute. This is
@@ -154,10 +154,10 @@ invalid standard Fortran syntax and is not supported by
 
 .. _open(-...-name=):
 
+.. index:: NAME
+
 OPEN( ... NAME=)
 ^^^^^^^^^^^^^^^^
-
-.. index:: NAME
 
 Some Fortran compilers, including :command:`g77`, let the user declare
 ``OPEN( ... NAME=)``. This is
@@ -167,10 +167,10 @@ with ``OPEN( ... FILE=)``.
 
 .. _q-edit-descriptor:
 
+.. index:: Q edit descriptor
+
 Q edit descriptor
 ^^^^^^^^^^^^^^^^^
-
-.. index:: Q edit descriptor
 
 Some Fortran compilers provide the ``Q`` edit descriptor, which
 transfers the number of characters left within an input record into an

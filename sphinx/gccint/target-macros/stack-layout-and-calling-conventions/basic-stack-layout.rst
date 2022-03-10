@@ -5,12 +5,12 @@
 
 .. _frame-layout:
 
-Basic Stack Layout
-^^^^^^^^^^^^^^^^^^
-
 .. index:: stack frame layout
 
 .. index:: frame layout
+
+Basic Stack Layout
+^^^^^^^^^^^^^^^^^^
 
 .. prevent bad page break with this line
 

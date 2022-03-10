@@ -5,10 +5,10 @@
 
 .. _attribute-syntax:
 
+.. index:: attribute syntax
+
 Attribute Syntax
 ****************
-
-.. index:: attribute syntax
 
 This section describes the syntax with which ``__attribute__`` may be
 used, and the constructs to which attribute specifiers bind, for the C

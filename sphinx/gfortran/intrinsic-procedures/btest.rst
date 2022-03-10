@@ -5,9 +5,6 @@
 
 .. _btest:
 
-BTEST --- Bit test function
-***************************
-
 .. index:: BTEST
 
 .. index:: BBTEST
@@ -19,6 +16,9 @@ BTEST --- Bit test function
 .. index:: BKTEST
 
 .. index:: bits, testing
+
+BTEST --- Bit test function
+***************************
 
 .. function:: BTEST(I,POS)
 

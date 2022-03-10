@@ -5,10 +5,10 @@
 
 .. _mips-coprocessors:
 
+.. index:: MIPS coprocessor-definition macros
+
 Defining coprocessor specifics for MIPS targets.
 ************************************************
-
-.. index:: MIPS coprocessor-definition macros
 
 The MIPS specification allows MIPS implementations to have as many as 4
 coprocessors, each with as many as 32 private registers.  GCC supports

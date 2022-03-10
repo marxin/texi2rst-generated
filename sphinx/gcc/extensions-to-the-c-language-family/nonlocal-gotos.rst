@@ -5,10 +5,10 @@
 
 .. _nonlocal-gotos:
 
+.. index:: nonlocal gotos
+
 Nonlocal Gotos
 **************
-
-.. index:: nonlocal gotos
 
 GCC provides the built-in functions ``__builtin_setjmp`` and
 ``__builtin_longjmp`` which are similar to, but not interchangeable

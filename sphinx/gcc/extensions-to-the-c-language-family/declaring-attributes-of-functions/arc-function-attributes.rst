@@ -10,9 +10,9 @@ ARC Function Attributes
 
 These function attributes are supported by the ARC back end:
 
-.. gcc-attr:: interrupt
+.. index:: interrupt function attribute, ARC
 
-  .. index:: interrupt function attribute, ARC
+.. gcc-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -30,15 +30,15 @@ These function attributes are supported by the ARC back end:
   ``ilink2`` for ARCv1 architecture, and ``ilink`` and
   ``firq`` for ARCv2 architecture.
 
+.. index:: long_call function attribute, ARC
+
+.. index:: medium_call function attribute, ARC
+
+.. index:: short_call function attribute, ARC
+
+.. index:: indirect calls, ARC
+
 .. gcc-attr:: long_call, medium_call, short_call
-
-  .. index:: long_call function attribute, ARC
-
-  .. index:: medium_call function attribute, ARC
-
-  .. index:: short_call function attribute, ARC
-
-  .. index:: indirect calls, ARC
 
   These attributes specify how a particular function is called.
   These attributes override the
@@ -56,33 +56,33 @@ These function attributes are supported by the ARC back end:
   branch-and-link instruction, which has a 21-bit offset from
   the call site.
 
-.. gcc-attr:: jli_always
+.. index:: jli_always function attribute, ARC
 
-  .. index:: jli_always function attribute, ARC
+.. gcc-attr:: jli_always
 
   Forces a particular function to be called using ``jli``
   instruction.  The ``jli`` instruction makes use of a table stored
   into ``.jlitab`` section, which holds the location of the functions
   which are addressed using this instruction.
 
-.. gcc-attr:: jli_fixed
+.. index:: jli_fixed function attribute, ARC
 
-  .. index:: jli_fixed function attribute, ARC
+.. gcc-attr:: jli_fixed
 
   Identical like the above one, but the location of the function in the
   ``jli`` table is known and given as an attribute parameter.
 
-.. gcc-attr:: secure_call
+.. index:: secure_call function attribute, ARC
 
-  .. index:: secure_call function attribute, ARC
+.. gcc-attr:: secure_call
 
   This attribute allows one to mark secure-code functions that are
   callable from normal mode.  The location of the secure call function
   into the ``sjli`` table needs to be passed as argument.
 
-.. gcc-attr:: naked
+.. index:: naked function attribute, ARC
 
-  .. index:: naked function attribute, ARC
+.. gcc-attr:: naked
 
   This attribute allows the compiler to construct the requisite function
   declaration, while allowing the body of the function to be assembly

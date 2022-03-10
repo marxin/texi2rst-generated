@@ -5,10 +5,10 @@
 
 .. _stack-smashing-protection:
 
+.. index:: stack smashing protection
+
 Stack smashing protection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: stack smashing protection
 
 .. function:: tree TARGET_STACK_PROTECT_GUARD (void)
 

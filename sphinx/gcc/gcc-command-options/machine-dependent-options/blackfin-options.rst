@@ -7,10 +7,10 @@
 
 .. _blackfin-options:
 
+.. index:: Blackfin Options
+
 Blackfin Options
 ^^^^^^^^^^^^^^^^
-
-.. index:: Blackfin Options
 
 .. option:: -mcpu={cpu}[-{sirevision}]
 

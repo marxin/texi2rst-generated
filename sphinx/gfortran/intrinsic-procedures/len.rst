@@ -5,12 +5,12 @@
 
 .. _len:
 
-LEN --- Length of a character entity
-************************************
-
 .. index:: LEN
 
 .. index:: string, length
+
+LEN --- Length of a character entity
+************************************
 
 .. function:: LEN(STRING , KIND)
 

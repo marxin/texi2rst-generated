@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_OMP_ATOMIC_STORE
+
 GIMPLE_OMP_ATOMIC_STORE
 ^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: GIMPLE_OMP_ATOMIC_STORE
 
 .. function:: gomp_atomic_store *gimple_build_omp_atomic_store ( tree val)
 

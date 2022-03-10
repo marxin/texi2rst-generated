@@ -5,10 +5,10 @@
 
 .. _enumerator-attributes:
 
+.. index:: Enumerator Attributes
+
 Enumerator Attributes
 *********************
-
-.. index:: Enumerator Attributes
 
 GCC allows attributes to be set on enumerators.  See :ref:`attribute-syntax`, for
 details of the exact syntax for using attributes.  Other attributes are

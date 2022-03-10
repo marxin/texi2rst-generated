@@ -5,14 +5,14 @@
 
 .. _code-gen-options:
 
-Options for code generation conventions
-***************************************
-
 .. index:: code generation, conventions
 
 .. index:: options, code generation
 
 .. index:: options, run-time
+
+Options for code generation conventions
+***************************************
 
 These machine-independent options control the interface conventions
 used in code generation.
@@ -23,13 +23,13 @@ one of the forms is listed---the one which is not the default.  You
 can figure out the other form by either removing no- or adding
 it.
 
+.. index:: fno-automatic
+
+.. index:: SAVE statement
+
+.. index:: statement, SAVE
+
 .. option:: -fno-automatic
-
-  .. index:: fno-automatic
-
-  .. index:: SAVE statement
-
-  .. index:: statement, SAVE
 
   Treat each program unit (except those marked as RECURSIVE) as if the
   ``SAVE`` statement were specified for every local variable and array
@@ -42,15 +42,15 @@ it.
   Local variables or arrays having an explicit ``SAVE`` attribute are
   silently ignored unless the :option:`-pedantic` option is added.
 
+.. index:: calling convention
+
+.. index:: f2c calling convention
+
+.. index:: g77 calling convention
+
+.. index:: libf2c calling convention
+
 .. option:: -ff2c
-
-  .. index:: calling convention
-
-  .. index:: f2c calling convention
-
-  .. index:: g77 calling convention
-
-  .. index:: libf2c calling convention
 
   Generate code designed to be compatible with code generated
   by :command:`g77` and :command:`f2c`.
@@ -84,17 +84,17 @@ it.
     of type default ``REAL`` or ``COMPLEX`` as actual arguments, as
     the library implementations use the :option:`-fno-f2c` calling conventions.
 
+.. index:: fno-underscoring
+
+.. index:: underscore
+
+.. index:: symbol names, underscores
+
+.. index:: transforming symbol names
+
+.. index:: symbol names, transforming
+
 .. option:: -fno-underscoring
-
-  .. index:: fno-underscoring
-
-  .. index:: underscore
-
-  .. index:: symbol names, underscores
-
-  .. index:: transforming symbol names
-
-  .. index:: symbol names, transforming
 
   Do not transform names of entities specified in the Fortran
   source file by appending underscores to them.
@@ -163,23 +163,23 @@ it.
   prevent accidental linking between procedures with incompatible
   interfaces.
 
+.. index:: fsecond-underscore
+
+.. index:: underscore
+
+.. index:: symbol names, underscores
+
+.. index:: transforming symbol names
+
+.. index:: symbol names, transforming
+
+.. index:: f2c calling convention
+
+.. index:: g77 calling convention
+
+.. index:: libf2c calling convention
+
 .. option:: -fsecond-underscore
-
-  .. index:: fsecond-underscore
-
-  .. index:: underscore
-
-  .. index:: symbol names, underscores
-
-  .. index:: transforming symbol names
-
-  .. index:: symbol names, transforming
-
-  .. index:: f2c calling convention
-
-  .. index:: g77 calling convention
-
-  .. index:: libf2c calling convention
 
   By default, GNU Fortran appends an underscore to external
   names.  If this option is used GNU Fortran appends two
@@ -197,11 +197,11 @@ it.
   for compatibility with :command:`g77` and :command:`f2c`, and is implied
   by use of the :option:`-ff2c` option.
 
+.. index:: fcoarray
+
+.. index:: coarrays
+
 .. option:: -fcoarray={<keyword>}
-
-  .. index:: fcoarray
-
-  .. index:: coarrays
 
   none
     Disable coarray support; using coarray declarations and image-control
@@ -214,29 +214,29 @@ it.
     Library-based coarray parallelization; a suitable GNU Fortran coarray
     library needs to be linked.
 
+.. index:: fcheck
+
+.. index:: array, bounds checking
+
+.. index:: bit intrinsics checking
+
+.. index:: bounds checking
+
+.. index:: pointer checking
+
+.. index:: memory checking
+
+.. index:: range checking
+
+.. index:: subscript checking
+
+.. index:: checking subscripts
+
+.. index:: run-time checking
+
+.. index:: checking array temporaries
+
 .. option:: -fcheck={<keyword>}
-
-  .. index:: fcheck
-
-  .. index:: array, bounds checking
-
-  .. index:: bit intrinsics checking
-
-  .. index:: bounds checking
-
-  .. index:: pointer checking
-
-  .. index:: memory checking
-
-  .. index:: range checking
-
-  .. index:: subscript checking
-
-  .. index:: checking subscripts
-
-  .. index:: run-time checking
-
-  .. index:: checking array temporaries
 
   Enable the generation of run-time checks; the argument shall be
   a comma-delimited list of the following keywords.  Prefixing a check with
@@ -297,17 +297,17 @@ it.
   will compile the file with all checks enabled as specified above except
   warnings for generated array temporaries.
 
-.. option:: -fbounds-check
+.. index:: fbounds-check
 
-  .. index:: fbounds-check
+.. option:: -fbounds-check
 
   .. Note: This option is also referred in gcc's manpage
 
   Deprecated alias for :option:`-fcheck`:samp:`=bounds`.
 
-.. option:: -ftail-call-workaround, -ftail-call-workaround={n}
+.. index:: tail-call-workaround
 
-  .. index:: tail-call-workaround
+.. option:: -ftail-call-workaround, -ftail-call-workaround={n}
 
   Some C interfaces to Fortran codes violate the gfortran ABI by
   omitting the hidden character length arguments as described in
@@ -339,15 +339,15 @@ it.
   Default is currently :option:`-ftail-call-workaround`, this will change
   in future releases.
 
-.. option:: -fcheck-array-temporaries
+.. index:: fcheck-array-temporaries
 
-  .. index:: fcheck-array-temporaries
+.. option:: -fcheck-array-temporaries
 
   Deprecated alias for :option:`-fcheck`:samp:`=array-temps`.
 
-.. option:: -fmax-array-constructor={n}
+.. index:: fmax-array-constructor
 
-  .. index:: fmax-array-constructor
+.. option:: -fmax-array-constructor={n}
 
   This option can be used to increase the upper limit permitted in 
   array constructors.  The code below requires this option to expand
@@ -369,9 +369,9 @@ it.
 
   The default value for :samp:`{n}` is 65535.
 
-.. option:: -fmax-stack-var-size={n}
+.. index:: fmax-stack-var-size
 
-  .. index:: fmax-stack-var-size
+.. option:: -fmax-stack-var-size={n}
 
   This option specifies the size in bytes of the largest array that will be put
   on the stack; if the size is exceeded static memory is used (except in
@@ -385,9 +385,9 @@ it.
 
   The default value for :samp:`{n}` is 65536.
 
-.. option:: -fstack-arrays
+.. index:: fstack-arrays
 
-  .. index:: fstack-arrays
+.. option:: -fstack-arrays
 
   Adding this option will make the Fortran compiler put all arrays of
   unknown size and array temporaries onto stack memory.  If your program uses very
@@ -396,21 +396,21 @@ it.
   by default at optimization level :option:`-Ofast` unless
   :option:`-fmax-stack-var-size` is specified.
 
+.. index:: fpack-derived
+
+.. index:: structure packing
+
 .. option:: -fpack-derived
-
-  .. index:: fpack-derived
-
-  .. index:: structure packing
 
   This option tells GNU Fortran to pack derived type members as closely as
   possible.  Code compiled with this option is likely to be incompatible
   with code compiled without this option, and may execute slower.
 
+.. index:: frepack-arrays
+
+.. index:: repacking arrays
+
 .. option:: -frepack-arrays
-
-  .. index:: frepack-arrays
-
-  .. index:: repacking arrays
 
   In some circumstances GNU Fortran may pass assumed shape array
   sections via a descriptor describing a noncontiguous area of memory.
@@ -421,18 +421,18 @@ it.
   significant overhead to the function call, especially  when the passed data
   is noncontiguous.
 
-.. option:: -fshort-enums
+.. index:: fshort-enums
 
-  .. index:: fshort-enums
+.. option:: -fshort-enums
 
   This option is provided for interoperability with C code that was
   compiled with the :option:`-fshort-enums` option.  It will make
   GNU Fortran choose the smallest ``INTEGER`` kind a given
   enumerator set will fit in, and give all its enumerators this kind.
 
-.. option:: -finline-arg-packing
+.. index:: finline-arg-packing
 
-  .. index:: finline-arg-packing
+.. option:: -finline-arg-packing
 
   When passing an assumed-shape argument of a procedure as actual
   argument to an assumed-size or explicit size or as argument to a
@@ -461,9 +461,9 @@ it.
   case, it may be better to disable this option.  Instances of packing
   can be found by using :option:`-Warray-temporaries`.
 
-.. option:: -fexternal-blas
+.. index:: fexternal-blas
 
-  .. index:: fexternal-blas
+.. option:: -fexternal-blas
 
   This option will make :command:`gfortran` generate calls to BLAS functions
   for some matrix operations like ``MATMUL``, instead of using our own
@@ -472,9 +472,9 @@ it.
   optimized vendor BLAS library is available.  The BLAS library will have
   to be specified at link time.
 
-.. option:: -fblas-matmul-limit={n}
+.. index:: fblas-matmul-limit
 
-  .. index:: fblas-matmul-limit
+.. option:: -fblas-matmul-limit={n}
 
   Only significant when :option:`-fexternal-blas` is in effect.
   Matrix multiplication of matrices with size larger than (or equal to) :samp:`{n}`
@@ -485,9 +485,9 @@ it.
 
   The default value for :samp:`{n}` is 30.
 
-.. option:: -finline-matmul-limit={n}
+.. index:: finline-matmul-limit
 
-  .. index:: finline-matmul-limit
+.. option:: -finline-matmul-limit={n}
 
   When front-end optimization is active, some calls to the ``MATMUL``
   intrinsic function will be inlined.  This may result in code size
@@ -502,13 +502,25 @@ it.
   The default value for :samp:`{n}` is 30.  The ``-fblas-matmul-limit``
   can be used to change this value.
 
-.. option:: -frecursive
+.. index:: frecursive
 
-  .. index:: frecursive
+.. option:: -frecursive
 
   Allow indirect recursion by forcing all local arrays to be allocated
   on the stack. This flag cannot be used together with
   :option:`-fmax-stack-var-size` = or :option:`-fno-automatic`.
+
+.. index:: finit-local-zero
+
+.. index:: finit-derived
+
+.. index:: finit-integer
+
+.. index:: finit-real
+
+.. index:: finit-logical
+
+.. index:: finit-character
 
 .. option:: -finit-local-zero
             -finit-derived
@@ -559,11 +571,11 @@ it.
   silence warnings that would have been emitted by :option:`-Wuninitialized`
   for the affected local variables.
 
+.. index:: falign-commons
+
+.. index:: alignment of COMMON blocks
+
 .. option:: -falign-commons
-
-  .. index:: falign-commons
-
-  .. index:: alignment of COMMON blocks
 
   By default, :command:`gfortran` enforces proper alignment of all variables in a
   ``COMMON`` block by padding them as needed. On certain platforms this is mandatory,
@@ -574,11 +586,11 @@ it.
   To avoid potential alignment issues in ``COMMON`` blocks, it is recommended to order
   objects from largest to smallest.
 
+.. index:: fno-protect-parens
+
+.. index:: re-association of parenthesized expressions
+
 .. option:: -fno-protect-parens
-
-  .. index:: fno-protect-parens
-
-  .. index:: re-association of parenthesized expressions
 
   By default the parentheses in expression are honored for all optimization
   levels such that the compiler does not do any re-association. Using
@@ -588,22 +600,22 @@ it.
   need to be in effect. The parentheses protection is enabled by default, unless
   :option:`-Ofast` is given.
 
+.. index:: frealloc-lhs
+
+.. index:: Reallocate the LHS in assignments
+
 .. option:: -frealloc-lhs
-
-  .. index:: frealloc-lhs
-
-  .. index:: Reallocate the LHS in assignments
 
   An allocatable left-hand side of an intrinsic assignment is automatically
   (re)allocated if it is either unallocated or has a different shape. The
   option is enabled by default except when :option:`-std`:samp:`=f95` is given. See
   also :option:`-Wrealloc-lhs`.
 
+.. index:: faggressive-function-elimination
+
+.. index:: Elimination of functions with identical argument lists
+
 .. option:: -faggressive-function-elimination
-
-  .. index:: faggressive-function-elimination
-
-  .. index:: Elimination of functions with identical argument lists
 
   Functions with identical argument lists are eliminated within
   statements, regardless of whether these functions are marked
@@ -616,11 +628,11 @@ it.
   there will only be a single call to ``f``.  This option only works
   if :option:`-ffrontend-optimize` is in effect.
 
+.. index:: frontend-optimize
+
+.. index:: Front-end optimization
+
 .. option:: -ffrontend-optimize
-
-  .. index:: frontend-optimize
-
-  .. index:: Front-end optimization
 
   This option performs front-end optimization, based on manipulating
   parts the Fortran parse tree.  Enabled by default by any :option:`-O` option
@@ -639,11 +651,11 @@ it.
 
   It can be deselected by specifying :option:`-fno-frontend-optimize`.
 
+.. index:: frontend-loop-interchange
+
+.. index:: loop interchange, Fortran
+
 .. option:: -ffrontend-loop-interchange
-
-  .. index:: frontend-loop-interchange
-
-  .. index:: loop interchange, Fortran
 
   Attempt to interchange loops in the Fortran front end where
   profitable.  Enabled by default by any :option:`-O` option.

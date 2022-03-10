@@ -5,10 +5,10 @@
 
 .. _same_type_as:
 
+.. index:: SAME_TYPE_AS
+
 SAME_TYPE_AS ---  Query dynamic types for equality
 **************************************************
-
-.. index:: SAME_TYPE_AS
 
 .. function:: SAME_TYPE_AS(A, B)
 

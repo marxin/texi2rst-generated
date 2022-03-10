@@ -32,10 +32,10 @@
 
 .. _top:
 
+.. index:: introduction
+
 Introduction
 ============
-
-.. index:: introduction
 
 This manual documents how to use the GNU compilers,
 as well as their features and incompatibilities, and how to report

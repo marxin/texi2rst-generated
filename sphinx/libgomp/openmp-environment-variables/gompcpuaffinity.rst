@@ -5,10 +5,10 @@
 
 .. _gomp_cpu_affinity:
 
+.. index:: Environment Variable
+
 GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
 **************************************************
-
-.. index:: Environment Variable
 
 :samp:`{Description}:`
   Binds threads to specific CPUs.  The variable should contain a space-separated

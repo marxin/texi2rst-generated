@@ -12,10 +12,10 @@ CPP has some features which are present mainly for compatibility with
 older programs.  We discourage their use in new code.  In some cases,
 we plan to remove the feature in a future version of GCC.
 
+.. index:: assertions
+
 Assertions
 ^^^^^^^^^^
-
-.. index:: assertions
 
 :dfn:`Assertions` are a deprecated alternative to macros in writing
 conditionals to test what sort of computer or system the compiled

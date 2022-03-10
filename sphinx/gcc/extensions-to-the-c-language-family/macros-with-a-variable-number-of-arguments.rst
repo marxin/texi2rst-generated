@@ -5,9 +5,6 @@
 
 .. _variadic-macros:
 
-Macros with a Variable Number of Arguments.
-*******************************************
-
 .. index:: variable number of arguments
 
 .. index:: macro with variable arguments
@@ -15,6 +12,9 @@ Macros with a Variable Number of Arguments.
 .. index:: rest argument (in macro)
 
 .. index:: variadic macros
+
+Macros with a Variable Number of Arguments.
+*******************************************
 
 In the ISO C standard of 1999, a macro can be declared to accept a
 variable number of arguments much as a function can.  The syntax for

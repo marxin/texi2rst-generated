@@ -5,10 +5,10 @@
 
 .. _intrinsic-procedures:
 
+.. index:: intrinsic procedures
+
 Intrinsic Procedures
 --------------------
-
-.. index:: intrinsic procedures
 
 .. toctree::
   :maxdepth: 2

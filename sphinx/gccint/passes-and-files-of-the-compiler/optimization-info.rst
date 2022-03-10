@@ -5,10 +5,10 @@
 
 .. _optimization-info:
 
+.. index:: optimization dumps
+
 Optimization info
 *****************
-
-.. index:: optimization dumps
 
 This section is describes dump infrastructure which is common to both
 pass dumps as well as optimization dumps. The goal for this
@@ -21,10 +21,10 @@ information about various compiler transformations and optimizations.
 
 .. _dump-setup:
 
+.. index:: dump setup
+
 Dump setup
 ^^^^^^^^^^
-
-.. index:: dump setup
 
 A dump_manager class is defined in :samp:`dumpfile.h`. Various passes
 register dumping pass-specific information via ``dump_register`` in
@@ -48,10 +48,10 @@ and ``dump_end``.
 
 .. _optimization-groups:
 
+.. index:: optimization groups
+
 Optimization groups
 ^^^^^^^^^^^^^^^^^^^
-
-.. index:: optimization groups
 
 The optimization passes are grouped into several categories. Currently
 defined categories in :samp:`dumpfile.h` are
@@ -91,10 +91,10 @@ information for all the passes is dumped.
 
 .. _dump-files-and-streams:
 
+.. index:: optimization info file names
+
 Dump files and streams
 ^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: optimization info file names
 
 There are two separate output streams available for outputting
 optimization information from passes. Note that both these streams
@@ -119,10 +119,10 @@ redirecting ``stderr``.
 
 .. _dump-output-verbosity:
 
+.. index:: dump verbosity
+
 Dump output verbosity
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: dump verbosity
 
 The dump verbosity has the following options
 
@@ -153,10 +153,10 @@ The dump verbosity has the following options
 
 .. _dump-types:
 
+.. index:: dump types
+
 Dump types
 ^^^^^^^^^^
-
-.. index:: dump types
 
 ``dump_printf``
   This is a generic method for doing formatted output. It takes an
@@ -211,10 +211,10 @@ Dump types
 
 .. _dump-examples:
 
+.. index:: dump examples
+
 Dump examples
 ^^^^^^^^^^^^^
-
-.. index:: dump examples
 
 .. code-block:: shell-session
 

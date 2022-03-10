@@ -5,12 +5,12 @@
 
 .. _variadic-pointer-args:
 
-Pointer Arguments in Variadic Functions
-***************************************
-
 .. index:: pointer arguments in variadic functions
 
 .. index:: variadic functions, pointer arguments
+
+Pointer Arguments in Variadic Functions
+***************************************
 
 Standard C requires that pointer types used with ``va_arg`` in
 functions with variable argument lists either must be compatible with

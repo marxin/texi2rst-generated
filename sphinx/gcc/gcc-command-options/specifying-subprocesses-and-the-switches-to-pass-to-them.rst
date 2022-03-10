@@ -7,10 +7,10 @@
 
   .. _spec-files:
 
+  .. index:: Spec Files
+
   Specifying Subprocesses and the Switches to Pass to Them
   ********************************************************
-
-  .. index:: Spec Files
 
   :command:`gcc` is a driver program.  It performs its job by invoking a
   sequence of other programs to do the work of compiling, assembling and

@@ -5,10 +5,10 @@
 
 .. _flags:
 
+.. index:: flags in RTL expression
+
 Flags in an RTL Expression
 **************************
-
-.. index:: flags in RTL expression
 
 RTL expressions contain several flags (one-bit bit-fields)
 that are used in certain types of expression.  Most often they

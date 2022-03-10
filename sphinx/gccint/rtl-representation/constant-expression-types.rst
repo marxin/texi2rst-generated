@@ -5,12 +5,12 @@
 
 .. _constants:
 
-Constant Expression Types
-*************************
-
 .. index:: RTL constants
 
 .. index:: RTL constant expression types
+
+Constant Expression Types
+*************************
 
 The simplest RTL expressions are those that represent constant values.
 

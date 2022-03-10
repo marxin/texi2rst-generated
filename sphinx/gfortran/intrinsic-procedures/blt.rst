@@ -5,12 +5,12 @@
 
 .. _blt:
 
-BLT --- Bitwise less than
-*************************
-
 .. index:: BLT
 
 .. index:: bitwise comparison
+
+BLT --- Bitwise less than
+*************************
 
 .. function:: BLT(I, J)
 

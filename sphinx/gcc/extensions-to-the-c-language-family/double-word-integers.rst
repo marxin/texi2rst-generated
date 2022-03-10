@@ -5,9 +5,6 @@
 
 .. _long-long:
 
-Double-Word Integers
-********************
-
 .. index:: long long data types
 
 .. index:: double-word arithmetic
@@ -17,6 +14,9 @@ Double-Word Integers
 .. index:: LL integer suffix
 
 .. index:: ULL integer suffix
+
+Double-Word Integers
+********************
 
 ISO C99 and ISO C++11 support data types for integers that are at least
 64 bits wide, and as an extension GCC supports them in C90 and C++98 modes.

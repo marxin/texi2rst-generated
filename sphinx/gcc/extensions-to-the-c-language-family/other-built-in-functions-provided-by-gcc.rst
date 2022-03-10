@@ -5,9 +5,6 @@
 
 .. _other-builtins:
 
-Other Built-in Functions Provided by GCC
-****************************************
-
 .. index:: built-in functions
 
 .. index:: __builtin_alloca
@@ -821,6 +818,9 @@ Other Built-in Functions Provided by GCC
 .. index:: ynf
 
 .. index:: ynl
+
+Other Built-in Functions Provided by GCC
+****************************************
 
 GCC provides a large number of built-in functions other than the ones
 mentioned above.  Some of these are for internal use in the processing

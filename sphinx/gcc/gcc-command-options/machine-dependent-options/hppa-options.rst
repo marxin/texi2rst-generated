@@ -7,10 +7,10 @@
 
 .. _hppa-options:
 
+.. index:: HPPA Options
+
 HPPA Options
 ^^^^^^^^^^^^
-
-.. index:: HPPA Options
 
 These :samp:`-m` options are defined for the HPPA family of computers:
 

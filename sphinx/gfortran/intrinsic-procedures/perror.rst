@@ -5,12 +5,12 @@
 
 .. _perror:
 
-PERROR --- Print system error message
-*************************************
-
 .. index:: PERROR
 
 .. index:: system, error handling
+
+PERROR --- Print system error message
+*************************************
 
 .. function:: PERROR(STRING)
 

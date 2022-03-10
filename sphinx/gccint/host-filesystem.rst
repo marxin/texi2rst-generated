@@ -5,12 +5,12 @@
 
 .. _filesystem:
 
-Host Filesystem
-***************
-
 .. index:: configuration file
 
 .. index:: xm-machine.h
+
+Host Filesystem
+***************
 
 GCC needs to know a number of things about the semantics of the host
 machine's filesystem.  Filesystems with Unix and MS-DOS semantics are

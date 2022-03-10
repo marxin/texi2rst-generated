@@ -5,9 +5,6 @@
 
 .. _cotan:
 
-COTAN --- Cotangent function
-****************************
-
 .. index:: COTAN
 
 .. index:: DCOTAN
@@ -15,6 +12,9 @@ COTAN --- Cotangent function
 .. index:: trigonometric function, cotangent
 
 .. index:: cotangent
+
+COTAN --- Cotangent function
+****************************
 
 .. function:: COTAN(X)
 

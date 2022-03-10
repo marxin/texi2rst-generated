@@ -5,12 +5,12 @@
 
 .. _omp_schedule:
 
-OMP_SCHEDULE -- How threads are scheduled
-*****************************************
-
 .. index:: Environment Variable
 
 .. index:: Implementation specific setting
+
+OMP_SCHEDULE -- How threads are scheduled
+*****************************************
 
 :samp:`{Description}:`
   Allows to specify ``schedule type`` and ``chunk size``. 

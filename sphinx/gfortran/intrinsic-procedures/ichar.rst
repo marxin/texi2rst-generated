@@ -5,12 +5,12 @@
 
 .. _ichar:
 
-ICHAR --- Character-to-integer conversion function
-**************************************************
-
 .. index:: ICHAR
 
 .. index:: conversion, to integer
+
+ICHAR --- Character-to-integer conversion function
+**************************************************
 
 .. function:: ICHAR(C)
 

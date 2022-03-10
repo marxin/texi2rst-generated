@@ -5,12 +5,12 @@
 
 .. _backwards-compatibility:
 
-Backwards Compatibility
-***********************
-
 .. index:: Backwards Compatibility
 
 .. index:: ARM [Annotated C++ Reference Manual]
+
+Backwards Compatibility
+***********************
 
 Now that there is a definitive ISO standard C++, G++ has a specification
 to adhere to.  The C++ language evolved over time, and features that

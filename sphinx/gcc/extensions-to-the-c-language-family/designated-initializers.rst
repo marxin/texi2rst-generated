@@ -5,9 +5,6 @@
 
 .. _designated-inits:
 
-Designated Initializers
-***********************
-
 .. index:: initializers with labeled elements
 
 .. index:: labeled elements in initializers
@@ -15,6 +12,9 @@ Designated Initializers
 .. index:: case labels in initializers
 
 .. index:: designated initializers
+
+Designated Initializers
+***********************
 
 Standard C90 requires the elements of an initializer to appear in a fixed
 order, the same as the order of the elements in the array or structure

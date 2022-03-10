@@ -5,12 +5,12 @@
 
 .. _macro-pitfalls:
 
-Macro Pitfalls
-**************
-
 .. index:: problems with macros
 
 .. index:: pitfalls of macros
+
+Macro Pitfalls
+**************
 
 In this section we describe some special rules that apply to macros and
 macro expansion, and point out certain cases in which the rules have
@@ -57,10 +57,10 @@ should be avoided.
 
 .. _operator-precedence-problems:
 
+.. index:: parentheses in macro bodies
+
 Operator Precedence Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: parentheses in macro bodies
 
 You may have noticed that in most of the macro definition examples shown
 above, each occurrence of a macro argument name had parentheses around
@@ -126,10 +126,10 @@ Here, then, is the recommended way to define ``ceil_div`` :
 
 .. _swallowing-the-semicolon:
 
+.. index:: semicolons (after macro calls)
+
 Swallowing the Semicolon
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: semicolons (after macro calls)
 
 Often it is desirable to define a macro that expands into a compound
 statement.  Consider, for example, the following macro, that advances a
@@ -191,12 +191,12 @@ generate no extra code for it.
 
 .. _duplication-of-side-effects:
 
-Duplication of Side Effects
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. index:: side effects (in macro arguments)
 
 .. index:: unsafe macros
+
+Duplication of Side Effects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Many C programs define a macro ``min``, for 'minimum', like this:
 
@@ -264,10 +264,10 @@ that variable in ``min`` :
 
 .. _self-referential-macros:
 
+.. index:: self-reference
+
 Self-Referential Macros
 ^^^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: self-reference
 
 A :dfn:`self-referential` macro is one whose name appears in its
 definition.  Recall that all macro definitions are rescanned for more
@@ -335,14 +335,14 @@ macro, but not when it indirectly appears in its own definition.
 
 .. _argument-prescan:
 
-Argument Prescan
-^^^^^^^^^^^^^^^^
-
 .. index:: expansion of arguments
 
 .. index:: macro argument expansion
 
 .. index:: prescan of macro arguments
+
+Argument Prescan
+^^^^^^^^^^^^^^^^
 
 Macro arguments are completely macro-expanded before they are
 substituted into a macro body, unless they are stringized or pasted
@@ -429,10 +429,10 @@ that the prescan does make a difference in three special cases:
 
 .. _newlines-in-arguments:
 
+.. index:: newlines in macro arguments
+
 Newlines in Arguments
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. index:: newlines in macro arguments
 
 The invocation of a function-like macro can extend over many logical
 lines.  However, in the present implementation, the entire expansion

@@ -5,12 +5,12 @@
 
 .. _random_init:
 
-RANDOM_INIT --- Initialize a pseudo-random number generator
-***********************************************************
-
 .. index:: RANDOM_INIT
 
 .. index:: random number generation, initialization
+
+RANDOM_INIT --- Initialize a pseudo-random number generator
+***********************************************************
 
 .. function:: RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 

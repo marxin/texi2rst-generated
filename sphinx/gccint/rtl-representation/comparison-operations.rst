@@ -5,10 +5,10 @@
 
 .. _comparisons:
 
+.. index:: RTL comparison operations
+
 Comparison Operations
 *********************
-
-.. index:: RTL comparison operations
 
 Comparison operators test a relation on two operands and are considered
 to represent a machine-dependent nonzero value described by, but not

@@ -5,14 +5,14 @@
 
 .. _thread-local:
 
-Thread-Local Storage
-********************
-
 .. index:: Thread-Local Storage
 
 .. index:: TLS
 
 .. index:: __thread
+
+Thread-Local Storage
+********************
 
 Thread-local storage (TLS) is a mechanism by which variables
 are allocated such that there is one instance of the variable per extant

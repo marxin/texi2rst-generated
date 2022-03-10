@@ -5,12 +5,12 @@
 
 .. _configure-terms:
 
-Configure Terms and History
-***************************
-
 .. index:: configure terms
 
 .. index:: canadian
+
+Configure Terms and History
+***************************
 
 The configure and build process has a long and colorful history, and can
 be confusing to anyone who doesn't know why things are the way they are.

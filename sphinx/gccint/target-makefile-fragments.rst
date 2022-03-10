@@ -5,12 +5,12 @@
 
 .. _target-fragment:
 
-Target Makefile Fragments
-*************************
-
 .. index:: target makefile fragment
 
 .. index:: t-target
+
+Target Makefile Fragments
+*************************
 
 Target makefile fragments can set these Makefile variables.
 

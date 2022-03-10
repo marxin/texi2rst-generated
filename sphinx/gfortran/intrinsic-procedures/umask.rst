@@ -5,12 +5,12 @@
 
 .. _umask:
 
-UMASK --- Set the file creation mask
-************************************
-
 .. index:: UMASK
 
 .. index:: file system, file creation mask
+
+UMASK --- Set the file creation mask
+************************************
 
 .. function:: UMASK(MASK)
 

@@ -5,12 +5,12 @@
 
 .. _digits:
 
-DIGITS --- Significant binary digits function
-*********************************************
-
 .. index:: DIGITS
 
 .. index:: model representation, significant digits
+
+DIGITS --- Significant binary digits function
+*********************************************
 
 .. function:: DIGITS(X)
 

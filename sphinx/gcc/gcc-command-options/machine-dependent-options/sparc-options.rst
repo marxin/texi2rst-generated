@@ -7,10 +7,10 @@
 
 .. _sparc-options:
 
+.. index:: SPARC options
+
 SPARC Options
 ^^^^^^^^^^^^^
-
-.. index:: SPARC options
 
 These :samp:`-m` options are supported on the SPARC:
 

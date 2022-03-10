@@ -5,10 +5,10 @@
 
 .. _misc:
 
+.. index:: parameters, miscellaneous
+
 Miscellaneous Parameters
 ************************
-
-.. index:: parameters, miscellaneous
 
 .. prevent bad page break with this line
 

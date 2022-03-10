@@ -5,9 +5,6 @@
 
 .. _tan:
 
-TAN --- Tangent function
-************************
-
 .. index:: TAN
 
 .. index:: DTAN
@@ -15,6 +12,9 @@ TAN --- Tangent function
 .. index:: trigonometric function, tangent
 
 .. index:: tangent
+
+TAN --- Tangent function
+************************
 
 .. function:: TAN(X)
 

@@ -5,9 +5,6 @@
 
 .. _mvbits:
 
-MVBITS --- Move bits from one integer to another
-************************************************
-
 .. index:: MVBITS
 
 .. index:: BMVBITS
@@ -19,6 +16,9 @@ MVBITS --- Move bits from one integer to another
 .. index:: KMVBITS
 
 .. index:: bits, move
+
+MVBITS --- Move bits from one integer to another
+************************************************
 
 .. function:: MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 

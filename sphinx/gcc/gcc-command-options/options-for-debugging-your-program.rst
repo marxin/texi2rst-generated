@@ -5,12 +5,12 @@
 
 .. _debugging-options:
 
-Options for Debugging Your Program
-**********************************
-
 .. index:: options, debugging
 
 .. index:: debugging information options
+
+Options for Debugging Your Program
+**********************************
 
 To tell GCC to emit extra information for use by a debugger, in almost 
 all cases you need only to add :option:`-g` to your other options.  Some debug

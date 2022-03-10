@@ -5,14 +5,14 @@
 
 .. _c++-interface:
 
-C++ Interface and Implementation Pragmas
-****************************************
-
 .. index:: interface and implementation headers, C++
 
 .. index:: C++ interface and implementation headers
 
 .. index:: pragmas, interface and implementation
+
+C++ Interface and Implementation Pragmas
+****************************************
 
 ``#pragma interface`` and ``#pragma implementation`` provide the
 user with a way of explicitly directing the compiler to emit entities

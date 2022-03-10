@@ -3,10 +3,10 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_PHI
+
 GIMPLE_PHI
 ^^^^^^^^^^
-
-.. index:: GIMPLE_PHI
 
 .. function:: unsigned gimple_phi_capacity (gimple g)
 

@@ -5,12 +5,12 @@
 
 .. _driver:
 
-Controlling the Compilation Driver, gcc
-***************************************
-
 .. index:: driver
 
 .. index:: controlling the compilation driver
+
+Controlling the Compilation Driver, gcc
+***************************************
 
 .. prevent bad page break with this line
 

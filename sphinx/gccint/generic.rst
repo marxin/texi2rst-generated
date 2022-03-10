@@ -5,10 +5,10 @@
 
 .. _generic:
 
+.. index:: GENERIC
+
 GENERIC
 -------
-
-.. index:: GENERIC
 
 The purpose of GENERIC is simply to provide a
 language-independent way of representing an entire function in
