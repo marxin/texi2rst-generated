@@ -4564,6 +4564,10 @@ section includes experimental options that may produce broken code.
     is the maximum of the estimated number of iterations of the inner loop and
     this parameter.  The default value of this parameter is 50.
 
+  .. gcc-param:: vect-induction-float
+
+    Enable loop vectorization of floating point inductions.
+
   .. gcc-param:: avoid-fma-max-bits
 
     Maximum number of bits for which we avoid creating FMAs.

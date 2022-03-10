@@ -459,7 +459,7 @@ it.
   contains a very large number of argument that have to be packed, code
   size and also compilation time may become excessive.  If that is the
   case, it may be better to disable this option.  Instances of packing
-  can be found by using by using :option:`-Warray-temporaries`.
+  can be found by using :option:`-Warray-temporaries`.
 
 .. option:: -fexternal-blas
 
