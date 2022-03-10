@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETCWD, system, working directory
+
 .. _getcwd:
-
-.. index:: GETCWD
-
-.. index:: system, working directory
 
 GETCWD --- Get current working directory
 ****************************************
@@ -48,4 +46,3 @@ GETCWD --- Get current working directory
 
   :samp:`{See also}:`
     :ref:`CHDIR`
-

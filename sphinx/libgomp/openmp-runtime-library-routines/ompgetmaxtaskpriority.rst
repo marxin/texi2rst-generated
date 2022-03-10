@@ -27,4 +27,3 @@ that can be set for tasks.
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.29.
-

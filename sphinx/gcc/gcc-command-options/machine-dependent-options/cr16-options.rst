@@ -5,9 +5,9 @@
 
 .. program:: CR16
 
-.. _cr16-options:
-
 .. index:: CR16 Options
+
+.. _cr16-options:
 
 CR16 Options
 ^^^^^^^^^^^^
@@ -42,4 +42,3 @@ These options are defined specifically for the CR16 ports.
   :samp:`far` or :samp:`medium`. :samp:`medium` is default.
   However, :samp:`far` is not valid with :option:`-mcr16c`, as the
   CR16C architecture does not support the far data model.
-

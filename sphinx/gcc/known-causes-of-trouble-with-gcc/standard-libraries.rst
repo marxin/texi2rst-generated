@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _standard-libraries:
-
 .. index:: Wall
+
+.. _standard-libraries:
 
 Standard Libraries
 ******************
@@ -31,4 +31,3 @@ GNU/Linux and HURD-based GNU systems; no recent version of it supports
 other systems, though some very old versions did.  Version 2.2 of the
 GNU C library includes nearly complete C99 support.  You could also ask
 your operating system vendor if newer libraries are available.
-

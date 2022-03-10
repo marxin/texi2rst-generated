@@ -15,4 +15,3 @@ generic passes to be added after plugin loading.
 When a pass is first added to one of the pass lists, the event
 ``PLUGIN_NEW_PASS`` is invoked, with the callback parameter
 ``gcc_data`` pointing to the new pass.
-

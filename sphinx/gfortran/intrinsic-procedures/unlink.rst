@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: UNLINK, file system, remove file
+
 .. _unlink:
-
-.. index:: UNLINK
-
-.. index:: file system, remove file
 
 UNLINK --- Remove a file from the file system
 *********************************************
@@ -42,4 +40,3 @@ UNLINK --- Remove a file from the file system
   :samp:`{See also}:`
     :ref:`LINK`, 
     :ref:`SYMLNK`
-

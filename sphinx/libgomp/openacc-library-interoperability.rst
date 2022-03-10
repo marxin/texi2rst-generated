@@ -15,4 +15,3 @@ OpenACC Library Interoperability
   first-invocation-nvidia-cublas-library-api
   first-invocation-openacc-library-api
   openacc-library-and-environment-variables
-

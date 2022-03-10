@@ -102,4 +102,3 @@ The built-in functions supported are:
 
   __vector_pair __builtin_vsx_lxvp (size_t, __vector_pair *);
   void __builtin_vsx_stxvp (__vector_pair, size_t, __vector_pair *);
-

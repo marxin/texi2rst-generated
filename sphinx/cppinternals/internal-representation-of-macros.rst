@@ -25,4 +25,3 @@ expansion.  Despite this optimization it is still necessary to store
 the original parameters to the macro, both for dumping with e.g.,
 :option:`-dD`, and to warn about non-trivial macro redefinitions when
 the parameter names have changed.
-

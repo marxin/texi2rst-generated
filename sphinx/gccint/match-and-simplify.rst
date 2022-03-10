@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _match-and-simplify:
-
 .. index:: Match and Simplify
+
+.. _match-and-simplify:
 
 Match and Simplify
 ------------------
@@ -32,4 +32,3 @@ APIs are introduced.
 
   gimple-api
   the-language
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _gomp_stacksize:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 GOMP_STACKSIZE -- Set default thread stack size
 ***********************************************
@@ -25,4 +23,3 @@ GOMP_STACKSIZE -- Set default thread stack size
 :samp:`{Reference}:`
   `GCC Patches Mailinglist <https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00493.html>`_, 
   `GCC Patches Mailinglist (2) <https://gcc.gnu.org/ml/gcc-patches/2006-06/msg00496.html>`_
-

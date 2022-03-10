@@ -25,4 +25,3 @@ instructions do.
   defining-the-output-assembler-language/output-of-dispatch-tables
   defining-the-output-assembler-language/assembler-commands-for-exception-regions
   defining-the-output-assembler-language/assembler-commands-for-alignment
-

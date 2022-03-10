@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: host hooks, host functions
+
 .. _host-common:
-
-.. index:: host hooks
-
-.. index:: host functions
 
 Host Common
 ***********
@@ -57,4 +55,3 @@ variable in :samp:`config.gcc`.
   memory.  Usually this is the same as getpagesize, but on some hosts the
   alignment for reserving memory differs from the pagesize for committing
   memory.
-

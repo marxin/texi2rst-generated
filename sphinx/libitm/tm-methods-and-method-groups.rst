@@ -45,4 +45,3 @@ the "dispatch\_" prefix (e.g., "serialirr" instead of
 
 Note that this environment variable is only a hint for libitm and might not
 be supported in the future.
-

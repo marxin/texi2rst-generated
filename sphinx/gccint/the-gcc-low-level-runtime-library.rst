@@ -48,4 +48,3 @@ and ``unsigned int`` correspond to ``SImode`` ; ``long`` and
   the-gcc-low-level-runtime-library/routines-for-fixed-point-fractional-emulation
   the-gcc-low-level-runtime-library/language-independent-routines-for-exception-handling
   the-gcc-low-level-runtime-library/miscellaneous-runtime-library-routines
-

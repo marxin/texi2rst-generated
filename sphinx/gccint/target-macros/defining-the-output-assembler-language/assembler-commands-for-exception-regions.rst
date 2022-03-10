@@ -186,4 +186,3 @@ region.
   running a cleanup.  The default is ``false``.
 
 .. hook-end
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LEN, string, length
+
 .. _len:
-
-.. index:: LEN
-
-.. index:: string, length
 
 LEN --- Length of a character entity
 ************************************
@@ -54,4 +52,3 @@ LEN --- Length of a character entity
     :ref:`LEN_TRIM`, 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`
-

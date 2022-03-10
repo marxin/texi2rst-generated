@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_ADD, Atomic subroutine, add
+
 .. _atomic_add:
-
-.. index:: ATOMIC_ADD
-
-.. index:: Atomic subroutine, add
 
 ATOMIC_ADD --- Atomic ADD operation
 ***********************************
@@ -62,4 +60,3 @@ ATOMIC_ADD --- Atomic ADD operation
     :ref:`ATOMIC_AND`, 
     :ref:`ATOMIC_OR`, 
     :ref:`ATOMIC_XOR`
-

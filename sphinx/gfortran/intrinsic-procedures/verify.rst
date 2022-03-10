@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: VERIFY, string, find missing set
+
 .. _verify:
-
-.. index:: VERIFY
-
-.. index:: string, find missing set
 
 VERIFY --- Scan a string for characters not a given set
 *******************************************************
@@ -61,4 +59,3 @@ VERIFY --- Scan a string for characters not a given set
   :samp:`{See also}:`
     :ref:`SCAN`, 
     :ref:`index-intrinsic`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: target makefile fragment, t-target
+
 .. _target-fragment:
-
-.. index:: target makefile fragment
-
-.. index:: t-target
 
 Target Makefile Fragments
 *************************
@@ -245,4 +243,3 @@ Target makefile fragments can set these Makefile variables.
   These are extra flags to pass to the C compiler.  They are used both
   when building GCC, and when compiling things with the just-built GCC.
   This variable is deprecated and should not be used.
-

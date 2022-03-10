@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RADIX, model representation, base, model representation, radix
+
 .. _radix:
-
-.. index:: RADIX
-
-.. index:: model representation, base
-
-.. index:: model representation, radix
 
 RADIX --- Base of a model number
 ********************************
@@ -48,4 +44,3 @@ RADIX --- Base of a model number
 
   :samp:`{See also}:`
     :ref:`SELECTED_REAL_KIND`
-

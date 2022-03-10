@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: arithmetic, in RTL, math, in RTL, RTL expressions for arithmetic
+
 .. _arithmetic:
-
-.. index:: arithmetic, in RTL
-
-.. index:: math, in RTL
-
-.. index:: RTL expressions for arithmetic
 
 RTL Expressions for Arithmetic
 ******************************
@@ -22,19 +18,7 @@ if it has mode :samp:`{m}`, or if it is a ``const_int`` or
 For commutative binary operations, constants should be placed in the
 second operand.
 
-.. index:: plus
-
-.. index:: ss_plus
-
-.. index:: us_plus
-
-.. index:: RTL sum
-
-.. index:: RTL addition
-
-.. index:: RTL addition with signed saturation
-
-.. index:: RTL addition with unsigned saturation
+.. index:: plus, ss_plus, us_plus, RTL sum, RTL addition, RTL addition with signed saturation, RTL addition with unsigned saturation
 
 :samp:`(plus:{m} {x} {y})` :samp:`(ss_plus:{m} {x} {y})` :samp:`(us_plus:{m} {x} {y})`
   These three expressions all represent the sum of the values
@@ -60,28 +44,14 @@ second operand.
   normally the number of bits in mode :samp:`{m}` minus the number of
   bits set by ``high``.
 
-  .. index:: minus
-
-  .. index:: ss_minus
-
-  .. index:: us_minus
-
-  .. index:: RTL difference
-
-  .. index:: RTL subtraction
-
-  .. index:: RTL subtraction with signed saturation
-
-  .. index:: RTL subtraction with unsigned saturation
+  .. index:: minus, ss_minus, us_minus, RTL difference, RTL subtraction, RTL subtraction with signed saturation, RTL subtraction with unsigned saturation
 
 :samp:`(minus:{m} {x} {y})` :samp:`(ss_minus:{m} {x} {y})` :samp:`(us_minus:{m} {x} {y})`
   These three expressions represent the result of subtracting :samp:`{y}`
   from :samp:`{x}`, carried out in mode :samp:`{M}`.  Behavior on overflow is
   the same as for the three variants of ``plus`` (see above).
 
-  .. index:: compare
-
-  .. index:: RTL comparison
+  .. index:: compare, RTL comparison
 
 :samp:`(compare:{m} {x} {y})`
   Represents the result of subtracting :samp:`{y}` from :samp:`{x}` for purposes
@@ -120,17 +90,7 @@ second operand.
   or the first operand must be loaded into a register while its mode is
   still known.
 
-  .. index:: neg
-
-  .. index:: ss_neg
-
-  .. index:: us_neg
-
-  .. index:: negation
-
-  .. index:: negation with signed saturation
-
-  .. index:: negation with unsigned saturation
+  .. index:: neg, ss_neg, us_neg, negation, negation with signed saturation, negation with unsigned saturation
 
 :samp:`(neg:{m} {x})` :samp:`(ss_neg:{m} {x})` :samp:`(us_neg:{m} {x})`
   These two expressions represent the negation (subtraction from zero) of
@@ -141,19 +101,7 @@ second operand.
   and ``us_neg`` ensure that an out-of-bounds result saturates to the
   maximum or minimum signed or unsigned value.
 
-  .. index:: mult
-
-  .. index:: ss_mult
-
-  .. index:: us_mult
-
-  .. index:: multiplication
-
-  .. index:: product
-
-  .. index:: multiplication with signed saturation
-
-  .. index:: multiplication with unsigned saturation
+  .. index:: mult, ss_mult, us_mult, multiplication, product, multiplication with signed saturation, multiplication with unsigned saturation
 
 :samp:`(mult:{m} {x} {y})` :samp:`(ss_mult:{m} {x} {y})` :samp:`(us_mult:{m} {x} {y})`
   Represents the signed product of the values represented by :samp:`{x}` and
@@ -174,13 +122,7 @@ second operand.
   For unsigned widening multiplication, use the same idiom, but with
   ``zero_extend`` instead of ``sign_extend``.
 
-  .. index:: smul_highpart
-
-  .. index:: umul_highpart
-
-  .. index:: high-part multiplication
-
-  .. index:: multiplication high part
+  .. index:: smul_highpart, umul_highpart, high-part multiplication, multiplication high part
 
 :samp:`(smul_highpart:{m} {x} {y})` :samp:`(umul_highpart:{m} {x} {y})`
   Represents the high-part multiplication of :samp:`{x}` and :samp:`{y}` carried
@@ -188,26 +130,14 @@ second operand.
   of a signed multiplication, ``umul_highpart`` returns the high part
   of an unsigned multiplication.
 
-  .. index:: fma
-
-  .. index:: fused multiply-add
+  .. index:: fma, fused multiply-add
 
 :samp:`(fma:{m} {x} {y} {z})`
   Represents the ``fma``, ``fmaf``, and ``fmal`` builtin
   functions, which compute :samp:`{x} * {y} + {z}`
   without doing an intermediate rounding step.
 
-  .. index:: div
-
-  .. index:: ss_div
-
-  .. index:: division
-
-  .. index:: signed division
-
-  .. index:: signed division with signed saturation
-
-  .. index:: quotient
+  .. index:: div, ss_div, division, signed division, signed division with signed saturation, quotient
 
 :samp:`(div:{m} {x} {y})` :samp:`(ss_div:{m} {x} {y})`
   Represents the quotient in signed division of :samp:`{x}` by :samp:`{y}`,
@@ -225,38 +155,20 @@ second operand.
 
     (truncate:m1 (div:m2 x (sign_extend:m2 y)))
 
-  .. index:: udiv
-
-  .. index:: unsigned division
-
-  .. index:: unsigned division with unsigned saturation
-
-  .. index:: division
+  .. index:: udiv, unsigned division, unsigned division with unsigned saturation, division
 
 :samp:`(udiv:{m} {x} {y})` :samp:`(us_div:{m} {x} {y})`
   Like ``div`` but represents unsigned division.
   ``us_div`` ensures that an out-of-bounds result saturates to the maximum
   or minimum unsigned value.
 
-  .. index:: mod
-
-  .. index:: umod
-
-  .. index:: remainder
-
-  .. index:: division
+  .. index:: mod, umod, remainder, division
 
 :samp:`(mod:{m} {x} {y})` :samp:`(umod:{m} {x} {y})`
   Like ``div`` and ``udiv`` but represent the remainder instead of
   the quotient.
 
-  .. index:: smin
-
-  .. index:: smax
-
-  .. index:: signed minimum
-
-  .. index:: signed maximum
+  .. index:: smin, smax, signed minimum, signed maximum
 
 :samp:`(smin:{m} {x} {y})` :samp:`(smax:{m} {x} {y})`
   Represents the smaller (for ``smin``) or larger (for ``smax``) of
@@ -265,74 +177,40 @@ second operand.
   operand is ``NaN``, then it is unspecified which of the two operands
   is returned as the result.
 
-  .. index:: umin
-
-  .. index:: umax
-
-  .. index:: unsigned minimum and maximum
+  .. index:: umin, umax, unsigned minimum and maximum
 
 :samp:`(umin:{m} {x} {y})` :samp:`(umax:{m} {x} {y})`
   Like ``smin`` and ``smax``, but the values are interpreted as unsigned
   integers.
 
-  .. index:: not
-
-  .. index:: complement, bitwise
-
-  .. index:: bitwise complement
+  .. index:: not, complement, bitwise, bitwise complement
 
 :samp:`(not:{m} {x})`
   Represents the bitwise complement of the value represented by :samp:`{x}`,
   carried out in mode :samp:`{m}`, which must be a fixed-point machine mode.
 
-  .. index:: and
-
-  .. index:: logical-and, bitwise
-
-  .. index:: bitwise logical-and
+  .. index:: and, logical-and, bitwise, bitwise logical-and
 
 :samp:`(and:{m} {x} {y})`
   Represents the bitwise logical-and of the values represented by
   :samp:`{x}` and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be
   a fixed-point machine mode.
 
-  .. index:: ior
-
-  .. index:: inclusive-or, bitwise
-
-  .. index:: bitwise inclusive-or
+  .. index:: ior, inclusive-or, bitwise, bitwise inclusive-or
 
 :samp:`(ior:{m} {x} {y})`
   Represents the bitwise inclusive-or of the values represented by :samp:`{x}`
   and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
 
-  .. index:: xor
-
-  .. index:: exclusive-or, bitwise
-
-  .. index:: bitwise exclusive-or
+  .. index:: xor, exclusive-or, bitwise, bitwise exclusive-or
 
 :samp:`(xor:{m} {x} {y})`
   Represents the bitwise exclusive-or of the values represented by :samp:`{x}`
   and :samp:`{y}`, carried out in machine mode :samp:`{m}`, which must be a
   fixed-point mode.
 
-  .. index:: ashift
-
-  .. index:: ss_ashift
-
-  .. index:: us_ashift
-
-  .. index:: left shift
-
-  .. index:: shift
-
-  .. index:: arithmetic shift
-
-  .. index:: arithmetic shift with signed saturation
-
-  .. index:: arithmetic shift with unsigned saturation
+  .. index:: ashift, ss_ashift, us_ashift, left shift, shift, arithmetic shift, arithmetic shift with signed saturation, arithmetic shift with unsigned saturation
 
 :samp:`(ashift:{m} {x} {c})` :samp:`(ss_ashift:{m} {x} {c})` :samp:`(us_ashift:{m} {x} {c})`
   These three expressions represent the result of arithmetically shifting :samp:`{x}`
@@ -348,35 +226,19 @@ second operand.
   entry for the left-shift instruction.  For example, on the VAX, the mode
   of :samp:`{c}` is ``QImode`` regardless of :samp:`{m}`.
 
-  .. index:: lshiftrt
-
-  .. index:: right shift
-
-  .. index:: ashiftrt
+  .. index:: lshiftrt, right shift, ashiftrt
 
 :samp:`(lshiftrt:{m} {x} {c})` :samp:`(ashiftrt:{m} {x} {c})`
   Like ``ashift`` but for right shift.  Unlike the case for left shift,
   these two operations are distinct.
 
-  .. index:: rotate
-
-  .. index:: rotate
-
-  .. index:: left rotate
-
-  .. index:: rotatert
-
-  .. index:: right rotate
+  .. index:: rotate, rotate, left rotate, rotatert, right rotate
 
 :samp:`(rotate:{m} {x} {c})` :samp:`(rotatert:{m} {x} {c})`
   Similar but represent left and right rotate.  If :samp:`{c}` is a constant,
   use ``rotate``.
 
-  .. index:: abs
-
-  .. index:: ss_abs
-
-  .. index:: absolute value
+  .. index:: abs, ss_abs, absolute value
 
   :samp:`(abs:{m} {x})`
 :samp:`(ss_abs:{m} {x})`
@@ -384,9 +246,7 @@ second operand.
   ``ss_abs`` ensures that an out-of-bounds result saturates to the
   maximum signed value.
 
-  .. index:: sqrt
-
-  .. index:: square root
+  .. index:: sqrt, square root
 
 :samp:`(sqrt:{m} {x})`
   Represents the square root of :samp:`{x}`, computed in mode :samp:`{m}`.
@@ -448,4 +308,3 @@ second operand.
   Represents the value :samp:`{x}` with the order of bytes reversed, carried out
   in mode :samp:`{m}`, which must be a fixed-point machine mode.
   The mode of :samp:`{x}` must be :samp:`{m}` or ``VOIDmode``.
-

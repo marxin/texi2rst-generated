@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _runtime:
-
 .. index:: environment variable
+
+.. _runtime:
 
 Runtime:  Influencing runtime behavior with environment variables
 -----------------------------------------------------------------
@@ -31,4 +31,3 @@ Malformed environment variables are silently ignored.
   runtime/gfortranerrorbacktrace
   runtime/gfortranformattedbuffersize
   runtime/gfortranunformattedbuffersize
-

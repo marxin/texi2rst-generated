@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _misc:
-
 .. index:: parameters, miscellaneous
+
+.. _misc:
 
 Miscellaneous Parameters
 ************************
@@ -484,9 +484,7 @@ Here are several miscellaneous parameters.
   This macro handles system header files by pretending that system
   header files are enclosed in :samp:`extern "C" {...}`.
 
-.. index:: #pragma
-
-.. index:: pragma
+.. index:: #pragma, pragma
 
 .. c:macro:: REGISTER_TARGET_PRAGMAS ()
 

@@ -60,4 +60,3 @@ other than a directive.  It passes this token (which may be a
 ``CPP_EOF`` token indicating the end of the translation unit) to the
 callback routine, which can then use the line and column of this token
 to produce correct output.
-

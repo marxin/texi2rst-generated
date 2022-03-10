@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _extensions:
-
 .. index:: extensions
+
+.. _extensions:
 
 Extensions
 ----------
@@ -22,4 +22,3 @@ extensions.
 
   extensions-implemented-in-gnu-fortran
   extensions-not-implemented-in-gnu-fortran
-

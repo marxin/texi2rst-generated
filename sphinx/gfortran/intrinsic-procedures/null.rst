@@ -8,11 +8,7 @@
 NULL --- Function that returns an disassociated pointer
 *******************************************************
 
-.. index:: NULL
-
-.. index:: pointer, status
-
-.. index:: pointer, disassociated
+.. index:: NULL, pointer, status, pointer, disassociated
 
 .. function:: NULL(MOLD)
 
@@ -45,4 +41,3 @@ NULL --- Function that returns an disassociated pointer
 
   :samp:`{See also}:`
     :ref:`ASSOCIATED`
-

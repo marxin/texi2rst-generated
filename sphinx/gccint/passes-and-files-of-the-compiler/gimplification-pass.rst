@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: gimplification, GIMPLE
+
 .. _gimplification-pass:
-
-.. index:: gimplification
-
-.. index:: GIMPLE
 
 Gimplification pass
 *******************
@@ -24,11 +22,7 @@ intermediate language used by the front end is already fairly simple.
 Usually it is easier to generate GENERIC trees plus extensions
 and let the language-independent gimplifier do most of the work.
 
-.. index:: gimplify_function_tree
-
-.. index:: gimplify_expr
-
-.. index:: lang_hooks.gimplify_expr
+.. index:: gimplify_function_tree, gimplify_expr, lang_hooks.gimplify_expr
 
 The main entry point to this pass is ``gimplify_function_tree``
 located in :samp:`gimplify.cc`.  From here we process the entire
@@ -48,4 +42,3 @@ should return ``GS_ALL_DONE``.  Otherwise it should return
 If the callback encounters an error during the transformation (because
 the front end is relying on the gimplification process to finish
 semantic checks), it should return ``GS_ERROR``.
-

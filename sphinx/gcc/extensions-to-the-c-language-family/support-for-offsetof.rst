@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _offsetof:
-
 .. index:: __builtin_offsetof
+
+.. _offsetof:
 
 Support for offsetof
 ********************
@@ -32,4 +32,3 @@ This extension is sufficient such that
 is a suitable definition of the ``offsetof`` macro.  In C++, :samp:`{type}`
 may be dependent.  In either case, :samp:`{member}` may consist of a single
 identifier, or a sequence of member accesses and array references.
-

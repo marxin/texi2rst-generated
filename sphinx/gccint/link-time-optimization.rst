@@ -8,15 +8,9 @@
 
 
 
+.. index:: lto, whopr, wpa, ltrans
+
 .. _lto:
-
-.. index:: lto
-
-.. index:: whopr
-
-.. index:: wpa
-
-.. index:: ltrans
 
 Link Time Optimization
 ----------------------
@@ -37,4 +31,3 @@ that is visible at link time).
   link-time-optimization/using-summary-information-in-ipa-passes
   link-time-optimization/whole-program-assumptions-linker-plugin-and-symbol-visibilities
   link-time-optimization/internal-flags-controlling-lto1
-

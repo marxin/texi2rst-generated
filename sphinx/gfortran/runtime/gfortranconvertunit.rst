@@ -82,4 +82,3 @@ setting a default data representation for the whole program.  The
   environment variable will override the CONVERT specifier in the
   open statement*.  This is to give control over data formats to
   users who do not have the source code of their program available.
-

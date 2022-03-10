@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: file, unformatted sequential, unformatted sequential, sequential, unformatted, record marker, subrecord
+
 .. _file-format-of-unformatted-sequential-files:
-
-.. index:: file, unformatted sequential
-
-.. index:: unformatted sequential
-
-.. index:: sequential, unformatted
-
-.. index:: record marker
-
-.. index:: subrecord
 
 File format of unformatted sequential files
 *******************************************
@@ -69,4 +61,3 @@ record containing a single subrecord:
     read (10) b
     if (all (a == b)) print *,'success!'
   end program main
-

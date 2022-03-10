@@ -30,4 +30,3 @@ For full compliance with the Fortran standards, code using the
 ``IEEE_EXCEPTIONS`` or ``IEEE_ARITHMETIC`` modules should be compiled
 with the following options: ``-fno-unsafe-math-optimizations
 -frounding-math -fsignaling-nans``.
-

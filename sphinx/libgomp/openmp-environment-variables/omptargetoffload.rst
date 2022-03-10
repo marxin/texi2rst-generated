@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _omp_target_offload:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 OMP_TARGET_OFFLOAD -- Controls offloading behaviour
 ***************************************************
@@ -27,4 +25,3 @@ OMP_TARGET_OFFLOAD -- Controls offloading behaviour
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 6.17
-

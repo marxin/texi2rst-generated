@@ -29,4 +29,3 @@ omp_get_max_teams -- Maximum number of teams of teams region
 
 :samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.4.
-

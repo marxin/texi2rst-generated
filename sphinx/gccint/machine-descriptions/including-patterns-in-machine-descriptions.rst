@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: insn includes, include
+
 .. _including-patterns:
-
-.. index:: insn includes
-
-.. index:: include
 
 Including Patterns in Machine Descriptions.
 *******************************************
@@ -52,11 +50,7 @@ Specifying an absolute path for the include file such as;
 
 is permitted but is not encouraged.
 
-.. index:: directory options .md
-
-.. index:: options, directory search
-
-.. index:: search options
+.. index:: directory options .md, options, directory search, search options
 
 RTL Generation Tool Options for Directory Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -74,4 +68,3 @@ file, substituting your own version, since these directories are
 searched before the default machine description file directories.  If you use more than
 one :option:`-I` option, the directories are scanned in left-to-right
 order; the standard default directory come after.
-

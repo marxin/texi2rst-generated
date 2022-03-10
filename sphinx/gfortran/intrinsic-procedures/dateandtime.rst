@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DATE_AND_TIME, date, current, current date, time, current, current time
+
 .. _date_and_time:
-
-.. index:: DATE_AND_TIME
-
-.. index:: date, current
-
-.. index:: current date
-
-.. index:: time, current
-
-.. index:: current time
 
 DATE_AND_TIME --- Date and time subroutine
 ******************************************
@@ -78,4 +70,3 @@ DATE_AND_TIME --- Date and time subroutine
   :samp:`{See also}:`
     :ref:`CPU_TIME`, 
     :ref:`SYSTEM_CLOCK`
-

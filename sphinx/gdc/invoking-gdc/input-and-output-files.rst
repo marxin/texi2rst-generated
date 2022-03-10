@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: suffixes for D source, D source file suffixes
+
 .. _input-and-output-files:
-
-.. index:: suffixes for D source
-
-.. index:: D source file suffixes
 
 Input and Output files
 **********************
@@ -45,4 +43,3 @@ primarily designed for use in producing user documentation from embedded
 comments, with a slight affinity towards HTML generation.  If a :samp:`.d`
 source file starts with the string ``Ddoc`` then it is treated as general
 purpose documentation, not as a D source file.
-

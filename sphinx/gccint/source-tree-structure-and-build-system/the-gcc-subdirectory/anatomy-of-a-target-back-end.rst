@@ -112,4 +112,3 @@ following are also necessary:
 
 * Target triplets covering all :samp:`config.gcc` stanzas for the target,
   in the list in :samp:`contrib/config-list.mk`.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SYSTEM_CLOCK, time, clock ticks, clock ticks
+
 .. _system_clock:
-
-.. index:: SYSTEM_CLOCK
-
-.. index:: time, clock ticks
-
-.. index:: clock ticks
 
 SYSTEM_CLOCK --- Time function
 ******************************
@@ -61,4 +57,3 @@ SYSTEM_CLOCK --- Time function
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`, 
     :ref:`CPU_TIME`
-

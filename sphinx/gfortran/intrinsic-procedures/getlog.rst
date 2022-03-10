@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETLOG, system, login name, login name
+
 .. _getlog:
-
-.. index:: GETLOG
-
-.. index:: system, login name
-
-.. index:: login name
 
 GETLOG --- Get login name
 *************************
@@ -51,4 +47,3 @@ GETLOG --- Get login name
 
   :samp:`{See also}:`
     :ref:`GETUID`
-

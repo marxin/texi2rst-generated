@@ -5,9 +5,9 @@
 
 .. program:: MN10300
 
-.. _mn10300-options:
-
 .. index:: MN10300 options
+
+.. _mn10300-options:
 
 MN10300 Options
 ^^^^^^^^^^^^^^^
@@ -91,4 +91,3 @@ These :option:`-m` options are defined for Matsushita MN10300 architectures:
   Do not allow the compiler to generate *SETLB* or *Lcc*
   instructions.  This option defines the preprocessor macro
   ``__NO_SETLB__``.
-

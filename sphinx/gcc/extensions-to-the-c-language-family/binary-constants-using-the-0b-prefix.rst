@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _binary-constants:
-
 .. index:: Binary constants using the 0b prefix
+
+.. _binary-constants:
 
 Binary Constants using the 0b Prefix
 ************************************
@@ -27,4 +27,3 @@ The following statements are identical:
 The type of these constants follows the same rules as for octal or
 hexadecimal integer constants, so suffixes like :samp:`L` or :samp:`UL`
 can be applied.
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FPUTC, write character, stream mode, stream mode, write character, file operation, write character
+
 .. _fputc:
-
-.. index:: FPUTC
-
-.. index:: write character, stream mode
-
-.. index:: stream mode, write character
-
-.. index:: file operation, write character
 
 FPUTC --- Write a single character in stream mode
 *************************************************
@@ -66,4 +60,3 @@ FPUTC --- Write a single character in stream mode
     :ref:`FPUT`, 
     :ref:`FGET`, 
     :ref:`FGETC`
-

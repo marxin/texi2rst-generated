@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: variable number of arguments, macros with variable arguments, variadic macros
+
 .. _variadic-macros:
-
-.. index:: variable number of arguments
-
-.. index:: macros with variable arguments
-
-.. index:: variadic macros
 
 Variadic Macros
 ***************
@@ -143,4 +139,3 @@ GNU CPP previously supported them
 with a named variable argument
 (:samp:`args...`, not :samp:`...` and ``__VA_ARGS__``), which
 is still supported for backward compatibility.
-

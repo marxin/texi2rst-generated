@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: HOSTNM, system, host name
+
 .. _hostnm:
-
-.. index:: HOSTNM
-
-.. index:: system, host name
 
 HOSTNM --- Get system host name
 *******************************
@@ -39,4 +37,3 @@ HOSTNM --- Get system host name
 
       CALL HOSTNM(C [, STATUS])
       STATUS = HOSTNM(NAME)
-

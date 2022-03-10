@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: generated files, files, generated
+
 .. _files:
-
-.. index:: generated files
-
-.. index:: files, generated
 
 Source Files Containing Type Information
 ****************************************
@@ -60,4 +58,3 @@ Plugins can add additional root tables.  Run the ``gengtype``
 utility in plugin mode as ``gengtype -P pluginout.h source-dirfile-listplugin*.c`` with your plugin files
 :samp:`{plugin*.c}` using ``GTY`` to generate the :samp:`{pluginout.h}` file.
 The GCC build tree is needed to be present in that mode.
-

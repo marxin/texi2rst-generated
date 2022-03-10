@@ -35,4 +35,3 @@ GIMPLE_CATCH
 .. function:: void gimple_catch_set_handler (gcatch *g, gimple_seq handler)
 
   Set ``HANDLER`` to be the body of ``GIMPLE_CATCH`` ``G``.
-

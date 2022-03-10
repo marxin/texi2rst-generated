@@ -10,11 +10,7 @@ C++-Specific Variable, Function, and Type Attributes
 
 Some attributes only make sense for C++ programs.
 
-.. index:: abi_tag function attribute
-
-.. index:: abi_tag variable attribute
-
-.. index:: abi_tag type attribute
+.. index:: abi_tag function attribute, abi_tag variable attribute, abi_tag type attribute
 
 .. gcc-attr:: abi_tag ("tag", ...)
 
@@ -97,4 +93,3 @@ Some attributes only make sense for C++ programs.
 
   This attribute is also accepted in C, but it is unnecessary because C
   does not have constructors or destructors.
-

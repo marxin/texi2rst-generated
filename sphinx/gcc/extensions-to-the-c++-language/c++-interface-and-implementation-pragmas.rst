@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: interface and implementation headers, C++, C++ interface and implementation headers, pragmas, interface and implementation
+
 .. _c++-interface:
-
-.. index:: interface and implementation headers, C++
-
-.. index:: C++ interface and implementation headers
-
-.. index:: pragmas, interface and implementation
 
 C++ Interface and Implementation Pragmas
 ****************************************
@@ -59,11 +55,7 @@ translation unit.
   internal tables used to implement virtual functions are all generated in
   implementation files.
 
-  .. index:: implied #pragma implementation
-
-  .. index:: #pragma implementation, implied
-
-  .. index:: naming convention, implementation headers
+  .. index:: implied #pragma implementation, #pragma implementation, implied, naming convention, implementation headers
 
   If you use :samp:`#pragma implementation` with no argument, it applies to
   an include file with the same basenameA file's :dfn:`basename`
@@ -83,11 +75,7 @@ translation unit.
   There is no way to split up the contents of a single header file into
   multiple implementation files.
 
-.. index:: inlining and C++ pragmas
-
-.. index:: C++ pragmas, effect on inlining
-
-.. index:: pragmas in C++, effect on inlining
+.. index:: inlining and C++ pragmas, C++ pragmas, effect on inlining, pragmas in C++, effect on inlining
 
 :samp:`#pragma implementation` and :samp:`#pragma interface` also have an
 effect on function inlining.
@@ -107,4 +95,3 @@ that can be found via pointers (or by callers compiled without
 inlining).  If all calls to the function can be inlined, you can avoid
 emitting the function by compiling with :option:`-fno-implement-inlines`.
 If any calls are not inlined, you will get linker errors.
-

@@ -25,4 +25,3 @@ You can pass options to the assembler.
 
   If you want to pass an option that takes an argument, you must use
   :option:`-Xassembler` twice, once for the option and once for the argument.
-

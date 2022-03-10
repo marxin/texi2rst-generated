@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: conversions, machine mode conversions
+
 .. _conversions:
-
-.. index:: conversions
-
-.. index:: machine mode conversions
 
 Conversions
 ***********
@@ -152,4 +150,3 @@ must be placed into a register.
   fixed-point mode :samp:`{m}`.
   When overflows or underflows happen, the results are saturated to the
   maximum or the minimum.
-

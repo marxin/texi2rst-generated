@@ -584,4 +584,3 @@ This is about outputting labels.
 
   On systems where the assembler can handle quoted names, you can use this
   macro to provide more human-readable names.
-

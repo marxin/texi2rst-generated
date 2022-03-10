@@ -9,4 +9,3 @@ OpenMP 4.5
 **********
 
 The OpenMP 4.5 specification is fully supported.
-

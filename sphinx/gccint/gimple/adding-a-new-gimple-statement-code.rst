@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _adding-a-new-gimple-statement-code:
-
 .. index:: Adding a new GIMPLE statement code
+
+.. _adding-a-new-gimple-statement-code:
 
 Adding a new GIMPLE statement code
 **********************************
@@ -34,4 +34,3 @@ corresponding prototype in ``gimple.h``.
 
 You should add the new statement subclass to the class hierarchy diagram
 in ``gimple.texi``.
-

@@ -475,4 +475,3 @@ run after gimplification and what source files they are located in.
   only used with integral types in the function, floating point
   registers don't need to be saved.  This pass is located in
   ``tree-stdarg.cc`` and described by ``pass_stdarg``.
-

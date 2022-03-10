@@ -25,4 +25,3 @@ GCC provides other MIPS-specific built-in functions:
 
   ``__builtin_mips_set_fcsr`` can be used to change any bit of the
   register except the condition codes, which GCC assumes are preserved.
-

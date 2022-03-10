@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: predicates, operand predicates, operator predicates
+
 .. _predicates:
-
-.. index:: predicates
-
-.. index:: operand predicates
-
-.. index:: operator predicates
 
 Predicates
 **********
@@ -41,11 +37,7 @@ that must be constants ('immediate operands'); you must use a
 predicate that allows only constants, or else enforce the requirement
 in the extra condition.
 
-.. index:: predicates and machine modes
-
-.. index:: normal predicates
-
-.. index:: special predicates
+.. index:: predicates and machine modes, normal predicates, special predicates
 
 Most predicates handle their :samp:`{mode}` argument in a uniform manner.
 If :samp:`{mode}` is ``VOIDmode`` (unspecified), then :samp:`{op}` can have
@@ -74,11 +66,9 @@ diagnosis when special predicates are used.
   :maxdepth: 2
 
 
+.. index:: machine-independent predicates, generic predicates
+
 .. _machine-independent-predicates:
-
-.. index:: machine-independent predicates
-
-.. index:: generic predicates
 
 Machine-Independent Predicates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -218,13 +208,9 @@ modes; that is, the expression code will be one of ``eq``, ``ne``,
 ``lt``, ``ltu``, ``le``, ``leu``, ``gt``, ``gtu``,
 ``ge``, ``geu``.
 
+.. index:: defining predicates, define_predicate, define_special_predicate
+
 .. _defining-predicates:
-
-.. index:: defining predicates
-
-.. index:: define_predicate
-
-.. index:: define_special_predicate
 
 Defining Machine-Specific Predicates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _enumerator-attributes:
-
 .. index:: Enumerator Attributes
+
+.. _enumerator-attributes:
 
 Enumerator Attributes
 *********************
@@ -51,4 +51,3 @@ This example uses the :gcc-attr:`deprecated` enumerator attribute to indicate th
   The :gcc-attr:`unavailable` attribute results in an error if the enumerator
   is used anywhere in the source file.  In other respects it behaves in the
   same manner as the :gcc-attr:`deprecated` attribute.
-

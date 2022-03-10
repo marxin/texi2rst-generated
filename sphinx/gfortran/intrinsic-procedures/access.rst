@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ACCESS, file system, access mode
+
 .. _access:
-
-.. index:: ACCESS
-
-.. index:: file system, access mode
 
 ACCESS --- Checks file access modes
 ***********************************
@@ -63,4 +61,3 @@ ACCESS --- Checks file access modes
         if(access(file2,'rwx') == 0) &
           print *, trim(file2),' is readable, writable and executable'
       end program access_test
-

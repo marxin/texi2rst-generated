@@ -33,4 +33,3 @@ is the place for other packages to install header files that GCC will
 use.  For a cross-compiler, this is the equivalent of
 :samp:`/usr/include`.  When you build a cross-compiler,
 ``fixincludes`` processes any header files in this directory.
-

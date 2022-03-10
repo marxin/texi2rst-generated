@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: struct, union
+
 .. _unnamed-fields:
-
-.. index:: struct
-
-.. index:: union
 
 Unnamed Structure and Union Fields
 **********************************
@@ -86,4 +84,3 @@ name of the ``typedef``.
   s1 f1 (struct s2 *p) { return p->s1; }
 
 These usages are only permitted when they are not ambiguous.
-

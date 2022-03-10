@@ -5,15 +5,9 @@
 
 .. default-domain:: c
 
+.. index:: soft float library, arithmetic library, math library, msoft-float
+
 .. _soft-float-library-routines:
-
-.. index:: soft float library
-
-.. index:: arithmetic library
-
-.. index:: math library
-
-.. index:: msoft-float
 
 Routines for floating point emulation
 *************************************
@@ -287,4 +281,3 @@ Other floating-point functions
   These functions return the quotient of :samp:`{a}` + i :samp:`{b}` and
   :samp:`{c}` + i :samp:`{d}` (i.e., (:samp:`{a}` + i :samp:`{b}`) / (:samp:`{c}`
   + i :samp:`{d}`)), following the rules of C99 Annex G.
-

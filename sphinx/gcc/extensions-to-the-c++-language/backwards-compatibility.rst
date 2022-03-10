@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Backwards Compatibility, ARM [Annotated C++ Reference Manual]
+
 .. _backwards-compatibility:
-
-.. index:: Backwards Compatibility
-
-.. index:: ARM [Annotated C++ Reference Manual]
 
 Backwards Compatibility
 ***********************

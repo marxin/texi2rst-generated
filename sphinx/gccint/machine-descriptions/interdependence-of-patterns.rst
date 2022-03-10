@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Dependent Patterns, Interdependence of Patterns
+
 .. _dependent-patterns:
-
-.. index:: Dependent Patterns
-
-.. index:: Interdependence of Patterns
 
 Interdependence of Patterns
 ***************************
@@ -43,4 +41,3 @@ you should not provide separate patterns for increment and decrement
 instructions.  Instead, they should be generated from the same pattern
 that supports register-register add insns by examining the operands and
 generating the appropriate machine instruction.
-

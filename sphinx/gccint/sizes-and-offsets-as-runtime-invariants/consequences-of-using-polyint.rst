@@ -53,4 +53,3 @@ However, it would be very artificial to force target-specific code
 to follow these restrictions if the target has no runtime indeterminates.
 There is therefore an implicit conversion from ``poly_int<1, T>``
 to :samp:`{T}` when compiling target-specific translation units.
-

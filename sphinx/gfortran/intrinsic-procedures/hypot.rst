@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: HYPOT, Euclidean distance
+
 .. _hypot:
-
-.. index:: HYPOT
-
-.. index:: Euclidean distance
 
 HYPOT --- Euclidean distance function
 *************************************
@@ -47,4 +45,3 @@ HYPOT --- Euclidean distance function
         real(4) :: x = 1.e0_4, y = 0.5e0_4
         x = hypot(x,y)
       end program test_hypot
-

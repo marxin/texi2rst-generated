@@ -161,4 +161,3 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   which specify use of that register as a fixed register,
   and :samp:`none`, which means that no register is used for this
   purpose.  The default is :option:`-m1reg-none`.
-

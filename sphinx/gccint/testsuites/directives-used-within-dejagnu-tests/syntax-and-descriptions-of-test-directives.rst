@@ -309,4 +309,3 @@ Add checks at the end of a test
   Multiple :samp:`dg-final` commands are processed in the order in which
   they appear in the source file.  See :ref:`final-actions`, for a list
   of directives that can be used within ``dg-final``.
-

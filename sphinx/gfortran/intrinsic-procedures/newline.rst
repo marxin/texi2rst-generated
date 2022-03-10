@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: NEW_LINE, newline, output, newline
+
 .. _new_line:
-
-.. index:: NEW_LINE
-
-.. index:: newline
-
-.. index:: output, newline
 
 NEW_LINE --- New line character
 *******************************
@@ -46,4 +42,3 @@ NEW_LINE --- New line character
         implicit none
         write(*,'(A)') 'This is record 1.'//NEW_LINE('A')//'This is record 2.'
       end program newline
-

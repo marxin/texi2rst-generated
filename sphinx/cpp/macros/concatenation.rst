@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: concatenation, token pasting, token concatenation, ## operator
+
 .. _concatenation:
-
-.. index:: concatenation
-
-.. index:: token pasting
-
-.. index:: token concatenation
-
-.. index:: ## operator
 
 Concatenation
 *************
@@ -89,4 +83,3 @@ concatenating the argument with :samp:`_command`.  Here is how it is done:
     COMMAND (help),
     ...
   };
-

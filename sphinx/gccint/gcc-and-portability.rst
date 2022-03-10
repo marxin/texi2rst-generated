@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: portability, GCC and portability
+
 .. _portability:
-
-.. index:: portability
-
-.. index:: GCC and portability
 
 GCC and Portability
 -------------------
@@ -26,11 +24,7 @@ fashion, ad-hoc parameters have been defined for machine descriptions.
 The purpose of portability is to reduce the total work needed on the
 compiler; it was not of interest for its own sake.
 
-.. index:: endianness
-
-.. index:: autoincrement addressing, availability
-
-.. index:: abort
+.. index:: endianness, autoincrement addressing, availability, abort
 
 GCC does not contain machine dependent code, but it does contain code
 that depends on machine parameters such as endianness (whether the most
@@ -45,4 +39,3 @@ strategies.  You will know
 if this happens because the compiler will call ``abort``.  Fortunately,
 the new strategies can be added in a machine-independent fashion, and will
 affect only the target machines that need them.
-

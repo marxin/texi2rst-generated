@@ -8,11 +8,7 @@
 C_ASSOCIATED --- Status of a C pointer
 **************************************
 
-.. index:: C_ASSOCIATED
-
-.. index:: association status, C pointer
-
-.. index:: pointer, C association status
+.. index:: C_ASSOCIATED, association status, C pointer, pointer, C association status
 
 .. function:: C_ASSOCIATED(c_ptr_1, c_ptr_2)
 
@@ -58,4 +54,3 @@ C_ASSOCIATED --- Status of a C pointer
   :samp:`{See also}:`
     :ref:`C_LOC`, 
     :ref:`C_FUNLOC`
-

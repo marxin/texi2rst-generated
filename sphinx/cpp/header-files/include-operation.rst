@@ -65,4 +65,3 @@ declarations, etc.
 The line following the :samp:`#include` directive is always treated as a
 separate line by the C preprocessor, even if the included file lacks a
 final newline.
-

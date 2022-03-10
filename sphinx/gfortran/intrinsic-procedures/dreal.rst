@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DREAL, complex numbers, real part
+
 .. _dreal:
-
-.. index:: DREAL
-
-.. index:: complex numbers, real part
 
 DREAL --- Double real part function
 ***********************************
@@ -45,4 +43,3 @@ DREAL --- Double real part function
 
   :samp:`{See also}:`
     :ref:`AIMAG`
-

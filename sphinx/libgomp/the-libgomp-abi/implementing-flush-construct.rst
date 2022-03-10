@@ -9,4 +9,3 @@ Implementing FLUSH construct
 ****************************
 
 Expands to the ``__sync_synchronize`` builtin.
-

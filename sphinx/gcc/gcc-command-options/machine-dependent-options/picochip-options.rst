@@ -5,9 +5,9 @@
 
 .. program:: picoChip
 
-.. _picochip-options:
-
 .. index:: picoChip options
+
+.. _picochip-options:
 
 picoChip Options
 ^^^^^^^^^^^^^^^^

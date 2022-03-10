@@ -33,4 +33,3 @@ is used here to mean any function pointer type.
   typeof(p) cmse_nsfptr_create (FPTR p);
   intptr_t cmse_is_nsfptr (FPTR);
   int cmse_nonsecure_caller (void);
-

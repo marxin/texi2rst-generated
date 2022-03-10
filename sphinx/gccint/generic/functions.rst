@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _functions:
-
 .. index:: function
+
+.. _functions:
 
 Functions
 *********
@@ -25,19 +25,9 @@ and linkage.
    Function Basics
    -
 
+.. index:: DECL_NAME, DECL_ASSEMBLER_NAME, TREE_PUBLIC, DECL_ARTIFICIAL, DECL_FUNCTION_SPECIFIC_TARGET, DECL_FUNCTION_SPECIFIC_OPTIMIZATION
+
 .. _function-basics:
-
-.. index:: DECL_NAME
-
-.. index:: DECL_ASSEMBLER_NAME
-
-.. index:: TREE_PUBLIC
-
-.. index:: DECL_ARTIFICIAL
-
-.. index:: DECL_FUNCTION_SPECIFIC_TARGET
-
-.. index:: DECL_FUNCTION_SPECIFIC_OPTIMIZATION
 
 Function Basics
 ^^^^^^^^^^^^^^^
@@ -143,11 +133,9 @@ of a ``FUNCTION_DECL`` as well as other basic features:
    Function Properties
    -
 
+.. index:: function properties, statements
+
 .. _function-properties:
-
-.. index:: function properties
-
-.. index:: statements
 
 Function Properties
 ^^^^^^^^^^^^^^^^^^^

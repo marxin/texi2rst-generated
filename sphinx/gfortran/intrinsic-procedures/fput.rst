@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FPUT, write character, stream mode, stream mode, write character, file operation, write character
+
 .. _fput:
-
-.. index:: FPUT
-
-.. index:: write character, stream mode
-
-.. index:: stream mode, write character
-
-.. index:: file operation, write character
 
 FPUT --- Write a single character in stream mode to stdout 
 ***********************************************************
@@ -60,4 +54,3 @@ FPUT --- Write a single character in stream mode to stdout
     :ref:`FPUTC`, 
     :ref:`FGET`, 
     :ref:`FGETC`
-

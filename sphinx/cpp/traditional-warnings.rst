@@ -47,4 +47,3 @@ Presently :option:`-Wtraditional` warns about:
   constants which are so large that they are unsigned, by writing the
   integer constant in question in hexadecimal, with no U suffix.  Take
   care, though, because this gives the wrong result in exotic cases.
-

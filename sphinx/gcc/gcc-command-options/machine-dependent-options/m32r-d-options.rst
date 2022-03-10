@@ -5,9 +5,9 @@
 
 .. program:: M32R/D
 
-.. _m32r-d-options:
-
 .. index:: M32R/D options
+
+.. _m32r-d-options:
 
 M32R/D Options
 ^^^^^^^^^^^^^^
@@ -135,4 +135,3 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
 .. option:: -mno-flush-func
 
   Indicates that there is no OS function for flushing the cache.
-

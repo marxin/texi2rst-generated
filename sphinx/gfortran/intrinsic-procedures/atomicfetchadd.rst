@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_FETCH_ADD, Atomic subroutine, ADD with fetch
+
 .. _atomic_fetch_add:
-
-.. index:: ATOMIC_FETCH_ADD
-
-.. index:: Atomic subroutine, ADD with fetch
 
 ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
 **********************************************************
@@ -67,4 +65,3 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
     :ref:`ATOMIC_FETCH_AND`, 
     :ref:`ATOMIC_FETCH_OR`, 
     :ref:`ATOMIC_FETCH_XOR`
-

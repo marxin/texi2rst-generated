@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: supplemental functions, functions, supplemental, functions, missing
+
 .. _supplemental-functions:
-
-.. index:: supplemental functions
-
-.. index:: functions, supplemental
-
-.. index:: functions, missing
 
 Supplemental Functions
 **********************
@@ -33,4 +29,3 @@ in :samp:`{foo}.c` but not declared in any ``libiberty`` header file; more
 comments and caveats for each function's implementation are often
 available in the source file.  Generally, the function can simply
 be declared as ``extern``.
-

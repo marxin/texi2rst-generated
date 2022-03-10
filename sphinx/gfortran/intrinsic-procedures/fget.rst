@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FGET, read character, stream mode, stream mode, read character, file operation, read character
+
 .. _fget:
-
-.. index:: FGET
-
-.. index:: read character, stream mode
-
-.. index:: stream mode, read character
-
-.. index:: file operation, read character
 
 FGET --- Read a single character in stream mode from stdin 
 ***********************************************************
@@ -66,4 +60,3 @@ FGET --- Read a single character in stream mode from stdin
     :ref:`FGETC`, 
     :ref:`FPUT`, 
     :ref:`FPUTC`
-

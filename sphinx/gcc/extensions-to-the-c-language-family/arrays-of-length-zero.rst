@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: arrays of length zero, zero-length arrays, length-zero arrays, flexible array members
+
 .. _zero-length:
-
-.. index:: arrays of length zero
-
-.. index:: zero-length arrays
-
-.. index:: length-zero arrays
-
-.. index:: flexible array members
 
 Arrays of Length Zero
 *********************
@@ -115,4 +109,3 @@ object.  For example:
   struct bar b = { { 1, { 2, 3, 4 } } };    // Invalid.
   struct bar c = { { 1, { } } };            // Valid.
   struct foo d[1] = { { 1, { 2, 3, 4 } } };  // Invalid.
-

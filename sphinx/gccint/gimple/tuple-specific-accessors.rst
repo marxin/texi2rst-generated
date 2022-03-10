@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _tuple-specific-accessors:
-
 .. index:: Tuple specific accessors
+
+.. _tuple-specific-accessors:
 
 Tuple specific accessors
 ************************
@@ -42,4 +42,3 @@ Tuple specific accessors
   tuple-specific-accessors/gimpleswitch
   tuple-specific-accessors/gimpletry
   tuple-specific-accessors/gimplewithcleanupexpr
-

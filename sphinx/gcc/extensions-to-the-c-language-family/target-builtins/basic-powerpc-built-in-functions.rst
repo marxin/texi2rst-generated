@@ -704,9 +704,7 @@ that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`)
 Load (and sign extend) to an __int128 vector, as if implemented by the ISA 3.1
 ``lxvrbx``, ``lxvrhx``, ``lxvrwx``, and  ``lxvrdx`` instructions.
 
-.. index:: vsx_xl_sext
-
-.. index:: vsx_xl_zext
+.. index:: vsx_xl_sext, vsx_xl_zext
 
 .. code-block:: c++
 
@@ -724,4 +722,3 @@ ISA 3.1 ``stxvrbx``, ``stxvrhx``, ``stxvrwx``, and ``stxvrdx``
 instructions.
 
 .. index:: vec_xst_trunc
-

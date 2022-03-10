@@ -5,9 +5,9 @@
 
 .. program:: Xtensa
 
-.. _xtensa-options:
-
 .. index:: Xtensa Options
+
+.. _xtensa-options:
 
 Xtensa Options
 ^^^^^^^^^^^^^^
@@ -128,4 +128,3 @@ These options are supported for Xtensa targets:
   pointer.  Register window is rotated 8 registers back upon return.
   When this version of the ABI is enabled the C preprocessor symbol
   ``__XTENSA_WINDOWED_ABI__`` is defined.
-

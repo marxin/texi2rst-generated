@@ -269,4 +269,3 @@ replace calls to the original functions with calls to the wrapper functions.
 libitm also provides transactional clones of C++ memory management functions
 such as global operator new and delete.  They are part of libitm for historic
 reasons but do not need to be part of this ABI.
-

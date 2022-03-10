@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: configure terms, canadian
+
 .. _configure-terms:
-
-.. index:: configure terms
-
-.. index:: canadian
 
 Configure Terms and History
 ***************************
@@ -64,4 +62,3 @@ for the host, once for the target (even if they are the same), and once
 for the build if build and host are different.  This allows it to be
 used by all programs which are generated in the course of the build
 process.
-

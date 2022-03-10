@@ -39,4 +39,3 @@ GIMPLE_PHI
 
   Set ``PHIARG`` to be the argument corresponding to incoming edge
   ``INDEX`` for ``GIMPLE_PHI`` ``G``.
-

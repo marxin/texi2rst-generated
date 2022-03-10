@@ -120,4 +120,3 @@ are:
 
 ``tls``
   Add the target-specific flags needed to use thread-local storage.
-

@@ -10,9 +10,7 @@ RL78 Function Attributes
 
 These function attributes are supported by the RL78 back end:
 
-.. index:: interrupt function attribute, RL78
-
-.. index:: brk_interrupt function attribute, RL78
+.. index:: interrupt function attribute, RL78, brk_interrupt function attribute, RL78
 
 .. gcc-attr:: interrupt, brk_interrupt
 
@@ -37,4 +35,3 @@ These function attributes are supported by the RL78 back end:
   (see :ref:`basic-asm`). While using extended ``asm`` or a mixture of
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
-

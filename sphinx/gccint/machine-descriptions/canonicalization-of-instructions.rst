@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: canonicalization of instructions, insn canonicalization
+
 .. _insn-canonicalizations:
-
-.. index:: canonicalization of instructions
-
-.. index:: insn canonicalization
 
 Canonicalization of Instructions
 ********************************
@@ -34,15 +32,7 @@ are performed:
   ``umax`` are associative when applied to integers, and sometimes to
   floating-point.
 
-.. index:: neg, canonicalization of
-
-.. index:: not, canonicalization of
-
-.. index:: mult, canonicalization of
-
-.. index:: plus, canonicalization of
-
-.. index:: minus, canonicalization of
+.. index:: neg, canonicalization of, not, canonicalization of, mult, canonicalization of, plus, canonicalization of, minus, canonicalization of
 
 * For these operators, if only one operand is a ``neg``, ``not``,
   ``mult``, ``plus``, or ``minus`` expression, it will be the
@@ -92,11 +82,7 @@ are performed:
 * Within address computations (i.e., inside ``mem``), a left shift is
   converted into the appropriate multiplication by a power of two.
 
-  .. index:: ior, canonicalization of
-
-  .. index:: and, canonicalization of
-
-  .. index:: De Morgan's law
+  .. index:: ior, canonicalization of, and, canonicalization of, De Morgan's law
 
 * De Morgan's Law is used to move bitwise negation inside a bitwise
   logical-and or logical-or operation.  If this results in only one
@@ -142,9 +128,7 @@ are performed:
 
     (plus:m (plus:m x y) constant)
 
-  .. index:: zero_extract, canonicalization of
-
-  .. index:: sign_extract, canonicalization of
+  .. index:: zero_extract, canonicalization of, sign_extract, canonicalization of
 
 * Equality comparisons of a group of bits (usually a single bit) with zero
   will be written using ``zero_extract`` rather than the equivalent
@@ -166,4 +150,3 @@ are performed:
 
 Further canonicalization rules are defined in the function
 ``commutative_operand_precedence`` in :samp:`gcc/rtlanal.cc`.
-

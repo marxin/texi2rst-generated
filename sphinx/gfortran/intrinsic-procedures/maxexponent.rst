@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MAXEXPONENT, model representation, maximum exponent
+
 .. _maxexponent:
-
-.. index:: MAXEXPONENT
-
-.. index:: model representation, maximum exponent
 
 MAXEXPONENT --- Maximum exponent of a real kind
 ***********************************************
@@ -47,4 +45,3 @@ MAXEXPONENT --- Maximum exponent of a real kind
         print *, minexponent(x), maxexponent(x)
         print *, minexponent(y), maxexponent(y)
       end program exponents
-

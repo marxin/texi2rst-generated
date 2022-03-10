@@ -16,4 +16,3 @@ of the C library, and are not defined by GCC itself.
   5.1.1.2).
 
   See :ref:`cpp:implementation-defined-behavior`.
-

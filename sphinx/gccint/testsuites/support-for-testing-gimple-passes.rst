@@ -53,4 +53,3 @@ Example DejaGnu tests of GIMPLE can be seen in the source tree at
 The ``__GIMPLE`` parser is integrated with the C tokenizer and
 preprocessor, so it should be possible to use macros to build out
 test coverage.
-

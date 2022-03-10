@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: binary compatibility, ABI, application binary interface
+
 .. _compatibility:
-
-.. index:: binary compatibility
-
-.. index:: ABI
-
-.. index:: application binary interface
 
 Binary Compatibility
 --------------------
@@ -153,4 +149,3 @@ library.  It might also be necessary to specify different startup files
 and other runtime support libraries, and to suppress the use of GCC's
 support libraries with one or more of the options :option:`-nostdlib`,
 :option:`-nostartfiles`, and :option:`-nodefaultlibs`.
-

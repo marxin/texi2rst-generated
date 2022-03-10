@@ -32,4 +32,3 @@ omp_set_teams_thread_limit -- Set upper thread limit for teams construct
 
 :samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.5.
-

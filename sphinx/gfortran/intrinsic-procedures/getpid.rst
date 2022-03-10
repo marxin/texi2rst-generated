@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETPID, system, process ID, process ID
+
 .. _getpid:
-
-.. index:: GETPID
-
-.. index:: system, process ID
-
-.. index:: process ID
 
 GETPID --- Process ID function
 ******************************
@@ -47,4 +43,3 @@ GETPID --- Process ID function
   :samp:`{See also}:`
     :ref:`GETGID`, 
     :ref:`GETUID`
-

@@ -14,4 +14,3 @@ Miscellaneous poly_int routines
   ``poly_uint64`` values print as unsigned by default.
 
   This is a simply a ``poly_int`` version of a wide-int routine.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: dialect options, language dialect options, options, dialect
+
 .. _c-dialect-options:
-
-.. index:: dialect options
-
-.. index:: language dialect options
-
-.. index:: options, dialect
 
 Options Controlling C Dialect
 *****************************
@@ -18,9 +14,7 @@ The following options control the dialect of C (or languages derived
 from C, such as C++, Objective-C and Objective-C++) that the compiler
 accepts:
 
-.. index:: ANSI support
-
-.. index:: ISO support
+.. index:: ANSI support, ISO support
 
 .. option:: -ansi
 
@@ -369,11 +363,7 @@ accepts:
   Note that this option is off for all targets except for x86
   targets using ms-abi.
 
-.. index:: Offloading targets
-
-.. index:: OpenACC offloading targets
-
-.. index:: OpenMP offloading targets
+.. index:: Offloading targets, OpenACC offloading targets, OpenMP offloading targets
 
 .. option:: -foffload=disable
 
@@ -388,11 +378,7 @@ accepts:
   run the compiler with :option:`-v` to show the list of configured offload targets
   under ``OFFLOAD_TARGET_NAMES``.
 
-.. index:: Offloading options
-
-.. index:: OpenACC offloading options
-
-.. index:: OpenMP offloading options
+.. index:: Offloading options, OpenACC offloading options, OpenMP offloading options
 
 .. option:: -foffload-options={options}
 
@@ -441,9 +427,7 @@ accepts:
   have support for :option:`-pthread`. :option:`-fopenmp` implies
   :option:`-fopenmp-simd`.
 
-.. index:: OpenMP SIMD
-
-.. index:: SIMD
+.. index:: OpenMP SIMD, SIMD
 
 .. option:: -fopenmp-simd
 
@@ -529,4 +513,3 @@ accepts:
     The :option:`-fsso-struct` switch causes GCC to generate
     code that is not binary compatible with code generated without it if the
     specified endianness is not the native endianness of the target.
-

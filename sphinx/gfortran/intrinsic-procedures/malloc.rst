@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MALLOC, pointer, cray
+
 .. _malloc:
-
-.. index:: MALLOC
-
-.. index:: pointer, cray
 
 MALLOC --- Allocate dynamic memory
 **********************************
@@ -67,4 +65,3 @@ MALLOC --- Allocate dynamic memory
 
   :samp:`{See also}:`
     :ref:`FREE`
-

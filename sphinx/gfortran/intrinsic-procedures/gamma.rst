@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GAMMA, DGAMMA, Gamma function, Factorial function
+
 .. _gamma:
-
-.. index:: GAMMA
-
-.. index:: DGAMMA
-
-.. index:: Gamma function
-
-.. index:: Factorial function
 
 GAMMA --- Gamma function
 ************************
@@ -60,4 +54,3 @@ GAMMA --- Gamma function
   :samp:`{See also}:`
     Logarithm of the Gamma function: 
     :ref:`LOG_GAMMA`
-

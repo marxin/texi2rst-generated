@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: cross compilation and floating point, floating point and cross compilation
+
 .. _floating-point:
-
-.. index:: cross compilation and floating point
-
-.. index:: floating point and cross compilation
 
 Cross Compilation and Floating Point
 ************************************
@@ -73,4 +71,3 @@ their operands more than once, so operands must not have side effects.
 .. function:: REAL_VALUE_TYPE REAL_VALUE_ABS (REAL_VALUE_TYPE x)
 
   Returns the absolute value of :samp:`{x}`.
-

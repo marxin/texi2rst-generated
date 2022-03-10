@@ -211,4 +211,3 @@ GCC data, is triggered for processing of ``#include`` or
 The PLUGIN_FINISH event is the last time that plugins can call GCC
 functions, notably emit diagnostics with ``warning``, ``error``
 etc.
-

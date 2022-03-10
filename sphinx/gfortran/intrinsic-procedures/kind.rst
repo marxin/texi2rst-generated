@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: KIND, kind
+
 .. _kind:
-
-.. index:: KIND
-
-.. index:: kind
 
 KIND --- Kind of an entity
 **************************
@@ -48,4 +46,3 @@ KIND --- Kind of an entity
         print *, "The default character kind is ", kc
         print *, "The default logical kind is ", kl
       end program test_kind
-

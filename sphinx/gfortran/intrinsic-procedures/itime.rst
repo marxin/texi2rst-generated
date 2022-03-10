@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ITIME, time, current, current time
+
 .. _itime:
-
-.. index:: ITIME
-
-.. index:: time, current
-
-.. index:: current time
 
 ITIME --- Get current local time subroutine (hour/minutes/seconds) 
 *******************************************************************
@@ -54,4 +50,3 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
 
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`
-

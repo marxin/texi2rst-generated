@@ -33,4 +33,3 @@ omp_get_team_size -- Number of threads in a team
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.19.
-

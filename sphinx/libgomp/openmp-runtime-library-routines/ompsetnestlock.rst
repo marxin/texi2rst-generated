@@ -32,4 +32,3 @@ omp_set_nest_lock -- Wait for and set nested lock
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gomp_debug:
-
 .. index:: Environment Variable
+
+.. _gomp_debug:
 
 GOMP_DEBUG -- Enable debugging output
 *************************************
@@ -16,4 +16,3 @@ GOMP_DEBUG -- Enable debugging output
 
   If enabled, some debugging output will be printed during execution.
   This is currently not specified in more detail, and subject to change.
-

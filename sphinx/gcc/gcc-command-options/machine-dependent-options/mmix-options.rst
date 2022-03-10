@@ -5,9 +5,9 @@
 
 .. program:: MMIX
 
-.. _mmix-options:
-
 .. index:: MMIX Options
+
+.. _mmix-options:
 
 MMIX Options
 ^^^^^^^^^^^^
@@ -73,4 +73,3 @@ These options are defined for the MMIX:
 
   Force (do not force) generated code to have a single exit point in each
   function.
-

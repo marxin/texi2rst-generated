@@ -10,9 +10,7 @@ NDS32 Function Attributes
 
 These function attributes are supported by the NDS32 back end:
 
-.. index:: exception function attribute
-
-.. index:: exception handler functions, NDS32
+.. index:: exception function attribute, exception handler functions, NDS32
 
 .. gcc-attr:: exception
 
@@ -76,9 +74,7 @@ These function attributes are supported by the NDS32 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. index:: reset function attribute, NDS32
-
-.. index:: reset handler functions
+.. index:: reset function attribute, NDS32, reset handler functions
 
 .. gcc-attr:: reset
 
@@ -98,4 +94,3 @@ These function attributes are supported by the NDS32 back end:
     .. index:: warm function attribute, NDS32
 
     Provide a user-defined function to handle warm reset exception.
-

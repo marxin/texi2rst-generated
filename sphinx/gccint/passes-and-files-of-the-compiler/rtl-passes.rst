@@ -29,9 +29,7 @@ passes that are run after the Tree optimization passes.
   program ``genemit``, is used in this pass.  The header file
   :samp:`expr.h` is used for communication within this pass.
 
-  .. index:: genflags
-
-  .. index:: gencodes
+  .. index:: genflags, gencodes
 
   The header files :samp:`insn-flags.h` and :samp:`insn-codes.h`,
   generated from the machine description by the programs ``genflags``
@@ -138,9 +136,7 @@ passes that are run after the Tree optimization passes.
   completely target-specific.  The code for this pass is located in
   :samp:`mode-switching.cc`.
 
-  .. index:: modulo scheduling
-
-  .. index:: sms, swing, software pipelining
+  .. index:: modulo scheduling, sms, swing, software pipelining
 
 * Modulo scheduling
 
@@ -277,4 +273,3 @@ passes that are run after the Tree optimization passes.
   DWARF symbol table format, files :samp:`dwarf2out.cc` and :samp:`dwarf2asm.cc`
   for DWARF2 symbol table format, and :samp:`vmsdbgout.cc` for VMS debug
   symbol table format.
-

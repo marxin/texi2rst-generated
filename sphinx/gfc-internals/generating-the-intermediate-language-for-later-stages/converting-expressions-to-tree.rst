@@ -46,4 +46,3 @@ corresponding argument.
 
 ``gfc_se`` also contains pointers to a ``gfc_ss`` and a
 ``gfc_loopinfo`` structure.  These are needed by the scalarizer.
-

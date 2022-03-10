@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _predefined-macros:
-
 .. index:: predefined macros
+
+.. _predefined-macros:
 
 Predefined Macros
 *****************
@@ -21,9 +21,9 @@ predefined macros, but you cannot undefine them.
   :maxdepth: 2
 
 
-.. _standard-predefined-macros:
-
 .. index:: standard predefined macros.
+
+.. _standard-predefined-macros:
 
 Standard Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,9 +172,9 @@ with ``__FILE__`` and ``__LINE__``, though.
   This macro is defined with value 1 when preprocessing assembly
   language.
 
-.. _common-predefined-macros:
-
 .. index:: common predefined macros
+
+.. _common-predefined-macros:
 
 Common Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -791,13 +791,9 @@ double underscores.
   documented for those options (that is, it can expand to something like
   ``"UTF-8"``).  See :ref:`invocation`.
 
+.. index:: system-specific predefined macros, predefined macros, system-specific, reserved namespace
+
 .. _system-specific-predefined-macros:
-
-.. index:: system-specific predefined macros
-
-.. index:: predefined macros, system-specific
-
-.. index:: reserved namespace
 
 System-specific Predefined Macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -835,13 +831,9 @@ are in the reserved namespace, either.  It is better in the long run to
 check specifically for features you need, using a tool such as
 :command:`autoconf`.
 
+.. index:: named operators, C++ named operators, iso646.h
+
 .. _c++-named-operators:
-
-.. index:: named operators
-
-.. index:: C++ named operators
-
-.. index:: iso646.h
 
 C++ Named Operators
 ^^^^^^^^^^^^^^^^^^^
@@ -870,4 +862,3 @@ Named Operator  Punctuator
 ``xor``         ``^``
 ``xor_eq``      ``^=``
 ==============  ==========
-

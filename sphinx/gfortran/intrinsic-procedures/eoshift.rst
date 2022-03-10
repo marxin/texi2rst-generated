@@ -8,9 +8,7 @@
 EOSHIFT --- End-off shift elements of an array
 **********************************************
 
-.. index:: EOSHIFT
-
-.. index:: array, shift
+.. index:: EOSHIFT, array, shift
 
 .. function:: EOSHIFT(ARRAY, SHIFT, BOUNDARY, DIM)
 
@@ -69,4 +67,3 @@ EOSHIFT --- End-off shift elements of an array
           print '(3i3)', a(2,:)
           print '(3i3)', a(3,:)
       end program test_eoshift
-

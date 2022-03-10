@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IRAND, random number generation
+
 .. _irand:
-
-.. index:: IRAND
-
-.. index:: random number generation
 
 IRAND --- Integer pseudo-random number
 **************************************
@@ -50,4 +48,3 @@ IRAND --- Integer pseudo-random number
         print *, irand(), irand(), irand(), irand()
         print *, irand(seed), irand(), irand(), irand()
       end program test_irand
-

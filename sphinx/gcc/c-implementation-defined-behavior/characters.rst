@@ -33,9 +33,7 @@ Characters
   range, representation, and behavior as 'plain' ``char`` (C90
   6.1.2.5, C90 6.2.1.1, C99 and C11 6.2.5, C99 and C11 6.3.1.1).
 
-  .. index:: fsigned-char
-
-  .. index:: funsigned-char
+  .. index:: fsigned-char, funsigned-char
 
   Determined by ABI.  The options :option:`-funsigned-char` and
   :option:`-fsigned-char` change the default.  See :ref:`c-dialect-options`.
@@ -93,4 +91,3 @@ Characters
   See :ref:`cpp:implementation-defined-behavior`.  ``char16_t`` and
   ``char32_t`` literals are always encoded in UTF-16 and UTF-32
   respectively.
-

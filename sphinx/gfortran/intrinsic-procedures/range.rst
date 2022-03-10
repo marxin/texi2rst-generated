@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RANGE, model representation, range
+
 .. _range:
-
-.. index:: RANGE
-
-.. index:: model representation, range
 
 RANGE --- Decimal exponent range
 ********************************
@@ -43,4 +41,3 @@ RANGE --- Decimal exponent range
   :samp:`{See also}:`
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`PRECISION`
-

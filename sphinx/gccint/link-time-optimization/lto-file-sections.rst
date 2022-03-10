@@ -108,4 +108,3 @@ are described below.
   format of these sections is entirely up to each individual pass.  The
   only requirement is that the writer and reader hooks agree on the
   format.
-

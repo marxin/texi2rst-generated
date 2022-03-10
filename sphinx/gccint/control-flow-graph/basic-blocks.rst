@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: basic block, basic_block
+
 .. _basic-blocks:
-
-.. index:: basic block
-
-.. index:: basic_block
 
 Basic Blocks
 ************
@@ -68,15 +66,11 @@ and RTL), there are pointers to the head and end of a basic block for
 both representations, stored in intermediate representation specific
 data in the ``il`` field of ``struct basic_block_def``.
 
-.. index:: CODE_LABEL
-
-.. index:: NOTE_INSN_BASIC_BLOCK
+.. index:: CODE_LABEL, NOTE_INSN_BASIC_BLOCK
 
 For RTL, these pointers are ``BB_HEAD`` and ``BB_END``.
 
-.. index:: insn notes, notes
-
-.. index:: NOTE_INSN_BASIC_BLOCK
+.. index:: insn notes, notes, NOTE_INSN_BASIC_BLOCK
 
 In the RTL representation of a function, the instruction stream
 contains not only the 'real' instructions, but also :dfn:`notes`
@@ -96,9 +90,7 @@ instruction before the next ``CODE_LABEL`` or
 By definition, a ``CODE_LABEL`` cannot appear in the middle of
 the instruction stream of a basic block.
 
-.. index:: can_fallthru
-
-.. index:: table jump
+.. index:: can_fallthru, table jump
 
 In addition to notes, the jump table vectors are also represented as
 'pseudo-instructions' inside the insn stream.  These vectors never
@@ -147,4 +139,3 @@ of the current function in the GIMPLE representation.
          print_gimple_stmt (dump_file, stmt, 0, TDF_SLIM);
        }
     }
-

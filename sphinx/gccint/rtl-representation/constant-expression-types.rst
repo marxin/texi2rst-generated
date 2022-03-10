@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL constants, RTL constant expression types
+
 .. _constants:
-
-.. index:: RTL constants
-
-.. index:: RTL constant expression types
 
 Constant Expression Types
 *************************
@@ -29,13 +27,7 @@ The simplest RTL expressions are those that represent constant values.
   inherently signed nor inherently unsigned; where necessary, signedness
   is determined by the rtl operation instead.
 
-  .. index:: const0_rtx
-
-  .. index:: const1_rtx
-
-  .. index:: const2_rtx
-
-  .. index:: constm1_rtx
+  .. index:: const0_rtx, const1_rtx, const2_rtx, constm1_rtx
 
   There is only one expression object for the integer value zero; it is
   the value of the variable ``const0_rtx``.  Likewise, the only
@@ -307,11 +299,7 @@ The simplest RTL expressions are those that represent constant values.
   as global memory addresses.  In the latter case, :samp:`{m}` is ``Pmode``
   and :samp:`{exp}` is usually a constant expression involving ``symbol_ref``.
 
-.. index:: CONST0_RTX
-
-.. index:: CONST1_RTX
-
-.. index:: CONST2_RTX
+.. index:: CONST0_RTX, CONST1_RTX, CONST2_RTX
 
 The macro ``CONST0_RTX (mode)`` refers to an expression with
 value 0 in mode :samp:`{mode}`.  If mode :samp:`{mode}` is of mode class
@@ -323,4 +311,3 @@ expression in mode :samp:`{mode}`.  Otherwise, it returns a
 mode :samp:`{mode}` and similarly for ``CONST2_RTX``.  The
 ``CONST1_RTX`` and ``CONST2_RTX`` macros are undefined
 for vector modes.
-

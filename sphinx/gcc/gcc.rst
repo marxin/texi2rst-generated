@@ -30,9 +30,9 @@
 
 .. %**end of header
 
-.. _top:
-
 .. index:: introduction
+
+.. _top:
 
 Introduction
 ============

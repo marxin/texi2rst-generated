@@ -655,4 +655,3 @@ The following options control the analyzer.
   control flow graphs in the program, with interprocedural edges for
   calls and returns.  The second dump contains annotations showing nodes
   in the 'exploded graph' and diagnostics associated with them.
-

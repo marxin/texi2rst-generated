@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TTYNAM, system, terminal
+
 .. _ttynam:
-
-.. index:: TTYNAM
-
-.. index:: system, terminal
 
 TTYNAM --- Get the name of a terminal device.
 *********************************************
@@ -49,4 +47,3 @@ TTYNAM --- Get the name of a terminal device.
 
   :samp:`{See also}:`
     :ref:`ISATTY`
-

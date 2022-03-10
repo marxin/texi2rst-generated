@@ -8,11 +8,7 @@
 ASSOCIATED --- Status of a pointer or pointer/target pair 
 **********************************************************
 
-.. index:: ASSOCIATED
-
-.. index:: pointer, status
-
-.. index:: association status
+.. index:: ASSOCIATED, pointer, status, association status
 
 .. function:: ASSOCIATED(POINTER, TARGET)
 
@@ -59,4 +55,3 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
 
   :samp:`{See also}:`
     :ref:`NULL`
-

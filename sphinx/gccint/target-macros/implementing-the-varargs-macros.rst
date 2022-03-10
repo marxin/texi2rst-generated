@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _varargs:
-
 .. index:: varargs implementation
+
+.. _varargs:
 
 Implementing the Varargs Macros
 *******************************
@@ -188,4 +188,3 @@ These machine description macros help implement varargs:
   Otherwise, you should not define this hook.
 
 .. hook-end
-

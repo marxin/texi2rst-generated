@@ -23,4 +23,3 @@ in the :ref:`gnu_fdl`.
      You have freedom to copy and modify this GNU Manual, like GNU
      software.  Copies published by the Free Software Foundation raise
      funds for GNU development.
-

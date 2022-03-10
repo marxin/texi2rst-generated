@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: statements inside expressions, declarations inside expressions, expressions containing statements, macros, statements in expressions
+
 .. _statement-exprs:
-
-.. index:: statements inside expressions
-
-.. index:: declarations inside expressions
-
-.. index:: expressions containing statements
-
-.. index:: macros, statements in expressions
 
 Statements and Declarations in Expressions
 ******************************************
@@ -168,4 +162,3 @@ parts of the containing expression.  For example,
 calls ``foo`` and ``bar1`` and does not call ``baz`` but
 may or may not call ``bar2``.  If ``bar2`` is called, it is
 called after ``foo`` and before ``bar1``.
-

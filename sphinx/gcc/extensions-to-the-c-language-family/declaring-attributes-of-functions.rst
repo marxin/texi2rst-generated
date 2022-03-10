@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: function attributes, declaring attributes of functions, volatile applied to function, const applied to function
+
 .. _function-attributes:
-
-.. index:: function attributes
-
-.. index:: declaring attributes of functions
-
-.. index:: volatile applied to function
-
-.. index:: const applied to function
 
 Declaring Attributes of Functions
 *********************************
@@ -114,4 +108,3 @@ GCC plugins may provide their own attributes.
   declaring-attributes-of-functions/visium-function-attributes
   declaring-attributes-of-functions/x86-function-attributes
   declaring-attributes-of-functions/xstormy16-function-attributes
-

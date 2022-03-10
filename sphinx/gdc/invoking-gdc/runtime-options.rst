@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _runtime-options:
-
 .. index:: options, runtime
+
+.. _runtime-options:
 
 Runtime Options
 ***************
@@ -15,9 +15,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fall-instantiations
 
-  .. index:: -fall-instantiations
-
-  .. index:: -fno-all-instantiations
+  .. index:: -fall-instantiations, -fno-all-instantiations
 
   Generate code for all template instantiations.  The default template emission
   strategy is to not generate code for declarations that were either
@@ -26,17 +24,13 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-assert
 
-  .. index:: -fassert
-
-  .. index:: -fno-assert
+  .. index:: -fassert, -fno-assert
 
   Turn off code generation for ``assert`` contracts.
 
 .. option:: -fno-bounds-check
 
-  .. index:: -fbounds-check
-
-  .. index:: -fno-bounds-check
+  .. index:: -fbounds-check, -fno-bounds-check
 
   Turns off array bounds checking for all functions, which can improve
   performance for code that uses arrays extensively.  Note that this
@@ -63,9 +57,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-builtin
 
-  .. index:: -fbuiltin
-
-  .. index:: -fno-builtin
+  .. index:: -fbuiltin, -fno-builtin
 
   Don't recognize built-in functions unless they begin with the prefix
   :samp:`__builtin_`.  By default, the compiler will recognize when a
@@ -103,9 +95,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-druntime
 
-  .. index:: -fdruntime
-
-  .. index:: -fno-druntime
+  .. index:: -fdruntime, -fno-druntime
 
   Implements https://dlang.org/spec/betterc.html.  Assumes that
   compilation targets an environment without a D runtime library.
@@ -140,9 +130,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-invariants
 
-  .. index:: -finvariants
-
-  .. index:: -fno-invariants
+  .. index:: -finvariants, -fno-invariants
 
   Turns off code generation for class ``invariant`` contracts.
 
@@ -172,17 +160,13 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-postconditions
 
-  .. index:: -fpostconditions
-
-  .. index:: -fno-postconditions
+  .. index:: -fpostconditions, -fno-postconditions
 
   Turns off code generation for postcondition ``out`` contracts.
 
 .. option:: -fno-preconditions
 
-  .. index:: -fpreconditions
-
-  .. index:: -fno-preconditions
+  .. index:: -fpreconditions, -fno-preconditions
 
   Turns off code generation for precondition ``in`` contracts.
 
@@ -278,9 +262,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-rtti
 
-  .. index:: -frtti
-
-  .. index:: -fno-rtti
+  .. index:: -frtti, -fno-rtti
 
   Turns off generation of run-time type information for all user defined types.
   Any code that uses features of the language that require access to this
@@ -288,9 +270,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-switch-errors
 
-  .. index:: -fswitch-errors
-
-  .. index:: -fno-switch-errors
+  .. index:: -fswitch-errors, -fno-switch-errors
 
   This option controls what code is generated when no case is matched
   in a ``final switch`` statement.  The default run time behavior
@@ -299,9 +279,7 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -funittest
 
-  .. index:: -funittest
-
-  .. index:: -fno-unittest
+  .. index:: -funittest, -fno-unittest
 
   Turns on compilation of ``unittest`` code, and turns on the
   ``version(unittest)`` identifier.  This implies :option:`-fassert`.
@@ -322,12 +300,9 @@ These options affect the runtime behavior of programs compiled with
 
 .. option:: -fno-weak-templates
 
-  .. index:: -fweak-templates
-
-  .. index:: -fno-weak-templates
+  .. index:: -fweak-templates, -fno-weak-templates
 
   Turns off emission of declarations that can be defined in multiple objects as
   weak symbols.  The default is to emit all public symbols as weak, unless the
   target lacks support for weak symbols.  Disabling this option means that common
   symbols are instead put in COMDAT or become private.
-

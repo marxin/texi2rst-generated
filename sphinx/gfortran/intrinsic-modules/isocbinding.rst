@@ -102,4 +102,3 @@ Name               Type
 =================  ============
 
 Both are equivalent to the value ``NULL`` in C.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_proc_bind:
-
 .. index:: Environment Variable
+
+.. _omp_proc_bind:
 
 OMP_PROC_BIND -- Whether theads may be moved between CPUs
 *********************************************************
@@ -32,4 +32,3 @@ OMP_PROC_BIND -- Whether theads may be moved between CPUs
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.4
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Contributors, Credits, Authors
+
 .. _contributors:
-
-.. index:: Contributors
-
-.. index:: Credits
-
-.. index:: Authors
 
 Contributors to GNU Fortran
 ***************************
@@ -111,4 +107,3 @@ and we welcome you to do the same!
 If you already have done so,
 and you would like to see your name listed in the
 list above, please contact us.
-

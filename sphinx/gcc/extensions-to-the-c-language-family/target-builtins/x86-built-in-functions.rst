@@ -1681,4 +1681,3 @@ should be used instead.
   void __builtin_ia32_wrussq(unsigned long long, void *);
   void __builtin_ia32_setssbsy(void);
   void __builtin_ia32_clrssbsy(void *);
-

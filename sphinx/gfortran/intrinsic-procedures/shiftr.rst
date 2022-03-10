@@ -8,11 +8,7 @@
 SHIFTR --- Right shift
 **********************
 
-.. index:: SHIFTR
-
-.. index:: bits, shift right
-
-.. index:: shift, right
+.. index:: SHIFTR, bits, shift right, shift, right
 
 .. function:: SHIFTR(I, SHIFT)
 
@@ -47,4 +43,3 @@ SHIFTR --- Right shift
   :samp:`{See also}:`
     :ref:`SHIFTA`, 
     :ref:`SHIFTL`
-

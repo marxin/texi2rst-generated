@@ -15,4 +15,3 @@ GIMPLE_NOP
 .. function:: bool gimple_nop_p (gimple g)
 
   Returns ``TRUE`` if statement ``G`` is a ``GIMPLE_NOP``.
-

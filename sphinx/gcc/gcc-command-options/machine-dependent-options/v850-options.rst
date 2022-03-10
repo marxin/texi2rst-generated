@@ -5,9 +5,9 @@
 
 .. program:: V850
 
-.. _v850-options:
-
 .. index:: V850 Options
+
+.. _v850-options:
 
 V850 Options
 ^^^^^^^^^^^^
@@ -205,4 +205,3 @@ These :samp:`-m` options are defined for V850 implementations:
 .. option:: -mno-app-regs
 
   This option causes r2 and r5 to be treated as fixed registers.
-

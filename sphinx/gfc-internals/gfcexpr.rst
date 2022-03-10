@@ -8,9 +8,7 @@
 gfc_expr
 ********
 
-.. index:: gfc_expr
-
-.. index:: struct gfc_expr
+.. index:: gfc_expr, struct gfc_expr
 
 Expressions and 'values', including constants, variable-, array- and
 component-references as well as complex expressions consisting of operators and

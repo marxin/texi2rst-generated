@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _code-generation:
-
 .. index:: options, code generation
+
+.. _code-generation:
 
 Code Generation
 ***************
@@ -165,4 +165,3 @@ In addition to the many :command:`gcc` options controlling code generation,
   Generates code expanded from D ``mixin`` statements and writes the
   processed sources to :samp:`{file}`.  This is useful to debug errors in compilation
   and provides source for debuggers to show when requested.
-

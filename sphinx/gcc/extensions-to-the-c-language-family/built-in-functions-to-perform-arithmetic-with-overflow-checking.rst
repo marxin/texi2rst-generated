@@ -100,4 +100,3 @@ would overflow.
   The compiler will attempt to use hardware instructions to implement
   these built-in functions where possible, like conditional jump on overflow
   after addition, conditional jump on carry etc.
-

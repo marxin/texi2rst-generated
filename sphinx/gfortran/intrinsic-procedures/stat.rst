@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: STAT, file system, file status
+
 .. _stat:
-
-.. index:: STAT
-
-.. index:: file system, file status
 
 STAT --- Get file status
 ************************
@@ -74,4 +72,3 @@ STAT --- Get file status
     :ref:`FSTAT` 
     To stat a link: 
     :ref:`LSTAT`
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FSEEK, file operation, seek, file operation, position
+
 .. _fseek:
-
-.. index:: FSEEK
-
-.. index:: file operation, seek
-
-.. index:: file operation, position
 
 FSEEK --- Low level file positioning subroutine
 ***********************************************
@@ -76,4 +72,3 @@ FSEEK --- Low level file positioning subroutine
 
   :samp:`{See also}:`
     :ref:`FTELL`
-

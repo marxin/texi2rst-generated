@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: developer options, debug dump options, dump options
+
 .. _developer-options:
-
-.. index:: developer options
-
-.. index:: debug dump options
-
-.. index:: dump options
 
 Developer Options
 *****************
@@ -33,4 +29,3 @@ interest to developers or language tooling.
   processed through the ``parse``, ``semantic``, ``semantic2``, and
   ``semantic3`` stages; all ``import`` modules and their file paths;
   and all ``function`` bodies that are being compiled.
-

@@ -189,4 +189,3 @@ of ``ASM_OUTPUT_DOUBLE`` and the like:
   The array element values are designed so that you can print them out
   using ``fprintf`` in the order they should appear in the target
   machine's memory.
-

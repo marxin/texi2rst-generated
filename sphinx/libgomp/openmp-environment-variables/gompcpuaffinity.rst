@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gomp_cpu_affinity:
-
 .. index:: Environment Variable
+
+.. _gomp_cpu_affinity:
 
 GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
 **************************************************
@@ -35,4 +35,3 @@ GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
 
 :samp:`{See also}:`
   :ref:`OMP_PLACES`, :ref:`OMP_PROC_BIND`
-

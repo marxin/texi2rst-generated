@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: CFG, Control Flow Graph, basic-block.h
+
 .. _control-flow:
-
-.. index:: CFG, Control Flow Graph
-
-.. index:: basic-block.h
 
 Control Flow Graph
 ------------------
@@ -43,4 +41,3 @@ without proper maintenance of the CFG simultaneously.
   control-flow-graph/profile-information
   control-flow-graph/maintaining-the-cfg
   control-flow-graph/liveness-information
-

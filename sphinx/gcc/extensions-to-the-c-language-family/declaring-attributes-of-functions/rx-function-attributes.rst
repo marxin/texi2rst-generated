@@ -73,4 +73,3 @@ These function attributes are supported by the RX back end:
   parameters, but does not make the function an interrupt-handler type
   function (i.e. it retains the normal C function calling ABI).  See the
   :gcc-attr:`interrupt` attribute for a description of its arguments.
-

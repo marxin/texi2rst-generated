@@ -8,9 +8,7 @@
 ISNAN --- Test for a NaN
 ************************
 
-.. index:: ISNAN
-
-.. index:: IEEE, ISNAN
+.. index:: ISNAN, IEEE, ISNAN
 
 .. function:: ISNAN(X)
 
@@ -47,4 +45,3 @@ ISNAN --- Test for a NaN
         x = sqrt(x)
         if (isnan(x)) stop '"x" is a NaN'
       end program test_nan
-

@@ -45,4 +45,3 @@ Finally, the insn list's RTL is matched up with the RTL templates in the
 ``define_insn`` patterns, and those patterns are used to emit the
 final assembly code.  For this purpose, each named ``define_insn``
 acts like it's unnamed, since the names are ignored.
-

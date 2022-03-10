@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options, debugging, debugging information options
+
 .. _debugging-options:
-
-.. index:: options, debugging
-
-.. index:: debugging information options
 
 Options for debugging your program or GNU Fortran
 *************************************************
@@ -120,11 +118,7 @@ either your program or the GNU Fortran compiler.
 
   By default, a summary for all exceptions but :samp:`inexact` is shown.
 
-.. index:: fno-backtrace
-
-.. index:: backtrace
-
-.. index:: trace
+.. index:: fno-backtrace, backtrace, trace
 
 .. option:: -fno-backtrace
 
@@ -138,4 +132,3 @@ either your program or the GNU Fortran compiler.
 
 See :ref:`gcc:debugging-options`, for more information on
 debugging options.
-

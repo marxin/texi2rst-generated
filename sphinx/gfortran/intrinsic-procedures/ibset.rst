@@ -8,17 +8,7 @@
 IBSET --- Set bit
 *****************
 
-.. index:: IBSET
-
-.. index:: BBSET
-
-.. index:: IIBSET
-
-.. index:: JIBSET
-
-.. index:: KIBSET
-
-.. index:: bits, set
+.. index:: IBSET, BBSET, IIBSET, JIBSET, KIBSET, bits, set
 
 .. function:: IBSET(I, POS)
 
@@ -65,4 +55,3 @@ IBSET --- Set bit
     :ref:`IOR`, 
     :ref:`IEOR`, 
     :ref:`MVBITS`
-

@@ -3,25 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GCC, GNU Compiler Collection, GNU C Compiler, Ada, D, Fortran, Go, Objective-C, Objective-C++
+
 .. _g++-and-gcc:
-
-.. index:: GCC
-
-.. index:: GNU Compiler Collection
-
-.. index:: GNU C Compiler
-
-.. index:: Ada
-
-.. index:: D
-
-.. index:: Fortran
-
-.. index:: Go
-
-.. index:: Objective-C
-
-.. index:: Objective-C++
 
 Programming Languages Supported by GCC
 --------------------------------------
@@ -43,9 +27,7 @@ The language-independent component of GCC includes the majority of the
 optimizers, as well as the 'back ends' that generate machine code for
 various processors.
 
-.. index:: COBOL
-
-.. index:: Mercury
+.. index:: COBOL, Mercury
 
 The part of a compiler that is specific to a particular language is
 called the 'front end'.  In addition to the front ends that are
@@ -54,24 +36,14 @@ are maintained separately.  These support languages such as
 Mercury, and COBOL.  To use these, they must be built together with
 GCC proper.
 
-.. index:: C++
-
-.. index:: G++
-
-.. index:: Ada
-
-.. index:: GNAT
+.. index:: C++, G++, Ada, GNAT
 
 Most of the compilers for languages other than C have their own names.
 The C++ compiler is G++, the Ada compiler is GNAT, and so on.  When we
 talk about compiling one of those languages, we might refer to that
 compiler by its own name, or as GCC.  Either is correct.
 
-.. index:: compiler compared to C++ preprocessor
-
-.. index:: intermediate C version, nonexistent
-
-.. index:: C intermediate output, nonexistent
+.. index:: compiler compared to C++ preprocessor, intermediate C version, nonexistent, C intermediate output, nonexistent
 
 Historically, compilers for many languages, including C++ and Fortran,
 have been implemented as 'preprocessors' which emit another high
@@ -80,4 +52,3 @@ implemented this way; they all generate machine code directly.  This
 sort of preprocessor should not be confused with the :dfn:`C
 preprocessor`, which is an integral feature of the C, C++, Objective-C
 and Objective-C++ languages.
-

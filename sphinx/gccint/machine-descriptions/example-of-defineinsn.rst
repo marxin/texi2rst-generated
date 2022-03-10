@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _example:
-
 .. index:: define_insn example
+
+.. _example:
 
 Example of define_insn
 **********************
@@ -52,4 +52,3 @@ output template to return based on the kind of operand and the specific
 type of CPU for which code is being generated.
 
 :samp:`"rm"` is an operand constraint.  Its meaning is explained below.
-

@@ -28,4 +28,3 @@ GIMPLE_WITH_CLEANUP_EXPR
 .. function:: void gimple_wce_set_cleanup_eh_only (gimple g, bool eh_only_p)
 
   Set the ``CLEANUP_EH_ONLY`` flag for a ``WCE`` tuple.
-

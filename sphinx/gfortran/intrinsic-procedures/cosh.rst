@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COSH, DCOSH, hyperbolic cosine, hyperbolic function, cosine, cosine, hyperbolic
+
 .. _cosh:
-
-.. index:: COSH
-
-.. index:: DCOSH
-
-.. index:: hyperbolic cosine
-
-.. index:: hyperbolic function, cosine
-
-.. index:: cosine, hyperbolic
 
 COSH --- Hyperbolic cosine function
 ***********************************
@@ -63,4 +55,3 @@ COSH --- Hyperbolic cosine function
   :samp:`{See also}:`
     Inverse function: 
     :ref:`ACOSH`
-

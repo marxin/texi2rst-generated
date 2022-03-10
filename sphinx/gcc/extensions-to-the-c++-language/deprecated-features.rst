@@ -41,4 +41,3 @@ has been ignored since G++ 3.3 and is deprecated.
 G++ allows anonymous structs and unions to have members that are not
 public non-static data members (i.e. fields).  These extensions are
 deprecated.
-

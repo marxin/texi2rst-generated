@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATAN, DATAN, trigonometric function, tangent, inverse, tangent, inverse
+
 .. _atan:
-
-.. index:: ATAN
-
-.. index:: DATAN
-
-.. index:: trigonometric function, tangent, inverse
-
-.. index:: tangent, inverse
 
 ATAN --- Arctangent function 
 *****************************
@@ -70,4 +64,3 @@ ATAN --- Arctangent function
     :ref:`TAN` 
     Degrees function: 
     :ref:`ATAND`
-

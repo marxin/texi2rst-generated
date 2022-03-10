@@ -5,9 +5,9 @@
 
 .. program:: Visium
 
-.. _visium-options:
-
 .. index:: Visium options
+
+.. _visium-options:
 
 Visium Options
 ^^^^^^^^^^^^^^
@@ -71,4 +71,3 @@ Visium Options
   Generate code for the user mode, where the access to some general registers
   is forbidden: on the GR5, registers r24 to r31 cannot be accessed in this
   mode; on the GR6, only registers r29 to r31 are affected.
-

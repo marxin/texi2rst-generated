@@ -70,9 +70,7 @@ These function attributes are supported by the AVR back end:
   To disable ``__gcc_isr`` generation for the whole compilation unit,
   there is option :option:`-mno-gas-isr-prologues`, see :ref:`avr-options`.
 
-.. index:: OS_main function attribute, AVR
-
-.. index:: OS_task function attribute, AVR
+.. index:: OS_main function attribute, AVR, OS_task function attribute, AVR
 
 .. gcc-attr:: OS_main, OS_task
 
@@ -120,4 +118,3 @@ These function attributes are supported by the AVR back end:
 
   If both :gcc-attr:`signal` and :gcc-attr:`interrupt` are specified for the same
   function, :gcc-attr:`signal` is silently ignored.
-

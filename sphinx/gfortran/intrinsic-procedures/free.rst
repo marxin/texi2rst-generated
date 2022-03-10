@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FREE, pointer, cray
+
 .. _free:
-
-.. index:: FREE
-
-.. index:: pointer, cray
 
 FREE --- Frees memory
 *********************
@@ -44,4 +42,3 @@ FREE --- Frees memory
 
   :samp:`{See also}:`
     :ref:`MALLOC`
-

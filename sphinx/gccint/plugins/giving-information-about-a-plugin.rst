@@ -22,4 +22,3 @@ uses the following structure:
 Such a structure is passed as the ``user_data`` by the plugin's
 init routine using ``register_callback`` with the
 ``PLUGIN_INFO`` pseudo-event and a null callback.
-

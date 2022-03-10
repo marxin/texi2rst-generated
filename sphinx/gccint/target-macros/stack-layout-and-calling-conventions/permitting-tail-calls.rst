@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _tail-calls:
-
 .. index:: tail calls
+
+.. _tail-calls:
 
 Permitting tail calls
 ^^^^^^^^^^^^^^^^^^^^^
@@ -58,4 +58,3 @@ Permitting tail calls
   of a non-void function.  Return false if no such check should be made.
 
 .. hook-end
-

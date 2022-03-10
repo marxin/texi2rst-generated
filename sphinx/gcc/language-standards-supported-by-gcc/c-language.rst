@@ -3,99 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: C standard
-
-.. index:: C standards
-
-.. index:: ANSI C standard
-
-.. index:: ANSI C
-
-.. index:: ANSI C89
-
-.. index:: C89
-
-.. index:: ANSI X3.159-1989
-
-.. index:: X3.159-1989
-
-.. index:: ISO C standard
-
-.. index:: ISO C
-
-.. index:: ISO C90
-
-.. index:: ISO/IEC 9899
-
-.. index:: ISO 9899
-
-.. index:: C90
-
-.. index:: ISO C94
-
-.. index:: C94
-
-.. index:: ISO C95
-
-.. index:: C95
-
-.. index:: ISO C99
-
-.. index:: C99
-
-.. index:: ISO C9X
-
-.. index:: C9X
-
-.. index:: ISO C11
-
-.. index:: C11
-
-.. index:: ISO C1X
-
-.. index:: C1X
-
-.. index:: ISO C17
-
-.. index:: C17
-
-.. index:: ISO C2X
-
-.. index:: C2X
-
-.. index:: Technical Corrigenda
-
-.. index:: TC1
-
-.. index:: Technical Corrigendum 1
-
-.. index:: TC2
-
-.. index:: Technical Corrigendum 2
-
-.. index:: TC3
-
-.. index:: Technical Corrigendum 3
-
-.. index:: AMD1
-
-.. index:: freestanding implementation
-
-.. index:: freestanding environment
-
-.. index:: hosted implementation
-
-.. index:: hosted environment
-
-.. index:: __STDC_HOSTED__
-
-.. index:: std
-
-.. index:: ansi
-
-.. index:: pedantic
-
-.. index:: pedantic-errors
+.. index:: C standard, C standards, ANSI C standard, ANSI C, ANSI C89, C89, ANSI X3.159-1989, X3.159-1989, ISO C standard, ISO C, ISO C90, ISO/IEC 9899, ISO 9899, C90, ISO C94, C94, ISO C95, C95, ISO C99, C99, ISO C9X, C9X, ISO C11, C11, ISO C1X, C1X, ISO C17, C17, ISO C2X, C2X, Technical Corrigenda, TC1, Technical Corrigendum 1, TC2, Technical Corrigendum 2, TC3, Technical Corrigendum 3, AMD1, freestanding implementation, freestanding environment, hosted implementation, hosted environment, __STDC_HOSTED__, std, ansi, pedantic, pedantic-errors
 
 C Language
 **********
@@ -229,4 +137,3 @@ to ``abort``.
 For references to Technical Corrigenda, Rationale documents and
 information concerning the history of C that is available online, see
 https://gcc.gnu.org/readings.html
-

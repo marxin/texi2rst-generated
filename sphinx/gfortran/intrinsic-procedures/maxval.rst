@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MAXVAL, array, maximum value, maximum value
+
 .. _maxval:
-
-.. index:: MAXVAL
-
-.. index:: array, maximum value
-
-.. index:: maximum value
 
 MAXVAL --- Maximum value of an array
 ************************************
@@ -61,4 +57,3 @@ MAXVAL --- Maximum value of an array
   :samp:`{See also}:`
     :ref:`MAX`, 
     :ref:`MAXLOC`
-

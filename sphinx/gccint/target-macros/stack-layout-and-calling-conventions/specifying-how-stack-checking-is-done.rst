@@ -116,4 +116,3 @@ in the opposite case.
   You need not define this macro if it would always have the value zero.
 
 .. hook-end
-

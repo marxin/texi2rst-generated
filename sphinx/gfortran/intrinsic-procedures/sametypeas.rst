@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _same_type_as:
-
 .. index:: SAME_TYPE_AS
+
+.. _same_type_as:
 
 SAME_TYPE_AS ---  Query dynamic types for equality
 **************************************************
@@ -40,4 +40,3 @@ SAME_TYPE_AS ---  Query dynamic types for equality
 
   :samp:`{See also}:`
     :ref:`EXTENDS_TYPE_OF`
-

@@ -5,9 +5,9 @@
 
 .. program:: ARC
 
-.. _arc-options:
-
 .. index:: ARC options
+
+.. _arc-options:
 
 ARC Options
 ^^^^^^^^^^^
@@ -34,9 +34,7 @@ is being compiled:
   available for backward compatibility and convenience.  Supported
   values for :samp:`{cpu}` are
 
-  .. index:: mA6
-
-  .. index:: mARC600
+  .. index:: mA6, mARC600
 
   :samp:`arc600`
     Compile for ARC600.  Aliases: :option:`-mA6`, :option:`-mARC600`.
@@ -747,4 +745,3 @@ are now deprecated and will be removed in a future release:
 .. option:: -multcost={num}
 
   Replaced by :option:`-mmultcost`.
-

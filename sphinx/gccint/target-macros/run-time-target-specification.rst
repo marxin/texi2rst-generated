@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: run-time target specification, predefined macros, target specifications
+
 .. _run-time-target:
-
-.. index:: run-time target specification
-
-.. index:: predefined macros
-
-.. index:: target specifications
 
 Run-time Target Specification
 *****************************
@@ -80,9 +76,7 @@ any target-specific headers.
   This variable specifies the initial value of ``target_flags``.
   Its default setting is 0.
 
-.. index:: optional hardware or system features
-
-.. index:: features, optional, in system conventions
+.. index:: optional hardware or system features, features, optional, in system conventions
 
 .. function:: bool TARGET_HANDLE_OPTION (struct gcc_options *opts, struct gcc_options *opts_set, const struct cl_decoded_option *decoded, location_t loc)
 
@@ -257,4 +251,3 @@ any target-specific headers.
   does not.
 
 .. hook-end
-

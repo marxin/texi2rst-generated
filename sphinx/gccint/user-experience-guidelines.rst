@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: user experience guidelines, guidelines, user experience
+
 .. _user-experience-guidelines:
-
-.. index:: user experience guidelines
-
-.. index:: guidelines, user experience
 
 User Experience Guidelines
 --------------------------
@@ -30,4 +28,3 @@ command-line options in ways that we hope achieve the above ideal.
 
   guidelines-for-diagnostics
   guidelines-for-options
-

@@ -8,19 +8,7 @@
 IOR --- Bitwise logical or
 **************************
 
-.. index:: IOR
-
-.. index:: BIOR
-
-.. index:: IIOR
-
-.. index:: JIOR
-
-.. index:: KIOR
-
-.. index:: bitwise logical or
-
-.. index:: logical or, bitwise
+.. index:: IOR, BIOR, IIOR, JIOR, KIOR, bitwise logical or, logical or, bitwise
 
 .. function:: IOR(I, J)
 
@@ -71,4 +59,3 @@ IOR --- Bitwise logical or
     :ref:`IBSET`, 
     :ref:`IBCLR`, 
     :ref:`NOT`
-

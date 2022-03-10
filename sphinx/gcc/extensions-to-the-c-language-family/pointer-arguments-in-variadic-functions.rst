@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: pointer arguments in variadic functions, variadic functions, pointer arguments
+
 .. _variadic-pointer-args:
-
-.. index:: pointer arguments in variadic functions
-
-.. index:: variadic functions, pointer arguments
 
 Pointer Arguments in Variadic Functions
 ***************************************
@@ -22,4 +20,3 @@ pointer type.
 
 In particular, in GNU C :samp:`va_arg (ap, void *)` can safely be used
 to consume an argument of any pointer type.
-

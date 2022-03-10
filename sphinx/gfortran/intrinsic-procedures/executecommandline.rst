@@ -8,11 +8,7 @@
 EXECUTE_COMMAND_LINE --- Execute a shell command
 ************************************************
 
-.. index:: EXECUTE_COMMAND_LINE
-
-.. index:: system, system call
-
-.. index:: command line
+.. index:: EXECUTE_COMMAND_LINE, system, system call, command line
 
 .. function:: EXECUTE_COMMAND_LINE(COMMAND, WAIT, EXITSTAT, CMDSTAT, CMDMSG)
 
@@ -74,4 +70,3 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
 
   :samp:`{See also}:`
     :ref:`SYSTEM`
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: misunderstandings in C++, surprises in C++, C++ misunderstandings
+
 .. _c++-misunderstandings:
-
-.. index:: misunderstandings in C++
-
-.. index:: surprises in C++
-
-.. index:: C++ misunderstandings
 
 Common Misunderstandings with GNU C++
 *************************************
@@ -24,15 +20,9 @@ give rise to questions of this sort.
   :maxdepth: 2
 
 
+.. index:: C++ static data, declaring and defining, static data in C++, declaring and defining, declaring static data in C++, defining static data in C++
+
 .. _static-definitions:
-
-.. index:: C++ static data, declaring and defining
-
-.. index:: static data in C++, declaring and defining
-
-.. index:: declaring static data in C++
-
-.. index:: defining static data in C++
 
 Declare and Define Static Members
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -66,13 +56,9 @@ you may discover that a program that appeared to work correctly in fact
 does not conform to the standard: :command:`g++` reports as undefined
 symbols any static data members that lack definitions.
 
+.. index:: base class members, two-stage name lookup, dependent name lookup
+
 .. _name-lookup:
-
-.. index:: base class members
-
-.. index:: two-stage name lookup
-
-.. index:: dependent name lookup
 
 Name Lookup, Templates, and Accessing Members of Base Classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -194,11 +180,9 @@ Note that some compilers (including G++ versions prior to 3.4) get these
 examples wrong and accept above code without an error.  Those compilers
 do not implement two-stage name lookup correctly.
 
+.. index:: temporaries, lifetime of, portions of temporary objects, pointers to
+
 .. _temporaries:
-
-.. index:: temporaries, lifetime of
-
-.. index:: portions of temporary objects, pointers to
 
 Temporaries May Vanish Before You Expect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -310,4 +294,3 @@ If application code relies on copy-assignment, a user-defined
 copy-assignment operator removes any uncertainties.  With such an
 operator, the application can define whether and how the virtual base
 subobject is assigned.
-

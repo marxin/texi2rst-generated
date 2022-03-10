@@ -8,9 +8,7 @@
 ATOMIC_CAS --- Atomic compare and swap
 **************************************
 
-.. index:: ATOMIC_DEFINE
-
-.. index:: Atomic subroutine, compare and swap
+.. index:: ATOMIC_DEFINE, Atomic subroutine, compare and swap
 
 .. function:: ATOMIC_CAS(ATOM, OLD, COMPARE, NEW, STAT)
 
@@ -69,4 +67,3 @@ ATOMIC_CAS --- Atomic compare and swap
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_REF`, 
     :ref:`ISO_FORTRAN_ENV`
-

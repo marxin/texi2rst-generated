@@ -102,4 +102,3 @@ by type.  Explanations are in the following sections.
   :option:`-fno-protect-parens` :option:`-fno-underscoring` :option:`-fsecond-underscore` |gol|
   :option:`-fpack-derived` :option:`-frealloc-lhs` :option:`-frecursive` :option:`-frepack-arrays` |gol|
   :option:`-fshort-enums` :option:`-fstack-arrays`
-

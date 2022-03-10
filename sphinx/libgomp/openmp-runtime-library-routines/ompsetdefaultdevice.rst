@@ -30,4 +30,3 @@ omp_set_default_device -- Set the default device for target regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.29.
-

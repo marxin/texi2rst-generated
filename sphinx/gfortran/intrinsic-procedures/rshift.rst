@@ -8,9 +8,7 @@
 RSHIFT --- Right shift bits
 ***************************
 
-.. index:: RSHIFT
-
-.. index:: bits, shift right
+.. index:: RSHIFT, bits, shift right
 
 .. function:: RSHIFT(I, SHIFT)
 
@@ -51,4 +49,3 @@ RSHIFT --- Right shift bits
     :ref:`SHIFTA`, 
     :ref:`SHIFTR`, 
     :ref:`SHIFTL`
-

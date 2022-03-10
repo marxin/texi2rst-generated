@@ -64,4 +64,3 @@ GIMPLE_ASM
 
   Mark asm statement ``G`` as volatile or non-volatile based on
   ``VOLATILE_P``.
-

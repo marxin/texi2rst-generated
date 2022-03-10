@@ -41,4 +41,3 @@ compatibility with other compilers on those systems:
   .. This is supposed to go with a -Yd for predefined M4 macro files, but
 
   .. the generic assembler that comes with Solaris takes just -Ym.
-

@@ -32,4 +32,3 @@ omp_set_lock -- Wait for and set simple lock
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.
-

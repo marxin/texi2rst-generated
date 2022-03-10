@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options to control diagnostics formatting, diagnostic messages, message formatting
+
 .. _diagnostic-message-formatting-options:
-
-.. index:: options to control diagnostics formatting
-
-.. index:: diagnostic messages
-
-.. index:: message formatting
 
 Options to Control Diagnostic Messages Formatting
 *************************************************
@@ -67,9 +63,7 @@ honor these options.
   prefix) for physical lines that result from the process of breaking
   a message which is too long to fit on a single line.
 
-.. index:: highlight, color
-
-.. index:: GCC_COLORS environment variable
+.. index:: highlight, color, GCC_COLORS environment variable
 
 .. option:: -fdiagnostics-color[={WHEN}]
 
@@ -222,11 +216,7 @@ honor these options.
 
   Default setting; overrides :option:`-fno-diagnostics-color`.
 
-.. index:: urls
-
-.. index:: GCC_URLS environment variable
-
-.. index:: TERM_URLS environment variable
+.. index:: urls, GCC_URLS environment variable, TERM_URLS environment variable
 
 .. option:: -fdiagnostics-urls[={WHEN}]
 
@@ -872,4 +862,3 @@ honor these options.
   Diagnostics have a boolean attribute ``escape-source``, hinting whether
   non-ASCII bytes should be escaped when printing the pertinent lines of
   source code (``true`` for diagnostics involving source encoding issues).
-

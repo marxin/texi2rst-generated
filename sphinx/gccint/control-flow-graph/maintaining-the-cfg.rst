@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _maintaining-the-cfg:
-
 .. index:: cfghooks.h
+
+.. _maintaining-the-cfg:
 
 Maintaining the CFG
 *******************
@@ -123,15 +123,7 @@ head of the basic block.  The CFG hook ``split_block`` may be used
 when an instruction in the middle of a basic block has to become the
 target of a jump or branch instruction.
 
-.. index:: insert_insn_on_edge
-
-.. index:: commit_edge_insertions
-
-.. index:: gsi_insert_on_edge
-
-.. index:: gsi_commit_edge_inserts
-
-.. index:: edge splitting
+.. index:: insert_insn_on_edge, commit_edge_insertions, gsi_insert_on_edge, gsi_commit_edge_inserts, edge splitting
 
 For a global optimizer, a common operation is to split edges in the
 flow graph and insert instructions on them.  In the RTL
@@ -146,11 +138,8 @@ includes the creation of new basic blocks where needed.  In the
 iterator on an edge, and ``gsi_commit_edge_inserts`` which flushes
 the instruction to actual instruction stream.
 
-.. index:: verify_flow_info
-
-.. index:: CFG verification
+.. index:: verify_flow_info, CFG verification
 
 While debugging the optimization pass, the ``verify_flow_info``
 function may be useful to find bugs in the control flow graph updating
 code.
-

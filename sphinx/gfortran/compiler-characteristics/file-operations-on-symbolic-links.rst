@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _file-operations-on-symbolic-links:
-
 .. index:: file, symbolic link
+
+.. _file-operations-on-symbolic-links:
 
 File operations on symbolic links
 *********************************
@@ -26,4 +26,3 @@ symbolic links, on systems that support them.
 * If a symbolic link was connected, using the ``CLOSE`` statement
   with a ``STATUS="DELETE"`` specifier will cause the symbolic link itself
   to be deleted, not its target.
-

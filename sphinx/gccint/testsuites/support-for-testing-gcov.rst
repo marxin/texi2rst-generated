@@ -70,4 +70,3 @@ percentages, and call return percentages.  The command to check a
 line count must appear on the line that will report that count, but
 commands to check branch percentages and call return percentages can
 bracket the lines that report them.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _sequence-iterators:
-
 .. index:: Sequence iterators
+
+.. _sequence-iterators:
 
 Sequence iterators
 ******************
@@ -221,4 +221,3 @@ statement iterators.
 
   This routine will commit all pending edge insertions, creating
   any new basic blocks which are necessary.
-

@@ -119,4 +119,3 @@ Principles of Operation manual chapter 5-91.
   Generates the ``ntstg`` machine instruction.  The second argument
   is written to the first arguments location.  The store operation will
   not be rolled-back in case of an transaction abort.
-

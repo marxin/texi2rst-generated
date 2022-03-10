@@ -5,11 +5,9 @@
 
 .. program:: Nvidia PTX
 
+.. index:: Nvidia PTX options, nvptx options
+
 .. _nvidia-ptx-options:
-
-.. index:: Nvidia PTX options
-
-.. index:: nvptx options
 
 Nvidia PTX Options
 ^^^^^^^^^^^^^^^^^^
@@ -74,4 +72,3 @@ These options are defined for Nvidia PTX:
 
   Generate code for use in OpenMP offloading: enables :option:`-msoft-stack` and
   :option:`-muniform-simt` options, and selects corresponding multilib variant.
-

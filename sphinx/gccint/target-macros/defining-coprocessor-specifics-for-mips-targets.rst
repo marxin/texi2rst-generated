@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _mips-coprocessors:
-
 .. index:: MIPS coprocessor-definition macros
+
+.. _mips-coprocessors:
 
 Defining coprocessor specifics for MIPS targets.
 ************************************************
@@ -33,4 +33,3 @@ later in the function.
 Another note: according to the MIPS spec, coprocessor 1 (if present) is
 the FPU.  One accesses COP1 registers through standard mips
 floating-point support; they are not included in this mechanism.
-

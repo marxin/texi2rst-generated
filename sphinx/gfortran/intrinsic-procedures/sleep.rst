@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SLEEP, delayed execution
+
 .. _sleep:
-
-.. index:: SLEEP
-
-.. index:: delayed execution
 
 SLEEP --- Sleep for the specified number of seconds
 ***************************************************
@@ -38,4 +36,3 @@ SLEEP --- Sleep for the specified number of seconds
       program test_sleep
         call sleep(5)
       end
-

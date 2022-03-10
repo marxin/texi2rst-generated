@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: submodel options, specifying hardware config, hardware models and configurations, specifying, target-dependent options, machine-dependent options
+
 .. _submodel-options:
-
-.. index:: submodel options
-
-.. index:: specifying hardware config
-
-.. index:: hardware models and configurations, specifying
-
-.. index:: target-dependent options
-
-.. index:: machine-dependent options
 
 Machine-Dependent Options
 *************************

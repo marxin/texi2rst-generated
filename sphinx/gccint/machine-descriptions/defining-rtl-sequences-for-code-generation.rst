@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: expander definitions, code generation RTL sequences, defining RTL sequences for code generation
+
 .. _expander-definitions:
-
-.. index:: expander definitions
-
-.. index:: code generation RTL sequences
-
-.. index:: defining RTL sequences for code generation
 
 Defining RTL Sequences for Code Generation
 ******************************************
@@ -206,4 +202,3 @@ then the last insn it generates must not be a ``code_label``,
 at the end, emit an insn to copy the result of the operation into
 itself.  Such an insn will generate no code, but it can avoid problems
 in the compiler.
-

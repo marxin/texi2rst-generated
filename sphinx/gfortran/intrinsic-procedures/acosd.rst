@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ACOSD, DACOSD, trigonometric function, cosine, inverse, degrees, cosine, inverse, degrees
+
 .. _acosd:
-
-.. index:: ACOSD
-
-.. index:: DACOSD
-
-.. index:: trigonometric function, cosine, inverse, degrees
-
-.. index:: cosine, inverse, degrees
 
 ACOSD --- Arccosine function, degrees
 *************************************
@@ -64,4 +58,3 @@ ACOSD --- Arccosine function, degrees
     :ref:`COSD` 
     Radians function: 
     :ref:`ACOS` 
-

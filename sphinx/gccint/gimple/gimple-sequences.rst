@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gimple-sequences:
-
 .. index:: GIMPLE sequences
+
+.. _gimple-sequences:
 
 GIMPLE sequences
 ****************
@@ -92,4 +92,3 @@ Below is a list of functions to manipulate and query sequences.
 .. function:: bool gimple_seq_singleton_p (gimple_seq seq)
 
   Determine whether ``SEQ`` contains exactly one statement.
-

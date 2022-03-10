@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: insn splitting, instruction splitting, splitting instructions
+
 .. _insn-splitting:
-
-.. index:: insn splitting
-
-.. index:: instruction splitting
-
-.. index:: splitting instructions
 
 Defining How to Split Instructions
 **********************************
@@ -376,4 +372,3 @@ would be:
       operands[1] = CONSTM1_RTX (<MODE>mode);
     }
   )
-

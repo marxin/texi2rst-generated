@@ -5,9 +5,9 @@
 
 .. program:: RL78
 
-.. _rl78-options:
-
 .. index:: RL78 Options
+
+.. _rl78-options:
 
 RL78 Options
 ^^^^^^^^^^^^
@@ -89,4 +89,3 @@ RL78 Options
   on the G13 target (S2 core).  The MDUC registers will only be saved
   if the interrupt handler performs a multiplication or division
   operation or it calls another function.
-

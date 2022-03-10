@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _memory-model:
-
 .. index:: memory model
+
+.. _memory-model:
 
 Memory model
 ************
@@ -32,4 +32,3 @@ type to objects with a declared type as required for C++.
   do not modify the value is undetermined.  For all other accesses to an
   object, the effective type of the object is simply the type of the
   lvalue used for the access.
-

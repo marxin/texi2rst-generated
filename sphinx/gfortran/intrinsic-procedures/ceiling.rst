@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: CEILING, ceiling, rounding, ceiling
+
 .. _ceiling:
-
-.. index:: CEILING
-
-.. index:: ceiling
-
-.. index:: rounding, ceiling
 
 CEILING --- Integer ceiling function
 ************************************
@@ -55,4 +51,3 @@ CEILING --- Integer ceiling function
   :samp:`{See also}:`
     :ref:`FLOOR`, 
     :ref:`NINT`
-

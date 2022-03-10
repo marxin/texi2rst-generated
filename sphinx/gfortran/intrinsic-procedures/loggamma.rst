@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LOG_GAMMA, LGAMMA, ALGAMA, DLGAMA, Gamma function, logarithm of
+
 .. _log_gamma:
-
-.. index:: LOG_GAMMA
-
-.. index:: LGAMMA
-
-.. index:: ALGAMA
-
-.. index:: DLGAMA
-
-.. index:: Gamma function, logarithm of
 
 LOG_GAMMA --- Logarithm of the Gamma function
 *********************************************
@@ -63,4 +55,3 @@ LOG_GAMMA --- Logarithm of the Gamma function
   :samp:`{See also}:`
     Gamma function: 
     :ref:`GAMMA`
-

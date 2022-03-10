@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ICHAR, conversion, to integer
+
 .. _ichar:
-
-.. index:: ICHAR
-
-.. index:: conversion, to integer
 
 ICHAR --- Character-to-integer conversion function
 **************************************************
@@ -86,4 +84,3 @@ ICHAR --- Character-to-integer conversion function
     :ref:`ACHAR`, 
     :ref:`CHAR`, 
     :ref:`IACHAR`
-

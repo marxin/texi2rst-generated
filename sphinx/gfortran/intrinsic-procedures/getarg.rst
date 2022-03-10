@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETARG, command-line arguments, arguments, to program
+
 .. _getarg:
-
-.. index:: GETARG
-
-.. index:: command-line arguments
-
-.. index:: arguments, to program
 
 GETARG --- Get command line arguments
 *************************************
@@ -68,4 +64,3 @@ GETARG --- Get command line arguments
     :ref:`GET_COMMAND`, 
     :ref:`GET_COMMAND_ARGUMENT`, 
     :ref:`COMMAND_ARGUMENT_COUNT`
-

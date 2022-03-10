@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: UMASK, file system, file creation mask
+
 .. _umask:
-
-.. index:: UMASK
-
-.. index:: file system, file creation mask
 
 UMASK --- Set the file creation mask
 ************************************
@@ -37,4 +35,3 @@ UMASK --- Set the file creation mask
 
       CALL UMASK(MASK [, OLD])
       OLD = UMASK(MASK)
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BESSEL_JN, BESJN, DBESJN, Bessel function, first kind
+
 .. _bessel_jn:
-
-.. index:: BESSEL_JN
-
-.. index:: BESJN
-
-.. index:: DBESJN
-
-.. index:: Bessel function, first kind
 
 BESSEL_JN --- Bessel function of the first kind
 ***********************************************
@@ -75,4 +69,3 @@ BESSEL_JN --- Bessel function of the first kind
     ``DBESJN(N, X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
                       ``REAL(8) X``
     ================  =============  ===========  =============
-

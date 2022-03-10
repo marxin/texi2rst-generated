@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MAXLOC, array, location of maximum element
+
 .. _maxloc:
-
-.. index:: MAXLOC
-
-.. index:: array, location of maximum element
 
 MAXLOC --- Location of the maximum value within an array
 ********************************************************
@@ -77,4 +75,3 @@ MAXLOC --- Location of the maximum value within an array
     :ref:`FINDLOC`, 
     :ref:`MAX`, 
     :ref:`MAXVAL`
-

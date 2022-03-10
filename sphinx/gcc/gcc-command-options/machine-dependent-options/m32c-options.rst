@@ -5,9 +5,9 @@
 
 .. program:: M32C
 
-.. _m32c-options:
-
 .. index:: M32C options
+
+.. _m32c-options:
 
 M32C Options
 ^^^^^^^^^^^^
@@ -36,4 +36,3 @@ M32C Options
   memory instead of registers.  Note that all modules in a program must
   be compiled with the same value for this option.  Because of that, you
   must not use this option with GCC's default runtime libraries.
-

@@ -297,4 +297,3 @@ for details on what each instruction does.
   a64 __builtin_mips_dpaqx_sa_w_ph (a64, v2q15, v2q15);
   a64 __builtin_mips_dpsqx_s_w_ph (a64, v2q15, v2q15);
   a64 __builtin_mips_dpsqx_sa_w_ph (a64, v2q15, v2q15);
-

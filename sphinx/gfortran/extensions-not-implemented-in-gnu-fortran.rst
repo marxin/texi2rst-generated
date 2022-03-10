@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _extensions-not-implemented-in-gnu-fortran:
-
 .. index:: extensions, not implemented
+
+.. _extensions-not-implemented-in-gnu-fortran:
 
 Extensions not implemented in GNU Fortran
 *****************************************
@@ -28,11 +28,9 @@ code that uses them running with the GNU Fortran compiler.
   :maxdepth: 2
 
 
+.. index:: ENCODE, DECODE
+
 .. _encode-and-decode-statements:
-
-.. index:: ENCODE
-
-.. index:: DECODE
 
 ENCODE and DECODE statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,9 +79,9 @@ with the following:
         WRITE (UNIT=LINE, FMT=9000) A, B, C
    9000 FORMAT (1X, 'OUTPUT IS ', 3(F10.5))
 
-.. _variable-format-expressions:
-
 .. index:: FORMAT
+
+.. _variable-format-expressions:
 
 Variable FORMAT expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,9 +122,9 @@ or with:
         WRITE(FMT,*) N+1
         WRITE(6,"(I" // ADJUSTL(FMT) // ")") INT1
 
-.. _alternate-complex-function-syntax:
-
 .. index:: Complex function
+
+.. _alternate-complex-function-syntax:
 
 Alternate complex function syntax
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -137,11 +135,9 @@ well as ``COMPLEX*16 FUNCTION name()``.  Both are non-standard, legacy
 extensions.  :command:`gfortran` accepts the latter form, which is more
 common, but not the former.
 
+.. index:: VOLATILE, COMMON
+
 .. _volatile-common-blocks:
-
-.. index:: VOLATILE
-
-.. index:: COMMON
 
 Volatile COMMON blocks
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -152,9 +148,9 @@ invalid standard Fortran syntax and is not supported by
 :command:`gfortran`.  Note that :command:`gfortran` accepts
 ``VOLATILE`` variables in ``COMMON`` blocks since revision 4.3.
 
-.. _open(-...-name=):
-
 .. index:: NAME
+
+.. _open(-...-name=):
 
 OPEN( ... NAME=)
 ^^^^^^^^^^^^^^^^
@@ -165,9 +161,9 @@ invalid standard Fortran syntax and is not supported by
 :command:`gfortran`.  ``OPEN( ... NAME=)`` should be replaced
 with ``OPEN( ... FILE=)``.
 
-.. _q-edit-descriptor:
-
 .. index:: Q edit descriptor
+
+.. _q-edit-descriptor:
 
 Q edit descriptor
 ^^^^^^^^^^^^^^^^^

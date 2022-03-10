@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COMPLEX, complex numbers, conversion to, conversion, to complex
+
 .. _complex:
-
-.. index:: COMPLEX
-
-.. index:: complex numbers, conversion to
-
-.. index:: conversion, to complex
 
 COMPLEX --- Complex conversion function
 ***************************************
@@ -54,4 +50,3 @@ COMPLEX --- Complex conversion function
 
   :samp:`{See also}:`
     :ref:`CMPLX`
-

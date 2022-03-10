@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DBLE, conversion, to real
+
 .. _dble:
-
-.. index:: DBLE
-
-.. index:: conversion, to real
 
 DBLE --- Double conversion function
 ***********************************
@@ -48,4 +46,3 @@ DBLE --- Double conversion function
 
   :samp:`{See also}:`
     :ref:`REAL`
-

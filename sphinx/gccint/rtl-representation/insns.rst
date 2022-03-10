@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _insns:
-
 .. index:: insns
+
+.. _insns:
 
 Insns
 *****
@@ -45,9 +45,7 @@ always used:
   Accesses the chain pointer to the insn following :samp:`{i}`.
   If :samp:`{i}` is the last insn, this is a null pointer.
 
-.. index:: get_insns
-
-.. index:: get_last_insn
+.. index:: get_insns, get_last_insn
 
 The first insn in the chain is obtained by calling ``get_insns`` ; the
 last insn is the result of calling ``get_last_insn``.  Within the
@@ -154,9 +152,7 @@ Every insn has one of the following expression codes:
   look like a no-op if the same register holds the argument and the return
   value.
 
-  .. index:: code_label
-
-  .. index:: CODE_LABEL_NUMBER
+  .. index:: code_label, CODE_LABEL_NUMBER
 
 ``code_label``
   A ``code_label`` insn represents a label that a jump insn can jump
@@ -181,13 +177,7 @@ Every insn has one of the following expression codes:
   phase is completed.  It contains the number of times this label is
   referenced in the current function.
 
-  .. index:: LABEL_KIND
-
-  .. index:: SET_LABEL_KIND
-
-  .. index:: LABEL_ALT_ENTRY_P
-
-  .. index:: alternate entry points
+  .. index:: LABEL_KIND, SET_LABEL_KIND, LABEL_ALT_ENTRY_P, alternate entry points
 
   The field ``LABEL_KIND`` differentiates four different types of
   labels: ``LABEL_NORMAL``, ``LABEL_STATIC_ENTRY``,
@@ -231,11 +221,7 @@ Every insn has one of the following expression codes:
   ``volatile`` functions, which do not return (e.g., ``exit``).
   They contain no information beyond the three standard fields.
 
-  .. index:: note
-
-  .. index:: NOTE_LINE_NUMBER
-
-  .. index:: NOTE_SOURCE_FILE
+  .. index:: note, NOTE_LINE_NUMBER, NOTE_SOURCE_FILE
 
 ``note``
   ``note`` insns are used to represent additional debugging and
@@ -306,9 +292,7 @@ Every insn has one of the following expression codes:
 
   These codes are printed symbolically when they appear in debugging dumps.
 
-  .. index:: debug_insn
-
-  .. index:: INSN_VAR_LOCATION
+  .. index:: debug_insn, INSN_VAR_LOCATION
 
 ``debug_insn``
   The expression code ``debug_insn`` is used for pseudo-instructions
@@ -356,11 +340,7 @@ Every insn has one of the following expression codes:
   tracking pass would emit another location note for the variable at the
   point in which the register is modified.
 
-.. index:: TImode, in insn
-
-.. index:: HImode, in insn
-
-.. index:: QImode, in insn
+.. index:: TImode, in insn, HImode, in insn, QImode, in insn
 
 The machine mode of an insn is normally ``VOIDmode``, but some
 phases use the mode for various purposes.
@@ -428,9 +408,7 @@ in a register note is really understood as being an ``enum reg_note``.
 The first operand :samp:`{op}` of the note is data whose meaning depends on
 the kind of note.
 
-.. index:: REG_NOTE_KIND
-
-.. index:: PUT_REG_NOTE_KIND
+.. index:: REG_NOTE_KIND, PUT_REG_NOTE_KIND
 
 The macro ``REG_NOTE_KIND (x)`` returns the kind of
 register note.  Its counterpart, the macro ``PUT_REG_NOTE_KIND
@@ -506,9 +484,7 @@ These register notes annotate inputs to an insn:
 
 The following notes describe attributes of outputs of an insn:
 
-.. index:: REG_EQUIV
-
-.. index:: REG_EQUAL
+.. index:: REG_EQUIV, REG_EQUAL
 
 .. envvar:: REG_EQUIV
 
@@ -639,13 +615,10 @@ field of an insn.
 For convenience, the machine mode in an ``insn_list`` or
 ``expr_list`` is printed using these symbolic codes in debugging dumps.
 
-.. index:: insn_list
-
-.. index:: expr_list
+.. index:: insn_list, expr_list
 
 The only difference between the expression codes ``insn_list`` and
 ``expr_list`` is that the first operand of an ``insn_list`` is
 assumed to be an insn and is printed in debugging dumps as the insn's
 unique id; the first operand of an ``expr_list`` is printed in the
 ordinary way as an expression.
-

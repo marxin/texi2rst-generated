@@ -5,9 +5,9 @@
 
 .. program:: AArch64
 
-.. _aarch64-options:
-
 .. index:: AArch64 Options
+
+.. _aarch64-options:
 
 AArch64 Options
 ^^^^^^^^^^^^^^^
@@ -361,9 +361,7 @@ These options are defined for AArch64 implementations:
 -march and -mcpu Feature Modifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. index:: -march feature modifiers
-
-.. index:: -mcpu feature modifiers
+.. index:: -march feature modifiers, -mcpu feature modifiers
 
 Feature modifiers used with :option:`-march` and :option:`-mcpu` can be any of
 the following and their inverses no :samp:`{feature}` :

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: interoperability with C, C interoperability
+
 .. _interoperability-with-c:
-
-.. index:: interoperability with C
-
-.. index:: C interoperability
 
 Interoperability with C
 ***********************
@@ -32,13 +30,9 @@ C always start with index 0 while in Fortran they start by default with
 ``A[j-1][i-1]``.  The element following ``A(i,j)`` (C: ``A[j-1][i-1]`` ;
 assuming i < n) in memory is ``A(i+1,j)`` (C: ``A[j-1][i]``).
 
+.. index:: C intrinsic type interoperability, intrinsic type interoperability with C, interoperability, intrinsic type
+
 .. _intrinsic-types:
-
-.. index:: C intrinsic type interoperability
-
-.. index:: intrinsic type interoperability with C
-
-.. index:: interoperability, intrinsic type
 
 Intrinsic Types
 ^^^^^^^^^^^^^^^
@@ -58,13 +52,9 @@ the value 0.  Using any other integer value with GNU Fortran's ``LOGICAL``
 values than 0 and 1 to GCC's ``_Bool`` is also undefined, unless the
 integer is explicitly or implicitly casted to ``_Bool``.)
 
+.. index:: C derived type and struct interoperability, derived type interoperability with C, interoperability, derived type and struct
+
 .. _derived-types-and-struct:
-
-.. index:: C derived type and struct interoperability
-
-.. index:: derived type interoperability with C
-
-.. index:: interoperability, derived type and struct
 
 Derived Types and struct
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -106,13 +96,9 @@ components are irrelevant for interoperability.
 As there exist no direct Fortran equivalents, neither unions nor structs
 with bit field or variable-length array members are interoperable.
 
+.. index:: C variable interoperability, variable interoperability with C, interoperability, variable
+
 .. _interoperable-global-variables:
-
-.. index:: C variable interoperability
-
-.. index:: variable interoperability with C
-
-.. index:: interoperability, variable
 
 Interoperable Global Variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -141,17 +127,9 @@ double colon.  Note of warning: You cannot use a global variable to
 access :samp:`{errno}` of the C library as the C standard allows it to be
 a macro.  Use the ``IERRNO`` intrinsic (GNU extension) instead.
 
+.. index:: C procedure interoperability, procedure interoperability with C, function interoperability with C, subroutine interoperability with C, interoperability, subroutine and function
+
 .. _interoperable-subroutines-and-functions:
-
-.. index:: C procedure interoperability
-
-.. index:: procedure interoperability with C
-
-.. index:: function interoperability with C
-
-.. index:: subroutine interoperability with C
-
-.. index:: interoperability, subroutine and function
 
 Interoperable Subroutines and Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -251,11 +229,9 @@ example, we ignore the return value:
 
 The intrinsic procedures are described in :ref:`intrinsic-procedures`.
 
+.. index:: C pointers, pointers, C
+
 .. _working-with-c-pointers:
-
-.. index:: C pointers
-
-.. index:: pointers, C
 
 Working with C Pointers
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -410,19 +386,9 @@ It can be used as in the following Fortran code:
 
   END MODULE m
 
+.. index:: Further Interoperability of Fortran with C, TS 29113, array descriptor, dope vector, assumed-type, assumed-rank
+
 .. _further-interoperability-of-fortran-with-c:
-
-.. index:: Further Interoperability of Fortran with C
-
-.. index:: TS 29113
-
-.. index:: array descriptor
-
-.. index:: dope vector
-
-.. index:: assumed-type
-
-.. index:: assumed-rank
 
 Further Interoperability of Fortran with C
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -445,4 +411,3 @@ an array descriptor with different fields in functions without the
 are converted to the specified form.  If you need to access GNU Fortran's
 internal array descriptor, you can use the Chasm Language Interoperability
 Tools, http://chasm-interop.sourceforge.net/.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: C_F_PROCPOINTER, pointer, C address of pointers
+
 .. _c_f_procpointer:
-
-.. index:: C_F_PROCPOINTER
-
-.. index:: pointer, C address of pointers
 
 C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
 ************************************************************
@@ -66,4 +64,3 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
   :samp:`{See also}:`
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`
-

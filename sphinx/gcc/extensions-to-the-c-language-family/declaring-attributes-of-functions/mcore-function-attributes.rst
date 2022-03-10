@@ -22,4 +22,3 @@ These function attributes are supported by the MCORE back end:
   (see :ref:`basic-asm`). While using extended ``asm`` or a mixture of
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
-

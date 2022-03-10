@@ -8,9 +8,7 @@
 ALARM --- Execute a routine after a given delay
 ***********************************************
 
-.. index:: ALARM
-
-.. index:: delayed execution
+.. index:: ALARM, delayed execution
 
 .. function:: ALARM(SECONDS, HANDLER, STATUS)
 
@@ -61,4 +59,3 @@ ALARM --- Execute a routine after a given delay
 
     This will cause the external routine :samp:`{handler_print}` to be called
     after 3 seconds.
-

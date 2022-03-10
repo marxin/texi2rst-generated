@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _lexing-a-line:
-
 .. index:: token run
+
+.. _lexing-a-line:
 
 Lexing a line
 *************
@@ -89,4 +89,3 @@ failed conditional blocks, and invalidates the control macro of the
 multiple-include optimization if a token was successfully lexed outside
 a directive.  In other words, its callers do not need to concern
 themselves with such issues.
-

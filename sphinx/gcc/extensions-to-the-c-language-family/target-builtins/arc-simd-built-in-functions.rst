@@ -241,4 +241,3 @@ indicating one the registers I0-I7, and the fourth argument must be an
 
   void __builtin_arc_vst16_n (__v8hi, const int, const int, const int);
   void __builtin_arc_vst32_n (__v8hi, const int, const int, const int);
-

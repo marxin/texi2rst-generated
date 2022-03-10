@@ -5,9 +5,9 @@
 
 .. program:: NDS32
 
-.. _nds32-options:
-
 .. index:: NDS32 Options
+
+.. _nds32-options:
 
 NDS32 Options
 ^^^^^^^^^^^^^
@@ -114,4 +114,3 @@ These options are defined for NDS32 implementations:
 .. option:: -mrelax
 
   Guide linker to relax instructions.
-

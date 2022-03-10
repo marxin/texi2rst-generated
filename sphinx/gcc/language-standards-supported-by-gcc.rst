@@ -21,4 +21,3 @@ with some exceptions, and possibly with some extensions.
   language-standards-supported-by-gcc/go-language
   language-standards-supported-by-gcc/d-language
   language-standards-supported-by-gcc/references-for-other-languages
-

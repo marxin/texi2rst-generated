@@ -224,4 +224,3 @@ built-in functions also become available:
   long __builtin_vis_fpcmpur8shl (v8qi, v8qi, int);
   long __builtin_vis_fpcmpur16shl (v4hi, v4hi, int);
   long __builtin_vis_fpcmpur32shl (v2si, v2si, int);
-

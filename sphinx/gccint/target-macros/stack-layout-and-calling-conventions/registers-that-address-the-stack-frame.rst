@@ -120,11 +120,7 @@ This discusses registers that address the stack frame.
   from the stack pointer and the ``mem`` expression as seen by the callee
   will be at an offset from the frame pointer.
 
-  .. index:: stack_pointer_rtx
-
-  .. index:: frame_pointer_rtx
-
-  .. index:: arg_pointer_rtx
+  .. index:: stack_pointer_rtx, frame_pointer_rtx, arg_pointer_rtx
 
   The variables ``stack_pointer_rtx``, ``frame_pointer_rtx``, and
   ``arg_pointer_rtx`` will have been initialized and should be used
@@ -200,4 +196,3 @@ This discusses registers that address the stack frame.
   values need to be computed lazily on demand by the unwinder (such as when
   referenced in a CFA expression).  The macro returns true if :samp:`{regno}`
   is such a register and stores its value in :samp:`*{value}` if so.
-

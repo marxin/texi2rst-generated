@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LBOUND, array, lower bound
+
 .. _lbound:
-
-.. index:: LBOUND
-
-.. index:: array, lower bound
 
 LBOUND --- Lower dimension bounds of an array
 *********************************************
@@ -52,4 +50,3 @@ LBOUND --- Lower dimension bounds of an array
   :samp:`{See also}:`
     :ref:`UBOUND`, 
     :ref:`LCOBOUND`
-

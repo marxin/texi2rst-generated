@@ -8,11 +8,7 @@
 CTIME --- Convert a time into a string
 **************************************
 
-.. index:: CTIME
-
-.. index:: time, conversion to string
-
-.. index:: conversion, to string
+.. index:: CTIME, time, conversion to string, conversion, to string
 
 .. function:: CTIME(TIME, RESULT)
 
@@ -66,4 +62,3 @@ CTIME --- Convert a time into a string
     :ref:`LTIME`, 
     :ref:`TIME`, 
     :ref:`TIME8`
-

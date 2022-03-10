@@ -43,4 +43,3 @@ GIMPLE_EH_FILTER
 .. function:: void gimple_eh_must_not_throw_set_fndecl ( geh_mnt *eh_mnt_stmt, tree decl)
 
   Set the function decl to be called by GS to DECL.
-

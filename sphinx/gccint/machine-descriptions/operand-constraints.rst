@@ -7,11 +7,9 @@
    when the INTERNALS flag is clear.  Passages that require the internals
    manual's context are conditionalized to appear only in the internals manual.
 
+.. index:: operand constraints, constraints
+
 .. _constraints:
-
-.. index:: operand constraints
-
-.. index:: constraints
 
 Operand Constraints
 *******************
@@ -38,9 +36,9 @@ the addressing register.
 .. include:: ../../share/md.rst
 
 
-.. _disable-insn-alternatives:
-
 .. index:: enabled
+
+.. _disable-insn-alternatives:
 
 Disable insn alternatives using the enabled attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -134,11 +132,9 @@ with the ``enabled`` attribute defined like this:
            (const_int 1)]
           (const_int 0)))
 
+.. index:: defining constraints, constraints, defining
+
 .. _define-constraints:
-
-.. index:: defining constraints
-
-.. index:: constraints, defining
 
 Defining Machine-Specific Constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -336,11 +332,9 @@ beginning of a docstring, then (in the future) it will appear only in
 the internals manual's version of the machine-specific constraint tables.
 Use this for constraints that should not appear in ``asm`` statements.
 
+.. index:: testing constraints, constraints, testing
+
 .. _c-constraint-interface:
-
-.. index:: testing constraints
-
-.. index:: constraints, testing
 
 Testing constraints from C
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -430,4 +424,3 @@ definition from the i386 machine description.)
      (set (match_dup 0) (mult:SI (match_dup 3) (match_dup 2)))]
 
     "")
-

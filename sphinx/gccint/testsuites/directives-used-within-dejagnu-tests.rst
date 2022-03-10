@@ -17,4 +17,3 @@ Directives used within DejaGnu tests
   directives-used-within-dejagnu-tests/features-for-dg-add-options
   directives-used-within-dejagnu-tests/variants-of-dg-require-support
   directives-used-within-dejagnu-tests/commands-for-use-in-dg-final
-

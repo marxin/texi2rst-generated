@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: pointers to arrays, const qualifier
+
 .. _pointers-to-arrays:
-
-.. index:: pointers to arrays
-
-.. index:: const qualifier
 
 Pointers to Arrays with Qualifiers Work as Expected
 ***************************************************
@@ -27,4 +25,3 @@ array itself.
   double y[2][3];
   ...
   transpose(3, 2, y, x);
-

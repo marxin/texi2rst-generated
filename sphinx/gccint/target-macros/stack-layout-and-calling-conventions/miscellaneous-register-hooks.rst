@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _miscellaneous-register-hooks:
-
 .. index:: miscellaneous register hooks
+
+.. _miscellaneous-register-hooks:
 
 Miscellaneous register hooks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -24,4 +24,3 @@ Miscellaneous register hooks
   is to enable the fipa-ra optimization.
 
 .. hook-end
-

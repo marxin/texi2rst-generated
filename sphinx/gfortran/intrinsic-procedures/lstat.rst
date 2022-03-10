@@ -8,9 +8,7 @@
 LSTAT --- Get file status
 *************************
 
-.. index:: LSTAT
-
-.. index:: file system, file status
+.. index:: LSTAT, file system, file status
 
 .. function:: LSTAT(NAME, VALUES, STATUS)
 
@@ -50,4 +48,3 @@ LSTAT --- Get file status
     :ref:`FSTAT` 
     To stat a file: 
     :ref:`STAT`
-

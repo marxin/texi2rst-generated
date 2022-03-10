@@ -5,9 +5,9 @@
 
 .. program:: FT32
 
-.. _ft32-options:
-
 .. index:: FT32 Options
+
+.. _ft32-options:
 
 FT32 Options
 ^^^^^^^^^^^^
@@ -42,4 +42,3 @@ These options are defined specifically for the FT32 port.
 .. option:: -mnopm
 
   Do not generate code that reads program memory.
-

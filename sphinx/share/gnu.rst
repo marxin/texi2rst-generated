@@ -22,4 +22,3 @@ For more information, see:
 
   https://www.gnu.org/
   https://www.gnu.org/gnu/linux-and-gnu.html
-

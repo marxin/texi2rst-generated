@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: attribute of variables, variable attributes
+
 .. _variable-attributes:
-
-.. index:: attribute of variables
-
-.. index:: variable attributes
 
 Specifying Attributes of Variables
 **********************************
@@ -225,9 +223,7 @@ The following attributes are supported on most targets.
   It is undefined what happens if :samp:`{cleanup_function}` does not
   return normally.
 
-.. index:: common variable attribute
-
-.. index:: nocommon variable attribute
+.. index:: common variable attribute, nocommon variable attribute
 
 .. option:: common, nocommon
 
@@ -771,11 +767,7 @@ Blackfin Variable Attributes
 
 Three attributes are currently defined for the Blackfin.
 
-.. index:: l1_data variable attribute, Blackfin
-
-.. index:: l1_data_A variable attribute, Blackfin
-
-.. index:: l1_data_B variable attribute, Blackfin
+.. index:: l1_data variable attribute, Blackfin, l1_data_A variable attribute, Blackfin, l1_data_B variable attribute, Blackfin
 
 .. gcc-attr:: l1_data, l1_data_A, l1_data_B
 
@@ -800,9 +792,7 @@ H8/300 Variable Attributes
 
 These variable attributes are available for H8/300 targets:
 
-.. index:: eightbit_data variable attribute, H8/300
-
-.. index:: eight-bit data on the H8/300, H8/300H, and H8S
+.. index:: eightbit_data variable attribute, H8/300, eight-bit data on the H8/300, H8/300H, and H8S
 
 .. gcc-attr:: eightbit_data
 
@@ -815,9 +805,7 @@ These variable attributes are available for H8/300 targets:
   You must use GAS and GLD from GNU binutils version 2.7 or later for
   this attribute to work correctly.
 
-.. index:: tiny_data variable attribute, H8/300
-
-.. index:: tiny data section on the H8/300H and H8S
+.. index:: tiny_data variable attribute, H8/300, tiny data section on the H8/300H and H8S
 
 .. gcc-attr:: tiny_data
 
@@ -853,9 +841,7 @@ M32R/D Variable Attributes
 
 One attribute is currently defined for the M32R/D.
 
-.. index:: model-name variable attribute, M32R/D
-
-.. index:: variable addressability on the M32R/D
+.. index:: model-name variable attribute, M32R/D, variable addressability on the M32R/D
 
 .. gcc-attr:: model (model-name)
 
@@ -949,9 +935,7 @@ You can use these attributes on Microsoft Windows targets.
 :ref:`x86-variable-attributes` for additional Windows compatibility
 attributes available on all x86 targets.
 
-.. index:: dllimport variable attribute
-
-.. index:: dllexport variable attribute
+.. index:: dllimport variable attribute, dllexport variable attribute
 
 .. gcc-attr:: dllimport, dllexport
 
@@ -1014,9 +998,7 @@ attributes available on all x86 targets.
 MSP430 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. index:: upper variable attribute, MSP430
-
-.. index:: either variable attribute, MSP430
+.. index:: upper variable attribute, MSP430, either variable attribute, MSP430
 
 .. gcc-attr:: upper, either
 
@@ -1066,9 +1048,7 @@ PowerPC Variable Attributes
 Three attributes currently are defined for PowerPC configurations:
 ``altivec``, :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. index:: ms_struct variable attribute, PowerPC
-
-.. index:: gcc_struct variable attribute, PowerPC
+.. index:: ms_struct variable attribute, PowerPC, gcc_struct variable attribute, PowerPC
 
 For full documentation of the struct attributes please see the
 documentation in :ref:`x86-variable-attributes`.
@@ -1078,9 +1058,9 @@ documentation in :ref:`x86-variable-attributes`.
 For documentation of ``altivec`` attribute please see the
 documentation in :ref:`powerpc-type-attributes`.
 
-.. _rl78-variable-attributes:
-
 .. index:: saddr variable attribute, RL78
+
+.. _rl78-variable-attributes:
 
 RL78 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1125,9 +1105,7 @@ x86 Variable Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. index:: ms_struct variable attribute, x86
-
-.. index:: gcc_struct variable attribute, x86
+.. index:: ms_struct variable attribute, x86, gcc_struct variable attribute, x86
 
 .. gcc-attr:: ms_struct, gcc_struct
 
@@ -1162,4 +1140,3 @@ One attribute is currently defined for xstormy16 configurations:
   memory and use special opcodes to access it.  Such variables are
   placed in either the ``.bss_below100`` section or the
   ``.data_below100`` section.
-

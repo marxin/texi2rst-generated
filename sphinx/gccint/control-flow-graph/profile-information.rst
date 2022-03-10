@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _profile-information:
-
 .. index:: profile representation
+
+.. _profile-information:
 
 Profile information
 *******************
@@ -31,11 +31,7 @@ course depends on the choice of train data set, but several studies
 have shown that the behavior of a program usually changes just
 marginally over different data sets.
 
-.. index:: Static profile estimation
-
-.. index:: branch prediction
-
-.. index:: predict.def
+.. index:: Static profile estimation, branch prediction, predict.def
 
 When profile feedback is not available, the compiler may be asked to
 attempt to predict the behavior of each branch in the program using a
@@ -114,4 +110,3 @@ It is important to point out that ``REG_BR_PROB_BASE`` and
 second power of any frequency or probability in the flow graph, it is
 not possible to even square the ``count`` field, as modern CPUs are
 fast enough to execute $2^32$ operations quickly.
-

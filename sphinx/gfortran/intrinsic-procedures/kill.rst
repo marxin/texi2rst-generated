@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _kill:
-
 .. index:: KILL
+
+.. _kill:
 
 KILL --- Send a signal to a process
 ***********************************
@@ -50,4 +50,3 @@ KILL --- Send a signal to a process
   :samp:`{See also}:`
     :ref:`ABORT`, 
     :ref:`EXIT`
-

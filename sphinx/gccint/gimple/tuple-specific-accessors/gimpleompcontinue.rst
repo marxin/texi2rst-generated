@@ -41,4 +41,3 @@ GIMPLE_OMP_CONTINUE
 
   Set the control variable use for a ``GIMPLE_OMP_CONTINUE`` statement
   in ``S``.
-

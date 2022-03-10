@@ -10,9 +10,7 @@ SH Function Attributes
 
 These function attributes are supported on the SH family of processors:
 
-.. index:: function_vector function attribute, SH
-
-.. index:: calling functions through the function vector on SH2A
+.. index:: function_vector function attribute, SH, calling functions through the function vector on SH2A
 
 .. gcc-attr:: function_vector
 
@@ -101,4 +99,3 @@ These function attributes are supported on the SH family of processors:
 
   On SH targets this function attribute is similar to :gcc-attr:`interrupt_handler`
   but it does not save and restore all registers.
-

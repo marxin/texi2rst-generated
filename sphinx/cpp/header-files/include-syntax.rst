@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _include-syntax:
-
 .. index:: #include
+
+.. _include-syntax:
 
 Include Syntax
 **************
@@ -40,4 +40,3 @@ to use only :samp:`/`.)
 
 It is an error if there is anything (other than comments) on the line
 after the file name.
-

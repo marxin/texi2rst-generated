@@ -12,4 +12,3 @@ Implementing ORDERED construct
 
     void GOMP_ordered_start (void)
     void GOMP_ordered_end (void)
-

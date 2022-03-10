@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: variable-length arrays, arrays of variable length, VLAs
+
 .. _variable-length:
-
-.. index:: variable-length arrays
-
-.. index:: arrays of variable length
-
-.. index:: VLAs
 
 Arrays of Variable Length
 *************************
@@ -33,11 +29,7 @@ example:
     return fopen (str, mode);
   }
 
-.. index:: scope of a variable length array
-
-.. index:: variable-length array scope
-
-.. index:: deallocating variable length arrays
+.. index:: scope of a variable length array, variable-length array scope, deallocating variable length arrays
 
 Jumping or breaking out of the scope of the array name deallocates the
 storage.  Jumping into the scope is not allowed; you get an error
@@ -105,4 +97,3 @@ last one must end with a semicolon, which is followed by the 'real'
 parameter declarations.  Each forward declaration must match a 'real'
 declaration in parameter name and data type.  ISO C99 does not support
 parameter forward declarations.
-

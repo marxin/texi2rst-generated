@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IANY, array, OR, bits, OR of array elements
+
 .. _iany:
-
-.. index:: IANY
-
-.. index:: array, OR
-
-.. index:: bits, OR of array elements
 
 IANY --- Bitwise OR of array elements
 *************************************
@@ -65,4 +61,3 @@ IANY --- Bitwise OR of array elements
     :ref:`IPARITY`, 
     :ref:`IALL`, 
     :ref:`IOR`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: PRECISION, model representation, precision
+
 .. _precision:
-
-.. index:: PRECISION
-
-.. index:: model representation, precision
 
 PRECISION --- Decimal precision of a real kind
 **********************************************
@@ -52,4 +50,3 @@ PRECISION --- Decimal precision of a real kind
   :samp:`{See also}:`
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`RANGE`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL register expressions, RTL memory expressions
+
 .. _regs-and-memory:
-
-.. index:: RTL register expressions
-
-.. index:: RTL memory expressions
 
 Registers and Memory
 ********************
@@ -15,11 +13,7 @@ Registers and Memory
 Here are the RTL expression types for describing access to machine
 registers and to main memory.
 
-.. index:: reg
-
-.. index:: hard registers
-
-.. index:: pseudo registers
+.. index:: reg, hard registers, pseudo registers
 
 :samp:`(reg:{m} {n})`
   For small values of the integer :samp:`{n}` (those that are less than
@@ -63,9 +57,7 @@ registers and to main memory.
   Each pseudo register number used in a function's RTL code is
   represented by a unique ``reg`` expression.
 
-  .. index:: FIRST_VIRTUAL_REGISTER
-
-  .. index:: LAST_VIRTUAL_REGISTER
+  .. index:: FIRST_VIRTUAL_REGISTER, LAST_VIRTUAL_REGISTER
 
   Some pseudo register numbers, those within the range of
   ``FIRST_VIRTUAL_REGISTER`` to ``LAST_VIRTUAL_REGISTER`` only
@@ -83,9 +75,7 @@ registers and to main memory.
     callee may have pushed some arguments that were previously passed in
     registers.
 
-    .. index:: FIRST_PARM_OFFSET and virtual registers
-
-    .. index:: ARG_POINTER_REGNUM and virtual registers
+    .. index:: FIRST_PARM_OFFSET and virtual registers, ARG_POINTER_REGNUM and virtual registers
 
     When RTL generation is complete, this virtual register is replaced
     by the sum of the register given by ``ARG_POINTER_REGNUM`` and the
@@ -99,9 +89,7 @@ registers and to main memory.
     to immediately above the first variable on the stack.  Otherwise, it points
     to the first variable on the stack.
 
-    .. index:: TARGET_STARTING_FRAME_OFFSET and virtual registers
-
-    .. index:: FRAME_POINTER_REGNUM and virtual registers
+    .. index:: TARGET_STARTING_FRAME_OFFSET and virtual registers, FRAME_POINTER_REGNUM and virtual registers
 
     ``VIRTUAL_STACK_VARS_REGNUM`` is replaced with the sum of the
     register given by ``FRAME_POINTER_REGNUM`` and the value
@@ -113,9 +101,7 @@ registers and to main memory.
     immediately after the stack pointer has been adjusted by the amount of
     memory desired.
 
-    .. index:: STACK_DYNAMIC_OFFSET and virtual registers
-
-    .. index:: STACK_POINTER_REGNUM and virtual registers
+    .. index:: STACK_DYNAMIC_OFFSET and virtual registers, STACK_POINTER_REGNUM and virtual registers
 
     This virtual register is replaced by the sum of the register given by
     ``STACK_POINTER_REGNUM`` and the value ``STACK_DYNAMIC_OFFSET``.
@@ -383,9 +369,7 @@ registers and to main memory.
   ``subreg`` would be paradoxical when :samp:`{n}` is 1 but not when
   :samp:`{n}` is greater than 1.
 
-  .. index:: SUBREG_REG
-
-  .. index:: SUBREG_BYTE
+  .. index:: SUBREG_REG, SUBREG_BYTE
 
   The first operand of a ``subreg`` expression is customarily accessed
   with the ``SUBREG_REG`` macro and the second operand is customarily
@@ -396,9 +380,7 @@ registers and to main memory.
   been tested.  Anyone wishing to support such a platform in the future
   may be confronted with code rot.
 
-  .. index:: scratch
-
-  .. index:: scratch operands
+  .. index:: scratch, scratch operands
 
 :samp:`(scratch:{m})`
   This represents a scratch register that will be required for the
@@ -467,4 +449,3 @@ registers and to main memory.
   This RTX represents the concatenation of all the :samp:`{rtx}` to make a
   single value.  Like ``concat``, this should only appear in
   declarations, and not in the insn chain.
-

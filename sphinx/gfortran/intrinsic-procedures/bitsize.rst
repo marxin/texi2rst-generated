@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BIT_SIZE, bits, number of, size of a variable, in bits
+
 .. _bit_size:
-
-.. index:: BIT_SIZE
-
-.. index:: bits, number of
-
-.. index:: size of a variable, in bits
 
 BIT_SIZE --- Bit size inquiry function
 **************************************
@@ -48,4 +44,3 @@ BIT_SIZE --- Bit size inquiry function
           size = bit_size(i)
           print *, size
       end program test_bit_size
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MERGE, array, merge arrays, array, combine arrays
+
 .. _merge:
-
-.. index:: MERGE
-
-.. index:: array, merge arrays
-
-.. index:: array, combine arrays
 
 MERGE --- Merge variables
 *************************
@@ -44,4 +40,3 @@ MERGE --- Merge variables
     .. code-block:: fortran
 
       RESULT = MERGE(TSOURCE, FSOURCE, MASK)
-

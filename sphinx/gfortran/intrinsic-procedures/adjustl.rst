@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ADJUSTL, string, adjust left, adjust string
+
 .. _adjustl:
-
-.. index:: ADJUSTL
-
-.. index:: string, adjust left
-
-.. index:: adjust string
 
 ADJUSTL --- Left adjust a string 
 *********************************
@@ -52,4 +48,3 @@ ADJUSTL --- Left adjust a string
   :samp:`{See also}:`
     :ref:`ADJUSTR`, 
     :ref:`TRIM`
-

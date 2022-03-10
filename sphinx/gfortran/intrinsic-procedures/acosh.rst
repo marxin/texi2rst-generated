@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ACOSH, DACOSH, area hyperbolic cosine, inverse hyperbolic cosine, hyperbolic function, cosine, inverse, cosine, hyperbolic, inverse
+
 .. _acosh:
-
-.. index:: ACOSH
-
-.. index:: DACOSH
-
-.. index:: area hyperbolic cosine
-
-.. index:: inverse hyperbolic cosine
-
-.. index:: hyperbolic function, cosine, inverse
-
-.. index:: cosine, hyperbolic, inverse
 
 ACOSH --- Inverse hyperbolic cosine function
 ********************************************
@@ -63,4 +53,3 @@ ACOSH --- Inverse hyperbolic cosine function
   :samp:`{See also}:`
     Inverse function: 
     :ref:`COSH`
-

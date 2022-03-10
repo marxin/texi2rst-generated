@@ -3,25 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LOG, ALOG, DLOG, CLOG, ZLOG, CDLOG, exponential function, inverse, logarithm function, natural logarithm function
+
 .. _log:
-
-.. index:: LOG
-
-.. index:: ALOG
-
-.. index:: DLOG
-
-.. index:: CLOG
-
-.. index:: ZLOG
-
-.. index:: CDLOG
-
-.. index:: exponential function, inverse
-
-.. index:: logarithm function
-
-.. index:: natural logarithm function
 
 LOG --- Natural logarithm function
 **********************************
@@ -74,4 +58,3 @@ LOG --- Natural logarithm function
     ``ZLOG(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     ``CDLOG(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     ============  ================  ==============  ===================
-

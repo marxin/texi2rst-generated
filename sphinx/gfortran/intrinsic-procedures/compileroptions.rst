@@ -8,13 +8,7 @@
 COMPILER_OPTIONS --- Options passed to the compiler
 ***************************************************
 
-.. index:: COMPILER_OPTIONS
-
-.. index:: flags inquiry function
-
-.. index:: options inquiry function
-
-.. index:: compiler flags inquiry function
+.. index:: COMPILER_OPTIONS, flags inquiry function, options inquiry function, compiler flags inquiry function
 
 .. function:: COMPILER_OPTIONS()
 
@@ -54,4 +48,3 @@ COMPILER_OPTIONS --- Options passed to the compiler
   :samp:`{See also}:`
     :ref:`COMPILER_VERSION`, 
     :ref:`ISO_FORTRAN_ENV`
-

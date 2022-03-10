@@ -45,4 +45,3 @@ also be used as format arguments.  Note that the relevant headers are only likel
 available on Darwin (OSX) installations.  On such installations, the XCode and system
 documentation provide descriptions of ``CFString``, ``CFStringRefs`` and
 associated functions.
-

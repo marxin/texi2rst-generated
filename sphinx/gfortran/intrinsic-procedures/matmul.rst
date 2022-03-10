@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MATMUL, matrix multiplication, product, matrix
+
 .. _matmul:
-
-.. index:: MATMUL
-
-.. index:: matrix multiplication
-
-.. index:: product, matrix
 
 MATMUL --- matrix multiplication
 ********************************
@@ -47,4 +43,3 @@ MATMUL --- matrix multiplication
     .. code-block:: fortran
 
       RESULT = MATMUL(MATRIX_A, MATRIX_B)
-

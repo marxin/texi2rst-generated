@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _storage-layout:
-
 .. index:: storage layout
+
+.. _storage-layout:
 
 Storage Layout
 **************
@@ -727,4 +727,3 @@ applied.
   types.
 
 .. hook-end
-

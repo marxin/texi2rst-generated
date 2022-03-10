@@ -21,4 +21,3 @@ This extension may not be very useful, but it makes the handling of
 are handled.
 
 This extension is not supported by GNU C++.
-

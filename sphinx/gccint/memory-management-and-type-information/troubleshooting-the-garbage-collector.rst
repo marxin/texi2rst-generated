@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _troubleshooting:
-
 .. index:: garbage collector, troubleshooting
+
+.. _troubleshooting:
 
 Troubleshooting the garbage collector
 *************************************

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LNBLNK, string, find non-blank character
+
 .. _lnblnk:
-
-.. index:: LNBLNK
-
-.. index:: string, find non-blank character
 
 LNBLNK --- Index of the last non-blank character in a string
 ************************************************************
@@ -40,4 +38,3 @@ LNBLNK --- Index of the last non-blank character in a string
   :samp:`{See also}:`
     :ref:`index-intrinsic`, 
     :ref:`LEN_TRIM`
-

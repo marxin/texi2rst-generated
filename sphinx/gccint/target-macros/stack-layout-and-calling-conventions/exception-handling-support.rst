@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _exception-handling:
-
 .. index:: exception handling
+
+.. _exception-handling:
 
 Exception Handling Support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,4 +135,3 @@ Exception Handling Support
   A C expression that evaluates to true if the target requires unwind
   info to be given comdat linkage.  Define it to be ``1`` if comdat
   linkage is necessary.  The default is ``0``.
-

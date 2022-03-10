@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _vector-operations:
-
 .. index:: vector operations
+
+.. _vector-operations:
 
 Vector Operations
 *****************
@@ -58,4 +58,3 @@ operations.
 :samp:`(vec_series:{m} {base} {step})`
   This operation creates a vector in which element :samp:`{i}` is equal to
   :samp:`{base} + {i}*{step}`.  :samp:`{m}` must be a vector integer mode.
-

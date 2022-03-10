@@ -3,27 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: additional floating types, _Floatn data types, _Floatnx data types, __float80 data type, __float128 data type, __ibm128 data type, w floating point suffix, q floating point suffix, W floating point suffix, Q floating point suffix
+
 .. _floating-types:
-
-.. index:: additional floating types
-
-.. index:: _Floatn data types
-
-.. index:: _Floatnx data types
-
-.. index:: __float80 data type
-
-.. index:: __float128 data type
-
-.. index:: __ibm128 data type
-
-.. index:: w floating point suffix
-
-.. index:: q floating point suffix
-
-.. index:: W floating point suffix
-
-.. index:: Q floating point suffix
 
 Additional Floating Types
 *************************
@@ -99,4 +81,3 @@ the corresponding internal complex type, ``KCmode`` for
 
   typedef _Complex float __attribute__((mode(KC))) _Complex_float128;
   typedef _Complex float __attribute__((mode(IC))) _Complex_ibm128;
-

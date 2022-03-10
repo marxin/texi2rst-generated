@@ -187,4 +187,3 @@ caf_team_t
 
 Opaque pointer to represent a team-handle.  This type is a stand-in for the
 future implementation of teams.  It is about to change without further notice.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MODULO, modulo, division, modulo
+
 .. _modulo:
-
-.. index:: MODULO
-
-.. index:: modulo
-
-.. index:: division, modulo
 
 MODULO --- Modulo function
 **************************
@@ -59,4 +55,3 @@ MODULO --- Modulo function
 
   :samp:`{See also}:`
     :ref:`MOD`
-

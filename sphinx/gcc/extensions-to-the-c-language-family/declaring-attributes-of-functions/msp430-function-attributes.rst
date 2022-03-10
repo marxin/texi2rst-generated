@@ -72,11 +72,7 @@ These function attributes are supported by the MSP430 back end:
   function will rouse the processor from any low-power state that it
   might be in when the function exits.
 
-.. index:: lower function attribute, MSP430
-
-.. index:: upper function attribute, MSP430
-
-.. index:: either function attribute, MSP430
+.. index:: lower function attribute, MSP430, upper function attribute, MSP430, either function attribute, MSP430
 
 .. gcc-attr:: lower, upper, either
 
@@ -105,4 +101,3 @@ These function attributes are supported by the MSP430 back end:
   :option:`-ffunction-sections` and :option:`-fdata-sections` command-line
   options can help the packing, however, since they produce smaller,
   easier to pack regions.
-

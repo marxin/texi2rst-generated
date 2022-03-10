@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _emulated-tls:
-
 .. index:: Emulated TLS
+
+.. _emulated-tls:
 
 Emulating TLS
 *************
@@ -123,4 +123,3 @@ address of the current thread's instance of the TLS object.
   may be used to describe emulated TLS control objects.
 
 .. hook-end
-

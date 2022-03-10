@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: error messages, warnings vs errors, messages, warning and error
+
 .. _warnings-and-errors:
-
-.. index:: error messages
-
-.. index:: warnings vs errors
-
-.. index:: messages, warning and error
 
 Warning Messages and Error Messages
 ***********************************
@@ -34,9 +30,7 @@ warnings are issued only if you ask for them, with one of the :option:`-W`
 options (for instance, :option:`-Wall` requests a variety of useful
 warnings).
 
-.. index:: pedantic
-
-.. index:: pedantic-errors
+.. index:: pedantic, pedantic-errors
 
 GCC always tries to compile your program if possible; it never
 gratuitously rejects a program whose meaning is clear merely because
@@ -50,4 +44,3 @@ or errors.
 
 See :ref:`warning-options`, for
 more detail on these and related command-line options.
-

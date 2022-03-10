@@ -8,9 +8,7 @@
 C_F_POINTER --- Convert C into Fortran pointer
 **********************************************
 
-.. index:: C_F_POINTER
-
-.. index:: pointer, convert C to Fortran
+.. index:: C_F_POINTER, pointer, convert C to Fortran
 
 .. function:: C_F_POINTER(CPTR, FPTR, SHAPE)
 
@@ -65,4 +63,3 @@ C_F_POINTER --- Convert C into Fortran pointer
   :samp:`{See also}:`
     :ref:`C_LOC`, 
     :ref:`C_F_PROCPOINTER`
-

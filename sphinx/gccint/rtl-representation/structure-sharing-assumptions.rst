@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: sharing of RTL components, RTL structure sharing assumptions
+
 .. _sharing:
-
-.. index:: sharing of RTL components
-
-.. index:: RTL structure sharing assumptions
 
 Structure Sharing Assumptions
 *****************************
@@ -28,9 +26,7 @@ no RTL objects are common to two functions.
 * Each pseudo-register has only a single ``reg`` object to represent it,
   and therefore only a single machine mode.
 
-  .. index:: symbolic label
-
-  .. index:: symbol_ref, RTL sharing
+  .. index:: symbolic label, symbol_ref, RTL sharing
 
 * For any symbolic label, there is only one ``symbol_ref`` object
   referring to it.
@@ -58,9 +54,7 @@ no RTL objects are common to two functions.
 * There is only one ``const_vector`` expression with value 0 for
   each vector mode, be it an integer or a double constant vector.
 
-  .. index:: label_ref, RTL sharing
-
-  .. index:: scratch, RTL sharing
+  .. index:: label_ref, RTL sharing, scratch, RTL sharing
 
 * No ``label_ref`` or ``scratch`` appears in more than one place in
   the RTL structure; in other words, it is safe to do a tree-walk of all
@@ -103,4 +97,3 @@ no RTL objects are common to two functions.
   combiner is finished with the insn.  This is done by calling
   ``copy_rtx_if_shared``, which is a subroutine of
   ``unshare_all_rtl``.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: pragmas, #pragma
+
 .. _pragmas:
-
-.. index:: pragmas
-
-.. index:: #pragma
 
 Pragmas Accepted by GCC
 ***********************
@@ -663,9 +661,7 @@ Function Specific Option Pragmas
 
 ``#pragma GCC push_options`` ``#pragma GCC pop_options``
 
-  .. index:: pragma GCC push_options
-
-  .. index:: pragma GCC pop_options
+  .. index:: pragma GCC push_options, pragma GCC pop_options
 
   These pragmas maintain a stack of the current target and optimization
   options.  It is intended for include files where you temporarily want
@@ -731,4 +727,3 @@ Loop-Specific Pragmas
   loop or a ``#pragma GCC ivdep``, and applies only to the loop that follows.
   :samp:`{n}` is an integer constant expression specifying the unrolling factor.
   The values of 0 and 1 block any unrolling of the loop.
-

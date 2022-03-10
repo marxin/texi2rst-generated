@@ -288,4 +288,3 @@ ensures proper usage.
   :samp:`{ptr}` is an optional pointer to the object that may be used to determine
   alignment.  A value of 0 indicates typical alignment should be used.  The 
   compiler may also ignore this parameter.
-

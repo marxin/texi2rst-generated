@@ -26,4 +26,3 @@ nesting. User-controlled aborts will correctly abort the innermost enclosing
 transaction, whereas the whole (i.e., outermost) transaction will be restarted
 otherwise (e.g., when a transaction encounters data conflicts during
 optimistic execution).
-

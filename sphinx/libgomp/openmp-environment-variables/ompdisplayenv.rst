@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_display_env:
-
 .. index:: Environment Variable
+
+.. _omp_display_env:
 
 OMP_DISPLAY_ENV -- Show OpenMP version and environment variables
 ****************************************************************
@@ -19,4 +19,3 @@ OMP_DISPLAY_ENV -- Show OpenMP version and environment variables
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.12
-

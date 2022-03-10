@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: object-like macro, symbolic constants, manifest constants
+
 .. _object-like-macros:
-
-.. index:: object-like macro
-
-.. index:: symbolic constants
-
-.. index:: manifest constants
 
 Object-like Macros
 ******************
@@ -128,4 +124,3 @@ If the expansion of a macro contains its own name, either directly or
 via intermediate macros, it is not expanded again when the expansion is
 examined for more macros.  This prevents infinite recursion.
 See :ref:`self-referential-macros`, for the precise details.
-

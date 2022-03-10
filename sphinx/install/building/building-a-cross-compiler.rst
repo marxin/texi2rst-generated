@@ -72,4 +72,3 @@ as :samp:`crt0.o` and
 alternatives for :samp:`crt0.o`, for use with profiling or other
 compilation options.  Check your target's definition of
 ``STARTFILE_SPEC`` to find out what start files it uses.
-

@@ -8,9 +8,7 @@
 EVENT_QUERY --- Query whether a coarray event has occurred
 **********************************************************
 
-.. index:: EVENT_QUERY
-
-.. index:: Events, EVENT_QUERY
+.. index:: EVENT_QUERY, Events, EVENT_QUERY
 
 .. function:: EVENT_QUERY(EVENT, COUNT, STAT)
 
@@ -59,4 +57,3 @@ EVENT_QUERY --- Query whether a coarray event has occurred
           event post (event_value_has_been_set[1])
         end if
       end program atomic
-

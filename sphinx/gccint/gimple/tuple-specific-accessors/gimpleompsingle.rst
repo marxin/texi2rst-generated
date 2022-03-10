@@ -26,4 +26,3 @@ GIMPLE_OMP_SINGLE
 .. function:: void gimple_omp_single_set_clauses ( gomp_single *g, tree clauses)
 
   Set ``CLAUSES`` to be the clauses associated with ``OMP_SINGLE`` ``G``.
-

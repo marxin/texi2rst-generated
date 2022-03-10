@@ -29,4 +29,3 @@ GIMPLE_OMP_ATOMIC_LOAD
 .. function:: tree gimple_omp_atomic_load_rhs ( const gomp_atomic_load *g)
 
   Get the ``RHS`` of an atomic set.
-

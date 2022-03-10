@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RRSPACING, real number, relative spacing, floating point, relative spacing
+
 .. _rrspacing:
-
-.. index:: RRSPACING
-
-.. index:: real number, relative spacing
-
-.. index:: floating point, relative spacing
 
 RRSPACING --- Reciprocal of the relative spacing
 ************************************************
@@ -41,4 +37,3 @@ RRSPACING --- Reciprocal of the relative spacing
 
   :samp:`{See also}:`
     :ref:`SPACING`
-

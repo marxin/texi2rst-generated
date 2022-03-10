@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: CONJG, DCONJG, complex conjugate
+
 .. _conjg:
-
-.. index:: CONJG
-
-.. index:: DCONJG
-
-.. index:: complex conjugate
 
 CONJG --- Complex conjugate function
 ************************************
@@ -56,4 +52,3 @@ CONJG --- Complex conjugate function
     =============  ================  ==============  =============
     ``DCONJG(Z)``  ``COMPLEX(8) Z``  ``COMPLEX(8)``  GNU extension
     =============  ================  ==============  =============
-

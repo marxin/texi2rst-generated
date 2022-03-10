@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _thread-safety-of-the-runtime-library:
-
 .. index:: thread-safety, threads
+
+.. _thread-safety-of-the-runtime-library:
 
 Thread-safety of the runtime library
 ************************************
@@ -51,4 +51,3 @@ concurrently from another thread while a Fortran formatted I/O
 operation is in progress.  Also, other threads doing something
 dependent on the LC_NUMERIC locale might not work correctly if a
 formatted I/O operation is in progress in another thread.
-

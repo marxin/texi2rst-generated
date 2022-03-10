@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: UCOBOUND, coarray, upper bound
+
 .. _ucobound:
-
-.. index:: UCOBOUND
-
-.. index:: coarray, upper bound
 
 UCOBOUND --- Upper codimension bounds of an array
 *************************************************
@@ -49,4 +47,3 @@ UCOBOUND --- Upper codimension bounds of an array
   :samp:`{See also}:`
     :ref:`LCOBOUND`, 
     :ref:`LBOUND`
-

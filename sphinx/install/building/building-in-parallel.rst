@@ -13,4 +13,3 @@ in most cases using a value greater than the number of processors in
 your machine will result in fewer and shorter I/O latency hits, thus
 improving overall throughput; this is especially true for slow drives
 and network filesystems.
-

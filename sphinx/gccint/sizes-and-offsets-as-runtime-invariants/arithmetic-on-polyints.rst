@@ -176,4 +176,3 @@ In addition, the following miscellaneous routines are available:
   assertion is known to hold.
 
   Please add any other operations that you find to be useful.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: preprocessor options, options, preprocessor
+
 .. _preprocessor-options:
-
-.. index:: preprocessor options
-
-.. index:: options, preprocessor
 
 Options Controlling the Preprocessor
 ************************************
@@ -79,4 +77,3 @@ Options to control preprocessor diagnostics are listed in
   at that point, although the compiler prints a note if this happens.
   Passing :option:`-flarge-source-files` significantly increases the number
   of source lines that GCC can process before it stops tracking columns.
-

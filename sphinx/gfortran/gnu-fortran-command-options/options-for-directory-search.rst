@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: directory, options, options, directory search, search path, INCLUDE directive, directive, INCLUDE
+
 .. _directory-options:
-
-.. index:: directory, options
-
-.. index:: options, directory search
-
-.. index:: search path
-
-.. index:: INCLUDE directive
-
-.. index:: directive, INCLUDE
 
 Options for directory search
 ****************************
@@ -25,17 +17,7 @@ for previously compiled modules.
 It also affects the search paths used by :command:`cpp` when used to preprocess
 Fortran source.
 
-.. index:: Idir
-
-.. index:: directory, search paths for inclusion
-
-.. index:: inclusion, directory search paths for
-
-.. index:: search paths, for included files
-
-.. index:: paths, search
-
-.. index:: module search path
+.. index:: Idir, directory, search paths for inclusion, inclusion, directory search paths for, search paths, for included files, paths, search, module search path
 
 .. option:: -Idir
 
@@ -54,13 +36,7 @@ Fortran source.
   See :ref:`gcc:directory-options`, for information on the
   :option:`-I` option.
 
-.. index:: Jdir
-
-.. index:: Mdir
-
-.. index:: paths, search
-
-.. index:: module search path
+.. index:: Jdir, Mdir, paths, search, module search path
 
 .. option:: -Jdir
 
@@ -70,14 +46,9 @@ Fortran source.
 
   The default is the current directory.
 
-.. index:: fintrinsic-modules-pathdir
-
-.. index:: paths, search
-
-.. index:: module search path
+.. index:: fintrinsic-modules-pathdir, paths, search, module search path
 
 .. option:: -fintrinsic-modules-path {dir}
 
   This option specifies the location of pre-compiled intrinsic modules, if
   they are not in the default location expected by the compiler.
-

@@ -33,4 +33,3 @@ Hints
   used or if :option:`-O0` is used.  Otherwise, GCC may still be unable to
   inline a function for many reasons; the :option:`-Winline` option may be
   used to determine if a function has not been inlined and why not.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: compiler options, C++, C++ options, command-line, options, C++
+
 .. _c++-dialect-options:
-
-.. index:: compiler options, C++
-
-.. index:: C++ options, command-line
-
-.. index:: options, C++
 
 Options Controlling C++ Dialect
 *******************************
@@ -1103,9 +1099,7 @@ In addition, these warning options have meanings only for C++ programs:
 
     C++ and Objective-C++ only
 
-  .. index:: reordering, warning
-
-  .. index:: warning for reordering of member initializers
+  .. index:: reordering, warning, warning for reordering of member initializers
 
   Warn when the order of member initializers given in the code does not
   match the order in which they must be executed.  For instance:
@@ -1403,9 +1397,7 @@ In addition, these warning options have meanings only for C++ programs:
 
     C++ and Objective-C++ only
 
-  .. index:: overloaded virtual function, warning
-
-  .. index:: warning for overloaded virtual function
+  .. index:: overloaded virtual function, warning, warning for overloaded virtual function
 
   Warn when a function declaration hides virtual functions from a
   base class.  For example, in:
@@ -2028,4 +2020,3 @@ In addition, these warning options have meanings only for C++ programs:
 .. option:: -Wconversion-null
 
   Default setting; overrides :option:`-Wno-conversion-null`.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Configuration, Configuration
+
 .. _configuration:
-
-.. index:: Configuration
-
-.. index:: Configuration
 
 Configuration
 -------------

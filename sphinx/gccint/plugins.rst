@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying condtions, see the GPL license file
 
-.. _plugins:
-
 .. index:: Plugins
+
+.. _plugins:
 
 Plugins
 -------
@@ -33,4 +33,3 @@ can be quite useful.
   plugins/controlling-which-passes-are-being-run
   plugins/keeping-track-of-available-passes
   plugins/building-gcc-plugins
-

@@ -29,4 +29,3 @@ omp_get_supported_active_levels -- Maximum number of active regions supported
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.2.15.
-

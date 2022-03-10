@@ -34,4 +34,3 @@ writing of interrupt handlers in C.
   integer - that is, you must pass a number, not a variable that may be
   optimized to a constant later.  The number of cycles delayed by this
   builtin is exact.
-

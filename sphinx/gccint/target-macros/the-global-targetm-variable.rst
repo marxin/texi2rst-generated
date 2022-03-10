@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: target hooks, target functions
+
 .. _target-structure:
-
-.. index:: target hooks
-
-.. index:: target functions
 
 The Global targetm Variable
 ***************************
@@ -65,4 +63,3 @@ This is declared in :samp:`d/d-target.h`, the initializer
 initialize ``targetdm`` themselves, they should set
 ``target_has_targetdm=yes`` in :samp:`config.gcc`; otherwise a default
 definition is used.
-

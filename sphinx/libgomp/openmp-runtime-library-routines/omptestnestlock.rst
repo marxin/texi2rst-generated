@@ -33,4 +33,3 @@ omp_test_nest_lock -- Test and set nested lock if available
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.6.
-

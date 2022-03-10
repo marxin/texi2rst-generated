@@ -21,4 +21,3 @@ GIMPLE_LABEL
 
   Set ``LABEL`` to be the ``LABEL_DECL`` node used by ``GIMPLE_LABEL``
   statement ``G``.
-

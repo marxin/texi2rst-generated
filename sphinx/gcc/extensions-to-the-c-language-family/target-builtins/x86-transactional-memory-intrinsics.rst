@@ -100,4 +100,3 @@ and a fallback path for other failures:
 
 Note that, in most cases, the transactional and non-transactional code
 must synchronize together to ensure consistency.
-

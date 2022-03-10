@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GERROR, system, error handling
+
 .. _gerror:
-
-.. index:: GERROR
-
-.. index:: system, error handling
 
 GERROR --- Get last system error message
 ****************************************
@@ -45,4 +43,3 @@ GERROR --- Get last system error message
   :samp:`{See also}:`
     :ref:`IERRNO`, 
     :ref:`PERROR`
-

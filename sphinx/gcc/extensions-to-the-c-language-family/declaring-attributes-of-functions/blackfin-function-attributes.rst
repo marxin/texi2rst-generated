@@ -10,9 +10,7 @@ Blackfin Function Attributes
 
 These function attributes are supported by the Blackfin back end:
 
-.. index:: exception_handler function attribute
-
-.. index:: exception handler functions, Blackfin
+.. index:: exception_handler function attribute, exception handler functions, Blackfin
 
 .. gcc-attr:: exception_handler
 
@@ -30,9 +28,7 @@ These function attributes are supported by the Blackfin back end:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. index:: kspisusp function attribute, Blackfin
-
-.. index:: User stack pointer in interrupts on the Blackfin
+.. index:: kspisusp function attribute, Blackfin, User stack pointer in interrupts on the Blackfin
 
 .. gcc-attr:: kspisusp
 
@@ -58,11 +54,7 @@ These function attributes are supported by the Blackfin back end:
   ``.l2.text``. With :option:`-mfdpic`, callers of such functions use
   an inlined PLT.
 
-.. index:: indirect calls, Blackfin
-
-.. index:: longcall function attribute, Blackfin
-
-.. index:: shortcall function attribute, Blackfin
+.. index:: indirect calls, Blackfin, longcall function attribute, Blackfin, shortcall function attribute, Blackfin
 
 .. gcc-attr:: longcall, shortcall
 
@@ -73,9 +65,7 @@ These function attributes are supported by the Blackfin back end:
   enough for the shorter calling sequence to be used.  These attributes
   override the :option:`-mlongcall` switch.
 
-.. index:: nesting function attribute, Blackfin
-
-.. index:: Allow nesting in an interrupt handler on the Blackfin processor
+.. index:: nesting function attribute, Blackfin, Allow nesting in an interrupt handler on the Blackfin processor
 
 .. gcc-attr:: nesting
 
@@ -83,9 +73,7 @@ These function attributes are supported by the Blackfin back end:
   :gcc-attr:`exception_handler` or :gcc-attr:`nmi_handler` to indicate that the function
   entry code should enable nested interrupts or exceptions.
 
-.. index:: nmi_handler function attribute, Blackfin
-
-.. index:: NMI handler functions on the Blackfin processor
+.. index:: nmi_handler function attribute, Blackfin, NMI handler functions on the Blackfin processor
 
 .. gcc-attr:: nmi_handler
 
@@ -94,13 +82,10 @@ These function attributes are supported by the Blackfin back end:
   exit sequences suitable for use in an NMI handler when this
   attribute is present.
 
-.. index:: saveall function attribute, Blackfin
-
-.. index:: save all registers on the Blackfin
+.. index:: saveall function attribute, Blackfin, save all registers on the Blackfin
 
 .. gcc-attr:: saveall
 
   Use this attribute to indicate that
   all registers except the stack pointer should be saved in the prologue
   regardless of whether they are used or not.
-

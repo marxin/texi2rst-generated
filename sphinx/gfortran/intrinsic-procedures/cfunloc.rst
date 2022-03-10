@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: C_FUNLOC, pointer, C address of procedures
+
 .. _c_funloc:
-
-.. index:: C_FUNLOC
-
-.. index:: pointer, C address of procedures
 
 C_FUNLOC --- Obtain the C address of a procedure
 ************************************************
@@ -66,4 +64,3 @@ C_FUNLOC --- Obtain the C address of a procedure
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`, 
     :ref:`C_F_PROCPOINTER`
-

@@ -37,4 +37,3 @@ The intrinsics are:
 The intrinsic ``void __tile_network_barrier (void)`` is used to
 guarantee that no network operations before it are reordered with
 those after it.
-

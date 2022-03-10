@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _special-accessors:
-
 .. index:: access to special operands
+
+.. _special-accessors:
 
 Access to Special Operands
 **************************
@@ -127,9 +127,7 @@ Some RTL nodes have special annotations associated with them.
     about the symbol.  Some of these are common enough to be computed by
     common code, some are specific to the target.  The common bits are:
 
-    .. index:: SYMBOL_REF_FUNCTION_P
-
-    .. index:: SYMBOL_FLAG_FUNCTION
+    .. index:: SYMBOL_REF_FUNCTION_P, SYMBOL_FLAG_FUNCTION
 
     .. envvar:: SYMBOL_FLAG_FUNCTION
 
@@ -155,9 +153,7 @@ Some RTL nodes have special annotations associated with them.
       to be used for a thread-local storage symbol.  It returns zero for
       non-thread-local symbols.
 
-      .. index:: SYMBOL_REF_HAS_BLOCK_INFO_P
-
-      .. index:: SYMBOL_FLAG_HAS_BLOCK_INFO
+      .. index:: SYMBOL_REF_HAS_BLOCK_INFO_P, SYMBOL_FLAG_HAS_BLOCK_INFO
 
     .. envvar:: SYMBOL_FLAG_HAS_BLOCK_INFO
 
@@ -190,4 +186,3 @@ Some RTL nodes have special annotations associated with them.
   from the first object in :samp:`SYMBOL_REF_BLOCK ({x})`.  The value is
   negative if :samp:`{x}` has not yet been assigned to a block, or it has not
   been given an offset within that block.
-

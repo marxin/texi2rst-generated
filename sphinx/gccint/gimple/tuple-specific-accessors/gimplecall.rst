@@ -114,4 +114,3 @@ GIMPLE_CALL
 
   Build a ``GIMPLE_CALL`` identical to ``STMT`` but skipping the arguments
   in the positions marked by the set ``ARGS_TO_SKIP``.
-

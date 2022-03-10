@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: variable number of arguments, macro with variable arguments, rest argument (in macro), variadic macros
+
 .. _variadic-macros:
-
-.. index:: variable number of arguments
-
-.. index:: macro with variable arguments
-
-.. index:: rest argument (in macro)
-
-.. index:: variadic macros
 
 Macros with a Variable Number of Arguments.
 *******************************************
@@ -72,4 +66,3 @@ do provide some variable arguments in your macro invocation, GNU CPP
 does not complain about the paste operation and instead places the
 variable arguments after the comma.  Just like any other pasted macro
 argument, these arguments are not macro expanded.
-

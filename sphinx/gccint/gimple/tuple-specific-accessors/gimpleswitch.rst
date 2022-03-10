@@ -50,4 +50,3 @@ GIMPLE_SWITCH
 .. function:: void gimple_switch_set_default_label (gswitch *g, tree label)
 
   Set the default label for a switch statement.
-

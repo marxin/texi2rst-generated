@@ -24,4 +24,3 @@ ways to find it:
 
 For further information, see
 https://gcc.gnu.org/faq.html#support.
-

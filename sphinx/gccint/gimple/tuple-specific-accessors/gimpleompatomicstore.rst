@@ -20,4 +20,3 @@ GIMPLE_OMP_ATOMIC_STORE
 .. function:: tree gimple_omp_atomic_store_val ( const gomp_atomic_store *g)
 
   Return the value being stored in an atomic store.
-

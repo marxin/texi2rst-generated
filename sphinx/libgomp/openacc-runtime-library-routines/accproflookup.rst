@@ -23,4 +23,3 @@ acc_prof_lookup -- Obtain inquiry functions.
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.
-

@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATANH, DATANH, area hyperbolic tangent, inverse hyperbolic tangent, hyperbolic function, tangent, inverse, tangent, hyperbolic, inverse
+
 .. _atanh:
-
-.. index:: ATANH
-
-.. index:: DATANH
-
-.. index:: area hyperbolic tangent
-
-.. index:: inverse hyperbolic tangent
-
-.. index:: hyperbolic function, tangent, inverse
-
-.. index:: tangent, hyperbolic, inverse
 
 ATANH --- Inverse hyperbolic tangent function
 *********************************************
@@ -63,4 +53,3 @@ ATANH --- Inverse hyperbolic tangent function
   :samp:`{See also}:`
     Inverse function: 
     :ref:`TANH`
-

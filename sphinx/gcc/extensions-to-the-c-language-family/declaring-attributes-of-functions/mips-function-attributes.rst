@@ -73,15 +73,7 @@ These function attributes are supported by the MIPS back end:
     void __attribute__ ((interrupt("eic"))) v8 ();
     void __attribute__ ((interrupt("vector=hw3"))) v9 ();
 
-.. index:: indirect calls, MIPS
-
-.. index:: long_call function attribute, MIPS
-
-.. index:: short_call function attribute, MIPS
-
-.. index:: near function attribute, MIPS
-
-.. index:: far function attribute, MIPS
+.. index:: indirect calls, MIPS, long_call function attribute, MIPS, short_call function attribute, MIPS, near function attribute, MIPS, far function attribute, MIPS
 
 .. gcc-attr:: long_call, short_call, near, far
 
@@ -95,9 +87,7 @@ These function attributes are supported by the MIPS back end:
   effect; they specify that non-PIC calls should be made using the more
   efficient ``jal`` instruction.
 
-.. index:: mips16 function attribute, MIPS
-
-.. index:: nomips16 function attribute, MIPS
+.. index:: mips16 function attribute, MIPS, nomips16 function attribute, MIPS
 
 .. gcc-attr:: mips16, nomips16
 
@@ -115,9 +105,7 @@ These function attributes are supported by the MIPS back end:
   may interact badly with some GCC extensions such as ``__builtin_apply``
   (see :ref:`constructing-calls`).
 
-.. index:: micromips function attribute
-
-.. index:: nomicromips function attribute
+.. index:: micromips function attribute, nomicromips function attribute
 
 .. gcc-attr:: micromips, MIPS, nomicromips, MIPS
 
@@ -144,4 +132,3 @@ These function attributes are supported by the MIPS back end:
   to locally turn off MIPS16 and microMIPS code generation.  This attribute
   overrides the :option:`-mips16` and :option:`-mmicromips` options on the
   command line (see :ref:`mips-options`).
-

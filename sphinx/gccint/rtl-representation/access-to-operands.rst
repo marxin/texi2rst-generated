@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: accessors, access to operands, operand access, XEXP, XINT, XWINT, XSTR
+
 .. _accessors:
-
-.. index:: accessors
-
-.. index:: access to operands
-
-.. index:: operand access
-
-.. index:: XEXP
-
-.. index:: XINT
-
-.. index:: XWINT
-
-.. index:: XSTR
 
 Access to Operands
 ******************
@@ -83,4 +71,3 @@ vector.
 All the macros defined in this section expand into lvalues and therefore
 can be used to assign the operands, lengths and vector elements as well as
 to access them.
-

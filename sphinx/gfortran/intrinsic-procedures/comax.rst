@@ -8,9 +8,7 @@
 CO_MAX --- Maximal value on the current set of images
 *****************************************************
 
-.. index:: CO_MAX
-
-.. index:: Collectives, maximal value
+.. index:: CO_MAX, Collectives, maximal value
 
 .. function:: CO_MAX(A, RESULT_IMAGE, STAT, ERRMSG)
 
@@ -68,4 +66,3 @@ CO_MAX --- Maximal value on the current set of images
     :ref:`CO_SUM`, 
     :ref:`CO_REDUCE`, 
     :ref:`CO_BROADCAST`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SCAN, string, find subset
+
 .. _scan:
-
-.. index:: SCAN
-
-.. index:: string, find subset
 
 SCAN --- Scan a string for the presence of a set of characters
 **************************************************************
@@ -59,4 +57,3 @@ SCAN --- Scan a string for the presence of a set of characters
   :samp:`{See also}:`
     :ref:`index-intrinsic`, 
     :ref:`VERIFY`
-

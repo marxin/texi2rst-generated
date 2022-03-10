@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: UBOUND, array, upper bound
+
 .. _ubound:
-
-.. index:: UBOUND
-
-.. index:: array, upper bound
 
 UBOUND --- Upper dimension bounds of an array
 *********************************************
@@ -53,4 +51,3 @@ UBOUND --- Upper dimension bounds of an array
   :samp:`{See also}:`
     :ref:`LBOUND`, 
     :ref:`LCOBOUND`
-

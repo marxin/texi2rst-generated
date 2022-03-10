@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RANDOM_NUMBER, random number generation
+
 .. _random_number:
-
-.. index:: RANDOM_NUMBER
-
-.. index:: random number generation
 
 RANDOM_NUMBER --- Pseudo-random number
 **************************************
@@ -44,4 +42,3 @@ RANDOM_NUMBER --- Pseudo-random number
   :samp:`{See also}:`
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_INIT`
-

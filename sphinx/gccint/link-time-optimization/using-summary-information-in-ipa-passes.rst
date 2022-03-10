@@ -204,4 +204,3 @@ Jump functions are used by several optimizations, such as the
 inter-procedural constant propagation pass and the
 devirtualization pass.  The inliner also uses jump functions to
 perform inlining of callbacks.
-

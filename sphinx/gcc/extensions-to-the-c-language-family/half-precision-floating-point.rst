@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: half-precision floating point, __fp16 data type, __Float16 data type
+
 .. _half-precision:
-
-.. index:: half-precision floating point
-
-.. index:: __fp16 data type
-
-.. index:: __Float16 data type
 
 Half-Precision Floating Point
 *****************************
@@ -78,4 +74,3 @@ and :option:`-mfpmath <x86 -mfpmath>`:samp:`=sse`. If there is no :option:`-mfpm
 :option:`-fexcess-precision`:samp:`=standard` alone does the same thing as before,
 It is useful for code that does not have ``_Float16`` and runs on the x87
 FPU.
-

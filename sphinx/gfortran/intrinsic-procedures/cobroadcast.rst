@@ -8,9 +8,7 @@
 CO_BROADCAST --- Copy a value to all images the current set of images
 *********************************************************************
 
-.. index:: CO_BROADCAST
-
-.. index:: Collectives, value broadcasting
+.. index:: CO_BROADCAST, Collectives, value broadcasting
 
 .. function:: CO_BROADCAST(A, SOURCE_IMAGE, STAT, ERRMSG)
 
@@ -67,4 +65,3 @@ CO_BROADCAST --- Copy a value to all images the current set of images
     :ref:`CO_MIN`, 
     :ref:`CO_SUM`, 
     :ref:`CO_REDUCE`
-

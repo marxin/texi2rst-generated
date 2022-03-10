@@ -50,4 +50,3 @@ same context.
 
       /* Initialize OpenACC library and use device 'dev' */
       acc_set_device_num(dev, acc_device_nvidia);
-

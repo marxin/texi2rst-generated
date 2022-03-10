@@ -3,18 +3,16 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _bit-fields:
-
 .. index:: bit-fields
+
+.. _bit-fields:
 
 Bit-Fields
 **********
 
 Special expression codes exist to represent bit-field instructions.
 
-.. index:: sign_extract
-
-.. index:: BITS_BIG_ENDIAN, effect on sign_extract
+.. index:: sign_extract, BITS_BIG_ENDIAN, effect on sign_extract
 
 :samp:`(sign_extract:{m} {loc} {size} {pos})`
   This represents a reference to a sign-extended bit-field contained or
@@ -48,4 +46,3 @@ Special expression codes exist to represent bit-field instructions.
   Unlike ``sign_extract``, this type of expressions can be lvalues
   in RTL; they may appear on the left side of an assignment, indicating
   insertion of a value into the specified bit-field.
-

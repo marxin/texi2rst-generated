@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MAX, MAX0, AMAX0, MAX1, AMAX1, DMAX1, maximum value
+
 .. _max:
-
-.. index:: MAX
-
-.. index:: MAX0
-
-.. index:: AMAX0
-
-.. index:: MAX1
-
-.. index:: AMAX1
-
-.. index:: DMAX1
-
-.. index:: maximum value
 
 MAX --- Maximum value of an argument list
 *****************************************
@@ -66,4 +54,3 @@ MAX --- Maximum value of an argument list
     :ref:`MAXLOC` 
     :ref:`MAXVAL`, 
     :ref:`MIN`
-

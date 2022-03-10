@@ -36,4 +36,3 @@ omp_get_num_threads -- Size of the active team
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.2.
-

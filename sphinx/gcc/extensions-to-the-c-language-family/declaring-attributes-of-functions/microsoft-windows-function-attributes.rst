@@ -11,9 +11,7 @@ Microsoft Windows Function Attributes
 The following attributes are available on Microsoft Windows and Symbian OS
 targets.
 
-.. index:: dllexport function attribute
-
-.. index:: __declspec(dllexport)
+.. index:: dllexport function attribute, __declspec(dllexport)
 
 .. gcc-attr:: dllexport
 
@@ -50,9 +48,7 @@ targets.
   :samp:`.def` file with an ``EXPORTS`` section or, with GNU ld, using
   the :option:`--export-all` linker flag.
 
-.. index:: dllimport function attribute
-
-.. index:: __declspec(dllimport)
+.. index:: dllimport function attribute, __declspec(dllimport)
 
 .. gcc-attr:: dllimport
 
@@ -106,4 +102,3 @@ targets.
   this case, the address of a stub function in the import lib is
   referenced.  On Microsoft Windows targets, the attribute can be disabled
   for functions by setting the :option:`-mnop-fun-dllimport` flag.
-

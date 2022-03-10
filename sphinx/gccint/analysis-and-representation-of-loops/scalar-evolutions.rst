@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Scalar evolutions, IV analysis on GIMPLE
+
 .. _scalar-evolutions:
-
-.. index:: Scalar evolutions
-
-.. index:: IV analysis on GIMPLE
 
 Scalar evolutions
 *****************
@@ -71,4 +69,3 @@ induction variables.  In this case, the extra expressive power of SCEV
 is not useful, and may complicate the optimizations.  In this case,
 ``simple_iv`` function may be used to analyze a value -- the result
 is a loop-invariant base and step.
-

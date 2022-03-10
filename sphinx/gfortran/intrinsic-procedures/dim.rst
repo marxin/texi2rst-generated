@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DIM, IDIM, DDIM, positive difference
+
 .. _dim:
-
-.. index:: DIM
-
-.. index:: IDIM
-
-.. index:: DDIM
-
-.. index:: positive difference
 
 DIM --- Positive difference
 ***************************
@@ -65,4 +59,3 @@ DIM --- Positive difference
     ``IDIM(X,Y)``  ``INTEGER(4) X, Y``  ``INTEGER(4)``  Fortran 77 and later
     ``DDIM(X,Y)``  ``REAL(8) X, Y``     ``REAL(8)``     Fortran 77 and later
     =============  ===================  ==============  ====================
-

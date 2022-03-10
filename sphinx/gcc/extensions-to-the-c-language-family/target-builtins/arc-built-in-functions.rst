@@ -231,4 +231,3 @@ where they are put in the C code:
   __builtin_arc_sleep()
   __builtin_arc_sr()
   __builtin_arc_swi()
-

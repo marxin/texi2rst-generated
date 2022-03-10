@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: extensions, C language, C language extensions, pedantic
+
 .. _c-extensions:
-
-.. index:: extensions, C language
-
-.. index:: C language extensions
-
-.. index:: pedantic
 
 Extensions to the C Language Family
 -----------------------------------
@@ -94,4 +90,3 @@ extensions, accepted by GCC in C90 mode and in C++.
   extensions-to-the-c-language-family/unnamed-structure-and-union-fields
   extensions-to-the-c-language-family/thread-local-storage
   extensions-to-the-c-language-family/binary-constants-using-the-0b-prefix
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _attribute-syntax:
-
 .. index:: attribute syntax
+
+.. _attribute-syntax:
 
 Attribute Syntax
 ****************
@@ -257,4 +257,3 @@ pointer-to-function type, it is treated as applying to the pointer
 target type; if such an attribute is applied to a function return type
 that is not a pointer-to-function type, it is treated as applying
 to the function type.
-

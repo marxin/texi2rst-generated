@@ -15,4 +15,3 @@ the parallel subfunction.
 In association with FOR or SECTIONS blocks, create a new
 automatic variable within the current function.  This preserves
 the semantic of new variable creation.
-

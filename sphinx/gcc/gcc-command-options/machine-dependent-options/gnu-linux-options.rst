@@ -54,4 +54,3 @@ These :samp:`-m` options are defined for GNU/Linux targets:
 
   Disable linking effects of :option:`-mandroid`, i.e., pass standard Linux
   linking options to the linker.
-

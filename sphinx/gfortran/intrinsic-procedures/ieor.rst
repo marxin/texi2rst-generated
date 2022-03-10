@@ -8,19 +8,7 @@
 IEOR --- Bitwise logical exclusive or
 *************************************
 
-.. index:: IEOR
-
-.. index:: BIEOR
-
-.. index:: IIEOR
-
-.. index:: JIEOR
-
-.. index:: KIEOR
-
-.. index:: bitwise logical exclusive or
-
-.. index:: logical exclusive or, bitwise
+.. index:: IEOR, BIEOR, IIEOR, JIEOR, KIEOR, bitwise logical exclusive or, logical exclusive or, bitwise
 
 .. function:: IEOR(I, J)
 
@@ -71,4 +59,3 @@ IEOR --- Bitwise logical exclusive or
     :ref:`IBSET`, 
     :ref:`IBCLR`, 
     :ref:`NOT`
-

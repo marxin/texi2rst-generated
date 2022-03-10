@@ -3,12 +3,11 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _bug-reporting:
-
 .. index:: compiler bugs, reporting
+
+.. _bug-reporting:
 
 How and Where to Report Bugs
 ****************************
 
 Bugs should be reported to the bug database at |bugurl|.
-

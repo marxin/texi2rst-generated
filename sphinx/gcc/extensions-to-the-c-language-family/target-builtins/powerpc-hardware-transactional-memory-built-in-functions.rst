@@ -224,4 +224,3 @@ section that will work on either PowerPC or S/390:
             }
         }
     }
-

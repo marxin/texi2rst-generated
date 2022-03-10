@@ -8,9 +8,7 @@
 RAN --- Real pseudo-random number
 *********************************
 
-.. index:: RAN
-
-.. index:: random number generation
+.. index:: RAN, random number generation
 
 .. function:: RAN()
 
@@ -27,4 +25,3 @@ RAN --- Real pseudo-random number
   :samp:`{See also}:`
     :ref:`RAND`, 
     :ref:`RANDOM_NUMBER`
-

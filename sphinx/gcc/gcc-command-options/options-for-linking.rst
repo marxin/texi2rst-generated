@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: link options, options, linking
+
 .. _link-options:
-
-.. index:: link options
-
-.. index:: options, linking
 
 Options for Linking
 *******************
@@ -174,17 +172,7 @@ not doing a link step.
   libc.  These entry points should be supplied through some other
   mechanism when this option is specified.
 
-  .. index:: -lgcc, use with -nostdlib
-
-  .. index:: -nostdlib and unresolved references
-
-  .. index:: unresolved references and -nostdlib
-
-  .. index:: -lgcc, use with -nodefaultlibs
-
-  .. index:: -nodefaultlibs and unresolved references
-
-  .. index:: unresolved references and -nodefaultlibs
+  .. index:: -lgcc, use with -nostdlib, -nostdlib and unresolved references, unresolved references and -nostdlib, -lgcc, use with -nodefaultlibs, -nodefaultlibs and unresolved references, unresolved references and -nodefaultlibs
 
   One of the standard libraries bypassed by :option:`-nostdlib` and
   :option:`-nodefaultlibs` is :samp:`libgcc.a`, a library of internal subroutines
@@ -413,4 +401,3 @@ not doing a link step.
   :option:`-z` is passed directly on to the linker along with the keyword
   :samp:`{keyword}`. See the section in the documentation of your linker for
   permitted values and their meanings.
-

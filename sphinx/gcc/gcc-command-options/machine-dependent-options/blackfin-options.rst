@@ -5,9 +5,9 @@
 
 .. program:: Blackfin
 
-.. _blackfin-options:
-
 .. index:: Blackfin Options
+
+.. _blackfin-options:
 
 Blackfin Options
 ^^^^^^^^^^^^^^^^
@@ -225,4 +225,3 @@ Blackfin Options
   Assume that ICPLBs are enabled at run time.  This has an effect on certain
   anomaly workarounds.  For Linux targets, the default is to assume ICPLBs
   are enabled; for standalone applications the default is off.
-

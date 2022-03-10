@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_DEFINE, Atomic subroutine, define
+
 .. _atomic_define:
-
-.. index:: ATOMIC_DEFINE
-
-.. index:: Atomic subroutine, define
 
 ATOMIC_DEFINE --- Setting a variable atomically
 ***********************************************
@@ -64,4 +62,3 @@ ATOMIC_DEFINE --- Setting a variable atomically
     :ref:`ATOMIC_AND`, 
     :ref:`ATOMIC_OR`, 
     :ref:`ATOMIC_XOR`
-

@@ -5,9 +5,9 @@
 
 .. program:: CRIS
 
-.. _cris-options:
-
 .. index:: CRIS Options
+
+.. _cris-options:
 
 CRIS Options
 ^^^^^^^^^^^^
@@ -113,4 +113,3 @@ These options are defined specifically for the CRIS ports.
 
   Like :option:`-sim`, but pass linker options to locate initialized data at
   0x40000000 and zero-initialized data at 0x80000000.
-

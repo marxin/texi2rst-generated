@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: C_LOC, procedure pointer, convert C to Fortran
+
 .. _c_loc:
-
-.. index:: C_LOC
-
-.. index:: procedure pointer, convert C to Fortran
 
 C_LOC --- Obtain the C address of an object
 *******************************************
@@ -53,4 +51,3 @@ C_LOC --- Obtain the C address of an object
     :ref:`C_FUNLOC`, 
     :ref:`C_F_POINTER`, 
     :ref:`C_F_PROCPOINTER`
-

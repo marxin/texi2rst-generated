@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _profiling:
-
 .. index:: profiling, code generation
+
+.. _profiling:
 
 Generating Code for Profiling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -59,4 +59,3 @@ These macros will help you generate code for profiling.
   mcount is generated before the function prologue.
 
 .. hook-end
-

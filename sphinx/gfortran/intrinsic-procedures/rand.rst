@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RAND, random number generation
+
 .. _rand:
-
-.. index:: RAND
-
-.. index:: random number generation
 
 RAND --- Real pseudo-random number
 **********************************
@@ -53,4 +51,3 @@ RAND --- Real pseudo-random number
   :samp:`{See also}:`
     :ref:`SRAND`, 
     :ref:`RANDOM_NUMBER`
-

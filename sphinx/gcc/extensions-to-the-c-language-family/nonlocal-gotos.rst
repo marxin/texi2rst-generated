@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _nonlocal-gotos:
-
 .. index:: nonlocal gotos
+
+.. _nonlocal-gotos:
 
 Nonlocal Gotos
 **************
@@ -60,4 +60,3 @@ built-in functions as:
   from the same function calling ``__builtin_setjmp`` to
   initialize :samp:`{buf}`.  It can only be called from a function called
   (directly or indirectly) from the function calling ``__builtin_setjmp``.
-

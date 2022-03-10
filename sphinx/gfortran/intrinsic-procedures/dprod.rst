@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DPROD, product, double-precision
+
 .. _dprod:
-
-.. index:: DPROD
-
-.. index:: product, double-precision
 
 DPROD --- Double product function
 *********************************
@@ -55,4 +53,3 @@ DPROD --- Double product function
     ==============  ================  ===========  ====================
     ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later
     ==============  ================  ===========  ====================
-

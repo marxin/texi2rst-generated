@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _condition-code:
-
 .. index:: condition code status
+
+.. _condition-code:
 
 Condition Code Status
 *********************
@@ -45,11 +45,9 @@ interested in most macros in this section.
   :maxdepth: 2
 
 
+.. index:: CCmode, MODE_CC
+
 .. _mode_cc-condition-codes:
-
-.. index:: CCmode
-
-.. index:: MODE_CC
 
 Representation of condition codes using registers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,4 +208,3 @@ Representation of condition codes using registers
   then this value should be set appropriately.
 
 .. hook-end
-

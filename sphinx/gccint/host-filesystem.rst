@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: configuration file, xm-machine.h
+
 .. _filesystem:
-
-.. index:: configuration file
-
-.. index:: xm-machine.h
 
 Host Filesystem
 ***************
@@ -103,4 +101,3 @@ following macros in :samp:`xm-{machine}.h`.
 
   Define this macro if the host filesystem does not report meaningful inode
   numbers in struct stat.
-

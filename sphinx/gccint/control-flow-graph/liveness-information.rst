@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _liveness-information:
-
 .. index:: Liveness representation
+
+.. _liveness-information:
 
 Liveness information
 ********************

@@ -3,36 +3,28 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _bug-criteria:
-
 .. index:: bug criteria
+
+.. _bug-criteria:
 
 Have You Found a Bug?
 *********************
 
 If you are not sure whether you have found a bug, here are some guidelines:
 
-.. index:: fatal signal
-
-.. index:: core dump
+.. index:: fatal signal, core dump
 
 * If the compiler gets a fatal signal, for any input whatever, that is a
   compiler bug.  Reliable compilers never crash.
 
-  .. index:: invalid assembly code
-
-  .. index:: assembly code, invalid
+  .. index:: invalid assembly code, assembly code, invalid
 
 * If the compiler produces invalid assembly code, for any input whatever
   (except an ``asm`` statement), that is a compiler bug, unless the
   compiler reports errors (not just warnings) which would ordinarily
   prevent the assembler from being run.
 
-  .. index:: undefined behavior
-
-  .. index:: undefined function value
-
-  .. index:: increment operators
+  .. index:: undefined behavior, undefined function value, increment operators
 
 * If the compiler produces valid assembly code that does not correctly
   execute the input source code, that is a compiler bug.
@@ -68,4 +60,3 @@ If you are not sure whether you have found a bug, here are some guidelines:
 
 * If you are an experienced user of one of the languages GCC supports, your
   suggestions for improvement of GCC are welcome in any case.
-

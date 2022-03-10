@@ -283,4 +283,3 @@ intrinsics:
      return value of an intrinsic call to a function expecting the union: */
   v128 foo (v128);
   x = foo ((v128) {_mm_adds_epu8 (x.mm, y.mm)});
-

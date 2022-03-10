@@ -272,4 +272,3 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
     'typical' EV4 & EV5 hardware for the Level 1, 2 & 3 caches
     (also called Dcache, Scache, and Bcache), as well as to main memory.
     Note that L3 is only valid for EV5.
-

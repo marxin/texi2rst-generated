@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SPREAD, array, increase dimension, array, duplicate elements, array, duplicate dimensions
+
 .. _spread:
-
-.. index:: SPREAD
-
-.. index:: array, increase dimension
-
-.. index:: array, duplicate elements
-
-.. index:: array, duplicate dimensions
 
 SPREAD --- Add a dimension to an array
 **************************************
@@ -60,4 +54,3 @@ SPREAD --- Add a dimension to an array
 
   :samp:`{See also}:`
     :ref:`UNPACK`
-

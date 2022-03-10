@@ -10,9 +10,7 @@ V850 Function Attributes
 
 The V850 back end supports these function attributes:
 
-.. index:: interrupt function attribute, V850
-
-.. index:: interrupt_handler function attribute, V850
+.. index:: interrupt function attribute, V850, interrupt_handler function attribute, V850
 
 .. gcc-attr:: interrupt, interrupt_handler
 
@@ -20,4 +18,3 @@ The V850 back end supports these function attributes:
   that the specified function is an interrupt handler.  The compiler generates
   function entry and exit sequences suitable for use in an interrupt handler
   when either attribute is present.
-

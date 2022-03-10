@@ -45,4 +45,3 @@ be no space between the ``//`` and the name of the directive.
 ``//go:noinline``
   The ``//go:noinline`` directive specifies that the next function
   defined in the file may not be inlined.
-

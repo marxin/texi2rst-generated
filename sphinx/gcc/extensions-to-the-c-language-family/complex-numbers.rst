@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: complex numbers, _Complex keyword, __complex__ keyword
+
 .. _complex:
-
-.. index:: complex numbers
-
-.. index:: _Complex keyword
-
-.. index:: __complex__ keyword
 
 Complex Numbers
 ***************
@@ -53,9 +49,7 @@ is considered illformed and G++ will error out.
 GCC provides a built-in function ``__builtin_complex`` will can be used to
 construct a complex value.
 
-.. index:: __real__ keyword
-
-.. index:: __imag__ keyword
+.. index:: __real__ keyword, __imag__ keyword
 
 GCC has a few extensions which can be used to extract the real
 and the imaginary part of the complex-valued expression. Note
@@ -112,4 +106,3 @@ examine and set these two fictitious variables with your debugger.
   complex type with real and imaginary parts :samp:`{real}` and :samp:`{imag}`.
   Unlike :samp:`{real} + I * {imag}`, this works even when
   infinities, NaNs and negative zeros are involved.
-

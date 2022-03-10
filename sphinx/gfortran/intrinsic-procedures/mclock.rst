@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MCLOCK, time, clock ticks, clock ticks
+
 .. _mclock:
-
-.. index:: MCLOCK
-
-.. index:: time, clock ticks
-
-.. index:: clock ticks
 
 MCLOCK --- Time function
 ************************
@@ -42,4 +38,3 @@ MCLOCK --- Time function
     :ref:`LTIME`, 
     :ref:`MCLOCK`, 
     :ref:`TIME`
-

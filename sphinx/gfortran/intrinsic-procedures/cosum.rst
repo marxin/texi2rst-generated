@@ -8,9 +8,7 @@
 CO_SUM --- Sum of values on the current set of images
 *****************************************************
 
-.. index:: CO_SUM
-
-.. index:: Collectives, sum of values
+.. index:: CO_SUM, Collectives, sum of values
 
 .. function:: CO_SUM(A, RESULT_IMAGE, STAT, ERRMSG)
 
@@ -69,4 +67,3 @@ CO_SUM --- Sum of values on the current set of images
     :ref:`CO_MIN`, 
     :ref:`CO_REDUCE`, 
     :ref:`CO_BROADCAST`
-

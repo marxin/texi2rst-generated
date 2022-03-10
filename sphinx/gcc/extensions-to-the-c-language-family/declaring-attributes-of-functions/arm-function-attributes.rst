@@ -49,11 +49,7 @@ These function attributes are supported for ARM targets:
   Use this attribute on ARM to write Interrupt Service Routines. This is an
   alias to the :gcc-attr:`interrupt` attribute above.
 
-.. index:: long_call function attribute, ARM
-
-.. index:: short_call function attribute, ARM
-
-.. index:: indirect calls, ARM
+.. index:: long_call function attribute, ARM, short_call function attribute, ARM, indirect calls, ARM
 
 .. gcc-attr:: long_call, short_call
 
@@ -170,4 +166,3 @@ These function attributes are supported for ARM targets:
     In this example ``target("+crc+nocrypto")`` enables the ``crc``
     extension and disables the ``crypto`` extension for the function ``foo``
     without modifying an existing :option:`-march` = or :option:`-mcpu` option.
-

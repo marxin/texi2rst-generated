@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _files-opened-without-an-explicit-action=-specifier:
-
 .. index:: open, action
+
+.. _files-opened-without-an-explicit-action=-specifier:
 
 Files opened without an explicit ACTION= specifier
 **************************************************
@@ -21,4 +21,3 @@ processor dependent.  GNU Fortran behaves as follows:
 * If that fails, try to open with ``ACTION='WRITE'``
 
 * If that fails, generate an error
-

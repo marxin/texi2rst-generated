@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SINH, DSINH, hyperbolic sine, hyperbolic function, sine, sine, hyperbolic
+
 .. _sinh:
-
-.. index:: SINH
-
-.. index:: DSINH
-
-.. index:: hyperbolic sine
-
-.. index:: hyperbolic function, sine
-
-.. index:: sine, hyperbolic
 
 SINH --- Hyperbolic sine function 
 **********************************
@@ -59,4 +51,3 @@ SINH --- Hyperbolic sine function
 
   :samp:`{See also}:`
     :ref:`ASINH`
-

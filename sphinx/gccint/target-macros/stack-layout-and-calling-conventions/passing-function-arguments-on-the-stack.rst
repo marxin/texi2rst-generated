@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: arguments on stack, stack arguments
+
 .. _stack-arguments:
-
-.. index:: arguments on stack
-
-.. index:: stack arguments
 
 Passing Function Arguments on the Stack
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,9 +70,7 @@ control passing certain arguments in registers.
 
   If the value of this macro has a type, it should be an unsigned type.
 
-.. index:: outgoing_args_size
-
-.. index:: crtl->outgoing_args_size
+.. index:: outgoing_args_size, crtl->outgoing_args_size
 
 .. c:macro:: ACCUMULATE_OUTGOING_ARGS
 
@@ -195,4 +191,3 @@ control passing certain arguments in registers.
   that have been passed to the function.  Since this is a property of the
   call site, not of the called function, ``RETURN_POPS_ARGS`` is not
   appropriate.
-

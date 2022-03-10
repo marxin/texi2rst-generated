@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _iterators:
-
 .. index:: iterators in .md files
+
+.. _iterators:
 
 Iterators
 *********
@@ -18,9 +18,9 @@ facilities to make this process easier.
   :maxdepth: 2
 
 
-.. _mode-iterators:
-
 .. index:: mode iterators in .md files
+
+.. _mode-iterators:
 
 Mode Iterators
 ^^^^^^^^^^^^^^
@@ -45,9 +45,9 @@ rtx-based construct, such as a ``define_insn``,
   :maxdepth: 2
 
 
-.. _defining-mode-iterators:
-
 .. index:: define_mode_iterator
+
+.. _defining-mode-iterators:
 
 Defining Mode Iterators
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,9 +92,9 @@ Iterators are applied in the order they are defined.  This can be
 significant if two iterators are used in a construct that requires
 substitutions.  See :ref:`substitutions`.
 
-.. _substitutions:
-
 .. index:: define_mode_attr
+
+.. _substitutions:
 
 Substitution in Mode Iterators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -206,13 +206,9 @@ This is exactly equivalent to:
     [(set_attr "type" "arith")
      (set_attr "mode" "DI")])
 
+.. index:: code iterators in .md files, define_code_iterator, define_code_attr
+
 .. _code-iterators:
-
-.. index:: code iterators in .md files
-
-.. index:: define_code_iterator
-
-.. index:: define_code_attr
 
 Code Iterators
 ^^^^^^^^^^^^^^
@@ -313,13 +309,9 @@ This is equivalent to:
 
   ...
 
+.. index:: int iterators in .md files, define_int_iterator, define_int_attr
+
 .. _int-iterators:
-
-.. index:: int iterators in .md files
-
-.. index:: define_int_iterator
-
-.. index:: define_int_attr
 
 Int Iterators
 ^^^^^^^^^^^^^
@@ -393,13 +385,9 @@ This is equivalent to:
     [(set_attr "type" "neon_vqneg_vqabs")]
   )
 
+.. index:: subst iterators in .md files, define_subst, define_subst_attr
+
 .. _subst-iterators:
-
-.. index:: subst iterators in .md files
-
-.. index:: define_subst
-
-.. index:: define_subst_attr
 
 Subst Iterators
 ^^^^^^^^^^^^^^^
@@ -446,9 +434,9 @@ replaced in the first copy of the original RTL-template.
 :samp:`{subst-applied-value}` is a value with which subst-attribute would be
 replaced in the second copy of the original RTL-template.
 
-.. _parameterized-names:
-
 .. index:: @ in instruction pattern names
+
+.. _parameterized-names:
 
 Parameterized Names
 ^^^^^^^^^^^^^^^^^^^
@@ -553,4 +541,3 @@ output and three inputs).  This combination would produce separate
 :samp:`maybe_gen_{name}` and :samp:`gen_{name}` functions for
 each operand count, but it would still produce a single
 :samp:`maybe_code_for_{name}` and a single :samp:`code_for_{name}`.
-

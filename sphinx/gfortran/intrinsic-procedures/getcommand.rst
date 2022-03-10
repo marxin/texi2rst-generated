@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GET_COMMAND, command-line arguments, arguments, to program
+
 .. _get_command:
-
-.. index:: GET_COMMAND
-
-.. index:: command-line arguments
-
-.. index:: arguments, to program
 
 GET_COMMAND --- Get the entire command line
 *******************************************
@@ -62,4 +58,3 @@ GET_COMMAND --- Get the entire command line
   :samp:`{See also}:`
     :ref:`GET_COMMAND_ARGUMENT`, 
     :ref:`COMMAND_ARGUMENT_COUNT`
-

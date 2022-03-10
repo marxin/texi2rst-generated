@@ -3,16 +3,14 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gfc_code:
-
 .. index:: statement chaining
+
+.. _gfc_code:
 
 gfc_code
 ********
 
-.. index:: gfc_code
-
-.. index:: struct gfc_code
+.. index:: gfc_code, struct gfc_code
 
 The executable statements in a program unit are represented by a
 nested chain of ``gfc_code`` structures.  The type of statement is

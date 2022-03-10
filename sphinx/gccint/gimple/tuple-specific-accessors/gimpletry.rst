@@ -49,4 +49,3 @@ GIMPLE_TRY
 
   Set ``CLEANUP`` to be the sequence of statements to use as the
   cleanup body for ``GIMPLE_TRY`` ``G``.
-

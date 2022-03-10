@@ -120,4 +120,3 @@ following functions are supported:
 .. function:: void __builtin_rx_wait (void)
 
   Generates the ``wait`` machine instruction.
-

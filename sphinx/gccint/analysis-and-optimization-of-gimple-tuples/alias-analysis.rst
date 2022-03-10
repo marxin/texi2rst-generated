@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: alias, flow-sensitive alias analysis, flow-insensitive alias analysis
+
 .. _alias-analysis:
-
-.. index:: alias
-
-.. index:: flow-sensitive alias analysis
-
-.. index:: flow-insensitive alias analysis
 
 Alias analysis
 **************
@@ -106,4 +102,3 @@ be queried to disambiguate explicit and implicit memory references.
   ``walk_aliased_vdefs`` walks over dominating memory defining
   statements and calls back on each statement clobbering ref
   providing its aliasing VDEF.  The walk stops if asked to.
-

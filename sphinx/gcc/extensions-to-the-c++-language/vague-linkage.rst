@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _vague-linkage:
-
 .. index:: vague linkage
+
+.. _vague-linkage:
 
 Vague Linkage
 *************
@@ -78,4 +78,3 @@ almost certainly breaks things.
 
 See :ref:`c++-interface`, for
 another way to control placement of these constructs.
-

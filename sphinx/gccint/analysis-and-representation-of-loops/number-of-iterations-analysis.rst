@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _number-of-iterations:
-
 .. index:: Number of iterations analysis
+
+.. _number-of-iterations:
 
 Number of iterations analysis
 *****************************
@@ -83,4 +83,3 @@ of a loop versioned under ``assumptions`` is valid unconditionally.
 Other constraints may be added in the future, for example, a constraint
 indicating that loops' latch must roll thus ``may_be_zero`` would be
 false unconditionally.
-

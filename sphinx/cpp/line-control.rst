@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _line-control:
-
 .. index:: line control
+
+.. _line-control:
 
 Line Control
 ------------
@@ -53,4 +53,3 @@ for subsequent input in the current preprocessor input file.
 :samp:`#line` directives alter the results of the ``__FILE__`` and
 ``__LINE__`` predefined macros from that point on.  See :ref:`standard-predefined-macros`.  They do not have any effect on :samp:`#include`'s
 idea of the directory containing the current file.
-

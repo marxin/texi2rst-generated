@@ -42,4 +42,3 @@ likely to be removed in the future.
 
 ``__is_same (type1, type2)``
   A binary type trait: ``true`` whenever the type arguments are the same.
-

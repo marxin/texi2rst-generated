@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: assembler format, output of assembler code
+
 .. _file-framework:
-
-.. index:: assembler format
-
-.. index:: output of assembler code
 
 The Overall Framework of an Assembler File
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -287,4 +285,3 @@ This describes the overall framework of an assembly file.
   hook.
 
 .. hook-end
-

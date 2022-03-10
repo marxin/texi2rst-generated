@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: position independent code, PIC
+
 .. _pic:
-
-.. index:: position independent code
-
-.. index:: PIC
 
 Position Independent Code
 *************************
@@ -53,4 +51,3 @@ relative addresses.
   check it either.  You need not define this macro if all constants
   (including ``SYMBOL_REF``) can be immediate operands when generating
   position independent code.
-

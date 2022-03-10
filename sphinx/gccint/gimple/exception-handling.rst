@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gimple-exception-handling:
-
 .. index:: GIMPLE Exception Handling
+
+.. _gimple-exception-handling:
 
 Exception Handling
 ******************
@@ -44,4 +44,3 @@ Just before running the optimizers, the compiler lowers the
 high-level EH constructs above into a set of ``goto`` s, magic
 labels, and EH regions.  Continuing to unwind at the end of a
 cleanup is represented with a ``GIMPLE_RESX``.
-

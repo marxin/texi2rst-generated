@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _c++-modules:
-
 .. index:: speed of compilation
+
+.. _c++-modules:
 
 C++ Modules
 ***********
@@ -132,9 +132,9 @@ see :ref:`c++-module-mapper`.
   :maxdepth: 2
 
 
-.. _c++-module-mapper:
-
 .. index:: C++ Module Mapper
+
+.. _c++-module-mapper:
 
 Module Mapper
 ^^^^^^^^^^^^^
@@ -235,9 +235,9 @@ which specifies the canonical protocol definition.  A proof of concept
 server implementation embedded in :command:`make` was described in
 'Make Me A Module', https://wg21.link/p1602.
 
-.. _c++-module-preprocessing:
-
 .. index:: C++ Module Preprocessing
+
+.. _c++-module-preprocessing:
 
 Module Preprocessing
 ^^^^^^^^^^^^^^^^^^^^
@@ -278,9 +278,9 @@ preprocessing a header-unit, or consuming such preprocessed output:
   g++ -fmodules-ts -E -fdirectives-only my-header.hh -o my-header.ii
   g++ -x c++-header -fmodules-ts -fpreprocessed -fdirectives-only my-header.ii
 
-.. _c++-compiled-module-interface:
-
 .. index:: C++ Compiled Module Interface
+
+.. _c++-compiled-module-interface:
 
 Compiled Module Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -357,4 +357,3 @@ The ``.gnu.c++.README`` contents do not affect CMI integrity, and
 it may be removed or altered.  The section numbering of the sections
 whose names do not begin with ``.gnu.c++.``, or are not the string
 section is significant and must not be altered.
-

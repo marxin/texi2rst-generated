@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ASIN, DASIN, trigonometric function, sine, inverse, sine, inverse
+
 .. _asin:
-
-.. index:: ASIN
-
-.. index:: DASIN
-
-.. index:: trigonometric function, sine, inverse
-
-.. index:: sine, inverse
 
 ASIN --- Arcsine function 
 **************************
@@ -63,4 +57,3 @@ ASIN --- Arcsine function
     :ref:`SIN` 
     Degrees function: 
     :ref:`ASIND`
-

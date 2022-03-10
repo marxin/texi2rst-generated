@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RESHAPE, array, change dimensions, array, transmogrify
+
 .. _reshape:
-
-.. index:: RESHAPE
-
-.. index:: array, change dimensions
-
-.. index:: array, transmogrify
 
 RESHAPE --- Function to reshape an array
 ****************************************
@@ -66,4 +62,3 @@ RESHAPE --- Function to reshape an array
 
   :samp:`{See also}:`
     :ref:`SHAPE`
-

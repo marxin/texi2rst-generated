@@ -30,4 +30,3 @@ containing the right hand side of an equivalent ``#define`` or
 Since these are all processed before the first line of the main input
 file, it will typically have an assigned line closer to twenty than to
 one.
-

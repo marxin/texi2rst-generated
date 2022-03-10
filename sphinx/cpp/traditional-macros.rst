@@ -97,4 +97,3 @@ pasting.
   #define suffix(x) foo_/**/x
   suffix(bar)
        → foo_bar
-

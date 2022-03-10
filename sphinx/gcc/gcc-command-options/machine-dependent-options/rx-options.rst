@@ -5,9 +5,9 @@
 
 .. program:: RX
 
-.. _rx-options:
-
 .. index:: RX Options
+
+.. _rx-options:
 
 RX Options
 ^^^^^^^^^^

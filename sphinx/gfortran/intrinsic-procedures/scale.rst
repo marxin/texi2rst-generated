@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SCALE, real number, scale, floating point, scale
+
 .. _scale:
-
-.. index:: SCALE
-
-.. index:: real number, scale
-
-.. index:: floating point, scale
 
 SCALE --- Scale a real value
 ****************************
@@ -49,4 +45,3 @@ SCALE --- Scale a real value
         integer :: i = 5
         print *, scale(x,i), x*radix(x)**i
       end program test_scale
-

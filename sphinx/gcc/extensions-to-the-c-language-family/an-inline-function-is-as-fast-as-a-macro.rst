@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: inline functions, integrating function code, open coding, macros, inline alternative
+
 .. _inline:
-
-.. index:: inline functions
-
-.. index:: integrating function code
-
-.. index:: open coding
-
-.. index:: macros, inline alternative
 
 An Inline Function is As Fast As a Macro
 ****************************************
@@ -69,9 +63,7 @@ using the ``inline`` keyword and then is defined with
 In both of these common cases, the program behaves the same as if you
 had not used the ``inline`` keyword, except for its speed.
 
-.. index:: inline functions, omission of
-
-.. index:: fkeep-inline-functions
+.. index:: inline functions, omission of, fkeep-inline-functions
 
 When a function is both inline and ``static``, if all calls to the
 function are integrated into the caller, and the function's address is
@@ -93,15 +85,7 @@ of ``__builtin_longjmp`` and use of ``__builtin_return`` or
 function marked ``inline`` could not be substituted, and gives the
 reason for the failure.
 
-.. index:: automatic inline for C++ member fns
-
-.. index:: inline automatic for C++ member fns
-
-.. index:: member fns, automatically inline
-
-.. index:: C++ member fns, automatically inline
-
-.. index:: fno-default-inline
+.. index:: automatic inline for C++ member fns, inline automatic for C++ member fns, member fns, automatically inline, C++ member fns, automatically inline, fno-default-inline
 
 As required by ISO C++, GCC considers member functions defined within
 the body of a class to be marked inline even if they are
@@ -140,4 +124,3 @@ definition (lacking ``inline`` and ``extern``) in a library file.
 The definition in the header file causes most calls to the function
 to be inlined.  If any uses of the function remain, they refer to
 the single copy in the library.
-

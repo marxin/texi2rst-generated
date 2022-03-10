@@ -16,4 +16,3 @@ Implementing MASTER construct
 Alternately, we generate two copies of the parallel subfunction
 and only include this in the version run by the primary thread.
 Surely this is not worthwhile though...
-

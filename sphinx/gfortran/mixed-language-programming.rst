@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Interoperability, Mixed-language programming
+
 .. _mixed-language-programming:
-
-.. index:: Interoperability
-
-.. index:: Mixed-language programming
 
 Mixed-Language Programming
 --------------------------
@@ -37,4 +35,3 @@ or :command:`g++` if you also add an explicit :option:`-lgfortran` option
 to link with the Fortran library.  If your main program is written in
 C or some other language instead of Fortran, see
 :ref:`non-fortran-main-program`, below.
-

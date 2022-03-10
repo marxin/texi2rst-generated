@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TRANSPOSE, array, transpose, matrix, transpose, transpose
+
 .. _transpose:
-
-.. index:: TRANSPOSE
-
-.. index:: array, transpose
-
-.. index:: matrix, transpose
-
-.. index:: transpose
 
 TRANSPOSE --- Transpose an array of rank two
 ********************************************
@@ -39,4 +33,3 @@ TRANSPOSE --- Transpose an array of rank two
     .. code-block:: fortran
 
       RESULT = TRANSPOSE(MATRIX)
-

@@ -25,4 +25,3 @@ omp_get_num_procs -- Number of processors online
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.5.
-

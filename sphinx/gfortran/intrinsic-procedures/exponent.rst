@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: EXPONENT, real number, exponent, floating point, exponent
+
 .. _exponent:
-
-.. index:: EXPONENT
-
-.. index:: real number, exponent
-
-.. index:: floating point, exponent
 
 EXPONENT --- Exponent function 
 *******************************
@@ -48,4 +44,3 @@ EXPONENT --- Exponent function
         print *, i
         print *, exponent(0.0)
       end program test_exponent
-

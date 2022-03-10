@@ -37,4 +37,3 @@ doesn't do the right thing automatically.
   It is possible to make separate sets of fixed header files for the
   different machine models, and arrange a structure of symbolic links so
   as to use the proper set, but you'll have to do this by hand.
-

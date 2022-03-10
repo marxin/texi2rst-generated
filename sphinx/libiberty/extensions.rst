@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: extensions, functions, extension
+
 .. _extensions:
-
-.. index:: extensions
-
-.. index:: functions, extension
 
 Extensions
 **********
@@ -24,9 +22,9 @@ central location from which to use, maintain, and distribute them.
 
 .. This is generated from the glibc manual using contrib/make-obstacks-texi.pl
 
-.. _obstacks:
-
 .. index:: obstacks
+
+.. _obstacks:
 
 Obstacks
 ^^^^^^^^
@@ -55,9 +53,7 @@ Creating Obstacks
 The utilities for manipulating obstacks are declared in the header
 file :samp:`obstack.h`.
 
-.. index:: obstack.h
-
-.. index:: struct obstack
+.. index:: obstack.h, struct obstack
 
 Data Type struct obstackAn obstack is represented by a data structure of type ``struct
 obstack``.  This structure has a small fixed size; it records the status
@@ -101,9 +97,7 @@ must include the header file :samp:`obstack.h`, like this:
 
   #include <obstack.h>
 
-.. index:: obstack_chunk_alloc
-
-.. index:: obstack_chunk_free
+.. index:: obstack_chunk_alloc, obstack_chunk_free
 
 Also, if the source file uses the macro ``obstack_init``, it must
 declare or define two macros that will be called by the
@@ -192,9 +186,9 @@ or ``longjmp`` and doesn't return.
   ...
   obstack_alloc_failed_handler = &my_obstack_alloc_failed;
 
-.. _allocation-in-an-obstack:
-
 .. index:: allocation (obstacks)
+
+.. _allocation-in-an-obstack:
 
 Allocation in an Obstack
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -260,9 +254,9 @@ example of its use:
 Contrast this with the previous example of ``savestring`` using
 ``malloc`` (see :ref:`libc:basic-allocation`).
 
-.. _freeing-obstack-objects:
-
 .. index:: freeing (obstacks)
+
+.. _freeing-obstack-objects:
 
 Freeing Objects in an Obstack
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -293,9 +287,9 @@ the objects in a chunk become free, the obstack library automatically
 frees the chunk (see :ref:`preparing-for-obstacks`).  Then other
 obstacks, or non-obstack allocation, can reuse the space of the chunk.
 
-.. _obstack-functions:
-
 .. index:: macros
+
+.. _obstack-functions:
 
 Obstack Functions and Macros
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -332,11 +326,9 @@ even when not using GNU C.
 ``_obstack_newchunk``, ``_obstack_free``, and
 ``_obstack_memory_used``.  You should not call these directly.
 
+.. index:: growing objects (in obstacks), changing the size of a block (obstacks)
+
 .. _growing-objects:
-
-.. index:: growing objects (in obstacks)
-
-.. index:: changing the size of a block (obstacks)
 
 Growing Objects
 ~~~~~~~~~~~~~~~
@@ -424,9 +416,9 @@ finish it and then free it, like this:
 
 This has no effect if no object was growing.
 
-.. _extra-fast-growing:
-
 .. index:: efficiency and obstacks
+
+.. _extra-fast-growing:
 
 Extra Fast Growing Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -526,11 +518,9 @@ it beyond zero length---there's no telling what will happen if you do
 that.  Earlier versions of obstacks allowed you to use
 ``obstack_blank`` to shrink objects.  This will no longer work.
 
+.. index:: obstack status, status of obstack
+
 .. _status-of-an-obstack:
-
-.. index:: obstack status
-
-.. index:: status of obstack
 
 Status of an Obstack
 ~~~~~~~~~~~~~~~~~~~~
@@ -566,9 +556,9 @@ still growing it.
 
     ((size_t) (obstack_next_free (obstack_ptr) - obstack_base (obstack_ptr)))
 
-.. _obstacks-data-alignment:
-
 .. index:: alignment (in obstacks)
+
+.. _obstacks-data-alignment:
 
 Alignment of Data in Obstacks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -608,11 +598,9 @@ alignment mask take effect immediately by calling ``obstack_finish``.
 This will finish a zero-length object and then do proper alignment for
 the next object.
 
+.. index:: efficiency of chunks, chunks
+
 .. _obstack-chunks:
-
-.. index:: efficiency of chunks
-
-.. index:: chunks
 
 Obstack Chunks
 ~~~~~~~~~~~~~~
@@ -777,4 +765,3 @@ argument.
 
   Address just after the end of the currently growing object.
   See :ref:`status-of-an-obstack`.
-

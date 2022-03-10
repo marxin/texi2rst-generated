@@ -74,4 +74,3 @@ the function created for the parallel threads to execute.
 .. function:: void gimple_omp_parallel_set_data_arg ( gomp_parallel *g, tree data_arg)
 
   Set ``DATA_ARG`` to be the data argument for ``OMP_PARALLEL`` ``G``.
-

@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Specific, Specific installation notes, Target specific installation, Host specific installation, Target specific installation notes
+
 .. _specific:
-
-.. index:: Specific
-
-.. index:: Specific installation notes
-
-.. index:: Target specific installation
-
-.. index:: Host specific installation
-
-.. index:: Target specific installation notes
 
 Host/target specific installation notes for GCC
 -----------------------------------------------

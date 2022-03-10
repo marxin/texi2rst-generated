@@ -5,9 +5,9 @@
 
 .. program:: RISC-V
 
-.. _risc-v-options:
-
 .. index:: RISC-V Options
+
+.. _risc-v-options:
 
 RISC-V Options
 ^^^^^^^^^^^^^^
@@ -210,4 +210,3 @@ These command-line options are defined for RISC-V targets:
   and from what offset from that base register. There is no default
   register or offset as this is entirely for use within the Linux
   kernel.
-

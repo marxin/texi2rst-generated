@@ -5,9 +5,9 @@
 
 .. program:: Score
 
-.. _score-options:
-
 .. index:: Score Options
+
+.. _score-options:
 
 Score Options
 ^^^^^^^^^^^^^
@@ -49,4 +49,3 @@ These options are defined for Score implementations:
 .. option:: -mscore7d
 
   Specify the SCORE7D as the target architecture.
-

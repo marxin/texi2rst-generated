@@ -1471,4 +1471,3 @@ Local to tests in gcc.test-framework
 
 ``yes``
   Always returns 1.
-

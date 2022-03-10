@@ -58,51 +58,7 @@ should submit your patches for inclusion in GCC.
 Types for C++
 ^^^^^^^^^^^^^
 
-.. index:: UNKNOWN_TYPE
-
-.. index:: TYPENAME_TYPE
-
-.. index:: TYPEOF_TYPE
-
-.. index:: cp_type_quals
-
-.. index:: TYPE_UNQUALIFIED
-
-.. index:: TYPE_QUAL_CONST
-
-.. index:: TYPE_QUAL_VOLATILE
-
-.. index:: TYPE_QUAL_RESTRICT
-
-.. index:: TYPE_MAIN_VARIANT
-
-.. index:: qualified type
-
-.. index:: TYPE_SIZE
-
-.. index:: TYPE_ALIGN
-
-.. index:: TYPE_PRECISION
-
-.. index:: TYPE_ARG_TYPES
-
-.. index:: TYPE_METHOD_BASETYPE
-
-.. index:: TYPE_PTRDATAMEM_P
-
-.. index:: TYPE_OFFSET_BASETYPE
-
-.. index:: TREE_TYPE
-
-.. index:: TYPE_CONTEXT
-
-.. index:: TYPE_NAME
-
-.. index:: TYPENAME_TYPE_FULLNAME
-
-.. index:: TYPE_FIELDS
-
-.. index:: TYPE_PTROBV_P
+.. index:: UNKNOWN_TYPE, TYPENAME_TYPE, TYPEOF_TYPE, cp_type_quals, TYPE_UNQUALIFIED, TYPE_QUAL_CONST, TYPE_QUAL_VOLATILE, TYPE_QUAL_RESTRICT, TYPE_MAIN_VARIANT, qualified type, TYPE_SIZE, TYPE_ALIGN, TYPE_PRECISION, TYPE_ARG_TYPES, TYPE_METHOD_BASETYPE, TYPE_PTRDATAMEM_P, TYPE_OFFSET_BASETYPE, TREE_TYPE, TYPE_CONTEXT, TYPE_NAME, TYPENAME_TYPE_FULLNAME, TYPE_FIELDS, TYPE_PTROBV_P
 
 In C++, an array type is not qualified; rather the type of the array
 elements is qualified.  This situation is reflected in the intermediate
@@ -249,9 +205,9 @@ language-dependent info about GENERIC types.
    Namespaces
    -
 
-.. _namespaces:
-
 .. index:: namespace, scope
+
+.. _namespaces:
 
 Namespaces
 ^^^^^^^^^^
@@ -332,26 +288,14 @@ The following macros and functions can be used on a ``NAMESPACE_DECL`` :
    Classes
    -
 
-.. _classes:
-
 .. index:: class, scope
+
+.. _classes:
 
 Classes
 ^^^^^^^
 
-.. index:: RECORD_TYPE
-
-.. index:: UNION_TYPE
-
-.. index:: CLASSTYPE_DECLARED_CLASS
-
-.. index:: TYPE_BINFO
-
-.. index:: BINFO_TYPE
-
-.. index:: TYPE_FIELDS
-
-.. index:: TYPE_VFIELD
+.. index:: RECORD_TYPE, UNION_TYPE, CLASSTYPE_DECLARED_CLASS, TYPE_BINFO, BINFO_TYPE, TYPE_FIELDS, TYPE_VFIELD
 
 Besides namespaces, the other high-level scoping construct in C++ is the
 class.  (Throughout this manual the term :dfn:`class` is used to mean the
@@ -469,20 +413,14 @@ The following macros can be used on a tree node representing a class-type.
   This predicate holds for a class-type for which ``operator->`` is
   overloaded.
 
-.. _functions-for-c++:
-
 .. index:: function
+
+.. _functions-for-c++:
 
 Functions for C++
 ^^^^^^^^^^^^^^^^^
 
-.. index:: FUNCTION_DECL
-
-.. index:: OVERLOAD
-
-.. index:: OVL_CURRENT
-
-.. index:: OVL_NEXT
+.. index:: FUNCTION_DECL, OVERLOAD, OVL_CURRENT, OVL_NEXT
 
 A function is represented by a ``FUNCTION_DECL`` node.  A set of
 overloaded functions is sometimes represented by an ``OVERLOAD`` node.
@@ -681,90 +619,14 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
    Function Bodies
    -
 
-.. _statements-for-c-and-c++:
-
 .. index:: statements
+
+.. _statements-for-c-and-c++:
 
 Statements for C and C++
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. index:: BREAK_STMT
-
-.. index:: CLEANUP_STMT
-
-.. index:: CLEANUP_DECL
-
-.. index:: CLEANUP_EXPR
-
-.. index:: CONTINUE_STMT
-
-.. index:: DECL_STMT
-
-.. index:: DECL_STMT_DECL
-
-.. index:: DO_STMT
-
-.. index:: DO_BODY
-
-.. index:: DO_COND
-
-.. index:: EMPTY_CLASS_EXPR
-
-.. index:: EXPR_STMT
-
-.. index:: EXPR_STMT_EXPR
-
-.. index:: FOR_STMT
-
-.. index:: FOR_INIT_STMT
-
-.. index:: FOR_COND
-
-.. index:: FOR_EXPR
-
-.. index:: FOR_BODY
-
-.. index:: HANDLER
-
-.. index:: IF_STMT
-
-.. index:: IF_COND
-
-.. index:: THEN_CLAUSE
-
-.. index:: ELSE_CLAUSE
-
-.. index:: RETURN_STMT
-
-.. index:: RETURN_EXPR
-
-.. index:: SUBOBJECT
-
-.. index:: SUBOBJECT_CLEANUP
-
-.. index:: SWITCH_STMT
-
-.. index:: SWITCH_COND
-
-.. index:: SWITCH_BODY
-
-.. index:: TRY_BLOCK
-
-.. index:: TRY_STMTS
-
-.. index:: TRY_HANDLERS
-
-.. index:: HANDLER_PARMS
-
-.. index:: HANDLER_BODY
-
-.. index:: USING_STMT
-
-.. index:: WHILE_STMT
-
-.. index:: WHILE_BODY
-
-.. index:: WHILE_COND
+.. index:: BREAK_STMT, CLEANUP_STMT, CLEANUP_DECL, CLEANUP_EXPR, CONTINUE_STMT, DECL_STMT, DECL_STMT_DECL, DO_STMT, DO_BODY, DO_COND, EMPTY_CLASS_EXPR, EXPR_STMT, EXPR_STMT_EXPR, FOR_STMT, FOR_INIT_STMT, FOR_COND, FOR_EXPR, FOR_BODY, HANDLER, IF_STMT, IF_COND, THEN_CLAUSE, ELSE_CLAUSE, RETURN_STMT, RETURN_EXPR, SUBOBJECT, SUBOBJECT_CLEANUP, SWITCH_STMT, SWITCH_COND, SWITCH_BODY, TRY_BLOCK, TRY_STMTS, TRY_HANDLERS, HANDLER_PARMS, HANDLER_BODY, USING_STMT, WHILE_STMT, WHILE_BODY, WHILE_COND
 
 A function that has a definition in the current translation unit has
 a non- ``NULL`` ``DECL_INITIAL``.  However, back ends should not make

@@ -21,4 +21,3 @@ The variable :envvar:`GCC_ACC_NOTIFY` is used for diagnostic purposes.
   openacc-environment-variables/accdevicenum
   openacc-environment-variables/accproflib
   openacc-environment-variables/gccaccnotify
-

@@ -18,4 +18,3 @@ Functions contained in ``libiberty`` can be divided into three general categorie
   replacement-functions
 
   extensions
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: return values in registers, values, returned by functions, scalars, returned as values
+
 .. _scalar-return:
-
-.. index:: return values in registers
-
-.. index:: values, returned by functions
-
-.. index:: scalars, returned as values
 
 How Scalar Function Values Are Returned
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -168,4 +164,3 @@ values---values that can fit in registers.
   ``SImode`` rtx.
 
 .. hook-end
-

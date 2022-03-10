@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _deleted-code:
-
 .. index:: commenting out code
+
+.. _deleted-code:
 
 Deleted Code
 ************
@@ -32,4 +32,3 @@ tokens; in particular, single-quote characters must balance.  Comments
 often contain unbalanced single-quote characters (known in English as
 apostrophes).  These confuse ``#if 0``.  They don't confuse
 :samp:`/*`.
-

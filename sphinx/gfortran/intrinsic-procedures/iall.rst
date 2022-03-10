@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IALL, array, AND, bits, AND of array elements
+
 .. _iall:
-
-.. index:: IALL
-
-.. index:: array, AND
-
-.. index:: bits, AND of array elements
 
 IALL --- Bitwise AND of array elements
 **************************************
@@ -65,4 +61,3 @@ IALL --- Bitwise AND of array elements
     :ref:`IANY`, 
     :ref:`IPARITY`, 
     :ref:`IAND`
-

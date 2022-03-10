@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FLUSH, file operation, flush
+
 .. _flush:
-
-.. index:: FLUSH
-
-.. index:: file operation, flush
 
 FLUSH --- Flush I/O unit(s)
 ***************************
@@ -73,4 +71,3 @@ FLUSH --- Flush I/O unit(s)
 
         ! Handle possible error
         if (ret /= 0) stop "Error calling FSYNC"
-

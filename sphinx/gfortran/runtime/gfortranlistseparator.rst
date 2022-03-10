@@ -19,4 +19,3 @@ be sure to quote spaces, as in
 
 when :command:`a.out` is the compiled Fortran program that you want to run.
 Default is a single space.
-

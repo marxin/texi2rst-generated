@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: pmf, pointer to member function, bound pointer to member function
+
 .. _bound-member-functions:
-
-.. index:: pmf
-
-.. index:: pointer to member function
-
-.. index:: bound pointer to member function
 
 Extracting the Function Pointer from a Bound Pointer to Member Function
 ***********************************************************************
@@ -50,4 +46,3 @@ converted to function pointers directly:
 .. index:: Wno-pmf-conversions
 
 You must specify :option:`-Wno-pmf-conversions` to use this extension.
-

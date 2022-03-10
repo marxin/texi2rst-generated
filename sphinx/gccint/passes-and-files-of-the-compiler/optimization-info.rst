@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _optimization-info:
-
 .. index:: optimization dumps
+
+.. _optimization-info:
 
 Optimization info
 *****************
@@ -19,9 +19,9 @@ information about various compiler transformations and optimizations.
   :maxdepth: 2
 
 
-.. _dump-setup:
-
 .. index:: dump setup
+
+.. _dump-setup:
 
 Dump setup
 ^^^^^^^^^^
@@ -46,9 +46,9 @@ infrastructure.
 The recommended way to setup the dump output is via ``dump_start``
 and ``dump_end``.
 
-.. _optimization-groups:
-
 .. index:: optimization groups
+
+.. _optimization-groups:
 
 Optimization groups
 ^^^^^^^^^^^^^^^^^^^
@@ -89,9 +89,9 @@ By using groups a user could selectively enable optimization
 information only for a group of passes. By default, the optimization
 information for all the passes is dumped.
 
-.. _dump-files-and-streams:
-
 .. index:: optimization info file names
+
+.. _dump-files-and-streams:
 
 Dump files and streams
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -117,9 +117,9 @@ redirecting ``stderr``.
   response to the :option:`-fopt-info`. Again a file name can be given. If
   the file name is not given, it defaults to ``stderr``.
 
-.. _dump-output-verbosity:
-
 .. index:: dump verbosity
+
+.. _dump-output-verbosity:
 
 Dump output verbosity
 ^^^^^^^^^^^^^^^^^^^^^
@@ -151,9 +151,9 @@ The dump verbosity has the following options
   Print detailed optimization information. This includes
   :samp:`{optimized}`, :samp:`{missed}`, and :samp:`{note}`.
 
-.. _dump-types:
-
 .. index:: dump types
+
+.. _dump-types:
 
 Dump types
 ^^^^^^^^^^
@@ -209,9 +209,9 @@ Dump types
   can also be constructed from a ``gimple *`` and from a ``rtx_insn *``,
   and it too can be passed as the ``_loc`` argument.
 
-.. _dump-examples:
-
 .. index:: dump examples
+
+.. _dump-examples:
 
 Dump examples
 ^^^^^^^^^^^^^
@@ -260,4 +260,3 @@ in conflict since only one output file is allowed. In this case, only
 the first option takes effect and the subsequent options are
 ignored. Thus only the :samp:`vec.miss` is produced which containts
 dumps from the vectorizer about missed opportunities.
-

@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL insn template, generating insns, insns, generating, recognizing insns, insns, recognizing
+
 .. _rtl-template:
-
-.. index:: RTL insn template
-
-.. index:: generating insns
-
-.. index:: insns, generating
-
-.. index:: recognizing insns
-
-.. index:: insns, recognizing
 
 RTL Template
 ************
@@ -261,4 +253,3 @@ substitution of the operands.
 :samp:`(match_par_dup {n} [{subpat}...])`
   Like ``match_op_dup``, but for ``match_parallel`` instead of
   ``match_operator``.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _define-subst:
-
 .. index:: define_subst
+
+.. _define-subst:
 
 RTL Templates Transformations
 *****************************
@@ -57,9 +57,9 @@ deleted.
   :maxdepth: 2
 
 
-.. _define-subst-example:
-
 .. index:: define_subst
+
+.. _define-subst-example:
 
 define_subst Example
 ^^^^^^^^^^^^^^^^^^^^
@@ -151,9 +151,9 @@ The result of the ``define_subst`` usage would look like the following:
     "max\t{%2, %1, %0|%0, %1, %2}"
    [...])
 
-.. _define-subst-pattern-matching:
-
 .. index:: define_subst
+
+.. _define-subst-pattern-matching:
 
 Pattern Matching in define_subst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,9 +178,9 @@ of accepted RTL-templates.
 ``match_operator`` from the input pattern has the same number of
 operands as the operator from the original pattern.
 
-.. _define-subst-output-template:
-
 .. index:: define_subst
+
+.. _define-subst-output-template:
 
 Generation of output template in define_subst
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -223,4 +223,3 @@ the original pattern ``N``, so in the resultant pattern there would
 be ``N*M`` alternatives.  Thus, constraints from the original pattern
 would be duplicated ``N`` times, constraints from the output pattern
 would be duplicated ``M`` times, producing all possible combinations.
-

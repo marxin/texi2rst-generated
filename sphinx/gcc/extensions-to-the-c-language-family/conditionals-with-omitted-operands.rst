@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: conditional expressions, extensions, omitted middle-operands, middle-operands, omitted, extensions, ?:, ?: extensions
+
 .. _conditionals:
-
-.. index:: conditional expressions, extensions
-
-.. index:: omitted middle-operands
-
-.. index:: middle-operands, omitted
-
-.. index:: extensions, ?:
-
-.. index:: ?: extensions
 
 Conditionals with Omitted Operands
 **********************************
@@ -37,9 +29,7 @@ This example is perfectly equivalent to
 
   x ? x : y
 
-.. index:: side effect in ?:
-
-.. index:: ?: side effect
+.. index:: side effect in ?:, ?: side effect
 
 In this simple case, the ability to omit the middle operand is not
 especially useful.  When it becomes useful is when the first operand does,
@@ -47,4 +37,3 @@ or may (if it is a macro argument), contain a side effect.  Then repeating
 the operand in the middle would perform the side effect twice.  Omitting
 the middle operand uses the value already computed without the undesirable
 effects of recomputing it.
-

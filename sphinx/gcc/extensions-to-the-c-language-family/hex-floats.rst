@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _hex-floats:
-
 .. index:: hex floats
+
+.. _hex-floats:
 
 Hex Floats
 **********
@@ -28,4 +28,3 @@ is always required in the hexadecimal notation.  Otherwise the compiler
 would not be able to resolve the ambiguity of, e.g., ``0x1.f``.  This
 could mean ``1.0f`` or ``1.9375`` since :samp:`f` is also the
 extension for floating-point constants of type ``float``.
-

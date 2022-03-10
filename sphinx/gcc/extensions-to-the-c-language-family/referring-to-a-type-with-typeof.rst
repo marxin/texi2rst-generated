@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: typeof, sizeof, macros, types of arguments
+
 .. _typeof:
-
-.. index:: typeof
-
-.. index:: sizeof
-
-.. index:: macros, types of arguments
 
 Referring to a Type with typeof
 *******************************
@@ -61,15 +57,7 @@ arithmetic type and evaluates each of its arguments exactly once:
         typeof (b) _b = (b); \
       _a > _b ? _a : _b; })
 
-.. index:: underscores in variables in macros
-
-.. index:: _ in variables in macros
-
-.. index:: local variables in macros
-
-.. index:: variables, local, in macros
-
-.. index:: macros, local variables in
+.. index:: underscores in variables in macros, _ in variables in macros, local variables in macros, variables, local, in macros, macros, local variables in
 
 The reason for using names that start with underscores for the local
 variables is to avoid conflicts with variable names that occur within the
@@ -147,4 +135,3 @@ Using ``__auto_type`` instead of ``typeof`` has two advantages:
 * If the argument to the macro has variably modified type, it is
   evaluated only once when using ``__auto_type``, but twice if
   ``typeof`` is used.
-

@@ -43,4 +43,3 @@ picoChip instruction set.
 
   Halt.  The processor stops execution.  This built-in is useful for
   implementing assertions.
-

@@ -8,9 +8,7 @@
 LSHIFT --- Left shift bits
 **************************
 
-.. index:: LSHIFT
-
-.. index:: bits, shift left
+.. index:: LSHIFT, bits, shift left
 
 .. function:: LSHIFT(I, SHIFT)
 
@@ -49,4 +47,3 @@ LSHIFT --- Left shift bits
     :ref:`SHIFTA`, 
     :ref:`SHIFTL`, 
     :ref:`SHIFTR`
-

@@ -3,27 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: decimal floating types, _Decimal32 data type, _Decimal64 data type, _Decimal128 data type, df integer suffix, dd integer suffix, dl integer suffix, DF integer suffix, DD integer suffix, DL integer suffix
+
 .. _decimal-float:
-
-.. index:: decimal floating types
-
-.. index:: _Decimal32 data type
-
-.. index:: _Decimal64 data type
-
-.. index:: _Decimal128 data type
-
-.. index:: df integer suffix
-
-.. index:: dd integer suffix
-
-.. index:: dl integer suffix
-
-.. index:: DF integer suffix
-
-.. index:: DD integer suffix
-
-.. index:: DL integer suffix
 
 Decimal Floating Types
 **********************
@@ -63,4 +45,3 @@ is incomplete:
 
 Types ``_Decimal32``, ``_Decimal64``, and ``_Decimal128``
 are supported by the DWARF debug information format.
-

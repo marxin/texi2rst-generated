@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TRIM, string, remove trailing whitespace
+
 .. _trim:
-
-.. index:: TRIM
-
-.. index:: string, remove trailing whitespace
 
 TRIM --- Remove trailing blank characters of a string
 *****************************************************
@@ -47,4 +45,3 @@ TRIM --- Remove trailing blank characters of a string
   :samp:`{See also}:`
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`
-

@@ -38,4 +38,3 @@ Example
 
       return 0;
     }
-

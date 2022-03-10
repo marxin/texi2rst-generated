@@ -5,11 +5,9 @@
 
 .. only:: not man
 
+  .. index:: precompiled headers, speed of compilation
+
   .. _precompiled-headers:
-
-  .. index:: precompiled headers
-
-  .. index:: speed of compilation
 
   Using Precompiled Headers
   *************************
@@ -132,4 +130,3 @@
   behavior for the options.  For instance, if you use :option:`-g` to
   generate the precompiled header but not when using it, you may or may
   not get debugging information for routines in the precompiled header.
-

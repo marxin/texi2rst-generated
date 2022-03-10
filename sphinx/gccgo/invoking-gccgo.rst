@@ -107,9 +107,7 @@ Options
 .. option:: -frequire-return-statement
 .. option:: -fno-require-return-statement
 
-  .. index:: -frequire-return-statement
-
-  .. index:: -fno-require-return-statement
+  .. index:: -frequire-return-statement, -fno-require-return-statement
 
   By default :command:`gccgo` will warn about functions which have one or
   more return parameters but lack an explicit ``return`` statement.
@@ -118,9 +116,7 @@ Options
 
 .. option:: -fgo-check-divide-zero
 
-  .. index:: -fgo-check-divide-zero
-
-  .. index:: -fno-go-check-divide-zero
+  .. index:: -fgo-check-divide-zero, -fno-go-check-divide-zero
 
   Add explicit checks for division by zero.  In Go a division (or
   modulos) by zero causes a panic.  On Unix systems this is detected in
@@ -134,9 +130,7 @@ Options
 
 .. option:: -fgo-check-divide-overflow
 
-  .. index:: -fgo-check-divide-overflow
-
-  .. index:: -fno-go-check-divide-overflow
+  .. index:: -fgo-check-divide-overflow, -fno-go-check-divide-overflow
 
   Add explicit checks for division overflow.  For example, division
   overflow occurs when computing ``INT_MIN / -1``.  In Go this should
@@ -172,9 +166,7 @@ Options
 
 .. option:: -fgo-debug-optimization
 
-  .. index:: -fgo-debug-optimization
-
-  .. index:: -fno-go-debug-optimization
+  .. index:: -fgo-debug-optimization, -fno-go-debug-optimization
 
   Output optimization diagnostics.
 

@@ -91,4 +91,3 @@ These function attributes are supported by the AMD GCN back end:
   ``work_item_id_Z``
     Set ``enable_vgpr_workitem_id`` parameter.  Always on (required to use
     OpenACC/OpenMP).
-

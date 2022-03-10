@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FLOOR, floor, rounding, floor
+
 .. _floor:
-
-.. index:: FLOOR
-
-.. index:: floor
-
-.. index:: rounding, floor
 
 FLOOR --- Integer floor function
 ********************************
@@ -55,4 +51,3 @@ FLOOR --- Integer floor function
   :samp:`{See also}:`
     :ref:`CEILING`, 
     :ref:`NINT`
-

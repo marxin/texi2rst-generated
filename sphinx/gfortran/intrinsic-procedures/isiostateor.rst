@@ -8,9 +8,7 @@
 IS_IOSTAT_EOR --- Test for end-of-record value
 **********************************************
 
-.. index:: IS_IOSTAT_EOR
-
-.. index:: IOSTAT, end of record
+.. index:: IS_IOSTAT_EOR, IOSTAT, end of record
 
 .. function:: IS_IOSTAT_EOR(I)
 
@@ -50,4 +48,3 @@ IS_IOSTAT_EOR --- Test for end-of-record value
         READ(88, IOSTAT=stat) i
         IF(IS_IOSTAT_EOR(stat)) STOP 'END OF RECORD'
       END PROGRAM
-

@@ -3,48 +3,14 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: declaration, variable, type declaration
+
 .. _declarations:
-
-.. index:: declaration
-
-.. index:: variable
-
-.. index:: type declaration
 
 Declarations
 ************
 
-.. index:: LABEL_DECL
-
-.. index:: CONST_DECL
-
-.. index:: TYPE_DECL
-
-.. index:: VAR_DECL
-
-.. index:: PARM_DECL
-
-.. index:: DEBUG_EXPR_DECL
-
-.. index:: FIELD_DECL
-
-.. index:: NAMESPACE_DECL
-
-.. index:: RESULT_DECL
-
-.. index:: TEMPLATE_DECL
-
-.. index:: THUNK_DECL
-
-.. index:: THUNK_DELTA
-
-.. index:: DECL_INITIAL
-
-.. index:: DECL_SIZE
-
-.. index:: DECL_ALIGN
-
-.. index:: DECL_EXTERNAL
+.. index:: LABEL_DECL, CONST_DECL, TYPE_DECL, VAR_DECL, PARM_DECL, DEBUG_EXPR_DECL, FIELD_DECL, NAMESPACE_DECL, RESULT_DECL, TEMPLATE_DECL, THUNK_DECL, THUNK_DELTA, DECL_INITIAL, DECL_SIZE, DECL_ALIGN, DECL_EXTERNAL
 
 This section covers the various kinds of declarations that appear in the
 internal representation, except for declarations of functions

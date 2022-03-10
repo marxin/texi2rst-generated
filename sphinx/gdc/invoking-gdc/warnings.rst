@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options to control warnings, warning messages, messages, warning, suppressing warnings
+
 .. _warnings:
-
-.. index:: options to control warnings
-
-.. index:: warning messages
-
-.. index:: messages, warning
-
-.. index:: suppressing warnings
 
 Warnings
 ********
@@ -23,9 +17,7 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Wall
 
-  .. index:: -Wall
-
-  .. index:: -Wno-all
+  .. index:: -Wall, -Wno-all
 
   Turns on all warnings messages.  Warnings are not a defined part of
   the D language, and all constructs for which this may generate a
@@ -39,9 +31,7 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Walloca-larger-than=n
 
-  .. index:: -Walloca-larger-than
-
-  .. index:: -Wno-alloca-larger-than
+  .. index:: -Walloca-larger-than, -Wno-alloca-larger-than
 
   Warn on unbounded uses of alloca, and on bounded uses of alloca
   whose bound can be larger than :samp:`{n}` bytes.
@@ -51,9 +41,7 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Wcast-result
 
-  .. index:: -Wcast-result
-
-  .. index:: -Wno-cast-result
+  .. index:: -Wcast-result, -Wno-cast-result
 
   Warn about casts that will produce a null or zero result.  Currently
   this is only done for casting between an imaginary and non-imaginary
@@ -61,26 +49,20 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Wno-deprecated
 
-  .. index:: -Wdeprecated
-
-  .. index:: -Wno-deprecated
+  .. index:: -Wdeprecated, -Wno-deprecated
 
   Do not warn about usage of deprecated features and symbols with
   ``deprecated`` attributes.
 
 .. option:: -Werror
 
-  .. index:: -Werror
-
-  .. index:: -Wno-error
+  .. index:: -Werror, -Wno-error
 
   Turns all warnings into errors.
 
 .. option:: -Wspeculative
 
-  .. index:: -Wspeculative
-
-  .. index:: -Wno-speculative
+  .. index:: -Wspeculative, -Wno-speculative
 
   List all error messages from speculative compiles, such as
   ``__traits(compiles, ...)``.  This option does not report
@@ -89,18 +71,14 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Wtemplates
 
-  .. index:: -Wtemplates
-
-  .. index:: -Wno-templates
+  .. index:: -Wtemplates, -Wno-templates
 
   Warn when a template instantiation is encountered.  Some coding
   rules disallow templates, and this may be used to enforce that rule.
 
 .. option:: -Wunknown-pragmas
 
-  .. index:: -Wunknown-pragmas
-
-  .. index:: -Wno-unknown-pragmas
+  .. index:: -Wunknown-pragmas, -Wno-unknown-pragmas
 
   Warn when a ``pragma()`` is encountered that is not understood by
   :command:`gdc`.  This differs from :option:`-fignore-unknown-pragmas`
@@ -109,18 +87,14 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -Wno-varargs
 
-  .. index:: Wvarargs
-
-  .. index:: Wno-varargs
+  .. index:: Wvarargs, Wno-varargs
 
   Do not warn upon questionable usage of the macros used to handle variable
   arguments like ``va_start``.
 
 .. option:: -fignore-unknown-pragmas
 
-  .. index:: -fignore-unknown-pragmas
-
-  .. index:: -fno-ignore-unknown-pragmas
+  .. index:: -fignore-unknown-pragmas, -fno-ignore-unknown-pragmas
 
   Turns off errors for unsupported pragmas.
 
@@ -135,9 +109,7 @@ specified, they do not prevent compilation of the program.
 
 .. option:: -fsyntax-only
 
-  .. index:: -fsyntax-only
-
-  .. index:: -fno-syntax-only
+  .. index:: -fsyntax-only, -fno-syntax-only
 
   Check the code for syntax errors, but do not actually compile it.  This
   can be used in conjunction with :option:`-fdoc` or :option:`-H` to generate
@@ -174,4 +146,3 @@ specified, they do not prevent compilation of the program.
 
   :samp:`vmarkdown`
     List instances of Markdown replacements in Ddoc.
-

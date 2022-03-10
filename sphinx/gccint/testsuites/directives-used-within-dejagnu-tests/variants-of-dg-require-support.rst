@@ -81,4 +81,3 @@ A few of the ``dg-require`` directives take arguments.
 
 ``dg-require-weak-override ""``
   Skip the test if the target does not support overriding weak symbols.
-

@@ -22,4 +22,3 @@ GIMPLE_OMP_SECTION
 .. function:: void gimple_omp_section_set_last (gimple g)
 
   Set the ``GF_OMP_SECTION_LAST`` flag on ``G``.
-

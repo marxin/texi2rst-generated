@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TINY, limits, smallest number, model representation, smallest number
+
 .. _tiny:
-
-.. index:: TINY
-
-.. index:: limits, smallest number
-
-.. index:: model representation, smallest number
 
 TINY --- Smallest positive number of a real kind
 ************************************************
@@ -39,4 +35,3 @@ TINY --- Smallest positive number of a real kind
 
   :samp:`{Example}:`
     See ``HUGE`` for an example.
-

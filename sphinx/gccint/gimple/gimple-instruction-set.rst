@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gimple-instruction-set:
-
 .. index:: GIMPLE instruction set
+
+.. _gimple-instruction-set:
 
 GIMPLE instruction set
 **********************
@@ -44,4 +44,3 @@ Instruction                     High GIMPLE  Low GIMPLE
 ``GIMPLE_SWITCH``               x            x
 ``GIMPLE_TRY``                  x
 ==============================  ===========  ==========
-

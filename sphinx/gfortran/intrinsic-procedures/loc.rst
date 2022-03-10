@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LOC, location of a variable in memory
+
 .. _loc:
-
-.. index:: LOC
-
-.. index:: location of a variable in memory
 
 LOC --- Returns the address of a variable
 *****************************************
@@ -46,4 +44,3 @@ LOC --- Returns the address of a variable
         i = loc(r)
         print *, i
       end program test_loc
-

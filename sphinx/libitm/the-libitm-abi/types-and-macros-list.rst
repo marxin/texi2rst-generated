@@ -8,4 +8,3 @@ Types and macros list
 
 ``_ITM_codeProperties`` has changed, see :ref:`txn-code-properties`.
 ``_ITM_srcLocation`` is not used. 
-

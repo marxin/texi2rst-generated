@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: EPSILON, model representation, epsilon
+
 .. _epsilon:
-
-.. index:: EPSILON
-
-.. index:: model representation, epsilon
 
 EPSILON --- Epsilon function
 ****************************
@@ -45,4 +43,3 @@ EPSILON --- Epsilon function
           print *, EPSILON(x)
           print *, EPSILON(y)
       end program test_epsilon
-

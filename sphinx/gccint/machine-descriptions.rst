@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _machine-desc:
-
 .. index:: machine descriptions
+
+.. _machine-desc:
 
 Machine Descriptions
 --------------------
@@ -47,4 +47,3 @@ See the next chapter for information on the C header file.
   machine-descriptions/rtl-templates-transformations
   machine-descriptions/constant-definitions
   machine-descriptions/iterators
-

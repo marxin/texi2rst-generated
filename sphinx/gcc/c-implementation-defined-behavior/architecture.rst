@@ -45,4 +45,3 @@ Architecture
   operators (C90 6.3.3.4, C99 and C11 6.5.3.4).
 
   Determined by ABI.
-

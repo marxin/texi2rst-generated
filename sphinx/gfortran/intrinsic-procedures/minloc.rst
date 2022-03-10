@@ -8,9 +8,7 @@
 MINLOC --- Location of the minimum value within an array
 ********************************************************
 
-.. index:: MINLOC
-
-.. index:: array, location of minimum element
+.. index:: MINLOC, array, location of minimum element
 
 .. function:: MINLOC(ARRAY, MASK, KIND, BACK)
 
@@ -77,4 +75,3 @@ MINLOC --- Location of the minimum value within an array
     :ref:`FINDLOC`, 
     :ref:`MIN`, 
     :ref:`MINVAL`
-

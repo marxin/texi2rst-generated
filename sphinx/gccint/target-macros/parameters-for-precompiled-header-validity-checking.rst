@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _pch-target:
-
 .. index:: parameters, precompiled headers
+
+.. _pch-target:
 
 Parameters for Precompiled Header Validity Checking
 ***************************************************
@@ -61,4 +61,3 @@ Parameters for Precompiled Header Validity Checking
   to do anything here.
 
 .. hook-end
-

@@ -28,4 +28,3 @@ preprocessor.
 
 * If a line that looks like a directive appears within macro arguments,
   the behavior is undefined.
-

@@ -85,4 +85,3 @@ Floating Point
 
   This is dependent on the implementation of the C library, and is not
   defined by GCC itself.
-

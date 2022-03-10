@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: alignment, type alignment, variable alignment
+
 .. _alignment:
-
-.. index:: alignment
-
-.. index:: type alignment
-
-.. index:: variable alignment
 
 Determining the Alignment of Functions, Types or Variables
 **********************************************************
@@ -46,4 +42,3 @@ than ``void``.
 If the operand of the ``__alignof__`` expression is a function,
 the expression evaluates to the alignment of the function which may
 be specified by attribute :gcc-attr:`aligned` (see :ref:`common-function-attributes`).
-

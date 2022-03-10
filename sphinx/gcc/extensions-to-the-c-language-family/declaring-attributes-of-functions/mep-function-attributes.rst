@@ -51,4 +51,3 @@ These function attributes are supported by the MeP back end:
   instructions in VLIW mode instead of core mode.  Note that this
   attribute is not allowed unless a VLIW coprocessor has been configured
   and enabled through command-line options.
-

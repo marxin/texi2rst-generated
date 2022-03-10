@@ -5,9 +5,9 @@
 
 .. program:: TILE-Gx
 
-.. _tile-gx-options:
-
 .. index:: TILE-Gx options
+
+.. _tile-gx-options:
 
 TILE-Gx Options
 ^^^^^^^^^^^^^^^
@@ -39,4 +39,3 @@ These :samp:`-m` options are supported on the TILE-Gx:
 .. option:: -mbig-endian, -mlittle-endian
 
   Generate code in big/little endian mode, respectively.
-

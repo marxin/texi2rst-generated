@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: POPCNT, binary representation, bits set
+
 .. _popcnt:
-
-.. index:: POPCNT
-
-.. index:: binary representation
-
-.. index:: bits set
 
 POPCNT --- Number of bits set
 *****************************
@@ -52,4 +48,3 @@ POPCNT --- Number of bits set
     :ref:`POPPAR`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`
-

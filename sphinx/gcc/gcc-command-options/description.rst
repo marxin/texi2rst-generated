@@ -21,15 +21,7 @@ for C programs; when an option is only useful with another language
 for a particular option does not mention a source language, you can use
 that option with all supported languages.
 
-.. index:: cross compiling
-
-.. index:: specifying machine version
-
-.. index:: specifying compiler version and target machine
-
-.. index:: compiler version, specifying
-
-.. index:: target machine, specifying
+.. index:: cross compiling, specifying machine version, specifying compiler version and target machine, compiler version, specifying, target machine, specifying
 
 The usual way to run GCC is to run the executable called :samp:`gcc`, or
 :samp:`{machine}-gcc` when cross-compiling, or
@@ -39,18 +31,14 @@ instead.  See :ref:`invoking-g++`,
 for information about the differences in behavior between :samp:`gcc` 
 and :samp:`g++` when compiling C++ programs.
 
-.. index:: grouping options
-
-.. index:: options, grouping
+.. index:: grouping options, options, grouping
 
 The :command:`gcc` program accepts options and file names as operands.  Many
 options have multi-letter names; therefore multiple single-letter options
 may *not* be grouped: :option:`-dv` is very different from :samp:`-d
 -v`.
 
-.. index:: order of options
-
-.. index:: options, order
+.. index:: order of options, options, order
 
 You can mix options and other arguments.  For the most part, the order
 you use doesn't matter.  Order does matter when you use several

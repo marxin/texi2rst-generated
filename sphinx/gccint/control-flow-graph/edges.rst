@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: edge in the flow graph, edge
+
 .. _edges:
-
-.. index:: edge in the flow graph
-
-.. index:: edge
 
 Edges
 *****
@@ -114,9 +112,7 @@ the following types:
 
 *exception handling*
 
-  .. index:: exception handling
-
-  .. index:: EDGE_ABNORMAL, EDGE_EH
+  .. index:: exception handling, EDGE_ABNORMAL, EDGE_EH
 
   Exception handling edges represent possible control transfers from a
   trapping instruction to an exception handler.  The definition of
@@ -150,9 +146,7 @@ the following types:
 
 *sibling calls*
 
-  .. index:: sibling call
-
-  .. index:: EDGE_ABNORMAL, EDGE_SIBCALL
+  .. index:: sibling call, EDGE_ABNORMAL, EDGE_SIBCALL
 
   Sibling calls or tail calls terminate the function in a non-standard
   way and thus an edge to the exit must be present.
@@ -161,9 +155,7 @@ the following types:
 
 *computed jumps*
 
-  .. index:: computed jump
-
-  .. index:: EDGE_ABNORMAL
+  .. index:: computed jump, EDGE_ABNORMAL
 
   Computed jumps contain edges to all labels in the function referenced
   from the code.  All those edges have ``EDGE_ABNORMAL`` flag set.
@@ -215,9 +207,7 @@ the following types:
 
 *nonlocal goto handlers*
 
-  .. index:: nonlocal goto handler
-
-  .. index:: EDGE_ABNORMAL, EDGE_ABNORMAL_CALL
+  .. index:: nonlocal goto handler, EDGE_ABNORMAL, EDGE_ABNORMAL_CALL
 
   GCC allows nested functions to return into caller using a ``goto``
   to a label passed to as an argument to the callee.  The labels passed
@@ -229,9 +219,7 @@ the following types:
 
 *function entry points*
 
-  .. index:: function entry point, alternate function entry point
-
-  .. index:: LABEL_ALTERNATE_NAME
+  .. index:: function entry point, alternate function entry point, LABEL_ALTERNATE_NAME
 
   By definition, execution of function starts at basic block 0, so there
   is always an edge from the ``ENTRY_BLOCK_PTR`` to basic block 0.
@@ -251,4 +239,3 @@ the following types:
   used.  This corresponds to the fall-thru edge into exit block.  After
   reload, optimal RTL epilogues are used that use explicit (conditional)
   return instructions that are represented by edges with no flags set.
-

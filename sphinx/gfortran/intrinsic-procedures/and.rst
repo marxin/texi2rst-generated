@@ -8,11 +8,7 @@
 AND --- Bitwise logical AND
 ***************************
 
-.. index:: AND
-
-.. index:: bitwise logical and
-
-.. index:: logical and, bitwise
+.. index:: AND, bitwise logical and, logical and, bitwise
 
 .. function:: AND(I, J)
 
@@ -64,4 +60,3 @@ AND --- Bitwise logical AND
   :samp:`{See also}:`
     Fortran 95 elemental function: 
     :ref:`IAND`
-

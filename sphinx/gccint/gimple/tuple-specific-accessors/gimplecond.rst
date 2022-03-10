@@ -78,4 +78,3 @@ GIMPLE_COND
 .. function:: void gimple_cond_make_true (gcond *g)
 
   Set the conditional ``COND_STMT`` to be of the form 'if (1 == 1)'.
-

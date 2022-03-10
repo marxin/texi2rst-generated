@@ -8,11 +8,7 @@
 SHIFTL --- Left shift
 *********************
 
-.. index:: SHIFTL
-
-.. index:: bits, shift left
-
-.. index:: shift, left
+.. index:: SHIFTL, bits, shift left, shift, left
 
 .. function:: SHIFTL(I, SHIFT)
 
@@ -47,4 +43,3 @@ SHIFTL --- Left shift
   :samp:`{See also}:`
     :ref:`SHIFTA`, 
     :ref:`SHIFTR`
-

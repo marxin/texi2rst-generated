@@ -24,4 +24,3 @@ advice at these URLs:
 for information on how to make useful contributions and avoid
 duplication of effort.  Suggested projects are listed at
 https://gcc.gnu.org/projects/.
-

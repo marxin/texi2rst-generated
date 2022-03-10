@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _fragments:
-
 .. index:: makefile fragment
+
+.. _fragments:
 
 Makefile Fragments
 ------------------
@@ -35,4 +35,3 @@ fragments, but needing :samp:`x-{host}` fragments is rare.
 
   target-makefile-fragments
   host-makefile-fragments
-

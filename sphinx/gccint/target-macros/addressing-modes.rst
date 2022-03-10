@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _addressing-modes:
-
 .. index:: addressing modes
+
+.. _addressing-modes:
 
 Addressing Modes
 ****************
@@ -808,4 +808,3 @@ This is about addressing modes.
   arguments should be set to a range of addresses that can be used for worker
   broadcasting. The dimensions, reduction size and gang-private size
   arguments are for the current offload region.
-

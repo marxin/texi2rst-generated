@@ -162,4 +162,3 @@ The files can contain the following types of record:
   associated with user options, either because these masks represent
   internal switches or because the options are not available on all
   configurations and yet the masks always need to be defined.
-

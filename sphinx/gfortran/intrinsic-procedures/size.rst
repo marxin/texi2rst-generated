@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SIZE, array, size, array, number of elements, array, count elements
+
 .. _size:
-
-.. index:: SIZE
-
-.. index:: array, size
-
-.. index:: array, number of elements
-
-.. index:: array, count elements
 
 SIZE --- Determine the size of an array
 ***************************************
@@ -61,4 +55,3 @@ SIZE --- Determine the size of an array
   :samp:`{See also}:`
     :ref:`SHAPE`, 
     :ref:`RESHAPE`
-

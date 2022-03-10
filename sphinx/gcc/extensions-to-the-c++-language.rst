@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: extensions, C++ language, C++ language extensions
+
 .. _c++-extensions:
-
-.. index:: extensions, C++ language
-
-.. index:: C++ language extensions
 
 Extensions to the C++ Language
 ------------------------------
@@ -34,4 +32,3 @@ test specifically for GNU C++ (see :ref:`cpp:common-predefined-macros`).
   extensions-to-the-c++-language/wheres-the-template
   extensions-to-the-c++-language/extracting-the-function-pointer-from-a-bound-pointer-to-member-function
   extensions-to-the-c++-language/c++-specific-variable-function-and-type-attributes
-

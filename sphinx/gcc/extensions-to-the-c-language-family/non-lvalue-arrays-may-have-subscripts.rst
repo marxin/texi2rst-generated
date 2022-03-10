@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: subscripting, arrays, non-lvalue, subscripting and function values
+
 .. _subscripting:
-
-.. index:: subscripting
-
-.. index:: arrays, non-lvalue
-
-.. index:: subscripting and function values
 
 Non-Lvalue Arrays May Have Subscripts
 *************************************
@@ -32,4 +28,3 @@ this is valid in GNU C though not valid in C90:
   {
     return f().a[index];
   }
-

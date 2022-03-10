@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GGC, GTY
+
 .. _type-information:
-
-.. index:: GGC
-
-.. index:: GTY
 
 Memory Management and Type Information
 --------------------------------------
@@ -103,4 +101,3 @@ data members.
   memory-management-and-type-information/source-files-containing-type-information
   memory-management-and-type-information/how-to-invoke-the-garbage-collector
   memory-management-and-type-information/troubleshooting-the-garbage-collector
-

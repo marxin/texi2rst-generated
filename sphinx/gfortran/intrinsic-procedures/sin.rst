@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SIN, DSIN, CSIN, ZSIN, CDSIN, trigonometric function, sine, sine
+
 .. _sin:
-
-.. index:: SIN
-
-.. index:: DSIN
-
-.. index:: CSIN
-
-.. index:: ZSIN
-
-.. index:: CDSIN
-
-.. index:: trigonometric function, sine
-
-.. index:: sine
 
 SIN --- Sine function 
 **********************
@@ -70,4 +58,3 @@ SIN --- Sine function
     :ref:`ASIN` 
     Degrees function: 
     :ref:`SIND`
-

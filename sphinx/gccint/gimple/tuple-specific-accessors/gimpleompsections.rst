@@ -46,4 +46,3 @@ GIMPLE_OMP_SECTIONS
 
   Set ``CLAUSES`` to be the set of clauses associated with ``OMP_SECTIONS``
   ``G``.
-

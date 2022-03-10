@@ -14,4 +14,3 @@ GIMPLE_OMP_ORDERED
 
 ``BODY`` is the sequence of statements inside a loop that will
 executed in sequence.
-

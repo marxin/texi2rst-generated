@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: repeated inclusion, including just once, wrapper #ifndef
+
 .. _once-only-headers:
-
-.. index:: repeated inclusion
-
-.. index:: including just once
-
-.. index:: wrapper #ifndef
 
 Once-Only Headers
 *****************
@@ -46,9 +42,7 @@ not bother to rescan the file at all.
 You can put comments outside the wrapper.  They will not interfere with
 this optimization.
 
-.. index:: controlling macro
-
-.. index:: guard macro
+.. index:: controlling macro, guard macro
 
 The macro ``FILE_FOO_SEEN`` is called the :dfn:`controlling macro` or
 :dfn:`guard macro`.  In a user header file, the macro name should not
@@ -56,4 +50,3 @@ begin with :samp:`_`.  In a system header file, it should begin with
 :samp:`__` to avoid conflicts with user programs.  In any kind of header
 file, the macro name should contain the name of the file and some
 additional text, to avoid conflicts with other header files.
-

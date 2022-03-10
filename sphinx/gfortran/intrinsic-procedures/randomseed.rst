@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RANDOM_SEED, random number generation, seeding, seeding a random number generator
+
 .. _random_seed:
-
-.. index:: RANDOM_SEED
-
-.. index:: random number generation, seeding
-
-.. index:: seeding a random number generator
 
 RANDOM_SEED --- Initialize a pseudo-random number sequence
 **********************************************************
@@ -66,4 +62,3 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
   :samp:`{See also}:`
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_INIT`
-

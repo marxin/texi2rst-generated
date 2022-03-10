@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GNU Fortran command options, command options, options, gfortran command
+
 .. _invoking-gnu-fortran:
-
-.. index:: GNU Fortran command options
-
-.. index:: command options
-
-.. index:: options, gfortran command
 
 .. toctree::
   :maxdepth: 2

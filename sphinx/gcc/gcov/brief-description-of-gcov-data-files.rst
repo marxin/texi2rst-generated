@@ -31,4 +31,3 @@ some summary information.
 It is not recommended to access the coverage files directly.
 Consumers should use the intermediate format that is provided
 by :command:`gcov` tool via :option:`--json-format` option.
-

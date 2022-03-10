@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _extensions-implemented-in-gnu-fortran:
-
 .. index:: extensions, implemented
+
+.. _extensions-implemented-in-gnu-fortran:
 
 Extensions implemented in GNU Fortran
 *************************************
@@ -28,9 +28,9 @@ additional compatibility extensions along with those enabled by
   :maxdepth: 2
 
 
-.. _old-style-kind-specifications:
-
 .. index:: kind, old-style
+
+.. _old-style-kind-specifications:
 
 Old-style kind specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,9 +103,9 @@ Note that variables which are explicitly initialized in declarations
 or in ``DATA`` statements automatically acquire the ``SAVE``
 attribute.
 
-.. _extensions-to-namelist:
-
 .. index:: Namelist
+
+.. _extensions-to-namelist:
 
 Extensions to namelist
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -252,9 +252,9 @@ code and is discouraged.
          WRITE(*,10) value1, value1, value2
   10     FORMAT ('F, G, I')
 
-.. _i-o-item-lists:
-
 .. index:: I/O item lists
+
+.. _i-o-item-lists:
 
 I/O item lists
 ^^^^^^^^^^^^^^
@@ -276,9 +276,9 @@ type, then the real-literal-constant will be interpreted as a
 ``REAL(10)`` entity.  In the absence of ``REAL(16)`` and
 ``REAL(10)``, an error will occur.
 
-.. _boz-literal-constants:
-
 .. index:: BOZ literal constants
+
+.. _boz-literal-constants:
 
 BOZ literal constants
 ^^^^^^^^^^^^^^^^^^^^^
@@ -308,9 +308,9 @@ as extension, BOZ literals are permitted in some contexts outside of
 ``DATA`` and the intrinsic functions listed in the Fortran standard.
 Use :option:`-fallow-invalid-boz` to enable the extension.
 
-.. _real-array-indices:
-
 .. index:: array, indices of type real
+
+.. _real-array-indices:
 
 Real array indices
 ^^^^^^^^^^^^^^^^^^
@@ -318,9 +318,9 @@ Real array indices
 As an extension, GNU Fortran allows the use of ``REAL`` expressions
 or variables as array indices.
 
-.. _unary-operators:
-
 .. index:: operators, unary
+
+.. _unary-operators:
 
 Unary operators
 ^^^^^^^^^^^^^^^
@@ -333,11 +333,9 @@ the need for parenthesis.
 
          X = Y * -Z
 
+.. index:: conversion, to integer, conversion, to logical
+
 .. _implicitly-convert-logical-and-integer-values:
-
-.. index:: conversion, to integer
-
-.. index:: conversion, to logical
 
 Implicitly convert LOGICAL and INTEGER values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -364,9 +362,9 @@ However, there is no implicit conversion of ``INTEGER`` values in
 ``if`` -statements, nor of ``LOGICAL`` or ``INTEGER`` values
 in I/O operations.
 
-.. _hollerith-constants-support:
-
 .. index:: Hollerith constants
+
+.. _hollerith-constants-support:
 
 Hollerith constants support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -427,9 +425,9 @@ to comparisons:
 Supported types are numeric (``INTEGER``, ``REAL``, or ``COMPLEX``),
 and ``CHARACTER``.
 
-.. _character-conversion:
-
 .. index:: conversion, to character
+
+.. _character-conversion:
 
 Character conversion
 ^^^^^^^^^^^^^^^^^^^^
@@ -454,9 +452,9 @@ Examples:
         x = 'A'       ! Will be padded.
         x = 'ab1234'  ! Will be truncated.
 
-.. _cray-pointers:
-
 .. index:: pointer, Cray
+
+.. _cray-pointers:
 
 Cray pointers
 ^^^^^^^^^^^^^
@@ -600,9 +598,9 @@ pointees are passed as arguments, they are treated as ordinary
 variables in the invoked function.  Subsequent changes to the pointer
 will not change the base address of the array that was passed.
 
-.. _convert-specifier:
-
 .. index:: CONVERT specifier
+
+.. _convert-specifier:
 
 CONVERT specifier
 ^^^^^^^^^^^^^^^^^
@@ -655,9 +653,9 @@ carries a significant speed overhead.  If speed in this area matters
 to you, it is best if you use this only for data that needs to be
 portable.
 
-.. _openmp:
-
 .. index:: OpenMP
+
+.. _openmp:
 
 OpenMP
 ^^^^^^
@@ -716,9 +714,9 @@ the OpenMP Application Program Interface v2.5:
   to the command line.  However, this is not supported by :command:`gcc` and
   thus not recommended.
 
-.. _openacc:
-
 .. index:: OpenACC
+
+.. _openacc:
 
 OpenACC
 ^^^^^^^
@@ -745,15 +743,9 @@ The OpenACC Fortran runtime library routines are provided both in a
 form of a Fortran 90 module named ``openacc`` and in a form of a
 Fortran ``include`` file named :samp:`openacc_lib.h`.
 
+.. index:: argument list functions, %VAL, %REF, %LOC
+
 .. _argument-list-functions:
-
-.. index:: argument list functions
-
-.. index:: %VAL
-
-.. index:: %REF
-
-.. index:: %LOC
 
 Argument list functions %VAL, %REF and %LOC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -793,13 +785,9 @@ https://gcc.gnu.org/onlinedocs/gcc-3.4.6/g77/index.html#Top.
 Also, ``c_by_val.f`` and its partner ``c_by_val.c`` of the
 GNU Fortran testsuite are worth a look.
 
+.. index:: EOF, BACKSPACE, REWIND
+
 .. _read-write-after-eof-marker:
-
-.. index:: EOF
-
-.. index:: BACKSPACE
-
-.. index:: REWIND
 
 Read/Write after EOF marker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -811,11 +799,9 @@ consider ``BACKSPACE`` or ``REWIND`` to properly position
 the file before the EOF marker.  As an extension, the run-time error may
 be disabled using -std=legacy.
 
+.. index:: STRUCTURE, RECORD
+
 .. _structure-and-record:
-
-.. index:: STRUCTURE
-
-.. index:: RECORD
 
 STRUCTURE and RECORD
 ^^^^^^^^^^^^^^^^^^^^
@@ -967,11 +953,9 @@ rules and exceptions:
   indicates the number of times to repeat the constant initializer when expanding
   the initializer list.
 
+.. index:: UNION, MAP
+
 .. _union-and-map:
-
-.. index:: UNION
-
-.. index:: MAP
 
 UNION and MAP
 ^^^^^^^^^^^^^
@@ -1079,9 +1063,9 @@ Following is an example mirroring the layout of an Intel x86_64 register:
   a.h  ===             '.C'
   a.l  ===               '.D'
 
-.. _type-variants-for-integer-intrinsics:
-
 .. index:: intrinsics, integer
+
+.. _type-variants-for-integer-intrinsics:
 
 Type variants for integer intrinsics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1120,13 +1104,9 @@ Intrinsic   B           I            J            K
 ``REAL``    ``--``      ``FLOATI``   ``FLOATJ``   ``FLOATK``
 ==========  ==========  ===========  ===========  ===========
 
+.. index:: variable attributes, AUTOMATIC, STATIC
+
 .. _automatic-and-static-attributes:
-
-.. index:: variable attributes
-
-.. index:: AUTOMATIC
-
-.. index:: STATIC
 
 AUTOMATIC and STATIC attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1176,11 +1156,9 @@ Examples:
     ! a is automatic; b, c, and d are static
   endsubroutine
 
+.. index:: intrinsics, math, intrinsics, trigonometric functions
+
 .. _extended-math-intrinsics:
-
-.. index:: intrinsics, math
-
-.. index:: intrinsics, trigonometric functions
 
 Extended math intrinsics
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1217,9 +1195,9 @@ and then multiplying it by a constant radian-to-degree (or degree-to-radian)
 factor, as appropriate. The factor is computed at compile-time as 180/pi (or
 pi/180).
 
-.. _form-feed-as-whitespace:
-
 .. index:: form feed whitespace
+
+.. _form-feed-as-whitespace:
 
 Form feed as whitespace
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -1230,9 +1208,9 @@ though the Fortran standard does not mention this. GNU Fortran supports the
 interpretation of form feed characters in source as whitespace for
 compatibility.
 
-.. _type-as-an-alias-for-print:
-
 .. index:: type alias print
+
+.. _type-as-an-alias-for-print:
 
 TYPE as an alias for PRINT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1249,9 +1227,9 @@ the following two examples are equivalent:
 
   PRINT *, 'hello world'
 
-.. _%loc-as-an-rvalue:
-
 .. index:: LOC
+
+.. _%loc-as-an-rvalue:
 
 %LOC as an rvalue
 ^^^^^^^^^^^^^^^^^
@@ -1273,9 +1251,9 @@ feature enabled the following two examples are equivalent:
   integer :: i
   call sub(%loc(i))
 
-.. _.xor.-operator:
-
 .. index:: operators, xor
+
+.. _.xor.-operator:
 
 .XOR. operator
 ^^^^^^^^^^^^^^
@@ -1284,9 +1262,9 @@ GNU Fortran supports ``.XOR.`` as a logical operator with ``-std=legacy``
 for compatibility with legacy code. ``.XOR.`` is equivalent to
 ``.NEQV.``. That is, the output is true if and only if the inputs differ.
 
-.. _bitwise-logical-operators:
-
 .. index:: logical, bitwise
+
+.. _bitwise-logical-operators:
 
 Bitwise logical operators
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1325,19 +1303,9 @@ Operator    Intrinsic      Bitwise operation
 ``.EQV.``   ``NOT(IEOR)``  complement of exclusive or
 ==========  =============  ==========================
 
+.. index:: CARRIAGECONTROL, READONLY, SHARE, SHARED, NOSHARED, I/O specifiers
+
 .. _extended-i-o-specifiers:
-
-.. index:: CARRIAGECONTROL
-
-.. index:: READONLY
-
-.. index:: SHARE
-
-.. index:: SHARED
-
-.. index:: NOSHARED
-
-.. index:: I/O specifiers
 
 Extended I/O specifiers
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -1425,9 +1393,9 @@ compile flag :option:`-fdec`, for compatibility.
   system's manual pages for further details. Locking via ``SHARE=`` is not
   supported on other systems.
 
-.. _legacy-parameter-statements:
-
 .. index:: PARAMETER
+
+.. _legacy-parameter-statements:
 
 Legacy PARAMETER statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1444,9 +1412,9 @@ flag (:option:`-std`:samp:`=f95`, etc...).  These statements take the following 
   real c
   parameter c = 3.0e8
 
-.. _default-exponents:
-
 .. index:: exponent
+
+.. _default-exponents:
 
 Default exponents
 ^^^^^^^^^^^^^^^^^
@@ -1454,4 +1422,3 @@ Default exponents
 For compatibility, GNU Fortran supports a default exponent of zero in real
 constants with :option:`-fdec`.  For example, ``9e`` would be
 interpreted as ``9e0``, rather than an error.
-

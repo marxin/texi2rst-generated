@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: tokens, preprocessing tokens
+
 .. _tokenization:
-
-.. index:: tokens
-
-.. index:: preprocessing tokens
 
 Tokenization
 ************
@@ -69,9 +67,7 @@ used in system-defined function and object names.  :samp:`$` is not a
 letter in strictly conforming mode, or if you specify the :option:`-$`
 option.  See :ref:`invocation`.
 
-.. index:: numbers
-
-.. index:: preprocessing numbers
+.. index:: numbers, preprocessing numbers
 
 A :dfn:`preprocessing number` has a rather bizarre definition.  The
 category includes all the normal integer and floating point constants
@@ -97,13 +93,7 @@ which does not translate to any valid numeric constant, therefore a
 syntax error.  It does not mean ``0xE + 12``, which is what you
 might have intended.
 
-.. index:: string literals
-
-.. index:: string constants
-
-.. index:: character constants
-
-.. index:: header file names
+.. index:: string literals, string constants, character constants, header file names
 
 .. the @: prevents makeinfo from turning '' into ".
 
@@ -127,11 +117,7 @@ file in different places depending on which form you use.  See :ref:`include-ope
 No string literal may extend past the end of a line.  You may use continued
 lines instead, or string constant concatenation.
 
-.. index:: punctuators
-
-.. index:: digraphs
-
-.. index:: alternative tokens
+.. index:: punctuators, digraphs, alternative tokens
 
 :dfn:`Punctuators` are all the usual bits of punctuation which are
 meaningful to C and C++.  All but three of the punctuation characters in

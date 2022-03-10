@@ -19,9 +19,7 @@ These function attributes are supported by the M32R/D back end:
   function entry and exit sequences suitable for use in an interrupt handler
   when this attribute is present.
 
-.. index:: model function attribute, M32R/D
-
-.. index:: function addressability on the M32R/D
+.. index:: model function attribute, M32R/D, function addressability on the M32R/D
 
 .. gcc-attr:: model (model-name)
 
@@ -42,4 +40,3 @@ These function attributes are supported by the M32R/D back end:
   compiler generates ``seth/add3`` instructions to load their addresses),
   and may not be reachable with the ``bl`` instruction (the compiler
   generates the much slower ``seth/add3/jl`` instruction sequence).
-

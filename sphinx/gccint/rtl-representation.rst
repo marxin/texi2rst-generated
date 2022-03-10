@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL representation, representation of RTL, Register Transfer Language (RTL)
+
 .. _rtl:
-
-.. index:: RTL representation
-
-.. index:: representation of RTL
-
-.. index:: Register Transfer Language (RTL)
 
 RTL Representation
 ------------------
@@ -50,4 +46,3 @@ form uses nested parentheses to indicate the pointers in the internal form.
   rtl-representation/on-the-side-ssa-form-for-rtl
   rtl-representation/structure-sharing-assumptions
   rtl-representation/reading-rtl
-

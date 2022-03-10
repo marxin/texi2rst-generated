@@ -51,4 +51,3 @@ the default system header directories with the :option:`-nostdinc`
 option.  This is useful when you are compiling an operating system
 kernel or some other program that does not use the standard C library
 facilities, or the standard C library itself.
-

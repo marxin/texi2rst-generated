@@ -65,4 +65,3 @@ scope with the prefix 'everything' in the ``stmt_block``
   /* Initialize block somewhere here.  */
   var = gfc_create_var (integer_type_node, "everything");
   gfc_add_modify (block, var, build_int_cst (integer_type_node, 42));
-

@@ -658,4 +658,3 @@ them: try the first ones in this list first.
   hardware divmod insn but defines target-specific divmod libfuncs.
 
 .. hook-end
-

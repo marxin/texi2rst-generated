@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _named-address-spaces:
-
 .. index:: named address spaces
+
+.. _named-address-spaces:
 
 Adding support for named address spaces
 ***************************************
@@ -161,4 +161,3 @@ named address space #1:
   The default implementation does nothing.
 
 .. hook-end
-

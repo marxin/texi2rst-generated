@@ -5,9 +5,9 @@
 
 .. program:: HPPA
 
-.. _hppa-options:
-
 .. index:: HPPA Options
+
+.. _hppa-options:
 
 HPPA Options
 ^^^^^^^^^^^^
@@ -243,4 +243,3 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   Add support for multithreading with the :dfn:`dce thread` library
   under HP-UX.  This option sets flags for both the preprocessor and
   linker.
-

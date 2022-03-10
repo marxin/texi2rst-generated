@@ -442,4 +442,3 @@ These :samp:`-m` options are defined for the SH implementations:
 .. option:: -mfdpic
 
   Generate code using the FDPIC ABI.
-

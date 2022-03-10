@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _function-like-macros:
-
 .. index:: function-like macros
+
+.. _function-like-macros:
 
 Function-like Macros
 ********************
@@ -53,4 +53,3 @@ The first two pairs of parentheses in this expansion come from the
 macro.  The third is the pair that was originally after the macro
 invocation.  Since ``lang_init`` is an object-like macro, it does not
 consume those parentheses.
-

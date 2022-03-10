@@ -5,9 +5,9 @@
 
 .. program:: AVR
 
-.. _avr-options:
-
 .. index:: AVR Options
+
+.. _avr-options:
 
 AVR Options
 ^^^^^^^^^^^
@@ -427,13 +427,7 @@ the compiler and are subject to some limitations:
   and the application be linked with :option:`-Wl,--defsym,func_4`:samp:`=0x4`.
   Alternatively, ``func_4`` can be defined in the linker script.
 
-.. index:: RAMPD
-
-.. index:: RAMPX
-
-.. index:: RAMPY
-
-.. index:: RAMPZ
+.. index:: RAMPD, RAMPX, RAMPY, RAMPZ
 
 Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

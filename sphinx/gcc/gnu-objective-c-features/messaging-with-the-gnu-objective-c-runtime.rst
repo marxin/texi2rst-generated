@@ -143,4 +143,3 @@ If the forwarding hook does not exist or returns ``NULL``, the
 runtime currently attempts forwarding using an older, deprecated API,
 and if that fails, it aborts the program.  In future versions of the
 GNU Objective-C runtime, the runtime will immediately abort.
-

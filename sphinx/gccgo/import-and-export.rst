@@ -48,4 +48,3 @@ package object files together into a single shared library or archive.
 At link time you must explicitly tell :command:`gccgo` which files to
 link together into the executable, as is usual with :command:`gcc`.
 This is different from the behavior of other Go compilers.
-

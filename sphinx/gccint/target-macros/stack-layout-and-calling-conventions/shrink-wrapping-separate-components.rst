@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _shrink-wrapping-separate-components:
-
 .. index:: shrink-wrapping separate components
+
+.. _shrink-wrapping-separate-components:
 
 Shrink-wrapping separate components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -91,4 +91,3 @@ generic code.
   will be deleted after this call.
 
 .. hook-end
-

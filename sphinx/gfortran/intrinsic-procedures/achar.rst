@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ACHAR, ASCII collating sequence, collating sequence, ASCII
+
 .. _achar:
-
-.. index:: ACHAR
-
-.. index:: ASCII collating sequence
-
-.. index:: collating sequence, ASCII
 
 ACHAR --- Character in ASCII collating sequence 
 ************************************************
@@ -60,4 +56,3 @@ ACHAR --- Character in ASCII collating sequence
     :ref:`CHAR`, 
     :ref:`IACHAR`, 
     :ref:`ICHAR`
-

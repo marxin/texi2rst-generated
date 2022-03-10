@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SPACING, real number, relative spacing, floating point, relative spacing
+
 .. _spacing:
-
-.. index:: SPACING
-
-.. index:: real number, relative spacing
-
-.. index:: floating point, relative spacing
 
 SPACING --- Smallest distance between two numbers of a given type
 *****************************************************************
@@ -51,4 +47,3 @@ SPACING --- Smallest distance between two numbers of a given type
 
   :samp:`{See also}:`
     :ref:`RRSPACING`
-

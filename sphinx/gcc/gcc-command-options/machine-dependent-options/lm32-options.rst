@@ -5,9 +5,9 @@
 
 .. program:: LM32
 
-.. _lm32-options:
-
 .. index:: LM32 options
+
+.. _lm32-options:
 
 LM32 Options
 ^^^^^^^^^^^^
@@ -33,4 +33,3 @@ These :option:`-m` options are defined for the LatticeMico32 architecture:
 .. option:: -muser-enabled
 
   Enable user-defined instructions.
-

@@ -22,4 +22,3 @@ clients of the library can easily spell a given token, such as
 ``cpp_spell_token`` and ``cpp_token_len``.  These functions are
 useful when generating diagnostics, and for emitting the preprocessed
 output.
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COUNT, array, conditionally count elements, array, element counting, array, number of elements
+
 .. _count:
-
-.. index:: COUNT
-
-.. index:: array, conditionally count elements
-
-.. index:: array, element counting
-
-.. index:: array, number of elements
 
 COUNT --- Count function
 ************************
@@ -78,4 +72,3 @@ COUNT --- Count function
           print *
           print '(3i3)', count(mask, 2)
       end program test_count
-

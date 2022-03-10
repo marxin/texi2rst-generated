@@ -89,4 +89,3 @@ information is missing too and thus GCC needs to make an educated
 guess based on :option:`-fwhole-program`.  Without the linker
 plugin GCC also assumes that symbols are declared ``hidden``
 and not referred by non-LTO code by default.
-

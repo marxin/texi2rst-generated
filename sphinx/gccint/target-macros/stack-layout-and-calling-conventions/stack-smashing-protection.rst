@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _stack-smashing-protection:
-
 .. index:: stack smashing protection
+
+.. _stack-smashing-protection:
 
 Stack smashing protection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,4 +73,3 @@ Stack smashing protection
   The result will be pruned to cases with PREFIX if not NULL.
 
 .. hook-end
-

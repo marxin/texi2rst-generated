@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _statement-and-operand-traversals:
-
 .. index:: Statement and operand traversals
+
+.. _statement-and-operand-traversals:
 
 Statement and operand traversals
 ********************************

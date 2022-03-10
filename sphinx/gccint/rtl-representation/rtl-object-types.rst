@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL object types, RTL integers, RTL strings, RTL vectors, RTL expression, RTX (See RTL)
+
 .. _rtl-objects:
-
-.. index:: RTL object types
-
-.. index:: RTL integers
-
-.. index:: RTL strings
-
-.. index:: RTL vectors
-
-.. index:: RTL expression
-
-.. index:: RTX (See RTL)
 
 RTL Object Types
 ****************
@@ -61,13 +51,7 @@ The written form of a vector consists of square brackets
 whitespace separating them.  Vectors of length zero are not created;
 null pointers are used instead.
 
-.. index:: expression codes
-
-.. index:: codes, RTL expression
-
-.. index:: GET_CODE
-
-.. index:: PUT_CODE
+.. index:: expression codes, codes, RTL expression, GET_CODE, PUT_CODE
 
 Expressions are classified by :dfn:`expression codes` (also called RTX
 codes).  The expression code is a name defined in :samp:`rtl.def`, which is
@@ -94,10 +78,7 @@ Expression code names in the :samp:`md` file are written in lowercase,
 but when they appear in C code they are written in uppercase.  In this
 manual, they are shown as follows: ``const_int``.
 
-.. index:: (nil)
-
-.. index:: nil
+.. index:: (nil), nil
 
 In a few contexts a null pointer is valid where an expression is normally
 wanted.  The written form of this is ``(nil)``.
-

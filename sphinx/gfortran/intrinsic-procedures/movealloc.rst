@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MOVE_ALLOC, moving allocation, allocation, moving
+
 .. _move_alloc:
-
-.. index:: MOVE_ALLOC
-
-.. index:: moving allocation
-
-.. index:: allocation, moving
 
 MOVE_ALLOC --- Move allocation from one object to another
 *********************************************************
@@ -55,4 +51,3 @@ MOVE_ALLOC --- Move allocation from one object to another
           print *, allocated(a), allocated(b)
           print *, b
       end program test_move_alloc
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: output statements, C statements for assembler output, generating assembler output
+
 .. _output-statement:
-
-.. index:: output statements
-
-.. index:: C statements for assembler output
-
-.. index:: generating assembler output
 
 C Statements for Assembler Output
 *********************************
@@ -39,9 +35,7 @@ might write this pattern:
      addr %2,%0
      addm %2,%0")
 
-.. index:: * in template
-
-.. index:: asterisk in template
+.. index:: * in template, asterisk in template
 
 If the output control string starts with a :samp:`*`, then it is not an
 output template but rather a piece of C program that should compute a
@@ -126,4 +120,3 @@ you can use :samp:`*` inside of a :samp:`@` multi-alternative template:
      clrreg %0
      * return stack_mem_p (operands[0]) ? \"push 0\" : \"clrmem %0\";
      clrmem %0")
-

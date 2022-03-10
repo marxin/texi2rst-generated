@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IAND, BIAND, IIAND, JIAND, KIAND, bitwise logical and, logical and, bitwise
+
 .. _iand:
-
-.. index:: IAND
-
-.. index:: BIAND
-
-.. index:: IIAND
-
-.. index:: JIAND
-
-.. index:: KIAND
-
-.. index:: bitwise logical and
-
-.. index:: logical and, bitwise
 
 IAND --- Bitwise logical and
 ****************************
@@ -80,4 +68,3 @@ IAND --- Bitwise logical and
     :ref:`IBSET`, 
     :ref:`IBCLR`, 
     :ref:`NOT`
-

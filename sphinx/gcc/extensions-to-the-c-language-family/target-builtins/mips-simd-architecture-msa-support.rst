@@ -810,4 +810,3 @@ machine instruction.
   v16u8 __builtin_msa_xor_v (v16u8, v16u8);
 
   v16u8 __builtin_msa_xori_b (v16u8, imm0_255);
-

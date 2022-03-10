@@ -42,4 +42,3 @@ These built-in functions are available for the NDS32 target:
 .. function:: void __builtin_nds32_setgie_dis (void)
 
   Disable global interrupt.
-

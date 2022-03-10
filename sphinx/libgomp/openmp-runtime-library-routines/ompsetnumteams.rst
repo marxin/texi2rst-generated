@@ -31,4 +31,3 @@ omp_set_num_teams -- Set upper teams limit for teams construct
 
 :samp:`{Reference}:`
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.3.
-

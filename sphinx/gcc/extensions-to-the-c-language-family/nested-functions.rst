@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: nested functions, downward funargs, thunks
+
 .. _nested-functions:
-
-.. index:: nested functions
-
-.. index:: downward funargs
-
-.. index:: thunks
 
 Nested Functions
 ****************
@@ -134,4 +130,3 @@ for function declarations).
       }
     /* ... */
   }
-

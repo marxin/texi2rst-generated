@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: machine modes, machine_mode
+
 .. _machine-modes:
-
-.. index:: machine modes
-
-.. index:: machine_mode
 
 Machine Modes
 *************
@@ -283,17 +281,7 @@ object of ``BITS_PER_UNIT`` bits (see :ref:`storage-layout`).
   requires.  In debugging dumps of RTL, ``VOIDmode`` is expressed by
   the absence of any mode.
 
-  .. index:: QCmode
-
-  .. index:: HCmode
-
-  .. index:: SCmode
-
-  .. index:: DCmode
-
-  .. index:: XCmode
-
-  .. index:: TCmode
+  .. index:: QCmode, HCmode, SCmode, DCmode, XCmode, TCmode
 
 ``QCmode, HCmode, SCmode, DCmode, XCmode, TCmode``
   These modes stand for a complex number represented as a pair of floating
@@ -301,19 +289,7 @@ object of ``BITS_PER_UNIT`` bits (see :ref:`storage-layout`).
   ``HFmode``, ``SFmode``, ``DFmode``, ``XFmode``, and
   ``TFmode``, respectively.
 
-  .. index:: CQImode
-
-  .. index:: CHImode
-
-  .. index:: CSImode
-
-  .. index:: CDImode
-
-  .. index:: CTImode
-
-  .. index:: COImode
-
-  .. index:: CPSImode
+  .. index:: CQImode, CHImode, CSImode, CDImode, CTImode, COImode, CPSImode
 
 ``CQImode, CHImode, CSImode, CDImode, CTImode, COImode, CPSImode``
   These modes stand for a complex number represented as a pair of integer
@@ -321,9 +297,7 @@ object of ``BITS_PER_UNIT`` bits (see :ref:`storage-layout`).
   ``SImode``, ``DImode``, ``TImode``, ``OImode``, and ``PSImode``,
   respectively.
 
-  .. index:: BND32mode
-
-  .. index:: BND64mode
+  .. index:: BND32mode, BND64mode
 
 ``BND32mode BND64mode``
   These modes stand for bounds for pointer of 32 and 64 bit size respectively.
@@ -653,12 +627,9 @@ in the compilation process.   The third symbol cannot be overridden.
   ``MAX_BITSIZE_MODE_ANY_MODE`` to the actual upper limit in
   :samp:`{machine}-modes.def`.
 
-.. index:: byte_mode
-
-.. index:: word_mode
+.. index:: byte_mode, word_mode
 
 The global variables ``byte_mode`` and ``word_mode`` contain modes
 whose classes are ``MODE_INT`` and whose bitsizes are either
 ``BITS_PER_UNIT`` or ``BITS_PER_WORD``, respectively.  On 32-bit
 machines, these are ``QImode`` and ``SImode``, respectively.
-

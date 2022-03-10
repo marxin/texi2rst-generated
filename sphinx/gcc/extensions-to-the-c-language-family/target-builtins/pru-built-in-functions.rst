@@ -32,4 +32,3 @@ The built-in functions supported are:
   This inserts LMBD instruction to calculate the left-most bit with value
   :samp:`{bitval}` in value :samp:`{wordval}`.  Only the least significant bit
   of :samp:`{bitval}` is taken into account.
-

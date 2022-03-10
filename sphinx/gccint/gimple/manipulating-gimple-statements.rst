@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _manipulating-gimple-statements:
-
 .. index:: Manipulating GIMPLE statements
+
+.. _manipulating-gimple-statements:
 
 Manipulating GIMPLE statements
 ******************************
@@ -174,4 +174,3 @@ The following are common accessors for gimple statements.
 .. function:: gimple gimple_copy (gimple stmt)
 
   Return a deep copy of statement ``STMT``.
-

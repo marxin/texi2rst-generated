@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Pattern Ordering, Ordering of Patterns
+
 .. _pattern-ordering:
-
-.. index:: Pattern Ordering
-
-.. index:: Ordering of Patterns
 
 When the Order of Patterns Matters
 **********************************
@@ -29,4 +27,3 @@ be generated as a single-byte immediate quantity, which would not work.)
 Instead of using this pattern ordering it would be possible to make the
 pattern for convert-a-byte smart enough to deal properly with any
 constant value.
-

@@ -124,4 +124,3 @@ This function returns the newly created ``GIMPLE_ASSIGN`` tuple.
 .. function:: bool gimple_assign_cast_p (const_gimple s)
 
   Return true if ``S`` is a type-cast assignment.
-

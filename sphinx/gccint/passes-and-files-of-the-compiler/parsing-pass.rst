@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GENERIC, lang_hooks.parse_file
+
 .. _parsing-pass:
-
-.. index:: GENERIC
-
-.. index:: lang_hooks.parse_file
 
 Parsing pass
 ************
@@ -20,17 +18,7 @@ a double handful of language specific tree codes defined in
 :samp:`c-common.def`.  The Fortran front end uses a completely different
 private representation.
 
-.. index:: GIMPLE
-
-.. index:: gimplification
-
-.. index:: gimplifier
-
-.. index:: language-independent intermediate representation
-
-.. index:: intermediate representation lowering
-
-.. index:: lowering, language-dependent intermediate representation
+.. index:: GIMPLE, gimplification, gimplifier, language-independent intermediate representation, intermediate representation lowering, lowering, language-dependent intermediate representation
 
 At some point the front end must translate the representation used in the
 front end to a representation understood by the language-independent
@@ -72,11 +60,7 @@ function and data *definitions* be passed to the middle-end.  For
 complete debug information, function, data and type declarations
 should all be passed as well.
 
-.. index:: rest_of_decl_compilation
-
-.. index:: rest_of_type_compilation
-
-.. index:: cgraph_finalize_function
+.. index:: rest_of_decl_compilation, rest_of_type_compilation, cgraph_finalize_function
 
 In any case, the front end needs each complete top-level function or
 data declaration, and each data definition should be passed to
@@ -94,4 +78,3 @@ that is more descriptive than "rest_of".
 
 The middle-end will, at its option, emit the function and data
 definitions immediately or queue them for later processing.
-

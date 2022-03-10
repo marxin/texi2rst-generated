@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gimple:
-
 .. index:: GIMPLE
+
+.. _gimple:
 
 GIMPLE
 ------
@@ -86,4 +86,3 @@ with the flag :option:`-fdump-tree-gimple`.
   gimple/adding-a-new-gimple-statement-code
   gimple/statement-and-operand-traversals
   gimple/exception-handling
-

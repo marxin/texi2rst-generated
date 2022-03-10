@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: per-function data, data structures
+
 .. _per-function-data:
-
-.. index:: per-function data
-
-.. index:: data structures
 
 Defining data structures for per-function information.
 ******************************************************
@@ -62,4 +60,3 @@ used to initialize the ``machine`` of that structure.
 ``struct machine_function`` structures are expected to be freed by GC.
 Generally, any memory that they reference must be allocated by using
 GC allocation, including the structure itself.
-

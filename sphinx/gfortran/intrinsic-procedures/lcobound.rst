@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LCOBOUND, coarray, lower bound
+
 .. _lcobound:
-
-.. index:: LCOBOUND
-
-.. index:: coarray, lower bound
 
 LCOBOUND --- Lower codimension bounds of an array
 *************************************************
@@ -49,4 +47,3 @@ LCOBOUND --- Lower codimension bounds of an array
   :samp:`{See also}:`
     :ref:`UCOBOUND`, 
     :ref:`LBOUND`
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BESSEL_Y1, BESY1, DBESY1, Bessel function, second kind
+
 .. _bessel_y1:
-
-.. index:: BESSEL_Y1
-
-.. index:: BESY1
-
-.. index:: DBESY1
-
-.. index:: Bessel function, second kind
 
 BESSEL_Y1 --- Bessel function of the second kind of order 1
 ***********************************************************
@@ -55,4 +49,3 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
     =============  =============  ===========  =============
     ``DBESY1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     =============  =============  ===========  =============
-

@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BTEST, BBTEST, BITEST, BJTEST, BKTEST, bits, testing
+
 .. _btest:
-
-.. index:: BTEST
-
-.. index:: BBTEST
-
-.. index:: BITEST
-
-.. index:: BJTEST
-
-.. index:: BKTEST
-
-.. index:: bits, testing
 
 BTEST --- Bit test function
 ***************************
@@ -70,4 +60,3 @@ BTEST --- Bit test function
     ``BJTEST(I,POS)``  ``INTEGER(4) I,POS``  ``LOGICAL(4)``  GNU extension
     ``BKTEST(I,POS)``  ``INTEGER(8) I,POS``  ``LOGICAL(8)``  GNU extension
     =================  ====================  ==============  ====================
-

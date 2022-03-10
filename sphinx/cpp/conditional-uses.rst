@@ -30,4 +30,3 @@ There are three general reasons to use a conditional.
 Simple programs that do not need system-specific logic or complex
 debugging hooks generally will not need to use preprocessing
 conditionals.
-

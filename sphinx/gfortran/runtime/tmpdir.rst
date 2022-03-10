@@ -20,4 +20,3 @@ directory in the order below.
 
 * The ``P_tmpdir`` macro if it is defined, otherwise the directory
   :samp:`/tmp`.
-

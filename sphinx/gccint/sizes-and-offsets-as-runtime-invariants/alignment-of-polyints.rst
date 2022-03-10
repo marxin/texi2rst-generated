@@ -82,4 +82,3 @@ misalignments.  In each case the alignment must be a power of 2.
   respect to :samp:`{align}` at compile time and return the misalignment.
   When using this function, please add a comment explaining why
   the assertion is known to hold.
-

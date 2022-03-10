@@ -157,4 +157,3 @@ pair of types).
   definition, expands to a template argument pack containing integers
   from ``0`` to ``length-1``.  This is provided for efficient
   implementation of ``std::make_integer_sequence``.
-

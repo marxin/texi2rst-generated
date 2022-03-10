@@ -8,11 +8,7 @@
 SHIFTA --- Right shift with fill
 ********************************
 
-.. index:: SHIFTA
-
-.. index:: bits, shift right
-
-.. index:: shift, right with fill
+.. index:: SHIFTA, bits, shift right, shift, right with fill
 
 .. function:: SHIFTA(I, SHIFT)
 
@@ -49,4 +45,3 @@ SHIFTA --- Right shift with fill
   :samp:`{See also}:`
     :ref:`SHIFTL`, 
     :ref:`SHIFTR`
-

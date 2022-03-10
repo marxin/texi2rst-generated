@@ -37,4 +37,3 @@ from those for which GCC was designed, such as the declarative
 logic/functional language Mercury.  For these reasons, it may also be
 useful to implement compilers created for specialized purposes (for
 example, as part of a research project) as GCC front ends.
-

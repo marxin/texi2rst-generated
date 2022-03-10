@@ -8,21 +8,7 @@
 NOT --- Logical negation
 ************************
 
-.. index:: NOT
-
-.. index:: BNOT
-
-.. index:: INOT
-
-.. index:: JNOT
-
-.. index:: KNOT
-
-.. index:: bits, negate
-
-.. index:: bitwise logical not
-
-.. index:: logical not, bitwise
+.. index:: NOT, BNOT, INOT, JNOT, KNOT, bits, negate, bitwise logical not, logical not, bitwise
 
 .. function:: NOT(I)
 
@@ -65,4 +51,3 @@ NOT --- Logical negation
     :ref:`IBITS`, 
     :ref:`IBSET`, 
     :ref:`IBCLR`
-

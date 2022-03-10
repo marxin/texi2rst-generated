@@ -5,9 +5,9 @@
 
 .. program:: SPARC
 
-.. _sparc-options:
-
 .. index:: SPARC options
+
+.. _sparc-options:
 
 SPARC Options
 ^^^^^^^^^^^^^
@@ -386,4 +386,3 @@ on SPARC-V9 processors in 64-bit environments:
   frame pointer if present, are offset by -2047 which must be added back
   when making stack frame references.  This is the default in 64-bit mode.
   Otherwise, assume no such offset is present.
-

@@ -51,4 +51,3 @@ Qualifiers
   scalar type ``S``, is the subject of a volatile access by an assignment
   expression or an atomic function, the access to it is performed as if the
   object's declared type were ``volatile S``.
-

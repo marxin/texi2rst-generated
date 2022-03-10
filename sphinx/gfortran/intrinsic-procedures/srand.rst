@@ -8,11 +8,7 @@
 SRAND --- Reinitialize the random number generator
 **************************************************
 
-.. index:: SRAND
-
-.. index:: random number generation, seeding
-
-.. index:: seeding a random number generator
+.. index:: SRAND, random number generation, seeding, seeding a random number generator
 
 .. function:: SRAND(SEED)
 
@@ -56,4 +52,3 @@ SRAND --- Reinitialize the random number generator
     :ref:`RAND`, 
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_NUMBER`
-

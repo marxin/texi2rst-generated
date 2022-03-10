@@ -26,4 +26,3 @@ Identifiers
   This is a property of the linker.  C99 and C11 require that case distinctions
   are always significant in identifiers with external linkage and
   systems without this property are not supported by GCC.
-

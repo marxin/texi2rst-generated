@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: analyzer, debugging, static analyzer, debugging
+
 .. _debugging-the-analyzer:
-
-.. index:: analyzer, debugging
-
-.. index:: static analyzer, debugging
 
 Debugging the Analyzer
 **********************

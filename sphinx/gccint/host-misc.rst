@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: configuration file, xm-machine.h
+
 .. _host-misc:
-
-.. index:: configuration file
-
-.. index:: xm-machine.h
 
 Host Misc
 *********
@@ -70,4 +68,3 @@ In addition, if :command:`configure` generates an incorrect definition of
 any of the macros in :samp:`auto-host.h`, you can override that
 definition in a host configuration header.  If you need to do this,
 first see if it is possible to fix :command:`configure`.
-

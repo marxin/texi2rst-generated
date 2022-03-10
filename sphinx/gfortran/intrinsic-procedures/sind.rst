@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SIND, DSIND, CSIND, ZSIND, CDSIND, trigonometric function, sine, degrees, sine, degrees
+
 .. _sind:
-
-.. index:: SIND
-
-.. index:: DSIND
-
-.. index:: CSIND
-
-.. index:: ZSIND
-
-.. index:: CDSIND
-
-.. index:: trigonometric function, sine, degrees
-
-.. index:: sine, degrees
 
 SIND --- Sine function, degrees
 *******************************
@@ -70,4 +58,3 @@ SIND --- Sine function, degrees
     :ref:`ASIND` 
     Radians function: 
     :ref:`SIN` 
-

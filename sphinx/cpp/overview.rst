@@ -65,4 +65,3 @@ manual refer to GNU CPP.
   initial-processing
   tokenization
   the-preprocessing-language
-

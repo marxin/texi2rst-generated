@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DOT_PRODUCT, dot product, vector product, product, vector
+
 .. _dot_product:
-
-.. index:: DOT_PRODUCT
-
-.. index:: dot product
-
-.. index:: vector product
-
-.. index:: product, vector
 
 DOT_PRODUCT --- Dot product function
 ************************************
@@ -63,4 +57,3 @@ DOT_PRODUCT --- Dot product function
           print *
           print *, dot_product(a,b)
       end program test_dot_prod
-

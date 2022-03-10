@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _registers:
-
 .. index:: register usage
+
+.. _registers:
 
 Register Usage
 **************
@@ -63,11 +63,7 @@ Registers have various characteristics.
 
 .. c:macro:: CALL_USED_REGISTERS
 
-  .. index:: call-used register
-
-  .. index:: call-clobbered register
-
-  .. index:: call-saved register
+  .. index:: call-used register, call-clobbered register, call-saved register
 
   Like ``FIXED_REGISTERS`` but has 1 for each register that is
   clobbered (in general) by function calls as well as for fixed
@@ -84,11 +80,7 @@ Registers have various characteristics.
 
 .. c:macro:: CALL_REALLY_USED_REGISTERS
 
-  .. index:: call-used register
-
-  .. index:: call-clobbered register
-
-  .. index:: call-saved register
+  .. index:: call-used register, call-clobbered register, call-saved register
 
   Like ``CALL_USED_REGISTERS`` except this macro doesn't require
   that the entire set of ``FIXED_REGISTERS`` be included.
@@ -97,11 +89,7 @@ Registers have various characteristics.
   Exactly one of ``CALL_USED_REGISTERS`` and ``CALL_REALLY_USED_REGISTERS``
   must be defined.  Modern ports should define ``CALL_REALLY_USED_REGISTERS``.
 
-.. index:: call-used register
-
-.. index:: call-clobbered register
-
-.. index:: call-saved register
+.. index:: call-used register, call-clobbered register, call-saved register
 
 .. function:: const predefined_function_abi & TARGET_FNTYPE_ABI (const_tree type)
 
@@ -129,11 +117,7 @@ Registers have various characteristics.
 
 .. hook-end
 
-.. index:: call-used register
-
-.. index:: call-clobbered register
-
-.. index:: call-saved register
+.. index:: call-used register, call-clobbered register, call-saved register
 
 .. function:: bool TARGET_HARD_REGNO_CALL_PART_CLOBBERED (unsigned int abi_id, unsigned int regno, machine_mode mode)
 
@@ -169,15 +153,7 @@ Registers have various characteristics.
 
 .. hook-end
 
-.. index:: fixed_regs
-
-.. index:: call_used_regs
-
-.. index:: global_regs
-
-.. index:: reg_names
-
-.. index:: reg_class_contents
+.. index:: fixed_regs, call_used_regs, global_regs, reg_names, reg_class_contents
 
 .. function:: void TARGET_CONDITIONAL_REGISTER_USAGE (void)
 
@@ -198,9 +174,7 @@ Registers have various characteristics.
   :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`
   command options have been applied.
 
-  .. index:: disabling certain registers
-
-  .. index:: controlling register usage
+  .. index:: disabling certain registers, controlling register usage
 
   If the usage of an entire class of registers depends on the target
   flags, you may indicate this to GCC by using this macro to modify
@@ -245,11 +219,9 @@ Registers have various characteristics.
   If the program counter has a register number, define this as that
   register number.  Otherwise, do not define it.
 
+.. index:: order of register allocation, register allocation order
+
 .. _allocation-order:
-
-.. index:: order of register allocation
-
-.. index:: register allocation order
 
 Order of Allocation of Registers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -482,11 +454,9 @@ consecutive registers are needed for a given mode.
   registers.  You should only define this macro if support for copying to/from
   ``CCmode`` is incomplete.
 
+.. index:: leaf functions, functions, leaf
+
 .. _leaf-functions:
-
-.. index:: leaf functions
-
-.. index:: functions, leaf
 
 Handling Leaf Functions
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -537,9 +507,7 @@ accomplish this.
   treatment of leaf functions, and registers need to be renumbered to do
   this.
 
-.. index:: current_function_is_leaf
-
-.. index:: current_function_uses_only_leaf_regs
+.. index:: current_function_is_leaf, current_function_uses_only_leaf_regs
 
 ``TARGET_ASM_FUNCTION_PROLOGUE`` and
 ``TARGET_ASM_FUNCTION_EPILOGUE`` must usually treat leaf functions
@@ -593,4 +561,3 @@ with it, as well as defining these macros.
 
   The number of the last stack-like register.  This one is the bottom of
   the stack.
-

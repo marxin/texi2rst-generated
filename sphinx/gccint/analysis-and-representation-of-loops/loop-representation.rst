@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Loop representation, Loop analysis
+
 .. _loop-representation:
-
-.. index:: Loop representation
-
-.. index:: Loop analysis
 
 Loop representation
 *******************
@@ -137,4 +135,3 @@ used to cleanup CFG while updating the loops structures if
 At the moment loop structure is preserved from the start of GIMPLE
 loop optimizations until the end of RTL loop optimizations.  During
 this time a loop can be tracked by its ``struct loop`` and number.
-

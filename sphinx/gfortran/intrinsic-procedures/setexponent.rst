@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SET_EXPONENT, real number, set exponent, floating point, set exponent
+
 .. _set_exponent:
-
-.. index:: SET_EXPONENT
-
-.. index:: real number, set exponent
-
-.. index:: floating point, set exponent
 
 SET_EXPONENT --- Set the exponent of the model
 **********************************************
@@ -52,4 +48,3 @@ SET_EXPONENT --- Set the exponent of the model
         INTEGER :: i = 17
         PRINT *, SET_EXPONENT(x, i), FRACTION(x) * RADIX(x)**i
       END PROGRAM
-

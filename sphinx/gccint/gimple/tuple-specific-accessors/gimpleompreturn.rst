@@ -21,4 +21,3 @@ GIMPLE_OMP_RETURN
 
   Return true if ``OMP`` return statement ``G`` has the
   ``GF_OMP_RETURN_NOWAIT`` flag set.
-

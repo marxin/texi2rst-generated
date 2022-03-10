@@ -23,9 +23,7 @@ way around them.
   You have to expect a certain amount of disagreement between the
   executable and your source code, when you use optimization.
 
-  .. index:: conflicting types
-
-  .. index:: scope of declaration
+  .. index:: conflicting types, scope of declaration
 
 * Users often think it is a bug when GCC reports an error for code
   like this:
@@ -102,4 +100,3 @@ way around them.
   though the modules in which they occur may not be used by the program.
   This may lead to both increased executable size and unexpected symbol
   references.
-

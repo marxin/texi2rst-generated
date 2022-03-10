@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: mixed declarations and code, declarations, mixed with code, code, mixed with declarations
+
 .. _mixed-labels-and-declarations:
-
-.. index:: mixed declarations and code
-
-.. index:: declarations, mixed with code
-
-.. index:: code, mixed with declarations
 
 Mixed Declarations, Labels and Code
 ***********************************
@@ -29,4 +25,3 @@ you could do:
 
 Each identifier is visible from where it is declared until the end of
 the enclosing block.
-

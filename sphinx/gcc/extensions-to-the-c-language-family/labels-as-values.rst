@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: labels as values, computed gotos, goto with computed label, address of a label
+
 .. _labels-as-values:
-
-.. index:: labels as values
-
-.. index:: computed gotos
-
-.. index:: goto with computed label
-
-.. index:: address of a label
 
 Labels as Values
 ****************
@@ -91,4 +85,3 @@ relies on them being always the same,
 ``__attribute__((__noinline__,__noclone__))`` should be used to
 prevent inlining and cloning.  If ``&&foo`` is used in a static
 variable initializer, inlining and cloning is forbidden.
-

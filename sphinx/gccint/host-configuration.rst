@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _host-config:
-
 .. index:: host configuration
+
+.. _host-config:
 
 Host Configuration
 ------------------
@@ -30,4 +30,3 @@ header.  See :ref:`system-config`.
   host-common
   host-misc
   host-filesystem
-

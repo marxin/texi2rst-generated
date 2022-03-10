@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: INT2, conversion, to integer
+
 .. _int2:
-
-.. index:: INT2
-
-.. index:: conversion, to integer
 
 INT2 --- Convert to 16-bit integer type
 ***************************************
@@ -40,4 +38,3 @@ INT2 --- Convert to 16-bit integer type
   :samp:`{See also}:`
     :ref:`INT`, 
     :ref:`INT8`
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SELECTED_INT_KIND, integer kind, kind, integer
+
 .. _selected_int_kind:
-
-.. index:: SELECTED_INT_KIND
-
-.. index:: integer kind
-
-.. index:: kind, integer
 
 SELECTED_INT_KIND --- Choose integer kind
 *****************************************
@@ -52,4 +48,3 @@ SELECTED_INT_KIND --- Choose integer kind
         print *, huge(i5) >= 10_k5**5-1
         print *, huge(i15) >= 10_k15**15-1
       end program large_integers
-

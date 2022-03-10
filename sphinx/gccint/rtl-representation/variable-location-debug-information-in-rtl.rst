@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _debug-information:
-
 .. index:: Variable Location Debug Information in RTL
+
+.. _debug-information:
 
 Variable Location Debug Information in RTL
 ******************************************
@@ -62,4 +62,3 @@ location may vary, it relies on the following types of notes.
   ``BLKmode``, it indicates an inline entry point: the lexical block
   encoded in the ``INSN_LOCATION`` is the enclosing block that encloses
   the inlined function.
-

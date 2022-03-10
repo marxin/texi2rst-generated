@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: arguments in registers, registers arguments
+
 .. _register-arguments:
-
-.. index:: arguments in registers
-
-.. index:: registers arguments
 
 Passing Arguments in Registers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,9 +52,7 @@ the stack.
   done by making ``TARGET_FUNCTION_ARG`` return 0 whenever
   :samp:`{named}` is ``false``.
 
-  .. index:: TARGET_MUST_PASS_IN_STACK, and TARGET_FUNCTION_ARG
-
-  .. index:: REG_PARM_STACK_SPACE, and TARGET_FUNCTION_ARG
+  .. index:: TARGET_MUST_PASS_IN_STACK, and TARGET_FUNCTION_ARG, REG_PARM_STACK_SPACE, and TARGET_FUNCTION_ARG
 
   You may use the hook ``targetm.calls.must_pass_in_stack``
   in the definition of this macro to determine if this argument is of a
@@ -635,4 +631,3 @@ the stack.
   of spill registers and print a fatal error message.
 
 .. hook-end
-

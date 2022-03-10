@@ -19,4 +19,3 @@ GIMPLE_RETURN
 .. function:: void gimple_return_set_retval (greturn *g, tree retval)
 
   Set ``RETVAL`` to be the return value for ``GIMPLE_RETURN`` ``G``.
-

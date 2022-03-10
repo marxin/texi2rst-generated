@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SELECTED_REAL_KIND, real kind, kind, real, radix, real
+
 .. _selected_real_kind:
-
-.. index:: SELECTED_REAL_KIND
-
-.. index:: real kind
-
-.. index:: kind, real
-
-.. index:: radix, real
 
 SELECTED_REAL_KIND --- Choose real kind
 ***************************************
@@ -73,4 +67,3 @@ SELECTED_REAL_KIND --- Choose real kind
     :ref:`PRECISION`, 
     :ref:`RANGE`, 
     :ref:`RADIX`
-

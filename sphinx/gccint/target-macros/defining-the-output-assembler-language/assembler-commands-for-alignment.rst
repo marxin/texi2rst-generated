@@ -93,4 +93,3 @@ This describes commands for alignment.
   :samp:`{power}` bytes, but only if :samp:`{max_skip}` or fewer bytes are needed to
   satisfy the alignment request.  :samp:`{power}` and :samp:`{max_skip}` will be
   a C expression of type ``int``.
-

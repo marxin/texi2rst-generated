@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ASINH, DASINH, area hyperbolic sine, inverse hyperbolic sine, hyperbolic function, sine, inverse, sine, hyperbolic, inverse
+
 .. _asinh:
-
-.. index:: ASINH
-
-.. index:: DASINH
-
-.. index:: area hyperbolic sine
-
-.. index:: inverse hyperbolic sine
-
-.. index:: hyperbolic function, sine, inverse
-
-.. index:: sine, hyperbolic, inverse
 
 ASINH --- Inverse hyperbolic sine function
 ******************************************
@@ -63,4 +53,3 @@ ASINH --- Inverse hyperbolic sine function
   :samp:`{See also}:`
     Inverse function: 
     :ref:`SINH`
-

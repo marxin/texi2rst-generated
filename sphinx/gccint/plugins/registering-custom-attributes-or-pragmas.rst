@@ -71,4 +71,3 @@ preprocessor expansions. For example:
 
   #define NUMBER 10
   #pragma GCCPLUGIN foothreshold (NUMBER)
-

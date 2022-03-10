@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _internal-representation-of-logical-variables:
-
 .. index:: logical, variable representation
+
+.. _internal-representation-of-logical-variables:
 
 Internal representation of LOGICAL variables
 ********************************************
@@ -22,4 +22,3 @@ values: ``1`` for ``.TRUE.`` and ``0`` for
 ``.FALSE.``.  Any other integer value results in undefined behavior.
 
 See also :ref:`argument-passing-conventions` and :ref:`interoperability-with-c`.
-

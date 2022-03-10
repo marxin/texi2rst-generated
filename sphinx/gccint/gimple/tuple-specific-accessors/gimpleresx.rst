@@ -22,4 +22,3 @@ GIMPLE_RESX
 .. function:: void gimple_resx_set_region (gresx *g, int region)
 
   Set ``REGION`` to be the region number for ``GIMPLE_RESX`` ``G``.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: REPEAT, string, repeat, string, concatenate
+
 .. _repeat:
-
-.. index:: REPEAT
-
-.. index:: string, repeat
-
-.. index:: string, concatenate
 
 REPEAT --- Repeated string concatenation 
 *****************************************
@@ -47,4 +43,3 @@ REPEAT --- Repeated string concatenation
       program test_repeat
         write(*,*) repeat("x", 5)   ! "xxxxx"
       end program
-

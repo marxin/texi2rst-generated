@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: XOR, bitwise logical exclusive or, logical exclusive or, bitwise
+
 .. _xor:
-
-.. index:: XOR
-
-.. index:: bitwise logical exclusive or
-
-.. index:: logical exclusive or, bitwise
 
 XOR --- Bitwise logical exclusive OR
 ************************************
@@ -64,4 +60,3 @@ XOR --- Bitwise logical exclusive OR
   :samp:`{See also}:`
     Fortran 95 elemental function: 
     :ref:`IEOR`
-

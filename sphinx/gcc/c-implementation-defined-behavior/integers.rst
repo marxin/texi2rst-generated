@@ -64,4 +64,3 @@ Integers
 
   GCC always follows the C99 and C11 requirement that the result of division is
   truncated towards zero.
-

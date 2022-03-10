@@ -260,9 +260,7 @@ The following attributes are supported on most targets.
   When profile feedback is available, via :option:`-fprofile-use`, cold functions
   are automatically detected and this attribute is ignored.
 
-.. index:: const function attribute
-
-.. index:: functions that have no side effects
+.. index:: const function attribute, functions that have no side effects
 
 .. gcc-attr:: const
 
@@ -306,9 +304,7 @@ The following attributes are supported on most targets.
   in C++, reference arguments. Likewise, a function that calls a non-const
   function usually must not be const itself.
 
-.. index:: constructor function attribute
-
-.. index:: destructor function attribute
+.. index:: constructor function attribute, destructor function attribute
 
 .. gcc-attr:: constructor, destructor, constructor (priority), destructor (priority)
 
@@ -417,9 +413,7 @@ The following attributes are supported on most targets.
   The :gcc-attr:`unavailable` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
-.. index:: error function attribute
-
-.. index:: warning function attribute
+.. index:: error function attribute, warning function attribute
 
 .. gcc-attr:: error ("message"), warning ("message")
 
@@ -466,9 +460,7 @@ The following attributes are supported on most targets.
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
-.. index:: format function attribute
-
-.. index:: functions with printf, scanf, strftime or strfmon style arguments
+.. index:: format function attribute, functions with printf, scanf, strftime or strfmon style arguments
 
 .. option:: format (archetype, string-index, first-to-check)
 
@@ -652,11 +644,7 @@ The following attributes are supported on most targets.
   When profile feedback is available, via :option:`-fprofile-use`, hot functions
   are automatically detected and this attribute is ignored.
 
-.. index:: ifunc function attribute
-
-.. index:: indirect functions
-
-.. index:: functions that are dynamically resolved
+.. index:: ifunc function attribute, indirect functions, functions that are dynamically resolved
 
 .. gcc-attr:: ifunc ("resolver")
 
@@ -793,9 +781,7 @@ The following attributes are supported on most targets.
   this reason the attribute is not allowed on types to annotate indirect
   calls.
 
-.. index:: malloc function attribute
-
-.. index:: functions that behave like malloc
+.. index:: malloc function attribute, functions that behave like malloc
 
 .. gcc-attr:: malloc, malloc (deallocator), malloc (deallocator, ptr-index)
 
@@ -1052,9 +1038,7 @@ The following attributes are supported on most targets.
   them individually.  This attribute is supported mainly for the purpose
   of testing the compiler.
 
-.. index:: nonnull function attribute
-
-.. index:: functions with non-null pointer arguments
+.. index:: nonnull function attribute, functions with non-null pointer arguments
 
 .. gcc-attr:: nonnull, nonnull (arg-index, ...)
 
@@ -1141,9 +1125,7 @@ The following attributes are supported on most targets.
   In position-dependent code, a few targets also convert calls to
   functions that are marked to not use the PLT to use the GOT instead.
 
-.. index:: noreturn function attribute
-
-.. index:: functions that never return
+.. index:: noreturn function attribute, functions that never return
 
 .. gcc-attr:: noreturn
 
@@ -1225,9 +1207,7 @@ The following attributes are supported on most targets.
   The ``optimize`` attribute should be used for debugging purposes only.
   It is not suitable in production code.
 
-.. index:: patchable_function_entry function attribute
-
-.. index:: extra NOP instructions at the function entry point
+.. index:: patchable_function_entry function attribute, extra NOP instructions at the function entry point
 
 .. gcc-attr:: patchable_function_entry
 
@@ -1249,9 +1229,7 @@ The following attributes are supported on most targets.
   framework with the attribute ``patchable_function_entry (0)``
   to prevent recursion.
 
-.. index:: pure function attribute
-
-.. index:: functions that have no side effects
+.. index:: pure function attribute, functions that have no side effects
 
 .. gcc-attr:: pure
 
@@ -1315,9 +1293,7 @@ The following attributes are supported on most targets.
   lets the compiler optimize callers based on the knowledge
   that the return value will never be null.
 
-.. index:: returns_twice function attribute
-
-.. index:: functions that return more than once
+.. index:: returns_twice function attribute, functions that return more than once
 
 .. gcc-attr:: returns_twice
 
@@ -1329,9 +1305,7 @@ The following attributes are supported on most targets.
   The ``longjmp`` -like counterpart of such function, if any, might need
   to be marked with the :gcc-attr:`noreturn` attribute.
 
-.. index:: section function attribute
-
-.. index:: functions in arbitrary sections
+.. index:: section function attribute, functions in arbitrary sections
 
 .. gcc-attr:: section ("section-name")
 

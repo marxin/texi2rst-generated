@@ -40,4 +40,3 @@ is "dce".
 TODO: describe the global variables set up by the pass manager,
 and a brief description of how a new pass should use it.
 I need to look at what info RTL passes use first…
-

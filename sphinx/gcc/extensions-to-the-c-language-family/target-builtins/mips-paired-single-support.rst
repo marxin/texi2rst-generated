@@ -43,4 +43,3 @@ For example:
   value is the upper one.  The opposite order applies to big-endian targets.
   For example, the code above sets the lower half of ``a`` to
   ``1.5`` on little-endian targets and ``9.1`` on big-endian targets.
-

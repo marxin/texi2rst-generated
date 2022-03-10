@@ -72,4 +72,3 @@ similarly to the first use case.
 
       /* Copy the results from the device */
       acc_memcpy_from_device(&h_Y1[0], d_Y, N * sizeof (float));
-

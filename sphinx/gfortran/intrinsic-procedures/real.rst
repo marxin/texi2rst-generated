@@ -8,25 +8,7 @@
 REAL --- Convert to real type 
 ******************************
 
-.. index:: REAL
-
-.. index:: REALPART
-
-.. index:: FLOAT
-
-.. index:: DFLOAT
-
-.. index:: FLOATI
-
-.. index:: FLOATJ
-
-.. index:: FLOATK
-
-.. index:: SNGL
-
-.. index:: conversion, to real
-
-.. index:: complex numbers, real part
+.. index:: REAL, REALPART, FLOAT, DFLOAT, FLOATI, FLOATJ, FLOATK, SNGL, conversion, to real, complex numbers, real part
 
 .. function:: REAL(A, KIND)
 
@@ -82,4 +64,3 @@ REAL --- Convert to real type
 
   :samp:`{See also}:`
     :ref:`DBLE`
-

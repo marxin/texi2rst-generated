@@ -44,4 +44,3 @@ source, the most important ones being :samp:`compile.exp`,
 To get a list of the possible :samp:`*.exp` files, pipe the
 output of :samp:`make check` into a file and look at the
 :samp:`Running ...  .exp` lines.
-

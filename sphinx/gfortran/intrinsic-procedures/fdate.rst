@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FDATE, time, current, current time, date, current, current date
+
 .. _fdate:
-
-.. index:: FDATE
-
-.. index:: time, current
-
-.. index:: current time
-
-.. index:: date, current
-
-.. index:: current date
 
 FDATE --- Get the current time as a string
 ******************************************
@@ -65,4 +57,3 @@ FDATE --- Get the current time as a string
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`
-

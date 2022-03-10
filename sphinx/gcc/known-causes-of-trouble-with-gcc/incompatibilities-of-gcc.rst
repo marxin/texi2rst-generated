@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: incompatibilities of GCC, traditional
+
 .. _incompatibilities:
-
-.. index:: incompatibilities of GCC
-
-.. index:: traditional
 
 Incompatibilities of GCC
 ************************
@@ -15,11 +13,7 @@ Incompatibilities of GCC
 There are several noteworthy incompatibilities between GNU C and K&R
 (non-ISO) versions of C.
 
-.. index:: string constants
-
-.. index:: read-only strings
-
-.. index:: shared strings
+.. index:: string constants, read-only strings, shared strings
 
 * GCC normally makes string constants read-only.  If several
   identical-looking string constants are used, GCC stores only one
@@ -31,11 +25,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   constant argument.  The function ``mktemp`` always alters the
   string its argument points to.
 
-  .. index:: sscanf, and constant strings
-
-  .. index:: fscanf, and constant strings
-
-  .. index:: scanf, and constant strings
+  .. index:: sscanf, and constant strings, fscanf, and constant strings, scanf, and constant strings
 
   Another consequence is that ``sscanf`` does not work on some very
   old systems when passed a string constant as its format control string
@@ -61,9 +51,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
 
   will produce output ``"a"`` regardless of what the argument :samp:`{a}` is.
 
-  .. index:: setjmp incompatibilities
-
-  .. index:: longjmp incompatibilities
+  .. index:: setjmp incompatibilities, longjmp incompatibilities
 
 * When you use ``setjmp`` and ``longjmp``, the only automatic
   variables guaranteed to remain valid are those declared
@@ -112,11 +100,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
 * K&R compilers allow comments to cross over an inclusion boundary
   (i.e. started in an include file and ended in the including file).
 
-  .. index:: external declaration scope
-
-  .. index:: scope of external declarations
-
-  .. index:: declaration scope
+  .. index:: external declaration scope, scope of external declarations, declaration scope
 
 * Declarations of external variables and functions within a block apply
   only to the block containing the declaration.  In other words, they
@@ -161,9 +145,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   such as :samp:`+=`.  GCC, following the ISO standard, does not
   allow this.
 
-  .. index:: apostrophes
-
-  .. index:: '
+  .. index:: apostrophes, '
 
 * GCC complains about unterminated character constants inside of
   preprocessing conditionals that fail.  Some programs have English
@@ -199,9 +181,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   with PCC compatibility, you should declare your functions to return
   ``double`` ; you might as well say what you mean.
 
-  .. index:: structures
-
-  .. index:: unions
+  .. index:: structures, unions
 
 * When compiling functions that return structures or unions, GCC
   output code normally uses a method different from that used on most
@@ -232,9 +212,7 @@ There are several noteworthy incompatibilities between GNU C and K&R
   You can tell GCC to use a compatible convention for all structure and
   union returning with the option :option:`-fpcc-struct-return`.
 
-  .. index:: preprocessing tokens
-
-  .. index:: preprocessing numbers
+  .. index:: preprocessing tokens, preprocessing numbers
 
 * GCC complains about program fragments such as :samp:`0x74ae-0x4000`
   which appear to be two hexadecimal constants separated by the minus
@@ -253,4 +231,3 @@ There are several noteworthy incompatibilities between GNU C and K&R
 
   To make the above program fragment valid, place whitespace in front of
   the minus sign.  This whitespace will end the preprocessing number.
-

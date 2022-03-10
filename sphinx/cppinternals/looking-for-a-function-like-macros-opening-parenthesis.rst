@@ -22,4 +22,3 @@ function, ``funlike_invocation_p``, which remembers padding
 information as it reads tokens.  If the next real token is not an
 opening parenthesis, it backs up that one token, and then pushes an
 extra context just containing the padding information if necessary.
-

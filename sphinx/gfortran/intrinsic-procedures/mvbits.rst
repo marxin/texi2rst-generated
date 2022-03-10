@@ -3,19 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MVBITS, BMVBITS, IMVBITS, JMVBITS, KMVBITS, bits, move
+
 .. _mvbits:
-
-.. index:: MVBITS
-
-.. index:: BMVBITS
-
-.. index:: IMVBITS
-
-.. index:: JMVBITS
-
-.. index:: KMVBITS
-
-.. index:: bits, move
 
 MVBITS --- Move bits from one integer to another
 ************************************************
@@ -75,4 +65,3 @@ MVBITS --- Move bits from one integer to another
     :ref:`IAND`, 
     :ref:`IOR`, 
     :ref:`IEOR`
-

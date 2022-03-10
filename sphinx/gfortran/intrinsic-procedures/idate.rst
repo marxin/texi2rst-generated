@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IDATE, date, current, current date
+
 .. _idate:
-
-.. index:: IDATE
-
-.. index:: date, current
-
-.. index:: current date
 
 IDATE --- Get current local time subroutine (day/month/year) 
 *************************************************************
@@ -54,4 +50,3 @@ IDATE --- Get current local time subroutine (day/month/year)
 
   :samp:`{See also}:`
     :ref:`DATE_AND_TIME`
-

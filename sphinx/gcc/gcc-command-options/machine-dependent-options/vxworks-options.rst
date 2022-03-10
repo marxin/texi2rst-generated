@@ -5,9 +5,9 @@
 
 .. program:: VxWorks
 
-.. _vxworks-options:
-
 .. index:: VxWorks Options
+
+.. _vxworks-options:
 
 VxWorks Options
 ^^^^^^^^^^^^^^^
@@ -43,4 +43,3 @@ options for that target.
 
   Disable lazy binding of function calls.  This option is the default and
   is defined for compatibility with Diab.
-

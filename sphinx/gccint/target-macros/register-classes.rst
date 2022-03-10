@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: register class definitions, class definitions, register
+
 .. _register-classes:
-
-.. index:: register class definitions
-
-.. index:: class definitions, register
 
 Register Classes
 ****************
@@ -21,9 +19,7 @@ You define a number of register classes, giving each one a name and saying
 which of the registers belong to it.  Then you can specify register classes
 that are allowed as operands to particular instruction patterns.
 
-.. index:: ALL_REGS
-
-.. index:: NO_REGS
+.. index:: ALL_REGS, NO_REGS
 
 In general, each register will belong to several classes.  In fact, one
 class must be named ``ALL_REGS`` and contain all the registers.  Another
@@ -803,4 +799,3 @@ in many of the tables described below.
   register classes stored in the array :samp:`{pressure_classes}`.
 
 .. hook-end
-

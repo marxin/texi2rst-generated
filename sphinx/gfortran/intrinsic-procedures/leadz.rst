@@ -8,9 +8,7 @@
 LEADZ --- Number of leading zero bits of an integer
 ***************************************************
 
-.. index:: LEADZ
-
-.. index:: zero bits
+.. index:: LEADZ, zero bits
 
 .. function:: LEADZ(I)
 
@@ -49,4 +47,3 @@ LEADZ --- Number of leading zero bits of an integer
     :ref:`TRAILZ`, 
     :ref:`POPCNT`, 
     :ref:`POPPAR`
-

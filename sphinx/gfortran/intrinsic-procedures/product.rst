@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: PRODUCT, array, product, array, multiply elements, array, conditionally multiply elements, multiply array elements
+
 .. _product:
-
-.. index:: PRODUCT
-
-.. index:: array, product
-
-.. index:: array, multiply elements
-
-.. index:: array, conditionally multiply elements
-
-.. index:: multiply array elements
 
 PRODUCT --- Product of array elements
 *************************************
@@ -64,4 +56,3 @@ PRODUCT --- Product of array elements
 
   :samp:`{See also}:`
     :ref:`SUM`
-

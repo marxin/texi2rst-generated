@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_num_teams:
-
 .. index:: Environment Variable
+
+.. _omp_num_teams:
 
 OMP_NUM_TEAMS -- Specifies the number of teams to use by teams region
 *********************************************************************

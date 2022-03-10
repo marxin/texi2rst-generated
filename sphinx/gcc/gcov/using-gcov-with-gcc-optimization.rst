@@ -84,4 +84,3 @@ In order to terminate immediately after an errors occurs
 set :samp:`GCOV_EXIT_AT_ERROR` environment variable.
 That can help users to find profile clashing which leads
 to a misleading profile.
-

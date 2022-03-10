@@ -5,11 +5,9 @@
 
 .. program:: Nios II
 
+.. index:: Nios II options, Altera Nios II options
+
 .. _nios-ii-options:
-
-.. index:: Nios II options
-
-.. index:: Altera Nios II options
 
 Nios II Options
 ^^^^^^^^^^^^^^^
@@ -142,9 +140,7 @@ These are the options defined for the Altera Nios II processor.
   requires :option:`-march`:samp:`=r2`.  Since these instructions are optional
   extensions to the R2 architecture, the default is not to emit them.
 
-.. index:: mcustom-insn
-
-.. index:: mno-custom-insn
+.. index:: mcustom-insn, mno-custom-insn
 
 .. option:: -mcustom-insn={N}
 
@@ -365,4 +361,3 @@ ELF (bare-metal) target:
   low-level system calls required by the C library,
   e.g. ``read`` and ``write``.
   This option is typically used to link with a library provided by a HAL BSP.
-

@@ -8,11 +8,7 @@
 DCMPLX --- Double complex conversion function
 *********************************************
 
-.. index:: DCMPLX
-
-.. index:: complex numbers, conversion to
-
-.. index:: conversion, to complex
+.. index:: DCMPLX, complex numbers, conversion to, conversion, to complex
 
 .. function:: DCMPLX(X, Y)
 
@@ -58,4 +54,3 @@ DCMPLX --- Double complex conversion function
           print *, dcmplx(z)
           print *, dcmplx(x,i)
       end program test_dcmplx
-

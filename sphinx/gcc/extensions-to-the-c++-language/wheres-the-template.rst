@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _template-instantiation:
-
 .. index:: template instantiation
+
+.. _template-instantiation:
 
 Where's the Template?
 *********************
@@ -129,4 +129,3 @@ You have the following options for dealing with template instantiations:
 
     inline template class Foo<int>;
     static template class Foo<int>;
-

@@ -8,19 +8,7 @@
 IBITS --- Bit extraction
 ************************
 
-.. index:: IBITS
-
-.. index:: BBITS
-
-.. index:: IIBITS
-
-.. index:: JIBITS
-
-.. index:: KIBITS
-
-.. index:: bits, get
-
-.. index:: bits, extract
+.. index:: IBITS, BBITS, IIBITS, JIBITS, KIBITS, bits, get, bits, extract
 
 .. function:: IBITS(I, POS, LEN)
 
@@ -73,4 +61,3 @@ IBITS --- Bit extraction
     :ref:`IAND`, 
     :ref:`IOR`, 
     :ref:`IEOR`
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: NUM_IMAGES, coarray, NUM_IMAGES, images, number of
+
 .. _num_images:
-
-.. index:: NUM_IMAGES
-
-.. index:: coarray, NUM_IMAGES
-
-.. index:: images, number of
 
 NUM_IMAGES --- Function that returns the number of images
 *********************************************************
@@ -65,4 +61,3 @@ NUM_IMAGES --- Function that returns the number of images
   :samp:`{See also}:`
     :ref:`THIS_IMAGE`, 
     :ref:`IMAGE_INDEX`
-

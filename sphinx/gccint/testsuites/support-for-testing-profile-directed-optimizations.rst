@@ -49,4 +49,3 @@ about a specific optimization:
 :samp:`{ dg-final-use { {local-directive} } }`
   The :samp:`{local-directive}` is run after the profile data have been
   used.
-

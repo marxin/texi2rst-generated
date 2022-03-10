@@ -18,4 +18,3 @@ all conditionally-supported constructs that it does not support (C++0x
   Such argument passing is supported, using the same
   pass-by-invisible-reference approach used for normal function
   arguments of such types.
-

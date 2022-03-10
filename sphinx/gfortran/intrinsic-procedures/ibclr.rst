@@ -8,19 +8,7 @@
 IBCLR --- Clear bit
 *******************
 
-.. index:: IBCLR
-
-.. index:: BBCLR
-
-.. index:: IIBCLR
-
-.. index:: JIBCLR
-
-.. index:: KIBCLR
-
-.. index:: bits, unset
-
-.. index:: bits, clear
+.. index:: IBCLR, BBCLR, IIBCLR, JIBCLR, KIBCLR, bits, unset, bits, clear
 
 .. function:: IBCLR(I, POS)
 
@@ -67,4 +55,3 @@ IBCLR --- Clear bit
     :ref:`IOR`, 
     :ref:`IEOR`, 
     :ref:`MVBITS`
-

@@ -36,4 +36,3 @@ These :samp:`-m` options are defined for the VMS implementations:
   :samp:`32` or :samp:`short` for 32 bit pointers, :samp:`64` or :samp:`long`
   for 64 bit pointers, and :samp:`no` for supporting only 32 bit pointers.
   The later option disables ``pragma pointer_size``.
-

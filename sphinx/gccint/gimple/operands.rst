@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _operands:
-
 .. index:: Operands
+
+.. _operands:
 
 Operands
 ********
@@ -36,9 +36,9 @@ The target of an assignment is usually a variable, but can also be a
   :maxdepth: 2
 
 
-.. _compound-expressions:
-
 .. index:: Compound Expressions
+
+.. _compound-expressions:
 
 Compound Expressions
 ^^^^^^^^^^^^^^^^^^^^
@@ -46,9 +46,9 @@ Compound Expressions
 The left-hand side of a C comma expression is simply moved into a separate
 statement.
 
-.. _compound-lvalues:
-
 .. index:: Compound Lvalues
+
+.. _compound-lvalues:
 
 Compound Lvalues
 ^^^^^^^^^^^^^^^^
@@ -69,9 +69,9 @@ by way of ``a.b``, so it would think that the assignment could alias
 another member of ``a`` ; this broke ``struct-alias-1.c``.  Future
 optimizer improvements may make this limitation unnecessary.
 
-.. _conditional-expressions:
-
 .. index:: Conditional Expressions
+
+.. _conditional-expressions:
 
 Conditional Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,9 +100,9 @@ conditions using vector conditional operations.
 Note that in GIMPLE, ``if`` statements are represented using
 ``GIMPLE_COND``, as described below.
 
-.. _logical-operators:
-
 .. index:: Logical Operators
+
+.. _logical-operators:
 
 Logical Operators
 ^^^^^^^^^^^^^^^^^
@@ -317,4 +317,3 @@ Statement validation
 
   Return true if g is a ``GIMPLE_DEBUG`` that marks a program location,
   without any variable binding.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: standard pattern names, pattern names, names, pattern
+
 .. _standard-names:
-
-.. index:: standard pattern names
-
-.. index:: pattern names
-
-.. index:: names, pattern
 
 Standard Pattern Names For Generation
 *************************************
@@ -112,9 +108,7 @@ movm
   :samp:`mov{m}` instructions must be designed to avoid ever trying to
   reload into a floating point register.
 
-  .. index:: reload_in instruction pattern
-
-  .. index:: reload_out instruction pattern
+  .. index:: reload_in instruction pattern, reload_out instruction pattern
 
 reload_inm reload_outm
   These named patterns have been obsoleted by the target hook
@@ -589,43 +583,7 @@ addm3
   must have mode :samp:`{m}`.  This can be used even on two-address machines, by
   means of constraints requiring operands 1 and 0 to be the same location.
 
-  .. index:: ssaddm3 instruction pattern
-
-  .. index:: usaddm3 instruction pattern
-
-  .. index:: subm3 instruction pattern
-
-  .. index:: sssubm3 instruction pattern
-
-  .. index:: ussubm3 instruction pattern
-
-  .. index:: mulm3 instruction pattern
-
-  .. index:: ssmulm3 instruction pattern
-
-  .. index:: usmulm3 instruction pattern
-
-  .. index:: divm3 instruction pattern
-
-  .. index:: ssdivm3 instruction pattern
-
-  .. index:: udivm3 instruction pattern
-
-  .. index:: usdivm3 instruction pattern
-
-  .. index:: modm3 instruction pattern
-
-  .. index:: umodm3 instruction pattern
-
-  .. index:: uminm3 instruction pattern
-
-  .. index:: umaxm3 instruction pattern
-
-  .. index:: andm3 instruction pattern
-
-  .. index:: iorm3 instruction pattern
-
-  .. index:: xorm3 instruction pattern
+  .. index:: ssaddm3 instruction pattern, usaddm3 instruction pattern, subm3 instruction pattern, sssubm3 instruction pattern, ussubm3 instruction pattern, mulm3 instruction pattern, ssmulm3 instruction pattern, usmulm3 instruction pattern, divm3 instruction pattern, ssdivm3 instruction pattern, udivm3 instruction pattern, usdivm3 instruction pattern, modm3 instruction pattern, umodm3 instruction pattern, uminm3 instruction pattern, umaxm3 instruction pattern, andm3 instruction pattern, iorm3 instruction pattern, xorm3 instruction pattern
 
 :samp:`ssadd{m}3`, :samp:`usadd{m}3` :samp:`sub{m}3`, :samp:`sssub{m}3`, :samp:`ussub{m}3` :samp:`mul{m}3`, :samp:`ssmul{m}3`, :samp:`usmul{m}3` :samp:`div{m}3`, :samp:`ssdiv{m}3` :samp:`udiv{m}3`, :samp:`usdiv{m}3` :samp:`mod{m}3`, :samp:`umod{m}3` :samp:`umin{m}3`, :samp:`umax{m}3` :samp:`and{m}3`, :samp:`ior{m}3`, :samp:`xor{m}3`
   Similar, for other arithmetic operations.
@@ -638,9 +596,7 @@ addvm4
   This pattern is used to implement the built-in functions performing
   signed integer addition with overflow checking.
 
-  .. index:: subvm4 instruction pattern
-
-  .. index:: mulvm4 instruction pattern
+  .. index:: subvm4 instruction pattern, mulvm4 instruction pattern
 
 :samp:`subv{m}4`, :samp:`mulv{m}4`
   Similar, for other signed arithmetic operations.
@@ -652,9 +608,7 @@ uaddvm4
   say, the operation is the same as signed addition but the jump
   is taken only on unsigned overflow.
 
-  .. index:: usubvm4 instruction pattern
-
-  .. index:: umulvm4 instruction pattern
+  .. index:: usubvm4 instruction pattern, umulvm4 instruction pattern
 
 :samp:`usubv{m}4`, :samp:`umulv{m}4`
   Similar, for other unsigned arithmetic operations.
@@ -713,18 +667,14 @@ fnmsm4
 
     (fma:m (neg:m op1) op2 (neg:m op3))
 
-  .. index:: minm3 instruction pattern
-
-  .. index:: maxm3 instruction pattern
+  .. index:: minm3 instruction pattern, maxm3 instruction pattern
 
 :samp:`smin{m}3`, :samp:`smax{m}3`
   Signed minimum and maximum operations.  When used with floating point,
   if both operands are zeros, or if either operand is ``NaN``, then
   it is unspecified which of the two operands is returned as the result.
 
-  .. index:: fminm3 instruction pattern
-
-  .. index:: fmaxm3 instruction pattern
+  .. index:: fminm3 instruction pattern, fmaxm3 instruction pattern
 
 :samp:`fmin{m}3`, :samp:`fmax{m}3`
   IEEE-conformant minimum and maximum operations.  If one operand is a quiet
@@ -736,27 +686,21 @@ fnmsm4
   All operands have mode :samp:`{m}`, which is a scalar or vector
   floating-point mode.  These patterns are not allowed to ``FAIL``.
 
-  .. index:: reduc_smin_scal_m instruction pattern
-
-  .. index:: reduc_smax_scal_m instruction pattern
+  .. index:: reduc_smin_scal_m instruction pattern, reduc_smax_scal_m instruction pattern
 
 :samp:`reduc_smin_scal_{m}`, :samp:`reduc_smax_scal_{m}`
   Find the signed minimum/maximum of the elements of a vector. The vector is
   operand 1, and operand 0 is the scalar result, with mode equal to the mode of
   the elements of the input vector.
 
-  .. index:: reduc_umin_scal_m instruction pattern
-
-  .. index:: reduc_umax_scal_m instruction pattern
+  .. index:: reduc_umin_scal_m instruction pattern, reduc_umax_scal_m instruction pattern
 
 :samp:`reduc_umin_scal_{m}`, :samp:`reduc_umax_scal_{m}`
   Find the unsigned minimum/maximum of the elements of a vector. The vector is
   operand 1, and operand 0 is the scalar result, with mode equal to the mode of
   the elements of the input vector.
 
-  .. index:: reduc_fmin_scal_m instruction pattern
-
-  .. index:: reduc_fmax_scal_m instruction pattern
+  .. index:: reduc_fmin_scal_m instruction pattern, reduc_fmax_scal_m instruction pattern
 
 :samp:`reduc_fmin_scal_{m}`, :samp:`reduc_fmax_scal_{m}`
   Find the floating-point minimum/maximum of the elements of a vector,
@@ -977,9 +921,7 @@ vec_pack_sbool_trunc_m
   operands have the same scalar mode :samp:`{m}` and thus using
   ``vec_pack_trunc_m`` would be ambiguous.
 
-  .. index:: vec_pack_ssat_m instruction pattern
-
-  .. index:: vec_pack_usat_m instruction pattern
+  .. index:: vec_pack_ssat_m instruction pattern, vec_pack_usat_m instruction pattern
 
 :samp:`vec_pack_ssat_{m}`, :samp:`vec_pack_usat_{m}`
   Narrow (demote) and merge the elements of two vectors.  Operands 1 and 2
@@ -988,9 +930,7 @@ vec_pack_sbool_trunc_m
   vectors are concatenated after narrowing them down using signed/unsigned
   saturating arithmetic.
 
-  .. index:: vec_pack_sfix_trunc_m instruction pattern
-
-  .. index:: vec_pack_ufix_trunc_m instruction pattern
+  .. index:: vec_pack_sfix_trunc_m instruction pattern, vec_pack_ufix_trunc_m instruction pattern
 
 :samp:`vec_pack_sfix_trunc_{m}`, :samp:`vec_pack_ufix_trunc_{m}`
   Narrow, convert to signed/unsigned integral type and merge the elements
@@ -998,9 +938,7 @@ vec_pack_sbool_trunc_m
   floating point elements of size S.  Operand 0 is the resulting vector
   in which 2\*N elements of size S/2 are concatenated.
 
-  .. index:: vec_packs_float_m instruction pattern
-
-  .. index:: vec_packu_float_m instruction pattern
+  .. index:: vec_packs_float_m instruction pattern, vec_packu_float_m instruction pattern
 
 :samp:`vec_packs_float_{m}`, :samp:`vec_packu_float_{m}`
   Narrow, convert to floating point type and merge the elements
@@ -1008,9 +946,7 @@ vec_pack_sbool_trunc_m
   signed/unsigned integral elements of size S.  Operand 0 is the resulting vector
   in which 2\*N elements of size S/2 are concatenated.
 
-  .. index:: vec_unpacks_hi_m instruction pattern
-
-  .. index:: vec_unpacks_lo_m instruction pattern
+  .. index:: vec_unpacks_hi_m instruction pattern, vec_unpacks_lo_m instruction pattern
 
 :samp:`vec_unpacks_hi_{m}`, :samp:`vec_unpacks_lo_{m}`
   Extract and widen (promote) the high/low part of a vector of signed
@@ -1019,9 +955,7 @@ vec_pack_sbool_trunc_m
   using signed or floating point extension and place the resulting N/2
   values of size 2\*S in the output vector (operand 0).
 
-  .. index:: vec_unpacku_hi_m instruction pattern
-
-  .. index:: vec_unpacku_lo_m instruction pattern
+  .. index:: vec_unpacku_hi_m instruction pattern, vec_unpacku_lo_m instruction pattern
 
 :samp:`vec_unpacku_hi_{m}`, :samp:`vec_unpacku_lo_{m}`
   Extract and widen (promote) the high/low part of a vector of unsigned
@@ -1029,9 +963,7 @@ vec_pack_sbool_trunc_m
   Widen (promote) the high/low elements of the vector using zero extension and
   place the resulting N/2 values of size 2\*S in the output vector (operand 0).
 
-  .. index:: vec_unpacks_sbool_hi_m instruction pattern
-
-  .. index:: vec_unpacks_sbool_lo_m instruction pattern
+  .. index:: vec_unpacks_sbool_hi_m instruction pattern, vec_unpacks_sbool_lo_m instruction pattern
 
 :samp:`vec_unpacks_sbool_hi_{m}`, :samp:`vec_unpacks_sbool_lo_{m}`
   Extract the high/low part of a vector of boolean elements that have scalar
@@ -1042,13 +974,7 @@ vec_pack_sbool_trunc_m
   mode :samp:`{m}` and thus using ``vec_unpacks_hi_m`` or
   ``vec_unpacks_lo_m`` would be ambiguous.
 
-  .. index:: vec_unpacks_float_hi_m instruction pattern
-
-  .. index:: vec_unpacks_float_lo_m instruction pattern
-
-  .. index:: vec_unpacku_float_hi_m instruction pattern
-
-  .. index:: vec_unpacku_float_lo_m instruction pattern
+  .. index:: vec_unpacks_float_hi_m instruction pattern, vec_unpacks_float_lo_m instruction pattern, vec_unpacku_float_hi_m instruction pattern, vec_unpacku_float_lo_m instruction pattern
 
 :samp:`vec_unpacks_float_hi_{m}`, :samp:`vec_unpacks_float_lo_{m}` :samp:`vec_unpacku_float_hi_{m}`, :samp:`vec_unpacku_float_lo_{m}`
   Extract, convert to floating point type and widen the high/low part of a
@@ -1057,13 +983,7 @@ vec_pack_sbool_trunc_m
   floating point conversion and place the resulting N/2 values of size 2\*S in
   the output vector (operand 0).
 
-  .. index:: vec_unpack_sfix_trunc_hi_m instruction pattern
-
-  .. index:: vec_unpack_sfix_trunc_lo_m instruction pattern
-
-  .. index:: vec_unpack_ufix_trunc_hi_m instruction pattern
-
-  .. index:: vec_unpack_ufix_trunc_lo_m instruction pattern
+  .. index:: vec_unpack_sfix_trunc_hi_m instruction pattern, vec_unpack_sfix_trunc_lo_m instruction pattern, vec_unpack_ufix_trunc_hi_m instruction pattern, vec_unpack_ufix_trunc_lo_m instruction pattern
 
 :samp:`vec_unpack_sfix_trunc_hi_{m}`, vec_unpack_sfix_trunc_lo_m vec_unpack_ufix_trunc_hi_m vec_unpack_ufix_trunc_lo_m
   Extract, convert to signed/unsigned integer type and widen the high/low part of a
@@ -1072,21 +992,7 @@ vec_pack_sbool_trunc_m
   to integers and place the resulting N/2 values of size 2\*S in
   the output vector (operand 0).
 
-  .. index:: vec_widen_umult_hi_m instruction pattern
-
-  .. index:: vec_widen_umult_lo_m instruction pattern
-
-  .. index:: vec_widen_smult_hi_m instruction pattern
-
-  .. index:: vec_widen_smult_lo_m instruction pattern
-
-  .. index:: vec_widen_umult_even_m instruction pattern
-
-  .. index:: vec_widen_umult_odd_m instruction pattern
-
-  .. index:: vec_widen_smult_even_m instruction pattern
-
-  .. index:: vec_widen_smult_odd_m instruction pattern
+  .. index:: vec_widen_umult_hi_m instruction pattern, vec_widen_umult_lo_m instruction pattern, vec_widen_smult_hi_m instruction pattern, vec_widen_smult_lo_m instruction pattern, vec_widen_umult_even_m instruction pattern, vec_widen_umult_odd_m instruction pattern, vec_widen_smult_even_m instruction pattern, vec_widen_smult_odd_m instruction pattern
 
 :samp:`vec_widen_umult_hi_{m}`, :samp:`vec_widen_umult_lo_{m}` :samp:`vec_widen_smult_hi_{m}`, :samp:`vec_widen_smult_lo_{m}` :samp:`vec_widen_umult_even_{m}`, :samp:`vec_widen_umult_odd_{m}` :samp:`vec_widen_smult_even_{m}`, :samp:`vec_widen_smult_odd_{m}`
   Signed/Unsigned widening multiplication.  The two inputs (operands 1 and 2)
@@ -1095,13 +1001,7 @@ vec_pack_sbool_trunc_m
   in the output vector (operand 0). A target shouldn't implement even/odd pattern
   pair if it is less efficient than lo/hi one.
 
-  .. index:: vec_widen_ushiftl_hi_m instruction pattern
-
-  .. index:: vec_widen_ushiftl_lo_m instruction pattern
-
-  .. index:: vec_widen_sshiftl_hi_m instruction pattern
-
-  .. index:: vec_widen_sshiftl_lo_m instruction pattern
+  .. index:: vec_widen_ushiftl_hi_m instruction pattern, vec_widen_ushiftl_lo_m instruction pattern, vec_widen_sshiftl_hi_m instruction pattern, vec_widen_sshiftl_lo_m instruction pattern
 
 :samp:`vec_widen_ushiftl_hi_{m}`, :samp:`vec_widen_ushiftl_lo_{m}` :samp:`vec_widen_sshiftl_hi_{m}`, :samp:`vec_widen_sshiftl_lo_{m}`
   Signed/Unsigned widening shift left.  The first input (operand 1) is a vector
@@ -1109,13 +1009,7 @@ vec_pack_sbool_trunc_m
   the high/low elements of operand 1, and put the N/2 results of size 2\*S in the
   output vector (operand 0).
 
-  .. index:: vec_widen_saddl_hi_m instruction pattern
-
-  .. index:: vec_widen_saddl_lo_m instruction pattern
-
-  .. index:: vec_widen_uaddl_hi_m instruction pattern
-
-  .. index:: vec_widen_uaddl_lo_m instruction pattern
+  .. index:: vec_widen_saddl_hi_m instruction pattern, vec_widen_saddl_lo_m instruction pattern, vec_widen_uaddl_hi_m instruction pattern, vec_widen_uaddl_lo_m instruction pattern
 
 :samp:`vec_widen_uaddl_hi_{m}`, :samp:`vec_widen_uaddl_lo_{m}` :samp:`vec_widen_saddl_hi_{m}`, :samp:`vec_widen_saddl_lo_{m}`
   Signed/Unsigned widening add long.  Operands 1 and 2 are vectors with N
@@ -1123,13 +1017,7 @@ vec_pack_sbool_trunc_m
   together, widen the resulting elements and put the N/2 results of size 2\*S in
   the output vector (operand 0).
 
-  .. index:: vec_widen_ssubl_hi_m instruction pattern
-
-  .. index:: vec_widen_ssubl_lo_m instruction pattern
-
-  .. index:: vec_widen_usubl_hi_m instruction pattern
-
-  .. index:: vec_widen_usubl_lo_m instruction pattern
+  .. index:: vec_widen_ssubl_hi_m instruction pattern, vec_widen_ssubl_lo_m instruction pattern, vec_widen_usubl_hi_m instruction pattern, vec_widen_usubl_lo_m instruction pattern
 
 :samp:`vec_widen_usubl_hi_{m}`, :samp:`vec_widen_usubl_lo_{m}` :samp:`vec_widen_ssubl_hi_{m}`, :samp:`vec_widen_ssubl_lo_{m}`
   Signed/Unsigned widening subtract long.  Operands 1 and 2 are vectors with N
@@ -1168,28 +1056,18 @@ mulhisi3
   Multiply operands 1 and 2, which have mode ``HImode``, and store
   a ``SImode`` product in operand 0.
 
-  .. index:: mulqihi3 instruction pattern
-
-  .. index:: mulsidi3 instruction pattern
+  .. index:: mulqihi3 instruction pattern, mulsidi3 instruction pattern
 
 :samp:`{mulqihi3}, {mulsidi3}`
   Similar widening-multiplication instructions of other widths.
 
-  .. index:: umulqihi3 instruction pattern
-
-  .. index:: umulhisi3 instruction pattern
-
-  .. index:: umulsidi3 instruction pattern
+  .. index:: umulqihi3 instruction pattern, umulhisi3 instruction pattern, umulsidi3 instruction pattern
 
 :samp:`{umulqihi3}, {umulhisi3}, {umulsidi3}`
   Similar widening-multiplication instructions that do unsigned
   multiplication.
 
-  .. index:: usmulqihi3 instruction pattern
-
-  .. index:: usmulhisi3 instruction pattern
-
-  .. index:: usmulsidi3 instruction pattern
+  .. index:: usmulqihi3 instruction pattern, usmulhisi3 instruction pattern, usmulsidi3 instruction pattern
 
 :samp:`{usmulqihi3}, {usmulhisi3}, {usmulsidi3}`
   Similar widening-multiplication instructions that interpret the first
@@ -1299,13 +1177,9 @@ divmodm4
 udivmodm4
   Similar, but does unsigned division.
 
+  .. index:: ashlm3 instruction pattern, ssashlm3 instruction pattern, usashlm3 instruction pattern
+
 .. _shift-patterns:
-
-  .. index:: ashlm3 instruction pattern
-
-  .. index:: ssashlm3 instruction pattern
-
-  .. index:: usashlm3 instruction pattern
 
 :samp:`ashl{m}3`, :samp:`ssashl{m}3`, :samp:`usashl{m}3`
   Arithmetic-shift operand 1 left by a number of bits specified by operand
@@ -1318,35 +1192,19 @@ udivmodm4
   counts can optionally be specified by ``TARGET_SHIFT_TRUNCATION_MASK``.
   See :ref:`target_shift_truncation_mask`.  Operand 2 is always a scalar type.
 
-  .. index:: ashrm3 instruction pattern
-
-  .. index:: lshrm3 instruction pattern
-
-  .. index:: rotlm3 instruction pattern
-
-  .. index:: rotrm3 instruction pattern
+  .. index:: ashrm3 instruction pattern, lshrm3 instruction pattern, rotlm3 instruction pattern, rotrm3 instruction pattern
 
 :samp:`ashr{m}3`, :samp:`lshr{m}3`, :samp:`rotl{m}3`, :samp:`rotr{m}3`
   Other shift and rotate instructions, analogous to the
   ``ashlm3`` instructions.  Operand 2 is always a scalar type.
 
-  .. index:: vashlm3 instruction pattern
-
-  .. index:: vashrm3 instruction pattern
-
-  .. index:: vlshrm3 instruction pattern
-
-  .. index:: vrotlm3 instruction pattern
-
-  .. index:: vrotrm3 instruction pattern
+  .. index:: vashlm3 instruction pattern, vashrm3 instruction pattern, vlshrm3 instruction pattern, vrotlm3 instruction pattern, vrotrm3 instruction pattern
 
 :samp:`vashl{m}3`, :samp:`vashr{m}3`, :samp:`vlshr{m}3`, :samp:`vrotl{m}3`, :samp:`vrotr{m}3`
   Vector shift and rotate instructions that take vectors as operand 2
   instead of a scalar type.
 
-  .. index:: avgm3_floor instruction pattern
-
-  .. index:: uavgm3_floor instruction pattern
+  .. index:: avgm3_floor instruction pattern, uavgm3_floor instruction pattern
 
 avgm3_floor uavgm3_floor
   Signed and unsigned average instructions.  These instructions add
@@ -1363,9 +1221,7 @@ avgm3_floor uavgm3_floor
   where the sign of :samp:`narrow` determines whether this is a signed
   or unsigned operation.
 
-  .. index:: avgm3_ceil instruction pattern
-
-  .. index:: uavgm3_ceil instruction pattern
+  .. index:: avgm3_ceil instruction pattern, uavgm3_ceil instruction pattern
 
 avgm3_ceil uavgm3_ceil
   Like :samp:`avg{m}3_floor` and :samp:`uavg{m}3_floor`, but round
@@ -1382,11 +1238,7 @@ avgm3_ceil uavgm3_ceil
 bswapm2
   Reverse the order of bytes of operand 1 and store the result in operand 0.
 
-  .. index:: negm2 instruction pattern
-
-  .. index:: ssnegm2 instruction pattern
-
-  .. index:: usnegm2 instruction pattern
+  .. index:: negm2 instruction pattern, ssnegm2 instruction pattern, usnegm2 instruction pattern
 
 :samp:`neg{m}2`, :samp:`ssneg{m}2`, :samp:`usneg{m}2`
   Negate operand 1 and store the result in operand 0.
@@ -1533,9 +1385,7 @@ fegetroundm
   Operand 0 has mode :samp:`{m}`, which is scalar.  This pattern is used to
   implement the ``fegetround`` function from the ISO C99 standard.
 
-  .. index:: feclearexceptm instruction pattern
-
-  .. index:: feraiseexceptm instruction pattern
+  .. index:: feclearexceptm instruction pattern, feraiseexceptm instruction pattern
 
   feclearexceptm
 feraiseexceptm
@@ -2486,43 +2336,7 @@ addmodecc
   comparison in operand 1.  If the comparison is false, operand 2 is moved into
   operand 0, otherwise (operand 2 + operand 3) is moved.
 
-  .. index:: cond_addmode instruction pattern
-
-  .. index:: cond_submode instruction pattern
-
-  .. index:: cond_mulmode instruction pattern
-
-  .. index:: cond_divmode instruction pattern
-
-  .. index:: cond_udivmode instruction pattern
-
-  .. index:: cond_modmode instruction pattern
-
-  .. index:: cond_umodmode instruction pattern
-
-  .. index:: cond_andmode instruction pattern
-
-  .. index:: cond_iormode instruction pattern
-
-  .. index:: cond_xormode instruction pattern
-
-  .. index:: cond_sminmode instruction pattern
-
-  .. index:: cond_smaxmode instruction pattern
-
-  .. index:: cond_uminmode instruction pattern
-
-  .. index:: cond_umaxmode instruction pattern
-
-  .. index:: cond_fminmode instruction pattern
-
-  .. index:: cond_fmaxmode instruction pattern
-
-  .. index:: cond_ashlmode instruction pattern
-
-  .. index:: cond_ashrmode instruction pattern
-
-  .. index:: cond_lshrmode instruction pattern
+  .. index:: cond_addmode instruction pattern, cond_submode instruction pattern, cond_mulmode instruction pattern, cond_divmode instruction pattern, cond_udivmode instruction pattern, cond_modmode instruction pattern, cond_umodmode instruction pattern, cond_andmode instruction pattern, cond_iormode instruction pattern, cond_xormode instruction pattern, cond_sminmode instruction pattern, cond_smaxmode instruction pattern, cond_uminmode instruction pattern, cond_umaxmode instruction pattern, cond_fminmode instruction pattern, cond_fmaxmode instruction pattern, cond_ashlmode instruction pattern, cond_ashrmode instruction pattern, cond_lshrmode instruction pattern
 
 cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode cond_umodmode cond_andmode cond_iormode cond_xormode cond_sminmode cond_smaxmode cond_uminmode cond_umaxmode cond_fminmode cond_fmaxmode cond_ashlmode cond_ashrmode cond_lshrmode
   When operand 1 is true, perform an operation on operands 2 and 3 and
@@ -2557,13 +2371,7 @@ cond_addmode cond_submode cond_mulmode cond_divmode cond_udivmode cond_modmode c
   of shifts correspond to patterns like ``vashlmode3`` rather
   than patterns like ``ashlmode3``.
 
-  .. index:: cond_fmamode instruction pattern
-
-  .. index:: cond_fmsmode instruction pattern
-
-  .. index:: cond_fnmamode instruction pattern
-
-  .. index:: cond_fnmsmode instruction pattern
+  .. index:: cond_fmamode instruction pattern, cond_fmsmode instruction pattern, cond_fnmamode instruction pattern, cond_fnmsmode instruction pattern
 
 cond_fmamode cond_fmsmode cond_fnmamode cond_fnmsmode
   Like :samp:`cond_add{m}`, except that the conditional operation
@@ -2681,9 +2489,7 @@ call_value
   Subroutines that return ``BLKmode`` objects use the :samp:`call`
   insn.
 
-  .. index:: call_pop instruction pattern
-
-  .. index:: call_value_pop instruction pattern
+  .. index:: call_pop instruction pattern, call_value_pop instruction pattern
 
 :samp:`{call_pop}, {call_value_pop}`
   Similar to :samp:`call` and :samp:`call_value`, except used if defined and
@@ -2740,9 +2546,7 @@ simple_return
   any of the effects of the epilogue.  Additional uses may be introduced on
   paths where both the prologue and the epilogue have executed.
 
-  .. index:: reload_completed
-
-  .. index:: leaf_function_p
+  .. index:: reload_completed, leaf_function_p
 
   For such machines, the condition specified in this pattern should only
   be true when ``reload_completed`` is nonzero and the function's
@@ -2877,17 +2681,7 @@ canonicalize_funcptr_for_compare
   can have different values but still call the same function when
   used in an indirect call.
 
-  .. index:: save_stack_block instruction pattern
-
-  .. index:: save_stack_function instruction pattern
-
-  .. index:: save_stack_nonlocal instruction pattern
-
-  .. index:: restore_stack_block instruction pattern
-
-  .. index:: restore_stack_function instruction pattern
-
-  .. index:: restore_stack_nonlocal instruction pattern
+  .. index:: save_stack_block instruction pattern, save_stack_function instruction pattern, save_stack_nonlocal instruction pattern, restore_stack_block instruction pattern, restore_stack_function instruction pattern, restore_stack_nonlocal instruction pattern
 
 save_stack_block save_stack_function save_stack_nonlocal restore_stack_block restore_stack_function restore_stack_nonlocal
   Most machines save and restore the stack pointer by copying it to or
@@ -3247,17 +3041,7 @@ sync_compare_and_swapmode
   assumed that these library calls do *not* use any kind of
   interruptable locking.
 
-  .. index:: sync_addmode instruction pattern
-
-  .. index:: sync_submode instruction pattern
-
-  .. index:: sync_iormode instruction pattern
-
-  .. index:: sync_andmode instruction pattern
-
-  .. index:: sync_xormode instruction pattern
-
-  .. index:: sync_nandmode instruction pattern
+  .. index:: sync_addmode instruction pattern, sync_submode instruction pattern, sync_iormode instruction pattern, sync_andmode instruction pattern, sync_xormode instruction pattern, sync_nandmode instruction pattern
 
 :samp:`sync_add{mode}`, :samp:`sync_sub{mode}` :samp:`sync_ior{mode}`, :samp:`sync_and{mode}` :samp:`sync_xor{mode}`, :samp:`sync_nand{mode}`
   These patterns emit code for an atomic operation on memory.
@@ -3272,17 +3056,7 @@ sync_compare_and_swapmode
   If these patterns are not defined, the operation will be constructed
   from a compare-and-swap operation, if defined.
 
-  .. index:: sync_old_addmode instruction pattern
-
-  .. index:: sync_old_submode instruction pattern
-
-  .. index:: sync_old_iormode instruction pattern
-
-  .. index:: sync_old_andmode instruction pattern
-
-  .. index:: sync_old_xormode instruction pattern
-
-  .. index:: sync_old_nandmode instruction pattern
+  .. index:: sync_old_addmode instruction pattern, sync_old_submode instruction pattern, sync_old_iormode instruction pattern, sync_old_andmode instruction pattern, sync_old_xormode instruction pattern, sync_old_nandmode instruction pattern
 
 :samp:`sync_old_add{mode}`, :samp:`sync_old_sub{mode}` :samp:`sync_old_ior{mode}`, :samp:`sync_old_and{mode}` :samp:`sync_old_xor{mode}`, :samp:`sync_old_nand{mode}`
   These patterns emit code for an atomic operation on memory,
@@ -3299,17 +3073,7 @@ sync_compare_and_swapmode
   If these patterns are not defined, the operation will be constructed
   from a compare-and-swap operation, if defined.
 
-  .. index:: sync_new_addmode instruction pattern
-
-  .. index:: sync_new_submode instruction pattern
-
-  .. index:: sync_new_iormode instruction pattern
-
-  .. index:: sync_new_andmode instruction pattern
-
-  .. index:: sync_new_xormode instruction pattern
-
-  .. index:: sync_new_nandmode instruction pattern
+  .. index:: sync_new_addmode instruction pattern, sync_new_submode instruction pattern, sync_new_iormode instruction pattern, sync_new_andmode instruction pattern, sync_new_xormode instruction pattern, sync_new_nandmode instruction pattern
 
 :samp:`sync_new_add{mode}`, :samp:`sync_new_sub{mode}` :samp:`sync_new_ior{mode}`, :samp:`sync_new_and{mode}` :samp:`sync_new_xor{mode}`, :samp:`sync_new_nand{mode}`
   These patterns are like their ``sync_old_op`` counterparts,
@@ -3428,17 +3192,7 @@ atomic_exchangemode
   ``__atomic_exchange`` will attempt to preform the operation with a
   compare and swap loop.
 
-  .. index:: atomic_addmode instruction pattern
-
-  .. index:: atomic_submode instruction pattern
-
-  .. index:: atomic_ormode instruction pattern
-
-  .. index:: atomic_andmode instruction pattern
-
-  .. index:: atomic_xormode instruction pattern
-
-  .. index:: atomic_nandmode instruction pattern
+  .. index:: atomic_addmode instruction pattern, atomic_submode instruction pattern, atomic_ormode instruction pattern, atomic_andmode instruction pattern, atomic_xormode instruction pattern, atomic_nandmode instruction pattern
 
 :samp:`atomic_add{mode}`, :samp:`atomic_sub{mode}` :samp:`atomic_or{mode}`, :samp:`atomic_and{mode}` :samp:`atomic_xor{mode}`, :samp:`atomic_nand{mode}`
   These patterns emit code for an atomic operation on memory with memory
@@ -3450,17 +3204,7 @@ atomic_exchangemode
   ``sync`` patterns, or equivalent patterns which return a result.  If
   none of these are available a compare-and-swap loop will be used.
 
-  .. index:: atomic_fetch_addmode instruction pattern
-
-  .. index:: atomic_fetch_submode instruction pattern
-
-  .. index:: atomic_fetch_ormode instruction pattern
-
-  .. index:: atomic_fetch_andmode instruction pattern
-
-  .. index:: atomic_fetch_xormode instruction pattern
-
-  .. index:: atomic_fetch_nandmode instruction pattern
+  .. index:: atomic_fetch_addmode instruction pattern, atomic_fetch_submode instruction pattern, atomic_fetch_ormode instruction pattern, atomic_fetch_andmode instruction pattern, atomic_fetch_xormode instruction pattern, atomic_fetch_nandmode instruction pattern
 
 :samp:`atomic_fetch_add{mode}`, :samp:`atomic_fetch_sub{mode}` :samp:`atomic_fetch_or{mode}`, :samp:`atomic_fetch_and{mode}` :samp:`atomic_fetch_xor{mode}`, :samp:`atomic_fetch_nand{mode}`
   These patterns emit code for an atomic operation on memory with memory
@@ -3474,17 +3218,7 @@ atomic_exchangemode
   ``sync`` patterns.  If none of these are available a compare-and-swap
   loop will be used.
 
-  .. index:: atomic_add_fetchmode instruction pattern
-
-  .. index:: atomic_sub_fetchmode instruction pattern
-
-  .. index:: atomic_or_fetchmode instruction pattern
-
-  .. index:: atomic_and_fetchmode instruction pattern
-
-  .. index:: atomic_xor_fetchmode instruction pattern
-
-  .. index:: atomic_nand_fetchmode instruction pattern
+  .. index:: atomic_add_fetchmode instruction pattern, atomic_sub_fetchmode instruction pattern, atomic_or_fetchmode instruction pattern, atomic_and_fetchmode instruction pattern, atomic_xor_fetchmode instruction pattern, atomic_nand_fetchmode instruction pattern
 
 :samp:`atomic_add_fetch{mode}`, :samp:`atomic_sub_fetch{mode}` :samp:`atomic_or_fetch{mode}`, :samp:`atomic_and_fetch{mode}` :samp:`atomic_xor_fetch{mode}`, :samp:`atomic_nand_fetch{mode}`
   These patterns emit code for an atomic operation on memory with memory
@@ -3513,11 +3247,7 @@ atomic_test_and_set
   is normally based on what is performed by the native atomic test and set
   instruction.
 
-  .. index:: atomic_bit_test_and_setmode instruction pattern
-
-  .. index:: atomic_bit_test_and_complementmode instruction pattern
-
-  .. index:: atomic_bit_test_and_resetmode instruction pattern
+  .. index:: atomic_bit_test_and_setmode instruction pattern, atomic_bit_test_and_complementmode instruction pattern, atomic_bit_test_and_resetmode instruction pattern
 
 atomic_bit_test_and_setmode atomic_bit_test_and_complementmode atomic_bit_test_and_resetmode
   These patterns emit code for an atomic bitwise operation on memory with memory
@@ -3541,15 +3271,7 @@ atomic_bit_test_and_setmode atomic_bit_test_and_complementmode atomic_bit_test_a
   counterparts.  If none of these are available a compare-and-swap
   loop will be used.
 
-  .. index:: atomic_add_fetch_cmp_0mode instruction pattern
-
-  .. index:: atomic_sub_fetch_cmp_0mode instruction pattern
-
-  .. index:: atomic_and_fetch_cmp_0mode instruction pattern
-
-  .. index:: atomic_or_fetch_cmp_0mode instruction pattern
-
-  .. index:: atomic_xor_fetch_cmp_0mode instruction pattern
+  .. index:: atomic_add_fetch_cmp_0mode instruction pattern, atomic_sub_fetch_cmp_0mode instruction pattern, atomic_and_fetch_cmp_0mode instruction pattern, atomic_or_fetch_cmp_0mode instruction pattern, atomic_xor_fetch_cmp_0mode instruction pattern
 
 atomic_add_fetch_cmp_0mode atomic_sub_fetch_cmp_0mode atomic_and_fetch_cmp_0mode atomic_or_fetch_cmp_0mode atomic_xor_fetch_cmp_0mode
   These patterns emit code for an atomic operation on memory with memory
@@ -3582,9 +3304,7 @@ mem_thread_fence
   ``memory_barrier`` pattern, then to emitting ``__sync_synchronize``
   library call, and finally to just placing a compiler memory barrier.
 
-  .. index:: get_thread_pointermode instruction pattern
-
-  .. index:: set_thread_pointermode instruction pattern
+  .. index:: get_thread_pointermode instruction pattern, set_thread_pointermode instruction pattern
 
 get_thread_pointermode set_thread_pointermode
   These patterns emit code that reads/sets the TLS thread pointer. Currently,

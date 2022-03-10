@@ -5,9 +5,9 @@
 
 .. only:: not man
 
-  .. _spec-files:
-
   .. index:: Spec Files
+
+  .. _spec-files:
 
   Specifying Subprocesses and the Switches to Pass to Them
   ********************************************************
@@ -685,4 +685,3 @@
   GCC also knows implicitly that arguments starting in :option:`-l` are to be
   treated as compiler output files, and passed to the linker in their
   proper position among the other output files.
-

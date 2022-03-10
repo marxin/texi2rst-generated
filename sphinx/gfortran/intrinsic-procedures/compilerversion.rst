@@ -8,11 +8,7 @@
 COMPILER_VERSION --- Compiler version string
 ********************************************
 
-.. index:: COMPILER_VERSION
-
-.. index:: compiler, name and version
-
-.. index:: version of the compiler
+.. index:: COMPILER_VERSION, compiler, name and version, version of the compiler
 
 .. function:: COMPILER_VERSION()
 
@@ -51,4 +47,3 @@ COMPILER_VERSION --- Compiler version string
   :samp:`{See also}:`
     :ref:`COMPILER_OPTIONS`, 
     :ref:`ISO_FORTRAN_ENV`
-

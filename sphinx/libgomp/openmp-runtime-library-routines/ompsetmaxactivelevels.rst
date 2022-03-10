@@ -32,4 +32,3 @@ omp_set_max_active_levels -- Limits the number of active parallel regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.15.
-

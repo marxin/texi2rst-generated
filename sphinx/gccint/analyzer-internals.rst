@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: analyzer, internals, static analyzer, internals
+
 .. _analyzer-internals:
-
-.. index:: analyzer, internals
-
-.. index:: static analyzer, internals
 
 Analyzer Internals
 ******************
@@ -420,4 +418,3 @@ Some ideas for other checkers
 * Linux kernel internal APIs
 
 * Signal handling
-

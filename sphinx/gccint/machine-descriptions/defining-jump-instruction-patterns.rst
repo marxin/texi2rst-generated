@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: jump instruction patterns, defining jump instruction patterns
+
 .. _jump-patterns:
-
-.. index:: jump instruction patterns
-
-.. index:: defining jump instruction patterns
 
 Defining Jump Instruction Patterns
 **********************************
@@ -37,4 +35,3 @@ comparison of the given operands (with the branch insns coming in distinct
 signed and unsigned flavors) as in the x86 or SPARC, and the case where
 there are distinct signed and unsigned compare instructions and only
 one set of conditional branch instructions as in the PowerPC.
-

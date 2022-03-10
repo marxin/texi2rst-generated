@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: PACK, array, packing, array, reduce dimension, array, gather elements
+
 .. _pack:
-
-.. index:: PACK
-
-.. index:: array, packing
-
-.. index:: array, reduce dimension
-
-.. index:: array, gather elements
 
 PACK --- Pack an array into an array of rank one
 ************************************************
@@ -77,4 +71,3 @@ PACK --- Pack an array into an array of rank one
 
   :samp:`{See also}:`
     :ref:`UNPACK`
-

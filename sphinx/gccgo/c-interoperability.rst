@@ -21,4 +21,3 @@ https://golang.org/cmd/cgo.
 
   c-type-interoperability
   function-names
-

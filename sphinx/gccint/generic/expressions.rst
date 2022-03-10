@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: expression, TREE_TYPE, TREE_OPERAND
+
 .. _expression-trees:
-
-.. index:: expression
-
-.. index:: TREE_TYPE
-
-.. index:: TREE_OPERAND
 
 Expressions
 ***********
@@ -58,41 +54,7 @@ As this example indicates, the operands are zero-indexed.
 Constant expressions
 ^^^^^^^^^^^^^^^^^^^^
 
-.. index:: INTEGER_CST
-
-.. index:: tree_int_cst_lt
-
-.. index:: tree_int_cst_equal
-
-.. index:: tree_fits_uhwi_p
-
-.. index:: tree_fits_shwi_p
-
-.. index:: tree_to_uhwi
-
-.. index:: tree_to_shwi
-
-.. index:: TREE_INT_CST_NUNITS
-
-.. index:: TREE_INT_CST_ELT
-
-.. index:: TREE_INT_CST_LOW
-
-.. index:: REAL_CST
-
-.. index:: FIXED_CST
-
-.. index:: COMPLEX_CST
-
-.. index:: VECTOR_CST
-
-.. index:: STRING_CST
-
-.. index:: POLY_INT_CST
-
-.. index:: TREE_STRING_LENGTH
-
-.. index:: TREE_STRING_POINTER
+.. index:: INTEGER_CST, tree_int_cst_lt, tree_int_cst_equal, tree_fits_uhwi_p, tree_fits_shwi_p, tree_to_uhwi, tree_to_shwi, TREE_INT_CST_NUNITS, TREE_INT_CST_ELT, TREE_INT_CST_LOW, REAL_CST, FIXED_CST, COMPLEX_CST, VECTOR_CST, STRING_CST, POLY_INT_CST, TREE_STRING_LENGTH, TREE_STRING_POINTER
 
 The table below begins with constants, moves on to unary expressions,
 then proceeds to binary expressions, and concludes with various other
@@ -248,19 +210,7 @@ kinds of expressions:
 References to storage
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. index:: ADDR_EXPR
-
-.. index:: INDIRECT_REF
-
-.. index:: MEM_REF
-
-.. index:: ARRAY_REF
-
-.. index:: ARRAY_RANGE_REF
-
-.. index:: TARGET_MEM_REF
-
-.. index:: COMPONENT_REF
+.. index:: ADDR_EXPR, INDIRECT_REF, MEM_REF, ARRAY_REF, ARRAY_RANGE_REF, TARGET_MEM_REF, COMPONENT_REF
 
 .. envvar:: ARRAY_REF
 
@@ -347,159 +297,7 @@ References to storage
 Unary and Binary Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. index:: NEGATE_EXPR
-
-.. index:: ABS_EXPR
-
-.. index:: ABSU_EXPR
-
-.. index:: BIT_NOT_EXPR
-
-.. index:: TRUTH_NOT_EXPR
-
-.. index:: PREDECREMENT_EXPR
-
-.. index:: PREINCREMENT_EXPR
-
-.. index:: POSTDECREMENT_EXPR
-
-.. index:: POSTINCREMENT_EXPR
-
-.. index:: FIX_TRUNC_EXPR
-
-.. index:: FLOAT_EXPR
-
-.. index:: COMPLEX_EXPR
-
-.. index:: CONJ_EXPR
-
-.. index:: REALPART_EXPR
-
-.. index:: IMAGPART_EXPR
-
-.. index:: NON_LVALUE_EXPR
-
-.. index:: NOP_EXPR
-
-.. index:: CONVERT_EXPR
-
-.. index:: FIXED_CONVERT_EXPR
-
-.. index:: THROW_EXPR
-
-.. index:: LSHIFT_EXPR
-
-.. index:: RSHIFT_EXPR
-
-.. index:: BIT_IOR_EXPR
-
-.. index:: BIT_XOR_EXPR
-
-.. index:: BIT_AND_EXPR
-
-.. index:: TRUTH_ANDIF_EXPR
-
-.. index:: TRUTH_ORIF_EXPR
-
-.. index:: TRUTH_AND_EXPR
-
-.. index:: TRUTH_OR_EXPR
-
-.. index:: TRUTH_XOR_EXPR
-
-.. index:: POINTER_PLUS_EXPR
-
-.. index:: POINTER_DIFF_EXPR
-
-.. index:: PLUS_EXPR
-
-.. index:: MINUS_EXPR
-
-.. index:: MULT_EXPR
-
-.. index:: WIDEN_MULT_EXPR
-
-.. index:: MULT_HIGHPART_EXPR
-
-.. index:: RDIV_EXPR
-
-.. index:: TRUNC_DIV_EXPR
-
-.. index:: FLOOR_DIV_EXPR
-
-.. index:: CEIL_DIV_EXPR
-
-.. index:: ROUND_DIV_EXPR
-
-.. index:: TRUNC_MOD_EXPR
-
-.. index:: FLOOR_MOD_EXPR
-
-.. index:: CEIL_MOD_EXPR
-
-.. index:: ROUND_MOD_EXPR
-
-.. index:: EXACT_DIV_EXPR
-
-.. index:: LT_EXPR
-
-.. index:: LE_EXPR
-
-.. index:: GT_EXPR
-
-.. index:: GE_EXPR
-
-.. index:: EQ_EXPR
-
-.. index:: NE_EXPR
-
-.. index:: ORDERED_EXPR
-
-.. index:: UNORDERED_EXPR
-
-.. index:: UNLT_EXPR
-
-.. index:: UNLE_EXPR
-
-.. index:: UNGT_EXPR
-
-.. index:: UNGE_EXPR
-
-.. index:: UNEQ_EXPR
-
-.. index:: LTGT_EXPR
-
-.. index:: MODIFY_EXPR
-
-.. index:: INIT_EXPR
-
-.. index:: COMPOUND_EXPR
-
-.. index:: COND_EXPR
-
-.. index:: CALL_EXPR
-
-.. index:: STMT_EXPR
-
-.. index:: BIND_EXPR
-
-.. index:: LOOP_EXPR
-
-.. index:: EXIT_EXPR
-
-.. index:: CLEANUP_POINT_EXPR
-
-.. index:: CONSTRUCTOR
-
-.. index:: COMPOUND_LITERAL_EXPR
-
-.. index:: SAVE_EXPR
-
-.. index:: TARGET_EXPR
-
-.. index:: VA_ARG_EXPR
-
-.. index:: ANNOTATE_EXPR
+.. index:: NEGATE_EXPR, ABS_EXPR, ABSU_EXPR, BIT_NOT_EXPR, TRUTH_NOT_EXPR, PREDECREMENT_EXPR, PREINCREMENT_EXPR, POSTDECREMENT_EXPR, POSTINCREMENT_EXPR, FIX_TRUNC_EXPR, FLOAT_EXPR, COMPLEX_EXPR, CONJ_EXPR, REALPART_EXPR, IMAGPART_EXPR, NON_LVALUE_EXPR, NOP_EXPR, CONVERT_EXPR, FIXED_CONVERT_EXPR, THROW_EXPR, LSHIFT_EXPR, RSHIFT_EXPR, BIT_IOR_EXPR, BIT_XOR_EXPR, BIT_AND_EXPR, TRUTH_ANDIF_EXPR, TRUTH_ORIF_EXPR, TRUTH_AND_EXPR, TRUTH_OR_EXPR, TRUTH_XOR_EXPR, POINTER_PLUS_EXPR, POINTER_DIFF_EXPR, PLUS_EXPR, MINUS_EXPR, MULT_EXPR, WIDEN_MULT_EXPR, MULT_HIGHPART_EXPR, RDIV_EXPR, TRUNC_DIV_EXPR, FLOOR_DIV_EXPR, CEIL_DIV_EXPR, ROUND_DIV_EXPR, TRUNC_MOD_EXPR, FLOOR_MOD_EXPR, CEIL_MOD_EXPR, ROUND_MOD_EXPR, EXACT_DIV_EXPR, LT_EXPR, LE_EXPR, GT_EXPR, GE_EXPR, EQ_EXPR, NE_EXPR, ORDERED_EXPR, UNORDERED_EXPR, UNLT_EXPR, UNLE_EXPR, UNGT_EXPR, UNGE_EXPR, UNEQ_EXPR, LTGT_EXPR, MODIFY_EXPR, INIT_EXPR, COMPOUND_EXPR, COND_EXPR, CALL_EXPR, STMT_EXPR, BIND_EXPR, LOOP_EXPR, EXIT_EXPR, CLEANUP_POINT_EXPR, CONSTRUCTOR, COMPOUND_LITERAL_EXPR, SAVE_EXPR, TARGET_EXPR, VA_ARG_EXPR, ANNOTATE_EXPR
 
 .. envvar:: NEGATE_EXPR
 
@@ -955,49 +753,7 @@ Unary and Binary Expressions
 Vectors
 ^^^^^^^
 
-.. index:: VEC_DUPLICATE_EXPR
-
-.. index:: VEC_SERIES_EXPR
-
-.. index:: VEC_LSHIFT_EXPR
-
-.. index:: VEC_RSHIFT_EXPR
-
-.. index:: VEC_WIDEN_MULT_HI_EXPR
-
-.. index:: VEC_WIDEN_MULT_LO_EXPR
-
-.. index:: VEC_WIDEN_PLUS_HI_EXPR
-
-.. index:: VEC_WIDEN_PLUS_LO_EXPR
-
-.. index:: VEC_WIDEN_MINUS_HI_EXPR
-
-.. index:: VEC_WIDEN_MINUS_LO_EXPR
-
-.. index:: VEC_UNPACK_HI_EXPR
-
-.. index:: VEC_UNPACK_LO_EXPR
-
-.. index:: VEC_UNPACK_FLOAT_HI_EXPR
-
-.. index:: VEC_UNPACK_FLOAT_LO_EXPR
-
-.. index:: VEC_UNPACK_FIX_TRUNC_HI_EXPR
-
-.. index:: VEC_UNPACK_FIX_TRUNC_LO_EXPR
-
-.. index:: VEC_PACK_TRUNC_EXPR
-
-.. index:: VEC_PACK_SAT_EXPR
-
-.. index:: VEC_PACK_FIX_TRUNC_EXPR
-
-.. index:: VEC_PACK_FLOAT_EXPR
-
-.. index:: VEC_COND_EXPR
-
-.. index:: SAD_EXPR
+.. index:: VEC_DUPLICATE_EXPR, VEC_SERIES_EXPR, VEC_LSHIFT_EXPR, VEC_RSHIFT_EXPR, VEC_WIDEN_MULT_HI_EXPR, VEC_WIDEN_MULT_LO_EXPR, VEC_WIDEN_PLUS_HI_EXPR, VEC_WIDEN_PLUS_LO_EXPR, VEC_WIDEN_MINUS_HI_EXPR, VEC_WIDEN_MINUS_LO_EXPR, VEC_UNPACK_HI_EXPR, VEC_UNPACK_LO_EXPR, VEC_UNPACK_FLOAT_HI_EXPR, VEC_UNPACK_FLOAT_LO_EXPR, VEC_UNPACK_FIX_TRUNC_HI_EXPR, VEC_UNPACK_FIX_TRUNC_LO_EXPR, VEC_PACK_TRUNC_EXPR, VEC_PACK_SAT_EXPR, VEC_PACK_FIX_TRUNC_EXPR, VEC_PACK_FLOAT_EXPR, VEC_COND_EXPR, SAD_EXPR
 
 .. envvar:: VEC_DUPLICATE_EXPR
 

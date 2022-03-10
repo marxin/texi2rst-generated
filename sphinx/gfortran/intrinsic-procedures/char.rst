@@ -8,9 +8,7 @@
 CHAR --- Character conversion function
 **************************************
 
-.. index:: CHAR
-
-.. index:: conversion, to character
+.. index:: CHAR, conversion, to character
 
 .. function:: CHAR(I, KIND)
 
@@ -64,4 +62,3 @@ CHAR --- Character conversion function
     :ref:`ACHAR`, 
     :ref:`IACHAR`, 
     :ref:`ICHAR`
-

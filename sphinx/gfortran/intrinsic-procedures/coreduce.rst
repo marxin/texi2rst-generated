@@ -8,9 +8,7 @@
 CO_REDUCE --- Reduction of values on the current set of images
 **************************************************************
 
-.. index:: CO_REDUCE
-
-.. index:: Collectives, generic reduction
+.. index:: CO_REDUCE, Collectives, generic reduction
 
 .. function:: CO_REDUCE(A, OPERATOR, RESULT_IMAGE, STAT, ERRMSG)
 
@@ -96,4 +94,3 @@ CO_REDUCE --- Reduction of values on the current set of images
     :ref:`CO_MAX`, 
     :ref:`CO_SUM`, 
     :ref:`CO_BROADCAST`
-

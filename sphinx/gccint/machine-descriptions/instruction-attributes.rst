@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: insn attributes, instruction attributes
+
 .. _insn-attributes:
-
-.. index:: insn attributes
-
-.. index:: instruction attributes
 
 Instruction Attributes
 **********************
@@ -22,13 +20,9 @@ condition code.
   :maxdepth: 2
 
 
+.. index:: defining attributes and their values, attributes, defining, define_attr
+
 .. _defining-attributes:
-
-.. index:: defining attributes and their values
-
-.. index:: attributes, defining
-
-.. index:: define_attr
 
 Defining Attributes and their Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -158,9 +152,9 @@ but without duplicating the processor list.  The second example defines two
 separate C enums (``attr_arch`` and ``attr_tune``) whereas the first
 defines a single C enum (``processor``).
 
-.. _expressions:
-
 .. index:: attribute expressions
+
+.. _expressions:
 
 Attribute Expressions
 ^^^^^^^^^^^^^^^^^^^^^
@@ -219,11 +213,7 @@ Attribute value expressions must have one of the following forms:
 :samp:`(const_int {i})`
   This test is true if :samp:`{i}` is nonzero and false otherwise.
 
-  .. index:: not and attributes
-
-  .. index:: ior and attributes
-
-  .. index:: and and attributes
+  .. index:: not and attributes, ior and attributes, and and attributes
 
 :samp:`(not {test})` :samp:`(ior {test1} {test2})` :samp:`(and {test1} {test2})`
   These tests are true if the indicated logical function is true.
@@ -265,43 +255,7 @@ Attribute value expressions must have one of the following forms:
     (match_test "x & 2")
     (match_test "(x & 2) != 0")
 
-  .. index:: le and attributes
-
-  .. index:: leu and attributes
-
-  .. index:: lt and attributes
-
-  .. index:: gt and attributes
-
-  .. index:: gtu and attributes
-
-  .. index:: ge and attributes
-
-  .. index:: geu and attributes
-
-  .. index:: ne and attributes
-
-  .. index:: eq and attributes
-
-  .. index:: plus and attributes
-
-  .. index:: minus and attributes
-
-  .. index:: mult and attributes
-
-  .. index:: div and attributes
-
-  .. index:: mod and attributes
-
-  .. index:: abs and attributes
-
-  .. index:: neg and attributes
-
-  .. index:: ashift and attributes
-
-  .. index:: lshiftrt and attributes
-
-  .. index:: ashiftrt and attributes
+  .. index:: le and attributes, leu and attributes, lt and attributes, gt and attributes, gtu and attributes, ge and attributes, geu and attributes, ne and attributes, eq and attributes, plus and attributes, minus and attributes, mult and attributes, div and attributes, mod and attributes, abs and attributes, neg and attributes, ashift and attributes, lshiftrt and attributes, ashiftrt and attributes
 
 :samp:`(le {arith1} {arith2})` :samp:`(leu {arith1} {arith2})` :samp:`(lt {arith1} {arith2})` :samp:`(ltu {arith1} {arith2})` :samp:`(gt {arith1} {arith2})` :samp:`(gtu {arith1} {arith2})` :samp:`(ge {arith1} {arith2})` :samp:`(geu {arith1} {arith2})` :samp:`(ne {arith1} {arith2})` :samp:`(eq {arith1} {arith2})`
   These tests are true if the indicated comparison of the two arithmetic
@@ -399,11 +353,9 @@ Attribute value expressions must have one of the following forms:
   for numeric attributes, as ``eq_attr`` and ``attr_flag``
   produce more efficient code for non-numeric attributes.
 
+.. index:: tagging insns, assigning attribute values to insns
+
 .. _tagging-insns:
-
-.. index:: tagging insns
-
-.. index:: assigning attribute values to insns
 
 Assigning Attribute Values to Insns
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -508,11 +460,9 @@ string.  Therefore, the value of the ``length`` attribute specified
 in a ``define_asm_attributes`` should be the maximum possible length
 of a single machine instruction.
 
+.. index:: attribute specifications example, attribute specifications
+
 .. _attr-example:
-
-.. index:: attribute specifications example
-
-.. index:: attribute specifications
 
 Example of Attribute Specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -567,11 +517,9 @@ performed on quantities smaller than a machine word clobber the condition
 code since they will set the condition code to a value corresponding to the
 full-word result.
 
+.. index:: insn lengths, computing, computing the length of an insn
+
 .. _insn-lengths:
-
-.. index:: insn lengths, computing
-
-.. index:: computing the length of an insn
 
 Computing the Length of an Insn
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -600,9 +548,7 @@ arithmetic terms are allowed in test expressions:
   this refers to the address of the next insn, because the length of the
   current insn is to be computed.
 
-.. index:: addr_vec, length of
-
-.. index:: addr_diff_vec, length of
+.. index:: addr_vec, length of, addr_diff_vec, length of
 
 For normal insns, the length will be determined by value of the
 ``length`` attribute.  In the case of ``addr_vec`` and
@@ -663,9 +609,9 @@ as follows:
                         (const_int 4)
                         (const_int 6)))])
 
-.. _constant-attributes:
-
 .. index:: constant attributes
+
+.. _constant-attributes:
 
 Constant Attributes
 ^^^^^^^^^^^^^^^^^^^
@@ -695,9 +641,9 @@ the value of a constant attribute may use the ``symbol_ref`` form,
 but may not use either the ``match_operand`` form or ``eq_attr``
 forms involving insn attributes.
 
-.. _mnemonic-attribute:
-
 .. index:: mnemonic attribute
+
+.. _mnemonic-attribute:
 
 Mnemonic Attribute
 ^^^^^^^^^^^^^^^^^^
@@ -737,9 +683,9 @@ additional insn attributes.
            (const_int 1)]
           (const_int 0)))
 
-.. _delay-slots:
-
 .. index:: delay slots, defining
+
+.. _delay-slots:
 
 Delay Slot Scheduling
 ^^^^^^^^^^^^^^^^^^^^^
@@ -817,33 +763,9 @@ branch is true, we might represent this as follows:
 
 .. the above is *still* too long.  -mew 4feb93
 
+.. index:: processor pipeline description, processor functional units, instruction latency time, interlock delays, data dependence delays, reservation delays, pipeline hazard recognizer, automaton based pipeline description, regular expressions, deterministic finite state automaton, automaton based scheduler, RISC, VLIW
+
 .. _processor-pipeline-description:
-
-.. index:: processor pipeline description
-
-.. index:: processor functional units
-
-.. index:: instruction latency time
-
-.. index:: interlock delays
-
-.. index:: data dependence delays
-
-.. index:: reservation delays
-
-.. index:: pipeline hazard recognizer
-
-.. index:: automaton based pipeline description
-
-.. index:: regular expressions
-
-.. index:: deterministic finite state automaton
-
-.. index:: automaton based scheduler
-
-.. index:: RISC
-
-.. index:: VLIW
 
 Specifying processor pipeline description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -907,9 +829,7 @@ an automaton-based processor pipeline description.  The order of
 these constructions within the machine description file is not
 important.
 
-.. index:: define_automaton
-
-.. index:: pipeline hazard recognizer
+.. index:: define_automaton, pipeline hazard recognizer
 
 The following optional construction describes names of automata
 generated and used for the pipeline hazards recognition.  Sometimes
@@ -928,9 +848,7 @@ names are separated by commas.  All the automata should have unique names.
 The automaton name is used in the constructions ``define_cpu_unit`` and
 ``define_query_cpu_unit``.
 
-.. index:: define_cpu_unit
-
-.. index:: processor functional units
+.. index:: define_cpu_unit, processor functional units
 
 Each processor functional unit used in the description of instruction
 reservations should be described by the following construction.
@@ -956,9 +874,7 @@ be present on the same cycle for the other alternatives of the insn
 reservation.  The rest of the constraints are mentioned in the
 description of the subsequent constructions.
 
-.. index:: define_query_cpu_unit
-
-.. index:: querying function unit reservations
+.. index:: define_query_cpu_unit, querying function unit reservations
 
 The following construction describes CPU functional units analogously
 to ``define_cpu_unit``.  The reservation of such units can be
@@ -978,13 +894,7 @@ separated by commas.
 :samp:`{automaton-name}` is a string giving the name of the automaton with
 which the unit is bound.
 
-.. index:: define_insn_reservation
-
-.. index:: instruction latency time
-
-.. index:: regular expressions
-
-.. index:: data bypass
+.. index:: define_insn_reservation, instruction latency time, regular expressions, data bypass
 
 The following construction is the major one to describe pipeline
 characteristics of an instruction.
@@ -1086,11 +996,7 @@ Functional unit names and reservation names are in the same name
 space.  So the reservation names should be different from the
 functional unit names and cannot be the reserved name :samp:`nothing`.
 
-.. index:: define_bypass
-
-.. index:: instruction latency time
-
-.. index:: data bypass
+.. index:: define_bypass, instruction latency time, data bypass
 
 The following construction is used to describe exceptions in the
 latency time for given instruction pair.  This is so called bypasses.
@@ -1127,19 +1033,7 @@ chosen bypass is the first bypass with a guard in description whose
 guard function returns nonzero.  If there is no such bypass, then
 bypass without the guard function is chosen.
 
-.. index:: exclusion_set
-
-.. index:: presence_set
-
-.. index:: final_presence_set
-
-.. index:: absence_set
-
-.. index:: final_absence_set
-
-.. index:: VLIW
-
-.. index:: RISC
+.. index:: exclusion_set, presence_set, final_presence_set, absence_set, final_absence_set, VLIW, RISC
 
 The following five constructions are usually used to describe
 VLIW processors, or more precisely, to describe a placement
@@ -1240,13 +1134,7 @@ The last construction (:samp:`final_absence_set`) is analogous to
 :samp:`absence_set` but checking is done on the result (state)
 reservation.  See comments for :samp:`final_presence_set`.
 
-.. index:: automata_option
-
-.. index:: deterministic finite state automaton
-
-.. index:: nondeterministic finite state automaton
-
-.. index:: finite state automaton minimization
+.. index:: automata_option, deterministic finite state automaton, nondeterministic finite state automaton, finite state automaton minimization
 
 You can control the generator of the pipeline hazard recognizer with
 the following construction.
@@ -1358,4 +1246,3 @@ construction
 
   (define_insn_reservation "simple" 2 (eq_attr "type" "int")
                            "(i0_pipeline | i1_pipeline), finish")
-

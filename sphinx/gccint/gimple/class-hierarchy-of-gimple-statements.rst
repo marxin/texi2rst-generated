@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _class-hierarchy-of-gimple-statements:
-
 .. index:: GIMPLE class hierarchy
+
+.. _class-hierarchy-of-gimple-statements:
 
 Class hierarchy of GIMPLE statements
 ************************************
@@ -148,4 +148,3 @@ kinds, along with their relationships to ``GSS_`` values (layouts) and
            |
            + gomp_return
                     code: GIMPLE_OMP_RETURN
-

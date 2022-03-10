@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETUID, system, user ID, user id
+
 .. _getuid:
-
-.. index:: GETUID
-
-.. index:: system, user ID
-
-.. index:: user id
 
 GETUID --- User ID function
 ***************************
@@ -40,4 +36,3 @@ GETUID --- User ID function
   :samp:`{See also}:`
     :ref:`GETPID`, 
     :ref:`GETLOG`
-

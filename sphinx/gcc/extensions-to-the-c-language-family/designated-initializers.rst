@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: initializers with labeled elements, labeled elements in initializers, case labels in initializers, designated initializers
+
 .. _designated-inits:
-
-.. index:: initializers with labeled elements
-
-.. index:: labeled elements in initializers
-
-.. index:: case labels in initializers
-
-.. index:: designated initializers
 
 Designated Initializers
 ***********************
@@ -151,4 +145,3 @@ the entire structure from the last field initialized is used.  If any previous
 initializer has side effect, it is unspecified whether the side effect
 happens or not.  Currently, GCC discards the side-effecting
 initializer expressions and issues a warning.
-

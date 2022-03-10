@@ -5,9 +5,9 @@
 
 .. program:: C6X
 
-.. _c6x-options:
-
 .. index:: C6X Options
+
+.. _c6x-options:
 
 C6X Options
 ^^^^^^^^^^^
@@ -53,4 +53,3 @@ C6X Options
   data in the ``.fardata`` section, and all uninitialized data in the
   ``.far`` section.  Put all constant data into the ``.const``
   section.
-

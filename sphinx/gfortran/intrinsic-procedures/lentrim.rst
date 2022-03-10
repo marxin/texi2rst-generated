@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LEN_TRIM, string, length, without trailing whitespace
+
 .. _len_trim:
-
-.. index:: LEN_TRIM
-
-.. index:: string, length, without trailing whitespace
 
 LEN_TRIM --- Length of a character entity without trailing blank characters
 ***************************************************************************
@@ -44,4 +42,3 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
     :ref:`LEN`, 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`
-

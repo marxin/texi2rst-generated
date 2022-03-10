@@ -240,4 +240,3 @@ You can easily find more examples by running the 'strings' program
 on an Objective-C object file compiled by GCC.  You'll see a lot of
 strings that look very much like ``i8@0:4``.  They are signatures
 of Objective-C methods.
-

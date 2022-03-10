@@ -40,4 +40,3 @@ becomes
           break;
         }
     GOMP_barrier ();
-

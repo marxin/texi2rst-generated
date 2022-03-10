@@ -166,4 +166,3 @@ with miscellaneous documentation:
 
   FIXME: document such files in subdirectories, at least :samp:`config`,
   :samp:`c`, :samp:`cp`, :samp:`objc`, :samp:`testsuite`.
-

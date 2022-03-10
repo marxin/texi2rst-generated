@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: garbage collector, invocation, ggc_collect
+
 .. _invoking-the-garbage-collector:
-
-.. index:: garbage collector, invocation
-
-.. index:: ggc_collect
 
 How to invoke the garbage collector
 ***********************************
@@ -36,4 +34,3 @@ if your code never reads or writes those fields at a particular
 instance.  One way to ensure this is to use cleared versions of
 allocators unless all the fields are initialized manually immediately
 after allocation.
-

@@ -3,25 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MOD, AMOD, DMOD, BMOD, IMOD, JMOD, KMOD, remainder, division, remainder
+
 .. _mod:
-
-.. index:: MOD
-
-.. index:: AMOD
-
-.. index:: DMOD
-
-.. index:: BMOD
-
-.. index:: IMOD
-
-.. index:: JMOD
-
-.. index:: KMOD
-
-.. index:: remainder
-
-.. index:: division, remainder
 
 MOD --- Remainder function
 **************************
@@ -93,4 +77,3 @@ MOD --- Remainder function
 
   :samp:`{See also}:`
     :ref:`MODULO`
-

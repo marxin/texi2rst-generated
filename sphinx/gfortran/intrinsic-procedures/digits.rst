@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DIGITS, model representation, significant digits
+
 .. _digits:
-
-.. index:: DIGITS
-
-.. index:: model representation, significant digits
 
 DIGITS --- Significant binary digits function
 *********************************************
@@ -48,4 +46,3 @@ DIGITS --- Significant binary digits function
           print *, digits(x)
           print *, digits(y)
       end program test_digits
-

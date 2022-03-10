@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _loop-iv:
-
 .. index:: IV analysis on RTL
+
+.. _loop-iv:
 
 IV analysis on RTL
 ******************
@@ -53,4 +53,3 @@ and the value in the i-th iteration is
 
 The function ``get_iv_value`` can be used to perform these
 calculations.
-

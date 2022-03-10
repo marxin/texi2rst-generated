@@ -60,4 +60,3 @@ timing information you can use along with the information you get from
 
 :command:`gcov` works only on code compiled with GCC.  It is not
 compatible with any other profiling or test coverage mechanism.
-

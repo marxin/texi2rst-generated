@@ -8,9 +8,7 @@
 TRAILZ --- Number of trailing zero bits of an integer
 *****************************************************
 
-.. index:: TRAILZ
-
-.. index:: zero bits
+.. index:: TRAILZ, zero bits
 
 .. function:: TRAILZ(I)
 
@@ -48,4 +46,3 @@ TRAILZ --- Number of trailing zero bits of an integer
     :ref:`LEADZ`, 
     :ref:`POPPAR`, 
     :ref:`POPCNT`
-

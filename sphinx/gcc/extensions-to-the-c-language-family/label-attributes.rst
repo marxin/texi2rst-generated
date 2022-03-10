@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _label-attributes:
-
 .. index:: Label Attributes
+
+.. _label-attributes:
 
 Label Attributes
 ****************
@@ -63,4 +63,3 @@ This example uses the :gcc-attr:`cold` label attribute to indicate the
   the path following the label is unlikely to be executed.  This attribute
   is used in cases where ``__builtin_expect`` cannot be used, for instance
   with computed goto or ``asm goto``.
-

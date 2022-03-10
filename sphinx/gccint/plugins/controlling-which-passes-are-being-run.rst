@@ -14,4 +14,3 @@ Then the event ``PLUGIN_OVERRIDE_GATE`` is invoked, with a pointer
 to the gate status in the ``gcc_data`` parameter to the callback function.
 A nonzero value of the gate status means that the pass is to be executed.
 You can both read and write the gate status via the passed pointer.
-

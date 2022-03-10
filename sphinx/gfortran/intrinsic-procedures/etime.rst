@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ETIME, time, elapsed
+
 .. _etime:
-
-.. index:: ETIME
-
-.. index:: time, elapsed
 
 ETIME --- Execution time subroutine (or function)
 *************************************************
@@ -64,4 +62,3 @@ ETIME --- Execution time subroutine (or function)
 
   :samp:`{See also}:`
     :ref:`CPU_TIME`
-

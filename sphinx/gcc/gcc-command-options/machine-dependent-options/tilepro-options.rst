@@ -5,9 +5,9 @@
 
 .. program:: TILEPro
 
-.. _tilepro-options:
-
 .. index:: TILEPro options
+
+.. _tilepro-options:
 
 TILEPro Options
 ^^^^^^^^^^^^^^^
@@ -24,4 +24,3 @@ These :samp:`-m` options are supported on the TILEPro:
   Generate code for a 32-bit environment, which sets int, long, and
   pointer to 32 bits.  This is the only supported behavior so the flag
   is essentially ignored.
-

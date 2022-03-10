@@ -8,13 +8,7 @@
 CSHIFT --- Circular shift elements of an array
 **********************************************
 
-.. index:: CSHIFT
-
-.. index:: array, shift circularly
-
-.. index:: array, permutation
-
-.. index:: array, rotate
+.. index:: CSHIFT, array, shift circularly, array, permutation, array, rotate
 
 .. function:: CSHIFT(ARRAY, SHIFT, DIM)
 
@@ -67,4 +61,3 @@ CSHIFT --- Circular shift elements of an array
           print '(3i3)', a(2,:)
           print '(3i3)', a(3,:)
       end program test_cshift
-

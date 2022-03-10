@@ -12,4 +12,3 @@ GIMPLE_OMP_MASTER
 
   Build a ``GIMPLE_OMP_MASTER`` statement. ``BODY`` is the sequence of
   statements to be executed by just the master.
-

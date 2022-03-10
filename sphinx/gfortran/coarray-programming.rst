@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _coarray-programming:
-
 .. index:: Coarrays
+
+.. _coarray-programming:
 
 Coarray Programming
 -------------------
@@ -15,4 +15,3 @@ Coarray Programming
 
   type-and-enum-abi-documentation
   function-abi-documentation
-

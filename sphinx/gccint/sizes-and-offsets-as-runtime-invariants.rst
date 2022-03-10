@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: polynomial integers, poly_int
+
 .. _poly_int:
-
-.. index:: polynomial integers
-
-.. index:: poly_int
 
 Sizes and offsets as runtime invariants
 ---------------------------------------
@@ -51,4 +49,3 @@ usage guidelines.
   sizes-and-offsets-as-runtime-invariants/converting-polyints
   sizes-and-offsets-as-runtime-invariants/miscellaneous-polyint-routines
   sizes-and-offsets-as-runtime-invariants/guidelines-for-using-polyint
-

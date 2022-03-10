@@ -5,9 +5,9 @@
 
 .. program:: AMD GCN
 
-.. _amd-gcn-options:
-
 .. index:: AMD GCN Options
+
+.. _amd-gcn-options:
 
 AMD GCN Options
 ^^^^^^^^^^^^^^^
@@ -52,4 +52,3 @@ These options are defined specifically for the AMD GCN port.
   compiled code must match the device mode.  The default is :samp:`-mno-xnack`.
   At present this option is a placeholder for support that is not yet
   implemented.
-

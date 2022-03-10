@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ERFC, error function, complementary
+
 .. _erfc:
-
-.. index:: ERFC
-
-.. index:: error function, complementary
 
 ERFC --- Error function 
 ************************
@@ -50,4 +48,3 @@ ERFC --- Error function
     ============  =============  ===========  =============
     ``DERFC(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     ============  =============  ===========  =============
-

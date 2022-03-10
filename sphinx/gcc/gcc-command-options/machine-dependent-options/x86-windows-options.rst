@@ -5,11 +5,9 @@
 
 .. program:: x86 Windows
 
+.. index:: x86 Windows Options, Windows Options for x86
+
 .. _x86-windows-options:
-
-.. index:: x86 Windows Options
-
-.. index:: Windows Options for x86
 
 x86 Windows Options
 ^^^^^^^^^^^^^^^^^^^

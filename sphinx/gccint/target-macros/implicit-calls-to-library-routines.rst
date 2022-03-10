@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: library subroutine names, libgcc.a
+
 .. _library-calls:
-
-.. index:: library subroutine names
-
-.. index:: libgcc.a
 
 Implicit Calls to Library Routines
 **********************************
@@ -23,9 +21,7 @@ Here is an explanation of implicit calls to library routines.
   provide alternate names for GCC's internal library functions if there
   are ABI-mandated names that the compiler should provide.
 
-.. index:: set_optab_libfunc
-
-.. index:: init_one_libfunc
+.. index:: set_optab_libfunc, init_one_libfunc
 
 .. function:: void TARGET_INIT_LIBFUNCS (void)
 
@@ -83,9 +79,7 @@ Here is an explanation of implicit calls to library routines.
   division.  If the macro is not defined, GCC will use an algorithm which
   make use of a 64-bit by 32-bit divide primitive.
 
-.. index:: EDOM, implicit usage
-
-.. index:: matherr
+.. index:: EDOM, implicit usage, matherr
 
 .. c:macro:: TARGET_EDOM
 
@@ -145,4 +139,3 @@ Here is an explanation of implicit calls to library routines.
 
   In either case, it remains possible to select code-generation for the alternate
   scheme, by means of compiler command line switches.
-

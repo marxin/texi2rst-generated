@@ -5,9 +5,9 @@
 
 .. program:: eBPF
 
-.. _ebpf-options:
-
 .. index:: eBPF Options
+
+.. _ebpf-options:
 
 eBPF Options
 ^^^^^^^^^^^^

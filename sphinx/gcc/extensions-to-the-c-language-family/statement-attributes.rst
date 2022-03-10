@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _statement-attributes:
-
 .. index:: Statement Attributes
+
+.. _statement-attributes:
 
 Statement Attributes
 ********************
@@ -44,4 +44,3 @@ the :option:`-Wimplicit-fallthrough` warning should not be emitted:
   be used in a switch statement (the compiler will issue an error
   otherwise), after a preceding statement and before a logically
   succeeding case label, or user-defined label.
-

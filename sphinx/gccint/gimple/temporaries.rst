@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _temporaries:
-
 .. index:: Temporaries
+
+.. _temporaries:
 
 Temporaries
 ***********
@@ -40,4 +40,3 @@ variable which must live in memory cannot appear in an expression; its
 value is explicitly loaded into a temporary first.  Similarly, storing
 the value of an expression to a memory variable goes through a
 temporary.
-

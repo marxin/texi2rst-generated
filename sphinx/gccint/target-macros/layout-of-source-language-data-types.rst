@@ -379,4 +379,3 @@ languages, rather than to fundamental aspects of storage layout.
   zero.  If these entries must be padded (say, to preserve the alignment
   specified by ``TARGET_VTABLE_ENTRY_ALIGN``), set this to the number
   of words in each data entry.
-

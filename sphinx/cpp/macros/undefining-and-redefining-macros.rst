@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: undefining macros, redefining macros, #undef
+
 .. _undefining-and-redefining-macros:
-
-.. index:: undefining macros
-
-.. index:: redefining macros
-
-.. index:: #undef
 
 Undefining and Redefining Macros
 ********************************
@@ -69,4 +65,3 @@ macro to use the new definition.  If the new definition is effectively
 the same, the redefinition is silently ignored.  This allows, for
 instance, two different headers to define a common macro.  The
 preprocessor will only complain if the definitions do not match.
-

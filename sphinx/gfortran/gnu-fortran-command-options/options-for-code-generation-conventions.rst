@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: code generation, conventions, options, code generation, options, run-time
+
 .. _code-gen-options:
-
-.. index:: code generation, conventions
-
-.. index:: options, code generation
-
-.. index:: options, run-time
 
 Options for code generation conventions
 ***************************************
@@ -23,11 +19,7 @@ one of the forms is listed---the one which is not the default.  You
 can figure out the other form by either removing no- or adding
 it.
 
-.. index:: fno-automatic
-
-.. index:: SAVE statement
-
-.. index:: statement, SAVE
+.. index:: fno-automatic, SAVE statement, statement, SAVE
 
 .. option:: -fno-automatic
 
@@ -42,13 +34,7 @@ it.
   Local variables or arrays having an explicit ``SAVE`` attribute are
   silently ignored unless the :option:`-pedantic` option is added.
 
-.. index:: calling convention
-
-.. index:: f2c calling convention
-
-.. index:: g77 calling convention
-
-.. index:: libf2c calling convention
+.. index:: calling convention, f2c calling convention, g77 calling convention, libf2c calling convention
 
 .. option:: -ff2c
 
@@ -84,15 +70,7 @@ it.
     of type default ``REAL`` or ``COMPLEX`` as actual arguments, as
     the library implementations use the :option:`-fno-f2c` calling conventions.
 
-.. index:: fno-underscoring
-
-.. index:: underscore
-
-.. index:: symbol names, underscores
-
-.. index:: transforming symbol names
-
-.. index:: symbol names, transforming
+.. index:: fno-underscoring, underscore, symbol names, underscores, transforming symbol names, symbol names, transforming
 
 .. option:: -fno-underscoring
 
@@ -163,21 +141,7 @@ it.
   prevent accidental linking between procedures with incompatible
   interfaces.
 
-.. index:: fsecond-underscore
-
-.. index:: underscore
-
-.. index:: symbol names, underscores
-
-.. index:: transforming symbol names
-
-.. index:: symbol names, transforming
-
-.. index:: f2c calling convention
-
-.. index:: g77 calling convention
-
-.. index:: libf2c calling convention
+.. index:: fsecond-underscore, underscore, symbol names, underscores, transforming symbol names, symbol names, transforming, f2c calling convention, g77 calling convention, libf2c calling convention
 
 .. option:: -fsecond-underscore
 
@@ -197,9 +161,7 @@ it.
   for compatibility with :command:`g77` and :command:`f2c`, and is implied
   by use of the :option:`-ff2c` option.
 
-.. index:: fcoarray
-
-.. index:: coarrays
+.. index:: fcoarray, coarrays
 
 .. option:: -fcoarray={<keyword>}
 
@@ -214,27 +176,7 @@ it.
     Library-based coarray parallelization; a suitable GNU Fortran coarray
     library needs to be linked.
 
-.. index:: fcheck
-
-.. index:: array, bounds checking
-
-.. index:: bit intrinsics checking
-
-.. index:: bounds checking
-
-.. index:: pointer checking
-
-.. index:: memory checking
-
-.. index:: range checking
-
-.. index:: subscript checking
-
-.. index:: checking subscripts
-
-.. index:: run-time checking
-
-.. index:: checking array temporaries
+.. index:: fcheck, array, bounds checking, bit intrinsics checking, bounds checking, pointer checking, memory checking, range checking, subscript checking, checking subscripts, run-time checking, checking array temporaries
 
 .. option:: -fcheck={<keyword>}
 
@@ -396,9 +338,7 @@ it.
   by default at optimization level :option:`-Ofast` unless
   :option:`-fmax-stack-var-size` is specified.
 
-.. index:: fpack-derived
-
-.. index:: structure packing
+.. index:: fpack-derived, structure packing
 
 .. option:: -fpack-derived
 
@@ -406,9 +346,7 @@ it.
   possible.  Code compiled with this option is likely to be incompatible
   with code compiled without this option, and may execute slower.
 
-.. index:: frepack-arrays
-
-.. index:: repacking arrays
+.. index:: frepack-arrays, repacking arrays
 
 .. option:: -frepack-arrays
 
@@ -510,17 +448,7 @@ it.
   on the stack. This flag cannot be used together with
   :option:`-fmax-stack-var-size` = or :option:`-fno-automatic`.
 
-.. index:: finit-local-zero
-
-.. index:: finit-derived
-
-.. index:: finit-integer
-
-.. index:: finit-real
-
-.. index:: finit-logical
-
-.. index:: finit-character
+.. index:: finit-local-zero, finit-derived, finit-integer, finit-real, finit-logical, finit-character
 
 .. option:: -finit-local-zero
             -finit-derived
@@ -571,9 +499,7 @@ it.
   silence warnings that would have been emitted by :option:`-Wuninitialized`
   for the affected local variables.
 
-.. index:: falign-commons
-
-.. index:: alignment of COMMON blocks
+.. index:: falign-commons, alignment of COMMON blocks
 
 .. option:: -falign-commons
 
@@ -586,9 +512,7 @@ it.
   To avoid potential alignment issues in ``COMMON`` blocks, it is recommended to order
   objects from largest to smallest.
 
-.. index:: fno-protect-parens
-
-.. index:: re-association of parenthesized expressions
+.. index:: fno-protect-parens, re-association of parenthesized expressions
 
 .. option:: -fno-protect-parens
 
@@ -600,9 +524,7 @@ it.
   need to be in effect. The parentheses protection is enabled by default, unless
   :option:`-Ofast` is given.
 
-.. index:: frealloc-lhs
-
-.. index:: Reallocate the LHS in assignments
+.. index:: frealloc-lhs, Reallocate the LHS in assignments
 
 .. option:: -frealloc-lhs
 
@@ -611,9 +533,7 @@ it.
   option is enabled by default except when :option:`-std`:samp:`=f95` is given. See
   also :option:`-Wrealloc-lhs`.
 
-.. index:: faggressive-function-elimination
-
-.. index:: Elimination of functions with identical argument lists
+.. index:: faggressive-function-elimination, Elimination of functions with identical argument lists
 
 .. option:: -faggressive-function-elimination
 
@@ -628,9 +548,7 @@ it.
   there will only be a single call to ``f``.  This option only works
   if :option:`-ffrontend-optimize` is in effect.
 
-.. index:: frontend-optimize
-
-.. index:: Front-end optimization
+.. index:: frontend-optimize, Front-end optimization
 
 .. option:: -ffrontend-optimize
 
@@ -651,9 +569,7 @@ it.
 
   It can be deselected by specifying :option:`-fno-frontend-optimize`.
 
-.. index:: frontend-loop-interchange
-
-.. index:: loop interchange, Fortran
+.. index:: frontend-loop-interchange, loop interchange, Fortran
 
 .. option:: -ffrontend-loop-interchange
 
@@ -665,4 +581,3 @@ it.
 See :ref:`gcc:code-gen-options`, for information on more options
 offered by the GBE
 shared by :command:`gfortran`, :command:`gcc`, and other GNU compilers.
-

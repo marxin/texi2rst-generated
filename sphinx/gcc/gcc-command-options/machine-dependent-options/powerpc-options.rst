@@ -5,12 +5,11 @@
 
 .. program:: PowerPC
 
-.. _powerpc-options:
-
 .. index:: PowerPC options
+
+.. _powerpc-options:
 
 PowerPC Options
 ^^^^^^^^^^^^^^^
 
 These are listed under See :ref:`rs-6000-and-powerpc-options`.
-

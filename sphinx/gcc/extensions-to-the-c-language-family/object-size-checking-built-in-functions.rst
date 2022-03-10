@@ -3,45 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: __builtin_object_size, __builtin_dynamic_object_size, __builtin___memcpy_chk, __builtin___mempcpy_chk, __builtin___memmove_chk, __builtin___memset_chk, __builtin___strcpy_chk, __builtin___stpcpy_chk, __builtin___strncpy_chk, __builtin___strcat_chk, __builtin___strncat_chk, __builtin___sprintf_chk, __builtin___snprintf_chk, __builtin___vsprintf_chk, __builtin___vsnprintf_chk, __builtin___printf_chk, __builtin___vprintf_chk, __builtin___fprintf_chk, __builtin___vfprintf_chk
+
 .. _object-size-checking:
-
-.. index:: __builtin_object_size
-
-.. index:: __builtin_dynamic_object_size
-
-.. index:: __builtin___memcpy_chk
-
-.. index:: __builtin___mempcpy_chk
-
-.. index:: __builtin___memmove_chk
-
-.. index:: __builtin___memset_chk
-
-.. index:: __builtin___strcpy_chk
-
-.. index:: __builtin___stpcpy_chk
-
-.. index:: __builtin___strncpy_chk
-
-.. index:: __builtin___strcat_chk
-
-.. index:: __builtin___strncat_chk
-
-.. index:: __builtin___sprintf_chk
-
-.. index:: __builtin___snprintf_chk
-
-.. index:: __builtin___vsprintf_chk
-
-.. index:: __builtin___vsnprintf_chk
-
-.. index:: __builtin___printf_chk
-
-.. index:: __builtin___vprintf_chk
-
-.. index:: __builtin___fprintf_chk
-
-.. index:: __builtin___vfprintf_chk
 
 Object Size Checking Built-in Functions
 ***************************************
@@ -179,4 +143,3 @@ These have just one additional argument, :samp:`{flag}`, right before
 format string :samp:`{fmt}`.  If the compiler is able to optimize them to
 ``fputc`` etc. functions, it does, otherwise the checking function
 is called and the :samp:`{flag}` argument passed to it.
-

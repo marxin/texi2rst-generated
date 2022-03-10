@@ -12,4 +12,3 @@ OpenACC Profiling Interface
   :maxdepth: 2
 
   implementation-status-and-implementation-defined-behavior
-

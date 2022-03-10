@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: directives, preprocessing directives, directive line, directive name
+
 .. _the-preprocessing-language:
-
-.. index:: directives
-
-.. index:: preprocessing directives
-
-.. index:: directive line
-
-.. index:: directive name
 
 The preprocessing language
 **************************
@@ -73,4 +67,3 @@ may, however, be continued with backslash-newline, or by a block comment
 which extends past the end of the line.  In either case, when the
 directive is processed, the continuations have already been merged with
 the first line to make one long line.
-

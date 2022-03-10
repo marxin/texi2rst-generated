@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: guidelines for diagnostics, diagnostics, guidelines for
+
 .. _guidelines-for-diagnostics:
-
-.. index:: guidelines for diagnostics
-
-.. index:: diagnostics, guidelines for
 
 Guidelines for Diagnostics
 **************************
@@ -48,15 +46,7 @@ A perfect compiler would issue a warning on every aspect of the user's
 source code that ought to be fixed, and issue no other warnings.
 Naturally, this ideal is impossible to achieve.
 
-.. index:: signal-to-noise ratio (metaphorical usage for diagnostics)
-
-.. index:: diagnostics, false positive
-
-.. index:: diagnostics, true positive
-
-.. index:: false positive
-
-.. index:: true positive
+.. index:: signal-to-noise ratio (metaphorical usage for diagnostics), diagnostics, false positive, diagnostics, true positive, false positive, true positive
 
 Warnings should have a good :dfn:`signal-to-noise ratio`: we should have few
 :dfn:`false positives` (falsely issuing a warning when no warning is
@@ -215,13 +205,7 @@ or two diagnostics:
       (
       ^
 
-.. index:: diagnostics, locations
-
-.. index:: location information
-
-.. index:: source code, location information
-
-.. index:: caret
+.. index:: diagnostics, locations, location information, source code, location information, caret
 
 Location Information
 ^^^^^^^^^^^^^^^^^^^^
@@ -418,9 +402,7 @@ Spelling and Terminology
 See the `terminology and markup <https://gcc.gnu.org/codingconventions.html#Spelling
 Spelling>`_ section of the GCC coding conventions.
 
-.. index:: fix-it hints
-
-.. index:: diagnostics guidelines, fix-it hints
+.. index:: fix-it hints, diagnostics guidelines, fix-it hints
 
 Fix-it hints
 ^^^^^^^^^^^^
@@ -614,4 +596,3 @@ multiple notes and calling
 ``rich_location``.  If this is called, then the fix-it hints in
 the ``rich_location`` will be printed, but will not be added to
 generated patches.
-

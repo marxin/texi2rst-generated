@@ -17,4 +17,3 @@ of the C library, and are not defined by GCC itself.
   In ``<stddef.h>``, ``NULL`` expands to ``((void *)0)``.  GCC
   does not provide the other headers which define ``NULL`` and some
   library implementations may use other definitions in those headers.
-

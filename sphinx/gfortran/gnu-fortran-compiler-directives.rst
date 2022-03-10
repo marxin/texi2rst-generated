@@ -172,4 +172,3 @@ The syntax of the directive is
 This directive tells the compiler to not vectorize the following loop.
 It must be placed immediately before a ``DO`` loop and applies only
 to the loop that follows.
-

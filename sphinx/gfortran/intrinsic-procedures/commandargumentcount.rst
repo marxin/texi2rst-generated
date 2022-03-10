@@ -8,13 +8,7 @@
 COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
 ***************************************************************
 
-.. index:: COMMAND_ARGUMENT_COUNT
-
-.. index:: command-line arguments
-
-.. index:: command-line arguments, number of
-
-.. index:: arguments, to program
+.. index:: COMMAND_ARGUMENT_COUNT, command-line arguments, command-line arguments, number of, arguments, to program
 
 .. function:: COMMAND_ARGUMENT_COUNT()
 
@@ -49,4 +43,3 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
   :samp:`{See also}:`
     :ref:`GET_COMMAND`, 
     :ref:`GET_COMMAND_ARGUMENT`
-

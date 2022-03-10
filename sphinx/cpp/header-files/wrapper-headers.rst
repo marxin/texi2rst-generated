@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: wrapper headers, overriding a header file, #include_next
+
 .. _wrapper-headers:
-
-.. index:: wrapper headers
-
-.. index:: overriding a header file
-
-.. index:: #include_next
 
 Wrapper Headers
 ***************
@@ -60,4 +56,3 @@ recommend it be used only when there is no other alternative.  In
 particular, it should not be used in the headers belonging to a specific
 program; it should be used only to make global corrections along the
 lines of :command:`fixincludes`.
-

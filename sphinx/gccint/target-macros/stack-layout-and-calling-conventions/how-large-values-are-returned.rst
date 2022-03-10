@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: aggregates as return values, large return values, returning aggregate values, structure value address
+
 .. _aggregate-return:
-
-.. index:: aggregates as return values
-
-.. index:: large return values
-
-.. index:: returning aggregate values
-
-.. index:: structure value address
 
 How Large Values Are Returned
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -136,4 +130,3 @@ memory.
   ABI.
 
 .. hook-end
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _stack-and-calling:
-
 .. index:: calling conventions
+
+.. _stack-and-calling:
 
 Stack Layout and Calling Conventions
 ************************************
@@ -33,4 +33,3 @@ This describes the stack layout and calling conventions.
   stack-layout-and-calling-conventions/shrink-wrapping-separate-components
   stack-layout-and-calling-conventions/stack-smashing-protection
   stack-layout-and-calling-conventions/miscellaneous-register-hooks
-

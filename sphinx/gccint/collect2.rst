@@ -17,9 +17,7 @@ indicating they are constructor functions.  If it finds any, it
 creates a new temporary :samp:`.c` file containing a table of them,
 compiles it, and links the program a second time including that file.
 
-.. index:: __main
-
-.. index:: constructors, automatic calls
+.. index:: __main, constructors, automatic calls
 
 The actual calls to the constructors are carried out by a subroutine
 called ``__main``, which is called (automatically) at the beginning
@@ -77,4 +75,3 @@ second place in the search path.
 
 ``collect2`` searches for the utilities ``nm`` and ``strip``
 using the same algorithm as above for ``ld``.
-

@@ -28,4 +28,3 @@ omp_get_default_device -- Get the default device for target regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.30.
-

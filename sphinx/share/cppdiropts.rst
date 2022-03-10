@@ -213,4 +213,3 @@
 .. option:: -Wendif-labels
 
   Default setting; overrides :option:`-Wno-endif-labels`.
-

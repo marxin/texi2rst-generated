@@ -5,9 +5,9 @@
 
 .. program:: S/390 and zSeries
 
-.. _s-390-and-zseries-options:
-
 .. index:: S/390 and zSeries Options
+
+.. _s-390-and-zseries-options:
 
 S/390 and zSeries Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -241,4 +241,3 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
 
   This option can be overridden for individual functions with the
   ``hotpatch`` attribute.
-

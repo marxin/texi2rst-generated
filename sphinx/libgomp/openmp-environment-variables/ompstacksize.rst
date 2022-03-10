@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_stacksize:
-
 .. index:: Environment Variable
+
+.. _omp_stacksize:
 
 OMP_STACKSIZE -- Set default thread stack size
 **********************************************
@@ -22,4 +22,3 @@ OMP_STACKSIZE -- Set default thread stack size
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.7
-

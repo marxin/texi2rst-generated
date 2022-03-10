@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: initializers, non-constant, non-constant initializers
+
 .. _initializers:
-
-.. index:: initializers, non-constant
-
-.. index:: non-constant initializers
 
 Non-Constant Initializers
 *************************
@@ -23,4 +21,3 @@ Here is an example of an initializer with run-time varying elements:
     float beat_freqs[2] = { f-g, f+g };
     /* ... */
   }
-

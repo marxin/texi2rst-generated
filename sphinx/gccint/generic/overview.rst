@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: tree, TREE_CODE
+
 .. _tree-overview:
-
-.. index:: tree
-
-.. index:: TREE_CODE
 
 Overview
 ********
@@ -105,13 +103,9 @@ bug.
    Trees
    -
 
+.. index:: tree, TREE_CHAIN, TREE_TYPE
+
 .. _macros-and-functions:
-
-.. index:: tree
-
-.. index:: TREE_CHAIN
-
-.. index:: TREE_TYPE
 
 Trees
 ^^^^^
@@ -137,11 +131,9 @@ These are some other functions for handling trees:
    Identifiers
    -
 
+.. index:: identifier, name
+
 .. _identifiers:
-
-.. index:: identifier
-
-.. index:: name
 
 Identifiers
 ^^^^^^^^^^^
@@ -192,28 +184,14 @@ You can use the following macros to access identifiers:
    Containers
    -
 
+.. index:: container, list, vector
+
 .. _containers:
-
-.. index:: container
-
-.. index:: list
-
-.. index:: vector
 
 Containers
 ^^^^^^^^^^
 
-.. index:: TREE_LIST
-
-.. index:: TREE_VEC
-
-.. index:: TREE_PURPOSE
-
-.. index:: TREE_VALUE
-
-.. index:: TREE_VEC_LENGTH
-
-.. index:: TREE_VEC_ELT
+.. index:: TREE_LIST, TREE_VEC, TREE_PURPOSE, TREE_VALUE, TREE_VEC_LENGTH, TREE_VEC_ELT
 
 Two common container data structures can be represented directly with
 tree nodes.  A ``TREE_LIST`` is a singly linked list containing two

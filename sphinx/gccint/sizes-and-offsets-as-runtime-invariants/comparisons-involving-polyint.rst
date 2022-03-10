@@ -322,4 +322,3 @@ Sorting poly_ints
   Note that the values do not necessarily end up in numerical order.
   For example, :samp:`1 + 1{x}` would come after :samp:`100` in the sort order,
   but may well be less than :samp:`100` at run time.
-

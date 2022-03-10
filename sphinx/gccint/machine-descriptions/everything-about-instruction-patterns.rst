@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: patterns, instruction patterns, define_insn
+
 .. _patterns:
-
-.. index:: patterns
-
-.. index:: instruction patterns
-
-.. index:: define_insn
 
 Everything about Instruction Patterns
 *************************************
@@ -62,9 +58,7 @@ A ``define_insn`` is an RTL expression containing four or five operands:
   If the vector has multiple elements, the RTL template is treated as a
   ``parallel`` expression.
 
-.. index:: pattern conditions
-
-.. index:: conditions, in patterns
+.. index:: pattern conditions, conditions, in patterns
 
 * The condition: This is a string which contains a C expression.  When the
   compiler attempts to match RTL against a pattern, the condition is
@@ -110,4 +104,3 @@ A ``define_insn`` is an RTL expression containing four or five operands:
 
 * The :dfn:`insn attributes`: This is an optional vector containing the values of
   attributes for insns matching this pattern (see :ref:`insn-attributes`).
-

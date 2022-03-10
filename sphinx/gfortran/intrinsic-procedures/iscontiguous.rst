@@ -8,9 +8,7 @@
 IS_CONTIGUOUS --- Test whether an array is contiguous
 *****************************************************
 
-.. index:: IS_IOSTAT_EOR
-
-.. index:: array, contiguity
+.. index:: IS_IOSTAT_EOR, array, contiguity
 
 .. function:: IS_CONTIGUOUS(ARRAY)
 
@@ -54,4 +52,3 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
           end if
         end subroutine sub
       end program test
-

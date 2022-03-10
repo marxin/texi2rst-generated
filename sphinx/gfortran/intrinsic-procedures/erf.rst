@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ERF, error function
+
 .. _erf:
-
-.. index:: ERF
-
-.. index:: error function
 
 ERF --- Error function 
 ***********************
@@ -50,4 +48,3 @@ ERF --- Error function
     ===========  =============  ===========  =============
     ``DERF(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     ===========  =============  ===========  =============
-

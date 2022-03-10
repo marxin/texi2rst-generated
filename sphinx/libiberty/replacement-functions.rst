@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: replacement functions, functions, replacement
+
 .. _replacement-functions:
-
-.. index:: replacement functions
-
-.. index:: functions, replacement
 
 Replacement Functions
 *********************
@@ -28,9 +26,9 @@ functions may call one another.
   :maxdepth: 2
 
 
-.. _memory-allocation:
-
 .. index:: memory allocation
+
+.. _memory-allocation:
 
 Memory Allocation
 ^^^^^^^^^^^^^^^^^
@@ -41,9 +39,9 @@ are called and their results checked before the results are passed back
 to client code.  If the standard functions fail, these wrappers will
 terminate the program.  Thus, these versions can be used with impunity.
 
-.. _exit-handlers:
-
 .. index:: exit handlers
+
+.. _exit-handlers:
 
 Exit Handlers
 ^^^^^^^^^^^^^
@@ -52,9 +50,9 @@ The existence and implementation of the ``atexit`` routine varies
 amongst the flavors of Unix.  ``libiberty`` provides an unvarying dependable
 implementation via ``xatexit`` and ``xexit``.
 
-.. _error-reporting:
-
 .. index:: error reporting
+
+.. _error-reporting:
 
 Error Reporting
 ^^^^^^^^^^^^^^^

@@ -5,9 +5,9 @@
 
 .. program:: FRV
 
-.. _frv-options:
-
 .. index:: FRV Options
+
+.. _frv-options:
 
 FRV Options
 ^^^^^^^^^^^
@@ -277,4 +277,3 @@ FRV Options
   Select the processor type for which to generate code.  Possible values are
   :samp:`frv`, :samp:`fr550`, :samp:`tomcat`, :samp:`fr500`, :samp:`fr450`,
   :samp:`fr405`, :samp:`fr400`, :samp:`fr300` and :samp:`simple`.
-

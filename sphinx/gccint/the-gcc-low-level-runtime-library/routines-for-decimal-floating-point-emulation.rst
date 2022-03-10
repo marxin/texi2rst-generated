@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: decimal float library, IEEE 754-2008
+
 .. _decimal-float-library-routines:
-
-.. index:: decimal float library
-
-.. index:: IEEE 754-2008
 
 Routines for decimal floating point emulation
 *********************************************
@@ -312,4 +310,3 @@ below are guaranteed.
 
   These functions return a value greater than zero if neither argument
   is NaN, and :samp:`{a}` is strictly greater than :samp:`{b}`.
-

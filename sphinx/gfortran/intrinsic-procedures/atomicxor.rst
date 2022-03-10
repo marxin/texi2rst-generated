@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_XOR, Atomic subroutine, XOR
+
 .. _atomic_xor:
-
-.. index:: ATOMIC_XOR
-
-.. index:: Atomic subroutine, XOR
 
 ATOMIC_XOR --- Atomic bitwise OR operation
 ******************************************
@@ -62,4 +60,3 @@ ATOMIC_XOR --- Atomic bitwise OR operation
     :ref:`ATOMIC_ADD`, 
     :ref:`ATOMIC_OR`, 
     :ref:`ATOMIC_XOR`
-

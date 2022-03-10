@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COS, DCOS, CCOS, ZCOS, CDCOS, trigonometric function, cosine, cosine
+
 .. _cos:
-
-.. index:: COS
-
-.. index:: DCOS
-
-.. index:: CCOS
-
-.. index:: ZCOS
-
-.. index:: CDCOS
-
-.. index:: trigonometric function, cosine
-
-.. index:: cosine
 
 COS --- Cosine function
 ***********************
@@ -72,4 +60,3 @@ COS --- Cosine function
     :ref:`ACOS` 
     Degrees function: 
     :ref:`COSD`
-

@@ -21,4 +21,3 @@ Also documented here are obsolete features still supported by CPP.
   implementation-defined-behavior
   implementation-limits
   obsolete-features
-

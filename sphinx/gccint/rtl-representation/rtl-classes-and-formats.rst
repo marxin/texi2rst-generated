@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL classes, classes of RTX codes, RTX codes, classes of, GET_RTX_CLASS
+
 .. _rtl-classes:
-
-.. index:: RTL classes
-
-.. index:: classes of RTX codes
-
-.. index:: RTX codes, classes of
-
-.. index:: GET_RTX_CLASS
 
 RTL Classes and Formats
 ***********************
@@ -196,4 +190,3 @@ is safe to assume that all comparison operations have format ``ee``.
 .. envvar:: RTX_CONST_OBJ
 
   You can make no assumptions about the format of these codes.
-

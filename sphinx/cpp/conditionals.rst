@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _conditionals:
-
 .. index:: conditionals
+
+.. _conditionals:
 
 Conditionals
 ------------
@@ -42,4 +42,3 @@ remains syntactically valid when it is not to be used.
   conditional-uses
   conditional-syntax
   deleted-code
-

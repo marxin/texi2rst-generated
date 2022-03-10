@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: NORM2, Euclidean vector norm, L2 vector norm, norm, Euclidean
+
 .. _norm2:
-
-.. index:: NORM2
-
-.. index:: Euclidean vector norm
-
-.. index:: L2 vector norm
-
-.. index:: norm, Euclidean
 
 NORM2 --- Euclidean vector norms
 ********************************
@@ -52,4 +46,3 @@ NORM2 --- Euclidean vector norms
         REAL :: x(5) = [ real :: 1, 2, 3, 4, 5 ]
         print *, NORM2(x)  ! = sqrt(55.) ~ 7.416
       END PROGRAM
-

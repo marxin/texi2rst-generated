@@ -53,4 +53,3 @@ The :samp:`gcc` directory contains the following subdirectories:
 :samp:`testsuite`
   The GCC testsuites (except for those for runtime libraries).
   See :ref:`testsuites`.
-

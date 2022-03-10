@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Testing, Testing, Testsuite
+
 .. _testing:
-
-.. index:: Testing
-
-.. index:: Testing
-
-.. index:: Testsuite
 
 Testing
 -------
@@ -71,4 +67,3 @@ on a simulator as described at https://gcc.gnu.org/simtest-howto.html.
   passing-options-and-running-multiple-testsuites
   how-to-interpret-test-results
   submitting-test-results
-

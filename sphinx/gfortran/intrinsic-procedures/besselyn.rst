@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BESSEL_YN, BESYN, DBESYN, Bessel function, second kind
+
 .. _bessel_yn:
-
-.. index:: BESSEL_YN
-
-.. index:: BESYN
-
-.. index:: DBESYN
-
-.. index:: Bessel function, second kind
 
 BESSEL_YN --- Bessel function of the second kind
 ************************************************
@@ -75,4 +69,3 @@ BESSEL_YN --- Bessel function of the second kind
     ``DBESYN(N,X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
                      ``REAL(8) X``
     ===============  =============  ===========  =============
-

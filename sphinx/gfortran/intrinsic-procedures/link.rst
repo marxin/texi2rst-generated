@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LINK, file system, create link, file system, hard link
+
 .. _link:
-
-.. index:: LINK
-
-.. index:: file system, create link
-
-.. index:: file system, hard link
 
 LINK --- Create a hard link
 ***************************
@@ -48,4 +44,3 @@ LINK --- Create a hard link
   :samp:`{See also}:`
     :ref:`SYMLNK`, 
     :ref:`UNLINK`
-

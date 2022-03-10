@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options, linking, linking, static
+
 .. _linking:
-
-.. index:: options, linking
-
-.. index:: linking, static
 
 Options for Linking
 *******************
@@ -59,4 +57,3 @@ a link step.
   shared and a static library, this option forces the use of the static
   version.  If no static version was built when the compiler was configured,
   this option has no effect.
-

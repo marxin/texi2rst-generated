@@ -2049,4 +2049,3 @@ Otherwise, the element of the returned vector contains all zeros.
   int vec_any_ge (vector unsigned __int128, vector unsigned __int128);
   int vec_any_le (vector signed __int128, vector signed __int128);
   int vec_any_le (vector unsigned __int128, vector unsigned __int128);
-

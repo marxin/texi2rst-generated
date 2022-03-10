@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SSA, static single assignment
+
 .. _ssa:
-
-.. index:: SSA
-
-.. index:: static single assignment
 
 Static Single Assignment
 ************************
@@ -90,9 +88,7 @@ The following functions can be used to examine PHI nodes
 
   Returns the ``SSA_NAME`` for the :samp:`{i}` th argument of :samp:`{phi}`.
 
-.. index:: update_ssa
-
-.. index:: preserving SSA form
+.. index:: update_ssa, preserving SSA form
 
 Preserving the SSA form
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -261,4 +257,3 @@ Walking the dominator tree
   * Once after walking the statements in :samp:`{bb}` and :samp:`{bb}` 's
     dominator children.  At this stage, the block local data stack
     is popped.
-

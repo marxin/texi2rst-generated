@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _implementation-limits:
-
 .. index:: implementation limits
+
+.. _implementation-limits:
 
 Implementation limits
 *********************
@@ -66,4 +66,3 @@ consumed by other processes on the same computer, etc.
   available address space.  This is generally at least two gigabytes.
   Depending on the operating system, the size of physical memory may or
   may not be a limitation.
-

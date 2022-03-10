@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SYSTEM, system, system call
+
 .. _system:
-
-.. index:: SYSTEM
-
-.. index:: system, system call
 
 SYSTEM --- Execute a shell command
 **********************************
@@ -42,4 +40,3 @@ SYSTEM --- Execute a shell command
   :samp:`{See also}:`
     :ref:`EXECUTE_COMMAND_LINE`, which is part of the Fortran 2008 standard
     and should considered in new code for future portability.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: directory options, options, directory search, search path
+
 .. _directory-options:
-
-.. index:: directory options
-
-.. index:: options, directory search
-
-.. index:: search path
 
 Options for Directory Search
 ****************************
@@ -104,4 +100,3 @@ libraries and for parts of the compiler:
   :samp:`{dir}/{suffix}/usr/include` instead of
   :samp:`{dir}/usr/include`.  This option disables the addition of
   such a suffix.
-

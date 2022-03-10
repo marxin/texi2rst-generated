@@ -28,4 +28,3 @@ omp_get_max_active_levels -- Current maximum number of active regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.16.
-

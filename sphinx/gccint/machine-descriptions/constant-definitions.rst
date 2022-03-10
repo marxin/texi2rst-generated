@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: constant definitions, define_constants
+
 .. _constant-definitions:
-
-.. index:: constant definitions
-
-.. index:: define_constants
 
 Constant Definitions
 ********************
@@ -59,9 +57,7 @@ You could write:
 The constants that are defined with a define_constant are also output
 in the insn-codes.h header file as #defines.
 
-.. index:: enumerations
-
-.. index:: define_c_enum
+.. index:: enumerations, define_c_enum
 
 You can also use the machine description file to define enumerations.
 Like the constants defined by ``define_constant``, these enumerations
@@ -187,4 +183,3 @@ where :samp:`{cvaluei}` is the capitalized form of :samp:`{valuei}`.
 However, unlike ``define_c_enum``, the enumerations defined
 by ``define_enum`` can be used in attribute specifications
 (see :ref:`define_enum_attr`).
-

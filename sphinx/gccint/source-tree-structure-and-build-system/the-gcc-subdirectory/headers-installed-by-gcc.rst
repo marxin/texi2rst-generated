@@ -47,4 +47,3 @@ needs fixing, :samp:`syslimits.h` is the fixed copy.
 
 GCC can also install ``<tgmath.h>``.  It will do this when
 :samp:`config.gcc` sets ``use_gcc_tgmath`` to ``yes``.
-

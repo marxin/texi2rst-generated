@@ -5,13 +5,9 @@
 
 .. default-domain:: c
 
+.. index:: fixed-point fractional library, fractional types, Embedded C
+
 .. _fixed-point-fractional-library-routines:
-
-.. index:: fixed-point fractional library
-
-.. index:: fractional types
-
-.. index:: Embedded C
 
 Routines for fixed-point fractional emulation
 *********************************************
@@ -1434,4 +1430,3 @@ Conversion functions
 
   These functions convert from unsigned non-fractionals to fractionals,
   with saturation.
-

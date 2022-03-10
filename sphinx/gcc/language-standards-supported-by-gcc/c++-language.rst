@@ -69,4 +69,3 @@ select an extended version of the C++ language explicitly with
 
 The default, if
 no C++ language dialect options are given, is :option:`-std`:samp:`=gnu++17`.
-

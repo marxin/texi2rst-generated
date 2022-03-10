@@ -35,4 +35,3 @@ utility generates these extra root tables.
 
 You should understand the details of memory management inside GCC
 before using ``PLUGIN_GGC_MARKING`` or ``PLUGIN_REGISTER_GGC_ROOTS``.
-

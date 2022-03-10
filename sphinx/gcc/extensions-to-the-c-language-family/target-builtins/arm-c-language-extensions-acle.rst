@@ -28,4 +28,3 @@ intrinsics yet.
 
 See :ref:`arm-options` and :ref:`aarch64-options` for more information on the
 availability of extensions.
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COTAN, DCOTAN, trigonometric function, cotangent, cotangent
+
 .. _cotan:
-
-.. index:: COTAN
-
-.. index:: DCOTAN
-
-.. index:: trigonometric function, cotangent
-
-.. index:: cotangent
 
 COTAN --- Cotangent function
 ****************************
@@ -61,4 +55,3 @@ COTAN --- Cotangent function
     :ref:`TAN` 
     Degrees function: 
     :ref:`COTAND`
-

@@ -82,4 +82,3 @@ appropriate code to avoid causing failures on unsupported systems;
 unfortunately, the mechanisms for this differ by directory.
 
 FIXME: discuss non-C testsuites here.
-

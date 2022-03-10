@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: conditional execution, predication
+
 .. _conditional-execution:
-
-.. index:: conditional execution
-
-.. index:: predication
 
 Conditional Execution
 *********************
@@ -98,4 +96,3 @@ generates a new pattern
                      (match_operand:SI 2 "register_operand" "r"))))]
     "(test2) && (test1)"
     "(%3) add %2,%1,%0")
-

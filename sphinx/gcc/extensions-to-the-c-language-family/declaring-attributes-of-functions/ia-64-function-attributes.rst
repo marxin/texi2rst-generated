@@ -34,4 +34,3 @@ These function attributes are supported on IA-64 targets:
     extern int foo () __attribute__((version_id ("20040821")));
 
   Calls to ``foo`` are mapped to calls to ``foo{20040821}``.
-

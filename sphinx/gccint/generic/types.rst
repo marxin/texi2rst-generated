@@ -3,98 +3,14 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: type, pointer, reference, fundamental type, array
+
 .. _types:
-
-.. index:: type
-
-.. index:: pointer
-
-.. index:: reference
-
-.. index:: fundamental type
-
-.. index:: array
 
 Types
 *****
 
-.. index:: VOID_TYPE
-
-.. index:: INTEGER_TYPE
-
-.. index:: TYPE_MIN_VALUE
-
-.. index:: TYPE_MAX_VALUE
-
-.. index:: REAL_TYPE
-
-.. index:: FIXED_POINT_TYPE
-
-.. index:: COMPLEX_TYPE
-
-.. index:: ENUMERAL_TYPE
-
-.. index:: BOOLEAN_TYPE
-
-.. index:: POINTER_TYPE
-
-.. index:: REFERENCE_TYPE
-
-.. index:: FUNCTION_TYPE
-
-.. index:: METHOD_TYPE
-
-.. index:: ARRAY_TYPE
-
-.. index:: RECORD_TYPE
-
-.. index:: UNION_TYPE
-
-.. index:: OPAQUE_TYPE
-
-.. index:: UNKNOWN_TYPE
-
-.. index:: OFFSET_TYPE
-
-.. index:: TYPE_UNQUALIFIED
-
-.. index:: TYPE_QUAL_CONST
-
-.. index:: TYPE_QUAL_VOLATILE
-
-.. index:: TYPE_QUAL_RESTRICT
-
-.. index:: TYPE_MAIN_VARIANT
-
-.. index:: qualified type
-
-.. index:: TYPE_SIZE
-
-.. index:: TYPE_ALIGN
-
-.. index:: TYPE_PRECISION
-
-.. index:: TYPE_ARG_TYPES
-
-.. index:: TYPE_METHOD_BASETYPE
-
-.. index:: TYPE_OFFSET_BASETYPE
-
-.. index:: TREE_TYPE
-
-.. index:: TYPE_CONTEXT
-
-.. index:: TYPE_NAME
-
-.. index:: TYPENAME_TYPE_FULLNAME
-
-.. index:: TYPE_FIELDS
-
-.. index:: TYPE_CANONICAL
-
-.. index:: TYPE_STRUCTURAL_EQUALITY_P
-
-.. index:: SET_TYPE_STRUCTURAL_EQUALITY
+.. index:: VOID_TYPE, INTEGER_TYPE, TYPE_MIN_VALUE, TYPE_MAX_VALUE, REAL_TYPE, FIXED_POINT_TYPE, COMPLEX_TYPE, ENUMERAL_TYPE, BOOLEAN_TYPE, POINTER_TYPE, REFERENCE_TYPE, FUNCTION_TYPE, METHOD_TYPE, ARRAY_TYPE, RECORD_TYPE, UNION_TYPE, OPAQUE_TYPE, UNKNOWN_TYPE, OFFSET_TYPE, TYPE_UNQUALIFIED, TYPE_QUAL_CONST, TYPE_QUAL_VOLATILE, TYPE_QUAL_RESTRICT, TYPE_MAIN_VARIANT, qualified type, TYPE_SIZE, TYPE_ALIGN, TYPE_PRECISION, TYPE_ARG_TYPES, TYPE_METHOD_BASETYPE, TYPE_OFFSET_BASETYPE, TREE_TYPE, TYPE_CONTEXT, TYPE_NAME, TYPENAME_TYPE_FULLNAME, TYPE_FIELDS, TYPE_CANONICAL, TYPE_STRUCTURAL_EQUALITY_P, SET_TYPE_STRUCTURAL_EQUALITY
 
 All types have corresponding tree nodes.  However, you should not assume
 that there is exactly one tree node corresponding to each type.  There

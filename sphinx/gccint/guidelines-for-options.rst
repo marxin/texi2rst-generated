@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: command-line options, guidelines for, options, guidelines for, guidelines for options
+
 .. _guidelines-for-options:
-
-.. index:: command-line options, guidelines for
-
-.. index:: options, guidelines for
-
-.. index:: guidelines for options
 
 Guidelines for Options
 **********************

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IPARITY, array, parity, array, XOR, bits, XOR of array elements
+
 .. _iparity:
-
-.. index:: IPARITY
-
-.. index:: array, parity
-
-.. index:: array, XOR
-
-.. index:: bits, XOR of array elements
 
 IPARITY --- Bitwise XOR of array elements
 *****************************************
@@ -68,4 +62,3 @@ IPARITY --- Bitwise XOR of array elements
     :ref:`IALL`, 
     :ref:`IEOR`, 
     :ref:`PARITY`
-

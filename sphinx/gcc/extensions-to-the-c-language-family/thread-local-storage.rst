@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Thread-Local Storage, TLS, __thread
+
 .. _thread-local:
-
-.. index:: Thread-Local Storage
-
-.. index:: TLS
-
-.. index:: __thread
 
 Thread-Local Storage
 ********************
@@ -221,4 +217,3 @@ that document the exact semantics of the language extension.
   Add after paragraph 6
 
   Non- ``static`` members shall not be ``__thread``.
-

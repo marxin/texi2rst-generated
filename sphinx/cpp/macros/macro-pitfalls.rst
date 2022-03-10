@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: problems with macros, pitfalls of macros
+
 .. _macro-pitfalls:
-
-.. index:: problems with macros
-
-.. index:: pitfalls of macros
 
 Macro Pitfalls
 **************
@@ -55,9 +53,9 @@ The ability to piece together a macro call can be useful, but the use of
 unbalanced open parentheses in a macro body is just confusing, and
 should be avoided.
 
-.. _operator-precedence-problems:
-
 .. index:: parentheses in macro bodies
+
+.. _operator-precedence-problems:
 
 Operator Precedence Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,9 +122,9 @@ Here, then, is the recommended way to define ``ceil_div`` :
 
   #define ceil_div(x, y) (((x) + (y) - 1) / (y))
 
-.. _swallowing-the-semicolon:
-
 .. index:: semicolons (after macro calls)
+
+.. _swallowing-the-semicolon:
 
 Swallowing the Semicolon
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -189,11 +187,9 @@ Now ``SKIP_SPACES (p, lim);`` expands into
 which is one statement.  The loop executes exactly once; most compilers
 generate no extra code for it.
 
+.. index:: side effects (in macro arguments), unsafe macros
+
 .. _duplication-of-side-effects:
-
-.. index:: side effects (in macro arguments)
-
-.. index:: unsafe macros
 
 Duplication of Side Effects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -262,9 +258,9 @@ that variable in ``min`` :
 
 (where we assume that ``foo`` returns type ``int``).
 
-.. _self-referential-macros:
-
 .. index:: self-reference
+
+.. _self-referential-macros:
 
 Self-Referential Macros
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -333,13 +329,9 @@ then ``x`` and ``y`` expand as follows:
 Each macro is expanded when it appears in the definition of the other
 macro, but not when it indirectly appears in its own definition.
 
+.. index:: expansion of arguments, macro argument expansion, prescan of macro arguments
+
 .. _argument-prescan:
-
-.. index:: expansion of arguments
-
-.. index:: macro argument expansion
-
-.. index:: prescan of macro arguments
 
 Argument Prescan
 ^^^^^^^^^^^^^^^^
@@ -427,9 +419,9 @@ that the prescan does make a difference in three special cases:
   The extra pair of parentheses prevents the comma in ``foo`` 's
   definition from being interpreted as an argument separator.
 
-.. _newlines-in-arguments:
-
 .. index:: newlines in macro arguments
+
+.. _newlines-in-arguments:
 
 Newlines in Arguments
 ^^^^^^^^^^^^^^^^^^^^^
@@ -455,4 +447,3 @@ an error message citing line three---the line of ignore_second_arg---
 even though the problematic code comes from line five.
 
 We consider this a bug, and intend to fix it in the near future.
-

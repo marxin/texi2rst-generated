@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _mode-switching:
-
 .. index:: mode switching
+
+.. _mode-switching:
 
 Mode Switching Instructions
 ***************************
@@ -119,4 +119,3 @@ The following macros control mode switching optimizations:
   ``num_modes_for_mode_switching[entity] - 1``.
 
 .. hook-end
-

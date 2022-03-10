@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: STORAGE_SIZE, storage size
+
 .. _storage_size:
-
-.. index:: STORAGE_SIZE
-
-.. index:: storage size
 
 STORAGE_SIZE --- Storage size in bits
 *************************************
@@ -43,4 +41,3 @@ STORAGE_SIZE --- Storage size in bits
   :samp:`{See also}:`
     :ref:`C_SIZEOF`, 
     :ref:`SIZEOF`
-

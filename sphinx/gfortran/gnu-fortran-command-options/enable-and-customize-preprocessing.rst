@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: preprocessor, options, preprocessor, CPP, FPP, Conditional compilation, Preprocessing, preprocessor, include file handling
+
 .. _preprocessing-options:
-
-.. index:: preprocessor
-
-.. index:: options, preprocessor
-
-.. index:: CPP
-
-.. index:: FPP
-
-.. index:: Conditional compilation
-
-.. index:: Preprocessing
-
-.. index:: preprocessor, include file handling
 
 Enable and customize preprocessing
 **********************************
@@ -58,13 +46,7 @@ to preprocess such files (http://www.daniellnagle.com/coco.html).
 
 The following options control preprocessing of Fortran code:
 
-.. index:: cpp
-
-.. index:: fpp
-
-.. index:: preprocessor, enable
-
-.. index:: preprocessor, disable
+.. index:: cpp, fpp, preprocessor, enable, preprocessor, disable
 
 .. option:: -cpp, -nocpp
 
@@ -82,11 +64,7 @@ The following options control preprocessing of Fortran code:
   :option:`-ffree-line-length-none` or :option:`-ffixed-line-length-none`
   options.
 
-.. index:: dM
-
-.. index:: preprocessor, debugging
-
-.. index:: debugging, preprocessor
+.. index:: dM, preprocessor, debugging, debugging, preprocessor
 
 .. option:: -dM
 
@@ -102,11 +80,7 @@ The following options control preprocessing of Fortran code:
 
   will show all the predefined macros.
 
-.. index:: dD
-
-.. index:: preprocessor, debugging
-
-.. index:: debugging, preprocessor
+.. index:: dD, preprocessor, debugging, debugging, preprocessor
 
 .. option:: -dD
 
@@ -115,21 +89,13 @@ The following options control preprocessing of Fortran code:
   and the result of preprocessing. Both kinds of output go to the
   standard output file.
 
-.. index:: dN
-
-.. index:: preprocessor, debugging
-
-.. index:: debugging, preprocessor
+.. index:: dN, preprocessor, debugging, debugging, preprocessor
 
 .. option:: -dN
 
   Like :option:`-dD`, but emit only the macro names, not their expansions.
 
-.. index:: dU
-
-.. index:: preprocessor, debugging
-
-.. index:: debugging, preprocessor
+.. index:: dU, preprocessor, debugging, debugging, preprocessor
 
 .. option:: -dU
 
@@ -138,20 +104,14 @@ The following options control preprocessing of Fortran code:
   output is delayed until the use or test of the macro; and ``'#undef'``
   directives are also output for macros tested but undefined at the time.
 
-.. index:: dI
-
-.. index:: preprocessor, debugging
-
-.. index:: debugging, preprocessor
+.. index:: dI, preprocessor, debugging, debugging, preprocessor
 
 .. option:: -dI
 
   Output ``'#include'`` directives in addition to the result
   of preprocessing.
 
-.. index:: fworking-directory
-
-.. index:: preprocessor, working directory
+.. index:: fworking-directory, preprocessor, working directory
 
 .. option:: -fworking-directory
 
@@ -168,9 +128,7 @@ The following options control preprocessing of Fortran code:
   in the command line, this option has no effect, since no ``#line``
   directives are emitted whatsoever.
 
-.. index:: idirafter dir
-
-.. index:: preprocessing, include path
+.. index:: idirafter dir, preprocessing, include path
 
 .. option:: -idirafter {dir}
 
@@ -180,18 +138,14 @@ The following options control preprocessing of Fortran code:
   If dir begins with ``=``, then the ``=`` will be replaced by
   the sysroot prefix; see :option:`--sysroot` and :option:`-isysroot`.
 
-.. index:: imultilib dir
-
-.. index:: preprocessing, include path
+.. index:: imultilib dir, preprocessing, include path
 
 .. option:: -imultilib {dir}
 
   Use :samp:`{dir}` as a subdirectory of the directory containing target-specific
   C++ headers.
 
-.. index:: iprefix prefix
-
-.. index:: preprocessing, include path
+.. index:: iprefix prefix, preprocessing, include path
 
 .. option:: -iprefix {prefix}
 
@@ -199,18 +153,14 @@ The following options control preprocessing of Fortran code:
   options. If the :samp:`{prefix}` represents a directory, you should include
   the final ``'/'``.
 
-.. index:: isysroot dir
-
-.. index:: preprocessing, include path
+.. index:: isysroot dir, preprocessing, include path
 
 .. option:: -isysroot {dir}
 
   This option is like the :option:`--sysroot` option, but applies only to
   header files. See the :option:`--sysroot` option for more information.
 
-.. index:: iquote dir
-
-.. index:: preprocessing, include path
+.. index:: iquote dir, preprocessing, include path
 
 .. option:: -iquote {dir}
 
@@ -220,9 +170,7 @@ The following options control preprocessing of Fortran code:
   :samp:`{dir}` begins with ``=``, then the ``=`` will be replaced by the
   sysroot prefix; see :option:`--sysroot` and :option:`-isysroot`.
 
-.. index:: isystem dir
-
-.. index:: preprocessing, include path
+.. index:: isystem dir, preprocessing, include path
 
 .. option:: -isystem {dir}
 
@@ -248,9 +196,7 @@ The following options control preprocessing of Fortran code:
   Do not predefine any system-specific or GCC-specific macros.
   The standard predefined macros remain defined.
 
-.. index:: Apredicate=answer
-
-.. index:: preprocessing, assertion
+.. index:: Apredicate=answer, preprocessing, assertion
 
 .. option:: -Apredicate={answer}
 
@@ -258,17 +204,13 @@ The following options control preprocessing of Fortran code:
   This form is preferred to the older form -A predicate(answer), which is still
   supported, because it does not use shell special characters.
 
-.. index:: A-predicate=answer
-
-.. index:: preprocessing, assertion
+.. index:: A-predicate=answer, preprocessing, assertion
 
 .. option:: -A-predicate={answer}
 
   Cancel an assertion with the predicate :samp:`{predicate}` and answer :samp:`{answer}`.
 
-.. index:: C
-
-.. index:: preprocessing, keep comments
+.. index:: C, preprocessing, keep comments
 
 .. option:: -C
 
@@ -285,9 +227,7 @@ The following options control preprocessing of Fortran code:
   Warning: this currently handles C-Style comments only. The preprocessor
   does not yet recognize Fortran-style comments.
 
-.. index:: CC
-
-.. index:: preprocessing, keep comments
+.. index:: CC, preprocessing, keep comments
 
 .. option:: -CC
 
@@ -304,17 +244,13 @@ The following options control preprocessing of Fortran code:
   Warning: this currently handles C- and C++-Style comments only. The
   preprocessor does not yet recognize Fortran-style comments.
 
-.. index:: Dname
-
-.. index:: preprocessing, define macros
+.. index:: Dname, preprocessing, define macros
 
 .. option:: -Dname
 
   Predefine name as a macro, with definition ``1``.
 
-.. index:: Dname=definition
-
-.. index:: preprocessing, define macros
+.. index:: Dname=definition, preprocessing, define macros
 
 .. option:: -Dname={definition}
 
@@ -345,9 +281,7 @@ The following options control preprocessing of Fortran code:
   activities. Each name is indented to show how deep in the ``'#include'``
   stack it is.
 
-.. index:: P
-
-.. index:: preprocessing, no linemarkers
+.. index:: P, preprocessing, no linemarkers
 
 .. option:: -P
 
@@ -356,12 +290,9 @@ The following options control preprocessing of Fortran code:
   is not C code, and will be sent to a program which might be confused
   by the linemarkers.
 
-.. index:: Uname
-
-.. index:: preprocessing, undefine macros
+.. index:: Uname, preprocessing, undefine macros
 
 .. option:: -Uname
 
   Cancel any previous definition of :samp:`{name}`, either built in or provided
   with a :option:`-D` option.
-

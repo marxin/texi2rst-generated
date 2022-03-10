@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: instrumentation options, program instrumentation options, run-time error checking options, profiling options, options, program instrumentation, options, run-time error checking, options, profiling
+
 .. _instrumentation-options:
-
-.. index:: instrumentation options
-
-.. index:: program instrumentation options
-
-.. index:: run-time error checking options
-
-.. index:: profiling options
-
-.. index:: options, program instrumentation
-
-.. index:: options, run-time error checking
-
-.. index:: options, profiling
 
 Program Instrumentation Options
 *******************************
@@ -35,9 +23,7 @@ There is also a general hook which can be used to implement other
 forms of tracing or function-level instrumentation for debug or
 program analysis purposes.
 
-.. index:: prof
-
-.. index:: gprof
+.. index:: prof, gprof
 
 .. option:: -p, -pg
 
@@ -1073,4 +1059,3 @@ program analysis purposes.
   :samp:`{M}` ---the function entry address, even before the prologue.
 
   The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.
-

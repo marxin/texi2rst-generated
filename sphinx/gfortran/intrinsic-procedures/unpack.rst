@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: UNPACK, array, unpacking, array, increase dimension, array, scatter elements
+
 .. _unpack:
-
-.. index:: UNPACK
-
-.. index:: array, unpacking
-
-.. index:: array, increase dimension
-
-.. index:: array, scatter elements
 
 UNPACK --- Unpack an array of rank one into an array
 ****************************************************
@@ -63,4 +57,3 @@ UNPACK --- Unpack an array of rank one into an array
   :samp:`{See also}:`
     :ref:`PACK`, 
     :ref:`SPREAD`
-

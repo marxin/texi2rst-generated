@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: developer options, debugging GCC, debug dump options, dump options, compilation statistics
+
 .. _developer-options:
-
-.. index:: developer options
-
-.. index:: debugging GCC
-
-.. index:: debug dump options
-
-.. index:: dump options
-
-.. index:: compilation statistics
 
 GCC Developer Options
 *********************
@@ -1153,4 +1145,3 @@ The files are created in the directory of the output file.
 
   Print the compiler's built-in specs---and don't do anything else.  (This
   is used when GCC itself is being built.)  See :ref:`spec-files`.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _comparisons:
-
 .. index:: RTL comparison operations
+
+.. _comparisons:
 
 Comparison Operations
 *********************
@@ -50,68 +50,40 @@ unsigned greater-than, because -1 when regarded as unsigned is actually
 The signed comparisons are also used for floating point values.  Floating
 point comparisons are distinguished by the machine modes of the operands.
 
-.. index:: eq
-
-.. index:: equal
+.. index:: eq, equal
 
 :samp:`(eq:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the values represented by :samp:`{x}` and :samp:`{y}`
   are equal, otherwise 0.
 
-  .. index:: ne
-
-  .. index:: not equal
+  .. index:: ne, not equal
 
 :samp:`(ne:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the values represented by :samp:`{x}` and :samp:`{y}`
   are not equal, otherwise 0.
 
-  .. index:: gt
-
-  .. index:: greater than
+  .. index:: gt, greater than
 
 :samp:`(gt:{m} {x} {y})`
   ``STORE_FLAG_VALUE`` if the :samp:`{x}` is greater than :samp:`{y}`.  If they
   are fixed-point, the comparison is done in a signed sense.
 
-  .. index:: gtu
-
-  .. index:: greater than
-
-  .. index:: unsigned greater than
+  .. index:: gtu, greater than, unsigned greater than
 
 :samp:`(gtu:{m} {x} {y})`
   Like ``gt`` but does unsigned comparison, on fixed-point numbers only.
 
-  .. index:: lt
-
-  .. index:: less than
-
-  .. index:: ltu
-
-  .. index:: unsigned less than
+  .. index:: lt, less than, ltu, unsigned less than
 
 :samp:`(lt:{m} {x} {y})` :samp:`(ltu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'less than'.
 
-  .. index:: ge
-
-  .. index:: greater than
-
-  .. index:: geu
-
-  .. index:: unsigned greater than
+  .. index:: ge, greater than, geu, unsigned greater than
 
 :samp:`(ge:{m} {x} {y})` :samp:`(geu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'greater than or equal'.
 
-  .. index:: le
-
-  .. index:: less than or equal
-
-  .. index:: leu
-
-  .. index:: unsigned less than
+  .. index:: le, less than or equal, leu, unsigned less than
 
 :samp:`(le:{m} {x} {y})` :samp:`(leu:{m} {x} {y})`
   Like ``gt`` and ``gtu`` but test for 'less than or equal'.
@@ -138,4 +110,3 @@ point comparisons are distinguished by the machine modes of the operands.
 
   This is currently not valid for instruction patterns and is supported only
   for insn attributes.  See :ref:`insn-attributes`.
-

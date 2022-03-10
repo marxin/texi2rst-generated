@@ -5,9 +5,9 @@
 
 .. program:: MIPS
 
-.. _mips-options:
-
 .. index:: MIPS options
+
+.. _mips-options:
 
 MIPS Options
 ^^^^^^^^^^^^
@@ -981,4 +981,3 @@ MIPS Options
 
   When applicable, enable (disable) the generation of 4-operand ``madd.s``,
   ``madd.d`` and related instructions.  Enabled by default.
-

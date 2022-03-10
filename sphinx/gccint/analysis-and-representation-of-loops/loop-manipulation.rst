@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _loop-manipulation:
-
 .. index:: Loop manipulation
+
+.. _loop-manipulation:
 
 Loop manipulation
 *****************
@@ -56,4 +56,3 @@ are only reliable for the innermost loops:
   extra iterations to make the number of iterations divisible by unroll
   factor, updating the exit condition, and removing the exits that now
   cannot be taken.  Works only on GIMPLE.
-

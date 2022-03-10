@@ -5,9 +5,9 @@
 
 .. program:: M680x0
 
-.. _m680x0-options:
-
 .. index:: M680x0 options
+
+.. _m680x0-options:
 
 M680x0 Options
 ^^^^^^^^^^^^^^
@@ -380,4 +380,3 @@ are given below.
 
   Use 32-bit offsets in ``switch`` tables.  The default is to use
   16-bit offsets.
-

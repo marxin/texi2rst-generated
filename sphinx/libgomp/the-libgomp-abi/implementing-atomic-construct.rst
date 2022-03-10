@@ -19,4 +19,3 @@ Failing that we could add
 
 which reuses the regular lock code, but with yet another lock
 object private to the library.
-

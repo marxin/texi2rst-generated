@@ -32,4 +32,3 @@ omp_get_thread_num -- Current thread ID
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.4.
-

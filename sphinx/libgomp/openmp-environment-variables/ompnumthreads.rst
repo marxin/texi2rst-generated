@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _omp_num_threads:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 OMP_NUM_THREADS -- Specifies the number of threads to use
 *********************************************************
@@ -24,4 +22,3 @@ OMP_NUM_THREADS -- Specifies the number of threads to use
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.2
-

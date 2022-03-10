@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IPA passes, inter-procedural optimization passes
+
 .. _ipa-passes:
-
-.. index:: IPA passes
-
-.. index:: inter-procedural optimization passes
 
 Inter-procedural optimization passes
 ************************************
@@ -28,9 +26,9 @@ and late IPA passes, according to the LTO/WHOPR processing model.
   :maxdepth: 2
 
 
-.. _small-ipa-passes:
-
 .. index:: small IPA passes
+
+.. _small-ipa-passes:
 
 Small IPA passes
 ^^^^^^^^^^^^^^^^
@@ -126,9 +124,9 @@ hooks are defined.
   It is located in :samp:`tree-emutls.cc` and is described by
   ``pass_ipa_lower_emutls``.
 
-.. _regular-ipa-passes:
-
 .. index:: regular IPA passes
+
+.. _regular-ipa-passes:
 
 Regular IPA passes
 ^^^^^^^^^^^^^^^^^^
@@ -241,9 +239,9 @@ hooks implemented in any of the LGEN, WPA or LTRANS stages (see :ref:`ipa`).
   located in :samp:`ipa-comdats.cc` and is described by
   ``pass_ipa_comdats``.
 
-.. _late-ipa-passes:
-
 .. index:: late IPA passes
+
+.. _late-ipa-passes:
 
 Late IPA passes
 ^^^^^^^^^^^^^^^
@@ -269,4 +267,3 @@ partitioning and thus see just parts of the compiled unit.
   SIMD clones for functions tagged as elemental SIMD functions.
   It is located in :samp:`omp-simd-clone.cc` and is described by
   ``pass_omp_simd_clone``.
-

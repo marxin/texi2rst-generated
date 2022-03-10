@@ -86,4 +86,3 @@ PAL calls, but when invoked with :option:`-mtls-kernel`, they invoke
 
   void *__builtin_thread_pointer (void);
   void __builtin_set_thread_pointer (void *);
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: calling functions in RTL, RTL function-call insns, function-call insns
+
 .. _calls:
-
-.. index:: calling functions in RTL
-
-.. index:: RTL function-call insns
-
-.. index:: function-call insns
 
 RTL Representation of Function-Call Insns
 *****************************************
@@ -74,4 +70,3 @@ function.  Similarly, if registers other than those in
 ``CALL_USED_REGISTERS`` are clobbered by the called function, insns
 containing a single ``clobber`` follow immediately after the call to
 indicate which registers.
-

@@ -250,4 +250,3 @@ being output.
   which will pop hard register number :samp:`{regno}` off of the stack.
   The code need not be optimal, since this macro is used only when
   profiling.
-

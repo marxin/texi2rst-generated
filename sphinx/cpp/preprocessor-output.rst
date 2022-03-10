@@ -84,4 +84,3 @@ will be no space between the :samp:`#` and the directive name.  If macro
 expansion happens to generate tokens which might be mistaken for a
 duplicated directive, a space will be inserted between the :samp:`#` and
 the directive name.
-

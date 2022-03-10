@@ -19,4 +19,3 @@ must live across calls.
   :samp:`{regno}` is unsuitable for caller save, ``VOIDmode`` should be
   returned.  For most machines this macro need not be defined since GCC
   will select the smallest suitable mode.
-

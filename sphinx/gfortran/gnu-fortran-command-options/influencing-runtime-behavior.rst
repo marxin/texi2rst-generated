@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _runtime-options:
-
 .. index:: options, runtime
+
+.. _runtime-options:
 
 Influencing runtime behavior
 ****************************
@@ -55,4 +55,3 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   print the negative sign of zero values (or values rounded to zero for I/O)
   and regards zero as positive number in the ``SIGN`` intrinsic for
   compatibility with Fortran 77. The default is :option:`-fsign-zero`.
-

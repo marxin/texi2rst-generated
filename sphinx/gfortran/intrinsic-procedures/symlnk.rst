@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SYMLNK, file system, create link, file system, soft link
+
 .. _symlnk:
-
-.. index:: SYMLNK
-
-.. index:: file system, create link
-
-.. index:: file system, soft link
 
 SYMLNK --- Create a symbolic link
 *********************************
@@ -49,4 +45,3 @@ SYMLNK --- Create a symbolic link
   :samp:`{See also}:`
     :ref:`LINK`, 
     :ref:`UNLINK`
-

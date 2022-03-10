@@ -18,4 +18,3 @@ Translation
   phase 3 (C90, C99 and C11 5.1.1.2).
 
   See :ref:`cpp:implementation-defined-behavior`.
-

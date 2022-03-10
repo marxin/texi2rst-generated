@@ -10,9 +10,7 @@ C-SKY Function Attributes
 
 These function attributes are supported by the C-SKY back end:
 
-.. index:: interrupt function attribute, C-SKY
-
-.. index:: isr function attribute, C-SKY
+.. index:: interrupt function attribute, C-SKY, isr function attribute, C-SKY
 
 .. gcc-attr:: interrupt, isr
 
@@ -37,4 +35,3 @@ These function attributes are supported by the C-SKY back end:
   (see :ref:`basic-asm`). While using extended ``asm`` or a mixture of
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
-

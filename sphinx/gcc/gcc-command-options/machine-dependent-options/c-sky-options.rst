@@ -5,9 +5,9 @@
 
 .. program:: C-SKY
 
-.. _c-sky-options:
-
 .. index:: C-SKY Options
+
+.. _c-sky-options:
 
 C-SKY Options
 ^^^^^^^^^^^^^
@@ -191,4 +191,3 @@ GCC supports these options when compiling for C-SKY V2 processors.
 
   Links the library libsemi.a which is in compatible with simulator. Applicable
   to ELF compiler only.
-

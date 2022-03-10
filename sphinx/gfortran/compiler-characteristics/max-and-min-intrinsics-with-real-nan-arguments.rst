@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _max-and-min-intrinsics-with-real-nan-arguments:
-
 .. index:: MAX, MIN, NaN
+
+.. _max-and-min-intrinsics-with-real-nan-arguments:
 
 MAX and MIN intrinsics with REAL NaN arguments
 **********************************************
@@ -19,4 +19,3 @@ case one of the arguments is a ``NaN``, it is necessary to
 explicitly test the arguments before calling ``MAX`` or ``MIN``,
 e.g. with the ``IEEE_IS_NAN`` function from the intrinsic module
 ``IEEE_ARITHMETIC``.
-

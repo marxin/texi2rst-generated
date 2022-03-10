@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: extern, external names
+
 .. _function-names:
-
-.. index:: extern
-
-.. index:: external names
 
 Function Names
 **************
@@ -61,4 +59,3 @@ call the function from C you must set the name using the :command:`gcc`
 .. code-block:: c++
 
   extern int go_function(int) __asm__ ("mypkgpath.Function");
-

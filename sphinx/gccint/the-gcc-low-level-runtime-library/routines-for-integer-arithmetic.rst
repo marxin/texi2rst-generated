@@ -181,4 +181,3 @@ Bit operations
               int64_t __bswapdi2 (int64_t a)
 
   These functions return the :samp:`{a}` byteswapped.
-

@@ -22,4 +22,3 @@ processors.
   void __builtin_aarch64_set_fpcr64 (unsigned long long);
   unsigned long long __builtin_aarch64_get_fpsr64 ();
   void __builtin_aarch64_set_fpsr64 (unsigned long long);
-

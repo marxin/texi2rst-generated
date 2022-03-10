@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _d-language-and-abi:
-
 .. index:: parameters, d abi
+
+.. _d-language-and-abi:
 
 D ABI parameters
 ****************
@@ -105,4 +105,3 @@ D ABI parameters
   decls will be emitted as weak symbols.  The default is ``false``.
 
 .. hook-end
-

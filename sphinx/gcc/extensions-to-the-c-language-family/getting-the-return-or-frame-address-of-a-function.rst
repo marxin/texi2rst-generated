@@ -95,4 +95,3 @@ function.
   that are considered unsafe are diagnosed when the :option:`-Wframe-address`
   option is in effect.  Such calls should only be made in debugging
   situations.
-

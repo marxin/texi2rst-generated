@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: costs of instructions, relative costs, speed of instructions
+
 .. _costs:
-
-.. index:: costs of instructions
-
-.. index:: relative costs
-
-.. index:: speed of instructions
 
 Describing Relative Costs of Operations
 ***************************************
@@ -530,4 +526,3 @@ ordinarily expect.
   implementation returns the lowest possible value of :samp:`{val}`.
 
 .. hook-end
-

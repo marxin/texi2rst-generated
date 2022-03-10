@@ -31,4 +31,3 @@ omp_set_num_threads -- Set upper team size limit
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.1.
-

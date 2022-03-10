@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SIGN, ISIGN, DSIGN, sign copying
+
 .. _sign:
-
-.. index:: SIGN
-
-.. index:: ISIGN
-
-.. index:: DSIGN
-
-.. index:: sign copying
 
 SIGN --- Sign copying function
 ******************************
@@ -65,4 +59,3 @@ SIGN --- Sign copying function
     ``ISIGN(A,B)``  ``INTEGER(4) A, B``  ``INTEGER(4)``  Fortran 77 and later
     ``DSIGN(A,B)``  ``REAL(8) A, B``     ``REAL(8)``     Fortran 77 and later
     ==============  ===================  ==============  ====================
-

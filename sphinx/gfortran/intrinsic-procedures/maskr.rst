@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MASKR, mask, right justified
+
 .. _maskr:
-
-.. index:: MASKR
-
-.. index:: mask, right justified
 
 MASKR --- Right justified mask
 ******************************
@@ -43,4 +41,3 @@ MASKR --- Right justified mask
 
   :samp:`{See also}:`
     :ref:`MASKL`
-

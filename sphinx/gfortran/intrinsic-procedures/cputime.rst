@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: CPU_TIME, time, elapsed
+
 .. _cpu_time:
-
-.. index:: CPU_TIME
-
-.. index:: time, elapsed
 
 CPU_TIME --- CPU elapsed time in seconds
 ****************************************
@@ -51,4 +49,3 @@ CPU_TIME --- CPU elapsed time in seconds
   :samp:`{See also}:`
     :ref:`SYSTEM_CLOCK`, 
     :ref:`DATE_AND_TIME`
-

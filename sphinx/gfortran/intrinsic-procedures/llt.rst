@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LLT, lexical comparison of strings, string, comparison
+
 .. _llt:
-
-.. index:: LLT
-
-.. index:: lexical comparison of strings
-
-.. index:: string, comparison
 
 LLT --- Lexical less than
 *************************
@@ -55,4 +51,3 @@ LLT --- Lexical less than
     :ref:`LGE`, 
     :ref:`LGT`, 
     :ref:`LLE`
-

@@ -41,4 +41,3 @@ have been implemented in :command:`gfortran` for backwards compatibility
 with :command:`g77`.  It is noted here that these functions and subroutines
 cannot be intermixed in a given subprogram.  In the descriptions that follow,
 the applicable standard for each intrinsic procedure is noted.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FTELL, file operation, position
+
 .. _ftell:
-
-.. index:: FTELL
-
-.. index:: file operation, position
 
 FTELL --- Current stream position
 *********************************
@@ -52,4 +50,3 @@ FTELL --- Current stream position
 
   :samp:`{See also}:`
     :ref:`FSEEK`
-

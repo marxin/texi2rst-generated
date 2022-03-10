@@ -679,4 +679,3 @@ profiling code first attempts to read in an existing :samp:`.gcda` file; if
 the file doesn't match the executable (differing number of basic block
 counts) it will ignore the contents of the file.  It then adds in the
 new execution counts and finally writes the data to the file.
-

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _gimple-api:
-
 .. index:: GIMPLE API
+
+.. _gimple-api:
 
 GIMPLE API
 **********
@@ -45,4 +45,3 @@ which is supposed to replace ``force_gimple_operand (fold_buildN (...), ...)``
 and calls to ``fold_convert``.  Overloads without the ``location_t``
 argument exist.  Built statements are inserted on the provided sequence
 and simplification is performed using the optional valueization hook.
-

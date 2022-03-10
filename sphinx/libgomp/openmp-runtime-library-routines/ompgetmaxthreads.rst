@@ -29,4 +29,3 @@ omp_get_max_threads -- Maximum number of threads of parallel region
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.3.
-

@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: EXP, DEXP, CEXP, ZEXP, CDEXP, exponential function, logarithm function, inverse
+
 .. _exp:
-
-.. index:: EXP
-
-.. index:: DEXP
-
-.. index:: CEXP
-
-.. index:: ZEXP
-
-.. index:: CDEXP
-
-.. index:: exponential function
-
-.. index:: logarithm function, inverse
 
 EXP --- Exponential function 
 *****************************
@@ -64,4 +52,3 @@ EXP --- Exponential function
     ``ZEXP(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     ``CDEXP(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     ============  ================  ==============  ====================
-

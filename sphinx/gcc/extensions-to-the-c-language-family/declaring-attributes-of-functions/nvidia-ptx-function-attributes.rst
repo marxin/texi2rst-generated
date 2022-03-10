@@ -20,4 +20,3 @@ These function attributes are supported by the Nvidia PTX back end:
   By default functions are only callable only from other PTX functions.
 
   Kernel functions must have ``void`` return type.
-

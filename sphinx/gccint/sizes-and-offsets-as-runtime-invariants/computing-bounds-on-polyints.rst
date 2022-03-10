@@ -32,4 +32,3 @@ Computing bounds on poly_ints
   Return a value that is always greater than or equal to both :samp:`{a}` and
   :samp:`{b}`.  It will be the least such value for some indeterminate values
   but necessarily for all.
-

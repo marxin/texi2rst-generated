@@ -28,9 +28,7 @@ a polynomial with two coefficients (and thus one indeterminate), with each
 coefficient having type ``unsigned short``.  When :samp:`{n}` is 0,
 the class degenerates to a single compile-time constant :samp:`{c0}`.
 
-.. index:: poly_int, template parameters
-
-.. index:: NUM_POLY_INT_COEFFS
+.. index:: poly_int, template parameters, NUM_POLY_INT_COEFFS
 
 The number of coefficients needed for compilation is a fixed
 property of each target and is specified by the configuration macro
@@ -78,4 +76,3 @@ most common forms of ``poly_int``, all having
 
   Since the main purpose of ``poly_int`` is to represent sizes and
   offsets, the last two typedefs are only rarely used.
-

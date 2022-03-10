@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MINVAL, array, minimum value, minimum value
+
 .. _minval:
-
-.. index:: MINVAL
-
-.. index:: array, minimum value
-
-.. index:: minimum value
 
 MINVAL --- Minimum value of an array
 ************************************
@@ -61,4 +57,3 @@ MINVAL --- Minimum value of an array
   :samp:`{See also}:`
     :ref:`MIN`, 
     :ref:`MINLOC`
-

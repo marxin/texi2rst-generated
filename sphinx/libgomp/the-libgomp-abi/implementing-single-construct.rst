@@ -46,4 +46,3 @@ becomes
     else
       x = datap->x;
     GOMP_barrier ();
-

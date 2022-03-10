@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _standards:
-
 .. index:: Standards
+
+.. _standards:
 
 Standards
 *********
@@ -39,13 +39,9 @@ There also is support for the OpenACC specification (targeting
 version 2.6, https://www.openacc.org/).  See
 https://gcc.gnu.org/wiki/OpenACC for more information.
 
+.. index:: Varying length strings, strings, varying length, conditional compilation
+
 .. _fortran-95-status:
-
-.. index:: Varying length strings
-
-.. index:: strings, varying length
-
-.. index:: conditional compilation
 
 Fortran 95 status
 ^^^^^^^^^^^^^^^^^

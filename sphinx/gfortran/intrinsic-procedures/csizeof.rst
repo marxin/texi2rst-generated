@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: C_SIZEOF, expression size, size of an expression
+
 .. _c_sizeof:
-
-.. index:: C_SIZEOF
-
-.. index:: expression size
-
-.. index:: size of an expression
 
 C_SIZEOF --- Size in bytes of an expression
 *******************************************
@@ -59,4 +55,3 @@ C_SIZEOF --- Size in bytes of an expression
   :samp:`{See also}:`
     :ref:`SIZEOF`, 
     :ref:`STORAGE_SIZE`
-

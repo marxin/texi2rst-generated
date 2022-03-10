@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: directory options, options, directory search, search path
+
 .. _directory-options:
-
-.. index:: directory options
-
-.. index:: options, directory search
-
-.. index:: search path
 
 Options for Directory Search
 ****************************
@@ -94,4 +90,3 @@ other parts of the compiler:
   Do not search the standard system directories for D source and interface
   files.  Only the directories that have been specified with :option:`-I` options
   (and the directory of the current file, if appropriate) are searched.
-

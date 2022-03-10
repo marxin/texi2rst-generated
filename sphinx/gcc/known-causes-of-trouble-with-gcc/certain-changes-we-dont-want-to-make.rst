@@ -60,9 +60,7 @@ we do not make because we think GCC is better without them.
   declared plain ``int`` is signed or not.  This in effect creates two
   alternative dialects of C.
 
-  .. index:: fsigned-bitfields
-
-  .. index:: funsigned-bitfields
+  .. index:: fsigned-bitfields, funsigned-bitfields
 
   The GNU C compiler supports both dialects; you can specify the signed
   dialect with :option:`-fsigned-bitfields` and the unsigned dialect with
@@ -113,9 +111,7 @@ we do not make because we think GCC is better without them.
   they write programs which have the same meaning in both C dialects.)
 
 * 
-  .. index:: ansi
-
-  .. index:: std
+  .. index:: ansi, std
 
   Undefining ``__STDC__`` when :option:`-ansi` is not used.
 
@@ -207,9 +203,7 @@ we do not make because we think GCC is better without them.
 
 * Making side effects happen in the same order as in some other compiler.
 
-  .. index:: side effects, order of evaluation
-
-  .. index:: order of evaluation, side effects
+  .. index:: side effects, order of evaluation, order of evaluation, side effects
 
   It is never safe to depend on the order of evaluation of side effects.
   For example, a function call like this may very well behave differently
@@ -240,4 +234,3 @@ we do not make because we think GCC is better without them.
   If testsuites call this 'failure', they should be run with the GCC
   option :option:`-pedantic-errors`, which will turn these warnings into
   errors.
-

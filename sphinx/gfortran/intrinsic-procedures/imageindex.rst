@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IMAGE_INDEX, coarray, IMAGE_INDEX, images, cosubscript to image index conversion
+
 .. _image_index:
-
-.. index:: IMAGE_INDEX
-
-.. index:: coarray, IMAGE_INDEX
-
-.. index:: images, cosubscript to image index conversion
 
 IMAGE_INDEX --- Function that converts a cosubscript to an image index
 **********************************************************************
@@ -52,4 +48,3 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
   :samp:`{See also}:`
     :ref:`THIS_IMAGE`, 
     :ref:`NUM_IMAGES`
-

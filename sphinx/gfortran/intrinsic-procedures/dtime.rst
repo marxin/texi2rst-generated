@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DTIME, time, elapsed, elapsed time
+
 .. _dtime:
-
-.. index:: DTIME
-
-.. index:: time, elapsed
-
-.. index:: elapsed time
 
 DTIME --- Execution time subroutine (or function)
 *************************************************
@@ -68,4 +64,3 @@ DTIME --- Execution time subroutine (or function)
 
   :samp:`{See also}:`
     :ref:`CPU_TIME`
-

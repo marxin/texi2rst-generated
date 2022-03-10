@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: input/output, asynchronous, asynchronous I/O
+
 .. _asynchronous-i-o:
-
-.. index:: input/output, asynchronous
-
-.. index:: asynchronous I/O
 
 Asynchronous I/O
 ****************

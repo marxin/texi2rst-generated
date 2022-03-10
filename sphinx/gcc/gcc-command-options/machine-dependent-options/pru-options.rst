@@ -5,9 +5,9 @@
 
 .. program:: PRU
 
-.. _pru-options:
-
 .. index:: PRU Options
+
+.. _pru-options:
 
 PRU Options
 ^^^^^^^^^^^
@@ -61,4 +61,3 @@ These command-line options are defined for PRU target:
   :option:`-mabi`:samp:`=ti`.  The TI toolchain does not emit relocations for QBBx
   instructions, so the GNU linker cannot adjust them when shortening adjacent
   LDI32 pseudo instructions.
-

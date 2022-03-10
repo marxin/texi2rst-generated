@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LCSSA, Loop-closed SSA form
+
 .. _lcssa:
-
-.. index:: LCSSA
-
-.. index:: Loop-closed SSA form
 
 Loop-closed SSA form
 ********************
@@ -47,4 +45,3 @@ provided to make these manipulations simple).
 ``rewrite_into_loop_closed_ssa`` is used to rewrite SSA form to
 LCSSA, and ``verify_loop_closed_ssa`` to check that the invariant of
 LCSSA is preserved.
-

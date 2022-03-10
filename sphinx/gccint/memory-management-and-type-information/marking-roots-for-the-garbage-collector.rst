@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: roots, marking, marking roots
+
 .. _ggc-roots:
-
-.. index:: roots, marking
-
-.. index:: marking roots
 
 Marking Roots for the Garbage Collector
 ***************************************
@@ -28,4 +26,3 @@ is *not* accepted.  There should be an ``extern`` declaration
 of such a variable in a header somewhere---mark that, not the
 definition.  Or, if the variable is only used in one file, make it
 ``static``.
-

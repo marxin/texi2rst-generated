@@ -48,4 +48,3 @@ families of processors:
 
   Sets the :samp:`FPSCR` register to the specified value :samp:`{val}`, while
   preserving the current values of the FR, SZ and PR bits.
-

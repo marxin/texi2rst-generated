@@ -25,4 +25,3 @@ variable analysis and number of iterations analysis).
   analysis-and-representation-of-loops/iv-analysis-on-rtl
   analysis-and-representation-of-loops/number-of-iterations-analysis
   analysis-and-representation-of-loops/data-dependency-analysis
-

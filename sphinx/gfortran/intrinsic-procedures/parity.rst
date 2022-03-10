@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: PARITY, Parity, Reduction, XOR, XOR reduction
+
 .. _parity:
-
-.. index:: PARITY
-
-.. index:: Parity
-
-.. index:: Reduction, XOR
-
-.. index:: XOR reduction
 
 PARITY --- Reduction with exclusive OR
 **************************************
@@ -52,4 +46,3 @@ PARITY --- Reduction with exclusive OR
         LOGICAL :: x(2) = [ .true., .false. ]
         print *, PARITY(x) ! prints "T" (true).
       END PROGRAM
-

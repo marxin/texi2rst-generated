@@ -3,15 +3,12 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: host makefile fragment, x-host
+
 .. _host-fragment:
-
-.. index:: host makefile fragment
-
-.. index:: x-host
 
 Host Makefile Fragments
 ***********************
 
 The use of :samp:`x-{host}` fragments is discouraged.  You should only
 use it for makefile dependencies.
-

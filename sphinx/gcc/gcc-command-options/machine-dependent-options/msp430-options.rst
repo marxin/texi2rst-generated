@@ -5,9 +5,9 @@
 
 .. program:: MSP430
 
-.. _msp430-options:
-
 .. index:: MSP430 Options
+
+.. _msp430-options:
 
 MSP430 Options
 ^^^^^^^^^^^^^^
@@ -187,4 +187,3 @@ These options are defined for the MSP430:
 
   Warn if :samp:`devices.csv` is not found or there are problem parsing it
   (default: on).
-

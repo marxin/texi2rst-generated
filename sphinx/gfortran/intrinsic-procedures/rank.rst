@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RANK, rank
+
 .. _rank:
-
-.. index:: RANK
-
-.. index:: rank
 
 RANK --- Rank of a data object
 ******************************
@@ -45,4 +43,3 @@ RANK --- Rank of a data object
 
         print *, rank(a), rank(b) ! Prints:  0  2
       end program test_rank
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _gomp_rtems_thread_pools:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
 **************************************************************

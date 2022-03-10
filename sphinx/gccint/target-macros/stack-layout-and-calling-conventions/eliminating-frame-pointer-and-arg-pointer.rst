@@ -100,4 +100,3 @@ This is about eliminating the frame pointer and arg pointer.
   this callback is optional.
 
 .. hook-end
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: support for nested functions, trampolines for nested functions, descriptors for nested functions, nested functions, support for
+
 .. _trampolines:
-
-.. index:: support for nested functions
-
-.. index:: trampolines for nested functions
-
-.. index:: descriptors for nested functions
-
-.. index:: nested functions, support for
 
 Support for Nested Functions
 ****************************
@@ -226,4 +220,3 @@ its cache line.  Look in :samp:`m68k.h` as a guide.
   statement to generate an assembler label, and another to make the label
   global.  Then trampolines can use that label to jump directly to your
   special assembler code.
-

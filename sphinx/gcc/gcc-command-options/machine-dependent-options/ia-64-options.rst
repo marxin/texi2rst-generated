@@ -5,9 +5,9 @@
 
 .. program:: IA-64
 
-.. _ia-64-options:
-
 .. index:: IA-64 Options
+
+.. _ia-64-options:
 
 IA-64 Options
 ^^^^^^^^^^^^^
@@ -259,4 +259,3 @@ These are the :samp:`-m` options defined for the Intel IA-64 architecture.
   Otherwise, the limit is 'soft', meaning that non-memory operations
   are preferred when the limit is reached, but memory operations may still
   be scheduled.
-

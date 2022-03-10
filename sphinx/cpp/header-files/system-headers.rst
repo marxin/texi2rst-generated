@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _system-headers:
-
 .. index:: system header files
+
+.. _system-headers:
 
 System Headers
 **************
@@ -39,4 +39,3 @@ There are, however, two ways to make normal headers into system headers:
 
 On some targets, such as RS/6000 AIX, GCC implicitly surrounds all
 system headers with an :samp:`extern "C"` block when compiling as C++.
-

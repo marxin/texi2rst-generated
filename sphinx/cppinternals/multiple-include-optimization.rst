@@ -1,11 +1,7 @@
 The Multiple-Include Optimization
 =================================
 
-.. index:: guard macros
-
-.. index:: controlling macros
-
-.. index:: multiple-include optimization
+.. index:: guard macros, controlling macros, multiple-include optimization
 
 Header files are often of the form
 

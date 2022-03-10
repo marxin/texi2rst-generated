@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SUM, array, sum, array, add elements, array, conditionally add elements, sum array elements
+
 .. _sum:
-
-.. index:: SUM
-
-.. index:: array, sum
-
-.. index:: array, add elements
-
-.. index:: array, conditionally add elements
-
-.. index:: sum array elements
 
 SUM --- Sum of array elements
 *****************************
@@ -64,4 +56,3 @@ SUM --- Sum of array elements
 
   :samp:`{See also}:`
     :ref:`PRODUCT`
-

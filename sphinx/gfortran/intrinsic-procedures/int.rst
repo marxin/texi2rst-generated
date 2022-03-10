@@ -8,13 +8,7 @@
 INT --- Convert to integer type
 *******************************
 
-.. index:: INT
-
-.. index:: IFIX
-
-.. index:: IDINT
-
-.. index:: conversion, to integer
+.. index:: INT, IFIX, IDINT, conversion, to integer
 
 .. function:: INT(A, KIND)
 
@@ -63,4 +57,3 @@ INT --- Convert to integer type
     ``IFIX(A)``   ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
     ``IDINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later
     ============  =============  ===========  ====================
-

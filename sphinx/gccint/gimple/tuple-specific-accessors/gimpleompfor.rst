@@ -95,4 +95,3 @@ GIMPLE_OMP_FOR
 .. function:: enum tree_code gimple_omp_for_cond (gimple g)
 
   Return the condition code associated with ``OMP_FOR`` ``G``.
-

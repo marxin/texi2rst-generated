@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: function entry and exit, prologue, epilogue
+
 .. _function-entry:
-
-.. index:: function entry and exit
-
-.. index:: prologue
-
-.. index:: epilogue
 
 Function Entry and Exit
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,9 +140,7 @@ This section describes the macros that output function entry
   given :option:`-mrtd` pops arguments in functions that take a fixed
   number of arguments.
 
-  .. index:: pops_args
-
-  .. index:: crtl->args.pops_args
+  .. index:: pops_args, crtl->args.pops_args
 
   Your definition of the macro ``RETURN_POPS_ARGS`` decides which
   functions pop their own arguments.  ``TARGET_ASM_FUNCTION_EPILOGUE``
@@ -157,9 +151,7 @@ This section describes the macros that output function entry
 .. hook-end
 
 * 
-  .. index:: pretend_args_size
-
-  .. index:: crtl->args.pretend_args_size
+  .. index:: pretend_args_size, crtl->args.pretend_args_size
 
   A region of ``crtl->args.pretend_args_size`` bytes of
   uninitialized space just underneath the first argument arriving on the
@@ -271,4 +263,3 @@ This section describes the macros that output function entry
   previously exposed.
 
 .. hook-end
-

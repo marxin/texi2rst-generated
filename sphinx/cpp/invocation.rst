@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: invocation, command line
+
 .. _invocation:
-
-.. index:: invocation
-
-.. index:: command line
 
 Invocation
 ----------
@@ -65,9 +63,7 @@ which take an argument may have that argument appear either immediately
 after the option, or with a space between option and argument:
 :option:`-Ifoo` and :option:`-I foo` have the same effect.
 
-.. index:: grouping options
-
-.. index:: options, grouping
+.. index:: grouping options, options, grouping
 
 Many options have multi-letter names; therefore multiple single-letter
 options may *not* be grouped: :option:`-dM` is very different from

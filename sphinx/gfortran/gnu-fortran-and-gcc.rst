@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GNU Compiler Collection, GCC
+
 .. _gnu-fortran-and-gcc:
-
-.. index:: GNU Compiler Collection
-
-.. index:: GCC
 
 GNU Fortran and GCC
 *******************

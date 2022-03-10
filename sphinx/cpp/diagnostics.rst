@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: diagnostic, reporting errors, reporting warnings, #error
+
 .. _diagnostics:
-
-.. index:: diagnostic
-
-.. index:: reporting errors
-
-.. index:: reporting warnings
-
-.. index:: #error
 
 Diagnostics
 -----------
@@ -55,4 +49,3 @@ Internal whitespace sequences are each replaced with a single space.
 The line must consist of complete tokens.  It is wisest to make the
 argument of these directives be a single string constant; this avoids
 problems with apostrophes and the like.
-

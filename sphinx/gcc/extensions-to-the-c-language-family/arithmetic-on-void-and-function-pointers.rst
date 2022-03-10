@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: void pointers, arithmetic, void, size of pointer to, function pointers, arithmetic, function, size of pointer to
+
 .. _pointer-arith:
-
-.. index:: void pointers, arithmetic
-
-.. index:: void, size of pointer to
-
-.. index:: function pointers, arithmetic
-
-.. index:: function, size of pointer to
 
 Arithmetic on void- and Function-Pointers
 *****************************************
@@ -27,4 +21,3 @@ and on function types, and returns 1.
 
 The option :option:`-Wpointer-arith` requests a warning if these extensions
 are used.
-

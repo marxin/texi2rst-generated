@@ -62,4 +62,3 @@ These :samp:`-m` options are defined for the H8/300 implementations:
   4-byte boundaries.
   :option:`-malign-300` causes them to be aligned on 2-byte boundaries.
   This option has no effect on the H8/300.
-

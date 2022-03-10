@@ -5,12 +5,11 @@
 
 .. program:: zSeries
 
-.. _zseries-options:
-
 .. index:: zSeries options
+
+.. _zseries-options:
 
 zSeries Options
 ^^^^^^^^^^^^^^^
 
 These are listed under See :ref:`s-390-and-zseries-options`.
-

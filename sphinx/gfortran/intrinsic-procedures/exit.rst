@@ -8,11 +8,7 @@
 EXIT --- Exit the program with status. 
 ***************************************
 
-.. index:: EXIT
-
-.. index:: program termination
-
-.. index:: terminate program
+.. index:: EXIT, program termination, terminate program
 
 .. function:: EXIT(STATUS)
 
@@ -51,4 +47,3 @@ EXIT --- Exit the program with status.
   :samp:`{See also}:`
     :ref:`ABORT`, 
     :ref:`KILL`
-

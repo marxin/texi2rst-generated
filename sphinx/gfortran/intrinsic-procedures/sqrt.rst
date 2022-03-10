@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SQRT, DSQRT, CSQRT, ZSQRT, CDSQRT, root, square-root
+
 .. _sqrt:
-
-.. index:: SQRT
-
-.. index:: DSQRT
-
-.. index:: CSQRT
-
-.. index:: ZSQRT
-
-.. index:: CDSQRT
-
-.. index:: root
-
-.. index:: square-root
 
 SQRT --- Square-root function
 *****************************
@@ -67,4 +55,3 @@ SQRT --- Square-root function
     ``ZSQRT(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     ``CDSQRT(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
     =============  ================  ==============  ====================
-

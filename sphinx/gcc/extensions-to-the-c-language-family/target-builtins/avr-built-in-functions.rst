@@ -112,4 +112,3 @@ with GNU-C99:
   {
       return urbits (uval);
   }
-

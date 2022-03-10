@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _present:
-
 .. index:: PRESENT
+
+.. _present:
 
 PRESENT --- Determine whether an optional dummy argument is specified
 *********************************************************************
@@ -47,4 +47,3 @@ PRESENT --- Determine whether an optional dummy argument is specified
           f = PRESENT(x)
         END FUNCTION
       END PROGRAM
-

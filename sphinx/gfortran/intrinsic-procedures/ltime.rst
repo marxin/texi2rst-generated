@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: LTIME, time, conversion to local time info
+
 .. _ltime:
-
-.. index:: LTIME
-
-.. index:: time, conversion to local time info
 
 LTIME --- Convert time to local time info
 *****************************************
@@ -47,4 +45,3 @@ LTIME --- Convert time to local time info
     :ref:`GMTIME`, 
     :ref:`TIME`, 
     :ref:`TIME8`
-

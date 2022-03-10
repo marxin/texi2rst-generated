@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _c-implementation:
-
 .. index:: implementation-defined behavior, C language
+
+.. _c-implementation:
 
 C Implementation-Defined Behavior
 ---------------------------------
@@ -44,4 +44,3 @@ a freestanding environment); refer to their documentation for details.
   c-implementation-defined-behavior/library-functions
   c-implementation-defined-behavior/architecture
   c-implementation-defined-behavior/locale-specific-behavior
-

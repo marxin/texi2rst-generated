@@ -104,4 +104,3 @@ Here are some examples of full target selectors:
   { target { powerpc*-*-* && lp64 } }
   { xfail { lp64 || vect_no_align } }
   { xfail { aarch64*-*-* && { any-opts "-O2" } } }
-

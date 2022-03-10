@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _conditional-syntax:
-
 .. index:: #if
+
+.. _conditional-syntax:
 
 Conditional Syntax
 ******************
@@ -17,11 +17,9 @@ directive`: :samp:`#if`, :samp:`#ifdef` or :samp:`#ifndef`.
   :maxdepth: 2
 
 
+.. index:: #ifdef, #endif
+
 .. _ifdef:
-
-.. index:: #ifdef
-
-.. index:: #endif
 
 Ifdef
 ^^^^^
@@ -156,9 +154,9 @@ expression, and may give different results in some cases.  If the value
 comes out to be nonzero, the :samp:`#if` succeeds and the :samp:`{controlled
 text}` is included; otherwise it is skipped.
 
-.. _defined:
-
 .. index:: defined
+
+.. _defined:
 
 Defined
 ^^^^^^^
@@ -198,9 +196,9 @@ wherever your code uses this feature if you use the command-line option
 warning is also enabled by :option:`-Wextra`, and can also be enabled
 individually with :option:`-Wexpansion-to-defined`.
 
-.. _else:
-
 .. index:: #else
+
+.. _else:
 
 Else
 ^^^^
@@ -223,9 +221,9 @@ opposite happens.
 
 You can use :samp:`#else` with :samp:`#ifdef` and :samp:`#ifndef`, too.
 
-.. _elif:
-
 .. index:: #elif
+
+.. _elif:
 
 Elif
 ^^^^
@@ -411,4 +409,3 @@ but not with others that don't.
   #if defined __has_include && __has_include ("header.h")   /* not portable */
   ...
   #endif
-

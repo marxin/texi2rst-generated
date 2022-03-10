@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options, linking, linking, static
+
 .. _link-options:
-
-.. index:: options, linking
-
-.. index:: linking, static
 
 Influencing the linking step
 ****************************
@@ -24,4 +22,3 @@ a link step.
   library, this option forces the use of the static version. If no
   shared version of :samp:`libgfortran` was built when the compiler was
   configured, this option has no effect.
-

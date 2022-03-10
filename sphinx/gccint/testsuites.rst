@@ -27,4 +27,3 @@ here; FIXME: document the others.
   testsuites/support-for-torture-testing-using-multiple-options
   testsuites/support-for-testing-gimple-passes
   testsuites/support-for-testing-rtl-passes
-

@@ -5,11 +5,9 @@
 
 .. program:: IBM RS/6000 and PowerPC
 
+.. index:: RS/6000 and PowerPC Options, IBM RS/6000 and PowerPC Options
+
 .. _rs-6000-and-powerpc-options:
-
-.. index:: RS/6000 and PowerPC Options
-
-.. index:: IBM RS/6000 and PowerPC Options
 
 IBM RS/6000 and PowerPC Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -759,9 +757,7 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
   end of the inline compare a call to ``strcmp`` or ``strncmp`` will
   take care of the rest of the comparison. The default is 64 bytes.
 
-.. index:: smaller data references (PowerPC)
-
-.. index:: .sdata/.sdata2 references (PowerPC)
+.. index:: smaller data references (PowerPC), .sdata/.sdata2 references (PowerPC)
 
 .. option:: -G {num}
 
@@ -1012,4 +1008,3 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) unaligned vsx loads and stores for
   inline expansion of ``memcpy`` and ``memmove``.
-

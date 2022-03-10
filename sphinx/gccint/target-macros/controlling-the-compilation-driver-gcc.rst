@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: driver, controlling the compilation driver
+
 .. _driver:
-
-.. index:: driver
-
-.. index:: controlling the compilation driver
 
 Controlling the Compilation Driver, gcc
 ***************************************
@@ -482,4 +480,3 @@ Here is the order of prefixes tried for startfiles:
 * The macro ``STANDARD_STARTFILE_PREFIX_2``, but only if this is a native
   compiler, or we have a target system root. The default for this macro is
   :samp:`/usr/lib/`.
-

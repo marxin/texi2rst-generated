@@ -189,4 +189,3 @@ bootstrap-hwasan
   Compiles GCC itself using HWAddress Sanitization in order to catch invalid
   memory accesses within the GCC code.  This option is only available on AArch64
   systems that are running Linux kernel version 5.4 or later.
-

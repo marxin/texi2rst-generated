@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _omp_nested:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 OMP_NESTED -- Nested parallel regions
 *************************************
@@ -28,4 +26,3 @@ OMP_NESTED -- Nested parallel regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.6
-

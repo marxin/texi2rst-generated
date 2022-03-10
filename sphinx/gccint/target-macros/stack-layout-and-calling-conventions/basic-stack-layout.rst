@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: stack frame layout, frame layout
+
 .. _frame-layout:
-
-.. index:: stack frame layout
-
-.. index:: frame layout
 
 Basic Stack Layout
 ^^^^^^^^^^^^^^^^^^
@@ -298,4 +296,3 @@ Here is the basic stack layout.
   in bytes from the canonical frame address (cfa) to the frame base used
   in DWARF 2 debug information.  The default is zero.  A different value
   may reduce the size of debug information on some ports.
-

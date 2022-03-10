@@ -8,11 +8,7 @@
 ANY --- Any value in MASK along DIM is true 
 ********************************************
 
-.. index:: ANY
-
-.. index:: array, apply condition
-
-.. index:: array, condition testing
+.. index:: ANY, array, apply condition, array, condition testing
 
 .. function:: ANY(MASK, DIM)
 
@@ -65,4 +61,3 @@ ANY --- Any value in MASK along DIM is true
             print *, any(a .eq. b, 2)
           end subroutine section
       end program test_any
-

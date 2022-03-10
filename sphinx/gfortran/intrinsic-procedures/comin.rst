@@ -8,9 +8,7 @@
 CO_MIN --- Minimal value on the current set of images
 *****************************************************
 
-.. index:: CO_MIN
-
-.. index:: Collectives, minimal value
+.. index:: CO_MIN, Collectives, minimal value
 
 .. function:: CO_MIN(A, RESULT_IMAGE, STAT, ERRMSG)
 
@@ -68,4 +66,3 @@ CO_MIN --- Minimal value on the current set of images
     :ref:`CO_SUM`, 
     :ref:`CO_REDUCE`, 
     :ref:`CO_BROADCAST`
-

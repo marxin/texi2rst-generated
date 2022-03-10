@@ -41,4 +41,3 @@ These function attributes are supported by the RISC-V back end:
   Permissible values for this parameter are ``user``, ``supervisor``,
   and ``machine``.  If there is no parameter, then it defaults to
   ``machine``.
-

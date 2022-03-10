@@ -41,4 +41,3 @@ to C6X instructions.
   int _extru (int, int);
   int _abs (int);
   int _abs2 (int);
-

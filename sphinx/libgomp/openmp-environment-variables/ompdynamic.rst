@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_dynamic:
-
 .. index:: Environment Variable
+
+.. _omp_dynamic:
 
 OMP_DYNAMIC -- Dynamic adjustment of threads
 ********************************************
@@ -21,4 +21,3 @@ OMP_DYNAMIC -- Dynamic adjustment of threads
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.3
-

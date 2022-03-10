@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: long long data types, double-word arithmetic, multiprecision arithmetic, LL integer suffix, ULL integer suffix
+
 .. _long-long:
-
-.. index:: long long data types
-
-.. index:: double-word arithmetic
-
-.. index:: multiprecision arithmetic
-
-.. index:: LL integer suffix
-
-.. index:: ULL integer suffix
 
 Double-Word Integers
 ********************
@@ -41,4 +33,3 @@ expects type ``int`` for its argument, and you pass a value of type
 subroutine disagree about the number of bytes for the argument.
 Likewise, if the function expects ``long long int`` and you pass
 ``int``.  The best way to avoid such problems is to use prototypes.
-

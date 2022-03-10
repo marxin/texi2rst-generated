@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _user-gc:
-
 .. index:: user gc
+
+.. _user-gc:
 
 Support for user-provided GC marking routines
 *********************************************
@@ -119,4 +119,3 @@ restrictions apply:
   In the case of ``TP<T *>``, references to ``T *`` must be
   handled by calling the ``op`` function on the address of the
   pointer (see the code snippets above).
-

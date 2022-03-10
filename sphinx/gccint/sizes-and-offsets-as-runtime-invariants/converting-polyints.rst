@@ -89,4 +89,3 @@ or test whether such a conversion would succeed.
 :samp:`poly_widest_int::from ({value}, {sign})`
   Convert :samp:`{value}` to a ``poly_widest_int``, extending its coefficients
   according to :samp:`{sign}` if they have fewer bits than ``widest_int``.
-

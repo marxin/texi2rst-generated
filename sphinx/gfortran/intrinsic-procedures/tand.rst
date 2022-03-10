@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TAND, DTAND, trigonometric function, tangent, degrees, tangent, degrees
+
 .. _tand:
-
-.. index:: TAND
-
-.. index:: DTAND
-
-.. index:: trigonometric function, tangent, degrees
-
-.. index:: tangent, degrees
 
 TAND --- Tangent function, degrees
 **********************************
@@ -60,4 +54,3 @@ TAND --- Tangent function, degrees
     :ref:`ATAND` 
     Radians function: 
     :ref:`TAN`
-

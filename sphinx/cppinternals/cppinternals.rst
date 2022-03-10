@@ -7,11 +7,9 @@
    @cropmarks
    @finalout
 
+.. index:: interface, header files
+
 .. _conventions:
-
-.. index:: interface
-
-.. index:: header files
 
 Conventions
 ===========
@@ -33,13 +31,9 @@ change internals in the future without worrying whether library clients
 are perhaps relying on some kind of undocumented implementation-specific
 behavior.
 
+.. index:: lexer, newlines, escaped newlines
+
 .. _lexer:
-
-.. index:: lexer
-
-.. index:: newlines
-
-.. index:: escaped newlines
 
 The Lexer
 =========
@@ -51,17 +45,9 @@ The Lexer
   lexing-a-token
   lexing-a-line
 
+.. index:: hash table, identifiers, macros, assertions, named operators
+
 .. _hash-nodes:
-
-.. index:: hash table
-
-.. index:: identifiers
-
-.. index:: macros
-
-.. index:: assertions
-
-.. index:: named operators
 
 Hash Nodes
 ==========
@@ -119,9 +105,9 @@ argument, and which argument it is, is also an O(1) operation.  Further,
 each directive name, such as ``endif``, has an associated directive
 enum stored in its hash node, so that directive lookup is also O(1).
 
-.. _macro-expansion:
-
 .. index:: macro expansion
+
+.. _macro-expansion:
 
 Macro Expansion Algorithm
 =========================
@@ -147,13 +133,9 @@ result.
   looking-for-a-function-like-macros-opening-parenthesis
   marking-tokens-ineligible-for-future-expansion
 
+.. index:: paste avoidance, spacing, token spacing
+
 .. _token-spacing:
-
-.. index:: paste avoidance
-
-.. index:: spacing
-
-.. index:: token spacing
 
 Token Spacing
 =============
@@ -288,9 +270,9 @@ hard to only require a space if one is likely to be necessary, but for
 reasons of efficiency it is slightly conservative and might recommend a
 space where one is not strictly needed.
 
-.. _line-numbering:
-
 .. index:: line numbers
+
+.. _line-numbering:
 
 Line numbering
 ==============

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_default_device:
-
 .. index:: Environment Variable
+
+.. _omp_default_device:
 
 OMP_DEFAULT_DEVICE -- Set the device used in target regions
 ***********************************************************
@@ -22,4 +22,3 @@ OMP_DEFAULT_DEVICE -- Set the device used in target regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.13
-

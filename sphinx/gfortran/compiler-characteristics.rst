@@ -25,4 +25,3 @@ might in some way or another become visible to the programmer.
   compiler-characteristics/file-operations-on-symbolic-links
   compiler-characteristics/file-format-of-unformatted-sequential-files
   compiler-characteristics/asynchronous-i-o
-

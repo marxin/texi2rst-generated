@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: using libiberty, libiberty usage, how to use
+
 .. _using:
-
-.. index:: using libiberty
-
-.. index:: libiberty usage
-
-.. index:: how to use
 
 Using
 -----
@@ -42,4 +38,3 @@ Making use of ``libiberty`` code usually requires that you include one or more
 header files from the ``libiberty`` distribution.  (They will be named as
 necessary in the function descriptions.)  At link time, you will need to
 add :option:`-liberty` to your link command invocation.
-

@@ -16,4 +16,3 @@ result of the expression can be established without them.  However, since not
 all compilers do that, and such an optimization can potentially modify the
 program flow and subsequent results, GNU Fortran throws warnings for such
 situations with the :option:`-Wfunction-elimination` flag.
-

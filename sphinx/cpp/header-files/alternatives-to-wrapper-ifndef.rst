@@ -38,4 +38,3 @@ is with the :samp:`#pragma once` directive (see :ref:`pragmas`).
 :samp:`#pragma once` does not have the problems that :samp:`#import` does,
 but it is not recognized by all preprocessors, so you cannot rely on it
 in a portable program.
-

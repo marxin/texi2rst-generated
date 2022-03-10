@@ -3,9 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: Objective-C
-
-.. index:: Objective-C++
+.. index:: Objective-C, Objective-C++
 
 Objective-C and Objective-C++ Languages
 ***************************************
@@ -62,4 +60,3 @@ The authoritative manual on Objective-C 2.0 is available from Apple:
 
 For more information concerning the history of Objective-C that is
 available online, see https://gcc.gnu.org/readings.html
-

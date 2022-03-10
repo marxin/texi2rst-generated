@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_REF, Atomic subroutine, reference
+
 .. _atomic_ref:
-
-.. index:: ATOMIC_REF
-
-.. index:: Atomic subroutine, reference
 
 ATOMIC_REF --- Obtaining the value of a variable atomically
 ***********************************************************
@@ -70,4 +68,3 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
     :ref:`ATOMIC_FETCH_AND`, 
     :ref:`ATOMIC_FETCH_OR`, 
     :ref:`ATOMIC_FETCH_XOR`
-

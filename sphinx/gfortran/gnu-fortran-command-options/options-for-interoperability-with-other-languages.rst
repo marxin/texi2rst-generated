@@ -8,9 +8,7 @@
 Options for interoperability with other languages
 *************************************************
 
-.. index:: c-prototypes
-
-.. index:: Generating C prototypes from Fortran BIND(C) enteties
+.. index:: c-prototypes, Generating C prototypes from Fortran BIND(C) enteties
 
 .. option:: -fc-prototypes
 
@@ -35,9 +33,7 @@ Options for interoperability with other languages
   where the C code intended for interoperating with the Fortran code
   then  uses ``#include "foo.h"``.
 
-.. index:: c-prototypes-external
-
-.. index:: Generating C prototypes from external procedures
+.. index:: c-prototypes-external, Generating C prototypes from external procedures
 
 .. option:: -fc-prototypes-external
 
@@ -65,4 +61,3 @@ Options for interoperability with other languages
 
   where the C code intended for interoperating with the Fortran code
   then  uses ``#include "foo.h"``.
-

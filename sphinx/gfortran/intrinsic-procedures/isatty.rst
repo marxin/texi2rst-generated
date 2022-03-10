@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ISATTY, system, terminal
+
 .. _isatty:
-
-.. index:: ISATTY
-
-.. index:: system, terminal
 
 ISATTY --- Whether a unit is a terminal device.
 ***********************************************
@@ -48,4 +46,3 @@ ISATTY --- Whether a unit is a terminal device.
 
   :samp:`{See also}:`
     :ref:`TTYNAM`
-

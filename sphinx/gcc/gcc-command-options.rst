@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GCC command options, command options, options, GCC command
+
 .. _invoking-gcc:
-
-.. index:: GCC command options
-
-.. index:: command options
-
-.. index:: options, GCC command
 
 .. only:: man
 

@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _extends_type_of:
-
 .. index:: EXTENDS_TYPE_OF
+
+.. _extends_type_of:
 
 EXTENDS_TYPE_OF ---  Query dynamic type for extension
 *****************************************************
@@ -40,4 +40,3 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
 
   :samp:`{See also}:`
     :ref:`SAME_TYPE_AS`
-

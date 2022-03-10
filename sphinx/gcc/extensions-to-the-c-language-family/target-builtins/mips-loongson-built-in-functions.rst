@@ -434,4 +434,3 @@ In each case, :samp:`{cond}` can be any of the 16 floating-point conditions:
       all_are_true ();
     else
       some_are_false ();
-

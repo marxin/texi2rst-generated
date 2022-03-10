@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: AIMAG, DIMAG, IMAG, IMAGPART, complex numbers, imaginary part
+
 .. _aimag:
-
-.. index:: AIMAG
-
-.. index:: DIMAG
-
-.. index:: IMAG
-
-.. index:: IMAGPART
-
-.. index:: complex numbers, imaginary part
 
 AIMAG --- Imaginary part of complex number  
 ********************************************
@@ -65,4 +57,3 @@ AIMAG --- Imaginary part of complex number
     ``IMAG(Z)``      ``COMPLEX Z``     ``REAL``     GNU extension
     ``IMAGPART(Z)``  ``COMPLEX Z``     ``REAL``     GNU extension
     ===============  ================  ===========  ====================
-

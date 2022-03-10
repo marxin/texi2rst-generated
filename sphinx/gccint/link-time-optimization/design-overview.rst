@@ -121,4 +121,3 @@ The main advantage of WHOPR is to allow the parallel execution of
 LTRANS stages, which are the most time-consuming part of the
 compilation process.  Additionally, it avoids the need to load the
 whole program into memory.
-

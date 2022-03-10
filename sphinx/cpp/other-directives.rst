@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: #ident, #sccs
+
 .. _other-directives:
-
-.. index:: #ident
-
-.. index:: #sccs
 
 Other Directives
 ----------------
@@ -30,4 +28,3 @@ preprocessor output.  The primary significance of the existence of the
 null directive is that an input line consisting of just a :samp:`#` will
 produce no output, rather than a line of output containing just a
 :samp:`#`.  Supposedly some old C programs contain such lines.
-

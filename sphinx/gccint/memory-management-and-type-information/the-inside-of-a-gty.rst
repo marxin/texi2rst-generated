@@ -131,11 +131,7 @@ The available options are:
   non user gc type T2 you can give T2 the for_user option so that the marking
   functions for T1 can call non mangled functions to mark T2.
 
-  .. index:: desc
-
-  .. index:: tag
-
-  .. index:: default
+  .. index:: desc, tag, default
 
 :samp:`desc ("{expression}")` :samp:`tag ("{constant}")` ``default``
   The type machinery needs to be told which field of a ``union`` is
@@ -212,11 +208,7 @@ The available options are:
   the pointer.  The pointer will be available using the ``%h``
   escape.
 
-  .. index:: chain_next
-
-  .. index:: chain_prev
-
-  .. index:: chain_circular
+  .. index:: chain_next, chain_prev, chain_circular
 
 :samp:`chain_next ("{expression}")` :samp:`chain_prev ("{expression}")` :samp:`chain_circular ("{expression}")`
   It's helpful for the type machinery to know if objects are often
@@ -311,4 +303,3 @@ The available options are:
   The ``user`` option indicates that the code to mark structure
   fields is completely handled by user-provided routines.  See section
   :ref:`user-gc` for details on what functions need to be provided.
-

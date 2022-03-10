@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: NEAREST, real number, nearest different, floating point, nearest different
+
 .. _nearest:
-
-.. index:: NEAREST
-
-.. index:: real number, nearest different
-
-.. index:: floating point, nearest different
 
 NEAREST --- Nearest representable number
 ****************************************
@@ -55,4 +51,3 @@ NEAREST --- Nearest representable number
         y = nearest(42.0, -1.0)
         write (*,"(3(G20.15))") x, y, x - y
       end program test_nearest
-

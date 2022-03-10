@@ -43,4 +43,3 @@ x and y are global variables.
 
 COPYPRIVATE would work the same way, except the structure 
 broadcast would have to happen via SINGLE machinery instead.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ALLOCATED, allocation, status
+
 .. _allocated:
-
-.. index:: ALLOCATED
-
-.. index:: allocation, status
 
 ALLOCATED --- Status of an allocatable entity
 *********************************************
@@ -51,4 +49,3 @@ ALLOCATED --- Status of an allocatable entity
         real(4), allocatable :: x(:)
         if (.not. allocated(x)) allocate(x(i))
       end program test_allocated
-

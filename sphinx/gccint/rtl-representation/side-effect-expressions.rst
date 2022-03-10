@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _side-effects:
-
 .. index:: RTL side effect expressions
+
+.. _side-effects:
 
 Side Effect Expressions
 ***********************
@@ -57,9 +57,7 @@ the operands of these.
   corresponds.  The first element may be null to indicate that the structure
   is also passed partly in memory.
 
-  .. index:: jump instructions and set
-
-  .. index:: if_then_else usage
+  .. index:: jump instructions and set, if_then_else usage
 
   If :samp:`{lval}` is ``(pc)``, we have a jump instruction, and the
   possibilities for :samp:`{x}` are very limited.  It may be a
@@ -76,9 +74,7 @@ the operands of these.
   :samp:`{lval}` must not be ``VOIDmode`` and the mode of :samp:`{x}` must be
   valid for the mode of :samp:`{lval}`.
 
-  .. index:: SET_DEST
-
-  .. index:: SET_SRC
+  .. index:: SET_DEST, SET_SRC
 
   :samp:`{lval}` is customarily accessed with the ``SET_DEST`` macro and
   :samp:`{x}` with the ``SET_SRC`` macro.
@@ -331,9 +327,7 @@ the operands of these.
 :samp:`(asm_input {s})`
   Represents literal assembler code as described by the string :samp:`{s}`.
 
-  .. index:: unspec
-
-  .. index:: unspec_volatile
+  .. index:: unspec, unspec_volatile
 
 :samp:`(unspec [{operands} ...] {index})` :samp:`(unspec_volatile [{operands} ...] {index})`
   Represents a machine-specific operation on :samp:`{operands}`.  :samp:`{index}`
@@ -378,4 +372,3 @@ the operands of these.
   This insn is used to minimize cache-miss latency by moving data into a
   cache before it is accessed.  It should use only non-faulting data prefetch
   instructions.
-

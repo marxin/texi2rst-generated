@@ -5,9 +5,9 @@
 
 .. program:: VAX
 
-.. _vax-options:
-
 .. index:: VAX options
+
+.. _vax-options:
 
 VAX Options
 ^^^^^^^^^^^
@@ -33,4 +33,3 @@ These :samp:`-m` options are defined for the VAX:
 
   Enable Local Register Allocation.  This is still experimental for the VAX,
   so by default the compiler uses standard reload.
-

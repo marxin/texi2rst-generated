@@ -27,4 +27,3 @@ omp_is_initial_device -- Whether executing on the host device
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.34.
-

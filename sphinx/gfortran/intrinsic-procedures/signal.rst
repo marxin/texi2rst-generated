@@ -8,9 +8,7 @@
 SIGNAL --- Signal handling subroutine (or function)
 ***************************************************
 
-.. index:: SIGNAL
-
-.. index:: system, signal handling
+.. index:: SIGNAL, system, signal handling
 
 .. function:: SIGNAL(NUMBER, HANDLER, STATUS)
 
@@ -61,4 +59,3 @@ SIGNAL --- Signal handling subroutine (or function)
 
         call sleep (30)
       end program test_signal
-

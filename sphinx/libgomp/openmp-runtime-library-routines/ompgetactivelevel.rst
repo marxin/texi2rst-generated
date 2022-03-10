@@ -29,4 +29,3 @@ omp_get_active_level -- Number of parallel regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.20.
-

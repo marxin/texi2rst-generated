@@ -8,9 +8,7 @@
 FSTAT --- Get file status
 *************************
 
-.. index:: FSTAT
-
-.. index:: file system, file status
+.. index:: FSTAT, file system, file status
 
 .. function:: FSTAT(UNIT, VALUES, STATUS)
 
@@ -48,4 +46,3 @@ FSTAT --- Get file status
     :ref:`LSTAT` 
     To stat a file: 
     :ref:`STAT`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Tree SSA, Optimization infrastructure for GIMPLE
+
 .. _tree-ssa:
-
-.. index:: Tree SSA
-
-.. index:: Optimization infrastructure for GIMPLE
 
 Analysis and Optimization of GIMPLE tuples
 ------------------------------------------
@@ -44,4 +42,3 @@ passes for GIMPLE.
   analysis-and-optimization-of-gimple-tuples/alias-analysis
   analysis-and-optimization-of-gimple-tuples/memory-model
   analysis-and-optimization-of-gimple-tuples/static-single-assignment
-

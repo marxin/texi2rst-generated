@@ -66,4 +66,3 @@ The functions supported are:
   void amo_stdat_sadd (int64_t *, int64_t);
   void amo_stdat_smax (int64_t *, int64_t);
   void amo_stdat_smin (int64_t *, int64_t);
-

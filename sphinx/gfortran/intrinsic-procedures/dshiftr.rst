@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: DSHIFTR, right shift, combined, shift, right
+
 .. _dshiftr:
-
-.. index:: DSHIFTR
-
-.. index:: right shift, combined
-
-.. index:: shift, right
 
 DSHIFTR --- Combined right shift
 ********************************
@@ -55,4 +51,3 @@ DSHIFTR --- Combined right shift
 
   :samp:`{See also}:`
     :ref:`DSHIFTL`
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: NINT, IDNINT, rounding, nearest whole number
+
 .. _nint:
-
-.. index:: NINT
-
-.. index:: IDNINT
-
-.. index:: rounding, nearest whole number
 
 NINT --- Nearest whole number
 *****************************
@@ -65,4 +61,3 @@ NINT --- Nearest whole number
   :samp:`{See also}:`
     :ref:`CEILING`, 
     :ref:`FLOOR`
-

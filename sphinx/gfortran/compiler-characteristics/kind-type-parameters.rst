@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _kind-type-parameters:
-
 .. index:: kind
+
+.. _kind-type-parameters:
 
 KIND Type Parameters
 ********************
@@ -51,4 +51,3 @@ The available kind parameters can be found in the constant arrays
 ``CHARACTER_KINDS``, ``INTEGER_KINDS``, ``LOGICAL_KINDS`` and
 ``REAL_KINDS`` in the :ref:`ISO_FORTRAN_ENV` module.  For C interoperability,
 the kind parameters of the :ref:`ISO_C_BINDING` module should be used.
-

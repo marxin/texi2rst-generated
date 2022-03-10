@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETGID, system, group ID
+
 .. _getgid:
-
-.. index:: GETGID
-
-.. index:: system, group ID
 
 GETGID --- Group ID function
 ****************************
@@ -38,4 +36,3 @@ GETGID --- Group ID function
   :samp:`{See also}:`
     :ref:`GETPID`, 
     :ref:`GETUID`
-

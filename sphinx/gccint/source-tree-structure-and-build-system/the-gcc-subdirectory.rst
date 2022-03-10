@@ -26,4 +26,3 @@ separate chapter.  See :ref:`passes`.
   the-gcc-subdirectory/building-documentation
   the-gcc-subdirectory/anatomy-of-a-language-front-end
   the-gcc-subdirectory/anatomy-of-a-target-back-end
-

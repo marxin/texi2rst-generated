@@ -31,4 +31,3 @@ omp_get_device_num -- Return device number of current device
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.2.37.
-

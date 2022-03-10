@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: target attributes, machine attributes, attributes, target-specific
+
 .. _target-attributes:
-
-.. index:: target attributes
-
-.. index:: machine attributes
-
-.. index:: attributes, target-specific
 
 Defining target-specific uses of __attribute__
 **********************************************
@@ -313,4 +309,3 @@ be documented in :samp:`extend.texi`.
   with the attribute target.
 
 .. hook-end
-

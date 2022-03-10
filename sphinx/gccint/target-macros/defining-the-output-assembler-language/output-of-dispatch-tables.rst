@@ -169,4 +169,3 @@ This concerns dispatch tables.
   suitable additional instructions should be emitted to restore it.
 
 .. hook-end
-

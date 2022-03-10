@@ -5,9 +5,9 @@
 
 .. program:: MCore
 
-.. _mcore-options:
-
 .. index:: MCore options
+
+.. _mcore-options:
 
 MCore Options
 ^^^^^^^^^^^^^
@@ -64,4 +64,3 @@ processors.
   that need a large amount of stack space, but they can also trigger a
   segmentation fault if the stack is extended too much.  The default
   value is 0x1000.
-

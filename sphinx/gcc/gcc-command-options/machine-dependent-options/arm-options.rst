@@ -5,9 +5,9 @@
 
 .. program:: ARM
 
-.. _arm-options:
-
 .. index:: ARM options
+
+.. _arm-options:
 
 ARM Options
 ^^^^^^^^^^^
@@ -1021,4 +1021,3 @@ These :samp:`-m` options are defined for the ARM port:
   The opposite :option:`-mno-fdpic` option is useful (and required) to
   build the Linux kernel using the same (``arm-*-uclinuxfdpiceabi``)
   toolchain as the one used to build the userland programs.
-

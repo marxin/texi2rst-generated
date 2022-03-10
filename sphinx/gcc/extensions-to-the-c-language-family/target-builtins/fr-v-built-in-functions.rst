@@ -242,4 +242,3 @@ a specific FR-V instruction.
 
   Use the ``nldub`` instruction to load the contents of address :samp:`{x}`
   into the data cache.  The instruction is issued in slot I1.
-

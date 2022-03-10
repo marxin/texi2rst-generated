@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: bugs, reporting bugs
+
 .. _bugs:
-
-.. index:: bugs
-
-.. index:: reporting bugs
 
 Reporting Bugs
 --------------
@@ -23,4 +21,3 @@ report the problem.
 
   have-you-found-a-bug
   how-and-where-to-report-bugs
-

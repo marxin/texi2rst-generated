@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: accessing volatiles, volatile read, volatile write, volatile access
+
 .. _c++-volatiles:
-
-.. index:: accessing volatiles
-
-.. index:: volatile read
-
-.. index:: volatile write
-
-.. index:: volatile access
 
 When is a Volatile C++ Object Accessed?
 ***************************************
@@ -62,4 +56,3 @@ expected, in the following example:
 
   volatile int vobj;
   volatile int &vref = vobj = something;
-

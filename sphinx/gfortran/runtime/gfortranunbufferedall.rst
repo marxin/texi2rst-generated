@@ -13,4 +13,3 @@ the first letter is :samp:`y`, :samp:`Y` or :samp:`1`, all I/O is
 unbuffered.  This will slow down small sequential reads and writes.  If
 the first letter is :samp:`n`, :samp:`N` or :samp:`0`, I/O is buffered.
 This is the default.
-

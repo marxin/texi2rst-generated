@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: case ranges, ranges in case statements
+
 .. _case-ranges:
-
-.. index:: case ranges
-
-.. index:: ranges in case statements
 
 Case Ranges
 ***********
@@ -41,4 +39,3 @@ rather than this:
 .. code-block:: c++
 
   case 1...5:
-

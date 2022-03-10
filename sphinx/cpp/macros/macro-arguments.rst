@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: arguments, macros with arguments, arguments in macro definitions
+
 .. _macro-arguments:
-
-.. index:: arguments
-
-.. index:: macros with arguments
-
-.. index:: arguments in macro definitions
 
 Macro Arguments
 ***************
@@ -114,4 +110,3 @@ their corresponding actual arguments.
 
   #define foo(x) x, "x"
   foo(bar)        → bar, "x"
-

@@ -16,4 +16,3 @@ implement something akin to .ctors.
 Even more ideally, this ctor feature is handled by extensions
 to the main pthreads library.  Failing that, we can have a set
 of entry points to register ctor functions to be called.
-

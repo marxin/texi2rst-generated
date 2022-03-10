@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: initialization routines, termination routines, constructors, output of, destructors, output of
+
 .. _initialization:
-
-.. index:: initialization routines
-
-.. index:: termination routines
-
-.. index:: constructors, output of
-
-.. index:: destructors, output of
 
 How Initialization Functions Are Handled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,9 +29,7 @@ There are two major ways that GCC currently supports the execution of
 initialization and termination functions.  Each way has two variants.
 Much of the structure is common to all four variations.
 
-.. index:: __CTOR_LIST__
-
-.. index:: __DTOR_LIST__
+.. index:: __CTOR_LIST__, __DTOR_LIST__
 
 The linker must build two lists of these functions---a list of
 initialization functions, called ``__CTOR_LIST__``, and a list of
@@ -128,4 +120,3 @@ the ordinary linker, but also arranges to include the vectors of
 initialization and termination functions.  These functions are called
 via ``__main`` as described above.  In order to use this method,
 ``use_collect2`` must be defined in the target in :samp:`config.gcc`.
-

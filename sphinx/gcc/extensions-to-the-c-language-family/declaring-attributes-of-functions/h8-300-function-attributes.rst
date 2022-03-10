@@ -30,13 +30,10 @@ These function attributes are available for H8/300 targets:
   generates function entry and exit sequences suitable for use in an
   interrupt handler when this attribute is present.
 
-.. index:: saveall function attribute, H8/300
-
-.. index:: save all registers on the H8/300, H8/300H, and H8S
+.. index:: saveall function attribute, H8/300, save all registers on the H8/300, H8/300H, and H8S
 
 .. gcc-attr:: saveall
 
   Use this attribute on the H8/300, H8/300H, and H8S to indicate that
   all registers except the stack pointer should be saved in the prologue
   regardless of whether they are used or not.
-

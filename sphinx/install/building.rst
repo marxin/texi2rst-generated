@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _building:
-
 .. index:: Building
+
+.. _building:
 
 Building
 --------
@@ -64,4 +64,3 @@ documentation pre-built for the unmodified documentation in the release.
   building/building-the-ada-compiler
   building/building-the-d-compiler
   building/building-with-profile-feedback
-

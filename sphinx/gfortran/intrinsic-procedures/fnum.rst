@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FNUM, file operation, file number
+
 .. _fnum:
-
-.. index:: FNUM
-
-.. index:: file operation, file number
 
 FNUM --- File number function
 *****************************
@@ -46,4 +44,3 @@ FNUM --- File number function
         print *, i
         close (10)
       end program test_fnum
-

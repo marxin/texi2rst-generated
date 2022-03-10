@@ -139,4 +139,3 @@ intervening operation from you.  When you write bundles and you need to
 write ``+load`` you can safely create and send messages to objects whose
 classes already exist in the running program.  The same restrictions as
 above apply to classes defined in bundle.
-

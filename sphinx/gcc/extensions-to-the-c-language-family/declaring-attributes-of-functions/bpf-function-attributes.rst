@@ -22,4 +22,3 @@ These function attributes are supported by the BPF back end:
 
     int bpf_probe_read (void *dst, int size, const void *unsafe_ptr)
       __attribute__ ((kernel_helper (4)));
-

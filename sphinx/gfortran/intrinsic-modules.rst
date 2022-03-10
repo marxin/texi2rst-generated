@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _intrinsic-modules:
-
 .. index:: intrinsic Modules
+
+.. _intrinsic-modules:
 
 Intrinsic Modules
 -----------------
@@ -18,4 +18,3 @@ Intrinsic Modules
   intrinsic-modules/isocbinding
   intrinsic-modules/ieee-modules-ieeeexceptions-ieeearithmetic-and-ieeefeatures
   intrinsic-modules/openmp-modules-omplib-and-omplibkinds
-

@@ -18,4 +18,3 @@ You can use other hooks, like ``PLUGIN_ALL_PASSES_START``,
 ``PLUGIN_ALL_IPA_PASSES_END``, ``PLUGIN_EARLY_GIMPLE_PASSES_START``,
 and/or ``PLUGIN_EARLY_GIMPLE_PASSES_END`` to manipulate global state
 in your plugin(s) in order to get context for the pass execution.
-

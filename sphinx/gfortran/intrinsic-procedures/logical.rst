@@ -8,9 +8,7 @@
 LOGICAL --- Convert to logical type
 ***********************************
 
-.. index:: LOGICAL
-
-.. index:: conversion, to logical
+.. index:: LOGICAL, conversion, to logical
 
 .. function:: LOGICAL(L, KIND)
 
@@ -44,4 +42,3 @@ LOGICAL --- Convert to logical type
     :ref:`INT`, 
     :ref:`REAL`, 
     :ref:`CMPLX`
-

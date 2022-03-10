@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_max_active_levels:
-
 .. index:: Environment Variable
+
+.. _omp_max_active_levels:
 
 OMP_MAX_ACTIVE_LEVELS -- Set the maximum number of nested parallel regions
 **************************************************************************
@@ -24,4 +24,3 @@ OMP_MAX_ACTIVE_LEVELS -- Set the maximum number of nested parallel regions
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.9
-

@@ -8,9 +8,7 @@
 CHMOD --- Change access permissions of files
 ********************************************
 
-.. index:: CHMOD(NAME, MODE, STATUS)
-
-.. index:: file system, change access mode
+.. index:: CHMOD(NAME, MODE, STATUS), file system, change access mode
 
 .. function:: CHMOD(NAME, MODE, STATUS)
 
@@ -71,4 +69,3 @@ CHMOD --- Change access permissions of files
         status = chmod('test.dat','u+x')
         print *, 'Status: ', status
       end program chmod_test
-

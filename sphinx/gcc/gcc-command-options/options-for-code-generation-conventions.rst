@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: code generation conventions, options, code generation, run-time options
+
 .. _code-gen-options:
-
-.. index:: code generation conventions
-
-.. index:: options, code generation
-
-.. index:: run-time options
 
 Options for Code Generation Conventions
 ***************************************
@@ -406,9 +402,7 @@ it.
   See also :option:`-grecord-gcc-switches` for another
   way of storing compiler options into the object file.
 
-.. index:: global offset table
-
-.. index:: PIC
+.. index:: global offset table, PIC
 
 .. option:: -fpic
 
@@ -715,4 +709,3 @@ it.
   The default value of this option is enabled, thus the only useful form
   of the option is :option:`-fno-sync-libcalls`.  This option is used in
   the implementation of the :samp:`libatomic` runtime library.
-

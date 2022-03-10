@@ -52,4 +52,3 @@ implementation-defined behavior.
 * The definitions for ``__DATE__`` and ``__TIME__`` when
   respectively, the date and time of translation are not available (C90
   6.8.8, C99 6.10.8, C11 6.10.8.1).
-

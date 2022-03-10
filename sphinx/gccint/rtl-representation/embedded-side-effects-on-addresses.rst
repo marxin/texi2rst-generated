@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL preincrement, RTL postincrement, RTL predecrement, RTL postdecrement
+
 .. _incdec:
-
-.. index:: RTL preincrement
-
-.. index:: RTL postincrement
-
-.. index:: RTL predecrement
-
-.. index:: RTL postdecrement
 
 Embedded Side-Effects on Addresses
 **********************************
@@ -104,4 +98,3 @@ done because machines that allow these operations at all typically
 allow them wherever a memory address is called for.  Describing them as
 additional parallel stores would require doubling the number of entries
 in the machine description.
-

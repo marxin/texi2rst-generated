@@ -43,11 +43,9 @@ not call any of the following functions.  The libgfortran
 initialization functions are shown in C syntax but using C
 bindings they are also accessible from Fortran.
 
+.. index:: _gfortran_set_args, libgfortran initialization, set_args
+
 .. _gfortran_set_args:
-
-.. index:: _gfortran_set_args
-
-.. index:: libgfortran initialization, set_args
 
 _gfortran_set_args --- Save command-line arguments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,11 +75,9 @@ _gfortran_set_args --- Save command-line arguments
         return 0;
       }
 
+.. index:: _gfortran_set_options, libgfortran initialization, set_options
+
 .. _gfortran_set_options:
-
-.. index:: _gfortran_set_options
-
-.. index:: libgfortran initialization, set_options
 
 _gfortran_set_options --- Set library option flags
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,11 +147,9 @@ _gfortran_set_options --- Set library option flags
         static int options[] = {68, 511, 0, 0, 1, 1, 0, 0, 31};
         _gfortran_set_options (9, &options);
 
+.. index:: _gfortran_set_convert, libgfortran initialization, set_convert
+
 .. _gfortran_set_convert:
-
-.. index:: _gfortran_set_convert
-
-.. index:: libgfortran initialization, set_convert
 
 _gfortran_set_convert --- Set endian conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -182,11 +176,9 @@ _gfortran_set_convert --- Set endian conversion
         return 0;
       }
 
+.. index:: _gfortran_set_record_marker, libgfortran initialization, set_record_marker
+
 .. _gfortran_set_record_marker:
-
-.. index:: _gfortran_set_record_marker
-
-.. index:: libgfortran initialization, set_record_marker
 
 _gfortran_set_record_marker --- Set length of record markers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -212,11 +204,9 @@ _gfortran_set_record_marker --- Set length of record markers
         return 0;
       }
 
+.. index:: _gfortran_set_fpe, libgfortran initialization, set_fpe
+
 .. _gfortran_set_fpe:
-
-.. index:: _gfortran_set_fpe
-
-.. index:: libgfortran initialization, set_fpe
 
 _gfortran_set_fpe --- Enable floating point exception traps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -247,11 +237,9 @@ _gfortran_set_fpe --- Enable floating point exception traps
         return 0;
       }
 
+.. index:: _gfortran_set_max_subrecord_length, libgfortran initialization, set_max_subrecord_length
+
 .. _gfortran_set_max_subrecord_length:
-
-.. index:: _gfortran_set_max_subrecord_length
-
-.. index:: libgfortran initialization, set_max_subrecord_length
 
 _gfortran_set_max_subrecord_length --- Set subrecord length
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -278,4 +266,3 @@ _gfortran_set_max_subrecord_length --- Set subrecord length
         _gfortran_set_max_subrecord_length (8);
         return 0;
       }
-

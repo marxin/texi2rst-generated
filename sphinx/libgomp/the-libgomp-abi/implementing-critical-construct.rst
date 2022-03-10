@@ -28,4 +28,3 @@ name being transformed into a variable declared like
 Ideally the ABI would specify that all zero is a valid unlocked
 state, and so we wouldn't need to initialize this at
 startup.
-

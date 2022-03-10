@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _flags:
-
 .. index:: flags in RTL expression
+
+.. _flags:
 
 Flags in an RTL Expression
 **************************
@@ -14,9 +14,7 @@ RTL expressions contain several flags (one-bit bit-fields)
 that are used in certain types of expression.  Most often they
 are accessed with the following macros, which expand into lvalues.
 
-.. index:: CROSSING_JUMP_P
-
-.. index:: jump_insn and /j
+.. index:: CROSSING_JUMP_P, jump_insn and /j
 
 :samp:`CROSSING_JUMP_P ({x})`
   Nonzero in a ``jump_insn`` if it crosses between hot and cold sections,
@@ -26,11 +24,7 @@ are accessed with the following macros, which expand into lvalues.
   when the optimization to partition basic blocks into hot and cold sections
   is turned on.
 
-  .. index:: CONSTANT_POOL_ADDRESS_P
-
-  .. index:: symbol_ref and /u
-
-  .. index:: unchanging, in symbol_ref
+  .. index:: CONSTANT_POOL_ADDRESS_P, symbol_ref and /u, unchanging, in symbol_ref
 
 :samp:`CONSTANT_POOL_ADDRESS_P ({x})`
   Nonzero in a ``symbol_ref`` if it refers to part of the current
@@ -41,15 +35,7 @@ are accessed with the following macros, which expand into lvalues.
   perhaps with the help of base registers.
   Stored in the ``unchanging`` field and printed as :samp:`/u`.
 
-  .. index:: INSN_ANNULLED_BRANCH_P
-
-  .. index:: jump_insn and /u
-
-  .. index:: call_insn and /u
-
-  .. index:: insn and /u
-
-  .. index:: unchanging, in jump_insn, call_insn and insn
+  .. index:: INSN_ANNULLED_BRANCH_P, jump_insn and /u, call_insn and /u, insn and /u, unchanging, in jump_insn, call_insn and insn
 
 :samp:`INSN_ANNULLED_BRANCH_P ({x})`
   In a ``jump_insn``, ``call_insn``, or ``insn`` indicates
@@ -57,23 +43,7 @@ are accessed with the following macros, which expand into lvalues.
   ``sequence`` below.  Stored in the ``unchanging`` field and
   printed as :samp:`/u`.
 
-  .. index:: INSN_DELETED_P
-
-  .. index:: insn and /v
-
-  .. index:: call_insn and /v
-
-  .. index:: jump_insn and /v
-
-  .. index:: code_label and /v
-
-  .. index:: jump_table_data and /v
-
-  .. index:: barrier and /v
-
-  .. index:: note and /v
-
-  .. index:: volatil, in insn, call_insn, jump_insn, code_label, jump_table_data, barrier, and note
+  .. index:: INSN_DELETED_P, insn and /v, call_insn and /v, jump_insn and /v, code_label and /v, jump_table_data and /v, barrier and /v, note and /v, volatil, in insn, call_insn, jump_insn, code_label, jump_table_data, barrier, and note
 
 :samp:`INSN_DELETED_P ({x})`
   In an ``insn``, ``call_insn``, ``jump_insn``, ``code_label``,
@@ -81,15 +51,7 @@ are accessed with the following macros, which expand into lvalues.
   nonzero if the insn has been deleted.  Stored in the
   ``volatil`` field and printed as :samp:`/v`.
 
-  .. index:: INSN_FROM_TARGET_P
-
-  .. index:: insn and /s
-
-  .. index:: jump_insn and /s
-
-  .. index:: call_insn and /s
-
-  .. index:: in_struct, in insn and jump_insn and call_insn
+  .. index:: INSN_FROM_TARGET_P, insn and /s, jump_insn and /s, call_insn and /s, in_struct, in insn and jump_insn and call_insn
 
 :samp:`INSN_FROM_TARGET_P ({x})`
   In an ``insn`` or ``jump_insn`` or ``call_insn`` in a delay
@@ -102,13 +64,7 @@ are accessed with the following macros, which expand into lvalues.
   this insn will always be executed.  Stored in the ``in_struct``
   field and printed as :samp:`/s`.
 
-  .. index:: LABEL_PRESERVE_P
-
-  .. index:: code_label and /i
-
-  .. index:: note and /i
-
-  .. index:: in_struct, in code_label and note
+  .. index:: LABEL_PRESERVE_P, code_label and /i, note and /i, in_struct, in code_label and note
 
 :samp:`LABEL_PRESERVE_P ({x})`
   In a ``code_label`` or ``note``, indicates that the label is referenced by
@@ -116,24 +72,14 @@ are accessed with the following macros, which expand into lvalues.
   Labels referenced by a non-local goto will have this bit set.  Stored
   in the ``in_struct`` field and printed as :samp:`/s`.
 
-  .. index:: LABEL_REF_NONLOCAL_P
-
-  .. index:: label_ref and /v
-
-  .. index:: reg_label and /v
-
-  .. index:: volatil, in label_ref and reg_label
+  .. index:: LABEL_REF_NONLOCAL_P, label_ref and /v, reg_label and /v, volatil, in label_ref and reg_label
 
 :samp:`LABEL_REF_NONLOCAL_P ({x})`
   In ``label_ref`` and ``reg_label`` expressions, nonzero if this is
   a reference to a non-local label.
   Stored in the ``volatil`` field and printed as :samp:`/v`.
 
-  .. index:: MEM_KEEP_ALIAS_SET_P
-
-  .. index:: mem and /j
-
-  .. index:: jump, in mem
+  .. index:: MEM_KEEP_ALIAS_SET_P, mem and /j, jump, in mem
 
 :samp:`MEM_KEEP_ALIAS_SET_P ({x})`
   In ``mem`` expressions, 1 if we should keep the alias set for this
@@ -141,46 +87,26 @@ are accessed with the following macros, which expand into lvalues.
   are already in a non-addressable component of an aggregate.
   Stored in the ``jump`` field and printed as :samp:`/j`.
 
-  .. index:: MEM_VOLATILE_P
-
-  .. index:: mem and /v
-
-  .. index:: asm_input and /v
-
-  .. index:: asm_operands and /v
-
-  .. index:: volatil, in mem, asm_operands, and asm_input
+  .. index:: MEM_VOLATILE_P, mem and /v, asm_input and /v, asm_operands and /v, volatil, in mem, asm_operands, and asm_input
 
 :samp:`MEM_VOLATILE_P ({x})`
   In ``mem``, ``asm_operands``, and ``asm_input`` expressions,
   nonzero for volatile memory references.
   Stored in the ``volatil`` field and printed as :samp:`/v`.
 
-  .. index:: MEM_NOTRAP_P
-
-  .. index:: mem and /c
-
-  .. index:: call, in mem
+  .. index:: MEM_NOTRAP_P, mem and /c, call, in mem
 
 :samp:`MEM_NOTRAP_P ({x})`
   In ``mem``, nonzero for memory references that will not trap.
   Stored in the ``call`` field and printed as :samp:`/c`.
 
-  .. index:: MEM_POINTER
-
-  .. index:: mem and /f
-
-  .. index:: frame_related, in mem
+  .. index:: MEM_POINTER, mem and /f, frame_related, in mem
 
 :samp:`MEM_POINTER ({x})`
   Nonzero in a ``mem`` if the memory reference holds a pointer.
   Stored in the ``frame_related`` field and printed as :samp:`/f`.
 
-  .. index:: MEM_READONLY_P
-
-  .. index:: mem and /u
-
-  .. index:: unchanging, in mem
+  .. index:: MEM_READONLY_P, mem and /u, unchanging, in mem
 
 :samp:`MEM_READONLY_P ({x})`
   Nonzero in a ``mem``, if the memory is statically allocated and read-only.
@@ -194,22 +120,14 @@ are accessed with the following macros, which expand into lvalues.
 
   Stored in the ``unchanging`` field and printed as :samp:`/u`.
 
-  .. index:: PREFETCH_SCHEDULE_BARRIER_P
-
-  .. index:: prefetch and /v
-
-  .. index:: volatile, in prefetch
+  .. index:: PREFETCH_SCHEDULE_BARRIER_P, prefetch and /v, volatile, in prefetch
 
 :samp:`PREFETCH_SCHEDULE_BARRIER_P ({x})`
   In a ``prefetch``, indicates that the prefetch is a scheduling barrier.
   No other INSNs will be moved over it.
   Stored in the ``volatil`` field and printed as :samp:`/v`.
 
-  .. index:: REG_FUNCTION_VALUE_P
-
-  .. index:: reg and /i
-
-  .. index:: return_val, in reg
+  .. index:: REG_FUNCTION_VALUE_P, reg and /i, return_val, in reg
 
 :samp:`REG_FUNCTION_VALUE_P ({x})`
   Nonzero in a ``reg`` if it is the place in which this function's
@@ -217,21 +135,13 @@ are accessed with the following macros, which expand into lvalues.
   register.)  Stored in the ``return_val`` field and printed as
   :samp:`/i`.
 
-  .. index:: REG_POINTER
-
-  .. index:: reg and /f
-
-  .. index:: frame_related, in reg
+  .. index:: REG_POINTER, reg and /f, frame_related, in reg
 
 :samp:`REG_POINTER ({x})`
   Nonzero in a ``reg`` if the register holds a pointer.  Stored in the
   ``frame_related`` field and printed as :samp:`/f`.
 
-  .. index:: REG_USERVAR_P
-
-  .. index:: reg and /v
-
-  .. index:: volatil, in reg
+  .. index:: REG_USERVAR_P, reg and /v, volatil, in reg
 
 :samp:`REG_USERVAR_P ({x})`
   In a ``reg``, nonzero if it corresponds to a variable present in
@@ -243,41 +153,27 @@ are accessed with the following macros, which expand into lvalues.
   functions called by this one, but ``REG_FUNCTION_VALUE_P`` is zero
   in this kind of use.
 
-  .. index:: RTL_CONST_CALL_P
-
-  .. index:: call_insn and /u
-
-  .. index:: unchanging, in call_insn
+  .. index:: RTL_CONST_CALL_P, call_insn and /u, unchanging, in call_insn
 
 :samp:`RTL_CONST_CALL_P ({x})`
   In a ``call_insn`` indicates that the insn represents a call to a
   const function.  Stored in the ``unchanging`` field and printed as
   :samp:`/u`.
 
-  .. index:: RTL_PURE_CALL_P
-
-  .. index:: call_insn and /i
-
-  .. index:: return_val, in call_insn
+  .. index:: RTL_PURE_CALL_P, call_insn and /i, return_val, in call_insn
 
 :samp:`RTL_PURE_CALL_P ({x})`
   In a ``call_insn`` indicates that the insn represents a call to a
   pure function.  Stored in the ``return_val`` field and printed as
   :samp:`/i`.
 
-  .. index:: RTL_CONST_OR_PURE_CALL_P
-
-  .. index:: call_insn and /u or /i
+  .. index:: RTL_CONST_OR_PURE_CALL_P, call_insn and /u or /i
 
 :samp:`RTL_CONST_OR_PURE_CALL_P ({x})`
   In a ``call_insn``, true if ``RTL_CONST_CALL_P`` or
   ``RTL_PURE_CALL_P`` is true.
 
-  .. index:: RTL_LOOPING_CONST_OR_PURE_CALL_P
-
-  .. index:: call_insn and /c
-
-  .. index:: call, in call_insn
+  .. index:: RTL_LOOPING_CONST_OR_PURE_CALL_P, call_insn and /c, call, in call_insn
 
 :samp:`RTL_LOOPING_CONST_OR_PURE_CALL_P ({x})`
   In a ``call_insn`` indicates that the insn represents a possibly
@@ -285,19 +181,7 @@ are accessed with the following macros, which expand into lvalues.
   ``call`` field and printed as :samp:`/c`.  Only true if one of
   ``RTL_CONST_CALL_P`` or ``RTL_PURE_CALL_P`` is true.
 
-  .. index:: RTX_FRAME_RELATED_P
-
-  .. index:: insn and /f
-
-  .. index:: call_insn and /f
-
-  .. index:: jump_insn and /f
-
-  .. index:: barrier and /f
-
-  .. index:: set and /f
-
-  .. index:: frame_related, in insn, call_insn, jump_insn, barrier, and set
+  .. index:: RTX_FRAME_RELATED_P, insn and /f, call_insn and /f, jump_insn and /f, barrier and /f, set and /f, frame_related, in insn, call_insn, jump_insn, barrier, and set
 
 :samp:`RTX_FRAME_RELATED_P ({x})`
   Nonzero in an ``insn``, ``call_insn``, ``jump_insn``,
@@ -326,17 +210,7 @@ are accessed with the following macros, which expand into lvalues.
   This flag is required for exception handling support on targets with RTL
   prologues.
 
-  .. index:: SCHED_GROUP_P
-
-  .. index:: insn and /s
-
-  .. index:: call_insn and /s
-
-  .. index:: jump_insn and /s
-
-  .. index:: jump_table_data and /s
-
-  .. index:: in_struct, in insn, call_insn, jump_insn and jump_table_data
+  .. index:: SCHED_GROUP_P, insn and /s, call_insn and /s, jump_insn and /s, jump_table_data and /s, in_struct, in insn, call_insn, jump_insn and jump_table_data
 
 :samp:`SCHED_GROUP_P ({x})`
   During instruction scheduling, in an ``insn``, ``call_insn``,
@@ -347,44 +221,26 @@ are accessed with the following macros, which expand into lvalues.
   a ``call_insn`` may not be separated from the ``call_insn``.
   Stored in the ``in_struct`` field and printed as :samp:`/s`.
 
-  .. index:: SET_IS_RETURN_P
-
-  .. index:: insn and /j
-
-  .. index:: jump, in insn
+  .. index:: SET_IS_RETURN_P, insn and /j, jump, in insn
 
 :samp:`SET_IS_RETURN_P ({x})`
   For a ``set``, nonzero if it is for a return.
   Stored in the ``jump`` field and printed as :samp:`/j`.
 
-  .. index:: SIBLING_CALL_P
-
-  .. index:: call_insn and /j
-
-  .. index:: jump, in call_insn
+  .. index:: SIBLING_CALL_P, call_insn and /j, jump, in call_insn
 
 :samp:`SIBLING_CALL_P ({x})`
   For a ``call_insn``, nonzero if the insn is a sibling call.
   Stored in the ``jump`` field and printed as :samp:`/j`.
 
-  .. index:: STRING_POOL_ADDRESS_P
-
-  .. index:: symbol_ref and /f
-
-  .. index:: frame_related, in symbol_ref
+  .. index:: STRING_POOL_ADDRESS_P, symbol_ref and /f, frame_related, in symbol_ref
 
 :samp:`STRING_POOL_ADDRESS_P ({x})`
   For a ``symbol_ref`` expression, nonzero if it addresses this function's
   string constant pool.
   Stored in the ``frame_related`` field and printed as :samp:`/f`.
 
-  .. index:: SUBREG_PROMOTED_UNSIGNED_P
-
-  .. index:: subreg and /u and /v
-
-  .. index:: unchanging, in subreg
-
-  .. index:: volatil, in subreg
+  .. index:: SUBREG_PROMOTED_UNSIGNED_P, subreg and /u and /v, unchanging, in subreg, volatil, in subreg
 
 :samp:`SUBREG_PROMOTED_UNSIGNED_P ({x})`
   Returns a value greater then zero for a ``subreg`` that has
@@ -396,13 +252,7 @@ are accessed with the following macros, which expand into lvalues.
   This macro may only be used to get the value it may not be used to change
   the value.  Use ``SUBREG_PROMOTED_UNSIGNED_SET`` to change the value.
 
-  .. index:: SUBREG_PROMOTED_UNSIGNED_SET
-
-  .. index:: subreg and /u
-
-  .. index:: unchanging, in subreg
-
-  .. index:: volatil, in subreg
+  .. index:: SUBREG_PROMOTED_UNSIGNED_SET, subreg and /u, unchanging, in subreg, volatil, in subreg
 
 :samp:`SUBREG_PROMOTED_UNSIGNED_SET ({x})`
   Set the ``unchanging`` and ``volatil`` fields in a ``subreg``
@@ -411,11 +261,7 @@ are accessed with the following macros, which expand into lvalues.
   zero means sign extension.  If ``volatil`` is nonzero then some
   other type of extension was done via the ``ptr_extend`` instruction.
 
-  .. index:: SUBREG_PROMOTED_VAR_P
-
-  .. index:: subreg and /s
-
-  .. index:: in_struct, in subreg
+  .. index:: SUBREG_PROMOTED_VAR_P, subreg and /s, in_struct, in subreg
 
 :samp:`SUBREG_PROMOTED_VAR_P ({x})`
   Nonzero in a ``subreg`` if it was made when accessing an object that
@@ -427,30 +273,20 @@ are accessed with the following macros, which expand into lvalues.
   mode on every assignment.  Stored in the ``in_struct`` field and
   printed as :samp:`/s`.
 
-  .. index:: SYMBOL_REF_USED
-
-  .. index:: used, in symbol_ref
+  .. index:: SYMBOL_REF_USED, used, in symbol_ref
 
 :samp:`SYMBOL_REF_USED ({x})`
   In a ``symbol_ref``, indicates that :samp:`{x}` has been used.  This is
   normally only used to ensure that :samp:`{x}` is only declared external
   once.  Stored in the ``used`` field.
 
-  .. index:: SYMBOL_REF_WEAK
-
-  .. index:: symbol_ref and /i
-
-  .. index:: return_val, in symbol_ref
+  .. index:: SYMBOL_REF_WEAK, symbol_ref and /i, return_val, in symbol_ref
 
 :samp:`SYMBOL_REF_WEAK ({x})`
   In a ``symbol_ref``, indicates that :samp:`{x}` has been declared weak.
   Stored in the ``return_val`` field and printed as :samp:`/i`.
 
-  .. index:: SYMBOL_REF_FLAG
-
-  .. index:: symbol_ref and /v
-
-  .. index:: volatil, in symbol_ref
+  .. index:: SYMBOL_REF_FLAG, symbol_ref and /v, volatil, in symbol_ref
 
 :samp:`SYMBOL_REF_FLAG ({x})`
   In a ``symbol_ref``, this is used as a flag for machine-specific purposes.
@@ -462,9 +298,7 @@ are accessed with the following macros, which expand into lvalues.
 
   These are the fields to which the above macros refer:
 
-.. index:: call
-
-.. index:: /c in RTL dump
+.. index:: call, /c in RTL dump
 
 ``call``
   In a ``mem``, 1 means that the memory reference will not trap.
@@ -474,9 +308,7 @@ are accessed with the following macros, which expand into lvalues.
 
   In an RTL dump, this flag is represented as :samp:`/c`.
 
-  .. index:: frame_related
-
-  .. index:: /f in RTL dump
+  .. index:: frame_related, /f in RTL dump
 
 ``frame_related``
   In an ``insn`` or ``set`` expression, 1 means that it is part of
@@ -493,9 +325,7 @@ are accessed with the following macros, which expand into lvalues.
 
   In an RTL dump, this flag is represented as :samp:`/f`.
 
-  .. index:: in_struct
-
-  .. index:: /s in RTL dump
+  .. index:: in_struct, /s in RTL dump
 
 ``in_struct``
   In ``reg`` expressions, it is 1 if the register has its entire life
@@ -525,9 +355,7 @@ are accessed with the following macros, which expand into lvalues.
 
   In an RTL dump, this flag is represented as :samp:`/s`.
 
-  .. index:: return_val
-
-  .. index:: /i in RTL dump
+  .. index:: return_val, /i in RTL dump
 
 ``return_val``
   In ``reg`` expressions, 1 means the register contains
@@ -542,9 +370,7 @@ are accessed with the following macros, which expand into lvalues.
 
   In an RTL dump, this flag is represented as :samp:`/i`.
 
-  .. index:: jump
-
-  .. index:: /j in RTL dump
+  .. index:: jump, /j in RTL dump
 
 ``jump``
   In a ``mem`` expression, 1 means we should keep the alias set for this
@@ -558,9 +384,7 @@ are accessed with the following macros, which expand into lvalues.
 
   In an RTL dump, this flag is represented as :samp:`/j`.
 
-  .. index:: unchanging
-
-  .. index:: /u in RTL dump
+  .. index:: unchanging, /u in RTL dump
 
 ``unchanging``
   In ``reg`` and ``mem`` expressions, 1 means
@@ -595,9 +419,7 @@ are accessed with the following macros, which expand into lvalues.
   In a ``symbol_ref``, it indicates that an external declaration for
   the symbol has already been written.
 
-  .. index:: volatil
-
-  .. index:: /v in RTL dump
+  .. index:: volatil, /v in RTL dump
 
 ``volatil``
 
@@ -623,4 +445,3 @@ are accessed with the following macros, which expand into lvalues.
   scheduling barrier.
 
   In an RTL dump, this flag is represented as :samp:`/v`.
-

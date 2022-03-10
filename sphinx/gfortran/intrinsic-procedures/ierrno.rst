@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IERRNO, system, error handling
+
 .. _ierrno:
-
-.. index:: IERRNO
-
-.. index:: system, error handling
 
 IERRNO --- Get the last system error number
 *******************************************
@@ -38,4 +36,3 @@ IERRNO --- Get the last system error number
 
   :samp:`{See also}:`
     :ref:`PERROR`
-

@@ -54,4 +54,3 @@ GIMPLE_BIND
 
   Set ``BLOCK`` to be the ``TREE_BLOCK`` node associated with ``GIMPLE_BIND``
   statement ``G``.
-

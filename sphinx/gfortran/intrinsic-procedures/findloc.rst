@@ -8,9 +8,7 @@
 FINDLOC --- Search an array for a value
 ***************************************
 
-.. index:: FINDLOC
-
-.. index:: findloc
+.. index:: FINDLOC, findloc
 
 .. function:: FINDLOC(ARRAY, VALUE, MASK, KIND, BACK)
 
@@ -79,4 +77,3 @@ FINDLOC --- Search an array for a value
   :samp:`{See also}:`
     :ref:`MAXLOC`, 
     :ref:`MINLOC`
-

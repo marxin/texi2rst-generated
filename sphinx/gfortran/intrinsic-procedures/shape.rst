@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SHAPE, array, shape
+
 .. _shape:
-
-.. index:: SHAPE
-
-.. index:: array, shape
 
 SHAPE --- Determine the shape of an array
 *****************************************
@@ -57,4 +55,3 @@ SHAPE --- Determine the shape of an array
   :samp:`{See also}:`
     :ref:`RESHAPE`, 
     :ref:`SIZE`
-

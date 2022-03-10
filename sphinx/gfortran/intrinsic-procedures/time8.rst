@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TIME8, time, current, current time
+
 .. _time8:
-
-.. index:: TIME8
-
-.. index:: time, current
-
-.. index:: current time
 
 TIME8 --- Time function (64-bit)
 ********************************
@@ -42,4 +38,3 @@ TIME8 --- Time function (64-bit)
     :ref:`LTIME`, 
     :ref:`MCLOCK8`, 
     :ref:`TIME`
-

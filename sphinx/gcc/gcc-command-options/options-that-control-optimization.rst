@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: optimize options, options, optimization
+
 .. _optimize-options:
-
-.. index:: optimize options
-
-.. index:: options, optimization
 
 Options That Control Optimization
 *********************************

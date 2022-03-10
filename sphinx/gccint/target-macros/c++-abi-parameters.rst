@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _c++-abi:
-
 .. index:: parameters, c++ abi
+
+.. _c++-abi:
 
 C++ ABI parameters
 ******************
@@ -162,4 +162,3 @@ C++ ABI parameters
   Return target-specific mangling context of :samp:`{decl}` or ``NULL_TREE``.
 
 .. hook-end
-

@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MIN, MIN0, AMIN0, MIN1, AMIN1, DMIN1, minimum value
+
 .. _min:
-
-.. index:: MIN
-
-.. index:: MIN0
-
-.. index:: AMIN0
-
-.. index:: MIN1
-
-.. index:: AMIN1
-
-.. index:: DMIN1
-
-.. index:: minimum value
 
 MIN --- Minimum value of an argument list
 *****************************************
@@ -66,4 +54,3 @@ MIN --- Minimum value of an argument list
     :ref:`MAX`, 
     :ref:`MINLOC`, 
     :ref:`MINVAL`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: INT8, conversion, to integer
+
 .. _int8:
-
-.. index:: INT8
-
-.. index:: conversion, to integer
 
 INT8 --- Convert to 64-bit integer type
 ***************************************
@@ -40,4 +38,3 @@ INT8 --- Convert to 64-bit integer type
   :samp:`{See also}:`
     :ref:`INT`, 
     :ref:`INT2`
-

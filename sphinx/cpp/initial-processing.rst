@@ -72,9 +72,7 @@ standard.
     Trigraph:       ??(  ??)  ??<  ??>  ??=  ??/  ??'  ??!  ??-
     Replacement:      [    ]    {    }    #    \    ^    |    ~
 
-.. index:: continued lines
-
-.. index:: backslash-newline
+.. index:: continued lines, backslash-newline
 
 * Continued lines are merged into one long line.
 
@@ -92,11 +90,7 @@ standard.
   editing mistake, and many compilers will not accept it as a continued
   line, GCC will warn you about it.
 
-.. index:: comments
-
-.. index:: line comments
-
-.. index:: block comments
+.. index:: comments, line comments, block comments
 
 * All comments are replaced with single spaces.
 
@@ -168,4 +162,3 @@ readable.
 There is no way to prevent a backslash at the end of a line from being
 interpreted as a backslash-newline.  This cannot affect any correct
 program, however.
-

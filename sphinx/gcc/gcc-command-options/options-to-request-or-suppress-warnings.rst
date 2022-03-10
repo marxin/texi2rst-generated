@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options to control warnings, warning messages, messages, warning, suppressing warnings
+
 .. _warning-options:
-
-.. index:: options to control warnings
-
-.. index:: warning messages
-
-.. index:: messages, warning
-
-.. index:: suppressing warnings
 
 Options to Request or Suppress Warnings
 ***************************************
@@ -1874,11 +1868,7 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wmaybe-uninitialized`.
 
-.. index:: warning for unknown pragmas
-
-.. index:: unknown pragmas, warning
-
-.. index:: pragmas, warning of unknown
+.. index:: warning for unknown pragmas, unknown pragmas, warning, pragmas, warning of unknown
 
 .. option:: -Wunknown-pragmas
 
@@ -2690,9 +2680,7 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wno-div-by-zero`.
 
-.. index:: warnings from system headers
-
-.. index:: system headers, warnings from
+.. index:: warnings from system headers, system headers, warnings from
 
 .. option:: -Wsystem-headers
 
@@ -3644,11 +3632,7 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wjump-misses-init`.
 
-.. index:: warning for comparison of signed and unsigned values
-
-.. index:: comparison of signed and unsigned values, warning
-
-.. index:: signed and unsigned values, comparison warning
+.. index:: warning for comparison of signed and unsigned values, comparison of signed and unsigned values, warning, signed and unsigned values, comparison warning
 
 .. option:: -Wsign-compare
 
@@ -4191,11 +4175,7 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wno-multichar`.
 
-.. index:: NFC
-
-.. index:: NFKC
-
-.. index:: character set, input normalization
+.. index:: NFC, NFKC, character set, input normalization
 
 .. option:: -Wnormalized=[none|id|nfc|nfkc]
 
@@ -4790,4 +4770,3 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wdesignated-init
 
   Default setting; overrides :option:`-Wno-designated-init`.
-

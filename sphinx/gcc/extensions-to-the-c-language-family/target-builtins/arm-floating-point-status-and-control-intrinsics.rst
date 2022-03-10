@@ -15,4 +15,3 @@ processors with floating-point unit.
 
   unsigned int __builtin_arm_get_fpscr ();
   void __builtin_arm_set_fpscr (unsigned int);
-

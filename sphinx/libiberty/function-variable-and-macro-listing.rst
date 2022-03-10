@@ -963,11 +963,7 @@ sets of characters:
 
     Send the program's standard error to standard output, if possible.
 
-    .. index:: PEX_BINARY_INPUT
-
-    .. index:: PEX_BINARY_OUTPUT
-
-    .. index:: PEX_BINARY_ERROR
+    .. index:: PEX_BINARY_INPUT, PEX_BINARY_OUTPUT, PEX_BINARY_ERROR
 
   .. envvar:: PEX_BINARY_INPUT
 
@@ -1841,4 +1837,3 @@ sets of characters:
   Print to allocated string without fail.  If ``xvasprintf`` fails,
   this will print a message to ``stderr`` (using the name set by
   ``xmalloc_set_program_name``, if any) and then call ``xexit``.
-

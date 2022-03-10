@@ -157,4 +157,3 @@ processors when the :option:`-mcpu`:samp:`=iwmmxt` switch is used:
   v2si __builtin_arm_wunpckilw (v2si, v2si);
   long long __builtin_arm_wxor (long long, long long);
   long long __builtin_arm_wzero ();
-

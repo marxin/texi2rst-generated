@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: makefile targets, targets, makefile
+
 .. _makefile:
-
-.. index:: makefile targets
-
-.. index:: targets, makefile
 
 Makefile Targets
 ^^^^^^^^^^^^^^^^
@@ -188,4 +186,3 @@ Alternatively, you can use per-language targets to build and test
 languages that are not enabled by default in stage1.  For example,
 :command:`make f951` will build a Fortran compiler even in the stage1
 build directory.
-

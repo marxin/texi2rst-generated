@@ -5,9 +5,9 @@
 
 .. program:: x86
 
-.. _x86-options:
-
 .. index:: x86 Options
+
+.. _x86-options:
 
 x86 Options
 ^^^^^^^^^^^
@@ -1557,4 +1557,3 @@ on x86-64 processors in 64-bit environments.
 .. option:: -mdirect-extern-access
 
   Default setting; overrides :option:`-mno-direct-extern-access`.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: restricted pointers, restricted references, restricted this pointer
+
 .. _restricted-pointers:
-
-.. index:: restricted pointers
-
-.. index:: restricted references
-
-.. index:: restricted this pointer
 
 Restricting Pointer Aliasing
 ****************************
@@ -54,4 +50,3 @@ As with all outermost parameter qualifiers, ``__restrict__`` is
 ignored in function definition matching.  This means you only need to
 specify ``__restrict__`` in a function definition, rather than
 in a function prototype as well.
-

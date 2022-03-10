@@ -5,9 +5,9 @@
 
 .. program:: PDP-11
 
-.. _pdp-11-options:
-
 .. index:: PDP-11 Options
+
+.. _pdp-11-options:
 
 PDP-11 Options
 ^^^^^^^^^^^^^^
@@ -71,4 +71,3 @@ These options are defined for the PDP-11:
 
   Use the new LRA register allocator.  By default, the old 'reload'
   allocator is used.
-

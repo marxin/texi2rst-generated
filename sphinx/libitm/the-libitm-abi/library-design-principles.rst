@@ -59,4 +59,3 @@ Function pointer encryption
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Currently, this is not implemented.
-

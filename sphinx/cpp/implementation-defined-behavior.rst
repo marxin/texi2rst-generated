@@ -95,4 +95,3 @@ and stick to it.
 
   Note that GCC does not yet implement any of the standard
   pragmas.
-

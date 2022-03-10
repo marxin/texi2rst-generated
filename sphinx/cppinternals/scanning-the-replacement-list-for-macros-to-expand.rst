@@ -55,4 +55,3 @@ then tested whether the macro were disabled it would be subtly wrong.
 In the example above, the replacement list of :samp:`foo` would be
 popped in the process of finding the parenthesis, re-enabling
 :samp:`foo` and expanding it a second time.
-

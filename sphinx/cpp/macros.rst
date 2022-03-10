@@ -35,4 +35,3 @@ macros when you are compiling C++.
   macros/undefining-and-redefining-macros
   macros/directives-within-macro-arguments
   macros/macro-pitfalls
-

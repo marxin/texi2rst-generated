@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: __func__ identifier, __FUNCTION__ identifier, __PRETTY_FUNCTION__ identifier
+
 .. _function-names:
-
-.. index:: __func__ identifier
-
-.. index:: __FUNCTION__ identifier
-
-.. index:: __PRETTY_FUNCTION__ identifier
 
 Function Names as Strings
 *************************
@@ -73,4 +69,3 @@ gives this output:
 These identifiers are variables, not preprocessor macros, and may not
 be used to initialize ``char`` arrays or be concatenated with string
 literals.
-

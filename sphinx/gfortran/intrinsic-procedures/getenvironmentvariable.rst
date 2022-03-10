@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GET_ENVIRONMENT_VARIABLE, environment variable
+
 .. _get_environment_variable:
-
-.. index:: GET_ENVIRONMENT_VARIABLE
-
-.. index:: environment variable
 
 GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
 **********************************************************
@@ -70,4 +68,3 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
         CALL get_environment_variable("HOME", homedir)
         WRITE (*,*) TRIM(homedir)
       END PROGRAM
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MINEXPONENT, model representation, minimum exponent
+
 .. _minexponent:
-
-.. index:: MINEXPONENT
-
-.. index:: model representation, minimum exponent
 
 MINEXPONENT --- Minimum exponent of a real kind
 ***********************************************
@@ -38,4 +36,3 @@ MINEXPONENT --- Minimum exponent of a real kind
 
   :samp:`{Example}:`
     See ``MAXEXPONENT`` for an example.
-

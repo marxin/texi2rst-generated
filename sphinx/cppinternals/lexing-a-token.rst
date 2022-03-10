@@ -175,4 +175,3 @@ correct even if its source buffer is freed with ``_cpp_pop_buffer``.
 The storage holding the spellings of such tokens remains until the
 client program calls cpp_destroy, probably at the end of the translation
 unit.
-

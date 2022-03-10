@@ -8,11 +8,7 @@
 CMPLX --- Complex conversion function
 *************************************
 
-.. index:: CMPLX
-
-.. index:: complex numbers, conversion to
-
-.. index:: conversion, to complex
+.. index:: CMPLX, complex numbers, conversion to, conversion, to complex
 
 .. function:: CMPLX(X, Y, KIND)
 
@@ -65,4 +61,3 @@ CMPLX --- Complex conversion function
 
   :samp:`{See also}:`
     :ref:`COMPLEX`
-

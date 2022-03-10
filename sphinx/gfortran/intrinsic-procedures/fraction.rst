@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: FRACTION, real number, fraction, floating point, fraction
+
 .. _fraction:
-
-.. index:: FRACTION
-
-.. index:: real number, fraction
-
-.. index:: floating point, fraction
 
 FRACTION --- Fractional part of the model representation
 ********************************************************
@@ -48,4 +44,3 @@ FRACTION --- Fractional part of the model representation
         x = 178.1387e-4
         print *, fraction(x), x * radix(x)**(-exponent(x))
       end program test_fraction
-

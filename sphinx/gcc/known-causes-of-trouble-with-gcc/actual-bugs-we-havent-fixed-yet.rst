@@ -12,4 +12,3 @@ Actual Bugs We Haven't Fixed Yet
   directory of system header files is automounted, it tends to be
   unmounted while ``fixincludes`` is running.  This would seem to be a
   bug in the automounter.  We don't know any good way to work around it.
-

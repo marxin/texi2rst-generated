@@ -13,4 +13,3 @@ under the :samp:`gcc` directory that aren't built into the GCC
 executable but rather are part of runtime libraries and object files,
 such as :samp:`crtstuff.c` and :samp:`unwind-dw2.c`.  See :ref:`headers`, for more information about the
 :samp:`ginclude` directory.
-

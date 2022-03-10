@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ATOMIC_FETCH_AND, Atomic subroutine, AND with fetch
+
 .. _atomic_fetch_and:
-
-.. index:: ATOMIC_FETCH_AND
-
-.. index:: Atomic subroutine, AND with fetch
 
 ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
 ******************************************************************
@@ -66,4 +64,3 @@ ATOMIC_FETCH_AND --- Atomic bitwise AND operation with prior fetch
     :ref:`ATOMIC_FETCH_ADD`, 
     :ref:`ATOMIC_FETCH_OR`, 
     :ref:`ATOMIC_FETCH_XOR`
-

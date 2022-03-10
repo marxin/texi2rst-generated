@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: INDEX, substring position, string, find substring
+
 .. _index-intrinsic:
-
-.. index:: INDEX
-
-.. index:: substring position
-
-.. index:: string, find substring
 
 INDEX --- Position of a substring within a string
 *************************************************
@@ -64,4 +60,3 @@ INDEX --- Position of a substring within a string
   :samp:`{See also}:`
     :ref:`SCAN`, 
     :ref:`VERIFY`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: attribute of types, type attributes
+
 .. _type-attributes:
-
-.. index:: attribute of types
-
-.. index:: type attributes
 
 Specifying Attributes of Types
 ******************************
@@ -592,9 +590,9 @@ To specify multiple attributes, separate them by commas within the
 double parentheses: for example, :samp:`__attribute__ ((aligned (16),
 packed))`.
 
-.. _arc-type-attributes:
-
 .. index:: uncached type attribute, ARC
+
+.. _arc-type-attributes:
 
 ARC Type Attributes
 ^^^^^^^^^^^^^^^^^^^
@@ -605,9 +603,9 @@ without involving the additional semantic implications of
 ``volatile``.  The ``.di`` instruction suffix is used for all
 loads and stores of data declared ``uncached``.
 
-.. _arm-type-attributes:
-
 .. index:: notshared type attribute, ARM
+
+.. _arm-type-attributes:
 
 ARM Type Attributes
 ^^^^^^^^^^^^^^^^^^^
@@ -633,9 +631,9 @@ virtual table for ``C`` is not exported.  (You can use
 ``__attribute__`` instead of ``__declspec`` if you prefer, but
 most Symbian OS code uses ``__declspec``.)
 
-.. _bpf-type-attributes:
-
 .. index:: preserve_access_index type attribute, BPF
+
+.. _bpf-type-attributes:
 
 BPF Type Attributes
 ^^^^^^^^^^^^^^^^^^^
@@ -646,15 +644,9 @@ relocation information should be generated for any access to a variable
 of that type. The behavior is equivalent to the programmer manually
 wrapping every such access with ``__builtin_preserve_access_index``.
 
+.. index:: based type attribute, MeP, tiny type attribute, MeP, near type attribute, MeP, far type attribute, MeP
+
 .. _mep-type-attributes:
-
-.. index:: based type attribute, MeP
-
-.. index:: tiny type attribute, MeP
-
-.. index:: near type attribute, MeP
-
-.. index:: far type attribute, MeP
 
 MeP Type Attributes
 ^^^^^^^^^^^^^^^^^^^
@@ -672,9 +664,7 @@ PowerPC Type Attributes
 Three attributes currently are defined for PowerPC configurations:
 ``altivec``, :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. index:: ms_struct type attribute, PowerPC
-
-.. index:: gcc_struct type attribute, PowerPC
+.. index:: ms_struct type attribute, PowerPC, gcc_struct type attribute, PowerPC
 
 For full documentation of the :gcc-attr:`ms_struct` and ``gcc_struct``
 attributes please see the documentation in :ref:`x86-type-attributes`.
@@ -704,9 +694,7 @@ x86 Type Attributes
 Two attributes are currently defined for x86 configurations:
 :gcc-attr:`ms_struct` and ``gcc_struct``.
 
-.. index:: ms_struct type attribute, x86
-
-.. index:: gcc_struct type attribute, x86
+.. index:: ms_struct type attribute, x86, gcc_struct type attribute, x86
 
 .. gcc-attr:: ms_struct, gcc_struct
 
@@ -723,4 +711,3 @@ Two attributes are currently defined for x86 configurations:
   see :ref:`x86-options`, for details of how structure layout is affected.
   See :ref:`x86-variable-attributes`, for information about the corresponding
   attributes on variables.
-

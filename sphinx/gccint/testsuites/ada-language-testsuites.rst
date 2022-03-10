@@ -36,4 +36,3 @@ customization section at the top of :samp:`run_all.sh`.
 
 These tests are run using the build tree: they can be run without doing
 a ``make install``.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GETENV, environment variable
+
 .. _getenv:
-
-.. index:: GETENV
-
-.. index:: environment variable
 
 GETENV --- Get an environmental variable
 ****************************************
@@ -51,4 +49,3 @@ GETENV --- Get an environmental variable
 
   :samp:`{See also}:`
     :ref:`GET_ENVIRONMENT_VARIABLE`
-

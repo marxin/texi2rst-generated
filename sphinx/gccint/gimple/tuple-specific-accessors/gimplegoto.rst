@@ -19,4 +19,3 @@ GIMPLE_GOTO
 .. function:: void gimple_goto_set_dest (ggoto *g, tree dest)
 
   Set ``DEST`` to be the destination of the unconditional jump ``G``.
-

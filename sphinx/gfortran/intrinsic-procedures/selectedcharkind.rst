@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SELECTED_CHAR_KIND, character kind, kind, character
+
 .. _selected_char_kind:
-
-.. index:: SELECTED_CHAR_KIND
-
-.. index:: character kind
-
-.. index:: kind, character
 
 SELECTED_CHAR_KIND --- Choose character kind
 ********************************************
@@ -60,4 +56,3 @@ SELECTED_CHAR_KIND --- Choose character kind
         open (output_unit, encoding='UTF-8')
         write (*,*) trim (hello_world)
       end program character_kind
-

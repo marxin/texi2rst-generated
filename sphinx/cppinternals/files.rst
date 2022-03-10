@@ -68,4 +68,3 @@ other is found in a special file called :samp:`header.gcc`, stored in the
 command line (or system) include directories to which the mapping
 applies.  This may be higher up the directory tree than the full path to
 the file minus the base name.
-

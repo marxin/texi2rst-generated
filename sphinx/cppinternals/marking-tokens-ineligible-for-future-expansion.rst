@@ -22,4 +22,3 @@ end of a line if it happens to be in the middle of a macro argument
 list, and cpplib only wants to back-up more than one lexer token in
 situations where no macro expansion is involved, so the optimization
 is safe.
-

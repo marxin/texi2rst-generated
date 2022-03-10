@@ -3,29 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ABS, CABS, DABS, IABS, ZABS, CDABS, BABS, IIABS, JIABS, KIABS, absolute value
+
 .. _abs:
-
-.. index:: ABS
-
-.. index:: CABS
-
-.. index:: DABS
-
-.. index:: IABS
-
-.. index:: ZABS
-
-.. index:: CDABS
-
-.. index:: BABS
-
-.. index:: IIABS
-
-.. index:: JIABS
-
-.. index:: KIABS
-
-.. index:: absolute value
 
 ABS --- Absolute value
 **********************
@@ -83,4 +63,3 @@ ABS --- Absolute value
     ``ZABS(A)``   ``COMPLEX(8) A``  ``REAL(8)``     GNU extension
     ``CDABS(A)``  ``COMPLEX(8) A``  ``REAL(8)``     GNU extension
     ============  ================  ==============  ====================
-

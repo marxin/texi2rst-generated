@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: anchored addresses, -fsection-anchors
+
 .. _anchored-addresses:
-
-.. index:: anchored addresses
-
-.. index:: -fsection-anchors
 
 Anchored Addresses
 ******************
@@ -92,4 +90,3 @@ or ``TARGET_MAX_ANCHOR_OFFSET`` is set to a nonzero value.
   or target-specific sections.
 
 .. hook-end
-

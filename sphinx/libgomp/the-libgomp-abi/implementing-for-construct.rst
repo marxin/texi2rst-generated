@@ -71,4 +71,3 @@ of these routines.
 
 There are separate routines for handling loops with an ORDERED
 clause.  Bookkeeping for that is non-trivial...
-

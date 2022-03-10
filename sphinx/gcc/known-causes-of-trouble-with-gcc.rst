@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: bugs, known, installation trouble, known causes of trouble
+
 .. _trouble:
-
-.. index:: bugs, known
-
-.. index:: installation trouble
-
-.. index:: known causes of trouble
 
 Known Causes of Trouble with GCC
 --------------------------------

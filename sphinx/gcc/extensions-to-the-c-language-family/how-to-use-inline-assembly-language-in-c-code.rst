@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: asm keyword, assembly language in C, inline assembly language, mixing assembly language and C
+
 .. _using-assembly-language-with-c:
-
-.. index:: asm keyword
-
-.. index:: assembly language in C
-
-.. index:: inline assembly language
-
-.. index:: mixing assembly language and C
 
 How to Use Inline Assembly Language in C Code
 *********************************************
@@ -32,11 +26,9 @@ for a C symbol, or to place a C variable in a specific register.
   :maxdepth: 2
 
 
+.. index:: basic asm, assembly language in C, basic
+
 .. _basic-asm:
-
-.. index:: basic asm
-
-.. index:: assembly language in C, basic
 
 Basic Asm --- Assembler Instructions Without Operands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -168,11 +160,9 @@ Here is an example of basic ``asm`` for i386:
   /* Note that this code will not compile with -masm=intel */
   #define DebugBreak() asm("int $3")
 
+.. index:: extended asm, assembly language in C, extended
+
 .. _extended-asm:
-
-.. index:: extended asm
-
-.. index:: assembly language in C, extended
 
 Extended Asm - Assembler Instructions with C Expression Operands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -288,11 +278,9 @@ example for i386 using ``asm`` might look like this:
 
 This code copies ``src`` to ``dst`` and add 1 to ``dst``.
 
+.. index:: volatile asm, asm volatile
+
 .. _volatile:
-
-.. index:: volatile asm
-
-.. index:: asm volatile
 
 Volatile
 ~~~~~~~~
@@ -415,9 +403,9 @@ errors during compilation if your ``asm`` code defines symbols or labels.
 Using :samp:`%=` 
 (see :ref:`assemblertemplate`) may help resolve this problem.
 
-.. _assemblertemplate:
-
 .. index:: asm assembler template
+
+.. _assemblertemplate:
 
 Assembler Template
 ~~~~~~~~~~~~~~~~~~
@@ -531,9 +519,9 @@ corresponds to either
 
 There is no support for nesting dialect alternatives.
 
-.. _outputoperands:
-
 .. index:: asm output operands
+
+.. _outputoperands:
 
 Output Operands
 ~~~~~~~~~~~~~~~
@@ -707,9 +695,9 @@ pointed to by ``e``
 in a register, you can enable it to choose the best location
 for ``d`` by specifying both constraints.
 
-.. _flagoutputoperands:
-
 .. index:: asm flag output operands
+
+.. _flagoutputoperands:
 
 Flag Output Operands
 ~~~~~~~~~~~~~~~~~~~~
@@ -831,11 +819,9 @@ x86 family
   ``na`` ``nae`` ``nb`` ``nbe`` ``nc`` ``ne`` ``ng`` ``nge`` ``nl`` ``nle`` ``no`` ``np`` ``ns`` ``nz``
     'not' :samp:`{flag}`, or inverted versions of those above
 
+.. index:: asm input operands, asm expressions
+
 .. _inputoperands:
-
-.. index:: asm input operands
-
-.. index:: asm expressions
 
 Input Operands
 ~~~~~~~~~~~~~~
@@ -942,11 +928,9 @@ Here is an example using symbolic names.
      : [result] "=r"(result) 
      : "r" (test), "r" (new), "[result]" (old));
 
+.. index:: asm clobbers, asm scratch registers
+
 .. _clobbers-and-scratch-registers:
-
-.. index:: asm clobbers
-
-.. index:: asm scratch registers
 
 Clobbers and Scratch Registers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1152,9 +1136,9 @@ number of ``asm`` parameters.
        );
   }
 
-.. _gotolabels:
-
 .. index:: asm goto labels
+
+.. _gotolabels:
 
 Goto Labels
 ~~~~~~~~~~~
@@ -1495,13 +1479,9 @@ Modifier  Description
    when the INTERNALS flag is clear.  Passages that require the internals
    manual's context are conditionalized to appear only in the internals manual.
 
+.. index:: operand constraints, asm, constraints, asm, asm constraints
+
 .. _constraints:
-
-.. index:: operand constraints, asm
-
-.. index:: constraints, asm
-
-.. index:: asm constraints
 
 Constraints for asm Operands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1530,13 +1510,9 @@ the addressing register.
    configuration in older tetex distributions.  Known to not work:
    tetex-1.0.7, known to work: tetex-2.0.2.
 
+.. index:: assembler names for identifiers, names used in assembler code, identifiers, names in assembler code
+
 .. _asm-labels:
-
-.. index:: assembler names for identifiers
-
-.. index:: names used in assembler code
-
-.. index:: identifiers, names in assembler code
 
 Controlling Names Used in Assembler Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1591,13 +1567,9 @@ the assembler code should be ``MYFUNC``.
 Variables in Specified Registers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. index:: explicit register variables, variables in specified registers, specified registers
+
 .. _explicit-reg-vars:
-
-.. index:: explicit register variables
-
-.. index:: variables in specified registers
-
-.. index:: specified registers
 
 GNU C allows you to associate specific hardware registers with C 
 variables.  In almost all cases, allowing the compiler to assign
@@ -1618,13 +1590,9 @@ the two, as explained in the sections below.
 Defining Global Register Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. index:: global register variables, registers, global variables in, registers, global allocation
+
 .. _global-reg-vars:
-
-.. index:: global register variables
-
-.. index:: registers, global variables in
-
-.. index:: registers, global allocation
 
 You can define a global register variable and associate it with a specified 
 register like this:
@@ -1721,15 +1689,7 @@ is not reserved exclusively for the variable, accessing it from handlers of
 asynchronous signals may observe unrelated temporary values residing in the
 register.
 
-.. index:: register variable after longjmp
-
-.. index:: global register after longjmp
-
-.. index:: value after longjmp
-
-.. index:: longjmp
-
-.. index:: setjmp
+.. index:: register variable after longjmp, global register after longjmp, value after longjmp, longjmp, setjmp
 
 On most machines, ``longjmp`` restores to each global register
 variable the value it had at the time of the ``setjmp``. On some
@@ -1744,13 +1704,9 @@ thing happens regardless of what ``longjmp`` does.
 Specifying Registers for Local Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. index:: local variables, specifying registers, specifying registers for local variables, registers for local variables
+
 .. _local-reg-vars:
-
-.. index:: local variables, specifying registers
-
-.. index:: specifying registers for local variables
-
-.. index:: registers for local variables
 
 You can define a local register variable and associate it with a specified 
 register like this:
@@ -1864,4 +1820,3 @@ a label is unreachable.
 This size is also used for inlining decisions.  If you use ``asm inline``
 instead of just ``asm``, then for inlining purposes the size of the asm
 is taken as the minimum size, ignoring how many instructions GCC thinks it is.
-

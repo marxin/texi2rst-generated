@@ -10,9 +10,7 @@ m68k Function Attributes
 
 These function attributes are supported by the m68k back end:
 
-.. index:: interrupt function attribute, m68k
-
-.. index:: interrupt_handler function attribute, m68k
+.. index:: interrupt function attribute, m68k, interrupt_handler function attribute, m68k
 
 .. gcc-attr:: interrupt, interrupt_handler
 
@@ -30,4 +28,3 @@ These function attributes are supported by the m68k back end:
   to run as a thread.  The compiler omits generate prologue/epilogue
   sequences and replaces the return instruction with a ``sleep``
   instruction.  This attribute is available only on fido.
-

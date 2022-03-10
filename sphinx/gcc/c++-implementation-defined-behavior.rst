@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _c++-implementation:
-
 .. index:: implementation-defined behavior, C++ language
+
+.. _c++-implementation:
 
 C++ Implementation-Defined Behavior
 -----------------------------------
@@ -31,4 +31,3 @@ environment); refer to their documentation for details.
 
   conditionally-supported-behavior
   exception-handling
-

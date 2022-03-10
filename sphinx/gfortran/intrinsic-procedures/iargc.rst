@@ -8,13 +8,7 @@
 IARGC --- Get the number of command line arguments
 **************************************************
 
-.. index:: IARGC
-
-.. index:: command-line arguments
-
-.. index:: command-line arguments, number of
-
-.. index:: arguments, to program
+.. index:: IARGC, command-line arguments, command-line arguments, number of, arguments, to program
 
 .. function:: IARGC()
 
@@ -49,4 +43,3 @@ IARGC --- Get the number of command line arguments
     :ref:`GET_COMMAND`, 
     :ref:`GET_COMMAND_ARGUMENT`, 
     :ref:`COMMAND_ARGUMENT_COUNT`
-

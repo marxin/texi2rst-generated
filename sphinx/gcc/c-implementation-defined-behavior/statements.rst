@@ -12,4 +12,3 @@ Statements
   statement (C90 6.6.4.2).
 
   GCC is only limited by available memory.
-

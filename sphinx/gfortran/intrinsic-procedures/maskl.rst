@@ -8,9 +8,7 @@
 MASKL --- Left justified mask
 *****************************
 
-.. index:: MASKL
-
-.. index:: mask, left justified
+.. index:: MASKL, mask, left justified
 
 .. function:: MASKL(I, KIND)
 
@@ -43,4 +41,3 @@ MASKL --- Left justified mask
 
   :samp:`{See also}:`
     :ref:`MASKR`
-

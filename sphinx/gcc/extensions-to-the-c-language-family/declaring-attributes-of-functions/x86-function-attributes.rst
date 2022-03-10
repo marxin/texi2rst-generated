@@ -10,9 +10,7 @@ x86 Function Attributes
 
 These function attributes are supported by the x86 back end:
 
-.. index:: cdecl function attribute, x86-32
-
-.. index:: functions that pop the argument stack on x86-32
+.. index:: cdecl function attribute, x86-32, functions that pop the argument stack on x86-32
 
 .. option:: cdecl
 
@@ -21,9 +19,7 @@ These function attributes are supported by the x86 back end:
   pass arguments.  This is
   useful to override the effects of the :option:`-mrtd` switch.
 
-.. index:: fastcall function attribute, x86-32
-
-.. index:: functions that pop the argument stack on x86-32
+.. index:: fastcall function attribute, x86-32, functions that pop the argument stack on x86-32
 
 .. gcc-attr:: fastcall
 
@@ -34,9 +30,7 @@ These function attributes are supported by the x86 back end:
   pops the arguments off the stack.  If the number of arguments is variable all
   arguments are pushed on the stack.
 
-.. index:: thiscall function attribute, x86-32
-
-.. index:: functions that pop the argument stack on x86-32
+.. index:: thiscall function attribute, x86-32, functions that pop the argument stack on x86-32
 
 .. gcc-attr:: thiscall
 
@@ -50,9 +44,7 @@ These function attributes are supported by the x86 back end:
   As a GCC extension, this calling convention can be used for C functions
   and for static member methods.
 
-.. index:: ms_abi function attribute, x86
-
-.. index:: sysv_abi function attribute, x86
+.. index:: ms_abi function attribute, x86, sysv_abi function attribute, x86
 
 .. gcc-attr:: ms_abi, sysv_abi
 
@@ -104,9 +96,7 @@ These function attributes are supported by the x86 back end:
   basic ``asm`` and C code may appear to work, they cannot be
   depended upon to work reliably and are not supported.
 
-.. index:: regparm function attribute, x86
-
-.. index:: functions that are passed arguments in registers on x86-32
+.. index:: regparm function attribute, x86, functions that are passed arguments in registers on x86-32
 
 .. gcc-attr:: regparm (number)
 
@@ -147,9 +137,7 @@ These function attributes are supported by the x86 back end:
   This supports mixing legacy codes that run with a 4-byte aligned stack
   with modern codes that keep a 16-byte stack for SSE compatibility.
 
-.. index:: stdcall function attribute, x86-32
-
-.. index:: functions that pop the argument stack on x86-32
+.. index:: stdcall function attribute, x86-32, functions that pop the argument stack on x86-32
 
 .. gcc-attr:: stdcall
 
@@ -988,4 +976,3 @@ These function attributes are supported by the x86 back end:
 
   This attribute, attached to a global variable or function, is the
   counterpart to option :option:`-mno-direct-extern-access`.
-

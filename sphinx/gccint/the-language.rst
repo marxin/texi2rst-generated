@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _the-language:
-
 .. index:: The Language
+
+.. _the-language:
 
 The Language
 ************
@@ -382,4 +382,3 @@ You can use the above predicate like
 
 Which will match a bitwise and of an operand with its logical
 inverted value.
-

@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: TRANSFER, bits, move, type cast
+
 .. _transfer:
-
-.. index:: TRANSFER
-
-.. index:: bits, move
-
-.. index:: type cast
 
 TRANSFER --- Transfer bit patterns
 **********************************
@@ -59,4 +55,3 @@ TRANSFER --- Transfer bit patterns
         integer :: x = 2143289344
         print *, transfer(x, 1.0)    ! prints "NaN" on i686
       END PROGRAM
-

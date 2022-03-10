@@ -26,4 +26,3 @@ GIMPLE_OMP_CRITICAL
 .. function:: void gimple_omp_critical_set_name ( gomp_critical *g, tree name)
 
   Set ``NAME`` to be the name associated with ``OMP`` critical statement ``G``.
-

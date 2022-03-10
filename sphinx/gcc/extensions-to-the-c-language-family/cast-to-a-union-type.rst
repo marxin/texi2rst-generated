@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: cast to a union, union, casting to a
+
 .. _cast-to-union:
-
-.. index:: cast to a union
-
-.. index:: union, casting to a
 
 Cast to a Union Type
 ********************
@@ -69,4 +67,3 @@ You can also use the union cast as a function argument:
   void hack (union foo);
   /* ... */
   hack ((union foo) x);
-

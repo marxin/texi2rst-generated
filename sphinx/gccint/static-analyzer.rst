@@ -5,13 +5,9 @@
 
   Contributed by David Malcolm <dmalcolm@redhat.com>.
 
+.. index:: analyzer, static analysis, static analyzer
+
 .. _static-analyzer:
-
-.. index:: analyzer
-
-.. index:: static analysis
-
-.. index:: static analyzer
 
 Static Analyzer
 ---------------
@@ -21,4 +17,3 @@ Static Analyzer
 
   analyzer-internals
   debugging-the-analyzer
-

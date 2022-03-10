@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _omp_schedule:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 OMP_SCHEDULE -- How threads are scheduled
 *****************************************
@@ -24,4 +22,3 @@ OMP_SCHEDULE -- How threads are scheduled
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Sections 2.7.1.1 and 4.1
-

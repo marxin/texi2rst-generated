@@ -515,4 +515,3 @@ Here are macros for BTF debug format.
 
   Define this macro if GCC should produce debugging output in BTF debug
   format in response to the :option:`-gbtf` option.
-

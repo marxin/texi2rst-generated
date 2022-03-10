@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: operands, virtual operands, real operands, update_stmt
+
 .. _ssa-operands:
-
-.. index:: operands
-
-.. index:: virtual operands
-
-.. index:: real operands
-
-.. index:: update_stmt
 
 SSA Operands
 ************
@@ -134,9 +128,7 @@ must be made to ``update_stmt`` when complete.  Calling one of the
 ``bsi_insert`` routines or ``bsi_replace`` performs an implicit
 call to ``update_stmt``.
 
-.. index:: Operand Iterators
-
-.. index:: Operand Access Routines
+.. index:: Operand Iterators, Operand Access Routines
 
 Operand Iterators And Access Routines
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -394,4 +386,3 @@ This is done with a simple loop over the instruction stream:
         for (bsi = bsi_start (bb); !bsi_end_p (bsi); bsi_next (&bsi))
           update_stmt_if_modified (bsi_stmt (bsi));
       }
-

@@ -103,4 +103,3 @@ outputting a single uninitialized variable.
   in place of both ``ASM_OUTPUT_LOCAL`` and
   ``ASM_OUTPUT_ALIGNED_LOCAL``.  Define this macro when you need to see
   the variable's decl in order to chose what to output.
-

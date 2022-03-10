@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: alternate keywords, keywords, alternate
+
 .. _alternate-keywords:
-
-.. index:: alternate keywords
-
-.. index:: keywords, alternate
 
 Alternate Keywords
 ******************
@@ -39,13 +37,10 @@ macros to replace them with the customary keywords.  It looks like this:
   #define __asm__ asm
   #endif
 
-.. index:: __extension__
-
-.. index:: pedantic
+.. index:: __extension__, pedantic
 
 :option:`-pedantic` and other options cause warnings for many GNU C extensions.
 You can
 prevent such warnings within one expression by writing
 ``__extension__`` before the expression.  ``__extension__`` has no
 effect aside from this.
-

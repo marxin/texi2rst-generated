@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: compiler options, Objective-C and Objective-C++, Objective-C and Objective-C++ options, command-line, options, Objective-C and Objective-C++
+
 .. _objective-c-and-objective-c++-dialect-options:
-
-.. index:: compiler options, Objective-C and Objective-C++
-
-.. index:: Objective-C and Objective-C++ options, command-line
-
-.. index:: options, Objective-C and Objective-C++
 
 Options Controlling Objective-C and Objective-C++ Dialects
 **********************************************************
@@ -318,4 +314,3 @@ and Objective-C++ programs:
 
   Generate C header describing the largest structure that is passed by
   value, if any.
-

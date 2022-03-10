@@ -19,4 +19,3 @@ which it is presumed that you are familiar.
   source-tree-structure-and-build-system/configure-terms-and-history
   source-tree-structure-and-build-system/top-level-source-directory
   source-tree-structure-and-build-system/the-gcc-subdirectory
-

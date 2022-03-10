@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: CHDIR, system, working directory
+
 .. _chdir:
-
-.. index:: CHDIR
-
-.. index:: system, working directory
 
 CHDIR --- Change working directory
 **********************************
@@ -53,4 +51,3 @@ CHDIR --- Change working directory
 
   :samp:`{See also}:`
     :ref:`GETCWD`
-

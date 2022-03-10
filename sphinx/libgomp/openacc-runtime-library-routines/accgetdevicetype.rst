@@ -33,4 +33,3 @@ Description
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.3.
-

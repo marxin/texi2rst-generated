@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: POPPAR, binary representation, parity
+
 .. _poppar:
-
-.. index:: POPPAR
-
-.. index:: binary representation
-
-.. index:: parity
 
 POPPAR --- Parity of the number of bits set
 *******************************************
@@ -54,4 +50,3 @@ POPPAR --- Parity of the number of bits set
     :ref:`POPCNT`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SSA, RTL form, RTL SSA
+
 .. _rtl-ssa:
-
-.. index:: SSA, RTL form
-
-.. index:: RTL SSA
 
 On-the-Side SSA Form for RTL
 ****************************
@@ -92,15 +90,9 @@ were queued for later; see the comment above the declaration of
 ``perform_pending_updates`` for details.  The final two lines
 discard the RTL SSA form and free the associated memory.
 
+.. index:: RPO, reverse postorder, instructions, RTL SSA, rtl_ssa::insn_info
+
 .. _rtl-ssa-instructions:
-
-.. index:: RPO
-
-.. index:: reverse postorder
-
-.. index:: instructions, RTL SSA
-
-.. index:: rtl_ssa::insn_info
 
 RTL SSA Instructions
 ^^^^^^^^^^^^^^^^^^^^
@@ -139,13 +131,9 @@ SSA information about an instruction.  However, it also caches
 certain properties of the instruction, such as whether it is an
 inline assembly instruction, whether it has volatile accesses, and so on.
 
+.. index:: basic blocks, RTL SSA, basic_block, rtl_ssa::bb_info
+
 .. _rtl-ssa-basic-blocks:
-
-.. index:: basic blocks, RTL SSA
-
-.. index:: basic_block
-
-.. index:: rtl_ssa::bb_info
 
 RTL SSA Basic Blocks
 ^^^^^^^^^^^^^^^^^^^^
@@ -183,9 +171,7 @@ Like instructions, these blocks are chained together in a reverse
 postorder.  This list includes the entry block (which always comes
 first) and the exit block (which always comes last).
 
-.. index:: extended basic blocks, RTL SSA
-
-.. index:: rtl_ssa::ebb_info
+.. index:: extended basic blocks, RTL SSA, rtl_ssa::ebb_info
 
 RTL SSA basic blocks are chained together into 'extended basic blocks'
 (EBBs), represented by an ``rtl_ssa::ebb_info``.  Extended basic
@@ -252,17 +238,7 @@ See the comment above ``rtl_ssa::insn_info`` for details.
 These ``rtl_ssa::access_info`` s are organized into the following
 class hierarchy:
 
-.. index:: rtl_ssa::access_info
-
-.. index:: rtl_ssa::use_info
-
-.. index:: rtl_ssa::def_info
-
-.. index:: rtl_ssa::clobber_info
-
-.. index:: rtl_ssa::set_info
-
-.. index:: rtl_ssa::phi_info
+.. index:: rtl_ssa::access_info, rtl_ssa::use_info, rtl_ssa::def_info, rtl_ssa::clobber_info, rtl_ssa::set_info, rtl_ssa::phi_info
 
 .. code-block:: c++
 
@@ -297,11 +273,9 @@ If a value of a resource can come from multiple sources,
 a ``rtl_ssa::phi_info`` brings those multiple sources together
 into a single definition (see :ref:`rtl-ssa-phi-nodes`).
 
+.. index:: phi nodes, RTL SSA, rtl_ssa::phi_info
+
 .. _rtl-ssa-phi-nodes:
-
-.. index:: phi nodes, RTL SSA
-
-.. index:: rtl_ssa::phi_info
 
 RTL SSA Phi Nodes
 ^^^^^^^^^^^^^^^^^
@@ -484,9 +458,9 @@ following is true:
   extended basic block.  These definitions might come from phi nodes
   or from real instructions.
 
-.. _changing-rtl-instructions:
-
 .. index:: rtl_ssa::insn_change
+
+.. _changing-rtl-instructions:
 
 Using the RTL SSA framework to change instructions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -772,4 +746,3 @@ Putting all this together, the process for a two-instruction change is:
 
   confirm_change_group ();
   crtl->ssa->change_insns (changes);
-

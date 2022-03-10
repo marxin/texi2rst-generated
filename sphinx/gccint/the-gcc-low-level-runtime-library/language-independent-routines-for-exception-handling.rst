@@ -40,4 +40,3 @@ document me!
     __register_frame_info_table
     __register_frame_info_table_bases
     __register_frame_table
-

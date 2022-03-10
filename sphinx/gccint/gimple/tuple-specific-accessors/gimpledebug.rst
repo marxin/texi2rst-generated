@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GIMPLE_DEBUG, GIMPLE_DEBUG_BIND, GIMPLE_DEBUG_BEGIN_STMT, GIMPLE_DEBUG_INLINE_ENTRY
+
 .. _gimple_debug:
-
-.. index:: GIMPLE_DEBUG
-
-.. index:: GIMPLE_DEBUG_BIND
-
-.. index:: GIMPLE_DEBUG_BEGIN_STMT
-
-.. index:: GIMPLE_DEBUG_INLINE_ENTRY
 
 GIMPLE_DEBUG
 ^^^^^^^^^^^^
@@ -110,4 +104,3 @@ GIMPLE_DEBUG
   inserted, all parameters for the inlined function are bound to the
   respective arguments, and none of the side effects of its stmts are
   observable.
-

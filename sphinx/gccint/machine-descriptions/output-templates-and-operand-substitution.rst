@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: output templates, operand substitution, % in template, percent sign
+
 .. _output-template:
-
-.. index:: output templates
-
-.. index:: operand substitution
-
-.. index:: % in template
-
-.. index:: percent sign
 
 Output Templates and Operand Substitution
 *****************************************
@@ -59,9 +53,7 @@ defined in the ``PRINT_OPERAND`` macro.  You must also define
 which punctuation characters are valid with the
 ``PRINT_OPERAND_PUNCT_VALID_P`` macro.
 
-.. index:: \
-
-.. index:: backslash
+.. index:: \, backslash
 
 The template may generate multiple assembler instructions.  Write the text
 for the instructions, with :samp:`\\;` between them.
@@ -105,4 +97,3 @@ If the macro ``ASSEMBLER_DIALECT`` is defined, you can use construct
 of the form :samp:`{option0|option1|option2}` in the templates.  These
 describe multiple variants of assembler language syntax.
 See :ref:`instruction-output`.
-

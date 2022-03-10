@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _directives-within-macro-arguments:
-
 .. index:: macro arguments and directives
+
+.. _directives-within-macro-arguments:
 
 Directives Within Macro Arguments
 *********************************
@@ -37,4 +37,3 @@ which expands to
   1 2 1 2
 
 with the semantics described above.
-

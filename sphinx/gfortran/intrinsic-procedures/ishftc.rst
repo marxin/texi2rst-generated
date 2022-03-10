@@ -8,17 +8,7 @@
 ISHFTC --- Shift bits circularly
 ********************************
 
-.. index:: ISHFTC
-
-.. index:: BSHFTC
-
-.. index:: IISHFTC
-
-.. index:: JISHFTC
-
-.. index:: KISHFTC
-
-.. index:: bits, shift circular
+.. index:: ISHFTC, BSHFTC, IISHFTC, JISHFTC, KISHFTC, bits, shift circular
 
 .. function:: ISHFTC(I, SHIFT, SIZE)
 
@@ -71,4 +61,3 @@ ISHFTC --- Shift bits circularly
 
   :samp:`{See also}:`
     :ref:`ISHFT`
-

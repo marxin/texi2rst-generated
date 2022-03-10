@@ -5,9 +5,9 @@
 
 .. program:: MicroBlaze
 
-.. _microblaze-options:
-
 .. index:: MicroBlaze Options
+
+.. _microblaze-options:
 
 MicroBlaze Options
 ^^^^^^^^^^^^^^^^^^

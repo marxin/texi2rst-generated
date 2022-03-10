@@ -21,9 +21,7 @@ These function attributes are supported by the Nios II back end:
 
   :samp:`custom-{insn}={N}` :samp:`no-custom-{insn}`
 
-    .. index:: target("custom-insn=N") function attribute, Nios II
-
-    .. index:: target("no-custom-insn") function attribute, Nios II
+    .. index:: target("custom-insn=N") function attribute, Nios II, target("no-custom-insn") function attribute, Nios II
 
     Each :samp:`custom-{insn}={N}` attribute locally enables use of a
     custom instruction with encoding :samp:`{N}` when generating code that uses 
@@ -42,4 +40,3 @@ These function attributes are supported by the Nios II back end:
     command-line option, to select a predefined set of custom instructions
     named :samp:`{name}`.
     See :ref:`nios-ii-options`, for more information.
-

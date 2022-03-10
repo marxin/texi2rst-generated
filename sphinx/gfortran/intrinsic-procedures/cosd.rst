@@ -3,21 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: COSD, DCOSD, CCOSD, ZCOSD, CDCOSD, trigonometric function, cosine, degrees, cosine, degrees
+
 .. _cosd:
-
-.. index:: COSD
-
-.. index:: DCOSD
-
-.. index:: CCOSD
-
-.. index:: ZCOSD
-
-.. index:: CDCOSD
-
-.. index:: trigonometric function, cosine, degrees
-
-.. index:: cosine, degrees
 
 COSD --- Cosine function, degrees
 *********************************
@@ -72,4 +60,3 @@ COSD --- Cosine function, degrees
     :ref:`ACOSD` 
     Radians function: 
     :ref:`COS`
-

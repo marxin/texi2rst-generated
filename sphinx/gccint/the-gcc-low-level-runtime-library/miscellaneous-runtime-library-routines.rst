@@ -57,4 +57,3 @@ Split stack functions and variables
 .. c:var:: struct initial_sp __morestack_initial_sp
 
 Internal variables used by the :option:`-fsplit-stack` implementation.
-

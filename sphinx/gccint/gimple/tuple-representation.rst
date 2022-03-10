@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _tuple-representation:
-
 .. index:: tuples
+
+.. _tuple-representation:
 
 Tuple representation
 ********************
@@ -209,4 +209,3 @@ Total size    80 + 8 \* ``num_ops`` bytes
 
 All the other tuples are defined in terms of these three basic
 ones. Each tuple will add some fields.
-

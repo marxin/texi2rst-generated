@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RENAME, file system, rename file
+
 .. _rename:
-
-.. index:: RENAME
-
-.. index:: file system, rename file
 
 RENAME --- Rename a file
 ************************
@@ -45,4 +43,3 @@ RENAME --- Rename a file
 
   :samp:`{See also}:`
     :ref:`LINK`
-

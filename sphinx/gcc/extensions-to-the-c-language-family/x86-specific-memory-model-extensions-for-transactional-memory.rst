@@ -36,4 +36,3 @@ the transaction quickly. This can be done with a ``_mm_pause``.
   ...
   /* Free lock with lock elision */
   __atomic_store_n(&lockvar, 0, __ATOMIC_RELEASE|__ATOMIC_HLE_RELEASE);
-

@@ -8,9 +8,7 @@
 IS_IOSTAT_END --- Test for end-of-file value
 ********************************************
 
-.. index:: IS_IOSTAT_END
-
-.. index:: IOSTAT, end of file
+.. index:: IS_IOSTAT_END, IOSTAT, end of file
 
 .. function:: IS_IOSTAT_END(I)
 
@@ -50,4 +48,3 @@ IS_IOSTAT_END --- Test for end-of-file value
         READ(88, *, IOSTAT=stat) i
         IF(IS_IOSTAT_END(stat)) STOP 'END OF FILE'
       END PROGRAM
-

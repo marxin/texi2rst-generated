@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _omp_teams_thread_limit:
-
 .. index:: Environment Variable
+
+.. _omp_teams_thread_limit:
 
 OMP_TEAMS_THREAD_LIMIT -- Set the maximum number of threads imposed by teams
 ****************************************************************************
@@ -22,4 +22,3 @@ OMP_TEAMS_THREAD_LIMIT -- Set the maximum number of threads imposed by teams
 
 :samp:`{Reference}`:
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 6.24
-

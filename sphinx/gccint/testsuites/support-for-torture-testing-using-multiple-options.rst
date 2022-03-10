@@ -50,4 +50,3 @@ file or add them to the :samp:`site.exp` file; for example
   set ADDITIONAL_TORTURE_OPTIONS  [list \
     { -O2 -ftree-loop-linear } \
     { -O2 -fpeel-loops } ]
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Downloading GCC, Downloading the Source
+
 .. _downloading-the-source:
-
-.. index:: Downloading GCC
-
-.. index:: Downloading the Source
 
 Downloading GCC
 ---------------

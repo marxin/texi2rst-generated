@@ -29,4 +29,3 @@ slashes). When simply passing :option:`-fplugin`:samp:`={name}`, the plugin is
 loaded from the :samp:`plugin` directory, so :option:`-fplugin`:samp:`={name}` is
 the same as :option:`-fplugin`:samp:`=\`gcc -print-file-name=plugin\`/{name}.{ext}`,
 using backquote shell syntax to query the :samp:`plugin` directory.
-

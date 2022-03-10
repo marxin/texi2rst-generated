@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: computed includes, macros in include
+
 .. _computed-includes:
-
-.. index:: computed includes
-
-.. index:: macros in include
 
 Computed Includes
 *****************
@@ -86,4 +84,3 @@ standard.  To minimize the risk of different compilers interpreting your
 computed includes differently, we recommend you use only a single
 object-like macro which expands to a string constant.  This will also
 minimize confusion for people reading your program.
-

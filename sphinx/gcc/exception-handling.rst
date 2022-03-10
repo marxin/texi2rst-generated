@@ -13,4 +13,3 @@ Exception Handling
   std::terminate() is called (C++98 15.5.1).
 
   The stack is not unwound before std::terminate is called.
-

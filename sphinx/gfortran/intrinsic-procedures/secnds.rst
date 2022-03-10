@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: SECNDS, time, elapsed, elapsed time
+
 .. _secnds:
-
-.. index:: SECNDS
-
-.. index:: time, elapsed
-
-.. index:: elapsed time
 
 SECNDS --- Time function
 ************************
@@ -56,4 +52,3 @@ SECNDS --- Time function
           t2 = secnds (t1)        ! elapsed time
           print *, "Something took ", t2, " seconds."
       end program test_secnds
-

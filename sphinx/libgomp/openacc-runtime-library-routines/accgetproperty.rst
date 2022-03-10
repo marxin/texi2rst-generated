@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: acc_get_property, acc_get_property_string
+
 .. _acc_get_property:
-
-.. index:: acc_get_property
-
-.. index:: acc_get_property_string
 
 acc_get_property -- Get device property.
 ****************************************
@@ -52,4 +50,3 @@ Description
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.6.
-

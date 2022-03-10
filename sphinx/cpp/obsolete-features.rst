@@ -79,9 +79,7 @@ answers.  Subsequent assertions do not override previous ones for the
 same predicate.  All the answers for any given predicate are
 simultaneously true.
 
-.. index:: assertions, canceling
-
-.. index:: #unassert
+.. index:: assertions, canceling, #unassert
 
 Assertions can be canceled with the :samp:`#unassert` directive.  It
 has the same syntax as :samp:`#assert`.  In that form it cancels only the
@@ -98,4 +96,3 @@ no effect.
 
 You can also make or cancel assertions using command-line options.
 See :ref:`invocation`.
-

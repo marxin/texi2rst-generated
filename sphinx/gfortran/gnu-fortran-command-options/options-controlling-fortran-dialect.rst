@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: dialect options, language, dialect options, options, dialect
+
 .. _fortran-dialect-options:
-
-.. index:: dialect options
-
-.. index:: language, dialect options
-
-.. index:: options, dialect
 
 Options controlling Fortran dialect
 ***********************************
@@ -17,15 +13,7 @@ Options controlling Fortran dialect
 The following options control the details of the Fortran dialect
 accepted by the compiler:
 
-.. index:: ffree-form
-
-.. index:: ffixed-form
-
-.. index:: options, Fortran dialect
-
-.. index:: file format, free
-
-.. index:: file format, fixed
+.. index:: ffree-form, ffixed-form, options, Fortran dialect, file format, free, file format, fixed
 
 .. option:: -ffree-form, -ffixed-form
 
@@ -71,9 +59,7 @@ accepted by the compiler:
   to a warning, and allows a BOZ literal constant to appear where the
   Fortran standard would otherwise prohibit its use.
 
-.. index:: fd-lines-as-code
-
-.. index:: fd-lines-as-comments
+.. index:: fd-lines-as-code, fd-lines-as-comments
 
 .. option:: -fd-lines-as-code, -fd-lines-as-comments
 
@@ -162,13 +148,7 @@ accepted by the compiler:
   Enable a blank format item at the end of a format specification i.e. nothing
   following the final comma.
 
-.. index:: fdollar-ok
-
-.. index:: $
-
-.. index:: symbol names
-
-.. index:: character set
+.. index:: fdollar-ok, $, symbol names, character set
 
 .. option:: -fdollar-ok
 
@@ -177,11 +157,7 @@ accepted by the compiler:
   apply to implicit typing as different vendors implement different rules.
   Using :samp:`$` in ``IMPLICIT`` statements is also rejected.
 
-.. index:: backslash
-
-.. index:: backslash
-
-.. index:: escape characters
+.. index:: backslash, backslash, escape characters
 
 .. option:: -fbackslash
 
@@ -197,11 +173,7 @@ accepted by the compiler:
   points. All other combinations of a character preceded by \ are
   unexpanded.
 
-.. index:: fmodule-private
-
-.. index:: module entities
-
-.. index:: private
+.. index:: fmodule-private, module entities, private
 
 .. option:: -fmodule-private
 
@@ -209,9 +181,7 @@ accepted by the compiler:
   Use-associated entities will not be accessible unless they are explicitly
   declared as ``PUBLIC``.
 
-.. index:: ffixed-line-length-n
-
-.. index:: file format, fixed
+.. index:: ffixed-line-length-n, file format, fixed
 
 .. option:: -ffixed-line-length-n
             -ffixed-line-length-none
@@ -242,9 +212,7 @@ accepted by the compiler:
   continued character constants never have implicit spaces appended
   to them to fill out the line.
 
-.. index:: ffree-line-length-n
-
-.. index:: file format, free
+.. index:: ffree-line-length-n, file format, free
 
 .. option:: -ffree-line-length-n
             -ffree-line-length-none
@@ -278,9 +246,7 @@ accepted by the compiler:
   Enable the Cray pointer extension, which provides C-like pointer
   functionality.
 
-.. index:: fopenacc
-
-.. index:: OpenACC
+.. index:: fopenacc, OpenACC
 
 .. option:: -fopenacc
 
@@ -291,9 +257,7 @@ accepted by the compiler:
   ``!$`` sentinels in fixed form, and when linking arranges for the
   OpenACC runtime library to be linked in.
 
-.. index:: fopenmp
-
-.. index:: OpenMP
+.. index:: fopenmp, OpenMP
 
 .. option:: -fopenmp
 
@@ -393,19 +357,7 @@ accepted by the compiler:
   representation of the translated Fortran code, produced by
   :option:`-fdump-tree-original`, is suggested.
 
-.. index:: freal-4-real-8
-
-.. index:: freal-4-real-10
-
-.. index:: freal-4-real-16
-
-.. index:: freal-8-real-4
-
-.. index:: freal-8-real-10
-
-.. index:: freal-8-real-16
-
-.. index:: options, real kind type promotion
+.. index:: freal-4-real-8, freal-4-real-10, freal-4-real-16, freal-8-real-4, freal-8-real-10, freal-8-real-16, options, real kind type promotion
 
 .. option:: -freal-4-real-8, -freal-4-real-10, -freal-4-real-16, -freal-8-real-4, -freal-8-real-10, -freal-8-real-16
 
@@ -457,4 +409,3 @@ accepted by the compiler:
 .. option:: -ftest-forall-temp
 
   Enhance test coverage by forcing most forall assignments to use temporary.
-

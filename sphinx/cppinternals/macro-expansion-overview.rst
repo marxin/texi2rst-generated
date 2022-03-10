@@ -49,4 +49,3 @@ later popped from the context stack, as described above.  This strict
 ordering ensures that a macro is disabled whilst its expansion is
 being scanned, but that it is *not* disabled whilst any arguments
 to it are being expanded.
-

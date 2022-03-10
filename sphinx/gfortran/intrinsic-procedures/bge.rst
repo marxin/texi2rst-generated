@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BGE, bitwise comparison
+
 .. _bge:
-
-.. index:: BGE
-
-.. index:: bitwise comparison
 
 BGE --- Bitwise greater than or equal to
 ****************************************
@@ -43,4 +41,3 @@ BGE --- Bitwise greater than or equal to
     :ref:`BGT`, 
     :ref:`BLE`, 
     :ref:`BLT`
-

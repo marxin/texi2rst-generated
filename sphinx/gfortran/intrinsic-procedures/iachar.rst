@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: IACHAR, ASCII collating sequence, collating sequence, ASCII, conversion, to integer
+
 .. _iachar:
-
-.. index:: IACHAR
-
-.. index:: ASCII collating sequence
-
-.. index:: collating sequence, ASCII
-
-.. index:: conversion, to integer
 
 IACHAR --- Code in ASCII collating sequence 
 ********************************************
@@ -61,4 +55,3 @@ IACHAR --- Code in ASCII collating sequence
     :ref:`ACHAR`, 
     :ref:`CHAR`, 
     :ref:`ICHAR`
-

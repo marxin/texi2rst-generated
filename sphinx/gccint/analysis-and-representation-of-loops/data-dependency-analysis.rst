@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _dependency-analysis:
-
 .. index:: Data Dependency Analysis
+
+.. _dependency-analysis:
 
 Data Dependency Analysis
 ************************
@@ -133,4 +133,3 @@ maximum verbosity the details of a data dependence relations array,
 direction vectors for a data dependence relations array, and
 ``dump_data_references`` prints the details of the data references
 contained in a data reference array.
-

@@ -8,11 +8,7 @@
 ALL --- All values in MASK along DIM are true 
 **********************************************
 
-.. index:: ALL
-
-.. index:: array, apply condition
-
-.. index:: array, condition testing
+.. index:: ALL, array, apply condition, array, condition testing
 
 .. function:: ALL(MASK, DIM)
 
@@ -65,4 +61,3 @@ ALL --- All values in MASK along DIM are true
             print *, all(a .eq. b, 2)
           end subroutine section
       end program test_all
-

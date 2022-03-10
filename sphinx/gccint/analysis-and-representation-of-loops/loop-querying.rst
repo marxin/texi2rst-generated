@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _loop-querying:
-
 .. index:: Loop querying
+
+.. _loop-querying:
 
 Loop querying
 *************
@@ -79,4 +79,3 @@ The most important functions to query loop structures are:
 * ``just_once_each_iteration_p`` : Returns true if the basic block
   is executed exactly once during each iteration of a loop (that is, it
   does not belong to a sub-loop, and it dominates the latch of the loop).
-

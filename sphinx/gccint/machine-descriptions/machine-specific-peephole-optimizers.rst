@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: peephole optimizer definitions, defining peephole optimizers
+
 .. _peephole-definitions:
-
-.. index:: peephole optimizer definitions
-
-.. index:: defining peephole optimizers
 
 Machine-Specific Peephole Optimizers
 ************************************
@@ -36,9 +34,9 @@ targets that do scheduling.
   :maxdepth: 2
 
 
-.. _define_peephole:
-
 .. index:: define_peephole
+
+.. _define_peephole:
 
 RTL to Text Peephole Optimizers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -219,9 +217,9 @@ then the way to mention this insn in a peephole is as follows:
      ...]
     ...)
 
-.. _define_peephole2:
-
 .. index:: define_peephole2
+
+.. _define_peephole2:
 
 RTL to RTL Peephole Optimizers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -251,9 +249,7 @@ It is possible to request additional scratch registers for use in the
 output template.  If appropriate registers are not free, the pattern
 will simply not match.
 
-.. index:: match_scratch
-
-.. index:: match_dup
+.. index:: match_scratch, match_dup
 
 Scratch registers are requested with a ``match_scratch`` pattern at
 the top level of the input pattern.  The allocated register (initially) will
@@ -332,4 +328,3 @@ template.
 If we had not added the ``(match_dup 4)`` in the middle of the input
 sequence, it might have been the case that the register we chose at the
 beginning of the sequence is killed by the first or second ``set``.
-

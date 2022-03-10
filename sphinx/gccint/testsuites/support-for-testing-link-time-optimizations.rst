@@ -44,4 +44,3 @@ There are several special-purpose test directives used for these tests.
 
 :samp:`{ dg-suppress-ld-options {options} [{ target {selector} }]}`
   This directive removes :samp:`{options}` from the set of linker options used.
-

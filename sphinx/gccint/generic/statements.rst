@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _statements:
-
 .. index:: Statements
+
+.. _statements:
 
 Statements
 **********
@@ -21,9 +21,9 @@ There are also several varieties of complex statements.
   :maxdepth: 2
 
 
-.. _basic-statements:
-
 .. index:: Basic Statements
+
+.. _basic-statements:
 
 Basic Statements
 ^^^^^^^^^^^^^^^^
@@ -150,9 +150,9 @@ Basic Statements
   Marks the beginning of a source statement, for purposes of debug
   information generation.
 
-.. _blocks:
-
 .. index:: Blocks
+
+.. _blocks:
 
 Blocks
 ^^^^^^
@@ -188,9 +188,9 @@ handle cleanups for objects with destructors, these don't
 translate into the GIMPLE form; multiple declarations at the same
 level use the same ``BIND_EXPR``.
 
-.. _statement-sequences:
-
 .. index:: Statement Sequences
+
+.. _statement-sequences:
 
 Statement Sequences
 ^^^^^^^^^^^^^^^^^^^
@@ -199,9 +199,9 @@ Multiple statements at the same nesting level are collected into
 a ``STATEMENT_LIST``.  Statement lists are modified and
 traversed using the interface in :samp:`tree-iterator.h`.
 
-.. _empty-statements:
-
 .. index:: Empty Statements
+
+.. _empty-statements:
 
 Empty Statements
 ^^^^^^^^^^^^^^^^
@@ -215,9 +215,9 @@ the Java front end, but this caused a lot of trouble in practice.
 
 An empty statement is represented as ``(void)0``.
 
-.. _jumps:
-
 .. index:: Jumps
+
+.. _jumps:
 
 Jumps
 ^^^^^
@@ -236,9 +236,9 @@ separate statement, but the special return semantics in
 the future, perhaps by moving most of that logic into
 ``expand_assignment``.
 
-.. _cleanups:
-
 .. index:: Cleanups
+
+.. _cleanups:
 
 Cleanups
 ^^^^^^^^
@@ -290,29 +290,7 @@ edge.  Rethrowing the exception is represented using ``RESX_EXPR``.
 OpenMP
 ^^^^^^
 
-.. index:: OMP_PARALLEL
-
-.. index:: OMP_FOR
-
-.. index:: OMP_SECTIONS
-
-.. index:: OMP_SINGLE
-
-.. index:: OMP_SECTION
-
-.. index:: OMP_MASTER
-
-.. index:: OMP_ORDERED
-
-.. index:: OMP_CRITICAL
-
-.. index:: OMP_RETURN
-
-.. index:: OMP_CONTINUE
-
-.. index:: OMP_ATOMIC
-
-.. index:: OMP_CLAUSE
+.. index:: OMP_PARALLEL, OMP_FOR, OMP_SECTIONS, OMP_SINGLE, OMP_SECTION, OMP_MASTER, OMP_ORDERED, OMP_CRITICAL, OMP_RETURN, OMP_CONTINUE, OMP_ATOMIC, OMP_CLAUSE
 
 All the statements starting with ``OMP_`` represent directives and
 clauses used by the OpenMP API https://www.openmp.org.
@@ -486,27 +464,7 @@ clauses used by the OpenMP API https://www.openmp.org.
 OpenACC
 ^^^^^^^
 
-.. index:: OACC_CACHE
-
-.. index:: OACC_DATA
-
-.. index:: OACC_DECLARE
-
-.. index:: OACC_ENTER_DATA
-
-.. index:: OACC_EXIT_DATA
-
-.. index:: OACC_HOST_DATA
-
-.. index:: OACC_KERNELS
-
-.. index:: OACC_LOOP
-
-.. index:: OACC_PARALLEL
-
-.. index:: OACC_SERIAL
-
-.. index:: OACC_UPDATE
+.. index:: OACC_CACHE, OACC_DATA, OACC_DECLARE, OACC_ENTER_DATA, OACC_EXIT_DATA, OACC_HOST_DATA, OACC_KERNELS, OACC_LOOP, OACC_PARALLEL, OACC_SERIAL, OACC_UPDATE
 
 All the statements starting with ``OACC_`` represent directives and
 clauses used by the OpenACC API https://www.openacc.org.

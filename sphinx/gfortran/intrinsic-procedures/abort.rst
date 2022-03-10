@@ -8,13 +8,7 @@
 ABORT --- Abort the program
 ***************************
 
-.. index:: ABORT
-
-.. index:: program termination, with core dump
-
-.. index:: terminate program, with core dump
-
-.. index:: core, dump
+.. index:: ABORT, program termination, with core dump, terminate program, with core dump, core, dump
 
 .. function:: ABORT()
 
@@ -50,4 +44,3 @@ ABORT --- Abort the program
     :ref:`EXIT`, 
     :ref:`KILL`, 
     :ref:`BACKTRACE`
-

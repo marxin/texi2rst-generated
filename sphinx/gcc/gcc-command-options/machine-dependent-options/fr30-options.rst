@@ -5,9 +5,9 @@
 
 .. program:: FR30
 
-.. _fr30-options:
-
 .. index:: FR30 Options
+
+.. _fr30-options:
 
 FR30 Options
 ^^^^^^^^^^^^
@@ -25,4 +25,3 @@ These options are defined specifically for the FR30 port.
   Assume that runtime support has been provided and so there is no need
   to include the simulator library (:samp:`libsim.a`) on the linker
   command line.
-

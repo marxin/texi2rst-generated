@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: stringizing, # operator
+
 .. _stringizing:
-
-.. index:: stringizing
-
-.. index:: # operator
 
 Stringizing
 ***********
@@ -86,4 +84,3 @@ macro-expanded first.  But ``s`` is an ordinary argument to
 ``xstr``, so it is completely macro-expanded before ``xstr``
 itself is expanded (see :ref:`argument-prescan`).  Therefore, by the time
 ``str`` gets to its argument, it has already been macro-expanded.
-

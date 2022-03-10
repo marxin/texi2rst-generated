@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _language-dependent-trees:
-
 .. index:: language-dependent trees
+
+.. _language-dependent-trees:
 
 Language-dependent trees
 ************************
@@ -23,4 +23,3 @@ conversion to GIMPLE. The intermediate representation used while
 parsing C and C++ looks very little like GENERIC, but the C and
 C++ gimplifier hooks are perfectly happy to take it as input and
 spit out GIMPLE.
-

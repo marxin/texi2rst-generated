@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: GMTIME, time, conversion to GMT info
+
 .. _gmtime:
-
-.. index:: GMTIME
-
-.. index:: time, conversion to GMT info
 
 GMTIME --- Convert time to GMT info
 ***********************************
@@ -48,4 +46,3 @@ GMTIME --- Convert time to GMT info
     :ref:`LTIME`, 
     :ref:`TIME`, 
     :ref:`TIME8`
-

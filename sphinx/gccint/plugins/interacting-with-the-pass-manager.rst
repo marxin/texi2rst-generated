@@ -55,4 +55,3 @@ event and a pointer to a ``struct register_pass_info`` object defined as follows
 
     ...
   }
-

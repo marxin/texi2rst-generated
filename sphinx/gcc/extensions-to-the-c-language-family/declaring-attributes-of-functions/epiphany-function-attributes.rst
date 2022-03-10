@@ -72,11 +72,7 @@ These function attributes are supported by the Epiphany back end:
                          forwarder_section ("tramp")))
       external_dma_handler ();
 
-.. index:: long_call function attribute, Epiphany
-
-.. index:: short_call function attribute, Epiphany
-
-.. index:: indirect calls, Epiphany
+.. index:: long_call function attribute, Epiphany, short_call function attribute, Epiphany, indirect calls, Epiphany
 
 .. gcc-attr:: long_call, short_call
 
@@ -84,4 +80,3 @@ These function attributes are supported by the Epiphany back end:
   These attributes override the
   :option:`-mlong-calls` (see :ref:`adapteva-epiphany-options`)
   command-line switch and ``#pragma long_calls`` settings.
-

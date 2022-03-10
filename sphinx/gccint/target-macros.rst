@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: machine description macros, target description macros, macros, target description, tm.h macros
+
 .. _target-macros:
-
-.. index:: machine description macros
-
-.. index:: target description macros
-
-.. index:: macros, target description
-
-.. index:: tm.h macros
 
 Target Description Macros and Functions
 ---------------------------------------

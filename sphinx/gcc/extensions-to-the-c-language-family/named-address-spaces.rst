@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _named-address-spaces:
-
 .. index:: Named Address Spaces
+
+.. _named-address-spaces:
 
 Named Address Spaces
 ********************
@@ -60,15 +60,7 @@ using (inline) assembler code, special address spaces are needed.
 
 ``__flash1`` ``__flash2`` ``__flash3`` ``__flash4`` ``__flash5``
 
-  .. index:: __flash1 AVR Named Address Spaces
-
-  .. index:: __flash2 AVR Named Address Spaces
-
-  .. index:: __flash3 AVR Named Address Spaces
-
-  .. index:: __flash4 AVR Named Address Spaces
-
-  .. index:: __flash5 AVR Named Address Spaces
+  .. index:: __flash1 AVR Named Address Spaces, __flash2 AVR Named Address Spaces, __flash3 AVR Named Address Spaces, __flash4 AVR Named Address Spaces, __flash5 AVR Named Address Spaces
 
   These are 16-bit address spaces locating data in section
   ``.progmemN.data`` where :samp:`{N}` refers to
@@ -231,9 +223,7 @@ to the ``%fs`` or ``%gs`` segments.
 
 ``__seg_fs`` ``__seg_gs``
 
-  .. index:: __seg_fs x86 named address space
-
-  .. index:: __seg_gs x86 named address space
+  .. index:: __seg_fs x86 named address space, __seg_gs x86 named address space
 
   The object is accessed with the respective segment override prefix.
 
@@ -248,4 +238,3 @@ to the ``%fs`` or ``%gs`` segments.
 
   The preprocessor symbols ``__SEG_FS`` and ``__SEG_GS`` are
   defined when these address spaces are supported.
-

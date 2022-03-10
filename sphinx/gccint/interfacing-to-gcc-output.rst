@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: interfacing to GCC output, run-time conventions, function call conventions, conventions, run-time
+
 .. _interface:
-
-.. index:: interfacing to GCC output
-
-.. index:: run-time conventions
-
-.. index:: function call conventions
-
-.. index:: conventions, run-time
 
 Interfacing to GCC Output
 -------------------------
@@ -20,11 +14,7 @@ GCC is normally configured to use the same function calling convention
 normally in use on the target system.  This is done with the
 machine-description macros described (see :ref:`target-macros`).
 
-.. index:: unions, returning
-
-.. index:: structures, returning
-
-.. index:: returning structures and unions
+.. index:: unions, returning, structures, returning, returning structures and unions
 
 However, returning of structure and union values is done differently on
 some target machines.  As a result, functions compiled with PCC
@@ -53,9 +43,7 @@ where to return the value.  On these machines, GCC has been
 configured to be compatible with the standard compiler, when this method
 is used.  It may not be compatible for structures of 1, 2, 4 or 8 bytes.
 
-.. index:: argument passing
-
-.. index:: passing arguments
+.. index:: argument passing, passing arguments
 
 GCC uses the system's standard convention for passing arguments.  On
 some machines, the first few arguments are passed in registers; in

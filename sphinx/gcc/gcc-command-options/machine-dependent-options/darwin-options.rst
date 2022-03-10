@@ -5,9 +5,9 @@
 
 .. program:: Darwin
 
-.. _darwin-options:
-
 .. index:: Darwin options
+
+.. _darwin-options:
 
 Darwin Options
 ^^^^^^^^^^^^^^
@@ -166,4 +166,3 @@ restrictive subtype of any of its input files.
 
   These options are passed to the Darwin linker.  The Darwin linker man page
   describes them in detail.
-

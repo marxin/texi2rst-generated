@@ -8,11 +8,7 @@
 OR --- Bitwise logical OR
 *************************
 
-.. index:: OR
-
-.. index:: bitwise logical or
-
-.. index:: logical or, bitwise
+.. index:: OR, bitwise logical or, logical or, bitwise
 
 .. function:: OR(I, J)
 
@@ -64,4 +60,3 @@ OR --- Bitwise logical OR
   :samp:`{See also}:`
     Fortran 95 elemental function: 
     :ref:`IOR`
-

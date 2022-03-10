@@ -20,9 +20,7 @@ These function attributes are supported on MicroBlaze targets:
   function, only volatiles used by the function are saved.  A normal function
   return is generated instead of a return from interrupt.
 
-.. index:: break_handler function attribute, MicroBlaze
-
-.. index:: break handler functions
+.. index:: break_handler function attribute, MicroBlaze, break handler functions
 
 .. gcc-attr:: break_handler
 
@@ -36,9 +34,7 @@ These function attributes are supported on MicroBlaze targets:
 
     void f () __attribute__ ((break_handler));
 
-.. index:: interrupt_handler function attribute, MicroBlaze
-
-.. index:: fast_interrupt function attribute, MicroBlaze
+.. index:: interrupt_handler function attribute, MicroBlaze, fast_interrupt function attribute, MicroBlaze
 
 .. gcc-attr:: interrupt_handler, fast_interrupt
 
@@ -48,4 +44,3 @@ These function attributes are supported on MicroBlaze targets:
   interrupts that do not use low-latency handlers.  In both cases, GCC
   emits appropriate prologue code and generates a return from the handler
   using ``rtid`` instead of ``rtsd``.
-

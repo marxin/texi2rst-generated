@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _function-multiversioning:
-
 .. index:: function versions
+
+.. _function-multiversioning:
 
 Function Multiversioning
 ************************
@@ -63,4 +63,3 @@ taken just like a regular function.  GCC takes care of doing the
 dispatching to call the right version at runtime.  Refer to the
 `GCC wiki on
 Function Multiversioning <https://gcc.gnu.org/wiki/FunctionMultiVersioning>`_ for more details.
-

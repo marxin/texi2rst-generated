@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: looping instruction patterns, defining looping instruction patterns
+
 .. _looping-patterns:
-
-.. index:: looping instruction patterns
-
-.. index:: defining looping instruction patterns
 
 Defining Looping Instruction Patterns
 *************************************
@@ -134,4 +132,3 @@ If the ``doloop_end`` pattern is a ``define_expand``, there must
 also be a ``define_insn`` or ``define_insn_and_split`` matching
 the generated pattern.  Otherwise, the compiler will fail during loop
 optimization.
-

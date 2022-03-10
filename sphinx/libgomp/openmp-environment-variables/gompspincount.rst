@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: Environment Variable, Implementation specific setting
+
 .. _gomp_spincount:
-
-.. index:: Environment Variable
-
-.. index:: Implementation specific setting
 
 GOMP_SPINCOUNT -- Set the busy-wait spin count
 **********************************************
@@ -30,4 +28,3 @@ GOMP_SPINCOUNT -- Set the busy-wait spin count
 
 :samp:`{See also}:`
   :ref:`OMP_WAIT_POLICY`
-

@@ -8,9 +8,7 @@
 BACKTRACE --- Show a backtrace
 ******************************
 
-.. index:: BACKTRACE
-
-.. index:: backtrace
+.. index:: BACKTRACE, backtrace
 
 .. function:: BACKTRACE()
 
@@ -35,4 +33,3 @@ BACKTRACE --- Show a backtrace
 
   :samp:`{See also}:`
     :ref:`ABORT`
-

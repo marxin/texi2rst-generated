@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: MERGE_BITS, bits, merge
+
 .. _merge_bits:
-
-.. index:: MERGE_BITS
-
-.. index:: bits, merge
 
 MERGE_BITS --- Merge of bits under mask
 ***************************************
@@ -45,4 +43,3 @@ MERGE_BITS --- Merge of bits under mask
     .. code-block:: fortran
 
       RESULT = MERGE_BITS(I, J, MASK)
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: constructing calls, forwarding calls
+
 .. _constructing-calls:
-
-.. index:: constructing calls
-
-.. index:: forwarding calls
 
 Constructing Function Calls
 ***************************
@@ -125,4 +123,3 @@ functions acting as mere forwarders for their arguments.
       return open (path, oflag, __builtin_va_arg_pack ());
     }
     #endif
-

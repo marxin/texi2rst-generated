@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: options, debugging, debugging information options
+
 .. _debugging-options:
-
-.. index:: options, debugging
-
-.. index:: debugging information options
 
 Options for Debugging Your Program
 **********************************
@@ -502,4 +500,3 @@ information useful for debugging do not run at all, so that
 .. option:: -feliminate-unused-debug-types
 
   Default setting; overrides :option:`-fno-eliminate-unused-debug-types`.
-

@@ -72,9 +72,7 @@
   This option is supported on GNU/Linux targets, most other Unix derivatives,
   and also on x86 Cygwin and MinGW targets.
 
-.. index:: make
-
-.. index:: dependencies, make
+.. index:: make, dependencies, make
 
 .. option:: -M
 
@@ -433,9 +431,7 @@
 
     See :ref:`preprocessor-output`.
 
-  .. index:: traditional C language
-
-  .. index:: C language, traditional
+  .. index:: traditional C language, C language, traditional
 
 .. option:: -traditional, -traditional-cpp
 

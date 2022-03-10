@@ -5,9 +5,9 @@
 
 .. program:: Solaris 2
 
-.. _solaris-2-options:
-
 .. index:: Solaris 2 options
+
+.. _solaris-2-options:
 
 Solaris 2 Options
 ^^^^^^^^^^^^^^^^^
@@ -40,4 +40,3 @@ These switches are supported in addition to the above on Solaris 2:
 .. option:: -pthreads
 
   This is a synonym for :option:`-pthread`.
-

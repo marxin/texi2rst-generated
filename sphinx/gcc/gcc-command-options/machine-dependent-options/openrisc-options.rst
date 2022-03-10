@@ -5,9 +5,9 @@
 
 .. program:: OpenRISC
 
-.. _openrisc-options:
-
 .. index:: OpenRISC Options
+
+.. _openrisc-options:
 
 OpenRISC Options
 ^^^^^^^^^^^^^^^^
@@ -93,4 +93,3 @@ These options are defined for OpenRISC:
 .. option:: -mcmodel=large
 
   Generate OpenRISC code for the large model: The GOT may grow up to 4G in size.
-

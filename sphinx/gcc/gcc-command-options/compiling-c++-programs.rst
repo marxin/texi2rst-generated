@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: suffixes for C++ source, C++ source file suffixes
+
 .. _invoking-g++:
-
-.. index:: suffixes for C++ source
-
-.. index:: C++ source file suffixes
 
 Compiling C++ Programs
 **********************
@@ -21,9 +19,7 @@ files with these names and compiles them as C++ programs even if you
 call the compiler the same way as for compiling C programs (usually
 with the name :command:`gcc`).
 
-.. index:: g++
-
-.. index:: c++
+.. index:: g++, c++
 
 However, the use of :command:`gcc` does not add the C++ library.
 :command:`g++` is a program that calls GCC and automatically specifies linking
@@ -44,4 +40,3 @@ See :ref:`c-dialect-options`, for
 explanations of options for languages related to C.
 See :ref:`c++-dialect-options`, for
 explanations of options that are meaningful only for C++ programs.
-

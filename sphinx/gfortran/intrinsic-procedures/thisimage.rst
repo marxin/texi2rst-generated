@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: THIS_IMAGE, coarray, THIS_IMAGE, images, index of this image
+
 .. _this_image:
-
-.. index:: THIS_IMAGE
-
-.. index:: coarray, THIS_IMAGE
-
-.. index:: images, index of this image
 
 THIS_IMAGE --- Function that returns the cosubscript index of this image
 ************************************************************************
@@ -79,4 +75,3 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
   :samp:`{See also}:`
     :ref:`NUM_IMAGES`, 
     :ref:`IMAGE_INDEX`
-

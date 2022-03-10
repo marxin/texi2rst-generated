@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ASIND, DASIND, trigonometric function, sine, inverse, degrees, sine, inverse, degrees
+
 .. _asind:
-
-.. index:: ASIND
-
-.. index:: DASIND
-
-.. index:: trigonometric function, sine, inverse, degrees
-
-.. index:: sine, inverse, degrees
 
 ASIND --- Arcsine function, degrees
 ***********************************
@@ -64,4 +58,3 @@ ASIND --- Arcsine function, degrees
     :ref:`SIND` 
     Radians function: 
     :ref:`ASIN`
-

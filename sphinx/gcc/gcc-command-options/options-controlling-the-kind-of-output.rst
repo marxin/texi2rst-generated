@@ -734,4 +734,3 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   backslash) may be included by prefixing the character to be included
   with a backslash.  The :samp:`{file}` may itself contain additional
   :samp:`@{file}` options; any such options will be processed recursively.
-

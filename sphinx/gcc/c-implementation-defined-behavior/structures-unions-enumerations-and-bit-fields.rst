@@ -76,4 +76,3 @@ Structures, Unions, Enumerations, and Bit-Fields
 
   On some targets, :option:`-fshort-enums` is the default; this is
   determined by the ABI.
-

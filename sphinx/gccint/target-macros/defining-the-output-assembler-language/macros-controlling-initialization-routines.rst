@@ -176,4 +176,3 @@ termination functions in shared libraries:
   strips version information after this suffix when generating global
   constructor and destructor names.  This define is only needed on targets
   that use :command:`collect2` to process constructors and destructors.
-

@@ -72,4 +72,3 @@ require matching quotes.  For example:
 
 Just as for the ISO preprocessor, what would be a closing quote can be
 escaped with a backslash to prevent the quoted text from closing.
-

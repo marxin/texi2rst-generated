@@ -30,4 +30,3 @@ omp_get_initial_device -- Return device number of initial device
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.35.
-

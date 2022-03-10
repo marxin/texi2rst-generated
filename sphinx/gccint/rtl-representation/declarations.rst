@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: RTL declarations, declarations, RTL
+
 .. _rtl-declarations:
-
-.. index:: RTL declarations
-
-.. index:: declarations, RTL
 
 Declarations
 ************
@@ -15,9 +13,7 @@ Declarations
 Declaration expression codes do not represent arithmetic operations
 but rather state assertions about their operands.
 
-.. index:: strict_low_part
-
-.. index:: subreg, in strict_low_part
+.. index:: strict_low_part, subreg, in strict_low_part
 
 :samp:`(strict_low_part (subreg:{m} (reg:{n} {r}) 0))`
   This expression code is used in only one context: as the destination operand of a
@@ -29,4 +25,3 @@ but rather state assertions about their operands.
   mode :samp:`{m}`, is not to be altered.  Normally, an assignment to such
   a subreg is allowed to have undefined effects on the rest of the
   register when :samp:`{m}` is smaller than :samp:`REGMODE_NATURAL_SIZE ({n})`.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: option specification files, optc-gen.awk
+
 .. _options:
-
-.. index:: option specification files
-
-.. index:: optc-gen.awk
 
 Option specification files
 --------------------------
@@ -21,4 +19,3 @@ definition files, the names of which conventionally end in
 
   option-file-format
   option-properties
-

@@ -75,4 +75,3 @@ program will fail.  When passing a pointer from Go to C, the Go
 function must retain a visible copy of it in some Go variable.
 Otherwise the Go garbage collector may delete the pointer while the C
 function is still using it.
-

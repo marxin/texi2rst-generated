@@ -25,4 +25,3 @@ The following built-in functions are available for eBPF targets.
 .. function:: void * __builtin_preserve_access_index (expr)
 
   BPF Compile Once-Run Everywhere (CO-RE) support. Instruct GCC to generate CO-RE relocation records for any accesses to aggregate data structures (struct, union, array types) in :samp:`{expr}`. This builtin is otherwise transparent, the return value is whatever :samp:`{expr}` evaluates to. It is also overloaded: :samp:`{expr}` may be of any type (not necessarily a pointer), the return type is the same. Has no effect if ``-mco-re`` is not in effect (either specified or implied).
-

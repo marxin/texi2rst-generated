@@ -45,4 +45,3 @@ major new features or packages contribute the most.
 By establishing the idea that supporting further development is 'the
 proper thing to do' when distributing free software for a fee, we can
 assure a steady flow of resources into making more free software.
-

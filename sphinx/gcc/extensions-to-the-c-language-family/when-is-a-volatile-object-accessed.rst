@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: accessing volatiles, volatile read, volatile write, volatile access
+
 .. _volatiles:
-
-.. index:: accessing volatiles
-
-.. index:: volatile read
-
-.. index:: volatile write
-
-.. index:: volatile access
 
 When is a Volatile Object Accessed?
 ***********************************
@@ -90,4 +84,3 @@ accessed.  Bit-field operations may be optimized such that adjacent
 bit-fields are only partially accessed, if they straddle a storage unit
 boundary.  For these reasons it is unwise to use volatile bit-fields to
 access hardware.
-

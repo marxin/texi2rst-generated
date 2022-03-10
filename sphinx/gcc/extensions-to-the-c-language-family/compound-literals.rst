@@ -3,17 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: constructor expressions, initializations in expressions, structures, constructor expression, expressions, constructor, compound literals
+
 .. _compound-literals:
-
-.. index:: constructor expressions
-
-.. index:: initializations in expressions
-
-.. index:: structures, constructor expression
-
-.. index:: expressions, constructor
-
-.. index:: compound literals
 
 Compound Literals
 *****************
@@ -110,4 +102,3 @@ elements of type ``char *const`` rather than ``char *``, or if
 ``foo`` were a global variable, the array would have static storage
 duration.  But it is probably safest just to avoid the use of array
 compound literals in C++ code.
-

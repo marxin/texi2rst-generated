@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: empty structures, zero-size structures
+
 .. _empty-structures:
-
-.. index:: empty structures
-
-.. index:: zero-size structures
 
 Structures with No Members
 **************************
@@ -22,4 +20,3 @@ GCC permits a C structure to have no members:
 The structure has size zero.  In C++, empty structures are part
 of the language.  G++ treats empty structures as if they had a single
 member of type ``char``.
-

@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: assembler instructions in RTL, asm_operands, usage
+
 .. _assembler:
-
-.. index:: assembler instructions in RTL
-
-.. index:: asm_operands, usage
 
 Assembler Instructions as Expressions
 *************************************
@@ -45,4 +43,3 @@ contains an ``asm_operands`` ; all of these share the same assembler
 template and vectors, but each contains the constraint for the respective
 output operand.  They are also distinguished by the output-operand index
 number, which is 0, 1, ... for successive output operands.
-

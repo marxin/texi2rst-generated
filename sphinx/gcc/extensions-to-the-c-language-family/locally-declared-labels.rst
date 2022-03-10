@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: local labels, macros, local labels
+
 .. _local-labels:
-
-.. index:: local labels
-
-.. index:: macros, local labels
 
 Locally Declared Labels
 ***********************
@@ -82,4 +80,3 @@ This could also be written using a statement expression:
 
 Local label declarations also make the labels they declare visible to
 nested functions, if there are any.  See :ref:`nested-functions`, for details.
-

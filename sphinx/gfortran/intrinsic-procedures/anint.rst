@@ -8,13 +8,7 @@
 ANINT --- Nearest whole number
 ******************************
 
-.. index:: ANINT
-
-.. index:: DNINT
-
-.. index:: ceiling
-
-.. index:: rounding, ceiling
+.. index:: ANINT, DNINT, ceiling, rounding, ceiling
 
 .. function:: ANINT(A, KIND)
 
@@ -66,4 +60,3 @@ ANINT --- Nearest whole number
     ``ANINT(A)``  ``REAL(4) A``  ``REAL(4)``  Fortran 77 and later
     ``DNINT(A)``  ``REAL(8) A``  ``REAL(8)``  Fortran 77 and later
     ============  =============  ===========  ====================
-

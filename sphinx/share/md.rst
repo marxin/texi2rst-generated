@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _simple-constraints:
-
 .. index:: simple constraints
+
+.. _simple-constraints:
 
 Simple Constraints
 ^^^^^^^^^^^^^^^^^^
@@ -20,9 +20,7 @@ whitespace
   be visually aligned in the machine description even if they have different
   number of constraints and modifiers.
 
-  .. index:: m in constraint
-
-  .. index:: memory references in constraints
+  .. index:: m in constraint, memory references in constraints
 
 m
   A memory operand is allowed, with any kind of address that the machine
@@ -30,9 +28,7 @@ m
   Note that the letter used for the general memory constraint can be
   re-defined by a back end using the ``TARGET_MEM_CONSTRAINT`` macro.
 
-  .. index:: offsettable address
-
-  .. index:: o in constraint
+  .. index:: offsettable address, o in constraint
 
 o
   A memory operand is allowed, but only if the address is
@@ -83,17 +79,13 @@ V
   postincrement) is allowed.  In inline ``asm`` the same restrictions
   as for :samp:`<` apply.
 
-  .. index:: r in constraint
-
-  .. index:: registers in constraints
+  .. index:: r in constraint, registers in constraints
 
 r
   A register operand is allowed provided that it is in a general
   register.
 
-  .. index:: constants in constraints
-
-  .. index:: i in constraint
+  .. index:: constants in constraints, i in constraint
 
 i
   An immediate integer operand (one with constant value) is allowed.
@@ -131,9 +123,7 @@ F
   An immediate floating operand (expression code ``const_double`` or
   ``const_vector``) is allowed.
 
-  .. index:: G in constraint
-
-  .. index:: H in constraint
+  .. index:: G in constraint, H in constraint
 
 :samp:`{G}, {H}`
   :samp:`G` and :samp:`H` may be defined in a machine-dependent fashion to
@@ -180,9 +170,7 @@ X
 
     Any operand whatsoever is allowed.
 
-  .. index:: 0 in constraint
-
-  .. index:: digits in constraint
+  .. index:: 0 in constraint, digits in constraint
 
 :samp:`{0}, {1}, {2}, ... {9}`
   An operand that matches the specified operand number is allowed.  If a
@@ -196,9 +184,7 @@ X
   either operand 1 *or* operand 0.  Should this be desired, one
   can use multiple alternatives instead.
 
-  .. index:: matching constraint
-
-  .. index:: constraint, matching
+  .. index:: matching constraint, constraint, matching
 
   This is called a :dfn:`matching constraint` and what it really means is
   that the assembler has only a single operand that fills two roles
@@ -235,13 +221,7 @@ X
     For proper results in such cases, the output template should always
     use the output-operand's number when printing the operand.
 
-  .. index:: load address instruction
-
-  .. index:: push address instruction
-
-  .. index:: address constraints
-
-  .. index:: p in constraint
+  .. index:: load address instruction, push address instruction, address constraints, p in constraint
 
 p
   An operand that is a valid memory address is allowed.  This is
@@ -254,9 +234,7 @@ p
   the mode specified in the ``match_operand`` as the mode of the memory
   reference for which the address would be valid.
 
-  .. index:: other register constraints
-
-  .. index:: extensible constraints
+  .. index:: other register constraints, extensible constraints
 
 other-letters
   Other letters can be defined in machine-dependent fashion to stand for
@@ -350,9 +328,7 @@ other-letters
     compiler knows how to copy a register into another register of the
     proper class in order to make an instruction valid.
 
-    .. index:: nonoffsettable memory reference
-
-    .. index:: memory reference, nonoffsettable
+    .. index:: nonoffsettable memory reference, memory reference, nonoffsettable
 
   * A nonoffsettable memory reference can be reloaded by copying the
     address into a register.  So if the constraint uses the letter
@@ -399,9 +375,9 @@ other-letters
   chosen.  However you may be able to wrap your ``asm`` statements with 
   builtins such as ``__builtin_constant_p`` to achieve the desired results.
 
-.. _multi-alternative:
-
 .. index:: multiple alternative constraints
+
+.. _multi-alternative:
 
 Multiple Alternative Constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -446,9 +422,7 @@ alternatives.
   need the same amount of copying, the one that comes first is chosen.
   These choices can be altered with the :samp:`?` and :samp:`!` characters:
 
-  .. index:: ? in constraint
-
-  .. index:: question mark
+  .. index:: ? in constraint, question mark
 
   ``?``
     Disparage slightly the alternative that the :samp:`?` appears in,
@@ -456,26 +430,20 @@ alternatives.
     this alternative as one unit more costly for each :samp:`?` that appears
     in it.
 
-    .. index:: ! in constraint
-
-    .. index:: exclamation point
+    .. index:: ! in constraint, exclamation point
 
   ``!``
     Disparage severely the alternative that the :samp:`!` appears in.
     This alternative can still be used if it fits without reloading,
     but if reloading is needed, some other alternative will be used.
 
-    .. index:: ^ in constraint
-
-    .. index:: caret
+    .. index:: ^ in constraint, caret
 
   ``^``
     This constraint is analogous to :samp:`?` but it disparages slightly
     the alternative only if the operand with the :samp:`^` needs a reload.
 
-    .. index:: $ in constraint
-
-    .. index:: dollar sign
+    .. index:: $ in constraint, dollar sign
 
   ``$``
     This constraint is analogous to :samp:`!` but it disparages severely
@@ -495,11 +463,7 @@ Register Class Preferences
 
 .. only:: gccint
 
-  .. index:: class preference constraints
-
-  .. index:: register class preference constraints
-
-  .. index:: voting between constraint alternatives
+  .. index:: class preference constraints, register class preference constraints, voting between constraint alternatives
 
   The operand constraints have another function: they enable the compiler
   to decide which kind of hardware register a pseudo register is best
@@ -514,11 +478,9 @@ Register Class Preferences
   Of course, on some machines all registers are equivalent, and no register
   classes are defined.  Then none of this complexity is relevant.
 
+.. index:: modifiers in constraints, constraint modifier characters
+
 .. _modifiers:
-
-.. index:: modifiers in constraints
-
-.. index:: constraint modifier characters
 
 Constraint Modifier Characters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -547,9 +509,7 @@ Here are constraint modifier characters.
   If you specify :samp:`=` or :samp:`+` in a constraint, you put it in the
   first character of the constraint string.
 
-  .. index:: & in constraint
-
-  .. index:: earlyclobber operand
+  .. index:: & in constraint, earlyclobber operand
 
 :samp:`&`
   Means (in a particular alternative) that this operand is an
@@ -647,11 +607,9 @@ Here are constraint modifier characters.
                (match_operand:HI 1 "general_operand" "0,g")))]
         ...)
 
+.. index:: machine specific constraints, constraints, machine specific
+
 .. _machine-constraints:
-
-.. index:: machine specific constraints
-
-.. index:: constraints, machine specific
 
 Constraints for Particular Machines
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

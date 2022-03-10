@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: HUGE, limits, largest number, model representation, largest number
+
 .. _huge:
-
-.. index:: HUGE
-
-.. index:: limits, largest number
-
-.. index:: model representation, largest number
 
 HUGE --- Largest number of a kind
 *********************************
@@ -45,4 +41,3 @@ HUGE --- Largest number of a kind
         print *, huge(0), huge(0.0), huge(0.0d0)
         print *, tiny(0.0), tiny(0.0d0)
       end program test_huge_tiny
-

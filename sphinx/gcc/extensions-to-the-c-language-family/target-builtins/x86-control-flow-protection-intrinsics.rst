@@ -48,4 +48,3 @@ The shadow stack unwind code looks like:
 
 This code runs unconditionally on all 64-bit processors.  For 32-bit
 processors the code runs on those that support multi-byte NOP instructions.
-

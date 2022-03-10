@@ -281,4 +281,3 @@ used to annotate a testcase "manually".
 
 ``cleanup-profile-file``
   Removes profiling files generated for this test.
-

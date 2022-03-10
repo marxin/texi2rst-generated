@@ -3,9 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _data-consistency-and-durability:
-
 .. index:: consistency, durability
+
+.. _data-consistency-and-durability:
 
 Data consistency and durability
 *******************************
@@ -78,4 +78,3 @@ data. ``fsync`` will also force a flush of dirty data and metadata
 to the server. Similar to ``open`` and ``close``, acquiring and
 releasing ``fcntl`` file locks, if the server supports them, will
 also force cache validation and flushing dirty data and metadata.
-

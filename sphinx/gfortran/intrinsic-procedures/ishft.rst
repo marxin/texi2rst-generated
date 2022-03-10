@@ -8,17 +8,7 @@
 ISHFT --- Shift bits
 ********************
 
-.. index:: ISHFT
-
-.. index:: BSHFT
-
-.. index:: IISHFT
-
-.. index:: JISHFT
-
-.. index:: KISHFT
-
-.. index:: bits, shift
+.. index:: ISHFT, BSHFT, IISHFT, JISHFT, KISHFT, bits, shift
 
 .. function:: ISHFT(I, SHIFT)
 
@@ -65,4 +55,3 @@ ISHFT --- Shift bits
 
   :samp:`{See also}:`
     :ref:`ISHFTC`
-

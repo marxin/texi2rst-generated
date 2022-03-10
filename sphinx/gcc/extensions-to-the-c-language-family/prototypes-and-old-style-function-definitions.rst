@@ -3,13 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: function prototype declarations, old-style function definitions, promotion of formal parameters
+
 .. _function-prototypes:
-
-.. index:: function prototype declarations
-
-.. index:: old-style function definitions
-
-.. index:: promotion of formal parameters
 
 Prototypes and Old-Style Function Definitions
 *********************************************
@@ -65,4 +61,3 @@ equivalent to the following:
 
 GNU C++ does not support old-style function definitions, so this
 extension is irrelevant.
-

@@ -3,15 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: BESSEL_J1, BESJ1, DBESJ1, Bessel function, first kind
+
 .. _bessel_j1:
-
-.. index:: BESSEL_J1
-
-.. index:: BESJ1
-
-.. index:: DBESJ1
-
-.. index:: Bessel function, first kind
 
 BESSEL_J1 --- Bessel function of the first kind of order 1
 **********************************************************
@@ -57,4 +51,3 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
     =============  =============  ===========  =============
     ``DBESJ1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
     =============  =============  ===========  =============
-

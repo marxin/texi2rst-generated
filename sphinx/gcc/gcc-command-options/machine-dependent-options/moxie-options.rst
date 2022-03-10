@@ -5,9 +5,9 @@
 
 .. program:: Moxie
 
-.. _moxie-options:
-
 .. index:: Moxie Options
+
+.. _moxie-options:
 
 Moxie Options
 ^^^^^^^^^^^^^
@@ -29,4 +29,3 @@ Moxie Options
 .. option:: -mno-crt0
 
   Do not link in the C run-time initialization object file.
-

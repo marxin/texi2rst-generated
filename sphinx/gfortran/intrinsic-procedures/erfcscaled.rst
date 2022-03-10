@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: ERFC_SCALED, error function, complementary, exponentially-scaled
+
 .. _erfc_scaled:
-
-.. index:: ERFC_SCALED
-
-.. index:: error function, complementary, exponentially-scaled
 
 ERFC_SCALED --- Error function 
 *******************************
@@ -43,4 +41,3 @@ ERFC_SCALED --- Error function
         real(8) :: x = 0.17_8
         x = erfc_scaled(x)
       end program test_erfc_scaled
-

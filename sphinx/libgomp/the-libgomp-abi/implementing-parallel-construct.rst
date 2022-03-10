@@ -53,4 +53,3 @@ create the team structure and assign team ids.
     void GOMP_parallel_end (void)
 
 Tears down the team and returns us to the previous ``omp_in_parallel()`` state.
-

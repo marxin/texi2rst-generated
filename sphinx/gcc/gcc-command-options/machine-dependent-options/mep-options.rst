@@ -5,9 +5,9 @@
 
 .. program:: MeP
 
-.. _mep-options:
-
 .. index:: MeP options
+
+.. _mep-options:
 
 MeP Options
 ^^^^^^^^^^^
@@ -165,4 +165,3 @@ MeP Options
   ``.tiny`` section.  These variables use the ``$gp`` base
   register.  The default for this option is 4, but note that there's a
   65536-byte limit to the ``.tiny`` section.
-

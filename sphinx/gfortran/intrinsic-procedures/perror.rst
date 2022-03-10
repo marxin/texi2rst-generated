@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: PERROR, system, error handling
+
 .. _perror:
-
-.. index:: PERROR
-
-.. index:: system, error handling
 
 PERROR --- Print system error message
 *************************************
@@ -36,4 +34,3 @@ PERROR --- Print system error message
 
   :samp:`{See also}:`
     :ref:`IERRNO`
-

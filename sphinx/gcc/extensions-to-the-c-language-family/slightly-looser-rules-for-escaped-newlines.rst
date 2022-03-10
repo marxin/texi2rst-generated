@@ -3,11 +3,9 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
+.. index:: escaped newlines, newlines (escaped)
+
 .. _escaped-newlines:
-
-.. index:: escaped newlines
-
-.. index:: newlines (escaped)
 
 Slightly Looser Rules for Escaped Newlines
 ******************************************
@@ -23,4 +21,3 @@ lines to form a single logical line.  This works within comments and
 tokens, as well as between tokens.  Comments are *not* treated as
 whitespace for the purposes of this relaxation, since they have not
 yet been replaced with spaces.
-
