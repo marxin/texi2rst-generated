@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. program::
+.. program:: x86 Windows
 
 .. _x86-windows-options:
 
