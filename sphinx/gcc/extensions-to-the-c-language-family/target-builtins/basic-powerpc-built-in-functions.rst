@@ -690,32 +690,6 @@ that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`)
   Perform a 64-bit parallel bits extract operation, as if implemented by the
   ``pextd`` instruction.
 
-Perform a 64-bit count trailing zeros operation under mask, as if
-implemented by the ``cnttzdm`` instruction.
-
-.. index:: __builtin_cnttzdm
-
-.. code-block:: c++
-
-  unsigned long long
-  __builtin_pdepd (unsigned long long, unsigned long long)
-
-Perform a 64-bit parallel bits deposit operation, as if implemented by the
-``pdepd`` instruction.
-
-.. index:: __builtin_pdepd
-
-.. code-block:: c++
-
-  unsigned long long
-  __builtin_pextd (unsigned long long, unsigned long long)
-
-Perform a 64-bit parallel bits extract operation, as if implemented by the
-``pextd`` instruction.
-
-.. index:: __builtin_pextd
->>>>>>> raw
-
 .. code-block:: c++
 
   vector signed __int128 vsx_xl_sext (signed long long, signed char *)

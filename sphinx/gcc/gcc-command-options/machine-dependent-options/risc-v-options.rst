@@ -73,7 +73,7 @@ These command-line options are defined for RISC-V targets:
   ``20191213``
     Produce code conforming to version 20191213.
 
-    The default is :option:`-misa-spec`:samp:`=20191213` unless GCC has been configured
+  The default is :option:`-misa-spec`:samp:`=20191213` unless GCC has been configured
   with :option:`--with-isa-spec` = specifying a different default version.
 
 .. option:: -march={ISA-string}

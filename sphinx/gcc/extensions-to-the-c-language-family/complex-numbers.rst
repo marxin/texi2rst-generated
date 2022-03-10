@@ -71,6 +71,7 @@ Expression        Description
 ``__real__ exp``  Extract the real part of :samp:`{exp}`.
 ``__imag__ exp``  Extract the imaginary part of :samp:`{exp}`.
 ================  ============================================
+
 For values of floating point, you should use the ISO C99
 functions, declared in ``<complex.h>`` and also provided as
 built-in functions by GCC.
