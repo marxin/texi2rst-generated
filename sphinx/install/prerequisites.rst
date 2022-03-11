@@ -265,10 +265,10 @@ Flex version 2.5.4 (or later)
 
 Sphinx version |needs_sphinx| (or later)
   Necessary to build HTML, PDF or EPUB documentation. See more in
-  :ref:`gccint:bulding_documentation`.
+  :ref:`gccint:building_documentation`.
 
   Necessary for running :command:`make html` or :command:`make latexpdf` to
-  create printable documentation in HTMLor PDF format.
+  create printable documentation in HTML or PDF format.
 
   Necessary to build GCC documentation during development because the
   generated output files are not included in the repository.  They are
