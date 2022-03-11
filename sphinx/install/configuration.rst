@@ -249,10 +249,7 @@ corresponding :option:`--without` option.
   .. option:: --mandir=dirname
 
     Specify the installation directory for manual pages.  The default is
-    :samp:`{datarootdir}/man`.  (Note that the manual pages are only extracts
-    from the full GCC manuals, which are provided in Texinfo format.  The manpages
-    are derived by an automatic conversion process from parts of the full
-    manual.)
+    :samp:`{datarootdir}/man`.
 
   .. option:: --with-gxx-include-dir=dirname
 

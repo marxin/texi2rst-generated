@@ -65,11 +65,15 @@ rst_prolog = r'''
                \\
 '''
 
+# FIXME: likely update to 5.0
+needs_sphinx = '4.5'
+
 rst_epilog = '''
 .. |gcc_version| replace:: %s
 .. |package_version| replace:: %s
 .. |bugurl| replace:: %s
-''' % (gcc_BASEVER, VERSION_PACKAGE, BUGURL)
+.. |needs_sphinx| replace:: %s
+''' % (gcc_BASEVER, VERSION_PACKAGE, BUGURL, needs_sphinx)
 
 # -- General configuration ---------------------------------------------------
 
@@ -137,9 +141,6 @@ man_pages = []
 suppress_warnings = [
     'ref.option',
 ]
-
-# FIXME: likely update to 5.0
-needs_sphinx = '4.5'
 
 # Use xelatex by default
 latex_engine = 'xelatex'

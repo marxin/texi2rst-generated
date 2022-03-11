@@ -50,10 +50,11 @@ them.  There is still one Flex-based lexical analyzer (part of the
 build machinery, not of GCC itself) that is used even if you only
 build the C front end.
 
-When building from the source repository or snapshots, or if you modify Texinfo
-documentation, you need version 4.7 or later of Texinfo installed if you
-want Info documentation to be regenerated.  Releases contain Info
-documentation pre-built for the unmodified documentation in the release.
+When building from the source repository or snapshots, or if you modify
+a manual page (an info page) documentation, you need version |needs_sphinx| or later
+of Sphinx if you want man pages (or info documentation) to be regenerated.
+Releases contain manual pages and
+info documentation pre-built for the unmodified documentation in the release.
 
 .. toctree::
   :maxdepth: 2

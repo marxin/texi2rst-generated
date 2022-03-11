@@ -118,17 +118,11 @@ If you find a bug, please report it following the
 `bug reporting guidelines <https://gcc.gnu.org/bugs/>`_.
 
 If you want to print the GCC manuals, do :samp:`cd {objdir}; make
-dvi`.  You will need to have :command:`texi2dvi` (version at least 4.7)
-and Tex installed.  This creates a number of :samp:`.dvi` files in
-subdirectories of :samp:`{objdir}`; these may be converted for
-printing with programs such as :command:`dvips`.  Alternately, by using
-:samp:`make pdf` in place of :samp:`make dvi`, you can create documentation
-in the form of :samp:`.pdf` files; this requires :command:`texi2pdf`, which
-is included with Texinfo version 4.8 and later.  You can also
-`buy printed manuals from the
+latexpdf`.  You will need to have Sphinx (version at least |needs_sphinx|)
+and XeLaTex installed.
+You can also `buy printed manuals from the
 Free Software Foundation <https://shop.fsf.org/>`_, though such manuals may not be for the most
 recent version of GCC.
 
 If you would like to generate online HTML documentation, do :samp:`cd
-{objdir}; make html` and HTML will be generated for the gcc manuals in
-:samp:`{objdir}/gcc/HTML`.
+{objdir}; make html`.

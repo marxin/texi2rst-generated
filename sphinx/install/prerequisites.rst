@@ -149,8 +149,6 @@ Perl version between 5.6.1 and 5.6.24
   :option:`--disable-symvers`.
 
   Necessary when regenerating :samp:`Makefile` dependencies in libiberty.
-  Necessary when regenerating :samp:`libiberty/functions.texi`.
-  Necessary when generating manpages from Texinfo manuals.
   Used by various scripts to generate some files included in the source
   repository (mainly Unicode-related and rarely changing) from source
   tables.
@@ -265,26 +263,16 @@ Flex version 2.5.4 (or later)
   files are not included in the version-controlled source repository.
   They are included in releases.
 
-Texinfo version 4.7 (or later)
-  Necessary for running :command:`makeinfo` when modifying :samp:`*.texi`
-  files to test your changes.
+Sphinx version |needs_sphinx| (or later)
+  Necessary to build HTML, PDF or EPUB documentation. See more in
+  :ref:`gccint:bulding_documentation`.
 
-  Necessary for running :command:`make dvi` or :command:`make pdf` to
-  create printable documentation in DVI or PDF format.  Texinfo version
-  4.8 or later is required for :command:`make pdf`.
+  Necessary for running :command:`make html` or :command:`make latexpdf` to
+  create printable documentation in HTMLor PDF format.
 
   Necessary to build GCC documentation during development because the
   generated output files are not included in the repository.  They are
   included in releases.
-
-Tex (any working version)
-  Necessary for running :command:`texi2dvi` and :command:`texi2pdf`, which
-  are used when running :command:`make dvi` or :command:`make pdf` to create
-  DVI or PDF files, respectively.
-
-Sphinx version 1.0 (or later)
-  Necessary to regenerate :samp:`jit/docs/_build/texinfo` from the :samp:`.rst`
-  files in the directories below :samp:`jit/docs`.
 
 git (any version) and SSH (any version)
   Necessary to access the source repository.  Public releases and weekly
