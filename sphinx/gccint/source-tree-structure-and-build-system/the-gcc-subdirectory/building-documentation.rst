@@ -3,7 +3,7 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. _builtin_documentation:
+.. _building_documentation:
 
 Building Documentation
 ^^^^^^^^^^^^^^^^^^^^^^

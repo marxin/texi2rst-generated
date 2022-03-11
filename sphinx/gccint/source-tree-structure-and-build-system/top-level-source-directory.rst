@@ -22,8 +22,6 @@ subdirectories that contain parts of GCC and its runtime libraries:
 
 :samp:`contrib`
   Contributed scripts that may be found useful in conjunction with GCC.
-  One of these, :samp:`contrib/texi2pod.pl`, is used to generate man
-  pages from Texinfo manuals as part of the GCC build process.
 
 :samp:`fixincludes`
   The support for fixing system headers to work with GCC.  See

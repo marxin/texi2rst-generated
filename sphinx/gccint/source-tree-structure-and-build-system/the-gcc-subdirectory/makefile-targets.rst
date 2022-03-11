@@ -20,9 +20,6 @@ These targets are available from the :samp:`gcc` directory:
   Produce info-formatted documentation and man pages.  Essentially it
   calls :samp:`make man` and :samp:`make info`.
 
-``dvi``
-  Produce DVI-formatted documentation.
-
 ``pdf``
   Produce PDF-formatted documentation.
 

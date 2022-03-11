@@ -73,7 +73,7 @@ following are also necessary:
   gcc-announce@gcc.gnu.org mailing list.
 
 * The front end's manuals should be mentioned in
-  :samp:`maintainer-scripts/update_web_docs_git` (see :ref:`texinfo-manuals`)
+  :samp:`maintainer-scripts/update_web_docs_git` (see :ref:`building_documentation`)
   and the online manuals should be linked to from
   :samp:`onlinedocs/index.html`.
 
@@ -216,25 +216,18 @@ standard rule in :samp:`gcc/Makefile.in` to the variable
 ``info``
   Build info documentation for the front end, in the build directory.
   This target is only called by :samp:`make bootstrap` if a suitable
-  version of :command:`makeinfo` is available, so does not need to check
+  version of :command:`sphinx` is available, so does not need to check
   for this, and should fail if an error occurs.
 
-``dvi``
-  Build DVI documentation for the front end, in the build directory.
-  This should be done using ``$(TEXI2DVI)``, with appropriate
-  :option:`-I` arguments pointing to directories of included files.
-
-``pdf``
+``latexpdf``
   Build PDF documentation for the front end, in the build directory.
-  This should be done using ``$(TEXI2PDF)``, with appropriate
-  :option:`-I` arguments pointing to directories of included files.
 
 ``html``
   Build HTML documentation for the front end, in the build directory.
 
 ``man``
-  Build generated man pages for the front end from Texinfo manuals
-  (see :ref:`man-page-generation`), in the build directory.  This target
+  Build generated man pages for the front end from reStructuredText format
+  (see :ref:`building_documentation`), in the build directory.  This target
   is only called if the necessary tools are available, but should ignore
   errors so as not to stop the build if errors occur; man pages are
   optional and the tools involved may be installed in a broken way.

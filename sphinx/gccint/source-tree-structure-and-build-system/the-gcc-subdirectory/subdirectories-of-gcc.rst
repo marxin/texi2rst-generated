@@ -32,7 +32,7 @@ The :samp:`gcc` directory contains the following subdirectories:
   details of the files in this directory.
 
 :samp:`doc`
-  Texinfo documentation for GCC, together with automatically generated
+  ReStructuredText documentation for GCC, together with automatically generated
   man pages and support for converting the installation manual to
   HTML.  See :ref:`documentation`.
 
