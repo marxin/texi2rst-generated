@@ -8,7 +8,9 @@ GNU LESSER GENERAL PUBLIC LICENSE
 
 .. index:: LGPL, Lesser General Public License
 
-Version 2.1, February 1999Copyright (C) 1991-2021 Free Software Foundation, Inc.
+Version 2.1, February 1999
+
+Copyright (C) 1991-2022 Free Software Foundation, Inc.
 51 Franklin Street - Fifth Floor, Boston, MA 02110-1301, USA
 
 Everyone is permitted to copy and distribute verbatim copies
