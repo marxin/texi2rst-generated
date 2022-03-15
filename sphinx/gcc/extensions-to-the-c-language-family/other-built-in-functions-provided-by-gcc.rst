@@ -638,6 +638,11 @@ calls.  This built-in functions appear both with and without the
   have intederminate values and the object representation needs to be
   bitwise compared to some other object, for example for atomic operations.
 
+  For C++, :samp:`{ptr}` argument type should be pointer to trivially-copyable
+  type, unless the argument is address of a variable or parameter, because
+  otherwise it isn't known if the type isn't just a base class whose padding
+  bits are reused or laid out differently in a derived class.
+
 .. function:: type __builtin_bit_cast (type, arg)
 
   The ``__builtin_bit_cast`` function is available only

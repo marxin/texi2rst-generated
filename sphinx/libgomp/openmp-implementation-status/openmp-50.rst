@@ -87,7 +87,7 @@ OMPD interface                                                           N
 =======================================================================  ======  ===================================
 
 .. [#f1] Only fulfillable requirement are ``atomic_default_mem_order`` and ``dynamic_allocators``
-.. [#f2] Mapping of vars with allocatable components unspported
+.. [#f2] Mapping of vars with allocatable components unsupported
 
 Other new OpenMP 5.0 features
 *****************************
