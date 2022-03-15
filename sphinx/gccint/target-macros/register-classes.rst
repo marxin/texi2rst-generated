@@ -467,7 +467,7 @@ in many of the tables described below.
 
   If copying a register :samp:`{class}` in :samp:`{mode}` to :samp:`{x}` requires an
   intermediate or scratch register, ``SECONDARY_OUTPUT_RELOAD_CLASS``
-  was supposed to be defined be defined to return the largest register
+  was supposed to be defined to return the largest register
   class required.  If the
   requirements for input and output reloads were the same, the macro
   ``SECONDARY_RELOAD_CLASS`` should have been used instead of defining both

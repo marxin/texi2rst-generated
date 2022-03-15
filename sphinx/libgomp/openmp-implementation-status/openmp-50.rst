@@ -73,7 +73,7 @@ Map-order clarifications                                                 P
 ``close`` *map-type-modifier*                                            Y
 Mapping C/C++ pointer variables and to assign the address of             P
       device memory mapped by an array section
-Mapping of Fortran pointer and allocatable variables, including pointer  P       Mapping of vars with allocatable components unspported
+Mapping of Fortran pointer and allocatable variables, including pointer  P       Mapping of vars with allocatable components unsupported
       and allocatable components of variables
 ``defaultmap`` extensions                                                Y
 ``declare mapper`` directive                                             N

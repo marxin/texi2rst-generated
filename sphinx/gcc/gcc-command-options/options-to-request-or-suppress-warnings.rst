@@ -3000,7 +3000,7 @@ warnings, in some cases it may also cause false positives.
   on the heap, or by using a pointer that was not returned from a prior call
   to the corresponding allocation function.  For example, because the call
   to ``stpcpy`` returns a pointer to the terminating nul character and
-  not to the begginning of the object, the call to ``free`` below is
+  not to the beginning of the object, the call to ``free`` below is
   diagnosed.
 
   .. code-block:: c++
@@ -4665,7 +4665,7 @@ warnings, in some cases it may also cause false positives.
   For example, the warning triggers for the following redeclarations because
   the first one allows an array of any size to be passed to ``f`` while
   the second one specifies that the array argument must have at least ``n``
-  elements.  In addition, calling ``f`` with the assotiated VLA bound
+  elements.  In addition, calling ``f`` with the associated VLA bound
   parameter in excess of the actual VLA bound triggers a warning as well.
 
   .. code-block:: c++
