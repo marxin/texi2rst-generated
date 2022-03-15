@@ -211,4 +211,4 @@ Options
 
 .. only:: man
 
-  .. include:: ../share/copyright.rst
+  .. include:: copyright.rst

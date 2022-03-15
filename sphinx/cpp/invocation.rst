@@ -78,4 +78,4 @@ options may *not* be grouped: :option:`-dM` is very different from
 
 .. only:: man
 
-  .. include:: ../share/copyright.rst
+  .. include:: copyright.rst
