@@ -795,16 +795,23 @@ This is about addressing modes.
 
 .. function:: tree TARGET_GOACC_CREATE_WORKER_BROADCAST_RECORD (tree rec, bool sender, const char *name, unsigned HOST_WIDE_INT offset)
 
+  .. hook-start:TARGET_GOACC_CREATE_WORKER_BROADCAST_RECORD
+
   Create a record used to propagate local-variable state from an active
   worker to other workers.  A possible implementation might adjust the type
   of REC to place the new variable in shared GPU memory.
 
   Presence of this target hook indicates that middle end neutering/broadcasting
   be used.
+.. hook-end
 
 .. function:: void TARGET_GOACC_SHARED_MEM_LAYOUT (unsigned HOST_WIDE_INT *, unsigned HOST_WIDE_INT *, int[], unsigned HOST_WIDE_INT[], unsigned HOST_WIDE_INT[])
+
+  .. hook-start:TARGET_GOACC_SHARED_MEM_LAYOUT
 
   Lay out a fixed shared-memory region on the target.  The LO and HI
   arguments should be set to a range of addresses that can be used for worker
   broadcasting. The dimensions, reduction size and gang-private size
   arguments are for the current offload region.
+
+.. hook-end

@@ -162,6 +162,8 @@ any target-specific headers.
 
 .. function:: void TARGET_CHECK_STRING_OBJECT_FORMAT_ARG (tree format_arg, tree args_list)
 
+  .. hook-start:TARGET_CHECK_STRING_OBJECT_FORMAT_ARG
+
   If a target implements string objects then this hook should
   provide a facility to check the function arguments in :samp:`{args_list}`
   against the format specifiers in :samp:`{format_arg}` where the type of

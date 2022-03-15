@@ -271,6 +271,8 @@ be documented in :samp:`extend.texi`.
 
 .. function:: bool TARGET_UPDATE_IPA_FN_TARGET_INFO (unsigned int& info, const gimple* stmt)
 
+   .. hook-start:TARGET_UPDATE_IPA_FN_TARGET_INFO
+
   Allow target to analyze all gimple statements for the given function to
   record and update some target specific information for inlining.  A typical
   example is that a caller with one isa feature disabled is normally not
@@ -286,7 +288,11 @@ be documented in :samp:`extend.texi`.
   subsequent analysis.
   The default version of this hook returns false.
 
+.. hook-end
+
 .. function:: bool TARGET_NEED_IPA_FN_TARGET_INFO (const_tree decl, unsigned int& info)
+
+  .. hook-start:TARGET_NEED_IPA_FN_TARGET_INFO
 
   Allow target to check early whether it is necessary to analyze all gimple
   statements in the given function to update target specific information for
@@ -299,6 +305,8 @@ be documented in :samp:`extend.texi`.
   decides to analyze all gimple statements to collect information, otherwise
   return false.
   The default version of this hook returns false.
+
+.. hook-end
 
 .. function:: void TARGET_RELAYOUT_FUNCTION (tree fndecl)
 
