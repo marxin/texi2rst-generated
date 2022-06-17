@@ -1608,6 +1608,38 @@ the meanings of that architecture's constraints.
   ``S1``
     $r1h
 
+:samp:`LoongArch---{config/loongarch/constraints.md}`
+
+  ``f``
+    A floating-point register (if available).
+
+  ``k``
+    A memory operand whose address is formed by a base register and
+    (optionally scaled) index register.
+
+  ``l``
+    A signed 16-bit constant.
+
+  ``m``
+    A memory operand whose address is formed by a base register and offset
+    that is suitable for use in instructions with the same addressing mode
+    as ``st.w`` and ``ld.w``.
+
+  ``I``
+    A signed 12-bit constant (for arithmetic instructions).
+
+  ``K``
+    An unsigned 12-bit constant (for logic instructions).
+
+  ``ZB``
+    An address that is held in a general-purpose register.
+    The offset is zero.
+
+  ``ZC``
+    A memory operand whose address is formed by a base register and offset
+    that is suitable for use in instructions with the same addressing mode
+    as ``ll.w`` and ``sc.w``.
+
 :samp:`MicroBlaze---{config/microblaze/constraints.md}`
 
   ``d``

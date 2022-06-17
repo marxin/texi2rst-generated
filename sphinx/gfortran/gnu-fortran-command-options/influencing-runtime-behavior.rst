@@ -17,10 +17,20 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
 .. option:: -fconvert={conversion}
 
   Specify the representation of data for unformatted files.  Valid
-  values for conversion are: :samp:`native`, the default; :samp:`swap`,
-  swap between big- and little-endian; :samp:`big-endian`, use big-endian
-  representation for unformatted files; :samp:`little-endian`, use little-endian
-  representation for unformatted files.
+  values for conversion on most systems are: :samp:`native`, the default;
+  :samp:`swap`, swap between big- and little-endian; :samp:`big-endian`, use
+  big-endian representation for unformatted files; :samp:`little-endian`, use
+  little-endian representation for unformatted files.
+
+  On POWER systems which suppport :option:`-mabi`:samp:`=ieeelongdouble`,
+  there are additional options, which can be combined with others with
+  commas.  Those are
+
+  * :option:`-fconvert`:samp:`=r16_ieee` Use IEEE 128-bit format for
+    ``REAL(KIND=16)``.
+
+  * :option:`-fconvert`:samp:`=r16_ibm` Use IBM long double format for
+    ``REAL(KIND=16)``.
 
   *This option has an effect only when used in the main program.
   The ``CONVERT`` specifier and the GFORTRAN_CONVERT_UNIT environment

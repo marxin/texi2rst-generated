@@ -3471,10 +3471,6 @@ section includes experimental options that may produce broken code.
 
     The maximum number of insns of an unswitched loop.
 
-  .. gcc-param:: max-unswitch-level
-
-    The maximum number of branches unswitched in a single loop.
-
   .. gcc-param:: lim-expensive
 
     The minimum cost of an expensive expression in the loop invariant motion.
@@ -4715,6 +4711,10 @@ section includes experimental options that may produce broken code.
 
     Maximum number of relations the oracle will register in a basic block.
 
+  .. gcc-param:: min-pagesize
+
+    Minimum page size for warning purposes.
+
   .. gcc-param:: openacc-kernels
 
     Specify mode of OpenACC 'kernels' constructs handling.
@@ -4790,4 +4790,17 @@ section includes experimental options that may produce broken code.
     If this parameter is set to :samp:`{n}`, GCC will not use this heuristic
     for loops that are known to execute in fewer than :samp:`{n}` Advanced
     SIMD iterations.
+
+  .. gcc-param:: aarch64-vect-unroll-limit
+
+    The vectorizer will use available tuning information to determine whether it
+    would be beneficial to unroll the main vectorized loop and by how much.  This
+    parameter set's the upper bound of how much the vectorizer will unroll the main
+    loop.  The default value is four.
+
+    The following choices of :samp:`{name}` are available on i386 and x86_64 targets:
+
+  .. gcc-param:: x86-stlf-window-ninsns
+
+    Instructions number above which STFL stall penalty can be compensated.
 

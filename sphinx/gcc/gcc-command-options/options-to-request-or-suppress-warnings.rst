@@ -198,6 +198,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wdangling-pointer`:samp:`=2`  
   :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
   :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
+  :option:`-Wenum-int-mismatch` (C and Objective :option:`-C` only) 
   :option:`-Wformat`   
   :option:`-Wformat-overflow`  
   :option:`-Wformat-truncation`  
@@ -3631,6 +3632,32 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Wenum-conversion`.
 
+.. option:: -Wenum-int-mismatch
+
+  .. note::
+
+    C and Objective-C only
+
+  Warn about mismatches between an enumerated type and an integer type in
+  declarations.  For example:
+
+  .. code-block:: c++
+
+    enum E { l = -1, z = 0, g = 1 };
+    int foo(void);
+    enum E foo(void);
+
+  In C, an enumerated type is compatible with ``char``, a signed
+  integer type, or an unsigned integer type.  However, since the choice
+  of the underlying type of an enumerated type is implementation-defined,
+  such mismatches may cause portability issues.  In C++, such mismatches
+  are an error.  In C, this warning is enabled by :option:`-Wall` and
+  :option:`-Wc++-compat`.
+
+.. option:: -Wno-enum-int-mismatch
+
+  Default setting; overrides :option:`-Wenum-int-mismatch`.
+
 .. option:: -Wjump-misses-init
 
   .. note::
@@ -3809,7 +3836,7 @@ warnings, in some cases it may also cause false positives.
     void f (void);
     void g (void)
     {
-      if (!func)   // warning: expression evaluates to false
+      if (!f)   // warning: expression evaluates to false
         abort ();
     }
 
@@ -3839,7 +3866,7 @@ warnings, in some cases it may also cause false positives.
   parentheses in a function call or a missing dereference in an array
   expression.  The subset of the warning for object pointers can be
   suppressed by casting the pointer operand to an integer type such
-  as ``inptr_t`` or ``uinptr_t``.
+  as ``intptr_t`` or ``uintptr_t``.
   Comparisons against string literals result in unspecified behavior
   and are not portable, and suggest the intent was to call ``strcmp``.
   The warning is suppressed if the suspicious expression is the result

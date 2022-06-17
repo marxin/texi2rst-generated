@@ -5,12 +5,13 @@
 
 .. _gfortran_convert_unit:
 
-GFORTRAN_CONVERT_UNIT---Set endianness for unformatted I/O
+GFORTRAN_CONVERT_UNIT---Set conversion for unformatted I/O
 **********************************************************
 
 By setting the :envvar:`GFORTRAN_CONVERT_UNIT` variable, it is possible
 to change the representation of data for unformatted files.
-The syntax for the :envvar:`GFORTRAN_CONVERT_UNIT` variable is:
+The syntax for the :envvar:`GFORTRAN_CONVERT_UNIT` variable for
+most systems is:
 
 .. code-block:: fortran
 
@@ -35,6 +36,15 @@ the modes are the same as for the ``CONVERT`` specifier:
 
 * ``BIG_ENDIAN`` Use the big-endian format for unformatted files.
 
+For POWER systems which support :option:`-mabi`:samp:`=ieeelongdouble`,
+there are additional options, which can be combined with the
+others with commas. Those are
+
+* ``R16_IEEE`` Use IEEE 128-bit format for ``REAL(KIND=16)``.
+
+* ``R16_IBM`` Use IBM ``long double`` format for
+  ``REAL(KIND=16)``.
+
 A missing mode for an exception is taken to mean ``BIG_ENDIAN``.
 Examples of values for :envvar:`GFORTRAN_CONVERT_UNIT` are:
 
@@ -45,6 +55,9 @@ Examples of values for :envvar:`GFORTRAN_CONVERT_UNIT` are:
   native format.
 
 * ``'10-20'``  Units 10 to 20 are big-endian, the rest is native.
+
+* ``'big_endian,r16_ibm'`` Do all unformatted I/O in big-endian
+  mode and use IBM long double for output of ``REAL(KIND=16)`` values.
 
 Setting the environment variables should be done on the command
 line or via the :command:`export`

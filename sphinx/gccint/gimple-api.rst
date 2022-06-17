@@ -17,7 +17,7 @@ GIMPLE API
               tree gimple_simplify (enum built_in_function, tree, tree, tree, gimple_seq *, tree (*)(tree))
               tree gimple_simplify (enum built_in_function, tree, tree, tree, tree, gimple_seq *, tree (*)(tree))
 
-  The main GIMPLE API entry to the expression simplifications mimicing
+  The main GIMPLE API entry to the expression simplifications mimicking
   that of the GENERIC fold_{unary,binary,ternary} functions.
 
 thus providing n-ary overloads for operation or function.  The
@@ -31,7 +31,7 @@ a valueization hook:
 
 .. function:: fold_stmt (gimple_stmt_iterator *, tree (*)(tree));
 
-Ontop of these a ``fold_buildN`` -like API for GIMPLE is introduced:
+On top of these a ``fold_buildN`` -like API for GIMPLE is introduced:
 
 .. function:: tree gimple_build (gimple_seq *, location_t, enum tree_code, tree, tree, tree (*valueize) (tree) = NULL);
               tree gimple_build (gimple_seq *, location_t, enum tree_code, tree, tree, tree, tree (*valueize) (tree) = NULL);

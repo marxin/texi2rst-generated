@@ -203,6 +203,9 @@ check the target platform type.
   :samp:`knm`
     Intel Knights Mill CPU.
 
+  :samp:`lujiazui`
+    ZHAOXIN lujiazui CPU.
+
   :samp:`amdfam10h`
     AMD Family 10h CPU.
 

@@ -91,6 +91,14 @@ The following attributes are supported on most targets.
   object size, for example in functions that call ``__builtin_object_size``.
   See :ref:`object-size-checking`.
 
+  Note that the ``access`` attribute merely specifies how an object
+  referenced by the pointer argument can be accessed; it does not imply that
+  an access **will** happen.  Also, the ``access`` attribute does not
+  imply the attribute :gcc-attr:`nonnull` ; it may be appropriate to add both attributes
+  at the declaration of a function that unconditionally manipulates a buffer via
+  a pointer argument.  See the :gcc-attr:`nonnull` attribute for more information and
+  caveats.
+
 .. index:: alias function attribute
 
 .. gcc-attr:: alias ("target")

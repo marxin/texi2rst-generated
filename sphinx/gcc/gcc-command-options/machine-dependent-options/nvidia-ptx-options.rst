@@ -21,18 +21,40 @@ These options are defined for Nvidia PTX:
   Ignored, but preserved for backward compatibility.  Only 64-bit ABI is
   supported.
 
-.. option:: -misa={ISA-string}
+.. option:: -march={architecture-string}
 
-  Generate code for given the specified PTX ISA (e.g. :samp:`sm_35`).  ISA
-  strings must be lower-case.  Valid ISA strings include :samp:`sm_30` and
-  :samp:`sm_35`.  The default ISA is sm_35.
+  Generate code for the specified PTX ISA target architecture
+  (e.g. :samp:`sm_35`).  Valid architecture strings are :samp:`sm_30`,
+  :samp:`sm_35`, :samp:`sm_53`, :samp:`sm_70`, :samp:`sm_75` and
+  :samp:`sm_80`.  The default target architecture is sm_30.
+
+  This option sets the value of the preprocessor macro
+  ``__PTX_SM__`` ; for instance, for :samp:`sm_35`, it has the value
+  :samp:`350`.
+
+.. option:: -misa={architecture-string}
+
+  Alias of :option:`-march` =.
+
+.. option:: -march-map={architecture-string}
+
+  Select the closest available :option:`-march` = value that is not more
+  capable.  For instance, for :option:`-march-map`:samp:`=sm_50` select
+  :option:`-march`:samp:`=sm_35`, and for :option:`-march-map`:samp:`=sm_53` select
+  :option:`-march`:samp:`=sm_53`.
 
 .. option:: -mptx={version-string}
 
-  Generate code for given the specified PTX version (e.g. :samp:`7.0`).
+  Generate code for the specified PTX ISA version (e.g. :samp:`7.0`).
   Valid version strings include :samp:`3.1`, :samp:`6.0`, :samp:`6.3`, and
-  :samp:`7.0`.  The default PTX version is 6.0, unless a higher minimal
-  version is required for specified PTX ISA via option :option:`-misa` =.
+  :samp:`7.0`.  The default PTX ISA version is 6.0, unless a higher
+  version is required for specified PTX ISA target architecture via
+  option :option:`-march` =.
+
+  This option sets the values of the preprocessor macros
+  ``__PTX_ISA_VERSION_MAJOR__`` and ``__PTX_ISA_VERSION_MINOR__`` ;
+  for instance, for :samp:`3.1` the macros have the values :samp:`3` and
+  :samp:`1`, respectively.
 
 .. option:: -mmainkernel
 

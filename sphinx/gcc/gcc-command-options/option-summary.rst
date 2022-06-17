@@ -132,7 +132,7 @@ in the following sections.
   :option:`-fdiagnostics-show-location` =[once|every :option:`-line` ]  
   :option:`-fdiagnostics-color` =[auto|never|always]  
   :option:`-fdiagnostics-urls` =[auto|never|always]  
-  :option:`-fdiagnostics-format` =[text|json]  
+  :option:`-fdiagnostics-format` =[text|sarif :option:`-stderr` |sarif :option:`-file` |json|json :option:`-stderr` |json :option:`-file` ]  
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` 
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` 
   :option:`-fno-diagnostics-show-cwe`  
@@ -181,6 +181,7 @@ in the following sections.
   :option:`-Wno-div-by-zero`  :option:`-Wdouble-promotion` 
   :option:`-Wduplicated-branches`  :option:`-Wduplicated-cond` 
   :option:`-Wempty-body`  :option:`-Wno-endif-labels`  :option:`-Wenum-compare`  :option:`-Wenum-conversion` 
+  :option:`-Wenum-int-mismatch` 
   :option:`-Werror`  :option:`-Werror`:samp:`=*`  :option:`-Wexpansion-to-defined`  :option:`-Wfatal-errors` 
   :option:`-Wfloat-conversion`  :option:`-Wfloat-equal`  :option:`-Wformat`  :option:`-Wformat`:samp:`=2` 
   :option:`-Wno-format-contains-nul`  :option:`-Wno-format-extra-args`  
@@ -252,14 +253,14 @@ in the following sections.
   :option:`-fanalyzer-checker`:samp:`={name}` 
   :option:`-fno-analyzer-feasibility` 
   :option:`-fanalyzer-fine-grained` 
-  :option:`-fanalyzer-state-merge` 
-  :option:`-fanalyzer-state-purge` 
+  :option:`-fno-analyzer-state-merge` 
+  :option:`-fno-analyzer-state-purge` 
   :option:`-fanalyzer-transitivity` 
+  :option:`-fno-analyzer-undo-inlining` 
   :option:`-fanalyzer-verbose-edges` 
   :option:`-fanalyzer-verbose-state-changes` 
   :option:`-fanalyzer-verbosity`:samp:`={level}` 
   :option:`-fdump-analyzer` 
-  :option:`-fdump-analyzer-stderr` 
   :option:`-fdump-analyzer-callgraph` 
   :option:`-fdump-analyzer-exploded-graph` 
   :option:`-fdump-analyzer-exploded-nodes` 
@@ -269,7 +270,9 @@ in the following sections.
   :option:`-fdump-analyzer-feasibility` 
   :option:`-fdump-analyzer-json` 
   :option:`-fdump-analyzer-state-purge` 
+  :option:`-fdump-analyzer-stderr` 
   :option:`-fdump-analyzer-supergraph` 
+  :option:`-fdump-analyzer-untracked` 
   :option:`-Wno-analyzer-double-fclose` 
   :option:`-Wno-analyzer-double-free` 
   :option:`-Wno-analyzer-exposure-through-output-file` 
@@ -294,6 +297,10 @@ in the following sections.
   :option:`-Wno-analyzer-use-after-free` 
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame` 
   :option:`-Wno-analyzer-use-of-uninitialized-value` 
+  :option:`-Wno-analyzer-va-arg-type-mismatch` 
+  :option:`-Wno-analyzer-va-list-exhausted` 
+  :option:`-Wno-analyzer-va-list-leak` 
+  :option:`-Wno-analyzer-va-list-use-after-va-end` 
   :option:`-Wno-analyzer-write-to-const` 
   :option:`-Wno-analyzer-write-to-string-literal` 
 
@@ -445,7 +452,7 @@ in the following sections.
   :option:`-fno-stack-limit`  :option:`-fsplit-stack` 
   :option:`-fvtable-verify` =[std|preinit|none] 
   :option:`-fvtv-counts`  :option:`-fvtv-debug` 
-  :option:`-finstrument-functions` 
+  :option:`-finstrument-functions`  :option:`-finstrument-functions-once` 
   :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}`, :samp:`{sym}`,... 
   :option:`-finstrument-functions-exclude-file-list`:samp:`={file}`, :samp:`{file}`,...
   -fprofile-prefix-map= :samp:`{old}` = :samp:`{new}`
@@ -724,12 +731,12 @@ in the following sections.
 
   .. program:: CRIS
 
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`  :option:`-mtune`:samp:`={cpu}` 
-  :option:`-mmax-stack-frame`:samp:`={n}`  :option:`-melinux-stacksize`:samp:`={n}` 
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`
+  :option:`-mtune`:samp:`={cpu}` :option:`-mmax-stack-frame`:samp:`={n}` 
   :option:`-metrax4`  :option:`-metrax100`  :option:`-mpdebug`  :option:`-mcc-init`  :option:`-mno-side-effects` 
   :option:`-mstack-align`  :option:`-mdata-align`  :option:`-mconst-align` 
-  :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue`  :option:`-mno-gotplt` 
-  :option:`-melf`  :option:`-maout`  :option:`-melinux`  :option:`-mlinux`  :option:`-sim`  :option:`-sim2` 
+  :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue` 
+  :option:`-melf`  :option:`-maout`  :option:`-sim`  :option:`-sim2` 
   :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
 
   *CR16 Options*
@@ -904,6 +911,19 @@ in the following sections.
 
   :option:`-mbarrel-shift-enabled`  :option:`-mdivide-enabled`  :option:`-mmultiply-enabled` 
   :option:`-msign-extend-enabled`  :option:`-muser-enabled`
+
+  *LoongArch Options*
+
+  .. program:: LoongArch
+
+  :option:`-march`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}` :option:`-mabi`:samp:`={base-abi-type}` 
+  :option:`-mfpu`:samp:`={fpu-type}` :option:`-msoft-float` :option:`-msingle-float` :option:`-mdouble-float` 
+  :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcheck-zero-division` :option:`-mno-check-zero-division` 
+  :option:`-mcond-move-int`  :option:`-mno-cond-move-int` 
+  :option:`-mcond-move-float`  :option:`-mno-cond-move-float` 
+  :option:`-memcpy`  :option:`-mno-memcpy` :option:`-mstrict-align` :option:`-mno-strict-align` 
+  :option:`-mmax-inline-memcpy-size`:samp:`={n}` 
+  :option:`-mcmodel`:samp:`={code-model}`
 
   *M32R/D Options*
 
@@ -1430,7 +1450,8 @@ in the following sections.
   :option:`-msse4a`  :option:`-m3dnow`  :option:`-m3dnowa`  :option:`-mpopcnt`  :option:`-mabm`  :option:`-mbmi`  :option:`-mtbm`  :option:`-mfma4`  :option:`-mxop` 
   :option:`-madx`  :option:`-mlzcnt`  :option:`-mbmi2`  :option:`-mfxsr`  :option:`-mxsave`  :option:`-mxsaveopt`  :option:`-mrtm`  :option:`-mhle`  :option:`-mlwp` 
   :option:`-mmwaitx`  :option:`-mclzero`  :option:`-mpku`  :option:`-mthreads`  :option:`-mgfni`  :option:`-mvaes`  :option:`-mwaitpkg` 
-  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mforce-indirect-call`  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` 
+  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mcet-switch` :option:`-mforce-indirect-call` 
+  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` 
   :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` 
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
@@ -1486,7 +1507,8 @@ in the following sections.
   :option:`-mauto-litpools`  :option:`-mno-auto-litpools` 
   :option:`-mtarget-align`  :option:`-mno-target-align` 
   :option:`-mlongcalls`  :option:`-mno-longcalls` 
-  :option:`-mabi`:samp:`={abi-type}`
+  :option:`-mabi`:samp:`={abi-type}` 
+  :option:`-mextra-l32r-costs`:samp:`={cycles}`
 
   *zSeries Options*
   See S/390 and zSeries Options.

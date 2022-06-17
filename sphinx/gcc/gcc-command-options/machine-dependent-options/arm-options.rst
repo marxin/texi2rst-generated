@@ -612,7 +612,8 @@ These :samp:`-m` options are defined for the ARM port:
   :samp:`cortex-m0plus.small-multiply`, :samp:`exynos-m1`, :samp:`marvell-pj4`,
   :samp:`neoverse-n1`, :samp:`neoverse-n2`, :samp:`neoverse-v1`, :samp:`xscale`,
   :samp:`iwmmxt`, :samp:`iwmmxt2`, :samp:`ep9312`, :samp:`fa526`, :samp:`fa626`,
-  :samp:`fa606te`, :samp:`fa626te`, :samp:`fmp626`, :samp:`fa726te`, :samp:`xgene1`.
+  :samp:`fa606te`, :samp:`fa626te`, :samp:`fmp626`, :samp:`fa726te`, :samp:`star-mc1`,
+  :samp:`xgene1`.
 
   Additionally, this option can specify that GCC should tune the performance
   of the code for a big.LITTLE system.  Permissible names are:
@@ -1006,8 +1007,9 @@ These :samp:`-m` options are defined for the ARM port:
   Mitigate against a potential security issue with the ``VLLDM`` instruction
   in some M-profile devices when using CMSE (CVE-2021-365465).  This option is
   enabled by default when the option :option:`-mcpu` = is used with
-  ``cortex-m33``, ``cortex-m35p`` or ``cortex-m55``.  The option
-  :option:`-mno-fix-cmse-cve-2021-35465` can be used to disable the mitigation.
+  ``cortex-m33``, ``cortex-m35p``, ``cortex-m55`` or ``star-mc1``.
+  The option :option:`-mno-fix-cmse-cve-2021-35465` can be used to disable
+  the mitigation.
 
 .. option:: -mstack-protector-guard={guard}
 

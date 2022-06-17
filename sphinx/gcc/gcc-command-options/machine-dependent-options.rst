@@ -57,6 +57,7 @@ platform.
   machine-dependent-options/hppa-options
   machine-dependent-options/ia-64-options
   machine-dependent-options/lm32-options
+  machine-dependent-options/loongarch-options
   machine-dependent-options/m32c-options
   machine-dependent-options/m32r-d-options
   machine-dependent-options/m680x0-options

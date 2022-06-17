@@ -162,7 +162,8 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   :samp:`{cpu-type}` are :samp:`z900`/:samp:`arch5`, :samp:`z990`/:samp:`arch6`,
   :samp:`z9-109`, :samp:`z9-ec`/:samp:`arch7`, :samp:`z10`/:samp:`arch8`,
   :samp:`z196`/:samp:`arch9`, :samp:`zEC12`, :samp:`z13`/:samp:`arch11`,
-  :samp:`z14`/:samp:`arch12`, :samp:`z15`/:samp:`arch13`, and :samp:`native`.
+  :samp:`z14`/:samp:`arch12`, :samp:`z15`/:samp:`arch13`,
+  :samp:`z16`/:samp:`arch14`, and :samp:`native`.
 
   The default is :option:`-march`:samp:`=z900`.
 

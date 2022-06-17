@@ -14,9 +14,11 @@ OpenMP Implementation Status
   openmp-implementation-status/openmp-4.5
   openmp-implementation-status/openmp-5.0
   openmp-implementation-status/openmp-5.1
+  openmp-implementation-status/openmp-5.2
   openmp-implementation-status/openmp-45
   openmp-implementation-status/openmp-50
   openmp-implementation-status/openmp-51
+  openmp-implementation-status/openmp-52
 
 The ``_OPENMP`` preprocessor macro and Fortran's ``openmp_version``
 parameter, provided by ``omp_lib.h`` and the ``omp_lib`` module, have

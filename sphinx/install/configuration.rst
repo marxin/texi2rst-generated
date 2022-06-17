@@ -144,9 +144,9 @@ Here are the possible CPU types:
 
 aarch64, aarch64_be, alpha, alpha64, amdgcn, arc, arceb, arm, armeb, avr, bfin,
 bpf, cr16, cris, csky, epiphany, fido, fr30, frv, ft32, h8300, hppa, hppa2.0,
-hppa64, i486, i686, ia64, iq2000, lm32, m32c, m32r, m32rle, m68k, mcore,
-microblaze, microblazeel, mips, mips64, mips64el, mips64octeon, mips64orion,
-mips64vr, mipsel, mipsisa32, mipsisa32r2, mipsisa64, mipsisa64r2,
+hppa64, i486, i686, ia64, iq2000, lm32, loongarch64, m32c, m32r, m32rle, m68k,
+mcore, microblaze, microblazeel, mips, mips64, mips64el, mips64octeon,
+mips64orion, mips64vr, mipsel, mipsisa32, mipsisa32r2, mipsisa64, mipsisa64r2,
 mipsisa64r2el, mipsisa64sb1, mipsisa64sr71k, mipstx39, mmix, mn10300, moxie,
 msp430, nds32be, nds32le, nios2, nvptx, or1k, pdp11, powerpc, powerpc64,
 powerpc64le, powerpcle, pru, riscv32, riscv32be, riscv64, riscv64be, rl78, rx,
@@ -582,8 +582,9 @@ corresponding :option:`--without` option.
 
   Specify what multilibs to build.  :samp:`{list}` is a comma separated list of
   values, possibly consisting of a single value.  Currently only implemented
-  for aarch64\*-\*-\*, arm\*-\*-\*, riscv\*-\*-\*, sh\*-\*-\* and x86-64-\*-linux\*.  The
-  accepted values and meaning for each target is given below.
+  for aarch64\*-\*-\*, arm\*-\*-\*, loongarch64-\*-\*, riscv\*-\*-\*, sh\*-\*-\* and
+  x86-64-\*-linux\*.  The accepted values and meaning for each target is given
+  below.
 
   ``aarch64*-*-*``
     :samp:`{list}` is a comma separated list of ``ilp32``, and ``lp64``
@@ -658,6 +659,14 @@ corresponding :option:`--without` option.
 
                          ``-mfloat-abi=hard``       ``-mfloat-abi=hard``
     ===================  =========================  =======================
+
+  ``loongarch*-*-*``
+    :samp:`{list}` is a comma-separated list of the following ABI identifiers:
+    ``lp64d[/base]`` ``lp64f[/base]`` ``lp64d[/base]``, where the
+    ``/base`` suffix may be omitted, to enable their respective run-time
+    libraries.  If :samp:`{list}` is empty or ``default``,
+    or if :option:`--with-multilib-list` is not specified, then the default ABI
+    as specified by :option:`--with-abi` or implied by :option:`--target` is selected.
 
   ``riscv*-*-*``
     :samp:`{list}` is a single ABI name.  The target architecture must be either
@@ -1588,17 +1597,6 @@ corresponding :option:`--without` option.
   point, it is not recommended to use
   :option:`--with-long-double-format`:samp:`=ieee`.
 
-  On little endian PowerPC Linux systems, if you explicitly set the
-  ``long double`` type, it will build multilibs to allow you to
-  select either ``long double`` format, unless you disable multilibs
-  with the :option:`--disable-multilib` option.  At present,
-  ``long double`` multilibs are not built on big endian PowerPC Linux
-  systems.  If you are building multilibs, you will need to configure
-  the compiler using the :option:`--with-system-zlib` option.
-
-  If you do not set the ``long double`` type explicitly, no multilibs
-  will be generated.
-
 .. option:: --enable-fdpic
 
   On SH Linux systems, generate ELF FDPIC code.
@@ -1795,16 +1793,6 @@ corresponding :option:`--without` option.
   of those optional packages should determine the actual supported offloading
   target set rather than the GCC configure-time selection.
 
-.. option:: --with-hsa-runtime=pathname
-
-  If you configure GCC with offloading which uses an HSA run-time such as
-  AMDGCN but do not have the HSA run-time library installed in a standard
-  location then you can explicitly specify the directory where they are
-  installed.  The :option:`--with-hsa-runtime`:samp:`={hsainstalldir}` option
-  is a shorthand for
-  :option:`--with-hsa-runtime-lib`:samp:`={hsainstalldir}` /lib and
-  :option:`--with-hsa-runtime-include`:samp:`={hsainstalldir}` /include.
-
 .. option:: --enable-cet
 
   Enable building target run-time libraries with control-flow
@@ -1836,6 +1824,20 @@ corresponding :option:`--without` option.
   default is derived from glibc's behavior. When glibc clamps float_t to double,
   GCC follows and enables the option. For other cross compiles, the default is
   disabled.
+
+.. option:: --with-zstd=pathname
+
+  If you do not have the ``zstd`` library installed in a standard
+  location and you want to build GCC, you can explicitly specify the
+  directory where it is installed (:samp:`--with-zstd={zstdinstalldir}`).
+  The :option:`--with-zstd`:samp:`={zstdinstalldir}` option is shorthand for
+  :option:`--with-zstd-lib`:samp:`={zstdinstalldir}` /lib and
+  :option:`--with-zstd-include`:samp:`={zstdinstalldir}` /include. If this
+  shorthand assumption is not correct, you can use the explicit
+  include and lib options directly.
+
+  These flags are applicable to the host platform only.  When building
+  a cross compiler, they will not be used to configure target libraries.
 
 Cross-Compiler-Specific Options
 ===============================

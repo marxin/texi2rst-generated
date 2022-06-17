@@ -25,25 +25,29 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-free-of-non-heap` 
   :option:`-Wanalyzer-malloc-leak` 
   :option:`-Wanalyzer-mismatching-deallocation` 
-  :option:`-Wanalyzer-possible-null-argument` 
-  :option:`-Wanalyzer-possible-null-dereference` 
   :option:`-Wanalyzer-null-argument` 
   :option:`-Wanalyzer-null-dereference` 
+  :option:`-Wanalyzer-possible-null-argument` 
+  :option:`-Wanalyzer-possible-null-dereference` 
   :option:`-Wanalyzer-shift-count-negative` 
   :option:`-Wanalyzer-shift-count-overflow` 
   :option:`-Wanalyzer-stale-setjmp-buffer` 
-  :option:`-Wanalyzer-tainted-allocation-size` 
-  :option:`-Wanalyzer-tainted-array-index` 
-  :option:`-Wanalyzer-tainted-divisor` 
-  :option:`-Wanalyzer-tainted-offset` 
-  :option:`-Wanalyzer-tainted-size` 
   :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
   :option:`-Wanalyzer-use-after-free` 
-  :option:`-Wanalyzer-use-of-uninitialized-value` 
   :option:`-Wanalyzer-use-of-pointer-in-stale-stack-frame` 
+  :option:`-Wanalyzer-use-of-uninitialized-value` 
+  :option:`-Wanalyzer-va-arg-type-mismatch` 
+  :option:`-Wanalyzer-va-list-exhausted` 
+  :option:`-Wanalyzer-va-list-leak` 
+  :option:`-Wanalyzer-va-list-use-after-va-end` 
   :option:`-Wanalyzer-write-to-const` 
   :option:`-Wanalyzer-write-to-string-literal` 
 
+  -Wanalyzer-tainted-allocation-size @gol
+  -Wanalyzer-tainted-array-index @gol
+  -Wanalyzer-tainted-divisor @gol
+  -Wanalyzer-tainted-offset @gol
+  -Wanalyzer-tainted-size @gol
   This option is only available if GCC was configured with analyzer
   support enabled.
 
@@ -388,6 +392,65 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame`.
 
+.. option:: -Wno-analyzer-va-arg-type-mismatch
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-va-arg-type-mismatch`
+  to disable it.
+
+  This diagnostic warns for interprocedural paths through the code for which
+  the analyzer detects an attempt to use ``va_arg`` to extract a value
+  passed to a variadic call, but uses a type that does not match that of
+  the expression passed to the call.
+
+.. option:: -Wanalyzer-va-arg-type-mismatch
+
+  Default setting; overrides :option:`-Wno-analyzer-va-arg-type-mismatch`.
+
+.. option:: -Wno-analyzer-va-list-exhausted
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-va-list-exhausted`
+  to disable it.
+
+  This diagnostic warns for interprocedural paths through the code for which
+  the analyzer detects an attempt to use ``va_arg`` to access the next
+  value passed to a variadic call, but all of the values in the
+  ``va_list`` have already been consumed.
+
+.. option:: -Wanalyzer-va-list-exhausted
+
+  Default setting; overrides :option:`-Wno-analyzer-va-list-exhausted`.
+
+.. option:: -Wno-analyzer-va-list-leak
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-va-list-leak`
+  to disable it.
+
+  This diagnostic warns for interprocedural paths through the code for which
+  the analyzer detects that ``va_start`` or ``va_copy`` has been called
+  on a ``va_list`` without a corresponding call to ``va_end``.
+
+.. option:: -Wanalyzer-va-list-leak
+
+  Default setting; overrides :option:`-Wno-analyzer-va-list-leak`.
+
+.. option:: -Wno-analyzer-va-list-use-after-va-end
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-va-list-use-after-va-end`
+  to disable it.
+
+  This diagnostic warns for interprocedural paths through the code for which
+  the analyzer detects an attempt to use a ``va_list``  after
+  ``va_end`` has been called on it.
+  ``va_list``.
+
+.. option:: -Wanalyzer-va-list-use-after-va-end
+
+  Default setting; overrides :option:`-Wno-analyzer-va-list-use-after-va-end`.
+
 .. option:: -Wno-analyzer-write-to-const
 
   This warning requires :option:`-fanalyzer`, which enables it; use
@@ -460,6 +523,25 @@ The following options control the analyzer.
   such as the ``taint`` checker that implements
   :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.
+
+  *Note:* currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
+  following warnings from :option:`-fanalyzer` :
+
+  :option:`-Wanalyzer-double-fclose` 
+  :option:`-Wanalyzer-double-free` 
+  :option:`-Wanalyzer-exposure-through-output-file` 
+  :option:`-Wanalyzer-file-leak` 
+  :option:`-Wanalyzer-free-of-non-heap` 
+  :option:`-Wanalyzer-malloc-leak` 
+  :option:`-Wanalyzer-mismatching-deallocation` 
+  :option:`-Wanalyzer-null-argument` 
+  :option:`-Wanalyzer-null-dereference` 
+  :option:`-Wanalyzer-possible-null-argument` 
+  :option:`-Wanalyzer-possible-null-dereference` 
+  :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
+  :option:`-Wanalyzer-use-after-free` 
+  :option:`-Wanalyzer-va-list-leak` 
+  :option:`-Wanalyzer-va-list-use-after-va-end` 
 
 .. option:: -fno-analyzer-feasibility
 
@@ -537,6 +619,28 @@ The following options control the analyzer.
 .. option:: -fno-analyzer-transitivity
 
   Default setting; overrides :option:`-fanalyzer-transitivity`.
+
+.. option:: -fno-analyzer-undo-inlining
+
+  This option is intended for analyzer developers.
+
+  :option:`-fanalyzer` runs relatively late compared to other code analysis
+  tools, and some optimizations have already been applied to the code.  In
+  particular function inlining may have occurred, leading to the
+  interprocedural execution paths emitted by the analyzer containing
+  function frames that don't correspond to those in the original source
+  code.
+
+  By default the analyzer attempts to reconstruct the original function
+  frames, and to emit events showing the inlined calls.
+
+  With :option:`-fno-analyzer-undo-inlining` this attempt to reconstruct
+  the original frame information can be be disabled, which may be of help
+  when debugging issues in the analyzer.
+
+.. option:: -fanalyzer-undo-inlining
+
+  Default setting; overrides :option:`-fno-analyzer-undo-inlining`.
 
 ``-fanalyzer-verbose-edges``
   This option is intended for analyzer developers.  It enables more
@@ -627,8 +731,8 @@ The following options control the analyzer.
 
   Dump internal details about the analyzer's search for feasible paths.
   The details are written in a form suitable for viewing with GraphViz
-  to filenames of the form :samp:`{file}.*.fg.dot` and
-  :samp:`{file}.*.tg.dot`.
+  to filenames of the form :samp:`{file}.*.fg.dot`,
+  :samp:`{file}.*.tg.dot`, and :samp:`{file}.*.fpath.txt`.
 
 .. option:: -fdump-analyzer-json
 
@@ -651,4 +755,8 @@ The following options control the analyzer.
   control flow graphs in the program, with interprocedural edges for
   calls and returns.  The second dump contains annotations showing nodes
   in the 'exploded graph' and diagnostics associated with them.
+
+.. option:: -fdump-analyzer-untracked
+
+  Emit custom warnings with internal details intended for analyzer developers.
 

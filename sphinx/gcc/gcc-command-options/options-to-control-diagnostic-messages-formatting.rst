@@ -111,7 +111,7 @@ honor these options.
     error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:\
     quote=01:path=01;36:fixit-insert=32:fixit-delete=31:\
     diff-filename=01:diff-hunk=32:diff-delete=31:diff-insert=32:\
-    type-diff=01;32
+    type-diff=01;32:fnname=01;32:targs=35
 
   where :samp:`01;31` is bold red, :samp:`01;35` is bold magenta,
   :samp:`01;36` is bold cyan, :samp:`32` is green, :samp:`34` is blue,
@@ -169,6 +169,18 @@ honor these options.
     .. index:: quote GCC_COLORS capability
 
     SGR substring for information printed within quotes.
+
+  ``fnname=``
+
+    .. index:: fnname GCC_COLORS capability
+
+    SGR substring for names of C++ functions.
+
+  ``targs=``
+
+    .. index:: targs GCC_COLORS capability
+
+    SGR substring for C++ function template parameter bindings.
 
   ``fixit-insert=``
 
@@ -535,7 +547,10 @@ honor these options.
   associated with a diagnostic.
 
   If this is option is provided then the stack depth will be printed for
-  each run of events within :option:`-fdiagnostics-path-format`:samp:`=separate-events`.
+  each run of events within :option:`-fdiagnostics-path-format`:samp:`=inline-events`.
+  If provided with :option:`-fdiagnostics-path-format`:samp:`=separate-events`, then
+  the stack depth and function declaration will be appended when printing
+  each event.
 
   This is intended for use by GCC developers and plugin developers when
   debugging diagnostics that report interprocedural control flow.
@@ -610,14 +625,23 @@ honor these options.
 .. option:: -fdiagnostics-format={FORMAT}
 
   Select a different format for printing diagnostics.
-  :samp:`{FORMAT}` is :samp:`text` or :samp:`json`.
+  :samp:`{FORMAT}` is :samp:`text`, :samp:`sarif-stderr`, :samp:`sarif-file`,
+  :samp:`json`, :samp:`json-stderr`, or :samp:`json-file`.
+
   The default is :samp:`text`.
 
-  The :samp:`json` format consists of a top-level JSON array containing JSON
-  objects representing the diagnostics.
+  The :samp:`sarif-stderr` and :samp:`sarif-file` formats both emit
+  diagnostics in SARIF Version 2.1.0 format, either to stderr, or to a file
+  named :samp:`{source}.sarif`, respectively.
 
-  The JSON is emitted as one line, without formatting; the examples below
-  have been formatted for clarity.
+  The :samp:`json` format is a synonym for :samp:`json-stderr`.
+  The :samp:`json-stderr` and :samp:`json-file` formats are identical, apart from
+  where the JSON is emitted to - with the former, the JSON is emitted to stderr,
+  whereas with :samp:`json-file` it is written to :samp:`{source}.gcc.json`.
+
+  The emitted JSON consists of a top-level JSON array containing JSON objects
+  representing the diagnostics.  The JSON is emitted as one line, without
+  formatting; the examples below have been formatted for clarity.
 
   Diagnostics can have child diagnostics.  For example, this error and note:
 

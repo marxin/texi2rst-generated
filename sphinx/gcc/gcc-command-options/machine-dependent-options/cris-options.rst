@@ -19,8 +19,7 @@ These options are defined specifically for the CRIS ports.
   Generate code for the specified architecture.  The choices for
   :samp:`{architecture-type}` are :samp:`v3`, :samp:`v8` and :samp:`v10` for
   respectively ETRAX4, ETRAX100, and ETRAX100LX.
-  Default is :samp:`v0` except for cris-axis-linux-gnu, where the default is
-  :samp:`v10`.
+  Default is :samp:`v0`.
 
 .. option:: -mtune={architecture-type}
 
@@ -87,25 +86,13 @@ These options are defined specifically for the CRIS ports.
   warnings or errors are generated when call-saved registers must be saved,
   or storage for local variables needs to be allocated.
 
-.. option:: -mno-gotplt, -mgotplt
-
-  With :option:`-fpic` and :option:`-fPIC`, don't generate (do generate)
-  instruction sequences that load addresses for functions from the PLT part
-  of the GOT rather than (traditional on other architectures) calls to the
-  PLT.  The default is :option:`-mgotplt`.
-
 .. option:: -melf
 
-  Legacy no-op option only recognized with the cris-axis-elf and
-  cris-axis-linux-gnu targets.
-
-.. option:: -mlinux
-
-  Legacy no-op option only recognized with the cris-axis-linux-gnu target.
+  Legacy no-op option.
 
 .. option:: -sim
 
-  This option, recognized for the cris-axis-elf, arranges
+  This option arranges
   to link with input-output functions from a simulator library.  Code,
   initialized data and zero-initialized data are allocated consecutively.
 

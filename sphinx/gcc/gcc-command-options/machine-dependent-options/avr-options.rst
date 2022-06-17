@@ -77,17 +77,17 @@ These options are defined for AVR implementations:
   ``avrxmega2``
     'XMEGA' devices with more than 8 KiB and up to 64 KiB of program memory.
 
-    :samp:`{mcu}` = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``.
+    :samp:`{mcu}` = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``, ``avr64da28``, ``avr64da32``, ``avr64da48``, ``avr64da64``, ``avr64db28``, ``avr64db32``, ``avr64db48``, ``avr64db64``.
 
   ``avrxmega3``
     'XMEGA' devices with up to 64 KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
 
-    :samp:`{mcu}` = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``.
+    :samp:`{mcu}` = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``, ``avr32da28``, ``avr32da32``, ``avr32da48``, ``avr32db28``, ``avr32db32``, ``avr32db48``.
 
   ``avrxmega4``
     'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory.
 
-    :samp:`{mcu}` = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``.
+    :samp:`{mcu}` = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``, ``avr128da28``, ``avr128da32``, ``avr128da48``, ``avr128da64``, ``avr128db28``, ``avr128db32``, ``avr128db48``, ``avr128db64``.
 
   ``avrxmega5``
     'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory and more than 64 KiB of RAM.

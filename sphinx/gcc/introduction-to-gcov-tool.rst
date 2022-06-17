@@ -17,6 +17,9 @@ Current gcov-tool supports the following functionalities:
 
 * merge two sets of profiles with weights.
 
+* read a stream of profiles with associated filenames and merge it with a set of
+  profiles with weights.
+
 * read one set of profile and rewrite profile contents. One can scale or
   normalize the count values.
 
@@ -25,6 +28,11 @@ Examples of the use cases for this tool are:
 * Collect the profiles for different set of inputs, and use this tool to merge
   them. One can specify the weight to factor in the relative importance of
   each input.
+
+* Collect profiles from target systems without a filesystem (freestanding
+  environments).  Merge the collected profiles with associated profiles
+  present on the host system.  One can specify the weight to factor in the
+  relative importance of each input.
 
 * Rewrite the profile after removing a subset of the gcda files, while maintaining
   the consistency of the summary and the histogram.

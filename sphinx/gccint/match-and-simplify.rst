@@ -21,7 +21,7 @@ tries to address several issues.
       building and simplifying GENERIC via fold_buildN and then
       gimplifying via force_gimple_operand
 
-To address these the project introduces a simple domain specific language
+To address these the project introduces a simple domain-specific language
 to write expression simplifications from which code targeting GIMPLE
 and GENERIC is auto-generated.  The GENERIC variant follows the
 fold_buildN API while for the GIMPLE variant and to address 2) new

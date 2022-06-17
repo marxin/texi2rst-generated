@@ -1340,6 +1340,13 @@ Here are several miscellaneous parameters.
   that could conceivably contain values that are useful to an attacker.
   Return the set of registers that were actually cleared.
 
+  For most targets, the returned set of registers is a subset of
+  :samp:`{selected_regs}`, however, for some of the targets (for example MIPS),
+  clearing some registers that are in the :samp:`{selected_regs}` requires
+  clearing other call used registers that are not in the :samp:`{selected_regs}`,
+  under such situation, the returned set of registers must be a subset of all
+  call used registers.
+
   The default implementation uses normal move instructions to zero
   all the registers in :samp:`{selected_regs}`.  Define this hook if the
   target has more efficient ways of zeroing certain registers,

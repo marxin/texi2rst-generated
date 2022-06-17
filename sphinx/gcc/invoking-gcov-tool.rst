@@ -24,6 +24,10 @@ gcov-tool merge [merge-options] :samp:`{directory1}` :samp:`{directory2}`
      [ :option:`-v` | :option:`--verbose` ]
      [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
 
+gcov-tool merge-stream [merge-stream-options] [ :samp:`{file}` ]
+     [ :option:`-v` | :option:`--verbose` ]
+     [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
+
 gcov-tool rewrite [rewrite-options] :samp:`{directory}`
      [ :option:`-n` | :option:`--normalize` :samp:`{long_long_value}` ]
      [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
@@ -62,6 +66,24 @@ Options
   :samp:`-w {w1},{w2}` :samp:`--weight {w1},{w2}`
     Set the merge weights of the :samp:`{directory1}` and :samp:`{directory2}`,
     respectively. The default weights are 1 for both.
+
+``merge-stream``
+  Collect profiles with associated filenames from a *gcfn* and *gcda*
+  data stream.  Read the stream from the file specified by :samp:`{file}` or from
+  :samp:`stdin`.  Merge the profiles with associated profiles in the host
+  filesystem.  Apply the optional weights while merging profiles.
+
+  For the generation of a *gcfn* and *gcda* data stream on the target
+  system, please have a look at the ``__gcov_filename_to_gcfn()`` and
+  ``__gcov_info_to_gcda()`` functions declared in ``#include <gcov.h>``.
+
+  ``-v`` ``--verbose``
+    Set the verbose mode.
+
+  :samp:`-w {w1},{w2}` :samp:`--weight {w1},{w2}`
+    Set the merge weights of the profiles from the *gcfn* and *gcda* data
+    stream and the associated profiles in the host filesystem, respectively.  The
+    default weights are 1 for both.
 
 ``rewrite``
   Read the specified profile directory and rewrite to a new directory.

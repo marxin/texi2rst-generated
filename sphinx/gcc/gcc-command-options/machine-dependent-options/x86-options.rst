@@ -234,11 +234,12 @@ These :samp:`-m` options are defined for the x86 family of computers.
     Intel sapphirerapids CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3,
     SSSE3, SSE4.1, SSE4.2, POPCNT, CX16, SAHF, FXSR, AVX, XSAVE, PCLMUL, FSGSBASE,
     RDRND, F16C, AVX2, BMI, BMI2, LZCNT, FMA, MOVBE, HLE, RDSEED, ADCX, PREFETCHW,
-    AES, CLFLUSHOPT, XSAVEC, XSAVES, SGX, AVX512F, CLWB, AVX512VL, AVX512BW,
-    AVX512DQ, AVX512CD, AVX512VNNI, AVX512BF16 MOVDIRI, MOVDIR64B,
-    AVX512VP2INTERSECT, ENQCMD, CLDEMOTE, PTWRITE, WAITPKG, SERIALIZE, TSXLDTRK,
-    UINTR, AMX-BF16, AMX-TILE, AMX-INT8, AVX-VNNI and AVX512FP16 instruction set
-    support.
+    AES, CLFLUSHOPT, XSAVEC, XSAVES, SGX, AVX512F, AVX512VL, AVX512BW, AVX512DQ,
+    AVX512CD, PKU, AVX512VBMI, AVX512IFMA, SHA, AVX512VNNI, GFNI, VAES, AVX512VBMI2
+    VPCLMULQDQ, AVX512BITALG, RDPID, AVX512VPOPCNTDQ, PCONFIG, WBNOINVD, CLWB,
+    MOVDIRI, MOVDIR64B, AVX512VP2INTERSECT, ENQCMD, CLDEMOTE, PTWRITE, WAITPKG,
+    SERIALIZE, TSXLDTRK, UINTR, AMX-BF16, AMX-TILE, AMX-INT8, AVX-VNNI, AVX512FP16
+    and AVX512BF16 instruction set support.
 
   :samp:`alderlake`
     Intel Alderlake CPU with 64-bit extensions, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3,
@@ -408,6 +409,11 @@ These :samp:`-m` options are defined for the x86 family of computers.
     VIA Nano Quad Core CPU with x86-64, MMX, SSE, SSE2, SSE3, SSSE3 and SSE4.1
     instruction set support.
     (No scheduling is implemented for this chip.)
+
+  :samp:`lujiazui`
+    ZHAOXIN lujiazui CPU with x86-64, MOVBE, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1,
+    SSE4.2, AVX, POPCNT, AES, PCLMUL, RDRND, XSAVE, XSAVEOPT, FSGSBASE, CX16,
+    ABM, BMI, BMI2, F16C, FXSR, RDSEED instruction set support.
 
   :samp:`geode`
     AMD Geode embedded processor with MMX and 3DNow! instruction set support.
@@ -1037,6 +1043,17 @@ These :samp:`-m` options are defined for the x86 family of computers.
   function attribute. This is useful when used with the option
   :option:`-fcf-protection`:samp:`=branch` to control ENDBR insertion at the
   function entry.
+
+.. option:: -mcet-switch
+
+  By default, CET instrumentation is turned off on switch statements that
+  use a jump table and indirect branch track is disabled.  Since jump
+  tables are stored in read-only memory, this does not result in a direct
+  loss of hardening.  But if the jump table index is attacker-controlled,
+  the indirect jump may not be constrained by CET.  This option turns on
+  CET instrumentation to enable indirect branch track for switch statements
+  with jump tables which leads to the jump targets reachable via any indirect
+  jumps.
 
 .. option:: -mcall-ms2sysv-xlogues
 
