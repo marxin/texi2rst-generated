@@ -1469,8 +1469,8 @@ in the following sections.
   :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` |gol|
   :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` |gol|
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` |gol|
-  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`|gol|
-  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`|gol|
+  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk` |gol|
+  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni` |gol|
   :option:`-mavx512fp16` |gol|
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` |gol|
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy`:samp:`={alg}` |gol|
