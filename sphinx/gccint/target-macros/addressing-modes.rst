@@ -425,17 +425,21 @@ This is about addressing modes.
 
 .. hook-end
 
-.. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST (machine_mode mode, rtx output, rtx in0, rtx in1, const vec_perm_indices &sel)
+.. function:: bool TARGET_VECTORIZE_VEC_PERM_CONST (machine_mode mode, machine_mode op_mode, rtx output, rtx in0, rtx in1, const vec_perm_indices &sel)
 
   .. hook-start:TARGET_VECTORIZE_VEC_PERM_CONST
 
   This hook is used to test whether the target can permute up to two
-  vectors of mode :samp:`{mode}` using the permutation vector ``sel``, and
-  also to emit such a permutation.  In the former case :samp:`{in0}`, :samp:`{in1}`
-  and :samp:`{out}` are all null.  In the latter case :samp:`{in0}` and :samp:`{in1}` are
-  the source vectors and :samp:`{out}` is the destination vector; all three are
-  operands of mode :samp:`{mode}`.  :samp:`{in1}` is the same as :samp:`{in0}` if
-  :samp:`{sel}` describes a permutation on one vector instead of two.
+  vectors of mode :samp:`{op_mode}` using the permutation vector ``sel``,
+  producing a vector of mode :samp:`{mode}`.  The hook is also used to emit such
+  a permutation.
+
+  When the hook is being used to test whether the target supports a permutation,
+  :samp:`{in0}`, :samp:`{in1}`, and :samp:`{out}` are all null.  When the hook is being used
+  to emit a permutation, :samp:`{in0}` and :samp:`{in1}` are the source vectors of mode
+  :samp:`{op_mode}` and :samp:`{out}` is the destination vector of mode :samp:`{mode}`.
+  :samp:`{in1}` is the same as :samp:`{in0}` if :samp:`{sel}` describes a permutation on one
+  vector instead of two.
 
   Return true if the operation is possible, emitting instructions for it
   if rtxes are provided.

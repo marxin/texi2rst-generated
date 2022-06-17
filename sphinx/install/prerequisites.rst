@@ -84,7 +84,8 @@ GDC
 """
 
   In order to build GDC, the D compiler, you need a working GDC
-  compiler (GCC version 9.1 or later), as the D front end is written in D.
+  compiler (GCC version 9.1 or later) and D runtime library,
+  :samp:`libphobos`, as the D front end is written in D.
 
   Versions of GDC prior to 12 can be built with an ISO C++11 compiler, which can
   then be installed and used to bootstrap newer versions of the D front end.
@@ -99,6 +100,10 @@ GDC
   front end does not make use of any GDC-specific extensions, or novel features
   of the D language, if too old a GDC version is installed and
   :option:`--enable-languages`:samp:`=d` is used, the build will fail.
+
+  On some targets, :samp:`libphobos` isn't enabled by default, but compiles
+  and works if :option:`--enable-libphobos` is used.  Specifics are
+  documented for affected targets.
 
 A 'working' POSIX compatible shell, or GNU bash
   Necessary when running :command:`configure` because some

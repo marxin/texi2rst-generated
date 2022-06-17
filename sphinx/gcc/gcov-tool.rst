@@ -26,6 +26,11 @@ gcov-tool---an Offline Gcda Profile Processing Tool
        [ :option:`-v` | :option:`--verbose` ]
        [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
 
+gcov-tool merge-stream [merge-stream-options] [ :samp:`{file}` ]
+     [ :option:`-v` | :option:`--verbose` ]
+     [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
+
+
   gcov-tool rewrite [rewrite-options] :samp:`{directory}`
        [ :option:`-n` | :option:`--normalize` :samp:`{long_long_value}` ]
        [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
@@ -49,6 +54,9 @@ Current gcov-tool supports the following functionalities:
 
 * merge two sets of profiles with weights.
 
+* read a stream of profiles with associated filenames and merge it with a set of
+  profiles with weights.
+
 * read one set of profile and rewrite profile contents. One can scale or
   normalize the count values.
 
@@ -57,6 +65,11 @@ Examples of the use cases for this tool are:
 * Collect the profiles for different set of inputs, and use this tool to merge
   them. One can specify the weight to factor in the relative importance of
   each input.
+
+* Collect profiles from target systems without a filesystem (freestanding
+  environments).  Merge the collected profiles with associated profiles
+  present on the host system.  One can specify the weight to factor in the
+  relative importance of each input.
 
 * Rewrite the profile after removing a subset of the gcda files, while maintaining
   the consistency of the summary and the histogram.
@@ -113,6 +126,27 @@ Options
 
     Set the merge weights of the :samp:`{directory1}` and :samp:`{directory2}`,
     respectively. The default weights are 1 for both.
+
+.. option:: merge-stream
+
+  Collect profiles with associated filenames from a *gcfn* and *gcda*
+  data stream.  Read the stream from the file specified by :samp:`{file}` or from
+  :samp:`stdin`.  Merge the profiles with associated profiles in the host
+  filesystem.  Apply the optional weights while merging profiles.
+
+  For the generation of a *gcfn* and *gcda* data stream on the target
+  system, please have a look at the ``__gcov_filename_to_gcfn()`` and
+  ``__gcov_info_to_gcda()`` functions declared in ``#include <gcov.h>``.
+
+  .. option:: -v, --verbose
+
+    Set the verbose mode.
+
+  .. option:: -w w1,w2, --weight w1,w2
+
+    Set the merge weights of the profiles from the *gcfn* and *gcda* data
+    stream and the associated profiles in the host filesystem, respectively.  The
+    default weights are 1 for both.
 
 .. option:: rewrite
 

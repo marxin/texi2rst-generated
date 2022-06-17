@@ -142,6 +142,8 @@ suppress_warnings = [
     'ref.option',
 ]
 
+needs_sphinx = '5.1'
+
 # Use xelatex by default
 latex_engine = 'xelatex'
 
@@ -171,7 +173,7 @@ texinfo_elements = { 'preamble': """
 # Use default as RTD theme uses default as well
 pygments_style = 'default'
 
-option_parse_variable_part = True
+option_emphasise_placeholders = True
 
 # Cross manual reference mapping
 intersphinx_mapping = {}

@@ -19,6 +19,7 @@ test code coverage in your programs.
   gcov/using-gcov-with-gcc-optimization
   gcov/brief-description-of-gcov-data-files
   gcov/data-file-relocation-to-support-cross-profiling
+  gcov/profiling-and-test-coverage-in-freestanding-environments
 
 .. only:: man
 

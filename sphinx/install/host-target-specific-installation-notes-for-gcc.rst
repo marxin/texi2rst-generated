@@ -159,26 +159,14 @@ configure GCC for building a CR16 uclinux cross-compiler.
 CRIS
 ====
 
-CRIS is the CPU architecture in Axis Communications ETRAX system-on-a-chip
-series.  These are used in embedded applications.
+CRIS is a CPU architecture in Axis Communications systems-on-a-chip, for
+example the ETRAX series.  These are used in embedded applications.
 
 See :ref:`gcc:cris-options`,
 for a list of CRIS-specific options.
 
-There are a few different CRIS targets:
-
-``cris-axis-elf``
-  Mainly for monolithic embedded systems.  Includes a multilib for the
-  :samp:`v10` core used in :samp:`ETRAX 100 LX`.
-
-``cris-axis-linux-gnu``
-  A GNU/Linux port for the CRIS architecture, currently targeting
-  :samp:`ETRAX 100 LX` by default.
-
-  Pre-packaged tools can be obtained from
-  ftp://ftp.axis.com/pub/axis/tools/cris/compiler-kit/.  More
-  information about this platform is available at
-  http://developer.axis.com/.
+Use :samp:`configure --target=cris-elf` to configure GCCfor building
+a cross-compiler for CRIS.
 
 DOS
 ===
@@ -668,6 +656,32 @@ lm32-\*-uclinux
 Lattice Mico32 processor.
 This configuration is intended for embedded systems running uClinux.
 
+LoongArch
+=========
+
+LoongArch processor.
+The following LoongArch targets are available:
+
+``loongarch64-linux-gnu*``
+  LoongArch processor running GNU/Linux.  This target triplet may be coupled
+  with a small set of possible suffixes to identify their default ABI type:
+
+  ``f64``
+    Uses ``lp64d/base`` ABI by default.
+
+  ``f32``
+    Uses ``lp64f/base`` ABI by default.
+
+  ``sf``
+    Uses ``lp64s/base`` ABI by default.
+
+``loongarch64-linux-gnu``
+  Same as ``loongarch64-linux-gnuf64``, but may be used with
+  :option:`--with-abi`:samp:`=*` to configure the default ABI type.
+
+  More information about LoongArch can be found at
+https://github.com/loongson/LoongArch-Documentation.
+
 m32c-\*-elf
 ===========
 
@@ -1016,6 +1030,12 @@ GNU binutils.  :samp:`libstdc++` symbol versioning will be disabled if no
 appropriate version is found.  Solaris :command:`c++filt` from the Solaris
 Studio compilers does *not* work.
 
+In order to build the GNU D compiler, GDC, a working :samp:`libphobos` is
+needed.  That library wasn't built by default in GCC 9--11 on SPARC, or
+on x86 when the Solaris assembler is used, but can be enabled by
+configuring with :option:`--enable-libphobos`.  Also, GDC 9.4.0 is
+required on x86, while GDC 9.3.0 is known to work on SPARC.
+
 The versions of the GNU Multiple Precision Library (GMP), the MPFR
 library and the MPC library bundled with Solaris 11.3 and later are
 usually recent enough to match GCC's requirements.  There are two
@@ -1237,7 +1257,7 @@ Intel 64-bit versions
 =====================
 
 GCC contains support for x86-64 using the mingw-w64
-runtime library, available from https://mingw-w64.org/doku.php.
+runtime library, available from https://www.mingw-w64.org/downloads/.
 This library should be used with the target triple x86_64-pc-mingw32.
 
 Windows CE

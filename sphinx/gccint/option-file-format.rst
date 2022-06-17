@@ -150,6 +150,17 @@ The files can contain the following types of record:
   tab forms the help text.  This allows you to elaborate on what type
   of argument the option takes.
 
+  There is no support for different help texts for different languages.
+  If an option is supported for multiple languages, use a generic
+  description that is correct for all of them.
+
+  If an option has multiple option definition records (in different
+  front ends' :samp:`*.opt` files, and/or :samp:`gcc/common.opt`, for
+  example), convention is to not duplicate the help text for each of
+  them, but instead put a comment like ``; documented in common.opt``
+  in place of the help text for all but one of the multiple option
+  definition records.
+
 * A target mask record.  These records have one field of the form
   :samp:`Mask({x})`.  The options-processing script will automatically
   allocate a bit in ``target_flags`` (see :ref:`run-time-target`) for

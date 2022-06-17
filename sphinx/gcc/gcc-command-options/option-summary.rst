@@ -138,7 +138,7 @@ in the following sections.
   :option:`-fdiagnostics-show-location`:samp:`=[once|every-line]` |gol|
   :option:`-fdiagnostics-color`:samp:`=[auto|never|always]` |gol|
   :option:`-fdiagnostics-urls`:samp:`=[auto|never|always]` |gol|
-  :option:`-fdiagnostics-format`:samp:`=[text|json]` |gol|
+  :option:`-fdiagnostics-format`:samp:`=[text|sarif-stderr|sarif-file|json|json-stderr|json-file]` |gol|
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` |gol|
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` |gol|
   :option:`-fno-diagnostics-show-cwe` |gol|
@@ -180,17 +180,18 @@ in the following sections.
   :option:`-Wchar-subscripts` |gol|
   :option:`-Wclobbered`  :option:`-Wcomment` |gol|
   :option:`-Wconversion`  :option:`-Wno-coverage-mismatch`  :option:`-Wno-cpp` |gol|
-  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer`:samp:`={n}`  
-  :option:`-Wdate-time` 
+  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer`:samp:`={n}`  |gol|
+  :option:`-Wdate-time` |gol|
   :option:`-Wno-deprecated`  :option:`-Wno-deprecated-declarations`  :option:`-Wno-designated-init` |gol|
   :option:`-Wdisabled-optimization` |gol|
   :option:`-Wno-discarded-array-qualifiers`  :option:`-Wno-discarded-qualifiers` |gol|
   :option:`-Wno-div-by-zero`  :option:`-Wdouble-promotion` |gol|
   :option:`-Wduplicated-branches`  :option:`-Wduplicated-cond` |gol|
   :option:`-Wempty-body`  :option:`-Wno-endif-labels`  :option:`-Wenum-compare`  :option:`-Wenum-conversion` |gol|
+  :option:`-Wenum-int-mismatch` |gol|
   :option:`-Werror`  :option:`-Werror`:samp:`=*`  :option:`-Wexpansion-to-defined`  :option:`-Wfatal-errors` |gol|
   :option:`-Wfloat-conversion`  :option:`-Wfloat-equal`  :option:`-Wformat`  :option:`-Wformat`:samp:`=2` |gol|
-  :option:`-Wno-format-contains-nul`  :option:`-Wno-format-extra-args` |gol|
+  :option:`-Wno-format-contains-nul`  :option:`-Wno-format-extra-args`  |gol|
   :option:`-Wformat-nonliteral`  :option:`-Wformat-overflow`:samp:`={n}` |gol|
   :option:`-Wformat-security`  :option:`-Wformat-signedness`  :option:`-Wformat-truncation`:samp:`={n}` |gol|
   :option:`-Wformat-y2k`  :option:`-Wframe-address` |gol|
@@ -210,10 +211,10 @@ in the following sections.
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` |gol|
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` |gol|
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` |gol|
-  :option:`-Wnormalized`:samp:`=[none|id|nfc|nfkc]` |gol|
-  :option:`-Wnull-dereference`  :option:`-Wno-odr` |gol|
-  :option:`-Wopenacc-parallelism` |gol|
-  :option:`-Wopenmp-simd` |gol|
+  :option:`-Wnormalized` =[none|id|nfc|nfkc] |gol|
+  :option:`-Wnull-dereference`  :option:`-Wno-odr`  |gol|
+  :option:`-Wopenacc-parallelism`  |gol|
+  :option:`-Wopenmp-simd`  |gol|
   :option:`-Wno-overflow`  :option:`-Woverlength-strings`  :option:`-Wno-override-init-side-effects` |gol|
   :option:`-Wpacked`  :option:`-Wno-packed-bitfield-compat`  :option:`-Wpacked-not-aligned`  :option:`-Wpadded` |gol|
   :option:`-Wparentheses`  :option:`-Wno-pedantic-ms-format` |gol|
@@ -234,7 +235,7 @@ in the following sections.
   :option:`-Wstring-compare` |gol|
   :option:`-Wno-stringop-overflow` :option:`-Wno-stringop-overread` |gol|
   :option:`-Wno-stringop-truncation` |gol|
-  :option:`-Wsuggest-attribute`:samp:`=[pure|const|noreturn|format|malloc]` |gol|
+  :option:`-Wsuggest-attribute` =[pure|const|noreturn|format|malloc] |gol|
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` |gol|
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` |gol|
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` |gol|
@@ -255,19 +256,19 @@ in the following sections.
 
 *Static Analyzer Options*
 
-  :option:`-fanalyzer` |gol|
+  :option:`-fanalyzer` 
   :option:`-fanalyzer-call-summaries` |gol|
   :option:`-fanalyzer-checker`:samp:`={name}` |gol|
   :option:`-fno-analyzer-feasibility` |gol|
   :option:`-fanalyzer-fine-grained` |gol|
-  :option:`-fanalyzer-state-merge` |gol|
-  :option:`-fanalyzer-state-purge` |gol|
+  :option:`-fno-analyzer-state-merge` |gol|
+  :option:`-fno-analyzer-state-purge` |gol|
   :option:`-fanalyzer-transitivity` |gol|
+  :option:`-fno-analyzer-undo-inlining` |gol|
   :option:`-fanalyzer-verbose-edges` |gol|
   :option:`-fanalyzer-verbose-state-changes` |gol|
   :option:`-fanalyzer-verbosity`:samp:`={level}` |gol|
   :option:`-fdump-analyzer` |gol|
-  :option:`-fdump-analyzer-stderr` |gol|
   :option:`-fdump-analyzer-callgraph` |gol|
   :option:`-fdump-analyzer-exploded-graph` |gol|
   :option:`-fdump-analyzer-exploded-nodes` |gol|
@@ -277,7 +278,9 @@ in the following sections.
   :option:`-fdump-analyzer-feasibility` |gol|
   :option:`-fdump-analyzer-json` |gol|
   :option:`-fdump-analyzer-state-purge` |gol|
+  :option:`-fdump-analyzer-stderr` |gol|
   :option:`-fdump-analyzer-supergraph` |gol|
+  :option:`-fdump-analyzer-untracked` |gol|
   :option:`-Wno-analyzer-double-fclose` |gol|
   :option:`-Wno-analyzer-double-free` |gol|
   :option:`-Wno-analyzer-exposure-through-output-file` |gol|
@@ -302,6 +305,10 @@ in the following sections.
   :option:`-Wno-analyzer-use-after-free` |gol|
   :option:`-Wno-analyzer-use-of-pointer-in-stale-stack-frame` |gol|
   :option:`-Wno-analyzer-use-of-uninitialized-value` |gol|
+  :option:`-Wno-analyzer-va-arg-type-mismatch` |gol|
+  :option:`-Wno-analyzer-va-list-exhausted` |gol|
+  :option:`-Wno-analyzer-va-list-leak` |gol|
+  :option:`-Wno-analyzer-va-list-use-after-va-end` |gol|
   :option:`-Wno-analyzer-write-to-const` |gol|
   :option:`-Wno-analyzer-write-to-string-literal` 
 
@@ -457,7 +464,7 @@ in the following sections.
   :option:`-fno-stack-limit`  :option:`-fsplit-stack` |gol|
   :option:`-fvtable-verify`:samp:`=[std|preinit|none]` |gol|
   :option:`-fvtv-counts`  :option:`-fvtv-debug` |gol|
-  :option:`-finstrument-functions` |gol|
+  :option:`-finstrument-functions` :option:`-finstrument-functions-once` |gol|
   :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}, {sym},...` |gol|
   :option:`-finstrument-functions-exclude-file-list`:samp:`={file}, {file},...` |gol|
   option:`-fprofile-prefix-map`:samp:`={old}={new}`
@@ -738,12 +745,12 @@ in the following sections.
 
   .. program:: CRIS
 
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`  :option:`-mtune`:samp:`={cpu}` |gol|
-  :option:`-mmax-stack-frame`:samp:`={n}`  :option:`-melinux-stacksize`:samp:`={n}` |gol|
+  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}` |gol|
+  :option:`-mtune`:samp:`={cpu}` :option:`-mmax-stack-frame`:samp:`={n}` |gol|
   :option:`-metrax4`  :option:`-metrax100`  :option:`-mpdebug`  :option:`-mcc-init`  :option:`-mno-side-effects` |gol|
   :option:`-mstack-align`  :option:`-mdata-align`  :option:`-mconst-align` |gol|
-  :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue`  :option:`-mno-gotplt` |gol|
-  :option:`-melf`  :option:`-maout`  :option:`-melinux`  :option:`-mlinux`  :option:`-sim`  :option:`-sim2` |gol|
+  :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue` |gol|
+  :option:`-melf`  :option:`-maout`  :option:`-sim`  :option:`-sim2` |gol|
   :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
 
   *CR16 Options*
@@ -921,6 +928,19 @@ in the following sections.
 
   :option:`-mbarrel-shift-enabled`  :option:`-mdivide-enabled`  :option:`-mmultiply-enabled` |gol|
   :option:`-msign-extend-enabled`  :option:`-muser-enabled`
+
+  *LoongArch Options*
+
+  .. program:: LoongArch
+
+  :option:`-march`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}` :option:`-mabi`:samp:`={base-abi-type}` 
+  :option:`-mfpu`:samp:`={fpu-type}` :option:`-msoft-float` :option:`-msingle-float` :option:`-mdouble-float` 
+  :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcheck-zero-division` :option:`-mno-check-zero-division` 
+  :option:`-mcond-move-int`  :option:`-mno-cond-move-int` 
+  :option:`-mcond-move-float`  :option:`-mno-cond-move-float` 
+  :option:`-memcpy`  :option:`-mno-memcpy` :option:`-mstrict-align` :option:`-mno-strict-align` 
+  :option:`-mmax-inline-memcpy-size`:samp:`={n}` 
+  :option:`-mcmodel`:samp:`={code-model}`
 
   *M32R/D Options*
 
@@ -1440,17 +1460,17 @@ in the following sections.
   :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` |gol|
   :option:`-mavx2`  :option:`-mavx512f`  :option:`-mavx512pf`  :option:`-mavx512er`  :option:`-mavx512cd`  :option:`-mavx512vl` |gol|
   :option:`-mavx512bw`  :option:`-mavx512dq`  :option:`-mavx512ifma`  :option:`-mavx512vbmi`  :option:`-msha`  :option:`-maes` |gol|
-  :option:`-mpclmul`  :option:`-mfsgsbase`  :option:`-mrdrnd`  :option:`-mf16c`  :option:`-mfma`  :option:`-mpconfig`  :option:`-mwbnoinvd` |gol|
+  :option:`-mpclmul`  :option:`-mfsgsbase`  :option:`-mrdrnd`  :option:`-mf16c`  :option:`-mfma`  :option:`-mpconfig`  :option:`-mwbnoinvd`  |gol|
   :option:`-mptwrite`  :option:`-mprefetchwt1`  :option:`-mclflushopt`  :option:`-mclwb`  :option:`-mxsavec`  :option:`-mxsaves` |gol|
   :option:`-msse4a`  :option:`-m3dnow`  :option:`-m3dnowa`  :option:`-mpopcnt`  :option:`-mabm`  :option:`-mbmi`  :option:`-mtbm`  :option:`-mfma4`  :option:`-mxop` |gol|
   :option:`-madx`  :option:`-mlzcnt`  :option:`-mbmi2`  :option:`-mfxsr`  :option:`-mxsave`  :option:`-mxsaveopt`  :option:`-mrtm`  :option:`-mhle`  :option:`-mlwp` |gol|
   :option:`-mmwaitx`  :option:`-mclzero`  :option:`-mpku`  :option:`-mthreads`  :option:`-mgfni`  :option:`-mvaes`  :option:`-mwaitpkg` |gol|
-  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mforce-indirect-call` |gol|
+  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mcet-switch` :option:`-mforce-indirect-call` |gol|
   :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` |gol|
   :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` |gol|
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` |gol|
-  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk` |gol|
-  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni` |gol|
+  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`|gol|
+  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`|gol|
   :option:`-mavx512fp16` |gol|
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` |gol|
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy`:samp:`={alg}` |gol|
@@ -1502,7 +1522,8 @@ in the following sections.
   :option:`-mauto-litpools`  :option:`-mno-auto-litpools` |gol|
   :option:`-mtarget-align`  :option:`-mno-target-align` |gol|
   :option:`-mlongcalls`  :option:`-mno-longcalls` |gol|
-  :option:`-mabi`:samp:`={abi-type}`
+  :option:`-mabi`:samp:`={abi-type}` |gol|
+  :option:`-mextra-l32r-costs`:samp:`={cycles}`
 
   *zSeries Options*
 

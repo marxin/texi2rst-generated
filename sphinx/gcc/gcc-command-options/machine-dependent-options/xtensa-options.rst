@@ -128,3 +128,11 @@ These options are supported for Xtensa targets:
   pointer.  Register window is rotated 8 registers back upon return.
   When this version of the ABI is enabled the C preprocessor symbol
   ``__XTENSA_WINDOWED_ABI__`` is defined.
+
+.. option:: -mextra-l32r-costs={n}
+
+  Specify an extra cost of instruction RAM/ROM access for ``L32R``
+  instructions, in clock cycles.  This affects, when optimizing for speed,
+  whether loading a constant from literal pool using ``L32R`` or
+  synthesizing the constant from a small one with a couple of arithmetic
+  instructions.  The default value is 0.

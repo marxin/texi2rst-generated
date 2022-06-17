@@ -20,13 +20,13 @@ Array shaping                                                            N
 Array sections with non-unit strides in C and C++                        N
 Iterators                                                                Y
 ``metadirective`` directive                                              N
-``declare variant`` directive                                            P       simd traits not handled correctly
+``declare variant`` directive                                            P       *simd* traits not handled correctly
 *target-offload-var* ICV and ``OMP_TARGET_OFFLOAD``                      Y
       env variable
 Nested-parallel changes to *max-active-levels-var* ICV                   Y
 ``requires`` directive                                                   P       See note [#f1]_.
 ``teams`` construct outside an enclosing target region                   Y
-Non-rectangular loop nests                                               P       Only C/C++
+Non-rectangular loop nests                                               Y
 ``!=`` as relational-op in canonical loop form for C/C++                 Y
 ``nonmonotonic`` as default loop schedule modifier for worksharing-loop  Y
       constructs
@@ -48,11 +48,11 @@ Clauses ``if``, ``nontemporal`` and ``order(concurrent)`` in             Y
 ``reduction`` and ``in_reduction`` clauses on ``taskloop``               Y
       and ``taskloop simd`` constructs
 ``taskloop`` construct cancelable by ``cancel`` construct                Y
-``mutexinouset`` *dependence-type* for ``depend`` clause                 Y
+``mutexinoutset`` *dependence-type* for ``depend`` clause                Y
 Predefined memory spaces, memory allocators, allocator traits            Y       Some are only stubs
 Memory management routines                                               Y
 ``allocate`` directive                                                   N
-``allocate`` clause                                                      P       initial support
+``allocate`` clause                                                      P       Initial support
 ``use_device_addr`` clause on ``target data``                            Y
 ``ancestor`` modifier on ``device`` clause                               P       Reverse offload unsupported
 Implicit declare target directive                                        Y

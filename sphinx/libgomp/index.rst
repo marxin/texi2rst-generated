@@ -24,6 +24,7 @@ GNU libgomp
   cuda-streams-usage
   openacc-library-interoperability
   openacc-profiling-interface
+  offload-target-specifics
   the-libgomp-abi
   reporting-bugs
   general-public-license-3

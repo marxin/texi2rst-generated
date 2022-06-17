@@ -19,8 +19,6 @@ These options are defined specifically for the AMD GCN port.
   Set architecture type or tuning for :samp:`{gpu}`. Supported values for :samp:`{gpu}`
   are
 
-  .. index:: fiji
-
   :samp:`fiji`
     Compile for GCN3 Fiji devices (gfx803).
 
@@ -29,6 +27,12 @@ These options are defined specifically for the AMD GCN port.
 
   :samp:`gfx906`
     Compile for GCN5 Vega 20 devices (gfx906).
+
+  :samp:`gfx908`
+    Compile for CDNA1 Instinct MI100 series devices (gfx908).
+
+  :samp:`gfx90a`
+    Compile for CDNA2 Instinct MI200 series devices (gfx90a).
 
 .. option:: -msram-ecc=on
 

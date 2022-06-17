@@ -14,6 +14,7 @@ Directives used within DejaGnu tests
   directives-used-within-dejagnu-tests/syntax-and-descriptions-of-test-directives
   directives-used-within-dejagnu-tests/selecting-targets-to-which-a-test-applies
   directives-used-within-dejagnu-tests/keywords-describing-target-attributes
+  directives-used-within-dejagnu-tests/risc-v-specific-attributes
   directives-used-within-dejagnu-tests/features-for-dg-add-options
   directives-used-within-dejagnu-tests/variants-of-dg-require-support
   directives-used-within-dejagnu-tests/commands-for-use-in-dg-final

@@ -41,7 +41,7 @@ pair of types).
 
 ``__has_trivial_assign (type)``
   If ``type`` is ``const`` - qualified or is a reference type then
-  the trait is ``false``.  Otherwise if ``__is_pod (type)`` is
+  the trait is ``false``.  Otherwise if ``__is_trivial (type)`` is
   ``true`` then the trait is ``true``, else if ``type`` is
   a cv-qualified class or union type with a trivial copy assignment
   ([class.copy]) then the trait is ``true``, else it is ``false``.
@@ -49,7 +49,7 @@ pair of types).
   ``void``, or an array of unknown bound.
 
 ``__has_trivial_copy (type)``
-  If ``__is_pod (type)`` is ``true`` or ``type`` is a reference
+  If ``__is_trivial (type)`` is ``true`` or ``type`` is a reference
   type then the trait is ``true``, else if ``type`` is a cv class
   or union type with a trivial copy constructor ([class.copy]) then the trait
   is ``true``, else it is ``false``.  Requires: ``type`` shall be
@@ -57,7 +57,7 @@ pair of types).
   bound.
 
 ``__has_trivial_constructor (type)``
-  If ``__is_pod (type)`` is ``true`` then the trait is ``true``,
+  If ``__is_trivial (type)`` is ``true`` then the trait is ``true``,
   else if ``type`` is a cv-qualified class or union type (or array thereof)
   with a trivial default constructor ([class.ctor]) then the trait is ``true``,
   else it is ``false``.
@@ -65,7 +65,7 @@ pair of types).
   ``void``, or an array of unknown bound.
 
 ``__has_trivial_destructor (type)``
-  If ``__is_pod (type)`` is ``true`` or ``type`` is a reference type
+  If ``__is_trivial (type)`` is ``true`` or ``type`` is a reference type
   then the trait is ``true``, else if ``type`` is a cv class or union
   type (or array thereof) with a trivial destructor ([class.dtor]) then
   the trait is ``true``, else it is ``false``.

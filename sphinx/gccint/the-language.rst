@@ -10,9 +10,9 @@
 The Language
 ************
 
-The language to write expression simplifications in resembles other
-domain-specific languages GCC uses.  Thus it is lispy.  Lets start
-with an example from the match.pd file:
+The language in which to write expression simplifications resembles
+other domain-specific languages GCC uses.  Thus it is lispy.  Let's
+start with an example from the match.pd file:
 
 .. code-block::
 
@@ -32,7 +32,7 @@ function code names in all-caps, like ``BUILT_IN_SQRT``.
 
 ``@n`` denotes a so-called capture.  It captures the operand and lets
 you refer to it in other places of the match-and-simplify.  In the
-above example it is refered to in the replacement expression.  Captures
+above example it is referred to in the replacement expression.  Captures
 are ``@`` followed by a number or an identifier.
 
 .. code-block::
@@ -42,10 +42,10 @@ are ``@`` followed by a number or an identifier.
     { build_zero_cst (type); })
 
 In this example ``@0`` is mentioned twice which constrains the matched
-expression to have two equal operands.  Usually matches are constraint
-to equal types.  If operands may be constants and conversions are involved
+expression to have two equal operands.  Usually matches are constrained
+to equal types.  If operands may be constants and conversions are involved,
 matching by value might be preferred in which case use ``@@0`` to
-denote a by value match and the specific operand you want to refer to
+denote a by-value match and the specific operand you want to refer to
 in the result part.  This example also introduces
 operands written in C code.  These can be used in the expression
 replacements and are supposed to evaluate to a tree node which has to
@@ -61,7 +61,7 @@ be a valid GIMPLE operand (so you cannot generate expressions in C code).
 Here ``@0`` captures the first operand of the trunc_mod expression
 which is also predicated with ``integer_zerop``.  Expression operands
 may be either expressions, predicates or captures.  Captures
-can be unconstrained or capture expresions or predicates.
+can be unconstrained or capture expressions or predicates.
 
 This example introduces an optional operand of simplify,
 the if-expression.  This condition is evaluated after the
@@ -151,9 +151,9 @@ Captures can also be used for capturing results of sub-expressions.
   #endif
 
 In the above example, ``@2`` captures the result of the expression
-``(addr @0)``.  For outermost expression only its type can be captured,
-and the keyword ``type`` is reserved for this purpose.  The above
-example also gives a way to conditionalize patterns to only apply
+``(addr @0)``.  For the outermost expression only its type can be
+captured, and the keyword ``type`` is reserved for this purpose.  The
+above example also gives a way to conditionalize patterns to only apply
 to ``GIMPLE`` or ``GENERIC`` by means of using the pre-defined
 preprocessor macros ``GIMPLE`` and ``GENERIC`` and using
 preprocessor directives.
@@ -246,9 +246,9 @@ and use them in ``for`` operator lists where they get expanded.
 So this example iterates over ``plus``, ``minus``, ``mult``
 and ``trunc_div``.
 
-Using operator lists can also remove the need to explicitely write
+Using operator lists can also remove the need to explicitly write
 a ``for``.  All operator list uses that appear in a ``simplify``
-or ``match`` pattern in operator positions will implicitely
+or ``match`` pattern in operator positions will implicitly
 be added to a new ``for``.  For example
 
 .. code-block::
@@ -291,7 +291,7 @@ type of a generated expression with the ``:type`` syntax where
 ``type`` needs to be an identifier that refers to the desired type.
 Usually the types of the generated result expressions are
 determined from the context, but sometimes like in the above case
-it is required that you specify them explicitely.
+it is required that you specify them explicitly.
 
 Another modifier for generated expressions is ``!`` which
 tells the machinery to only consider the simplification in case
@@ -334,7 +334,7 @@ The support for ``?`` marking extends to all unary operations
 including predicates you declare yourself with ``match``.
 
 Predicates available from the GCC middle-end need to be made
-available explicitely via ``define_predicates`` :
+available explicitly via ``define_predicates`` :
 
 .. code-block::
 

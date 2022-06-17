@@ -308,6 +308,14 @@ Here is a list of options that are *only* for compiling C++ programs:
   :option:`-fextern-tls-init`.  On targets that do not support symbol
   aliases, the default is :option:`-fno-extern-tls-init`.
 
+.. option:: -ffold-simple-inlines, -fno-fold-simple-inlines
+
+  Permit the C++ frontend to fold calls to ``std::move``, ``std::forward``,
+  ``std::addressof`` and ``std::as_const``.  In contrast to inlining, this
+  means no debug information will be generated for such calls.  Since these
+  functions are rarely interesting to debug, this flag is enabled by default
+  unless :option:`-fno-inline` is active.
+
 .. option:: -fno-gnu-keywords
 
   Do not recognize ``typeof`` as a keyword, so that code can use this

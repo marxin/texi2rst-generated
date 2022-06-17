@@ -115,7 +115,7 @@ There are also built-in versions of the ISO C99 functions
 ``expl``, ``fabsf``, ``fabsl``, ``floorf``, ``floorl``,
 ``fmodf``, ``fmodl``, ``frexpf``, ``frexpl``, ``ldexpf``,
 ``ldexpl``, ``log10f``, ``log10l``, ``logf``, ``logl``,
-``modfl``, ``modf``, ``powf``, ``powl``, ``sinf``,
+``modfl``, ``modff``, ``powf``, ``powl``, ``sinf``,
 ``sinhf``, ``sinhl``, ``sinl``, ``sqrtf``, ``sqrtl``,
 ``tanf``, ``tanhf``, ``tanhl`` and ``tanl``
 that are recognized in any mode since ISO C90 reserves these names for
@@ -180,7 +180,7 @@ exceptions handling functions ``fegetround``, ``feclearexcept`` and
 ``feraiseexcept``.  They may not be available for all targets, and because
 they need close interaction with libc internal values, they may not be available
 for all target libcs, but in all cases they will gracefully fallback to libc
-calls.  This built-in functions appear both with and without the
+calls.  These built-in functions appear both with and without the
 ``__builtin_`` prefix.
 
 .. function:: void *__builtin_alloca (size_t size)

@@ -612,7 +612,7 @@ the ``CONVERT`` specifier on the ``OPEN`` statement.
 See :ref:`gfortran_convert_unit`, for an alternative way of specifying
 the data format via an environment variable.
 
-Valid values for ``CONVERT`` are:
+Valid values for ``CONVERT`` on most systems are:
 
 * ``CONVERT='NATIVE'`` Use the native format.  This is the default.
 
@@ -623,6 +623,16 @@ Valid values for ``CONVERT`` are:
 
 * ``CONVERT='BIG_ENDIAN'`` Use the big-endian representation for
   unformatted files.
+
+On POWER systems which support :option:`-mabi`:samp:`=ieeelongdouble`,
+there are additional options, which can be combined with the others
+with commas. Those are
+
+* ``CONVERT='R16_IEEE'`` Use IEEE 128-bit format for
+  ``REAL(KIND=16)``.
+
+* ``CONVERT='R16_IBM'`` Use IBM ``long double`` format for
+  real ``REAL(KIND=16)``.
 
 Using the option could look like this:
 

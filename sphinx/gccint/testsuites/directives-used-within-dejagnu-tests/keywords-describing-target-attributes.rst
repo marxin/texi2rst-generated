@@ -518,6 +518,9 @@ Decimal floating point attributes
 ``hard_dfp``
   Target generates decimal floating point instructions with current options.
 
+``dfp_bid``
+  Target uses the BID format for decimal floating point.
+
 ARM-specific attributes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1004,6 +1007,16 @@ PowerPC-specific attributes
 ``has_arch_pwr9``
   PowerPC target pre-defines macro _ARCH_PWR9 which means the ``-mcpu``
   setting is Power9 or later.
+
+RISC-V specific attributes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``rv32``
+  Test system has an integer register width of 32 bits.
+
+``rv64``
+  Test system has an integer register width of 64 bits.
+
 
 Other hardware attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~

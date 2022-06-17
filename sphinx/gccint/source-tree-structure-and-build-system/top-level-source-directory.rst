@@ -13,9 +13,9 @@ files and directories that are shared with other software
 distributions such as that of GNU Binutils.  It also contains several
 subdirectories that contain parts of GCC and its runtime libraries:
 
-:samp:`boehm-gc`
-  The Boehm conservative garbage collector, optionally used as part of
-  the ObjC runtime library when configured with :option:`--enable-objc-gc`.
+:samp:`c++tools`
+  Contains the sources for the g++-mapper-server, a tool used with
+  C++ modules.
 
 :samp:`config`
   Autoconf macros and Makefile fragments used throughout the tree.
@@ -38,6 +38,9 @@ subdirectories that contain parts of GCC and its runtime libraries:
 :samp:`gnattools`
   Support tools for GNAT.
 
+:samp:`gotools`
+  Support tools for Go.
+
 :samp:`include`
   Headers for the ``libiberty`` library.
 
@@ -51,6 +54,16 @@ subdirectories that contain parts of GCC and its runtime libraries:
 :samp:`libatomic`
   The runtime support library for atomic operations (e.g. for ``__sync``
   and ``__atomic``).
+
+:samp:`libbacktrace`
+  A library that allows gcc to produce backtraces when it crashes.
+
+:samp:`libcc1`
+  A library that allows gdb to make use of the compiler.
+
+:samp:`libcody`
+  A compiler dynamism library to allow communication between compilers and
+  build systems, for purposes such as C++ modules.
 
 :samp:`libcpp`
   The C preprocessor library.
@@ -85,18 +98,29 @@ subdirectories that contain parts of GCC and its runtime libraries:
 :samp:`libobjc`
   The Objective-C and Objective-C++ runtime library.
 
-:samp:`libquadmath`
-  The runtime support library for quad-precision math operations.
+:samp:`liboffloadmic`
+  A library to allow OpenMP to Intel MIC targets.
 
 :samp:`libphobos`
   The D standard and runtime library.  The bulk of this library is mirrored
   from the `master D repositories <https://github.com/dlang>`_.
+
+:samp:`libquadmath`
+  The runtime support library for quad-precision math operations.
+
+:samp:`libsanitizer`
+  Libraries for various sanitizers.  The bulk of this directory is mirrored
+  from the `Google sanitizers
+  repositories <https://github.com/google/sanitizers>`_.
 
 :samp:`libssp`
   The Stack protector runtime library.
 
 :samp:`libstdc++-v3`
   The C++ runtime library.
+
+:samp:`libvtv`
+  The vtable verification library.
 
 :samp:`lto-plugin`
   Plugin used by the linker if link-time optimizations are enabled.
