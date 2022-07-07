@@ -100,4 +100,8 @@ This works: :option:`--verbose <make --verbose>`
 
 .. option:: -foo={BAR}, -f {BAR} {BAZ}
 
-   Test it 2.
+  Using emphasising placeholders.
+
+.. option:: -foo=BAR, -f BAR BAZ
+
+   Normal option values.

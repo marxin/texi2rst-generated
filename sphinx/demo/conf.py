@@ -20,4 +20,8 @@ texinfo_documents = [
   ('index', 'demo', project, authors, None, None, None, True)
 ]
 
+man_pages = [
+    ('demo2', 'demo', 'Demo man page', [authors], 1),
+]
+
 tags.add('demo')
