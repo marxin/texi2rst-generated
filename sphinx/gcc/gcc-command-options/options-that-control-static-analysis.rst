@@ -18,9 +18,15 @@ Options That Control Static Analysis
 
   Enabling this option effectively enables the following warnings:
 
+  :option:`-Wanalyzer-allocation-size` |gol|
   :option:`-Wanalyzer-double-fclose` |gol|
   :option:`-Wanalyzer-double-free` |gol|
   :option:`-Wanalyzer-exposure-through-output-file` |gol|
+  :option:`-Wanalyzer-fd-access-mode-mismatch` |gol|
+  :option:`-Wanalyzer-fd-double-close` |gol|
+  :option:`-Wanalyzer-fd-leak` |gol|
+  :option:`-Wanalyzer-fd-use-after-close` |gol|
+  :option:`-Wanalyzer-fd-use-without-check` |gol|
   :option:`-Wanalyzer-file-leak` |gol|
   :option:`-Wanalyzer-free-of-non-heap` |gol|
   :option:`-Wanalyzer-malloc-leak` |gol|
@@ -61,6 +67,22 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wanalyzer-too-complex`.
 
+.. option:: -Wno-analyzer-allocation-size
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-allocation-size`
+  to disable it.
+
+  This diagnostic warns for paths through the code in which a pointer to
+  a buffer is assigned to point at a buffer with a size that is not a
+  multiple of ``sizeof (*pointer)``.
+
+  See https://cwe.mitre.org/data/definitions/131.htmlCWE-131: Incorrect Calculation of Buffer Size.
+
+.. option:: -Wanalyzer-allocation-size
+
+  Default setting; overrides :option:`-Wno-analyzer-allocation-size`.
+
 .. option:: -Wno-analyzer-double-fclose
 
   This warning requires :option:`-fanalyzer`, which enables it; use
@@ -99,6 +121,71 @@ Options That Control Static Analysis
 .. option:: -Wanalyzer-exposure-through-output-file
 
   Default setting; overrides :option:`-Wno-analyzer-exposure-through-output-file`.
+
+.. option:: -Wno-analyzer-fd-access-mode-mismatch
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-fd-access-mode-mismatch`
+  to disable it.
+
+  This diagnostic warns for paths through code in which a 
+  ``read`` on a write-only file descriptor is attempted, or vice versa
+
+.. option:: -Wanalyzer-fd-access-mode-mismatch
+
+  Default setting; overrides :option:`-Wno-analyzer-fd-access-mode-mismatch`.
+
+.. option:: -Wno-analyzer-fd-double-close
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-fd-double-close`
+  to disable it.
+
+  This diagnostic warns for paths through code in which a 
+  file descriptor can be closed more than once.
+
+.. option:: -Wanalyzer-fd-double-close
+
+  Default setting; overrides :option:`-Wno-analyzer-fd-double-close`.
+
+.. option:: -Wno-analyzer-fd-leak
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-fd-leak`
+  to disable it.
+
+  This diagnostic warns for paths through code in which an 
+  open file descriptor is leaked.
+
+.. option:: -Wanalyzer-fd-leak
+
+  Default setting; overrides :option:`-Wno-analyzer-fd-leak`.
+
+.. option:: -Wno-analyzer-fd-use-after-close
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-fd-use-after-close`
+  to disable it.
+
+  This diagnostic warns for paths through code in which a 
+  read or write is called on a closed file descriptor.
+
+.. option:: -Wanalyzer-fd-use-after-close
+
+  Default setting; overrides :option:`-Wno-analyzer-fd-use-after-close`.
+
+.. option:: -Wno-analyzer-fd-use-without-check
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-fd-use-without-check`
+  to disable it.
+
+  This diagnostic warns for paths through code in which a 
+  file descriptor is used without being checked for validity.
+
+.. option:: -Wanalyzer-fd-use-without-check
+
+  Default setting; overrides :option:`-Wno-analyzer-fd-use-without-check`.
 
 .. option:: -Wno-analyzer-file-leak
 

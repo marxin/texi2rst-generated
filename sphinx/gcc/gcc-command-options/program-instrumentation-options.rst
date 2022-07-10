@@ -707,13 +707,36 @@ program analysis purposes.
   Enable sanitization of local variables to detect use-after-scope bugs.
   The option sets :option:`-fstack-reuse` to :samp:`none`.
 
+.. option:: -fsanitize-trap[={opts}]
+
+  The :option:`-fsanitize-trap` = option instructs the compiler to
+  report for sanitizers mentioned in comma-separated list of :samp:`{opts}`
+  undefined behavior using ``__builtin_trap`` rather than a ``libubsan``
+  library routine.  If this option is enabled for certain sanitizer,
+  it takes precedence over the :option:`-fsanitizer-recover` = for that
+  sanitizer, ``__builtin_trap`` will be emitted and be fatal regardless
+  of whether recovery is enabled or disabled using :option:`-fsanitize-recover` =.
+
+  The advantage of this is that the ``libubsan`` library is not needed
+  and is not linked in, so this is usable even in freestanding environments.
+
+  Currently this feature works with :option:`-fsanitize`:samp:`=undefined` (and its suboptions
+  except for :option:`-fsanitize`:samp:`=vptr`), :option:`-fsanitize`:samp:`=float-cast-overflow`,
+  :option:`-fsanitize`:samp:`=float-divide-by-zero` and
+  :option:`-fsanitize`:samp:`=bounds-strict`.  ``-fsanitize-trap=all`` can be also
+  specified, which enables it for ``undefined`` suboptions,
+  :option:`-fsanitize`:samp:`=float-cast-overflow`,
+  :option:`-fsanitize`:samp:`=float-divide-by-zero` and
+  :option:`-fsanitize`:samp:`=bounds-strict`.
+  If ``-fsanitize-trap=undefined`` or ``-fsanitize-trap=all`` is used
+  and ``-fsanitize=vptr`` is enabled on the command line, the
+  instrumentation is silently ignored as the instrumentation always needs
+  ``libubsan`` support, :option:`-fsanitize-trap`:samp:`=vptr` is not allowed.
+
 .. option:: -fsanitize-undefined-trap-on-error
 
-  The :option:`-fsanitize-undefined-trap-on-error` option instructs the compiler to
-  report undefined behavior using ``__builtin_trap`` rather than
-  a ``libubsan`` library routine.  The advantage of this is that the
-  ``libubsan`` library is not needed and is not linked in, so this
-  is usable even in freestanding environments.
+  The :option:`-fsanitize-undefined-trap-on-error` option is deprecated
+  equivalent of :option:`-fsanitize-trap`:samp:`=all`.
 
 .. option:: -fsanitize-coverage=trace-pc
 

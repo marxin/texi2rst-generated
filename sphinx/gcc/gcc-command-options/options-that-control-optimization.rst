@@ -2117,6 +2117,20 @@ optimizations to be performed is desired.
 
   Default setting; overrides :option:`-fno-toplevel-reorder`.
 
+.. option:: -funreachable-traps
+
+  With this option, the compiler turns calls to
+  ``__builtin_unreachable`` into traps, instead of using them for
+  optimization.  This also affects any such calls implicitly generated
+  by the compiler.
+
+  This option has the same effect as :option:`-fsanitize`:samp:`=unreachable
+  -fsanitize-trap=unreachable`, but does not affect the values of those
+  options.  If :option:`-fsanitize`:samp:`=unreachable` is enabled, that option
+  takes priority over this one.
+
+  This option is enabled by default at :option:`-O0` and :option:`-Og`.
+
 .. option:: -fweb
 
   Constructs webs as commonly used for register allocation purposes and assign
@@ -4470,10 +4484,6 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: evrp-sparse-threshold
 
     Maximum number of basic blocks before EVRP uses a sparse cache.
-
-  .. gcc-param:: evrp-mode
-
-    Specifies the mode Early VRP should operate in.
 
   .. gcc-param:: vrp1-mode
 

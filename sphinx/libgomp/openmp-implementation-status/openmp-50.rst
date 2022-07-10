@@ -86,7 +86,7 @@ OMPT interface                                                           N
 OMPD interface                                                           N
 =======================================================================  ======  ===================================
 
-.. [#f1] Only fulfillable requirement are ``atomic_default_mem_order`` and ``dynamic_allocators``
+.. [#f1] complete but no non-host devices provides ``unified_address``, ``unified_shared_memory`` or ``reverse_offload``
 .. [#f2] Mapping of vars with allocatable components unsupported
 
 Other new OpenMP 5.0 features

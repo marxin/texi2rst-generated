@@ -1239,6 +1239,9 @@ Environment attributes
 ``trampolines``
   Target supports trampolines.
 
+``two_plus_gigs``
+  Target supports linking programs with 2+GiB of data.
+
 ``uclibc``
   Target supports uClibc.
 
@@ -1270,6 +1273,7 @@ Other attributes
   Target uses ``__cxa_atexit``.
 
 ``default_packed``
+  .. _default_packed:
   Target has packed layout of structure members by default.
 
 ``exceptions``
@@ -1339,6 +1343,14 @@ Other attributes
 ``target_natural_alignment_64``
   Target uses natural alignment (aligned to type size) for types of
   64 bits or less.
+
+``no_alignment_constraints``
+  Target defines __BIGGEST_ALIGNMENT__=1.  Hence target imposes
+  no alignment constraints.  This is similar, but not necessarily
+  the same as :ref:`default_packed`.  Although ``BIGGEST_FIELD_ALIGNMENT``
+  defaults to ``BIGGEST_ALIGNMENT`` for most targets, it is possible
+  for a target to set those two with different values and have different
+  alignment constraints for aggregate and non-aggregate types.
 
 ``noinit``
   Target supports the ``noinit`` variable attribute.

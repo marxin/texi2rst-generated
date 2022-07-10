@@ -1399,7 +1399,7 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Wold-style-cast`.
 
-.. option:: -Woverloaded-virtual
+.. option:: -Woverloaded-virtual, -Woverloaded-virtual={n}
 
   .. note::
 
@@ -1417,7 +1417,7 @@ In addition, these warning options have meanings only for C++ programs:
     };
 
     struct B: public A {
-      void f(int);
+      void f(int); // does not override
     };
 
   the ``A`` class version of ``f`` is hidden in ``B``, and code
@@ -1429,6 +1429,29 @@ In addition, these warning options have meanings only for C++ programs:
     b->f();
 
   fails to compile.
+
+  The optional level suffix controls the behavior when all the
+  declarations in the derived class override virtual functions in the
+  base class, even if not all of the base functions are overridden:
+
+  .. code-block:: c++
+
+    struct C {
+      virtual void f();
+      virtual void f(int);
+    };
+
+    struct D: public C {
+      void f(int); // does override
+    }
+
+  This pattern is less likely to be a mistake; if D is only used
+  virtually, the user might have decided that the base class semantics
+  for some of the overloads are fine.
+
+  At level 1, this case does not warn; at level 2, it does.
+  :option:`-Woverloaded-virtual` by itself selects level 2.  Level 1 is
+  included in :option:`-Wall`.
 
 .. option:: -Wno-overloaded-virtual
 

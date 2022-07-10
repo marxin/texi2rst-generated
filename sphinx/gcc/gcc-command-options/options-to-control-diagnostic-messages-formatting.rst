@@ -328,6 +328,18 @@ honor these options.
 
   Default setting; overrides :option:`-fno-diagnostics-show-cwe`.
 
+.. option:: -fno-diagnostics-show-rules
+
+  Diagnostic messages can optionally have rules associated with them, such
+  as from a coding standard, or a specification.
+  GCC itself does not do this for any of its diagnostics, but plugins may do so.
+  By default, if this information is present, it will be printed with
+  the diagnostic.  This option suppresses the printing of this metadata.
+
+.. option:: -fdiagnostics-show-rules
+
+  Default setting; overrides :option:`-fno-diagnostics-show-rules`.
+
 .. option:: -fno-diagnostics-show-line-numbers
 
   By default, when printing source code (via :option:`-fdiagnostics-show-caret`),

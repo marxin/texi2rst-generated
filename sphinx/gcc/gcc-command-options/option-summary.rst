@@ -142,6 +142,7 @@ in the following sections.
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` |gol|
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` |gol|
   :option:`-fno-diagnostics-show-cwe` |gol|
+  :option:`-fno-diagnostics-show-rule` |gol|
   :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}` |gol|
   :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch` |gol|
   :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type` |gol|
@@ -454,6 +455,7 @@ in the following sections.
   :option:`-fprofile-exclude-files`:samp:`={regex}` |gol|
   :option:`-fprofile-reproducible`:samp:`=[multithreaded|parallel-runs|serial` |gol|
   :option:`-fsanitize`:samp:`={style}`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover`:samp:`={style}` |gol|
+  :option:`-fsanitize-trap`   :option:`-fsanitize-trap`:samp:`={style}` |gol|
   :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}, {s2},...` |gol|
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` |gol|
   :option:`-fcf-protection`:samp:`=[full|branch|return|none|check]` |gol|
@@ -502,7 +504,7 @@ in the following sections.
   See :ref:`link-options`.
 
   :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` |gol|
-  :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` |gol|
+  :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` :option:`-nostdlib++` |gol|
   :option:`-e` :samp:`{entry}`  :option:`--entry`:samp:`={entry}` |gol|
   :option:`-pie`  :option:`-pthread`  :option:`-r`  :option:`-rdynamic` |gol|
   :option:`-s`  :option:`-static`  :option:`-static-pie`  :option:`-static-libgcc`  :option:`-static-libstdc++` |gol|
@@ -1380,19 +1382,6 @@ in the following sections.
   .. program:: System V
 
   :option:`-Qy`  :option:`-Qn`  :option:`-YP,`:samp:`{paths}`  :option:`-Ym,`:samp:`{dir}`
-
-  *TILE-Gx Options*
-
-  .. program:: TILE-Gx
-
-  :option:`-mcpu`:samp:`=CPU`  :option:`-m32`  :option:`-m64`  :option:`-mbig-endian`  :option:`-mlittle-endian` |gol|
-  :option:`-mcmodel`:samp:`={code-model}`
-
-  *TILEPro Options*
-
-  .. program:: TILEPro
-
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-m32`
 
   *V850 Options*
 

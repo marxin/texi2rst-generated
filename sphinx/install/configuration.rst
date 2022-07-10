@@ -148,7 +148,7 @@ mips64orion, mips64vr, mipsel, mipsisa32, mipsisa32r2, mipsisa64, mipsisa64r2,
 mipsisa64r2el, mipsisa64sb1, mipsisa64sr71k, mipstx39, mmix, mn10300, moxie,
 msp430, nds32be, nds32le, nios2, nvptx, or1k, pdp11, powerpc, powerpc64,
 powerpc64le, powerpcle, pru, riscv32, riscv32be, riscv64, riscv64be, rl78, rx,
-s390, s390x, sh, shle, sparc, sparc64, tic6x, tilegx, tilegxbe, tilepro, v850,
+s390, s390x, sh, shle, sparc, sparc64, tic6x, v850,
 v850e, v850e1, vax, visium, x86_64, xstormy16, xtensa
 
 Here is a list of system types:

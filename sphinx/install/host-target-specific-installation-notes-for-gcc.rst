@@ -1118,24 +1118,6 @@ c6x-\*-\*
 
 The C6X family of processors. This port requires binutils-2.22 or newer.
 
-tilegx-\*-linux\*
-=================
-
-The TILE-Gx processor in little endian mode, running GNU/Linux.  This
-port requires binutils-2.22 or newer.
-
-tilegxbe-\*-linux\*
-===================
-
-The TILE-Gx processor in big endian mode, running GNU/Linux.  This
-port requires binutils-2.23 or newer.
-
-tilepro-\*-linux\*
-==================
-
-The TILEPro processor running GNU/Linux.  This port requires
-binutils-2.22 or newer.
-
 visium-\*-elf
 =============
 

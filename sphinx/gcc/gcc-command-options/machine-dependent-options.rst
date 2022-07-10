@@ -79,8 +79,6 @@ platform.
   machine-dependent-options/solaris-2-options
   machine-dependent-options/sparc-options
   machine-dependent-options/options-for-system-v
-  machine-dependent-options/tile-gx-options
-  machine-dependent-options/tilepro-options
   machine-dependent-options/v850-options
   machine-dependent-options/vax-options
   machine-dependent-options/visium-options
