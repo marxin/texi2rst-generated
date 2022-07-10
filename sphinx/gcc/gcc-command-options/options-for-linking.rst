@@ -200,6 +200,10 @@ not doing a link step.
   (An example of such an internal subroutine is ``__main``, used to ensure C++
   constructors are called; see :ref:`gccint:collect2`.)
 
+.. option:: -nostdlib++
+
+  Do not implicitly link with standard C++ libraries.
+
 .. option:: -e {entry}, --entry={entry}
 
   Specify that the program entry point is :samp:`{entry}`.  The argument is

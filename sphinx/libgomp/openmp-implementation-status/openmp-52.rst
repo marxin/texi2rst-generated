@@ -19,7 +19,7 @@ Description                                                               Status
       namespaces
 Clauses on ``end`` directive can be on directive                          N
 Deprecation of no-argument ``destroy`` clause on ``depobj``               N
-``linear`` clause syntax changes and ``step`` modifier                    N
+``linear`` clause syntax changes and ``step`` modifier                    Y
 Deprecation of minus operator for reductions                              N
 Deprecation of separating ``map`` modifiers without comma                 N
 ``declare mapper`` with iterator and ``present`` modifiers                N
@@ -41,7 +41,7 @@ Deprecation of delimited form of ``declare target``                       N
 Reproducible semantics changed for ``order(concurrent)``                  N
 ``allocate`` and ``firstprivate`` clauses on ``scope``                    Y
 ``ompt_callback_work``                                                    N
-Default map-type for ``map`` clause in ``target enter/exit data``         N
+Default map-type for ``map`` clause in ``target enter/exit data``         Y
 New ``doacross`` clause as alias for ``depend`` with                      N
       ``source`` / ``sink`` modifier
 Deprecation of ``depend`` with ``source`` / ``sink`` modifier             N

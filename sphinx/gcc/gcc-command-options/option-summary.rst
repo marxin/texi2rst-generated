@@ -136,6 +136,7 @@ in the following sections.
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` 
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` 
   :option:`-fno-diagnostics-show-cwe`  
+  :option:`-fno-diagnostics-show-rule`  
   :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}` 
   :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch` 
   :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type` 
@@ -442,6 +443,7 @@ in the following sections.
   :option:`-fprofile-exclude-files`:samp:`={regex}` 
   :option:`-fprofile-reproducible` =[multithreaded|parallel :option:`-runs` |serial] 
   :option:`-fsanitize`:samp:`={style}`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover`:samp:`={style}` 
+  :option:`-fsanitize-trap`   :option:`-fsanitize-trap`:samp:`={style}`  
   :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}`, :samp:`{s2}`,... 
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` 
   :option:`-fcf-protection` =[full|branch|return|none|check] 
@@ -487,7 +489,7 @@ in the following sections.
   See :ref:`link-options`.
 
   :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
-  :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib` 
+  :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib`  :option:`-nostdlib++` 
   :option:`-e` :samp:`{entry}`  :option:`--entry`:samp:`={entry}` 
   :option:`-pie`  :option:`-pthread`  :option:`-r`  :option:`-rdynamic` 
   :option:`-s`  :option:`-static`  :option:`-static-pie`  :option:`-static-libgcc`  :option:`-static-libstdc++` 
@@ -1365,19 +1367,6 @@ in the following sections.
   .. program:: System V
 
   :option:`-Qy`  :option:`-Qn`  :option:`-YP,`:samp:`{paths}`  :option:`-Ym,`:samp:`{dir}`
-
-  *TILE-Gx Options*
-
-  .. program:: TILE-Gx
-
-  :option:`-mcpu`:samp:`=CPU`  :option:`-m32`  :option:`-m64`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
-  :option:`-mcmodel`:samp:`={code-model}`
-
-  *TILEPro Options*
-
-  .. program:: TILEPro
-
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-m32`
 
   *V850 Options*
 

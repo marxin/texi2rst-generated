@@ -48,8 +48,6 @@ instructions, but allow the compiler to schedule those calls.
   target-builtins/sh-built-in-functions
   target-builtins/sparc-vis-built-in-functions
   target-builtins/ti-c6x-built-in-functions
-  target-builtins/tile-gx-built-in-functions
-  target-builtins/tilepro-built-in-functions
   target-builtins/x86-built-in-functions
   target-builtins/x86-transactional-memory-intrinsics
   target-builtins/x86-control-flow-protection-intrinsics

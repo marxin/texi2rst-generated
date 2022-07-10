@@ -42,13 +42,6 @@ known missing pieces are:
   exported region may reference (for instance, the entities an exported
   template definition may reference).  These are not fully implemented.
 
-*Language-linkage module attachment*
-  Declarations with explicit language linkage (``extern "C"`` or
-  ``extern "C++"``) are attached to the global module, even when in
-  the purview of a named module.  This is not implemented.  Such
-  declarations will be attached to the module, if any, in which they are
-  declared.
-
 *Standard Library Header Units*
   The Standard Library is not provided as importable header units.  If
   you want to import such units, you must explicitly build them first.

@@ -77,12 +77,14 @@ Extensions to the ``atomic`` directive                                    Y
 Other new OpenMP 5.1 features
 *****************************
 
-=============================================================  ======  ========
-Description                                                    Status  Comments
-=============================================================  ======  ========
-Support of strictly structured blocks in Fortran               Y
-Support of structured block sequences in C/C++                 Y
-``unconstrained`` and ``reproducible`` modifiers on ``order``  Y
+===============================================================  ======  ========
+Description                                                      Status  Comments
+===============================================================  ======  ========
+Support of strictly structured blocks in Fortran                 Y
+Support of structured block sequences in C/C++                   Y
+``unconstrained`` and ``reproducible`` modifiers on ``order``    Y
       clause
-Support ``begin/end declare target`` syntax in C/C++           N
-=============================================================  ======  ========
+Support ``begin/end declare target`` syntax in C/C++             N
+Pointer predetermined firstprivate getting initialized           N
+to address of matching mapped list item per 5.1, Sect. 2.21.7.2
+===============================================================  ======  ========

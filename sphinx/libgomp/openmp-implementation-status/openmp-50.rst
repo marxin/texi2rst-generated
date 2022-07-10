@@ -13,9 +13,9 @@ New features listed in Appendix B of the OpenMP specification
 
 .. This list is sorted as in OpenMP 5.1's B.3 not as in OpenMP 5.0's B.2
 
-=======================================================================  ======  =============================================================
+=======================================================================  ======  ==============================================================
 Description                                                              Status  Comments
-=======================================================================  ======  =============================================================
+=======================================================================  ======  ==============================================================
 Array shaping                                                            N
 Array sections with non-unit strides in C and C++                        N
 Iterators                                                                Y
@@ -24,8 +24,8 @@ Iterators                                                                Y
 *target-offload-var* ICV and ``OMP_TARGET_OFFLOAD``                      Y
       env variable
 Nested-parallel changes to *max-active-levels-var* ICV                   Y
-``requires`` directive                                                   P       Only fulfillable requirement are ``atomic_default_mem_order``
-                                                                                       and ``dynamic_allocators``
+``requires`` directive                                                   P       complete but no non-host devices provides ``unified_address``,
+                                                                                       ``unified_shared_memory`` or ``reverse_offload``
 ``teams`` construct outside an enclosing target region                   Y
 Non-rectangular loop nests                                               Y
 ``!=`` as relational-op in canonical loop form for C/C++                 Y
@@ -85,7 +85,7 @@ Runtime routines and environment variables to display runtime thread     Y
 ``omp_get_device_num`` runtime routine                                   Y
 OMPT interface                                                           N
 OMPD interface                                                           N
-=======================================================================  ======  =============================================================
+=======================================================================  ======  ==============================================================
 
 Other new OpenMP 5.0 features
 *****************************

@@ -105,7 +105,8 @@ These command-line options are defined for LoongArch targets:
 .. option:: -mcheck-zero-division, -mno-check-zero-divison
 
   Trap (do not trap) on integer division by zero.  The default is
-  :option:`-mcheck-zero-division`.
+  :option:`-mcheck-zero-division` for :option:`-O0` or :option:`-Og`, and
+  :option:`-mno-check-zero-division` for other optimization levels.
 
 .. option:: -mcond-move-int, -mno-cond-move-int
 
