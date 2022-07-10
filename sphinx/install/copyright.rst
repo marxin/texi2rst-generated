@@ -11,7 +11,7 @@ under the terms of the GNU Free Documentation License, Version 1.3 or
 any later version published by the Free Software Foundation; with no
 Invariant Sections, the Front-Cover texts being (a) (see below), and
 with the Back-Cover Texts being (b) (see below).  A copy of the license is
-in the:ref:`gnu_fdl`.
+in the :ref:`gnu_fdl`.
 
 (a) The FSF's Front-Cover Text is:
 
