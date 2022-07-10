@@ -828,8 +828,10 @@ ARM-specific attributes
 ``arm_hard_ok``
   ARM target supports the ``-mfloat-abi=hard`` option.
 
+
+.. _arm_mve:
+
 ``arm_mve``
-  .. _arm_mve:
   ARM target supports generating MVE instructions.
 
 ``arm_v8_1_lob_ok``
@@ -1272,8 +1274,9 @@ Other attributes
 ``cxa_atexit``
   Target uses ``__cxa_atexit``.
 
+.. _default_packed:
+
 ``default_packed``
-  .. _default_packed:
   Target has packed layout of structure members by default.
 
 ``exceptions``
