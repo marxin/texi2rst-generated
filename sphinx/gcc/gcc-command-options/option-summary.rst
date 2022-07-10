@@ -469,7 +469,7 @@ in the following sections.
   :option:`-finstrument-functions` :option:`-finstrument-functions-once` |gol|
   :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}, {sym},...` |gol|
   :option:`-finstrument-functions-exclude-file-list`:samp:`={file}, {file},...` |gol|
-  option:`-fprofile-prefix-map`:samp:`={old}={new}`
+  :option:`-fprofile-prefix-map`:samp:`={old}={new}`
 
 *Preprocessor Options*
 
