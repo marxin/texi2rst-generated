@@ -680,7 +680,7 @@ The following LoongArch targets are available:
   :option:`--with-abi`:samp:`=*` to configure the default ABI type.
 
   More information about LoongArch can be found at
-https://github.com/loongson/LoongArch-Documentation.
+  https://github.com/loongson/LoongArch-Documentation.
 
 m32c-\*-elf
 ===========

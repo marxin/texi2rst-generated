@@ -212,7 +212,7 @@ in the following sections.
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` |gol|
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` |gol|
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` |gol|
-  :option:`-Wnormalized` =[none|id|nfc|nfkc] |gol|
+  :option:`-Wnormalized`:samp:`=[none|id|nfc|nfkc]` |gol|
   :option:`-Wnull-dereference`  :option:`-Wno-odr`  |gol|
   :option:`-Wopenacc-parallelism`  |gol|
   :option:`-Wopenmp-simd`  |gol|
@@ -236,7 +236,7 @@ in the following sections.
   :option:`-Wstring-compare` |gol|
   :option:`-Wno-stringop-overflow` :option:`-Wno-stringop-overread` |gol|
   :option:`-Wno-stringop-truncation` |gol|
-  :option:`-Wsuggest-attribute` =[pure|const|noreturn|format|malloc] |gol|
+  :option:`-Wsuggest-attribute`:samp:`=[pure|const|noreturn|format|malloc]` |gol|
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` |gol|
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` |gol|
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` |gol|
