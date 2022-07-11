@@ -76,8 +76,8 @@ Here are some specific guidelines for the GCC documentation:
 
   2. ``-`` for chapters::
 
-       Chapters
-       --------
+       Chapter
+       -------
 
   3. ``*`` for sections::
 
@@ -89,7 +89,7 @@ Here are some specific guidelines for the GCC documentation:
        Subsection
        ^^^^^^^^^^
 
-  5. ``^`` for subsubsections::
+  5. ``~`` for subsubsections::
 
        Subsubsection
        ~~~~~~~~~~~~~
