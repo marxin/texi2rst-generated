@@ -15,7 +15,7 @@ build procedure.  Modifying GCC sources requires additional tools
 described below.
 
 Tools/packages necessary for building GCC
-=========================================
+*****************************************
 
 
 ISO C++11 compiler
@@ -49,7 +49,7 @@ C standard library and headers
 .. _gnat-prerequisite:
 
 GNAT
-""""
+^^^^
 
   In order to build GNAT, the Ada compiler, you need a working GNAT
   compiler (GCC version 5.1 or later).
@@ -81,7 +81,7 @@ GNAT
 .. _gdc-prerequisite:
 
 GDC
-"""
+^^^
 
   In order to build GDC, the D compiler, you need a working GDC
   compiler (GCC version 9.1 or later) and D runtime library,
