@@ -127,7 +127,6 @@ with miscellaneous documentation:
   Notes on the Free Translation Project.
 
 :samp:`COPYING`
-
   The GNU General Public License, Versions 2 and 3.
 
 :samp:`COPYING.LIB` :samp:`COPYING3.LIB`
@@ -137,13 +136,11 @@ with miscellaneous documentation:
   Change log files for various parts of GCC.
 
 :samp:`LANGUAGES`
-
   Details of a few changes to the GCC front-end interface.  FIXME: the
   information in this file should be part of general documentation of
   the front-end interface in this manual.
 
 :samp:`ONEWS`
-
   Information about new features in old versions of GCC.  (For recent
   versions, the information is on the GCC web site.)
 
