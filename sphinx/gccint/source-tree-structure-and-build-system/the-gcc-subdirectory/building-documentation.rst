@@ -82,7 +82,7 @@ Here are some specific guidelines for the GCC documentation:
   3. ``*`` for sections::
 
        Section
-       -------
+       *******
 
   4. ``^`` for subsections::
 
