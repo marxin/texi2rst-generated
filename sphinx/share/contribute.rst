@@ -14,12 +14,7 @@ https://gcc.gnu.org/git.html).  Source and binary snapshots are
 also available for FTP; see https://gcc.gnu.org/snapshots.html.
 
 If you would like to work on improvements to GCC, please read the
-advice at these URLs:
-
-.. code-block:: c++
-
-  https://gcc.gnu.org/contribute.html
-  https://gcc.gnu.org/contributewhy.html
+advice at these URLs: https://gcc.gnu.org/contribute.html, https://gcc.gnu.org/contributewhy.html.
 
 for information on how to make useful contributions and avoid
 duplication of effort.  Suggested projects are listed at

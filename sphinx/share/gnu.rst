@@ -16,9 +16,4 @@ kernel Linux, are now widely used; though these systems are often
 referred to as 'Linux', they are more accurately called GNU/Linux
 systems.
 
-For more information, see:
-
-.. code-block:: c++
-
-  https://www.gnu.org/
-  https://www.gnu.org/gnu/linux-and-gnu.html
+For more information, see: https://www.gnu.org/ and https://www.gnu.org/gnu/linux-and-gnu.html.
