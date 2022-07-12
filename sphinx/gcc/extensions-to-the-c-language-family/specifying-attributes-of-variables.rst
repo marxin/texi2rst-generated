@@ -370,11 +370,13 @@ The following attributes are supported on most targets.
       int x[2] __attribute__ ((packed));
     };
 
-  *Note:* The 4.1, 4.2 and 4.3 series of GCC ignore the
-  :gcc-attr:`packed` attribute on bit-fields of type ``char``.  This has
-  been fixed in GCC 4.4 but the change can lead to differences in the
-  structure layout.  See the documentation of
-  :option:`-Wpacked-bitfield-compat` for more information.
+  .. note::
+
+    The 4.1, 4.2 and 4.3 series of GCC ignore the
+    :gcc-attr:`packed` attribute on bit-fields of type ``char``.  This has
+    been fixed in GCC 4.4 but the change can lead to differences in the
+    structure layout.  See the documentation of
+    :option:`-Wpacked-bitfield-compat` for more information.
 
 .. index:: section variable attribute
 
@@ -567,8 +569,6 @@ The following attributes are supported on most targets.
 .. index:: objc_nullability variable attribute
 
 .. gcc-attr:: objc_nullability (nullability kind)
-
-.. gcc-attr:: objc_nullability (nullability kind) (Objective-C and Objective-C++ only)
 
   .. note::
 

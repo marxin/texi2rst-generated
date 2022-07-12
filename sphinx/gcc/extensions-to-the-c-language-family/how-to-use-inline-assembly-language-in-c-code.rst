@@ -35,7 +35,7 @@ Basic Asm --- Assembler Instructions Without Operands
 
 A basic ``asm`` statement has the following syntax:
 
-.. code-block:: c++
+.. code-block::
 
   asm asm-qualifiers ( AssemblerInstructions )
 
@@ -172,7 +172,7 @@ assembler and perform jumps from assembler code to C labels.
 Extended ``asm`` syntax uses colons (:samp:`:`) to delimit
 the operand parameters after the assembler template:
 
-.. code-block:: c++
+.. code-block::
 
   asm asm-qualifiers ( AssemblerTemplate 
                    : OutputOperands 

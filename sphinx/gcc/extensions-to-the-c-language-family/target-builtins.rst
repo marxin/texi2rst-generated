@@ -13,7 +13,7 @@ to those machines.  Generally these generate calls to specific machine
 instructions, but allow the compiler to schedule those calls.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   target-builtins/aarch64-built-in-functions
   target-builtins/alpha-built-in-functions

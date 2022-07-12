@@ -1078,9 +1078,8 @@ Blackfin family---:samp:`{config/bfin/constraints.md}`
   ``L``
     An integer constant with all bits set except exactly one.
 
-  ``H``
+  ``H``, ``Q``
 
-  ``Q``
     Any SYMBOL_REF.
 
 CR16 Architecture---:samp:`{config/cr16/cr16.h}`
@@ -2773,7 +2772,7 @@ TI C6X family---:samp:`{config/c6x/constraints.md}`
   ``Z``
     Register B14 (aka DP).
 
-:samp:`Visium---{config/visium/constraints.md}`
+Visium---:samp:`{config/visium/constraints.md}`
 
   ``b``
     EAM register ``mdb``
