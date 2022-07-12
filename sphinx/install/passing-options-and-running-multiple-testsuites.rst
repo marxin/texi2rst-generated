@@ -31,7 +31,7 @@ with a syntax similar to the brace expansion of popular shells:
 The following will run each testsuite eight times using the :samp:`arm-sim`
 target, as if you had specified all possible combinations yourself:
 
-.. code-block::
+.. code-block:: bash
 
   --target_board='arm-sim/-mhard-float/-O1 \
                   arm -sim/-mhard-float/-O2 \
