@@ -15,7 +15,7 @@ for C++ programs.  You can also use most of the GNU compiler options
 regardless of what language your program is in.  For example, you
 might compile a file :samp:`firstClass.C` like this:
 
-.. code-block:: c++
+.. code-block:: shell
 
   g++ -g -fstrict-enums -O -c firstClass.C
 
