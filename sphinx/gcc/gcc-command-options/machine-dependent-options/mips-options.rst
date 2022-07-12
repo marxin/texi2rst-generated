@@ -239,7 +239,8 @@ MIPS Options
   dynamic objects.  :option:`-mabicalls` is the default for SVR4-based
   systems.
 
-``-mshared`` ``-mno-shared``
+.. option:: -mshared, -mno-shared
+
   Generate (do not generate) code that is fully position-independent,
   and that can therefore be linked into shared libraries.  This option
   only affects :option:`-mabicalls`.

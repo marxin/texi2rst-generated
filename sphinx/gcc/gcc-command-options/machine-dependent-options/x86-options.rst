@@ -1566,10 +1566,12 @@ on x86-64 processors in 64-bit environments.
   treat access to protected symbols as local symbols.  The default is
   :option:`-mdirect-extern-access`.
 
-  **Warning:** shared libraries compiled with
-  :option:`-mno-direct-extern-access` and executable compiled with
-  :option:`-mdirect-extern-access` may not be binary compatible if
-  protected symbols are used in shared libraries and executable.
+  .. warning::
+
+    Shared libraries compiled with
+    :option:`-mno-direct-extern-access` and executable compiled with
+    :option:`-mdirect-extern-access` may not be binary compatible if
+    protected symbols are used in shared libraries and executable.
 
 .. option:: -mdirect-extern-access
 
