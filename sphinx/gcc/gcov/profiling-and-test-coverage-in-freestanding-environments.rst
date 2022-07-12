@@ -273,7 +273,7 @@ Compile :samp:`app.c` and :samp:`main.c` with test coverage and
 present in the ``.gcov_info`` section and there are no undefined references
 to ``__gcov_init`` and ``__gcov_exit`` :
 
-.. code-block::
+.. code-block:: shell-session
 
   $ gcc --coverage -fprofile-info-section -c main.c
   $ gcc --coverage -fprofile-info-section -c app.c
@@ -305,7 +305,7 @@ We have to customize the program link procedure so that all the
 with a begin and end symbol.  Firstly, get the default linker script using the
 following commands (we assume a GNU linker):
 
-.. code-block::
+.. code-block:: shell-session
 
   $ ld --verbose | sed '1,/^===/d' | sed '/^===/d' > linkcmds
 
@@ -313,7 +313,7 @@ Secondly, open the file :samp:`linkcmds` with a text editor and place the linker
 output section definition from the overview after the ``.rodata`` section
 definition.  Link the program executable using the customized linker script:
 
-.. code-block::
+.. code-block:: shell-session
 
   $ gcc --coverage main.o app.o -T linkcmds -Wl,-Map,app.map
 
@@ -322,7 +322,7 @@ read-only pointer size objects of our objects files :samp:`main.o` and
 :samp:`app.o` into a contiguous memory block and provided the symbols
 ``__gcov_info_start`` and ``__gcov_info_end`` :
 
-.. code-block::
+.. code-block:: shell-session
 
   $ grep -C 1 "\.gcov_info" app.map
 
@@ -341,7 +341,7 @@ using the :command:`merge-stream` subcommand to create the :samp:`.gcda` files
 that the first run with nothing to decode results in a partially covered
 application:
 
-.. code-block::
+.. code-block:: shell-session
 
   $ rm -f app.gcda main.gcda
   $ echo "" | ./a.out 2>gcda-0.txt
@@ -362,7 +362,7 @@ Run the program to decode :samp:`gcda-1.txt` and send it to the
 Since the second run decoded the gcov information of the first run, we have now
 a fully covered application:
 
-.. code-block::
+.. code-block:: shell-session
 
   $ ./a.out <gcda-1.txt 2>gcda-2.txt | gcov-tool merge-stream
   $ gcov -bc app.c

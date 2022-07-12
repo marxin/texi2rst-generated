@@ -385,7 +385,7 @@ will now produce a listing of the code along with frequency of execution
 for each line.  For example, if your program is called :samp:`tmp.cpp`, this
 is what you see when you use the basic :command:`gcov` facility:
 
-.. code-block:: bash
+.. code-block:: shell-session
 
   $ g++ --coverage tmp.cpp -c
   $ g++ --coverage tmp.o
