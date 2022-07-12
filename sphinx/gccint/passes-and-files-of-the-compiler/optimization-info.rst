@@ -136,7 +136,7 @@ The dump verbosity has the following options
   Print information about missed optimizations. Individual passes
   control which information to include in the output. For example,
 
-  .. code-block:: shell-session
+  .. code-block:: shell
 
     gcc -O2 -ftree-vectorize -fopt-info-vec-missed
 
@@ -216,7 +216,7 @@ Dump types
 Dump examples
 ^^^^^^^^^^^^^
 
-.. code-block:: shell-session
+.. code-block:: shell
 
   gcc -O3 -fopt-info-missed=missed.all
 
@@ -225,7 +225,7 @@ outputs missed optimization report from all the passes into
 
 As another example,
 
-.. code-block:: shell-session
+.. code-block:: shell
 
   gcc -O3 -fopt-info-inline-optimized-missed=inline.txt
 
@@ -241,7 +241,7 @@ all information about successful optimizations from all the passes.
 In the following example, the optimization information is output on
 to :samp:`stderr`.
 
-.. code-block:: shell-session
+.. code-block:: shell
 
   gcc -O3 -fopt-info
 
@@ -251,7 +251,7 @@ names and message types listed after :option:`-fopt-info` does not matter.
 
 As another example, consider
 
-.. code-block:: shell-session
+.. code-block:: shell
 
   gcc -fopt-info-vec-missed=vec.miss -fopt-info-loop-optimized=loop.opt
 

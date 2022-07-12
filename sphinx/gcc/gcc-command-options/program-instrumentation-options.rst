@@ -425,6 +425,7 @@ program analysis purposes.
   The option must be combined with either :option:`-fsanitize`:samp:`=kernel-address` or
   :option:`-fsanitize`:samp:`=address`
   The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
+
   .. note::
 
     By default the check is disabled at run time.  To enable it,
@@ -698,7 +699,7 @@ program analysis purposes.
   Syntax without an explicit :samp:`{opts}` parameter is deprecated.  It is
   equivalent to specifying an :samp:`{opts}` list of:
 
-  .. code-block:: c++
+  .. code-block::
 
     undefined,float-cast-overflow,float-divide-by-zero,bounds-strict
 
