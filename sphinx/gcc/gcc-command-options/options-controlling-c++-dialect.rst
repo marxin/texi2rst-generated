@@ -1789,7 +1789,11 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Wno-placement-new`.
 
-.. option:: -Wcatch-value, -Wcatch-value={n}(C++ and Objective-C++ only)
+.. option:: -Wcatch-value, -Wcatch-value={n}
+
+  .. note::
+
+    C++ and Objective-C++ only
 
   Warn about catch handlers that do not catch via reference.
   With :option:`-Wcatch-value`:samp:`=1` (or :option:`-Wcatch-value` for short)
