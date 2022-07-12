@@ -22,12 +22,7 @@ wherever a constant of that type is valid.  For example:
   ptr = &&foo;
 
 To use these values, you need to be able to jump to one.  This is done
-with the computed goto statementThe analogous feature in
-Fortran is called an assigned goto, but that name seems inappropriate in
-C, where one can do more than simply store label addresses in label
-variables.
-
-, ``goto *exp;``.  For example,
+with the computed goto statement [#f1]_, ``goto *exp;``.  For example,
 
 .. code-block:: c++
 
@@ -85,3 +80,7 @@ relies on them being always the same,
 ``__attribute__((__noinline__,__noclone__))`` should be used to
 prevent inlining and cloning.  If ``&&foo`` is used in a static
 variable initializer, inlining and cloning is forbidden.
+
+.. [#f1] The analogous feature in Fortran is called an assigned goto, but that name seems inappropriate in
+  C, where one can do more than simply store label addresses in label
+  variables.

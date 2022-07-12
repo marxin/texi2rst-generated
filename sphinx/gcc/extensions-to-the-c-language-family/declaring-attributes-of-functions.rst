@@ -70,7 +70,7 @@ In addition to the attributes documented here,
 GCC plugins may provide their own attributes.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   declaring-attributes-of-functions/common-function-attributes
   declaring-attributes-of-functions/aarch64-function-attributes

@@ -316,9 +316,9 @@ contents are largely undecipherable.  There is a section named
 than the first line, each line consists of ``tag: value``
 tuples.
 
-.. code-block:: bash
+.. code-block:: shell-session
 
-  > readelf -p.gnu.c++.README gcm.cache/foo.gcm
+  $ readelf -p.gnu.c++.README gcm.cache/foo.gcm
 
   String dump of section '.gnu.c++.README':
     [     0]  GNU C++ primary module interface
