@@ -162,7 +162,63 @@ restrictive subtype of any of its input files.
   This causes GCC's output file to have the :samp:`ALL` subtype, instead of
   one controlled by the :option:`-mcpu` or :option:`-march` option.
 
-.. option:: -allowable_client  {client_name}, -client_name, -compatibility_version, -current_version, -dead_strip, -dependency-file, -dylib_file, -dylinker_install_name, -dynamic, -exported_symbols_list, -filelist, -flat_namespace, -force_flat_namespace, -headerpad_max_install_names, -image_base, -init, -install_name, -keep_private_externs, -multi_module, -multiply_defined, -multiply_defined_unused, -noall_load, -no_dead_strip_inits_and_terms, -nofixprebinding, -nomultidefs, -noprebind, -noseglinkedit, -pagezero_size, -prebind, -prebind_all_twolevel_modules, -private_bundle, -read_only_relocs, -sectalign, -sectobjectsymbols, -whyload, -seg1addr, -sectcreate, -sectobjectsymbols, -sectorder, -segaddr, -segs_read_only_addr, -segs_read_write_addr, -seg_addr_table, -seg_addr_table_filename, -seglinkedit, -segprot, -segs_read_only_addr, -segs_read_write_addr, -single_module, -static, -sub_library, -sub_umbrella, -twolevel_namespace, -umbrella, -undefined, -unexported_symbols_list, -weak_reference_mismatches, -whatsloaded
+.. option:: -allowable_client  {client_name}
+.. option:: -compatibility_version
+.. option:: -current_version
+.. option:: -dead_strip
+.. option:: -dependency-file
+.. option:: -dylib_file
+.. option:: -dylinker_install_name
+.. option:: -dynamic
+.. option:: -exported_symbols_list
+.. option:: -filelist
+.. option:: -flat_namespace
+.. option:: -force_flat_namespace
+.. option:: -headerpad_max_install_names
+.. option:: -image_base
+.. option:: -init
+.. option:: -install_name
+.. option:: -keep_private_externs
+.. option:: -multi_module
+.. option:: -multiply_defined
+.. option:: -multiply_defined_unused
+.. option:: -noall_load
+.. option:: -no_dead_strip_inits_and_terms
+.. option:: -nofixprebinding
+.. option:: -nomultidefs
+.. option:: -noprebind
+.. option:: -noseglinkedit
+.. option:: -pagezero_size
+.. option:: -prebind
+.. option:: -prebind_all_twolevel_modules
+.. option:: -private_bundle
+.. option:: -read_only_relocs
+.. option:: -sectalign
+.. option:: -sectobjectsymbols
+.. option:: -whyload
+.. option:: -seg1addr
+.. option:: -sectcreate
+.. option:: -sectobjectsymbols
+.. option:: -sectorder
+.. option:: -segaddr
+.. option:: -segs_read_only_addr
+.. option:: -segs_read_write_addr
+.. option:: -seg_addr_table
+.. option:: -seg_addr_table_filename
+.. option:: -seglinkedit
+.. option:: -segprot
+.. option:: -segs_read_only_addr
+.. option:: -segs_read_write_addr
+.. option:: -single_module
+.. option:: -static
+.. option:: -sub_library
+.. option:: -sub_umbrella
+.. option:: -twolevel_namespace
+.. option:: -umbrella
+.. option:: -undefined
+.. option:: -unexported_symbols_list
+.. option:: -weak_reference_mismatches
+.. option:: -whatsloaded
 
   These options are passed to the Darwin linker.  The Darwin linker man page
   describes them in detail.

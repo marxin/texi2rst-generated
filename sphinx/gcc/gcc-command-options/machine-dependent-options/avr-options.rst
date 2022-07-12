@@ -248,7 +248,7 @@ These options are defined for AVR implementations:
   small non-negative ``const < 64`` to a register :samp:`{Rn}` is
   performed as
 
-  .. code-block:: c++
+  .. code-block::
 
     adiw r26, const   ; X += const
     ld   Rn, X        ; Rn = *X

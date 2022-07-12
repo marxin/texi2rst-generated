@@ -320,7 +320,7 @@ is being compiled:
     Enables support for all single- and double-precision floating-point
     hardware extensions.  Not available for ARC EM.
 
-.. option:: -mirq-ctrl-saved={register-range}, {blink}, {lp_count}
+.. option:: -mirq-ctrl-saved={register-range},{blink},{lp_count}
 
   Specifies general-purposes registers that the processor automatically
   saves/restores on interrupt entry and exit.  :samp:`{register-range}` is

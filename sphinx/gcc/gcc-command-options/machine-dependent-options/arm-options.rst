@@ -819,7 +819,7 @@ These :samp:`-m` options are defined for the ARM port:
   Write the name of each function into the text section, directly
   preceding the function prologue.  The generated code is similar to this:
 
-  .. code-block::
+  .. code-block:: gas
 
          t0
              .ascii "arm_poke_function_name", 0
@@ -919,7 +919,8 @@ These :samp:`-m` options are defined for the ARM port:
   generating these instructions.  This option is enabled by default when
   :option:`-mcpu`:samp:`=cortex-m3` is specified.
 
-``-mfix-cortex-a57-aes-1742098`` ``-mno-fix-cortex-a57-aes-1742098`` ``-mfix-cortex-a72-aes-1655431`` ``-mno-fix-cortex-a72-aes-1655431``
+.. option:: -mfix-cortex-a57-aes-1742098, -mno-fix-cortex-a57-aes-1742098, -mfix-cortex-a72-aes-1655431, -mno-fix-cortex-a72-aes-1655431
+
   Enable (disable) mitigation for an erratum on Cortex-A57 and
   Cortex-A72 that affects the AES cryptographic instructions.  This
   option is enabled by default when either :option:`-mcpu`:samp:`=cortex-a57` or
