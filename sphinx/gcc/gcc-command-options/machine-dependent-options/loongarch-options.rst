@@ -143,7 +143,8 @@ These command-line options are defined for LoongArch targets:
   Inline all block moves (such as calls to ``memcpy`` or structure copies)
   less than or equal to :samp:`{n}` bytes.  The default value of :samp:`{n}` is 1024.
 
-:samp:`-mcmodel={code-model}`
+.. option:: -mcmodel={code-model}
+
   Set the code model to one of:
 
   :samp:`tiny-static`
@@ -171,10 +172,9 @@ These command-line options are defined for LoongArch targets:
 
     * global symbol: The got table must be within +/-2GiB addressing space.
 
-  :samp:`extreme(Not implemented yet)`
+  :samp:`extreme` (Not implemented yet)
     * local symbol: The data and text section must be within +/-8EiB addressing space.
 
     * global symbol: The data got table must be within +/-8EiB addressing space.
 
-    The default code model is ``normal``.
-
+  The default code model is ``normal``.
