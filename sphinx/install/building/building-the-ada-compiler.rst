@@ -6,4 +6,4 @@
 Building the Ada compiler
 *************************
 
-:ref:`gnat-prerequisite`
+:ref:`GNAT <gnat-prerequisite>`

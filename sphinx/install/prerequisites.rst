@@ -17,8 +17,8 @@ described below.
 Tools/packages necessary for building GCC
 *****************************************
 
+* ISO C++11 compiler
 
-ISO C++11 compiler
   Necessary to bootstrap GCC.
 
   Versions of GCC prior to 11 also allow bootstrapping with an ISO C++98
@@ -31,7 +31,8 @@ ISO C++11 compiler
   GCC binary (version 4.8 or later) because source code for language
   frontends other than C might use GCC extensions.
 
-C standard library and headers
+* C standard library and headers
+
   In order to build GCC, the C standard library and headers must be present
   for all target variants for which target libraries will be built (and not
   only the variant of the host C++ compiler).
@@ -48,8 +49,7 @@ C standard library and headers
 
 .. _gnat-prerequisite:
 
-GNAT
-^^^^
+* GNAT
 
   In order to build GNAT, the Ada compiler, you need a working GNAT
   compiler (GCC version 5.1 or later).
@@ -80,8 +80,7 @@ GNAT
 
 .. _gdc-prerequisite:
 
-GDC
-^^^
+* GDC
 
   In order to build GDC, the D compiler, you need a working GDC
   compiler (GCC version 9.1 or later) and D runtime library,
@@ -105,7 +104,8 @@ GDC
   and works if :option:`--enable-libphobos` is used.  Specifics are
   documented for affected targets.
 
-A 'working' POSIX compatible shell, or GNU bash
+* A 'working' POSIX compatible shell, or GNU bash
+
   Necessary when running :command:`configure` because some
   :command:`/bin/sh` shells have bugs and may crash when configuring the
   target libraries.  In other cases, :command:`/bin/sh` or :command:`ksh`
@@ -122,12 +122,14 @@ A 'working' POSIX compatible shell, or GNU bash
   :command:`zsh` is not a fully compliant POSIX shell and will not
   work when configuring GCC.
 
-A POSIX or SVR4 awk
+* A POSIX or SVR4 awk
+
   Necessary for creating some of the generated source files for GCC.
   If in doubt, use a recent GNU awk version, as some of the older ones
   are broken.  GNU awk version 3.1.5 is known to work.
 
-GNU binutils
+* GNU binutils
+
   Necessary in some circumstances, optional in others.  See the
   host/target specific instructions for your platform for the exact
   requirements.
@@ -135,19 +137,24 @@ GNU binutils
   Note binutils 2.35 or newer is required for LTO to work correctly
   with GNU libtool that includes doing a bootstrap with LTO enabled.
 
-gzip version 1.2.4 (or later) or bzip2 version 1.0.2 (or later)
+* gzip version 1.2.4 (or later) or
+* bzip2 version 1.0.2 (or later)
+
   Necessary to uncompress GCC :command:`tar` files when source code is
   obtained via HTTPS mirror sites.
 
-GNU make version 3.80 (or later)
+* GNU make version 3.80 (or later)
+
   You must have GNU make installed to build GCC.
 
-GNU tar version 1.14 (or later)
+* GNU tar version 1.14 (or later)
+
   Necessary (only on some platforms) to untar the source code.  Many
   systems' :command:`tar` programs will also work, only try GNU
   :command:`tar` if you have problems.
 
-Perl version between 5.6.1 and 5.6.24
+* Perl version between 5.6.1 and 5.6.24
+
   Necessary when targeting Darwin, building :samp:`libstdc++`,
   and not using :option:`--disable-symvers`.
   Necessary when targeting Solaris 2 with Solaris :command:`ld` and not using
@@ -169,7 +176,8 @@ newer versions, though.  If your OS vendor provides packages for the
 support libraries then using those packages may be the simplest way to
 install the libraries.
 
-GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
+* GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
+
   Necessary to build GCC.  If a GMP source distribution is found in a
   subdirectory of your GCC sources named :samp:`gmp`, it will be built
   together with GCC.  Alternatively, if GMP is already installed but it
@@ -179,7 +187,8 @@ GNU Multiple Precision Library (GMP) version 4.3.2 (or later)
   The in-tree build is only supported with the GMP version that
   :command:`download_prerequisites` installs.
 
-MPFR Library version 3.1.0 (or later)
+* MPFR Library version 3.1.0 (or later)
+
   Necessary to build GCC.  It can be downloaded from
   https://www.mpfr.org.  If an MPFR source distribution is found
   in a subdirectory of your GCC sources named :samp:`mpfr`, it will be
@@ -190,7 +199,8 @@ MPFR Library version 3.1.0 (or later)
   The in-tree build is only supported with the MPFR version that
   :command:`download_prerequisites` installs.
 
-MPC Library version 1.0.1 (or later)
+* MPC Library version 1.0.1 (or later)
+
   Necessary to build GCC.  It can be downloaded from
   https://www.multiprecision.org/mpc/.  If an MPC source distribution
   is found in a subdirectory of your GCC sources named :samp:`mpc`, it
@@ -201,7 +211,8 @@ MPC Library version 1.0.1 (or later)
   The in-tree build is only supported with the MPC version that
   :command:`download_prerequisites` installs.
 
-isl Library version 0.15 or later.
+* isl Library version 0.15 or later.
+
   Necessary to build GCC with the Graphite loop optimizations.
   It can be downloaded from https://gcc.gnu.org/pub/gcc/infrastructure/.
   If an isl source distribution is found
@@ -210,7 +221,8 @@ isl Library version 0.15 or later.
   option should be used if isl is not installed in your default library
   search path.
 
-zstd Library.
+* zstd Library.
+
   Necessary to build GCC with zstd compression used for LTO bytecode.
   The library is searched in your default library patch search.
   Alternatively, the :option:`--with-zstd` configure option should be used.
@@ -218,11 +230,14 @@ zstd Library.
 Tools/packages necessary for modifying GCC
 ==========================================
 
-autoconf version 2.69, GNU m4 version 1.4.6 (or later)
+* autoconf version 2.69
+* GNU m4 version 1.4.6 (or later)
+
   Necessary when modifying :samp:`configure.ac`, :samp:`aclocal.m4`, etc.
   to regenerate :samp:`configure` and :samp:`config.in` files.
 
-automake version 1.15.1
+* automake version 1.15.1
+
   Necessary when modifying a :samp:`Makefile.am` file to regenerate its
   associated :samp:`Makefile.in`.
 
@@ -236,15 +251,20 @@ automake version 1.15.1
   to a newer version, please update all the directories using an older 1.15
   to the latest released version.
 
-gettext version 0.14.5 (or later)
+* gettext version 0.14.5 (or later)
+
   Needed to regenerate :samp:`gcc.pot`.
 
-gperf version 2.7.2 (or later)
+* gperf version 2.7.2 (or later)
+
   Necessary when modifying :command:`gperf` input files, e.g.
   :samp:`gcc/cp/cfns.gperf` to regenerate its associated header file, e.g.
   :samp:`gcc/cp/cfns.h`.
 
-DejaGnu version 1.5.3 (or later), Expect, Tcl
+* DejaGnu version 1.5.3 (or later)
+* Expect
+* Tcl
+
   Necessary to run the GCC testsuite; see the section on testing for
   details.
 
@@ -252,7 +272,9 @@ DejaGnu version 1.5.3 (or later), Expect, Tcl
      compatibility workarounds:
          git grep 'compatibility with earlier Tcl releases'
 
-autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
+* autogen version 5.5.4 (or later)
+* guile version 1.4.1 (or later)
+
   Necessary to regenerate :samp:`fixinc/fixincl.x` from
   :samp:`fixinc/inclhack.def` and :samp:`fixinc/*.tpl`.
 
@@ -261,14 +283,16 @@ autogen version 5.5.4 (or later) and guile version 1.4.1 (or later)
   Necessary to regenerate the top level :samp:`Makefile.in` file from
   :samp:`Makefile.tpl` and :samp:`Makefile.def`.
 
-Flex version 2.5.4 (or later)
+* Flex version 2.5.4 (or later)
+
   Necessary when modifying :samp:`*.l` files.
 
   Necessary to build GCC during development because the generated output
   files are not included in the version-controlled source repository.
   They are included in releases.
 
-Sphinx version |needs_sphinx| (or later)
+* Sphinx version |needs_sphinx| (or later)
+
   Necessary to build HTML, PDF or EPUB documentation. See more in
   :ref:`gccint:building_documentation`.
 
@@ -279,13 +303,17 @@ Sphinx version |needs_sphinx| (or later)
   generated output files are not included in the repository.  They are
   included in releases.
 
-git (any version) and SSH (any version)
+* git (any version)
+* SSH (any version)
+
   Necessary to access the source repository.  Public releases and weekly
   snapshots of the development sources are also available via HTTPS.
 
-GNU diffutils version 2.7 (or later)
+* GNU diffutils version 2.7 (or later)
+
   Useful when submitting patches for the GCC source code.
 
-patch version 2.5.4 (or later)
+* patch version 2.5.4 (or later)
+
   Necessary when applying patches, created with :command:`diff`, to one's
   own sources.

@@ -6,4 +6,4 @@
 Building the D compiler
 ***********************
 
-:ref:`gdc-prerequisite`.
+:ref:`GDC <gdc-prerequisite>`.
