@@ -34,7 +34,7 @@ The :samp:`gcc` directory contains the following subdirectories:
 :samp:`doc`
   ReStructuredText documentation for GCC, together with automatically generated
   man pages and support for converting the installation manual to
-  HTML.  See :ref:`documentation`.
+  HTML.  See :ref:`building_documentation`.
 
 :samp:`ginclude`
   System headers installed by GCC, mainly those required by the C
