@@ -1091,7 +1091,7 @@ The files are created in the directory of the output file.
   This is useful when you use :option:`-nostdlib` or :option:`-nodefaultlibs`
   but you do want to link with :samp:`libgcc.a`.  You can do:
 
-  .. code-block:: shell-session
+  .. code-block:: shell
 
     gcc -nostdlib files... `gcc -print-libgcc-file-name`
 

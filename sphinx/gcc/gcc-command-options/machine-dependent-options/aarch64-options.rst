@@ -510,7 +510,7 @@ the following and their inverses no :samp:`{feature}` :
 :samp:`pauth`
   Enable the Pointer Authentication Extension.
 
-Feature crypto implies aes, sha2, and simd,
-which implies fp.
-Conversely, nofp implies nosimd, which implies
-nocrypto, noaes and nosha2.
+Feature ``crypto`` implies ``aes``, ``sha2``, and ``simd``,
+which implies ``fp``.
+Conversely, ``nofp`` implies ``nosimd``, which implies
+``nocrypto``, ``noaes`` and ``nosha2``.

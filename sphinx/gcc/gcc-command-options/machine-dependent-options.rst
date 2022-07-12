@@ -25,7 +25,7 @@ platform.
    in Machine Dependent Options
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   machine-dependent-options/aarch64-options
   machine-dependent-options/adapteva-epiphany-options
