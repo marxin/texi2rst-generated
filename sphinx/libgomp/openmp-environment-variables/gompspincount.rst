@@ -11,6 +11,7 @@ GOMP_SPINCOUNT -- Set the busy-wait spin count
 **********************************************
 
 :samp:`{Description}:`
+
   Determines how long a threads waits actively with consuming CPU power
   before waiting passively without consuming CPU power.  The value may be
   either ``INFINITE``, ``INFINITY`` to always wait actively or an
@@ -27,4 +28,5 @@ GOMP_SPINCOUNT -- Set the busy-wait spin count
   or :envvar:`OMP_WAIT_POLICY` is ``PASSIVE``.
 
 :samp:`{See also}:`
+
   :ref:`OMP_WAIT_POLICY`

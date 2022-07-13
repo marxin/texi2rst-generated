@@ -11,6 +11,7 @@ GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
 **************************************************************
 
 :samp:`{Description}:`
+
   This environment variable is only used on the RTEMS real-time operating system.
   It determines the scheduler instance specific thread pools.  The format for
   :envvar:`GOMP_RTEMS_THREAD_POOLS` is a list of optional
@@ -36,6 +37,7 @@ GOMP_RTEMS_THREAD_POOLS -- Set the RTEMS specific thread pools
   thread pools, each OpenMP primary thread must call ``omp_set_num_threads``.
 
 :samp:`{Example}:`
+
   Lets suppose we have three scheduler instances ``IO``, ``WRK0``, and
   ``WRK1`` with :envvar:`GOMP_RTEMS_THREAD_POOLS` set to
   ``"1@WRK0:3$4@WRK1"``.  Then there are no thread pool restrictions for

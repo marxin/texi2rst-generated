@@ -11,6 +11,7 @@ GOMP_DEBUG -- Enable debugging output
 *************************************
 
 :samp:`{Description}:`
+
   Enable debugging output.  The variable should be set to ``0``
   (disabled, also the default if not set), or ``1`` (enabled).
 

@@ -11,6 +11,7 @@ GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
 **************************************************
 
 :samp:`{Description}:`
+
   Binds threads to specific CPUs.  The variable should contain a space-separated
   or comma-separated list of CPUs.  This list may contain different kinds of 
   entries: either single CPU numbers in any order, a range of CPUs (M-N) 
@@ -34,4 +35,5 @@ GOMP_CPU_AFFINITY -- Bind threads to specific CPUs
   ``FALSE``, the host system will handle the assignment of threads to CPUs.
 
 :samp:`{See also}:`
+
   :ref:`OMP_PLACES`, :ref:`OMP_PROC_BIND`

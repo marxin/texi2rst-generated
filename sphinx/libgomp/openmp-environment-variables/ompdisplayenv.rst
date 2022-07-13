@@ -11,6 +11,7 @@ OMP_DISPLAY_ENV -- Show OpenMP version and environment variables
 ****************************************************************
 
 :samp:`{Description}:`
+
   If set to ``TRUE``, the OpenMP version number and the values
   associated with the OpenMP environment variables are printed to ``stderr``.
   If set to ``VERBOSE``, it additionally shows the value of the environment
@@ -18,4 +19,5 @@ OMP_DISPLAY_ENV -- Show OpenMP version and environment variables
   this information will not be shown.
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.12

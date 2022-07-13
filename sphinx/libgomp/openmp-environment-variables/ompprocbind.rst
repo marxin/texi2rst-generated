@@ -11,6 +11,7 @@ OMP_PROC_BIND -- Whether theads may be moved between CPUs
 *********************************************************
 
 :samp:`{Description}:`
+
   Specifies whether threads may be moved between processors.  If set to
   ``TRUE``, OpenMP theads should not be moved; if set to ``FALSE``
   they may be moved.  Alternatively, a comma separated list with the
@@ -27,8 +28,10 @@ OMP_PROC_BIND -- Whether theads may be moved between CPUs
   :envvar:`OMP_PLACES` or :envvar:`GOMP_CPU_AFFINITY` is set and ``FALSE`` otherwise.
 
 :samp:`{See also}:`
+
   :ref:`omp_get_proc_bind`, :ref:`GOMP_CPU_AFFINITY`,
   :ref:`OMP_NESTED`, :ref:`OMP_PLACES`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.4

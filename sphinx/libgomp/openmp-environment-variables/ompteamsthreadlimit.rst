@@ -11,6 +11,7 @@ OMP_TEAMS_THREAD_LIMIT -- Set the maximum number of threads imposed by teams
 ****************************************************************************
 
 :samp:`{Description}:`
+
   Specifies an upper bound for the number of threads to use by each contention
   group created by a teams construct without explicit ``thread_limit``
   clause.  The value of this variable shall be a positive integer.  If undefined,
@@ -18,7 +19,9 @@ OMP_TEAMS_THREAD_LIMIT -- Set the maximum number of threads imposed by teams
   limit.
 
 :samp:`{See also}:`
+
   :ref:`OMP_THREAD_LIMIT`, :ref:`omp_set_teams_thread_limit`
 
-:samp:`{Reference}`:
+:samp:`{Reference}:`
+
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 6.24

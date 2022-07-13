@@ -11,6 +11,7 @@ OMP_TARGET_OFFLOAD -- Controls offloading behaviour
 ***************************************************
 
 :samp:`{Description}:`
+
   Specifies the behaviour with regard to offloading code to a device.  This
   variable can be set to one of three values - ``MANDATORY``, ``DISABLED``
   or ``DEFAULT``.
@@ -24,4 +25,5 @@ OMP_TARGET_OFFLOAD -- Controls offloading behaviour
   If undefined, then the program will behave as if ``DEFAULT`` was set.
 
 :samp:`{Reference}:`
+
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 6.17

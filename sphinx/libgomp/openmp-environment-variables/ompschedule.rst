@@ -11,6 +11,7 @@ OMP_SCHEDULE -- How threads are scheduled
 *****************************************
 
 :samp:`{Description}:`
+
   Allows to specify ``schedule type`` and ``chunk size``. 
   The value of the variable shall have the form: ``type[,chunk]`` where
   ``type`` is one of ``static``, ``dynamic``, ``guided`` or ``auto``
@@ -18,7 +19,9 @@ OMP_SCHEDULE -- How threads are scheduled
   dynamic scheduling and a chunk size of 1 is used.
 
 :samp:`{See also}:`
+
   :ref:`omp_set_schedule`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Sections 2.7.1.1 and 4.1
