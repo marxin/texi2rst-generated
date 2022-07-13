@@ -37,9 +37,11 @@ ISHFTC --- Shift bits circularly
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,6 +51,7 @@ ISHFTC --- Shift bits circularly
       RESULT = ISHFTC(I, SHIFT [, SIZE])
 
   :samp:`{Specific names}:`
+
     ==============  ================  ==============  ====================
     Name            Argument          Return type     Standard
     ==============  ================  ==============  ====================
@@ -60,4 +63,5 @@ ISHFTC --- Shift bits circularly
     ==============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`ISHFT`

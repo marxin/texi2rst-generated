@@ -22,9 +22,11 @@ ERFC --- Error function
     It lies in the range 0 \leq erfc (x) \leq 2 .
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ ERFC --- Error function
       end program test_erfc
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  =============
     Name          Argument       Return type  Standard
     ============  =============  ===========  =============

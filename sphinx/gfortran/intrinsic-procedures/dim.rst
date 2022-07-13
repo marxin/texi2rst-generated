@@ -27,9 +27,11 @@ DIM --- Positive difference
     extension, kind is the largest kind of the actual arguments.)
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,6 +54,7 @@ DIM --- Positive difference
       end program test_dim
 
   :samp:`{Specific names}:`
+
     =============  ===================  ==============  ====================
     Name           Argument             Return type     Standard
     =============  ===================  ==============  ====================

@@ -42,9 +42,11 @@ ATOMIC_CAS --- Atomic compare and swap
     (optional) Scalar default-kind integer variable.
 
   :samp:`{Standard}:`
+
     TS 18508 or later
 
   :samp:`{Class}:`
+
     Atomic subroutine
 
   :samp:`{Syntax}:`
@@ -64,6 +66,7 @@ ATOMIC_CAS --- Atomic compare and swap
       end program atomic
 
   :samp:`{See also}:`
+
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_REF`, 
     :ref:`ISO_FORTRAN_ENV`

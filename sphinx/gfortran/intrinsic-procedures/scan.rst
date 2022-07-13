@@ -33,9 +33,11 @@ SCAN --- Scan a string for the presence of a set of characters
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -55,5 +57,6 @@ SCAN --- Scan a string for the presence of a set of characters
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`index-intrinsic`, 
     :ref:`VERIFY`

@@ -37,9 +37,11 @@ CO_MIN --- Minimal value on the current set of images
     (optional) a scalar character variable
 
   :samp:`{Standard}:`
+
     Technical Specification (TS) 18508 or later
 
   :samp:`{Class}:`
+
     Collective subroutine
 
   :samp:`{Syntax}:`
@@ -62,6 +64,7 @@ CO_MIN --- Minimal value on the current set of images
       end program test
 
   :samp:`{See also}:`
+
     :ref:`CO_MAX`, 
     :ref:`CO_SUM`, 
     :ref:`CO_REDUCE`, 

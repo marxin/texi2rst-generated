@@ -20,9 +20,11 @@ IERRNO --- Get the last system error number
     kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -32,7 +34,9 @@ IERRNO --- Get the last system error number
       RESULT = IERRNO()
 
   :samp:`{Arguments}:`
+
     None
 
   :samp:`{See also}:`
+
     :ref:`PERROR`

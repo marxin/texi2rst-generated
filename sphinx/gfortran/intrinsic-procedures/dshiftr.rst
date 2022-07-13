@@ -38,9 +38,11 @@ DSHIFTR --- Combined right shift
     kind type parameter of the other.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -50,4 +52,5 @@ DSHIFTR --- Combined right shift
       RESULT = DSHIFTR(I, J, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`DSHIFTL`

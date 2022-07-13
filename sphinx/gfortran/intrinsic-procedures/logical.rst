@@ -27,9 +27,11 @@ LOGICAL --- Convert to logical type
     :samp:`{KIND}` is not given.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -39,6 +41,7 @@ LOGICAL --- Convert to logical type
       RESULT = LOGICAL(L [, KIND])
 
   :samp:`{See also}:`
+
     :ref:`INT`, 
     :ref:`REAL`, 
     :ref:`CMPLX`

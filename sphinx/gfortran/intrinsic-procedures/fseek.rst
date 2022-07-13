@@ -34,9 +34,11 @@ FSEEK --- Low level file positioning subroutine
     ``INTEGER(4)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -71,4 +73,5 @@ FSEEK --- Low level file positioning subroutine
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FTELL`

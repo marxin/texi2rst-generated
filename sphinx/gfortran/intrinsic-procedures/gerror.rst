@@ -19,9 +19,11 @@ GERROR --- Get last system error message
     Shall be of type ``CHARACTER`` and of default kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -41,5 +43,6 @@ GERROR --- Get last system error message
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`IERRNO`, 
     :ref:`PERROR`

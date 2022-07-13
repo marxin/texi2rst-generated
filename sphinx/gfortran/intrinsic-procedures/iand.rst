@@ -29,9 +29,11 @@ IAND --- Bitwise logical and
     type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ IAND --- Bitwise logical and
       END PROGRAM
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ====================
@@ -62,6 +65,7 @@ IAND --- Bitwise logical and
     ============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`IOR`, 
     :ref:`IEOR`, 
     :ref:`IBITS`, 

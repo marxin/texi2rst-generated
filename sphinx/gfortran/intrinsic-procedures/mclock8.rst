@@ -21,9 +21,11 @@ MCLOCK8 --- Time function (64-bit)
     the system does not support ``clock(3)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -33,6 +35,7 @@ MCLOCK8 --- Time function (64-bit)
       RESULT = MCLOCK8()
 
   :samp:`{See also}:`
+
     :ref:`CTIME`, 
     :ref:`GMTIME`, 
     :ref:`LTIME`, 

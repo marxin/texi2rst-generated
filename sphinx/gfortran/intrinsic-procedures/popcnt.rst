@@ -23,9 +23,11 @@ POPCNT --- Number of bits set
     kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ POPCNT --- Number of bits set
       end program test_population
 
   :samp:`{See also}:`
+
     :ref:`POPPAR`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`

@@ -29,9 +29,11 @@ REAL --- Convert to real type
     the following rules: 
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later, has GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ REAL --- Convert to real type
       end program test_real
 
   :samp:`{Specific names}:`
+
     =============  ==============  ===========  =====================
     Name           Argument        Return type  Standard
     =============  ==============  ===========  =====================
@@ -63,4 +66,5 @@ REAL --- Convert to real type
     =============  ==============  ===========  =====================
 
   :samp:`{See also}:`
+
     :ref:`DBLE`

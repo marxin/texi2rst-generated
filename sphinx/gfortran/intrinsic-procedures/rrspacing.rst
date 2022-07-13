@@ -24,9 +24,11 @@ RRSPACING --- Reciprocal of the relative spacing
     ``ABS(FRACTION(X)) * FLOAT(RADIX(X))**DIGITS(X)``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -36,4 +38,5 @@ RRSPACING --- Reciprocal of the relative spacing
       RESULT = RRSPACING(X)
 
   :samp:`{See also}:`
+
     :ref:`SPACING`

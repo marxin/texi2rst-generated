@@ -36,9 +36,11 @@ CMPLX --- Complex conversion function
     :samp:`{X}` and :samp:`{Y}`. 
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -60,4 +62,5 @@ CMPLX --- Complex conversion function
       end program test_cmplx
 
   :samp:`{See also}:`
+
     :ref:`COMPLEX`

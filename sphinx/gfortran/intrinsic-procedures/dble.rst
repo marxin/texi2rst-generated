@@ -22,9 +22,11 @@ DBLE --- Double conversion function
     The return value is of type double precision real.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,4 +47,5 @@ DBLE --- Double conversion function
       end program test_dble
 
   :samp:`{See also}:`
+
     :ref:`REAL`

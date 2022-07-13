@@ -24,9 +24,11 @@ ADJUSTR --- Right adjust a string
     spaces are inserted at the start of :samp:`{STRING}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,5 +48,6 @@ ADJUSTR --- Right adjust a string
       end program test_adjustr
 
   :samp:`{See also}:`
+
     :ref:`ADJUSTL`, 
     :ref:`TRIM`

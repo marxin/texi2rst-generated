@@ -24,9 +24,11 @@ ABS --- Absolute value
     ``COMPLEX`` argument.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,6 +51,7 @@ ABS --- Absolute value
       end program test_abs
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ====================

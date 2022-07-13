@@ -24,9 +24,11 @@ GETLOG --- Get login name
     return a blank string.)
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -46,4 +48,5 @@ GETLOG --- Get login name
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`GETUID`

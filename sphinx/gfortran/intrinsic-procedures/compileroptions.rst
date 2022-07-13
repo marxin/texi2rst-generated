@@ -21,9 +21,11 @@ COMPILER_OPTIONS --- Options passed to the compiler
     the ``COMPILER_OPTIONS`` intrinsic.
 
   :samp:`{Standard}:`
+
     Fortran 2008
 
   :samp:`{Class}:`
+
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
   :samp:`{Syntax}:`
@@ -33,6 +35,7 @@ COMPILER_OPTIONS --- Options passed to the compiler
       STR = COMPILER_OPTIONS()
 
   :samp:`{Arguments}:`
+
     None
 
   :samp:`{Example}:`
@@ -46,5 +49,6 @@ COMPILER_OPTIONS --- Options passed to the compiler
          end
 
   :samp:`{See also}:`
+
     :ref:`COMPILER_VERSION`, 
     :ref:`ISO_FORTRAN_ENV`

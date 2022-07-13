@@ -39,9 +39,11 @@ INDEX --- Position of a substring within a string
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ INDEX --- Position of a substring within a string
       RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
 
   :samp:`{Specific names}:`
+
     ===========================  =============  ==============  ====================
     Name                         Argument       Return type     Standard
     ===========================  =============  ==============  ====================
@@ -58,5 +61,6 @@ INDEX --- Position of a substring within a string
     ===========================  =============  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`SCAN`, 
     :ref:`VERIFY`

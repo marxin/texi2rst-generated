@@ -22,9 +22,11 @@ TRIM --- Remove trailing blank characters of a string
     less the number of trailing blanks.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -43,5 +45,6 @@ TRIM --- Remove trailing blank characters of a string
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`

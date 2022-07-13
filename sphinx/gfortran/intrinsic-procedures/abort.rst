@@ -20,9 +20,11 @@ ABORT --- Abort the program
     Does not return.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ ABORT --- Abort the program
       end program test_abort
 
   :samp:`{See also}:`
+
     :ref:`EXIT`, 
     :ref:`KILL`, 
     :ref:`BACKTRACE`

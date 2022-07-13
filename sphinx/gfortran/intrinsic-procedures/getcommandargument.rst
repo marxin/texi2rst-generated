@@ -44,9 +44,11 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
     zero.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -74,5 +76,6 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`GET_COMMAND`, 
     :ref:`COMMAND_ARGUMENT_COUNT`

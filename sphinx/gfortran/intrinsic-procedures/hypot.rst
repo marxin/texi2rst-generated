@@ -26,9 +26,11 @@ HYPOT --- Euclidean distance function
     The return value has the same type and kind type parameter as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

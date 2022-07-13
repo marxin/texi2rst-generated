@@ -27,9 +27,11 @@ MOVE_ALLOC --- Move allocation from one object to another
     None
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Pure subroutine
 
   :samp:`{Syntax}:`

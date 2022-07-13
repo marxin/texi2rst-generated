@@ -33,9 +33,11 @@ SIZE --- Determine the size of an array
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -53,5 +55,6 @@ SIZE --- Determine the size of an array
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`SHAPE`, 
     :ref:`RESHAPE`

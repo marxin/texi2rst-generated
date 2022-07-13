@@ -48,9 +48,11 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
     name.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`

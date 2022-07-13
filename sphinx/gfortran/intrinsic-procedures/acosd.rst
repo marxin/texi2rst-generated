@@ -25,9 +25,11 @@ ACOSD --- Arccosine function, degrees
     0 \leq \Re \acos(x) \leq 180.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,6 +48,7 @@ ACOSD --- Arccosine function, degrees
       end program test_acosd
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -54,6 +57,7 @@ ACOSD --- Arccosine function, degrees
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`COSD` 
     Radians function: 

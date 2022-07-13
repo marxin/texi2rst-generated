@@ -28,9 +28,11 @@ MAX --- Maximum value of an argument list
     and has the same type and kind as the first argument.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -40,6 +42,7 @@ MAX --- Maximum value of an argument list
       RESULT = MAX(A1, A2 [, A3 [, ...]])
 
   :samp:`{Specific names}:`
+
     =============  =================  ================  ====================
     Name           Argument           Return type       Standard
     =============  =================  ================  ====================
@@ -51,6 +54,7 @@ MAX --- Maximum value of an argument list
     =============  =================  ================  ====================
 
   :samp:`{See also}:`
+
     :ref:`MAXLOC` 
     :ref:`MAXVAL`, 
     :ref:`MIN`

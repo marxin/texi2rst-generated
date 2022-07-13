@@ -24,9 +24,11 @@ INT8 --- Convert to 64-bit integer type
     The return value is a ``INTEGER(8)`` variable.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -36,5 +38,6 @@ INT8 --- Convert to 64-bit integer type
       RESULT = INT8(A)
 
   :samp:`{See also}:`
+
     :ref:`INT`, 
     :ref:`INT2`

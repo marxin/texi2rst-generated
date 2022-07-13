@@ -23,9 +23,11 @@ ASINH --- Inverse hyperbolic sine function
     -\pi/2 \leq \Im \asinh(x) \leq \pi/2.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ ASINH --- Inverse hyperbolic sine function
       END PROGRAM
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  ==============
     Name           Argument       Return type  Standard
     =============  =============  ===========  ==============
@@ -51,5 +54,6 @@ ASINH --- Inverse hyperbolic sine function
     =============  =============  ===========  ==============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`SINH`

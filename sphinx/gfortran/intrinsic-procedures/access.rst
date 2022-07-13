@@ -35,9 +35,11 @@ ACCESS --- Checks file access modes
     has been given for ``MODE`` the value ``1`` is returned.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

@@ -20,9 +20,11 @@ TIME --- Time function
     The return value is a scalar of type ``INTEGER(4)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -32,6 +34,7 @@ TIME --- Time function
       RESULT = TIME()
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

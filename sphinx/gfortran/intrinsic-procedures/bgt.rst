@@ -25,9 +25,11 @@ BGT --- Bitwise greater than
     The return value is of type ``LOGICAL`` and of the default kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -37,6 +39,7 @@ BGT --- Bitwise greater than
       RESULT = BGT(I, J)
 
   :samp:`{See also}:`
+
     :ref:`BGE`, 
     :ref:`BLE`, 
     :ref:`BLT`

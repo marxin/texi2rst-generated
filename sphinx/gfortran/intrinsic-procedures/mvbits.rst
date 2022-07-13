@@ -36,9 +36,11 @@ MVBITS --- Move bits from one integer to another
     The type shall be ``INTEGER``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental subroutine
 
   :samp:`{Syntax}:`
@@ -48,6 +50,7 @@ MVBITS --- Move bits from one integer to another
       CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 
   :samp:`{Specific names}:`
+
     ==============  ================  ==============  ====================
     Name            Argument          Return type     Standard
     ==============  ================  ==============  ====================
@@ -59,6 +62,7 @@ MVBITS --- Move bits from one integer to another
     ==============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`IBCLR`, 
     :ref:`IBSET`, 
     :ref:`IBITS`, 

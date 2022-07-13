@@ -34,9 +34,11 @@ CSHIFT --- Circular shift elements of an array
     Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

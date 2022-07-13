@@ -22,9 +22,11 @@ GETCWD --- Get current working directory
     a system specific and nonzero error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -45,4 +47,5 @@ GETCWD --- Get current working directory
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`CHDIR`

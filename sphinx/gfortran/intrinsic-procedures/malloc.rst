@@ -28,9 +28,11 @@ MALLOC --- Allocate dynamic memory
     C pointers (``sizeof(void *)``).
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -40,6 +42,7 @@ MALLOC --- Allocate dynamic memory
       PTR = MALLOC(SIZE)
 
   :samp:`{Example}:`
+
     The following example demonstrates the use of ``MALLOC`` and
     ``FREE`` with Cray pointers.
 
@@ -64,4 +67,5 @@ MALLOC --- Allocate dynamic memory
       end program test_malloc
 
   :samp:`{See also}:`
+
     :ref:`FREE`

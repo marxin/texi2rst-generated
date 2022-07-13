@@ -31,9 +31,11 @@ ISHFT --- Shift bits
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ ISHFT --- Shift bits
       RESULT = ISHFT(I, SHIFT)
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     =============  ================  ==============  ====================
@@ -54,4 +57,5 @@ ISHFT --- Shift bits
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`ISHFTC`

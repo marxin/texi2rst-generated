@@ -28,9 +28,11 @@ C_SIZEOF --- Size in bytes of an expression
     the sizes of the data pointed to by these components.
 
   :samp:`{Standard}:`
+
     Fortran 2008
 
   :samp:`{Class}:`
+
     Inquiry function of the module ``ISO_C_BINDING``
 
   :samp:`{Syntax}:`
@@ -53,5 +55,6 @@ C_SIZEOF --- Size in bytes of an expression
     where default ``REAL`` variables are unusually padded.
 
   :samp:`{See also}:`
+
     :ref:`SIZEOF`, 
     :ref:`STORAGE_SIZE`

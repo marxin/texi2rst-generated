@@ -27,9 +27,11 @@ IACHAR --- Code in ASCII collating sequence
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 95 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,10 +50,12 @@ IACHAR --- Code in ASCII collating sequence
       end program test_iachar
 
   :samp:`{Note}:`
+
     See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
+
     :ref:`ACHAR`, 
     :ref:`CHAR`, 
     :ref:`ICHAR`

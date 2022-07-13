@@ -22,9 +22,11 @@ ERF --- Error function
     :samp:`{X}` and lies in the range -1 \leq erf (x) \leq 1 .
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ ERF --- Error function
       end program test_erf
 
   :samp:`{Specific names}:`
+
     ===========  =============  ===========  =============
     Name         Argument       Return type  Standard
     ===========  =============  ===========  =============

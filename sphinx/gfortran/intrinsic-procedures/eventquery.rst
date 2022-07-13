@@ -30,9 +30,11 @@ EVENT_QUERY --- Query whether a coarray event has occurred
     (optional) Scalar default-kind integer variable.
 
   :samp:`{Standard}:`
+
     TS 18508 or later
 
   :samp:`{Class}:`
+
     subroutine
 
   :samp:`{Syntax}:`

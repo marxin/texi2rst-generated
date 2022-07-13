@@ -22,9 +22,11 @@ RANK --- Rank of a data object
     kind. For arrays, their rank is returned; for scalars zero is returned.
 
   :samp:`{Standard}:`
+
     Technical Specification (TS) 29113
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

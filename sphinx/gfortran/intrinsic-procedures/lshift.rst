@@ -29,9 +29,11 @@ LSHIFT --- Left shift bits
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ LSHIFT --- Left shift bits
       RESULT = LSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`ISHFT`, 
     :ref:`ISHFTC`, 
     :ref:`RSHIFT`, 

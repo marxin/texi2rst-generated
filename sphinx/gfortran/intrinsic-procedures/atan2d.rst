@@ -36,9 +36,11 @@ ATAN2D --- Arctangent function, degrees
     magnitude of the result is 90.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -57,6 +59,7 @@ ATAN2D --- Arctangent function, degrees
       end program test_atan2d
 
   :samp:`{Specific names}:`
+
     =================  ================  ===========  =============
     Name               Argument          Return type  Standard
     =================  ================  ===========  =============
@@ -65,6 +68,7 @@ ATAN2D --- Arctangent function, degrees
     =================  ================  ===========  =============
 
   :samp:`{See also}:`
+
     Alias: 
     :ref:`ATAND` 
     Radians function: 

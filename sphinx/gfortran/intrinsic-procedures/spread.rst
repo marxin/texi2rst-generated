@@ -31,9 +31,11 @@ SPREAD --- Add a dimension to an array
     where n equals the rank of :samp:`{SOURCE}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -53,4 +55,5 @@ SPREAD --- Add a dimension to an array
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`UNPACK`

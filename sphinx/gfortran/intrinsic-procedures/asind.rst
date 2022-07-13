@@ -25,9 +25,11 @@ ASIND --- Arcsine function, degrees
     -90 \leq \Re \asin(x) \leq 90.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,6 +48,7 @@ ASIND --- Arcsine function, degrees
       end program test_asind
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -54,6 +57,7 @@ ASIND --- Arcsine function, degrees
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`SIND` 
     Radians function: 

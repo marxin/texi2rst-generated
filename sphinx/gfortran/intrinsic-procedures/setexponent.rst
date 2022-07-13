@@ -28,9 +28,11 @@ SET_EXPONENT --- Set the exponent of the model
     it is ``FRACTION(X) * RADIX(X)**I``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

@@ -24,9 +24,11 @@ ASIN --- Arcsine function
     -\pi/2 \leq \Re \asin(x) \leq \pi/2.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ ASIN --- Arcsine function
       end program test_asin
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -53,6 +56,7 @@ ASIN --- Arcsine function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`SIN` 
     Degrees function: 

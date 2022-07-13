@@ -22,9 +22,11 @@ SELECTED_CHAR_KIND --- Choose character kind
     Shall be a scalar and of the default character type.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

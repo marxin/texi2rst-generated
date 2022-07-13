@@ -22,9 +22,11 @@ ISATTY --- Whether a unit is a terminal device.
     device, ``.FALSE.`` otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -45,4 +47,5 @@ ISATTY --- Whether a unit is a terminal device.
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`TTYNAM`

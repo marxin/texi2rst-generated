@@ -32,9 +32,11 @@ SIZEOF --- Size in bytes of an expression
     storage or an array element multiplied by the size of the array.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -56,5 +58,6 @@ SIZEOF --- Size in bytes of an expression
     where default ``REAL`` variables are unusually padded.
 
   :samp:`{See also}:`
+
     :ref:`C_SIZEOF`, 
     :ref:`STORAGE_SIZE`

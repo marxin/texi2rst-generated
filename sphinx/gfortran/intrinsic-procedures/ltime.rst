@@ -28,9 +28,11 @@ LTIME --- Convert time to local time info
     The elements of :samp:`{VALUES}` are assigned as follows:
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -40,6 +42,7 @@ LTIME --- Convert time to local time info
       CALL LTIME(TIME, VALUES)
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

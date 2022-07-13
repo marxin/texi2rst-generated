@@ -21,10 +21,12 @@ SINH --- Hyperbolic sine function
     The return value has same type and kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, for a complex argument Fortran 2008 or later, has
     a GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ SINH --- Hyperbolic sine function
       end program test_sinh
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -50,4 +53,5 @@ SINH --- Hyperbolic sine function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`ASINH`

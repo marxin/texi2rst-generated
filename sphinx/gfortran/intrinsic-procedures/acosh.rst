@@ -23,9 +23,11 @@ ACOSH --- Inverse hyperbolic cosine function
     0 \leq \Im \acosh(x) \leq \pi.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ ACOSH --- Inverse hyperbolic cosine function
       END PROGRAM
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -51,5 +54,6 @@ ACOSH --- Inverse hyperbolic cosine function
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`COSH`

@@ -32,12 +32,15 @@ KILL --- Send a signal to a process
     Returns 0 on success; otherwise a system-specific error code is returned.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -48,5 +51,6 @@ KILL --- Send a signal to a process
       STATUS = KILL(PID, SIG)
 
   :samp:`{See also}:`
+
     :ref:`ABORT`, 
     :ref:`EXIT`

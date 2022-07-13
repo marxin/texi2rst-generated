@@ -28,9 +28,11 @@ MASKR --- Right justified mask
     default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -40,4 +42,5 @@ MASKR --- Right justified mask
       RESULT = MASKR(I[, KIND])
 
   :samp:`{See also}:`
+
     :ref:`MASKL`

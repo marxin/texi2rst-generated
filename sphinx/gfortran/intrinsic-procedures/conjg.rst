@@ -22,9 +22,11 @@ CONJG --- Complex conjugate function
     The return value is of type ``COMPLEX``.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has an overload that is a GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -47,6 +49,7 @@ CONJG --- Complex conjugate function
       end program test_conjg
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
     =============  ================  ==============  =============

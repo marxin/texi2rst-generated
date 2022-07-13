@@ -32,9 +32,11 @@ ATOMIC_XOR --- Atomic bitwise OR operation
     (optional) Scalar default-kind integer variable.
 
   :samp:`{Standard}:`
+
     TS 18508 or later
 
   :samp:`{Class}:`
+
     Atomic subroutine
 
   :samp:`{Syntax}:`
@@ -54,6 +56,7 @@ ATOMIC_XOR --- Atomic bitwise OR operation
       end program atomic
 
   :samp:`{See also}:`
+
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_FETCH_XOR`, 
     :ref:`ISO_FORTRAN_ENV`, 

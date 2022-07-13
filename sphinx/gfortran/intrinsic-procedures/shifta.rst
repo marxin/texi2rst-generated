@@ -31,9 +31,11 @@ SHIFTA --- Right shift with fill
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,5 +45,6 @@ SHIFTA --- Right shift with fill
       RESULT = SHIFTA(I, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`SHIFTL`, 
     :ref:`SHIFTR`

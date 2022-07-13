@@ -30,9 +30,11 @@ SYMLNK --- Create a symbolic link
     (Optional) Shall be of default ``INTEGER`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -43,5 +45,6 @@ SYMLNK --- Create a symbolic link
       STATUS = SYMLNK(PATH1, PATH2)
 
   :samp:`{See also}:`
+
     :ref:`LINK`, 
     :ref:`UNLINK`

@@ -21,9 +21,11 @@ DREAL --- Double real part function
     The return value is of type ``REAL(8)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -42,4 +44,5 @@ DREAL --- Double real part function
       end program test_dreal
 
   :samp:`{See also}:`
+
     :ref:`AIMAG`

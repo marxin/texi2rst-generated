@@ -26,9 +26,11 @@ SIGN --- Sign copying function
     it is ``-ABS(A)``.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,6 +54,7 @@ SIGN --- Sign copying function
       end program test_sign
 
   :samp:`{Specific names}:`
+
     ==============  ===================  ==============  ====================
     Name            Arguments            Return type     Standard
     ==============  ===================  ==============  ====================

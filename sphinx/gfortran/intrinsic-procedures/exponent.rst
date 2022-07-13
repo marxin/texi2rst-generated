@@ -22,9 +22,11 @@ EXPONENT --- Exponent function
     The return value is of type default ``INTEGER``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

@@ -31,9 +31,11 @@ ANY --- Any value in MASK along DIM is true
     the shape of :samp:`{MASK}` where the :samp:`{DIM}` dimension is elided. 
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

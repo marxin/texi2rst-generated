@@ -36,9 +36,11 @@ ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
     (optional) Scalar default-kind integer variable.
 
   :samp:`{Standard}:`
+
     TS 18508 or later
 
   :samp:`{Class}:`
+
     Atomic subroutine
 
   :samp:`{Syntax}:`
@@ -58,6 +60,7 @@ ATOMIC_FETCH_OR --- Atomic bitwise OR operation with prior fetch
       end program atomic
 
   :samp:`{See also}:`
+
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_OR`, 
     :ref:`ISO_FORTRAN_ENV`, 

@@ -33,9 +33,11 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
     (optional) Scalar default-kind integer variable.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later; with :samp:`{STAT}`, TS 18508 or later
 
   :samp:`{Class}:`
+
     Atomic subroutine
 
   :samp:`{Syntax}:`
@@ -61,6 +63,7 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
       end program atomic
 
   :samp:`{See also}:`
+
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_CAS`, 
     :ref:`ISO_FORTRAN_ENV`, 

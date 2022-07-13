@@ -19,9 +19,11 @@ IARGC --- Get the number of command line arguments
     The number of command line arguments, type ``INTEGER(4)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -31,12 +33,15 @@ IARGC --- Get the number of command line arguments
       RESULT = IARGC()
 
   :samp:`{Arguments}:`
+
     None
 
   :samp:`{Example}:`
+
     See :ref:`GETARG`
 
   :samp:`{See also}:`
+
     GNU Fortran 77 compatibility subroutine: 
     :ref:`GETARG` 
     Fortran 2003 functions and subroutines: 

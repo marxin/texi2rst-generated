@@ -26,9 +26,11 @@ IS_IOSTAT_EOR --- Test for end-of-record value
     ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

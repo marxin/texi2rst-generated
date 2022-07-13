@@ -28,9 +28,11 @@ STAT --- Get file status
     on success and a system specific error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -68,6 +70,7 @@ STAT --- Get file status
       END PROGRAM
 
   :samp:`{See also}:`
+
     To stat an open file: 
     :ref:`FSTAT` 
     To stat a link: 

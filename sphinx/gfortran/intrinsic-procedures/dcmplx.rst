@@ -29,9 +29,11 @@ DCMPLX --- Double complex conversion function
     The return value is of type ``COMPLEX(8)``
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

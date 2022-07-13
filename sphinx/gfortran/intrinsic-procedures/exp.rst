@@ -22,9 +22,11 @@ EXP --- Exponential function
     The return value has same type and kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ EXP --- Exponential function
       end program test_exp
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ====================

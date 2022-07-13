@@ -28,9 +28,11 @@ MASKL --- Left justified mask
     default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -40,4 +42,5 @@ MASKL --- Left justified mask
       RESULT = MASKL(I[, KIND])
 
   :samp:`{See also}:`
+
     :ref:`MASKR`

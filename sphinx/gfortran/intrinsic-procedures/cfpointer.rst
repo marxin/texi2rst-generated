@@ -30,9 +30,11 @@ C_F_POINTER --- Convert C into Fortran pointer
     must be equal to the rank of :samp:`{fptr}`.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -61,5 +63,6 @@ C_F_POINTER --- Convert C into Fortran pointer
       end program main
 
   :samp:`{See also}:`
+
     :ref:`C_LOC`, 
     :ref:`C_F_PROCPOINTER`

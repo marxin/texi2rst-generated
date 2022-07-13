@@ -22,9 +22,11 @@ SPACING --- Smallest distance between two numbers of a given type
     The result is of the same type as the input argument :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,4 +48,5 @@ SPACING --- Smallest distance between two numbers of a given type
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`RRSPACING`

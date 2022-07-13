@@ -24,9 +24,11 @@ COSH --- Hyperbolic cosine function
     \cosh (x) \geq 1.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ COSH --- Hyperbolic cosine function
       end program test_cosh
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -53,5 +56,6 @@ COSH --- Hyperbolic cosine function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ACOSH`

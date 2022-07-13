@@ -30,9 +30,11 @@ UNPACK --- Unpack an array of rank one into an array
     of :samp:`{MASK}` replaced by values from :samp:`{VECTOR}` in array element order.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -55,5 +57,6 @@ UNPACK --- Unpack an array of rank one into an array
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`PACK`, 
     :ref:`SPREAD`

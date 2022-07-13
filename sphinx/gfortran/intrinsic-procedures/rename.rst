@@ -29,9 +29,11 @@ RENAME --- Rename a file
     (Optional) Shall be of default ``INTEGER`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -42,4 +44,5 @@ RENAME --- Rename a file
       STATUS = RENAME(PATH1, PATH2)
 
   :samp:`{See also}:`
+
     :ref:`LINK`

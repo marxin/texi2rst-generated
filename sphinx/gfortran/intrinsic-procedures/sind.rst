@@ -22,9 +22,11 @@ SIND --- Sine function, degrees
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ SIND --- Sine function, degrees
       end program test_sind
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
     =============  ================  ==============  =============
@@ -54,6 +57,7 @@ SIND --- Sine function, degrees
     =============  ================  ==============  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ASIND` 
     Radians function: 

@@ -24,9 +24,11 @@ COS --- Cosine function
     the return value lies in the range -1 \leq \cos (x) \leq 1.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ COS --- Cosine function
       end program test_cos
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ====================
@@ -56,6 +59,7 @@ COS --- Cosine function
     ============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ACOS` 
     Degrees function: 

@@ -27,9 +27,11 @@ PARITY --- Reduction with exclusive OR
     The result is of the same type as :samp:`{MASK}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

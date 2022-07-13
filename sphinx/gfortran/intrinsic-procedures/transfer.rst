@@ -36,9 +36,11 @@ TRANSFER --- Transfer bit patterns
     and :samp:`{MOLD}` is a scalar, the result is a scalar.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

@@ -33,9 +33,11 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
     ``RANDOM_INIT``.
 
   :samp:`{Standard}:`
+
     Fortran 2018
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -60,5 +62,6 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
       end program test_random_seed
 
   :samp:`{See also}:`
+
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_SEED`

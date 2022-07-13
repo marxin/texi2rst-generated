@@ -25,9 +25,11 @@ IDATE --- Get current local time subroutine (day/month/year)
     Does not return anything.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -49,4 +51,5 @@ IDATE --- Get current local time subroutine (day/month/year)
       end program test_idate
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`

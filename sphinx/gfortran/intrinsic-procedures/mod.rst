@@ -30,9 +30,11 @@ MOD --- Remainder function
     arguments.)
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -63,6 +65,7 @@ MOD --- Remainder function
       end program test_mod
 
   :samp:`{Specific names}:`
+
     =============  ==================  ==============  ====================
     Name           Arguments           Return type     Standard
     =============  ==================  ==============  ====================
@@ -76,4 +79,5 @@ MOD --- Remainder function
     =============  ==================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`MODULO`

@@ -24,9 +24,11 @@ CHDIR --- Change working directory
     otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -50,4 +52,5 @@ CHDIR --- Change working directory
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`GETCWD`

@@ -25,9 +25,11 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
     kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,6 +48,7 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
       end program test_besj1
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============

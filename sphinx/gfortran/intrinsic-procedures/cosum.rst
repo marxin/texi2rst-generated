@@ -37,9 +37,11 @@ CO_SUM --- Sum of values on the current set of images
     (optional) a scalar character variable
 
   :samp:`{Standard}:`
+
     Technical Specification (TS) 18508 or later
 
   :samp:`{Class}:`
+
     Collective subroutine
 
   :samp:`{Syntax}:`
@@ -63,6 +65,7 @@ CO_SUM --- Sum of values on the current set of images
       end program test
 
   :samp:`{See also}:`
+
     :ref:`CO_MAX`, 
     :ref:`CO_MIN`, 
     :ref:`CO_REDUCE`, 

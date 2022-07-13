@@ -22,9 +22,11 @@ TTYNAM --- Get the name of a terminal device.
     Shall be of type ``CHARACTER``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -46,4 +48,5 @@ TTYNAM --- Get the name of a terminal device.
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`ISATTY`

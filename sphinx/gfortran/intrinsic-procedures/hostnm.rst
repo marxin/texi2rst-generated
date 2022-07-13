@@ -26,9 +26,11 @@ HOSTNM --- Get system host name
     be obtained, or to a blank string otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`

@@ -21,9 +21,11 @@ MCLOCK --- Time function
     the system does not support ``clock(3)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -33,6 +35,7 @@ MCLOCK --- Time function
       RESULT = MCLOCK()
 
   :samp:`{See also}:`
+
     :ref:`CTIME`, 
     :ref:`GMTIME`, 
     :ref:`LTIME`, 

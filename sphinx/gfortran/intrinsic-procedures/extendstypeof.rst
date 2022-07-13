@@ -27,9 +27,11 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
     the dynamic type of A is an extension type of the dynamic type of MOLD.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -39,4 +41,5 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
       RESULT = EXTENDS_TYPE_OF(A, MOLD)
 
   :samp:`{See also}:`
+
     :ref:`SAME_TYPE_AS`

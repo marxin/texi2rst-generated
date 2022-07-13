@@ -35,9 +35,11 @@ CHMOD --- Change access permissions of files
     otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -48,6 +50,7 @@ CHMOD --- Change access permissions of files
       STATUS = CHMOD(NAME, MODE)
 
   :samp:`{Example}:`
+
     ``CHMOD`` as subroutine
 
     .. code-block:: fortran

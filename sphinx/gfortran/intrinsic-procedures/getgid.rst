@@ -19,9 +19,11 @@ GETGID --- Group ID function
     kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -31,8 +33,10 @@ GETGID --- Group ID function
       RESULT = GETGID()
 
   :samp:`{Example}:`
+
     See ``GETPID`` for an example.
 
   :samp:`{See also}:`
+
     :ref:`GETPID`, 
     :ref:`GETUID`

@@ -25,9 +25,11 @@ SCALE --- Scale a real value
     Its value is ``X * RADIX(X)**I``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

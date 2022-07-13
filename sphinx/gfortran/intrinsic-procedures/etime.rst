@@ -27,9 +27,11 @@ ETIME --- Execution time subroutine (or function)
     Elapsed time in seconds since the start of program execution.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -61,4 +63,5 @@ ETIME --- Execution time subroutine (or function)
       end program test_etime
 
   :samp:`{See also}:`
+
     :ref:`CPU_TIME`

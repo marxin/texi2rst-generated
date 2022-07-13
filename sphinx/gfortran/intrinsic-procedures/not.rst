@@ -22,9 +22,11 @@ NOT --- Logical negation
     argument.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -34,6 +36,7 @@ NOT --- Logical negation
       RESULT = NOT(I)
 
   :samp:`{Specific names}:`
+
     ===========  ================  ==============  ====================
     Name         Argument          Return type     Standard
     ===========  ================  ==============  ====================
@@ -45,6 +48,7 @@ NOT --- Logical negation
     ===========  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`IAND`, 
     :ref:`IEOR`, 
     :ref:`IOR`, 

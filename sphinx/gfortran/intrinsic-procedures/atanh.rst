@@ -23,9 +23,11 @@ ATANH --- Inverse hyperbolic tangent function
     -\pi/2 \leq \Im \atanh(x) \leq \pi/2.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ ATANH --- Inverse hyperbolic tangent function
       END PROGRAM
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -51,5 +54,6 @@ ATANH --- Inverse hyperbolic tangent function
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`TANH`

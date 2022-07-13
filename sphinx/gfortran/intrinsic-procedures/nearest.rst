@@ -30,9 +30,11 @@ NEAREST --- Nearest representable number
     ``X`` and nearest to it.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

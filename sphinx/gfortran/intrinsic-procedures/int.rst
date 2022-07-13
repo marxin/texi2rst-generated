@@ -27,9 +27,11 @@ INT --- Convert to integer type
     the following rules: 
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, with boz-literal-constant Fortran 2008 and later.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -50,6 +52,7 @@ INT --- Convert to integer type
       end program
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================

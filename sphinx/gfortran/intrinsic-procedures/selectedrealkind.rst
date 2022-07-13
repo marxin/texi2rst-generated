@@ -35,9 +35,11 @@ SELECTED_REAL_KIND --- Choose real kind
     is returned. If no real data type matches the criteria, the result is
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with ``RADIX`` Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -64,6 +66,7 @@ SELECTED_REAL_KIND --- Choose real kind
       end program real_kinds
 
   :samp:`{See also}:`
+
     :ref:`PRECISION`, 
     :ref:`RANGE`, 
     :ref:`RADIX`

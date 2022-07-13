@@ -26,9 +26,11 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
     to the cosubscripts. For invalid cosubscripts the result is zero.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Inquiry function.
 
   :samp:`{Syntax}:`
@@ -46,5 +48,6 @@ IMAGE_INDEX --- Function that converts a cosubscript to an image index
       WRITE (*,*) IMAGE_INDEX (array, [2,0,3,1])
 
   :samp:`{See also}:`
+
     :ref:`THIS_IMAGE`, 
     :ref:`NUM_IMAGES`

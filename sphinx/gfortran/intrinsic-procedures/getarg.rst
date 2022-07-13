@@ -32,9 +32,11 @@ GETARG --- Get command line arguments
     to the name of the program (on systems that support this feature).
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -58,6 +60,7 @@ GETARG --- Get command line arguments
       END PROGRAM
 
   :samp:`{See also}:`
+
     GNU Fortran 77 compatibility function: 
     :ref:`IARGC` 
     Fortran 2003 functions and subroutines: 

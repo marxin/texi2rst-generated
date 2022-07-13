@@ -23,9 +23,11 @@ ISNAN --- Test for a NaN
     if :samp:`{X}` is a NaN and ``FALSE`` otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

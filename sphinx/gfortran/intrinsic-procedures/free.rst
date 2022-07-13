@@ -26,9 +26,11 @@ FREE --- Frees memory
     None
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -38,7 +40,9 @@ FREE --- Frees memory
       CALL FREE(PTR)
 
   :samp:`{Example}:`
+
     See ``MALLOC`` for an example.
 
   :samp:`{See also}:`
+
     :ref:`MALLOC`

@@ -33,9 +33,11 @@ SYSTEM_CLOCK --- Time function
     ``INTEGER`` with ``INTENT(OUT)``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -55,5 +57,6 @@ SYSTEM_CLOCK --- Time function
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CPU_TIME`

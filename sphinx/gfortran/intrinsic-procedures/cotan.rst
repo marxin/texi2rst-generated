@@ -22,9 +22,11 @@ COTAN --- Cotangent function
     The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ COTAN --- Cotangent function
       end program test_cotan
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -51,6 +54,7 @@ COTAN --- Cotangent function
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Converse function: 
     :ref:`TAN` 
     Degrees function: 

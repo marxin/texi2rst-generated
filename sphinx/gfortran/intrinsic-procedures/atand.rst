@@ -30,9 +30,11 @@ ATAND --- Arctangent function, degrees
     -90 \leq \Re \atand(x) \leq 90.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,6 +54,7 @@ ATAND --- Arctangent function, degrees
       end program test_atand
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -60,6 +63,7 @@ ATAND --- Arctangent function, degrees
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`TAND` 
     Radians function: 

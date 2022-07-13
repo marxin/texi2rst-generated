@@ -30,9 +30,11 @@ MERGE --- Merge variables
     The result is of the same type and type parameters as :samp:`{TSOURCE}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

@@ -25,9 +25,11 @@ AIMAG --- Imaginary part of complex number
     kind type parameter of the argument.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,6 +51,7 @@ AIMAG --- Imaginary part of complex number
       end program test_aimag
 
   :samp:`{Specific names}:`
+
     ===============  ================  ===========  ====================
     Name             Argument          Return type  Standard
     ===============  ================  ===========  ====================

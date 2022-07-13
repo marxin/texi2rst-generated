@@ -22,9 +22,11 @@ NULL --- Function that returns an disassociated pointer
     A disassociated pointer.
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -40,4 +42,5 @@ NULL --- Function that returns an disassociated pointer
       REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 
   :samp:`{See also}:`
+
     :ref:`ASSOCIATED`

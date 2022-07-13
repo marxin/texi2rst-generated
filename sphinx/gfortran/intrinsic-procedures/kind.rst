@@ -24,9 +24,11 @@ KIND --- Kind of an entity
     integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

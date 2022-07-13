@@ -22,9 +22,11 @@ SIN --- Sine function
     The return value has same type and kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ SIN --- Sine function
       end program test_sin
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ====================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ====================
@@ -54,6 +57,7 @@ SIN --- Sine function
     ============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ASIN` 
     Degrees function: 

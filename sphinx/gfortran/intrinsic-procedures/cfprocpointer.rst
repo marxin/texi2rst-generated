@@ -24,9 +24,11 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
     ``INTENT(OUT)``.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -62,5 +64,6 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
       end program main
 
   :samp:`{See also}:`
+
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`

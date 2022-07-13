@@ -34,9 +34,11 @@ SIGNAL --- Signal handling subroutine (or function)
     The ``SIGNAL`` function returns the value returned by ``signal(2)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`

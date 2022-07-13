@@ -22,9 +22,11 @@ LOG10 --- Base 10 logarithm function
     The kind type parameter is the same as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ LOG10 --- Base 10 logarithm function
       end program test_log10
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  ====================
     Name           Argument       Return type  Standard
     =============  =============  ===========  ====================

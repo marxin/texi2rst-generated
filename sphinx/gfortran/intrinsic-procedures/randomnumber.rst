@@ -19,9 +19,11 @@ RANDOM_NUMBER --- Pseudo-random number
     Shall be a scalar or an array of type ``REAL``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -40,5 +42,6 @@ RANDOM_NUMBER --- Pseudo-random number
       end program
 
   :samp:`{See also}:`
+
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_INIT`

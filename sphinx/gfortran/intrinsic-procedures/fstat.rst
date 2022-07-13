@@ -26,9 +26,11 @@ FSTAT --- Get file status
     on success and a system specific error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -39,9 +41,11 @@ FSTAT --- Get file status
       STATUS = FSTAT(UNIT, VALUES)
 
   :samp:`{Example}:`
+
     See :ref:`STAT` for an example.
 
   :samp:`{See also}:`
+
     To stat a link: 
     :ref:`LSTAT` 
     To stat a file: 

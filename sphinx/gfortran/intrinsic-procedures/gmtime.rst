@@ -29,9 +29,11 @@ GMTIME --- Convert time to GMT info
     The elements of :samp:`{VALUES}` are assigned as follows:
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ GMTIME --- Convert time to GMT info
       CALL GMTIME(TIME, VALUES)
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`LTIME`, 

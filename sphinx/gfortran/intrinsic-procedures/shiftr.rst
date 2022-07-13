@@ -29,9 +29,11 @@ SHIFTR --- Right shift
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,5 +43,6 @@ SHIFTR --- Right shift
       RESULT = SHIFTR(I, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`SHIFTA`, 
     :ref:`SHIFTL`

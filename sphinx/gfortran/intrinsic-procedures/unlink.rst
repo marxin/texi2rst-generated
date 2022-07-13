@@ -25,9 +25,11 @@ UNLINK --- Remove a file from the file system
     (Optional) Shall be of default ``INTEGER`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -38,5 +40,6 @@ UNLINK --- Remove a file from the file system
       STATUS = UNLINK(PATH)
 
   :samp:`{See also}:`
+
     :ref:`LINK`, 
     :ref:`SYMLNK`

@@ -24,9 +24,11 @@ FRACTION --- Fractional part of the model representation
     it is ``X * RADIX(X)**(-EXPONENT(X))``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

@@ -23,9 +23,11 @@ LOC --- Returns the address of a variable
     machine.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

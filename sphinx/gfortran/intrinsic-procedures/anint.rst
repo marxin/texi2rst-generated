@@ -29,9 +29,11 @@ ANINT --- Nearest whole number
     less than or equal to zero then it returns ``AINT(X-0.5)``.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,6 +56,7 @@ ANINT --- Nearest whole number
       end program test_anint
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================

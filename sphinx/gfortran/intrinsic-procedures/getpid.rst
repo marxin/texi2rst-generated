@@ -19,9 +19,11 @@ GETPID --- Process ID function
     kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -41,5 +43,6 @@ GETPID --- Process ID function
       end program info
 
   :samp:`{See also}:`
+
     :ref:`GETGID`, 
     :ref:`GETUID`

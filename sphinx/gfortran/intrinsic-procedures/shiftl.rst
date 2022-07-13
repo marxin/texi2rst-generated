@@ -29,9 +29,11 @@ SHIFTL --- Left shift
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,5 +43,6 @@ SHIFTL --- Left shift
       RESULT = SHIFTL(I, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`SHIFTA`, 
     :ref:`SHIFTR`

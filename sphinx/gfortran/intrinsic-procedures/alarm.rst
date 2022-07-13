@@ -34,9 +34,11 @@ ALARM --- Execute a routine after a given delay
     variable of the default ``INTEGER`` kind. It is ``INTENT(OUT)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`

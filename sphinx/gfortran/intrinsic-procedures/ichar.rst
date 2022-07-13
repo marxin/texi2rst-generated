@@ -29,9 +29,11 @@ ICHAR --- Character-to-integer conversion function
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -50,6 +52,7 @@ ICHAR --- Character-to-integer conversion function
       end program test_ichar
 
   :samp:`{Specific names}:`
+
     ============  ===============  ==============  ====================
     Name          Argument         Return type     Standard
     ============  ===============  ==============  ====================
@@ -57,6 +60,7 @@ ICHAR --- Character-to-integer conversion function
     ============  ===============  ==============  ====================
 
   :samp:`{Note}:`
+
     No intrinsic exists to convert between a numeric value and a formatted
     character string representation -- for instance, given the
     ``CHARACTER`` value ``'154'``, obtaining an ``INTEGER`` or
@@ -81,6 +85,7 @@ ICHAR --- Character-to-integer conversion function
       end program read_val
 
   :samp:`{See also}:`
+
     :ref:`ACHAR`, 
     :ref:`CHAR`, 
     :ref:`IACHAR`

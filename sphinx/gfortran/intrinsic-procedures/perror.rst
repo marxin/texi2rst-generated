@@ -21,9 +21,11 @@ PERROR --- Print system error message
     default kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -33,4 +35,5 @@ PERROR --- Print system error message
       CALL PERROR(STRING)
 
   :samp:`{See also}:`
+
     :ref:`IERRNO`

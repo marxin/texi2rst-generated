@@ -25,9 +25,11 @@ FTELL --- Current stream position
     number :samp:`{UNIT}`, or to -1 if the unit is not currently open.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -49,4 +51,5 @@ FTELL --- Current stream position
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FSEEK`

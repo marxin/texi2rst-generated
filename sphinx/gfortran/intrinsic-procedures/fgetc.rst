@@ -29,9 +29,11 @@ FGETC --- Read a single character in stream mode
     error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -59,6 +61,7 @@ FGETC --- Read a single character in stream mode
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FGET`, 
     :ref:`FPUT`, 
     :ref:`FPUTC`

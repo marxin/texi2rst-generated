@@ -23,9 +23,11 @@ CPU_TIME --- CPU elapsed time in seconds
     None
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -47,5 +49,6 @@ CPU_TIME --- CPU elapsed time in seconds
       end program test_cpu_time
 
   :samp:`{See also}:`
+
     :ref:`SYSTEM_CLOCK`, 
     :ref:`DATE_AND_TIME`

@@ -32,9 +32,11 @@ SUM --- Sum of array elements
     The result is of the same type as :samp:`{ARRAY}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -55,4 +57,5 @@ SUM --- Sum of array elements
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`PRODUCT`

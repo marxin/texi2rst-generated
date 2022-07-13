@@ -29,9 +29,11 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
     There are several cases:
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -54,4 +56,5 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
       end program test_associated
 
   :samp:`{See also}:`
+
     :ref:`NULL`

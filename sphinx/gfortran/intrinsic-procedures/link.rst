@@ -29,9 +29,11 @@ LINK --- Create a hard link
     (Optional) Shall be of default ``INTEGER`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -42,5 +44,6 @@ LINK --- Create a hard link
       STATUS = LINK(PATH1, PATH2)
 
   :samp:`{See also}:`
+
     :ref:`SYMLNK`, 
     :ref:`UNLINK`

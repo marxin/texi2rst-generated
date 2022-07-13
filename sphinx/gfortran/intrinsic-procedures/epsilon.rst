@@ -22,9 +22,11 @@ EPSILON --- Epsilon function
     The return value is of same type as the argument.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

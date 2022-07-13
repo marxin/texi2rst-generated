@@ -21,9 +21,11 @@ STORAGE_SIZE --- Storage size in bits
     (Optional) shall be a scalar integer constant expression.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -33,11 +35,13 @@ STORAGE_SIZE --- Storage size in bits
       RESULT = STORAGE_SIZE(A [, KIND])
 
   :samp:`{Return Value}:`
+
     The result is a scalar integer with the kind type parameter specified by KIND
     (or default integer type if KIND is missing). The result value is the size
     expressed in bits for an element of an array that has the dynamic type and type
     parameters of A.
 
   :samp:`{See also}:`
+
     :ref:`C_SIZEOF`, 
     :ref:`SIZEOF`

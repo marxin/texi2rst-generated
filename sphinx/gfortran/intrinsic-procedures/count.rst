@@ -36,9 +36,11 @@ COUNT --- Count function
     of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

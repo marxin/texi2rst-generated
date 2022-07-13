@@ -27,9 +27,11 @@ MODULO --- Modulo function
     extension, kind is the largest kind of the actual arguments.)
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,4 +56,5 @@ MODULO --- Modulo function
       end program
 
   :samp:`{See also}:`
+
     :ref:`MOD`

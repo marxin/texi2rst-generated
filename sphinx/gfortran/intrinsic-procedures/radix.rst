@@ -22,9 +22,11 @@ RADIX --- Base of a model number
     integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -43,4 +45,5 @@ RADIX --- Base of a model number
       end program test_radix
 
   :samp:`{See also}:`
+
     :ref:`SELECTED_REAL_KIND`

@@ -25,9 +25,11 @@ SYSTEM --- Execute a shell command
     (Optional) Shall be of default ``INTEGER`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -38,5 +40,6 @@ SYSTEM --- Execute a shell command
       STATUS = SYSTEM(COMMAND)
 
   :samp:`{See also}:`
+
     :ref:`EXECUTE_COMMAND_LINE`, which is part of the Fortran 2008 standard
     and should considered in new code for future portability.

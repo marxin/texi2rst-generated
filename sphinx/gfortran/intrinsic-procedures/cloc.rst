@@ -22,9 +22,11 @@ C_LOC --- Obtain the C address of an object
     of the argument.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -47,6 +49,7 @@ C_LOC --- Obtain the C address of an object
       end subroutine association_test
 
   :samp:`{See also}:`
+
     :ref:`C_ASSOCIATED`, 
     :ref:`C_FUNLOC`, 
     :ref:`C_F_POINTER`, 

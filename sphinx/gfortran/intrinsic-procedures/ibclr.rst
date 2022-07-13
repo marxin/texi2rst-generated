@@ -26,9 +26,11 @@ IBCLR --- Clear bit
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -38,6 +40,7 @@ IBCLR --- Clear bit
       RESULT = IBCLR(I, POS)
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     =============  ================  ==============  ====================
@@ -49,6 +52,7 @@ IBCLR --- Clear bit
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`IBITS`, 
     :ref:`IBSET`, 
     :ref:`IAND`, 

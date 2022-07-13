@@ -26,9 +26,11 @@ FLOOR --- Integer floor function
     and of default-kind ``INTEGER`` otherwise.
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,5 +51,6 @@ FLOOR --- Integer floor function
       end program test_floor
 
   :samp:`{See also}:`
+
     :ref:`CEILING`, 
     :ref:`NINT`

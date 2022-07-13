@@ -26,9 +26,11 @@ FPUT --- Write a single character in stream mode to stdout
     error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ FPUT --- Write a single character in stream mode to stdout
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FPUTC`, 
     :ref:`FGET`, 
     :ref:`FGETC`

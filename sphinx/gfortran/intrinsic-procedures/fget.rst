@@ -26,9 +26,11 @@ FGET --- Read a single character in stream mode from stdin
     error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -57,6 +59,7 @@ FGET --- Read a single character in stream mode from stdin
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FGETC`, 
     :ref:`FPUT`, 
     :ref:`FPUTC`

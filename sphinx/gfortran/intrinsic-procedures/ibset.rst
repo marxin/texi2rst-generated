@@ -26,9 +26,11 @@ IBSET --- Set bit
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -38,6 +40,7 @@ IBSET --- Set bit
       RESULT = IBSET(I, POS)
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     =============  ================  ==============  ====================
@@ -49,6 +52,7 @@ IBSET --- Set bit
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`IBCLR`, 
     :ref:`IBITS`, 
     :ref:`IAND`, 

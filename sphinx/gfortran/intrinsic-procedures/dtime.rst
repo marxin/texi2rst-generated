@@ -29,9 +29,11 @@ DTIME --- Execution time subroutine (or function)
     execution if not called before.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -63,4 +65,5 @@ DTIME --- Execution time subroutine (or function)
       end program test_dtime
 
   :samp:`{See also}:`
+
     :ref:`CPU_TIME`

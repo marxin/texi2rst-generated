@@ -25,9 +25,11 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
     Does not return anything.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -49,4 +51,5 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
       end program test_itime
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`

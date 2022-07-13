@@ -31,9 +31,11 @@ AINT --- Truncate to a whole number
     as the sign of :samp:`{X}`. 
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -56,6 +58,7 @@ AINT --- Truncate to a whole number
       end program test_aint
 
   :samp:`{Specific names}:`
+
     ===========  =============  ===========  ====================
     Name         Argument       Return type  Standard
     ===========  =============  ===========  ====================

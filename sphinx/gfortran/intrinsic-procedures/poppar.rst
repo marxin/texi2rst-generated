@@ -25,9 +25,11 @@ POPPAR --- Parity of the number of bits set
     kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -47,6 +49,7 @@ POPPAR --- Parity of the number of bits set
       end program test_population
 
   :samp:`{See also}:`
+
     :ref:`POPCNT`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`

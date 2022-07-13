@@ -26,9 +26,11 @@ CEILING --- Integer ceiling function
     and a default-kind ``INTEGER`` otherwise.
 
   :samp:`{Standard}:`
+
     Fortran 95 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,5 +51,6 @@ CEILING --- Integer ceiling function
       end program test_ceiling
 
   :samp:`{See also}:`
+
     :ref:`FLOOR`, 
     :ref:`NINT`

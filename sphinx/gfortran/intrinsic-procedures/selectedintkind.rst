@@ -21,9 +21,11 @@ SELECTED_INT_KIND --- Choose integer kind
     Shall be a scalar and of type ``INTEGER``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

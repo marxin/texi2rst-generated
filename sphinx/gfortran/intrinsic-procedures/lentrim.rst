@@ -27,9 +27,11 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -39,6 +41,7 @@ LEN_TRIM --- Length of a character entity without trailing blank characters
       RESULT = LEN_TRIM(STRING [, KIND])
 
   :samp:`{See also}:`
+
     :ref:`LEN`, 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`

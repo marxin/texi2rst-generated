@@ -24,9 +24,11 @@ COSD --- Cosine function, degrees
     the return value lies in the range -1 \leq \cosd (x) \leq 1.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ COSD --- Cosine function, degrees
       end program test_cosd
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  =============
     Name           Argument          Return type     Standard
     =============  ================  ==============  =============
@@ -56,6 +59,7 @@ COSD --- Cosine function, degrees
     =============  ================  ==============  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ACOSD` 
     Radians function: 

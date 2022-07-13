@@ -24,9 +24,11 @@ PRESENT --- Determine whether an optional dummy argument is specified
     ``FALSE`` otherwise.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

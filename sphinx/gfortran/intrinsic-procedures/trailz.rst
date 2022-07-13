@@ -22,9 +22,11 @@ TRAILZ --- Number of trailing zero bits of an integer
     If all the bits of ``I`` are zero, the result value is ``BIT_SIZE(I)``.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -42,6 +44,7 @@ TRAILZ --- Number of trailing zero bits of an integer
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`BIT_SIZE`, 
     :ref:`LEADZ`, 
     :ref:`POPPAR`, 

@@ -26,9 +26,11 @@ BLE --- Bitwise less than or equal to
     The return value is of type ``LOGICAL`` and of the default kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -38,6 +40,7 @@ BLE --- Bitwise less than or equal to
       RESULT = BLE(I, J)
 
   :samp:`{See also}:`
+
     :ref:`BGT`, 
     :ref:`BGE`, 
     :ref:`BLT`

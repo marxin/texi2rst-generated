@@ -23,9 +23,11 @@ EXIT --- Exit the program with status.
     ``STATUS`` is passed to the parent process on exit.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -45,5 +47,6 @@ EXIT --- Exit the program with status.
       end program test_exit
 
   :samp:`{See also}:`
+
     :ref:`ABORT`, 
     :ref:`KILL`

@@ -39,9 +39,11 @@ RESHAPE --- Function to reshape an array
     :samp:`{SOURCE}`. 
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -61,4 +63,5 @@ RESHAPE --- Function to reshape an array
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`SHAPE`

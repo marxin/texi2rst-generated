@@ -22,9 +22,11 @@ FNUM --- File number function
     The return value is of type ``INTEGER``
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`

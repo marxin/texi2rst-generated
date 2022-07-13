@@ -31,9 +31,11 @@ IALL --- Bitwise AND of array elements
     The result is of the same type as :samp:`{ARRAY}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -58,6 +60,7 @@ IALL --- Bitwise AND of array elements
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`IANY`, 
     :ref:`IPARITY`, 
     :ref:`IAND`

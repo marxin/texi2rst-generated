@@ -33,9 +33,11 @@ AND --- Bitwise logical AND
     the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -58,5 +60,6 @@ AND --- Bitwise logical AND
       END PROGRAM
 
   :samp:`{See also}:`
+
     Fortran 95 elemental function: 
     :ref:`IAND`

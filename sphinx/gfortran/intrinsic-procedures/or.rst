@@ -33,9 +33,11 @@ OR --- Bitwise logical OR
     the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -58,5 +60,6 @@ OR --- Bitwise logical OR
       END PROGRAM
 
   :samp:`{See also}:`
+
     Fortran 95 elemental function: 
     :ref:`IOR`

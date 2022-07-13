@@ -62,9 +62,11 @@ FINDLOC --- Search an array for a value
     is of default kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later.
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`
@@ -75,5 +77,6 @@ FINDLOC --- Search an array for a value
       RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])
 
   :samp:`{See also}:`
+
     :ref:`MAXLOC`, 
     :ref:`MINLOC`

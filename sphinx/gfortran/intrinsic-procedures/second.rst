@@ -25,9 +25,11 @@ SECOND --- CPU time function
     seconds.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -38,4 +40,5 @@ SECOND --- CPU time function
       TIME = SECOND()
 
   :samp:`{See also}:`
+
     :ref:`CPU_TIME`

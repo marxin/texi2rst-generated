@@ -26,9 +26,11 @@ IRAND --- Integer pseudo-random number
     The return value is of ``INTEGER(kind=4)`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`

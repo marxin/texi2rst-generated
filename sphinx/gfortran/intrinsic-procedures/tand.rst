@@ -21,9 +21,11 @@ TAND --- Tangent function, degrees
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
   :samp:`{Standard}:`
+
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -42,6 +44,7 @@ TAND --- Tangent function, degrees
       end program test_tand
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  =============
     Name          Argument       Return type  Standard
     ============  =============  ===========  =============
@@ -50,6 +53,7 @@ TAND --- Tangent function, degrees
     ============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`ATAND` 
     Radians function: 

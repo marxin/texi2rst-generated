@@ -24,9 +24,11 @@ DPROD --- Double product function
     The return value is of type ``REAL(8)``.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,6 +50,7 @@ DPROD --- Double product function
       end program test_dprod
 
   :samp:`{Specific names}:`
+
     ==============  ================  ===========  ====================
     Name            Argument          Return type  Standard
     ==============  ================  ===========  ====================

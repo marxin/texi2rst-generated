@@ -27,9 +27,11 @@ C_ASSOCIATED --- Status of a C pointer
     point to different addresses.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -52,5 +54,6 @@ C_ASSOCIATED --- Status of a C pointer
       end subroutine association_test
 
   :samp:`{See also}:`
+
     :ref:`C_LOC`, 
     :ref:`C_FUNLOC`

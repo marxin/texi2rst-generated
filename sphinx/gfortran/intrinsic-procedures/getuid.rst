@@ -19,9 +19,11 @@ GETUID --- User ID function
     kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -31,8 +33,10 @@ GETUID --- User ID function
       RESULT = GETUID()
 
   :samp:`{Example}:`
+
     See ``GETPID`` for an example.
 
   :samp:`{See also}:`
+
     :ref:`GETPID`, 
     :ref:`GETLOG`

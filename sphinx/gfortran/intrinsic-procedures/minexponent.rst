@@ -23,9 +23,11 @@ MINEXPONENT --- Minimum exponent of a real kind
     kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -35,4 +37,5 @@ MINEXPONENT --- Minimum exponent of a real kind
       RESULT = MINEXPONENT(X)
 
   :samp:`{Example}:`
+
     See ``MAXEXPONENT`` for an example.

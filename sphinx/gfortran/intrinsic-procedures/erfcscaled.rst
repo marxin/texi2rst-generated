@@ -22,9 +22,11 @@ ERFC_SCALED --- Error function
     The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`

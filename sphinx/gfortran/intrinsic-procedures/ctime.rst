@@ -29,9 +29,11 @@ CTIME --- Convert a time into a string
     The converted date and time as a string.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`

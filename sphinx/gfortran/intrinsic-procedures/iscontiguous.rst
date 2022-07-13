@@ -22,9 +22,11 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
     :samp:`{ARRAY}` is contiguous and false otherwise.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

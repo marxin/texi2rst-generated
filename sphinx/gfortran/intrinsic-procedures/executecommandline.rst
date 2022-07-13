@@ -34,9 +34,11 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     default kind.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -61,6 +63,7 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
       end program test_exec
 
   :samp:`{Note}:`
+
     Because this intrinsic is implemented in terms of the ``system``
     function call, its behavior with respect to signaling is processor
     dependent. In particular, on POSIX-compliant systems, the SIGINT and
@@ -69,4 +72,5 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     terminated alongside.
 
   :samp:`{See also}:`
+
     :ref:`SYSTEM`

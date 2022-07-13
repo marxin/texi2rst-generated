@@ -24,9 +24,11 @@ UMASK --- Set the file creation mask
     ``INTEGER``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`

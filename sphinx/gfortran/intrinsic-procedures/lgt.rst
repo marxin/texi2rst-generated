@@ -29,9 +29,11 @@ LGT --- Lexical greater than
     otherwise, based on the ASCII ordering.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ LGT --- Lexical greater than
       RESULT = LGT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
+
     ==========================  =============  ===========  ====================
     Name                        Argument       Return type  Standard
     ==========================  =============  ===========  ====================
@@ -48,6 +51,7 @@ LGT --- Lexical greater than
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`LGE`, 
     :ref:`LLE`, 
     :ref:`LLT`

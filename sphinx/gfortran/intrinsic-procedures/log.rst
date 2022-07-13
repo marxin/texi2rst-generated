@@ -26,9 +26,11 @@ LOG --- Natural logarithm function
     -\pi < \omega \leq \pi.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, has GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,6 +51,7 @@ LOG --- Natural logarithm function
       end program test_log
 
   :samp:`{Specific names}:`
+
     ============  ================  ==============  ===================
     Name          Argument          Return type     Standard
     ============  ================  ==============  ===================

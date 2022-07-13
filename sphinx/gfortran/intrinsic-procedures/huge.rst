@@ -22,9 +22,11 @@ HUGE --- Largest number of a kind
     The return value is of the same type and kind as :samp:`{X}`
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

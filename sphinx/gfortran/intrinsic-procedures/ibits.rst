@@ -32,9 +32,11 @@ IBITS --- Bit extraction
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ IBITS --- Bit extraction
       RESULT = IBITS(I, POS, LEN)
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     =============  ================  ==============  ====================
@@ -55,6 +58,7 @@ IBITS --- Bit extraction
     =============  ================  ==============  ====================
 
   :samp:`{See also}:`
+
     :ref:`BIT_SIZE`, 
     :ref:`IBCLR`, 
     :ref:`IBSET`, 

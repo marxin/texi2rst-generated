@@ -38,9 +38,11 @@ DSHIFTL --- Combined left shift
     kind type parameter of the other.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -50,4 +52,5 @@ DSHIFTL --- Combined left shift
       RESULT = DSHIFTL(I, J, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`DSHIFTR`

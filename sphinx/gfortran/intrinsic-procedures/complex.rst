@@ -27,9 +27,11 @@ COMPLEX --- Complex conversion function
     value is of default ``COMPLEX`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,4 +51,5 @@ COMPLEX --- Complex conversion function
       end program test_complex
 
   :samp:`{See also}:`
+
     :ref:`CMPLX`

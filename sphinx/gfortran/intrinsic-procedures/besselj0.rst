@@ -25,9 +25,11 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
     kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,6 +48,7 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
       end program test_besj0
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============

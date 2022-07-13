@@ -33,9 +33,11 @@ MATMUL --- matrix multiplication
     for the ``*`` or ``.AND.`` operators.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

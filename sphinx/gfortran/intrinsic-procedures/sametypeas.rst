@@ -27,9 +27,11 @@ SAME_TYPE_AS ---  Query dynamic types for equality
     only if the dynamic type of A is the same as the dynamic type of B.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -39,4 +41,5 @@ SAME_TYPE_AS ---  Query dynamic types for equality
       RESULT = SAME_TYPE_AS(A, B)
 
   :samp:`{See also}:`
+
     :ref:`EXTENDS_TYPE_OF`

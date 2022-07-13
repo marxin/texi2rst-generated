@@ -29,9 +29,11 @@ LLT --- Lexical less than
     otherwise, based on the ASCII ordering.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ LLT --- Lexical less than
       RESULT = LLT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
+
     ==========================  =============  ===========  ====================
     Name                        Argument       Return type  Standard
     ==========================  =============  ===========  ====================
@@ -48,6 +51,7 @@ LLT --- Lexical less than
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`LGE`, 
     :ref:`LGT`, 
     :ref:`LLE`

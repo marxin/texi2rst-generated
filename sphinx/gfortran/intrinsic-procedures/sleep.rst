@@ -18,9 +18,11 @@ SLEEP --- Sleep for the specified number of seconds
     The type shall be of default ``INTEGER``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`

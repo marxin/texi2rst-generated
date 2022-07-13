@@ -29,10 +29,12 @@ ATAN --- Arctangent function
     -\pi/2 \leq \Re \atan(x) \leq \pi/2.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, for a complex argument and for two arguments
     Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,6 +54,7 @@ ATAN --- Arctangent function
       end program test_atan
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -60,6 +63,7 @@ ATAN --- Arctangent function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`TAN` 
     Degrees function: 

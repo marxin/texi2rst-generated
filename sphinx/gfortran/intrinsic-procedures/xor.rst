@@ -33,9 +33,11 @@ XOR --- Bitwise logical exclusive OR
     the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -58,5 +60,6 @@ XOR --- Bitwise logical exclusive OR
       END PROGRAM
 
   :samp:`{See also}:`
+
     Fortran 95 elemental function: 
     :ref:`IEOR`

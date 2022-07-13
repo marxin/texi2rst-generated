@@ -31,9 +31,11 @@ RSHIFT --- Right shift bits
     :samp:`{I}`.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,6 +45,7 @@ RSHIFT --- Right shift bits
       RESULT = RSHIFT(I, SHIFT)
 
   :samp:`{See also}:`
+
     :ref:`ISHFT`, 
     :ref:`ISHFTC`, 
     :ref:`LSHIFT`, 

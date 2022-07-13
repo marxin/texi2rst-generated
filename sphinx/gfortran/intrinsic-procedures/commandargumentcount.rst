@@ -19,9 +19,11 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
     The return value is an ``INTEGER`` of default kind.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -41,5 +43,6 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
       end program test_command_argument_count
 
   :samp:`{See also}:`
+
     :ref:`GET_COMMAND`, 
     :ref:`GET_COMMAND_ARGUMENT`

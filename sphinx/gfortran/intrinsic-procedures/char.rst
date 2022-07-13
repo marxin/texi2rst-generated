@@ -25,9 +25,11 @@ CHAR --- Character conversion function
     The return value is of type ``CHARACTER(1)``
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,6 +50,7 @@ CHAR --- Character conversion function
       end program test_char
 
   :samp:`{Specific names}:`
+
     ===========  =============  ====================  ====================
     Name         Argument       Return type           Standard
     ===========  =============  ====================  ====================
@@ -55,10 +58,12 @@ CHAR --- Character conversion function
     ===========  =============  ====================  ====================
 
   :samp:`{Note}:`
+
     See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
+
     :ref:`ACHAR`, 
     :ref:`IACHAR`, 
     :ref:`ICHAR`

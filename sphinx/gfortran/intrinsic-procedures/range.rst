@@ -24,9 +24,11 @@ RANGE --- Decimal exponent range
     kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -36,8 +38,10 @@ RANGE --- Decimal exponent range
       RESULT = RANGE(X)
 
   :samp:`{Example}:`
+
     See ``PRECISION`` for an example.
 
   :samp:`{See also}:`
+
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`PRECISION`

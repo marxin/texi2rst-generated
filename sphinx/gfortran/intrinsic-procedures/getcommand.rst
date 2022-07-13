@@ -34,9 +34,11 @@ GET_COMMAND --- Get the entire command line
     short to store the command line, or a positive value in case of an error.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -56,5 +58,6 @@ GET_COMMAND --- Get the entire command line
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`GET_COMMAND_ARGUMENT`, 
     :ref:`COMMAND_ARGUMENT_COUNT`

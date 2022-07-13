@@ -25,9 +25,11 @@ RAND --- Real pseudo-random number
     The return value is of ``REAL`` type and the default kind.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -49,5 +51,6 @@ RAND --- Real pseudo-random number
       end program test_rand
 
   :samp:`{See also}:`
+
     :ref:`SRAND`, 
     :ref:`RANDOM_NUMBER`

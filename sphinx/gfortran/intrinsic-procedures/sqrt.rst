@@ -23,9 +23,11 @@ SQRT --- Square-root function
     The kind type parameter is the same as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,6 +48,7 @@ SQRT --- Square-root function
       end program test_sqrt
 
   :samp:`{Specific names}:`
+
     =============  ================  ==============  ====================
     Name           Argument          Return type     Standard
     =============  ================  ==============  ====================

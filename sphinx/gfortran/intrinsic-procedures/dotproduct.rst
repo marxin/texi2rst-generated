@@ -32,9 +32,11 @@ DOT_PRODUCT --- Dot product function
     ``LOGICAL``, the return value is ``.TRUE.`` or ``.FALSE.``.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

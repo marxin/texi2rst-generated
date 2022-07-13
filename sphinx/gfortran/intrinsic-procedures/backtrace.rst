@@ -17,9 +17,11 @@ BACKTRACE --- Show a backtrace
   to the unit corresponding to ``ERROR_UNIT`` in ``ISO_FORTRAN_ENV``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -29,7 +31,9 @@ BACKTRACE --- Show a backtrace
       CALL BACKTRACE
 
   :samp:`{Arguments}:`
+
     None
 
   :samp:`{See also}:`
+
     :ref:`ABORT`

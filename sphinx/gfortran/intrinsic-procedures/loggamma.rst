@@ -23,9 +23,11 @@ LOG_GAMMA --- Logarithm of the Gamma function
     The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ LOG_GAMMA --- Logarithm of the Gamma function
       end program test_log_gamma
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============
@@ -53,5 +56,6 @@ LOG_GAMMA --- Logarithm of the Gamma function
     =============  =============  ===========  =============
 
   :samp:`{See also}:`
+
     Gamma function: 
     :ref:`GAMMA`

@@ -29,9 +29,11 @@ FPUTC --- Write a single character in stream mode
     error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -57,6 +59,7 @@ FPUTC --- Write a single character in stream mode
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`FPUT`, 
     :ref:`FGET`, 
     :ref:`FGETC`

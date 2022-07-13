@@ -27,9 +27,11 @@ SECNDS --- Time function
     None
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`

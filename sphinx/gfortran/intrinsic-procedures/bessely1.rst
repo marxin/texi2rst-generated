@@ -23,9 +23,11 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
     The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
+
     Fortran 2008 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,6 +46,7 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
       end program test_besy1
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  =============
     Name           Argument       Return type  Standard
     =============  =============  ===========  =============

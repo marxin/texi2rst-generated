@@ -28,9 +28,11 @@ LSTAT --- Get file status
     Returns 0 on success and a system specific error code otherwise.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -41,9 +43,11 @@ LSTAT --- Get file status
       STATUS = LSTAT(NAME, VALUES)
 
   :samp:`{Example}:`
+
     See :ref:`STAT` for an example.
 
   :samp:`{See also}:`
+
     To stat an open file: 
     :ref:`FSTAT` 
     To stat a file: 

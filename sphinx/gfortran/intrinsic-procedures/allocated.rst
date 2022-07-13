@@ -27,10 +27,12 @@ ALLOCATED --- Status of an allocatable entity
     ``.TRUE.`` ; otherwise, it returns ``.FALSE.`` 
 
   :samp:`{Standard}:`
+
     Fortran 90 and later.  Note, the ``SCALAR=`` keyword and allocatable
     scalar entities are available in Fortran 2003 and later.
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

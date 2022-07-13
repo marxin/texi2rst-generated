@@ -26,9 +26,11 @@ FDATE --- Get the current time as a string
     The current date and time as a string.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine, function
 
   :samp:`{Syntax}:`
@@ -55,5 +57,6 @@ FDATE --- Get the current time as a string
       end program test_fdate
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`

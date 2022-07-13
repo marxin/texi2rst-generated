@@ -23,9 +23,11 @@ SRAND --- Reinitialize the random number generator
     Does not return anything.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -35,9 +37,11 @@ SRAND --- Reinitialize the random number generator
       CALL SRAND(SEED)
 
   :samp:`{Example}:`
+
     See ``RAND`` and ``IRAND`` for examples.
 
   :samp:`{Notes}:`
+
     The Fortran standard specifies the intrinsic subroutines
     ``RANDOM_SEED`` to initialize the pseudo-random number
     generator and ``RANDOM_NUMBER`` to generate pseudo-random numbers.
@@ -49,6 +53,7 @@ SRAND --- Reinitialize the random number generator
     pseudo-random number generators.
 
   :samp:`{See also}:`
+
     :ref:`RAND`, 
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_NUMBER`

@@ -36,9 +36,11 @@ ATAN2 --- Arctangent function
     magnitude of the result is \pi/2.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -57,6 +59,7 @@ ATAN2 --- Arctangent function
       end program test_atan2
 
   :samp:`{Specific names}:`
+
     ================  ================  ===========  ====================
     Name              Argument          Return type  Standard
     ================  ================  ===========  ====================
@@ -65,6 +68,7 @@ ATAN2 --- Arctangent function
     ================  ================  ===========  ====================
 
   :samp:`{See also}:`
+
     Alias: 
     :ref:`ATAN` 
     Degrees function: 

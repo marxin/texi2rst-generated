@@ -24,9 +24,11 @@ TANH --- Hyperbolic tangent function
     - 1 \leq tanh(x) \leq 1 .
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ TANH --- Hyperbolic tangent function
       end program test_tanh
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -53,4 +56,5 @@ TANH --- Hyperbolic tangent function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`ATANH`

@@ -27,9 +27,11 @@ NINT --- Nearest whole number
     converted to an ``INTEGER`` of the default kind.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ NINT --- Nearest whole number
       end program test_nint
 
   :samp:`{Specific names}:`
+
     =============  =============  ===========  ====================
     Name           Argument       Return Type  Standard
     =============  =============  ===========  ====================
@@ -59,5 +62,6 @@ NINT --- Nearest whole number
     =============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`CEILING`, 
     :ref:`FLOOR`

@@ -24,9 +24,11 @@ PRECISION --- Decimal precision of a real kind
     kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -48,5 +50,6 @@ PRECISION --- Decimal precision of a real kind
       end program prec_and_range
 
   :samp:`{See also}:`
+
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`RANGE`

@@ -29,9 +29,11 @@ LGE --- Lexical greater than or equal
     otherwise, based on the ASCII ordering.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -41,6 +43,7 @@ LGE --- Lexical greater than or equal
       RESULT = LGE(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
+
     ==========================  =============  ===========  ====================
     Name                        Argument       Return type  Standard
     ==========================  =============  ===========  ====================
@@ -48,6 +51,7 @@ LGE --- Lexical greater than or equal
     ==========================  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     :ref:`LGT`, 
     :ref:`LLE`, 
     :ref:`LLT`

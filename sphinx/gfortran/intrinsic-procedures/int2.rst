@@ -24,9 +24,11 @@ INT2 --- Convert to 16-bit integer type
     The return value is a ``INTEGER(2)`` variable.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -36,5 +38,6 @@ INT2 --- Convert to 16-bit integer type
       RESULT = INT2(A)
 
   :samp:`{See also}:`
+
     :ref:`INT`, 
     :ref:`INT8`

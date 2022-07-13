@@ -24,9 +24,11 @@ LNBLNK --- Index of the last non-blank character in a string
     The return value is of ``INTEGER(kind=4)`` type.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -36,5 +38,6 @@ LNBLNK --- Index of the last non-blank character in a string
       RESULT = LNBLNK(STRING)
 
   :samp:`{See also}:`
+
     :ref:`index-intrinsic`, 
     :ref:`LEN_TRIM`

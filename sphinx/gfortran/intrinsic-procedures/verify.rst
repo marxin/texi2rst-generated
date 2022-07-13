@@ -33,9 +33,11 @@ VERIFY --- Scan a string for characters not a given set
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -57,5 +59,6 @@ VERIFY --- Scan a string for characters not a given set
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`SCAN`, 
     :ref:`index-intrinsic`

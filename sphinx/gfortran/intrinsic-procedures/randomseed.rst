@@ -33,9 +33,11 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
     the :samp:`{SIZE}` argument.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -60,5 +62,6 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
       end program test_random_seed
 
   :samp:`{See also}:`
+
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_INIT`

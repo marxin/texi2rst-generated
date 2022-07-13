@@ -23,9 +23,11 @@ NEW_LINE --- New line character
     the same kind as parameter :samp:`{C}`.
 
   :samp:`{Standard}:`
+
     Fortran 2003 and later
 
   :samp:`{Class}:`
+
     Inquiry function
 
   :samp:`{Syntax}:`

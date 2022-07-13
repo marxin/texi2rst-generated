@@ -24,9 +24,11 @@ ACOS --- Arccosine function
     0 \leq \Re \acos(x) \leq \pi.
 
   :samp:`{Standard}:`
+
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,6 +47,7 @@ ACOS --- Arccosine function
       end program test_acos
 
   :samp:`{Specific names}:`
+
     ============  =============  ===========  ====================
     Name          Argument       Return type  Standard
     ============  =============  ===========  ====================
@@ -53,6 +56,7 @@ ACOS --- Arccosine function
     ============  =============  ===========  ====================
 
   :samp:`{See also}:`
+
     Inverse function: 
     :ref:`COS` 
     Degrees function: 

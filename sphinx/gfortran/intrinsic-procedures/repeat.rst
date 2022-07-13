@@ -25,9 +25,11 @@ REPEAT --- Repeated string concatenation
     of :samp:`{STRING}`.
 
   :samp:`{Standard}:`
+
     Fortran 90 and later
 
   :samp:`{Class}:`
+
     Transformational function
 
   :samp:`{Syntax}:`

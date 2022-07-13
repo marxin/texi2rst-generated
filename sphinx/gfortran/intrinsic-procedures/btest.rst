@@ -25,9 +25,11 @@ BTEST --- Bit test function
     The return value is of type ``LOGICAL``
 
   :samp:`{Standard}:`
+
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
+
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,6 +53,7 @@ BTEST --- Bit test function
       end program test_btest
 
   :samp:`{Specific names}:`
+
     =================  ====================  ==============  ====================
     Name               Argument              Return type     Standard
     =================  ====================  ==============  ====================

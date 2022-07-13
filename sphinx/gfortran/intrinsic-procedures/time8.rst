@@ -20,9 +20,11 @@ TIME8 --- Time function (64-bit)
     The return value is a scalar of type ``INTEGER(8)``.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Function
 
   :samp:`{Syntax}:`
@@ -32,6 +34,7 @@ TIME8 --- Time function (64-bit)
       RESULT = TIME8()
 
   :samp:`{See also}:`
+
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

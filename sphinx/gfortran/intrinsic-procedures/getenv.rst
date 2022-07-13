@@ -26,9 +26,11 @@ GETENV --- Get an environmental variable
     is not set, :samp:`{VALUE}` will be filled with blanks.
 
   :samp:`{Standard}:`
+
     GNU extension
 
   :samp:`{Class}:`
+
     Subroutine
 
   :samp:`{Syntax}:`
@@ -48,4 +50,5 @@ GETENV --- Get an environmental variable
       END PROGRAM
 
   :samp:`{See also}:`
+
     :ref:`GET_ENVIRONMENT_VARIABLE`
