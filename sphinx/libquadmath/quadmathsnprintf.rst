@@ -16,10 +16,11 @@ modifier and conversion specifier ``e``, ``E``, ``f``, ``F``, ``g``,
 conversion specifier.  The ``%m$`` or ``*m$`` style must not be used in
 the format.
 
-Syntax
+Syntax:
+
   ``int quadmath_snprintf (char *s, size_t size, const char *format, ...)``
 
-:samp:`{Arguments}:`
+Arguments:
 
   ================  ===============================================
   :samp:`{s}`       output string
@@ -33,7 +34,7 @@ Syntax
   for ``printf`` family of functions, so that ``printf ("%Qe", 1.2Q);``
   etc. works too.
 
-Example
+Example:
 
   .. code-block:: c++
 

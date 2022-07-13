@@ -11,10 +11,11 @@ strtoflt128 --- Convert from string
 The function ``strtoflt128`` converts a string into a
 ``__float128`` number.
 
-Syntax
+Syntax:
+
   ``__float128 strtoflt128 (const char *s, char **sp)``
 
-:samp:`{Arguments}:`
+Arguments:
 
   ============  ===============================================
   :samp:`{s}`   input string
@@ -24,7 +25,7 @@ Syntax
   The argument :samp:`{sp}` contains, if not ``NULL``, the address of the
   next character following the parts of the string, which have been read.
 
-Example
+Example:
 
   .. code-block:: c++
 
