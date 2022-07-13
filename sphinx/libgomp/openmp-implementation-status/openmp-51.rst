@@ -70,8 +70,7 @@ Extensions to the ``atomic`` directive                                    Y
       and ``ompt_callback_target_submit_emi_t``
 ``ompt_callback_error_t`` type                                            N
 ``OMP_PLACES`` syntax extensions                                          Y
-``OMP_NUM_TEAMS`` and ``OMP_TEAMS_THREAD_LIMIT`` environment              Y
-      variables
+``OMP_NUM_TEAMS`` and ``OMP_TEAMS_THREAD_LIMIT`` environment variables    Y
 ========================================================================  ======  ====================
 
 Other new OpenMP 5.1 features
