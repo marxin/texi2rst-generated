@@ -9,6 +9,7 @@ acc_prof_register -- Register callbacks.
 ****************************************
 
 :samp:`{Description}:`
+
   This function registers callbacks.
 
 :samp:`{C/C++}:`
@@ -18,8 +19,10 @@ acc_prof_register -- Register callbacks.
   ============  ============================================================================
 
 :samp:`{See also}:`
+
   :ref:`openacc-profiling-interface`
 
 :samp:`{Reference}:`
+
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.

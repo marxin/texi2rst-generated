@@ -9,6 +9,7 @@ acc_register_library -- Library registration.
 *********************************************
 
 :samp:`{Description}:`
+
   Function for library registration.
 
 :samp:`{C/C++}:`
@@ -18,8 +19,10 @@ acc_register_library -- Library registration.
   ============  =================================================================================
 
 :samp:`{See also}:`
+
   :ref:`openacc-profiling-interface`, :ref:`ACC_PROFLIB`
 
 :samp:`{Reference}:`
+
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.

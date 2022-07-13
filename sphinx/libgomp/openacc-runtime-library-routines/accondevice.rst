@@ -9,6 +9,7 @@ acc_on_device -- Whether executing on a particular device
 *********************************************************
 
 :samp:`{Description}:`
+
   This function returns whether the program is executing on a particular
   device specified in :samp:`{devicetype}`. In C/C++ a non-zero value is
   returned to indicate the device is executing on the specified device type.
@@ -31,5 +32,6 @@ acc_on_device -- Whether executing on a particular device
   ============  =======================================
 
 :samp:`{Reference}:`
+
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.17.
