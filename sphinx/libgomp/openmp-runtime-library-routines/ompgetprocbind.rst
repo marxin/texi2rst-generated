@@ -9,6 +9,7 @@ omp_get_proc_bind -- Whether theads may be moved between CPUs
 *************************************************************
 
 :samp:`{Description}:`
+
   This functions returns the currently active thread affinity policy, which is
   set via :envvar:`OMP_PROC_BIND`.  Possible values are ``omp_proc_bind_false``,
   ``omp_proc_bind_true``, ``omp_proc_bind_primary``,
@@ -28,7 +29,9 @@ omp_get_proc_bind -- Whether theads may be moved between CPUs
   ============  =================================================================
 
 :samp:`{See also}:`
+
   :ref:`OMP_PROC_BIND`, :ref:`OMP_PLACES`, :ref:`GOMP_CPU_AFFINITY`,
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.22.

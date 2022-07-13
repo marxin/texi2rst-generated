@@ -9,6 +9,7 @@ omp_get_max_threads -- Maximum number of threads of parallel region
 *******************************************************************
 
 :samp:`{Description}:`
+
   Return the maximum number of threads used for the current parallel region
   that does not use the clause ``num_threads``.
 
@@ -25,7 +26,9 @@ omp_get_max_threads -- Maximum number of threads of parallel region
   ============  ==========================================
 
 :samp:`{See also}:`
+
   :ref:`omp_set_num_threads`, :ref:`omp_set_dynamic`, :ref:`omp_get_thread_limit`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.3.

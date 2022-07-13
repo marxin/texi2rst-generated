@@ -9,6 +9,7 @@ omp_set_num_threads -- Set upper team size limit
 ************************************************
 
 :samp:`{Description}:`
+
   Specifies the number of threads used by default in subsequent parallel 
   sections, if those do not specify a ``num_threads`` clause.  The
   argument of ``omp_set_num_threads`` shall be a positive integer.
@@ -27,7 +28,9 @@ omp_set_num_threads -- Set upper team size limit
   ============  ===============================================
 
 :samp:`{See also}:`
+
   :ref:`OMP_NUM_THREADS`, :ref:`omp_get_num_threads`, :ref:`omp_get_max_threads`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.1.

@@ -9,6 +9,7 @@ omp_get_dynamic -- Dynamic teams setting
 ****************************************
 
 :samp:`{Description}:`
+
   This function returns ``true`` if enabled, ``false`` otherwise. 
   Here, ``true`` and ``false`` represent their language-specific 
   counterparts.
@@ -31,7 +32,9 @@ omp_get_dynamic -- Dynamic teams setting
   ============  ======================================
 
 :samp:`{See also}:`
+
   :ref:`omp_set_dynamic`, :ref:`OMP_DYNAMIC`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.8.

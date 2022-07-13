@@ -9,6 +9,7 @@ omp_get_thread_num -- Current thread ID
 ***************************************
 
 :samp:`{Description}:`
+
   Returns a unique thread identification number within the current team.
   In a sequential parts of the program, ``omp_get_thread_num``
   always returns 0.  In parallel regions the return value varies
@@ -28,7 +29,9 @@ omp_get_thread_num -- Current thread ID
   ============  =========================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_num_threads`, :ref:`omp_get_ancestor_thread_num`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.4.

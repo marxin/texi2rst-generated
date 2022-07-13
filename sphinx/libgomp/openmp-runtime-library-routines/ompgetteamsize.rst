@@ -9,6 +9,7 @@ omp_get_team_size -- Number of threads in a team
 ************************************************
 
 :samp:`{Description}:`
+
   This function returns the number of threads in a thread team to which
   either the current thread or its ancestor belongs.  For values of :samp:`{level}`
   outside zero to ``omp_get_level``, -1 is returned; if :samp:`{level}` is zero,
@@ -29,7 +30,9 @@ omp_get_team_size -- Number of threads in a team
   ============  =============================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_num_threads`, :ref:`omp_get_level`, :ref:`omp_get_ancestor_thread_num`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.19.

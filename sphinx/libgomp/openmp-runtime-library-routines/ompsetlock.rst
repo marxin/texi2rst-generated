@@ -9,6 +9,7 @@ omp_set_lock -- Wait for and set simple lock
 ********************************************
 
 :samp:`{Description}:`
+
   Before setting a simple lock, the lock variable must be initialized by 
   ``omp_init_lock``.  The calling thread is blocked until the lock 
   is available.  If the lock is already held by the current thread, 
@@ -28,7 +29,9 @@ omp_set_lock -- Wait for and set simple lock
   ============  =================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_init_lock`, :ref:`omp_test_lock`, :ref:`omp_unset_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.

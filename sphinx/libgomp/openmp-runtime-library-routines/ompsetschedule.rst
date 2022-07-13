@@ -9,6 +9,7 @@ omp_set_schedule -- Set the runtime scheduling method
 *****************************************************
 
 :samp:`{Description}:`
+
   Sets the runtime scheduling method.  The :samp:`{kind}` argument can have the
   value ``omp_sched_static``, ``omp_sched_dynamic``,
   ``omp_sched_guided`` or ``omp_sched_auto``.  Except for
@@ -31,8 +32,10 @@ omp_set_schedule -- Set the runtime scheduling method
   ============  =================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_schedule`
   :ref:`OMP_SCHEDULE`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.12.

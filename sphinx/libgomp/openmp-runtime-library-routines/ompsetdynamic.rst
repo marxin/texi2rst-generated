@@ -9,6 +9,7 @@ omp_set_dynamic -- Enable/disable dynamic teams
 ***********************************************
 
 :samp:`{Description}:`
+
   Enable or disable the dynamic adjustment of the number of threads 
   within a team.  The function takes the language-specific equivalent
   of ``true`` and ``false``, where ``true`` enables dynamic 
@@ -28,7 +29,9 @@ omp_set_dynamic -- Enable/disable dynamic teams
   ============  ===============================================
 
 :samp:`{See also}:`
+
   :ref:`OMP_DYNAMIC`, :ref:`omp_get_dynamic`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.7.

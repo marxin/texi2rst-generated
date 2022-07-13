@@ -9,6 +9,7 @@ omp_set_teams_thread_limit -- Set upper thread limit for teams construct
 ************************************************************************
 
 :samp:`{Description}:`
+
   Specifies the upper bound for number of threads that will be available
   for each team created by the teams construct which does not specify a
   ``thread_limit`` clause.  The argument of
@@ -28,7 +29,9 @@ omp_set_teams_thread_limit -- Set upper thread limit for teams construct
   ============  =======================================================
 
 :samp:`{See also}:`
+
   :ref:`OMP_TEAMS_THREAD_LIMIT`, :ref:`omp_get_teams_thread_limit`, :ref:`omp_get_thread_limit`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.5.

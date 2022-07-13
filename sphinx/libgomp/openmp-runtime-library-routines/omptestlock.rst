@@ -9,6 +9,7 @@ omp_test_lock -- Test and set simple lock if available
 ******************************************************
 
 :samp:`{Description}:`
+
   Before setting a simple lock, the lock variable must be initialized by 
   ``omp_init_lock``.  Contrary to ``omp_set_lock``, ``omp_test_lock`` 
   does not block if the lock is not available.  This function returns
@@ -29,7 +30,9 @@ omp_test_lock -- Test and set simple lock if available
   ============  =================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_init_lock`, :ref:`omp_set_lock`, :ref:`omp_set_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.6.

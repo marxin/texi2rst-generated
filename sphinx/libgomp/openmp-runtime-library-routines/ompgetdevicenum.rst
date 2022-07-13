@@ -9,6 +9,7 @@ omp_get_device_num -- Return device number of current device
 ************************************************************
 
 :samp:`{Description}:`
+
   This function returns a device number that represents the device that the
   current thread is executing on. For OpenMP 5.0, this must be equal to the
   value returned by the ``omp_get_initial_device`` function when called
@@ -27,7 +28,9 @@ omp_get_device_num -- Return device number of current device
   ============  =========================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_initial_device`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.2.37.

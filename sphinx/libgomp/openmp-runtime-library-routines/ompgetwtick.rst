@@ -9,6 +9,7 @@ omp_get_wtick -- Get timer precision
 ************************************
 
 :samp:`{Description}:`
+
   Gets the timer precision, i.e., the number of seconds between two 
   successive clock ticks.
 
@@ -25,7 +26,9 @@ omp_get_wtick -- Get timer precision
   ============  =============================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_wtime`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.4.2.

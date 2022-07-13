@@ -9,6 +9,7 @@ omp_init_nest_lock -- Initialize nested lock
 ********************************************
 
 :samp:`{Description}:`
+
   Initialize a nested lock.  After initialization, the lock is in
   an unlocked state and the nesting count is set to zero.
 
@@ -26,7 +27,9 @@ omp_init_nest_lock -- Initialize nested lock
   ============  ====================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_destroy_nest_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.1.

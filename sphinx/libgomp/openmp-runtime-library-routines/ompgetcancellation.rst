@@ -9,6 +9,7 @@ omp_get_cancellation -- Whether cancellation support is enabled
 ***************************************************************
 
 :samp:`{Description}:`
+
   This function returns ``true`` if cancellation is activated, ``false``
   otherwise.  Here, ``true`` and ``false`` represent their language-specific
   counterparts.  Unless :envvar:`OMP_CANCELLATION` is set true, cancellations are
@@ -27,7 +28,9 @@ omp_get_cancellation -- Whether cancellation support is enabled
   ============  ===========================================
 
 :samp:`{See also}:`
+
   :ref:`OMP_CANCELLATION`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.9.

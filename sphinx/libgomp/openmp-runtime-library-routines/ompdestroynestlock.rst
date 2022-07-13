@@ -9,6 +9,7 @@ omp_destroy_nest_lock -- Destroy nested lock
 ********************************************
 
 :samp:`{Description}:`
+
   Destroy a nested lock.  In order to be destroyed, a nested lock must be
   in the unlocked state and its nesting count must equal zero.
 
@@ -26,7 +27,9 @@ omp_destroy_nest_lock -- Destroy nested lock
   ============  ======================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_init_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.3.

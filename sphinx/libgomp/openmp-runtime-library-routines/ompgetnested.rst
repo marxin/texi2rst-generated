@@ -9,6 +9,7 @@ omp_get_nested -- Nested parallel regions
 *****************************************
 
 :samp:`{Description}:`
+
   This function returns ``true`` if nested parallel regions are
   enabled, ``false`` otherwise.  Here, ``true`` and ``false``
   represent their language-specific counterparts.
@@ -41,8 +42,10 @@ omp_get_nested -- Nested parallel regions
   ============  =====================================
 
 :samp:`{See also}:`
+
   :ref:`omp_set_max_active_levels`, :ref:`omp_set_nested`,
   :ref:`OMP_MAX_ACTIVE_LEVELS`, :ref:`OMP_NESTED`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.11.

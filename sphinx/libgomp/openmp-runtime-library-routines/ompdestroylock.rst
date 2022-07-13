@@ -9,6 +9,7 @@ omp_destroy_lock -- Destroy simple lock
 ***************************************
 
 :samp:`{Description}:`
+
   Destroy a simple lock.  In order to be destroyed, a simple lock must be
   in the unlocked state.
 
@@ -26,7 +27,9 @@ omp_destroy_lock -- Destroy simple lock
   ============  =================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_init_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.3.

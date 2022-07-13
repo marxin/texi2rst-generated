@@ -9,6 +9,7 @@ omp_init_lock -- Initialize simple lock
 ***************************************
 
 :samp:`{Description}:`
+
   Initialize a simple lock.  After initialization, the lock is in
   an unlocked state.
 
@@ -26,7 +27,9 @@ omp_init_lock -- Initialize simple lock
   ============  ===============================================
 
 :samp:`{See also}:`
+
   :ref:`omp_destroy_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.1.

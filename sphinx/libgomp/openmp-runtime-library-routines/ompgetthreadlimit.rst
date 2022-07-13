@@ -9,6 +9,7 @@ omp_get_thread_limit -- Maximum number of threads
 *************************************************
 
 :samp:`{Description}:`
+
   Return the maximum number of threads of the program.
 
 :samp:`{C/C++}:`
@@ -24,7 +25,9 @@ omp_get_thread_limit -- Maximum number of threads
   ============  ===========================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_max_threads`, :ref:`OMP_THREAD_LIMIT`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.14.

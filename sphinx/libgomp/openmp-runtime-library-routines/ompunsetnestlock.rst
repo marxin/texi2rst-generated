@@ -9,6 +9,7 @@ omp_unset_nest_lock -- Unset nested lock
 ****************************************
 
 :samp:`{Description}:`
+
   A nested lock about to be unset must have been locked by ``omp_set_nested_lock``
   or ``omp_test_nested_lock`` before.  In addition, the lock must be held by the
   thread calling ``omp_unset_nested_lock``.  If the nesting count drops to zero, the
@@ -29,7 +30,9 @@ omp_unset_nest_lock -- Unset nested lock
   ============  ======================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_set_nest_lock`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.

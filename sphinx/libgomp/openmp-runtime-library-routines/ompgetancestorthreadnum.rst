@@ -9,6 +9,7 @@ omp_get_ancestor_thread_num -- Ancestor thread ID
 *************************************************
 
 :samp:`{Description}:`
+
   This function returns the thread identification number for the given
   nesting level of the current thread.  For values of :samp:`{level}` outside
   zero to ``omp_get_level`` -1 is returned; if :samp:`{level}` is
@@ -28,7 +29,9 @@ omp_get_ancestor_thread_num -- Ancestor thread ID
   ============  =======================================================
 
 :samp:`{See also}:`
+
   :ref:`omp_get_level`, :ref:`omp_get_thread_num`, :ref:`omp_get_team_size`
 
 :samp:`{Reference}:`
+
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.18.
