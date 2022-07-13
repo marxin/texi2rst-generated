@@ -111,8 +111,7 @@ These options affect the runtime behavior of programs compiled with
   Sets the C++ name mangling compatibility to the version identified by
   :samp:`{standard}`.  The following values are supported:
 
-  :samp:`c++98`
-  :samp:`c++03`
+  :samp:`c++98`, :samp:`c++03`
     Sets ``__traits(getTargetInfo, "cppStd")`` to ``199711``.
 
   :samp:`c++11`
