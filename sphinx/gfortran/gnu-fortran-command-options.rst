@@ -5,6 +5,9 @@
 
 .. index:: GNU Fortran command options, command options, options, gfortran command
 
+GNU Fortran Command Options
+---------------------------
+
 .. _invoking-gnu-fortran:
 
 .. toctree::

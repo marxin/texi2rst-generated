@@ -232,7 +232,7 @@ it.
 
     Example: Assuming you have a file :samp:`foo.f90`, the command
 
-  .. code-block:: fortran
+  .. code-block:: bash
 
       gfortran -fcheck=all,no-array-temps foo.f90
 

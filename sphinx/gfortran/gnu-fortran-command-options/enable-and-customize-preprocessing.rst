@@ -74,7 +74,7 @@ The following options control preprocessing of Fortran code:
   of finding out what is predefined in your version of the preprocessor.
   Assuming you have no file :samp:`foo.f90`, the command
 
-  .. code-block:: fortran
+  .. code-block:: bash
 
       touch foo.f90; gfortran -cpp -E -dM foo.f90
 
