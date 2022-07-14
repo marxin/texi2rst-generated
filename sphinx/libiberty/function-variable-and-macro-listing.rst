@@ -73,7 +73,7 @@ Function, Variable, and Macro Listing.
 
 .. bsearch.c:33
 
-.. function:: void* bsearch (const void *key,   const void *base, size_t nmemb, size_t size,   int (*compar)(const void *, const void *))
+.. function:: void* bsearch (const void *key, const void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *))
 
   Performs a search over an array of :samp:`{nmemb}` elements pointed to by
   :samp:`{base}` for a member that matches the object pointed to by :samp:`{key}`.
@@ -86,7 +86,7 @@ Function, Variable, and Macro Listing.
 
 .. bsearch_r.c:33
 
-.. function:: void* bsearch_r (const void *key,   const void *base, size_t nmemb, size_t size,   int (*compar)(const void *, const void *, void *), void *arg)
+.. function:: void* bsearch_r (const void *key, const void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *, void *), void *arg)
 
   Performs a search over an array of :samp:`{nmemb}` elements pointed to by
   :samp:`{base}` for a member that matches the object pointed to by :samp:`{key}`.
@@ -174,7 +174,7 @@ Function, Variable, and Macro Listing.
 
 .. concat.c:24
 
-.. function:: char* concat (const char *s1, const char *s2,   ..., NULL)
+.. function:: char* concat (const char *s1, const char *s2, ..., NULL)
 
   Concatenate zero or more of strings and return the result in freshly
   ``xmalloc`` ed memory.  The argument list is terminated by the first
@@ -189,7 +189,7 @@ Function, Variable, and Macro Listing.
 
 .. crc32.c:140
 
-.. function:: unsigned int crc32 (const unsigned char *buf,   int len, unsigned int init)
+.. function:: unsigned int crc32 (const unsigned char *buf, int len, unsigned int init)
 
   Compute the 32-bit CRC of :samp:`{buf}` which has length :samp:`{len}`.  The
   starting value is :samp:`{init}` ; this may be used to compute the CRC of
@@ -275,7 +275,7 @@ Function, Variable, and Macro Listing.
 
 .. fopen_unlocked.c:49
 
-.. function:: FILE * fdopen_unlocked (int fildes,   const char * mode)
+.. function:: FILE * fdopen_unlocked (int fildes, const char * mode)
 
   Opens and returns a ``FILE`` pointer via ``fdopen``.  If the
   operating system supports it, ensure that the stream is setup to avoid
@@ -340,7 +340,7 @@ Function, Variable, and Macro Listing.
 
 .. fnmatch.txh:1
 
-.. function:: int fnmatch (const char *pattern,   const char *string, int flags)
+.. function:: int fnmatch (const char *pattern, const char *string, int flags)
 
   Matches :samp:`{string}` against :samp:`{pattern}`, returning zero if it
   matches, ``FNM_NOMATCH`` if not.  :samp:`{pattern}` may contain the
@@ -389,7 +389,7 @@ Function, Variable, and Macro Listing.
 
 .. fopen_unlocked.c:39
 
-.. function:: FILE * fopen_unlocked (const char *path,   const char * mode)
+.. function:: FILE * fopen_unlocked (const char *path, const char * mode)
 
   Opens and returns a ``FILE`` pointer via ``fopen``.  If the
   operating system supports it, ensure that the stream is setup to avoid
@@ -407,7 +407,7 @@ Function, Variable, and Macro Listing.
 
 .. fopen_unlocked.c:59
 
-.. function:: FILE * freopen_unlocked (const char * path,   const char * mode, FILE * stream)
+.. function:: FILE * freopen_unlocked (const char * path, const char * mode, FILE * stream)
 
   Opens and returns a ``FILE`` pointer via ``freopen``.  If the
   operating system supports it, ensure that the stream is setup to avoid
@@ -540,7 +540,7 @@ Function, Variable, and Macro Listing.
 
 .. insque.c:6
 
-.. function:: void insque (struct qelem *elem,   struct qelem *pred)
+.. function:: void insque (struct qelem *elem, struct qelem *pred)
               void remque (struct qelem *elem)
 
   Routines to manipulate queues built from doubly linked lists.  The
@@ -656,7 +656,7 @@ sets of characters:
 
 .. make-relative-prefix.c:23
 
-.. function:: const char* make_relative_prefix (const char *progname,   const char *bin_prefix, const char *prefix)
+.. function:: const char* make_relative_prefix (const char *progname, const char *bin_prefix, const char *prefix)
 
   Given three paths :samp:`{progname}`, :samp:`{bin_prefix}`, :samp:`{prefix}`,
   return the path that is in the same position relative to
@@ -688,7 +688,7 @@ sets of characters:
 
 .. memchr.c:3
 
-.. function:: void* memchr (const void *s, int c,   size_t n)
+.. function:: void* memchr (const void *s, int c, size_t n)
 
   This function searches memory starting at ``*s`` for the
   character :samp:`{c}`.  The search only ends with the first occurrence of
@@ -700,7 +700,7 @@ sets of characters:
 
 .. memcmp.c:6
 
-.. function:: int memcmp (const void *x, const void *y,   size_t count)
+.. function:: int memcmp (const void *x, const void *y, size_t count)
 
   Compares the first :samp:`{count}` bytes of two areas of memory.  Returns
   zero if they are the same, a value less than zero if :samp:`{x}` is
@@ -710,7 +710,7 @@ sets of characters:
 
 .. memcpy.c:6
 
-.. function:: void* memcpy (void *out, const void *in,   size_t length)
+.. function:: void* memcpy (void *out, const void *in, size_t length)
 
   Copies :samp:`{length}` bytes from memory region :samp:`{in}` to region
   :samp:`{out}`.  Returns a pointer to :samp:`{out}`.
@@ -725,21 +725,21 @@ sets of characters:
 
 .. memmove.c:6
 
-.. function:: void* memmove (void *from, const void *to,   size_t count)
+.. function:: void* memmove (void *from, const void *to, size_t count)
 
   Copies :samp:`{count}` bytes from memory area :samp:`{from}` to memory area
   :samp:`{to}`, returning a pointer to :samp:`{to}`.
 
 .. mempcpy.c:23
 
-.. function:: void* mempcpy (void *out, const void *in,   size_t length)
+.. function:: void* mempcpy (void *out, const void *in, size_t length)
 
   Copies :samp:`{length}` bytes from memory region :samp:`{in}` to region
   :samp:`{out}`.  Returns a pointer to :samp:`{out}` + :samp:`{length}`.
 
 .. memset.c:6
 
-.. function:: void* memset (void *s, int c,   size_t count)
+.. function:: void* memset (void *s, int c, size_t count)
 
   Sets the first :samp:`{count}` bytes of :samp:`{s}` to the constant byte
   :samp:`{c}`, returning a pointer to :samp:`{s}`.
@@ -771,7 +771,7 @@ sets of characters:
 
 .. pexecute.txh:251
 
-.. function:: int pex_get_status (struct pex_obj *obj,   int count, int *vector)
+.. function:: int pex_get_status (struct pex_obj *obj, int count, int *vector)
 
   Returns the exit status of all programs run using :samp:`{obj}`.
   :samp:`{count}` is the number of results expected.  The results will be
@@ -780,7 +780,7 @@ sets of characters:
 
 .. pexecute.txh:261
 
-.. function:: int pex_get_times (struct pex_obj *obj,   int count, struct pex_time *vector)
+.. function:: int pex_get_times (struct pex_obj *obj, int count, struct pex_time *vector)
 
   Returns the process execution times of all programs run using
   :samp:`{obj}`.  :samp:`{count}` is the number of results expected.  The
@@ -796,7 +796,7 @@ sets of characters:
 
 .. pexecute.txh:2
 
-.. function:: struct pex_obj * pex_init (int flags,   const char *pname, const char *tempbase)
+.. function:: struct pex_obj * pex_init (int flags, const char *pname, const char *tempbase)
 
   Prepare to execute one or more programs, with standard output of each
   program fed to standard input of the next.  This is a system
@@ -829,7 +829,7 @@ sets of characters:
 
 .. pexecute.txh:161
 
-.. function:: FILE * pex_input_file (struct pex_obj *obj,   int flags, const char *in_name)
+.. function:: FILE * pex_input_file (struct pex_obj *obj, int flags, const char *in_name)
 
   Return a stream for a temporary file to pass to the first program in
   the pipeline as input.
@@ -847,7 +847,7 @@ sets of characters:
 
 .. pexecute.txh:179
 
-.. function:: FILE * pex_input_pipe (struct pex_obj *obj,   int binary)
+.. function:: FILE * pex_input_pipe (struct pex_obj *obj, int binary)
 
   Return a stream :samp:`{fp}` for a pipe connected to the standard input of
   the first program in the pipeline; :samp:`{fp}` is opened for writing.
@@ -886,7 +886,7 @@ sets of characters:
 
 .. pexecute.txh:286
 
-.. function:: const char * pex_one (int flags,   const char *executable, char * const *argv,   const char *pname, const char *outname, const char *errname,   int *status, int *err)
+.. function:: const char * pex_one (int flags, const char *executable, char * const *argv, const char *pname, const char *outname, const char *errname, int *status, int *err)
 
   An interface to permit the easy execution of a
   single program.  The return value and most of the parameters are as
@@ -898,7 +898,7 @@ sets of characters:
 
 .. pexecute.txh:237
 
-.. function:: FILE * pex_read_err (struct pex_obj *obj,   int binary)
+.. function:: FILE * pex_read_err (struct pex_obj *obj, int binary)
 
   Returns a ``FILE`` pointer which may be used to read the standard
   error of the last program in the pipeline.  When this is used,
@@ -910,7 +910,7 @@ sets of characters:
 
 .. pexecute.txh:224
 
-.. function:: FILE * pex_read_output (struct pex_obj *obj,   int binary)
+.. function:: FILE * pex_read_output (struct pex_obj *obj, int binary)
 
   Returns a ``FILE`` pointer which may be used to read the standard
   output of the last program in the pipeline.  When this is used,
@@ -922,7 +922,7 @@ sets of characters:
 
 .. pexecute.txh:34
 
-.. function:: const char * pex_run (struct pex_obj *obj,   int flags, const char *executable, char * const *argv,   const char *outname, const char *errname, int *err)
+.. function:: const char * pex_run (struct pex_obj *obj, int flags, const char *executable, char * const *argv, const char *outname, const char *errname, int *err)
 
   Execute one program in a pipeline.  On success this returns
   ``NULL``.  On failure it returns an error message, a statically
@@ -1026,7 +1026,7 @@ sets of characters:
 
 .. pexecute.txh:145
 
-.. function:: const char * pex_run_in_environment (struct pex_obj *obj,   int flags, const char *executable, char * const *argv,   char * const *env, int env_size, const char *outname,   const char *errname, int *err)
+.. function:: const char * pex_run_in_environment (struct pex_obj *obj, int flags, const char *executable, char * const *argv, char * const *env, int env_size, const char *outname, const char *errname, int *err)
 
   Execute one program in a pipeline, permitting the environment for the
   program to be specified.  Behaviour and parameters not listed below are
@@ -1039,7 +1039,7 @@ sets of characters:
 
 .. pexecute.txh:301
 
-.. function:: int pexecute (const char *program,   char * const *argv, const char *this_pname,   const char *temp_base, char **errmsg_fmt,   char **errmsg_arg, int flags)
+.. function:: int pexecute (const char *program, char * const *argv, const char *this_pname, const char *temp_base, char **errmsg_fmt, char **errmsg_arg, int flags)
 
   This is the old interface to execute one or more programs.  It is
   still supported for compatibility purposes, but is no longer
@@ -1072,7 +1072,7 @@ sets of characters:
 
 .. function:: long int random (void)
               void srandom (unsigned int seed)
-              void* initstate (unsigned int seed,   void *arg_state, unsigned long n)
+              void* initstate (unsigned int seed, void *arg_state, unsigned long n)
               void* setstate (void *arg_state)
 
   Random number functions.  ``random`` returns a random number in the
@@ -1084,7 +1084,7 @@ sets of characters:
 
 .. concat.c:160
 
-.. function:: char* reconcat (char *optr, const char *s1,   ..., NULL)
+.. function:: char* reconcat (char *optr, const char *s1, ..., NULL)
 
   Same as ``concat``, except that if :samp:`{optr}` is not ``NULL`` it
   is freed after the string is created.  This is intended to be useful
@@ -1112,7 +1112,7 @@ sets of characters:
 
 .. setenv.c:22
 
-.. function:: int setenv (const char *name,   const char *value, int overwrite)
+.. function:: int setenv (const char *name, const char *value, int overwrite)
               void unsetenv (const char *name)
 
   ``setenv`` adds :samp:`{name}` to the environment with value
@@ -1155,7 +1155,7 @@ sets of characters:
 
 .. simple-object.txh:96
 
-.. function:: const char * simple_object_attributes_compare   (simple_object_attributes *attrs1, simple_object_attributes *attrs2,    int *err)
+.. function:: const char * simple_object_attributes_compare   (simple_object_attributes *attrs1, simple_object_attributes *attrs2, int *err)
 
   Compare :samp:`{attrs1}` and :samp:`{attrs2}`.  If they could be linked
   together without error, return ``NULL``.  Otherwise, return an
@@ -1200,7 +1200,7 @@ sets of characters:
 
 .. simple-object.txh:27
 
-.. function:: const char * simple_object_find_sections   (simple_object_read *simple_object, int (*pfn) (void *data,   const char *name, off_t offset, off_t length),   void *data, int *err)
+.. function:: const char * simple_object_find_sections   (simple_object_read *simple_object, int (*pfn) (void *data, const char *name, off_t offset, off_t length), void *data, int *err)
 
   This function calls :samp:`{pfn}` for each section in :samp:`{simple_object}`.
   It calls :samp:`{pfn}` with the section name, the offset within the file
@@ -1219,7 +1219,7 @@ sets of characters:
 
 .. simple-object.txh:2
 
-.. function:: simple_object_read * simple_object_open_read   (int descriptor, off_t offset, const char *segment_name,   const char **errmsg, int *err)
+.. function:: simple_object_read * simple_object_open_read   (int descriptor, off_t offset, const char *segment_name, const char **errmsg, int *err)
 
   Opens an object file for reading.  Creates and returns an
   ``simple_object_read`` pointer which may be passed to other
@@ -1261,7 +1261,7 @@ sets of characters:
 
 .. simple-object.txh:114
 
-.. function:: simple_object_write * simple_object_start_write   (simple_object_attributes attrs, const char *segment_name,   const char **errmsg, int *err)
+.. function:: simple_object_write * simple_object_start_write   (simple_object_attributes attrs, const char *segment_name, const char **errmsg, int *err)
 
   Start creating a new object file using the object file format
   described in :samp:`{attrs}`.  You must fetch attribute information from
@@ -1279,7 +1279,7 @@ sets of characters:
 
 .. simple-object.txh:153
 
-.. function:: const char * simple_object_write_add_data   (simple_object_write *simple_object,   simple_object_write_section *section, const void *buffer,   size_t size, int copy, int *err)
+.. function:: const char * simple_object_write_add_data   (simple_object_write *simple_object, simple_object_write_section *section, const void *buffer, size_t size, int copy, int *err)
 
   Add data :samp:`{buffer}` / :samp:`{size}` to :samp:`{section}` in
   :samp:`{simple_object}`.  If :samp:`{copy}` is non-zero, the data will be
@@ -1293,7 +1293,7 @@ sets of characters:
 
 .. simple-object.txh:134
 
-.. function:: simple_object_write_section * simple_object_write_create_section   (simple_object_write *simple_object, const char *name,   unsigned int align, const char **errmsg, int *err)
+.. function:: simple_object_write_section * simple_object_write_create_section   (simple_object_write *simple_object, const char *name, unsigned int align, const char **errmsg, int *err)
 
   Add a section to :samp:`{simple_object}`.  :samp:`{name}` is the name of the
   new section.  :samp:`{align}` is the required alignment expressed as the
@@ -1323,7 +1323,7 @@ sets of characters:
 
 .. snprintf.c:28
 
-.. function:: int snprintf (char *buf, size_t n,   const char *format, ...)
+.. function:: int snprintf (char *buf, size_t n, const char *format, ...)
 
   This function is similar to ``sprintf``, but it will write to
   :samp:`{buf}` at most ``n-1`` bytes of text, followed by a
@@ -1375,7 +1375,7 @@ sets of characters:
 
 .. stpncpy.c:23
 
-.. function:: char* stpncpy (char *dst, const char *src,   size_t len)
+.. function:: char* stpncpy (char *dst, const char *src, size_t len)
 
   Copies the string :samp:`{src}` into :samp:`{dst}`, copying exactly :samp:`{len}`
   and padding with zeros if necessary.  If :samp:`{len}` < strlen(:samp:`{src}`)
@@ -1450,7 +1450,7 @@ sets of characters:
 
 .. strncmp.c:6
 
-.. function:: int strncmp (const char *s1,   const char *s2, size_t n)
+.. function:: int strncmp (const char *s1, const char *s2, size_t n)
 
   Compares the first :samp:`{n}` bytes of two strings, returning a value as
   ``strcmp``.
@@ -1530,7 +1530,7 @@ sets of characters:
 
 .. strtod.c:27
 
-.. function:: double strtod (const char *string,   char **endptr)
+.. function:: double strtod (const char *string, char **endptr)
 
   This ISO C function converts the initial portion of :samp:`{string}` to a
   ``double``.  If :samp:`{endptr}` is not ``NULL``, a pointer to the
@@ -1548,8 +1548,8 @@ sets of characters:
 
 .. strtol.c:33
 
-.. function:: long int strtol (const char *string,   char **endptr, int base)
-              unsigned long int strtoul (const char *string,   char **endptr, int base)
+.. function:: long int strtol (const char *string, char **endptr, int base)
+              unsigned long int strtoul (const char *string, char **endptr, int base)
 
   The ``strtol`` function converts the string in :samp:`{string}` to a
   long integer value according to the given :samp:`{base}`, which must be
@@ -1563,7 +1563,7 @@ sets of characters:
 
 .. strtoll.c:33
 
-.. function:: long long int strtoll (const char *string,   char **endptr, int base)
+.. function:: long long int strtoll (const char *string, char **endptr, int base)
               unsigned long long int strtoul (const char *string, char **endptr, int base)
 
   The ``strtoll`` function converts the string in :samp:`{string}` to a
@@ -1628,13 +1628,13 @@ sets of characters:
 
 .. timeval-utils.c:43
 
-.. function:: void timeval_add (struct timeval *a,   struct timeval *b, struct timeval *result)
+.. function:: void timeval_add (struct timeval *a, struct timeval *b, struct timeval *result)
 
   Adds :samp:`{a}` to :samp:`{b}` and stores the result in :samp:`{result}`.
 
 .. timeval-utils.c:67
 
-.. function:: void timeval_sub (struct timeval *a,   struct timeval *b, struct timeval *result)
+.. function:: void timeval_sub (struct timeval *a, struct timeval *b, struct timeval *result)
 
   Subtracts :samp:`{b}` from :samp:`{a}` and stores the result in :samp:`{result}`.
 
@@ -1675,7 +1675,7 @@ sets of characters:
 
 .. vasprintf.c:47
 
-.. function:: int vasprintf (char **resptr,   const char *format, va_list args)
+.. function:: int vasprintf (char **resptr, const char *format, va_list args)
 
   Like ``vsprintf``, but instead of passing a pointer to a buffer,
   you pass a pointer to a pointer.  This function will compute the size
@@ -1694,8 +1694,8 @@ sets of characters:
 .. vprintf.c:3
 
 .. function:: int vprintf (const char *format, va_list ap)
-              int vfprintf (FILE *stream,   const char *format, va_list ap)
-              int vsprintf (char *str,   const char *format, va_list ap)
+              int vfprintf (FILE *stream, const char *format, va_list ap)
+              int vsprintf (char *str, const char *format, va_list ap)
 
   These functions are the same as ``printf``, ``fprintf``, and
   ``sprintf``, respectively, except that they are called with a
@@ -1706,7 +1706,7 @@ sets of characters:
 
 .. vsnprintf.c:28
 
-.. function:: int vsnprintf (char *buf, size_t n,   const char *format, va_list ap)
+.. function:: int vsnprintf (char *buf, size_t n, const char *format, va_list ap)
 
   This function is similar to ``vsprintf``, but it will write to
   :samp:`{buf}` at most ``n-1`` bytes of text, followed by a
@@ -1794,7 +1794,7 @@ sets of characters:
 
 .. xmemdup.c:7
 
-.. function:: void* xmemdup (void *input,   size_t copy_size, size_t alloc_size)
+.. function:: void* xmemdup (void *input, size_t copy_size, size_t alloc_size)
 
   Duplicates a region of memory without fail.  First, :samp:`{alloc_size}` bytes
   are allocated, then :samp:`{copy_size}` bytes from :samp:`{input}` are copied into
