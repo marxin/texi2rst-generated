@@ -246,58 +246,32 @@ languages, rather than to fundamental aspects of storage layout.
   int``.
 
 .. c:macro:: SIG_ATOMIC_TYPE
-
-.. c:macro:: INT8_TYPE
-
-.. c:macro:: INT16_TYPE
-
-.. c:macro:: INT32_TYPE
-
-.. c:macro:: INT64_TYPE
-
-.. c:macro:: UINT8_TYPE
-
-.. c:macro:: UINT16_TYPE
-
-.. c:macro:: UINT32_TYPE
-
-.. c:macro:: UINT64_TYPE
-
-.. c:macro:: INT_LEAST8_TYPE
-
-.. c:macro:: INT_LEAST16_TYPE
-
-.. c:macro:: INT_LEAST32_TYPE
-
-.. c:macro:: INT_LEAST64_TYPE
-
-.. c:macro:: UINT_LEAST8_TYPE
-
-.. c:macro:: UINT_LEAST16_TYPE
-
-.. c:macro:: UINT_LEAST32_TYPE
-
-.. c:macro:: UINT_LEAST64_TYPE
-
-.. c:macro:: INT_FAST8_TYPE
-
-.. c:macro:: INT_FAST16_TYPE
-
-.. c:macro:: INT_FAST32_TYPE
-
-.. c:macro:: INT_FAST64_TYPE
-
-.. c:macro:: UINT_FAST8_TYPE
-
-.. c:macro:: UINT_FAST16_TYPE
-
-.. c:macro:: UINT_FAST32_TYPE
-
-.. c:macro:: UINT_FAST64_TYPE
-
-.. c:macro:: INTPTR_TYPE
-
-.. c:macro:: UINTPTR_TYPE
+             INT8_TYPE
+             INT16_TYPE
+             INT32_TYPE
+             INT64_TYPE
+             UINT8_TYPE
+             UINT16_TYPE
+             UINT32_TYPE
+             UINT64_TYPE
+             INT_LEAST8_TYPE
+             INT_LEAST16_TYPE
+             INT_LEAST32_TYPE
+             INT_LEAST64_TYPE
+             UINT_LEAST8_TYPE
+             UINT_LEAST16_TYPE
+             UINT_LEAST32_TYPE
+             UINT_LEAST64_TYPE
+             INT_FAST8_TYPE
+             INT_FAST16_TYPE
+             INT_FAST32_TYPE
+             INT_FAST64_TYPE
+             UINT_FAST8_TYPE
+             UINT_FAST16_TYPE
+             UINT_FAST32_TYPE
+             UINT_FAST64_TYPE
+             INTPTR_TYPE
+             UINTPTR_TYPE
 
   C expressions for the standard types ``sig_atomic_t``,
   ``int8_t``, ``int16_t``, ``int32_t``, ``int64_t``,

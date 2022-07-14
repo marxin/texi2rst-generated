@@ -73,7 +73,7 @@ substitution of the operands.
 
   When matching patterns, this is equivalent to
 
-  .. code-block:: c++
+  .. code-block::
 
     (match_operand:m n "scratch_operand" constraint)
 
@@ -127,7 +127,7 @@ substitution of the operands.
   follows, to match any expression whose operator is one of the
   commutative arithmetic operators of RTL and whose mode is :samp:`{mode}` :
 
-  .. code-block:: c++
+  .. code-block::
 
     int
     commutative_integer_operator (x, mode)
@@ -144,7 +144,7 @@ substitution of the operands.
   Then the following pattern will match any RTL expression consisting
   of a commutative operator applied to two general operands:
 
-  .. code-block:: c++
+  .. code-block::
 
     (match_operator:SI 3 "commutative_operator"
       [(match_operand:SI 1 "general_operand" "g")
@@ -216,7 +216,7 @@ substitution of the operands.
   multiple expressions, which can contain a variable number of elements
   in a ``parallel``.  For example,
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn ""
       [(match_parallel 0 "load_multiple_operation"
@@ -235,7 +235,7 @@ substitution of the operands.
 
   An insn that matches this pattern might look like:
 
-  .. code-block:: c++
+  .. code-block::
 
     (parallel
      [(set (reg:SI 20) (mem:SI (reg:SI 100)))

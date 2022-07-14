@@ -91,14 +91,14 @@ field of the ``edge`` data type is used to store information
 about the type of edge we are dealing with.  Each edge is of one of
 the following types:
 
-*jump*
+**jump**
 
   No type flags are set for edges corresponding to jump instructions.
   These edges are used for unconditional or conditional jumps and in
   RTL also for table jumps.  They are the easiest to manipulate as they
   may be freely redirected when the flow graph is not in SSA form.
 
-*fall-thru*
+**fall-thru**
 
   .. index:: EDGE_FALLTHRU, force_nonfallthru
 
@@ -110,7 +110,7 @@ the following types:
   available to insert an unconditional jump in the case that redirection
   is needed.  Note that this may require creation of a new basic block.
 
-*exception handling*
+**exception handling**
 
   .. index:: exception handling, EDGE_ABNORMAL, EDGE_EH
 
@@ -144,7 +144,7 @@ the following types:
   but this predicate only checks for possible memory traps, as in
   dereferencing an invalid pointer location.
 
-*sibling calls*
+**sibling calls**
 
   .. index:: sibling call, EDGE_ABNORMAL, EDGE_SIBCALL
 
@@ -153,7 +153,7 @@ the following types:
   ``EDGE_SIBCALL`` and ``EDGE_ABNORMAL`` are set in such case.
   These edges only exist in the RTL representation.
 
-*computed jumps*
+**computed jumps**
 
   .. index:: computed jump, EDGE_ABNORMAL
 
@@ -205,7 +205,7 @@ the following types:
   been numerous examples already where the compile time for code with
   unfactored computed jumps caused some serious headaches.
 
-*nonlocal goto handlers*
+**nonlocal goto handlers**
 
   .. index:: nonlocal goto handler, EDGE_ABNORMAL, EDGE_ABNORMAL_CALL
 
@@ -217,7 +217,7 @@ the following types:
   edge from the call to the label is created with the
   ``EDGE_ABNORMAL`` and ``EDGE_ABNORMAL_CALL`` flags set.
 
-*function entry points*
+**function entry points**
 
   .. index:: function entry point, alternate function entry point, LABEL_ALTERNATE_NAME
 
@@ -232,7 +232,7 @@ the following types:
   In future full support for multiple entry functions defined by Fortran
   90 needs to be implemented.
 
-*function exits*
+**function exits**
 
   In the pre-reload representation a function terminates after the last
   instruction in the insn chain and no explicit return instructions are

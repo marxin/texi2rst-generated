@@ -28,7 +28,7 @@ description for the 68000/68020.
 
 This can also be written using braced strings:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "tstsi"
     [(set (cc0)
