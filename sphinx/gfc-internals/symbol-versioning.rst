@@ -32,7 +32,7 @@ defined, e.g., if one adds a new symbols ``foo`` and ``bar`` to
 libgfortran for the next GCC release, the following should be added to
 the map file: 
 
-.. code-block:: c++
+::
 
   GFORTRAN_1.1 {
       global:
