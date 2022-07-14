@@ -12,10 +12,10 @@ GIMPLE_OMP_PARALLEL
 
   Build a ``GIMPLE_OMP_PARALLEL`` statement.
 
-``BODY`` is sequence of statements which are executed in parallel.
-``CLAUSES``, are the ``OMP`` parallel construct's clauses.  ``CHILD_FN`` is
-the function created for the parallel threads to execute.
-``DATA_ARG`` are the shared data argument(s).
+  ``BODY`` is sequence of statements which are executed in parallel.
+  ``CLAUSES``, are the ``OMP`` parallel construct's clauses.  ``CHILD_FN`` is
+  the function created for the parallel threads to execute.
+  ``DATA_ARG`` are the shared data argument(s).
 
 .. function:: bool gimple_omp_parallel_combined_p (gimple g)
 

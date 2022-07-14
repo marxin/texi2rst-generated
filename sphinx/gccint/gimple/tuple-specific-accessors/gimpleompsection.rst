@@ -12,7 +12,7 @@ GIMPLE_OMP_SECTION
 
   Build a ``GIMPLE_OMP_SECTION`` statement for a sections statement.
 
-``BODY`` is the sequence of statements in the section.
+  ``BODY`` is the sequence of statements in the section.
 
 .. function:: bool gimple_omp_section_last_p (gimple g)
 
