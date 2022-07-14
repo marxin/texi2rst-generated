@@ -1598,7 +1598,7 @@ sets of characters:
 .. strtoll.c:33
 
 .. function:: long long int strtoll (const char *string,   char **endptr, int base)
-              unsigned long long int strtoul (  const char *string, char **endptr, int base)
+              unsigned long long int strtoull (  const char *string, char **endptr, int base)
 
   The ``strtoll`` function converts the string in :samp:`{string}` to a
   long long integer value according to the given :samp:`{base}`, which must be
