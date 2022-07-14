@@ -21,8 +21,7 @@ elimination of redundant calculations.
 
 We can only use expression temporaries when we know that it will
 not be reevaluated before its value is used, and that it will not
-be otherwise modifiedThese restrictions are derived
-from those in Morgan 4.8.
+be otherwise modified [#f1]_.
 
 . Other temporaries can be allocated
 using ``get_initialized_tmp_var`` or ``create_tmp_var``.
@@ -40,3 +39,5 @@ variable which must live in memory cannot appear in an expression; its
 value is explicitly loaded into a temporary first.  Similarly, storing
 the value of an expression to a memory variable goes through a
 temporary.
+
+.. [#f1] These restrictions are derived from those in Morgan 4.8.

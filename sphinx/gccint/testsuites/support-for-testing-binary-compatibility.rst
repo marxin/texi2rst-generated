@@ -43,7 +43,7 @@ compiler.  Each test is compiled with each pair of options.
 These can be overridden by defining the environment variable
 :envvar:`COMPAT_OPTIONS` as:
 
-.. code-block:: c++
+.. code-block::
 
   COMPAT_OPTIONS="[list [list {tst1} {alt1}]
     ...[list {tstn} {altn}]]"
@@ -73,7 +73,7 @@ To run only the C++ compatibility suite using the compiler under test
 and another version of GCC using specific compiler options, do the
 following from :samp:`{objdir}/gcc`:
 
-.. code-block:: c++
+.. code-block::
 
   rm site.exp
   make -k \
