@@ -252,7 +252,7 @@ example of its use:
   }
 
 Contrast this with the previous example of ``savestring`` using
-``malloc`` (see :ref:`libc:basic-allocation`).
+``malloc`` see (`Basic Allocation <http://www.gnu.org/software/libc/manual/html_node/Basic-Allocation.html#Basic-Allocation>`_).
 
 .. index:: freeing (obstacks)
 
