@@ -81,7 +81,8 @@ rst_epilog = '''
 # ones.
 extensions = [
     'gcc_sphinx',
-    'sphinx.ext.intersphinx'
+    'sphinx.ext.intersphinx',
+    'sphinx_copybutton'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
