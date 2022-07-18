@@ -277,6 +277,11 @@ in the following sections.
   :option:`-Wno-analyzer-double-fclose` 
   :option:`-Wno-analyzer-double-free` 
   :option:`-Wno-analyzer-exposure-through-output-file` 
+  :option:`-Wno-analyzer-fd-access-mode-mismatch` 
+  :option:`-Wno-analyzer-fd-double-close` 
+  :option:`-Wno-analyzer-fd-leak` 
+  :option:`-Wno-analyzer-fd-use-after-close` 
+  :option:`-Wno-analyzer-fd-use-without-check` 
   :option:`-Wno-analyzer-file-leak` 
   :option:`-Wno-analyzer-free-of-non-heap` 
   :option:`-Wno-analyzer-malloc-leak` 
