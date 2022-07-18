@@ -105,14 +105,13 @@ cpp_id_attributes = ['HOST_WIDE_INT', '__memx']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'prev_next_buttons_location': 'both',
-    'navigation_with_keys': True
+    'navigation_with_keys': True,
 }
 
 html_logo = '../logo.svg'
