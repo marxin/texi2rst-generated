@@ -610,6 +610,11 @@ The following options control the analyzer.
   :option:`-Wanalyzer-double-fclose` 
   :option:`-Wanalyzer-double-free` 
   :option:`-Wanalyzer-exposure-through-output-file` 
+  :option:`-Wanalyzer-fd-access-mode-mismatch` 
+  :option:`-Wanalyzer-fd-double-close` 
+  :option:`-Wanalyzer-fd-leak` 
+  :option:`-Wanalyzer-fd-use-after-close` 
+  :option:`-Wanalyzer-fd-use-without-check` 
   :option:`-Wanalyzer-file-leak` 
   :option:`-Wanalyzer-free-of-non-heap` 
   :option:`-Wanalyzer-malloc-leak` 

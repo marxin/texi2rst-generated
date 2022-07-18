@@ -258,6 +258,7 @@ in the following sections.
 *Static Analyzer Options*
 
   :option:`-fanalyzer` 
+<<<<<<< HEAD
   :option:`-fanalyzer-call-summaries` |gol|
   :option:`-fanalyzer-checker`:samp:`={name}` |gol|
   :option:`-fno-analyzer-feasibility` |gol|
@@ -285,6 +286,11 @@ in the following sections.
   :option:`-Wno-analyzer-double-fclose` |gol|
   :option:`-Wno-analyzer-double-free` |gol|
   :option:`-Wno-analyzer-exposure-through-output-file` |gol|
+  :option:`-Wno-analyzer-fd-access-mode-mismatch` |gol|
+  :option:`-Wno-analyzer-fd-double-close` |gol|
+  :option:`-Wno-analyzer-fd-leak` |gol|
+  :option:`-Wno-analyzer-fd-use-after-close` |gol|
+  :option:`-Wno-analyzer-fd-use-without-check` |gol|
   :option:`-Wno-analyzer-file-leak` |gol|
   :option:`-Wno-analyzer-free-of-non-heap` |gol|
   :option:`-Wno-analyzer-malloc-leak` |gol|
