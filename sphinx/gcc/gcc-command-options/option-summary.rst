@@ -258,7 +258,6 @@ in the following sections.
 *Static Analyzer Options*
 
   :option:`-fanalyzer` 
-<<<<<<< HEAD
   :option:`-fanalyzer-call-summaries` |gol|
   :option:`-fanalyzer-checker`:samp:`={name}` |gol|
   :option:`-fno-analyzer-feasibility` |gol|
