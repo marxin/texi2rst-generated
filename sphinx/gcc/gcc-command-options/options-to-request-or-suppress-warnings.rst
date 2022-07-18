@@ -190,16 +190,16 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wchar-subscripts` |gol|
   :option:`-Wcomment` |gol|
   :option:`-Wdangling-pointer`:samp:`=2`  |gol|
-  :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) |gol|
+  :option:`-Wduplicate-decl-specifier` (C and Objective C only) |gol|
   :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) |gol|
-  :option:`-Wenum-int-mismatch` (C and Objective :option:`-C` only) |gol|
+  :option:`-Wenum-int-mismatch` (C and Objective C only) |gol|
   :option:`-Wformat`   |gol|
   :option:`-Wformat-overflow`  |gol|
   :option:`-Wformat-truncation`  |gol|
   :option:`-Wint-in-bool-context`  |gol|
-  :option:`-Wimplicit` (C and Objective :option:`-C` only) |gol|
-  :option:`-Wimplicit-int` (C and Objective :option:`-C` only) |gol|
-  :option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) |gol|
+  :option:`-Wimplicit` (C and Objective C only) |gol|
+  :option:`-Wimplicit-int` (C and Objective C only) |gol|
+  :option:`-Wimplicit-function-declaration` (C and Objective C only) |gol|
   :option:`-Winit-self` (only for C++) |gol|
   :option:`-Wlogical-not-parentheses` |gol|
   :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` )  |gol|
