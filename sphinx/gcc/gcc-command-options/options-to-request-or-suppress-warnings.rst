@@ -202,7 +202,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) |gol|
   :option:`-Winit-self` (only for C++) |gol|
   :option:`-Wlogical-not-parentheses` |gol|
-  :option:`-Wmain` (only for C/ObjC and unless :option:`:option:`-ffreestanding`` )  |gol|
+  :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` )  |gol|
   :option:`-Wmaybe-uninitialized` |gol|
   :option:`-Wmemset-elt-size` |gol|
   :option:`-Wmemset-transposed-args` |gol|
