@@ -398,12 +398,14 @@ program analysis purposes.
   These differences are to avoid hwasan library initialization calls and to
   account for the stack pointer having a different value in its top byte.
 
-  *Note:* This option has different defaults to the :option:`-fsanitize`:samp:`=hwaddress`.
-  Instrumenting the stack and alloca calls are not on by default but are still
-  possible by specifying the command-line options
-  :option:`--param` :gcc-param:`hwasan-instrument-stack`:samp:`=1` and
-  :option:`--param` :gcc-param:`hwasan-instrument-allocas`:samp:`=1` respectively. Using a random frame
-  tag is not implemented for kernel instrumentation.
+  .. note::
+
+    This option has different defaults to the :option:`-fsanitize`:samp:`=hwaddress`.
+    Instrumenting the stack and alloca calls are not on by default but are still
+    possible by specifying the command-line options
+    :option:`--param` :gcc-param:`hwasan-instrument-stack`:samp:`=1` and
+    :option:`--param` :gcc-param:`hwasan-instrument-allocas`:samp:`=1` respectively. Using a random frame
+    tag is not implemented for kernel instrumentation.
 
 .. option:: -fsanitize=pointer-compare
 

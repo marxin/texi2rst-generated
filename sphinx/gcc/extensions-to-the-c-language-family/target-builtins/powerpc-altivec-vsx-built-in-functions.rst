@@ -82,10 +82,12 @@ C and C++ code differs from Motorola's documentation in several ways.
   is treated as four separate arguments.  Wrap the entire argument in
   parentheses for this to work.
 
-*Note:* Only the ``<altivec.h>`` interface is supported.
-Internally, GCC uses built-in functions to achieve the functionality in
-the aforementioned header file, but they are not supported and are
-subject to change without notice.
+.. note::
+
+  Only the ``<altivec.h>`` interface is supported.
+  Internally, GCC uses built-in functions to achieve the functionality in
+  the aforementioned header file, but they are not supported and are
+  subject to change without notice.
 
 GCC complies with the Power Vector Intrinsic Programming Reference (PVIPR),
 which may be found at

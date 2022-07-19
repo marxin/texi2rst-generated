@@ -183,11 +183,13 @@
   Built-in macros, macros defined on the command line, and macros
   defined in include files are not warned about.
 
-  *Note:* If a macro is actually used, but only used in skipped
-  conditional blocks, then the preprocessor reports it as unused.  To avoid the
-  warning in such a case, you might improve the scope of the macro's
-  definition by, for example, moving it into the first skipped block.
-  Alternatively, you could provide a dummy use with something like:
+  .. note::
+
+    If a macro is actually used, but only used in skipped
+    conditional blocks, then the preprocessor reports it as unused.  To avoid the
+    warning in such a case, you might improve the scope of the macro's
+    definition by, for example, moving it into the first skipped block.
+    Alternatively, you could provide a dummy use with something like:
 
   .. code-block:: c++
 

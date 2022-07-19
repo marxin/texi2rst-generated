@@ -449,7 +449,9 @@ calls.  These built-in functions appear both with and without the
         tmp;                                                        \
       })
 
-  *Note:* This construct is only available for C.
+  .. note::
+
+    This construct is only available for C.
 
 .. function:: type __builtin_call_with_static_chain (call_exp, pointer_exp)
 
@@ -458,7 +460,10 @@ calls.  These built-in functions appear both with and without the
   is passed to the function call in the target's static chain location.
   The result of builtin is the result of the function call.
 
-  *Note:* This builtin is only available for C.
+  .. note::
+
+    This builtin is only available for C.
+
   This builtin can be used to call Go closures from C.
 
 .. function:: type __builtin_choose_expr (const_exp, exp1, exp2)
@@ -496,10 +501,12 @@ calls.  These built-in functions appear both with and without the
              when assigning the result to something.  */          \
           (void)0))
 
-  *Note:* This construct is only available for C.  Furthermore, the
-  unused expression (:samp:`{exp1}` or :samp:`{exp2}` depending on the value of
-  :samp:`{const_exp}`) may still generate syntax errors.  This may change in
-  future revisions.
+  .. note::
+
+    This construct is only available for C.  Furthermore, the
+    unused expression (:samp:`{exp1}` or :samp:`{exp2}` depending on the value of
+    :samp:`{const_exp}`) may still generate syntax errors.  This may change in
+    future revisions.
 
 .. function:: type __builtin_tgmath (functions, arguments)
 

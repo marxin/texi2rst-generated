@@ -194,11 +194,13 @@ on this machine.  So it must be copied into a register with
     "operands[2]
        = force_reg (SImode, GEN_INT (65535)); ")
 
-*Note:* If the ``define_expand`` is used to serve a
-standard binary or unary arithmetic operation or a bit-field operation,
-then the last insn it generates must not be a ``code_label``,
-``barrier`` or ``note``.  It must be an ``insn``,
-``jump_insn`` or ``call_insn``.  If you don't need a real insn
-at the end, emit an insn to copy the result of the operation into
-itself.  Such an insn will generate no code, but it can avoid problems
-in the compiler.
+.. note::
+
+  If the ``define_expand`` is used to serve a
+  standard binary or unary arithmetic operation or a bit-field operation,
+  then the last insn it generates must not be a ``code_label``,
+  ``barrier`` or ``note``.  It must be an ``insn``,
+  ``jump_insn`` or ``call_insn``.  If you don't need a real insn
+  at the end, emit an insn to copy the result of the operation into
+  itself.  Such an insn will generate no code, but it can avoid problems
+  in the compiler.

@@ -198,10 +198,12 @@ arguments and return a ``__v8hi`` result.  The second argument must
 be a 3-bit compile time constants, indicating one the registers I0-I7,
 and the third argument must be an 8-bit compile time constant.
 
-*Note:* Although the equivalent hardware instructions do not take
-an SIMD register as an operand, these builtins overwrite the relevant
-bits of the ``__v8hi`` register provided as the first argument with
-the value loaded from the ``[Ib, u8]`` location in the SDM.
+.. note::
+
+  Although the equivalent hardware instructions do not take
+  an SIMD register as an operand, these builtins overwrite the relevant
+  bits of the ``__v8hi`` register provided as the first argument with
+  the value loaded from the ``[Ib, u8]`` location in the SDM.
 
 .. code-block:: c++
 

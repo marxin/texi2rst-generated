@@ -58,19 +58,23 @@ initialized in the same way as aggregates.  For example:
   v2q15 d;
   d = (v2q15) {0.1234 * 0x1.0p15, 0.4567 * 0x1.0p15};
 
-*Note:* The CPU's endianness determines the order in which values
-are packed.  On little-endian targets, the first value is the least
-significant and the last value is the most significant.  The opposite
-order applies to big-endian targets.  For example, the code above
-sets the lowest byte of ``a`` to ``1`` on little-endian targets
-and ``4`` on big-endian targets.
+.. note::
 
-*Note:* Q7, Q15 and Q31 values must be initialized with their integer
-representation.  As shown in this example, the integer representation
-of a Q7 value can be obtained by multiplying the fractional value by
-``0x1.0p7``.  The equivalent for Q15 values is to multiply by
-``0x1.0p15``.  The equivalent for Q31 values is to multiply by
-``0x1.0p31``.
+  The CPU's endianness determines the order in which values
+  are packed.  On little-endian targets, the first value is the least
+  significant and the last value is the most significant.  The opposite
+  order applies to big-endian targets.  For example, the code above
+  sets the lowest byte of ``a`` to ``1`` on little-endian targets
+  and ``4`` on big-endian targets.
+
+.. note::
+
+  Q7, Q15 and Q31 values must be initialized with their integer
+  representation.  As shown in this example, the integer representation
+  of a Q7 value can be obtained by multiplying the fractional value by
+  ``0x1.0p7``.  The equivalent for Q15 values is to multiply by
+  ``0x1.0p15``.  The equivalent for Q31 values is to multiply by
+  ``0x1.0p31``.
 
 The table below lists the ``v4i8`` and ``v2q15`` operations for which
 hardware support exists.  ``a`` and ``b`` are ``v4i8`` values,

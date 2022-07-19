@@ -604,8 +604,10 @@ The following options control the analyzer.
   :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.
 
-  *Note:* currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
-  following warnings from :option:`-fanalyzer` :
+  .. note::
+
+    Currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
+    following warnings from :option:`-fanalyzer` :
 
   :option:`-Wanalyzer-double-fclose` 
   :option:`-Wanalyzer-double-free` 

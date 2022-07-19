@@ -28,9 +28,11 @@ as described below.  The macros are only read once, when :samp:`varasm.cc`
 initializes itself, so their values must be run-time constants.
 They may however depend on command-line flags.
 
-*Note:* Some run-time files, such :samp:`crtstuff.c`, also make
-use of the ``FOO_SECTION_ASM_OP`` macros, and expect them
-to be string literals.
+.. note::
+
+  Some run-time files, such :samp:`crtstuff.c`, also make
+  use of the ``FOO_SECTION_ASM_OP`` macros, and expect them
+  to be string literals.
 
 Some assemblers require a different string to be written every time a
 section is selected.  If your assembler falls into this category, you
